@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 82b58cc0287644a4ca21bf6333bf791b3c02e924
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1990e781b5793b05166c6ff5b6e9c14141ffdd69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058604"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140:透過的コードは、セキュリティ上重要な項目を参照してはならない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +37,21 @@ ms.locfileid: "58975859"
 ## <a name="cause"></a>原因
  透過的なメソッド:
 
--   セキュリティの重要なセキュリティ例外の種類を処理します。
+- セキュリティの重要なセキュリティ例外の種類を処理します。
 
--   セキュリティ上重要な型としてマークされているパラメーターがあります。
+- セキュリティ上重要な型としてマークされているパラメーターがあります。
 
--   セキュリティの重要な制約を持つジェネリック パラメーターします。
+- セキュリティの重要な制約を持つジェネリック パラメーターします。
 
--   セキュリティ上重要な型のローカル変数を持つ
+- セキュリティ上重要な型のローカル変数を持つ
 
--   重要なセキュリティとしてマークされている型を参照します。
+- 重要なセキュリティとしてマークされている型を参照します。
 
--   重要なセキュリティとしてマークされているメソッドを呼び出します
+- 重要なセキュリティとしてマークされているメソッドを呼び出します
 
--   重要なセキュリティとしてマークされているフィールドを参照します。
+- 重要なセキュリティとしてマークされているフィールドを参照します。
 
--   重要なセキュリティとしてマークされている型を返します
+- 重要なセキュリティとしてマークされている型を返します
 
 ## <a name="rule-description"></a>規則の説明
  マークされているコード要素、<xref:System.Security.SecurityCriticalAttribute>属性は、セキュリティ クリティカルです。 透過的なメソッドでセキュリティ上重要な要素を使用することはできません。 透過的な型がセキュリティ クリティカルな型を使用しようとしたかどうか、 <xref:System.TypeAccessException>、 <xref:System.MethodAccessException> 、または<xref:System.FieldAccessException>が発生します。
@@ -59,11 +59,11 @@ ms.locfileid: "58975859"
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、次のいずれかの操作を行います。
 
--   セキュリティ クリティカルなコードを使用するコード要素をマーク、<xref:System.Security.SecurityCriticalAttribute>属性
+- セキュリティ クリティカルなコードを使用するコード要素をマーク、<xref:System.Security.SecurityCriticalAttribute>属性
 
      \- または -
 
--   削除、<xref:System.Security.SecurityCriticalAttribute>から重要なセキュリティとしてマークされて、代わりにそれらをマークするコード要素、属性、<xref:System.Security.SecuritySafeCriticalAttribute>または<xref:System.Security.SecurityTransparentAttribute>属性。
+- 削除、<xref:System.Security.SecurityCriticalAttribute>から重要なセキュリティとしてマークされて、代わりにそれらをマークするコード要素、属性、<xref:System.Security.SecuritySafeCriticalAttribute>または<xref:System.Security.SecurityTransparentAttribute>属性。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告は抑制しないでください。

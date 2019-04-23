@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c13d30b1657917d55e5d3218c70aa8f2a69ec67
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59002263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054613"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML モデルと図の拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "59002263"
   
  詳細については、このビデオをご覧ください:![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How Do I シリーズ。UML ツールと機能拡張](http://go.microsoft.com/fwlink/?LinkId=214467)します。  
   
-##  <a name="Requirements"></a> 要件  
+## <a name="Requirements"></a> 要件  
   
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
--   [Modeling SDK for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)。  
+- [Modeling SDK for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)。  
   
 ## <a name="profiles"></a>プロファイル  
  プロファイルを使用すると、UML 要素のステレオタイプと追加のプロパティを定義できます。  

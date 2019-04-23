@@ -23,12 +23,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ad4e95f9032c3182da3fe59cee16e4ccc3066c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54cb1f67aa1738126fd78e2406c076a4fefa8823
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977823"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051457"
 ---
 # <a name="how-to-specify-debugger-settings"></a>方法: デバッガー設定を指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "58977823"
   
 ### <a name="to-set-debugger-options"></a>デバッガー オプションを設定するには  
   
-1.  **[ツール]** メニューの **[オプション]** をクリックします。  
+1. **[ツール]** メニューの **[オプション]** をクリックします。  
   
-2.  **[オプション]** ダイアログ ボックスで、**[デバッグ]** フォルダーを開きます。  
+2. **[オプション]** ダイアログ ボックスで、**[デバッグ]** フォルダーを開きます。  
   
-3.  **[デバッグ]** フォルダーで、目的のオプションのカテゴリをクリックします。  
+3. **[デバッグ]** フォルダーで、目的のオプションのカテゴリをクリックします。  
   
      最も一般的なオプションは、**[全般]** カテゴリに配置されています。 詳細については、[[全般]、デバッグ、オプションダイアログ ボックス](../debugger/general-debugging-options-dialog-box.md)を参照してください。  
   
-4.  目的のオプションをオンまたはオフにします。 F1 キーを押すとオプションについてのヘルプが表示されます。  
+4. 目的のオプションをオンまたはオフにします。 F1 キーを押すとオプションについてのヘルプが表示されます。  
   
 ## <a name="see-also"></a>関連項目  
  [[全般] ([オプション] ダイアログ ボックス - [デバッグ])](../debugger/general-debugging-options-dialog-box.md)   

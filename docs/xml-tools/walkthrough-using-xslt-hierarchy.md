@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7c7e93fa0ba58f7888212c48e28d21bd564ae7c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051636"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>チュートリアル: XSLT 階層を使用します。
 
@@ -69,7 +69,7 @@ XSLT 階層ツールが役立つ別のシナリオとして、ビルトイン �
     </xsl:stylesheet>
     ```
 
-3.  次の追加*xslinclude.xsl*ファイル。
+3. 次の追加*xslinclude.xsl*ファイル。
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ XSLT 階層ツールが役立つ別のシナリオとして、ビルトイン �
     </xsl:stylesheet>
     ```
 
-4.  命令にブレークポイントを追加`<xsl:include href="xslincludefile.xsl" />`します。
+4. 命令にブレークポイントを追加`<xsl:include href="xslincludefile.xsl" />`します。
 
-5.  デバッグを開始します。
+5. デバッグを開始します。
 
-6.  命令で、デバッガーを停止するときに`<xsl:include href="xslincludefile.xsl" />`、キーを押して、**ステップ イン**ボタンをクリックします。 参照されるスタイル シートのデバッグを続行できます。 階層が表示され、デザイナーに正しいパスが示されます。
+6. 命令で、デバッガーを停止するときに`<xsl:include href="xslincludefile.xsl" />`、キーを押して、**ステップ イン**ボタンをクリックします。 参照されるスタイル シートのデバッグを続行できます。 階層が表示され、デザイナーに正しいパスが示されます。
 
 ## <a name="see-also"></a>関連項目
 

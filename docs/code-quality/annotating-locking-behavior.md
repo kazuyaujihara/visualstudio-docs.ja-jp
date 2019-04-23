@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6590a07ec7fc67bef5f1b1cfd96e80105fa325ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653009"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053730"
 ---
 # <a name="annotating-locking-behavior"></a>ロック動作に注釈を付ける
 マルチ スレッド プログラムでの同時実行のバグを回避するには、以下の適切なロック作業分野と SAL 注釈を使用して常に。
@@ -55,11 +55,11 @@ ms.locfileid: "59653009"
 
  いくつかスレッドの所有権ルールに注意してください。
 
--   スピン ロックは、クリア スレッド所有権のあるカウントされないロックです。
+- スピン ロックは、クリア スレッド所有権のあるカウントされないロックです。
 
--   ミュー テックスとクリティカル セクションには、クリア スレッド所有権のロックがカウントされます。
+- ミュー テックスとクリティカル セクションには、クリア スレッド所有権のロックがカウントされます。
 
--   セマフォおよびイベントには、クリア スレッドの所有権がないロックがカウントされます。
+- セマフォおよびイベントには、クリア スレッドの所有権がないロックがカウントされます。
 
 ## <a name="locking-annotations"></a>ロックの注釈
  次の表は、ロックの注釈を一覧表示します。

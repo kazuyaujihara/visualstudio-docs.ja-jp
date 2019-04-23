@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fa577b5e68ac93847589e67b2e2110b1a0c9a37
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052560"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>方法: ビルドからファイルを除外する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "59656455"
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Form2 を除くすべての .cs ファイルまたは .vb ファイルを含める場合  
   
--   次の `Include` および `Exclude` 属性のうち、いずれかを使用します。  
+- 次の `Include` および `Exclude` 属性のうち、いずれかを使用します。  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
@@ -53,7 +53,7 @@ ms.locfileid: "59656455"
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Form2 と Form3 を除くすべての .cs ファイルまたは .vb ファイルを含める場合  
   
--   次の `Include` および `Exclude` 属性のうち、いずれかを使用します。  
+- 次の `Include` および `Exclude` 属性のうち、いずれかを使用します。  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
@@ -67,7 +67,7 @@ ms.locfileid: "59656455"
   
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Images ディレクトリのサブディレクトリにあるすべての .jpg ファイルを含めるものの、Version2 ディレクトリのファイルは除外する場合  
   
--   次の `Include` 属性と `Exclude` 属性を使用します。  
+- 次の `Include` 属性と `Exclude` 属性を使用します。  
   
     ```  
     <JPGFile  
@@ -83,7 +83,7 @@ ms.locfileid: "59656455"
   
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>リリース ビルドにのみファイル Formula.vb を含める場合  
   
--   以下のような `Condition` 属性を使用します。  
+- 以下のような `Condition` 属性を使用します。  
   
     ```  
     <Compile  

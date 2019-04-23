@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8690a1f05f54fbac9427f4a03412e0a8054c51d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052169"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824:アセンブリを NeutralResourcesLanguageAttribute に設定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58975051"
 
 #### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>ニュートラル カルチャのリソースの言語を指定するには
 
-1.  **ソリューション エクスプ ローラー**、プロジェクトを右クリックし、クリックして**プロパティ**します。
+1. **ソリューション エクスプ ローラー**、プロジェクトを右クリックし、クリックして**プロパティ**します。
 
-2.  左側のナビゲーション バーから選択**アプリケーション**、 をクリックし、**アセンブリ情報**します。
+2. 左側のナビゲーション バーから選択**アプリケーション**、 をクリックし、**アセンブリ情報**します。
 
-3.  **アセンブリ情報** ダイアログ ボックスから言語を選択、**ニュートラル言語**ドロップダウン リスト。
+3. **アセンブリ情報** ダイアログ ボックスから言語を選択、**ニュートラル言語**ドロップダウン リスト。
 
-4.  **[OK]** をクリックします。
+4. **[OK]** をクリックします。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告を抑制することはできます。 ただし、起動時のパフォーマンスが低下する可能性があります。

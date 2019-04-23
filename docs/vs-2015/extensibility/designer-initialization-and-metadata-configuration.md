@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e50fbbc3c834fc33f77f3aecef6b51ef9037ecb7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963135"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049258"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>デザイナーの初期化とメタデータの構成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "58963135"
 ### <a name="customizing-initialization"></a>初期化をカスタマイズします。  
  デザイナー、コンポーネント、またはデザイナーの画面をカスタマイズする必要があります。  
   
-1.  デザイナーのメタデータを変更して効果的に特定する方法を変更する<xref:System.Type>がアクセスまたは変換します。  
+1. デザイナーのメタデータを変更して効果的に特定する方法を変更する<xref:System.Type>がアクセスまたは変換します。  
   
      これは、通常、<xref:System.Drawing.Design.UITypeEditor>または<xref:System.ComponentModel.TypeConverter>メカニズム。  
   
      たとえば、 <xref:System.Windows.Forms>-ベースのデザイナーを初期化すると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]環境を変更します、<xref:System.Drawing.Design.UITypeEditor>の<xref:System.Web.UI.WebControls.Image>デザイナーを使用した、resource manager を使用して、ファイル システムではなく、ビットマップを取得するために使用するオブジェクト。  
   
-2.  イベントにサブスクライブするか、プロジェクトの構成情報を取得して、環境と統合します。 プロジェクトの構成情報を取得してイベントにサブスクライブして取得することによって、<xref:System.ComponentModel.Design.ITypeResolutionService>インターフェイス。  
+2. イベントにサブスクライブするか、プロジェクトの構成情報を取得して、環境と統合します。 プロジェクトの構成情報を取得してイベントにサブスクライブして取得することによって、<xref:System.ComponentModel.Design.ITypeResolutionService>インターフェイス。  
   
-3.  適切なライセンス認証でユーザー環境の変更**ツールボックス**カテゴリのインスタンスを適用することで、デザイナーの適用性を制限することで、<xref:System.ComponentModel.ToolboxItemFilterAttribute>デザイナー クラス。  
+3. 適切なライセンス認証でユーザー環境の変更**ツールボックス**カテゴリのインスタンスを適用することで、デザイナーの適用性を制限することで、<xref:System.ComponentModel.ToolboxItemFilterAttribute>デザイナー クラス。  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>Vspackage のデザイナーの初期化  
  VSPackage は、デザイナーの初期化を処理する必要があります。  

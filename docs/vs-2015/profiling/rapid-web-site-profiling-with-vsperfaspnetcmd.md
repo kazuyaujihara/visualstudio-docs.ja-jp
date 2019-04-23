@@ -12,17 +12,17 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b269ef28218fd51e3a87f331c44096cd80773f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: dbfe242434cdc953ec29fdd10a318c435abadc1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760298"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049830"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd を使用した迅速な Web サイト プロファイリング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**VSPerfASPNETCmd** コマンド ライン ツールを使用すると、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションを簡単にプロファイルできます。 [VSPerfCmd](../profiling/vsperfcmd.md) コマンド ライン ツールと比較すると、オプションが減り、環境変数を設定する必要がなく、コンピューターを再起動する必要がありません。 スタンドアロン プロファイラーでプロファイリングを行う場合は、**VSPerfASPNETCmd** の使用をお勧めします。 詳細については、「[方法: スタンドアロンのプロファイラーをインストールする](../profiling/how-to-install-the-stand-alone-profiler.md)」をご覧ください。  
+**VSPerfASPNETCmd** コマンド ライン ツールを使用すると、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションを簡単にプロファイルできます。 [VSPerfCmd](../profiling/vsperfcmd.md) コマンド ライン ツールと比較すると、オプションが減り、環境変数を設定する必要がなく、コンピューターを再起動する必要がありません。 スタンドアロン プロファイラーでプロファイリングを行う場合は、**VSPerfASPNETCmd** の使用をお勧めします。 詳細については、「[方法 :スタンドアロンの Profiler をインストール](../profiling/how-to-install-the-stand-alone-profiler.md)します。  
   
 > [!NOTE]
 >  Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 ｢[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」をご覧ください。  
@@ -61,7 +61,7 @@ ms.locfileid: "54760298"
   
  また、**/Trace** オプションを使用して .NET メモリ データと共に詳細なタイミング情報を収集することもできます。  
   
- **vsperfaspnetcmd /memory** [**:lifetime**] **/trace**`websiteUrl`  
+ **vsperfaspnetcmd /memory** **[:lifetime]** **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>階層相互作用データを収集するには  
   
@@ -80,9 +80,9 @@ ms.locfileid: "54760298"
   
  .NET メモリ データと共に階層相互作用データを収集するには、コマンド ラインに次のように入力します。  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
+ **vsperfaspnetcmd /memory****[:lifetime]** **/tip**_websiteUrl_  
   
-##  <a name="UsingNoWait"></a> /NoWait オプションの使用  
+## <a name="UsingNoWait"></a> /NoWait オプションの使用  
  既定では、**vsperfaspnetcmd** コマンドの後にコマンド プロンプトは戻りません。 次の構文オプションを使用すると、コマンド プロンプトを強制的に戻すことができます。 その後、コマンド プロンプト ウィンドウで他の操作を実行できます。 プロファイリングを終了するには、別の **vsperfaspnetcmd** コマンドで **/shutdown** オプションを使用します。  
   
  プロファイリングを開始するには、次のように入力します。  

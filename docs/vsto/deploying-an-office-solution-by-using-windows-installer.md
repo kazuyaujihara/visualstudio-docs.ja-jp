@@ -18,14 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eed2cc63941f63b3f1d21cac86f907808a072665
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a89898b7f0495e35ed51d6333288b3aa67c45428
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666352"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056749"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows インストーラーを使用して Office ソリューションを配置します。
+
 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]を使用して Office ソリューション用の Windows インストーラーを作成する方法について説明します。
 
 Visual Studio を使用して Windows インストーラーを作成すると、エンド ユーザーのコンピューターに対する管理アクセスを必要とする Office ソリューションを配置できます。 たとえば、1 台のコンピューターのすべてのユーザーを対象にして、1 度のみの実行でソリューションをインストールするファイルを使用することができます。 これ以外に、ClickOnce を使用して Office ソリューションを配置することもできますが、そのソリューションは、コンピューター上のユーザーごとに個別にインストールする必要があります。
@@ -77,6 +78,7 @@ ClickOnce を使用して Office ソリューションをデプロイする方�
 > ドキュメント レベルのカスタマイズでは、ドキュメントの位置も信頼する必要があります。 詳細については、次を参照してください。[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)します。
 
 ## <a name="Obtain"></a>InstallShield Limited Edition の入手
+
 InstallShield Limited Edition (ISLE) を使用して、Windows インストーラー ファイルを作成することもできます。Visual Studio をインストールする場合は、ISLE を無料で使用できます。 ISLE は、以前のバージョンの Visual Studio で提供されていた、セットアップと配置を対象とするプロジェクト テンプレートの機能を置き換えます。
 
 ### <a name="to-get-installshield-limited-edition"></a>InstallShield Limited Edition の入手方法
@@ -116,6 +118,7 @@ InstallShield Limited Edition (ISLE) を使用して、Windows インストー�
    このトピックで使用するサンプルには **OfficeAddInSetup**という名前のセットアップ プロジェクトが含まれています。 ここでは、同じ名前を使用して、ソリューション内でセットアップ プロジェクトを参照します。
 
 ## <a name="Add"></a>プロジェクト出力の追加
+
 Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** プロジェクトを構成します。 VSTO アドイン プロジェクトの場合は、プロジェクト出力は、ソリューション アセンブリのみです。 ドキュメント レベルのカスタマイズ プロジェクトの場合は、プロジェクト出力には、ソリューション アセンブリに加えて、ドキュメント自体も含まれています。
 
 ### <a name="to-add-the-project-output"></a>プロジェクト出力を追加するには
@@ -136,7 +139,6 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 ## <a name="AddD"></a>配置マニフェストとアプリケーション マニフェストの追加
 
-###
 1. **[Application Files]** ページで、 **[Add Files]** をクリックします。
 
 2. **[Open]** ダイアログ ボックスで、 **ExcelAddIn** プロジェクトの出力ディレクトリを参照します。
@@ -150,6 +152,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
    ![セットアップ プロジェクトの出力ファイル。](../vsto/media/installshield-outputfiles.png "セットアップ プロジェクトの出力ファイル。")
 
 ## <a name="Configure"></a>依存コンポーネントを前提条件として構成
+
 セットアップ アプリケーション内で、次のコンポーネントに加えて、ソリューションを実行するために必要な他のすべてのコンポーネントがも含める必要があります。
 
 - Office ソリューションが対象とする .NET Framework のバージョン。
@@ -173,6 +176,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 4. このダイアログ ボックスが表示された場合は、 **[No]** をクリックします。
 
 ### <a name="AddToolsForOffice"></a>Visual Studio 2010 Tools for Office Runtime の追加
+
 **[Redistributables]** ページには **[Microsoft VSTO 2010 Runtime]** という名前の項目が含まれていますが、これはランタイムの古いバージョンを参照しています。 したがって、最新バージョンを参照する構成ファイルを手動で作成することができます。 そのファイルを、 **[Redistributables]** ページに表示される他の項目すべてに対応する構成ファイルと同じディレクトリに配置する必要があります。
 
 #### <a name="to-add-the-visual-studio-2010-tools-for-office-runtime-as-a-prerequisite"></a>前提条件として、Visual Studio 2010 Tools for Office ランタイムを追加するには
@@ -219,7 +223,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 8. **[ファイル名]** ボックスに、「 **Visual Studio 2010 Tools for Office Runtime.prq**」と入力し、 **[保存]** をクリックします。
 
    > [!NOTE]
-   >    このファイルが前提条件であることを識別できるように、ファイル名の末尾に「 **.prq** 」を追加してください。
+   > このファイルが前提条件であることを識別できるように、ファイル名の末尾に「 **.prq** 」を追加してください。
 
 9. メモ帳を閉じます。
 
@@ -250,9 +254,10 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 4. **Set INSTALLDIR**  ダイアログ ボックスで、ソリューションをインストールするユーザーのコンピューター上のフォルダーを選択します。
 
    > [!NOTE]
-   >    **Set INSTALLDIR** ダイアログ ボックスで、一覧の中にある任意のフォルダーに対応するショートカット メニューを開いて、サブディレクトリを作成することもできます。
+   > **Set INSTALLDIR** ダイアログ ボックスで、一覧の中にある任意のフォルダーに対応するショートカット メニューを開いて、サブディレクトリを作成することもできます。
 
 ## <a name="ConfigureRegistry"></a>VSTO アドインの構成します。
+
 コンピューターを使用するすべてのユーザーに対して (コンピューター単位)、またはインストールを実行するユーザーに対してのみ (ユーザー単位)、VSTO アドインをインストールするかどうかを指定できます。
 
 コンピューター単位のインストールをサポートする場合は、2 つの別々のインストーラーを作成します。 Office のバージョン (32 ビットおよび 64 ビット)、またはユーザーが実行されている Windows のバージョン (32 ビットおよび 64 ビット) に基づいてインストーラーを分割できます。
@@ -313,10 +318,10 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 | 64 ビット<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
-   >    64 ビット Windows 用のインストーラーでは、64 ビット Windows を実行するコンピューターで 32 ビットおよび 64 ビット バージョンの Office を実行する可能性があるために、2 つのレジストリ パスが必要です。
+   > 64 ビット Windows 用のインストーラーでは、64 ビット Windows を実行するコンピューターで 32 ビットおよび 64 ビット バージョンの Office を実行する可能性があるために、2 つのレジストリ パスが必要です。
 
    > [!NOTE]
-   >    ベスト プラクティスとして、VSTO アドインの名前の先頭を、自分の会社の名前にします。 この規則では、キーが一意になるし、別のサプライヤーから VSTO アドインとの競合の可能性が低くなります可能性が高くなります。 同じ名前を持つ複数のアドインは、たとえば、互いのレジストリ キーを上書きする可能性があります。 この手法で、キーが一意になることを保証できるわけではありませんが、名前が競合する可能性を小さくすることができます。
+   > ベスト プラクティスとして、VSTO アドインの名前の先頭を、自分の会社の名前にします。 この規則では、キーが一意になるし、別のサプライヤーから VSTO アドインとの競合の可能性が低くなります可能性が高くなります。 同じ名前を持つ複数のアドインは、たとえば、互いのレジストリ キーを上書きする可能性があります。 この手法で、キーが一意になることを保証できるわけではありませんが、名前が競合する可能性を小さくすることができます。
 
 5. キーの階層を作成した後は、ショートカット メニューを開き、 **SampleCompany.ExcelAddIn**キーの選択**新規**を選び、**文字列値**。
 
@@ -368,6 +373,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 > Outlook 用 VSTO アドインでカスタム フォーム領域を作成する場合は、領域を Outlook に登録するレジストリ エントリを作成する必要があります。 詳細については、次を参照してください。[フォーム領域の Outlook 用のレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md#OutlookEntries)します。
 
 ## <a name="ConfigureDocument"></a>Configure a document-level customization
+
 このセクションでは、ドキュメント レベルのカスタマイズを配置する場合にのみ適用されます。 直ちに移動できますが、VSTO アドインを配置する場合、[セットアップ プロジェクトのビルド](#Build)セクション。
 
 ドキュメント レベルのカスタマイズには、レジストリ キーを使用しないでください。 その代わりに、カスタム ドキュメント プロパティの中に、配置マニフェストの場所が格納されます。
@@ -430,14 +436,14 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
    イベントの一覧は、画面の端にあるウィンドウの中に表示されます。
 
    > [!NOTE]
-   >    InstallShield Limited Edition で使用できるのは、この一覧に表示されるイベントのいくつかのみです。 この手順を使用して、プログラムを実行します、 **After Setup Complete Success ダイアログ**イベント。
+   > InstallShield Limited Edition で使用できるのは、この一覧に表示されるイベントのいくつかのみです。 この手順を使用して、プログラムを実行します、 **After Setup Complete Success ダイアログ**イベント。
 
 8. イベントの一覧で、 **[Custom Actions During Installation]** の下にある、 **[After Setup Complete Success dialog]** イベントのショートカット メニューを開き、 **[New EXE]** をクリックします。
 
    **[NewCustomAction1]** という名前のカスタム アクションが、 **[After Setup Complete Success dialog]** イベントの下に表示されます。 カスタム アクションに対応する一連のプロパティは、イベントの隣にあるウィンドウの中に表示されます。
 
    > [!IMPORTANT]
-   >    **[After Setup Complete Success dialog]** の 2 種類のイベントは、イベントの一覧に表示されます。 **[Custom Actions During Installation]** ノードの下で、 **[After Setup Complete Success dialog]** イベントのインスタンスを選択してください。
+   > **[After Setup Complete Success dialog]** の 2 種類のイベントは、イベントの一覧に表示されます。 **[Custom Actions During Installation]** ノードの下で、 **[After Setup Complete Success dialog]** イベントのインスタンスを選択してください。
 
 9. **[ソースの場所]** のプロパティの一覧で、 **[Installed with the Product]** をクリックします。
 
@@ -468,7 +474,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 16. **Your Solution ID** を、クリップボードにコピーしたソリューション ID で置き換えます。
 
    > [!IMPORTANT]
-   >    インストーラーをテストし、このカスタム アクションで実行するコンソール アプリケーションが INSTALLDIR ディレクトリ内のドキュメントにアクセスできることを確認します。 一部のディレクトリ ユーザーのコンピューターには、(たとえば、Program Files ディレクトリ) の管理アクセスを必要があります。 管理アクセス権を必要とするディレクトリにソリューションをデプロイする場合を開く必要があります、**プロパティ**のダイアログ ボックス、 *setup.exe*ファイルで、選択、 **の互換性** 、タブを選び、**このプログラムを管理者として実行**インストーラーを配布する前に、チェック ボックス。 ユーザーが管理者権限でセットアップ プログラムを実行しない場合は、ディレクトリをユーザーがアクセスする [INSTALLDIR] プロパティを設定、既になど、**ドキュメント**ディレクトリ。 詳細については、次を参照してください。、[を指定するユーザーのコンピューターにソリューションをインストール](#Location)このトピックの「します。
+   > インストーラーをテストし、このカスタム アクションで実行するコンソール アプリケーションが INSTALLDIR ディレクトリ内のドキュメントにアクセスできることを確認します。 一部のディレクトリ ユーザーのコンピューターには、(たとえば、Program Files ディレクトリ) の管理アクセスを必要があります。 管理アクセス権を必要とするディレクトリにソリューションをデプロイする場合を開く必要があります、**プロパティ**のダイアログ ボックス、 *setup.exe*ファイルで、選択、 **の互換性** 、タブを選び、**このプログラムを管理者として実行**インストーラーを配布する前に、チェック ボックス。 ユーザーが管理者権限でセットアップ プログラムを実行しない場合は、ディレクトリをユーザーがアクセスする [INSTALLDIR] プロパティを設定、既になど、**ドキュメント**ディレクトリ。 詳細については、次を参照してください。、[を指定するユーザーのコンピューターにソリューションをインストール](#Location)このトピックの「します。
 
 ## <a name="Build"></a>Build the setup project
 

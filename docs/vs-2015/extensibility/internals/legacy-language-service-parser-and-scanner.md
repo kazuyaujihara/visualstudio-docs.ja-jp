@@ -11,12 +11,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d5110c0289a630640fdb2c2383234173d931c72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1db922974c587cdeadc131d17c44cbab4b49af0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974530"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048542"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>従来の言語サービスのパーサーとスキャナー
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -82,29 +82,29 @@ namespace MyNamespace
   
  言語サービスに対応する中かっこがサポートするいると仮定します。  
   
-1.  ユーザーは、右中かっこ (}) を入力します。  
+1. ユーザーは、右中かっこ (}) を入力します。  
   
-2.  カーソルのソース ファイル内に中かっこが挿入され、いずれかによって、カーソルが高度な。  
+2. カーソルのソース ファイル内に中かっこが挿入され、いずれかによって、カーソルが高度な。  
   
-3.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.Source>クラスは、型指定された右中かっこで呼び出されます。  
+3. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.Source>クラスは、型指定された右中かっこで呼び出されます。  
   
-4.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.Source>クラスを現在のカーソル位置の直前の位置でトークンを取得します。 このトークンに対応する型指定された右中かっこ)。  
+4. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.Source>クラスを現在のカーソル位置の直前の位置でトークンを取得します。 このトークンに対応する型指定された右中かっこ)。  
   
-    1.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>メソッドを<xref:Microsoft.VisualStudio.Package.Colorizer>現在の行にすべてのトークンを取得するオブジェクト。  
+    1. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>メソッドを<xref:Microsoft.VisualStudio.Package.Colorizer>現在の行にすべてのトークンを取得するオブジェクト。  
   
-    2.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A>メソッドを<xref:Microsoft.VisualStudio.Package.IScanner>現在の行のテキストを含むオブジェクト。  
+    2. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A>メソッドを<xref:Microsoft.VisualStudio.Package.IScanner>現在の行のテキストを含むオブジェクト。  
   
-    3.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>メソッドを繰り返し呼び出す、<xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A>メソッドを<xref:Microsoft.VisualStudio.Package.IScanner>オブジェクトを現在の行からすべてのトークンを収集します。  
+    3. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>メソッドを繰り返し呼び出す、<xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A>メソッドを<xref:Microsoft.VisualStudio.Package.IScanner>オブジェクトを現在の行からすべてのトークンを収集します。  
   
-    4.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>メソッド プライベート メソッドの呼び出しで、<xref:Microsoft.VisualStudio.Package.Source>目的の位置を含むトークンを取得するクラスし、から取得したトークンの一覧で、パス、<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>メソッド。  
+    4. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>メソッド プライベート メソッドの呼び出しで、<xref:Microsoft.VisualStudio.Package.Source>目的の位置を含むトークンを取得するクラスし、から取得したトークンの一覧で、パス、<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>メソッド。  
   
-5.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>メソッドのトークンのトリガーのフラグは検索<xref:Microsoft.VisualStudio.Package.TokenTriggers>から返されるトークンで、<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>メソッド、つまり右中かっこを表すトークン)。  
+5. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>メソッドのトークンのトリガーのフラグは検索<xref:Microsoft.VisualStudio.Package.TokenTriggers>から返されるトークンで、<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>メソッド、つまり右中かっこを表すトークン)。  
   
-6.  トリガーのフラグを付ける場合<xref:Microsoft.VisualStudio.Package.TokenTriggers>が見つかると、<xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.Source>クラスが呼び出されます。  
+6. トリガーのフラグを付ける場合<xref:Microsoft.VisualStudio.Package.TokenTriggers>が見つかると、<xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.Source>クラスが呼び出されます。  
   
-7.  <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>メソッドでは、解析操作を開始の解析の理由の値を持つ<xref:Microsoft.VisualStudio.Package.ParseReason>します。 この操作は最終的に呼び出し、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドを<xref:Microsoft.VisualStudio.Package.LanguageService>クラス。 この呼び出しによってに非同期の解析が有効になっている場合、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドがバック グラウンド スレッドで発生します。  
+7. <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>メソッドでは、解析操作を開始の解析の理由の値を持つ<xref:Microsoft.VisualStudio.Package.ParseReason>します。 この操作は最終的に呼び出し、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドを<xref:Microsoft.VisualStudio.Package.LanguageService>クラス。 この呼び出しによってに非同期の解析が有効になっている場合、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドがバック グラウンド スレッドで発生します。  
   
-8.  解析操作が終了すると、という名前の内部の完了ハンドラー (コールバック メソッドとも呼ばれます)`HandleMatchBracesResponse`で呼び出される、<xref:Microsoft.VisualStudio.Package.Source>クラス。 この呼び出し、<xref:Microsoft.VisualStudio.Package.LanguageService>パーサーではなく基本クラス。  
+8. 解析操作が終了すると、という名前の内部の完了ハンドラー (コールバック メソッドとも呼ばれます)`HandleMatchBracesResponse`で呼び出される、<xref:Microsoft.VisualStudio.Package.Source>クラス。 この呼び出し、<xref:Microsoft.VisualStudio.Package.LanguageService>パーサーではなく基本クラス。  
   
 9. `HandleMatchBracesResponse`から範囲の一覧を取得するメソッド、<xref:Microsoft.VisualStudio.Package.AuthoringSink>オブジェクトに格納されている、<xref:Microsoft.VisualStudio.Package.ParseRequest>オブジェクト。 (範囲は、<xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>ソース ファイル内の行や文字の範囲を指定する構造体)。通常、この範囲の一覧には、開始タグと右中かっこの 1 つずつ、2 つの範囲が含まれています。  
   

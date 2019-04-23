@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f025ca2d73e98f8191969510f866cb7eb1d0eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fc9d1e793405b2eb83fe4f72980a71e44d1acbd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051792"
 ---
 # <a name="document-position"></a>ドキュメントの位置
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、デバッグ、*位置を文書化*:
 
--   IDE に既知のソース ファイル内の位置の抽象化を提供します。 ほとんどの言語の今日では、ドキュメントの位置は見なすことがソース ファイル内の位置。
+- IDE に既知のソース ファイル内の位置の抽象化を提供します。 ほとんどの言語の今日では、ドキュメントの位置は見なすことがソース ファイル内の位置。
 
--   デバッグ エンジンにソース ドキュメント内の位置をについて説明します。
+- デバッグ エンジンにソース ドキュメント内の位置をについて説明します。
 
--   によって実装される、 [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)インターフェイス。
+- によって実装される、 [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)インターフェイス。
 
 ## <a name="see-also"></a>関連項目
 - [コード コンテキスト](../../extensibility/debugger/code-context.md)

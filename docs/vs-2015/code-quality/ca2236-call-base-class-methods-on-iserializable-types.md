@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e7447e45108d8755195ad3c7484d55415c520846
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4ec8c14da5c691f6f9740c6df86cb38aeb9fac5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962799"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057642"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236:ISerializable 型で基底クラス メソッドを呼び出します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58962799"
 ## <a name="cause"></a>原因
  実装する型から派生した型、<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>インターフェイス、および、次の条件のいずれかが true:
 
--   型がシリアル化コンス トラクターを持つコンス トラクターを実装、 <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>、<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>パラメーターのシグネチャが、基本型のシリアル化コンス トラクターを呼び出しません。
+- 型がシリアル化コンス トラクターを持つコンス トラクターを実装、 <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>、<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>パラメーターのシグネチャが、基本型のシリアル化コンス トラクターを呼び出しません。
 
--   型が実装、<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>メソッドは呼び出しませんが、<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>基本型のメソッド。
+- 型が実装、<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>メソッドは呼び出しませんが、<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>基本型のメソッド。
 
 ## <a name="rule-description"></a>規則の説明
  型を実装して、カスタムのシリアル化のプロセスで、<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>フィールドがあり、フィールドを逆シリアル化のシリアル化コンス トラクターにシリアル化する方法。 型が実装する型から派生している場合、<xref:System.Runtime.Serialization.ISerializable>インターフェイス、基本型<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>メソッドとシリアル化コンス トラクターを呼び出すシリアル化/逆シリアル化する基本型のフィールド。 それ以外の場合、型がないシリアル化および正しくシリアル化解除します。 派生型が、新しいフィールドを追加しない場合、型は必要はありませんを実装する、<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>メソッドもシリアル化コンス トラクターまたは同等の基本データ型を呼び出します。

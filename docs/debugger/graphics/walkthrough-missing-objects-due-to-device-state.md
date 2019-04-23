@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e42e1ce4cc1ccc0a01905046b33e4587964f8ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712074"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047453"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>チュートリアル: デバイス状態によるオブジェクトの不足
 このチュートリアルでは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のグラフィックス診断を使用して、デバイスの構成が正しくないために表示されないオブジェクトを調査する方法を示します。
 
  このチュートリアルでは、次の方法を示します。
 
--   **[グラフィックス イベント一覧]** を使用して、問題を引き起こしている可能性がある部分を検索します。
+- **[グラフィックス イベント一覧]** を使用して、問題を引き起こしている可能性がある部分を検索します。
 
--   **[グラフィックス パイプライン ステージ]** ウィンドウを使用して、 `DrawIndexed` Direct3D API 呼び出しの影響を確認します。
+- **[グラフィックス パイプライン ステージ]** ウィンドウを使用して、 `DrawIndexed` Direct3D API 呼び出しの影響を確認します。
 
--   **[グラフィックス ピクセル履歴]** ウィンドウを使用して、問題の箇所をより具体的に特定します。
+- **[グラフィックス ピクセル履歴]** ウィンドウを使用して、問題の箇所をより具体的に特定します。
 
--   デバイスの状態に潜在的な問題または構成の間違いがないかどうかを調べます。
+- デバイスの状態に潜在的な問題または構成の間違いがないかどうかを調べます。
 
 ## <a name="scenario"></a>シナリオ
  3-D アプリでオブジェクトが想定どおりの場所に表示されない理由の 1 つに、グラフィックス デバイスの構成の誤りがあります。構成が正しくないと、オブジェクトがレンダリングから除外されます。たとえば、ワインディング順序が原因で三角形が誤ってカリングされる場合や、深度テストの関数が原因でオブジェクトのすべてのピクセルが拒否される場合などがあります。

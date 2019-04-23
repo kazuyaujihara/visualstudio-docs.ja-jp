@@ -10,12 +10,12 @@ ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 79bcd3981da8d8aee37e802b2463b4b33b60c430
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c5594d54c188c2f561dd66229e808e48068ba41a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062705"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>プロジェクト サブタイプの初期化シーケンス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "58975341"
   
     次に、初期化の手順について説明します。  
   
-   1.  環境の実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>メソッドの呼び出し 'HrCreateInnerProj' ' は次の関数宣言とメソッド。  
+   1. 環境の実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>メソッドの呼び出し 'HrCreateInnerProj' ' は次の関数宣言とメソッド。  
   
        ```  
        HRESULT HrCreateInnerProj  
@@ -50,13 +50,13 @@ ms.locfileid: "58975341"
   
         この関数が呼び出されたとき、最初に、最も外側にあるプロジェクトのサブタイプのパラメーター`pOuter`と`pOwner`として渡される`null`関数は、最も外側のプロジェクト サブタイプの設定と`IUnknown`に`pOuter`します。  
   
-   2.  次に、環境を呼び出す`HrCreateInnerProj`リストの 2 つ目のプロジェクト型 GUID を持つ関数です。 この GUID は、集計順番ベースのプロジェクトへステップ実行 2 つ目の内部プロジェクト サブタイプに対応します。  
+   2. 次に、環境を呼び出す`HrCreateInnerProj`リストの 2 つ目のプロジェクト型 GUID を持つ関数です。 この GUID は、集計順番ベースのプロジェクトへステップ実行 2 つ目の内部プロジェクト サブタイプに対応します。  
   
-   3.  `pOuter`が現在指して、`IUnknown`の最も外側のプロジェクト サブタイプ、および`HrCreateInnerProj`の実装を呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>の実装への呼び出し後に<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>します。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>制御を渡すメソッド`IUnknown`最も外側にあるプロジェクトのサブタイプの`pOuter`します。 所有プロジェクト (内部のプロジェクト サブタイプ) は、ここで、その集計プロジェクト オブジェクトを作成する必要があります。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>メソッドの実装へのポインターを渡す、`IUnknown`集計される内部のプロジェクトの。 これら 2 つのメソッドは、集約オブジェクトを作成し、実装は、プロジェクトのサブタイプは、自体への参照カウントを保持しているは終了しないようにする COM 集計の規則に従う必要があります。  
+   3. `pOuter`が現在指して、`IUnknown`の最も外側のプロジェクト サブタイプ、および`HrCreateInnerProj`の実装を呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>の実装への呼び出し後に<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>します。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>制御を渡すメソッド`IUnknown`最も外側にあるプロジェクトのサブタイプの`pOuter`します。 所有プロジェクト (内部のプロジェクト サブタイプ) は、ここで、その集計プロジェクト オブジェクトを作成する必要があります。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>メソッドの実装へのポインターを渡す、`IUnknown`集計される内部のプロジェクトの。 これら 2 つのメソッドは、集約オブジェクトを作成し、実装は、プロジェクトのサブタイプは、自体への参照カウントを保持しているは終了しないようにする COM 集計の規則に従う必要があります。  
   
-   4.  `HrCreateInnerProj` 実装を呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>します。 このメソッドは、プロジェクトのサブタイプはその初期化作業を行います。 ソリューションのイベントを登録することができます、たとえば、<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>します。  
+   4. `HrCreateInnerProj` 実装を呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>します。 このメソッドは、プロジェクトのサブタイプはその初期化作業を行います。 ソリューションのイベントを登録することができます、たとえば、<xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>します。  
   
-   5.  `HrCreateInnerProj` 一覧で最後の GUID (ベースのプロジェクト) に達するまで再帰的に呼び出されます。 これらの呼び出しごとに、c、d から手順が繰り返されます。 `pOuter` 最も外側にあるプロジェクトのサブタイプが指す`IUnknown`集計の各レベル。  
+   5. `HrCreateInnerProj` 一覧で最後の GUID (ベースのプロジェクト) に達するまで再帰的に呼び出されます。 これらの呼び出しごとに、c、d から手順が繰り返されます。 `pOuter` 最も外側にあるプロジェクトのサブタイプが指す`IUnknown`集計の各レベル。  
   
    次の例のおおよその表記でプログラムによるプロセスの詳細、<xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>メソッドとして、環境によって実装されます。 コードはほんの一例です。コンパイルするものではありませんし、わかりやすくするために削除されたすべてのエラー チェックします。  
   

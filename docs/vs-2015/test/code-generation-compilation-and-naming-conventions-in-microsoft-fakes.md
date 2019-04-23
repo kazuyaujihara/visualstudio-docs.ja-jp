@@ -8,12 +8,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70392f50ecd13539012672bf71900c30845af734
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4977a6394a5732d92391c3405519345484a6629f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783372"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056927"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,9 +22,9 @@ ms.locfileid: "54783372"
   
  **必要条件**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
-##  <a name="BKMK_In_this_topic"></a> このトピックの内容  
+## <a name="BKMK_In_this_topic"></a> このトピックの内容  
  [コードの生成とコンパイル](#BKMK_Code_generation_and_compilation)  
   
 - [スタブのコード生成を構成する](#BKMK_Configuring_code_generation_of_stubs) • [型のフィルター処理](#BKMK_Type_filtering) • [具象クラスと仮想メソッドをスタブする](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [内部型](#BKMK_Internal_types) • [ビルド時間を最適化する](#BKMK_Optimizing_build_times) • [アセンブリ名の競合を回避する](#BKMK_Avoiding_assembly_name_clashing)  
@@ -37,9 +37,9 @@ ms.locfileid: "54783372"
   
 - [ガイダンス](#BKMK_Guidance)  
   
-##  <a name="BKMK_Code_generation_and_compilation"></a> コードの生成とコンパイル  
+## <a name="BKMK_Code_generation_and_compilation"></a> コードの生成とコンパイル  
   
-###  <a name="BKMK_Configuring_code_generation_of_stubs"></a> スタブのコード生成を構成する  
+### <a name="BKMK_Configuring_code_generation_of_stubs"></a> スタブのコード生成を構成する  
  スタブ型の生成は、.fakes ファイル拡張子を持つ XML ファイルで構成されます。 Fakes フレームワークは、カスタム MSBuild タスクによってビルド処理で統合され、ビルド時にそれらのファイルを検出します。 Fakes コード ジェネレーターは、スタブ型をアセンブリにコンパイルし、参照をプロジェクトに追加します。  
   
  次の例に、FileSystem.dll で定義されたスタブ型を示します。  
@@ -51,7 +51,7 @@ ms.locfileid: "54783372"
   
 ```  
   
-###  <a name="BKMK_Type_filtering"></a> 型のフィルター処理  
+### <a name="BKMK_Type_filtering"></a> 型のフィルター処理  
  .fakes ファイルでフィルターを設定して、スタブされる型を制限できます。 StubGeneration 要素の下に Clear、Add、Remove 要素を無制限に追加して、選択された型の一覧を作成できます。  
   
  たとえば、次の .fakes ファイルは、System および System.IO 名前空間の下に型のスタブを生成しますが、System では "Handle" が含まれる型は除外します。  
@@ -72,27 +72,27 @@ ms.locfileid: "54783372"
   
  フィルター文字列では、単純な文法を使用して一致の照合方法を定義します。  
   
--   既定では、フィルターは大文字と小文字を区別しません。フィルターは部分文字列の一致を照合します。  
+- 既定では、フィルターは大文字と小文字を区別しません。フィルターは部分文字列の一致を照合します。  
   
      `el` は "hello" に一致します  
   
--   フィルターの末尾に `!` を追加すると、正確な大文字小文字を区別する照合が行われます。  
+- フィルターの末尾に `!` を追加すると、正確な大文字小文字を区別する照合が行われます。  
   
      `el!` は "hello" に一致しません  
   
      `hello!` は "hello" に一致します  
   
--   フィルターの末尾に `*` を追加すると、文字列のプレフィックスとの一致が照合されます。  
+- フィルターの末尾に `*` を追加すると、文字列のプレフィックスとの一致が照合されます。  
   
      `el*` は "hello" に一致しません  
   
      `he*` は "hello" に一致します  
   
--   セミコロン区切りのリストに複数のフィルターを記述すると、フィルターは論理和として組み合わされます。  
+- セミコロン区切りのリストに複数のフィルターを記述すると、フィルターは論理和として組み合わされます。  
   
      `el;wo` は "hello" と "world" に一致します。  
   
-###  <a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> 具象クラスと仮想メソッドをスタブする  
+### <a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> 具象クラスと仮想メソッドをスタブする  
  既定では、スタブ型はすべての非シール クラスに対して生成されます。 .fakes 構成ファイルで指定して、スタブ型を抽象クラスに制限することができます。  
   
 ```xml  
@@ -109,7 +109,7 @@ ms.locfileid: "54783372"
 </Fakes>  
 ```  
   
-###  <a name="BKMK_Internal_types"></a> 内部型  
+### <a name="BKMK_Internal_types"></a> 内部型  
  Fakes コード ジェネレーターは、生成された Fakes アセンブリから見える型の shim 型と stub 型を生成します。 shim が適用されたアセンブリの内部型を Fakes アセンブリおよびテスト アセンブリから見えるようにするには、生成された Fakes アセンブリとテスト アセンブリに可視性を与える、shim が適用されたアセンブリ コードに <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性を追加します。 次に例を示します。  
   
 ```csharp  
@@ -164,26 +164,26 @@ ms.locfileid: "54783372"
   
  上の例で、値 `Alternate_public_key` と `Test_assembly_public_key` は同じでもかまいません。  
   
-###  <a name="BKMK_Optimizing_build_times"></a> ビルド時間を最適化する  
+### <a name="BKMK_Optimizing_build_times"></a> ビルド時間を最適化する  
  Fakes アセンブリのコンパイルで、ビルド時間が非常に長くなることがあります。 別の一元化されたプロジェクトで .NET System のアセンブリとサードパーティのアセンブリの Fakes アセンブリを生成することで、ビルド時間を最小限に抑えることができます。 こういうアセンブリはコンピューターでほとんど変更されないため、生成された Fakes アセンブリを他のプロジェクトで再利用できます。  
   
  単体テスト プロジェクトから、プロジェクト フォルダーの FakesAssemblies の下に置かれたコンパイル済みの Fakes アセンブリへの参照を取得できます。  
   
-1.  テスト プロジェクトに一致する .NET ランタイム バージョンを含む新しいクラス ライブラリを作成します。 これに Fakes.Prebuild という名前を付けます。 プロジェクトから不要な class1.cs ファイルを削除します。  
+1. テスト プロジェクトに一致する .NET ランタイム バージョンを含む新しいクラス ライブラリを作成します。 これに Fakes.Prebuild という名前を付けます。 プロジェクトから不要な class1.cs ファイルを削除します。  
   
-2.  Fakes が必要なすべてのシステムおよびサードパーティのアセンブリへの参照を追加します。  
+2. Fakes が必要なすべてのシステムおよびサードパーティのアセンブリへの参照を追加します。  
   
-3.  アセンブリごとに .fakes ファイルを追加し、ビルドします。  
+3. アセンブリごとに .fakes ファイルを追加し、ビルドします。  
   
-4.  テスト プロジェクトから  
+4. テスト プロジェクトから  
   
-    -   Fakes ランタイム DLL への参照があることを確認します。  
+    - Fakes ランタイム DLL への参照があることを確認します。  
   
          C:\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll  
   
-    -   Fakes を作成したアセンブリごとに、プロジェクトの Fakes.Prebuild\FakesAssemblies フォルダーの対応する DLL ファイルへの参照を追加します。  
+    - Fakes を作成したアセンブリごとに、プロジェクトの Fakes.Prebuild\FakesAssemblies フォルダーの対応する DLL ファイルへの参照を追加します。  
   
-###  <a name="BKMK_Avoiding_assembly_name_clashing"></a> アセンブリ名の競合を回避する  
+### <a name="BKMK_Avoiding_assembly_name_clashing"></a> アセンブリ名の競合を回避する  
  チーム ビルド環境では、すべてのビルド出力が 1 つのディレクトリにマージされます。 複数のプロジェクトが Fakes を使用している場合は、異なるバージョンの Fakes アセンブリが互いにオーバーライドすることがあります。 たとえば、.NET Framework 2.0 からの TestProject1 による mscorlib.dll の Fakes 処理と .NET Framework 4 の TestProject2 による mscorlib.dll の Fakes 処理は、いずれも mscorlib.Fakes.dll Fakes アセンブリを生成します。  
   
  この問題を回避するには、.fakes ファイルを追加するとき、Fakes 処理で非プロジェクト参照用にバージョンで修飾された Fakes アセンブリ名を自動的に作成する必要があります。 バージョンで修飾された Fakes アセンブリ名の場合は、Fakes アセンブリ名を作成するときにバージョン番号が埋め込まれます。  
@@ -201,9 +201,9 @@ attribute of the Assembly element in the .fakes:
   
 ```  
   
-##  <a name="BKMK_Fakes_naming_conventions"></a> Fakes 名前付け規則  
+## <a name="BKMK_Fakes_naming_conventions"></a> Fakes 名前付け規則  
   
-###  <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Shim 型とスタブ型の名前付け規則  
+### <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Shim 型とスタブ型の名前付け規則  
  **名前空間**  
   
 - .Fakes サフィックスは名前空間に追加されます。  
@@ -228,7 +228,7 @@ attribute of the Assembly element in the .fakes:
   
 - shim 型の場合、入れ子にされた型の構造体がコピーされます。  
   
-###  <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Shim デリゲート プロパティまたはスタブ デリゲート フィールドの名前付け規則  
+### <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Shim デリゲート プロパティまたはスタブ デリゲート フィールドの名前付け規則  
  空の名前から始まるフィールド名の付け方の**基本的な規則**は次のとおりです。  
   
 - メソッド名が追加されます。  
@@ -254,13 +254,13 @@ attribute of the Assembly element in the .fakes:
   
  **ノート**  
   
--   **インデクサーの get および set アクセス操作子**は、プロパティと同様に扱われます。 インデクサーの既定の名前は `Item` です。  
+- **インデクサーの get および set アクセス操作子**は、プロパティと同様に扱われます。 インデクサーの既定の名前は `Item` です。  
   
--   **パラメーターの型**の名前は変換され、連結されます。  
+- **パラメーターの型**の名前は変換され、連結されます。  
   
--   **戻り値の型**は、オーバーロードのあいまいさがない場合は無視されます。 あいまいさがある場合は、戻り値の型が名前の末尾に追加されます  
+- **戻り値の型**は、オーバーロードのあいまいさがない場合は無視されます。 あいまいさがある場合は、戻り値の型が名前の末尾に追加されます  
   
-###  <a name="BKMK_Parameter_type_naming_conventions"></a> パラメーターの型の名前付け規則  
+### <a name="BKMK_Parameter_type_naming_conventions"></a> パラメーターの型の名前付け規則  
   
 |種類|追加される文字列|  
 |-----------|-------------------------|  
@@ -275,16 +275,16 @@ attribute of the Assembly element in the .fakes:
 |メソッド `M<MMethod>` の**ジェネリック メソッド引数** `!!i`|`Mi`|  
 |**入れ子にされた型** `N.T`|`N` が追加され、その後に `T`|  
   
-###  <a name="BKMK_Recursive_rules"></a> 再帰的な規則  
+### <a name="BKMK_Recursive_rules"></a> 再帰的な規則  
  次の規則は再帰的に適用されます。  
   
--   Fakes は C# を使用して Fakes アセンブリを生成するため、無効な C# トークンを生成する文字は "_" (アンダースコア) にエスケープされます。  
+- Fakes は C# を使用して Fakes アセンブリを生成するため、無効な C# トークンを生成する文字は "_" (アンダースコア) にエスケープされます。  
   
--   結果の名前が宣言する型のいずれかのメンバーと競合する場合は、01 から始まる 2 桁のカウンターの追加して番号付けスキーマが使用されます。  
+- 結果の名前が宣言する型のいずれかのメンバーと競合する場合は、01 から始まる 2 桁のカウンターの追加して番号付けスキーマが使用されます。  
   
-##  <a name="BKMK_External_resources"></a> 外部リソース  
+## <a name="BKMK_External_resources"></a> 外部リソース  
   
-###  <a name="BKMK_Guidance"></a> ガイダンス  
+### <a name="BKMK_Guidance"></a> ガイダンス  
  [Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 2 章: 単体テスト: 内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>関連項目  

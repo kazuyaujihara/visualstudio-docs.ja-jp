@@ -15,17 +15,17 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867762"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051909"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Visual Studio 拡張機能の検索と使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 拡張機能は、Visual Studio 内で実行されるコード パッケージで、Visual Studio の機能が追加または強化されます。 Visual Studio の拡張機能について詳しくは「 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)」をご覧ください。
+Visual Studio 拡張機能は、Visual Studio 内で実行されるコード パッケージで、Visual Studio の機能が追加または強化されます。 Visual Studio の拡張機能について詳しくは次を参照してください。[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
  **[拡張機能と更新プログラム]** ダイアログ ボックスを使用すると、Visual Studio の拡張機能やサンプルを Web サイトまたは他の場所から入手してインストールし、これらを有効化、無効化、更新、またはアンインストールすることができます。 **[ツール] / [拡張機能と更新プログラム]** を使用するか、 **[クイック起動]** ウィンドウに「 **拡張機能** 」と入力してください。 ダイアログ ボックスには、インストールされているサンプルと拡張機能の更新プログラムも表示されます。 また、Web サイトから拡張機能をダウンロードしたり、他の開発者から入手したりすることもできます。
 
@@ -54,9 +54,9 @@ Visual Studio 拡張機能は、Visual Studio 内で実行されるコード パ
 
  自動更新を無効にする場合は、すべての拡張機能または特定の拡張機能のみを対象としてこの機能を無効にできます。
 
--   すべての拡張機能の自動更新を無効にするには、 **[拡張機能と更新プログラム]** ダイアログ ボックスの **[[拡張機能と更新プログラム] 設定の変更]** リンクをクリックし、 **[拡張機能を自動的に更新する]** をオフにします。
+- すべての拡張機能の自動更新を無効にするには、 **[拡張機能と更新プログラム]** ダイアログ ボックスの **[[拡張機能と更新プログラム] 設定の変更]** リンクをクリックし、 **[拡張機能を自動的に更新する]** をオフにします。
 
--   特定の拡張機能の自動更新を無効にするには、 **[拡張機能と更新プログラム]** ダイアログの右側にある拡張機能の詳細ペインで、 **[この拡張機能を自動的に更新する]** オプションをオフにします。
+- 特定の拡張機能の自動更新を無効にするには、 **[拡張機能と更新プログラム]** ダイアログの右側にある拡張機能の詳細ペインで、 **[この拡張機能を自動的に更新する]** オプションをオフにします。
 
 > [!NOTE]
 >  Visual Studio 2015 更新プログラム 2 より、ユーザー単位の拡張機能を自動更新するか、すべてのユーザー拡張機能を更新するか、両方を行うか (初期設定) 指定できます (**[ツール]、[オプション]、[環境]、[拡張機能と更新プログラム]**)。

@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fb0fc574af033f34afb3995edeaffe5e408d740
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 490ee064903a0e2d119da891681da719e237acec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049406"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>方法: コレクションの関連付けをビジュアル化する (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ ms.locfileid: "54799731"
   
 ### <a name="to-create-a-collection-association"></a>コレクションの関連付けを作成するには  
   
-1.  コードで、型自体が厳密に型指定されるコレクションであるプロパティまたはフィールドを作成します。  
+1. コードで、型自体が厳密に型指定されるコレクションであるプロパティまたはフィールドを作成します。  
   
-2.  クラス ダイアグラムで、プロパティとフィールドが表示されるようにクラスを展開します。  
+2. クラス ダイアグラムで、プロパティとフィールドが表示されるようにクラスを展開します。  
   
-3.  クラスで、フィールドまたはプロパティを右クリックし、**[コレクションの関連として表示]** を選択します。  
+3. クラスで、フィールドまたはプロパティを右クリックし、**[コレクションの関連として表示]** を選択します。  
   
      プロパティまたはフィールドは、収集された型にリンクする関連行として表示されます。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: 型の間の関連付けを作成する (クラス デザイナー)](../ide/how-to-create-associations-between-types-class-designer.md)   
+ [方法: 型 (クラス デザイナー) の間の関連付けを作成します。](../ide/how-to-create-associations-between-types-class-designer.md)   
  [クラスおよび型のデザイン (クラス デザイナー)](../ide/designing-classes-and-types-class-designer.md)   
  [型およびリレーションシップの表示 (クラス デザイナー)](../ide/viewing-types-and-relationships-class-designer.md)

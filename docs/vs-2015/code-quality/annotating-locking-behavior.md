@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 8d855fb41624e357a62d9eb773cc5e42606572f7
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58978471"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052390"
 ---
 # <a name="annotating-locking-behavior"></a>ロック動作に注釈を付ける
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,11 +58,11 @@ ms.locfileid: "58978471"
   
  いくつかスレッドの所有権ルールに注意してください。  
   
--   スピン ロックは、クリア スレッド所有権のあるカウントされないロックです。  
+- スピン ロックは、クリア スレッド所有権のあるカウントされないロックです。  
   
--   ミュー テックスとクリティカル セクションには、クリア スレッド所有権のロックがカウントされます。  
+- ミュー テックスとクリティカル セクションには、クリア スレッド所有権のロックがカウントされます。  
   
--   セマフォおよびイベントには、クリア スレッドの所有権がないロックがカウントされます。  
+- セマフォおよびイベントには、クリア スレッドの所有権がないロックがカウントされます。  
   
 ## <a name="locking-annotations"></a>ロックの注釈  
  次の表は、ロックの注釈を一覧表示します。  

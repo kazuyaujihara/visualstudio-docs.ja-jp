@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ced495580bd8ec16eec7e3f422e3ae1f1ccc3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050504"
 ---
 # <a name="detect-system-requirements"></a>システム要件を検出します。
 Visual Studio がインストールされていない場合、VSPackage は機能できません。 Microsoft Windows インストーラーを使用して、VSPackage のインストールを管理する場合は、Visual Studio がインストールされているかどうかを検出するインストーラーを構成できます。 など、システムの他の要件を確認して、特定のバージョンの Windows または特定の容量の RAM を構成することもできます。
@@ -24,11 +24,11 @@ Visual Studio がインストールされていない場合、VSPackage は機�
 ## <a name="detect-visual-studio-editions"></a>Visual Studio のエディションを検出します。
  Visual Studio のエディションがインストールされているかどうかを判断することを確認の値、**インストール**レジストリ キーが *(REG_DWORD) 1*次の表に一覧表示されていると、適切なフォルダーにします。 Visual Studio のエディションの階層があることに注意してください。
 
-1.  エンタープライズ
+1. エンタープライズ
 
-2.  2 次元形式
+2. 2 次元形式
 
-3.  コミュニティ
+3. コミュニティ
 
 新しいエディションがインストールされているときにそのエディション用のレジストリ キーが以前のエディションの場合とでも追加されます。 つまり、Enterprise edition がインストールされて、**インストール**にキーが設定されている*1*の Enterprise、および Professional および Community エディション。 そのため、必要な最新のエディションのみを確認する必要があります。
 

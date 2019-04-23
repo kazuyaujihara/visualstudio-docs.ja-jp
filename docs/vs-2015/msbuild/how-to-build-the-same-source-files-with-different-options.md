@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663144"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045604"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>方法: 同じソース ファイルを異なるオプションでビルドする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59663144"
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>プロパティのグループを別のプロパティに基づいて設定するには  
   
--   `PropertyGroup` 要素で以下のような `Condition` 属性を使用します。  
+- `PropertyGroup` 要素で以下のような `Condition` 属性を使用します。  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -44,7 +44,7 @@ ms.locfileid: "59663144"
   
 #### <a name="to-define-a-property-based-on-another-property"></a>プロパティを別のプロパティに基づいて定義するには  
   
--   `Property` 要素で以下のような `Condition` 属性を使用します。  
+- `Property` 要素で以下のような `Condition` 属性を使用します。  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -55,7 +55,7 @@ ms.locfileid: "59663144"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>コマンド ライン上でプロジェクト プロパティを設定するには  
   
--   **/property** スイッチをプロパティおよびプロパティ値と共に使用します。 例:  
+- **/property** スイッチをプロパティおよびプロパティ値と共に使用します。 例:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
@@ -69,7 +69,7 @@ ms.locfileid: "59663144"
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>コマンド ライン上で 2 つ以上のプロジェクト プロパティを指定するには  
   
-- **/property** または **/p** スイッチをプロパティおよびプロパティ値と共に複数回使用するか、**/property** または **/p** スイッチを 1 回使用し、複数のプロパティをセミコロン (;) で分けます。 例:  
+- **/property** または **/p** スイッチをプロパティおよびプロパティ値と共に複数回使用するか、**/property** または **/p** スイッチを 1 回使用し、複数のプロパティをセミコロン (;) で分けます。 例えば:  
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  

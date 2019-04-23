@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: ec4bc799c3a808a7259e4dd39565e2e21940ca56
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e947800c82036b061b2f48303733690a95ec53bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053976"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Visual C++ for Cross-Platform Mobile Development を使用することによっ�
   
  Visual C++ for Cross-Platform Mobile Development を使用した開発には、次の利点があります。  
   
-1.  **インストールが簡単。** Visual Studio インストーラーによって、Android と iOS のアプリまたはライブラリを作成するために必要となるサード パーティ製のツールと SDK が取得され、インストールされます。 構成とセットアップは単純で、ほとんどが自動的に行われます。  
+1. **インストールが簡単。** Visual Studio インストーラーによって、Android と iOS のアプリまたはライブラリを作成するために必要となるサード パーティ製のツールと SDK が取得され、インストールされます。 構成とセットアップは単純で、ほとんどが自動的に行われます。  
   
-2.  **強力で使い慣れたビルド環境。** Visual Studio テンプレートを使用して、共有可能なクロスプラットフォーム ソリューションおよびプロジェクトを簡単に作成できます。 1 つの共通インターフェイスを使用して、すべてのプロジェクトのプロパティを管理できます。 すべてのコードを Visual Studio エディターで編集できるため、組み込みのクロスプラットフォーム IntelliSense のコード補完機能とエラーの強調表示を利用できます。  
+2. **強力で使い慣れたビルド環境。** Visual Studio テンプレートを使用して、共有可能なクロスプラットフォーム ソリューションおよびプロジェクトを簡単に作成できます。 1 つの共通インターフェイスを使用して、すべてのプロジェクトのプロパティを管理できます。 すべてのコードを Visual Studio エディターで編集できるため、組み込みのクロスプラットフォーム IntelliSense のコード補完機能とエラーの強調表示を利用できます。  
   
-3.  **統合されたデバッグ操作。** Android デバイスおよびエミュレーター、iOS シミュレーターおよびデバイス、Windows または Windows Phone デバイスおよびエミュレーターを含めたすべてのプラットフォームで、Visual Studio の国際的レベルのデバッグ ツールを使用して、C++ コードを観察しながらステップ実行できます。  
+3. **統合されたデバッグ操作。** Android デバイスおよびエミュレーター、iOS シミュレーターおよびデバイス、Windows または Windows Phone デバイスおよびエミュレーターを含めたすべてのプラットフォームで、Visual Studio の国際的レベルのデバッグ ツールを使用して、C++ コードを観察しながらステップ実行できます。  
   
 ## <a name="get-the-tools"></a>ツールを取得する  
  Visual C++ for Cross-Platform Mobile Development は、Visual Studio 2015 に付属しているインストール可能なオプションです。 前提条件とインストール手順については、「 [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)」を参照してください。 iOS 用のコードをビルドするには、Mac コンピューターと Apple iOS Developer アカウントも必要です。 詳細については、「 [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)」を参照してください。  
@@ -41,55 +41,55 @@ Visual C++ for Cross-Platform Mobile Development を使用することによっ�
   
  Visual C++ for Cross-Platform Mobile Development には、アプリの作成を開始する際に役立つ次のテンプレートが含まれています。  
   
--   OpenGLES 2 アプリケーション (Android、iOS、Windows ユニバーサル)  
+- OpenGLES 2 アプリケーション (Android、iOS、Windows ユニバーサル)  
   
      Android Native Activity アプリ、iOS アプリ、およびユニバーサル Windows アプリをビルドするプロジェクトのセットと、C++ コードの共有ライブラリを含むソリューションを作成します。 これらのアプリでは、共通の C++ OpenGL ES コードを使用して作成されたプラットフォーム固有のライブラリを使用して、各アプリケーションで同じ回転する立方体を描画します。 このテンプレートを使用するには、Visual Studio をインストールするときに、[ユニバーサル Windows アプリ開発ツール] オプションを指定する必要があります。  
   
--   Native-Activity アプリケーション (Android)  
+- Native-Activity アプリケーション (Android)  
   
      完全な C++ OpenGL アプリを Android Native Activity プロジェクトとして作成します。  
   
--   OpenGLES アプリケーション (Android、iOS)  
+- OpenGLES アプリケーション (Android、iOS)  
   
      Android Native Activity アプリと iOS アプリの両方をビルドする一連のプロジェクトからなるソリューションを作成します。 これらのアプリでは、共通の C++ OpenGL ES コードを使用して作成されたプラットフォーム固有のライブラリを使用して、各アプリケーションで同じ回転する立方体を描画します。  
   
--   共有ライブラリ (Android、iOS)  
+- 共有ライブラリ (Android、iOS)  
   
      共有プロジェクトで共通の C++ コードを使用して、Android ダイナミック ライブラリ (.so) ファイルと iOS スタティック ライブラリ (.a) ファイルを作成する複数のプロジェクトからなるソリューションを作成します。  
   
--   基本アプリケーション (Android、Ant)  
+- 基本アプリケーション (Android、Ant)  
   
      Java ソース コードおよび Ant ビルド システムのみを使用する Android の「Hello, World」アプリ プロジェクトを作成します。  
   
--   基本アプリケーション (Android、Gradle)  
+- 基本アプリケーション (Android、Gradle)  
   
      Java ソース コードおよび Gradle ビルド システムのみを使用する Android の「Hello, World」アプリ プロジェクトを作成します。  
   
--   基本ライブラリ (Android、Ant)  
+- 基本ライブラリ (Android、Ant)  
   
      Java ソース コードおよび Ant ビルド システムのみを使用する Android の「Hello, World」ライブラリ プロジェクトを作成します。  
   
--   基本ライブラリ (Android、Gradle)  
+- 基本ライブラリ (Android、Gradle)  
   
      Java ソース コードおよび Gradle ビルド システムのみを使用する Android の「Hello, World」ライブラリ プロジェクトを作成します。  
   
--   ダイナミック共有ライブラリ (Android)  
+- ダイナミック共有ライブラリ (Android)  
   
      C++ コードを使用して、Android ダイナミック ライブラリ (.so) ファイルを作成します。  
   
--   OpenGLES 2 アプリケーション (iOS)  
+- OpenGLES 2 アプリケーション (iOS)  
   
      OpenGL ES 2 iOS アプリをビルドするプロジェクトのセットを含むソリューションを作成します。 このアプリでは、OpenGL ES の C++ コードのライブラリを使用して、iOS アプリ内で回転するキューブを描画します。 このアプリは、iOS アプリに C++ のライブラリをインポートする方法を確認するための出発点として適しています。  
   
--   スタティック ライブラリ (Android)  
+- スタティック ライブラリ (Android)  
   
      Android 用のスタティック ライブラリを構築するプロジェクトを作成します。 Android アプリでリンクできるダイナミック リンクは 1 つだけですが、スタティック ライブラリには数に制限なくリンクできます。  
   
--   スタティック ライブラリ (iOS)  
+- スタティック ライブラリ (iOS)  
   
      iOS 用のスタティック ライブラリを構築するプロジェクトを作成します。  
   
--   メイクファイル プロジェクト (Android)  
+- メイクファイル プロジェクト (Android)  
   
      独自の Android メイクファイル プロジェクトのプロジェクト ラッパーを作成します。  
   
@@ -98,12 +98,12 @@ Visual C++ for Cross-Platform Mobile Development を使用することによっ�
   
 ## <a name="in-this-section"></a>このセクションの内容  
   
-1.  [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
+1. [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
   
-2.  [iOS を使用してビルドするためのツールのインストールおよび構成](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
+2. [iOS を使用してビルドするためのツールのインストールおよび構成](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
-3.  [Android Native Activity アプリの作成](../cross-platform/create-an-android-native-activity-app.md)  
+3. [Android Native Activity アプリの作成](../cross-platform/create-an-android-native-activity-app.md)  
   
-4.  [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
+4. [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
-5.  [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)
+5. [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)

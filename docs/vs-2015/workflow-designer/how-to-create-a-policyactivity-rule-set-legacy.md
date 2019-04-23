@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e7528e8a589cb64e4debc8c1e119f8f59a6244c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8b5dc42932334b54bb46664da14af7df8dcfe131
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050787"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>方法: PolicyActivity ルール セットを作成する (レガシ)
 このトピックでは、[!INCLUDE[wfd1](../includes/wfd1-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする従来の [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用してポリシー アクティビティのルール セットを作成する方法について説明します。  
@@ -32,33 +32,33 @@ ms.locfileid: "58972950"
   
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>PolicyActivity アクティビティ用のルール セットを選択または作成するには  
   
-1.  右クリックし、 [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)、 をクリックし、**プロパティ**を開く、**プロパティ**ウィンドウ。  
+1. 右クリックし、 [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)、 をクリックし、**プロパティ**を開く、**プロパティ**ウィンドウ。  
   
-2.  をクリックして、 **RuleSetReference**プロパティ。  
+2. をクリックして、 **RuleSetReference**プロパティ。  
   
-3.  次のいずれかの操作を行います。  
+3. 次のいずれかの操作を行います。  
   
-    -   をクリックして、 **RuleSetReference**楕円 **[...]**、既存の規則セットをクリックして、[選択ルールを設定 ダイアログ ボックス (レガシ)](../workflow-designer/select-rule-set-dialog-box-legacy.md)します。 次に、手順 10. に進みます。  
-  
-         - または -  
-  
-    -   ルール セットの名前を入力します。 をクリックして、 **RuleSetReference**楕円 **[...]**、し、[**編集**で、[選択ルールを設定] ダイアログ ボックス (レガシ)](../workflow-designer/select-rule-set-dialog-box-legacy.md)します。  
+    - をクリックして、 **RuleSetReference**楕円 **[...]**、既存の規則セットをクリックして、[選択ルールを設定 ダイアログ ボックス (レガシ)](../workflow-designer/select-rule-set-dialog-box-legacy.md)します。 次に、手順 10. に進みます。  
   
          - または -  
   
-    -   ルール セットの名前を入力します。 展開、 **RuleSetReference**プロパティと、省略記号ボタンを選択します **[...]** で、 **RuleSet 定義**プロパティ。  
+    - ルール セットの名前を入力します。 をクリックして、 **RuleSetReference**楕円 **[...]**、し、[**編集**で、[選択ルールを設定] ダイアログ ボックス (レガシ)](../workflow-designer/select-rule-set-dialog-box-legacy.md)します。  
+  
+         - または -  
+  
+    - ルール セットの名前を入力します。 展開、 **RuleSetReference**プロパティと、省略記号ボタンを選択します **[...]** で、 **RuleSet 定義**プロパティ。  
   
          [ルール セット エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)が開きます。  
   
-4.  [ルール セット エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)、 をクリックして**規則の追加**規則セットに新しい規則を追加します。  
+4. [ルール セット エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)、 をクリックして**規則の追加**規則セットに新しい規則を追加します。  
   
-5.  入力、**名前**、**優先度**と**再評価**プロパティ、または既定値を保持します。  
+5. 入力、**名前**、**優先度**と**再評価**プロパティ、または既定値を保持します。  
   
-6.  テキストを入力、**条件**します。  
+6. テキストを入力、**条件**します。  
   
-7.  テキストを入力、 **Then アクション**と**Else アクション**します。  
+7. テキストを入力、 **Then アクション**と**Else アクション**します。  
   
-8.  クリックして**規則の追加**別のルールを追加するには、もう一度です。  
+8. クリックして**規則の追加**別のルールを追加するには、もう一度です。  
   
 9. 操作が完了したら、 **[OK]** をクリックします。  
   

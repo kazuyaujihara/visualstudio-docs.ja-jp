@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e74de898bb9e7810729a0895834f7cdfe5ee5984
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691307"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044495"
 ---
 # <a name="sccget-function"></a>SccGet 関数
 この関数は、表示して、コンパイルの編集ではなく、1 つまたは複数のファイルのコピーを取得します。 ほとんどのシステムでは、ファイルが読み取り専用としてタグ付けされます。
@@ -90,21 +90,21 @@ SCCRTN SccGet(
 
  このソース コントロールのバージョンのローカル キャッシュに、ソース管理データベースと同期されなくなるような状況を解決するのには 2 つの方法はあります。
 
-1.  現在チェック アウトされているソース管理データベースにファイル名の変更を許可しません。
+1. 現在チェック アウトされているソース管理データベースにファイル名の変更を許可しません。
 
-2.  "削除の古い"後に「新規追加」と同等の操作を行います。 次のアルゴリズムは、これを実現する 1 つの方法です。
+2. "削除の古い"後に「新規追加」と同等の操作を行います。 次のアルゴリズムは、これを実現する 1 つの方法です。
 
-    1.  呼び出す、 [SccQueryChanges](../extensibility/sccquerychanges-function.md)関数の名前の変更の詳細について*a.txt*に*b.txt:* ソース管理データベースにします。
+    1. 呼び出す、 [SccQueryChanges](../extensibility/sccquerychanges-function.md)関数の名前の変更の詳細について*a.txt*に*b.txt:* ソース管理データベースにします。
 
-    2.  ローカルの名前を変更*a.txt*に*b.txt:* します。
+    2. ローカルの名前を変更*a.txt*に*b.txt:* します。
 
-    3.  呼び出す、`SccGet`両方の関数*a.txt*と*b.txt:* します。
+    3. 呼び出す、`SccGet`両方の関数*a.txt*と*b.txt:* します。
 
-    4.  *A.txt*が存在しない、不足しているのバージョンのローカル キャッシュを消去、ソース管理データベースに*a.txt*バージョン情報。
+    4. *A.txt*が存在しない、不足しているのバージョンのローカル キャッシュを消去、ソース管理データベースに*a.txt*バージョン情報。
 
-    5.  *B.txt:* チェック アウトされているファイルがローカルの内容とマージされる*b.txt:* ファイル。
+    5. *B.txt:* チェック アウトされているファイルがローカルの内容とマージされる*b.txt:* ファイル。
 
-    6.  更新された*b.txt:* ファイル チェックするようになりましたことができます。
+    6. 更新された*b.txt:* ファイル チェックするようになりましたことができます。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

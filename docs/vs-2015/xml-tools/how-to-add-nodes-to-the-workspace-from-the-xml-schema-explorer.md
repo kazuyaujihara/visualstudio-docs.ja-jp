@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a1a610601ff404ef9aff352e815f930b5ea5cd6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6d4afaab4b0e687d1343e810002ae4ad46c869b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651502"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043975"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>方法: XML スキーマ エクスプローラーからワークスペースにノードを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,35 +26,35 @@ ms.locfileid: "59651502"
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>XML スキーマ エクスプローラーのコンテキスト メニューからノードを追加するには  
   
-1.  次の手順では、[方法。作成し、XSD スキーマ ファイルを編集する](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)します。  
+1. 次の手順では、[方法。作成し、XSD スキーマ ファイルを編集する](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)します。  
   
-2.  XSD エクスプローラーで `PurchaseOrderType` ノードを右クリックします。 選択**グラフ ビューで表示**します。  
+2. XSD エクスプローラーで `PurchaseOrderType` ノードを右クリックします。 選択**グラフ ビューで表示**します。  
   
      `purchaseOrderType` ノードがグラフ ビューのデザイン サーフェイスに表示されます。  
   
 ### <a name="to-drag-and-drop-a-node-on-to-a-view"></a>ビューにノードをドラッグ アンド ドロップするには  
   
-1.  グラフ ビューで `PurchaseOrderType` ノードを右クリックします。 選択**XML スキーマ エクスプ ローラーで表示する**します。  
+1. グラフ ビューで `PurchaseOrderType` ノードを右クリックします。 選択**XML スキーマ エクスプ ローラーで表示する**します。  
   
      XML スキーマ エクスプローラーにノードが強調表示されます。  
   
-2.  右クリックして、`PurchaseOrderType`クリックし、XML スキーマ エクスプ ローラーでノード**すべての参照**します。  
+2. 右クリックして、`PurchaseOrderType`クリックし、XML スキーマ エクスプ ローラーでノード**すべての参照**します。  
   
      `purchaseOrder` ノードが強調表示されます。  
   
-3.  `purchaseOrder` ノードをグラフ ビューにドラッグします。  
+3. `purchaseOrder` ノードをグラフ ビューにドラッグします。  
   
      `purchaseOrder` ノードおよび `PurchaseOrderType` ノードがグラフ ビューのデザイン サーフェイスに並べて表示されます。 2 つのノードは関連があるため (`purchaseOrder` 要素は `PurchaseOrderType` 型)、これらの間に矢印が引かれます。  
   
 ### <a name="to-add-nodes-using-the-schema-explorer-search-capability"></a>スキーマ エクスプローラーの検索機能を使用してノードを追加するには  
   
-1.  検索 テキスト ボックスに「purchaseOrder」を入力、 [XML エクスプ ローラー](../xml-tools/xml-schema-explorer.md)ツールバーおよび検索ボタンをクリックします。  
+1. 検索 テキスト ボックスに「purchaseOrder」を入力、 [XML エクスプ ローラー](../xml-tools/xml-schema-explorer.md)ツールバーおよび検索ボタンをクリックします。  
   
      ![XML スキーマ エクスプ ローラー キーワード検索](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
   
      検索結果が XML スキーマ エクスプローラーで強調表示され、垂直スクロール バーのチックでマークされます。  
   
-2.  クリックして、ワークスペースに検索結果を追加、**強調表示されたノードをワークスペースに追加**概要結果ペインでボタンをクリックします。  
+2. クリックして、ワークスペースに検索結果を追加、**強調表示されたノードをワークスペースに追加**概要結果ペインでボタンをクリックします。  
   
      ![XML スキーマ エクスプ ローラーの検索結果](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")  
   

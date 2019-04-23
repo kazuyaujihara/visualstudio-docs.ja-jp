@@ -11,12 +11,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974726"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054239"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新しいプロジェクトの生成: 内部的な処理、パート 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,22 +25,22 @@ ms.locfileid: "58974726"
   
  Visual Studio を調整するいくつかのタスクがあります。  
   
--   すべての利用可能なプロジェクトの種類のツリーが表示されます。  
+- すべての利用可能なプロジェクトの種類のツリーが表示されます。  
   
--   各プロジェクトの種類のアプリケーション テンプレートの一覧を表示し、いずれかを選択することができます。  
+- 各プロジェクトの種類のアプリケーション テンプレートの一覧を表示し、いずれかを選択することができます。  
   
--   プロジェクトの名前とパスなど、アプリケーションのプロジェクト情報を収集します。  
+- プロジェクトの名前とパスなど、アプリケーションのプロジェクト情報を収集します。  
   
--   プロジェクト ファクトリにこの情報を渡します。  
+- プロジェクト ファクトリにこの情報を渡します。  
   
--   現在のソリューションにプロジェクト項目とフォルダーを生成します。  
+- 現在のソリューションにプロジェクト項目とフォルダーを生成します。  
   
 ## <a name="the-new-project-dialog-box"></a>新しいプロジェクト ダイアログ ボックス  
  すべては、新しいプロジェクトのプロジェクトの種類を選択すると開始します。 クリックして始めましょう**新しいプロジェクト**上、**ファイル**メニュー。 **新しいプロジェクト** ダイアログ ボックスが表示されたら、次のように見える。  
   
  ![新しいプロジェクト ダイアログ ボックス](../../extensibility/internals/media/newproject.gif "NewProject")  
   
- 詳しく見てをみましょう。 **プロジェクトの種類**ツリーが作成できるさまざまなプロジェクトの種類を一覧表示されます。 ようにプロジェクトの種類を選択すると**Visual C# Windows**、開始するためのアプリケーション テンプレートの一覧が表示されます。 **Visual Studio にインストールされたテンプレート**Visual Studio によってインストールされ、コンピューターのユーザーが使用できます。 新しいテンプレートを作成または収集するに追加できる**マイ テンプレート**られ、自分だけに使用できます。  
+ 詳しく見てをみましょう。 **プロジェクトの種類**ツリーが作成できるさまざまなプロジェクトの種類を一覧表示されます。 ようにプロジェクトの種類を選択すると**Visual c# Windows**、開始するためのアプリケーション テンプレートの一覧が表示されます。 **Visual Studio にインストールされたテンプレート**Visual Studio によってインストールされ、コンピューターのユーザーが使用できます。 新しいテンプレートを作成または収集するに追加できる**マイ テンプレート**られ、自分だけに使用できます。  
   
  ようにテンプレートを選択すると**Windows アプリケーション**、ダイアログ ボックスでは、ここでは、アプリケーションの種類の説明が表示されます**Windows ユーザー インターフェイスを備えたアプリケーションを作成するためのプロジェクト**します。  
   
@@ -62,7 +62,7 @@ devenv /installvstemplates
 ```  
   
 ### <a name="project-types"></a>プロジェクトの種類  
- 位置との名前、**プロジェクトの種類**などのルート ノード、 **Visual C#** と**他の言語**、システム レジストリのエントリによって決定されます。 子ノードの組織など**データベース**と**スマート デバイス**、対応する .vstemplate ファイルを含むフォルダーの階層構造を反映します。 最初のルート ノードを見てみましょう。  
+ 位置との名前、**プロジェクトの種類**などのルート ノード、 **Visual c#** と**他の言語**、システム レジストリのエントリによって決定されます。 子ノードの組織など**データベース**と**スマート デバイス**、対応する .vstemplate ファイルを含むフォルダーの階層構造を反映します。 最初のルート ノードを見てみましょう。  
   
 #### <a name="project-type-root-nodes"></a>プロジェクトの種類のルート ノード  
  ときに[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]はシステム レジストリ キーのルート ノードの名前をビルドする HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs のサブキーを通過する、初期化、**プロジェクトの種類**ツリー。 この情報は、後で使用できるキャッシュされます。 TemplateDirs 見て\\{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1 キー。 各エントリは、VSPackage の GUID です。 サブキーの名前 (/1) は無視されますが、その存在は、これがあることを示します、**プロジェクトの種類**ルート ノード。 ルート ノードがありますでその外観を制御するいくつかのサブキーに、**プロジェクトの種類**ツリー。 これらのいくつかを見てみましょう。  
@@ -80,7 +80,7 @@ devenv /installvstemplates
   
  \<Visual Studio インストール パス > \VC#\VCSPackages\1033\csprojui.dll  
   
- これを確認するには、ファイル エクスプ ローラーを開くし、csprojui.dll を Visual Studio のディレクトリにドラッグします. 文字列テーブル リソース #2345 にキャプションを示しています。 **Visual C#** します。  
+ これを確認するには、ファイル エクスプ ローラーを開くし、csprojui.dll を Visual Studio のディレクトリにドラッグします. 文字列テーブル リソース #2345 にキャプションを示しています。 **Visual c#** します。  
   
 ##### <a name="sortpriority"></a>SortPriority  
  ルート ノードの位置を指定します、**プロジェクトの種類**ツリー。  
@@ -116,11 +116,11 @@ devenv /installvstemplates
   
  ときに、**新しいプロジェクト** ダイアログ ボックスが開き、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ProjectTemplates フォルダーを走査し、その構造を再作成、**プロジェクトの種類**ツリーにいくつかの変更。  
   
--   ルート ノード、**プロジェクトの種類**ツリーは、アプリケーション テンプレートによって決定されます。  
+- ルート ノード、**プロジェクトの種類**ツリーは、アプリケーション テンプレートによって決定されます。  
   
--   ノード名はローカライズできますが、特殊文字を含めることができます。  
+- ノード名はローカライズできますが、特殊文字を含めることができます。  
   
--   並べ替え順序を変更することができます。  
+- 並べ替え順序を変更することができます。  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>プロジェクトの種類のルート ノードの検索  
  Visual Studio では、ProjectTemplates フォルダーはスキャン、ときに、すべての .zip ファイルを開き、.vstemplate ファイルを抽出します。 .Vstemplate ファイルでは、XML を使用して、アプリケーション テンプレートについて説明します。 詳細については、次を参照してください。[新しいプロジェクトの生成。内部的には、2 つのパート](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)します。  
@@ -131,7 +131,7 @@ devenv /installvstemplates
 <ProjectType>CSharp</ProjectType>  
 ```  
   
- \<ProjectType > タグ、および、ProjectTemplates フォルダーのサブフォルダー内のアプリケーションのルート ノードを決定します。、**プロジェクトの種類**ツリー。 表示する例では、Windows CE アプリケーション、 **Visual C#** 、ルート ノードが、Windows CE アプリケーションが表示が WindowsCE フォルダーを visual Basic フォルダーに移動した場合でも、 **Visual C#** ルート ノード。  
+ \<ProjectType > タグ、および、ProjectTemplates フォルダーのサブフォルダー内のアプリケーションのルート ノードを決定します。、**プロジェクトの種類**ツリー。 表示する例では、Windows CE アプリケーション、 **Visual c#** 、ルート ノードが、Windows CE アプリケーションが表示が WindowsCE フォルダーを visual Basic フォルダーに移動した場合でも、 **Visual c#** ルート ノード。  
   
 ##### <a name="localizing-the-node-name"></a>ノード名のローカライズ  
  Visual Studio では、ProjectTemplates フォルダーはスキャン、見つけた .vstdir ファイルを調査します。 .Vstdir ファイルは、プロジェクトの種類の外観を制御する XML ファイル、**新しいプロジェクト** ダイアログ ボックス。 .Vstdir ファイルで使用して、 \<LocalizedName > タグの名前を**プロジェクトの種類**ノード。  
@@ -208,11 +208,11 @@ devenv /installvstemplates
   
    Visual Studio を開きます。  
   
-10. 開く、**新しいプロジェクト** ダイアログ ボックスし、展開、 **Visual C#** プロジェクト ノード。  
+10. 開く、**新しいプロジェクト** ダイアログ ボックスし、展開、 **Visual c#** プロジェクト ノード。  
   
     ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
-    **MyProjectNode** Visual C# の Windows ノードのすぐ下に子ノードとして表示されます。  
+    **MyProjectNode** Visual c# の Windows ノードのすぐ下に子ノードとして表示されます。  
   
 ## <a name="see-also"></a>関連項目  
  [新しいプロジェクトの生成:内部的には、パート 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

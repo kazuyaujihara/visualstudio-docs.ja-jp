@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bdc9b065f3defaf66564d0731408551ded540de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 577b12be220e2a695609db6c508d7aaf69c79f92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054522"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>方法: Office プロジェクトでのイベント ハンドラーを作成します。
   Visual Basic および c# でイベント ハンドラーを作成するいくつかの方法はあります。 デザイン ビューでコントロールをダブルクリックして既定のコントロールのイベント ハンドラーを作成またはの [イベント] ペインを使用して、**プロパティ**ウィンドウ コントロールのすべてのイベント ハンドラーを作成します。 ただし、コード ビューでは、可能性がありますいないする場合、イベント ハンドラーを作成、デザイン ビューに切り替えます。
@@ -31,22 +31,22 @@ ms.locfileid: "56598118"
 
 ### <a name="to-create-an-event-handler-in-visual-basic"></a>Visual Basic でイベント ハンドラーを作成するには
 
-1.  **クラス名**コード エディターの上部にあるドロップダウン リストを選択するオブジェクトがのイベント ハンドラーを作成します。
+1. **クラス名**コード エディターの上部にあるドロップダウン リストを選択するオブジェクトがのイベント ハンドラーを作成します。
 
     > [!NOTE]
     >  イベント ハンドラーを作成する場合`ThisDocument`または`ThisWorkbook`、選択する必要があります **(ThisDocument イベント)** または **(ThisWorkbook イベント)** で、**クラス名**ドロップダウン リスト
 
-2.  **メソッド名**ドロップダウン リストで、コード エディターの上部にあるイベントを選択します。
+2. **メソッド名**ドロップダウン リストで、コード エディターの上部にあるイベントを選択します。
 
      Visual Studio では、イベント ハンドラーを作成して、新しく作成されたイベント ハンドラーにカーソルを移動します。 イベント ハンドラーが既に存在する場合は、既存のイベント ハンドラーにカーソルが移動します。
 
-### <a name="to-create-an-event-handler-in-c"></a>C# でイベント ハンドラーを作成するには
+### <a name="to-create-an-event-handler-in-c"></a>C でイベント ハンドラーを作成するには\#
 
-1.  内のイベントのデリゲートを作成、**スタートアップ**修飾イベント名の後にスペースを入力し、入力してクラスのイベント**+=** 後にスペースをします。 例:
+1. 内のイベントのデリゲートを作成、**スタートアップ**修飾イベント名の後にスペースを入力し、入力してクラスのイベント**+=** 後にスペースをします。 例:
 
      `this.<object name>.<event name> +=`
 
-2.  コードの行の終わりには、TAB キーを 2 回押します。
+2. コードの行の終わりには、TAB キーを 2 回押します。
 
      Visual Studio が自動的のコード行が完了すると、イベント ハンドラーを作成および、新しく作成されたイベント ハンドラーにカーソルを移動します。
 

@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9dda948921c702367859afe32ad75a7998460587
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793435"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048568"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>方法: 基本テクスチャ シェーダーを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ ms.locfileid: "54793435"
   
  このドキュメントでは、以下のアクティビティについて説明します。  
   
--   シェーダー グラフからのノードの削除  
+- シェーダー グラフからのノードの削除  
   
--   グラフへのノードの追加  
+- グラフへのノードの追加  
   
--   シェーダー パラメーターの設定  
+- シェーダー パラメーターの設定  
   
--   パラメーターの可視性の設定  
+- パラメーターの可視性の設定  
   
--   ノードの接続  
+- ノードの接続  
   
 ## <a name="creating-a-basic-texture-shader"></a>基本的なテクスチャ シェーダーの作成  
  テクスチャ サンプルのカラー値とアルファ値を直接最終的な出力色に記述することで、基本的な単一テクスチャ シェーダーを実装できます。  
