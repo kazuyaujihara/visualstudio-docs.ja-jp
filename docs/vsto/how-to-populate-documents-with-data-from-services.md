@@ -14,40 +14,40 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 137755ae4e1bfab97cbaec063a29a95caa1d9cd6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 6239bc351872dc7a945c3fbff8ad1ed13817c3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865022"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082790"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>方法: サービスからデータをドキュメントに読み込む
 
-Microsoft Office のドキュメント レベルのプロジェクトでは、Windows フォーム プロジェクトと同じ方法でデータにアクセスできます。 同じツールとコードを使用してソリューションにデータを取り込むことができ、Windows フォーム コントロールを使用してデータを表示できます。 さらに、ホスト コントロールと呼ばれるコントロールを利用できます。これは、Microsoft Office Excel および Microsoft Office Word のネイティブ オブジェクトであり、イベントやデータ バインディング機能が強化されています。 詳細については、[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)を参照してください。
+Microsoft Office のドキュメント レベルのプロジェクトでは、Windows フォーム プロジェクトと同じ方法でデータにアクセスできます。 同じツールとコードを使用してソリューションにデータを取り込むことができ、Windows フォーム コントロールを使用してデータを表示できます。 さらに、ホスト コントロールと呼ばれるコントロールを利用できます。これは、Microsoft Office Excel および Microsoft Office Word のネイティブ オブジェクトであり、イベントやデータ バインディング機能が強化されています。 詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)します。
 
 [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 次の例は、デザイン時にドキュメントにデータ バインド コントロールを追加する方法を示しています。 VSTO アドインにおける実行時にデータ バインド コントロールを追加する方法の例は、次を参照してください。[チュートリアル。VSTO アドイン プロジェクトでサービスからのデータにバインド](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md)します。
 
-![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。Microsoft Excel から web サービスと対話しますか。](http://go.microsoft.com/fwlink/?LinkID=130284).
+![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。Microsoft Excel から web サービスと対話しますか](http://go.microsoft.com/fwlink/?LinkID=130284)。
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Web サービスからデータをドキュメント レベルのプロジェクトを設定するには
 
-1.  **[データ ソース]** ウィンドウを開き、プロジェクトのサービス データ ソースを作成します。 詳細については、「[新しいデータ ソースの追加](../data-tools/add-new-data-sources.md)」を参照してください。
+1. **[データ ソース]** ウィンドウを開き、プロジェクトのサービス データ ソースを作成します。 詳細については、「[新しいデータ ソースの追加](../data-tools/add-new-data-sources.md)」を参照してください。
 
-2.  目的のテーブルまたはフィールドを **[データ ソース]** ウィンドウからドキュメントまでドラッグします。
+2. 目的のテーブルまたはフィールドを **[データ ソース]** ウィンドウからドキュメントまでドラッグします。
 
      コントロールがドキュメント内に作成され、 <xref:System.Windows.Forms.BindingSource> が作成されてプロジェクト内のオブジェクトのクラスにバインドされ、サービスのクラスが生成されます。
 
-3.  コードでは、手順 1 で接続する web サービス クラスのインスタンスを作成します。
+3. コードでは、手順 1 で接続する web サービス クラスのインスタンスを作成します。
 
-4.  Web サービスとの通信に必要なプロパティがある場合は、これらのプロパティのインスタンスを作成します。
+4. Web サービスとの通信に必要なプロパティがある場合は、これらのプロパティのインスタンスを作成します。
 
-5.  Web サービスが公開しているメソッドと、手順 4 で作成したプロパティ インスタンスを使用し、データ要求を作成して送信します。
+5. Web サービスが公開しているメソッドと、手順 4 で作成したプロパティ インスタンスを使用し、データ要求を作成して送信します。
 
      使用する方法は、web サービスの提供に依存します。
 
-6.  Web サービスからデータ応答を割り当てる、<xref:System.Windows.Forms.BindingSource.DataSource%2A>のプロパティ、<xref:System.Windows.Forms.BindingSource>します。
+6. Web サービスからデータ応答を割り当てる、<xref:System.Windows.Forms.BindingSource.DataSource%2A>のプロパティ、<xref:System.Windows.Forms.BindingSource>します。
 
 プロジェクトを実行すると、データ ソースの先頭のレコードがコントロールに表示されます。 レコードのスクロールを有効にするには、 <xref:System.Windows.Forms.BindingSource>のオブジェクトを使用して通貨のイベントを処理します。
 

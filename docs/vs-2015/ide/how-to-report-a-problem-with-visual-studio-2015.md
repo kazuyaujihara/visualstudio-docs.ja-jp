@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665143"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083650"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Visual Studio 2015 で問題を報告する方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Microsoft は、お客様のプライバシーを尊重いたします。 お客
 
 ## <a name="describe-the-problem"></a>問題について説明します
 
-###  <a name="describe_the_problem"></a>
+### <a name="describe_the_problem"></a>
 
 1. 問題がわかりやすいタイトルを指定していただくと、適切な Visual Studio チームに転送するのに役立ちます。
 
@@ -49,15 +49,15 @@ Microsoft は、お客様のプライバシーを尊重いたします。 お客
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>トレースとヒープ ダンプを提供します (省略可能)
 
-###  <a name="provide_a_trace_and_heap_dump"></a>
+### <a name="provide_a_trace_and_heap_dump"></a>
 
-1.  トレースとヒープ ダンプのファイルは、問題を診断するうえで非常に役立ちます。   [問題の報告] ツールで再現する手順を記録し Microsoft にデータを送信してくだされば、大変助かります。
+1. トレースとヒープ ダンプのファイルは、問題を診断するうえで非常に役立ちます。   [問題の報告] ツールで再現する手順を記録し Microsoft にデータを送信してくだされば、大変助かります。
 
-2.  **[操作を記録して問題を再現する]** の横にあるシェブロンをクリックします。 問題が原因で Visual Studio のハングやクラッシュが生じる場合、Visual Studio の別のインスタンスを開き、リスト ビューから選択します。
+2. **[操作を記録して問題を再現する]** の横にあるシェブロンをクリックします。 問題が原因で Visual Studio のハングやクラッシュが生じる場合、Visual Studio の別のインスタンスを開き、リスト ビューから選択します。
 
-3.  **[記録の開始]** をクリックし、問題を再現するための操作を行います。 完了したら、フローティング ウィンドウで **[記録の停止]** ボタンをクリックします。
+3. **[記録の開始]** をクリックし、問題を再現するための操作を行います。 完了したら、フローティング ウィンドウで **[記録の停止]** ボタンをクリックします。
 
-4.  記録された情報を Visual Studio が収集してパッケージ化するまで、しばらくお待ちください。 収集プロセスが完了すると、次のようなダイアログ ボックスが表示されます。
+4. 記録された情報を Visual Studio が収集してパッケージ化するまで、しばらくお待ちください。 収集プロセスが完了すると、次のようなダイアログ ボックスが表示されます。
 
      ![トレース ファイルの記録](../ide/media/record-a-trace-file.png "トレース ファイルの記録")
 

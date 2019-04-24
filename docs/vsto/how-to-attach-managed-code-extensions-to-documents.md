@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0faac79e99b425eadd4e43c88b0a04dba670731
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044265"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>方法: マネージ コード拡張機能をドキュメントにアタッチします。
   カスタマイズ アセンブリは、既存の Microsoft Office Word 文書または Microsoft Office Excel ブックにアタッチできます。 文書またはブックは、Microsoft Office プロジェクトと Visual Studio での開発ツールでサポートされている任意のファイル形式にできます。 詳細については、「[ドキュメント レベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)」を参照してください。
@@ -30,25 +30,25 @@ ms.locfileid: "56646774"
 > [!NOTE]
 >  カスタマイズは、コードが、指定されたドキュメントがないコントロールを必要とする場合の読み込みに失敗します。
 
- ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:アタッチまたは Word 文書から VSTO アセンブリをデタッチしますか](http://go.microsoft.com/fwlink/?LinkId=136782).
+ ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。アタッチまたは Word 文書から VSTO アセンブリをデタッチしますか](http://go.microsoft.com/fwlink/?LinkId=136782)。
 
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>マネージ コード拡張機能をドキュメントにアタッチするには
 
-1.  参照を追加するコンソール アプリケーションまたは Windows フォーム プロジェクトなど、Microsoft Office を必要としないプロジェクトで、 *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll*と*Microsoft.VisualStudio.Tools.Applications.Runtime.dll*アセンブリ。
+1. 参照を追加するコンソール アプリケーションまたは Windows フォーム プロジェクトなど、Microsoft Office を必要としないプロジェクトで、 *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll*と*Microsoft.VisualStudio.Tools.Applications.Runtime.dll*アセンブリ。
 
-2.  次の追加**Imports**または**を使用して**ステートメントをコード ファイルの先頭にします。
+2. 次の追加**Imports**または**を使用して**ステートメントをコード ファイルの先頭にします。
 
      [!code-csharp[Trin_VstcoreDeployment#4](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#4)]
      [!code-vb[Trin_VstcoreDeployment#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#4)]
 
-3.  呼び出す静的<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>メソッド。
+3. 呼び出す静的<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>メソッド。
 
      次のコード例では、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>オーバー ロードします。 このオーバー ロードは、ドキュメントの完全なパスと<xref:System.Uri>ドキュメントにアタッチするカスタマイズの配置マニフェストの場所を指定します。 この例では、という名前の Word 文書**worddocument1.docx など**、デスクトップ上にあるという名前のフォルダーに配置マニフェストがあると**発行**もデスクトップ上にあります。
 
      [!code-csharp[Trin_VstcoreDeployment#3](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#3)]
      [!code-vb[Trin_VstcoreDeployment#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#3)]
 
-4.  プロジェクトをビルドし、カスタマイズをアタッチするコンピューターでアプリケーションを実行します。 コンピューターでは、Office ランタイムがインストールされている Visual Studio 2010 Tools が必要です。
+4. プロジェクトをビルドし、カスタマイズをアタッチするコンピューターでアプリケーションを実行します。 コンピューターでは、Office ランタイムがインストールされている Visual Studio 2010 Tools が必要です。
 
 ## <a name="see-also"></a>関連項目
 - [ServerDocument クラスを使用してサーバー上のドキュメントを管理します。](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)

@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b09e658c896f4f3e864c46dbd02d65a871da318
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c7fa5073fca476159aa756b7a5527dd1007ab66b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600842"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075806"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>実行時に Office ドキュメントにコントロールを追加します。
   コントロールは、Microsoft Office Word 文書と実行時に Microsoft Office Excel ブックを追加することができます。 実行時にも削除できます。 コントロールを追加または削除時に呼び出される*ダイナミック コントロール*します。
@@ -42,18 +42,18 @@ ms.locfileid: "56600842"
 
 - [Windows フォーム コントロールをドキュメントに追加](#WindowsForms)します。
 
-  ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:実行時にドキュメントの画面にコントロールを追加しますか](http://go.microsoft.com/fwlink/?LinkId=132782).
+  ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。実行時にドキュメントの画面にコントロールを追加しますか](http://go.microsoft.com/fwlink/?LinkId=132782)。
 
-##  <a name="ControlsCollection"></a> コントロールのコレクションを使用して実行時にコントロールを管理します。
+## <a name="ControlsCollection"></a> コントロールのコレクションを使用して実行時にコントロールを管理します。
  追加、取得、または実行時にコントロールを削除してのヘルパー メソッドを使用して、<xref:Microsoft.Office.Tools.Excel.ControlCollection>と<xref:Microsoft.Office.Tools.Word.ControlCollection>オブジェクト。
 
  これらのオブジェクトにアクセスする方法は、開発しているプロジェクトの種類によって異なります。
 
--   Excel のドキュメント レベルのプロジェクトでは、 <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> クラス、 `Sheet1`クラス、および `Sheet2`クラスの `Sheet3` プロパティを使用します。 これらのクラスの詳細については、[Worksheet ホスト項目](../vsto/worksheet-host-item.md)を参照してください。
+- Excel のドキュメント レベルのプロジェクトでは、 <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> クラス、 `Sheet1`クラス、および `Sheet2`クラスの `Sheet3` プロパティを使用します。 これらのクラスの詳細については、次を参照してください。 [Worksheet ホスト項目](../vsto/worksheet-host-item.md)します。
 
--   Word のドキュメント レベルのプロジェクトでは、 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> クラスの `ThisDocument` プロパティを使用します。 このクラスの詳細については、[Document ホスト項目](../vsto/document-host-item.md)を参照してください。
+- Word のドキュメント レベルのプロジェクトでは、 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> クラスの `ThisDocument` プロパティを使用します。 このクラスの詳細については、次を参照してください。 [Document ホスト項目](../vsto/document-host-item.md)します。
 
--   Excel または Word の VSTO アドイン プロジェクトで使用して、`Controls`のプロパティを<xref:Microsoft.Office.Tools.Excel.Worksheet>または<xref:Microsoft.Office.Tools.Word.Document>実行時に生成します。 実行時にこれらのオブジェクトを生成する詳細については、[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)を参照してください。
+- Excel または Word の VSTO アドイン プロジェクトで使用して、`Controls`のプロパティを<xref:Microsoft.Office.Tools.Excel.Worksheet>または<xref:Microsoft.Office.Tools.Word.Document>実行時に生成します。 実行時にこれらのオブジェクトを生成する詳細については、次を参照してください。[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)します。
 
 ### <a name="add-controls"></a>コントロールを追加します。
  <xref:Microsoft.Office.Tools.Excel.ControlCollection> 型と <xref:Microsoft.Office.Tools.Word.ControlCollection> 型には、ドキュメントとワークシートにホスト コントロールや Windows フォームのコモン コントロールを追加するために使用できるヘルパー メソッドが含まれています。 各メソッドの名前は、 `Add`*コントロール クラス*という形式になっています。ここで、 *コントロール クラス* は、追加するコントロールのクラス名です。 たとえば、ドキュメントに <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールを追加するには、 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> メソッドを使用します。
@@ -76,7 +76,7 @@ ms.locfileid: "56600842"
 > [!NOTE]
 >  ドキュメントの `Shutdown` イベント ハンドラーの中で、プログラムによってコントロールを削除しないでください。 `Shutdown` イベントが発生する時点では、ドキュメントの UI 要素は利用できなくなっています。 ドキュメントを閉じる前にコントロールを削除するには、Word では <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> や <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> 、Excel では <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>や <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> など、別のイベントのイベント ハンドラーにコードを追加してください。
 
-##  <a name="HostControls"></a> ホスト コントロールをドキュメントに追加します。
+## <a name="HostControls"></a> ホスト コントロールをドキュメントに追加します。
 
 ホスト コントロールをプログラムでドキュメントに追加するには、そのコントロールを一意に識別する名前を指定し、ドキュメント上にコントロールを追加する場所を指定する必要があります。 具体的な手順については、次のトピックを参照してください。
 
@@ -90,17 +90,17 @@ ms.locfileid: "56600842"
 
 - [方法: Word 文書に Bookmark コントロールを追加します。](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 
-ホスト コントロールの詳細については、[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)を参照してください。
+ホスト コントロールの詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)します。
 
-ドキュメントを保存して閉じると、動的に作成したすべてのホスト コントロールはそれぞれイベントから切断され、データ バインディング機能も失われます。 ソリューションにコードを追加すれば、ドキュメントが再び開かれる時点でホスト コントロールを再作成するようにできます。 詳細については、[Office ドキュメントでのダイナミック コントロールを永続化](../vsto/persisting-dynamic-controls-in-office-documents.md)を参照してください。
+ドキュメントを保存して閉じると、動的に作成したすべてのホスト コントロールはそれぞれイベントから切断され、データ バインディング機能も失われます。 ソリューションにコードを追加すれば、ドキュメントが再び開かれる時点でホスト コントロールを再作成するようにできます。 詳細については、次を参照してください。 [Office ドキュメントでのダイナミック コントロールを永続化](../vsto/persisting-dynamic-controls-in-office-documents.md)します。
 
 > [!NOTE]
 > <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>、 <xref:Microsoft.Office.Tools.Word.XMLNode>、および <xref:Microsoft.Office.Tools.Word.XMLNodes>の各ホスト コントロールは、プログラムでドキュメントに追加することができないため、ヘルパー メソッドは用意されていません。
 
-##  <a name="WindowsForms"></a> Windows フォーム コントロールをドキュメントに追加します。
+## <a name="WindowsForms"></a> Windows フォーム コントロールをドキュメントに追加します。
  Windows フォーム コントロールをプログラムでドキュメントに追加する場合は、コントロールの場所とコントロールを一意に識別する名前を指定する必要があります。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] が、各コントロールのヘルパー メソッドを提供します。 これらのメソッドはオーバーロードされているため、コントロールの場所として範囲または特定の座標のいずれかを渡すことができます。
 
- ドキュメントを保存して閉じると、動的に作成されたすべての Windows フォーム コントロールはドキュメントから削除されます。 ソリューションにコードを追加すれば、ドキュメントが再び開かれる時点でコントロールを再作成するようにできます。 VSTO アドインを使用してダイナミック Windows フォーム コントロールを作成する場合は、コントロールの ActiveX ラッパーがドキュメントに残されます。 詳細については、[Office ドキュメントでのダイナミック コントロールを永続化](../vsto/persisting-dynamic-controls-in-office-documents.md)を参照してください。
+ ドキュメントを保存して閉じると、動的に作成されたすべての Windows フォーム コントロールはドキュメントから削除されます。 ソリューションにコードを追加すれば、ドキュメントが再び開かれる時点でコントロールを再作成するようにできます。 VSTO アドインを使用してダイナミック Windows フォーム コントロールを作成する場合は、コントロールの ActiveX ラッパーがドキュメントに残されます。 詳細については、次を参照してください。 [Office ドキュメントでのダイナミック コントロールを永続化](../vsto/persisting-dynamic-controls-in-office-documents.md)します。
 
 > [!NOTE]
 >  Windows フォーム コントロールは、保護されているドキュメントにはプログラムで追加できません。 コントロールを追加するために、Word 文書または Excel ワークシートの保護をプログラムで解除する場合は、ドキュメントを閉じるときにコントロールの ActiveX ラッパーを削除するコードを追加で記述する必要があります。 コントロールの ActiveX ラッパーは、保護されたドキュメントから自動的には削除されません。

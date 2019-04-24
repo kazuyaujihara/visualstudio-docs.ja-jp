@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a3fa4013a5fa9b3fb6ec17ee07277f5e4b7d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082582"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>既存の SharePoint サイトからアイテムをインポートします。
   SharePoint ソリューション パッケージのインポート プロジェクト テンプレートによって、新しい [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint ソリューションの既存の SharePoint サイトからコンテンツ タイプやフィールドなどの要素を再利用できます。 インポートしたソリューションのほとんどは変更せずに実行できますが、それらをインポートした後にいずれかの項目を変更する場合は特に、考慮すべき特定の制限事項および問題があります。
@@ -84,7 +84,7 @@ ms.locfileid: "56645148"
 
  フィーチャーは、SharePoint アイテムのコンテナーになります。 各フィーチャーは、その中に含まれているコンテンツ タイプやリスト定義などの各アイテムへの参照を保持します。 ソリューションをインポートすると、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] はインポートされた要素のすべてのフィーチャーを設定して、ファイルのフィーチャーと要素との関係を維持しようと試みます。 参照を解決できないファイルがあれば、 **[その他のインポートされたファイル]** フォルダーに配置されます。
 
- 機能の詳細については、[SharePoint の開発ソリューション](../sharepoint/developing-sharepoint-solutions.md)と[機能を扱う](http://go.microsoft.com/fwlink/?LinkID=147704)を参照してください。
+ 機能の詳細については、次を参照してください。 [SharePoint の開発ソリューション](../sharepoint/developing-sharepoint-solutions.md)と[機能を扱う](http://go.microsoft.com/fwlink/?LinkID=147704)します。
 
 ### <a name="handle-special-cases"></a>特殊なケースを処理します。
  Visual Studio はアイテムとその依存ファイルの調整ができない場合があります。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] が解決できないファイルは **[その他のインポートされたファイル]** フォルダーに表示されます。 また、その **DeploymentType** プロパティは **NoDeployment** に設定されるので、それらのファイルがソリューションと一緒に配置されることはありません。
@@ -96,7 +96,7 @@ ms.locfileid: "56645148"
  ワークフローをインポートすると、InfoPath フォームが **[その他のインポートされたファイル]** フォルダーにコピーされます。 場合、 *.wsp*ファイルには、Web テンプレートが含まれています、スタートアップ ページとして設定されて**ソリューション エクスプ ローラー**します。
 
 ## <a name="import-fields-and-property-bags"></a>インポートのフィールドとプロパティ バッグ
- 複数のフィールドを含むソリューションをインポートするときに、すべての個別のフィールド定義が、1 つにマージされる*Elements.xml*内のノードの下にあるファイル**ソリューション エクスプ ローラー**と呼ばれる**フィールド**. 同様に、すべてのプロパティ バッグ エントリにマージされて、 *Elements.xml*と呼ばれるノードの下にあるファイル**PropertyBags**します。
+ 複数のフィールドを含むソリューションをインポートするときに、すべての個別のフィールド定義が、1 つにマージされる*Elements.xml*内のノードの下にあるファイル**ソリューション エクスプ ローラー**と呼ばれる**フィールド**。 同様に、すべてのプロパティ バッグ エントリにマージされて、 *Elements.xml*と呼ばれるノードの下にあるファイル**PropertyBags**します。
 
  SharePoint 内のフィールドは、テキスト、ブール値、参照などの指定したデータ型の列です。 詳細については、次を参照してください。[ビルディング ブロック。列とフィールド型](http://go.microsoft.com/fwlink/?LinkId=182304)します。 プロパティ バッグを使用することによって、SharePoint 内のオブジェクト (ファームから SharePoint サイト上のリストまですべて) にプロパティを追加できます。 プロパティ バッグは、プロパティの名前と値のハッシュ テーブルとして実装されます。 詳しくは、「 [SharePoint 構成の管理](http://go.microsoft.com/fwlink/?LinkId=182296) 」または「 [SharePoint プロパティ バッグ設定](http://go.microsoft.com/fwlink/?LinkId=182297)」をご覧ください。
 
@@ -119,9 +119,9 @@ ms.locfileid: "56645148"
 
  このエラーが発生すると、アイテムは作成されません。 この問題は、インポートしたモジュールで最も頻繁に発生します。 この問題を回避するには、次の操作を行います。
 
--   **[新しいプロジェクトの追加]** ダイアログ ボックスにプロジェクト名を入力するときは、短い名前を使用します。
+- **[新しいプロジェクトの追加]** ダイアログ ボックスにプロジェクト名を入力するときは、短い名前を使用します。
 
--   パスを短くために、可能な限りルート フォルダーに近い場所にプロジェクトを作成します。
+- パスを短くために、可能な限りルート フォルダーに近い場所にプロジェクトを作成します。
 
 ## <a name="the-sharepointproductversion-attribute"></a>SharePointProductVersion 属性
  [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] または [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]など SharePoint の以前のバージョンで作成されたソリューションをインポートする場合、パッケージ マニフェストの SharePointProductVersion 属性の値を 12.0 に変更するか、インポートされたすべての Web ページに Script Manager コントロールを挿入して SharePointProductVersion の設定を 14.0 のままにします。 それ以外の場合、インポートされた Web フォームは、SharePoint では表示されません。
