@@ -14,38 +14,38 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1169ea54ffbc0d0437204ed4491e2b8cc68a4a04
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079146"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>方法: データベースからデータをワークシートに読み込む
 
-Windows フォーム プロジェクトでのデータにアクセスするのと同じ方法でドキュメント レベルの Office プロジェクトでのデータにアクセスすることができます。 同じツールとコードを使用してソリューションにデータを取り込むことができ、Windows フォーム コントロールを使用してデータを表示できます。 さらに、利用では、ホスト コントロールは、イベントとデータ バインディング機能による機能強化された Microsoft Office Excel でのネイティブのオブジェクトと呼ばれるようです。 詳細については、[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)を参照してください。
+Windows フォーム プロジェクトでのデータにアクセスするのと同じ方法でドキュメント レベルの Office プロジェクトでのデータにアクセスすることができます。 同じツールとコードを使用してソリューションにデータを取り込むことができ、Windows フォーム コントロールを使用してデータを表示できます。 さらに、利用では、ホスト コントロールは、イベントとデータ バインディング機能による機能強化された Microsoft Office Excel でのネイティブのオブジェクトと呼ばれるようです。 詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)します。
 
 [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 次の例は、デザイナーを使用してドキュメント レベルのプロジェクトにデータ バインド コントロールを追加する方法を示しています。 アプリケーション レベルのプロジェクトの実行時にデータ バインド コントロールを追加する方法の例は、次を参照してください。[チュートリアル。VSTO アドイン プロジェクトで複雑なデータ バインディング](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)します。
 
-![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。Excel のワークシートにデータを転送しますか。](http://go.microsoft.com/fwlink/?LinkID=130277)、および[How do i:Excel でデータベースのデータを使用しますか。](http://go.microsoft.com/fwlink/?LinkID=130287).
+![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。Excel のワークシートにデータを転送しますか。](http://go.microsoft.com/fwlink/?LinkID=130277)、および[How do i:Excel でデータベースのデータを使用しますか](http://go.microsoft.com/fwlink/?LinkID=130287)。
 
 ## <a name="add-a-data-bound-control-to-a-worksheet-at-design-time"></a>デザイン時にデータ バインド コントロールをワークシートに追加します。
 
 ### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>ワークシートに、データベースからデータを設定するには
 
-1.  デザイナーでワークシートを開き、Visual Studio で、Excel のドキュメント レベルのプロジェクトを開きます。
+1. デザイナーでワークシートを開き、Visual Studio で、Excel のドキュメント レベルのプロジェクトを開きます。
 
-2.  **[データ ソース]** ウィンドウを開いて、プロジェクトのデータ ソースを作成します。 詳細については、[新しい接続を追加](../data-tools/add-new-connections.md)を参照してください。
+2. **[データ ソース]** ウィンドウを開いて、プロジェクトのデータ ソースを作成します。 詳細については、次を参照してください。[新しい接続を追加](../data-tools/add-new-connections.md)します。
 
-3.  フィールドまたはから使用テーブルをドラッグして、**データソース**をワークシートにウィンドウ。
+3. フィールドまたはから使用テーブルをドラッグして、**データソース**をワークシートにウィンドウ。
 
 次のコントロールの 1 つは、ワークシートに作成されます。
 
--   フィールドをドラッグする場合、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールがワークシートに作成します。 詳細については、[NamedRange コントロール](../vsto/namedrange-control.md)を参照してください。
+- フィールドをドラッグする場合、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールがワークシートに作成します。 詳細については、次を参照してください。 [NamedRange コントロール](../vsto/namedrange-control.md)します。
 
--   テーブルをドラッグする場合、<xref:Microsoft.Office.Tools.Excel.ListObject>コントロールがワークシートに作成します。 詳細については、[ListObject コントロール](../vsto/listobject-control.md)を参照してください。
+- テーブルをドラッグする場合、<xref:Microsoft.Office.Tools.Excel.ListObject>コントロールがワークシートに作成します。 詳細については、次を参照してください。 [ListObject コントロール](../vsto/listobject-control.md)します。
 
 テーブルを選択して、別のコントロールを追加したり、フィールドに、**データソース**ウィンドウとドロップダウン リストから別のコントロールを選択します。
 
@@ -53,19 +53,19 @@ Windows フォーム プロジェクトでのデータにアクセスするの�
 
 プロジェクトには、コントロールに加えて、データに関連する以下のオブジェクトも自動的に追加されます。
 
--   データベース内の接続したデータ テーブルをカプセル化する型指定されたデータセット。 詳細については、[Visual Studio でのデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)を参照してください。
+- データベース内の接続したデータ テーブルをカプセル化する型指定されたデータセット。 詳細については、次を参照してください。 [Visual Studio でのデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)します。
 
--   コントロールを型指定されたデータセットに接続する <xref:System.Windows.Forms.BindingSource>。 詳細については、[BindingSource コンポーネントの概要](/dotnet/framework/winforms/controls/bindingsource-component-overview)を参照してください。
+- コントロールを型指定されたデータセットに接続する <xref:System.Windows.Forms.BindingSource>。 詳細については、次を参照してください。 [BindingSource コンポーネントの概要](/dotnet/framework/winforms/controls/bindingsource-component-overview)します。
 
--   型指定されたデータセットをデータベースに接続する TableAdapter。 詳細については、[TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)を参照してください。
+- 型指定されたデータセットをデータベースに接続する TableAdapter。 詳細については、次を参照してください。 [TableAdapter の概要](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)します。
 
--   階層更新を有効にするデータセット内のテーブル アダプターを調整するために使用 TableAdapterManager します。 詳細については、[階層更新](../data-tools/hierarchical-update.md)と[TableAdapterManager 参照](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference)を参照してください。
+- 階層更新を有効にするデータセット内のテーブル アダプターを調整するために使用 TableAdapterManager します。 詳細については、次を参照してください。[階層更新](../data-tools/hierarchical-update.md)と[TableAdapterManager 参照](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference)します。
 
 プロジェクトを実行すると、データ ソースの先頭のレコードがコントロールに表示されます。 <xref:System.Windows.Forms.BindingSource> を使用すると、ユーザーがレコードをスクロールできるようになります。
 
 ### <a name="to-scroll-through-the-records"></a>レコードをスクロールするには
 
--   <xref:System.Windows.Forms.BindingSource.MoveNext%2A> や <xref:System.Windows.Forms.BindingSource.MovePrevious%2A> など、<xref:System.Windows.Forms.BindingSource> のメソッドを使用します。
+- <xref:System.Windows.Forms.BindingSource.MoveNext%2A> や <xref:System.Windows.Forms.BindingSource.MovePrevious%2A> など、<xref:System.Windows.Forms.BindingSource> のメソッドを使用します。
 
 型指定されたデータセットと、データベースに更新プログラムを送信する方法については、次を参照してください。[方法。ホスト コントロールからのデータでデータ ソースを更新](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)します。
 

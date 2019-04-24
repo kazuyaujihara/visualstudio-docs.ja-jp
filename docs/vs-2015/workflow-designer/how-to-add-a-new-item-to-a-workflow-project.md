@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cc194adc37c8f9f0309780a4c8ef6f9a780223b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ecc310896f7b938025d42e06ac5ef0ec8bac3d35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974478"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063630"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>方法: ワークフロー プロジェクトに新しい項目を追加する
 ワークフロー プロジェクトを作成した後に、ワークフロー アクティビティ、デザイナーなどの一般的な [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 項目をプロジェクトに追加できます。  
@@ -30,17 +30,17 @@ ms.locfileid: "58974478"
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>ワークフロー プロジェクトに新しい項目を追加するには  
   
-1.  **プロジェクト** メニューのをクリックして**新しい項目の追加.**.  
+1. **プロジェクト** メニューのをクリックして**新しい項目の追加**.  
   
      **新しい項目の追加** ダイアログ ボックスが表示されます。  
   
-2.  **インストールされたテンプレート**ペインで、**ワークフロー**グループ。  
+2. **インストールされたテンプレート**ペインで、**ワークフロー**グループ。  
   
-3.  4 つの項目のいずれかを選択します。 選択可能な項目の一覧が、上記の表に示されています。  
+3. 4 つの項目のいずれかを選択します。 選択可能な項目の一覧が、上記の表に示されています。  
   
-4.  内の項目の名前を入力、**名前** ダイアログ ボックスの下部にあるボックス。  
+4. 内の項目の名前を入力、**名前** ダイアログ ボックスの下部にあるボックス。  
   
-5.  クリックして**追加**現在ワークフロー プロジェクトに項目を追加します。  
+5. クリックして**追加**現在ワークフロー プロジェクトに項目を追加します。  
   
 ## <a name="see-also"></a>関連項目  
  [ワークフロー プロジェクトの作成](../workflow-designer/creating-a-workflow-project.md)
