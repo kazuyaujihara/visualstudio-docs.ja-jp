@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965934"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>チュートリアル: Visual Basic で単純なアプリケーションを作成する
 
@@ -27,7 +27,7 @@ ms.locfileid: "58857406"
 
 ::: moniker range="vs-2017"
 
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ページに移動し、無料試用版をインストールしてください。
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ページに移動し、無料試用版をインストールしてください。
 
 ::: moniker-end
 
@@ -116,7 +116,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 ### <a name="add-a-textblock-control"></a>TextBlock コントロールを追加する
 
-1.  **Ctrl**+**Q** と入力し、検索ボックスを有効にして「**ツールボックス**」と入力します。 結果リストから **[表示] > [ツールボックス]** を選択します。
+1. **Ctrl**+**Q** と入力し、検索ボックスを有効にして「**ツールボックス**」と入力します。 結果リストから **[表示] > [ツールボックス]** を選択します。
 
 2. **[ツールボックス]** で、**[コモン WPF コントロール]** ノードを展開し、TextBlock コントロールを表示します。
 
@@ -256,7 +256,7 @@ IsChecked="True"
 
 #### <a name="add-breakpoints"></a>ブレークポイントを追加する
 
-1. *Greetings.xaml.vb* を開き、次の行を選択します。 `MessageBox.Show("Hello.")`
+1. *Greetings.xaml.vb* を開き、`MessageBox.Show("Hello.")` という行を選択します。
 
 2. **F9** キーを押すか、**[デバッグ]**、**[ブレークポイントの設定/解除]** の順に選択して、メニューからブレークポイントを追加します。
 

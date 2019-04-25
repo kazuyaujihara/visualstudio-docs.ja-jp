@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f48ba44d41286f1cf5eda6ececb68d21d39abd14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552789"
 ---
 # <a name="current-tab"></a>現在のタブ
 **現在**のタブをクリックすると、CPU スレッド セグメントが選択されている場合、現在の選択ポイントに最も近い呼び出し履歴 (利用できる場合) が表示されます。  その場合、選択ポイントはタイムラインの上に黒い矢印またはキャレットで表示されます。 ブロッキング セグメントが選択されているとき、実行がないため、キャレットは表示されません。 しかしながら、セグメントは強調表示され、呼び出し履歴が表示されます。

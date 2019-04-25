@@ -1,4 +1,4 @@
-﻿---
+---
 title: ローカル フォルダーに配置する
 ms.date: 01/29/2019
 ms.topic: quickstart
@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5627cd0f5ad37a7f92408e887b87d5eda14706eb
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927626"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Visual Studio を使用してアプリをローカル フォルダーに配置する
 

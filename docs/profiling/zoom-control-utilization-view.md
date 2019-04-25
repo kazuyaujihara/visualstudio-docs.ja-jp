@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c7f50a3117daeee0ec1727adbcdcc5ca710be36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960108"
 ---
 # <a name="zoom-control-utilization-view"></a>ズーム コントロール (使用状況ビュー)
 ズーム コントロールを使用すると、CPU 使用状況グラフを拡大し、特に興味のある領域に絞り込むことができます。 このコントロールは、ビューの中心を拡大します。 そのため、表示を拡大する前に、興味のある領域を中央に位置させる必要があります。

@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ec3be0adf6f262cafbebe2da714f4e74777329c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569694"
 ---
 # <a name="cl-task"></a>CL タスク
 Visual C++ コンパイラ ツール (*cl.exe*) をラップします。 コンパイラは、実行可能ファイル (*.exe*)、ダイナミック リンク ライブラリ (*.dll*) ファイル、またはコード モジュール (*.netmodule*) ファイルを生成します。 詳細については、「[コンパイラ オプション](/cpp/build/reference/compiler-options)」を参照してください。

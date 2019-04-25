@@ -33,11 +33,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a753574e883872780446929f7c2349b0d726c71a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817585"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>[オプション]、[テキスト エディター]、[すべての言語]、[スクロール バー]
 このダイアログ ボックスでは、コード エディターのスクロール バーの既定の動作を変更できます。 オプションを表示するには、**[ツール]** メニューから **[オプション]** を選択します。 **[テキスト エディター]** フォルダー内で **[すべての言語]** サブフォルダーを展開し、**[スクロール バー]** を選択します。
@@ -59,9 +59,9 @@ ms.locfileid: "55925957"
 
 垂直スクロール バーで次の注釈を表示するかどうかを選択します。
 
-- レビュー
+- 変更点
 - マーク
-- 件のエラー
+- エラー
 - キャレット位置
 
 > [!TIP]

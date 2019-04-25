@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bebc8581ead00eeb6b28c2c45f4dcfe991a9e1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3dfaa1fb344f11817cc67a074580c726f3d23036
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429190"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>複数の UI マップで大規模アプリケーションをテストする
 
@@ -42,9 +42,9 @@ UI マップに対して生成されるコードには、テストで操作す�
 ## <a name="do-you-need-multiple-ui-maps"></a>複数の UI マップが必要な場合
  次のような場合には、それぞれに複数の UI マップを作成してください。
 
--   互いに関連して論理演算を実行する複雑な複合 UI コントロールのセットが複数ある場合 (Web サイトでの登録ページや、買い物カゴの購入ページなど)。
+- 互いに関連して論理演算を実行する複雑な複合 UI コントロールのセットが複数ある場合 (Web サイトでの登録ページや、買い物カゴの購入ページなど)。
 
--   アプリケーションのさまざまな時点でアクセスする、独立したコントロールのセットがある場合 (複数の操作ページからなるウィザードなど)。 ウィザードのそれぞれのページが非常に複雑な場合には、ページごとに個別の UI マップを作成することもできます。
+- アプリケーションのさまざまな時点でアクセスする、独立したコントロールのセットがある場合 (複数の操作ページからなるウィザードなど)。 ウィザードのそれぞれのページが非常に複雑な場合には、ページごとに個別の UI マップを作成することもできます。
 
 ## <a name="add-multiple-ui-maps"></a>複数の UI マップを追加する
 

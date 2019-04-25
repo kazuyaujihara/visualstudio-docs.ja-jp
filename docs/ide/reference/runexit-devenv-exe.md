@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3fa010e72267dadfb1974f7ce8be3b6b9a3e1cff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935048"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
 
@@ -43,7 +43,7 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
   任意。 ツールの出力を送信する先のファイル名。 このファイルが既に存在する場合、ファイルの末尾に出力が追加されます。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 アクティブなソリューション構成に対して指定された設定に従って、指定したプロジェクトまたはソリューションをコンパイルして実行します。 このスイッチを指定すると、プロジェクトまたはソリューションの実行中に IDE が最小化されます。 プロジェクトまたはソリューションの実行が完了すると、IDE は閉じられます。
 

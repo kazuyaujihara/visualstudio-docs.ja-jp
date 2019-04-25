@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896897"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Python 対話型ウィンドウの使用
 
@@ -27,7 +27,7 @@ Visual Studio では、複数の Python REPL モードから選ぶことがで�
 
 | REPL | 説明 | 編集 | デバッグ | イメージ |
 | --- | --- | --- | --- | --- |
-| 標準 | 既定の REPL、Python と直接対話 | 標準的な編集 (複数行など)。 | はい、経由 `$attach` | いいえ |
+| 標準 | 既定の REPL、Python と直接対話 | 標準的な編集 (複数行など)。 | はい、`$attach` を使用 | いいえ |
 | デバッグ | 既定の REPL、デバッグ対象の Python プロセスと対話 | 標準的な編集 | デバッグのみ | いいえ |
 | IPython | REPL は IPython のバックエンドと対話 | IPython コマンド、Pylab の利便性 | いいえ | はい、REPL でインライン |
 | IPython (Pylab なし) | REPL は IPython のバックエンドと対話 | 標準的な IPython | いいえ | はい、別のウィンドウ |
@@ -77,7 +77,7 @@ Visual Studio では、複数の Python REPL モードから選ぶことがで�
 | --- | --- |
 | `$$` | コメントを挿入します。セッションのコードにコメントを追加するのに役立ちます。 |
 | `$attach` | Visual Studio のデバッガーを REPL ウィンドウ プロセスにアタッチして、デバッグできるようにします。 |
-| `$cls`, `$clear` | エディター ウィンドウの内容を消去し、履歴と実行コンテキストはそのまま維持します。 |
+| `$cls`、 `$clear` | エディター ウィンドウの内容を消去し、履歴と実行コンテキストはそのまま維持します。 |
 | `$help` | コマンドの一覧または特定のコマンドのヘルプを表示します。 |
 | `$load` | ファイルからコマンドを読み込み、完了するまで実行します。 |
 | `$mod` | 現在のスコープを指定されたモジュール名に切り替えます。 |

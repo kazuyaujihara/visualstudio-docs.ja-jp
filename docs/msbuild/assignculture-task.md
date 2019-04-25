@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5cf6627b23f7421dc164cf13bbaab46e8d7a2577
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823290"
 ---
 # <a name="assignculture-task"></a>AssignCulture タスク
 このタスクは、有効な .NET カルチャ ID 文字列をファイル名の一部として含む可能性がある項目の一覧を受け取り、対応するカルチャ ID を含む `Culture` という名前のメタデータを持つ項目を生成します。 たとえば、ファイル名 *Form1.fr-fr.resx* には、"fr-fr" というカルチャ ID が埋め込まれています。したがって、このタスクでは、`fr-fr` と等しい値の `Culture` メタデータを持つ同じファイル名の項目が生成されます。 また、このタスクでは、ファイル名からカルチャを削除したファイル名の一覧も生成されます。

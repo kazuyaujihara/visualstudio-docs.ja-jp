@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be1c3b972397246823512f67e6fe2a0e2ecabbd5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830034"
 ---
 # <a name="modules-view---instrumentation-data"></a>モジュール ビュー - インストルメンテーション データ
 モジュール ビューには、パフォーマンス データがプロファイル データ内のモジュールごとにグループ化されて表示されます。 モジュールの関数が、モジュール ノードの下に一覧表示されます。

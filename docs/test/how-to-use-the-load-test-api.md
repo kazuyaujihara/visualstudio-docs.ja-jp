@@ -10,12 +10,12 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73c99d4a7d1ff15b8cbd1cff8a4fd18d8f41bccc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 47707e0430d51a754f7e458ebf68e08124c1e7b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821497"
 ---
 # <a name="how-to-use-the-load-test-api"></a>方法: ロード テスト API を使用する
 
@@ -30,27 +30,27 @@ Web パフォーマンス テスト用のプラグインを作成することも
 
 ## <a name="to-use-the-loadtesting-namespace"></a>LoadTesting 名前空間を使用するには
 
-1.  ロード テストが含まれている、Web パフォーマンスとロード テストのプロジェクトを開きます。
+1. ロード テストが含まれている、Web パフォーマンスとロード テストのプロジェクトを開きます。
 
-2.  Visual C# または Visual Basic のクラス ライブラリ プロジェクトをテスト ソリューションに追加します。
+2. Visual C# または Visual Basic のクラス ライブラリ プロジェクトをテスト ソリューションに追加します。
 
-3.  Web パフォーマンスとロード テストのプロジェクトの参照をクラス ライブラリ プロジェクトに追加します。
+3. Web パフォーマンスとロード テストのプロジェクトの参照をクラス ライブラリ プロジェクトに追加します。
 
-4.  クラス ライブラリ プロジェクトの Microsoft.VisualStudio.QualityTools.LoadTestFramework DLL への参照を追加します。
+4. クラス ライブラリ プロジェクトの Microsoft.VisualStudio.QualityTools.LoadTestFramework DLL への参照を追加します。
 
-5.  クラス ライブラリ プロジェクトのクラス ファイルで、`using` 名前空間の <xref:Microsoft.VisualStudio.TestTools.LoadTesting> ステートメントを追加します。
+5. クラス ライブラリ プロジェクトのクラス ファイルで、`using` 名前空間の <xref:Microsoft.VisualStudio.TestTools.LoadTesting> ステートメントを追加します。
 
-6.  <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> インターフェイスを実装するパブリック クラスを作成します。
+6. <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> インターフェイスを実装するパブリック クラスを作成します。
 
-7.  プロジェクトをビルドします。
+7. プロジェクトをビルドします。
 
-8.  ロード テスト エディターを使用して新しいロード テスト プラグインを追加します。
+8. ロード テスト エディターを使用して新しいロード テスト プラグインを追加します。
 
-    1.  ロード テストのルート ノードを右クリックし、**[ロード テスト プラグインの追加]** を選択します。
+    1. ロード テストのルート ノードを右クリックし、**[ロード テスト プラグインの追加]** を選択します。
 
-    2.  **[ロード テスト プラグインの追加]** ダイアログ ボックスが表示されます。
+    2. **[ロード テスト プラグインの追加]** ダイアログ ボックスが表示されます。
 
-    3.  **[選択したプラグインのプロパティ]** ペインで、実行時に使用するプラグインの初期値を設定します。
+    3. **[選択したプラグインのプロパティ]** ペインで、実行時に使用するプラグインの初期値を設定します。
 
         > [!NOTE]
         > プラグインのプロパティは、必要な数だけ公開できます。それをパブリック、設定可能、および基本型 (整数型、ブール型、文字列型など) として設定します。 ロード テスト プラグインのプロパティは、後で **[プロパティ]** ウィンドウを使用して編集することもできます。

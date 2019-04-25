@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fee2dd064b556596f27ae2130697cdd9435d8185
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963742"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 要素 (MSBuild)
 すべての `When` 要素が `false` と評価された場合にのみ実行するコード ブロックを指定します。

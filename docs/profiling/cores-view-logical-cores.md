@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3544ca6c5f9dfe5326f51bb565ff012b654dc263
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553137"
 ---
 # <a name="cores-view-logical-cores"></a>コア ビューの論理コア
 各チャンネル名は、プロファイリング対象システムに存在するいずれかの論理コアを表します。 名前付けのカウントは、0 から論理コアの合計数までです。 たとえば、4 コア システムの場合、論理コア 0 から論理コア 3 までカウントされます。

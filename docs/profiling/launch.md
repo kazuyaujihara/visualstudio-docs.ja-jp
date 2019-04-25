@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d4c2c81583015aca39f00cc20a6286297476cc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c105f5176948271c832330f01d0d03d270e69a97
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995320"
 ---
 # <a name="launch"></a>Launch
 **Launch** オプションは、サンプリング メソッドを使用するプロファイラーを起動し、指定されたアプリケーションも起動します。
@@ -54,15 +54,15 @@ VSPerfCmd.exe /Launch:AppName [Options]
 
  **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**] サンプリング間隔の数値と種類と指定します。
 
--   **Timer** - `Cycles` のプロセッサ クロック サイクル (停止なし) ごとにサンプリングを行います。 `Cycles` が指定されていない場合、10,000,000 サイクルが使用されます。
+- **Timer** - `Cycles` のプロセッサ クロック サイクル (停止なし) ごとにサンプリングを行います。 `Cycles` が指定されていない場合、10,000,000 サイクルが使用されます。
 
--   **PF** - `Events` のページ フォールトごとにサンプリングを行います。 `Events` が指定されていない場合は、10 ページ フォールトになります。
+- **PF** - `Events` のページ フォールトごとにサンプリングを行います。 `Events` が指定されていない場合は、10 ページ フォールトになります。
 
--   **Sys** - オペレーティング システムへの `Events` の呼び出しごとにサンプリングを行います。 `Events` が指定されていない場合は、10 システム呼び出しが使用されます。
+- **Sys** - オペレーティング システムへの `Events` の呼び出しごとにサンプリングを行います。 `Events` が指定されていない場合は、10 システム呼び出しが使用されます。
 
--   **Counter** - `Name` で指定された CPU パフォーマンス カウンターの `Reload` の数値ごとにサンプリングを行います。 必要に応じて、`FriendlyName` でプロファイラー レポート内の列ヘッダーとして使用する文字列を指定できます。
+- **Counter** - `Name` で指定された CPU パフォーマンス カウンターの `Reload` の数値ごとにサンプリングを行います。 必要に応じて、`FriendlyName` でプロファイラー レポート内の列ヘッダーとして使用する文字列を指定できます。
 
--   **GC** - .NET メモリ データを収集します。 既定 (**allocation**) では、データはメモリの割り当てイベントごとに収集されます。 **lifetime** パラメーターが指定されている場合、ガベージ コレクション イベントごとのデータも収集されます。
+- **GC** - .NET メモリ データを収集します。 既定 (**allocation**) では、データはメモリの割り当てイベントごとに収集されます。 **lifetime** パラメーターが指定されている場合、ガベージ コレクション イベントごとのデータも収集されます。
 
 ## <a name="example"></a>例
  **Launch** を使用してアプリケーションを起動する例を以下に示します。

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c5693a2edca0d81e21e73215e00f25aae939eb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c79dfa33af5e0e80db682f272c5673856dbbcd8d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840383"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>方法: 予約済みの XML 文字をプロジェクト ファイルで使用する
 プロジェクト ファイルを作成するときに、たとえばプロパティ値やタスク パラメーター値の中で、予約済み XML 文字を使用する必要が生じることがあります。 しかし、いくつかの予約文字は、プロジェクト ファイルを解析できるようにするために、名前付きエンティティに置き換える必要があります。
@@ -34,7 +34,7 @@ ms.locfileid: "56603871"
 
 #### <a name="to-use-double-quotes-in-a-project-file"></a>プロジェクト ファイルで二重引用符を使用するには
 
--   二重引用符を対応する名前付きエンティティ &amp;quot; に置き換えます。 たとえば、`EXEFile` 項目リストを二重引用符で囲むには、次のように入力します。
+- 二重引用符を対応する名前付きエンティティ &amp;quot; に置き換えます。 たとえば、`EXEFile` 項目リストを二重引用符で囲むには、次のように入力します。
 
     ```xml
     <Message Text="The output file is &quot;@(EXEFile)&quot;."/>

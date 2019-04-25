@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fe0f5be0dfaf9f35f390c78633f41711f6bcbc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 957e9e4b51dbca2f27e042b185b6dd071791cfad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968598"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)
 
@@ -70,11 +70,11 @@ ms.locfileid: "55913042"
 
  **Option Strict** 厳密な型セマンティクスを適用するかどうかを指定します。 **[Option Strict]** が **[オン]** になっていると、次の条件によりコンパイル時エラーが発生します。
 
--   暗黙的な縮小変換
+- 暗黙的な縮小変換
 
--   遅延バインディング
+- 遅延バインディング
 
--   結果が `Object` 型となる暗黙の型指定
+- 結果が `Object` 型となる暗黙の型指定
 
 縮小変換する暗黙的なデータ型変換がある場合は、暗黙的な縮小変換エラーが発生します。 詳細については、「[Option Strict ステートメント](/dotnet/visual-basic/language-reference/statements/option-strict-statement)」、「[暗黙の型変換と明示的な型変換](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)」、および「[拡大変換と縮小変換](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)」を参照してください。
 
@@ -91,11 +91,11 @@ ms.locfileid: "55913042"
 **Option Strict の個々の警告。**
 **[コンパイル]** ページの **[警告の構成]** セクションには、`Option Strict` がオンになっているときにコンパイル時エラーが発生する 3 つの条件に相当する設定があります。 これらの設定を次に示します。
 
--   **暗黙的な変換**
+- **暗黙的な変換**
 
--   **遅延バインディング、呼び出しが実行時に失敗する可能性があります**
+- **遅延バインディング、呼び出しが実行時に失敗する可能性があります**
 
--   **暗黙的な型、オブジェクトと見なされます**
+- **暗黙的な型、オブジェクトと見なされます**
 
 **[Option Strict]** を **[オン]** に設定すると、これら 3 つの警告の構成設定のすべてが **[エラー]** に設定されます。 **[Option Strict]** を **[オフ]** に設定すると、3 つの設定すべてが **[なし]** に設定されます。
 
@@ -127,11 +127,11 @@ ms.locfileid: "55913042"
 
 このチェック ボックスは、次の条件がすべて満たされた場合にのみ利用できます。
 
--   **[コンパイル]** ページで、**[ターゲット CPU]** リストが **[任意の CPU]** に設定されている。
+- **[コンパイル]** ページで、**[ターゲット CPU]** リストが **[任意の CPU]** に設定されている。
 
--   **[アプリケーション]** ページの **[アプリケーションの種類]** リストで、プロジェクトがアプリケーションであることが指定されている。
+- **[アプリケーション]** ページの **[アプリケーションの種類]** リストで、プロジェクトがアプリケーションであることが指定されている。
 
--   **[アプリケーション]** ページの **[ターゲット フレームワーク]** ボックスの一覧で、.NET Framework 4.5 が指定されている。
+- **[アプリケーション]** ページの **[ターゲット フレームワーク]** ボックスの一覧で、.NET Framework 4.5 が指定されている。
 
 **警告の構成** この表には、ビルドの条件とそれぞれに対応する通知レベル (**[なし]**、**[警告]**、または **[エラー]**) が一覧表示されます。
 
@@ -158,7 +158,6 @@ ms.locfileid: "55913042"
 **ビルド イベント** このボタンをクリックして **[ビルド イベント]** ダイアログ ボックスにアクセスします。 このダイアログ ボックスを使用して、プロジェクトのビルド前およびビルド後の構成手順を指定します。 このダイアログ ボックスは、Visual Basic プロジェクトにのみ適用されます。 詳細については、「[[ビルド イベント] ダイアログ ボックス (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md)」を参照してください。
 
 **Advanced Compile Options (詳細コンパイル オプション)** このボタンをクリックして、**[コンパイラの詳細設定]** ダイアログ ボックスにアクセスします。 **[コンパイラの詳細設定]** ダイアログ ボックスを使用して、プロジェクトの詳細なビルド構成プロパティを指定します。 このダイアログ ボックスは、Visual Basic プロジェクトにのみ適用されます。 詳細については、「[[ビルドの詳細設定] ダイアログ ボックス (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)」を参照してください。
-
 
 ## <a name="see-also"></a>関連項目
 

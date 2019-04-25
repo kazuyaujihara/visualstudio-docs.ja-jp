@@ -9,12 +9,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfd565deb8336346e127e084b720f391440dc6e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a82479fabda0cd64e977af01f87492563a02853f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950073"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>方法:Microsoft Word を使用してロード テスト パフォーマンス レポートを手動で作成する
 
@@ -30,27 +30,27 @@ ms.locfileid: "55928804"
 
 ## <a name="copy-summary-view-data"></a>概要ビューのデータのコピー
 
-1.  **ロード テスト結果**で、概要ビューが現在表示されていない場合に、ツール バーの **[概要]** をクリックします。
+1. **ロード テスト結果**で、概要ビューが現在表示されていない場合に、ツール バーの **[概要]** をクリックします。
 
-2.  概要ビューで右クリックし、**[すべて選択]** を選択します。
+2. 概要ビューで右クリックし、**[すべて選択]** を選択します。
 
-3.  概要ビューで右クリックし、**[コピー]** を選択します。 これにより、概要ビュー データは HTML 形式でクリップボードに表示されます。
+3. 概要ビューで右クリックし、**[コピー]** を選択します。 これにより、概要ビュー データは HTML 形式でクリップボードに表示されます。
 
-4.  Microsoft Word で、概要ビュー データを目的の場所に貼り付けます。
+4. Microsoft Word で、概要ビュー データを目的の場所に貼り付けます。
 
-5.  これで、レポートのニーズに応じて、コピーした内容の要素の変更、書式設定、および削除を行うことができます。
+5. これで、レポートのニーズに応じて、コピーした内容の要素の変更、書式設定、および削除を行うことができます。
 
 ## <a name="copy-graph-view-data"></a>グラフ ビューのデータのコピー
 
-1.  **ロード テスト結果**で、グラフ ビューが現在表示されていない場合に、ツールバーの **[グラフ]** を選択します。
+1. **ロード テスト結果**で、グラフ ビューが現在表示されていない場合に、ツールバーの **[グラフ]** を選択します。
 
-2.  (省略可能) 次の図に示すように、Microsoft Word ドキュメントにコピーする特定のグラフを拡大します。 詳細については、「[方法 :グラフの領域にズーム インする](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)」を参照してください。
+2. (省略可能) 次の図に示すように、Microsoft Word ドキュメントにコピーする特定のグラフを拡大します。 詳細については、「[方法 :グラフの領域にズーム インする](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)」を参照してください。
 
      ![グラフ ビューのズーム コントロール](../test/media/ltest_zoomcontrol.png)
 
-3.  Microsoft Word 文書にコピーするグラフで右クリックし、**[コピー]** を選択します。
+3. Microsoft Word 文書にコピーするグラフで右クリックし、**[コピー]** を選択します。
 
-4.  Microsoft Word で、グラフおよび関連したテーブル データを目的の場所に貼り付けます。
+4. Microsoft Word で、グラフおよび関連したテーブル データを目的の場所に貼り付けます。
 
     > [!WARNING]
     > リモート デスクトップのグラフをコピーして別のコンピューターに貼り付けることはできません。これは、グラフに関連付けられたテーブル情報のみがコピーされ、グラフの画像はコピーされないためです。 グラフの画像は、コピー元のコンピューターの一時ディレクトリに保存されます。2 つ目のコンピューターはそのディレクトリを逆参照できません。

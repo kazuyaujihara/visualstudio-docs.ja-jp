@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01557fb378f03ffd033495ca42024c1143e67187
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62776999"
 ---
 # <a name="average-cpu-utilization"></a>平均 CPU 使用状況
 プロセスの期間におけるシステムの論理コアのプロファイリングされたプロセスの平均使用状況を示します。 任意の時点にどのコアがアクティブかは表示されません。 たとえば、特定の期間、2 つのコアがそれぞれキャパシティの 50% で動作している場合、このビューには 1 つの論理コアが使用されているものとして表示されます。

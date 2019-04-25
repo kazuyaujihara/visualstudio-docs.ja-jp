@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892850"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>チュートリアル: XAML デザイナーでデータにバインドする
 
-XAML デザイナーでは、アートボードと [プロパティ] ウィンドウを使用してデータ バインディングのプロパティを設定できます。 このチュートリアルの例では、データをコントロールにバインドする方法を示します。 具体的には、`ItemCount` という名前の [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) を持つ簡単なショッピング カート クラスを作成した後、`ItemCount` プロパティを [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) コントロールの **Text** プロパティにバインドする方法を説明します。
+XAML デザイナーで、アートボードと [プロパティ] ウィンドウを使用してデータ バインディング プロパティを設定できます。 このチュートリアルの例では、データをコントロールにバインドする方法を示します。 具体的には、`ItemCount` という名前の [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) を持つ簡単なショッピング カート クラスを作成した後、`ItemCount` プロパティを [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) コントロールの **Text** プロパティにバインドする方法を説明します。
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>データ ソースとして使用するクラスを作成するには
 
@@ -31,7 +31,7 @@ XAML デザイナーでは、アートボードと [プロパティ] ウィン�
 
 1. プロジェクトに **BindingTest** という名前を付けて、**[OK]** をクリックします。
 
-1. **MainWindow.xaml.cs** (または **MainWindow.xaml.vb**) ファイルを開き、次のコードを追加します。 C# では、`BindingTest` 名前空間 (ファイル内の最後の閉じかっこの前) にコードを追加します。 Visual Basic の場合は、単に新しいクラスを追加します。
+1. **MainWindow.xaml.cs** (または **MainWindow.xaml.vb**) ファイルを開き、次のコードを追加します。 C# では、このコードを `BindingTest` 名前空間 (ファイルの最後の閉じかっこの前) に追加します。 Visual Basic では、新しいクラスを追加します。
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -85,7 +85,7 @@ XAML デザイナーでは、アートボードと [プロパティ] ウィン�
 
 1. **[ツールボックス]** で、`TextBlock` コントロールを選んでフォームに追加します。
 
-1. `TextBlock` コントロールを選んだ状態で、[プロパティ] ウィンドウで **[Text]** プロパティの右側にあるプロパティ マーカーを選んでから、**[データ バインディングの作成]** を選びます。 (プロパティ マーカーは小さいボックスのような外観です。)
+1. `TextBlock` コントロールを選んだ状態で、[プロパティ] ウィンドウで **[Text]** プロパティの右側にあるプロパティ マーカーを選んでから、**[データ バインディングの作成]** を選びます。 (プロパティ マーカーは小さいボックスで表示されています。)
 
 1. [データ バインディングを作成] ダイアログ ボックスの **[パス]** ボックスで、**[ItemCount: (int32)]** プロパティを選び、**[OK]** を選びます。
 
@@ -95,7 +95,7 @@ XAML デザイナーでは、アートボードと [プロパティ] ウィン�
 
 1. **F5 キー**を押してアプリを実行します。
 
-     `TextBlock` コントロールに、既定値の 0 がテキストとして表示されるはずです。
+     `TextBlock` コントロールにより、既定値の 0 がテキストとして表示されます。
 
 ## <a name="see-also"></a>関連項目
 

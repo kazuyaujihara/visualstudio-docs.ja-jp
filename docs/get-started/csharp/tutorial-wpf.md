@@ -14,19 +14,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 706b365834e9e0b96e885cdae9ff25f1f70d1e76
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62426532"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>チュートリアル: C\# で単純なアプリケーションを作成する
 
 このチュートリアルを完了すると、Visual Studio を使用してアプリケーションを開発する際に使用できるさまざまなツール、ダイアログ ボックス、およびデザイナーの使用方法を習得できます。 "Hello, World" アプリケーションの作成、UI の設計、コードの追加、エラーのデバッグを行いながら、統合開発環境 ([IDE](visual-studio-ide.md)) での作業方法について学習します。
 
 ::: moniker range="vs-2017"
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ページに移動し、無料試用版をインストールしてください。
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ページに移動し、無料試用版をインストールしてください。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
@@ -84,7 +84,6 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../../get-started/media/vs-2019/start-window-create-new-project.png)
-
 
 2. **[新しいプロジェクトの作成]** 画面で、"WPF" を検索し、**[WPF アプリ (.NET Framework)]** を選択してから、**[次へ]** を選択します。
 
@@ -267,7 +266,7 @@ IsChecked="True"
 
 #### <a name="add-breakpoints"></a>ブレークポイントを追加する
 
-1. *Greetings.xaml.cs* を開き、次の行を選択します。 `MessageBox.Show("Hello.")`
+1. *Greetings.xaml.cs* を開き、`MessageBox.Show("Hello.")` という行を選択します。
 
 2. **[デバッグ]**、 **[ブレークポイントの設定/解除]** の順に選択して、メニューからブレークポイントを追加します。
 

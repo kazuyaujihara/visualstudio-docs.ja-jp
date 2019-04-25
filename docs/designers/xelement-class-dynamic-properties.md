@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90c79ea987f3d7a0ec4e15f30882a3ad76c57aef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892179"
 ---
 # <a name="xelement-class-dynamic-properties"></a>XElement クラスの動的プロパティ
 

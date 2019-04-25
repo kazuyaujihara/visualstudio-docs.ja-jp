@@ -10,12 +10,12 @@ ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d835660995e92df1f6aca94ae9b9b3ccebb5d87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821249"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>方法: ロード テスト アナライザーを使用してロード テストにおける Web ページ応答時間を表示する
 
@@ -25,15 +25,15 @@ ms.locfileid: "55970765"
 
 ロード テストで Web パフォーマンス テストをストレス下で実行する場合は、ページごとに次の情報を分析できます。
 
--   ページの平均応答時間
+- ページの平均応答時間
 
--   ページの応答時間の目標を達成したテストの反復処理の割合
+- ページの応答時間の目標を達成したテストの反復処理の割合
 
--   Web ページの応答時間を分析するには、**ロード テスト アナライザー**でテーブル ビューまたはグラフ ビューを使用します。
+- Web ページの応答時間を分析するには、**ロード テスト アナライザー**でテーブル ビューまたはグラフ ビューを使用します。
 
--   テーブル ビューでの Web ページ応答時間の分析
+- テーブル ビューでの Web ページ応答時間の分析
 
--   グラフ ビューでの Web ページ応答時間の分析
+- グラフ ビューでの Web ページ応答時間の分析
 
 ## <a name="view-response-time-data-in-a-table"></a>応答時間データを表形式で表示する
 

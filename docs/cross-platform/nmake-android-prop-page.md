@@ -19,11 +19,11 @@ f1_keywords:
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: ba13da583e5ea5dd6cc625e165902bbf6c408f28
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815715"
 ---
 # <a name="nmake-properties-android-c"></a>NMake のプロパティ (Android C++)
 
@@ -32,7 +32,7 @@ ms.locfileid: "54949235"
 ビルド コマンド ライン | [ビルド] コマンドを実行するためのコマンド ラインを指定します。
 すべてリビルド コマンド ライン | [すべてリビルド] コマンドを実行するためのコマンド ラインを指定します。
 クリーン コマンド ライン | [クリーン] コマンドで実行するコマンド ラインを指定します。
-出力 | 生成する出力ファイルを指定します。
+Output | 生成する出力ファイルを指定します。
 プリプロセッサの定義 | ソース ファイルで使用されるプリプロセッサの定義を指定します。
 インクルードの検索パス | インクルード ファイルの解決に使用されるインクルードの検索パスを指定します。
 強制インクルード | 必ずインクルードされるファイルを指定します。

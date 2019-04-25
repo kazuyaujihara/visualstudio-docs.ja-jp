@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830790"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>デバッガーなしでメモリ使用量を分析する
 
@@ -56,13 +56,13 @@ ms.locfileid: "57873455"
 
 スナップショットを収集するには、メモリ データをキャプチャしたいときに **[スナップショットの取得]** を選択します。
 
-###  <a name="BKMK_Close_a_monitoring_session"></a> 診断セッションを閉じる
+### <a name="BKMK_Close_a_monitoring_session"></a> 診断セッションを閉じる
 
 レポートを作成せずに監視セッションを停止する場合は、単に診断ウィンドウを閉じます。 スナップショットの収集が完了したとき、またはスナップショットを取得したときにレポートを生成するには、**[コレクションの停止]** を選択します。
 
 ![[コレクションの停止]](../profiling/media/memuse__stopcollection.png "[コレクションの停止]")
 
-##  <a name="memory-usage-reports"></a>メモリ使用量レポート
+## <a name="memory-usage-reports"></a>メモリ使用量レポート
 
 データ収集を停止すると、**メモリ使用量**ツールでアプリが停止され、**メモリ使用量**の概要ページが表示されます。
 
@@ -103,7 +103,7 @@ ms.locfileid: "57873455"
 
 - **[参照された型]** ツリーまたは **[参照されたオブジェクト]** ツリーには、選んだ型またはインスタンスによって参照されるオブジェクトが表示されます。
 
-###  <a name="BKMK_Report_tree_filters_"></a> レポート ツリーのフィルター
+### <a name="BKMK_Report_tree_filters_"></a> レポート ツリーのフィルター
 
 アプリの多くの種類は、アプリ開発者にとってあまり重要ではありません。 スナップショット レポート フィルターでは、**[マネージド ヒープ]** ツリーと **[ルートのパス]** ツリーのこれらの種類のほとんどを非表示にすることができます。
 
@@ -123,7 +123,7 @@ ms.locfileid: "57873455"
 
 両方のリンクで同じレポートが開きます。 **[マネージド ヒープ]** ツリーを最初に表示したときの並べ替え順序だけが異なります。 サイズ リンクでは、**[包括サイズ (バイト)]** 列でレポートが並べ替えられます。 オブジェクト リンクでは、**[カウント]** 列でレポートが並べ替えられます。 レポートが開いた後で並べ替え列や順序を変更することができます。
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> [マネージド ヒープ] ツリー (スナップショットの詳細レポート)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> [マネージド ヒープ] ツリー (スナップショットの詳細レポート)
  **[マネージド ヒープ]** ツリーには、メモリ内に保持されているオブジェクトの種類が一覧表示されます。 種類名を展開すると、サイズ順に、その種類の最大のインスタンスが 10 個表示されます。 種類またはインスタンスを選ぶと、選んだ項目の **[ルートのパス]** ツリーと **[参照されたオブジェクト]** ツリーが表示されます。
 
  ![[マネージド ヒープ] ツリー](../profiling/media/memuse__snapshotdetails_managedheaptree.png "[マネージド ヒープ] ツリー")
@@ -138,14 +138,14 @@ ms.locfileid: "57873455"
 |**包括サイズ (バイト)**|種類のインスタンスのサイズ、または単一インスタンスのサイズ (含まれているオブジェクトのサイズを含む)。|
 |**Module**|オブジェクトを含むモジュール。|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> [ルートのパス] ツリー (スナップショットの詳細レポート)
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> [ルートのパス] ツリー (スナップショットの詳細レポート)
 **[ルートのパス]** ツリーには、種類またはインスタンスを参照するオブジェクトのチェーンが表示されます。 .NET Framework のガベージ コレクターは、オブジェクトへの参照がすべて解放された場合にのみ、オブジェクトのメモリをクリーンアップします。
 
 **[ルートのパス]** ツリーの種類の場合、その種類への参照を保持するオブジェクトの数が **[参照数]** 列に示されます。
 
 ![種類の [ルートのパス] ツリー](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "種類の [ルートのパス] ツリー")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> [参照された型] ツリーまたは [参照されたオブジェクト] ツリー (スナップショットの詳細レポート)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> [参照された型] ツリーまたは [参照されたオブジェクト] ツリー (スナップショットの詳細レポート)
 **[参照された型]** ツリーまたは **[参照されたオブジェクト]** ツリーには、選んだ型またはインスタンスによって参照されるオブジェクトが表示されます。
 
 ![インスタンスの [参照されたオブジェクト] ツリー](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "インスタンスの [参照されたオブジェクト] ツリー")
@@ -168,7 +168,7 @@ ms.locfileid: "57873455"
 
  ![スナップショット ウィンドウの相違レポートへのリンク](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "スナップショット ウィンドウの相違レポートへのリンク")
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> [マネージド ヒープ] ツリー (スナップショットの相違レポート)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> [マネージド ヒープ] ツリー (スナップショットの相違レポート)
 
  **[マネージド ヒープ]** ツリーには、メモリ内に保持されているオブジェクトの種類が一覧表示されます。 型名を展開すると、サイズ順に、その型の最大のインスタンス 10 個が表示されます。 種類またはインスタンスを選ぶと、選んだ項目の **[ルートのパス]** ツリーと **[参照されたオブジェクト]** ツリーが表示されます。
 
@@ -187,7 +187,7 @@ ms.locfileid: "57873455"
 |**包括サイズの相違 (バイト)**|種類の場合は、指定したスナップショットと前のスナップショットとの、その種類のすべてのインスタンスのサイズの差 (オブジェクト内のオブジェクトのサイズを含む)。 インスタンスの場合、このフィールドは空白です。|
 |**Module**|オブジェクトを含むモジュール。|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> [ルートのパス] ツリー (スナップショットの相違レポート)
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> [ルートのパス] ツリー (スナップショットの相違レポート)
 
 **[ルートのパス]** ツリーには、種類またはインスタンスを参照するオブジェクトのチェーンが表示されます。 .NET Framework のガベージ コレクターは、オブジェクトへの参照がすべて解放された場合にのみ、オブジェクトのメモリをクリーンアップします。
 
@@ -195,7 +195,7 @@ ms.locfileid: "57873455"
 
  ![相違レポートの [ルートのパス] ツリー](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "相違レポートの [ルートのパス] ツリー")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> [参照された型] ツリーまたは [参照されたオブジェクト] ツリー (スナップショットの相違レポート)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> [参照された型] ツリーまたは [参照されたオブジェクト] ツリー (スナップショットの相違レポート)
 
 **[参照された型]** ツリーまたは **[参照されたオブジェクト]** ツリーには、選んだ型またはインスタンスによって参照されるオブジェクトが表示されます。
 

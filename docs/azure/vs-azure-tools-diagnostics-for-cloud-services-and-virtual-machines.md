@@ -1,19 +1,21 @@
 ---
 title: Azure クラウド サービスと仮想マシンに対する診断を設定する | Microsoft Docs
 description: Visual Studio で Azure クラウド サービスと仮想マシン (VM) をデバッグするための診断を設定する方法について説明します。
-author: ghogen
+author: mikejo5000
 manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0dbeccece261a347a2de5218910eddca8b2d715c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
+ms.openlocfilehash: 45e0eca12ecde6c6ede2e290f109ef04ce2035ff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556423"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure クラウド サービスと仮想マシンに対する診断を設定する
 Azure クラウド サービスまたは Azure 仮想マシンのトラブルシューティングを行うときは、Visual Studio を使用して Azure Diagnostics を簡単に構成できます。 診断は、クラウド サービスを実行する仮想マシンと仮想マシン インスタンスのシステム データとログ データを取り込みます。 診断データは、選択したストレージ アカウントに転送されます。 Azure での診断ログの詳細については、「[Azure App Service の Web アプリの診断ログの有効化](/azure/app-service/web-sites-enable-diagnostic-log)」を参照してください。
@@ -154,6 +156,7 @@ Azure SDK 2.5 を使用している場合、カスタム データ ソースを�
    <DataSource name="CustomDataSource!*" />
 </WindowsEventLog>
 ```
+
 ### <a name="performance-counters"></a>パフォーマンス カウンター
 パフォーマンス カウンターの情報は、システムのボトルネックを特定して、システムとアプリケーションのパフォーマンスを微調整するのに役立ちます。 詳細については、「[Azure アプリケーションでのパフォーマンス カウンターの作成と使用](https://msdn.microsoft.com/library/azure/hh411542.aspx)」を参照してください。 パフォーマンス カウンターを取り込むには、**[パフォーマンス カウンターの転送を有効にする]** チェック ボックスをオンにします。 ストレージ アカウントへのイベント ログの転送間隔を増減するには、**[転送間隔 (分)]** の値を変更します。 追跡するパフォーマンス カウンターに該当するチェック ボックスをオンにしてください。
 

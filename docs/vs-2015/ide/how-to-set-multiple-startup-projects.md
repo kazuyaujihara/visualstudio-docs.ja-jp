@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 729388f71fcad2a9204e41dcc2bc7c3b6a657523
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4f58c6f124aeef382dd8c4de06b919489354e109
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760084"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117864"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>方法 : 複数のスタートアップ プロジェクトを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Visual Studio では、デバッガーの起動時に複数のプロジェクト
   
 ### <a name="to-set-multiple-startup-projects"></a>複数のスタートアップ プロジェクトを設定するには  
   
-1.  **ソリューション エクスプローラー**で、ソリューション (最上位ノード) を選びます。 ノードを右クリックしてコンテキスト メニューを表示します。  
+1. **ソリューション エクスプローラー**で、ソリューション (最上位ノード) を選びます。 ノードを右クリックしてコンテキスト メニューを表示します。  
   
-2.  **[プロパティ]** を選びます。 **[ソリューション プロパティ ページ]** ダイアログ ボックスが表示されます。  
+2. **[プロパティ]** を選びます。 **[ソリューション プロパティ ページ]** ダイアログ ボックスが表示されます。  
   
-3.  **[共通プロパティ]** ノードを展開し、**[スタートアップ プロジェクト]** をクリックします。  
+3. **[共通プロパティ]** ノードを展開し、**[スタートアップ プロジェクト]** をクリックします。  
   
-4.  クリックして**マルチ スタートアップ プロジェクト**し適切なアクションを設定します。 詳細については、「[方法: プロジェクト プロパティおよび構成設定を変更する](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)」をご覧ください。  
+4. **[マルチ スタートアップ プロジェクト]** をクリックし、適切なアクションを設定します。 詳細については、「[方法: プロジェクト プロパティおよび構成設定を変更する](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)」をご覧ください。  
   
 ## <a name="see-also"></a>関連項目
  [コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)   

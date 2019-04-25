@@ -17,11 +17,11 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 02229fd346ec1ead65e778fcce3ab6cb307e2656
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951254"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio のワークロードとコンポーネント ID
 
@@ -73,7 +73,7 @@ ms.locfileid: "59018299"
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 用 Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)
+* [Visual Studio の管理者ガイド](visual-studio-administrator-guide.md)
 * [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)
   * [コマンド ライン パラメーターの例](command-line-parameter-examples.md)
 * [Visual Studio のオフライン インストールを作成する](create-an-offline-installation-of-visual-studio.md)

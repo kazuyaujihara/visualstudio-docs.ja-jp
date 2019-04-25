@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e6c4bb3759adb46bf827580cc94dc4a8ed71f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779020"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>[オプション]、[テキスト エディター]、[HTML (Web フォーム)]、[書式設定]
 
@@ -41,7 +41,6 @@ ms.locfileid: "55927179"
 |**小文字**|要素名は小文字に再設定されます。|
 |**アセンブリの定義**|要素の大文字/小文字の設定は、対応する型クラスでその要素がどのように定義されているかによって決まります。|
 
-
 **クライアント タグ、クライアント属性**
 
 これらのオプションは、オートフォーマットによって HTML の属性とプロパティの名前を大文字/小文字に変更するか、入力時の大文字/小文字を維持するかを指定します。
@@ -51,7 +50,6 @@ ms.locfileid: "55927179"
 |**入力時**|属性の大文字/小文字は、入力したとおりに設定されます。|
 |**大文字**|属性名は大文字に再設定されます。|
 |**小文字**|属性名は小文字に再設定されます。|
-
 
 ## <a name="automatic-formatting-options"></a>オートフォーマットのオプション
 
@@ -65,7 +63,6 @@ ms.locfileid: "55927179"
 - **入力中に属性値の引用符を挿入する**
 
    このオプションをオンにすると、入力時にエディターによって属性を囲む引用符が挿入されます (例:ID="Select1")。 マークアップに手動で引用符を挿入する場合は、このオプションをオフにします。
-
 
    > [!NOTE]
    > このオプションをオンにしているかどうかには関係なく、マークアップに含まれる既存のすべての引用符は保持されます。引用符が削除されることはありません。

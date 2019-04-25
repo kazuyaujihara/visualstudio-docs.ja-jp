@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02b35ff8325c6cb155d54a2ada6bf6f7d63dc341
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 81245640c8c73b77dc563c28f1d3d20168203029
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793085"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>マイクロソフトのアクセシビリティ製品とサービス
 
@@ -33,18 +33,18 @@ ms.locfileid: "56318629"
 
 Microsoft は、すべてのユーザーが簡単に使用できる製品とサービスの開発に取り組んでいます。 以下のトピックでは、障碍があるユーザーが Microsoft Windows をさらに使いやすくするためのユーザー補助機能、製品、およびサービスについて説明しています。
 
--   [Windows のユーザー補助機能](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
+- [Windows のユーザー補助機能](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
 
--   [代替形式のドキュメント](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
+- [代替形式のドキュメント](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
 
--   [聴覚障碍者のためのカスタマー サービス](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
+- [聴覚障碍者のためのカスタマー サービス](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
 
--   [詳細情報](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
+- [詳細情報](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
 
 > [!NOTE]
 > このセクションの情報は、米国内で Microsoft 製品のライセンスを取得したユーザーにだけ適用されます。 米国外でこの製品を入手した場合には、ソフトウェア パッケージに同梱の支社情報のカードを参照するか、[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431) サイトにアクセスし、Microsoft Support Services の電話番号と住所の一覧を参照してください。 このセクションで説明されている製品およびサービスをその地域で利用できるかどうかについては、現地法人にお問い合わせください。 ユーザー補助についての情報が、日本語、フランス語など、他の言語で参照できます。
 
-##  <a name="windows"></a> Windows のユーザー補助機能
+## <a name="windows"></a> Windows のユーザー補助機能
 
  Windows オペレーティング システムには、多くのユーザー補助機能が組み込まれており、キーボード入力やマウスの使用が困難なユーザー、視覚障碍のあるユーザー、聴覚障碍のあるユーザーの方がご利用いただけます。 アクセシビリティ機能はセットアップ プログラムの実行時にインストールされます。 これらの機能の詳細については、Windows のヘルプおよび [マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431)を参照してください。
 
@@ -60,7 +60,7 @@ Microsoft は、すべてのユーザーが簡単に使用できる製品とサ�
 
  ユーザー補助技術を使用する場合には、ユーザー補助技術製品の販売元に連絡し、ソフトウェアおよびハードウェアの互換性について確認してからアップグレードしてください。
 
-##  <a name="altfortmats"></a> 代替形式のドキュメント
+## <a name="altfortmats"></a> 代替形式のドキュメント
 
 印刷形式のドキュメントの判読または取り扱いが困難な方のために、多くの Microsoft 製品については、いっそう利用しやすい形式でのドキュメントが用意されています。 ユーザー補助技術製品の索引が、[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431)に示されています。
 
@@ -72,7 +72,7 @@ Microsoft は、すべてのユーザーが簡単に使用できる製品とサ�
 
 Web アドレスは変更される可能性があるため、ここで示した Web サイトに接続できない場合があります。
 
-##  <a name="hearing"></a> 聴覚障碍者のためのカスタマー サービス
+## <a name="hearing"></a> 聴覚障碍者のためのカスタマー サービス
 
 聴覚に障碍がある方は、文字電話 (TTY/TDD) サービスをとおしてマイクロソフト プロダクト サポート サービスおよびカスタマー サービスのすべての情報を利用できます。
 
@@ -82,7 +82,7 @@ Web アドレスは変更される可能性があるため、ここで示した 
 
 Microsoft Support Services は、サービスを利用された時点における Microsoft 規定の料金および条件に従って提供されます。
 
-##  <a name="moreinfo"></a> 詳細情報
+## <a name="moreinfo"></a> 詳細情報
 
 コンピューターのユーザー補助技術によって、障碍のある方の生活がどれほど向上するかに関する詳細については、[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431)を参照してください。
 
