@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9120b3076dff1620f6ec5b9ff77041126932481a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557100"
 ---
 # <a name="list-memory-command"></a>ListMemory コマンド
 指定範囲のメモリの内容を表示します。
@@ -53,7 +53,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
  任意。 数字の表示形式を、符号付き、符号なし、または 16 進数のいずれかに指定します。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
  すべてのスイッチを指定して完全な **Debug.ListMemory** コマンドを記述する代わりに、特定のスイッチが指定された値に事前に設定された定義済みのエイリアスを使用してコマンドを起動することもできます。 以下に例を示します。
 
 ```cmd

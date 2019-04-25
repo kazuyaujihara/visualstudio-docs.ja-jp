@@ -4,28 +4,30 @@ description: Azure クラウド サービスの仮想 IP アドレス (VIP) が�
 author: ghogen
 manager: jillfra
 assetId: 4a58e2c6-7a79-4051-8a2c-99182ff8b881
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: e17e99b9a1270b3d6a99429bd24103a10d347d69
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550899"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Azure クラウド サービスの固定仮想 IP アドレスを保持する
 Azure でホストされているクラウド サービスを更新するとき、サービスの仮想 IP アドレス (VIP) が変更されないようにしなければならない場合があります。 ドメイン管理サービスの多くは、ドメイン ネーム システム (DNS) を使用してドメイン名の登録を行います。 DNS が正しく機能するためには、VIP が不変であることが必要です。 Azure ツールの **公開ウィザード** を使用すると、クラウド サービスを更新するときに、その VIP が変更されないようにすることができます。 Cloud Services で DNS ドメイン管理を使用する方法の詳細については、「[Azure クラウド サービスのカスタム ドメイン名の構成](/azure/cloud-services/cloud-services-custom-domain-name-portal)」を参照してください。
 
 ## <a name="publish-a-cloud-service-without-changing-its-vip"></a>VIP を変更せずにクラウド サービスを発行する
-運用環境など、特定の環境で初めてクラウド サービスを Azure にデプロイするとき、クラウド サービスの VIP が割り当てられます。 この VIP が変更されるのは、デプロイを明示的に削除した場合またはデプロイの更新プロセスによってデプロイが暗黙的に削除された場合だけです。 VIP を維持するには、自らデプロイを削除しないようにするとともに、Visual Studio によって自動的にデプロイが削除されないようにする必要があります。
+運用環境など、特定の環境で初めてクラウド サービスを Azure にデプロイするとき、クラウド サービスの VIP が割り当てられます。 この VIP が変更されるのは、デプロイを明示的に削除した場合またはデプロイの更新プロセスによってデプロイが暗黙的に削除された場合だけです。 VIP を維持するには、自らデプロイを削除しないようにするとともに、Visual Studio によって自動的にデプロイが削除されないようにする必要があります。 
 
 その動作は、**公開ウィザード**に用意されている各種オプションで、デプロイの設定を指定できます。 指定できるデプロイとして新規と更新があります。更新デプロイには、増分更新と同時更新とがあります。 どちらの更新デプロイでも、VIP が維持されます。 各種デプロイの定義については、[Azure アプリケーションの公開ウィザード](vs-azure-tools-publish-azure-application-wizard.md)に関するページを参照してください。 さらに、エラーが発生した場合に、それまでのクラウド サービスのデプロイを削除するかどうかを制御できます。 そのオプションが正しく設定されていない場合、VIP が予期せず変化する可能性があります。
 
 ## <a name="update-a-cloud-service-without-changing-its-vip"></a>VIP を変更せずにクラウド サービスを更新する
-1. Visual Studio で Azure クラウド サービス プロジェクトを開くか新たに作成します。
+1. Visual Studio で Azure クラウド サービス プロジェクトを開くか新たに作成します。 
 
 2. **Solution Explorer** で、プロジェクト名を右クリックします。 ショートカット メニューで、**[発行]** をクリックします。
 
@@ -39,7 +41,7 @@ Azure でホストされているクラウド サービスを更新するとき�
 
     ![[Azure アプリケーションの公開] の [共通設定] タブ](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 
-5. **[詳細設定]** タブで、**デプロイ ラベル**と**ストレージ アカウント**が正しいことを確認します。 **[失敗時に配置を削除]** チェック ボックスがオフになっていること、**[配置の更新]** チェック ボックスがオンになっていることを確認します。 **[失敗時に配置を削除]** チェック ボックスをオフにすると、デプロイ中にエラーが発生した場合に、VIP が失われることがなくなります。 **[配置の更新]** チェック ボックスをオンにすると、アプリケーションを再発行したときに、デプロイが削除され、VIP が失われることはなくなります。
+5. **[詳細設定]** タブで、**デプロイ ラベル**と**ストレージ アカウント**が正しいことを確認します。 **[失敗時に配置を削除]** チェック ボックスがオフになっていること、**[配置の更新]** チェック ボックスがオンになっていることを確認します。 **[失敗時に配置を削除]** チェック ボックスをオフにすると、デプロイ中にエラーが発生した場合に、VIP が失われることがなくなります。 **[配置の更新]** チェック ボックスをオンにすると、アプリケーションを再発行したときに、デプロイが削除され、VIP が失われることはなくなります。 
 
     ![[Azure アプリケーションの公開] の [詳細設定] タブ](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-advanced-settings.png)
 

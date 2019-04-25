@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e86791e77d5c8f6eb1e6b88ac663e1f11cc53e1e
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793353"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio のアクセシビリティのヒントとテクニック
 
@@ -64,8 +64,8 @@ Visual Studio IDE には、多くのツール ウィンドウと同様に機能�
 |ダイアログ ボックス|ダイアログ ボックスのチェック ボックス オプションをオンまたはオフにします。 <br> <br> **注:** Windows の標準的なショートカット|**Space キー**|
 |コンテキスト メニュー|(右クリックして) コンテキスト メニューを開きます。 <br> <br> **注:** Windows の標準的なショートカット|**Shift**  +  **F10**|
 |メニュー|アクセラレータ キーを使用して、メニュー項目にすばやくアクセスします。 **Alt** キーを押してからメニュー内の下線付きの文字を選択して、コマンドをアクティブにします。 たとえば、Visual Studio の [プロジェクトを開く] ダイアログ ボックスを表示するには、**ALT** + **F** + **O** + **P** キーを押します。  <br><br> **注:** Windows の標準的なショートカット|**ALT** + **[文字]**|
-|検索ボックス|Visual Studio の検索機能を使用します。|**Ctrl** +  **Q**|
-|[ツールボックス] ウィンドウ|[ツールボックス] のタブ間を移動します。|**Ctrl** + **↑**<br /><br /> および<br /><br /> **Ctrl** + **↓**|
+|検索ボックス|Visual Studio の検索機能を使用します。|**Ctrl**  +  **Q**|
+|[ツールボックス] ウィンドウ|[ツールボックス] のタブ間を移動します。|**Ctrl** + **↑**<br /><br /> と、呼び出し<br /><br /> **Ctrl** + **↓**|
 |[ツールボックス] ウィンドウ|[ツールボックス] からフォームまたはデザイナーにコントロールを追加します。|**Enter**|
 |[オプション] ダイアログ ボックス:[環境] > [キーボード]|**[ショートカット キー]** オプションに入力されたキーの組み合わせを削除します。|**バックスペース**|
 

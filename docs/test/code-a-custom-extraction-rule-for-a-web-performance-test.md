@@ -13,12 +13,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 14dce2ee3ea073e8ef3db6956af0eb56daa94fe0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1111b659e1c88f219258b73045d0ce0d0f420ae7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822938"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Web パフォーマンス テストのカスタム抽出規則のコーディング
 
@@ -31,24 +31,24 @@ ms.locfileid: "55923448"
 
 ## <a name="to-create-a-custom-extraction-rule"></a>カスタム抽出規則を作成するには
 
-1.  Web パフォーマンス テストを含むテスト プロジェクトを開きます。
+1. Web パフォーマンス テストを含むテスト プロジェクトを開きます。
 
-2.  (省略可能) 抽出規則を格納する個別のクラス ライブラリ プロジェクトを作成します。
+2. (省略可能) 抽出規則を格納する個別のクラス ライブラリ プロジェクトを作成します。
 
     > [!IMPORTANT]
     > クラスは、テストが含まれる同じプロジェクトで作成できます。 ただし、規則を再利用する場合は、規則を格納する別のクラス ライブラリ プロジェクトを作成することをお勧めします。 個別のプロジェクトを作成するには、ここで省略可能として説明されている手順を実行する必要があります。
 
-3.  (省略可能) クラス ライブラリ プロジェクトに、Microsoft.VisualStudio.QualityTools.WebTestFramework.dll への参照を追加します。
+3. (省略可能) クラス ライブラリ プロジェクトに、Microsoft.VisualStudio.QualityTools.WebTestFramework.dll への参照を追加します。
 
-4.  <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> クラスから派生するクラスを作成します。 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> メンバーと <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*> メンバーを実装します。
+4. <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> クラスから派生するクラスを作成します。 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> メンバーと <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*> メンバーを実装します。
 
-5.  (省略可能) 新しいクラス ライブラリ プロジェクトをビルドします。
+5. (省略可能) 新しいクラス ライブラリ プロジェクトをビルドします。
 
-6.  (省略可能) テスト プロジェクトで、カスタム抽出規則を含むクラス ライブラリ プロジェクトへの参照を追加します。
+6. (省略可能) テスト プロジェクトで、カスタム抽出規則を含むクラス ライブラリ プロジェクトへの参照を追加します。
 
-7.  テスト プロジェクトで、**Web パフォーマンス テスト エディター**を使用して Web パフォーマンス テストを開きます。
+7. テスト プロジェクトで、**Web パフォーマンス テスト エディター**を使用して Web パフォーマンス テストを開きます。
 
-8.  カスタム抽出規則を追加するには、Web パフォーマンス テスト要求を右クリックし、**[抽出規則の追加]** をクリックします。
+8. カスタム抽出規則を追加するには、Web パフォーマンス テスト要求を右クリックし、**[抽出規則の追加]** をクリックします。
 
      **[抽出規則の追加]** ダイアログ ボックスが表示されます。 定義済みの検証規則と共に、カスタム検証規則が **[規則の選択]** ボックスに表示されます。 カスタム抽出規則を選択し、**[OK]** をクリックします。
 

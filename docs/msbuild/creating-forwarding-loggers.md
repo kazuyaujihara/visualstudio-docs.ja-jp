@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b63e71a3c904c6dad21f54269e336acd4291e7a3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778187"
 ---
 # <a name="create-forwarding-loggers"></a>転送 logger の作成
 転送 logger では、マルチプロセッサ システムでプロジェクトをビルドするときに監視の対象とするイベントを選択できるため、ログの効率を高めることができます。 転送 logger を有効にすることで、不要なイベントによる中心 logger の過負荷、ビルドの低速化、およびログの煩雑化を回避できます。

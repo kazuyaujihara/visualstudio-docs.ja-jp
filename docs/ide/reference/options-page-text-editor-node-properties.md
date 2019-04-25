@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b04897304bc90d35bcf9fd5e61f5329ce922ea91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948284"
 ---
 # <a name="options-page-text-editor-node-properties"></a>[テキスト エディター] ノード プロパティ ([オプション] ページ)
 このドキュメントでは、**[オプション]** ダイアログ ボックスの **[テキスト エディター]** カテゴリ (`DTE.Properties("TextEditor", <Property Page>)`) に関連付けられている一部のページ (またはプロパティ コレクション) について説明します。 各サブセクションの見出しは、`Properties` コレクションにアクセスするための呼び出しです。その下の表では、コレクションのプロパティを示します。

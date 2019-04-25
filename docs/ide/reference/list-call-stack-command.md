@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 55272f5d30602d03d0f3bb7e2ac16e9a709cafdf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970058"
 ---
 # <a name="list-call-stack-command"></a>ListCallStack コマンド
 現在の呼び出し履歴を表示します。
@@ -83,7 +83,7 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 
  任意。 スレッド `n` の呼び出し履歴を表示します。 スレッドが指定されていない場合、現在のスレッドの呼び出し履歴が表示されます。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
  引数やスイッチに加えられた変更は、以降のコマンドの呼び出しに適用されます。 Debug.ListCallStackby を単独で実行すると、呼び出し履歴全体が表示されます。 たとえば、次のようなインデックスを指定します。
 
 ```cmd

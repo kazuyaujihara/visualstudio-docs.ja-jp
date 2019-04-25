@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d3004edc39b2fd4f9cc6be72407fd6a46274d1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: dad84145200b09cfbddab63bd9994096d0ba3e17
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537313"
 ---
 # <a name="manage-application-settings-net"></a>アプリケーション設定の管理 (.NET)
 
@@ -84,9 +84,9 @@ Visual Basic プロジェクトでは、`My.Settings` オブジェクトを使�
 
 設定へのアクセスには、`My.Settings` オブジェクトと既定の *.settings* ファイルを使用することを強くお勧めします。 これは、**設定デザイナー**を使用して、プロパティを設定に割り当てることができ、さらにアプリケーションのシャットダウン前にユーザー設定が自動的に保存されるためです。 ただし、Visual Basic アプリケーションから設定に直接アクセスすることもできます。 その場合は、`MySettings` クラスにアクセスし、プロジェクトのルートにあるカスタムの *.settings* ファイルを使用する必要があります。 C# アプリケーションと同様、アプリケーションを終了する前にユーザー設定を保存する必要があります。この方法については、次のセクションで説明します。
 
-<!-- markdownlint-disable MD003 -->
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="access-or-change-application-settings-at-run-time-in-c"></a>実行時におけるアプリケーション設定へのアクセスまたは変更 (C#)
-<!-- markdownlint-enable MD003 -->
+<!-- markdownlint-enable MD003 MD020 -->
 
 次の [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] の例に示すように、C# などの Visual Basic 以外の言語では、`Settings` クラスに直接アクセスする必要があります。
 

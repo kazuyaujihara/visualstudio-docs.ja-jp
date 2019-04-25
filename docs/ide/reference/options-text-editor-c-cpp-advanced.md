@@ -14,12 +14,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b88170e1fe1aa5154616c95c29d0585fc74ba34c
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 1c6cdfc62885133d82911c7336d011804e9a322d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817598"
 ---
 # <a name="options-text-editor-cc-advanced"></a>[オプション]、[テキスト エディター]、[C/C++]、[詳細]
 
@@ -29,7 +29,6 @@ ms.locfileid: "56954323"
 
 > [!NOTE]
 > 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 「[Visual Studio IDE のカスタマイズ](../../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
-
 
 ## <a name="browsingnavigation"></a>参照/ナビゲーション
 

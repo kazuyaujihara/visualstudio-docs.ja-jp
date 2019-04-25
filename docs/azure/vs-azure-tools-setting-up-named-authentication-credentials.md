@@ -4,17 +4,19 @@ description: Visual Studio から Azure にアプリケーションを発行し�
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 319f9327cb83f3d05d26512f448b029b57d23b0c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572198"
 ---
 # <a name="set-up-named-authentication-credentials"></a>名前付き認証資格情報の設定
 
@@ -38,6 +40,6 @@ Visual Studio から Azure にアプリケーションを発行したり、既�
 ## <a name="next-steps"></a>次の手順
 
 - [Web Apps の概要](https://docs.microsoft.com/azure/app-service/)
-- [Azure App Service へのアプリのデプロイ](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
+- [Azure App Service へのアプリのデプロイ](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
 - [Visual Studio を使用した Web ジョブの展開](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [クラウド サービスの作成とデプロイ](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

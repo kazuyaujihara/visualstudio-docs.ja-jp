@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 330c8bb033a167b03f62cf4fda95a58ea08ccd92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9aa586f5036c4aa2c321f2dda8333ad4342e165
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791670"
 ---
 # <a name="build-page-project-designer-c"></a>[ビルド] ページ (プロジェクト デザイナー) (C#)
 **プロジェクト デザイナー**の **[ビルド]** ページでは、プロジェクトのビルド構成プロパティを指定します。 このページは、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] プロジェクトにのみ適用されます。
@@ -56,12 +56,11 @@ ms.locfileid: "55922148"
 
 このチェック ボックスは、次の条件がすべて満たされた場合にのみ利用できます。
 
--   **[ビルド]** ページの **[プラットフォーム ターゲット]** ボックスの一覧で、**[Any CPU]** が設定されている。
+- **[ビルド]** ページの **[プラットフォーム ターゲット]** ボックスの一覧で、**[Any CPU]** が設定されている。
 
--   **[アプリケーション]** ページの **[出力の種類]** ボックスの一覧で、プロジェクトがアプリケーションであることが指定されている。
+- **[アプリケーション]** ページの **[出力の種類]** ボックスの一覧で、プロジェクトがアプリケーションであることが指定されている。
 
--   **[アプリケーション]** ページの **[ターゲット フレームワーク]** ボックスの一覧で、.NET Framework 4.5 が指定されている。
-
+- **[アプリケーション]** ページの **[ターゲット フレームワーク]** ボックスの一覧で、.NET Framework 4.5 が指定されている。
 
 **[アンセーフ コードの許可]** [unsafe](/dotnet/csharp/language-reference/keywords/unsafe) キーワードを使用するコードをコンパイルできるようにします。 詳しくは、「[/unsafe (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option)」をご覧ください。
 
@@ -83,7 +82,7 @@ ms.locfileid: "55922148"
 
 **[すべて]** すべての警告をエラーとして扱います。
 
-## <a name="output"></a>出力
+## <a name="output"></a>Output
 次の設定は、ビルド処理の出力オプションを構成するために使用します。
 
 **[出力ファイル]** このプロジェクト構成の出力ファイルの場所を指定します。 このボックスにビルド出力のパスを入力するか、**[参照]** をクリックし、パスを指定します。 このパスは、相対パスであることに注意してください。絶対パスを入力しても、相対パスとして保存されます。 既定のパスは bin\Debug または bin\Release\\ です。

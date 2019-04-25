@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a51b056e4a3a4f2f434e6fd57ec270029d9155b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786521"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Visual Studio での Live Unit Testing
 
@@ -27,7 +27,6 @@ Live Unit Testing は、アプリケーションの開発中に、影響を受�
 
 ## <a name="supported-test-frameworks"></a>サポートされるテスト フレームワーク
 Live Unit Testing は、次の表に示されている 3 つの一般的な単体テスト フレームワークで動作します。 アダプターやフレームワークのサポートされる最小バージョンも表に示されています。 単体テスト フレームワークはすべて NuGet.org から入手できます。
-
 
 |テスト フレームワーク  |Visual Studio アダプターの最小バージョン  |フレームワークの最小バージョン  |
 |---------|---------|---------|

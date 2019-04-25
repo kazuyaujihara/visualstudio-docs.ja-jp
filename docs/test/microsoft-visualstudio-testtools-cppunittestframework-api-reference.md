@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 926b2c35d64ebac060f026dbc212874f261719de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 045f205ff5450b09d4ec4e76e14493a988bae375
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784083"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス
 
@@ -24,18 +24,18 @@ ms.locfileid: "55922161"
 
 ヘッダーと lib のパスは、ネイティブ テスト プロジェクトで自動的に構成されます。
 
-##  <a name="In_this_topic"></a> このトピックの内容
+## <a name="In_this_topic"></a> このトピックの内容
  [CppUnitTest.h](#cppUnitTest_h)
 
 - [テスト クラスとメソッドを作成する](#create_test_classes_and_methods)
 
 - [初期化とクリーンアップ](#Initialize_and_cleanup)
 
-  -   [テスト メソッド](#test_methods)
+  - [テスト メソッド](#test_methods)
 
-  -   [テスト クラス](#test_classes)
+  - [テスト クラス](#test_classes)
 
-  -   [テスト モジュール](#test_modules)
+  - [テスト モジュール](#test_modules)
 
 - [テスト属性を作成する](#create_test_attributes)
 
@@ -51,37 +51,37 @@ ms.locfileid: "55922161"
 
   - [一般的なアサート](#general_asserts)
 
-    -   [等しい](#general_are_equal)
+    - [等しい](#general_are_equal)
 
-    -   [等しくない](#general_are_not_equal)
+    - [等しくない](#general_are_not_equal)
 
-    -   [同じである](#general_are_same)
+    - [同じである](#general_are_same)
 
-    -   [同じではない](#general_are_not_same)
+    - [同じではない](#general_are_not_same)
 
-    -   [Null である](#general_is_null)
+    - [Null である](#general_is_null)
 
-    -   [Null ではない](#general_is_not_null)
+    - [Null ではない](#general_is_not_null)
 
-    -   [True である](#general_is_True)
+    - [True である](#general_is_True)
 
-    -   [False である](#general_is_false)
+    - [False である](#general_is_false)
 
-    -   [失敗](#general_Fail)
+    - [失敗](#general_Fail)
 
   - [Windows ランタイム アサート](#winrt_asserts)
 
-    -   [等しい](#winrt_are_equal)
+    - [等しい](#winrt_are_equal)
 
-    -   [同じである](#winrt_are_same)
+    - [同じである](#winrt_are_same)
 
-    -   [等しくない](#winrt_are_not_equal)
+    - [等しくない](#winrt_are_not_equal)
 
-    -   [同じではない](#winrt_are_not_same)
+    - [同じではない](#winrt_are_not_same)
 
-    -   [Null である](#winrt_is_null)
+    - [Null である](#winrt_is_null)
 
-    -   [Null ではない](#winrt_is_not_null)
+    - [Null ではない](#winrt_is_not_null)
 
   - [例外アサート](#exception_asserts)
 
@@ -95,9 +95,9 @@ ms.locfileid: "55922161"
 
   - [使用例](#example)
 
-##  <a name="cppUnitTest_h"></a> CppUnitTest.h
+## <a name="cppUnitTest_h"></a> CppUnitTest.h
 
-###  <a name="create_test_classes_and_methods"></a> テスト クラスとメソッドを作成する
+### <a name="create_test_classes_and_methods"></a> テスト クラスとメソッドを作成する
 
 ```cpp
 TEST_CLASS(className)
@@ -114,9 +114,9 @@ TEST_METHOD(methodName)
 
  *methodName* をテスト メソッドとして定義します。 `TEST_METHOD` はメソッドのクラスのスコープ内で宣言する必要があります。
 
-###  <a name="Initialize_and_cleanup"></a> 初期化とクリーンアップ
+### <a name="Initialize_and_cleanup"></a> 初期化とクリーンアップ
 
-####  <a name="test_methods"></a> テスト メソッド
+#### <a name="test_methods"></a> テスト メソッド
 
 ```cpp
 TEST_METHOD_INITIALIZE(methodName)
@@ -136,7 +136,7 @@ TEST_METHOD_CLEANUP(methodName)
 
  *methodName* を各テスト メソッドの実行後に実行するメソッドとして定義します。 `TEST_METHOD_CLEANUP` はテスト クラスで一度だけ定義でき、テスト クラスのスコープ内で定義する必要があります。
 
-####  <a name="test_classes"></a> テスト クラス
+#### <a name="test_classes"></a> テスト クラス
 
 ```cpp
 TEST_CLASS_INITIALIZE(methodName)
@@ -156,7 +156,7 @@ TEST_CLASS_CLEANUP(methodName)
 
  *methodName* を各テスト クラスの作成後に実行するメソッドとして定義します。 `TEST_CLASS_CLEANUP` はテスト クラスで一度だけ定義でき、テスト クラスのスコープ内で定義する必要があります。
 
-####  <a name="test_modules"></a> テスト モジュール
+#### <a name="test_modules"></a> テスト モジュール
 
 ```cpp
 TEST_MODULE_INITIALIZE(methodName)
@@ -173,9 +173,9 @@ TEST_MODULE_CLEANUP(methodName)
 
  モジュールがアンロードされるときに実行するメソッド *methodName* を定義します。 `TEST_MODULE_CLEANUP` はテスト モジュールで一度だけ定義でき、名前空間スコープで宣言する必要があります。
 
-###  <a name="create_test_attributes"></a> テスト属性を作成する
+### <a name="create_test_attributes"></a> テスト属性を作成する
 
-####  <a name="test_method_attributes"></a> テスト メソッドの属性
+#### <a name="test_method_attributes"></a> テスト メソッドの属性
 
 ```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
@@ -188,7 +188,7 @@ END_TEST_METHOD_ATTRIBUTE()
 
  `TEST_METHOD_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。
 
-####  <a name="test_class_attributes"></a> テスト クラス属性
+#### <a name="test_class_attributes"></a> テスト クラス属性
 
 ```cpp
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
@@ -201,7 +201,7 @@ END_TEST_CLASS_ATTRIBUTE()
 
  `TEST_CLASS_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。
 
-####  <a name="test_module_attributes"></a> テスト モジュール属性
+#### <a name="test_module_attributes"></a> テスト モジュール属性
 
 ```cpp
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
@@ -214,7 +214,7 @@ END_TEST_MODULE_ATTRIBUTE()
 
  `TEST_MODULE_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。
 
-####  <a name="pre_defined_attributes"></a> 定義済みの属性
+#### <a name="pre_defined_attributes"></a> 定義済みの属性
  これらの定義済み属性マクロは、前に説明したマクロ `TEST_METHOD_ATTRIBUTE`、`TEST_CLASS_ATTRIBUTE`、または `TEST_MODULE_ATTRIBUTE` と置き換えることができます。
 
 ```cpp
@@ -247,11 +247,11 @@ TEST_IGNORE()
 
  名前 `Ignore` と属性値 `true` を持つ属性を定義します。
 
-##  <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
+## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 
-###  <a name="general_asserts"></a> 一般的なアサート
+### <a name="general_asserts"></a> 一般的なアサート
 
-####  <a name="general_are_equal"></a> 等しい
+#### <a name="general_are_equal"></a> 等しい
  2 つのオブジェクトが等しいことを確認します
 
 ```cpp
@@ -307,7 +307,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_are_not_equal"></a> 等しくない
+#### <a name="general_are_not_equal"></a> 等しくない
  2 つの倍精度小数点数が等しくないことを確認します
 
 ```cpp
@@ -363,7 +363,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_are_same"></a> 同じである
+#### <a name="general_are_same"></a> 同じである
  2 つの参照が同じオブジェクト インスタンス (ID) を参照していることを確認します。
 
 ```cpp
@@ -375,7 +375,7 @@ static void Assert::AreSame(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_are_not_same"></a> 同じではない
+#### <a name="general_are_not_same"></a> 同じではない
  2 つの参照が同じオブジェクト インスタンス (ID) を参照していないことを確認します。
 
 ```cpp
@@ -387,7 +387,7 @@ static void Assert::AreNotSame (
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_is_null"></a> Null である
+#### <a name="general_is_null"></a> Null である
  ポインターが NULL であることを確認します。
 
 ```cpp
@@ -398,7 +398,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_is_not_null"></a> Null ではない
+#### <a name="general_is_not_null"></a> Null ではない
  ポインターが NULL ではないことを確認します
 
 ```cpp
@@ -409,7 +409,7 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_is_True"></a> True である
+#### <a name="general_is_True"></a> True である
  条件が true であることを確認します
 
 ```cpp
@@ -419,7 +419,7 @@ static void Assert::IsTrue(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_is_false"></a> False である
+#### <a name="general_is_false"></a> False である
  条件が false であることを確認します
 
 ```cpp
@@ -429,7 +429,7 @@ static void Assert::IsFalse(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_Fail"></a> 失敗
+#### <a name="general_Fail"></a> 失敗
  テスト ケースの結果が失敗するよう強制します
 
 ```cpp
@@ -438,9 +438,9 @@ static void Assert::Fail(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-###  <a name="winrt_asserts"></a> Windows ランタイム アサート
+### <a name="winrt_asserts"></a> Windows ランタイム アサート
 
-####  <a name="winrt_are_equal"></a> 等しい
+#### <a name="winrt_are_equal"></a> 等しい
  2 つの Windows ランタイム ポインターが等しいことを確認します。
 
 ```cpp
@@ -463,7 +463,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-####  <a name="winrt_are_same"></a> 同じである
+#### <a name="winrt_are_same"></a> 同じである
  2 つの Windows ランタイム参照が同じオブジェクトを参照していることを確認します。
 
 ```cpp
@@ -475,7 +475,7 @@ static void Assert::AreSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-####  <a name="winrt_are_not_equal"></a> 等しくない
+#### <a name="winrt_are_not_equal"></a> 等しくない
  2 つの Windows ランタイム ポインターが等しくないことを確認します。
 
 ```cpp
@@ -498,7 +498,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-####  <a name="winrt_are_not_same"></a> 同じではない
+#### <a name="winrt_are_not_same"></a> 同じではない
  2 つの Windows ランタイム参照が同じオブジェクトを参照していないことを確認します。
 
 ```cpp
@@ -510,7 +510,7 @@ static void Assert::AreNotSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-####  <a name="winrt_is_null"></a> Null である
+#### <a name="winrt_is_null"></a> Null である
  Windows ランタイム ポインターが nullptr であることを確認します。
 
 ```cpp
@@ -521,7 +521,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-####  <a name="winrt_is_not_null"></a> Null ではない
+#### <a name="winrt_is_not_null"></a> Null ではない
  Windows ランタイム ポインターが nullptr ではないことを確認します。
 
 ```cpp
@@ -532,9 +532,9 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-###  <a name="exception_asserts"></a> 例外アサート
+### <a name="exception_asserts"></a> 例外アサート
 
-####  <a name="expect_exception"></a> 例外を想定する
+#### <a name="expect_exception"></a> 例外を想定する
  関数が例外を発生させることを確認します。
 
 ```cpp
@@ -555,12 +555,12 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)
 ```
 
-##  <a name="cppunittestlogger_h"></a> CppUnitTestLogger.h
+## <a name="cppunittestlogger_h"></a> CppUnitTestLogger.h
 
-###  <a name="logger"></a> Logger
+### <a name="logger"></a> Logger
  ロガー クラスには、**出力ウィンドウ**に書き込むための静的メソッドが含まれます。
 
-###  <a name="write_message"></a> メッセージの書き込み
+### <a name="write_message"></a> メッセージの書き込み
 **出力ウィンドウ**に文字列を書き込む
 
 ```cpp

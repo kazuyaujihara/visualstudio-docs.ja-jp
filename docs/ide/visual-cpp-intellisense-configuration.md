@@ -7,18 +7,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582606"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense の C++ プロジェクトを構成する
 
 場合によっては、IntelliSense が正常に機能するために、C++ プロジェクトを手動で構成する必要があります。 (.vcxproj ファイルに基づく) MSBuild プロジェクトの場合は、プロジェクト プロパティで設定を調整できます。 MSBuild 以外のプロジェクトの場合は、プロジェクトのルート ディレクトリにある CppProperties.json ファイルで設定を調整します。 場合によっては、IntelliSense がマクロ定義を解釈できるようにヒント ファイルを作成する必要があります。 Visual Studio IDE は、IntelliSense の問題を特定して修正するのに役立ちます。
-
-
 
 ## <a name="single-file-intellisense"></a>単一ファイルの IntelliSense
 

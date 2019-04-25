@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 476e72e50ac796412fbeef1c180a3340764fb121
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 14c31acc336818a8846d2ddf7981f64e045f68e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824192"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>方法: プロジェクトの依存関係を作成および削除する
 
@@ -47,18 +47,18 @@ ms.locfileid: "55907661"
 
 ## <a name="to-remove-dependencies-from-projects"></a>プロジェクトから依存関係を削除するには
 
-1.  **ソリューション エクスプローラー**でプロジェクトを選択します。
+1. **ソリューション エクスプローラー**でプロジェクトを選択します。
 
-2.  **[プロジェクト]** メニューの **[プロジェクトの依存関係]** を選びます。
+2. **[プロジェクト]** メニューの **[プロジェクトの依存関係]** を選びます。
 
      **[プロジェクトの依存関係]** ダイアログ ボックスが表示されます。
 
     > [!NOTE]
     > **[プロジェクトの依存関係]** オプションは、複数のプロジェクトを含むソリューションでのみ使うことができます。
 
-3.  **[依存関係]** タブで、**[プロジェクト]** ドロップダウン メニューからプロジェクトを選びます。
+3. **[依存関係]** タブで、**[プロジェクト]** ドロップダウン メニューからプロジェクトを選びます。
 
-4.  **[依存先]** フィールドで、このプロジェクトの依存関係ではなくなった他のプロジェクトの横にあるチェック ボックスをオフにします。
+4. **[依存先]** フィールドで、このプロジェクトの依存関係ではなくなった他のプロジェクトの横にあるチェック ボックスをオフにします。
 
 ## <a name="see-also"></a>関連項目
 
