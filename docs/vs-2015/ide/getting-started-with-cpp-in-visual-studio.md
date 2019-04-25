@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 264fcea4b04b1777a455199789ed1bb9c3757f7c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ae373742c114129c99e7b3444393e12c6c4dd8dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758243"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057824"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio 内の C++ の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54758243"
 
  [アプリのリリース バージョンのビルド](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)
 
-##  <a name="BKMK_Configure"></a> Visual Studio へのサインイン
+## <a name="BKMK_Configure"></a> Visual Studio へのサインイン
  Visual Studio を初めて起動する際には、Live や Outlook などの Microsoft アカウントを使ってサインインする機会があります。 サインインすると、設定をすべてのデバイス間で同期できます。 詳細については、「 [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md)」を参照してください。
 
  図 1: Visual Studio IDE
@@ -42,7 +42,7 @@ ms.locfileid: "54758243"
 
  Visual Studio を開くと、IDE の 3 つの基本的なパーツを確認できます。ツール ウィンドウ、メニューとツール バー、およびメイン ウィンドウ領域です。 ツール ウィンドウは、アプリ ウィンドウの左側および右側にドッキングされており、上部には **[クイック起動]**、メニュー バー、および標準ツール バーがあります。 アプリケーション ウィンドウの中央には、 **[スタート ページ]** が表示されます。 ソリューションまたはプロジェクトを開くと、この領域にはエディターとデザイナーが表示されます。 アプリケーションを開発する場合は、ほとんどの時間をこの中央の領域での作業に費やします。
 
-##  <a name="BKMK_CreateApp"></a> 簡単なアプリケーションの作成
+## <a name="BKMK_CreateApp"></a> 簡単なアプリケーションの作成
  Visual Studio でアプリを作成するには、最初にプロジェクトおよびソリューションを作成します。 この例では、Windows コンソール アプリケーションを作成します。
 
 #### <a name="to-create-a-console-app"></a>コンソール アプリを作成するには
@@ -65,12 +65,12 @@ ms.locfileid: "54758243"
 
    ![ソリューション エクスプローラーでのソリューションのファイル](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")
 
-##  <a name="BKMK_AddCode"></a> アプリケーションへのコードの追加
+## <a name="BKMK_AddCode"></a> アプリケーションへのコードの追加
  次に、コンソール ウィンドウに "Hello" と表示するコードを追加します。
 
 #### <a name="to-display-hello-in-the-console-window"></a>コンソール ウィンドウに "Hello" と表示するには
 
-1.  GreetingsConsoleApp.cpp ファイルの `return 0;` という行の前に空白行を挿入し、次のコードを入力します。
+1. GreetingsConsoleApp.cpp ファイルの `return 0;` という行の前に空白行を挿入し、次のコードを入力します。
 
     ```
     cout << "Hello\n";
@@ -84,7 +84,7 @@ ms.locfileid: "54758243"
 
      [cout](http://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) は \<iostream\> ヘッダー ファイルに含まれます。
 
-2.  iostream ヘッダーを組み込むには、 `#include "stdafx.h"`の次に、以下のコードを入力します。
+2. iostream ヘッダーを組み込むには、 `#include "stdafx.h"`の次に、以下のコードを入力します。
 
     ```
     #include \<iostream\>
@@ -95,16 +95,16 @@ ms.locfileid: "54758243"
 
      エラーを修正すると、 `cout` の下の赤い波線が消えます。
 
-3.  変更内容をファイルに保存します。
+3. 変更内容をファイルに保存します。
 
      ![cout のエラーを修復するコード](../ide/media/c-ide-coutfix.png "C++IDE_CoutFix")
 
-##  <a name="BKMK_DebugTest"></a> アプリケーションのデバッグとテスト
+## <a name="BKMK_DebugTest"></a> アプリケーションのデバッグとテスト
  GreetingsConsoleApp をデバッグして、コンソール ウィンドウに "Hello" という語が表示されるかどうかを確認できます。
 
 #### <a name="to-debug-the-application"></a>アプリケーションをデバッグするには
 
--   デバッガーを起動します。
+- デバッガーを起動します。
 
      ![[デバッグ] メニューの [デバッグの開始] コマンド](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")
 
@@ -128,7 +128,7 @@ ms.locfileid: "54758243"
 
    詳細については、[コンソール プロジェクト](../debugger/debugging-preparation-console-projects.md)に関する記事を参照してください。
 
-##  <a name="BKMK_BuildRelease"></a> アプリのリリース バージョンのビルド
+## <a name="BKMK_BuildRelease"></a> アプリのリリース バージョンのビルド
  すべてが機能することを確認したら、アプリケーションのリリース ビルドを準備できます。
 
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>ソリューション ファイルをクリーンアップし、リリース バージョンをビルドするには
@@ -148,4 +148,4 @@ ms.locfileid: "54758243"
    このチュートリアルは完了しました。 その他の例については、「[Visual Studio Samples](../ide/visual-studio-samples.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
- [チュートリアル: 単純なアプリケーションを作成する](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md) [Visual Studio のサンプル](../ide/visual-studio-samples.md) [Visual Studio を使用した開発を開始します。](../ide/get-started-developing-with-visual-studio.md)
+ [チュートリアル: 簡単なアプリケーションの作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md) [Visual Studio のサンプル](../ide/visual-studio-samples.md) [Visual Studio を使用した開発の開始](../ide/get-started-developing-with-visual-studio.md)

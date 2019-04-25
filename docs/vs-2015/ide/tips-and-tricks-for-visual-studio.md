@@ -1,5 +1,5 @@
 ---
-title: ヒントし、テクニック |Microsoft Docs
+title: ヒントとテクニック | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,36 +9,36 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 24c876edafaee848a050099fdb031f4637436f22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096570"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio のヒントとテクニック
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio では、このトピックのショートカットを使用してより簡単に移動できます。 詳細については、次を参照してください。 [Visual Studio でのキーボード ショートカット](default-keyboard-shortcuts-in-visual-studio.md)します。 ユーザー補助について Visual Studio を最適化する方法の詳細については、「[アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)」を参照してください。
+Visual Studio では、このトピックのショートカットを使用してより簡単に移動できます。 全般的な情報については、[Visual Studio のキーボード ショートカット](default-keyboard-shortcuts-in-visual-studio.md)に関するページをご覧ください。 ユーザー補助について Visual Studio を最適化する方法の詳細については、「[アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)」を参照してください。
 
--   [ウィンドウ管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
+- [ウィンドウ管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
--   [ウィンドウのショートカット](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
+- [ウィンドウのショートカット](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
--   [Visual Studio での検索](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
+- [Visual Studio での検索](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
 
--   [エディター検索](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
+- [エディター検索](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
--   [コード エディター](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
+- [コード エディター](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
--   [ツールバー](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
+- [ツールバー](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
 
--   [デバッグ](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
+- [デバッグ](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
--   [アプリケーション ライフサイクル管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
+- [アプリケーション ライフサイクル管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-##  <a name="BKMK_WindowMgmt"></a>ウィンドウ管理
+## <a name="BKMK_WindowMgmt"></a>ウィンドウ管理
 
 |||
 |-|-|
@@ -49,7 +49,7 @@ Visual Studio では、このトピックのショートカットを使用して
 |開いているファイル リストを表示|Ctrl + Alt + Down|
 |すべてのフローティング ウィンドウを表示|Ctrl+Shift+M|
 
-##  <a name="BKMK_WindowShortcuts"></a> ウィンドウのショートカット
+## <a name="BKMK_WindowShortcuts"></a> ウィンドウのショートカット
 
 |||
 |-|-|
@@ -59,7 +59,7 @@ Visual Studio では、このトピックのショートカットを使用して
 |新しいインスタンスを開始|Win + Shift + n|
 |ウィンドウの切り替え|Win + n|
 
-##  <a name="BKMK_Search"></a> Visual Studio での検索
+## <a name="BKMK_Search"></a> Visual Studio での検索
 
 |||
 |-|-|
@@ -69,7 +69,7 @@ Visual Studio では、このトピックのショートカットを使用して
 |スコープ結果のクイック起動|-   @opt オプション<br />-   @cmd コマンド<br />-   @mru 直前に使用<br />-   @doc ドキュメントを開く|
 |ツール オプションの検索|Ctrl+E|
 
-##  <a name="BKMK_EditorFind"></a>エディター検索
+## <a name="BKMK_EditorFind"></a>エディター検索
 
 |||
 |-|-|
@@ -84,7 +84,7 @@ Visual Studio では、このトピックのショートカットを使用して
 |[フォルダーを指定して検索]|Ctrl + Shift + F|
 |[フォルダーを指定して置換]|Ctrl + Shift + H|
 
-##  <a name="BKMK_CodeEditor"></a> コード エディター
+## <a name="BKMK_CodeEditor"></a> コード エディター
 
 |||
 |-|-|
@@ -109,7 +109,7 @@ Visual Studio では、このトピックのショートカットを使用して
 |複数のピーク結果の間を移動する|F8 と Shift + F8|
 |コード エディター ウィンドウと [定義をここに表示] ウィンドウの間で切り替える|Shift + Esc|
 
-##  <a name="BKMK_Toolbars"></a> ツールバー
+## <a name="BKMK_Toolbars"></a> ツールバー
 
 |||
 |-|-|
@@ -118,7 +118,7 @@ Visual Studio では、このトピックのショートカットを使用して
 |テキストボックス コマンド モードの検索|「>」と入力|
 |新しいエイリアスの作成|>alias NewAlias コマンド|
 
-##  <a name="BKMK_Debugging"></a> デバッグ
+## <a name="BKMK_Debugging"></a> デバッグ
 
 |||
 |-|-|
@@ -137,7 +137,7 @@ Visual Studio では、このトピックのショートカットを使用して
 |イミディエイト ウィンドウのバッファーをクリア|>cls|
 |イミディエイト ウィンドウの値の印刷|?varname|
 
-##  <a name="BKMK_ALM"></a>アプリケーション ライフサイクル管理
+## <a name="BKMK_ALM"></a>アプリケーション ライフサイクル管理
 
 「[キーボード ショートカット: Visual Studio Online、TFS Web ポータル、およびチーム エクスプローラー](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)」を参照してください。
 

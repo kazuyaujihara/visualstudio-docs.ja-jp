@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 2015 のロックを解除 |Microsoft Docs"
+title: Visual Studio 2015 のロックを解除する | Microsoft Docs"
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,37 +10,37 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8876cebf5851454aa3140f6a3269fa0d3ecbbc95
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774544"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072553"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Visual Studio のロックを解除する方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio は最大で 30 日間無料で評価できます。 IDE にサインインすると、評価期間を 90 日間延長できます。 Visual Studio の使用を続けるには、次の方法で IDE のロックを解除します。
 
-1.  オンライン サブスクリプションを使用する。
+1. オンライン サブスクリプションを使用する。
 
-2.  プロダクト キーを入力する。
+2. プロダクト キーを入力する。
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>オンライン サブスクリプションを使用して Visual Studio のロックを解除するには
  Microsoft アカウントか、職場または学校のアカウントに関連付けられた MSDN または Visual Studio Online サブスクリプションを使用して Visual Studio のロックを解除するには、次の手順を実行します。
 
-1.  IDE の右上隅にある [サインイン] ボタンをクリックします (または、[ファイル] > [アカウントの設定] を選択して [アカウント設定] ダイアログを開き、[サインイン] ボタンをクリックします)。
+1. IDE の右上隅にある [サインイン] ボタンをクリックします (または、[ファイル] > [アカウントの設定] を選択して [アカウント設定] ダイアログを開き、[サインイン] ボタンをクリックします)。
 
-2.  Microsoft アカウントか、職場または学校のアカウントの資格情報を入力します。 Visual Studio は、アカウントに関連付けられている MSDN サブスクリプションまたは Visual Studio Team Services サブスクリプションを検索します。
+2. Microsoft アカウントか、職場または学校のアカウントの資格情報を入力します。 Visual Studio は、アカウントに関連付けられている MSDN サブスクリプションまたは Visual Studio Team Services サブスクリプションを検索します。
 
 > [!IMPORTANT]
 >  チーム エクスプローラーのツール ウィンドウから Visual Studio Team Services アカウントに接続すると、Visual Studio は関連付けられているオンライン サブスクリプションを自動的に検索します。 Visual Studio Team Services アカウントに接続した場合は、Microsoft アカウントか、職場または学校アカウントの両方を使用してサインインできます。 そのユーザー アカウントのオンライン サブスクリプションが存在する場合は、Visual Studio は自動的に IDE のロックを解除します。
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>プロダクト キーを使って Visual Studio のロックを解除するには
 
-1.  **[ファイル] > [アカウントの設定]** を選んで [アカウント設定] ダイアログを開き、**[プロダクト キーを使用してライセンスを取得します]** リンクをクリックします。
+1. **[ファイル] > [アカウントの設定]** を選んで [アカウント設定] ダイアログを開き、**[プロダクト キーを使用してライセンスを取得します]** リンクをクリックします。
 
-2.  所定の場所にプロダクト キーを入力します。
+2. 所定の場所にプロダクト キーを入力します。
 
 > [!TIP]
 >  Visual Studio のプレリリース版には、プロダクト キーはありません。 プレリリース版を使用するには、IDE にサインインする必要があります。
@@ -68,9 +68,9 @@ Visual Studio は最大で 30 日間無料で評価できます。 IDE にサイ
 ### <a name="updating-expired-licenses"></a>有効期限が切れたライセンスの更新
  サブスクリプションの有効期限が完全に切れ、Visual Studio へのアクセス権がなくなった場合は、次の操作をする必要があります。
 
-1.  サブスクリプションを更新します。 使用中のライセンスの詳細については、[ファイル] > [アカウントの設定] ダイアログで右側にあるライセンス情報を参照してください。
+1. サブスクリプションを更新します。 使用中のライセンスの詳細については、[ファイル] > [アカウントの設定] ダイアログで右側にあるライセンス情報を参照してください。
 
-2.  別のアカウントに関連付けられている別のサブスクリプションを持っている場合は、[ファイル] > [アカウントの設定] ダイアログの左側にある [すべてのアカウント] 一覧にそのアカウントを追加するために、[アカウントの追加...] リンクをクリックしてください。
+2. 別のアカウントに関連付けられている別のサブスクリプションを持っている場合は、[ファイル] > [アカウントの設定] ダイアログの左側にある [すべてのアカウント] 一覧にそのアカウントを追加するために、[アカウントの追加...] リンクをクリックしてください。
 
 ## <a name="see-also"></a>関連項目
  [Visual Studio へのサインイン](../ide/signing-in-to-visual-studio.md)
