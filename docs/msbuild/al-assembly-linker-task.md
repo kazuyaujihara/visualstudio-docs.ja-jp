@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e863b8a35d8ef0d5ced0a200d1033b3768df690
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 39340e268d41207e9b054866ecebe613f7836347
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951286"
 ---
 # <a name="al-assembly-linker-task"></a>AL (アセンブリ リンカー) タスク
 AL タスクは、[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] と共に配布されるツールである *AL.exe* をラップします。 アセンブリ リンカー ツールは、モジュールまたはリソース ファイルである 1 つ以上のファイルから、マニフェストを含むアセンブリを作成するために使われます。 これらの機能はコンパイラおよび開発環境で既に提供されていることがあるので、ほとんどの場合、このタスクを直接使う必要はありません。 アセンブリ リンカーは、混合言語の開発から生成されるものなど、複数のコンポーネント ファイルから 1 つのアセンブリを作成する必要がある開発者に適しています。 このタスクでは、複数のモジュールが 1 つのアセンブリ ファイルに結合されることはありません。生成されたアセンブリを正しく読み込むためには、やはり個々のモジュールを配布して使用できるようにする必要があります。 *AL.exe* について詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」をご覧ください。
 
 ## <a name="parameters"></a>パラメーター
  `AL` タスクのパラメーターの説明を次の表に示します。
-
 
 | パラメーター | 説明 |
 |---------------------| - |

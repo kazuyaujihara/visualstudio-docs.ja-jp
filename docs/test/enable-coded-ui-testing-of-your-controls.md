@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c1a2d2a60b6875cf4257c0b5bfb3e09c27865c17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6f4ec35c79bd71351d830428cce39b41b7308cf7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783611"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>コントロールのコード化された UI テストを有効化する
 
@@ -37,7 +37,7 @@ ms.locfileid: "55943390"
 
  ![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
 
-1.  <xref:System.Windows.Forms.Control.ControlAccessibleObject> から派生するクラスを実装し、クラスのオブジェクトを返すように <xref:System.Windows.Forms.Control.AccessibilityObject%2A> プロパティをオーバーライドします。
+1. <xref:System.Windows.Forms.Control.ControlAccessibleObject> から派生するクラスを実装し、クラスのオブジェクトを返すように <xref:System.Windows.Forms.Control.AccessibilityObject%2A> プロパティをオーバーライドします。
 
     ```csharp
     public partial class ChartControl : UserControl
@@ -62,11 +62,11 @@ ms.locfileid: "55943390"
     }
     ```
 
-2.  アクセス可能なオブジェクトの <xref:System.Windows.Forms.AccessibleObject.Role%2A>、<xref:System.Windows.Forms.AccessibleObject.State%2A>、<xref:System.Windows.Forms.AccessibleObject.GetChild%2A>、および <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> プロパティおよびメソッドをオーバーライドします。
+2. アクセス可能なオブジェクトの <xref:System.Windows.Forms.AccessibleObject.Role%2A>、<xref:System.Windows.Forms.AccessibleObject.State%2A>、<xref:System.Windows.Forms.AccessibleObject.GetChild%2A>、および <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> プロパティおよびメソッドをオーバーライドします。
 
-3.  子コントロールの別のアクセシビリティ オブジェクトを実装し、アクセシビリティオブジェクトを返すように子コントロールの <xref:System.Windows.Forms.Control.AccessibilityObject%2A> プロパティをオーバーライドします。
+3. 子コントロールの別のアクセシビリティ オブジェクトを実装し、アクセシビリティオブジェクトを返すように子コントロールの <xref:System.Windows.Forms.Control.AccessibilityObject%2A> プロパティをオーバーライドします。
 
-4.  子コントロールのアクセシビリティ オブジェクトの <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>、<xref:System.Windows.Forms.AccessibleObject.Name%2A>、<xref:System.Windows.Forms.AccessibleObject.Parent%2A>、<xref:System.Windows.Forms.AccessibleObject.Role%2A>、<xref:System.Windows.Forms.AccessibleObject.State%2A>、<xref:System.Windows.Forms.AccessibleObject.Navigate%2A>、および <xref:System.Windows.Forms.AccessibleObject.Select%2A> プロパティおよびメソッドをオーバーライドします。
+4. 子コントロールのアクセシビリティ オブジェクトの <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>、<xref:System.Windows.Forms.AccessibleObject.Name%2A>、<xref:System.Windows.Forms.AccessibleObject.Parent%2A>、<xref:System.Windows.Forms.AccessibleObject.Role%2A>、<xref:System.Windows.Forms.AccessibleObject.State%2A>、<xref:System.Windows.Forms.AccessibleObject.Navigate%2A>、および <xref:System.Windows.Forms.AccessibleObject.Select%2A> プロパティおよびメソッドをオーバーライドします。
 
 > [!NOTE]
 > このトピックでは、<xref:System.Windows.Forms.AccessibleObject> でアクセシビリティのサンプルから始め、残りのプロシージャでそのサンプルに基づいて構築します。 ユーザー補助サンプルの作業バージョンを作成する場合は、コンソール アプリケーションを作成し、*Program.cs* のコードをサンプル コードで置き換えます。 アクセシビリティ、System.Drawing、System.Windows.Forms に参照を追加します。 ビルド警告を除去するために、アクセシビリティの **[相互運用機能型の埋め込み]** を **False** に変更します。 アプリケーションの実行時にコンソール ウィンドウが表示されないように、プロジェクトの出力の種類を **[コンソール アプリケーション]** から **[Windows アプリケーション]** に変更できます。
@@ -182,19 +182,19 @@ ms.locfileid: "55943390"
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>プロパティ プロバイダーまたは操作フィルターをデバッグするには
 
-1.  拡張パッケージのデバッグ バージョンをビルドし、*.dll* ファイルと *.pdb* ファイルを *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages* にコピーします。
+1. 拡張パッケージのデバッグ バージョンをビルドし、*.dll* ファイルと *.pdb* ファイルを *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages* にコピーします。
 
-2.  アプリケーションを実行します (デバッガーの外部で)。
+2. アプリケーションを実行します (デバッガーの外部で)。
 
-3.  コード化された UI テスト ビルダーを実行します。
+3. コード化された UI テスト ビルダーを実行します。
 
      `codedUITestBuilder.exe  /standalone`
 
-4.  codedUITestBuilder プロセスにデバッガーをアタッチします。
+4. codedUITestBuilder プロセスにデバッガーをアタッチします。
 
-5.  コード内にブレークポイントを設定します。
+5. コード内にブレークポイントを設定します。
 
-6.  コード化された UI テスト ビルダーで、プロパティ プロバイダーを実行するためのアサートを作成し、操作フィルターを実行するための操作を記録します。
+6. コード化された UI テスト ビルダーで、プロパティ プロバイダーを実行するためのアサートを作成し、操作フィルターを実行するための操作を記録します。
 
 ## <a name="see-also"></a>関連項目
 

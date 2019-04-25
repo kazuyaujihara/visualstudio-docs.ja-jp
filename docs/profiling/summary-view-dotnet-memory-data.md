@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b11815a709cf91d4e29c8f04dfc2dd9e1fadb75e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423999"
 ---
 # <a name="summary-view---net-memory-data"></a>概要ビュー - .NET メモリ データ
 概要ビューには、最も多くのメモリを割り当てた .NET 関数と型、およびプロファイリング実行で作成回数が最も多い型に関する情報が一覧表示されます。 通知リンクとレポート リストの説明など詳細については、「[概要ビュー](../profiling/summary-view.md)」をご覧ください。

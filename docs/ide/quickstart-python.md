@@ -10,18 +10,28 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 05551799a0f97178c5a52d7468f6c6abb505e4c3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: f81ca0d5c41f08174adfc891055939414e1bfe6f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953960"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>クイック スタート: Visual Studio を使用して初めての Python Web アプリを作成する
 
 Python IDE としての Visual Studio を紹介する、この 5 ～ 10 分のクイック スタートでは、Flask フレームワークに基づいて Python Web アプリを作成します。 別個の部分からなる手順を通してプロジェクトを作成することが、Visual Studio の基本機能の学習に役立ちます。
 
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)に移動し、無料試用版をインストールしてください。 インストーラーでは、必ず **[Python 開発]** ワークロードを選択します。
+::: moniker range="vs-2017"
+
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ページに移動し、無料試用版をインストールしてください。 インストーラーでは、必ず **[Python 開発]** ワークロードを選択します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。 インストーラーでは、必ず **[Python 開発]** ワークロードを選択します。
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>プロジェクトの作成
 
@@ -193,7 +203,7 @@ Python の Web アプリは、ほぼ常に、Web 要求のルーティングや�
 Visual Studio から初めての Python アプリを実行できました。おめでとうございます。Python IDE として Visual Studio を使用することについて少しばかり学習しました。
 
 > [!div class="nextstepaction"]
-> [Azure App Service にアプリを配置する](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
+> [Azure App Service へのアプリの展開](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
 このクイック スタートで実行した手順はかなり汎用的です。これは自動化できるし、自動化すべきであると思ったことでしょう。 そのような自動化は、Visual Studio プロジェクト テンプレートの役目です。 デモについては、「[クイック スタート - テンプレートを使用して Python プロジェクトを作成する](../python/quickstart-02-python-in-visual-studio-project-from-template.md)」をご覧ください。このデモでは、この記事で作成したものと似た Web アプリが作成されます。ただし、手順は少なくなっています。
 

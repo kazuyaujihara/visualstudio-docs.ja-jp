@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d0946efb15758c76c078ff234717af6fd1fac15c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792573"
 ---
 # <a name="add-existing-project-command"></a>AddExistingProject コマンド
 既存のプロジェクトを現在のソリューションに追加します。
@@ -36,7 +36,7 @@ File.AddExistingProject filename
 
  ファイル名が指定されていない場合、ファイルを開くダイアログ ボックスが表示され、ユーザーがプロジェクトを選択できます。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
  オート コンプリートでは、入力された正しいパスとファイル名の検索を試みます。
 
 ## <a name="example"></a>例

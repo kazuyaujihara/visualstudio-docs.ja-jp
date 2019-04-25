@@ -11,12 +11,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be34e52df0442e071e666da5e66eb31f041d2941
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3ca2a69fc0f5777c34857f6f3da0c7faabcd81ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990550"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>ロード テストにおけるテスト コントローラーとテスト エージェントのトラブルシューティングの方法
 
@@ -24,7 +24,7 @@ ms.locfileid: "55922174"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-##  <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>テスト エージェント コンピューターのパフォーマンス カウンターの値を収集できない
+## <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>テスト エージェント コンピューターのパフォーマンス カウンターの値を収集できない
 
 ロード テストを実行するときに、テスト エージェント コンピューターに接続してパフォーマンス カウンターのデータを取得しようとすると、エラーが表示されることがあります。 パフォーマンス カウンターのデータをリモート コンピューターに提供するサービスは、リモート レジストリ サービスです。 一部のオペレーティング システムでは、リモート レジストリ サービスが自動的に起動しません。 この問題を解消するには、リモート レジストリ サービスを手動で開始します。
 
@@ -39,11 +39,11 @@ ms.locfileid: "55922174"
 
 ### <a name="to-set-the-logging-level-on-a-test-controller-computer"></a>テスト コントローラー コンピューターのログ レベルを設定するには
 
-1.  テスト コントローラー サービスを停止します。 コマンド プロンプトで、「`net stop vsttcontroller`」と入力します。
+1. テスト コントローラー サービスを停止します。 コマンド プロンプトで、「`net stop vsttcontroller`」と入力します。
 
-2.  *QTController.exe.config* というファイルを開きます。このファイルは、コントローラーのインストール ディレクトリに含まれています。
+2. *QTController.exe.config* というファイルを開きます。このファイルは、コントローラーのインストール ディレクトリに含まれています。
 
-3.  このファイルの system diagnostics セクションの `EqtTraceLevel` スイッチのエントリを編集します。 コードは次のようになります。
+3. このファイルの system diagnostics セクションの `EqtTraceLevel` スイッチのエントリを編集します。 コードは次のようになります。
 
     ```xml
     <system.diagnostics>
@@ -64,23 +64,23 @@ ms.locfileid: "55922174"
     </system.diagnostics>
     ```
 
-4.  ファイルを保存します。
+4. ファイルを保存します。
 
-5.  コントローラー サービスを開始します。 コマンド プロンプトで、「`net start vsttcontroller`」と入力します。
+5. コントローラー サービスを開始します。 コマンド プロンプトで、「`net start vsttcontroller`」と入力します。
 
 これは、テスト コントローラー、テスト エージェント サービス、およびテスト エージェントの各プロセスに当てはまります。 問題を診断する場合は、この 3 つのプロセスすべてのログを有効にすることが役立ちます。 ログ レベルの設定手順は、3 つのプロセスすべてにおいて、前に示したテスト コントローラーの場合と同じです。 テスト エージェント サービスとエージェント プロセスのログ レベルを設定するには、次の構成ファイルを使用します。
 
--   *QTController.exe.config*: コントローラー サービス
+- *QTController.exe.config*: コントローラー サービス
 
--   *QTAgentService.exe.config*: エージェント サービス
+- *QTAgentService.exe.config*: エージェント サービス
 
--   *QTDCAgent(32).exe.config*: 32 ビット アーキテクチャ用のエージェント データ アダプター プロセス
+- *QTDCAgent(32).exe.config*: 32 ビット アーキテクチャ用のエージェント データ アダプター プロセス
 
--   *QTDCAgent(64).exe.config*: 64 ビット アーキテクチャ用のエージェント データ アダプター プロセス
+- *QTDCAgent(64).exe.config*: 64 ビット アーキテクチャ用のエージェント データ アダプター プロセス
 
--   *QTAgent(32).exe.config* 32 ビット アーキテクチャ用のエージェント テスト プロセス
+- *QTAgent(32).exe.config* 32 ビット アーキテクチャ用のエージェント テスト プロセス
 
--   *QTAgent(64).exe.config* 64 ビット アーキテクチャ用のエージェント テスト プロセス
+- *QTAgent(64).exe.config* 64 ビット アーキテクチャ用のエージェント テスト プロセス
 
 ## <a name="bind-a-test-controller-to-a-network-adapter"></a>テスト コントローラーをネットワーク アダプターにバインドする
 
@@ -97,25 +97,25 @@ ms.locfileid: "55922174"
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>ネットワーク アダプターの IP アドレスを取得するには
 
-1.  **[スタート]** を選択し、**[ファイル名を指定して実行]** を選択します。
+1. **[スタート]** を選択し、**[ファイル名を指定して実行]** を選択します。
 
      **[実行]** ダイアログ ボックスが表示されます。
 
-2.  「`cmd`」と入力し、**[OK]** をクリックします。
+2. 「`cmd`」と入力し、**[OK]** をクリックします。
 
      コマンド プロンプトが開きます。
 
-3.  「`ipconfig /all`」と入力します。
+3. 「`ipconfig /all`」と入力します。
 
      ネットワーク アダプターの IP アドレスが表示されます。 コントローラーをバインドするネットワーク アダプターの IP アドレスを控えておきます。
 
 ### <a name="to-bind-a-test-controller-to-a-network-adapter"></a>テスト コントローラーをネットワーク アダプターにバインドするには
 
-1.  テスト コントローラー サービスを停止します。 コマンド プロンプトで、「`net stop vsttcontroller`」と入力します。
+1. テスト コントローラー サービスを停止します。 コマンド プロンプトで、「`net stop vsttcontroller`」と入力します。
 
-2.  *QTController.exe.config* というファイルを開きます。ファイルは、*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* にあります。
+2. *QTController.exe.config* というファイルを開きます。ファイルは、*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE* にあります。
 
-3.  `BindTo` プロパティのエントリをアプリケーション設定に追加します。 コントローラーにバインドするネットワーク アダプターの IP アドレスを指定します。 コードは次のようになります。
+3. `BindTo` プロパティのエントリをアプリケーション設定に追加します。 コントローラーにバインドするネットワーク アダプターの IP アドレスを指定します。 コードは次のようになります。
 
     ```xml
     <appSettings>
@@ -129,13 +129,13 @@ ms.locfileid: "55922174"
     </appSettings>
     ```
 
-4.  ファイルを保存します。
+4. ファイルを保存します。
 
-5.  テスト コントローラー サービスを開始します。 コマンド プロンプトで、「`net start vsttcontroller`」と入力します。
+5. テスト コントローラー サービスを開始します。 コマンド プロンプトで、「`net start vsttcontroller`」と入力します。
 
 ### <a name="to-connect-a-test-agent-to-a-bound-controller"></a>バインドされたコントローラーにテスト エージェントを接続するには
 
--   テスト エージェントのインストールを再実行します。 ここで、テスト コントローラー名ではなく、テスト コントローラーの IP アドレスを指定します。
+- テスト エージェントのインストールを再実行します。 ここで、テスト コントローラー名ではなく、テスト コントローラーの IP アドレスを指定します。
 
 これは、テスト コントローラー、テスト エージェント サービス、およびテスト エージェントの各プロセスに当てはまります。 ネットワーク アダプターが複数あるコンピューターで実行する各プロセスについて、`BindTo` プロパティを設定する必要があります。 `BindTo` プロパティの設定手順は、3 つのプロセスすべてにおいて、前に示したテスト コントローラーの場合と同じです。 テスト エージェント サービスとテスト エージェント プロセスのログ レベルを設定するには、「[テスト コントローラー コンピューターのログ レベルの設定](#set-the-logging-level-on-a-test-controller-computer)」で示した構成ファイルを使用します。
 

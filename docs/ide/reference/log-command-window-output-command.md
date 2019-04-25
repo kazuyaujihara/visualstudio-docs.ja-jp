@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588c5e39f8b6b6a89de1636bd45036b21d392d33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24c72b0c5aeb510186728d66e51935c337547adf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946844"
 ---
 # <a name="log-command-window-output-command"></a>LogCommandWindowOutput コマンド
 **[コマンド]** ウィンドウの入出力をすべてファイルにコピーします。
@@ -37,7 +37,6 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 > [!TIP]
 > ログ ファイルの保存先を変更するには、ファイルの完全パスを入力します。パスに空白が含まれる場合は、パスを引用符で囲みます。
 
-
 ## <a name="switches"></a>スイッチ
  /on
 
@@ -51,7 +50,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 
  任意。 `filename` 引数に指定したファイル名が既存のファイルと同じ場合は、既存のファイルが上書きされます。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
  ファイルを指定しない場合、既定では、ファイル cmdline.log が作成されます。 既定では、このコマンドのエイリアスは Log です。
 
 ## <a name="examples"></a>使用例

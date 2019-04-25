@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21851bc26ec69207c95a41e988b20b5df3c70c39
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: d09ad8644c30be76c38cf4b819d09ee1c470cb39
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793440"
 ---
 # <a name="create-applications-in-bidirectional-languages"></a>双方向言語のアプリケーションの作成
 
@@ -28,11 +28,11 @@ Visual Studio では、アラビア語やヘブライ語など、右から左に
 
 ## <a name="types-of-applications-that-support-bidirectional-languages"></a>双方向言語をサポートするアプリケーションの種類
 
--  Windows アプリ
+- Windows アプリ
 
    双方向テキスト、右から左への読み取り順序、およびミラー化 (ウィンドウ、メニュー、ダイアログ ボックスなどのレイアウトの反転) をサポートする、完全な双方向アプリケーションを作成できます。 ミラー化を除き、これらの機能は、既定またはプロパティ設定により使用できるようになっています。 ミラー化は、メッセージ ボックスなどいくつかの機能に対してはあらかじめサポートされています。 ただし、それ以外の場合には、ミラー化をコードで実装する必要があります。 詳細については、「[Windows フォーム アプリケーションの双方向サポート](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)」をご覧ください。
 
--  Web アプリ
+- Web アプリ
 
    Web サービスは UTF-8 および Unicode のテキストの送受信をサポートしているため、双方向言語を使用するアプリケーションに適しています。 Web クライアント アプリケーションのユーザー インターフェイスはブラウザーに依存しているため、Web アプリケーションでの双方向サポートの内容は、ユーザーのブラウザーが双方向機能をどの程度サポートしているかによって異なります。 Visual Studio では、アラビア語またはヘブライ語のテキスト、右から左への読み取り順序、ファイルのエンコーディング、およびローカル カルチャ設定をサポートするアプリケーションを作成できます。 詳しくは、「[ASP.NET Web アプリケーションに対する双方向サポート](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)」をご覧ください。
 

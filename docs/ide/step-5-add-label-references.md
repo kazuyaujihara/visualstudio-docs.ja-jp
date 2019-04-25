@@ -8,19 +8,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9d6e2786b2d917348818134c9e1cbe2767f7fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dc94660debb3d4668fb5d9d50e68466fe7631e5d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968932"
 ---
 # <a name="step-5-add-label-references"></a>手順 5: ラベルの参照の追加
 プログラムでは、プレーヤーがどのラベル コントロールをクリックしたかを追跡する必要があります。 現在のところ、プレーヤーが選択したすべてのラベルが表示されます。 しかし、次のように変更します。 1 つ目のラベルがクリックされると、プログラムではラベルのアイコンを表示します。 2 つ目のラベルがクリックされると、一時的に両方のアイコンを表示した後に、再びアイコンを非表示にします。 *参照変数*を使用して、1 回目および 2 回目にどのラベル コントロールがクリックされたかを追跡します。
 
 ## <a name="to-add-label-references"></a>ラベルの参照を追加するには
 
-1.  次のコードを使用して、フォームにラベルの参照を追加します。
+1. 次のコードを使用して、フォームにラベルの参照を追加します。
 
      [!code-vb[VbExpressTutorial4Step5#5](../ide/codesnippet/VisualBasic/step-5-add-label-references_1.vb)]
      [!code-csharp[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]
@@ -29,14 +29,14 @@ ms.locfileid: "55934342"
 
      変数は、オブジェクトを追跡していない間は、特殊な予約値 `null` (Visual C# の場合) および `Nothing` (Visual Basic の場合) に設定されます。 そのため、プログラムが起動されると、`firstClicked` および `secondClicked` の両方が `null` または `Nothing` に設定されます。これは、変数が何も追跡していないことを意味しています。
 
-2.  新しい `firstClicked` 参照変数を使用するように <xref:System.Windows.Forms.Control.Click> イベント ハンドラーを変更します。 `label_Click()` イベント ハンドラー メソッドの最後のステートメント (`clickedLabel.ForeColor = Color.Black;`) を削除し、次に示す `if` ステートメントに置き換えます  (必ずコメントと `if` ステートメント全体を含めてください)。
+2. 新しい `firstClicked` 参照変数を使用するように <xref:System.Windows.Forms.Control.Click> イベント ハンドラーを変更します。 `label_Click()` イベント ハンドラー メソッドの最後のステートメント (`clickedLabel.ForeColor = Color.Black;`) を削除し、次に示す `if` ステートメントに置き換えます  (必ずコメントと `if` ステートメント全体を含めてください)。
 
      [!code-vb[VbExpressTutorial4Step5#6](../ide/codesnippet/VisualBasic/step-5-add-label-references_2.vb)]
      [!code-csharp[VbExpressTutorial4Step5#6](../ide/codesnippet/CSharp/step-5-add-label-references_2.cs)]
 
-3.  プログラムを保存し、実行します。 いずれかのラベル コントロールをクリックすると、そのアイコンが表示されます。
+3. プログラムを保存し、実行します。 いずれかのラベル コントロールをクリックすると、そのアイコンが表示されます。
 
-4.  次のラベル コントロールをクリックすると、何も起こらないことに気付きます。 プログラムでは、プレーヤーがクリックした 1 つ目のラベルが既に追跡されているため、`firstClicked` は `null` (Visual C# の場合) または `Nothing` (Visual Basic の場合) ではありません。 `if` ステートメントは、`firstClicked` が `null` または `Nothing` かどうかをチェックし、そうでないことがわかった場合は、`if` ステートメント内のステートメントを実行しません。 そのため、次の図に示すように、クリックされた 1 つ目のアイコンのみが黒になり、他のアイコンは非表示になります。
+4. 次のラベル コントロールをクリックすると、何も起こらないことに気付きます。 プログラムでは、プレーヤーがクリックした 1 つ目のラベルが既に追跡されているため、`firstClicked` は `null` (Visual C# の場合) または `Nothing` (Visual Basic の場合) ではありません。 `if` ステートメントは、`firstClicked` が `null` または `Nothing` かどうかをチェックし、そうでないことがわかった場合は、`if` ステートメント内のステートメントを実行しません。 そのため、次の図に示すように、クリックされた 1 つ目のアイコンのみが黒になり、他のアイコンは非表示になります。
 
      ![1 つのアイコンが表示された [マッチング ゲーム]](../ide/media/express_tut4step5.png)
 1 つのアイコンが表示された **[マッチング ゲーム]**
@@ -45,6 +45,6 @@ ms.locfileid: "55934342"
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
--   チュートリアルの次の手順に進むには、「[手順 6:タイマーの追加](../ide/step-6-add-a-timer.md)」を参照してください。
+- チュートリアルの次の手順に進むには、「[手順 6:タイマーの追加](../ide/step-6-add-a-timer.md)」を参照してください。
 
--   チュートリアルの前の手順に戻るには、「[手順 4:各ラベルへの Click イベント ハンドラーの追加](../ide/step-4-add-a-click-event-handler-to-each-label.md)」をご覧ください。
+- チュートリアルの前の手順に戻るには、「[手順 4:各ラベルへの Click イベント ハンドラーの追加](../ide/step-4-add-a-click-event-handler-to-each-label.md)」をご覧ください。

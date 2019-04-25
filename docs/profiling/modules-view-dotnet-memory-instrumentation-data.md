@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: cb3117ff480e124aab6333eaed612c0438ed3911
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830047"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>モジュール ビュー - .NET メモリ インストルメンテーション データ
 インストルメンテーション メソッドで収集された .NET メモリの割り当てデータの モジュール ビューは、メモリとタイミング データをプロファイリング実行中に実行されたモジュールごとにグループ化します。 モジュールの関数のプロファイル データが、モジュール ノードの下に一覧表示されます。

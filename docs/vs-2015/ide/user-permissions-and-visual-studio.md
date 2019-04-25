@@ -1,5 +1,5 @@
 ---
-title: ユーザーのアクセス許可 |Microsoft Docs
+title: ユーザーのアクセス許可 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d37e20154b3471e26f170c8437369493764935fc
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e30fd7500c0f9dd216b630ea79ebfb79c964fab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775873"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101887"
 ---
 # <a name="user-permissions-and-visual-studio"></a>ユーザー アクセス許可と Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,19 +56,19 @@ ms.locfileid: "54775873"
 
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblueserver2includeswinblue-server-2-mdmd"></a>[!INCLUDE[win8](../includes/win8-md.md)]、[!INCLUDE[win81](../includes/win81-md.md)]、[!INCLUDE[winserver8](../includes/winserver8-md.md)]、または [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)] で管理アクセス許可を使用して Visual Studio を実行するには
 
-1.  **[スタート]** 画面で、「**Visual Studio**」と入力します。 インストールされている Visual Studio のバージョンが表示されます。
+1. **[スタート]** 画面で、「**Visual Studio**」と入力します。 インストールされている Visual Studio のバージョンが表示されます。
 
-2.  起動する Visual Studio のバージョンを選択し、ショートカット メニューを表示します (画面の下部に表示されます)。 **[管理者として実行]** を選択します。
+2. 起動する Visual Studio のバージョンを選択し、ショートカット メニューを表示します (画面の下部に表示されます)。 **[管理者として実行]** を選択します。
 
      Visual Studio の起動時には、**[(管理者)]** がタイトル バーの製品名の後に表示されます。
 
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08r2includeswinsvr08-r2-mdmd"></a>または [!INCLUDE[win7](../includes/win7-md.md)] で管理アクセス許可を使用して Visual Studio を実行するには[!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
 
-1.  **[スタート]** メニューをクリックし、**[すべてのプログラム]** をクリックします。
+1. **[スタート]** メニューをクリックし、**[すべてのプログラム]** をクリックします。
 
-2.  **[Microsoft Visual Studio** *Version]* フォルダーで、**[Visual Studio** *Version]* をクリックし、ショートカット メニューを開き、**[管理者として実行]** をクリックします。
+2. **[Microsoft Visual Studio** *Version]* フォルダーで、**[Visual Studio** *Version]* をクリックし、ショートカット メニューを開き、**[管理者として実行]** をクリックします。
 
      Visual Studio の起動時には、**[(管理者)]** がタイトル バーの製品名の後に表示されます。
 
 ## <a name="see-also"></a>関連項目
- [移植、移行、および Visual Studio プロジェクトのアップグレード](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Visual Studio 2015 をインストールします。](../install/install-visual-studio-2015.md)
+ [Visual Studio プロジェクトの移植、移行、およびアップグレード](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Visual Studio 2015 のインストール](../install/install-visual-studio-2015.md)

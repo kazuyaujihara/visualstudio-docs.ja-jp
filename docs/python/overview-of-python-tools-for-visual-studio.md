@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2c6e17b0556b324e0dde6fe188b9d21efb542778
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 8bcc0be91892494a81dd42f141da9c77329767cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785237"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows 上の Visual Studio での Python の使用
 
@@ -98,7 +98,7 @@ Visual Studio は、時間と共に複雑になるプロジェクトを管理す
 
 プロジェクト テンプレートと項目テンプレートで、さまざまな種類のプロジェクトやファイルの設定プロセスを自動化すると、貴重な時間を節約し、複雑でエラーが発生しやすい詳細情報の管理作業を軽減できます。 Visual Studio には、Web、Azure、データ サイエンス、コンソールなどの種類のプロジェクト用のテンプレートだけでなく、Python クラス、単体テスト、Azure の Web 構成、HTML、さらには Django アプリなどのファイル用のテンプレートも用意されています。
 
-[![PVisual Studio の Python プロジェクト テンプレートと項目テンプレート(media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
+[![Visual Studio の Python プロジェクト テンプレートと項目テンプレート](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 詳細情報
 
@@ -130,7 +130,7 @@ Visual Studio 2019 では、Visual Studio のプロジェクト ファイルが�
 
 プロファイリングでは、アプリケーション内で時間がどのように使用されているかを調べます。 Visual Studio は、CPython ベースのインタープリターを使用したプロファイリングをサポートし、複数のプロファイリング処理のパフォーマンスを比較する機能を備えています。
 
-[![VVisual Studio プロファイラーの Python プロジェクトの結果(media/profiling-results.png)](media/profiling-results.png#lightbox)
+[![Visual Studio プロファイラーの Python プロジェクトの結果](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 詳細情報
 
@@ -156,15 +156,15 @@ Python ワークロードに含まれる Azure SDK for Python を使うと、Win
 
 ## <a name="questions-and-answers"></a>質問と回答
 
-**Q. Visual Studio for Mac では Python のサポートを利用できますか?**
+**Q.Visual Studio for Mac では Python のサポートを利用できますか?**
 
 A:  まだ実装されていませんが、[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html)で要望に投票することができます。 [Visual Studio for Mac](/visualstudio/mac/) のドキュメントでは、現在サポートされている開発の種類が示されています。 当面の間、Windows、Mac、Linux での Visual Studio Code は、[利用可能な拡張機能によって Python で問題なく動作します](https://code.visualstudio.com/docs/languages/python)。
 
-**Q. Python で UI を構築するには何を使用できますか?**
+**Q.Python で UI を構築するには何を使用できますか?**
 
 A:  この分野の主なツールとして [Qt Project](https://www.qt.io/qt-for-application-development/) があり、[PySide (公式バインディング)](https://wiki.qt.io/PySide) ([PySide のダウンロード ページ](https://download.qt.io/official_releases/pyside/.)もご覧ください) や [PyQt](https://wiki.python.org/moin/PyQt) という Python のバインディングもあります。 現在のところ、Visual Studio の Python のサポートには、UI 開発用のツールは含まれていません。
 
-**Q. Python プロジェクトでスタンドアロンの実行可能ファイルを作成できますか?**
+**Q.Python プロジェクトでスタンドアロンの実行可能ファイルを作成できますか?**
 
 A:  一般的に、Python はインタープリター言語であり、Visual Studio や Web サーバーなど、適切な Python 対応環境で、オンデマンドでコードが実行されます。 現在のところ、Python のスタンドアロンの実行可能ファイル (実質的には Python インタープリターが埋め込まれたプログラム) を作成する機能は Visual Studio にありません。 ただし、[StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)で説明されているように、Python コミュニティでは、実行可能ファイルを作成するさまざまな方法が提供されています。 また、CPython はネイティブ アプリケーション内への埋め込みをサポートしています。詳細については、ブログの投稿「[Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)」(CPython の埋め込み可能な Zip ファイルの使用方法) をご覧ください。
 
@@ -199,7 +199,6 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 
 <br/>
 
-
 |         プロジェクト システム         |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ |      2012 Pro+       | 2010 SP1 Pro+ |
 |--------------------------------|----------|----------|-----------|--------------|----------|-----------|----------------------|---------------|
 | 既存のコードから新しいプロジェクトを作成 | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
@@ -208,7 +207,6 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 |        Git 統合         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;<sup>1</sup> |   &#10007;    |
 
 <br/>
-
 
 |           編集            |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -230,14 +228,12 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 
 <br/>
 
-
 |     対話型ウィンドウ     |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |----------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     対話型ウィンドウ     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | インライン グラフを含む IPython | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |               デスクトップ               |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -247,7 +243,6 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 
 <br/>
 
-
 |         Web         |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Django Web プロジェクト  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -256,7 +251,6 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 | 汎用 Web プロジェクト | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |         Azure          |   2017+   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       |      2012 Pro+       |    2010 SP1 Pro+     |
 |------------------------|----------|----------|-----------|--------------|----------------------|----------------------|----------------------|----------------------|
@@ -269,7 +263,6 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 
 <br/>
 
-
 |           Django テンプレート           |   2017+   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
 |--------------------------------------|----------|----------|-----------|--------------|----------------------|----------------------|-----------|---------------|
 |              デバッグ               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
@@ -277,7 +270,6 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 | CSS と JavaScript のオートコンプリート | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007;  |   &#10007;    |
 
 <br/>
-
 
 |                  デバッグ                  |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -292,13 +284,11 @@ Visual Studio 2015 およびそれ以前のバージョンは、[visualstudio.mi
 
 <a name="matrix-profiling"></a>
 
-
 | プロファイル |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-----------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | プロファイル | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |     テスト      |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|

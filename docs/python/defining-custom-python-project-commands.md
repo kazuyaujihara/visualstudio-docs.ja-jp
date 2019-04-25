@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957705"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Python プロジェクトのカスタム コマンドを定義する
 
@@ -379,7 +379,7 @@ Web プロジェクトの **[サーバーの起動]** および **[デバッグ 
 - 必須の `Target` 属性が空です。
 - 必須の `TargetType` 属性が空か、認識されない値を含みます。
 - 必須の `ExecuteIn` 属性が空か、認識されない値を含みます。
-- `ErrorRegex`  または `WarningRegex` が、`ExecuteIn="output"` を設定しないで指定されています。
+- `ErrorRegex` または `WarningRegex` が、`ExecuteIn="output"` を設定しないで指定されています。
 - 要素に認識されない属性が存在します。 たとえば、`Arguments` ではなく `Argumnets` (スペル ミス) を使っている可能性があります。
 
 定義されていないプロパティを参照する場合は、属性値を空にすることができます。 たとえば、トークン `$(StartupFile)` を使っていて、スタートアップ ファイルがプロジェクトで定義されていない場合、そのトークンは空の文字列に解決されます。 このような場合は、既定値を定義できます。 たとえば、Bottle、Flask、Django Project テンプレートで定義されている **[サーバーの起動]** および **[デバッグ サーバーの開始]** コマンドは、プロジェクトのプロパティでサーバーのスタートアップ ファイルに別の値が定義されていない場合、既定で *manage.py* になります。

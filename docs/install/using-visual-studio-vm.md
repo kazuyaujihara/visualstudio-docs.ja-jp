@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 41619e780d02f20fc21bd2b51cc0b0a3eede90fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951498"
 ---
 # <a id="top"> </a> Azure 上の Visual Studio イメージ
 
@@ -77,13 +77,13 @@ ms.locfileid: "58866719"
 
 Azure では、全サイズの仮想マシンを提供しています。 Visual Studio は高性能のマルチスレッド アプリケーションであるため、少なくとも 2 つのプロセッサと 7 GB のメモリを含む VM サイズが必要です。 Visual Studio イメージでは、次の VM サイズをお勧めします。
 
-   * Standard_D2_v3
-   * Standard_D2s_v3
-   * Standard_D4_v3
-   * Standard_D4s_v3
-   * Standard_D2_v2
-   * Standard_D2S_v2
-   * Standard_D3_v2
+* Standard_D2_v3
+* Standard_D2s_v3
+* Standard_D4_v3
+* Standard_D4s_v3
+* Standard_D2_v2
+* Standard_D2S_v2
+* Standard_D3_v2
 
 最新のマシンのサイズについては、「[Azure の Windows 仮想マシンのサイズ](/azure/virtual-machines/windows/sizes)」を参照してください。
 
@@ -121,5 +121,5 @@ Visual Studio は、Azure の "ライセンス持ち込み" モデルに従い�
 
 事前構成済みの Visual Studio イメージについて理解したので、次のステップは新しい VM の作成です。
 
-* [Azure portal で VM を作成する](/azure/virtual-machines/windows/quick-create-portal)
-* [Windows Virtual Machines の概要](/azure/virtual-machines/windows/overview)
+* [Azure Portal で VM を作成する](/azure/virtual-machines/windows/quick-create-portal)
+* [Windows の仮想マシンの概要](/azure/virtual-machines/windows/overview)

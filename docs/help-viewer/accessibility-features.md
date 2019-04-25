@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 808b3902747198697aa6a1147bd1c04c85dd96a6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951363"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Visual Studio ヘルプ ビューアーのユーザー補助機能
 Microsoft は、すべてのユーザーが簡単に使用できる製品とサービスの開発に取り組んでいます。 このトピックでは、広範な範囲の能力を持つユーザーが Microsoft ヘルプ ビューアーをさらに使いやすくするためのユーザー補助機能、製品、およびサービスについて説明します。
@@ -27,7 +27,7 @@ Microsoft は、すべてのユーザーが簡単に使用できる製品とサ�
 ## <a name="font-size"></a>Font Size
 トピックのテキストがドキュメント ウィンドウに表示されるときのフォント サイズを変更できます。 詳細については、「[ヘルプ ビューアーのカスタマイズ](../help-viewer/customize.md)」を参照してください。
 
-## <a name="window-size"></a>ウィンドウのサイズ
+## <a name="window-size"></a>ウィンドウ サイズ
 2 つのウィンドウ間の境界線をポイントすると、ナビゲーション ウィンドウまたはドキュメント ウィンドウの幅を変更できます。 カーソルが 2 方向矢印に変わったら、プライマリ マウス ボタンを使用して境界線を右または左にドラッグします。
 
 ## <a name="help-viewer-position"></a>ヘルプ ビューアーの位置

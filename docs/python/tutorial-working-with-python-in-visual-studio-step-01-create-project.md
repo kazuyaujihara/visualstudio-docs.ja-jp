@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430745"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>チュートリアル: Visual Studio での Python の使用
 
@@ -25,12 +25,12 @@ Python は、信頼性と柔軟性に優れ、簡単に学ぶことができ、�
 Visual Studio は、Python 言語の最上のサポートを提供しています。 このチュートリアルに従って操作すると、以下の作業を実行できます。
 
 - [手順 0:インストール](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
-- [手順 1: Python プロジェクトの作成 (この記事)](#step-1-create-a-new-python-project)
-- [手順 2: 動作中の Visual Studio IntelliSense を確認するためのコードの記述と実行](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
-- [手順 3: 対話型 REPL ウィンドウでの追加のコードの作成](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
-- [手順 4: 完成したプログラムの Visual Studio デバッガーでの実行](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
-- [手順 5: パッケージのインストールと、Python 環境の管理。](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
-- [手順 6: Git の操作](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
+- [手順 1:Python プロジェクトの作成 (この記事)](#step-1-create-a-new-python-project)
+- [手順 2:動作中の Visual Studio IntelliSense を確認するためのコードの記述と実行](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+- [手順 3:対話型 REPL ウィンドウでの追加のコードの作成](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+- [手順 4:完成したプログラムの Visual Studio デバッガーでの実行](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+- [手順 5:パッケージのインストールと、Python 環境の管理](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+- [手順 6:Git の操作](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
 [!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 

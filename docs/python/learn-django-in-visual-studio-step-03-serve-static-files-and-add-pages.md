@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958247"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>手順 3: 静的ファイルを提供し、ページを追加し、テンプレート継承を使用する
 
@@ -279,7 +279,7 @@ Django のテンプレート システムでは、複数のテンプレート間
 
 ## <a name="go-deeper"></a>詳しい説明
 
-- [Azure App Service への Web アプリのデプロイ](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Azure App Service への Web アプリの展開](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [最初の Django アプリの作成、パート 3 (ビュー)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - 制御フローなど Django テンプレートの詳細な機能について、「[The Django template language](https://docs.djangoproject.com/en/2.0/ref/templates/language/)」(Django テンプレート言語) (docs.djangoproject.com) を確認する
 - `{% url %}` タグの使用に関する完全な詳細について、Django テンプレート リファレンスの「[Built-in template tags and filters](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/)」(組み込みのテンプレート タグとフィルター) (docs.djangoproject.com) にある [URL](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) を確認する

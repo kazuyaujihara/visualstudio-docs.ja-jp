@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a7924a8a1239da61553c50dc7c7ba8cea547d2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792232"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>[ビルドの詳細設定] ダイアログ ボックス (Visual Basic)
 
@@ -25,13 +25,13 @@ ms.locfileid: "55918326"
 
 ## <a name="to-access-this-dialog-box"></a>このダイアログ ボックスを表示するには
 
-1.  **ソリューション エクスプローラー**で、**[ソリューション]** ノードではなくプロジェクト ノードを選びます。
+1. **ソリューション エクスプローラー**で、**[ソリューション]** ノードではなくプロジェクト ノードを選びます。
 
-2.  **[プロジェクト]** メニューの **[プロパティ]** をクリックします。 **プロジェクト デザイナー**が表示されたら、**[コンパイル]** タブをクリックします。
+2. **[プロジェクト]** メニューの **[プロパティ]** をクリックします。 **プロジェクト デザイナー**が表示されたら、**[コンパイル]** タブをクリックします。
 
-3.  [[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) で、**[構成]** と **[プラットフォーム]** を選択します。 簡易ビルド構成では、**[構成]** と **[プラットフォーム]** の一覧は表示されません。 詳細については、「[方法 :デバッグ構成とリリース構成を設定する](../../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。
+3. [[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) で、**[構成]** と **[プラットフォーム]** を選択します。 簡易ビルド構成では、**[構成]** と **[プラットフォーム]** の一覧は表示されません。 詳細については、「[方法 :デバッグ構成とリリース構成を設定する](../../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。
 
-4.  **[詳細コンパイル オプション]** をクリックします。
+4. **[詳細コンパイル オプション]** をクリックします。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

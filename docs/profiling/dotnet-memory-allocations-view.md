@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70845547da5f16aa0744f522448880605ec2ff9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7e6bead46c52ed2bc33572e0eacc6f3f0219e72e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970097"
 ---
 # <a name="net-memory-allocations-view"></a>.NET メモリの割り当てビュー
 割り当てビューには、プロファイリング実行中に作成された型が一覧表示されます。 それぞれの型が、型の割り当てが発生する原因となった関数の実行パスを表示するコール ツリーのルート ノードに該当します。
@@ -36,7 +36,7 @@ ms.locfileid: "56626805"
 ## <a name="highlight-the-execution-hot-path"></a>実行ホット パスの強調表示
  親型のほとんどのオブジェクトを作成したコール ツリーの実行パスを見つけることができます。
 
--   最もアクティブなパスを表示するには、型または関数を右クリックし、**[ホット パスの展開]** をクリックします。
+- 最もアクティブなパスを表示するには、型または関数を右クリックし、**[ホット パスの展開]** をクリックします。
 
 |Column|説明|
 |------------|-----------------|

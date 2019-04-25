@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d9d6f94a81eb97cb06820381ba09e13d4bdeb9d8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957192"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>手順 3: 静的ファイルを提供し、ページを追加し、テンプレート継承を使用する
 
@@ -285,7 +285,7 @@ Flask のテンプレート システム (既定では Jinja) では、複数の
 
 ## <a name="go-deeper"></a>詳しい説明
 
-- [Azure App Service への Web アプリのデプロイ](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Azure App Service への Web アプリの展開](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - 制御フローなど、Jinja テンプレートの他の機能については、[Jinja Template Designer のドキュメント](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org) をご覧ください
 - `url_for` の使用方法について詳しくは、Flask アプリケーション オブジェクトのドキュメント (flask.pocoo.org) で [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) をご覧ください
 - GitHub のチュートリアルのソース コード:[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

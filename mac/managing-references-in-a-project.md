@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.openlocfilehash: 54e07d3c170859405ef584b884547dad335788f3
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982806"
 ---
 # <a name="managing-references-in-a-project"></a>プロジェクト内の参照の管理
 
@@ -20,7 +20,7 @@ Visual Studio for Mac には、プロジェクトに参照を追加する方法�
 
 これらの数値は、次のとおりです。
 
-* 参照
+* 関連項目
 * NuGet (パッケージ フォルダーで追加)
 
 さらに、Web 参照とネイティブ参照は任意のプロジェクトに追加することもできます。

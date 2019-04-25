@@ -1,5 +1,5 @@
 ---
-title: Visual Studio バージョン サイド バイ サイドのインストール |Microsoft Docs
+title: Visual Studio のバージョンを side-by-side でインストールする | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -13,12 +13,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 67a564b789d24b11b92b218c2a30673c6bd7baad
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48d77b77367faa1ea1f59c1de7fdbad96d574e1b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834862"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117643"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>複数バージョンの Visual Studio をインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Visual Studio のこのバージョンは、旧バージョンの Visual Studio 
 
  複数のバージョンを並行してインストールする前に、次の条件を確認してください。
 
--   Visual Studio 2015 を使用して [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]で作成されたソリューションを開くと、Visual Studio 2015 に固有の機能を実装しない限り、後で以前のバージョンのソリューションを開き、再度変更できます。
+- Visual Studio 2015 を使用して [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]で作成されたソリューションを開くと、Visual Studio 2015 に固有の機能を実装しない限り、後で以前のバージョンのソリューションを開き、再度変更できます。
 
--   Visual Studio 2015 を使用して [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 以前のバージョンで作成されたソリューションを開こうとすると、Visual Studio 2015 と互換性のあるプロジェクトとファイルの変更が必要になる場合があります。 詳細については、次を参照してください。、[ポート、移行、および Visual Studio プロジェクトのアップグレード](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)ページ。
+- Visual Studio 2015 を使用して [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 以前のバージョンで作成されたソリューションを開こうとすると、Visual Studio 2015 と互換性のあるプロジェクトとファイルの変更が必要になる場合があります。 詳細については、[Visual Studio プロジェクトの移植、移行、およびアップグレード](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)に関するページを参照してください。
 
--   複数のバージョンの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] がコンピューターにインストールされている場合、そのうちの 1 つのバージョンをアンインストールすると、すべてのバージョンの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のファイルの関連付けが削除されます。 ファイルの関連付けを再度割り当てるには、 **[オプション]** ダイアログ ボックスの **[環境]**、 **[全般]** ページにある [[ファイルの関連付けを復元]](../ide/reference/general-environment-options-dialog-box.md) を使用します。
+- 複数のバージョンの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] がコンピューターにインストールされている場合、そのうちの 1 つのバージョンをアンインストールすると、すべてのバージョンの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のファイルの関連付けが削除されます。 ファイルの関連付けを再度割り当てるには、 **[オプション]** ダイアログ ボックスの **[環境]**、 **[全般]** ページにある [[ファイルの関連付けを復元]](../ide/reference/general-environment-options-dialog-box.md) を使用します。
 
--   すべての拡張機能に互換性があるわけではないので、Visual Studio は拡張機能を自動的にアップグレードしません。 拡張機能を再インストールする必要があります、 [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891)またはソフトウェア発行者。
+- すべての拡張機能に互換性があるわけではないので、Visual Studio は拡張機能を自動的にアップグレードしません。 [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) またはソフトウェア発行者から入手した拡張機能を再インストールする必要があります。
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework のバージョンと複数バージョンのインストール
 
--   Visual Basic、Visual C#、および Visual F# のプロジェクトでは、 **プロジェクト デザイナー** の **[ターゲット フレームワーク]** オプションを使用して、プロジェクトで使用する .NET Framework のバージョンを指定します。 C++ プロジェクトでは、.vcxproj ファイルを変更すると、ターゲット フレームワークを手動で変更できます。 詳細については、次を参照してください。[バージョンの互換性](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f)します。
+- Visual Basic、Visual C#、および Visual F# のプロジェクトでは、 **プロジェクト デザイナー** の **[ターゲット フレームワーク]** オプションを使用して、プロジェクトで使用する .NET Framework のバージョンを指定します。 C++ プロジェクトでは、.vcxproj ファイルを変更すると、ターゲット フレームワークを手動で変更できます。 詳細については、[バージョンの互換性](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f)に関するページをご覧ください。
 
      プロジェクトを作成するときは、プロジェクトが対象とする .NET Framework のバージョンを **[新しいプロジェクト]** ダイアログ ボックスの **[.NET Framework]** の一覧で指定できます。
 

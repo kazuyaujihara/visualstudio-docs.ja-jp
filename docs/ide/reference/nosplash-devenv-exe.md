@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950661"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
 
@@ -39,7 +39,7 @@ devenv /NoSplash [File1[ FileN]...]
 
   任意。 Visual Studio の既存インスタンスで開く 1 つ以上の追加ファイル。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 このスイッチを指定すると、スプラッシュ スクリーンが非表示になります。 このスイッチをオフのままにすると、スプラッシュ スクリーンが表示されます。 スプラッシュ スクリーンをさらに詳しく調べるには (たとえば、VSPackage 製品アイコンを確認する場合)、[/Splash](../../extensibility/devenv-command-line-switches-for-vspackage-development.md) スイッチを使用します。
 

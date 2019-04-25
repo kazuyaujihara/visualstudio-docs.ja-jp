@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783940"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>ロード テストを実行するためのテスト エージェントおよびテスト コントローラーの構成
 
@@ -27,11 +27,11 @@ Visual Studio では、物理または仮想マシンを使用して、アプリ
 
 ロード シミュレーションのアーキテクチャは、Visual Studio クライアント、テスト コントローラー、およびテスト エージェントから構成されます。
 
--   クライアントは、テストの開発、テストの実行、およびテスト結果の表示のために使用されます。
+- クライアントは、テストの開発、テストの実行、およびテスト結果の表示のために使用されます。
 
--   テスト コントローラーは、テスト エージェントの管理およびテスト結果の収集のために使用されます。
+- テスト コントローラーは、テスト エージェントの管理およびテスト結果の収集のために使用されます。
 
--   テスト エージェントは、テストの実行およびデータの収集のために使用されます。収集されるデータは、システム情報、テスト設定に定義されている ASP.NET プロファイル データなどです。
+- テスト エージェントは、テストの実行およびデータの収集のために使用されます。収集されるデータは、システム情報、テスト設定に定義されている ASP.NET プロファイル データなどです。
 
 このアーキテクチャには次のような利点があります。
 

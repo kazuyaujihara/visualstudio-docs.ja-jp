@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5366e33da9af7a845a7f5e5a5e3a901b7d091fa3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822762"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則
 
@@ -20,8 +20,8 @@ ms.locfileid: "55947343"
 
 **必要条件**
 
--   Visual Studio Enterprise
--   .NET Framework プロジェクト
+- Visual Studio Enterprise
+- .NET Framework プロジェクト
 
 > [!NOTE]
 > .NET Standard プロジェクトはサポートされていません。
@@ -62,23 +62,23 @@ ms.locfileid: "55947343"
 
 フィルター文字列では、単純な文法を使用して一致の照合方法を定義します。
 
--   既定では、フィルターは大文字と小文字を区別しません。フィルターは部分文字列の一致を照合します。
+- 既定では、フィルターは大文字と小文字を区別しません。フィルターは部分文字列の一致を照合します。
 
      `el` は "hello" に一致します
 
--   フィルターの末尾に `!` を追加すると、正確な大文字小文字を区別する照合が行われます。
+- フィルターの末尾に `!` を追加すると、正確な大文字小文字を区別する照合が行われます。
 
      `el!` は "hello" に一致しません
 
      `hello!` は "hello" に一致します
 
--   フィルターの末尾に `*` を追加すると、文字列のプレフィックスとの一致が照合されます。
+- フィルターの末尾に `*` を追加すると、文字列のプレフィックスとの一致が照合されます。
 
      `el*` は "hello" に一致しません
 
      `he*` は "hello" に一致します
 
--   セミコロン区切りのリストに複数のフィルターを記述すると、フィルターは論理和として組み合わされます。
+- セミコロン区切りのリストに複数のフィルターを記述すると、フィルターは論理和として組み合わされます。
 
      `el;wo` は "hello" と "world" に一致します。
 
@@ -114,9 +114,9 @@ Fakes コード ジェネレーターは、生成された Fakes アセンブリ
 
  shim が適用されたアセンブリが厳密な名前を持つ場合に、アセンブリの内部型にアクセスするには:
 
--   テスト アセンブリと Fakes アセンブリの両方に、厳密な名前を付ける必要があります。
+- テスト アセンブリと Fakes アセンブリの両方に、厳密な名前を付ける必要があります。
 
--   テスト アセンブリと Fakes アセンブリの公開キーを、shim が適用されたアセンブリの **InternalsVisibleToAttribute** 属性に追加します。 以下に、shim が適用されたアセンブリが厳密な名前を持つとき、shim が適用されたアセンブリ コード内のサンプル属性がどのように表示されるかを示します。
+- テスト アセンブリと Fakes アセンブリの公開キーを、shim が適用されたアセンブリの **InternalsVisibleToAttribute** 属性に追加します。 以下に、shim が適用されたアセンブリが厳密な名前を持つとき、shim が適用されたアセンブリ コード内のサンプル属性がどのように表示されるかを示します。
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -161,19 +161,19 @@ Fakes アセンブリのコンパイルで、ビルド時間が非常に長く�
 
 単体テスト プロジェクトから、プロジェクト フォルダーの FakesAssemblies の下に置かれたコンパイル済みの Fakes アセンブリに参照を追加します。
 
-1.  テスト プロジェクトに一致する .NET ランタイム バージョンを含む新しいクラス ライブラリを作成します。 これに Fakes.Prebuild という名前を付けます。 プロジェクトから不要な *class1.cs* ファイルを削除します。
+1. テスト プロジェクトに一致する .NET ランタイム バージョンを含む新しいクラス ライブラリを作成します。 これに Fakes.Prebuild という名前を付けます。 プロジェクトから不要な *class1.cs* ファイルを削除します。
 
-2.  Fakes が必要なすべてのシステムおよびサードパーティのアセンブリへの参照を追加します。
+2. Fakes が必要なすべてのシステムおよびサードパーティのアセンブリへの参照を追加します。
 
-3.  アセンブリごとに *.fakes* ファイルを追加し、ビルドします。
+3. アセンブリごとに *.fakes* ファイルを追加し、ビルドします。
 
-4.  テスト プロジェクトから
+4. テスト プロジェクトから
 
-    -   Fakes ランタイム DLL への参照があることを確認します。
+    - Fakes ランタイム DLL への参照があることを確認します。
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Fakes を作成したアセンブリごとに、プロジェクトの *Fakes.Prebuild\FakesAssemblies* フォルダーの対応する DLL ファイルへの参照を追加します。
+    - Fakes を作成したアセンブリごとに、プロジェクトの *Fakes.Prebuild\FakesAssemblies* フォルダーの対応する DLL ファイルへの参照を追加します。
 
 ### <a name="avoid-assembly-name-clashing"></a>アセンブリ名の競合を回避する
 
@@ -270,9 +270,9 @@ attribute of the Assembly element in the .fakes:
 
 次の規則は再帰的に適用されます。
 
--   Fakes は C# を使用して Fakes アセンブリを生成するため、無効な C# トークンを生成する文字は "_" (アンダースコア) にエスケープされます。
+- Fakes は C# を使用して Fakes アセンブリを生成するため、無効な C# トークンを生成する文字は "_" (アンダースコア) にエスケープされます。
 
--   結果の名前が宣言する型のいずれかのメンバーと競合する場合は、01 から始まる 2 桁のカウンターの追加して番号付けスキーマが使用されます。
+- 結果の名前が宣言する型のいずれかのメンバーと競合する場合は、01 から始まる 2 桁のカウンターの追加して番号付けスキーマが使用されます。
 
 ## <a name="see-also"></a>関連項目
 

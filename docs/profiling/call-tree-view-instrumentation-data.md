@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a838a511c5f37a00ed2331d2376b395f399e65d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777321"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>コール ツリー ビュー - インストルメンテーション データ
 コール ツリーの関数の値は、コール ツリーの親関数によって呼び出された関数インスタンスの時間を示します。 割合の値を計算するには、関数インスタンスの値と、プロファイル実行のすべての関数の包括経過時間の総計を比較します。

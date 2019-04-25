@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c34bd47dc3909fd165db265eb5a5a79920a03f9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815475"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android のシステム要件
 
@@ -26,7 +26,7 @@ Visual Studio Emulator for Android は、Hyper-V 上で仮想マシンとして�
 > [!IMPORTANT]
 > エミュレーターのセットアップ プログラムでは、Visual Studio Emulator for Android を実行するための前提条件が確認されます。 前提条件が存在しない場合、警告が表示されますが、セットアップでは必要ありません。
 
-##  <a name="Checklist"></a> クイック チェックリスト
+## <a name="Checklist"></a> クイック チェックリスト
 
 Visual Studio Emulator for Android を実行するための要件を簡単に確認できるチェックリストです。 詳細については、このトピックの以下のセクションを参照してください。
 
@@ -50,11 +50,11 @@ Hyper-V の要件
 
 - BIOS で、次の機能がサポートされている必要があります。
 
-  -   ハードウェア依存の仮想化
+  - ハードウェア依存の仮想化
 
-  -   第 2 レベルのアドレス変換 (SLAT)
+  - 第 2 レベルのアドレス変換 (SLAT)
 
-  -   ハードウェア ベースのデータ実行防止 (DEP)
+  - ハードウェア ベースのデータ実行防止 (DEP)
 
 - Windows で、Hyper-V を有効にして実行する必要があります。
 

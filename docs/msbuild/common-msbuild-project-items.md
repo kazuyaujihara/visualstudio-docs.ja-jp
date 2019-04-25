@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569879"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 項目には、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のすべてのプロジェクトの種類に共通のものがあります。 これらの項目は、*Microsoft.Build.CommonTypes.xsd* ファイルで定義されています。
@@ -81,7 +81,6 @@ ms.locfileid: "58897687"
 ### <a name="compile"></a>Compile
  コンパイラのソース ファイルを表します。
 
-
 | 項目メタデータの名前 | 説明 |
 |-----------------------| - |
 | DependentUpon | 省略可能な文字列。 正しくコンパイルする必要があるファイルを指定します。 |
@@ -92,7 +91,6 @@ ms.locfileid: "58897687"
 
 ### <a name="embeddedresource"></a>EmbeddedResource
  生成されるアセンブリに埋め込まれるリソースを表します。
-
 
 | 項目メタデータの名前 | 説明 |
 |-----------------------| - |
@@ -108,7 +106,6 @@ ms.locfileid: "58897687"
 ### <a name="content"></a>Content
  プロジェクトにコンパイルはされないものの、プロジェクトと共に埋め込まれるか発行されることのあるファイルを表します。
 
-
 | 項目メタデータの名前 | 説明 |
 |-----------------------| - |
 | DependentUpon | 省略可能な文字列。 正しくコンパイルする必要があるファイルを指定します。 |
@@ -123,7 +120,6 @@ ms.locfileid: "58897687"
 
 ### <a name="none"></a>なし
  ビルド プロセスでは使用しないことが推奨されるファイルを表します。
-
 
 | 項目メタデータの名前 | 説明 |
 |-----------------------| - |

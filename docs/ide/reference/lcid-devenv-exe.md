@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: deb2ce5eba108127dce82bab77fe7ed4fb78fb14
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970128"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -41,7 +41,7 @@ devenv {/LCID|/L} LocaleID
 
   必須です。 指定する言語のロケール識別子 (LCID)。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 IDE を読み込み、環境用の既定の自然言語を設定します。 この変更はセッションが変わっても保持され、IDE の **[ツール]** > **[オプション]** > **[環境]** > **[国際対応の設定]** > **[言語]** ボックスにこの変更が表示されます。
 

@@ -14,11 +14,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 8fcd01198877ef06eb398ce99fe467deb923546c
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999224"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] プロファイリング ツールの新機能
 
@@ -37,4 +37,4 @@ CPU 使用率ツールに[新しい視覚化](../profiling/Beginners-Guide-to-Pe
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio のプロファイル](../profiling/index.md)
-- [プロファイリング ツールの概要](../profiling/profiling-feature-tour.md)
+- [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)

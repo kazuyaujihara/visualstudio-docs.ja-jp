@@ -9,12 +9,12 @@ ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de19f24040d285392c2ed2a69776c8ecf39c9f36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef80a10954e9cf58db04e46f11934ffd86974bea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786105"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>方法:ロード テスト エディターを使用してテスト ログにテストの失敗を記録するかどうかを指定する
 
@@ -27,17 +27,17 @@ ms.locfileid: "55910793"
 
 ## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>シナリオでテストが失敗した場合にテスト ログを保存するには
 
-1.  ロード テストを開きます。
+1. ロード テストを開きます。
 
      **ロード テスト エディター**が表示されます。 ロード テスト ツリーが表示されます。
 
-2.  ロード テスト ツリーの **[実行設定]** フォルダーで、テスト イテレーションの最大数を指定する実行設定ノードを選択します。
+2. ロード テスト ツリーの **[実行設定]** フォルダーで、テスト イテレーションの最大数を指定する実行設定ノードを選択します。
 
-3.  **[表示]** メニューの **[プロパティ ウィンドウ]** をクリックします。
+3. **[表示]** メニューの **[プロパティ ウィンドウ]** をクリックします。
 
      **[プロパティ]** ウィンドウに、実行設定のカテゴリおよびプロパティが表示されます。
 
-4.  **[テストの失敗時にログを保存]** プロパティで、**[True]** または **[False]** を選択して、シナリオでテストが失敗した場合にテスト ログを保存するかどうかを指定します。
+4. **[テストの失敗時にログを保存]** プロパティで、**[True]** または **[False]** を選択して、シナリオでテストが失敗した場合にテスト ログを保存するかどうかを指定します。
 
      プロパティを変更したら、**[ファイル]** メニューの **[保存]** を選択します。
 

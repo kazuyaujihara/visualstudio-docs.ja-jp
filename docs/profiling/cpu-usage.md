@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553621"
 ---
 # <a name="analyze-cpu-usage"></a>CPU 使用率の分析
 
@@ -31,7 +31,7 @@ ms.locfileid: "59366758"
 >[!NOTE]
 >[パフォーマンス プロファイラー](../profiling/profiling-feature-tour.md)を使用するには、Windows 7 以降が必要です。
 
-##  <a name="collect-cpu-usage-data"></a>CPU 使用率のデータの収集
+## <a name="collect-cpu-usage-data"></a>CPU 使用率のデータの収集
 
 1. Visual Studio プロジェクトで、ソリューション構成を **[リリース]** に設定し、配置ターゲットとして **[ローカル コンピューター]** を選択します。
 
@@ -51,7 +51,6 @@ ms.locfileid: "59366758"
 
    ![CPU 使用率レポート](../profiling/media/cpu_use_wt_report.png "CPU 使用率レポート")
 
-
 ## <a name="analyze-the-cpu-usage-report"></a>CPU 使用率レポートの分析
 
 診断レポートは、**合計 CPU** の高い順に並べ替えられます。 並べ替え順序または並べ替え列を変更するには、列ヘッダーを選択します。 表示するスレッドを選択または選択解除するには、**[フィルター]** ドロップダウンを使用します。特定のスレッドまたはノードを検索するには、**[検索]** ボックスを使用します。
@@ -60,7 +59,7 @@ ms.locfileid: "59366758"
 Visual Studio 2019 以降、**[ホット パスの展開]** ボタンと **[ホット パスの表示]** ボタンをクリックすることで、最も高い割合で CPU を使用している関数の呼び出しを呼び出しツリー ビューに表示できます。
 ::: moniker-end
 
-###  <a name="BKMK_Call_tree_data_columns"></a> CPU 使用率データの列
+### <a name="BKMK_Call_tree_data_columns"></a> CPU 使用率データの列
 
 |||
 |-|-|
@@ -68,11 +67,11 @@ Visual Studio 2019 以降、**[ホット パスの展開]** ボタンと **[ホ�
 |**セルフ CPU [ユニット、%]**|![自己 % 演算式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 選択した時間範囲において、関数の呼び出し (関数が呼び出した関数を除く) で使用された CPU 時間 (ミリ秒) と使用率 (パーセンテージ) です。|
 |**Module**|関数を含むモジュールの名前です。
 
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用率コール ツリー
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用率コール ツリー
 
 コール ツリーを表示するには、レポートの親ノードを選択します。 **[CPU 使用率]** ページが開き、**呼び出し元/呼び出し先**ビューが表示されます。 **[現在のビュー]** ドロップダウンで **[コール ツリー]** を選択します。
 
-####  <a name="BKMK_Call_tree_structure"></a> コール ツリーの構造
+#### <a name="BKMK_Call_tree_structure"></a> コール ツリーの構造
 
 ::: moniker range=">=vs-2019"
 ![コール ツリーの構造](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "コール ツリーの構造")
@@ -88,7 +87,7 @@ Visual Studio 2019 以降、**[ホット パスの展開]** ボタンと **[ホ�
 |![手順 3](../profiling/media/procguid_3.png "ProcGuid_3")|セカンド レベル ノードの子はユーザー コード メソッドおよび非同期ルーチンで、セカンド レベル システムとフレームワーク コードによって呼び出される、または作成されます。|
 |![手順 4](../profiling/media/procguid_4.png "ProcGuid_4")|メソッドの子ノードには、親メソッドを呼び出すためだけのデータが含まれます。 **[外部コードの表示]** がオフのとき、アプリ メソッドには **[外部コード]** ノードが含まれる場合もあります。|
 
-####  <a name="BKMK_External_Code"></a> 外部コード
+#### <a name="BKMK_External_Code"></a> 外部コード
 
 コードによって実行されるシステムおよびフレームワークの関数は、*外部コード*と呼ばれます。 外部コード関数は、アプリの開始と停止、UI の描画、スレッドの制御、およびアプリへの他の低レベル サービスの提供を行います。 外部コードを確認することはほとんどないため、CPU 使用率コール ツリーはユーザー メソッドの外部関数を 1 つの **[外部コード]** ノードにまとめます。
 
@@ -109,7 +108,7 @@ Visual Studio 2019 以降、**[ホット パスの展開]** ボタンと **[ホ�
 ![入れ子になった外部コードの検索](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "入れ子になった外部コードの検索")
 ::: moniker-end
 
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用率コール ツリー内の非同期関数
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用率コール ツリー内の非同期関数
 
  コンパイラが非同期メソッドを検出すると、メソッドの実行を制御するために非表示のクラスを作成します。 概念的に、クラスはステート マシンです。 クラスには、元のメソッドを非同期に呼び出すコンパイラにより生成された関数と、それらを実行するために必要なコールバック、スケジューラ、反復子があります。 親メソッドによって元のメソッドが呼び出されると、コンパイラは親の実行コンテキストからメソッドを削除し、アプリの実行を制御するシステムとフレームワーク コードのコンテキストにある非表示のクラスのメソッドを実行します。 非同期のメソッドは、多くの場合、1 つ以上の異なるスレッドで実行されます (必ずそうなるわけではありません)。 このコードは、**CPU 使用率**コール ツリーで、ツリーのトップ ノードのすぐ下にある **[外部コード]** ノードの子として表示されます。
 
@@ -121,8 +120,8 @@ Visual Studio 2019 以降、**[ホット パスの展開]** ボタンと **[ホ�
 
 ![展開された非同期ノード](media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "展開された非同期ノード")
 
-- `MainPage::GetMaxNumberAsyncButton_Click`  は単に、タスクの値のリストを管理し、結果の最大値を計算し、出力を表示します。
+- `MainPage::GetMaxNumberAsyncButton_Click` は単に、タスクの値のリストを管理し、結果の最大値を計算し、出力を表示します。
 
 - `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` は、 `GetNumberAsync`の呼び出しをラップする 48 個のタスクをスケジュールして起動するために必要なアクティビティを表示します。
 
-- `MainPage::<GetNumberAsync>b__b`  は `GetNumber` を呼び出すタスクのアクティビティを表示します。
+- `MainPage::<GetNumberAsync>b__b` は `GetNumber`を呼び出すタスクのアクティビティを表示します。

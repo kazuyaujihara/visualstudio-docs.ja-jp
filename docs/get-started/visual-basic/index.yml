@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: b9b709c14cf0f22d12054322635c852e09214316
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323189"
 documentType: LandingData
 title: Visual Studio のチュートリアル | Visual Basic
 metadata:
@@ -21,86 +15,86 @@ metadata:
 abstract:
   description: このページには、Visual Basic ユーザーが Visual Studio を学ぶための初心者向けチュートリアルへのリンクが含まれています。 Visual Studio の完全なドキュメントについては、<a href="/visualstudio/ide/">Visual Studio</a> に関する記事を参照してください。 Visual Basic 言語のドキュメントについては、「<a href=/dotnet/visual-basic>Visual Basic のガイド</a>」を参照してください。
 sections:
-- title: 作業開始
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+  - title: 作業開始
     items:
-    - href: ../../install/install-visual-studio.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: Visual Studio のインストール
-    - href: visual-studio-ide.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
-      title: ガイド ツアーを開始する
-- title: Visual Basic のチュートリアル
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: ../../install/install-visual-studio.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: Visual Studio のインストール
+          - href: visual-studio-ide.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
+            title: ガイド ツアーを開始する
+  - title: Visual Basic のチュートリアル
     items:
-    - href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_pull-request.svg
-      title: リポジトリからコードを開く
-    - href: tutorial-console.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_vb.svg
-      title: Visual Basic で初めてアプリを作成する
-    - href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_Windows.svg
-      title: ユニバーサル Windows アプリを作成する
-    - href: tutorial-wpf.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_Windows.svg
-      title: Windows デスクトップ アプリを作成する
-    - href: /dotnet/visual-basic/developing-apps/programming/
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_vb.svg
-      title: Visual Basic に関する詳細情報
-- title: Visual Studio を学ぶ
-  items:
-  - type: paragraph
-    text: 開発タスクに Visual Studio を使用する方法を学びます。
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
+            title: リポジトリからコードを開く
+          - href: tutorial-console.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_vb.svg'
+            title: Visual Basic で初めてアプリを作成する
+          - href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Windows.svg'
+            title: ユニバーサル Windows アプリを作成する
+          - href: tutorial-wpf.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Windows.svg'
+            title: Windows デスクトップ アプリを作成する
+          - href: /dotnet/visual-basic/developing-apps/programming/
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_vb.svg'
+            title: Visual Basic に関する詳細情報
+  - title: Visual Studio を学ぶ
     items:
-    - href: tutorial-editor.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-edit.svg
-      title: コードを作成して編集する
-    - href: ../../ide/compiling-and-building-in-visual-studio.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_build.svg
-      title: コンパイルとビルド
-    - href: ../visual-basic/tutorial-debugger.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_debug.svg
-      title: コードをデバッグする
-    - href: ../../test/getting-started-with-unit-testing.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_test.svg
-      title: コードをテストする
-    - href: ../../data-tools/create-a-sql-database-by-using-a-designer.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_generic-database.svg
-      title: データにアクセスする
+      - type: paragraph
+        text: 開発タスクに Visual Studio を使用する方法を学びます。
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: tutorial-editor.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
+            title: コードを作成して編集する
+          - href: ../../ide/compiling-and-building-in-visual-studio.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: コンパイルとビルド
+          - href: ../visual-basic/tutorial-debugger.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
+            title: コードをデバッグする
+          - href: ../../test/getting-started-with-unit-testing.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_test.svg'
+            title: コードをテストする
+          - href: ../../data-tools/create-a-sql-database-by-using-a-designer.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
+            title: データにアクセスする

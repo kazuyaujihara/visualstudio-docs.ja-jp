@@ -15,12 +15,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f26dc7fd69c5190f5ba56985ef2509ddbf87866
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c39518c03d1a599dbe9eecac3d609343b7394313
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822602"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Web パフォーマンス テストのカスタム検証規則のコーディング
 
@@ -33,24 +33,24 @@ ms.locfileid: "55919912"
 
 ## <a name="to-create-custom-validation-rules"></a>カスタム検証規則を作成するには
 
-1.  Web パフォーマンス テストを含むテスト プロジェクトを開きます。
+1. Web パフォーマンス テストを含むテスト プロジェクトを開きます。
 
-2.  (省略可能) 検証規則を格納する個別のクラス ライブラリ プロジェクトを作成します。
+2. (省略可能) 検証規則を格納する個別のクラス ライブラリ プロジェクトを作成します。
 
     > [!IMPORTANT]
     > クラスは、テストが含まれる同じプロジェクトで作成できます。 ただし、規則を再利用する場合は、規則を格納する別のクラス ライブラリ プロジェクトを作成することをお勧めします。 個別のプロジェクトを作成するには、ここで省略可能として説明されている手順を実行する必要があります。
 
-3.  (省略可能) クラス ライブラリ プロジェクトに、Microsoft.VisualStudio.QualityTools.WebTestFramework.DLL への参照を追加します。
+3. (省略可能) クラス ライブラリ プロジェクトに、Microsoft.VisualStudio.QualityTools.WebTestFramework.DLL への参照を追加します。
 
-4.  <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> クラスから派生するクラスを作成します。 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> メンバーと <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*> メンバーを実装します。
+4. <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> クラスから派生するクラスを作成します。 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> メンバーと <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*> メンバーを実装します。
 
-5.  (省略可能) 新しいクラス ライブラリ プロジェクトをビルドします。
+5. (省略可能) 新しいクラス ライブラリ プロジェクトをビルドします。
 
-6.  (省略可能) テスト プロジェクトで、カスタム検証規則を含むクラス ライブラリ プロジェクトへの参照を追加します。
+6. (省略可能) テスト プロジェクトで、カスタム検証規則を含むクラス ライブラリ プロジェクトへの参照を追加します。
 
-7.  テスト プロジェクトで、**Web パフォーマンス テスト エディター**を使用して Web パフォーマンス テストを開きます。
+7. テスト プロジェクトで、**Web パフォーマンス テスト エディター**を使用して Web パフォーマンス テストを開きます。
 
-8.  カスタム検証規則を Web パフォーマンス テスト要求に追加するには、要求を右クリックし、**[検証規則の追加]** をクリックします。
+8. カスタム検証規則を Web パフォーマンス テスト要求に追加するには、要求を右クリックし、**[検証規則の追加]** をクリックします。
 
      **[検証規則の追加]** ダイアログ ボックスが表示されます。 定義済みの検証規則と共に、カスタム検証規則が **[規則の選択]** ボックスに表示されます。 カスタム検証規則を選択し、**[OK]** を選択します。
 

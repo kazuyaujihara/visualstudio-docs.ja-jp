@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957416"
 ---
 # <a name="install-python-interpreters"></a>Python インタープリターのインストール
 
@@ -64,6 +64,6 @@ Python 環境用に新しい検出形式を提供したい開発者は、「[PTV
 
 - [Python 環境を管理する](managing-python-environments-in-visual-studio.md)
 - [プロジェクトのインタープリターの選択](selecting-a-python-environment-for-a-project.md)
-- [依存関係に requirements.txt を使用する](managing-required-packages-with-requirements-txt.md)
+- [依存関係の requirements.txt の使用](managing-required-packages-with-requirements-txt.md)
 - [検索パス](search-paths.md)
 - [[Python 環境] ウィンドウ リファレンス](python-environments-window-tab-reference.md)

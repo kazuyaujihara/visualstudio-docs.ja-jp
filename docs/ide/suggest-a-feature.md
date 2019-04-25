@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951144"
 ---
 # <a name="overview-suggest-a-feature"></a>概要: 機能を提案する
 
@@ -101,7 +101,7 @@ User Voice サイトは読み取り専用になっています。 コンテキ�
 
 - - -
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問
 
 ### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>User Voice の自分のアイデアが開発者コミュニティに表示されないのはなぜですか?
 

@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: a1853df63354801ebf0413d3c8707135cb9bb800
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535724"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>requirements.txt での必須パッケージの管理
 
@@ -68,7 +68,7 @@ Cleaning up...
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio で Python 環境を管理する](managing-python-environments-in-visual-studio.md)
+- [Visual Studio での Python 環境の管理](managing-python-environments-in-visual-studio.md)
 - [プロジェクトのインタープリターの選択](selecting-a-python-environment-for-a-project.md)
 - [検索パス](search-paths.md)
 - [[Python 環境] ウィンドウ リファレンス](python-environments-window-tab-reference.md)

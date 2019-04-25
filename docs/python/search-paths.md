@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 37ce9d7b1853dfecc9e0ec33ca08c3c3fa0571e0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428439"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio による Python 検索パスの使用方法
 
@@ -48,7 +48,7 @@ ms.locfileid: "59365341"
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio で Python 環境を管理する](managing-python-environments-in-visual-studio.md)
+- [Visual Studio での Python 環境の管理](managing-python-environments-in-visual-studio.md)
 - [プロジェクトのインタープリターの選択](selecting-a-python-environment-for-a-project.md)
-- [依存関係に requirements.txt を使用する](managing-required-packages-with-requirements-txt.md)
+- [依存関係の requirements.txt の使用](managing-required-packages-with-requirements-txt.md)
 - [[Python 環境] ウィンドウ リファレンス](python-environments-window-tab-reference.md)

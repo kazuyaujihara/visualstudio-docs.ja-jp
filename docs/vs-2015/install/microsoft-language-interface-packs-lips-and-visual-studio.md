@@ -1,5 +1,5 @@
 ﻿---
-title: Microsoft Language Interface Pack (Lip) |Microsoft Docs
+title: Microsoft Language Interface Pack (LIP) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8d5bf89a4f4b33306176b1fe5e33fa91fb1d325d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776923"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096505"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Language Interface Pack (LIP) および Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,48 +41,48 @@ Windows Language Interface Pack (LIP) を使用すると、1 つの言語バー�
 >  Visual Studio では、同じコンピューターへの複数言語バージョンの製品版のインストールをサポートしていません。 1 つの言語の製品版をインストールしたら、Language Pack を使用して言語バージョンを追加する必要があります。 Express Edition の場合は、これまでどおり複数の言語の製品版を同じコンピューターにインストールできます。
 
 ### <a name="support-for-code-pages"></a>コード ページのサポート
- Visual Studio のツールによっては、現在のコード ページではない文字がテキストに含まれるときに、そのテキストを正しく表示できません。 その代わりに疑問符が表示されるか、テキストが破損します。 次のツールまたは分野に影響があります。
+ Visual Studio Tools によっては、現在のコード ページではない文字がテキストに含まれるときに、そのテキストを正しく表示できません。 その代わりに疑問符が表示されるか、テキストが破損します。 次のツールまたは分野に影響があります。
 
--   FTP を使用して配置されるサイト。
+- FTP を使用して配置されるサイト。
 
--   一部のコントロールでの ASCII 以外のコンピューター名。
+- 一部のコントロールでの ASCII 以外のコンピューター名。
 
--   Visual Studio の外部で実行されるコマンド ライン ツール。
+- Visual Studio の外部で実行されるコマンド ライン ツール。
 
--   Visual Basic 移行ウィザード。
+- Visual Basic 移行ウィザード。
 
--   ActiveX コントロール テスト コンテナー。
+- ActiveX コントロール テスト コンテナー。
 
--   OLE/COM オブジェクト ビューアー。
+- OLE/COM オブジェクト ビューアー。
 
--   ISAPI Web デバッグ ツール。
+- ISAPI Web デバッグ ツール。
 
--   HTML ヘルプ コンテンツを持つ MFC アプリケーション プロジェクト。
+- HTML ヘルプ コンテンツを持つ MFC アプリケーション プロジェクト。
 
--   Visual SourceSafe / SCCI の UI は、互換性のないコード ページがある場合は、英語に戻ります。
+- Visual SourceSafe / SCCI の UI は、互換性のないコード ページがある場合は、英語に戻ります。
 
--   Visual SourceSafe は Unicode のファイル名をサポートしません。
+- Visual SourceSafe は Unicode のファイル名をサポートしません。
 
--   エンド ユーザー定義の文字 (個人用領域) をトークンまたは識別子として使用できません。
+- エンド ユーザー定義の文字 (個人用領域) をトークンまたは識別子として使用できません。
 
--   Windows コード ページが東アジア言語に設定されている場合、一部の Visual Studio ツール ウィンドウでラテン拡張文字 B を表示できません。
+- Windows コード ページが東アジア言語に設定されている場合、一部の Visual Studio ツール ウィンドウでラテン拡張文字 B を表示できません。
 
--   複数言語の文字で構成されたテキストで、一部の文字に対して既定のグリフが表示される場合があります。
+- 複数言語の文字で構成されたテキストで、一部の文字に対して既定のグリフが表示される場合があります。
 
--   共通のコントロールに複雑な文字を使用した文字列をコピーして貼り付けると、文字の形状が失われる場合があります。 代わりに、対応する言語のキーボードを使用してテキストを入力します。
+- 共通のコントロールに複雑な文字を使用した文字列をコピーして貼り付けると、文字の形状が失われる場合があります。 代わりに、対応する言語のキーボードを使用してテキストを入力します。
 
 ##### <a name="to-correctly-display-characters-that-are-not-included-in-the-current-code-page"></a>現在のコード ページに含まれない文字を正しく表示するには
 
-1.  **[スタート]** ボタン、**[コントロール パネル]**、**[地域と言語のオプション]** ([!INCLUDE[win8](../includes/win8-md.md)] では **[領域]**) の順にクリックします。
+1. **[スタート]** ボタン、**[コントロール パネル]**、**[地域と言語のオプション]** ([!INCLUDE[win8](../includes/win8-md.md)] では **[領域]**) の順にクリックします。
 
     > [!NOTE]
     >  次の手順を実行するには、そのコンピューターの管理者である必要があります。
 
-2.  **[詳細設定]** タブをクリックします。
+2. **[詳細設定]** タブをクリックします。
 
-3.  **[使う Unicode 対応でないプログラムの言語バージョンに一致する言語を選んでください]** の一覧で、現在使用している言語を選択します。
+3. **[使う Unicode 対応でないプログラムの言語バージョンに一致する言語を選んでください]** の一覧で、現在使用している言語を選択します。
 
-4.  **[OK]** をクリックします。
+4. **[OK]** をクリックします。
 
 ## <a name="changing-the-language-used-for-the-ui-text-in-visual-studio"></a>Visual Studio の UI テキストに使用される言語の変更
  同じコンピューターに [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の複数の言語バージョンをインストールすると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の UI は既定で **[Microsoft Windows と同じ]** になります。 この設定は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] がオペレーティング システムの表示言語として指定された言語の UI テキストを表示することを示しています。

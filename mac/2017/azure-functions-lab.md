@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934249"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>チュートリアル: Azure Functions の概要
 
@@ -104,6 +104,7 @@ ms.locfileid: "58568724"
     using System.Web;
     using Microsoft.WindowsAzure.Storage.Table;
     ```
+
 1. 既存の `Run` メソッドを削除し、Azure Function としてクラスに以下のメソッドを追加します。
 
     ```csharp
@@ -119,6 +120,7 @@ ms.locfileid: "58568724"
         return x + y;
     }
     ```
+
 1. ここで、メソッドの定義を 1 つずつ説明していきます。
 
     最初に表示されるのは **FunctionName** 属性で、このメソッドを Azure Function としてマークします。 この属性は関数のパブリック名を指定します。 属性名が、実際のメソッド名と一致する必要はありません。
@@ -180,6 +182,7 @@ ms.locfileid: "58568724"
 
     return x + y;
     ```
+
 1. アプリケーションを実行します。
 
 1. ブラウザー ウィンドウに戻り、文字列 `/?x=2&y=3` を URL に追加します。 これで URL 全体は `http://localhost:7071/api/Add?x=2&y=3` になるはずです。 新しい URL に移動します。
@@ -188,10 +191,9 @@ ms.locfileid: "58568724"
 
 1. デバッグ セッションを停止します。
 
-
 ## <a name="exercise-4-working-with-functionjson"></a>演習 4:function.json の操作
 
-1.  前の演習では、ライブラリに定義されている Azure Function のジョブ関数が Visual Studio for Mac で生成されたことを示しました。 これは、Azure Functions で実際に実行時にメソッド属性が使用されるのではなく、コンパイル時のファイル システム規則を使用して、Azure Functions を利用可能にする場所と方法を構成するためです。 **Solution Pad** で、プロジェクト ノードを右クリックし、**[Finder で表示]** を選択します。
+1. 前の演習では、ライブラリに定義されている Azure Function のジョブ関数が Visual Studio for Mac で生成されたことを示しました。 これは、Azure Functions で実際に実行時にメソッド属性が使用されるのではなく、コンパイル時のファイル システム規則を使用して、Azure Functions を利用可能にする場所と方法を構成するためです。 **Solution Pad** で、プロジェクト ノードを右クリックし、**[Finder で表示]** を選択します。
 
      ![[Finder で表示] メニュー オプション](media/azure-functions-lab-image23.png)
 
@@ -290,6 +292,7 @@ ms.locfileid: "58568724"
         return x + y;
     }
     ```
+
 1. **F5** キーを押し、プロジェクトをビルドして実行します。
 
 1. ビルドが完了し、プラットフォームがスピンアップすると、新しく追加されたメソッドにマップされる要求に対して使用可能な 2 番目のルートがあることが示されます。
@@ -316,6 +319,7 @@ ms.locfileid: "58568724"
         public int Sum { get; set; }
     }
     ```
+
 1. **Add** クラス内で、次のコードを追加して別の関数を導入します。 これは HTTP 応答を伴わないという点で、これまでとは異なることに注意してください。 最終行は、パラメーターと合計だけでなく、後で簡単に取得できるようにする一部のキー情報 (**PartitionKey** と **RowKey**) が入力された新しい **TableRow** を返します。 また、メソッド内のコードでは、関数がいつ実行されるかをより簡単に把握できるように **TraceWriter** が使用されます。
 
     ```csharp
@@ -341,6 +345,7 @@ ms.locfileid: "58568724"
         };
     }
     ```
+
 1. **F5** キーを押し、プロジェクトをビルドして実行します。
 
 1. ブラウザー タブで、**http://localhost:7071/api/Process/4/6** に移動します。 これにより別のメッセージがキューに入れられ、最終的には別の行がテーブルに追加されます。
@@ -363,6 +368,7 @@ ms.locfileid: "58568724"
     [Table("Results", "sums", "{x}_{y}")]
     TableRow tableRow,
     ```
+
 1. メソッドの先頭に次のコードを追加します。 **tableRow** が null でない場合、演算結果は既に要求されており、すぐに返すことができます。 それ以外の場合、関数は以前のとおりに続行します。 これはデータを返す最も堅牢な方法でないかもしれませんが、わずかなコードで複数のスケーラブル層にわたる非常に洗練された演算を編成できることを示しています。
 
     ```csharp
@@ -372,6 +378,7 @@ ms.locfileid: "58568724"
         return null;
     }
     ```
+
 1. **F5** キーを押し、プロジェクトをビルドして実行します。
 
 1. ブラウザー タブで、**http://localhost:7071/api/Process/4/6** の URL を更新します。 このレコードのテーブル行は存在するため、エラーなしですぐに返されます。 HTTP 出力はないため、端末で出力を確認できます。
@@ -409,4 +416,3 @@ ms.locfileid: "58568724"
 ## <a name="summary"></a>まとめ
 
 このラボでは、Visual Studio for Mac で Azure Functions のビルドを開始する方法を学習しました。
-

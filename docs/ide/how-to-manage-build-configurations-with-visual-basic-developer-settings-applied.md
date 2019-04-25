@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f4f1ef20a376c0f77f8ecbbea87ad9769870d60
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ee2ecb5e501390dfc82d895bf6a81706f4297a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430296"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>方法: Visual Basic 開発者設定が適用されたビルド構成を管理する
 
@@ -29,16 +29,16 @@ ms.locfileid: "55949293"
 
 既定では、**[構成マネージャー]** ダイアログ ボックスおよび[プロジェクト デザイナー](../ide/reference/application-page-project-designer-visual-basic.md)の **[構成]** 一覧と **[プラットフォーム]** 一覧を開くためのオプションは、Visual Basic 開発者設定によって非表示になっています。
 
-1.  **[ツール]** メニューの **[オプション]** をクリックします。
+1. **[ツール]** メニューの **[オプション]** をクリックします。
 
-2.  **[プロジェクトおよびソリューション]** を展開し、**[全般]** をクリックします。
+2. **[プロジェクトおよびソリューション]** を展開し、**[全般]** をクリックします。
 
     > [!NOTE]
     > **[全般]** ノードは、**[すべての設定を表示]** オプションがオフになっている場合でも表示されます。 使用可能なすべてのオプションを表示する場合は、**[すべての設定を表示]** をクリックします。
 
-3.  **[ビルド構成の詳細を表示]** をクリックします。
+3. **[ビルド構成の詳細を表示]** をクリックします。
 
-4.  **[OK]** をクリックします。
+4. **[OK]** をクリックします。
 
      **[ビルド]** メニューで **[構成マネージャー]** を使用できるようになり、**[構成]** 一覧と **[プラットフォーム]** 一覧が**プロジェクト デザイナー**に表示されるようになります。
 

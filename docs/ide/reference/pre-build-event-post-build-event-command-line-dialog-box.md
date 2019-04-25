@@ -33,19 +33,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bef757222638d35c0f90d0c25e7836d49d1d1e1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 977bd72b478d2106f687d3666aad574a63ca68ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969060"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス
 エディット ボックスに [[ビルド イベント] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) のビルド前またはビルド後イベントを直接入力したり、使用できるマクロの一覧からビルド前およびビルド後のマクロを選択したりできます。
 
 > [!NOTE]
 > プロジェクトが最新の状態で、ビルドがトリガーされない場合、ビルド前イベントは実行されません。
-
 
 ## <a name="ui-element-list"></a>UI 要素の一覧
  **コマンド ライン エディット ボックス**
@@ -54,7 +53,6 @@ ms.locfileid: "55939815"
 
 > [!NOTE]
 > .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。
-
 
  **[マクロ]**
 

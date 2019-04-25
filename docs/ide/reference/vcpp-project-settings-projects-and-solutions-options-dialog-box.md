@@ -18,21 +18,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd44ef0a239f85078856c785ea4b5e2e6050b46e
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789334"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>[VC++ プロジェクトの設定] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])
 このダイアログ ボックスを使用すると、ログ、パフォーマンス、サポートするファイルの種類に関連する [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] のビルド設定とプロジェクト設定を定義できます。
 
 ### <a name="to-access-this-dialog-box"></a>このダイアログ ボックスを表示するには
 
-1.  **[ツール]** メニューの **[オプション]** をクリックします。
+1. **[ツール]** メニューの **[オプション]** をクリックします。
 
-2.  **[プロジェクトおよびソリューション]** をクリックし、**[VC++ プロジェクトの設定]** をクリックします。
+2. **[プロジェクトおよびソリューション]** をクリックし、**[VC++ プロジェクトの設定]** をクリックします。
 
 ## <a name="build-logging"></a>[ビルドのログ]
  **はい**

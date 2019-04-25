@@ -16,17 +16,17 @@ f1_keywords:
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: 9a4d7baa970008c2de7a3bc28966f7edbad68b21
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819504"
 ---
 # <a name="android-debugger-properties"></a>Android のデバッガーのプロパティ
 
 プロパティ | 説明 | オプション
 --- | ---| ---
-デバッガーの種類 | デバッグするコードの種類を指定します。 | **ネイティブのみ**<br>**Java のみ**<br>
+[デバッガーのタイプ] | デバッグするコードの種類を指定します。 | **ネイティブのみ**<br>**Java のみ**<br>
 デバッグ ターゲット | デバッグに使うエミュレーターまたはデバイスを指定します。 エミュレーターが実行されていない場合は、"Android 仮想デバイス (AVD) マネージャー" を使ってデバイスを起動してください。
 起動するパッケージ | デバッグする *.apk* の場所を指定します。 アプリケーションをデバッグするときに特定のパッケージ (APK) が開始されるようにこのオプションを選択します。
 起動アクティビティ | アプリケーションの起動に使う Android アクティビティは、マニフェストで使われているものと同じでなければなりません。 *AndroidManifest.xml* からリストを取得して動的に設定するには、[適用] を選択します。

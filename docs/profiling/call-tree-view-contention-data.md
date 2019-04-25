@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0727709ce309ef35ca25896ff84a34577f1e7ef4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 969945260ee453e84ae2aeec0f28559ca11933a0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777012"
 ---
 # <a name="call-tree-view---contention-data"></a>コール ツリー ビュー - 競合データ
 [コール ツリー] ビューには、プロファイリングされるアプリケーションで走査された関数の実行パスが表示されます。 ツリーのルートは、アプリケーションまたはコンポーネントへのエントリ ポイントです。 各関数ノードには、その関数が呼び出したすべての関数、関数がブロックされた回数、および他のスレッドやプロセスとリソースを競合したために関数がブロックされた時間が一覧表示されます。
@@ -25,7 +25,7 @@ ms.locfileid: "56609619"
 ## <a name="highlight-the-execution-hot-path"></a>実行ホット パスの強調表示
  コール ツリー ビューでは、最も多くの競合が発生したプロセスまたは関数の実行パスを展開して強調表示できます。
 
--   最もアクティブなパスを表示するには、プロセスまたは関数を右クリックし、**[ホット パスの展開]** をクリックします。
+- 最もアクティブなパスを表示するには、プロセスまたは関数を右クリックし、**[ホット パスの展開]** をクリックします。
 
 ## <a name="set-the-call-tree-root-node"></a>コール ツリーのルート ノードの設定
  プロファイル実行の各プロセスは、ルート ノードとして表示されます。 コール ツリー ビューの開始ノードを設定するには、開始ノードとして設定するノードを右クリックし、**[ルートの設定]** をクリックします。

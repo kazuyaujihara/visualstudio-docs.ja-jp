@@ -14,25 +14,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: becf63a9945c8e12f3c306da757e288a3fe8134c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ebdfdb1503570e08f38eed8efd278830756e50fa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817169"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>方法: パフォーマンス セッションを手動で作成する
 パフォーマンス セッションは手動でも作成できます。 この場合、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でプロジェクトを開く必要はありません。 詳細については、[パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)に関する記事を参照してください。
 
 ### <a name="to-manually-create-a-performance-session"></a>パフォーマンス セッションを手動で作成するには
 
-1.  **[デバッグ]** メニューで、**[プロファイラー]**、**[パフォーマンス エクスプローラー]** の順にポイントし、**[新しいパフォーマンス セッション]** をクリックします。
+1. **[デバッグ]** メニューで、**[プロファイラー]**、**[パフォーマンス エクスプローラー]** の順にポイントし、**[新しいパフォーマンス セッション]** をクリックします。
 
      空のパフォーマンス セッションが**パフォーマンス エクスプ ローラー**に追加されます。
 
-2.  **[ターゲット]** を右クリックして **[ターゲット バイナリの追加]** をクリックします。
+2. **[ターゲット]** を右クリックして **[ターゲット バイナリの追加]** をクリックします。
 
-3.  **[ターゲット バイナリの追加]** ダイアログ ボックスで、ファイル名を選択して **[開く]** をクリックします。
+3. **[ターゲット バイナリの追加]** ダイアログ ボックスで、ファイル名を選択して **[開く]** をクリックします。
 
      新しいバイナリが追加されます。
 

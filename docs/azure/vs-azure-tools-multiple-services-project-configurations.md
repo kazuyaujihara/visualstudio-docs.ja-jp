@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b8930d288b5f37d59f3c14657aee045a6a95fb96
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 853920ac30b6e779c94bf82aa6c655bf81146d2e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555305"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Visual Studio での複数のサービス構成を使用した Azure プロジェクトの構成
 
@@ -28,7 +28,6 @@ Visual Studio の Azure クラウド サービス プロジェクトには、`Se
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
 サービス定義ファイルとサービス構成ファイルの基になるスキーマの詳細については、[.csdef XML スキーマ](/azure/cloud-services/schema-csdef-file)と [.cscfg XML スキーマ](/azure/cloud-services/schema-cscfg-file)に関する記事を参照してください。 サービス構成の詳細については、「[クラウド サービスの構成方法](/azure/cloud-services/cloud-services-how-to-configure-portal)」を参照してください。
-
 
 ## <a name="configuration-page"></a>[構成] ページ
 

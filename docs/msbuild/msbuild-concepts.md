@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 12f0c8f2235db4c5eb332d52a454bd0093a34b68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842790"
 ---
 # <a name="msbuild-concepts"></a>MSBuild の概念
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は、ビルド プラットフォームでソフトウェアを構築する方法を制御するために使用できる基本的な XML スキーマを提供します。 ビルド内のコンポーネントとその構築方法を指定するには、MSBuild の「プロパティ、アイテム、タスク、ターゲット」を使用します。

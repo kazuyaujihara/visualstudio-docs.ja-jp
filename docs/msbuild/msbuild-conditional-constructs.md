@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 045a7366546e85ad2e9588ce2a14077f8b18a331
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842561"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild の条件構造
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は、[Choose](../msbuild/choose-element-msbuild.md)、[When](../msbuild/when-element-msbuild.md)、[Otherwise](../msbuild/otherwise-element-msbuild.md) 要素で either/or 処理を行うためのメカニズムを提供します。

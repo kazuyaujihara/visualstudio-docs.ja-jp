@@ -11,12 +11,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d36b2cb0c4e8e7ddf9016302c9efcfae0710097c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568357"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>ドメイン固有言語ツールの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ ms.locfileid: "54805646"
   
  DSL ツールには次のツールが含まれています。  
   
--   さまざまなソリューション テンプレートを使用してドメイン固有言語の開発を始めるのに役立つ、プロジェクト ウィザード。  
+- さまざまなソリューション テンプレートを使用してドメイン固有言語の開発を始めるのに役立つ、プロジェクト ウィザード。  
   
--   ドメイン固有言語の定義を作成、編集するためのグラフィカル デザイナー。  
+- ドメイン固有言語の定義を作成、編集するためのグラフィカル デザイナー。  
   
--   ドメイン固有言語の定義が適切な形式であることを確認し、問題がある場合はエラーや警告を表示する検証エンジン。  
+- ドメイン固有言語の定義が適切な形式であることを確認し、問題がある場合はエラーや警告を表示する検証エンジン。  
   
--   ドメイン固有言語の定義を入力として受け取り、ソース コードを出力として生成するコード ジェネレーター。  
+- ドメイン固有言語の定義を入力として受け取り、ソース コードを出力として生成するコード ジェネレーター。  
   
 ## <a name="the-dsl-tools-solution"></a>DSL ツール ソリューション  
  ドメイン固有デザイナー ウィザードには、次のソリューション テンプレートが用意されています。  

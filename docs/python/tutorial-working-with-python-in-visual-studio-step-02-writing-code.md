@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430069"
 ---
 # <a name="step-2-write-and-run-code"></a>手順 2: コードを記述して実行する
 
-**前の手順:[新しい Python プロジェクトを作成する](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**前の手順: [新しい Python プロジェクトを作成する](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
 **ソリューション エクスプローラー**がプロジェクト ファイルを管理する場所であるのに対し、"*エディター*" ウィンドウは通常、ファイルの "*コンテンツ*" (ソース コードなど) を操作する場所です。 エディターは編集中のファイルの種類 を、プログラミング言語 (ファイル拡張子に基づく) などの状況から認識し、構文の色分け表示やオートコンプリートなど、その言語に適した機能を IntelliSense を使用して提供します。
 

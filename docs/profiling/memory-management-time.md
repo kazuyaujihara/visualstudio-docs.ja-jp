@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 442973edb18e75bafda8a9397eac799286c69dfa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963782"
 ---
 # <a name="memory-management-time"></a>メモリ管理時間
 タイムライン内のこれらのセグメントは、メモリ管理として分類されたブロック時間に関連付けられます。 このシナリオは、ページングなど、メモリ管理操作に関連付けられているイベントによって、スレッドがブロックされていることを意味します。 この期間中、コンカレンシー ビジュアライザーがメモリ管理としてカウントする API またはカーネルの状態で、スレッドがブロックされています。 これには、ページングやメモリの割り当てなどのイベントが含まれます。
