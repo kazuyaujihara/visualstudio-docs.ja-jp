@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d53c44a70818739e02c34071fd81b8bdfdec87f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f98a3211bebf832009b84fac0fc1305a4162c610
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976584"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668445"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>UML クラス ダイアグラムの操作のプロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ UML クラス図で追加できます*操作*クラスとインターフェイ�
 ## <a name="signature-of-an-operation"></a>操作の署名  
  操作のシグネチャは、UML クラス図のクラスまたはインターフェイスで操作を表すテキスト行です。 次の書式を使用します。  
 
- \+ OperationName (parameter1:Type1 [*]...]):ReturnType [\*]  
+ \+ OperationName (parameter1:Type1 [*]...):ReturnType [\*]  
 
  \+ パブリックな可視性を表します。 これ以外に指定できる値は、- (プライベート)、# (保護)、~ (パッケージ) です。  
 
@@ -48,7 +48,6 @@ UML クラス図で追加できます*操作*クラスとインターフェイ�
  これらは、UML クラス図のクラスまたはインターフェイス内の操作のプロパティです。  
 
  操作のプロパティを表示するダイアグラムで、クラスまたはインターフェイスで操作を右クリックし をクリックし、**プロパティ**します。 プロパティが表示されます、**プロパティ**ウィンドウ。  
-
 
 |      プロパティ       |   既定値    |                                                                                                                                                                                 説明                                                                                                                                                                                 |
 |---------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

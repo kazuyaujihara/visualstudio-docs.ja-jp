@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57874491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904471"
 ---
 
 1. IIS 管理コンソールを閉じて、もう一度開き、UI の更新された構成オプションを表示します。
