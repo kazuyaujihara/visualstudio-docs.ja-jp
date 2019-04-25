@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9662a504232c70662e40db54e3eda27aa4abe835
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938993"
 ---
 # <a name="task-base-class"></a>Task 基本クラス
 多くのタスクが最終的に <xref:Microsoft.Build.Utilities.Task> クラスから継承します。 このクラスは、それから派生するタスクにいくつかのパラメーターを追加します。 このドキュメントでは、これらのパラメーターを示します。

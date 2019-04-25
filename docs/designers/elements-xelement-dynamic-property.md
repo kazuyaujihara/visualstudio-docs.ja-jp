@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ff2071ba71d60db87332b0e23948d63ac1b2289
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845562"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (XElement 動的プロパティ)
 
@@ -30,9 +30,9 @@ elem.Elements[{namespaceName}localName]
 
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-`IEnumerable<XElement> Item(String expandedName)` 型のインデクサー。 このインデクサーは、目的の子要素の展開名を取得し、<xref:System.Collections.IEnumerable>`<`<xref:System.Xml.Linq.XElement>`>` コレクション内の一致する子要素を返します。
+`IEnumerable<XElement> Item(String expandedName)` 型のインデクサー。 このインデクサーは、目的の子要素の拡張名を取得し、<xref:System.Collections.IEnumerable>`<`<xref:System.Xml.Linq.XElement>`>` コレクション内の一致する子要素を返します。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 このプロパティは、<xref:System.Xml.Linq.XContainer.Elements(System.Xml.Linq.XName)?displayProperty=fullName> クラスの <xref:System.Xml.Linq.XContainer> メソッドに相当します。
 

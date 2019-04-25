@@ -9,12 +9,12 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6aec2dfe707fb7c7cbae6a3220cedade47e0c0c5
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: fc1d609bab25b6a8e0dd573807aa02fefbe87a71
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950177"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>方法: 要求レベルのプラグインを作成する
 
@@ -30,23 +30,23 @@ ms.locfileid: "58415552"
 
 ## <a name="to-create-a-request-level-plug-in"></a>要求レベルのプラグインを作成するには
 
-1.  **ソリューション エクスプローラー**で、ソリューションを右クリックし、**[追加]**、**[新しいプロジェクト]** の順に選択します。
+1. **ソリューション エクスプローラー**で、ソリューションを右クリックし、**[追加]**、**[新しいプロジェクト]** の順に選択します。
 
 2. 新しい**クラス ライブラリ** プロジェクトを作成します。
 
-3.  **ソリューション エクスプローラー**で、新しいクラス ライブラリの **[参照設定]** フォルダーを右クリックし、**[参照の追加]** を選択します。
+3. **ソリューション エクスプローラー**で、新しいクラス ライブラリの **[参照設定]** フォルダーを右クリックし、**[参照の追加]** を選択します。
 
      **[参照の追加]** ダイアログ ボックスが表示されます。
 
-4.  **[.NET]** タブをクリックします。スクロール ダウンし、**[Microsoft.VisualStudio.QualityTools.WebTestFramework]** を選択して、**[OK]** をクリックします。
+4. **[.NET]** タブをクリックします。スクロール ダウンし、**[Microsoft.VisualStudio.QualityTools.WebTestFramework]** を選択して、**[OK]** をクリックします。
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** への参照が**ソリューション エクスプローラー**内の **[参照設定]** フォルダーに追加されます。
 
-5.  **ソリューション エクスプローラー**で、Web パフォーマンス テスト要求のテスト プラグインの追加先であるロード テストを含んでいる Web パフォーマンスとロード テスト プロジェクトの最上位ノードを右クリックします。 **[参照の追加]** をクリックします。
+5. **ソリューション エクスプローラー**で、Web パフォーマンス テスト要求のテスト プラグインの追加先であるロード テストを含んでいる Web パフォーマンスとロード テスト プロジェクトの最上位ノードを右クリックします。 **[参照の追加]** をクリックします。
 
      **[参照の追加]** ダイアログ ボックスが表示されます。
 
-6.  **[プロジェクト]** タブ、**[クラス ライブラリ プロジェクト]**、**[OK]** の順に選択します。
+6. **[プロジェクト]** タブ、**[クラス ライブラリ プロジェクト]**、**[OK]** の順に選択します。
 
 7. **コード エディター**で、プラグインのコードを記述します。 まず、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> クラスから派生する新しいパブリック クラスを作成します。
 

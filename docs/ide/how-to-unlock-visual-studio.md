@@ -12,11 +12,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549203"
 ---
 # <a name="how-to-unlock-visual-studio"></a>方法: Visual Studio のロックを解除する
 
@@ -72,4 +72,4 @@ Microsoft アカウントか、職場または学校アカウントに関連付�
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio にサインイン](../ide/signing-in-to-visual-studio.md)
+* [Visual Studio へのサインイン](../ide/signing-in-to-visual-studio.md)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: febf742ca7a54a14d8de59c251bb8783cf76370a
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 3965fdaa085d609fd87bf070e9a38aa2079cc9b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899181"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Visual Studio で発行設定をインポートしてアプリケーションを Azure App Service に発行する
 
@@ -100,6 +100,7 @@ ms.locfileid: "58567881"
       </publishProfile>
     </publishData>
     ```
+
     通常、前述の *.publishsettings ファイルには、Visual Studio で使用できる 2 つの発行プロファイル (Web Deploy を使用して配置するものと、FTP を使用して配置するもの) が含まれています。 上記のコードは Web Deploy プロファイルを示しています。 いずれのプロファイルも、後でプロファイルをインポートするときにインポートされます。
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Visual Studio で発行設定をインポートして配置する

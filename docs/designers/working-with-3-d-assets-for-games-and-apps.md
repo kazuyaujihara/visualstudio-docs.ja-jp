@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ee4d850250abf0249ce1cccebd3408872b34fd6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844062"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>ゲームとアプリ用の 3D アセットを操作する
 

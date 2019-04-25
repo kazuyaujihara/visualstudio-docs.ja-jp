@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff36bf74249ec5266218060eedb879e4d796625c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778575"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>[オプション]、[テキスト エディター]、[JavaScript]、[IntelliSense]
 JavaScript での IntelliSense の動作設定を変更するには、 **[オプション]** ダイアログ ボックスの **[IntelliSense]** ページを使用します。 **[IntelliSense]** ページにアクセスするには、メニュー バーの **[ツール]** > **[オプション]** を選択し、**[テキスト エディター]** > **[JavaScript]** > **[IntelliSense]** の順に展開します。
@@ -59,7 +59,6 @@ JavaScript での IntelliSense の動作設定を変更するには、 **[オプ
 > [!CAUTION]
 > オブジェクトが複数の暗黙的な参照で無条件で定義されている場合、その一覧内の最後の参照を使用してオブジェクトが定義されます。
 
-
 **[Add a reference to the group] (グループへの参照の追加)**
 
 このオプションを使用すると、適切なファイルを参照して IntelliSense (.js) ファイルを追加できます。
@@ -70,8 +69,6 @@ JavaScript での IntelliSense の動作設定を変更するには、 **[オプ
 
 > [!NOTE]
 > Web プロジェクトでは、プロジェクトで参照されるリモート ファイルは既定でダウンロードされます。
-
-
 
 ## <a name="see-also"></a>関連項目
 

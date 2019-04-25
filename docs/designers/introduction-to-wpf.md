@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d15f0e8e5c5cbdac5a130804977adf90385adfe1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893924"
 ---
 # <a name="wpf-overview"></a>WPF の概要
 
@@ -224,9 +224,9 @@ End Namespace
 
 ほとんどのアプリケーションは、データの表示と編集の手段をユーザーに提供するために作成されます。 WPF アプリケーションの場合、データ格納とアクセスの機能は、SQL Server や ADO .NET などのテクノロジにより、すでに提供されています。 データがアクセスされ、アプリケーションの管理対象オブジェクトに読み込まれると、WPF アプリケーションの処理が開始します。 基本的に、これには 2 つの処理が伴います。
 
-1.  管理対象のオブジェクトからコントロールにデータをコピーします。これらのコントロールで、データを表示および編集できます。
+1. 管理対象のオブジェクトからコントロールにデータをコピーします。これらのコントロールで、データを表示および編集できます。
 
-2.  コントロールを使用してデータに対して行う変更が、必ず管理対象オブジェクトにもう一度コピーされるようにしてください。
+2. コントロールを使用してデータに対して行う変更が、必ず管理対象オブジェクトにもう一度コピーされるようにしてください。
 
 アプリケーションの開発を簡素化するために、WPF にはこれらの手順を自動的に実行する、データ バインディング エンジンが用意されています。 データ バインディング エンジンの中核となる単位は <xref:System.Windows.Data.Binding> クラスであり、その仕事はコントロール (バインディング ターゲット) をデータ オブジェクト (バインディング ソース) にバインドすることです。 この関係を次の図に示します。
 
@@ -575,11 +575,11 @@ WPF コントロールの既定のユーザー インターフェイスは、通
 
 この例では `Window.Resources` プロパティ要素を使用して、背景色リソースを実装しています。 このリソースは <xref:System.Windows.Window>のすべての子に使用できます。 次のように、リソースのスコープは多様です。この一覧では、解決される順序で各スコープが並べられています。
 
-1.  個々のコントロール (継承された <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> プロパティを使用)。
+1. 個々のコントロール (継承された <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> プロパティを使用)。
 
-2.  <xref:System.Windows.Window> または <xref:System.Windows.Controls.Page> (これも、継承された <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> プロパティを使用)。
+2. <xref:System.Windows.Window> または <xref:System.Windows.Controls.Page> (これも、継承された <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> プロパティを使用)。
 
-3.  <xref:System.Windows.Application> ( <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> プロパティを使用)。
+3. <xref:System.Windows.Application> ( <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> プロパティを使用)。
 
 このようなスコープの多様さのおかげで、リソースを柔軟に定義して共有できるようになります。
 

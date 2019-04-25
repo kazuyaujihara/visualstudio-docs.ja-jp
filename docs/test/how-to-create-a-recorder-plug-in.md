@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950255"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>方法:レコーダー プラグインを作成する
 
@@ -33,20 +33,20 @@ ms.locfileid: "58415902"
 
 ### <a name="to-create-a-recorder-plug-in"></a>レコーダー プラグインを作成するには
 
-1.  作成するレコーダー プラグインの対象となる Web パフォーマンス テストの Web パフォーマンスとロード テストのプロジェクトを含むソリューションを開きます。
+1. 作成するレコーダー プラグインの対象となる Web パフォーマンス テストの Web パフォーマンスとロード テストのプロジェクトを含むソリューションを開きます。
 
-2.  新しい**クラス ライブラリ** プロジェクトをソリューションに追加します 
+2. 新しい**クラス ライブラリ** プロジェクトをソリューションに追加します 
 
-3.  **ソリューション エクスプローラー**の新しいクラス ライブラリ プロジェクト フォルダーで、**[参照設定]** フォルダーを右クリックし、**[参照の追加]** を選択します。
+3. **ソリューション エクスプローラー**の新しいクラス ライブラリ プロジェクト フォルダーで、**[参照設定]** フォルダーを右クリックし、**[参照の追加]** を選択します。
 
     > [!TIP]
     > 新しいクラス ライブラリ プロジェクト フォルダーの例は、**[RecorderPlugins]** です。
 
      **[参照の追加]** ダイアログ ボックスが表示されます。
 
-4.  **[.NET]** タブを選択します。
+4. **[.NET]** タブを選択します。
 
-5.  スクロール ダウンして、**[Microsoft.VisualStudio.QualityTools.WebTestFramework]** をクリックし、**[OK]** をクリックします。
+5. スクロール ダウンして、**[Microsoft.VisualStudio.QualityTools.WebTestFramework]** をクリックし、**[OK]** をクリックします。
 
      **[Microsoft.VisualStudio.QualityTools.WebTestFramework]** が**ソリューション エクスプローラー**の **[参照設定]** フォルダーに追加されます。
 
@@ -88,11 +88,11 @@ ms.locfileid: "58415902"
 
 ### <a name="execute-the-recorder-plug-in"></a>レコーダー プラグインの実行
 
-1.  新しい Web パフォーマンス テストを作成します。
+1. 新しい Web パフォーマンス テストを作成します。
 
      **[WebTestRecorderPlugins の有効化]** ダイアログ ボックスが表示されます。
 
-2.  レコーダー プラグインのチェック ボックスをオンにし、**[OK]** をクリックします。
+2. レコーダー プラグインのチェック ボックスをオンにし、**[OK]** をクリックします。
 
      Web パフォーマンス テストが記録を完了した後で、新しいレコーダー プラグインが実行されます。
 

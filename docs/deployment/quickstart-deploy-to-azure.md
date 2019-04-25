@@ -1,4 +1,4 @@
-﻿---
+---
 title: Azure App Service に発行する
 ms.date: 01/29/2019
 ms.topic: quickstart
@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - azure
 ms.openlocfilehash: 114c6aca7ec7ed05858868b22f7547b0a071420f
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927721"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Visual Studio を使用して Azure App Service に Web アプリを発行する
 

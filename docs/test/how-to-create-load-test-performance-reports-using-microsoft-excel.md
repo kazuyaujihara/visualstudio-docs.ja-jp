@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fb820ccc72e0070f947e362def1da137d19d8494
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950159"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>方法:Microsoft Excel を使用してロード テスト パフォーマンス レポートを作成する
 
@@ -24,9 +24,9 @@ ms.locfileid: "55955597"
 
 次の 2 種類のロード テスト レポートを作成できます。
 
--   **比較の実行** 表と横棒グラフを使用して 2 つのロード テストの結果のデータを比較したレポートのセットが作成されます。
+- **比較の実行** 表と横棒グラフを使用して 2 つのロード テストの結果のデータを比較したレポートのセットが作成されます。
 
--   **傾向** 複数のロード テストの結果に基づく傾向分析を生成できます。 結果は折れ線グラフで表示されますが、データをピボットテーブルで表示することもできます。
+- **傾向** 複数のロード テストの結果に基づく傾向分析を生成できます。 結果は折れ線グラフで表示されますが、データをピボットテーブルで表示することもできます。
 
 > [!TIP]
 > また、概要ビュー、グラフ ビュー、およびテーブル ビューのデータをコピー アンド ペーストすることにより、Microsoft Word レポートを手動で作成できます。 「[方法:Microsoft Word を使用してロード テスト パフォーマンス レポートを手動で作成する](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)」を参照してください。

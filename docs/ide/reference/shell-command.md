@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc571c40dfcc1074b157b850c8b6f3f5e4649563
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 98163080c44a46330a4ba792f2ddde680c75b074
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990048"
 ---
 # <a name="shell-command"></a>Shell コマンド
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 内から実行可能プログラムを起動します。
@@ -56,14 +56,13 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 
  任意。 実行可能ファイルの出力が **[出力]** ウィンドウに表示されるように指定します。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
  /dir、/o、/c の各スイッチは、`Tools.Shell` の直後に指定する必要があります。 実行可能ファイルの名前の後に指定した内容は、その実行可能ファイルにコマンド ライン引数として渡されます。
 
  定義済みの `Shell` エイリアスは、`Tools.Shell` の代わりに使用できます。
 
 > [!CAUTION]
 > `path` 引数でディレクトリ パスとファイル名を指定する場合は、次のように、リテラル二重引用符 (""") でパス名全体を囲む必要があります。
-
 
 ```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
@@ -77,7 +76,6 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 
 > [!CAUTION]
 > パス文字列をリテラル二重引用符 (""") で囲まなかった場合、Windows では、文字列のうち最初の空白までの部分のみが使用されます。 たとえば、上記のパス文字列を引用符で適切に囲まなかった場合、Windows では、C:\ ルート ディレクトリにある "Program" というファイルが検索されます。 C:\Program.exe という実行可能ファイルが実際は使用可能な場合、不正改ざんによってインストールされたファイルであっても、Windows では目的の "c:\Program Files\SomeFile.exe" プログラムではなく、そのプログラムの実行が試行されます。
-
 
 ## <a name="example"></a>例
  次のコマンドでは xcopy.exe を使用して、ファイル `MyText.txt` を `Text` フォルダーにコピーします。 xcopy.exe からの出力は、**コマンド ウィンドウ**と **[出力]** ウィンドウの両方に表示されます。

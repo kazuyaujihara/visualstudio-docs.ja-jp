@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961692"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>手順 4: Django Web プロジェクト テンプレートを使用する
 
@@ -217,6 +217,6 @@ urlpatterns = [
 
 ## <a name="go-deeper"></a>詳しい説明
 
-- [Web アプリを Azure App Service にデプロイする](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Azure App Service への Web アプリの展開](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [最初の Django アプリの作成、パート 4 - フォームと汎用ビュー](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - GitHub のチュートリアルのソース コード:[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8496e31778765ed92ddca55efbb9e4747c8df81e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e6784ab59580df898e2f5f705984f13a3f94f73a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939158"
 ---
 # <a name="target-build-order"></a>ターゲットのビルド順序
 あるターゲットへの入力が別のターゲットの出力に依存する場合、ターゲットの順序を指定する必要があります。 以下の属性を使用して、ターゲットを実行する順序を指定できます。
@@ -104,21 +104,21 @@ ms.locfileid: "56608826"
 ## <a name="determine-the-target-build-order"></a>ターゲットのビルド順序の決定
  MSBuild では、ターゲットのビルド順序を次のように決定します。
 
-1.  `InitialTargets` ターゲットが実行されます。
+1. `InitialTargets` ターゲットが実行されます。
 
-2.  **-target** スイッチによってコマンドラインで指定されたターゲットが実行されます。 コマンド ラインでターゲットが指定されていない場合、`DefaultTargets` ターゲットが実行されます。 どちらも存在しない場合は、検出された最初のターゲットが実行されます。
+2. **-target** スイッチによってコマンドラインで指定されたターゲットが実行されます。 コマンド ラインでターゲットが指定されていない場合、`DefaultTargets` ターゲットが実行されます。 どちらも存在しない場合は、検出された最初のターゲットが実行されます。
 
-3.  ターゲットの `Condition` 属性が評価されます。 `Condition` 属性が存在し、`false` と評価された場合、ターゲットは実行されず、ビルドにはそれ以上影響しません。
+3. ターゲットの `Condition` 属性が評価されます。 `Condition` 属性が存在し、`false` と評価された場合、ターゲットは実行されず、ビルドにはそれ以上影響しません。
 
     `BeforeTargets` または `AfterTargets` の条件付きターゲットをリスとしているターゲットは、やはり決められた順序で実行します
 
-4.  ターゲットが実行またはスキップされる前に、その `Condition` 属性が存在していなかった場合または `false` に評価されなかった場合、その `DependsOnTargets` ターゲットが実行されます。
+4. ターゲットが実行またはスキップされる前に、その `Condition` 属性が存在していなかった場合または `false` に評価されなかった場合、その `DependsOnTargets` ターゲットが実行されます。
 
-5.  あるターゲットが実行またはスキップされる前に、そのターゲットを `BeforeTargets` 属性に一覧表示しているターゲットが実行されます。
+5. あるターゲットが実行またはスキップされる前に、そのターゲットを `BeforeTargets` 属性に一覧表示しているターゲットが実行されます。
 
-6.  あるターゲットが実行される前には、その `Inputs` 属性と `Outputs` 属性が比較されます。 対応する入力ファイルに対して最新ではない出力ファイルがあると MSBuild が判断した場合、MSBuild はターゲットを実行します。 それ以外の場合は、MSBuild はターゲットをスキップします。
+6. あるターゲットが実行される前には、その `Inputs` 属性と `Outputs` 属性が比較されます。 対応する入力ファイルに対して最新ではない出力ファイルがあると MSBuild が判断した場合、MSBuild はターゲットを実行します。 それ以外の場合は、MSBuild はターゲットをスキップします。
 
-7.  あるターゲットが実行またはスキップされると、その後、そのターゲットを `AfterTargets` 属性に一覧表示しているターゲットが実行されます。
+7. あるターゲットが実行またはスキップされると、その後、そのターゲットを `AfterTargets` 属性に一覧表示しているターゲットが実行されます。
 
 ## <a name="see-also"></a>関連項目
 - [ターゲット](../msbuild/msbuild-targets.md)

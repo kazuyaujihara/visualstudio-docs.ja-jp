@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: d5e59a74d67bd7dc6afed622863f4e501fe95bee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924215"
 documentType: LandingData
 title: Visual Studio Tools for AI
 metadata:
@@ -20,30 +14,30 @@ metadata:
 abstract:
   description: Visual Studio Tools for AI は、ディープ ラーニング ソリューションをビルド、テスト、展開するための統合開発環境です。 クイック スタート、チュートリアル、そしてサンプルを使って AI のツールの使い方を説明します。
 sections:
-- title: 5 分間のクイックスタート
-  items:
-  - type: paragraph
-    text: 次を使ったディープ ラーニング ソリューションの実行方法について説明します。
-  - type: list
-    style: icon48
+  - title: 5 分間のクイックスタート
     items:
-    - image:
-        src: media/Tensorflow_logo.png
-      text: TensorFlow と Python
-      href: tensorflow-local.md
-- title: ステップ バイ ステップのチュートリアル
-  items:
-  - type: paragraph
-    text: ディープ ラーニング ソリューションの構築方法について説明します。
-  - type: list
-    style: ordered
+      - type: paragraph
+        text: 次を使ったディープ ラーニング ソリューションの実行方法について説明します。
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: media/Tensorflow_logo.png
+            text: TensorFlow と Python
+            href: tensorflow-local.md
+  - title: ステップ バイ ステップのチュートリアル
     items:
-    - html: <a href="/visualstudio/ai/tensorflow-vm">クラウドで TensorFlow モデルをトレーニングする</a>
-- title: サンプル
-  items:
-  - type: list
-    style: unordered
-    className: spaced noBullet
+      - type: paragraph
+        text: ディープ ラーニング ソリューションの構築方法について説明します。
+      - type: list
+        style: ordered
+        items:
+          - html: <a href="/visualstudio/ai/tensorflow-vm">クラウドで TensorFlow モデルをトレーニングする</a>
+  - title: サンプル
     items:
-    - html: <a href="https://github.com/Microsoft/samples-for-ai">サンプル リポジトリ</a>
-    - html: <a href="https://gallery.cortanaintelligence.com/projects">Machine Learning ギャラリー</a>
+      - type: list
+        style: unordered
+        className: spaced noBullet
+        items:
+          - html: '<a href="https://github.com/Microsoft/samples-for-ai">サンプル リポジトリ</a>'
+          - html: '<a href="https://gallery.cortanaintelligence.com/projects">Machine Learning ギャラリー</a>'

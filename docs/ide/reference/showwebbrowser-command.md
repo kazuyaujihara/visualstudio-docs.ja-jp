@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f6d8249503ed775d584c913d685ae35473134be
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950642"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser コマンド
 
@@ -44,7 +44,7 @@ View.ShowWebBrowser URL [/new][/ext]
 
  任意。 IDE の外部にある既定の Web ブラウザーにページが表示されるように指定します。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
  **ShowWebBrowser** コマンドのエイリアスは **navigate** または **nav** です。
 
 ## <a name="example"></a>例

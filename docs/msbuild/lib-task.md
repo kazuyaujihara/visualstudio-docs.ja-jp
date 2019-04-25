@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51534979a96e0fb924d164dd1cc8d2fcc7bab04a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817261"
 ---
 # <a name="lib-task"></a>LIB タスク
 Microsoft 32-Bit Library Manager ツール (*lib.exe*) をラップします。 Library Manager は、COFF (Common Object File Format) オブジェクト ファイルのライブラリを作成および管理します。 また、エクスポートした定義を参照するためのエクスポート ファイルやインポート ライブラリも作成できます。 詳細については、「[LIB リファレンス](/cpp/build/reference/lib-reference)」と「[LIB の実行](/cpp/build/reference/running-lib)」を参照してください。

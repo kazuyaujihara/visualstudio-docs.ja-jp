@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f56491a8268e939f7bd455c4afef6813116ef9f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62835124"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Web パフォーマンス テストへのデータ ソースの追加
 
@@ -34,7 +34,9 @@ ms.locfileid: "55950605"
 
 ## <a name="create-a-sql-database"></a>SQL データベースの作成
 
-1. Visual Studio Enterprise をお持ちでない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ページからダウンロードできます。
+::: moniker range="vs-2017"
+
+1. Visual Studio Enterprise をお持ちでない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ページからダウンロードできます。
 
 2. SQL データベースを作成します。
 
@@ -59,6 +61,38 @@ ms.locfileid: "55950605"
 7. データをフィールドに追加します。
 
      ![フィールドにデータを追加する](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Visual Studio Enterprise をお持ちでない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページからダウンロードできます。
+
+2. SQL データベースを作成します。
+
+     ![新しい SQL データベースを追加する](../test/media/web_test_databinding_sql_addnewdb.png)
+
+3. データベース プロジェクトを作成します。
+
+     ![データベースから新しいプロジェクトを作成する](../test/media/web_test_databinding_sql_addnewdbproject.png)
+
+4. データベース プロジェクトにテーブルを追加します。
+
+     ![データベース プロジェクトに新しいテーブルを追加する](../test/media/web_test_databinding_sql_addnewdbtablename.png)
+
+5. フィールドをテーブルに追加します。
+
+     ![テーブルにフィールドを追加する](../test/media/web_test_databinding_sql_addnewdbaddfields.png)
+
+6. データベース プロジェクトを発行します。
+
+     ![ソリューション エクスプローラーからデータベース プロジェクトを発行する](../test/media/web_test_databinding_sql_addnewdbpublish.png)
+
+7. データをフィールドに追加します。
+
+     ![フィールドにデータを追加する](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
 
 ## <a name="add-the-data-source"></a>データ ソースの追加
 

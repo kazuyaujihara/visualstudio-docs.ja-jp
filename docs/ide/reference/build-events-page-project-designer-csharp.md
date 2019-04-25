@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49edb08b35b3006901201ccc880a5e74da92f834
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 25ea62284698de9d57cbcbefa73b950af8c42a6f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790902"
 ---
 # <a name="build-events-page-project-designer-c"></a>[ビルド イベント] ページ (プロジェクト デザイナー) (C#)
 **プロジェクト デザイナー**の **[ビルド イベント]** ページを使用して、ビルド構成の手順を指定します。 また、あらゆるビルド後イベントを実行する条件を指定することもできます。 詳細については、「[方法 :ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)」と「[方法:ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)」を参照してください。
@@ -35,12 +35,10 @@ ms.locfileid: "55948317"
 > [!NOTE]
 > プロジェクトが最新の状態で、ビルドがトリガーされない場合、ビルド前イベントは実行されません。
 
-
  **ビルド後に実行するコマンド ライン** ビルド終了後に実行する任意のコマンドを指定します。 長いコマンドを入力するには、**[ビルド後の編集]** をクリックして **[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス**を表示します。
 
 > [!NOTE]
 > .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。
-
 
  **ビルド後イベントの実行** 次の表に示すように、実行するビルド後イベントの以下の条件を指定します。
 

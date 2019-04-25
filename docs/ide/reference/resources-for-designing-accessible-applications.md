@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b79d1f95b6aab700de060a3749374e9ecb48c229
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7fe2a4b57fda3ab861b5471e1af70cd4bfcc55e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811782"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>ユーザー補助アプリケーションのデザイン リソース
 
@@ -43,13 +43,13 @@ ms.locfileid: "55952668"
 
 ## <a name="websites"></a>Websites
 
--   [チュートリアル: Image コントロール、Menu コントロール、AutoPostBack を使用する際のユーザー補助のガイドライン](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) この記事では、ユーザー補助コントロールをサンプル Web ページに含めるための手順を説明します。 Web 用のユーザー補助設計のヒントも示します。
+- [チュートリアル: Image コントロール、Menu コントロール、AutoPostBack を使用する際のユーザー補助のガイドライン](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) この記事では、ユーザー補助コントロールをサンプル Web ページに含めるための手順を説明します。 Web 用のユーザー補助設計のヒントも示します。
 
--   **ユーザー補助機能を持つ Web ページを DHTML を使って作成** この技術情報には、ユーザー補助機能を持つ HTML 4.0 要素およびユーザー補助機能を持つ Web 設計のヒントが一覧にしてあります。 詳細については、「[Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx)」(ユーザー補助機能を持つ Web ページを DHTML で作成する) をご覧ください。
+- **ユーザー補助機能を持つ Web ページを DHTML を使って作成** この技術情報には、ユーザー補助機能を持つ HTML 4.0 要素およびユーザー補助機能を持つ Web 設計のヒントが一覧にしてあります。 詳細については、「[Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx)」(ユーザー補助機能を持つ Web ページを DHTML で作成する) をご覧ください。
 
 ### <a name="third-party-resources"></a>サードパーティのリソース
 
--   **W3C (World Wide Web Consortium) の WAI (Web Accessibility Initiative)** この Web サイトには、ユーザー補助機能を持つ Web サイトの開発に関するガイドラインと技術情報が示されています。 詳細については、「[https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)」を参照してください。
+- **W3C (World Wide Web Consortium) の WAI (Web Accessibility Initiative)** この Web サイトには、ユーザー補助機能を持つ Web サイトの開発に関するガイドラインと技術情報が示されています。 詳細については、「[https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 7544d3aa72bb981a35b3c7fc63db3f397f8f26dd
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: ae4d824a4746889447650efdb4dada061b7c712b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933273"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core の概要
 
@@ -63,6 +63,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
+
 ASP.NET Core アプリにより、その main メソッドで Web サーバーが作成されます。[`WebHostBuilder`](/aspnet/core/fundamentals/hosting) のインスタンスを介してホストが構成され、起動されます。 このビルダーは、ホストの構成を可能にするメソッドを提供します。 テンプレート アプリで、次の構成が使用されます。
 
 * `UseKestrel`:Kestrel サーバーがアプリにより使用されることを指定します
@@ -104,8 +105,8 @@ public class Startup
 
 このスタートアップ クラスは次の規則に常に従う必要があります。
 
- - 常にパブリックに設定する必要があります
- - `ConfigureServices` と `Configure` という 2 つのパブリック メソッドが含まれている必要があります
+- 常にパブリックに設定する必要があります
+- `ConfigureServices` と `Configure` という 2 つのパブリック メソッドが含まれている必要があります
 
 `ConfigureServices` メソッドは、アプリで使用されるサービスを定義します。
 
@@ -218,7 +219,6 @@ MVC の使用方法については、「[Overview of ASP.NET Core MVC](/aspnet/c
 9. `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy` にアクセスしてみてください。`xxxx` はポート番号に変更します。次のように表示されるはずです。
 
     ![引数を指定し、ブラウザーでアプリを実行](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

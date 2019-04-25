@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f7488353cd4c64b0afca27060c364a1f9ddc6f8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950435"
 ---
 # <a name="start-command"></a>Start コマンド
 スタートアップ プロジェクトのデバッグを開始します。
@@ -34,7 +34,7 @@ Debug.Start [address]
 
  任意。 プログラムの実行を中断するアドレス。ソース コードでのブレークポイントに似ています。 この引数は、デバッグ モードでのみ有効です。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
  **Start** コマンドを実行すると、指定したアドレスまで RunToCursor 操作が実行されます。
 
 ## <a name="example"></a>例
