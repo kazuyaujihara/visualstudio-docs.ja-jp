@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a33b8a3f7cfe9dea56ca7abc0f2e82506e3edef1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 369bad5a66ac4a3c41a1a3e22941b11ef27902d2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385916"
 ---
 # <a name="createitem-task"></a>CreateItem タスク
 項目コレクションに入力項目を設定します。 これにより、リスト間で項目をコピーできるようになります。
 
 > [!NOTE]
->  このタスクは非推奨とされます。 .NET Framework 3.5 以降、項目グループは [Target](../msbuild/target-element-msbuild.md) 要素内に配置できます。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。
+> このタスクは非推奨とされます。 .NET Framework 3.5 以降、項目グループは [Target](../msbuild/target-element-msbuild.md) 要素内に配置できます。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。
 
 ## <a name="attributes"></a>属性
  `CreateItem` タスクのパラメーターの説明を次の表に示します。

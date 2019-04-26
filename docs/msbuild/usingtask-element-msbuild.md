@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b97999b7a6aa56dc9be17d853c306c71a5ff290
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411004"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 要素 (MSBuild)
 [Task](../msbuild/task-element-msbuild.md) 要素で参照されているタスクを、タスクの実装が含まれているアセンブリにマップします。
@@ -69,7 +69,7 @@ ms.locfileid: "56645746"
  環境変数、コマンド ライン プロパティ、プロジェクト レベル プロパティ、およびプロジェクト レベル項目は、直接、またはインポートされたプロジェクト ファイルを通じて、プロジェクト ファイルに含まれる `UsingTask` 要素内で参照できます。 詳細については、[タスク](../msbuild/msbuild-tasks.md)に関する記事を参照してください。
 
 > [!NOTE]
->  MSBuild エンジンを使用してグローバルに登録された *.tasks* ファイルの 1 つから `UsingTask` 要素が使用されている場合、プロジェクトレベル プロパティおよび項目は意味を持ちません。 プロジェクト レベルの値は、MSBuild に対してグローバルなプロパティではありません。
+> MSBuild エンジンを使用してグローバルに登録された *.tasks* ファイルの 1 つから `UsingTask` 要素が使用されている場合、プロジェクトレベル プロパティおよび項目は意味を持ちません。 プロジェクト レベルの値は、MSBuild に対してグローバルなプロパティではありません。
 
  MSBuild 4.0 では、UsingTask を *.overridetask* ファイルから読み込むことができます。
 

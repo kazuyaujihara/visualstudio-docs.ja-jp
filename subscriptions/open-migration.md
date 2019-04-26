@@ -7,12 +7,12 @@ ms.date: 07/02/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプション管理ポータルへのオープン ライセンス移行の開始について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0e3ad14f48aaa461b7c70507cd4501067eacc789
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821732"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Visual Studio サブスクリプション管理ポータルへのオープン ライセンス移行の開始
 
@@ -38,7 +38,6 @@ ms.locfileid: "56843196"
 
 - お客様に代わってサブスクリプションを管理するパートナーは、管理ポータルでの登録が必要です。 アクセスするためのさまざまな方法を以下に示します (追加オープンのプロセスと似ています)。
 
-
 ## <a name="existing-partners-adding-a-new-license"></a>新しいライセンスを追加する既存のパートナー
 
 これは [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に既にアクセスでき、管理が必要な Visual Studio サブスクリプションによるオープン ライセンスの注文を行ったパートナーに適用されます。
@@ -48,7 +47,6 @@ ms.locfileid: "56843196"
 - 契約のドロップダウンを選択し、**[+New Open License]\(+新しいオープン ライセンス\)** のオプションが表示されるまで下にスクロールします。
 
 - ポップアップ パネルで、パートナーが契約にある認証番号、ライセンス番号、お客様のメール アドレスを入力し、チェックボックスをオンにして、**[送信]** をクリックします。
-
 
 > [!NOTE]
 > パートナーがオープン ライセンスに追加されたことを通知する電子メールがお客様に届きます。 パートナーのアクセス権は削除することができます。
@@ -67,7 +65,6 @@ ms.locfileid: "56843196"
 
 - これで、パートナーがオープン ライセンスのサブスクリプションを管理できるようになります。
 
-
 > [!NOTE]
 > パートナーがオープン ライセンスに追加されたことを通知する電子メールがお客様に届きます。 パートナーのアクセス権は削除することができます。
 
@@ -80,7 +77,6 @@ ms.locfileid: "56843196"
 - 認識されているユーザーではないというエラーが表示されます。
 
 - パートナーが **OLP パートナー**の登録オプションを選択し、注文に使用した認証番号、ライセンス番号、お客様のメール アドレスを入力して、チェックボックスをオンにし、**[送信]** をクリックします。
-
 
 > [!NOTE]
 > パートナーがオープン ライセンスに追加されたことを通知する電子メールがお客様に届きます。 パートナーのアクセス権は削除することができます。

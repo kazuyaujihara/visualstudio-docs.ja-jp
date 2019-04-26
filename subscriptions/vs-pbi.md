@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Power BI Pro サブスクリプションについて説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 176ce1d13faad7143da591f4f04f9feee1b5b2a0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: bb13ad93095a5a4d0e7c94ae24889220477feb0a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948820"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Power BI Pro
 
@@ -37,16 +37,13 @@ Power BI Pro を使うには、アカウントを設定するか、既存のア�
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro 特典アカウント作成](_img/vs-pbi/vs-pbi-create-account-cropped.png)
 
-
 5. 次に、ユーザー ID とパスワードを作成します。  アカウントが既にあるときに新しいものを作成している場合は、既存のアカウントで使用しているものとは別の会社名を指定する必要があります。  **[アカウントの作成]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro 特典ユーザー ID の作成](_img/vs-pbi/vs-pbi-create-user-id-cropped.png)
 
-
 6. 実在の人物がアカウントを作成していることを確認するために、確認コードの入力をお願いしています。  電話番号を入力し、電話またはテキスト メッセージでコードを受信するかどうかを選択してください。  **[メールを送信]** または **[電話をかける]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro 特典ロボットではない](_img/vs-pbi/vs-pbi-robot1-cropped.png)
-
 
 7. 受け取ったコードを入力し、**[次へ]** をクリックします。
    > [!div class="mx-imgBorder"]
@@ -55,7 +52,6 @@ Power BI Pro を使うには、アカウントを設定するか、既存のア�
 8. 連絡先情報を入力して、**[次へ]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro 特典の連絡先情報](_img/vs-pbi/vs-pbi-contact-cropped.png)
-
 
 9. 次のページで、Power BI Pro Developer (MSDN) サブスクリプション料金が $0.00 であることを確認します。  **[次へ]** をクリックします。
 
@@ -66,7 +62,6 @@ Power BI Pro を使うには、アカウントを設定するか、既存のア�
 11. 次のページで、Power BI Pro の使用を開始するための設定が済んだことを確認します。  このページにはサインイン ページへのリンクがあります。  サインイン ページへのリンクとユーザー ID を記録することをお勧めします   (アカウントを設定するときに指定したアドレスにウェルカム メールも送信されます)。質問がある場合に使用できる自動 Office 365 アシスタント ウィンドウも表示されることがあります。  **[さあ、始めましょう]** をクリックして続行します。
     > [!div class="mx-imgBorder"]
     > ![Power BI Pro 特典すべて設定済み](_img/vs-pbi/vs-pbi-all-set-cropped.png)
-
 
 12. これで、Power BI Pro のアカウントがセットアップされ、ユーザーおよびドメイン管理、Office のソフトウェアのインストール、および Office 365 についての学習を行うことができる Office 365 管理センターが表示されます。  それで完了です!  準備ができました。
 
@@ -86,9 +81,7 @@ Power BI Pro を使うには、アカウントを設定するか、既存のア�
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
 
-
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
-
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 ### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>Q:特典が無料の場合に、クレジット カード番号を入力しなければならないのはなぜですか。
@@ -103,27 +96,26 @@ A: はい。2 つの重要な注意事項はありますが、運用環境で使
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Q:Power BI Pro をアクティブ化しようとすると、"You already have an account through work\(作業中に既にアカウントを登録しています\)" というメッセージが表示されます。  特典はまだ使用できますか。
 A: はい。  このメッセージは、管理者ではないアクティブな Office 365 テナントが既に含まれるドメインにログオンしていることを示しています。  Power BI Pro をテナントに追加するには、そのテナントの管理者である必要があります。  この問題を解決するには、次の手順に従って独自のテナントを作成します。
-1.  作業中に既にアカウントを登録しているというメッセージが表示されたら、**[新しいアカウントを作成]** をクリックします。
+1. 作業中に既にアカウントを登録しているというメッセージが表示されたら、**[新しいアカウントを作成]** をクリックします。
 
-2.  次の画面で連絡先情報を入力して、**[次へ]** をクリックします。
+2. 次の画面で連絡先情報を入力して、**[次へ]** をクリックします。
 
-3.  ユーザー ID とパスワードを作成します。  無料プランの特典を利用するには、**. onmicrosoft.com** をドメインとして選択してください。 **[アカウントの作成]** をクリックします。
+3. ユーザー ID とパスワードを作成します。  無料プランの特典を利用するには、**. onmicrosoft.com** をドメインとして選択してください。 **[アカウントの作成]** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![Power BI Pro 特典によるプライベート テナント ユーザー ID の作成](_img/vs-pbi/vs-pbi-work-userid.png)
 
-4.  プロセスの残りの手順は、記事の本文に示されている手順 6 以降と同じです。
-
+4. プロセスの残りの手順は、記事の本文に示されている手順 6 以降と同じです。
 
 ### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>Q:政府機関向けのテナントを使用しています。  特典を使用できますか。
 A: いいえ。  Power BI Pro 特典は、政府機関向けのテナントには追加できません。
 
 ## <a name="support-resources"></a>サポート リソース
--  Power BI Pro のヘルプが必要ですか。
+- Power BI Pro のヘルプが必要ですか。
     - [オンライン ドキュメント](/power-bi/)を参照してください。
     - サインアップ時の問題ですか。  「[個人として Power BI にサインアップする](/power-bi/service-self-service-signup-for-power-bi)」を参照してください。
     - よくある問題を調べ、コミュニティからサポートを受けるか、[サポート ページ](https://powerbi.microsoft.com/support/)でサポート チケットを送信してください。
--  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
--  Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="next-steps"></a>次の手順
 Power BI Pro 特典をアクティブ化にする場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスしてください

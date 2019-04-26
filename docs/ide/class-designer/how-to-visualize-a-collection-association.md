@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e734b84bb8c386c60f3fef9061d74b8b31277cec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 09c23b59711a95f0729555acfd0203160bd9995d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975074"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>方法: クラス デザイナーでコレクションの関連付けをビジュアル化する
 
@@ -28,11 +28,11 @@ ms.locfileid: "55910950"
 
 ## <a name="to-create-a-collection-association"></a>コレクションの関連付けを作成するには
 
-1.  コードで、型自体が厳密に型指定されるコレクションであるプロパティまたはフィールドを作成します。
+1. コードで、型自体が厳密に型指定されるコレクションであるプロパティまたはフィールドを作成します。
 
-2.  クラス ダイアグラムで、プロパティとフィールドが表示されるようにクラスを展開します。
+2. クラス ダイアグラムで、プロパティとフィールドが表示されるようにクラスを展開します。
 
-3.  クラスで、フィールドまたはプロパティを右クリックし、**[コレクションの関連として表示]** を選択します。
+3. クラスで、フィールドまたはプロパティを右クリックし、**[コレクションの関連として表示]** を選択します。
 
 プロパティまたはフィールドは、収集された型にリンクする関連行として表示されます。
 

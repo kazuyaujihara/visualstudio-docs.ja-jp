@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb176f09fca04d177ef79d64a6061835669efbe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 826031c2030c2ed8662ff98517a36c1a7ade3cde
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386642"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>方法: インストルメンテーションを特定の関数に制限する
 インストルメンテーションとデータ収集は、1 つ以上の関数に制限することができます。これを行うには、**[パフォーマンス セッション]** のプロパティ ページまたはターゲット バイナリのプロパティ ページの **[詳細]** ページでオプションを設定します。
@@ -27,7 +27,7 @@ ms.locfileid: "56620513"
   このような方法でデータ収集を制限できるのは、インストルメンテーション プロファイル方式が選択されている場合のみです。
 
 > [!NOTE]
->  **[パフォーマンス セッション]** プロパティ ページの **[詳細]** ページで、プロファイリング ツール [VSInstr](../profiling/vsinstr.md) コマンド ライン インストルメンテーション ツールで使える他のオプションを設定することもできます。
+> **[パフォーマンス セッション]** プロパティ ページの **[詳細]** ページで、プロファイリング ツール [VSInstr](../profiling/vsinstr.md) コマンド ライン インストルメンテーション ツールで使える他のオプションを設定することもできます。
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-performance-session"></a>インストルメンテーションをパフォーマンス セッション内の特定の関数に制限するには
 
@@ -44,7 +44,7 @@ ms.locfileid: "56620513"
     `FuncSpec` は、名前空間と関数の名前です。 その形式は `Namespace`**::**`FunctionName` です。 複数の関数は、セミコロン (;) を使用して区切ります。 1 つまたは複数の文字にワイルドカードを指定する場合は、アスタリスク (\*) を使います。 たとえば、**/include:MyNS::\\*** は、MyNS 名前空間のすべての関数を指定します。
 
    > [!NOTE]
-   >  バイナリ内の関数を一覧表示するには、プロファイル ツールのインストール ディレクトリ ([コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事を参照) でコマンド プロンプト ウィンドウを開き、**vsinstr /DumpFuncs** と入力します。
+   > バイナリ内の関数を一覧表示するには、プロファイル ツールのインストール ディレクトリ ([コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事を参照) でコマンド プロンプト ウィンドウを開き、**vsinstr /DumpFuncs** と入力します。
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>インストルメンテーションをバイナリ内の特定の関数に制限するには
 
@@ -63,7 +63,7 @@ ms.locfileid: "56620513"
     `FuncSpec` は、名前空間と関数の名前です。 その形式は `Namespace`**::**`FunctionName` です。 複数の関数は、セミコロン (;) を使用して区切ります。 1 つまたは複数の文字にワイルドカードを指定する場合は、アスタリスク (\*) を使います。 たとえば、**/include:MyNS::\\*** は、MyNS 名前空間のすべての関数を指定します。
 
    > [!NOTE]
-   >  バイナリ内の関数を一覧表示するには、プロファイル ツールのインストール ディレクトリ ([コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事を参照) でコマンド プロンプト ウィンドウを開き、**vsinstr /DumpFuncs** と入力します。
+   > バイナリ内の関数を一覧表示するには、プロファイル ツールのインストール ディレクトリ ([コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事を参照) でコマンド プロンプト ウィンドウを開き、**vsinstr /DumpFuncs** と入力します。
 
 ## <a name="see-also"></a>関連項目
 - [データ収集の制御](../profiling/controlling-data-collection.md)

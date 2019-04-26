@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9575effa2740620c585e1dddc64bb67a1d919d2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2689f0d96189b496e147a074a38313c164b453d1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844750"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend でのキーボード ショートカットと修飾キー
 
@@ -37,8 +37,8 @@ ms.locfileid: "55939672"
 
 キーボード ショートカットの中には、対応するメニュー項目がないものがあります。このようなショートカットは、[!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] のユーザー インターフェイスに表示されません。 次のトピックは、オブジェクトのサイズを変更する場合などに、ツールの動作 (行う操作) を変更するショートカットを一覧しています。
 
--   [アートボードの修飾キー](../designers/artboard-modifier-keys-in-blend.md)
+- [アートボードの修飾キー](../designers/artboard-modifier-keys-in-blend.md)
 
--   [ペン ツールの修飾キー](../designers/pen-tool-modifier-keys-in-blend.md)
+- [ペン ツールの修飾キー](../designers/pen-tool-modifier-keys-in-blend.md)
 
--   [[個別選択] ツールの修飾キー](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [[個別選択] ツールの修飾キー](../designers/direct-selection-tool-modifier-keys-in-blend.md)

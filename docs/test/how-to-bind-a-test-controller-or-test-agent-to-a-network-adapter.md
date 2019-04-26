@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58414971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979329"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>方法:ネットワーク アダプターにテスト コントローラーまたはテスト エージェントをバインドする
 
@@ -35,19 +35,19 @@ ms.locfileid: "58414971"
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>ネットワーク アダプターの IP アドレスを取得するには
 
-1.  Microsoft Windows の **[スタート]** ボタンをクリックし、**[検索の開始]** ボックス内をクリックして「**cmd**」と入力し、**Enter** キーを押します。
+1. Microsoft Windows の **[スタート]** ボタンをクリックし、**[検索の開始]** ボックス内をクリックして「**cmd**」と入力し、**Enter** キーを押します。
 
-2.  「**ipconfig /all**」と入力します。
+2. 「**ipconfig /all**」と入力します。
 
      ネットワーク アダプターの IP アドレスが表示されます。 コントローラーをバインドするネットワーク アダプターの IP アドレスを控えておきます。
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>ネットワーク アダプターをテスト コントローラーにバインドするには
 
-1.  Microsoft Windows の **[スタート]** ボタンをクリックし、**[検索の開始]** ボックス内をクリックして「**services.msc**」と入力し、**Enter** キーを押します。
+1. Microsoft Windows の **[スタート]** ボタンをクリックし、**[検索の開始]** ボックス内をクリックして「**services.msc**」と入力し、**Enter** キーを押します。
 
      **[サービス]** ダイアログ ボックスが表示されます。
 
-2.  結果ペインの **[名前]** 列で **[Visual Studio Test Controller]** サービスを右クリックし、**[停止]** をクリックします。
+2. 結果ペインの **[名前]** 列で **[Visual Studio Test Controller]** サービスを右クリックし、**[停止]** をクリックします。
 
      - または -
 
@@ -55,9 +55,9 @@ ms.locfileid: "58414971"
 
      `net stop vsttcontroller`
 
-3.  *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE* に置かれた *QTCcontroller.exe.config* XML 構成ファイルを開きます。
+3. *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE* に置かれた *QTCcontroller.exe.config* XML 構成ファイルを開きます。
 
-4.  `<appSettings>` タグを探します。
+4. `<appSettings>` タグを探します。
 
     ```xml
     <appSettings>
@@ -71,14 +71,14 @@ ms.locfileid: "58414971"
     </appSettings>
     ```
 
-5.  `BindTo` セクションに `<appSettings>` キーを追加して、どのネットワーク アダプターを使用するかを指定します。
+5. `BindTo` セクションに `<appSettings>` キーを追加して、どのネットワーク アダプターを使用するかを指定します。
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  テスト コントローラー サービスを開始します。 そのためには、コマンド プロンプトで次のコマンドを実行します。
+6. テスト コントローラー サービスを開始します。 そのためには、コマンド プロンプトで次のコマンドを実行します。
 
     `net start vsttcontroller`
 
@@ -89,11 +89,11 @@ ms.locfileid: "58414971"
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>ネットワーク インターフェイス カードをテスト エージェントにバインドするには
 
-1.  Microsoft Windows の **[スタート]** ボタンをクリックし、**[検索の開始]** ボックス内をクリックして「**services.msc**」と入力し、**Enter** キーを押します。
+1. Microsoft Windows の **[スタート]** ボタンをクリックし、**[検索の開始]** ボックス内をクリックして「**services.msc**」と入力し、**Enter** キーを押します。
 
     **[サービス]** ダイアログ ボックスが表示されます。
 
-2.  結果ウィンドウの **[名前]** 列で **[Visual Studio Test Agent]** サービスを右クリックし、**[停止]** をクリックします。
+2. 結果ウィンドウの **[名前]** 列で **[Visual Studio Test Agent]** サービスを右クリックし、**[停止]** をクリックします。
 
      - または -
 
@@ -101,9 +101,9 @@ ms.locfileid: "58414971"
 
      **net stop vsttagent**
 
-3.  *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE* に置かれた *QTAgentService.exe.config* XML 構成ファイルを開きます。
+3. *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE* に置かれた *QTAgentService.exe.config* XML 構成ファイルを開きます。
 
-4.  `<appSettings>` タグを探します。
+4. `<appSettings>` タグを探します。
 
     ```xml
     <appSettings>
@@ -117,14 +117,14 @@ ms.locfileid: "58414971"
     </appSettings>  </appSettings>
     ```
 
-5.  `BindTo` セクションに `<appSettings>` キーを追加して、どのネットワーク アダプターを使用するかを指定します。
+5. `BindTo` セクションに `<appSettings>` キーを追加して、どのネットワーク アダプターを使用するかを指定します。
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  テスト エージェント サービスを開始します。 そのためには、コマンド プロンプトで次のコマンドを実行します。
+6. テスト エージェント サービスを開始します。 そのためには、コマンド プロンプトで次のコマンドを実行します。
 
     `net start vsttagent`
 

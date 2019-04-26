@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Visual Studio サブスクリプションで、プロダクト キーを取得して管理する方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977725"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでのプロダクト キーの使用
 
@@ -53,7 +53,6 @@ Microsoft は、Visual Studio サブスクリプション プログラムの健�
 
 製品に応じてさまざまなキーを使用できます。
 
-
 ### <a name="product-key-types"></a>プロダクト キーの種類
 
 |    キーの種類           |    説明                                                                                                                                                                                                           |
@@ -74,7 +73,6 @@ Microsoft は、Visual Studio サブスクリプション プログラムの健�
 
 ### <a name="claiming-product-keys"></a>プロダクト キーの要求
 アクティブなサブスクリプションを持つサブスクライバーだけが、製品をダウンロードし、プロダクト キーを要求することができます。  サブスクリプションがアクティブな間、要求されたキーを [[プロダクト キー]](https://my.visualstudio.com/productkeys) ページからエクスポートすることができます。
-
 
 プロダクト キーを要求するには:
 1. Visual Studio サブスクリプションにサインインします。  製品をダウンロードするかプロダクト キーを要求するには、サインインする必要があります。

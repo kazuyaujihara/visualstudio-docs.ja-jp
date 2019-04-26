@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ce4963f753498ff4c43b92b0b59fbfae25a45315
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 53408ba2345c1bb7b3fc3f99939736c7a697d2df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446643"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows に Visual Studio の Python サポートをインストールする方法
 
@@ -39,7 +39,7 @@ Visual Studio 用の Python サポート (Python Tools for Visual Studio (PTVS) 
 1. 最新の Visual Studio インストーラーをダウンロードし、実行します。 Visual Studio が既にインストールされている場合は、Visual Studio インストーラーを実行し、**[変更]** オプションを選択して ([Visual Studio の変更](../install/modify-visual-studio.md)に関するページをご覧ください)、手順 2 へ進みます。
 
     > [!div class="nextstepaction"]
-    > [Visual Studio 2019 Community のインストール](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
+    > [Visual Studio 2019 のインストールに関するコミュニティ](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
     > このコミュニティ版は、個人の開発者、クラス学習、学術研究、オープン ソース開発向けです。 その他の用途には、[Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) または [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) を使用してください。
@@ -53,6 +53,7 @@ Visual Studio 用の Python サポート (Python Tools for Visual Studio (PTVS) 
 
     > [!Note]
     > Python とデータ サイエンスのワークロードは、Visual Studio 2017 バージョン 15.2 以降でのみ利用可能です。
+
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"
@@ -72,7 +73,7 @@ Visual Studio 用の Python サポート (Python Tools for Visual Studio (PTVS) 
     | オプション | 説明 |
     | --- | --- |
     | Python ディストリビューション | 使用する予定の Python 2、Python 3、Miniconda、Anaconda2、Anaconda3 ディストリビューションの 32 ビットおよび 64 ビットのバリアントなど、使用可能なオプションの任意の組み合わせを選択します。 それぞれには、ディストリビューションのインタープリター、ランタイム、およびライブラリが含まれます。 Anaconda とは、具体的には、さまざまな事前インストール パッケージを含むオープンなデータ サイエンス プラットフォームです。 (ディストリビューションを追加または削除する場合には、Visual Studio インストーラーへはいつでも戻ることができます。)**注**:Visual Studio インストーラー以外で配布をインストールした場合、ここで対応するオプションを確認する必要はありません。 Visual Studio は、既存の Python インストールを自動的に検出します。 「[[Python 環境] ウィンドウ](managing-python-environments-in-visual-studio.md#the-python-environments-window)」を参照してください。 また、インストーラーに表示されているものよりも新しいバージョンの Python を利用できる場合は、そのバージョンを個別にインストールすれば Visual Studio によって検出されます。 |
-    | **cookiecutter テンプレートのサポート** | テンプレートの検出、テンプレート オプションの入力、プロジェクトとファイルの作成を行うための Cookiecutter グラフィカル UI をインストールできます。 「[Cookiecutter 拡張機能の使用](using-python-cookiecutter-templates.md)」を参照してください。 |
+    | **Cookiecutter テンプレートのサポート** | テンプレートの検出、テンプレート オプションの入力、プロジェクトとファイルの作成を行うための Cookiecutter グラフィカル UI をインストールできます。 「[Cookiecutter 拡張機能の使用](using-python-cookiecutter-templates.md)」を参照してください。 |
     | **Python Web サポート** | HTML、CSS、および JavaScript の編集をサポートする Web 開発用ツールを、Bottle、Flask、および Django フレームワークを使用するプロジェクトのテンプレートと共にインストールします。 「[Python Web プロジェクト テンプレート](python-web-application-project-templates.md)」を参照してください。 |
     | **Python IoT サポート** | Python を使用した、Windows IoT Core 開発がサポートされます。 |
     | **Python ネイティブ開発ツール** | Python のネイティブ拡張機能の開発するために必要な C++ コンパイラおよびその他のコンポーネントがインストールされます。 「[Python 用 C++ 拡張機能の作成](working-with-c-cpp-python-in-visual-studio.md)」を参照してください。 C++ を完全にサポートするには、**C++ によるデスクトップ開発**ワークロードもインストールします。 |

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973020"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>コード化された UI テストでさまざまな Web ブラウザーを使用する
 
@@ -24,13 +24,13 @@ ms.locfileid: "57983033"
 
 ## <a name="whats-supported-across-all-web-browsers"></a>すべての Web ブラウザーでサポートされている機能
 
--   プロパティ、検索、再生待機処理などの[機能を制御するためのカスタム コードを追加](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)します。
+- プロパティ、検索、再生待機処理などの[機能を制御するためのカスタム コードを追加](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)します。
 
--   ポップアップとダイアログ ボックス
+- ポップアップとダイアログ ボックス
 
--   [戻り値の型を持たない基本 JavaScript を実行します](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+- [戻り値の型を持たない基本 JavaScript を実行します](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   検索の回復機能 (スマート一致を使用) と[パフォーマンスの向上](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+- 検索の回復機能 (スマート一致を使用) と[パフォーマンスの向上](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>コード化された UI テストを複数の Web ブラウザーの種類で使用する理由
 
@@ -78,17 +78,17 @@ ms.locfileid: "57983033"
 
 Web アプリケーションのデバッグを有効にするには、以下の構成オプションを設定する必要があります。
 
-1.  マイ コードのみを有効にする:
+1. マイ コードのみを有効にする:
 
-    1.  **[ツール]** メニューの **[オプション]** を選択し、**[デバッグ]** を選択します。
+    1. **[ツール]** メニューの **[オプション]** を選択し、**[デバッグ]** を選択します。
 
-    2.  **[マイ コードのみを有効にする]** を選択します。
+    2. **[マイ コードのみを有効にする]** を選択します。
 
-2.  CLR 例外を無効にする:
+2. CLR 例外を無効にする:
 
-    1.  **[デバッグ]** メニューの **[例外]** を選択します。
+    1. **[デバッグ]** メニューの **[例外]** を選択します。
 
-    2.  **[共通言語ランタイム例外]** で、**[ユーザーにハンドルされていないとき]** をオフにします。
+    2. **[共通言語ランタイム例外]** で、**[ユーザーにハンドルされていないとき]** をオフにします。
 
 コード化された UI テストの `BrowserWindow.CurrentBrowser` を変更するオプションが表示されない場合、さまざまな Web ブラウザーを使用したコード化された UI テストをサポートしていないバージョンの Visual Studio を使用している可能性があります。 そのようなコード化された UI テストを使用するには、Visual Studio Enterprise Edition を使用する必要があります。
 

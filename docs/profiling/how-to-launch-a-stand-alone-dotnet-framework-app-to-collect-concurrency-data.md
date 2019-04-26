@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2f2c146398e6ec3d8fba7f3bf0922c0050eddb4d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 47b004c5f7d127c78e4fd6f7c00b34c502d07f18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386729"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーによってスタンドアロンの .NET Framework アプリケーションを起動し、コンカレンシー データを収集する
 ここでは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのコマンド ライン ツールを使用して、.NET Framework のスタンドアロン (クライアント) アプリケーションを起動し、プロセスおよびスレッドのコンカレンシー データを収集する方法について説明します
 
 > [!NOTE]
->  プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。
+> プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。
 
  プロファイラーをアプリケーションにアタッチしている間はデータ収集を一時停止し、完了後に再開できます。 プロファイル セッションを終了するには、アプリケーションへのプロファイラーのアタッチを解除し、プロファイラーを明示的に終了する必要があります。
 
@@ -36,13 +36,11 @@ ms.locfileid: "56640988"
 
    - [/start](../profiling/start.md) オプションによってプロファイラーが初期化されます。
 
-
      | | |
      |-------------------------------------| - |
      | **/start:concurrency** | リソース競合データとスレッド実行データの両方の収集を有効にします。 |
      | **/start:concurrency,resourceonly** | リソース競合データの収集のみを有効にします。 |
      | **/start:concurrency,threadonly** | スレッド実行データの収集のみを有効にします。 |
-
 
    - **/start** を使用するには、[/output](../profiling/output.md)**:**`OutputFile` オプションを指定する必要があります。 `OutputFile` には、プロファイル データ (.vsp) ファイルの名前と場所を指定します。
 
@@ -55,7 +53,6 @@ ms.locfileid: "56640988"
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | プロファイリング実行中に収集する Windows パフォーマンス カウンターを指定します。 |
    | [/automark](../profiling/automark.md) **:** `Interval` | **/wincounter** との組み合わせでのみ使用します。 Windows パフォーマンス カウンター コレクション イベントの間隔をミリ秒単位で指定します。 既定値は 500 ミリ秒です。 |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.*etl*) ファイルに収集されます。 |
-
 
 3. 対象アプリケーションを起動します。 型:
 
@@ -74,7 +71,7 @@ ms.locfileid: "56640988"
 
 #### <a name="to-start-and-stop-data-collection"></a>データ収集を開始および停止するには
 
-1.  次の *VSPerfCmd.exe* オプションの組み合わせにより、データ収集を開始し、停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
+1. 次の *VSPerfCmd.exe* オプションの組み合わせにより、データ収集を開始し、停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
 
     |オプション|説明|
     |------------|-----------------|
@@ -87,15 +84,15 @@ ms.locfileid: "56640988"
 
 #### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには
 
-1.  対象アプリケーションからプロファイラーをデタッチするには、次のいずれかの操作を行います。
+1. 対象アプリケーションからプロファイラーをデタッチするには、次のいずれかの操作を行います。
 
-    -   対象アプリケーションを終了します。
+    - 対象アプリケーションを終了します。
 
          - または -
 
-    -   **VSPerfCmd /detach** と入力します
+    - **VSPerfCmd /detach** と入力します
 
-2.  プロファイラーをシャットダウンします。
+2. プロファイラーをシャットダウンします。
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 

@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979241"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>方法: データ ドリブン単体テストを作成する
 
@@ -27,27 +27,27 @@ ms.locfileid: "55931443"
 
 データ ドリブン単体テストの作成には、次の手順が含まれます。
 
-1.  テスト メソッドで使用する値を含むデータ ソースを作成します。 データ ソースは、テストを実行するコンピューターに登録されている任意の型にすることができます。
+1. テスト メソッドで使用する値を含むデータ ソースを作成します。 データ ソースは、テストを実行するコンピューターに登録されている任意の型にすることができます。
 
-2.  プライベート <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> フィールドとパブリック `TestContext` プロパティをテスト クラスに追加します。
+2. プライベート <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> フィールドとパブリック `TestContext` プロパティをテスト クラスに追加します。
 
-3.  単体テスト メソッドを作成し、それを <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 属性に追加します。
+3. 単体テスト メソッドを作成し、それを <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 属性に追加します。
 
-4.  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> インデクサー プロパティを使用して、テストで使用する値を取得します。
+4. <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> インデクサー プロパティを使用して、テストで使用する値を取得します。
 
 ## <a name="the-method-under-test"></a>テスト対象のメソッド
 
 たとえば、次が用意されています。
 
-1.  さまざまな種類の勘定のトランザクションを受け入れて処理する `MyBank` というソリューション。
+1. さまざまな種類の勘定のトランザクションを受け入れて処理する `MyBank` というソリューション。
 
-2.  勘定のトランザクションを管理する `BankDb` という `MyBank` 内のプロジェクト。
+2. 勘定のトランザクションを管理する `BankDb` という `MyBank` 内のプロジェクト。
 
-3.  トランザクションが必ず銀行にとって有利になるように数値演算関数を実行する `DbBank` プロジェクト内の `Maths` というクラス。
+3. トランザクションが必ず銀行にとって有利になるように数値演算関数を実行する `DbBank` プロジェクト内の `Maths` というクラス。
 
-4.  `BankDb` コンポーネントの動作をテストする `BankDbTests` という単体テスト プロジェクト。
+4. `BankDb` コンポーネントの動作をテストする `BankDbTests` という単体テスト プロジェクト。
 
-5.  `Maths` クラスの動作を確認する `MathsTests` という単体テスト クラス。
+5. `Maths` クラスの動作を確認する `MathsTests` という単体テスト クラス。
 
 ループを使用して 2 つの整数を追加する `Maths` のメソッドをテストします。
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2385d359387090d0430fbea182fcef738b454a7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977293"
 ---
 # <a name="how-to-clean-a-build"></a>方法: ビルドをクリーンする
 ビルドをクリーンするとき、すべての中間ファイルと出力ファイルが削除され、プロジェクト ファイルとコンポーネント ファイルが残ります。 プロジェクト ファイルとコンポーネント ファイルから、中間ファイルと出力ファイルの新しいインスタンスをビルドできます。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] とともに提供されている一般的なタスクのライブラリには、システム コマンドの実行に利用できる [Exec](../msbuild/exec-task.md) タスクが含まれています。 タスクのライブラリに関する情報については、「[タスク リファレンス](../msbuild/msbuild-task-reference.md)」を参照してください。
@@ -28,11 +28,11 @@ ms.locfileid: "56603275"
 
 #### <a name="to-create-a-directory-for-output-items"></a>出力項目のディレクトリを作成するには
 
-1.  `Property` 要素を利用し、ディレクトリの場所と名前を定義します。 たとえば、プロジェクトおよびソースファイルを含むディレクトリに *BuiltApp* という名前のディレクトリを作成します。
+1. `Property` 要素を利用し、ディレクトリの場所と名前を定義します。 たとえば、プロジェクトおよびソースファイルを含むディレクトリに *BuiltApp* という名前のディレクトリを作成します。
 
      `<builtdir>BuiltApp</builtdir>`
 
-2.  ディレクトリが存在しない場合、[MakeDir](../msbuild/makedir-task.md) タスクを理使用してディレクトリを作成します。 次に例を示します。
+2. ディレクトリが存在しない場合、[MakeDir](../msbuild/makedir-task.md) タスクを理使用してディレクトリを作成します。 次に例を示します。
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -44,7 +44,7 @@ ms.locfileid: "56603275"
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>ディレクトリとそのディレクトリに含まれるすべてのファイルを削除するには
 
--   `RemoveDir` タスクを利用してディレクトリを削除します。 次に例を示します。
+- `RemoveDir` タスクを利用してディレクトリを削除します。 次に例を示します。
 
      `<RemoveDir Directories="$(builtdir)" />`
 

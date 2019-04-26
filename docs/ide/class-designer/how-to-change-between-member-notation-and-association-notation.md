@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0138ec1e2a36ce20b80982103ec408077502993a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ff63e6cca9deebbfcfa5960b41d85f9425f7a73
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975508"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>方法: クラス デザイナーでメンバー表記と関連付け表記の間で変更する
 
@@ -29,9 +29,9 @@ ms.locfileid: "55913825"
 
 ## <a name="to-change-member-notation-to-association-notation"></a>メンバー表記を関連付け表記に変更するには
 
-1.  ソリューション エクスプローラーのプロジェクト ノードから、クラス ダイアグラム (.cd) ファイルを開きます。
+1. ソリューション エクスプローラーのプロジェクト ノードから、クラス ダイアグラム (.cd) ファイルを開きます。
 
-2.  クラス ダイアグラムの型の図形で、メンバー プロパティまたは関連付けを表すフィールドを右クリックして、**[関連として表示]** を選びます。
+2. クラス ダイアグラムの型の図形で、メンバー プロパティまたは関連付けを表すフィールドを右クリックして、**[関連として表示]** を選びます。
 
     > [!TIP]
     > 型の図形にプロパティまたはフィールドが表示されていない場合は、図形のコンパートメントが折りたたまれている可能性があります。 型の図形を展開するには、コンパートメントの名前をダブルクリックするか、または型の図形を右クリックして **[展開]** を選びます。

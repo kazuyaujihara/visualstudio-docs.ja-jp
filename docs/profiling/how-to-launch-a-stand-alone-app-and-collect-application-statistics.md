@@ -8,27 +8,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38bc970eb3118beb7d28ea0cf40850922c0dc2d6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d5938adc51b2d89b0402e28bb5112158b07e378
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386958"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーでスタンドアロン アプリケーションを起動し、アプリケーション統計情報を収集する
 ここでは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのコマンド ライン ツールを使用してスタンドアロン (クライアント) アプリケーションを起動し、サンプリング メソッドによってパフォーマンスに関する統計情報を収集する方法について説明します。
 
 > [!NOTE]
->  Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
 >
->  プロファイリングの実行に階層の相互作用データを追加するには、コマンド ライン プロファイル ツールによる特定の手順が必要です。 「[階層相互作用データの収集](../profiling/adding-tier-interaction-data-from-the-command-line.md)」を参照してください。
+> プロファイリングの実行に階層の相互作用データを追加するには、コマンド ライン プロファイル ツールによる特定の手順が必要です。 「[階層相互作用データの収集](../profiling/adding-tier-interaction-data-from-the-command-line.md)」を参照してください。
 
  プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にそのパスを追加するか、コマンド自体にこのパスを追加します。 Visual Studio がインストールされているコンピューターで、Visual Studio のコマンド ウィンドウからプロファイリング ツールを実行できます。
 
-1.  Visual Studio がインストールされているコンピューターでプロファイリング ツールを実行している場合、Visual Studio のコマンド ウィンドウによって正しいパスが設定されます。 **[ツール]** メニューで **[Visual Studio コマンド プロンプト]** を選択します。
+1. Visual Studio がインストールされているコンピューターでプロファイリング ツールを実行している場合、Visual Studio のコマンド ウィンドウによって正しいパスが設定されます。 **[ツール]** メニューで **[Visual Studio コマンド プロンプト]** を選択します。
 
 > [!NOTE]
->  プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。
+> プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。
 
 ## <a name="start-the-application-with-the-profiler"></a>プロファイラーによるアプリケーションの起動
  プロファイラーを使用して対象のアプリケーションを起動するには、VSPerfCmd の **/start** オプションと **/launch** オプションを使用して、プロファイラーを初期化し、アプリケーションを起動します。 **/start** と **/launch**、およびそれぞれのオプションは、1 つのコマンド ラインで指定できます。
@@ -55,7 +55,6 @@ ms.locfileid: "56638024"
    | [/automark](../profiling/automark.md) **:** `Interval` | **/wincounter** との組み合わせでのみ使用します。 Windows パフォーマンス カウンター コレクション イベントの間隔をミリ秒単位で指定します。 既定値は 500 ミリ秒です。 |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.*etl*) ファイルに収集されます。 |
 
-
 3. 対象アプリケーションを起動します。 **VSPerfCmd /launch:**`appName` [`Options`] [`Sample Event`] と入力します。
 
     **/launch** オプションを使用する場合は、次のうちから 1 つ以上のオプションを指定できます。
@@ -79,7 +78,7 @@ ms.locfileid: "56638024"
 
 #### <a name="to-start-and-stop-data-collection"></a>データ収集を開始および停止するには
 
--   次に示すオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
+- 次に示すオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
 
     |オプション|説明|
     |------------|-----------------|
@@ -92,15 +91,15 @@ ms.locfileid: "56638024"
 
 #### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには
 
-1.  対象アプリケーションからプロファイラーをデタッチするには、次のいずれかの手順を実行します。
+1. 対象アプリケーションからプロファイラーをデタッチするには、次のいずれかの手順を実行します。
 
-    -   対象アプリケーションを終了します。
+    - 対象アプリケーションを終了します。
 
          - または -
 
-    -   **VSPerfCmd /detach** と入力します
+    - **VSPerfCmd /detach** と入力します
 
-2.  プロファイラーをシャットダウンします。 型:
+2. プロファイラーをシャットダウンします。 型:
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 

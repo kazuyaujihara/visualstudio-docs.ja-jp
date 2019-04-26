@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fe7ec9fe8734d17868bee6a108d447729e4167f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969099"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 
@@ -59,7 +59,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
   任意。 ツールの出力を送信する先のファイル名。 このファイルが既に存在する場合、ファイルの末尾に出力が追加されます。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 - `devenv`、`/Build`、`/Clean`、`/Rebuild`、または `/Deploy` コマンドの一部として使用する必要があります。
 

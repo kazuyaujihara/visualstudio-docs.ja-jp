@@ -7,12 +7,12 @@ ms.date: 03/15/2018
 ms.topic: conceptual
 description: クラウド ソリューション プロバイダーが顧客のために Visual Studio クラウド サブスクリプションを購入および管理する方法について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 59d61e687c061fffd2cc0a2b537364ca8b966271
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978511"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>顧客用に Visual Studio クラウド サブスクリプションを購入して管理する
 
@@ -20,10 +20,8 @@ ms.locfileid: "58323582"
 
 [クラウド サブスクリプションのオプションを比較する](https://visualstudio.microsoft.com/vs/pricing)
 
-
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
-
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
@@ -84,7 +82,6 @@ CSP パートナー向けの Visual Studio の価格を見るには、[パート
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | エンタープライズ             |  サブスクリプション                         | Visual Studio Enterprise - 月間プラン サブスクリプション   |
 | Visual Studio     | 2 次元形式           |  サブスクリプション                         | Visual Studio Professional - 月間プラン サブスクリプション |
-
 
 月および Visual Studio サブスクリプションの単位で、(特定の顧客が) 購入した 6 番目以降のユニットに 5% の割引がオファーされます。 各サブスクリプション オプションに 2 つの行があるのはそのためです。 1 つの行の [Minimum Value]\(最小値\) は 0 で、これはユニット 1 から 5 が基準価格であることを示します。 もう 1 つの行の [Minimum Value]\(最小値\) は 5 で、ユニット 6 以上に適用される 5% の割引価格を示します。
 

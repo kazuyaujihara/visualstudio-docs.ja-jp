@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386187"
 ---
 # <a name="how-to-select-the-files-to-build"></a>方法: ビルドするファイルを選択する
 複数のファイルを含むプロジェクトをビルドするときに、各ファイルを個別にプロジェクト ファイルにリストしたり、ワイルドカードを使用して、1 つのディレクトリまたは入れ子になった一連のディレクトリ内のすべてのファイルを含めたりすることができます。
@@ -42,7 +42,7 @@ ms.locfileid: "56610542"
 
 #### <a name="to-declare-multiple-items"></a>複数の項目を宣言するには
 
--   次のような `Include` 属性を使用します。
+- 次のような `Include` 属性を使用します。
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
@@ -97,7 +97,7 @@ ms.locfileid: "56610542"
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
->  ワイルドカードと項目を使用して、ビルドの入力を指定する必要があります。[Csc](../msbuild/csc-task.md) や [Vbc](../msbuild/vbc-task.md) などの [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] タスクでは、`Sources` 属性を使用して入力を指定することはできません。 次の例はプロジェクト ファイルでは無効です。
+> ワイルドカードと項目を使用して、ビルドの入力を指定する必要があります。[Csc](../msbuild/csc-task.md) や [Vbc](../msbuild/vbc-task.md) などの [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] タスクでは、`Sources` 属性を使用して入力を指定することはできません。 次の例はプロジェクト ファイルでは無効です。
 >
 > `<CSC Sources="*.cs">...</CSC>`
 

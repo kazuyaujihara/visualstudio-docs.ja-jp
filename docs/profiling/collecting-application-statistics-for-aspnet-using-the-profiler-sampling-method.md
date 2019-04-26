@@ -11,22 +11,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: f8fd108e71a49e8860a0fd4fec8751da4bc81644
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6ff7f1596d9b3336cb7fdbc02de7d1bc10172f94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405760"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>ASP.NET Web アプリの統計情報を収集する
 
 このセクションでは、**VSPerfASPNETCmd** および **VSPerfCmd** コマンドライン ツールとサンプリング プロファイル メソッドを使用して、ASP.NET Web アプリケーションのパフォーマンスの統計情報を収集する手順とオプションについて説明します。
 
 > [!NOTE]
->  Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
 
 > [!NOTE]
->  **VSPerfCmd** ツールを使用すると、プロファイルの一時停止や再開など、すべてのプロファイル ツール機能にアクセスし、プロセッサと Windows パフォーマンス カウンターからその他のデータも収集できますが、この機能が不要な場合は **VSPerfASPNETCmd** コマンド ライン ツールを使用することをお勧めします。 **VSPerfASPNETCmd** コマンド ライン ツールは、スタンドアロン プロファイラーを使用して ASP.NET Web サイトのプロファイリングを実行するときに推奨される方法です。 [VSPerfCmd](../profiling/vsperfcmd.md) コマンド ライン ツールと比較すると、環境変数を設定する必要がなく、コンピューターを再起動する必要がありません。 詳細については、「[VSPerfASPNETCmd を使用した迅速な Web サイト プロファイリング](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)」を参照してください。
+> **VSPerfCmd** ツールを使用すると、プロファイルの一時停止や再開など、すべてのプロファイル ツール機能にアクセスし、プロセッサと Windows パフォーマンス カウンターからその他のデータも収集できますが、この機能が不要な場合は **VSPerfASPNETCmd** コマンド ライン ツールを使用することをお勧めします。 **VSPerfASPNETCmd** コマンド ライン ツールは、スタンドアロン プロファイラーを使用して ASP.NET Web サイトのプロファイリングを実行するときに推奨される方法です。 [VSPerfCmd](../profiling/vsperfcmd.md) コマンド ライン ツールと比較すると、環境変数を設定する必要がなく、コンピューターを再起動する必要がありません。 詳細については、「[VSPerfASPNETCmd を使用した迅速な Web サイト プロファイリング](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)」を参照してください。
 
 ## <a name="common-tasks"></a>一般的なタスク
 

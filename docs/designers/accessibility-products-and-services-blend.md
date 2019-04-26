@@ -8,26 +8,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a442c976538ae47a3ea95795ebb82ca2cbb5f2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 72f1df430da25b480d812e89c4ea0c765995d530
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405975"
 ---
 # <a name="accessibility-products-and-services-blend"></a>アクセシビリティ製品およびサービス (Blend)
 Microsoft は、すべてのユーザーが簡単に使用できる製品とサービスの開発に取り組んでいます。 以下のセクションでは、Microsoft Windows を障碍のある方にとって使いやすくするための機能、製品、およびサービスについて説明します。
 
--   Windows のアクセシビリティ機能
+- Windows のアクセシビリティ機能
 
--   別形式のドキュメント
+- 別形式のドキュメント
 
--   聴覚障碍者のためのカスタマー サービス
+- 聴覚障碍者のためのカスタマー サービス
 
--   詳細情報
+- 詳細情報
 
 > [!NOTE]
->  このセクションの情報は、米国内で Microsoft 製品のライセンスを取得したユーザーにだけ適用されます。 米国外でこの製品を入手した場合には、ソフトウェア パッケージに同梱の支社情報のカードを参照するか、[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkID=75069) にアクセスし、Microsoft Support Services の電話番号と住所の一覧をご覧ください。 このセクションで説明されている製品およびサービスをその地域で利用できるかどうかについては、現地法人にお問い合わせください。 ユーザー補助についての情報が、日本語、フランス語など、他の言語で参照できます。
+> このセクションの情報は、米国内で Microsoft 製品のライセンスを取得したユーザーにだけ適用されます。 米国外でこの製品を入手した場合には、ソフトウェア パッケージに同梱の支社情報のカードを参照するか、[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkID=75069) にアクセスし、Microsoft Support Services の電話番号と住所の一覧をご覧ください。 このセクションで説明されている製品およびサービスをその地域で利用できるかどうかについては、現地法人にお問い合わせください。 ユーザー補助についての情報が、日本語、フランス語など、他の言語で参照できます。
 
 ## <a name="accessibility-features-of-windows"></a>Windows のアクセシビリティ機能
  Windows オペレーティング システムには、多くのアクセシビリティ機能が組み込まれており、キーボード入力やマウスの使用が困難なユーザー、視覚障碍のあるユーザー、聴覚障碍のあるユーザーの方がご利用いただけます。 アクセシビリティ機能はセットアップ プログラムの実行時にインストールされます。 これらの機能について詳しくは、Windows のヘルプおよび [マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkID=75069)をご覧ください。

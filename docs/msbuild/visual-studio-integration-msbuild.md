@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e3881bc346c5074c7fd4277708a16e22d4acd7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445382"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio の統合 (MSBuild)
 Visual Studio は、マネージド プロジェクトの読み込みとビルドを行う [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] をホストしています。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] はプロジェクトに対応しているため、そのプロジェクトが他のツールで作成されていたり、ビルド処理がカスタマイズされていたりしても、 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 形式のほとんどすべてのプロジェクトを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]で問題なく使用できます。
@@ -63,7 +63,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```
 
 > [!NOTE]
->  一部の項目の種類名は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 特有のものですが、このドロップダウン リストには表示されません。
+> 一部の項目の種類名は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 特有のものですが、このドロップダウン リストには表示されません。
 
 ## <a name="in-process-compilers"></a>インプロセス コンパイラ
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、可能な限り [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] コンパイラのインプロセス バージョンを使用して、パフォーマンスの向上を計ります ([!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] には該当しません)。これが正しく機能するためには、次の条件が満たされている必要があります。
@@ -75,13 +75,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-intellisense"></a>デザイン時における IntelliSense のサポート
  ビルドによって出力アセンブリが生成される前に、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で IntelliSense がサポートされるようにするには、次の条件が満たされている必要があります。
 
--   `Compile`という名前のターゲットが存在すること。
+- `Compile`という名前のターゲットが存在すること。
 
--   `Compile` ターゲットまたはその依存関係のいずれかによって、 `Csc` や `Vbc`などの、プロジェクトのコンパイラ タスクが呼び出されること。
+- `Compile` ターゲットまたはその依存関係のいずれかによって、 `Csc` や `Vbc`などの、プロジェクトのコンパイラ タスクが呼び出されること。
 
--   `Compile` ターゲットまたはその依存関係のいずれかによって、IntelliSense に必要なすべてのパラメーター (特にすべての参照) をコンパイラが受け取ること。
+- `Compile` ターゲットまたはその依存関係のいずれかによって、IntelliSense に必要なすべてのパラメーター (特にすべての参照) をコンパイラが受け取ること。
 
--   「[インプロセス コンパイラ](#in-process-compilers)」のセクションに示した条件が満たされていること。
+- 「[インプロセス コンパイラ](#in-process-compilers)」のセクションに示した条件が満たされていること。
 
 ## <a name="build-solutions"></a>ソリューションをビルドする
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]内では、ソリューション ファイルおよびプロジェクトのビルドの順序は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 自体によって制御されます。 コマンド ラインで *msbuild.exe* を使用してソリューションをビルドする場合、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] はソリューション ファイルを解析し、プロジェクトのビルドの順序を指定します。 どちらの場合も、プロジェクトは依存関係の順序で個別にビルドされ、プロジェクト間参照は走査されません。 逆に、*msbuild.exe* を使用して個々のプロジェクトをビルドする場合は、プロジェクト間参照が走査されます。
@@ -126,22 +126,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>デザイン時におけるターゲットの実行
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] は、プロジェクトを読み込む際に、特定の名前を持つターゲットを実行しようとします。 このようなターゲットとしては、`Compile`、`ResolveAssemblyReferences`、`ResolveCOMReferences`、`GetFrameworkPaths`、`CopyRunEnvironmentFiles` などがあります。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] はこれらのターゲットを実行することにより、IntelliSense が使用できるようにコンパイラを初期化し、デバッガーを初期化し、さらにソリューション エクスプローラーに表示される参照を解決します。 これらのターゲットが存在しない場合、プロジェクトは正常に読み込まれてビルドされますが、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のデザイン時環境は完全には機能しません。
 
-##  <a name="edit-project-files-in-visual-studio"></a>Visual Studio でプロジェクト ファイルを編集する
+## <a name="edit-project-files-in-visual-studio"></a>Visual Studio でプロジェクト ファイルを編集する
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトを直接編集するには、Visual Studio の XML エディターでプロジェクト ファイルを開きます。
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Visual Studio でプロジェクト ファイルをアンロードして編集するには
 
-1.  **ソリューション エクスプローラー**で、プロジェクトのショートカット メニューを開き、 **[プロジェクトのアンロード]** をクリックします。
+1. **ソリューション エクスプローラー**で、プロジェクトのショートカット メニューを開き、 **[プロジェクトのアンロード]** をクリックします。
 
      プロジェクトに **(利用不可)** のマークが付きます。
 
-2.  **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、**[\<プロジェクト ファイル> の編集]** をクリックします。
+2. **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、**[\<プロジェクト ファイル> の編集]** をクリックします。
 
      Visual Studio XML エディターでプロジェクト ファイルが開きます。
 
-3.  プロジェクト ファイルを編集し、保存して閉じます。
+3. プロジェクト ファイルを編集し、保存して閉じます。
 
-4.  **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、 **[プロジェクトの再読み込み]** をクリックします。
+4. **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、 **[プロジェクトの再読み込み]** をクリックします。
 
 ## <a name="intellisense-and-validation"></a>IntelliSense と検証
  XML エディターを使用してプロジェクト ファイルを編集する際、 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] のスキーマ ファイルによって IntelliSense と検証が実行されます。 これらは、*\<Visual Studio のインストール ディレクトリ>\Xml\Schemas\1033\MSBuild* にあるスキーマ キャッシュにインストールされます。

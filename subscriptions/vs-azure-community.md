@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Azure コミュニティ特典について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 78c6954cd6dbbee48a3754d7d58eaa34b2e17158
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 154c0164f5126fc38d0e0af5ec5703faacb9f94f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948319"
 ---
 # <a name="azure-community"></a>Azure コミュニティ
 
@@ -28,8 +28,6 @@ Azure コミュニティを通じて、選ばれたサポート フォーラム�
 | [Microsoft Azure の管理ポータル](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [Azure Virtual Machines](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
 
-
-
 ## <a name="activation-steps"></a>アクティブ化の手順
 Azure コミュニティの開始は簡単です。
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
@@ -42,13 +40,12 @@ Azure コミュニティの開始は簡単です。
     > [!div class="mx-imgBorder"]
     > ![Azure コミュニティ フォーラム](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  フォーラム内では、トピックと回答を表示したり、自分の質問に対する回答を検索したり、新しい質問を投稿することができます。
+4. フォーラム内では、トピックと回答を表示したり、自分の質問に対する回答を検索したり、新しい質問を投稿することができます。
     > [!div class="mx-imgBorder"]
     > ![Azure コミュニティの例](_img/vs-azure-community/vs-azure-community-example.png)
 
 ## <a name="eligibility"></a>特典を受ける条件
 Azure コミュニティ特典を利用できるかどうかは、以下のようにサブスクリプション レベルによって変わります。
-
 
 |                                          サブスクリプション レベル                                           |     チャネル      |    特長    | 更新可能かどうか |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
@@ -65,11 +62,10 @@ Azure コミュニティ特典を利用できるかどうかは、以下のよ�
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
 
-
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
 ## <a name="support-resources"></a>サポート リソース
--  その他の Azure コミュニティのリソースは、Azure コミュニティの[サポート ページ](https://azure.microsoft.com/support/forums/)をご覧ください。
--  [Azure ドキュメント](/azure/)。
--  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートが必要な場合は、  Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
--  Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+- その他の Azure コミュニティのリソースは、Azure コミュニティの[サポート ページ](https://azure.microsoft.com/support/forums/)をご覧ください。
+- [Azure ドキュメント](/azure/)。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートが必要な場合は、  Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

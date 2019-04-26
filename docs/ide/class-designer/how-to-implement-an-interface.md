@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f070e3224dcc683d766da556512f285751c37ca4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e76aeea4c6779e97d882705e8680cd7a3b00d129
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975178"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>方法: クラス デザイナーでインターフェイスを実装する
 
@@ -27,9 +27,9 @@ ms.locfileid: "55923916"
 
 ## <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>継承線を描画してインターフェイスを実装するには
 
-1.  クラス ダイアグラムで、インターフェイスおよびインターフェイスを実装するクラスを表示します。
+1. クラス ダイアグラムで、インターフェイスおよびインターフェイスを実装するクラスを表示します。
 
-2.  クラスとインターフェイスから継承線を描画します。
+2. クラスとインターフェイスから継承線を描画します。
 
      クラスにアタッチされたロリポップが表示され、インターフェイス名が表示されたラベルによって継承関係が示されます。 Visual Studio は、すべてのインターフェイス メンバーのスタブを生成します。
 
@@ -37,14 +37,14 @@ ms.locfileid: "55923916"
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>[クラス ビュー] ウィンドウからインターフェイスを実装するには
 
-1.  クラス ダイアグラムで、インターフェイスを実装するクラスを表示します。
+1. クラス ダイアグラムで、インターフェイスを実装するクラスを表示します。
 
-2.  **クラス ビュー**を開き、インターフェイスを探します。
+2. **クラス ビュー**を開き、インターフェイスを探します。
 
     > [!TIP]
     > **クラス ビュー**が開いていない場合は、**[表示]** メニューから、または **Ctrl**+**Shift**+**C** キーを押して、**クラス ビュー**を開きます。
 
-3.  インターフェイス ノードをダイアグラムのクラスの図形にドラッグします。
+3. インターフェイス ノードをダイアグラムのクラスの図形にドラッグします。
 
      クラスにアタッチされたロリポップが表示され、インターフェイス名が表示されたラベルによって継承関係が示されます。 Visual Studio は、すべてのインターフェイス メンバーのスタブを生成します。この時点で、インターフェイスが実装されます。
 

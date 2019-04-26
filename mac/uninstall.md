@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971450"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Visual Studio for Mac のアンインストール
 
@@ -48,12 +48,14 @@ Visual Studio for Mac とご利用のコンピューター用のコンポーネ�
     ```bash
     cd /location/of/file
     ```
+
 3. スクリプトを実行可能にして、**sudo** で実行します。
 
     ```bash
     chmod +x ./uninstall-vsmac.sh
     sudo ./uninstall-vsmac.sh
     ```
+
 4. 最後に、アンインストール スクリプトを削除します。
 
 ### <a name="net-core-script"></a>.NET Core スクリプト
@@ -68,12 +70,14 @@ Visual Studio for Mac とご利用のコンピューター用のコンポーネ�
     ```bash
     cd /location/of/file
     ```
+
 3. スクリプトを実行可能にして、**sudo** で実行します。
 
     ```bash
     chmod +x ./dotnet-uninstall-pkgs.sh
     sudo ./dotnet-uninstall-pkgs.sh
     ```
+
 4. 最後に、.NET Core のアンインストール スクリプトを削除します。
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Visual Studio for Mac をアンインストールする
@@ -104,7 +108,6 @@ Xamarin のさまざまなファイルやフォルダーを含む次のディレ
 ```bash
 rm -rf ~/Library/Developer/Xamarin
 ```
-
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Mono SDK (MDK) をアンインストールする
 
@@ -195,10 +198,10 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 古いバージョンでは、次の成果物を手動で削除する必要があります。
 
-* 次の Workbooks アプリを削除します:  `"/Applications/Xamarin Workbooks.app"`
-* 次の Inspector アプリを削除します:  `"Applications/Xamarin Inspector.app"`
-* 次アドインを削除します: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` と  `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
-* 次の Inspector のファイルとサポート ファイルを削除します: `/Library/Frameworks/Xamarin.Interactive.framework` と  `/Library/Frameworks/Xamarin.Inspector.framework`
+* `"/Applications/Xamarin Workbooks.app"` の Workbooks アプリを削除します
+* `"Applications/Xamarin Inspector.app"` の Inspector アプリを削除します
+* アドイン `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` と `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"` を削除します
+* `/Library/Frameworks/Xamarin.Interactive.framework` および `/Library/Frameworks/Xamarin.Inspector.framework` にある Inspector のファイルとサポート ファイルを削除します
 
 ## <a name="uninstall-the-xamarin-profiler"></a>Xamarin Profiler をアンインストールする
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 26433d62a68b28450a56eee1282376733acfe55c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838803"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -39,7 +39,7 @@ devenv /Edit [File1[ FileN]...]
 
   任意。 Visual Studio の既存インスタンスで開く 1 つ以上の追加ファイル。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 ファイルが指定されていない場合は、既存の Visual Studio インスタンスがフォーカスを受け取ります。 ファイルが指定されておらず、Visual Studio のインスタンスが存在しない場合、簡略化されたウィンドウ レイアウトでインスタンスが作成されます。
 

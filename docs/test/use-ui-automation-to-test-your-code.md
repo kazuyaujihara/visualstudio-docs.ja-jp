@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6798af3630f81aa50eaae05b23b6844dcba1f38
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973538"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI オートメーションを使用してコードをテストする
 
@@ -39,7 +39,7 @@ ms.locfileid: "58897726"
 
 コーディングよりテストに集中している場合でも、特殊な**コード化されたテスト ビルダー**とエディターによって、簡単にコード化された UI テストを作成および編集できます。 ただし、開発者が高度な方法でテストを拡張する場合は、コードはコピーして調整する作業がわかりやすくなるように構成されます。 たとえば、Web サイトで商品を購入するテストを記録した後、生成されたコードを編集して多数の商品を購入するループを追加する場合があります。
 
-**要件**
+**必要条件**
 
 - Visual Studio Enterprise
 - コード化された UI テストのコンポーネント
@@ -402,7 +402,7 @@ UI テストのコントロールにマウス クリックやキー操作など�
 
 UI コントロールの特定のプロパティ値を取得および設定するには、コントロールのプロパティ値を直接取得または設定するか、取得または設定する特定のプロパティの名前と共に <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A?displayProperty=fullName> メソッドおよび <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A?displayProperty=fullName> メソッドを使用します。
 
-<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>  は、適切な <xref:System.Type> にキャストできるオブジェクトを返します。 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>  は、プロパティの値が格納されているオブジェクトを受け取ります。
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> は、適切な <xref:System.Type> にキャストできるオブジェクトを返します。 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> は、プロパティの値が格納されているオブジェクトを受け取ります。
 
 ### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>UI テストのコントロールからプロパティを直接取得または設定するには
 
@@ -419,7 +419,7 @@ UI コントロールの特定のプロパティ値を取得および設定す�
 
 - 取得するコントロールのプロパティを指定するには、`PropertyNames` に対し、パラメーターとして各コントロールの <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> クラスからの適切な文字列を使用します。
 
-- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>  は適切なデータ型を返しますが、この戻り値は <xref:System.Object> としてキャストされます。 戻り値 <xref:System.Object> は適切な型としてキャストされる必要があります。
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> は適切なデータ型を返しますが、この戻り値は <xref:System.Object> としてキャストされます。 戻り値 <xref:System.Object> は適切な型としてキャストされる必要があります。
 
      例:
 

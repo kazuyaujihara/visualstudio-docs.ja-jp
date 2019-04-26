@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68250d8767910106ab7e6a3c3239beeb292bdfd8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ef65019223ba1978ea31fbdb9020993a166da89b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422198"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>パフォーマンス ツールに関する問題のトラブルシューティング
 プロファイリング ツールを使用するときに、次の問題のいずれかが発生する場合があります。
 
--   [プロファイリング ツールでデータが収集されない](#no-data-is-collected-by-the-profiling-tools)
+- [プロファイリング ツールでデータが収集されない](#no-data-is-collected-by-the-profiling-tools)
 
--   [パフォーマンス ビューとレポートに関数名ではなく番号が表示される](#performance-views-and-reports-display-numbers-for-function-names)
+- [パフォーマンス ビューとレポートに関数名ではなく番号が表示される](#performance-views-and-reports-display-numbers-for-function-names)
 
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>プロファイリング ツールでデータが収集されない
  アプリケーションをプロファイルした後に、プロファイリング データ (.*vsp*) ファイルが作成されず、**[出力]** ウィンドウまたはコマンド ウィンドウに次の警告が表示されます。
@@ -29,7 +29,7 @@ ms.locfileid: "56620812"
 
  この問題は、次の複数の問題が原因で発生することがあります。
 
--   サンプリングまたは .NET メモリ メソッドを使用してプロファイリングしたプロセスによって、子プロセスが起動されます。この子プロセスは、アプリケーションの作業を実行するプロセスになります。 たとえば、一部のアプリケーションでは、コマンド ラインを読み取り、Windows アプリケーションまたはコマンド ライン アプリケーションのどちらとして起動したかを決定します。 Windows アプリケーションが要求された場合、元のプロセスは Windows アプリケーションとして構成された新しいプロセスを起動し、元のプロセスは終了します。 プロファイリング ツールは子プロセスのデータを自動的に収集しないため、データは収集されません。
+- サンプリングまたは .NET メモリ メソッドを使用してプロファイリングしたプロセスによって、子プロセスが起動されます。この子プロセスは、アプリケーションの作業を実行するプロセスになります。 たとえば、一部のアプリケーションでは、コマンド ラインを読み取り、Windows アプリケーションまたはコマンド ライン アプリケーションのどちらとして起動したかを決定します。 Windows アプリケーションが要求された場合、元のプロセスは Windows アプリケーションとして構成された新しいプロセスを起動し、元のプロセスは終了します。 プロファイリング ツールは子プロセスのデータを自動的に収集しないため、データは収集されません。
 
      この状況でプロファイリング データを収集するには、プロファイラーでアプリケーションを起動するのではなく、子プロセスにプロファイラーをアタッチします。 詳細については、「[方法 :実行中のプロセスにパフォーマンス ツールをアタッチする/実行中のプロセスからパフォーマンス ツールをデタッチする](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)」および [Attach (VSPerfCmd)](../profiling/attach.md) に関するページを参照してください。
 
@@ -40,9 +40,9 @@ ms.locfileid: "56620812"
 
  この問題は、2 つの方法のいずれかで修復できます。
 
--   .*pdb* ファイルを検索し、アプリケーション ファイルと同じディレクトリに配置します。
+- .*pdb* ファイルを検索し、アプリケーション ファイルと同じディレクトリに配置します。
 
--   プロファイリング データ (.*vsp*) ファイルにシンボル情報を埋め込みます。 詳細については、「[パフォーマンス データ ファイルを使ったシンボル情報の保存](../profiling/saving-symbol-information-with-performance-data-files.md)」を参照してください。
+- プロファイリング データ (.*vsp*) ファイルにシンボル情報を埋め込みます。 詳細については、「[パフォーマンス データ ファイルを使ったシンボル情報の保存](../profiling/saving-symbol-information-with-performance-data-files.md)」を参照してください。
 
 > [!NOTE]
->  解析エンジンを使用する場合、.*pdb* ファイルと、コンパイル済みのアプリケーション ファイルを同じバージョンにする必要があります。 古いビルドまたは新しいビルドのアプリケーション ファイルの .*pdb* ファイルは機能しません。
+> 解析エンジンを使用する場合、.*pdb* ファイルと、コンパイル済みのアプリケーション ファイルを同じバージョンにする必要があります。 古いビルドまたは新しいビルドのアプリケーション ファイルの .*pdb* ファイルは機能しません。

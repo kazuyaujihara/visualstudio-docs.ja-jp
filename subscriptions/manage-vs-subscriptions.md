@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Visual Studio サブスクリプションを最大限に活用する方法を説明します
 searchscope: VS Subscription
 ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833978"
 ---
 # <a name="managing-subscriptions"></a>サブスクリプションを管理する
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: deeb74e8e8763feb62b0cc21fcfbfbf3c6b220ca
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 29f6ab4b750370467fa75c2341e20264db756a7f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979888"
 ---
 # <a name="shutdown"></a>シャットダウン
 **Shutdown** オプションは、現在プロファイル中のプロセスが終了するかデタッチされるまで待機して、プロファイラーをオフにし、プロファイル データ ファイルを閉じます。 **Shutdown** オプションは、プロファイル実行の最後のコマンドである必要があります。
@@ -29,8 +29,8 @@ VSPerfCmd.exe /Shutdown[:Timeout]
 ```
 
 #### <a name="parameters"></a>パラメーター
- `Timeout`
- -   (省略可能) 指定した場合は、指定した秒数の経過後にオプションから制御が戻りますが、プロファイラーはオフにされず、プロファイル データ ファイルも閉じられません。
+`Timeout`
+- (省略可能) 指定した場合は、指定した秒数の経過後にオプションから制御が戻りますが、プロファイラーはオフにされず、プロファイル データ ファイルも閉じられません。
 
 ## <a name="see-also"></a>関連項目
 - [VSPerfCmd](../profiling/vsperfcmd.md)

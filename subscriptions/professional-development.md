@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるプロフェッショナルな開発特典について説明します
 searchscope: VS Subscription
 ms.openlocfilehash: d63fd098c003f606a1d88aec55157e554620b20b
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007703"
 ---
 # <a name="professional-development-benefits-available-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで利用できるプロフェッショナルな開発特典
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Office 365 Developer 特典について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: d14e917f01acae8d5e505d5847425d4b58445797
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947234"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Office 365 Developer サブスクリプション特典
 
@@ -75,15 +75,13 @@ Office 365 Developer サブスクリプションの詳細については、「[O
 
 <sup>1</sup>  *Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、BizSpark、MCT Software & Services Developer、MCT Software & Services が含まれます除外:Microsoft Partner Network (MPN)、Imagine、Most Valuable Professional (MVP)、Regional Director (RD) は含まれません。*
 
-
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
-
 
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
 ## <a name="support-resources"></a>サポート リソース
 
--  Office Developer サブスクリプションのヘルプが必要ですか。 [Office Developer センター](https://developer.microsoft.com/office)で [サポート](https://developer.microsoft.com/office/support) リソースを確認してください。
--  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
--  Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+- Office Developer サブスクリプションのヘルプが必要ですか。 [Office Developer センター](https://developer.microsoft.com/office)で [サポート](https://developer.microsoft.com/office/support) リソースを確認してください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

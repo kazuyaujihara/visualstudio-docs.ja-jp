@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f7c2d941852303771df1998a21c076265fdb93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1f725c239df2ffc9683676c4c20a86ce12f873e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969021"
 ---
 # <a name="property-pages-javascript"></a>プロパティ ページ、JavaScript
 **[プロパティ ページ]** からプロジェクトの設定にアクセスできます。 **[プロパティ ページ]** に表示されるページを使用して、プロジェクトのプロパティを変更できます。
@@ -49,7 +49,6 @@ ms.locfileid: "55929493"
 > [!NOTE]
 > 一部のオプションは、UWP アプリでのみ使用できます。
 
-
  **出力パス**
 
  プロジェクト構成の出力ファイルの場所を指定します。 表示されているのは相対パスです。絶対パスを入力すると、その絶対パスがプロジェクトに保存されます。 既定の相対パスは bin\Debug です。
@@ -66,16 +65,15 @@ ms.locfileid: "55929493"
 > [!NOTE]
 > 一部のオプションは、UWP アプリでのみ使用できます。
 
-
  **[起動するデバッガー]**
 
  デバッガーの既定のホストを指定します。
 
--   Visual Studio ホスト コンピューターでアプリケーションを起動するには、**[ローカル マシン]** を選択します。 詳細については、「[ローカル コンピューターでのアプリの実行](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)」を参照してください。
+- Visual Studio ホスト コンピューターでアプリケーションを起動するには、**[ローカル マシン]** を選択します。 詳細については、「[ローカル コンピューターでのアプリの実行](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)」を参照してください。
 
--   シミュレーターでアプリケーションを起動するには、**[シミュレーター]** を選択します。 詳細については、「[シミュレーターでのアプリの実行](../../debugger/run-windows-store-apps-in-the-simulator.md)」を参照してください。
+- シミュレーターでアプリケーションを起動するには、**[シミュレーター]** を選択します。 詳細については、「[シミュレーターでのアプリの実行](../../debugger/run-windows-store-apps-in-the-simulator.md)」を参照してください。
 
--   リモート コンピューターでアプリケーションを起動するには、**[リモート コンピューター]** を選択します。 リモート デバッグの詳細については、「[リモート コンピューターでのアプリの実行](../../debugger/run-windows-store-apps-on-a-remote-machine.md)」を参照してください。
+- リモート コンピューターでアプリケーションを起動するには、**[リモート コンピューター]** を選択します。 リモート デバッグの詳細については、「[リモート コンピューターでのアプリの実行](../../debugger/run-windows-store-apps-on-a-remote-machine.md)」を参照してください。
 
 **[アプリケーションの起動]**
 

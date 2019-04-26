@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90b6731cf75a1825139aba57fe8491cd7cb0253f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004549"
 ---
 # <a name="msbuild-tasks"></a>MSBuild タスク
 ビルド プラットフォームでは、ビルドの処理中に、いくつかのアクションを実行する権限が必要です。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は*タスク*を使用して、これらのアクションを実行します。 タスクとは、分割不可能なビルド操作を実行するために [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] で使用される実行可能コードの単位です。

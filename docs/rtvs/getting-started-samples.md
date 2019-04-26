@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: adcc5ce422cdd06e641408b3506fb751a4c730d1
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950485"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>R Tools for Visual Studio のサンプル プロジェクト
 
@@ -81,7 +81,7 @@ ms.locfileid: "56840884"
 
 ![MKL を使用する MLS と MRO と MKL を使用しない R と MRO の比較](media/samples-speed-comparison.png)
 
-MRO と MLS を使用した R の技術的な比較については、[Lixun Zhang の詳細なディスカッション](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) に関するページを参照してください。
+MRO と MLS を使用した R の技術的な比較については、[Lixun Zhang の詳細なディスカッション](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) に関するページを参照してください。
 
 次の図では、ロジスティック回帰モデルの構築時に使用される経過時間 (秒) を比較して、15 分を超える航空便の遅延を予測しています。  CRAN R で使われた経過時間は、行が少し増えると大幅に増加しますが、MLS では約 2 倍のみ増加しています。 このベンチマークの詳細については、*Benchmarks/rxGlm_benchmark.R* サンプルをご覧ください。
 

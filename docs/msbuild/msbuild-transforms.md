@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2fe127a98236c321db9d1e7450ab006e09badba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3be16c2ccbd7cfe5d26507037e4238870e59d83b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414696"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 変換
 変換とは、1 つの項目一覧を別の項目コレクションに一対一で変換することです。 プロジェクトで項目一覧を変換できます。さらに変換により、ターゲットは入出力間の直接割り当てを指定できるようになります。 このトピックでは、変換と、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] で変換を利用してプロジェクトを効率的にビルドする方法について説明します。
@@ -33,7 +33,7 @@ ms.locfileid: "56627260"
 たとえば、@(RESXFile) 項目リスト内の項目が *Form1.resx*、*Form2.resx*、*Form3.resx* である場合、変換後の一覧の出力は *Form1.resources*、 *Form2.resources*、*Form3.resources* になります。
 
 > [!NOTE]
->  標準の項目一覧に区切りを指定するのと同じ方法で、変換後の項目一覧にカスタムの区切りを指定できます。 たとえば、変換後の項目一覧を既定のセミコロン (;) ではなくコンマ (,) で区切るには、次の XML を使用します: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
+> 標準の項目一覧に区切りを指定するのと同じ方法で、変換後の項目一覧にカスタムの区切りを指定できます。 たとえば、変換後の項目一覧を既定のセミコロン (;) ではなくコンマ (,) で区切るには、次の XML を使用します: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
 
 ## <a name="use-multiple-modifiers"></a>複数の修飾子を使用する
  変換式には、複数の修飾子を含めることができます。複数の修飾子は任意の順序で結合したり、繰り返したりできます。 次の例では、ファイルを含むディレクトリの名前が変更されますが、ファイルは元の名前とファイル名拡張子を維持します。
