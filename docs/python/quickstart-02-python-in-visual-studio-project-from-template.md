@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 089be3e6f28a939979f6bd97097ea7558824b493
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429763"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>クイック スタート: Visual Studio のテンプレートから Python プロジェクトを作成する
 
@@ -75,9 +75,9 @@ ms.locfileid: "59365952"
 
 1. **[デバッグ]** > **[デバッグなしで開始]** を選択し、アプリを実行してブラウザーで `localhost:5555` を開きます。
 
-**質問:Visual Studio では、他にどのような Python テンプレートを提供していますか。**
+**質問:Visual Studio には他にどのような Python テンプレートがありますか。**
 
-**回答**:Python ワークロードをインストールすると、Visual Studio にはさまざまなプロジェクト テンプレートが用意されます。[Flask、Bottle、Django Web フレームワーク](../python/python-web-application-project-templates.md)、Azure クラウド サービス、さまざまな機械学習シナリオのためのテンプレートなどがあります。Python アプリを含む既存のフォルダー構造からプロジェクトを作成するテンプレートまであります。 テンプレートには、**Python** 言語ノードとその子ノードを選択することで、**[ファイル]** > **[新規]** > **[プロジェクト]** ダイアログからアクセスできます。
+**回答:** Python ワークロードをインストールすると、Visual Studio にはさまざまなプロジェクト テンプレートが用意されます。[Flask、Bottle、Django Web フレームワーク](../python/python-web-application-project-templates.md)、Azure クラウド サービス、さまざまな機械学習シナリオのためのテンプレートなどがあります。Python アプリを含む既存のフォルダー構造からプロジェクトを作成するテンプレートまであります。 テンプレートには、**Python** 言語ノードとその子ノードを選択することで、**[ファイル]** > **[新規]** > **[プロジェクト]** ダイアログからアクセスできます。
 
 Visual Studio は、Python クラス、Python パッケージ、Python 単体テスト、*web.config* ファイルなどを簡単に作成するためのさまざまなファイルや "*項目テンプレート*" も備えています。 Python プロジェクトを開いているとき、**[プロジェクト]** > **[新しい項目の追加]** メニュー コマンドから項目テンプレートにアクセスできます。 [項目テンプレート](python-item-templates.md)のリファレンスを参照してください。
 
@@ -85,7 +85,7 @@ Visual Studio は、Python クラス、Python パッケージ、Python 単体テ
 
 **質問:Cookiecutter テンプレートも使用できますか。**
 
-**回答**:はい。 実際のところ、Visual Studio は Cookiecutter と直接統合できます。これについては、「[クイック スタート:Cookiecutter テンプレートからプロジェクトを作成する](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md)」で学習できます。
+**回答:** はい。 実際のところ、Visual Studio は Cookiecutter と直接統合できます。これについては、「[クイック スタート:Cookiecutter テンプレートからプロジェクトを作成する](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md)」で学習できます。
 
 ## <a name="next-steps"></a>次の手順
 

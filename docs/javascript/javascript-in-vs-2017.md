@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 88de2703db119f4124eb02658efb327df2ae899f
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553379"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 の JavaScript
 
@@ -52,14 +52,14 @@ JavaScript ファイルをコンパイルするには、`tsconfig.json` ファ�
 
 tsconfig ファイルに必要な設定について、以下に説明します。
 
- - `allowJs`:この値は、JavaScript ファイルが認識されるように `true` に設定する必要があります。 TypeScript は JavaScript にコンパイルされ、コンパイラはコンパイルしたファイルをインクルードする必要がないので、既定値は `false` になります。
- - `outDir`:この値は、出力された JavaScript ファイルが検出されず、プロジェクトに追加されるように、プロジェクトに含まれない場所に設定する必要があります (`exclude` を参照)。
- - `module`:モジュールを使用する場合、この設定で、出力コードで使用する必要があるモジュール形式 (たとえば、Node、または Browserify などのバンドラーの場合は `commonjs`) をコンパイラに指示します。
- - `exclude`:この設定は、プロジェクトに含めないフォルダーを示します。
- 出力場所と、`node_modules` や `temp` などのプロジェクト以外のフォルダーをこの設定に追加する必要があります。
- - `enableAutoDiscovery`:この設定は、前述のとおり、定義ファイルの自動検出とダウンロードを可能にします。
- - `compileOnSave`:この設定で、Visual Studio にソース ファイルが保存されるたびに再コンパイルする必要があるかどうかをコンパイラに指示します。
- - `typeAcquisition`:この一連の設定では、自動型取得の動作を制御します ([このセクション](/visualstudio/ide/javascript-intellisense#Auto)で詳しく説明します)。
+- `allowJs`:この値は、JavaScript ファイルが認識されるように `true` に設定する必要があります。 TypeScript は JavaScript にコンパイルされ、コンパイラはコンパイルしたファイルをインクルードする必要がないので、既定値は `false` になります。
+- `outDir`:この値は、出力された JavaScript ファイルが検出されず、プロジェクトに追加されるように、プロジェクトに含まれない場所に設定する必要があります (`exclude` を参照)。
+- `module`:モジュールを使用する場合、この設定で、出力コードで使用する必要があるモジュール形式 (たとえば、Node、または Browserify などのバンドラーの場合は `commonjs`) をコンパイラに指示します。
+- `exclude`:この設定は、プロジェクトに含めないフォルダーを示します。
+出力場所と、`node_modules` や `temp` などのプロジェクト以外のフォルダーをこの設定に追加する必要があります。
+- `enableAutoDiscovery`:この設定は、前述のとおり、定義ファイルの自動検出とダウンロードを可能にします。
+- `compileOnSave`:この設定で、Visual Studio にソース ファイルが保存されるたびに再コンパイルする必要があるかどうかをコンパイラに指示します。
+- `typeAcquisition`:この一連の設定では、自動型取得の動作を制御します ([このセクション](/visualstudio/ide/javascript-intellisense#Auto)で詳しく説明します)。
 
 JavaScript ファイルを CommonJS モジュールに変換し、`./out` フォルダーに配置する場合は、次の `tsconfig.json` ファイルを使用できます。
 

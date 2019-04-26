@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 810f05b0838f27004bee983dc0acf7a3009e22a0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62573093"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 
@@ -52,7 +52,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
   任意。 ツールの出力を送信する先のファイル名。 このファイルが既に存在する場合、ファイルの末尾に出力が追加されます。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 このスイッチを指定すると、IDE 内の **[ソリューションのクリーン]** メニュー コマンドと同じ処理が実行されます。
 
