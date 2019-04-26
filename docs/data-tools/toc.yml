@@ -107,7 +107,7 @@
               href: update-data-by-using-a-tableadapter.md
             - name: 階層更新を実行する
               href: hierarchical-update.md
-            - name: 同時実行例外を処理する
+            - name: コンカレンシー例外を処理する
               href: handle-a-concurrency-exception.md
             - name: トランザクションを使用してデータを保存する
               href: save-data-by-using-a-transaction.md
@@ -198,7 +198,7 @@
       href: upgrade-dot-mdf-files.md
     - name: データ アクセス エラーをトラブルシューティングする
       href: additional-resources-for-troubleshooting-data-access-errors.md
-- name: 参照
+- name: 関連項目
   items:
     - name: O/R デザイナー (LINQ to SQL)
       items:

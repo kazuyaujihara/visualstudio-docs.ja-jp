@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 98e54e8e1bec7502e7401dc6a13a639e92c1a881
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823042"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>ロード テスト アナライザーのテーブル ビューでのロード テスト結果とエラーの分析
 
@@ -120,7 +120,7 @@ ms.locfileid: "55941310"
 
 |Column|説明|タイミングの詳細なしで表示|
 |-|-|-|
-|**トランザクション**|トランザクションの名前。|はい|
+|**トランザクション**|トランザクションの名前です。|はい|
 |**シナリオ**|シナリオの名前です。|はい|
 |**テスト**|テストの名前です。|はい|
 |**合計**|ロード テスト中に発行されたトランザクションの合計数です。|はい|

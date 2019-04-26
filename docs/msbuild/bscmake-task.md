@@ -20,16 +20,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c1207051fbd8a2c4857a277868145795e14224
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27315682c26769ea5c529ceb21c99458c86f0220
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385815"
 ---
 # <a name="bscmake-task"></a>BscMake タスク
 > [!IMPORTANT]
->  Visual Studio IDE では、BscMake は使用されなくなりました。 Visual Studio 2008 以降、ブラウザー情報は、*ソリューション* フォルダーの *sdf* ファイルに自動的に格納されます。
+> Visual Studio IDE では、BscMake は使用されなくなりました。 Visual Studio 2008 以降、ブラウザー情報は、*ソリューション* フォルダーの *sdf* ファイルに自動的に格納されます。
 
  Microsoft Browse Information Maintenance Utility ツール (*bscmake.exe*) をラップします。  *bscmake.exe* ツールは、コンパイル時に作成されるソース ブラウザー ファイル (*.sbr*) からブラウザー情報ファイル (*.bsc*) をビルドします。 *.bsc* ファイルを表示するには、**オブジェクト ブラウザー**を使用します。 詳細については、「[BSCMAKE リファレンス](/cpp/build/reference/bscmake-reference)」を参照してください。
 

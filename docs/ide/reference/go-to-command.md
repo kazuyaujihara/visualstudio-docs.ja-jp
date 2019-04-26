@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 82dd3f226931dfeca2fa0dfad38daa24684fb8da
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789832"
 ---
 # <a name="go-to-command"></a>GoTo コマンド
 指定した行にカーソルを移動します。
@@ -34,7 +34,7 @@ Edit.GoTo [linenumber]
 
  任意。 移動先の行番号を表す整数。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
  行番号は 1 から始まります。 `linenumber` の値が 1 未満の場合は、最初の行が表示されます。 `linenumber` の値が最終行の値より大きい場合は、最後の行が表示されます。
 
  `linenumber` の値が指定されていない場合は、**[指定行へ移動]** ダイアログ ボックスが表示されます。

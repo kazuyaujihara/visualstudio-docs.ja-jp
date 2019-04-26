@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる MSDN Magazine サブスクリプションを受け取ってサインアップします。
 searchscope: VS Subscription
-ms.openlocfilehash: 3de620413610294072511f1e6e5e498fa64973a3
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2710295390318dfa2e31b31a6a4aeaf3805b3647
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947362"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの MSDN Magazine 特典
 
 実用的なソリューションから実際の問題まで、マイクロソフト テクノロジを総合的に網羅します。  サブスクリプションによっては、紙版マガジンまたはデジタル版への早期アクセスの権利があります。
-
 
 ## <a name="activation-steps"></a>アクティブ化の手順
 特典をアクティブにする手順は、選択したエディションによって異なります。
@@ -25,15 +24,14 @@ ms.locfileid: "56843118"
 ### <a name="digital-edition"></a>デジタル エディション
 デジタル エディションは、Visual Studio Dev Essentials メンバーが使用できます。
 
-1.  MSDN Magazine のデジタル エディションにアクセスするには、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
-2.  [プロフェッショナルな開発] セクションで MSDN Magazine のタイルを見つけて、**[アクセス]** をクリックします。
+1. MSDN Magazine のデジタル エディションにアクセスするには、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
+2. [プロフェッショナルな開発] セクションで MSDN Magazine のタイルを見つけて、**[アクセス]** をクリックします。
 
 ### <a name="printed-edition"></a>印刷エディション
 1. MSDN Magazine サブスクリプションの受信を開始するには、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
 2. [プロフェッショナルな開発] セクションで MSDN Magazine のタイルを見つけて、MSDN Magazine サブスクリプションタイルの **[サブスクライブ]** をクリックします  (デジタル エディションにアクセスするには、タイルの右下にある "!" をクリックします)。
    > [!div class="mx-imgBorder"]
    > ![MSDN Magazine 特典タイル](_img/vs-msdn/vs-msdn-tile.png)
-
 
 3. MSDN Magazine ページで、優先サブスクリプション タイプを選びます。  どこに住んでいても、無料でデジタル エディションを選ぶことができます。  無料の印刷版は、米国居住者が利用できます。  米国以外の住所への印刷版の送付には、配送費用がかかります。
    > [!div class="mx-imgBorder"]
@@ -65,9 +63,8 @@ ms.locfileid: "56843118"
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
 
-
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
 ## <a name="support-resources"></a>サポート リソース
--  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
--  Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

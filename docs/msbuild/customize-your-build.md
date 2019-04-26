@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da7b755c5b0ec72a9e1b906bdc1cd27a6dca7c0a
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778102"
 ---
 # <a name="customize-your-build"></a>ビルドのカスタマイズ
 
@@ -51,6 +51,7 @@ MSBuild バージョン 15 より前では、ソリューション内のプロ�
     </PropertyGroup>
    </Project>
    ```
+
 3. MSBuild を実行します。 プロジェクトの既存の *Microsoft.Common.props* と *Microsoft.Common.targets* のインポートで、ファイルが検索され、インポートされます。
 
 ### <a name="search-scope"></a>検索範囲
