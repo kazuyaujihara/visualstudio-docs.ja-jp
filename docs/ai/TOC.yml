@@ -1,52 +1,45 @@
-items:
 - name: Visual Studio Tools for AI
   href: index.yml
   items:
-  - name: 概要
-    items:
-    - name: Visual Studio Tools for AI について
-      href: about-ai-tools.md
-  - name: インストール
-    href: installation.md
-  - name: クイックスタート
-    items:
-    - name: Tensorflow + Python
-      href: tensorflow-local.md
-  - name: チュートリアル
-    items:
-    - name: TensorFlow + Azure ディープ ラーニング VM
-      href: tensorflow-vm.md
-  - name: 使い方ガイド
-    items:
-    - name: プロジェクトを作成する
+    - name: 概要
       items:
-      - name: サンプル ギャラリーからプロジェクトを作成する
-        href: create-project-gallery.md
-      - name: 既存のコードからプロジェクトを作成する
-        href: create-project-existing.md
-      - name: テンプレートからプロジェクトを作成する
-        href: create-project.md
-      - name: GitHub リポジトリからプロジェクトを作成する
-        href: create-project-repo.md
-    - name: モデルをトレーニングする
-      href: train-model.md
-    - name: ジョブの詳細を表示する
-      href: job-details.md
-    - name: GPU 使用率を監視する
-      href: monitor-gpu.md
-    - name: TensorBoard を監視する
-      href: monitor-tensorboard.md
-    - name: ストレージを監視する
-      href: manage-storage.md
-  - name: サンプル
-    items:
-    - name: GitHub
-      href: https://github.com/Microsoft/samples-for-ai
-    - name: Machine Learning ギャラリー
-      href: https://gallery.cortanaintelligence.com/projects
-ms.openlocfilehash: 06ed7a4c59a97742f3055d0d5084f28f9022adc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624387"
+        - name: Visual Studio Tools for AI について
+          href: about-ai-tools.md
+    - name: インストール
+      href: installation.md
+    - name: クイックスタート
+      items:
+        - name: Tensorflow + Python
+          href: tensorflow-local.md
+    - name: チュートリアル
+      items:
+        - name: TensorFlow + Azure ディープ ラーニング VM
+          href: tensorflow-vm.md
+    - name: 使い方ガイド
+      items:
+        - name: プロジェクトを作成する
+          items:
+            - name: サンプル ギャラリーからプロジェクトを作成する
+              href: create-project-gallery.md
+            - name: 既存のコードからプロジェクトを作成する
+              href: create-project-existing.md
+            - name: テンプレートからプロジェクトを作成する
+              href: create-project.md
+            - name: GitHub リポジトリからプロジェクトを作成する
+              href: create-project-repo.md
+        - name: モデルをトレーニングする
+          href: train-model.md
+        - name: ジョブの詳細を表示する
+          href: job-details.md
+        - name: GPU 使用率を監視する
+          href: monitor-gpu.md
+        - name: TensorBoard を監視する
+          href: monitor-tensorboard.md
+        - name: ストレージを監視する
+          href: manage-storage.md
+    - name: サンプル
+      items:
+        - name: GitHub
+          href: 'https://github.com/Microsoft/samples-for-ai'
+        - name: Machine Learning ギャラリー
+          href: 'https://gallery.cortanaintelligence.com/projects'

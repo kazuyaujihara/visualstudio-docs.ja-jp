@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 選択した Visual Studio サブスクリプションに含まれている Opsgility トレーニング特典を利用した Skill Me Up について説明します。
 searchscope: VS Subscriptions
-ms.openlocfilehash: 046dc71ff78a7458c0a524db3b643f520a41d61c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 110ae0871e907a33dce20b059188919f645b4401
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947003"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Skill Me Up - Visual Studio サブスクリプションの Opsgility トレーニング特典の利用
 
@@ -25,13 +25,11 @@ ms.locfileid: "56843845"
    > [!div class="mx-imgBorder"]
    > ![Opsgility 特典タイル](_img/vs-opsgility/vs-opsgility-tile.png)
 
-
 3. サブスクリプションに合わせて適切な Skype Me UP のランディング ページにリダイレクトされます。  (サポート担当者とのチャット セッションを開始する機会を提供されることがあります。  チャットを始めない場合は、ウィンドウを最小化できます)。要求された連絡先情報を入力し、ご契約条件に同意する場合はチェック ボックスをオンにして、**[登録]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![Opsgility 特典のランディング ページ](_img/vs-opsgility/vs-vse-landing-page.png)
 
 4. 必要な作業は以上です。  学習を始める準備ができました。
-
 
 ## <a name="eligibility"></a>特典を受ける条件
 
@@ -49,10 +47,9 @@ ms.locfileid: "56843845"
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
 
-
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
 ## <a name="support-resources"></a>サポート リソース
--  Opsgility に関するヘルプが必要ですか。  「[問い合わせ](https://www.opsgility.com/SupportTicket)」ページからサポート チケットを送信してください。
--  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
--  Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+- Opsgility に関するヘルプが必要ですか。  「[問い合わせ](https://www.opsgility.com/SupportTicket)」ページからサポート チケットを送信してください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

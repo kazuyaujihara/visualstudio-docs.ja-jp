@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: Azure Functions'
+title: 'チュートリアル: Azure Functions '
 description: Visual Studio for Mac での Azure Functions の使用。
 author: conceptdev
 ms.author: crdun
@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62986497"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>チュートリアル: Azure Functions の概要
 
@@ -25,12 +25,12 @@ ms.locfileid: "51296438"
 > * Web および Azure ストレージ リソースを統合する
 > * 複数の Azure Functions に関連するワークフローを編成する
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 
 - Visual Studio for Mac 7.5 以上。
 - Azure サブスクリプション ([https://azure.com/free](https://azure.com/free) から無料で入手可能)。
 
-## <a name="exercise-1-creating-an-azure-functions-project"></a>演習 1: Azure Functions プロジェクトの作成
+## <a name="exercise-1-creating-an-azure-functions-project"></a>演習 1:Azure Functions プロジェクトの作成
 
 1. **Visual Studio for Mac** を起動します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "51296438"
 
     ![local.settings.json ファイルが表示されている Solution Pad](media/azure-functions-lab-image3.png)
 
-## <a name="exercise-2-creating-an-azure-storage-account"></a>演習 2: Azure ストレージ アカウントの作成
+## <a name="exercise-2-creating-an-azure-storage-account"></a>演習 2:Azure ストレージ アカウントの作成
 
 1. [https://portal.azure.com](https://portal.azure.com) で Azure アカウントにログオンします。
 
@@ -87,7 +87,7 @@ ms.locfileid: "51296438"
 
     ![接続キーが入力されたローカル設定ファイル](media/azure-functions-lab-image10.png)
 
-## <a name="example-3-creating-and-debugging-an-azure-function"></a>例 3: Azure Function の作成とデバッグ
+## <a name="example-3-creating-and-debugging-an-azure-function"></a>例 3:Azure Function の作成とデバッグ
 
 1. これで、一部のコードの追加を開始する準備ができました。 .NET クラス ライブラリで作業を行う場合は、Azure Functions が静的メソッドとして追加されます。 **Solution Pad** で、**[AzureFunctions]** プロジェクト ノードを右クリックし、**[追加]、[関数の追加]** の順に選択します。
 
@@ -104,6 +104,7 @@ ms.locfileid: "51296438"
     using System.Web;
     using Microsoft.WindowsAzure.Storage.Table;
     ```
+
 1. 既存の `Run` メソッドを削除し、Azure Function としてクラスに以下のメソッドを追加します。
 
     ```csharp
@@ -119,6 +120,7 @@ ms.locfileid: "51296438"
         return x + y;
     }
     ```
+
 1. ここで、メソッドの定義を 1 つずつ説明していきます。
 
     最初に表示されるのは **FunctionName** 属性で、このメソッドを Azure Function としてマークします。 この属性は関数のパブリック名を指定します。 属性名が、実際のメソッド名と一致する必要はありません。
@@ -180,6 +182,7 @@ ms.locfileid: "51296438"
 
     return x + y;
     ```
+
 1. アプリケーションを実行します。
 
 1. ブラウザー ウィンドウに戻り、文字列 `/?x=2&y=3` を URL に追加します。 これで URL 全体は `http://localhost:7071/api/Add?x=2&y=3` になるはずです。 新しい URL に移動します。
@@ -188,10 +191,9 @@ ms.locfileid: "51296438"
 
 1. デバッグ セッションを停止します。
 
+## <a name="exercise-4-working-with-functionjson"></a>演習 4:function.json の操作
 
-## <a name="exercise-4-working-with-functionjson"></a>演習 4: function.json の操作
-
-1.  前の演習では、ライブラリに定義されている Azure Function のジョブ関数が Visual Studio for Mac で生成されたことを示しました。 これは、Azure Functions で実際に実行時にメソッド属性が使用されるのではなく、コンパイル時のファイル システム規則を使用して、Azure Functions を利用可能にする場所と方法を構成するためです。 **Solution Pad** で、プロジェクト ノードを右クリックし、**[Finder で表示]** を選択します。
+1. 前の演習では、ライブラリに定義されている Azure Function のジョブ関数が Visual Studio for Mac で生成されたことを示しました。 これは、Azure Functions で実際に実行時にメソッド属性が使用されるのではなく、コンパイル時のファイル システム規則を使用して、Azure Functions を利用可能にする場所と方法を構成するためです。 **Solution Pad** で、プロジェクト ノードを右クリックし、**[Finder で表示]** を選択します。
 
      ![[Finder で表示] メニュー オプション](media/azure-functions-lab-image23.png)
 
@@ -290,6 +292,7 @@ ms.locfileid: "51296438"
         return x + y;
     }
     ```
+
 1. **F5** キーを押し、プロジェクトをビルドして実行します。
 
 1. ビルドが完了し、プラットフォームがスピンアップすると、新しく追加されたメソッドにマップされる要求に対して使用可能な 2 番目のルートがあることが示されます。
@@ -302,7 +305,7 @@ ms.locfileid: "51296438"
 
 1. **Visual Studio for Mac** に戻り、デバッグ セッションを終了します。
 
-## <a name="exercise-5-working-with-azure-storage-tables"></a>演習 5: Azure ストレージ テーブルの操作
+## <a name="exercise-5-working-with-azure-storage-tables"></a>演習 5:Azure ストレージ テーブルの操作
 
 多くの場合、ビルドするサービスは、これまでビルドしたものよりはるかに複雑で、実行にはかなりの時間またはインフラストラクチャが必要になることがあります。 その場合、リソースが利用可能になったときに処理のためキューに入れられた要求を受け入れることが効果的な場合があります。これは Azure Functions でサポートされています。 それ以外の場合は、一元的にデータを格納します。 Azure Storage のテーブルで、この操作をすばやく行うことができます。
 
@@ -316,6 +319,7 @@ ms.locfileid: "51296438"
         public int Sum { get; set; }
     }
     ```
+
 1. **Add** クラス内で、次のコードを追加して別の関数を導入します。 これは HTTP 応答を伴わないという点で、これまでとは異なることに注意してください。 最終行は、パラメーターと合計だけでなく、後で簡単に取得できるようにする一部のキー情報 (**PartitionKey** と **RowKey**) が入力された新しい **TableRow** を返します。 また、メソッド内のコードでは、関数がいつ実行されるかをより簡単に把握できるように **TraceWriter** が使用されます。
 
     ```csharp
@@ -341,6 +345,7 @@ ms.locfileid: "51296438"
         };
     }
     ```
+
 1. **F5** キーを押し、プロジェクトをビルドして実行します。
 
 1. ブラウザー タブで、**http://localhost:7071/api/Process/4/6** に移動します。 これにより別のメッセージがキューに入れられ、最終的には別の行がテーブルに追加されます。
@@ -363,6 +368,7 @@ ms.locfileid: "51296438"
     [Table("Results", "sums", "{x}_{y}")]
     TableRow tableRow,
     ```
+
 1. メソッドの先頭に次のコードを追加します。 **tableRow** が null でない場合、演算結果は既に要求されており、すぐに返すことができます。 それ以外の場合、関数は以前のとおりに続行します。 これはデータを返す最も堅牢な方法でないかもしれませんが、わずかなコードで複数のスケーラブル層にわたる非常に洗練された演算を編成できることを示しています。
 
     ```csharp
@@ -372,6 +378,7 @@ ms.locfileid: "51296438"
         return null;
     }
     ```
+
 1. **F5** キーを押し、プロジェクトをビルドして実行します。
 
 1. ブラウザー タブで、**http://localhost:7071/api/Process/4/6** の URL を更新します。 このレコードのテーブル行は存在するため、エラーなしですぐに返されます。 HTTP 出力はないため、端末で出力を確認できます。
@@ -409,4 +416,3 @@ ms.locfileid: "51296438"
 ## <a name="summary"></a>まとめ
 
 このラボでは、Visual Studio for Mac で Azure Functions のビルドを開始する方法を学習しました。
-

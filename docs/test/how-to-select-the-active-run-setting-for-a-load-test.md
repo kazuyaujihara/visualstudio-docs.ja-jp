@@ -8,12 +8,12 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 768695338f77943e44d5e1883ce5da9d9a6bc307
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949943"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>方法: ロード テストのアクティブな実行設定を選択する
 
@@ -32,11 +32,11 @@ ms.locfileid: "55916688"
 
 ## <a name="select-the-active-run-setting"></a>アクティブな実行設定の選択
 
-1.  ロード テストを開きます。
+1. ロード テストを開きます。
 
-2.  **[実行設定]** フォルダーを展開します。
+2. **[実行設定]** フォルダーを展開します。
 
-3.  アクティブ ノードにする実行設定ノードを右クリックし、**[アクティブとして設定]** を選択します。
+3. アクティブ ノードにする実行設定ノードを右クリックし、**[アクティブとして設定]** を選択します。
 
      **ロード テスト エディター**で、対象となった実行設定ノードが "[Active]" というサフィックスで更新されます。
 

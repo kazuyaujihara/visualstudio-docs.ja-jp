@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio に含まれる Azure Advisory Chat 特典を活用する方法について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: e353878d7e911bb38dce80470e77a65f3be85c88
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 03e55b29cea867d438ef0536a2db7ee9c4f47e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809104"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -49,14 +49,13 @@ Azure Advisory Chat の使用は簡単です。
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
 
-
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>Q:Azure Advisory Chat と Azure Advisor の違いは何ですか。
--  A: Azure Advisory Chat は、Azure に関する質問を支援するためのリアルタイムのチャット サービスです。 [Azure Advisor](/azure/advisor/advisor-overview) は、ベスト プラクティスに従ってユーザーの Azure のデプロイを最適化することを支援する、パーソナライズされたクラウド コンサルタントです。 リソースの構成と使用量テレメトリを分析し、Azure リソースの費用対効果、パフォーマンス、高可用性、およびセキュリティを向上するのに役立つソリューションを推奨します。
+- A: Azure Advisory Chat は、Azure に関する質問を支援するためのリアルタイムのチャット サービスです。 [Azure Advisor](/azure/advisor/advisor-overview) は、ベスト プラクティスに従ってユーザーの Azure のデプロイを最適化することを支援する、パーソナライズされたクラウド コンサルタントです。 リソースの構成と使用量テレメトリを分析し、Azure リソースの費用対効果、パフォーマンス、高可用性、およびセキュリティを向上するのに役立つソリューションを推奨します。
 
 ## <a name="support-resources"></a>サポート リソース
--  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
--  Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

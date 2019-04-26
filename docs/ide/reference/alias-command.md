@@ -16,19 +16,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e55b27ebc3a0a9690e04e19e53b65a7aa44834de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0072bbd770a6d4fa675010048f2d067eb0961d62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791845"
 ---
 # <a name="alias-command"></a>Alias コマンド
 完全なコマンド、完全なコマンドと引数、または他のエイリアスに対して新しいエイリアスを作成します。
 
 > [!TIP]
 > 引数を指定せずに「`>alias`」と入力すると、現在のエイリアスとその定義が一覧表示されます。
-
 
 ## <a name="syntax"></a>構文
 
@@ -46,7 +45,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 
  /reset 省略可能。 定義済みエイリアスの一覧を元の設定に戻します。 つまり、定義済みエイリアスをすべて復元し、ユーザー定義のエイリアスをすべて削除します。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
  エイリアスはコマンドを表すため、コマンド ラインの先頭に指定する必要があります。
 
  このコマンドを実行するときは、エイリアスの後ではなく、コマンドの直後にスイッチを置く必要があります。そうしないと、スイッチ自体がエイリアスの文字列の一部として取り込まれます。

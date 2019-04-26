@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Xamarin University トレーニング サブスクリプションについて説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 77b8a9c7df84203a9edb4b4dc9604d8894236c2d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: faddafcc9c1bbc77a6d6c91b72bdb2865552583a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810555"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Xamarin University トレーニング特典
 
@@ -28,11 +28,10 @@ Xamarin University のコンテンツは、新しい対話型トレーニング 
 
 2018 年 12 月 21 日まで、Visual Studio Enterprise のサブスクライバーは、Xamarin University のすべてのカタログに 6 か月間無制限でアクセスできます。  Visual Studio Professional のサブスクライバーは、3 か月間アクセスできます。
 
-
 ## <a name="support-resources"></a>サポート リソース
--  Xamarin University についてわからないことがありますか。  [https://university.xamarin.com/support](https://university.xamarin.com/support) でさまざまなサポート リソースを見つけることができます。
--  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
--  Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+- Xamarin University についてわからないことがありますか。  [https://university.xamarin.com/support](https://university.xamarin.com/support) でさまざまなサポート リソースを見つけることができます。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 ### <a name="q--if-ive-already-activated-my-xamarin-university-benefit-by-december-21-2018-what-happens-after-that-date"></a>Q:2018 年 12 月 21 日までに Xamarin University 特典をアクティブにしていた場合、その日付以降はどうなりますか。

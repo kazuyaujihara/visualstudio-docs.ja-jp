@@ -7,15 +7,14 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 長期契約ではなく、月または年単位の一定期間だけ Visual Studio Professional または Visual Studio Enterprise をレンタルします。
 searchscope: VS Subscription
-ms.openlocfilehash: eb9d7034a18d8be6fd4c20ddde1c3708cc206fa0
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978906"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional および Visual Studio Enterprise クラウド サブスクリプションの購入
-
 
 [Visual Studio Professional と Visual Studio Enterprise のサブスクリプション](https://visualstudio.microsoft.com/subscriptions/)は、[Visual Studio Marketplace](https://marketplace.visualstudio.com) から購入できます。 これらは、**"クラウド サブスクリプション"** と呼ばれます。
 
@@ -65,12 +64,12 @@ Azure サブスクリプションに対する[所有者や共同作業者アク�
 
 ## <a name="manage-subscriptions"></a>購入したクラウド サブスクリプションの更新のキャンセル
 
-*   購入したサブスクリプションの数を変更するには:
+* 購入したサブスクリプションの数を変更するには:
 
 > [!div class="mx-imgBorder"]
 > ![サブスクリプションを変更する](_img/buy-vs-subscriptions/manage-subscriptions.png)
 
-*   これらのサブスクリプションをキャンセルするには、サブスクリプションの数をゼロ (0) に減らします。 次の請求期間の開始時に更新がありません (月間クラウド サブスクリプションの場合は次の月初、年間クラウド サブスクリプションの場合は 12 か月後)。
+* これらのサブスクリプションをキャンセルするには、サブスクリプションの数をゼロ (0) に減らします。 次の請求期間の開始時に更新がありません (月間クラウド サブスクリプションの場合は次の月初、年間クラウド サブスクリプションの場合は 12 か月後)。
 
 ## <a name="buy-cloud-subscriptions-now"></a>クラウド サブスクリプションを今すぐ購入する
 

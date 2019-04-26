@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b778157b8e664280746f4d07423bfd67357a485
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 76adb2a5355800889939afd41075c261270b02aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968056"
 ---
 # <a name="thread-details-view---contention-data"></a>スレッドの詳細ビュー - 競合データ
 スレッドの詳細ビューには、リソースに対する競合によって発生した、選択したプロファイリング実行スレッド内のブロック イベントがタイムライン グラフで表示されます。 ブロック イベントは、あるリソースに対するアクセスを別のスレッドがロックしているために、スレッドが実行を中断されたときに発生します。
@@ -28,19 +28,19 @@ ms.locfileid: "56646266"
 
 #### <a name="to-zoom-in-on-a-timeline-segment"></a>タイムライン セグメントを拡大するには
 
--   マウス ポインターをクリックしてドラッグし、タイムラインの領域を選択します。
+- マウス ポインターをクリックしてドラッグし、タイムラインの領域を選択します。
 
      マウスを離すと、選択した時間セグメントに合わせてビューが表示されます。 このプロセスを繰り返して、さらに詳細に拡大できます。 時間スクロール バーのスクロール ボックスには、ビューに表示されている時間セグメントの相対サイズが表示されます。
 
 #### <a name="to-zoom-out-on-a-timeline"></a>タイムラインを縮小するには
 
--   前のズーム レベルに戻るには、**[縮小]** をクリックします。
+- 前のズーム レベルに戻るには、**[縮小]** をクリックします。
 
--   タイムライン全体をビューに表示するには、**[ズーム リセット]** をクリックします。
+- タイムライン全体をビューに表示するには、**[ズーム リセット]** をクリックします。
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>イベントの呼び出し履歴を表示するには
 
--   タイムライン グラフで、イベントを表す縦棒をクリックします。
+- タイムライン グラフで、イベントを表す縦棒をクリックします。
 
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>呼び出し履歴内の関数のソース コードを表示または編集するには
 
@@ -50,12 +50,12 @@ ms.locfileid: "56646266"
 
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>プロファイリング実行内のすべてのスレッドでのリソースの競合イベントを表示するには
 
--   タイムライン グラフで、リソースの名前または ID をクリックします。
+- タイムライン グラフで、リソースの名前または ID をクリックします。
 
      選択したリソースに対して[リソースの詳細ビュー](../profiling/resource-details-view-contention-data.md)が表示されます。
 
 #### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>プロセス ウィンドウにスレッド競合データを表示するには
 
--   タイムライン グラフで、**[合計]** をクリックします。
+- タイムライン グラフで、**[合計]** をクリックします。
 
      選択したスレッドを表示する[プロセス ビュー](../profiling/process-view-contention-data.md)が表示されます。

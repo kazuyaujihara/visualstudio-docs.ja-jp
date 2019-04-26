@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b220ddc42857040a51b2308c6d4a83d931de09
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975528"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>方法: クラス ダイアグラムにコメントを追加する
 
@@ -31,9 +31,9 @@ ms.locfileid: "55970544"
 
 ## <a name="to-add-a-comment"></a>コメントを追加するには
 
-1.  **クラス デザイナーのツールボックス**からクラス ダイアグラムにコメントをドラッグします。
+1. **クラス デザイナーのツールボックス**からクラス ダイアグラムにコメントをドラッグします。
 
-2.  ダイアグラムの新しいコメントのシェイプをクリックし、テキストを入力します。
+2. ダイアグラムの新しいコメントのシェイプをクリックし、テキストを入力します。
 
 ## <a name="see-also"></a>関連項目
 

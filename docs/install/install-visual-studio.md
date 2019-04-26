@@ -2,7 +2,7 @@
 title: Visual Studio のインストール
 titleSuffix: ''
 description: Visual Studio をインストールする方法について、ステップ バイ ステップで説明します。
-ms.date: 03/30/2019
+ms.date: 04/16/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b45778cfbf34a6703de365bcf2a85be994a05173
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974943"
 ---
 # <a name="install-visual-studio"></a>Visual Studio のインストール
 
@@ -105,14 +105,14 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
 ::: moniker range="vs-2017"
 
  > [!div class="button"]
- > [Visual Studio をダウンロードする](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+ > [Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [Visual Studio をダウンロードする](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+ > [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
 
 ::: moniker-end
 
@@ -182,7 +182,6 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
   ![Visual Studio 2019 - 個々のコンポーネントのインストール](media/vs-2019/vs-installer-individual-components.png "Visual Studio の個々のコンポーネントのインストール")
 
 ::: moniker-end
-
 
 ## <a name="step-6---install-language-packs-optional"></a>手順 6 - 言語パックをインストールする (省略可能)
 
@@ -261,8 +260,8 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2017 を更新する](update-visual-studio.md)
-* [Visual Studio 2017 の変更](modify-visual-studio.md)
+* [Visual Studio の更新](update-visual-studio.md)
+* [Visual Studio の変更](modify-visual-studio.md)
 * [Visual Studio のアンインストール](uninstall-visual-studio.md)
 * [Visual Studio のオフライン インストールを作成する](create-an-offline-installation-of-visual-studio.md)
 * [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)

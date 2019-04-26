@@ -10,12 +10,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f1172cff8abc53867f4a13cacdf16fe2d1f065e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950138"
 ---
 # <a name="how-to-create-a-web-service-test"></a>方法: Web サービス テストを作成する
 
@@ -31,21 +31,21 @@ Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>Web サービスをテストするには
 
-1.  新しい Web パフォーマンス テストを作成します。 ブラウザーが開いたら、すぐに **[停止]** を選択します。
+1. 新しい Web パフォーマンス テストを作成します。 ブラウザーが開いたら、すぐに **[停止]** を選択します。
 
-2.  **Web パフォーマンス テスト エディター**で、Web パフォーマンス テストを右クリックし、**[Web サービス要求の追加]** を選択します。
+2. **Web パフォーマンス テスト エディター**で、Web パフォーマンス テストを右クリックし、**[Web サービス要求の追加]** を選択します。
 
-3.  新しい要求の **[URL]** のプロパティで、**http://localhost/storecsvs/InstantOrder.asmx** などの Web サービスの名前を入力します。
+3. 新しい要求の **[URL]** のプロパティで、**http://localhost/storecsvs/InstantOrder.asmx** などの Web サービスの名前を入力します。
 
-4.  別のセッションのブラウザーを開き、**[アドレス]** ツール バーに *.asmx* ページの URL を入力します。 テストするメソッドを選択して、SOAP メッセージを調べます。 これには、`SOAPAction` が含まれます。
+4. 別のセッションのブラウザーを開き、**[アドレス]** ツール バーに *.asmx* ページの URL を入力します。 テストするメソッドを選択して、SOAP メッセージを調べます。 これには、`SOAPAction` が含まれます。
 
-5.  **Web パフォーマンス テスト エディター**で、要求を右クリックし、**[ヘッダーの追加]** を選択して新しいヘッダーを追加します。 **[名前]** プロパティに「`SOAPAction`」と入力します。 **[値]** プロパティで、`SOAPAction` の値 (`"http://tempuri.org/CheckStatus"` など) を入力します。
+5. **Web パフォーマンス テスト エディター**で、要求を右クリックし、**[ヘッダーの追加]** を選択して新しいヘッダーを追加します。 **[名前]** プロパティに「`SOAPAction`」と入力します。 **[値]** プロパティで、`SOAPAction` の値 (`"http://tempuri.org/CheckStatus"` など) を入力します。
 
-6.  エディタの URL ノードを展開し、**[文字列ボディ]** ノードを選択して **[コンテンツの種類]** プロパティの値として「`text/xml`」と入力します。
+6. エディタの URL ノードを展開し、**[文字列ボディ]** ノードを選択して **[コンテンツの種類]** プロパティの値として「`text/xml`」と入力します。
 
-7.  手順 4 のブラウザーに戻り、[Web サービスの説明] ページから SOAP 要求の XML 部分を選択し、クリップボードにコピーします。
+7. 手順 4 のブラウザーに戻り、[Web サービスの説明] ページから SOAP 要求の XML 部分を選択し、クリップボードにコピーします。
 
-8.  次に示すのは、XML の内容の一例です。
+8. 次に示すのは、XML の内容の一例です。
 
      ```xml
      <?xml version="1.0" encoding="utf-8"?>

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05266a6f1b5ee0be22e2edc8df1c03b720844f4f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968081"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 
@@ -36,7 +36,7 @@ devenv /DebugExe ExecutableFile
 
   必須です。 `.exe` ファイルのパスとファイル名。 `.exe` ファイルが見つからない場合、または存在しない場合、警告やエラーは表示されず、Visual Studio は通常どおり起動します。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 *ExecutableFile* パラメーターに続くどの文字列もそのファイルに引数として渡されます。
 

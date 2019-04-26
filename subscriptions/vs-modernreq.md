@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio Enterprise サブスクリプションに含まれる ModernRequirements 製品スイートについて説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: b35dae73b0fad0acb0acb7f67a2a35533d7cf95a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 77729e8e5bf39d252ebd570d7d6d514e9ffdcdbb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947807"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの MODERNRequirements4TFS 特典
 
 選択した Visual Studio サブスクリプションには、MODERNRequirements SmartOffice 4TFS と ModernRequirements4TFS の 6 か月間のサブスクリプションが含まれます。  MODERNRequirements の SmartOffice4TFS は、Microsoft Word ベースのレポート機能や、すばやく簡単なリッチ テキストのオーサリングによって、TFS や Azure DevOps Services の機能を強化します。  ModernRequirements4TFS には、作業項目のベースライン化と HTML5 シミュレーションの機能が備わっています。
-
 
 ## <a name="activation-steps"></a>アクティブ化の手順
 1. MODERNRequirementsTFS 特典を使用するには、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
@@ -31,11 +30,9 @@ ms.locfileid: "56842508"
    > [!div class="mx-imgBorder"]
    > ![ModernRequirements ランディング ページ](_img/vs-modernreq/vs-modernreq-landing.png)
 
-
 5. 次のページにはライセンス キーが含まれます。  ページに表示されるインストールに関する情報を確認し、ページの中央にある青い **[To download the software please click here]\(ソフトウェアをダウンロードするにはここをクリックしてください\)** リンクをクリックします。
    > [!div class="mx-imgBorder"]
    > ![ModernRequirements ライセンス キー](_img/vs-modernreq/vs-modernreq-license-new-resized.png)
-
 
 6. ダウンロード ページでは、MODERNRequirements スイートをインストールするか、SMARTOffice4TFS スイートの個別のモジュールをインストールすることができます。  適切なオプションは、ユーザーの設定と、インストールされている TFS のバージョンによって異なります。  ページの情報をよく理解し、製品の適切なバージョンを選んでください。
    > [!div class="mx-imgBorder"]
@@ -98,10 +95,9 @@ ms.locfileid: "56842508"
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
 
-
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
 ## <a name="support-resources"></a>サポート リソース
--  ModernRequirements 製品のヘルプが必要ですか。  [https://www.modernrequirements.com/support-2/](https://www.modernrequirements.com/support-2/) を参照してください。
--  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
--  Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+- ModernRequirements 製品のヘルプが必要ですか。  [https://www.modernrequirements.com/support-2/](https://www.modernrequirements.com/support-2/) を参照してください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
