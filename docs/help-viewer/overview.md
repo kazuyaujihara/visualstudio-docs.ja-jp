@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975687"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft ヘルプ ビューアー
 
@@ -73,7 +73,7 @@ Microsoft ヘルプ ビューアーを使用して、ローカル コンピュ�
 > [!NOTE]
 > ヘルプ ビューアー管理者が **[コンテンツの管理]** タブの機能を非アクティブにするか、またはインターネット接続が使用できない場合、このタブの機能は異なる場合があります。
 
-### <a name="toolbar-buttons"></a>ツール バー ボタン
+### <a name="toolbar-buttons"></a>ツールバー ボタン
 
 **[ヘルプ ビューアー]** ウィンドウのツール バーには、次のボタンが含まれています。
 

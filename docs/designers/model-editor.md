@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 13e19cb22740ff5b8dbd42b5cc5f769a211f6f04
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895587"
 ---
 # <a name="model-editor"></a>モデル エディター
 
@@ -241,7 +241,7 @@ Visual Studio は、3D 軸の任意の向きをサポートし、それをサポ
 
 モデル エディターの既定の素材は次のとおりです。
 
-|質感|説明|
+|素材|説明|
 |--------------|-----------------|
 |**光源なし**|光源がシミュレートされていない画面を表示します。|
 |**ランバート**|環境光と拡散光をシミュレートした画面を表示します。|
@@ -330,7 +330,7 @@ Visual Studio は、3D 軸の任意の向きをサポートし、それをサポ
 |シーンの前のオブジェクトを選択|**Shift**+**Tab**|
 |選択したオブジェクトを現在のツールに基づいて操作します。|**方向**キー|
 |現在のマニピュレーターを非アクティブ化|**Q**|
-|カメラの回転|マウスの左ボタンを使用して **Alt** キーを押しながら**ドラッグ**|
+|カメラの回転|マウスの左ボタンを使用して **Alt** +キーを押しながら**ドラッグ**|
 
 ## <a name="related-topics"></a>関連トピック
 
