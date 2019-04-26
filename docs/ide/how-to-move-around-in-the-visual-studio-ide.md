@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18239c01707e63acaf7602ec77dad3bc6b42a884
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547683"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>方法:Visual Studio IDE 内で移動する
 
@@ -43,9 +43,9 @@ Visual Studio のほぼすべてのメニュー コマンドにはショート�
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>使用順に開いているファイル内を移動するには
 
--   最近使用した順序で開いているドキュメントをアクティブにするには、**Ctrl**+**-** キーを押します。
+- 最近使用した順序で開いているドキュメントをアクティブにするには、**Ctrl**+**-** キーを押します。
 
--   逆の順序で開いているドキュメントをアクティブにするには、**Ctrl**+**Shift**+**-** キーを押します。
+- 逆の順序で開いているドキュメントをアクティブにするには、**Ctrl**+**Shift**+**-** キーを押します。
 
     > [!NOTE]
     > **[戻る]** と **[次に進む]** は **[表示]** メニューにもあります。
@@ -63,20 +63,20 @@ Visual Studio のほぼすべてのメニュー コマンドにはショート�
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>エディターで特定のファイルに切り替えるには
 
--   **Ctrl**+**Tab** キーを押して、**IDE Navigator** を表示します。 切り替える対象のファイルが選択されるまで、**Ctrl** キーを押さえたまま繰り返し **Tab** キーを押します。
+- **Ctrl**+**Tab** キーを押して、**IDE Navigator** を表示します。 切り替える対象のファイルが選択されるまで、**Ctrl** キーを押さえたまま繰り返し **Tab** キーを押します。
 
     > [!TIP]
     > **[アクティブなファイル]** リストの順番を逆に切り替えるには、**Ctrl**+**Shift** キーを押したまま **Tab** キーを押します。
 
     \- または
 
--   エディターの右上隅で、**[アクティブなファイル]** ボタンを選び、切り替え先のファイルをリストから選びます。
+- エディターの右上隅で、**[アクティブなファイル]** ボタンを選び、切り替え先のファイルをリストから選びます。
 
     \- または
 
--   メニュー バーで **[ウィンドウ]** > **[ウィンドウ]** の順に選択します。
+- メニュー バーで **[ウィンドウ]** > **[ウィンドウ]** の順に選択します。
 
--   一覧で表示するファイルを選び、**[開く]** を選びます。
+- 一覧で表示するファイルを選び、**[開く]** を選びます。
 
 ## <a name="navigate-among-tool-windows-in-the-ide"></a>IDE のツール ウィンドウ間を移動する
 
@@ -87,7 +87,7 @@ Visual Studio のほぼすべてのメニュー コマンドにはショート�
 
 ### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>IDE で特定のツール ウィンドウに切り替えるには
 
--   **Alt**+**F7** キーを押して、**IDE Navigator** を表示します。 切り替える対象のウィンドウが選択されるまで、**Alt** キーを押したまま繰り返し **F7** キーを押します。
+- **Alt**+**F7** キーを押して、**IDE Navigator** を表示します。 切り替える対象のウィンドウが選択されるまで、**Alt** キーを押したまま繰り返し **F7** キーを押します。
 
     > [!TIP]
     > **[アクティブなツール ウィンドウ]** リストの順番を逆に切り替えるには、**Shift** + **Alt** キーを押したまま **F7** キーを押します。
