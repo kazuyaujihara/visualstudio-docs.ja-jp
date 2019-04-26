@@ -12,17 +12,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c01514a1f3a27c5e155bd9c3c5e0dc72e6dec0fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cc0a254f13c4689dd6526646ddd2ff30b6094411
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432985"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>[オプション]、[テキスト エディター]、[JavaScript]、[IntelliSense]
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-JavaScript での IntelliSense の動作設定を変更するには、 **[オプション]** ダイアログ ボックスの **[IntelliSense]** ページを使用します。  **[IntelliSense]** ページにアクセスするには、メニュー バーの **[ツール]**, **[オプション]** をクリックし、 **[テキスト エディター]**, **[JavaScript]**, **[IntelliSense].** と展開します。  
+JavaScript での IntelliSense の動作設定を変更するには、 **[オプション]** ダイアログ ボックスの **[IntelliSense]** ページを使用します。 **[IntelliSense]** ページにアクセスするには、メニュー バーの **[ツール]**, **[オプション]** をクリックし、 **[テキスト エディター]**, **[JavaScript]**, **[IntelliSense].** と展開します。  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
   
@@ -44,7 +44,7 @@ JavaScript での IntelliSense の動作設定を変更するには、 **[オプ
  このチェック ボックスをオンにすると、プロジェクトのコンテキストの外部で開かれる JavaScript ファイルがある場合、IntelliSense の情報を提供するために、Visual Studio によってそのファイルで参照されているリモート JavaScript ファイルがダウンロードされます。 このオプションを選択している場合、JavaScript ファイルに参照として含まれるファイルがダウンロードされます。  
   
 > [!NOTE]
->  Web プロジェクトでは、プロジェクトで参照されるリモート ファイルは既定でダウンロードされます。  
+> Web プロジェクトでは、プロジェクトで参照されるリモート ファイルは既定でダウンロードされます。  
   
 ## <a name="statement-completion"></a>[入力候補]  
  これらのオプションを使用して、IntelliSense のステートメントの入力候補の動作を変更できます。  
@@ -74,7 +74,7 @@ JavaScript での IntelliSense の動作設定を変更するには、 **[オプ
   このオプションで、ファイルが言語サービスのコンテキストに読み込まれる順序を指定します。 **[削除]**、 **[上へ移動]**、および **[下へ移動]** ボタンを使用して順序を構成できます。 IntelliSense が正しく動作するためには、別のファイルに依存しているファイルはその別のファイルの後に読み込む必要があります。  
   
 > [!CAUTION]
->  オブジェクトが複数の暗黙的な参照で無条件で定義されている場合、その一覧内の最後の参照を使用してオブジェクトが定義されます。  
+> オブジェクトが複数の暗黙的な参照で無条件で定義されている場合、その一覧内の最後の参照を使用してオブジェクトが定義されます。  
   
  **[Add a reference to the group] (グループへの参照の追加)**  
  このオプションを使用すると、適切なファイルを参照して IntelliSense (.js) ファイルを追加できます。  

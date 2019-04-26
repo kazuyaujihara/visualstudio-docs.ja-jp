@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7873d54ecdf3ce96ab64d94e9b1864c7ef2904b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 33dfcd989a71785918cf4d121e2a2624654a5101
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405670"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>方法 : エディターで行番号を表示する
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60088263"
 コードの行番号を表示または非表示にできます。  
   
 > [!NOTE]
->  使用している設定によっては、表示されるダイアログ ボックスやメニュー コマンドがここに記載されている内容と異なる場合があります。 設定を変更するには、**[ツール] > [設定のインポートとエクスポート]** を開きます。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 使用している設定によっては、表示されるダイアログ ボックスやメニュー コマンドがここに記載されている内容と異なる場合があります。 設定を変更するには、**[ツール] > [設定のインポートとエクスポート]** を開きます。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="display-line-numbers-in-code"></a>コードの行番号の表示  
  行番号は、参照用に表示されるだけであり、コードに追加されるわけではありません。 行番号を印刷するには、**[印刷]** ダイアログ ボックスで、**[行番号を入れる]** チェック ボックスをオンにします。  
@@ -39,7 +39,7 @@ ms.locfileid: "60088263"
 2. ![エディターに行番号を表示するためのオプション](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
   
 > [!NOTE]
->  使う言語または設定によっては、**[オプション]** ダイアログ ボックスの **[すべての設定を表示]** チェック ボックスをオンにして、**[すべての言語]** サブノードを表示する必要がある場合があります。  
+> 使う言語または設定によっては、**[オプション]** ダイアログ ボックスの **[すべての設定を表示]** チェック ボックスをオンにして、**[すべての言語]** サブノードを表示する必要がある場合があります。  
   
 ## <a name="see-also"></a>関連項目  
  [エディターのカスタマイズ](../../ide/customizing-the-editor.md)   

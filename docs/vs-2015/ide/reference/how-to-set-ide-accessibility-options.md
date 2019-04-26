@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbd746a52084d2a2fc90a0c6890e20687fe7ee26
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405619"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>方法: IDE アクセシビリティ オプションを設定する
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60051623"
  また、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] では、Dvorak 配列のキーボードがサポートされています。この配列では、最も使用頻度の高い文字が最も入力しやすい位置にあります。 また、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] で設定されている既定のショートカット キーをカスタマイズすることもできます。 詳細については、「[Visual Studio でのキーボード ショートカットの識別とカスタマイズ](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)」をご覧ください。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>エディター、ダイアログ、およびツール ウィンドウ  
  既定では、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] のダイアログ ボックスおよびツール ウィンドウに対し、オペレーティング システムで使用されているフォント サイズと色が使用されます。 IDE、ダイアログ ボックス、ツール バー、ツール ウィンドウのフレームの色の設定は、配色 (明るいまたは暗い) に基づいています。 [[全般] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/general-environment-options-dialog-box.md) で、現在の配色テーマを変更することができます。  
@@ -63,7 +63,7 @@ ms.locfileid: "60051623"
 6. **[サイズ]** で新しいフォントのサイズを選択します。  
   
     > [!NOTE]
-    >  テキスト ベースのツール ウィンドウおよびエディターのテキスト サイズをリセットするには **[既定値を使用]** を選択します。  
+    > テキスト ベースのツール ウィンドウおよびエディターのテキスト サイズをリセットするには **[既定値を使用]** を選択します。  
   
 7. **[OK]** をクリックします。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60051623"
  また、エディター内のテキスト、マージン インジケーター、空白文字、およびコード要素の既定の色を変更することもできます。  
   
 > [!NOTE]
->  オペレーティング システム上の全アプリケーション ウィンドウでハイコントラスト色を使用する場合は、左 <strong>Alt +</strong> 左 **Shift + PrintScreen** キーを押します。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] が起動されている場合は、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] を終了してから再起動すると、ハイコントラスト色の機能を完全に利用できます。  
+> オペレーティング システム上の全アプリケーション ウィンドウでハイコントラスト色を使用する場合は、左 <strong>Alt +</strong> 左 **Shift + PrintScreen** キーを押します。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] が起動されている場合は、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] を終了してから再起動すると、ハイコントラスト色の機能を完全に利用できます。  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>エディター内の項目の色を変更するには  
   

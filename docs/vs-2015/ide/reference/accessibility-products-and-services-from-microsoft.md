@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae91a057dc983044caa9544030571a8be34deef7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8d1991ad3b99e3ab46e6ebea527ff839ef960ac7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441103"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft からのユーザー補助製品およびサービス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Microsoft は、すべてのユーザーが簡単に使用できる製品とサ�
 - [参照項目](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)  
   
 > [!NOTE]
->  このセクションの情報は、米国内で Microsoft 製品のライセンスを取得したユーザーにだけ適用されます。 米国外でこの製品を入手した場合には、ソフトウェア パッケージに同梱の支社情報のカードを参照するか、 [マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431) にアクセスし、Microsoft Support Services の電話番号と住所の一覧を参照してください。 このセクションで説明されている製品およびサービスをその地域で利用できるかどうかについては、現地法人にお問い合わせください。 ユーザー補助についての情報が、日本語、フランス語など、他の言語で参照できます。  
+> このセクションの情報は、米国内で Microsoft 製品のライセンスを取得したユーザーにだけ適用されます。 米国外でこの製品を入手した場合には、ソフトウェア パッケージに同梱の支社情報のカードを参照するか、 [マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431) にアクセスし、Microsoft Support Services の電話番号と住所の一覧を参照してください。 このセクションで説明されている製品およびサービスをその地域で利用できるかどうかについては、現地法人にお問い合わせください。 ユーザー補助についての情報が、日本語、フランス語など、他の言語で参照できます。  
   
 ## <a name="windows"></a> Windows のユーザー補助機能  
  Windows オペレーティング システムには、多くのユーザー補助機能が組み込まれており、キーボード入力やマウスの使用が困難なユーザー、視覚障碍のあるユーザー、聴覚障碍のあるユーザーの方がご利用いただけます。 アクセシビリティ機能はセットアップ プログラムの実行時にインストールされます。 これらの機能の詳細については、Windows のヘルプおよび [マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431)を参照してください。  

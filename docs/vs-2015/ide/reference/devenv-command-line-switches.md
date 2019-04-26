@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444743"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv コマンド ライン スイッチ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "60050712"
 Devenv を使用すると、コマンド ラインから統合開発環境 (IDE: Integrated Development Environment) のさまざまなオプションを設定したり、プロジェクトをビルド、デバッグ、および配置できます。 これらのスイッチを使用して、スクリプトや .bat ファイル (夜間用のビルド スクリプトなど) から IDE を実行したり、特定の構成で IDE を起動したりします。  
   
 > [!NOTE]
->  ビルド関連のタスクでは、devenv の代わりに MSBuild を使用することをお勧めします。 詳細については、「[コマンド ライン リファレンス](../../msbuild/msbuild-command-line-reference.md)」を参照してください。  
+> ビルド関連のタスクでは、devenv の代わりに MSBuild を使用することをお勧めします。 詳細については、「[コマンド ライン リファレンス](../../msbuild/msbuild-command-line-reference.md)」を参照してください。  
   
 > [!NOTE]
->  [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) スイッチおよび [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) スイッチを使用するには、管理者として devenv を実行する必要があります。  
+> [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) スイッチおよび [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) スイッチを使用するには、管理者として devenv を実行する必要があります。  
   
 ## <a name="devenv-switch-syntax"></a>Devenv のスイッチの構文  
  既定では、devenv コマンドは、devenv.com ユーティリティにスイッチを渡します。  
@@ -57,7 +57,7 @@ Devenv を使用すると、コマンド ラインから統合開発環境 (IDE:
 - ソリューション ファイル名の代わりにプロジェクト ファイル名を入力すると、`devenv` コマンドは、プロジェクト フォルダーの親フォルダーで同じ名前が付いているソリューション ファイルを検索します。 たとえば、`devenv /build myproject1.vbproj` というコマンドは、親フォルダーで "myproject1.sln" という名前のついたソリューション ファイルを検索します。  
   
     > [!NOTE]
-    >  このプロジェクトを参照するソリューション ファイルは、親フォルダーの中に 1 つだけ置かれている必要があります。 親フォルダーにこのプロジェクトを参照するソリューション ファイルがない場合、また親フォルダーにこのソリューション ファイルが 2 つ以上ある場合は、一時ソリューション ファイルが作成されます。一時ソリューション ファイルは、プロジェクトにちなんだ名前となり、プロジェクトを参照します。  
+    > このプロジェクトを参照するソリューション ファイルは、親フォルダーの中に 1 つだけ置かれている必要があります。 親フォルダーにこのプロジェクトを参照するソリューション ファイルがない場合、また親フォルダーにこのソリューション ファイルが 2 つ以上ある場合は、一時ソリューション ファイルが作成されます。一時ソリューション ファイルは、プロジェクトにちなんだ名前となり、プロジェクトを参照します。  
   
 - ファイル パスやファイル名にスペースが含まれる場合は、二重引用符 ("") で囲む必要があります。 たとえば、"c:\project a\\" と指定します。  
   

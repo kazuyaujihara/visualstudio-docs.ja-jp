@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5a6e0ae31068144cb7de5ff83ac562db8f833d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403459"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>XAML デザイナーでの要素の操作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ XAML で、コードで、または XAML デザイナーを使用して、アプ
      余白ガイドを開いた場合に、反対側の余白が設定されていないと、アートボード上での要素の位置に従って正しい値が反対側の余白に設定されます。 **[Left]** と **[Right]** の余白のような向かい側の余白の場合は、少なくとも一方のプロパティが常に設定されます。  
   
     > [!IMPORTANT]
-    >  一部のレイアウト コンテナー(<xref:Windows.UI.Xaml.Controls.Canvas> など) に配置する要素には、空白ガイドがありません。 <xref:Windows.UI.Xaml.Controls.StackPanel> の内部に配置された要素には、`StackPanel` の向きに応じて、左右の余白または上下の余白に余白ガイドがあります。  
+    > 一部のレイアウト コンテナー(<xref:Windows.UI.Xaml.Controls.Canvas> など) に配置する要素には、空白ガイドがありません。 <xref:Windows.UI.Xaml.Controls.StackPanel> の内部に配置された要素には、`StackPanel` の向きに応じて、左右の余白または上下の余白に余白ガイドがあります。  
   
 ## <a name="grouping-and-ungrouping-elements"></a>要素のグループ化およびグループ解除  
  XAML デザイナーの複数の要素をグループ化すると、新しいレイアウト コンテナーが作成され、そのコンテナー内にそれらの要素が配置されます。 複数の要素を 1 つのレイアウト コンテナーにまとめて配置すると、そのグループ内の複数の要素を、単一の要素のように簡単に選択、移動、および変換できます。 グループ化は、相互に関係のある複数の要素 (1 つのナビゲーション要素を構成する各ボタンなど) をまとめて扱う場合も便利です。 要素のグループ化を解除する場合は、それらの要素を含むレイアウト コンテナーを削除するだけです。  
@@ -106,7 +106,7 @@ XAML で、コードで、または XAML デザイナーを使用して、アプ
 2. 選択した要素を右クリックし、**[グループ (パネル) に含める]** をポイントし、そのグループを配置するレイアウト コンテナーの種類をクリックします。  
   
     > [!TIP]
-    >  要素をグループ化するために <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border>、または <xref:Windows.UI.Xaml.Controls.ScrollViewer> を選択すると、<xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border>、または <xref:Windows.UI.Xaml.Controls.ScrollViewer> 内の新しい <xref:Windows.UI.Xaml.Controls.Grid> パネルに要素が配置されます。 これらのレイアウト コンテナーのいずれかの要素のグループ化を解除すると、<xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border>、または <xref:Windows.UI.Xaml.Controls.ScrollViewer> のみが削除され、<xref:Windows.UI.Xaml.Controls.Grid> パネルは削除されません。 `Grid` パネルを削除するには、要素のグループ化を再度解除します。  
+    > 要素をグループ化するために <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border>、または <xref:Windows.UI.Xaml.Controls.ScrollViewer> を選択すると、<xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border>、または <xref:Windows.UI.Xaml.Controls.ScrollViewer> 内の新しい <xref:Windows.UI.Xaml.Controls.Grid> パネルに要素が配置されます。 これらのレイアウト コンテナーのいずれかの要素のグループ化を解除すると、<xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border>、または <xref:Windows.UI.Xaml.Controls.ScrollViewer> のみが削除され、<xref:Windows.UI.Xaml.Controls.Grid> パネルは削除されません。 `Grid` パネルを削除するには、要素のグループ化を再度解除します。  
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>要素のグループ化を解除してレイアウトを削除するには  
   
