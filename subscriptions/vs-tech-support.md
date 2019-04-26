@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: ab56754f6ef707eb619d7473cb391d415506a396
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811539"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化して使用する
 
@@ -82,7 +82,6 @@ Visual Studio サブスクリプションのテクニカル サポート特典�
    > ![テクニカル サポート特典のインシデント送信 - コントラクトの追加](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
 4. **アクセス ID** と**契約 ID** を入力します。  **[追加]** をクリックします。
-
 
    > [!div class="mx-imgBorder"]
    > ![テクニカル サポート特典のインシデント送信 - 契約 ID の追加](_img/vs-tech-support/vs-tech-support-add-contract-id.png)

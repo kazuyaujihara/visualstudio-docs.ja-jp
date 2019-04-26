@@ -10,22 +10,22 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 148ec42a7c0a0f8c040eabb75991b54c78f511ab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b02be3e0ed5cb59e57e4aec28b3d7979d77f7652
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003782"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Web パフォーマンス テストでの検出できない動的パラメーターの修正
 
 Web サイトによっては、一部の Web 要求の処理に動的パラメーターを使用することがあります。 動的パラメーターとは、ユーザーがアプリケーションを実行するたびに値が再生成されるパラメーターです。 動的パラメーターの例として、セッション ID があります。 通常、この値を使用して 5 ～ 30 分の間隔で変更される値を取得します。 Web パフォーマンス テスト レコーダーと再生エンジンによって、最も一般的な種類の動的パラメーターが自動的に処理されます。
 
--   クッキー値で設定される動的パラメーターの値。 Web パフォーマンス テスト エンジンによって、再生中にそれらの値が自動的に処理されます。
+- クッキー値で設定される動的パラメーターの値。 Web パフォーマンス テスト エンジンによって、再生中にそれらの値が自動的に処理されます。
 
--   ASP.NET ビュー ステートなど HTML ページ上の隠しフィールドで設定される動的パラメーターの値。 これらの値はレコーダーによって自動的に処理され、隠しフィールドの抽出ルールがテストに追加されます。
+- ASP.NET ビュー ステートなど HTML ページ上の隠しフィールドで設定される動的パラメーターの値。 これらの値はレコーダーによって自動的に処理され、隠しフィールドの抽出ルールがテストに追加されます。
 
--   クエリ文字列またはフォーム ポスト パラメーターとして設定される動的パラメーターの値。 これらの値は、Web パフォーマンス テストの記録後に、動的パラメーターの検出によって処理されます。
+- クエリ文字列またはフォーム ポスト パラメーターとして設定される動的パラメーターの値。 これらの値は、Web パフォーマンス テストの記録後に、動的パラメーターの検出によって処理されます。
 
 一部の種類の動的パラメーターは検出されません。 動的な値はテストが実行されるたびに異なるため、検出されない動的パラメーターがあると、Web パフォーマンス テストが実行に失敗します。 これらのパラメーターを正しく処理するために、Web パフォーマンス テストの動的パラメーターに抽出規則を手動で追加することができます。
 
@@ -35,17 +35,17 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
 検出可能な動的パラメーターと検出不可能な動的パラメーターの両方を示すために、単純な ASP.NET Web アプリケーションを作成します。これには、いくつかのコントロールとカスタム コードを使用する 3 つの Web フォームが含まれています。 また、動的パラメーターを特定する方法と、それらの処理方法も説明します。
 
-1.  **DynamicParameterSample** という名前の新しい ASP.NET プロジェクトを作成します。
+1. **DynamicParameterSample** という名前の新しい ASP.NET プロジェクトを作成します。
 
      ![空の ASP.NET Web アプリケーション プロジェクトを作成する](../test/media/web_test_dynamicparameter_aspproject.png)
 
-2.  *Querystring.aspx* という名前の Web フォームを追加します。
+2. *Querystring.aspx* という名前の Web フォームを追加します。
 
-3.  デザイン ビューで、HiddenField をページにドラッグし、(ID) プロパティの値を HiddenFieldSessionID に変更します。
+3. デザイン ビューで、HiddenField をページにドラッグし、(ID) プロパティの値を HiddenFieldSessionID に変更します。
 
      ![HiddenField を追加する](../test/media/web_test_dynamicparameter_hiddenfield.png)
 
-4.  Querystring ページのソース ビューに変更し、次に示す ASP.NET および JavaScript の強調表示されたコードを追加します。このコードは、模擬的なセッション ID 動的パラメーターの生成に使用されます。
+4. Querystring ページのソース ビューに変更し、次に示す ASP.NET および JavaScript の強調表示されたコードを追加します。このコードは、模擬的なセッション ID 動的パラメーターの生成に使用されます。
 
     ```html
     <head runat="server">
@@ -62,7 +62,7 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
     </html>
     ```
 
-5.  *Querystring.aspx.cs* ファイルを開き、次の強調表示されたコードを Page_Load メソッドに追加します。
+5. *Querystring.aspx.cs* ファイルを開き、次の強調表示されたコードを Page_Load メソッドに追加します。
 
     ```csharp
     public partial class Querystring : System.Web.UI.Page
@@ -74,13 +74,13 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
     }
     ```
 
-6.  *ASPQuery.aspx* という名前で 2 つ目の Web フォームを追加します。
+6. *ASPQuery.aspx* という名前で 2 つ目の Web フォームを追加します。
 
-7.  デザイン ビューで、**Label** をページにドラッグし、**(ID)** プロパティの値を **IndexLabel** に変更します。
+7. デザイン ビューで、**Label** をページにドラッグし、**(ID)** プロパティの値を **IndexLabel** に変更します。
 
      ![ラベルを Web フォームに追加する](../test/media/web_test_dynamicparameter_label.png)
 
-8.  **HyperLink** をページにドラッグし、**Text** プロパティを **Back** に変更します。
+8. **HyperLink** をページにドラッグし、**Text** プロパティを **Back** に変更します。
 
      ![ハイパーリンクを Web フォームに追加する](../test/media/web_test_dynamicparameter_hyperlink.png)
 
@@ -132,31 +132,31 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
 ## <a name="create-a-web-performance-test"></a>Web パフォーマンス テストを作成する
 
-1.  ソリューションに Web パフォーマンス テストとロード テストのプロジェクトを追加します。
+1. ソリューションに Web パフォーマンス テストとロード テストのプロジェクトを追加します。
 
      ![Web パフォーマンスとロード テストのプロジェクトを追加する](../test/media/web_test_dynamicparameter_addtestproject.png)
 
-2.  WebTest1.webtest という名前を DynamicParameterSampleApp.webtest に変更します。
+2. WebTest1.webtest という名前を DynamicParameterSampleApp.webtest に変更します。
 
      ![Web パフォーマンス テストの名前を変更する](../test/media/web_test_dynamicparameter_renametest.png)
 
-3.  テストを記録します。
+3. テストを記録します。
 
      ![Web パフォーマンス テストを記録する](../test/media/web_test_dynamicparameter_recordtest.png)
 
-4.  テストする Web サイトの URL をコピーしてブラウザーに貼り付けます。
+4. テストする Web サイトの URL をコピーしてブラウザーに貼り付けます。
 
      ![テストする Web サイトの URL を貼り付ける](../test/media/web_test_dynamicparameter_recordtest2.png)
 
-5.  Web アプリケーションを参照します。 ASP.NET リンク、Back リンク、および javascript リンクを選択し、再度 Back リンクを選択します。
+5. Web アプリケーションを参照します。 ASP.NET リンク、Back リンク、および javascript リンクを選択し、再度 Back リンクを選択します。
 
      Web アプリ内を移動するとき、Web テスト レコーダーに HTTP 要求と応答 URL が表示されます。
 
-6.  テスト レコーダーの **[停止]** ボタンをクリックします。
+6. テスト レコーダーの **[停止]** ボタンをクリックします。
 
      動的パラメーターを検出するためのダイアログ ボックスには、受信した HTTP 応答でのパラメーターの検出状況を示す進行状況バーも表示されます。
 
-7.  ASPQuery ページの CustomQueryString の動的パラメーターは自動的に検出されています。 ただし、JScriptQuery ページの CustomQueryString の動的パラメーターは検出されていません。
+7. ASPQuery ページの CustomQueryString の動的パラメーターは自動的に検出されています。 ただし、JScriptQuery ページの CustomQueryString の動的パラメーターは検出されていません。
 
      *Querystring.aspx* に抽出規則を追加し、ASPQuery ページにバインドするには、**[OK]** をクリックします。
 
@@ -170,15 +170,15 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
      ![抽出規則にバインドされた CustomQueryString](../test/media/web_test_dynamicparameter_autoextractionrule2.png)
 
-8.  テストを保存します。
+8. テストを保存します。
 
 ## <a name="run-the-test-to-isolate-the-non-detected-dynamic-parameter"></a>検出されない動的パラメーターを特定するテストを実行する
 
-1.  テストを実行します。
+1. テストを実行します。
 
      ![Web パフォーマンス テストを実行する](../test/media/web_test_dynamicparameter_runtest.png)
 
-2.  *JScriptQuery.aspx* ページに対する 4 番目の要求は失敗します。 Web テストに移動します。
+2. *JScriptQuery.aspx* ページに対する 4 番目の要求は失敗します。 Web テストに移動します。
 
      ![テスト結果に示された動的パラメーター エラー](../test/media/web_test_dynamicparameter_runresults.png)
 
@@ -186,11 +186,11 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
      ![CustomQueryString で動的パラメーターと思われる部分](../test/media/web_test_dynamicparameter_runresults2.png)
 
-3.  Web パフォーマンス テスト結果ビューアーに戻って、失敗した *JScriptQuery.aspx* ページを選択します。 次に、[要求] タブをクリックし、[生データの表示] チェック ボックスがオフになっていることを確認します。スクロール ダウンし、CustomQueryString の [クイック検索] をクリックします。
+3. Web パフォーマンス テスト結果ビューアーに戻って、失敗した *JScriptQuery.aspx* ページを選択します。 次に、[要求] タブをクリックし、[生データの表示] チェック ボックスがオフになっていることを確認します。スクロール ダウンし、CustomQueryString の [クイック検索] をクリックします。
 
      ![クイック検索を使用して動的パラメーターを特定する](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
-4.  テスト エディターに表示された内容から、*JScriptQuery.aspx* 要求の CustomQueryString には `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` という値が割り当てられており、動的と思われる部分は "1v0yhyiyr0raa2w4j4pwf5zl" だということがわかっています。 [検索する文字列] ドロップダウン リストで、動的と思われる部分を検索文字列から削除します。 文字列は、"CustomQueryString=jScriptQueryString___" のようになります。
+4. テスト エディターに表示された内容から、*JScriptQuery.aspx* 要求の CustomQueryString には `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` という値が割り当てられており、動的と思われる部分は "1v0yhyiyr0raa2w4j4pwf5zl" だということがわかっています。 [検索する文字列] ドロップダウン リストで、動的と思われる部分を検索文字列から削除します。 文字列は、"CustomQueryString=jScriptQueryString___" のようになります。
 
      動的パラメーターには、エラーが存在する要求より前の要求で値が割り当てられます。 このため、[上へ検索] チェック ボックスをオンにして、[次を検索] をクリックし、[要求] パネルで先行する *Querystring.aspx* の要求が強調表示されるまで検索を続けます。 [次を検索] を 3 回クリックすると、その状態になります。
 
@@ -205,17 +205,17 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
      これで、エラーが発生する場所がわかり、sessionId の値を抽出する必要があることもわかりました。 ただし、抽出される値は単なるテキストであるため、sessionId の実際の値が表示される文字列を探して、さらにエラーを特定する必要があります。 コードを調べると、var sessionId は、HiddenFieldSessionID によって返される値と等しいことがわかります。
 
-5.  HiddenFieldSessionID のクイック検索を使用します。このとき、[上へ検索] チェック ボックスをオフにし、[現在の要求] チェック ボックスをオンにします。
+5. HiddenFieldSessionID のクイック検索を使用します。このとき、[上へ検索] チェック ボックスをオフにし、[現在の要求] チェック ボックスをオンにします。
 
      ![HiddenFieldSession でクイック検索を使用する](../test/media/web_test_dynamicparameter_runresultsquckfindhiddensession.png)
 
      返された値が元の Web パフォーマンス テスト記録と同じ文字列ではないことに注意してください。 このテスト実行で返された値は "5w4v3yrse4wa4axrafykqksq"、元の記録で返された値は "1v0yhyiyr0raa2w4j4pwf5zl" です。 値が元の記録の値と一致しないので、エラーが生成されます。
 
-6.  元の記録の動的パラメーターを修正する必要があるため、ツール バーの [記録された結果] をクリックします。
+6. 元の記録の動的パラメーターを修正する必要があるため、ツール バーの [記録された結果] をクリックします。
 
      ![[記録された結果] を選択する](../test/media/web_test_dynamicparameter_recordedresult.png)
 
-7.  記録された結果で、3 番目の要求を選択します。これは、テスト実行の結果で特定した *Querystringrequest.aspx* 要求と同じです。
+7. 記録された結果で、3 番目の要求を選択します。これは、テスト実行の結果で特定した *Querystringrequest.aspx* 要求と同じです。
 
      ![記録された結果で同じ要求を選択する](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png)
 
@@ -229,7 +229,7 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
      ![作成された抽出規則](../test/media/web_test_dynamicparameter_addextractiondialog.png)
 
-8.  **[次を検索]** をクリックします。 最初の一致は、JScriptQuery ページの CustomQueryString のパラメーターであり、変更が必要です。
+8. **[次を検索]** をクリックします。 最初の一致は、JScriptQuery ページの CustomQueryString のパラメーターであり、変更が必要です。
 
      ![パラメーターのテキストを検索/置換する](../test/media/web_test_dynamicparameter_addextractionfindreplace.png)
 
@@ -253,7 +253,7 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
  **A:** はい。次の手順を使用してください。
 
-1.  ツール バーの **[動的パラメーターを Web テスト パラメーターに昇格]** をクリックします。
+1. ツール バーの **[動的パラメーターを Web テスト パラメーターに昇格]** をクリックします。
 
      検出プロセスの完了後、動的パラメーターが検出された場合、**[動的パラメーターを Web テスト パラメーターに昇格]** ダイアログ ボックスが表示されます。
 
@@ -261,7 +261,7 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
      **[動的パラメーターを Web テスト パラメーターに昇格]** ダイアログ ボックスで動的パラメーターを選択すると、Web パフォーマンス テスト エディターの要求ツリーで 2 つの要求が強調表示されます。 最初の要求は、抽出規則が追加される要求です。 2 番目の要求では、抽出された値がバインドされます。
 
-2.  自動的に関連付ける動的パラメーターの横にあるチェック ボックスをオンまたはオフにします。 既定では、すべての動的パラメーターがオンになっています。
+2. 自動的に関連付ける動的パラメーターの横にあるチェック ボックスをオンまたはオフにします。 既定では、すべての動的パラメーターがオンになっています。
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Q:動的パラメーターが検出されるように Visual Studio を構成する必要はありますか。
 

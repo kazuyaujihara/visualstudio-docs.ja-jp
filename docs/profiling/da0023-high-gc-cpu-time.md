@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0150ed3f40d4e8fb61cc6054a37c30ae0ffc0d1a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4ad7a7df2a536df0ac3e9bc391f08ef5d0fcd830
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444104"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023:高い GC CPU 時間
 
@@ -42,7 +42,7 @@ ms.locfileid: "56608410"
  この規則は、ガベージ コレクションに費やされた時間がアプリケーション処理時間全体と比較して大きい場合、適用されます。
 
 > [!NOTE]
->  ガーベジ コレクションに費やされた時間の割合が、アプリケーション全体の処理時間と比較して過度である場合、この規則ではなく、「[DA0024: 過剰な GC CPU 時間](../profiling/da0024-excessive-gc-cpu-time.md)」の警告が適用されます。
+> ガーベジ コレクションに費やされた時間の割合が、アプリケーション全体の処理時間と比較して過度である場合、この規則ではなく、「[DA0024: 過剰な GC CPU 時間](../profiling/da0024-excessive-gc-cpu-time.md)」の警告が適用されます。
 
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法
  [エラー一覧] ウィンドウに表示されたメッセージをダブルクリックして、プロファイル データの [[マーク] ビュー](../profiling/marks-view.md)に移動します。 **.NET CLR Memory\\% Time in GC** 列を探します。 マネージド メモリのガベージ コレクションが他のフェーズよりも多い特定のプログラム実行フェーズがあるかどうかを確認します。 % Time in GC の値と、**# of Gen 0 Collections**、**# of Gen 1 Collections**、**# of Gen 2 Collections** 値で報告されているガベージ コレクションの割合を比較してください。

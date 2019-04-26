@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b43aa4dcb754b2df67b58b09ab3a9920c552acdf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844917"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend のペン ツールの修飾キー
 次の表は、**ペン** ツール ![ペン ツール](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png)でパスを作成するときに、パスの変更に使用できるショートカットを一覧表示したものです。 また、**ペン** ツールを使用して、既存のパスの点を追加または削除したり、2 つの既存のパスを結合したりすることもできます。

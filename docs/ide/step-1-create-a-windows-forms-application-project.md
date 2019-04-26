@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f529d737816406b3a4f6aa9921a8dc6b902d2fb
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979865"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>手順 1: Windows フォーム アプリケーション プロジェクトの作成
 
@@ -52,7 +52,7 @@ ms.locfileid: "58647363"
 
 1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*Windows フォーム*」と入力またはタイプします。 次に、言語のリストから **[Visual Basic]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
 
-   言語およびプラットフォームのフィルターを適用してから、**[Windows フォーム アプリ (.NET Framework)]** テンプレートを選択し、**[次へ]** を選択します。
+   言語とプラットフォームのフィルターを適用してから、**[Windows フォーム アプリ (.NET Framework)]** テンプレートを選択し、**[次へ]** を選択します。
 
    ![Windows フォーム アプリ (.NET Framework) 用の Visual Basic テンプレートを選択する](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 

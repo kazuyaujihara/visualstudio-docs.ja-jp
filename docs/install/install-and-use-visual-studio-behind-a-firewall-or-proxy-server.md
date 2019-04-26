@@ -18,11 +18,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974710"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
@@ -105,7 +105,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | Python パッケージ <br>探索<br><br>Python パッケージ <br>管理<br><br>新規作成 <br>Python <br> プロジェクト <br>テンプレートの使用 | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | pip パッケージを検索する機能を提供します。<br><br>pip が存在しない場合に、pip を自動的にインストールするために使用されます。 <br><br>次の新しい Python プロジェクト テンプレートを cookiecutter テンプレート URL に解決するために使用されます。<br> - 分類子プロジェクト<br>- クラスタリング プロジェクト <br> - 回帰プロジェクト <br> - PyKinect を使用した PyGame <br> - Pyvot プロジェクト |
 | Office Web <br>アドイン <br> file:/// <br>検証 <br>サービス | verificationservice.osi.office.net | https | 443 | Office Web アドインのマニフェストを検証するために使用されます。 |
 | SharePoint と <br>Office アドイン | sharepoint.com | https | 443 | SharePoint および Office のアドインを SharePoint Online に発行し、テストするために使用されます。 |
-| ワークフロー マネージャー <br>テスト サービス<br> ホスト | | http | 12292 | SharePoint アドインをワークフローでテストするために自動的に作成されるファイアウォール規則です。 |
+| ワークフロー マネージャー <br>テスト サービス<br> Host | | http | 12292 | SharePoint アドインをワークフローでテストするために自動的に作成されるファイアウォール規則です。 |
 | 自動的に収集される <br>信頼性の統計情報 <br>と、 <br>Azure SDK および SQL Tools 用の <br>その他の<br> カスタマー エクスペリエンス向上プログラム <br>(CEIP) <br><br> | vortex.data.microsoft.com<br> <br>dc.services.visualstudio.com | https | 443 | ユーザーから Microsoft に信頼性の統計情報 (クラッシュ/ハング データ) を送信するために使用されます。 Windows エラー報告を有効にした場合、実際のクラッシュ/ハング ダンプは引き続きアップロードされ、統計情報のみが抑制されます。 <br>Azure Tools SDK 拡張機能の匿名の利用状況パターン、および SQL ツールの利用状況パターンを Visual Studio に対して明らかにします。 |
 | Visual Studio <br> カスタマー エクスペリエンス <br>向上プログラム (CEIP) <br><br>PerfWatson.exe | vortex.data.microsoft.com<br>dc.services.visualstudio.com<br>visualstudio-devdiv-c2s.msedge.net<br>az667904.vo.msecnd.net <br>scus-breeziest-in.cloudapp.net<br> | https | 443 | 匿名の利用状況のパターンとエラー ログを収集するために使用されます。 <br><br>UI のフリーズ問題を追跡するために使用されます。 |
 | Azure リソースの<br>作成と <br>管理 | management.azure.com <br>management.core.windows.net | https | 443 | Web アプリケーション、Azure Functions、または WebJobs の発行をサポートする Azure Websites またはその他のリソースを作成するために使用されます。 |
@@ -141,7 +141,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 
 ## <a name="see-also"></a>関連項目
 
-* [Live Share の接続性要件](/visualstudio/liveshare/reference/connectivity/)
+* [Live Share の接続要件](/visualstudio/liveshare/reference/connectivity/)
 * [Visual Studio のネットワーク インストールを作成する](create-a-network-installation-of-visual-studio.md)
 * [Visual Studio のネットワーク関連エラーのトラブルシューティング](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)

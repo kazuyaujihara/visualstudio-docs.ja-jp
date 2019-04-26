@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: サブスクリプション管理者の責任について説明します。
 searchscope: VS Subscription
 ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945836"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>管理者責任の概要
 管理者には、組織のサブスクリプションを管理する役割が与えられます。  この役割には、ライセンス条項に基づいてサブスクリプションを管理するという責任も伴います。 この記事では、管理者の役割に伴う責任、特権、制限について説明します。

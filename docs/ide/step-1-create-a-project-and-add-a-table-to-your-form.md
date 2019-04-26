@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 0bac96a61a5c071a01f1584911ba41cd84e87da7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979558"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>手順 1: プロジェクトの作成とフォームへのテーブルの追加
 
@@ -47,9 +47,9 @@ ms.locfileid: "58647493"
 
 4. **[プロパティ]** ウィンドウで、次のフォーム プロパティを設定します。
 
-   1.  フォームの **Text** プロパティを **Form1** から **Matching Game** に変更します。 このテキストはゲーム ウィンドウの上部に表示されます。
+   1. フォームの **Text** プロパティを **Form1** から **Matching Game** に変更します。 このテキストはゲーム ウィンドウの上部に表示されます。
 
-   2.  フォームのサイズとして幅を 550 ピクセル、高さを 550 ピクセルに設定します。 そのためには、**Size** プロパティを **550, 550** に設定します。または、統合開発環境 (IDE) の右下隅に適切なサイズが表示されるまで、フォームの隅をドラッグします。
+   2. フォームのサイズとして幅を 550 ピクセル、高さを 550 ピクセルに設定します。 そのためには、**Size** プロパティを **550, 550** に設定します。または、統合開発環境 (IDE) の右下隅に適切なサイズが表示されるまで、フォームの隅をドラッグします。
 
 5. IDE の左側にある **[ツール ボックス]** のタブをクリックして、ツール ボックスを表示します。
 
@@ -76,19 +76,19 @@ ms.locfileid: "58647493"
 
     TableLayoutPanel コントロールが選択されている状態で、ツール ボックスを開き、<xref:System.Windows.Forms.Label> コントロール (**[コモン コントロール]** カテゴリ内) を TableLayoutPanel コントロールの左上のセルに追加します。 これで、IDE でラベル コントロールが選択されました。 このコントロールの次のプロパティを設定します。
 
-   1.  ラベルの **BackColor** プロパティが **CornflowerBlue** に設定されていることを確認します。
+   1. ラベルの **BackColor** プロパティが **CornflowerBlue** に設定されていることを確認します。
 
-   2.  **AutoSize** プロパティを **False** に設定します。
+   2. **AutoSize** プロパティを **False** に設定します。
 
-   3.  **Dock** プロパティを **Fill** に設定します。
+   3. **Dock** プロパティを **Fill** に設定します。
 
-   4.  プロパティの横のドロップダウン ボタンをクリックし、中央ボタンをクリックして、**TextAlign** プロパティを **MiddleCenter** に設定します。 これによりアイコンはセルの中央に表示されます。
+   4. プロパティの横のドロップダウン ボタンをクリックし、中央ボタンをクリックして、**TextAlign** プロパティを **MiddleCenter** に設定します。 これによりアイコンはセルの中央に表示されます。
 
-   5.  **Font** プロパティをクリックします。 省略記号 (**…**) ボタンが表示されます。
+   5. **Font** プロパティをクリックします。 省略記号 (**…**) ボタンが表示されます。
 
-   6.  省略記号ボタンを選択し、**Font** を **Webdings** に、**Font Style** を **Bold** に、**Size** を **48** に設定します。
+   6. 省略記号ボタンを選択し、**Font** を **Webdings** に、**Font Style** を **Bold** に、**Size** を **48** に設定します。
 
-   7.  ラベルの **Text** プロパティを **c** という文字に設定します。
+   7. ラベルの **Text** プロパティを **c** という文字に設定します。
 
         これで、TableLayoutPanel の左上のセルに、青色の背景の中央に黒いボックスが配置されました。
 
@@ -106,6 +106,6 @@ ms.locfileid: "58647493"
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
--   チュートリアルの次の手順に進むには、「[手順 2:Random オブジェクトおよびアイコンのリストの追加](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)」をご覧ください。
+- チュートリアルの次の手順に進むには、「[手順 2:Random オブジェクトおよびアイコンのリストの追加](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)」をご覧ください。
 
--   概要のトピックに戻るには、「[チュートリアル 3:絵合わせゲームの作成](../ide/tutorial-3-create-a-matching-game.md)」をご覧ください。
+- 概要のトピックに戻るには、「[チュートリアル 3:絵合わせゲームの作成](../ide/tutorial-3-create-a-matching-game.md)」をご覧ください。

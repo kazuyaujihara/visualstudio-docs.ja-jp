@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df391440e8fe175b86a37cd02d0aec8fee372e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e16b11d2c54c500bc2b4e7d52e0bc5a46492ab5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446559"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>方法: ビルドからファイルを除外する
 プロジェクト ファイルでは、ワイルドカードを使用して、1 つのディレクトリ内のすべてのファイル、または入れ子にされたディレクトリのセットをビルドの入力として使用することができます。 しかし、ディレクトリ内の 1 つのファイル、または入れ子にされたディレクトリのセット内の 1 つのディレクトリをビルドの入力に含めたくない場合もあります。 そのファイルまたはディレクトリは、入力の一覧から明示的に除外できます。 また、特定の条件のもとでのみ含めることを望むファイルがプロジェクトに存在することもあります。 ファイルをビルドに含める条件を明示的に宣言できます。
@@ -36,7 +36,7 @@ ms.locfileid: "56603171"
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>*Form2* を除くすべての *.cs* ファイルまたは .*vb* ファイルを含める場合
 
--   次の `Include` および `Exclude` 属性のうち、いずれかを使用します。
+- 次の `Include` および `Exclude` 属性のうち、いずれかを使用します。
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
@@ -50,7 +50,7 @@ ms.locfileid: "56603171"
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>*Form2* と *Form3* を除くすべての *.cs* ファイルまたは *.vb* ファイルを含める場合
 
--   次の `Include` および `Exclude` 属性のうち、いずれかを使用します。
+- 次の `Include` および `Exclude` 属性のうち、いずれかを使用します。
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
@@ -64,7 +64,7 @@ ms.locfileid: "56603171"
 
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>*Images* ディレクトリのサブディレクトリにあるすべての *.jpg* ファイルを含めるものの、*Version2* ディレクトリのファイルは除外する場合
 
--   次の `Include` 属性と `Exclude` 属性を使用します。
+- 次の `Include` 属性と `Exclude` 属性を使用します。
 
     ```xml
     <JPGFile
@@ -73,14 +73,14 @@ ms.locfileid: "56603171"
     ```
 
     > [!NOTE]
-    >  両方の属性にパスを指定する必要があります。 ファイルの場所を指定するのに `Include` 属性で絶対パスを使用する場合、`Exclude` 属性においても絶対パスを使用する必要があります。`Include` 属性で相対パスを使用する場合は、`Exclude` 属性においても相対パスを使用する必要があります。
+    > 両方の属性にパスを指定する必要があります。 ファイルの場所を指定するのに `Include` 属性で絶対パスを使用する場合、`Exclude` 属性においても絶対パスを使用する必要があります。`Include` 属性で相対パスを使用する場合は、`Exclude` 属性においても相対パスを使用する必要があります。
 
 ## <a name="use-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>条件を使ってビルドの入力からファイルまたはディレクトリを除外する
  たとえば、デバッグ ビルドには含めるものの、リリース ビルドには含めない項目がある場合には、`Condition` 属性を使用して項目を含める条件を指定できます。
 
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>リリース ビルドにのみファイル *Formula.vb* を含める場合
 
--   以下のような `Condition` 属性を使用します。
+- 以下のような `Condition` 属性を使用します。
 
     ```xml
     <Compile
@@ -100,7 +100,7 @@ ms.locfileid: "56603171"
     </PropertyGroup>
 
     <ItemGroup>
-        <CSFile Include="*.cs Exclude="Form2.cs"/>
+        <CSFile Include="*.cs" Exclude="Form2.cs"/>
 
         <Reference Include="System.dll"/>
         <Reference Include="System.Data.dll"/>

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a2c05d029e2a46aba736288fd794af12206c80e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 9250382284fffbc3f1761f8143903327fa845832
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436856"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild ツールセット (ToolsVersion)
 
@@ -82,46 +82,46 @@ MSBuild は、タスク、ターゲット、およびツールのツールセッ
 
 MSBuild には、ツールセットにアクセスするための 2 つの方法が用意されています。
 
--   ツールセットのプロパティの使用
+- ツールセットのプロパティの使用
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper> メソッドの使用
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper> メソッドの使用
 
 ツールセットのプロパティは、ツールのパスを指定します。 Visual Studio 2017 以降、MSBuild には決まった場所はなくなりました。 既定では、Visual Studio のインストール場所を基準とする *MSBuild\15.0\Bin* フォルダーに格納されます。 以前のバージョンでは、MSBuild はプロジェクト ファイル内にある `ToolsVersion` 属性の値を使って、対応するレジストリ キーを検索します。その後、レジストリ キーの情報を使って、ツールセットのプロパティを設定します。 たとえば、`ToolsVersion` の値が `12.0` である場合、MSBuild ではレジストリ キー (**HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**) に従って、ツールセットのプロパティが設定されます。
 
  ツールセットのプロパティを次に示します。
 
--   `MSBuildToolsPath`: MSBuild のバイナリのパスを指定します。
+- `MSBuildToolsPath`: MSBuild のバイナリのパスを指定します。
 
--   `SDK40ToolsPath` は、MSBuild 4.x (4.0 または 4.5) に必要な追加のマネージド ツールのパスを指定します。
+- `SDK40ToolsPath` は、MSBuild 4.x (4.0 または 4.5) に必要な追加のマネージド ツールのパスを指定します。
 
--   `SDK35ToolsPath`: MSBuild 3.5 に必要な追加のマネージド ツールのパスを指定します。
+- `SDK35ToolsPath`: MSBuild 3.5 に必要な追加のマネージド ツールのパスを指定します。
 
 また、<xref:Microsoft.Build.Utilities.ToolLocationHelper> クラスのメソッドを呼び出すことによって、ツールセットをプログラムで確認することもできます。 このクラスには、次のメソッドが含まれています。
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A>: .NET Framework フォルダーのパスを返します。
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A>: .NET Framework フォルダーのパスを返します。
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A>: .NET Framework フォルダーに格納されているファイルのパスを返します。
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A>: .NET Framework フォルダーに格納されているファイルのパスを返します。
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A>: マネージド ツール フォルダーのパスを返します。
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A>: マネージド ツール フォルダーのパスを返します。
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A>: マネージド ツール フォルダーに通常格納されているファイルのパスを返します。
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A>: マネージド ツール フォルダーに通常格納されているファイルのパスを返します。
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> は、ビルド ツールのパスを返します。
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> は、ビルド ツールのパスを返します。
 
 ### <a name="sub-toolsets"></a>サブツールセット
 
  15.0 より前のバージョンの MSBuild は、レジストリ キーを使って基本ツールのパスを指定します。 キーにサブキーがある場合、MSBuild ではそのサブキーを使用して、追加のツールを含むサブツールセットのパスを指定します。 この場合、ツールセットは両方のキーで定義されたプロパティ定義を組み合わせることによって定義されます。
 
 > [!NOTE]
->  ツールセットのプロパティ名が競合する場合、サブキーのパスに対して定義された値が、ルート キーのパスに対して定義された値よりもオーバーライドされます。
+> ツールセットのプロパティ名が競合する場合、サブキーのパスに対して定義された値が、ルート キーのパスに対して定義された値よりもオーバーライドされます。
 
  サブツールセットは、`VisualStudioVersion` ビルド プロパティがある場合にアクティブになります。 このプロパティは、次の値のいずれか 1 つを使用できます。
 
--   "10.0": .NET Framework 4 のサブツールセットを指定します。
+- "10.0": .NET Framework 4 のサブツールセットを指定します。
 
--   "11.0": .NET Framework 4.5 のサブツールセットを指定します。
+- "11.0": .NET Framework 4.5 のサブツールセットを指定します。
 
--   "12.0": .NET Framework 4.5.1 のサブツールセットを指定します。
+- "12.0": .NET Framework 4.5.1 のサブツールセットを指定します。
 
 サブツールセット 10.0 および 11.0 は ToolsVersion 4.0 と一緒に使用する必要があります。 それ以降のバージョンでは、サブツールセットのバージョンとToolsVersion は一致しています。
 

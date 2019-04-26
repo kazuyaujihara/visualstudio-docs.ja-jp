@@ -9,12 +9,12 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: add516e9a8f5cb31b85429b1bf41cfa438e8a438
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab103b11659ee1e73537f6f41ff1fe0e6ed32076
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978563"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>方法:Web パフォーマンス テスト API を使用する
 
@@ -31,34 +31,34 @@ Web パフォーマンス テストのコードを記述できます。 Web パ�
 
 ## <a name="to-use-the-webtesting-namespace"></a>WebTesting 名前空間を使用するには
 
-1.  Web パフォーマンス テストが含まれている、Web パフォーマンスとロード テストのプロジェクトを開きます。
+1. Web パフォーマンス テストが含まれている、Web パフォーマンスとロード テストのプロジェクトを開きます。
 
-2.  Visual C# または Visual Basic のクラス ライブラリ プロジェクトをテスト ソリューションに追加します。
+2. Visual C# または Visual Basic のクラス ライブラリ プロジェクトをテスト ソリューションに追加します。
 
-3.  Web パフォーマンスとロード テストのプロジェクトの参照をクラス ライブラリ プロジェクトに追加します。
+3. Web パフォーマンスとロード テストのプロジェクトの参照をクラス ライブラリ プロジェクトに追加します。
 
-4.  Microsoft.VisualStudio.QualityTools.WebTestFramework DLL への参照をクラス ライブラリ プロジェクトに追加します。
+4. Microsoft.VisualStudio.QualityTools.WebTestFramework DLL への参照をクラス ライブラリ プロジェクトに追加します。
 
-5.  クラス ライブラリ プロジェクトのクラス ファイルで、`using` 名前空間の <xref:Microsoft.VisualStudio.TestTools.WebTesting> ステートメントを追加します。
+5. クラス ライブラリ プロジェクトのクラス ファイルで、`using` 名前空間の <xref:Microsoft.VisualStudio.TestTools.WebTesting> ステートメントを追加します。
 
-6.  <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> インターフェイスを実装するクラスを作成します。
+6. <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> インターフェイスを実装するクラスを作成します。
 
-7.  プロジェクトをビルドします。
+7. プロジェクトをビルドします。
 
-8.  Web パフォーマンス テスト エディターを使用して、新しい Web パフォーマンス テスト プラグインを追加します。
+8. Web パフォーマンス テスト エディターを使用して、新しい Web パフォーマンス テスト プラグインを追加します。
 
-    1.  ツール バーの **[Web テスト プラグインの追加]** を選択します。
+    1. ツール バーの **[Web テスト プラグインの追加]** を選択します。
 
          **[Web テスト プラグインの追加]** ダイアログ ボックスが表示されます。
 
-    2.  **[プラグインの選択]** で、Web パフォーマンス テスト プラグイン クラスを選択します。
+    2. **[プラグインの選択]** で、Web パフォーマンス テスト プラグイン クラスを選択します。
 
-    3.  **[選択したプラグインのプロパティ]** ペインで、実行時に使用するプラグインの初期値を設定します。
+    3. **[選択したプラグインのプロパティ]** ペインで、実行時に使用するプラグインの初期値を設定します。
 
         > [!NOTE]
         > プラグインのプロパティをパブリック、設定可能、および基本型 (整数型、ブール型、文字列型など) として設定して、任意の数だけ公開できます。 Web パフォーマンス テスト プラグインのプロパティは、後で [プロパティ] ウィンドウを使用して編集することもできます。
 
-    4.  **[OK]** をクリックします。
+    4. **[OK]** をクリックします。
 
 9. Web パフォーマンス テストを実行します。
 

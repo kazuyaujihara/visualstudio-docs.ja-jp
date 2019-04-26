@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a64256f44e9de5bbfd9e65dd6410b9911aaf5075
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997709"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio を最新リリースに更新する
 
@@ -263,6 +263,6 @@ Visual Studio は、Visual Studio 自体またはいずれかのコンポーネ�
 ## <a name="see-also"></a>関連項目
 
 * [Visual Studio のネットワーク ベース インストールを更新する](update-a-network-installation-of-visual-studio.md)
-* [Visual Studio for Mac を更新する](/visualstudio/mac/update)
-* [Visual Studio 2017 の変更](modify-visual-studio.md)
+* [Visual Studio for Mac の更新](/visualstudio/mac/update)
+* [Visual Studio の変更](modify-visual-studio.md)
 * [Visual Studio のアンインストール](uninstall-visual-studio.md)

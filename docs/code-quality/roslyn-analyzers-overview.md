@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825472"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET Compiler Platform アナライザーの概要
 
@@ -83,7 +83,7 @@ Visual Studio 拡張機能としてインストールされたアナライザー
 ## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
-> [Visual Studio に Roslyn アナライザーをインストールする](../code-quality/install-roslyn-analyzers.md)
+> [Visual Studio で Roslyn アナライザーをインストールする](../code-quality/install-roslyn-analyzers.md)
 
 > [!div class="nextstepaction"]
 > [Visual Studio で Roslyn アナライザーを使用する](../code-quality/use-roslyn-analyzers.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: プロパティ ウィンドウのボタン |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,7 +12,7 @@ ms.workload:
 - vssdk
 ms.openlocfilehash: e7726fe13c90c3a2732b7a6131ae4093a9051a62
 ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/21/2019
 ms.locfileid: "56625648"

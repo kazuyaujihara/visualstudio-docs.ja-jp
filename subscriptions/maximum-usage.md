@@ -7,12 +7,12 @@ ms.date: 03/24/2019
 ms.topic: conceptual
 description: 割り当てられているサブスクリプションの最大数を管理ポータルで表示する方法について説明します
 searchscope: VS Subscription
-ms.openlocfilehash: cdeddc7bbd62c88096e61753351f3609197d3c72
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: c263c610b140d3662cb17ba9f2c3d3f1a1907ab7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58572754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965428"
 ---
 # <a name="using-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>最大使用量機能を使用して割り当てられているサブスクリプション数を追跡する
 
@@ -32,7 +32,7 @@ Visual Studio のサブスクリプション管理ポータルの新機能を使
     > [!div class="mx-imgBorder"]
     > ![[Maximum Usage Summary]\(最大使用量の概要\) メニュー](_img/maximum-usage/maximum-usage-summary.png)
 
-4.  契約期間中に割り当てられた最大サブスクリプション数を確認するには、**[Full-Term]\(全期間\)** タブをクリックします。
+4. 契約期間中に割り当てられた最大サブスクリプション数を確認するには、**[Full-Term]\(全期間\)** タブをクリックします。
 
 ## <a name="viewing-assignment-history"></a>割り当て履歴の表示
 

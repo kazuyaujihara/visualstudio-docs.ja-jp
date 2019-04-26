@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa9be494aaaf79b7235cb9af2393406a6e49abf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b84d78426ccc3294d908e52ee87ce6d521da89cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004583"
 ---
 # <a name="msbuild-targets"></a>MSBuild ターゲット
 ターゲットはタスクを特定の順序でグループ化し、ビルド プロセスを小さな単位に分割することを可能にします。 たとえば、あるターゲットは、ビルドの準備として、出力ディレクトリに含まれるすべてのファイルを削除し、別のターゲットは、プロジェクトに対する入力をコンパイルし、空のディレクトリに配置します。 タスクについて詳しくは、「[MSBuild タスク](../msbuild/msbuild-tasks.md)」をご覧ください。
@@ -45,15 +45,15 @@ ms.locfileid: "56634423"
 ## <a name="target-build-order"></a>ターゲットのビルド順序
  あるターゲットへの入力が別のターゲットの出力に依存する場合、ターゲットの順序を指定する必要があります。 ターゲットの実行順序はいくつかの方法で指定できます。
 
--   初期ターゲット
+- 初期ターゲット
 
--   既定のターゲット
+- 既定のターゲット
 
--   最初のターゲット
+- 最初のターゲット
 
--   ターゲットの依存関係
+- ターゲットの依存関係
 
--   `BeforeTargets` と `AfterTargets` (MSBuild 4.0)
+- `BeforeTargets` と `AfterTargets` (MSBuild 4.0)
 
 1 つのビルドでターゲットが 2 回実行されることはありません。そのビルド内の後続のターゲットが先行するターゲットに依存している場合でも同じです。 ターゲットは一度実行されると、それ以上ビルドに影響しません。
 

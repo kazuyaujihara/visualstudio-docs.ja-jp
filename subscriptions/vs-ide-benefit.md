@@ -7,21 +7,20 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Visual Studio IDE をダウンロードしてインストールする方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420813"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Visual Studio 2019 の特典を使用する
 
 Visual Studio のサブスクライバーは、Visual Studio IDE にアクセスできます。  具体的なバージョンは、サブスクリプションのレベルによって異なります。  特典は、サブスクリプション ポータルの [[特典]](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ページの [ツール] カテゴリのタイルとして表示されます。
 
-
 ## <a name="activation-steps"></a>アクティブ化の手順
 
-*(以下の例では Visual Studio Enterprise が使われています)*
+*(次の例では Visual Studio Enterprise が使われています)*
 
 IDE をダウンロードするには:
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
@@ -56,8 +55,10 @@ IDE をダウンロードするには:
 14. Visual Studio が開きます。 Visual Studio を使う準備ができました。
 
     ::: moniker range="vs-2017"
+
     > [!div class="mx-imgBorder"]
     > ![Visual Studio Enterprise を使い始める](_img/vs-ide-experience/vs-ide-start-cropped.png)
+
     ::: moniker-end
 
 ## <a name="eligibility"></a>特典を受ける条件
@@ -75,12 +76,10 @@ IDE をダウンロードするには:
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
 
-
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
-
 ## <a name="support-resources"></a>サポート リソース
--  Visual Studio IDE のヘルプが必要な場合は、以下のリソースを確認してください。
+- Visual Studio IDE のヘルプが必要な場合は、以下のリソースを確認してください。
     - テクニカル サポート: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
     - [ドキュメント](/visualstudio/)
--  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。

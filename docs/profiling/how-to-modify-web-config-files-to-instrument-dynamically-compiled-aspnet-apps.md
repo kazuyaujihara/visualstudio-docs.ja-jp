@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 925112de25a127d4664bb66d602ca137ad624f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 257d6142fd53914a15e8503121cab1215182ec04
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422920"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>方法: Web.config ファイルを変更して、動的にコンパイルされた ASP.NET Web アプリケーションをインストルメント化およびプロファイルする
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのインストルメンテーション方式を使用すると、動的にコンパイルされた [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションから、詳しいタイミング データ、.NET のメモリの割り当てデータ、.NET オブジェクトの有効期間に関するデータを収集できます。
@@ -21,7 +21,7 @@ ms.locfileid: "56616691"
  このトピックでは、*web.config* 構成ファイルを変更して [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションのインストルメント化とプロファイルを有効にする方法について説明します。
 
 > [!NOTE]
->  サンプリング プロファイル方式を使用する場合や、プリコンパイルされた [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] モジュールをインストルメント化する場合は、*web.config* ファイルを変更する必要はありません。
+> サンプリング プロファイル方式を使用する場合や、プリコンパイルされた [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] モジュールをインストルメント化する場合は、*web.config* ファイルを変更する必要はありません。
 
  *web.config* ファイルのルートは、**configuration** 要素です。 動的にコンパイルされた [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションをインストルメント化およびプロファイルするには、次の要素を追加するか変更する必要があります。
 
@@ -45,11 +45,9 @@ ms.locfileid: "56616691"
 
 3. **assemblyBinding** 要素に、次の属性名と値を追加します。
 
-
    | 属性名 | 属性の値 |
    |----------------|--------------------------------------|
    | **Xmlns** | **urn:schemas-microsoft-com:asm.v1** |
-
 
 4. **assemblyBinding** 要素の子要素として **dependentAssembly** 要素を追加します。
 
@@ -59,13 +57,11 @@ ms.locfileid: "56616691"
 
 6. **assemblyIdentity** 要素に、次の属性名と値を追加します。
 
-
    | 属性名 | 属性の値 |
    |--------------------| - |
    | **name** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
    | **culture** | **Neutral** |
-
 
 7. **dependentAssembly** 要素の子として **codeBase** 要素を追加します。
 
@@ -100,15 +96,15 @@ ms.locfileid: "56616691"
 
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>configuration/system.web/compilation 要素にプロファイラーの処理後の手順を追加するには
 
-1.  必要に応じて、**configuration** 要素の子要素として **system.web** 要素を追加します。追加しない場合は次の手順に進みます。
+1. 必要に応じて、**configuration** 要素の子要素として **system.web** 要素を追加します。追加しない場合は次の手順に進みます。
 
      **system.web** 要素には属性はありません。 **configuration** 要素には、**system.web** 子要素を 1 つだけ含めることができます。
 
-2.  必要に応じて、**system.web** 要素の子要素として **compilation** 要素を追加します。追加しない場合は次の手順に進みます。
+2. 必要に応じて、**system.web** 要素の子要素として **compilation** 要素を追加します。追加しない場合は次の手順に進みます。
 
      **system.web** 要素には、**compilation** 子要素を 1 つだけ含めることができます。
 
-3.  **compilation** 要素に既存の属性があればすべて削除し、次の属性名と値を追加します。
+3. **compilation** 要素に既存の属性があればすべて削除し、次の属性名と値を追加します。
 
     |属性名|属性の値|
     |--------------------|---------------------|
@@ -140,12 +136,10 @@ ms.locfileid: "56616691"
 
 3. **add** 要素に、次の属性名と値を追加します。
 
-
    | 属性名 | 属性の値 |
    |----------------| - |
    | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
    | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
-
 
 4. 別の **add** 要素を **appSettings** 要素の子として追加します。
 
@@ -157,7 +151,6 @@ ms.locfileid: "56616691"
    |**value**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` は、プロファイラーの実行可能ファイルへのパスです。 プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。
-
 
 ```xml
     <configuration>

@@ -8,11 +8,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965553"
 ---
 # <a name="customize-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 
@@ -39,9 +39,9 @@ ms.locfileid: "55952490"
    > [!TIP]
    > 前のコード カバレッジの結果とコードの色分けは、テストを実行したりコードを更新したりしても、自動的に非表示にはなりません。
 
-カスタム設定のオンとオフを切り替えるには、**[テストの設定]** メニューの **[テスト]** でファイルを選択したり選択解除したりします。
+カスタム設定のオンとオフを切り替えるには、**[テストの設定]** メニューの **[テスト]** >  でファイルを選択したり選択解除したりします。
 
-![カスタム設定ファイルを持つ [テストの設定] メニュー](../test/media/codecoverage-settingsfile.png)
+![カスタム設定ファイルを持つテスト設定メニュー](../test/media/codecoverage-settingsfile.png)
 
 ### <a name="specify-symbol-search-paths"></a>シンボル検索パスの指定
 

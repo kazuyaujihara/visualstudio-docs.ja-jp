@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 3085e2f9b27d587f26fd93db06bc837527a78ff1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432036"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>チュートリアル: 使用法から生成機能のテスト ファースト開発
 
@@ -50,13 +50,13 @@ ms.locfileid: "58355631"
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>クラス ライブラリ プロジェクトに参照を追加する
 
-1.  **ソリューション エクスプローラー**で、単体クラス プロジェクトの **[参照]** エントリを右クリックし、**[参照の追加]** を選択します。
+1. **ソリューション エクスプローラー**で、単体クラス プロジェクトの **[参照]** エントリを右クリックし、**[参照の追加]** を選択します。
 
-2.  **[参照マネージャー]** ダイアログ ボックスで、**[プロジェクト]** を選択してからクラス ライブラリ プロジェクトを選択します。
+2. **[参照マネージャー]** ダイアログ ボックスで、**[プロジェクト]** を選択してからクラス ライブラリ プロジェクトを選択します。
 
-3.  **[OK]** を選択して **[参照マネージャー]** ダイアログ ボックスを閉じます。
+3. **[OK]** を選択して **[参照マネージャー]** ダイアログ ボックスを閉じます。
 
-4.  ソリューションを保存します。 これで、テストの記述を開始できるようになりました。
+4. ソリューションを保存します。 これで、テストの記述を開始できるようになりました。
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>単体テストから新しいクラスを生成する
 
@@ -65,7 +65,7 @@ ms.locfileid: "58355631"
 2. クラス `UnitTest1` の宣言を検索して、この名前を `AutomobileTest`に変更します。
 
    > [!NOTE]
-   >  現在、IntelliSense では、IntelliSense のステートメント入力候補に対して、 *完了モード* と *提案モード*の 2 つの方法を提供しています。 まだ定義していないクラスやメンバーを使用する場合は、提案モードを使用します。 **IntelliSense** ウィンドウが開いているときに、**Ctrl**+**Alt**+**Space** キーを押すと、完了モードと提案モードを切り替えることができます。 詳細については、[IntelliSense の使用](../ide/using-intellisense.md)に関するページを参照してください。 提案モードは、次の手順で「 `Automobile` 」と入力する際に役立ちます。
+   > 現在、IntelliSense では、IntelliSense のステートメント入力候補に対して、 *完了モード* と *提案モード*の 2 つの方法を提供しています。 まだ定義していないクラスやメンバーを使用する場合は、提案モードを使用します。 **IntelliSense** ウィンドウが開いているときに、**Ctrl**+**Alt**+**Space** キーを押すと、完了モードと提案モードを切り替えることができます。 詳細については、[IntelliSense の使用](../ide/using-intellisense.md)に関するページを参照してください。 提案モードは、次の手順で「 `Automobile` 」と入力する際に役立ちます。
 
 3. `TestMethod1()` メソッドを検索して、この名前を `DefaultAutomobileIsInitializedCorrectly()`に変更します。 次のスクリーンショットに示されているように、このメソッド内に `Automobile` というクラスの新しいインスタンスを作成します。 コンパイル時のエラーを示す波下線が表示され、[クイック アクション](../ide/quick-actions.md)のエラー電球が左の余白に表示されるか、カーソルを移動すると波線の下に直接表示されます。
 
@@ -107,12 +107,11 @@ ms.locfileid: "58355631"
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2.  赤い波線の下にある**クイック アクション**のエラー電球をクリックしてから、**['Automobile' にコンストラクターを生成します]** をクリックします。
+2. 赤い波線の下にある**クイック アクション**のエラー電球をクリックしてから、**['Automobile' にコンストラクターを生成します]** をクリックします。
 
      `Automobile` クラス ファイルで、新しいコンストラクターがコンストラクター呼び出しで使用されているローカル変数の名前を調べ、 `Automobile` クラスで同じ名前のプロパティを見つけ、 `Model` および `TopSpeed` プロパティに引数値を格納するためのコードをコンストラクター本体に指定に指定したことがわかります
 
-
-3.  新しいコンストラクターを生成すると、 `DefaultAutomobileIsInitializedCorrectly`の既定のコンストラクター呼び出しの下に波線が表示されます。 `Automobile` クラスには、0 個の引数を受け取るコンストラクターがないことを示すエラー メッセージが表示されます。 パラメーターを持たない明示的な既定のコンストラクターを生成するには、**クイック アクション**のエラー電球をクリックし、**['Automobile' にコンストラクターを生成します]** をクリックします。
+3. 新しいコンストラクターを生成すると、 `DefaultAutomobileIsInitializedCorrectly`の既定のコンストラクター呼び出しの下に波線が表示されます。 `Automobile` クラスには、0 個の引数を受け取るコンストラクターがないことを示すエラー メッセージが表示されます。 パラメーターを持たない明示的な既定のコンストラクターを生成するには、**クイック アクション**のエラー電球をクリックし、**['Automobile' にコンストラクターを生成します]** をクリックします。
 
 ### <a name="generate-a-stub-for-a-method"></a>メソッドのスタブを生成する
 仕様で、`Model` および `TopSpeed` プロパティが既定値以外に設定されている場合は、新しい `Automobile` を `IsRunning` 状態にできることが示されているとします。
@@ -122,15 +121,15 @@ ms.locfileid: "58355631"
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2.  `myAuto.Start` メソッド呼び出しの**クイック アクション**のエラー電球をクリックしてから、**[メソッド 'Automobile.Start' を生成します]** をクリックします。
+2. `myAuto.Start` メソッド呼び出しの**クイック アクション**のエラー電球をクリックしてから、**[メソッド 'Automobile.Start' を生成します]** をクリックします。
 
-3.  `IsRunning` プロパティの**クイック アクション** (電球) をクリックしてから、**[プロパティ 'Automobile.IsRunning' を生成します]** をクリックします。
+3. `IsRunning` プロパティの**クイック アクション** (電球) をクリックしてから、**[プロパティ 'Automobile.IsRunning' を生成します]** をクリックします。
 
      これで、`Automobile` クラスに `Start()` という名前のメソッドと `IsRunning` という名前のプロパティが含まれるようになりました。
 
 ### <a name="run-the-tests"></a>テストを実行
 
-1.  **[テスト]** メニューで **[実行]** > **[すべてのテスト]** を選びます。
+1. **[テスト]** メニューで **[実行]** > **[すべてのテスト]** を選びます。
 
      **[実行]** > **[すべてのテスト]** コマンドは、現在のソリューション用に作成されたテスト フレームワークですべてのテストを実行します。 この場合、2 つのテストがありますが、どちらも失敗することが予想されます。 `DefaultAutomobileIsInitializedCorrectly` テストは、 `Assert.IsTrue` 条件が `False`を返すため失敗します。 `AutomobileWithModelNameCanStart` テストは、 `Start` クラスの `Automobile` メソッドが例外をスローするため失敗します。
 
@@ -138,16 +137,16 @@ ms.locfileid: "58355631"
 
      ![失敗したテストの結果](../ide/media/testsfailed.png)
 
-2.  **[テスト結果]** ウィンドウで、各テスト結果の行をダブルクリックして、各テストの場所に移動します。
+2. **[テスト結果]** ウィンドウで、各テスト結果の行をダブルクリックして、各テストの場所に移動します。
 
 ### <a name="implement-the-source-code"></a>ソース コードを実装する
 
-1.  次のコードを既定のコンストラクターに追加して、`Model`、`TopSpeed` および `IsRunning` のプロパティがすべて `"Not specified"`、`-1` および `False` (C# の場合は `false`) の適切な既定値に初期化されるようにします。
+1. 次のコードを既定のコンストラクターに追加して、`Model`、`TopSpeed` および `IsRunning` のプロパティがすべて `"Not specified"`、`-1` および `False` (C# の場合は `false`) の適切な既定値に初期化されるようにします。
 
      [!code-csharp[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]
      [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]
 
-2.  `Start` メソッドが呼び出されたときに、 `IsRunning` または `Model` プロパティが既定値以外に設定されている場合にのみ `TopSpeed` フラグを true に設定する必要があります。 メソッド本体から `NotImplementedException` を削除して次のコードを追加します。
+2. `Start` メソッドが呼び出されたときに、 `IsRunning` または `Model` プロパティが既定値以外に設定されている場合にのみ `TopSpeed` フラグを true に設定する必要があります。 メソッド本体から `NotImplementedException` を削除して次のコードを追加します。
 
      [!code-csharp[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]
      [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]

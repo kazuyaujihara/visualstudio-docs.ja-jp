@@ -12,11 +12,11 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957374"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>IIS 用に Python Web アプリを構築する
 
@@ -100,8 +100,8 @@ FastCGI は、要求レベルで動作するインターフェイスです。 II
     これらの `<appSettings>` 値はアプリで環境変数として使用できます。
 
     - `PYTHONPATH` の値は、自由に拡張できますが、アプリのルートを含める必要があります。
-    - `WSGI_HANDLER`  はアプリからインポート可能な WSGI アプリをポイントする必要があります。
-    - `WSGI_LOG`  は省略可能ですが、アプリのデバッグのために推奨します。
+    - `WSGI_HANDLER` はアプリからインポート可能な WSGI アプリをポイントする必要があります。
+    - `WSGI_LOG` は省略可能ですが、アプリのデバッグのために推奨します。
 
 1. *web.config* の `WSGI_HANDLER` エントリを、使用しているフレームワークに合わせて適切に設定します。
 
