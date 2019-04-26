@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 7ad0105cffc99894134dc58af7c71c9f95bceace
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840583"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio で JavaScript と TypeScript の単体テストを実行する
 
@@ -71,7 +71,7 @@ describe('Test Suite 1', function() {
 
 テスト エクスプローラーを開くと (**[テスト]** > **[ウィンドウ]** > **[テスト エクスプローラー]** を選択)、Visual Studio によってテストが検出されて表示されます。 テストが最初に表示されない場合は、プロジェクトをリビルドして一覧を更新します。
 
-![Test Explorer](../javascript/media/UnitTestsDiscoveryMocha.png)
+![テスト エクスプローラー](../javascript/media/UnitTestsDiscoveryMocha.png)
 
 > [!NOTE]
 > テスト エクスプローラーは TypeScript ファイル内の単体テストを検出できないため、*tsconfig.json* では `outdir` または `outfile` オプションを使わないでください。

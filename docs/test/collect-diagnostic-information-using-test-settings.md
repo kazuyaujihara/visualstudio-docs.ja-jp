@@ -8,26 +8,26 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdaa86e2eb7562f4a3347c942e193da22a9e256e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c378cea12ba749ee9131d13130fdbb7def84ea66
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823016"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>テスト設定を使用して診断情報を収集する
 
 テストを実行するときに、Visual Studio で*テストの設定*を使用して、追加のデータを収集できます。 たとえば、テストを実行しながら、ビデオ記録を作成する場合があります。 用意されている診断データ アダプターでは、次の作業を行うことができます。
 
--   各 UI 操作ステップをテキスト形式で収集する
+- 各 UI 操作ステップをテキスト形式で収集する
 
--   再生用に各 UI 操作を記録する
+- 再生用に各 UI 操作を記録する
 
--   システム情報を収集する
+- システム情報を収集する
 
--   イベント ログ データを収集する
+- イベント ログ データを収集する
 
--   再現不可能なバグの特定に役立つ IntelliTrace データを収集する
+- 再現不可能なバグの特定に役立つ IntelliTrace データを収集する
 
 また、診断データ アダプターを使用して、テスト コンピューターの動作を変更することもできます。 たとえば、Visual Studio のテストの設定により、さまざまなネットワーク トポロジのボトルネックをエミュレートして、チームのアプリケーションのパフォーマンスを評価できます。
 

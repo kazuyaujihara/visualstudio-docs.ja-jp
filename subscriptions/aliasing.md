@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: 別名またはフレンドリ名の使用でサインインに失敗する場合がある
 searchscope: VS Subscription
-ms.openlocfilehash: f0b18aca4c6188c23998c8a87f86359895198b95
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: ac3f9df365e0b7924b615c2ae8cbb70d93d04948
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946177"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>別名を使用した Visual Studio サブスクリプションへのサインインが失敗する場合がある
 
@@ -51,7 +51,6 @@ ms.locfileid: "58195152"
     > [!div class="mx-imgBorder"]
     > ![サブスクリプション メニュー](_img//vlsc/vlsc-subscriptions.png)
 
-
 3. Visual Studio サブスクリプションに関連付けられている**契約番号**をクリックします。
 
     > [!div class="mx-imgBorder"]
@@ -82,21 +81,23 @@ ms.locfileid: "58195152"
 
 ウェルカム メールがサブスクライバーに正常に送信されないため、次のメッセージをコピーして電子メールに貼り付け、サブスクライバーに送信します。 %用語% の部分を各サブスクライバーに適した情報に置き換えます。
 
------------ 以下をコピー (Ctrl+C) -----------
+```
+----------- Copy Below (Ctrl+C) -----------
 
-%サブスクライバー名% 様
+Hello %SUBSCRIBER NAME%
 
-Visual Studio サブスクリプションが割り当てられました。  [https://my.visualstudio.com](https://my.visualstudio.com) にアクセスして、%ディレクトリ アドレス% アドレスを使用してログインし、サブスクリプションをアクティブ化してアクセスしてください。
+You have been assigned a Visual Studio subscription. Please visit https://my.visualstudio.com, and log in with your %DIRECTORY ADDRESS% address to activate and access your subscription.
 
-問題がある場合は、サポート チームにお問い合わせください (https://visualstudio.microsoft.com/subscriptions/support/)。
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-ページの下部で、次を選択します。
-   - [Accounts, Subscriptions, and Billing Support]\(アカウント、サブスクリプション、課金サポート\)
-   - [Issue]\(問題\) から、[ Subscription sign in support]\(サブスクリプションのサインイン サポート) を選択します
-   - 該当する国を選択します
-   - 必要なサポート オプションを選択します
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
------------ コピーの終了 -----------
+----------- End Copy -----------
+```
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>職場または学校アカウントを個人用アカウントとして定義する
 
@@ -127,35 +128,37 @@ Visual Studio サブスクリプションが割り当てられました。  [htt
 
 上記で説明したシナリオでは、サブスクライバーは "ウェルカム メール" を受信しますが、別名定義によりサブスクライバーがサインインできない場合があります。  次のテキストを使用して、サブスクライバーに上記の手順を通知し、必要に応じてサポート オプションを勧めることができます。  %用語% の部分を各サブスクライバーに適した情報に置き換えます。
 
------------ 以下をコピー (Ctrl+C) -----------
+```
+----------- Copy Below (Ctrl+C) -----------
 
-%サブスクライバー名% 様
+Hello %SUBSCRIBER NAME%
 
-Visual Studio サブスクリプションが割り当てられ、ウェルカム メールでは、 https://my.visualstudio.com にログインするように指示されています。  これは特典を使用する場合の Web サイトで、当組織では、サイトにアクセスする前に、いくつか追加手順を実行していただく必要があります。  次の指示に従って、弊社のメール アドレスに関連付けられる "Microsoft アカウント" を作成してください。  これらの手順が完了したら、ご自分のメール アドレスを使用してサブスクリプションの特典にアクセスします。
-1. https://my.visualstudio.com にアクセスします。
+You have been assigned a Visual Studio subscription, and may have been directed to log into https://my.visualstudio.com based on your Welcome email.  While this is the correct website for consuming benefits, our organization requires you to take a few extra steps before you can access the site.  Please follow the below instructions to help you create a “Microsoft Account” that is tied to our corporate email address.  Once these steps are completed, you will use your email address to access the Subscription benefits.
+1. Visit https://my.visualstudio.com
 
-2. 右側で [新しい Microsoft アカウントを作成する] をクリックします。
+2. Click Create new Microsoft Account on the right hand side
 
-3. フォームに入力します。
-   - someone@example.com ボックスには会社のメール アドレスを使用します。
-   - パスワードを入力します。
-   - キャンペーンを選択します。
-   - [次へ] をクリックします。
+3. Complete the Form:
+   - Use your corporate email address in the someone@example.com box
+   - Enter a password
+   - Select your promotional preference
+   - Click Next
 
-4. アカウントの検証手順を完了します。
+4. Complete the account validation steps
 
-5. 必要に応じて、Visual Studio プロファイルを完成させます。
+5. If necessary, complete the Visual Studio profile
 
-6. これで特典が表示されます。
+6. You should now see your benefits
 
-メモ:将来、 https://my.visualstudio.com にアクセスしたときに、使用するアカウント ("職場または学校アカウント" または "個人用アカウント" など) を選択するように求められる場合があります。  上記の手順を実行したら、"個人用アカウント" オプションを利用する必要があります。
+Note:  When visiting https://my.visualstudio.com in the future, you may be prompted to select which account you’d like to use (e.g. “Work or School Account” or “Personal Account”).  After following the steps above, you will need to leverage the “Personal Account” option.
 
-問題がある場合は、サポート チームにお問い合わせください (https://visualstudio.microsoft.com/subscriptions/support/)。
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-ページの下部で、次を選択します。
-   - [Accounts, Subscriptions, and Billing Support]\(アカウント、サブスクリプション、課金サポート\)
-   - [Issue]\(問題\) から、[ Subscription sign in support]\(サブスクリプションのサインイン サポート) を選択します
-   - 該当する国を選択します
-   - 必要なサポート オプションを選択します
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
------------ コピーの終了 -----------
+----------- End Copy -----------
+```

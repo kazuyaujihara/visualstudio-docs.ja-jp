@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e76c895102d5a33d66628a7c6436ab604b1ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e85c589866aba54e856afb066cec253c7057aaad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979680"
 ---
 # <a name="start"></a>[開始]
 **Start** オプションは、指定されたプロファイリング方法にプロファイラーを初期化する *VSPerfCmd.exe* オプションです。
@@ -27,13 +27,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 #### <a name="parameters"></a>パラメーター
  `Method` 次のいずれかのキーワードとする必要があります。
 
--   **TRACE** - インストルメンテーション メソッドを指定します。
+- **TRACE** - インストルメンテーション メソッドを指定します。
 
--   **SAMPLE** - サンプリング方法を指定します。
+- **SAMPLE** - サンプリング方法を指定します。
 
--   **COVERAGE** - コード カバレッジを指定します。
+- **COVERAGE** - コード カバレッジを指定します。
 
--   **CONCURRENCY** - リソースの競合メソッドを指定します。
+- **CONCURRENCY** - リソースの競合メソッドを指定します。
 
 ## <a name="required-options"></a>必須オプション
  **Output** オプションは、コマンド ラインで **Start** が指定されている場合に指定する必要があります。

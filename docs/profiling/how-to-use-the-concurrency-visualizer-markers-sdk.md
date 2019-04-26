@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be76e5af3dafd3eebb8649fa82db6a14d46bb0d
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 3db7155a991b1badbdb4ef8dadb8ccfa63817c80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996209"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>方法: コンカレンシー ビジュアライザー マーカー SDK を使用する
 このトピックでは、コンカレンシー ビジュアライザー SDK を使用してスパンを作成し、フラグ、メッセージ、警告を記述する方法について説明します。
 
 ### <a name="to-use-c"></a>C++ を使用するには
 
-1.  アプリケーションにコンカレンシー ビジュアライザー SDK サポートを追加します。 詳細については、「[コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)」を参照してください。
+1. アプリケーションにコンカレンシー ビジュアライザー SDK サポートを追加します。 詳細については、「[コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)」を参照してください。
 
-2.  SDK 用の `include` ステートメントと `using` ステートメントを追加します。
+2. SDK 用の `include` ステートメントと `using` ステートメントを追加します。
 
     ```C++
 
@@ -31,7 +31,7 @@ ms.locfileid: "57323537"
 
     ```
 
-3.  既定のマーカー系列に 3 つのスパンを作成して各スパンにフラグ、メッセージ、警告を 1 つずつ記述するためのコードを追加します。 フラグ、メッセージ、警告を記述するメソッドは、[marker_series](../profiling/marker-series-class.md) クラスのメンバーです。 各スパンが特定のマーカー系列に関連付けられるようにするため、[span](../profiling/span-class.md) クラスのコンストラクターに `marker_series` オブジェクトが必要です。 `span` は削除されると同時に終了します。
+3. 既定のマーカー系列に 3 つのスパンを作成して各スパンにフラグ、メッセージ、警告を 1 つずつ記述するためのコードを追加します。 フラグ、メッセージ、警告を記述するメソッドは、[marker_series](../profiling/marker-series-class.md) クラスのメンバーです。 各スパンが特定のマーカー系列に関連付けられるようにするため、[span](../profiling/span-class.md) クラスのコンストラクターに `marker_series` オブジェクトが必要です。 `span` は削除されると同時に終了します。
 
     ```C++
 
@@ -50,11 +50,11 @@ ms.locfileid: "57323537"
 
     ```
 
-4.  メニュー バーで、**[分析]**、**[コンカレンシー ビジュアライザー]**、**[現在のプロジェクトで開始]** の順に選択して、アプリを実行し、コンカレンシー ビジュアライザーを表示します。 次の図は、コンカレンシー ビジュアライザーに表示されている 3 つのスパンと 3 つのマーカーを示します。
+4. メニュー バーで、**[分析]**、**[コンカレンシー ビジュアライザー]**、**[現在のプロジェクトで開始]** の順に選択して、アプリを実行し、コンカレンシー ビジュアライザーを表示します。 次の図は、コンカレンシー ビジュアライザーに表示されている 3 つのスパンと 3 つのマーカーを示します。
 
      ![3 つのマーカーと警告があるコンカレンシー ビジュアライザー](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
-5.  マーカー系列の文字列名を指定した `marker_series` のコンストラクターを呼び出して追加のカスタム マーカー系列を作成するコードを追加します。
+5. マーカー系列の文字列名を指定した `marker_series` のコンストラクターを呼び出して追加のカスタム マーカー系列を作成するコードを追加します。
 
     ```C++
 
@@ -74,15 +74,15 @@ ms.locfileid: "57323537"
 
     ```
 
-6.  現在のプロジェクトを開始して、コンカレンシー ビジュアライザーを表示します。 2 つのマーカー系列がスレッド ビューのそれぞれ独自のレーンに表示されます。 次の図は、2 つの新しいスパンを示しています。
+6. 現在のプロジェクトを開始して、コンカレンシー ビジュアライザーを表示します。 2 つのマーカー系列がスレッド ビューのそれぞれ独自のレーンに表示されます。 次の図は、2 つの新しいスパンを示しています。
 
      ![3 つのカスタム マーカー系列があるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Visual Basic または C\# を使用するには
 
-1.  アプリケーションにコンカレンシー ビジュアライザー SDK サポートを追加します。 詳細については、「[コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)」を参照してください。
+1. アプリケーションにコンカレンシー ビジュアライザー SDK サポートを追加します。 詳細については、「[コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)」を参照してください。
 
-2.  SDK 用の `using` または `Imports` ステートメントを追加します。
+2. SDK 用の `using` または `Imports` ステートメントを追加します。
 
     ```VB
     Imports Microsoft.ConcurrencyVisualizer.Instrumentation
@@ -93,7 +93,7 @@ ms.locfileid: "57323537"
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3.  既定のマーカー系列に 3 つのスパンを作成して各スパンにフラグ、メッセージ、警告を 1 つずつ記述するためのコードを追加します。 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> オブジェクトを作成するには、`EnterSpan` メソッドを呼び出します。 既定の系列に書き込むには、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> クラスの静的な write メソッドを使用します。
+3. 既定のマーカー系列に 3 つのスパンを作成して各スパンにフラグ、メッセージ、警告を 1 つずつ記述するためのコードを追加します。 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> オブジェクトを作成するには、`EnterSpan` メソッドを呼び出します。 既定の系列に書き込むには、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> クラスの静的な write メソッドを使用します。
 
     ```VB
 
@@ -134,11 +134,11 @@ ms.locfileid: "57323537"
     alertSpan.Leave();
     ```
 
-4.  メニュー バーで、**[分析]**、**[コンカレンシー ビジュアライザー]**、**[現在のプロジェクトで開始]** の順に選択して、アプリを実行し、コンカレンシー ビジュアライザーを表示します。 次の図は、コンカレンシー ビジュアライザーのスレッド ビューに表示されている 3 つのスパンと 3 つのマーカーを示します。
+4. メニュー バーで、**[分析]**、**[コンカレンシー ビジュアライザー]**、**[現在のプロジェクトで開始]** の順に選択して、アプリを実行し、コンカレンシー ビジュアライザーを表示します。 次の図は、コンカレンシー ビジュアライザーのスレッド ビューに表示されている 3 つのスパンと 3 つのマーカーを示します。
 
      ![マーカーと警告があるコンカレンシー ビジュアライザー](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5.  静的な <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A> メソッドを使用して、顧客マーカー シリーズを作成するコードを追加します。 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> クラスには、範囲を作成して、フラグ、メッセージ、およびアラートを書き込むためのメソッドが含まれています。
+5. 静的な <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A> メソッドを使用して、顧客マーカー シリーズを作成するコードを追加します。 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> クラスには、範囲を作成して、フラグ、メッセージ、およびアラートを書き込むためのメソッドが含まれています。
 
     ```VB
 
@@ -172,7 +172,7 @@ ms.locfileid: "57323537"
     messageSeriesSpan.Leave();
     ```
 
-6.  現在のプロジェクトを開始して、コンカレンシー ビジュアライザーを表示します。 3 つのマーカー系列がスレッド ビューのそれぞれ独自のレーンに表示されます。 次の図は、3 つの新しいスパンを示しています。
+6. 現在のプロジェクトを開始して、コンカレンシー ビジュアライザーを表示します。 3 つのマーカー系列がスレッド ビューのそれぞれ独自のレーンに表示されます。 次の図は、3 つの新しいスパンを示しています。
 
      ![3 つのカスタム マーカー系列があるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
