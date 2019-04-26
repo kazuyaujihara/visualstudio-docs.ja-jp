@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428125"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>チュートリアル: プロファイラー API の使用
 
@@ -39,8 +39,6 @@ ms.locfileid: "57868212"
 
  マネージド コード用のプロファイラー API は、*Microsoft.VisualStudio.Profiler.dll* にあります。 この DLL は、*Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* ディレクトリにあります。 64 ビット アプリの場合、フォルダーは *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64* です。 詳細については、「<xref:Microsoft.VisualStudio.Profiler>」を参照してください。
 
-
-
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルでは、ユーザーが選択した開発環境で、デバッグとサンプリングがサポートされていることを前提としています。 以下のトピックでは、これらの前提条件の概要について説明しています。
 
@@ -62,12 +60,12 @@ DataCollection.CurrentId);
 
 #### <a name="to-create-the-code-to-profile"></a>プロファイルするコードを作成するには
 
-1.  Visual Studio で、新しい C# プロジェクトを作成するか、希望に応じて、コマンド ライン ビルドを使用します。
+1. Visual Studio で、新しい C# プロジェクトを作成するか、希望に応じて、コマンド ライン ビルドを使用します。
 
     > [!NOTE]
-    >  ビルドは、*Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* ディレクトリにある、*Microsoft.VisualStudio.Profiler.dll* ライブラリを参照している必要があります。
+    > ビルドは、*Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* ディレクトリにある、*Microsoft.VisualStudio.Profiler.dll* ライブラリを参照している必要があります。
 
-2.  プロジェクトに次のコードをコピーし、貼り付けます。
+2. プロジェクトに次のコードをコピーし、貼り付けます。
 
     ```csharp
     using System;
@@ -150,23 +148,23 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>コマンド ラインでデータを収集し表示するには
 
-1.  このチュートリアルで前述した「プロファイルするコードを作成するには」の手順で作成したサンプル コードのデバッグ バージョンをコンパイルします。
+1. このチュートリアルで前述した「プロファイルするコードを作成するには」の手順で作成したサンプル コードのデバッグ バージョンをコンパイルします。
 
-2.  マネージド アプリケーションをプロファイリングするには、次のコマンドを入力し、適切な環境変数を設定します。
+2. マネージド アプリケーションをプロファイリングするには、次のコマンドを入力し、適切な環境変数を設定します。
 
      **VsPerfCLREnv /traceon**
 
-3.  次のコマンドを入力します。**VSInstr \<ファイル名>.exe**
+3. 次のコマンドを入力します。**VSInstr \<ファイル名>.exe**
 
-4.  次のコマンドを入力します。**VSPerfCmd /start:trace /output:\<ファイル名>.vsp**
+4. 次のコマンドを入力します。**VSPerfCmd /start:trace /output:\<ファイル名>.vsp**
 
-5.  次のコマンドを入力します。**VSPerfCmd /globaloff**
+5. 次のコマンドを入力します。**VSPerfCmd /globaloff**
 
-6.  プログラムを実行します。
+6. プログラムを実行します。
 
-7.  次のコマンドを入力します。**VSPerfCmd /shutdown**
+7. 次のコマンドを入力します。**VSPerfCmd /shutdown**
 
-8.  次のコマンドを入力します。**VSPerfReport /calltrace:\<ファイル名>.vsp**
+8. 次のコマンドを入力します。**VSPerfReport /calltrace:\<ファイル名>.vsp**
 
      現在のディレクトリに、結果のパフォーマンス データが含まれた .*csv* ファイルが作成されます。
 

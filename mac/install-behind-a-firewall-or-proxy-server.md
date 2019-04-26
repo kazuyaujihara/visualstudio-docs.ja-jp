@@ -7,11 +7,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
 ms.openlocfilehash: bf12f8803fbdbbf1de31899501c31545a09d6b09
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982871"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio for Mac をインストールして使用する
 
@@ -90,4 +90,4 @@ Visual Studio for Mac インストーラーはさまざまなドメイン サー
 ## <a name="see-also"></a>関連項目
 
 - [ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
-- [Windows での同様の問題のトラブルシューティング](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)
+- [Windows に関する同様の問題のトラブルシューティング](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)

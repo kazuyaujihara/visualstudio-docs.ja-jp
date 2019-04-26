@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8eef7dd68ba29f4a0100dfe5207c0b6179a76410
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 2a90d0e02d5ae3ce3ce2e91d4d152244b06fd049
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950268"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>方法: Web パフォーマンス テスト エディターのカスタム HTTP ボディ エディターを作成する
 
@@ -23,9 +23,9 @@ ms.locfileid: "58415071"
 
 次の種類のエディターを実装できます。
 
--   **文字列コンテンツ エディター** これは <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> インターフェイスを使用して実装されます。
+- **文字列コンテンツ エディター** これは <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> インターフェイスを使用して実装されます。
 
--   **バイナリ コンテンツ エディター** これは <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> インターフェイスを使用して実装されます。
+- **バイナリ コンテンツ エディター** これは <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> インターフェイスを使用して実装されます。
 
 これらのインターフェイスは、<xref:Microsoft.VisualStudio.TestTools.WebTesting> 名前空間に含まれます。
 
@@ -210,7 +210,7 @@ messageEditorControl インスタンスは、<xref:Microsoft.VisualStudio.TestTo
 
 ### <a name="to-add-the-ibinaryhttpbodyeditorplugin-to-the-class"></a>クラスに IBinaryHttpBodyEditorPlugin を追加するには
 
--   前の手順で追加された XmlMessageEditor クラスで次のコードを記述またはコピーして、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> インターフェイスから Msbin1MessageEditor クラスをインスタンス化し、必要なメソッドを実装します。
+- 前の手順で追加された XmlMessageEditor クラスで次のコードを記述またはコピーして、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> インターフェイスから Msbin1MessageEditor クラスをインスタンス化し、必要なメソッドを実装します。
 
     ```csharp
     /// <summary>

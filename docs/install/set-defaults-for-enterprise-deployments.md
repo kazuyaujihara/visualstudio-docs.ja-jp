@@ -19,11 +19,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945015"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Visual Studio のエンタープライズ展開に既定値を設定する
 
@@ -50,7 +50,7 @@ Visual Studio の展開に影響するレジストリ ポリシーを設定す�
 
 以下のレジストリ値を設定できます。
 
-| **name** | **型** | **既定値** | **説明** |
+| **Name** | **Type** | **default** | **説明** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` または `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | パッケージ マニフェストと、ペイロード (省略可能) が格納されるディレクトリ。 詳しくは、「[パッケージ キャッシュの無効化または移動](disable-or-move-the-package-cache.md)」ページをご覧ください。 |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | パッケージのペイロードはインストール後も保持されます。 この値はいつでも変更できます。 ポリシーを無効にすると、修復または変更するインスタンスでキャッシュされたパッケージのペイロードがすべて削除されます。 詳しくは、「[パッケージ キャッシュの無効化または移動](disable-or-move-the-package-cache.md)」ページをご覧ください。 |

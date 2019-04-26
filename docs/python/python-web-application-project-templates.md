@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954824"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web アプリケーション プロジェクト テンプレート
 
@@ -43,7 +43,7 @@ Python Web アプリを Azure にデプロイする方法については、「[A
 | --- | --- |
 | **Blank Bottle Web プロジェクト** | *app.py* に対するホーム ページと、非常に短いインライン ページ テンプレートを使用して `/` にエコーする `/hello/<name>` ページとを備えた最小限のアプリを `<name>` 内に生成します。 |
 | **空の Django Web プロジェクト** | コア Django サイト構造を持つが Django アプリが含まれない Django プロジェクトを生成します。 詳細については、[Django テンプレート](python-django-web-application-project-template.md)に関する記事と [Django 手順 1](learn-django-in-visual-studio-step-01-project-and-solution.md)に関する記事を参照してください。 |
-| **Blank Flask Web プロジェクト** |  "Hello World!" を 1 つ使用した最小限のアプリを生成します。 ページの`/`します。 このアプリは、「[クイック スタートVisual Studio を使用して初めての Python Web アプリを作成する](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)」の詳細な手順に従った結果と似ています。 [Flask の詳細情報の手順 1](learn-flask-visual-studio-step-01-project-solution.md) に関するページも参照してください。
+| **Blank Flask Web プロジェクト** | "Hello World!" を 1 つ使用した最小限のアプリを生成します。 ページの`/`します。 このアプリは、「[クイック スタートVisual Studio を使用して初めての Python Web アプリを作成する](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)」の詳細な手順に従った結果と似ています。 [Flask の詳細情報の手順 1](learn-flask-visual-studio-step-01-project-solution.md) に関するページも参照してください。
 
 ### <a name="web-group"></a>Web グループ
 
@@ -98,7 +98,7 @@ Web プロジェクトのデバッグが開始されると、Visual Studio は�
 - **[環境]**: 環境変数を指定する \<NAME>=\<VALUE> ペアの改行区切りリスト。 これらの変数は、ポート番号や検索パスなど、環境を変更できるすべてのプロパティの後に設定されるため、これらの値を上書きできます。
 
 MSBuild 構文を使用して任意のプロジェクト プロパティまたは環境変数を指定できます。例: `$(StartupFile) --port $(SERVER_PORT)`。
-`$(StartupFile)`  はスタートアップ ファイルの相対パスで、`{StartupModule}` はスタートアップ ファイルのインポート可能な名前です。 `$(SERVER_HOST)`  と `$(SERVER_PORT)` は通常の環境変数であり、**[起動 URL]** プロパティと **[ポート番号]** プロパティによって自動的に設定されるか、**[環境]** プロパティによって設定されます。
+`$(StartupFile)` はスタートアップ ファイルの相対パスで、`{StartupModule}` はスタートアップ ファイルのインポート可能な名前です。 `$(SERVER_HOST)` と `$(SERVER_PORT)` は、**[起動 URL]** プロパティと **[ポート番号]** プロパティによって自動的に設定されるか、**[環境]** プロパティによって設定される通常の環境変数です。
 
 > [!Note]
 > **[サーバー コマンドの実行]** の値は、**[デバッグ]** > **[サーバーを起動します]** コマンドまたは **Ctrl** + **F5** キーで使用されます。**[サーバー コマンドのデバッグ]** グループは、**[デバッグ]** > **[デバッグ サーバーの開始]** コマンドまたは **F5** キーで使用されます。
@@ -113,7 +113,7 @@ MSBuild 構文を使用して任意のプロジェクト プロパティまた�
 
 - **[Debug Server Command (サーバー コマンドのデバッグ)]** グループ:
   - **[コマンド]**: `bottle` (モジュール)
-  - **引数** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **[引数]** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 デバッグに Visual Studio を使用する場合、`--reload` オプションはお勧めしません。
 

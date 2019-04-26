@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b71271213e10c460c0b1744ba079ec034aa9d118
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001038"
 ---
 # <a name="common-data-views"></a>共通のデータ ビュー
 ここでは、すべてのプロファイル方法に共通のプロファイラー データ ファイルのビューとレポートに関するリファレンス情報を示します。

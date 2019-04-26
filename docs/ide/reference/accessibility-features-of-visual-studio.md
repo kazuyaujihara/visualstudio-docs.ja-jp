@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793158"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio のユーザー補助機能
 
@@ -26,15 +26,15 @@ ms.locfileid: "56318590"
 
 Visual Studio は、Windows のユーザー補助機能およびユーティリティ、さらに次の機能によって、視覚に障碍のある方でも、これまで以上に使いやすくなっています。
 
--   ツール バーのボタンおよびテキストの拡大
+- ツール バーのボタンおよびテキストの拡大
 
--   エディター内のテキスト サイズ オプション
+- エディター内のテキスト サイズ オプション
 
--   エディター内の色のカスタマイズ
+- エディター内の色のカスタマイズ
 
--   キーボード ショートカットのカスタマイズ
+- キーボード ショートカットのカスタマイズ
 
--   メソッドおよびパラメーターのオート コンプリート
+- メソッドおよびパラメーターのオート コンプリート
 
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、[Visual Studio for Mac のユーザー補助機能](/visualstudio/mac/accessibility)に関するページを参照してください。
@@ -44,15 +44,15 @@ Visual Studio は、Windows のユーザー補助機能およびユーティリ�
 
 詳細については、次のトピックを参照してください。
 
--   [方法: IDE アクセシビリティ オプションを設定する](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [方法: IDE アクセシビリティ オプションを設定する](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [方法: キーボード主体で操作する](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [方法: キーボード主体で操作する](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
--   [既定のキーボード ショートカット](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+- [既定のキーボード ショートカット](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [アクセシビリティのヒントとテクニック](../../ide/reference/accessibility-tips-and-tricks.md)
+- [アクセシビリティのヒントとテクニック](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [方法: フォントと色を変更する](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [方法: フォントと色を変更する](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>関連項目
 

@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: ボリューム ライセンス サービス センター管理の移行に関する FAQ
 searchscope: VS Subscription
 ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427976"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio サブスクリプション管理の移行
 
@@ -44,7 +44,7 @@ ms.locfileid: "58897661"
 ### <a name="what-is-the-onboarding-process"></a>オンボーディング プロセスとは何ですか?
 オンボード プロセスを完了するように招待する電子メールが主要連絡先と通知連絡先に送信されます。
 プロセスの手順については、以下を参照してください。
-1. **PCN の検索とサインイン:**
+1. **PCN を検索してサインインする:**
 
     a.  電子メールでは、主要ご担当者様および連絡先ご担当者様に、専用のリンク、パブリック カスタマー番号 (PCN) の最後の 3 桁が提供されます。*
 
@@ -54,7 +54,7 @@ ms.locfileid: "58897661"
 
     d. 次に、PCN を入力するように求められます。
 
-2. **管理者の設定:**
+2. **管理者を設定します。**
 
     PCN を入力すると、スーパー管理者と管理者 (旧称はサブスクリプション管理者) を追加できるページが表示されます。 サブスクリプションの管理が中断しないように、この手順を組織の移行日よりも前に完了しておくことが理想的です。
 

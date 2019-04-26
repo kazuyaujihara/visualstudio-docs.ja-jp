@@ -8,24 +8,24 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c93ddfc85e318a2095f757c6131b151a5414c884
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ececa58d04ea7cfebe6178faae724038e353f06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821626"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>チュートリアル 2: 制限時間ありの計算クイズの作成
 
 このチュートリアルでは、クイズの受け手が制限時間内にランダムに表示される 4 つの計算問題に答えるクイズを作成します。 以下の方法について説明します。
 
--   <xref:System.Random> クラスを使用して乱数を生成します。
+- <xref:System.Random> クラスを使用して乱数を生成します。
 
--   <xref:System.Windows.Forms.Timer> コントロールを使用して特定の時点で発生するようにイベントをトリガーします。
+- <xref:System.Windows.Forms.Timer> コントロールを使用して特定の時点で発生するようにイベントをトリガーします。
 
--   `if else` ステートメントを使用してプログラム フローを制御します。
+- `if else` ステートメントを使用してプログラム フローを制御します。
 
--   コードで基本的な算術演算を実行します。
+- コードで基本的な算術演算を実行します。
 
 完了すると、クイズは数値が異なることを除いて次の図のようになります。
 

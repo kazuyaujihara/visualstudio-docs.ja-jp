@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bed026b76ae99509dd2abb77b11b46c14b1d3aae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d7f9edfb6b0c10a37aade6a9d37a5689e587890d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438114"
 ---
 # <a name="command-window"></a>コマンド ウィンドウ
 **[コマンド]** ウィンドウは、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] の統合開発環境 (IDE) でコマンドやエイリアスを実行するときに使用します。 メニュー コマンドと、メニューに表示されないコマンドの両方を実行できます。 **[コマンド]** ウィンドウを表示するには、**[表示]** メニューの **[その他のウィンドウ]** を選択し、**[コマンド ウィンドウ]** をクリックします。
@@ -61,7 +61,6 @@ ms.locfileid: "55928752"
 > [!TIP]
 > 以前に入力したコマンドの全体または一部を入力行にコピーするには、そのコマンドまでスクロールし、その全体または一部を強調表示してから Enter キーを押します。
 
-
 ## <a name="mark-mode"></a>マーク モード
  **[コマンド]** ウィンドウで、既に出力されている任意の行をクリックすると、自動的にマーク モードに切り替わります。 これにより、テキスト エディターでの操作と同じように、既に入力されたコマンドのテキストを選択、編集、およびコピーし、現在の行に貼り付けることができます。
 
@@ -81,16 +80,16 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 
  この例の用語の意味は次のとおりです。
 
--   `Edit.ReplaceInFiles` はコマンドです。
+- `Edit.ReplaceInFiles` はコマンドです。
 
--   `/case` と `/pattern:regex` はスイッチです (前にスラッシュ (/) を付けます)。
+- `/case` と `/pattern:regex` はスイッチです (前にスラッシュ (/) を付けます)。
 
--   `regex` は `/pattern` スイッチの値です。`/case` スイッチには値がありません。
+- `regex` は `/pattern` スイッチの値です。`/case` スイッチには値がありません。
 
--   `var[1-3]+` と `oldpar` はパラメーターです。
+- `var[1-3]+` と `oldpar` はパラメーターです。
 
     > [!NOTE]
-    >  コマンド、パラメーター、スイッチ、または値にスペースが含まれる場合は、二重引用符 (") で囲む必要があります。
+    > コマンド、パラメーター、スイッチ、または値にスペースが含まれる場合は、二重引用符 (") で囲む必要があります。
 
 スイッチとパラメーターの位置は、コマンド ライン上で自由に入れ替えることができます。例外として、[Shell](../../ide/reference/shell-command.md) コマンドの場合は、スイッチとパラメーターを特定の順序に指定する必要があります。
 
