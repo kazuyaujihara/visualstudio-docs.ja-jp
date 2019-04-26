@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15c57de4a8f51283692b21bcaa148c86bb4deb2d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f9f42fd4b43ec9aaced9d47d0c5670e6f0b0d711
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435172"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>方法: 1 つのクラスを複数の部分クラスに分割する (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54775793"
  次の例では、クラス `Employee` の定義が 2 つの宣言に分割され、それぞれが別のプロシージャを定義します。 この例にある 2 つの部分定義は、1 つのソース ファイル内にあっても、2 つの異なるソース ファイル内にあってもかまいません。  
   
 > [!NOTE]
->  Visual Basic では、部分クラス定義を使用し、Visual Studio によって生成されたコードとユーザーが作成したコードを分離します。 コードは別個のソース ファイルに分割されます。 たとえば、**Windows フォーム デザイナー**では、`Form` などのコントロールに部分クラスを定義します。 これらのコントロールでは、生成されたコードを変更しないでください。  
+> Visual Basic では、部分クラス定義を使用し、Visual Studio によって生成されたコードとユーザーが作成したコードを分離します。 コードは別個のソース ファイルに分割されます。 たとえば、**Windows フォーム デザイナー**では、`Form` などのコントロールに部分クラスを定義します。 これらのコントロールでは、生成されたコードを変更しないでください。  
   
  Visual Basic の部分型に関する詳細については、「[Partial](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)」 (部分型) を参照してください。  
   

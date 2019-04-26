@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04922b703fd2c1158a98fc4574ad217cccd5016e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2c0a6f7c2203e7b3a37f974d916010dbe70b31f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824218"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>方法:エディター内のテキストの大文字と小文字を変更する
 
@@ -27,11 +27,11 @@ ms.locfileid: "55907452"
 
 ## <a name="to-switch-text-to-upper-case"></a>テキストを大文字に切り替えるには
 
-1.  変換するテキストを選択します。
+1. 変換するテキストを選択します。
 
-2.  **[編集]** メニューの **[詳細設定]** を選択します。
+2. **[編集]** メニューの **[詳細設定]** を選択します。
 
-3.  テキストをすべて大文字に変換するには、**[大文字に変換]** を選択するか、**Ctrl**+**Shift**+**U** キーを押します。
+3. テキストをすべて大文字に変換するには、**[大文字に変換]** を選択するか、**Ctrl**+**Shift**+**U** キーを押します。
 
     または
 

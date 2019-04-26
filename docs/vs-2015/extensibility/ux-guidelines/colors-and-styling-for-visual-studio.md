@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 10d0ada1ba86f57b9b40a40b6ffc560379d411dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670096"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095816"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio の色とスタイル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "59670096"
 
  **ツール > オプション ダイアログ ボックス**
 
-##  <a name="BKMK_TheVSColorService"></a> VSColor Service
+## <a name="BKMK_TheVSColorService"></a> VSColor Service
  Visual Studio では、VSColor service またはシェル カラー サービスとも呼ばれる環境の色サービスを提供します。 このサービスでは、各テーマの色を含む名前と値の色に、UI 要素の色の値をバインドできます。 すべての UI 要素の色は自動的に現在のユーザーが選択したテーマを反映するように変更し、UI は、環境の色のサービスにバインドされているようにと統合される新しいテーマ将来のバージョンの Visual Studio ように、VSColor サービスを使用する必要があります。
 
 ### <a name="how-the-service-works"></a>サービスのしくみ
@@ -256,18 +256,18 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> ハイ コントラストの色を選択します。
+## <a name="BKMK_ChoosingHighContrastColors"></a> ハイ コントラストの色を選択します。
 
 ### <a name="overview"></a>概要
  Windows では、画面上のより明確に表示される要素を行うテキスト、背景、およびイメージの色のコントラストを向上させるいくつかのハイ コントラストのシステム レベル テーマを使用します。 ユーザー補助上の理由から、ユーザーは、ハイ コントラストのテーマに切り替えるときに、Visual Studio のインターフェイスの要素が正しく応答することが重要です。
 
  ごく少数のシステム カラーは、ハイ コントラスト テーマで使用できます。 色の名前をシステムを選択する場合は、次のヒントに注意してください。
 
-1.  **色のシステム カラーを同じ意味を持つ選択**色分けは要素として。 たとえば、ウィンドウ内のテキストのハイ コントラストの配色を選択する場合は、WindowText と ControlText いないを使用します。
+1. **色のシステム カラーを同じ意味を持つ選択**色分けは要素として。 たとえば、ウィンドウ内のテキストのハイ コントラストの配色を選択する場合は、WindowText と ControlText いないを使用します。
 
-2.  **前景と背景のペアを選択**一緒またはすべてのハイ コントラスト テーマで、色の選択が動作することを確信はできません。
+2. **前景と背景のペアを選択**一緒またはすべてのハイ コントラスト テーマで、色の選択が動作することを確信はできません。
 
-3.  **UI のどの部分が最も重要な判断し、コンテンツ領域の目立つことを確認します。** カラー バリアントをさまざまなコンテンツ領域がないため、強力な境界線の色の使用は、コンテンツ領域を定義する一般的な色の色合いにわずかな違いを区別は通常、詳細の多くは失われます。
+3. **UI のどの部分が最も重要な判断し、コンテンツ領域の目立つことを確認します。** カラー バリアントをさまざまなコンテンツ領域がないため、強力な境界線の色の使用は、コンテンツ領域を定義する一般的な色の色合いにわずかな違いを区別は通常、詳細の多くは失われます。
 
 ### <a name="system-color-set"></a>システム カラー セット
  ある表[WPF チーム ブログ。SystemColors 参照](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx)のシステム色の名前、および対応する色合いがテーマごとに表示される完全なセットを示します。
@@ -323,7 +323,7 @@ protected override void Dispose(bool disposing)
 |WindowFrame|-IDE の枠線|
 |WindowText|自動的に隠す タブの前景色<br />-選択したツール ウィンドウ タブの前景色<br />-フォーカスされていないドキュメント ウィンドウ タブ、フォーカスされていない、または未選択の一時的なタブの前景色<br />-既定の前景を表示し、マウス ポインターをツリー未選択のグリフの上<br />-ツール ウィンドウの選択されているタブ境界線<br />の Scrollbar つまみの背景、境界線、およびグリフ|
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> エンドユーザーの色を公開します。
+## <a name="BKMK_ExposingColorsForEndUsers"></a> エンドユーザーの色を公開します。
 
 ### <a name="overview"></a>概要
  場合がありますをコード エディターまたはデザイン画面を作成する場合など、UI をカスタマイズするには、エンドユーザーを許可するされます。 これを行う最も一般的な方法を使用して、**ツール > オプション**ダイアログ。 UI の特殊なコントロールを必要とする高度な専門、しない限り、カスタマイズを提示する最も簡単な方法は、**フォントおよび色**内でページ、**環境**ダイアログ ボックスのセクション。 カスタマイズして公開する各要素の前景色、背景色、またはその両方を変更するユーザーを選択できます。
@@ -335,13 +335,13 @@ protected override void Dispose(bool disposing)
 
  カスタム カテゴリを実装または項目を表示、VSPackage では次の必要があります。
 
--   **作成するか、レジストリ内のカテゴリを特定します。** IDE の実装、**フォントおよび色**プロパティ ページでは、この情報を使用して、特定のカテゴリをサポートしているサービスのクエリを正常にします。
+- **作成するか、レジストリ内のカテゴリを特定します。** IDE の実装、**フォントおよび色**プロパティ ページでは、この情報を使用して、特定のカテゴリをサポートしているサービスのクエリを正常にします。
 
--   **作成または (省略可能) のレジストリ内のグループを識別します。** 2 つ以上のカテゴリの和集合を表すグループを定義すると便利な場合があります。 グループが定義されている場合、IDE によって自動的にサブカテゴリをマージし、配布グループ内のアイテムの表示。
+- **作成または (省略可能) のレジストリ内のグループを識別します。** 2 つ以上のカテゴリの和集合を表すグループを定義すると便利な場合があります。 グループが定義されている場合、IDE によって自動的にサブカテゴリをマージし、配布グループ内のアイテムの表示。
 
--   **IDE のサポートを実装します。**
+- **IDE のサポートを実装します。**
 
--   **フォントと色の変更を処理します。**
+- **フォントと色の変更を処理します。**
 
 #### <a name="to-create-or-identify-categories"></a>作成またはカテゴリを識別するには
  [カテゴリのレジストリ エントリの特殊な型の構築 [hklm \software\microsoft \Visual Studio\\< Visual Studio バージョン\>\FontAndColors\\< カテゴリ\>]。 \<カテゴリ > はローカライズされていないカテゴリの名前です。
@@ -426,11 +426,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
 
  **注:**
 
--   "NameID"パッケージにローカライズされたカテゴリ名のリソース ID を =
+- "NameID"パッケージにローカライズされたカテゴリ名のリソース ID を =
 
--   "ToolWindowPackage"パッケージの GUID を =
+- "ToolWindowPackage"パッケージの GUID を =
 
--   "Category"="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}"は一例ですので、実際の値は、実装側によって提供される新しい GUID を指定できます。
+- "Category"="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}"は一例ですので、実際の値は、実装側によって提供される新しい GUID を指定できます。
 
 ### <a name="set-the-font-and-color-property-category-guid"></a>フォントおよび色プロパティ カテゴリ GUID を設定します。
  次のコード例では、カテゴリの Guid の設定を示します。
