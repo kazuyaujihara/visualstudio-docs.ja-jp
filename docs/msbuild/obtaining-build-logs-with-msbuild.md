@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 385871a47b2a4d73a1f7afacf9d39a02d7c782ca
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963768"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>MSBuild でのビルド ログの取得
 
@@ -107,5 +107,5 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
 - [ビルド ロガー](../msbuild/build-loggers.md)
 - [マルチプロセッサ環境でのログ](../msbuild/logging-in-a-multi-processor-environment.md)
-- [転送ロガーの作成](../msbuild/creating-forwarding-loggers.md)
+- [転送 logger の作成](../msbuild/creating-forwarding-loggers.md)
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)

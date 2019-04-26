@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e6369aab354e3362c3ac3f1d9320203f930497c7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961105"
 ---
 # <a name="set-bookmarks-in-code"></a>コードへのブックマークの設定
 
@@ -23,7 +23,7 @@ ms.locfileid: "55941921"
 
 ![ブックマークのツール バー](media/bookmark-toolbar.png)
 
-![ブックマーク ウィンドウ](media/bookmark-window.png)
+![[ブックマーク] ウィンドウ](media/bookmark-window.png)
 
 ## <a name="manage-bookmarks"></a>ブックマークの管理
 

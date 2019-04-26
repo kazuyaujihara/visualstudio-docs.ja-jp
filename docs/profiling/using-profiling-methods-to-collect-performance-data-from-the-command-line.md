@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59e05932b9e2e20f06a02614f8153b665b8fd51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831444"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>各種のプロファイル方法を使用したコマンド ラインからのパフォーマンス データの収集
 使用する [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのコマンド ライン ツールおよびオプションは、プロファイル対象のアプリケーションの種類、使用するプロファイル方法、ターゲット アプリケーションが、ネイティブ コードと [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] コードのどちらで記述されているかなどの要因によって決まります。
@@ -37,17 +37,17 @@ ms.locfileid: "56624491"
 
  **ターゲット アプリケーションの種類**
 
--   [スタンドアロンの .NET Framework コンポーネント](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
+- [スタンドアロンの .NET Framework コンポーネント](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
 
--   [スタンドアロンのネイティブ コンポーネント](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
+- [スタンドアロンのネイティブ コンポーネント](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
 
--   [静的にコンパイルされた ASP.NET Web アプリケーション](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
+- [静的にコンパイルされた ASP.NET Web アプリケーション](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
 
--   [動的にコンパイルされた ASP.NET Web アプリケーション](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [動的にコンパイルされた ASP.NET Web アプリケーション](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
 
--   [.NET サービス](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [.NET サービス](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
--   [ネイティブ サービス](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [ネイティブ サービス](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>.NET メモリ メソッドを使用してメモリの割り当てとオブジェクトの有効期間のデータを収集する
  プロファイリング ツールの .NET メモリ メソッドを使用すると、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] メモリの割り当てデータおよび [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] のオブジェクトの有効期間に関する情報を収集できます。

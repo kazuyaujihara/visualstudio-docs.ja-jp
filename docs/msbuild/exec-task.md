@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef9759c5a422a0b67cdb9e8f7dde565b732958dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973657"
 ---
 # <a name="exec-task"></a>Exec タスク
 指定された引数を使って、指定されたプログラムまたはコマンドを実行します。

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d61814c9d47ea5c8b42e8a0b2f72a3797b6ec291
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: c67dfa80ec7b194f7014f77de1cdd589bf7130e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446344"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>チュートリアル: Visual Studio で Node.js と React のアプリを作成する
 
@@ -376,8 +376,10 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
     デバッグが有効な状態で Chrome が起動します。
 
     ::: moniker range=">=vs-2019"
+
     > [!NOTE]
     > ブラウザーの起動時に `--remote-debugging-port` フラグを設定することもできます。**[デバッグ]** ツールバーから **[ブラウザーの選択...]** を選択し、**[追加]** を選択した後、**[引数]** フィールドにフラグを設定します。 ブラウザーで **Chrome でのデバッグ**などの別のフレンドリ名を使用します。 詳細については、[リリース ノート](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support)を参照してください。
+
     ::: moniker-end
 
 3. Visual Studio に切り替え、次の図に示すように、*app-bundle.js* のコードの `render()` 関数にブレークポイントを設定します。

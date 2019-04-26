@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10db157aa5c75f1fde083ac12cd19fd1b02e91ec
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cc1ee144b10360b899fa04c3cd0782e4b4fdfcfe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970823"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference タスク
 指定したアセンブリに依存するすべてのアセンブリを判断します。これには、2 番目と `n` 番目の依存関係も含まれます。
@@ -81,25 +81,25 @@ ms.locfileid: "56636386"
 ## <a name="warnings"></a>警告
  次の警告がログに記録されます。
 
--   `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
+- `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
 
--   `ResolveAssemblyReference.SuggestedRedirects`
+- `ResolveAssemblyReference.SuggestedRedirects`
 
--   `ResolveAssemblyReference.FoundConflicts`
+- `ResolveAssemblyReference.FoundConflicts`
 
--   `ResolveAssemblyReference.AssemblyFoldersExSearchLocations`
+- `ResolveAssemblyReference.AssemblyFoldersExSearchLocations`
 
--   `ResolveAssemblyReference.UnifiedPrimaryReference`
+- `ResolveAssemblyReference.UnifiedPrimaryReference`
 
--   `ResolveAssemblyReference.PrimaryReference`
+- `ResolveAssemblyReference.PrimaryReference`
 
--   `ResolveAssemblyReference.UnifiedDependency`
+- `ResolveAssemblyReference.UnifiedDependency`
 
--   `ResolveAssemblyReference.UnificationByAutoUnify`
+- `ResolveAssemblyReference.UnificationByAutoUnify`
 
--   `ResolveAssemblyReference.UnificationByAppConfig`
+- `ResolveAssemblyReference.UnificationByAppConfig`
 
--   `ResolveAssemblyReference.UnificationByFrameworkRetarget`
+- `ResolveAssemblyReference.UnificationByFrameworkRetarget`
 
 ## <a name="remarks"></a>解説
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。

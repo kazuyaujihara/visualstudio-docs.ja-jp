@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: fcf28d844124b7a2ae8a0b380739433261c5a3ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816193"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio におけるクロス プラットフォーム モバイル開発
 
@@ -40,7 +40,7 @@ Visual Studio Tools for Xamarin を利用すれば、コードや UI を共有�
 |[Visual Studio でのユニバーサル Windows アプリについて学習する](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Swift と C# との間の類似点について学習する](https://aka.ms/scposter) (download.microsoft.com)|
 
-###  <a name="AndroidHTML"></a> 1 つのコード ベースから Android、iOS、Windows を対象にする
+### <a name="AndroidHTML"></a> 1 つのコード ベースから Android、iOS、Windows を対象にする
 
  C# または F# を使用することで (Visual Basic は現時点ではサポートされていません)、Android、iOS、Windows のネイティブ アプリを開発できます。  始めるには、Visual Studio 2017 をインストールし、インストーラーで **[.NET によるモバイル開発]** オプションを選びます。
 
@@ -56,7 +56,7 @@ Visual Studio Tools for Xamarin を利用すれば、コードや UI を共有�
 
  アプリのデザインの複雑さによっては、プロジェクト テンプレートの [ *Mobile Apps* ] グループにある **[Xamarin.Forms]** テンプレートを使用して作成することを検討します。 Xamarin.Forms は、Android、iOS、Windows 間で共有できる単一のユーザー インターフェイスを作成する UI ツールキットです。  Xamarin.Forms ソリューションをコンパイルすると、Android アプリ、iOS アプリ、Windows アプリが生成されます。 詳しくは、「[Xamarin によるモバイル開発の概要](/xamarin/cross-platform/get-started/introduction-to-mobile-development/)」および [Xamarin.Forms のドキュメント](/xamarin/xamarin-forms/)に関するページをご覧ください。
 
-####  <a name="ShareHTML"></a> Android、iOS、および Windows アプリ間でコードを共有する
+#### <a name="ShareHTML"></a> Android、iOS、および Windows アプリ間でコードを共有する
 
  Xamarin.Forms を使用せず、プラットフォームごとに個別にデザインすることにした場合は、UI 以外のコードの大部分をプラットフォームのプロジェクト (Android、iOS、および Windows) 間で共有できます。 これには、ビジネス ロジック、クラウド統合、データベース アクセス、または .NET Framework を対象とするその他のコードが含まれます。 特定のプラットフォームを対象とするコードのみ、共有することができません。
 
@@ -69,7 +69,7 @@ Visual Studio Tools for Xamarin を利用すれば、コードや UI を共有�
 |[コード共有のオプション](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
 |[.NET でのコード共有オプション](/dotnet/standard/cross-platform/) |
 
-###  <a name="WindowsHTML"></a> Windows 10 デバイスを対象にする
+### <a name="WindowsHTML"></a> Windows 10 デバイスを対象にする
 
  ![Windows デバイス](../cross-platform/media/windowsdevices.png "Windows デバイス")
 
@@ -84,7 +84,7 @@ Visual Studio Tools for Xamarin を利用すれば、コードや UI を共有�
 |[ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[アプリを Universal Windows Platform (UWP) へ移行する](https://msdn.microsoft.com/library/mt148501.aspx)|
 
-##  <a name="HTML"></a> Android、iOS、および Windows 用のアプリをビルドする (HTML/JavaScript)
+## <a name="HTML"></a> Android、iOS、および Windows 用のアプリをビルドする (HTML/JavaScript)
 
  ![Windows、iOS、Android デバイス](../cross-platform/media/homedevices.png "Windows、iOS、Android デバイス")
 

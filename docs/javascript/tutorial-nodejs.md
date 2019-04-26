@@ -11,16 +11,28 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc255e41e8e73739f83e69ab120f397cc46f49c
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 62f919551a13060bfd2b2d12726164902004d1bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995055"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>チュートリアル: Visual Studio で Node.js と Express のアプリを作成する
 
-このチュートリアルでは、Node.js と Express を使用して Visual Studio を開発します。単純な Node.js Web アプリを作成し、いくつかのコードを追加し、IDE の一部の機能を試し、アプリを実行します。 まだ Visual Studio をインストールしていない場合は、[ここ](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)から無料でインストールできます。
+このチュートリアルでは、Node.js と Express を使用して Visual Studio を開発します。単純な Node.js Web アプリを作成し、いくつかのコードを追加し、IDE の一部の機能を試し、アプリを実行します。 
+
+::: moniker range="vs-2017"
+
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ページに移動し、無料試用版をインストールしてください。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
+
+::: moniker-end
 
 このチュートリアルでは、次の作業を行う方法について説明します。
 > [!div class="checklist"]
@@ -186,7 +198,7 @@ IntelliSense は、コードの記述を支援する Visual Studio ツールで�
 
 1. コードを修正します。`"data"` の前にコンマ (`,`) を追加してください。
 
-    修正後、コード行は次のようになります。 `res.render('index', { title: 'Express', "data": getData() });`
+    修正後、コード行は `res.render('index', { title: 'Express', "data": getData() });` のようになります。
 
 ## <a name="set-a-breakpoint"></a>ブレークポイントの設定
 

@@ -14,19 +14,19 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0257b29d327610b6b301d3c368e727a0912ab691
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a2a65534cda2571c36bb0c2caa16bf2f3394a804
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435055"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>チュートリアル: Visual Studio で XAML と C# を使用して最初のユニバーサル Windows プラットフォーム アプリを作成する
 
 ここでは、Visual Studio 統合開発環境 (IDE) の概要を示し、任意の Windows 10 デバイスで実行できる "Hello World" アプリケーションを作成します。 これの実行には、ユニバーサル Windows プラットフォーム (UWP) のプロジェクト テンプレート、Extensible Application Markup Language (XAML) および C# のプログラミング言語を使用します。
 
 ::: moniker range="vs-2017"
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ページに移動し、無料試用版をインストールしてください。
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ページに移動し、無料試用版をインストールしてください。
 ::: moniker-end
 ::: moniker range="vs-2019"
 Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
@@ -70,7 +70,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    > [!NOTE]
    > UWP アプリを作成するために Visual Studio を初めて使用する場合、**[設定]** ダイアログ ボックスが表示されます。 **[開発者モード]**、**[はい]** の順に選択します。<br><br>
-   ![UWP 設定ダイアログ ボックスで開発者モードを有効にする](media/enable-developer-mode.png)<br><br>Visual Studio では、開発者モード パッケージが追加でインストールされます。 パッケージのインストールが完了したら、**[設定]** ダイアログ ボックスを閉じます。
+   > ![UWP 設定ダイアログ ボックスで開発者モードを有効にする](media/enable-developer-mode.png)<br><br>Visual Studio では、開発者モード パッケージが追加でインストールされます。 パッケージのインストールが完了したら、**[設定]** ダイアログ ボックスを閉じます。
 
 ## <a name="create-the-application"></a>アプリケーションを作成する
 

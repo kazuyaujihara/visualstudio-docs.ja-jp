@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e16261020a737651fc79c3fb3eb1da6a539cee34
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777260"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP アプリでのエネルギー使用の分析
 
@@ -88,18 +88,18 @@ if (performance && performance.mark) {
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>アプリのエネルギー プロファイル データの収集
 
-1.  **[デバッグ]** メニューの **[デバッグなしで診断を開始]** をクリックします。
+1. **[デバッグ]** メニューの **[デバッグなしで診断を開始]** をクリックします。
 
      ![[診断ハブ] でエネルギー消費を選択](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
-2.  **[エネルギー消費]** チェック ボックスをオンにし、 **[開始]** をクリックします。
+2. **[エネルギー消費]** チェック ボックスをオンにし、 **[開始]** をクリックします。
 
     > [!NOTE]
     > **エネルギー消費**プロファイラーを開始すると、*VsEtwCollector.exe* を実行するアクセス許可を要求する **[ユーザー アカウント制御]** ウィンドウが表示される場合があります。 **[はい]** をクリックします。
 
-3.  アプリケーションを実行して、データを収集します。
+3. アプリケーションを実行して、データを収集します。
 
-4.  プロファイリングを停止するには、Visual Studio に戻り (Alt + Tab)、診断ハブのページの **[コレクションの停止]** をクリックします。
+4. プロファイリングを停止するには、Visual Studio に戻り (Alt + Tab)、診断ハブのページの **[コレクションの停止]** をクリックします。
 
      ![データ収集の停止](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 
