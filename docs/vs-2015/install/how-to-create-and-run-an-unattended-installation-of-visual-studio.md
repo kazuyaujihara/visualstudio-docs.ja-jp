@@ -12,12 +12,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: deabd34896b327f7cbbb35c7af75f5810dcfbf17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433048"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>方法: Visual Studio の無人インストールを作成して実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60040547"
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のインストール アプリケーションのネットワーク パスは、\\\\*ServerName*\IDEinstall\\*Product*.exe のようになります。
 
     > [!NOTE]
-    >  パスとファイル名の組み合わせが 260 文字を超えると、インストールに失敗する場合があります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のパスの最大長は 221 文字です。  ローカル パス名は 70 文字、ネットワーク パス名は 39 文字を超えないようにしてください。
+    > パスとファイル名の組み合わせが 260 文字を超えると、インストールに失敗する場合があります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のパスの最大長は 221 文字です。  ローカル パス名は 70 文字、ネットワーク パス名は 39 文字を超えないようにしてください。
 
      また、空白文字を含むフォルダー名をパスに指定した場合も、インストールに失敗する可能性があります (例: "\\\\*ServerName*\IDE install"、\\\\*ServerName*\Visual Studio\\)。
 
@@ -46,16 +46,16 @@ ms.locfileid: "60040547"
  無人モードで [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を配置するには、AdminDeployment.xml ファイルを変更する必要があります。 これを行うには、`/CreateAdminFile` "*\<ファイルの場所>*" コマンド ライン パラメーターを使用して、最初に AdminDeployment.xml ファイルを作成する必要があります。 次に、このファイルを *Drive*:\IDEinstall\packages ディレクトリに配置した場合は、そのファイルを使用して、Visual Studio 配置をネットワークにプッシュするか、インストール環境にプルすることができます。 AdminDeployment.xml ファイルは、オペレーティング システム、アーキテクチャ、Visual Studio のエディション、またはオペレーティング システムの言語に固有のものではありません。
 
 > [!CAUTION]
->  場合によっては、AdminDeployment.xml ファイルで選択済みとして表示されている項目はインストールされません。 この問題を解決するには、"Selected="yes"" とマークされている項目を AdminDeployment.xml ファイルの **最後** に配置します。
+> 場合によっては、AdminDeployment.xml ファイルで選択済みとして表示されている項目はインストールされません。 この問題を解決するには、"Selected="yes"" とマークされている項目を AdminDeployment.xml ファイルの **最後** に配置します。
 >
->  項目のオプションの依存関係をインストールしない場合は、以下のスクリーン ショットに示されているように、最初に親を選択し、次に親の後ろのオプションの依存関係を選択解除します。
+> 項目のオプションの依存関係をインストールしない場合は、以下のスクリーン ショットに示されているように、最初に親を選択し、次に親の後ろのオプションの依存関係を選択解除します。
 >
->  ![AdminDeployment.xml ファイルの末尾にあるインストール項目](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
+> ![AdminDeployment.xml ファイルの末尾にあるインストール項目](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
 >
->  これを実行する別の方法は、親のオプションの子を単に省略する方法です。つまり、"Selected="no"" の項目を一切含めません。ただし、やはり、"Selected="yes"" の項目はすべて AdminDeployment.xml ファイルの最後に配置する必要があります。
+> これを実行する別の方法は、親のオプションの子を単に省略する方法です。つまり、"Selected="no"" の項目を一切含めません。ただし、やはり、"Selected="yes"" の項目はすべて AdminDeployment.xml ファイルの最後に配置する必要があります。
 
 > [!IMPORTANT]
->  インストール中に、コンピューターが自動的に 1 回以上再起動する場合があります。 再起動した後は、コンピューターが再起動する前にインストールを行うためにログインしていたのと同じユーザー アカウントを使用して再度ログインする必要があります。 無人インストールを実行する前に必須コンポーネントをインストールしておくと、自動再起動を回避できます。 詳細については、 [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md)の「セットアップ中の再起動の回避」セクションを参照してください。
+> インストール中に、コンピューターが自動的に 1 回以上再起動する場合があります。 再起動した後は、コンピューターが再起動する前にインストールを行うためにログインしていたのと同じユーザー アカウントを使用して再度ログインする必要があります。 無人インストールを実行する前に必須コンポーネントをインストールしておくと、自動再起動を回避できます。 詳細については、 [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md)の「セットアップ中の再起動の回避」セクションを参照してください。
 
  AdminDeployment ファイル スキーマには、次の要素が含まれています。
 
@@ -71,7 +71,7 @@ ms.locfileid: "60040547"
 |BundleCustomizations|NoCacheOnlyMode|はい&#124;既定|パッケージ キャッシュの事前設定を防ぎます。|
 
 > [!WARNING]
->  インストール アプリケーションでは、選択可能な項目が非表示になっている場合でも、その Selected の状態が反映されます。 たとえば、ある選択可能な項目を常にインストールする場合は、その項目を非表示で選択済みとしてマークできます。
+> インストール アプリケーションでは、選択可能な項目が非表示になっている場合でも、その Selected の状態が反映されます。 たとえば、ある選択可能な項目を常にインストールする場合は、その項目を非表示で選択済みとしてマークできます。
 
 #### <a name="to-create-an-unattended-installation-of-visual-studio"></a>Visual Studio の無人インストールを作成するには
 
@@ -100,7 +100,7 @@ ms.locfileid: "60040547"
  **コントロール パネル** を開き、インストール アプリケーションを再実行すると、Visual Studio の機能の変更、プログラミング言語のアンインストール、および Visual Studio の修復またはアンインストールを実行できます。
 
 > [!NOTE]
->  メンテナンス モードを使用するには、ローカル コンピューターの管理者の資格情報を持っている必要があります。
+> メンテナンス モードを使用するには、ローカル コンピューターの管理者の資格情報を持っている必要があります。
 
 #### <a name="to-maintain-an-installation-on-a-client-computer"></a>クライアント コンピューターでインストールの保守を行うには
 
