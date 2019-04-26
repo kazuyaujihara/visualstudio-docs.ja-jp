@@ -11,21 +11,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 500a36a34dd3c371ec72ed379c1de5f5821818be
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 151e714a00a3030c2ed502a739c54c28e5ae75d3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006750"
 ---
 # <a name="override-toolsversion-settings"></a>ToolsVersion 設定のオーバーライド
 プロジェクトおよびソリューションのツールセットは、次の 3 つの方法のいずれかで変更できます。
 
-1.  コマンド ラインからプロジェクトまたはソリューションをビルドする場合は、`-ToolsVersion` スイッチ (省略形は `-tv`) を使用します。
+1. コマンド ラインからプロジェクトまたはソリューションをビルドする場合は、`-ToolsVersion` スイッチ (省略形は `-tv`) を使用します。
 
-2.  MSBuild タスクに `ToolsVersion` パラメーターを設定します。
+2. MSBuild タスクに `ToolsVersion` パラメーターを設定します。
 
-3.  ソリューション内のプロジェクトに `$(ProjectToolsVersion)` プロパティを設定します。 これにより、他のプロジェクトとは異なるツールセットのバージョンを使用して、ソリューション内にプロジェクトをビルドできます。
+3. ソリューション内のプロジェクトに `$(ProjectToolsVersion)` プロパティを設定します。 これにより、他のプロジェクトとは異なるツールセットのバージョンを使用して、ソリューション内にプロジェクトをビルドできます。
 
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>コマンド ラインでのビルドでプロジェクトおよびソリューションの ToolsVersion 設定をオーバーライドする
  Visual Studio プロジェクトは通常、プロジェクト ファイルに指定された ToolsVersion でビルドされますが、コマンド ラインで `-ToolsVersion` (または `-tv`) スイッチを指定することによって、プロジェクト ファイルの ToolsVersion 値をオーバーライドし、すべてのプロジェクトとそのプロジェクト間依存関係を別のツールセットでビルドできます。 次に例を示します。
@@ -41,7 +41,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 ## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>MSBuild タスクの ToolsVersion パラメーターを使用して ToolsVersion 設定をオーバーライドする
  MSBuild タスクは、あるプロジェクトで別のプロジェクトをビルドするための主要な手段です。 MSBuild タスクには、プロジェクトに指定された値とは異なる ToolsVersion でプロジェクトをビルドすることが可能となる省略可能なタスク パラメーター `ToolsVersion` が用意されています。 このパラメーターを使用する方法を次の例に示します。
 
-1.  次のコードを含む *projectA.proj* という名前のファイルを作成します。
+1. 次のコードを含む *projectA.proj* という名前のファイルを作成します。
 
     ```xml
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
@@ -59,7 +59,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
     </Project>
     ```
 
-2.  次のコードを含む *projectB.proj* という名前の別のファイルを作成します。
+2. 次のコードを含む *projectB.proj* という名前の別のファイルを作成します。
 
     ```xml
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
@@ -73,13 +73,13 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
     </Project>
     ```
 
-3.  コマンド プロンプトに次のコマンドを入力します。
+3. コマンド プロンプトに次のコマンドを入力します。
 
     ```cmd
     msbuild projectA.proj -t:go -toolsversion:3.5
     ```
 
-4.  次のような出力が表示されます。 `projectA` では、コマンド ラインに設定された `-toolsversion:3.5` が、`ToolsVersion=12.0` タグに設定された `Project` をオーバーライドします。
+4. 次のような出力が表示されます。 `projectA` では、コマンド ラインに設定された `-toolsversion:3.5` が、`ToolsVersion=12.0` タグに設定された `Project` をオーバーライドします。
 
      `ProjectB` は `projectA` 内のタスクによって呼び出されます。 そのタスクには `ToolsVersion=2.0` が設定されており、この設定は、`ToolsVersion` の他の `projectB` 設定をオーバーライドします。
 
@@ -97,31 +97,31 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 ## <a name="order-of-precedence"></a>優先順位
  `ToolsVersion` は、次の優先順位に基づいて決定されます (順位の高いものから先に挙げています)。
 
-1.  プロジェクトのビルドに使用される MSBuild タスクの `ToolsVersion` 属性。
+1. プロジェクトのビルドに使用される MSBuild タスクの `ToolsVersion` 属性。
 
-2.  msbuild.exe のコマンドで使用される `-toolsversion` (または `-tv`) スイッチ。
+2. msbuild.exe のコマンドで使用される `-toolsversion` (または `-tv`) スイッチ。
 
-3.  環境変数 `MSBUILDTREATALLTOOLSVERSIONSASCURRENT` が設定されている場合は、現在の `ToolsVersion` を使用します。
+3. 環境変数 `MSBUILDTREATALLTOOLSVERSIONSASCURRENT` が設定されている場合は、現在の `ToolsVersion` を使用します。
 
-4.  環境変数 `MSBUILDTREATHIGHERTOOLSVERSIONASCURRENT` が設定され、プロジェクト ファイルで定義されている `ToolsVersion` が現在の `ToolsVersion` よりも大きい場合は、現在の `ToolsVersion` を使用します。
+4. 環境変数 `MSBUILDTREATHIGHERTOOLSVERSIONASCURRENT` が設定され、プロジェクト ファイルで定義されている `ToolsVersion` が現在の `ToolsVersion` よりも大きい場合は、現在の `ToolsVersion` を使用します。
 
-5.  環境変数 `MSBUILDLEGACYDEFAULTTOOLSVERSION` が設定されているか、または `ToolsVersion` が設定されていない場合は、次の手順が使用されます。
+5. 環境変数 `MSBUILDLEGACYDEFAULTTOOLSVERSION` が設定されているか、または `ToolsVersion` が設定されていない場合は、次の手順が使用されます。
 
-    1.  プロジェクト ファイルにある [Project](../msbuild/project-element-msbuild.md) 要素の `ToolsVersion` 属性。 この属性が存在しない場合は、現在のバージョンであると見なされます。
+    1. プロジェクト ファイルにある [Project](../msbuild/project-element-msbuild.md) 要素の `ToolsVersion` 属性。 この属性が存在しない場合は、現在のバージョンであると見なされます。
 
-    2.  *MSBuild.exe.config* ファイルに定義された既定のツール バージョン。
+    2. *MSBuild.exe.config* ファイルに定義された既定のツール バージョン。
 
-    3.  レジストリに定義された既定のツール バージョン。 詳細については、「[標準ツールセット構成とカスタム ツールセット構成](../msbuild/standard-and-custom-toolset-configurations.md)」を参照してください。
+    3. レジストリに定義された既定のツール バージョン。 詳細については、「[標準ツールセット構成とカスタム ツールセット構成](../msbuild/standard-and-custom-toolset-configurations.md)」を参照してください。
 
-6.  環境変数 `MSBUILDLEGACYDEFAULTTOOLSVERSION` が設定されていない場合は、次の手順が使用されます。
+6. 環境変数 `MSBUILDLEGACYDEFAULTTOOLSVERSION` が設定されていない場合は、次の手順が使用されます。
 
-    1.  環境変数 `MSBUILDDEFAULTTOOLSVERSION` が存在する `ToolsVersion` に設定されている場合は、それを使用します。
+    1. 環境変数 `MSBUILDDEFAULTTOOLSVERSION` が存在する `ToolsVersion` に設定されている場合は、それを使用します。
 
-    2.  `DefaultOverrideToolsVersion` が *MSBuild.exe.config* で設定されている場合は、それを使用します。
+    2. `DefaultOverrideToolsVersion` が *MSBuild.exe.config* で設定されている場合は、それを使用します。
 
-    3.  `DefaultOverrideToolsVersion` がレジストリで設定されている場合は、それを使用します。
+    3. `DefaultOverrideToolsVersion` がレジストリで設定されている場合は、それを使用します。
 
-    4.  それ以外の場合は、現在の `ToolsVersion` を使用します。
+    4. それ以外の場合は、現在の `ToolsVersion` を使用します。
 
 ## <a name="see-also"></a>関連項目
 - [マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)

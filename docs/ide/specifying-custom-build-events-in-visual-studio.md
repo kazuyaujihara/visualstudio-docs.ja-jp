@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66feaa25b9910a48e192e80798e50d80d861fb08
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1acd55ad9ea2d671730a656a673fd1f2ca3aa19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430878"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Visual Studio でのカスタム ビルド イベントの指定
 
@@ -24,11 +24,11 @@ ms.locfileid: "55940608"
 
  使用するプログラミング言語に関する具体的な情報については、次のトピックを参照してください。
 
--   Visual Basic -- [方法: ビルド イベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
+- Visual Basic -- [方法: ビルド イベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
 
--   C# および F# -- [方法: ビルド イベントを指定する (C#)](../ide/how-to-specify-build-events-csharp.md)。
+- C# および F# -- [方法: ビルド イベントを指定する (C#)](../ide/how-to-specify-build-events-csharp.md)。
 
--   Visual C++ -- [ビルド イベントを指定する](/cpp/ide/specifying-build-events)。
+- Visual C++ -- [ビルド イベントを指定する](/cpp/ide/specifying-build-events)。
 
 ## <a name="syntax"></a>構文
 
@@ -53,7 +53,7 @@ ms.locfileid: "55940608"
    例: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
   > [!NOTE]
-  >  上記のコードの `%I` は、バッチ スクリプトでは `%%I` になります。
+  > 上記のコードの `%I` は、バッチ スクリプトでは `%%I` になります。
 
 ## <a name="see-also"></a>関連項目
 

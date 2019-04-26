@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d3e3b1d646b16a50251c97d3268faaa4775d4664
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 172f4a367aa520ebd0fac62d25007713c47e5801
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386272"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>方法: プロファイラーのコマンド ラインを使用して動的にコンパイルされた ASP.NET Web アプリケーションをインストルメント化し、メモリ データを収集する
 このトピックでは、コマンドライン ツールの [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールを利用し、インストルメンテーション プロファイル方法で、動的にコンパイルされた [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションの .NET メモリ割り当てとオブジェクト有効期間に関する詳細データを収集する方法について説明します。
 
 > [!NOTE]
->  プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。
+> プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。
 
  [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションからパフォーマンス データを収集するには、ターゲット アプリケーションの *web.config* ファイルを変更し、動的にコンパイルされたアプリケーション ファイルをインストルメント化する [VSInstr.exe](../profiling/vsinstr.md) ツールを有効にします。 次に [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) ツールを使用し、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションをホストするサーバーを構成し、適切な環境変数を設定して .NET メモリ プロファイリングを有効にし、コンピューターを再起動します。
 
@@ -31,11 +31,11 @@ ms.locfileid: "56638745"
 
 #### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>ASP.NET Web アプリケーションと Web サーバーを構成するには
 
-1.  ターゲット アプリケーションの *web.config* ファイルを変更します。 「[方法:Web.config ファイルを変更して、動的にコンパイルされた ASP.NET Web アプリケーションをインストルメント化およびプロファイルする](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md)」をご覧ください。
+1. ターゲット アプリケーションの *web.config* ファイルを変更します。 「[方法:Web.config ファイルを変更して、動的にコンパイルされた ASP.NET Web アプリケーションをインストルメント化およびプロファイルする](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md)」をご覧ください。
 
-2.  Web アプリケーションをホストするコンピューターでコマンド プロンプト ウィンドウを開きます。
+2. Web アプリケーションをホストするコンピューターでコマンド プロンプト ウィンドウを開きます。
 
-3.  プロファイル環境変数を初期化します。 型:
+3. プロファイル環境変数を初期化します。 型:
 
      **VSPerfClrEnv /globaltracegc**
 
@@ -43,11 +43,11 @@ ms.locfileid: "56638745"
 
      **VSPerfClrEnv /globaltracegclife**
 
-    -   **/globaltracegc** では、メモリの割り当てデータを収集できます。
+    - **/globaltracegc** では、メモリの割り当てデータを収集できます。
 
-    -   **/globaltracegclife** では、メモリの割り当てデータとオブジェクトの有効期間データを収集できます。
+    - **/globaltracegclife** では、メモリの割り当てデータとオブジェクトの有効期間データを収集できます。
 
-4.  コンピューターを再起動します。
+4. コンピューターを再起動します。
 
 ## <a name="run-the-profiling-session"></a>プロファイル セッションの実行
 
@@ -64,7 +64,7 @@ ms.locfileid: "56638745"
      **/start:trace** オプションを使用する場合は、次のうちいずれのオプションでも指定できます。
 
    > [!NOTE]
-   >  **/user** オプションと **/crosssession** オプションは、通常、ASP.NET アプリケーションで必要です。
+   > **/user** オプションと **/crosssession** オプションは、通常、ASP.NET アプリケーションで必要です。
 
    | オプション | 説明 |
    | - | - |
@@ -76,7 +76,6 @@ ms.locfileid: "56638745"
    | [/automark](../profiling/automark.md) **:** `Interval` | **/wincounter** との組み合わせでのみ使用します。 Windows パフォーマンス カウンター コレクション イベントの間隔をミリ秒単位で指定します。 既定値は 500 ミリ秒です。 |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.*etl*) ファイルに収集されます。 |
 
-
 2. 一般的な方法で [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションを起動します。
 
 ## <a name="control-data-collection"></a>データ収集の制御
@@ -84,7 +83,7 @@ ms.locfileid: "56638745"
 
 #### <a name="to-start-and-stop-data-collection"></a>データ収集を開始および停止するには
 
--   次に示すオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
+- 次に示すオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
 
     |オプション|説明|
     |------------|-----------------|
@@ -92,7 +91,7 @@ ms.locfileid: "56638745"
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|プロセス ID (`PID`) で指定されたプロセスのデータ収集を開始 (**/processon**) または停止 (**/processoff**) します。|
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|スレッド ID (`TID`) で指定されたスレッドのデータ収集を開始 (**/threadon**) または停止 (**/threadoff**) します。|
 
--   **VSPerfCmd.exe**[/mark](../profiling/mark.md) オプションを使用して、データ ファイルにプロファイル マークを挿入することもできます。 **/mark** コマンドは、識別子、タイム スタンプ、オプションのユーザー定義文字列を追加します。 マークは、プロファイラー レポートおよびデータ ビューでデータをフィルター処理するために使用できます。
+- **VSPerfCmd.exe**[/mark](../profiling/mark.md) オプションを使用して、データ ファイルにプロファイル マークを挿入することもできます。 **/mark** コマンドは、識別子、タイム スタンプ、オプションのユーザー定義文字列を追加します。 マークは、プロファイラー レポートおよびデータ ビューでデータをフィルター処理するために使用できます。
 
 ## <a name="end-the-profiling-session"></a>プロファイル セッションの終了
  プロファイル セッションを終了するには、ターゲット [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションを閉じ、インターネット インフォメーション サービス (IIS) を停止してプロファイルされたプロセスを停止し、プロファイラーをシャットダウンします。 次に IIS を再起動します。
@@ -118,13 +117,13 @@ ms.locfileid: "56638745"
 
 #### <a name="to-restore-the-application-and-computer-configuration"></a>アプリケーションとコンピューターの構成を復元するには
 
-1.  *web.config* ファイルを元のファイルのコピーで置き換えます。
+1. *web.config* ファイルを元のファイルのコピーで置き換えます。
 
-2.  (省略可能) プロファイル環境変数を削除します。 型:
+2. (省略可能) プロファイル環境変数を削除します。 型:
 
      **VSPerfCmd /globaloff**
 
-3.  コンピューターを再起動します。
+3. コンピューターを再起動します。
 
 ## <a name="see-also"></a>関連項目
 - [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)

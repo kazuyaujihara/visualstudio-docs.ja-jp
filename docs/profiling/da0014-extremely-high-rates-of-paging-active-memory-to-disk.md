@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f6486fc204942553a58e437d56fc7d0ffee548b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 40ebd26b4732399ac53ba1796fcb3c05bf370599
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425478"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014:ディスクへのアクティブなメモリのページングが非常に高率で発生しています
 
@@ -41,7 +41,7 @@ ms.locfileid: "56630393"
  通常、ページのディスクへの読み書きは一括で実行されます。 たとえば、1 秒あたりの出力ページ数は 1 秒あたりの書き込みページ数よりも大幅に大きくなることが一般的です。 これは、1 秒あたりの出力ページ数には、システム ファイルのキャッシュで変更されたデータ ページも含まれるためです。 ただし、どのプロセスがどういった理由で高いページング率の直接的な原因になっているのかを特定するのは、必ずしも容易ではありません。
 
 > [!NOTE]
->  この規則は、アクティブなメモリのページングが非常に高率に達した場合に適用されます。 ページングが高いレベルで発生しているが、非常に高くはない場合、代わりに、情報規則「[DA0017:ディスクへのアクティブなメモリのページングが高率で発生しています](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md)」が発生します。
+> この規則は、アクティブなメモリのページングが非常に高率に達した場合に適用されます。 ページングが高いレベルで発生しているが、非常に高くはない場合、代わりに、情報規則「[DA0017:ディスクへのアクティブなメモリのページングが高率で発生しています](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md)」が発生します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  [エラー一覧] ウィンドウに表示されたメッセージをダブルクリックして、[[マーク](../profiling/marks-view.md)] ビューに移動します。 **Memory\Pages/sec** 列を探します。 ページングの入出力アクティビティのが他のフェーズよりも多い特定のプログラム実行フェーズがあるかどうかを確認します。

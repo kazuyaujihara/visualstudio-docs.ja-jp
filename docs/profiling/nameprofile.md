@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e531c0a4b2f5eca69675c7347fc275697eba7e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e0d4cdfd393961566a0aef0c649e6ff788fdc8ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403610"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` 関数は、指定したプロセスまたはスレッドに文字列を割り当てます。
@@ -81,7 +81,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  現在のもの以外のプロセスまたはスレッドを指定した場合、それが初期化され、実行が開始されていることを確認した後で名前を付ける必要があります。 それ以外の場合、NameProfile メソッドは失敗します。
 
 > [!IMPORTANT]
->  CreateProcess() API および CreateThread() API 関数は、スレッドまたはプロセスが初期化される前に値を返す場合があります。
+> CreateProcess() API および CreateThread() API 関数は、スレッドまたはプロセスが初期化される前に値を返す場合があります。
 
 ## <a name="net-framework-equivalent"></a>同等の .NET Framework 関数
  *Microsoft.VisualStudio.Profiler.dll*

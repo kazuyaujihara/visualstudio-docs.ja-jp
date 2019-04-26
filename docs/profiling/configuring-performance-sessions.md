@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f74c55cf6b21b67cf0f1ab8b1f862f84964e3eae
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4a36486816d9b6bdc160616b893c6d7a79dfad58
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405783"
 ---
 # <a name="configure-performance-sessions"></a>パフォーマンス セッションの構成
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のプロファイリング ツールを使用して、多くの種類のアプリケーションのさまざまなパフォーマンス データを収集することができます。 このセクションでは、パフォーマンス ウィザードおよびパフォーマンス セッションとターゲット バイナリのプロパティを使用して、対象のデータを収集するようにプロファイリング ツールを構成する方法を示します。 プロファイリングを実行して収集するデータの量を制御するために、プロファイリング ツールの構成プロパティも使用できます。 詳しくは、「[データ コレクションの制御](../profiling/controlling-data-collection.md)」をご覧ください。
 
 > [!NOTE]
->  多くの場合、パフォーマンス ウィザードの既定のプロパティを使用することは、プロファイル データを収集する効果的な方法です。 詳細については、[パフォーマンス プロファイリングのビギナーズ ガイド](../profiling/beginners-guide-to-performance-profiling.md)および[概要](../profiling/getting-started-with-performance-tools.md)に関する記事をご覧ください。
+> 多くの場合、パフォーマンス ウィザードの既定のプロパティを使用することは、プロファイル データを収集する効果的な方法です。 詳細については、[パフォーマンス プロファイリングのビギナーズ ガイド](../profiling/beginners-guide-to-performance-profiling.md)および[概要](../profiling/getting-started-with-performance-tools.md)に関する記事をご覧ください。
 
 ## <a name="common-tasks"></a>一般的なタスク
 

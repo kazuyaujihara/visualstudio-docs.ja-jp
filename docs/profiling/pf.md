@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7815f3b8788ac2fd3eaece89d6e2dbeeb49426d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bf6bc8ae841ad8ba0d3fd376176bdff2332fb958
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432000"
 ---
 # <a name="pf"></a>PF
 *VSPerfCmd.exe* の **PF** オプションは、サンプリングするプロファイル イベントをページ フォールトに設定し、必要に応じて、サンプリング間隔のページ フォールト数を既定の 10 から変更します。
 
 > [!NOTE]
->  **PF** を 64 ビット システムで使用することはできません。
+> **PF** を 64 ビット システムで使用することはできません。
 
 **PF** は、**Launch** オプションまたは **Attach** オプションも含むコマンド ラインでのみ使用できます。
 

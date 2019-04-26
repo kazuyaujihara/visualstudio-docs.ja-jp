@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf1eb0001ca7c8b87fa44b5ea861df9d9fcba84d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1e780a67ee419a8cae661570802e5d85081f1fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445811"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>.NET Framework の拡張機能の登録
 .NET Framework の特定のバージョンを拡張するアセンブリを開発できます。 アセンブリが Visual Studio の **[参照の追加]** ダイアログ ボックスに表示されるようにするには、そのアセンブリを格納するフォルダーをシステム レジストリに追加する必要があります。
@@ -27,7 +27,7 @@ ms.locfileid: "56644342"
  このフォルダーを登録するために使用するキーは、**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\** です。 このキーに指定する既定値は、**C:\TreyResearch\Extensions4** です。
 
 > [!NOTE]
->  .NET Framework のビルド番号は異なる場合があります。
+> .NET Framework のビルド番号は異なる場合があります。
 
  32 ビット アセンブリを 64 ビット コンピューターに登録するには、Wow6432 ノードを使用します (例:**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**)。
 

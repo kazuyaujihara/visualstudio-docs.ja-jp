@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f92dc12dfb9e9f8fb1ec3d3910edf7102342f69b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3ed364d9c8995a93acb0de8002bafefd603c2d71
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969255"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>[オプション]、[テキスト エディター]、[XAML]、[書式設定]
 
@@ -44,13 +44,13 @@ ms.locfileid: "55920393"
 
 次のイベントのいずれかが検出されると、オートフォーマットが発生する場合があります。
 
--   終了タグまたは簡易タグの完成
+- 終了タグまたは簡易タグの完成
 
--   開始タグの完成
+- 開始タグの完成
 
--   クリップボードからの貼り付け
+- クリップボードからの貼り付け
 
--   キーボード コマンドの書式設定
+- キーボード コマンドの書式設定
 
 オートフォーマットが発生するイベントを指定することができます。
 
@@ -146,7 +146,6 @@ XAML ドキュメント内で要素を配置する方法を制御するには、
 
 ```xml
 <Grid>
-
 
 <Button Name="button1">Hello</Button>
 
