@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc304a90f9d51611ad2455c130e589aa0204cdc5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5499ff9451d3068cdef0e32dee45a6f6c7f63c71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425475"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017:ディスクへのアクティブなメモリのページングが高率で発生しています
 
@@ -37,7 +37,7 @@ ms.locfileid: "56620487"
 ## <a name="rule-description"></a>規則の説明
 
 > [!NOTE]
->  この情報規則は、アクティブなメモリのページングが相当なレベルに達した場合に適用されます。 ページングが非常に高率で発生した場合、代わりに、警告規則「[DA0014: ディスクへのアクティブなメモリのページングが非常に高率で発生しています](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md)」が発生します。
+> この情報規則は、アクティブなメモリのページングが相当なレベルに達した場合に適用されます。 ページングが非常に高率で発生した場合、代わりに、警告規則「[DA0014: ディスクへのアクティブなメモリのページングが非常に高率で発生しています](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md)」が発生します。
 
  ディスクに対する過剰なページングは、物理メモリの不足が原因で発生する場合があります。 ページング ファイルが存在する物理ディスクの大部分がページング操作によって使用される場合、同じディスクのその他のアプリケーションのディスク操作の処理速度が遅くなる可能性があります。
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0f21042a7b49780dae3a46ec5a1f284dc0430a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435630"
 ---
 # <a name="manage-channels"></a>チャネルの管理
 コンカレンシー ビジュアライザーの**スレッド ビュー**では、プロセスのチャネルを整理して、特定のパターンを調べることができます。 チャネルを並べ替えしたり、上下に移動したり、非表示/表示を切り替えることができます。
@@ -47,7 +47,7 @@ ms.locfileid: "56646500"
  チャネルを非表示にするには、このコントロールを選択します。 たとえば、あるスレッドがマネージド プロセスの有効期間中に 100% の同期を示している場合は、他のスレッドを分析するときにはそれを非表示にすることができます。
 
 > [!NOTE]
->  スレッドを非表示にすると、アクティブな凡例およびプロファイル レポートに示される計算時間からも除外されます。
+> スレッドを非表示にすると、アクティブな凡例およびプロファイル レポートに示される計算時間からも除外されます。
 
 ## <a name="show-all-channels"></a>すべてのチャネルを表示
  1 つまたは複数のチャネルが表示されていないときに、このコントロールはアクティブになります。 これを選択すると、すべての非表示の要素が表示され、時間の計算に再び含められます。
