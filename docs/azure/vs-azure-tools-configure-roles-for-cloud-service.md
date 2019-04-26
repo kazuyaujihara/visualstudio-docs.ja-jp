@@ -4,17 +4,19 @@ description: Visual Studio を使用し、Azure クラウド サービスのロ�
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.custom: seodec18
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 06914374169d3d6dab6dd5a489461c11ddbc66aa
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 86a86a097bc5e9d3cd567502ec94aae3cbafd324
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552446"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio で Azure クラウド サービスのロールを構成する
 Azure クラウド サービスには、worker ロールまたは Web ロールを割り当てることができます。 それぞれのロールについて、そのセットアップ方法を定義すると共に、実行方法を構成する必要があります。 クラウド サービスのロールの詳細については、 [Azure Cloud Services の概要](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)を紹介した動画をご覧ください。
@@ -48,6 +50,8 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
     > [!IMPORTANT]
     > 設定の対象が "すべての構成" に限定されるプロパティが一部存在します。特定のサービス構成を選択した場合、それらのプロパティは無効になります。 これらのプロパティを編集するには、**[すべての構成]** を選択する必要があります。
+    >
+    >
 
     ![Azure クラウド サービスのサービス構成の一覧](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
@@ -255,7 +259,7 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
 前のセクションのコードによって作成されたファイルを確認するには、次の手順を実行します。
 
-1.  Windows 通知領域で Azure アイコンを右クリックし、コンテキスト メニューから **[Show Compute Emulator UI (コンピューティング エミュレーター UI の表示)]** を選択します。
+1. Windows 通知領域で Azure アイコンを右クリックし、コンテキスト メニューから **[Show Compute Emulator UI (コンピューティング エミュレーター UI の表示)]** を選択します。
 
     ![コンピューティング エミュレーターの表示](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 
