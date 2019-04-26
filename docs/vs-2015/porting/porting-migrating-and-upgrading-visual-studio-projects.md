@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: bdb3973502d57ef326d0e13b1ddc43d0e9c89c87
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0554302f408547ea08c886bc3b458efdf7ddd412
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654699"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046600"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Porting, Migrating, and Upgrading Visual Studio Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Visual Studio の新しいバージョンに移行するかどうかを考慮す
 
  [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] を [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 、またはVisual Studio 2010 SP1 と共に使用する場合は、これらのバージョンのいずれでも、プロジェクトとファイルを作成および変更できます。 いずれかのバージョンでサポートされていない機能を追加しない限り、バージョン間でプロジェクトとファイルを移行できます。
 
-##  <a name="project"></a> プロジェクト
+## <a name="project"></a> プロジェクト
  次の一覧は、 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] または Visual Studio 2010 SP1 で作成したプロジェクトの [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] または [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] におけるサポートについての説明です。 この一覧を使用して、[!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]、[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、または Visual Studio 2010 SP1 で、プロジェクトを "そのままの状態で" 開くことができるか、または互換性を確保するために変更する必要があるかを確認します。
 
 |プロジェクトの種類|互換性|
@@ -66,15 +66,15 @@ Visual Studio の新しいバージョンに移行するかどうかを考慮す
 |SketchFlow|Visual Studio でプロジェクトを WPF 4.5/Silverlight 5 にアップグレードすることを許可した場合は、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] と [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]で開くことができます。|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] データベース|プロジェクトを [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、および Visual Studio 2010 SP1 で開くことができます。 SQL Server の以前のバージョンで作成されたデータベース ファイル (.mdf) がある場合は、SQL Server Express LocalDB でファイルを使用する前に [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] にアップグレードする必要があります。ただし、そのデータベースはもう、SQL Server の以前のバージョンとの互換性がなくなります。 アップグレードしない場合は、同じコンピューターに [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] をインストールして使用することで、 [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] でデータベースを引き続き使用できます。 詳細については、「[Upgrade .mdf files (.mdf ファイルのアップグレード)](../data-tools/upgrade-dot-mdf-files.md)」を参照してください。|
 |[!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express|[!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] 、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、および Visual Studio 2010 SP1 を実行しているコンピューターに [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]Express がインストールされている場合は、3 つのバージョンすべてでプロジェクトを開くことができます。|
-|SQL Server レポート プロジェクト|[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] および [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]でプロジェクトを開くことができます。 ローカル モードの場合のみ (つまり、SQL Server に接続されていない場合)、 [!INCLUDE[vs2010](../includes/vs2010-md.md)]のビューアーに関連付けられているコントロールをデザイン時に操作することはできませんが、プロジェクトは実行時に適切に機能します。 **注意:** [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] に固有の機能を追加すると、レポート スキーマが自動的にアップグレードされ、[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] でプロジェクトを開くことができなくなります。|
+|SQL Server レポート プロジェクト|[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] および [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]でプロジェクトを開くことができます。 ローカル モードの場合のみ (つまり、SQL Server に接続されていない場合)、 [!INCLUDE[vs2010](../includes/vs2010-md.md)]のビューアーに関連付けられているコントロールをデザイン時に操作することはできませんが、プロジェクトは実行時に適切に機能します。 **注意:**[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] に固有の機能を追加すると、レポート スキーマが自動的にアップグレードされ、[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] でプロジェクトを開くことができなくなります。|
 |単体テスト|[!INCLUDE[TCMext](../includes/tcmext-md.md)] 、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、および Visual Studio 2010 SP1 で [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]を使用して、これらのバージョンのいずれかで作成されたテストを開くことができます。|
-|Visual C++|[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] を使用して、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] または Visual Studio 2010 SP1 で作成された C++ プロジェクトを開くことができます。 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ビルド環境を使用して、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]で作成されたプロジェクトをビルドする場合は、同じコンピューターに両方のバージョンの Visual Studio をインストールする必要があります。 詳細については、「[方法: Visual C++ プロジェクトを Visual Studio 2015 にアップグレードする](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md)」と「[Visual C++ 移植とアップグレードのガイド](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb)」を参照してください。|
+|Visual C++|[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] を使用して、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] または Visual Studio 2010 SP1 で作成された C++ プロジェクトを開くことができます。 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ビルド環境を使用して、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]で作成されたプロジェクトをビルドする場合は、同じコンピューターに両方のバージョンの Visual Studio をインストールする必要があります。 詳細については、「[方法 :Visual C++ プロジェクトを Visual Studio 2015 にアップグレードする](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md)」と「[Visual C++ 移植とアップグレードのガイド](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb)」を参照してください。|
 |Visual Studio 2010 Web|Visual Studio でプロジェクトを自動的にアップグレードすることを許可した場合は、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、および Visual Studio 2010 SP1 で開くことができます。|
 |Visual Studio 2010 データベース (.dbproj)|プロジェクトを SQL Server Data Tools Database プロジェクトに変換すると、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]で開くことができます。 ただし、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] では、次の成果物をサポートしていません。<br /><br /> -   単体テスト<br />-   データ生成計画<br />-   データ比較ファイル<br />-   スタティック コード分析用のカスタム規則の拡張機能<br />-   server.sqlsettings<br />-   .sqlcmd ファイル<br />-   カスタム配置の拡張機能<br />-   部分プロジェクト (.files)<br /><br /> SQL Server Data Tools をインストールすると、プロジェクトを変換した後に Visual Studio 2010 SP1 で開くことができます。 詳細については、「 [Microsoft SQL Server Data Tools](http://msdn.microsoft.com/data/tools.aspx)」を参照してください。|
 |Visual Studio 2010 Visual Database Tools|このプロジェクトを [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、および Visual Studio 2010 SP1 で開くことができます。|
 |Visual Studio Lab Management|[!INCLUDE[TCMext](../includes/tcmext-md.md)]、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、および Visual Studio 2010 SP1 で [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]を使用して、これらのバージョンのいずれかで作成された環境を開くことができます。 ただし、環境を作成するには、使用している Microsoft Test Manager のバージョンが Team Foundation Server のバージョンと一致する必要があります。|
 |Visual Studio マクロ|[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] では、プロジェクトの種類がサポートされていないため、このプロジェクトを開くことができません。|
-|Visual Studio SDK/VSIX|Visual Studio SDK プロジェクトを [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]にアップグレードした後は、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]で開くことができません。 詳細については、「[How to: Migrate Extensibility Projects to Visual Studio 2015 (方法: 機能拡張プロジェクトを Visual Studio 2015 に移行する)](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)」をご覧ください。|
+|Visual Studio SDK/VSIX|Visual Studio SDK プロジェクトを [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]にアップグレードした後は、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]で開くことができません。 詳細については、「[方法 :機能拡張プロジェクトを Visual Studio 2015 に移行する](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)」をご覧ください。|
 |Microsoft Azure Tools for Visual Studio|Microsoft Azure Tools for Visual Studio Version 2.1 を使用している場合は、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、および Visual Studio 2010 SP1 でプロジェクトを開くことができます。 以前のバージョンを対象とするプロジェクトの場合、Visual Studio でプロジェクトを Version 2.1 にアップグレードすることを許可すると、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、および Visual Studio 2010 SP1 で開くことができます。|
 |Windows Communication Foundation、Windows Presentation Foundation|このプロジェクトを [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、および Visual Studio 2010 SP1 で開くことができます。|
 |Windows Mobile|[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] では、プロジェクトの種類がサポートされていないため、このプロジェクトを開くことができません。|
@@ -89,7 +89,7 @@ Visual Studio の新しいバージョンに移行するかどうかを考慮す
 
 - [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] または [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] でサポートされていないプロジェクトを開く場合、そのプロジェクトに関連付けられているバージョンの Visual Studio がインストールされていなければ、プロジェクトの種類がサポートされていないことを示すメッセージが表示されることがあります。その際、 **[プロジェクトとソリューションの変更をレビュー]** ダイアログ ボックスの **[サポートされていないプロジェクト]** の下にそのプロジェクトの種類が表示されることがあります。 この問題を解決するには、Windows の **コントロール パネル**を開き、 **[Visual Studio]**、 **[変更]**、 **[修復]** の順に選択します。 ここで、必要なバージョンをインストールできます。
 
-- [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]でデスクトップ アプリのプロジェクトを開こうとすると、エラーが発生し、"このエディションの Visual Studio は、 [!INCLUDE[win81](../includes/win81-md.md)] アプリのみをサポートします。" または "このプロジェクトは、Visual Studio の現在のエディションと互換性がありません。" というメッセージが表示されます。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] は、Windows 8.1 向けに設計された Windows ストア アプリの開発、テスト、展開用に制限されています。 デスクトップ アプリ プロジェクトを開くには、そのプロジェクトの種類をサポートしている Visual Studio のエディションを使用する必要があります。
+- [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] でデスクトップ アプリのプロジェクトを開こうとすると、エラーが発生し、"このエディションの Visual Studio は [!INCLUDE[win81](../includes/win81-md.md)] アプリのみをサポートします" または "このプロジェクトは、Visual Studio の現在のエディションと互換性がありません" というメッセージが表示されます。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] は、Windows 8.1 向けに設計された Windows ストア アプリの開発、テスト、展開用に制限されています。 デスクトップ アプリ プロジェクトを開くには、そのプロジェクトの種類をサポートしている Visual Studio のエディションを使用する必要があります。
 
    Visual Studio のエディションに関する詳細については、「 [Microsoft Visual Studio Products (Microsoft Visual Studio 製品)](https://visualstudio.microsoft.com/products/)」をご覧ください。
 
@@ -101,7 +101,7 @@ Visual Studio の新しいバージョンに移行するかどうかを考慮す
 
   追加のトラブルシューティング情報については、サポート技術情報の「 ["Visual Studio 2013 Compatibility (Visual Studio 2013 の互換性)](http://support.microsoft.com/kb/2863286) 」を参照してください。
 
-##  <a name="file"></a> ファイル
+## <a name="file"></a> ファイル
  次の一覧では、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] で各ファイルの種類がサポートされているかどうか、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] と Visual Studio 2010 SP1 でファイルを開くことができるかどうか、および互換性を保持するために変更を加える必要があるかどうかを確認できます。
 
 |ファイルの種類|互換性|
@@ -121,7 +121,7 @@ Visual Studio の新しいバージョンに移行するかどうかを考慮す
 |[!INCLUDE[vs2010](../includes/vs2010-md.md)] の IntelliTrace ログ ファイル|これらのファイルは、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、および Visual Studio 2010 SP1 で開くことができます。|
 |JavaScript メモリ アナライザー (.diagsession) ファイル|Visual Studio の旧バージョンで作成されたファイルを [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]で表示できます。 ただし、収集した情報によっては、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] で作成されたファイルを [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] または Visual Studio 2010 SP1 で開くことができない場合があります。|
 
-##  <a name="integration"></a> 統合資産
+## <a name="integration"></a> 統合資産
  Visual Studio Team Foundation Server の異なるバージョンのクライアントおよびサーバーを使用する場合は、互換性の問題が発生する可能性があります。
 
 |統合の種類|互換性|

@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b20ea728cd0b714ba61dfa7aef1893a91cfaca
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443723"
 ---
 # <a name="manage-channels"></a>チャネルの管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "54758375"
  チャネルを非表示にするには、このコントロールを選択します。 たとえば、あるスレッドがマネージド プロセスの有効期間中に 100% の同期を示している場合は、他のスレッドを分析するときにはそれを非表示にすることができます。  
   
 > [!NOTE]
->  スレッドを非表示にすると、アクティブな凡例およびプロファイル レポートに示される計算時間からも除外されます。  
+> スレッドを非表示にすると、アクティブな凡例およびプロファイル レポートに示される計算時間からも除外されます。  
   
 ## <a name="show-all-channels"></a>すべてのチャネルを表示  
  1 つまたは複数のチャネルが表示されていないときに、このコントロールはアクティブになります。 これを選択すると、すべての非表示の要素が表示され、時間の計算に再び含められます。  
