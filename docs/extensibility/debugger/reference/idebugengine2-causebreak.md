@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fa0d559887019a697b820a5a6c91f80b78c6b713
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62920963"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 すべてのプログラムによってこのデバッグ エンジン (DE)、次回の実行を停止するデバッグ中の要求を実行すると、スレッドの 1 つ試行します。

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 33bc2ce58f90f37a1219427558a01bd13e5654df
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62414548"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt;要素 (Visual Studio での Office 開発)
   `formRegion`の要素、`vstov4`名前空間は、VSTO アドインに関連付けられている Microsoft Office Outlook フォーム領域を識別します。
@@ -70,7 +70,7 @@ ms.locfileid: "54875335"
 
 ## <a name="see-also"></a>関連項目
 
-- [Outlook フォーム領域を作成します。](../vsto/creating-outlook-form-regions.md)
+- [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)
 - [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)
 - [Office ソリューション用配置マニフェストします。](../vsto/deployment-manifests-for-office-solutions.md)
 - [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)
