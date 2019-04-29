@@ -18,14 +18,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9c10dcf48e5c047778b86c524b35b4e1d5d8cc8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967054"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>方法: SharePoint プロジェクトに既存の BDC モデル ファイルを追加します。
-  カスタマイズ、パッケージ化、および Visual Studio を使用してモデル ファイルを追加するビジネス データ接続 (BDC) モデルを再配置 (*.bdcm*) を SharePoint ファーム プロジェクト。 詳細については、[business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)を参照してください。
+  カスタマイズ、パッケージ化、および Visual Studio を使用してモデル ファイルを追加するビジネス データ接続 (BDC) モデルを再配置 (*.bdcm*) を SharePoint ファーム プロジェクト。 詳細については、次を参照してください。 [business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)です。
 
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>BDC モデル ファイルを SharePoint プロジェクトに追加するには
 

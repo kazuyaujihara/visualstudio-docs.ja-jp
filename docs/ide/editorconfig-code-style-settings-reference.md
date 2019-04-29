@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e06421955089a378cd20399280d066cc27bfe03f
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557217"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig の .NET コーディング規則の設定
 
@@ -70,7 +70,7 @@ ms.locfileid: "59232802"
 次のリストに、使用できる言語コード スタイル設定を示します。
 
 - .NET コード スタイルの設定
-    - ["This."  と "Me." 修飾子](#this_and_me)
+    - ["This."と "Me." 修飾子](#this_and_me)
         - dotnet\_style\_qualification\_for_field
         - dotnet\_style\_qualification\_for_property
         - dotnet\_style\_qualification\_for_method
@@ -88,7 +88,7 @@ ms.locfileid: "59232802"
         - dotnet\_style\_parentheses\_in\_other\_binary\_operators
         - dotnet\_style\_parentheses\_in\_other\_operators
         - dotnet\_style\_parentheses\_in\_relational\_binary\_operators
-    - [式レベルの基本設定](#expression_level)
+    - [式レベル基本設定](#expression_level)
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
         - dotnet\_style\_explicit\_tuple_names
@@ -98,7 +98,7 @@ ms.locfileid: "59232802"
         - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
         - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
         - dotnet\_style\_prefer\_conditional\_expression\_over\_return
-    - ["Null" 検査の基本設定](#null_checking)
+    - ["null" チェック設定](#null_checking)
         - dotnet\_style\_coalesce_expression
         - dotnet\_style\_null_propagation
 - C# コード スタイルの設定
@@ -118,14 +118,14 @@ ms.locfileid: "59232802"
         - csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
     - [インライン変数宣言](#inlined_variable_declarations)
         - csharp\_style\_inlined\_variable_declaration
-    - [式レベルの基本設定](#expression_level_csharp)
+    - [式レベル基本設定](#expression_level_csharp)
         - csharp\_prefer\_simple\_default_expression
         - csharp\_style\_deconstructed\_variable_declaration
         - csharp\_style\_pattern\_local\_over\_anonymous_function
-    - ["Null" 検査の基本設定](#null_checking_csharp)
+    - ["null" チェック設定](#null_checking_csharp)
         - csharp\_style\_throw_expression
         - csharp\_style\_conditional\_delegate_call
-    - [コード ブロックの基本設定](#code_block)
+    - [コード ブロック基本設定](#code_block)
         - csharp\_prefer_braces
 
 ### <a name="net-code-style-settings"></a>.NET コード スタイルの設定
@@ -329,13 +329,14 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
-このルールでは **true** や **false** の値は受け入れません。代わりに、以下の表の値を受け入れます。
+このルールでは、以下の表のいずれかの値を受け入れます。
 
 | [値] | 説明 |
 | ----- |:----------- |
 | always | アクセシビリティ修飾子を指定します。 |
-| for\_non\_interface_members | パブリック インターフェイス メンバーの場合を除き、アクセシビリティ修飾子を宣言します。 これは、**always** と同じであり、C# が既定のインターフェイス メソッドを追加する場合の将来の対策のために追加されています。 |
+| for\_non\_interface_members | パブリック インターフェイス メンバーの場合を除き、アクセシビリティ修飾子を宣言します。 (これは、**always** と同じであり、C# が既定のインターフェイス メソッドを追加する場合の将来の対策のために追加されています)。 |
 | never | アクセシビリティ修飾子を指定しません。 |
+| omit_if_default | 既定の修飾子である場合を除き、アクセシビリティ修飾子を指定することを優先します |
 
 コード例:
 
@@ -748,8 +749,6 @@ If Object.ReferenceEquals(value, Nothing)
     Return
 End If
 ```
-
-
 
 **dotnet\_style\_prefer\_conditional\_expression\_over_assignment**
 

@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6a72f78e89af41509711c94a00c8ab11b11fc549
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935413"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Visual Studio インスタンスの検出および管理用のツール
 
@@ -39,11 +39,12 @@ ms.locfileid: "59018221"
 
 ## <a name="using-vswhereexe"></a>vswhere.exe の使用
 
-`vswhere.exe` は Visual Studio (Visual Studio 2017 バージョン 15.2 以降のバージョン) に自動的に取り込まれます。またはそれを [vswhere リリース ページ](https://github.com/Microsoft/vswhere/releases) からダウンロードすることもできます。 ツールのヘルプ情報を取得する場合は `vswhere -?` を使用します。 たとえば、このコマンドでは以前のバージョンの製品やプレリリースを含む、Visual Studio のすべてのリリースが表示され、JSON 形式で結果が出力されます。
+`vswhere.exe` は Visual Studio (Visual Studio 2017 バージョン 15.2 以降のバージョン) に自動的に取り込まれます。またはそれを [vswhere リリース ページ](https://github.com/Microsoft/vswhere/releases)からダウンロードすることもできます。 ツールのヘルプ情報を取得する場合は `vswhere -?` を使用します。 たとえば、このコマンドでは以前のバージョンの製品やプレリリースを含む、Visual Studio のすべてのリリースが表示され、JSON 形式で結果が出力されます。
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+
 ::: moniker range="vs-2017"
 
 > [!TIP]
@@ -64,6 +65,7 @@ Visual Studio ではレジストリ設定はプライベートな場所に保存
 1. `HKEY_LOCAL_MACHINE` ノードを選択します。
 
 1. レジストリ エディターのメイン メニューから **[ファイル]** > **[ハイブの読み込み...]** を選択して、**AppData\Local** フォルダーに保存されているプライベート レジストリ ファイルを選択します。 次に例を示します。
+
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```

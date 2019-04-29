@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f2723304fe22af9ae2920ff828c953de9347449
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902685"
 ---
 # <a name="report-hook-functions"></a>レポート用のフック関数
 [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook) を使用してインストールされたレポート用のフック関数は、[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) がデバッグ レポートを生成するたびに呼び出されます。 レポート用のフック関数を使用して、特定の割り当て型に関するレポートだけを出力できます。 レポート用のフック関数には、次のようなプロトタイプが必要です。

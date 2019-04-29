@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 28f5a7ffe202e7e02b06e676501ab508ee1a4ab2
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955554"
 ---
 # <a name="schema-cache"></a>スキーマ キャッシュ
 
@@ -30,7 +30,7 @@ XML エディターは、ソリューション内のスキーマを検索する�
 | *msbuild.xsd* | MSBuild の make ファイルのスキーマ"<http://schemas.microsoft.com/developer/msbuild/2003>"。 |
 | *msdata.xsd* | <xref:System.Data.DataSet> クラスによって追加される XSD 注釈用のスキーマ (urn:schemas-microsoft-com:xml-msdata) です。 |
 | *msxsl.xsd* | Microsoft XSLT スクリプト ブロック拡張用のスキーマ (urn:schemas-microsoft-com:xslt) です。 |
-| *SnippetFormat.xsd* | コード スニペットの XML ファイルのスキーマです。 例については、*%VSInstallDir%\VC#\Expansions*を参照してください。 |
+| *SnippetFormat.xsd* | コード スニペットの XML ファイルのスキーマです。 例については、次を参照してください。 *%VSInstallDir%\VC#\Expansions*します。 |
 | *Soap1.1.xsd* | 簡易オブジェクト アクセス プロトコル (SOAP) 1.1 でのスキーマ http://schemas.xmlsoap.org/soap/envelope/します。 |
 | *Soap1.2.xsd* | 簡易オブジェクト アクセス プロトコル 1.2 のスキーマです。 |
 | *SiteMapSchema.xsd* | ASP.NET サイト マップ XML ファイルのスキーマ"<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>"。 |

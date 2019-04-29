@@ -15,14 +15,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 032ee551ff04590ccdb8744c1274b137dec0b756
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982320"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>Excel ワークシート上で Windows フォーム コントロールを使用します。
-  Windows フォームにコントロールを追加することと同じ方法で、Microsoft Office Excel ブックへの Windows フォーム コントロールを追加できます。 概要ドキュメントのコントロールの操作については、[Windows フォーム コントロールの Office ドキュメントの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)を参照してください。
+  Windows フォームにコントロールを追加することと同じ方法で、Microsoft Office Excel ブックへの Windows フォーム コントロールを追加できます。 概要ドキュメントのコントロールの操作については、次を参照してください。 [Windows フォーム コントロールの Office ドキュメントの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)します。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 

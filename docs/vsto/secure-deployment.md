@@ -16,18 +16,18 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1000504ad83706bd028af4bd668da7483e478b7a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978376"
 ---
 # <a name="secure-deployment"></a>デプロイのセキュリティ保護します。
-  Office ソリューションを作成するときに実行するプロジェクトでコードを許可する、開発用コンピューターが自動的に更新されます。 ただし、ソリューションを配置するときに、ソリューションに証明書で署名するかを使用して、信頼の決定の基になる証拠を提供する必要があります、[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信頼プロンプト キー。 詳細については、[Office ソリューションに信頼を付与](../vsto/granting-trust-to-office-solutions.md)を参照してください。
+  Office ソリューションを作成するときに実行するプロジェクトでコードを許可する、開発用コンピューターが自動的に更新されます。 ただし、ソリューションを配置するときに、ソリューションに証明書で署名するかを使用して、信頼の決定の基になる証拠を提供する必要があります、[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信頼プロンプト キー。 詳細については、次を参照してください。 [Office ソリューションに信頼を付与](../vsto/granting-trust-to-office-solutions.md)します。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- ドキュメント レベルのカスタマイズに、ネットワークの場所にドキュメントを配置する場合、Office アプリケーションのセキュリティ センターで信頼できる場所の一覧にドキュメントの場所を追加する必要がありますもできます。 エンドユーザーのコンピューターにドキュメントのアクセス許可を設定する方法の詳細については、[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)を参照してください。
+ ドキュメント レベルのカスタマイズに、ネットワークの場所にドキュメントを配置する場合、Office アプリケーションのセキュリティ センターで信頼できる場所の一覧にドキュメントの場所を追加する必要がありますもできます。 エンドユーザーのコンピューターにドキュメントのアクセス許可を設定する方法の詳細については、次を参照してください。[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)します。
 
 ## <a name="prevent-office-solutions-from-running-code"></a>Office ソリューションがコードを実行するを防ぐ
  管理者は、すべての Office ソリューションがコンピューターで実行されていることを防ぐために、レジストリを使用できます。 マネージ コード拡張機能を Office ソリューションが開かれた場合、Visual Studio Tools for Office ランタイム チェック エントリかどうか、名前の`Disabled`が存在するコンピューターで次のレジストリ キーのいずれかの。

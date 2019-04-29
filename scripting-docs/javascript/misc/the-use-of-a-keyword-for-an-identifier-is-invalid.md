@@ -15,15 +15,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d4de3dd669dfb54fc01704b03989fa90d4412cfe
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006184"
 ---
 # <a name="the-use-of-a-keyword-for-an-identifier-is-invalid"></a>キーワードを識別子に使用することはできません。
 1048:キーワードを識別子に使用することはできません。  
   
  キーワードは、変数、関数、またはその他のユーザー定義の識別子の名前として使用できません。  
   
- キーワードの詳細については、[JavaScript の予約語](../../javascript/reference/javascript-reserved-words.md)と[JavaScript の将来の予約語](../../javascript/reference/javascript-future-reserved-words.md)を参照してください。
+ キーワードの詳細については、次を参照してください。 [JavaScript の予約語](../../javascript/reference/javascript-reserved-words.md)と[JavaScript の将来の予約語](../../javascript/reference/javascript-future-reserved-words.md)します。

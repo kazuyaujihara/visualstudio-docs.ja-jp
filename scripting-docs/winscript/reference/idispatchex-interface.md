@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: df3fd7d46fdcb1f3e86bddd53700d7bce6e21381
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000840"
 ---
 # <a name="idispatchex-interface"></a>IDispatchEx インターフェイス
 `IDispatchEx`での拡張機能、`IDispatch`スクリプト言語などの動的言語に適切なインターフェイスをサポートする機能。 このセクションについて説明します、`IDispatchEx`インターフェイス自体の間の相違点`IDispatch`と`IDispatchEx`、拡張機能の"the rationale"とします。 リーダーについて理解していることが予想`IDispatch`にアクセスし、`IDispatch`ドキュメント。  
