@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898134"
 ---
 # <a name="product-and-package-schema-reference"></a>製品およびパッケージ スキーマ リファレンス
 A*製品ファイル*で必要な外部の依存関係のすべてを記述する XML マニフェストには、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション。 外部の依存関係の例、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]および Microsoft Data Access Components (MDAC)。 パッケージ ファイルは、製品ファイルに似ていますが、ローカライズ済みのアセンブリ、ライセンスの契約ドキュメントなどの依存関係のカルチャに依存するコンポーネントをインストールするために使用します。
@@ -39,15 +39,15 @@ A*製品ファイル*で必要な外部の依存関係のすべてを記述す�
 
 |要素|説明|属性|
 |-------------|-----------------|----------------|
-|[\<製品 > 要素](../deployment/product-element-bootstrapper.md)|製品ファイルの最上位の要素が必要です。|なし|
-|[\<パッケージ > 要素](../deployment/package-element-bootstrapper.md)|パッケージ ファイルの最上位の要素が必要です。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
-|[\<RelatedProducts > 要素](../deployment/relatedproducts-element-bootstrapper.md)|製品ファイルの省略可能な要素です。 その他の製品をこの製品はインストールかによって異なります。|なし|
-|[\<InstallChecks > 要素](../deployment/installchecks-element-bootstrapper.md)|必須の要素です。 リストのインストール時に、ローカル コンピューターで実行する依存関係を確認します。|なし|
-|[\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)|必須の要素です。  によって記述されたは、1 つまたは複数のインストールのチェックを実行します。 `InstallChecks`、、をインストールすると、パッケージには、チェックする必要がありますを表します失敗します。|なし|
-|[\<PackageFiles > 要素](../deployment/packagefiles-element-bootstrapper.md)|必須の要素です。 このインストール プロセスがインストールされているパッケージを一覧表示します。|なし|
-|[\<文字列 > 要素](../deployment/strings-element-bootstrapper.md)|必須の要素です。 ストアはローカライズ版の製品の名前およびエラーの文字列です。|なし|
+|[\<Product> 要素](../deployment/product-element-bootstrapper.md)|製品ファイルの最上位の要素が必要です。|なし|
+|[\<Package> 要素](../deployment/package-element-bootstrapper.md)|パッケージ ファイルの最上位の要素が必要です。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
+|[\<RelatedProducts> 要素](../deployment/relatedproducts-element-bootstrapper.md)|製品ファイルの省略可能な要素です。 その他の製品をこの製品はインストールかによって異なります。|なし|
+|[\<InstallChecks> 要素](../deployment/installchecks-element-bootstrapper.md)|必須の要素です。 リストのインストール時に、ローカル コンピューターで実行する依存関係を確認します。|なし|
+|[\<Commands> 要素](../deployment/commands-element-bootstrapper.md)|必須の要素です。  によって記述されたは、1 つまたは複数のインストールのチェックを実行します。 `InstallChecks`、、をインストールすると、パッケージには、チェックする必要がありますを表します失敗します。|なし|
+|[\<PackageFiles> 要素](../deployment/packagefiles-element-bootstrapper.md)|必須の要素です。 このインストール プロセスがインストールされているパッケージを一覧表示します。|なし|
+|[\<Strings> 要素](../deployment/strings-element-bootstrapper.md)|必須の要素です。 ストアはローカライズ版の製品の名前およびエラーの文字列です。|なし|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  パッケージのスキーマは、によって消費される*Setup.exe*、独自のほとんどのハード コーディングされたロジックを含むタスクをブートス トラップ MS ビルドによって生成されたスタブ プログラム。 スキーマは、インストール プロセスのすべての側面をドライブします。
 
  `InstallChecks` テストの特定のパッケージが存在するその setup.exe を実行する必要があります。 `PackageFiles` すべてのパッケージが指定されたテストの失敗をインストールする必要があるセットアップ プロセスの一覧を表示します。 [コマンド] で各コマンドの入力がで説明するテストの 1 つを実行`InstallChecks`を指定して`PackageFile`を実行する必要があります、テストは失敗します。 使用することができます、`Strings`任意の数の言語のアプリケーションをインストールするバイナリの 1 つ 1 つのインストールを使用できるように、製品名と、エラー メッセージをローカライズする要素。

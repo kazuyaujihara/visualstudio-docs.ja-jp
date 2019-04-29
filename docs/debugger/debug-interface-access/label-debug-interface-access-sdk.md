@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b445c5f8be55d5290feb1318a3b937980a3e5c06
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834342"
 ---
 # <a name="label-debug-interface-access-sdk"></a>ラベル (Debug Interface Access SDK)
 プログラム コード内の場所がで識別される、`SymTagLabel`シンボル。
@@ -47,7 +47,7 @@ ms.locfileid: "56616236"
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|返します`SymTagFuncDebugLabel`(の 1 つ、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)値)。|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|実行可能イメージ内でこのラベルの位置。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [シンボル型の構文階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)
 - [シンボルの場所](../../debugger/debug-interface-access/symbol-locations.md)

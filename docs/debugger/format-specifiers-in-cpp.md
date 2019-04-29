@@ -25,13 +25,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896621"
 ---
-# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio デバッガーで C++ の書式指定子
+# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>書式指定子のC++Visual Studio デバッガーで
 値を表示する形式を変更することができます、**ウォッチ**、 **[自動変数]**、および**ローカル**書式指定子を使用して windows。
 
 書式指定子を使用することもできます、**イミディ エイト**ウィンドウで、**コマンド**ウィンドウで、[トレース ポイント](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)、およびソース ウィンドウでもです。 これらのウィンドウで式を一時停止する場合に結果が、[データヒント](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)します。 [データヒント] の表示には、書式指定子が反映されます。
@@ -62,7 +62,7 @@ int main() {
 ::: moniker-end
 
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 書式指定子
-次の表では、Visual Studio で使用できる書式指定子について説明します。 太字の指定子は、新しいデバッガーと C での相互運用機能デバッグではなくのみサポート/cli CLI。
+次の表では、Visual Studio で使用できる書式指定子について説明します。 太字の指定子は、新しいデバッガーとの相互運用機能デバッグではなくのみサポートC++/CLI です。
 
 ::: moniker range=">= vs-2019" 
 
@@ -86,7 +86,7 @@ int main() {
 |su|Unicode (utf-16 エンコーディング) 文字列 (引用符)|\<場所> L"hello world"|L"hello world"<br /><br /> u"hello world"|
 |sub|Unicode (UTF-16 エンコード) 文字列 (引用符なし)|\<場所> L"hello world"|hello world|
 |bstr|BSTR バイナリ文字列 (引用符)|\<場所> L"hello world"|L"hello world"|
-|env|環境ブロック (2 つの null で終了する文字列)|\<位置 > L"=:: =::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|env|環境ブロック (2 つの null で終了する文字列)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
 |**s32**|Utf-32 文字列 (引用符)|\<場所> U"hello world"|u"hello world"|
 |**s32b**|UTF-32 文字列 (引用符なし)|\<場所> U"hello world"|hello world|
 |**en**|enum|Saturday(6)|土曜日|
@@ -118,7 +118,7 @@ int main() {
 |su|Unicode (utf-16 エンコーディング) 文字列 (引用符)|\<場所> L"hello world"|L"hello world"<br /><br /> u"hello world"|
 |sub|Unicode (UTF-16 エンコード) 文字列 (引用符なし)|\<場所> L"hello world"|hello world|
 |bstr|BSTR バイナリ文字列 (引用符)|\<場所> L"hello world"|L"hello world"|
-|env|環境ブロック (2 つの null で終了する文字列)|\<位置 > L"=:: =::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|env|環境ブロック (2 つの null で終了する文字列)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
 |**s32**|Utf-32 文字列 (引用符)|\<場所> U"hello world"|u"hello world"|
 |**s32b**|UTF-32 文字列 (引用符なし)|\<場所> U"hello world"|hello world|
 |**en**|enum|Saturday(6)|土曜日|
@@ -167,7 +167,7 @@ int main() {
 |wm|Windows メッセージ番号|0x0010|WM_CLOSE|
 |!|任意のデータ型のビューのカスタマイズを無視して、未処理の書式|\<カスタマイズされた表現>|4|
 
-### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 書式指定子との相互運用機能デバッグでのメモリ位置の/cli CLI
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 書式指定子との相互運用機能デバッグでのメモリ位置のC++/CLI
 次の表では、メモリ位置を使用する書式設定記号について説明します。 メモリ位置指定子は、任意の値、または位置を評価する式に使用できます。
 
 |シンボル|形式|元の [ウォッチ] の値|表示される値|

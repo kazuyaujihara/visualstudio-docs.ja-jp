@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903770"
 ---
 # <a name="process-search-dialog-box"></a>[プロセス検索] ダイアログ ボックス
 このダイアログ ボックスを使用して検索し、特定のプロセス内のノードを選択[プロセス ビュー](../debugger/processes-view.md)します。 このダイアログ ボックスを表示するには、フォーカスを移動、**プロセス**ビュー ウィンドウ。 クリックして**検索のプロセスを**から、**検索**メニュー。

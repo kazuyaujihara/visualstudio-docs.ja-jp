@@ -1,5 +1,5 @@
 ---
-title: 書式指定子でデバッガー (C#) |Microsoft Docs
+title: 書式指定子でデバッガー (c#) |Microsoft Docs
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849860"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>C# では、Visual Studio デバッガーでの書式指定子
 値を表示する形式を変更することができます、**ウォッチ**書式指定子を使用してウィンドウ。 書式指定子を使用することもできます、**イミディ エイト**ウィンドウで、**コマンド**ウィンドウで、[トレース ポイント](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)と、ソース ウィンドウ。 これらのウィンドウで式を一時停止する場合、結果に表示されます、[データヒント](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)指定した形式の表示にします。

@@ -13,11 +13,11 @@ ms.custom: vs-azure
 ms.date: 12/16/2015
 ms.author: mlearned
 ms.openlocfilehash: 4bfda342952820b4472a1f826273a7b9075faa9a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963982"
 ---
 # <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>Visual Studio 接続済みサービスを使用して Mobile Services を追加します。
 Visual Studio 2015 では、Azure Mobile Services を使用してに接続できる、 **接続済みサービス**ダイアログ。 いずれかから接続できるC#クライアント アプリ、JavaScript アプリ、またはクロスプラット フォーム Cordova アプリです。 接続すると、作成しデータにアクセス、カスタム Api と、スケジュールされたジョブを作成したりプッシュ通知のサポートを追加します。  接続済みサービスの操作では、すべての適切な参照と接続コードを追加します。 さまざまな Azure AD などの人気 id スキームを使用した認証用の組み込みサポートを利用を行うことができ、Facebook、Twitter、Microsoft アカウント。

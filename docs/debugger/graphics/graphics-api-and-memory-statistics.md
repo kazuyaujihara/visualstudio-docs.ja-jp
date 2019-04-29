@@ -12,14 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896020"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>グラフィックス API とメモリの統計情報
-<!-- VERSIONLESS --> Visual Studio 2017 およびそれ以降は、グラフィックス API 統計情報とメモリの統計情報のツールをサポートします。  これら 2 つのツールを使用して、さまざまなリソースの GPU メモリ使用量と、Direct3D API 使用量情報のさまざまな部分を表示できます。
+<!-- VERSIONLESS -->
+Visual Studio 2017 およびそれ以降は、グラフィックス API 統計情報とメモリの統計情報のツールをサポートします。  これら 2 つのツールを使用して、さまざまなリソースの GPU メモリ使用量と、Direct3D API 使用量情報のさまざまな部分を表示できます。
 
 ## <a name="graphics-api-statistics"></a>グラフィックス API 統計情報
 Visual Studio グラフィックス診断でグラフィックス API 統計情報を使用して、すべての変更を行った Direct3D の呼び出しと各呼び出しの数を表示できます。  ウィンドウを表示するには、選択、**ビュー > API 統計情報**メニュー項目。

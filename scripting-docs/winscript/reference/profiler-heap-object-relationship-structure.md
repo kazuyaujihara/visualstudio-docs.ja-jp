@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7a905a44f2ef686181c5a859699277d16f6cd374
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823622"
 ---
 # <a name="profilerheapobjectrelationship-structure"></a>PROFILER_HEAP_OBJECT_RELATIONSHIP 構造体
 ヒープ オブジェクトのリレーションシップを表します。  
@@ -33,7 +33,7 @@ typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP{    PROFILER_HEAP_OBJECT_NAME_
 |------------|-----------|-----------------|  
 |relationshipId|[PROFILER_HEAP_OBJECT_NAME_ID 型](../../winscript/reference/profiler-heap-object-name-id-type.md)|リレーションシップの ID 名から、 [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md)します。|  
 |relationshipInfo|[PROFILER_RELATIONSHIP_INFO 列挙型](../../winscript/reference/profiler-relationship-info-enumeration.md)|リレーションシップについて説明します。|  
-|numberValue|double|小数点の値です。 いずれかのみ`numberValue` / `stringValue` / `objectId` / `externalObjectAddress`に基づいて、設定は、`relationshipInfo`値。|  
+|numberValue|二重線|小数点の値です。 いずれかのみ`numberValue` / `stringValue` / `objectId` / `externalObjectAddress`に基づいて、設定は、`relationshipInfo`値。|  
 |stringValue|LPCWSTR|文字列値。|  
 |objectId|[PROFILER_HEAP_OBJECT_ID 型](../../winscript/reference/profiler-heap-object-id-type.md)|ヒープ オブジェクトの ID。|  
 |externalObjectAddress|[PROFILER_EXTERNAL_OBJECT_ADDRESS 型](../../winscript/reference/profiler-external-object-address-type.md)|外部オブジェクトのアドレス。|  

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1194dba5069913d01a6e4858801ea2890db94224
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57871605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910697"
 ---
 # <a name="author-a-windows-installer-package"></a>Windows インストーラー パッケージを作成します。
 データ ドライブの Windows インストーラーのモデル。 にファイルをコピーし、レジストリ エントリを書き込む手続き型のスクリプトを作成するのではなくなどを作成するデータ ファイルおよびレジストリ データが含まれているデータベース テーブルの行と列。
@@ -34,7 +34,7 @@ VSPackage をインストールするには、Windows インストーラー パ�
 
 - VSPackage の統合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]呼び出して**devenv.exe/setup** (CustomAction テーブルを使用)。
 
-詳細については、[Windows インストーラー](/windows/desktop/Msi/windows-installer-portal)を参照してください。
+詳細については、次を参照してください。 [Windows インストーラー](/windows/desktop/Msi/windows-installer-portal)します。
 
 ## <a name="setup-tools"></a>セットアップ ツール
 さまざまなサードパーティ製のセットアップ ツールは、Windows インストーラー パッケージの開発環境を提供します。 次の無料ツールを使用できます。

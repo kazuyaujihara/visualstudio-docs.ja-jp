@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d22d58eb8a2264d5c7765a15726db556c7d5569f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62942903"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Office ソリューションにおけるアプリケーションと配置マニフェスト
   アプリケーション マニフェストは、Office ソリューションがアセンブリを特定して更新する際に使用する情報を提供する XML ファイルです。 アプリケーション マニフェストは配置マニフェストと共に使用できます。配置マニフェストは、サーバーに保存されている XML ファイルです。最新バージョンのアプリケーション マニフェストとアセンブリを特定するために必要な情報を提供します。
@@ -30,7 +30,7 @@ ms.locfileid: "55949565"
 ## <a name="manifest-structure-for-office-solutions"></a>マニフェストの Office ソリューションの構造
  Visual Studio で Office 開発ツールを使用して作成された Microsoft Office ソリューションの場合、すべてのマニフェストは、標準の ClickOnce スキーマに基づいています。 Office ソリューションを配置すると、ドキュメントレベルと VSTO アドイン プロジェクトの両方のアプリケーション マニフェストは、ClickOnce キャッシュに保存されます。 配置マニフェストは、クライアント コンピューターにコピーされません。
 
- アプリケーションと Office プロジェクトの配置マニフェストの内容については、[Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)と[Office ソリューション用配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)を参照してください。
+ アプリケーションと Office プロジェクトの配置マニフェストの内容については、次を参照してください。 [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)と[Office ソリューション用配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)します。
 
 ## <a name="create-application-and-deployment-manifests"></a>アプリケーション マニフェストと配置マニフェストを作成します。
  アプリケーション マニフェストは、ビルド プロセスの一環として自動的に作成されます。 ドキュメントレベルのプロジェクトをビルドするたびに、配置マニフェストの場所はカスタム ドキュメント プロパティとしてドキュメントに埋め込まれます。 VSTO アドインの場合、配置マニフェストの場所はレジストリに格納されます。
@@ -43,7 +43,7 @@ ms.locfileid: "55949565"
 
 - [ドキュメント レベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)
 - [VSTO アドインのアーキテクチャ](../vsto/architecture-of-vsto-add-ins.md)
-- [設計および Office ソリューションの作成](../vsto/designing-and-creating-office-solutions.md)
+- [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)
 - [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)
 - [Office ソリューション用配置マニフェストします。](../vsto/deployment-manifests-for-office-solutions.md)
 - [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)

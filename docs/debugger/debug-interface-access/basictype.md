@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829733"
 ---
 # <a name="basictype"></a>BasicType
 シンボルの基本的な型を指定します。
@@ -54,13 +54,13 @@ enum BasicType {
 
 btVoid 基本的な型は、`void`します。
 
-btChar 基本的な型は、 `char` (C と C++ の型)。
+btChar 基本的な型は、 `char` (C/C++型)。
 
 btWChar 基本的な型は、ワイド (Unicode) 文字 (`WCHAR`)。
 
-btInt 基本的な型は`signed int`(C と C++ の型)。
+btInt 基本的な型は`signed int`(C/C++型)。
 
-btUInt 基本的な型は`unsigned int`(C と C++ の型)。
+btUInt 基本的な型は`unsigned int`(C/C++型)。
 
 btFloat 基本的な型が浮動小数点数 (`FLOAT`)。
 
@@ -68,9 +68,9 @@ btBCD 基本的な型がバイナリ コード化された 10 進数 (`BCD`)。
 
 btBool 基本的な型がブール値 (`BOOL`)。
 
-btLong 基本的な型は、 `long int` (C と C++ の型)。
+btLong 基本的な型は、 `long int` (C/C++型)。
 
-btULong 基本的な型は、 `unsigned long int` (C と C++ の型)。
+btULong 基本的な型は、 `unsigned long int` (C/C++型)。
 
 btCurrency 基本的な型は、通貨です。
 
@@ -86,10 +86,10 @@ btBSTR 基本的な型は、基本的なまたはバイナリ文字列 (`BSTR`)�
 
 btHresult 基本的な型は、`HRESULT`します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 この列挙体の値がによって返される、 [idiasymbol::get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)メソッド。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: cvconst.h
 
 ## <a name="see-also"></a>関連項目

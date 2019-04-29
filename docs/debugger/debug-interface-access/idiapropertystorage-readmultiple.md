@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ec66de4feea1a59ca1ef71f48bae49ed5ac2232
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839538"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 指定された、現在のプロパティ セットからのプロパティを読み取ります。
@@ -48,7 +48,7 @@ HRESULT ReadMultiple( 
 ## <a name="return-value"></a>戻り値
  正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`1 つまたは複数のプロパティが見つからなかった場合。 それ以外の場合はエラー コードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  かどうか、プロパティが見つかりません、対応するエントリに、`rgvar`配列に含まれる、`VARIANT`の型と`VT_EMPTY`します。
 
 ## <a name="see-also"></a>関連項目

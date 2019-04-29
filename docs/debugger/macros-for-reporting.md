@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c92424275a1dff69863b81fbf8567fbc4b84499
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905556"
 ---
 # <a name="macros-for-reporting"></a>レポート用マクロの使用
 デバッグについては、使用することができます、 **_RPTn**と **_RPTFn** crtdbg マクロ。代わりに、H`printf`ステートメント。 Inclose にする必要はありません **#ifdef**s のリリースでは自動的に消滅するため、ビルド **_DEBUG**が定義されていません。

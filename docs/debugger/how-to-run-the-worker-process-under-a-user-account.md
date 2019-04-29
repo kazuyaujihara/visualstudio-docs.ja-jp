@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ab1bb6d4bde8f6e75fdaeb4416372cdc236318
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847776"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>方法 : ユーザー アカウントでワーカー プロセスを実行する
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>方法: ユーザー アカウントでワーカー プロセスを実行する
 ユーザー アカウントを使用して [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセス (aspnet_wp.exe または w3wp.exe) を実行できるようにコンピューターを設定するには、次の手順を実行します。
 
  > [!IMPORTANT]
@@ -45,21 +45,22 @@ ms.locfileid: "56699003"
 
 4. [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)] では、既定で、IIS 6.0 がインストールされます。 対応するワーカー プロセスは w3wp.exe です。aspnet_wp.exe をワーカー プロセスとして IIS 6.0 モードで実行するには、次の手順を実行します。
 
-   1.  **[スタート]** ボタンをクリックし、**[管理ツール]** をポイントして、**[インターネット インフォメーション サービス (IIS) マネージャー]** をクリックします。
+   1. **[スタート]** ボタンをクリックし、**[管理ツール]** をポイントして、**[インターネット インフォメーション サービス (IIS) マネージャー]** をクリックします。
 
-   2.  **[インターネット インフォメーション サービス]** ダイアログ ボックスの **[Web サイト]** フォルダーを右クリックし、**[プロパティ]** を選択します。
+   2. **[インターネット インフォメーション サービス]** ダイアログ ボックスの **[Web サイト]** フォルダーを右クリックし、**[プロパティ]** を選択します。
 
-   3.  **[Web サイトのプロパティ]** ダイアログ ボックスの **[サービス]** を選択します。
+   3. **[Web サイトのプロパティ]** ダイアログ ボックスの **[サービス]** を選択します。
 
-   4.  **[IIS 6.0 プロセス分離モードで WWW サービスを実行する]** をオンにします。
+   4. **[IIS 6.0 プロセス分離モードで WWW サービスを実行する]** をオンにします。
 
-   5.  **[プロパティ]** ダイアログ ボックスを閉じ、**[インターネット サービス マネージャー]** を閉じます。
+   5. **[プロパティ]** ダイアログ ボックスを閉じ、**[インターネット サービス マネージャー]** を閉じます。
 
 5. Windows のコマンド プロンプトを開き、次を実行してサーバーをリセットします。
 
    ```cmd
    iisreset
    ```
+
    または
 
    ```cmd
@@ -77,7 +78,7 @@ ms.locfileid: "56699003"
 
     **[ユーザー、コンピューターまたはグループの選択]** ダイアログ ボックスが表示されます。
 
-10. **[選択するオブジェクト名を入力してください]** ボックスに、ユーザー名を入力して、**[OK]** をクリックします。 ユーザー名は、「ドメイン名\ユーザー名」の形式で入力する必要があります。
+10. **[選択するオブジェクト名を入力してください]** ボックスに、ユーザー名を入力して、**[OK]** をクリックします。 ユーザー名は、この形式に従う必要があります。Domainname \username 形式。
 
 11. **[Temporary ASP.NET Files のアクセス許可のエントリ]** ダイアログ ボックスで、ユーザーに**フル コントロール**を付与し、**[OK]** をクリックして **[Temporary ASP.NET Files のアクセス許可のエントリ]** ダイアログ ボックスを閉じます。
 
@@ -87,4 +88,4 @@ ms.locfileid: "56699003"
 
 ## <a name="see-also"></a>関連項目
 - [ASP.NET アプリケーションをデバッグする](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [ASP.NET のデバッグ : システム要件](../debugger/aspnet-debugging-system-requirements.md)
+- [ASP.NET のデバッグ: システム要件](../debugger/aspnet-debugging-system-requirements.md)

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c4943d1305c2f25de4eec9e782949a66827de879
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955092"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
 スクリプトの名前空間には、タイプ ライブラリを追加します。 これに似ています、 `#include` C と C++ のディレクティブ。 これにより、クラスの定義などの定義済みの項目のセットを`typedefs`、名前付き定数、スクリプトで使用できるランタイム環境に追加するとします。  

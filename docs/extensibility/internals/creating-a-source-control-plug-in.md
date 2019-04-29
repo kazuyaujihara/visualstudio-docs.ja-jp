@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c33b852a585825f3c5b5fc415b01ac31e35f763f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861388"
 ---
 # <a name="create-a-source-control-plug-in"></a>ソース管理プラグインを作成します。
 Visual Studio SDK をソース コントロールの機能を追加するためのリソースを提供する、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) です。 このドキュメントに記載されているソース管理プラグイン API を使用した準拠している任意のプラグイン DLL を使用できます。

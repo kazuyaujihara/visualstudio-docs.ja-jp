@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62224006d04e0a1e7447053e868dd9946f00c97e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583947"
 ---
 # <a name="late-binding-in-office-solutions"></a>Office ソリューションの遅延バインディング
   Office アプリケーションのオブジェクト モデルの一部の型は、遅延バインディングの機能で使用可能な機能を提供します。 たとえば、いくつかのメソッドとプロパティは、さまざまな種類の Office アプリケーションのコンテキストに応じてオブジェクトを返すことができ、一部の種類は、さまざまな方法または別のコンテキストでのプロパティを公開できます。
@@ -36,7 +36,7 @@ ms.locfileid: "56640689"
 
  ほとんどの場合、リファレンス ドキュメントを返すメンバーの戻り値の種類を一覧表示、<xref:System.Object>します。 オブジェクトをキャストまたは変換は、オブジェクト コード エディターで IntelliSense を使用できます。
 
- Visual Basic での変換については、[暗黙的および明示的な変換&#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)と[CType function &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function)を参照してください。
+ Visual Basic での変換については、次を参照してください。[暗黙的および明示的な変換&#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)と[CType function &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function)します。
 
 ### <a name="examples"></a>使用例
  次のコード例は、Visual Basic プロジェクトでオブジェクトを特定の型をキャストする方法を示します、 **Option Strict**にします。 この種類のプロジェクトでは、キャストする必要が明示的に、<xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A>プロパティを<xref:Microsoft.Office.Interop.Excel.Range>します。 この例では、という名前のワークシート クラスを使用して Excel のドキュメント レベルのプロジェクトが必要があります`Sheet1`します。

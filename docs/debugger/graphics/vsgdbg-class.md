@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4051a02de6a046621e62c21b4d2399b5a2703cb8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895193"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg クラス
 グラフィックス診断のアプリ内コンポーネントのプログラムによる制御のインターフェイスを表します。
@@ -29,14 +29,14 @@ class VsgDbg;
 
 ### <a name="public-constructors"></a>パブリック コンストラクター
 
-|name|説明|
+|名前|説明|
 |----------|-----------------|
 |[VsgDbg::VsgDbg (コンストラクター)](vsgdbg-vsgdbg-constructor.md)|`VsgDbg` クラスのインスタンスを構築し、オプションで、グラフィックス情報をアクティブにキャプチャして記録するようにグラフィックス診断のアプリ内コンポーネントを準備します。|
 |[VsgDbg::~VsgDbg (デストラクター)](vsgdbg-tilde-vsgdbg-destructor.md)|`VsgDbg` クラスのインスタンスを破棄します。|
 
 ### <a name="public-methods"></a>パブリック メソッド
 
-|name|説明|
+|名前|説明|
 |----------|-----------------|
 |[AddMessage](addmessage.md)|グラフィックス診断の HUD (ヘッドアップ ディスプレイ) にカスタム メッセージを追加します。|
 |[BeginCapture](begincapture.md)|`EndCapture` で終了するキャプチャ区間を開始します。|
@@ -47,5 +47,5 @@ class VsgDbg;
 |[ToggleHUD](togglehud.md)|グラフィックス診断の HUD オーバーレイのオンとオフを切り替えます。|
 |[UnInit](uninit.md)|グラフィックス ログ ファイルを終了して閉じ、アプリケーションがアクティブにグラフィックス情報を記録したときに使用されたリソースを解放します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  `VsgDbg` クラスは、グラフィック診断機能をプログラムで制御するために使用できるインターフェイスを表します。 グラフィックス情報をアクティブにキャプチャおよび記録していないときでも、一部の機能を使用できます。これには、`AddMessage` メンバー関数や `ToggleHUD` メンバー関数が含まれます。 他のメンバー関数は、グラフィックス情報のアクティブなキャプチャを開始または停止するようにグラフィックス診断のアプリ内コンポーネントを準備します。または、アプリケーションがグラフィックス情報をアクティブにキャプチャしてグラフィックス ログ ファイルに記録している間に呼び出される必要があります。

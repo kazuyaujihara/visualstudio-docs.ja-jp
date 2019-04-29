@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5fad305d97407995e15887848e3672e382ad54e5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861789"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>従来の API を使用して、コア エディターをインスタンス化します。
 
@@ -51,7 +51,7 @@ ms.locfileid: "56335559"
 
 - ショートカット キーを作成するかを設定して、システムの既定値を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>オブジェクトのプロパティを表示します。 これを行うには、呼び出し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A>メソッドを[__VSFPROPID します。VSFPROPID_InheritKeyBindings](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_InheritKeyBindings>)プロパティ。
 
-   取得し、非標準のショートカット キーを使用して、それらの生成を使用して、 *.vsct*ファイル。 詳細については、[Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)を参照してください。
+   取得し、非標準のショートカット キーを使用して、それらの生成を使用して、 *.vsct*ファイル。 詳細については、次を参照してください。 [Visual Studio コマンド テーブル (.vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
 
 ## <a name="how-to-use-an-editor-factory-to-obtain-the-core-editor"></a>エディター ファクトリを使用して、コア エディターを取得する方法
 

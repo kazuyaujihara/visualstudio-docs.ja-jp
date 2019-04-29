@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e1704a33abddada9a439786b408a8bc7bceeba0d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925776"
 ---
 # <a name="evaluate-a-watch-expression"></a>ウォッチ式を評価します。
 > [!IMPORTANT]
-> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)を参照してください。
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
 
 Visual Studio のウォッチ式の値を表示する準備が呼び出す[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)、この[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)。 このプロセスによって生成される、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)値と式の型を含むオブジェクト。
 

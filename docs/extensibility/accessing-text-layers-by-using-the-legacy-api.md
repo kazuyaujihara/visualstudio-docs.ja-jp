@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0ba962ba4c18773b5c85480bce62ab728cab307
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892234"
 ---
 # <a name="access-text-layers-by-using-the-legacy-api"></a>従来の API を使用してアクセス テキスト レイヤー
 通常、テキスト レイヤーには、テキストのレイアウトの一部の側面がカプセル化します。 「関数で-、-タイム」レイヤーでは、キャレット (挿入ポイントのテキスト) を含む関数の前後に、テキストを非表示にします。

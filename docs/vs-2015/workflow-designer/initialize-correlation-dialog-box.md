@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 75906a279c1047ff98c7ff8d82d7baf3efc8be0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938249"
 ---
 # <a name="initialize-correlation-dialog-box"></a>[関連付け初期化] ダイアログ ボックス
 **関連付けの初期化**でダイアログ ボックスが使用される[!INCLUDE[wfd1](../includes/wfd1-md.md)]を編集する、<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>のプロパティ、<xref:System.ServiceModel.Activities.InitializeCorrelation>アクティビティ。 [!INCLUDE[crdefault](../includes/crdefault-md.md)] [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)トピック。  

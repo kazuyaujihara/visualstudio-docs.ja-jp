@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cbc3edfabe041804a632b919eff4e565be9cc5e3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848602"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio グラフィックス診断
 Visual Studio*グラフィックス診断*記録し、Direct3D アプリのレンダリングとパフォーマンスの問題を分析するためのツールのセットです。 グラフィックス診断は、Windows PC でローカルに実行されているアプリ、Windows デバイス エミュレーターで実行されているアプリ、あるいはリモート PC またはデバイスで実行されているアプリに対して使用できます。
@@ -64,7 +64,7 @@ Visual Studio*グラフィックス診断*記録し、Direct3D アプリのレ�
 
 ## <a name="related-sections"></a>関連項目
 
-| Title | 説明 |
+| タイトル | 説明 |
 | - | - |
 | [デバッガー機能ツアー](/visualstudio/debugger/debugger-feature-tour) | [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のデバッグ機能を紹介します。 |
 | [DirectX のグラフィックスとゲーム](http://go.microsoft.com/fwlink/?LinkId=256498) | DirectX グラフィックスの手法を説明する文書を提供します。 |
