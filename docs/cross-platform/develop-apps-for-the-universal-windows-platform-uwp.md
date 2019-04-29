@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0726ddf0bb0798a5f989e902662ee5b4e26c6801
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819570"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発
 
@@ -38,11 +38,25 @@ Windows では初めて、すべての Windows 10 プラットフォームで共
 
 必要なソフトウェアの一覧を次に示します。
 
+::: moniker range="vs-2017"
+
 - [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2017 は、Windows 10 でのみ UWP の開発をサポートします。 詳しくは、Visual Studio の「[対象となるプラットフォーム](/visualstudio/productinfo/vs2017-compatibility-vs)」と「[システム要件](/visualstudio/productinfo/vs2017-system-requirements-vs)」をご覧ください。
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)。 オプションのユニバーサル Windows プラットフォーム開発ワークロードも必要です。
+- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)。 オプションのユニバーサル Windows プラットフォーム開発ワークロードも必要です。
 
      ![UWP ワークロード](media/uwp_workload.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2019 は、Windows 10 でのみ UWP の開発をサポートします。 詳しくは、Visual Studio の「[対象となるプラットフォーム](/visualstudio/releases/2019/compatibility/)」と「[システム要件](/visualstudio/releases/2019/system-requirements/)」をご覧ください。
+
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。 オプションのユニバーサル Windows プラットフォーム開発ワークロードも必要です。
+
+     ![UWP ワークロード](media/uwp_workload.png)
+
+::: moniker-end
 
 このソフトウェアをインストールしたら、開発用に Windows 10 デバイスを有効にする必要があります。 「[デバイスを開発用に有効にする](/windows/uwp/get-started/enable-your-device-for-development)」をご覧ください。 Windows 10 デバイスごとに開発者ライセンスは必要ありません。
 

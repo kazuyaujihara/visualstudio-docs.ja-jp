@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7e60975e8f356e749e5e32adb2e773526ab63141
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934979"
 ---
 # <a name="expected-identifier-javascript"></a>識別子が必要です。(JavaScript)
 ものを使用した識別子以外のコンテキストで 1 つが必要です。 識別子を指定できます。  

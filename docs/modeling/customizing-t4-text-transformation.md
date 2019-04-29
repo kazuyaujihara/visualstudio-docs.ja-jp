@@ -1,4 +1,4 @@
-﻿---
+---
 title: T4 テキスト変換のカスタマイズ
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33f7fd14ff62369de66e4934bf9bb2cf6fd83542
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994758"
 ---
 # <a name="customize-t4-text-transformation"></a>T4 テキスト変換をカスタマイズする
 
@@ -25,7 +25,7 @@ ms.locfileid: "55951554"
 
  [テキスト テンプレート変換プロセス](../modeling/the-text-template-transformation-process.md) テキスト変換のしくみについて説明し、テンプレートのホストとディレクティブ プロセッサの役割について説明します。
 
- [カスタム T4 テキスト テンプレート ディレクティブ プロセッサを作成する](../modeling/creating-custom-t4-text-template-directive-processors.md) ディレクティブ プロセッサは、`<#@template#>.` といったテンプレート中のディレクティブを処理します。テンプレートのコンパイル時に実行され、アセンブリとその他のリソースを読み込むことができます。実行時にリソースを読み込むコードを挿入することもできます。ディレクティブ プロセッサを定義することで、テンプレートの複雑さを軽減できます。
+ [カスタム T4 テキスト テンプレート ディレクティブ プロセッサを作成する](../modeling/creating-custom-t4-text-template-directive-processors.md) ディレクティブ プロセッサは、`<#@template#>.` といったテンプレート中のディレクティブを処理します。テンプレートのコンパイル時に実行され、アセンブリとその他のリソースを読み込むことができます。 実行時にリソースを読み込むコードを挿入することもできます。 ディレクティブ プロセッサを定義することで、テンプレートの複雑さを軽減できます。
 
  [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md) メニュー コマンドまたはイベント ハンドラーなどの Visual Studio 拡張機能を作成する場合、拡張機能が任意のテキスト テンプレートを変換するテキスト テンプレート サービスを使用できます。 セッション オブジェクトを使用して、テンプレートにパラメーターのデータを渡し、`<#@parameter#>` ディレクティブを使用して、テンプレート内から値を取得することができます。
 
