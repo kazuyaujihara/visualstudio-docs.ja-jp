@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 719d8f1e11365de0b864f41f54546fb4bfc64cd2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820315"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>コード分析規則セット エディターを使用して、
 
@@ -70,9 +70,9 @@ ms.locfileid: "55937220"
 |フィールド|説明|
 |-----------|-----------------|
 |**ID**|ルールの識別子。|
-|**カテゴリ**|規則セットのメンバーシップ、に加えてコード分析規則もカテゴリでグループ化されます。 詳細については、[コード分析警告](../code-quality/code-analysis-for-managed-code-warnings.md)を参照してください。|
+|**カテゴリ**|規則セットのメンバーシップ、に加えてコード分析規則もカテゴリでグループ化されます。 詳細については、次を参照してください。[コード分析警告](../code-quality/code-analysis-for-managed-code-warnings.md)します。|
 |**Name**|ルールのタイトル。|
-|**Namespace**|ルールの名前空間。|
+|**名前空間**|ルールの名前空間。|
 |**ターゲットの種類**|ルールについて、ネイティブが、管理、またはデータベースのコードでかどうかを示します。|
 |**動作**|コード分析の実行で、ルールに違反した場合に実行されるアクション。 編集することができます、**アクション**フィールド。|
 |**ソース規則セット**|規則セットをルールが含まれています。|

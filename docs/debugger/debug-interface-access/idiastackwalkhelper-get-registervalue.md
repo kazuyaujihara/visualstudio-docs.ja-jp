@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 275941aaf3a1eb2cab6554b18c6d9aa66605121a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831833"
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
 レジスタの値を取得します。
@@ -43,7 +43,7 @@ HRESULT get_registerValue ( 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  サイズに関係なく、`pRetVal`パラメーター、実装がのみ何レジスタは、通常は保持を格納する必要があります。 など、8 ビット レジスタのみ、最下位 8 ビットの指定された値を保持します。 この 8 ビット値は、このメソッドから返されるときに 64 ビットに拡張されます。
 
 ## <a name="see-also"></a>関連項目

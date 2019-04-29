@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 536919d4db8b13f12af1f3277daa0c148fd57916
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62802735"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 関数
 この関数は、ソース管理プラグインを初期化し、機能と統合開発環境 (IDE) に制限を提供します。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2fc538b8a13458d82d23fe6039eb9c1e9406be52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562482"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>プログラミングの概念と機能の SharePoint ツール拡張機能
   いくつかの重要なプログラミング概念と Visual Studio の SharePoint ツールに関連する機能があります。 これらの概念と機能は、ほとんどの SharePoint ツール拡張機能で重要な役割を果たします。

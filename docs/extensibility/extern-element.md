@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d62d52d490994889f7e9186fb74ea148cb52a06
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911896"
 ---
 # <a name="extern-element"></a>Extern 要素
 Extern 要素を参照して、外部のヘッダー (*.h*) とマージするファイル、 *.vsct*コンパイル時にファイル。 VSCT コンパイラに指定されたかによって参照されるインクルード パスにファイルをマージする必要があります、 [Include 要素](../extensibility/include-element.md)します。 その他のファイルがある *.vsct*ファイルまたは C++ ヘッダー ファイル。

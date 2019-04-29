@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69ad1208f9c3e36ff4f73b633efc9de180a09457
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852098"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>デバッグ エラーと警告関連のダイアログ ボックス
 ここでは、アプリケーションのデバッグ中に表示される可能性があるエラーおよび警告のダイアログ ボックスの一覧を示します。
@@ -54,10 +54,10 @@ ms.locfileid: "56700199"
 
  [コンピューターに接続できません](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 
- [エラー : "Debugging Isn't Possible Because a Kernel Debugger is Enabled on the System"](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
+ [エラー: システム上でカーネル デバッガーが有効になっているため、デバッグできません](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>関連項目
- [スクリプトと Web のデバッグ: エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [スクリプトと Web のデバッグ。エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [リモート デバッグ エラー](../debugger/remote-debugging-errors-and-troubleshooting.md)
 

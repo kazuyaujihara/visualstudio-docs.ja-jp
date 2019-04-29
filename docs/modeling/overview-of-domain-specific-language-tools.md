@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e31d9c01ded7754fd10419f3fd0e18d9616a51eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814125"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>ドメイン固有言語ツールの概要
 Visual Studio でホストされている、ドメイン固有言語ツール (DSL ツール) では、ドメイン固有言語を設計し、言語に基づくモデルを作成するユーザーが必要なすべてのものを生成できます。

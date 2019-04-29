@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c5e617b57437033f4194d96647ebff9d1c4e2c2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813998"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>方法: サーバー エクスプ ローラーでの SharePoint ノードを拡張します。
   下のノードを拡張することができます、 **SharePoint 接続**ノード**サーバー エクスプ ローラー**します。 これは、既存のノードに新しい子ノード、ショートカット メニュー項目、またはプロパティを追加する場合に便利です。 詳細については、次を参照してください。[サーバー エクスプ ローラーで、SharePoint 接続 ノードを拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)します。

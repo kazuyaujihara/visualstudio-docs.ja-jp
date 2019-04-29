@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d64e774fe418bb7373a6e632b1e8c2cebecc2854
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815025"
 ---
 # <a name="work-with-ranges"></a>範囲を操作します。
   <xref:Microsoft.Office.Tools.Excel.NamedRange> クラスと <xref:Microsoft.Office.Interop.Excel.Range> クラスには、範囲関連のタスクを実行するときに使用するメソッドとプロパティが含まれています。
@@ -36,7 +36,7 @@ ms.locfileid: "56606396"
 |Excel の計算をプログラムで実行します。|[方法: Excel の計算をプログラムで実行します。](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)|
 |セルに文字列を表示します。|[方法: プログラムによってワークシートのセルに文字列を表示します。](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md)|
 
- Excel タスクおよび Excel オブジェクト モデルの詳細については、[Excel オブジェクト モデルの概要](../vsto/excel-object-model-overview.md)を参照してください。
+ Excel タスクおよび Excel オブジェクト モデルの詳細については、次を参照してください。 [Excel オブジェクト モデルの概要](../vsto/excel-object-model-overview.md)します。
 
  以下のタスクは、VSTO アドインとドキュメント レベルのカスタマイズとで実行方法が異なる場合があります。
 

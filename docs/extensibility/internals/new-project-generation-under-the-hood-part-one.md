@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860313"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新しいプロジェクトの生成: 内部的な処理、パート 1
 独自のプロジェクトの種類を作成する方法と考えるでしょうか。 新しいプロジェクトを作成すると実際にはどうなりますか不思議に思うでしょうか。 内部的には時間をかけてを実際に起こっているを確認しましょう。

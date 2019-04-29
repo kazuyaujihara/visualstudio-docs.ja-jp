@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e82166ab336023812c63045c031b81d94dea67e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566997"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>方法: O/R デザイナーで生成されたコードを拡張する
 によって生成されたコード、 **O/R デザイナー**エンティティ クラスをデザイナー画面には、その他のオブジェクトが変更されたときに再生成します。 このコードの再生成により、通常、生成されたコードに追加したコードは、デザイナーがコードを再生成するときに上書きされます。 **O/R デザイナー**が上書きされないコードを追加できる部分クラス ファイルを生成する機能を提供します。 によって生成されたコードに独自のコードを追加する 1 つの例、 **O/R デザイナー** to SQL (エンティティ) クラスでデータ検証を LINQ を追加します。 詳細については、「[方法 :エンティティ クラスに検証を追加](../data-tools/how-to-add-validation-to-entity-classes.md)」を参照してください。

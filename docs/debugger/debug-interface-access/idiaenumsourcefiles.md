@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c3a6d3eb61f4e4a7504b184477ec1b3f2a8ba83
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829616"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 データ ソースに含まれるさまざまなソース ファイルを列挙します。
@@ -41,7 +41,7 @@ IDiaEnumSourceFiles : IUnknown
 |[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|先頭に、列挙体シーケンスをリセットします。|
 |[IDiaEnumSourceFiles::Clon](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|現在の列挙子と同じ列挙状態を格納する列挙子を作成します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
 このインターフェイスを呼び出すことによって取得、`QueryInterface`メソッドを[IDiaTable](../../debugger/debug-interface-access/idiatable.md)オブジェクト。 詳細については、例を参照してください。
@@ -79,8 +79,8 @@ IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>要件
-ヘッダー: Dia2.h
+## <a name="requirements"></a>必要条件
+ヘッダー:Dia2.h
 
 ライブラリ: diaguids.lib
 
