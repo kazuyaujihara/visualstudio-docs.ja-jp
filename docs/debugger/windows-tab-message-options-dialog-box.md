@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f60201bacd928b4744795e644cb1d9e5de55b75
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929178"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>[ウィンドウ] タブ ([メッセージ オプション] ダイアログ ボックス)
 使用して、 **Windows**メッセージの一覧のスコープを設定するタブ[メッセージ ビュー](../debugger/messages-view.md)します。 表示する、[メッセージ オプション ダイアログ ボックス](../debugger/message-options-dialog-box.md)、選択**ログ メッセージ**から、**スパイ**メニュー。

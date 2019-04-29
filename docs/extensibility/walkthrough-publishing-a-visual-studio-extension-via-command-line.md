@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966267"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>チュートリアル: コマンドラインを使用して Visual Studio 拡張機能を公開
 
@@ -200,7 +200,7 @@ This is test extension.
 
 この場合は、既定の VSPackage の拡張機能は使用しますが、同じ手順は、すべての種類の拡張機能の有効です。
 
-1. メニュー コマンドが"TestPublish"という名前の C# で VSPackage を作成します。 詳細については、[初めての拡張機能を作成を参照してください。Hello World](../extensibility/extensibility-hello-world.md)します。
+1. メニュー コマンドが"TestPublish"という名前の c# で VSPackage を作成します。 詳細については、次を参照してください。[初めての拡張機能を作成します。Hello World](../extensibility/extensibility-hello-world.md)します。
 
 ### <a name="package-your-extension"></a>拡張機能をパッケージ化します。
 

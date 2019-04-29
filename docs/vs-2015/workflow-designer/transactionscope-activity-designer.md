@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: abed15a1ce3d406cfd5e95318dd332a677f61095
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976540"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope アクティビティ デザイナー
 **TransactionScope**作成および構成するアクティビティ デザイナーが使用される、<xref:System.Activities.Statements.TransactionScope>アクティビティ。  

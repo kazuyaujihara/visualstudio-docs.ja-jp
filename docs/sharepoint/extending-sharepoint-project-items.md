@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f60c95418379399196c461e055645ae7c85a473e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967397"
 ---
 # <a name="extend-sharepoint-project-items"></a>SharePoint プロジェクト項目を拡張します。
   Visual Studio で既にインストールされている SharePoint プロジェクト項目の種類に機能を追加する場合は、プロジェクト項目の拡張機能を作成します。 たとえば、組み込みの拡張機能を作成できます**イベント レシーバー**または**リスト定義**プロジェクト項目を Visual Studio またはカスタム プロジェクト項目の種類の拡張機能を作成することができます。 すべての種類の SharePoint プロジェクト項目の拡張機能を作成することもできます。

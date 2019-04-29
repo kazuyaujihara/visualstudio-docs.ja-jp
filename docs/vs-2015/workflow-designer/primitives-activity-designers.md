@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ed26f1522913c0a8b395a0c058f73f66843eb1df
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "59002167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971278"
 ---
 # <a name="primitives-activity-designers"></a>プリミティブ アクティビティ デザイナー
 プリミティブ アクティビティ デザイナーは、Assign アクティビティや Delay アクティビティなどの、<xref:System.Activities.Statements> 名前空間の各種アクティビティを作成および構成するために使用します。 このセクションに含まれているトピックでは、[!INCLUDE[wfd2](../includes/wfd2-md.md)]のアクティビティ デザイナーおよびテンプレート デザイナーの使用方法についてのガイドラインを示します。  

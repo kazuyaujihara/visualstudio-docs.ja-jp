@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 823d9597e61d87d15ab9e96afad7d84703be68f9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912331"
 ---
 # <a name="extend-the-editor-and-language-services"></a>エディターと言語サービスを拡張します。
 独自のエディターに (IntelliSense) などの言語サービスの機能を追加し、Visual Studio コード エディターのほとんどの機能を拡張できます。  拡張することができますの完全な一覧を参照してください。[言語サービスとエディターの拡張機能ポイント](../extensibility/language-service-and-editor-extension-points.md)します。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 16c785534b843977f28c9a1383ac93f33e216947
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908949"
 ---
 # <a name="source-control-integration-essentials"></a>ソース管理の統合の基本情報
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 2 種類のソース管理の統合をサポートしています: ソース管理プラグインを基本的な機能を提供し、ソース コントロールのプラグイン API (旧称 MSSCCI API)、および VSPackage に基づくソース制御の統合ソリューションを使用してビルドします。堅牢な機能を提供します。
@@ -33,7 +33,7 @@ ms.locfileid: "56619486"
 
 3. ヘルパー UI を作成し、ソース コントロール アダプターのパッケージが表示されたときに表示 (、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ソース管理プラグインをソース管理機能を扱うコンポーネントです)。
 
-   詳細については、[をソース管理プラグインを作成する](../../extensibility/internals/creating-a-source-control-plug-in.md)を参照してください。
+   詳細については、次を参照してください。[をソース管理プラグインを作成する](../../extensibility/internals/creating-a-source-control-plug-in.md)します。
 
 ## <a name="source-control-vspackage"></a>ソース管理 VSPackage
  ソース管理 VSPackage 実装では、カスタマイズされた代替を作成できる、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ソース UI コントロールです。 このアプローチは、ソース管理の統合を完全に制御を提供する UI 要素を提供し、それ以外の場合、プラグインのアプローチの下に指定するソース コントロールのインターフェイスを実装する必要しますが、あります。
@@ -48,7 +48,7 @@ ms.locfileid: "56619486"
 
 4. ように、クエリを編集し、クエリの保存のイベントを処理[クエリ編集のクエリの保存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)します。
 
-   詳細については、[ソース管理 VSPackage を作成する](../../extensibility/internals/creating-a-source-control-vspackage.md)を参照してください。
+   詳細については、次を参照してください。[ソース管理 VSPackage を作成する](../../extensibility/internals/creating-a-source-control-vspackage.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [概要](../../extensibility/internals/source-control-integration-overview.md)

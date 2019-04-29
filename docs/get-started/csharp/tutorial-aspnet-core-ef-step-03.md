@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: c1d95d7621a97a36fdf737e7d3dd4f8baf713645
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553948"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>手順 3: Entity Framework を使用してデータを処理する
 
@@ -122,9 +122,9 @@ public static void Main(string[] args)
 
 次のビデオでは、アプリに Web API サポートを追加する方法を学びます。
 
-[手順 4: ASP.NET Core アプリから Web API を公開する](tutorial-aspnet-core-ef-step-04.md)
+[手順 4:ASP.NET Core アプリから Web API を公開する](tutorial-aspnet-core-ef-step-04.md)
 
 ## <a name="see-also"></a>関連項目
 
-- [ASP.NET Core での Entity Framework Core を使用した Razor ページ](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
-- [ASP.NET Core Razor ページと EF Core](/aspnet/core/data/?view=aspnetcore-2.1)
+- [ASP.NET Core での Entity Framework Core を使用した Razor Pages](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
+- [ASP.NET Core Razor Pages と EF Core](/aspnet/core/data/?view=aspnetcore-2.1)

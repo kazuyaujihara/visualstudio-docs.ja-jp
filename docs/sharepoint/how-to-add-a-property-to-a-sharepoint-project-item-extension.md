@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20a7abaa8c132b3cd1679ab95ed8154b8ca86502
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967236"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>方法: SharePoint プロジェクト項目の拡張機能にプロパティを追加します。
   プロジェクト項目の拡張機能を使用して、Visual Studio で既にインストールされている SharePoint プロジェクト アイテムにプロパティを追加することができます。 プロパティを表示する、**プロパティ**ウィンドウで、プロジェクト項目を選択すると**ソリューション エクスプ ローラー**します。

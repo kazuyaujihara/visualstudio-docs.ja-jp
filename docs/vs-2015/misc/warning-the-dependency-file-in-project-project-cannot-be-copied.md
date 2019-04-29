@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d2f2a70df72f6dfcdc8946ca2f5afec9efa21a65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934430"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>警告: 依存関係&#39;ファイル&#39;プロジェクトで&#39;プロジェクト&#39;の参照を上書きするために、実行ディレクトリにコピーできません&#39;ファイル。&#39;
 依存関係間で競合が発生しています。同じ名前の複数の異なるアセンブリ ファイルを、アプリケーションを実行する bin ディレクトリにコピーする必要があります。 依存関係の 1 つがプライマリ参照であるため、実行ディレクトリは競合を解決することができます。  

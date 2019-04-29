@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c3081e30f57f380e446d7928db1f4f2d77a4b078
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934440"
 ---
 # <a name="walkthrough-getting-information-from-a-selected-link"></a>チュートリアル: 選択されたリンクからの情報の取得
 このトピックは今後は使用しません。 参照してください[を移動して、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。

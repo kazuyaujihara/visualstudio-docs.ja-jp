@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fb5c4d7497525706384ced52caae1ba8e02f3e23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966771"
 ---
 # <a name="how-to-create-an-application-page"></a>方法: アプリケーション ページを作成します。
   1 つまたは複数の SharePoint サイトの ASP.NET web ページを作成することができます。 SharePoint では、これらのページに、アプリケーション ページは呼び出されます。 サイトのページとは異なり、アプリケーション ページには、ページの背後で実行されるコードが含まれています。 詳細については、次を参照してください。[用 SharePoint アプリケーション ページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)です。

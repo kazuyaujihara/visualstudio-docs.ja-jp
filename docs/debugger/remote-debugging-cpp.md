@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: fbfdb246769ac55afd7f164d91673e39e293f4c4
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903521"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>リモート Visual Studio での Visual C プロジェクトのデバッグ
 別のコンピューター上の Visual Studio アプリケーションをデバッグ、インストールして、アプリを展開するコンピューターでリモート ツールを実行、Visual Studio からリモート コンピューターに接続して、デプロイして、アプリを実行するプロジェクトを構成します。
@@ -31,7 +31,7 @@ ms.locfileid: "57526063"
 
 リモート デバッグのユニバーサル Windows アプリ (UWP) の詳細については、次を参照してください。[インストール済みのアプリ パッケージをデバッグ](debug-installed-app-package.md)します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 リモート デバッガーは Windows 7 でサポートされている以降 (phone ではありません) と Windows Server の Windows Server 2008 Service Pack 2 以降のバージョン。 要件の完全な一覧を参照してください。[要件](../debugger/remote-debugging.md#requirements_msvsmon)します。
 
@@ -72,10 +72,10 @@ ms.locfileid: "57526063"
    |リモート コマンド|C:\remotetemp\mymfc.exe|
    |作業ディレクトリ|C:\remotetemp|
    |リモート サーバー名|MJO DL:*portnumber*|
-   |Connection|Windows 認証を使用したリモート接続|
-   |[デバッガーのタイプ]|ネイティブのみ|
-   |[配置ディレクトリ]|C:\remotetemp|
-   |[配置する追加ファイル]|C:\data\mymfcdata.txt|
+   |接続|Windows 認証でリモート接続する|
+   |デバッガーの種類|ネイティブのみ|
+   |配置ディレクトリ|C:\remotetemp|
+   |追加の配置ファイル|C:\data\mymfcdata.txt|
 
     (省略可能) 追加のファイルを展開する場合、両方のコンピューターでフォルダーが存在する必要があります。
 

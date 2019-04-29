@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 36d822d60d1a28d48f660f6d358b75bf4a913048
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000028"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;ドキュメント&gt;要素 (Visual Studio での Office 開発)
   `document`の要素、`vstov4`名前空間は、ドキュメント レベルのカスタマイズのカスタマイズに固有の情報を格納します。
@@ -37,7 +37,7 @@ ms.locfileid: "54866387"
 
 |属性|説明|
 |---------------|-----------------|
-|`solutionId`|必須。 ドキュメント レベルのソリューションを一意に識別する、Visual Studio Tools for Office ランタイムによって使用される GUID です。 この値は、カスタムのドキュメントの _AssemblyLocation プロパティとして格納されます。 詳細については、[カスタム ドキュメント プロパティの概要](../vsto/custom-document-properties-overview.md)を参照してください。|
+|`solutionId`|必須。 ドキュメント レベルのソリューションを一意に識別する、Visual Studio Tools for Office ランタイムによって使用される GUID です。 この値は、カスタムのドキュメントの _AssemblyLocation プロパティとして格納されます。 詳細については、次を参照してください。[カスタム ドキュメント プロパティの概要](../vsto/custom-document-properties-overview.md)します。|
 
  `document` に子要素はありません。
 

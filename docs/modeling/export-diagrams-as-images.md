@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 069a9ce5f3126550f54a5d2780411f6832acee83
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994544"
 ---
 # <a name="export-diagrams-as-images"></a>イメージとしてダイアグラムをエクスポートする
 Visual Studio で、利害関係者、ユーザー、または同じバージョンの Visual Studio を使用しないプロジェクトのチーム メンバーと共有することができるようにのモデリング図を読み取り専用の形式で保存できます。
