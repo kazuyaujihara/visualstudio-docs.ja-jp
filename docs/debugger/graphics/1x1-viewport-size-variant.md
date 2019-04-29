@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5b2c96b11c2075ce88b43cdebc34b905141c973
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848743"
 ---
 # <a name="1x1-viewport-size-variant"></a>1x1 ビューポイント サイズ バリアント
 すべてのレンダー ターゲットでビューポートのディメンションを 1x1 ピクセルに減らします。
@@ -23,7 +23,7 @@ ms.locfileid: "56690423"
 
  このバリアントでは、大規模なパフォーマンスの向上を示している場合、アプリが多すぎるのフィル レートを使用していることを示す場合します。 さらの解像度は、ターゲット プラットフォームに対して高すぎる可能性がありますか、アプリは、後で上書きされるピクセルの膨大な時間シェーディングを費やすことができました、別名*オーバー ドロー*します。 小さなフレーム バッファーまたはアルファブレンディングを減らすには、アプリのパフォーマンスが向上します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  `ID3D11DeviceContext::OMSetRenderTargets` または `ID3D11DeviceContext::RSSetViewports` への呼び出しが行われるたびに、ビューポートのディメンションは 1x1 ピクセルにリセットされます。
 
 ## <a name="example"></a>例

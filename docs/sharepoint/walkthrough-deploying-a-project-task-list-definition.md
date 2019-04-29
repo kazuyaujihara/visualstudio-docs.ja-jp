@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7ea7063ce432841e812312b7c7c36721a7d2d099
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784232"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>チュートリアル: プロジェクト タスク リスト定義を展開します。
 
@@ -162,7 +162,7 @@ Visual Studio、IIS アプリケーション プールのリサイクル、以�
 
      たとえば、`Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName` のようにします。
 
-     リモート展開の詳細については、[を使用してソリューション](http://go.microsoft.com/fwlink/?LinkId=217680)と[の追加と SharePoint 2010 での PowerShell を使用したソリューションの配置](http://go.microsoft.com/fwlink/?LinkId=217682)を参照してください。
+     リモート展開の詳細については、次を参照してください。[を使用してソリューション](http://go.microsoft.com/fwlink/?LinkId=217680)と[の追加と SharePoint 2010 での PowerShell を使用したソリューションの配置](http://go.microsoft.com/fwlink/?LinkId=217682)します。
 
 ## <a name="next-steps"></a>次の手順
 

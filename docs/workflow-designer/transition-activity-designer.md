@@ -11,11 +11,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: ad9572004702f53cefaad05bfcaad0cd29520542
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433944"
 ---
 # <a name="transition-activity-designer"></a>Transition アクティビティ デザイナー
 
@@ -36,7 +36,7 @@ Transition アクティビティ デザイナーを使用すると、2 つの状
 |**ソース**|True|この遷移の発生元の状態を示します。 元の状態の名前をクリックすると、デザイナー ビューはその状態の展開ビューに切り替わります。 この値は、遷移が作成されていて、変更できない場合に設定されます。|
 |<xref:System.Activities.Statements.Transition.Trigger%2A>|False|完了時に遷移を開始するアクティビティを指定します。 このアクティビティを設定するからアクティビティをドラッグ、**ツールボックス**にドロップし、**トリガー**遷移のセクション。|
 |<xref:System.Activities.Statements.Transition.Action%2A>|False|トリガー アクティビティが完了したときに実行されるアクティビティを指定します、<xref:System.Activities.Statements.Transition.Condition%2A>がある場合に評価される**true**します。 このアクティビティは、元の状態の <xref:System.Activities.Statements.State.Exit%2A> アクティビティ (存在する場合) が実行された後、遷移先の状態に遷移するときに実行されます。 アクティビティをドラッグして、この値を設定することができます、transition デザイナーが展開されている場合、**ツールボックス**にドロップし、**アクション**遷移のセクション。 1 つの遷移に対して複数のアクションが存在する場合があります。 遷移内に複数のアクションがある場合は、アクションに表示される上向き矢印または下向き矢印をクリックすることで、個々のアクションの展開と折りたたみ、および並べ替えを実行できます。|
-|**変換先**|True|遷移の完了後にステート マシンが遷移した状態を示します。 これは、オブジェクト モデルにおける遷移の <xref:System.Activities.Statements.Transition.To%2A> プロパティに対応します。 遷移先の状態の名前をクリックすると、デザイナー ビューはその状態の展開ビューに切り替わります。 この値は、遷移が作成されたときに設定され、デザイナーで遷移を遷移先の状態に接続する矢印をドラッグすると変更できます。|
+|**Destination (公開先)**|True|遷移の完了後にステート マシンが遷移した状態を示します。 これは、オブジェクト モデルにおける遷移の <xref:System.Activities.Statements.Transition.To%2A> プロパティに対応します。 遷移先の状態の名前をクリックすると、デザイナー ビューはその状態の展開ビューに切り替わります。 この値は、遷移が作成されたときに設定され、デザイナーで遷移を遷移先の状態に接続する矢印をドラッグすると変更できます。|
 
 ### <a name="creating-transitions"></a>遷移の作成
 

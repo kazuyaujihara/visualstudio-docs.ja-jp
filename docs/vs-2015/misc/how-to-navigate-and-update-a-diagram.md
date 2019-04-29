@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 71d37232bd2179b2fe27d7bcbad49ab4aac991ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938236"
 ---
 # <a name="how-to-navigate-and-update-a-diagram"></a>方法: 移動し、図を更新
 このトピックは、他のコンテンツと統合されました。 」に進んでください[を移動して、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。

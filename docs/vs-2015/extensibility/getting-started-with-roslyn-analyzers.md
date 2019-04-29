@@ -9,18 +9,18 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 104e3a30589f5892c1440266afd7917486d704ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546649"
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>Roslyn アナライザーの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio で、プロジェクト ベースのライブ コード アナライザー、API の作成者は、NuGet パッケージの一部としてドメイン固有のコード分析を送付できます。  これらのアナライザーを活用するには、.NET コンパイラ プラットフォーム (コードネーム"Roslyn") してため、(これ以上待機している問題を検出するコードをビルドする)、行が完了する前に入力すると、コードで警告する可能性があります。  アナライザーは、すぐに、コードをクリーンアップできるようにする Visual Studio 電球プロンプトを通じて、コードの自動修正にも出現できます。
 
-## <a name="getting-started"></a>作業の開始
+## <a name="getting-started"></a>.NET ネイティブの概要
 [Roslyn のライブ コード アナライザーの概要とチュートリアル](https://msdn.microsoft.com/magazine/dn879356.aspx)
 
 [コードを追加するには、チュートリアルが修正されました。アナライザーの問題に対してユーザーの修正を提供します。](https://msdn.microsoft.com/magazine/dn904670.aspx)

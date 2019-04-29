@@ -1,5 +1,5 @@
 ---
-title: C++ 用のデータ ツール
+title: データ ツールC++
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,19 +11,19 @@ ms.workload:
 - data-storage
 - cplusplus
 ms.openlocfilehash: 5157f1d6a851e0784e79dfbfe5b94aef0490a026
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565241"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>C++ 用の Visual Studio データ ツール
 
-多くの場合、ネイティブ C++ は、データ ソースにアクセスするときに、最速のパフォーマンスを提供します。 ただし、ツールの Visual Studio での C++ アプリケーションのデータは、.NET アプリケーションはそれほど高度ではありません。 たとえば、**データソース**にドラッグ アンド ドロップを C++ のデザイン画面にデータ ソース ウィンドウを使用することはできません。 オブジェクト リレーショナル レイヤーを必要な場合は独自に作成またはサード パーティ製の製品を使用する必要があります。 Microsoft Foundation Class ライブラリを使用するアプリケーションはメモリにデータを格納し、ユーザーに表示するドキュメントとビュー、と共に、いくつかのデータベース クラスを使用することもできますも、データ バインディング機能についても同様です。 詳細については、次を参照してください。 [Visual c でのデータ アクセス](/cpp/data/data-access-in-cpp)します。
+多くの場合、ネイティブ C++ は、データ ソースにアクセスするときに、最速のパフォーマンスを提供します。 ただし、ツールの Visual Studio での C++ アプリケーションのデータは、.NET アプリケーションはそれほど高度ではありません。 たとえば、**データ ソース**ウィンドウは、ドラッグ アンド ドロップにデータ ソースには使用できません、C++デザイン サーフェイス。 オブジェクト リレーショナル レイヤーを必要な場合は独自に作成またはサード パーティ製の製品を使用する必要があります。 Microsoft Foundation Class ライブラリを使用するアプリケーションはメモリにデータを格納し、ユーザーに表示するドキュメントとビュー、と共に、いくつかのデータベース クラスを使用することもできますも、データ バインディング機能についても同様です。 詳細については、次を参照してください。 [Visual c でのデータ アクセス](/cpp/data/data-access-in-cpp)します。
 
 SQL データベースに接続するには、ネイティブ C++ アプリケーションは、ODBC および OLE DB ドライバーおよび ADO プロバイダーは、Windows に含まれているを使用できます。 これらは、それらのインターフェイスをサポートする任意のデータベースに接続できます。 ODBC ドライバーは、標準です。 OLE DB は、旧バージョンとの互換性のために提供されます。 このようなデータ テクノロジの詳細については、次を参照してください。 [Windows Data Access Components](/previous-versions/windows/desktop/ms692897(v=vs.85))します。
 
-SQL Server 2005 でのカスタム機能を利用し、後で、使用して、 [SQL Server native client](/sql/relational-databases/native-client/sql-server-native-client)します。 ネイティブ クライアントでは、SQL Server ODBC ドライバーと 1 つのネイティブ ダイナミック リンク ライブラリ (DLL) で SQL Server OLE DB プロバイダーも含まれています。 これらは、Microsoft SQL Server にネイティブ コード Api (ODBC、OLE DB と ADO) を使用してアプリケーションをサポートします。 SQL Server Native Client は、SQL Server Data Tools と共にインストールされます。 プログラミング ガイドはこちら: [SQL Server native client プログラミング](/sql/relational-databases/native-client/sql-server-native-client-programming)します。
+SQL Server 2005 でのカスタム機能を利用し、後で、使用して、 [SQL Server native client](/sql/relational-databases/native-client/sql-server-native-client)します。 ネイティブ クライアントでは、SQL Server ODBC ドライバーと 1 つのネイティブ ダイナミック リンク ライブラリ (DLL) で SQL Server OLE DB プロバイダーも含まれています。 これらは、Microsoft SQL Server にネイティブ コード Api (ODBC、OLE DB と ADO) を使用してアプリケーションをサポートします。 SQL Server Native Client は、SQL Server Data Tools と共にインストールされます。 プログラミング ガイドは、ここでは。[SQL Server ネイティブ クライアントのプログラミング](/sql/relational-databases/native-client/sql-server-native-client-programming)します。
 
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>C++ アプリケーションから ODBC および SQL Native Client で localDB に接続するには
 

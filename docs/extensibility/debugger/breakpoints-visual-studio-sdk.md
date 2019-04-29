@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4c353ca11df1a897ec5dc8acecd822c1c1f44e92
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890699"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>ブレークポイント (Visual Studio SDK)
 ブレークポイントの 3 種類があります。 保留中、バインド、およびエラー。
@@ -38,7 +38,7 @@ ms.locfileid: "56707030"
 
   **エラー ブレークポイントの場合:**
 
-- コードのコンテキストに保留中のブレークポイントをバインドするときにエラーを説明するための抽象型です。 エラー、ブレークポイントでは、またはブレークポイント式自体の場所で、いずれかのエラーについて説明します。 詳細については、[ブレークポイントのバインディング](../../extensibility/debugger/binding-breakpoints.md)を参照してください。
+- コードのコンテキストに保留中のブレークポイントをバインドするときにエラーを説明するための抽象型です。 エラー、ブレークポイントでは、またはブレークポイント式自体の場所で、いずれかのエラーについて説明します。 詳細については、次を参照してください。[ブレークポイントのバインディング](../../extensibility/debugger/binding-breakpoints.md)します。
 
    ブレークポイントのエラーは、エラーまたは警告のいずれかにできます。
 

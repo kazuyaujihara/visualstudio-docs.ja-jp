@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 64fbf5b64b57425b1bdee3ae3475c234384db062
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910606"
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>自動の従来の言語サービスで書式設定
 オート フォーマット、言語サービスでは、ユーザーが既知のコード コンストラクトの入力を開始するとのコード スニペットが自動的に挿入します。
