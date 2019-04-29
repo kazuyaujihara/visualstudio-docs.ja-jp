@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f3da7f0da3901511e0f14e48b3ff0500928e3774
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806629"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221:ファイナライザーは保護されなければなりません
 
@@ -34,7 +34,7 @@ ms.locfileid: "55917481"
  パブリック型では、ファミリ (保護された) アクセスを指定していないファイナライザーを実装します。
 
 ## <a name="rule-description"></a>規則の説明
- ファイナライザーは、ファミリ アクセス修飾子を使用する必要があります。 このルールは、C#、Visual Basic、および Visual C コンパイラによって強制されます。
+ ファイナライザーは、ファミリ アクセス修飾子を使用する必要があります。 このルールは、c#、Visual Basic、および Visual C コンパイラによって強制されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を解決するには、ファミリ アクセスできるように、ファイナライザーを変更します。

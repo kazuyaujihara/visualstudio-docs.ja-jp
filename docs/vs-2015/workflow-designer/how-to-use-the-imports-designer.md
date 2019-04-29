@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f1c305129a7f46c8d1841f28d8084535ec7e4d9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931036"
 ---
 # <a name="how-to-use-the-imports-designer"></a>方法: インポート デザイナーを使用する
 インポート デザイナーを使用すると、式で使用する型の名前空間を入力できます。 ほぼ同じように、**インポート**または**を使用して**単に完全修飾ではなく、式の型名を入力することで、Visual Basic .NET と c#、インポート デザイナーで名前空間を指定するキーワードを使用します。バージョンの型名。  

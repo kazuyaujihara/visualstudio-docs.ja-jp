@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f5c6b6dc6f02bfc22e6a02f708deefe4208d91ff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912631"
 ---
 # <a name="editor-factories"></a>エディター ファクトリ
 エディター ファクトリは、エディターのオブジェクトを作成し、物理ビューと呼ばれる、ウィンドウ フレームに配置されます。 ドキュメント データとエディターとデザイナーを作成するために必要なドキュメント ビュー オブジェクトを作成します。 Visual Studio のコア エディターと任意の標準エディターを作成する、エディター ファクトリが必要です。 エディター ファクトリのカスタム エディターを作成もできます。
@@ -25,7 +25,7 @@ ms.locfileid: "56694648"
  [!code-vb[VSSDKEditorFactories#1](../extensibility/codesnippet/VisualBasic/editor-factories_1.vb)]
  [!code-csharp[VSSDKEditorFactories#1](../extensibility/codesnippet/CSharp/editor-factories_1.cs)]
 
- エディターは、そのエディターによって処理されるファイルの種類を開くことが最初に読み込まれます。 特定のエディターまたは既定のエディターを開くことができます。 既定のエディターを選択すると、統合開発環境 (IDE) は正しいエディターを開くための決定し、開かれます。 詳細については、[エディターがプロジェクトでファイルを開きます決定](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)を参照してください。
+ エディターは、そのエディターによって処理されるファイルの種類を開くことが最初に読み込まれます。 特定のエディターまたは既定のエディターを開くことができます。 既定のエディターを選択すると、統合開発環境 (IDE) は正しいエディターを開くための決定し、開かれます。 詳細については、次を参照してください。[エディターがプロジェクトでファイルを開きます決定](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)します。
 
 ## <a name="register-editor-factories"></a>エディター ファクトリを登録します
  作成したエディターを使用する前に処理できるファイル拡張子を含めて、についてはまず登録する必要があります。

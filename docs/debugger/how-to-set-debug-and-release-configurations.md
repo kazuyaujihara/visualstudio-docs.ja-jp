@@ -32,11 +32,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847652"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Visual Studio でのデバッグおよびリリース構成の設定
 
@@ -44,7 +44,7 @@ Visual Studio プロジェクトでは、ご使用のプログラムに対応す
 
 デバッグ構成を完全なシンボリック デバッグ情報と最適化は行われません、プログラムをコンパイルします。 ソース コードと生成された命令の関係は非常に複雑であり、最適化を行うとデバッグが困難になるためです。
 
-プログラムのリリース構成では、シンボリック デバッグ情報がないとは完全に最適化されています。 マネージ コードと C++ コードでは、デバッグ情報を生成して .pdb ファイル、[コンパイラ オプションによって](#BKMK_symbols_release)のために使用されます。 .Pdb ファイルを作成するは、後で、リリース バージョンをデバッグする必要がある場合に役立ちます。
+プログラムのリリース構成では、シンボリック デバッグ情報がないとは完全に最適化されています。 マネージ コードとC++コード、.pdb ファイルにデバッグ情報を生成できます[コンパイラ オプションによって](#BKMK_symbols_release)ために使用されます。 .Pdb ファイルを作成するは、後で、リリース バージョンをデバッグする必要がある場合に役立ちます。
 
 ビルド構成の詳細については、「[ビルド構成について](../ide/understanding-build-configurations.md)」を参照してください。
 
@@ -73,7 +73,7 @@ Visual Studio プロジェクトでは、ご使用のプログラムに対応す
 
 ### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>C#、ASP.NET、または Visual Basic プロジェクトのシンボル ファイルを生成します。
 
-デバッグ構成のプロジェクト設定の詳細についてC#または Visual Basic では、「[プロジェクトの設定、C#デバッグ構成](../debugger/project-settings-for-csharp-debug-configurations.md)または[プロジェクトの Visual Basic デバッグの設定構成](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)します。
+C# または Visual Basic でのデバッグ構成のプロジェクト設定の詳細については、次を参照してください[デバッグ構成を c# のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)または[Visual basic プロジェクトの設定はデバッグ構成](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
 
 1. ソリューション エクスプローラーでプロジェクトを選択します。
 

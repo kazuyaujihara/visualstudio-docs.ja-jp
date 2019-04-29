@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4e4adb0747ce569bc372daf0d36cfe1719a2ff61
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830296"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 スタック フレームの詳細が公開されます。
@@ -52,7 +52,7 @@ IDiaFrameData : IUnknown
 |[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|関数を囲むデータ インターフェイスのフレームを取得します。|
 |[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|スタック アンワインドを実行し、スタック ウォーク フレーム インターフェイスでレジスタの現在の状態を返します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  フレームの使用の詳細は、アドレスとブロックの長さで表されるアドレス範囲に含まれる実行ポイントはいます。
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
@@ -112,8 +112,8 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 }
 ```
 
-## <a name="requirements"></a>要件
-ヘッダー: Dia2.h
+## <a name="requirements"></a>必要条件
+ヘッダー:Dia2.h
 
 ライブラリ: diaguids.lib
 

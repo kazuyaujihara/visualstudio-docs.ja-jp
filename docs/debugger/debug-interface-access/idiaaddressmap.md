@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 96b24dac472525a711073eccf41355ddb6f10611
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554236"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 DIA SDK がデバッグ オブジェクトの仮想および相対の仮想アドレスを計算する方法を制御できます。
@@ -42,14 +42,14 @@ IDiaAddressMap : IUnknown
 |[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|イメージの相対仮想アドレス変換を有効にするヘッダーのセット。|
 |[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|イメージのレイアウトの翻訳をサポートするために、アドレス マップを提供します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  このインターフェイスによって提供されるコントロールは 2 つを指定するデータのセットにカプセル化: イメージのヘッダーと、マップに対応します。 ほとんどのクライアントを使用して、 [idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)イメージと、メソッドことが必要なヘッダーとマップ データ自体のすべてを検出通常の適切なデバッグ情報を検索するメソッド。 ただし一部のクライアントは、特殊な処理とデータの検索を実装します。 このようなクライアントのメソッドを使用して、 `IDiaAddressMap` DIA SDK 検索結果を提供するインターフェイス。
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
  このインターフェイスは、DIA セッション オブジェクトから入手できます。 クライアントの呼び出し、 `QueryInterface` DIA セッション オブジェクト インターフェイスで、通常はメソッド[IDiaSession](../../debugger/debug-interface-access/idiasession.md)、取得、`IDiaAddressMap`インターフェイス。
 
-## <a name="requirements"></a>要件
- ヘッダー: Dia2.h
+## <a name="requirements"></a>必要条件
+ ヘッダー:Dia2.h
 
  ライブラリ: diaguids.lib
 

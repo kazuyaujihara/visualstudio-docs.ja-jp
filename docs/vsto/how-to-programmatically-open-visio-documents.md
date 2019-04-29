@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b863040bcceb4e86aae7ed4efd83c2466eec12c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812252"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>方法: プログラムによって Visio 図面を開く
   既存の Microsoft Office Visio 図面を開くための 2 つの方法はあります。開いている OpenEx とします。 メソッドは、図面を開く方法を呼び出し元が指定できる引数を提供する点を除いて、Open メソッドと同じです。

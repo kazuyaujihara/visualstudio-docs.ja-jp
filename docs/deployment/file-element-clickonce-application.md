@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9345f3f094e1c48204892cd40cca71a7e28eba7c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900277"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;ファイル&gt;要素 (ClickOnce アプリケーション)
 アセンブリ以外のファイルをすべてダウンロードして、アプリケーションで使用されるを識別します。
@@ -92,7 +92,7 @@ ms.locfileid: "59657209"
 |`size`|必須。 ファイルのバイト単位のサイズを指定します。|
 |`group`|場合は、オプション、`optional`属性が指定されていないかに設定`false`; 場合は必須`optional`は`true`します。 このファイルが所属するグループの名前。 名前は、開発者が選択した任意の Unicode 文字列値を指定でき、オンデマンドでのファイルをダウンロードするために使用、<xref:System.Deployment.Application.ApplicationDeployment>クラス。|
 |`optional`|任意。 このファイルにする必要があるかどうか、アプリケーションが最初にダウンロードを実行、またはオンデマンドで、アプリケーションが要求されるまで、サーバーにのみに存在する必要がありますファイルのかどうかを指定します。 場合`false`または未定義の場合に、アプリケーションが初めて実行したり、インストールされているときに、ファイルはダウンロードされます。 場合`true`、`group`を有効にするアプリケーション マニフェストを指定する必要があります。 `optional` true にできない場合`writeableType`値を指定した`applicationData`します。|
-|`writeableType`|任意。 このファイルがデータ ファイルであることを指定します。 現在、有効値は `applicationData` のみです。|
+|`writeableType`|省略可能です。 このファイルがデータ ファイルであることを指定します。 現在、有効値は `applicationData` のみです。|
 
 ## <a name="typelib"></a>タイプ ライブラリ
  `typelib`要素は、ファイルの要素のオプションの子。 要素には、COM コンポーネントが属しているタイプ ライブラリがについて説明します。 要素には、次の属性があります。
@@ -111,13 +111,13 @@ ms.locfileid: "59657209"
 |属性|説明|
 |---------------|-----------------|
 |`clsid`|必須。 GUID で表される COM コンポーネントのクラス ID。|
-|`description`|省略可能です。 クラス名。|
+|`description`|任意。 クラス名。|
 |`threadingModel`|省略可能です。 インプロセス COM クラスで使用されるスレッド処理モデル。 このプロパティが null の場合、スレッド処理モデルは使用されません。 コンポーネントがクライアントのメイン スレッドで作成され、他のスレッドからの呼び出しは、このスレッドにマーシャ リングされます。 次に、有効な値を示します。<br /><br /> `Apartment`、 `Free`、 `Both`、および `Neutral`。|
-|`tlbid`|任意。 この COM コンポーネントのタイプ ライブラリの GUID です。|
+|`tlbid`|省略可能です。 この COM コンポーネントのタイプ ライブラリの GUID です。|
 |`progid`|省略可能です。 バージョンに依存する COM コンポーネントに関連付けられたプログラム id。 形式を`ProgID`は`<vendor>.<component>.<version>`します。|
-|`miscStatus`|任意。 アセンブリ内の重複によって提供される情報をマニフェスト、`MiscStatus`レジストリ キー。 場合の値を`miscStatusIcon`、 `miscStatusContent`、 `miscStatusDocprint`、または`miscStatusThumbnail`属性が見つからない場合は、対応する既定値が記載`miscStatus`して足りない属性を使用します。 値は、次の表の属性値のコンマ区切りの一覧を指定できます。 COM クラスが必要とする OCX クラスである場合は、この属性を使用することができます`MiscStatus`レジストリ キーの値。|
-|`miscStatusIcon`|任意。 アセンブリ内の重複はマニフェスト DVASPECT_ICON によって提供される情報です。 オブジェクトのアイコンを提供できます。 値は、次の表の属性値のコンマ区切りの一覧を指定できます。 COM クラスが必要とする OCX クラスである場合は、この属性を使用することができます`Miscstatus`レジストリ キーの値。|
-|`miscStatusContent`|任意。 アセンブリ内の重複はマニフェスト DVASPECT_CONTENT によって提供される情報です。 画面またはプリンターの表示可能な複合ドキュメントを提供できます。 値は、次の表の属性値のコンマ区切りの一覧を指定できます。 COM クラスが必要とする OCX クラスである場合は、この属性を使用することができます`MiscStatus`レジストリ キーの値。|
+|`miscStatus`|省略可能です。 アセンブリ内の重複によって提供される情報をマニフェスト、`MiscStatus`レジストリ キー。 場合の値を`miscStatusIcon`、 `miscStatusContent`、 `miscStatusDocprint`、または`miscStatusThumbnail`属性が見つからない場合は、対応する既定値が記載`miscStatus`して足りない属性を使用します。 値は、次の表の属性値のコンマ区切りの一覧を指定できます。 COM クラスが必要とする OCX クラスである場合は、この属性を使用することができます`MiscStatus`レジストリ キーの値。|
+|`miscStatusIcon`|省略可能です。 アセンブリ内の重複はマニフェスト DVASPECT_ICON によって提供される情報です。 オブジェクトのアイコンを提供できます。 値は、次の表の属性値のコンマ区切りの一覧を指定できます。 COM クラスが必要とする OCX クラスである場合は、この属性を使用することができます`Miscstatus`レジストリ キーの値。|
+|`miscStatusContent`|省略可能です。 アセンブリ内の重複はマニフェスト DVASPECT_CONTENT によって提供される情報です。 画面またはプリンターの表示可能な複合ドキュメントを提供できます。 値は、次の表の属性値のコンマ区切りの一覧を指定できます。 COM クラスが必要とする OCX クラスである場合は、この属性を使用することができます`MiscStatus`レジストリ キーの値。|
 |`miscStatusDocPrint`|任意。 アセンブリ内の重複はマニフェスト DVASPECT_DOCPRINT によって提供される情報です。 プリンターに印刷される場合、画面に表示可能なオブジェクト表現を提供できます。 値は、次の表の属性値のコンマ区切りの一覧を指定できます。 COM クラスが必要とする OCX クラスである場合は、この属性を使用することができます`MiscStatus`レジストリ キーの値。|
 |`miscStatusThumbnail`|任意。 アセンブリ内の重複はマニフェスト DVASPECT_THUMBNAIL によって提供される情報です。 参照ツールで表示可能なオブジェクトのサムネイルを提供できます。 値は、次の表の属性値のコンマ区切りの一覧を指定できます。 COM クラスが必要とする OCX クラスである場合は、この属性を使用することができます`MiscStatus`レジストリ キーの値。|
 
@@ -127,11 +127,11 @@ ms.locfileid: "59657209"
 |属性|説明|
 |---------------|-----------------|
 |`iid`|必須。 インターフェイス ID (IID) はこのプロキシによって処理されます。 IID は、中かっこで囲む必要があります。|
-|`baseInterface`|任意。 インターフェイスが参照元のインターフェイスの IID`iid`が派生します。|
-|`numMethods`|任意。 インターフェイスによって実装されるメソッドの数。|
+|`baseInterface`|省略可能です。 インターフェイスが参照元のインターフェイスの IID`iid`が派生します。|
+|`numMethods`|省略可能です。 インターフェイスによって実装されるメソッドの数。|
 |`name`|省略可能です。 インターフェイスの名前は、コードに表示されます。|
 |`tlbid`|省略可能です。 指定されたインターフェイスの説明を格納するタイプ ライブラリ、`iid`属性。|
-|`proxyStubClass32`|任意。 32 ビット プロキシ Dll の CLSID を IID にマップします。|
+|`proxyStubClass32`|省略可能です。 32 ビット プロキシ Dll の CLSID を IID にマップします。|
 
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub
  `comInterfaceProxyStub`要素のオプションの子では、`file`要素が場合に必要な可能性があります、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションには、登録を必要としない COM を使用してデプロイする予定の COM コンポーネントが含まれています。 要素には、次の属性が含まれています。
@@ -139,10 +139,10 @@ ms.locfileid: "59657209"
 |属性|説明|
 |---------------|-----------------|
 |`iid`|必須。 インターフェイス ID (IID) はこのプロキシによって処理されます。 IID は、中かっこで囲む必要があります。|
-|`baseInterface`|省略可能です。 インターフェイスが参照元のインターフェイスの IID`iid`が派生します。|
+|`baseInterface`|任意。 インターフェイスが参照元のインターフェイスの IID`iid`が派生します。|
 |`numMethods`|省略可能です。 インターフェイスによって実装されるメソッドの数。|
 |`Name`|省略可能です。 インターフェイスの名前は、コードに表示されます。|
-|`Tlbid`|省略可能です。 指定されたインターフェイスの説明を格納するタイプ ライブラリ、`iid`属性。|
+|`Tlbid`|任意。 指定されたインターフェイスの説明を格納するタイプ ライブラリ、`iid`属性。|
 |`proxyStubClass32`|任意。 32 ビット プロキシ Dll の CLSID を IID にマップします。|
 |`threadingModel`|省略可能です。 任意。 インプロセス COM クラスで使用されるスレッド処理モデル。 このプロパティが null の場合、スレッド処理モデルは使用されません。 コンポーネントがクライアントのメイン スレッドで作成され、他のスレッドからの呼び出しは、このスレッドにマーシャ リングされます。 次に、有効な値を示します。<br /><br /> `Apartment`、 `Free`、 `Both`、および `Neutral`。|
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6698159828c6092f0bb00b9ccc132415df82d7b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840705"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 シンボルのインスタンスのプロパティについて説明します。
@@ -220,7 +220,7 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|シンボルの仮想テーブル シェイプの id を取得します。|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|ユーザー定義データ型が volatile かどうかを示すフラグを取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
 次の方法の 1 つを呼び出すことによってこのインターフェイスを取得します。
@@ -335,8 +335,8 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 }
 ```
 
-## <a name="requirements"></a>要件
-`Header:` dia2.h
+## <a name="requirements"></a>必要条件
+`Header:` Dia2.h
 
 ライブラリ: diaguids.lib
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c7d22e191eecb3c650744c6ddbaa815de479752a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800147"
 ---
 # <a name="source-control-plug-in-api-functions"></a>ソース管理プラグインの API 関数
 ソース管理プラグイン API は、次の関数は、ソース管理プラグインに従ってこの API を実装する必要がありますを提供します。 各関数とセマンティクスのシグネチャは、ビット フラグに関連付けられているし、その他のパラメーターはこのリファレンスで詳しく説明します。

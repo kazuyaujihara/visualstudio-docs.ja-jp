@@ -1,4 +1,4 @@
-﻿---
+---
 title: T4 テキスト テンプレートを使用した実行時テキスト生成
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 050af194c9fbdcabf99a880a0e9c5c4bf8913a3a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823945"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 テキスト テンプレートを使用した実行時テキスト生成
 
@@ -53,7 +53,7 @@ This report is Company Confidential.
 
 ### <a name="to-create-a-run-time-text-template"></a>ランタイム テキスト テンプレートを作成するには
 
-1. ソリューション エクスプローラーで、プロジェクトのショートカット メニューの **追加** > **新しい項目の追加** を選択します。
+1. ソリューション エクスプローラーで、プロジェクトのショートカット メニューの **追加**  >  **新しい項目の追加** を選択します。
 
 2. **新しい項目の追加** ダイアログ ボックスで、**ランタイム テキスト テンプレート** を選択します。 (Visual Basic では、**一般的な項目** > **全般**)。
 
@@ -80,7 +80,7 @@ This report is Company Confidential.
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>既存のテキスト ファイルをランタイム テンプレートに変換するには
 
-1. ファイルを Visual Studio プロジェクトに含めます。 ソリューション エクスプ ローラーで、プロジェクトのショートカット メニューの **追加** > **既存の項目** を選択します。
+1. ファイルを Visual Studio プロジェクトに含めます。 ソリューション エクスプ ローラーで、プロジェクトのショートカット メニューの **追加**  >  **既存の項目** を選択します。
 
 2. ファイルの設定 **カスタム ツール** プロパティを **TextTemplatingFilePreprocessor** にします。 ソリューション エクスプ ローラーで、ファイルのショートカット メニューの **プロパティ** を選択します。
 
@@ -107,7 +107,7 @@ language パラメーターは、プロジェクトの言語によって異な�
 
 ### <a name="plain-content"></a>プレーン コンテンツ
 
-アプリケーションが生成したいテキストを含む **.tt** ファイルを編集します。 例:
+アプリケーションが生成したいテキストを含む **.tt** ファイルを編集します。 例えば:
 
 ```html
 <html><body>
@@ -119,7 +119,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>埋め込まれたプログラム コード
 
-プログラム コードは`<#`と`#>`の間に挿入します。 例:
+プログラム コードは`<#`と`#>`の間に挿入します。 例えば:
 
 ```csharp
 <table>

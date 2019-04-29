@@ -1,5 +1,5 @@
 ---
-title: 'エラー: コードでターゲット プロセスが終了しました&#39;コード&#39;関数の評価中に&#39;関数&#39;|Microsoft Docs'
+title: エラー :コードでターゲット プロセスが終了しました&#39;コード&#39;関数の評価中に&#39;関数&#39;|Microsoft Docs
 ms.date: 4/06/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75d82b6011a0dfa7f2c388e7d5f39a9ebabcd663
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850822"
 ---
-# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>エラー: コードでターゲット プロセスが終了しました&#39;コード&#39;関数の評価中に&#39;関数&#39;
+# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>エラー :コードでターゲット プロセスが終了しました&#39;コード&#39;関数の評価中に&#39;関数&#39;
 
-メッセージの全文: 関数 'function' の評価中にターゲット プロセスがコード 'code' で終了しました。
+完全なメッセージ テキスト:コード 'code' 関数 'function' の評価中にターゲット プロセスが終了しました。
 
 .NET オブジェクトの状態を検査しやすいように、デバッガーは自動的に強制的に追加のコードを実行するデバッグ対象のプロセス (通常はプロパティの getter メソッドおよび`ToString`関数)。 ほとんどのシナリオでこれらの関数が正常に完了またはデバッガーでキャッチできる例外をスローします。 ただし、状況によっては、カーネルの境界を越える、ユーザー メッセージ ポンプが必要かが回復可能な例外はキャッチできないがあります。 結果をプロパティ get アクセス操作子またはコードを実行する ToString メソッドとしてどちらかが明示的にプロセスを終了します (などを呼び出す`ExitProcess()`) かキャッチできない、未処理の例外をスローします (たとえば、 `StackOverflowException`) は終了、デバッグ対象のプロセスと、デバッグ セッションを終了します。 このエラー メッセージが発生した場合は、この問題が発生します。
 
@@ -28,7 +28,7 @@ ms.locfileid: "56698171"
 
 この問題を 2 つの考えられる解決策があります。
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>解決方法 1: プロパティの get アクセス操作子または ToString メソッドの呼び出しからデバッガーを防止します。 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>解決方法 1:デバッガーのプロパティの get アクセス操作子または ToString メソッドの呼び出しを防ぐ 
 
 エラー メッセージでは、デバッガーを呼び出そうとする関数の名前を確認します。 関数の名前からには、その関数が再評価を試すことができます、**イミディ エイト**評価をデバッグするウィンドウ。 評価するときにデバッグが可能な**イミディ エイト**ウィンドウからの暗黙的な評価とは異なり、**自動変数/ローカル/ウォッチ**windows、未処理の例外でデバッガーが中断されます。
 
@@ -42,6 +42,6 @@ ms.locfileid: "56698171"
 
 このメソッドを変更することはできません、代替命令にターゲット プロセスを中断し、評価を再試行することができます。
 
-### <a name="solution-2-disable-all-implicit-evaluation"></a>解決方法 2: すべての暗黙的な評価を無効にします。
+### <a name="solution-2-disable-all-implicit-evaluation"></a>解決方法 2:すべての暗黙的な評価を無効にします。
 
 以前のソリューションで問題が解決しない場合に移動**ツール** > **オプション**、設定をオフにし、**デバッグ** >  **一般的な** > **プロパティの評価とその他の暗黙的な関数呼び出しを有効にする**します。 これは、ほとんどの暗黙的な関数の評価版ソフトウェアを無効にし、問題を解決する必要があります。

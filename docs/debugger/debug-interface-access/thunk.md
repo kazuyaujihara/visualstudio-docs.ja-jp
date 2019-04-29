@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 872723e4aaf425b388ce8d05f9c8f9d631dd5ed9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854385"
 ---
 # <a name="thunk"></a>サンク
 各`thunk`で識別される、`SymTagThunk`タグ。
@@ -58,7 +58,7 @@ ms.locfileid: "56619941"
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|このサンク (DIA SDK バージョン 8.0 でのみまたはそれ以降) を仮想テーブル内のオフセット。|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` 場合は、サンクは、揮発性 (以降でのみ DIA SDK バージョン 8.0) としてマークされます。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [シンボル型の構文階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)
 - [THUNK_ORDINAL 列挙型](../../debugger/debug-interface-access/thunk-ordinal.md)

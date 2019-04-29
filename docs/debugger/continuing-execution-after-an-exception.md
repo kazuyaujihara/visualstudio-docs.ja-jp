@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d557fc0ec056cac22603338f95920e5c721f67dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564100"
 ---
 # <a name="continuing-execution-after-an-exception"></a>例外後の実行の継続
 デバッガーは、例外のための実行を中断と、表示されます、**例外ヘルパー**、既定では。 無効にした場合、**例外ヘルパー**で、**オプション** ダイアログ ボックスが表示されます、**例外処理アシスタント**(c# または Visual Basic) または**例外**  ダイアログ ボックス (C++)。

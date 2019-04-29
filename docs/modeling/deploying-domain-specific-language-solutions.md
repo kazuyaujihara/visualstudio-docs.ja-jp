@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c17160fec7a1e8240edafc28174f1675946b5a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834199"
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>ドメイン固有言語ソリューションの配置
 自分のコンピューターまたは他のコンピューターでは、ドメイン固有言語をインストールできます。 Visual Studio は、ターゲット コンピューターに既にインストールする必要があります。

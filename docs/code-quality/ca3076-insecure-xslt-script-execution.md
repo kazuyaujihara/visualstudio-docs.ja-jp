@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5f98b022aef49a4d98ad4864793aa55732f8de6c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541091"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076:安全ではない XSLT スクリプトの実行
 
@@ -25,7 +25,7 @@ ms.locfileid: "55929181"
 
 ## <a name="cause"></a>原因
 
-.NET アプリケーションで XSLT (Extensible Stylesheet Language Transformation) を安全ではない方法で実行すると、攻撃者に機密情報を漏えいする可能性のある、信頼されていない URI 参照がプロセッサにより解決されるおそれがあります。そのことは、サービス拒否攻撃やクロスサイト攻撃につながります。 詳細については、[XSLT セキュリティ Considerations(.NET Guide)](/dotnet/standard/data/xml/xslt-security-considerations)を参照してください。
+.NET アプリケーションで XSLT (Extensible Stylesheet Language Transformation) を安全ではない方法で実行すると、攻撃者に機密情報を漏えいする可能性のある、信頼されていない URI 参照がプロセッサにより解決されるおそれがあります。そのことは、サービス拒否攻撃やクロスサイト攻撃につながります。 詳細については、次を参照してください。 [XSLT セキュリティ Considerations(.NET Guide)](/dotnet/standard/data/xml/xslt-security-considerations)します。
 
 ## <a name="rule-description"></a>規則の説明
 

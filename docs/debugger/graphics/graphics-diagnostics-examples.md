@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c9b500c9edfc7c5d3f8bba945ebb6bdfe4a3d6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849253"
 ---
 # <a name="graphics-diagnostics-examples"></a>グラフィックス診断例
 これらの例は、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] グラフィックス診断を使用して、DirectX ベースのアプリで発生するレンダリングの問題をデバッグする方法を示しています。

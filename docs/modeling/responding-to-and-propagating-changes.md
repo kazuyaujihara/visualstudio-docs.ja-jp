@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824008"
 ---
 # <a name="responding-to-and-propagating-changes"></a>変更内容への対応および変更内容の反映
 要素は、作成または削除、更新、ときに、モデルの他の部分やファイル、データベース、またはその他のコンポーネントなどの外部のリソースへの変更を反映するコードを記述できます。

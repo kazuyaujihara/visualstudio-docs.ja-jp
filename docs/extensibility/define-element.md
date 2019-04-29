@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ccb14705b4d799e1f7fa6de4728ee8f7fc7b3fb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912663"
 ---
 # <a name="define-element"></a>要素を定義します。
-シンボルの名前と値のペアを定義します。 このシンボルは、条件付き属性によって評価されることができます。 詳細については、[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)を参照してください。 参照してください、 [Symbols 要素](../extensibility/symbols-element.md)します。
+シンボルの名前と値のペアを定義します。 このシンボルは、条件付き属性によって評価されることができます。 詳細については、次を参照してください。[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。 参照してください、 [Symbols 要素](../extensibility/symbols-element.md)します。
 
 ## <a name="syntax"></a>構文
 
@@ -36,7 +36,7 @@ ms.locfileid: "56706640"
 |---------------|-----------------|
 |name|必須。 シンボルの名前。<br /><br /> 名前 =「モード」|
 |値|必須。 シンボルの値です。<br /><br /> 値 ="Standard"|
-|条件|任意。 詳細については、[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)を参照してください。|
+|条件|任意。 詳細については、次を参照してください。[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|
 
 ### <a name="child-elements"></a>子要素
  なし。

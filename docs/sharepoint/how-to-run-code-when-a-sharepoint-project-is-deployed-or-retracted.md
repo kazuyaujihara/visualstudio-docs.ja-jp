@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4aadc089fba5c1f55488c72bfd5c3e46ebf59487
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813473"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>方法: SharePoint プロジェクトを配置または取り消すときに、コードを実行します。
   SharePoint プロジェクトを配置または取り消すときに、追加のタスクを実行する場合は、Visual Studio によって生成されるイベントを処理できます。 詳細については、次を参照してください。 [SharePoint の拡張のパッケージ化と配置](../sharepoint/extending-sharepoint-packaging-and-deployment.md)します。

@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c14f9ed8803c02d1570ac2a3dee82fbdfca5f01
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796781"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816:GC.SuppressFinalize を正しく呼び出します
 
@@ -41,7 +41,7 @@ ms.locfileid: "55948538"
 
 - メソッドの実装ではない<xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>と呼び出し<xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>します。
 
-- メソッドを呼び出す<xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>以外の何か渡します[this (C#)](/dotnet/csharp/language-reference/keywords/this)または[Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me)します。
+- メソッドを呼び出す<xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>以外の何か渡します[this (c#)](/dotnet/csharp/language-reference/keywords/this)または[Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me)します。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -57,7 +57,7 @@ ms.locfileid: "55948538"
 
 - メソッドの実装でない場合<xref:System.IDisposable.Dispose%2A>への呼び出しを削除するか<xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>に型の移動または<xref:System.IDisposable.Dispose%2A>実装します。
 
-- すべての呼び出しを変更する<xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>渡す[this (C#)](/dotnet/csharp/language-reference/keywords/this)または[Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me)します。
+- すべての呼び出しを変更する<xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>渡す[this (c#)](/dotnet/csharp/language-reference/keywords/this)または[Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me)します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 
@@ -65,14 +65,14 @@ ms.locfileid: "55948538"
 
 ## <a name="example-that-violates-ca1816"></a>Ca 1816 に違反する例
 
-このコードを呼び出す方法を示しています。 <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>、に合格しなかったが、 [this (C#)](/dotnet/csharp/language-reference/keywords/this)または[Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me)します。 その結果、このコードには、ca 1816 ルールに違反しています。
+このコードを呼び出す方法を示しています。 <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>、に合格しなかったが、 [this (c#)](/dotnet/csharp/language-reference/keywords/this)または[Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me)します。 その結果、このコードには、ca 1816 ルールに違反しています。
 
 [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly#1](../code-quality/codesnippet/VisualBasic/ca1816-call-gc-suppressfinalize-correctly_1.vb)]
 [!code-csharp[FxCop.Usage.CallGCSuppressFinalizeCorrectly#1](../code-quality/codesnippet/CSharp/ca1816-call-gc-suppressfinalize-correctly_1.cs)]
 
 ## <a name="example-that-satisfies-ca1816"></a>Ca 1816 に適合する例
 
-この例では、メソッドを正しく呼び出し<xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>を渡すことによって[this (C#)](/dotnet/csharp/language-reference/keywords/this)または[Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me)します。
+この例では、メソッドを正しく呼び出し<xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>を渡すことによって[this (c#)](/dotnet/csharp/language-reference/keywords/this)または[Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me)します。
 
 [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../code-quality/codesnippet/VisualBasic/ca1816-call-gc-suppressfinalize-correctly_2.vb)]
 [!code-csharp[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../code-quality/codesnippet/CSharp/ca1816-call-gc-suppressfinalize-correctly_2.cs)]

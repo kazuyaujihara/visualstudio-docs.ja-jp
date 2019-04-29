@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f49ab8d3462877a28cf40aed519b71615b23f8d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856355"
 ---
 # <a name="t4-import-directive"></a>T4 インポート ディレクティブ
 
@@ -26,7 +26,7 @@ T4 テキスト テンプレートの作成方法の一般的な概要につい�
 <#@ import namespace="namespace" #>
 ```
 
- 次の例では、テンプレート コードで System.IO のメンバーの名前空間の明示を省略できます。
+ この例では、テンプレート コードで System.IO のメンバーの明示的な名前空間を省略できます。
 
 ```
 <#@ import namespace="System.IO" #>

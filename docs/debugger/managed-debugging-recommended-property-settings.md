@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 711a8c1e8353f6e57f7101549a3b5421a33e0ae4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846287"
 ---
-# <a name="managed-debugging-recommended-property-settings"></a>マネージド デバッグ : プロパティの推奨設定
+# <a name="managed-debugging-recommended-property-settings"></a>マネージド デバッグ:プロパティの推奨設定
 一部のプロパティは、すべてのマネージド デバッグ シナリオで同じように設定する必要があります。
 
  プロパティの推奨設定を以下に示します。
@@ -35,9 +35,9 @@ ms.locfileid: "56679308"
 
 |**プロパティ名**|**設定**|
 |-----------------------|-----------------|
-|**定数 DEBUG の定義**|C# および F#: チェック ボックスをオンに設定します。 これにより、アプリケーションで Debug クラスを使用できます。|
-|**定数 TRACE の定義**|C# および F#: チェック ボックスをオンに設定します。 これにより、アプリケーションで Trace クラスを使用できます。|
-|**コードの最適化**|C#、F#、および Visual Basic: false に設定します。 最適化されたコードは、生成された命令がソース コードと直接対応していないため、デバッグが困難です。 プログラムで、最適化されたコードだけに現れるバグが見つかった場合は、この設定を有効にできます。**[逆アセンブル]** ウィンドウに表示されるコードは最適化されたソースから生成されているため、コード エディターに表示されるコードとは一致しない可能性があります。 最適化されたコードをデバッグするには、[マイ コードのみ] をオフにする必要があります。 (「[ステップ実行をマイ コードのみに制限する](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)」を参照)。<br /><br /> 詳細については、次を参照してください。 [c# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)または[Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)します。|
+|**定数 DEBUG の定義**|C#F#:チェック ボックスをオンに設定します。 これにより、アプリケーションで Debug クラスを使用できます。|
+|**定数 TRACE の定義**|C#F#:チェック ボックスをオンに設定します。 これにより、アプリケーションで Trace クラスを使用できます。|
+|**コードの最適化**|C#、 F#、および Visual Basic:False に設定します。 最適化されたコードは、生成された命令がソース コードと直接対応していないため、デバッグが困難です。 プログラムで、最適化されたコードだけに現れるバグが見つかった場合は、この設定を有効にできます。**[逆アセンブル]** ウィンドウに表示されるコードは最適化されたソースから生成されているため、コード エディターに表示されるコードとは一致しない可能性があります。 最適化されたコードをデバッグするには、[マイ コードのみ] をオフにする必要があります。 (「[ステップ実行をマイ コードのみに制限する](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)」を参照)。<br /><br /> 詳細については、次を参照してください。 [c# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)または[Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)します。|
 |**出力パス**|bin\Debug\\ に設定します。|
 |**詳細コンパイル オプション**|Visual Basic のみ。 **[詳細]** をクリックして、次の表に示す詳細なプロパティを設定できるようにします。|
 

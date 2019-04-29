@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2be88a29d3e9e3da9d1963aa1226ffca0a0a2bbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813050"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>方法: リソース ファイルを使用して、ローカライズされた名前、プロパティ、およびアクセス許可を指定するには
   リソース ファイルを使用すると、ローカライズされた名前を指定、プロパティを定義およびビジネス データ接続 (BDC) モデルで定義されているアクセス許可の tor オブジェクトを適用することができます。 この情報を指定する追加、**ビジネス データ接続リソース**項目を含むプロジェクトを**Business Data Connectivity モデル**項目。 次のリソース ファイルの XML を編集することによって名前、プロパティ、およびアクセス許可を指定します。

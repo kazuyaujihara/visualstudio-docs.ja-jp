@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 22b84716f320883c71f534ea762adf34d5c2a983
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891946"
 ---
 # <a name="add-a-tool-window"></a>ツール ウィンドウを追加します。
 このチュートリアルでは、ツール ウィンドウを作成し、次の方法で Visual Studio に統合する方法について説明します。
@@ -39,7 +39,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 1. という名前のプロジェクトを作成する**FirstToolWin** VSIX のテンプレートを使用して、という名前のカスタム ツール ウィンドウの項目テンプレートを追加**FirstToolWindow**します。
 
     > [!NOTE]
-    > ツール ウィンドウで拡張機能の作成の詳細については、[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)を参照してください。
+    > ツール ウィンドウで拡張機能の作成の詳細については、次を参照してください。[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。
 
 ## <a name="add-a-control-to-the-tool-window"></a>ツール ウィンドウにコントロールを追加します。
 
@@ -262,7 +262,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
     最初の名前付きパラメーターは`Style`、値は`Tabbed`ウィンドウは、既存のウィンドウ タブにあることを意味します。 ドッキング位置がで指定された、`Window`パラメーターでは、この場合は、n の GUID、**ソリューション エクスプ ローラー**します。
 
     > [!NOTE]
-    > IDE のウィンドウの種類の詳細については、<xref:EnvDTE.vsWindowType>を参照してください。
+    > IDE のウィンドウの種類の詳細については、次を参照してください。<xref:EnvDTE.vsWindowType>します。
 
 ## <a name="test-the-tool-window"></a>テスト ツール ウィンドウ
 

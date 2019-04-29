@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d1e3ec8fd6598573a60f852727397d6baa63d3e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813737"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>方法: サーバー エクスプ ローラーで、組み込みの SharePoint ノードのデータを取得します。
   内の各組み込み SharePoint ノードの**サーバー エクスプ ローラー**ノードが表す基になる SharePoint コンポーネントのデータを取得できます。 詳細については、次を参照してください。[サーバー エクスプ ローラーで、SharePoint 接続 ノードを拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)します。

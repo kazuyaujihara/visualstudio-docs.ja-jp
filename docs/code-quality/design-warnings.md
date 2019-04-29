@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c8da8b003f74b21ab0a6178742c28f85423dd2ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816800"
 ---
 # <a name="design-warnings"></a>デザイン上の警告
 デザイン警告は、.NET Framework デザイン ガイドラインへの準拠をサポートします。
@@ -75,13 +75,13 @@ ms.locfileid: "55908895"
 | [CA 1049:ネイティブ リソースを所有する型は、破棄可能でなければなりません](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md) | アンマネージ リソースを割り当てる型では、IDisposable を実装することで、呼び出し元が必要に応じてリソースを解放し、リソースを保持するオブジェクトの有効期間を短縮できるようにする必要があります。 |
 | [CA 1050:名前空間の型を宣言します。](../code-quality/ca1050-declare-types-in-namespaces.md) | 型を名前空間内で宣言するのは、名前が衝突しないようにするためと、関連する型をオブジェクト階層形式で編成するためです。 |
 | [CA 1051:インスタンス フィールドを宣言しません](../code-quality/ca1051-do-not-declare-visible-instance-fields.md) | フィールドの主な用途は、実装の詳細にする必要があります。 フィールドは private または internal にし、プロパティによって公開するようにします。 |
-| [CA 1052:スタティック ホルダー型をシールする必要があります。](../code-quality/ca1052-static-holder-types-should-be-sealed.md) | パブリックまたはプロテクト型では、静的メンバーのみが含まれていて、sealed (C#) または NotInheritable (Visual Basic) 修飾子を使用して宣言されていません。 継承を意図していない型は、sealed 修飾子を使用してマークし、基本型として使用できないようにします。 |
+| [CA 1052:スタティック ホルダー型をシールする必要があります。](../code-quality/ca1052-static-holder-types-should-be-sealed.md) | パブリックまたはプロテクト型では、静的メンバーのみが含まれていて、sealed (c#) または NotInheritable (Visual Basic) 修飾子を使用して宣言されていません。 継承を意図していない型は、sealed 修飾子を使用してマークし、基本型として使用できないようにします。 |
 | [CA 1053:スタティック ホルダー型には、コンス トラクターはありません。](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md) | パブリック型または入れ子になったパブリック型で、静的なメンバーのみが宣言されています。また、パブリックまたはプロテクトの既定のコンストラクターが含まれます。 静的メンバーの呼び出しに型のインスタンスは必要ないため、コンストラクターは不要です。 安全性とセキュリティを確保するために、文字列引数を使用して文字列オーバーロードで URI (Uniform Resource Identifier) オーバーロードを呼び出してください。 |
 | [CA 1054:URI パラメーターは文字列をすることはできません。](../code-quality/ca1054-uri-parameters-should-not-be-strings.md) | メソッドで URI の文字列形式を使用する場合、対応するオーバーロードを宣言し、URI クラスのインスタンスを使用します。こうすることで、安全な方法でこのサービスを実現できます。 |
 | [CA 1055:URI 戻り値は文字列をすることはできません。](../code-quality/ca1055-uri-return-values-should-not-be-strings.md) | この規則では、メソッドは URI を返すと想定されます。 URI の文字列表現は解析エラーやエンコーディング エラーが発生しやすく、セキュリティ上の脆弱性の原因となる場合があります。 System.Uri クラスを使用すると、安全な方法でこのサービスを実現できます。 |
 | [CA 1056:URI のプロパティには、文字列がすることはできません。](../code-quality/ca1056-uri-properties-should-not-be-strings.md) | このルールでは、URI を表すことを前提としています。 URI の文字列表現は解析エラーやエンコーディング エラーが発生しやすく、セキュリティ上の脆弱性の原因となる場合があります。 System.Uri クラスを使用すると、安全な方法でこのサービスを実現できます。 |
 | [CA 1057:文字列 URI オーバー ロードは、System.Uri オーバー ロードを呼び出す](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md) | 文字列パラメーターが System.Uri パラメーターに置き換えられている点だけが異なるメソッド オーバーロードが型で宣言されています。 文字列パラメーターを使用するオーバーロードは、URI パラメーターを使用するオーバーロードを呼び出しません。 |
-| [CA1058:種類は一定の基本型を拡張する必要がありません。](../code-quality/ca1058-types-should-not-extend-certain-base-types.md) | 外部から参照可能な型では、特定の基本型が拡張されます。 別の型を使用してください。 |
+| [CA1058:型は、一定の基本型を拡張することはできません](../code-quality/ca1058-types-should-not-extend-certain-base-types.md) | 外部から参照可能な型では、特定の基本型が拡張されます。 別の型を使用してください。 |
 | [CA 1059:メンバーが特定の具象型に公開することはできません。](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md) | 具象型は、完全な実装を含む型であるため、インスタンス化できます。 このメンバーを広範囲に使用するには、具象型を推奨インターフェイスによって置き換えます。 |
 | [CA1060:P/invoke を NativeMethods クラスに移動します。](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md) | マークされているなどのプラットフォーム呼び出しメソッド、<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>で Declare キーワードを使用して定義されているメソッドまたは[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]、アンマネージ コードにアクセスします。 これらのメソッドは、NativeMethods、SafeNativeMethods、UnsafeNativeMethods の各クラスのいずれかに含まれる必要があります。 |
 | [CA 1061:基底クラスのメソッドを隠ぺいしません。](../code-quality/ca1061-do-not-hide-base-class-methods.md) | 派生メソッドのパラメーター シグネチャ内のある型が、基本メソッドのパラメーター シグネチャ内のそれに対応する型より弱く型指定されていることが、両者の唯一の相違点である場合、基本型内のメソッドが派生型内の同じ名前のメソッドによって隠ぺいされます。 |

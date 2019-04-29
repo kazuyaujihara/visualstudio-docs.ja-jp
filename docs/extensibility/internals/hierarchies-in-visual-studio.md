@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 437372a5b88e58c12b7a7d34102d87afce5c086b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909826"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio での階層
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) とプロジェクトが表示されます、*階層*します。 IDE では、階層は、各ノードが関連付けられているプロパティのセットを持つノードのツリーです。 A*プロジェクト階層*はプロジェクトのアイテム、アイテムのリレーションシップ、および項目の関連付けられているプロパティおよびコマンドを保持するコンテナーです。

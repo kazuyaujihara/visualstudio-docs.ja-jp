@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432162"
 ---
 # <a name="tool-window-display-configuration"></a>ツール ウィンドウの表示構成
 VSPackage でツール ウィンドウ、既定の位置、サイズ、ドッキング スタイル、およびその他の可視性の情報を登録する場合は、省略可能な値で指定されます。 ツール ウィンドウの登録の詳細については、次を参照してください[ツールの Windows レジストリで。](../extensibility/tool-windows-in-the-registry.md)
@@ -87,7 +87,7 @@ HKEY_LOCAL_MACHINE\
 |名前|型|データ|説明|
 |----------|----------|----------|-----------------|
 |(既定)|REG_SZ|なし|空のままにします。|
-|*\<GUID>*|REG_DWORD または REG_SZ|0 または説明する文字列。|省略可能です。 エントリの名前は、可視性を必要とするコマンドの GUID である必要があります。 値は、情報の文字列だけを保持します。 通常、値は、`reg_dword`を 0 に設定します。|
+|*\<GUID>*|REG_DWORD または REG_SZ|0 または説明する文字列。|任意。 エントリの名前は、可視性を必要とするコマンドの GUID である必要があります。 値は、情報の文字列だけを保持します。 通常、値は、`reg_dword`を 0 に設定します。|
 
 ### <a name="example"></a>例
 

@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b25c47e6db79fe4b860b6e7c209f0fc8403d0fcd
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838494"
 ---
 # <a name="debugger-user-interface-xslt"></a>デバッガー ユーザー インターフェイス (XSLT)
 
 この記事では、デバッガーのウィンドウとダイアログ ボックスについて説明します。 XSLT に固有のデバッグ動作を持つユーザー インターフェイス部分についてのみ説明します。
 
-詳細については、、[デバッグ用ユーザー インターフェイス リファレンス](../debugger/debugging-user-interface-reference.md)を参照してください。
+詳細については、次を参照してください。、[デバッグ用ユーザー インターフェイス リファレンス](../debugger/debugging-user-interface-reference.md)します。
 
 ## <a name="locals-window"></a>[ローカル] ウィンドウ
 

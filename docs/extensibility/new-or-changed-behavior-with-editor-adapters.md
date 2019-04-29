@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 63c04e808228898e7542f67ec72bf9d36203547d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433657"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>エディターのアダプターを搭載した新規または変更された動作
 以前のバージョンの Visual Studio コア エディターと照らして記述されたコードを更新する、新しい API を使用するのではなく、エディターのアダプター (または shim) を使用する場合は、エディターのアダプターの動作に次の相違点の注意する必要があります。に関しては、前のコア エディター。

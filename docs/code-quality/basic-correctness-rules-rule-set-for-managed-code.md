@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f659a7aa9d078ed5ee2f8685be006aaaa2450fa0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560052"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>マネージド コードの "基本正確性規則" 規則セット
 基本的な正確性規則のルール セットは、ロジック エラーやフレームワーク Api の使用時の一般的な間違いについて説明します。 基本的な正確性規則には、最小推奨規則のルール セットには規則が含まれます。 詳細については、次を参照してください。[マネージ推奨規則ルールセットのマネージ コードの](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)この規則セットをさらに、最小推奨規則で報告する警告の一覧を含める必要があります。

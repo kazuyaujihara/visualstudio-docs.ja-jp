@@ -11,11 +11,11 @@ ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: a244463832ff5620efa74a2c7fd20d6d47d79e76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810704"
 ---
 # <a name="providing-a-custom-properties-window"></a>カスタム プロパティ ウィンドウの提供
 独自に提供することは**プロパティ**延長する代わりに、特定のプロジェクト システム ウィンドウ、**プロパティ**ウィンドウによって提供される、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]統合開発環境 (IDE) です。 最もよく発生したシナリオ ウィンドウ フレームに配置されたオブジェクトを実装する自分で場合です。  

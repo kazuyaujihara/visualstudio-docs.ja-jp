@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dff8223a95621f353fa57c38e91bf24b6b177f82
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433384"
 ---
 # <a name="register-and-unregister-vspackages"></a>登録して、Vspackage の登録解除
 属性を使用して、VSPackage の登録が、
 
 ## <a name="register-a-vspackage"></a>VSPackage を登録します。
- マネージ Vspackage の登録を制御するのに属性を使用できます。 すべての登録情報が含まれている、 *.pkgdef*ファイル。 ファイル ベースの登録の詳細については、[CreatePkgDef ユーティリティ](../extensibility/internals/createpkgdef-utility.md)を参照してください。
+ マネージ Vspackage の登録を制御するのに属性を使用できます。 すべての登録情報が含まれている、 *.pkgdef*ファイル。 ファイル ベースの登録の詳細については、次を参照してください。 [CreatePkgDef ユーティリティ](../extensibility/internals/createpkgdef-utility.md)します。
 
  次のコードでは、標準登録属性を使用して、VSPackage を登録する方法を示します。
 

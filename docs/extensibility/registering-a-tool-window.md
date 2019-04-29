@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8ef5cc84ea1fdce8e297d8b5bff6636065b3d044
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62805785"
 ---
 # <a name="register-a-tool-window"></a>ツール ウィンドウを登録します。
 使用して、ツール ウィンドウを登録する<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>と<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>します。
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- 上記のコードで、<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>登録、`PersistedWindowPane`と`DynamicWindowPane`ツール ウィンドウが Visual Studio を使用します。 永続化されたツール ウィンドウをドッキングされをタブ付き**ソリューション エクスプ ローラー**と動的のウィンドウで、既定の開始位置とサイズを指定します。 動的なウィンドウが作成された一時的なもので起動時に作成されていないことを示します。 これを書き込みます、`DontForceCreate`値、`ToolWindows`システム レジストリのキー。 詳細については、[ツール ウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)を参照してください。
+ 上記のコードで、<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>登録、`PersistedWindowPane`と`DynamicWindowPane`ツール ウィンドウが Visual Studio を使用します。 永続化されたツール ウィンドウをドッキングされをタブ付き**ソリューション エクスプ ローラー**と動的のウィンドウで、既定の開始位置とサイズを指定します。 動的なウィンドウが作成された一時的なもので起動時に作成されていないことを示します。 これを書き込みます、`DontForceCreate`値、`ToolWindows`システム レジストリのキー。 詳細については、次を参照してください。[ツール ウィンドウの表示構成](../extensibility/tool-window-display-configuration.md)します。

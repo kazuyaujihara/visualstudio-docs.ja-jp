@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 72d82bca64870c65efaeaa58077b90cecf073be5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859385"
 ---
 # <a name="registering-a-legacy-language-service"></a>従来の言語サービスを登録します。
 Managed package framework (MPF) では、言語サービスが、VSPackage によって提供される (を参照してください[Vspackage](../../extensibility/internals/vspackages.md)) に登録されていると[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]レジストリ キーとエントリを追加することで。 この登録プロセスは、インストール中に一部と、実行時に一部で実行されます。
@@ -55,7 +55,7 @@ namespace TestLanguagePackage
 ```
 
 ### <a name="providelanguageserviceattribute"></a>ProvideLanguageServiceAttribute
- この属性は、言語サービスとして具体的には、言語サービスを登録します。 言語サービスを提供する機能を指定するオプションを設定することができます。 この例では、言語サービスが提供できるオプションのサブセットを示します。 言語サービスのオプションの完全なセット、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>を参照してください。
+ この属性は、言語サービスとして具体的には、言語サービスを登録します。 言語サービスを提供する機能を指定するオプションを設定することができます。 この例では、言語サービスが提供できるオプションのサブセットを示します。 言語サービスのオプションの完全なセット、次を参照してください。<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>します。
 
 ### <a name="example"></a>例
 

@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 03d850eeb668f6c2b47d663b55e5461cabf9cbbf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784175"
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054:URI パラメーターを文字列にすることはできません
 
@@ -60,7 +60,7 @@ ms.locfileid: "57867462"
 dotnet_code_quality.ca1054.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、[構成 FxCop アナライザー](configure-fxcop-analyzers.md)を参照してください。
+このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
 
 ## <a name="example"></a>例
 
