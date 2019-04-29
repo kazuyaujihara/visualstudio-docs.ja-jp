@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4d0e9bcd9943dafc9dcbe9beb62433a62b55dc8e
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844000"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>エディターにレガシ コードを改変します。
 Visual Studio エディターには、既存のコード コンポーネントからアクセスできる多くの機能があります。 次の手順では、非 MEF コンポーネント、エディターの機能を使用する、VSPackage などを調整する方法を示します。 アダプターを使用して、マネージ コードとアンマネージの両方のコードで、エディターのサービスを取得する方法についても説明します。
@@ -83,8 +83,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     IVsEditorAdaptersFactoryService adapterFactoryService = ComponentModel.GetService<IVsEditorAdaptersFactoryService>();
     ```
 
-3. 
-  `CreateX()` メソッドを呼び出します。
+3.  `CreateX()` メソッドを呼び出します。
 
     ```
     adapterFactoryService.CreateTextViewAdapter(textView);
