@@ -14,11 +14,11 @@ author: BillWagner
 ms.author: wiwagn
 manager: jillfra
 ms.openlocfilehash: 291ea2e7d15dee40642e9cd5c1140eb5e5b0fe15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822684"
 ---
 # <a name="filtered-completion-lists-in-c"></a>C# でフィルター処理されたコンプリート リスト #
-このコンテンツに移動[で C# のコンプリート リスト](../misc/completion-lists-in-csharp.md)
+このコンテンツに移動[で c# のコンプリート リスト](../misc/completion-lists-in-csharp.md)

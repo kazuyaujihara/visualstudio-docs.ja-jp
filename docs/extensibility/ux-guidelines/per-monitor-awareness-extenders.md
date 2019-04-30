@@ -17,11 +17,11 @@ ms.topic: reference
 ms.workload:
 - multiple
 ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793650"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Visual Studio の extender のモニターごとの認識をサポート
 Visual Studio 2019 より前のバージョンには、DPI 認識コンテキストの認識ではなく、モニターごとの DPI に注意してください (PMA) システムに設定が必要があります。 システムの認識を実行しているビジュアルを低下が発生しました (例: ぼやけてフォントまたはアイコン) が発生するたびに、Visual Studio で表示するために複数のモニターの別のスケール ファクターまたはリモートで別のディスプレイの構成を持つマシンになど (異なる必要があります。Windows スケーリング)。

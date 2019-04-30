@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dfbe77f5b6e2bbda6a51d392c4dd16b079100e81
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856245"
 ---
 # <a name="t4-output-directive"></a>T4 出力ディレクティブ
 
@@ -24,7 +24,7 @@ Visual Studio のテキスト テンプレートで、`output`ディレクティ
 
  Visual Studio は **MyTemplate.cs** という名前のファイルを生成します。
 
- `output` ディレクティブは、ランタイム (前処理済み) のテキスト テンプレートには必要ありません。 その代わりに、アプリケーションは `TextTransform()` を呼び出して、生成した文字列を取得します。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)
+ `output` ディレクティブは、ランタイム (前処理済み) のテキスト テンプレートには必要ありません。 その代わりに、アプリケーションは `TextTransform()` を呼び出して、生成済みの文字列を取得します。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
 ## <a name="using-the-output-directive"></a>出力ディレクティブの使用
 
@@ -32,10 +32,10 @@ Visual Studio のテキスト テンプレートで、`output`ディレクティ
 <#@ output extension=".fileNameExtension" [encoding="encoding"] #>
 ```
 
- 各テキスト テンプレートには複数の `output` ディレクティブを含められません。
+ 各テキスト テンプレートには複数の `output` ディレクティブを含めてはいけません。
 
 ## <a name="extension-attribute"></a>extension 属性
- 生成されるテキスト出力ファイルのファイル名の拡張子を指定します。
+ 生成されたテキスト出力ファイルのファイル名の拡張子を指定します。
 
  既定値は **.cs** です。
 

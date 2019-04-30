@@ -1,11 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 57e03003412adf654157c635ee8fbbc9b9796f13
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a2ceafbbd204083fc421a05488dd67185f68d9d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783335"
 ---
 > [!NOTE]
-> Web パフォーマンスとロード テスト機能は非推奨になりました。 Visual Studio 2019 は、Web パフォーマンスおよびロード テストが使用できる最後のバージョンです。
+> Web パフォーマンスとロード テスト機能は非推奨になりました。 Visual Studio 2019 は、Web パフォーマンスおよびロード テストが使用できる最後のバージョンです。 詳細については、[クラウドベースのロード テスト サービスの提供終了](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/)に関するブログ投稿を参照してください。

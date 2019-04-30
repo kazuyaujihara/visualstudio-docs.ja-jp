@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 100e303df62a1ca9855b891915e43f1fe020555e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28535db3e129029d6767ac969d121ee4cbb1aec5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416540"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
  プロファイル マークは、スコープ内でグローバルです。 たとえば、あるスレッドに挿入したプロファイルマークを、.vsp ファイル内の任意のスレッドで使用し、データ セグメントの開始または終了をマークできます。  
   
 > [!IMPORTANT]
->  CommentMarkProfile メソッドはインストルメンテーションとの併用でのみ利用できます。  
+> CommentMarkProfile メソッドはインストルメンテーションとの併用でのみ利用できます。  
   
 ## <a name="net-framework-equivalent"></a>同等の .NET Framework 関数  
  Microsoft.VisualStudio.Profiler.dll  

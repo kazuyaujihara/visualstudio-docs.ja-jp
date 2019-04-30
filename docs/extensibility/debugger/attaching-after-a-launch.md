@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b0a34505cf32e0e3fd4dc18bfeab4588856dba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409946"
 ---
 # <a name="attach-after-a-launch"></a>起動の後のアタッチします。
 プログラムを起動した後、デバッグ セッションとプログラムをデバッグ エンジン (DE) をアタッチする準備ができます。
@@ -28,7 +28,7 @@ ms.locfileid: "60065585"
 - 方、DE とプログラムの間の通信を設定する、実行時環境は共同、DE を作成します。 この設計は、別にまとめて 1 つのアドレス空間と、DE、実行時環境、およびプログラムに SDM を残します。 この設計は、スクリプト言語を実行する、インタープリターに実装されている DE の一般的な例です。
 
     > [!NOTE]
-    >  デがプログラムにアタッチする方法とは実装によって異なります。 デと、プログラム間の通信も実装に依存します。
+    > デがプログラムにアタッチする方法とは実装によって異なります。 デと、プログラム間の通信も実装に依存します。
 
 ## <a name="implementation"></a>実装
  プログラムでは、受信すると、セッション デバッグ マネージャー (SDM) まず、 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)を起動するプログラムを表すオブジェクトを呼び出す、[アタッチ](../../extensibility/debugger/reference/idebugprogram2-attach.md)を引数としてメソッドを[IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)以降であるオブジェクト、SDM にデバッグ イベントを渡すために使用します。 `IDebugProgram2::Attach`メソッドを呼び出して、 [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)メソッド。 SDM を受信する方法の詳細については、`IDebugProgram2`インターフェイスは、「[ポートへの通知](../../extensibility/debugger/notifying-the-port.md)します。

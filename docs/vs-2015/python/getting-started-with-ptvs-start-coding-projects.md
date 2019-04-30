@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 28622f290d82f86bf3d18cc4f40cfcfc8e953dad
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54781070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537154"
 ---
 # <a name="getting-started-with-ptvs-start-coding-projects"></a>PTVS の概要: コーディングの開始 (プロジェクト)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,4 +40,4 @@ Python Tools for Visual Studio (PTVS) を使用すると、コードを管理で
   これらの手順は、非常に短い [youtube ビデオ](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2)で視聴できます。 
  
 ## <a name="see-also"></a>関連項目 
- [Wiki ドキュメント](https://github.com/Microsoft/PTVS/wiki/Projects) [PTVS Getting Started と Deep Dive のビデオ](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+ [Wiki ドキュメント](https://github.com/Microsoft/PTVS/wiki/Projects) [PTVS の概要と詳細に関するビデオ](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

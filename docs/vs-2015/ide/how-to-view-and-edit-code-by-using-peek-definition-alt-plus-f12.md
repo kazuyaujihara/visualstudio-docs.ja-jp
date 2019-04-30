@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76a45297062b42b559f07867b20bdadac79cc082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386841"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>方法: 表示およびピークの定義 (Alt + F12) を使用してコードを編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60055732"
  **[定義をここに表示]** は、C#、Visual Basic、および C++ のコードで使うことができます。 Visual Basic では **[定義をここに表示]** に、定義メタデータのないシンボル (.NET Framework の組み込み型など) の**オブジェクト ブラウザー**へのリンクが表示されます。  
   
 > [!IMPORTANT]
->  このコマンドは、Visual Studio 2013 の Express Edition では使用できません。  
+> このコマンドは、Visual Studio 2013 の Express Edition では使用できません。  
   
 ## <a name="working-with-peek-definition"></a>[定義をここに表示] の操作  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60055732"
     |コード エディター ウィンドウと定義ウィンドウの間で切り替える|Shift + Esc|  
   
     > [!NOTE]
-    >  Visual Studio の他の場所でも、同じキーボード ショートカットを使って **[定義をここに表示]** ウィンドウでコードを編集できます。  
+    > Visual Studio の他の場所でも、同じキーボード ショートカットを使って **[定義をここに表示]** ウィンドウでコードを編集できます。  
   
 ## <a name="see-also"></a>関連項目
  [生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)

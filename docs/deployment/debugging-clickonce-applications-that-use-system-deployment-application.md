@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1efa919349535a2cb73ca80f2015ef0d0df93cd7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928999"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>System.Deployment.Application を使用する ClickOnce アプリケーションのデバッグ
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]展開を使用するアプリケーションを更新する方法を構成できます。 ただし、使用およびカスタマイズする必要がある場合は、高度な[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]展開の機能によって提供される展開オブジェクト モデルにアクセスする必要がある<xref:System.Deployment.Application>します。 使用することができます、<xref:System.Deployment.Application>高度なタスクをなどの Api:

@@ -18,8 +18,8 @@
 ##### [スタブを使用して単体テストでアプリケーションの各部分を相互に分離する](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 ##### [shim を使用して単体テストでアプリケーションを他のアセンブリから分離する](using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 ##### [Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則](code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
-#### [方法: データドリブン単体テストを作成する](how-to-create-a-data-driven-unit-test.md)
-##### [チュートリアル: データ ソースを定義するための構成ファイルの使用](walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+#### [方法: データ ドリブン単体テストを作成する](how-to-create-a-data-driven-unit-test.md)
+##### [チュートリアル: データ ソースを定義するための構成ファイルの使用](walkthrough-using-a-configuration-file-to-define-a-data-source.md)」を参照してください
 #### [ジェネリック メソッドの単体テスト](unit-tests-for-generic-methods.md)
 #### [方法: .NET の旧バージョンを対象に指定する](how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md)
 #### [単体テスト作成用のサンプル プロジェクト](sample-project-for-creating-unit-tests.md)

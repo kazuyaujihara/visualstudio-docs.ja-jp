@@ -27,11 +27,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900359"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;依存関係&gt;要素 (ClickOnce アプリケーション)
 アプリケーションに必要なプラットフォームやアセンブリ依存関係を識別します。
@@ -92,14 +92,14 @@ ms.locfileid: "59658059"
  `dependency`要素、属性を持っていないと、次の子要素が含まれています。
 
 ### <a name="dependentos"></a>dependentOS
- 省略可能です。 `osVersionInfo`要素を含んでいます。 `dependentOS`と`dependentAssembly`要素は相互に排他的: のいずれか 1 つが存在する必要があります、`dependency`両方ではなく、要素。
+ 任意。 `osVersionInfo`要素を含んでいます。 `dependentOS`と`dependentAssembly`要素は相互に排他的: のいずれか 1 つが存在する必要があります、`dependency`両方ではなく、要素。
 
  `dependentOS` 次の属性をサポートしています。
 
 |属性|説明|
 |---------------|-----------------|
 |`supportUrl`|省略可能です。 依存するプラットフォームのサポート URL を指定します。 この URL は、必要なプラットフォームが見つかった場合、ユーザーに表示されます。|
-|`description`|任意。 説明されているオペレーティング システムを人間が判読できる形式は、説明、`dependentOS`要素。|
+|`description`|省略可能です。 説明されているオペレーティング システムを人間が判読できる形式は、説明、`dependentOS`要素。|
 
 ### <a name="osversioninfo"></a>osVersionInfo
  必須。 この要素は `dependentOS` 要素の子であり、 `os` 要素を含んでいます。 この要素には属性はありません。
@@ -114,11 +114,11 @@ ms.locfileid: "59658059"
 |`buildNumber`|必須。 OS のビルド番号を指定します。|
 |`servicePackMajor`|必須。 OS のサービス パックのメジャー番号を指定します。|
 |`servicePackMinor`|省略可能です。 OS のサービス パックのマイナー番号を指定します。|
-|`productType`|任意。 製品の種類の値を識別します。 有効な値は `server`、`workstation`、`domainController` です。 たとえば、Windows 2000 professional では、この属性値は`workstation`します。|
+|`productType`|省略可能です。 製品の種類の値を識別します。 有効な値は `server`、`workstation`、`domainController` です。 たとえば、Windows 2000 professional では、この属性値は`workstation`します。|
 |`suiteType`|任意。 システムまたはシステムの構成の種類で使用可能な製品スイートを識別します。 有効な値は、`backoffice`、`blade`、`datacenter`、`enterprise`、`home`、`professional`、`smallbusiness`、`smallbusinessRestricted`、および `terminal` です。 たとえば、Windows 2000 professional では、この属性値は`professional`します。|
 
 ### <a name="dependentassembly"></a>dependentAssembly
- 任意。 `assemblyIdentity`要素を含んでいます。 `dependentOS`と`dependentAssembly`要素は相互に排他的: のいずれか 1 つが存在する必要があります、`dependency`両方ではなく、要素。
+ 省略可能です。 `assemblyIdentity`要素を含んでいます。 `dependentOS`と`dependentAssembly`要素は相互に排他的: のいずれか 1 つが存在する必要があります、`dependency`両方ではなく、要素。
 
  `dependentAssembly` 次の属性があります。
 
@@ -137,9 +137,9 @@ ms.locfileid: "59658059"
 |---------------|-----------------|
 |`name`|必須。 アプリケーションの名前を識別します。|
 |`version`|必須。 次の形式で、アプリケーションのバージョン番号を指定します。 `major.minor.build.revision`|
-|`publicKeyToken`|省略可能です。 最後の 8 バイトを表す 16 文字の 16 進文字列を指定します、`SHA-1`アプリケーションまたはアセンブリに署名するとき、公開キーのハッシュ値。 カタログに署名するために使用する公開キーは、2048 ビット以上である必要があります。|
-|`processorArchitecture`|任意。 プロセッサを指定します。 有効な値は`x86`32 ビット Windows 用と`I64`の 64 ビット Windows です。|
-|`language`|任意。 アセンブリの EN-US など、2 部構成の言語コードを識別します。|
+|`publicKeyToken`|任意。 最後の 8 バイトを表す 16 文字の 16 進文字列を指定します、`SHA-1`アプリケーションまたはアセンブリに署名するとき、公開キーのハッシュ値。 カタログに署名するために使用する公開キーは、2048 ビット以上である必要があります。|
+|`processorArchitecture`|省略可能です。 プロセッサを指定します。 有効な値は`x86`32 ビット Windows 用と`I64`の 64 ビット Windows です。|
+|`language`|省略可能です。 アセンブリの EN-US など、2 部構成の言語コードを識別します。|
 
 ### <a name="hash"></a>hash
  `hash`要素のオプションの子では、`assemblyIdentity`要素。 `hash`要素に属性がありません。

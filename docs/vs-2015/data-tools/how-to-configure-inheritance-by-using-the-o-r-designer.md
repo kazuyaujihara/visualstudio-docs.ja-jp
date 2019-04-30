@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c4c8cea0b29994bb880dd0d93832da0e875cc56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8a0b51a9fbfb009087e0cd5600d9c480c8d433b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386800"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>方法: O/R デザイナーを使用して継承を構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ ms.locfileid: "60115602"
 4. **ツールボックス**の **[オブジェクト リレーショナル デザイナー]** タブで **[継承]** をクリックし、サブクラス (名前を変更したテーブル) をクリックして、基本クラスに接続します。  
   
     > [!NOTE]
-    >  **ツールボックス**の **[継承]** 項目をクリックしてマウス ボタンを放し、手順 3 で作成したクラスの 2 番目のコピーをクリックしてから、手順 2 で作成した最初のクラスをクリックします。 継承線の矢印は最初のクラスを指します。  
+    > **ツールボックス**の **[継承]** 項目をクリックしてマウス ボタンを放し、手順 3 で作成したクラスの 2 番目のコピーをクリックしてから、手順 2 で作成した最初のクラスをクリックします。 継承線の矢印は最初のクラスを指します。  
   
 5. 各クラスで、関連付けに使用されていない、表示する必要のないオブジェクト プロパティを削除します。 関連付けに使用するオブジェクトのプロパティを削除しようとした場合、エラーが表示されます。[プロパティ\<プロパティ名 > の関連付けに関与しているために削除できません\<関連付けの名前 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)します。  
   
     > [!NOTE]
-    >  派生クラスは基本クラスで定義されているプロパティを継承するため、各クラスに同じ列を定義することはできません  (列はプロパティとして実装されます)。基本クラスのプロパティに [Inheritance Modifier] を設定することで、派生クラスでの列の作成が可能になります。 詳細については、次を参照してください。[ビルド内にありません。プロパティとメソッドのオーバーライド](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213)します。  
+    > 派生クラスは基本クラスで定義されているプロパティを継承するため、各クラスに同じ列を定義することはできません  (列はプロパティとして実装されます)。基本クラスのプロパティに [Inheritance Modifier] を設定することで、派生クラスでの列の作成が可能になります。 詳細については、次を参照してください。[ビルド内にありません。プロパティとメソッドのオーバーライド](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213)します。  
   
 6. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]で継承線を選択します。  
   

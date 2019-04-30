@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e2e4f3882a6bd3b3f7ce9b70aec45f244377d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438142"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>チュートリアル: 複数のコンピューターを使用するビルド環境の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ ms.locfileid: "60044304"
   Program Files フォルダーの名前が、インストールされているオペレーティング システムによって異なる点に注意してください。 x86 コンピューターでは \Program Files\\、x64 コンピューターでは \Program Files (x86)\\ です。 システムのアーキテクチャに関係なく、このチュートリアルでは、Program Files フォルダーを %ProgramFiles% と示します。  
   
 > [!NOTE]
->  ビルド コンピューターでは、関連するファイルをすべて同じドライブに配置する必要がありますが、そのドライブのドライブ文字は、Visual Studio がホスト コンピューターにインストールされているドライブのドライブ文字と異なってもかまいません。 いずれにしても、後でこのドキュメント内で説明するように、レジストリ エントリの作成時にファイルの場所の情報が必要になります。  
+> ビルド コンピューターでは、関連するファイルをすべて同じドライブに配置する必要がありますが、そのドライブのドライブ文字は、Visual Studio がホスト コンピューターにインストールされているドライブのドライブ文字と異なってもかまいません。 いずれにしても、後でこのドキュメント内で説明するように、レジストリ エントリの作成時にファイルの場所の情報が必要になります。  
   
 #### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>Windows SDK ファイルをビルド コンピューターにコピーするには  
   
@@ -223,7 +223,7 @@ ms.locfileid: "60044304"
 1. レジストリ エントリの親フォルダーを特定します。 レジストリ エントリはすべて、同じ親キーの下に作成します。 x86 コンピューターの場合、親キーは HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\ です。 x64 コンピューターの場合、親キーは HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\ です。 システムのアーキテクチャに関係なく、このチュートリアルでは、親キーを %RegistryRoot% と示します。  
   
    > [!NOTE]
-   >  ホスト コンピューターのアーキテクチャがビルド コンピューターと異なる場合は、各コンピューターで適切な親キーを使用してください。 このことは、エクスポート プロセスを自動化する場合に特に重要です。  
+   > ホスト コンピューターのアーキテクチャがビルド コンピューターと異なる場合は、各コンピューターで適切な親キーを使用してください。 このことは、エクスポート プロセスを自動化する場合に特に重要です。  
    >   
    >  また、ホスト コンピューターで使用しているものと異なるドライブ文字をビルド コンピューターで使用する場合は、レジストリ エントリの値が一致するように必ず変更してください。  
   
@@ -334,7 +334,7 @@ ms.locfileid: "60044304"
      **gacutil -i \<file>**  
   
     > [!NOTE]
-    >  GAC へのアセンブリのインストールを完了するために、再起動が必要になる場合があります。  
+    > GAC へのアセンブリのインストールを完了するために、再起動が必要になる場合があります。  
   
 ## <a name="BuildingProjects"></a>プロジェクトをビルドする  
  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] のプロジェクトおよびソリューションをビルドするには、Team Foundation ビルドまたはコマンド ラインを使用します。 Team Foundation ビルドを使用してプロジェクトをビルドすると、システムのアーキテクチャに対応する MSBuild 実行可能ファイルが起動されます。  コマンド ラインでは、32 ビット MSBuild または 64 ビット MSBuild を使用できます。MSBuild のアーキテクチャは、PATH 環境変数を設定するか、アーキテクチャ固有の MSBuild 実行可能ファイルを直接呼び出すことによって選択できます。  
@@ -346,17 +346,17 @@ ms.locfileid: "60044304"
  コマンド ラインで MSBuild を使用する方法について詳しくは、「[コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)」をご覧ください。  
   
 > [!NOTE]
->  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] プロジェクトをビルドするには、"v110" のプラットフォーム ツールセットを使用する必要があります。 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] のプロジェクト ファイルを編集しない場合は、次のコマンド ライン引数を使用してプラットフォーム ツールセットを設定できます。  
+> [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] プロジェクトをビルドするには、"v110" のプラットフォーム ツールセットを使用する必要があります。 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] のプロジェクト ファイルを編集しない場合は、次のコマンド ライン引数を使用してプラットフォーム ツールセットを設定できます。  
 >   
->  **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
+> **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
   
 ## <a name="CreatingForSourceControl"></a>ソース管理にチェックインできるようにビルド環境を作成する  
  GAC へのファイルのインストールやレジストリ設定の変更を必要としない、さまざまなコンピューターに配置できるビルド環境を作成することもできます。 次の手順は、これを実現する方法の 1 つです。 ビルド環境ごとの特性に合わせて、手順を調整してください。  
   
 > [!NOTE]
->  ビルド時に tracker.exe によるエラーが発生しないように、インクリメンタル ビルドを無効にする必要があります。 インクリメンタル ビルドを無効にするには、次のビルド パラメーターを設定します。  
+> ビルド時に tracker.exe によるエラーが発生しないように、インクリメンタル ビルドを無効にする必要があります。 インクリメンタル ビルドを無効にするには、次のビルド パラメーターを設定します。  
 >   
->  **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
+> **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
   
 #### <a name="to-create-a-build-environment-that-can-be-checked-into-source-control"></a>ソース管理にチェックインできるようにビルド環境を作成するには  
   

@@ -10,11 +10,11 @@ ms.workload:
 - data-storage
 - dotnet
 ms.openlocfilehash: a454218bbddb6c135ff7dc2a5910e6e4a9b3c7e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565084"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>.NET 用の Visual Studio データ ツール
 
@@ -40,7 +40,7 @@ Visual Studio と .NET Framework は、さら広範な API とツールのデー
 
 5. 点など、ビジネス ルール、検索、およびデータの検証、または基になるデータベースを公開するカスタム機能を活用するためのカスタム コードを追加します。
 
-手順 3. を省略し、モデルを使用するのではなく、データベースに直接コマンドを発行する .NET アプリケーションをプログラミングできます。 この場合は、ここで、関連するドキュメントが表示されます: [ADO.NET](/dotnet/framework/data/adonet/index)します。 使用することもできますが、**データ ソース構成ウィザード**とメモリとし、それらのオブジェクトを UI コントロールをデータ バインドで、独自のオブジェクトの値を設定する際に、データ バインド コードを生成するデザイナー。
+手順 3. を省略し、モデルを使用するのではなく、データベースに直接コマンドを発行する .NET アプリケーションをプログラミングできます。 この場合は、ここで、関連するドキュメントが表示されます。[ADO.NET](/dotnet/framework/data/adonet/index)します。 使用することもできますが、**データ ソース構成ウィザード**とメモリとし、それらのオブジェクトを UI コントロールをデータ バインドで、独自のオブジェクトの値を設定する際に、データ バインド コードを生成するデザイナー。
 
 ## <a name="see-also"></a>関連項目
 

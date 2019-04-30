@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 32dca296ef286e4c892791a1e71cfc765df80f19
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815498"
 ---
 # <a name="work-with-folders"></a>フォルダーを操作します。
   <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> クラスには、フォルダーへのアクセス、フォルダーの作成およびカスタマイズに使用するメソッドとプロパティが含まれています。
@@ -34,7 +34,7 @@ ms.locfileid: "56612518"
 |現在のユーザー ID を名前に持つフォルダーを作成します。|[方法: プログラムによってカスタム フォルダーのアイテムを作成します。](../vsto/how-to-programmatically-create-custom-folder-items.md)|
 |特定の条件に一致するメッセージを、指定したフォルダーに移動します。|[方法: プログラムによって Outlook でアイテムを移動します。](../vsto/how-to-programmatically-move-items-in-outlook.md)|
 
- Outlook タスクと Outlook オブジェクト モデルの詳細については、[Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)を参照してください。
+ Outlook タスクと Outlook オブジェクト モデルの詳細については、次を参照してください。 [Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [連絡先項目を操作します。](../vsto/working-with-contact-items.md)

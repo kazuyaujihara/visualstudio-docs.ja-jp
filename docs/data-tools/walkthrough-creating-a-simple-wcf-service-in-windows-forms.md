@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: Windows フォームでの簡単な WCF サービスの作成'
+title: 'チュートリアル: Windows フォームでのシンプルな WCF サービスの作成'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 97bbf8212caf87f28849df15d350811579f22ccd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565360"
 ---
-# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>チュートリアル: Windows フォームにおける単純な WCF サービスを作成します。
+# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>チュートリアル: Windows フォームでの単純な WCF サービスを作成します。
 
 このチュートリアルでは、単純な Windows Communication Foundation (WCF) サービスを作成、テスト、および Windows フォーム アプリケーションからアクセスする方法を示します。
 
@@ -117,7 +117,7 @@ ms.locfileid: "58325229"
 
 1. **[ファイル]** メニューの **[追加]** をポイントし、**[新しいプロジェクト]** をクリックします。
 
-2. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual Basic**または**Visual C#** ノードの  **Windows**、し、 **Windows フォーム アプリケーション**します。 **[OK]** をクリックして、プロジェクトを開きます。
+2. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual Basic**または**Visual c#** ノードの  **Windows**、し、 **Windows フォーム アプリケーション**します。 **[OK]** をクリックして、プロジェクトを開きます。
 
      ![Windows フォーム アプリケーション プロジェクト](../data-tools/media/wcf7.png)
 

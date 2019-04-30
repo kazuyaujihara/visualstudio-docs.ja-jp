@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 97c5c06a53214ef16924b50c4b35ee4bb33804ba
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433241"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 関数
 この関数は、キューに置かれた状態のイベントを取得します。
@@ -56,7 +56,7 @@ SCCRTN SccGetEvents (
 |[値]|説明|
 |-----------|-----------------|
 |SCC_OK|成功したイベントを取得します。|
-|SCC_E_OPNOTSUPPORTED|この関数がサポートされていません。|
+|SCC_E_OPNOTSUPPORTED|この関数はサポートされません。|
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。|
 
 ## <a name="remarks"></a>Remarks

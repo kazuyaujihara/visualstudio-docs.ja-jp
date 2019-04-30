@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6d444896c305130c7805b8fd6ec1bdf020ed446d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909243"
 ---
 # <a name="project-priority"></a>プロジェクトの優先順位
 プロジェクト項目は、通常、ソリューション内の 1 つしかプロジェクトのメンバーです。 そのため、IDE 簡単に判断できますプロジェクトは、項目を開くために使用します。 ただし、項目が 1 つ以上のプロジェクトのメンバーである場合は、IDE は、項目を開くための最適なプロジェクトを決定する優先度スキームを使用します。
@@ -34,5 +34,5 @@ ms.locfileid: "60089446"
 
 ## <a name="see-also"></a>関連項目
 - [その他のファイル プロジェクト](../../extensibility/internals/miscellaneous-files-project.md)
-- [方法: 開いているエディターを開いているドキュメントの](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [方法: 開いているドキュメントのエディターを開く](../../extensibility/how-to-open-editors-for-open-documents.md)
 - [プロジェクト テンプレートとプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)

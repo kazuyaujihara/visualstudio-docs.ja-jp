@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: d383c559e605392b01ba2c476fd4ed5ae5d48625
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848398"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Visual Studio での ASP.NET または ASP.NET Core アプリをデバッグします。
 
@@ -184,9 +184,9 @@ IIS にアプリを発行するさまざまな方法はあります。 次の手
 
 ## <a name="see-also"></a>関連項目
 - [ASP.NET のデバッグ : システム要件](aspnet-debugging-system-requirements.md)
-- [方法 : ユーザー アカウントでワーカー プロセスを実行する](how-to-run-the-worker-process-under-a-user-account.md)
-- [方法 : ASP.NET プロセスの名前を見つける](how-to-find-the-name-of-the-aspnet-process.md)
+- [方法: ユーザー アカウントでワーカー プロセスを実行します。](how-to-run-the-worker-process-under-a-user-account.md)
+- [方法: ASP.NET プロセスの名前を見つける](how-to-find-the-name-of-the-aspnet-process.md)
 - [配置した Web アプリケーションのデバッグ](debugging-deployed-web-applications.md)
 - [チュートリアル: Web フォームのデバッグ](walkthrough-debugging-a-web-form.md)
-- [方法 : ASP.NET の例外をデバッグする](how-to-debug-aspnet-exceptions.md)
-- [Web アプリケーションをデバッグする: エラーおよびトラブルシューティング](debugging-web-applications-errors-and-troubleshooting.md)
+- [方法: ASP.NET の例外をデバッグします。](how-to-debug-aspnet-exceptions.md)
+- [Web アプリケーションをデバッグする: エラーとトラブルシューティング](debugging-web-applications-errors-and-troubleshooting.md)

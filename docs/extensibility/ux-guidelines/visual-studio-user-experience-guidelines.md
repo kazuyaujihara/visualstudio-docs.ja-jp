@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6345fa74d78ab50229cb692ece58723fea38124a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553654"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio ユーザー エクスペリエンス ガイドライン
 Visual Studio の新機能を設計する場合は、Visual Studio ユーザー エクスペリエンス ガイドラインに従ってください。 次のガイドラインは、新しいユーザー インターフェイス (UI) の設計者はシームレスで開発環境内で一貫したユーザー エクスペリエンスを作成できるように、ユーザーの一般的なモデルと対話パターンに関する情報を格納します。

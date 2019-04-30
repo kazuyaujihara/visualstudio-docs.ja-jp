@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6d29eb9475d48e634766df65836162d6a79fed77
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808411"
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006:SafeHandle を使用して、ネイティブ リソースを要約します
 
@@ -27,7 +27,7 @@ ms.locfileid: "57699630"
 |-|-|
 |TypeName|UseSafeHandleToEncapsulateNativeResources|
 |CheckId|CA2006|
-|Category|Microsoft.Reliability|
+|カテゴリ|Microsoft.Reliability|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因

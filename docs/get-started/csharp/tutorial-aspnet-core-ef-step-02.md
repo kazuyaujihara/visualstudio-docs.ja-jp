@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 5e9cc4f579b5913d5be3030828cad1a799efcd72
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840453"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>手順 2: 最初の ASP.NET Core Web アプリを作成する
 
@@ -122,4 +122,4 @@ public void OnGet()
 
 ## <a name="see-also"></a>関連項目
 
-- [チュートリアル: ASP.NET Core で Razor ページ Web アプリを作成する](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [チュートリアル: ASP.NET Core で Razor Pages Web アプリを作成する](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

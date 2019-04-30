@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9aecfe8e0be0f5d32df41b7eb164423fd4d405db
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545004"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121:静的コンストラクターはプライベートでなければなりません
 
@@ -38,7 +38,7 @@ ms.locfileid: "55939737"
 
 静的コンス トラクター、クラス コンス トラクターとも呼ばれますが、型の初期化に使用されます。 システムで静的コンストラクターが呼び出されてから、型の最初のインスタンスが作成されるか、静的メンバーが参照されます。 ユーザーには、静的コンス トラクターが呼び出されたときに制御がありません。 静的コンストラクターがプライベートである場合、システム以外のコードから呼び出すことができます。 コンストラクターで実行される操作によっては、これによって予期しない動作が発生することがあります。
 
-このルールは、C# および Visual Basic コンパイラによって強制されます。
+このルールは、c# および Visual Basic コンパイラによって強制されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 

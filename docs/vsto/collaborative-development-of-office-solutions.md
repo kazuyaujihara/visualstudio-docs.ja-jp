@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949488"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Office ソリューションの共同開発
   複数の開発者は、他の Visual Studio プロジェクトが共同作業と同じ方法で Office プロジェクトで作業できます。 Visual Studio では、別の場所で Office がインストールされている場合でも、各コンピューターに Microsoft Office のインストールが正常で検索します。 ただし、注意すべき重要な考慮事項があります。
@@ -35,7 +35,7 @@ ms.locfileid: "56635060"
 ## <a name="source-control-requires-checking-out-all-files"></a>ソース管理では、すべてのファイルをチェック アウトが必要です。
  プロジェクトをソース管理を使用する場合、これをチェック アウトのすべてのファイル内のコード ファイルでする必要があります**ソリューション エクスプ ローラー** (など、 *ThisDocument*、 *ThisWorkbook*、または*ThisAddIn*コード ファイル)、コード ファイルを変更するたびにもファイルを既定では表示されません。 最上位のコード ファイルのみをチェックする場合、変更は失われます。
 
- 変更を行った後でバックアップのすべてのファイルを確認してください。 プロジェクト内の非表示コード ファイルの詳細については、[Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)を参照してください。
+ 変更を行った後でバックアップのすべてのファイルを確認してください。 プロジェクト内の非表示コード ファイルの詳細については、次を参照してください。 [Visual Studio 環境における Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)します。
 
 ## <a name="security-for-informal-collaboration-on-a-network"></a>ネットワーク上の共同のセキュリティ
  ネットワーク上の場所 (\\ \\ *Servername*\\*Sharename* など)にあるすべてのドキュメントレベルのソリューションでは、作業している Microsoft Office アプリケーションの信頼できるフォルダの一覧に完全修飾場所を追加する必要があります。 メインフォルダーの下にサブディレクトリを含めるか、デバッグフォルダとビルドフォルダを信頼できるフォルダリストに追加するかを選択します。 これを行う方法の詳細については、[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)を参照してください。

@@ -11,11 +11,11 @@ manager: Meng
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7899a096bb2a56e93ea55a4ba0a17cde272bd615
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950982"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>チュートリアル: 拡張機能パックを作成する
 
@@ -33,7 +33,7 @@ Visual Studio SDK は Visual Studio 2015 以降では Visual Studio のセット
 
 1. **新しいプロジェクト**ダイアログ ボックスで、検索を選択して"vsix" **VSIX プロジェクト**します。 **プロジェクト名**、「テスト拡張機能パック」を入力します。 **[作成]** を選択します。
 
-2. **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 移動する、Visual C#**拡張**ノード**拡張パック**します。 既定のファイル名 (ExtensionPack1.cs) のままにします。
+2. **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 移動する、Visual c#**拡張**ノード**拡張パック**します。 既定のファイル名 (ExtensionPack1.cs) のままにします。
 
 3. 次のコードを含む、ExtensionPack1.vsext ファイルが追加されます。
 

@@ -21,17 +21,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846374"
 ---
-# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace の機能 (C#、Visual Basic、C++)
+# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace の機能 (C#、Visual Basic、 C++)
 
 IntelliTrace を使用すると、イベントとアプリケーションを呼び出すメソッドとを記録することができます。この機能により、さまざまな実行ポイントでの状態 (呼び出し履歴およびローカル変数の値) を確認することができます。 通常どおりのデバッグの開始 - 既定では、IntelliTrace はオンになっています。このため、IntelliTrace が記録する情報が **[イベント]** タブの新しい **[診断ツール]** ウィンドウに表示されます。イベントについて記録された呼び出し履歴とローカルを確認するには、目的のイベントを選択し、**[デバッグ履歴の有効化]** をクリックします。
 
-ステップ バイ ステップの説明については、「[チュートリアル: IntelliTrace の使用](../debugger/walkthrough-using-intellitrace.md)」を参照してください。
+ステップ バイ ステップの説明を参照してください。[チュートリアル。IntelliTrace を使用して](../debugger/walkthrough-using-intellitrace.md)します。
 
 IntelliTrace は Visual Studio Enterprise Edition で使用できますが、Visual Studio Professional Edition または Community Edition では使用できません。
 
@@ -46,7 +46,7 @@ IntelliTrace がオンになっていることを確認するには、**[ツー�
 
 デバッグ中の場合、デバッグを停止します。 移動して**ツール > オプション > IntelliTrace > IntelliTrace イベント**します。 IntelliTrace で記録するイベントを選択します。
 
-## <a name="Snapshots"></a> スナップショットの収集 (C#、Visual Basic、C++)
+## <a name="Snapshots"></a> スナップショットの収集 (C#、Visual Basic、 C++)
 
 これが既定で有効になっていて、IntelliTrace は、すべてのブレークポイントとデバッガー ステップ イベントでのアプリケーションのスナップショットをキャプチャできます履歴デバッグ セッションでこれらのスナップショットを表示することができます。 スナップショットは、完全なアプリケーション状態のビューを提供します。 スナップショットのキャプチャを有効にするには**ツール > オプション > IntelliTrace > 全般**、選択および**IntelliTrace スナップショット (マネージとネイティブ)** します。 詳細については、[IntelliTrace を使用して以前のアプリの状態を検査する](../debugger/view-historical-application-state.md)方法に関するページを参照してください。
 
@@ -92,7 +92,7 @@ IntelliTrace がオンになっていることを確認するには、**[ツー�
 
 モジュールの数は最小限に抑えるようにしてください。 そうすれば、収集するデータが少なくなるので、パフォーマンスが向上します。 また、処理すべきデータが少なくなるので、UI のノイズが減少します。
 
-## <a name="SaveSession"></a> IntelliTrace データをファイルに保存 (C#、Visual Basic、C++)
+## <a name="SaveSession"></a> IntelliTrace データをファイルに保存 (C#、Visual Basic、 C++)
 
 デバッグ中にアプリケーションが中断状態にある場合は、**[デバッグ] > [IntelliTrace] > [IntelliTrace セッションの保存]** の順に選択して、IntelliTrace によって収集されたデータを保存することができます。 アプリケーションがまだ実行中の場合またはデバッグが停止状態の場合、メニュー項目は無効であるため、IntelliTrace で収集されたデータを保存することはできません。
 

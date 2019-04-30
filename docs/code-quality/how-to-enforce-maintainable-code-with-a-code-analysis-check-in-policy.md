@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7139c952b40957a564fcd4074b1c931817dfb851
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815830"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>方法: コード分析チェックイン ポリシーを保守しやすいコードを適用します。
 
-開発者は、複雑さとして、コードの保守性を測定する、コード メトリックスのツールを使用できますが、チェックイン ポリシーの一部としてコード メトリックスを呼び出すことはできません。 ただし、コードのメトリックの標準の準拠をコードのことを確認するコード分析規則を有効にし、チェックイン ポリシーを使用した、ルールを適用できます。 コード メトリックスの詳細については、[コード メトリックス値](../code-quality/code-metrics-values.md)を参照してください。
+開発者は、複雑さとして、コードの保守性を測定する、コード メトリックスのツールを使用できますが、チェックイン ポリシーの一部としてコード メトリックスを呼び出すことはできません。 ただし、コードのメトリックの標準の準拠をコードのことを確認するコード分析規則を有効にし、チェックイン ポリシーを使用した、ルールを適用できます。 コード メトリックスの詳細については、次を参照してください。[コード メトリックス値](../code-quality/code-metrics-values.md)します。
 
 Depth of Inheritance、Class Coupling、保守容易性指数、および複雑さのルール コード分析チェックイン ポリシーを保守しやすいコードを適用するのには、有効にできます。 これらのルールの 4 つすべては、「保守容易性規則」カテゴリで、コード分析ポリシー エディターで表示されます。
 

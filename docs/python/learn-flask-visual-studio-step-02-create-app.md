@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2526a6bcf6dc03379c22e38fb646acba450a9ec5
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961752"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>手順 2: ビューおよびページ テンプレートを使用して Flask アプリを作成する
 
-**前の手順:[Visual Studio プロジェクトとソリューションを作成する](learn-flask-visual-studio-step-01-project-solution.md)**
+**前の手順: [Visual Studio プロジェクトとソリューションを作成する](learn-flask-visual-studio-step-01-project-solution.md)**
 
 このチュートリアルの手順 1 では、ページが 1 つある Flask アプリを作成し、すべてのコードを 1 つのファイルに収めました。 今後の開発を可能にするために、コードをリファクタリングし、ページ テンプレートの構造を作成することをお勧めします。 特に、アプリのビューのコードを、スタートアップ コードなど、他の側面と切り離すことが望まれます。
 
@@ -77,6 +77,7 @@ ms.locfileid: "59366602"
 
         app.run(HOST, PORT)
     ```
+
 6. プロジェクト構造は次の画像のようになります。
 
     ![コードのリファクタリング後のプロジェクト構造](media/flask/step02-project-structure.png)

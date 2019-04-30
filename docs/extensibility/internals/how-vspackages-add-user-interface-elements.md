@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca4e817ae33d3129259de619e07bf256e6f544bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b392c962a2ddbed57ca1af934c0ef9d8b5175595
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418402"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage がユーザー インターフェイス要素を追加する方法
 VSPackage は、たとえば、メニュー、ツールバーのユーザー インターフェイス (UI) 要素を追加し、ツール ウィンドウ、Visual studio で、 *.vsct*ファイル。
@@ -63,7 +63,7 @@ VSPackage は、たとえば、メニュー、ツールバーのユーザー イ
  最上位の要素、`Symbols`セクションは、 [GuidSymbol 要素](../../extensibility/guidsymbol-element.md)します。 `GuidSymbol` 要素は、パッケージとその構成要素を識別するために、IDE で使用される Guid に名をマップします。
 
 > [!NOTE]
->  Guid は、Visual Studio パッケージ テンプレートによって自動的に生成されます。 クリックして、一意の GUID を作成することも**GUID の作成**上、**ツール**メニュー。
+> Guid は、Visual Studio パッケージ テンプレートによって自動的に生成されます。 クリックして、一意の GUID を作成することも**GUID の作成**上、**ツール**メニュー。
 
  最初の`GuidSymbol`要素、 `guid<PackageName>Pkg`、パッケージ自体の GUID です。 これは、Visual Studio によってパッケージの読み込みに使用される GUID です。 通常、子要素はありません。
 

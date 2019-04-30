@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 45a3f55e826133ce0fd55764e216824810ae45c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443269"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60113951"
   これらの問題に対する解決策を次に示します。  
   
 > [!NOTE]
->  アセンブリ内のファイルは、プロジェクト ファイルの絶対パスで参照されます。 したがって、複数の開発者がいる環境で作業しているユーザーには、ローカル環境で参照されるアセンブリがなくなる可能性があります。 これらのエラーを避けるためには、このような場合にプロジェクト間参照を追加することをお勧めします。 詳細については、「[方法: [参照の追加] ダイアログ ボックスを使用して参照を追加または削除する](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)」および「[アセンブリを使用したプログラミング](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)」を参照してください。  
+> アセンブリ内のファイルは、プロジェクト ファイルの絶対パスで参照されます。 したがって、複数の開発者がいる環境で作業しているユーザーには、ローカル環境で参照されるアセンブリがなくなる可能性があります。 これらのエラーを避けるためには、このような場合にプロジェクト間参照を追加することをお勧めします。 詳細については、「[方法: [参照の追加] ダイアログ ボックスを使用して参照を追加または削除する](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)」および「[アセンブリを使用したプログラミング](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)」を参照してください。  
   
 ## <a name="reference-path-is-incorrect"></a>参照パスが正しくない  
  異なるコンピューターでプロジェクトを共有している場合、コンポーネントが各コンピューターで異なるディレクトリに配置されていると、一部の参照が見つからない場合があります。 参照は、コンポーネント ファイルの名前 (MyComponent など) で格納されます。 参照がプロジェクトに追加されると、コンポーネント ファイルのフォルダーの場所 (C:\MyComponents\\ など) が **ReferencePath** プロジェクト プロパティに追加されます。  
@@ -50,7 +50,7 @@ ms.locfileid: "60113951"
  この問題を解決するには、壊れている参照を削除し、[参照の追加] ダイアログ ボックスを使用してこれを置き換えます。 別の解決策は、プロジェクトのプロパティ ページで **[参照パス]** 項目を使用して、一覧内のフォルダーを適切な場所を指すように変更することです。 **[参照パス]** プロパティは、各コンピューターのユーザーごとに保持されます。 したがって、参照パスを変更しても、プロジェクトの他のユーザーには影響しません。  
   
 > [!TIP]
->  プロジェクト間参照には、これらの問題はありません。 このため、可能であれば、ファイル参照の代わりにプロジェクト間参照を使用します。  
+> プロジェクト間参照には、これらの問題はありません。 このため、可能であれば、ファイル参照の代わりにプロジェクト間参照を使用します。  
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>参照パスを修正して壊れたプロジェクト参照を修正するには  
   

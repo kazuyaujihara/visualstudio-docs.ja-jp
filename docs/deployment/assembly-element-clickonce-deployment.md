@@ -1,5 +1,5 @@
 ---
-title: '&lt;アセンブリ&gt;要素 (ClickOnce 配置) |Microsoft Docs'
+title: '&lt;assembly&gt;要素 (ClickOnce 配置) |Microsoft ドキュメント'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929074"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;アセンブリ&gt;要素 (ClickOnce 配置)
 配置マニフェストの最上位要素。
@@ -42,7 +42,7 @@ ms.locfileid: "56635463"
 
 |属性|説明|
 |---------------|-----------------|
-|`manifestVersion`|必須です。 この属性に設定する必要があります`1.0`します。|
+|`manifestVersion`|必須。 この属性に設定する必要があります`1.0`します。|
 
 ## <a name="example"></a>例
  次のコード例を示しています、`assembly`要素を使用してデプロイされたアプリケーションの配置マニフェストで[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]します。 このコード例が示されている例の一部、 [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)トピック。

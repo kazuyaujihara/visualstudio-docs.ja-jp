@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98ab9edd260a190e1eb73b16a2ac71ed271ccdf7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: cf4a0324046383557c9c32afae2e6f05a41124ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401982"
 ---
 # <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
 データ シンボルの変数の分類を取得します。
@@ -39,13 +39,13 @@ HRESULT get_dataKind ( 
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
 
 > [!NOTE]
->  戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。
+> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|dia2.h|
+|ヘッダー:|Dia2.h|
 |バージョン:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>関連項目

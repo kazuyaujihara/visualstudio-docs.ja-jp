@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 250fa110b43aad38e6fc4323d6214bfb5fc7b5cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852114"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>デバッグの準備:Visual C++ プロジェクトの種類
 ここでは、[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] プロジェクト テンプレートで作成された基本的なプロジェクトの種類をデバッグする方法について説明します。

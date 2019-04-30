@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0c90c536dee76d67fdb93dd205e8f6eedff6dcc7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992940"
 ---
 # <a name="iactivescriptprofilercontrol5enumheap2-method"></a>IActiveScriptProfilerControl5::EnumHeap2 メソッド
 インターフェイスを返します ([IActiveScriptProfilerHeapEnum インターフェイス](../../winscript/reference/iactivescriptprofilerheapenum-interface.md))、関連付けられているスクリプト エンジンのコンテキストで GC ヒープ オブジェクトを反復処理に使用できます。  
@@ -31,7 +31,7 @@ HRESULT EnumHeap2(    [in] PROFILER_HEAP_ENUM_FLAGS enumFlags,    [out] IActiveS
   
 #### <a name="parameters"></a>パラメーター  
  enumFlags  
- オブジェクト リレーションシップ内でオブジェクトが指すものに関する補足情報を、公開するかどうかを指定する値です。 補足情報は、オブジェクトが Getter または Setter メソッドを指しているかを表す可能性があります。 詳細については、[PROFILER_HEAP_ENUM_FLAGS 列挙型](../../winscript/reference/profiler-heap-enum-flags-enumeration.md)を参照してください。  
+ オブジェクト リレーションシップ内でオブジェクトが指すものに関する補足情報を、公開するかどうかを指定する値です。 補足情報は、オブジェクトが Getter または Setter メソッドを指しているかを表す可能性があります。 詳細については、次を参照してください。 [PROFILER_HEAP_ENUM_FLAGS 列挙型](../../winscript/reference/profiler-heap-enum-flags-enumeration.md)します。  
   
  ppEnum  
  [out]返します、 [IActiveScriptProfilerHeapEnum インターフェイス](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)します。  

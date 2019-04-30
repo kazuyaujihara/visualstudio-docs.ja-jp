@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 749441e960363fe208e3ad67288180c1935db35f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860607"
 ---
 # <a name="image-library-viewer"></a>イメージ ライブラリ ビューア
 Visual Studio Image Library ビューアー ツールは、読み込みおよびユーザーが Visual Studio と同じ方法で操作できるように、イメージのマニフェストを検索できます。 ユーザーは、バック グラウンド、サイズ、DPI、ハイ コントラスト、およびその他の設定を変更できます。 このツールは、各イメージ マニフェストの読み込み情報を表示し、イメージ マニフェスト内の各イメージのソース情報を表示します。 このツールは、場合に便利です。

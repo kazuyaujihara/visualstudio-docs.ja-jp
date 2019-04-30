@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e35cb321772354de29b7b8466b6136c96cabf98d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798529"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio のレイアウト
 Visual Studio のダイアログ ボックスの大半は[ユーティリティ ダイアログのレイアウト](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)、そのに従って標準のダイアログ ボックスは、unthemed [Windows デスクトップ ダイアログのレイアウトの原則](/windows/desktop/uxguide/win-dialog-box)します。 Visual Studio の UI の更新を移動するとき、目立つのダイアログ ボックスの一部に製品を定義するとエクスペリエンスを確立する新しい設計になっています。 これら[テーマが適用されたダイアログのレイアウト](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)テーマの外観を与えます。

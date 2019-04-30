@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c60c84dbd3be9248e2bd075e65d53f7f9361d0b5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991013"
 ---
 # <a name="idebugapplicationcreateasyncdebugoperation"></a>IDebugApplication::CreateAsyncDebugOperation
 指定された同期デバッグ操作への非同期アクセスを提供します。  
@@ -51,7 +51,7 @@ HRESULT CreateAsyncDebugOperation(
 |`S_OK`|メソッドが成功しました。|  
   
 ## <a name="remarks"></a>Remarks  
- このメソッドは、式の評価を非同期的にデバッガー スレッドに明示的に同期せずに、言語エンジンを使用します。 詳細については、[IDebugSyncOperation インターフェイス](../../winscript/reference/idebugsyncoperation-interface.md)と[IDebugAsyncOperation インターフェイス](../../winscript/reference/idebugasyncoperation-interface.md)を参照してください。  
+ このメソッドは、式の評価を非同期的にデバッガー スレッドに明示的に同期せずに、言語エンジンを使用します。 詳細については、次を参照してください。 [IDebugSyncOperation インターフェイス](../../winscript/reference/idebugsyncoperation-interface.md)と[IDebugAsyncOperation インターフェイス](../../winscript/reference/idebugasyncoperation-interface.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugApplication インターフェイス](../../winscript/reference/idebugapplication-interface.md)   

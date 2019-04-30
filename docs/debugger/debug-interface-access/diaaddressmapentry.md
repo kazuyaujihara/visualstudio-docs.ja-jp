@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554897"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 アドレス マップ内のエントリについて説明します。
@@ -36,7 +36,7 @@ struct DiaAddressMapEntry {
 
 `rvaTo` 相対仮想アドレス`rva`B. イメージ内にマップされます
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 アドレス マップは、(A) をもう 1 つ (B) 1 つのイメージのレイアウトからの翻訳を提供します。 配列の`DiaAddressMapEntry`構造体の順に並べ替えて`rva`アドレス マップを定義します。
 
 アドレスに変換する`addrA`、イメージ アドレス内`addrB`B の図で、次の手順に従います。
@@ -49,7 +49,7 @@ struct DiaAddressMapEntry {
 
     配列の`DiaAddressMapEntry`に構造体が渡される、 [idiaaddressmap::set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)メソッド。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: dia2.h
 
 ## <a name="see-also"></a>関連項目

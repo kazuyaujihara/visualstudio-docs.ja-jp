@@ -16,16 +16,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 073e62b473ebfcec5f71ae1907e8f9e385333411
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967547"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>サンド ボックスの相違点とファーム ソリューション
   SharePoint ソリューションをコンパイルするときに、SharePoint サーバーにデプロイされ、それをデバッグするデバッガーをアタッチします。 ソリューションのデバッグに使用されるプロセスは、サンド ボックス ソリューション プロパティの設定によって異なります。 サンド ボックス ソリューションまたはファーム ソリューション。
 
- 詳細については、[サンド ボックス ソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)を参照してください。
+ 詳細については、次を参照してください。[サンド ボックス ソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)します。
 
 ## <a name="farm-solutions"></a>ファーム ソリューション
  IIS ワーカー プロセス (W3WP.exe) でホストされているファーム ソリューションでは、ファーム全体に影響を与えるコードを実行します。 「ファーム ソリューション」をサンド ボックス ソリューション プロパティが設定されている SharePoint プロジェクトをデバッグするときに、SharePoint または IIS ワーカー プロセスによってロックされているすべてのファイルをリリースするための機能をデプロイする前に、システムの IIS アプリケーション プールがリサイクルされます。 SharePoint プロジェクトのサイトの URL を提供している IIS アプリケーション プールのみは、リサイクルされます。

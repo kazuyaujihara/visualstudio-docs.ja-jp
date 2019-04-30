@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a44a6a3474d56b1254333731d79b2172fd6143b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407626"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>IntelliTrace スタンドアロン コレクターを使用して (C#、Visual Basic)
 
@@ -26,10 +26,10 @@ ms.locfileid: "60077656"
  IntelliTrace の機能を紹介するビデオ:[デバッグのために運用環境で IntelliTrace データを収集および分析する (Channel 9 ビデオ)](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
->  **Microsoft Monitoring Agent** を **トレース** モードで使用して、リモート マシン上で実行されている Web および SharePoint アプリの同じ IntelliTrace データを収集することもできます。
+> **Microsoft Monitoring Agent** を **トレース** モードで使用して、リモート マシン上で実行されている Web および SharePoint アプリの同じ IntelliTrace データを収集することもできます。
 >
->  IntelliTrace データ内のパフォーマンス関連イベントを収集するには、エージェントを **モニター** モードで実行します。 **モニター** モードは、 **トレース** モードや **IntelliTrace スタンドアロン コレクター**よりもパフォーマンスに及ぼす影響が少なくなります。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。 参照してください[Microsoft Monitoring Agent を使用して](../debugger/using-the-microsoft-monitoring-agent.md)します。
->  IntelliTrace スタンドアロン コレクターは、プロセスのスナップショットをサポートしていません。
+> IntelliTrace データ内のパフォーマンス関連イベントを収集するには、エージェントを **モニター** モードで実行します。 **モニター** モードは、 **トレース** モードや **IntelliTrace スタンドアロン コレクター**よりもパフォーマンスに及ぼす影響が少なくなります。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。 参照してください[Microsoft Monitoring Agent を使用して](../debugger/using-the-microsoft-monitoring-agent.md)します。
+> IntelliTrace スタンドアロン コレクターは、プロセスのスナップショットをサポートしていません。
 
  **必要条件**
 
@@ -38,7 +38,7 @@ ms.locfileid: "60077656"
 - .iTrace ファイルを開くための、開発用コンピューターまたは別のコンピューター上の Visual Studio Enterprise (Professional Edition でも Community Edition でもなく)
 
   > [!NOTE]
-  >  必ずシンボル (.pdb) ファイルを保存してください。 IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが必要です。 参照してください[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)します。
+  > 必ずシンボル (.pdb) ファイルを保存してください。 IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが必要です。 参照してください[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)します。
 
   **FAQ**
 
@@ -111,7 +111,7 @@ ms.locfileid: "60077656"
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       >  ピリオド (**.**) を指定することにより、ローカライズされた収集計画を含むサブフォルダーが保持されます。
+       > ピリオド (**.**) を指定することにより、ローカライズされた収集計画を含むサブフォルダーが保持されます。
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> コレクター ディレクトリのアクセス許可を設定する
 
@@ -216,7 +216,7 @@ ms.locfileid: "60077656"
      `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
-    >  このコマンドを実行した後、「 **Y** 」と入力してデータ収集を開始することを確認します。
+    > このコマンドを実行した後、「 **Y** 」と入力してデータ収集を開始することを確認します。
 
      たとえば、 **SharePoint - 80** アプリケーション プールの SharePoint アプリケーションからデータを収集するには、次のように入力します。
 
@@ -247,7 +247,7 @@ ms.locfileid: "60077656"
      `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
-    >  このコマンドを実行した後、「 **Y** 」と入力してデータ収集を停止することを確認します。 この操作を行わないと、コレクターはデータを収集し続けます。iTrace ファイルはロックされたままになり、ファイルに有用なデータが含まれなくなる可能性があります。
+    > このコマンドを実行した後、「 **Y** 」と入力してデータ収集を停止することを確認します。 この操作を行わないと、コレクターはデータを収集し続けます。iTrace ファイルはロックされたままになり、ファイルに有用なデータが含まれなくなる可能性があります。
 
 6. [Visual Studio Enterprise で .iTrace ファイルを開く](#BKMK_View_IntelliTrace_Log_Files)
 
@@ -275,7 +275,7 @@ ms.locfileid: "60077656"
 ## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Visual Studio Enterprise で .iTrace ファイルを開く
 
 > [!NOTE]
->  IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが必要です。 参照してください[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)します。
+> IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが必要です。 参照してください[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)します。
 
 1. Visual Studio Enterprise (Professional Edition でも Community Edition でもなく) がインストールされたコンピューターに、.iTrace ファイルを移動またはコピーします。
 
@@ -284,7 +284,7 @@ ms.locfileid: "60077656"
      Visual Studio に **[IntelliTrace の概要]** ページが表示されます。 ほとんどのセクションにおいて、イベントまたは他の項目を確認したうえで項目を選択し、イベントが発生したポイントで IntelliTrace を使用してデバッグを開始できます。 参照してください[保存された IntelliTrace データを使用して](../debugger/using-saved-intellitrace-data.md)します。
 
     > [!NOTE]
-    >  IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが開発コンピューターに必要です。 参照してください[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)します。
+    > IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが開発コンピューターに必要です。 参照してください[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)します。
 
 ## <a name="Minimizing"></a> アプリのパフォーマンスの低下なしにほとんどのデータを取得する方法
  IntelliTrace では大量のデータを収集できます。そのため、アプリのパフォーマンスへの影響は、IntelliTrace で収集するデータの種類、および分析するコードの種類によって決まります。 「 [運用サーバーでの IntelliTrace 収集の最適化](http://go.microsoft.com/fwlink/?LinkId=255233)」を参照してください。

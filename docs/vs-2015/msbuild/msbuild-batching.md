@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 823b853363e3044383da4673d7e88a96d9e5ea6a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439376"
 ---
 # <a name="msbuild-batching"></a>MSBuild バッチ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59664337"
  タスク属性の 1 つで %(*ItemMetaDataName*) という表記を利用し、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] でタスクのバッチ処理を実行するように指定します。 次の例では、`Example` 項目一覧が `Color` 項目メタデータ値に基づいてバッチに分割し、各バッチを `MyTask` タスクに個別に渡します。  
   
 > [!NOTE]
->  タスク属性の他の場所で項目一覧を参照しない場合、あるいはメタデータ名があいまいな場合、%(*ItemCollection.ItemMetaDataName*) という表記を利用し、バッチ処理に使用する項目メタデータ値を完全修飾できます。  
+> タスク属性の他の場所で項目一覧を参照しない場合、あるいはメタデータ名があいまいな場合、%(*ItemCollection.ItemMetaDataName*) という表記を利用し、バッチ処理に使用する項目メタデータ値を完全修飾できます。  
   
 ```  
 <Project  

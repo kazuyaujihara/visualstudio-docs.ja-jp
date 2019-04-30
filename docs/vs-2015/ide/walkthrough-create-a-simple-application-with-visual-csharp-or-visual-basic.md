@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b278e05ec19bc550d8c8c8c1258514cf63cd5f9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436821"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>チュートリアル : Visual C# または Visual Basic による簡単なアプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60040560"
  [アプリケーションのデバッグとテスト](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  このチュートリアルでは、Visual Studio Professional の WPF アプリケーション テンプレートに基づいて、チュートリアル用のプロジェクトを作成します。 このテンプレートは Visual Studio Express for Windows Desktop には用意されていますが、Visual Studio Express for Windows と Visual Studio Express for Web には用意されていません。 Visual Studio Express for Windows の使用方法の概要については、デベロッパー センターの「 [Windows ストア アプリの開発](http://msdn.microsoft.com/windows/apps/br229519)」を参照してください。 Visual Studio Express for Web の使用方法の概要については、「 [Get Started with ASP.NET](http://www.asp.net/get-started)」 (ASP.NET の概要) を参照してください。 さらに、使用する Visual Studio のエディションと設定によって、ユーザー インターフェイスの一部の要素の名前や場所は異なります。 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)を参照してください。  
+> このチュートリアルでは、Visual Studio Professional の WPF アプリケーション テンプレートに基づいて、チュートリアル用のプロジェクトを作成します。 このテンプレートは Visual Studio Express for Windows Desktop には用意されていますが、Visual Studio Express for Windows と Visual Studio Express for Web には用意されていません。 Visual Studio Express for Windows の使用方法の概要については、デベロッパー センターの「 [Windows ストア アプリの開発](http://msdn.microsoft.com/windows/apps/br229519)」を参照してください。 Visual Studio Express for Web の使用方法の概要については、「 [Get Started with ASP.NET](http://www.asp.net/get-started)」 (ASP.NET の概要) を参照してください。 さらに、使用する Visual Studio のエディションと設定によって、ユーザー インターフェイスの一部の要素の名前や場所は異なります。 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)を参照してください。  
   
 ## <a name="BKMK_ConfigureIDE"></a> IDE の構成  
  Visual Studio を初めて起動すると、Visual Studio から、Microsoft サービス アカウント (MSA) でサインイン ( [Visual Studio にサインイン](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)) するように求められます。 サインインは必須ではなく、後で実行することもできます。  
@@ -109,7 +109,7 @@ ms.locfileid: "60040560"
     ファイルの名前が Greetings.xaml になったことが**ソリューション エクスプローラー** に示され、MainWindow.xaml ノードを展開する (ノードにフォーカスを設定し、右矢印キーを押す) と、MainWindow.xaml.vb または MainWindow.xaml.cs の名前が Greetings.xaml.vb または Greetings.xaml.cs になったことが示されます。 このコード ファイルは、.xaml ファイル ノードの下に入れ子になっており、相互に非常に密接に関連していることが示されます。  
   
    > [!WARNING]
-   >  この変更により、エラーが発生します。後の手順で、このエラーをデバッグして修正する方法を学習します。  
+   > この変更により、エラーが発生します。後の手順で、このエラーをデバッグして修正する方法を学習します。  
   
 2. **ソリューション エクスプローラー**で、Greetings.xaml をデザイナー ビューで開き (ノードにフォーカスがあるときに Enter キーを押す) 、マウスを使ってウィンドウのタイトル バーを選択します。  
   

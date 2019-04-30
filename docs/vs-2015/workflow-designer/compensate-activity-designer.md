@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0f643770482c2d01f3f091157e63f8e987853da5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977193"
 ---
 # <a name="compensate-activity-designer"></a>Compensate アクティビティ デザイナー
 **補正**作成および構成するアクティビティ デザイナーが使用される、<xref:System.Activities.Statements.Compensate>アクティビティ。  

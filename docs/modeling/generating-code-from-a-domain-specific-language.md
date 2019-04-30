@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c761fccfafae4af864264cc5b9d103d09b61710
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994445"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>ドメイン固有言語からのコード生成
 Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]モデルで表されたデータから、コード、ドキュメント、構成ファイル、およびその他の成果物を生成する強力な手段を提供します。 使用して[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]、データを表すクラスのセットを作成すると記述できます、テキスト テンプレート クラスの名前を持つプロパティには、そのデータが反映されます。
@@ -42,7 +42,7 @@ Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]モデルで表された
 
  トラブルシューティングと、ドメイン固有言語を表すテキスト テンプレートでのデバッグを行う方法について説明します。
 
- [チュートリアル: 生成済みディレクティブ プロセッサをホストに接続します。](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
+ [チュートリアル: 生成済みディレクティブ プロセッサへのホストの接続](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
 
  生成済みディレクティブ プロセッサへのカスタム ホストを接続する方法について説明します。
 

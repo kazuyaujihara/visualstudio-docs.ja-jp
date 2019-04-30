@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 380618e0cee57a1cf0f45a1324d150170e5ee16e
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: abae34aad980d42018c217e150ea72b5896e436e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816073"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity を使用する
 
@@ -189,6 +189,9 @@ Visual Studio の **[停止]** ボタンをクリックするかキーボード 
 
 2. DLL プロジェクトで、適切な Unity フレームワーク プロファイルを参照します。 Visual Studio では、DLL プロジェクトのプロパティで、**[対象のフレームワーク]** プロパティを、使用している Unity フレームワークのバージョンに設定します。 これは、Unity フル、Micro、または Web 基底クラス ライブラリなど、プロジェクトが対象とする API 互換性と一致する Unity 基底クラス ライブラリです。 この設定により、他のフレームワークまたは互換性レベルに存在するが、使用している Unity フレームワークのバージョンには存在しないフレームワーク メソッドを DLL が呼び出すことを防止できます。
 
+> [!NOTE]
+> Unity のレガシ ランタイムを使用している場合にのみ、以下が必要です。 新しい Unity ランタイムを使用している場合は、このような専用の 3.5 プロファイルを使用する必要はありません。 お使いの Unity バージョンと互換性のある .NET 4.x プロファイルを使用してください。
+
    ![Unity フレームワークに、DLL のターゲット フレームワークを設定します。](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
 3. DLL は、Unity プロジェクトのアセット フォルダーにコピーします。 Unity では、アセットとは、Unity のアプリと一緒にパッケージ化され、実行時に読み込めるように配置されるファイルのことです。 DLL は実行時にリンクされるので、DLL はアセットとして配置する必要があります。 アセットとして配置するには、Unity エディターは DLL を Unity プロジェクトの Assets フォルダー内に置く必要があります。 これを実行するには、次の 2 つの方法があります。
@@ -197,7 +200,9 @@ Visual Studio の **[停止]** ボタンをクリックするかキーボード 
 
    - DLL プロジェクトのビルド設定を変更して、出力フォルダーを自分の Unity プロジェクトの **Assets** フォルダーに設定します。 DLL ファイルと PDB ファイルの両方が **Assets** フォルダーに置かれます。
 
-   PDB ファイルには DLL のデバッグのシンボルや、DLL コードからソース コード フォームへのマップが格納されているため、デバッグには PDB ファイルが必要です。 Visual Studio Tools for Unity は、DLL と PDB からの情報を使用して DLL.MDB ファイルを作成します。このファイルは、Unity スクリプト エンジンが使用するデバッグ シンボル形式になっています。
+   PDB ファイルには DLL のデバッグのシンボルや、DLL コードからソース コード フォームへのマップが格納されているため、デバッグには PDB ファイルが必要です。 レガシ ランタイムをターゲットにしている場合、Visual Studio Tools for Unity は、DLL と PDB からの情報を使用して DLL.MDB ファイルを作成します。このファイルは、レガシ Unity スクリプト エンジンが使用するデバッグ シンボル形式になっています。 新しいランタイムをターゲットにしていて、Portable-PDB を使用している場合、新しい Unity ランタイムは Portable-PDB をネイティブで使用できるため、Visual Studio Tools for Unity ではシンボル変換が試行されません。
+   
+   PDB 生成の詳細については、[ここ](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019)を参照してください。 新しいランタイムをターゲットにしている場合は、Portable-PDB を適切に生成するために、[Debugging Information]\(デバッグ情報\) が [移植可能] に設定されていることを確認します。 レガシ ランタイムをターゲットにしている場合は、[全体] を使用する必要があります。
 
 4. コードをデバッグします。 これで、Unity プロジェクトのソース コードと DLL ソース コードを一緒にしてデバッグできるようになりました。ブレークポイントやコードのステップ実行など、いつも使用しているデバッグ機能をすべて使用できます。
 

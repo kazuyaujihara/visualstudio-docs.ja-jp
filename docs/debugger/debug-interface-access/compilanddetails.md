@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 896832ac3e96e499aa564d5bce44dc06185090de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555248"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 コンパイル単位の情報を使用したシンボルに分割されて、`SymTagCompiland`タグ (解像度の低い) と`SymTagCompilandDetails`タグ (詳細)。 `SymTagCompilandDetails` 追加のシンボルを読み込む必要があります。 ただしは、豊富な情報では利用できませんが、コンパイル単位について、`SymTagCompiland`シンボル。
@@ -50,7 +50,7 @@ ms.locfileid: "56609229"
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|シンボルのインデックス ID。|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|返します`SymTagCompilandDetails`(の 1 つ、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)値)。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  コンパイラは、多くの場合、2 パス コンパイラ; と呼ばれる形式で付属します。一部のコンパイラ バージョンでは、各パスは別のプログラムによって処理されます。 これらは既知としてフロント エンドとバックエンドのコンパイラでは、それぞれ、ためバックエンドとフロント エンドのバージョン番号のシンボル プロパティ。
 
 ## <a name="see-also"></a>関連項目

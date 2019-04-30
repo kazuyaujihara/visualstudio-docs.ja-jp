@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79d116cfb7c9b6514032aa12d916b21b38ae94b3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811688"
 ---
 # <a name="create-models-for-your-app"></a>アプリのモデルを生成する
 
@@ -38,7 +38,7 @@ ms.locfileid: "55942623"
 
 |**図**|**表示される内容**|
 |-|-|
-|[依存関係図:ガイドライン](../modeling/layer-diagrams-guidelines.md)<br /><br /> [依存関係図:参照](../modeling/layer-diagrams-reference.md)|システムのアーキテクチャの概要|
+|[依存関係図:ガイドライン](../modeling/layer-diagrams-guidelines.md)<br /><br /> [依存関係図:リファレンス](../modeling/layer-diagrams-reference.md)|システムのアーキテクチャの概要|
 |コード マップ<br /><br /> [ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [コード マップ アナライザーを使用して潜在的な問題を検索する](../modeling/find-potential-problems-using-code-map-analyzers.md)|既存のコード内の依存関係とその他の関係|
 |コードで生成されたクラス図<br /><br /> [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|.NET コード内の型とその関係|
 

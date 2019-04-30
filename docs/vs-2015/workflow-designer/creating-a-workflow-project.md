@@ -14,16 +14,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58977671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976985"
 ---
 # <a name="creating-a-workflow-project"></a>ワークフロー プロジェクトの作成
 ワークフロー、[!INCLUDE[indigo1](../includes/indigo1-md.md)] ワークフロー サービス、カスタム アクティビティ、およびカスタム アクティビティ デザイナーは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクト テンプレートを利用して作成できます。 ここでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で使用できるプロジェクト テンプレートで、ライブラリおよびアプリケーションを作成する方法について説明します。  
   
- 最初の 4 つ以下のトピックがあるワークフロー テンプレートでの使用方法を説明します、**新しいプロジェクト**ウィンドウ。 これらのテンプレートを開くことでアクセスできる[!INCLUDE[vs2010](../includes/vs2010-md.md)]選択**ファイル** -> **新規** -> **プロジェクト.**、**ワークフロー**カテゴリから、**インストールされたテンプレート**いずれかで、左側のセクション、 **Visual Basic**または**Visual C#** ノード。  
+ 最初の 4 つ以下のトピックがあるワークフロー テンプレートでの使用方法を説明します、**新しいプロジェクト**ウィンドウ。 これらのテンプレートを開くことでアクセスできる[!INCLUDE[vs2010](../includes/vs2010-md.md)]選択**ファイル** -> **新規** -> **プロジェクト.**、**ワークフロー**カテゴリから、**インストールされたテンプレート**いずれかで、左側のセクション、 **Visual Basic**または**Visual c#** ノード。  
   
  最後のトピックでは、ワークフロー アクティビティ、ワークフロー デザイナー、ワークフロー サービスなどの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 項目を既存のワークフロー (またはその他の) プロジェクトに追加する方法について説明します。  
   

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c6e0f6d7fcf9920ddb8861712b7c5f8bf04506fc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939416"
 ---
 # <a name="cache-data"></a>キャッシュ データ
   データは、オフライン、または Microsoft Office Word または Microsoft Office Excel を開くことがなくアクセスできるように、ドキュメント レベル カスタマイズ内のデータ オブジェクトをキャッシュできます。 オブジェクトをキャッシュするには、オブジェクトのデータ型を特定の要件を満たす必要があります。 .NET Framework の多くの一般的なデータ型など、これらの要件を満たしている<xref:System.String>、 <xref:System.Data.DataSet>、および<xref:System.Data.DataTable>します。
@@ -32,7 +32,7 @@ ms.locfileid: "56616769"
 
 - 実行時にデータ キャッシュにオブジェクトをプログラムで追加するには、使用、`StartCaching`メソッドのホスト項目など、`ThisDocument`または`ThisWorkbook`クラス。 詳細については、「[方法 :Office ドキュメント内のデータ ソースをプログラムでキャッシュ](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)します。
 
-  データ キャッシュにオブジェクトを追加した後は、アクセスして、Word または Excel を起動せず、キャッシュされたデータを変更することができます。 詳細については、[サーバー上のドキュメント内のデータ アクセス](../vsto/accessing-data-in-documents-on-the-server.md)を参照してください。
+  データ キャッシュにオブジェクトを追加した後は、アクセスして、Word または Excel を起動せず、キャッシュされたデータを変更することができます。 詳細については、次を参照してください。[サーバー上のドキュメント内のデータ アクセス](../vsto/accessing-data-in-documents-on-the-server.md)します。
 
 ## <a name="requirements-for-data-objects-to-be-cached"></a>データ オブジェクトをキャッシュに保存するための要件
  ソリューション内のデータ オブジェクトをキャッシュするには、オブジェクトは、これらの要件を満たす必要があります。
@@ -57,7 +57,7 @@ ms.locfileid: "56616769"
 
 - 実装していません<xref:System.Collections.IDictionary>場合コレクション。
 
-  データ オブジェクトをキャッシュするときに、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 、オブジェクトに格納されている XML 文字列にシリアル化、*カスタム XML 部分*ドキュメント。 詳細については、[カスタム XML 部分の概要](../vsto/custom-xml-parts-overview.md)を参照してください。
+  データ オブジェクトをキャッシュするときに、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 、オブジェクトに格納されている XML 文字列にシリアル化、*カスタム XML 部分*ドキュメント。 詳細については、次を参照してください。[カスタム XML 部分の概要](../vsto/custom-xml-parts-overview.md)します。
 
 ## <a name="cached-data-size-limits"></a>キャッシュされたデータ サイズの制限
  データ キャッシュ内の個別のオブジェクトのサイズと、ドキュメント内のデータ キャッシュに追加できるデータの総量をいくつかの制限があります。 これらの制限を超えると、データ キャッシュにデータが保存された場合に、アプリケーションが予期せず閉じることがあります。
@@ -81,7 +81,7 @@ ms.locfileid: "56616769"
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>Null 値をデータ キャッシュに追加するときにデータ損失を防止します。
  キャッシュされたオブジェクトのすべて必要があります以外に初期化するオブジェクトをデータ キャッシュに追加するときに**null**値、ドキュメントを保存して閉じる前にします。 任意のキャッシュされたオブジェクトがある場合、 **null**値、ドキュメントを保存して閉じられたときに、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]データ キャッシュから削除するすべてのキャッシュされたオブジェクトに自動的にします。
 
- 持つオブジェクトを追加する場合、 **null**値を使用して、データ キャッシュを<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>属性、デザイン時に使用することができます、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>ドキュメントが開かれる前に、キャッシュされたデータを初期化するためにクラスがオブジェクトします。 これは、Word または Excel ドキュメントをエンドユーザーが開く前にインストールされていないサーバー上のキャッシュされたデータの初期化に使用する場合に便利です。 詳細については、[サーバー上のドキュメント内のデータ アクセス](../vsto/accessing-data-in-documents-on-the-server.md)を参照してください。
+ 持つオブジェクトを追加する場合、 **null**値を使用して、データ キャッシュを<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>属性、デザイン時に使用することができます、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>ドキュメントが開かれる前に、キャッシュされたデータを初期化するためにクラスがオブジェクトします。 これは、Word または Excel ドキュメントをエンドユーザーが開く前にインストールされていないサーバー上のキャッシュされたデータの初期化に使用する場合に便利です。 詳細については、次を参照してください。[サーバー上のドキュメント内のデータ アクセス](../vsto/accessing-data-in-documents-on-the-server.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [方法: オフラインか、サーバーで使用するデータをキャッシュします。](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

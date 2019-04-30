@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1e3dd8c395c59bc3255c1c9ee55837466c1cef7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828519"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 モジュールまたはイメージのベースの位置とメモリのオフセットの詳細が公開されます。
@@ -37,7 +37,7 @@ IDiaImageData : IUnknown
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|イメージの仮想メモリの場所を取得します。|
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|イメージのベースでのメモリ位置を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 いくつかの debug ストリーム (XDATA、PDATA) では、イメージにも格納されているデータのコピーが含まれます。 これらのストリームのオブジェクトを照会できますデータ、`IDiaImageData`インターフェイス。 詳細については、このトピックでは、「ノートの呼び出し元」を参照してください。
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
@@ -110,8 +110,8 @@ void ShowImageData(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>要件
-ヘッダー: Dia2.h
+## <a name="requirements"></a>必要条件
+ヘッダー:Dia2.h
 
 ライブラリ: diaguids.lib
 

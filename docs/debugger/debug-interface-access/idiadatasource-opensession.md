@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 393abb3b1e1872a416865cbfee5c142bef98ce78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838455"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 シンボルを照会するためのセッションを開きます。
@@ -44,7 +44,7 @@ ppSession
 |E_INVALIDARG|無効な `ppSession` パラメーター。|
 |E_OUTOFMEMORY|メモリ不足のため、セッションを開きます。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 このメソッドを開き、 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)データ ソースのオブジェクト。
 
 `IDiaSession` オブジェクトは、データ ソースにクエリを実装します。 セッションでは、デバッグ シンボルのセットごとに 1 つのアドレス空間を管理します。 データ ソースのシンボルによって記述される .exe または .dll ファイルがある場合は、アクティブでは、複数のアドレスの範囲 (たとえば、複数のプロセスでは、読み込まれることがある) ため、し、アドレス範囲ごとに 1 つのセッションを使用する必要があります。

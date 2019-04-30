@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4519be8ec5c5d4ba8a611df1880ae770a83cf981
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433865"
 ---
 # <a name="workflow-designer-shell-features"></a>ワークフロー デザイナーのシェルの機能
 
@@ -35,6 +35,6 @@ ms.locfileid: "55919470"
 
  にイメージとしてコピーする内を右クリックし、デザイナー**イメージとしてコピー**します。 イメージとして保存する、内を右クリックし、デザイナー**イメージとして保存**します。 ワークフローは、JPG、PNG、GIF、および XPS の各形式のいずれかで保存できます。 形式を選択、**名前を付けて保存** ダイアログ ボックスで、**ファイルの種類:** ウィンドウの下部にあるリスト ボックスの一覧します。
 
-## <a name="fonts-and-colors"></a>フォントと色
+## <a name="fonts-and-colors"></a>フォントおよび色
 
 Visual Studio 内でワークフロー デザイナーで使用されるフォントは、環境フォントにより制御されます。 ワークフロー デザイナーで表示される色は、オペレーティング システムのテーマのハイ コントラストの配色を使用している場合に変更します。 ワークフロー デザイナーで変更が有効にするには、フォントや色の設定を変更を行った後は、Visual Studio を再起動する必要があります。

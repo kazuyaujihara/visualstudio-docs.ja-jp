@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d897fe074c0215d462ff81ccd33e7d71487b1282
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433103"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>方法: 使用する XML スキーマを選択する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ XML エディターはスキーマ キャッシュを提供します。このキ
  指定したスキーマは、他のすべての XML ドキュメント プロパティと共に非表示のソリューション ユーザー オプション ファイル (.suo) に保存されます。 このため、ソリューションを次に開いたときにプロパティの値を再入力する必要はありません。  
   
 > [!NOTE]
->  エディターは、インライン スキーマ、または `xsd:schemaLocation` 属性によって参照されているスキーマを使用して検証を行うことができます。 詳細については、次を参照してください。 [XML ドキュメントの検証](../xml-tools/xml-document-validation.md)です。  
+> エディターは、インライン スキーマ、または `xsd:schemaLocation` 属性によって参照されているスキーマを使用して検証を行うことができます。 詳細については、次を参照してください。 [XML ドキュメントの検証](../xml-tools/xml-document-validation.md)です。  
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>スキーマ キャッシュにある XML スキーマを選択するには  
   
@@ -71,7 +71,7 @@ XML エディターはスキーマ キャッシュを提供します。このキ
      スキーマは、メモリ内のスキーマ キャッシュから削除されますが、ファイル システムからは削除されません。  
   
     > [!NOTE]
-    >  使用してスキーマへの参照があるかどうか、`schemaLocation`属性、または、一致する`targetNamespace`し**削除**自動的な関連付けによりこのような状況では機能しません。 ここでお勧めときにスキーマをマークする**選択されているスキーマを使用しないでください**で、**使用**列。  
+    > 使用してスキーマへの参照があるかどうか、`schemaLocation`属性、または、一致する`targetNamespace`し**削除**自動的な関連付けによりこのような状況では機能しません。 ここでお勧めときにスキーマをマークする**選択されているスキーマを使用しないでください**で、**使用**列。  
   
 ## <a name="see-also"></a>関連項目  
  [スキーマ キャッシュ](../xml-tools/schema-cache.md)   

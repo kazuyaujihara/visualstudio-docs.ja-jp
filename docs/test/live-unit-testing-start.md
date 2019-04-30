@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 59e8206bd1110a06c8b94b71ac9da8253a3a4b25
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: f27e09cd66c05a10648205850a9547d7b191d2de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787582"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio 2017 で Live Unit Testing の使用を開始する
 
@@ -34,7 +34,7 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-このチュートリアルでは、.NET Core 2.0 ワークロードを使用する Visual Studio Enterprise Edition がインストールされている必要があります。
+このチュートリアルでは、.NET Core 2.0 ワークロードを使用する Visual Studio Enterprise エディションがインストールされている必要があります。
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>ソリューションとクラス ライブラリ プロジェクトを作成する
 
@@ -94,11 +94,11 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
 
    `StringLibrary` には 3 つの静的メソッドが格納されています。
 
-      - `StartsWithUpper` は、文字列が大文字で始まる場合は `true` を返し、それ以外の場合には `false` を返します。
+   - `StartsWithUpper` は、文字列が大文字で始まる場合は `true` を返し、それ以外の場合には `false` を返します。
 
-      - `StartsWithLower` は、文字列が小文字で始まる場合は `true` を返し、それ以外の場合には `false` を返します。
+   - `StartsWithLower` は、文字列が小文字で始まる場合は `true` を返し、それ以外の場合には `false` を返します。
 
-      - `HasEmbeddedSpaces` は、埋め込み空白文字が文字列に含まれている場合は `true` を返し、それ以外の場合には `false` を返します。
+   - `HasEmbeddedSpaces` は、埋め込み空白文字が文字列に含まれている場合は `true` を返し、それ以外の場合には `false` を返します。
 
 6. Visual Studio の最上位メニューから、**[ビルド]** > **[ソリューションのビルド]** の順に選択します。 Visual Studio によって目的のライブラリが正常にビルドされるはずです。
 
@@ -140,11 +140,11 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
 
    `StringLibrary` には 3 つの静的メソッドが格納されています。
 
-      - `StartsWithUpper` は、文字列が大文字で始まる場合は `true` を返し、それ以外の場合には `false` を返します。
+   - `StartsWithUpper` は、文字列が大文字で始まる場合は `true` を返し、それ以外の場合には `false` を返します。
 
-      - `StartsWithLower` は、文字列が小文字で始まる場合は `true` を返し、それ以外の場合には `false` を返します。
+   - `StartsWithLower` は、文字列が小文字で始まる場合は `true` を返し、それ以外の場合には `false` を返します。
 
-      - `HasEmbeddedSpaces` は、埋め込み空白文字が文字列に含まれている場合は `true` を返し、それ以外の場合には `false` を返します。
+   - `HasEmbeddedSpaces` は、埋め込み空白文字が文字列に含まれている場合は `true` を返し、それ以外の場合には `false` を返します。
 
 6. **ソリューション エクスプローラー**で、StringLibrary プロジェクトを右クリックし、**[プロパティ]** を選択します。 次の図に示すように、**[アプリケーション]** タブで、**[ルート名前空間]** テキスト ボックス内のテキストを削除します。 ルート名前空間は、ソース コード内の [Namespace ステートメント](/dotnet/visual-basic/language-reference/statements/namespace-statement)によって定義されます。
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5421599d2ffa006a445e0410088671d8897cc52
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d62f999f485acaba168a50d404f2b5cbb272ef14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821079"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio での正規表現の使用
 
@@ -61,12 +61,12 @@ Visual Studio は、テキストの検索と置換をするときに、[.NET Fra
 |ワード境界に一致します。|\b (文字クラス `\b` の外部にあるときはワード境界を指定し、文字クラス `\b` の内部にあるときはバックスペースを指定します)。|`\bin` は、"inside" の中の "in" と一致しますが、"pinto" には一致しません。|
 |改行 (つまり、キャリッジ リターンとそれに続く新しい行) に一致します。|\r?\n|`End\r?\nBegin` は、"End" が行の最後の文字列で、"Begin" が次の行の先頭の文字列である場合のみ、単語 "End" と "Begin" に一致します。|
 |任意の英数字 1 文字に一致します。|\w|`a\wd` は、"add" および "a1d" に一致しますが、"a d" には一致しません。|
-|任意の空白文字と一致します。|(?([^\r\n])\s)|`Public\sInterface` は、語句 "Public Interface" に一致します。|
+|任意の空白文字と一致します。|\s|`Public\sInterface` は、語句 "Public Interface" に一致します。|
 |任意の数字 1 文字に一致します。|\d|`\d` は、"3456" の中の "3"、"23" の中の "2"、および "1" の中の "1" に一致します。|
 |Unicode 文字に一致します。|\uXXXX、ここで XXXX は、Unicode 文字の値を指定します。|`\u0065` は、^ 文字に一致します。|
 |識別子に一致します|\b[\_\w-[0-9]][\_\w]*\b|"type1" に一致しますが、"&type1" や "#define" には一致しません。|
 |引用符の内側にある文字列と一致します|((\\".+?\\")&#124;('.+?'))|単一引用符または二重引用符の内部にある任意の文字列に一致します。|
-|16 進数に一致します|\b0[xX]([0-9a-fA-F]\)\b|"0xc67f" 一致しますが、"0xc67fc67f" には一致しません。|
+|16 進数に一致します|\b0[xX]([0-9a-fA-F]+\)\b|"0xc67f" と一致しますが、"0xc67g" とは一致しません。|
 |整数と小数に一致します|\b[0-9]*\\.\*[0-9]+\b|"1.333" に一致します。|
 
 > [!TIP]

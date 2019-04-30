@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a0d656aea42fff774e5e9c58068eff7039cfe79
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823428"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>ロード テスト アナライザーの詳細ビューでのロード テストの仮想ユーザー アクティビティの分析
 
@@ -45,11 +45,11 @@ ms.locfileid: "55936955"
 
  [フィルター結果] パネルは、**仮想ユーザー アクティビティ チャート**に表示されます。 [フィルター結果] パネルでは、次のように結果がフィルターされます。
 
--   **[ログのある結果のみを表示]** 関連付けられたテスト ログがあるテスト結果のみが表示されます。
+- **[ログのある結果のみを表示]** 関連付けられたテスト ログがあるテスト結果のみが表示されます。
 
--   **[成功した結果の表示]** 成功した結果が表示されます。
+- **[成功した結果の表示]** 成功した結果が表示されます。
 
--   **[エラーのある結果の表示]** デバッグに役立つエラーのある結果が表示されます。
+- **[エラーのある結果の表示]** デバッグに役立つエラーのある結果が表示されます。
 
 ## <a name="tasks"></a>[タスク]
 

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dfce8cdc3115730ae67ba365f5c56a927542f5ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953063"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer オブジェクト
 テキスト バッファー オブジェクトは、Unicode テキストは、一般には、ファイルのストリームを表します。 A<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>ように、ウィザードのコア エディターのコンテキスト外にあるオブジェクトを使用できます。
@@ -41,7 +41,7 @@ ms.locfileid: "56721928"
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|イベントのコネクション ポイントをサポートしています。|
 
 ## <a name="remarks"></a>Remarks
- `VSTextBuffer`で見つかることが、`QueryInterface`で呼び出す`IVsTextBuffer`します。 詳細については、[テキスト バッファー](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)を参照してください。
+ `VSTextBuffer`で見つかることが、`QueryInterface`で呼び出す`IVsTextBuffer`します。 詳細については、次を参照してください。[テキスト バッファー](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)します。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>

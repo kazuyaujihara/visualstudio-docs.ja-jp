@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e1f1b923b395121fb5671088d99421a79c45fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90499ae5dadac705d759270996f647b2d1a65445
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406603"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>方法: ClickOnce 配置 API を使用してアプリケーションの更新プログラムをプログラムで確認する
 ClickOnce では、デプロイ後にアプリケーションを更新する 2 つの方法を提供します。 最初のメソッドでは、一定の間隔で更新を自動的にチェックする ClickOnce 配置を構成できます。 2 番目のメソッドを使用するコードを記述することができます、<xref:System.Deployment.Application.ApplicationDeployment>更新をチェックするクラス、ユーザーの要求など、イベントに基づいています。
@@ -30,7 +30,7 @@ ClickOnce では、デプロイ後にアプリケーションを更新する 2 �
  ClickOnce アプリケーションをプログラムで更新するには、更新プログラムの場所を指定する必要があります。 これは、配置プロバイダーと呼ばれます。 このプロパティの設定の詳細については、次を参照してください。 [ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)します。
 
 > [!NOTE]
->  以下から別の更新に 1 つの場所からアプリケーションをデプロイしで説明する手法を使用することもできます。 詳細については、「[方法 :配置の更新用に別の場所を指定する](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)」を参照してください。
+> 以下から別の更新に 1 つの場所からアプリケーションをデプロイしで説明する手法を使用することもできます。 詳細については、「[方法 :配置の更新用に別の場所を指定する](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)」を参照してください。
 
 ### <a name="to-check-for-updates-programmatically"></a>プログラムで更新プログラムを確認するには
 

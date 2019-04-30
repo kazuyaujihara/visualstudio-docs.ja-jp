@@ -15,15 +15,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5b6527be8f803a62992a6d420c2eee03b384789f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56839920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006171"
 ---
 # <a name="the-use-of-a-future-reserved-word-for-an-identifier-is-invalid"></a>将来の予約語を識別子に使用することはできません。
 1049:将来の予約語を識別子に使用することはできません。  
   
  将来の予約語は、変数、関数、またはその他のユーザー定義の識別子の名前として使用できません。  
   
- 将来の予約語に関する詳細については、[JavaScript の将来の予約語](../../javascript/reference/javascript-future-reserved-words.md)を参照してください。
+ 将来の予約語に関する詳細については、次を参照してください。 [JavaScript の将来の予約語](../../javascript/reference/javascript-future-reserved-words.md)します。

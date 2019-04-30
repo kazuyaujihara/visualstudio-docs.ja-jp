@@ -11,15 +11,15 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ecb4f46b238b72c9d83b46122b8567a8636282b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825404"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>クイック スタート: C/C++ のコード分析
 
-C または C++ コードのコード分析を定期的に実行することで、アプリケーションの品質を向上できます。 これにより、一般的な問題、優れたプログラミング手法からの逸脱、テストで見つけることが難しい不具合を検出できます。 コード分析の警告はコンパイラのエラーや警告とは異なります。コード分析は、有効であってもコードの作成者やコードを利用する他のユーザーにとって問題になる可能性がある特定のコード パターンを検索するからです。
+C または C++ コードのコード分析を定期的に実行することで、アプリケーションの品質を向上できます。 これにより、一般的な問題、優れたプログラミング手法からの逸脱、テストで見つけることが難しい不具合を検出できます。 コード分析の警告は、コンパイラ エラーや警告とは異なり、有効でありながらも、コードを使用するユーザーにとって問題を引き起こす可能性のある特定のコード パターンが検索されます。
 
 ## <a name="configure-rule-sets-for-a-project"></a>プロジェクトの規則セットの構成
 

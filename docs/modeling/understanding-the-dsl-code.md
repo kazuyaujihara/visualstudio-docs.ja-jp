@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c2ff6d38ef4fcce400888121ef12883b00bcc0c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386703"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL コードについて
 
@@ -131,7 +131,7 @@ ms.locfileid: "60087770"
   ドメイン モデルを表すクラス。 <xref:Microsoft.VisualStudio.Modeling.DomainModel> から派生します。
 
 > [!NOTE]
->  これはモデルのルート クラスと同じではありません。
+> これはモデルのルート クラスと同じではありません。
 
  コピー クロージャと削除クロージャは、要素がコピーまたは削除されるときに含まれる必要のある他の要素を定義します。 設定してこの動作を制御することができます、**コピーの伝達**と**削除の伝達**すべてのリレーションシップの両端のロールのプロパティ。 値を動的に決定する場合は、コードを作成して、クロージャ クラスのメソッドをオーバーライドできます。
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  このファイルをカスタマイズするには、`.tt` ファイルを編集します。
 
 > [!WARNING]
->  .tt ファイルを編集してアイコンまたは画像などのリソースを含める場合は、リソースが VSIX ビルドに含まれていることを確認してください。 ソリューション エクスプ ローラーでファイルを選択し、ことを確認、 **VSIX に含める**プロパティは`True`します。
+> .tt ファイルを編集してアイコンまたは画像などのリソースを含める場合は、リソースが VSIX ビルドに含まれていることを確認してください。 ソリューション エクスプ ローラーでファイルを選択し、ことを確認、 **VSIX に含める**プロパティは`True`します。
 
  このファイルは、DSL が Visual Studio Integration Extension (VSIX) にパッケージ化される方法を制御します。 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。
 

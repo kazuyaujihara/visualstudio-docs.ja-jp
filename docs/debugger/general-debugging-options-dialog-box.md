@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399364"
 ---
 # <a name="general-debugging-options"></a>全般的なデバッグ オプション
 
@@ -85,7 +85,7 @@ Visual Studio デバッガーのオプションを設定するには、次のよ
 **ソース リンクのサポートを有効にする**: ソース ファイルをダウンロードする Visual Studio デバッガーに指示 *.pdb*ソース リンクの情報を含むファイル。 ソース リンクの詳細については、次を参照してください。、[ソース リンク仕様](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md)します。
 
 > [!IMPORTANT]
->  ソース リンクは、http または https を使用してファイルをダウンロードは、あるため、信頼できる確認、 *.pdb*ファイル。
+> ソース リンクは、http または https を使用してファイルをダウンロードは、あるため、信頼できる確認、 *.pdb*ファイル。
 
 - **ソース リンク要求の場合はすべて、Git 資格情報マネージャーの認証にフォールバックする**:  ソース リンクのサポートが有効になっているし、ソース リンク要求には、認証が失敗した場合、Visual Studio は、Git Credential Manager を呼び出します。
 

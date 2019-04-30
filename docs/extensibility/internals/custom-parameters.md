@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9e86c2f48365f93c924b15ae8d696d53d3f4bb16
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861276"
 ---
 # <a name="custom-parameters"></a>カスタム パラメーター
 カスタム パラメーターは、ウィザードが開始した後に、ウィザードの操作を制御します。 関連 *.vsz*ファイルを統合開発環境 (IDE) でパッケージ化され、ウィザードが開始されると、文字列の配列として、ウィザードに渡されるユーザー定義のパラメーターの配列を提供します。 ウィザードは、文字列の配列を解析し、情報を使用して、ウィザードの実際の操作を制御します。 この方法で、ウィザードがの内容に応じて機能をカスタマイズできます、 *.vsz*ファイル。
 
- コンテキストのパラメーターは、ウィザードの開始時にその一方で、プロジェクトの状態を定義します。 詳細については、[コンテキスト パラメーター](../../extensibility/internals/context-parameters.md)を参照してください。
+ コンテキストのパラメーターは、ウィザードの開始時にその一方で、プロジェクトの状態を定義します。 詳細については、次を参照してください。[コンテキスト パラメーター](../../extensibility/internals/context-parameters.md)します。
 
  例を次に、 *.vsz*カスタム パラメーターを持つファイル。
 
@@ -39,7 +39,7 @@ Param="PROJECT_TYPE = CSPROJ"
 
  ウィザードは、文字列の配列を解析し、文字列に対して適切に機能する責任を負います。 カスタム パラメーターを実装することで、この方法でさまざまな機能を実行する 1 つのウィザードを作成できます。 つまり、1 つのウィザードがあることが 3 つの異なる *.vsz*ファイル。 各ファイルは、異なるさまざまな状況で、ウィザードの動作を制御するカスタムのパラメーターのセットを渡します。
 
- 詳細については、[ウィザード (.vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)を参照してください。
+ 詳細については、次を参照してください。[ウィザード (.vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)します。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>

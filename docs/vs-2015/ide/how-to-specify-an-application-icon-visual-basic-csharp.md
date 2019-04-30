@@ -1,5 +1,5 @@
 ﻿---
-title: '方法 : アプリケーション アイコンを指定する (Visual Basic、C#) | Microsoft Docs'
+title: '方法: アプリケーション アイコン (Visual Basic、c#) を指定する |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f794f1c988215f8899dce495f725b3a9c14a435
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b10434f92a5d310d2f53c4a1c1ff7ab3a84bc1ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788166"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045778"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>方法 : アプリケーション アイコンを指定する (Visual Basic、C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>方法: アプリケーション アイコン (Visual Basic、c#) を指定します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 プロジェクトの `Icon` プロパティは、ファイル エクスプローラーと Windows タスク バーに表示されるコンパイルされたアプリケーションのアイコン ファイル (.ico) を指定します。  
@@ -32,13 +32,13 @@ ms.locfileid: "54788166"
   
 ### <a name="to-specify-an-application-icon"></a>アプリケーション アイコンを指定するには  
   
-1.  **ソリューション エクスプローラー**で、**[ソリューション]** ノードではなくプロジェクト ノードを選びます。  
+1. **ソリューション エクスプローラー**で、**[ソリューション]** ノードではなくプロジェクト ノードを選びます。  
   
-2.  メニュー バーで、**[プロジェクト]**、**[プロパティ]** の順に選びます。  
+2. メニュー バーで、**[プロジェクト]**、**[プロパティ]** の順に選びます。  
   
-3.  **プロジェクト デザイナー**が表示されたら、**[アプリケーション]** タブを選びます。  
+3. **プロジェクト デザイナー**が表示されたら、**[アプリケーション]** タブを選びます。  
   
-4.  **(Visual Basic)** **[アイコン]** 一覧で、アイコン (.ico) ファイルを選びます。  
+4. **(Visual Basic)** **[アイコン]** 一覧で、アイコン (.ico) ファイルを選びます。  
   
      **(C#)** **[アイコン]** 一覧の近くにある **[参照]** ボタンを選び、使うアイコン ファイルの場所を参照します。  
   
@@ -46,4 +46,4 @@ ms.locfileid: "54788166"
  [[アプリケーション] ページ (プロジェクト デザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [アプリケーション プロパティの管理](../ide/application-properties.md)  
- [方法: リソースを追加または削除する](http://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)
+ [方法: リソース追加または削除](http://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)

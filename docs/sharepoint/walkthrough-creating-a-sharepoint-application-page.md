@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778633"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>チュートリアル: SharePoint アプリケーション ページを作成します。
 
-アプリケーション ページとは、特殊なフォームの ASP.NET ページです。 アプリケーション ページには、SharePoint のマスター ページとマージされるコンテンツが含まれます。 詳細については、[用 SharePoint アプリケーション ページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)を参照してください。
+アプリケーション ページとは、特殊なフォームの ASP.NET ページです。 アプリケーション ページには、SharePoint のマスター ページとマージされるコンテンツが含まれます。 詳細については、次を参照してください。[用 SharePoint アプリケーション ページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)です。
 
 このチュートリアルでは、アプリケーション ページを作成し、そのページをローカル SharePoint サイトを使ってデバッグする方法を説明します。 このページには、サーバー ファーム上のあらゆるサイトで、各ユーザーが作成または変更したすべての項目が表示されます。
 
@@ -143,7 +143,7 @@ ASP.NET ページと同様に、アプリケーション ページのコント�
 
 ## <a name="next-steps"></a>次の手順
 
-SharePoint アプリケーション ページの詳細については、[用 SharePoint アプリケーション ページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)を参照してください。
+SharePoint アプリケーション ページの詳細については、次を参照してください。[用 SharePoint アプリケーション ページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)です。
 
 Visual Web Designer を使用して、SharePoint ページの内容をデザインする方法の詳細については、以下のトピックを参照してください。
 

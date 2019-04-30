@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91c4da26d202e1a23ff70a7c655f64fd6c05a340
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: de757e7022339b11f6d7c04ea7315abf685da24c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57875395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428053"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 
-プロジェクトを読み込むことなく、指定したソリューションを開きます。
+プロジェクトを読み込むことなく、指定したソリューションを開きます。 詳細については、「[Visual Studio のフィルター処理済みソリューション](../filtered-solutions.md)」をご覧ください。
 
 ## <a name="syntax"></a>構文
 
@@ -30,9 +30,9 @@ devenv /DoNotLoadProjects SolutionName
 
 ## <a name="arguments"></a>引数
 
-- *SolutionName*
+*SolutionName*
 
-  必須です。 開くソリューションの完全パスと名前。
+必須です。 開くソリューションの完全パスと名前。
 
 ## <a name="example"></a>例
 
@@ -40,9 +40,9 @@ devenv /DoNotLoadProjects SolutionName
 
 ```shell
 devenv /donotloadprojects MySln.sln
-
 ```
 
 ## <a name="see-also"></a>関連項目
 
+- [Visual Studio のフィルター処理済みソリューション](../filtered-solutions.md)
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

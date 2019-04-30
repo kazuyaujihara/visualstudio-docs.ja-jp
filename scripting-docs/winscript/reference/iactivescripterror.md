@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1ca783e2100fe74ed05499f9611a9b8f3399817f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954994"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
 このインターフェイスを実装するオブジェクトが渡される、 [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)メソッド スクリプト エンジンがハンドルされないエラーを検出するたびにします。 ホストは、発生したエラーに関する情報を取得するには、このオブジェクトのメソッドを呼び出します。  

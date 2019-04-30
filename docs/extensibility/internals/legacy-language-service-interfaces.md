@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c5c907885e91cc3b7765ff94528a30a84b17ee46
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909566"
 ---
 # <a name="legacy-language-service-interfaces"></a>従来の言語サービスのインターフェイス
 特定のプログラミング言語がありますの言語サービスのインスタンスを 1 つだけで。 ただし、1 つの言語サービスでは、1 つ以上のエディターを使用できます。

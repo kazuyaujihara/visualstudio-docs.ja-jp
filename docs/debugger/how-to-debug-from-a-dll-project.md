@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2e4df2028a14281ee2343ad48b4b71812d29fca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847953"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>方法: Visual Studio で DLL プロジェクトからデバッグ (C#、C++、Visual Basic、 F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>方法: Visual Studio で DLL プロジェクトからデバッグ (C#、 C++、Visual Basic、 F#)
 
 DLL プロジェクトをデバッグする方法の 1 つでは、DLL プロジェクトのプロパティで呼び出し元のアプリを指定します。 自体、DLL プロジェクトからデバッグを開始することができます。 このメソッドを使用するには、アプリは、構成するものと同じ場所に同じ DLL を呼び出す必要があります。 場合は、アプリを検索してさまざまなバージョンの DLL を読み込みます、そのバージョンには、ブレークポイントが含まれません。 その他の Dll のデバッグの方法では、次を参照してください。 [DLL のデバッグ プロジェクト](../debugger/debugging-dll-projects.md)します。
 
-マネージ DLL を呼び出すネイティブ アプリ、管理対象アプリが、ネイティブ DLL を呼び出す、または、DLL と呼び出し元のアプリの両方をデバッグできます。 詳細については、「[方法: 混合モードでデバッグする](../debugger/how-to-debug-in-mixed-mode.md)」を参照してください。
+マネージ DLL を呼び出すネイティブ アプリ、管理対象アプリが、ネイティブ DLL を呼び出す、または、DLL と呼び出し元のアプリの両方をデバッグできます。 詳細については、「[方法 :混合モードでデバッグする](../debugger/how-to-debug-in-mixed-mode.md)
 
 ネイティブおよびマネージ DLL プロジェクトでは、呼び出し元のアプリを指定するためのさまざまな設定があります。
 
@@ -53,7 +53,7 @@ DLL プロジェクトをデバッグする方法の 1 つでは、DLL プロジ
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>マネージ DLL プロジェクトで呼び出し元のアプリを指定します。
 
-1. 選択、C#または Visual Basic DLL プロジェクトの **ソリューション エクスプ ローラー**します。 選択、**プロパティ**アイコン、キーを押して**Alt**+**」と入力**、または右クリックし、選択**プロパティ**します。
+1. C# または Visual Basic DLL プロジェクトを選択**ソリューション エクスプ ローラー**します。 選択、**プロパティ**アイコン、キーを押して**Alt**+**」と入力**、または右クリックし、選択**プロパティ**します。
 
 1. ウィンドウの上部にある **[構成]** フィールドが **[デバッグ]** に設定されていることを確認します。
 
@@ -67,7 +67,7 @@ DLL プロジェクトをデバッグする方法の 1 つでは、DLL プロジ
 
 1. 必要なコマンドライン引数を追加、**コマンドライン引数**または**アプリケーション引数**フィールド。
 
-   ![C#[プロパティ] ウィンドウをデバッグ](../debugger/media/dbg-debugging-properties-dll-csharp.png " C#デバッグのプロパティ ウィンドウ")
+   ![C# のデバッグ プロパティ ウィンドウ](../debugger/media/dbg-debugging-properties-dll-csharp.png "c# のデバッグ プロパティ ウィンドウ")
 
 1. 使用**ファイル** > **選択した項目の保存**または**Ctrl**+**S**変更を保存します。
 

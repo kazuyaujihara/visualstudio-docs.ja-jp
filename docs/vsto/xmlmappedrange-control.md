@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cde5489d970de02afbce28ab9c60c677ab199c84
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810756"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange コントロール
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールが Microsoft Office Excel 内のセルに非繰り返しスキーマ要素がマップされている場合にのみ作成される範囲。 たとえば、ときに、`maxOccurs`スキーマ要素の属性が 1 に等しい。 Visual Studio には、XML が割り当てられた範囲が作成されたら、それに対して、Excel オブジェクト モデルを走査することがなく直接プログラミングできます。 のみを削除することができます、<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>要素のマッピングが削除されると、Excel 内のコントロール。

@@ -17,12 +17,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd47441a0e9b1c97851aa8a6acac712c51a4493a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c5897c6ffc2b4530ce74b29114c84cd3556f25cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437564"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Visual Studio のスタート ページのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio のスタート ページは、既定のさまざまな方法で�
     - [Visual Studio Marketplace](https://marketplace.visualstudio.com/)、別の Web サイト、またはローカル イントラネット上のページからインストールします。
 
         > [!NOTE]
-        >  Visual Studio の旧バージョンを対象とするページの場合、Visual Studio SDK を使用してページをアップグレードできます。 「[方法: Visual Studio のカスタム スタート ページをアップグレードする](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)」を参照してください。
+        > Visual Studio の旧バージョンを対象とするページの場合、Visual Studio SDK を使用してページをアップグレードできます。 「[方法: Visual Studio のカスタム スタート ページをアップグレードする](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)」を参照してください。
 
          カスタム スタート ページを含む .vsix ファイルを開くか、スタート ページ ファイルをコピーしてコンピューターの **%USERPROFILE% \My Documents\Visual Studio 2015\StartPages** フォルダーに貼り付けます。
 
@@ -59,7 +59,7 @@ Visual Studio のスタート ページは、既定のさまざまな方法で�
 4. **[スタート ページのカスタマイズ]** の一覧で、使用するページを選択します。
 
 > [!NOTE]
->  カスタム スタート ページのエラーによって Visual Studio がクラッシュする場合、セーフ モードで Visual Studio を起動し、既定のスタート ページを使用するように設定します。 「[/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)」をご覧ください。
+> カスタム スタート ページのエラーによって Visual Studio がクラッシュする場合、セーフ モードで Visual Studio を起動し、既定のスタート ページを使用するように設定します。 「[/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)」をご覧ください。
 
 ## <a name="see-also"></a>関連項目
  [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)[独自のスタート ページの作成](../misc/creating-your-own-start-page.md)

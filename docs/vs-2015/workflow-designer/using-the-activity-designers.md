@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce8d963d56a6ad79562db22ab0e59885730c24b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858425"
 ---
 # <a name="using-the-activity-designers"></a>アクティビティ デザイナーの使用
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]には、システムによって提供されるさまざまなアクティビティが用意されており、これらを、アクティビティおよびワークフローの構築時に使用できます。 このセクションでは、システムによって提供されるアクティビティとその利用可能なデザイナーの分類について説明します。 それぞれの分類に属する個々のアクティビティとそのデザイナーに関するトピックでは、アクティビティの機能とその使用方法を説明しています。  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e8956fb7da61519ed9d0939da087ce8a4181ac1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839876"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 アクセスは、DIA のデータ ソースに格納されているソース コードを挿入します。
@@ -41,7 +41,7 @@ IDiaInjectedSource : IUnknown
 |[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|使用されるソースの圧縮のインジケーターを取得します。|
 |[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|ソース コードのバイト数を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 挿入されたソースは、コンパイル時に挿入されるテキストです。 プリプロセッサはありません`#include`C++ で使用します。
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
@@ -112,8 +112,8 @@ void PrintInjectedSource(IDiaInjectedSource* pSource)
 }
 ```
 
-## <a name="requirements"></a>要件
-ヘッダー: Dia2.h
+## <a name="requirements"></a>必要条件
+ヘッダー:Dia2.h
 
 ライブラリ: diaguids.lib
 

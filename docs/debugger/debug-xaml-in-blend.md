@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 284948bc1167a78b2e99b02607b94ce28cc47a0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 535e7ea155200b06b0783e79d95f4eba96ce1eed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399519"
 ---
 # <a name="debug-xaml-in-blend"></a>Blend での XAML のデバッグ
 アプリの XAML をデバッグするために [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] のツールを使用できます。 プロジェクトをビルドする場合、エラーは **[結果]** パネルに表示されます。 エラーをダブルクリックして、エラーに関連するマークアップを検索します。 作業領域を増やす必要がある場合は、F12 キーを押して **[結果]** パネルを非表示にできます。
@@ -27,7 +27,7 @@ ms.locfileid: "56631043"
  構文エラーは、XAML または分離コード ファイルが言語のフォーマット規則に従っていない場合に発生します。 エラーの説明を参照すると、エラーの解決に役立ちます。 一覧では、エラーの発生しているファイルの名前と行番号も確認できます。 XAML エラーは **[結果]** パネルの **[マークアップ]** タブに一覧されます。
 
 > [!TIP]
->  XAML は XML に基づくマークアップ言語で、XML 構文規則に従っています。
+> XAML は XML に基づくマークアップ言語で、XML 構文規則に従っています。
 
  XAML 構文エラーのよくある原因は次のとおりです。
 
@@ -48,7 +48,7 @@ ms.locfileid: "56631043"
 
 ##### <a name="to-create-a-project"></a>プロジェクトを作成するには
 
-1. [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] で、**[ファイル]** メニューを開き、**[新しいプロジェクト]** をクリックします。
+1. [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)]を開き、**ファイル**メニューをクリックして**新しいプロジェクト**です。
 
     **[新しいプロジェクト]** ダイアログ ボックスの左側に、プロジェクトの種類の一覧が表示されます。 プロジェクトの種類をクリックすると、その種類に関連付けられているプロジェクト テンプレートが右側に表示されます。
 

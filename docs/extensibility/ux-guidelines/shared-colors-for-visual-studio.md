@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e873250488bff50519cc12060841110325a48e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430231"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio の共有の色
 共通の Visual Studio シェル要素を使用する UI を設計するか、インターフェイス要素に同様の機能と一致するかは、パッケージ定義ファイルで既存のトークン名を使用して、選択し、色を割り当てます。 これにより、UI が Visual Studio 環境全体で一貫性を保ち、テーマが追加された場合や更新された場合に自動的に更新されるようになります。
@@ -1413,7 +1413,7 @@ ms.locfileid: "60089565"
 #### <a name="BKMK_CommandDropDown"></a> コマンド バーのドロップダウン リスト
 
 > [!IMPORTANT]
->  ドロップダウンはコンボ ボックスに似ていますが、編集可能なテキスト領域がありません。 ドロップダウンにでは、編集可能なテキスト領域が含まれている場合は、色のトークンを使用して[コマンド バーのコンボ ボックス](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)します。
+> ドロップダウンはコンボ ボックスに似ていますが、編集可能なテキスト領域がありません。 ドロップダウンにでは、編集可能なテキスト領域が含まれている場合は、色のトークンを使用して[コマンド バーのコンボ ボックス](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)します。
 
 ![コマンド バーのドロップダウン (の赤線)](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303 042_DropdownRedline")<br />コマンド バーのドロップダウン (の赤線)
 

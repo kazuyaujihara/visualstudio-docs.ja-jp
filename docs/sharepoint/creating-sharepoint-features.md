@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952746"
 ---
 # <a name="create-sharepoint-features"></a>SharePoint の機能を作成します。
   SharePoint 機能を使用すると、展開が容易に関連の SharePoint プロジェクト アイテムのグループします。 機能の作成、スコープを設定、およびその他の機能を SharePoint フィーチャー デザイナーを使用して依存関係としてマークできます。 デザイナーには、各機能を説明する XML ファイルには、マニフェストも生成されます。

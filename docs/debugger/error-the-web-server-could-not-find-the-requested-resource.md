@@ -1,5 +1,5 @@
 ---
-title: 'エラー: Web サーバーが要求されたリソース見つかりません |Microsoft Docs'
+title: エラー :Web サーバーで要求されたリソースが見つかりませんでした |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c0b37e96db46a43b869867b8b5e37f857e75aff9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850281"
 ---
-# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>エラー : Web サーバーでは要求されたリソースを見つけられませんでした
+# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>エラー :Web サーバーでは要求されたリソースを見つけられませんでした
 セキュリティ上の考慮から、IIS が汎用エラーを返しました。
 
 考えられる原因の 1 つは、サーバーのセキュリティ構成です。 IIS 6.0 以前のバージョンでは、URLScan と呼ばれるアドオン プログラムを使用して、不適切で疑わしい要求を除外しました。 IIS 7.0 には、同じ目的の要求フィルターが組み込まれています。 いずれの場合も、要求フィルター処理の制限が厳しすぎると Visual Studio がサーバーをデバッグできないことがあります。

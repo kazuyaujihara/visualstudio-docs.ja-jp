@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536426"
 ---
 # <a name="interop-activity-designer"></a>Interop アクティビティ デザイナー
 
@@ -37,7 +37,7 @@ Visual Basic プロジェクトの場合は、プロジェクトでプロジェ�
 
 **相互運用機能**からアクティビティ デザイナーをドラッグできる**ツールボックス**どこにも、アクティビティを通常配置など内に、ワークフロー デザイナー画面にドロップし、<xref:System.Activities.Statements.Sequence>します。 削除、**相互運用機能**アクティビティ デザイナーを作成、 <xref:System.Activities.Statements.Interop> 、既定値は、アクティビティ**DisplayName**相互運用機能の。 編集することができます、<xref:System.Activities.Activity.DisplayName%2A>のヘッダーに、**相互運用機能**アクティビティ デザイナー、または、 **DisplayName**プロパティ グリッドのボックスです。
 
-をクリックして、 **参照 をクリックします**内のテキスト、 **ActivityType**ボックスで、いずれかで、**相互運用機能**アクティビティ デザイナーまたはプロパティ グリッドを開く、**参照と.Net の選択の種類** ダイアログ ボックス。 ワークフロー 3.0 またはワークフロー 3.5 のアクティビティの型のみが表示されます。 つまりから派生した型のみ<xref:System.Workflow.ComponentModel.Activity>が表示されます。 このボックスを使用して型を指定する方法の詳細については、[参照し、.NET の種類 ダイアログ ボックスを選択](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)を参照してください。
+をクリックして、 **参照 をクリックします**内のテキスト、 **ActivityType**ボックスで、いずれかで、**相互運用機能**アクティビティ デザイナーまたはプロパティ グリッドを開く、**参照と.Net の選択の種類** ダイアログ ボックス。 ワークフロー 3.0 またはワークフロー 3.5 のアクティビティの型のみが表示されます。 つまりから派生した型のみ<xref:System.Workflow.ComponentModel.Activity>が表示されます。 このボックスを使用して型を指定する方法の詳細については、次を参照してください。[参照し、.NET の種類 ダイアログ ボックスを選択](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)します。
 
 ### <a name="the-interop-properties"></a>Interop のプロパティ
 

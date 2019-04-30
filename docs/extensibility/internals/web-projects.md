@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0c0e796632966c43c052f70fc872d550b57ad7d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856969"
 ---
 # <a name="web-projects"></a>Web プロジェクト
 Web プロジェクト システムでは、Web プロジェクトを作成するプロジェクト システムです。 Web プロジェクトは、Web アプリケーションを作成します。 などの従来のプログラミング言語を使用して Web ページをプログラミングできる[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]または[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]を収集し、ユーザーから情報を処理して、データベースに格納具合です。 関連付けられているコードを含む web ページは、スマート Web ページと呼ばれます。

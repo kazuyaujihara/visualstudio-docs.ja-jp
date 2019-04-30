@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c894ce7466c253916794495649fa65d703e6d67
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 87d9e4ae8239994a7524cdd1da0b3cfe05ea42d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808185"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>1 つのソリューション内の複数の DSL
 
@@ -40,15 +40,15 @@ ms.locfileid: "58416150"
 
 2. 以下のように DSL の VSIX マニフェストを結合します。
 
-   1.  開いている_YourVsixProject_**\source.extension.manifest**します。
+   1. 開いている_YourVsixProject_**\source.extension.manifest**します。
 
-   2.  各 DSL は、選択**コンテンツの追加**を追加します。
+   2. 各 DSL は、選択**コンテンツの追加**を追加します。
 
-       -   `Dsl*` プロジェクトとして、 **MEF コンポーネント**
+       - `Dsl*` プロジェクトとして、 **MEF コンポーネント**
 
-       -   `DslPackage*` プロジェクトとして、 **MEF コンポーネント**
+       - `DslPackage*` プロジェクトとして、 **MEF コンポーネント**
 
-       -   `DslPackage*` プロジェクトとして、 **VS パッケージ**
+       - `DslPackage*` プロジェクトとして、 **VS パッケージ**
 
 3. ソリューションをビルドします。
 

@@ -1,6 +1,6 @@
 ---
 title: 複数プロジェクトのテンプレートを作成する
-ms.date: 01/02/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bd8101aa1e62e65c83d4da40af4eb624338a89
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430498"
 ---
 # <a name="how-to-create-multi-project-templates"></a>方法: 複数プロジェクトのテンプレートを作成する
 
@@ -67,6 +67,19 @@ ms.locfileid: "59232632"
         </ProjectCollection>
     </TemplateContent>
     ```
+
+> [!TIP]
+> 複数プロジェクトのテンプレートのみを新しいプロジェクト ダイアログ ボックスに表示し、それに含まれる個々のプロジェクトを表示しない場合は、内部テンプレートに[非表示](../extensibility/hidden-element-visual-studio-templates.md)とマークを付けます。 次に例を示します。
+>
+> ```xml
+> <VSTemplate Type="Project" ... >
+>     <TemplateData>
+>         ...
+>         <Hidden>true</Hidden>
+>     </TemplateData>
+>     ...
+> </VSTemplate>
+> ```
 
 ## <a name="create-a-multi-project-template-from-an-existing-solution"></a>既存のソリューションから複数プロジェクトのテンプレートを作成する
 

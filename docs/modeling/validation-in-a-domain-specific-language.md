@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09c16e55766c0239346540dfcc74b99b2ed8579b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fcc35f74625b17762656451e598d131dfe85417e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385847"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>ドメイン固有言語における検証
 ドメイン固有言語 (DSL) の作成者は、検証制約を定義して、ユーザーが作成したモデルが意味を持つことを確認できます。 たとえば、DSL でユーザーが人々とその先祖の家系図を描くことができる場合、子の誕生日が親の誕生日よりも後であることを確認する制約を作成できます。
@@ -25,7 +25,7 @@ ms.locfileid: "60103596"
  検証は、テキスト テンプレートまたはユーザーのモデルを処理するその他のツールを作成する場合に特に重要です。 検証により、そうしたツールが仮定する事前条件をモデルが満たすことが保証されます。
 
 > [!WARNING]
->  検証制約は、拡張機能メニュー コマンドおよびジェスチャ ハンドラーとともに、DSL の別個の拡張機能内で定義することもできます。 ユーザーは DSL に加えて、こうした拡張機能を選択的にインストールできます。 詳細については、次を参照してください。 [MEF による DSL の拡張](../modeling/extend-your-dsl-by-using-mef.md)します。
+> 検証制約は、拡張機能メニュー コマンドおよびジェスチャ ハンドラーとともに、DSL の別個の拡張機能内で定義することもできます。 ユーザーは DSL に加えて、こうした拡張機能を選択的にインストールできます。 詳細については、次を参照してください。 [MEF による DSL の拡張](../modeling/extend-your-dsl-by-using-mef.md)します。
 
 ## <a name="running-validation"></a>検証の実行
  ユーザーがモデル、つまりドメイン固有言語のインスタンスを編集しているとき、次の操作により検証を実行できます。
@@ -48,7 +48,7 @@ ms.locfileid: "60103596"
  各検証メソッドは発見したすべてのエラーを報告します。
 
 > [!NOTE]
->  検証メソッドはエラーを報告しますが、モデルを変更しません。 調整または特定の変更を防止を表示する場合[検証の代替手段](#alternatives)します。
+> 検証メソッドはエラーを報告しますが、モデルを変更しません。 調整または特定の変更を防止を表示する場合[検証の代替手段](#alternatives)します。
 
 #### <a name="to-define-a-validation-constraint"></a>検証制約を定義するには
 
@@ -310,7 +310,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```
 
 > [!NOTE]
->  メソッドのプレフィックスには任意の数の `[ValidationMethod()]` 属性を使用できます。 メソッドをカスタム カテゴリと標準カテゴリの両方に追加できます。
+> メソッドのプレフィックスには任意の数の `[ValidationMethod()]` 属性を使用できます。 メソッドをカスタム カテゴリと標準カテゴリの両方に追加できます。
 
  カスタム検証を呼び出すには次のようにします。
 

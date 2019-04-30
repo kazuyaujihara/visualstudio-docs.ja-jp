@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 421eea42c169f586657998e5d4cd57c4c797b71e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916905"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 プログラムを実行するデバッグ エンジン (DE) の識別子と名前を取得します。
@@ -41,11 +41,11 @@ int GetEngineInfo(
 #### <a name="parameters"></a>パラメーター
  `pbstrEngine`
 
- [out]プログラムを実行するデバイスの名前を返します (C++ に固有: これは、呼び出し元が、エンジンの名前に関心がないことを示す null ポインター)。
+ [out]プログラムを実行するデバイスの名前を返します (C++-特定します。 これは、呼び出し元が、エンジンの名前に関心がないことを示す null ポインター)。
 
  `pguidEngine`
 
- [out]プログラムを実行する DE のグローバルに一意の識別子を返します (C++ に固有: これは、呼び出し元が、エンジンの GUID に興味がないことを示す null ポインター)。
+ [out]プログラムを実行する DE のグローバルに一意の識別子を返します (C++-特定します。 これは、呼び出し元が、エンジンの GUID に興味がないことを示す null ポインター)。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

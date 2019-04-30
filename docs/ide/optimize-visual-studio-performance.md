@@ -12,12 +12,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 193343c8fce810280f380b11a72b7cb6892ef18e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: bdc605b614fab5b11c2efc8466480ebf49a1fee7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569850"
 ---
 # <a name="optimize-visual-studio-performance"></a>Visual Studio のパフォーマンスの最適化
 
@@ -25,11 +25,11 @@ ms.locfileid: "57223765"
 
 ## <a name="upgrade-visual-studio"></a>Visual Studio のアップグレード
 
-Visual Studio 2015 を現在使用している場合、[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) または [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) を無料でダウンロードし、パフォーマンスの改善をご確認ください。 ソリューションの読み込みが Visual Studio 2015 よりも 2 から 3 倍速くなります。その他の面でもパフォーマンスが改善されます。 Visual Studio 2017 と Visual Studio 2019 は、Visual Studio 2015 との間に並行互換性があるので、試しても失うものはありません。
+Visual Studio 2015 を現在使用している場合、[Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) または [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) を無料でダウンロードし、パフォーマンスの改善をご確認ください。 ソリューションの読み込みが Visual Studio 2015 よりも 2 から 3 倍速くなります。その他の面でもパフォーマンスが改善されます。 Visual Studio 2017 と Visual Studio 2019 は、Visual Studio 2015 との間に並行互換性があるので、試しても失うものはありません。
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 を既に使用している場合、15.6 以降のバージョンを実行していることを確認してください。 バージョン 15.6 ではソリューションの読み込みが最大 2 ～ 3 倍速くなることがデータによって示されています。 [ここから](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)ダウンロードしてください。
+Visual Studio 2017 を既に使用している場合、15.6 以降のバージョンを実行していることを確認してください。 バージョン 15.6 ではソリューションの読み込みが最大 2 ～ 3 倍速くなることがデータによって示されています。 [ここから](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)ダウンロードしてください。
 
 ::: moniker-end
 

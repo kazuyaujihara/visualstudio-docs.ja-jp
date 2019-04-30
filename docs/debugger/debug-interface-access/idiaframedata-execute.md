@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 78440c703ece2aa54e54594d57156dbb17848915
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832660"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 スタック アンワインドを実行し、スタック ウォーク フレーム インターフェイスで結果を返します。
@@ -45,7 +45,7 @@ HRESULT execute ( 
 |E_DIA_FRAME_ACCESS|アクセスのレジスタまたはメモリをできません。|
 |E_DIA_VALUE|(たとえば、0 による除算)、値の計算のエラーです。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  このメソッドは、スタックをアンワインドするデバッグ中に呼び出されます。 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)オブジェクトがレジスタに更新プログラムを受信しで使用されるメソッドを提供するクライアント アプリケーションによって実装される、`execute`メソッド。
 
 ## <a name="see-also"></a>関連項目

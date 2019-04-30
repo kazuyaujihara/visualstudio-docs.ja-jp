@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3d4d6eec08ae75efbd9104ace25409d336e45f40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814689"
 ---
 # <a name="work-with-workbooks"></a>ブックを操作します。
   <xref:Microsoft.Office.Tools.Excel.Workbook> クラスと <xref:Microsoft.Office.Interop.Excel.Workbooks> クラスには、ブック関連のタスクを実行するときに使用するメソッドとプロパティが含まれています。
@@ -34,7 +34,7 @@ ms.locfileid: "56639441"
 |最近使用されたブック ファイルのコレクションを取得します。|[方法: 最近使用ブック ファイルをプログラムで一覧表示](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|
 |テキスト ファイルをブックとして開きます。|[方法: プログラムによってブックとしてテキスト ファイルを開く](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|
 
- Excel タスクおよび Excel オブジェクト モデルの詳細については、[Excel オブジェクト モデルの概要](../vsto/excel-object-model-overview.md)を参照してください。
+ Excel タスクおよび Excel オブジェクト モデルの詳細については、次を参照してください。 [Excel オブジェクト モデルの概要](../vsto/excel-object-model-overview.md)します。
 
  以下のタスクは、VSTO アドインとドキュメント レベルのカスタマイズとで実行方法が異なる場合があります。
 

@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d688e737593ab4eaaeddfe0edcae57c99be4f8ad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 35c5b1275ced5eb7f2fee85c0592be2b5ed94533
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419753"
 ---
 # <a name="toolbox-html-tab"></a>ツールボックス、[HTML] タブ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ ms.locfileid: "59663730"
   
 ## <a name="tasks"></a>[タスク]  
   
--   [方法: ツールボックス ウィンドウの管理](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+- [方法: ツールボックス ウィンドウの管理](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
   
--   [方法: [ツールボックス] タブの操作](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
+- [方法: [ツールボックス] タブの操作](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
   
 ## <a name="ui-elements"></a>UI 要素  
  次のツールは、[HTML] タブで既定で使用できます。  
@@ -96,7 +96,7 @@ ms.locfileid: "59663730"
  詳細については、「[HTML Input Controls (HTML Input コントロール)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)」、「[HtmlInputText Server Control Declarative Syntax (HtmlInputText サーバー コントロール宣言構文)](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e)」、「[TextBox Web Server Control Overview (TextBox Web サーバー コントロールの概要)](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f)」、<xref:System.Web.UI.HtmlControls.HtmlInputText>、および <xref:System.Web.UI.WebControls.TextBox> をご覧ください。  
   
 > [!IMPORTANT]
->  すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。  
+> すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。  
   
  **入力 (ファイル)**  
  ![HTML ページ ファイル フィールド](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -112,7 +112,7 @@ ms.locfileid: "59663730"
  詳細については、「[HTML Input Controls (HTML Input コントロール)](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)」、「[HtmlInputFile Server Control Declarative Syntax (HtmlInputFile サーバー コントロール宣言構文)](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6)」、および <xref:System.Web.UI.HtmlControls.HtmlInputFile> をご覧ください。  
   
 > [!IMPORTANT]
->  すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。  
+> すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。  
   
  **入力 (パスワード)**  
  ![Visual Studio パスワード フィールド](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -128,7 +128,7 @@ ms.locfileid: "59663730"
  詳細については、「[HTML Input コントロール](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)」、「[HtmlInputPassword Server Control Declarative Syntax](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f)」 (HtmlInputPassword サーバー コントロール宣言構文)、「[方法 : パスワード入力のための TextBox Web サーバー コントロールを設定する](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310)」、および「[チュートリアル : Web フォーム ページにおけるユーザーの入力の検証](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)」を参照してください。  
   
 > [!IMPORTANT]
->  アプリケーションでユーザー名とパスワードを送信する場合、転送を暗号化するため、Secure Sockets Layer (SSL) を使用するように Web サイトを構成する必要があります。 詳細については、「[IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856)」 (IIS 操作ガイド) の「Securing Connections with SSL」 (SSL で接続を保護する) を参照してください。 また、すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。  
+> アプリケーションでユーザー名とパスワードを送信する場合、転送を暗号化するため、Secure Sockets Layer (SSL) を使用するように Web サイトを構成する必要があります。 詳細については、「[IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856)」 (IIS 操作ガイド) の「Securing Connections with SSL」 (SSL で接続を保護する) を参照してください。 また、すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。  
   
  **入力 (チェック ボックス)**  
  ![HTML Web ページ ツールボックス チェック ボックス オプション](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -183,7 +183,7 @@ ms.locfileid: "59663730"
  詳細については、「[HtmlTextArea Server Control Declarative Syntax (HtmlTextArea サーバー コントロール宣言構文)](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87)」、<xref:System.Web.UI.HtmlControls.HtmlTextArea>、および <xref:System.Web.UI.WebControls.TextBox> をご覧ください。  
   
 > [!IMPORTANT]
->  すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。  
+> すべてのユーザー入力を検証することをお勧めします。 詳細については、「[ASP.NET Web ページにおけるユーザー入力の検証](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)」を参照してください。  
   
  **テーブル**  
  ![HTMLpageToolbarTable スクリーンショット](../../ide/reference/media/vxtable.gif "vxTable")  

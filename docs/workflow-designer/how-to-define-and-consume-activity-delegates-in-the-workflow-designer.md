@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949521"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>方法: ワークフロー デザイナーでアクティビティ デリゲートを定義および使用する
 
@@ -24,7 +24,7 @@ ms.locfileid: "58415812"
 1. 新規作成**ワークフロー コンソール アプリケーション**プロジェクト。
 
    > [!NOTE]
-   > 表示されない場合、**ワークフロー**プロジェクト テンプレートは、最初のインストール、 **Windows Workflow Foundation** Visual Studio のコンポーネント。 詳細については、[Windows Workflow Foundation のインストール](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)を参照してください。
+   > 表示されない場合、**ワークフロー**プロジェクト テンプレートは、最初のインストール、 **Windows Workflow Foundation** Visual Studio のコンポーネント。 詳細については、次を参照してください。 [Windows Workflow Foundation のインストール](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)します。
 
 3. プロジェクトを右クリックして**ソリューション エクスプ ローラー**選択**追加** > **新しい項目の**します。 選択、**ワークフロー**カテゴリ、および選択し、**アクティビティ**項目テンプレート。 新しいアクティビティの名前**MyForEach.xaml**選び**OK**します。
 
@@ -70,17 +70,17 @@ ms.locfileid: "58415812"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>ワーク フローでのカスタム アクティビティの使用
 
-1.  キーを押してプロジェクトをビルド**Ctrl**+**Shift**+**B**します。
+1. キーを押してプロジェクトをビルド**Ctrl**+**Shift**+**B**します。
 
-2.  **ソリューション エクスプ ローラー**オープン**Workflow1.xaml**デザイナー。
+2. **ソリューション エクスプ ローラー**オープン**Workflow1.xaml**デザイナー。
 
-3.  ドラッグ、 **MyForEach**アクティビティをツールボックスからデザイナー画面にします。 このアクティビティは、プロジェクトと同じ名前で、ツールボックスのセクションでは。
+3. ドラッグ、 **MyForEach**アクティビティをツールボックスからデザイナー画面にします。 このアクティビティは、プロジェクトと同じ名前で、ツールボックスのセクションでは。
 
-4.  設定、**項目**のプロパティ、 **MyForEach**アクティビティを**new object[] {1,"abc"}** します。
+4. 設定、**項目**のプロパティ、 **MyForEach**アクティビティを**new object[] {1,"abc"}** します。
 
-5.  ドラッグ、<xref:System.Activities.Statements.WriteLine>からのアクティビティ、**プリミティブ**、ツールボックスのセクション、 **Delegate:body**のセクション、 **MyForEach**アクティビティ。
+5. ドラッグ、<xref:System.Activities.Statements.WriteLine>からのアクティビティ、**プリミティブ**、ツールボックスのセクション、 **Delegate:body**のセクション、 **MyForEach**アクティビティ。
 
-6.  設定、**テキスト**のプロパティ、<xref:System.Activities.Statements.WriteLine>アクティビティを**Argument.ToString()** します。
+6. 設定、**テキスト**のプロパティ、<xref:System.Activities.Statements.WriteLine>アクティビティを**Argument.ToString()** します。
 
 ワークフローを実行すると、次の出力がコンソールに表示されます。
 

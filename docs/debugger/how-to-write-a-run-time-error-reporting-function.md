@@ -19,13 +19,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ff16a1443b05dc7021406cde03a4153f3234602
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905903"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>方法 : ランタイム エラー レポート関数を記述する (C++)
+# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>方法: ランタイム エラー レポート関数を記述する (C++)
 ランタイム エラーのカスタム レポート関数には、`_CrtDbgReportW` と同じ宣言を使用する必要があります。 デバッガーへの戻り値は 1 です。
 
 次の例は、カスタム レポート関数の定義方法を示しています。

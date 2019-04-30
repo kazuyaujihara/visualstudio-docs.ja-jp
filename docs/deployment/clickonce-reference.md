@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f3b22dacdb0192df70f9fcb13b8a228188f129d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900327"
 ---
 # <a name="clickonce-reference"></a>ClickOnce に関するリファレンス
 次のページには、ClickOnce アプリケーションを表すために使用する XML ファイルの構造について説明します。
@@ -42,7 +42,7 @@ ms.locfileid: "56638115"
 
  リスト dfshim.dll からパブリック Api 管理されていません。
 
-## <a name="reference"></a>関連項目
+## <a name="reference"></a>参照
 
 ## <a name="related-sections"></a>関連項目
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)

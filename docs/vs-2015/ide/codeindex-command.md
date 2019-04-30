@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 624a2a735032342d4eb47e2393ecae3ea3247891
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f9fa341b781028db1836e963c99ae5069ce8fe18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54797295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433593"
 ---
 # <a name="codeindex-command"></a>CodeIndex コマンド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "54797295"
  **CodeIndex** コマンドを使用するには、**Team Foundation 管理者**セキュリティ グループのメンバーである必要があります。 「[Team Foundation Server のアクセス許可の参照](http://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6)」を参照してください。  
   
 > [!NOTE]
->  管理資格情報を使ってログオンしている場合でも、このコマンドを実行するには、昇格した特権でコマンド プロンプト ウィンドウを開く必要があります。 また、Team Foundation のアプリケーション層からこのコマンドを実行する必要があります。  
+> 管理資格情報を使ってログオンしている場合でも、このコマンドを実行するには、昇格した特権でコマンド プロンプト ウィンドウを開く必要があります。 また、Team Foundation のアプリケーション層からこのコマンドを実行する必要があります。  
   
 ## <a name="syntax"></a>構文  
   
@@ -62,7 +62,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ## <a name="examples"></a>使用例  
   
 > [!NOTE]
->  例として登場する企業、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、およびイベントはすべて架空のものです。  実在する会社、組織、製品、ドメイン名、電子メールアドレス、ロゴ、人物、場所、イベントなどとは一切関係ありません。  
+> 例として登場する企業、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、およびイベントはすべて架空のものです。  実在する会社、組織、製品、ドメイン名、電子メールアドレス、ロゴ、人物、場所、イベントなどとは一切関係ありません。  
   
  コード インデックス作成の状態と構成を表示するには:  
   

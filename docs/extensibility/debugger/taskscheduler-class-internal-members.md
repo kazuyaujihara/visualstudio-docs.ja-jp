@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cf7b693c058cd69ab2dcb79be787cf5a16d8f8a0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864024"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler クラスの内部メンバー
-この記事の内部メンバーを説明します、<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>する際に役立つクラスがカスタムのデバッガーを実装します。 このクラスの詳細については、、<xref:System.Threading.Tasks.TaskScheduler>参照資料を参照してください。
+この記事の内部メンバーを説明します、<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>する際に役立つクラスがカスタムのデバッガーを実装します。 このクラスの詳細については、次を参照してください。、<xref:System.Threading.Tasks.TaskScheduler>参照資料です。
 
  **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
 

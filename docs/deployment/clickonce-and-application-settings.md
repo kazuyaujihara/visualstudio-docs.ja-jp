@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 153df515fc762b7262dce81d8c1d1c4fe617ad61
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900612"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce とアプリケーション設定
 Windows フォームのアプリケーション設定を簡単に作成、保存、およびカスタム アプリケーションとクライアント上のユーザー設定を管理します。 次のドキュメントでは、ClickOnce アプリケーションでのアプリケーション設定ファイルのしくみし、ユーザーが次のバージョンにアップグレードしたときに、ClickOnce が設定を移行する方法について説明します。

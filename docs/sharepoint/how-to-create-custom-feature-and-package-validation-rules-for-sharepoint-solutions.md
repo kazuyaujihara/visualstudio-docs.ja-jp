@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 061a86ee301378bc8b456d370eddd19d2f91bbb6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966745"
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>方法: SharePoint ソリューションの検証規則を使用したカスタムのフィーチャーとパッケージを作成します。
   Visual Studio によって生成された、ソリューション パッケージの検証にカスタム検証規則を作成することができます。 選択して、すべての機能またはパッケージの完全な検証を行うことができます**検証**パッケージまたは機能のコンテキスト メニューから、 **PackagingExplorer**します。 かを確認するかどうか、パッケージまたは機能が有効な状態でプロジェクトを新しい SharePonit プロジェクト項目や機能を追加すると、部分検証を実行します。

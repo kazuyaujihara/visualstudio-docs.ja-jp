@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e07b9e55ddfff54d0668433137079a38c0ddd296
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007423"
 ---
 # <a name="number-expected"></a>数字が必要です。
 呼び出そうとしたか、 **Number.prototype.toString**または**Number.prototype.valueOf**メソッド以外の型のオブジェクトを**数**します。 呼び出し元のオブジェクト型でなければなりません**数**します。  

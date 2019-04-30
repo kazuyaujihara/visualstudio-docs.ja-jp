@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d1ba2a1276ba5c752b712c6131048546ca8f69ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977470"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>[.NET 型の参照と選択] ダイアログ ボックス (レガシ)
 このトピックで説明する方法を使用して、**を参照して .NET 型を選択** ダイアログ ボックスで、従来の[!INCLUDE[wfd1](../includes/wfd1-md.md)]します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。  

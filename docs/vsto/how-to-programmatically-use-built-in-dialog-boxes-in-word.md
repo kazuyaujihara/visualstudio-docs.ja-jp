@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f8037e4d91aa7706c7ffd7b9f32778dfeac79488
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961642"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>方法: プログラムによって Word の組み込みダイアログ ボックスを使用して、
   Microsoft Office Word を使用する場合は、ユーザーの入力 ダイアログ ボックスを表示する必要がある生じるです。 公開されている Word では、組み込みダイアログ ボックスを使用する方法をする可能性がありますも作成できますが、独自、<xref:Microsoft.Office.Interop.Word.Dialogs>のコレクション、<xref:Microsoft.Office.Interop.Word.Application>オブジェクト。 これにより、200 以上の列挙体で表される組み込みダイアログ ボックスにアクセスすることができます。
@@ -34,9 +34,9 @@ ms.locfileid: "56644940"
  [!code-csharp[Trin_VstcoreWordAutomation#100](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#100)]
 
 ### <a name="access-dialog-box-members-that-are-available-through-late-binding"></a>遅延バインディングで使用できるダイアログ ボックスのメンバーをへのアクセス
- いくつかのプロパティと Word のダイアログ ボックスのメソッドは、遅延バインディングを介してのみ使用可能なは。 Visual basic プロジェクト where **Option Strict**に、リフレクションを使用して、これらのメンバーにアクセスする必要があります。 詳細については、[Office ソリューションの遅延バインディング](../vsto/late-binding-in-office-solutions.md)を参照してください。
+ いくつかのプロパティと Word のダイアログ ボックスのメソッドは、遅延バインディングを介してのみ使用可能なは。 Visual basic プロジェクト where **Option Strict**に、リフレクションを使用して、これらのメンバーにアクセスする必要があります。 詳細については、次を参照してください。 [Office ソリューションの遅延バインディング](../vsto/late-binding-in-office-solutions.md)します。
 
- 次のコード例は、使用する方法を示します、**名前**のプロパティ、**ファイルを開く** ダイアログ ボックスで、Visual Basic プロジェクト where **Option Strict**オフまたは Visual C# では、プロジェクトの対象とする、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]します。 この例を使用する実行から、`ThisDocument`または`ThisAddIn`プロジェクト内のクラス。
+ 次のコード例は、使用する方法を示します、**名前**のプロパティ、**ファイルを開く** ダイアログ ボックスで、Visual Basic プロジェクト where **Option Strict**オフまたは Visual c# では、プロジェクトの対象とする、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]します。 この例を使用する実行から、`ThisDocument`または`ThisAddIn`プロジェクト内のクラス。
 
  [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
  [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]

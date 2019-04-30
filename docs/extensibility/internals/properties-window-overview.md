@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 06844e8723cc118d6cc10c44c5c788e48c206684
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859467"
 ---
 # <a name="properties-window-overview"></a>プロパティ ウィンドウの概要
 **プロパティ**で利用可能な期間の 2 つの主な型で選択したオブジェクトのプロパティを表示するウィンドウが使用される、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) です。 これら 2 つの種類のウィンドウは次のとおりです。

@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002056"
 ---
-# <a name="how-to-use-xml-snippets"></a>方法: XML スニペットを使用します。
+# <a name="how-to-use-xml-snippets"></a>方法: XML スニペットを使用する
 
 XML エディターのショートカット メニューを次の 2 つのコマンドを使用して、XML スニペットを呼び出すことができます。 **スニペットの挿入**コマンドは、カーソル位置にある XML スニペットを挿入します。 **ブロックの挿入**コマンドは、選択したテキストの周囲の XML スニペットをラップします。 各 XML スニペットには、スニペット型が指定されています。 スニペット型が、スニペットを使用できるかどうかを判断、**スニペットの挿入**コマンド、**ブロックの挿入**コマンド、またはその両方です。
 
@@ -98,7 +98,7 @@ XML スニペットがエディターに追加されると、スニペット内�
 
 3. またはキーを押して、スニペットの名前を入力して、マウスを使用して一覧からスニペットを選択**タブ**または**Enter**します。
 
-## <a name="use-xml-snippets"></a>XML スニペットを使用します。
+## <a name="use-xml-snippets"></a>XML スニペットを使用する
 
 XML スニペットを選択すると、カーソルの位置にコード スニペットのテキストが自動的に挿入されます。 スニペット内の編集可能なフィールドがすべて強調表示され、最初の編集可能なフィールドが自動的に選択されます。 現在選択されているフィールドは枠で囲まれます。
 

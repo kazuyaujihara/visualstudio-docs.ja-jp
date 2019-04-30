@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846864"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>方法: GPU スレッド ウィンドウを使用して (C++)
 GPU スレッド ウィンドウでは、デバッグ中のアプリケーション内の GPU 上で実行されているスレッドを調べて操作できます。 GPU 上で実行されるアプリケーションの詳細については、次を参照してください。 [C++ AMP の概要](/cpp/parallel/amp/cpp-amp-overview)します。

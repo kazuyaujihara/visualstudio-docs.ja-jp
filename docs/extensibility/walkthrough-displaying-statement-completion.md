@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d4529fa9cd52c1e9e54049386d39e85ea8efcbe5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965194"
 ---
 # <a name="walkthrough-display-statement-completion"></a>チュートリアル: 入力候補の表示
 入力候補を提供する識別子を定義し、補完セッションをトリガーし、言語ベースのステートメント入力候補を実装できます。 言語サービスのコンテキストでステートメント入力候補を定義、ファイル名拡張子とコンテンツの種類を定義し、補完機能をその型だけを表示できます。 または、既存のコンテンツ タイプの完了をトリガーする — たとえば、「プレーン テキスト」。 このチュートリアルでは、「プレーン テキスト」コンテンツ タイプ、テキスト ファイルのコンテンツの種類の入力候補をトリガーする方法を示します。 「テキスト」コンテンツの種類は、すべての他のコンテンツの種類のコードと XML ファイルを含む先祖です。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44be5f88542d867d8baf25fbc3cdd3c060231d7d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833404"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 データ ソースに含まれるさまざまなシンボルを列挙します。
@@ -41,7 +41,7 @@ IDiaEnumSymbols : IUnknown
 |[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|先頭に、列挙体シーケンスをリセットします。|
 |[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|現在の列挙子と同じ列挙状態を格納する列挙子を作成します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 このインターフェイスは、記号などの特定の種類でグループ化され記号`SymTagUDT`(ユーザー定義型) または`SymTagBaseClass`します。 アドレスでグループ化されたシンボルを使用するには、使用、 [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)インターフェイス。
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
@@ -85,8 +85,8 @@ void ShowUDTs(IDiaSymbol *pGlobals)
 }
 ```
 
-## <a name="requirements"></a>要件
-ヘッダー: Dia2.h
+## <a name="requirements"></a>必要条件
+ヘッダー:Dia2.h
 
 ライブラリ: diaguids.lib
 

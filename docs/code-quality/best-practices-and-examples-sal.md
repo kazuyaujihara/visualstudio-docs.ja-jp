@@ -8,11 +8,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560034"
 ---
 # <a name="best-practices-and-examples-sal"></a>ベスト プラクティスと例 (SAL)
 最もからソース コード注釈言語 (SAL) を取得し、一般的な問題を回避する方法を示します。
@@ -238,7 +238,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 
 ## <a name="see-also"></a>関連項目
 
-[SAL 注釈を使用して C/C++ のコード障害を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+[SAL 注釈を使用して、C を削減する/C++コード障害](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 [SAL を理解する](../code-quality/understanding-sal.md)
 [関数パラメーターと戻り値に注釈を付ける](../code-quality/annotating-function-parameters-and-return-values.md)
 [関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)
