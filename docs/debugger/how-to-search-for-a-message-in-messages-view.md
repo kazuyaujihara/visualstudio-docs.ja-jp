@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5830076ab3bd0ea59912900e8a14c807d7c0941
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 37f99c30c23461ada406bb0650f86d45d2a4a2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388400"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>方法: メッセージ ビューでメッセージを検索する
 メッセージ ビューで特定のメッセージを検索するには、検索条件として、ハンドル、型、またはメッセージ ID を使用します。 これらのいずれか、または組み合わせ: 有効な検索条件になります。 検索の最初の方向も指定できます。 ダイアログ ボックスのフィールドは、現在選択されているメッセージの属性を事前に読み込まれます。
@@ -43,7 +43,7 @@ ms.locfileid: "56696260"
 4. 値を指定しないすべてのフィールドをオフにします。
 
    > [!TIP]
-   >  画面の煩雑さを減らすためには、選択、 **Spy++ を非表示**オプション。 このオプションは、主な spy++ ウィンドウだけを非表示、**ウィンドウ検索**ダイアログ ボックスで、他のアプリケーションの上に表示します。 クリックすると、spy++ のメイン ウィンドウが復元**OK**または**キャンセル**、またはオフにすると、 **spy++ を非表示にする**オプション。
+   > 画面の煩雑さを減らすためには、選択、 **Spy++ を非表示**オプション。 このオプションは、主な spy++ ウィンドウだけを非表示、**ウィンドウ検索**ダイアログ ボックスで、他のアプリケーションの上に表示します。 クリックすると、spy++ のメイン ウィンドウが復元**OK**または**キャンセル**、またはオフにすると、 **spy++ を非表示にする**オプション。
 
 5. 選択**を**または**ダウン**方向を検索します。
 

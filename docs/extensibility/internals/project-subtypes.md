@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027dc559c33b5b8f10a4555985e8b2a5a5a416c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 73cf7fe43dcbe15bdeedf6822c9172533e6d420b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423069"
 ---
 # <a name="project-subtypes"></a>プロジェクト サブタイプ
 プロジェクト サブタイプを使用すると、flavor のプロジェクト システムの動作をカスタマイズまたは[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 カスタマイズが可能で、プロジェクト ファイル内の項目をフィルター処理を追加または追加のデータを保存、**新しい項目の追加** ダイアログ ボックスで、アセンブリのデバッグ方法と、展開方法を制御して、プロジェクトの拡張**プロパティページ** ダイアログ ボックス。 Vspackage では、COM の集計を使用してプロジェクトのサブタイプを実装します。
 
 > [!NOTE]
->  Visual C プロジェクト システムは、プロジェクトのサブタイプをサポートしていません。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 自体は、プロジェクトのサブタイプを使用して、SQL Server とスマート デバイス プロジェクトを実装します。
+> Visual C プロジェクト システムは、プロジェクトのサブタイプをサポートしていません。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 自体は、プロジェクトのサブタイプを使用して、SQL Server とスマート デバイス プロジェクトを実装します。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [プロジェクト サブタイプのデザイン](../../extensibility/internals/project-subtypes-design.md)

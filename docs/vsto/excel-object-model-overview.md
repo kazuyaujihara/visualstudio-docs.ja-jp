@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfee8d6183a8292f5c39140ada9d4787e4f027ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: df1045cd0b35a2c8d4afa765167693032c6d9936
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441817"
 ---
 # <a name="excel-object-model-overview"></a>Excel オブジェクト モデルの概要
   Microsoft Office Excel を使用するソリューションを開発するため、Excel オブジェクト モデルによって提供されるオブジェクトと対話することができます。 このトピックでは、特に重要なオブジェクトについて説明します。
@@ -80,7 +80,7 @@ ms.locfileid: "60104551"
  Excel の <xref:Microsoft.Office.Interop.Excel.Application> オブジェクトは、Excel のアプリケーション自体を表します。 <xref:Microsoft.Office.Interop.Excel.Application> オブジェクトは、実行中のアプリケーション、そのインスタンスに適用されるオプション、そのインスタンス内で開いている現在のユーザー オブジェクトに関する多くの情報を公開します。
 
 > [!NOTE]
->  Excel の <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> オブジェクトの <xref:Microsoft.Office.Interop.Excel.Application> プロパティを **false**と呼ばれるオブジェクトを拡張します。 このプロパティを false に設定すると、ホスト コントロールのイベントを含む、すべてのイベントが Excel で発生しなくなります。
+> Excel の <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> オブジェクトの <xref:Microsoft.Office.Interop.Excel.Application> プロパティを **false**と呼ばれるオブジェクトを拡張します。 このプロパティを false に設定すると、ホスト コントロールのイベントを含む、すべてのイベントが Excel で発生しなくなります。
 
 ### <a name="workbook-object"></a>Workbook オブジェクト
  <xref:Microsoft.Office.Interop.Excel.Workbook> オブジェクトは、Excel アプリケーション内の 1 つのブックを表します。

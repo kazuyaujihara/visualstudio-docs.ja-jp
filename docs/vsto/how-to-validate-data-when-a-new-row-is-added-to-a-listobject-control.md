@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8aefab319b9b197b9b7df0e23fec71aa3cb64d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c729896083c7d32a48ba39906d8e9a0ebde4b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420950"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>方法: ListObject コントロールに新しい行が追加されたときにデータを検証します。
   ユーザーはデータにバインドされている <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールに新しい行を追加できます。 変更をデータ ソースにコミットする前に、ユーザーのデータを検証できます。
@@ -30,7 +30,7 @@ ms.locfileid: "60039312"
  データにバインドされている <xref:Microsoft.Office.Tools.Excel.ListObject> に行が追加されるたびに、 <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> イベントが発生します。 このイベントを処理することで、データの検証を実行できます。 たとえば、データ ソースに 18 歳と 65 の従業員のみを追加することができます、アプリケーションに必要な場合は、行を追加する前に入力された年齢がその範囲内にあることを確認します。
 
 > [!NOTE]
->  常に、クライアントだけでなく、サーバー上のユーザー入力も確認する必要があります。 詳細については、次を参照してください。[クライアント アプリケーションをセキュリティで保護された](/dotnet/framework/data/adonet/secure-client-applications)します。
+> 常に、クライアントだけでなく、サーバー上のユーザー入力も確認する必要があります。 詳細については、次を参照してください。[クライアント アプリケーションをセキュリティで保護された](/dotnet/framework/data/adonet/secure-client-applications)します。
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>データ バインドされた ListObject に新規行が追加された場合にデータを検証するには
 

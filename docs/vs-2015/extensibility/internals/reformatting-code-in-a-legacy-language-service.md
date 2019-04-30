@@ -11,12 +11,12 @@ ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8b4307caf3f76087867a942654b47bfe85c5011e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: eb0dac5e1282d544df9c04bf4c12303fb391739d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436641"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>従来の言語サービスの再フォーマット コード
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58962907"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]インデントおよび空白の使用を正規化することで、ソース コードを再フォーマットすることができます。 これには、挿入、スペースや各の行の先頭にあるタブを削除または線の間の新しい行を追加、またはタブまたはスペースをタブでスペースを置き換えることを含めることができます。  
   
 > [!NOTE]
->  **注**挿入、または改行文字を削除することができますに影響を与えるブレークポイントとブックマークなどのマーカーが追加または削除のスペースまたはタブ マーカーは影響しません。  
+> **注**挿入、または改行文字を削除することができますに影響を与えるブレークポイントとブックマークなどのマーカーが追加または削除のスペースまたはタブ マーカーは影響しません。  
   
  ユーザーが選択して、再フォーマット操作を開始できます**形式の選択**または**形式のドキュメント**から、 **[詳細設定]** メニューで、**編集**メニュー。 コード スニペットまたは特定の文字が挿入されると、再フォーマット操作をトリガーこともできます。 たとえば、(C#)、右中かっこを入力すると、適切なレベルに自動的にインデント一致する始めかっことかっこの間にあるすべてはできません。  
   

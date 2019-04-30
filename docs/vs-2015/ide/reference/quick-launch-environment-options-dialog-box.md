@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91b62fa8384bd2e0e9e90e9c9057a89e61869a2a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a35e1498c4f2e6a10f56f1ab7687bd8516eb6808
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416691"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>[クイック起動] \([オプション] ダイアログ ボックス - [環境])
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "59658618"
 |ドキュメント|@doc<br /><br /> たとえば、`@doc font`|検索を検索条件の開いているドキュメントのファイル名とパスに限定しますが、ファイル内のテキストは検索されません。|  
   
 > [!NOTE]
->  ショートカット キーは、**[オプション]** ダイアログ ボックスにある **[全般]** の **[キーボード]** ページで変更できます。  
+> ショートカット キーは、**[オプション]** ダイアログ ボックスにある **[全般]** の **[キーボード]** ページで変更できます。  
   
 ## <a name="show-previous-results"></a>前の結果の表示  
  既定では、入力した検索用語は検索セッション間で保持されません。 語句を検索し、カーソルを**クイック起動**領域の外側に移動させてから戻した場合は、検索文字列がクリアされます。 検索結果を保持するには、**[オプション]** ダイアログ ボックスに移動して、**[クイック起動]** をクリックし、**[クイック起動がアクティブ化されたときに以前の検索結果を表示する]** チェック ボックスをオンにします。 次回に検索を実行し、クイック起動領域の外側に移動してから戻ると、クイック起動で最後に使用された検索用語が保持され、検索結果が表示されます。  

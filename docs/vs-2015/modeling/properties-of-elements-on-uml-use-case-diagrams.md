@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbe2a9f3d46be72ae1e463da7c6173ef0571bc89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b52afab80bc22c03dc5ff980b937cad53869f5db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444401"
 ---
 # <a name="properties-of-elements-on-uml-use-case-diagrams"></a>UML ユース ケース図の要素のプロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58963993"
 UML ユース ケース図では、図の各要素にプロパティが存在します。 要素のプロパティを表示するには、図、または要素を右クリックして**UML モデル エクスプ ローラー**し**プロパティ**します。 プロパティが表示されます、**プロパティ**ウィンドウ。  
   
 > [!NOTE]
->  このトピックでは、UML ユース ケース図の要素のプロパティについて説明します。 UML アクティビティ図を読み取る方法の詳細については、次を参照してください。 [UML ユース ケース図。Reference](../modeling/uml-use-case-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。 UML アクティビティ図を描画する方法の詳細については、次を参照してください。 [UML ユース ケース図。ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)します。  
+> このトピックでは、UML ユース ケース図の要素のプロパティについて説明します。 UML アクティビティ図を読み取る方法の詳細については、次を参照してください。 [UML ユース ケース図。Reference](../modeling/uml-use-case-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。 UML アクティビティ図を描画する方法の詳細については、次を参照してください。 [UML ユース ケース図。ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)します。  
   
 ## <a name="properties-of-elements"></a>要素のプロパティ  
   

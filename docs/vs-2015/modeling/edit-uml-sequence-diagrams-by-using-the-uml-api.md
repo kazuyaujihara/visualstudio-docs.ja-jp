@@ -11,12 +11,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442954"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>UML API を使用して UML シーケンス図を編集する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ public class MySequenceDiagramCommand : ICommandExtension
  シーケンス図には 2 種類あります。1 つは UML モデリング プロジェクトで手動で作成するシーケンス図、もう 1 つはプログラム コードから生成されるシーケンス図です。 シーケンス図の種類を判断するには、`UmlMode` プロパティを使用します。   
   
 > [!NOTE]
->  このプロパティは、Visual Studio 2013 またはそれ以前のバージョンを使用したコードから生成されたシーケンス図の場合のみ、false を返します。 これには、Visual Studio 2013 またはそれ以前のバージョンから移行されたコード生成型シーケンスが含まれます。 このバージョンの Visual Studio では、新しいシーケンス図の生成をサポートしていません。  
+> このプロパティは、Visual Studio 2013 またはそれ以前のバージョンを使用したコードから生成されたシーケンス図の場合のみ、false を返します。 これには、Visual Studio 2013 またはそれ以前のバージョンから移行されたコード生成型シーケンスが含まれます。 このバージョンの Visual Studio では、新しいシーケンス図の生成をサポートしていません。  
   
  たとえば、UML シーケンス図でのみ表示できるメニュー コマンドを生成する場合、`QueryStatus()` メソッドに次のステートメントを含めることができます。  
   

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e329631f0bdeb79a068e4a791158f94cec3904ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d2ad5a5424844896541e46d2afbc158320c7e5a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442404"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook オブジェクト モデルの概要
   Microsoft Office Outlook 用の VSTO アドインを開発するには、Outlook オブジェクト モデルによって提供されるオブジェクトとのやり取りが可能です。 Outlook オブジェクト モデルは、ユーザー インターフェイスで項目を表すクラスとインターフェイスを提供します。 たとえば、 <xref:Microsoft.Office.Interop.Outlook.Application> オブジェクトは、アプリケーション全体を表し、 <xref:Microsoft.Office.Interop.Outlook.Folder> オブジェクトは、電子メール メッセージや他のアイテムを含むフォルダーを表します。 <xref:Microsoft.Office.Interop.Outlook.MailItem> オブジェクトは、電子メール メッセージを表します。
@@ -65,7 +65,7 @@ ms.locfileid: "60061932"
   インスタンスを取得する、<xref:Microsoft.Office.Interop.Outlook.Application>オブジェクトでのアプリケーションのフィールドを使用して、`ThisAddIn`プロジェクト内のクラス。 詳細については、次を参照してください。[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)します。
 
 > [!NOTE]
->  プロパティと Outlook オブジェクト モデルの保護によってブロックされているメソッドを使用する場合は、セキュリティの警告を回避するためには、[アプリケーション] フィールドから Outlook オブジェクトを取得、`ThisAddIn`クラス。 詳細については、次を参照してください。 [Office ソリューションの特定のセキュリティに関する考慮事項](../vsto/specific-security-considerations-for-office-solutions.md)します。
+> プロパティと Outlook オブジェクト モデルの保護によってブロックされているメソッドを使用する場合は、セキュリティの警告を回避するためには、[アプリケーション] フィールドから Outlook オブジェクトを取得、`ThisAddIn`クラス。 詳細については、次を参照してください。 [Office ソリューションの特定のセキュリティに関する考慮事項](../vsto/specific-security-considerations-for-office-solutions.md)します。
 
 ### <a name="explorer-object"></a>エクスプ ローラー オブジェクト
  <xref:Microsoft.Office.Interop.Outlook.Explorer> オブジェクトは、電子メール メッセージ、タスク、または予定などの項目を含むフォルダーの内容を表示するウィンドウを表します。 <xref:Microsoft.Office.Interop.Outlook.Explorer> オブジェクトには、ウィンドウを変更するために使用するメソッドとプロパティ、およびウィンドウが変更されたときに発生するイベントが含まれます。

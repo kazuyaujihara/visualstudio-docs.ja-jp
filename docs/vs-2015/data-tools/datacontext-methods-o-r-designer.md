@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a36c38eb0c4a96cb7182300c2f9aca6da68e8a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5af5beb71dc2164df38180078cf7489f2da391e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431136"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext メソッド (O/R デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & auto
  ストアド プロシージャおよび関数にマップされる <xref:System.Data.Linq.DataContext> メソッドは、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]のメソッド ペインに表示されます。 メソッド ペインは、ウィンドウの横に、**エンティティ**ウィンドウ (メインのデザイン画面)。 メソッド ペインには、すべて一覧表示<xref:System.Data.Linq.DataContext>メソッドを使用して作成した、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]します。 既定では、メソッド ペインは空です。ストアド プロシージャまたは関数からのドラッグ**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**上に、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]を作成する<xref:System.Data.Linq.DataContext>メソッド メソッド ペインを設定します。 詳細については、「[方法 :ストアド プロシージャや関数にマップされる DataContext メソッドを作成する (O/R デザイナー)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)  
   
 > [!NOTE]
->  右クリックし、メソッド ペインを開いたり閉じたり、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]  をクリックし、**メソッド ペインの非表示に**または**メソッド ペインの表示**、またはキーボード ショートカット CTRL + 1 を使用します。  
+> 右クリックし、メソッド ペインを開いたり閉じたり、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]  をクリックし、**メソッド ペインの非表示に**または**メソッド ペインの表示**、またはキーボード ショートカット CTRL + 1 を使用します。  
   
 ## <a name="two-types-of-datacontext-methods"></a>2 種類の DataContext メソッド  
  DataContext メソッドは、データベース内のストアド プロシージャおよび関数にマップされるメソッドです。 DataContext メソッドは、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]のメソッド ペインで作成および追加できます。 <xref:System.Data.Linq.DataContext> メソッドには、1 つ以上の結果セットを返すものと結果セットを返さないものの 2 種類があります。  
@@ -44,7 +44,7 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & auto
  ストアド プロシージャおよび関数からのドラッグと**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**上に、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]、戻り値の型を生成された<xref:System.Data.Linq.DataContext>メソッドとは異なる項目をドロップする場所によって異なります。 作成、既存のエンティティ クラスに直接の項目をドロップする、<xref:System.Data.Linq.DataContext>エンティティ クラスの戻り値の型を持つメソッドは項目をドロップの空の領域、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] (いずれかのウィンドウ) では、作成、<xref:System.Data.Linq.DataContext>を返すメソッド、型が自動的に生成されます。 作成される自動生成の型は、ストアド プロシージャ名または関数名に一致する名前と、そのストアド プロシージャまたは関数によって返される各フィールドにマップされるプロパティを持ちます。  
   
 > [!NOTE]
->  <xref:System.Data.Linq.DataContext> メソッドをメソッド ペインに追加した後に、その戻り値の型を変更できます。 <xref:System.Data.Linq.DataContext> メソッドの戻り値の型を確認または変更するには、**[プロパティ]** ウィンドウでメソッドを選択し、**[戻り値の型]** プロパティを調べます。 詳細については、「[方法 :DataContext メソッドの戻り値の型を変更する (O/R デザイナー)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)」を参照してください。  
+> <xref:System.Data.Linq.DataContext> メソッドをメソッド ペインに追加した後に、その戻り値の型を変更できます。 <xref:System.Data.Linq.DataContext> メソッドの戻り値の型を確認または変更するには、**[プロパティ]** ウィンドウでメソッドを選択し、**[戻り値の型]** プロパティを調べます。 詳細については、「[方法 :DataContext メソッドの戻り値の型を変更する (O/R デザイナー)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)」を参照してください。  
   
  データベースから O/R デザイナー画面にドラッグしたオブジェクトには、データベース内のオブジェクトの名前に基づいて自動的に名前が付けられます。 同じオブジェクトを複数回ドラッグすると、新しい名前の末尾に名前を区別する番号が付けられます。 データベース オブジェクト名にスペースや Visual Basic または C# でサポートされない文字が含まれている場合、そのスペースまたは無効な文字はアンダースコアに置き換えられます。  
   

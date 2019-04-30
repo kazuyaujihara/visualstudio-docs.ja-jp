@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c270ff9a31073835d8f907547cf0f532e237b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d74b731bd1857330c40a7929d84efe40a03201
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431243"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>方法: エンティティ モデルを追加します。
   エンティティを作成するには、Visual Studio からエンティティ コントロールを追加**ツールボックス**ビジネス データ接続 (BDC) をデザイナーにします。
@@ -40,7 +40,7 @@ ms.locfileid: "60089459"
      エンティティに新しい識別子が表示されます。
 
     > [!NOTE]
-    >  エンティティとの識別子の名前を変更することができます、**プロパティ**ウィンドウ。
+    > エンティティとの識別子の名前を変更することができます、**プロパティ**ウィンドウ。
 
 4. クラスでは、エンティティのフィールドを定義します。 プロジェクトに新しいクラスを追加するか、オブジェクト リレーショナル デザイナー (O/R デザイナー) などの他のツールを使用して作成された既存のクラスを使用します。 次の例では、連絡先をという名前のエンティティ クラスを示します。
 

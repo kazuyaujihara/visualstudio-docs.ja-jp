@@ -10,12 +10,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bfadcb962e63a38f4f8190c2dd9c02f4e2ac4643
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9541180ba8740cdc12a038f81c4ef74d47fcc1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446235"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "60107997"
 ### <a name="BKMK_Run_tests_after_every_build"></a> 各ビルドの後にテストを実行する  
   
 > [!WARNING]
->  各ビルドの後の単体テスト実行は、Visual Studio Enterprise でサポートされます。  
+> 各ビルドの後の単体テスト実行は、Visual Studio Enterprise でサポートされます。  
   
 |||  
 |-|-|  
@@ -201,7 +201,7 @@ TEST_METHOD(Method1)
    ![テスト エクスプローラーでテストをフィルター処理する](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
->  検索では大文字と小文字を区別せず、指定された文字列が条件の値の一部と一致するかどうかを照合します。  
+> 検索では大文字と小文字を区別せず、指定された文字列が条件の値の一部と一致するかどうかを照合します。  
   
 |修飾子|説明|  
 |---------------|-----------------|  
@@ -253,7 +253,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 1. Visual Studio エディターで、デバッグする 1 つ以上のテスト メソッドにブレークポイントを設定します。  
   
    > [!NOTE]
-   >  テスト メソッドを任意の順序で実行できるため、デバッグするすべてのテスト メソッドにブレークポイントを設定します。  
+   > テスト メソッドを任意の順序で実行できるため、デバッグするすべてのテスト メソッドにブレークポイントを設定します。  
   
 2. テスト エクスプローラーでテスト メソッドを選択し、コンテキスト メニューの **[選択したテストのデバッグ]** を選択します。  
   
@@ -267,7 +267,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 ### <a name="BKMK_Analyzeunit_test_code_coverage"></a> 単体テストのコード カバレッジを分析する  
   
 > [!NOTE]
->  単体テストのコード カバレッジは、Visual Studio Enterprise でのみ使用できます。  
+> 単体テストのコード カバレッジは、Visual Studio Enterprise でのみ使用できます。  
   
  Visual Studio のコード カバレッジ ツールを使用して、単体テストで実際にテスト中の製品コードの量を確認できます。 選択したテストまたはソリューションのすべてのテストのコード カバレッジを実行できます。  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd0bf5c0e95b4c859dc2d6470ab6f922041b20ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c0dc7b406f7e04aaa9848e2f5dcb96f17430f6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436950"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>スクリプトを使用して SQL database を作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -234,7 +234,7 @@ ms.locfileid: "60049881"
 2. **インストール済み**、展開、**テンプレート**ノード、展開、**他の言語**ノードを選択、 **SQL Server**カテゴリ、し、選択、 **SQL Server データベース プロジェクト**テンプレート。  
   
     > [!NOTE]
-    >  **他の言語**ノードは、Visual Studio のすべてのインストールに表示されません。  
+    > **他の言語**ノードは、Visual Studio のすべてのインストールに表示されません。  
   
 3. **名前**ボックスに、入力`Small Database`します。  
   

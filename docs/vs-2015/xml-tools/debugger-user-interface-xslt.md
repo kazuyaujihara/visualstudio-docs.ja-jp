@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1af3b47b2d7c897b36556f0ebac105088cdc9b75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f2920f73560e622c4336a1eedc23e5034fa8ff91
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417436"
 ---
 # <a name="debugger-user-interface-xslt"></a>デバッガー ユーザー インターフェイス (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "58978340"
  [タスク一覧] には、XSLT ファイルのスクリプト ブロックで発生したすべてのエラーが含まれます。  
   
 > [!NOTE]
->  XSLT デバッガーには警告がないため、[タスク一覧] に警告が表示されることはありません。  
+> XSLT デバッガーには警告がないため、[タスク一覧] に警告が表示されることはありません。  
   
 ## <a name="breakpoints-window"></a>ブレークポイント ウィンドウ  
  [ブレークポイント] ウィンドウには、現在のプロジェクトに設定されているすべてのブレークポイントが表示されます。 ウィンドウの表示中にブレークポイントが追加された場合、ウィンドウは自動的に更新されて新しいブレークポイントを表示します。  

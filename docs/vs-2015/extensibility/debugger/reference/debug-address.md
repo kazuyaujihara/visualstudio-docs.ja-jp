@@ -12,12 +12,12 @@ ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f9057b8c19c1e1763b29fe40fc77bfc0be064159
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d001d29433573fedde3b4310f989667538b4b69c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444961"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ public struct DEBUG_ADDRESS {
  クラスまたはこのアドレスの種類を識別するトークンです。  
   
 > [!NOTE]
->  この値は、シンボル プロバイダーに固有で、クラス型の識別子として以外の一般的な意味を持たない。  
+> この値は、シンボル プロバイダーに固有で、クラス型の識別子として以外の一般的な意味を持たない。  
   
  Addr  
  A [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)構造体は、個々 のアドレスの種類を記述する構造体の共用体が含まれています。 値`addr`します。`dwKind` [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙体、共用体を解釈する方法について説明します。  
@@ -63,7 +63,7 @@ public struct DEBUG_ADDRESS {
 ## <a name="remarks"></a>Remarks  
  この構造体に渡される、 [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)情報を格納するメソッド。  
   
- **警告 [C++ のみ]**  
+ **警告 [C++のみ]**  
   
  場合`addr.dwKind`は`ADDRESS_KIND_METADATA_LOCAL`場合`addr.addr.addrLocal.pLocal`呼び出す必要がありますし、null 値でない`Release`トークンのポインターで。  
   

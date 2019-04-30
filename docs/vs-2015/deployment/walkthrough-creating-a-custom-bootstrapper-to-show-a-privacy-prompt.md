@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 153773d27d4f27a6987f7984955dde26b187b65e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d93d9f771da9387661603f3eb71301e9d9aead7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427140"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>チュートリアル: プライバシー プロンプトを表示するカスタム ブートス トラップの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,7 @@ ms.locfileid: "60116518"
     6. **スタートアップ オブジェクト**ドロップダウン メニューで、 **Module1**します。  
   
        > [!NOTE]
-       >  アプリケーション フレームワークを無効にするには、Windows XP ビジュアル スタイルのアプリケーション イベント、スプラッシュ スクリーン、単一インスタンス アプリケーションなどの機能が無効にします。 詳細については、「[[アプリケーション] ページ (プロジェクト デザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)」を参照してください。  
+       > アプリケーション フレームワークを無効にするには、Windows XP ビジュアル スタイルのアプリケーション イベント、スプラッシュ スクリーン、単一インスタンス アプリケーションなどの機能が無効にします。 詳細については、「[[アプリケーション] ページ (プロジェクト デザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)」を参照してください。  
   
        Visual c# 開発者の場合のみ。  
   
@@ -154,12 +154,12 @@ ms.locfileid: "60116518"
 1. という名前のディレクトリを作成する**UpdateConsentDialog** %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages にあります。  
   
     > [!NOTE]
-    >  このフォルダーを作成する管理者特権を必要があります。  
+    > このフォルダーを作成する管理者特権を必要があります。  
   
 2. UpdateConsentDialog ディレクトリでは、en という名前のサブディレクトリを作成します。  
   
     > [!NOTE]
-    >  ロケールごとに新しいディレクトリを作成します。 たとえば、フランス、ドイツのロケールのサブディレクトリを追加できます。 必要に応じて、フランス語、ドイツ語の文字列と言語パック、これらのディレクトリが含まれます。  
+    > ロケールごとに新しいディレクトリを作成します。 たとえば、フランス、ドイツのロケールのサブディレクトリを追加できます。 必要に応じて、フランス語、ドイツ語の文字列と言語パック、これらのディレクトリが含まれます。  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>手順 2: Product.xml マニフェスト ファイルを作成するには  
   
@@ -224,7 +224,7 @@ ms.locfileid: "60116518"
 4. ソフトウェアのライセンス条項 eula.rtf というドキュメントを作成します。  
   
     > [!NOTE]
-    >  ソフトウェアのライセンス条項は、ライセンス、保証、負債、および現地の法律に関する情報を含める必要があります。 これらのファイルは、ロケール固有のもの、MBCS または UNICODE 文字をサポートする形式でファイルを保存するようにする必要があります。 ソフトウェアのライセンス条項のコンテンツについて、法務部門を参照してください。  
+    > ソフトウェアのライセンス条項は、ライセンス、保証、負債、および現地の法律に関する情報を含める必要があります。 これらのファイルは、ロケール固有のもの、MBCS または UNICODE 文字をサポートする形式でファイルを保存するようにする必要があります。 ソフトウェアのライセンス条項のコンテンツについて、法務部門を参照してください。  
   
 5. UpdateConsentDialog ブートス トラップ ディレクトリに en サブディレクトリに、ドキュメントを保存します。  
   
@@ -244,7 +244,7 @@ ms.locfileid: "60116518"
 4. 選択**同意ダイアログを更新**します。  
   
     > [!NOTE]
-    >  前提条件 ダイアログ ボックスで更新プログラムの同意ダイアログを表示する Visual Studio を閉じて再度開くことがあります。  
+    > 前提条件 ダイアログ ボックスで更新プログラムの同意ダイアログを表示する Visual Studio を閉じて再度開くことがあります。  
   
 5. **[OK]** をクリックします。  
   

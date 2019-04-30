@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78026f091d9ed61d38d5cf9bd98ec16d85e193c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c9e41b99e7f2dd9349bc04bd4988dbf103095c94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441635"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML ファイルを編集してコード マップをカスタマイズする
 
@@ -117,7 +117,7 @@ ms.locfileid: "60047724"
 - 特定の条件に基づくコード要素およびリンクのグループ
 
 > [!TIP]
->  多くのコード要素またはリンクで繰り返し使用するスタイルがある場合は、これらのコード要素またはリンクにカテゴリを適用し、そのカテゴリにスタイルを適用することも検討できます。 詳細については、次を参照してください。[コード要素およびリンクにカテゴリを割り当てる](#AssignCategories)と[コード要素およびリンク プロパティを割り当てる](#AssignProperties)します。
+> 多くのコード要素またはリンクで繰り返し使用するスタイルがある場合は、これらのコード要素またはリンクにカテゴリを適用し、そのカテゴリにスタイルを適用することも検討できます。 詳細については、次を参照してください。[コード要素およびリンクにカテゴリを割り当てる](#AssignCategories)と[コード要素およびリンク プロパティを割り当てる](#AssignProperties)します。
 
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>単一のコード要素にカスタム スタイルを適用するには
 
@@ -555,7 +555,7 @@ ms.locfileid: "60047724"
  マップの .dgml ファイルを編集したり `Reference` 属性をコード要素の `<Node/>` 要素またはリンクの `<Link/>` 要素に追加することで、ドキュメントまたは URL をコード要素またはリンクに対してリンク付けできます。 これで、そのコンテンツをコード要素またはリンクから開いて参照できるようになります。 `Reference` 属性では、そのコンテンツのパスを指定します。 これには、.dgml ファイルの場所に対する相対パス、または絶対パスを使用できます。
 
 > [!CAUTION]
->  相対パスを使用し、.dgml ファイルが別の位置に移動された場合、それらのパスは解決しません。 リンクされたコンテンツを開いて参照しようとした場合、コンテンツを表示できないことを示すエラーが発生します。
+> 相対パスを使用し、.dgml ファイルが別の位置に移動された場合、それらのパスは解決しません。 リンクされたコンテンツを開いて参照しようとした場合、コンテンツを表示できないことを示すエラーが発生します。
 
  たとえば、次のコード要素をリンクできます。
 
@@ -580,7 +580,7 @@ ms.locfileid: "60047724"
    - `<Node/>` 要素または `<Link/>` 要素で、`Reference` 属性を追加してコード要素の場所を指定します。
 
      > [!NOTE]
-     >  1 つの要素に対して 1 つの `Reference` 属性のみを使用できます。
+     > 1 つの要素に対して 1 つの `Reference` 属性のみを使用できます。
 
      例:
 

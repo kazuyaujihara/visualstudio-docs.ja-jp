@@ -23,12 +23,12 @@ ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c0344b9961e7ade31864d70c7d7422f328983abd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f981b76d471658fe82e874901ad784a17841891
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446432"
 ---
 # <a name="how-to-use-a-visualizer"></a>方法: ビジュアライザーを使用します。
 ビジュアライザーを使用して、変数またはオブジェクトの内容を、データ型にとって意味のある方法で表示できます。 ビジュアライザーを使用することができます**データヒント**、**ウォッチ**ウィンドウで、 **[自動変数]** ウィンドウで、または**ローカル**ウィンドウ。  
@@ -36,7 +36,7 @@ ms.locfileid: "60100979"
  ビジュアライザーは、.NET Compact Framework ではサポートされていません。  
   
 > [!NOTE]
->  **ストア**アプリ、標準のテキストのみ HTML、XML、および JSON ビジュアライザーがサポートされています。 カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。  
+> **ストア**アプリ、標準のテキストのみ HTML、XML、および JSON ビジュアライザーがサポートされています。 カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。  
   
 ### <a name="to-open-a-visualizer"></a>ビジュアライザーを開くには  
   

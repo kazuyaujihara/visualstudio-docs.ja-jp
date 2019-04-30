@@ -10,12 +10,12 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a2b3a4e904fa6ca45dc207c4b713577b1e29f840
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d14435917e982328220aa6b778d081a8837f0396
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443888"
 ---
 # <a name="project-configuration-for-output"></a>出力のためのプロジェクト構成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58977213"
  実装することによって、コンストラクトが開発した`IVsOutputGroup`使用量に応じて出力をグループにプロジェクトを使用します。 たとえば、DLL は、そのプログラム データベース (PDB) と共にグループ化する可能性があります。  
   
 > [!NOTE]
->  PDB ファイルにデバッグ情報が含まれていて、.dll または .exe を構築するときに、' デバッグ情報の生成 ' オプションが指定されているときに作成されます。 .Pdb ファイルは通常のデバッグ プロジェクト構成にのみ生成されます。  
+> PDB ファイルにデバッグ情報が含まれていて、.dll または .exe を構築するときに、' デバッグ情報の生成 ' オプションが指定されているときに作成されます。 .Pdb ファイルは通常のデバッグ プロジェクト構成にのみ生成されます。  
   
  プロジェクトは、場合でも、グループ内に含まれる出力の数は構成で異なる場合があります、同じ数のサポートされる構成ごとにグループを返す必要があります。 たとえば、プロジェクト Matt の DLL には、デバッグ構成を mattd.dll と mattd.pdb を含めるが、のみ matt.dll を製品版構成に含めることがあります。  
   

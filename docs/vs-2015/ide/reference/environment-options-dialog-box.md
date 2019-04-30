@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b28a0d68c6e480c7b13a6ab3aa95b93838496383
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: dcfc73feb762ecc50412ca2dc67818e2fb60a64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441726"
 ---
 # <a name="environment-options-dialog-box"></a>[環境] ([オプション] ダイアログ ボックス)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "59650032"
 **[オプション]** ダイアログ ボックスの **[環境]** フォルダーのページを使用すると、統合開発環境 (IDE) の特定の要素の表示方法と動作方法を設定できます。 メニュー バーで **[ツール]**、**[オプション]** を順にクリックし、次に **[環境]** をクリックすると、[環境] の各ページにアクセスできます。  
   
 > [!NOTE]
->  アクティブな設定および使用している Visual Studio のエディションによっては、ヘルプの記載と異なるダイアログ ボックスやメニュー コマンドがコンピューターに表示される場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> アクティブな設定および使用している Visual Studio のエディションによっては、ヘルプの記載と異なるダイアログ ボックスやメニュー コマンドがコンピューターに表示される場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 |使用方法の詳細については、以下の資料を参照してください。|参照トピック|  
 |----------------------------------|---------|  

@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bfcb10bdbbfcb8e4b98f8d90d6652832059107d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc0e139644a0b3df29109c1543140e57c5378f31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444013"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>ETW (Event Tracing for Windows) レポート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60108218"
 Windows イベント トレーシング (ETW) レポートには、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイル ツールのパフォーマンス セッションで記録された ETW イベントが一覧表示されます。 ETW データはバイナリ (.etl) ファイルで収集されます。  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] インターフェイスでは ETW レポートを表示できません。  
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] インターフェイスでは ETW レポートを表示できません。  
   
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] インターフェイスのプロファイル ツールを利用して ETW データを収集する方法については、「[方法:Event Tracing for Windows (ETW) のデータ収集](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)します。  
   

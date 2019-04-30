@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b588168b62a9219d0de703a5deb6dbe153df6305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445090"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>方法: 並列ウォッチ ウィンドウを使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60050311"
 - 構成可能な列。コンピューター、プロセス、タイル、タスク、スレッドを表示できます。  
   
   > [!TIP]
-  >  開く必要があります、**並列タスク**でタスク情報を表示するウィンドウ、**並列ウォッチ**ウィンドウ。  
+  > 開く必要があります、**並列タスク**でタスク情報を表示するウィンドウ、**並列ウォッチ**ウィンドウ。  
   
 - **\<ウォッチ式の追加 >** 列、ウォッチする式を入力することができます。  
   

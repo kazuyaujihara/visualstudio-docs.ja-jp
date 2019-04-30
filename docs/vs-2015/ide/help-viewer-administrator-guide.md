@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445687"
 ---
 # <a name="help-viewer-administrator-guide"></a>ヘルプ ビューアー の管理者ガイド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60086599"
 - ヘルプの既定のソースはオンラインのままです。  
   
   > [!TIP]
-  >  レジストリ キー HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp を変更することで、ヘルプの既定のソースを変更できます。 詳細については、「[ヘルプ コンテンツ マネージャーのオーバーライド](../ide/help-content-manager-overrides.md)」を参照してください。  
+  > レジストリ キー HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp を変更することで、ヘルプの既定のソースを変更できます。 詳細については、「[ヘルプ コンテンツ マネージャーのオーバーライド](../ide/help-content-manager-overrides.md)」を参照してください。  
   
 - Visual Studio の最初の起動時には、基本ヘルプ コンテンツをインストールするよう求めるメッセージが表示されます。 レジストリ キー HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection を変更することで、このメッセージを無効にできます。  
   
@@ -78,7 +78,7 @@ ms.locfileid: "60086599"
 - インストール後にユーザーがローカル ヘルプ コンテンツを更新、追加、または削除するには、そのユーザーに管理者権限が必要です。  
   
   > [!TIP]
-  >  ユーザーに管理者権限がない場合は、ヘルプ ビューアーで [コンテンツの管理] タブを無効にすることをお勧めします。 詳細については、「[ヘルプ コンテンツ マネージャーのオーバーライド](../ide/help-content-manager-overrides.md)」を参照してください。  
+  > ユーザーに管理者権限がない場合は、ヘルプ ビューアーで [コンテンツの管理] タブを無効にすることをお勧めします。 詳細については、「[ヘルプ コンテンツ マネージャーのオーバーライド](../ide/help-content-manager-overrides.md)」を参照してください。  
   
   注意事項:  
   
@@ -141,7 +141,7 @@ ms.locfileid: "60086599"
   
 2. ヘルプ コンテンツの配置スクリプトを含める .bat ファイルを作成します。 クライアントがプッシュの一部として、削除されるファイルのいずれかに読み取りロックを設定している可能性があるため、更新をプッシュする前にクライアントをシャットダウンする必要があります。  
   
-     例:  
+     例えば:  
   
     ```  
     REM - copy pre-ripped content to ProgramData  

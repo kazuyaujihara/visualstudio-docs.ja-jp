@@ -12,12 +12,12 @@ ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0448c9cae9d1fc5235cc6e16564646f5098c38e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: de43b6c4f441f8c6bde2d6c248274aed3937a7ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408811"
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>プログラムから開くコマンドを使用したファイルの表示
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60069082"
 2. IDE、ドキュメントのファイル名拡張子に基づいて、レジストリに一覧表示するエディターは、指定されたドキュメントを開くかを決定およびでは、この情報が表示されます、**ファイルを開く** ダイアログ ボックス。  
   
     > [!NOTE]
-    >  プロジェクトに含める必要がある組み込みのエディターを**プログラムから開く** ダイアログ ボックスはそのような各エディターのエディター ファクトリを登録する必要があります。 組み込みエディター機能の実装で実施されるプロジェクトの特定の種類と共に、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>メソッド。 IDE では、コアのテキスト エディターとバイナリ エディターの組み込みエディター ファクトリがあります。 IDE には、各登録済みの Windows ファイルの関連付けの代わりには、エディター ファクトリのインスタンスも作成します。 このようなファイルの例は、Microsoft Word です。  
+    > プロジェクトに含める必要がある組み込みのエディターを**プログラムから開く** ダイアログ ボックスはそのような各エディターのエディター ファクトリを登録する必要があります。 組み込みエディター機能の実装で実施されるプロジェクトの特定の種類と共に、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>メソッド。 IDE では、コアのテキスト エディターとバイナリ エディターの組み込みエディター ファクトリがあります。 IDE には、各登録済みの Windows ファイルの関連付けの代わりには、エディター ファクトリのインスタンスも作成します。 このようなファイルの例は、Microsoft Word です。  
   
 3. ユーザーがから項目を選択するとすぐ、**プログラムから開く** ダイアログ ボックスで、IDE が呼び出すことによってドキュメントを開く<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>メソッド。 詳細については、「[方法 :標準のエディターを開く](../../extensibility/how-to-open-standard-editors.md)します。  
   

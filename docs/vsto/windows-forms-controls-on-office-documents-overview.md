@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 927451ed35ce4bbdfbff7531b2828b0571354f34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445366"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Office ドキュメントの概要での Windows フォーム コントロール
   Windows フォーム コントロールは、データを入力または操作するときにユーザーが取り扱うオブジェクトです。 Microsoft Office Excel および Microsoft Office Word のドキュメント レベルのプロジェクトで、プロジェクトで、デザイン時にドキュメントまたはブックに Windows フォーム コントロールを追加できますかプログラムで、実行時にこれらのコントロールを追加することができます。 プログラムで、任意の開いているドキュメントまたは VSTO アドインで実行時にワークシートに、Excel または Word のこれらのコントロールを追加することができます。
@@ -109,7 +109,7 @@ Windows フォーム上
 - **上下の間隔を均等にする**
 
 > [!NOTE]
->  Word プロジェクトでは、選んだコントロールが行内にない場合にのみ、これらのボタンが有効になります。 既定では、デザイン時にドキュメントに追加したコントロールは、行内にあります。
+> Word プロジェクトでは、選んだコントロールが行内にない場合にのみ、これらのボタンが有効になります。 既定では、デザイン時にドキュメントに追加したコントロールは、行内にあります。
 
 ### <a name="prevent-old-data-from-appearing-in-excel-workbooks-during-loading"></a>古いデータが読み込み中に Excel ブックに表示するを防ぐ
  デザイン時にドキュメントやワークシートに Windows フォーム コントロールを追加すると、ユーザーがドキュメントを閉じても、コントロールはドキュメント内に残ります。 デザイン時に追加されたコントロールは、 *スタティック コントロール*とも呼ばれます。

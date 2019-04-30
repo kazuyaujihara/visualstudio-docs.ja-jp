@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d4e46a74651a838a2f9badfc8b9d43d00250ea1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 68ed49b2b22a8302fad0355dde3f937f6b67794b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443937"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX パッケージの構造
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ VSIX パッケージは、分類、拡張機能をインストールして Visua
  VSIX パッケージの形式では、Open Packaging Conventions (OPC) 標準に従います。 パッケージには、バイナリが含まれていて、ファイルをサポートするには、[Content_Types] .xml ファイルと、.vsix マニフェスト ファイル。 1 つの VSIX パッケージには、複数のプロジェクトまたは複数のパッケージを独自のマニフェストの出力を含めることができます。  
   
 > [!NOTE]
->  VSIX パッケージに含まれるファイルの名前は、スペースを含める必要がありますいないもとして Uniform Resource Identifier (URI) 内に予約されている文字の下で定義された[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)します。  
+> VSIX パッケージに含まれるファイルの名前は、スペースを含める必要がありますいないもとして Uniform Resource Identifier (URI) 内に予約されている文字の下で定義された[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)します。  
   
 ## <a name="the-vsix-manifest"></a>VSIX マニフェスト  
  VSIX マニフェストには、拡張機能のインストール、および次のように、VSX スキーマに関する情報が含まれています。 詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 1.0 リファレンス](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)します。 VSIX マニフェストの例を次を参照してください。 [PackageManifest Element (Root Element, VSX Schema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)します。  

@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c1e6aa853d2f8202ed42652a0d0f70a7300c0b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5069f6d45d72606bce7de2866c6328864fcde21f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433250"
 ---
 # <a name="customizing-text-and-image-fields"></a>テキストおよびイメージ フィールドのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  そうでない場合、上書き、`InitializeShapeFields`を適切な値を割り当てます、図形のクラスのメソッド`Default...`テキスト フィールドのプロパティ。  
   
 > [!WARNING]
->  オーバーライドする`InitializeShapeFields()`を設定する必要があります、 **Double Derived の生成**の図形クラスのプロパティ`true`DSL 定義でします。  
+> オーバーライドする`InitializeShapeFields()`を設定する必要があります、 **Double Derived の生成**の図形クラスのプロパティ`true`DSL 定義でします。  
   
  この例では、ユーザーのコメントを使用するテキスト フィールドが図形にあります。 標準のコメントのフォントを使用します。 スタイルのセットから標準フォントであるために、既定のフォント id を設定できます。  
   
@@ -202,7 +202,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  この例では、変更アイコンが図形のモデル要素の状態に依存します。  
   
 > [!WARNING]
->  この例では、動的な画像デコレーターを作成する方法を示します。 モデルの変数の状態に応じて 1 つまたは 2 つのイメージ間で切り替える場合は、いくつかのイメージのデコレータを作成し、図形の上の同じ位置に配置し、モデルの特定の値に依存する可視性フィルターを設定する方が簡単変数。 このフィルターを設定するに、DSL 定義でマップのシェイプを選択します。 DSL の詳細 ウィンドウを開き、デコレーター タブをクリックします。  
+> この例では、動的な画像デコレーターを作成する方法を示します。 モデルの変数の状態に応じて 1 つまたは 2 つのイメージ間で切り替える場合は、いくつかのイメージのデコレータを作成し、図形の上の同じ位置に配置し、モデルの特定の値に依存する可視性フィルターを設定する方が簡単変数。 このフィルターを設定するに、DSL 定義でマップのシェイプを選択します。 DSL の詳細 ウィンドウを開き、デコレーター タブをクリックします。  
   
  この例のコードを実行するには、最小言語テンプレートを使用して、新しい DSL ソリューションを作成します。 ブール型のドメイン プロパティを追加`AlternateState`ExampleElement ドメイン クラスにします。 ExampleShape クラスに、アイコン デコレータを追加し、そのイメージをビットマップ ファイルに設定します。 クリックして**すべてのテンプレートの変換**します。 DSL プロジェクトで新しいコード ファイルを追加し、次のコードを挿入します。  
   

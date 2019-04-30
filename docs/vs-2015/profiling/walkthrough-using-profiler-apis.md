@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cb8d054a2e26caddb2ccc9f37d20bb973b1833f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6bcb7be3e2db3d8a48f03d971e104f1e64e1153c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435668"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>チュートリアル: Profiler の Api を使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ DataCollection.CurrentId);
 1. Visual Studio で、新しい C# プロジェクトを作成するか、希望に応じて、コマンド ライン ビルドを使用します。  
   
     > [!NOTE]
-    >  ビルドは、Microsoft Visual Studio 9\Team Tools\Performance Tools ディレクトリにある、Microsoft.VisualStudio.Profiler.dll ライブラリを参照している必要があります。  
+    > ビルドは、Microsoft Visual Studio 9\Team Tools\Performance Tools ディレクトリにある、Microsoft.VisualStudio.Profiler.dll ライブラリを参照している必要があります。  
   
 2. プロジェクトに次のコードをコピーし、貼り付けます。  
   

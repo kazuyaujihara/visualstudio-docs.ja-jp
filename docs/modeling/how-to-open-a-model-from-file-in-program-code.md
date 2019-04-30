@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18956cd3f4fa1a550808577f9e7fec9c9b193b4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 092af518cc6c6fb1d98025cda54a6a1d491940c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445127"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>方法: プログラム コード内のファイルからモデルを開く
 任意のアプリケーションで DSL モデルを開くことができます。
@@ -31,7 +31,7 @@ ms.locfileid: "60095871"
 3. プロジェクトのプロパティ ウィンドウでの**アプリケーション**タブで、設定、**ターゲット フレームワーク**フィールドを **.NET Framework 4**します。
 
 > [!NOTE]
->  選択した場合でもこれを実行する必要があります **.NET Framework 4**プロジェクトの作成 ダイアログ ボックス。 ターゲット フレームワークがすることはできません **.NET Framework 4 Client Profile**します。
+> 選択した場合でもこれを実行する必要があります **.NET Framework 4**プロジェクトの作成 ダイアログ ボックス。 ターゲット フレームワークがすることはできません **.NET Framework 4 Client Profile**します。
 
 ## <a name="references"></a>参照
  Visual Studio アプリケーション プロジェクトにこれらの参照を追加する必要があります。

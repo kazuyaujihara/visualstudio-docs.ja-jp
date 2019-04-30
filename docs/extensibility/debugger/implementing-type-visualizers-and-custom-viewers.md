@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb3168a53ca503a60a8aa5009d02a0f3a4d72b94
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d9705555ad76663e1fb1bc402d5b050649d934ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411181"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>型のビジュアライザーおよびカスタム ビューアーを実装します。
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)を参照してください。
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
 
  型のビジュアライザーおよびカスタム ビューアーは、数値の単純な 16 進ダンプよりもわかりやすい方法で特定の種類のデータを表示するユーザーを使用できます。 式エバリュエーター (EE) は、カスタム ビューアーを特定の種類のデータまたは変数に関連付けることができます。 これらのカスタム ビューアーは、EE によって実装されます。 EE は、外部型のビジュアライザーは、別のサードパーティ ベンダーまたはでもエンドユーザーからもサポートできます。
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415512"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>方法: 組み込みのフォントをアクセスし、ccheme の色
 Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウに関連付けられているフォントおよび色のスキームがあります。 このスキームを通じてアクセスできる、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>インターフェイス。
@@ -39,7 +39,7 @@ Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウ�
      この GUID は、カテゴリを一意に識別に使用されます。 このカテゴリには、IDE の既定のフォントおよび色の仕様が再利用されます。
 
     > [!NOTE]
-    >  フォントおよび色のデータを取得するときに、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>またはその他のインターフェイスでは、Vspackage この GUID を使用して組み込みの情報を参照します。
+    > フォントおよび色のデータを取得するときに、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>またはその他のインターフェイスでは、Vspackage この GUID を使用して組み込みの情報を参照します。
 
 2. カテゴリの名前は、VSPackage のリソース内の文字列テーブルに追加する必要があります (*.rc*) ファイルを IDE に表示するときに、必要に応じてローカライズできるようにします。
 

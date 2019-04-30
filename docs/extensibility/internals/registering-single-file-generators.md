@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3d5d9e4cd0baa2343a68a3d86a96110c97b6cbb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426815"
 ---
 # <a name="registering-single-file-generators"></a>単一ファイル ジェネレーターの登録
 カスタム ツールで使用できるようにする[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、そのために登録する必要があります[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]をインスタンス化でき、特定のプロジェクトの種類に関連付けます。
@@ -51,7 +51,7 @@ ms.locfileid: "60047190"
         必須。 このカスタムのツールによって生成されたファイルからの種類をビジュアル デザイナーを使用できる構成されるかどうかを示します。 このパラメーターの値は、ビジュアル デザイナーを使用できない種類の 0 (ゼロ) やビジュアル デザイナーを使用可能な型の (1 つ) の 1 にする必要があります。
 
    > [!NOTE]
-   >  使用するカスタム ツールの対象となる言語ごとに個別にカスタム ツールを登録する必要があります。
+   > 使用するカスタム ツールの対象となる言語ごとに個別にカスタム ツールを登録する必要があります。
 
     たとえば、MSDataSetGenerator 自身を登録 1 回の各言語。
 

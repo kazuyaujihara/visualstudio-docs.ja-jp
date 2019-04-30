@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6a9b62c62b863448bb1333b162c6706c48cd72b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443830"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>チュートリアル: ボタンを使用して文書内のテキスト ボックスにテキストを表示
   このチュートリアルでは、Microsoft Office Word のドキュメント レベルのカスタマイズでボタンやテキスト ボックスを使用する方法を示します。
@@ -60,7 +60,7 @@ ms.locfileid: "60071760"
 2. **コモン コントロール**のタブ、**ツールボックス**、ドラッグ、<xref:Microsoft.Office.Tools.Word.Controls.TextBox>コントロールをドキュメント。
 
    > [!NOTE]
-   >  Word の既定では、コントロールはテキスト中にインラインでドロップされます。 制御する方法を変更して、図形オブジェクトの挿入の既定値を変更することで、**編集**のタブ、**オプション**Word のダイアログ ボックス。
+   > Word の既定では、コントロールはテキスト中にインラインでドロップされます。 制御する方法を変更して、図形オブジェクトの挿入の既定値を変更することで、**編集**のタブ、**オプション**Word のダイアログ ボックス。
 
 3. **[表示]** メニューの **[プロパティ ウィンドウ]** をクリックします。
 

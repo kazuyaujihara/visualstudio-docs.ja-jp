@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f103a1239996e1f68fb6dae7a9f0a41f55ad858e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437101"
 ---
 # <a name="code-metrics-values"></a>コード メトリックス値
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60049562"
 - **サイクロマティック複雑度**– コードの構造の複雑さを測定します。 プログラムのフロー内の異なるコード パスの数を計算することによって作成されます。 複雑な制御フローのあるプログラムでは、十分なコード カバレッジを実現するためにさらにテストは必要とし、保守性が低下なります。  
   
     > [!NOTE]
-    >  場合によっては、メソッドのサイクロマティック複雑度の計算で[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]以前のバージョンとは異なります。 詳細についてを参照してください"の変更で Visual Studio 2010 のコードの複雑さ計算"の[コード メトリックに関する問題のトラブルシューティング](../code-quality/troubleshooting-code-metrics-issues.md)します。  
+    > 場合によっては、メソッドのサイクロマティック複雑度の計算で[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]以前のバージョンとは異なります。 詳細についてを参照してください"の変更で Visual Studio 2010 のコードの複雑さ計算"の[コード メトリックに関する問題のトラブルシューティング](../code-quality/troubleshooting-code-metrics-issues.md)します。  
   
 - **継承の深さ**– クラス階層のルートに拡張するクラス定義の数を示します。 階層が深く、難しく特定のメソッドとフィールドが定義されているかを理解することが考えられますか/再定義されたとします。  
   

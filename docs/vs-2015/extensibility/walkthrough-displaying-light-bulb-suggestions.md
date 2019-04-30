@@ -8,12 +8,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 32d567ab4c71bdf4716a4c61464e1ee4ba6ecfa4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f135247241e8cf441cba2c1f63984dc69f7114c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438145"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>チュートリアル: 電球アイコンによる提案の表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -179,7 +179,7 @@ ms.locfileid: "60099781"
 6. 実装、<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A>の配列を返すメソッド<xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet>を含む、さまざまなオブジェクト<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>オブジェクト。 電球が展開されている場合は、このメソッドが呼び出されます。  
   
     > [!WARNING]
-    >  できるようにしてくださいの実装`HasSuggestedActionsAsync()`と`GetSuggestedActions()`は一貫性のある; である場合は、`HasSuggestedActionsAsync()`を返します`true`、し`GetSuggestedActions()`を表示するいくつかのアクションがあります。 多くの場合`HasSuggestedActionsAsync()`直前に呼び出されますが`GetSuggestedActions()`が常にはこれが、ケースになることはありません。 たとえば、ユーザーがキーを押して電球アクションを呼び出します (CTRL +.) のみ`GetSuggestedActions()`が呼び出されます。  
+    > できるようにしてくださいの実装`HasSuggestedActionsAsync()`と`GetSuggestedActions()`は一貫性のある; である場合は、`HasSuggestedActionsAsync()`を返します`true`、し`GetSuggestedActions()`を表示するいくつかのアクションがあります。 多くの場合`HasSuggestedActionsAsync()`直前に呼び出されますが`GetSuggestedActions()`が常にはこれが、ケースになることはありません。 たとえば、ユーザーがキーを押して電球アクションを呼び出します (CTRL +.) のみ`GetSuggestedActions()`が呼び出されます。  
   
     ```csharp  
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -328,7 +328,7 @@ ms.locfileid: "60099781"
     ```  
   
     > [!WARNING]
-    >  電球アクション**Invoke**メソッドが UI を表示する必要はありません。  新しい UI (プレビューまたは選択ダイアログなど) は、アクションを表示する場合も内から直接 UI が表示されない、 **Invoke**メソッドから返された後、UI を表示する代わりにスケジュールしますが、 **Invoke**.  
+    > 電球アクション**Invoke**メソッドが UI を表示する必要はありません。  新しい UI (プレビューまたは選択ダイアログなど) は、アクションを表示する場合も内から直接 UI が表示されない、 **Invoke**メソッドから返された後、UI を表示する代わりにスケジュールしますが、 **Invoke**.  
   
 10. 実装を完了するには追加、`Dispose()`と`TryGetTelemetryId()`メソッド。  
   

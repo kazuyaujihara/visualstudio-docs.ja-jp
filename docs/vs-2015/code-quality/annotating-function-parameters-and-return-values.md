@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: f16859b3c879e2d3abb64105c50f8ec4934d17e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6d36b01ca84558d0d3d45251884e5598becfa1b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429196"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>関数パラメーターおよび戻り値の注釈設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -219,7 +219,7 @@ ms.locfileid: "60061516"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     最大バッファー内に存在するすべての要素、つまり`s`前の状態が有効で、後の状態にします。  例えば:  
+     最大バッファー内に存在するすべての要素、つまり`s`前の状態が有効で、後の状態にします。  例:  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -247,7 +247,7 @@ ms.locfileid: "60061516"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     最大バッファー内に存在するすべての要素、つまり`s`前の状態が有効で、後の状態にします。  例:  
+     最大バッファー内に存在するすべての要素、つまり`s`前の状態が有効で、後の状態にします。  例えば:  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -318,7 +318,7 @@ ms.locfileid: "60061516"
   次の表に、その他の部分文字列は、さらに、注釈の意味を修飾する注釈の名前に挿入されます。  さまざまな部分文字列は`_z`、 `_COM_`、 `_buffer_`、 `_bytebuffer_`、および`_to_`します。  
   
 > [!IMPORTANT]
->  注釈はインターフェイスが COM の場合は、これらの注釈の COM のフォームを使用します。 その他の種類のインターフェイスを COM の注釈を使用しないでください。  
+> 注釈はインターフェイスが COM の場合は、これらの注釈の COM のフォームを使用します。 その他の種類のインターフェイスを COM の注釈を使用しないでください。  
   
  **注釈と説明**  
   
@@ -474,7 +474,7 @@ ms.locfileid: "60061516"
      パラメーター、フィールド、または結果が範囲 (包括) から`low`に`hi`します。  等価`_Satisfies_(_Curr_ >= low && _Curr_ <= hi)`適切な状態の前または後の状態条件と共に注釈付きオブジェクトに適用されています。  
   
     > [!IMPORTANT]
-    >  名前に"in"と「送信」のセマンティクスが含まれているにもかかわらず`_In_`と`_Out_`は**いない**これらの注釈に適用されます。  
+    > 名前に"in"と「送信」のセマンティクスが含まれているにもかかわらず`_In_`と`_Out_`は**いない**これらの注釈に適用されます。  
   
 - `_Pre_equal_to_(expr)`  
   

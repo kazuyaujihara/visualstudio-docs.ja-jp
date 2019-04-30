@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60fbe5efe55b5347eb54eb4d6c010b6ab5903905
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 52e7728b4143231912227e5e55faa5eef01b7490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425787"
 ---
 # <a name="iactivescriptwinrterrordebug-interface"></a>IActiveScriptWinRTErrorDebug インターフェイス
 拡張の Windows ランタイム エラー情報を提供する JavaScript エンジンによって実装される、 [BREAKREASON 列挙型](../../winscript/reference/breakreason-enumeration.md)イベント。 取得する QueryInterface を行うことができます、 [IActiveScriptError](../../winscript/reference/iactivescripterror.md)オブジェクト。  
   
 > [!IMPORTANT]
->  このインターフェイスは、PDM v11.0 以降によって実装されます。 activdbg100.h にあります。  
+> このインターフェイスは、PDM v11.0 以降によって実装されます。 activdbg100.h にあります。  
   
 ## <a name="methods"></a>メソッド  
  `IActiveScriptWinRTErrorDebug` インターフェイスは、以下のメソッドを公開します。  

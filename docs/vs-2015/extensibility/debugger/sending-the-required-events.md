@@ -10,12 +10,12 @@ ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d2e6f5213f5b12c38ed5529551c47654231035c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 457e2daf3e52c23ba9733d09d3aeb94750b5fab9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446245"
 ---
 # <a name="sending-the-required-events"></a>必要なイベントの送信
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60091077"
 5. デバッグするアプリケーションを起動する場合は、送信、 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) SDM ランタイム アーキテクチャ内のコードの最初の命令が実行するときにイベント オブジェクト。 このイベントは、常に、停止イベントです。 デバッグ セッションをステップ実行、IDE は、このイベントで停止します。  
   
 > [!NOTE]
->  多くの言語では、グローバル初期化子 (CRT ライブラリまたは _Main) からの外部のプリコンパイル済みの関数を使用して、そのコードの先頭にします。 デバッグ中のプログラムの言語には、これらの種類の最初のエントリ ポイントの前に要素のいずれかが含まれています、し、このコードが実行され、エントリ ポイント イベントが送信される場合、ユーザーのエントリ ポイントなど**メイン**または`WinMain`、達した。  
+> 多くの言語では、グローバル初期化子 (CRT ライブラリまたは _Main) からの外部のプリコンパイル済みの関数を使用して、そのコードの先頭にします。 デバッグ中のプログラムの言語には、これらの種類の最初のエントリ ポイントの前に要素のいずれかが含まれています、し、このコードが実行され、エントリ ポイント イベントが送信される場合、ユーザーのエントリ ポイントなど**メイン**または`WinMain`、達した。  
   
 ## <a name="see-also"></a>関連項目  
  [デバッグするプログラムの有効化](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

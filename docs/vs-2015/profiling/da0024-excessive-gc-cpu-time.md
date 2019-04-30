@@ -1,5 +1,5 @@
 ---
-title: 'DA0024: 過剰な GC CPU 時間 | Microsoft Docs'
+title: DA0024:過剰な GC CPU 時間 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,14 +13,14 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eae77a7685bbc9e8dc1613603baec9a5c93ad285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d40377c28e0987ac902ab8aa5cf778715eb899cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435851"
 ---
-# <a name="da0024-excessive-gc-cpu-time"></a>DA0024: 過剰な GC CPU 時間
+# <a name="da0024-excessive-gc-cpu-time"></a>DA0024:過剰な GC CPU 時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則 Id |DA 0024 |  
@@ -42,7 +42,7 @@ ms.locfileid: "54771070"
  この規則は、ガベージ コレクションに費やされた時間がアプリケーションの全体の処理時間と比較して過度に大きい場合に適用されます。  
   
 > [!NOTE]
->  ガーベジ コレクションに費やされた時間の割合が、アプリケーション全体の処理時間と比較して高いが過度ではない場合、この規則ではなく、「[DA0023: 高い GC CPU 時間。](../profiling/da0023-high-gc-cpu-time.md)」の警告が適用されます。  
+> ガーベジ コレクションに費やされた時間の割合が、アプリケーション全体の処理時間と比較して高いが過度ではない場合、この規則ではなく、「[DA0023:高い GC CPU 時間。](../profiling/da0023-high-gc-cpu-time.md)」の警告が適用されます。  
   
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法  
  [エラー一覧] ウィンドウに表示されたメッセージをダブルクリックして、プロファイル データの [[マーク] ビュー](../profiling/marks-view.md)に移動します。 **.NET CLR Memory\\% Time in GC** 列を探します。 マネージド メモリのガベージ コレクションが他のフェーズよりも多い特定のプログラム実行フェーズがあるかどうかを確認します。 % Time in GC の値と、**# of Gen 0 Collections**、**# of Gen 1 Collections**、**# of Gen 2 Collections** 値で報告されているガベージ コレクションの割合を比較してください。  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ce943416bba84c46ce7b709c3d2bdb6ddb3e4447
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009559"
 ---
 # <a name="safecontrols-element"></a>SafeControls 要素
   ASPX のコレクションを制御し、として指定されている Web パーツを SharePoint サイトのいずれかの ASPX ページにアクセスするすべてのユーザーに対してセキュリティで保護します。
@@ -49,7 +49,7 @@ ms.locfileid: "58322494"
 |[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint プロジェクト項目を表します。 この要素の必須のルート要素の *.spdata*ファイル。|
 
 ## <a name="remarks"></a>Remarks
- 安全なコントロールの詳細については、[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)を参照してください。
+ 安全なコントロールの詳細については、次を参照してください。[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)します。
 
 ## <a name="element-information"></a>要素情報
 

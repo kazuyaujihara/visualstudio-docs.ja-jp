@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 460da9a44b588cba92bb10efd9fd191457469c09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e6109e2eeb94481a2bff4a6467c490ec656d4c2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442014"
 ---
 # <a name="idiatable"></a>IDiaTable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ IDiaTable : IEnumUnknown
  最初の関数では、`ShowTableNames`セッション内のすべてのテーブルの名前を表示します。 2 番目の関数では、 `GetTable`、指定したインターフェイスを実装するテーブルのテーブルのすべてを検索します。 3 番目の関数では、 `UseTable`、使用する方法を示しています、`GetTable`関数。  
   
 > [!NOTE]
->  `CDiaBSTR` ラップするクラスは、`BSTR`し、自動的に処理をインスタンス化がスコープから外れたときに、文字列を解放します。  
+> `CDiaBSTR` ラップするクラスは、`BSTR`し、自動的に処理をインスタンス化がスコープから外れたときに、文字列を解放します。  
   
 ```cpp#  
 void ShowTableNames(IDiaSession *pSession)  

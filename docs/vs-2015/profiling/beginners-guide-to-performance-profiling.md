@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3b2421a8c1002e8fed1830a9de51383c35c01393
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ecfd329e0e5c096e6e0c2011b60cd97dcd1c2937
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433823"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>パフォーマンス プロファイリングのビギナーズ ガイド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio プロファイリング ツールを使用して、アプリケ�
  **サンプリング**で必要なデータを得ることができない場合は、プロファイリング ツールに用意された他の収集方法を使用して、必要に応じた別の種類の情報を取得できます。 これらの方法の詳細については、「[方法:収集方法を選択](../profiling/how-to-choose-collection-methods.md)します。  
   
 > [!TIP]
->  Windows 関数を呼び出すコードをプロファイリングする場合は、最新の .pdb ファイルを入手しておく必要があります。 これらのファイルがない場合、レポート ビューに暗号のようなわかりにくい Windows 関数名が一覧表示されます。 必要なファイルを確認するための方法の詳細については、「[方法:参照 Windows シンボル情報](../profiling/how-to-reference-windows-symbol-information.md)します。  
+> Windows 関数を呼び出すコードをプロファイリングする場合は、最新の .pdb ファイルを入手しておく必要があります。 これらのファイルがない場合、レポート ビューに暗号のようなわかりにくい Windows 関数名が一覧表示されます。 必要なファイルを確認するための方法の詳細については、「[方法:参照 Windows シンボル情報](../profiling/how-to-reference-windows-symbol-information.md)します。  
   
 ## <a name="Step1"></a> パフォーマンス セッションの作成と実行  
  分析対象のデータを取得するには、まずパフォーマンス セッションを作成して、そのセッションを実行する必要があります。 **パフォーマンス ウィザード**を使用すると、その両方を実行できます。  
@@ -46,7 +46,7 @@ Visual Studio プロファイリング ツールを使用して、アプリケ�
 1. Visual Studio でソリューションを開きます。 構成を [リリース] に設定します。 (ツールバーで、既定で **[デバッグ]** に設定されている **[ソリューション構成]** ボックスを見つけます。 これを **[リリース]** に変更します。)  
   
     > [!IMPORTANT]
-    >  使用しているコンピューターの管理者でない場合、プロファイラーを使用している間は Visual Studio を管理者として実行する必要があります。 Visual Studio アプリケーションのアイコンを右クリックしてから、**[管理者として実行]** をクリックします。  
+    > 使用しているコンピューターの管理者でない場合、プロファイラーを使用している間は Visual Studio を管理者として実行する必要があります。 Visual Studio アプリケーションのアイコンを右クリックしてから、**[管理者として実行]** をクリックします。  
   
 2. **[デバッグ]** メニューの **[パフォーマンス プロファイラー]** をクリックします。  
   

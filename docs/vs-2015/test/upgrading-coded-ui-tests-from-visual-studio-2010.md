@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58bfe0a2a6c337081ebb96464a701decb73cc022
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445898"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Visual Studio 2010 からのコード化された UI テストのアップグレード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ ms.locfileid: "60080697"
 - Visual Studio Enterprise
 
 > [!NOTE]
->  Visual Studio には、テスト プロジェクトの種類が複数含まれています。 コード化された UI テストを新しく作成する場合は、コード化された UI テスト プロジェクトの種類で作成されます。 詳しくは、「 [旧バージョンの Visual Studio からのテストのアップグレード](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)」をご覧ください。
+> Visual Studio には、テスト プロジェクトの種類が複数含まれています。 コード化された UI テストを新しく作成する場合は、コード化された UI テスト プロジェクトの種類で作成されます。 詳しくは、「 [旧バージョンの Visual Studio からのテストのアップグレード](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)」をご覧ください。
 
 > [!WARNING]
->  コード化された UI テストを含む[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] テスト プロジェクトは、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] または [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] と [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]の side-by-side 実行で開くときにリビルドする必要があります。
+> コード化された UI テストを含む[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] テスト プロジェクトは、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] または [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] と [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]の side-by-side 実行で開くときにリビルドする必要があります。
 
 > [!WARNING]
->  [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] で作成され、単体テストのみを含むテスト プロジェクトを [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]で開くと、コード化された UI テストを追加することはできません。 同様に、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]で作成された単体テスト プロジェクトにコード化された UI テストを追加することはできません。
+> [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] で作成され、単体テストのみを含むテスト プロジェクトを [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]で開くと、コード化された UI テストを追加することはできません。 同様に、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]で作成された単体テスト プロジェクトにコード化された UI テストを追加することはできません。
 
 ## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012"></a>Visual Studio 2010 と Visual Studio 2012 の間の互換性の問題
  [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] と [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]間でコード化された UI テストを移行する際に注意が必要な問題を次の表に示します。
 
 > [!CAUTION]
->  ソリューション エクスプローラーに表示されない、コード化された UI テスト プロジェクトでの参照に関する既知の問題があります。 詳細については、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] のインストール メディアに含まれている ReadMe ファイルを参照してください。
+> ソリューション エクスプローラーに表示されない、コード化された UI テスト プロジェクトでの参照に関する既知の問題があります。 詳細については、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] のインストール メディアに含まれている ReadMe ファイルを参照してください。
 
 |コード化された UI の機能|懸案事項|ソリューション|
 |----------------------------|-----------|--------------|

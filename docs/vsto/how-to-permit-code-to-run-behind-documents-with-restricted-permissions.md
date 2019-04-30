@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be5afe96af1baa615e5000a6c1a19b543f3c89c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a5e65c086b69a712b2df5a1a12939b41828ad198
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445334"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>方法: 制限されたアクセス許可を持つドキュメントの背後で実行するコードを許可します。
   Microsoft Office の Information Rights Management (IRM) 機能を使用して、文書またはブックへのアクセス許可を制限することができます。 既定では、制限された Microsoft Office Word ドキュメントまたは Microsoft Office Excel ブックの背後にあるコードは実行できません。 既定値を変更するには、オブジェクト モデルにアクセスできる、マネージ コード拡張機能と、ソリューションが動作できるようにします。
@@ -38,7 +38,7 @@ ms.locfileid: "56637660"
 2. をクリックして、**ファイル** タブをポイントして、**準備**、 をポイント**アクセスの制限**、順にクリックします**制限されたアクセス**します。
 
    > [!NOTE]
-   >  初めて使用する、Windows Rights Management クライアントのインストールを求められます。 クライアントをインストールした後は、手順を繰り返す必要があります。
+   > 初めて使用する、Windows Rights Management クライアントのインストールを求められます。 クライアントをインストールした後は、手順を繰り返す必要があります。
 
 3. **権限**ダイアログ ボックスで、**このドキュメントへのアクセスを制限する**、順にクリックします**オプションより**します。
 

@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436180"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Blend for Visual Studio を使用して UI を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Blend for Visual Studio は、XAML ベースの Windows デスクトップ ア�
  Blend for Visual Studio を初めてご使用になる場合は、このワークスペース特有の機能に慣れるために少し時間を取ってください。 このトピックでは、短いツアーにお連れします。
 
 > [!NOTE]
->  アートボード、[ドキュメント アウトライン] ウィンドウ、[デバイス] ウィンドウなどの共有デザイン機能のツアーについては、「[XAML デザイナーを使用した UI の作成](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)」を参照してください。
+> アートボード、[ドキュメント アウトライン] ウィンドウ、[デバイス] ウィンドウなどの共有デザイン機能のツアーについては、「[XAML デザイナーを使用した UI の作成](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)」を参照してください。
 
  **このトピックの内容**:
 

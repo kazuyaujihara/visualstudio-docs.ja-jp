@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39360019e798a5f76bfe5344aca6f02abbbfa6a3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 507bce496405f615343a9c109ff71196d814af08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438740"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio のツール for Office runtime のインストール シナリオ
   3 つの方法で、Visual Studio 2010 Tools for Office ランタイムをインストールすることができます。
@@ -46,7 +46,7 @@ ms.locfileid: "56638609"
  Visual Studio の Office Developer Tools をインストールすると、開発用コンピューターに [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] および [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 用の Office 拡張機能が常にインストールされます。 また、.NET Framework 3.5 用の Office 拡張機能は、開発用コンピューターに .NET Framework 3.5 が既に存在している場合にのみインストールされます。 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] をインストールした後で .NET Framework 3.5 をインストールすると、初めて .NET Framework 3.5 を対象とする Office プロジェクトを作成するときに、.NET Framework 3.5 用の Office 拡張機能がランタイムによって自動的にインストールされます。
 
 > [!WARNING]
->  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 以降を使用して .NET Framework 3.5 を対象とする Office プロジェクトを作成することはできません。
+> [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 以降を使用して .NET Framework 3.5 を対象とする Office プロジェクトを作成することはできません。
 
  Office developer tools をインストールする方法の詳細については、次を参照してください。[方法。Office ソリューションを開発するコンピューターを構成する方法](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)」を参照してください。
 
@@ -57,7 +57,7 @@ ms.locfileid: "56638609"
 
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 用の Office 拡張機能は、Office と共にインストールされます。 エンド ユーザーは、Windows Update をインストールすることで [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 用の Office 拡張機能を取得できます。
 
- ユーザーは、アプリケーションを使用するために必要な拡張機能であることを確認するには、するには、Visual Studio 2010 Tools for Office ランタイムが、ソリューションの前提条件として再頒布可能パッケージの最新バージョンを含めます。 前提条件の詳細については、[展開 Office ソリューションの前提条件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)を参照してください。
+ ユーザーは、アプリケーションを使用するために必要な拡張機能であることを確認するには、するには、Visual Studio 2010 Tools for Office ランタイムが、ソリューションの前提条件として再頒布可能パッケージの最新バージョンを含めます。 前提条件の詳細については、次を参照してください。[展開 Office ソリューションの前提条件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)します。
 
 ### <a name="install-the-runtime-by-using-the-runtime-redistributable"></a>再頒布可能パッケージのランタイムを使用して、ランタイムをインストールします。
  または、Office ソリューションを展開するときに、前提条件として再頒布可能パッケージを含めることによって、Visual Studio 2010 Tools for Office ランタイム再頒布可能パッケージを手動で実行してランタイムをインストールすることができます。

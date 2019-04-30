@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0140a99ffc375fc21f04e3981a5368923da162b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007999"
 ---
 # <a name="migration-activity-designers"></a>移行アクティビティ デザイナー
 Migration アクティビティ デザイナーは、[!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] を対象にしたワークフローからワークフロー 3.0/3.5 のアクティビティを呼び出すために使用します。 このセクションに含まれているトピックでは、[!INCLUDE[wfd2](../includes/wfd2-md.md)]のアクティビティ デザイナーの使用方法についてのガイドラインを示します。  

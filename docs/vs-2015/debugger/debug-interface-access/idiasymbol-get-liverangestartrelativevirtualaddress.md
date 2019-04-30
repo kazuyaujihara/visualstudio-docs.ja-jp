@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 499eeefc4b5328d1ffe021cdf28483208d162471
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 3dc0c42fe5dd5bc99e806ffbc20f42aa897d4c22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423246"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返される相対仮想アドレスは、シンボルの有効範囲の先頭です。  
   
 > [!NOTE]
->  返されたエラー コードは、シンボルにライブの範囲の情報がないことを意味します。  
+> 返されたエラー コードは、シンボルにライブの範囲の情報がないことを意味します。  
   
 ## <a name="remarks"></a>Remarks  
   

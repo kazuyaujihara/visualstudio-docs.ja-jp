@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7397da630a5fd6f2c649d6f448627d7c77c55128
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9417c2116dde909bda948e7d9140d7f52b090d68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430477"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>チュートリアル: 項目テンプレート、第 1 部でのカスタム動作プロジェクト項目を作成します。
   Visual Studio の SharePoint プロジェクト システムは、プロジェクト項目の種類を独自に作成することによって拡張することができます。 このチュートリアルでは、SharePoint サイトのカスタム アクションを作成する SharePoint プロジェクトに追加できるプロジェクト項目を作成します。 カスタム アクションにメニュー項目の追加、**サイトの操作**SharePoint サイトのメニュー。
@@ -44,7 +44,7 @@ ms.locfileid: "60059124"
   これは、独立したチュートリアルです。 このチュートリアルを完了すると、項目テンプレートにウィザードを追加してプロジェクト項目を拡張できるようになります。 詳細については、「[チュートリアル:カスタム動作プロジェクト項目を作成、項目テンプレート、第 2 部に](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)します。
 
 > [!NOTE]
->  サンプルをダウンロードする[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities)ワークフローのカスタム アクティビティを作成する方法を示すです。
+> サンプルをダウンロードする[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities)ワークフローのカスタム アクティビティを作成する方法を示すです。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、開発コンピューターに次のコンポーネントが必要です。
@@ -81,7 +81,7 @@ ms.locfileid: "60059124"
 4. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual c#** または**Visual Basic**ノードを選択し、**機能拡張**ノード。
 
     > [!NOTE]
-    >  **Extensibility**ノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
+    > **Extensibility**ノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
 
 5. 選択、 **VSIX プロジェクト**テンプレート。
 
@@ -164,7 +164,7 @@ ms.locfileid: "60059124"
 2. プロジェクト項目の一覧で選択、**アイコン ファイル**項目。
 
     > [!NOTE]
-    >  Visual Basic プロジェクトで選択する必要があります、**全般**を表示するノード、**アイコン ファイル**項目。
+    > Visual Basic プロジェクトで選択する必要があります、**全般**を表示するノード、**アイコン ファイル**項目。
 
 3. **名前**ボックスに、入力**CustomAction_SolutionExplorer.ico**、選択し、**追加**ボタンをクリックします。
 
@@ -197,7 +197,7 @@ ms.locfileid: "60059124"
 3. ファイルの内容を次の XML に置き換え、ファイルを保存して閉じます。
 
     > [!NOTE]
-    >  次の XML は、Visual C# の項目テンプレート用です。 Visual Basic の項目テンプレートを作成する場合は、`ProjectType` 要素の値を `VisualBasic` に置き換えてください。
+    > 次の XML は、Visual C# の項目テンプレート用です。 Visual Basic の項目テンプレートを作成する場合は、`ProjectType` 要素の値を `VisualBasic` に置き換えてください。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -310,7 +310,7 @@ ms.locfileid: "60059124"
 6. **型**一覧で、選択 **[microsoft.visualstudio.itemtemplate]** します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `ItemTemplate` 要素に対応します。 プロジェクト項目テンプレートが格納される VSIX パッケージ内のサブフォルダーは、この要素によって指定されます。 詳細については、次を参照してください。 [ItemTemplate の要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))します。
+    > この値は、extension.vsixmanifest ファイル内の `ItemTemplate` 要素に対応します。 プロジェクト項目テンプレートが格納される VSIX パッケージ内のサブフォルダーは、この要素によって指定されます。 詳細については、次を参照してください。 [ItemTemplate の要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))します。
 
 7. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 
@@ -323,7 +323,7 @@ ms.locfileid: "60059124"
 10. **型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    > この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
 
 11. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 
@@ -425,7 +425,7 @@ ms.locfileid: "60059124"
      カスタム アクションをパッケージ化されで指定されている SharePoint サイトに配置された、**サイトの URL**プロジェクトのプロパティ。 Web ブラウザーには、このサイトの既定のページが表示されます。
 
     > [!NOTE]
-    >  場合、**スクリプト デバッグが無効**選択 ダイアログ ボックスが表示されたら、**はい**クリックしてプロジェクトのデバッグを続行します。
+    > 場合、**スクリプト デバッグが無効**選択 ダイアログ ボックスが表示されたら、**はい**クリックしてプロジェクトのデバッグを続行します。
 
 4. **サイトの操作**] メニューの [選択**SharePoint デベロッパー センター**、ブラウザーが web サイトを開くことを確認します。 [https://docs.microsoft.com/sharepoint/dev/](https://docs.microsoft.com/sharepoint/dev/) 、し、web ブラウザーを閉じます。
 

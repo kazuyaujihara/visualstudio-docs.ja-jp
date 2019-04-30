@@ -10,12 +10,12 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 42d4209c691d052a1715ae9cfbab5b1e576848cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71ecff799f0da84ca47456467e190edcf95b0a15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442299"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>チュートリアル: カスタム エディターに機能を追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60071435"
     2. 外部ファイルの変更に応答すると、実装<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>エディターのドキュメント データ オブジェクトにします。  
   
         > [!NOTE]
-        >  呼び出す`QueryService`で<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>へのポインターを取得する`IVsFileChangeEx`します。  
+        > 呼び出す`QueryService`で<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>へのポインターを取得する`IVsFileChangeEx`します。  
   
 7. ソース コード コントロールとドキュメント編集のイベントを調整します。 この操作を行うには、次の手順を実行します。  
   
@@ -138,7 +138,7 @@ ms.locfileid: "60071435"
      <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
     > [!NOTE]
-    >  `IOleInPlaceComponent`インターフェイスは、OLE 2 メニューのマージを回避するために使用されます。  
+    > `IOleInPlaceComponent`インターフェイスは、OLE 2 メニューのマージを回避するために使用されます。  
   
      `IOleCommandTarget`の実装などのコマンドは処理**切り取り**、**コピー**、および**貼り付け**します。 実装するときに`IOleCommandTarget`、によって定義されている標準のコマンドを実装できるかどうか、エディターに、独自のコマンドのメニュー構造を定義する、独自の .vsct ファイルが必要かどうか、または決定[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 通常、エディター、IDE のメニューを拡張し、使用、独自のツールバーを定義します。、 ただし、多くの場合は、エディター、IDE の標準のコマンド セットを使用するだけでなく、独自の特定のコマンドを定義するために必要です。 これを行うには、エディターは、標準のコマンドを使用し、新しいコマンド、コンテキスト メニューのトップレベルのメニューおよびツールバーを .vsct ファイルで定義を宣言しなければなりません。 インプレース アクティブ化エディターを作成する場合、実装<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>し OLE 2 メニューのマージを使用する代わりに .vsct ファイルで、エディターのメニューおよびツールバーを定義します。  
   
@@ -156,4 +156,4 @@ ms.locfileid: "60071435"
   
 ## <a name="see-also"></a>関連項目  
  [オートメーション モデルに貢献します。](../extensibility/internals/contributing-to-the-automation-model.md)   
- [方法: エディターのコンテキストを提供します。](../extensibility/how-to-provide-context-for-editors.md)
+ [方法: エディター用のコンテキストを提供する](../extensibility/how-to-provide-context-for-editors.md)

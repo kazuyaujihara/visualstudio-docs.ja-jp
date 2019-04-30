@@ -11,12 +11,12 @@ ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2ee09c334394e363d9621ddec887bd5d83726fba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59d25c338cb0c7406c533afeceaf3675fbd16e96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441268"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>従来の言語サービスでの構文の色分け表示
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60103577"
 単純な colorizer モデル  
   
 > [!NOTE]
->  構文のサービスを色分け表示は、[全般] から別[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]のテキストを色分けするメカニズムです。 詳細については、一般的な[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]色分けをサポートしているメカニズムを参照してください[を使用してフォントおよび色](../../extensibility/using-fonts-and-colors.md)。  
+> 構文のサービスを色分け表示は、[全般] から別[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]のテキストを色分けするメカニズムです。 詳細については、一般的な[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]色分けをサポートしているメカニズムを参照してください[を使用してフォントおよび色](../../extensibility/using-fonts-and-colors.md)。  
   
  言語サービスは、colorizer だけでなく、advertising カスタムの配色可能な項目を提供することによって、エディターで使用されるカスタムの配色可能な項目を指定できます。 実装することでこれを行う、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>インターフェイスを実装するオブジェクトと同じで、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>インターフェイス。 エディターを呼び出すときにカスタムの配色可能な項目の数を返します、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A>メソッド、およびそのエディターを呼び出すと、個々 のカスタム装飾が可能な項目を返します、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>メソッド。  
   
@@ -51,7 +51,7 @@ ms.locfileid: "60103577"
 2. VSPackage は、今すぐ入手し、colorizer オブジェクトを使用して、次のようにできます。  
   
     > [!NOTE]
-    >  コア エディターを使用して、Vspackage は、言語サービスの colorizer オブジェクトを明示的に取得する必要はありません。 コア エディターのインスタンスは、適切な言語サービスを取得するとすぐには、ここで示すようにすべての色づけのタスクを実行します。  
+    > コア エディターを使用して、Vspackage は、言語サービスの colorizer オブジェクトを明示的に取得する必要はありません。 コア エディターのインスタンスは、適切な言語サービスを取得するとすぐには、ここで示すようにすべての色づけのタスクを実行します。  
   
     1. 実装する、言語サービスの colorizer オブジェクトを取得、 `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer`、および<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>インターフェイスを呼び出すことによって、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>メソッドを言語サービスの<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>オブジェクト。  
   
@@ -62,13 +62,13 @@ ms.locfileid: "60103577"
     3. によって返される色づけの情報を使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>メソッドを選択したテキストを表示します。  
   
 > [!NOTE]
->  使用だけでなく、言語サービス colorizer、VSPackage は、汎用的な[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]テキストを色分け表示メカニズム。 このメカニズムの詳細については、次を参照してください。[を使用してフォントおよび色](../../extensibility/using-fonts-and-colors.md)します。  
+> 使用だけでなく、言語サービス colorizer、VSPackage は、汎用的な[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]テキストを色分け表示メカニズム。 このメカニズムの詳細については、次を参照してください。[を使用してフォントおよび色](../../extensibility/using-fonts-and-colors.md)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [構文の色分け表示の実装](../../extensibility/internals/implementing-syntax-coloring.md)  
  言語サービスの構文の色分け表示と構文をサポートするために実装の色分けする必要があります、言語サービスはどのようなエディターにアクセスする方法について説明します。  
   
- [方法: 組み込みの配色可能な項目を使用して、](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
+ [方法: ビルトインの配色可能な項目の使用](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
  言語サービスからの組み込みの配色可能な項目を使用する方法を示します。  
   
  [カスタムの配色可能な項目](../../extensibility/internals/custom-colorable-items.md)  

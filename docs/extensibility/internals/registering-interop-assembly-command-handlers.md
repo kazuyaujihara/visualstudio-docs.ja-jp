@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a129e0a66399da1efe9bff4d7aef1a94602fa79
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: b07f018a35874e2ffc3f3be825abb227f2996aea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425474"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>相互運用機能アセンブリ コマンド ハンドラーの登録
 VSPackage に登録する必要があります[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) は、そのコマンドを正しくルーティングされるようにします。
@@ -31,7 +31,7 @@ VSPackage に登録する必要があります[!INCLUDE[vsprvs](../../code-quali
  ユーザー インターフェイス (UI) のハンドラーとして機能する VSPackage-ベースのコマンドは、VSPackage にちなんだ名前のレジストリ エントリを必要と`GUID`します。 このレジストリ エントリには、VSPackage の UI のリソース ファイルとそのファイル内でメニュー リソースの場所を指定します。 Hkey_local_machine \software\microsoft\visualstudio の下にレジストリ エントリ自体も\\*\<バージョン >* \Menus、場所*\<バージョン >* バージョンである[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]たとえば 9.0、します。
 
 > [!NOTE]
->  Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]シェルが初期化されます。 ルート パスの詳細については、次を参照してください。 [Windows インストーラーで Vspackage をインストールする](../../extensibility/internals/installing-vspackages-with-windows-installer.md)します。
+> Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]シェルが初期化されます。 ルート パスの詳細については、次を参照してください。 [Windows インストーラーで Vspackage をインストールする](../../extensibility/internals/installing-vspackages-with-windows-installer.md)します。
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU のリソースのレジストリ エントリ
  レジストリ エントリの構造です。

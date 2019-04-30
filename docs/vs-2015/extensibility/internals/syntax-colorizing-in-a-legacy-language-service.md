@@ -13,12 +13,12 @@ ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 585208150047b32adfdac916146268751a2a1287
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 64e57ebc80320ccc133261781eb8ee6611c8e2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441228"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>従来の言語サービスでの構文の配色変更
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58973670"
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、次を参照してください。[エディターと言語サービス拡張](../../extensibility/extending-the-editor-and-language-services.md)します。  
   
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
   
 ## <a name="implementation"></a>実装  
  Managed package framework (MPF) を含む色付けをサポートするために、<xref:Microsoft.VisualStudio.Package.Colorizer>クラスを実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>インターフェイス。 このクラスの対話、<xref:Microsoft.VisualStudio.Package.IScanner>トークンと色を決定します。 スキャナーの詳細については、次を参照してください。[レガシ言語サービス パーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)します。 <xref:Microsoft.VisualStudio.Package.Colorizer>クラスは、マークの色の情報を使用して、トークンの各文字と、ソース ファイルを表示するエディターにその情報を返します。  
@@ -39,10 +39,10 @@ ms.locfileid: "58973670"
  オーバーライドする必要があります、独自のカスタムの配色可能な項目を指定する、<xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A>と<xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A>メソッドを<xref:Microsoft.VisualStudio.Package.LanguageService>クラス。 最初のメソッドは、言語サービスをサポートするカスタムの配色可能な項目の数を返し、2 つ目は、インデックスを使用してカスタムの装飾が可能な項目を取得します。 カスタムの配色可能な項目の既定の一覧を作成します。 言語サービスのコンス トラクター、行う必要があるすべてが各装飾が可能な項目を名前を指定します。 Visual Studio では、ユーザーがさまざまな配色可能な項目を選択する場合に自動的に処理します。 この名前に表示されます、**フォントおよび色**プロパティ ページで、**オプション** ダイアログ ボックス (Visual Studio から使用可能な**ツール**メニュー) し、この名前を決定します。ユーザーがオーバーライドされる色。 ユーザーの選択肢では、レジストリ内のキャッシュに格納され、色の名前でアクセスします。 **フォントおよび色**プロパティ ページではすべての色の名前をアルファベット順が表示される前に各色の名前、言語名で追加して、カスタム カラーをグループ化することができますので、"**TestLanguage-コメント**「と」**TestLanguage-キーワード**"。 または、配色可能な項目の種類によってグループ化することができます"**コメント (TestLanguage)**「と」**キーワード (TestLanguage)**"。 言語名でグループ化をお勧めします。  
   
 > [!CAUTION]
->  既存の装飾が可能な項目の名前の競合を回避する装飾が可能な項目の名前に言語名を含めることを強くお勧めします。  
+> 既存の装飾が可能な項目の名前の競合を回避する装飾が可能な項目の名前に言語名を含めることを強くお勧めします。  
   
 > [!NOTE]
->  開発中に、色のいずれかの名前を変更する場合は、Visual Studio が初めてアクセスされた色を作成するキャッシュをリセットする必要があります。 実行して行うことができます、**実験用ハイブをリセット**Visual Studio SDK のプログラム メニューからコマンド。  
+> 開発中に、色のいずれかの名前を変更する場合は、Visual Studio が初めてアクセスされた色を作成するキャッシュをリセットする必要があります。 実行して行うことができます、**実験用ハイブをリセット**Visual Studio SDK のプログラム メニューからコマンド。  
   
  装飾が可能な項目の一覧の最初の項目が参照されていないことに注意してください。 Visual Studio は、常に、既定のテキストの色とその項目の属性を提供します。 これに対処する最も簡単な方法では、最初の項目としてプレース ホルダーの装飾が可能な項目を指定します。  
   

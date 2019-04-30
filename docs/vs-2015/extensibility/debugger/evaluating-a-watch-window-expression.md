@@ -12,18 +12,18 @@ ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6b5ea8cbdfa9644e103f32d49ea0964bbb90bad8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f13573cfecbd81f36e3b77e9b23beeaa558c08dc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444790"
 ---
 # <a name="evaluating-a-watch-window-expression"></a>[ウォッチ] ウィンドウの式の評価
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
   
  実行が一時停止したときに、Visual Studio はデバッグ エンジンのウォッチ リスト内の各式の現在の値を確認するには、(DE) を呼び出します。 デは、式エバリュエーター (EE) を使用して各式を評価し、Visual Studio では、その値が表示されます、**ウォッチ**ウィンドウ。  
   
@@ -47,7 +47,7 @@ ms.locfileid: "60075858"
  複雑な式の解析は、それを評価するよりもかなり長くかかることが、式の評価プロセスが 2 つの手順に分割されます。1)、式を解析および 2) は、解析された式を評価します。 これにより、評価は回数だけ出現できますが、式が 1 回だけを解析する必要があります。 EE から中間の解析された式が返される、 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)順番にカプセル化され、として DE から返されるオブジェクトを[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)オブジェクト。 `IDebugExpression`オブジェクトをすべて評価の延期、`IDebugParsedExpression`オブジェクト。  
   
 > [!NOTE]
->  Visual Studio を前提としています。 この場合でも、この 2 段階のプロセスに準拠する、EE の必要はありません。EE は解析し、同じ手順で評価と[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)が呼び出されます (これは、MyCEE サンプルのしくみなど)。 場合は、言語には、複雑な式を形成できます、評価手順から解析の手順を分離したい場合があります。 Visual Studio デバッガーでのパフォーマンスを向上これには、多くのウォッチ式の場合に表示します。  
+> Visual Studio を前提としています。 この場合でも、この 2 段階のプロセスに準拠する、EE の必要はありません。EE は解析し、同じ手順で評価と[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)が呼び出されます (これは、MyCEE サンプルのしくみなど)。 場合は、言語には、複雑な式を形成できます、評価手順から解析の手順を分離したい場合があります。 Visual Studio デバッガーでのパフォーマンスを向上これには、多くのウォッチ式の場合に表示します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [式の評価の実装のサンプル](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  

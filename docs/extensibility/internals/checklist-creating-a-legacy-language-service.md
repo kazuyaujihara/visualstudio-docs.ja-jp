@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0af3634c2aeb851dab580922f8c282824f41626
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7037b49763d4fda844b7692052935a4eee7f7107
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420691"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>チェックリスト: 従来の言語サービスを作成します。
 基本的な手順の言語サービスを作成するために行う必要がありますが、次のチェックリストにまとめたものです、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]のコア エディター。 言語サービスに統合する[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグの式エバリュエーターを作成する必要があります。 詳細については、次を参照してください。 [CLR の式エバリュエーターの書き込み](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)で、 [Visual Studio デバッガーの拡張性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)します。
@@ -61,7 +61,7 @@ ms.locfileid: "60076004"
     処理する必要がありますコマンドは、提供されているサービスによって異なります。 詳細については、次を参照してください。[言語の重要なコマンド サービス フィルター](../../extensibility/internals/important-commands-for-language-service-filters.md)します。
 
     > [!NOTE]
-    >  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>と同じオブジェクトでインターフェイスを実装する必要があります、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイス。
+    > <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>と同じオブジェクトでインターフェイスを実装する必要があります、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイス。
 
 - 入力候補
 

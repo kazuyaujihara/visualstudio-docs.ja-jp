@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3cea1375b59b791c7c81c79be0a462d5eb690776
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a5963faa5acb72ab0c94ca6b346456d83276e361
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445228"
 ---
 # <a name="registering-extensions-of-the-net-framework"></a>.NET Framework の拡張機能の登録
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59664172"
  このフォルダーを登録するために使用するキーは、HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\. このキーに指定する既定値は、C:\TreyResearch\Extensions4.  
   
 > [!NOTE]
->  .NET Framework のビルド番号は異なる場合があります。  
+> .NET Framework のビルド番号は異なる場合があります。  
   
  32 ビット アセンブリを 64 ビット コンピューターに登録するには、Wow6432 ノードを使用します (例:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\.  
   

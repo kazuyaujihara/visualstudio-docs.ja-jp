@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee7657b12741cf65583317ba87bd465e15eb02bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440965"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>ユース ケースをドキュメントおよび図にリンクする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "60088679"
 3. 新しい成果物が選択されている次のように入力します。 または、に URL を貼り付け、**ハイパーリンク**プロパティ。  
   
     > [!NOTE]
-    >  一般的なワークスペースのいずれかのファイルを選択することをお勧めファイル パスを指定する場合は、(以降では '\\\\')、または Visual Studio ソリューション内のファイル。 これにより、ソリューションが移動された場合でも、ファイル パスは別のチーム メンバーのコンピューター上で有効なままになります。 Word 文書などのドキュメントをソリューションに追加するには、ソリューション エクスプ ローラーでソリューションを右クリックし、 をポイント**追加** をクリックし、**既存項目の**します。  
+    > 一般的なワークスペースのいずれかのファイルを選択することをお勧めファイル パスを指定する場合は、(以降では '\\\\')、または Visual Studio ソリューション内のファイル。 これにより、ソリューションが移動された場合でも、ファイル パスは別のチーム メンバーのコンピューター上で有効なままになります。 Word 文書などのドキュメントをソリューションに追加するには、ソリューション エクスプ ローラーでソリューションを右クリックし、 をポイント**追加** をクリックし、**既存項目の**します。  
   
 ## <a name="see-also"></a>関連項目  
  [UML ユース ケース図: 参照](../modeling/uml-use-case-diagrams-reference.md)   

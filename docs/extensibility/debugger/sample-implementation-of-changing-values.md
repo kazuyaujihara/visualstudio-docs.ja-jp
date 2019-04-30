@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e229bd791118b23e0b8c04a8a5384a4bbc3342c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c634d394fb6d30a22763cd12efe2d97ba5269986
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415616"
 ---
 # <a name="sample-implementation-of-changing-values"></a>値を変更するサンプルの実装
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
 
  表示されるすべてのローカル、**ローカル**ウィンドウには、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)関連付けられているオブジェクト。 これは、`IDebugProperty2`オブジェクトには、ローカルの名前、値、および種類が含まれています。 ユーザーは、ローカルの値を変更するときに Visual Studio を呼び出す[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)ローカル メモリ内の値を更新します。 この例では、ローカルで表される、`CFieldProperty`を実装するクラス、`IDebugProperty2`インターフェイス。
 
 > [!NOTE]
->  **ウォッチ**と **[クイック ウォッチ]** 式によって表される値を変更する、 `CValueProperty` MyCEE サンプル クラスです。 ただし、実装の`IDebugProperty2::SetValueAsString`は次のように同じです。
+> **ウォッチ**と **[クイック ウォッチ]** 式によって表される値を変更する、 `CValueProperty` MyCEE サンプル クラスです。 ただし、実装の`IDebugProperty2::SetValueAsString`は次のように同じです。
 
  実装`IDebugProperty2::SetValueAsString`は、次のタスクを実行します。
 

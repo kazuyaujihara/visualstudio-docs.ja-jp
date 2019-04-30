@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a383096d164f1b08e2411a7bc808e96f8a6262e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dcd8293bc11645b8ad934d1826286a8df51e5e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431317"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>管理ソリューションでプロジェクトの読み込み
 Visual Studio ソリューションには、多数のプロジェクトを含めることができます。 Visual Studio の既定の動作は、ソリューションが開かれたときに、ソリューション内のすべてのプロジェクトを読み込むと、ユーザーにそれらのすべての読み込みが終了するまで、プロジェクトのいずれかのアクセスを許可しません。 プロジェクトの読み込みのプロセスが最後に 2 分以内、読み込まれているプロジェクトの数とプロジェクトの合計数を示す進行状況バーが表示されます。 ユーザーは、複数のプロジェクトをソリューションで作業中にプロジェクトをアンロードできますが、この手順ではいくつかのデメリット: アンロードされたプロジェクトは、ソリューションのリビルド コマンドの一部として組み込まれていないと、型の説明については IntelliSense およびメンバーの終了プロジェクトは表示されません。
@@ -44,7 +44,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
  ソリューション読み込みのマネージャーは、一般に読み込みソリューションを管理するものでは場合、は、VSPackage の一部として実装することができます。 パッケージを追加することで autoload に設定する必要があります、<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>の値は、VSPackage に<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>します。 ソリューション ロードのマネージャーをアクティブにできるし、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。
 
 > [!NOTE]
->  自動読み込みパッケージの詳細については、次を参照してください。 [Vspackage の読み込み](../extensibility/loading-vspackages.md)します。
+> 自動読み込みパッケージの詳細については、次を参照してください。 [Vspackage の読み込み](../extensibility/loading-vspackages.md)します。
 
  Visual Studio で認識、前回ソリューション ロード マネージャーのみを有効にするため負荷マネージャーの全般的なソリューションは自身のアクティブ化する前に既存のロード マネージャーがあるかどうか検出は常に。 呼び出す場合`GetProperty()`ソリューション用サービスに対する[__VSPROPID4 します。VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>)返します`null`、アクティブなソリューション ロードのマネージャーがありません。 これが null を返さない場合は、オブジェクトは、ソリューション ロードのマネージャーと同じかどうかを確認します。
 

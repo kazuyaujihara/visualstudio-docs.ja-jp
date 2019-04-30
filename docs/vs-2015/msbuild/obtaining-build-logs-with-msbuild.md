@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ee565786f4a1f7c1127217eeb551352ae02b72f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c88288a7bed453ca14e9c14fd43706b97be04044
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430846"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>MSBuild でのビルド ログの取得
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "59663415"
 MSBuild でスイッチを使用することで、確認するビルド データの量とビルド データを 1 つ以上のファイルに保存するかどうかを指定できます。 カスタム ロガーを指定して、ビルド データを収集することもできます。 このトピックで説明されていない MSBuild コマンド ライン スイッチの詳細については、「[Command-Line Reference (コマンド ライン リファレンス)](../msbuild/msbuild-command-line-reference.md)」を参照してください。  
   
 > [!NOTE]
->  Visual Studio IDE を使用してプロジェクトをビルドする場合は、ビルド ログを確認することで、それらのビルドをトラブルシューティングできます。 詳細については、「[方法 :ビルド ログ ファイルの構成を表示、保存、および](../ide/how-to-view-save-and-configure-build-log-files.md)します。  
+> Visual Studio IDE を使用してプロジェクトをビルドする場合は、ビルド ログを確認することで、それらのビルドをトラブルシューティングできます。 詳細については、「[方法 :ビルド ログ ファイルの構成を表示、保存、および](../ide/how-to-view-save-and-configure-build-log-files.md)します。  
   
 ## <a name="setting-the-level-of-detail"></a>詳細レベルを設定する  
  詳細レベルを指定せずに MSBuild を使用して、プロジェクトをビルドすると、出力ログに次の情報が表示されます。  

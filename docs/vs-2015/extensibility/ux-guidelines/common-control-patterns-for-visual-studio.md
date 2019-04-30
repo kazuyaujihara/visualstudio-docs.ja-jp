@@ -8,12 +8,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9644aeed1df42aa3a73af7d2cd7d7fa81bd27684
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 246464baea7e07e4d97e3483b423d200cf2b960c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430042"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio のコモン コントロール パターン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -325,7 +325,7 @@ ms.locfileid: "60040832"
  いくつかのボタンを常にグラフィカル イメージを使用し、領域を節約し、ローカライズの問題を回避するテキストを含めることはありません。 フィールドの選択およびその他の並べ替え可能なリストでよく使用されます。
 
 > [!NOTE]
->  ユーザーは、これらのボタン (アクセス キーはありません) にタブで、そのため、適切な順序で配置する必要があります。 スクリーン リーダーは、ボタンの操作を正しく解釈するために必要なアクションには、ボタンの name プロパティをマップします。
+> ユーザーは、これらのボタン (アクセス キーはありません) にタブで、そのため、適切な順序で配置する必要があります。 スクリーン リーダーは、ボタンの操作を正しく解釈するために必要なアクションには、ボタンの name プロパティをマップします。
 
 |||
 |-|-|

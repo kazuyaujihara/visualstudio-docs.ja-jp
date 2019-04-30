@@ -10,12 +10,12 @@ ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 108
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3337aed321d642fac5ef065d78cfd8cb1191c3a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 880f0096f33bf08d3415b79edfb8445143e18587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446008"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60109060"
 Visual Studio Enterprise のコード化された UI テストがサポートされる構成とプラットフォームを、次の表に示します。 この構成は、 [!INCLUDE[MTRlong](../includes/mtrlong-md.md)]を使用して作成される操作の記録にも適用されます。  
   
 > [!NOTE]
->  コード化された UI テスト プロセスには、テスト対象のアプリケーションと同じ特権が必要です。  
+> コード化された UI テスト プロセスには、テスト対象のアプリケーションと同じ特権が必要です。  
   
  **要件**  
   
@@ -39,7 +39,7 @@ Visual Studio Enterprise のコード化された UI テストがサポートさ
 |.NET|.NET 2.0、3.0、3.5、4、および 4.5。 **注:** [!INCLUDE[TCMext](../includes/tcmext-md.md)] および Visual Studio が動作するには、いずれも .NET 4 が必要です。 ただし、一覧のバージョンの .NET を使用して開発されたアプリケーションはサポートされます。|  
   
 > [!NOTE]
->  *UI 同期* とは、各コントロールのメッセージ キューで再生を検証する機能です。 送信されたイベントに対してコントロールが応答しなかった場合は、イベントが再度送信されます。  
+> *UI 同期* とは、各コントロールのメッセージ キューで再生を検証する機能です。 送信されたイベントに対してコントロールが応答しなかった場合は、イベントが再度送信されます。  
   
 ## <a name="platform-support"></a>プラットフォームのサポート  
   

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8162e44d92399a4b2031f6dc30b1f9dc56ae22e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6de3313dad06c009244a8b784e81bf7d2a768c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443115"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>方法: BDC 機能にカスタム アセンブリを含める
   プロジェクトでは、同じソリューション内の他のプロジェクトからアセンブリを参照できます。 使用して、プロジェクトのフィーチャー ファイルにこれらのアセンブリを追加する必要があります、**参照されるアセンブリの LobSystems への割り当て** ダイアログ ボックス。
@@ -40,12 +40,12 @@ ms.locfileid: "60059624"
 4. **アセンブリを選択して**一覧で、カスタム アセンブリを選択します。
 
     > [!NOTE]
-    >  アセンブリはのみに表示されます、**参照されるアセンブリの LobSystems への割り当て**ダイアログ ボックスで、アセンブリを含むプロジェクトへの参照を追加した場合。 詳細については、「[方法 :追加または参照の追加 ダイアログ ボックスを使用して参照を削除する](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)します。
+    > アセンブリはのみに表示されます、**参照されるアセンブリの LobSystems への割り当て**ダイアログ ボックスで、アセンブリを含むプロジェクトへの参照を追加した場合。 詳細については、「[方法 :追加または参照の追加 ダイアログ ボックスを使用して参照を削除する](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)します。
 
 5. **参照プロパティ**グループで、について表示される一覧を開き、 **LobSystem スコープ**プロパティ、LOB システムを選択し、カスタム アセンブリの使用方法の選択、 **[ok]** ボタンをクリックします。
 
     > [!NOTE]
-    >  カスタム アセンブリ内のコードをデバッグするには、ソリューション パッケージに、アセンブリを追加する必要があります。 詳細については、「[方法 :追加およびその他のアセンブリを削除](../sharepoint/how-to-add-and-remove-additional-assemblies.md)します。
+    > カスタム アセンブリ内のコードをデバッグするには、ソリューション パッケージに、アセンブリを追加する必要があります。 詳細については、「[方法 :追加およびその他のアセンブリを削除](../sharepoint/how-to-add-and-remove-additional-assemblies.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [方法: リソース ファイルを使用して、ローカライズされた名前、プロパティ、およびアクセス許可を指定するには](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)

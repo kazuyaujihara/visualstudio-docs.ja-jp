@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa8fbfd8837fb35617b79089fffd11ea3b8d2e93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444532"
 ---
 # <a name="refactoring-c"></a>リファクタリング (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60046319"
  コンパイラには、プログラムの詳細についてはありませんが、リファクタリングのエンジンがすべての適切な参照を更新できなかった可能性が考えられる場合は、警告ダイアログ ボックスが表示されます。 この警告ダイアログ ボックスでコードをプレビューする機会が得、**変更のプレビュー**変更をコミットする前に ダイアログ ボックス。  
   
 > [!NOTE]
->  メソッドに構文エラー (を IDE では、赤い波線の下線で示す) が含まれている場合、リファクタリングのエンジンにはそのメソッド内の要素への参照項目更新されません。 次の例では、この動作を示します。  
+> メソッドに構文エラー (を IDE では、赤い波線の下線で示す) が含まれている場合、リファクタリングのエンジンにはそのメソッド内の要素への参照項目更新されません。 次の例では、この動作を示します。  
   
  既定を実行する場合、リファクタリング操作の参照をプレビューすることがなく変更プログラムでは、コンパイル エラーが検出されたし、開発環境には、この警告ダイアログ ボックスが表示されます。  
   

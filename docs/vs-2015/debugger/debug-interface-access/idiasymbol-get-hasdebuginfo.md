@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8848c5b75e6d05c7df9b9bbf8ec2b7c06dd182a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 06cbf9fd26e675168975aa2c4a8c30033bbefe3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446315"
 ---
 # <a name="idiasymbolgethasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_hasDebugInfo(
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
   
 > [!NOTE]
->  戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
+> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
   
 ## <a name="requirements"></a>必要条件  
   

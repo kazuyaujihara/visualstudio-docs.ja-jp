@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8af9386d192c6dd96669dbfada298317cf5fe0e5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429285"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>フィーチャーとパッケージ マニフェストでの XML をマージします。
   フィーチャーとパッケージがによって定義されている[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]マニフェスト ファイル。 これらのパッケージ マニフェストは生成されたデザイナーとカスタム データの組み合わせ[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]マニフェスト テンプレートにユーザーを入力します。 パッケージ実行時、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]カスタム マージ[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]ステートメントとデザイナーの[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]パッケージを形成する[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]マニフェスト ファイル。 同様の要素の例外を除き、例外のマージで後でマージを避けるために[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]、sharepoint、ファイルをデプロイすると、マニフェストを作成するファイルより小さいとより効率的に検証エラー。
@@ -55,7 +55,7 @@ ms.locfileid: "56646305"
 |CustomUpgradeActionParameter|名前|
 
 > [!NOTE]
->  CustomUpgradeAction 要素を変更する唯一の方法が、カスタムのため、[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]エディター、いないをマージした効果が低い。
+> CustomUpgradeAction 要素を変更する唯一の方法が、カスタムのため、[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]エディター、いないをマージした効果が低い。
 
 ## <a name="package-manifest-elements"></a>パッケージ マニフェスト要素
  次の表では、マージ可能なすべてのパッケージ マニフェスト要素とその照合に使用される一意キーの一覧を示します。

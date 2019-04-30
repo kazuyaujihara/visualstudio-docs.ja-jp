@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 71b663781b323e9c616957c902674cb13d5c0c92
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: d16bc6f3e2e8f190e3a26023407237509984cece
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58963857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444693"
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ HRESULT findInlineeLinesByVA ( 
  [in]1 から始まる行番号を指定します。  
   
 > [!NOTE]
->  0 を使用して、すべての行を指定することはできません (を使用して、 [idiasession::findlines](../../debugger/debug-interface-access/idiasession-findlines.md)すべての行を検索するメソッド)。  
+> 0 を使用して、すべての行を指定することはできません (を使用して、 [idiasession::findlines](../../debugger/debug-interface-access/idiasession-findlines.md)すべての行を検索するメソッド)。  
   
  `column`  
  [in]列番号を指定します。 すべての列を指定するのにには、0 を使用します。 列は、行へのバイト オフセットです。  

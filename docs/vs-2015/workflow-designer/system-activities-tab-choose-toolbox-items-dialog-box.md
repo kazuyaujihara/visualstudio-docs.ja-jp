@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeffb8d6421044db0f1e7bb6db63c3fa7e2119e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 29eb905a4852bf521ebee72a498b44edbdcef8df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445408"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>[ツールボックス アイテムの選択] ダイアログ ボックスの [System.Activities] タブ
 このタブの**ツールボックス アイテムの選択** ダイアログ ボックスの一覧を表示する[!INCLUDE[wf](../includes/wf-md.md)]アクティビティやテンプレートを使用できる項目。 この一覧を表示する次のように選択します**ツールボックス アイテムの選択**から、**ツール**メニューを右クリックして、または、**ツールボックス**を選択すると**アイテムの選択**。を表示する、**ツールボックス アイテムの選択**クリックしてダイアログ ボックスで、その**System.Activities**タブ。既定では、System.Activities、System.ServiceModel.Activities、および System.Activities.Core.Presentation アセンブリからワークフロー アクティビティが一覧に含まれますただし、のみ、システム標準アクティビティおよびアクティビティに表示されるその他のアセンブリを使用して追加、**ツールボックス**は既定でオンにします。 最近追加されたアクティビティが自動的にオンおよびに表示されます、**ツールボックス**をクリックすると**OK**  ダイアログ ボックス。 またでこれらの項目が表示されます、**ツールボックス**アクティビティ、項目、テンプレートが存在する名前空間に対応する新しいカテゴリの下。  
   
 > [!WARNING]
->  ワークフロー アクティビティが含まれていないアセンブリを追加しようとすると、エラー ダイアログが表示され、アセンブリにアクティビティが含まれていないことが示されます。  
+> ワークフロー アクティビティが含まれていないアセンブリを追加しようとすると、エラー ダイアログが表示され、アセンブリにアクティビティが含まれていないことが示されます。  
   
  このダイアログ ボックスはプロジェクトに依存しないのため、 **System.Activities**  タブは、スタンドアロン XAML または非ワークフロー プロジェクトの種類に表示が続行されます。  
   

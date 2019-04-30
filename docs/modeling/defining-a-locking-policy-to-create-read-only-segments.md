@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f81b3269d0a456c077023d23861a55ac06a4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 22eaa971035b4b202ecb76b3f1d29e286516a69b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445833"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>ロック ポリシーの定義と読み取り専用セグメントの作成
 Visual Studio Visualization and Modeling SDK の不変性 API は、読み取りが変更されていないことができるように、ドメイン固有言語 (DSL) モデルの一部またはすべてをロックするプログラムを使用できます。 この読み取り専用オプションされる可能性があります、たとえば、ユーザーが仕事仲間の注釈を付け、DSL モデルを確認するように依頼できますが、元の変更を禁止することができますようにします。
@@ -20,7 +20,7 @@ Visual Studio Visualization and Modeling SDK の不変性 API は、読み取り
  さらに、作成者は、DSL の定義、*ロック ポリシー。* ロックのポリシーは、どのロックが許可されている、許可されない、または必須を定義します。 たとえば、DSL を発行するときに、サード パーティの開発者に新しいコマンドでは拡張をお勧めすることができます。 モデルの指定した部分の読み取り専用の状態を変更することを防ぐためにロック ポリシーを使用することもできます。
 
 > [!NOTE]
->  リフレクションを使用してロックのポリシーを回避することができます。 サードパーティの開発者は、明確な境界を提供しますが、強力なセキュリティは提供されません。
+> リフレクションを使用してロックのポリシーを回避することができます。 サードパーティの開発者は、明確な境界を提供しますが、強力なセキュリティは提供されません。
 
  詳細およびサンプルについては、Visual Studio で使用可能な[Visualization and Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) web サイト。
 

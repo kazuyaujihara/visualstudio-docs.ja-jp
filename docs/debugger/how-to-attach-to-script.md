@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72ae0ff0b4958e831f96a0eb62b4a1a4a453ece7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 993d1b3b6b4db6b435064a873142f563a950f4db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387854"
 ---
 # <a name="how-to-attach-to-script"></a>方法: スクリプトにアタッチする
 このトピックでは、デバッグを目的として Visual Studio デバッガーを手動でスクリプト ファイルにアタッチする方法について説明します。
@@ -61,7 +61,7 @@ ms.locfileid: "60084909"
    **[デバッグ]** メニューのすべての実行コマンドは、アクティブ プログラムに影響します。 プロセス ダイアログ ボックスから、デバッグ対象のプログラムを中断できます。参照してください[ブレークポイントを使用して](../debugger/using-breakpoints.md)します。
 
 > [!NOTE]
->  信頼関係のないユーザー アカウントによって所有されているプロセスにアタッチしようとすると、セキュリティ警告の確認ダイアログ ボックスが表示されます。 詳細については、次を参照してください。[セキュリティ警告。信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。次の情報に関して疑わしい、または不明ながこのプロセスにアタッチしない](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)します。
+> 信頼関係のないユーザー アカウントによって所有されているプロセスにアタッチしようとすると、セキュリティ警告の確認ダイアログ ボックスが表示されます。 詳細については、次を参照してください。[セキュリティ警告。信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。次の情報に関して疑わしい、または不明ながこのプロセスにアタッチしない](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)します。
 
  ターミナル サービス (リモート デスクトップ) セッションでのデバッグ時には、[選択可能なプロセス] ボックスに、使用可能なプロセスのすべてが表示されない場合があります。 [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] 以降のバージョンでは、Visual Studio を制限付きユーザーとして実行している場合、[選択可能なプロセス] ボックスには、セッション 0 で実行しているプロセスは表示されません。セッション 0 は、サービスおよび w3wp.exe を含むその他のサーバー プロセス用に使用されます。 この問題を解決するには、管理者アカウントで Visual Studio を実行するか、ターミナル サービス セッションではなくサーバー コンソールから Visual Studio を実行します。 どちらの回避策も実行できない場合、3 つ目のオプションとして、Windows コマンド ラインで「vsjitdebugger.exe -p ProcessId」と入力することで、プロセスにアタッチできます。 プロセス ID は tlist.exe を使用して確認できます。 tlist.exe を入手するには、[Windows Hardware Developer Central](/windows-hardware/drivers/dashboard/) で Windows 対応のデバッグ ツールをダウンロードし、インストールします。
 

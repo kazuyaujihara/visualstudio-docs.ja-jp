@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a00f3c58f917e7355a63ebca71c74127826a2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429221"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>方法: SharePoint フィーチャーをカスタマイズします。
   作成し、Visual Studio でフィーチャー デザイナーを使用して、SharePoint の機能をカスタマイズできます。 たとえば、フィーチャーのスコープを設定でき、依存関係としてその他の機能を追加できます。 既定では、ソリューション エクスプ ローラーまたは SharePoint の パッケージ エクスプ ローラーで新しい機能を追加するときに、フィーチャー デザイナーが開きます。
@@ -49,7 +49,7 @@ ms.locfileid: "60067262"
 2. 機能を展開し、展開を FeatureName.feature を展開し、開く、  *\<FeatureName >。Template.xml*ファイル。
 
     > [!NOTE]
-    >  機能のテンプレート マニフェスト XML ファイルを開くし、ファイルは自動的に検証エラー一覧 ウィンドウに表示される警告を無視できます。
+    > 機能のテンプレート マニフェスト XML ファイルを開くし、ファイルは自動的に検証エラー一覧 ウィンドウに表示される警告を無視できます。
 
 ## <a name="change-the-manifest-template"></a>マニフェスト テンプレートを変更します。
  Visual Studio XML エディターまたはマニフェスト テンプレート ペインでフィーチャー マニフェスト ファイルの XML コードを変更することができます。 XML コードに対する変更は、機能のパッケージ マニフェスト ファイルにマージされます。 たとえば、フィーチャーのプロパティをカスタマイズするマニフェスト テンプレートを変更する可能性があります。
@@ -70,7 +70,7 @@ ms.locfileid: "60067262"
  フィーチャー デザイナーを無効にし、作成することができます、 *feature.xml*ファイルを手動でします。 この手順を実行する最初にフィーチャー デザイナーの現在の設定は、機能のテンプレート XML ファイルに保存されます。 次に、変更したり、XML コードを上書きできます。
 
 > [!NOTE]
->  追加またはフィーチャー デザイナーを無効にして、XML ファイルの SharePoint プロジェクト アイテムを削除する場合、これらのプロジェクト項目はパッケージ化されません。
+> 追加またはフィーチャー デザイナーを無効にして、XML ファイルの SharePoint プロジェクト アイテムを削除する場合、これらのプロジェクト項目はパッケージ化されません。
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>デザイナーを無効にして、パッケージ マニフェスト ファイルを上書きするには
 

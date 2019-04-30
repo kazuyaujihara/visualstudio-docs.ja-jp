@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03f3c9ca624f0cccae5f9a21573fdcf01b7e9143
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1bf74bb93901cbd1637efd22690b8b1ba52f6b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425731"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>プロパティ ウィンドウのフィールドとインターフェイス
 モデルの選択で表示される情報を決定する、**プロパティ**ウィンドウは IDE でフォーカスのあるウィンドウに基づきます。 すべてのウィンドウと、選択したウィンドウ内のオブジェクトには、その選択コンテキスト オブジェクトのグローバルの選択コンテキストにプッシュされることができます。 環境は、そのウィンドウにフォーカスがあるときに、ウィンドウ フレームの値でグローバルの選択コンテキストを更新します。 フォーカスが変更されたときにも選択コンテキスト。
@@ -81,7 +81,7 @@ ms.locfileid: "60060229"
 1. タイプ ライブラリ ( `helpstringdll` ) のライブラリ ステートメントに`typelib`属性を追加します。
 
    > [!NOTE]
-   >  この手順は、タイプ ライブラリがオブジェクト ライブラリ (.olb) ファイルにある場合は省略可能です。
+   > この手順は、タイプ ライブラリがオブジェクト ライブラリ (.olb) ファイルにある場合は省略可能です。
 
 2. 文字列の `helpstringcontext` 属性を指定します。 `helpstring` 属性を指定することもできます。
 

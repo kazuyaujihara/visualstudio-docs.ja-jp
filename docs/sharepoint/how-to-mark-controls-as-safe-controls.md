@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443081"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>方法: 安全なコントロールとしてマーク コントロール
   セキュリティを SharePoint は、スクリプト インジェクションから保護されている Web コントロールとはない Web コントロールの間で区別されます。 コントロールを保護または*安全なコントロール*、信頼されていないユーザーによってアクセスされることができます。 SharePoint プロジェクト アイテムのまたは安全なコントロール エントリ プロパティでも安全だとコントロールをマークすることができます、**パッケージ デザイナー**パッケージにアセンブリを追加するとします。 詳細については、次のトピックを参照してください。
@@ -27,7 +27,7 @@ ms.locfileid: "60082036"
 - [web.config ファイル設定の変更](http://go.microsoft.com/fwlink/?LinkId=178965)と[安全なコントロールとして、Web パーツ アセンブリを登録する](http://go.microsoft.com/fwlink/?LinkId=171013)します。
 
 > [!IMPORTANT]
->  これらの手順では、例示を目的としてです。 マークは、安全なは、セキュリティで保護されることがわかっている場合にのみ制御します。
+> これらの手順では、例示を目的としてです。 マークは、安全なは、セキュリティで保護されることがわかっている場合にのみ制御します。
 
 ## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>安全なコントロール エントリのプロパティで安全なコントロールの指定
 
@@ -94,7 +94,7 @@ ms.locfileid: "60082036"
     |スクリプトに対して安全|ままに、**スクリプトに対して安全**チェック ボックスをクリアします。|
 
     > [!NOTE]
-    >  **アセンブリ名**アセンブリを使用して追加の値、**詳細**のタブ、**パッケージ デザイナー**ことはできません、トークンであることをする必要があります、厳密な名前付きのアセンブリ。 詳しくは、「[厳密な名前付きアセンブリの作成と使用](http://go.microsoft.com/fwlink/?LinkId=177513)」をご覧ください。
+    > **アセンブリ名**アセンブリを使用して追加の値、**詳細**のタブ、**パッケージ デザイナー**ことはできません、トークンであることをする必要があります、厳密な名前付きのアセンブリ。 詳しくは、「[厳密な名前付きアセンブリの作成と使用](http://go.microsoft.com/fwlink/?LinkId=177513)」をご覧ください。
 
 13. 選択、**タブ**別の安全なコントロール エントリを作成するキー。
 

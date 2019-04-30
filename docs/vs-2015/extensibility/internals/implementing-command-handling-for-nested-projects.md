@@ -10,12 +10,12 @@ ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fdead0bf0f1c5d2cb329d25cd37487cf93b772d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2fbce80b2e8c337eddf0d34954a7fd70b895d891
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445435"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>入れ子になったプロジェクト向けのコマンド処理の実装
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "58975199"
 IDE が経由で渡されるコマンドを渡すことができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>と<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイスを入れ子になったプロジェクト、または親プロジェクトには、フィルター処理またはコマンドをオーバーライドできます。  
   
 > [!NOTE]
->  親プロジェクトによって処理される通常のコマンドのみをフィルター処理できます。 などのコマンド**ビルド**と**デプロイ**によって処理される IDE をフィルター処理することはできません。  
+> 親プロジェクトによって処理される通常のコマンドのみをフィルター処理できます。 などのコマンド**ビルド**と**デプロイ**によって処理される IDE をフィルター処理することはできません。  
   
  次の手順では、コマンドの処理を実装するプロセスについて説明します。  
   

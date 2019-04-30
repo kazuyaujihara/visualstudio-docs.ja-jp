@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3d719a52535614b8cddf1c31aeb97e41c7614767
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 196fc4bddba0cfa6addb786148cd3876e1ec8260
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430005"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio の複合パターン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -433,7 +433,7 @@ ms.locfileid: "60045084"
  リストの選択における主要な概念とは、行ベースでは、選択範囲には、行全体が行われることを意味が単位として選択されているです。 これに対し、グリッドには、行の他の側面に影響を与えずに選択する特定のセルを許可できます。 グリッドは、入れ子になった行の (、TreeGrid など) を選択し、親の行とやり取りして選択解除すると、階層の分岐全体を許可する階層を含めることも可能性があります。 選択リストでは、行全体のデータの単純な強調表示色で表示されます。 フォーカスは、現在の編集可能な行またはセル (行のすべてのセルは読み取り専用の場合) を囲む 1 ピクセルの点線で表示されます。
 
 > [!NOTE]
->  **フォーカス**と**選択**は異なる概念です。 *フォーカス*UI の要素が対象となることを示しています中に別のオブジェクトに明示的に向けられた入力を受信する*選択*の後続の対象のオブジェクトのセット内のオブジェクトの包含状態を参照操作は、場所にかかる場合があります。
+> **フォーカス**と**選択**は異なる概念です。 *フォーカス*UI の要素が対象となることを示しています中に別のオブジェクトに明示的に向けられた入力を受信する*選択*の後続の対象のオブジェクトのセット内のオブジェクトの包含状態を参照操作は、場所にかかる場合があります。
 
  連続した、不整合のある、リストの選択項目がありますまたは地域。 複数の選択が許可されている、連続してサポート領域 (ボックス) の選択は、非結合選択をサポート常にする必要がありますは省略可能です。 リージョンの選択は、リストの本文の空白にドラッグすることによって開始されます。
 

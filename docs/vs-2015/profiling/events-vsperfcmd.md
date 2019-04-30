@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bcfd234f67245ee39e8ba278ec256ba68b158785
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: dae5bb86cd7f9da6151920a8020d71452bf8863f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444000"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,17 +76,17 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
   
  カーネル プロバイダーのみを有効にできます。 モニターがシャットダウンするまで、無効にできません。そのフラグを変更することもできません。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>Remarks  
   
 > [!NOTE]
->  CLR ETW イベントが有効になっていると、追加のスタートアップ データがトレース ビュー レポートでも集められます。 スタートアップ イベントがレポートに表示されないようにするには、次のコマンドを使用します。  
+> CLR ETW イベントが有効になっていると、追加のスタートアップ データがトレース ビュー レポートでも集められます。 スタートアップ イベントがレポートに表示されないようにするには、次のコマンドを使用します。  
   
 ```  
 C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5  
 ```  
   
 > [!IMPORTANT]
->  スタートアップ イベントを除外しない場合、スタートアップ イベントはマネージド オブジェクト フォーマット (MOF) ファイルに一覧表示されないため、レポートに GUID として表示されます。 詳細については、Microsoft Web サイトの「[Sample Managed Object Format (MOF) File](http://go.microsoft.com/fwlink/?linkid=37118)」 (マネージド オブジェクト フォーマット (MOF) ファイルのサンプル) を参照してください。  
+> スタートアップ イベントを除外しない場合、スタートアップ イベントはマネージド オブジェクト フォーマット (MOF) ファイルに一覧表示されないため、レポートに GUID として表示されます。 詳細については、Microsoft Web サイトの[サンプルの管理オブジェクト フォーマット (MOF) ファイル](http://go.microsoft.com/fwlink/?linkid=37118)します。  
   
 ## <a name="see-also"></a>関連項目  
  [VSPerfCmd](../profiling/vsperfcmd.md)   

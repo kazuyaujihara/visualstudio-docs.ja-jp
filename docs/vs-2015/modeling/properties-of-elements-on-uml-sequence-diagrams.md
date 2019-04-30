@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6de88572b685b5a432b4f73b125a464f125218b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a6008566f71a241fb5daccab8d6a5dcb68882452
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444412"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>UML シーケンス図の要素のプロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58978135"
 UML シーケンス図では、図の各要素にプロパティが存在します。 要素のプロパティを表示するには、図、または要素を右クリックして**UML モデル エクスプ ローラー**し**プロパティ**します。 プロパティが表示されます、**プロパティ**ウィンドウ。  
   
 > [!NOTE]
->  このトピックでは、UML シーケンス図の要素のプロパティについて説明します。 UML シーケンス図を読み取る方法の詳細については、次を参照してください。 [UML シーケンス図。Reference](../modeling/uml-sequence-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。 UML シーケンス図を描画する方法の詳細については、次を参照してください。 [UML シーケンス図。ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)します。  
+> このトピックでは、UML シーケンス図の要素のプロパティについて説明します。 UML シーケンス図を読み取る方法の詳細については、次を参照してください。 [UML シーケンス図。Reference](../modeling/uml-sequence-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。 UML シーケンス図を描画する方法の詳細については、次を参照してください。 [UML シーケンス図。ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)します。  
   
 ## <a name="properties-of-elements"></a>要素のプロパティ  
   

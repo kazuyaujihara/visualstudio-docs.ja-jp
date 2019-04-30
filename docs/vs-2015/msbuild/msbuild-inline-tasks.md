@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e9bafcba14c65f6f117319180dad7538414885
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439354"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild インライン タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
   `Reference` 要素と `Using` 要素は言語に依存しません。 インライン タスクは、サポートされているどの .NET CodeDom 言語 (Visual Basic や Visual C# など) でも記述できます。  
   
 > [!NOTE]
->  `Task` 要素に含まれる要素はタスク ファクトリによって異なります。この例では、コード タスク ファクトリが格納されています。  
+> `Task` 要素に含まれる要素はタスク ファクトリによって異なります。この例では、コード タスク ファクトリが格納されています。  
   
 ### <a name="code-element"></a>コード要素  
  `Task` 要素内の最後の子要素は `Code` 要素です。 `Code` 要素では、タスクにコンパイルするコードを記述するか参照します。 `Code` 要素に含める内容は、タスクを記述する方法に応じて異なります。  
@@ -87,7 +87,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
   また、`Source` 要素の `Code` 属性を使用して、タスクのコードを含むファイルの場所を指定することもできます。 ソース ファイルのコードの種類は、`Type` 属性で指定された種類である必要があります。 `Source` 属性が指定されている場合、`Type` の既定値は `Class` です。 `Source` が指定されていない場合の既定値は `Fragment` です。  
   
 > [!NOTE]
->  ソース ファイル内のタスク クラスを定義する場合は、クラス名が、対応する [UsingTask](../msbuild/usingtask-element-msbuild.md) 要素の `TaskName` 属性と一致する必要があります。  
+> ソース ファイル内のタスク クラスを定義する場合は、クラス名が、対応する [UsingTask](../msbuild/usingtask-element-msbuild.md) 要素の `TaskName` 属性と一致する必要があります。  
   
 ## <a name="hello-world"></a>Hello World  
  具体的なインライン タスクの例を次に示します。 HelloWorld タスクは、既定のエラー ログ デバイスに "Hello, world!" と表示します。通常、既定のデバイスは、システム コンソールまたは Visual Studio の**出力**ウィンドウです。 この例の `Reference` 要素は、例を示す目的でのみ含めてあります。  

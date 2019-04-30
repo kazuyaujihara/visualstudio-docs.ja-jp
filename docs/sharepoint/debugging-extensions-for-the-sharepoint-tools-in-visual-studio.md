@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3340c55b99f9d2507bb129eff689cc1b510843f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443519"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio の SharePoint ツールの拡張機能をデバッグします。
   Visual Studio の実験用インスタンスまたは通常のインスタンスで、SharePoint ツールの拡張機能をデバッグできます。 拡張機能の動作をトラブルシューティングする必要がある場合は、レジストリ値を変更して、追加のエラー情報を表示し、Visual Studio での SharePoint コマンドの実行方法を構成することもできます。
@@ -102,7 +102,7 @@ ms.locfileid: "60094399"
 3. **選択可能なプロセス**一覧で、選択*vssphost.exe*します。
 
     > [!NOTE]
-    >  開始する必要があります vssphost.exe が一覧に表示されない場合、 *vssphost4.exe*拡張機能を実行している Visual Studio のインスタンスで処理します。 通常、そのためには、Visual Studio によって開発コンピューター上の SharePoint サイトに接続する操作を実行します。 たとえば、Visual Studio の起動時*vssphost4.exe*サイト接続ノード (サイトの URL を表示するノード) の下に展開すると、 **SharePoint 接続**内のノード、**サーバー エクスプ ローラー**ウィンドウなど、特定の SharePoint プロジェクト項目を追加する場合または**リスト インスタンス**または**イベント レシーバー**を SharePoint プロジェクトの項目。
+    > 開始する必要があります vssphost.exe が一覧に表示されない場合、 *vssphost4.exe*拡張機能を実行している Visual Studio のインスタンスで処理します。 通常、そのためには、Visual Studio によって開発コンピューター上の SharePoint サイトに接続する操作を実行します。 たとえば、Visual Studio の起動時*vssphost4.exe*サイト接続ノード (サイトの URL を表示するノード) の下に展開すると、 **SharePoint 接続**内のノード、**サーバー エクスプ ローラー**ウィンドウなど、特定の SharePoint プロジェクト項目を追加する場合または**リスト インスタンス**または**イベント レシーバー**を SharePoint プロジェクトの項目。
 
 4. 選択、**アタッチ**ボタンをクリックします。
 

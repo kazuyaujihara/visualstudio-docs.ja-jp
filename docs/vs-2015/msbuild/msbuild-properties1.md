@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0f814623d8084619ccbe82d6660900055f81b3ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2399ff36639732f20babef368a1d9e2f6758a1c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437872"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "60101185"
  起動されたツール内から環境変数の現在の値を取得するには、[プロパティ関数](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable を使用します。 ただし推奨される方法は、タスク パラメーター <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> を使用する方法です。 この文字列配列に設定されている環境プロパティは、起動されたツールに渡すことができます。このとき、システム環境変数は影響を受けません。  
   
 > [!TIP]
->  すべての環境変数が読み取られて、初期プロパティになるわけではありません。 有効な MSBuild プロパティ名 ("386" など) を名前として持っていない環境変数は無視されます。  
+> すべての環境変数が読み取られて、初期プロパティになるわけではありません。 有効な MSBuild プロパティ名 ("386" など) を名前として持っていない環境変数は無視されます。  
   
  詳細については、「[方法 :ビルドで環境変数を使用して](../msbuild/how-to-use-environment-variables-in-a-build.md)します。  
   

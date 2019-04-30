@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 49dde1739b5c595c9327a208e383e6de03300415
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6dfa54e09baa3cec238eb892599a8e1bd5910e17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430638"
 ---
 # <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_addressOffset ( 
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
   
 > [!NOTE]
->  戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
+> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。  
   
 ## <a name="remarks"></a>Remarks  
  静的メンバーを外部 DLL 内にある、このメソッドによって返されるオフセットあります 0 仮想メンバーのアドレスを取得するのには、このメソッドを利用。 仮想アドレスは有効な場合にのみ、 [idiasession::put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)メソッドで、 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)インターフェイスは、DLL の読み込みアドレスを指定する 0 以外のパラメーターで呼び出されました。  

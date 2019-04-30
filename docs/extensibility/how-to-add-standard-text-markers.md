@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021e5f39f3296a475795b991283e60aa518b98dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53aece13887fc727e7b0b1497f9546ee7a2fe63b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415509"
 ---
 # <a name="how-to-add-standard-text-markers"></a>方法: 標準のテキスト マーカーを追加します。
 次の手順を使用して、提供される既定のテキスト マーカーの種類のいずれかを作成する、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]のコア エディター。
@@ -27,7 +27,7 @@ ms.locfileid: "60060086"
      このメソッド呼び出しで、マーカーの種類、マーカーを作成するテキストの範囲を指定し、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>インターフェイス。 このメソッドは、新しく作成されたテキスト マーカーにし、ポインターを返します。 マーカーの種類がから取得した、<xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE>列挙体。 指定、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>インターフェイスのマーカー イベントを通知する場合。
 
     > [!NOTE]
-    >  テキスト マーカーは、メイン UI スレッドでのみで作成します。 テキスト マーカーを作成するためのテキスト バッファーの内容に基づいて、コア エディターとテキスト バッファーはスレッド セーフではありません。
+    > テキスト マーカーは、メイン UI スレッドでのみで作成します。 テキスト マーカーを作成するためのテキスト バッファーの内容に基づいて、コア エディターとテキスト バッファーはスレッド セーフではありません。
 
 ## <a name="add-a-custom-command"></a>カスタム コマンドの追加
  実装する、`IVsTextMarkerClient`インターフェイスとをマーカーからのポインターを提供するいくつかの方法でマーカー動作が向上します。 最初に、これにより、マーカーのヒントを紹介し、コマンドを実行できます。 これによりマーカーは、個別のイベント通知を受信して、マーカーの上でカスタム コンテキスト メニューを作成することもできます。 マーカー コンテキスト メニューにカスタム コマンドを追加するのにには、次の手順を使用します。

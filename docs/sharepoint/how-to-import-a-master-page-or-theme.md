@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427401"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>方法: マスター ページまたはテーマをインポートします。
   付与できますページ、SharePoint サイトで一貫した外観を作成してマスター ページとテーマを使用します。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] これらの要素のテンプレートが指定されない SharePoint Designer で作成できにインポートできますが、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。 詳細については、次を参照してください。[ビルディング ブロック。ページとユーザー インターフェイス](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft web サイト。
@@ -48,7 +48,7 @@ ms.locfileid: "60081907"
 8. マスター ページを追加した場合は、変更、**配置競合の解決**設定**自動**モジュールのプロパティで。
 
     > [!NOTE]
-    >  エラーは、マスター ページの名前は既定のマスター ページまたはカスタム マスター ページのいずれかとしてマークされている既存のマスター ページの名前と同じ場合に発生することができます。 この問題を解決する方法については、次を参照してください。[チュートリアル。カスタム マスター ページとサイトのページにイメージをインポート](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)します。
+    > エラーは、マスター ページの名前は既定のマスター ページまたはカスタム マスター ページのいずれかとしてマークされている既存のマスター ページの名前と同じ場合に発生することができます。 この問題を解決する方法については、次を参照してください。[チュートリアル。カスタム マスター ページとサイトのページにイメージをインポート](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)します。
 
 9. モジュールで、開く*Elements.xml*します。
 
@@ -81,7 +81,7 @@ ms.locfileid: "60081907"
      値**Web**マスター ページは、プロジェクトで現在指定されている web サイトにのみ適用されることを意味します。 値**サイト**マスター ページは、すべてのサブサイトとルート web を含む現在のサイト コレクションに適用されることを意味します。 その他の値は適用されません。
 
     > [!NOTE]
-    >  設定することはありません、テーマのスコープに何も以外のテーマは、サイト コレクション レベルにのみ適用される、ので推奨**サイト**します。 エラーは、サブ サイトにテーマを使用する場合に発生します。
+    > 設定することはありません、テーマのスコープに何も以外のテーマは、サイト コレクション レベルにのみ適用される、ので推奨**サイト**します。 エラーは、サブ サイトにテーマを使用する場合に発生します。
 
 12. メニュー バーで、**ビルド** > **ソリューションの配置**します。
 

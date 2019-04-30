@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d5bb4be34a6a476e975c240f8a9d99114b870f0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76d0b61ba3eb8c0ff995aef4118fe21a83fc94c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442685"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>方法: 特定のロケールを持つプロジェクトを発行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60092917"
 1 つのアプリケーションに、ロケールの異なる複数のコンポーネントが含まれることも少なくありません。 その場合、複数のプロジェクトを持つソリューションを作成し、ロケールごとに個別のプロジェクトを発行することになります。 以降の手順では、マクロを使用して、ソリューションの 1 つ目のプロジェクトを 'en' ロケールを使用して発行する方法について説明しています。 この手順を 'en' 以外のロケールで実行する場合は、マクロ内の `localeString` を、使用するロケール ('de' や 'de-DE' など) に設定してください。  
   
 > [!NOTE]
->  このマクロを使用するには、[発行場所] に有効な URL または UNC (Universal Naming Convention) 共有を指定する必要があります。 また、コンピューターにインターネット インフォメーション サービス (IIS: Internet Information Service) がインストールされている必要があります。 IIS をインストールするには、**[スタート]** メニューの **[コントロール パネル]** をクリックします。 **[プログラムの追加と削除]** をダブルクリックします。 **[プログラムの追加と削除]** で **[Windows コンポーネントの追加と削除]** をクリックします。 **Windows コンポーネント ウィザード**の **[コンポーネント]** リストで、**[インターネット インフォメーション サービス (IIS)]** チェック ボックスをオンにします。 次に、**[完了]** をクリックして、ウィザードを閉じます。  
+> このマクロを使用するには、[発行場所] に有効な URL または UNC (Universal Naming Convention) 共有を指定する必要があります。 また、コンピューターにインターネット インフォメーション サービス (IIS: Internet Information Service) がインストールされている必要があります。 IIS をインストールするには、**[スタート]** メニューの **[コントロール パネル]** をクリックします。 **[プログラムの追加と削除]** をダブルクリックします。 **[プログラムの追加と削除]** で **[Windows コンポーネントの追加と削除]** をクリックします。 **Windows コンポーネント ウィザード**の **[コンポーネント]** リストで、**[インターネット インフォメーション サービス (IIS)]** チェック ボックスをオンにします。 次に、**[完了]** をクリックして、ウィザードを閉じます。  
   
 ### <a name="to-create-the-publishing-macro"></a>発行マクロを作成するには  
   

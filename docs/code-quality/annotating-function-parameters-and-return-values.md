@@ -125,12 +125,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: bda668e457cd144d868680f2dc009580c34ea81b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388553"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>関数パラメーターおよび戻り値の注釈設定
 この記事では、単純な関数のパラメーターの注釈の一般的な用途を説明します: スカラー、および構造体とクラスへのポインター、およびほとんどの種類のバッファー。  注釈の一般的な使用パターンについても説明します。 関数に関連する追加の注釈では、次を参照してください[関数の動作に注釈を付ける。](../code-quality/annotating-function-behavior.md)
@@ -216,7 +216,7 @@ ms.locfileid: "60109877"
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     最大バッファー内に存在するすべての要素、つまり`s`前の状態が有効で、後の状態にします。  例えば:
+     最大バッファー内に存在するすべての要素、つまり`s`前の状態が有効で、後の状態にします。  例:
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -244,7 +244,7 @@ ms.locfileid: "60109877"
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     最大バッファー内に存在するすべての要素、つまり`s`前の状態が有効で、後の状態にします。  例:
+     最大バッファー内に存在するすべての要素、つまり`s`前の状態が有効で、後の状態にします。  例えば:
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -315,7 +315,7 @@ ms.locfileid: "60109877"
   次の表に、その他の部分文字列は、さらに、注釈の意味を修飾する注釈の名前に挿入されます。  さまざまな部分文字列は`_z`、 `_COM_`、 `_buffer_`、 `_bytebuffer_`、および`_to_`します。
 
 > [!IMPORTANT]
->  注釈はインターフェイスが COM の場合は、これらの注釈の COM のフォームを使用します。 その他の種類のインターフェイスを COM の注釈を使用しないでください。
+> 注釈はインターフェイスが COM の場合は、これらの注釈の COM のフォームを使用します。 その他の種類のインターフェイスを COM の注釈を使用しないでください。
 
  **注釈と説明**
 
@@ -471,7 +471,7 @@ ms.locfileid: "60109877"
      パラメーター、フィールド、または結果が範囲 (包括) から`low`に`hi`します。  等価`_Satisfies_(_Curr_ >= low && _Curr_ <= hi)`適切な状態の前または後の状態条件と共に注釈付きオブジェクトに適用されています。
 
     > [!IMPORTANT]
-    >  名前に"in"と「送信」のセマンティクスが含まれているにもかかわらず`_In_`と`_Out_`は**いない**これらの注釈に適用されます。
+    > 名前に"in"と「送信」のセマンティクスが含まれているにもかかわらず`_In_`と`_Out_`は**いない**これらの注釈に適用されます。
 
 - `_Pre_equal_to_(expr)`
 
@@ -481,7 +481,7 @@ ms.locfileid: "60109877"
 
 - `_Struct_size_bytes_(size)`
 
-     構造体またはクラス宣言に適用されます。  指定されているバイト数でその型の有効なオブジェクトを宣言された型よりも大きいでことがあることを示します`size`します。  例えば:
+     構造体またはクラス宣言に適用されます。  指定されているバイト数でその型の有効なオブジェクトを宣言された型よりも大きいでことがあることを示します`size`します。  例:
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411028"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>チュートリアル: コア エディターとエディター ファイルの種類の登録を作成します。
 このチュートリアルを開始する VSPackage を作成する方法について説明、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]コア エディターでファイルがいつ、 *.myext*ファイル名拡張子が読み込まれます。
@@ -325,7 +325,7 @@ ms.locfileid: "60048206"
 3. 開く、 **VSPackage.resx**ファイル、新しい文字列を追加、名前に設定します**101**、値を設定および`IDS_EDITORNAME`します。 この手順では、作成した文字列にアクセスするリソース ID を持つパッケージを提供します。
 
    > [!NOTE]
-   >  場合、 **VSPackage.resx**ファイルを含む別の文字列を`name`属性に設定**101**では、次の手順は、別の一意の数値の値を置き換えてください。
+   > 場合、 **VSPackage.resx**ファイルを含む別の文字列を`name`属性に設定**101**では、次の手順は、別の一意の数値の値を置き換えてください。
 
 4. **ソリューション エクスプ ローラー**、オープン、 **MyPackagePackage.cs**ファイル。
 

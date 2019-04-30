@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c8c846c6f17c1fde0ef57855f4a557625fba80ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cb14fb4017ea1df6659b9a1a0ac093cd7cf7e0b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444812"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>方法: グラフィックス診断再生マシンを変更する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60045154"
 4. **[選択]** ボタンを選択します。  
   
 > [!NOTE]
->  **[リモート デバッガー接続]** ダイアログ ボックスには、開発用コンピューターに直接接続されているか、同じサブネット上にある、リモート デバッグ ターゲットも表示されることがあります。 これらのリモート デバッグ ターゲットのいずれかを、手動で構成せずに、グラフィックス診断再生コンピューターとして使用できます。 **[リモート デバッガー接続]** ダイアログ ボックスで、目的のターゲットを選択し、**[選択]** をクリックします。  
+> **[リモート デバッガー接続]** ダイアログ ボックスには、開発用コンピューターに直接接続されているか、同じサブネット上にある、リモート デバッグ ターゲットも表示されることがあります。 これらのリモート デバッグ ターゲットのいずれかを、手動で構成せずに、グラフィックス診断再生コンピューターとして使用できます。 **[リモート デバッガー接続]** ダイアログ ボックスで、目的のターゲットを選択し、**[選択]** をクリックします。  
   
 ## <a name="see-also"></a>関連項目  
  [グラフィックス ログ ドキュメント](../debugger/graphics-log-document.md)

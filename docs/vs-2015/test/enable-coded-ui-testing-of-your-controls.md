@@ -8,12 +8,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 332926de13053339c4e98f2d533d9e39213be4d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9d6162f26bbfcf3f3bce8f2a3db649fbf1b63a52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416518"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>コントロールのコード化された UI テストの有効化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ ms.locfileid: "60040291"
 4. 子コントロールのユーザー補助オブジェクトの <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>、<xref:System.Windows.Forms.AccessibleObject.Name%2A>、<xref:System.Windows.Forms.AccessibleObject.Parent%2A>、<xref:System.Windows.Forms.AccessibleObject.Role%2A>、<xref:System.Windows.Forms.AccessibleObject.State%2A>、<xref:System.Windows.Forms.AccessibleObject.Navigate%2A>、および <xref:System.Windows.Forms.AccessibleObject.Select%2A> プロパティおよびメソッドをオーバーライドします。  
   
 > [!NOTE]
->  このトピックでは、まずこのプロシージャの <xref:System.Windows.Forms.AccessibleObject> でユーザー補助のサンプルを作成し、それを基に残りのプロシージャで他の要素を作成します。 ユーザー補助サンプルの作業バージョンを作成する場合は、コンソール アプリケーションを作成し、Program.cs のコードをサンプル コードで置き換えます。 ユーザー補助、System.Drawing、および System.Windows.Forms への参照を追加する必要があります。 ビルド警告を除去するために、アクセシビリティの **[相互運用機能型の埋め込み]** を **False** に変更してください。 アプリケーションの実行時にコンソール ウィンドウが表示されないように、プロジェクトの出力の種類を **[コンソール アプリケーション]** から **[Windows アプリケーション]** に変更できます。  
+> このトピックでは、まずこのプロシージャの <xref:System.Windows.Forms.AccessibleObject> でユーザー補助のサンプルを作成し、それを基に残りのプロシージャで他の要素を作成します。 ユーザー補助サンプルの作業バージョンを作成する場合は、コンソール アプリケーションを作成し、Program.cs のコードをサンプル コードで置き換えます。 ユーザー補助、System.Drawing、および System.Windows.Forms への参照を追加する必要があります。 ビルド警告を除去するために、アクセシビリティの **[相互運用機能型の埋め込み]** を **False** に変更してください。 アプリケーションの実行時にコンソール ウィンドウが表示されないように、プロジェクトの出力の種類を **[コンソール アプリケーション]** から **[Windows アプリケーション]** に変更できます。  
   
 ## <a name="customproprties"></a>プロパティ プロバイダーの実装によってカスタム プロパティの検証をサポートする  
  記録と再生およびプロパティの検証の基本的なサポートを実装したら、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> プラグインを実装して、コントロールのカスタム プロパティをコード化された UI テストから使用できるようにすることができます。 たとえば、次のプロシージャでは、コード化された UI テストがグラフ コントロールの CurveLegend 子コントロールの State プロパティにアクセスできるようにするプロパティ プロバイダーを作成します。  
@@ -324,7 +324,7 @@ ms.locfileid: "60040291"
 11. バイナリをビルドし、**%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages** にコピーします。  
   
 > [!NOTE]
->  この拡張パッケージは、"Text" 型であるすべてのコントロールに適用されます。 同じ種類の複数のコントロールをテストしている場合は、別々にテストし、テストを記録するときにどの拡張パッケージが配置されているかを管理する必要があります。  
+> この拡張パッケージは、"Text" 型であるすべてのコントロールに適用されます。 同じ種類の複数のコントロールをテストしている場合は、別々にテストし、テストを記録するときにどの拡張パッケージが配置されているかを管理する必要があります。  
   
 ## <a name="codegeneration"></a>カスタム プロパティにアクセスするためのクラスを実装してコード生成をサポートする  
  コード化された UI テスト ビルダーはセッションの記録からコードを生成するとき、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> クラスを使用してコントロールにアクセスします。  
@@ -512,7 +512,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 4. バイナリをビルドし、%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages にコピーします。  
   
 > [!NOTE]
->  操作フィルターは、ユーザー補助の実装またはプロパティ プロバイダーに依存しません。  
+> 操作フィルターは、ユーザー補助の実装またはプロパティ プロバイダーに依存しません。  
   
 ## <a name="debug-your-property-provider-or-action-filter"></a>プロパティ プロバイダーまたは操作フィルターをデバッグする  
  プロパティ プロバイダーと操作フィルターは、アプリケーションとは別のプロセスで、コード化された UI テスト ビルダーによって読み込まれて実行される拡張パッケージで実装されます。  

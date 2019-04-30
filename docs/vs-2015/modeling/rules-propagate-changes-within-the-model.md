@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 581d6d1f6e5923569f4d98705226d2336978bfc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29950be152c140a8315f96f8752b1fa906c3f801
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442938"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則によって変更内容がモデル内に反映される
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ namespace ExampleNamespace
 ```  
 
 > [!NOTE]
->  ルールのコードは、ストア内の要素のみの状態を変更する必要があります。つまり、ルールでは、モデル要素、リレーションシップ、図形、コネクタ、図、またはそれらのプロパティのみを変更する必要があります。 ストアの外部リソースへの変更を反映する場合は、イベントの格納を定義します。 詳細については、次を参照してください[イベント ハンドラー反映されるまで変更 Outside the モデル。](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
+> ルールのコードは、ストア内の要素のみの状態を変更する必要があります。つまり、ルールでは、モデル要素、リレーションシップ、図形、コネクタ、図、またはそれらのプロパティのみを変更する必要があります。 ストアの外部リソースへの変更を反映する場合は、イベントの格納を定義します。 詳細については、次を参照してください[イベント ハンドラー反映されるまで変更 Outside the モデル。](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
 
 ### <a name="to-define-a-rule"></a>規則を定義するには  
 

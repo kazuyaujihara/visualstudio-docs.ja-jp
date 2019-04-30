@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ac57569802bbab5317f59e5311e4871a6e74ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419484"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>方法: プログラムによってブックを保存します。
   ブックを保存する方法はいくつかあります。 パスを変更しないでブックを保存できます。 以前にブックが保存されていない場合は、パスを指定してブックを保存する必要があります。 明示的なパスがない場合、Microsoft Office Excel は、ファイルが作成されたときに付けられた名前で現在のフォルダーにファイルを保存します。 メモリ内の開いているブックを変更しないで、ブックのコピーを保存することもできます。
@@ -46,7 +46,7 @@ ms.locfileid: "60093060"
  指定したブックを、新しい場所にまたは新しい名前を付けて、そしてオプションでファイル形式、パスワード、アクセス モードなどを指定して保存できます。
 
 > [!NOTE]
->  設定することがあります、<xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A>プロパティを**False**前に、いくつかの形式で保存するために、新しいパスでブックを保存操作が必要です。 このプロパティを設定**False**すべて既定値を使用するように Excel。
+> 設定することがあります、<xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A>プロパティを**False**前に、いくつかの形式で保存するために、新しいパスでブックを保存操作が必要です。 このプロパティを設定**False**すべて既定値を使用するように Excel。
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>ドキュメント レベルのカスタマイズに関連付けられているブックを保存するには
 

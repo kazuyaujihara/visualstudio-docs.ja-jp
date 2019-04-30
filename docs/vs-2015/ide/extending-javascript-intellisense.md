@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94e2186fa13f7fe125457dc6f04d6d31d0bcc65d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441458"
 ---
 # <a name="extending-javascript-intellisense"></a>JavaScript IntelliSense の拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ JavaScript IntelliSense の拡張機能では、サードパーティ製のラ�
   
  開発者エクスペリエンスをさらに強化するには、ポップアップ ボックスで開発者に型情報を提供する可能性があります。 JavaScript を使用して型情報を提供できます[XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)の標準のコメント用タグの代わりにします。 XML ドキュメントのコメントを追加するには、トリプル スラッシュ コメント タグ (///) と定義された一連の XML 要素を使用します。  
   
- また、JavaScript IntelliSense の機能拡張を使用して型情報を提供できます。 この機能では、JavaScript の拡張機能の作成と、スクリプトのコンテキストに追加することによって IntelliSense の結果をカスタマイズすることができます。 によって公開されているイベントにサブスクライブする JavaScript ファイルには、拡張機能で、`intellisense`言語サービスのオブジェクト。 場合、宣言型 XML の代替とライブラリの動作パターンが原因で、JavaScript 言語サービスが、必要なレベルの IntelliSense のサポートを提供する場合、JavaScript IntelliSense の機能拡張は、ライブラリに推奨されるソリューションドキュメントのコメントも必要です。 IntelliSense の結果をカスタマイズすることで、言語サービスの既定の機能を妨げる可能性のある動作パターンに関係なく、最上級の IntelliSense エクスペリエンスを作成できます。 詳細については、次を参照してください。[識別子の入力候補](../ide/statement-completion-for-identifiers.md)します。  
+ また、JavaScript IntelliSense の機能拡張を使用して型情報を提供できます。 この機能では、JavaScript の拡張機能の作成と、スクリプトのコンテキストに追加することによって IntelliSense の結果をカスタマイズすることができます。 によって公開されているイベントにサブスクライブする JavaScript ファイルには、拡張機能で、`intellisense`言語サービスのオブジェクト。 場合、宣言型 XML の代替とライブラリの動作パターンが原因で、JavaScript 言語サービスが、必要なレベルの IntelliSense のサポートを提供する場合、JavaScript IntelliSense の機能拡張は、ライブラリに推奨されるソリューションドキュメントのコメントも必要です。 IntelliSense の結果をカスタマイズすることで、言語サービスの既定の機能を妨げる可能性のある動作パターンに関係なく、最上級の IntelliSense エクスペリエンスを作成できます。 詳細については、「[Statement Completion for Identifiers (識別子の入力候補)](../ide/statement-completion-for-identifiers.md)」をご覧ください。  
   
 ## <a name="adding-an-extension-to-the-script-context"></a>スクリプト コンテキストへの拡張機能の追加  
  実行される IntelliSense の拡張機能、現在のスクリプト コンテキストに追加するが必要です。 拡張機能に自動的に追加できるスクリプトのコンテキスト、自動検出メカニズムによってまたはできる拡張機能のスクリプト コンテキストに手動で追加する参照グループまたは reference ディレクティブを使用しています。  
@@ -75,7 +75,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
  その他の例では、検索、 \\ \\ *Visual Studio インストール パス*\JavaScript\References フォルダー。 このフォルダーに showPlainComments.js ファイルは、標準の JavaScript コメント タグの既定の IntelliSense サポートを提供するその他のイベントを使用しての例を示します (//)。 Underscorefilter.js のような showPlainComments.js 既に作業の拡張機能として利用可能な変数、関数、およびオブジェクトをコード内のコメント用タグを使用する場合は、IntelliSense の結果として得られる情報を確認できます。 その他の例では、次を参照してください。[コード例](#CodeExamples)します。  
   
 > [!WARNING]
->  Visual Studio に含まれている拡張機能のファイルを変更する場合、JavaScript IntelliSense や、拡張機能でサポートされている機能を無効にする可能性があります。  
+> Visual Studio に含まれている拡張機能のファイルを変更する場合、JavaScript IntelliSense や、拡張機能でサポートされている機能を無効にする可能性があります。  
   
  使用して、次のイベントの種類のハンドラーを作成する、拡張機能コードで`addEventListener`:  
   
@@ -88,7 +88,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   ステートメント入力候補、パラメーター情報、およびクイック ヒントなどの IntelliSense 機能を示す例については、次を参照してください。[を使用して IntelliSense](../ide/using-intellisense.md)します。  
   
 > [!NOTE]
->  JavaScript では、クイック ヒントは、入力候補一覧の右側に表示されるポップアップ ボックスを参照します。 クイック ヒントを手動で起動することはできません。  
+> JavaScript では、クイック ヒントは、入力候補一覧の右側に表示されるポップアップ ボックスを参照します。 クイック ヒントを手動で起動することはできません。  
   
 ## <a name="intellisenseObject"></a> IntelliSense オブジェクト  
  次の表に、使用可能な関数、`intellisense`オブジェクト。 `intellisense`オブジェクトは、デザイン時にのみ使用します。  

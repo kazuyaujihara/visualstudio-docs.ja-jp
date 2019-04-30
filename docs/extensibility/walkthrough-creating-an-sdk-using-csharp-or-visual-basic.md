@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e61da4205840f1831f956a31f5ebc00525b8cafc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5b687f9fb705f8f8c8bee7ca611d618e012e8507
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443850"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>チュートリアル: C# または Visual Basic を使用して、SDK を作成します。
 このチュートリアルでは、Visual c# を使用して単純な数値演算ライブラリの SDK を作成し、SDK と Visual Studio Extension (VSIX) パッケージ化する方法を学習します。 次の手順を完了します。
@@ -50,7 +50,7 @@ ms.locfileid: "60086638"
 8. **構成**列、ことを確認します**SimpleMath**に設定されている行**リリース**を選択し、**閉じる**ボタンをクリック、変更します。
 
    > [!IMPORTANT]
-   >  SimpleMath コンポーネントの SDK には、1 つのみの構成が含まれています。 この構成は、リリース ビルドである必要がありますまたはコンポーネントを使用するアプリの証明を渡さない、[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]します。
+   > SimpleMath コンポーネントの SDK には、1 つのみの構成が含まれています。 この構成は、リリース ビルドである必要がありますまたはコンポーネントを使用するアプリの証明を渡さない、[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]します。
 
 9. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **SimpleMath**プロジェクト ノードを選び、**ビルド**します。
 

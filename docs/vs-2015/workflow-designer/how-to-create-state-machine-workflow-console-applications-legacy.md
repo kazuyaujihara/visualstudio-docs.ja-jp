@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8fefc6ae73f4c5a331adb17ef72fe28d31a4f350
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5235b990dc1eef80114188d3de40c6701008cee9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444203"
 ---
 # <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>方法: ステート マシン ワークフロー コンソール アプリケーションを作成する (レガシ)
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] が備えている従来の [!INCLUDE[vs2010](../includes/vs2010-md.md)]を使用してステート マシンのワークフロー コンソール アプリケーション プロジェクトを作成するには、次の手順を実行します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。  
@@ -34,7 +34,7 @@ ms.locfileid: "60101523"
 3. いずれかを選択、 **.NET Framework 3.0**オプションまたは **.NET Framework 3.5**オプションで、ドロップダウン リストの上部にある、**新しいプロジェクト**従来のデザイナーにアクセスするウィンドウ。  
   
     > [!NOTE]
-    >  既定のオプションに[!INCLUDE[vs2010](../includes/vs2010-md.md)]は **.NET Framework 4**します。 このオプションは、[!INCLUDE[wf](../includes/wf-md.md)] を対象とする [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] アプリケーションを作成する場合に使用され、従来のデザイナーは使用しません。  
+    > 既定のオプションに[!INCLUDE[vs2010](../includes/vs2010-md.md)]は **.NET Framework 4**します。 このオプションは、[!INCLUDE[wf](../includes/wf-md.md)] を対象とする [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] アプリケーションを作成する場合に使用され、従来のデザイナーは使用しません。  
   
 4. **プロジェクトの種類**ウィンドウで、Visual c# または Visual Basic (**他の言語**) し、**ワークフロー**します。  
   

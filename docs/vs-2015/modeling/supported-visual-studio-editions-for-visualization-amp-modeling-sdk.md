@@ -11,12 +11,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa8ec46036bbb9a133f2036f1c54cad87d064618
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 19b4c45e72c90d8f1cee3130475767003a6d7cf7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411509"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>視覚化のサポートされている Visual Studio エディション&amp;Modeling SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60105488"
 - Visual Studio Shell (分離モード) 再頒布可能パッケージ
 
 > [!NOTE]
->  DSL を Shell 製品上で実行可能にするには、設定する必要があります、**サポートされている VS エディション**フィールドに、拡張機能マニフェストします。 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。
+> DSL を Shell 製品上で実行可能にするには、設定する必要があります、**サポートされている VS エディション**フィールドに、拡張機能マニフェストします。 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
  [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39b7456d9a045331c53f8465cc7387823c734104
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2cc26c9d2dae65d8bab0126be5a62b144ebf42b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413299"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 このメソッドに明示的に無効にします。 エディット コンティニュでこのプロセス (およびすべてのプログラムが含まれています)。 カスタム ポート サプライヤーが常に返す必要があります`E_NOTIMPL`します。
@@ -44,7 +44,7 @@ HRESULT DisableENC(
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
 
 > [!NOTE]
->  カスタム ポート サプライヤーが常に返す必要があります`E_NOTIMPL`します。
+> カスタム ポート サプライヤーが常に返す必要があります`E_NOTIMPL`します。
 
 ## <a name="remarks"></a>Remarks
  1 回の編集しプロセスの続行は無効です、プロセスを再起動することによってのみ再度有効にできます。

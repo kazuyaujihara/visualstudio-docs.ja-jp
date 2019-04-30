@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cfc486401792afc7d2c6295cacca843aa6c5b11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445025"
 ---
 # <a name="securing-clickonce-applications"></a>ClickOnce アプリケーションのセキュリティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "60076199"
  クエリ文字列を通じて取得された引数は、必ず安全であることを確認してからデータベースまたはコマンド ラインに渡してください。 安全でない引数とは、悪意のあるユーザーがアプリケーションを操作して任意のコマンドを実行できるようにするデータベースまたはコマンド ライン エスケープ文字が含まれた引数のことです。  
   
 > [!NOTE]
->  クエリ文字列引数は、起動時に [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションに引数を渡す唯一の手段です。 コマンド ラインから [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションに引数を渡すことはできません。  
+> クエリ文字列引数は、起動時に [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションに引数を渡す唯一の手段です。 コマンド ラインから [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションに引数を渡すことはできません。  
   
 ## <a name="deploying-obfuscated-assemblies"></a>難読化されたアセンブリの配置  
  Dotfuscator を使用してアプリケーションを難読化し、他のユーザーがコードをリバース エンジニアリングできないようにできます。 ただし、アセンブリの難読化は Visual Studio IDE または ClickOnce 配置プロセスに統合されていません。 このため、難読化は、配置プロセスの外部でビルド後のステップなどを使用して実行する必要があります。 プロジェクトをビルドした後に、Visual Studio の外部で次の手順を手動で実行します。  

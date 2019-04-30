@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f9f381fbd9c6cb3f4f2128adc3910516be42962
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: ed96b7c893ba3ececb33be5dda55093b70c28659
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434692"
 ---
 # <a name="sccdiff-function"></a>SccDiff 関数
 この関数が表示されます (または必要に応じてだけをチェック) (ローカル ディスク) 上の現在のファイルとその最後のチェックイン バージョンの違い、ソース管理システム。
@@ -77,7 +77,7 @@ SCCRTN SccDiff(
  ソース管理プラグイン、パフォーマンスの最適化として、チェックサムまたは for by というバイト単位の比較ではなく、タイムスタンプに基づく別の方法を使用できます`SCC_DIFF_CONTENTS`: 比較のこれらのフォームが明らかに迅速になりますが、信頼性は低くなります。 すべてのソース管理システムは、これらの代替の比較メソッドをサポート可能性があり、プラグインの内容の比較にフォールバックする必要があります。 すべてソース管理プラグインをする必要があります、少なくとも、サポート内容の比較。
 
 > [!NOTE]
->  クイック違いフラグは、相互に排他的です。 フラグに合格することは、同時に 1 つ以上を渡すことはできません。 `SCC_DIFF_QUICK_DIFF`をテストするにはすべてのフラグを結合するマスクを使用できますが、決してをパラメーターとして渡す必要があります。
+> クイック違いフラグは、相互に排他的です。 フラグに合格することは、同時に 1 つ以上を渡すことはできません。 `SCC_DIFF_QUICK_DIFF`をテストするにはすべてのフラグを結合するマスクを使用できますが、決してをパラメーターとして渡す必要があります。
 
 |`fOption`|説明|
 |---------------|-------------|

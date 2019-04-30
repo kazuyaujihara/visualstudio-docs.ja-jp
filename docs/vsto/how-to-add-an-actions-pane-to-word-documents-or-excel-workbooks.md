@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9696640358626c254f1792fc29a31a41d4bafb3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427907"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>方法: Word 文書または Excel ブックに操作ウィンドウを追加する
   に Microsoft Office Word ドキュメントまたは Microsoft Excel ブックを操作ウィンドウを追加するには、Windows フォーム ユーザー コントロールをまず作成します。 次に、ユーザー コントロールを追加、<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>のプロパティ、`ThisDocument.ActionsPane`フィールド (Word) または`ThisWorkbook.ActionsPane`project のフィールド (Excel)。
@@ -28,7 +28,7 @@ ms.locfileid: "60085845"
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="creating-the-user-control"></a>ユーザー コントロールの作成
  次の手順では、Excel プロジェクトまたは Word ユーザー コントロールを作成する方法を示します。 また、ボタンは、ユーザー コントロールがクリックされたときに、ドキュメントまたはブックにテキストを書き込むも追加されます。
@@ -42,12 +42,12 @@ ms.locfileid: "60085845"
 3. **新しい項目の追加**ダイアログ ボックスで、**操作ウィンドウ コントロール**、名前を付けます**HelloControl**、 をクリック**追加**します。
 
     > [!NOTE]
-    >  別の方法として追加することができます、**ユーザー コントロール**をプロジェクトに項目。 によって生成されたクラス、**操作ウィンドウ コントロール**と**ユーザー コントロール**項目は、機能的に同等です。
+    > 別の方法として追加することができます、**ユーザー コントロール**をプロジェクトに項目。 によって生成されたクラス、**操作ウィンドウ コントロール**と**ユーザー コントロール**項目は、機能的に同等です。
 
 4. **Windows フォーム**のタブ、**ツールボックス**ドラッグ、**ボタン**コントロールをコントロールにします。
 
     > [!NOTE]
-    >  コントロールがデザイナーで表示されていない場合をダブルクリックします**HelloControl**で**ソリューション エクスプ ローラー**します。
+    > コントロールがデザイナーで表示されていない場合をダブルクリックします**HelloControl**で**ソリューション エクスプ ローラー**します。
 
 5. コードを追加して、<xref:System.Windows.Forms.Control.Click>ボタンのイベント ハンドラー。 次の例では、Microsoft Office Word ドキュメントのコードを示します。
 

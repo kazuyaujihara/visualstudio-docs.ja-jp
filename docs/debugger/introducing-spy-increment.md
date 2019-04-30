@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a9a7199e035336b080f8d7b19d6e12eb5fe651b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 95c3f83f67eb2a20b058300abaf96d37ad16687d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387578"
 ---
 # <a name="introducing-spy"></a>Spy++ の概要
 Spy++ で実行できるタスクは以下のとおりです。
@@ -37,7 +37,7 @@ Spy++ で実行できるタスクは以下のとおりです。
   さまざまな Spy++ ウィンドウでは、右クリックして頻繁に使用するコマンドのショートカット メニューを表示できます。 表示されるコマンドは、ポインターの位置によって異なります。 たとえば、ウィンドウ ビューのエントリを右クリックし、選択したウィンドウが表示されている場合は、ショートカット メニューの **[強調表示]** をクリックすると、選択したウィンドウの枠線が点滅して、より簡単に見つけられるようになります。
 
 > [!NOTE]
->  Spy++ に似たユーティリティが他に 2 つあります。PView は、プロセスとスレッドについての詳細を表示します。DDESPY.EXE は、ダイナミック データ エクスチェンジ (DDE) のメッセージを監視できます。
+> Spy++ に似たその他の 2 つのユーティリティがあります。PView は、プロセスとスレッド、およびあります詳細が表示されます。EXE、ダイナミック データ エクス チェンジ (DDE) メッセージを監視することができます。
 
 ## <a name="64-bit-operating-systems"></a>64 ビット オペレーティング システム
  Spy++ には 2 つのバージョンがあります。 1 番目のバージョンである Spy++ (spyxx.exe) は、32 ビット プロセスで実行しているウィンドウに送信されるメッセージを表示するように設計されています。 たとえば、Visual Studio は 32 ビット プロセスで実行されます。 したがって、Spy++ を使用して、 **ソリューション エクスプローラー**に送信されるメッセージを表示できます。 Spy++ の最初のバージョンで利用可能な 1 つは、Visual Studio でのほとんどのビルドの既定の構成では、32 ビット プロセスで実行するであるため、**ツール**Visual Studio でメニュー場合[必要なコンポーネントインストールされている](../debugger/how-to-start-spy-increment.md)します。
@@ -49,10 +49,10 @@ Spy++ で実行できるタスクは以下のとおりです。
  どちらのバージョンの Spy++ も、コマンドラインから直接実行できます。
 
 > [!NOTE]
->  Spy++ (64 ビット) のファイル名には "amd" が含まれますが、すべての x64 Windows オペレーティング システムで動作します。
+> Spy++ (64 ビット) のファイル名には "amd" が含まれますが、すべての x64 Windows オペレーティング システムで動作します。
 
 ## <a name="see-also"></a>関連項目
-- [方法: Spy++ を起動する](../debugger/how-to-start-spy-increment.md)
+- [方法: Spy++ の起動](../debugger/how-to-start-spy-increment.md)
 - [Spy++ の使用](../debugger/using-spy-increment.md)
 - [Spy++ ビュー](../debugger/spy-increment-views.md)
 - [Spy++ リファレンス](../debugger/spy-increment-reference.md)

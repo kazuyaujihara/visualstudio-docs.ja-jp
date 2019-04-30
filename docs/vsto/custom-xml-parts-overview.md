@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 517cd2230430bf0758b729f50b1d947685aaf6be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b94deacad38f40d76b4c8485186bfd563808d912
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445516"
 ---
 # <a name="custom-xml-parts-overview"></a>カスタム XML 部分の概要
   一部の Microsoft Office アプリケーションのドキュメントに XML データを埋め込むことができます。 データがという名前をドキュメントに XML データを埋め込むときに、*カスタム XML 部分*します。
@@ -38,7 +38,7 @@ ms.locfileid: "60052780"
  **適用対象:** このトピックの情報は、Excel、PowerPoint、および Word のドキュメント レベルのプロジェクトおよび VSTO アドイン プロジェクトに適用されます。 詳細については、「[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
 
 > [!NOTE]
->  Visual Studio では、ドキュメント レベルのカスタマイズ内のデータ オブジェクトをキャッシュすることもできます。 いくつかの類似点はありますが、この機能はカスタム XML 部分とは異なります。 詳細については、次を参照してください。[ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)します。
+> Visual Studio では、ドキュメント レベルのカスタマイズ内のデータ オブジェクトをキャッシュすることもできます。 いくつかの類似点はありますが、この機能はカスタム XML 部分とは異なります。 詳細については、次を参照してください。[ドキュメント レベルのカスタマイズでキャッシュされたデータ](../vsto/cached-data-in-document-level-customizations.md)します。
 
 ## <a name="understand-custom-xml-parts"></a>カスタム XML 部分を理解します。
  カスタム XML 部分は、2007 Microsoft Office system で Open XML 形式とともに導入されました。 これらの形式は、Excel、PowerPoint、および Word の新しい XML ベースのファイル形式を含める (など *.xlsx*、 *.pptx*、および *.docx*)。 これらの形式でドキュメントが XML ファイルで構成されます (とも呼ばれます*XML パーツ*) ZIP アーカイブ内のフォルダーに編成されます。 XML 部分のほとんどは、ドキュメントの構造と状態を定義するのに役立つ組み込みの部分です。 ただし、ドキュメントにはカスタム XML 部分を含めることができ、ユーザーはこれを使用して、ドキュメントに任意の XML データを格納できます。
@@ -56,7 +56,7 @@ ms.locfileid: "60052780"
 - [Open XML 形式を使用して Word 2007 ドキュメントを作成します。](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
 
 > [!NOTE]
->  Excel、Word、および PowerPoint ではバイナリ ファイル形式で保存されているドキュメント内のカスタム XML 部分を使用することもできます。 ただし、バイナリ形式でドキュメントを保存する場合は、Microsoft Office アプリケーションを起動せずにカスタム XML 部分を追加または変更することはできません。
+> Excel、Word、および PowerPoint ではバイナリ ファイル形式で保存されているドキュメント内のカスタム XML 部分を使用することもできます。 ただし、バイナリ形式でドキュメントを保存する場合は、Microsoft Office アプリケーションを起動せずにカスタム XML 部分を追加または変更することはできません。
 
 ## <a name="create-and-modify-custom-xml-parts"></a>作成およびカスタム XML 部分を変更します。
  ドキュメントが Office アプリケーションで開いているとき、またはドキュメントが閉じているとき (Microsoft Office がインストールされていない場合でも)、カスタム XML 部分を作成または変更できます。

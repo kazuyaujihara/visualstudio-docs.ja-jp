@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 085e5ae408155227c1d60e312b7e9623be2e3897
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: afbde92cd666e0e67b1e70b0b4899c09d8b5b3e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411064"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>チュートリアル: カスタム エディターに機能を追加します。
 カスタム エディターを作成した後より多くの機能を追加できます。
@@ -49,7 +49,7 @@ ms.locfileid: "60064454"
     2. 外部ファイルの変更に応答すると、実装<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>エディターのドキュメント データ オブジェクトにします。
 
         > [!NOTE]
-        >  呼び出す`QueryService`で<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>へのポインターを取得する`IVsFileChangeEx`します。
+        > 呼び出す`QueryService`で<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>へのポインターを取得する`IVsFileChangeEx`します。
 
 7. ソース コード コントロールとドキュメント編集のイベントを調整します。 この場合は、以下の手順に従ってください。
 
@@ -136,7 +136,7 @@ ms.locfileid: "60064454"
    <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>
 
   > [!NOTE]
-  >  `IOleInPlaceComponent`インターフェイスは、OLE 2 メニューのマージを回避するために使用されます。
+  > `IOleInPlaceComponent`インターフェイスは、OLE 2 メニューのマージを回避するために使用されます。
 
    `IOleCommandTarget`の実装などのコマンドは処理**切り取り**、**コピー**、および**貼り付け**します。 実装する場合`IOleCommandTarget`、エディターが必要独自かどうかを決定 *.vsct*コマンド メニュー構造を定義するファイルで定義されている標準のコマンドを実装している場合、または[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。 通常、エディター、IDE のメニューを拡張し、使用、独自のツールバーを定義します。、 ただし、エディター、IDE の標準のコマンド セットを使用するだけでなく、独自の特定のコマンドを定義する必要があります。 エディターを使用して標準のコマンドを宣言し、新しいコマンド、コンテキスト メニューのトップレベルのメニューおよびツールバーを定義、 *.vsct*ファイル。 インプレース アクティブ化エディターを作成する場合は、実装<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>のエディターにメニューおよびツールバーを定義し、 *.vsct* OLE 2 メニューのマージを使用してではなくファイル。
 

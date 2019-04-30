@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60ad63bd5a6fa3b8cca2a288e1c42b1a2ab326bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418849"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>カスタム カテゴリを実装し、アイテムを表示
 VSPackage は、そのテキストの色とフォントの制御を提供できます、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) でカスタム カテゴリとアイテムを表示します。
@@ -88,7 +88,7 @@ VSPackage は、そのテキストの色とフォントの制御を提供でき�
   - 各メンバーの情報を表示**カテゴリ**します。
 
   > [!NOTE]
-  >  すべて**カテゴリ**少なくとも 1 つ含める必要があります**表示項目**します。
+  > すべて**カテゴリ**少なくとも 1 つ含める必要があります**表示項目**します。
 
 - IDE を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>いくつかのカテゴリの共用体を定義するインターフェイス。
 
@@ -120,7 +120,7 @@ VSPackage は、そのテキストの色とフォントの制御を提供でき�
      これは、システムによって実装されるを通して実行<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。 主に、永続化のサポートには、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>のフォントと色の情報を取得するメソッドを使用できる**項目を表示**します。 詳細については、次を参照してください。[へのアクセスには、フォントおよび色の設定が格納されている](../extensibility/accessing-stored-font-and-color-settings.md)します。
 
     > [!NOTE]
-    >  ポーリングによって得られた結果が正しいことに、使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>インターフェイスの取得メソッドを呼び出す前に、キャッシュのフラッシュと更新プログラムが必要なかどうかを決定する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。
+    > ポーリングによって得られた結果が正しいことに、使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>インターフェイスの取得メソッドを呼び出す前に、キャッシュのフラッシュと更新プログラムが必要なかどうかを決定する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。
 
 ## <a name="see-also"></a>関連項目
 

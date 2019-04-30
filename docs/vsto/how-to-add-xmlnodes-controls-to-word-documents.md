@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0bbfa139605a6196cf57a5a887d9cb74f54527f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b54a341cd9dd949f892537ee384afb4984aecc02
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419688"
 ---
 # <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>方法: Word 文書に XMLNodes コントロールを追加します。
   **重要な**に関する Microsoft Word には、このトピックでまとめられている情報が提示の特典および個人や組織のユーザーは、米国およびその担当地域外部にあるまたはを使用しているユーザーの使用専用、または開発上で実行されるプログラム、Microsoft が特定の機能の実装を削除する場合、2010 年 1 月の前に、Microsoft によってライセンスされた Microsoft Word の製品に関連するカスタム XML から Microsoft Word です。 Microsoft Word に関するこの情報が読み取りまたは個人または組織、米国またはその区域を使用して、または、2010 年 1 月 10 日後に Microsoft によってライセンス供与された Microsoft Word の製品で実行されるプログラムの開発で使用しない可能性があります。;これらの製品では、その日付より前にライセンスまたは購入を米国外の使用ライセンスの製品と同じ動作はしません。
@@ -30,7 +30,7 @@ ms.locfileid: "60090733"
  XML スキーマ要素の非繰り返しのマッピングについては、次を参照してください。[方法。Word 文書に XMLNode コントロールを追加](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)します。
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Word.XMLNodes>コントロールはから使用できません、**ツールボックス**または**データ ソース**ウィンドウで、また、プログラムで作成します。
+> <xref:Microsoft.Office.Tools.Word.XMLNodes>コントロールはから使用できません、**ツールボックス**または**データ ソース**ウィンドウで、また、プログラムで作成します。
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "60090733"
 1. リボンで、Visual Studio デザイナーで文書のクリックして、**開発者**タブ。
 
     > [!NOTE]
-    >  **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
+    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
 
 2. **XML**グループで、**スキーマ**します。
 

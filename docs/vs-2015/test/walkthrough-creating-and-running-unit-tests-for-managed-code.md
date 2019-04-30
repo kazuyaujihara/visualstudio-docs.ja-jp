@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408485"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>チュートリアル: 作成して、マネージ コードの単体テストの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ ms.locfileid: "60058890"
   [単体テストを使用してコードを改良する](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
->  このチュートリアルでは、マネージド コード用の Microsoft 単体テスト フレームワークを使用します。 また、テスト エクスプローラー用のアダプターを備えたサード パーティの単体テスト フレームワークからテスト エクスプローラーを実行することもできます。 詳細については、「[サードパーティ製の単体テスト フレームワークをインストールする](../test/install-third-party-unit-test-frameworks.md)」をご覧ください。  
+> このチュートリアルでは、マネージド コード用の Microsoft 単体テスト フレームワークを使用します。 また、テスト エクスプローラー用のアダプターを備えたサード パーティの単体テスト フレームワークからテスト エクスプローラーを実行することもできます。 詳細については、「[サードパーティ製の単体テスト フレームワークをインストールする](../test/install-third-party-unit-test-frameworks.md)」をご覧ください。  
   
 > [!NOTE]
->  コマンド ラインからテストを実行する方法については、「[チュートリアル: コマンド ライン テスト ユーティリティの使用](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)」をご覧ください。  
+> コマンド ラインからテストを実行する方法については、「[チュートリアル: コマンド ライン テスト ユーティリティの使用](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)」をご覧ください。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
   
@@ -71,12 +71,12 @@ ms.locfileid: "60058890"
 5. In the **[名前]** ボックスに「 `Bank` をポイントし、 **[OK]**」をご覧ください。  
   
    > [!NOTE]
-   >  "Bank" という名前が既に使用されている場合は、別のプロジェクト名を選択します。  
+   > "Bank" という名前が既に使用されている場合は、別のプロジェクト名を選択します。  
   
     新しい Bank プロジェクトが作成され、コード エディターに Class1.cs ファイルが開いた状態でソリューション エクスプローラーが表示されます。  
   
    > [!NOTE]
-   >  コード エディターに Class1.cs ファイルが表示されない場合、ソリューション エクスプローラーのファイル Class1.cs をダブルクリックして開きます。  
+   > コード エディターに Class1.cs ファイルが表示されない場合、ソリューション エクスプローラーのファイル Class1.cs をダブルクリックして開きます。  
   
 6. 「[単体テストを作成するためのサンプル プロジェクト](../test/sample-project-for-creating-unit-tests.md)」からソース コードをコピーします。  
   

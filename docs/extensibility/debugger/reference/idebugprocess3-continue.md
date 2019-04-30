@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fefbbbced72a53566ffb726c9ea900e037ee4639
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 3ac97d97c17bd09882bc347116c2aec44db3f28a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413372"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 このプロセスを停止状態から実行が続行されます。 (ステップ) など、以前の実行状態の保持、し、もう一度実行して、プロセスを開始します。
 
 > [!NOTE]
->  このメソッドは、の代わりに使用する必要があります[続行](../../../extensibility/debugger/reference/idebugprogram2-continue.md)します。
+> このメソッドは、の代わりに使用する必要があります[続行](../../../extensibility/debugger/reference/idebugprogram2-continue.md)します。
 
 ## <a name="syntax"></a>構文
 

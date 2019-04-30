@@ -12,12 +12,12 @@ ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 261e71173e98e0ccee5e37f1c37d5825c42f5d93
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 43c5b3b9bbc5e09b41f346949c4ec788c3784786
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438161"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ IDebugStackFrame3 : IDebugStackFrame2
  例外をインターセプトすることで、デバッガーはデバッグ中のプログラムの状態に変更を加えるし、例外がスローされた時点での実行を再開するユーザーを許可できます。  
   
 > [!NOTE]
->  インターセプトの例外は、共通言語ランタイム (CLR) 下で実行しているプログラムでは、マネージ コードでのみ許可されます。  
+> インターセプトの例外は、共通言語ランタイム (CLR) 下で実行しているプログラムでは、マネージ コードでのみ許可されます。  
   
  デバッグ エンジンを示します"metricExceptions"を設定して例外をインターセプトをサポートしている値の 1 に実行時に使用して、`SetMetric`関数。 詳細については、次を参照してください。[デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)します。  
   

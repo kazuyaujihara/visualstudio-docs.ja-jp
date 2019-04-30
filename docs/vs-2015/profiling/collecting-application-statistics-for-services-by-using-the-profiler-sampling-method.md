@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 076a8f5fb376914998030c194d55bf505a5ed953
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f3f556a039ab131a563a90010112009b39f4c981
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445757"
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>プロファイラー サンプリング メソッドを使用したサービスのアプリケーション統計情報の収集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,9 +22,9 @@ ms.locfileid: "54794174"
 このセクションでは、コマンド ラインからサンプリング メソッドを使用して、Windows サービスのパフォーマンスの統計情報を収集する手順とオプションについて説明します。  
   
 > [!NOTE]
->  Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
   
-## <a name="common-tasks"></a>一般的なタスク  
+## <a name="common-tasks"></a>よく使う機能  
   
 |タスク|関連するコンテンツ|  
 |----------|---------------------|  

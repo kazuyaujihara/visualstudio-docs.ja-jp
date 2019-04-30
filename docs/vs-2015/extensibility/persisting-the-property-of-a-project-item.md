@@ -11,12 +11,12 @@ ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ccb468c5eca88207594a66d956717caf260666db
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4adcf0f5c5770f5d3ffc0e0ed9bffdb108869c7f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441540"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>プロジェクト項目のプロパティの保存
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58973843"
   
 ### <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>DTE オブジェクトをプロジェクトの階層を取得するには  
   
-1.  次のコードを VSPackage に追加します。  
+1. 次のコードを VSPackage に追加します。  
   
     ```csharp  
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
@@ -43,7 +43,7 @@ ms.locfileid: "58973843"
   
 ### <a name="to-persist-the-project-item-property-with-the-dte-object"></a>DTE オブジェクトとプロジェクト項目のプロパティを永続化するには  
   
-1.  メソッドで、前の手順で指定されたコードには、次のコードを追加します。  
+1. メソッドで、前の手順で指定されたコードには、次のコードを追加します。  
   
     ```csharp  
     IVsBuildPropertyStorage buildPropertyStorage =   
@@ -60,7 +60,7 @@ ms.locfileid: "58973843"
   
 ### <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>IVsMonitorSelection を使用して、プロジェクト階層を取得するには  
   
-1.  次のコードを VSPackage に追加します。  
+1. 次のコードを VSPackage に追加します。  
   
     ```csharp  
     IVsHierarchy hierarchy = null;  
@@ -102,11 +102,11 @@ ms.locfileid: "58973843"
     }  
     ```  
   
-2.  
+2. 
   
 ### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>プロジェクトの階層を指定された、選択したプロジェクト項目のプロパティを永続化するには  
   
-1.  メソッドで、前の手順で指定されたコードには、次のコードを追加します。  
+1. メソッドで、前の手順で指定されたコードには、次のコードを追加します。  
   
     ```  
     IVsBuildPropertyStorage buildPropertyStorage =   
@@ -119,16 +119,16 @@ ms.locfileid: "58973843"
   
 ### <a name="to-verify-that-the-property-is-persisted"></a>プロパティが保持されていることを確認するには  
   
-1.  開始[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]開くか、ソリューションを作成します。  
+1. 開始[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]開くか、ソリューションを作成します。  
   
-2.  プロジェクトを選択項目で VsPkg.cs**ソリューション エクスプ ローラー**します。  
+2. プロジェクトを選択項目で VsPkg.cs**ソリューション エクスプ ローラー**します。  
   
-3.  ブレークポイントを使用して、またはそれ以外の場合、VSPackage が読み込まれていると、SetItemAttribute が実行されることを確認します。  
+3. ブレークポイントを使用して、またはそれ以外の場合、VSPackage が読み込まれていると、SetItemAttribute が実行されることを確認します。  
   
     > [!NOTE]
-    >  UI のコンテキストで VSPackage を自動読み込みを実行できます<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>します。 詳細については、次を参照してください。 [Vspackage の読み込み](../extensibility/loading-vspackages.md)します。  
+    > UI のコンテキストで VSPackage を自動読み込みを実行できます<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>します。 詳細については、次を参照してください。 [Vspackage の読み込み](../extensibility/loading-vspackages.md)します。  
   
-4.  閉じる[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]し、メモ帳でプロジェクト ファイルを開きます。 表示する必要があります、\<作成者 > 次のように、値は、Tom タグします。  
+4. 閉じる[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]し、メモ帳でプロジェクト ファイルを開きます。 表示する必要があります、\<作成者 > 次のように、値は、Tom タグします。  
   
     ```  
     <Compile Include="VsPkg.cs">  

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a24b934b0ffe4cc22dc7be01aca19910ee3c768
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cb70705d29ad636329803656aeaa1a27ddf237d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402764"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>データセットと TableAdapters を別々のプロジェクトに分離する
 型指定されたデータセットが強化されているように、 [Tableadapter](create-and-configure-tableadapters.md)および個別のプロジェクトにデータセット クラスを生成することができます。 これにより、アプリケーション層を分離して、n 層データ アプリケーションをすばやく生成できるようになります。
@@ -33,7 +33,7 @@ TableAdapter コードからデータセット コードを分離する場合は
 1. データセット (*.xsd* ファイル) を含むソリューションを開きます。
 
     > [!NOTE]
-    >  ソリューションに、データセット コードを分離するプロジェクトが含まれていない場合は、プロジェクトを作成または既存のプロジェクトをソリューションに追加します。
+    > ソリューションに、データセット コードを分離するプロジェクトが含まれていない場合は、プロジェクトを作成または既存のプロジェクトをソリューションに追加します。
 
 2. **ソリューション エクスプローラー**で型指定されたデータセット ファイル (*.xsd* ファイル) をダブルクリックして、**データセット デザイナー**でデータセットを開きます。
 
@@ -46,7 +46,7 @@ TableAdapter コードからデータセット コードを分離する場合は
      データセット コードを生成するプロジェクトを選択した後、**データセット ファイル**プロパティには、既定のファイル名が設定されます。 必要な場合は、この名前を変更できます。 さらに、データセット コードを特定のディレクトリに生成する場合は、**[プロジェクト フォルダー]** プロパティをフォルダーの名前に設定できます。
 
     > [!NOTE]
-    >  データセットと Tableadapter を分離する場合 (設定して、 **DataSet プロジェクト**プロパティ)、プロジェクト内の既存のデータセット部分クラスが自動的に移動しません。 既存のデータセット部分クラスは、データセット プロジェクトに手動で移動する必要があります。
+    > データセットと Tableadapter を分離する場合 (設定して、 **DataSet プロジェクト**プロパティ)、プロジェクト内の既存のデータセット部分クラスが自動的に移動しません。 既存のデータセット部分クラスは、データセット プロジェクトに手動で移動する必要があります。
 
 6. データセットを保存します。
 
@@ -55,7 +55,7 @@ TableAdapter コードからデータセット コードを分離する場合は
 既定では、データセットと TableAdapter コードを分離したら、結果はプロジェクトごとに別個のクラス ファイルが。 元のプロジェクトにという名前のファイル*DatasetName.Designer.vb* (または*DatasetName.Designer.cs*) TableAdapter コードを格納しています。 指定されているプロジェクト、 **Dataset プロジェクト**プロパティという名前のファイルは、 *DatasetName.DataSet.Designer.vb* (または*DatasetName.DataSet.Designer.cs*) します。データセット コードが含まれています。
 
 > [!NOTE]
->  生成されたクラス ファイルを表示するには、データセットまたは TableAdapter プロジェクトを選択します。 次に、**ソリューション エクスプ ローラー**、 **すべてのファイル**します。
+> 生成されたクラス ファイルを表示するには、データセットまたは TableAdapter プロジェクトを選択します。 次に、**ソリューション エクスプ ローラー**、 **すべてのファイル**します。
 
 ## <a name="see-also"></a>関連項目
 
