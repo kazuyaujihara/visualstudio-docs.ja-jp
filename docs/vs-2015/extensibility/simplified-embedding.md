@@ -10,12 +10,12 @@ ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6575181a7cd56db7148ebe2d6c11c98949f1b753
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b8e1ac2fa17409ac3228f87eb71c99ce9e725521
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447191"
 ---
 # <a name="simplified-embedding"></a>簡略化された埋め込み
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58974247"
 簡略化された埋め込みエディター  
   
 > [!NOTE]
->  のみ、この図では、オブジェクトの`CYourEditorFactory`標準的なファイル ベースのエディターを作成するオブジェクトが必要です。 カスタム エディターを作成する場合は、実装する必要はありません<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>エディター、独自のプライベートの永続化メカニズムがないためです。 非カスタム エディターに対し、ただしを行う必要があります。  
+> のみ、この図では、オブジェクトの`CYourEditorFactory`標準的なファイル ベースのエディターを作成するオブジェクトが必要です。 カスタム エディターを作成する場合は、実装する必要はありません<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>エディター、独自のプライベートの永続化メカニズムがないためです。 非カスタム エディターに対し、ただしを行う必要があります。  
   
  含まれるすべてのインターフェイスを簡素化された埋め込みエディターを作成するために実装、`CYourEditorDocument`オブジェクト。 ただし、ドキュメント データの複数のビューをサポートするために分割データとビューのオブジェクトを個別にインターフェイス、次の表に記載されています。  
   

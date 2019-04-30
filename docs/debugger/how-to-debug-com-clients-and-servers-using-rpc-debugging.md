@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4cd55ff42bc4ba81df881045d06362b469f009b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5c98405b424dd5402a903a236b1c5549a43616d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387517"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>方法: RPC デバッグを使用して COM クライアントおよびサーバーをデバッグする
 リモート プロシージャ コール (RPC: Remote Procedure Call) デバッグを使用して、COM クライアント/サーバー アプリケーションをデバッグできます。 このデバッグを行うには、あらかじめ RPC デバッグを有効にする必要があります。 RPC デバッグを有効にすると、ステップ実行でクライアントからサーバーを呼び出すときに、デバッガーがサーバーにアタッチし、コードのデバッグができるようになります。 デバッガーをアタッチすることにより、クライアントおよびサーバーのどちらのプロセスでも、デバッガーのすべての機能を使用できます。
@@ -47,10 +47,10 @@ ms.locfileid: "60112703"
 4. **[RPC デバッグ]** チェック ボックスをオンにします。
 
     > [!NOTE]
-    >  RPC 呼び出しをデバッグするには、管理者またはパワー ユーザーの権限が必要です。
+    > RPC 呼び出しをデバッグするには、管理者またはパワー ユーザーの権限が必要です。
 
     > [!NOTE]
-    >  Microsoft Windows Vista が実行されているリモート サーバーへの RPC ステップ実行は、そのリモート サーバーにネイティブ デバッガーがアタッチされている場合のみ機能します。 それ以外の場合、エラー メッセージが表示されることなく RPC 呼び出しが失敗します。 何らかの方法で RPC 呼び出しに成功したとしても、RPC 呼び出しへのステップ インは正常に機能しません。
+    > Microsoft Windows Vista が実行されているリモート サーバーへの RPC ステップ実行は、そのリモート サーバーにネイティブ デバッガーがアタッチされている場合のみ機能します。 それ以外の場合、エラー メッセージが表示されることなく RPC 呼び出しが失敗します。 何らかの方法で RPC 呼び出しに成功したとしても、RPC 呼び出しへのステップ インは正常に機能しません。
 
 ## <a name="see-also"></a>関連項目
 - [COM サーバーおよび COM コンテナーのデバッグ](../debugger/com-server-and-container-debugging.md)

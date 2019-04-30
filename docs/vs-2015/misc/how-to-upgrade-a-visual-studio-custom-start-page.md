@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: 457b3baf2b291a0ef96bd8bbd748261348a2108d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: abe1013d37db43114f3970f12b1a0d1f08b07a4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446453"
 ---
 # <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>方法: Visual Studio のカスタム スタート ページをアップグレードします。
 次の手順に従って、Visual Studio 2010 または Visual Studio 2012 のカスタム スタート ページを Visual Studio 2015 にアップグレードできます。
 
 > [!WARNING]
->  この手順でアップグレードするカスタム スタート ページは、Visual Studio ギャラリーの [カスタム スタート ページ](http://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) テンプレートで作成されたページです。 スタート ページにアップグレードが必要なその他の機能がある場合があります。
+> この手順でアップグレードするカスタム スタート ページは、Visual Studio ギャラリーの [カスタム スタート ページ](http://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) テンプレートで作成されたページです。 スタート ページにアップグレードが必要なその他の機能がある場合があります。
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>カスタム スタート ページを Visual Studio 2015 にアップグレードするには
 

@@ -12,12 +12,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aaca69818524df134aa9ad7514ee5e0227b6a812
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1dd1598d73cdbd77bc6fe0cb35e639c0fb484b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443424"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>チュートリアル: テスト ファーストのサポート、機能の使用法から生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "60084987"
 2. クラス `UnitTest1` の宣言を検索して、この名前を `AutomobileTest`に変更します。 C# では、 `UnitTest1()` コンストラクターが存在する場合は、その名前を `AutomobileTest()`に変更します。  
   
     > [!NOTE]
-    >  現在、IntelliSense では、IntelliSense のステートメント入力候補に対して、 *完了モード* と *提案モード*の 2 つの方法を提供しています。 まだ定義していないクラスやメンバーを使用する場合は、提案モードを使用します。 [IntelliSense] ウィンドウが開いているときに、Ctrl キーと Alt キーを押しながら Space キーを押すと完了モードと提案モードを切り替えることができます。 詳しくは、「[IntelliSense の使用](../ide/using-intellisense.md)」をご覧ください。 提案モードは、次の手順で「 `Automobile` 」と入力する際に役立ちます。  
+    > 現在、IntelliSense では、IntelliSense のステートメント入力候補に対して、 *完了モード* と *提案モード*の 2 つの方法を提供しています。 まだ定義していないクラスやメンバーを使用する場合は、提案モードを使用します。 [IntelliSense] ウィンドウが開いているときに、Ctrl キーと Alt キーを押しながら Space キーを押すと完了モードと提案モードを切り替えることができます。 詳しくは、「[IntelliSense の使用](../ide/using-intellisense.md)」をご覧ください。 提案モードは、次の手順で「 `Automobile` 」と入力する際に役立ちます。  
   
 3. `TestMethod1()` メソッドを検索して、この名前を `DefaultAutomobileIsInitializedCorrectly()`に変更します。 次の図に示すように、このメソッド内に、 `Automobile`というクラスの新しいインスタンスを作成します。 コンパイル時のエラーを示す波下線が表示され、型名の下にスマート タグが表示されます。 スマート タグの正確な場所は、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] または [!INCLUDE[csprcs](../includes/csprcs-md.md)] のどちらを使っているかにより異なります。  
   

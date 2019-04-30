@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 36555d9b00c9aff3f594ae2217afe8434bb41542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442747"
 ---
 # <a name="how-to-start-spy"></a>方法: Spy++ の起動
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60066709"
  開始すると、spy++、コンピューターに変更を加える、 をクリックするアクセス許可を要求するメッセージが表示されている場合**はい**します。  
   
 > [!NOTE]
->  Spy++ の 1 つだけのインスタンスを実行することができます。 別のインスタンスを実行しようとする場合だけ、フォーカスを取得する現在実行中のインスタンスが発生します。  
+> Spy++ の 1 つだけのインスタンスを実行することができます。 別のインスタンスを実行しようとする場合だけ、フォーカスを取得する現在実行中のインスタンスが発生します。  
   
 ### <a name="to-start-spy-from-visual-studio"></a>Visual Studio から spy++ を起動するには  
   
@@ -35,7 +35,7 @@ ms.locfileid: "60066709"
      Spy++ が実行されるためいない、独立して開始した後、Visual Studio を閉じることができます。  
   
     > [!NOTE]
-    >  ログ メッセージを Spy++ では、オペレーティング システムのパフォーマンスが低下することがあります。  
+    > ログ メッセージを Spy++ では、オペレーティング システムのパフォーマンスが低下することがあります。  
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>コマンド プロンプトで spy++ を起動するには  
   

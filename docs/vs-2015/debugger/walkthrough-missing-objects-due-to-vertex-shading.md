@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d54fdce78528f348e99436c3a58d15e1cbe861b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444274"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>チュートリアル: 頂点の網かけによるオブジェクトの不足
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "60046381"
     **[グラフィックス パイプライン ステージ]** ウィンドウで、 **[入力アセンブラー]** ステージは変換される前のオブジェクトのジオメトリを示し、 **[頂点シェーダー]** ステージは変換された後の同じオブジェクトを示します。 このシナリオでは、 **[入力アセンブラー]** ステージにオブジェクトが表示されたときに欠落しているオブジェクトが見つかり、 **[頂点シェーダー]** ステージには何も表示されないことがわかります。  
   
    > [!NOTE]
-   >  他のジオメトリ ステージ (ハル シェーダー、ドメイン シェーダー、ジオメトリ シェーダーなど) でオブジェクトが処理された場合、それが問題の原因である可能性があります。 多くの場合、結果が表示されない、または予期しない表示になる最も早いステージが、問題に関連しています。  
+   > 他のジオメトリ ステージ (ハル シェーダー、ドメイン シェーダー、ジオメトリ シェーダーなど) でオブジェクトが処理された場合、それが問題の原因である可能性があります。 多くの場合、結果が表示されない、または予期しない表示になる最も早いステージが、問題に関連しています。  
   
 4. 表示されないオブジェクトに対応する描画呼び出しに到達したら、停止します。 このシナリオで、 **[グラフィックス パイプライン ステージ]** ウィンドウは、ジオメトリが GPU に発行された (入力アセンブラー サムネイルによって示されます) にもかかわらず、頂点シェーダー ステージで何か問題が発生したためレンダー ターゲットに表示されなかった (頂点シェーダー サムネイルによって示されます) ことを示します。  
   
@@ -107,7 +107,7 @@ ms.locfileid: "60046381"
     ![オブジェクトの定数バッファーを設定するコードの](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
   
    > [!TIP]
-   >  同時にアプリのデバッグを行っている場合、この位置にブレークポイントを設定して次のフレームが表示されるとヒットするようにできます。 これで、定数バッファーが指定されたときに `m_marbleConstantBufferData` のメンバーを調べ、 `projection` メンバーの値がすべてゼロに設定されていることを確認できます。  
+   > 同時にアプリのデバッグを行っている場合、この位置にブレークポイントを設定して次のフレームが表示されるとヒットするようにできます。 これで、定数バッファーが指定されたときに `m_marbleConstantBufferData` のメンバーを調べ、 `projection` メンバーの値がすべてゼロに設定されていることを確認できます。  
   
    定数バッファーが指定されている場所を確認し、その値が変数 `m_marbleConstantBufferData` から取得されたことがわかったら、次の手順では、`m_marbleConstantBufferData.projection` メンバーがすべてゼロに設定されている場所を検索します。 **[すべての参照の検索]** を使用して、 `m_marbleConstantBufferData.projection`の値を変更するコードをすばやくスキャンできます。  
   

@@ -20,22 +20,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1306629a33b668104c3159c1ed2d5840cc4a3801
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 5ba918ef2d2bdbc35f7e46b6b8553037d3e5d281
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447106"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 開発のサンプルとチュートリアル
   このセクションには、Microsoft Office ソリューションの構築に使用されるサンプル アプリケーション、コード例、そして、構文、構造、および技法について説明した、詳細なチュートリアルが含まれています。
 
  サンプル コードは説明を目的としたものであり、実際に配置されるソリューションで変更を加えずに使用することは避けてください。 特に、セキュリティには十分な注意が必要です。
 
- アプリケーションをセキュリティで保護する方法の詳細については、[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)を参照してください。
+ アプリケーションをセキュリティで保護する方法の詳細については、次を参照してください。[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)します。
 
 > [!NOTE]
->  [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは VSTO アドインやソリューションと比較して、小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML などのほぼすべての web プログラミング テクノロジを使用して、ビルドすることができます。
+> [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは VSTO アドインやソリューションと比較して、小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML などのほぼすべての web プログラミング テクノロジを使用して、ビルドすることができます。
 
 ## <a name="in-this-section"></a>このセクションの内容
 

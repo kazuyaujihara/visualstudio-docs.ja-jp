@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05dd21bbb423d75cd175f13ca945516024db01eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: da666f237824ccae349a023611f7e7b78fdaf684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402828"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>方法: 更新、挿入、および削除を実行するストアド プロシージャを割り当てる (O/R デザイナー)
 
@@ -59,7 +59,7 @@ ms.locfileid: "60049843"
 10. **[OK]** または **[適用]** をクリックします。
 
     > [!NOTE]
-    >  クリックすると、クラスと動作の組み合わせごとの動作を構成を続行できます**適用**それぞれの変更を行った後。 クリックする前に、クラスまたは動作を変更するかどうかは**適用**、警告ダイアログ ボックスが表示され、変更を適用する機会を提供します。
+    > クリックすると、クラスと動作の組み合わせごとの動作を構成を続行できます**適用**それぞれの変更を行った後。 クリックする前に、クラスまたは動作を変更するかどうかは**適用**、警告ダイアログ ボックスが表示され、変更を適用する機会を提供します。
 
 更新時に既定のランタイム ロジックを使用するように戻すには、**[プロパティ]** ウィンドウで、**[Insert]**、**[Update]**、または **[Delete]** の各コマンドの横にある省略記号をクリックし、**[動作の構成]** ダイアログ ボックスで **[ランタイムを使用]** を選択します。
 

@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383430"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 へようこそ
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60067730"
 Visual Studio へようこそ。 デバイスまたはデスクトップで機能する Web およびクラウド向けの優れたアプリを作成するのに必要なものがすべて揃っています。 iOS、Android、Windows 用のコードを 1 つの IDE で記述してください。 便利な IntelliSense、簡単なコード ナビゲーション、高速なビルド、すばやい配置をご利用ください。 Visual Studio なら生産性が向上し、単独での作業も、より大きなチームの一員としての作業も容易になります。
 
 > [!NOTE]
->  Visual Studio 2015 更新プログラム 3 のリリース ノートについては、 [こちら](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)をクリックしてください。
+> Visual Studio 2015 更新プログラム 3 のリリース ノートについては、 [こちら](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)をクリックしてください。
 >
->  [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) のリリース ノートについては、こちらをクリックしてください。
+> [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) のリリース ノートについては、こちらをクリックしてください。
 
  [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) を無料でダウンロードし、コーディングをすぐに開始してください。 クロス プラットフォーム開発を行う場合は、オプションのパッケージをインストールします。 ( [Visual Studio の他のエディション](http://www.visualstudio.com/products/compare-visual-studio-products-vs)にはさらに多くの機能があります。)
 

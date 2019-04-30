@@ -10,12 +10,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43521b940d786902f4d502c93b5c0eb54922422f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76faef002162576cec6b598e499c937caa0c4fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445990"
 ---
 # <a name="unit-test-basics"></a>単体テストの基本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ ms.locfileid: "60069914"
 ### <a name="BKMK_Quick_starts"></a> クイック スタート  
  コーディングに直接関係する単体テストの概要については、次のいずれかのトピックを参照してください。  
   
-- [チュートリアル: 作成して、マネージ コードの単体テストの実行](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+- [チュートリアル: マネージド コードに対する単体テストの作成と実行](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
-- [クイック スタート:テスト エクスプ ローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)  
+- [クイック スタート: テスト エクスプローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
 - [テスト エクスプローラーを使用したネイティブ コードの単体テスト](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
@@ -124,7 +124,7 @@ public void Withdraw(double amount)
 7. Microsoft 単体テスト フレームワークの 1 つを使用するには、プロジェクト テンプレートの一覧から **[単体テスト プロジェクト]** を選択します。 それ以外の場合は、使用する単体テスト フレームワークのプロジェクト テンプレートを選択します。 この例の `Accounts` プロジェクトをテストするために、プロジェクトの名前を `AccountsTests`に設定します。  
   
    > [!WARNING]
-   >  すべてのサードパーティ製およびオープン ソースの単体テスト フレームワークに、Visual Studio プロジェクトのテンプレートが用意されているわけではありません。 プロジェクトの作成については、フレームワークのドキュメントを参照してください。  
+   > すべてのサードパーティ製およびオープン ソースの単体テスト フレームワークに、Visual Studio プロジェクトのテンプレートが用意されているわけではありません。 プロジェクトの作成については、フレームワークのドキュメントを参照してください。  
   
 8. この例の単体テスト プロジェクトで、テスト対象のコード プロジェクトへの参照を Accounts プロジェクトに追加します。  
   
@@ -238,7 +238,7 @@ public void My_Test ()
 ### <a name="BKMK_Running_tests_after_every_build"></a> 各ビルドの後にテストを実行する  
   
 > [!WARNING]
->  各ビルドの後の単体テスト実行は、Visual Studio Enterprise でのみサポートされます。  
+> 各ビルドの後の単体テスト実行は、Visual Studio Enterprise でのみサポートされます。  
   
 |||  
 |-|-|  
@@ -263,7 +263,7 @@ public void My_Test ()
 1. Visual Studio エディターで、デバッグする 1 つ以上のテスト メソッドにブレークポイントを設定します。  
   
    > [!NOTE]
-   >  テスト メソッドを任意の順序で実行できるため、デバッグするすべてのテスト メソッドにブレークポイントを設定します。  
+   > テスト メソッドを任意の順序で実行できるため、デバッグするすべてのテスト メソッドにブレークポイントを設定します。  
   
 2. テスト エクスプローラーでテスト メソッドを選択し、ショートカット メニューから **[選択したテストのデバッグ]** を選択します。  
   
@@ -280,7 +280,7 @@ public void My_Test ()
    **A:** はい。 *データ ドリブン テスト メソッド* を使用すると、1 つの単体テスト メソッドである範囲の値をテストすることができます。 テストする変数の値が格納されているデータ ソースとデータ テーブルを指定する、テスト メソッドの `DataSource` 属性を使用します。  メソッドの本体で、 `TestContext.DataRow[`*ColumnName*`]` インデクサーを使用して変数に行の値を割り当てます。  
   
 > [!NOTE]
->  ここに示すプロシージャは、マネージド コード用の Microsoft 単体テスト フレームワークを使用して記述したテスト メソッドにのみ適用できます。 別のフレームワークを使用している場合は、同等の機能についてフレームワークのドキュメントを参照してください。  
+> ここに示すプロシージャは、マネージド コード用の Microsoft 単体テスト フレームワークを使用して記述したテスト メソッドにのみ適用できます。 別のフレームワークを使用している場合は、同等の機能についてフレームワークのドキュメントを参照してください。  
   
  たとえば、 `CheckingAccount` という名前の `AddIntegerHelper`クラスに不要なメソッドを追加するとします。 `AddIntegerHelper` は 2 つの整数を追加します。  
   

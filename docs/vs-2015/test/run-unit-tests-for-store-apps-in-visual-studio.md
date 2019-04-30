@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 309dbfcac8e5c4c38e65f8901c699dc2fa51c7a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446226"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Visual Studio での ストア アプリの単体テストの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60104181"
 このトピックでは、Microsoft Visual Studio でテスト エクスプローラーを使用して単体テストを実行する方法について説明します。
 
 > [!NOTE]
->  このセクションのトピックでは、Visual Studio Express for Windows 8 の機能について解説します。 Visual Studio Community、Enterprise、および Professional には、単体テストの追加機能が備わっています。
+> このセクションのトピックでは、Visual Studio Express for Windows 8 の機能について解説します。 Visual Studio Community、Enterprise、および Professional には、単体テストの追加機能が備わっています。
 >
 > - Microsoft テスト エクスプローラーのアドオン アダプターを作成したサードパーティまたはオープン ソースの単体テスト フレームワークを使用します。 また、テストのコード カバレッジ情報を分析して表示することもできます。
 >   - ビルドの後に毎回テストを実行します。 Microsoft Fakes を使用することもできます。これは、システムおよびサードパーティの機能をテスト コードに置き換えることにより、自分のコードにテストの重点を置くことができる、マネージド コードの分離フレームワークです。
@@ -118,7 +118,7 @@ ms.locfileid: "60104181"
 1. Visual Studio エディターで、デバッグする 1 つ以上のテスト メソッドにブレークポイントを設定します。
 
    > [!NOTE]
-   >  テスト メソッドを任意の順序で実行できるため、デバッグするすべてのテスト メソッドにブレークポイントを設定します。
+   > テスト メソッドを任意の順序で実行できるため、デバッグするすべてのテスト メソッドにブレークポイントを設定します。
 
 2. テスト エクスプローラーでテスト メソッドを選択し、ショートカット メニューの **[選択したテストのデバッグ]** を選択します。
 

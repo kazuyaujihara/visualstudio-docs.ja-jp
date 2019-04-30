@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb5a9e6806c76cbb072090c35444d936ce50bb79
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b589050c156e4c3d1e322bfa5996364016cbe38e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446725"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>チュートリアル: モデルにアクセスするテキスト テンプレートのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60087119"
 変更またはドメイン固有言語ソリューションでテキスト テンプレートを追加するときに、エンジンのソース コードに、または、生成されたコードをコンパイル時にテンプレートを変換するときにエラーが発生する可能性があります。 次のチュートリアルでは、テキスト テンプレートをデバッグすることの一部を示します。  
   
 > [!NOTE]
->  を一般に、テンプレート文字列の詳細についてを参照してください[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。 テキスト テンプレートのデバッグの詳細については、次を参照してください。[チュートリアル。テキスト テンプレートのデバッグ](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)します。  
+> を一般に、テンプレート文字列の詳細についてを参照してください[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。 テキスト テンプレートのデバッグの詳細については、次を参照してください。[チュートリアル。テキスト テンプレートのデバッグ](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)します。  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションを作成します。  
  この手順では、次の特性を持つドメイン固有言語ソリューションを作成します。  
@@ -58,7 +58,7 @@ ms.locfileid: "60087119"
 1. DebugTest.tt でコードを次のコードに置き換えます。  
   
     > [!NOTE]
-    >  コードには、エラーが含まれています。 これをデバッグするために、エラーが導入されました。  
+    > コードには、エラーが含まれています。 これをデバッグするために、エラーが導入されました。  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
@@ -122,7 +122,7 @@ ms.locfileid: "60087119"
 1. DebugTest.tt でコードを次のコードに置き換えます。  
   
     > [!NOTE]
-    >  コードには、エラーが含まれています。 これをデバッグするために、エラーが導入されました。  
+    > コードには、エラーが含まれています。 これをデバッグするために、エラーが導入されました。  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  

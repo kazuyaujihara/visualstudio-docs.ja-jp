@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ca2366111e0e87e8e95db66f9bdb146016adb8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63d313534fab789c5e4e79fb644111314e054250
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445160"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>方法: ドメイン固有言語を新バージョンに移行する
 ドメイン固有言語を使って定義するプロジェクトを移行する[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]のバージョンから[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]を使用して配布されて[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]します。
@@ -53,7 +53,7 @@ ms.locfileid: "60040133"
    - プロジェクトまたはツールによって、変更の一覧を表示するソリューションを選択します。
 
        > [!NOTE]
-       >  フォルダー名の横に表示されるチェック ボックスは、影響を与えるありません。 プロジェクトおよびソリューションを検査するフォルダーを展開する必要があります。
+       > フォルダー名の横に表示されるチェック ボックスは、影響を与えるありません。 プロジェクトおよびソリューションを検査するフォルダーを展開する必要があります。
 
 4. プロジェクトに変換します。
 
@@ -74,7 +74,7 @@ ms.locfileid: "60040133"
    2. をクリックして、**すべてのテンプレートの変換**ソリューション エクスプ ローラーのヘッダーにボタンをクリックします。
 
        > [!NOTE]
-       >  この手順を不要なことできます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))します。
+       > この手順を不要なことできます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))します。
 
 6. 変換後のプロジェクトでのカスタム コードを更新します。
 

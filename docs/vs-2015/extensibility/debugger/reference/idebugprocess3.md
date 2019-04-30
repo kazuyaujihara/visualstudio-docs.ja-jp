@@ -12,12 +12,12 @@ ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b0d453bae5d474dffdfdd8d6d18e09e47bf0f23b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 706feb470dc32992d9c0802f62182ca4eb1cabbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444842"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58977283"
 このインターフェイスは、実行中のプロセスとそのプログラムを表します。 このインターフェイスは、いくつかのメソッドの代替が存在する、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイス。 プロセスのすべてのプログラムに制御を提供します。  
   
 > [!NOTE]
->  [引き続き](../../../extensibility/debugger/reference/idebugprogram2-continue.md)、 [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)、および[手順](../../../extensibility/debugger/reference/idebugprogram2-step.md)メソッドは非推奨し、使用できなくする必要があります。 対応するメソッドを使用して、`IDebugProcess3`インターフェイスの代わりにします。  
+> [引き続き](../../../extensibility/debugger/reference/idebugprogram2-continue.md)、 [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)、および[手順](../../../extensibility/debugger/reference/idebugprogram2-step.md)メソッドは非推奨し、使用できなくする必要があります。 対応するメソッドを使用して、`IDebugProcess3`インターフェイスの代わりにします。  
   
 ## <a name="syntax"></a>構文  
   

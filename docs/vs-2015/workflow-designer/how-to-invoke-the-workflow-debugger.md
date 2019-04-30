@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73bbfc4557324a221e993ed51c300b6924abd6c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a3d5033bc9953aa00efb950eabce5e7346952f9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444160"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>方法: ワークフロー デバッガーを呼び出す
 ほとんどの場合、他の Visual Studio プログラミング言語で書かれたプログラムをデバッグするときと同じようにして、ワークフローをデバッグすることができます。 ワークフロー デバッガーは、次の方法で開始できます。  
@@ -26,7 +26,7 @@ ms.locfileid: "60099521"
 - リモート デバッグを使用します。 リモート デバッグの使用方法の詳細については、次を参照してください。[方法。リモート デバッグを有効にする](http://go.microsoft.com/fwlink/?LinkId=196257)します。  
   
     > [!NOTE]
-    >  ワークフロー アプリケーションは、x86 を対象とする場合のアーキテクチャと、リモート デバッグを使用し、64 ビット オペレーティング システムを実行するマシンでホストされる[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]に変更は、ワークフロー アプリケーションは、リモート コンピューターまたはターゲットにインストール**任意の CPU**します。  
+    > ワークフロー アプリケーションは、x86 を対象とする場合のアーキテクチャと、リモート デバッグを使用し、64 ビット オペレーティング システムを実行するマシンでホストされる[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]に変更は、ワークフロー アプリケーションは、リモート コンピューターまたはターゲットにインストール**任意の CPU**します。  
   
 ### <a name="stepping-through-code"></a>コードのステップ実行  
   

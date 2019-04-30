@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e124bb05fa42be48fc0c9054df9cb056d0680958
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408631"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>保存された IntelliTrace データを使用して (C#、Visual Basic、 C++)
 
@@ -64,7 +64,7 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
     - **[ステップの再現]** の **[IntelliTrace]** リンクを選択します。
 
 > [!TIP]
->  デバッグ中に IntelliTrace ファイルを閉じた場合、ファイルを簡単に開き直すことができます。 **[デバッグ]** メニューで **[IntelliTrace]**、 **[ログの概要の表示]** の順に選択します。 また **[IntelliTrace]** ウィンドウの **[ログの概要の表示]** を選択することもできます。 これは、IntelliTrace を使用したデバッグ中にのみ使用できます。
+> デバッグ中に IntelliTrace ファイルを閉じた場合、ファイルを簡単に開き直すことができます。 **[デバッグ]** メニューで **[IntelliTrace]**、 **[ログの概要の表示]** の順に選択します。 また **[IntelliTrace]** ウィンドウの **[ログの概要の表示]** を選択することもできます。 これは、IntelliTrace を使用したデバッグ中にのみ使用できます。
 
 ## <a name="Understand"></a> IntelliTrace ログを理解する
  .iTrace ファイルの次のセクションの一部は、特定のソース (たとえば、Test Manager、SharePoint アプリケーション) からデータを収集した場合にのみ表示されます。

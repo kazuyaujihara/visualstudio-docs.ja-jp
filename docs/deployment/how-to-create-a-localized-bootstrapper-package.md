@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a6b131e75e61e319a691a0b132bb57b7d0c227
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 856ea1e59a32a64c6a48b52c3ef1dcad9e0bbb80
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406817"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>方法: ローカライズ版のブートストラップ パッケージを作成する
 ブートストラップ パッケージを作成したら、さらに 2 つのファイルをロケールごとに作成して、ローカライズ版のブートストラップ パッケージを作成できます。2 つのファイルとは、ソフトウェア ライセンス条項ファイル (*eula.rtf* など) とパッケージ マニフェスト (*package.xml*) です。
@@ -31,7 +31,7 @@ ms.locfileid: "60061490"
 3. *package.xml* という名前のパッケージ マニフェストを作成し、文字列とカルチャを更新して、そのファイルを新しいフォルダーに格納します。 Visual Studio のブートストラップを対象言語で既に作成している場合は、Visual Studio の *package.xml* ファイルをコピーして、このステップで変更することができます。
 
 > [!NOTE]
->  セットアップ プロジェクトを使用してアプリケーションを配置する場合は、**Localization** プロパティを変更してアプリケーションをローカライズできます。
+> セットアップ プロジェクトを使用してアプリケーションを配置する場合は、**Localization** プロパティを変更してアプリケーションをローカライズできます。
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 578fd81c41d2c46130cf80f7e55e71a0d0f196de
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: b344621ea7980ce24c56a59a67edfe72f871f5ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443395"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>クラス ダイアグラムの使用 (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,12 +30,12 @@ ms.locfileid: "54834101"
   
  プロジェクト情報を提供するには、まずその情報を表示するためのクラス ダイアグラムを作成します。 詳細については、「[型およびリレーションシップの表示 (クラス デザイナー)](../ide/viewing-types-and-relationships-class-designer.md)」を参照してください。 プロジェクトのクラス ダイアグラムを複数作成し、それらを使用して、プロジェクト自体のビュー、プロジェクトの型の特定のサブセット、または型のメンバーの特定のサブセットを表示できます。  
   
- 各クラス ダイアグラムに表示する内容を定義するだけでなく、情報の提供方法を変更することもできます。詳細については、「[方法: クラス ダイアグラムをカスタマイズする (クラス デザイナー)](../ide/how-to-customize-class-diagrams-class-designer.md)」を参照してください。  
+ 各クラス ダイアグラムに表示する内容を定義するだけでなく、情報の提供方法を変更することもできます。詳細については、「[方法: クラス ダイアグラム (クラス デザイナー) をカスタマイズ](../ide/how-to-customize-class-diagrams-class-designer.md)します。  
   
- 1 つまたは複数のクラス ダイアグラムを微調整した後、それらを Microsoft Office ドキュメント内にコピーして印刷したり、画像ファイルとしてエクスポートしたりできます。 詳細については、「[方法: Microsoft Office ドキュメントにクラス ダイアグラムの要素をコピーする (クラス デザイナー)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md)」、「[方法: クラス ダイアグラムを印刷する (クラス デザイナー)](../ide/how-to-print-class-diagrams-class-designer.md)」、「[方法: クラス ダイアグラムをイメージとしてエクスポートする (クラス デザイナー)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)」を参照してください。  
+ 1 つまたは複数のクラス ダイアグラムを微調整した後、それらを Microsoft Office ドキュメント内にコピーして印刷したり、画像ファイルとしてエクスポートしたりできます。 詳細については、「[方法 :Microsoft Office ドキュメント (クラス デザイナー) にクラス ダイアグラムの要素をコピー](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md)、[方法。クラス ダイアグラム (クラス デザイナー) を印刷](../ide/how-to-print-class-diagrams-class-designer.md)と[方法。クラス ダイアグラム (クラス デザイナー) のイメージとしてエクスポート](../ide/how-to-export-class-diagrams-as-images-class-designer.md)します。  
   
 > [!NOTE]
->  クラス デザイナーはソース ファイルの場所を追跡しないので、プロジェクト構造を変更したり、プロジェクト内のソース ファイルを移動したりすると、クラス デザイナーが、特に typedef のソース型、基本クラス、またはアソシエーション型を追跡できなくなる場合があります。 **クラス デザイナーはこの型を表示できません**などのエラーが表示されることがあります。 エラーが発生した場合は、変更または再配置したソース コードをもう一度クラス ダイアグラムにドラッグして再表示します。  
+> クラス デザイナーはソース ファイルの場所を追跡しないので、プロジェクト構造を変更したり、プロジェクト内のソース ファイルを移動したりすると、クラス デザイナーが、特に typedef のソース型、基本クラス、またはアソシエーション型を追跡できなくなる場合があります。 **クラス デザイナーはこの型を表示できません**などのエラーが表示されることがあります。 エラーが発生した場合は、変更または再配置したソース コードをもう一度クラス ダイアグラムにドラッグして再表示します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [方法: プロジェクトにクラス ダイアグラムを追加する (クラス デザイナー)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
@@ -58,7 +58,7 @@ ms.locfileid: "54834101"
   
  クラス ダイアグラムを印刷する方法について説明します。  
   
- [方法: クラス ダイアグラムにコメント追加する (クラス デザイナー)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)  
+ [方法: クラス ダイアグラムにコメントを追加する (クラス デザイナー)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)  
   
  クラス ダイアグラムにコメントを追加する方法について説明します。  
   
@@ -68,5 +68,5 @@ ms.locfileid: "54834101"
   
 ## <a name="see-also"></a>関連項目  
  [型およびリレーションシップの表示 (クラス デザイナー)](../ide/viewing-types-and-relationships-class-designer.md)   
- [方法: クラス ダイアグラムをカスタマイズする (クラス デザイナー)](../ide/how-to-customize-class-diagrams-class-designer.md)   
- [方法: クラス ダイアグラムから型シェイプを削除する方法 (クラス デザイナー)](http://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)
+ [方法: クラス ダイアグラム (クラス デザイナー) のカスタマイズします。](../ide/how-to-customize-class-diagrams-class-designer.md)   
+ [方法: クラス ダイアグラム (クラス デザイナー) から型シェイプを削除します。](http://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

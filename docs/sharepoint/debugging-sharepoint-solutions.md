@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60aa38d5042625393132ffceb3cc226f44e67645
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443489"
 ---
 # <a name="debug-sharepoint-solutions"></a>SharePoint ソリューションをデバッグします。
   SharePoint ソリューションは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デバッガーを使用してデバッグできます。 デバッグを開始するときに[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint サーバーにプロジェクト ファイルを配置し、Web ブラウザーで SharePoint サイトのインスタンスを開きます。 以下のセクションでは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] で SharePoint アプリケーションをデバッグする方法について説明します。
@@ -103,7 +103,7 @@ ms.locfileid: "60060801"
 8. ワークフローの場合は、SharePoint ライブラリ、リスト、またはで選択したサイトをワークフローを関連付けます、 **SharePoint カスタマイズ ウィザード**します。
 
    > [!NOTE]
-   >  この関連付けは、選択した場合にのみに発生します。**自動的に関連付けるワークフロー**ウィザード。
+   > この関連付けは、選択した場合にのみに発生します。**自動的に関連付けるワークフロー**ウィザード。
 
 9. カスタマイズ可能な配置後コマンドが実行されます。
 
@@ -126,7 +126,7 @@ ms.locfileid: "60060801"
  ワークフロー プロジェクトをデバッグすると、その種類に応じたワークフロー テンプレートが [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によってライブラリまたはリストに追加されます。 このワークフロー テンプレートは手動で開始できるほか、項目を追加または更新することによって開始することもできます。 これで、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を使用してワークフローをデバッグできます。
 
 > [!NOTE]
->  その他のアセンブリへの参照を追加する場合は、これらのアセンブリがグローバル アセンブリ キャッシュにインストールされていることを確認してください ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 そうしないと、ワークフロー ソリューションは失敗します。 アセンブリをインストールする方法については、次を参照してください。[ドキュメントまたはアイテムでワークフローを手動で開始](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)します。
+> その他のアセンブリへの参照を追加する場合は、これらのアセンブリがグローバル アセンブリ キャッシュにインストールされていることを確認してください ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 そうしないと、ワークフロー ソリューションは失敗します。 アセンブリをインストールする方法については、次を参照してください。[ドキュメントまたはアイテムでワークフローを手動で開始](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)します。
 
  ただし、配置プロセスでは、ワークフローは開始されません。 SharePoint Web サイトからワークフローを開始する必要があります。 Microsoft Office Word 2010 などのクライアント アプリケーションや別個のサーバー側のコードを使用して、ワークフローを開始することもできます。 指定する方法のいずれかを使用して、 **SharePoint カスタマイズ ウィザード**します。
 

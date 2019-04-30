@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c1a5e5d8d33fed3c4e6348bcf2598f7093de5c98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1eaa3547733432715c5362b20030fe3d4a886900
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444335"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>チュートリアル: プログラムによるグラフィックス情報のキャプチャ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60093110"
 - グラフィックス情報をキャプチャする  
   
 > [!NOTE]
->  プログラムによるキャプチャの以前の実装では、Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を利用してキャプチャ機能を提供していましたが、Windows 8.1 は Direct3D 11.2 によりキャプチャを直接サポートしています。 このため、Windows 8.1 でプログラムによるキャプチャを行うために Remote Tools をインストールする必要がなくなりました。  
+> プログラムによるキャプチャの以前の実装では、Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を利用してキャプチャ機能を提供していましたが、Windows 8.1 は Direct3D 11.2 によりキャプチャを直接サポートしています。 このため、Windows 8.1 でプログラムによるキャプチャを行うために Remote Tools をインストールする必要がなくなりました。  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>プログラムによるキャプチャを使用するためにアプリケーションを準備する  
  アプリケーションでプログラムによるキャプチャを使用するには、必要なヘッダーをインクルードすることが必要です。 これらのヘッダーは、Windows 8.1 の SDK の一部です。  
@@ -58,10 +58,10 @@ ms.locfileid: "60093110"
     ```  
   
     > [!IMPORTANT]
-    >  ヘッダー ファイル vsgcapture.h—which サポートは、Windows 8.0 以降にプログラムによるキャプチャが含まれていません-Windows 8.1 アプリでプログラムによるキャプチャを実行します。 このヘッダーは DirectX 11.2 で使用することはできません。 D3d11_2.h ヘッダーが含まれる後にこのファイルが含まれる場合は、コンパイラは警告を発行します。 Vsgcapture.h が d3d11_2.h する前に含まれている場合、アプリは起動しません。  
+    > ヘッダー ファイル vsgcapture.h—which サポートは、Windows 8.0 以降にプログラムによるキャプチャが含まれていません-Windows 8.1 アプリでプログラムによるキャプチャを実行します。 このヘッダーは DirectX 11.2 で使用することはできません。 D3d11_2.h ヘッダーが含まれる後にこのファイルが含まれる場合は、コンパイラは警告を発行します。 Vsgcapture.h が d3d11_2.h する前に含まれている場合、アプリは起動しません。  
   
     > [!NOTE]
-    >  コンピューターに June 2010 DirectX SDK がインストールされており、プロジェクトのインクルード パスに `%DXSDK_DIR%includex86`が含まれている場合は、それをインクルード パスの最後に移動します。 ライブラリ パスでも同様にします。  
+    > コンピューターに June 2010 DirectX SDK がインストールされており、プロジェクトのインクルード パスに `%DXSDK_DIR%includex86`が含まれている場合は、それをインクルード パスの最後に移動します。 ライブラリ パスでも同様にします。  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
  定義する必要があります、Windows Phone 8.1 の SDK には、DXProgrammableCapture.h ヘッダーが含まれていない、ため、`IDXGraphicsAnalysis`インターフェイスを自分で使用できるように、`BeginCapture()`と`EndCapture()`メソッド。 前のセクションで説明されているとおり、他のヘッダーをインクルードします。  
@@ -85,7 +85,7 @@ ms.locfileid: "60093110"
  DirectX 11.2 からグラフィックス情報をキャプチャする前に、DXGI デバッグ インターフェイスを取得する必要があります。  
   
 > [!IMPORTANT]
->  グラフィックス診断の下でアプリを実行するプログラムによるキャプチャを使用する場合もする必要があります (alt キーを押しながら f5 キーで[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) または 、[コマンド ライン キャプチャ ツール](../debugger/command-line-capture-tool.md)します。  
+> グラフィックス診断の下でアプリを実行するプログラムによるキャプチャを使用する場合もする必要があります (alt キーを押しながら f5 キーで[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) または 、[コマンド ライン キャプチャ ツール](../debugger/command-line-capture-tool.md)します。  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis インターフェイスを取得するには  
   
@@ -106,7 +106,7 @@ ms.locfileid: "60093110"
     ```  
   
     > [!NOTE]
-    >  場合`DXGIGetDebugInterface1`返します`E_NOINTERFACE`(`error: E_NOINTERFACE No such interface supported`)、アプリがグラフィックス診断の下で実行されていることを確認 (alt キーを押しながら f5 キーで[!INCLUDE[vsprvs](../includes/vsprvs-md.md)])。  
+    > 場合`DXGIGetDebugInterface1`返します`E_NOINTERFACE`(`error: E_NOINTERFACE No such interface supported`)、アプリがグラフィックス診断の下で実行されていることを確認 (alt キーを押しながら f5 キーで[!INCLUDE[vsprvs](../includes/vsprvs-md.md)])。  
   
 ### <a name="capturing-graphics-information"></a>グラフィックス情報をキャプチャする  
  これで、正しい `IDXGraphicsAnalysis` インターフェイスを取得できたので、 `BeginCapture` および `EndCapture` を使用してグラフィックス情報をキャプチャできます。  
@@ -150,7 +150,7 @@ ms.locfileid: "60093110"
  または [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で、32 ビット アプリケーション向けのリモート キャプチャを実行するのに必要なコンポーネントをインストールします。  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]も含めて大半の Windows デスクトップ アプリケーションは、 [!INCLUDE[win8](../includes/win8-md.md)] for ARM デバイスでサポートされていないため、ARM デバイスでグラフィックス診断をキャプチャするには、Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] をプログラム キャプチャ API と一緒に使用する方法しかありません。  
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]も含めて大半の Windows デスクトップ アプリケーションは、 [!INCLUDE[win8](../includes/win8-md.md)] for ARM デバイスでサポートされていないため、ARM デバイスでグラフィックス診断をキャプチャするには、Remote Tools for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] をプログラム キャプチャ API と一緒に使用する方法しかありません。  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>プログラムによるキャプチャを使用するためにアプリケーションを準備する  
  グラフィックス診断ツールを使用するには、まず依存するグラフィックス情報をキャプチャする必要があります。 `CaptureCurrentFrame` API を使用して、プログラムによって情報をキャプチャできます。  
@@ -185,13 +185,13 @@ ms.locfileid: "60093110"
   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]アプリ、temp ディレクトリの場所は各ユーザーとアプリに固有であり C:\users などの場所でよく見られる\\*username*\AppData\Local\Packages\\ *パッケージ ファミリ名*\TempState\\します。 デスクトップ アプリの場合、temp ディレクトリの場所は各ユーザーに固有とは、通常 C:\Users などの場所にある\\*username*\AppData\Local\Temp\\します。  
   
 > [!NOTE]
->  特定の場所に書き込むには、その場所に対する書き込み権限を持っている必要があります。持っていない場合はエラーが発生します。 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] のアプリケーションは、アプリケーションがデータを書き込める場所についてはデスクトップ アプリケーションよりも制約が多く、特定の場所に書き込むためには追加の構成が必要な場合があります。  
+> 特定の場所に書き込むには、その場所に対する書き込み権限を持っている必要があります。持っていない場合はエラーが発生します。 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] のアプリケーションは、アプリケーションがデータを書き込める場所についてはデスクトップ アプリケーションよりも制約が多く、特定の場所に書き込むためには追加の構成が必要な場合があります。  
   
 ### <a name="capturing-the-graphics-information"></a>グラフィックス情報をキャプチャする  
  プログラムによるキャプチャのためのアプリケーションの準備が完了して、グラフィックス ログ ファイルの場所と名前を選択的に構成したら、アプリケーションをビルドして実行またはデバッグし、データをキャプチャします。プログラム キャプチャ API を使用する場合は、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] からグラフィックス診断を開始しないでください。 グラフィックス ログは、指定した場所に書き込まれます。 このバージョンのログを保持したい場合は、別の場所に移動します。それ以外の場合は、アプリケーションを再実行したときにログが上書きされます。  
   
 > [!TIP]
->  プログラムによるキャプチャを使用している間でも、アプリケーションにフォーカスを置いた状態で **[Print Screen]** を押すだけでグラフィックス情報を手動でキャプチャできます。 この方法を使用すると、プログラム キャプチャ API でキャプチャされていない追加のグラフィックス情報をキャプチャできます。  
+> プログラムによるキャプチャを使用している間でも、アプリケーションにフォーカスを置いた状態で **[Print Screen]** を押すだけでグラフィックス情報を手動でキャプチャできます。 この方法を使用すると、プログラム キャプチャ API でキャプチャされていない追加のグラフィックス情報をキャプチャできます。  
   
 ## <a name="next-steps"></a>次の手順  
  このチュートリアルでは、プログラムでグラフィックス情報をキャプチャする方法を示しました。 次の手順では、次のオプションを検討します。  

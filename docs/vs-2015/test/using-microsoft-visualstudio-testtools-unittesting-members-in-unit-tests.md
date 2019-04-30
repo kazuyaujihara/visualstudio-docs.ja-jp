@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37ca201f071d4cd9eda595a6fee6b95a23b4f05e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef42f7710598906310b77bd834adf04b21d6bfc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445857"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>単体テストでの Microsoft.VisualStudio.TestTools.UnitTesting のメンバーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "60095530"
 > [!NOTE]
 > 名前が文字列 Attribute で終わる Attribute 要素は、使用するときに文字列 Attribute を付けても付けなくてもかまいません。 たとえば、次の 2 つのコード例は同じように機能します。
 >
->  `[TestClass()]`
+> `[TestClass()]`
 >
->  `[TestClassAttribute()]`
+> `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>データ ドリブン テストで使用する要素
  データ ドリブン単体テストを設定するには、次の要素を使用します。 詳細については、次を参照してください[How To:。データ ドリブン単体テストを作成する](../test/how-to-create-a-data-driven-unit-test.md)と[チュートリアル。データ ソースを定義する構成ファイルを使用して](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)します。

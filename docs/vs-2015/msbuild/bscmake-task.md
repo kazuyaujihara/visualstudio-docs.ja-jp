@@ -21,18 +21,18 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 05290bed3fe51c69e29d8bafef927c91c63b5249
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 8223c014c0092d2c1092b97c0bd5f8c489112c9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426907"
 ---
 # <a name="bscmake-task"></a>BscMake タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 重要]
->  Visual Studio IDE では、bscmake は使用されなくなりました。 Visual Studio 2008 以降、ブラウザー情報は、ソリューション フォルダーの sdf ファイルに自動的に格納されます。  
+> Visual Studio IDE では、bscmake は使用されなくなりました。 Visual Studio 2008 以降、ブラウザー情報は、ソリューション フォルダーの sdf ファイルに自動的に格納されます。  
   
  Microsoft Browse Information Maintenance Utility ツール (bscmake.exe) をラップします。  bscmake.exe ツールは、コンパイル時に作成されるソース ブラウザー ファイル (.sbr) からブラウザー情報ファイル (.bsc) をビルドします。 .bsc ファイルを表示するには、**オブジェクト ブラウザー**を使用します。 詳細については、「[BSCMAKE リファレンス](http://msdn.microsoft.com/library/b97ad994-1355-4809-98db-6abc12c6fb13)」を参照してください。  
   

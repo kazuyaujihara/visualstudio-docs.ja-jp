@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 99a254798ad3e222401a8346df454a70699c7feb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ad20d4678c24458582f80cc819e6f6a651fb2790
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443023"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>変更ログ (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -401,7 +401,7 @@ Visual Studio Tools for Unity の変更ログです。
 - Visual Studio のテーマのパーツ処理を修正しました。
 
 > [!IMPORTANT]
->  Unity のエコシステムで最もよく利用されている言語は C# です。新しいサンプル アセットは C# で記述されており、Unity のドキュメントの既定言語も今後は C# になります。C# でのエクスペリエンスに重点を移すため、Microsoft では UnityScript と Boo に対する基本的なサポートを終了しました。 その結果、現在のところ VSTU ソリューションは C# のみとなり、読み込みが大幅に高速化しました。
+> Unity のエコシステムで最もよく利用されている言語は C# です。新しいサンプル アセットは C# で記述されており、Unity のドキュメントの既定言語も今後は C# になります。C# でのエクスペリエンスに重点を移すため、Microsoft では UnityScript と Boo に対する基本的なサポートを終了しました。 その結果、現在のところ VSTU ソリューションは C# のみとなり、読み込みが大幅に高速化しました。
 
 ## <a name="182"></a>1.8.2
  リリース: 2014 年 1 月 7 日
@@ -740,7 +740,7 @@ Visual Studio Tools for Unity の変更ログです。
 - Unity 4 での .pdb シンボルの変換を修正しました。
 
 > [!IMPORTANT]
->  Visual Studio 2012 をサポートするため、一部のファイルの名前変更や移動を行いました。 Unity をインポートする UnityVS パッケージの名前を、Visual Studio 2010 であるか Visual Studio 2012 であるかに応じて UnityVS 2010 または UnityVS 2012 とするようにしました。 さらに、このバージョンでは、UnityVS プロジェクト ファイルを再生成する必要もあります。
+> Visual Studio 2012 をサポートするため、一部のファイルの名前変更や移動を行いました。 Unity をインポートする UnityVS パッケージの名前を、Visual Studio 2010 であるか Visual Studio 2012 であるかに応じて UnityVS 2010 または UnityVS 2012 とするようにしました。 さらに、このバージョンでは、UnityVS プロジェクト ファイルを再生成する必要もあります。
 
 ## <a name="106---internal-build"></a>1.0.6 - 内部ビルド
  リリース: 2012 年 9 月 12 日

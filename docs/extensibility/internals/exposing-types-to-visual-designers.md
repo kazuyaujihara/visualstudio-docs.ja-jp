@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffd060ca442d0979c76781ae4467b28af69a42b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415203"
 ---
 # <a name="expose-types-to-visual-designers"></a>ビジュアル デザイナーへの型を公開します。
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ビジュアル デザイナーを表示するためにデザイン時にクラスと型定義へのアクセスが必要です。 クラスは、定義済みの一連の (参照とその依存関係) は、現在のプロジェクトの依存関係の完全なセットを含むアセンブリから読み込まれます。 ビジュアル デザイナーのクラスのアクセスとカスタム ツールによって生成されたファイルで定義されている型に必要もあります。
@@ -27,7 +27,7 @@ ms.locfileid: "60104071"
  プロジェクト システムは、これらの変更は、カスタム ツールを実行した結果を提供する、カスタム ツールの出力ファイルに変更を追跡する完全なサポートを提供します。 カスタム ツールを実行するたびに新しい一時 PE が生成され、デザイナーに適切な通知が送信されます。
 
 > [!NOTE]
->  一時的なプログラムの実行可能ファイルの生成ファイルがバック グラウンドであるため、コンパイルが失敗した場合、ユーザーにエラーが報告されません。
+> 一時的なプログラムの実行可能ファイルの生成ファイルがバック グラウンドであるため、コンパイルが失敗した場合、ユーザーにエラーが報告されません。
 
  一時 PE サポートを活用するカスタム ツールは、次の規則に従う必要があります。
 

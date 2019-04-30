@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33666c0e5d63d8d4d33d544fcfe18d8c185ce843
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a436027fc4194f762fc4b28545fdf5d4bd3b95b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444611"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>方法: ワークフロー コンソール アプリケーションを作成する
 [!INCLUDE[wf](../includes/wf-md.md)] を利用して、無人または有人のプロセスの実行のためのワークフローを作成できます。 [!INCLUDE[wfd1](../includes/wfd1-md.md)]は、このようなワークフローを作成するためのデザイン サーフェイスを備えています。 [!INCLUDE[wfd2](../includes/wfd2-md.md)]は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内からワークフローを作成する場合に使用でき、デザイナーを再ホストする他のアプリケーションに統合することもできます。  
@@ -40,7 +40,7 @@ ms.locfileid: "60044353"
 7. **ソリューション**ボックスに、新しいソリューションの名前を入力します。 クリックして**OK**アプリケーションを作成します。  
   
     > [!NOTE]
-    >  既存のソリューションのワークフロー コンソール アプリケーションを追加する場合は、そのソリューションを開きます[!INCLUDE[vs2010](../includes/vs2010-md.md)]でソリューションを右クリックして**ソリューション エクスプ ローラー**、選択および**追加**、し**新しいプロジェクト.** 開く、**新しいプロジェクト** ダイアログ ボックス。 上記の手順を実行します。  
+    > 既存のソリューションのワークフロー コンソール アプリケーションを追加する場合は、そのソリューションを開きます[!INCLUDE[vs2010](../includes/vs2010-md.md)]でソリューションを右クリックして**ソリューション エクスプ ローラー**、選択および**追加**、し**新しいプロジェクト.** 開く、**新しいプロジェクト** ダイアログ ボックス。 上記の手順を実行します。  
   
 8. プロジェクト テンプレートで XAML のワークフロー定義が作成され、コンソール アプリケーション定義がソース コードに記述されます。 [!INCLUDE[wfd2](../includes/wfd2-md.md)]で、作成したワークフロー用のキャンバスが開かれて表示されます。  
   

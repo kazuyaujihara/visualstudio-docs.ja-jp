@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c57df245e897452d0bb8f3ae32d6490af9ee91fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8927e6140792c12f42f1822afd0e715881384f1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402804"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>方法: O/R デザイナーを使用して継承を構成する
 **オブジェクト リレーショナル デザイナー** (**O/R デザイナー**) リレーショナル システムに実装されている多くの場合は、単一テーブル継承の概念をサポートしています。 単一テーブル継承には、親情報と子情報の両方のフィールドを含む単一のデータベース テーブルがあります。 リレーショナル データでは、判別用の列に、レコードが属するクラスを決定する値が含まれています。
@@ -33,12 +33,12 @@ ms.locfileid: "60063011"
 4. **ツールボックス**の **[オブジェクト リレーショナル デザイナー]** タブで **[継承]** をクリックし、サブクラス (名前を変更したテーブル) をクリックして、基本クラスに接続します。
 
     > [!NOTE]
-    >  **ツールボックス**の **[継承]** 項目をクリックしてマウス ボタンを放し、手順 3 で作成したクラスの 2 番目のコピーをクリックしてから、手順 2 で作成した最初のクラスをクリックします。 継承線の矢印は、最初のクラスを指します。
+    > **ツールボックス**の **[継承]** 項目をクリックしてマウス ボタンを放し、手順 3 で作成したクラスの 2 番目のコピーをクリックしてから、手順 2 で作成した最初のクラスをクリックします。 継承線の矢印は、最初のクラスを指します。
 
 5. 各クラスで、関連付けに使用されていない、表示する必要のないオブジェクト プロパティを削除します。 関連付けに使用するオブジェクトのプロパティを削除しようとした場合、エラーが表示されます。[プロパティ\<プロパティ名 > の関連付けに関与しているために削除できません\<関連付けの名前 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)します。
 
     > [!NOTE]
-    >  派生クラスは基本クラスで定義されているプロパティを継承するため、各クラスに同じ列を定義することはできません  (列はプロパティとして実装されます)。基本クラスのプロパティに継承修飾子を設定することで、派生クラスでの列の作成が可能になります。 詳細については、次を参照してください。[継承の基本 (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)します。
+    > 派生クラスは基本クラスで定義されているプロパティを継承するため、各クラスに同じ列を定義することはできません  (列はプロパティとして実装されます)。基本クラスのプロパティに継承修飾子を設定することで、派生クラスでの列の作成が可能になります。 詳細については、次を参照してください。[継承の基本 (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)します。
 
 6. 継承線を選択して、 **O/R デザイナー**します。
 

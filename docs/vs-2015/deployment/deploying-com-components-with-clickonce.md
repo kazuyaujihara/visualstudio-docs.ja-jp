@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 63328af2211f18fe553c32b018ed0a8422a1857f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 282945f473f2799b92b24321383190ca38557cbc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422768"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>ClickOnce での COM コンポーネントの配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "60066352"
 2. **新しいプロジェクト**ダイアログ ボックスで、 **Visual Basic**ノード、 **ActiveX DLL**プロジェクト。 **[名前]** ボックスに「 `VB6Hello`」と入力します。  
   
     > [!NOTE]
-    >  ActiveX の DLL と ActiveX コントロール プロジェクト型は、登録を必要としない COM; でサポートされます。ActiveX 実行可能ファイルと ActiveX ドキュメント プロジェクトの種類がサポートされていません。  
+    > ActiveX の DLL と ActiveX コントロール プロジェクト型は、登録を必要としない COM; でサポートされます。ActiveX 実行可能ファイルと ActiveX ドキュメント プロジェクトの種類がサポートされていません。  
   
 3. **ソリューション エクスプ ローラー**、ダブルクリックして**Class1.vb**テキスト エディターを開きます。  
   
@@ -80,7 +80,7 @@ ms.locfileid: "60066352"
 5. コンポーネントをビルドします。 **ビルド** メニューのをクリックして**ソリューションのビルド**します。  
   
 > [!NOTE]
->  COM コントロール プロジェクトの種類を登録しない COM が Dll のみをサポートします。 登録を必要としない COM を Exe を使用することはできません。  
+> COM コントロール プロジェクトの種類を登録しない COM が Dll のみをサポートします。 登録を必要としない COM を Exe を使用することはできません。  
   
  これで、Windows ベースのアプリケーションを作成でき、COM コンポーネントへの参照を追加できます。  
   
@@ -128,7 +128,7 @@ ms.locfileid: "60066352"
    ここで、ときに予想どおり、アプリケーションは、f5 キーを押してが登録を必要としない COM の下で実行されているようになりました これを証明するために VB6Hello.dll コンポーネントの登録解除して RegFreeComDemo1.exe Visual Studio IDE の外部で実行してみてください。 ボタンがクリックされたとき、この時点でも機能します。 アプリケーション マニフェストを一時的に変更する場合は、もう一度失敗します。  
   
 > [!NOTE]
->  COM コンポーネントの休暇をシミュレートするには、一時的に登録を解除すること。 コマンド プロンプトを開き、」と入力して、[システム] フォルダーに移動して`cd /d %windir%\system32`、」と入力して、コンポーネントの登録を解除`regsvr32 /u VB6Hello.dll`します。 」と入力してもう一度登録できます`regsvr32 VB6Hello.dll`します。  
+> COM コンポーネントの休暇をシミュレートするには、一時的に登録を解除すること。 コマンド プロンプトを開き、」と入力して、[システム] フォルダーに移動して`cd /d %windir%\system32`、」と入力して、コンポーネントの登録を解除`regsvr32 /u VB6Hello.dll`します。 」と入力してもう一度登録できます`regsvr32 VB6Hello.dll`します。  
   
  最後の手順は、使用して、アプリケーションを発行する[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]:  
   

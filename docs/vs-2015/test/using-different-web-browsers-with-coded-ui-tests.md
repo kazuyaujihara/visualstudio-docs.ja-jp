@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d3854f4844fba3b3c1a0a519f06d59d31c4f7072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445885"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>コード化された UI テストでのさまざまな Web ブラウザーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60100405"
  **記録:** Internet Explorer を使用する Web アプリケーション テストを記録するには、コード化された UI テスト ビルダーを使用する必要があります。 コード化された UI テストで通常行うように、定義済みプロパティ セットを使用して、テストされるコントロールの検証コードとカスタム コードを必要に応じて追加できます。 詳細については、「[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)」を参照してください。  
   
 > [!NOTE]
->  Google Chrome や Mozilla Firefox ブラウザーを使用して、コード化された UI テストを記録することはできません。  
+> Google Chrome や Mozilla Firefox ブラウザーを使用して、コード化された UI テストを記録することはできません。  
   
  **Internet Explorer での再生:** ブラウザーが明示的に指定されていない場合、テストは既定では Internet Explorer で実行されます。 使用されるブラウザーを明示的に指定するには、テスト コードで **BrowserWindow.CurrentBrowser** プロパティを設定します。 Internet Explorer の場合は、このプロパティを **IE** または **Internet Explorer** に設定する必要があります。  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60100405"
 3. 拡張機能を強調表示し、**[ダウンロード]** を選択します。  
   
    > [!TIP]
-   >  コード化された UI のクロス ブラウザー テスト用 Selenium コンポーネントは、[こちら](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)からもダウンロードできます。  
+   > コード化された UI のクロス ブラウザー テスト用 Selenium コンポーネントは、[こちら](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)からもダウンロードできます。  
   
    コード化された UI テストの作成方法と使用方法の詳細については、「[コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)」を参照してください。  
   

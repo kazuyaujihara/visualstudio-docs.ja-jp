@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2643c88eaf133d41fba7a8112f9b92150be3148
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 37b3f3105280ec384b6c180a65d2492ffd3bb02c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411114"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML スキーマ リファレンス
 コマンド テーブル コンパイラ スキーマの要素のテーブルの各要素と属性に、許可されている子を提供します。
@@ -24,7 +24,7 @@ ms.locfileid: "56684638"
  XML ベースのコマンド テーブル (.vsct) の構成ファイルでは、統合開発環境 (IDE) に VSPackage を提供するコマンド要素を定義します。 これらの要素には、メニュー項目、メニューのツールバー、およびコンボ ボックスが含まれます。
 
 > [!NOTE]
->  VSCT コンパイラでは、.vsct ファイルでプリプロセッサを実行できます。 これは通常は、C プリプロセッサを定義することに含まれる C++ ファイルで使用されているのと同じ構文をあるマクロ、します。 これの例を示しますが、.vsct で提供されているファイルを**新しいプロジェクト**ウィザードは、VSPackage プロジェクトを作成します。
+> VSCT コンパイラでは、.vsct ファイルでプリプロセッサを実行できます。 これは通常は、C プリプロセッサを定義することに含まれる C++ ファイルで使用されているのと同じ構文をあるマクロ、します。 これの例を示しますが、.vsct で提供されているファイルを**新しいプロジェクト**ウィザードは、VSPackage プロジェクトを作成します。
 
 ## <a name="optional-elements"></a>省略可能な要素
  一部の VSCT 要素は省略可能です。 場合、`Parent`引数が指定されていない Group_Undefined:0暗示します。 場合、`Icon`引数が指定されていない、guidOfficeIcon:msotcidNoIcon を暗黙的に指定されます。 ショートカット キーが定義されている場合は、エミュレーションでは、通常使用されていないは省略可能です。

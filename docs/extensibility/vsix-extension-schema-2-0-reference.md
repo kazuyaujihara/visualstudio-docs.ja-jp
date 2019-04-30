@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a029345afb8b54c85d35e500e4ada48c02c54ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cf2840c22bcddb9090cb078be6a8ad53d1ca1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411137"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 拡張機能スキーマ 2.0 リファレンス
 VSIX の配置マニフェスト ファイルでは、VSIX パッケージの内容について説明します。 ファイル形式は、スキーマによって管理されます。 このスキーマのバージョン 2.0 では、カスタムの型と属性の追加をサポートします。  マニフェストのスキーマは拡張可能です。 マニフェストのローダーでは、XML 要素とそれを認識しない属性は無視されます。
 
 > [!IMPORTANT]
->  Visual Studio 2015 では、Visual Studio 2010、Visual Studio 2012、または Visual Studio 2013 の形式で VSIX ファイルを読み込むことができます。
+> Visual Studio 2015 では、Visual Studio 2010、Visual Studio 2012、または Visual Studio 2013 の形式で VSIX ファイルを読み込むことができます。
 
 ## <a name="package-manifest-schema"></a>パッケージ マニフェスト スキーマ
  マニフェストの XML ファイルのルート要素は`<PackageManifest>`します。 1 つの属性を持つ`Version`、マニフェストの形式のバージョンであります。 形式には、大きな変更が加えられて、バージョンの形式が変更されます。 この記事で説明を設定して、マニフェストで指定されているマニフェスト形式バージョン 2.0 では、`Version`属性のバージョンの値を「2.0」を = です。
@@ -82,7 +82,7 @@ VSIX の配置マニフェスト ファイルでは、VSIX パッケージの内
 
     - 「グローバル」では、インストールは、特定の SKU にスコープでないことを指定します。 たとえば、この値は、拡張機能 SDK がインストールされている場合に使用されます。
 
-    - "ProductExtension"では、従来 VSIX 拡張機能 (バージョン 1.0) を個別の Visual Studio Sku にスコープがインストールされていることを指定します。 これが既定値です。
+    - "ProductExtension"では、従来 VSIX 拡張機能 (バージョン 1.0) を個別の Visual Studio Sku にスコープがインストールされていることを指定します。 これは既定値です。
 
 - `AllUsers` -この省略可能な属性では、このパッケージをすべてのユーザーに対してインストールするかどうかを指定します。 既定では、この属性が false の場合、ユーザーごと、パッケージは、これを指定します。 (この値を true に設定すると、インストールするユーザー必要がありますに昇格させる結果の VSIX をインストールする管理者の特権レベル。
 

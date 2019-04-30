@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bfaf5ee9143a3122f779ab8292210b90da771f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437990"
 ---
 # <a name="signing-page-project-designer"></a>[署名] ページ (プロジェクト デザイナー)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "59650397"
  遅延署名されたプロジェクトは実行されず、デバッグできないことに注意してください。 ただし、[Sn.exe (厳密名ツール)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) と `-Vr` オプションを使用すると、開発時に検証をスキップできます。  
   
 > [!NOTE]
->  アセンブリに署名するときに、秘密キーへのアクセス権がない場合があります。 たとえば、組織には、開発者が日常的にアクセスしない厳重に保護されたキーのペアがある場合があります。 公開キーは使用可能ですが、秘密キーへのアクセスは少数のユーザーに限定されます。 このような場合は、*遅延*または*部分署名*を使用して公開キーを提供し、アセンブリが引き渡されるまで、秘密キーの追加を遅らせることができます。  
+> アセンブリに署名するときに、秘密キーへのアクセス権がない場合があります。 たとえば、組織には、開発者が日常的にアクセスしない厳重に保護されたキーのペアがある場合があります。 公開キーは使用可能ですが、秘密キーへのアクセスは少数のユーザーに限定されます。 このような場合は、*遅延*または*部分署名*を使用して公開キーを提供し、アセンブリが引き渡されるまで、秘密キーの追加を遅らせることができます。  
   
 ## <a name="see-also"></a>関連項目  
  [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)   

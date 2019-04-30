@@ -20,23 +20,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 756b1b1171c18fe435d318d5fb4bccf278aecc58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: d78d82a51f88bfaf076b56692629e801689e103e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443531"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>SharePoint ワークフロー ソリューションを作成します。
 
 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ドキュメントとリスト アイテム、SharePoint Web サイトでのライフ サイクルを管理するカスタム ワークフローを作成するためのツールを提供します。 用意されている項目には、デザイナー、一連のアクティビティのコントロール、および必要なアセンブリ参照が含まれます。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 含まれています、 **SharePoint カスタマイズ ウィザード**、作成や、ワークフローを構成します。
 
-SharePoint の詳細については、[Microsoft SharePoint 製品およびテクノロジ](http://go.microsoft.com/fwlink/?LinkId=178470)を参照してください。
+SharePoint の詳細については、次を参照してください。 [Microsoft SharePoint 製品およびテクノロジ](http://go.microsoft.com/fwlink/?LinkId=178470)します。
 
 ## <a name="workflows-in-sharepoint"></a>SharePoint でのワークフロー
  ワークフローを SharePoint ライブラリまたはリストに追加する場合は、ライブラリまたはリスト内のすべてのアイテムでのビジネス プロセスを適用します。 ワークフローでは、システムまたはユーザーを編集し、確認し、項目を送信するなど、各アイテムに対して実行する必要がありますアクションを説明します。 呼ばれるこれらのアクション*アクティビティ*は、ワークフローの構成要素です。
 
- SharePoint ワークフローを作成する[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]し、SharePoint Web サイトに展開します。 ワークフローは、SharePoint に配置される後、は、ライブラリまたはリストに関連付けます。 開始できます、自動的にプロセスが、またはユーザーによって手動でします。 ワークフロー操作の詳細については、[Visual Studio を使用して SharePoint の開発ワークフロー](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio)を参照してください。
+ SharePoint ワークフローを作成する[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]し、SharePoint Web サイトに展開します。 ワークフローは、SharePoint に配置される後、は、ライブラリまたはリストに関連付けます。 開始できます、自動的にプロセスが、またはユーザーによって手動でします。 ワークフロー操作の詳細については、次を参照してください。 [Visual Studio を使用して SharePoint の開発ワークフロー](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio)します。
 
 ## <a name="create-custom-sharepoint-workflows"></a>カスタムの SharePoint ワークフローを作成します。
  2 つの SharePoint ワークフロー プロジェクトで使用できる[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]:**シーケンシャル ワークフロー**と**ステート マシン ワークフロー**します。
@@ -49,7 +49,7 @@ SharePoint の詳細については、[Microsoft SharePoint 製品およびテ�
 
  ![ステート マシン ワークフロー](../sharepoint/media/sp-state.png "マシンのワークフローの状態")
 
- ワークフローの種類の詳細については、[ワークフロー型](http://go.microsoft.com/fwlink/?LinkId=178995)を参照してください。
+ ワークフローの種類の詳細については、次を参照してください。[ワークフロー型](http://go.microsoft.com/fwlink/?LinkId=178995)します。
 
 ### <a name="use-the-wizard"></a>ウィザードの使用
  SharePoint ワークフロー プロジェクトを作成するときに[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、最初にその設定を指定する、 **SharePoint カスタマイズ ウィザード**します。 ウィザードでは、これらの設定を使用でプロジェクトを作成して**ソリューション エクスプ ローラー**します。 このプロジェクトは、コード ファイルでは、ワークフローの配置に使用されるいくつかのファイルが含まれていて、カスタム SharePoint ワークフローを作成するために必要なアセンブリへの参照します。
@@ -57,7 +57,7 @@ SharePoint の詳細については、[Microsoft SharePoint 製品およびテ�
  ワークフローを作成した後は、[プロパティ] ウィンドウでそのプロパティを変更できます。 省略記号ボタンをクリックする必要がいくつかが、ほとんどのワークフロー プロパティをプロパティ ウィンドウで直接変更できます (![ASP.NET モバイル デザイナー楕円](../sharepoint/media/mwellipsis.gif "ASP.NET モバイル デザイナー楕円")) するその値を変更します。 このボタンの再起動、 **SharePoint カスタマイズ ウィザード**します。 プロパティ値の変更、選択を行った後、**完了**ボタンをクリックして確定します。
 
 > [!NOTE]
->  **ワークフロー型**プロパティは読み取り専用であり変更ことはできません。 ワークフローの種類を変更する場合は、別のワークフローを作成する必要があります。
+> **ワークフロー型**プロパティは読み取り専用であり変更ことはできません。 ワークフローの種類を変更する場合は、別のワークフローを作成する必要があります。
 
 ## <a name="design-a-sharepoint-workflow"></a>SharePoint ワークフローを設計します。
  使用して、ビジネス プロセスのすべての手順を定義した後、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ワークフロー デザイナーの SharePoint ワークフローを設計します。 デザイナーを開くには、Workflow1.cs workflow1.vb でダブルクリックして**ソリューション エクスプ ローラー**、またはそれらのファイルのいずれかのショートカット メニューを開きし、選択**開く**します。
@@ -85,7 +85,7 @@ SharePoint の詳細については、[Microsoft SharePoint 製品およびテ�
 
 - **Windows Workflow v3.5**
 
-  すべての主要なワークフロー活動は、SharePoint でサポートされます。 詳細については、[ワークフロー アクティビティの Windows SharePoint Services の概要](http://go.microsoft.com/fwlink/?LinkID=156094)を参照してください。
+  すべての主要なワークフロー活動は、SharePoint でサポートされます。 詳細については、次を参照してください。[ワークフロー アクティビティの Windows SharePoint Services の概要](http://go.microsoft.com/fwlink/?LinkID=156094)します。
 
 #### <a name="sharepoint-workflow-activities"></a>SharePoint ワークフロー アクティビティ
  **SharePoint ワークフロー**タブで使用するための特殊な活動を含む[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]します。 これらのアクティビティは、簡略化し、ドキュメントのライフ サイクル ワークフローの開発を合理化します。 表示されているアクティビティの詳細については、 **SharePoint ワークフロー**  タブを参照してください[ワークフロー アクティビティの Windows SharePoint Services の概要](http://go.microsoft.com/fwlink/?LinkID=156094)します。
@@ -93,12 +93,12 @@ SharePoint の詳細については、[Microsoft SharePoint 製品およびテ�
 #### <a name="windows-workflow-activities"></a>Windows ワークフロー アクティビティ
  **Windows ワークフロー**タブが用意されているアクティビティを含む、[!INCLUDE[TLA#tla_workflow](../sharepoint/includes/tlasharptla-workflow-md.md)]します。 これらのアクティビティを使用すると、あらゆる種類の Windows ワークフロー アプリケーションのワークフローのスケジュールを作成します。
 
- 表示されているアクティビティの詳細については、 **Windows ワークフロー**  タブを参照してください[Windows Workflow Foundation アクティビティ](http://go.microsoft.com/fwlink/?LinkID=156096)します。 詳細については、Windows Workflow Foundation は、[Windows Workflow Foundation の概要](http://go.microsoft.com/fwlink/?LinkID=128632)を参照してください。
+ 表示されているアクティビティの詳細については、 **Windows ワークフロー**  タブを参照してください[Windows Workflow Foundation アクティビティ](http://go.microsoft.com/fwlink/?LinkID=156096)します。 詳細については、Windows Workflow Foundation は、次を参照してください。 [Windows Workflow Foundation の概要](http://go.microsoft.com/fwlink/?LinkID=128632)します。
 
 ### <a name="work-with-activities-in-the-designer"></a>デザイナーでアクティビティを使用します。
  ワークフローのスケジュールは、Windows ワークフロー アクティビティおよび SharePoint ワークフロー アクティビティの組み合わせを含めることができます。
 
- デザイナーでは、配置およびアクティビティを正しく構成するための視覚的な手掛かりが表示されます。 ドラッグしたり、ワークフローのスケジュールにアクティビティをコピーする場合、デザイナーには、ワークフローでそのアクティビティの有効な場所を示す緑色のプラス記号 (+) アイコンが表示されます。 いることは有効な場所でアクティビティを配置することはできません。 たとえば、Listen アクティビティの分岐で最初のアクティビティとして Send アクティビティを配置することはできません。 詳細については、[SharePoint Designer デベロッパー センター](http://go.microsoft.com/fwlink/?LinkId=178476)を参照してください。
+ デザイナーでは、配置およびアクティビティを正しく構成するための視覚的な手掛かりが表示されます。 ドラッグしたり、ワークフローのスケジュールにアクティビティをコピーする場合、デザイナーには、ワークフローでそのアクティビティの有効な場所を示す緑色のプラス記号 (+) アイコンが表示されます。 いることは有効な場所でアクティビティを配置することはできません。 たとえば、Listen アクティビティの分岐で最初のアクティビティとして Send アクティビティを配置することはできません。 詳細については、次を参照してください。 [SharePoint Designer デベロッパー センター](http://go.microsoft.com/fwlink/?LinkId=178476)します。
 
 ## <a name="collect-information-during-the-workflow"></a>ワークフローの間に情報を収集します。
  ユーザーから情報を収集する時間にワークフローの定義済みにします。 フォームまたはアイテムのプロパティを使用して情報を収集することができます。
@@ -116,10 +116,10 @@ SharePoint の詳細については、[Microsoft SharePoint 製品およびテ�
 
 - タスク
 
-  これらのうち、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]アソシエーションと開始フォーム項目テンプレートが含まれています。 例、*関連付けフォーム*経費ワークフローの使用制限など、ワークフローに関連するパラメーターを入力できるように、管理者のワークフローをインストールする 1 つです。 例、*開始フォーム*経費ワークフローのユーザーがワークフローに費やされた金額を入力できる 1 つです。 この種類のフォームの詳細については、[SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)を参照してください。
+  これらのうち、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]アソシエーションと開始フォーム項目テンプレートが含まれています。 例、*関連付けフォーム*経費ワークフローの使用制限など、ワークフローに関連するパラメーターを入力できるように、管理者のワークフローをインストールする 1 つです。 例、*開始フォーム*経費ワークフローのユーザーがワークフローに費やされた金額を入力できる 1 つです。 この種類のフォームの詳細については、次を参照してください。 [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)します。
 
 ### <a name="item-properties"></a>項目のプロパティ
- SharePoint ライブラリまたはリスト内の項目のプロパティを使用して、ユーザーから情報を収集することもできます。 メイン コード ファイル (Workflow1.cs workflow1.vb) という名前の Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties クラスのインスタンスを宣言します`workflowProperties`します。 使用して、`workflowProperties`ライブラリまたはコードの一覧のプロパティにアクセスするオブジェクト。 例については、次を参照してください。[チュートリアル。作成し、SharePoint ワークフロー ソリューションのデバッグ](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)します。
+ SharePoint ライブラリまたはリスト内の項目のプロパティを使用して、ユーザーから情報を収集することもできます。 メイン コード ファイル (Workflow1.cs workflow1.vb) という名前の Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties クラスのインスタンスを宣言します`workflowProperties`します。 使用して、`workflowProperties`ライブラリまたはコードの一覧のプロパティにアクセスするオブジェクト。 例については、「[チュートリアル: 作成し、SharePoint ワークフロー ソリューションのデバッグ](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)します。
 
 ## <a name="debug-a-sharepoint-workflow-template"></a>SharePoint ワークフロー テンプレートをデバッグします。
  できますプロジェクトをデバッグする SharePoint ワークフローと同じ他のデバッグ時に[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web ベースのプロジェクト。 開始すると、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デバッガー、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で指定した設定を使用して、 **SharePoint カスタマイズ ウィザード**を適切な SharePoint Web サイトを開き、ワークフロー テンプレートを自動的に関連付ける適切なライブラリまたはリスト。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] アタッチしても、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デバッガーを[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]という名前のプロセス*w3wp.exe*します。
@@ -127,10 +127,10 @@ SharePoint の詳細については、[Microsoft SharePoint 製品およびテ�
  ワークフローをテストするにする必要があります手動で開始します。 詳細については、「ワークフローのデバッグ」セクションを参照してください[SharePoint ソリューションのデバッグ](../sharepoint/debugging-sharepoint-solutions.md)します。 詳細については[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web アプリケーションのデバッグを参照してください[web アプリケーションとスクリプトをデバッグ](../debugger/how-to-enable-debugging-for-aspnet-applications.md)します。
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>SharePoint ワークフロー テンプレートをデプロイします。
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint ワークフロー プロジェクトを他のような展開[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint プロジェクト。 詳細については、[パッケージと SharePoint のデプロイ ソリューション](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)を参照してください。
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint ワークフロー プロジェクトを他のような展開[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint プロジェクト。 詳細については、次を参照してください。[パッケージと SharePoint のデプロイ ソリューション](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)します。
 
 ## <a name="import-globally-reusable-workflows"></a>グローバルに再利用可能なワークフローをインポートします。
- サイト固有の再利用可能なワークフローを作成するだけでなく SharePoint Designer を使用すると、作成*グローバルに再利用可能なワークフロー*、任意の SharePoint サイトで使用できるワークフローであります。 再利用可能なワークフローのインポート プロジェクト[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]現在グローバルに再利用可能なワークフローをインポートしません。 ただし、SharePoint Designer を使用して、グローバルに再利用可能なワークフローを再利用可能なワークフローに変換するか、または、未変換の宣言型ワークフローとワークフローをインポートすることができます。 詳細については、[既存の SharePoint サイトからアイテムをインポート](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)を参照してください。
+ サイト固有の再利用可能なワークフローを作成するだけでなく SharePoint Designer を使用すると、作成*グローバルに再利用可能なワークフロー*、任意の SharePoint サイトで使用できるワークフローであります。 再利用可能なワークフローのインポート プロジェクト[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]現在グローバルに再利用可能なワークフローをインポートしません。 ただし、SharePoint Designer を使用して、グローバルに再利用可能なワークフローを再利用可能なワークフローに変換するか、または、未変換の宣言型ワークフローとワークフローをインポートすることができます。 詳細については、次を参照してください。[既存の SharePoint サイトからアイテムをインポート](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)します。
 
 ## <a name="related-topics"></a>関連トピック
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 583c15a5b605671e09ac47a42d49b068393ffe2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440883"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>チュートリアル: Outlook で電子メール メッセージと共にカスタム作業ウィンドウを表示します。
   このチュートリアルでは、一意のインスタンスが作成または開かれた各電子メール メッセージと共にカスタム作業ウィンドウの表示方法を示します。 ユーザーは、各電子メール メッセージのリボンにあるボタンを使用して、カスタム作業ウィンドウを表示または非表示にすることができます。
@@ -31,7 +31,7 @@ ms.locfileid: "60062557"
  複数のエクスプローラーやインスペクターのウィンドウでカスタム作業ウィンドウを表示するには、開いているそれぞれのウィンドウに対してカスタム作業ウィンドウのインスタンスを作成する必要があります。 Outlook のウィンドウでカスタム作業ウィンドウの動作に関する詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
 
 > [!NOTE]
->  このチュートリアルでは、コードのロジックについての説明をわかりやすくするために、VSTO アドイン コードを小さなセクションで提示します。
+> このチュートリアルでは、コードのロジックについての説明をわかりやすくするために、VSTO アドイン コードを小さなセクションで提示します。
 
  このチュートリアルでは、次の作業について説明します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "60062557"
 - リボンのトグル ボタンとカスタム作業ウィンドウとの同期。
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 786c71f568bc44eeecdd44dfd91462ad00dda445
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fe706260bcb535f33a14eea2fd174ee37ea1c8aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388376"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>方法: Spy++ ツリーの展開と折りたたみを行う
 展開したり、2 つのメソッドを使用して、Windows、プロセス、およびスレッド ビューを折りたたむ: またはを使用して、ウィンドウのアイコンをクリックして、**ツリー**メニュー。 + と - Visual C プロジェクト ウィンドウのように、ツリー内のアイコンが機能します。
@@ -30,7 +30,7 @@ ms.locfileid: "60071188"
 |**折りたたむ**|現在選択されている項目を完全に折りたたみます。|
 
 > [!TIP]
->  プロセスを展開する場合、プロセスを所有するすべてのスレッドを参照してください。 スレッドを展開する場合、所有するすべてのウィンドウのリストを参照してください。
+> プロセスを展開する場合、プロセスを所有するすべてのスレッドを参照してください。 スレッドを展開する場合、所有するすべてのウィンドウのリストを参照してください。
 
 ### <a name="to-expand-or-collapse-spy-trees"></a>展開または spy++ ツリーを折りたたむ
 

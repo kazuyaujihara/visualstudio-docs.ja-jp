@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83fda196a50c433de182a64f39faef7a6ba6cb17
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f2a952c074e62e7fe999826882e382a552789f3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400552"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 C++ の非装飾の名前の取得の一部またはすべての装飾 (リンケージ) 名。
@@ -38,19 +38,19 @@ HRESULT get_undecoratedNameEx( 
 
  `pRetVal`
 
-[out]C++ の非装飾の名前の装飾名を返します。
+[out]非装飾名を返します、C++装飾名。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
 
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  `undecorateOptions`次のフラグの組み合わせとすることができます。
 
 > [!NOTE]
->  フラグ名は、コードに宣言を追加するか、生の値を使用する必要があるため、DIA SDK で定義されていません。
+> フラグ名は、コードに宣言を追加するか、生の値を使用する必要があるため、DIA SDK で定義されていません。
 
 |フラグ|[値]|説明|
 |----------|-----------|-----------------|

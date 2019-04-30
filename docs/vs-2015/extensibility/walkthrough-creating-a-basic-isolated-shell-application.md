@@ -12,12 +12,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8eec2db11d97cec957e16f29838564a729370eeb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e92fa99a266dc1d1b537387f3dae848a6ecb285d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442286"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>チュートリアル: 基本的な分離シェル アプリケーションを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,25 +30,25 @@ ms.locfileid: "58974465"
 ## <a name="creating-an-isolated-shell-solution"></a>分離シェルのソリューションの作成  
  このセクションでは、Visual Studio 分離シェル プロジェクト テンプレートを使用して、分離シェルのソリューションを作成する方法を示します。 ソリューションには、次のプロジェクトが含まれています。  
   
--   *SolutionName*します。AboutBoxPackage プロジェクトのヘルプ/バージョン情報ボックスの外観をカスタマイズすることができます。  
+- *SolutionName*します。AboutBoxPackage プロジェクトのヘルプ/バージョン情報ボックスの外観をカスタマイズすることができます。  
   
--   ShellExtensionsVSIX プロジェクト、分離シェル アプリケーションのさまざまなコンポーネントを定義する source.extension.vsixmanifest ファイルが含まれています。  
+- ShellExtensionsVSIX プロジェクト、分離シェル アプリケーションのさまざまなコンポーネントを定義する source.extension.vsixmanifest ファイルが含まれています。  
   
--   *SolutionName*プロジェクトで、分離シェル アプリケーションを呼び出す実行可能ファイルが生成されます。 このプロジェクトには、分離シェル アプリケーションの動作と外観をカスタマイズすることにより、シェルのカスタマイズのフォルダーが含まれています。  
+- *SolutionName*プロジェクトで、分離シェル アプリケーションを呼び出す実行可能ファイルが生成されます。 このプロジェクトには、分離シェル アプリケーションの動作と外観をカスタマイズすることにより、シェルのカスタマイズのフォルダーが含まれています。  
   
--   *SolutionName* UI プロジェクトは、アクティブなメニュー コマンドとローカライズ可能な文字列を定義するサテライト アセンブリを生成します。  
+- *SolutionName* UI プロジェクトは、アクティブなメニュー コマンドとローカライズ可能な文字列を定義するサテライト アセンブリを生成します。  
   
 #### <a name="to-create-a-basic-isolated-shell-solution"></a>基本的な分離シェルのソリューションを作成するには  
   
-1.  Visual Studio を起動し、新しいプロジェクトを作成します。  
+1. Visual Studio を起動し、新しいプロジェクトを作成します。  
   
-2.  **新しいプロジェクト**ウィンドウで、展開**その他のプロジェクトの種類**し**Extensibility**します。 選択、 **Visual Studio 分離シェル**プロジェクト テンプレート。  
+2. **新しいプロジェクト**ウィンドウで、展開**その他のプロジェクトの種類**し**Extensibility**します。 選択、 **Visual Studio 分離シェル**プロジェクト テンプレート。  
   
-3.  プロジェクトに名前を`MyVSShellStub`場所を指定します。 確認します**ソリューションのディレクトリを作成**がチェックされ、クリックして**OK**します。  
+3. プロジェクトに名前を`MyVSShellStub`場所を指定します。 確認します**ソリューションのディレクトリを作成**がチェックされ、クリックして**OK**します。  
   
      新しいソリューションが表示されます。**ソリューション エクスプ ローラー**します。  
   
-4.  ソリューションをビルドし、分離シェル アプリケーションのデバッグを開始します。  
+4. ソリューションをビルドし、分離シェル アプリケーションのデバッグを開始します。  
   
      Visual Studio 分離シェルが表示されます。 タイトル バーを読み取り**MyVSShellStub**します。 タイトル バーのアイコンは、\MyVSShellStub\Resource Files\ApplicationIcon.ico から生成されます。  
   
@@ -57,13 +57,13 @@ ms.locfileid: "58974465"
   
 #### <a name="to-customize-the-application-name-and-icon"></a>アプリケーション名とアイコンをカスタマイズするには  
   
-1.  MyVSShellStub プロジェクトでは、\Shell Customization\MyVSShellStub.Application.pkgdef を開きます。  
+1. MyVSShellStub プロジェクトでは、\Shell Customization\MyVSShellStub.Application.pkgdef を開きます。  
   
-2.  変更、`AppName`要素の値 **"AppName"=「Fabrikam 音楽エディター」**  
+2. 変更、`AppName`要素の値 **"AppName"=「Fabrikam 音楽エディター」**  
   
-3.  アプリケーション アイコンを変更するには、別のアイコンを \MyVSShellStub\MyVSShellStub\MyVSShellStub\ ディレクトリにコピーします。 ApplicationIcon1.ico に ApplicationIcon.ico の既存のファイルの名前を変更します。 ApplicationIcon.ico に新しいファイルの名前を変更します。  
+3. アプリケーション アイコンを変更するには、別のアイコンを \MyVSShellStub\MyVSShellStub\MyVSShellStub\ ディレクトリにコピーします。 ApplicationIcon1.ico に ApplicationIcon.ico の既存のファイルの名前を変更します。 ApplicationIcon.ico に新しいファイルの名前を変更します。  
   
-4.  ソリューションをビルドし、デバッグを開始します。 分離シェル IDE が表示されます。 タイトル バーが、単語の横にある新しいアイコン**Fabrikam 音楽エディター**します。  
+4. ソリューションをビルドし、デバッグを開始します。 分離シェル IDE が表示されます。 タイトル バーが、単語の横にある新しいアイコン**Fabrikam 音楽エディター**します。  
   
 ## <a name="customizing-the-default-web-browser-home-page"></a>既定の Web ブラウザーのホーム ページをカスタマイズします。  
  このセクションの既定のホーム ページを変更する方法を示しています、 **Web ブラウザー**パッケージ定義ファイルを変更することによってウィンドウ。  
@@ -87,46 +87,46 @@ ms.locfileid: "58974465"
   
 #### <a name="to-remove-the-print-command"></a>印刷コマンドを削除するには  
   
-1.  いることを確認、**印刷**コマンドに表示される、**ファイル**分離シェル アプリケーションのメニュー。  
+1. いることを確認、**印刷**コマンドに表示される、**ファイル**分離シェル アプリケーションのメニュー。  
   
-2.  MyVSShellStubUI プロジェクトで編集するための \Resource Files\MyVSShellStubUI.vsct を開きます。  
+2. MyVSShellStubUI プロジェクトで編集するための \Resource Files\MyVSShellStubUI.vsct を開きます。  
   
-3.  この行をコメント解除します。  
+3. この行をコメント解除します。  
   
     ```  
     <!-- <Define name="No_PrintChildrenCommand"/> -->  
     ```  
   
-4.  これには、印刷コマンドが削除されます。  
+4. これには、印刷コマンドが削除されます。  
   
-5.  分離シェル アプリケーションのデバッグを開始します。 いることを確認、**ファイル/印刷**コマンドはなくなっています。  
+5. 分離シェル アプリケーションのデバッグを開始します。 いることを確認、**ファイル/印刷**コマンドはなくなっています。  
   
 ## <a name="removing-features-from-the-isolated-shell"></a>分離シェルから機能の削除  
  Visual Studio で、カスタムの分離シェル アプリケーションでこれらの機能を設定したくない場合は、.pkgundef ファイルを編集することによって読み込まれるパッケージの一部を削除できます。 $RootKey$ \Packages レジストリ キーのサブキーのいずれかでは、パッケージを指定します。  
   
 > [!NOTE]
->  Visual Studio の Guid の機能を検索するには、次を参照してください。[パッケージ Guid の Visual Studio 機能](../extensibility/package-guids-of-visual-studio-features.md)します。  
+> Visual Studio の Guid の機能を検索するには、次を参照してください。[パッケージ Guid の Visual Studio 機能](../extensibility/package-guids-of-visual-studio-features.md)します。  
   
  次の手順では、分離シェルから、エディター、XML を削除する方法を示します。  
   
 #### <a name="to-remove-the-xml-editor"></a>XML エディターを削除するには  
   
-1.  MyVSShellStub プロジェクトのシェルのカスタマイズのフォルダーに MyVSShellStub.pkgundef ファイルを開きます。  
+1. MyVSShellStub プロジェクトのシェルのカスタマイズのフォルダーに MyVSShellStub.pkgundef ファイルを開きます。  
   
-2.  次の行をコメント解除します。  
+2. 次の行をコメント解除します。  
   
      [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
-3.  ソリューションをリビルドし、分離シェルのデバッグを開始します。 たとえば、\MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct、XML ファイルを開きます。 ファイル内の XML のキーワードの色づけされたいないことを確認し、その入力"<"行にも表示されません XML ツールヒント。  
+3. ソリューションをリビルドし、分離シェルのデバッグを開始します。 たとえば、\MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct、XML ファイルを開きます。 ファイル内の XML のキーワードの色づけされたいないことを確認し、その入力"<"行にも表示されません XML ツールヒント。  
   
 ## <a name="customizing-the-helpabout-box"></a>ヘルプのカスタマイズ]、[バージョン情報ボックス  
  ヘルプをカスタマイズする/バージョン情報ボックス、これは、分離シェル プロジェクト テンプレートの一部として作成されます。  
   
 #### <a name="to-customize-the-company-name"></a>会社名をカスタマイズするには  
   
-1.  \Properties\AssemblyInfo.cs ファイルで、MyVSShellStub.AboutBoxPackage プロジェクトで、会社名、著作権情報、製品バージョン、および製品の説明が見つかりました。 このファイルを開きます。  
+1. \Properties\AssemblyInfo.cs ファイルで、MyVSShellStub.AboutBoxPackage プロジェクトで、会社名、著作権情報、製品バージョン、および製品の説明が見つかりました。 このファイルを開きます。  
   
-2.  変更、`AssemblyCompany`値を**Fabrikam**、`AssemblyProduct`と`AssemblyTitle`値を**Fabrikam 音楽エディター**、および`AssemblyCopyright`値を**Copyright ©Fabrikam 2015**:  
+2. 変更、`AssemblyCompany`値を**Fabrikam**、`AssemblyProduct`と`AssemblyTitle`値を**Fabrikam 音楽エディター**、および`AssemblyCopyright`値を**Copyright ©Fabrikam 2015**:  
   
     ```  
     [assembly: AssemblyTitle("Fabrikam Music Editor")]  
@@ -139,15 +139,15 @@ ms.locfileid: "58974465"
     [assembly: AssemblyCopyright("Copyright © Fabrikam 2015”)]  
     ```  
   
-3.  製品の説明を追加するには、変更、`AssemblyDescription`値を**Fabrikam 音楽エディターの説明**:。  
+3. 製品の説明を追加するには、変更、`AssemblyDescription`値を**Fabrikam 音楽エディターの説明**:。  
   
     ```  
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.”)]  
     ```  
   
-4.  デバッグを開始し、分離シェル アプリケーションで開きます、**ヘルプ/約**ボックス。 変更された文字列が表示されます。 ヘルプ/バージョン情報ボックスのタイトルは同じ、 `AssemblyTitle` AssemblyInfo.cs 内の値。  
+4. デバッグを開始し、分離シェル アプリケーションで開きます、**ヘルプ/約**ボックス。 変更された文字列が表示されます。 ヘルプ/バージョン情報ボックスのタイトルは同じ、 `AssemblyTitle` AssemblyInfo.cs 内の値。  
   
-5.  プロパティ、**ヘルプ/について**ボックス自体が MyVSShellStub.AboutBoxPackage\AboutBox.xaml ファイルが見つかりません。 ヘルプ/バージョン情報ボックスの幅を変更するには、`AboutDialogStyle`をブロックし、設定、 `Width` 200 プロパティ。  
+5. プロパティ、**ヘルプ/について**ボックス自体が MyVSShellStub.AboutBoxPackage\AboutBox.xaml ファイルが見つかりません。 ヘルプ/バージョン情報ボックスの幅を変更するには、`AboutDialogStyle`をブロックし、設定、 `Width` 200 プロパティ。  
   
     ```  
     <Style x:Key="AboutDialogStyle" TargetType="Window">  
@@ -160,7 +160,7 @@ ms.locfileid: "58974465"
     </Style>  
     ```  
   
-6.  ソリューションをリビルドし、分離シェルのデバッグを開始します。 ヘルプ/バージョン情報ボックスを約正方形にする必要があります。  
+6. ソリューションをリビルドし、分離シェルのデバッグを開始します。 ヘルプ/バージョン情報ボックスを約正方形にする必要があります。  
   
 ## <a name="before-you-deploy-the-isolated-shell-application"></a>分離シェル アプリケーションを展開する前に  
  分離シェル アプリケーションは、Visual Studio Shell (Isolated) 再頒布可能パッケージをされているコンピューターにインストールできます。 再頒布可能パッケージの詳細については、次を参照してください。、 [Visual Studio 機能拡張ダウンロード](http://go.microsoft.com/fwlink/?LinkID=119298)web サイト。  
@@ -185,50 +185,50 @@ ms.locfileid: "58974465"
     InstallShield Limited Edition が既にインストールされていない場合は、InstallShield のダウンロード ページが表示されます。 ダウンロードして Visual Studio のバージョンと互換性がある InstallShield のバージョンを選択、製品をインストールする手順を実行します。 InstallShield のインストールを登録または評価版として使用するかどうかを決定する必要があります。 インストールが完了した後は、Visual Studio を再起動する必要があります。  
   
    > [!IMPORTANT]
-   >  InstallShield プロジェクトを作成する前に、管理者として Visual Studio を起動する必要があります。 これを行わない場合に、プロジェクトをビルドするときに、エラーが表示されます。  
+   > InstallShield プロジェクトを作成する前に、管理者として Visual Studio を起動する必要があります。 これを行わない場合に、プロジェクトをビルドするときに、エラーが表示されます。  
   
    次の手順では、セットアップ プロジェクトを構成する方法を示します。  
   
 > [!IMPORTANT]
->  セットアップ プロジェクトを構成する前に、分離シェル プロジェクトのリリースの構成は、少なくとも 1 回を構築したことを確認します。  
+> セットアップ プロジェクトを構成する前に、分離シェル プロジェクトのリリースの構成は、少なくとも 1 回を構築したことを確認します。  
   
 #### <a name="to-configure-the-setup-project"></a>セットアップ プロジェクトを構成するには  
   
-1.  **ソリューション エクスプ ローラー**下で、 **MySetup**プロジェクトで、選択**プロジェクト アシスタント**します。 下の行に、**プロジェクト アシスタント**ウィンドウで、選択**アプリケーション情報**します。 入力**Fabrikam**会社名としてと**Fabrikam 音楽エディター**として、アプリケーションの名前。 右下にある右向きの矢印を選択、**プロジェクト アシスタント**します。  
+1. **ソリューション エクスプ ローラー**下で、 **MySetup**プロジェクトで、選択**プロジェクト アシスタント**します。 下の行に、**プロジェクト アシスタント**ウィンドウで、選択**アプリケーション情報**します。 入力**Fabrikam**会社名としてと**Fabrikam 音楽エディター**として、アプリケーションの名前。 右下にある右向きの矢印を選択、**プロジェクト アシスタント**します。  
   
-2.  選択**はい** **はアプリケーションに必要なソフトウェアをコンピューターにインストールするでしょうか。** し、 **Microsoft .NET Framework 4.5 のフル パッケージ**します。  
+2. 選択**はい** **はアプリケーションに必要なソフトウェアをコンピューターにインストールするでしょうか。** し、 **Microsoft .NET Framework 4.5 のフル パッケージ**します。  
   
-3.  選択、**アプリケーション ファイル**、ウィンドウの下部にあるボタンをクリックし、ことを確認、 **Fabrikam 音楽エディター**フォルダーを選択します。  
+3. 選択、**アプリケーション ファイル**、ウィンドウの下部にあるボタンをクリックし、ことを確認、 **Fabrikam 音楽エディター**フォルダーを選択します。  
   
-4.  選択、**ファイルの追加**ボタンをクリックします。 **ファイルの追加** ダイアログ ボックスで、次のファイルを追加、 **MyVSShellStub\Release**フォルダー。  
+4. 選択、**ファイルの追加**ボタンをクリックします。 **ファイルの追加** ダイアログ ボックスで、次のファイルを追加、 **MyVSShellStub\Release**フォルダー。  
   
-    1.  MyVSShellStub.exe.config  
+    1. MyVSShellStub.exe.config  
   
-    2.  DebuggerProxy.dll  
+    2. DebuggerProxy.dll  
   
-    3.  DebuggerProxy.dll.manifest  
+    3. DebuggerProxy.dll.manifest  
   
-    4.  MyVSShellStub.pkgdef  
+    4. MyVSShellStub.pkgdef  
   
-    5.  MyVSShellStub.pkgundef  
+    5. MyVSShellStub.pkgundef  
   
-    6.  MyVSShellStub.winprf  
+    6. MyVSShellStub.winprf  
   
-    7.  Splash.bmp  
+    7. Splash.bmp  
   
-5.  をクリックして、 **Add Project Outputs**ボタンをクリックし、追加**MyVSShellStub/プライマリ出力**します。 **[OK]** をクリックします。  
+5. をクリックして、 **Add Project Outputs**ボタンをクリックし、追加**MyVSShellStub/プライマリ出力**します。 **[OK]** をクリックします。  
   
-6.  左側のウィンドウで **セットアップ先のコンピューター**を右クリックし、 **Fabrikam 音楽エディター [INSTALLDIR]** ノードを追加し、**新しいフォルダー**という名前の**拡張機能**.  
+6. 左側のウィンドウで **セットアップ先のコンピューター**を右クリックし、 **Fabrikam 音楽エディター [INSTALLDIR]** ノードを追加し、**新しいフォルダー**という名前の**拡張機能**.  
   
-7.  右クリックし、**拡張**左側のウィンドウでノードという名前の新しいフォルダーを追加および**アプリケーション**します。  
+7. 右クリックし、**拡張**左側のウィンドウでノードという名前の新しいフォルダーを追加および**アプリケーション**します。  
   
-8.  選択、**アプリケーション**フォルダーをクリックして、 **Add Project Outputs**ボタンをクリックし、MyVSShellStub.AboutBoxPackage プロジェクトからのプライマリ出力を選択します。  
+8. 選択、**アプリケーション**フォルダーをクリックして、 **Add Project Outputs**ボタンをクリックし、MyVSShellStub.AboutBoxPackage プロジェクトからのプライマリ出力を選択します。  
   
 9. をクリックして、**ファイルの追加**ボタンをクリックし、\MyVSShellStub\Release\Extensions\Application\ フォルダーから、次のファイルを追加します。  
   
-    -   MyVSShellStub.AboutBoxPackage.pkgdef  
+    - MyVSShellStub.AboutBoxPackage.pkgdef  
   
-    -   MyVSShellStub.Application.pkgdef  
+    - MyVSShellStub.Application.pkgdef  
   
 10. 右クリックし、 **Fabrikam 音楽エディター [INSTALLDIR]** 左側のウィンドウでノードという名前の新しいフォルダーを追加および**1033**します。  
   

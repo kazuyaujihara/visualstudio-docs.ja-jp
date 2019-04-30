@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce02d639f6fcd3040566a2c279713c046f9c6ead
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f41b6332aab272baed17e9955687c34803003d0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444565"
 ---
 # <a name="how-to-create-an-activity-library"></a>方法: アクティビティ ライブラリを作成する
 カスタム アクティビティは、ワークフローで特定のビジネス プロセスをモデル化するために使用されます。 [!INCLUDE[vs2010](../includes/vs2010-md.md)] のアクティビティ ライブラリ テンプレートでは、[!INCLUDE[wfd1](../includes/wfd1-md.md)]を使用して、こうしたカスタム アクティビティを視覚的に作成できます。  
@@ -38,14 +38,14 @@ ms.locfileid: "60068100"
 7. **ソリューション**ボックスに、ソリューションでは、わかりやすい名前を入力し、をクリックして**OK**します。  
   
     > [!NOTE]
-    >  既存のソリューションのワークフロー コンソール アプリケーションを追加する場合は、そのソリューションを開きます[!INCLUDE[vs2010](../includes/vs2010-md.md)]でソリューションを右クリックして**ソリューション エクスプ ローラー**、選択および**追加**、し**新しいプロジェクト.** 開く、**新しいプロジェクト** ダイアログ ボックス。 上記の手順を実行します。  
+    > 既存のソリューションのワークフロー コンソール アプリケーションを追加する場合は、そのソリューションを開きます[!INCLUDE[vs2010](../includes/vs2010-md.md)]でソリューションを右クリックして**ソリューション エクスプ ローラー**、選択および**追加**、し**新しいプロジェクト.** 開く、**新しいプロジェクト** ダイアログ ボックス。 上記の手順を実行します。  
   
 8. プロジェクト テンプレートによって、XAML でアクティビティ定義が作成されます。 [!INCLUDE[wfd1](../includes/wfd1-md.md)] で、カスタム アクティビティ用のキャンバスが開かれて表示されます。  
   
 9. アクティビティをドラッグして、**ツールボックス**に含めるカスタム アクティビティ デザイン サーフェイスにします。  
   
     > [!CAUTION]
-    >  カスタム アクティビティの本体に含めることができる子アクティビティは 1 つのみです。ただし、その子アクティビティは、<xref:System.Activities.Statements.Sequence> アクティビティや <xref:System.Activities.Statements.Flowchart> アクティビティなどの複合アクティビティにすることができます。  
+    > カスタム アクティビティの本体に含めることができる子アクティビティは 1 つのみです。ただし、その子アクティビティは、<xref:System.Activities.Statements.Sequence> アクティビティや <xref:System.Activities.Statements.Flowchart> アクティビティなどの複合アクティビティにすることができます。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: アクティビティを作成します。](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   

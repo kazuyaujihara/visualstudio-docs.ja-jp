@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7bda175575cf1d48e2f0970bf8202a8041fd16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1fc518281880923f92caf5c517254dc424b49b5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415280"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>方法: 機能拡張プロジェクトを Visual Studio 2015 に移行します。
 次に、拡張機能をアップグレードする方法を示します。
 
 > [!IMPORTANT]
->  以前のバージョンの Visual Studio の拡張機能ソリューションのバージョンを管理する場合は、アップグレードする前に、コピーを作成することを確認します。 アップグレードされたバージョンを前の状態に戻すにくい場合があります。
+> 以前のバージョンの Visual Studio の拡張機能ソリューションのバージョンを管理する場合は、アップグレードする前に、コピーを作成することを確認します。 アップグレードされたバージョンを前の状態に戻すにくい場合があります。
 
 ### <a name="to-upgrade-an-extensibility-solution"></a>機能拡張のソリューションをアップグレードするには
 
@@ -52,4 +52,4 @@ ms.locfileid: "60072801"
 5. NuGet のバージョンの VS SDK ビルド ツールの使用に切り替えることもできます。 この NuGet パッケージは[Microsoft.VSSDK.BuildTools](http://www.nuget.org/packages/Microsoft.VSSDK.BuildTools)に 1 回追加し、プロジェクトが必要なツールを含むし、VS SDK をインストールせず、コンピューターで、機能拡張プロジェクトをビルドできるようにファイルを対象します。
 
 > [!NOTE]
->  ない NuGet 参照アセンブリおよびツールを使用する既存の機能拡張プロジェクトを更新することが必要です。  参照アセンブリと VS SDK と共にインストールされるツールを使用してビルドを継続できます。
+> ない NuGet 参照アセンブリおよびツールを使用する既存の機能拡張プロジェクトを更新することが必要です。  参照アセンブリと VS SDK と共にインストールされるツールを使用してビルドを継続できます。

@@ -10,12 +10,12 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 93df780aee27b794a991a023f559f64a806de046
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c82d77a617461a8d01d06fd2a502d2fef8399906
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408685"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でシェル コマンドを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ VSPackage からには、エディターにメニュー コマンドなどの機
  VSPackage を MEF コンポーネントを追加するため、マニフェストで両方の種類のアセットを指定する必要があります。  
   
 > [!NOTE]
->  MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)します。  
+> MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)します。  
   
 #### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>VSPackage プロジェクトを MEF コンポーネントを参照するには  
   
@@ -724,4 +724,4 @@ VSPackage からには、エディターにメニュー コマンドなどの機
      Fourscore.  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: ファイル名拡張子へのコンテンツの種類のリンク](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [チュートリアル: コンテンツの種類とファイル名拡張子とをリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

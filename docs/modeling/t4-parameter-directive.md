@@ -1,4 +1,4 @@
-﻿---
+---
 title: T4 パラメーター ディレクティブ
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d781358258457dc12a3657cf3ff76273315219c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 4252ad81747576366c0873f2ad65646ee7af7f1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422940"
 ---
 # <a name="t4-parameter-directive"></a>T4 パラメーター ディレクティブ
 
@@ -99,4 +99,4 @@ string resultText = t.TransformText();
 ## <a name="obtaining-arguments-from-texttemplateexe"></a>TextTemplate.exe から引数を取得します。
 
 > [!IMPORTANT]
->  `parameter`ディレクティブは、`TextTransform.exe`ユーティリティの`-a`のパラメーターで設定された値を取得できません。 これらの値を取得するには、`template`ディレクティブで、`hostSpecific="true"` を設定し、`this.Host.ResolveParameterValue("","","argName")` を使用します。
+> `parameter`ディレクティブは、`TextTransform.exe`ユーティリティの`-a`のパラメーターで設定された値を取得できません。 これらの値を取得するには、`template`ディレクティブで、`hostSpecific="true"` を設定し、`this.Host.ResolveParameterValue("","","argName")` を使用します。

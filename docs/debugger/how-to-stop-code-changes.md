@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 661b18ef061a6bfdb2bcbe68f30463f39d08efe7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 33bc24aaea0f24d592a897bcc70f553cfaab9667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388357"
 ---
-# <a name="how-to-stop-code-changes"></a>方法 : コード変更を中断する
+# <a name="how-to-stop-code-changes"></a>方法: コード変更を停止する
 エディット コンティニュがコード変更を適用するプロセスを実行している間、その操作は中断できます。
 
 > [!CAUTION]
->  マネージド コードのコード変更を中断すると、予期しない結果が生じることがあります。 通常、マネージド コードの変更はすばやく適用されるため、マネージド コードのコード変更の中断が必要となることはほとんどありません。
+> マネージド コードのコード変更を中断すると、予期しない結果が生じることがあります。 通常、マネージド コードの変更はすばやく適用されるため、マネージド コードのコード変更の中断が必要となることはほとんどありません。
 
 ### <a name="to-stop-applying-code-changes"></a>コードの変更内容の適用を停止するには
 

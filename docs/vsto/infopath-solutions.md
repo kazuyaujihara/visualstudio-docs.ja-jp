@@ -18,33 +18,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 674050711e69ae97c7e1faa361122bee0d755ae7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c7342524d1e7682fd088c4f7ea44037a32c220e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441756"
 ---
 # <a name="infopath-solutions"></a>InfoPath ソリューション
   Visual Studio には、Microsoft Office InfoPath 2013 および InfoPath 2010 の VSTO アドインの作成に使用できるプロジェクト テンプレートが用意されています。 InfoPath は、Office 2016 では使用できません。
 
 > [!NOTE]
->  引き続き作成できます VSTO アドインを InfoPath の Office 2016 をインストールした場合でもです。 InfoPath 2013 または Office 2013 を Office 2016 とサイドバイサイドにインストールするだけです。
+> 引き続き作成できます VSTO アドインを InfoPath の Office 2016 をインストールした場合でもです。 InfoPath 2013 または Office 2013 を Office 2016 とサイドバイサイドにインストールするだけです。
 
  [!INCLUDE[appliesto_infoallapp](../vsto/includes/appliesto-infoallapp-md.md)]
 
 > [!NOTE]
->  [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは、VSTO アドインとソリューションに比べて小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML といった、ほぼすべての Web プログラミング テクノロジを使用して、それらをビルドすることができます。
+> [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは、VSTO アドインとソリューションに比べて小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML といった、ほぼすべての Web プログラミング テクノロジを使用して、それらをビルドすることができます。
 
- InfoPath 用の VSTO アドインは、他の Microsoft Office アプリケーションの VSTO アドインと似ています。 このようなソリューションは、アプリケーションが読み込むアセンブリで構成されます。 エンド ユーザーは、どのフォームまたはフォーム テンプレートが開いているかに関係なく、このアセンブリの機能にアクセスできます。 VSTO アドインの詳細については、[VSTO アドインのプログラミングを始める](../vsto/getting-started-programming-vsto-add-ins.md)と[Architecture of VSTO アドイン](../vsto/architecture-of-vsto-add-ins.md)を参照してください。
+ InfoPath 用の VSTO アドインは、他の Microsoft Office アプリケーションの VSTO アドインと似ています。 このようなソリューションは、アプリケーションが読み込むアセンブリで構成されます。 エンド ユーザーは、どのフォームまたはフォーム テンプレートが開いているかに関係なく、このアセンブリの機能にアクセスできます。 VSTO アドインの詳細については、次を参照してください。 [VSTO アドインのプログラミングを始める](../vsto/getting-started-programming-vsto-add-ins.md)と[Architecture of VSTO アドイン](../vsto/architecture-of-vsto-add-ins.md)します。
 
 > [!NOTE]
->  Visual Studio 2015 には、以前のバージョンの Visual Studio で提供されていた InfoPath フォーム テンプレート プロジェクトは含まれていません。 また、Visual Studio 2015 を使用して、以前のバージョンの Visual Studio で作成した InfoPath フォーム テンプレート プロジェクトを開いて編集することもできません。 ただし、Visual Studio Tools for Applications を使用すると、InfoPath フォーム テンプレート プロジェクトを開いて編集できます。 詳細については、[InfoPath 2010 の VSTO 2008 プロジェクトを操作を参照してください。](http://go.microsoft.com/fwlink/?LinkID=218903)します。
+> Visual Studio 2015 には、以前のバージョンの Visual Studio で提供されていた InfoPath フォーム テンプレート プロジェクトは含まれていません。 また、Visual Studio 2015 を使用して、以前のバージョンの Visual Studio で作成した InfoPath フォーム テンプレート プロジェクトを開いて編集することもできません。 ただし、Visual Studio Tools for Applications を使用すると、InfoPath フォーム テンプレート プロジェクトを開いて編集できます。 詳細については、次を参照してください。 [InfoPath 2010 の VSTO 2008 プロジェクトを操作します。](http://go.microsoft.com/fwlink/?LinkID=218903)します。
 
 ## <a name="automate-infopath-by-using-an-add-in"></a>アドインを使用して、InfoPath を自動化します。
- Visual Studio の Office 開発ツールを使用して作成した Office VSTO アドインから InfoPath オブジェクト モデルにアクセスするには、プロジェクトの `Application` クラスの `ThisAddIn` フィールドを使用します。 `Application` フィールドは InfoPath の現在のインスタンスを表す <xref:Microsoft.Office.Interop.InfoPath.Application> オブジェクトを返します。 詳細については、[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)を参照してください。
+ Visual Studio の Office 開発ツールを使用して作成した Office VSTO アドインから InfoPath オブジェクト モデルにアクセスするには、プロジェクトの `Application` クラスの `ThisAddIn` フィールドを使用します。 `Application` フィールドは InfoPath の現在のインスタンスを表す <xref:Microsoft.Office.Interop.InfoPath.Application> オブジェクトを返します。 詳細については、次を参照してください。[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)します。
 
- ときに、VSTO アドインから InfoPath オブジェクト モデルを呼び出すことは、InfoPath のプライマリ相互運用機能アセンブリに用意されている型を使用します。 プライマリ相互運用機能アセンブリは、VSTO アドインのマネージド コードと InfoPath の COM オブジェクト モデルとの仲介役を果たします。 InfoPath プライマリ相互運用機能アセンブリ内の型は、すべて <xref:Microsoft.Office.Interop.InfoPath> 名前空間に定義されています。 InfoPath プライマリ相互運用機能アセンブリの詳細については、[Microsoft Office InfoPath のプライマリ相互運用機能アセンブリ](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)を参照してください。 プライマリ相互運用機能アセンブリの詳細については一般に、表示[Office ソリューション開発の概要&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)と[Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)します。
+ ときに、VSTO アドインから InfoPath オブジェクト モデルを呼び出すことは、InfoPath のプライマリ相互運用機能アセンブリに用意されている型を使用します。 プライマリ相互運用機能アセンブリは、VSTO アドインのマネージド コードと InfoPath の COM オブジェクト モデルとの仲介役を果たします。 InfoPath プライマリ相互運用機能アセンブリ内の型は、すべて <xref:Microsoft.Office.Interop.InfoPath> 名前空間に定義されています。 InfoPath プライマリ相互運用機能アセンブリの詳細については、次を参照してください。 [Microsoft Office InfoPath のプライマリ相互運用機能アセンブリ](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)します。 プライマリ相互運用機能アセンブリの詳細については一般に、表示[Office ソリューション開発の概要&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)と[Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)します。
 
 ## <a name="customize-the-user-interface-of-infopath-by-using-an-add-in"></a>アドインを使用して、InfoPath のユーザー インターフェイスをカスタマイズします。
  InfoPath の VSTO アドインを作成するときに、いくつかの異なる UI カスタマイズ オプションがあります。 次の表は、主なカスタマイズ方法を示しています。
@@ -54,7 +54,7 @@ ms.locfileid: "56621150"
 |カスタム作業ウィンドウを作成する。|[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)|
 |InfoPath のリボンにカスタム タブを追加する。|[InfoPath のリボンをカスタマイズします。](../vsto/customizing-a-ribbon-for-infopath.md)|
 
- UI の InfoPath およびその他の Microsoft Office アプリケーションをカスタマイズする方法の詳細については、[Office UI のカスタマイズ](../vsto/office-ui-customization.md)を参照してください。
+ UI の InfoPath およびその他の Microsoft Office アプリケーションをカスタマイズする方法の詳細については、次を参照してください。 [Office UI のカスタマイズ](../vsto/office-ui-customization.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [Microsoft Office InfoPath プライマリ相互運用機能アセンブリについて](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)

@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445671"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>方法: 追加または参照マネージャーを使用して参照を削除します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ ms.locfileid: "60041183"
 - コンパイル エラーが発生する可能性があるため、同じソリューション内の他のプロジェクトの出力に対するファイル参照は追加しないでください。 代わりに、**[参照の追加]** ダイアログ ボックスの **[プロジェクト]** タブを使ってプロジェクト間参照を作成します。 そうすることによってプロジェクトで作成するクラス ライブラリを管理する機能が向上し、チーム開発が簡単になります。 詳しくは、「[壊れた参照のトラブルシューティング](../ide/troubleshooting-broken-references.md)」をご覧ください。  
   
 - > [!NOTE]
-    >  Visual Studio 2015 では、一方のプロジェクトが対象とする .NET Framework のバージョンが Version 4.5 で、他方のプロジェクトが対象とするバージョンが Version 2、3、3.5、または 4.0 である場合、プロジェクト参照ではなくファイル参照が作成されます。  
+    > Visual Studio 2015 では、一方のプロジェクトが対象とする .NET Framework のバージョンが Version 4.5 で、他方のプロジェクトが対象とするバージョンが Version 2、3、3.5、または 4.0 である場合、プロジェクト参照ではなくファイル参照が作成されます。  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>[参照の追加] ダイアログ ボックスにアセンブリを表示するには  
   
@@ -181,7 +181,7 @@ ms.locfileid: "60041183"
  SDK は、Visual Studio が単一のコンポーネントとして取り扱うファイルのコレクションです。 [拡張機能] タブで、**[参照マネージャー]** ダイアログ ボックスを開いたプロジェクトに対して適用される複数の SDK は単一エントリとして表示されます。 プロジェクトに追加した場合は、SDK のすべての内容が Visual Studio によって使用されます。その結果、IntelliSense、ツールボックス、デザイナー、オブジェクト ブラウザー、ビルド、配置、デバッグ、およびパッケージ化で SDK の内容を活用するために、ユーザーが追加のアクションを実行する必要がなくなります。 [拡張機能] タブに SDK を表示する方法については、「[Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md)」(ソフトウェア開発キットの作成) を参照してください。  
   
 > [!NOTE]
->  別の SDK に依存する SDK をプロジェクトが参照する場合は、ユーザーが 2 番目の SDK への参照を手動で追加しない限り、Visual Studio は 2 番目の SDK を使用しません。 ユーザーが **[拡張機能]** タブでいずれかの SDK を選ぶと、**[参照マネージャー]** ダイアログ ボックスで SDK の名前とバージョンが一覧表示されることに加えて、詳細ペインであらゆる依存先 SDK の名前も一覧表示され、SDK の依存関係を識別できるようになります。 ユーザーが依存関係に気付かず、SDK のみを追加した場合は、依存関係を追加することを要求するメッセージが MSBuild によって表示されます。  
+> 別の SDK に依存する SDK をプロジェクトが参照する場合は、ユーザーが 2 番目の SDK への参照を手動で追加しない限り、Visual Studio は 2 番目の SDK を使用しません。 ユーザーが **[拡張機能]** タブでいずれかの SDK を選ぶと、**[参照マネージャー]** ダイアログ ボックスで SDK の名前とバージョンが一覧表示されることに加えて、詳細ペインであらゆる依存先 SDK の名前も一覧表示され、SDK の依存関係を識別できるようになります。 ユーザーが依存関係に気付かず、SDK のみを追加した場合は、依存関係を追加することを要求するメッセージが MSBuild によって表示されます。  
   
  プロジェクトの種類が **[拡張機能]** をサポートしていない場合は、**[参照マネージャー]** ダイアログ ボックスの中に [拡張機能] タブが表示されません。  
   
@@ -207,7 +207,7 @@ ms.locfileid: "60041183"
     ```  
   
     > [!NOTE]
-    >  プロパティを追加した場合は、ビルド速度が遅くなる可能性があります。  
+    > プロパティを追加した場合は、ビルド速度が遅くなる可能性があります。  
   
 ## <a name="recent"></a>最近使用したファイル  
  [アセンブリ]、[COM]、[Windows]、[参照] はいずれも [最近使用したファイル] タブをサポートし、このタブではプロジェクトに最近追加されたコンポーネントのリストが列挙されます。  

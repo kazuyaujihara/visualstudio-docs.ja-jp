@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de301a380eb93cd1f4dd27150f631be58f59b3eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac7d0896d501803a04da5bf9626e2b9e4716d41a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442645"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>手順 11: プログラムを実行し、その他の機能を試す
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60093905"
 3. 色を選択して PictureBox の背景色を設定します。 `backgroundButton_Click()` メソッドを詳しく調べて動作を確認します。  
   
     > [!NOTE]
-    >  ピクチャは、**[ファイルを開く]** ダイアログ ボックスに URL を貼り付けることでインターネットから読み込むことができます。 背景色の表示を確認するには、背景が透明な画像を探してみてください。  
+    > ピクチャは、**[ファイルを開く]** ダイアログ ボックスに URL を貼り付けることでインターネットから読み込むことができます。 背景色の表示を確認するには、背景が透明な画像を探してみてください。  
   
 4. **[Clear the picture]** ボタンをクリックして、ピクチャが消去されることを確認します。 次に、**[閉じる]** ボタンをクリックしてプログラムを終了します。  
   

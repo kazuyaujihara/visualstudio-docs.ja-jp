@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412332"
 ---
 # <a name="managing-universal-windows-projects"></a>ユニバーサル Windows プロジェクトの管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -235,7 +235,7 @@ ms.locfileid: "60063687"
     ```  
   
     > [!IMPORTANT]
-    >  ユーザーが実験用インスタンスで C++ ユニバーサル Windows アプリ プロジェクトを開き、上記のコードは例外をスローします。 これは既知の問題です。 例外を避けるためには、置換、`foreach`上、次のブロックします。  
+    > ユーザーが実験用インスタンスで C++ ユニバーサル Windows アプリ プロジェクトを開き、上記のコードは例外をスローします。 これは既知の問題です。 例外を避けるためには、置換、`foreach`上、次のブロックします。  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -525,7 +525,7 @@ ms.locfileid: "60063687"
 9. 共有対象アイテムを変更します。 プラットフォーム プロジェクトで共有項目を変更することはできません。代わりに、これらの項目の実際の所有者である共有プロジェクトでそれらを変更する必要があります。 共有のプロジェクトに対応する項目の ID を取得できます<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>、共有対象アイテムの完全なパスを指定します。 共有対象アイテムを変更します。 プラットフォームのプロジェクトに反映されます。  
   
     > [!IMPORTANT]
-    >  プロジェクト項目が変更する前に共有項目がかどうかを確認する必要があります。  
+    > プロジェクト項目が変更する前に共有項目がかどうかを確認する必要があります。  
   
      次のメソッドは、プロジェクト アイテム ファイルの名前を変更します。  
   

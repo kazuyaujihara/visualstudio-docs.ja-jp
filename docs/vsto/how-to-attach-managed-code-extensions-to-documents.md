@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f56d51817491726e6011e965bfd6d68630bb0dbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441799"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>方法: マネージ コード拡張機能をドキュメントにアタッチします。
   カスタマイズ アセンブリは、既存の Microsoft Office Word 文書または Microsoft Office Excel ブックにアタッチできます。 文書またはブックは、Microsoft Office プロジェクトと Visual Studio での開発ツールでサポートされている任意のファイル形式にできます。 詳細については、「[ドキュメント レベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)」を参照してください。
@@ -28,7 +28,7 @@ ms.locfileid: "60044265"
  Word または Excel ドキュメントにカスタマイズをアタッチするには使用、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>のメソッド、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>クラス。 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>クラスが Microsoft Office がインストールされていないコンピューターで実行するため、このメソッドは、(コンソールまたは Windows フォーム アプリケーションの場合) などの Microsoft Office の開発に直接関連していないソリューションで使用できます。
 
 > [!NOTE]
->  カスタマイズは、コードが、指定されたドキュメントがないコントロールを必要とする場合の読み込みに失敗します。
+> カスタマイズは、コードが、指定されたドキュメントがないコントロールを必要とする場合の読み込みに失敗します。
 
  ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。アタッチまたは Word 文書から VSTO アセンブリをデタッチしますか](http://go.microsoft.com/fwlink/?LinkId=136782)。
 

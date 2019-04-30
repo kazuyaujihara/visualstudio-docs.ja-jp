@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443359"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity を使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ ms.locfileid: "60073430"
      ![このアイコンは VSTU が Unity に接続されていることを示します。](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
 > [!TIP]
->  プラグのアイコンにチェックマークが表示されている場合は、既に Unity インスタンスに接続しています。  
+> プラグのアイコンにチェックマークが表示されている場合は、既に Unity インスタンスに接続しています。  
   
  **[Unity のインスタンスの選択]** ダイアログには、接続できる各 Unity インスタンスに関する情報が表示されます。  
   
@@ -136,7 +136,7 @@ ms.locfileid: "60073430"
  Unity のこのインスタンスが通信に使用している UDP ソケットのポート番号。  
   
 > [!IMPORTANT]
->  Visual Studio Tools for Unity と Unity インスタンスは UDP ネットワーク ソケット上で通信を行っているため、ファイアウォールからメッセージが表示されることがあります。 その場合は、VSTU と Unity が通信できるように、接続を承認する必要があります。  
+> Visual Studio Tools for Unity と Unity インスタンスは UDP ネットワーク ソケット上で通信を行っているため、ファイアウォールからメッセージが表示されることがあります。 その場合は、VSTU と Unity が通信できるように、接続を承認する必要があります。  
   
 ### <a name="debugging-your-project-in-a-unity-player"></a> Unity プレーヤーでのプロジェクトのデバッグ  
  Unity エディターを実行していない場合、またはプラットフォーム固有の問題をデバッグする場合は、Visual Studio Tools for Unity を、スタンドアロン プレーヤーで実行されている Unity アプリケーションに直接接続できます。  
@@ -154,7 +154,7 @@ ms.locfileid: "60073430"
 - Unity Web Player のコンテキスト メニューで **[Release Channel]** を選択し、**[Development]** オプションが有効になっていることを確認します。  
   
   > [!IMPORTANT]
-  >  Unity 4.2 以降では、**[Release Channel]** コンテキスト メニュー項目は、Web Player のコンテキスト メニューを開くときに **Alt** キーを押した場合にのみ表示されます。 Web Player が Mac OS X で実行されている場合は、代わりに **Option** キーを押します。  
+  > Unity 4.2 以降では、**[Release Channel]** コンテキスト メニュー項目は、Web Player のコンテキスト メニューを開くときに **Alt** キーを押した場合にのみ表示されます。 Web Player が Mac OS X で実行されている場合は、代わりに **Option** キーを押します。  
   
   最後に、デバッグ対象の Unity インスタンスに接続していることを確認します。 その方法については、「[Visual Studio を Unity に接続する](#connecting-visual-studio-to-unity)」セクションを参照してください。  
   
@@ -162,7 +162,7 @@ ms.locfileid: "60073430"
  多くの Unity 開発者は、コード コンポーネントを外部 DLL として作成し、自分で開発した機能を他のプロジェクトと簡単に共有できるようにしています。 Visual Studio Tools for Unity では、これらの DLL のコードを Unity プロジェクトの他のコードとシームレスにデバッグできます。  
   
 > [!NOTE]
->  現時点で、Visual Studio Tools for Unity はマネージド DLL のみをサポートしています。 C++ で記述された DLL など、ネイティブ コード DLL のデバッグはサポートしていません。  
+> 現時点で、Visual Studio Tools for Unity はマネージド DLL のみをサポートしています。 C++ で記述された DLL など、ネイティブ コード DLL のデバッグはサポートしていません。  
   
  ここで説明するシナリオは、ソース コードを持っていることを前提としている点に注意してください。つまり、自分のファースト パーティ コードを開発しているか再利用している場合、またはサード パーティ製のライブラリのソース コードを持っている場合に、作成する Unity プロジェクトを DLL として配置することを計画しているというケースです。 このシナリオは、ソース コードを持っていない DLL のデバッグには適用されません。  
   

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e0cc6ee8df5285555760521b415ce8f6679fc2f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 17f8acd38df810d0ea7e5c0da2293a5de31eb281
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446510"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>方法: SharePoint アプリケーション ページまたは web パーツのユーザー コントロールを作成します。
   SharePoint ソリューション向けの独自の機能を備えたカスタム ユーザー コントロールを作成し、その機能をプロジェクト内で再利用することができます。 ユーザー コントロールは、Web パーツまたはアプリケーション ページに含めることができます。他の ASP.NET コントロールや SharePoint コントロールを追加し、コントロールのプロパティとメソッドを定義することもできます。 ユーザー コントロールの詳細については、次を参照してください。 [web パーツまたはアプリケーション ページの再利用可能なコントロール作成](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)と[ユーザー コントロールと SharePoint のサーバー コントロール](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/)します。
@@ -40,7 +40,7 @@ ms.locfileid: "60072046"
 5. SharePoint テンプレートの一覧で選択**ユーザー コントロール (ファーム ソリューションのみ)** します。
 
     > [!NOTE]
-    >  ユーザー コントロールはファーム ソリューションでのみ機能します。
+    > ユーザー コントロールはファーム ソリューションでのみ機能します。
 
 6. **名前**ボックス、ユーザー コントロールの名前を指定し、選択、**追加**ボタンをクリックします。
 

@@ -11,12 +11,12 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d93d14383ec755f14619f4d126c7f676acafc6c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c93851445ff5c2c85bdfd18bf3a23270fdbc4a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445945"
 ---
 # <a name="unit-tests-for-generic-methods"></a>ジェネリック メソッドの単体テスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
->  SizeOfLinkedListTest テストを実行するたびに、TestHelper メソッドは 2 回呼び出されます。 テストを成功させるには、アサート ステートメントが毎回 true と評価される必要があります。 テストが失敗した場合、`<int>` を指定した呼び出しと `<char>` を指定した呼び出しのどちらが原因でテストが失敗したかはっきりしないことがあります。 これをはっきりさせるには、コール スタックを調べるか、テスト メソッドにブレークポイントを設定してテスト実行時にデバッグします。 詳細については、「[方法 :ASP.NET ソリューションでのテストの実行中にデバッグ](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)します。  
+> SizeOfLinkedListTest テストを実行するたびに、TestHelper メソッドは 2 回呼び出されます。 テストを成功させるには、アサート ステートメントが毎回 true と評価される必要があります。 テストが失敗した場合、`<int>` を指定した呼び出しと `<char>` を指定した呼び出しのどちらが原因でテストが失敗したかはっきりしないことがあります。 これをはっきりさせるには、コール スタックを調べるか、テスト メソッドにブレークポイントを設定してテスト実行時にデバッグします。 詳細については、「[方法 :ASP.NET ソリューションでのテストの実行中にデバッグ](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)します。  
   
 ### <a name="TypeConstraintNotSatisfied"></a> 例 2:型制約の使用  
  この例では、満たされていない型制約を使用するジェネリック メソッドの単体テストを示します。 最初のセクションでは、テスト対象コード プロジェクトのコードを示します。 型制約が強調表示されています。  

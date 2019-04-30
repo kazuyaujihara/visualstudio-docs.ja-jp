@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f601c9cc404d605d5fb0ddf7ad149a595f77ef77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3fec670f7516d28e20b43b0e1968782a496ef49
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428578"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>手順 9: コードのレビュー、コメント追加、およびテスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,10 +55,10 @@ ms.locfileid: "60059865"
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
   
     > [!NOTE]
-    >  これで **showButton** ボタンの Click イベント ハンドラーが完成し、使用できる状態になりました。 コードの記述を開始するとき、最初に `if` ステートメントを記述しました。 `if` ステートメントは、"ある条件を確認し、それに当てはまる場合に処理を実行する" ようにプログラムに指示するステートメントです。 ここでは、**[ファイルを開く]** ダイアログ ボックスを開き、ユーザーがファイルを選択して **[OK]** をクリックした場合にそのファイルを PictureBox に読み込むように指示しています。  
+    > これで **showButton** ボタンの Click イベント ハンドラーが完成し、使用できる状態になりました。 コードの記述を開始するとき、最初に `if` ステートメントを記述しました。 `if` ステートメントは、"ある条件を確認し、それに当てはまる場合に処理を実行する" ようにプログラムに指示するステートメントです。 ここでは、**[ファイルを開く]** ダイアログ ボックスを開き、ユーザーがファイルを選択して **[OK]** をクリックした場合にそのファイルを PictureBox に読み込むように指示しています。  
   
     > [!TIP]
-    >  IDE はコードを簡単に記述できるように設計されており、そのための方法の 1 つとして*コード スニペット*が用意されています。 スニペットは、小さなコードのブロックに展開されるショートカットです。  
+    > IDE はコードを簡単に記述できるように設計されており、そのための方法の 1 つとして*コード スニペット*が用意されています。 スニペットは、小さなコードのブロックに展開されるショートカットです。  
     >   
     >  使用可能なすべてのスニペットを表示できます。 メニュー バーで、**[ツール]**、**[コード スニペット マネージャー]** の順にクリックします。 Visual C# の場合、`if` スニペットは **[Visual C#]** にあります。 Visual Basic の場合、`if` スニペットは **[条件とループ]**、**[コード パターン]** にあります。 このマネージャーを使用して、既存のスニペットを参照したり独自のスニペットを追加したりすることができます。  
     >   
@@ -83,7 +83,7 @@ Picture Viewer
 2. **[Show a picture]** をクリックして、記述したコードを実行します。 最初に、**[ファイルを開く]** ダイアログ ボックスが開きます。 ダイアログ ボックスの下部にある **[ファイルの種類]** ボックスにフィルターが表示されることを確認します。 次に、ピクチャがある場所に移動して、そのピクチャを開きます。 通常、Windows オペレーティング システムに付属しているサンプルのピクチャが **My Documents** フォルダーの **My Pictures\Sample Pictures** フォルダーにあります。  
   
     > [!NOTE]
-    >  **[Select a picture file]** ダイアログ ボックスにイメージが表示されない場合は、ダイアログ ボックスの右下のボックスで All files (*.\*) フィルターが選択されていることを確認します。  
+    > **[Select a picture file]** ダイアログ ボックスにイメージが表示されない場合は、ダイアログ ボックスの右下のボックスで All files (*.\*) フィルターが選択されていることを確認します。  
   
 3. ピクチャを読み込みます。ピクチャが PictureBox に表示されます。 その後、境界線をドラッグしてフォームのサイズを変更してみてください。 フォーム内にドッキングした TableLayoutPanel 内に PictureBox をドッキングしてあるため、ピクチャの領域が、幅はフォームと同じで、高さはフォームの上部 90% に収まるようにサイズ変更されます。 その理由は、TableLayoutPanel と FlowLayoutPanel コンテナーを使用します。これらのコンテナーを使用することで、ユーザーがフォームのサイズを変更したときに適切なサイズが維持されます。  
   

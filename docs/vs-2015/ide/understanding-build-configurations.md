@@ -26,12 +26,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87e0280534eaf97fefebe54712b0f0b12e14bdac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 684bf375568b83333ac5e4c9f88eeae00449cd42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443263"
 ---
 # <a name="understanding-build-configurations"></a>ビルド構成について
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60077278"
 異なる種類のビルドに使用できるように、ソリューションおよびプロジェクト プロパティの異なる構成を保存することができます。 構成を作成、選択、変更、または削除するには、**構成マネージャー**を使用できます。 構成マネージャーを開くには、メニュー バーで、**[ビルド]**、**[構成マネージャー]** の順にクリックするか、**[クイック起動]** ボックスに「**構成**」と入力します。 また、**[標準]** ツール バーの **[ソリューション構成]** ボックスの一覧を使用して構成を選択することも、**[構成マネージャー]** を開くこともできます。  
   
 > [!NOTE]
->  ツール バーでソリューション構成設定を見つけることができず、**[構成マネージャー]** にアクセスできないときは、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 開発設定を適用できます。 詳細については、「[方法 :Visual Basic 開発者設定が適用された構成の管理](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)します。  
+> ツール バーでソリューション構成設定を見つけることができず、**[構成マネージャー]** にアクセスできないときは、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 開発設定を適用できます。 詳細については、「[方法 :Visual Basic 開発者設定が適用された構成の管理](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)します。  
   
  既定では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] テンプレートを使用して作成されたプロジェクトには、デバッグ構成とリリース構成が含まれます。 デバッグ構成ではアプリのデバッグがサポートされ、リリース構成では展開可能なバージョンのアプリがビルドされます。 詳細については、「[方法 :デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。 カスタム ソリューション構成とプロジェクト構成を作成することもできます。 詳細については、「[方法 :構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)」を参照してください。  
   
@@ -49,9 +49,9 @@ ms.locfileid: "60077278"
  ソリューション構成の **[プロジェクトのコンテキスト]** ボックスの各エントリは、ソリューション内のプロジェクトを表します。 **[アクティブ ソリューション構成]** と **[アクティブ ソリューション プラットフォーム]** の組み合わせごとに、各プロジェクトの使用形態を設定できます  (ソリューション プラットフォームの詳細については、「[ビルド プラットフォームについて](../ide/understanding-build-platforms.md)」を参照してください)。  
   
 > [!NOTE]
->  新しいソリューション構成を定義して **[新しいプロジェクト構成を作成する]** チェック ボックスをオンにした場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、すべてのプロジェクトに新しい構成が自動的に割り当てられます。 同様に、新しいソリューション プラットフォームを定義して **[新しいプロジェクト プラットフォームを作成する]** チェック ボックスをオンにした場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、すべてのプロジェクトに新しいプラットフォームが自動的に割り当てられます。 また、新しいプラットフォームを対象とするプロジェクトを追加すると、Visual Studio により、そのプラットフォームがソリューション プラットフォームの一覧に追加され、すべてのプロジェクトに割り当てられます。  
+> 新しいソリューション構成を定義して **[新しいプロジェクト構成を作成する]** チェック ボックスをオンにした場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、すべてのプロジェクトに新しい構成が自動的に割り当てられます。 同様に、新しいソリューション プラットフォームを定義して **[新しいプロジェクト プラットフォームを作成する]** チェック ボックスをオンにした場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、すべてのプロジェクトに新しいプラットフォームが自動的に割り当てられます。 また、新しいプラットフォームを対象とするプロジェクトを追加すると、Visual Studio により、そのプラットフォームがソリューション プラットフォームの一覧に追加され、すべてのプロジェクトに割り当てられます。  
 >   
->  その場合も、各プロジェクトの設定は変更できます。  
+> その場合も、各プロジェクトの設定は変更できます。  
   
  アクティブなソリューション構成には、IDE 用にコンテキストを用意する役割もあります。 たとえば、プロジェクトでの作業中に、プロジェクトがモバイル デバイス用にビルドされるように構成で指定されていると、モバイル デバイス プロジェクトで使用できる項目のみが **[ツールボックス]** に表示されます。  
   

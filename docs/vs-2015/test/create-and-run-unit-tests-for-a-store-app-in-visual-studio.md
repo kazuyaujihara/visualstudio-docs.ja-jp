@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c328b8522913dcb8095c09a031b2a2c80f58030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fc24dc76e59a04b9485a71ba4dff44e0c7ba64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442808"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Visual Studio でのストア アプリの単体テストの作成および実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60086768"
 Visual Studio 2012 Express for Windows 8 単体テスト ツールは、ソフトウェア開発作業に単体テストを導入した開発者や開発チームをサポートするように設計されています。 単体テストは、Visual C#、Visual Basic、Visual C++ プロジェクトにおいて、クラスのメソッドの論理エラーを発見するための効率的で維持できる方法を開発者とテスト担当者に提供します。
 
 > [!NOTE]
->  このセクションのトピックでは、Visual Studio 2012 Express for Windows 8 の機能について解説します。 Visual Studio Ultimate、VS Premium、および VS Professional には、単体テストの追加機能が備わっています。
+> このセクションのトピックでは、Visual Studio 2012 Express for Windows 8 の機能について解説します。 Visual Studio Ultimate、VS Premium、および VS Professional には、単体テストの追加機能が備わっています。
 >
 > - VS Ultimate、VS Premium、および VS Professional では、Microsoft テスト エクスプローラーのアドオン アダプターを作成したサードパーティまたはオープン ソースの単体テスト フレームワークを使用できます。 VS Ultimate および VS Premium では、テストのコード カバレッジ情報を分析して表示することもできます。
 >   - VS Ultimate では、各ビルド後に毎回テストを実行することができます。 Microsoft Fakes を使用することもできます。これは、システムおよびサードパーティの機能をテスト コードに置き換えることにより、自分のコードにテストの重点を置くことができる、マネージド コードの分離フレームワークです。

@@ -16,12 +16,12 @@ ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0a4477249dfad57bb75a83b40d6c3b1a4343a23f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 36ff8335bfaf99b5826d217a48910bfd581321e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440117"
 ---
 # <a name="developing-a-legacy-language-service"></a>従来の言語サービスの開発
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "58977759"
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 言語サービスを実装する新しい方法の詳細についてを参照してください。[エディターと言語サービス拡張](../../extensibility/editor-and-language-service-extensions.md)します。  
   
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [従来の言語サービスのモデル](../../extensibility/internals/model-of-a-legacy-language-service.md)  
@@ -49,7 +49,7 @@ ms.locfileid: "58977759"
  [デバッグのための言語サービスのサポート](../../extensibility/internals/language-service-support-for-debugging.md)  
  言語サービスが、デバッガーをサポートする機能を提供する方法について説明します。  
   
- [チェックリスト:従来の言語サービスを作成します。](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
+ [チェックリスト: 従来の言語サービスの作成](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
  作成すると、コア エディターの言語サービスを統合する手順について説明します。  
   
 ## <a name="related-sections"></a>関連項目  
@@ -62,8 +62,8 @@ ms.locfileid: "58977759"
  [従来の言語サービスのパラメーター ヒント](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  オーバー ロードされた関数とメソッドのメソッドのヒントを提供する方法について説明します。  
   
- [方法: 従来の言語サービスでの非表示のテキストのサポートを提供します。](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [方法: 従来の言語サービスでの隠し文字サポートの提供](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  非表示のテキスト領域の目的について説明し、非表示のテキスト領域を実装する方法について説明します。  
   
- [方法: 従来の言語サービスでのアウトラインの拡張のサポートを提供します。](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [方法: 従来の言語サービスでのアウトラインの拡張サポートの提供](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  お使いの言語をサポートしている以外のアウトラインのサポートを拡張する 2 つのオプションについて説明します、*定義に折りたたむ*コマンド。

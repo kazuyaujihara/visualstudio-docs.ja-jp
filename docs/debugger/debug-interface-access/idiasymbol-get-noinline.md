@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb68d65e3af5d59833eafea725129ecdf2305d30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 1d0523618298cb6575a5bdb8b92bdc6a4b8c103c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400513"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 関数がインラインのものとしてマークされているかどうかを指定するフラグを取得します (を使用して、 [noinline](/cpp/cpp/noinline)属性)。
@@ -39,13 +39,13 @@ HRESULT get_noInline(
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
 
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|dia2.h|
+|ヘッダー:|Dia2.h|
 |バージョン:|DIA SDK バージョン 8.0|
 
 ## <a name="see-also"></a>関連項目

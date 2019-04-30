@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1111bc7f3fbb0f515bfeb5247f70925c1ab304d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: a684002360f59d33e61c40261afc1bfd515511e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408517"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>[Microsoft Visual Studio デバッガー (例外がスローされました)] ダイアログ ボックス
 プログラムに例外が発生しました。 このダイアログ ボックスには、スローされた例外の種類が報告されます。 コードでは、この例外を処理する必要があります。 この例外を処理するには、次のオプションから選択できます。
@@ -37,7 +37,7 @@ ms.locfileid: "56681284"
  **引き続き**により、実行を継続するには、例外ハンドラーに例外を処理する機会を提供します。 このオプションは、特定の種類の例外に対しては使用できません。 **[継続]** によってアプリケーションは実行を継続できます。 ネイティブ アプリケーションでは、例外が再スローされます。 マネージド アプリケーションでは、プログラムが終了するか、または例外がホスト アプリケーションによって処理されます。
 
 > [!NOTE]
->  未処理の例外がマネージド コードで発生した後には実行を継続できません。 マネージド コードで未処理の例外が発生した後に **[継続]** をクリックすると、デバッグが停止します。
+> 未処理の例外がマネージド コードで発生した後には実行を継続できません。 マネージド コードで未処理の例外が発生した後に **[継続]** をクリックすると、デバッグが停止します。
 
  **無視**例外ハンドラーは起動せずに続行する操作を実行できます。 例外ハンドラーが起動されないため、例外やエラーなどが続けて発生することがあります。 このオプションは、特定の種類の例外に対しては使用できません。
 

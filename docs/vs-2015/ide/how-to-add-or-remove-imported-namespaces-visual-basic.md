@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 311fdca1d56133d85e7b6daa36fe8e4d3a50d5ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5f660a7b457f8ba70439321d3eb619389e50fe97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445716"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>方法: 追加またはインポートされた名前空間 (Visual Basic) を削除します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60065416"
 3. **[インポートされた名前空間]** ボックスの一覧で、追加する名前空間のチェック ボックスをオンにします。  
   
     > [!NOTE]
-    >  名前空間をインポートするには、名前空間が参照されるコンポーネント内に存在する必要があります。 名前空間が一覧に表示されない場合は、名前空間を含むコンポーネントへの参照を追加する必要があります。 詳細については、次を参照してください。[に NIB 方法。追加または参照の追加 ダイアログ ボックスを使用して参照を削除する](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)します。  
+    > 名前空間をインポートするには、名前空間が参照されるコンポーネント内に存在する必要があります。 名前空間が一覧に表示されない場合は、名前空間を含むコンポーネントへの参照を追加する必要があります。 詳細については、次を参照してください。[に NIB 方法。追加または参照の追加 ダイアログ ボックスを使用して参照を削除する](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)します。  
   
 ### <a name="to-remove-an-imported-namespace"></a>インポートされた名前空間を削除するには  
   
@@ -64,7 +64,7 @@ ms.locfileid: "60065416"
 4. **[ユーザー インポートの追加]** ボタンをクリックすると、名前空間が **[インポートされた名前空間]** の一覧に追加されます。  
   
     > [!NOTE]
-    >  入力した名前空間が一覧に既にある名前空間のいずれかと一致する場合、**[ユーザー インポートの追加]** ボタンは使用できません。インポートを 2 回追加することはできません。  
+    > 入力した名前空間が一覧に既にある名前空間のいずれかと一致する場合、**[ユーザー インポートの追加]** ボタンは使用できません。インポートを 2 回追加することはできません。  
   
 #### <a name="to-update-a-user-import"></a>ユーザー インポートを更新するには  
   

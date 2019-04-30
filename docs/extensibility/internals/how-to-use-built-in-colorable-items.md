@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e82b28a22d64ed1a97e2f932368da266b6b79d56
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8d8994270ece639cc7d22a27af6339d525ff3618
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420506"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>方法: 組み込みの配色可能な項目を使用して、
 組み込みの配色可能な項目を使用する前にする必要があります最初に通知する、統合開発環境 (IDE) ここで可能性のあるカスタム独自配色可能な項目を提供していない<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>オブジェクト。 言語サービスのレジストリ エントリを設定して行います。
@@ -30,7 +30,7 @@ ms.locfileid: "56603054"
     レジストリ エントリを colorizer を作成した後<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>メソッドのメンバーが使用できる、<xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS>エディターによって使用される色の属性の配列を埋めるために列挙します。
 
    > [!NOTE]
-   >  カスタムの配色可能な項目を指定する場合は、このレジストリ エントリを設定しないでください。 詳細については、[カスタム装飾が可能なアイテム](../../extensibility/internals/custom-colorable-items.md)を参照してください。
+   > カスタムの配色可能な項目を指定する場合は、このレジストリ エントリを設定しないでください。 詳細については、次を参照してください。[カスタム装飾が可能なアイテム](../../extensibility/internals/custom-colorable-items.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [構文のカスタム エディターで色分け表示](../../extensibility/syntax-coloring-in-custom-editors.md)

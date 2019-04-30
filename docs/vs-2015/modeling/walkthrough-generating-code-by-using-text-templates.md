@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446702"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>チュートリアル: テキスト テンプレートを使用してコードを生成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60052884"
  このプロジェクト例では、テンプレートでサンプル XML ファイルを読み取り、ノードの各型に対応するクラスを生成します。 手入力のコードでは、これらのクラスを使用して XML ファイルを操作できます。 また、同じノード型を使用する他のファイルでも、アプリケーションを実行できます。 サンプル XML ファイルの目的は、アプリケーションで対応できるようにするすべてのノード型の例を提供することです。  
   
 > [!NOTE]
->  [に含まれるアプリケーション](http://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]では、XML ファイルから厳密に型指定されたクラスを生成できます。 ここで紹介するテンプレートは、例として提供されています。  
+> [に含まれるアプリケーション](http://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]では、XML ファイルから厳密に型指定されたクラスを生成できます。 ここで紹介するテンプレートは、例として提供されています。  
   
  サンプル ファイルは次のとおりです。  
   
@@ -142,7 +142,7 @@ namespace MyProject
 2. **[新しい項目の追加]** ダイアログ ボックスで、 **[テンプレート]** ウィンドウの **[テキスト テンプレート]** を選択します。  
   
    > [!NOTE]
-   >  [ランタイム テキスト テンプレート] ではなく、[テキスト テンプレート] を追加するようにしてください。  
+   > [ランタイム テキスト テンプレート] ではなく、[テキスト テンプレート] を追加するようにしてください。  
   
 3. ファイルの template ディレクティブで、 `hostspecific` 属性を `true`に変更します。  
   

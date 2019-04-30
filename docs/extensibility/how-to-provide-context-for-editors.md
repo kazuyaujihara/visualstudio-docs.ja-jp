@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0adc498ebaaf7ea1b5de033d4d589d99545da976
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f37550dbea8b3633c79358822fa8f2bdf1ecb6d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417159"
 ---
 # <a name="how-to-provide-context-for-editors"></a>方法: エディターのコンテキストを提供します。
 エディターのコンテキストは、エディターにフォーカスがあるか、ツール ウィンドウにフォーカスが移動された直前にフォーカスがあった場合にのみアクティブです。 次のタスクを実行して、エディターのコンテキストを行うことができます。
@@ -65,7 +65,7 @@ ms.locfileid: "60068237"
      ときに、**ダイナミック ヘルプ**ウィンドウ呼び出し<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>を示すこと、更新するときは、エディターまたはデザイナーは、その時点で、親のコンテキスト バッグと任意のサブコンテキスト バッグの両方を適切にコンテキストを更新できます。
 
     > [!NOTE]
-    >  `SetDirty`にフラグが設定されて自動的に`true`コンテキストが追加またはコンテキスト バッグから削除されるたびにします。 **ダイナミック ヘルプ** ウィンドウの呼び出しのみ<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>コンテキスト バッグの場合、`SetDirty`にフラグが設定されている`true`します。 リセットされます`false`更新後にします。
+    > `SetDirty`にフラグが設定されて自動的に`true`コンテキストが追加またはコンテキスト バッグから削除されるたびにします。 **ダイナミック ヘルプ** ウィンドウの呼び出しのみ<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>コンテキスト バッグの場合、`SetDirty`にフラグが設定されている`true`します。 リセットされます`false`更新後にします。
 
 3. 呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A>アクティブ コンテキストのコレクションにコンテキストを追加または<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A>コンテキストを削除します。
 
@@ -73,7 +73,7 @@ ms.locfileid: "60068237"
  独自のエディターを作成する場合は、エディターのコンテキストを提供するには、この記事の手順の 3 つすべてを完了する必要があります。
 
 > [!NOTE]
->  呼び出す必要がある適切なエディターまたはデザイナー ウィンドウをアクティブにして、更新されるようにするコマンドのルーティングが正しく<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>フォーカス ウィンドウに、コンポーネントにします。
+> 呼び出す必要がある適切なエディターまたはデザイナー ウィンドウをアクティブにして、更新されるようにするコマンドのルーティングが正しく<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>フォーカス ウィンドウに、コンポーネントにします。
 
  SEID は、変更の選択に基づくプロパティのコレクションです。 SEID 情報は、グローバルの選択を利用します。 によってトリガーされるイベントに、グローバルの選択がワイヤード (有線)、<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>インターフェイスであるすべての項目のリストを選択しています (現在のエディター、現在のツール ウィンドウ、現在の階層およびなど)。
 

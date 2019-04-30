@@ -16,12 +16,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bf3e8998abe18a4d40e031b85ffb6683fa62dc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 105f16c0d9deb8d94a102818c5335af18685c675
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439329"
 ---
 # <a name="call-tree-view"></a>コール ツリー ビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,10 +36,10 @@ ms.locfileid: "54752123"
   
  コール ツリー ビューをカスタマイズし、列を追加したり、削除したりできます。 **[Column Name Title Bar]\(列名タイトル バー\)** を右クリックし、**[列の追加と削除]** を選択します。  
   
- コール ツリー ビューは、表示されるデータの数を制限して、ノイズを除去するように構成できます。 ノイズ除去を行うことで、ビューでパフォーマンスの問題を発見しやすくなります。 パフォーマンスの問題が発見しやすくなれば、分析が簡単になります。 詳細については、「[方法: レポート ビューでノイズ除去を設定する](../profiling/how-to-configure-noise-reduction-in-report-views.md)」を参照してください。  
+ コール ツリー ビューは、表示されるデータの数を制限して、ノイズを除去するように構成できます。 ノイズ除去を行うことで、ビューでパフォーマンスの問題を発見しやすくなります。 パフォーマンスの問題が発見しやすくなれば、分析が簡単になります。 詳細については、「[方法 :レポート ビューでノイズ除去を設定](../profiling/how-to-configure-noise-reduction-in-report-views.md)します。  
   
 > [!NOTE]
->  有効にしたときに警告を表示するようにノイズ除去が構成されている場合、レポートに情報バーが表示されます。  
+> 有効にしたときに警告を表示するようにノイズ除去が構成されている場合、レポートに情報バーが表示されます。  
   
  コール ツリー ビューの列の定義については、以下をご覧ください。  
   

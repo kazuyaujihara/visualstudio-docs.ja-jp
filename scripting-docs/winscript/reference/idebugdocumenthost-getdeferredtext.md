@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f20b090f880168b3561cba547db319813ba3fe02
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3e5800a6de15d2d59208022fa44d3c2f4c931e14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446567"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
 使用して追加された文字の範囲を返します、`IDebugDocumentHelper::AddDeferredText`元ホスト ドキュメント内のメソッド。  
@@ -67,7 +67,7 @@ HRESULT GetDeferredText(
  このメソッドが返す可能性があります`E_NOTIMPL`ホストが要求されていない場合、`IDebugDocumentHelper::AddDeferredText`します。  
   
 > [!NOTE]
->  このメソッドは、元のドキュメントからテキストを返します。 ホストを追跡するありません編集内容やその他の変更をドキュメントにします。  
+> このメソッドは、元のドキュメントからテキストを返します。 ホストを追跡するありません編集内容やその他の変更をドキュメントにします。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentHost インターフェイス](../../winscript/reference/idebugdocumenthost-interface.md)   

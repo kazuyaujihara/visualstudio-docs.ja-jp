@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7d57643661edec90f12a54a2482b59d83bbb3c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd4e61960616245d459140e351386ae7b55adc22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441707"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>方法: エディターのフォントと色を変更します。
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60040951"
 - **[前景色]**、**[背景色]**、**[太字]** の各オプションは、テキスト要素の種類ごとに設定できます。 たとえば、**[コメント]** と **[ブックマーク]** について色を変更して **[太字]** を選んでも、他の種類のテキスト要素は影響を受けません。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、**ヘルプ**の説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、**ヘルプ**の説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>既定のフォント フェイス、サイズ、色を変更するには  
   
@@ -49,7 +49,7 @@ ms.locfileid: "60040951"
 4. **[表示項目]** で適切な項目を選択し、**[前景色]** および **[背景色]** オプションを変更します。  
   
     > [!TIP]
-    >  既定の設定にリセットするには、**[既定値を使用]** をクリックします。  
+    > 既定の設定にリセットするには、**[既定値を使用]** をクリックします。  
   
 5. **[OK]** をクリックします。  
   

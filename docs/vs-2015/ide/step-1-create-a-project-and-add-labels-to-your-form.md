@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 226f2281af2ccdb288ff2c186da280b329a2af1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e58471c1676ce67e96ef2c325f5ec461f54cfc9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441982"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>手順 1: プロジェクトを作成し、フォームにラベルを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60071877"
 このクイズを開発する最初のステップとして、プロジェクトを作成し、ラベル、ボタン、およびその他のコントロールをフォームに追加します。 また、追加する各コントロールのプロパティを設定します。 プロジェクトには、フォーム、コントロール、およびコード (チュートリアルで後ほど説明) が含まれます。 ボタンはクイズを開始し、ラベルはクイズ問題を表示し、その他のコントロールはクイズの解答とクイズを完了するために残っている時間を示します。  
   
 > [!NOTE]
->  このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2:クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)です。  
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2:クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)です。  
   
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>プロジェクトを作成し、フォームのプロパティを設定するには  
   
@@ -145,7 +145,7 @@ ms.locfileid: "60071877"
 9. 4 番目の行については、最初のラベルに **dividedLeftLabel** という名前を付け、2 番目のラベルの **Text** プロパティを **÷** (除算記号) に変更し、3 番目のラベルに **dividedRightLabel** という名前を付け、NumericUpDown コントロールに **quotient** という名前を付けます。  
   
     > [!NOTE]
-    >  乗算記号 × と除算記号 ÷ は、このチュートリアルからコピーしてフォームに貼り付けることができます。  
+    > 乗算記号 × と除算記号 ÷ は、このチュートリアルからコピーしてフォームに貼り付けることができます。  
   
 ### <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>[Start] ボタンを追加し、タブ インデックスの順序を設定するには  
   
@@ -162,7 +162,7 @@ ms.locfileid: "60071877"
 6. **startButton** コントロールの **TabIndex** プロパティの値を **1** に設定します。  
   
     > [!NOTE]
-    >  クイズの受け手が Tab キーを押すと、**TabIndex** プロパティはコントロールの順序を設定します。 この動作を確認するには、ダイアログ ボックス (たとえば、メニュー バーで、**[ファイル]**、**[開く]** をクリックします) を開き、Tab キーを数回押します。 Tab キーを押すたびに、カーソルが次のコントロールへと切り替わっていくのがわかります。 この順序は、そのフォームが設計されたときにプログラマによって決められています。  
+    > クイズの受け手が Tab キーを押すと、**TabIndex** プロパティはコントロールの順序を設定します。 この動作を確認するには、ダイアログ ボックス (たとえば、メニュー バーで、**[ファイル]**、**[開く]** をクリックします) を開き、Tab キーを数回押します。 Tab キーを押すたびに、カーソルが次のコントロールへと切り替わっていくのがわかります。 この順序は、そのフォームが設計されたときにプログラマによって決められています。  
   
 7. NumericUpDown sum コントロールの **TabIndex** プロパティの値を **2** に設定し、difference コントロールは **3** に設定し、product コントロールは **4** に設定し、quotient コントロールは **5** に設定します。  
   

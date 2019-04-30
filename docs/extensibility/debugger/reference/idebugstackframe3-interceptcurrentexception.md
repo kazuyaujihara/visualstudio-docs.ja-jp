@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ba8aadaa55a22c8e8c645866a9163628404407
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b3fb11457319d4cea762808ec2619f32c37780a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412663"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 現在の例外をインターセプトする必要がある場合に、現在のスタック フレーム上のデバッガーによって呼び出されます。
@@ -64,7 +64,7 @@ int InterceptCurrentException(
  デバッガーが例外を受け取るかどうかを把握したい場合は、現在のスタック フレーム オブジェクトにこのメソッドを呼び出します。 このメソッドは、例外のすべての詳細を処理するためです。 場合、 [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)インターフェイスが実装されていません、または`InterceptStackException`メソッドには、すべてのエラーが返されますし、デバッガーは、通常、例外の処理を続行します。
 
 > [!NOTE]
->  例外をインターセプトできます、マネージ コードでのみ、デバッグ中のプログラムが .NET ランタイムで実行されている場合。 もちろん、サード パーティの言語実装者を実装できる`InterceptStackException`希望する場合は、独自のデバッグ エンジンでします。
+> 例外をインターセプトできます、マネージ コードでのみ、デバッグ中のプログラムが .NET ランタイムで実行されている場合。 もちろん、サード パーティの言語実装者を実装できる`InterceptStackException`希望する場合は、独自のデバッグ エンジンでします。
 
  インターセプションが完了した後、 [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)がシグナルを受け取る。
 

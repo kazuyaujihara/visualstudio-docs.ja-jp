@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13ea06abff2237c0b9262ba01dcb243afe6c3c3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430458"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>チュートリアル: サーバー エクスプ ローラー拡張機能では、SharePoint クライアント オブジェクト モデルへの呼び出し
   このチュートリアルの拡張機能から SharePoint クライアント オブジェクト モデルを呼び出す方法、 **SharePoint 接続**ノード**サーバー エクスプ ローラー**します。 SharePoint クライアント オブジェクト モデルを使用する方法の詳細については、次を参照してください。[の SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)します。
@@ -36,7 +36,7 @@ ms.locfileid: "60063115"
 - デバッグと、拡張機能をテストします。
 
 > [!NOTE]
->  このチュートリアルで作成した拡張機能の拡張機能で作成するよう[チュートリアル。Web パーツを表示するサーバー エクスプ ローラーを拡張](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)します。 そのチュートリアルは、SharePoint サーバー オブジェクト モデルを使用しますが、このチュートリアルは、クライアント オブジェクト モデルを使用して同じタスクを実行します。
+> このチュートリアルで作成した拡張機能の拡張機能で作成するよう[チュートリアル。Web パーツを表示するサーバー エクスプ ローラーを拡張](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)します。 そのチュートリアルは、SharePoint サーバー オブジェクト モデルを使用しますが、このチュートリアルは、クライアント オブジェクト モデルを使用して同じタスクを実行します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、開発コンピューターに次のコンポーネントが必要です。
@@ -69,7 +69,7 @@ ms.locfileid: "60063115"
 3. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual c#** または**Visual Basic**ノードを選び、**拡張**。
 
     > [!NOTE]
-    >  **Extensibility**ノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
+    > **Extensibility**ノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
 
 4. ダイアログ ボックスの上部にある次のように選択します。 **.NET Framework 4.5**で .NET Framework のバージョンの一覧。
 
@@ -161,7 +161,7 @@ ms.locfileid: "60063115"
 1. 次のコードを貼り付け、 **SiteNodeExtension**のコード ファイル、 **WebPartNodeExtension**プロジェクト。
 
     > [!NOTE]
-    >  このコードを追加した直後は、いくつかのコンパイル エラーが発生します。 これらのエラーは、この後の手順でコードを追加すると解消されます。
+    > このコードを追加した直後は、いくつかのコンパイル エラーが発生します。 これらのエラーは、この後の手順でコードを追加すると解消されます。
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -205,7 +205,7 @@ ms.locfileid: "60063115"
 6. **新しい資産の追加** ダイアログ ボックスで、**型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    > この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
 
 7. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 

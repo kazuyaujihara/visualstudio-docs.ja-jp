@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 02d40062b1202a261aa7be4ae306329a6a93b37a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: f0dd471e156f7a76462ac093c9ca54684f7dbc68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444494"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio でのデータにアクセスします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Visual Studio では、事実上すべてのデータベース製品またはサ
  多くのデータベース ベンダーやサード パーティは、NuGet パッケージによって Visual Studio の統合をサポートします。 Nuget.org または Visual Studio で NuGet パッケージ マネージャーを通じて、オファリングを調べることができます (**ツール** > **NuGet パッケージ マネージャー** > **NuGet の管理ソリューションのパッケージの**)。 他のデータベース製品は、拡張機能として、Visual Studio と統合します。   移動して、Visual Studio ギャラリーでこれらの製品を参照する**ツール** > **拡張機能と更新プログラム**し選択**オンライン**左にあります。ダイアログ ボックスのウィンドウです。  詳細については、次を参照してください。[データベース システム、ツール、およびサンプルをインストールする](../data-tools/installing-database-systems-tools-and-samples.md)します。
 
 > [!NOTE]
->  SQL Server 2005 の延長サポートは 2016 年 4 月 12 日に終了しました。   データ ツールの Visual Studio 2015 以降では引き続きこの日付より後の SQL Server 2005 で機能する保証はありません。 詳細については、次を参照してください。、 [for SQL Server 2005 サポート終了のお知らせ](https://www.microsoft.com/sql-server/sql-server-2005)します。
+> SQL Server 2005 の延長サポートは 2016 年 4 月 12 日に終了しました。   データ ツールの Visual Studio 2015 以降では引き続きこの日付より後の SQL Server 2005 で機能する保証はありません。 詳細については、次を参照してください。、 [for SQL Server 2005 サポート終了のお知らせ](https://www.microsoft.com/sql-server/sql-server-2005)します。
 
 ### <a name="net-languages"></a>.NET 言語
  .NET Core で含む、すべての .NET データ アクセスは、ADO.NET、任意の種類のデータ ソース、リレーショナルと非リレーショナルの両方にアクセスするためのインターフェイスを定義する一連のクラスに基づきます。 Visual Studio がいくつかのツールと、データベースに接続するための ADO.NET を使用するデザイナーがデータを操作およびユーザーにデータを表示します。 このセクションのドキュメントでは、これらのツールを使用する方法について説明します。 コマンドの ADO.NET オブジェクトに対して直接プログラムすることもできます。 ADO.NET の Api を直接呼び出すことの詳細については、次を参照してください。 [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) 、MSDN ライブラリ。

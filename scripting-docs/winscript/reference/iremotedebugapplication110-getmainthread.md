@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61939a015481d479804213163a9f4019be1b2e4e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 8a4b51d87f89d77bebf065ce5f52a297ada333d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383507"
 ---
 # <a name="iremotedebugapplication110getmainthread"></a>IRemoteDebugApplication110::GetMainThread
 呼び出すホストのメイン スレッドを返します[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)E_FAIL を返します。  
   
 > [!IMPORTANT]
->  [IRemoteDebugApplication インターフェイス](../../winscript/reference/iremotedebugapplication-interface.md)PDM v11.0 以降によって実装された以降には。 activdbg100.h にあります。  
+> [IRemoteDebugApplication インターフェイス](../../winscript/reference/iremotedebugapplication-interface.md)PDM v11.0 以降によって実装された以降には。 activdbg100.h にあります。  
   
 ## <a name="syntax"></a>構文  
   

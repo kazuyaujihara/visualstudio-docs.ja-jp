@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 318caec1f96bc0b69a6fe9540231608a8636e107
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442626"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>手順 2: ランダムな加算問題を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60099501"
 このチュートリアルの第 2 部では、乱数に基づく計算問題を追加して、クイズに挑みます。 また、`StartTheQuiz()` という名前の、問題に記入して、カウントダウン タイマーを開始するメソッドを作成します。 このチュートリアルの後半では、減算、乗算、除算問題を追加します。  
   
 > [!NOTE]
->  このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2:クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)です。  
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2:クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)です。  
   
 ### <a name="to-create-a-random-addition-problem"></a>ランダムな加算問題を作成するには  
   
@@ -46,7 +46,7 @@ ms.locfileid: "60099501"
 4. 2 つの整数変数をフォームに追加し、**addend1** と **addend2** という名前を付けます。  
   
     > [!NOTE]
-    >  整数変数は、C# では int、Visual Basic では Integer と呼ばれます。 この種類の変数は、-2147483648 から 2147483647 の正または負の数を格納し、整数のみを格納することができ、小数は格納できません。  
+    > 整数変数は、C# では int、Visual Basic では Integer と呼ばれます。 この種類の変数は、-2147483648 から 2147483647 の正または負の数を格納し、整数のみを格納することができ、小数は格納できません。  
   
      次のコードに示すように、`Random` オブジェクトを追加するために使用したものと同様の構文を使用して整数変数を追加します。  
   
@@ -66,7 +66,7 @@ ms.locfileid: "60099501"
      オブジェクトの後にドットを入力すると、IntelliSense はプロパティ、メソッド、イベントなどのオブジェクトのメンバーの一覧を表示します。  
   
     > [!NOTE]
-    >  `Next()` を呼び出す場合など、`Random` オブジェクトで `randomizer.Next(50)` メソッドを使用するときは、50 未満の乱数を取得します (0 ～ 49)。 この例では、`randomizer.Next(51)` を呼び出します。 2 つの乱数を合計した答えが 0 ～ 100 になるようにするため、50 ではなく 51 を使用しました。 `Next()` メソッドに 50 を渡した場合、0 ～ 49 の数値が選択されるため、答えの最大値が 100 ではなく 98 になります。 メソッドの最初の 2 つのステートメントが実行された後、`addend1` と `addend2` の 2 つの整数変数は、それぞれ 0 ～ 50 の乱数を保持します。 このスクリーンショットは Visual C# コードを表示していますが、IntelliSense は Visual Basic の場合でも同様に動作します。  
+    > `Next()` を呼び出す場合など、`Random` オブジェクトで `randomizer.Next(50)` メソッドを使用するときは、50 未満の乱数を取得します (0 ～ 49)。 この例では、`randomizer.Next(51)` を呼び出します。 2 つの乱数を合計した答えが 0 ～ 100 になるようにするため、50 ではなく 51 を使用しました。 `Next()` メソッドに 50 を渡した場合、0 ～ 49 の数値が選択されるため、答えの最大値が 100 ではなく 98 になります。 メソッドの最初の 2 つのステートメントが実行された後、`addend1` と `addend2` の 2 つの整数変数は、それぞれ 0 ～ 50 の乱数を保持します。 このスクリーンショットは Visual C# コードを表示していますが、IntelliSense は Visual Basic の場合でも同様に動作します。  
   
      次のステートメントについて詳しく見てみましょう。  
   

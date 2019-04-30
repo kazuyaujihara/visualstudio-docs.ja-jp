@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 184004d24d685c0e7242f9ba5b34f679cc581d26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443055"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity の使用を開始する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60105033"
 このセクションでは、Visual Studio Tools for Unity をインストールする方法と、Visual Studio で操作できるように Unity プロジェクトを構成する方法を説明します。  
   
 > [!IMPORTANT]
->  Unity 5.2 では Visual Studio Tools for Unity 2.1 の組み込みサポートが追加され、プロジェクトのセットアップが簡単になりました。 これを活用するには、Windows で Unity バージョン 5.2.0 以降と、Visual Studio Tools for Unity バージョン 2.1 以降が必要です。  
+> Unity 5.2 では Visual Studio Tools for Unity 2.1 の組み込みサポートが追加され、プロジェクトのセットアップが簡単になりました。 これを活用するには、Windows で Unity バージョン 5.2.0 以降と、Visual Studio Tools for Unity バージョン 2.1 以降が必要です。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  Visual Studio Tools for Unity を使用するには、次のコンポーネントが必要です。  
@@ -55,7 +55,7 @@ ms.locfileid: "60105033"
      [Visual Studio 2010 Tools for Unity をダウンロード](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   
 > [!NOTE]
->  Visual Studio Express バージョンは、Visual Studio Tools for Unity などの拡張機能をサポートしていません。 Visual Studio Community は、Visual Studio Tools for Unity と他の拡張機能をサポートしている無料版の Visual Studio です。 ほとんどのユーザーの場合、Visual Studio Community が Express よりも適した選択肢になります。  
+> Visual Studio Express バージョンは、Visual Studio Tools for Unity などの拡張機能をサポートしていません。 Visual Studio Community は、Visual Studio Tools for Unity と他の拡張機能をサポートしている無料版の Visual Studio です。 ほとんどのユーザーの場合、Visual Studio Community が Express よりも適した選択肢になります。  
   
 ## <a name="your-first-unity-project-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity で取り組む最初の Unity プロジェクト  
  これで必要なすべてが揃ったので、Visual Studio による初めての Unity プロジェクトに取り組む準備が整いました。 Unity プロジェクトの設定は、インストールされている Unity と Visual Studio Tools for Unity のバージョンによって異なります。 次の手順で、インストールされている Unity と Visual Studio Tools for Unity のバージョンを確認します。  

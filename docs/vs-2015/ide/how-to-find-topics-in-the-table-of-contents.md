@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e439521d9a81bc418eb403bb87ee9576605b8e66
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8ab015fdfd459dbb13e81deed0fe0cc89f71cd1f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416688"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>方法: 目次でトピックを検索する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60055499"
 **[目次]** タブでは、目次 (TOC) を使用して情報を検索できます。 目次は、インストールしたブックに関するトピックをすべて含む、拡張可能なリストです。 TOC 内の移動方法に関するユーザー補助情報については、「[ショートカット キー (ヘルプ ビューアー)](../ide/shortcut-keys-help-viewer.md)」を参照してください。  
   
 > [!IMPORTANT]
->  TOC で使用できるトピックの範囲は、選択したフィルターによって異なります。  
+> TOC で使用できるトピックの範囲は、選択したフィルターによって異なります。  
   
 ## <a name="filter-the-toc"></a>TOC のフィルター処理  
  TOC をフィルター処理して、**[目次]** タブに表示されるトピックの範囲を絞り込むことができます。指定した用語のルートがタイトルに含まれている場合にのみ、一覧にタイトルが表示されます。 たとえば、フィルターとして「troubleshooting」を指定すると、「troubleshoot」または「troubleshooting」を含むタイトルのみが表示されます。 タイトルに用語が含まれないノードは、省略記号 (...) と共に単一のノードに折りたたまれます。  
@@ -41,7 +41,7 @@ ms.locfileid: "60055499"
 2. **[フィルターの内容]** テキスト ボックスに、用語を入力します。  
   
 > [!NOTE]
->  フィルターの実行に時間がかかる場合は、高度な検索演算子 `title:` を使用すると、結果がすばやく表示される場合があります。  
+> フィルターの実行に時間がかかる場合は、高度な検索演算子 `title:` を使用すると、結果がすばやく表示される場合があります。  
   
 ## <a name="synchronize-a-topic-with-the-toc"></a>TOC とのトピックの同期  
  インデックスまたはフルテキストの検索機能を使用してトピックを開いている場合は、トピック ウィンドウと TOC を同期させることによって、TOC のどこにこのトピックがあるかを特定できます。  

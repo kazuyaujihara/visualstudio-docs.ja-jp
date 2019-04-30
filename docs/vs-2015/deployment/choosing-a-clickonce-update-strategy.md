@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0f6d09dbd653dc332fd01414ff1ebb73cd2d014
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8215b8e0955b79224341d5d43b51a473740f5fe5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442334"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>ClickOnce の更新方法の選択
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "58977712"
  また、アプリケーションが更新プログラムをチェックする頻度を決定でき、更新を必須にすることもできます。  
   
 > [!NOTE]
->  アプリケーションの更新には、ネットワーク接続が必要です。 ネットワーク接続されていない場合、選択した更新方法に関係なく、アプリケーションは更新プログラムをチェックせずに実行されます。  
+> アプリケーションの更新には、ネットワーク接続が必要です。 ネットワーク接続されていない場合、選択した更新方法に関係なく、アプリケーションは更新プログラムをチェックせずに実行されます。  
   
 > [!NOTE]
->  .NET Framework 2.0 および .NET Framework 3.0 で、アプリケーションの起動の前後または <xref:System.Deployment.Application> の API を使用する前後に更新プログラムがあるかどうかをチェックする場合は、配置マニフェストで `deploymentProvider` を設定する必要があります。 `deploymentProvider` 要素は、Visual Studio の **[発行]** タブの **[更新]** ダイアログ ボックスにある **[更新の場所]** に対応します。この規則は .NET Framework 3.5 で緩和されています。 詳細については、次を参照してください。 [ClickOnce アプリケーションのテストの展開および Resigning なしの実稼働サーバー](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)します。  
+> .NET Framework 2.0 および .NET Framework 3.0 で、アプリケーションの起動の前後または <xref:System.Deployment.Application> の API を使用する前後に更新プログラムがあるかどうかをチェックする場合は、配置マニフェストで `deploymentProvider` を設定する必要があります。 `deploymentProvider` 要素は、Visual Studio の **[発行]** タブの **[更新]** ダイアログ ボックスにある **[更新の場所]** に対応します。この規則は .NET Framework 3.5 で緩和されています。 詳細については、次を参照してください。 [ClickOnce アプリケーションのテストの展開および Resigning なしの実稼働サーバー](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)します。  
   
 ## <a name="checking-for-updates-after-application-startup"></a>アプリケーション起動後の更新プログラムのチェック  
  この方法を使用した場合、アプリケーションは、実行中にバックグラウンドで配置マニフェスト ファイルの検索と読み取りを試みます。 更新が利用可能な場合は、ユーザーが次回アプリケーションを実行したときに、更新プログラムをダウンロードしてインストールするかどうかを確認するプロンプトが表示されます。  
@@ -79,7 +79,7 @@ ms.locfileid: "58977712"
  アプリケーションの最新バージョンを実行するようユーザーに要求することが必要な場合があります。 たとえば、Web サービスなどの外部リソースに変更を加えたことで、旧バージョンのアプリケーションが適切に動作できなくなるような場合です。 この場合、更新を必須としてマークし、ユーザーが旧バージョンを実行するのを防ぎます。  
   
 > [!NOTE]
->  他の更新方法を使用して更新を要求することもできますが、古いバージョンを確実に実行できないようにするのは、**[アプリケーションの開始前に行う]** をオンにする方法だけです。 起動時に必須の更新が検出された場合、ユーザーは更新を受け入れるか、アプリケーションを終了する必要があります。  
+> 他の更新方法を使用して更新を要求することもできますが、古いバージョンを確実に実行できないようにするのは、**[アプリケーションの開始前に行う]** をオンにする方法だけです。 起動時に必須の更新が検出された場合、ユーザーは更新を受け入れるか、アプリケーションを終了する必要があります。  
   
  更新を必須としてマークするには、**[アプリケーションの更新]** ダイアログ ボックスで **[このアプリケーションに最低限必要なバージョンを指定してください]** をクリックし、発行バージョン (**[メジャー]**、**[マイナー]**、**[ビルド]**、**[リビジョン]**) を指定することで、インストール可能なアプリケーションの最も低いバージョン番号を指定します。  
   

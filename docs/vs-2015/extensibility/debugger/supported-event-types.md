@@ -10,12 +10,12 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d82bce8546d4c63a82f4850097ca92c804399a66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f671e8d0128bee2c52dc1191b33edb889c92d2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446445"
 ---
 # <a name="supported-event-types"></a>サポートされているイベントの種類
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Visual Studio のデバッグでは、次のイベントの種類現在サポー
     インターフェイス[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)と[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)停止イベントの例を示します。  
   
   > [!NOTE]
-  >  非同期の停止イベントがサポートされていません。 非同期の停止イベントを送信するエラーになります。  
+  > 非同期の停止イベントがサポートされていません。 非同期の停止イベントを送信するエラーになります。  
   
 ## <a name="discussion"></a>説明  
  イベントの実際の実装は、DE の設計に依存します。 送信される各イベントの種類は、DE を設計する際に、その属性によって決定されます。 たとえば、1 つ DE が送信可能性があります、 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) stopping イベントとして送信することがあります別中に、非同期のイベントとして。  
@@ -53,7 +53,7 @@ Visual Studio のデバッグでは、次のイベントの種類現在サポー
  次の表では、どのプログラムとスレッドのパラメーターは、どのイベントとイベントの種類に必要なを指定します。 すべてのイベントは、同期されることができます。 イベントを同期する必要はありません。  
   
 > [!NOTE]
->  [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md)インターフェイスがすべてのイベントが必要です。  
+> [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md)インターフェイスがすべてのイベントが必要です。  
   
 |event|IDebugProgram2|IDebugThread2|停止イベント|  
 |-----------|--------------------|-------------------|---------------------|  

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87dda9c975f35ac8b48e60acd3e692f9b3a070d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25b30db78706dce95188289187ce55011ce1362d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441731"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>方法: コンテンツ コントロールを使用してドキュメントを保護する. します。
   ドキュメントの一部を保護することにより、ユーザーがドキュメントのその部分を変更したり削除したりできないようにします。 コンテンツ コントロールを使用して Microsoft Office Word ドキュメントの一部を保護する方法は、いくつかあります。
@@ -73,7 +73,7 @@ ms.locfileid: "60103520"
 - 既にコンテンツ コントロールが含まれている領域だが、保護対象のテキストまたはその他のアイテムが、コンテンツ コントロールに含まれていない場合。
 
 > [!NOTE]
->  コンテンツ コントロールが埋め込まれた <xref:Microsoft.Office.Tools.Word.GroupContentControl> を作成した場合、埋め込まれたコンテンツ コントロールは自動的には保護されません。 ユーザーが埋め込みコンテンツ コントロールを編集できないようにするには、使用、 **LockContents**コントロールのプロパティ。
+> コンテンツ コントロールが埋め込まれた <xref:Microsoft.Office.Tools.Word.GroupContentControl> を作成した場合、埋め込まれたコンテンツ コントロールは自動的には保護されません。 ユーザーが埋め込みコンテンツ コントロールを編集できないようにするには、使用、 **LockContents**コントロールのプロパティ。
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>デザイン時にドキュメントのある領域を保護するには
 
@@ -82,7 +82,7 @@ ms.locfileid: "60103520"
 2. リボンの **[開発]** タブをクリックします。
 
     > [!NOTE]
-    >  **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
+    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
 
 3. **コントロール**グループで、、**グループ**ドロップダウン ボタン、およびクリック**グループ**します。
 

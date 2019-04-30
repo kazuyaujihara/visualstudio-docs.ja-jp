@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a614a90fe6388d9189d2b63e02f9bf63f83f0b7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e949dd566a065b266bfdbf8eae36a099fa229ef7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403414"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML による WPF のデータ バインディングの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +56,12 @@ ms.locfileid: "54774179"
   WPF のデータ バインディングの詳細については、「[データ バインディングの概要](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)」を参照してください。  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>LINQ to XML クラスの動的プロパティ  
- ほとんどの LINQ to XML クラスは、WPF の動的データ ソースとして適切ではありません。メソッド (およびプロパティではなく) を通じてのみ使用できますが、最も役に立つ情報の一部と、これらのクラスのプロパティは変更通知を実装していません。 LINQ to XML では、WPF のデータ バインディングをサポートするために一連の*動的プロパティ*が公開されます。  
+ ほとんどの LINQ to XML クラスは、適切な WPF の動的なデータ ソースとは見なされません。メソッド (およびプロパティではなく) を通じてのみ使用できますが、最も役に立つ情報の一部と、これらのクラスのプロパティは変更通知を実装していません。 LINQ to XML では、WPF のデータ バインディングをサポートするために一連の*動的プロパティ*が公開されます。  
   
  これらの動的プロパティは、<xref:System.Xml.Linq.XAttribute> クラスと <xref:System.Xml.Linq.XElement> クラスの既存のメソッドやプロパティと同じ機能を持つ特殊な実行時プロパティであり、 これらのクラスを WPF の動的データ ソースとして使用することのみを目的として追加されています。 この目的を満たすため、これらすべての動的プロパティに変更通知が実装されています。 これらの動的プロパティの詳細については、次の「[LINQ to XML の動的プロパティ](../designers/linq-to-xml-dynamic-properties.md)」を参照してください。  
   
 > [!NOTE]
->  <xref:System.Xml.Linq> 名前空間のさまざまなクラスに含まれている標準のパブリック プロパティの多くは、一方向のデータ バインドには使用できます。 ただし、既に説明したように、一方向のデータ バインドではソースもターゲットも動的に更新されません。  
+> <xref:System.Xml.Linq> 名前空間のさまざまなクラスに含まれている標準のパブリック プロパティの多くは、一方向のデータ バインドには使用できます。 ただし、既に説明したように、一方向のデータ バインドではソースもターゲットも動的に更新されません。  
   
 ### <a name="accessing-dynamic-properties"></a>動的プロパティへのアクセス  
  <xref:System.Xml.Linq.XAttribute> クラスと <xref:System.Xml.Linq.XElement> クラスの動的プロパティには、標準のプロパティのようにアクセスすることはできません。 たとえば、C# などの CLR 準拠の言語で次のような操作を行うことはできません。  

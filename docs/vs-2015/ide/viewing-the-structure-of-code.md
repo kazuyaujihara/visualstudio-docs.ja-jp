@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1277370ca14044755988affc5ccf2bf1fb851a09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443205"
 ---
 # <a name="viewing-the-structure-of-code"></a>コードの構造の表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Visual Studio プロジェクトのオブジェクトとメンバー、および
  Visual Studio Enterprise があるなら、コード マップを使用して、コードの構造や、ソリューション全体におけるその依存関係を視覚化したり、コードの中の関心のある部分までドリルダウンしたりすることができます。 詳細については、「[ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)」を参照してください。  
   
 > [!NOTE]
->  使用する Visual Studio のエディションと設定が、IDE の機能に影響することもあります。 このため実際の機能は、このトピックに記載されている内容と異なる場合があります。  
+> 使用する Visual Studio のエディションと設定が、IDE の機能に影響することもあります。 このため実際の機能は、このトピックに記載されている内容と異なる場合があります。  
   
 ## <a name="BKMK_ClassView"></a> クラス ビュー (Visual Basic、C#、C++)  
  **クラス ビュー**は**ソリューション エクスプローラー**の一部として、別個のウィンドウに表示されます。 **[クラス ビュー]** ウィンドウには、アプリケーションの要素が表示されます。 上部のペインは名前空間、型、インターフェイス、列挙、およびクラスが表示され、下部ペインには、上のペインで選択した型に属するメンバーを表示します。 このウィンドウを使用すると 、ソース コード (または要素がソリューションの外部で定義されている場合は**オブジェクト ブラウザー**) のメンバーの定義に移動できます。  

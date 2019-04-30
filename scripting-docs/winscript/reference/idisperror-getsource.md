@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f793675d40c87e4c64c2a83d37327f5222d8d1f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 8a84640f020a1ff255b8c7e5dd753752e0d310a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446883"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
 クラスまたはエラーが発生したアプリケーションの言語に依存するプログラム id を返します。  
@@ -50,7 +50,7 @@ HRESULT GetSource(
  このメソッドは、例外が発生したクラスまたはアプリケーションの決定に使用されます。 プログラム id は、呼び出し時に指定されたロケール識別子 (LCID) によって指定された言語で返される可能性があります。  
   
 > [!NOTE]
->  このメソッドは実装されていません。  
+> このメソッドは実装されていません。  
   
 ## <a name="see-also"></a>関連項目  
  [IDispError インターフェイス](../../winscript/reference/idisperror-interface.md)

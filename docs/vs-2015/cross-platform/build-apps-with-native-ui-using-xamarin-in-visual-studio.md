@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b1c7bb825cdc64619ac2234c431bb306e58ec293
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a719a1420d4d2e64438865a41cc24da114fbc2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443065"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio で Xamarin を使用してネイティブ UI を備えたアプリを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,12 +35,12 @@ ms.locfileid: "60105293"
 - [次のステップ](#next)
 
 > [!TIP]
->  このプロジェクトの完全なソース コードは [GitHub の mobile-samples リポジトリ](https://github.com/xamarin/mobile-samples/tree/master/Weather)にあります。
+> このプロジェクトの完全なソース コードは [GitHub の mobile-samples リポジトリ](https://github.com/xamarin/mobile-samples/tree/master/Weather)にあります。
 >
->   問題やエラーが発生した場合は、[forums.xamarin.com](http://forums.xamarin.com) に質問を投稿してください。 Xamarin に必要な最新の SDK に更新することで多くのエラーを解決できます。エラーについては、[Xamarin リリース ノート](https://developer.xamarin.com/releases/)でプラットフォームごとの説明を参照してください。
+> 問題やエラーが発生した場合は、[forums.xamarin.com](http://forums.xamarin.com) に質問を投稿してください。 Xamarin に必要な最新の SDK に更新することで多くのエラーを解決できます。エラーについては、[Xamarin リリース ノート](https://developer.xamarin.com/releases/)でプラットフォームごとの説明を参照してください。
 >
 > [!NOTE]
->  Xamarin の開発者向けドキュメントには、以下の一覧に示すクイック スタートと詳細情報の両方のセクションで、いくつかのチュートリアルも用意されています。 これらのすべてのページで Visual Studio 固有のチュートリアルを表示するには、必ずページの右上で "Visual Studio" を選びます。
+> Xamarin の開発者向けドキュメントには、以下の一覧に示すクイック スタートと詳細情報の両方のセクションで、いくつかのチュートリアルも用意されています。 これらのすべてのページで Visual Studio 固有のチュートリアルを表示するには、必ずページの右上で "Visual Studio" を選びます。
 >
 > - ネイティブ UI を使用した Xamarin アプリ:
 >
@@ -230,7 +230,7 @@ ms.locfileid: "60105293"
 1. **ソリューション エクスプ ローラー**で、**[WeatherApp.Droid]**>**[リソース]**>**[レイアウト]** フォルダーを開き、**Main.axml** を開きます。 ビジュアル デザイナーでファイルが開きます。 (Java 関連のエラーが表示された場合は、この[ブログの投稿](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9)を参照してください。)
 
     > [!TIP]
-    >  このプロジェクトには、他にも多くのファイルがあります。 それらの説明はこのトピックの範囲を超えていますが、Android プロジェクトの構造を詳細に知りたい場合は、xamarin.com で Hello Android のトピックにある「[Part 2 Deep Dive](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/)」を参照してください。
+    > このプロジェクトには、他にも多くのファイルがあります。 それらの説明はこのトピックの範囲を超えていますが、Android プロジェクトの構造を詳細に知りたい場合は、xamarin.com で Hello Android のトピックにある「[Part 2 Deep Dive](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/)」を参照してください。
 
 2. デザイナーで表示される既定のボタンを選択し、削除します。
 
@@ -239,7 +239,7 @@ ms.locfileid: "60105293"
 4. **[ツールボックス]** から、 **[相対レイアウト]** コントロールをデザイナーにドラッグします。 このコントロールは、他のコントロールの親コンテナーとして使用します。
 
     > [!TIP]
-    >  レイアウトが正しく表示されない場合は、ファイルを保存し、**[デザイン]** タブと **[ソース]** タブを切り替えて表示を更新します。
+    > レイアウトが正しく表示されない場合は、ファイルを保存し、**[デザイン]** タブと **[ソース]** タブを切り替えて表示を更新します。
 
 5. **[プロパティ]** ウィンドウで、**background** プロパティ (スタイルのグループ) を `#545454` に設定します。
 
@@ -256,7 +256,7 @@ ms.locfileid: "60105293"
     |**textStyle**|`bold`|
 
     > [!TIP]
-    >  選択可能な値のドロップダウン リストが表示されないプロパティが多いことに注意してください。  特定のプロパティにどのような文字列値を使用すべきなのか、推測しにくい場合があります。 情報が必要な場合は、 [R.attr](http://developer.android.com/reference/android/R.attr.html) クラスのページでプロパティの名前を検索してみてください。
+    > 選択可能な値のドロップダウン リストが表示されないプロパティが多いことに注意してください。  特定のプロパティにどのような文字列値を使用すべきなのか、推測しにくい場合があります。 情報が必要な場合は、 [R.attr](http://developer.android.com/reference/android/R.attr.html) クラスのページでプロパティの名前を検索してみてください。
     >
     >  また、クイック Web 検索を実行すると、他のユーザーが同じプロパティを使った、[http://stackoverflow.com/](http://stackoverflow.com/) のページが表示されることもよくあります。
 
@@ -523,7 +523,7 @@ ms.locfileid: "60105293"
      ![Android および Windows Phone 用お天気アプリ](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
 > [!TIP]
->  このプロジェクトの完全なソース コードは [GitHub の mobile-samples リポジトリ](https://github.com/xamarin/mobile-samples/tree/master/Weather)にあります。
+> このプロジェクトの完全なソース コードは [GitHub の mobile-samples リポジトリ](https://github.com/xamarin/mobile-samples/tree/master/Weather)にあります。
 
 ## <a name="Windows"></a>Windows Phone 用 UI の設計
  次に、Windows Phone 用のユーザー インターフェイスを設計して共有コードに接続してから、アプリを実行します。
@@ -629,7 +629,7 @@ ms.locfileid: "60105293"
      ![実行中のアプリの Windows バージョン](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
 > [!TIP]
->  このプロジェクトの完全なソース コードは [GitHub の mobile-samples リポジトリ](https://github.com/xamarin/mobile-samples/tree/master/Weather)にあります。
+> このプロジェクトの完全なソース コードは [GitHub の mobile-samples リポジトリ](https://github.com/xamarin/mobile-samples/tree/master/Weather)にあります。
 
 ## <a name="next"></a>次のステップ
  **iOS 用 UI をソリューションに追加する**

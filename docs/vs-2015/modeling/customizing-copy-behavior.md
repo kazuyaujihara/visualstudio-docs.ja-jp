@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a06ad526cd16335a664ae833f61cb0052a215fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b88d3541bc9c3b2f890c2aadf0103c48d3dad865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433303"
 ---
 # <a name="customizing-copy-behavior"></a>コピー動作のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -238,7 +238,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  オブジェクトのコピー、貼り付け、作成、および削除に関する DSL の動作の多くの側面は、図に結合されている <xref:Microsoft.VisualStudio.Modeling.ElementOperations> のインスタンスにより規定されます。 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> から独自のクラスを導出し、図のクラスの <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> プロパティをオーバーライドすることにより、DSL の動作を変更できます。  
   
 > [!TIP]
->  プログラム コードを使用して、モデルをカスタマイズする方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。  
+> プログラム コードを使用して、モデルをカスタマイズする方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。  
   
  ![コピー操作のシーケンス図](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")  
   

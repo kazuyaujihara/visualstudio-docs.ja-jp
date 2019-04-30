@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383416"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>チュートリアル: カスタム規則セットの構成と使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "60052065"
     [ファイル] メニューで、次のようにクリックします。**選択した項目の保存**選択したルール セットに関する情報とその設定で、プロジェクト ファイルを更新します。  
   
    > [!TIP]
-   >  コード分析の対象と問題の優先順位付けに使用することをお勧めは最初に、実際の状況で、**最小推奨規則**ルール セットと目的の問題を修正し、段階的に追加複数のルールまたはルールを検出してその他の問題を解決を設定します。  
+   > コード分析の対象と問題の優先順位付けに使用することをお勧めは最初に、実際の状況で、**最小推奨規則**ルール セットと目的の問題を修正し、段階的に追加複数のルールまたはルールを検出してその他の問題を解決を設定します。  
   
    次に、コードは、ca 1704 の違反を確認するために使用するクラス ライブラリを追加、「識別子は正しく入力されなければなりません」コード分析ルール。 詳細については、次を参照してください。 [ca 1704。識別子は正しく入力されなければなりません](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)します。  
   

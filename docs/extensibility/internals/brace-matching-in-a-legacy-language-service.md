@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de9e1a002bf31335131e741a8ce5adc0b2219dbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d83a4c3d9c070f77a6a13b28da0a57dbe6c48be0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415360"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>従来の言語サービスにおけるかっこの一致
 かっこの一致には、かっこと中かっこなどに同時発生する必要がある言語要素を追跡する開発者は、役立ちます。 右中かっこを入力すると、開発者は、左中かっこが強調表示されます。
@@ -26,7 +26,7 @@ ms.locfileid: "56606629"
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 かっこの一致を実装する新しい方法の詳細についてを参照してください。[チュートリアル。対応するかっこ表示](../../extensibility/walkthrough-displaying-matching-braces.md)します。
 
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
 
  <xref:Microsoft.VisualStudio.Package.AuthoringSink>クラスは両方のペアをサポートしで 3 倍になり、<xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A>と<xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A>メソッド。
 
@@ -35,7 +35,7 @@ ms.locfileid: "56606629"
 
  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>メソッドは、スキャナー、行をトークン化し、キャレットの直前にトークンが返されます。 スキャナーは、言語要素のペアがのトリガー トークンの値を設定して見つかったことを示します<xref:Microsoft.VisualStudio.Package.TokenTriggers>で現在のトークン。 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>メソッドの呼び出し、<xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>メソッドを呼び出して、<xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A>の解析理由の値を持つメソッド<xref:Microsoft.VisualStudio.Package.ParseReason>一致する言語要素を検索します。 一致する言語要素が見つかった場合は、両方の要素が強調表示されます。
 
- 中かっこの強調表示する方法を中かっこを入力するトリガーの詳細については、、*例解析操作*、記事の「[レガシ言語サービス パーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)を参照してください。
+ 中かっこの強調表示する方法を中かっこを入力するトリガーの詳細については、次を参照してください。、*例解析操作*、記事の「[レガシ言語サービス パーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)します。
 
 ## <a name="enable-support-for-brace-matching"></a>かっこの一致のサポートを有効にします。
  <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>属性が設定できる、 **MatchBraces**、 **MatchBracesAtCaret**、および**ShowMatchingBrace**対応するプロパティを設定するレジストリ エントリ<xref:Microsoft.VisualStudio.Package.LanguagePreferences>クラス。 言語の基本設定のプロパティは、ユーザーによっても設定できます。

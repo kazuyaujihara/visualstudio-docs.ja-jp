@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 587d0a3fb571a0cb5934f56fca1ffa0ad34d3086
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4484ec75cf44fc60c72091fb17cce510efdb9cd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417028"
 ---
 # <a name="how-to-create-item-templates"></a>方法: 項目テンプレートを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60108790"
      テンプレートのファイルは .zip ファイルに追加され、ダイアログで指定した任意のディレクトリにコピーされます。 規定の場所は、**..\Users\\<ユーザー名\>\Documents\Visual Studio \<バージョン>\My Exported Templates\\** フォルダーです。  
   
     > [!WARNING]
-    >  旧バージョンの Visual Studio での規定の場所は、**..\Users\\<ユーザー名\>\Documents\Visual Studio \<バージョン>\Templates\ItemTemplates** です。  
+    > 旧バージョンの Visual Studio での規定の場所は、**..\Users\\<ユーザー名\>\Documents\Visual Studio \<バージョン>\Templates\ItemTemplates** です。  
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>ストア プロジェクトで項目テンプレートを使用できるようにするには  
   

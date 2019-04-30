@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 531e723bbc7c1b288a73f1ea036cb24efcf8ce4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2b4677413fd06176136935e583073f611d1a127a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445176"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>方法: シェイプまたはデコレーターに対するクリック操作を受け取る
 次の手順では、図形または、アイコン デコレーターに対するクリックする方法を説明します。 数回のクリックをインターセプトできるをダブルクリックしたにドラッグ、およびその他のジェスチャをし応答要素。
 
 ## <a name="to-intercept-clicks-on-shapes"></a>図形のクリックをインターセプトするには
- 生成されたコード ファイルから別のコード ファイルで、Dsl プロジェクトでは、shape クラスの部分クラス定義を作成します。 オーバーライド`OnDoubleClick()`または名前の先頭にある他の方法の 1 つ`On...`します。 例:
+ 生成されたコード ファイルから別のコード ファイルで、Dsl プロジェクトでは、shape クラスの部分クラス定義を作成します。 オーバーライド`OnDoubleClick()`または名前の先頭にある他の方法の 1 つ`On...`します。 例えば:
 
 ```csharp
 public partial class MyShape // change
@@ -34,7 +34,7 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
->  設定`e.Handled`に`true`図形または図に渡されるイベントの場合を除き、します。
+> 設定`e.Handled`に`true`図形または図に渡されるイベントの場合を除き、します。
 
 ## <a name="to-intercept-clicks-on-decorators"></a>デコレーターの数回のクリックをインターセプトするには
  イメージのデコレーターは、OnDoubleClick メソッドを持つ ImageField クラスのインスタンスで実行されます。 ImageField サブクラスを作成する場合、数回のクリックをインターセプトすることができます。 フィールドは InitializeShapeFields メソッドで設定されます。 そのため、通常 ImageField ではなく、サブクラスのインスタンスを作成するには、そのメソッドを変更する必要があります。 InitializeShapeFields メソッドは、shape クラスの生成されたコード内に示します。 シェイプ クラスを上書きするには、設定した場合、`Generates Double Derived`プロパティを次の手順で説明します。
