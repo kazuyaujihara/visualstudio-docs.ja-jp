@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c7a33f7510eb862ed6af1f1d5337d8d3e2743ba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993761"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>TextTransform ユーティリティを使用したファイルの生成
 
@@ -68,5 +68,5 @@ TextTransform [<options>] <templateName>
 |タスク|トピック|
 |-|-|
 |Visual Studio ソリューション中での ファイル の生成。|[T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
-|独自のデータ ソースを変換するためのディレクティブ プロセッサの作成。|[T4 テキスト変換のカスタマイズ](../modeling/customizing-t4-text-transformation.md)|
+|独自のデータ ソースを変換するためのディレクティブ プロセッサを作成する。|[T4 テキスト変換のカスタマイズ](../modeling/customizing-t4-text-transformation.md)|
 |独自のアプリケーションからテキスト テンプレートを呼び出すことができるテキスト テンプレート ホストの作成。|[カスタム ホストを使用したテキスト テンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md)|
