@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8c3a43cfff286e43d099258913b816491527da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d435ff9970748e8debe5edfd15514cde4f531b86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389706"
 ---
 # <a name="capturing-graphics-information"></a>グラフィックス情報をキャプチャする
 Visual Studio Graphics Analyzer を使用してレンダリングに関する問題とパフォーマンスに関する問題を診断できるように、Direct3D アプリからグラフィックス情報をキャプチャします。
@@ -40,7 +40,7 @@ Visual Studio Graphics Analyzer を使用してレンダリングに関する問
 - キーボードで Printscreen キーを押します。
 
   > [!NOTE]
-  >  アプリケーションが **[グラフィックス診断]** で実行されている間、PrintScreen キーはグラフィックス情報のフレームをキャプチャするためだけに使用できます。通常の機能は実行できません。 これは、デバッグを停止するかアプリケーションを正常に終了して、グラフィックス情報のキャプチャを停止するまで有効です。別のアプリケーションにフォーカスがある場合でも同じです。
+  > アプリケーションが **[グラフィックス診断]** で実行されている間、PrintScreen キーはグラフィックス情報のフレームをキャプチャするためだけに使用できます。通常の機能は実行できません。 これは、デバッグを停止するかアプリケーションを正常に終了して、グラフィックス情報のキャプチャを停止するまで有効です。別のアプリケーションにフォーカスがある場合でも同じです。
 
 - Visual Studio キャプチャ インターフェイスで、**[診断セッション]** タイムラインの下にある **[フレームのキャプチャ]** ボタンを選択するか、**[1 秒あたりのフレーム数]** スイム レーンの下、または以前にキャプチャされたフレームの右側にある大きな **[フレームのキャプチャ]** ボタンを選択します。 下の画像では、両方のボタンが強調表示されています。
 

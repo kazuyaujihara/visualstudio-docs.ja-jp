@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a58ab1bf508ba1b2edc7117412638de6c2231a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9c714aec9bf4bb1fa28bd04a1b5e3375f98da4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410079"
 ---
 # <a name="create-a-custom-debug-engine"></a>カスタム デバッグ エンジンを作成します。
 デバッグ エンジン (DE) は、特定のランタイム アーキテクチャのデバッグを許可するコンポーネントです。 通常は実行時環境ごとに 1 つだけ DE 実装です。
 
 > [!NOTE]
->  TRANSACT-SQL および JScript 別々 の DE 実装もありますが、VBScript や JScript 単一 DE を共有します。
+> TRANSACT-SQL および JScript 別々 の DE 実装もありますが、VBScript や JScript 単一 DE を共有します。
 
  DE は、実行の制御やブレークポイントなど、式の評価などのデバッグ サービスを提供する、インタープリターや操作のシステムで動作します。 これらのサービスでは、DE インターフェイスを通じては実装され、デバッガーは別の操作モード間の遷移が発生することができます。 詳細については、次を参照してください。[操作モード](../../extensibility/debugger/operational-modes.md)します。
 

@@ -12,18 +12,18 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a8fbc314580b106f5e1e8dae5a0a78d043d3940b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5097ecb0f7458e739def275d616eb344a2a6db0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426570"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>方法: メニュー項目を使用して警告を抑制する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 注意]
->  ソース内抑制は web サイト プロジェクトのサポートされていません。  
+> ソース内抑制は web サイト プロジェクトのサポートされていません。  
   
  コード分析 ウィンドウを使用して、コード分析の警告を抑制することができます。 警告の抑制は、無効にすることと同じではありません。 警告を抑制する場合は、違反の特定のインスタンスにのみ適用されます。 エラー一覧 ウィンドウで同じ警告の他の違反も報告されます。  
   
@@ -42,4 +42,4 @@ ms.locfileid: "60080905"
      特定の警告が抑制されに取り消し線付きのコード分析 ウィンドウで、警告が表示されます。  
   
 > [!NOTE]
->  グローバル抑制ファイル内のターゲットがない抑制が表示されます。
+> グローバル抑制ファイル内のターゲットがない抑制が表示されます。

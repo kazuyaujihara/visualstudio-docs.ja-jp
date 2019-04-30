@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65b06ada96387ac4bff022c92e4025718b0291d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8222c6526d54ffb7721c2f2799458fe5c8277cd7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406635"
 ---
 # <a name="trusted-application-deployment-overview"></a>信頼されたアプリケーションの配置の概要
 このトピックでは、信頼されたアプリケーションの配置テクノロジを使用して、昇格されたアクセス許可を持つ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを配置する方法の概要を示します。
@@ -29,7 +29,7 @@ ms.locfileid: "60064298"
  信頼されたアプリケーションの配置テクノロジは、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置のテクノロジの一部です。このテクノロジを使用すると、どのような規模の組織でも、ユーザーに確認することなく、従来より安全な方法でマネージド アプリケーションにアクセス許可を付与できます。 信頼されたアプリケーションの配置の場合、組織に必要な処理は、信頼された発行元の一覧をクライアント コンピューターで構成することだけです。発行元は、Authenticode 証明書を使用して識別します。 その後は、信頼された発行元のいずれかによって署名されている [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションには、通常より高いレベルの信頼が与えられます。
 
 > [!NOTE]
->  信頼されたアプリケーションの配置では、ユーザー コンピューターの構成を一度だけ実行する必要があります。 管理されたデスクトップ環境では、グローバル ポリシーを使用してこの構成を実行できます。 この方法がアプリケーションに適さない場合は、代わりに、アクセス許可を昇格する機能を使用します。 詳細については、「[ClickOnce アプリケーションの発行](../deployment/securing-clickonce-applications.md)」を参照してください。
+> 信頼されたアプリケーションの配置では、ユーザー コンピューターの構成を一度だけ実行する必要があります。 管理されたデスクトップ環境では、グローバル ポリシーを使用してこの構成を実行できます。 この方法がアプリケーションに適さない場合は、代わりに、アクセス許可を昇格する機能を使用します。 詳細については、「[ClickOnce アプリケーションの発行](../deployment/securing-clickonce-applications.md)」を参照してください。
 
 ## <a name="trusted-application-deployment-basics"></a>信頼されたアプリケーションの配置の基本
  次の表は、信頼されたアプリケーションの配置に関連するオブジェクトおよびロールを示しています。
@@ -88,7 +88,7 @@ ms.locfileid: "60064298"
  使用する証明書を取得したら、この証明書を使用して配置に署名する必要があります。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の発行ウィザードを使用してアプリケーションを配置する場合は、独自に証明書を指定しなければ、ウィザードが自動的にテスト証明書を生成します。 また、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の [プロジェクト デザイナー] ウィンドウを使用して、CA から取得した証明書を指定することもできます。  参照してください[方法。発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)」を参照してください。
 
 > [!CAUTION]
->  テスト証明書を使用してアプリケーションを配置することはお勧めできません。
+> テスト証明書を使用してアプリケーションを配置することはお勧めできません。
 
  また、SDK の *Mage.exe* ツールまたは *MageUI.exe* ツールを使用してアプリケーションに署名することもできます。 詳細については、「[チュートリアル:ClickOnce アプリケーションを手動で展開](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。 配置への署名に関連するコマンド ライン オプションの完全な一覧は、次を参照してください。 [Mage.exe (マニフェスト生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)します。
 
