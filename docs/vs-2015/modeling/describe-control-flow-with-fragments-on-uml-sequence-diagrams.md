@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c296be2e3a00efcdf48bdd6e4442e88fc32b3695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422532"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>UML シーケンス図のフラグメントを使用した制御フローの記述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ UML シーケンス図では、 *結合フラグメント* を使用して、ル
  結合フラグメントは、1 つまたは複数の *相互作用オペランド*で構成されます。そのそれぞれには、1 つまたは複数のメッセージ、相互作用使用、または結合フラグメントが含まれます。  
   
 > [!NOTE]
->  このトピックでは、シーケンス図におけるフラグメントについて説明します。 UML シーケンス図を読み取る方法の詳細については、次を参照してください。 [UML シーケンス図。Reference](../modeling/uml-sequence-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。 UML シーケンス図を描画する方法の詳細については、次を参照してください。 [UML シーケンス図。ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)します。  
+> このトピックでは、シーケンス図におけるフラグメントについて説明します。 UML シーケンス図を読み取る方法の詳細については、次を参照してください。 [UML シーケンス図。Reference](../modeling/uml-sequence-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。 UML シーケンス図を描画する方法の詳細については、次を参照してください。 [UML シーケンス図。ガイドライン](../modeling/uml-sequence-diagrams-guidelines.md)します。  
   
  ![結合フラグメントでは 2 つの相互作用オペランドを](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -45,7 +45,7 @@ UML シーケンス図では、 *結合フラグメント* を使用して、ル
 3. 各相互作用オペランド。その内部をクリックすることで別個に選択できます。 この例では、上部の相互作用オペランドが選択されているので、境界が表示されています。 通常は、相互作用オペランド間の区切り線のみが表示されます。  
   
     > [!NOTE]
-    >  上部の相互作用オペランドを選択する場合、結合フラグメントの最上部に近い場所をクリックしないでください。  
+    > 上部の相互作用オペランドを選択する場合、結合フラグメントの最上部に近い場所をクリックしないでください。  
   
 4. ガード。 それぞれの相互作用オペランドにガードを設定できます。 ガードは、相互作用オペランド内のメッセージが実行される条件を記述します。  
   
@@ -57,7 +57,7 @@ UML シーケンス図では、 *結合フラグメント* を使用して、ル
 1. 1 つのメッセージを選択するか、またはすべて同じ生存線または実行発生で開始されるメッセージのシーケンスを選択します。  
   
    > [!NOTE]
-   >  複数のメッセージを選択する場合、メッセージは中断のないシーケンスを構成している必要があります。  
+   > 複数のメッセージを選択する場合、メッセージは中断のないシーケンスを構成している必要があります。  
   
 2. いずれかのメッセージを右クリックし、 **[ブロックの挿入]** をポイントします。次に、必要な種類の結合フラグメント (たとえば、 **オルタナティブ結合フラグメント**) をクリックします。  
   
@@ -100,7 +100,7 @@ UML シーケンス図では、 *結合フラグメント* を使用して、ル
 - 結合フラグメントのタイトルを右クリックし、 **[プロパティ]** をクリックします。  
   
     > [!NOTE]
-    >  結合フラグメントの種類が異なると、プロパティも異なります。  
+    > 結合フラグメントの種類が異なると、プロパティも異なります。  
   
 ## <a name="KindsOfFragment"></a> 結合フラグメントの種類  
   

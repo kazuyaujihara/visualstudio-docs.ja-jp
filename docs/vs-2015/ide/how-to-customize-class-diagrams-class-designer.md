@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 442181aa78e539471aa35feb96ec7503e09a97ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53f65b54888c254c93e72aafa00e239f95d85ddf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416854"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>方法: クラス ダイアグラムをカスタマイズする (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60065832"
  たとえば、クラス ダイアグラム全体のズーム レベルの調整、個々の型のメンバーのグループ化および並べ替え方法の変更、リレーションシップの表示または非表示、ダイアグラム上での個々の型または型のセットの移動などを実行できます。  
   
 > [!NOTE]
->  ダイアグラムで図形が表示される方法をカスタマイズしても、ダイアグラムが表す型の基になるコードが変更されるわけではありません。  
+> ダイアグラムで図形が表示される方法をカスタマイズしても、ダイアグラムが表す型の基になるコードが変更されるわけではありません。  
   
  クラスのプロパティ セクションのように型のメンバーが含まれるセクションは、コンパートメントと呼ばれます。 個々のコンパートメントや型のメンバーは、表示または非表示にできます。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "60065832"
      特定のズームの値を指定します。 **[ズーム]** ドロップダウン リストから指定するか、有効なズーム レベルを入力します。有効な値の範囲は 10 ～ 400% です。  
   
     > [!NOTE]
-    >  ズーム レベルを変更しても、クラス ダイアグラムの出力のスケールには影響ありません。  
+    > ズーム レベルを変更しても、クラス ダイアグラムの出力のスケールには影響ありません。  
   
 ## <a name="CustomizeGroupingSorting"></a> 型のメンバーのグループ化および並べ替えをカスタマイズする  
   

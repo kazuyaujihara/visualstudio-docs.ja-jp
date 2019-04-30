@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 003b010ed5b1e3bf442be778b6cbb7d6e35efe1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437041"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio でデータに WPF コントロールをバインドする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "60112001"
      既定以外のコントロールを選択するには、項目の横にあるドロップダウン矢印をクリックし、コントロールを選択します。 詳細については、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。
 
     > [!NOTE]
-    >  特定の列またはプロパティを表示しないようにする場合は、項目を展開してその子を表示します。 列またはを表示したくないプロパティの横にあるドロップダウン矢印をクリックします。 **None**します。
+    > 特定の列またはプロパティを表示しないようにする場合は、項目を展開してその子を表示します。 列またはを表示したくないプロパティの横にあるドロップダウン矢印をクリックします。 **None**します。
 
 3. デザイナーで、<xref:System.Windows.Controls.Grid> などの有効なコンテナーに項目をドラッグします。 有効なコンテナーの詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。
 
@@ -96,7 +96,7 @@ ms.locfileid: "60112001"
 2. クリックし、項目の横にあるドロップダウン矢印をクリックします。**詳細**します。
 
     > [!NOTE]
-    >  特定の列またはプロパティを表示しないようにする場合は、項目を展開してその子を表示します。 列またはを表示したくないプロパティの横にあるドロップダウン矢印をクリックします。 **None**します。
+    > 特定の列またはプロパティを表示しないようにする場合は、項目を展開してその子を表示します。 列またはを表示したくないプロパティの横にあるドロップダウン矢印をクリックします。 **None**します。
 
 3. デザイナーで、<xref:System.Windows.Controls.Grid> などの有効なコンテナーに項目をドラッグします。 有効なコンテナーの詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。
 
@@ -118,7 +118,7 @@ ms.locfileid: "60112001"
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]と、データにコントロールをバインドするコードです。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)します。
 
     > [!NOTE]
-    >  コントロールが既にデータにバインドされている場合は、コントロールのデータ バインディングが、最後にコントロールにドラッグされた項目に再設定されます。
+    > コントロールが既にデータにバインドされている場合は、コントロールのデータ バインディングが、最後にコントロールにドラッグされた項目に再設定されます。
 
 ## <a name="see-also"></a>関連項目
  [Visual Studio でのデータに WPF コントロールをバインド](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [WPF アプリケーションでルックアップ テーブルを作成](../data-tools/create-lookup-tables-in-wpf-applications.md) [WPF アプリケーションで関連するデータを表示する](../data-tools/display-related-data-in-wpf-applications.md)[データセットにコントロールをWPFのバインド](../data-tools/bind-wpf-controls-to-a-dataset.md)[WCF data service にコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [チュートリアル。WPF アプリケーションで関連データの表示](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

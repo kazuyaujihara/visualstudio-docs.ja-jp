@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d49d0cb43e4d93c5981aa9000c8ae539bc84879
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee9289ebaeb12318ef83694f5dfb74b2930b8df1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416753"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>方法: インターフェイスを実装する (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60099560"
 クラス デザイナーのクラス ダイアグラム上で、インターフェイス メソッド用のコードを提供するクラスに接続して、インターフェイスを実装できます。 クラス デザイナーによってインターフェイス実装が生成され、インターフェイスとクラス間の関係が継承関係として表示されます。 インターフェイスとクラスの間に継承線を描画するか、インターフェイスをクラス ビューからドラッグすることにより、インターフェイスを実装できます。  
   
 > [!TIP]
->  インターフェイスは、他の型を作成するのと同じ方法で作成できます。 インターフェイスが存在していてもクラス ダイアグラムに表示されていない場合は、最初にインターフェイスを表示します。 詳細については、「[方法 :クラス デザイナーを使用して型を作成する](../ide/how-to-create-types-by-using-class-designer.md)と[方法。既存の型 (クラス デザイナー) を表示](../ide/how-to-view-existing-types-class-designer.md)します。  
+> インターフェイスは、他の型を作成するのと同じ方法で作成できます。 インターフェイスが存在していてもクラス ダイアグラムに表示されていない場合は、最初にインターフェイスを表示します。 詳細については、「[方法 :クラス デザイナーを使用して型を作成する](../ide/how-to-create-types-by-using-class-designer.md)と[方法。既存の型 (クラス デザイナー) を表示](../ide/how-to-view-existing-types-class-designer.md)します。  
   
 ### <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>継承線を描画してインターフェイスを実装するには  
   
@@ -44,7 +44,7 @@ ms.locfileid: "60099560"
 2. クラス ビューを開き、インターフェイスを探します。  
   
     > [!TIP]
-    >  クラス ビューが開いていない場合は、**[表示]** メニューから開きます。 クラス ビューの詳細については、「[クラスとそのメンバーを表示する](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)」を参照してください。  
+    > クラス ビューが開いていない場合は、**[表示]** メニューから開きます。 クラス ビューの詳細については、「[クラスとそのメンバーを表示する](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)」を参照してください。  
   
 3. インターフェイス ノードをダイアグラムのクラスの図形にドラッグします。  
   

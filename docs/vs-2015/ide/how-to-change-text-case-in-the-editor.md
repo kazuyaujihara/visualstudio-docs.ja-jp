@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c6743f7466f1b6d2e17c1dbf9da523c87e63e77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0beb86e3cb939a33a6b0fab3922b2a31a88a3307
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439256"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>方法: エディターでテキストの大文字小文字を変更します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60060320"
 メニュー コマンドやキーボード ショートカットを使って、選択したテキストを、すべて大文字またはすべて小文字に変換できます。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、**ヘルプ**の説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、**ヘルプ**の説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="procedure"></a>プロシージャ  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60060320"
      テキストをすべて小文字に変換するには、**[小文字に変換]** を選択するか、または **Ctrl** + **U** キーを押します。  
   
     > [!TIP]
-    >  大文字/小文字の書式設定を元に戻すには、**[編集]** メニューの **[元に戻す]** を選択します。  
+    > 大文字/小文字の書式設定を元に戻すには、**[編集]** メニューの **[元に戻す]** を選択します。  
   
 ## <a name="see-also"></a>関連項目  
  [エディターのカスタマイズ](../ide/customizing-the-editor.md)   

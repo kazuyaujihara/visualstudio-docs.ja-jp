@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 756b8859c2f13c53eb46a0d9ae9d32836997f70f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387754"
 ---
 # <a name="how-to-debug-optimized-code"></a>方法: 最適化されたコードをデバッグする
 
@@ -77,7 +77,7 @@ ms.locfileid: "55035927"
 9. 構成プロパティ、C と C++ プロジェクト プロパティ ページのコマンドライン ノードを選択し、追加`(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)`を**追加オプション**テキスト ボックス。
 
     > [!WARNING]
-    >  `/Zo` には、Visual Studio 2013 更新プログラム 3 以降のバージョンが必要です。
+    > `/Zo` には、Visual Studio 2013 更新プログラム 3 以降のバージョンが必要です。
     >
     >  `/Zo` を追加すると、[エディット コンティニュ](../debugger/edit-and-continue-visual-csharp.md)が無効になります。
 

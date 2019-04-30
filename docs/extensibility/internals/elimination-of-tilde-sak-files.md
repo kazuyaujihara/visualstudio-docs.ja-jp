@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99d776e7d9891ca231fde4531b558de66568904f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 96704b52fb31085fad7546687a8803c85bcfbb47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418641"
 ---
 # <a name="elimination-of-sak-files"></a>排除 ~ SAK ファイル
 ソース管理プラグイン API 1.2 では、 *~ SAK*ファイル機能フラグによって置き換えられ、ソースかどうかを検出する新しい関数は、プラグインのサポートを制御、 *MSSCCPRJ*ファイルと共有チェック アウトします。
@@ -48,7 +48,7 @@ Visual Studio .NET 2003 の付いた一時ファイルを作成する *~ SAK*し
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*
 
 > [!NOTE]
->  このレジストリ キーが設定されている場合*dword:00000000*、存在しない場合は、キーに相当および一時ファイルを作成する Visual Studio が再度試みられます。 ただし、レジストリ キー設定されている場合*dword:00000001*、Visual Studio が一時ファイルを作成しません。 ソース管理プラグインがサポートされていないことを前提に代わりに、 *MSSCCPRJ.SCC*ファイルし、は共有チェック アウトをサポートしていません。
+> このレジストリ キーが設定されている場合*dword:00000000*、存在しない場合は、キーに相当および一時ファイルを作成する Visual Studio が再度試みられます。 ただし、レジストリ キー設定されている場合*dword:00000001*、Visual Studio が一時ファイルを作成しません。 ソース管理プラグインがサポートされていないことを前提に代わりに、 *MSSCCPRJ.SCC*ファイルし、は共有チェック アウトをサポートしていません。
 
 ## <a name="see-also"></a>関連項目
 - [新機能については、ソース管理プラグイン API バージョン 1.2 です。](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

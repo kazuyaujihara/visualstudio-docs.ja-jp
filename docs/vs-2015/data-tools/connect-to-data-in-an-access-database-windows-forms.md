@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a6909bade36dce15bfae725fbaab60f24236451
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437005"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Access データベース内のデータへの接続 (Windows フォーム)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Visual Studio を使用して、Access データベース (.mdf ファイルま�
      ![OLE DB にデータ プロバイダーを変更](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
-    >  データ ソースが**Microsoft Access データベース ファイル (OLE DB)** .mdb データベース ファイルにのみそのデータ ソースの種類を使用する最適な選択肢と思えるかもしれません。  
+    > データ ソースが**Microsoft Access データベース ファイル (OLE DB)** .mdb データベース ファイルにのみそのデータ ソースの種類を使用する最適な選択肢と思えるかもしれません。  
   
 8. **OLE DB Provider**、 **Microsoft Office 12.0 Access Database Engine OLE DB Provider**します。  
   
@@ -70,7 +70,7 @@ Visual Studio を使用して、Access データベース (.mdf ファイルま�
 9. **サーバーまたはファイル名**、クリックして、接続する .accdb ファイルの名前とパスを指定**OK**します。  
   
     > [!NOTE]
-    >  データベース ファイルにユーザー名とパスワードがある場合を指定して選択する前に**OK**します。  
+    > データベース ファイルにユーザー名とパスワードがある場合を指定して選択する前に**OK**します。  
   
 10. 選択**次**で、**データ接続の選択**ページ。  
   

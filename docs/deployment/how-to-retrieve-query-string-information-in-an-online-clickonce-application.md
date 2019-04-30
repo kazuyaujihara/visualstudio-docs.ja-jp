@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e218cfb3514333e48f2c5d59d55664de1bbd906a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 38a3ad3a3ef4d93c8fb5567b385aa430e651a3f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406802"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>方法: オンライン ClickOnce アプリケーションでクエリ文字列の情報を取得する
 *クエリ文字列* とは、URL のうちの疑問符 (?) で始まる部分であり、 *name=value*の形式で任意の情報を記述します。 たとえば、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] でホストされている `WindowsApp1` という `servername`アプリケーションがあり、このアプリケーションを起動するときに、 `username` という変数に値を渡すとします。 URL は次のようになります。
@@ -30,19 +30,19 @@ ms.locfileid: "60095863"
  以下の 2 つの手順では、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを使用してクエリ文字列の内容を取得する方法を説明します。
 
 > [!NOTE]
->  クエリ文字列で情報を渡すことができるのは、ファイル共有やローカル ファイル システムではなく HTTP を使用してアプリケーションが起動しているときだけです。
+> クエリ文字列で情報を渡すことができるのは、ファイル共有やローカル ファイル システムではなく HTTP を使用してアプリケーションが起動しているときだけです。
 
  まず、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションで短いコードを使用して、アプリケーションの起動時にクエリ文字列の値を読み取る方法について説明します。
 
  次に、MageUI.exe を使用して、クエリ文字列パラメーターを受け入れることができるように [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを構成する方法について説明します。 これは、アプリケーションを発行するたびに実行する必要があります。
 
 > [!NOTE]
->  この機能を有効にする前に、この後の「セキュリティ」を参照してください。
+> この機能を有効にする前に、この後の「セキュリティ」を参照してください。
 
  作成する方法については、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]を使用して展開*Mage.exe*または*MageUI.exe*を参照してください[チュートリアル。ClickOnce アプリケーションを手動で展開](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。
 
 > [!NOTE]
->  .NET Framework 3.5 SP1 以降では、オフラインの [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションにコマンド ライン引数を渡すことができます。 このアプリケーションに引数を提供する場合は、.APPREF-MS 拡張子を持つショートカット ファイルにパラメーターを渡すことができます。
+> .NET Framework 3.5 SP1 以降では、オフラインの [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションにコマンド ライン引数を渡すことができます。 このアプリケーションに引数を提供する場合は、.APPREF-MS 拡張子を持つショートカット ファイルにパラメーターを渡すことができます。
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>ClickOnce アプリケーションでクエリ文字列を取得するには
 
@@ -68,7 +68,7 @@ ms.locfileid: "60095863"
 4. **[ファイル]** メニューの **[保存]** をクリックします。
 
 > [!NOTE]
->  または、 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]でクエリ文字列を渡すことができるようにすることもできます。 **[URL パラメーターをアプリケーションに渡すことを許可する]** チェック ボックスをオンにします。このチェック ボックスは、 **[プロジェクトのプロパティ]** を開いて **[発行]** タブをクリックし、 **[オプション]** ボタンをクリックして **[マニフェスト]** を選択すると表示されます。
+> または、 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]でクエリ文字列を渡すことができるようにすることもできます。 **[URL パラメーターをアプリケーションに渡すことを許可する]** チェック ボックスをオンにします。このチェック ボックスは、 **[プロジェクトのプロパティ]** を開いて **[発行]** タブをクリックし、 **[オプション]** ボタンをクリックして **[マニフェスト]** を選択すると表示されます。
 
 ## <a name="robust-programming"></a>信頼性の高いプログラミング
  クエリ文字列パラメーターを使用する場合は、アプリケーションがどのようにインストールされ、アクティブ化されるかを十分に考慮する必要があります。 アプリケーションが、Web またはネットワーク共有からユーザーのコンピューターにインストールされるように構成されている場合は、ユーザーが一度だけ URL を通じてアプリケーションをアクティブにすることが予想されます。 その後ユーザーは、ほとんどの場合、 **[スタート]** メニューのショートカットを使用してアプリケーションをアクティブにします。 その結果、アプリケーションはその有効期間中に一度だけクエリ文字列引数を受け取ることが保証されます。 これらの引数を後から使用できるようにユーザーのコンピューターに格納する場合は、それらが安全かつ確実に格納されるようにする必要があります。

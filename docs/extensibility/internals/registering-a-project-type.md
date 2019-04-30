@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be0a0e62942c369d47947582bf746332e201577
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: fccd422a0f24a65532e648a1254aecedc484903e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425676"
 ---
 # <a name="registering-a-project-type"></a>プロジェクト タイプの登録
 新しいプロジェクトの種類を作成するときに、有効にするレジストリ エントリを作成する必要があります[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を認識し、プロジェクトの種類を使用します。 通常、これらのレジストリ エントリは、レジストリ スクリプト (.rgs) ファイルを使用して作成します。
@@ -25,7 +25,7 @@ ms.locfileid: "56623815"
  次の例で、レジストリからステートメントは、既定のパスを提供し、データ該当する場合、後の表の各ステートメントに対してレジストリ スクリプトからエントリを含みます。 テーブルでは、スクリプトのエントリと、ステートメントに関する追加情報を提供します。
 
 > [!NOTE]
->  次のレジストリ情報は、型の例と、プロジェクトの種類を登録する記述したレジストリ スクリプト内のエントリの目的で対象としています。 実際のエントリとその用途は、プロジェクトの種類の特定の要件に基づいて異なる場合があります。 を開発しているプロジェクトの種類に近いものを検索する使用可能なサンプルを確認し、サンプル レジストリ スクリプトを確認し、する必要があります。
+> 次のレジストリ情報は、型の例と、プロジェクトの種類を登録する記述したレジストリ スクリプト内のエントリの目的で対象としています。 実際のエントリとその用途は、プロジェクトの種類の特定の要件に基づいて異なる場合があります。 を開発しているプロジェクトの種類に近いものを検索する使用可能なサンプルを確認し、サンプル レジストリ スクリプトを確認し、する必要があります。
 
  次の例では、HKEY_CLASSES_ROOT からです。
 
@@ -265,6 +265,6 @@ ms.locfileid: "56623815"
  かどうか、PROJECT_TYPE が含まれます。 つまり、.vsz ファイルの前に指定した ProductDir ディレクトリに環境の検索の .vsz ファイルの EF のエントリを =。
 
 ## <a name="see-also"></a>関連項目
-- [チェックリスト:新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [チェックリスト: 新しいプロジェクト タイプの作成](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [プロジェクト モデルの要素](../../extensibility/internals/elements-of-a-project-model.md)
 - [プロジェクト ファクトリを使用したプロジェクト インスタンスの作成](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
