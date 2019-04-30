@@ -27,6 +27,7 @@ ms.locfileid: "60056329"
 
 ## <a name="understand-how-document-level-customizations-for-word-work"></a>Word のドキュメント レベルのカスタマイズがどのように働くかの理解
  作成する各 Word のカスタマイズは、単一の文書に基づいています。 カスタマイズの使用を開始するには、エンドユーザーがドキュメントを開くまたは Word テンプレートからドキュメントを作成します。 たとえば特定の領域にカーソルを移動する、またはボタンおよびメニュー項目をクリックすることにより、ドキュメント内のイベントは、アセンブリ内のイベント処理メソッドを呼び出すことができます。 ドキュメントが閉じられたときのカスタマイズを提供する機能は Word では使用できなくなりました。
+ 
  詳細については、「[ドキュメント レベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)」を参照してください。
 
 ## <a name="create-document-level-projects-for-word"></a>Word 用ドキュメント レベルのプロジェクトの作成
