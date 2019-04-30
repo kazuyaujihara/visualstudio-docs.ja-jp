@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48d70901a2d616031eeed197b639f3a7bb7336c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37539ee6c031d88b9db279cc61214ac5e3077e76
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387667"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>プログラム コードで UML モデルを読み取る
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
  前のセクションの例は、Visual Studio 拡張機能で動作します。 スタンドアロン アプリーションでモデルを読み込むこともできますが、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトにいくつかの参照を追加する必要があります。  
   
 > [!NOTE]
->  スタンドアロン アプリケーションでモデルを読み込む方法については、製品の今後のバージョンで変更される可能性があります。 現在のバージョンで使用できる機能のいくつかは、将来のバージョンでは利用できなくなる可能性があります。  
+> スタンドアロン アプリケーションでモデルを読み込む方法については、製品の今後のバージョンで変更される可能性があります。 現在のバージョンで使用できる機能のいくつかは、将来のバージョンでは利用できなくなる可能性があります。  
   
 #### <a name="to-add-references-to-read-a-model-in-a-stand-alone-application"></a>スタンドアロン アプリケーションのモデルを読み込むための参照を追加するには  
   

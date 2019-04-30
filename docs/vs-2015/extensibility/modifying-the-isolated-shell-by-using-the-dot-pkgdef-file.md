@@ -10,12 +10,12 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6f2ed846e8644f5f6e391d9c850016721186021e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0f8ac7b6cea0896c597dc46b8b5edd7072069840
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386037"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>使用した分離シェルを変更します。Pkgdef ファイル
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59663967"
 .Pkgdef ファイルには、分離シェル アプリケーションをカスタマイズに使用できる設定がサポートしています。 これには、アプリケーションがコンピューターにインストールされているし、アプリケーションを開始するときに、Visual Studio shell によって参照されているときに作成される値を指定します。 設定は、該当するレジストリ キーに基づくファイルで構成されます。  
 
 > [!WARNING]
->  Visual Studio の起動時、VSPackage の .vsixmanifest ファイルで宣言されていない .pkgdef ファイルはスキャンされませんに注意してください。  
+> Visual Studio の起動時、VSPackage の .vsixmanifest ファイルで宣言されていない .pkgdef ファイルはスキャンされませんに注意してください。  
 
  .Pkgdef ファイルには、各によって識別される、キー、いずれかのセクションが含まれています。`[$RootKey$]`または`[$RootKey$\`*サブキー*`]`$RootKey。 $embedded$ には、アプリケーションのルート キーです。  
 
@@ -53,7 +53,7 @@ ms.locfileid: "59663967"
  次のセクションでは、分離モードで Visual Studio シェルの動作に影響する特定のレジストリ値について説明します。 このファイルで、アプリケーションの追加のレジストリ値を定義することもできます。  
 
 > [!NOTE]
->  .Pkgdef ファイルで設定を指定しない場合、対応するエントリは行われません、レジストリで。  
+> .Pkgdef ファイルで設定を指定しない場合、対応するエントリは行われません、レジストリで。  
 
 ## <a name="settings"></a>設定  
  次の表では、[$RootKey$] の下で定義された値について説明します。  

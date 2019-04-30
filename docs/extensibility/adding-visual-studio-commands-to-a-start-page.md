@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8461fdd3fd0aaedbbdd770a4e2762c4912c3ce0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 68bea9ff0d91819146cc5d89167373e0e8ed6f3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410109"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>スタート ページを Visual Studio のコマンドを追加します。
 
@@ -50,7 +50,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```
 
 > [!NOTE]
->  `x:` XAML スキーマを指すのエイリアスがすべてのコマンドの先頭に必要です。
+> `x:` XAML スキーマを指すのエイリアスがすべてのコマンドの先頭に必要です。
 
  値を設定することができます、`Command`プロパティからアクセスできる任意のコマンドを**コマンド**ウィンドウ。 使用可能なコマンドの一覧は、次を参照してください。 [Visual Studio コマンドのエイリアス](../ide/reference/visual-studio-command-aliases.md)します。
 
@@ -66,7 +66,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
  その他の Visual Studio コマンドの呼び出しに使用する同じ構文を使用して、登録済みの Vspackage からコマンドを呼び出すことができます。 インストール済みの VSPackage に追加する場合など、**ホーム ページ**コマンドを**ビュー**  メニューを設定してそのコマンドを呼び出すことができます`CommandParameter`に`View.HomePage`します。
 
 > [!NOTE]
->  VSPackage に関連付けられているコマンドを呼び出す場合は、コマンドが呼び出されたときにパッケージを読み込む必要があります。
+> VSPackage に関連付けられているコマンドを呼び出す場合は、コマンドが呼び出されたときにパッケージを読み込む必要があります。
 
 ## <a name="add-commands-from-assemblies"></a>アセンブリからのコマンドを追加します。
  アセンブリの場合、またはメニュー コマンドに関連付けられていない VSPackage でのアクセス コードには、コマンドを呼び出す、アセンブリのエイリアスを作成し、エイリアスを呼び出してください。
@@ -90,7 +90,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```
 
 > [!NOTE]
->  アセンブリをコピーして貼り付けます *.\\{Visual Studio インストール フォルダー} \Common7\IDE\PrivateAssemblies\*それを呼び出す前に読み込まれるかどうかを確認します。
+> アセンブリをコピーして貼り付けます *.\\{Visual Studio インストール フォルダー} \Common7\IDE\PrivateAssemblies\*それを呼び出す前に読み込まれるかどうかを確認します。
 
 ## <a name="add-commands-with-the-dte-object"></a>DTE オブジェクトにコマンドを追加します。
  DTE オブジェクトは、スタート ページ、マークアップとコードの両方からアクセスできます。

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bbcad8902a2c3ce86b1127d9317a3901c655372
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 6df21b974489004a27847e307089b1a65715b076
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401124"
 ---
 # <a name="idiasymbolgetplatform"></a>IDiaSymbol::get_platform
 コンパイル単位のコンパイル対象のプラットフォームの種類を取得します。
@@ -39,7 +39,7 @@ HRESULT get_platform ( 
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
 
 > [!NOTE]
->  戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。
+> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。
 
 ## <a name="see-also"></a>関連項目
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

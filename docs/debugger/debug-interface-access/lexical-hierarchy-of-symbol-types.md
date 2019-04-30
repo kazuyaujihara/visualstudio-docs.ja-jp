@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a92f3f8f5174717b3fe3e992706a0f16478f99df
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f4b2e6fc0b24cc96f617e7b78c6bdcc59ddc5c0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399396"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>シンボル型の構文階層
 次の表では、構文の階層でシンボルの型を示します。
@@ -43,9 +43,9 @@ ms.locfileid: "56612804"
 |[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|指定します、`namespace`識別子。|
 
 > [!NOTE]
->  その他のシンボル プロパティは、シンボルの種類に応じてできる場合があります。 これらのプロパティは、個々 のシンボルのトピックに表示されます。
+> その他のシンボル プロパティは、シンボルの種類に応じてできる場合があります。 これらのプロパティは、個々 のシンボルのトピックに表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [シンボル型のクラス階層](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)
 - [シンボルとシンボル タグ](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
