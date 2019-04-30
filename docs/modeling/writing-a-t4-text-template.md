@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2549ad27f0f05d3425dd6625e9d48fdfab4db3a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386067"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 テキスト テンプレートの作成
 テキスト テンプレートには、そのテンプレートから生成されるテキストが含まれます。 たとえば、web ページを作成するテンプレートには、"\<html >..."と HTML ページの他のすべての標準的な部分が含まれています。 テンプレートに挿入されるプログラム コードのフラグメントが*コントロール ブロック* です。 コントロール ブロックはさまざまな値を提供すると共に、テキストの一部を条件付きにしたり、繰り返したりできるようにします。
@@ -94,7 +94,7 @@ Hello!
  テキスト ブロックは、`Write();` ステートメントを使用できる場所であれば、どこにでも挿入できます。
 
 > [!NOTE]
->  など、ループまたは条件付きの複合ステートメント内のテキスト ブロックを埋め込むときに常に使用して中かっこ {...} テキスト ブロックを格納するには
+> など、ループまたは条件付きの複合ステートメント内のテキスト ブロックを埋め込むときに常に使用して中かっこ {...} テキスト ブロックを格納するには
 
 ### <a name="expression-control-blocks"></a>式コントロール ブロック
  式コントロール ブロックでは、式を評価して文字列に変換します。 出力ファイルにはその文字列が挿入されます。
@@ -215,7 +215,7 @@ private void WriteSquareLine(int i)
 
  インクルードされたコンテンツは、インクルード先のテキスト テンプレートに元から含まれていた場合とほとんど同じように処理されます。 ただし、include ディレクティブの後に通常のテキスト ブロックと標準コントロール ブロックが続く場合でも、クラス機能ブロック (`<#+...#>`) を含むファイルをインクルードすることができます。
 
-  詳細については、次を参照してください。 [T4 Include ディレクティブ](../modeling/t4-include-directive.md)
+ 詳細については、次を参照してください。 [T4 Include ディレクティブ](../modeling/t4-include-directive.md)
 
 ### <a name="utility-methods"></a>ユーティリティ メソッド
  `Write()` をはじめ、コントロール ブロックでいつでも使用できるメソッドがいくつかあります。 これには、出力のインデントに役立つメソッドや、エラーの報告に役立つメソッドが含まれます。
