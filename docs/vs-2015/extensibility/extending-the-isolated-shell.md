@@ -10,12 +10,12 @@ ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 65efd5a864863fb18f26d8fdfc3736423aad7aeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ea55039de769598b26868727a93cfa11726e4838
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443924"
 ---
 # <a name="extending-the-isolated-shell"></a>分離シェルの拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60054093"
 VSPackage、Managed Extensibility Framework (MEF) コンポーネント パーツ、または汎用的な VSIX プロジェクトを分離シェル アプリケーションに追加することで、Visual Studio 分離シェルを拡張できます。  
   
 > [!NOTE]
->  次の手順では、Visual Studio 分離シェル プロジェクト テンプレートを使用して基本的な分離シェル アプリケーションを作成したことを前提とします。 このプロジェクト テンプレートの詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
+> 次の手順では、Visual Studio 分離シェル プロジェクト テンプレートを使用して基本的な分離シェル アプリケーションを作成したことを前提とします。 このプロジェクト テンプレートの詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio パッケージのプロジェクト テンプレートの場所  
  Visual Studio パッケージのプロジェクト テンプレートは、 **[新しいプロジェクト]** ダイアログの次の 3 つの場所にあります。  
@@ -121,4 +121,4 @@ VSPackage、Managed Extensibility Framework (MEF) コンポーネント パー�
 8. ソリューションをビルドして実行します。  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: 基本的な分離シェル アプリケーションを作成します。](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

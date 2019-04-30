@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6c6407c038c7d6847db073c1f00c103d9483e78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 689d01c7e22cca430693a85e6dedcc7706fda41d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437700"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>コード エディターでのデータ ヒントのデータ値の表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ DataTips は、デバッグ中にプログラムの変数に関する情報を�
     DataTip が表示されます。  
   
    > [!NOTE]
-   >  データヒントは、プログラムの実行が中断され、カーソルがホバーしていないコンテキストで常に評価されます。 現在のコンテキスト内の変数と同じ名前の別の関数内の変数にポインターを合わせると、その別の関数内の変数の値が、現在のコンテキストの変数の値として表示されます。  
+   > データヒントは、プログラムの実行が中断され、カーソルがホバーしていないコンテキストで常に評価されます。 現在のコンテキスト内の変数と同じ名前の別の関数内の変数にポインターを合わせると、その別の関数内の変数の値が、現在のコンテキストの変数の値として表示されます。  
   
 2. マウス ポインターを離すとデータヒントが表示されなくなります。 未処理のままにするために、データヒントをピン留めする をクリックして、**ソースにピン留めする**アイコン、または  
   

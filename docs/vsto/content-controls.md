@@ -38,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cca58ec0c9f493cd418cbb5aabca7a8d2c1939b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cecbaf834185e66d7d584d58d2abb4dbdf46f9e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445601"
 ---
 # <a name="content-controls"></a>コンテンツ コントロール
   コンテンツ コントロールは、次のような機能を備える文書やテンプレートをデザインするときに使用します。
@@ -72,7 +72,7 @@ ms.locfileid: "60062179"
   ドキュメントレベルのプロジェクトでは、デザイン時または実行時に、文書にコンテンツ コントロールを追加できます。 VSTO アドイン プロジェクトでは、実行時に任意の開いているドキュメントにコンテンツ コントロールを追加できます。 詳細については、「[方法 :Word 文書にコンテンツ コントロールを追加](../vsto/how-to-add-content-controls-to-word-documents.md)します。
 
 > [!NOTE]
->  コンテンツ コントロールは、Open XML 形式で保存されているドキュメントでのみ使用できます。 Word 97-2003 文書に保存されているドキュメントのコンテンツ コントロールを使用することはできません (*.doc*) 形式。
+> コンテンツ コントロールは、Open XML 形式で保存されているドキュメントでのみ使用できます。 Word 97-2003 文書に保存されているドキュメントのコンテンツ コントロールを使用することはできません (*.doc*) 形式。
 
 ## <a name="types-of-content-controls"></a>コンテンツ コントロールの種類
  文書に追加できるコンテンツ コントロールは 9 種類あります。 ほとんどのコンテンツ コントロールには、<xref:Microsoft.Office.Tools.Word> 名前空間内に対応する型が存在します。 また、使用可能なものであればどのようなコンテンツ コントロールになることもできる汎用コントロール、<xref:Microsoft.Office.Tools.Word.ContentControl> を使用することもできます。 利用可能なコンテンツ コントロールの各使用方法について説明するチュートリアルでは、次を参照してください。[チュートリアル。コンテンツ コントロールを使用してテンプレートを作成](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)です。
@@ -137,7 +137,7 @@ ms.locfileid: "60062179"
   保護対象とする領域がコンテンツ コントロールの内部にない場合、またはコンテンツ コントロールとその他の種類のコンテンツを含む領域を保護する場合は、領域全体を <xref:Microsoft.Office.Tools.Word.GroupContentControl> に配置します。 他のコンテンツ コントロールとは異なり、<xref:Microsoft.Office.Tools.Word.GroupContentControl> にはユーザーに対して表示される UI がありません。 このコントロールは、ユーザーが編集できない領域を定義することだけを目的としています。
 
 > [!NOTE]
->  コンテンツ コントロールが埋め込まれた <xref:Microsoft.Office.Tools.Word.GroupContentControl> を作成した場合、埋め込まれたコンテンツ コントロールは自動的には保護されません。 使用する必要があります、 **LockContents**の各プロパティにユーザーがその内容を編集できないようにするコントロールが埋め込まれています。
+> コンテンツ コントロールが埋め込まれた <xref:Microsoft.Office.Tools.Word.GroupContentControl> を作成した場合、埋め込まれたコンテンツ コントロールは自動的には保護されません。 使用する必要があります、 **LockContents**の各プロパティにユーザーがその内容を編集できないようにするコントロールが埋め込まれています。
 
  コンテンツ コントロールを使用して、ドキュメントの一部を保護する方法の詳細については、次を参照してください。[方法。コンテンツ コントロールを使用してドキュメントの一部を保護](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)します。
 
@@ -170,7 +170,7 @@ ms.locfileid: "60062179"
  コンテンツ コントロールは双方向のデータ バインディングもサポートするため、コントロール内での変更によってデータ ソースが更新されます。 詳細については、「[方法 :ホスト コントロールからのデータでデータ ソースを更新](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)します。
 
 > [!NOTE]
->  コンテンツ コントロールは複合データ バインディングをサポートしません。 Windows フォーム データ モデルを使用してデータ ソースに <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> または <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> をバインドすると、ユーザーがコントロールをクリックしたときに 1 つの値だけが表示されます。 これらのコントロールを一連のデータ値にバインドし、ユーザーがその中から選択できるようにするには、カスタム XML 部分の要素にコントロールをバインドします。
+> コンテンツ コントロールは複合データ バインディングをサポートしません。 Windows フォーム データ モデルを使用してデータ ソースに <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> または <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> をバインドすると、ユーザーがコントロールをクリックしたときに 1 つの値だけが表示されます。 これらのコントロールを一連のデータ値にバインドし、ユーザーがその中から選択できるようにするには、カスタム XML 部分の要素にコントロールをバインドします。
 
 ### <a name="bind-content-controls-to-custom-xml-parts"></a>カスタム XML 部分へのコンテンツ コントロールをバインドします。
  一部のコンテンツ コントロールは、文書に埋め込まれているカスタム XML 部分の要素にバインドできます。 カスタム XML 部分の詳細については、次を参照してください。[カスタム XML 部分の概要](../vsto/custom-xml-parts-overview.md)します。

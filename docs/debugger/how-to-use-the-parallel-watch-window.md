@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e41e3df54245b023a86f20921c4bfd4de74a952
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6026ab6d0d59fb3a8f945e554fda26f10d98f952
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388475"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Visual Studio での並列スレッドの変数のウォッチ ポイントを設定 (C#、Visual Basic、 C++)
 [並列ウォッチ] ウィンドウには、複数のスレッドで 1 つの式が保持している値を同時に表示できます。 各行は、1 つのアプリケーションで実行中のスレッドを表しますが、スレッドは複数の行に表示される場合があります。 具体的には、各行は関数シグネチャが現在のスタック フレーム上の関数に一致する関数呼び出しを表します。 列内の項目の並べ替え、順序変更、削除、およびグループ化を行うことができます。 スレッドのフラグ設定、フラグ解除、凍結 (中断)、および凍結解除 (再開) を実行できます。 **[並列ウォッチ]** ウィンドウには次の列が表示されます。
@@ -34,7 +34,7 @@ ms.locfileid: "60051298"
 - 構成可能な列。コンピューター、プロセス、タイル、タスク、スレッドを表示できます。
 
   > [!TIP]
-  >  タスク情報を表示する、**並列ウォッチ**ウィンドウを開く必要があります最初、**タスク**ウィンドウ。
+  > タスク情報を表示する、**並列ウォッチ**ウィンドウを開く必要があります最初、**タスク**ウィンドウ。
 
 - 空白*ウォッチ式の追加*列、ウォッチする式を入力することができます。
 

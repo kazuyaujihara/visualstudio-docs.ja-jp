@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 822676baf9f0c599fd1383f1841c8f85136be879
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411745"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>UML モデルの標準ステレオタイプ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ UML モデル要素にステレオタイプを追加して、リーダー、ま�
 2. [プロパティ] ウィンドウで次のように設定します。、**プロファイル**プロパティを空にします。  
   
     > [!NOTE]
-    >  プロファイルのリンクを削除できるのは、モデルまたはパッケージ内のいずれの要素も、そのプロファイルのステレオタイプを使用しない場合のみです。  
+    > プロファイルのリンクを削除できるのは、モデルまたはパッケージ内のいずれの要素も、そのプロファイルのステレオタイプを使用しない場合のみです。  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>ステレオタイプをモデル要素に適用するには、次のようにします。  
   
@@ -67,7 +67,7 @@ UML モデル要素にステレオタイプを追加して、リーダー、ま�
      選択したステレオタイプが、ほとんどの種類の要素の、モデル要素の «chevrons» 内に表示されます。  
   
     > [!NOTE]
-    >  表示されない場合、**ステレオタイプ**プロパティ、または使用ステレオタイプが表示されない場合は、モデル要素が、パッケージまたは適切なプロファイルがリンクされているモデル内に存在することを確認します。  
+    > 表示されない場合、**ステレオタイプ**プロパティ、または使用ステレオタイプが表示されない場合は、モデル要素が、パッケージまたは適切なプロファイルがリンクされているモデル内に存在することを確認します。  
   
 3. 一部のステレオタイプでは、モデル要素に対して追加のプロパティの値を設定できます。 これらのプロパティを表示するには、展開、**ステレオタイプ**プロパティ。  
   

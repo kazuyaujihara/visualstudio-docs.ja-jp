@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 96a4795d83c4ef4b5bad2d7dc2d5f06f2f3ab4cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18ea10e25117ee5bf52c6369e575d70a989435db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444523"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Visual Studio での Xamarin Froms を使用したアプリ作成の基本事項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60097233"
 - [プラットフォーム間で UI をネイティブの外観で終了する](#finish)
 
 > [!TIP]
->  このプロジェクトの完全なソース コードは [GitHub の xamarin-forms-samples リポジトリ](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)にあります。
+> このプロジェクトの完全なソース コードは [GitHub の xamarin-forms-samples リポジトリ](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)にあります。
 
 ## <a name="solution"></a> ソリューションの設定
  次の手順では、共有コードの PCL と 2 つの追加された NuGet パッケージを含む Xamarin.Forms ソリューションを作成します。
@@ -59,7 +59,7 @@ ms.locfileid: "60097233"
     - **WeatherApp.WinPhone (Windows Phone 8.1)**: ネイティブの Windows Phone コードを含むプロジェクト。
 
     > [!NOTE]
-    >  対象としていないプラットフォーム向けのプロジェクトは、自由に削除できます。 このチュートリアルでは、Android、iOS、Windows Phone 8.1 のプロジェクトを対象とします。 UWP および Windows 8.1 プロジェクトの操作は、Windows Phone 8.1 プロジェクトの操作とよく似ています。
+    > 対象としていないプラットフォーム向けのプロジェクトは、自由に削除できます。 このチュートリアルでは、Android、iOS、Windows Phone 8.1 のプロジェクトを対象とします。 UWP および Windows 8.1 プロジェクトの操作は、Windows Phone 8.1 プロジェクトの操作とよく似ています。
 
      各ネイティブ プロジェクト内では、対応するプラットフォームのネイティブ デザイナーにアクセスでき、必要に応じてプラットフォーム固有の画面と機能を実装できます。
 

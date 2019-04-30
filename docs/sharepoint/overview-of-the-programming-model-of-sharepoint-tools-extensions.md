@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49e4618e2262575ffaa642d55ae140529f86942b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f746c3ee084613a10b89bd492a6174ffb49012
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421285"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>ツールの拡張機能を SharePoint のプログラミング モデルの概要
   Visual Studio で SharePoint ツールの拡張機能を作成する場合、SharePoint ツールによって公開される 1 つ以上の機能拡張インターフェイスを実装することから始めます。 ほとんどの場合、SharePoint ツールによって提供される他の型も使用して、拡張機能で機能を実装します。 一部のシナリオでは、Visual Studio および SharePoint によって提供される他のオブジェクト モデルに含まれる型も使用します。 これらのオブジェクト モデルのそれぞれの目的を理解し、それぞれ他の SharePoint ツールの拡張機能の作成に使用する方法を理解する必要があります。
@@ -50,7 +50,7 @@ ms.locfileid: "60038471"
 - *Visual Studio オートメーションとの統合オブジェクト モデル*します。 これらのオブジェクト モデルを使用して、SharePoint ツールのオブジェクト モデルの範囲を超える Visual Studio の機能にアクセスします。
 
     > [!NOTE]
-    >  SharePoint ツールのオブジェクト モデルに存在するいくつかのオブジェクトは、SharePoint プロジェクト サービスを使用して、Visual Studio のオートメーション オブジェクト モデルおよび Visual Studio の統合オブジェクト モデルのオブジェクトに変換できます。それとは逆方向の変換も可能です。 詳細については、次を参照してください。 [SharePoint プロジェクト システムの種類とその他の Visual Studio プロジェクトの種類間で変換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)します。
+    > SharePoint ツールのオブジェクト モデルに存在するいくつかのオブジェクトは、SharePoint プロジェクト サービスを使用して、Visual Studio のオートメーション オブジェクト モデルおよび Visual Studio の統合オブジェクト モデルのオブジェクトに変換できます。それとは逆方向の変換も可能です。 詳細については、次を参照してください。 [SharePoint プロジェクト システムの種類とその他の Visual Studio プロジェクトの種類間で変換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)します。
 
 - *SharePoint サーバーとクライアント オブジェクト モデル*します。 これらのオブジェクト モデルを使用して、SharePoint サイトに変更を加えたり、SharePoint ツールの拡張機能のコンテキストから SharePoint サイトのデータを取得したりします。
 

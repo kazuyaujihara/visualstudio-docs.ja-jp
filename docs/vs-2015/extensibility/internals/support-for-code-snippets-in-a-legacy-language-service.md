@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a96e6b10b68fc3b3275fbadb07de310c224da8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408462"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>従来の言語サービスでのコード スニペットのサポート
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60104915"
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、次を参照してください。[チュートリアル。コード スニペットを実装する](../../extensibility/walkthrough-implementing-code-snippets.md)します。  
   
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
   
 ## <a name="managed-package-framework-support-for-code-snippets"></a>Managed Package Framework のコード スニペットのサポート  
  Managed package framework (MPF) は、スニペットを挿入するテンプレートの読み取りから、ほとんどのスニペット機能をサポートし、編集モードの特殊なを有効にするとします。 サポートを使って管理、<xref:Microsoft.VisualStudio.Package.ExpansionProvider>クラス。  
@@ -395,4 +395,4 @@ namespace TestLanguagePackage
  [従来の言語サービスの機能](../../extensibility/internals/legacy-language-service-features1.md)   
  [従来の言語サービスを登録します。](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [コード スニペット](../../ide/code-snippets.md)   
- [チュートリアル: インストールされているコード スニペット (従来の実装) の一覧を取得します。](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+ [チュートリアル: インストールされているコード スニペットの一覧の取得 (従来の実装)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

@@ -11,18 +11,18 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e31aa560422c9f18ec30a6e203559ef3ed10c52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444763"
 ---
 # <a name="evaluating-locals"></a>ローカル変数の評価
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
   
  [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)を呼び出して、ローカルだけでなく、ローカルの名前と型の値を取得します。 ローカルの値は、プログラムの現在の状態に依存するので、メモリから、ローカルの値を取得する必要があります。 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)オブジェクトを使用してバインドする、 [IDebugField](../../extensibility/debugger/reference/idebugfield.md)値を含むメモリ内の適切な場所へのローカルを表すオブジェクト。 メモリ内のこの場所は、によって表される、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。  
   

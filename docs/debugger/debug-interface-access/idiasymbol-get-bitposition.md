@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521a21b2d3534433fe72ea6bd9578c0e668755ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7752e5f6bc7cb09fb80668aed8c3f8bc2bbeb312
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402156"
 ---
 # <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
 位置のビット位置を取得します。 使用するときに、 [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)は`LocIsBitField`します。
@@ -39,13 +39,13 @@ HRESULT get_bitPosition ( 
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
 
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|dia2.h|
+|ヘッダー:|Dia2.h|
 |バージョン:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>関連項目

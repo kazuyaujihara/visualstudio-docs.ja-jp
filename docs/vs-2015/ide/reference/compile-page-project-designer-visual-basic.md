@@ -19,12 +19,12 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3dd58013cb26e8533a5b898a0e5cd1df3be1b262
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e0352f98fe4d053f8c90d1b2c8f910e73cde23a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441497"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "59649057"
  次の設定を使用すると、表示または変更する構成およびプラットフォームを選択できます。  
   
 > [!NOTE]
->  簡易ビルド構成を使用した場合、デバッグ バージョンとリリース バージョンのどちらをビルドするかの決定はプロジェクト システムによって行われます。 したがって、**構成**リストと**プラットフォーム** リストは表示されません。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
+> 簡易ビルド構成を使用した場合、デバッグ バージョンとリリース バージョンのどちらをビルドするかの決定はプロジェクト システムによって行われます。 したがって、**構成**リストと**プラットフォーム** リストは表示されません。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
   
  **構成**  
  表示または変更する構成設定を指定します。 設定は、**[デバッグ]** (既定)、**[リリース]**、または **[すべての構成]** のいずれかになります。 詳細については、次を参照してください。[デバッグおよびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)と[方法。構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)」を参照してください。  

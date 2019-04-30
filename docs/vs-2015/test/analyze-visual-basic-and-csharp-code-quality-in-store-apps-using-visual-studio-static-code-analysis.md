@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: daa26ed2e893d4e11b9f2e18ef5127aafe847b96
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442872"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 静的コード分析によるストア アプリの Visual Basic および C# のコード品質の分析
 
@@ -27,7 +27,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  Visual Studio Express のコード分析ツールは、コードを調べてプログラミング上の一般的な問題や違反がないことを確認します。 コード分析の警告はコンパイラのエラーや警告とは異なります。コード分析ツールは、有効であってもコードの作成者やコードを利用する他のユーザーにとって問題になる可能性がある特定のコード パターンを検索します。 また、コード分析では、テストでは検出できないコードの欠陥を見つけることができます。 開発プロセス中に定期的にコード分析ツールを実行することで、高品質なアプリを完成させることができます。
 
 > [!NOTE]
->  Visual Studio Ultimate、Visual Studio Premium、および Visual Studio Professional では、コード分析の全機能を使用できます。 MSDN ライブラリの「[コード分析ツールを使用したアプリケーション品質の分析](http://msdn.microsoft.com/library/dd264897.aspx)」を参照してください。
+> Visual Studio Ultimate、Visual Studio Premium、および Visual Studio Professional では、コード分析の全機能を使用できます。 MSDN ライブラリの「[コード分析ツールを使用したアプリケーション品質の分析](http://msdn.microsoft.com/library/dd264897.aspx)」を参照してください。
 
 ## <a name="in-this-topic"></a>このトピックの内容
  以下について説明します。
@@ -69,7 +69,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  何が問題かを理解したら、コードを修正してそれを解決できます。 その後、コード分析に戻り、[コード分析] ウィンドウに警告が表示されなくなったことと、修正によって新たな警告が発生していないことを確認します。
 
 > [!TIP]
->  コード分析は、[コード分析] ウィンドウから再実行できます。 **[分析]** をクリックし、分析の範囲を選択します。 ソリューション全体または選択したプロジェクトの分析を再実行できます。
+> コード分析は、[コード分析] ウィンドウから再実行できます。 **[分析]** をクリックし、分析の範囲を選択します。 ソリューション全体または選択したプロジェクトの分析を再実行できます。
 
 ## <a name="BKMK_Suppress"></a> コード分析警告の抑制
  コード分析警告の修正を行わないことを決定する場合があります。 コードを実装したときの警告の発生確率と、警告を解決するためのコード変更の量を比較して、解決しないことを選択できます。 または、警告で使用された分析が特定のコンテキストでは不適切であると判断できます。 個々の警告を抑制して、[コード分析] ウィンドウに表示されないように設定できます。

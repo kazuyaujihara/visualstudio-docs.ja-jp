@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d4afaab4b0e687d1343e810002ae4ad46c869b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1fef367b36a683111369b656c8c1ba5a285fe6df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417463"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>方法: XML スキーマ エクスプローラーからワークスペースにノードを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60043975"
 このトピックでは、ノードを追加する方法を説明します、 [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)XML スキーマ エクスプ ローラーから。 これは、XML スキーマ エクスプローラーから XSD デザイナーのビューにノードをドラッグ アンド ドロップするか、XML スキーマ エクスプローラーのコンテキスト メニューを使用することによって行うことができます。 さらに、XML スキーマ エクスプローラーの検索結果で強調表示されたノードを追加することができます。 詳細については、「[方法 :スキーマ セットの検索結果のノードをワークスペースに追加](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)します。  
   
 > [!NOTE]
->  グローバル ノードだけを追加することができます、 [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)します。  
+> グローバル ノードだけを追加することができます、 [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)します。  
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>XML スキーマ エクスプローラーのコンテキスト メニューからノードを追加するには  
   

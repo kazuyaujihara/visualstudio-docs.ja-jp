@@ -11,12 +11,12 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cc12854574f21c1d75f57bae592d6a504db9b189
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9099bc79a555f908ddda12dc9da83f015791fd86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444829"
 ---
 # <a name="adding-a-tool-window"></a>ツール ウィンドウの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60087574"
 1. という名前のプロジェクトを作成する**FirstToolWin** VSIX のテンプレートを使用して、という名前のカスタム ツール ウィンドウの項目テンプレートを追加**FirstToolWindow**します。  
   
     > [!NOTE]
-    >  ツール ウィンドウで拡張機能の作成の詳細については、次を参照してください。[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。  
+    > ツール ウィンドウで拡張機能の作成の詳細については、次を参照してください。[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。  
   
 ## <a name="add-a-control-to-the-tool-window"></a>ツール ウィンドウにコントロールを追加します。  
   
@@ -264,7 +264,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
      最初の名前付きパラメーターは`Style`、値は`Tabbed`ウィンドウは、既存のウィンドウ タブにあることを意味します。 ドッキング位置がで指定された、`Window`パラメーターでは、この場合は、n の GUID、**ソリューション エクスプ ローラー**します。  
   
     > [!NOTE]
-    >  IDE のウィンドウの種類の詳細については、次を参照してください。<xref:EnvDTE.vsWindowType>します。  
+    > IDE のウィンドウの種類の詳細については、次を参照してください。<xref:EnvDTE.vsWindowType>します。  
   
 ## <a name="testing-the-tool-window"></a>ツール ウィンドウのテスト  
   

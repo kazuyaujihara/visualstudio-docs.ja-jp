@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9afaa8fc74ef893b3b916c66907ae5d1a3af55f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441093"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>方法: ドメイン固有言語ソリューションを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60099573"
        **ドメイン固有言語デザイナー ウィザード**が表示されます。  
   
       > [!NOTE]
-      >  可能であれば、コードを生成するために使用可能性がありますので、入力した名は有効な Visual c# の識別子にする必要があります。  
+      > 可能であれば、コードを生成するために使用可能性がありますので、入力した名は有効な Visual c# の識別子にする必要があります。  
   
       ![DSL ダイアログの作成](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60099573"
     ウィザードの名前は 2 つのプロジェクトを含むソリューションを作成します**Dsl**と**DslPackage**します。  
   
    > [!NOTE]
-   >  信頼されていないソースからのテキスト テンプレートを実行するには、をクリックしないを通知するメッセージが表示された場合**OK**します。 このメッセージが再び表示されるように設定できます。  
+   > 信頼されていないソースからのテキスト テンプレートを実行するには、をクリックしないを通知するメッセージが表示された場合**OK**します。 このメッセージが再び表示されるように設定できます。  
   
 ## <a name="settings"></a> DSL デザイナーのウィザード ページ  
  既定値から変更されていないフィールドのいくつかのままにすることができます。 ただし、ファイル拡張子のフィールドを設定することを確認します。  

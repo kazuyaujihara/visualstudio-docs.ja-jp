@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe2e782723b35a8cdd5505c60f74d1be12bb2077
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 032447051bc03b037abba2920d48473f0d73935f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409548"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>チュートリアル: ワークフローにアプリケーション ページを追加します。
   このチュートリアルでは、ワークフローから派生したワークフロー プロジェクトにデータを表示するアプリケーション ページを追加する方法を示します。 トピックで説明されているプロジェクトを基に、[チュートリアル。ワークフロー関連付けフォームと開始フォームを作成する](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)します。
@@ -295,7 +295,7 @@ ms.locfileid: "60083042"
     ```
 
     > [!WARNING]
-    >  必ず、"TestServer"をコードで SharePoint を実行している有効なサーバーの名前で置き換えます。
+    > 必ず、"TestServer"をコードで SharePoint を実行している有効なサーバーの名前で置き換えます。
 
 ## <a name="test-the-application-page"></a>アプリケーション ページをテストします。
  次に、アプリケーション ページが正しく支出データを表示するかどうかを決定します。

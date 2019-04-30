@@ -12,12 +12,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6ff962a618ba0001441db748facac8af444cd255
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403259"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>ストアドのフォントと色の設定にアクセスします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60078097"
   既定では、イベントの生成は有効になっていません。 イベントの生成を有効にするを使用して、カテゴリを開く<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>します。 これにより、IDE を呼び出して、適切な<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>VSPackage を実装するメソッド。  
   
 > [!NOTE]
->  によって変更、**フォントおよびカラー**プロパティ ページの独立したイベントを生成する<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>します。 使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>インターフェイスのメソッドを呼び出す前にキャッシュされているフォントおよび色の設定の更新が必要かどうかを判断、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>クラス。  
+> によって変更、**フォントおよびカラー**プロパティ ページの独立したイベントを生成する<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>します。 使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>インターフェイスのメソッドを呼び出す前にキャッシュされているフォントおよび色の設定の更新が必要かどうかを判断、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>クラス。  
   
 ### <a name="storing-and-retrieving-information"></a>格納して、情報の取得  
  Vspackage を呼び出してユーザーを変更できるオープンのカテゴリの名前付きの表示項目の情報を構成またはを取得する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetItem%2A>メソッド。  
@@ -69,12 +69,12 @@ ms.locfileid: "60078097"
  フォントに関する情報の属性を使用して、特定のカテゴリが取得したは<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetFont%2A>メソッド。  
   
 > [!NOTE]
->  `fFlags`に渡される引数、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>そのカテゴリを開いたときに、メソッドの動作を定義する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>メソッド。 既定では、これらのメソッドの情報を返すのみ aboutdisplay itemsthat が変更されました。 ただしを使用して、カテゴリが開かれている場合、<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>更新両方のフラグし、そのまま表示項目からアクセスできる<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>します。  
+> `fFlags`に渡される引数、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>そのカテゴリを開いたときに、メソッドの動作を定義する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>メソッド。 既定では、これらのメソッドの情報を返すのみ aboutdisplay itemsthat が変更されました。 ただしを使用して、カテゴリが開かれている場合、<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>更新両方のフラグし、そのまま表示項目からアクセスできる<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>します。  
   
  既定でのみ変更**表示項目**レジストリの情報が保持されます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>フォントと色のすべての設定を取得するインターフェイスを使用することはできません。  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>メソッドが変更されていないについて REGDB_E_KEYMISSING、情報を取得するために使用するときに (0x80040152L) を返す**表示項目**します。  
+> <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>メソッドが変更されていないについて REGDB_E_KEYMISSING、情報を取得するために使用するときに (0x80040152L) を返す**表示項目**します。  
   
  すべての設定**表示項目**特定**カテゴリ**のメソッドを使用して取得できます、`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults`インターフェイス。  
   

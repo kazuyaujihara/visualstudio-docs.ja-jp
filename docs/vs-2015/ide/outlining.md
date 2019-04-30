@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82b0339bde0ffbfff77165f1626ec83767d45211
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: db33392deb16664e48c3b2d90df883294d5cfbaa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441165"
 ---
 # <a name="outlining"></a>アウトライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54767580"
  **[編集]** メニューの **[元に戻す]** と **[やり直し]** コマンドは、上記の操作に対しても有効です。 **[コピー]**、**[切り取り]**、**[貼り付け]**、およびドラッグ アンド ドロップの操作ではアウトライン情報は保持されますが、折りたたみ可能な領域の状態は保持されません。 たとえば、折りたたまれた領域をコピーした場合、**[貼り付け]** 操作で、コピーされたテキストが展開された領域として貼り付けられます。  
   
 > [!CAUTION]
->  アウトライン表示の領域を変更すると、アウトラインが失われることがあります。 たとえば、削除または [検索と置換] 操作を行うと、領域の末尾が消去されることがあります。  
+> アウトライン表示の領域を変更すると、アウトラインが失われることがあります。 たとえば、削除または [検索と置換] 操作を行うと、領域の末尾が消去されることがあります。  
   
  次のコマンドは、**[編集]、[アウトライン]** サブメニューにあります。  
   

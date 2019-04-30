@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32e571f46b30e4f54322fc0138ebfc9b27e3753a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 3e13233950940c01c758a0faf07611c1426475e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412687"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 このインターフェイスは、スタック フレームのプロパティ、プログラムのドキュメント プロパティ、またはその他のいくつかのプロパティを表します。 プロパティは、通常は、式の評価の結果です。
 
 > [!NOTE]
->  この「プロパティ」を使用する必要がありますと混同しない、つまり、クラスのメンバー変数が、`IDebugProperty2`そのエンティティを表すことができます。
+> この「プロパティ」を使用する必要がありますと混同しない、つまり、クラスのメンバー変数が、`IDebugProperty2`そのエンティティを表すことができます。
 
 ## <a name="syntax"></a>構文
 

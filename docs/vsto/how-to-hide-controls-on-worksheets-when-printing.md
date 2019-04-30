@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a236b30552007112663ad9f985ddc94995fe1ef8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bb7ee0a937e6cb901704763e1f4ead478d99e0e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419440"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>方法: 印刷時にワークシートのコントロールを非表示にします。
   Windows フォーム コントロールを含む Microsoft Office Excel 文書を印刷する場合、コントロールは、印刷するワークシートに表示されます。 ワークシートを印刷する場合は、コントロールを非表示にすることができます。
@@ -28,10 +28,10 @@ ms.locfileid: "60050025"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  など、データを表示するコントロールを非表示にするかどうか、<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>コントロールのデータは、印刷するワークシートに表示されません。
+> など、データを表示するコントロールを非表示にするかどうか、<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>コントロールのデータは、印刷するワークシートに表示されません。
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="to-hide-controls-when-a-worksheet-is-printed"></a>コントロールとワークシートを非表示には、印刷します。
 

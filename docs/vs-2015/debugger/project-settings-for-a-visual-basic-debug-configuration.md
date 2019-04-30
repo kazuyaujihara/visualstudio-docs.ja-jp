@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 390742c7b9dea5b39432a5998ec367555700d890
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 75d45f4aacad052d587950e5656dd74f153eba21
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446145"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Visual Basic デバッグ構成のプロジェクト設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58975181"
 「[デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)」で説明されているように、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] のデバッグ構成に対するプロジェクト設定は **[プロパティ ページ]** ウィンドウで変更できます。 次の表は、**[プロパティ ページ]** ウィンドウのデバッガー関連の設定の場所を示しています。  
   
 > [!WARNING]
->  このトピックはストア アプリには適用されません。 参照してください[(VB、C#、C++ および XAML) は、デバッグ セッションを開始](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+> このトピックはストア アプリには適用されません。 参照してください[(VB、c#、C++ および XAML) は、デバッグ セッションを開始](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
 ### <a name="debug-tab"></a>[デバッグ] タブ  
   

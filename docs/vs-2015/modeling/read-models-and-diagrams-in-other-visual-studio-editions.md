@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21dc0cb7f02639ca6faa89ae4c067f21e083d6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387492"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Visual Studio の他のエディションでモデルおよびダイアグラムを読み取る
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ ms.locfileid: "60073529"
  このため、UML 図またはレイヤー図を読み取る場合は、その図を生成したモデリング プロジェクトにアクセスできる必要があります。 これを行うには、[!INCLUDE[esprscc](../includes/esprscc-md.md)] からプロジェクトにアクセスするか、プロジェクト ファイルのコピーを取得します。  
   
 > [!NOTE]
->  これは、コードから生成されたコード マップおよび .NET クラス図には適用されません。 これらの図はモデリング プロジェクトとは関係なく表示できます。  
+> これは、コードから生成されたコード マップおよび .NET クラス図には適用されません。 これらの図はモデリング プロジェクトとは関係なく表示できます。  
   
  UML 図またはレイヤー図を読み取るのに必要なファイルの最小セットは次のとおりです。  
   
 - 2 つのダイアグラム ファイルを読み取るには、たとえば、ダイアグラムの**MyDiagram.classdiagram と MyDiagram.classdiagram.layout**します。  
   
     > [!NOTE]
-    >  レイヤー図もが必要という名前のファイル_MyDiagram_**. layerdiagram.suppressions**します。  
+    > レイヤー図もが必要という名前のファイル_MyDiagram_**. layerdiagram.suppressions**します。  
   
 - モデリング プロジェクト ファイル (**MyModel.modelproj**)  
   

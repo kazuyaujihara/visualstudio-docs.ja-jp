@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445643"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio の統合 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```  
   
 > [!NOTE]
->  一部の項目の種類名は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 特有のものですが、このドロップダウン リストには表示されません。  
+> 一部の項目の種類名は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 特有のものですが、このドロップダウン リストには表示されません。  
   
 ## <a name="in-process-compilers"></a>インプロセス コンパイラ  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、可能な限り [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] コンパイラのインプロセス バージョンを使用して、パフォーマンスの向上を計ります  ([!INCLUDE[csprcs](../includes/csprcs-md.md)] には該当しません)。これが正しく機能するためには、次の条件が満たされている必要があります。  

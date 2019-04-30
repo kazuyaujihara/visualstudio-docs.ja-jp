@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c19ba7ea458f7922f5e82e3277b9ab305090a5cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 57aa9011043ab30e465e03beffe54e6abcc706a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444583"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Visual C++ for Cross-Platform Mobile Development のインストール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual C++ for Cross-Platform Mobile Development](http://go.microsoft.com/fwlink
 - インストール要件については、「 [Visual Studio 2015 のシステム要件](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs)」をご覧ください。  
   
   > [!IMPORTANT]
-  >  Windows 7 または Windows Server 2008 R2 を使用している場合は、従来の Windows アプリケーション、Android Native Activity アプリおよびライブラリ、iOS 用のアプリとコード ライブラリのためのコードを開発できますが、Windows ストア アプリまたはユニバーサル Windows アプリのコードは開発できません。  
+  > Windows 7 または Windows Server 2008 R2 を使用している場合は、従来の Windows アプリケーション、Android Native Activity アプリおよびライブラリ、iOS 用のアプリとコード ライブラリのためのコードを開発できますが、Windows ストア アプリまたはユニバーサル Windows アプリのコードは開発できません。  
   
   特定のデバイス プラットフォームのアプリをビルドするには、いくつかの追加要件があります。  
   
@@ -75,12 +75,12 @@ Visual C++ for Cross-Platform Mobile Development](http://go.microsoft.com/fwlink
 4. インストールが完了したら、インストーラーを閉じて、コンピューターを再起動します。 サード パーティ製コンポーネントの一部の設定操作は、コンピューターを再起動するまで有効になりません。  
   
     > [!IMPORTANT]
-    >  確実にすべてを正しくインストールするには、再起動する必要があります。  
+    > 確実にすべてを正しくインストールするには、再起動する必要があります。  
   
      Microsoft Visual Studio Emulator for Android コンポーネントのインストールが失敗した場合は、お使いのコンピューターで Hyper-V が有効になっていない可能性があります。 **[Windows の機能の有効化または無効化]** コントロール パネル アプリを使って Hyper-V を有効にしてから、Visual Studio インストーラーをもう一度実行ます。  
   
     > [!NOTE]
-    >  お使いのコンピューターまたは Windows のバージョンで Hyper-V がサポートされていない場合は、Microsoft Visual Studio Emulator for Android コンポーネントを使用できません。 Windows の Home エディションには、Hyper-V のサポートが含まれていません。  
+    > お使いのコンピューターまたは Windows のバージョンで Hyper-V がサポートされていない場合は、Microsoft Visual Studio Emulator for Android コンポーネントを使用できません。 Windows の Home エディションには、Hyper-V のサポートが含まれていません。  
   
 5. Visual Studio を開きます。 Visual Studio を実行するのが初めての場合は、構成してサインインするまでに時間がかかることがあります。 Visual Studio の準備が完了したら、 **[ツール]** メニューで **[拡張機能と更新プログラム]**、 **[更新プログラム]** の順に選びます。 Visual C++ for Cross-Platform Mobile Development または Microsoft Visual Studio Emulator for Android 用の利用可能な Visual Studio の更新プログラムがある場合は、それらをインストールします。  
   
@@ -91,7 +91,7 @@ Visual C++ for Cross-Platform Mobile Development](http://go.microsoft.com/fwlink
  Visual C++ のモバイル開発オプションをインストールする際に、サードパーティの 1 つ以上の依存関係を Visual Studio インストーラーでインストールしないことにした場合、それらの依存関係は、後で「 [Install the tools](#InstallTheTools)」の手順に従ってインストールできます。 また、Visual Studio とは別にインストールまたは更新することもできます。  
   
 > [!CAUTION]
->  Java 以外の依存関係は、任意の順序でインストールできます。 JDK は、Android SDK をインストールする前にインストールして構成する必要があります。  
+> Java 以外の依存関係は、任意の順序でインストールできます。 JDK は、Android SDK をインストールする前にインストールして構成する必要があります。  
   
  次の情報を参照し、リンクを使用して、従属関係を手動でインストールします。  
   

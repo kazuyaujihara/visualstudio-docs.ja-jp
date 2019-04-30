@@ -12,12 +12,12 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 585402efbda165844f449e2477d5ca69722613a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446876"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ SCCRTN SccGetProjPath (
  `lpUser`IDE を渡すことがユーザー名、またはポインターで空の文字列に渡すことがありますだけです。 ユーザー名がある場合、ソース管理プラグインとして使用してください、既定値。 ただし、名前が渡されなかった場合、または指定した名前、ログインに失敗した場合は、プラグイン、メッセージを表示するユーザー ログインと、名前をパス`lpUser`有効なログインを受信するとします。 プラグインがこの文字列を変更するため、IDE が常にサイズのバッファーを割り当てる (`SCC_USER_LEN`+1)。  
   
 > [!NOTE]
->  いずれかへの呼び出しを IDE を実行する最初のアクションがあります、`SccOpenProject`関数または`SccGetProjPath`関数。 そのため、両方のある、同じ`lpUser`パラメーターで、ソース管理プラグインでユーザーのいずれかの時点でログインできるようにします。 関数からの戻り値には、エラーが示されている場合でもプラグイン入力してこの文字列には、有効なログイン名。  
+> いずれかへの呼び出しを IDE を実行する最初のアクションがあります、`SccOpenProject`関数または`SccGetProjPath`関数。 そのため、両方のある、同じ`lpUser`パラメーターで、ソース管理プラグインでユーザーのいずれかの時点でログインできるようにします。 関数からの戻り値には、エラーが示されている場合でもプラグイン入力してこの文字列には、有効なログイン名。  
   
  `lpLocalPath` ユーザーが、プロジェクトを保持するディレクトリです。 空の文字列がある可能性があります。 (ソース管理システムからプロジェクトをダウンロードしようとしていますユーザー) 場合には、現在定義されているディレクトリが存在しない場合、`bAllowChangePath`は`TRUE`、ソース管理プラグインがユーザー入力を要求または配置するその他の方法を使用して、。文字列を所有`lpLocalPath`します。 場合`bAllowChangePath`は`FALSE`、プラグインが変わらないようにする、文字列、ユーザーが指定されたディレクトリに既に作業しているためです。  
   

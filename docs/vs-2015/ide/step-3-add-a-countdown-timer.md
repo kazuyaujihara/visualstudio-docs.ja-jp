@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0b98fa4b3182db71567d61569cddf4cfae33ec1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d95708f940bfb12f67903f41d9f030a77877008d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442602"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>手順 3: カウントダウン タイマーを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60094822"
 このチュートリアルの第 3 部では、クイズの受け手が完了するまでの残り秒数を追跡するためのカウントダウン タイマーを追加します。  
   
 > [!NOTE]
->  このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2:クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)です。  
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2:クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)です。  
   
 ### <a name="to-add-a-countdown-timer"></a>カウントダウン タイマーを追加するには  
   
@@ -57,7 +57,7 @@ ms.locfileid: "60094822"
      ここでは、`if else` ステートメントを追加しました。これは、プログラムで条件判断を行うように指定するためのステートメントです。 `if else` ステートメントは次のようになります。  
   
     > [!NOTE]
-    >  次の例は例示のみを目的としています。プロジェクトに追加しないでください。  
+    > 次の例は例示のみを目的としています。プロジェクトに追加しないでください。  
   
     ```vb  
     If (something that your program will check) Then  

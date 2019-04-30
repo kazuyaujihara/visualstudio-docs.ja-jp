@@ -6,12 +6,12 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8dd993f918d9f2d884b9e2d082a71c9c4eebc9cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5373f1fa9d6bb596e099f3b7396ef13c91ee5a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387644"
 ---
 # <a name="verify-your-xamarin-environment"></a>Xamarin 環境を検証する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60097207"
  ![空のアプリ (ネイティブ ポータブル) テンプレートから新しいプロジェクトを作成した結果](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin Verify 1")  
   
 > [!NOTE]
->  テンプレートが表示されない場合は、「[Xamarin のプロジェクト テンプレートが見当たりませんか?」を参照してください。次の操作を試してみてください](#missing)」をこのページの下部でご覧ください。  
+> テンプレートが表示されない場合は、「[Xamarin のプロジェクト テンプレートが見当たりませんか?」を参照してください。次の操作を試してみてください](#missing)」をこのページの下部でご覧ください。  
   
 ## <a name="android"></a>Android  
   
@@ -59,7 +59,7 @@ ms.locfileid: "60097207"
         - Windows 7 以前: ドロップダウン リストで Xamarin Player for Android を代わりに選び、F5 キーを押して実行します。 Xamarin プレーヤー、そのデバイス マネージャー、トラブルシューティングのヒントについて詳しくは、「 [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) 」(xamarin.com) をご覧ください。  
   
 > [!NOTE]
->  Visual Studio では、ツール バーに Android エミュレーター マネージャー (AVD) ボタンが表示される場合があります (以下に示します)。これは、特に Google Android エミュレーターを構成するために使用されるデバイス マネージャーを開くものです。  これは、Visual Studio Emulator for Android と Xamarin Player のどちらにも影響しません。それぞれプロファイルを構成するための独自のデバイス マネージャーを持ちます。  詳しくは、「 [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) 」(Visual Studio ALM ブログ) と「 [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com) の概要」をご覧ください。  
+> Visual Studio では、ツール バーに Android エミュレーター マネージャー (AVD) ボタンが表示される場合があります (以下に示します)。これは、特に Google Android エミュレーターを構成するために使用されるデバイス マネージャーを開くものです。  これは、Visual Studio Emulator for Android と Xamarin Player のどちらにも影響しません。それぞれプロファイルを構成するための独自のデバイス マネージャーを持ちます。  詳しくは、「 [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) 」(Visual Studio ALM ブログ) と「 [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com) の概要」をご覧ください。  
 > ![CrossPlat Xamarin Verify 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin Verify 7")  
   
 ## <a name="windows-phone"></a>Windows Phone  

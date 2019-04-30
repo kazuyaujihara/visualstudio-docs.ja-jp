@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437902"
 ---
 # <a name="how-to-select-the-files-to-build"></a>方法: ビルドするファイルを選択する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60064844"
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    >  項目コレクション内の項目がプロジェクト ファイルと同じディレクトリにない場合は、その項目への完全パスまたは相対パスを指定する必要があります。 たとえば、`Include="..\..\form2.cs"` のように指定します。  
+    > 項目コレクション内の項目がプロジェクト ファイルと同じディレクトリにない場合は、その項目への完全パスまたは相対パスを指定する必要があります。 たとえば、`Include="..\..\form2.cs"` のように指定します。  
   
 #### <a name="to-declare-multiple-items"></a>複数の項目を宣言するには  
   
@@ -100,9 +100,9 @@ ms.locfileid: "60064844"
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
 > [!NOTE]
->  ワイルドカードと項目を使用して、ビルドの入力を指定する必要があります。[Csc](../msbuild/csc-task.md) や [Vbc](../msbuild/vbc-task.md) などの [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] タスクでは、`Sources` 属性を使用して入力を指定することはできません。 次の例はプロジェクト ファイルでは無効です。  
+> ワイルドカードと項目を使用して、ビルドの入力を指定する必要があります。[Csc](../msbuild/csc-task.md) や [Vbc](../msbuild/vbc-task.md) などの [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] タスクでは、`Sources` 属性を使用して入力を指定することはできません。 次の例はプロジェクト ファイルでは無効です。  
 >   
->  `<CSC Sources="*.cs">...</CSC>`  
+> `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>例  
  次のコード例では、すべての入力ファイルを個別に含むプロジェクトを示します。  

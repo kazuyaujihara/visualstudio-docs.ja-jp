@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 67ffd17c772221c356e8c25d14437c2a737fda9e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407788"
 ---
 1. **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**発行**(Web フォーム、 **Web アプリの発行**)。
 
@@ -43,7 +43,7 @@ ms.locfileid: "56723878"
 1. ASP.NET プロジェクト ディレクトリを Visual Studio コンピューターから ASP.NET アプリ用に構成されたローカル ディレクトリにコピー (この例で**C:\Publish**) Windows Server コンピューターにします。 このチュートリアルで、手動でコピーするが、PowerShell、Xcopy、Robocopy などの他のツールを使用すると仮定します。
 
     > [!CAUTION]
-    >  コードまたは再構築を変更する必要がある場合を再発行し、この手順を繰り返す必要があります。 リモート コンピューターにコピーした実行可能ファイルは、ローカルのソースとシンボルに正確に一致している必要があります。    受信はこれを行わない場合、`cannot find or open the PDB file`プロセスをデバッグしようとしたときに、Visual Studio で警告します。
+    > コードまたは再構築を変更する必要がある場合を再発行し、この手順を繰り返す必要があります。 リモート コンピューターにコピーした実行可能ファイルは、ローカルのソースとシンボルに正確に一致している必要があります。    受信はこれを行わない場合、`cannot find or open the PDB file`プロセスをデバッグしようとしたときに、Visual Studio で警告します。
 
 1. Windows Server、お使いのブラウザーでアプリを開くことで、アプリが正しく実行できることを確認します。
 

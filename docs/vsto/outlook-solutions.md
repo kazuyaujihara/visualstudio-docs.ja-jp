@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1cf32a7fde4ebcc4f8a702c8f250018b6e7e68f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4150751cbb8de64fc237335bc26407f932276075
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442393"
 ---
 # <a name="outlook-solutions"></a>Outlook ソリューション
   Visual Studio には、Microsoft Office Outlook の VSTO アドインを作成するために使用できるプロジェクト テンプレートが用意されています。 VSTO アドインを使用して、Outlook の自動化、Outlook の機能の拡張、または Outlook のユーザー インターフェイス (UI) のカスタマイズが可能です。 VSTO アドインについて詳しくは、「 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)」をご覧ください。
@@ -31,7 +31,7 @@ ms.locfileid: "56606239"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは VSTO アドインやソリューションと比較して、小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML などのほぼすべての web プログラミング テクノロジを使用して、ビルドすることができます。
+> [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは VSTO アドインやソリューションと比較して、小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML などのほぼすべての web プログラミング テクノロジを使用して、ビルドすることができます。
 
 ## <a name="create-an-outlook-vsto-add-in-project"></a>Outlook VSTO アドイン プロジェクトを作成します。
  Outlook プロジェクトを作成するには、 **[新しいプロジェクト]** ダイアログ ボックスにある **[Outlook アドイン]** プロジェクト テンプレートを使用します。 このテンプレートには必要なアセンブリ参照とプロジェクト ファイルが含まれています。
@@ -52,7 +52,7 @@ ms.locfileid: "56606239"
 
 - Outlook フォルダー内のアイテムを検索する。
 
-  詳細については、[Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)を参照してください。
+  詳細については、次を参照してください。 [Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)します。
 
 ## <a name="customize-the-user-interface-of-an-outlook-application"></a>Outlook アプリケーションのユーザー インターフェイスをカスタマイズします。
 
@@ -63,7 +63,7 @@ ms.locfileid: "56606239"
 |Outlook インスペクターに表示されるカスタム作業ウィンドウを追加する。|[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。|
 |既存の Outlook フォームを拡張または置換するフォーム領域を追加する。|[Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)|
 
- Outlook の UI およびその他の Microsoft Office アプリケーションをカスタマイズする方法の詳細については、[Office UI のカスタマイズ](../vsto/office-ui-customization.md)を参照してください。
+ Outlook の UI およびその他の Microsoft Office アプリケーションをカスタマイズする方法の詳細については、次を参照してください。 [Office UI のカスタマイズ](../vsto/office-ui-customization.md)します。
 
 ## <a name="related-topics"></a>関連トピック
 

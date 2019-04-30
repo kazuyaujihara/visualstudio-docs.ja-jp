@@ -10,12 +10,12 @@ ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e900fa7d7bb65d5f55faab00c779247114278eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c791d991f797a9ccc581fa6d79b0400c17c84e0e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442270"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>チュートリアル: コア エディターを作成してエディター ファイルの種類を登録します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,25 +28,25 @@ ms.locfileid: "58974915"
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio パッケージ プロジェクト テンプレートの場所  
  Visual Studio パッケージのプロジェクト テンプレートは、 **[新しいプロジェクト]** ダイアログの次の 3 つの場所にあります。  
   
-1.  Visual Basic の機能拡張の下。 プロジェクトの既定の言語は Visual Basic です。  
+1. Visual Basic の機能拡張の下。 プロジェクトの既定の言語は Visual Basic です。  
   
-2.  C# の機能拡張の下。 プロジェクトの既定の言語は C# です。  
+2. C# の機能拡張の下。 プロジェクトの既定の言語は C# です。  
   
-3.  その他のプロジェクトの種類の機能拡張の下。 プロジェクトの既定の言語は C++ です。  
+3. その他のプロジェクトの種類の機能拡張の下。 プロジェクトの既定の言語は C++ です。  
   
 ### <a name="to-create-the-vspackage"></a>VSPackage を作成するには  
   
--   開始[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を作成し、[!INCLUDE[csprcs](../includes/csprcs-md.md)]という名前の VSPackage `MyPackage`」の説明に従って、[チュートリアル。メニュー コマンドの VSPackage を作成する](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32)します。  
+- 開始[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を作成し、[!INCLUDE[csprcs](../includes/csprcs-md.md)]という名前の VSPackage `MyPackage`」の説明に従って、[チュートリアル。メニュー コマンドの VSPackage を作成する](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32)します。  
   
 ### <a name="to-add-the-editor-factory"></a>エディター ファクトリを追加するには  
   
-1.  右クリックし、 **MyPackage**プロジェクトをポイントして、**追加** をクリックし、**クラス**します。  
+1. 右クリックし、 **MyPackage**プロジェクトをポイントして、**追加** をクリックし、**クラス**します。  
   
-2.  **新しい項目の追加** ダイアログ ボックスに、必ず、**クラス**テンプレートを選択すると、型`EditorFactory.cs`名、およびクリック**追加**をプロジェクトにクラスを追加します。  
+2. **新しい項目の追加** ダイアログ ボックスに、必ず、**クラス**テンプレートを選択すると、型`EditorFactory.cs`名、およびクリック**追加**をプロジェクトにクラスを追加します。  
   
      EditorFactory.cs ファイルを自動的に開く必要があります。  
   
-3.  コードから、次のアセンブリを参照します。  
+3. コードから、次のアセンブリを参照します。  
   
     ```vb  
     Imports System.Runtime.InteropServices  
@@ -69,7 +69,7 @@ ms.locfileid: "58974915"
   
     ```  
   
-4.  追加するのには、GUID、`EditorFactory`クラスを追加することで、`Guid`クラス宣言の直前の属性。  
+4. 追加するのには、GUID、`EditorFactory`クラスを追加することで、`Guid`クラス宣言の直前の属性。  
   
      Guidgen.exe プログラムを使用して、新しい GUID を生成することができます、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]コマンド プロンプトでは、またはをクリックして**GUID の作成**上、**ツール**メニュー。 ここで使用される GUID はほんの一例です。プロジェクトでは使用しないでください。  
   
@@ -81,7 +81,7 @@ ms.locfileid: "58974915"
     [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
     ```  
   
-5.  クラスの定義では、親パッケージとサービス プロバイダーを格納するための 2 つのプライベート変数を追加します。  
+5. クラスの定義では、親パッケージとサービス プロバイダーを格納するための 2 つのプライベート変数を追加します。  
   
     ```vb  
     Class EditorFactory  
@@ -98,7 +98,7 @@ ms.locfileid: "58974915"
   
     ```  
   
-6.  型の 1 つのパラメーターを受け取るパブリック クラスのコンス トラクターを追加<xref:Microsoft.VisualStudio.Shell.Package>:  
+6. 型の 1 つのパラメーターを受け取るパブリック クラスのコンス トラクターを追加<xref:Microsoft.VisualStudio.Shell.Package>:  
   
     ```vb  
     Public Sub New(ByVal parentPackage As Package)  
@@ -113,7 +113,7 @@ ms.locfileid: "58974915"
     }  
     ```  
   
-7.  変更、`EditorFactory`クラスから派生する宣言、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>インターフェイス。  
+7. 変更、`EditorFactory`クラスから派生する宣言、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>インターフェイス。  
   
     ```vb  
     Class EditorFactory Implements IVsEditorFacto  
@@ -124,7 +124,7 @@ ms.locfileid: "58974915"
   
     ```  
   
-8.  右クリック<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>、 をクリックして**インターフェイスの実装**、 をクリックし、**インターフェイスを明示的に実装**します。  
+8. 右クリック<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>、 をクリックして**インターフェイスの実装**、 をクリックし、**インターフェイスを明示的に実装**します。  
   
      これで実装する必要がある 4 つのメソッドを追加、<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>インターフェイス。  
   
@@ -320,20 +320,20 @@ ms.locfileid: "58974915"
   
 ### <a name="to-register-the-editor-factory"></a>エディター ファクトリを登録するには  
   
-1.  **ソリューション エクスプ ローラー**、Resources.resx ファイルを文字列テーブルを開くことをダブルクリックして、エントリ**String1 が**選択します。  
+1. **ソリューション エクスプ ローラー**、Resources.resx ファイルを文字列テーブルを開くことをダブルクリックして、エントリ**String1 が**選択します。  
   
-2.  識別子の名前を変更`IDS_EDITORNAME`とテキストを**MyPackage エディター。** この文字列は、エディターの名前として表示されます。  
+2. 識別子の名前を変更`IDS_EDITORNAME`とテキストを**MyPackage エディター。** この文字列は、エディターの名前として表示されます。  
   
-3.  VSPackage.resx ファイルを開き、新しい文字列、名前に設定します**101**し、値を`IDS_EDITORNAME`します。 これにより、先ほど作成した文字列にアクセスするリソース ID を持つパッケージが提供されます。  
+3. VSPackage.resx ファイルを開き、新しい文字列、名前に設定します**101**し、値を`IDS_EDITORNAME`します。 これにより、先ほど作成した文字列にアクセスするリソース ID を持つパッケージが提供されます。  
   
     > [!NOTE]
-    >  別 VSPackage.resx ファイルに含まれる場合の文字列を`name`属性に設定**101**、ここで、次の手順で別の一意の数値の値に置き換えてください。  
+    > 別 VSPackage.resx ファイルに含まれる場合の文字列を`name`属性に設定**101**、ここで、次の手順で別の一意の数値の値に置き換えてください。  
   
-4.  **ソリューション エクスプ ローラー**、MyPackagePackage.cs ファイルを開きます。  
+4. **ソリューション エクスプ ローラー**、MyPackagePackage.cs ファイルを開きます。  
   
      これはメイン パッケージ ファイルです。  
   
-5.  直前に次のユーザー属性を追加、`Guid`属性。  
+5. 直前に次のユーザー属性を追加、`Guid`属性。  
   
     ```vb  
     <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
@@ -349,7 +349,7 @@ ms.locfileid: "58974915"
   
      <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>属性は、拡張機能が読み込まれる、エディター ファクトリが呼び出されることを持つファイルをいつように、エディター ファクトリを .myext ファイルの拡張子を関連付けます。  
   
-6.  プライベート変数の追加、 `MyPackage` 、コンス トラクターの直前に、クラスし、型を付けます`EditorFactory`します。  
+6. プライベート変数の追加、 `MyPackage` 、コンス トラクターの直前に、クラスし、型を付けます`EditorFactory`します。  
   
     ```vb  
     Private editorFactory As EditorFactory  
@@ -359,7 +359,7 @@ ms.locfileid: "58974915"
     private EditorFactory editorFactory;  
     ```  
   
-7.  検索、`Initialize`メソッド (を開く必要があります、`Package Members`非表示の領域) を呼び出した後、次のコードを追加および`base.Initialize()`します。  
+7. 検索、`Initialize`メソッド (を開く必要があります、`Package Members`非表示の領域) を呼び出した後、次のコードを追加および`base.Initialize()`します。  
   
     ```vb  
     'Create our editor factory and register it.   
@@ -374,7 +374,7 @@ ms.locfileid: "58974915"
   
     ```  
   
-8.  プログラムをコンパイルして、エラーがないかどうかを確認します。  
+8. プログラムをコンパイルして、エラーがないかどうかを確認します。  
   
      この手順の実験用のレジストリ ハイブでエディター ファクトリを登録します[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 Resource.h ファイルを上書きするメッセージが表示されたら、クリックして**OK**します。  
   

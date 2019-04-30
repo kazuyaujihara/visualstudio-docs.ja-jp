@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 325f6b1b7ee489102d1ed4d2ef72350b3a6f5f3d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008639"
 ---
 # <a name="work-with-contact-items"></a>連絡先項目を操作します。
   <xref:Microsoft.Office.Interop.Outlook.ContactItem> クラスには、連絡先関連のタスクを実行するときに使用するメソッドとプロパティが含まれています。
@@ -33,7 +33,7 @@ ms.locfileid: "56631030"
 |メール アドレスに特定のドメインが含まれている連絡先を検索します。|[方法: プログラムによって連絡先から電子メール アドレスを検索します。](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)|
 |指定した名前のある連絡先を削除します。|[方法: プログラムによって Outlook の連絡先を削除します。](../vsto/how-to-programmatically-delete-outlook-contacts.md)|
 
- Outlook タスクと Outlook オブジェクト モデルの詳細については、[Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)を参照してください。
+ Outlook タスクと Outlook オブジェクト モデルの詳細については、次を参照してください。 [Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [メールの項目を操作します。](../vsto/working-with-mail-items.md)

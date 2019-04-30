@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb2f257feaa8faa6acf58c8e8763d15d08a1079e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387729"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC モデルのデザイン ツールの概要
   ビジネス データ接続 (BDC) モデルを設計するには、BDC デザイナーを使用して、 **BDC メソッドの詳細**ウィンドウ、および**BDC エクスプ ローラー**。
@@ -63,13 +63,13 @@ ms.locfileid: "56596569"
  内のノードを選択すると、 **BDC エクスプ ローラー**、選択した各ノードのプロパティに表示されます、**プロパティ**ウィンドウ。 これらのプロパティの多くは、モデル ファイル内の属性に対応します。 上部にある検索ボックスを使用して、モデルを検索することができます、 **BDC エクスプ ローラー**します。
 
 > [!NOTE]
->  **BDC エクスプ ローラー**識別子、カスタム プロパティ、ローカライズされた文字列、アソシエーションのグループ、アクション、フィルター記述子、アクションのコントロール リスト、および既定のパラメーター値は表示されません。
+> **BDC エクスプ ローラー**識別子、カスタム プロパティ、ローカライズされた文字列、アソシエーションのグループ、アクション、フィルター記述子、アクションのコントロール リスト、および既定のパラメーター値は表示されません。
 
 ### <a name="define-type-descriptors"></a>型記述子を定義します。
  使用して、 **BDC エクスプ ローラー**型記述子を定義します。 BDC エクスプ ローラーを使用すると、1 回型記述子を定義し、その後、モデルの他の場所では、その型記述子を再利用できます。 これを行うには、型記述子をコピーし、他のパラメーターに貼り付けることか記述子を入力します。
 
 > [!NOTE]
->  元の型記述子への変更は、その型記述子のコピーには影響しません。
+> 元の型記述子への変更は、その型記述子のコピーには影響しません。
 
  詳細については、「[方法 :パラメーターの型記述子を定義](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)します。
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d693113db28acc456625f7c22b671006ed17038b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb6651d788979343752fac30c4570d955b53068c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402858"
 ---
 # <a name="edit-data-in-datasets"></a>データセットのデータの編集
 任意のデータベースのテーブルにデータを編集するのと同様に、データ テーブル内のデータを編集します。 プロセスには、挿入、更新、およびテーブル内のレコードの削除を含めることができます。 データ バインド フォームでは、どのフィールドがユーザーが編集可能なを指定できます。 その場合は、データ バインド インフラストラクチャは、すべての変更の追跡、変更を後で元のデータベースに送信できるようにを処理します。 データにプログラムで編集を行ってそれらの変更をデータベースに送信する場合は、オブジェクトや変更の追跡を行うメソッドを使用する必要があります。
@@ -58,7 +58,7 @@ ms.locfileid: "60096986"
      このメソッドは、レコードを物理的に削除されません。 代わりに、削除のレコードをマークします。
 
     > [!NOTE]
-    >  Count プロパティが表示された場合、 <xref:System.Data.DataRowCollection>、結果のカウントには、削除対象としてマークされているレコードが含まれています。 削除対象としてマークされないレコードの正確なカウントを取得する、見てコレクションをループ処理することができます、<xref:System.Data.DataRow.RowState%2A>各レコードのプロパティ。 (削除対象としてマークするレコードが、<xref:System.Data.DataRow.RowState%2A>の<xref:System.Data.DataRowState.Deleted>)。または、行の状態に基づくフィルターをデータセットのデータ ビューを作成し、そこから、count プロパティを取得することができます。
+    > Count プロパティが表示された場合、 <xref:System.Data.DataRowCollection>、結果のカウントには、削除対象としてマークされているレコードが含まれています。 削除対象としてマークされないレコードの正確なカウントを取得する、見てコレクションをループ処理することができます、<xref:System.Data.DataRow.RowState%2A>各レコードのプロパティ。 (削除対象としてマークするレコードが、<xref:System.Data.DataRow.RowState%2A>の<xref:System.Data.DataRowState.Deleted>)。または、行の状態に基づくフィルターをデータセットのデータ ビューを作成し、そこから、count プロパティを取得することができます。
 
 次の例を呼び出す方法を示しています、<xref:System.Data.DataRow.Delete%2A>の最初の行をマークするメソッド、`Customers`テーブルの削除済みとして。
 

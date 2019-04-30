@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 19280ccd2564cdbec14a1d74ae8babb9447c05e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e190360b4441a937e9bfa9fb317f9d07de506040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447234"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ IDiaSymbol : IUnknown
  次の表は、メソッドの`IDiaSymbol`します。  
   
 > [!NOTE]
->  シンボルはシンボルの種類に応じて、これらのメソッドの一部のみに対して意味のあるデータを返します。 メソッドから返された場合`S_OK`、そのメソッドには意味のあるデータが返されます。  
+> シンボルはシンボルの種類に応じて、これらのメソッドの一部のみに対して意味のあるデータを返します。 メソッドから返された場合`S_OK`、そのメソッドには意味のあるデータが返されます。  
   
 |メソッド|説明|  
 |------------|-----------------|  
@@ -264,7 +264,7 @@ IDiaSymbol : IUnknown
  この例では、指定の相対仮想アドレスに関数のローカル変数を表示する方法を示します。 また、さまざまな種類のシンボルが相互に関連する方法も説明します。  
   
 > [!NOTE]
->  `CDiaBSTR` ラップするクラスは、`BSTR`し、自動的に処理をインスタンス化がスコープから外れたときに、文字列を解放します。  
+> `CDiaBSTR` ラップするクラスは、`BSTR`し、自動的に処理をインスタンス化がスコープから外れたときに、文字列を解放します。  
   
 ```cpp#  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  

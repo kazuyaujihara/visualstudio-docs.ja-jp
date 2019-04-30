@@ -13,12 +13,12 @@ ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a500b84f04f5f9dce37515edae71fda509a63bbb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 48dd08b8ef1a8b32497d03dc7989b32a22ee5a9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426356"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ int GetSymbolInfo(
  返します、メソッドが成功したかどうかは`S_OK`、それ以外のエラー コードを返します。  
   
 > [!NOTE]
->  返される文字列 (で、`MODULE_SYMBOL_SEARCH_INFO`構造) 空にすることも`S_OK`が返されます。 この場合、返される検索情報がありませんでした。  
+> 返される文字列 (で、`MODULE_SYMBOL_SEARCH_INFO`構造) 空にすることも`S_OK`が返されます。 この場合、返される検索情報がありませんでした。  
   
 ## <a name="remarks"></a>Remarks  
  場合、`bstrVerboseSearchInfo`のフィールド、`MODULE_SYMBOL_SEARCH_INFO`構造体が空ではありませんし、検索するパスと検索結果の一覧が含まれています。 一覧には、省略記号 (「...」)、結果の後に続く、パスが表示されます。 1 つ以上のパスの結果のペアがある場合は、各ペアは"\r\n"(復帰と改行) のペアによって区切られます。 パターンのようになります。  
@@ -66,7 +66,7 @@ int GetSymbolInfo(
  この例では、このメソッドは、3 つの別の検索結果に 3 つのパスを返します。 各行は復帰と改行のペアで終了します。 出力の例では、1 つの文字列として、検索結果だけ印刷します。  
   
 > [!NOTE]
->  状態の結果は、行の末尾まで「...」の直後に続くれます。  
+> 状態の結果は、行の末尾まで「...」の直後に続くれます。  
   
 ```cpp#  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  

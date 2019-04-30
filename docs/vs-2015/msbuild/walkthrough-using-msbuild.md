@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445579"
 ---
 # <a name="walkthrough-using-msbuild"></a>チュートリアル: MSBuild の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ MSBuild は Microsoft および Visual Studio のビルド プラットフォー
  **Visual Studio コマンド プロンプト**から MSBuild を実行して、上で定義した HelloWorld ターゲットをビルドします。 ターゲットを選択するには、コマンド ライン スイッチの /target または /t を使用します。  
   
 > [!NOTE]
->  以降では、**Visual Studio コマンド プロンプト**を**コマンド ウィンドウ**と呼びます。  
+> 以降では、**Visual Studio コマンド プロンプト**を**コマンド ウィンドウ**と呼びます。  
   
 #### <a name="to-build-the-target"></a>ターゲットをビルドするには  
   
@@ -154,12 +154,12 @@ MSBuild は Microsoft および Visual Studio のビルド プラットフォー
     ```  
   
 > [!NOTE]
->  "`The target "HelloWorld" does not exist in the project`" と表示される場合は、コード エディターでプロジェクト ファイルが保存されていない可能性があります。 ファイルを保存して、やり直してください。  
+> "`The target "HelloWorld" does not exist in the project`" と表示される場合は、コード エディターでプロジェクト ファイルが保存されていない可能性があります。 ファイルを保存して、やり直してください。  
   
  コード エディターとコマンド ウィンドウを交互に使用すると、プロジェクト ファイルを変更してすばやく結果を確認できます。  
   
 > [!NOTE]
->  コマンド ライン スイッチの /t を使用せずに msbuild を実行すると、Project 要素の DefaultTarget 属性で指定されているターゲット (この場合は "Build") がビルドされます。 これによって、Windows フォーム アプリケーションの BuildApp.exe がビルドされます。  
+> コマンド ライン スイッチの /t を使用せずに msbuild を実行すると、Project 要素の DefaultTarget 属性で指定されているターゲット (この場合は "Build") がビルドされます。 これによって、Windows フォーム アプリケーションの BuildApp.exe がビルドされます。  
   
 ## <a name="build-properties"></a>[ビルド プロパティ]  
  ビルド プロパティは、ビルドを制御する名前と値のペアです。 このプロジェクト ファイルの先頭には、既にいくつかのビルド プロパティが定義されています。  
@@ -227,7 +227,7 @@ $(PropertyName)
     ```  
   
 > [!NOTE]
->  これらの行が表示されない場合は、コード エディターでプロジェクト ファイルが保存されていない可能性があります。 ファイルを保存して、やり直してください。  
+> これらの行が表示されない場合は、コード エディターでプロジェクト ファイルが保存されていない可能性があります。 ファイルを保存して、やり直してください。  
   
 ### <a name="conditional-properties"></a>条件付きプロパティ  
  Configuration など、多くのプロパティは、Condition 属性を使用して条件付きで定義されます。 条件付きプロパティは、条件が "true" と評価された場合にのみ定義 (または再定義) されます。 未定義のプロパティには、既定値として空の文字列が割り当てられます。 例えば以下のようにします。  
@@ -319,7 +319,7 @@ $(PropertyName)
  詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。  
   
 > [!NOTE]
->  ファイル パスは、MSBuild プロジェクト ファイルを含むフォルダーに対する相対パスです。  
+> ファイル パスは、MSBuild プロジェクト ファイルを含むフォルダーに対する相対パスです。  
   
 ## <a name="examining-item-type-values"></a>項目の種類の値の確認  
  項目の種類の値を取得するには、次の構文を使用します。ここで、ItemType は項目の種類の名前です。  

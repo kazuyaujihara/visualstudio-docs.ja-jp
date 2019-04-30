@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b1799ac2e7124f79d10dcc8860a994e2f182ea7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ac8a47aeca8875dabe3fdf388e9a73d68ec514e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445205"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>方法: ドメイン固有言語ソリューションを作成する
 ドメイン固有言語 (DSL) を作成するには、特殊な Visual Studio ソリューションを使用します。
@@ -63,7 +63,7 @@ ms.locfileid: "60051350"
     ウィザードの名前は 2 つのプロジェクトを含むソリューションを作成します**Dsl**と**DslPackage**します。
 
    > [!NOTE]
-   >  信頼されていないソースからのテキスト テンプレートを実行するには、をクリックしないを通知するメッセージが表示された場合**OK**します。 このメッセージが再び表示されるように設定できます。
+   > 信頼されていないソースからのテキスト テンプレートを実行するには、をクリックしないを通知するメッセージが表示された場合**OK**します。 このメッセージが再び表示されるように設定できます。
 
 ## <a name="settings"></a> DSL デザイナーのウィザード ページ
  既定値から変更されていないフィールドのいくつかのままにすることができます。 ただし、ファイル拡張子のフィールドを設定することを確認します。

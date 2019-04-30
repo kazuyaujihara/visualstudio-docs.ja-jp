@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0c0374f50894cefbb240c6349c9c2450734501d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c87b197219cec112a9235f4af6fb1a51ae793a88
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441026"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>方法: プログラム コード内のファイルからモデルを開く
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60071851"
 3. プロジェクトのプロパティ ウィンドウでの**アプリケーション**タブで、設定、**ターゲット フレームワーク**フィールドを **.NET Framework 4**します。  
   
 > [!NOTE]
->  選択した場合でもこれを実行する必要があります **.NET Framework 4**プロジェクトの作成 ダイアログ ボックス。 ターゲット フレームワークがすることはできません **.NET Framework 4 Client Profile**します。  
+> 選択した場合でもこれを実行する必要があります **.NET Framework 4**プロジェクトの作成 ダイアログ ボックス。 ターゲット フレームワークがすることはできません **.NET Framework 4 Client Profile**します。  
   
 ## <a name="references"></a>参照  
  これらの参照を追加する必要が、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]アプリケーション プロジェクト。  

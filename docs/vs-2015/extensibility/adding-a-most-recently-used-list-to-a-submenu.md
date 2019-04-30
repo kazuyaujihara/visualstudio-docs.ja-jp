@@ -12,12 +12,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3aa3058c20fe0d5697b56adb72769f5f6962da1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: caccf8923a8614ceedb7198e218ca2bb14bb7ec0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444867"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>最近使用した一覧のサブメニューへの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -199,7 +199,7 @@ ms.locfileid: "60086287"
 2. **TestMenu**  メニューのをクリックして**呼び出す TestCommand**します。 これを行うには、コマンドが選択されていることを示すメッセージ ボックスが表示されます。  
   
     > [!NOTE]
-    >  この手順は、読み込みし、正しく MRU 一覧を表示するには、VSPackage を強制的に必要です。 この手順をスキップする場合は、MRU 一覧は表示されません。  
+    > この手順は、読み込みし、正しく MRU 一覧を表示するには、VSPackage を強制的に必要です。 この手順をスキップする場合は、MRU 一覧は表示されません。  
   
 3. **テスト メニュー**  メニューのをクリックして**サブメニュー**します。 4 つの項目の一覧は、区切り記号の下のサブメニューの最後に表示されます。 クリックすると**項目 3**、メッセージ ボックスが表示され、"Selected Item 3"のテキストを表示する必要があります。 (4 つの項目の一覧が表示されない場合確保のため、前の手順の指示に従っていること。)  
   

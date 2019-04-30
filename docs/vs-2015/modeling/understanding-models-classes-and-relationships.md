@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4381edb42e2aef53c00aea619eea34ee20060d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424331"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>モデル、クラス、およびリレーションシップについて
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ ms.locfileid: "60108717"
  モデルの保存時を XML 形式でファイルには、埋め込まれた要素は、入れ子、親、シリアル化をカスタマイズしている場合を除き、します。  
   
 > [!NOTE]
->  埋め込みは継承とは異なります。 埋め込みリレーションシップの子は、親のプロパティを継承しません。 埋め込みは、モデル要素間のリンクの種類です。 継承、クラス間の関係は、モデル要素間のリンクは作成されません。  
+> 埋め込みは継承とは異なります。 埋め込みリレーションシップの子は、親のプロパティを継承しません。 埋め込みは、モデル要素間のリンクの種類です。 継承、クラス間の関係は、モデル要素間のリンクは作成されません。  
   
 ### <a name="embedding-rules"></a>ルールの埋め込み  
  インスタンス モデル内のすべての要素は、モデルのルートを除く、1 つだけ埋め込みリンクのターゲットにする必要があります。  

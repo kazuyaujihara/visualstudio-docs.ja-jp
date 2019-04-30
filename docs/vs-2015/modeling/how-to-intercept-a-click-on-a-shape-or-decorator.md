@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e67b6e999078523c11ba2b59175743e4a8f3d33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 865cd15416fbc901b6c5e58e1d83385f64f6a5a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441073"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>方法: シェイプまたはデコレーターに対するクリック操作を受け取る
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ public partial class MyShape // change
 ```  
   
 > [!NOTE]
->  設定`e.Handled`に`true`図形または図に渡されるイベントの場合を除き、します。  
+> 設定`e.Handled`に`true`図形または図に渡されるイベントの場合を除き、します。  
   
 ## <a name="to-intercept-clicks-on-decorators"></a>デコレーターの数回のクリックをインターセプトするには  
  イメージのデコレーターは、OnDoubleClick メソッドを持つ ImageField クラスのインスタンスで実行されます。 ImageField サブクラスを作成する場合、数回のクリックをインターセプトすることができます。 フィールドは InitializeShapeFields メソッドで設定されます。 そのため、通常 ImageField ではなく、サブクラスのインスタンスを作成するには、そのメソッドを変更する必要があります。 InitializeShapeFields メソッドは、shape クラスの生成されたコード内に示します。 シェイプ クラスを上書きするには、設定した場合、`Generates Double Derived`プロパティを次の手順で説明します。  

@@ -12,12 +12,12 @@ ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 367f775cdf8ade1db41bbb05cd4ca9c424496e9a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 45f60aaac3b89b7273a5f548b4716b6aee392256
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405604"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58976884"
 1 つの命令またはステートメントにステップ イン プロセスをさせます。  
   
 > [!NOTE]
->  このメソッドは、の代わりに使用する必要があります[手順](../../../extensibility/debugger/reference/idebugprogram2-step.md)します。  
+> このメソッドは、の代わりに使用する必要があります[手順](../../../extensibility/debugger/reference/idebugprogram2-step.md)します。  
   
 ## <a name="syntax"></a>構文  
   

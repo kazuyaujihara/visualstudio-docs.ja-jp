@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443966"
 ---
 # <a name="addressing-dpi-issues"></a>DPI 問題への対応
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "60049543"
   
 - Windows は 280 ppi (時点で、Windows 8.1 S14) を超える新しいデバイスによっては 250% にコンテンツを自動的にスケールできます。  
   
-  Windows は、増加のピクセル数を活用するためにスケール アップ UI を扱うのことです。 アプリケーションを「システム DPI 認識」を宣言すること自体でこのシステムの選択します。 これを行わないアプリケーションには、システムによってをスケール アップします。 これは、結果、アプリケーション全体が一様に分布のピクセル拡大は「あいまい」のユーザー エクスペリエンス。 例:  
+  Windows は、増加のピクセル数を活用するためにスケール アップ UI を扱うのことです。 アプリケーションを「システム DPI 認識」を宣言すること自体でこのシステムの選択します。 これを行わないアプリケーションには、システムによってをスケール アップします。 これは、結果、アプリケーション全体が一様に分布のピクセル拡大は「あいまい」のユーザー エクスペリエンス。 例えば:  
   
   ![DPI 問題あいまい](../extensibility/media/dpi-issues-fuzzy.png "DPI 問題あいまい")  
   
   Visual Studio オプトイン DPI スケーリングに対応して、そのため、「仮想化されません」  
   
-  Windows (と Visual Studio) スケール係数は、システムによって設定の処理のさまざまな方法がありますが、いくつかの UI テクノロジを活用します。 例:  
+  Windows (と Visual Studio) スケール係数は、システムによって設定の処理のさまざまな方法がありますが、いくつかの UI テクノロジを活用します。 例えば:  
   
 - WPF では、(ユニット、ピクセル単位ではありません) は、デバイスに依存しない方法でコントロールを測定します。 WPF の UI は、現在 DPI 用に自動的にスケーリングされます。  
   
@@ -51,7 +51,7 @@ ms.locfileid: "60049543"
  このセクションでは、主に Visual Studio 2013 を拡張する開発者向けです。 Visual Studio 2015、Visual Studio に組み込まれているイメージのサービスを使用します。 多くのバージョンの Visual Studio のサポート/ターゲットする必要があるあり、したがって 2015年の イメージのサービスを使用してオプションではありません、以前のバージョンが存在しないためこともあります。 このセクションではまたです。  
   
 ## <a name="scaling-up-images-that-are-too-small"></a>スケール アップは小さすぎてイメージ  
- 小さすぎるイメージを「スケール アップ」と GDI といくつかの一般的なメソッドを使用して WPF 上に描画できます。 マネージ DPI ヘルパー クラスは、内部および外部の Visual Studio インテグレーター アイコン、ビットマップ、imagestrips、および imagelists をスケーリングするアドレスを使用できます。 Win32 ベースのネイティブ C と c++ ヘルパーを HICON、HBITMAP、HIMAGELIST、および VsUI::GdiplusImage を拡張するために利用できます。 通常、ビットマップのスケーリングでは、ヘルパー ライブラリへの参照を含めた後に 1 行の変更のみが必要です。 例えば:  
+ 小さすぎるイメージを「スケール アップ」と GDI といくつかの一般的なメソッドを使用して WPF 上に描画できます。 マネージ DPI ヘルパー クラスは、内部および外部の Visual Studio インテグレーター アイコン、ビットマップ、imagestrips、および imagelists をスケーリングするアドレスを使用できます。 Win32 ベースのネイティブ C と c++ ヘルパーを HICON、HBITMAP、HIMAGELIST、および VsUI::GdiplusImage を拡張するために利用できます。 通常、ビットマップのスケーリングでは、ヘルパー ライブラリへの参照を含めた後に 1 行の変更のみが必要です。 例:  
   
 ```cpp  
 (Unmanaged)  VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);  
@@ -82,7 +82,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
  ![DPI 問題 (スケーリング)](../extensibility/media/dpi-issues-scaling.png "DPI 問題 (スケーリング)")  
   
 ## <a name="layout-issues"></a>レイアウトの問題  
- 絶対位置 (ピクセル単位) で具体的を使用してではなく、主に、スケール、UI には相互に関連したポイントを維持することによって、一般的なレイアウトの問題を回避できます。 例えば:  
+ 絶対位置 (ピクセル単位) で具体的を使用してではなく、主に、スケール、UI には相互に関連したポイントを維持することによって、一般的なレイアウトの問題を回避できます。 例:  
   
 - レイアウト]、[テキストの位置は、スケール アップしたイメージのアカウントに合わせて調整する必要があります。  
   
@@ -116,7 +116,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```  
   
 > [!NOTE]
->  モジュール レベルまたはクラス レベルの静的変数には、ヘルパー関数を使用しません。 ライブラリがスレッドの同期も静的変数を使用し、順序初期化問題が発生する可能性があります。 これらの静的変数を非静的メンバー変数に変換またはいずれか (したがって、最初のアクセス、これらの構築を取得) を関数にそれらをラップします。  
+> モジュール レベルまたはクラス レベルの静的変数には、ヘルパー関数を使用しません。 ライブラリがスレッドの同期も静的変数を使用し、順序初期化問題が発生する可能性があります。 これらの静的変数を非静的メンバー変数に変換またはいずれか (したがって、最初のアクセス、これらの構築を取得) を関数にそれらをラップします。  
   
  DPI のヘルパー関数は、Visual Studio 環境内で実行されるマネージ コードからアクセスします。  
   
@@ -128,7 +128,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
 - プロジェクトへの参照に含まれることを確認**System.Windows.Forms**、 **PresentationCore**、および**PresentationUI**します。  
   
-- コードでは、使用、 **Microsoft.VisualStudio.PlatformUI** DpiHelper クラスの静的関数を名前空間を呼び出します。 (ポイント、サイズ、四角形、およびなど) のサポートされている型は、拡張機能を返す新しい関数オブジェクトを拡大縮小提供にがあります。 例えば:  
+- コードでは、使用、 **Microsoft.VisualStudio.PlatformUI** DpiHelper クラスの静的関数を名前空間を呼び出します。 (ポイント、サイズ、四角形、およびなど) のサポートされている型は、拡張機能を返す新しい関数オブジェクトを拡大縮小提供にがあります。 例:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -175,7 +175,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  手順 1: 200%、300%、NearestNeighbor を使用するようにイメージを prescale します。  
   
- バインディング、または XAML マークアップ拡張機能の適用にコンバーターを使用してイメージを prescale します。 例:  
+ バインディング、または XAML マークアップ拡張機能の適用にコンバーターを使用してイメージを prescale します。 例えば:  
   
 ```xaml  
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />  
@@ -213,7 +213,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
-- 元のイメージのサイズが不明である場合は、スケール ダウンが最終的なイメージ オブジェクトに、LayoutTransform を使用できます。 例えば:  
+- 元のイメージのサイズが不明である場合は、スケール ダウンが最終的なイメージ オブジェクトに、LayoutTransform を使用できます。 例:  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  

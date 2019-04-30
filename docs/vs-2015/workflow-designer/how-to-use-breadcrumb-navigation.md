@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97cfb7ddba95ccf4c2f74e7c924c6f62b91254a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 64f84d33a814937df74002ffeb2fe7453694377e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444145"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>方法: 階層リンク ナビゲーションを使用する
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]に表示されるアクティビティのセットを変更する主な方法は、次の 3 つです。  
@@ -38,7 +38,7 @@ ms.locfileid: "60109700"
 2. ボタンのクリックによって展開の状態が変更されると、展開の新しい状態が XAML に保存されます。  
   
     > [!WARNING]
-    >  アクティビティには、その場で展開できないものもあります。 アクティビティをその場で展開できない状況は 2 つ考えられます。親アクティビティがその子アクティビティに対して、その場での展開を許可していない場合 (たとえば、フローチャート内のアクティビティをその場で展開できない) と、アクティビティ デザイナー自体でその場での展開が禁止されている場合です。 [!INCLUDE[wfd2](../includes/wfd2-md.md)]に含まれるアクティビティ デザイナーでは、その場での展開は禁止されていませんが、一部のカスタム アクティビティは、この理由で展開できない場合があります。  
+    > アクティビティには、その場で展開できないものもあります。 アクティビティをその場で展開できない状況は 2 つ考えられます。親アクティビティがその子アクティビティに対して、その場での展開を許可していない場合 (たとえば、フローチャート内のアクティビティをその場で展開できない) と、アクティビティ デザイナー自体でその場での展開が禁止されている場合です。 [!INCLUDE[wfd2](../includes/wfd2-md.md)]に含まれるアクティビティ デザイナーでは、その場での展開は禁止されていませんが、一部のカスタム アクティビティは、この理由で展開できない場合があります。  
   
 ### <a name="expanding-all-or-collapsing-all-activities"></a>すべてのアクティビティの展開または折りたたみ  
   
@@ -47,7 +47,7 @@ ms.locfileid: "60109700"
 2. クリックすることができますが、すべての展開を適用するか、またはすべての状態を折りたたむ後、**復元**各アクティビティに以前に適用される状態に戻すに表示されるボタン。  
   
     > [!WARNING]
-    >  アクティビティがなど<xref:System.Activities.Statements.Flowchart>が選択の場で展開、機能に関連付けられている、**すべて展開**と**すべて折りたたむ**ボタンが無効になって、**フローチャート**デザイナー。 [!INCLUDE[crabout](../includes/crabout-md.md)] **フローチャート**デザイナーを参照してください、[フローチャート](../workflow-designer/flowchart-activity-designer.md)トピック。  
+    > アクティビティがなど<xref:System.Activities.Statements.Flowchart>が選択の場で展開、機能に関連付けられている、**すべて展開**と**すべて折りたたむ**ボタンが無効になって、**フローチャート**デザイナー。 [!INCLUDE[crabout](../includes/crabout-md.md)] **フローチャート**デザイナーを参照してください、[フローチャート](../workflow-designer/flowchart-activity-designer.md)トピック。  
   
     > [!WARNING]
-    >  [すべて展開] 特別な効果があります**スイッチ**と**TryCatch**アクティビティ デザイナー。 クリックすると**すべて展開**、すべての switch ケースおよびすべての try、catch、finally ブロックが表示されます。 クリックすると**復元**または**すべて折りたたむ**その内容を表示する個々 のケース/ブロックをクリックすることができます、既定の状態にこれらのデザイナーを返します。
+    > [すべて展開] 特別な効果があります**スイッチ**と**TryCatch**アクティビティ デザイナー。 クリックすると**すべて展開**、すべての switch ケースおよびすべての try、catch、finally ブロックが表示されます。 クリックすると**復元**または**すべて折りたたむ**その内容を表示する個々 のケース/ブロックをクリックすることができます、既定の状態にこれらのデザイナーを返します。

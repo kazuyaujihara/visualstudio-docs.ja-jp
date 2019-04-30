@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fae2dc72c44b90068212c09086c63c9e00fd2d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63f86011b7794ca0ddd17b890e3374327db3af0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446934"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 または .NET Framework 4.5 に移行する Office プロジェクトのリボンのカスタマイズを更新します。
   リボンのカスタマイズを使用して作成されたが、プロジェクトに含まれているかどうか、**リボン (ビジュアル デザイナー)** プロジェクト項目、ターゲット フレームワークに変更された場合、プロジェクト コードに、次の変更を行う必要があります、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]またはあとで。
@@ -75,7 +75,7 @@ ms.locfileid: "60096544"
 3. `InitializeComponent` メソッドでは、代わりに <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> オブジェクトのいずれかのヘルパー メソッドが使用されるように、リボン コントロールを構築するすべてのコードを変更します。
 
     > [!NOTE]
-    >  Visual C# プロジェクトでは、`Component Designer generated code` メソッドを表示するために `InitializeComponent` という名前の領域を展開する必要があります。
+    > Visual C# プロジェクトでは、`Component Designer generated code` メソッドを表示するために `InitializeComponent` という名前の領域を展開する必要があります。
 
      たとえば、.NET Framework 3.5 を対象とするプロジェクトで、<xref:Microsoft.Office.Tools.Ribbon.RibbonButton> という名前の `button1` をインスタンス化する次のコード行がファイルに含まれていると仮定します。
 

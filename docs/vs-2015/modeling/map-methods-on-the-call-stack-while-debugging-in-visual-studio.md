@@ -30,12 +30,12 @@ caps.latest.revision: 43
 author: MikeJo5000
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 572e9f913824ca5f981d139bda6eac2634dbba18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a3910ec863ea74199d7bd2899d7ea7f0053917ea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440910"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio でデバッグを行うときの呼び出し履歴に対するメソッドのマップ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ ms.locfileid: "60080892"
  ![呼び出し履歴コード マップ上のメソッドでフィールドを表示する](../debugger/media/debuggermap-showfields.png "DebuggerMap_ShowFields")
 
 > [!NOTE]
->  既定では、マップに項目を追加すると、クラス、名前空間、アセンブリなどの親グループのノードも追加されます。 便利ですが、おくと、マップ単純な機能を使用してこの機能をオフに、**親を含める**マップのツールバー、またはキーを押してボタン**CTRL**項目を追加するとします。
+> 既定では、マップに項目を追加すると、クラス、名前空間、アセンブリなどの親グループのノードも追加されます。 便利ですが、おくと、マップ単純な機能を使用してこの機能をオフに、**親を含める**マップのツールバー、またはキーを押してボタン**CTRL**項目を追加するとします。
 
  ![呼び出し履歴コード マップのメソッドに関連するフィールドを](../debugger/media/debuggermap-showedfields.png "DebuggerMap_ShowedFields")
 

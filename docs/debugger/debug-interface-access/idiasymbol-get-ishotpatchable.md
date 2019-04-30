@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c14d28c128bdbd69c684caad0d7f6c0fd0afade
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 6ac1547228be6312126bb48602e3a77fed0b3c25
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399929"
 ---
 # <a name="idiasymbolgetishotpatchable"></a>IDiaSymbol::get_isHotpatchable
 モジュールをコンパイルしたかどうかを示すフラグを取得、 [/hotpatch (ホットパッチ可能なイメージの作成)](/cpp/build/reference/hotpatch-create-hotpatchable-image)コンパイラ スイッチ。
@@ -39,16 +39,16 @@ HRESULT get_isHotpatchable(
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
 
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  このプロパティは、`SymTagCompilandDetails`記号の型 (を参照してください[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md))。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|dia2.h|
+|ヘッダー:|Dia2.h|
 |バージョン:|DIA SDK バージョン 8.0|
 
 ## <a name="see-also"></a>関連項目

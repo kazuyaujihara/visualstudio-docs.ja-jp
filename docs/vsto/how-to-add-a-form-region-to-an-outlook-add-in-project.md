@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 139cdb0314783c76352cc499256fb89610354843
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c742b4cbbda440ea84314efbc5281e54771fe60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427892"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>方法: フォーム領域を Outlook アドイン プロジェクトに追加します。
   **新しい Outlook フォーム領域** ウィザードを使用して、標準またはカスタムの Microsoft Office Outlook フォームを拡張するフォーム領域を作成します。 新しいフォーム領域を作成して Visual Studio でユーザー インターフェイスをデザインするか、または Outlook でデザインしたフォーム領域をインポートして Visual Basic または C# コードを追加することができます。
@@ -48,7 +48,7 @@ ms.locfileid: "60083947"
 6. **[フォーム領域を作成する方法を選択します]** ページで、マネージド コントロールをビジュアル デザイナーまでドラッグしてフォーム領域をデザインするか、Outlook でデザインしたフォーム領域からインポートするかを選択します。
 
     > [!NOTE]
-    >  Outlook でデザインしたフォーム領域をインポートするかどうかは、Outlook Form Storage の場所を指定する必要があります (*.ofs*) ファイル。 Outlook でデザインしたフォーム領域にマネージド コントロールを追加することはできません。既存の UI にコードを追加することはできます。 詳細については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
+    > Outlook でデザインしたフォーム領域をインポートするかどうかは、Outlook Form Storage の場所を指定する必要があります (*.ofs*) ファイル。 Outlook でデザインしたフォーム領域にマネージド コントロールを追加することはできません。既存の UI にコードを追加することはできます。 詳細については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
 
 7. **[作成するフォーム領域の種類を選択します]** ページでフォーム領域の種類を確認し、種類を 1 つ選択してから、 **[次へ]** をクリックします。 フォーム領域の種類の詳細については、次を参照してください。[作成の Outlook フォーム領域](../vsto/creating-outlook-form-regions.md)します。
 

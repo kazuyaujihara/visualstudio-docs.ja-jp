@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9fbdaf845d780935b238bac2ba2c2e7cb0c53b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437829"
 ---
 # <a name="capturing-graphics-information"></a>グラフィックス情報をキャプチャする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Visual Studio Graphics Analyzer を使用してレンダリングに関する問
 - キーボードで、PrintScreen キーを押します。  
   
   > [!NOTE]
-  >  アプリケーションが **[グラフィックス診断]** で実行されている間、PrintScreen キーはグラフィックス情報のフレームをキャプチャするためだけに使用できます。通常の機能は実行できません。 これは、デバッグを停止するかアプリケーションを正常に終了して、グラフィックス情報のキャプチャを停止するまで有効です。別のアプリケーションにフォーカスがある場合でも同じです。  
+  > アプリケーションが **[グラフィックス診断]** で実行されている間、PrintScreen キーはグラフィックス情報のフレームをキャプチャするためだけに使用できます。通常の機能は実行できません。 これは、デバッグを停止するかアプリケーションを正常に終了して、グラフィックス情報のキャプチャを停止するまで有効です。別のアプリケーションにフォーカスがある場合でも同じです。  
   
 - Visual Studio キャプチャ インターフェイスで選択、**フレームのキャプチャ**の上にあるボタン、**診断セッション**タイムラインも、大規模な**フレームのキャプチャ**ボタン下にある、**秒あたりのフレーム**スイム レーンとそれ以前にキャプチャされたフレームの右側にします。 下の画像では、両方のボタンが強調表示されています。  
   

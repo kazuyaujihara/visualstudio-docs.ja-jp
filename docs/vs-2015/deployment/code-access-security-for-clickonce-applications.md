@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b56f926006b952b0e92a791e36bb821f3df0197d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54160bbdfe834a1b3226f4445b862c151bcf35c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423279"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce アプリケーションのコード アクセス セキュリティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ClickOnce アプリケーションは、.NET Framework に基づいており、�
 - アプリケーションに完全な信頼アクセス許可が必要な場合、エンド ユーザーにアプリケーションにアクセス許可を付与するよう求めるプロンプトが表示されることがあります。 これはアプリケーションが実際には ClickOnce エクスペリエンスを提供していないことを示しており、このプロンプトによって経験の少ないユーザーが混乱してしまう可能性があります。  
   
   > [!NOTE]
-  >  CD-ROM などのリムーバブル メディアからアプリケーションをインストールする場合、これらのプロンプトが表示されることはありません。 さらに、ユーザーが信頼できるソースからアプリケーションをインストールする場合、ネットワーク管理者はこれらのプロンプトが表示がされないようにネットワーク ポリシーを構成できます。 詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
+  > CD-ROM などのリムーバブル メディアからアプリケーションをインストールする場合、これらのプロンプトが表示されることはありません。 さらに、ユーザーが信頼できるソースからアプリケーションをインストールする場合、ネットワーク管理者はこれらのプロンプトが表示がされないようにネットワーク ポリシーを構成できます。 詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
   
   ClickOnce アプリケーションのアクセス許可を制限するためには、アプリケーションのコード アクセス セキュリティのアクセス許可を変更して、アプリケーションに必要な最適なアクセス許可ゾーンを要求できます。 ほとんどの場合、アプリケーションの配置元のゾーンを選択できます。 たとえば、アプリケーションが企業アプリケーションである場合、 **ローカル イントラネット** が使用できます。 アプリケーションがインターネット アプリケーションである場合は、 **インターネット** ゾーンが使用できます。  
   

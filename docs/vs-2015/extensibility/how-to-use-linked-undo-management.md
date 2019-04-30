@@ -10,12 +10,12 @@ ms.assetid: af5cc22a-c9cf-45b1-a894-1022d563f3ca
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 442024b7be335c0aa010ce528142ac7a205097f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 67d0d173909b8cdfe2eaf0d56aa5c99c437d5ad8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441553"
 ---
 # <a name="how-to-use-linked-undo-management"></a>方法: リンク元に戻すの管理を使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ ms.locfileid: "60062972"
 3. 呼び出す<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A>を展開するすべての 1 つとして、リンク元に戻す単位のバックアップを作成します。  
   
     > [!NOTE]
-    >  エディターでリンクされた undo 管理を実装するには、元に戻す管理を追加します。 リンクされた undo 管理の実装の詳細については、次を参照してください。[方法。元に戻す管理を実装](../extensibility/how-to-implement-undo-management.md)します。  
+    > エディターでリンクされた undo 管理を実装するには、元に戻す管理を追加します。 リンクされた undo 管理の実装の詳細については、次を参照してください。[方法。元に戻す管理を実装](../extensibility/how-to-implement-undo-management.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   
  [IOleParentUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleparentundounit)   
  [IOleUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleundounit)   
- [方法: 元に戻す管理を実装](../extensibility/how-to-implement-undo-management.md)
+ [方法: 元に戻すの管理を実装する](../extensibility/how-to-implement-undo-management.md)

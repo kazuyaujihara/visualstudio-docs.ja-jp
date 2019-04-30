@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f4878827ae65a8f42e8225c7daab207a27a0614a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426389"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Visual Studio 拡張機能の検索と使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Visual Studio 拡張機能は、Visual Studio 内で実行されるコード パ
  **[拡張機能と更新プログラム]** ダイアログ ボックスを使用すると、Visual Studio の拡張機能やサンプルを Web サイトまたは他の場所から入手してインストールし、これらを有効化、無効化、更新、またはアンインストールすることができます。 **[ツール] / [拡張機能と更新プログラム]** を使用するか、 **[クイック起動]** ウィンドウに「 **拡張機能** 」と入力してください。 ダイアログ ボックスには、インストールされているサンプルと拡張機能の更新プログラムも表示されます。 また、Web サイトから拡張機能をダウンロードしたり、他の開発者から入手したりすることもできます。
 
 > [!NOTE]
->  Visual Studio 2015 以降では、Visual Studio ギャラリーでホストされている拡張機能が自動的に更新されます。  この設定は、 **[拡張機能と更新プログラム]** ダイアログを使用して変更できます。  詳細については、後述の「 **拡張機能の自動更新** 」を参照してください。
+> Visual Studio 2015 以降では、Visual Studio ギャラリーでホストされている拡張機能が自動的に更新されます。  この設定は、 **[拡張機能と更新プログラム]** ダイアログを使用して変更できます。  詳細については、後述の「 **拡張機能の自動更新** 」を参照してください。
 
 ## <a name="finding-visual-studio-extensions"></a>Visual Studio 拡張機能の検索
  拡張機能をインストールすることができます、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)または[サンプル ギャラリー](https://code.msdn.microsoft.com/vstudio) Microsoft web サイト。 拡張機能とは、Visual Studio に機能を追加するためのコントロール、サンプル、テンプレート、ツール、またはその他のコンポーネントです。 Visual Studio では、VSIX パッケージ形式の拡張機能がサポートされています。これには、プロジェクト テンプレート、項目テンプレート、 **ツールボックス** 項目、Managed Extension Framework (MEF) コンポーネント、VSPackages が含まれます。 MSI ベースの拡張機能をダウンロードしてインストールすることもできますが、 **[拡張機能と更新プログラム]** ダイアログ ボックスでこれらを有効化または無効化することはできません。 Visual Studio ギャラリーには、VSIX および MSI の両方の拡張機能が含まれています。
@@ -59,7 +59,7 @@ Visual Studio 拡張機能は、Visual Studio 内で実行されるコード パ
 - 特定の拡張機能の自動更新を無効にするには、 **[拡張機能と更新プログラム]** ダイアログの右側にある拡張機能の詳細ペインで、 **[この拡張機能を自動的に更新する]** オプションをオフにします。
 
 > [!NOTE]
->  Visual Studio 2015 更新プログラム 2 より、ユーザー単位の拡張機能を自動更新するか、すべてのユーザー拡張機能を更新するか、両方を行うか (初期設定) 指定できます (**[ツール]、[オプション]、[環境]、[拡張機能と更新プログラム]**)。
+> Visual Studio 2015 更新プログラム 2 より、ユーザー単位の拡張機能を自動更新するか、すべてのユーザー拡張機能を更新するか、両方を行うか (初期設定) 指定できます (**[ツール]、[オプション]、[環境]、[拡張機能と更新プログラム]**)。
 
 ## <a name="sample-master-copies-and-working-copies"></a>マスター コピーと作業コピーのサンプル
  オンライン サンプルをインストールすると、ソリューションは次の 2 つの場所に格納されます。
@@ -89,4 +89,4 @@ Visual Studio 拡張機能は、Visual Studio 内で実行されるコード パ
  Visual Studio は Microsoft インストーラー (MSI) でインストールされる拡張機能を引き続きサポートしますが、 **[拡張機能と更新プログラム]** ダイアログ ボックスは修正がないとサポートされません。
 
 > [!TIP]
->  MSI ベースの拡張機能に extension.vsixmanifest ファイルが含まれている場合は、 **[拡張機能と更新プログラム]** ダイアログ ボックスに拡張機能が表示されます。
+> MSI ベースの拡張機能に extension.vsixmanifest ファイルが含まれている場合は、 **[拡張機能と更新プログラム]** ダイアログ ボックスに拡張機能が表示されます。

@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd2900544fe2c33cfaaf9d1a0da5d4ff1ac41ab4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 406647ae086285df8dfdfc00daf4b62be66e74a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402700"
 ---
 # <a name="allocation-hook-functions"></a>割り当てフック関数
 使用してインストール、割り当てフック関数[_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook)メモリを割り当て、再割り当てまたは解放するたびに呼び出されます。 さまざまな目的は、この種のフック関数を使用できます。 テスト方法、アプリケーションが処理メモリ不足の状況など、割り当てパターンを調査するには使用または後で分析割り当て情報を記録します。
 
 > [!NOTE]
->  割り当てフック関数の中で C ランタイム ライブラリの関数を使用する場合は、「[割り当てフック関数と C ランタイムのメモリ割り当て](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)」で説明する制限事項があるので注意してください。
+> 割り当てフック関数の中で C ランタイム ライブラリの関数を使用する場合は、「[割り当てフック関数と C ランタイムのメモリ割り当て](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)」で説明する制限事項があるので注意してください。
 
  割り当てフック関数は、次の例のようなプロトタイプが必要です。
 

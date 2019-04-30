@@ -18,22 +18,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6baf0c32d087ea804bb8e221745337c73b64114
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e8684ad4b9429a5499660ef4ad6fdd8133dccaa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442417"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office ソリューションの省略可能なパラメーター
   Microsoft Office アプリケーションのオブジェクト モデルに含まれるメソッドの多くは、省略可能なパラメーターを受け取ります。 Visual Studio で Visual Basic を使用して Office ソリューションを開発する場合は、省略可能なパラメーターに値を渡す必要はありません。省略したパラメーターに対しては自動的に既定値が使用されます。 ほとんどの場合、Visual C# プロジェクトで省略可能なパラメーターを省略することもできます。 オプションを省略できませんただし、 **ref**のパラメーター、`ThisDocument`ドキュメント レベルの Word プロジェクトでクラス。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Visual C# および Visual Basic プロジェクトで省略可能なパラメーターの使用方法の詳細については、次を参照してください[名前付き引数と省略可能な引数&#40;C&#35;プログラミング ガイド&#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)と[&#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)します。
+ Visual c# および Visual Basic プロジェクトで省略可能なパラメーターの使用方法の詳細については、次を参照してください[名前付き引数と省略可能な引数&#40;C&#35;プログラミング ガイド&#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)と[&#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)します。
 
 > [!NOTE]
->  旧バージョンの Visual Studio では、Visual C# プロジェクトのすべての省略可能なパラメーターに値を渡す必要があります。 便宜上、これらのプロジェクトには `missing` というグローバル変数が含まれています。パラメーターの既定値を使用する場合に、このグローバル変数を省略可能なパラメーターに渡すことができます。 Visual Studio での Office の visual c# プロジェクトがまだが含まれて、`missing`変数が通常必要はありませんでの Office ソリューションを開発するときに使用する[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]、オプションのメソッドを呼び出す場合を除く**ref**内のパラメーター、 `ThisDocument` Word のドキュメント レベル プロジェクト内のクラス。
+> 旧バージョンの Visual Studio では、Visual C# プロジェクトのすべての省略可能なパラメーターに値を渡す必要があります。 便宜上、これらのプロジェクトには `missing` というグローバル変数が含まれています。パラメーターの既定値を使用する場合に、このグローバル変数を省略可能なパラメーターに渡すことができます。 Visual Studio での Office の visual c# プロジェクトがまだが含まれて、`missing`変数が通常必要はありませんでの Office ソリューションを開発するときに使用する[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]、オプションのメソッドを呼び出す場合を除く**ref**内のパラメーター、 `ThisDocument` Word のドキュメント レベル プロジェクト内のクラス。
 
 ## <a name="example-in-excel"></a>Excel の例
  <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> メソッドには、多くの省略可能なパラメーターがあります。 次のコード例に示すように、一部のパラメーターの値を指定し、他のパラメーターには既定値を使用することができます。 この例では、`Sheet1` というワークシート クラスを持つドキュメント レベルのプロジェクトが必要です。

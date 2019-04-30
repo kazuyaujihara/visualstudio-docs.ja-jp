@@ -19,12 +19,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc6c7af3732f2f96ad53651b146898b655b68fdd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 91b438e8646a215aeed3390e87ce9c20ca923fae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441276"
 ---
 # <a name="security-page-project-designer"></a>[セキュリティ] ページ (プロジェクト デザイナー)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59647928"
  セキュリティ設定をデザイン時に有効にするかどうかを指定します。 このオプションがオフの場合は、**[セキュリティ]** ページの他のオプションもすべて無効になります。  
   
 > [!NOTE]
->  **発行**ウィザードを使用してアプリケーションを発行するときは、このオプションが自動的に有効になります。  
+> **発行**ウィザードを使用してアプリケーションを発行するときは、このオプションが自動的に有効になります。  
   
  このオプションをオンにすると、2 つのオプション ボタン **[これは完全に信頼するアプリケーションです]** と **[これは部分的に信頼するアプリケーションです]** のいずれかを選択できるようになります。  
   

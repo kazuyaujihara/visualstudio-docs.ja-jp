@@ -9,28 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310a12b51987d9a324be24757ba3346b8b0303ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 23bac93b6e5892e8a4d4680e6829240fed9a03d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443130"
 ---
 # <a name="properties-of-domain-properties"></a>ドメイン プロパティのプロパティ
-A*ドメイン プロパティ*値を保持できるモデル要素の機能です。 たとえば、`Person` ドメイン クラスに `Name` プロパティと `BirthDate` プロパティを指定することができます。 DSL 定義で、ドメイン プロパティは図のドメイン クラス ボックスと DSL エクスプローラーのドメイン クラスの下に一覧表示されます。 詳細については、[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)を参照してください。
+A*ドメイン プロパティ*値を保持できるモデル要素の機能です。 たとえば、`Person` ドメイン クラスに `Name` プロパティと `BirthDate` プロパティを指定することができます。 DSL 定義で、ドメイン プロパティは図のドメイン クラス ボックスと DSL エクスプローラーのドメイン クラスの下に一覧表示されます。 詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。
 
 > [!NOTE]
->  "プロパティ" という用語には 2 つの使用法があります。 A*ドメイン プロパティ*はドメイン クラスで定義する機能です。 DSL の多くの要素がこれに対し、*プロパティ*にリストされています、**プロパティ**DSL 定義でのウィンドウ。 たとえば、すべてのドメイン プロパティは、このトピックで説明するプロパティのセットを持っています。
+> "プロパティ" という用語には 2 つの使用法があります。 A*ドメイン プロパティ*はドメイン クラスで定義する機能です。 DSL の多くの要素がこれに対し、*プロパティ*にリストされています、**プロパティ**DSL 定義でのウィンドウ。 たとえば、すべてのドメイン プロパティは、このトピックで説明するプロパティのセットを持っています。
 
  実行時、ユーザーがドメイン クラスのインスタンスを作成すると、ドメイン プロパティの値は [プロパティ] ウィンドウ内と図形上に表示されます。
 
  ほとんどのドメイン プロパティは通常の CLR プロパティとして実装されます。 ただし、プログラミングの観点から、ドメイン プロパティには以下のように、通常プログラム プロパティより豊富な機能が含まれています。
 
-- プロパティの状態を監視する規則とイベントを定義できます。 詳細については、[への対応および変更の反映](../modeling/responding-to-and-propagating-changes.md)を参照してください。
+- プロパティの状態を監視する規則とイベントを定義できます。 詳細については、次を参照してください。[への対応および変更の反映](../modeling/responding-to-and-propagating-changes.md)します。
 
-- トランザクションは一貫性のない状態を防ぐのに役立ちます。 詳細については、[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)を参照してください。
+- トランザクションは一貫性のない状態を防ぐのに役立ちます。 詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。
 
-  図中または DSL エクスプローラー内のドメイン プロパティを選択すると、[プロパティ] ウィンドウに以下の項目が表示されます。 これらの項目を使用する方法の詳細については、[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)を参照してください。
+  図中または DSL エクスプローラー内のドメイン プロパティを選択すると、[プロパティ] ウィンドウに以下の項目が表示されます。 これらの項目を使用する方法の詳細については、次を参照してください。[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)します。
 
 |プロパティ|説明|既定値|
 |-|-|-|

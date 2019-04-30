@@ -12,12 +12,12 @@ ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 829e484ffe4968cdb89ff04e4e7f145decd07c9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b2a73dfae7772d8edec076238704aa1b52c9b028
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383437"
 ---
 # <a name="creating-a-custom-debug-engine"></a>カスタム デバッグ エンジンの作成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60111520"
 デバッグ エンジン (DE) は、特定のランタイム アーキテクチャのデバッグを許可するコンポーネントです。 通常は実行時環境ごとに 1 つだけ DE 実装です。  
   
 > [!NOTE]
->  TRANSACT-SQL および JScript 別々 の DE 実装もありますが、VBScript や JScript 単一 DE を共有します。  
+> TRANSACT-SQL および JScript 別々 の DE 実装もありますが、VBScript や JScript 単一 DE を共有します。  
   
  DE は、実行の制御やブレークポイントなど、式の評価などのデバッグ サービスを提供する、インタープリターや操作のシステムで動作します。 これらのサービスでは、DE インターフェイスを通じては実装され、デバッガーは別の操作モード間の遷移が発生することができます。 詳細については、次を参照してください。[操作モード](../../extensibility/debugger/operational-modes.md)します。  
   

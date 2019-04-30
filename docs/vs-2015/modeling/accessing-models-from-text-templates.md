@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9aaf89dd472435d5107e1a2b5870d1e6fc2b9631
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442878"
 ---
 # <a name="accessing-models-from-text-templates"></a>テキスト テンプレートからモデルへのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60110493"
 テキスト テンプレートを使用すると、レポート ファイル、ソース コード ファイル、およびその他のドメイン固有言語モデルを基にテキスト ファイルを作成できます。 テキスト テンプレートの基本については、次を参照してください。[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。 テキスト テンプレートは、DSL をデバッグするときは、実験モードで動作し、DSL が配置されているコンピューターにも機能します。  
   
 > [!NOTE]
->  DSL ソリューション、サンプル テキスト テンプレートを作成するときに **\*.tt**デバッグ プロジェクトでファイルが生成されます。 ドメイン クラスの名前を変更すると、これらのテンプレートが機能しなくなります。 それにもかかわらずが、必要な基本的なディレクティブを含めるし、DSL を一致するように更新できる例を示します。  
+> DSL ソリューション、サンプル テキスト テンプレートを作成するときに **\*.tt**デバッグ プロジェクトでファイルが生成されます。 ドメイン クラスの名前を変更すると、これらのテンプレートが機能しなくなります。 それにもかかわらずが、必要な基本的なディレクティブを含めるし、DSL を一致するように更新できる例を示します。  
   
  テキスト テンプレートからモデルにアクセスします。  
   
@@ -103,7 +103,7 @@ Here is a list of elements in the model:
 ## <a name="Multiple"></a> テキスト テンプレートから複数のモデルへのアクセス  
   
 > [!NOTE]
->  このメソッドは、同じテンプレートに複数のモデルを読み取ることができますが、ModelBus references をサポートしていません。 ModelBus 参照によって指定されたモデルを読み取り、次を参照してください。[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)します。  
+> このメソッドは、同じテンプレートに複数のモデルを読み取ることができますが、ModelBus references をサポートしていません。 ModelBus 参照によって指定されたモデルを読み取り、次を参照してください。[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)します。  
   
  同じテキスト テンプレートから複数のモデルにアクセスする場合は、各モデルの生成されたディレクティブ プロセッサに 1 回を呼び出す必要があります。 各モデルでのファイル名を指定する必要があります、`requires`パラメーター。 内のルート ドメイン クラスを使用する名前を指定する必要があります、`provides`パラメーター。 別の値を指定する必要があります、`provides`内の各ディレクティブの呼び出しのパラメーター。 たとえば、Library.xyz、School.xyz、および Work.xyz と呼ばれる 3 つのモデル ファイルがあることを想定しています。 同じテキスト テンプレートからそれらにアクセスするには、次のように 3 つのディレクティブの呼び出しを記述する必要があります。  
   
@@ -114,7 +114,7 @@ Here is a list of elements in the model:
 ```  
   
 > [!NOTE]
->  このコード例では、最小言語ソリューション テンプレートに基づいている言語です。  
+> このコード例では、最小言語ソリューション テンプレートに基づいている言語です。  
   
  テキスト テンプレートでのモデルにアクセスするには、次の例では、コードのようなコードを記述できます。  
   

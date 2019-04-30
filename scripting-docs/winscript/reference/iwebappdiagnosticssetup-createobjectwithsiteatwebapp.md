@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26403a168268e817644637544d64d4205c398b75
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 42f92cfe9245a5e3a6342c31fc996ae2db50ef70
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443701"
 ---
 # <a name="iwebappdiagnosticssetupcreateobjectwithsiteatwebapp"></a>IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
 このメソッドはクラスに渡す ID を持つ共同作成`rclsid`を使用して、`dwClsContext`します。 これは、方法に似ています[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)ことの場合を除いて、works`CreateObjectWithSiteAtWebApp`オブジェクトは、web アプリケーションの UI スレッドで非同期的に作成されます。 クラス ID で指定されたオブジェクトを実装する必要があります[IWebAppDiagnosticsObjectInitialization インターフェイス](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md)します。 オブジェクトが作成されたら、 [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) PDM デバッグ アプリケーションへの参照を使用して呼び出したと`hPassToObject`パラメーターの`CreateObjectWithSiteAtWebApp`します。 このメソッドを使用するには、匿名パイプを使用してコピーしたにハンドルをアプリに渡す[DuplicateHandle](http://go.microsoft.com/fwlink/?LinkId=232450)します。  
   
 > [!IMPORTANT]
->  [IWebAppDiagnosticsSetup インターフェイス](../../winscript/reference/iwebappdiagnosticssetup-interface.md)PDM v11.0 以降によって実装された以降には。 activdbg100.h にあります。  
+> [IWebAppDiagnosticsSetup インターフェイス](../../winscript/reference/iwebappdiagnosticssetup-interface.md)PDM v11.0 以降によって実装された以降には。 activdbg100.h にあります。  
   
 ## <a name="syntax"></a>構文  
   

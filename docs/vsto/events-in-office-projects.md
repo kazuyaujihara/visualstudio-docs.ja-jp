@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441822"
 ---
 # <a name="events-in-office-projects"></a>Office プロジェクト内のイベント
   各 Office プロジェクト テンプレートは、自動的に複数のイベント ハンドラーを生成します。 ドキュメント レベルのカスタマイズに使用するイベント ハンドラーは、VSTO アドイン用のイベント ハンドラーとは若干異なります。
@@ -82,7 +82,7 @@ ms.locfileid: "60094854"
     - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
->  ドキュメントの **Shutdown** イベント ハンドラー中にプログラムによってコントロールを削除しないでください。 **Shutdown** イベントが発生すると、ドキュメントの UI 要素は利用できなくなります。 アプリケーションが終了する前にコントロールを削除する場合は、 **BeforeClose** や **BeforeSave**などの別のイベント ハンドラーにコードを追加します。
+> ドキュメントの **Shutdown** イベント ハンドラー中にプログラムによってコントロールを削除しないでください。 **Shutdown** イベントが発生すると、ドキュメントの UI 要素は利用できなくなります。 アプリケーションが終了する前にコントロールを削除する場合は、 **BeforeClose** や **BeforeSave**などの別のイベント ハンドラーにコードを追加します。
 
 ### <a name="event-handler-method-declarations"></a>イベント ハンドラー メソッドの宣言
  イベント ハンドラー メソッドの宣言にはすべて次の同じ引数が渡されます。 *sender* と *e*です。 Excel では、 *sender* 引数は `Sheet1` や `Sheet2`などのシートを参照します。Word では、 *sender* 引数はドキュメントを参照します。 *e* 引数は、ここでは使用されませんが、イベントの標準の引数を参照します。
@@ -95,7 +95,7 @@ ms.locfileid: "60094854"
  次のコード例は、Excel のドキュメント レベルのプロジェクト内にある既定のイベント ハンドラーを示します。
 
 > [!NOTE]
->  次のコード例は、 `Sheet1` クラスのイベント ハンドラーを示します。 その他のホスト項目クラス内のイベント ハンドラーの名前は、クラス名に対応しています。 たとえば、 `Sheet2` クラスでは、 **Startup** イベント ハンドラーの名前は `Sheet2_Startup`です。 `ThisWorkbook`クラス、**スタートアップ**イベント ハンドラーの名前は`ThisWorkbook_Startup`します。
+> 次のコード例は、 `Sheet1` クラスのイベント ハンドラーを示します。 その他のホスト項目クラス内のイベント ハンドラーの名前は、クラス名に対応しています。 たとえば、 `Sheet2` クラスでは、 **Startup** イベント ハンドラーの名前は `Sheet2_Startup`です。 `ThisWorkbook`クラス、**スタートアップ**イベント ハンドラーの名前は`ThisWorkbook_Startup`します。
 
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
@@ -150,7 +150,7 @@ ms.locfileid: "60094854"
 - <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> オブジェクトの <xref:Microsoft.Office.Interop.Outlook.Explorer> イベント。
 
 > [!NOTE]
->  レジストリを変更して終了する場合、Outlook が <xref:Microsoft.Office.Tools.AddInBase.Shutdown> イベントを発生させるように強制することができます。 ただし、管理者がこの設定を元に戻す場合、 `ThisAddIn_Shutdown` メソッドに追加したコードは Outlook の終了時に実行されなくなります。 詳細については、次を参照してください。 [Outlook 2010 でのシャット ダウンの変更](http://go.microsoft.com/fwlink/?LinkID=184614)します。
+> レジストリを変更して終了する場合、Outlook が <xref:Microsoft.Office.Tools.AddInBase.Shutdown> イベントを発生させるように強制することができます。 ただし、管理者がこの設定を元に戻す場合、 `ThisAddIn_Shutdown` メソッドに追加したコードは Outlook の終了時に実行されなくなります。 詳細については、次を参照してください。 [Outlook 2010 でのシャット ダウンの変更](http://go.microsoft.com/fwlink/?LinkID=184614)します。
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューションの開発](../vsto/developing-office-solutions.md)

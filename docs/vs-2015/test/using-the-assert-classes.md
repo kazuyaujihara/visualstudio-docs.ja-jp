@@ -1,4 +1,4 @@
-﻿---
+---
 title: Assert クラスの使用 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,12 +13,12 @@ ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b44932d9c9cd1defb691527fea40c4cf39d2fe5
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 338a18bb48c20c20fa1f89583ed0d4af84c99d5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408388"
 ---
 # <a name="using-the-assert-classes"></a>Assert クラスの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ UnitTestingFramework 名前空間の Assert クラスは、特定の機能を確
  AssertInconclusiveException は、テストで "結果を作成できません" の結果が出力されるたびにスローされます。 通常、まだ編集中のテストに対して、そのテストを実行する準備ができていないことを示すために Assert.Inconclusive ステートメントを追加します。  
   
 > [!NOTE]
->  別の方法として、実行の準備が整っていないテストに Ignore 属性でマークを付けることもできます。 しかし、この方法には、まだ実装していないテストの個数に関するレポートを簡単に生成できないという短所があります。  
+> 別の方法として、実行の準備が整っていないテストに Ignore 属性でマークを付けることもできます。 しかし、この方法には、まだ実装していないテストの個数に関するレポートを簡単に生成できないという短所があります。  
   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>  
   
@@ -59,6 +59,6 @@ UnitTestingFramework 名前空間の Assert クラスは、特定の機能を確
   
  テスト メソッドを ExpectedExceptionAttribute 属性で修飾して、開発コード内のメソッドによって例外がスローされることが予期される場合に、例外が実際にそのメソッドでスローされたことを確認します。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>   
  [既存コードに対する単体テストの作成と実行](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

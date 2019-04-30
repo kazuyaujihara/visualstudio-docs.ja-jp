@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa74d6ca668203f7b13f11307ac59ef5270aac9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d598cc245421aafb05cbf91fe2b7a95e39564a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444322"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>チュートリアル: マルチ スレッド アプリケーションのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ Thread::Sleep(3000);
 2. 移動して、**デバッグの場所**ツールバーをクリックして、**スレッド**一覧。  
   
     > [!NOTE]
-    >  このツールバーは、著名な 3 つのリストで識別できます。**プロセス**、**スレッド**、および**のスタック フレーム**します。  
+    > このツールバーは、著名な 3 つのリストで識別できます。**プロセス**、**スレッド**、および**のスタック フレーム**します。  
   
 3. ボックスに表示されているスレッド数に注目します。  
   

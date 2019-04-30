@@ -11,25 +11,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7387f143a06b9bc80586b2755979212624333fa2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f9fc6bf6b096cfc5f961164abeb4703e2a18f1d2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429524"
 ---
 # <a name="vspackage-registration"></a>VSPackage の登録
 Vspackage に通知する必要があります[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]読み込めませんがインストールされ、必要があります。 このプロセスは、レジストリの情報を記述することで実施されます。 インストーラーの標準的なジョブです。
 
 > [!NOTE]
->  自己登録を使用する VSPackage 開発時に許容されるです。 ただし、[!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)]パートナーは、セットアップの一環として自己登録を使用して製品を出荷できません。
+> 自己登録を使用する VSPackage 開発時に許容されるです。 ただし、[!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)]パートナーは、セットアップの一環として自己登録を使用して製品を出荷できません。
 
- Windows インストーラー パッケージのレジストリ エントリは、レジストリの表に一般的に行われます。 レジストリの表にファイル拡張子を登録することもできます。 ただし、Windows インストーラーは、プログラム id (ProgId)、クラス、拡張機能、および動詞テーブルでの組み込みのサポートを提供します。 詳細については、[データベース テーブル](/windows/desktop/Msi/database-tables)を参照してください。
+ Windows インストーラー パッケージのレジストリ エントリは、レジストリの表に一般的に行われます。 レジストリの表にファイル拡張子を登録することもできます。 ただし、Windows インストーラーは、プログラム id (ProgId)、クラス、拡張機能、および動詞テーブルでの組み込みのサポートを提供します。 詳細については、次を参照してください。[データベース テーブル](/windows/desktop/Msi/database-tables)します。
 
  レジストリ エントリがサイド バイ サイドで選択した戦略に適切なコンポーネントに関連付けられていることを確認します。 たとえば、共有ファイルのレジストリ エントリはそのファイルの Windows インストーラー コンポーネントに関連付けられてになります。 同様に、バージョン固有のファイルのレジストリ エントリは、そのファイルのコンポーネントに関連付けられてする必要があります。 それ以外の場合、インストールまたはの 1 つのバージョンについては、VSPackage のアンインストール[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]他のバージョンで、VSPackage を中断する可能性があります。 詳細については、次を参照してください[をサポートしている複数のバージョンの Visual Studio。](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
 
 > [!NOTE]
->  登録を管理する最も簡単な方法は、開発者の登録とインストール時の登録の両方に同じファイルで同じデータを使用します。 たとえば、一部のインストーラー開発ツールでは、ビルド時に .reg 形式のファイルを使用できます。 開発者が独自の日常的な開発のための .reg ファイルを維持し、デバッグ、それらのファイルに含めることできますインストーラーに自動的にします。 場合、 登録データを自動的に共有することはできない場合は、登録データのインストーラーのコピーが最新であることを確認する必要があります。
+> 登録を管理する最も簡単な方法は、開発者の登録とインストール時の登録の両方に同じファイルで同じデータを使用します。 たとえば、一部のインストーラー開発ツールでは、ビルド時に .reg 形式のファイルを使用できます。 開発者が独自の日常的な開発のための .reg ファイルを維持し、デバッグ、それらのファイルに含めることできますインストーラーに自動的にします。 場合、 登録データを自動的に共有することはできない場合は、登録データのインストーラーのコピーが最新であることを確認する必要があります。
 
 ## <a name="registering-unmanaged-vspackages"></a>アンマネージ Vspackage の登録
  アンマネージ Vspackage を (Visual Studio パッケージ テンプレートによって生成されたものを含む) では、ATL スタイル .rgs ファイルを使用して、登録情報を格納します。 .Rgs ファイルの形式は ATL に固有ととして一般的に使用することはできません-作成ツールをインストールすることです。 VSPackage のインストーラーの登録情報を別々 に保持する必要があります。 たとえば、開発者できますファイル .reg 形式で .rgs との同期ファイルの変更を保持します。 .Reg ファイルを RegEdit 開発作業をマージまたはインストーラーによって消費されることができます。
@@ -38,7 +38,7 @@ Vspackage に通知する必要があります[!INCLUDE[vsprvs](../../code-quali
  RegPkg ツールは、マネージ VSPackage から登録属性を読み取るし、インストーラーで使用できる書き込み .reg 形式のファイル、レジストリに直接情報を書き込むことができますか。
 
 > [!NOTE]
->  RegPkg ツールは、再頒布可能パッケージでないし、ユーザーのシステム上の VSPackage の登録に使用することはできません。
+> RegPkg ツールは、再頒布可能パッケージでないし、ユーザーのシステム上の VSPackage の登録に使用することはできません。
 
 ## <a name="why-vspackages-should-not-self-register-at-install-time"></a>なぜ Vspackage は自己登録インストール時に
  VSPackage、インストーラーは、自己登録に依存する必要があります。 一見、それ自体、VSPackage でのみ VSPackage のレジストリ値を維持する方法をお勧めのように見えます。 ある開発者が日常的な仕事の使用可能なレジストリ値を必要し、テスト、理にかなってインストーラーのレジストリ データの個別のコピーを維持してください。 インストーラーは、レジストリ値を書き込んだり自体を VSPackage に利用できます。

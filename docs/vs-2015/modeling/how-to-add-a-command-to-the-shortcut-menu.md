@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7692e418c3e01b89a8dcf775350c062600351ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bcb562d89ee68320c48cc778be3294a2af5c719
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426942"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>方法: ショートカット メニューにコマンドを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60093047"
    サンプルについては、次を参照してください。、 [Visualization and Modeling SDK の web サイト](http://go.microsoft.com/fwlink/?LinkID=185579)します。  
   
 > [!NOTE]
->  [切り取り]、[貼り付け]、[すべて選択]、[印刷] など、既存の一部のコマンドの動作を変更することもできます。このためには、CommandSet.cs でメソッドをオーバーライドします。 詳細については、「[方法 :標準メニュー コマンドを修正](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)します。  
+> [切り取り]、[貼り付け]、[すべて選択]、[印刷] など、既存の一部のコマンドの動作を変更することもできます。このためには、CommandSet.cs でメソッドをオーバーライドします。 詳細については、「[方法 :標準メニュー コマンドを修正](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)します。  
   
 ## <a name="defining-a-command-using-mef"></a>MEF を使用したコマンドの定義  
  Managed Extension Framework (MEF) には、図のメニューのメニュー コマンドを定義するもう 1つの方法があります。 これは、ユーザーまたは他のユーザーが DSL を拡張できるようにすることを目的としています。 ユーザーは、DSL だけをインストールするか、または DSL と拡張機能の両方をインストールすることができます。 ただし MEF では、DSL で MEF を使用可能にする初期作業の完了後には、ショートカット メニュー コマンドの定義作業が少なくなります。  
@@ -90,7 +90,7 @@ ms.locfileid: "60093047"
     ```  
   
     > [!NOTE]
-    >  各ボタンとグループは、GUID と整数の ID によって識別されます。 同じ GUID を使用して複数のグループとボタンを作成できます。 ただし、それぞれに異なる ID が必要です。 GUID 名と ID 名は、実際の Guid と数値 Id に変換されます、`<Symbols>`ノード。  
+    > 各ボタンとグループは、GUID と整数の ID によって識別されます。 同じ GUID を使用して複数のグループとボタンを作成できます。 ただし、それぞれに異なる ID が必要です。 GUID 名と ID 名は、実際の Guid と数値 Id に変換されます、`<Symbols>`ノード。  
   
 3. ドメイン固有言語のコンテキストでのみコマンドが読み込まれるようにするため、コマンドに表示制限を追加します。 詳細については、次を参照してください。 [VisibilityConstraints 要素](../extensibility/visibilityconstraints-element.md)します。  
   
@@ -120,7 +120,7 @@ ms.locfileid: "60093047"
 5. `{000...000}` を、グループとメニュー項目を識別する GUID に置き換えます。 新しい GUID を取得するには、使用、 **GUID の作成**ツールを**ツール**メニュー。  
   
     > [!NOTE]
-    >  さらにグループやメニュー項目を追加するときには、同じ GUID を使用できます。 ただし、`IDSymbols` に新しい値を使用する必要があります。  
+    > さらにグループやメニュー項目を追加するときには、同じ GUID を使用できます。 ただし、`IDSymbols` に新しい値を使用する必要があります。  
   
 6. この手順からコピーしたコード内の、次の文字列をすべて各自固有の文字列に置き換えます。  
   
@@ -298,7 +298,7 @@ private const int cmdidMyContextMenuCommand = 1;
  同じ GUID 値を使用して、挿入した**Commands.vsct**します。  
   
 > [!NOTE]
->  VSCT ファイルの Symbols セクションを変更する場合は、これらの宣言も一致するように変更する必要があります。 Package.tt でバージョン番号を増加する必要もあります。  
+> VSCT ファイルの Symbols セクションを変更する場合は、これらの宣言も一致するように変更する必要があります。 Package.tt でバージョン番号を増加する必要もあります。  
   
  メニュー コマンドをこのコマンド セットの一部として登録します。 図が初期化されると、`GetMenuCommands()` が 1 回呼び出されます。  
   

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c264048887d3a1ba77d498784dc3e6cc4384159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440359"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>フォーム領域を Outlook メッセージ クラスに関連付ける
   Microsoft Office Outlook アイテム フォーム領域を各項目のメッセージ クラスに関連付けることによって、フォーム領域を表示するを指定することができます。 たとえば、メール アイテムの下部にフォーム領域を追加する場合は、フォーム領域を関連付けることができます、 `IPM.Note` message クラス。
@@ -45,7 +45,7 @@ ms.locfileid: "60063544"
  カスタム メッセージ クラスの名前を指定することもできます。 カスタム メッセージ クラスは、Outlook で定義したカスタムのフォームを識別します。
 
 > [!NOTE]
->  置換およびすべて置換フォーム領域では、新しいカスタム メッセージ クラス名を指定できます。 既存のカスタム フォームのメッセージ クラス名を使用する必要はありません。 カスタム メッセージ クラスの名前は一意である必要があります。 名前が一意であることを確認する方法の 1 つは、次のような名前付け規則を使用します。\<*StandardMessageClassName*>.\<*会社*>.\<*MessageClassName*> (例: `IPM.Note.Contoso.MyMessageClass`)。
+> 置換およびすべて置換フォーム領域では、新しいカスタム メッセージ クラス名を指定できます。 既存のカスタム フォームのメッセージ クラス名を使用する必要はありません。 カスタム メッセージ クラスの名前は一意である必要があります。 名前が一意であることを確認する方法の 1 つは、次のような名前付け規則を使用します。\<*StandardMessageClassName*>.\<*会社*>.\<*MessageClassName*> (例: `IPM.Note.Contoso.MyMessageClass`)。
 
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>フォーム領域を Outlook メッセージ クラスに関連付ける
  関連付けるメッセージ クラスのフォーム領域の 2 つの方法はあります。
@@ -76,7 +76,7 @@ ms.locfileid: "60063544"
   **新しい Outlook フォーム領域**をクリックすると、ウィザードは、入力の形式を検証**完了**します。
 
 > [!NOTE]
->  **新しい Outlook フォーム領域**ウィザードが提供するメッセージ クラス名は正確性や有効なことを確認していません。
+> **新しい Outlook フォーム領域**ウィザードが提供するメッセージ クラス名は正確性や有効なことを確認していません。
 
  ウィザードを完了すると、**新しい Outlook フォーム領域**ウィザードでは、指定されたメッセージ クラス名が含まれているフォーム領域クラスに属性が適用されます。 これらの属性を手動で適用することもできます。
 
@@ -101,7 +101,7 @@ ms.locfileid: "60063544"
   Visual Studio は、プロジェクトをビルドするときに、メッセージのクラス名の形式を検証します。
 
 > [!NOTE]
->  Visual Studio では、指定したメッセージ クラス名は正確性や有効なことは検証しません。
+> Visual Studio では、指定したメッセージ クラス名は正確性や有効なことは検証しません。
 
 ## <a name="see-also"></a>関連項目
 - [実行時にフォーム領域へのアクセスします。](../vsto/accessing-a-form-region-at-run-time.md)

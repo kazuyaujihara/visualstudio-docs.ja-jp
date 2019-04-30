@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8832f31724d5e688b93dcca76cce8e1a496c9ced
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40be072c9ebc518068d9f02a28507b011bec125a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446772"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>チュートリアル: 生成済みディレクティブ プロセッサをホストに接続します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60083219"
  このチュートリアルでは、テキスト テンプレート ディレクティブ プロセッサの呼び出しをサポートするように、そのカスタム ホストを展開します。 ドメイン固有言語を定義するときに生成、*ディレクティブ プロセッサ*ドメイン モデルです。 ディレクティブ プロセッサによって、ユーザー アセンブリを記述し、テンプレートのディレクティブをインポートする必要が少なくなり、モデルにアクセスするためのテンプレートを作成するために簡単にできます。  
   
 > [!WARNING]
->  このチュートリアル[チュートリアル。カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)です。 このチュートリアルを最初に実行します。  
+> このチュートリアル[チュートリアル。カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)です。 このチュートリアルを最初に実行します。  
   
  このチュートリアルでは、次のタスクについて説明します。  
   
@@ -68,7 +68,7 @@ ms.locfileid: "60083219"
 2. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
    > [!IMPORTANT]
-   >  この手順では、ディレクティブ プロセッサを生成し、レジストリでは、キーを追加します。  
+   > この手順では、ディレクティブ プロセッサを生成し、レジストリでは、キーを追加します。  
   
 3. **[デバッグ]** メニューの **[デバッグの開始]** をクリックします。  
   
@@ -120,7 +120,7 @@ ms.locfileid: "60083219"
 5. プロパティのコードを見つけます`StandardAssemblyReferences`、し、次のコードに置き換えます。  
   
     > [!NOTE]
-    >  この手順では、生成されたディレクティブ プロセッサ ホストをサポートするに必要なアセンブリへの参照を追加します。  
+    > この手順では、生成されたディレクティブ プロセッサ ホストをサポートするに必要なアセンブリへの参照を追加します。  
   
     ```csharp  
     //the host can provide standard assembly references  
@@ -156,7 +156,7 @@ ms.locfileid: "60083219"
 6. 関数のコードを見つけます`ResolveDirectiveProcessor`、し、次のコードに置き換えます。  
   
     > [!IMPORTANT]
-    >  このコードには、接続する生成されたディレクティブ プロセッサの名前にハード コーディングされた参照が含まれています。 行うことができます簡単にこれより一般的なすべてのディレクティブ プロセッサを探す場合、レジストリに一覧表示し一致するものを見つけようとします。 その場合は、ホストは、生成されたディレクティブ プロセッサを行います。  
+    > このコードには、接続する生成されたディレクティブ プロセッサの名前にハード コーディングされた参照が含まれています。 行うことができます簡単にこれより一般的なすべてのディレクティブ プロセッサを探す場合、レジストリに一覧表示し一致するものを見つけようとします。 その場合は、ホストは、生成されたディレクティブ プロセッサを行います。  
   
     ```csharp  
     //the engine calls this method based on the directives the user has   
@@ -241,7 +241,7 @@ ms.locfileid: "60083219"
 2. 次の内容をテキスト ファイルに追加します。  
   
     > [!NOTE]
-    >  テキスト テンプレートのプログラミング言語は、カスタム ホストと一致する必要はありません。  
+    > テキスト テンプレートのプログラミング言語は、カスタム ホストと一致する必要はありません。  
   
     ```csharp  
     Text Template Host Test  
@@ -325,7 +325,7 @@ ms.locfileid: "60083219"
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  アドレスを入力する代わりに CustomHost.exe ファイルを参照できますで**Windows エクスプ ローラー**、コマンド プロンプト ウィンドウにファイルをドラッグします。  
+    > アドレスを入力する代わりに CustomHost.exe ファイルを参照できますで**Windows エクスプ ローラー**、コマンド プロンプト ウィンドウにファイルをドラッグします。  
   
 3. 空白を入力します。  
   
@@ -336,7 +336,7 @@ ms.locfileid: "60083219"
      `<YOUR PATH>TestTemplateWithDP.txt`  
   
     > [!NOTE]
-    >  アドレスを入力する代わりに TestTemplateWithDP.txt ファイルを参照できますで**Windows エクスプ ローラー**、コマンド プロンプト ウィンドウにファイルをドラッグします。  
+    > アドレスを入力する代わりに TestTemplateWithDP.txt ファイルを参照できますで**Windows エクスプ ローラー**、コマンド プロンプト ウィンドウにファイルをドラッグします。  
   
      カスタム ホスト アプリケーションが実行され、テキスト テンプレート変換プロセスを開始します。  
   

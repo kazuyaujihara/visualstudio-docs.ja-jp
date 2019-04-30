@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca0c160cb9a1cb6f76f64293db7858c0609d2d5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46fa903b0025279fec3b33d3c14ce1661d076926
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438670"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>チュートリアル: Visual Basic プロジェクトでコードを VBA から呼び出す
   このチュートリアルでは、ドキュメント内の Visual Basic for Applications (VBA) コードから Microsoft Office Word 用のドキュメント レベルのカスタマイズ内のメソッドを呼び出す方法を示します。 このプロシージャには次の 3 つの基本的な手順が含まれます。 `ThisDocument` ホスト項目クラスにメソッドを追加する、VBA コードにメソッドを公開する、および、ドキュメント内の VBA コードからメソッドを呼び出す、の 3 つです。
@@ -46,7 +46,7 @@ ms.locfileid: "60069979"
 - VBA コードからメソッドを呼び出す。
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
@@ -69,7 +69,7 @@ ms.locfileid: "60069979"
 3. リボンの **[開発]** タブをクリックします。
 
     > [!NOTE]
-    >  **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
+    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
 
 4. **[コード]** グループの **[Visual Basic]** をクリックします。
 
@@ -180,7 +180,7 @@ ms.locfileid: "60069979"
  これで、ドキュメント内の VBA コードから `CreateTable` メソッドを呼び出せます。
 
 > [!NOTE]
->  このチュートリアルでは、プロジェクトのデバッグ中に VBA コードをドキュメントに追加します。 Visual Studio はビルド出力フォルダー内のドキュメントをメイン プロジェクト フォルダーからのドキュメントのコピーで置き換えるので、このドキュメントに追加したすべての VBA コードは次にプロジェクトをビルドすると上書きされます。 VBA コードを保存したい場合は、プロジェクト フォルダー内のドキュメントにコピーします。 詳細については、次を参照してください。[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)します。
+> このチュートリアルでは、プロジェクトのデバッグ中に VBA コードをドキュメントに追加します。 Visual Studio はビルド出力フォルダー内のドキュメントをメイン プロジェクト フォルダーからのドキュメントのコピーで置き換えるので、このドキュメントに追加したすべての VBA コードは次にプロジェクトをビルドすると上書きされます。 VBA コードを保存したい場合は、プロジェクト フォルダー内のドキュメントにコピーします。 詳細については、次を参照してください。[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)します。
 
 ### <a name="to-call-the-method-from-vba-code"></a>VBA コードからメソッドを呼び出すには
 

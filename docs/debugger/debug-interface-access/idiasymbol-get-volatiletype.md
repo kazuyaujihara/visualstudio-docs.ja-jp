@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6ccafc8a0d30558f61bc869d8cfc8280c04723e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: cef843a2e214dbf66107a5ac7462ae6a2672fafe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400597"
 ---
 # <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
 ユーザー定義データ型 (UDT) が揮発性かどうかを指定するフラグを取得します。
@@ -39,9 +39,9 @@ HRESULT get_volatileType ( 
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
 
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
+> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  C++ で UDT をマークすることができます、`volatile`キーワード、その内容を次 1 つのアクセスからが存在する想定できないことを示します。
 
 ## <a name="see-also"></a>関連項目

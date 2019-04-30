@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18ea294c204f1512aaa3eeae904eed52edf8e9f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b490b379df401f4eb0c680524be8bac91dee410
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437020"
 ---
 # <a name="configure-service-reference-dialog-box"></a>[サービス参照の構成] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60114146"
 **サービス参照の構成**ダイアログ ボックスでは、動作を構成できます。[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]サービス。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
  **[サービス参照の構成]** ダイアログ ボックスにアクセスするには、**ソリューション エクスプローラー**でサービス参照を右クリックし、**[サービス参照の構成]** を選択します。 **[サービス参照の追加] ダイアログ ボックス**で **[詳細]** ボタンをクリックしてダイアログ ボックスにアクセスすることもできます。  
   
@@ -51,13 +51,13 @@ ms.locfileid: "60114146"
  サービス参照がサービスを検索する Web アドレスを更新するために使用されます。 たとえば、開発中のサービスは開発サーバーでホストされ、その後、運用サーバーに移されることがあり、アドレスの変更が必要になります。  
   
 > [!NOTE]
->  Address 要素は、**[サービス参照の構成]** ダイアログ ボックスが **[サービス参照の追加] ダイアログ ボックス**から表示された場合は使用できません。  
+> Address 要素は、**[サービス参照の構成]** ダイアログ ボックスが **[サービス参照の追加] ダイアログ ボックス**から表示された場合は使用できません。  
   
  **[生成されたクラスのアクセス レベル]**  
  WCF クライアント クラスのコード アクセス レベルを特定します。  
   
 > [!NOTE]
->  Web サイト プロジェクトの場合、このオプションは常に `Public` に設定され、変更できません。 詳細については、次を参照してください。[サービス参照のトラブルシューティング](../data-tools/troubleshooting-service-references.md)します。  
+> Web サイト プロジェクトの場合、このオプションは常に `Public` に設定され、変更できません。 詳細については、次を参照してください。[サービス参照のトラブルシューティング](../data-tools/troubleshooting-service-references.md)します。  
   
  **[非同期操作を生成する]**  
  WCF サービス メソッドの呼び出しが同期 (既定) または非同期のどちらであるかを指定します。  
@@ -90,10 +90,10 @@ ms.locfileid: "60114146"
  表示、 [NIB:Web 参照 ダイアログ ボックスを追加](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)します。  
   
 > [!NOTE]
->  このオプションは、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のバージョン 2.0 を対象にするプロジェクトでのみ使用する必要があります。  
+> このオプションは、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のバージョン 2.0 を対象にするプロジェクトでのみ使用する必要があります。  
   
 > [!NOTE]
->  **Web 参照の追加**ボタンが使用可能な場合にのみ、**サービス参照の構成**からダイアログ ボックスが表示されます、**サービス参照の追加 ダイアログ ボックス**します。  
+> **Web 参照の追加**ボタンが使用可能な場合にのみ、**サービス参照の構成**からダイアログ ボックスが表示されます、**サービス参照の追加 ダイアログ ボックス**します。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: 追加、更新、またはサービス参照の削除](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
