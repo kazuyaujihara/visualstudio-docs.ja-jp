@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7387f2bc55d00695e85df3b023914e8d6fe9696d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: afee2c56a7f29d50f46c7cbb734bc0297223845c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446687"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ VsPerfCLREnv [/option]
  選択するオプションは、プロファイルの 3 つの種類 (サンプリング、インストルメンテーション、グローバル) のうち、どれを使用するかによって異なります。 プロファイル データに階層相互作用データを含めるには、別のオプションが必要です。 各オプションの構文については、以下の表で説明します。  
   
 > [!NOTE]
->  プロファイルが完了したら、**/off** オプションまたは **/globaloff** オプションを指定して **VSPerfCLREnv** を実行し、プロファイルに必要な環境変数を削除します。 詳細については、以下で示される「環境設定を削除するための VSPerfCLREnv オプション」を参照してください。  
+> プロファイルが完了したら、**/off** オプションまたは **/globaloff** オプションを指定して **VSPerfCLREnv** を実行し、プロファイルに必要な環境変数を削除します。 詳細については、以下で示される「環境設定を削除するための VSPerfCLREnv オプション」を参照してください。  
   
  **階層相互作用データを含めるための VSPerfCLREnv オプション**  
   
 > [!WARNING]
->  階層相互作用プロファイル データは、[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、または [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] を使用して収集できます。 ただし、階層相互作用プロファイル データを表示できるのは、 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] および [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]のみです。  
+> 階層相互作用プロファイル データは、[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、または [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] を使用して収集できます。 ただし、階層相互作用プロファイル データを表示できるのは、 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] および [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]のみです。  
   
  階層相互作用のプロファイルでは、多階層アプリケーションの ADO.NET クエリに関する追加情報が提供されます。 データは同期の関数呼び出しについてのみ収集されます。 相互作用データは、プロファイル方法に関係なく、どのプロファイルの実行にも追加できます。  
   

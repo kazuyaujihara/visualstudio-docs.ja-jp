@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3218a12add86739c76cd50f82fdda5d845e2b069
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978768"
 ---
 # <a name="threading-support-in-office"></a>スレッドの Office でのサポート
   この記事では、Microsoft Office オブジェクト モデルのスレッド処理のサポートについての詳細についての情報を提供します。 Office オブジェクト モデルは、スレッド セーフではありませんが、Office ソリューションで複数のスレッドを使用することは。 Office アプリケーションは、コンポーネント オブジェクト モデル (COM) サーバーです。 COM は、任意のスレッド上の COM サーバーを呼び出すクライアントを許可します。 COM サーバーのスレッド セーフではない場合は、COM は、1 つの論理スレッドがいつでも、サーバーで実行できるように、同時呼び出しをシリアル化するためのメカニズムを提供します。 このメカニズムは、シングル スレッド アパートメント (STA) モデルと呼ばれます。 呼び出しはシリアル化するため、サーバーがビジー状態またはバック グラウンド スレッドでその他の呼び出しが処理中に呼び出し元は時間にわたってブロック可能性があります。
@@ -66,7 +66,7 @@ ms.locfileid: "56620331"
  [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
  [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]
 
- 詳細については、[マネージ スレッド処理のベスト プラクティス](/dotnet/standard/threading/managed-threading-best-practices)を参照してください。
+ 詳細については、次を参照してください。[マネージ スレッド処理のベスト プラクティス](/dotnet/standard/threading/managed-threading-best-practices)します。
 
 ## <a name="modeless-forms"></a>モードレス フォーム
  モードレス フォームでは、フォームが表示されている間に何らかの種類のアプリケーションとの対話ができます。 ユーザーが、フォームとやり取りし、フォームが閉じることがなくアプリケーションを操作します。 Office オブジェクト モデルには、管理対象のモードレス フォーム; がサポートされていますただしが使用できない場合がバック グラウンド スレッドでします。

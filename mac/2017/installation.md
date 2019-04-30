@@ -7,18 +7,22 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 1a3d95176af41bbf7803144995888b12abeeea3a
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998087"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Visual Studio 2017 for Mac をインストールする
 
 > [!NOTE]
-> Visual Studio 2019 for Mac が[利用できるように](installation.md?view=vsmac-2019)なりました。
+> Visual Studio 2019 for Mac が[利用できるように](installation.md?view=vsmac-2019)なりました。 以前のバージョンの Visual Studio for Mac については、Visual Studio の[ダウンロード ページ](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)を参照してください。
 
+## <a name="downgrading-from-visual-studio-2019-for-mac"></a>Visual Studio 2019 for Mac からダウンロードするには
+
+最適なエクスペリエンスのためには、ダウングレードする前に Visual Studio 2019 for Mac を[アンインストール](uninstall.md)してください。 ダウンロードの原因となる問題がある場合は、[問題を報告](report-a-problem.md)してお知らせください。
+ 
 ## <a name="requirements"></a>要件
 
 ネイティブのクロスプラットフォーム アプリの開発を始めるには、Visual Studio for Mac をダウンロードするときに、インストールして準備時にセットアップする必要があるものがいくつかあります。
@@ -31,7 +35,7 @@ Visual Studio で iOS を使用するには、以下が必要です。
 
 ## <a name="install"></a>インストール
 
-1. [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/) から Visual Studio for Mac をダウンロードします
+1. Visual Studio for Mac を [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac) からダウンロードします
 
 2. インストーラー パッケージをダウンロードしたら、**VisualStudioForMacInstaller.dmg** ファイルをクリックしてインストーラーをマウントし、次の図のようにロゴをダブルクリックして実行します。
 

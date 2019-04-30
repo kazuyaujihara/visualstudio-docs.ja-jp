@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3e89caded1b7388b79ea3232dc0a2809dc7b8222
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943470"
 ---
 # <a name="flowchart-activity-designer"></a>フローチャート アクティビティ デザイナー
 <xref:System.Activities.Statements.Flowchart> アクティビティは、複雑なフロー制御を定義および管理するワークフローを作成するために使用します。 <xref:System.Activities.Statements.Flowchart> は、コードで、または[!INCLUDE[wfd2](../includes/wfd2-md.md)]を使用して作成できます。 ここでは、[!INCLUDE[wfd2](../includes/wfd2-md.md)]を使用する方法を説明します。 [!INCLUDE[wfd1](../includes/wfd1-md.md)]のワークフロー アクティビティ デザイナーを使用すると、開発者はワークフローを自然な形で作成できます。  

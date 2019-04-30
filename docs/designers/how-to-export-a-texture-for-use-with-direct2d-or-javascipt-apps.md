@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4aa53efb690faa0d31a35b9b19d0d5ee9781352
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844385"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>方法: Direct2D または Javascipt アプリで使用するためのテクスチャをエクスポートする
 
@@ -21,31 +21,31 @@ ms.locfileid: "55940009"
 
 このドキュメントでは、以下のアクティビティについて説明します。
 
--   イメージ コンテンツ パイプラインによって処理されるようにソース イメージを構成する。
+- イメージ コンテンツ パイプラインによって処理されるようにソース イメージを構成する。
 
--   Direct2D または JavaScript アプリで使用できるテクスチャを生成するようにイメージ コンテンツ パイプラインを構成する。
+- Direct2D または JavaScript アプリで使用できるテクスチャを生成するようにイメージ コンテンツ パイプラインを構成する。
 
-    -   ブロック圧縮形式の *.dds* ファイルを生成する。
+    - ブロック圧縮形式の *.dds* ファイルを生成する。
 
-    -   前乗算されたアルファを生成する。
+    - 前乗算されたアルファを生成する。
 
-    -   MIPMAP の生成を無効にする。
+    - MIPMAP の生成を無効にする。
 
 ## <a name="rendering-conventions-in-direct2d"></a>Direct2D のレンダリング規則
 
 Direct2D のコンテキストで使用するテクスチャは、次に示す Direct2D の内部レンダリング規則に準拠している必要があります。
 
--   Direct2D では、前乗算されたアルファを使用することで透明性と透光性を実現します。 Direct2D と組み合わせて使用するテクスチャには、前乗算されたアルファが含まれている必要があります。この要件は、テクスチャで透明性または透光性を使用しない場合でも同様です。 前乗算されたアルファの詳細については、「[方法: 前乗算されたアルファを持つテクスチャをエクスポートする](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)」を参照してください。
+- Direct2D では、前乗算されたアルファを使用することで透明性と透光性を実現します。 Direct2D と組み合わせて使用するテクスチャには、前乗算されたアルファが含まれている必要があります。この要件は、テクスチャで透明性または透光性を使用しない場合でも同様です。 前乗算されたアルファの詳細については、「[方法: 前乗算されたアルファを持つテクスチャをエクスポートする](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)」を参照してください。
 
--   テクスチャは次のいずれかのブロック圧縮形式の *.dds* ファイルで提供する必要があります。
+- テクスチャは次のいずれかのブロック圧縮形式の *.dds* ファイルで提供する必要があります。
 
-    -   BC1_UNORM 圧縮
+    - BC1_UNORM 圧縮
 
-    -   BC2_UNORM 圧縮
+    - BC2_UNORM 圧縮
 
-    -   BC3_UNORM 圧縮
+    - BC3_UNORM 圧縮
 
--   MIPMAP はサポートされていません。
+- MIPMAP はサポートされていません。
 
 ### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Direct2D のレンダリング規則に準拠したテクスチャを作成するには
 

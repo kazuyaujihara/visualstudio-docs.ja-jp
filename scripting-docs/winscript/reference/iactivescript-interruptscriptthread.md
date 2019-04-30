@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: aa46bc95087b3defaf739cc3473c58e29a93071c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935509"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
 実行中のスクリプト スレッド (イベント シンク、即時実行の場合、またはマクロの呼び出し) の実行を中断します。 (たとえば、無限ループ) でスタックしているスクリプトを終了するのには、このメソッドを使用できます。 ホスト オブジェクトまたはベース以外の吹き出しでベース以外のスレッドから呼び出すことが、 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)メソッド。  

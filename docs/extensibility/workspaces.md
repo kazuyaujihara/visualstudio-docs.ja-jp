@@ -8,11 +8,11 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952764"
 ---
 # <a name="workspaces"></a>ワークスペース
 
@@ -47,7 +47,7 @@ Dispose が非同期に呼び出す必要があります、ワークスペース
 
 ## <a name="workspace-settings"></a>ワークスペースの設定
 
-ワークスペースが、<xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager>をワークスペースに単純ながらも強力な制御サービス。 設定の基本的な概要については、[ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)を参照してください。
+ワークスペースが、<xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager>をワークスペースに単純ながらも強力な制御サービス。 設定の基本的な概要については、次を参照してください。[ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)します。
 
 ほとんどの設定`SettingsType`型は _.json_ファイルなど、 _VSWorkspaceSettings.json_と_tasks.vs.json_します。
 

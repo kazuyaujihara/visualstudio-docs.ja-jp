@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b464fd4e8c1748adf50e9997dbbac553288043da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414283"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>チュートリアル: 操作ウィンドウから文書にテキストを挿入します。
   このチュートリアルでは、Microsoft Office Word ドキュメントで、[操作] ウィンドウを作成する方法を示します。 [操作] ウィンドウには、入力を収集し、文書にテキストを送信する 2 つのコントロールが含まれています。
@@ -34,7 +34,7 @@ ms.locfileid: "60088523"
 - アプリケーションを開いたときに、操作ウィンドウを表示します。
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
@@ -78,7 +78,7 @@ ms.locfileid: "60088523"
 2. 単語を選択する**名前**、せず、段落記号を選択し、をクリックして**OK**。
 
     > [!NOTE]
-    >  外部ブックマーク、段落記号があります。 段落記号がドキュメントに表示されていない場合は、クリックして、**ツール**メニューで、 **Microsoft Office Word Tools**順にクリックします**オプション**します。 をクリックして、**ビュー**タブをクリックし、選択、**段落記号** チェック ボックス、**記号**のセクション、**オプション** ダイアログ ボックス。
+    > 外部ブックマーク、段落記号があります。 段落記号がドキュメントに表示されていない場合は、クリックして、**ツール**メニューで、 **Microsoft Office Word Tools**順にクリックします**オプション**します。 をクリックして、**ビュー**タブをクリックし、選択、**段落記号** チェック ボックス、**記号**のセクション、**オプション** ダイアログ ボックス。
 
 3. **プロパティ**ウィンドウで、変更、**名前**プロパティの**Bookmark1**に**次に、この**します。
 

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 127bb322a9dd5c841f71a5da49b0d9a6fceaf5e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559841"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036:比較可能な型でメソッドをオーバーライドします
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "58975008"
 
 - op_GreaterThan
 
-  これらの演算子を表すために使用されるトークンは次のように、C# で: = =、! =、 \<、および >。
+  これらの演算子を表すために使用されるトークンは次のように、c# で: = =、! =、 \<、および >。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  演算子がないために違反が発生し、プログラミング言語が演算子のオーバー ロードをサポートしていない Visual Basic .NET を使用した場合と同様、この規則による警告を抑制しても安全になります。 Op_Equality 演算子を実装するいると判断した場合は、アプリケーションのコンテキストで意味を成しません以外の等値演算子を発生させるときにこの規則からの警告を抑制しても安全です。 ただしは常に op_Equality 経由で、Object.Equals をオーバーライドする場合は、演算子を = =。

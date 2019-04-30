@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a5c6f44124ff49982d3821b1441eacf8dec7a666
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006993"
 ---
 # <a name="label-redefined"></a>ラベルが再定義されました
 新しいラベルを作成することは、既存のラベルの名前を付けます。 コード ブロックをマークするラベルを使用できますが、指定されたスコープ内で、一意でなければなりません。  

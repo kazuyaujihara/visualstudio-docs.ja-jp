@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825044"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>チュートリアル: コードの欠陥のマネージ コードの分析
 
@@ -29,7 +29,7 @@ ms.locfileid: "55952842"
 
 1. **[ファイル]** メニューで、**[新規]** > **[プロジェクト]** の順に選択します。
 
-1. **新しいプロジェクト** ダイアログ ボックスで、展開**インストール済み** > **Visual C#** を選び、 **Windows デスクトップ**します。
+1. **新しいプロジェクト** ダイアログ ボックスで、展開**インストール済み** > **Visual c#** を選び、 **Windows デスクトップ**します。
 
 1. 選択、**クラス ライブラリ (.NET Framework)** テンプレート。
 

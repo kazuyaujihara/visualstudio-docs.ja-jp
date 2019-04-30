@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211e9ca6e5b30d2a2b88f03430090c155ef7627a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794091"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig で移植可能なカスタム エディター設定を作成する
 
@@ -25,7 +25,7 @@ Visual Studio のプロジェクトに EditorConfig ファイルを追加する�
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、[Visual Studio for Mac の EditorConfig](/visualstudio/mac/editorconfig) に関するページを参照してください。
 
-## <a name="coding-consistency"></a>コーディングの一貫性
+## <a name="code-consistency"></a>コードの整合性
 
 EditorConfig ファイルの設定を利用すれば、使用するエディターや IDE に関係なく、コードベースでコーディングのスタイルと設定の一貫性を維持できます。たとえば、インデントのスタイル、タブの幅、行末文字、エンコードなどです。 たとえば、C# でコーディングするとき、インデントを常に 5 つ分の空白文字で構成し、文書で UTF-8 エンコードを使用し、各行が常に CR/LF で終わるというという慣習をコードベースに与えるのであれば、そのように *.editorconfig* ファイルを構成できます。
 
@@ -51,7 +51,7 @@ Visual Studio のエディターは、[EditorConfig プロパティ](http://edit
 
 EditorConfig エディター設定は、XML を除き、Visual Studio 対応のすべての言語でサポートされています。 また、EditorConfig では、C# および Visual Basic の[コード スタイル](../ide/editorconfig-code-style-settings-reference.md)と[名前付け](../ide/editorconfig-naming-conventions.md)規則がサポートされます。
 
-## <a name="adding-and-removing-editorconfig-files"></a>EditorConfig ファイルの追加と削除
+## <a name="add-and-remove-editorconfig-files"></a>EditorConfig ファイルの追加と削除
 
 EditorConfig ファイルをプロジェクトまたはコードベースに追加しても既存のスタイルが新しいスタイルに変換されることはありません。 たとえば、タブで書式設定されているインデントがファイル内にあり、スペースでインデントする EditorConfig ファイルを追加する場合、インデント文字は自動的にスペースに変換されません。 ただし、新しいコード行はすべて、EditorConfig ファイルに従って書式設定されます。 さらに、ドキュメントの書式を設定すると (**[編集]** > **[詳細設定]** > **[ドキュメントのフォーマット]**、または **Ctrl**+**K**、**Ctrl**+**D**)、EditorConfig ファイルの設定が既存のコード行に適用されます。
 
@@ -94,7 +94,7 @@ EditorConfig ファイルをプロジェクトに追加する方法は、他に�
 
 - [IntelliCode 拡張機能](/visualstudio/intellicode/intellicode-visual-studio)をお試しください。 この実験的な拡張機能では、ユーザーのコード スタイルが既存のコードから推測され、既に定義したコード スタイルの設定を使用して空でない *.editorconfig* ファイルが作成されます。
 
-## <a name="override-editorconfig-settings"></a>EditorConfig 設定をオーバーライドする
+## <a name="file-hierarchy-and-precedence"></a>ファイルの階層と優先順位
 
 ファイル階層のフォルダーに *.editorconfig* ファイルを追加すると、その設定がその階層レベルとその下のレベルのあらゆる該当ファイルに適用されます。 また、特定のプロジェクトやコードベースの EditorConfig 設定をオーバーライドしたり、コードベースの一部の EditorConfig 設定をオーバーライドして、コードベースの他の部分とは異なる規則を使用するようにしたりできます。 これは、別の場所からコードを組み込んで、その規則を変更したくない場合に役立ちます。
 
@@ -109,9 +109,9 @@ EditorConfig ファイルをプロジェクトに追加する方法は、他に�
 root = true
 ```
 
-EditorConfig ファイルは上から下に読み取られ、最も近い EditorConfig ファイルが最後に読み取られます。 一致する EditorConfig セクションからの規則は、より近いファイルの規則が優先されるように、読み取られた順序で適用されます。
+EditorConfig ファイルは上から下に読み取られます。 同じ名前のプロパティが複数ある場合は、その名前の最も最近見つかったプロパティが優先されます。
 
-## <a name="editing-editorconfig-files"></a>EditorConfig ファイルの編集
+## <a name="edit-editorconfig-files"></a>EditorConfig ファイルの編集
 
 Visual Studio では、*.editorconfig* ファイルを編集しやすいように、IntelliSense の入力候補一覧が提供されます。
 
@@ -148,7 +148,7 @@ indent_style = tab
 
 ![Tab キーでタブ文字が追加されます](../ide/media/vside_editorconfig_tab.png)
 
-## <a name="troubleshooting-editorconfig-settings"></a>EditorConfig 設定のトラブルシューティング
+## <a name="troubleshoot-editorconfig-settings"></a>EditorConfig 設定のトラブルシューティング
 
 EditorConfig ファイルがディレクトリ構造内でプロジェクトの場所と同じか上位にある場合、Visual Studio はそのファイル内のエディター設定をエディターに適用します。 この場合、ステータス バーに次のメッセージが表示される場合があります。
 

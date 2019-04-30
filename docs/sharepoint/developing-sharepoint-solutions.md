@@ -16,14 +16,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6639a52eb71d7cd826a1882e6e79cf124f2045d6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967568"
 ---
 # <a name="develop-sharepoint-solutions"></a>SharePoint ソリューションを開発します。
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、SharePoint サイトおよびサイト要素を作成するための SharePoint プロジェクトの種類のテンプレートがいくつか用意されています。 使用可能なプロジェクトの種類の一覧は、[SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)を参照してください。 次に、SharePoint プロジェクトの要素およびプロパティについて説明します。
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、SharePoint サイトおよびサイト要素を作成するための SharePoint プロジェクトの種類のテンプレートがいくつか用意されています。 使用可能なプロジェクトの種類の一覧は、次を参照してください。 [SharePoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)します。 次に、SharePoint プロジェクトの要素およびプロパティについて説明します。
 
  SharePoint 2013 アドインと SharePoint アドインについては、「 [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) 」および「 [SharePoint アドインの作成](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)」を参照してください。
 
@@ -52,7 +52,7 @@ ms.locfileid: "57870429"
 #### <a name="package-node"></a>[パッケージ] ノード
  **[Package]** ノードには、SharePoint プロジェクトの配布メカニズムとして機能するファイルが 1 つだけ含まれています。 呼ばれる、このファイルを*ソリューション パッケージ*、です。CAB に基づくと、します。WSP 拡張機能。 ソリューション パッケージは、SharePoint サイトに適用される一連のフィーチャー、サイト定義、およびアセンブリを含んでいる配置可能で再利用可能なファイルであり、これは個別に有効または無効にできます。 **[Package]** ノードには、パッケージの [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 定義ファイルである Package.wspdef というファイルも必ず含まれています。 SharePoint を実行しているサーバーにパッケージが配置されると、SharePoint 管理者はそのパッケージをインストールしてフィーチャーをアクティブにできます。
 
- 表示したり、パッケージ デザイナーでパッケージの内容の変更を [パッケージ] ノードをダブルクリックするか、ショートカット メニューを選択し、**オープン**します。 詳細については、[作成 SharePoint ソリューション パッケージ](../sharepoint/creating-sharepoint-solution-packages.md)を参照してください。
+ 表示したり、パッケージ デザイナーでパッケージの内容の変更を [パッケージ] ノードをダブルクリックするか、ショートカット メニューを選択し、**オープン**します。 詳細については、次を参照してください。[作成 SharePoint ソリューション パッケージ](../sharepoint/creating-sharepoint-solution-packages.md)します。
 
 ## <a name="sharepoint-project-and-project-item-properties"></a>SharePoint プロジェクトとプロジェクト項目のプロパティ
  SharePoint プロジェクトでは、他の [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] プロジェクトと同様、[プロパティ] ウィンドウおよび [プロパティ] ページにプロパティが表示されます。 表示されるプロパティは、選択したノードによって異なります。
@@ -99,7 +99,7 @@ ms.locfileid: "57870429"
 |カスタム ツール|デザイン時にファイルを変換し、変換の結果を別のファイルに出力するツールが存在する場合に、そのツールの名前を指定します。 たとえば、データセット (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) ファイルでは既定のカスタム ツールを使用できます。 詳細については、「 [ファイルのプロパティ](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))」を参照してください。|
 |カスタム ツールの名前空間|カスタム ツールの出力がコピーされる名前空間です。 詳細については、「 [ファイルのプロパティ](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))」を参照してください。|
 |配置場所|SharePoint サーバー上のファイルの完全修飾パス。 このパスは、[配置ルート] プロパティと [配置パス] プロパティで構成されます。|
-|配置パス|Workflow1 など、SharePoint サーバー ファイル上のファイルの相対パス\\します。 ファイルの完全修飾パスは、 *Deployment Path* 値の末尾に *Deployment Root* 値を連結することによって作成されます。<br /><br /> 値を選択する*RootFile*の*展開の種類*プロパティの変更、 *Deployment Root*プロパティを\<{sharepointroot} >\\の完全修飾パスで結果として得られる、 \<{sharepointroot} > \Workflow1\\します。 詳細については、[パッケージ化と SharePoint ソリューションの配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)を参照してください。|
+|配置パス|Workflow1 など、SharePoint サーバー ファイル上のファイルの相対パス\\します。 ファイルの完全修飾パスは、 *Deployment Path* 値の末尾に *Deployment Root* 値を連結することによって作成されます。<br /><br /> 値を選択する*RootFile*の*展開の種類*プロパティの変更、 *Deployment Root*プロパティを\<{sharepointroot} >\\の完全修飾パスで結果として得られる、 \<{sharepointroot} > \Workflow1\\します。 詳細については、次を参照してください。[パッケージ化と SharePoint ソリューションの配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)します。|
 |Deployment Root|文字列。 ファイルの配置先となる SharePoint Server 上のルート フォルダーです たとえば、 \<{sharepointroot} > \Template\Features\\\<FeatureName >\\します。<br /><br /> *Deployment Root* プロパティの値は、 *Deployment Type* の設定に依存します。|
 |Deployment Type|ファイルの配置の種類です。 *Deployment Root* 値に依存します。 次のいずれかの値になります。<br /><br /> NoDeployment: *\<値なし >*<br /><br /> ElementManifest:*\<SharePointRoot>\Template\Features\\\<FeatureName>*\\<br /><br /> ElementFile:*\<SharePointRoot>\Template\Features\\\<FeatureName>\\*<br /><br /> TemplateFile:*\<SharePointRoot>\Template\\*<br /><br /> RootFile:*\<SharePointRoot>\\*<br /><br /> GlobalResource:*\<SharePointRoot>\Resources\\*<br /><br /> ClassResource:*\<ClassResourcePath>\\*<br /><br /> 詳細については、「 <xref:Microsoft.VisualStudio.SharePoint.DeploymentType> 」を参照してください。|
 |ファイル名|項目ファイルの名前またはフォルダーの名前です。|

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9953190220acf572ac04b18e9018c1d45a3b2c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 59b8ed5c74d998b47ff4a187b420695eab5be035
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807721"
 ---
 # <a name="xml-document-validation"></a>XML ドキュメントの検証
 
@@ -21,21 +21,21 @@ XML エディターでは、XML 1.0 構文をチェックし、入力時にも�
 
  検証で使用されるスキーマの検索は、コンパイル済みのスキーマの `targetNamespace` と、要素の xmlns 宣言とを照合して行われます。 コンパイル済みのスキーマが読み込まれる場所を、優先度の高い順に次に示します。
 
--   指定されたファイル名から、**スキーマ**ドキュメントのフィールド**プロパティ**ウィンドウ。
+- 指定されたファイル名から、**スキーマ**ドキュメントのフィールド**プロパティ**ウィンドウ。
 
--   インラインのスキーマまたは DTD。
+- インラインのスキーマまたは DTD。
 
--   外部 DTD または `xsd:schemaLocation` および `xsd:noNamespaceSchemaLocation` 属性。
+- 外部 DTD または `xsd:schemaLocation` および `xsd:noNamespaceSchemaLocation` 属性。
 
--   "x-schema" XDR スキーマ名前空間 URI。
+- "x-schema" XDR スキーマ名前空間 URI。
 
 スキーマに空でない対象名前空間がある場合は、次に示す場所でスキーマが検索されることもあります。
 
--   スキーマを含む他のエディター ウィンドウ。
+- スキーマを含む他のエディター ウィンドウ。
 
--   現在のソリューション内にあるスキーマ。
+- 現在のソリューション内にあるスキーマ。
 
--   スキーマ キャッシュ ディレクトリ内にあるスキーマ。
+- スキーマ キャッシュ ディレクトリ内にあるスキーマ。
 
 ## <a name="xslt-files"></a>XSLT ファイル
  XSLT ファイルを編集するときに、*置かれている xslt.xsd*スキーマ キャッシュ内にファイルが検証に使用されます。 検証エラーは、青色の波下線で表示されます。 XSLT コンパイラによるエラーは、赤色の波下線で示されます。

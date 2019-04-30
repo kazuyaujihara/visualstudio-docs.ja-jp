@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a92554843c1bdde48123515cb2548b2c513ef756
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84b569a843a3ee414143dbfffb0dba6e881f5567
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418375"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>従来の言語サービスのパーサーとスキャナー
 パーサーは、言語サービスの中核です。 マネージ パッケージ フレームワーク (MPF) 言語のクラスには、表示されているコードに関する情報を選択する言語のパーサーが必要です。 パーサーは、テキストを構文トークンに分割し、し、それらのトークンの種類と機能を識別します。
@@ -66,7 +66,7 @@ namespace MyNamespace
  (場所、トークンから実行可能コードのいくつかの形式に変換されます) コンパイラの一部として使用されるパーサーとは異なりさまざまな理由と、多数の異なるコンテキストで、言語サービス パーサーを呼び出すことができます。 このアプローチを実装する方法、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.LanguageService>クラスは自由です。 留意することが重要です、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>バック グラウンド スレッドでメソッドを呼び出すことがあります。
 
 > [!CAUTION]
->  <xref:Microsoft.VisualStudio.Package.ParseRequest>構造体にはへの参照が含まれています、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>オブジェクト。 これは、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>バック グラウンド スレッドでオブジェクトを使用することはできません。 実際には、バック グラウンド スレッドでの基本の MPF クラスの多くは使用できません。 以下の<xref:Microsoft.VisualStudio.Package.Source>、 <xref:Microsoft.VisualStudio.Package.ViewFilter>、<xref:Microsoft.VisualStudio.Package.CodeWindowManager>クラス、およびその他のビューとの直接または間接的に通信するクラス。
+> <xref:Microsoft.VisualStudio.Package.ParseRequest>構造体にはへの参照が含まれています、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>オブジェクト。 これは、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>バック グラウンド スレッドでオブジェクトを使用することはできません。 実際には、バック グラウンド スレッドでの基本の MPF クラスの多くは使用できません。 以下の<xref:Microsoft.VisualStudio.Package.Source>、 <xref:Microsoft.VisualStudio.Package.ViewFilter>、<xref:Microsoft.VisualStudio.Package.CodeWindowManager>クラス、およびその他のビューとの直接または間接的に通信するクラス。
 
  このパーサーは通常呼び出されたまたは解析がの値を判断するときに全体のソース ファイルの最初の時間を解析して<xref:Microsoft.VisualStudio.Package.ParseReason>が与えられます。 後続の呼び出し、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドは、解析されたコードのごく一部を処理し、前の完全な解析操作の結果を使用してより迅速に実行できることができます。 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッドによって解析操作の結果を通信する、<xref:Microsoft.VisualStudio.Package.AuthoringSink>と<xref:Microsoft.VisualStudio.Package.AuthoringScope>オブジェクト。 <xref:Microsoft.VisualStudio.Package.AuthoringSink>オブジェクトは特定解析のため、中かっこまたはパラメーターのリストを持つメソッドのシグネチャに一致する範囲に関する情報などの情報を収集するために使用します。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>宣言とメソッドのシグネチャおよびサポートのコレクションを移動する高度な編集オプションを提供します (**定義へ移動**、**宣言へ移動**、**に移動参照**)。
 

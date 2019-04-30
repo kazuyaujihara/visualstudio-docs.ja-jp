@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41f830214b20df24587cf902e6b180e8a43a8cd3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007401"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>方法: 使用する XML スキーマを選択します。
+# <a name="how-to-select-the-xml-schemas-to-use"></a>方法: 使用する XML スキーマを選択する
 
 XML エディターでスキーマ キャッシュを提供する、 *%VSInstallDir%\xml\Schemas*ディレクトリ。 スキーマ キャッシュには、IntelliSense と XML ドキュメントの検証に使用される既知の XML スキーマが格納されています。
 
@@ -24,7 +24,7 @@ XML エディターでスキーマ キャッシュを提供する、 *%VSInstall
 指定したスキーマは (非表示) のソリューション ユーザー オプション ファイルに保存されます (.*suo*)、およびその他のすべての XML ドキュメントのプロパティ。 その結果、次回ソリューションを開き、これらの値を再入力する必要はありません。
 
 > [!NOTE]
-> エディターは、インライン スキーマまたはによって参照されるスキーマを使用して検証できます、`xsd:schemaLocation`属性。 詳細については、[XML ドキュメントの検証](../xml-tools/xml-document-validation.md)を参照してください。
+> エディターは、インライン スキーマまたはによって参照されるスキーマを使用して検証できます、`xsd:schemaLocation`属性。 詳細については、次を参照してください。 [XML ドキュメントの検証](../xml-tools/xml-document-validation.md)です。
 
 ## <a name="to-select-an-xml-schema-from-the-schema-cache"></a>スキーマ キャッシュから XML スキーマを選択するには
 

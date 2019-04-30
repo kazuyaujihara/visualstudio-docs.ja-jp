@@ -1,5 +1,5 @@
 ---
-title: 'PTVS の概要: コードの編集 |Microsoft Docs'
+title: 'PTVS の概要: コードの編集 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550913"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>PTVS の概要: コードの編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ from math import sin
   
 ```  
   
- コーディングの際に、バインドされていない、しかしライブラリには存在する識別子を使用する場合、PTVS は、必要となる適切なインポート ステートメントを追加するためのポップアップ クイック フィックスを提供します。  たとえば、入力した`cos`、表示し、**数学からインポート**提供されています。  
+ コーディングの際に、バインドされていない、しかしライブラリには存在する識別子を使用する場合、PTVS は、必要となる適切なインポート ステートメントを追加するためのポップアップ クイック フィックスを提供します。  たとえば、「`cos`」と入力した場合、**import from math** が提供されるのがわかります。  
   
  スニペットを使用してコードを生成することができます。  [編集] メニューで、[IntelliSense]、[スニペットの挿入] の順に選択します。  次に [Python]、[def] の順に選択します。関数 `make_dot_string` を呼び出して、1 つのパラメーター `x` を追加します。  ここで、テスト駆動開発のためにアサーションをファイルに追加できます。PTVS が入力候補一覧に新しい関数を既に提供できるようになっていることが分かります。  
   

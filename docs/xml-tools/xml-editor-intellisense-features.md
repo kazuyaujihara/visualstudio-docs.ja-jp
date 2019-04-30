@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807977"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML エディターの IntelliSense 機能
 
@@ -25,7 +25,7 @@ XML エディターでは、Visual Studio で提供されている他の言語�
 
 ![表示オブジェクト メンバー リスト ボタン](media/display-object-member-list-xml.png)
 
-XML ドキュメントにスキーマを関連付ける方法については、[XML ドキュメントの検証](../xml-tools/xml-document-validation.md)を参照してください。
+XML ドキュメントにスキーマを関連付ける方法については、次を参照してください。 [XML ドキュメントの検証](../xml-tools/xml-document-validation.md)です。
 
 開始タグの内部で「SPACE」と入力しても、現在の要素に追加できる属性をすべて示したドロップダウン リストを表示できます。
 

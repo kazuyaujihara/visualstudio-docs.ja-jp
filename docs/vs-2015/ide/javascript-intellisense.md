@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af1484bef2baadf961eb00c952a50abec5c4a9f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412303"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 - AJAX 対応の ASP.NET Web アプリケーションの作業をしている場合は、[!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)]。
 
     > [!NOTE]
-    >  IntelliSense は、HTML 要素のイベント ハンドラー属性内のスクリプトや `href` 属性に定義されたスクリプトではサポートされません。
+    > IntelliSense は、HTML 要素のイベント ハンドラー属性内のスクリプトや `href` 属性に定義されたスクリプトではサポートされません。
 
 ## <a name="ProcessingIntelliSenseInformation"></a> IntelliSense の情報の処理
  JavaScript IntelliSense を使用できるようにするため、言語サービスでは次の操作が実行されます。
@@ -189,7 +189,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
  `/// <reference path="~/Services/MyService.asmx" />`
 
 > [!NOTE]
->  JavaScript IntelliSense は、Web アプリケーション プロジェクト (WAP: Web Application Project) の Web サービス ファイル (.asmx) 内に格納されたスクリプトではサポートされません。
+> JavaScript IntelliSense は、Web アプリケーション プロジェクト (WAP: Web Application Project) の Web サービス ファイル (.asmx) 内に格納されたスクリプトではサポートされません。
 
  ページ ベースのスクリプトへの参照方法の例を次に示します。
 
@@ -233,18 +233,18 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
   ほとんどのシナリオでは、参照グループを変更する必要はありません。 しかし変更する場合は、参照グループに含まれるファイルを指定するために JavaScript コード エディターの構成オプションを使用できます。 この機能を使用する方法の詳細については、「[[オプション]、[テキスト エディター]、[JavaScript]、[IntelliSense]](../ide/reference/options-text-editor-javascript-intellisense.md)」を参照してください。
 
 > [!TIP]
->  通常、IntelliSense 参照は、グローバル オブジェクトに IntelliSense サポートを提供するため、および IntelliSense [機能拡張](#Extensibility)のために使用されます。 また、スクリプト ローダーを使用して実行時に読み込む必要があるスクリプトでこの機能を使用できます。
+> 通常、IntelliSense 参照は、グローバル オブジェクトに IntelliSense サポートを提供するため、および IntelliSense [機能拡張](#Extensibility)のために使用されます。 また、スクリプト ローダーを使用して実行時に読み込む必要があるスクリプトでこの機能を使用できます。
 
 ### <a name="remote-file-references"></a>リモート ファイル参照
  リモート ファイルまたはライブラリで IntelliSense サポートを提供するために、JavaScript ファイルで参照されるリモート JavaScript ファイルをダウンロードするよう Visual Studio に指示できます。 この機能を使用する場合、JavaScript ファイルに参照として含まれるファイルがダウンロードされます。
 
 > [!NOTE]
->  Web プロジェクトを除き、この機能はプロジェクトのコンテキスト外で開いた JavaScript ファイルでのみ実行されます。 Web プロジェクトでは、プロジェクトで参照されるリモート ファイルは既定でダウンロードされます。
+> Web プロジェクトを除き、この機能はプロジェクトのコンテキスト外で開いた JavaScript ファイルでのみ実行されます。 Web プロジェクトでは、プロジェクトで参照されるリモート ファイルは既定でダウンロードされます。
 
  この機能を使用する方法の詳細については、「[[オプション]、[テキスト エディター]、[JavaScript]、[IntelliSense]](../ide/reference/options-text-editor-javascript-intellisense.md)」を参照してください。
 
 > [!WARNING]
->  この機能を有効にするとコード エディターのパフォーマンスが低下することが観察された場合、機能を無効にすることをお勧めします。
+> この機能を有効にするとコード エディターのパフォーマンスが低下することが観察された場合、機能を無効にすることをお勧めします。
 
 ### <a name="XMLDocComments"></a> XML ドキュメント コメント
  XML ドキュメントのコメントは、スクリプトに追加されるコード要素の説明テキストです。 これらの説明テキストは、コメントされたスクリプトを参照したときに IntelliSense で表示されます。 たとえば、関数のパラメーターと戻り値に関する情報を含められます。 XML ドキュメントのコメントは、参照されるファイル、アセンブリ、およびサービスでのみ使用できます。 詳細については、[XML ドキュメントのコメント](../ide/xml-documentation-comments-javascript.md)と [XML ドキュメントのコメントの作成](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)に関するページをご覧ください。
@@ -263,7 +263,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
  ASP.NET AJAX も JavaScript IntelliSense をサポートしています。 ASP.NET AJAX には、ECMAScript (JavaScript) で使用できる標準の型を拡張するクライアント フレームワークが含まれています。 JavaScript IntelliSense を有効にして ASP.NET AJAX オブジェクトに関する詳細を利用できるようにするために、XML ドキュメントのコメントが [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)] 全体に追加されました。 これらの XML ドキュメントのコメントは、ASP.NET AJAX ライブラリに格納された型およびメンバーを使用したときに表示されます。
 
 > [!NOTE]
->  プライベート メンバーは JavaScript IntelliSense では表示されません。 プライベート メンバーは、ASP.NET AJAX ではアンダースコア (_) で始まるメンバーとして表されます。
+> プライベート メンバーは JavaScript IntelliSense では表示されません。 プライベート メンバーは、ASP.NET AJAX ではアンダースコア (_) で始まるメンバーとして表されます。
 
 ## <a name="Extensibility"></a> JavaScript IntelliSense の機能拡張
  JavaScript Language Service はオブジェクトや機能を提供して、サードパーティのライブラリを使用する開発者が IntelliSense の操作性を変更できるようにします。 これらの機能は、既定の言語サービスではすべての情報を顧客に提供できない場合に特に役立ちます。 詳細については、「[JavaScript IntelliSense の拡張](../ide/extending-javascript-intellisense.md)」を参照してください。

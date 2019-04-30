@@ -10,16 +10,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e63a5ab794261a395fb091016f177ffca9d35692
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964301"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定義のプロパティ
 DslDefinition プロパティ定義*ドメイン固有言語*バージョン番号などのプロパティを定義します。 DslDefinition プロパティに表示されます、**プロパティ**ウィンドウでは、図の空いている領域をクリックすると、*ドメイン固有言語デザイナー*します。
 
- 詳細については、[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)を参照してください。 これらのプロパティを使用する方法の詳細については、[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)を参照してください。
+ 詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。 これらのプロパティを使用する方法の詳細については、次を参照してください。[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)します。
 
  DslDefinition は次の表にプロパティを持ちます。
 
@@ -40,7 +40,7 @@ DslDefinition プロパティ定義*ドメイン固有言語*バージョン番�
 |ビルド|このドメイン固有言語定義のインクリメンタル ビルド番号。|0|
 |メジャー バージョン|このドメイン固有言語定義の増分のメジャー ビルド番号。|1|
 |マイナー バージョン|このドメイン固有言語定義の増分のマイナー ビルド番号。|0|
-|Revision|増分のリビジョンは、このドメイン固有言語定義の番号をビルドします。|0|
+|リビジョン|増分のリビジョンは、このドメイン固有言語定義の番号をビルドします。|0|
 
 ## <a name="see-also"></a>関連項目
 

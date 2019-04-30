@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ede5ac920c1d40402504544a13f8a00905b82e80
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972383"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;説明&gt;要素 (Visual Studio での Office 開発)
   `description` 名前空間の `vstov4` 要素は、Microsoft Office アプリケーションの [COM アドイン] ダイアログ ボックスに表示される Office ソリューションの説明を格納します。
@@ -34,7 +34,7 @@ ms.locfileid: "54871326"
 ```
 
 ## <a name="elements-and-attributes"></a>要素と属性
- 任意。 `description` 要素は `vstov4` 名前空間に属します。 この要素は、Microsoft Office アプリケーションの [COM アドイン] ダイアログ ボックスに表示されるアドインの説明を格納します。
+ 省略可能です。 `description` 要素は `vstov4` 名前空間に属します。 この要素は、Microsoft Office アプリケーションの [COM アドイン] ダイアログ ボックスに表示されるアドインの説明を格納します。
 
  `description` 要素には、属性も要素もありません。
 

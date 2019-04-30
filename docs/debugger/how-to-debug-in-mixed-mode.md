@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894379"
 ---
-# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>方法: 混合モードでデバッグ (C#、C++、Visual Basic)
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>方法: 混合モードでデバッグ (C#、 C++、Visual Basic)
 
 次の手順では、デバッグまとめて、混合モードとも呼ばれるマネージ コードとネイティブ コードのデバッグを有効にする方法について説明します。 2 つの混合モード デバッグ シナリオがあります。
 
@@ -34,7 +34,7 @@ ms.locfileid: "57526725"
 
 呼び出し元のアプリ プロジェクトのマネージ コードとネイティブの両方のデバッガーを有効にすることができます**プロパティ**ページ。 設定は、ネイティブおよびマネージ アプリ間で異なります。
 
-呼び出し元のアプリのプロジェクトへのアクセスを持っていない場合は、DLL プロジェクトから DLL をデバッグできます。 混在モード DLL のプロジェクトだけをデバッグする必要はありません。 詳細については、[DLL プロジェクトからデバッグする方法](../debugger/how-to-debug-from-a-dll-project.md)に関するページをご覧ください。
+呼び出し元のアプリのプロジェクトへのアクセスを持っていない場合は、DLL プロジェクトから DLL をデバッグできます。 混在モード DLL のプロジェクトだけをデバッグする必要はありません。 詳細については、「[方法 :DLL プロジェクトからデバッグする](../debugger/how-to-debug-from-a-dll-project.md)」を参照してください。
 
 > [!NOTE]
 > ダイアログ ボックスやコマンド、Visual Studio の設定またはエディションによって、この記事で使用されているのとは異なる場合があります。 設定を変更するには、次のように選択します。**ツール** > **インポートおよびエクスポート設定**します。 詳細については、「[リセット設定](../ide/environment-settings.md#reset-settings)」を参照してください。
@@ -53,7 +53,7 @@ ms.locfileid: "57526725"
 
 ## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>呼び出し元の管理対象アプリの混合モードのデバッグを有効にします。
 
-1. 選択、C#または Visual Basic プロジェクトで**ソリューション エクスプ ローラー**を選択し、**プロパティ**アイコン、キーを押して**Alt**+**」と入力**、または右クリックし、選択**プロパティ**します。
+1. C# または Visual Basic プロジェクトを選択**ソリューション エクスプ ローラー**を選択し、**プロパティ**アイコン、キーを押して**Alt**+**Enter**、または右クリックし、選択**プロパティ**します。
 
 1. 選択、**デバッグ**、タブを選び**ネイティブ コードのデバッグを有効にする**します。
 
@@ -62,8 +62,8 @@ ms.locfileid: "57526725"
    ![ネイティブ コードのデバッグを有効にする](../debugger/media/dbg-mixed-mode-from-csharp.png "ネイティブ コードのデバッグを有効にします。")
 
 > [!NOTE]
-> ほとんどのバージョンの Visual Studio の Visual Studio 2017 以降では、使用する必要があります、 *launchSettings.json* .NET Core アプリでネイティブ コードの混合モードのデバッグを有効にするプロジェクトのプロパティではなくファイル。 詳細については、次を参照してください。[マネージとネイティブ コード デバッグ](../debugger/how-to-debug-managed-and-native-code.md)します。
+> Visual Studio 2017 以降、Visual Studio のほとんどのバージョンでは、プロジェクト プロパティの代わりに *launchSettings.json* ファイルを使用して、.NET Core アプリでネイティブ コードの混合モード デバッグを有効にする必要があります。 詳細については、次を参照してください。[マネージとネイティブ コード デバッグ](../debugger/how-to-debug-managed-and-native-code.md)します。
 
 ## <a name="see-also"></a>関連項目
 
-- [方法 : DLL プロジェクトからデバッグする](../debugger/how-to-debug-from-a-dll-project.md)
+- [方法: DLL プロジェクトからデバッグする](../debugger/how-to-debug-from-a-dll-project.md)

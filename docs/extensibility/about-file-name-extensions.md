@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9998a8a07995f866b1833736b96e2884c5cba091
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892649"
 ---
 # <a name="about-file-name-extensions"></a>ファイル名拡張子について
 バージョンを関連付ける場合、VSPackage のファイル拡張子を登録するときに[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。 これは、1 つのバージョンではより重要な場合は[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]をコンピューターにインストールされます。

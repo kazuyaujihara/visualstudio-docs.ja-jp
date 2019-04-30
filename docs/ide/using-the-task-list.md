@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a54b95130479a2f8091c3618ac32e48c261e5e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821580"
 ---
 # <a name="use-the-task-list"></a>タスク一覧の使用
 
@@ -83,6 +83,9 @@ Visual Studio 2015 では、ユーザー タスク機能が削除されていま
 4. **[優先順位]** ドロップダウン リストで、新しいトークンの既定の優先順位を選択します。
 
 5. **[追加]** をクリックします。
+
+> [!TIP]
+> 名前を入力すると、**[追加]** ボタンが有効になります。 **[追加]** をクリックする前に名前を入力する必要があります。
 
 ### <a name="c-todo-comments"></a>C++ TODO コメント
 

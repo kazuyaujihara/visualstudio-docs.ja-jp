@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 4878c25021d87e91f6a575d11a876d7aac2455d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816244"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>方法: 有効にして、マネージ コードの自動コード分析を無効にします。
 
@@ -34,4 +34,4 @@ ms.locfileid: "55918131"
 1. 自動コード分析を有効または無効にするには、**ビルドに対するコード分析を有効にする**のチェック ボックスをオンまたはオフします。
 
 > [!NOTE]
-> **ビルドに対するコード分析を有効にする** チェック ボックスでは、静的コード分析のみに影響します。 影響しない[Roslyn コード アナライザー](roslyn-analyzers-overview.md)、NuGet パッケージとしてインストールした場合、ビルドで常に実行します。 アナライザー エラーをクリアする場合、**エラー一覧**を選択して、現在のすべての違反を抑制する**分析** > **コード分析を実行し、アクティブな抑制問題**メニュー バーでします。 詳細については、[違反を抑制する](use-roslyn-analyzers.md#suppress-violations)を参照してください。
+> **ビルドに対するコード分析を有効にする** チェック ボックスでは、静的コード分析のみに影響します。 影響しない[Roslyn コード アナライザー](roslyn-analyzers-overview.md)、NuGet パッケージとしてインストールした場合、ビルドで常に実行します。 アナライザー エラーをクリアする場合、**エラー一覧**を選択して、現在のすべての違反を抑制する**分析** > **コード分析を実行し、アクティブな抑制問題**メニュー バーでします。 詳細については、次を参照してください。[違反を抑制する](use-roslyn-analyzers.md#suppress-violations)します。

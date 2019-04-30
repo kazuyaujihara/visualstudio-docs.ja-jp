@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f2c8894c5e2573c61ff54e38fa41ea0ed1cd3f77
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976255"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 開発のサンプルとチュートリアル
   このセクションには、サンプル アプリケーション、コードの例と構文、構造、および SharePoint ソリューションをビルドするために使用する方法を説明するステップ バイ ステップ チュートリアルが含まれています。

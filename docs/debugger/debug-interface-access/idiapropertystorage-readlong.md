@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2fb277368e23cf51a4d3d3b69226ee6bf093d6c3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839616"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
 読み取り`LONG`プロパティ セット内の値。
@@ -43,7 +43,7 @@ HRESULT ReadDLONG ( 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。 返します`E_INVALIDARG`型のプロパティがない場合`LONG`します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  A `LONG` 32 ビット符号付き整数としての Windows によって定義されます。
 
 ## <a name="see-also"></a>関連項目

@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01e85c0257d372fa9b27ec5f031aae61132f7edc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928911"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>開発者以外が配置する ClickOnce アプリケーションを作成する
 ClickOnce 配置を作成しているすべての開発者は、アプリケーション自体を展開する予定です。 それらの多くは、ClickOnce を使用してアプリケーションをパッケージし、し、ファイルを大企業など、お客様に渡します。 お客様は、そのネットワーク上のアプリケーションをホストする役割の 1 つになります。 このトピックでは、.NET Framework バージョン 3.5 より前のバージョンでは、このような展開に固有の問題について説明します。 .NET Framework 3.5 の新しい「信頼のマニフェストを使用して、」機能を使用して新しい解決し、について説明します。 最後に、まだ .NET Framework の以前のバージョンを使用しているお客様の場合、ClickOnce 配置を作成するための推奨される方法で終了します。
@@ -56,7 +56,7 @@ ClickOnce 配置を作成しているすべての開発者は、アプリケー�
 
  配置マニフェストに自己署名証明書を使用するには、いくつかの利点について説明します。 によって、顧客を取得または独自の Authenticode 証明書を作成する必要がなくなるため`<useManifestForTrust>`開発者は、アプリケーションで独自のブランド id を維持しながら、顧客の展開を簡略化します。 安全なは、一意のアプリケーション id が設定されている署名付きの展開の組み合わせになります。 これにより、複数の顧客に同じアプリケーションを配置からなる可能性がある潜在的な競合がなくなります。
 
- ClickOnce 配置とを作成する方法についての詳細な手順について`<useManifestForTrust>`有効になっているを参照してください[チュートリアル: 再署名が要求されるされないのブランド情報を保持するClickOnceアプリケーションを手動で展開](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).
+ ClickOnce 配置とを作成する方法についての詳細な手順について`<useManifestForTrust>`有効になっているを参照してください[チュートリアル。再署名が要求されるされないブランド情報を保持する ClickOnce アプリケーションを手動で展開](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)します。
 
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>実行時の信頼のアプリケーション マニフェストのしくみ
  実行時にアプリケーション マニフェストを使用して、信頼のためのしくみの理解を深めるを取得するには、次の例を検討します。 .NET Framework 3.5 を対象とする ClickOnce アプリケーションは、Microsoft によって作成されます。 アプリケーション マニフェストを使用して、`<useManifestForTrust>`要素と、Microsoft によって署名されています。 Adventure Works 自己署名証明書を使用して、配置マニフェストに署名します。 Adventure Works クライアントは、Microsoft によって署名されたすべてのアプリケーションを信頼して構成されます。
@@ -99,5 +99,5 @@ ClickOnce 配置を作成しているすべての開発者は、アプリケー�
 
 ## <a name="see-also"></a>関連項目
 - [署名なしの ClickOnce アプリケーションのテストと実稼働サーバーの展開します。](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)
-- [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+- [チュートリアル: ClickOnce アプリケーションを手動で展開します。](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [チュートリアル: 再署名が不要で商標を保持する ClickOnce アプリケーションの手動配置](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

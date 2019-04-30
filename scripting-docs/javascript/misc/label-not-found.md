@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 72b63c699b09081e843f36daeec3fcc556ebaf4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007374"
 ---
 # <a name="label-not-found"></a>このラベルが定義されていません。
 存在しないラベルへの参照を行ったとします。 ラベルは、ブロックが指定されたスコープ内で、コードのマークに使用できる、一意である必要があります。  

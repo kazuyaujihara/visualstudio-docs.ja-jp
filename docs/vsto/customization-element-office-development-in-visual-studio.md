@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 798cb2e7a8526e97a3d97240e181ef2e35ed21b1
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956061"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;カスタマイズ&gt;要素 (Visual Studio での Office 開発)
   `customization` 名前空間の `vstov4` 要素では、特定の Office ソリューションについて記述します。 ドキュメント レベルのカスタマイズと VSTO アドインでは、子要素が異なります。
@@ -64,7 +64,7 @@ ms.locfileid: "54869084"
 ### <a name="document-level-customizations"></a>ドキュメント レベルのカスタマイズ
  `customization` 要素には、次の子要素があります。
 
-#### <a name="document"></a>ドキュメント
+#### <a name="document"></a>document
  `document`内の要素、`vstov4`で名前空間が定義されている[&#60;ドキュメント&#62;要素&#40;Visual Studio での Office 開発&#41;](../vsto/document-element-office-development-in-visual-studio.md)します。
 
 ### <a name="vsto-add-ins"></a>VSTO アドイン

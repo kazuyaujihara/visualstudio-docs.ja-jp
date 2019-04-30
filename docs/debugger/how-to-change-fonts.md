@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33fee74bf2fd26cfe7af7f7bed90a06553c7fb27
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848069"
 ---
 # <a name="how-to-change-fonts"></a>方法: フォントを変更する
 フォント、フォント スタイル、および spy++ ウィンドウのフォント サイズを変更することができます。

@@ -11,11 +11,11 @@ ms.assetid: a4f17068-c563-45a8-bbbf-4203ea99e9d2
 caps.latest.revision: 34
 manager: jillfra
 ms.openlocfilehash: bde7742bc9165413abcf98bfb475c19ec0e45f51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838764"
 ---
 # <a name="managed-vspackages"></a>マネージド VSPackage
 次のトピックでは、VSPackage を作成する方法について説明します。 VSPackage は、拡張するソフトウェア モジュール、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ユーザー インターフェイス (UI) 要素、サービス、プロジェクト、エディター、デザイナーを提供し、統合開発環境 (IDE) です。 詳細については、「 [VSPackages](../extensibility/internals/vspackages.md)」を参照してください。  

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 71e67ab41fd39563520370eb079fca1b7c82015e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952790"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Web パーツまたはアプリケーション ページの再利用可能なコントロールを作成します。
   Visual Studio では、アプリケーション ページと SharePoint で実行される Web パーツで使用できる、再利用可能なカスタム コントロールを作成できます。 これらのコントロールは、ユーザー コントロールと呼ばれます。 ユーザー コントロールは、ある種の複合コントロールは ASP.NET Web ページのように動作する、ユーザー コントロールに既存の Web サーバー コントロールとマークアップを追加し、コントロールのプロパティとメソッドを定義できます。 単位として施すの ASP.NET Web ページで、埋め込むことができます。
@@ -54,7 +54,7 @@ ms.locfileid: "56601129"
 
  SharePoint では、ユーザー コントロールを含むアプリケーション ページを開きます。 ユーザー コントロールが Web パーツに含まれる場合は、sharepoint Web パーツ ページに Web パーツを追加します。
 
- SharePoint プロジェクトのデバッグの詳細については、[のトラブルシューティングを行う SharePoint ソリューション](../sharepoint/troubleshooting-sharepoint-solutions.md)を参照してください。
+ SharePoint プロジェクトのデバッグの詳細については、次を参照してください。[のトラブルシューティングを行う SharePoint ソリューション](../sharepoint/troubleshooting-sharepoint-solutions.md)します。
 
 ## <a name="related-topics"></a>関連トピック
 

@@ -18,21 +18,21 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 711082c70c6174bdf3363ddb12d233ceb3f78f0d
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838977"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>チュートリアル: Entity Framework と Visual Studio 2019 を使用して、最初の ASP.NET Core アプリを作成する
 
 このチュートリアルでは、データを使用する ASP.NET Core Web アプリを作成して、Azure にデプロイします。 このチュートリアルは、以下の手順から構成されています。
 
-- [手順 1: Visual Studio 2019 をインストールする](#step-1-install-visual-studio-2019)
-- [手順 2: 最初の ASP.NET Core Web アプリを作成する](tutorial-aspnet-core-ef-step-02.md)
-- [手順 3: Entity Framework を使用してデータを処理する](tutorial-aspnet-core-ef-step-03.md)
-- [手順 4: ASP.NET Core アプリから Web API を公開する](tutorial-aspnet-core-ef-step-04.md)
-- [手順 5: Azure に ASP.NET Core アプリをデプロイする](tutorial-aspnet-core-ef-step-05.md)
+- [手順 1:Visual Studio 2019 をインストールする](#step-1-install-visual-studio-2019)
+- [手順 2:最初の ASP.NET Core Web アプリを作成する](tutorial-aspnet-core-ef-step-02.md)
+- [手順 3:Entity Framework を使用してデータを処理する](tutorial-aspnet-core-ef-step-03.md)
+- [手順 4:ASP.NET Core アプリから Web API を公開する](tutorial-aspnet-core-ef-step-04.md)
+- [手順 5:Azure に ASP.NET Core アプリをデプロイする](tutorial-aspnet-core-ef-step-05.md)
 
 ## <a name="step-1-install-visual-studio-2019"></a>手順 1: Visual Studio 2019 をインストールする
 

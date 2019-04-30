@@ -12,12 +12,12 @@ ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4dcbcd49ea834dcc432382efad4cc31d842bb61a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0db9eb44b8074a5c5e3b35a5a5dadcf04f37fb2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405731"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ HRESULT DisableENC(
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
   
 > [!NOTE]
->  カスタム ポート サプライヤーが常に返す必要があります`E_NOTIMPL`します。  
+> カスタム ポート サプライヤーが常に返す必要があります`E_NOTIMPL`します。  
   
 ## <a name="remarks"></a>Remarks  
  1 回の編集しプロセスの続行は無効です、プロセスを再起動することによってのみ再度有効にできます。  

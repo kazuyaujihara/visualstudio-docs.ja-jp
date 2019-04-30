@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eab1768a44a85b2675a8bc2abf10f318a8902f94
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861228"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>相互運用機能アセンブリを使用してコマンドのステータスを確認します。
 VSPackage をする必要がありますの追跡を処理できるコマンドの状態。 場合、VSPackage 内で処理コマンドを有効または無効になります、環境を特定できません。 コマンドの状態について、環境に通知するために VSPackage の責任は、たとえば、[全般] の状態などのコマンド**切り取り**、**コピー**、および**貼り付け**します。
@@ -28,7 +28,7 @@ VSPackage をする必要がありますの追跡を処理できるコマンド�
 
 - 場合、VSPackage は、環境が現在のユーザー インターフェイス (UI) を更新することを要求します。 などで、ユーザーに現在表示されているコマンドが発生したこの更新プログラム、**切り取り**、**コピー**と**貼り付け**[標準] ツールバーをグループ化、有効になっているなり無効になっていますコンテキストとユーザーの操作に応答します。
 
-  シェルは、複数の Vspackage をホストするため、シェルのパフォーマンスは許容範囲を超えるが低下する場合は、コマンドの状態を確認するには、各 VSPackage をポーリングする必要があります。 代わりに、変更時に、UI が変更されたときに、VSPackage は、環境を通知アクティブにする必要があります。 更新の通知の詳細については、[ユーザー インターフェイスを更新](../../extensibility/updating-the-user-interface.md)を参照してください。
+  シェルは、複数の Vspackage をホストするため、シェルのパフォーマンスは許容範囲を超えるが低下する場合は、コマンドの状態を確認するには、各 VSPackage をポーリングする必要があります。 代わりに、変更時に、UI が変更されたときに、VSPackage は、環境を通知アクティブにする必要があります。 更新の通知の詳細については、次を参照してください。[ユーザー インターフェイスを更新](../../extensibility/updating-the-user-interface.md)します。
 
 ## <a name="status-notification-failure"></a>エラーの通知状態
  コマンドの状態変更の環境に通知する、VSPackage のエラーは、一貫性のない状態で UI を配置できます。 メニューまたはコンテキスト メニュー コマンドのいずれかのことができますに配置すること、ツールバーのユーザーが注意してください。 そのため、メニューまたはコンテキスト メニューを開いたときにのみ、UI の更新は不十分です。

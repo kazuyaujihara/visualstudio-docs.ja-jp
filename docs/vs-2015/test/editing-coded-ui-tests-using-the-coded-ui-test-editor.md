@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 21acd0970415db23da330ece46131cde72cd706a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793764"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118007"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>コード化された UI テスト エディターを使用したコード化された UI テストの編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,28 +26,28 @@ ms.locfileid: "54793764"
   
  **必要条件**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="why-should-i-do-this"></a>この操作を行う理由  
  コード化された UI テスト エディターを使用することは、コード化された UI テスト メソッドのコードをコード エディターを使用して編集するよりも効率的です。 コード化された UI テスト エディターでは、ツール バーとショートカット メニューを使用して、UI 操作とコントロールに関連付けられているプロパティ値をすばやく検出して修正することができます。 たとえば、コード化された UI テスト エディターのツール バーを使用して、次のコマンドを実行できます。  
   
  ![UI テスト エディター](../test/media/uitesteditor.png "UITestEditor")  
   
-1.  [検索](../ide/finding-and-replacing-text.md) : UI 操作とコントロールを見つけることができます。  
+1. [検索](../ide/finding-and-replacing-text.md) : UI 操作とコントロールを見つけることができます。  
   
-2.  [削除](#CodedUITestEditor_DeleteUIActions) : 不要な UI 操作を削除します。  
+2. [削除](#CodedUITestEditor_DeleteUIActions) : 不要な UI 操作を削除します。  
   
-3.  **名前の変更** : テスト メソッドとコントロールの名前を変更します。  
+3. **名前の変更** : テスト メソッドとコントロールの名前を変更します。  
   
-4.  **プロパティ** : 選択した項目のプロパティ ウィンドウが開きます。  
+4. **プロパティ** : 選択した項目のプロパティ ウィンドウが開きます。  
   
-5.  [新しいメソッドに分割](#CodedUITestEditor_SplitMethods) : UI 操作をモジュール化できます。  
+5. [新しいメソッドに分割](#CodedUITestEditor_SplitMethods) : UI 操作をモジュール化できます。  
   
-6.  [コードの移動](#CodedUITestEditor_MoveMethods) : テスト メソッドにカスタム コードを追加します。  
+6. [コードの移動](#CodedUITestEditor_MoveMethods) : テスト メソッドにカスタム コードを追加します。  
   
-7.  [前に遅延を挿入](#CodedUITestEditor_InsertDelay) : ミリ秒単位で指定された UI 操作の前に一時停止を追加します。  
+7. [前に遅延を挿入](#CodedUITestEditor_InsertDelay) : ミリ秒単位で指定された UI 操作の前に一時停止を追加します。  
   
-8.  [UI コントロールの検索](#CodedUITestEditor_LocateUIControl) : テスト対象のアプリケーションの UI におけるコントロールの位置を特定します。  
+8. [UI コントロールの検索](#CodedUITestEditor_LocateUIControl) : テスト対象のアプリケーションの UI におけるコントロールの位置を特定します。  
   
 9. [すべてを検索](#CodedUITestEditor_LocateDecendants) : コントロール プロパティ、およびアプリケーションのコントロールに対すると重要な変更を検証します。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "54793764"
  コード化された UI テスト エディターが*表示されません* 。  
  Visual Studio Enterprise の 2012 よりも前のバージョンを使用している可能性があります。 コード化された UI テスト エディターは、MSDN サブスクリプションを備えた Visual Studio 2010 Feature Pack 2 でも使用できます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)]「[Microsoft Visual Studio 2010 Feature Pack 2](http://go.microsoft.com/fwlink/?LinkID=204119)」を参照してください。  
   
-##  <a name="CodedUITestEditor_EditActionAndControlProperties"></a>UI 操作プロパティとそれに対応するコントロールのプロパティを変更する  
+## <a name="CodedUITestEditor_EditActionAndControlProperties"></a>UI 操作プロパティとそれに対応するコントロールのプロパティを変更する  
  コード化された UI テスト エディターを使用すると、テスト メソッドですべての UI 操作をすばやく検索および表示できます。 エディターで UI 操作を選択すると、対応するコントロールが自動的に強調表示されます。 同様に、コントロールを選択すると、関連付けられた UI 操作が強調表示されます。 UI 操作またはコントロールを選択すると、[プロパティ] ウィンドウを使用して対応するプロパティを変更することが容易になります。  
   
  ![UI 操作のプロパティ](../test/media/codeduiedituiaction.png "CodedUIEditUIAction")  
@@ -89,24 +89,24 @@ UI 操作のプロパティの編集
  *その他に知っておく必要があること*  
  **ヒント**  
   
--   ![ヒント](../test/media/tip.png "ヒント") [プロパティ] ウィンドウが表示されていない場合は、**Alt** キーを押したまま **Enter** キーを押すか、**F4** キーを押します。  
+- ![ヒント](../test/media/tip.png "ヒント") [プロパティ] ウィンドウが表示されていない場合は、**Alt** キーを押したまま **Enter** キーを押すか、**F4** キーを押します。  
   
--   ![ヒント](../test/media/tip.png "ヒント") 実行したプロパティの変更を元に戻すには、**[編集]** メニューの **[元に戻す]** を選択するか、Ctrl キーを押しながら Z キーを押します。  
+- ![ヒント](../test/media/tip.png "ヒント") 実行したプロパティの変更を元に戻すには、**[編集]** メニューの **[元に戻す]** を選択するか、Ctrl キーを押しながら Z キーを押します。  
   
--   ![ヒント](../test/media/tip.png "ヒント") コード化された UI テスト エディターのツール バーにある **[検索]** ボタンを使用すると、Visual Studio の検索と置換ツールを開くことができます。 そうすれば、検索コントロールを使用して、コード化された UI テスト エディターで UI 操作を検索できます。 たとえば、"'Login' ボタンをクリック" を検索できます。 これは、大規模なテストの場合に便利です。 コード化された UI テスト エディターでは検索と置換ツールの置換機能を使用できないことに注意してください。 詳細については、「[テキストの検索と置換](../ide/finding-and-replacing-text.md)」の「検索コントロール」を参照してください。  
+- ![ヒント](../test/media/tip.png "ヒント") コード化された UI テスト エディターのツール バーにある **[検索]** ボタンを使用すると、Visual Studio の検索と置換ツールを開くことができます。 そうすれば、検索コントロールを使用して、コード化された UI テスト エディターで UI 操作を検索できます。 たとえば、"'Login' ボタンをクリック" を検索できます。 これは、大規模なテストの場合に便利です。 コード化された UI テスト エディターでは検索と置換ツールの置換機能を使用できないことに注意してください。 詳細については、「[テキストの検索と置換](../ide/finding-and-replacing-text.md)」の「検索コントロール」を参照してください。  
   
--   ![ヒント](../test/media/tip.png "ヒント")テスト対象のアプリケーションの UI におけるコントロールの位置を表示するのが難しい場合があります。 コード化された UI テスト エディターの機能の 1 つとして、UI コントロール マップに一覧表示されているコントロールを選択し、テスト対象のアプリケーションにおけるそのコントロールの位置を表示することができます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)]「[テスト対象のアプリケーションで UI コントロールを検索する](#CodedUITestEditor_LocateUIControl)」(このトピックの後の方) を参照してください。  
+- ![ヒント](../test/media/tip.png "ヒント")テスト対象のアプリケーションの UI におけるコントロールの位置を表示するのが難しい場合があります。 コード化された UI テスト エディターの機能の 1 つとして、UI コントロール マップに一覧表示されているコントロールを選択し、テスト対象のアプリケーションにおけるそのコントロールの位置を表示することができます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)]「[テスト対象のアプリケーションで UI コントロールを検索する](#CodedUITestEditor_LocateUIControl)」(このトピックの後の方) を参照してください。  
   
--   ![ヒント](../test/media/tip.png "ヒント")編集するコントロールを含むコンテナー コントロールを拡張する必要が生じる場合があります。 [!INCLUDE[crdefault](../includes/crdefault-md.md)]「[コントロールとその子孫を検索する](#CodedUITestEditor_LocateDecendants)」(このトピックの後の方) を参照してください。  
+- ![ヒント](../test/media/tip.png "ヒント")編集するコントロールを含むコンテナー コントロールを拡張する必要が生じる場合があります。 [!INCLUDE[crdefault](../includes/crdefault-md.md)]「[コントロールとその子孫を検索する](#CodedUITestEditor_LocateDecendants)」(このトピックの後の方) を参照してください。  
   
-##  <a name="CodedUITestEditor_DeleteUIActions"></a>不要な UI 操作を削除する  
+## <a name="CodedUITestEditor_DeleteUIActions"></a>不要な UI 操作を削除する  
  コード化された UI テストの不要な UI 操作を簡単に削除できます。  
   
  ![UI アクションの削除](../test/media/codeduideleteuiaction.png "CodedUIDeleteUIAction")  
   
  **[UI 操作]** ウィンドウで、削除する UI 操作を含むテスト メソッドを展開します。 UI 操作のショートカット メニューを開き、 **[削除]** をクリックします。  
   
-##  <a name="CodedUITestEditor_SplitMethods"></a> テスト メソッドを 2 つの異なるメソッドに分割する  
+## <a name="CodedUITestEditor_SplitMethods"></a> テスト メソッドを 2 つの異なるメソッドに分割する  
  テスト メソッドを分割し、UI 操作を調整またはモジュール化することができます。 たとえば、テストには 2 個のコンテナー コントロールの UI 操作を含む単一のテスト メソッドが存在する場合があります。 UI 操作は、1 個のコンテナーで対応する 2 種類のメソッドにおいてより適切にモジュール化される可能性があります。  
   
  ![テスト メソッドの分割](../test/media/codeduitestsplitmethod1.png "CodedUITestSplitMethod1")  
@@ -134,7 +134,7 @@ UI 操作のプロパティの編集
   
    Microsoft Visual Studio のダイアログ ボックスが表示されます。 メソッドを参照しているコードを変更する必要があることを示す警告が表示されます。 **[はい]** をクリックします。  
   
-##  <a name="CodedUITestEditor_MoveMethods"></a> カスタマイズを容易にするためにテスト メソッドを UIMap ファイルへ移動する  
+## <a name="CodedUITestEditor_MoveMethods"></a> カスタマイズを容易にするためにテスト メソッドを UIMap ファイルへ移動する  
  コード化された UI テストのテスト メソッドにカスタム コードが必要であることが判明した場合は、そのテスト メソッドを UIMap.cs ファイルまたは UIMap.vb ファイルに移動する必要があります。 それ以外の場合、コード化された UI テストが再コンパイルされるたびにコードが上書きされます。 メソッドを移動しない場合は、テストが再コンパイルするたびにカスタム コードが上書きされます。  
   
  **[UI 操作]** ウィンドウで、テスト コードの再コンパイル時に上書きされないカスタム コード機能を容易にするために、UIMap.cs ファイルまたは UIMap.vb ファイルに移動するテスト メソッドを選択します。 次に、コード化された UI テスト エディターのツール バーにある **[コードの移動]** をクリックするか、テスト メソッドのショートカット メニューを開いて **[コードの移動]** をクリックします。 テスト メソッドが UIMap.uitest ファイルから削除され、[UI Actions] (UI 操作) ペインに表示されなくなります。 移動したテスト ファイルを編集するには、ソリューション エクスプローラーから UIMap.cs ファイルまたは UIMap.vb ファイルを開きます。  
@@ -150,7 +150,7 @@ UI 操作のプロパティの編集
   
 - ![ヒント](../test/media/tip.png "ヒント") 移動を元に戻すには、**[編集]** メニューの **[元に戻す]** をクリックするか、Ctrl キーを押しながら Z キーを押します。 ただし、その場合は UIMap.cs ファイルまたは UIMap.vb ファイルからコードを手動で削除する必要があります。  
   
-##  <a name="CodedUITestEditor_LocateUIControl"></a> テスト対象のアプリケーションで UI コントロールを検索する  
+## <a name="CodedUITestEditor_LocateUIControl"></a> テスト対象のアプリケーションで UI コントロールを検索する  
  テスト対象のアプリケーションの UI におけるコントロールの位置を表示するのが難しい場合があります。 コード化された UI テスト エディターの機能の 1 つとして、UI コントロール マップに一覧表示されているコントロールを選択し、テスト対象のアプリケーションにおけるそのコントロールの位置を表示することができます。 テスト対象のアプリケーションで **[UI コントロールの検索]** 機能を使用すると、コントロールに対して行った検索プロパティの変更を確認することもできます。  
   
  ![UI コントロールの検索](../test/media/codeduilocatecontrol.png "CodedUILocateControl")  
@@ -168,7 +168,7 @@ UI 操作のプロパティの編集
   
 - ![ヒント](../test/media/tip.png "ヒント") または、**[すべてを検索]** オプションを使用すると、コンテナーにあるすべてのコントロールを正しく配置できることを確認できます。 このオプションについては、次のセクションで説明します。  
   
-##  <a name="CodedUITestEditor_LocateDecendants"></a> コントロールとその子孫を検索する  
+## <a name="CodedUITestEditor_LocateDecendants"></a> コントロールとその子孫を検索する  
  コンテナーにあるすべてのコントロールをテスト対象のアプリケーションの UI に正しく配置できることを確認できます。 これは、コンテナーに対して行った検索プロパティの変更を確認するときに便利です。 さらに、テスト対象のアプリケーションの UI を大幅に変更した場合に、既存のコントロール検索プロパティが正しいことを確認できます。  
   
  ![すべての下位コントロールを検索](../test/media/codeduilocateall.png "CodedUILocateAll")  
@@ -180,16 +180,16 @@ UI 操作のプロパティの編集
  *その他に知っておく必要があること*  
  **重要な問題**  
   
--   ![注意のアイコン](../test/media/caution.gif "注意")**警告。** UI コントロールを検索する前に、テストに関連付けられているアプリケーションが実行されていることを確認してください。  
+- ![注意のアイコン](../test/media/caution.gif "注意")**警告。** UI コントロールを検索する前に、テストに関連付けられているアプリケーションが実行されていることを確認してください。  
   
-##  <a name="CodedUITestEditor_InsertDelay"></a>UI 操作の前に遅延を挿入する  
+## <a name="CodedUITestEditor_InsertDelay"></a> UI 操作の前に遅延を挿入する  
  ウィンドウの表示やプログレス バーの非表示などの特定のイベントが発生するまでテストを待機させる必要がある場合があります。 コード化された UI テスト エディターを使用し、UI 操作の前に遅延を挿入することで、この処理を実行できます。 遅延する秒数を指定できます。  
   
  ![UI アクションの前への遅延の挿入](../test/media/codeduidelay.png "CodedUIDelay")  
   
  ![5 秒間の遅延の追加](../test/media/codeduidealy2.png "CodedUIDealy2")  
   
- **[UI 操作]** ウィンドウで、事前に遅延を挿入する対象の UI 操作を含むテスト メソッドを展開します。 UI 操作を選択します。 次に、UI 操作のショートカット メニューを開き、 **[前に遅延を挿入]** をクリックします。 選択した UI 操作の前に遅延が挿入されて強調表示され、 **"操作間のユーザー遅延として 1 秒待機します"** というテキストが示されます。 [プロパティ] ウィンドウで、 **[遅延]** プロパティの値を目的のミリ秒数に変更します。  
+ **[UI 操作]** ウィンドウで、事前に遅延を挿入する対象の UI 操作を含むテスト メソッドを展開します。 UI 操作を選択します。 次に、UI 操作のショートカット メニューを開き、 **[前に遅延を挿入]** をクリックします。 選択した UI 操作の前に遅延が挿入されて強調表示され、"**操作間のユーザー遅延として 1 秒待機します**" というテキストが示されます。 [プロパティ] ウィンドウで、 **[遅延]** プロパティの値を目的のミリ秒数に変更します。  
   
  遅延の挿入が完了したら、 **ツール バーの** [保存] [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] をクリックすることで、UIMap.Designer ファイルに変更を保存します。  
   
@@ -205,7 +205,7 @@ UI 操作のプロパティの編集
 ## <a name="external-resources"></a>外部リソース  
   
 ### <a name="guidance"></a>ガイダンス  
- [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト:内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="faq"></a>FAQ  
  [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](http://go.microsoft.com/fwlink/?LinkID=230576)  

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 36ee787ca9762766f8c563ab4b5081ee47355a56
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535356"
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048:シールド型の仮想メンバーを宣言しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,12 +33,12 @@ ms.locfileid: "58974224"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- パブリック型は封印されており、両方であるメソッドを宣言`virtual`(`Overridable` Visual Basic) と最終されません。 このルールは、デリゲートの型は、このパターンに従う必要がありますの違反を報告しません。
+ パブリック型は封印されており、両方であるメソッドを宣言`virtual`(`Overridable` Visual basic) と最終されません。 このルールは、デリゲートの型は、このパターンに従う必要がありますの違反を報告しません。
 
 ## <a name="rule-description"></a>規則の説明
  型でメソッドを仮想と宣言するのは、継承する型が仮想メソッドの実装をオーバーライドできるようにするためです。 定義上には、意味のない、シールされた型の仮想メソッドを作成、シールされた型から継承することはできません。
 
- Visual Basic .NET および C# のコンパイラでは、この規則に違反する型は使用できません。
+ Visual Basic .NET および c# のコンパイラでは、この規則に違反する型は使用できません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  このルールの違反を修正するには、非仮想メソッドを作成または、型が継承できるようにします。

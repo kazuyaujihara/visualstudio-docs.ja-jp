@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3676a19b5b5b7a4050a7d48385e76954ad0bcc96
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432886"
 ---
 # <a name="single-and-multi-tab-views"></a>単一タブと複数タブのビュー
 エディターでは、さまざまな種類のビューを作成できます。 1 つの例は、コード エディター ウィンドウで、もう 1 つは、フォーム デザイナー。

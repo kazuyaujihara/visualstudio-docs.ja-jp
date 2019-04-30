@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac9352af6bd22ca2cc21545945d56a10db2c458f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bef6c5a742c4bf6acc15a6326190686e46fef79b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410185"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL シェーダーのデバッガー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Visual Studio Graphics Analyzer で HLSL デバッガーを使用すると、ア
 2. パイプライン ステージのタイトルの下で、小さい緑色の矢印として表示される **[デバッグの開始]** をクリックします。  
   
     > [!NOTE]
-    >  HLSL デバッガーへのこのエントリ ポイントでは、対応するステージの最初のシェーダー スレッドのみをデバッグします。つまり、処理する最初の頂点またはピクセルです。 [ピクセル履歴] を使用して、これらのシェーダー ステージの他のスレッドにアクセスできます。  
+    > HLSL デバッガーへのこのエントリ ポイントでは、対応するステージの最初のシェーダー スレッドのみをデバッグします。つまり、処理する最初の頂点またはピクセルです。 [ピクセル履歴] を使用して、これらのシェーダー ステージの他のスレッドにアクセスできます。  
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>[グラフィックス ピクセル履歴] から HLSL デバッガーを起動するには  
   
@@ -71,7 +71,7 @@ Visual Studio Graphics Analyzer で HLSL デバッガーを使用すると、ア
     選択したシェーダーの右側で、小さい緑色の矢印として表示される **[デバッグの開始]** をクリックします。  
   
    > [!NOTE]
-   >  HLSL デバッガーへのこのエントリ ポイントでは、選択した描画呼び出し、プリミティブ、およびピクセルに対応するピクセル シェーダー スレッド、または選択した描画呼び出し、プリミティブ、およびピクセルによって結果が補間される頂点シェーダー スレッドをデバッグします。 頂点シェーダーの場合、頂点シェーダーの詳細を展開することで、特定の頂点へのエントリ ポイントを絞り込むことができます。  
+   > HLSL デバッガーへのこのエントリ ポイントでは、選択した描画呼び出し、プリミティブ、およびピクセルに対応するピクセル シェーダー スレッド、または選択した描画呼び出し、プリミティブ、およびピクセルによって結果が補間される頂点シェーダー スレッドをデバッグします。 頂点シェーダーの場合、頂点シェーダーの詳細を展開することで、特定の頂点へのエントリ ポイントを絞り込むことができます。  
   
    HLSL デバッガーを使用して、シェーダーのエラーをデバッグする方法の例については、次を参照してください。[例](../debugger/graphics-diagnostics-examples.md)または「参照」セクションで、チュートリアルのリンク先。  
   

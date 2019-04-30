@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f24f63612b5d4dcb1c6a5a65e0ad38f8056cf842
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: d689b7b2a252b208ae578f9bfd95ab93777f7cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385969"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 パラメーターで指定されているプロパティを設定します。  
@@ -76,7 +76,7 @@ HRESULT SetProperty(
  ときにサポートされる言語機能のセットを選択して、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]スクリプト エンジンが初期化されて、呼び出し`SetProperty`SCRIPTPROP_INVOKEVERSIONING に対して有効にする設定を言語の機能に対応する値を渡すとします。 このプロパティが 1 (SCRIPTLANGUAGEVERSION_5_7) に設定されている場合、利用可能な言語機能は、のバージョン 5.7 に表示されていたものと同じ、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]スクリプト エンジンです。 2 (SCRIPTLANGUAGEVERSION_5_8) に設定されている場合、バージョン 5.7 バージョン 5.8 で追加された新機能だけでなくで登場するものは、利用可能な言語機能。 既定でこのプロパティは、ホストが別の既定の動作をサポートしていない限りバージョン 5.7 に含まれる言語機能セットと同じです (SCRIPTLANGUAGEVERSION_DEFAULT) を 0 に設定されます。 Internet Explorer 8 に opts など、 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 5.8 バージョンでサポートされている言語機能[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]既定で Internet Explorer 8 の既定のドキュメント モードは、「Internet Explorer 8 標準」モードとスクリプト エンジンです。 リセットする Internet Explorer 7 標準、Internet Explorer 8 ドキュメント モード、Quirks モードの切り替え、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]バージョン 5.7 で存在していた言語機能セットのみをサポートするためにスクリプト エンジン[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]スクリプト エンジンです。  
   
 > [!NOTE]
->  場合にのみ SCRIPTPROP_INVOKEVERSIONING を設定する必要があります、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]スクリプト エンジンが初期化されます。  
+> 場合にのみ SCRIPTPROP_INVOKEVERSIONING を設定する必要があります、[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]スクリプト エンジンが初期化されます。  
   
 ## <a name="example"></a>例  
  次の例では、整数の除算を使用するスクリプト エンジンを強制する方法との比較関数のオーバー ロードを許可する方法を示します。  

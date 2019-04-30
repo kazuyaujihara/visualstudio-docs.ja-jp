@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b4c0c88e9e096836e32ce427ff78cc94f5d1f72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906990"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>シェイプおよびコネクタを更新してモデルに反映する
 
@@ -27,7 +27,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>デコレーターの可視性を制御するマップのシェイプのプロパティを設定
 
-DSL 定義で、図形とドメイン クラス間のマッピングを構成することによって、プログラム コードを記述することがなく、デコレーターの可視性を制御できます。 詳細については、[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)を参照してください。
+DSL 定義で、図形とドメイン クラス間のマッピングを構成することによって、プログラム コードを記述することがなく、デコレーターの可視性を制御できます。 詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。
 
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>色と形のスタイル プロパティとして公開します。
 
@@ -40,7 +40,7 @@ DSL 定義で、シェイプ クラスを右クリックして**公開されて�
 プログラムの制御下でのみ、ユーザーではなく、プロパティの変数を作成する場合など、新しいドメインのプロパティを選択**塗りつぶしの色**DSL 定義図でします。 次に、[プロパティ] ウィンドウで次のように設定します。**参照可能**に`false`設定または**は読み取り専用 UI**に`true`します。
 
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>色、スタイル、またはモデル要素のプロパティに依存する場所を変更ルールを定義します。
- モデルの他の部分に依存する図形の外観を更新するルールを定義することができます。 たとえば、モデル要素のプロパティに依存するそのシェイプの色を更新するモデル要素のルールの変更を定義できます。 ルールを変更の詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。
+ モデルの他の部分に依存する図形の外観を更新するルールを定義することができます。 たとえば、モデル要素のプロパティに依存するそのシェイプの色を更新するモデル要素のルールの変更を定義できます。 ルールを変更の詳細については、次を参照してください。[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)します。
 
  元に戻すコマンドを実行すると、規則は呼び出されませんので、ストア内に保持されるプロパティを更新するためだけのルールを使用する必要があります。 これは、図形の可視性とサイズなど、一部のグラフィカル機能には含まれません。 図形のこれらの機能を更新するを参照してください。[非ストア グラフィックの更新機能](#OnAssociatedProperty)します。
 
@@ -84,7 +84,7 @@ DSL 定義で、シェイプ クラスを右クリックして**公開されて�
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>OnChildConfigured を使用して、図形のプロパティを初期化するには
 
-図形のプロパティは、最初に設定を作成、上書き`OnChildConfigured()`で図のクラスの部分定義。 図のクラスは、DSL 定義で指定し、生成されたコードが**Dsl\Generated Code\Diagram.cs**します。 例:
+図形のプロパティは、最初に設定を作成、上書き`OnChildConfigured()`で図のクラスの部分定義。 図のクラスは、DSL 定義で指定し、生成されたコードが**Dsl\Generated Code\Diagram.cs**します。 例えば:
 
 ```csharp
 partial class MyLanguageDiagram

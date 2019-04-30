@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 741d61f4f3a62638e56aabb1f62f97aac4519d0c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861014"
 ---
 # <a name="hierarchies-and-selection"></a>階層と選択
 カスタマイズすると[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、理解する必要がどの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プロジェクトとユーザーに表示される内容を判断する選択コンテキストを使用する方法などの階層を処理します。 このセクションでは、の概念を説明します。[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]階層と選択します。

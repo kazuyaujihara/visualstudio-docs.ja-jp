@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 92a6e7fc6433f120c053303421feb5e8d58bd1c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006196"
 ---
 # <a name="the-precision-is-out-of-range"></a>有効桁数の範囲を超えています。
 関数に無効な引数を渡すしようとしています。 **Number.prototype.toPrecision**します。 引数に**toPrecision** 1 ~ 21 (両端を含む) である必要があります。  

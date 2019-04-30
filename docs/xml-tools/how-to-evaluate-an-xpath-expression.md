@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1585b54d084e3471583f9388d63f5c17e65fc3a7
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002079"
 ---
 # <a name="evaluate-xpath-expressions"></a>XPath 式を評価します。
 
@@ -28,7 +28,7 @@ XPath 式を評価する: 場合
 > [!NOTE]
 > XSLT のデバッグは Visual Studio の Enterprise edition ではできるだけです。
 
-## <a name="evaluate-an-xpath-expression"></a>XPath 式を評価します。
+## <a name="evaluate-an-xpath-expression"></a>XPath 式を評価する
 
 次の手順を使用して、 *average.xsl 下*と*books.xml*ファイルから、[チュートリアル。XSLT スタイル シートのデバッグ](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files)ページ。
 

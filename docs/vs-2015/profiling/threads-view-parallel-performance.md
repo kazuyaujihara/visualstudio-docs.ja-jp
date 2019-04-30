@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441657"
 ---
 # <a name="threads-view-parallel-performance"></a>スレッド ビュー (並行処理のパフォーマンス)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ ms.locfileid: "60114796"
  実行セグメントでポイントを選択すると、コンカレンシー ビジュアライザーは、関連する呼び出し履歴でその時点を検索し、実行セグメント内の選択したポイントの上に黒いキャレットを表示して、呼び出し履歴そのものを **[現在のスタック]** タブに表示します。実行セグメント上の複数のポイントを選択できます。  
   
 > [!NOTE]
->  コンカレンシー ビジュアライザーは、実行セグメント上の選択を解決できないことがあります。 通常、このエラーは、セグメントの期間が 1 ミリ秒未満である場合に発生します。  
+> コンカレンシー ビジュアライザーは、実行セグメント上の選択を解決できないことがあります。 通常、このエラーは、セグメントの期間が 1 ミリ秒未満である場合に発生します。  
   
  現在選択されている時間の範囲内で使用可能な (隠されていない) すべてのスレッドの実行プロファイルを取得するには、アクティブな凡例で **[実行]** ボタンを選択します。  
   

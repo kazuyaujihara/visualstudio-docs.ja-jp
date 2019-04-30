@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: dbd4cf06a5d51a668acc5c980e7e93a94f2992f2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816461"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>方法: 有効にして、マネージ コードの完全なソリューション分析を無効にします。
 
-*完全ソリューション解析*が開いている Visual C# または Visual Basic ファイル、ソリューション内でのみコード分析の問題が発生することができますをもコードでファイルを Visual Studio の機能は閉じられます。 完全ソリューション解析は、既定では、*有効になっている*Visual Basic の場合と*無効になっている*Visual C# 用です。
+*完全ソリューション解析*が開いている Visual c# または Visual Basic ファイル、ソリューション内でのみコード分析の問題が発生することができますをもコードでファイルを Visual Studio の機能は閉じられます。 完全ソリューション解析は、既定では、*有効になっている*Visual basic の場合と*無効になっている*Visual c# 用です。
 
 すべてのファイルですべての問題が発生すると便利であることができますが、注意をそらすこともできます。 長くなる Visual Studio ソリューションが非常に大きいか、含まれるファイルの場合。 示されている問題の数を制限し、Visual Studio のパフォーマンスを向上させる、完全ソリューション解析を無効にすることができます。 必要に応じて簡単に、この機能を再有効化することができます。
 
@@ -26,7 +26,7 @@ ms.locfileid: "55931001"
 
 1. 開くには、**オプション** ダイアログ ボックスで、Visual Studio でメニュー バーで選択**ツール** > **オプション**します。
 
-1. **オプション** ダイアログ ボックスで、選択**テキスト エディター** > **C#** または**基本的な** >  **高度な**します。
+1. **オプション** ダイアログ ボックスで、選択**テキスト エディター** > **c#** または**基本的な** >  **高度な**します。
 
 1. 選択、**完全ソリューション解析を有効にする**チェック ボックスを完全なソリューション分析を有効または無効にするボックスをオフにします。 選択**OK**完了したら。
 

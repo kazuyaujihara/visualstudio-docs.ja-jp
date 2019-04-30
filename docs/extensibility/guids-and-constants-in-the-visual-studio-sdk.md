@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c79a22a81cd265d148987fc1660e6128ce0efceb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911743"
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Visual Studio SDK の Guid と定数
 <xref:Microsoft.VisualStudio.VSConstants>クラスは、選択した環境の Guid や定数へのアクセスを提供します。

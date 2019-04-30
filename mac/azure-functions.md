@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985008"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions の概要
 
@@ -103,7 +103,7 @@ Visual Studio for Mac での Azure Functions のサポートを使うと、開�
     |設定  |説明  |
     |---------|---------|
     |**App Service の名前**|新しい関数アプリを識別する、グローバルに一意な名前。|
-    |**サブスクリプション**|使用する Azure サブスクリプション。|
+    |**サブスクリプション**|使用する Azure のサブスクリプション。|
     |**[リソース グループ](/azure/azure-resource-manager/resource-group-overview)**|関数アプリを作成するリソース グループの名前。 新しいリソース グループを作成するには、**+** を選択します。|
     |**[サービス プラン](/azure/azure-functions/functions-scale)**|既存のプランを選択するか、カスタム プランを作成します。 ご自分の近くのリージョン、またはご使用の関数がアクセスする他のサービスに近い場所を選択します。|
 
@@ -147,9 +147,7 @@ local.settings.json に追加したすべての設定は、Azure の関数アプ
     - Http POST CRUD
     - パラメーター付き HTTP トリガー
 
-
 - **タイマー**: 定義されているスケジュールに基づいて、クリーンアップまたは他のバッチ タスクを実行します。 このテンプレートは名前とスケジュールの 2 つのフィールドを受け取ります。6 フィールドの CRON 式です。 詳しくは、[タイマーについての Azure Functions の記事](/azure/azure-functions/functions-create-scheduled-function)をご覧ください。
-
 
 - **キュー トリガー** – これは、Azure Storage キューに届いたメッセージに応答する関数です。 このテンプレートは、関数名だけでなく、**パス** (メッセージが読み取られるキューの名前) とストレージ アカウント**接続** (ストレージ アカウント接続文字列を含むアプリ設定の名前) を受け取ります。 詳しくは、[Queue Storage についての Azure Functions の記事](/azure/azure-functions/functions-create-storage-queue-triggered-function)をご覧ください。
 

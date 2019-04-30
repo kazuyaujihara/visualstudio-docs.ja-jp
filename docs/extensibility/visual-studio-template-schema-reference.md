@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: df36d255f5277ff9c91901b1ebe12daaef3c7c19
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950937"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio テンプレート スキーマ参照
 このセクションの XML 要素に関する情報を格納する *.vstemplate*ファイルで、プロジェクト テンプレート、項目テンプレート、およびスタート キットのメタデータを格納するファイルします。
@@ -37,18 +37,18 @@ ms.locfileid: "54959763"
 |[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|名前<br /><br /> [値]|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|CustomParameter|--|
 |[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|
-|[説明](../extensibility/description-element-visual-studio-templates.md)|--|パッケージ<br /><br /> ID|
+|[説明](../extensibility/description-element-visual-studio-templates.md)|--|Package<br /><br /> ID|
 |[EnableEditOfLocationField](../extensibility/enableeditoflocationfield-element-visual-studio-templates.md)|--|--|
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|
 |[フォルダー](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> フォルダー|名前|
 ||[非推奨]|--|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|
-|[非表示](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
-|[アイコン](../extensibility/icon-element-visual-studio-templates.md)|--|パッケージ<br /><br /> ID|
+|[[非表示]](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
+|[アイコン](../extensibility/icon-element-visual-studio-templates.md)|--|Package<br /><br /> ID|
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|
 |[MaxFrameworkVersion](../extensibility/maxframeworkversion-element-visual-studio-templates.md)|--|--|
-|[Name](../extensibility/name-element-visual-studio-templates.md)|--|パッケージ<br /><br /> ID|
+|[Name](../extensibility/name-element-visual-studio-templates.md)|--|Package<br /><br /> ID|
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|
 |[プロジェクト](../extensibility/project-element-visual-studio-templates.md)|フォルダー<br /><br /> ProjectItem|ファイル<br /><br /> TargetFileName<br /><br /> ReplaceParameters|
@@ -64,7 +64,7 @@ ms.locfileid: "54959763"
 |[参照](../extensibility/references-element-visual-studio-templates.md)|参照|--|
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|Version|
-|[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|パッケージ|
+|[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Package|
 |[ShowByDefault](../extensibility/showbydefault-visual-studio-templates.md)|--|--|
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|名前|
 |[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|

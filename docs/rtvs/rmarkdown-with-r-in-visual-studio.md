@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: df723845fe99b32cd41231353142e0f03b667977
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b8f87f831c8076b22a61d7032d16be8d13f21b62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998638"
 ---
 # <a name="create-r-markdown-documents"></a>R Markdown ドキュメントの作成
 
@@ -33,6 +33,7 @@ R Tools for Visual Studio (RTVS) には、R Markdown 項目テンプレート、
     install.packages("rmarkdown")
 
     ```
+
 1. 新しい R Markdown ファイルを作成します。それには、**[ファイル]**、**[新規]**、**[ファイル]** メニュー コマンドの順に移動し、**[R]** を選択し、一覧から **[R Markdown]** を選択します。 プロジェクトのコンテキストで、ソリューション エクスプローラー内のプロジェクトを右クリックし、**[R Markdown を追加]** を選択します (または、**[追加]**、**[新しいアイテム]** の順に移動し、一覧から **[R Markdown]** を選択します)。
 
 1. 新しいファイルの既定の内容は次のとおりです。

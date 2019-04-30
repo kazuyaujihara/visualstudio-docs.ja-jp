@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aba4d37d672d3e544d65f46c6f32062f9b2637eb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: df33215bab20be8744ed2455ef87f1a037871f95
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419714"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>[Web ブラウザー]\([オプション] ダイアログ ボックス - [環境])
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ ms.locfileid: "59663980"
 内部 Web ブラウザーと Internet Explorer のオプションを設定します。 このダイアログ ボックスにアクセスするには、**[ツール]** メニューの **[オプション]** をクリックし、**[環境]** フォルダーを展開して **[Web ブラウザー]** を選択します。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 > [!IMPORTANT]
->  Web の特定のファイルまたはコンポーネントを開いて、コンピューター上のコードを実行できます。  
+> Web の特定のファイルまたはコンポーネントを開いて、コンピューター上のコードを実行できます。  
   
  ホーム ページ  
  IDE Web ブラウザーを開いたときに表示されるページを設定します。  
@@ -61,7 +61,7 @@ ms.locfileid: "59663980"
   クリックして、**[インターネットのプロパティ]** ダイアログ ボックスで Internet Explorer のオプションを変更します。 このダイアログ ボックスの変更内容は、内部 Web ブラウザーと、Visual Studio IDE 以外 (たとえば、[スタート] メニュー) で開始された Internet Explorer のインスタンスの両方に影響があります。  
   
 > [!NOTE]
->  [ブラウザーの選択] ダイアログ ボックスで、別の外部 Web ブラウザーを使用して Visual Studio 内部 Web ブラウザー (Internet Explorer のいずれかのバージョン) を置き換えます。  
+> [ブラウザーの選択] ダイアログ ボックスで、別の外部 Web ブラウザーを使用して Visual Studio 内部 Web ブラウザー (Internet Explorer のいずれかのバージョン) を置き換えます。  
   
 ## <a name="see-also"></a>関連項目
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)   

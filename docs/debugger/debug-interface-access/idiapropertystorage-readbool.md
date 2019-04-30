@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5cc189283d6e9910b0b01d3d3e1ca28165bf500
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839694"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
 読み取り`BOOL`プロパティ セット内の値。
@@ -43,7 +43,7 @@ HRESULT ReadBOOL ( 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。 返します`E_INVALIDARG`型のプロパティがない場合`BOOL`します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  一貫性のある結果は、解釈、`BOOL`値の 0 以外の値が実行されるように`TRUE`0 は`FALSE`します。
 
 ## <a name="see-also"></a>関連項目

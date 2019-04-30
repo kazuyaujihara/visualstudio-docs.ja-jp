@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b1f87b9548aceab58e1a8e1c6178a1dca759c312
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825990"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>方法: Office ソリューションを開発するコンピューターを構成する方法
   Visual Studio の Microsoft Office Developer Tools を使用できるように開発用コンピューターを構成するには、次のトピックの手順を実行します。 これらの手順を実行するには、開発用コンピューターの管理特権を保持している必要があります。

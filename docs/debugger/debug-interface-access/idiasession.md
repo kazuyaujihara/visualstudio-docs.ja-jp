@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c69383eacfdb39a65cd9a791185d6793e9e6f681
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832308"
 ---
 # <a name="idiasession"></a>IDiaSession
 デバッグ シンボルのクエリ コンテキストを提供します。
@@ -34,7 +34,7 @@ IDiaSession : IUnknown
 |メソッド|説明|
 |------------|-----------------|
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|このシンボル ストア内のシンボルに対応する実行可能ファイルの読み込みアドレスを取得します。 これは、同じ値に渡された、`put_loadAddress`メソッド。|
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|このシンボル ストアのシンボルに対応する実行可能ファイルの読み込みアドレスを設定します。 **注:** するを取得する場合は、このメソッドを呼び出すことが重要、`IDiaSession`オブジェクトし、オブジェクトの使用を開始する前にします。|
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|このシンボル ストアのシンボルに対応する実行可能ファイルの読み込みアドレスを設定します。 **注:** 取得する場合は、このメソッドを呼び出すことが重要、`IDiaSession`オブジェクトし、オブジェクトの使用を開始する前にします。|
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|グローバル スコープへの参照を取得します。|
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|シンボル ストアに含まれているすべてのテーブルの列挙子を取得します。|
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|静的な場所にあるすべての名前付きシンボルの列挙子を取得します。|
@@ -70,7 +70,7 @@ IDiaSession : IUnknown
 |[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|指定されたインライン関数の名前に対応するインライン フレームのシンボルの列挙を返します。|
 |[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|指定したソースの場所に対応するインライン フレームのシンボルの列挙を返します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 呼び出しすることが重要、 [idiasession::put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)メソッドを作成した後、`IDiaSession`オブジェクト-に渡される値と、`put_loadAddress`メソッドは 0 以外である必要があります: するシンボルの仮想アドレス (VA) プロパティのアクセスできます。 どのようなプログラムにはデバッグ中の実行可能ファイルが読み込まれてからの読み込みアドレスが取得されます。 たとえば、Win32 関数を呼び出すことができます`GetModuleInformation`ハンドルを指定して実行可能ファイル、実行可能ファイルの読み込みアドレスを取得します。
 
 ## <a name="example"></a>例
@@ -109,8 +109,8 @@ void InitializeDIA(const char *szFilename)
 }
 ```
 
-## <a name="requirements"></a>要件
-ヘッダー: Dia2.h
+## <a name="requirements"></a>必要条件
+ヘッダー:Dia2.h
 
 ライブラリ: diaguids.lib
 

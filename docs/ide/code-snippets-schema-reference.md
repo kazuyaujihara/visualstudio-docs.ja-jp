@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974983"
 ---
 # <a name="code-snippets-schema-reference"></a>コード スニペット スキーマ リファレンス
 
@@ -320,9 +320,6 @@ IntelliSense コード スニペットの一般情報を指定します。
 
 IntelliSense コード スニペットによって使用されるインポートされた名前空間を指定します。
 
-> [!NOTE]
-> `Import` 要素は、Visual Basic プロジェクトでのみサポートされます。
-
 ```xml
 <Import>
     <Namespace>... </Namespace>
@@ -340,9 +337,6 @@ IntelliSense コード スニペットによって使用されるインポート
 ## <a name="imports-element"></a>Imports 要素
 
 複数の `Import` 要素をグループ化します。
-
-> [!NOTE]
-> `Imports` 要素は、Visual Basic プロジェクトでのみサポートされます。
 
 ```xml
 <Imports>
@@ -425,10 +419,7 @@ IntelliSense コード スニペットによって使用されるインポート
 
 ## <a name="namespace-element"></a>Namespace 要素
 
-コード スニペットをコンパイルおよび実行するためにインポートする必要のある名前空間を指定します。 `Namespace` 要素で指定された名前空間が存在しない場合、コードの先頭に `Imports` ステートメントとして自動的に追加されます。
-
-> [!NOTE]
-> `Namespace` 要素は、Visual Basic プロジェクトでのみサポートされます。
+コード スニペットをコンパイルおよび実行するためにインポートする必要のある名前空間を指定します。 `Namespace` 要素で指定された名前空間が存在しない場合、コードの先頭の `using` ディレクティブまたは `Imports` ステートメントに自動的に追加されます。
 
 ```xml
 <Namespace>
@@ -569,11 +560,11 @@ Visual Studio がコード スニペットをどのように挿入するかを�
 
 テキスト値は、次のいずれかの値である必要があります。
 
--   `SurroundsWith`: 選択したコードの周りにコード スニペットを配置します。
+- `SurroundsWith`: 選択したコードの周りにコード スニペットを配置します。
 
--   `Expansion` : カーソル位置にコード スニペットを挿入します。
+- `Expansion` : カーソル位置にコード スニペットを挿入します。
 
--   `Refactoring`: C# のリファクタリング中にコード スニペットを使用するよう指定します。 `Refactoring` は、カスタムのコード スニペットには使用できません。
+- `Refactoring`: C# のリファクタリング中にコード スニペットを使用するよう指定します。 `Refactoring` は、カスタムのコード スニペットには使用できません。
 
 ## <a name="snippettypes-element"></a>SnippetTypes 要素
 

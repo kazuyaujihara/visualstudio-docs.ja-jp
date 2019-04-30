@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961889"
 ---
 # <a name="how-to-programmatically-send-email"></a>方法: プログラムによって電子メールを送信します。
   この例は、ドメイン名を持つ連絡先に電子メール メッセージを送信**example.com**が電子メール アドレス。

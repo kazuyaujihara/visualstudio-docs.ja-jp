@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d2a1eea79b0ac2d80fb2b75043d4462e73928798
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909555"
 ---
 # <a name="legacy-language-service-features"></a>従来の言語サービスの機能
 マネージ パッケージ フレームワーク (MPF) の言語サービスは、1 つ以上をサポートできる[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]構文の強調表示、IntelliSense、ブレークポイントの検証などの機能です。 各機能は独立して実装できますが、パーサーとスキャナーのみを必要とするスキャナー構文の強調表示を除くすべてが必要です。

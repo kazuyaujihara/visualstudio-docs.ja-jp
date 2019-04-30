@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 36ae392173a18796c53100599fbf5f5fb5997beb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796859"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147:透過コードは、セキュリティ アサートを使用してはならない
 

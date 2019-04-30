@@ -46,7 +46,7 @@
       href: workspace-language-services.md
     - name: ビルド
       href: workspace-build.md
-- name: メニューとコマンドの拡張
+- name: メニューとコマンドを拡張する
   href: extending-menus-and-commands.md
   items:
     - name: メニュー コマンドを使用した拡張機能の作成
@@ -103,9 +103,9 @@
       href: adding-search-to-a-tool-window.md
     - name: イベントのサブスクライブ
       href: subscribing-to-an-event.md
-    - name: 出力ウィンドウの拡張
+    - name: 出力ウィンドウを拡張する
       href: extending-the-output-window.md
-    - name: プロパティ、タスク一覧、出力、オプション ウィンドウの拡張
+    - name: プロパティ、タスク一覧、出力、オプション ウィンドウを拡張する
       href: extending-the-properties-task-list-output-and-options-windows.md
     - name: モーダル ダイアログ ボックスの作成と管理
       href: creating-and-managing-modal-dialog-boxes.md
@@ -114,7 +114,7 @@
   items:
     - name: エディターの項目テンプレートを使用した拡張機能の作成
       href: creating-an-extension-with-an-editor-item-template.md
-    - name: エディターと言語サービスの拡張
+    - name: エディターと言語サービスを拡張する
       href: extending-the-editor-and-language-services.md
       items:
         - name: 言語サービスとエディターの拡張機能の概要
@@ -159,7 +159,7 @@
           href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
         - name: 'チュートリアル: エディターの拡張機能から DTE オブジェクトにアクセスする'
           href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
-    - name: カスタム エディターとデザイナーの作成
+    - name: カスタム エディターとデザイナーを作成する
       href: creating-custom-editors-and-designers.md
       items:
         - name: 'チュートリアル: カスタム エディターを作成する'
@@ -191,7 +191,9 @@
               href: how-to-open-standard-editors.md
             - name: 開いているドキュメントのエディターを開く
               href: how-to-open-editors-for-open-documents.md
-- name: プロジェクトの拡張
+        - name: XAML デザイナーの拡張性の移行に関するガイド
+          href: xaml-designer-extensibility-migration.md
+- name: プロジェクトを拡張する
   href: extending-projects.md
   items:
     - name: 基本的なプロジェクト システムの作成、パート 1
@@ -210,14 +212,14 @@
       href: persisting-the-property-of-a-project-item.md
     - name: ユニバーサル Windows プロジェクトの管理
       href: managing-universal-windows-projects.md
-- name: ソリューションの拡張
+- name: ソリューションを拡張する
   href: extending-solutions.md
   items:
-    - name: ソリューション エクスプ ローラーのフィルターの拡張
+    - name: ソリューション エクスプローラーのフィルターを拡張する
       href: extending-the-solution-explorer-filter.md
     - name: ソリューションでのプロジェクトの読み込みの管理
       href: managing-project-loading-in-a-solution.md
-- name: カスタム プロジェクト テンプレートと項目テンプレートの作成
+- name: カスタム プロジェクト テンプレートと項目テンプレートを作成する
   href: creating-custom-project-and-item-templates.md
   items:
     - name: Visual Studio 2017 のカスタム プロジェクトと項目テンプレートの更新
@@ -335,7 +337,7 @@
           href: wizardextension-element-visual-studio-templates.md
     - name: Visual Studio テンプレート マニフェスト スキーマ参照
       href: visual-studio-template-manifest-schema-reference.md
-- name: ユーザー設定とオプションの拡張
+- name: ユーザー設定とオプションを拡張する
   href: extending-user-settings-and-options.md
   items:
     - name: オプション ページの作成
@@ -348,14 +350,14 @@
       href: getting-service-information-from-the-settings-store.md
     - name: ユーザー設定ストアへの書き込み
       href: writing-to-the-user-settings-store.md
-- name: プロパティとプロパティ ウィンドウの拡張
+- name: プロパティとプロパティ ウィンドウを拡張する
   href: extending-properties-and-the-property-window.md
   items:
     - name: プロパティ ウィンドウへのプロパティの公開
       href: exposing-properties-to-the-properties-window.md
     - name: プロジェクト プロパティの取得
       href: getting-project-properties.md
-- name: Visual Studio の他の部分の拡張
+- name: Visual Studio の他の部分を拡張する
   href: extending-other-parts-of-visual-studio.md
   items:
     - name: VSPackage を使用した拡張機能の作成
@@ -364,7 +366,7 @@
       href: creating-a-wpf-toolbox-control.md
     - name: Windows フォーム ツールボックス コントロールの作成
       href: creating-a-windows-forms-toolbox-control.md
-    - name: ステータス バーの拡張
+    - name: ステータス バーを拡張する
       href: extending-the-status-bar.md
     - name: カスタム スタート ページの作成
       href: creating-a-custom-start-page.md
@@ -425,11 +427,11 @@
       href: ux-guidelines/evaluation-tools-for-visual-studio.md
     - name: モニターごとの認識のサポート
       href: ux-guidelines/per-monitor-awareness-extenders.md
-- name: DPI 問題への対応
+- name: DPI の問題に対処する
   href: addressing-dpi-issues2.md
 - name: イメージ サービスとカタログ
   href: image-service-and-catalog.md
-- name: サービスの使用と提供
+- name: サービスを使用および提供する
   href: using-and-providing-services.md
   items:
     - name: サービスを取得する
@@ -440,7 +442,7 @@
       href: how-to-provide-an-asynchronous-visual-studio-service.md
     - name: サービスのトラブルシューティング
       href: how-to-troubleshoot-services.md
-- name: VSPackage の管理
+- name: VSPackage を管理する
   href: managing-vspackages.md
   items:
     - name: 実験用インスタンス
@@ -463,7 +465,7 @@
       href: troubleshooting-vspackages.md
 - name: シェル (統合または分離)
   href: 'https://vspartner.com/pages/vsshells'
-- name: Visual Studio 拡張機能の配布
+- name: Visual Studio 拡張機能を発送する
   href: shipping-visual-studio-extensions.md
   items:
     - name: VSIX プロジェクト テンプレート

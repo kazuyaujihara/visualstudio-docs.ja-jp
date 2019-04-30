@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ac751b7ec130b6bfbb18752c02b491b6c342f172
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57874700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816930"
 ---
 # <a name="configure-fxcop-analyzers"></a>FxCop アナライザーを構成します。
 
@@ -25,7 +25,7 @@ ms.locfileid: "57874700"
 - 以降のバージョン 2.6.3、 [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)を通じて NuGet がパッケージ化、 [.editorconfig ファイル](#editorconfig-file)します。 [構成可能なオプション](fxcop-analyzer-options.md)let のどの部分を絞り込む、コードベースを分析します。
 
 > [!TIP]
-> FxCop 静的コード分析と FxCop アナライザーの違いについては、[FxCop アナライザー FAQ](fxcop-analyzers-faq.md)を参照してください。
+> FxCop 静的コード分析と FxCop アナライザーの違いについては、次を参照してください。 [FxCop アナライザー FAQ](fxcop-analyzers-faq.md)します。
 
 ## <a name="fxcop-analyzer-rule-sets"></a>FxCop アナライザーの規則セット
 
@@ -42,7 +42,7 @@ FxCop アナライザーの NuGet パッケージには、次の規則のカテ�
 - セキュリティ
 - 使い方
 
-詳細については、[Roslyn アナライザーの規則セット](analyzer-rule-sets.md)を参照してください。
+詳細については、次を参照してください。 [Roslyn アナライザーの規則セット](analyzer-rule-sets.md)します。
 
 ## <a name="editorconfig-file"></a>EditorConfig ファイル
 

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dab4013bf3921a2af4f69d464c10d1e70f9407b3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996997"
 ---
 # <a name="edit-xslt-style-sheets"></a>XSLT スタイル シートの編集
 
@@ -41,7 +41,7 @@ XSL 変換を実行して、XML エディターからの出力を表示できま
 
 **XSLT をデバッグします。**
 
-XML エディターで XSLT ファイルから XSLT デバッガーを起動することができます。 このデバッガーは、XSLT ファイルでのブレークポイントの設定や、XSLT 実行状態の表示などをサポートしています。 XSLT 変数の上にカーソルを置くと、変数の値を示すツール ヒントが表示されます。 このデバッガーを使用すると、スタイル シートのデバッグや、他のアプリケーションから呼び出されたコンパイル済みの XSL 変換のデバッグが可能です。 詳細については、[XSLT のデバッグ](../xml-tools/debugging-xslt.md)を参照してください。
+XML エディターで XSLT ファイルから XSLT デバッガーを起動することができます。 このデバッガーは、XSLT ファイルでのブレークポイントの設定や、XSLT 実行状態の表示などをサポートしています。 XSLT 変数の上にカーソルを置くと、変数の値を示すツール ヒントが表示されます。 このデバッガーを使用すると、スタイル シートのデバッグや、他のアプリケーションから呼び出されたコンパイル済みの XSL 変換のデバッグが可能です。 詳細については、次を参照してください。 [XSLT のデバッグ](../xml-tools/debugging-xslt.md)します。
 
 ## <a name="see-also"></a>関連項目
 

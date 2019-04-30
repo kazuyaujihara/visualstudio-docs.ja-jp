@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929939"
 ---
 # <a name="threads-view"></a>スレッド ビュー
 スレッド ビューでは、システム上のウィンドウに関連付けられているすべてのスレッドのフラットな一覧を示します。 スレッドの ID とスレッドごとのモジュール名が表示されます。 プロセスは含まれていませんが、選択したスレッドを所有するプロセスを簡単に見つけることができます。

@@ -8,11 +8,11 @@ ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: d98ffc8c9d864afaf0b42d029a4d65850f64d806
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972714"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Team Foundation バージョン管理に接続する
 
@@ -58,7 +58,7 @@ TEE CLC のセットアップを行うには、2 つの方法があります。
 
 1. macOS ターミナルのアプリケーションを起動します。
 1. ターミナルと [Homebrew ホーム ページ](https://brew.sh/)上の手順を使用して、Homebrew をインストールします。
-1. Homebrew がインストールされたら、ターミナルから次のコマンドを実行します。 `brew install tee-clc`
+1. Homebrew がインストールされたら、ご利用のターミナルから次のコマンドを実行します。`brew install tee-clc`
 
 **TEE-CLC を手動でセットアップするには**:
 

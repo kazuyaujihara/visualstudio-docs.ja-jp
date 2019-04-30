@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1a0e5007163d10aee15e39759448928e44ae5a68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815434"
 ---
 # <a name="work-with-mail-items"></a>メールの項目を操作します。
   <xref:Microsoft.Office.Interop.Outlook.MailItem>クラスにはメソッドとプロパティを使用する電子メール メッセージを使用したタスクの実行が含まれています。
@@ -34,7 +34,7 @@ ms.locfileid: "56629210"
 |添付ファイルを追加します。|[方法: プログラムによって Outlook の電子メール アイテムにファイルを添付します。](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|
 |すべての未読メ ッ セージを反復処理します。|[方法: プログラムによって、受信トレイから未読メ ッ セージを取得します。](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|
 
- Outlook タスクと Outlook オブジェクト モデルの詳細については、[Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)を参照してください。
+ Outlook タスクと Outlook オブジェクト モデルの詳細については、次を参照してください。 [Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [連絡先項目を操作します。](../vsto/working-with-contact-items.md)

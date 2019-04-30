@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: aabbe05d31a9c95dcf8e5eb5d03caf60e923c65c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982404"
 ---
 # <a name="user-interface-reference-office-development-in-visual-studio"></a>ユーザー インターフェイス リファレンス (Visual Studio での Office 開発)
   次に示すユーザー インターフェイス要素は、Visual Studio での Office プロジェクトの一部です。

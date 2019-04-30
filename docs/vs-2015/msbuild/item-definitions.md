@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433588"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60090760"
  ItemDefinitionGroup に定義された項目メタデータは、既定のメタデータの宣言に過ぎません。 ItemGroup からメタデータ値を取り込む項目を定義しない限り、ItemDefinitionGroup に定義されたメタデータは適用されません。  
   
 > [!NOTE]
->  このトピックでは、多くの例に ItemDefinitionGroup 要素が示されていますが、それに対応する ItemGroup 定義は例の簡潔さを保つために省略しています。  
+> このトピックでは、多くの例に ItemDefinitionGroup 要素が示されていますが、それに対応する ItemGroup 定義は例の簡潔さを保つために省略しています。  
   
  ItemGroup に明示的に定義されたメタデータは、ItemDefinitionGroup 内のメタデータより優先されます。 ItemDefinitionGroup 内のメタデータは、ItemGroup に対応するメタデータが定義されていない場合のみ適用されます。 次に例を示します。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "60090760"
  この例では、項目 "i" ではメタデータ "m" が明示的に定義されていないため、既定のメタデータ "m" が項目 "i" に適用されます。 ただし、項目 "i" でメタデータ "n" が既に定義されているため、既定のメタデータ "n" は項目 "i" には適用されません。  
   
 > [!NOTE]
->  XML 要素名およびパラメーター名では、大文字と小文字が区別されます。 項目メタデータ名と項目\//プロパティ名では、\-大文字と小文字は区別されません。 したがって、大文字と小文字のみが異なる名前の ItemDefinitionGroup 項目は同じ ItemGroup として扱う必要があります。  
+> XML 要素名およびパラメーター名では、大文字と小文字が区別されます。 項目メタデータ名と項目\//プロパティ名では、\-大文字と小文字は区別されません。 したがって、大文字と小文字のみが異なる名前の ItemDefinitionGroup 項目は同じ ItemGroup として扱う必要があります。  
   
 ## <a name="value-sources"></a>値のソース  
  ItemDefinitionGroup に定義されたメタデータには、以下のさまざまなソースから値を割り当てることができます。  
@@ -83,7 +83,7 @@ ms.locfileid: "60090760"
 - CDATA セクション \<\!\[CDATA\[この部分は解析されない\]\]\>  
   
 > [!NOTE]
->  ItemDefinitionGroup 要素は ItemGroup 要素より先に処理されるため、ItemGroup の項目メタデータは ItemDefinitionGroup メタデータの宣言では役に立ちません。  
+> ItemDefinitionGroup 要素は ItemGroup 要素より先に処理されるため、ItemGroup の項目メタデータは ItemDefinitionGroup メタデータの宣言では役に立ちません。  
   
 ## <a name="additive-and-multiple-definitions"></a>追加が可能な複数の定義  
  定義を追加したり複数の ItemDefinitionGroup を使用したりするときには、次の点に注意してください。  
@@ -128,7 +128,7 @@ ms.locfileid: "60090760"
  この例では、メタデータ "m" \(m1\) の定義済みの値が新しい値 \(m2\) に追加されるため、最終的な値は "m1;m2" となります。  
   
 > [!NOTE]
->  これは同じ ItemDefinitionGroup でも発生します。  
+> これは同じ ItemDefinitionGroup でも発生します。  
   
  定義済みのメタデータ指定をオーバーライドすると、最後の指定が優先されます。 次の例では、メタデータ "m" の最終的な値が "m1" から "m1a" に変わります。  
   
@@ -159,7 +159,7 @@ ms.locfileid: "60090760"
  この例では、"Configuration" プロパティの値が "Debug" である場合のみ項目 "i" の既定のメタデータ "m1" が追加されます。  
   
 > [!NOTE]
->  条件では、ローカル メタデータ参照のみサポートされます。  
+> 条件では、ローカル メタデータ参照のみサポートされます。  
   
  前の ItemDefinitionGroup に定義されたメタデータへの参照は、定義グループではなく項目に対してローカルです。 つまり、参照は項目をスコープとします。 次に例を示します。  
   

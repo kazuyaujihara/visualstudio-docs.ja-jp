@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1eac2d38e0444cb6ee6624863d1cb3e33bae3314
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856621"
 ---
 # <a name="keybinding-element"></a>KeyBinding 要素
 KeyBinding 要素には、コマンドのキーボード ショートカットを指定します。
@@ -40,10 +40,10 @@ KeyBinding 要素には、コマンドのキーボード ショートカット�
 |ID|必須。|
 |エディター|必須。 エディターの GUID では、このショートカット キーがアクティブになる編集コンテキストを示します。 バインドのグローバル スコープの値は、"guidVSStd97 です"。|
 |key1|必須。 有効な値はすべて判読英数字、また 2 桁の 16 進値 0x と[VK_constants](/windows/desktop/inputdev/virtual-key-codes)します。|
-|mod1|任意。 任意の組み合わせ**Ctrl**、 **Alt**、および**Shift**スペースで区切られました。|
-|key2|任意。 有効な値はすべて判読英数字、また 2 桁の 16 進値 0x と[VK_constants](/windows/desktop/inputdev/virtual-key-codes)します。|
-|mod2|任意。 任意の組み合わせ**Ctrl**、 **Alt**、および**Shift**スペースで区切られました。|
-|エミュレーター|任意。|
+|mod1|省略可能です。 任意の組み合わせ**Ctrl**、 **Alt**、および**Shift**スペースで区切られました。|
+|key2|省略可能です。 有効な値はすべて判読英数字、また 2 桁の 16 進値 0x と[VK_constants](/windows/desktop/inputdev/virtual-key-codes)します。|
+|mod2|省略可能です。 任意の組み合わせ**Ctrl**、 **Alt**、および**Shift**スペースで区切られました。|
+|エミュレーター|省略可能です。|
 |条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|
 
 ### <a name="child-elements"></a>子要素

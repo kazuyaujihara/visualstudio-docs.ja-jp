@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ec82c71a359bed423785cc914c58b97db954f4f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994679"
 ---
 # <a name="debugging-a-t4-text-template"></a>T4 テキスト テンプレートのデバッグ
 テキスト テンプレートにブレークポイントを設定できます。 デザイン時テキスト テンプレートをデバッグするには、テキスト テンプレート ファイルを保存し、ソリューション エクスプローラーのファイルのショートカット メニューの**T4 テンプレートのデバッグ**を選択します。 実行時テキスト テンプレートをデバッグするには、属するアプリケーションを単にデバッグします。

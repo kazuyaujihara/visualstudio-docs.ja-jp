@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8fab86b39cd927d516bc627630a29feee1698daa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536817"
 ---
 # <a name="initialize-correlation-dialog-box"></a>[関連付け初期化] ダイアログ ボックス
 
-**関連付けの初期化** ダイアログ ボックスは、ワークフロー デザイナーで編集に使用される、<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>のプロパティ、<xref:System.ServiceModel.Activities.InitializeCorrelation>アクティビティ。 詳細については、[InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)を参照してください。
+**関連付けの初期化** ダイアログ ボックスは、ワークフロー デザイナーで編集に使用される、<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>のプロパティ、<xref:System.ServiceModel.Activities.InitializeCorrelation>アクティビティ。 詳細については、次を参照してください。 [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)します。
 
 次の表に、ユーザー インターフェイス (UI) 要素の**関連付けの初期化** ダイアログ ボックス。
 

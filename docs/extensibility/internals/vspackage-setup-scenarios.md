@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7a8c8d0501222616ad97b745ce69e102ebd54835
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857253"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage のセットアップ シナリオ
 
@@ -45,18 +45,18 @@ VSPackage を登録するレジストリ値を使用するなど、[!INCLUDE[vsi
 図に示すように共有コンポーネントには、常にインストールされている Feat_Common 機能の一部が行われます。 によって Feat_VS2002 と Feat_VS2003 機能を表示するには、ユーザーを統合する VSPackage をする、Visual Studio のバージョンにインストール時に選択できます。 ユーザーは、Windows インストーラーのメンテナンス モードを使用して、追加またはをここで追加または異なるバージョンの Visual Studio から VSPackage の登録情報を削除、機能を削除することができますも。
 
 > [!NOTE]
-> 機能の表示の列を 0 に設定します。 非表示にします。 1 などの低レベルの列値によりは常にインストールするようになります。 詳細については、[INSTALLLEVEL プロパティ](/windows/desktop/Msi/installlevel)と[機能テーブル](/windows/desktop/Msi/feature-table)を参照してください。
+> 機能の表示の列を 0 に設定します。 非表示にします。 1 などの低レベルの列値によりは常にインストールするようになります。 詳細については、次を参照してください。 [INSTALLLEVEL プロパティ](/windows/desktop/Msi/installlevel)と[機能テーブル](/windows/desktop/Msi/feature-table)します。
 
 ## <a name="scenario-2-shared-vspackage-update"></a>シナリオ 2:共有 VSPackage の更新
 
 このシナリオでは、シナリオ 1 で、VSPackage のインストーラーの更新バージョンが付属しています。 便宜上、更新プログラムは、Visual Studio のサポートを追加しますが、でしたも単純なセキュリティ更新プログラムをするか、またはバグ修正のサービス パック。 新しいコンポーネントをインストールするための Windows インストーラーの規則では、システムに既に変更されていないコンポーネントが再コピーしないことが必要です。 この場合は、バージョン 1.0 が既に存在すると、システムは Comp_MyVSPackage.dll 更新されたコンポーネントを上書きし、Comp_VS2005_Reg そのコンポーネントの新機能 Feat_VS2005 を追加することもできます。
 
 > [!CAUTION]
-> VSPackage を複数のバージョンの間で共有されるたびに[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]VSPackage の今後のリリースが Visual Studio の以前のバージョンとの下位互換性を維持することが重要です。 下位互換性を維持することはできませんがサイド バイ サイドで、プライベートの Vspackage を使用する必要があります。 詳細については、[をサポートしている複数のバージョンの Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)を参照してください。
+> VSPackage を複数のバージョンの間で共有されるたびに[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]VSPackage の今後のリリースが Visual Studio の以前のバージョンとの下位互換性を維持することが重要です。 下位互換性を維持することはできませんがサイド バイ サイドで、プライベートの Vspackage を使用する必要があります。 詳細については、次を参照してください。[をサポートしている複数のバージョンの Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)します。
 
 ![VS 共有 VS パッケージ更新プログラムのインストーラー](../../extensibility/internals/media/vs_sharedpackageupdate.gif "VS_SharedPackageUpdate")
 
-このシナリオは、マイナー アップグレード用の Windows インストーラーのサポートの活用、新しい VSPackage インストーラーを表示します。 ユーザーが単純にバージョン 1.1 をインストールし、バージョン 1.0 をアップグレードします。 ただし、バージョンは 1.0 システムにする必要はありません。 同じインストーラーは、バージョン 1.0 のないシステムでバージョン 1.1 がインストールされます。 この方法でマイナー アップグレードを提供することの利点は、ことは、アップグレードのインストーラーと完全な製品インストーラーの開発の作業を経由する必要はありません。 1 つのインストーラーは、両方のジョブです。 セキュリティ修正プログラムまたはサービス パックが代わりに Windows インストーラーの修正プログラムの利点を活かす。 詳細については、[パッチとアップグレード](/windows/desktop/Msi/patching-and-upgrades)を参照してください。
+このシナリオは、マイナー アップグレード用の Windows インストーラーのサポートの活用、新しい VSPackage インストーラーを表示します。 ユーザーが単純にバージョン 1.1 をインストールし、バージョン 1.0 をアップグレードします。 ただし、バージョンは 1.0 システムにする必要はありません。 同じインストーラーは、バージョン 1.0 のないシステムでバージョン 1.1 がインストールされます。 この方法でマイナー アップグレードを提供することの利点は、ことは、アップグレードのインストーラーと完全な製品インストーラーの開発の作業を経由する必要はありません。 1 つのインストーラーは、両方のジョブです。 セキュリティ修正プログラムまたはサービス パックが代わりに Windows インストーラーの修正プログラムの利点を活かす。 詳細については、次を参照してください。[パッチとアップグレード](/windows/desktop/Msi/patching-and-upgrades)します。
 
 ## <a name="scenario-3-side-by-side-vspackage"></a>シナリオ 3:サイド バイ サイド vs パッケージ
 
@@ -74,7 +74,7 @@ VSPackage を登録するレジストリ値を使用するなど、[!INCLUDE[vsi
 
 ![VS サイド バイ サイド VS パッケージ更新プログラムのインストーラー](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-サイド バイ サイド アセンブリの展開の詳細については、[展開の簡素化すると、.NET Framework での DLL Hell の解決](https://msdn.microsoft.com/library/ms973843.aspx)を参照してください。
+サイド バイ サイド アセンブリの展開の詳細については、次を参照してください。[展開の簡素化すると、.NET Framework での DLL Hell の解決](https://msdn.microsoft.com/library/ms973843.aspx)します。
 
 ## <a name="see-also"></a>関連項目
 

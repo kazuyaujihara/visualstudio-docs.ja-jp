@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999376"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>デバッガーを使用して、または使用せずにプロファイリング ツールを実行する
 
@@ -33,7 +33,7 @@ Visual Studio には、パフォーマンス測定とプロファイルのため
 - デバッガー自体では、例外のインターセプトやモジュール ロード イベントなど、必要なデバッガー操作を行うため、パフォーマンス時間が変わります。
 - **パフォーマンス プロファイラー** ツールのリリース ビルド パフォーマンスの数値が最も厳密かつ正確です。 デバッガー統合ツールの結果は、他のデバッグ関連測定値と比較するときに最も役立ちます。
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> デバッグ中にプロファイリング データを収集する
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> デバッグ中にプロファイリング データを収集する
 
 **[デバッグ]**、**[デバッグ開始]** の順に選択するか、**F5** キーを押して Visual Studio でデバッグを開始すると、既定では **[診断ツール]** ウィンドウが表示されます。 手動で開くには、**[デバッグ]**、**[Windows]**、**[診断ツールの表示]** の順に選択します。 **[診断ツール]** ウィンドウには、イベント、プロセス メモリ、CPU 使用率に関する情報が表示されます。
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: df32012a100d36c8d288b6b988b9498ff4afd3b3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832556"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
 ファイルの位置によって指定された実行可能ファイルのバイト数を指定するクライアント アプリケーションを有効にします。
@@ -35,14 +35,14 @@ IDiaReadExeAtOffsetCallback : IUnknown
 |------------|-----------------|
 |[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|指定した実行可能ファイルから指定したオフセットから始まるバイト数を読み取ります。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  クライアント アプリケーションは、実行可能ファイルのファイルに絶対オフセットを使用する実行可能ファイルのバイト数を提供するために、このインターフェイスを実装します。 相対仮想アドレスを使用するには、実装、 [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)インターフェイス。
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
  このメソッドは、クライアント アプリケーションによって実装されに渡される、 [idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッド、ファイルの読み取りの代替方法として。
 
-## <a name="requirements"></a>要件
- ヘッダー: Dia2.h
+## <a name="requirements"></a>必要条件
+ ヘッダー:Dia2.h
 
  ライブラリ: diaguids.lib
 

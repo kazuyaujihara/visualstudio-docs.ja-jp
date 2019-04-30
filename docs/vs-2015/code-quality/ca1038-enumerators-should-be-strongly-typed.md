@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: be143ecb57a952c45e518eef0d83d52274075614
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 84b6ae6ef0c63870ad9dc593fd0cf2e166e65397
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559838"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038:列挙子は厳密に型指定されていなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58962773"
 ## <a name="cause"></a>原因
  パブリックまたはプロテクト型が実装<xref:System.Collections.IEnumerator?displayProperty=fullName>の厳密に型指定されたバージョンは示しませんが、<xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName>プロパティ。 次の種類から派生した型は、この規則から除外されます。
 
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+- <xref:System.Collections.DictionaryBase?displayProperty=fullName>
 
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+- <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則の説明
  この規則で<xref:System.Collections.IEnumerator>を実装することも、厳密に型指定されたバージョンの<xref:System.Collections.IEnumerator.Current%2A>プロパティ ユーザーは、インターフェイスによって提供される機能を使用するときに、厳密な型を戻り値をキャストする必要がないようにします。 このルールは、実装する型前提としています。<xref:System.Collections.IEnumerator>よりも厳密な型のインスタンスのコレクションを格納<xref:System.Object>します。

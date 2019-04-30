@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66d6aa6a11ef0ce308c5ba2b089aaa8170b6441f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 30a33a434540fded8daab0628d0bd6dd7fb0ff38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412267"
 ---
 # <a name="logical-operators-in-search-expressions"></a>検索式の論理演算子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54760071"
 論理演算子を使用すると、より単純な検索式からより複雑な検索式を作成して、コンテンツの検索を絞り込むことができます。 次の表に示すように、論理演算子では、複数の検索用語を検索クエリでどのように組み合わせる必要があるかを指定します。  
   
 > [!IMPORTANT]
->  検索エンジンが認識できるように、論理演算子をすべて大文字で入力する必要があります。  
+> 検索エンジンが認識できるように、論理演算子をすべて大文字で入力する必要があります。  
   
 |検索対象|使用|例|結果|  
 |-------------------|---------|-------------|------------|  

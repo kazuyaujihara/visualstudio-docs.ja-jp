@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 00ccae86029e43933d5624c955ed6bfcc0a045be
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863166"
 ---
 # <a name="extend-user-settings-and-options"></a>ユーザー設定とオプションを拡張します。
-Visual Studio で、ユーザーの設定を管理する 2 つの主な方法があります。 **ツール** > **オプション**ページには、さまざまな種類の設定、[全般]、言語固有の独自の値を設定するユーザーができるようにします。 ユーザー設定は、一般的な Visual Studio の構成プロパティを指定できます。 [オプション] ページの詳細については、[オプションとオプション ページ](../extensibility/internals/options-and-options-pages.md)を参照してください。 ユーザー設定の詳細については、[ユーザー設定のサポート](../extensibility/internals/support-for-user-settings.md)を参照してください。
+Visual Studio で、ユーザーの設定を管理する 2 つの主な方法があります。 **ツール** > **オプション**ページには、さまざまな種類の設定、[全般]、言語固有の独自の値を設定するユーザーができるようにします。 ユーザー設定は、一般的な Visual Studio の構成プロパティを指定できます。 [オプション] ページの詳細については、次を参照してください。[オプションとオプション ページ](../extensibility/internals/options-and-options-pages.md)します。 ユーザー設定の詳細については、次を参照してください。[ユーザー設定のサポート](../extensibility/internals/support-for-user-settings.md)します。
 
 - [オプション ページを作成](../extensibility/creating-an-options-page.md)オプション ページを作成する方法について説明します。
 

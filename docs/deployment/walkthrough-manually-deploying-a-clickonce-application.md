@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d482b6e2b0e2cdd9fce553a1cb11b1b27e9467
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 60173bd8a48b067757bbccfad42a2feaf5633082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405794"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>チュートリアル: ClickOnce アプリケーションを手動で配置する
+# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>チュートリアル: ClickOnce アプリケーションを手動で展開します。
 Visual Studio を使用してデプロイすることはできません場合、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション、または高度な展開の機能を使用する必要があります使用する必要があります信頼されたアプリケーションの配置など、 *Mage.exe* 、を作成するコマンドラインツール。[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]マニフェストします。 このチュートリアルを作成する方法について説明、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]コマンドラインのいずれかのバージョンを使用した展開 (*Mage.exe*) またはグラフィカル バージョン (*MageUI.exe*) のマニフェストの生成とツールを編集します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
@@ -43,7 +43,7 @@ Visual Studio を使用してデプロイすることはできません場合、
 
 - 展開の分散方法を決定します。
 
-   分布オプションを含める: Web、ファイル共有、または CD。 詳細については、「 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)」を参照してください。
+   ディストリビューション オプションは次のとおりです。Web、ファイル共有、または CD。 詳細については、「 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)」を参照してください。
 
 - アプリケーションに管理者特権でのレベルの信頼が必要かどうかを決定します。
 
@@ -54,7 +54,7 @@ Visual Studio を使用してデプロイすることはできません場合、
    Authenticode 証明書を使用してデプロイを署名する必要があります。 テスト証明書を生成するには、Visual Studio を使用して*MageUI.exe*、または*MakeCert.exe*と*Pvk2Pfx.exe*ツール、または、証明書から証明書を取得できます証明機関 (CA)。 信頼されたアプリケーションの配置を使用するように選択した場合はすべてのクライアント コンピューターに証明書のインストールを 1 回も行う必要があります。 詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。
 
   > [!NOTE]
-  >  CNG 証明書が証明機関から入手できます。 使用してデプロイを登録することもできます。
+  > CNG 証明書が証明機関から入手できます。 使用してデプロイを登録することもできます。
 
 - アプリケーションに UAC 情報を含むマニフェストがないことを確認します。
 
@@ -73,7 +73,7 @@ Visual Studio を使用してデプロイすることはできません場合、
 2. 作成した展開ディレクトリでは、バージョン サブディレクトリを作成します。 初めてアプリケーションを展開する場合は、名前、バージョン サブディレクトリ**1.0.0.0**します。
 
    > [!NOTE]
-   >  配置のバージョンをアプリケーションのバージョンとは異なることはできます。
+   > 配置のバージョンをアプリケーションのバージョンとは異なることはできます。
 
 3. 実行可能ファイル、アセンブリ、リソース、およびデータ ファイルを含む、バージョン サブディレクトリには、すべてのアプリケーション ファイルをコピーします。 必要に応じて、追加のファイルが含まれている追加のサブディレクトリを作成できます。
 
@@ -86,7 +86,7 @@ Visual Studio を使用してデプロイすることはできません場合、
    ```
 
    > [!NOTE]
-   >  後にドット (.) を含めるようにしてください、`-FromDirectory`オプションは、現在のディレクトリを示します。 ドットを含めない場合、アプリケーション ファイル パスを指定する必要があります。
+   > 後にドット (.) を含めるようにしてください、`-FromDirectory`オプションは、現在のディレクトリを示します。 ドットを含めない場合、アプリケーション ファイル パスを指定する必要があります。
 
 6. Authenticode 証明書をアプリケーション マニフェストに署名します。 置換*mycert.pfx*証明書ファイルへのパス。 置換*passwd*証明書ファイルのパスワードに置き換えます。
 
@@ -112,7 +112,7 @@ Visual Studio を使用してデプロイすることはできません場合、
 
 10. 配置ディレクトリのすべてのファイルを展開先またはメディアにコピーします。 これにより、Web サイトまたは FTP サイト、ファイル共有、または CD-ROM 上のフォルダーか可能性があります。
 
-11. URL、UNC、またはアプリケーションをインストールするために必要な物理メディアをユーザーに提供します。 URL または UNC を指定する場合は、配置マニフェストに、ユーザーの完全なパスを示す必要があります。 AppToDeploy を配置する場合の例の http://webserver01/AppToDeploy ディレクトリに完全な URL パスになります。 http://webserver01/AppToDeploy/AppToDeploy.applicationします。
+11. URL、UNC、またはアプリケーションをインストールするために必要な物理メディアをユーザーに提供します。 URL または UNC を指定する場合は、配置マニフェストに、ユーザーの完全なパスを示す必要があります。 AppToDeploy を配置する場合の例の http://webserver01/ AppToDeploy ディレクトリに完全な URL パスになります。 http://webserver01/AppToDeploy/AppToDeploy.application します。
 
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>MageUI.exe のグラフィカル ツールを使用してアプリケーションをデプロイするには
 
@@ -121,7 +121,7 @@ Visual Studio を使用してデプロイすることはできません場合、
 2. 作成した展開ディレクトリでは、バージョン サブディレクトリを作成します。 初めてアプリケーションを展開する場合は、名前、バージョン サブディレクトリ**1.0.0.0**します。
 
    > [!NOTE]
-   >  配置のバージョンは、アプリケーションのバージョンとは異なる可能性があります。
+   > 配置のバージョンは、アプリケーションのバージョンとは異なる可能性があります。
 
 3. 実行可能ファイル、アセンブリ、リソース、およびデータ ファイルを含む、バージョン サブディレクトリには、すべてのアプリケーション ファイルをコピーします。 必要に応じて、追加のファイルが含まれている追加のサブディレクトリを作成できます。
 
@@ -187,7 +187,7 @@ Visual Studio を使用してデプロイすることはできません場合、
 
 28. 配置ディレクトリのすべてのファイルを展開先またはメディアにコピーします。 これにより、Web サイトまたは FTP サイト、ファイル共有、または CD-ROM 上のフォルダーか可能性があります。
 
-29. URL、UNC、またはアプリケーションをインストールするために必要な物理メディアをユーザーに提供します。 URL または UNC を指定すると、配置マニフェストの完全なパスをユーザーに与える必要があります。 AppToDeploy を配置する場合の例の http://webserver01/AppToDeploy ディレクトリに完全な URL パスになります。 http://webserver01/AppToDeploy/AppToDeploy.applicationします。
+29. URL、UNC、またはアプリケーションをインストールするために必要な物理メディアをユーザーに提供します。 URL または UNC を指定すると、配置マニフェストの完全なパスをユーザーに与える必要があります。 AppToDeploy を配置する場合の例の http://webserver01/ AppToDeploy ディレクトリに完全な URL パスになります。 http://webserver01/AppToDeploy/AppToDeploy.application します。
 
 ## <a name="next-steps"></a>次の手順
  アプリケーションの新しいバージョンを展開する必要がある場合は、新しいバージョンにちなんだ名前の新しいディレクトリを作成、1.0.0.1—and が、新しいディレクトリに新しいアプリケーション ファイルをコピーするなど。 次に、作成し新しいアプリケーション マニフェストに署名し、更新、および配置マニフェストに署名するには、前の手順に従う必要があります。 両方で同じより高いバージョンを指定するように注意してください、 *Mage.exe* `-New`と`-Update`呼び出しとして[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]のみ以降のバージョンが最上位の左端の整数値で更新します。 使用した場合*MageUI.exe*、選択を開き、配置マニフェストを更新することができます、**アプリケーション参照**] タブをクリックすると、 **[マニフェストの**ボタン、および更新されたアプリケーション マニフェストを選択します。

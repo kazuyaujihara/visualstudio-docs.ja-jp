@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdf8668b6a34ca6f663b83640e71951f0cb7c255
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c04f500ceb8a1c95f643fe43c292bb668d54c2aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406558"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>方法: ClickOnce で発行されるファイルを指定する
 発行するときに、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]プロジェクト内のアプリケーション、コード以外のすべてのファイルは、アプリケーションと共にデプロイされます。 場合によっては、場合や、特定のファイルを発行する必要がない可能性がありますかを条件に基づく特定のファイルをインストールすることがあります。 Visual Studio には、ファイルを除外する、ファイルをデータ ファイルや必須コンポーネントとしてマークし、条件付きでインストールするファイルのグループを作成する機能が用意されています。
@@ -92,7 +92,7 @@ ms.locfileid: "60110233"
 4. **アプリケーション ファイル**ダイアログ ボックスで、**グループ**新しいグループに追加するファイルのフィールド。
 
     > [!NOTE]
-    >  ファイルが必要、**ビルド アクション**プロパティに設定**コンテンツ**にファイル名が表示されるまで、**アプリケーション ファイル** ダイアログ ボックス。
+    > ファイルが必要、**ビルド アクション**プロパティに設定**コンテンツ**にファイル名が表示されるまで、**アプリケーション ファイル** ダイアログ ボックス。
 
 5. **ダウンロード グループ**フィールドで、 **\<新規作成 >** ドロップダウン リストから。
 
@@ -111,7 +111,7 @@ ms.locfileid: "60110233"
 5. **ダウンロード グループ**フィールドに、ドロップダウン リストからグループを選択します。
 
     > [!NOTE]
-    >  変更することはできません、**ダウンロード グループ**アプリケーションを実行するために必要なファイル。
+    > 変更することはできません、**ダウンロード グループ**アプリケーションを実行するために必要なファイル。
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)

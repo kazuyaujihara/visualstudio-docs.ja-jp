@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b314dc9eedbf99ba130772ac226d45239b4de455
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e8b1ff717931286c5aa3aaaa69510ce05fb39a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385984"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>チュートリアル: モデルにアクセスするテキスト テンプレートのデバッグ
 変更またはドメイン固有言語ソリューションでテキスト テンプレートを追加するときに、エンジンのソース コードに、または、生成されたコードをコンパイル時にテンプレートを変換するときにエラーが発生する可能性があります。 次のチュートリアルでは、テキスト テンプレートをデバッグすることの一部を示します。
 
 > [!NOTE]
->  を一般に、テンプレート文字列の詳細についてを参照してください[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。 テキスト テンプレートのデバッグの詳細については、次を参照してください。[チュートリアル。テキスト テンプレートのデバッグ](debugging-a-t4-text-template.md)します。
+> を一般に、テンプレート文字列の詳細についてを参照してください[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。 テキスト テンプレートのデバッグの詳細については、次を参照してください。[チュートリアル。テキスト テンプレートのデバッグ](debugging-a-t4-text-template.md)します。
 
 ## <a name="creating-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションを作成します。
  この手順では、次の特性を持つドメイン固有言語ソリューションを作成します。
@@ -54,7 +54,7 @@ ms.locfileid: "60045058"
 1. DebugTest.tt でコードを次のコードに置き換えます。
 
     > [!NOTE]
-    >  コードには、エラーが含まれています。 これをデバッグするために、エラーが導入されました。
+    > コードには、エラーが含まれています。 これをデバッグするために、エラーが導入されました。
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
@@ -118,7 +118,7 @@ ms.locfileid: "60045058"
 1. DebugTest.tt でコードを次のコードに置き換えます。
 
     > [!NOTE]
-    >  コードには、エラーが含まれています。 これをデバッグするために、エラーが導入されました。
+    > コードには、エラーが含まれています。 これをデバッグするために、エラーが導入されました。
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>

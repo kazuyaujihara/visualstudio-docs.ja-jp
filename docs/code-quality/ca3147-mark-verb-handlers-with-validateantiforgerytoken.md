@@ -10,11 +10,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 0cd54f932a99ea79bf792ebe4175ddc6a031ddcb
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541065"
 ---
 # <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147:ValidateAntiForgeryToken で動詞ハンドラーをマークします
 
@@ -31,7 +31,7 @@ ASP.NET MVC コント ローラー アクション メソッドが付いてい�
 
 ## <a name="rule-description"></a>規則の説明
 
-ASP.NET MVC のコント ローラーを設計するときは、クロスサイト リクエスト フォージェリ攻撃考慮あります。 クロスサイト リクエスト フォージェリ攻撃対象は、ASP.NET MVC コント ローラーに、認証されたユーザーから悪意のある要求を送信できます。 詳細については、[ASP.NET MVC と web ページの XSRF/CSRF 防止](/aspnet/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages)を参照してください。
+ASP.NET MVC のコント ローラーを設計するときは、クロスサイト リクエスト フォージェリ攻撃考慮あります。 クロスサイト リクエスト フォージェリ攻撃対象は、ASP.NET MVC コント ローラーに、認証されたユーザーから悪意のある要求を送信できます。 詳細については、次を参照してください。 [ASP.NET MVC と web ページの XSRF/CSRF 防止](/aspnet/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages)します。
 
 このルールは、その ASP.NET MVC コント ローラーを確認します。 アクション メソッドか。
 
@@ -45,7 +45,7 @@ ASP.NET MVC のコント ローラーを設計するときは、クロスサイ�
 
    HTTP GET を処理するコント ローラー アクションが要求し、有害な可能性のある副作用が伴う機密データの変更など、ASP.NET MVC があれば、アプリケーションがクロスサイト リクエスト フォージェリ攻撃に対して脆弱になります。  HTTP POST、PUT、または DELETE 要求だけが機密性の高い操作を実行するために、アプリケーションを再設計する必要があります。
 
-- HTTP POST を処理するコント ローラー アクションの ASP.NET MVC、PUT、または削除を要求する追加[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))と使用できる HTTP 動詞を指定する属性 ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)、 [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29)、 [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)、または[HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29))。 さらを呼び出す必要があります、 [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29) MVC ビューまたは Razor web ページからのメソッド。 例については、[編集メソッドを調べると、ビューの編集](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)を参照してください。
+- HTTP POST を処理するコント ローラー アクションの ASP.NET MVC、PUT、または削除を要求する追加[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))と使用できる HTTP 動詞を指定する属性 ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)、 [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29)、 [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)、または[HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29))。 さらを呼び出す必要があります、 [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29) MVC ビューまたは Razor web ページからのメソッド。 例については、次を参照してください。[編集メソッドを調べると、ビューの編集](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 

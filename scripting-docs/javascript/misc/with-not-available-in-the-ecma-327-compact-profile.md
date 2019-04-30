@@ -15,15 +15,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 17aa9d00bca0b7835309e123478b9621a9260d51
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000979"
 ---
 # <a name="with-not-available-in-the-ecma-327-compact-profile"></a>'with' は ECMA 327 Compact Profile では使用できません
 ' with' ECMA 327 Compact Profile (ErrWithNotInCP では使用できません。  
   
  使用することはできません、Compact Profile でキーワードを使用します。  
   
- 詳細については、キーワードで、[ステートメントで](../../javascript/reference/with-statement-javascript.md)を参照してください。
+ 詳細については、キーワードで、次を参照してください。[ステートメントで](../../javascript/reference/with-statement-javascript.md)します。

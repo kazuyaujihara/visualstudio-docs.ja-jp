@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 451d7a735116d7b181263eebe76751fd49900ce3
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960632"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Node.js Tools for Visual Studio を使用して Vue.js アプリケーションを作成する
 
@@ -31,12 +31,17 @@ Visual Studio では、JavaScript、TypeScript のいずれかで [Vue.js](https
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* Visual Studio 2017 バージョン 15.8 Preview 3 以降と **Node.js 開発ワークロード**がインストールされている必要があります。
+* Visual Studio 2017 バージョン 15.8 以降のバージョンと **Node.js 開発**ワークロードがインストールされている必要があります。
 
     > [!IMPORTANT]
-    > この記事では、Visual Studio 2017 バージョン 15.8 Preview 3 以降でのみ使用できる機能が必要です。
+    > この記事では、Visual Studio 2017 バージョン 15.8 以降でのみ使用できる機能が必要です。
 
-    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  ページに移動し、無料試用版をインストールしてください。
+    ::: moniker range=">=vs-2019"
+    必要なバージョンがまだインストールされていない場合は、[Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) をインストールしてください。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  ページに移動し、無料試用版をインストールしてください。
+    ::: moniker-end
 
     Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、**[ツール]** > **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[Node.js 開発]** ワークロードを選択し、**[変更]** を選択します。
 

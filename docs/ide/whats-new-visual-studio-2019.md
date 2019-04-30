@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 04/04/2019
+ms.date: 04/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432030"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
-**[16.0 リリース](/visualstudio/releases/2019/release-notes/)の更新**
+**[16.0 リリースの更新](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Visual Studio 2019 のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -84,7 +84,7 @@ IntelliCode の詳細については、ブログの投稿「[Code more, scroll l
 
 新しいドキュメントの正常性インジケーターと組み合わされたのが、新しいコード クリーンアップ コマンドです。 この新しいコマンドを使用して、警告と提案を特定し、ボタンをクリックして両方を修正することができます。
 
-クリーンアップにより、コードが書式設定され、[現在の設定](code-styles-and-quick-actions.md)、[.editorconfig files](create-portable-custom-editor-options.md)、または [Roslyn アナライザー](../code-quality/roslyn-analyzers-overview.md) のいずれかの提案に従って、任意のコード修正が適用されます。
+クリーンアップにより、コードが書式設定され、[現在の設定](code-styles-and-quick-actions.md)および [.editorconfig ファイル](create-portable-custom-editor-options.md)のいずれかの提案に従って、任意のコード修正が適用されます。
 
    ![Visual Studio 2019 の新しいコード クリーンアップ コントロールのスクリーン ショット](media/vs-2019/code-cleanup-profile.png)
 
@@ -168,6 +168,12 @@ Azure VM で実行される ASP.NET (Core およびデスクトップ) アプリ
 
 詳細については、「[Debug live ASP.NET Azure apps using the Snapshot Debugger (スナップショット デバッガーを使用したライブ ASP.NET Azure アプリのデバッグ)](../debugger/debug-live-azure-applications.md)」ページと「[Introducing Time Travel Debugging for Visual Studio Enterprise 2019 (Visual Studio Enterprise 2019 のタイム トラベル デバッグの概要)](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/)」ブログ投稿を参照してください。
 
+## <a name="whats-next"></a>次の内容
+
+Visual Studio 2019 は、より優れた開発を可能にする新機能で頻繁に更新されています。 最新のイノベーションの詳細については、「[The Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)」 (Visual Studio に関するブログ) を参照してください。 現在までプレビューでリリースしたものの記録については、[プレビュー リリース ノート](/visualstudio/releases/2019/release-notes-preview/)に関する記事を参照してください。
+
+Visual Studio 2019 のその他の機能について詳細を知りたい場合は、 [Visual Studio のロードマップ](/visualstudio/productinfo/vs-roadmap/)に関するページを参照してください。
+
 ## <a name="give-us-feedback"></a>フィードバックの送信
 
 Visual Studio チームにフィードバックを送ることにどんな意味があるのでしょうか? お客様からのフィードバックは、すべて真剣に考慮することにしています。 フィードバックによって今後の動向が左右されることになります。
@@ -181,5 +187,5 @@ Visual Studio チームにフィードバックを送ることにどんな意味
 * [Visual Studio 2019 のお知らせ](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Visual Studio 2019 リリース ノート](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 SDK の新機能](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Visual Studio 2019 for Mac が公開](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Visual Studio 2019 for Mac が利用できるようになりました](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
 * [Microsoft Connect(); 2018 カンファレンス](https://www.microsoft.com/connectevent)

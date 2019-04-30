@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 960ecd2680585602b2c026b00b36bf7d93b8021d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900232"
 ---
 # <a name="create-bootstrapper-packages"></a>ブートストラップ パッケージの作成
 セットアップ プログラムは、Windows インストーラー (*.msi*) ファイルや実行可能プログラムなどの再頒布可能コンポーネントを検出およびインストールするように構成できる汎用的なインストーラーです。 インストーラーはブートストラップとも呼ばれます。 ブートストラップは、コンポーネントのインストールを管理するためのメタデータを指定する、一連の XML マニフェストによってプログラミングされます。  表示される各コンポーネントの再頒布可能パッケージ、または前提条件、**の前提条件**ClickOnce のダイアログ ボックスは、ブートス トラップ パッケージです。 ブートストラップ パッケージは、必須コンポーネントのインストール方法を記述するマニフェスト ファイルを含むディレクトリおよびファイルのグループです。
@@ -33,13 +33,13 @@ ms.locfileid: "56631771"
 ブートストラップでは、まず、既にインストールされている必須コンポーネントがあるかどうかが検出されます。 必須コンポーネントがインストールされていない場合、ライセンス条項が表示されます。 次に、エンド ユーザーがライセンス条項に同意すると、必須コンポーネントのインストールが開始されます。 すべての必須コンポーネントが検出された場合は、そのままアプリケーション インストーラーが開始されます。
 
 ## <a name="create-custom-bootstrapper-packages"></a>カスタム ブートス トラップ パッケージを作成します。
-ブートス トラップ マニフェストを生成するには、Visual Studio での XML エディターを使用します。 ブートス トラップ パッケージを作成する例を表示するには、次を参照してください。[チュートリアル: プライバシー プロンプトを使用のカスタム ブートス トラップの作成](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)です。
+ブートス トラップ マニフェストを生成するには、Visual Studio での XML エディターを使用します。 ブートス トラップ パッケージを作成する例を表示するには、次を参照してください。[チュートリアル。プライバシー プロンプトを使用のカスタム ブートス トラップの作成](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)です。
 
 ブートス トラップ パッケージを作成するに製品マニフェストを作成し、各パッケージのマニフェストにも、コンポーネントのバージョンのローカライズされました。
 
-* 製品マニフェスト、 *product.xml*パッケージの言語に依存しないメタデータが含まれています。 再頒布可能コンポーネントのすべてのローカライズ バージョンに共通するメタデータが含まれます。  このファイルを作成するを参照してください。[方法: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md)します。
+* 製品マニフェスト、 *product.xml*パッケージの言語に依存しないメタデータが含まれています。 再頒布可能コンポーネントのすべてのローカライズ バージョンに共通するメタデータが含まれます。  このファイルを作成するを参照してください。[方法。製品マニフェストを作成する](../deployment/how-to-create-a-product-manifest.md)します。
 
-* パッケージ マニフェストの*package.xml*、言語固有のメタデータを含む通常ローカライズされたエラー メッセージが含まれます。 コンポーネントの各ローカライズ バージョンに対して、少なくとも 1 つのパッケージ マニフェストが必要です。 このファイルを作成するを参照してください。[方法: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md)します。
+* パッケージ マニフェストの*package.xml*、言語固有のメタデータを含む通常ローカライズされたエラー メッセージが含まれます。 コンポーネントの各ローカライズ バージョンに対して、少なくとも 1 つのパッケージ マニフェストが必要です。 このファイルを作成するを参照してください。[方法。パッケージ マニフェストを作成する](../deployment/how-to-create-a-package-manifest.md)します。
 
 これらのファイルが作成されたら、製品マニフェスト ファイルをカスタム ブートストラップ名のフォルダーに格納します。 パッケージ マニフェスト ファイルは、ロケール名のフォルダーに格納します。 たとえば、英語の再頒布用のパッケージ マニフェスト ファイルは、en というフォルダーに格納します。 日本語用は ja、ドイツ語用は de など、ロケールごとにこの手順を繰り返します。 最終的に、カスタム ブートストラップ パッケージは次のようなフォルダー構造になります。
 
@@ -58,7 +58,7 @@ ms.locfileid: "56631771"
         package.xml
     ```
 
-次に、ブートス トラップ フォルダーの場所に再頒布可能ファイルをコピーします。 詳細については、「[方法: ローカライズされたブートストラップ パッケージを作成する](../deployment/how-to-create-a-localized-bootstrapper-package.md)」を参照してください。
+次に、ブートス トラップ フォルダーの場所に再頒布可能ファイルをコピーします。 詳細については、「[方法 :ローカライズ版のブートストラップ パッケージを作成する](../deployment/how-to-create-a-localized-bootstrapper-package.md)」を参照してください。
 
     *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
 
@@ -95,7 +95,7 @@ ms.locfileid: "56631771"
 
 `%ProgramFiles%\Microsoft.NET\RedistList`
 
-再頒布可能リストは XML ファイルです。このファイルには、*\<会社名>.\<コンポーネント名>.RedistList.xml* という形式の名前を付けます。 たとえば、Acme 社製の DataWidgets というコンポーネントの場合は、*Acme.DataWidgets.RedistList.xml* にします。 再頒布可能リストの内容は、たとえば次のようになります。
+再頒布可能リストは、次の形式の名前を XML ファイルです。*\<会社名 >。\<コンポーネント名 >。です*します。 たとえば、Acme 社製の DataWidgets というコンポーネントの場合は、*Acme.DataWidgets.RedistList.xml* にします。 再頒布可能リストの内容は、たとえば次のようになります。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -105,7 +105,7 @@ ms.locfileid: "56631771"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールする](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールします。](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [[必須コンポーネント] ダイアログ ボックス](../ide/reference/prerequisites-dialog-box.md)
 - [製品およびパッケージ スキーマ リファレンス](../deployment/product-and-package-schema-reference.md)
 - [Visual Studio 2005 ブートストラップを使用してインストールを促進する](http://go.microsoft.com/fwlink/?LinkId=107537)

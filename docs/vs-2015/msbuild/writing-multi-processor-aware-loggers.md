@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ec8cefeaf005c17ecb09d109c161b5cbae3dc03a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425878"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>マルチプロセッサ対応の logger の記述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
 ```  
   
 > [!NOTE]
->  `/dl` スイッチでは、2 つの logger 名をアスタリスク (*) で区切る必要があります。  
+> `/dl` スイッチでは、2 つの logger 名をアスタリスク (*) で区切る必要があります。  
   
  ConfigurableForwardingLogger の使用方法は、通常の [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ではなく ConfigurableForwardingLogger logger をアタッチし、ConfigurableForwardingLogger から中央ノードに渡すイベントをパラメーターとして指定する点を除き、他の logger と同じです (「[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)」を参照)。  
   

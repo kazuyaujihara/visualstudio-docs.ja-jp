@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3361ba51607924ee0bd0701f6f2dddf12334f93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62cbbd63f38e3317b03b203b3ca1cadc2a17e0c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386107"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>方法: サービスのデータに接続する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60090382"
  ウィザードの完了したら、サービス参照をプロジェクトに追加されですぐに使用できるは、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)します。  
   
 > [!NOTE]
->  **[データ ソース]** ウィンドウに表示される項目は、サービスから返される情報に応じて異なります。 サービスによっては、**データ ソース構成ウィザード**でバインドできるオブジェクトを作成するための十分な情報を提供しないものもあります。 たとえば、サービスには、データセットが返された場合その項目に表示できません、**データ ソース ウィンドウ**ウィザードを完了するとします。 これは、ウィザードには、データ ソースを作成するのに十分な情報がないため、型指定されていないデータセットがスキーマで提供されないためにです。  
+> **[データ ソース]** ウィンドウに表示される項目は、サービスから返される情報に応じて異なります。 サービスによっては、**データ ソース構成ウィザード**でバインドできるオブジェクトを作成するための十分な情報を提供しないものもあります。 たとえば、サービスには、データセットが返された場合その項目に表示できません、**データ ソース ウィンドウ**ウィザードを完了するとします。 これは、ウィザードには、データ ソースを作成するのに十分な情報がないため、型指定されていないデータセットがスキーマで提供されないためにです。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -52,7 +52,7 @@ ms.locfileid: "60090382"
 4. 必要に応じて、新しい**Namespace**既定値の代わりに型指定することができます。  
   
     > [!NOTE]
-    >  をクリックして**詳細**を開く、[サービス参照の構成 ダイアログ ボックス](../data-tools/configure-service-reference-dialog-box.md)します。  
+    > をクリックして**詳細**を開く、[サービス参照の構成 ダイアログ ボックス](../data-tools/configure-service-reference-dialog-box.md)します。  
   
 5. をクリックして**OK**をプロジェクトにサービス参照を追加します。  
   

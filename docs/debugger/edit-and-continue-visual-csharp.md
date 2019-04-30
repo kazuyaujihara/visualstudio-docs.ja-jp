@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 972ad0d772eee9b876f43bc3e2fcd032d4b7e0ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851008"
 ---
 # <a name="edit-and-continue-visual-c"></a>エディット コンティニュ (Visual C#)
  C# のエディット コンティニュを使用すると、デバッグ中に中断モードでコードに変更を加えることができます。 デバッグ セッションを停止したり再開したりしなくても、変更を適用できます。 実行モードでは、ソース エディターは読み取り専用です。
@@ -36,8 +36,8 @@ ms.locfileid: "56685366"
 
  エディット コンティニュが有効なときは、**[続行]**、**[ステップ]**、**[次のステートメントの設定]** などのデバッガー実行コマンドを使用したり、デバッガー ウィンドウで関数の評価を実行したりすると、サポートされている変更が自動的に適用されます。
 
- 詳細については、次を参照してください。[方法: 使用の編集と続行 (c#)](../debugger/how-to-use-edit-and-continue-csharp.md)します。
+ 詳細については、「[方法 :エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [方法 : エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [方法: エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [サポートされているコード変更 (c# および Visual Basic)](../debugger/supported-code-changes-csharp.md)

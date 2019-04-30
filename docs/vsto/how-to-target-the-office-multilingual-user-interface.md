@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c495f8a83b58c53404056befd2227b295c3324d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961140"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>方法: Office の multilingual user interface します。
   Multilingual User Interface (MUI) は、ユーザー インターフェイス (UI) の言語を変更する機能をエンドユーザーに提供する Microsoft Office の機能です。 たとえば、英語の UI で作業している、エンドユーザーは、スペイン語に UI の言語を変更できます。

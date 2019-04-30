@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 079c25b2bbaa37432009f0eeade9673f8d0afd28
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433956"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch アクティビティ デザイナー
 
 **TryCatch**作成および構成するアクティビティ デザイナーが使用される、<xref:System.Activities.Statements.TryCatch>アクティビティ。
 
 ## <a name="the-trycatch-activity"></a>TryCatch アクティビティ
- <xref:System.Activities.Statements.TryCatch>アクティビティが含まれています、<xref:System.Activities.Statements.TryCatch.Try%2A>アクティビティ、一連の**キャッチ\<TException >** と<xref:System.Activities.Statements.TryCatch.Finally%2A>アクティビティ。 A<xref:System.Activities.Statements.Catch%601>型の**TException**が含まれています、<xref:System.Activities.Statements.Catch%601.ExceptionType%2A>と<xref:System.Activities.Statements.Catch%601.Action%2A>します。 これらの組み合わせによって、標準的な例外ベースのエラー処理機構が実装されます。 <xref:System.Activities.Statements.TryCatch> アクティビティは、対応する <xref:System.Activities.Statements.TryCatch.Try%2A> アクティビティの実行を試みます。 場合、<xref:System.Activities.Statements.TryCatch.Try%2A>アクティビティはすべての例外をスローします、<xref:System.Activities.Statements.TryCatch>アクティビティでその**キャッチ < TException\>** 例外と一致するコレクション。 一致がある場合、<xref:System.Activities.Statements.Catch%601.Action%2A>の対応する**キャッチ\<TException >** を実行すると、エラー処理ロジックを例外として機能します。 <xref:System.Activities.Statements.TryCatch.Try%2A> セクションのアクティビティまたは <xref:System.Activities.Statements.TryCatch.Catches%2A> のアクティビティが正常に完了した場合、<xref:System.Activities.Statements.TryCatch> アクティビティは <xref:System.Activities.Statements.TryCatch.Finally%2A> アクティビティを実行します。 詳細については、[Windows ワークフローの例外](/dotnet/framework/windows-workflow-foundation/exceptions)を参照してください。
+ <xref:System.Activities.Statements.TryCatch>アクティビティが含まれています、<xref:System.Activities.Statements.TryCatch.Try%2A>アクティビティ、一連の**キャッチ\<TException >** と<xref:System.Activities.Statements.TryCatch.Finally%2A>アクティビティ。 A<xref:System.Activities.Statements.Catch%601>型の**TException**が含まれています、<xref:System.Activities.Statements.Catch%601.ExceptionType%2A>と<xref:System.Activities.Statements.Catch%601.Action%2A>します。 これらの組み合わせによって、標準的な例外ベースのエラー処理機構が実装されます。 <xref:System.Activities.Statements.TryCatch> アクティビティは、対応する <xref:System.Activities.Statements.TryCatch.Try%2A> アクティビティの実行を試みます。 場合、<xref:System.Activities.Statements.TryCatch.Try%2A>アクティビティはすべての例外をスローします、<xref:System.Activities.Statements.TryCatch>アクティビティでその**キャッチ < TException\>** 例外と一致するコレクション。 一致がある場合、<xref:System.Activities.Statements.Catch%601.Action%2A>の対応する**キャッチ\<TException >** を実行すると、エラー処理ロジックを例外として機能します。 <xref:System.Activities.Statements.TryCatch.Try%2A> セクションのアクティビティまたは <xref:System.Activities.Statements.TryCatch.Catches%2A> のアクティビティが正常に完了した場合、<xref:System.Activities.Statements.TryCatch> アクティビティは <xref:System.Activities.Statements.TryCatch.Finally%2A> アクティビティを実行します。 詳細については、次を参照してください。 [Windows ワークフローの例外](/dotnet/framework/windows-workflow-foundation/exceptions)します。
 
 ### <a name="using-the-trycatch-activity-designer"></a>TryCatch アクティビティ デザイナーの使用
 

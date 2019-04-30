@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62987983"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>API リファレンス (SharePoint ツール拡張機能)
   このセクションでは、Visual Studio の SharePoint ツールを拡張するための API リファレンス ドキュメントを示します。
@@ -45,7 +45,7 @@ ms.locfileid: "56628729"
 
  <xref:Microsoft.VisualStudio.SharePoint.Features>
 
- SharePoint プロジェクトのフィーチャーの定義にアクセスするために使用する型があります。
+ SharePoint プロジェクトの機能の定義にアクセスするために使用する型があります。
 
  <xref:Microsoft.VisualStudio.SharePoint.Packages>
 

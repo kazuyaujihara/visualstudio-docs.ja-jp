@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926420"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>WPF ツールボックス コントロールを作成します。
 
@@ -31,7 +31,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 
 1. という名前の VSIX プロジェクトを作成する`MyToolboxControl`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**ダイアログで"vsix"を検索します。
 
-2. プロジェクトが開いたら、追加、 **WPF ツールボックス コントロール**という名前の項目テンプレート`MyToolboxControl`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual C#** > **拡張**選択**WPF ツールボックス コントロール**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して*MyToolboxControl.cs*します。
+2. プロジェクトが開いたら、追加、 **WPF ツールボックス コントロール**という名前の項目テンプレート`MyToolboxControl`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#** > **拡張**選択**WPF ツールボックス コントロール**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して*MyToolboxControl.cs*します。
 
     ソリューションには、ユーザー コントロールが含まれるようになりました、 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>にコントロールを追加する、**ツールボックス**、および**Microsoft.VisualStudio.ToolboxControl**の VSIX マニフェストでアセット エントリ 展開します。
 
@@ -59,7 +59,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 
 1. 開いている*MyToolboxControl.xaml.cs*コード ビューで。
 
-2. 検索、`MyToolboxControl`クラスし、名前に変更します。 (これを行う最も簡単な方法が、クラスの名前を変更するには、選択**の名前を変更**コンテキスト メニューから、手順を実行します。 (の詳細については、**の名前を変更**コマンドを参照してください[名前変更リファクタリング (C#)](../ide/reference/rename.md))。
+2. 検索、`MyToolboxControl`クラスし、名前に変更します。 (これを行う最も簡単な方法が、クラスの名前を変更するには、選択**の名前を変更**コンテキスト メニューから、手順を実行します。 (の詳細については、**の名前を変更**コマンドを参照してください[名前変更リファクタリング (c#)](../ide/reference/rename.md))。
 
 3. 移動して、`ProvideToolboxControl`属性し、最初のパラメーターの値を変更**テスト**します。 これは、内のコントロールを含むグループの名前、**ツールボックス**します。
 

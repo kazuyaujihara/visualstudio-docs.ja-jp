@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 35528f694cf76c1971e07023125706c962e77fe2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911821"
 ---
 # <a name="group-element"></a>Group 要素
 VSPackage のコマンド グループを定義します。
@@ -45,7 +45,7 @@ VSPackage のコマンド グループを定義します。
 
 |要素|説明|
 |-------------|-----------------|
-|親|任意。 ボタンの親要素。|
+|親|省略可能です。 ボタンの親要素。|
 |注釈|省略可能なコメント。|
 
 ### <a name="parent-elements"></a>親要素

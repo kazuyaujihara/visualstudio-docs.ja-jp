@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845854"
 ---
 # <a name="messages-view"></a>メッセージ ビュー
 各ウィンドウには、関連のメッセージ ストリームがあります。 メッセージ ビュー ウィンドウには、このメッセージのストリームが表示されます。 ウィンドウ ハンドル、メッセージのコードとメッセージが表示されます。 スレッドまたはプロセスもメッセージ ビューを作成することができます。 これにより、特定のプロセスまたはスレッドは初期化のウィンドウ メッセージをキャプチャするために特に便利ですが所有するすべてのウィンドウに送信されるメッセージを表示することができます。

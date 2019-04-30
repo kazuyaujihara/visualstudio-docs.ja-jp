@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bfe4578b4896c137f3bcef8418c5dc0cafd70798
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910657"
 ---
 # <a name="add-directories-to-the-add-new-item-dialog-box"></a>新しい項目の追加 ダイアログ ボックスにディレクトリを追加します。
 次のコード例は、ディレクトリの新しいセットを登録する方法を示します、**新しい項目の追加** ダイアログ ボックス。 用のディレクトリ、**新しい項目の追加** ダイアログ ボックスは、プロジェクトごとに異なります。 そのため、下のディレクトリに登録されて、**プロジェクト**で見つかったサブキー **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects**します。
@@ -50,9 +50,9 @@ NoRemove Projects
  `SortPriority`値が並べ替えの優先順位を指定します。
 
 ## <a name="add-items-to-an-existing-project"></a>既存のプロジェクトに項目を追加します。
- 既存のプロジェクトに項目を追加することもできます。 たとえば、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]プロジェクトに項目を追加することができます、 *\<ルート > \Program Files\Microsoft Visual Studio\VC #\CSharpProjectItems\LocalProjectItems*フォルダー。 この場合、`%GUID_Project%`は c# プロジェクト ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}) の GUID です。
+ 既存のプロジェクトに項目を追加することもできます。 たとえば、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]プロジェクトに項目を追加することができます、 *\<ルート > \Program Files\Microsoft Visual studio \VC#\CSharpProjectItems\LocalProjectItems*フォルダー。 この場合、`%GUID_Project%`は c# プロジェクト ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}) の GUID です。
 
- プロジェクト サブタイプをプログラミングによって既存のプロジェクトを拡張することもできます。 プロジェクト サブタイプの場合は、新しいプロジェクトの種類を記述することがなくプロジェクトを拡張できます。 プロジェクト サブタイプの詳細については、[プロジェクトのサブタイプ](../../extensibility/internals/project-subtypes.md)を参照してください。
+ プロジェクト サブタイプをプログラミングによって既存のプロジェクトを拡張することもできます。 プロジェクト サブタイプの場合は、新しいプロジェクトの種類を記述することがなくプロジェクトを拡張できます。 プロジェクト サブタイプの詳細については、次を参照してください。[プロジェクトのサブタイプ](../../extensibility/internals/project-subtypes.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [プロジェクトと項目テンプレートを登録します。](../../extensibility/internals/registering-project-and-item-templates.md)

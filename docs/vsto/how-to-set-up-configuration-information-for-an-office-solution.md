@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 159708bfad49e6a4a303363c6a0e9dd83b23d8e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961261"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>方法: Office ソリューションの構成情報を設定します。
   構成ファイルを使用して、Office ソリューションに固有の設定を構成することができます。 アセンブリ バインディング ポリシー、リモート処理オブジェクト、デバッグ、およびトレースの設定などの設定を指定することができます。
@@ -39,7 +39,7 @@ ms.locfileid: "56632018"
 
 5. **[追加]** をクリックします。
 
-6. アプリケーション構成ファイルのスキーマに従って、構成ファイルを作成します。 詳細については、[、.NET Framework の構成ファイル スキーマ](/dotnet/framework/configure-apps/file-schema/index)を参照してください。
+6. アプリケーション構成ファイルのスキーマに従って、構成ファイルを作成します。 詳細については、次を参照してください。 [、.NET Framework の構成ファイル スキーマ](/dotnet/framework/configure-apps/file-schema/index)します。
 
    Office プロジェクトを構成ファイルを使用するための特別な考慮事項はありません。
 
