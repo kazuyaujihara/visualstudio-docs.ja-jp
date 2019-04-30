@@ -1,5 +1,5 @@
 ---
-title: 新しいプロジェクトの生成:内部的には、パート 2 |Microsoft Docs
+title: '新しいプロジェクトの生成: 内部的には、パート 2 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5ccdd4cd8bafc4bc4a899ea47d62ec10e578569c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909312"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>新しいプロジェクトの生成:内部的には、パート 2
+# <a name="new-project-generation-under-the-hood-part-two"></a>新しいプロジェクトの生成: 内部的な処理、パート 2
 
 [新規プロジェクトの生成：パート1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) で**新規プロジェク**トのダイアログボックスの表示方法について説明しました。 **Visual C# Windows アプリケーション** を選択し、**名前** と **場所** のテキストボックスに入力し、[OK]をクリックしたと仮定します。
 
@@ -156,5 +156,5 @@ namespace Simple
 
 ## <a name="see-also"></a>関連項目
 
-- [新しいプロジェクトの生成:内部的には、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [新しいプロジェクトの生成: 内部的な処理、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)
