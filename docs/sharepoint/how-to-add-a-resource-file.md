@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c806e2d84973c445c9ab8a6aedb7c4f1fb28354
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7b8394d0c21ed5a45639e4dad5fe3695aaccc27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440011"
 ---
 # <a name="how-to-add-a-resource-file"></a>方法: リソース ファイルを追加します。
   リソース ファイルを追加するためのコマンドは、ソリューション エクスプ ローラー内のノードの機能、ソリューション ノードのショートカット メニューでです。 詳細については、次を参照してください。[をローカライズする SharePoint ソリューション](../sharepoint/localizing-sharepoint-solutions.md)します。
@@ -32,7 +32,7 @@ ms.locfileid: "60075546"
 3. **新しい項目の追加** ダイアログ ボックスで、選択、**グローバル リソース ファイル**テンプレートを選択し、**追加**ボタン。
 
    > [!NOTE]
-   >  グローバル リソース ファイル プロジェクト項目テンプレートは、SharePoint プロジェクト アイテムが選択されている場合にのみ表示されます。
+   > グローバル リソース ファイル プロジェクト項目テンプレートは、SharePoint プロジェクト アイテムが選択されている場合にのみ表示されます。
 
 4. **リソースの追加** ダイアログ ボックスで、英語 (米国) など、リソース ファイル用のカルチャを選択します。
 

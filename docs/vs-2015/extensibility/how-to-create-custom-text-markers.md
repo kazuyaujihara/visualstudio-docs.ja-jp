@@ -10,12 +10,12 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bbe6f59bdddb19b236cfba1256324a52765b78a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac681879e0f7ad0902358be23d74d57ccee406f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435979"
 ---
 # <a name="how-to-create-custom-text-markers"></a>方法: カスタム テキスト マーカーを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60103499"
     *\<PackageGUID >* オートメーション オブジェクトを実装する VSPackage の GUID です。  
   
    > [!NOTE]
-   >  Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 詳細詳細については、Visual Studio シェルが初期化されるときに、代替ルートで上書きすることができます[コマンド ライン スイッチ](../extensibility/command-line-switches-visual-studio-sdk.md)します。  
+   > Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 詳細詳細については、Visual Studio シェルが初期化されるときに、代替ルートで上書きすることができます[コマンド ライン スイッチ](../extensibility/command-line-switches-visual-studio-sdk.md)します。  
   
 2. Hkey_local_machine \software\microsoft\visualstudio で 4 つの値を作成する\\*\<バージョン >* \Text Editor\External マーカー\\*\<MarkerGUID>*  
   
@@ -93,4 +93,4 @@ ms.locfileid: "60103499"
  [レガシ API を使用したテキスト マーカーの使用](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [方法: 標準のテキスト マーカーを追加します。](../extensibility/how-to-add-standard-text-markers.md)   
  [方法: エラーのマーカーを実装します。](../extensibility/how-to-implement-error-markers.md)   
- [方法: テキスト マーカーを使用します。](../extensibility/how-to-use-text-markers.md)
+ [方法: テキスト マーカーを使用する](../extensibility/how-to-use-text-markers.md)

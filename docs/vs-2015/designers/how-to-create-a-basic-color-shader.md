@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59259d8186803d966e79f27012e6be6c22b47dd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414715"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>方法: 基本カラー シェーダーを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60117760"
    次の図は、完成したシェーダー グラフと、直方体に適用されるシェーダーのプレビューを示します。  
   
 > [!NOTE]
->  この図では、シェーダーの効果をわかりやすく示すために、オレンジ色が指定されました。  
+> この図では、シェーダーの効果をわかりやすく示すために、オレンジ色が指定されました。  
   
  ![3&#45;D モデルのシェーダー グラフとその結果](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")  
   

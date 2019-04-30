@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 093016b3924d7882901a2b2c1bda060571d5bff4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436730"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>配置、発行、および SharePoint ソリューション パッケージのアップグレード
   Visual Studio で SharePoint ソリューションを開発した後か、そのパッケージ (.wsp) ファイルをローカル SharePoint サーバーにデプロイしたりリモートまたはローカルの SharePoint サーバーにパブリッシュできます。 ファイルを展開する場合は、パッケージ ファイル (.wsp) を展開する方法をカスタマイズできます。
 
 > [!NOTE]
->  現時点では、サンド ボックス ソリューションのみがリモートの SharePoint サーバーにパブリッシュできます。 詳細については、[サンド ボックス ソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)を参照してください。
+> 現時点では、サンド ボックス ソリューションのみがリモートの SharePoint サーバーにパブリッシュできます。 詳細については、次を参照してください。[サンド ボックス ソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)します。
 
 ## <a name="deploy-publish-and-upgrade"></a>配置、発行、およびアップグレード
  *展開*ローカル ホストに、Visual Studio での SharePoint プロジェクトからビルドされた SharePoint ソリューション ファイルのコピーを参照します。 デプロイ済みのソリューションでは、展開後、ソリューションのアクティブ化など、インターネット インフォメーション サービス (IIS) プールのリサイクル、展開の手順を構成してなど。 展開するには、使用、**デプロイ**コマンドを**ビルド**メニュー。 詳細については、「[方法 :SharePoint の配置構成を編集](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)と[方法。展開し、SharePoint ソリューションをローカル SharePoint サイトにパブリッシュ](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)します。
@@ -36,7 +36,7 @@ ms.locfileid: "56618407"
 
  *アップグレード*既存のリモートまたはローカルで発行済みの SharePoint ソリューションの更新を参照します。 Visual Studio で SharePoint ソリューションに変更を加えた後は、ソリューションを再パブリッシュ、およびが正常に再パブリッシュした後、ソリューションをアップグレードするソリューションのパッケージ ファイル名を変更します。 ローカルで発行済みのソリューションを再パブリッシュした場合は、既存のソリューション ファイルを上書きできます。
 
-## <a name="deploy-packages"></a>パッケージを配置します。
+## <a name="deploy-packages"></a>パッケージの配置
  テストとデバッグ用の開発用コンピューターで、SharePoint サーバーにパッケージ ファイルを配置できます。 パッケージ ファイルを選択して別のコンピューターにインストールできることを作成することも、**ファイル システムに公開**内のオプション ボタン、**発行** ダイアログ ボックス。 パッケージが作成され、指定したローカル ファイル パスにコピーします。 ローカル サーバーに SharePoint ソリューションを展開するには、使用、**デプロイ**コマンドを**ビルド**メニュー。 詳細については、「[方法 :展開し、SharePoint ソリューションをローカル SharePoint サイトにパブリッシュ](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)します。
 
  リスト定義の展開、イベント レシーバーを追加して、フィーチャー デザイナーとパッケージ デザイナーを使用する方法については、次を参照してください。[チュートリアル。プロジェクト タスク リスト定義の展開](../sharepoint/walkthrough-deploying-a-project-task-list-definition.md)します。

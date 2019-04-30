@@ -10,12 +10,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 853a3f8db3623156e000c9360981933091ef9afd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 85e466e7ebb6294a77e89040260c16fe0043e372
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437669"
 ---
 # <a name="authoring-vsct-files"></a>作成します。Vsct ファイル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "60106970"
     設定、`guid`と`id`の属性、`Menu`要素、および設定して、`type`属性をこの種のメニューを選択します。 設定することも、`priority`属性を親グループで、メニューの相対位置を確立します。  
   
    > [!NOTE]
-   >  `priority`属性は、ツールバーとコンテキスト メニューには適用されません。  
+   > `priority`属性は、ツールバーとコンテキスト メニューには適用されません。  
   
 2. Visual Studio IDE のすべてのコマンドは、メニューおよびツールバーの直接の子であるコマンド グループでホストする必要があります。 IDE に新しいメニューまたはツールバーを追加する場合、新しいコマンドのグループが含まれますする必要があります。 コマンドは、視覚的にグループ化できるように、既存のメニューおよびツールバーにコマンドのグループを追加できます。  
   
@@ -99,14 +99,14 @@ ms.locfileid: "60106970"
    1. 設定、`guid`と`id`の各属性`Button`要素、および設定して、`type`ボタンの種類に属性します。 設定することも、`priority`属性を親グループで、コマンドの相対位置を確立します。  
   
       > [!NOTE]
-      >  使用`type="button"`標準メニュー コマンドとツールバーのボタン。  
+      > 使用`type="button"`標準メニュー コマンドとツールバーのボタン。  
   
    2. `Button`要素を追加、[文字列](../../extensibility/strings-element.md)要素を含む、 [ButtonText](../../extensibility/buttontext-element.md)要素と[CommandName](../../extensibility/commandname-element.md)要素。 `ButtonText`要素がメニュー項目、またはツール バー ボタンのツールヒントのテキスト ラベルを提供します。 `CommandName`要素も、コマンドで使用するコマンドの名前を提供します。  
   
    3. コマンドがアイコンである場合は、作成、[アイコン](../../extensibility/icon-element.md)内の要素、`Button`要素、およびセットの`guid`と`id`属性を`Bitmap`アイコンの要素。  
   
       > [!NOTE]
-      >  ツール バー ボタンのアイコンがあります。  
+      > ツール バー ボタンのアイコンがあります。  
   
       詳細については、次を参照してください。 [Menucommand とします。OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)します。  
   

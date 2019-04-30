@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d55d4ae23b2fd8bf03e6aa9ad7301531aedcfcac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406942"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>[スレッド] ウィンドウを使用して Visual Studio デバッガーでスレッドを表示 (C#、Visual Basic、 C++)
 **スレッド**ウィンドウを確認してデバッグしているアプリケーションのスレッドを使用します。 ステップ バイ ステップ ガイダンスを使用する方法について、**スレッド**ウィンドウを参照してください[チュートリアル。[スレッド] ウィンドウを使用してデバッグ](../debugger/how-to-use-the-threads-window.md)します。
@@ -85,7 +85,7 @@ ms.locfileid: "60107763"
  マネージ コードで中断カウントは、スレッドを凍結または凍結解除時に変更します。 マネージ コードでスレッドを凍結する場合、中断カウントは 1 です。 ネイティブ コードでスレッドを凍結すると、中断カウントが 0 を使用して、`SuspendThread`呼び出します。
 
 > [!NOTE]
->  ネイティブ コードからマネージド コードへの呼び出しをデバッグする場合、マネージド コードは呼び出し元のネイティブ コードと同じ物理スレッドで実行されます。 ネイティブ スレッドを中断または凍結すると、マネージド コードも凍結されます。
+> ネイティブ コードからマネージド コードへの呼び出しをデバッグする場合、マネージド コードは呼び出し元のネイティブ コードと同じ物理スレッドで実行されます。 ネイティブ スレッドを中断または凍結すると、マネージド コードも凍結されます。
 
 ### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>スレッドの実行を凍結または凍結解除するには
 

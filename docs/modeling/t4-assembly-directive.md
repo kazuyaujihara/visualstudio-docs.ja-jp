@@ -1,4 +1,4 @@
-﻿---
+---
 title: T4 アセンブリ ディレクティブ
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be7cad9034f67a00d8f795a5c4f4f9ad45c1abe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: e5dfb9a6489fed2c21d05799e9196c813a224571
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422953"
 ---
 # <a name="t4-assembly-directive"></a>T4 アセンブリ ディレクティブ
 
@@ -21,7 +21,7 @@ Visual Studio のデザイン時テキスト テンプレートの中で、テ�
  テキスト テンプレートの作成方法の一般的な概要については、次を参照してください。 [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)
 
 > [!NOTE]
->  ランタイム (前処理された) テキスト テンプレートでは、`assembly` ディレクティブは不要です。 代わりに必要なアセンブリを Visual Studio プロジェクトの **参照** に追加します。
+> ランタイム (前処理された) テキスト テンプレートでは、`assembly` ディレクティブは不要です。 代わりに必要なアセンブリを Visual Studio プロジェクトの **参照** に追加します。
 
 ## <a name="using-the-assembly-directive"></a>assembly ディレクティブの使用
  ディレクティブの構文は次のとおりです。
@@ -53,7 +53,7 @@ Visual Studio のデザイン時テキスト テンプレートの中で、テ�
 
 - `WindowsBase.dll`
 
-  カスタム ディレクティブを使用する場合は、ディレクティブ プロセッサによって追加のアセンブリが読み込まれます。 たとえば、ドメイン固有言語 (DSL) のテンプレートを作成する場合、次のアセンブリのアセンブリ ディレクティブを記述する必要はありません。
+  カスタム ディレクティブを使用する場合は、ディレクティブ プロセッサによって追加のアセンブリが読み込まれます。 たとえば、ドメイン固有言語 (DSL) のテンプレートを作成した場合、次のアセンブリのアセンブリ ディレクティブを記述する必要はありません。
 
 - `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`
 
@@ -61,7 +61,7 @@ Visual Studio のデザイン時テキスト テンプレートの中で、テ�
 
 - `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`
 
-- あなたの DSL を含むアセンブリ
+- DSL を含むアセンブリ
 
 ## <a name="msbuild"></a> MSBuild および Visual Studio の両方でのプロジェクト プロパティの使用
  $ (Solutiondir) などの visual Studio マクロは、MSBuild で機能しません。 ビルド コンピューターでテンプレートを変換する場合、代わりにプロジェクトのプロパティを使用する必要があります。
@@ -82,7 +82,7 @@ Visual Studio のデザイン時テキスト テンプレートの中で、テ�
   </ItemGroup>
 ```
 
- これで、Visual Studio および MSBuild の両方で正しく変換されるテキスト テンプレートに、プロジェクトプロパティを使用できます。
+ これで、Visual Studio および MSBuild の両方で正しく変換できるテキスト テンプレートでプロジェクトのプロパティを使用できます。
 
 ```
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>

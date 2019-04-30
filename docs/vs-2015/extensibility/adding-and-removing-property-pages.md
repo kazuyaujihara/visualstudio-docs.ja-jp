@@ -12,12 +12,12 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b7845d80b895d1b4c68afc59f2d2fe821be11f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 98838f09df3094e16d5f1a18263ffdad603ded0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440140"
 ---
 # <a name="adding-and-removing-property-pages"></a>プロパティ ページの追加と削除
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -205,7 +205,7 @@ ms.locfileid: "60102797"
     ```  
   
 > [!NOTE]
->  このトピックで提供されたすべてのコード例は、例のパーツ[VSSDK のサンプル](../misc/vssdk-samples.md)します。  
+> このトピックで提供されたすべてのコード例は、例のパーツ[VSSDK のサンプル](../misc/vssdk-samples.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [プロジェクト サブタイプ](../extensibility/internals/project-subtypes.md)

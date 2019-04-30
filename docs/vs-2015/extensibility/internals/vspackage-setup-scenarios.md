@@ -10,12 +10,12 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c94963b0ebfc6df454870222059a460b2868427d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 58b4350812900bc11e8aaa3222b3b0898db19e13
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440783"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage のセットアップ シナリオ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58977948"
  図に示すように共有コンポーネントには、常にインストールされている Feat_Common 機能の一部が行われます。 Feat_VS2002 と Feat_VS2003 機能を表示するには、どのバージョンに、ユーザーがインストール時に選択できます[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]を統合する VSPackage を希望します。 ユーザーを追加またはをここで追加または異なるバージョンの VSPackage の登録情報を削除、機能を削除するメンテナンス モードの Windows インストーラーを使用できますも[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。  
   
 > [!NOTE]
->  機能の表示の列を 0 に設定します。 非表示にします。 1 などの低レベルの列値によりは常にインストールするようになります。 詳細については、次を参照してください。 [INSTALLLEVEL プロパティ](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx)と[機能テーブル](http://msdn.microsoft.com/library/aa368585.aspx)します。  
+> 機能の表示の列を 0 に設定します。 非表示にします。 1 などの低レベルの列値によりは常にインストールするようになります。 詳細については、次を参照してください。 [INSTALLLEVEL プロパティ](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx)と[機能テーブル](http://msdn.microsoft.com/library/aa368585.aspx)します。  
   
 ## <a name="scenario-2-shared-vspackage-update"></a>シナリオ 2:共有 VSPackage の更新  
  このシナリオでは、シナリオ 1 で、VSPackage のインストーラーの更新バージョンが付属しています。 便宜上、サポートの追加、更新プログラム[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、単純なセキュリティ修正プログラムまたはバグ修正サービス パックの場合もありますが、します。 新しいコンポーネントをインストールするための Windows インストーラーの規則では、システムに既に変更されていないコンポーネントが再コピーしないことが必要です。 この場合は、バージョン 1.0 が既に存在すると、システムは Comp_MyVSPackage.dll 更新されたコンポーネントを上書きし、Comp_VS2005_Reg そのコンポーネントの新機能 Feat_VS2005 を追加することもできます。  
   
 > [!CAUTION]
->  VSPackage を複数のバージョンの間で共有されるたびに[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、VSPackage の今後のリリースでの以前のバージョンとの下位互換性を維持する必要が[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 下位互換性を維持することはできませんがサイド バイ サイドで、プライベートの Vspackage を使用する必要があります。 詳細については、次を参照してください。[をサポートしている複数のバージョンの Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)します。  
+> VSPackage を複数のバージョンの間で共有されるたびに[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]、VSPackage の今後のリリースでの以前のバージョンとの下位互換性を維持する必要が[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 下位互換性を維持することはできませんがサイド バイ サイドで、プライベートの Vspackage を使用する必要があります。 詳細については、次を参照してください。[をサポートしている複数のバージョンの Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)します。  
   
  ![VS 共有 VS パッケージ更新イメージ](../../extensibility/internals/media/vs-sharedpackageupdate.gif "VS_SharedPackageUpdate")  
 共有 vs パッケージ更新プログラムのインストーラー  

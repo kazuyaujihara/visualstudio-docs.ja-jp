@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 032e5a33c7cf70d48913739459c619b5d0302dea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ddd4ae3ed3a1a2a239c0efac0f25d04f589f8fa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437538"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>クラスおよび型のデザイン (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54795513"
 **クラス デザイナー**を使うと、クラスと型の表示だけでなく、クラスと型の設計も行うことができます。 次のトピックでは、これを行う方法について説明します。  
   
 > [!NOTE]
->  クラス デザイナーを使うときは、生成されたコードを実行する前に調べて、コードがセキュリティ コンテキストに適していることを確認する必要があります。  
+> クラス デザイナーを使うときは、生成されたコードを実行する前に調べて、コードがセキュリティ コンテキストに適していることを確認する必要があります。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [方法: クラス デザイナーを使用して型を作成する](../ide/how-to-create-types-by-using-class-designer.md)  

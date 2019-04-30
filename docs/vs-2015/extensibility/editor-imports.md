@@ -10,12 +10,12 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4805bff12d284dc5a54451e157c9e8fb92deeae2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432127"
 ---
 # <a name="editor-imports"></a>エディターのインポート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58975047"
  エディター インポートを使用するには、フィールドまたは Managed Extensibility Framework コンポーネントの一部をエクスポートするクラスのプロパティとしてインポートします。  
   
 > [!NOTE]
->  Managed Extensibility Framework の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)します。  
+> Managed Extensibility Framework の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)します。  
   
 ## <a name="import-syntax"></a>構文をインポートします。  
  次の例では、オプションのファクトリ サービス、エディターにインポートする方法を示します。  
@@ -46,15 +46,15 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  [チュートリアル: 余白のグリフの作成](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [チュートリアル: テキスト ビューをカスタマイズします。](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [チュートリアル: テキスト ビューのカスタマイズ](../extensibility/walkthrough-customizing-the-text-view.md)  
   
  [チュートリアル: テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)  
   
  [チュートリアル: クイック ヒントの表示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [チュートリアル: シグニチャ ヘルプの表示](../extensibility/walkthrough-displaying-signature-help.md)  
+ [チュートリアル: シグネチャ ヘルプの表示](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [チュートリアル: ステートメント入力候補を表示します。](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [チュートリアル: 入力候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)  
   
  [チュートリアル: スマート タグの表示](../misc/walkthrough-displaying-smarttags.md)  
   

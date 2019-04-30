@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4d3d15f6d38ab494c586f22cc428d5e00442e84
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 87612ebc9bbcaf14bdf25d91a4e5dbe018c22143
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428766"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>シンボル参照ツールのサポート
 **オブジェクト ブラウザー**、**クラス ビュー**、**呼び出しブラウザー**と**シンボルの検索結果**ツールは Visual Studio での機能を参照するシンボルを提供します。 これらのツールでは、シンボルの階層ツリー ビューを表示し、ツリー内のシンボルの関係を表示します。 シンボルは、名前空間、オブジェクト、クラス、クラスのメンバー、およびさまざまなコンポーネントに含まれるその他の言語要素を表すことがあります。 コンポーネントには、Visual Studio プロジェクトに外部[!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]コンポーネントとタイプ (.tlb) ライブラリ。 詳細については、「[コードの構造の表示](../../ide/viewing-the-structure-of-code.md)」を参照してください。
@@ -46,9 +46,9 @@ ms.locfileid: "56617003"
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]オブジェクト マネージャーを呼び出し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>する特定のリスト項目が展開され、子項目があるかどうかを判断するメソッド。 オブジェクト マネージャーが呼び出すことによって子シンボルの一覧を要求する UI は、要素を拡張する要求を送信する場合、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>メソッド。 プロセスは、オンデマンドで構築されるツリーのさまざまな部分を続行します。
 
 > [!NOTE]
->  ネイティブ コードのシンボル プロバイダーを実装するには、使用、<xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>インターフェイス。
+> ネイティブ コードのシンボル プロバイダーを実装するには、使用、<xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>インターフェイス。
 
 ## <a name="see-also"></a>関連項目
-- [方法: オブジェクト マネージャーにライブラリを登録します。](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
-- [方法: オブジェクト マネージャーにライブラリによって提供されるシンボルのリストを公開します。](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
-- [方法: ライブラリ内のシンボルを識別します。](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+- [方法: オブジェクト マネージャーを使用したライブラリの登録](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
+- [方法: ライブラリによって提供されるシンボルのリストをオブジェクト マネージャーに公開する](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+- [方法: ライブラリでのシンボルの識別](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

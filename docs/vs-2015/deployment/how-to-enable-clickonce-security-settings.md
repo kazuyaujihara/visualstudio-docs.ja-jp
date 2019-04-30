@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 768bfc5de11f8b7fa6c3cd8988dbcc70633dde89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b104a7a0451da7f772077d2f566b36b9f601c17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433805"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>方法: [ClickOnce セキュリティ設定を有効にする]
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60082831"
      [セキュリティ] ページで、アプリケーションのセキュリティ設定をカスタマイズできます。  
   
     > [!NOTE]
-    >  アプリケーションを発行するたびに、このチェック ボックスを自動的に選択、**発行**ウィザード。  
+    > アプリケーションを発行するたびに、このチェック ボックスを自動的に選択、**発行**ウィザード。  
   
 ### <a name="to-disable-clickonce-security-settings"></a>ClickOnce のセキュリティ設定を無効にするには  
   
@@ -57,7 +57,7 @@ ms.locfileid: "60082831"
      アプリケーションは完全な信頼のセキュリティ設定で実行します。すべての設定、**セキュリティ**ページは無視されます。  
   
     > [!NOTE]
-    >  発行ウィザードで、アプリケーションを発行するたびに、このチェック ボックスがオンする;各発行に成功した後にもう一度オフにする必要があります。  
+    > 発行ウィザードで、アプリケーションを発行するたびに、このチェック ボックスがオンする;各発行に成功した後にもう一度オフにする必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションのセキュリティ](../deployment/securing-clickonce-applications.md)   

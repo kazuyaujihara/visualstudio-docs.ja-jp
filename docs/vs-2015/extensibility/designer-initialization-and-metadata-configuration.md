@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f3bae21baa0c484f2deeb8406a703b92cadc874b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439043"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>デザイナーの初期化とメタデータの構成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60049258"
 1. 実装するオブジェクトを作成、<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>クラス。  
   
    > [!NOTE]
-   >  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>と同じオブジェクトのクラスを実装することはありません、<xref:Microsoft.VisualStudio.Shell.Package>クラス。  
+   > <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>と同じオブジェクトのクラスを実装することはありません、<xref:Microsoft.VisualStudio.Shell.Package>クラス。  
   
 2. 実装するクラスを登録<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>のインスタンスを適用することで、VSPackage のデザイナーの拡張機能のサポートを提供するものとして<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>、<xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute>と<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>の VSPackage の実装を提供するクラスに<xref:Microsoft.VisualStudio.Shell.Package>.  
   
@@ -93,7 +93,7 @@ ms.locfileid: "60049258"
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  現時点では、デザイン画面には、コンポーネントの作成のみがサポートされ、したがってコンポーネントのみがローカルのメタデータを持つことができます。 など、プロパティの変更を試みた上記の例では、`Color`オブジェクトのプロパティ。 場合`false`、グローバル フラグの渡された`CustomBrowser`はデザイナーのインスタンスを実際に作成するためには表示されません`Color`します。 グローバル フラグを設定`false`コンポーネント、コントロール、タイマー、およびダイアログ ボックスなどの役に立ちます。  
+> 現時点では、デザイン画面には、コンポーネントの作成のみがサポートされ、したがってコンポーネントのみがローカルのメタデータを持つことができます。 など、プロパティの変更を試みた上記の例では、`Color`オブジェクトのプロパティ。 場合`false`、グローバル フラグの渡された`CustomBrowser`はデザイナーのインスタンスを実際に作成するためには表示されません`Color`します。 グローバル フラグを設定`false`コンポーネント、コントロール、タイマー、およびダイアログ ボックスなどの役に立ちます。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   

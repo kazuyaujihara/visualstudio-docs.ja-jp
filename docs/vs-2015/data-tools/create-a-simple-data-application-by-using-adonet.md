@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436973"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET を使用した単純なデータ アプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60047426"
  この記事では、非常に高速の方法で、データベースからデータを取得する簡単な方法を示します。 を、アプリケーションが自明でない方法でデータを変更し、データベースを更新する必要がある場合は、Entity Framework を使用して、基になるデータの変更をユーザー インターフェイス コントロールを自動的に同期へのデータ バインディングを使用してを検討してください。  
   
 > [!IMPORTANT]
->  コードをシンプルにするため、運用環境で使用する例外処理は含まれていません。  
+> コードをシンプルにするため、運用環境で使用する例外処理は含まれていません。  
   
  **このトピックの内容**  
   
@@ -78,7 +78,7 @@ ms.locfileid: "60047426"
 3. 各フォームに、次の図に示されるように、テキスト ボックス、ボタン、および他のコントロールを追加します。 各コントロールに、テーブルを示すプロパティを設定します。  
   
    > [!NOTE]
-   >  グループ ボックス、およびラベル コントロールは明確性を追加しますが、コードでは使用されません。  
+   > グループ ボックス、およびラベル コントロールは明確性を追加しますが、コードでは使用されません。  
   
    **Navigation フォーム**  
   
@@ -135,7 +135,7 @@ ms.locfileid: "60047426"
 5. **値**列で、(任意の外部の引用符)、なし、接続文字列を入力し、変更を保存します。  
   
 > [!NOTE]
->  実際のアプリケーションでは文字列を格納する接続」の説明に従って、安全に[接続文字列と構成ファイル](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)します。  
+> 実際のアプリケーションでは文字列を格納する接続」の説明に従って、安全に[接続文字列と構成ファイル](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)します。  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> 接続文字列を取得します。  
   

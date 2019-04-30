@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aff56ea4527fcc61c9b74c73df3b36c554c43072
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ade4bdfce2cd01864075e02648f233622cafc61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418433"
 ---
 # <a name="important-commands-for-language-service-filters"></a>言語サービス フィルターの重要なコマンド
 フル機能の言語サービス フィルターを作成する場合は、次のコマンドの処理を検討してください。 コマンド識別子の完全な一覧が定義されている、<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>マネージ コードと Stdidcmd.h ヘッダーの列挙体のアンマネージ ファイル[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]コード。 Stdidcmd.h ファイル*Visual Studio SDK インストール パス*\VisualStudioIntegration\Common\Inc します。
@@ -24,7 +24,7 @@ ms.locfileid: "56602417"
 ## <a name="commands-to-handle"></a>ハンドルするためのコマンド
 
 > [!NOTE]
->  場合によっては、次の表のすべてのコマンドのフィルター処理する必要はありません。
+> 場合によっては、次の表のすべてのコマンドのフィルター処理する必要はありません。
 
 |コマンド|説明|
 |-------------|-----------------|

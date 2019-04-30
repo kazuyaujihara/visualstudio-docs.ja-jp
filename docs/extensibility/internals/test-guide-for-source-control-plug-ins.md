@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40de16290e52755ab92d09edf0c90c045ad4dc86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 120aed577f0365c9d595916e191779793271d90d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429926"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>ソース管理プラグイン向けのテスト ガイド
 このセクションでは、ソース管理プラグインをテストするためのガイダンスを提供します。[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 同様の問題となる可能性がより複雑な領域の一部、最も一般的なテスト領域の広範な概要が表示されます。 この概要はテスト_ケースを網羅するものではありません。
 
 > [!NOTE]
->  いくつかのバグ修正と最新の機能強化[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]既存ソース管理プラグインをしないの以前のバージョンを使用しているときに発生した以前の問題が明らかに IDE[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 場合でも、変更が加えないプラグインの以前のバージョン以降、既存のソース管理プラグインのこのセクションに列挙された領域をテストすることを強くお勧め[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
+> いくつかのバグ修正と最新の機能強化[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]既存ソース管理プラグインをしないの以前のバージョンを使用しているときに発生した以前の問題が明らかに IDE[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 場合でも、変更が加えないプラグインの以前のバージョン以降、既存のソース管理プラグインのこのセクションに列挙された領域をテストすることを強くお勧め[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
 
 ## <a name="common-preparation"></a>一般的な準備
  マシン[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ターゲットのソース管理プラグイン インストールされている必要があります。 同様に構成されている 2 つ目のマシンは、いくつかのテストのソース管理から開く を使用できます。
@@ -51,7 +51,7 @@ ms.locfileid: "60061035"
 
 ## <a name="test-areas-covered-in-this-section"></a>このセクションで説明するテスト区分
 
-- [テスト領域 1:ソース管理から開く/を追加します。](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [テスト領域 1: ソース管理への追加とオープン](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
     - ケース 1 a:ソリューションをソース管理に追加します。
 
@@ -59,9 +59,9 @@ ms.locfileid: "60061035"
 
     - ケース 1 c:ソース管理からソリューションを追加します。
 
-- [テスト領域 2:ソース管理から取得します。](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [テスト領域 2: ソース管理から取得](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
-- [テスト領域 3:チェック アウト/チェック アウトの取り消し](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [テスト領域 3: チェックアウトとチェックアウトの取り消し](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
     - ケース 3:チェック アウト/チェック アウトの取り消し
 
@@ -75,7 +75,7 @@ ms.locfileid: "60061035"
 
     - ケース 3 e:チェック アウトを取り消し
 
-- [テスト領域 4:チェックイン](../../extensibility/internals/test-area-4-check-in.md)
+- [テスト領域 4: チェックイン](../../extensibility/internals/test-area-4-check-in.md)
 
     - ケース 4 a:変更された項目
 
@@ -83,7 +83,7 @@ ms.locfileid: "60061035"
 
     - ケース 4 c:プロジェクトの追加
 
-- [テスト領域 5:ソース管理の変更](../../extensibility/internals/test-area-5-change-source-control.md)
+- [テスト領域 5: ソース管理の変更](../../extensibility/internals/test-area-5-change-source-control.md)
 
     - ケース 5 a:バインド
 
@@ -91,11 +91,11 @@ ms.locfileid: "60061035"
 
     - ケース 5 c:再バインドします。
 
-- [テスト領域 6:Delete](../../extensibility/internals/test-area-6-delete.md)
+- [テスト領域 6: 削除](../../extensibility/internals/test-area-6-delete.md)
 
-- [テスト領域 7:共有](../../extensibility/internals/test-area-7-share.md)
+- [テスト領域 7: 共有](../../extensibility/internals/test-area-7-share.md)
 
-- [テスト領域 8:プラグインの切り替え](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [テスト領域 8: プラグインの切り替え](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
     - 大文字と小文字の 8 a:自動の変更
 

@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b71b092bcadef24e564b14dd215bc9c328aa8e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430465"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>チュートリアル: 項目テンプレート、第 2 部でのカスタム動作プロジェクト項目を作成します。
   カスタム SharePoint プロジェクト項目の種類を定義し、Visual Studio で項目テンプレートに関連付ける、テンプレートのウィザードを提供する可能性がありますもします。 ウィザードを使用すると、プロジェクトにプロジェクト項目の新しいインスタンスを追加するのにテンプレートを使用するときに、ユーザーから情報を収集します。 収集した情報を使用して、プロジェクト項目を初期化できます。
@@ -34,7 +34,7 @@ ms.locfileid: "60081139"
 - ウィザードをデバッグおよびテストします。
 
 > [!NOTE]
->  サンプルをダウンロードする[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities)ワークフローのカスタム アクティビティを作成する方法を示すです。
+> サンプルをダウンロードする[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities)ワークフローのカスタム アクティビティを作成する方法を示すです。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行する必要があります最初、CustomActionProjectItem ソリューション実行して作成した[チュートリアル。カスタム動作プロジェクト項目を作成、項目テンプレート、第 1 部に](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)します。
@@ -125,12 +125,12 @@ ms.locfileid: "60081139"
 2. XAML ビューで、現在の XAML を次の XAML に置き換えます。 XAML では、見出しが含まれています、制御、カスタムの動作と、ウィンドウの下部にあるナビゲーション ボタンの動作を指定するための UI を定義します。
 
     > [!NOTE]
-    >  このコードを追加した後は、プロジェクトをいくつかのコンパイル エラーになります。 これらのエラーは、この後の手順でコードを追加すると解消されます。
+    > このコードを追加した後は、プロジェクトをいくつかのコンパイル エラーになります。 これらのエラーは、この後の手順でコードを追加すると解消されます。
 
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    >  この XAML で作成したウィンドウがから派生、<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基本クラス。 Visual Studio にカスタムの WPF ダイアログ ボックスを追加すると、Visual Studio での他のダイアログ ボックスで一貫性のあるスタイルを設定して、モーダル ダイアログ ボックスで発生する可能性のある問題を回避するためには、このクラスから、ダイアログ ボックスを派生させることをお勧めします。 詳細については、次を参照してください。[モーダル ダイアログ ボックスの管理の作成と](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)します。
+    > この XAML で作成したウィンドウがから派生、<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基本クラス。 Visual Studio にカスタムの WPF ダイアログ ボックスを追加すると、Visual Studio での他のダイアログ ボックスで一貫性のあるスタイルを設定して、モーダル ダイアログ ボックスで発生する可能性のある問題を回避するためには、このクラスから、ダイアログ ボックスを派生させることをお勧めします。 詳細については、次を参照してください。[モーダル ダイアログ ボックスの管理の作成と](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)します。
 
 3. Visual Basic プロジェクトを開発する場合は、削除、`ItemTemplateWizard`から名前空間、`WizardWindow`内のクラス名、`x:Class`の属性、`Window`要素。 この要素は XAML の 1 行目にあります。 完了したら、最初の行は、次のコードをようになります。
 
@@ -314,7 +314,7 @@ ms.locfileid: "60081139"
      カスタム アクションをパッケージ化されで指定された SharePoint サイトに配置された、**サイトの URL**プロジェクトでは、web ブラウザーのプロパティがこのサイトの既定のページが表示されます。
 
     > [!NOTE]
-    >  場合、**スクリプト デバッグが無効** ダイアログ ボックスが表示されたら、選択、**はい**ボタンをクリックします。
+    > 場合、**スクリプト デバッグが無効** ダイアログ ボックスが表示されたら、選択、**はい**ボタンをクリックします。
 
 2. SharePoint サイトの一覧の領域で、選択、**タスク**リンク。
 
@@ -346,5 +346,5 @@ ms.locfileid: "60081139"
 - [カスタム SharePoint プロジェクト項目の種類を定義します。](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [項目テンプレートとの SharePoint プロジェクト アイテムのプロジェクト テンプレートを作成します。](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Visual Studio テンプレート スキーマ参照](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [方法: プロジェクト テンプレートにウィザードの使用](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [方法: プロジェクト テンプレートでウィザードを使用する](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [カスタム アクションの既定の場所と Id](http://go.microsoft.com/fwlink/?LinkId=181964)

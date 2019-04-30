@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: e4c9884517120647e8d0d5bff263496900c2318c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0a898096c282a22201d60995693144cc0e187812
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435407"
 ---
 # <a name="understanding-sal"></a>SAL について
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -246,7 +246,7 @@ void OutOptCaller()
  `_Inout_` 関数によって変更されるポインター パラメーターの注釈に使用されます。 ポインターは、呼び出しの前に有効な初期化データを指す必要がありますされ、変わる場合でもが必要も有効な値を返された場合。 注釈は、関数の読み取りし、書き込みを 1 つの要素のバッファーに自由に可能性があることを指定します。 呼び出し元は、バッファーを提供し、初期化する必要があります。  
   
 > [!NOTE]
->  ような`_Out_`、`_Inout_`変更可能な値に適用する必要があります。  
+> ような`_Out_`、`_Inout_`変更可能な値に適用する必要があります。  
   
 ```cpp  
   

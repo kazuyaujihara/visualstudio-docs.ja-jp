@@ -8,12 +8,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e31f0170d10e3b8088ec9860a6bb9a3ad5306b0f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e8b2c26050fd3e78e76b93e6372a03836916387
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416345"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>方法: .NET Framework の旧バージョンを対象とした単体テストを構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Microsoft Visual Studio でテスト プロジェクトを作成すると、最�
      **[新しいプロジェクト]** ダイアログ ボックスが表示されます。  
   
     > [!WARNING]
-    >  Visual C++ に対して以前のバージョンの .NET Framework の C++/CLI 単体テストを作成するには、対応するバージョンの Visual Studio を使用する必要があります。 たとえば、.NET Framework 3.5 を対象とする場合、[!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] と [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1.をインストールする必要があります。  
+    > Visual C++ に対して以前のバージョンの .NET Framework の C++/CLI 単体テストを作成するには、対応するバージョンの Visual Studio を使用する必要があります。 たとえば、.NET Framework 3.5 を対象とする場合、[!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] と [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1.をインストールする必要があります。  
   
 2. **[インストールされているテンプレート]** の **[Visual C ++]** を展開します。 **[テスト]**、**[テスト プロジェクト]** テンプレートの順に選択します。  
   

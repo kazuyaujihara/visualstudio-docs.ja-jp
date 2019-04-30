@@ -11,12 +11,12 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fa0acb706d0b5cb6a37578ab6cb7b707850c5949
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0dcdfe3f6e488514bb2ee1ca950e952b16039b42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433846"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>複数インスタンスのツール ウィンドウの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60070629"
 1. という名前のプロジェクトを作成する**MultiInstanceToolWindow** VSIX のテンプレートを使用して、という名前のカスタム ツール ウィンドウの項目テンプレートを追加**MIToolWindow**します。  
   
     > [!NOTE]
-    >  ツール ウィンドウで拡張機能の作成の詳細については、次を参照してください。[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。  
+    > ツール ウィンドウで拡張機能の作成の詳細については、次を参照してください。[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。  
   
 ## <a name="making-a-tool-window-multi-instance"></a>ツール ウィンドウの複数インスタンスの作成  
   

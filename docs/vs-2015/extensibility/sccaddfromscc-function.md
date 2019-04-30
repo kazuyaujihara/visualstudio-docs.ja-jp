@@ -12,12 +12,12 @@ ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 346a036d38c7ee86daf30320c5f454f9e807f7d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ccf3a25bda14cf98fdba4a58b0032444badc4c4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432488"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ SCCRTN SccAddFromScc (
  `lplpFileNames` `char ***`ポインター。 ソース管理プラグインは、この API の標準的な方法で一覧を渡すためのファイル名へのポインターの配列へのポインターを配置します。  
   
 > [!NOTE]
->  VSSCI API の最初のバージョンでは、ターゲットのプロジェクトを追加したファイルを示す方法は提供しませんでした。 これのセマンティクスに合わせて、`lplpFIleNames`パラメーターが出力パラメーターではなく、入力/出力パラメーターに強化されています。 1 つのファイルを指定すると、専用の場合は、値によって示される`lpnFiles`= 1、最初の要素の`lplpFileNames`ターゲット フォルダーが含まれています。 このような新しいセマンティクスを IDE の呼び出しを使用する、`SccSetOption`関数と、`nOption`パラメーターに設定`SCC_OPT_SHARESUBPROJ`します。 返すかどうか、ソース管理プラグインは、セマンティクスをサポートしていません、`SCC_E_OPTNOTSUPPORTED`します。 無効にします。 そのための使用を行って、**ソース管理から追加**機能します。 プラグインをサポートしている場合、**ソース管理から追加**機能 (`SCC_CAP_ADDFROMSCC`)、次に新しいセマンティクスをサポートし、返す必要があります`SCC_I_SHARESUBPROJOK`します。  
+> VSSCI API の最初のバージョンでは、ターゲットのプロジェクトを追加したファイルを示す方法は提供しませんでした。 これのセマンティクスに合わせて、`lplpFIleNames`パラメーターが出力パラメーターではなく、入力/出力パラメーターに強化されています。 1 つのファイルを指定すると、専用の場合は、値によって示される`lpnFiles`= 1、最初の要素の`lplpFileNames`ターゲット フォルダーが含まれています。 このような新しいセマンティクスを IDE の呼び出しを使用する、`SccSetOption`関数と、`nOption`パラメーターに設定`SCC_OPT_SHARESUBPROJ`します。 返すかどうか、ソース管理プラグインは、セマンティクスをサポートしていません、`SCC_E_OPTNOTSUPPORTED`します。 無効にします。 そのための使用を行って、**ソース管理から追加**機能します。 プラグインをサポートしている場合、**ソース管理から追加**機能 (`SCC_CAP_ADDFROMSCC`)、次に新しいセマンティクスをサポートし、返す必要があります`SCC_I_SHARESUBPROJOK`します。  
   
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)   

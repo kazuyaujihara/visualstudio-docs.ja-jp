@@ -10,12 +10,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f3d56ae02718f5dfdf373eeeb6aff774d11931e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435951"
 ---
 # <a name="how-to-implement-undo-management"></a>方法: 元に戻す管理を実装
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,9 +77,9 @@ ms.locfileid: "60112612"
    `OleUndoManager`クラスは、1 つの元に戻すスタックのインスタンスを表します。 したがって、undo または redo の追跡されているデータ エンティティごとに 1 つの元に戻すマネージャー オブジェクトがあります。  
   
 > [!NOTE]
->  元に戻すマネージャー オブジェクトは、テキスト エディターに広範囲に使用される、中に、テキスト エディターの特定のサポートを持たない全般コンポーネントになります。 複数レベルの取り消しまたはやり直しをサポートする場合は、このオブジェクトを使用してこれを行うことができます。  
+> 元に戻すマネージャー オブジェクトは、テキスト エディターに広範囲に使用される、中に、テキスト エディターの特定のサポートを持たない全般コンポーネントになります。 複数レベルの取り消しまたはやり直しをサポートする場合は、このオブジェクトを使用してこれを行うことができます。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [方法: 元に戻すスタックをクリアします。](../extensibility/how-to-clear-the-undo-stack.md)
+ [方法: 元に戻すスタックをクリアする](../extensibility/how-to-clear-the-undo-stack.md)

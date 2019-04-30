@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 217cef39fb3f8564d4ac51878e515622706811ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6bbdcb2e2ac8f905a2b52cfb41ed90217d215b4b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431539"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045:型を参照によって渡しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "58972437"
  戻り値は一般的であり使用頻度の高いの適切なアプリケーションが`out`と`ref`パラメーターは、中間の設計とコーディングのスキルが必要です。 ライブラリのアーキテクトが設計には一般的なユーザーはユーザーがマスターの操作を期待できません`out`または`ref`パラメーター。
 
 > [!NOTE]
->  大きな構造体のパラメーターを使用するときにこれらの構造をコピーするために必要なその他のリソースにより、パフォーマンスに影響値渡しする場合。 このような場合は、使用を検討できます`ref`または`out`パラメーター。
+> 大きな構造体のパラメーターを使用するときにこれらの構造をコピーするために必要なその他のリソースにより、パフォーマンスに影響値渡しする場合。 このような場合は、使用を検討できます`ref`または`out`パラメーター。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この値の型によって引き起こされるルールの違反を修正するには、その戻り値としてオブジェクトを返すメソッドがあります。 メソッドは、複数の値を返す必要があります、値を保持するオブジェクトの 1 つのインスタンスが返されるまで設計し直します。

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 179192e5935f3a97f38dc3a1b78dd1bd760c303d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3ecbed7e1f57150e798818c24cb36a1de24e58aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423822"
 ---
 # <a name="project-configuration-for-building"></a>ビルドのためのプロジェクト構成
 特定のソリューションのソリューション構成の一覧は、ソリューション構成 ダイアログ ボックスによって管理されます。
@@ -26,7 +26,7 @@ ms.locfileid: "56636783"
  ユーザーは、MyConfig2 という名前の新しいソリューション構成を作成する場合 Project1 は既定ではソリューションの構成のデバッグ構成をバインドします。 Project2 も、既定では、ソリューション構成にその MyConfig2 構成をバインドします。
 
 > [!NOTE]
->  バインディングでは大文字です。
+> バインディングでは大文字です。
 
  ユーザーが選択すると、**複数選択**項目構成ドロップダウン リストで、環境には使用可能な構成の一覧を提供するダイアログ ボックスが表示されます。
 
@@ -43,7 +43,7 @@ ms.locfileid: "56636783"
  プロジェクトの依存関係は、プロジェクトのビルド順序を決定します。 ダイアログ ボックスで、ビルドの順序 タブを使用すると、ソリューション内のプロジェクトはビルド、および依存関係 タブを使用して、ビルドの順序を変更するのには、正確な順序を表示できます。
 
 > [!NOTE]
->  指定された明示的な依存関係のための環境で、チェック ボックスが選択されているが淡色表示の一覧でのプロジェクトが追加されました、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>インターフェイス、および変更することはできません。 たとえばからのプロジェクト参照を追加、[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]別のプロジェクトにプロジェクト参照を削除することによってのみ削除できるビルドの依存関係を自動的に追加します。 依存関係のループの作成はそうために、プロジェクトがオフ、淡色表示のチェック ボックスを選択できません (Project2、時に依存する Project1 および Project1 に依存する Project2 など)、ビルドを停止するとします。
+> 指定された明示的な依存関係のための環境で、チェック ボックスが選択されているが淡色表示の一覧でのプロジェクトが追加されました、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>インターフェイス、および変更することはできません。 たとえばからのプロジェクト参照を追加、[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]別のプロジェクトにプロジェクト参照を削除することによってのみ削除できるビルドの依存関係を自動的に追加します。 依存関係のループの作成はそうために、プロジェクトがオフ、淡色表示のチェック ボックスを選択できません (Project2、時に依存する Project1 および Project1 に依存する Project2 など)、ビルドを停止するとします。
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ビルド プロセスには、一般的なコンパイルとリンクに関する単一のビルド コマンドで呼び出される操作が含まれます。 その他の 2 つのビルド プロセスもサポートされていることができます。 前回のビルドと構成の出力項目が変更された場合を決定する、最新の状態のチェックからすべての出力項目を削除するクリーン操作。
 
@@ -53,7 +53,7 @@ ms.locfileid: "56636783"
 
  プロジェクトの依存関係を実装したら、オートメーション モデルでの依存関係をプログラムで操作できます。 呼び出す<xref:EnvDTE.SolutionBuild.BuildDependencies%2A>オートメーション モデル。 ソリューションのビルド マネージャーの構成とそのプロパティの直接操作できる使用可能な API レベルの VSIP インターフェイスはありません。
 
- さらに、プロジェクトの依存関係 ウィンドウのグリッドを行うことができます。 詳細については、[プロパティ表示グリッド](../../extensibility/internals/properties-display-grid.md)を参照してください。
+ さらに、プロジェクトの依存関係 ウィンドウのグリッドを行うことができます。 詳細については、次を参照してください。[プロパティ表示グリッド](../../extensibility/internals/properties-display-grid.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)

@@ -14,12 +14,12 @@ ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8da1661d518ff13d3949bee27dc0b78f5e244103
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8722cc2990f91446c806bf80f3673dc4c941532
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432560"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>方法: プロジェクト テンプレートでウィザードを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Visual Studio には、<xref:Microsoft.VisualStudio.TemplateWizard.IWizard> イ�
 1. C# プロジェクト テンプレート プロジェクトを作成 (Visual Studio で、**ファイル/新しい/プロジェクト/Visual c#/機能拡張/c# プロジェクト テンプレート**)。 名前を付けます**MyProjectTemplate**します。  
   
     > [!NOTE]
-    >  Visual Studio SDK をインストールするためのよく寄せられる可能性があります。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
+    > Visual Studio SDK をインストールするためのよく寄せられる可能性があります。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
   
 2. 新しい VSIX プロジェクトの追加 (**ファイル/新しい/プロジェクト/Visual c#/機能拡張/VSIX プロジェクト**) プロジェクト テンプレートと同じソリューションで (で、**ソリューション エクスプ ローラー**、ソリューション ノードを選択右クリックし、**追加/新規プロジェクト**)。 名前を付けます**MyProjectWizard します。**  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67429131e87aa414957bf01847e03af44468d0ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432579"
 ---
 # <a name="shader-designer"></a>シェーダー デザイナー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60116817"
 |HLSL シェーダー (バイトコード)|.cso|エクスポート|  
 |C++ ヘッダー (HLSL バイトコード配列)|.h|エクスポート|  
   
-## <a name="getting-started"></a>作業の開始  
+## <a name="getting-started"></a>.NET ネイティブの概要  
  このセクションでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトに DGSL シェーダーを追加する方法を説明し、作業の開始に役立つ基本的な情報を提供します。  
   
 #### <a name="to-add-a-dgsl-shader-to-your-project"></a>プロジェクトに DGSL シェーダーを追加する手順  
@@ -84,7 +84,7 @@ ms.locfileid: "60116817"
 |**詳細設定**|高度なコマンドとオプションがあります。<br /><br /> **エクスポート**:複数の形式でシェーダーをエクスポートできます。<br /><br /> **名前を付けてエクスポート**:HLSL ソース コードか、またはコンパイル済みシェーダー バイトコードとしてシェーダーをエクスポートします。 シェーダーをエクスポートする方法の詳細については、「[方法:シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)します。<br /><br /> **グラフィックス エンジン**:デザイン サーフェイスの表示に使用されるレンダラーを選択できます。<br /><br /> **D3D11 で描画**:Direct3D 11 を使用して、シェーダー デザイナーのデザイン サーフェイスを描画します。<br /><br /> **D3D11WARP で描画**:Direct3D 11 Windows Advanced Rasterization Platform (WARP) を使用して、シェーダー デザイナーのデザイン サーフェイスを描画します。<br /><br /> **表示**:シェーダー デザイナーに関する追加情報を選択できるようにします。<br /><br /> **フレーム レート**:有効にすると、デザイン サーフェイスの右上隅に現在のフレーム レートが表示されます。 フレーム レートは、1 秒あたりの描画フレーム数です。  このオプションは **リアルタイム レンダリング モード** オプションを有効にする場合に便利です。|  
   
 > [!TIP]
->  **[詳細設定]** ボタンを選択すると、最後のコマンドを再実行できます。  
+> **[詳細設定]** ボタンを選択すると、最後のコマンドを再実行できます。  
   
 ### <a name="working-with-nodes-and-connections"></a>ノードと接続の操作  
  **[選択]** モードを使用して、ノードを追加、削除、位置変更、接続、および構成します。 これらの基本操作を実行する方法を以下に示します。  

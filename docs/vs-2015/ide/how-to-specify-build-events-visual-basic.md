@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 315a0e2f6c68a98eac8bb2c36d184ef68998e5ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435138"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>方法: ビルド イベントを指定する (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Visual Basic のビルド イベントを使用して、コンパイル処理の
  ビルド イベントは、**プロジェクト デザイナー**の **[コンパイル]** ページから使用可能な **[ビルド イベント]** ダイアログ ボックスで指定されます。  
   
 > [!NOTE]
->  Visual Basic Express では、ビルド イベントのエントリはサポートされていません。 これは、完全な Visual Studio 製品でのみサポートされます。  
+> Visual Basic Express では、ビルド イベントのエントリはサポートされていません。 これは、完全な Visual Studio 製品でのみサポートされます。  
   
 ## <a name="how-to-specify-pre-build-and-post-build-events"></a>ビルド前のイベントとビルド後のイベントを指定する方法  
   
@@ -45,10 +45,10 @@ Visual Basic のビルド イベントを使用して、コンパイル処理の
 4. ビルド前またはビルド後のアクションのコマンドライン引数を入力し、**[OK]** をクリックします。  
   
     > [!NOTE]
-    >  .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。  
+    > .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。  
   
     > [!NOTE]
-    >  ビルド前またはビルド後イベントが正常に完了しない場合は、アクションの成功を示すゼロ (0) 以外のコードでイベント アクションを終了させて、ビルドを強制終了することができます。  
+    > ビルド前またはビルド後イベントが正常に完了しない場合は、アクションの成功を示すゼロ (0) 以外のコードでイベント アクションを終了させて、ビルドを強制終了することができます。  
   
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>例:ビルド後のイベントを使用してマニフェスト情報を変更する方法  
  次の手順は、ビルド後のイベントから呼び出される .exe コマンドを使用して、アプリケーション マニフェスト (プロジェクト ディレクトリ内の .exe.manifest ファイル) 内にオペレーティング システムの最小バージョンを設定する方法を示しています。 オペレーティング システムの最小バージョンは、4.10.0.0 などの 4 つの部分に分かれた数字です。 これを行うには、次のように、コマンドでマニフェストの `<dependentOS>` セクションを変更します。  

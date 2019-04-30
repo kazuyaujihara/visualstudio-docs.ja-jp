@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 994b87de61aaa0b303b0b0bf8454dad716c9978f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b49b1aa1022b12dc2d409037a1241f51b469a14c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436237"
 ---
 # <a name="code-snippets-schema-reference"></a>コード スニペット スキーマ リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ IntelliSense コード スニペットとは、[!INCLUDE[vsprvs](../includes/vsp
  コード スニペットによって参照されるアセンプリの名前を指定します。  
   
 > [!NOTE]
->  `Assembly` 要素は、Visual Basic のコード スニペットでのみサポートされます。  
+> `Assembly` 要素は、Visual Basic のコード スニペットでのみサポートされます。  
   
  **Assembly** 要素のテキスト値は、アセンブリの表示名 (`System.dll` など) で指定することも、厳密な名前 (`System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1` など) で指定することもできます。  
   
@@ -240,7 +240,7 @@ is a great color. I love Blue.
  Visual Studio でリテラルまたはオブジェクトがフォーカスを取得するときに実行される関数を指定します。  
   
 > [!NOTE]
->  `Function` 要素は、Visual C# のコード スニペットでのみサポートされます。  
+> `Function` 要素は、Visual C# のコード スニペットでのみサポートされます。  
   
 ```xml  
 <Function>  
@@ -289,7 +289,7 @@ is a great color. I love Blue.
  コード スニペットに関する詳細な情報の入手先 URL を指定します。  
   
 > [!NOTE]
->  Visual Studio では `HelpUrl` 要素を使用しません。 この要素は IntelliSense コード スニペット XML スキーマの一部であり、この要素を含むコード スニペットはすべて問題なく検証されますが、要素の値が使われることはありません。  
+> Visual Studio では `HelpUrl` 要素を使用しません。 この要素は IntelliSense コード スニペット XML スキーマの一部であり、この要素を含むコード スニペットはすべて問題なく検証されますが、要素の値が使われることはありません。  
   
 ```xml  
 <HelpUrl>  
@@ -325,7 +325,7 @@ is a great color. I love Blue.
  IntelliSense コード スニペットによって使用されるインポートされた名前空間を指定します。  
   
 > [!NOTE]
->  `Import` 要素は、Visual Basic プロジェクトでのみサポートされます。  
+> `Import` 要素は、Visual Basic プロジェクトでのみサポートされます。  
   
 ```xml  
 <Import>  
@@ -346,7 +346,7 @@ is a great color. I love Blue.
  複数の `Import` 要素をグループ化します。  
   
 > [!NOTE]
->  `Imports` 要素は、Visual Basic プロジェクトでのみサポートされます。  
+> `Imports` 要素は、Visual Basic プロジェクトでのみサポートされます。  
   
 ```xml  
 <Imports>  
@@ -428,7 +428,7 @@ is a great color. I love Blue.
  コード スニペットをコンパイルおよび実行するためにインポートする必要のある名前空間を指定します。 `Namespace` 要素で指定された名前空間が存在しない場合、コードの先頭に `Imports` ステートメントとして自動的に追加されます。  
   
 > [!NOTE]
->  `Namespace` 要素は、Visual Basic プロジェクトでのみサポートされます。  
+> `Namespace` 要素は、Visual Basic プロジェクトでのみサポートされます。  
   
 ```xml  
 <Namespace>  
@@ -475,7 +475,7 @@ is a great color. I love Blue.
  コード スニペットで参照する必要のあるアセンブリについての情報を指定します。  
   
 > [!NOTE]
->  `Reference` 要素は、Visual Basic プロジェクトでのみサポートされます。  
+> `Reference` 要素は、Visual Basic プロジェクトでのみサポートされます。  
   
 ```xml  
 <Reference>  
@@ -497,7 +497,7 @@ is a great color. I love Blue.
  複数の `Reference` 要素をグループ化します。  
   
 > [!NOTE]
->  `References` 要素は、Visual Basic プロジェクトでのみサポートされます。  
+> `References` 要素は、Visual Basic プロジェクトでのみサポートされます。  
   
 ```xml  
 <References>  
@@ -517,7 +517,7 @@ is a great color. I love Blue.
  スニペットの挿入に使用するショートカット テキストを指定します。 `Shortcut` 要素のテキスト値には、英数字、ハイフン (-)、およびアンダースコア (_) のみを含めることができます。  
   
 > [!CAUTION]
->  _ と – の文字は C++ スニペットのショートカットではサポートされていません。  
+> _ と – の文字は C++ スニペットのショートカットではサポートされていません。  
   
 ```xml  
 <Shortcut>  
@@ -644,7 +644,7 @@ is a great color. I love Blue.
  参照アセンブリの詳細情報を提供する URL を指定します。  
   
 > [!NOTE]
->  `Url` 要素は、Visual Basic プロジェクトでのみサポートされます。  
+> `Url` 要素は、Visual Basic プロジェクトでのみサポートされます。  
   
 ```xml  
 <Url>  

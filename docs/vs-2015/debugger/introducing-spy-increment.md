@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d7a758a40ed5cee6a42994170ca35188e942db7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 35e9fa2d75528549f8c55f5b52dbd4c4aa2271a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431452"
 ---
 # <a name="introducing-spy"></a>Spy++ の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Spy++ で実行できるタスクは以下のとおりです。
   さまざまな Spy++ ウィンドウでは、右クリックして頻繁に使用するコマンドのショートカット メニューを表示できます。 表示されるコマンドは、ポインターの位置によって異なります。 たとえば、ウィンドウ ビューのエントリを右クリックし、選択したウィンドウが表示されている場合は、ショートカット メニューの **[強調表示]** をクリックすると、選択したウィンドウの枠線が点滅して、より簡単に見つけられるようになります。  
   
 > [!NOTE]
->  Spy++ に似たその他の 2 つのユーティリティがあります。PView は、プロセスとスレッド、およびあります詳細が表示されます。EXE、ダイナミック データ エクス チェンジ (DDE) メッセージを監視することができます。  
+> Spy++ に似たその他の 2 つのユーティリティがあります。PView は、プロセスとスレッド、およびあります詳細が表示されます。EXE、ダイナミック データ エクス チェンジ (DDE) メッセージを監視することができます。  
   
 ## <a name="64-bit-operating-systems"></a>64 ビット オペレーティング システム  
  Spy++ には 2 つのバージョンがあります。 1 番目のバージョンである Spy++ (spyxx.exe) は、32 ビット プロセスで実行しているウィンドウに送信されるメッセージを表示するように設計されています。 たとえば、Visual Studio は 32 ビット プロセスで実行されます。 したがって、Spy++ を使用して、 **ソリューション エクスプローラー**に送信されるメッセージを表示できます。 Visual Studio におけるほとんどのビルドの既定の構成は 32 ビット プロセスで実行するものなので、Visual Studio の **[ツール]** メニューで使用できる Spy++ はこの 1 番目のバージョンです。  
@@ -52,7 +52,7 @@ Spy++ で実行できるタスクは以下のとおりです。
  どちらのバージョンの Spy++ も、コマンドラインから直接実行できます。  
   
 > [!NOTE]
->  Spy++ (64 ビット) のファイル名には "amd" が含まれますが、すべての x64 Windows オペレーティング システムで動作します。  
+> Spy++ (64 ビット) のファイル名には "amd" が含まれますが、すべての x64 Windows オペレーティング システムで動作します。  
   
 ## <a name="see-also"></a>関連項目  
  [Spy++ の使用](../debugger/using-spy-increment.md)   

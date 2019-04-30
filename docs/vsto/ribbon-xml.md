@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436492"
 ---
 # <a name="ribbon-xml"></a>リボン XML
   リボン (XML) 項目では、XML を使用してリボンをカスタマイズすることができます。 リボン (ビジュアル デザイナー) 項目でサポートされていない方法でリボンをカスタマイズする場合は、リボン (XML) 項目を使用します。 各項目で実行できる処理の比較は、次を参照してください。[リボンの概要](../vsto/Ribbon-overview.md)します。
@@ -60,7 +60,7 @@ ms.locfileid: "60117545"
 - リボン クラスでコールバック メソッドを定義します。
 
 > [!NOTE]
->  Outlook では追加の手順が必要です。 詳細については、次を参照してください。 [Outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)します。
+> Outlook では追加の手順が必要です。 詳細については、次を参照してください。 [Outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)します。
 
  リボンからアプリケーションを自動化する方法について説明するチュートリアルでは、次を参照してください。[チュートリアル。カスタム タブをリボン XML を使用して作成](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)です。
 

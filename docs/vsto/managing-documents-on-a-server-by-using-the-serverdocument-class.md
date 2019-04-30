@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 82763f78673391ab6a308ba026a6b9e53c3b474b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438824"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>ServerDocument クラスを使用してサーバー上のドキュメントを管理します。
   使用することができます、`ServerDocument`クラス、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Microsoft Office Word および Microsoft Office Excel がインストールされていない場合でも、ドキュメント レベルのカスタマイズのさまざまな側面を管理します。 実行できる管理タスクは以下のとおりです。
@@ -38,7 +38,7 @@ ms.locfileid: "60045488"
  詳細については、Visual Studio 2010 Tools for Office Runtime および Office 拡張機能、.NET Framework の次を参照してください。 [Visual Studio Tools for Office runtime の概要](../vsto/visual-studio-tools-for-office-runtime-overview.md)します。
 
 > [!NOTE]
->  使用するレガシ アプリケーションがある場合、`ServerDocument`クラス、`Visual Studio Tools for Office`システム (version 3.0 Runtime)、 `Visual Studio Tools for Office` system (version 3.0 runtime) は、アプリケーションを実行しているコンピューターにインストールする必要があります。 `Visual Studio 2010 Tools for Office runtime`これらのアプリケーションを実行することはできません。
+> 使用するレガシ アプリケーションがある場合、`ServerDocument`クラス、`Visual Studio Tools for Office`システム (version 3.0 Runtime)、 `Visual Studio Tools for Office` system (version 3.0 runtime) は、アプリケーションを実行しているコンピューターにインストールする必要があります。 `Visual Studio 2010 Tools for Office runtime`これらのアプリケーションを実行することはできません。
 
 ## <a name="CachedData"></a> ドキュメントのキャッシュされたデータを操作します。
  `ServerDocument` クラスには、カスタマイズされたドキュメント内のデータ キャッシュの操作に使用できるメンバーが用意されています。 キャッシュされたデータの詳細については、次を参照してください。[データ キャッシュ](../vsto/caching-data.md)と[サーバー上のドキュメント内のデータ アクセス](../vsto/accessing-data-in-documents-on-the-server.md)します。

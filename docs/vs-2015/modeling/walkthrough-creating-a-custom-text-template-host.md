@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 28f8cd324079a50a20312022ea6daaba843f8564
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1aaff1fa5d31fe22c8a0b079498ffc07a11b9a7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446744"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>チュートリアル: カスタム テキスト テンプレート ホストの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ A*テキスト テンプレート*<em>ホスト</em>できる環境を提供し�
  使用するかどうか、カスタム ホストを書き込むことができます、*テキスト テンプレート変換*外から機能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]またはカスタム ツールにその機能を統合する場合。 カスタム ホストを作成するには、<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> を継承するクラスを作成する必要があります。 個々のメソッドの説明については、「<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>」を参照してください。  
   
 > [!WARNING]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の拡張機能またはパッケージを作成する場合は、独自のホストを作成するのではなく、テキスト テンプレート サービスを使用することを検討してください。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)  
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の拡張機能またはパッケージを作成する場合は、独自のホストを作成するのではなく、テキスト テンプレート サービスを使用することを検討してください。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)  
   
  このチュートリアルでは、以下のタスクを行います。  
   
@@ -732,7 +732,7 @@ A*テキスト テンプレート*<em>ホスト</em>できる環境を提供し�
 2. ファイルに次のコードを追加します。  
   
     > [!NOTE]
-    >  テキスト テンプレートのプログラミング言語は、カスタム ホストのプログラミング言語と同じでなくてもかまいません。  
+    > テキスト テンプレートのプログラミング言語は、カスタム ホストのプログラミング言語と同じでなくてもかまいません。  
   
     ```csharp  
     Text Template Host Test  
@@ -785,7 +785,7 @@ A*テキスト テンプレート*<em>ホスト</em>できる環境を提供し�
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  アドレスを入力する代わりに、**Windows エクスプ ローラー**でファイル CustomHost.exe を参照し、コマンド プロンプト ウィンドウにファイルをドラッグすることもできます。  
+    > アドレスを入力する代わりに、**Windows エクスプ ローラー**でファイル CustomHost.exe を参照し、コマンド プロンプト ウィンドウにファイルをドラッグすることもできます。  
   
 3. 空白を入力します。  
   
@@ -796,7 +796,7 @@ A*テキスト テンプレート*<em>ホスト</em>できる環境を提供し�
      `C:\<YOUR PATH>TestTemplate.tt`  
   
     > [!NOTE]
-    >  アドレスを入力する代わりに、**Windows エクスプ ローラー**でファイル TestTemplate.tt を参照し、コマンド プロンプト ウィンドウにファイルをドラッグすることもできます。  
+    > アドレスを入力する代わりに、**Windows エクスプ ローラー**でファイル TestTemplate.tt を参照し、コマンド プロンプト ウィンドウにファイルをドラッグすることもできます。  
   
      カスタム ホスト アプリケーションが実行され、テキスト テンプレート変換プロセスが完了します。  
   

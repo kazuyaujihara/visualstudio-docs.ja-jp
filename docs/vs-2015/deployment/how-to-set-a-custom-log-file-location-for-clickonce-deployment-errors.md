@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 020fdd5f3df5f0f3b53f1ca28992c2b6a40a35f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a1b7c93e4b30bbfd373a5fad9d7001452d4f587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403542"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>方法: ClickOnce 配置エラー用にカスタム ログ ファイルの場所を設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,10 +32,10 @@ ms.locfileid: "60116155"
  レジストリ エディターを使用して、特定のクライアントのこの動作を変更することができます (**regedit.exe**) カスタム ログ ファイルのパスを設定します。 この場合、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 1 つのファイルにすべてのデプロイのライセンス認証の成功と失敗を記録します。  
   
 > [!CAUTION]
->  レジストリ エディターを正しく使用する場合、オペレーティング システムを再インストールする必要があります深刻な問題が発生する可能性があります。 問題が発生する可能性のあることを十分に認識したうえで利用してください。  
+> レジストリ エディターを正しく使用する場合、オペレーティング システムを再インストールする必要があります深刻な問題が発生する可能性があります。 問題が発生する可能性のあることを十分に認識したうえで利用してください。  
   
 > [!NOTE]
->  切り捨てるか大きくなりすぎないようにするには、場合によっては、ログ ファイルを削除する必要があります。  
+> 切り捨てるか大きくなりすぎないようにするには、場合によっては、ログ ファイルを削除する必要があります。  
   
  次の手順では、1 つのクライアントのカスタム ログ ファイルの場所を設定する方法について説明します。  
   

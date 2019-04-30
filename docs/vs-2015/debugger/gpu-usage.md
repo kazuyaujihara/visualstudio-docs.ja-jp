@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437954"
 ---
 # <a name="gpu-usage"></a>GPU 使用率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
 - 必要なタイミング インストルメンテーションをサポートする GPU とドライバー。  
   
   > [!NOTE]
-  >  サポートされるハードウェアとドライバーの詳細については、このドキュメントの最後にある「[ハードウェアとドライバーのサポート](#hwsupport)」をご覧ください。  
+  > サポートされるハードウェアとドライバーの詳細については、このドキュメントの最後にある「[ハードウェアとドライバーのサポート](#hwsupport)」をご覧ください。  
   
   グラフィックス診断の要件の詳細については、「[使用を開始する](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)」をご覧ください。  
   
@@ -47,7 +47,7 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
     ![使用する診断ツールを選択します。](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
-   >  すべての [パフォーマンスと診断] ツールを同時に使用することはできません。  
+   > すべての [パフォーマンスと診断] ツールを同時に使用することはできません。  
   
 3. [パフォーマンスと診断] ハブの一番下にある青色の **[開始]** ボタンを選び、いま選んだツールの下でアプリを実行します。  
   
@@ -110,7 +110,7 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
 |**スレッド ID**|イベントの発生元のスレッド ID。|  
   
 > [!IMPORTANT]
->  イベントの属性には Windows 8.1 が必要です。 さらに、GPU またはドライバーがインストルメンテーションのために必要な機能をサポートしていない場合は、すべてのイベントが 'unattributed' として表示されます。 この問題が発生した場合は、GPU ドライバーを更新して、もう一度試してください。 詳細については、この後の「[ハードウェアとドライバーのサポート](#hwsupport)」をご覧ください。  
+> イベントの属性には Windows 8.1 が必要です。 さらに、GPU またはドライバーがインストルメンテーションのために必要な機能をサポートしていない場合は、すべてのイベントが 'unattributed' として表示されます。 この問題が発生した場合は、GPU ドライバーを更新して、もう一度試してください。 詳細については、この後の「[ハードウェアとドライバーのサポート](#hwsupport)」をご覧ください。  
   
 ## <a name="gpu-usage-settings"></a>GPU 使用率の設定  
  アプリが起動した時、すぐに情報の収集を開始するのではなく、プロファイリング情報のコレクションを延期するには、GPU 使用率ツールをそのように構成することができます。 プロファイル情報のサイズはかなり大きくなるため、アプリのパフォーマンス低下がしばらく後になってから現れる場合には、この構成機能が便利です。  
@@ -126,7 +126,7 @@ Visual Studio のパフォーマンスおよび診断ハブに含まれる GPU �
      ![GPU 使用率の収集の開始時に構成する](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
->  プロファイリングの延期は、Direct3D 12 アプリに対しては現在サポートされていません。  
+> プロファイリングの延期は、Direct3D 12 アプリに対しては現在サポートされていません。  
   
  この設定を使用してプロファイリング情報のコレクションを延期すると、GPU 使用率ツールの下でアプリを実行したときに、GPU 使用率ツール ウィンドウの下部で追加のリンクを使用できるようになります。 プロファイリング情報の収集を開始するには、**[GPU 使用率データの収集を開始します]** メッセージの **[開始]** リンクをクリックします。  
   

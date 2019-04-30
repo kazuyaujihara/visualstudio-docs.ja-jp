@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: db9a3e08e14e7fadca6df9e32361c0b042f565e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438328"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>方法: Code Center Premium ソースをデバッグします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +56,12 @@ ms.locfileid: "60039878"
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  末尾のスラッシュを必ず<strong>/</strong> パスの末尾。  
+   > 末尾のスラッシュを必ず<strong>/</strong> パスの末尾。  
   
      これらの場所を一覧の最上部に移動して、これらのシンボルが最初に読み込まれるようにします。  
   
    > [!NOTE]
-   >  これらの Code Center Premium の場所が最初に読み込まれる場所になるように、これらが一覧の最初に配置されている必要があります。 Visual Studio 2010 では、上記のすべてのサーバーを移動することはできません、 **Microsoft シンボル サーバー**エントリは、チェック ボックスをオフにする必要があります。  
+   > これらの Code Center Premium の場所が最初に読み込まれる場所になるように、これらが一覧の最初に配置されている必要があります。 Visual Studio 2010 では、上記のすべてのサーバーを移動することはできません、 **Microsoft シンボル サーバー**エントリは、チェック ボックスをオフにする必要があります。  
    > 
    >  デバッグ セッション中に Microsoft シンボルからシンボルを読み込むには、次の手順に従います。  
    > 
@@ -113,7 +113,7 @@ ms.locfileid: "60039878"
     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  末尾のスラッシュを必ず<strong>/</strong> パスの末尾。  
+   > 末尾のスラッシュを必ず<strong>/</strong> パスの末尾。  
   
 4. ソリューション内のマネージド プロジェクトごとに、次の操作を行います。  
   

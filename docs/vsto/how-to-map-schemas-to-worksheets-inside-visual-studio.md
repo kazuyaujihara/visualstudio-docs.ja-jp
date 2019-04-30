@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae63dd41e18b9226967b77b8adec2f45d05d9447
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80a19924aaf4fa0afe8e809006ada7fada0288f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428109"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>方法: Visual Studio 内でワークシートにスキーマを割り当てる
   ワークシートが Visual Studio で開いている間は、ワークシートに XML スキーマをマップできます。 ブックが Visual Studio の外部で開いているときに使用するのと同じ Microsoft Office Excel ツールを使用するとします。 Office プロジェクトは、前に、ワークシートにスキーマをマップするかどうか、または Excel ソリューションを作成した後に、同じオブジェクトを作成します。
@@ -30,7 +30,7 @@ ms.locfileid: "60057174"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  Excel ソリューションでは、マルチパートの XML スキーマを使用できません。
+> Excel ソリューションでは、マルチパートの XML スキーマを使用できません。
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>XML スキーマを Visual Studio で Excel ワークシートにマップするには
 
@@ -41,7 +41,7 @@ ms.locfileid: "60057174"
 3. リボンの **[開発]** タブをクリックします。
 
     > [!NOTE]
-    >  **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
+    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
 
 4. **XML**グループで、**ソース**します。
 

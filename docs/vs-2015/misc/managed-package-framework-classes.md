@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: d8e2bbf51aa6266411558e91f3c17905d0c8605c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 75f7cb153a976614ff790095141a820af80b5834
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422757"
 ---
 # <a name="managed-package-framework-classes"></a>Managed Package Framework クラス
 Managed Package Framework (MPF) クラスを使用して、マネージド コードを使用する VSPackages を作成できます。 このクラスには多くの VSPackage インターフェイス用の既定の実装が備わっています。 MPF は実装の詳細と複雑さを隠すため、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 統合製品を最小限のコードで作成できます。  
   
 > [!WARNING]
->  Managed Package Framework クラスが含まれるほとんどのアセンブリが、Visual Studio SDK に付属しています。 [プロジェクト用 Managed Package Framework](http://mpfproj11.codeplex.com/)で、プロジェクト用 Managed Package Framework のソース コードをダウンロードできます。  
+> Managed Package Framework クラスが含まれるほとんどのアセンブリが、Visual Studio SDK に付属しています。 [プロジェクト用 Managed Package Framework](http://mpfproj11.codeplex.com/)で、プロジェクト用 Managed Package Framework のソース コードをダウンロードできます。  
   
 ## <a name="mpf-namespaces"></a>MPF 名前空間  
  次の表に、 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]で提供されている MPF 名前空間を一覧にして示します。  

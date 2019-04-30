@@ -13,24 +13,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e1855c64e88cdf45715654eede780aaa20d0258
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6a9a11f42acae44c441aca8cb06a1a363fea5a73
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418857"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>方法: リボンの [開発] タブを表示します。
   アクセスする、**開発者** タブ、Office アプリケーションのリボンで、既定で表示されないため、このタブを表示するように構成する必要があります。 たとえば、Word のドキュメント レベルのカスタマイズに <xref:Microsoft.Office.Tools.Word.GroupContentControl> を追加しようとする場合、このタブを表示する必要があります。
 
 > [!NOTE]
->  このガイダンスは Office 2010 以降のアプリケーションのみに適用されます。 2007 Microsoft Office System のこのタブは表示する場合は、このトピックの次のバージョンを参照してください。[方法。リボンの [開発] タブを表示する](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+> このガイダンスは Office 2010 以降のアプリケーションのみに適用されます。 2007 Microsoft Office System のこのタブは表示する場合は、このトピックの次のバージョンを参照してください。[方法。リボンの [開発] タブを表示する](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
 )します。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  アクセスはありません、**開発者**タブ。
+> アクセスはありません、**開発者**タブ。
 
 ## <a name="to-show-the-developer-tab"></a>[開発] タブを表示するには
 

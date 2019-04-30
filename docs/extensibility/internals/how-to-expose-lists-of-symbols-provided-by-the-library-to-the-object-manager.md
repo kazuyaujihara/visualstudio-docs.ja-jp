@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19f426d60ea8ee3d9326fa9b13adfff115c169d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 93791cda512ee8d74664e1b8b04890da74e399ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420617"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>方法: オブジェクト マネージャーにライブラリによって提供されるシンボルのリストを公開します。
 シンボル参照ツール、**クラス ビュー**、**オブジェクト ブラウザー**、**呼び出しブラウザー**と**シンボルの検索結果**を新しいデータの要求を渡す[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]オブジェクト マネージャー。 オブジェクト マネージャーは、適切なライブラリを検索し、シンボルの新しいリストを要求します。 ライブラリの応答を要求されたデータを提供することで、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]オブジェクト マネージャーを介して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>インターフェイス。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]オブジェクト マネージャー メソッドを呼び出して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>データを取得するインターフェイスを使用して設定またはシンボル参照ツールのビューを更新します。
@@ -27,9 +27,9 @@ ms.locfileid: "60061321"
  ライブラリでは、ツールが呼び出され、ノードを展開すると、またはビューが更新されたとき、データの要求を取得することがあります。 シンボル参照ツールが初めて呼び出されると、オブジェクト マネージャーは、最上位レベルの一覧を提供するライブラリを要求します。 ユーザーは、一覧にノードを展開、ライブラリは、そのノードの下の子の一覧を提供します。 すべてのオブジェクト マネージャーの照会には、関心のある項目のインデックスが含まれています。 新しい一覧を表示するには、項目の数が、項目、その名前、アクセシビリティ、およびその他のプロパティの種類の一覧ではオブジェクト マネージャーを決定する必要があります。
 
 > [!NOTE]
->  実装するシンボルのリストを提供する管理対象のコード例を以下に示します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>インターフェイス。 オブジェクト マネージャーでは、このインターフェイスでメソッドを呼び出して、取得したデータを使用して設定またはシンボル参照ツールを更新します。
+> 実装するシンボルのリストを提供する管理対象のコード例を以下に示します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>インターフェイス。 オブジェクト マネージャーでは、このインターフェイスでメソッドを呼び出して、取得したデータを使用して設定またはシンボル参照ツールを更新します。
 >
->  ネイティブ コード シンボル プロバイダーの実装を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>インターフェイス。
+> ネイティブ コード シンボル プロバイダーの実装を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>インターフェイス。
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>オブジェクト マネージャーにシンボルのリストを提供するには
 

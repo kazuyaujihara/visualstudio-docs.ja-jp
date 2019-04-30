@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4107a5fb88392f9d02cca8f41b0f53d5844d9490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422720"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML モデルの検証制約を定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60071163"
     詳細については、「 [検証制約の評価](#Implementing)」を参照してください。  
   
    > [!IMPORTANT]
-   >  **.cs** ファイルに次の `using` ステートメントが含まれていることを確認します。  
+   > **.cs** ファイルに次の `using` ステートメントが含まれていることを確認します。  
    >   
    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
@@ -223,7 +223,7 @@ using Microsoft.VisualStudio.Uml.Classes;
  検証メソッドは、適用される検証制約が true と false のどちらかであるかを判定します。 true の場合、検証メソッドは何も行いません。 false の場合、検証メソッドは、 `ValidationContext` パラメーターによって提供されるメソッドを使用して、エラーを報告します。  
   
 > [!NOTE]
->  検証メソッドによってモデルが変更されることはありません。 制約がいつどのような順序で実行されるかは保証されません。 検証実行内の検証メソッドの連続的な実行の間で情報を渡す必要がある場合は、「 [複数の検証の調整](#ContextCache)」で説明されているコンテキスト キャッシュを使用できます。  
+> 検証メソッドによってモデルが変更されることはありません。 制約がいつどのような順序で実行されるかは保証されません。 検証実行内の検証メソッドの連続的な実行の間で情報を渡す必要がある場合は、「 [複数の検証の調整](#ContextCache)」で説明されているコンテキスト キャッシュを使用できます。  
   
  たとえば、すべての型 (クラス、インターフェイス、または列挙子) の名前が 3 文字以上であることを確認するには、次のメソッドを使用できます。  
   

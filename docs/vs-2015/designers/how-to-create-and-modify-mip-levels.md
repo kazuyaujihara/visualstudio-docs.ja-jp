@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac8612530ad7a28fef76b3339b9207408842aa8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1c1d0babfec4a2fd56e2ed40c5f2c75329ccb6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434460"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>方法: MIP レベルを作成および変更する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60055094"
   
 #### <a name="to-generate-mip-levels"></a>MIPMAP レベルを生成するには  
   
-1. 「[方法:基本的なテクスチャを作成](../designers/how-to-create-a-basic-texture.md)です。 最適な結果を得るには、テクスチャの高さと幅のサイズは、2 の累乗 (256、512、1024 など) に指定します。  
+1. 「[方法: 基本的なテクスチャを作成](../designers/how-to-create-a-basic-texture.md)です。 最適な結果を得るには、テクスチャの高さと幅のサイズは、2 の累乗 (256、512、1024 など) に指定します。  
   
 2. MIPMAP レベルを生成します。 **[イメージ エディターのモード]** ツール バーで、**[詳細設定]**、**[ツール]**、**[MIPS の生成]** の順にクリックします。  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60055094"
 2. 変更する MIPMAP レベルを選択した後、描画ツールを使用して、他の MIPMAP レベルの内容を変更せずに、その MIPMAP レベルの内容のみ変更できます。 描画ツールは**イメージ エディター**のツール バーで使用できます。 ツールを選択した後は、**[プロパティ]** ウィンドウでそのツールのプロパティを変更できます。 描画ツールとそれらのプロパティの詳細については、「[イメージ エディター](../designers/image-editor.md)」を参照してください。  
   
 > [!NOTE]
->  各 MIPMAP レベルの内容を変更する必要がない場合 (特定の効果を得るためになど)、ビルド時にソース テクスチャから MIPMAP を生成することをお勧めします。 これは、MIPMAP レベルがソース テクスチャと確実に同期するために役立ちます。1 つの MIPMAP レベルに対する変更がその他の MIPMAP レベルに自動的に反映されないためです。 ビルド時に mipmap を生成する方法については、「[方法:Mipmap を含むテクスチャをエクスポート](../designers/how-to-export-a-texture-that-contains-mipmaps.md)します。  
+> 各 MIPMAP レベルの内容を変更する必要がない場合 (特定の効果を得るためになど)、ビルド時にソース テクスチャから MIPMAP を生成することをお勧めします。 これは、MIPMAP レベルがソース テクスチャと確実に同期するために役立ちます。1 つの MIPMAP レベルに対する変更がその他の MIPMAP レベルに自動的に反映されないためです。 ビルド時に mipmap を生成する方法については、「[方法:Mipmap を含むテクスチャをエクスポート](../designers/how-to-export-a-texture-that-contains-mipmaps.md)します。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: 基本的なテクスチャを作成します。](../designers/how-to-create-a-basic-texture.md)
+ [方法: 基本的なテクスチャを作成する](../designers/how-to-create-a-basic-texture.md)

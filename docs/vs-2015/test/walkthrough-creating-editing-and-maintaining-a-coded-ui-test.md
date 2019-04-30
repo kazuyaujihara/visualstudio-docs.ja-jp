@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8df705e1e4da6a54f060de45a90aed7c41691683
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 940a7551c83ec9a195ac0d54b430115ed926abf5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428226"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>チュートリアル: コード化された UI テストの作成、編集、および
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,7 +123,7 @@ ms.locfileid: "60061815"
 2. SimpleWPFApp アプリケーションのデスクトップ ショートカットを作成します。 SimpleWPFApp.exe を右クリックし、**[コピー]** を選択します。 デスクトップで右クリックし、**[ショートカットの貼り付け]** を選択します。  
   
     > [!TIP]
-    >  アプリケーションのショートカットを使用するとアプリケーションをすばやく起動できるため、アプリケーションのコード化された UI テストを追加または変更しやすくなります。  
+    > アプリケーションのショートカットを使用するとアプリケーションをすばやく起動できるため、アプリケーションのコード化された UI テストを追加または変更しやすくなります。  
   
 3. ソリューション エクスプローラーで、ソリューションを右クリックし、**[追加]** を選択して **[新しいプロジェクト]** を選択します。  
   
@@ -154,7 +154,7 @@ ms.locfileid: "60061815"
      ![レコーディングの一時停止](../test/media/cuit.png "CUIT_")  
   
     > [!WARNING]
-    >  デスクトップ上で実行されるすべてのアクションが記録されます。 機密データが記録される可能性のあるアクションを実行する場合には、記録を一時停止します。  
+    > デスクトップ上で実行されるすべてのアクションが記録されます。 機密データが記録される可能性のあるアクションを実行する場合には、記録を一時停止します。  
   
 9. デスクトップ ショートカットを使用して、SimpleWPFApp を起動します。  
   
@@ -203,7 +203,7 @@ ms.locfileid: "60061815"
 3. この問題を解決するには、`WaitForControlEnabled()` メソッドを使用して、コード化された UI テストで CheckBox コントロールが有効になるのを待ってからこの行に進むようにします。  
   
     > [!WARNING]
-    >  UIMap.Designer.cs ファイルは変更しないでください。 UIMapDesigner.cs ファイルでコードを変更しても、[UIMap - コード化された UI テスト ビルダー] を使用してコードを生成するたびに変更が上書きされます。 記録されたメソッドを変更する必要がある場合は、メソッドを UIMap.cs ファイルにコピーし、メソッド名を変更する必要があります。 UIMap.cs ファイルを使用すると、UIMapDesigner.cs ファイルのメソッドやプロパティをオーバーライドできます。 Coded UITest.cs ファイルの元のメソッドへの参照を削除し、変更したメソッド名に置き換える必要があります。  
+    > UIMap.Designer.cs ファイルは変更しないでください。 UIMapDesigner.cs ファイルでコードを変更しても、[UIMap - コード化された UI テスト ビルダー] を使用してコードを生成するたびに変更が上書きされます。 記録されたメソッドを変更する必要がある場合は、メソッドを UIMap.cs ファイルにコピーし、メソッド名を変更する必要があります。 UIMap.cs ファイルを使用すると、UIMapDesigner.cs ファイルのメソッドやプロパティをオーバーライドできます。 Coded UITest.cs ファイルの元のメソッドへの参照を削除し、変更したメソッド名に置き換える必要があります。  
   
 4. ソリューション エクスプローラーで、コード化された UI テスト プロジェクトの **UIMap.uitest** を見つけます。  
   
@@ -224,7 +224,7 @@ ms.locfileid: "60061815"
      テスト メソッドの更新内容が UIMap.Designer ファイルに保存されます。  
   
     > [!CAUTION]
-    >  メソッドを移動すると、コード化された UI テスト エディターを使用してそのメソッドを編集できなくなります。 カスタム コードを追加し、コード エディターを使って管理する必要があります。  
+    > メソッドを移動すると、コード化された UI テスト エディターを使用してそのメソッドを編集できなくなります。 カスタム コードを追加し、コード エディターを使って管理する必要があります。  
   
 10. メソッド名を `SimpleAppTest()` から `ModifiedSimpleAppTest()` に変更します。  
   

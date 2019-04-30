@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aba754735bb8a002b1876770b47594ccc98e43fb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 7b56df6c315d0612d6139fcda8b94f5d1b33b12a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434543"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>ファイル名拡張子のファイル ハンドラーを指定する
 特定のファイル拡張子を持つファイルを処理するアプリケーションを判断する方法を数多くあります。 OpenWithList と OpenWithProgids 動詞は、ファイル拡張子のレジストリ エントリのファイル ハンドラーを指定する 2 つの方法です。
@@ -34,12 +34,12 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
->  アプリケーションを指定するキーは HKEY_CLASSES_ROOT\Applications 下の一覧です。
+> アプリケーションを指定するキーは HKEY_CLASSES_ROOT\Applications 下の一覧です。
 
  OpenWithList キーを追加すると、別のアプリケーション拡張機能の所有権を取得する場合でも、アプリケーションがファイルの拡張機能をサポートしているを宣言します。 これは、アプリケーションまたは別のアプリケーションの将来のバージョン。
 
 ## <a name="openwithprogids"></a>OpenWithProgIDs
- プログラム識別子 (Progid) とは、Classid バージョンのアプリケーションや COM オブジェクトを識別するわかりやすいバージョンです。 すべての共同作成可能なオブジェクトには、独自の ProgID が必要です。 たとえば、VisualStudio.DTE.7.1 は Visual Studio .NET 2003 を開始の VisualStudio.DTE.10.0 の起動中に[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。 プロジェクトの種類またはプロジェクト項目の種類の所有者は、ファイル拡張機能のバージョンに固有の ProgID を作成する必要があります。 この Progid は、1 つ以上の ProgID が同じアプリケーションを開始点で冗長な可能性があります。 詳細については、[ファイル名拡張子の動詞を登録する](../extensibility/registering-verbs-for-file-name-extensions.md)を参照してください。
+ プログラム識別子 (Progid) とは、Classid バージョンのアプリケーションや COM オブジェクトを識別するわかりやすいバージョンです。 すべての共同作成可能なオブジェクトには、独自の ProgID が必要です。 たとえば、VisualStudio.DTE.7.1 は Visual Studio .NET 2003 を開始の VisualStudio.DTE.10.0 の起動中に[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。 プロジェクトの種類またはプロジェクト項目の種類の所有者は、ファイル拡張機能のバージョンに固有の ProgID を作成する必要があります。 この Progid は、1 つ以上の ProgID が同じアプリケーションを開始点で冗長な可能性があります。 詳細については、次を参照してください。[ファイル名拡張子の動詞を登録する](../extensibility/registering-verbs-for-file-name-extensions.md)します。
 
  バージョン管理されたファイルの Progid の他のベンダーからの登録での重複を避けるために、次の名前付け規則を使用します。
 
@@ -50,7 +50,7 @@ HKEY_CLASSES_ROOT\
  バージョン管理された Progid を値として、HKEY_CLASSES_ROOT に追加する特定のファイル拡張子を開くことができる別のアプリケーションを登録できる\\*\<拡張機能 >* \OpenWithProgids キー。 このレジストリ キーには、ファイル拡張子に関連付けられている代替の Progid の一覧が含まれています。 表示されている Progid に関連付けられているアプリケーションに表示されます、**プログラムから開く**_製品名_サブメニューで開く。 両方で同じアプリケーションが指定されている場合、`OpenWithList`と`OpenWithProgids`キー、オペレーティング システムは、重複をマージします。
 
 > [!NOTE]
->  `OpenWithProgids`キーは Windows XP でのみサポートされます。 他のオペレーティング システムは、このキーを無視する、ためにをハンドラーのファイルののみ登録として使用しないでください。 このキーを使用すると、Windows XP の優れたユーザー エクスペリエンスを提供できます。
+> `OpenWithProgids`キーは Windows XP でのみサポートされます。 他のオペレーティング システムは、このキーを無視する、ためにをハンドラーのファイルののみ登録として使用しないでください。 このキーを使用すると、Windows XP の優れたユーザー エクスペリエンスを提供できます。
 
  REG_NONE 型の値としては、目的の Progid を追加します。 次のコードは、ファイル拡張子の Progid を登録する例を示します (.*ext*)。
 

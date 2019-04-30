@@ -10,12 +10,12 @@ ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2426ba49a3ef0035adc04b5b3267bedc9c51b366
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6e81a95cffebc9e26821b9cc6157627100343452
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383368"
 ---
 # <a name="debug-engine"></a>デバッグ エンジン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ ms.locfileid: "58962342"
  たとえば、共通言語ランタイム (CLR) は、ICorDebugXXX インターフェイスを介して実行中のプログラムを監視するためのメカニズムを提供します。 CLR をサポートする DE では、デバッグ中のマネージ コード プログラムを追跡するのに適切な ICorDebugXXX インターフェイスを使用します。 セッション デバッグ マネージャー (SDM)、このような情報を転送する状態の変更が通信して、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE。  
   
 > [!NOTE]
->  デバッグ エンジンでの実行とデバッグ対象のプログラム、システムは、特定のランタイムを対象とします。 CLR はマネージ コード用のランタイムと Win32 ランタイムは、ネイティブ Windows アプリケーション。 作成する言語が対象これら 2 つのランタイムのいずれかの場合[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]既に必要なデバッグ エンジンを提供します。 式エバリュエーターは、実装する必要があります。  
+> デバッグ エンジンでの実行とデバッグ対象のプログラム、システムは、特定のランタイムを対象とします。 CLR はマネージ コード用のランタイムと Win32 ランタイムは、ネイティブ Windows アプリケーション。 作成する言語が対象これら 2 つのランタイムのいずれかの場合[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]既に必要なデバッグ エンジンを提供します。 式エバリュエーターは、実装する必要があります。  
   
 ## <a name="debug-engine-operation"></a>デバッグ エンジンの操作  
  サービスの監視は、DE インターフェイスによって実装され、デバッグ パッケージを別の操作モード間の遷移が発生することができます。 詳細については、次を参照してください。[操作モード](../../extensibility/debugger/operational-modes.md)します。 通常は実行時環境ごとに 1 つだけ DE 実装です。  
   
 > [!NOTE]
->  TRANSACT-SQL の別個の DE 実装中と[!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)]、VBScript と[!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)]単一 DE を共有します。  
+> TRANSACT-SQL の別個の DE 実装中と[!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)]、VBScript と[!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)]単一 DE を共有します。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] デバッグできるように 2 つの方法のいずれかを実行するエンジンのデバッグ: いずれかと同じプロセスで、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]シェル、または対象のプログラムと同じプロセスはデバッグ中です。 後者の形式は、デバッグ中のプロセスが実際には、インタープリターで実行されているスクリプトとデバッグ エンジンでは、スクリプトを監視するには、インタープリターの詳細な知識が必要に通常発生します。 この場合は、インタープリターは、ランタイムでは実際にはデバッグ エンジンでは、特定のランタイムの実装です。 さらに、1 つのドイツの実装は、(たとえば、リモート デバッグ) プロセスとマシンの境界を越えて分割されることができます。  
   

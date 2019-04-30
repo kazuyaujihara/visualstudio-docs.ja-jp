@@ -14,12 +14,12 @@ ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ca01f28b7f0ad7c1e4bad5ee13e6e21a5f2f7e2f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 888ffbf255816fb04d84cb72219df2cfeae73f45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431654"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>方法: ライブラリによって提供されるシンボルのリストをオブジェクト マネージャーに公開する
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "60106775"
  ライブラリでは、ツールが呼び出され、ノードを展開すると、またはビューが更新されたとき、データの要求を取得することがあります。 シンボル参照ツールが初めて呼び出されると、オブジェクト マネージャーは、最上位レベルの一覧を提供するライブラリを要求します。 ユーザーは、一覧にノードを展開、ライブラリは、そのノードの下の子の一覧を提供します。 すべてのオブジェクト マネージャーの照会には、関心のある項目のインデックスが含まれています。 新しい一覧を表示するには、項目の数が、項目、その名前、アクセシビリティ、およびその他のプロパティの種類の一覧ではオブジェクト マネージャーを決定する必要があります。  
   
 > [!NOTE]
->  実装するシンボルのリストを提供する管理対象のコード例を以下に示します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>インターフェイス。 オブジェクト マネージャーでは、このインターフェイスでメソッドを呼び出して、取得したデータを使用して設定またはシンボル参照ツールを更新します。  
+> 実装するシンボルのリストを提供する管理対象のコード例を以下に示します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>インターフェイス。 オブジェクト マネージャーでは、このインターフェイスでメソッドを呼び出して、取得したデータを使用して設定またはシンボル参照ツールを更新します。  
 >   
->  ネイティブ コード シンボル プロバイダーの実装を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>インターフェイス。  
+> ネイティブ コード シンボル プロバイダーの実装を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>インターフェイス。  
   
 ## <a name="providing-lists-of-symbols-to-the-object-manager"></a>オブジェクト マネージャーにシンボルの一覧が提供されます。  
   

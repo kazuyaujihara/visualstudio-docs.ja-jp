@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1cde6d36a1244976a2cc95dd9c1d3698be40df0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a0ce02a76d32a967e2c7e5f06818b5838337f9b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433678"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "59652619"
   
  **実行時に、プロジェクトが最新の状態でないとき**  
  > [!NOTE]
->  このリストは、[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] プロジェクトのみに適用されます。  
+> このリストは、[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] プロジェクトのみに適用されます。  
   
  既定では、F5 キーを選択するか、メニューバーで **[デバッグ]**、**[開始]** を選択したときに、プロジェクト構成が古い場合には、メッセージが表示されます。 それでもプロジェクトをビルドするかどうか、メッセージが表示されるかどうかを指定することができます。 メッセージを表示するかどうかを指定し、メッセージが表示されないときにビルドの動作をどうするかを指定するには、このオプションを使用します。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "59652619"
  **[ビルド]** メニューからビルドを開始したときにビルド エラーが発生した場合、メッセージが表示されます。 アプリケーションを開始して続行するかどうか、およびビルド エラーが発生するたびにメッセージを表示するかどうかを指定できます。 メッセージを表示するかどうか、およびメッセージが表示されないときにビルドの動作をどうするかを指定するには、このオプションを使用します。  
   
 > [!NOTE]
->  このオプションは、[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] プロジェクトにのみ適用されます。  
+> このオプションは、[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] プロジェクトにのみ適用されます。  
   
  **起動するかどうかを確認する**  
  ビルド エラーが発生するたびに、メッセージ ボックスを表示します。  
@@ -73,7 +73,7 @@ ms.locfileid: "59652619"
   
  **MSBuild プロジェクト ビルド ログ ファイルの詳細**  
  > [!NOTE]
->  このオプションは、Visual C++ プロジェクトにのみ適用されます。  
+> このオプションは、Visual C++ プロジェクトにのみ適用されます。  
   
  ビルド ログ ファイルに書き込まれる情報量を決定します。ビルド ログ ファイルは、\\...\\*ProjectName*\Debug\\*ProjectName*.log にあります。  
   

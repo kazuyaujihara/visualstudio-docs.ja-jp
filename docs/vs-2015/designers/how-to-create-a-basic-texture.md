@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bd1a9a2a269c173ef9dcb47b39921073802fe1ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438411"
 ---
 # <a name="how-to-create-a-basic-texture"></a>方法: 基本的なテクスチャを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60076800"
 5. イメージ エディターのツール バーで、**[塗りつぶし]** ツールを選択してから、Shift キーを押したままにして、イメージ内のポイントを選択します。 Shift キーを使用すると、塗りつぶしの色のアルファ値がイメージ内の色と置き換わります。Shift キーを使用しないと、アルファ値とイメージ内の色が混ぜ合わされて塗りつぶしの色になります。  
   
    > [!IMPORTANT]
-   >  この手順と、前の手順で選択した色を組み合わせて、描画対象の "bullseye" ターゲットのテクスチャの基本イメージが準備されることになります。 イメージが透明な黒色で塗りつぶされると、ターゲットの罫線は黒色になりますが、ターゲットの周囲の成果物にエイリアシングは発生しません。  
+   > この手順と、前の手順で選択した色を組み合わせて、描画対象の "bullseye" ターゲットのテクスチャの基本イメージが準備されることになります。 イメージが透明な黒色で塗りつぶされると、ターゲットの罫線は黒色になりますが、ターゲットの周囲の成果物にエイリアシングは発生しません。  
   
 6. イメージ エディターのツール バーで、**[楕円]** ツールを選択します。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "60076800"
 11. **楕円**ツールを使用して、ピクセル座標 `(3, 3)` からピクセル座標 `(508, 508)` に円を描画します。 円の描画を簡単にするには、描画する間 Shift キーを押したままにすることができます。  
   
     > [!NOTE]
-    >  現在のポインターの位置にあるピクセル座標は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のステータス バーに表示されます。  
+    > 現在のポインターの位置にあるピクセル座標は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のステータス バーに表示されます。  
   
 12. 背景色を変更します。 **[R]** を `44` に、**[G]** を `165` に、**[B]** を `211` に、**[A]** を `255` に設定します。  
   

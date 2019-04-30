@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc42301901c6642a54dcb6b84de52a4acc198b4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 4953c8478e25a1534691e99c41dce03930ac46ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434662"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 関数
 この関数は、その現在の状態の完全修飾ディレクトリの一覧を検証します。
@@ -66,7 +66,7 @@ LPLONG  lpStatus
  IDE は、対応するプロジェクトがあるかどうかクエリを実行して、ディレクトリは、ソース管理下にあるかどうかをチェックするディレクトリの名前を変更する前に、この関数を使用します。 ソース管理下にあるディレクトリでない場合、IDE は、ユーザーに適切な警告を提供できます。
 
 > [!NOTE]
->  ソース管理プラグインのステータス値の 1 つ以上を実装しない場合、実装されていないビットを 0 に設定する必要があります。
+> ソース管理プラグインのステータス値の 1 つ以上を実装しない場合、実装されていないビットを 0 に設定する必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

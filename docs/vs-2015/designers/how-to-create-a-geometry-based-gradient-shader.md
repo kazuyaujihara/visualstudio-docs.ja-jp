@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eda8424aeb28231df0ae0355931989bec13a89b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436172"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>方法: ジオメトリベースのグラデーション シェーダーを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60071721"
    次の図は、完成したシェーダー グラフと、球に適用されるシェーダーのプレビューを示します。  
   
 > [!NOTE]
->  この図では、シェーダーの効果をわかりやすく示すためにオレンジ色が指定されていますが、ワールド空間にプレビュー図形の位置がないため、シェーダー デザイナーでシェーダーを完全にプレビューすることができません。 完全な効果を確認するには、シェーダーを実際のシーンでプレビューする必要があります。  
+> この図では、シェーダーの効果をわかりやすく示すためにオレンジ色が指定されていますが、ワールド空間にプレビュー図形の位置がないため、シェーダー デザイナーでシェーダーを完全にプレビューすることができません。 完全な効果を確認するには、シェーダーを実際のシーンでプレビューする必要があります。  
   
  ![シェーダー グラフとその効果のプレビュー](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")  
   

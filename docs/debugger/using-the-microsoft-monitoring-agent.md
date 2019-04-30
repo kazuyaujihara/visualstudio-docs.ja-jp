@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb9f1ec1eafb0dbea7ca5437d80a32e4fe9d9dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f136b28c30c1fe79eda2f7c97540cb60a3ffda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407543"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Microsoft Monitoring Agent を使用して (C#、Visual Basic)
 
 **Microsoft Monitoring Agent**を使用して、IIS によってホストされる ASP.NET Web アプリおよび SharePoint 2010 や SharePoint 2013 アプリケーションのエラー、パフォーマンスの問題、またはその他の問題をローカルで監視することができます。 エージェントからの診断イベントを IntelliTrace ログ (.iTrace) ファイルに保存できます。 次に、Visual Studio Enterprise (Professional Edition や Community Edition ではない) のログを開いて、すべての Visual Studio 診断ツールで問題をデバッグできます。 Agent を **トレース** モードで実行して、IntelliTrace 診断データとメソッド データを収集することもできます。 Microsoft Monitoring Agent は [Application Insights](/azure/application-insights/) および [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))と統合できます。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。
 
 > [!NOTE]
->  **IntelliTrace スタンドアロン コレクター**を使用して、対象環境を変更することなく、リモート コンピューター上の Web、SharePoint、WPF、Windows フォーム アプリの IntelliTrace 診断データとメソッド データを収集することもできます。 スタンドアロン コレクターは、Microsoft Monitoring Agent を **モニター** モードで実行するよりも、パフォーマンスに大きな影響を及ぼします。 参照してください[IntelliTrace スタンドアロン コレクターを使用して](../debugger/using-the-intellitrace-stand-alone-collector.md)します。
+> **IntelliTrace スタンドアロン コレクター**を使用して、対象環境を変更することなく、リモート コンピューター上の Web、SharePoint、WPF、Windows フォーム アプリの IntelliTrace 診断データとメソッド データを収集することもできます。 スタンドアロン コレクターは、Microsoft Monitoring Agent を **モニター** モードで実行するよりも、パフォーマンスに大きな影響を及ぼします。 参照してください[IntelliTrace スタンドアロン コレクターを使用して](../debugger/using-the-intellitrace-stand-alone-collector.md)します。
 
  System Center 2012 を使用する場合は、オペレーション マネージャーと連携する Microsoft Monitoring Agent を使用して、問題についてのアラートを取得し、保存された IntelliTrace ログへのリンクを含む Team Foundation Server の作業項目を作成します。 これで、さらにデバッグを行うためにこれらの作業項目をその他の項目に割り当てることができます。 「 [Operations Manager と開発プロセスの統合](/previous-versions/system-center/system-center-2012-R2/jj614609(v=sc.12)) 」および「 [Microsoft Monitoring Agent による監視](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12))」をご覧ください。
 
@@ -59,7 +59,7 @@ ms.locfileid: "60043123"
      監視を開始する前にこのディレクトリの作成を確認します。 ご利用のアプリの処理が低下するのを回避するには、あまりアクティブではないローカルの高速なディスク上の場所を選択してください。
 
     > [!IMPORTANT]
-    >  IntelliTrace ログは個人用データおよび重要情報が含まれる場合があります。 このディレクトリへのアクセスを、ファイルを使用する必要がある ID のみに制限します。 企業のプライバシー ポリシーを確認してください。
+    > IntelliTrace ログは個人用データおよび重要情報が含まれる場合があります。 このディレクトリへのアクセスを、ファイルを使用する必要がある ID のみに制限します。 企業のプライバシー ポリシーを確認してください。
 
 5. 詳細な、関数レベルの監視を実行するか、または SharePoint アプリケーションを監視するために、Web アプリまたは SharePoint アプリケーションをホストするアプリケーション プールに IntelliTrace ログ ディレクトリへの読み取りおよび書き込みのアクセス許可を与えます。 [Q: アプリケーション プールへのアクセス許可の設定方法](#FullPermissionsITLog)
 
@@ -159,7 +159,7 @@ ms.locfileid: "60043123"
 
    `enabled` 属性がない場合、イベントが有効になります。
 
-   例えば:
+   例:
 
   - Windows Workflow を使用しないアプリの Windows Workflow イベントを無効にします。
 
@@ -244,7 +244,7 @@ ms.locfileid: "60043123"
 
     **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*
 
-    例:
+    例えば:
 
     **PS c:\\> Checkpoint-webapplicationmonitoring"Fabrikam\FabrikamFiber.Web"**
 
@@ -257,7 +257,7 @@ ms.locfileid: "60043123"
 3. セキュリティで保護された共有フォルダーにログをコピーし、Visual Studio Enterprise (Professional Edition や Community Edition ではない) がインストールされているコンピューターからそのログを開きます。
 
    > [!IMPORTANT]
-   >  IntelliTrace ログには個人情報や機密情報が含まれる場合があります。したがって、このログを共有するときは注意してください。 これらのログにアクセスできるすべてのユーザーに、そのデータを閲覧するアクセス許可があることを確認してください。 企業のプライバシー ポリシーを確認してください。
+   > IntelliTrace ログには個人情報や機密情報が含まれる場合があります。したがって、このログを共有するときは注意してください。 これらのログにアクセスできるすべてのユーザーに、そのデータを閲覧するアクセス許可があることを確認してください。 企業のプライバシー ポリシーを確認してください。
 
    **次へ:**[Visual Studio Enterprise で記録されたイベントを診断します。](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)
 

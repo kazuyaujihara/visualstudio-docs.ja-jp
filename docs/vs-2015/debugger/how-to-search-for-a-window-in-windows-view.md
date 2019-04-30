@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 205ff44c44a73dc44d3a3493347a153fb52e712d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9d7a64191db82d5fb0b82518d3db1cf1eb1e0ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439075"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>方法: ウィンドウ ビューでウィンドウを検索する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Windows のビューで特定のウィンドウを検索するには、検索条
      [ウィンドウ検索 ダイアログ ボックス](../debugger/window-search-dialog-box.md)が開きます。  
   
     > [!TIP]
-    >  画面の煩雑さを減らすためには、選択、 **Spy++ を非表示**オプション。 このオプションを選択し、メインの spy++ ウィンドウを非表示にのみが残ります、**ウィンドウ検索**ダイアログ ボックスで、他のアプリケーションの上に表示します。 クリックすると、spy++ のメイン ウィンドウが復元**OK**または**キャンセル**、またはオフにすると、 **spy++ を非表示にする**オプション。  
+    > 画面の煩雑さを減らすためには、選択、 **Spy++ を非表示**オプション。 このオプションを選択し、メインの spy++ ウィンドウを非表示にのみが残ります、**ウィンドウ検索**ダイアログ ボックスで、他のアプリケーションの上に表示します。 クリックすると、spy++ のメイン ウィンドウが復元**OK**または**キャンセル**、またはオフにすると、 **spy++ を非表示にする**オプション。  
   
 3. ドラッグ、**ファインダー ツール**ターゲット枠。 このツールをドラッグすると、**ウィンドウ検索** ダイアログ ボックスでは、選択したウィンドウの詳細が表示されます。  
   

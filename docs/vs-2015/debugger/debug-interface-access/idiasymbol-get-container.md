@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7425979bf231cf5ee5748e9d4cbd1eadae72f48a
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: b759c8fc65130c37f24e8ec03bbcebf3a52241d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58973854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436443"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_container(
  成功した場合、S_OK を返します。それ以外の場合、S_FALSE またはエラー コードを返します。  
   
 > [!NOTE]
->  S_FALSE の戻り値は、プロパティがシンボルを使用できないことを意味します。  
+> S_FALSE の戻り値は、プロパティがシンボルを使用できないことを意味します。  
   
 ## <a name="requirements"></a>必要条件  
   

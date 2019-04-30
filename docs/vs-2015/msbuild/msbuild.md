@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b204a0f3bda5eab9291d4201fbea3c39a3f62ca6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2534726de9f4aeb015753e0b1ea6870f2120e014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425898"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60050401"
   Visual Studio IDE でコードを作成し、MSBuild を使用してビルドを実行することもできます。 別の方法として、開発用コンピューターの IDE でコードをビルドすることもできますが、単一の MSBuild コマンド ラインを使用して、複数の開発者から取得して統合したコードをビルドすることもできます。  
   
 > [!NOTE]
->  Team Foundation ビルドを使用して、アプリケーションのコンパイル、テスト、および配置を自動的に実行することもできます。 開発者がコードをチェックインしたとき (たとえば、継続的インテグレーションの手法の一環として)、またはスケジュールに従って (たとえば、夜間のビルド確認テストの一部として)、ビルド システムがビルドを自動的に実行ですることもできます。 Team Foundation ビルドは、MSBuild を使用してコードをコンパイルします。 詳細については、「[アプリケーションのビルド](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)」をご覧ください。  
+> Team Foundation ビルドを使用して、アプリケーションのコンパイル、テスト、および配置を自動的に実行することもできます。 開発者がコードをチェックインしたとき (たとえば、継続的インテグレーションの手法の一環として)、またはスケジュールに従って (たとえば、夜間のビルド確認テストの一部として)、ビルド システムがビルドを自動的に実行ですることもできます。 Team Foundation ビルドは、MSBuild を使用してコードをコンパイルします。 詳細については、「[アプリケーションのビルド](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)」をご覧ください。  
   
  ここでは、MSBuild の概要について説明します。 入門チュートリアルについては、[チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)に関するページを参照してください。  
   
@@ -83,7 +83,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] のコマンド ライン オプションの詳細については、「[コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)」をご覧ください。  
   
 > [!IMPORTANT]
->  プロジェクトをダウンロードする前に、コードが信頼できるものかどうかを確認してください。  
+> プロジェクトをダウンロードする前に、コードが信頼できるものかどうかを確認してください。  
   
 ## <a name="BKMK_ProjectFile"></a> プロジェクト ファイル  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] では、簡単で拡張性がある XML ベースのプロジェクト ファイル形式が採用されています。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] のプロジェクト ファイル形式では、ビルドする項目のほか、それらを異なるオペレーティング システムや構成用にビルドする方法を開発者が指定できます。 また、異なるファイルに適用できるビルド規則を記述しておき、製品を構成するさまざまなプロジェクトで再利用することにより、一貫したビルド作業を行うことができます。  
@@ -193,7 +193,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 |タイトル|説明|  
 |-----------|-----------------|  
-|[チュートリアル: 最初から MSBuild プロジェクト ファイルを作成します。](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|テキスト エディターのみを使用して、基本的なプロジェクト ファイルをインクリメント方式で作成する方法について説明します。|  
+|[チュートリアル: MSBuild プロジェクト ファイルをゼロから作成する](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|テキスト エディターのみを使用して、基本的なプロジェクト ファイルをインクリメント方式で作成する方法について説明します。|  
 |[チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)|MSBuild のビルド ブロックについて説明し、Visual Studio IDE を閉じずに MSBuild プロジェクトを記述、操作、およびデバッグする方法について説明します。|  
 |[MSBuild の概念](../msbuild/msbuild-concepts.md)|MSBuild の 4 つのビルド ブロックであるプロパティ、項目、ターゲット、およびタスクについて説明します。|  
 |[項目](../msbuild/msbuild-items.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ファイル形式の一般的な概念と、各構成要素の組み合わせ方について説明します。|  

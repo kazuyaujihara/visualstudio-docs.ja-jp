@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ee82187adac74f90b6f5cb8485c68452d8329b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434495"
 ---
 # <a name="handle-a-concurrency-exception"></a>コンカレンシー例外を処理する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60060711"
 - Northwind サンプル データベースにアクセスして更新を実行するためのアクセス許可。
   
 > [!NOTE]
->  アクティブな設定または使用しているエディションによって、ヘルプの説明から、ダイアログ ボックスとメニュー コマンドが表示が異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> アクティブな設定または使用しているエディションによって、ヘルプの説明から、ダイアログ ボックスとメニュー コマンドが表示が異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する  
  新しい Windows アプリケーションの作成からチュートリアルを開始します。  
@@ -86,7 +86,7 @@ ms.locfileid: "60060711"
 3. 利用可能な接続の一覧から Northwind サンプル データベースへの接続を選択します。接続が接続の一覧で使用できない場合は、選択**新しい接続**  
   
     > [!NOTE]
-    >  ローカル データベース ファイルに接続する場合は、選択**いいえ**されたら、ファイルをプロジェクトに追加したい場合。  
+    > ローカル データベース ファイルに接続する場合は、選択**いいえ**されたら、ファイルをプロジェクトに追加したい場合。  
   
 4. **接続文字列をアプリケーション構成ファイルに保存**画面で、**次**します。  
   
@@ -149,7 +149,7 @@ ms.locfileid: "60060711"
  このセクションでは、データベースを更新しようとするコードを追加します。いずれかの処理も<xref:System.Data.DBConcurrencyException>を生成される可能性やその他の例外。  
   
 > [!NOTE]
->  このチュートリアルの後半で、`CreateMessage` メソッドと `ProcessDialogResults` メソッドを追加します。  
+> このチュートリアルの後半で、`CreateMessage` メソッドと `ProcessDialogResults` メソッドを追加します。  
   
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>コンカレンシー エラー用のエラー処理を追加するには  
   
@@ -201,7 +201,7 @@ ms.locfileid: "60060711"
 6. 最初のレコード (`ALFKI`) 変更`ContactName`に`Maria Anders2`します。  
   
     > [!NOTE]
-    >  別の行に移動し、変更をコミットします。  
+    > 別の行に移動し、変更をコミットします。  
   
 7. `ConcurrencyWalkthrough` の実行中のフォームに切り替えます。  
   

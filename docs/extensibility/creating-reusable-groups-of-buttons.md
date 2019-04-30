@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe0d5c3dd55380587f8f5f1c6477ee8c53bf1156
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 48ab55b58eee8f6444b253c09db1eeedcc8c5692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411357"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>ボタンの再利用可能なグループを作成します。
 コマンド グループは、常に、メニューまたはツールバーにまとめて表示されるコマンドのコレクションです。 CommandPlacements セクションでは、別の親メニューに割り当てることで、任意のコマンド グループを再利用できる、 *.vsct*ファイル。
@@ -81,7 +81,7 @@ ms.locfileid: "60051662"
     ```
 
     > [!NOTE]
-    >  優先順位フィールドの値は、新しいコマンド グループで、コマンドの位置を決定します。 優先順位は、項目の定義で設定されている要素がオーバーライド CommandPlacement で設定します。 高い優先順位値がコマンドの前に、低い優先順位値がコマンドが表示されます。 重複する優先度の値は許可されていますが、ために、同じ優先順位値を持つコマンドの相対位置を保証できません、順序、 **devenv/setup**コマンドでは、レジストリから最終的なインターフェイスを作成します。一貫性のあるできない可能性があります。
+    > 優先順位フィールドの値は、新しいコマンド グループで、コマンドの位置を決定します。 優先順位は、項目の定義で設定されている要素がオーバーライド CommandPlacement で設定します。 高い優先順位値がコマンドの前に、低い優先順位値がコマンドが表示されます。 重複する優先度の値は許可されていますが、ために、同じ優先順位値を持つコマンドの相対位置を保証できません、順序、 **devenv/setup**コマンドでは、レジストリから最終的なインターフェイスを作成します。一貫性のあるできない可能性があります。
 
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>メニューのボタンの再利用可能なグループを配置するには
 

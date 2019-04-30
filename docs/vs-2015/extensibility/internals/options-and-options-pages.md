@@ -14,12 +14,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 350f0c873a0b6692d16dcbc987db32b63f68be72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 643ffd8dc48eb6b0fc35ea035c8c599efbea85c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438954"
 ---
 # <a name="options-and-options-pages"></a>オプションとオプション ページ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "58976506"
 - <xref:System.ComponentModel.DescriptionAttribute> オプションの説明を決定します。  
   
   > [!NOTE]
-  >  同等の属性、SRCategory、LocDisplayName、および SRDescription、ローカライズ文字列リソースを使用して、で定義されて、[マネージ プロジェクト サンプル](http://go.microsoft.com/fwlink/?LinkId=122774)します。  
+  > 同等の属性、SRCategory、LocDisplayName、および SRDescription、ローカライズ文字列リソースを使用して、で定義されて、[マネージ プロジェクト サンプル](http://go.microsoft.com/fwlink/?LinkId=122774)します。  
   
   次のコードがあるとします。  
   
@@ -86,4 +86,4 @@ ms.locfileid: "58976506"
  オートメーション プロパティのレジストリ パスが組み合わせで決まります<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>単語、AutomationProperties、およびオプション ページのカテゴリと名前。 たとえば、次のオプション ページには、My Category カテゴリ、個人用のグリッド ページ名、および<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp 後のオートメーション プロパティが、レジストリ キー HKEY_LOCAL_MACHINEMicrosoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My グリッド ページ。  
   
 > [!NOTE]
->  正規名、個人用の Category.My グリッド ページでは、このキーの名前のサブキーの値です。
+> 正規名、個人用の Category.My グリッド ページでは、このキーの名前のサブキーの値です。

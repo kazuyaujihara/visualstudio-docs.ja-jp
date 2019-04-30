@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: acab2df1ff39d5f245baf27642f1ab71104671a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f816095992379748b6d1888b5df54dc5433a8306
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436967"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>デザイナーを使用して SQL database を作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -180,14 +180,14 @@ ms.locfileid: "60069784"
 6. 最低 3 件の注文データを追加します。  
   
     > [!IMPORTANT]
-    >  すべての注文 ID および注文数量が整数であり、各顧客 ID が、Customers テーブルの CustomerID 列で指定した値と一致することを確認します。  
+    > すべての注文 ID および注文数量が整数であり、各顧客 ID が、Customers テーブルの CustomerID 列で指定した値と一致することを確認します。  
   
 7. メニュー バーで選択**ファイル** > **すべて保存**します。  
   
 8. メニュー バーで選択**ファイル** > **ソリューションを閉じる**します。  
   
     > [!NOTE]
-    >  ベスト プラクティスとして、データベースをコピーし、他の場所にそのコピーを貼り付ける、またはコピーに異なる名前を付けることによって、作成したデータベースのバックアップを実行します。  
+    > ベスト プラクティスとして、データベースをコピーし、他の場所にそのコピーを貼り付ける、またはコピーに異なる名前を付けることによって、作成したデータベースのバックアップを実行します。  
   
 ## <a name="next-steps"></a>次の手順  
  サンプル データのローカル データベース ファイルをしたのでデータベース タスクについて説明するチュートリアルのいずれかを行うことができます。

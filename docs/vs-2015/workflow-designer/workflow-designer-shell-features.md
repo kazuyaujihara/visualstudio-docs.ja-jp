@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b432dd6dd0a19f6509ad1ff133424fcbc387fb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f732fd66439897b67f150ddb9603b7d67003eff2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431381"
 ---
 # <a name="workflow-designer-shell-features"></a>ワークフロー デザイナーのシェルの機能
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]は、デザイナー画面、その上の階層リンク バー、およびその下のシェルという 3 つの主要な UI 領域で構成されています。 階層リンク バーは画面の上部に位置し、現在のルート アクティビティの先祖の一覧を表示するために使用されます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][方法: 階層リンク ナビゲーションを使用して、](../workflow-designer/how-to-use-breadcrumb-navigation.md)します。 デザイナー画面は画面の中央に位置し、ワークフローを作成するために使用されます。 シェルは画面の下部に位置しており、ここには、現在のビューを管理するためのさまざまなボタンが含まれています。  
@@ -28,7 +28,7 @@ ms.locfileid: "58976592"
  概要マップには、現在の階層リンク ルートでのアクティビティ全体が縮小表示されます。これには、すべての子、およびその展開された子のすべてが含まれます。 オレンジ色の罫線に囲まれた四角形のビューポートによって、エディター内で現在表示されているアクティビティの一部が示されます。 この四角形を概要マップ内でドラッグすると、ワークフロー デザイナーがスクロールされ、エディターのビューが変化します。  
   
 > [!NOTE]
->  [!INCLUDE[wfd2](../includes/wfd2-md.md)] ユーザー インターフェイスは仮想化されています。 アクティビティ デザイナーは、必要なときにのみ表示されます。 デザイナー画面でワークフローの一部がまだ描画されていない場合は、その部分が概要マップで白く表示されます。 概要マップをスクロールすると、ワークフロー全体が描画されます。  
+> [!INCLUDE[wfd2](../includes/wfd2-md.md)] ユーザー インターフェイスは仮想化されています。 アクティビティ デザイナーは、必要なときにのみ表示されます。 デザイナー画面でワークフローの一部がまだ描画されていない場合は、その部分が概要マップで白く表示されます。 概要マップをスクロールすると、ワークフロー全体が描画されます。  
   
 ## <a name="copying-or-saving-workflows-as-images"></a>ワークフローをイメージとしてコピーまたは保存  
  ワークフローは、ビットマップ形式でのコピーや、ビットマップまたはベクター形式での保存が可能です。 イメージをコピーまたは保存すると、現在の階層リンク ルートにおけるアクティビティ全体 (すべての子およびそれらの展開された子のすべてを含む) のビューを別のプログラムにエクスポートできます。  

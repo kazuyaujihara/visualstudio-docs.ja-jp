@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433169"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>チュートリアル: UI 応答性 (HTML) の向上
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60071643"
 1. Visual Studio で、新しい Windows ユニバーサル JavaScript プロジェクトを作成します。 (**[ファイル]、[新規作成]、[プロジェクト] の順に選択します**。 左ペインで **[JavaScript]** を選択し、次に **[Windows]**、**[Windows 10]** と選択してから、**[ユニバーサル]** または **[Windows Phone]** を選択します。  
   
 2. > [!IMPORTANT]
-    >  このトピックで示す診断の結果は、Windows 8 アプリ用です。  
+    > このトピックで示す診断の結果は、Windows 8 アプリ用です。  
   
 3. 中央のペインで **[空のアプリケーション]** などの空のプロジェクト テンプレートの 1 つを選択します。  
   

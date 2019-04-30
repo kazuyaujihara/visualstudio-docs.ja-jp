@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 830d2d7d077b65e205536e1b10579fe64633b21a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: fc9ca34d8b8afc01787db594ffba5a1a36ec190e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439341"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,10 +46,10 @@ ms.locfileid: "59664998"
 |`ResolvedAssemblyReferences`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 解決されたアセンブリ参照を指定します。|  
 |`ResolvedFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> このタスクの入力として指定されたタイプ ライブラリの物理的な位置に対応するディスク上の完全修飾ファイルを指定します。|  
 |`ResolvedModules`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。|  
-|`SdkToolsPath`|省略可能な [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) パラメーター。<br /><br /> `ExecuteAsTool` が `true` の場合、このパラメーターを、対象となっているフレームワークのバージョンの SDK ツール パスに設定する必要があります。|  
-|`StateFile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> パラメーターの値として false を渡します。<br /><br /> COM コンポーネントのタイムスタンプのキャッシュ ファイルを指定します。 存在しない場合は、実行するたびにすべてのラッパーが再生成されます。|  
-|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> パラメーターの値として false を渡します。<br /><br /> プロジェクトのターゲット フレームワークのバージョンを指定します。<br /><br /> 既定値は `String.Empty` です。 その場合、ターゲット フレームワークに基づく参照のフィルター処理はありません。|  
-|`TargetProcessorArchitecture`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> パラメーターの値として false を渡します。<br /><br /> 優先されるターゲットのプロセッサ アーキテクチャを指定します。 変換後、tlbimp.exe/machine フラグに渡されます。<br /><br /> パラメーター値は <xref:Microsoft.Build.Utilities.ProcessorArchitecture> のメンバーである必要があります。|  
+|`SdkToolsPath`|省略可能な [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) のパラメーターです。<br /><br /> `ExecuteAsTool` が `true` の場合、このパラメーターを、対象となっているフレームワークのバージョンの SDK ツール パスに設定する必要があります。|  
+|`StateFile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> パラメーターです。<br /><br /> COM コンポーネントのタイムスタンプのキャッシュ ファイルを指定します。 存在しない場合は、実行するたびにすべてのラッパーが再生成されます。|  
+|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> パラメーターです。<br /><br /> プロジェクトのターゲット フレームワークのバージョンを指定します。<br /><br /> 既定値は `String.Empty` です。 その場合、ターゲット フレームワークに基づく参照のフィルター処理はありません。|  
+|`TargetProcessorArchitecture`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> パラメーターです。<br /><br /> 優先されるターゲットのプロセッサ アーキテクチャを指定します。 変換後、tlbimp.exe/machine フラグに渡されます。<br /><br /> パラメーター値は <xref:Microsoft.Build.Utilities.ProcessorArchitecture> のメンバーである必要があります。|  
 |`TypeLibFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> COM 参照へのタイプ ライブラリ ファイル パスを指定します。 このパラメーターに含まれる項目には、項目のメタデータが含まれます。 詳細については、後述する「TypeLibFiles 項目メタデータ」を参照してください。|  
 |`TypeLibNames`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 解決するタイプ ライブラリ名を指定します。 このパラメーターに含まれる項目には、項目メタデータをいくつか含める必要があります。 詳細については、後述する「TypeLibNames 項目メタデータ」を参照してください。|  
 |`WrapperOutputDirectory`|省略可能な `String` 型のパラメーターです。<br /><br /> 生成された相互運用機能アセンブリが配置されるディスク上の場所。 この項目メタデータが指定されていない場合、タスクはプロジェクト ファイルがあるディレクトリの絶対パスを使用します。|  
@@ -75,7 +75,7 @@ ms.locfileid: "59664998"
 |`WrapperTool`|省略可能な項目メタデータです。<br /><br /> このタイプ ライブラリのアセンブリ ラッパーを生成するために使用されるラッパー ツールを指定します。 この項目メタデータが指定されていないと、タスクは、"tlbimp" の既定のラッパー ツールを使用します。 使用可能な大文字と小文字を区別しない typelibs の選択肢は次のとおりです。<br /><br /> -   `Primary`:COM コンポーネントの既に生成されたプライマリ相互運用機能アセンブリを使用する場合には、このラッパー ツールを使用します。 このラッパー ツールを使用する場合は、ラッパーの出力ディレクトリを指定しないでください。指定すると、タスクが失敗します。<br />-   `TLBImp`:COM コンポーネントの相互運用機能アセンブリを作成する場合には、このラッパー ツールを使用します。<br />-   `AXImp`:ActiveX コントロールの相互運用機能アセンブリを作成する場合には、このラッパー ツールを使用します。|  
   
 > [!NOTE]
->  タイプ ライブラリを一意に識別するために提供する情報が多いほど、タスクがディスク上の正しいファイルに解決される可能性が大きくなります。  
+> タイプ ライブラリを一意に識別するために提供する情報が多いほど、タスクがディスク上の正しいファイルに解決される可能性が大きくなります。  
   
 ## <a name="remarks"></a>Remarks  
  上記のパラメーターに加えて、このタスクは <xref:Microsoft.Build.Utilities.Task> クラスからパラメーターを継承します。 これらの追加パラメーターのリストとその説明については、「[Task Base Class](../msbuild/task-base-class.md)」を参照してください。  

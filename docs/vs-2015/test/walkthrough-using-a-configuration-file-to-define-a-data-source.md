@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 600cae730cacad4f54433b8179b97eb131a64fab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7dde910c5622a67ad002a085ace746ebc68e8857
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439225"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>チュートリアル: データ ソースを定義するための構成ファイルの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "60076108"
 ```  
   
 > [!NOTE]
->  アセンブリ名は、使用している Microsoft Visual Studio .NET Framework のビルドと一致する必要があります。 Visual Studio .NET Framework 3.5 を使用している場合は、Version を 9.0.0.0 に設定します。 Visual Studio .NET Framework 2.0 を使用している場合は、Version を 8.0.0.0 に設定します。  
+> アセンブリ名は、使用している Microsoft Visual Studio .NET Framework のビルドと一致する必要があります。 Visual Studio .NET Framework 3.5 を使用している場合は、Version を 9.0.0.0 に設定します。 Visual Studio .NET Framework 2.0 を使用している場合は、Version を 8.0.0.0 に設定します。  
   
 ## <a name="define-connection-strings"></a>接続文字列を定義する  
  接続文字列は、データ ソースにアクセスするためのプロバイダー固有の情報を定義します。 構成ファイルで定義された接続文字列は、アプリケーション全体で再利用可能なデータ プロバイダー情報を提供します。 このセクションでは、カスタム構成セクションで定義されているデータ ソースによって使用される 2 つの接続文字列を作成します。  
@@ -266,10 +266,10 @@ ms.locfileid: "60076108"
 4. ソリューションをビルドして、MyTestMethod テストと MyTestMethod2 テストを実行します。  
   
 > [!IMPORTANT]
->  データ ソースなどの項目を、配置ディレクトリのテストからアクセスできるように配置します。  
+> データ ソースなどの項目を、配置ディレクトリのテストからアクセスできるように配置します。  
   
 ## <a name="see-also"></a>関連項目  
  [コードの単体テスト](../test/unit-test-your-code.md)   
  [既存コードに対する単体テストの作成と実行](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [アプリケーションのテスト](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
- [方法: データ ドリブン単体テストを作成します。](../test/how-to-create-a-data-driven-unit-test.md)
+ [方法: データ ドリブン単体テストを作成する](../test/how-to-create-a-data-driven-unit-test.md)

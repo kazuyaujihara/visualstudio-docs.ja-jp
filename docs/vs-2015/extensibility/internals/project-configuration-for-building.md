@@ -11,12 +11,12 @@ ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 99d9e20799f3747def12be6a40ae3b1f8269e666
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 953a02c27f40e92c41d2e43bc818727118eb0a27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434841"
 ---
 # <a name="project-configuration-for-building"></a>ビルドのためのプロジェクト構成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58963640"
  ユーザーは、MyConfig2 という名前の新しいソリューション構成を作成する場合 Project1 は既定ではソリューションの構成のデバッグ構成をバインドします。 Project2 も、既定では、ソリューション構成にその MyConfig2 構成をバインドします。  
   
 > [!NOTE]
->  バインディングでは大文字です。  
+> バインディングでは大文字です。  
   
  ユーザーが選択すると、**複数選択**項目構成ドロップダウン リストで、環境には使用可能な構成の一覧を提供するダイアログ ボックスが表示されます。  
   
@@ -47,7 +47,7 @@ ms.locfileid: "58963640"
  プロジェクトの依存関係は、プロジェクトのビルド順序を決定します。 ダイアログ ボックスで、ビルドの順序 タブを使用すると、ソリューション内のプロジェクトはビルド、および依存関係 タブを使用して、ビルドの順序を変更するのには、正確な順序を表示できます。  
   
 > [!NOTE]
->  指定された明示的な依存関係のための環境で、チェック ボックスが選択されているが淡色表示の一覧でのプロジェクトが追加されました、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>インターフェイス、および変更することはできません。 たとえばからのプロジェクト参照を追加、[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]別のプロジェクトにプロジェクト参照を削除することによってのみ削除できるビルドの依存関係を自動的に追加します。 依存関係のループの作成はそうために、プロジェクトがオフ、淡色表示のチェック ボックスを選択できません (Project2、時に依存する Project1 および Project1 に依存する Project2 など)、ビルドを停止するとします。  
+> 指定された明示的な依存関係のための環境で、チェック ボックスが選択されているが淡色表示の一覧でのプロジェクトが追加されました、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>インターフェイス、および変更することはできません。 たとえばからのプロジェクト参照を追加、[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]別のプロジェクトにプロジェクト参照を削除することによってのみ削除できるビルドの依存関係を自動的に追加します。 依存関係のループの作成はそうために、プロジェクトがオフ、淡色表示のチェック ボックスを選択できません (Project2、時に依存する Project1 および Project1 に依存する Project2 など)、ビルドを停止するとします。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ビルド プロセスには、一般的なコンパイルとリンクに関する単一のビルド コマンドで呼び出される操作が含まれます。 その他の 2 つのビルド プロセスもサポートされていることができます。 前回のビルドと構成の出力項目が変更された場合を決定する、最新の状態のチェックからすべての出力項目を削除するクリーン操作。  
   

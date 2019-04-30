@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be0b661c85165ff348eccf7d55507ce228100091
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 208ff7f9bbfc2d07669a8b485edffc8dfc4cd54f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437807"
 ---
 # <a name="command-line-capture-tool"></a>コマンド ライン キャプチャ ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ DXCap.exe –info
  検証モードの場合、`events` には、直近の結果を比較する一連のグラフィックス イベントを指定します。 たとえば、`-examine present,draw,copy,clear`制限をカテゴリに属するイベントのみを比較します。  
   
 > [!TIP]
->  始まることをお勧めします。`-examine present,draw,copy,clear`これはほとんどの問題を表示がより広範な一連のイベントよりも大幅に少ない時間がかかるためです。 必要に応じて、より多くの、または異なる一連のイベントを指定して、それらのイベントを検証し、その他の種類の問題を明らかにすることもできます。  
+> 始まることをお勧めします。`-examine present,draw,copy,clear`これはほとんどの問題を表示がより広範な一連のイベントよりも大幅に少ない時間がかかるためです。 必要に応じて、より多くの、または異なる一連のイベントを指定して、それらのイベントを検証し、その他の種類の問題を明らかにすることもできます。  
   
  `-haltonfail`  
  検証モードの場合は、`-haltonfail`ハードウェア レンダラーと WARP レンダラーの違いが検出されたときに、検証を停止します。 検証は、キーが押された後に再開されます。  
@@ -140,7 +140,7 @@ DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.co
  上記の例のコマンドでは、WebGL API を使用して 3-D コンテンツをレンダリングする、www.fishgl.com にある Web ページの表示中に、Internet Explorer のデスクトップ バージョンからグラフィックス情報をキャプチャします。  
   
 > [!NOTE]
->  アプリの後に指定したコマンド ライン引数はアプリに渡されるため、`–c` オプションを使用する前に、DXCap.exe の引数を指定する必要があります。  
+> アプリの後に指定したコマンド ライン引数はアプリに渡されるため、`–c` オプションを使用する前に、DXCap.exe の引数を指定する必要があります。  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>Windows ストア アプリからグラフィックス情報をキャプチャします。  
  Windows ストア アプリからグラフィックス情報をキャプチャできます。  

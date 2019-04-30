@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a686d2a43fed0fdb8c5c1e8f21d4b35fd63f3a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e6f2d0da758a8897f28a22dec8adf1f8e05a36c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419456"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>方法: 組み込みタブをカスタマイズします。
   組み込みタブには、グループやコントロールを追加できます。組み込みタブは、Microsoft Office アプリケーションのリボンに用意されているタブです。 たとえば、**データ**タブは、Excel の組み込みタブ。 カスタム グループを作成すると、そのグループはタブの最後に表示されますが、タブ上のどこにでも移動できます。
@@ -26,14 +26,14 @@ ms.locfileid: "60075663"
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  組み込みタブにグループを追加することはできますが、組み込みタブから組み込みグループを削除することはできません。
+> 組み込みタブにグループを追加することはできますが、組み込みタブから組み込みグループを削除することはできません。
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>組み込みタブにグループを追加するには
 
 1. リボン コード ファイルを右クリックして**ソリューション エクスプ ローラー**、 をクリックし、**ビュー デザイナー**します。
 
     > [!NOTE]
-    >  リボン コード ファイルが表示されない場合**ソリューション エクスプ ローラー**、追加する必要があります、**リボン項目**をプロジェクトにします。 「[方法:リボンのカスタマイズの概要](../vsto/how-to-get-started-customizing-the-ribbon.md)します。
+    > リボン コード ファイルが表示されない場合**ソリューション エクスプ ローラー**、追加する必要があります、**リボン項目**をプロジェクトにします。 「[方法:リボンのカスタマイズの概要](../vsto/how-to-get-started-customizing-the-ribbon.md)します。
 
 2. リボン デザイナーでの任意のタブを右クリックし、をクリックし、**プロパティ**します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "60075663"
 5. **Office リボン コントロール**のタブ、**ツールボックス**グループをタブにドラッグします。
 
     > [!NOTE]
-    >  組み込みグループは、デザイナーには表示されません。 組み込みタブを使用しているかどうかを判断する唯一の方法を確認するはそのため、 **ControlId**  タブのプロパティ。
+    > 組み込みグループは、デザイナーには表示されません。 組み込みタブを使用しているかどうかを判断する唯一の方法を確認するはそのため、 **ControlId**  タブのプロパティ。
 
 ### <a name="to-position-groups-on-a-built-in-tab"></a>組み込みタブ上でグループを配置するには
 

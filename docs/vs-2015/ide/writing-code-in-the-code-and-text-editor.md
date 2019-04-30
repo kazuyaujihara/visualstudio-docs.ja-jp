@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bba1d1b45c47a61f85bf37d4768a8f05ba0c3e87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439786"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>コード エディターとテキスト エディターでのコードの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Visual Studio エディターには、コードの記述と管理を容易にす
  Visual Studio では、言語によって異なる機能がサポートされています。同じ機能の動作が、言語によって異なる場合もあります。 これらの相違点の多くは機能の説明に示されていますが、詳細については、各 Visual Studio 言語のセクションを参照してください。  
 
 > [!IMPORTANT]
->  使用する Visual Studio のエディションと設定が、IDE の機能に影響することもあります。 このため実際の機能は、このトピックに記載されている内容と異なる場合があります。  
+> 使用する Visual Studio のエディションと設定が、IDE の機能に影響することもあります。 このため実際の機能は、このトピックに記載されている内容と異なる場合があります。  
 
 ## <a name="editor-features"></a>エディターの機能  
 

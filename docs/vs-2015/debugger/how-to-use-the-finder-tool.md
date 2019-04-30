@@ -11,12 +11,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c14fdcc5d58c62eebf993ba336a109adac5b7106
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00535fd336f504afcebdd24a4d009a10f7f6ff33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440304"
 ---
 # <a name="how-to-use-the-finder-tool"></a>方法: ファインダー ツールを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60053768"
      (たとえば、デバッガーからコピー) を確認するウィンドウのハンドルがあれば、入力に、**処理**テキスト ボックス。  
   
     > [!TIP]
-    >  画面の煩雑さを減らすためには、選択、 **Spy++ を非表示**オプション。 このオプションは、主な spy++ ウィンドウだけを非表示、**ウィンドウ検索**ダイアログ ボックスで、他のアプリケーションの上に表示します。 クリックすると、spy++ のメイン ウィンドウが復元**OK**または**キャンセル**、またはオフにすると、 **spy++ を非表示にする**オプション。  
+    > 画面の煩雑さを減らすためには、選択、 **Spy++ を非表示**オプション。 このオプションは、主な spy++ ウィンドウだけを非表示、**ウィンドウ検索**ダイアログ ボックスで、他のアプリケーションの上に表示します。 クリックすると、spy++ のメイン ウィンドウが復元**OK**または**キャンセル**、またはオフにすると、 **spy++ を非表示にする**オプション。  
   
 4. **表示**、いずれかを選択**プロパティ**または**メッセージ**します。  
   

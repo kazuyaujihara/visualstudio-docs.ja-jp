@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 43ee8d26338b6d15530c51191c3368d3fc556d2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430373"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>チュートリアル: ワークフロー関連付けフォームと開始フォームを作成します。
   このチュートリアルでは、アソシエーションと開始フォームの使用方法が組み込まれている基本的なシーケンシャル ワークフローを作成する方法を示します。 これらは、まず、SharePoint 管理者 (関連付けフォーム) が関連付けられているとき、およびユーザー (開始フォーム) が、ワークフローを開始、ワークフローに追加するパラメーターを有効にする ASPX フォームです。
@@ -50,9 +50,9 @@ ms.locfileid: "60081737"
 - ワークフローを手動で開始します。
 
 > [!NOTE]
->  このチュートリアルでは、シーケンシャル ワークフロー プロジェクトは使用して、プロセスはステート マシン ワークフローで同じです。
+> このチュートリアルでは、シーケンシャル ワークフロー プロジェクトは使用して、プロセスはステート マシン ワークフローで同じです。
 >
->  別の名前または場所の一部でも、コンピューターを表示可能性があります、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]次の手順でユーザー インターフェイス要素です。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]所有しているエディションと使用する設定は、これらの要素を決定します。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 別の名前または場所の一部でも、コンピューターを表示可能性があります、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]次の手順でユーザー インターフェイス要素です。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]所有しているエディションと使用する設定は、これらの要素を決定します。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
@@ -134,7 +134,7 @@ ms.locfileid: "60081737"
 3. 展開、 **ExpenseReportAssocForm.aspx**ファイル**ソリューション エクスプ ローラー**をその依存ファイルを表示します。
 
     > [!NOTE]
-    >  プロジェクトの場合[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]、選択する必要があります、**ビューのすべてのファイル**この手順を実行するボタンをクリックします。
+    > プロジェクトの場合[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]、選択する必要があります、**ビューのすべてのファイル**この手順を実行するボタンをクリックします。
 
 4. ExpenseReportAssocForm.aspx ファイルのショートカット メニューを開いて**コードの表示**します。
 
@@ -325,7 +325,7 @@ ms.locfileid: "60081737"
     ```
 
     > [!NOTE]
-    >  コードでは、置き換える`somedomain\\someuser`作成対象となるタスクは、次のように、ドメインとユーザーの名前を持つ"`Office\\JoeSch`"。 テストで開発しているアカウントを使用する最も簡単なは。
+    > コードでは、置き換える`somedomain\\someuser`作成対象となるタスクは、次のように、ドメインとユーザーの名前を持つ"`Office\\JoeSch`"。 テストで開発しているアカウントを使用する最も簡単なは。
 
 3. 下、`MethodInvoking`メソッドを次の例を追加します。
 

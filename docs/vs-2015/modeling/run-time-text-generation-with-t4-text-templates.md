@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 586ad1d68ce1d0310b30b8bdac8aa2fb55acdeb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411876"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 テキスト テンプレートを使用した実行時テキスト生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ This report is Company Confidential.
 3. テンプレート ファイルの名前を入力します。  
   
     > [!NOTE]
-    >  テンプレート ファイルの名前は、生成されたコード内のクラス名として使用されます。 そのため、スペースまたは句読点を含めることはできません。  
+    > テンプレート ファイルの名前は、生成されたコード内のクラス名として使用されます。 そのため、スペースまたは句読点を含めることはできません。  
   
 4. **[追加]** をクリックします。  
   
@@ -84,7 +84,7 @@ This report is Company Confidential.
 2. ファイルの設定 **カスタム ツール** プロパティを **TextTemplatingFilePreprocessor** にします。 ソリューション エクスプ ローラーで、ファイルのショートカット メニューの **プロパティ** を選択します。  
   
     > [!NOTE]
-    >  プロパティが既に設定されている場合は、**TextTemplatingFilePreprocessor** ではなく **TextTemplatingFileGenerator** であることを確認します。 拡張子 **.tt** のファイルをインクルードする場合に起こりえます。  
+    > プロパティが既に設定されている場合は、**TextTemplatingFilePreprocessor** ではなく **TextTemplatingFileGenerator** であることを確認します。 拡張子 **.tt** のファイルをインクルードする場合に起こりえます。  
   
 3. ファイル名の拡張子を **.tt** に変更します。 この手順は省略可能ですが、不適切なエディターでファイルを開いてしまうことを防ぎます。  
   

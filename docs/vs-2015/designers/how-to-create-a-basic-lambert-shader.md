@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d70a0c279c0720e79477b518ab63cf0326ca5237
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 227c9c84022e3c3340b4821df9dbd2dbe9465a03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414683"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>方法: 基本ランバート シェーダーを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60111247"
    次の図は、完成したシェーダー グラフと、ティーポット モデルに適用されるシェーダーのプレビューを示しています。  
   
 > [!NOTE]
->  この図では、シェーダーの効果を分かりやすくするために、シェーダーの **MaterialDiffuse** パラメーターを使用してオレンジ色が指定されています。 このパラメーターをゲームやアプリで使用して、オブジェクトごとに一意の色値を指定できます。 マテリアル パラメーターについては、「[シェーダー デザイナー](../designers/shader-designer.md)」の「シェーダーのプレビュー」を参照してください。  
+> この図では、シェーダーの効果を分かりやすくするために、シェーダーの **MaterialDiffuse** パラメーターを使用してオレンジ色が指定されています。 このパラメーターをゲームやアプリで使用して、オブジェクトごとに一意の色値を指定できます。 マテリアル パラメーターについては、「[シェーダー デザイナー](../designers/shader-designer.md)」の「シェーダーのプレビュー」を参照してください。  
   
  ![シェーダー グラフとその効果のプレビュー。](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")  
   

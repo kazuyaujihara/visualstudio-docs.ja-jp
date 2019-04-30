@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b13931746cc9668ea18ead71babd5140e971818
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 90fb5b1c9a388d64e191915bbcbbe3de65f6aa99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437626"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>JavaScript IntelliSense の XML ドキュメント コメントを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "60079280"
  このトピックでは、XML ドキュメント コメントの使用に関する基本的なチュートリアルを提供します。 については、他の要素を使用して[ \<var >](../ide/var-javascript.md)と[\<値 >](../ide/value-javascript.md)、および追加のコード例については、次を参照してください[XML ドキュメントのコメント](../ide/xml-documentation-comments-javascript.md)。 など、非同期コールバックの IntelliSense の情報を提供する方法については、`Promise`を参照してください[\<返します >](../ide/returns-javascript.md)します。  
   
 > [!NOTE]
->  XML ドキュメントのコメントは、参照されるファイル、アセンブリ、およびサービスでのみ使用できます。  
+> XML ドキュメントのコメントは、参照されるファイル、アセンブリ、およびサービスでのみ使用できます。  
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>JavaScript 関数の XML ドキュメント コメントを作成するには  
   
 - 関数で追加[\<概要 >](../ide/summary-javascript.md)、 [ \<param >](../ide/param-javascript.md)と[\<を返します >](../ide/returns-javascript.md)要素の各要素の前に、3 つのスラッシュ記号 (///) です。  
   
     > [!NOTE]
-    >  各要素は、1 行にある必要があります。  
+    > 各要素は、1 行にある必要があります。  
   
      次の例では、JavaScript 関数を示します。  
   
@@ -118,7 +118,7 @@ ms.locfileid: "60079280"
 1. OpenAjax MessageBundle 形式でドキュメントのコメントを含む XML ファイルを作成します。  
   
     > [!IMPORTANT]
-    >  MessageBundle は、推奨される形式です。 Microsoft Ajax または .winmd ファイルは、この形式はサポートされていません。 代わりに、使用について`VSDoc`書式設定を参照してください[ \<loc >](../ide/loc-javascript.md)します。  
+    > MessageBundle は、推奨される形式です。 Microsoft Ajax または .winmd ファイルは、この形式はサポートされていません。 代わりに、使用について`VSDoc`書式設定を参照してください[ \<loc >](../ide/loc-javascript.md)します。  
   
      次の例を示しています、ローカライズされた IntelliSense 情報を含むサイドカー ファイルのコンテンツ。 これは、JA など、カルチャ固有のフォルダーにある XML ファイルです。 フォルダーを格納する .js ファイルと同じ場所にある必要があります、`<loc>`要素。 XML ファイルのファイル名に一致する必要があります、`filename`パラメーターで指定された、`<loc>`要素。  
   

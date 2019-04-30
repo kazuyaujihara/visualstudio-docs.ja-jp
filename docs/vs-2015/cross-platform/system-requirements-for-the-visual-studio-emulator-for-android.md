@@ -8,12 +8,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fc09d8570eed04c559e1b94f65319739bbc4ee13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1b77dc7e01ae791379dda52b305ebcdbbf68447
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433910"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Visual Studio Emulator for Android は、Hyper-V 上で仮想マシンとして�
  エミュレーターをインストールすると、その前提条件の構成がセットアップ プログラムで自動的に行われます。 前提条件の構成が正しく設定されると、エミュレーターは正常に動作します。 構成の設定が完了しなかった場合は、必要に応じて前提条件を手動で有効にします。 前提条件を手動で構成する必要がある場合、 [こちら](https://msdn.microsoft.com/library/windows/apps/jj863509\(v=vs.105\).aspx) で説明されている Windows Phone Emulator と同じ手順とツールを利用してください。
 
 > [!IMPORTANT]
->  エミュレーターのセットアップ プログラムでは、Visual Studio Emulator for Android を実行するための前提条件が確認されます。 前提条件が存在しない場合、警告が表示されますが、セットアップでは必要ありません。
+> エミュレーターのセットアップ プログラムでは、Visual Studio Emulator for Android を実行するための前提条件が確認されます。 前提条件が存在しない場合、警告が表示されますが、セットアップでは必要ありません。
 
  このトピックは、次のセクションで構成されています。
 
