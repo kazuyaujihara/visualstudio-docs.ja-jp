@@ -13,12 +13,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436247"
 ---
 # <a name="making-commands-available"></a>コマンドを使用可能にする
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Visual Studio には、複数の Vspackage を追加するときにユーザー 
 - コンテキストを有効にする`GUID`s のオンとオフ (呼び出すことによって、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>メソッド)。  
   
     > [!CAUTION]
-    >  確認して、VSPackage 影響を及ぼさないように既存のコンテキストの GUID の状態の他の Vspackage がそれらに依存している可能性があります。  
+    > 確認して、VSPackage 影響を及ぼさないように既存のコンテキストの GUID の状態の他の Vspackage がそれらに依存している可能性があります。  
   
 ## <a name="example"></a>例  
  VSPackage のコマンドの次の例では、VSPackage を読み込むことがなく、コマンドのコンテキストで管理されているコマンドの動的な可視性を示します。  

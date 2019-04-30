@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56b01eb64d38563178d6af947174d0c4d2720bea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 906dd308f4341b89153d7a9acaf79e815422ee16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424901"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>TableAdapter を使用してデータを更新する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60113822"
 Databaseby 呼び出し元に戻す、更新されたデータを送信するには、データセット内のデータを変更して検証した後、 `Update` TableAdapter のメソッド。 `Update`メソッドを 1 つのデータ テーブルを更新してに基づいて適切なコマンド (INSERT、UPDATE、または DELETE) の実行、<xref:System.Data.DataRow.RowState%2A>表内の各データ行のできます。 データセットの関連するテーブルが、Visual Studio は、更新プログラムを実行するために使用 TableAdapterManager クラスを生成します。 TableAdapterManager クラスにより、データベースで定義されている外部キー制約に基づく正しい順序で更新が行われるようになります。 データ バインド コントロールを使用すると、データ バインディング アーキテクチャには、tableAdapterManager と呼ばれる TableAdapterManager クラスのメンバー変数が作成されます。 詳細については、次を参照してください。[階層の更新の概要](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)します。  
   
 > [!NOTE]
->  データセットの内容でデータ ソースを更新しようとするときにエラーが発生することができます。エラーを回避するをお勧めごと、アダプターを呼び出すコードを配置する`Update`メソッド内で、 `try` / `catch`ブロックします。  
+> データセットの内容でデータ ソースを更新しようとするときにエラーが発生することができます。エラーを回避するをお勧めごと、アダプターを呼び出すコードを配置する`Update`メソッド内で、 `try` / `catch`ブロックします。  
   
  データ ソースを更新するための実際の手順は、ビジネス ニーズによって異なることができますが、次の手順が含まれています。  
   

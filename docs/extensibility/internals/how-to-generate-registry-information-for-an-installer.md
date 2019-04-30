@@ -12,19 +12,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc97aad2d3a056a61ae925816ac6d2457918db65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0e173819f4966bd1770ac862626987bafb9bf120
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418442"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>方法: インストーラーのレジストリ情報を生成します。
 
 *RegPkg.exe*マネージ VSPackage を登録するマニフェストを生成するユーティリティを使用できます。 マニフェストは、Windows インストーラーのセットアップ パッケージに組み込むことができます。 RegPkg もに基づいてセットアップのソース ファイルに含めることができるファイルを生成できる、 [Windows Installer XML ツールセット](http://go.microsoft.com/fwlink/?LinkId=62238)します。
 
 > [!IMPORTANT]
->  開発システムに固有のパス名を生成するよう RegPkg に、適切な Windows インストーラーがプロパティを書式設定されたので、RegPkg を使用するたびに使用する出力を編集する必要があります。 たとえば、`InprocServer32`値にする必要があります *\<SystemFolder\>mscoree.dll*パスを使用する必要がありますと*\<#filekey\>* と*\<$componentkey\>* します。 この方法で出力を調整することでは、または別のディレクトリ、ローカライズされたディレクトリ名、およびユーザーが選択可能なパスで別のドライブにインストールされている Windows でコンピューターをサポートしています。 詳細については、次を参照してください。[書式付き](http://go.microsoft.com/fwlink/?LinkId=71120)、Windows インストーラー sdk。 開発システムのパスの RegPkg 規則に従うかどうか、たとえば、ファイル形式の Id*これは\<ファイル名\>*— 少ない数の変更を行う必要があります。
+> 開発システムに固有のパス名を生成するよう RegPkg に、適切な Windows インストーラーがプロパティを書式設定されたので、RegPkg を使用するたびに使用する出力を編集する必要があります。 たとえば、`InprocServer32`値にする必要があります *\<SystemFolder\>mscoree.dll*パスを使用する必要がありますと*\<#filekey\>* と*\<$componentkey\>* します。 この方法で出力を調整することでは、または別のディレクトリ、ローカライズされたディレクトリ名、およびユーザーが選択可能なパスで別のドライブにインストールされている Windows でコンピューターをサポートしています。 詳細については、次を参照してください。[書式付き](http://go.microsoft.com/fwlink/?LinkId=71120)、Windows インストーラー sdk。 開発システムのパスの RegPkg 規則に従うかどうか、たとえば、ファイル形式の Id*これは\<ファイル名\>*— 少ない数の変更を行う必要があります。
 
 ## <a name="to-create-a-registration-manifest"></a>登録のマニフェストを作成するには
 

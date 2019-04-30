@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91300aea88c86d0791db5bd73b91c3b5069ad607
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 581906741bb43eb221c6a0b6f6bb9aeccd2f3945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424380"
 ---
 # <a name="uml-component-diagrams-reference"></a>UML コンポーネント図:参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio で、*コンポーネント図*ソフトウェア システムの
  コンポーネント図を設計プロセスで使用する方法の詳細については、次を参照してください。 [、アプリケーションのアーキテクチャをモデル化](../modeling/model-your-app-s-architecture.md)します。  
 
 > [!NOTE]
->  このトピックでは、コンポーネント図で使用できる要素について説明します。 コンポーネント図を描画する方法について詳細を参照してください。 [UML コンポーネント図。ガイドライン](../modeling/uml-component-diagrams-guidelines.md)します。 一般にモデリング図を描画する方法の詳細については、次を参照してください。[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
+> このトピックでは、コンポーネント図で使用できる要素について説明します。 コンポーネント図を描画する方法について詳細を参照してください。 [UML コンポーネント図。ガイドライン](../modeling/uml-component-diagrams-guidelines.md)します。 一般にモデリング図を描画する方法の詳細については、次を参照してください。[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
 
 ## <a name="reading-component-diagrams"></a>コンポーネント図の解説  
  コンポーネント図で使用できる要素とその主要なプロパティを次の表に示します。 要素のプロパティの完全な一覧は、次を参照してください。 [UML コンポーネント図の要素のプロパティ](../modeling/properties-of-elements-on-uml-component-diagrams.md)します。  

@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f890277190b9b4d28873e1fe394abdcd95b8a3a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 50df868f0e01d49d4c49bccae32d743d5291a066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434897"
 ---
 # <a name="create-custom-visualizers-of-data"></a>データのカスタム ビジュアライザーを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,14 +38,14 @@ ms.locfileid: "58963520"
  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] デバッガーには、6 つの標準的なビジュアライザーが用意されています。 これらは、テキスト、HTML、XML、および JSON ビジュアライザー、文字列オブジェクトのすべての作業WPF オブジェクトのビジュアル ツリー; のプロパティを表示するため、WPF ツリー ビジュアライザーで、データセット、データ ビュー、および DataTable オブジェクトの動作であるデータセット visualizer です。 その他のビジュアライザーは、今後 Microsoft Corporation からダウンロード可能になる場合があり、サード パーティやコミュニティからも入手できます。 また、独自のビジュアライザーを記述して、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] デバッガーにインストールすることもできます。  
   
 > [!NOTE]
->  **ストア**アプリ、標準のテキストのみ HTML、XML、および JSON ビジュアライザーがサポートされています。 カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。  
+> **ストア**アプリ、標準のテキストのみ HTML、XML、および JSON ビジュアライザーがサポートされています。 カスタム (ユーザーが作成した) ビジュアライザーはサポートされていません。  
   
  デバッガーでは、ビジュアライザーは虫眼鏡アイコンで表されます。 虫眼鏡アイコンを表示、**データヒント**デバッガー変数ウィンドウ、または、 **[クイック ウォッチ]** ダイアログ ボックスで、データ型に適したビジュアライザーを選択する虫眼鏡をクリックすることができます対応するオブジェクト。  
   
  ビジュアライザーは、.NET Compact Framework ではサポートされていません。  
   
 > [!NOTE]
->  デバッガー ビジュアライザーでは、部分信頼アプリケーションが許可する以上の特権が必要です。 この結果、部分信頼コードで動作が停止した場合、ビジュアライザーは読み込まれません。 ビジュアライザーを使用してデバッグするには、完全信頼コードを実行する必要があります。  
+> デバッガー ビジュアライザーでは、部分信頼アプリケーションが許可する以上の特権が必要です。 この結果、部分信頼コードで動作が停止した場合、ビジュアライザーは読み込まれません。 ビジュアライザーを使用してデバッグするには、完全信頼コードを実行する必要があります。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [方法: ビジュアライザーを記述する](../debugger/how-to-write-a-visualizer.md)  

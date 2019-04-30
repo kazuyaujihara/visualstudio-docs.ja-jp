@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2ba64bdcf299f52d0200e1fa66dead11a8824c14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429986"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>テスト領域 1: ソース管理から開く/を追加します。
 このソース管理プラグインは、領域ではソース管理下のプロジェクトまたはソリューションを配置して、ソース管理から取得をテストします。
@@ -37,7 +37,7 @@ ms.locfileid: "60083518"
 - [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]、追加のソースからコントロールが表示されます**ファイル**、**追加**、**既存のプロジェクト**記述を探してで、[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]場所。
 
   > [!NOTE]
-  >  ローカル ファイルまたはローカルの IIS (web サーバー) のパスは、このテストで使用できます。
+  > ローカル ファイルまたはローカルの IIS (web サーバー) のパスは、このテストで使用できます。
 
 ## <a name="expected-behavior"></a>想定される動作
 
