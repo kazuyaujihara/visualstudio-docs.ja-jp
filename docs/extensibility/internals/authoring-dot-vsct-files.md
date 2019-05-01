@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84c7a5194e48e73fbabf60b7c9ef89e6cb04d855
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03e0f5a294dea1fda1e2d7c320fa0158de9bbb3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415396"
 ---
 # <a name="author-vsct-files"></a>.Vsct ファイルの作成者
 このドキュメントを作成する方法を示しています、 *.vsct* Visual Studio 統合開発環境 (IDE) にメニュー項目、ツールバー、およびその他のユーザー インターフェイス (UI) 要素を追加するファイル。 次の手順を使用していない Visual Studio パッケージ (VSPackage) を UI 要素を追加すると、 *.vsct*ファイル。
@@ -86,7 +86,7 @@ ms.locfileid: "60053084"
     設定、`guid`と`id`の属性、`Menu`要素、および設定して、`type`属性をこの種のメニューを選択します。 設定することも、`priority`属性を親グループで、メニューの相対位置を確立します。
 
    > [!NOTE]
-   >  `priority`属性は、ツールバーとコンテキスト メニューには適用されません。
+   > `priority`属性は、ツールバーとコンテキスト メニューには適用されません。
 
 2. Visual Studio IDE のすべてのコマンドは、メニューおよびツールバーの直接の子であるコマンド グループでホストする必要があります。 IDE に新しいメニューまたはツールバーを追加する場合、新しいコマンドのグループが含まれますする必要があります。 コマンドは、視覚的にグループ化できるように、既存のメニューおよびツールバーにコマンドのグループを追加できます。
 
@@ -99,14 +99,14 @@ ms.locfileid: "60053084"
    1. 設定、`guid`と`id`の各属性`Button`要素、および設定して、`type`ボタンの種類に属性します。 設定することも、`priority`属性を親グループで、コマンドの相対位置を確立します。
 
        > [!NOTE]
-       >  使用`type="button"`標準メニュー コマンドとツールバーのボタン。
+       > 使用`type="button"`標準メニュー コマンドとツールバーのボタン。
 
    2. `Button`要素を追加、[文字列](../../extensibility/strings-element.md)要素を含む、 [ButtonText](../../extensibility/buttontext-element.md)要素と[CommandName](../../extensibility/commandname-element.md)要素。 `ButtonText`要素がメニュー項目、またはツール バー ボタンのツールヒントのテキスト ラベルを提供します。 `CommandName`要素も、コマンドで使用するコマンドの名前を提供します。
 
    3. コマンドがアイコンである場合は、作成、[アイコン](../../extensibility/icon-element.md)内の要素、`Button`要素、およびセットの`guid`と`id`属性を`Bitmap`アイコンの要素。
 
        > [!NOTE]
-       >  ツール バー ボタンのアイコンがあります。
+       > ツール バー ボタンのアイコンがあります。
 
    詳細については、次を参照してください。 [Menucommand とします。OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)します。
 

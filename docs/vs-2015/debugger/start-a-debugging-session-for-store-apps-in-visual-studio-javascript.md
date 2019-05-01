@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12c5fb2db92c70144e38aa3ca2110b8b3d5c354e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 630b2896e7446cf62982dd62ed12f9f7b7ca4aa9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427298"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Visual Studio でのストア アプリのデバッグ セッションの開始 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  このトピックでは、JavaScript と HTML5 で記述された Windows ストア アプリのデバッグ セッションを開始する方法について説明します。 1 回のキー入力でデバッグを開始できます。または、特定のシナリオのデバッグ セッションを構成してから、アプリの起動方法を選択できます。
 
 > [!NOTE]
->  XAML および Visual c#、Visual C、または Visual Basic で記述されたアプリでは、次を参照してください[(VB、c#、C++ および XAML) は、デバッグ セッションを開始。](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> XAML および Visual c#、Visual C、または Visual Basic で記述されたアプリでは、次を参照してください[(VB、c#、C++ および XAML) は、デバッグ セッションを開始。](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ## <a name="BKMK_In_this_topic"></a> このトピックの内容
  [このトピックの内容](#BKMK_In_this_topic)
@@ -117,7 +117,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
    ![リモート デバッガー接続の選択](../debugger/media/vsrun-pro-selectremotedebuggerdlg.png "VSRUN_PRO_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  [リモート デバッガー接続の選択] ダイアログ ボックスには、ローカル サブネット上にあるコンピューターとイーサネット ケーブルによって Visual Studio コンピューターに直接接続されているコンピューターが表示されます。 別のコンピューターを指定するには、 **[コンピューター名]** ボックスに名前を入力します。
+  > [リモート デバッガー接続の選択] ダイアログ ボックスには、ローカル サブネット上にあるコンピューターとイーサネット ケーブルによって Visual Studio コンピューターに直接接続されているコンピューターが表示されます。 別のコンピューターを指定するには、 **[コンピューター名]** ボックスに名前を入力します。
 
   ![Windows Phone にのみ適用されます](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -178,7 +178,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  インストール済みのアプリがデバッグ モードで実行されるように設定するには、次の手順を実行します。
 
 > [!NOTE]
->  この手順は、アプリが実行されていないときに開始してください。
+> この手順は、アプリが実行されていないときに開始してください。
 
 1.  **[デバッグ]** メニューの **[デバッグ] Installed App Package**をクリックします。
 
@@ -226,9 +226,9 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 ### <a name="BKMK_Attach_the_debugger"></a> デバッガーをアタッチします。
 
 > [!TIP]
->  JavaScript アプリは、wwahost.exe プロセスのインスタンスで実行されます。 アプリにアタッチする際に他の JavaScript アプリが実行されている場合、そのアプリが実行されている wwahost.exe の数値型プロセス ID (PID) を確認する必要があります。
+> JavaScript アプリは、wwahost.exe プロセスのインスタンスで実行されます。 アプリにアタッチする際に他の JavaScript アプリが実行されている場合、そのアプリが実行されている wwahost.exe の数値型プロセス ID (PID) を確認する必要があります。
 >
->  このような状況に対処する最も簡単な方法は、他の JavaScript アプリをすべて閉じることです。 別の方法として、アプリを起動する前に Windows タスク マネージャーを開き、wwahost.exe プロセスの ID を確認できます。 アタッチするプロセスを指定すると、**選択可能なプロセス**ダイアログ ボックスで、アプリの wwahost.exe には、メモしたものと異なるは、id が必要があります。
+> このような状況に対処する最も簡単な方法は、他の JavaScript アプリをすべて閉じることです。 別の方法として、アプリを起動する前に Windows タスク マネージャーを開き、wwahost.exe プロセスの ID を確認できます。 アタッチするプロセスを指定すると、**選択可能なプロセス**ダイアログ ボックスで、アプリの wwahost.exe には、メモしたものと異なるは、id が必要があります。
 
  デバッガーをアタッチするには:
 

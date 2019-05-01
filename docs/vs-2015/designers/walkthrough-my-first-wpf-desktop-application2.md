@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae6a4510efc63a633e627fdd0b165aa547b2be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bee99bc546eca3787db1f9cd082359afb6881d10
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421150"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>チュートリアル: 初めての WPF デスクトップ アプリケーション
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
      `<Window` タグを `<NavigationWindow`に変更すると、Intellisense によって終了タグも `</NavigationWindow>` に自動的に変更されます。  
   
     > [!NOTE]
-    >  タグを変更した後、 **[エラー一覧]** ウィンドウが開いていると、エラーがいくつか表示される場合があります。 心配しないでください。この後の手順で加える変更でそれらのエラーは解消されます。  
+    > タグを変更した後、 **[エラー一覧]** ウィンドウが開いていると、エラーがいくつか表示される場合があります。 心配しないでください。この後の手順で加える変更でそれらのエラーは解消されます。  
   
 3. `<Grid>` と `</Grid>` のタグを選択して削除します。  
   
@@ -307,14 +307,14 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
      ![チュートリアル ](../designers/media/wpf-watermark.png "WPF_watermark のウォーターマーク イメージ")  
   
     > [!NOTE]
-    >  または、独自のイメージを作成し、`watermark.png` として保存します。  
+    > または、独自のイメージを作成し、`watermark.png` として保存します。  
   
 2. **ソリューション エクスプローラー**で **[ExpenseIt]** ノードのショートカット メニューを開き、 **[追加]**、 **[既存の項目]** を選択します。  
   
 3. **[既存項目の追加]** ダイアログで、追加したばかりの **watermark.png** イメージを探して選択し、 **[追加]** ボタンを選択します。  
   
     > [!NOTE]
-    >  **[ファイルの種類]** リストを展開し、 **[イメージ ファイル]** を選択する必要がある場合があります。  
+    > **[ファイルの種類]** リストを展開し、 **[イメージ ファイル]** を選択する必要がある場合があります。  
   
 4. **ExpenseItHome.xaml** ファイルを開き、次の XAML コードを `</Grid>` タグのすぐ上に追加し、背景イメージを作成します。  
   
