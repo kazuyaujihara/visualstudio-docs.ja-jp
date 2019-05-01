@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a2727f0f3a5f2b46c5110a33e63b102f9d26bdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446608"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>チュートリアル: 既存の SharePoint サイトからアイテムをインポートします。
   アイテムを既存の SharePoint サイトからインポートする方法についても説明、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint プロジェクト。
@@ -75,7 +75,7 @@ ms.locfileid: "60110874"
  SharePoint プロジェクト項目およびにインポートする要素を含む、SharePoint セットアップ (.wsp) ファイルを次に、取得、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint プロジェクト。 .Wsp ファイルがあるまだない場合、既存の SharePoint サイトから 1 つを作成する必要があります。 この例では、.wsp ファイルに既定の SharePoint サイトをエクスポートします。
 
 > [!IMPORTANT]
->  SharePoint サイトにアクセス権があるシステム上の手順を実行する必要が、次の手順を実行するランタイム エラーが発生した場合。
+> SharePoint サイトにアクセス権があるシステム上の手順を実行する必要が、次の手順を実行するランタイム エラーが発生した場合。
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>既存の SharePoint サイトをエクスポートするには
 
@@ -117,7 +117,7 @@ ms.locfileid: "60110874"
 6. **新しいプロジェクトのソースを指定** ページで、保存されているシステム上の場所を参照、 *.wsp*クリックして、ファイルの以前、**次**ボタン。
 
    > [!NOTE]
-   >  選択した場合、**完了**で利用可能なすべての項目は、このページのボタン、 *.wsp*ファイルがインポートされます。
+   > 選択した場合、**完了**で利用可能なすべての項目は、このページのボタン、 *.wsp*ファイルがインポートされます。
 
 7. **をインポートする項目の選択**ボックスに、すべてのリストを除くのチェック ボックスをオフに**テスト列**、選択し、**完了**ボタン。
 

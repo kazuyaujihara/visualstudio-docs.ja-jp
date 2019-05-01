@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416642"
 ---
 # <a name="customizing-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ ms.locfileid: "60059254"
 ```  
   
 > [!WARNING]
->  シンボルの解決には、特に多数のアセンブリでリモートのファイルの場所を使用している場合、時間がかかることがあります。 そのため、リモート .pdb ファイルをバイナリ (.dll または .exe) ファイルと同じローカルの場所にコピーすることを検討してください。  
+> シンボルの解決には、特に多数のアセンブリでリモートのファイルの場所を使用している場合、時間がかかることがあります。 そのため、リモート .pdb ファイルをバイナリ (.dll または .exe) ファイルと同じローカルの場所にコピーすることを検討してください。  
   
 ### <a name="excluding-and-including"></a>除外と包含  
  指定したアセンブリをコード カバレッジ分析から除外できます。 例えば:  
@@ -134,7 +134,7 @@ ms.locfileid: "60059254"
 ```  
   
 > [!WARNING]
->  正規表現にエラー (エスケープされず、一致しないかっこなど) がある場合、コード カバレッジ分析は実行されません。  
+> 正規表現にエラー (エスケープされず、一致しないかっこなど) がある場合、コード カバレッジ分析は実行されません。  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>要素を包含または除外するための別の方法  
  例については、[このトピックの末尾のサンプル](#sample)を参照してください。  

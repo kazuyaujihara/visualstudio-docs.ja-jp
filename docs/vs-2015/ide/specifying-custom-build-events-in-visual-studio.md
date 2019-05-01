@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e99ee6c9570f3bb73bc70f230f31e153a8a0da1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ace8b173eb20b6e628fbb7066ff9010624cca9e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441960"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Visual Studio でのカスタム ビルド イベントの指定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60054158"
      例: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
     > [!NOTE]
-    >  上記のコードの `%I` は、バッチ スクリプトでは `%%I` になります。
+    > 上記のコードの `%I` は、バッチ スクリプトでは `%%I` になります。
 
 ## <a name="see-also"></a>関連項目
  [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)[ビルド前のコマンド ライン] ダイアログ ボックスのビルド後イベント](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild の特殊文字](../msbuild/msbuild-special-characters.md)[チュートリアル。アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)
