@@ -27,7 +27,7 @@ ms.locfileid: "63441960"
 
 - Visual Basic -- [方法: ビルド イベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)」を参照してください。
 
-- VisualC#とF#--[方法。ビルド イベント (c#) を指定](../ide/how-to-specify-build-events-csharp.md)します。
+- Visual C# および F# -- [方法:ビルド イベントを指定する (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 - Visual C++ -- [ビルド イベントの指定](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc)
 
@@ -56,4 +56,4 @@ ms.locfileid: "63441960"
     > 上記のコードの `%I` は、バッチ スクリプトでは `%%I` になります。
 
 ## <a name="see-also"></a>関連項目
- [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)[ビルド前のコマンド ライン] ダイアログ ボックスのビルド後イベント](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild の特殊文字](../msbuild/msbuild-special-characters.md)[チュートリアル。アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)
+ [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)[ビルド前のコマンド ラインダイアログ ボックスのビルド後イベント](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild の特殊文字](../msbuild/msbuild-special-characters.md)[チュートリアル。アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)
