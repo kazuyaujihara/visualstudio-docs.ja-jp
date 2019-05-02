@@ -21,7 +21,7 @@ ms.locfileid: "62421187"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>コードからの依存関係図の作成
 
-ソフトウェア システムのおおまかな論理アーキテクチャを表示するのには、作成、*依存関係図*Visual Studio でします。 コードがこの設計で一貫性のあることを確認するには、依存関係図を使用してコードを検証します。 Visual c# および Visual Basic プロジェクトの依存関係図を作成することができます。 この機能をサポートする Visual Studio のエディションを確認するを参照してください。 [Edition のサポート アーキテクチャとモデリング ツール](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)します。
+ソフトウェア システムの高レベルの論理アーキテクチャを視覚化するには、Visual Studio で*依存関係図*を作成します。 コードがこの設計と一致していることを確認するために、依存関係図を使用してコードを検証します。 Visual C＃ および Visual Basic プロジェクトの依存関係図を作成することができます。 Visual C＃ および Visual Basic プロジェクトの依存関係図を作成することができます[アーキテクチャおよびモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools) を参照してください。
 
 ![依存関係図を作成します。](../modeling/media/layerdiagramvisualizecode.png)
 
@@ -70,7 +70,7 @@ ms.locfileid: "62421187"
 
 4. ソリューションを使用して、新しい依存関係図を作成、**アーキテクチャ**メニュー
 
-5. コード マップ上のすべてのノードを選択します (を使用して、 _ctrl キーを押し_ + _A_、またはキーを押してラバー バンド選択を使用して、 _shift キーを押し_キー をクリックしてドラッグすると、リリースを実行する前にします。
+5. コード マップ上のすべてのノードを選択します （_Ctrl_ + _A_を使用するか、_Shift_キーを押してクリック、ドラッグ、リリースする前にラバーバンドを選択します）。
 
 6. ドラッグ アンド ドロップ、または、コピーや貼り付け、新しい依存関係検証ダイアグラムを選択した要素。
 
