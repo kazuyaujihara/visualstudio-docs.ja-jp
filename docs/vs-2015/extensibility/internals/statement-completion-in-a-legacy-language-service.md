@@ -11,12 +11,12 @@ ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 66ca9a6176fc17784e79e5c4f3ad633a8c685854
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 163eb0f23716fa2f036d07612b741c0c9419b92e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408468"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>従来の言語サービスでのステートメント入力補完
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58975159"
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 ステートメント入力候補を実装する新しい方法の詳細についてを参照してください。[チュートリアル。ステートメント入力候補を表示する](../../extensibility/walkthrough-displaying-statement-completion.md)します。  
   
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
   
 ## <a name="implementing-statement-completion"></a>ステートメント入力候補を実装します。  
  コア エディターでは、ステートメント入力候補より簡単に対話的に支援して、すばやくコードを記述する特別な UI がアクティブにします。 ステートメント入力候補は、表示することで関連するオブジェクトまたはクラスが必要なときを特定の要素を覚えておくか、ヘルプの参照トピックで確認することを回避するのに役立ちます。  

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59f26e4e8972f02740db45760e5b2e876c300bd1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ca57c279ceabd03f48ffaa564d42f7d023b39887
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434186"
 ---
 # <a name="using-the-settings-store"></a>設定ストアの使用
 設定ストアの 2 つの種類があります。
@@ -82,6 +82,6 @@ ms.locfileid: "60045402"
 2. HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts に移動します\\します。
 
     > [!NOTE]
-    >  \14.0Exp_Config\ といない \14.0_Config を含むキーを検索するかどうかを確認\\します。 Visual Studio の実験用インスタンスを実行すると、構成設定はレジストリ ハイブ"14.0Exp_Config"です。
+    > \14.0Exp_Config\ といない \14.0_Config を含むキーを検索するかどうかを確認\\します。 Visual Studio の実験用インスタンスを実行すると、構成設定はレジストリ ハイブ"14.0Exp_Config"です。
 
 3. \Installed Products\ ノードを展開します。 前の手順でメッセージがある場合**Microsoft Windows Phone 開発者ツールをインストールします。True**、\Installed Products\ 場合に、Microsoft Windows Phone Developer Tools ノードが含まれている必要があります。 メッセージが場合**Microsoft Windows Phone 開発者ツールをインストールします。False**、し \Installed Products\ は Microsoft Windows Phone Developer Tools ノードを含めることはできません。

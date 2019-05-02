@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a29c813a5217e68541fd076eadf62bf54710014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436484"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office ソリューションの特定のセキュリティに関する考慮事項
   Microsoft .NET Framework および Microsoft Office には、Office ソリューションをセキュリティ上の脅威から保護するためのセキュリティ機能が備わっています。 このトピックでは、このような脅威のいくつかについて説明し、脅威対策に関する推奨事項を示します。 また、Microsoft Office のセキュリティ設定が Office ソリューションに及ぼす影響についても説明します。
@@ -74,7 +74,7 @@ ms.locfileid: "60081321"
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
 
 > [!NOTE]
->  Outlook を Exchange と併用している場合、すべての Outlook オブジェクトを `ThisAddIn.Application` から取得しても、VSTO アドインが Outlook オブジェクト モデル全体にアクセスできるとは限りません。 たとえば、Exchange 管理者の Outlook からの自動的に設定されている場合を拒否する Outlook オブジェクト モデルを使用してアドレス情報にアクセスするすべての試行場合でも、このコード例では、Outlook は、To プロパティにアクセスする前のコード例をできません。 その後信頼`ThisAddIn.Application`フィールド。
+> Outlook を Exchange と併用している場合、すべての Outlook オブジェクトを `ThisAddIn.Application` から取得しても、VSTO アドインが Outlook オブジェクト モデル全体にアクセスできるとは限りません。 たとえば、Exchange 管理者の Outlook からの自動的に設定されている場合を拒否する Outlook オブジェクト モデルを使用してアドレス情報にアクセスするすべての試行場合でも、このコード例では、Outlook は、To プロパティにアクセスする前のコード例をできません。 その後信頼`ThisAddIn.Application`フィールド。
 
 ### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Exchange を使用する場合を信頼するアドインの指定します。
  Outlook を Exchange と併用している場合、管理者は、オブジェクト モデルの保護の対象外として動作させる特定の VSTO アドインを指定できます。 Visual Studio で Office ソリューションを使用して作成した個別の Outlook VSTO アドインは信頼できません。これらはグループとしてのみ信頼できます。

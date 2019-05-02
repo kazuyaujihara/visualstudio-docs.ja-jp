@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8161623b35dd626e59cdb0ed387ece6a104429a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eecde0bc5e488cd91632a45406c621ce45bd4447
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407757"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 別のコンピューターに配置されている Visual Studio アプリケーションをデバッグすることができます。 このデバッグを行うには、Visual Studio リモート デバッガーを使用します。
@@ -100,7 +100,7 @@ ms.locfileid: "60047583"
      既定で使用されるポート番号の一覧については、次を参照してください。 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)します。
 
      > [!WARNING]
-     >  リモート ツールを [認証なし] モードで実行することも選択できますが、このモードの使用は避けることを強く推奨します。 このモードで実行した場合、ネットワーク セキュリティはまったく提供されません。 [認証なし] モードは、ネットワークに悪意のあるコードや悪意のあるトラフィックのリスクがないことが確実である場合にのみ選択してください。
+     > リモート ツールを [認証なし] モードで実行することも選択できますが、このモードの使用は避けることを強く推奨します。 このモードで実行した場合、ネットワーク セキュリティはまったく提供されません。 [認証なし] モードは、ネットワークに悪意のあるコードや悪意のあるトラフィックのリスクがないことが確実である場合にのみ選択してください。
 
 ## <a name="bkmk_configureService"></a> (省略可能)サービスとしてリモート デバッガーを構成します。
 ASP.NET およびその他のサーバー環境でデバッグ、リモート デバッガーを管理者として実行かを常に実行する場合は、サービスとしてリモート デバッガーを実行します。

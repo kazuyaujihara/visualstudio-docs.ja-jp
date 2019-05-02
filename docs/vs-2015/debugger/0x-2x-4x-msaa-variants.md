@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439987"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA バリアント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60090027"
  アプリケーションでまだ MSAA を有効にしていない場合、2x MSAA および 4x MSAA のバリアントは、アプリケーション内でこれらの MSAA を有効にするための相対パフォーマンス コストを示しています。 コストが比較的安価な場合は、MSAA を有効にしてアプリケーションのイメージ品質を向上させることを検討します。  
   
 > [!NOTE]
->  ご利用のハードウェアでは、MSAA をすべての形式で完全にサポートしていないことがあります。 いずれかのバリアントで、対処できないハードウェアの制限に直面した場合は、パフォーマンスのサマリー テーブルの該当する列が空白になり、エラー メッセージが生成されます。  
+> ご利用のハードウェアでは、MSAA をすべての形式で完全にサポートしていないことがあります。 いずれかのバリアントで、対処できないハードウェアの制限に直面した場合は、パフォーマンスのサマリー テーブルの該当する列が空白になり、エラー メッセージが生成されます。  
   
 ## <a name="remarks"></a>Remarks  
  これらのバリアントは、レンダー ターゲットを作成する `ID3DDevice::CreateTexture2D` への呼び出しが行われるときに sample count および sample-quality 引数をオーバーライドします。 具体的には、以下の場合にこれらのパラメーターがオーバーライドされます。  

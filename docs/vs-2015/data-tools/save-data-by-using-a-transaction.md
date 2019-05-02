@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c133bb3f8ef56378c20b985aa118e48e71109cea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 260396123f806e7c37b91ff4aca643a05853676f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425083"
 ---
 # <a name="save-data-by-using-a-transaction"></a>トランザクションを使用してデータを保存する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60065260"
  プロジェクトは、トランザクションを使用するプロジェクトへの参照を手動で追加する必要があるため、System.Transactions アセンブリへの参照は作成されません。  
   
 > [!NOTE]
->  <xref:System.Transactions> Windows 2000 またはそれ以降、名前空間がサポートされています。  
+> <xref:System.Transactions> Windows 2000 またはそれ以降、名前空間がサポートされています。  
   
  トランザクションを実装する最も簡単な方法がインスタンス化するには、<xref:System.Transactions.TransactionScope>オブジェクト、`using`ステートメント。 (詳細については、次を参照してください[Using ステートメント](http://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1)、および[ステートメントを使用して](http://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3)。)。内で実行されるコード、`using`ステートメントがトランザクションに参加します。  
   

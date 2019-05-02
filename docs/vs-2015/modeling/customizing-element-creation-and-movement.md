@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f956f492c3dc690ef2edb67d9a7c75e6c0108820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433271"
 ---
 # <a name="customizing-element-creation-and-movement"></a>要素作成処理および要素移動処理のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,9 +72,9 @@ ms.locfileid: "60100522"
    たとえば、モデル内の新しい場所からデータを使用してマージされた要素のプロパティを設定でした。  
   
 > [!NOTE]
->  カスタム マージのコードを記述する場合は、この EMD を使用して実行される唯一の結合に影響します。 他の入力例: 同じ種類のオブジェクトをマージする場合、または、EMD を使用せずにこれらのオブジェクトを作成する他のカスタム コードがある場合は、は受けませんマージのカスタム コード。  
+> カスタム マージのコードを記述する場合は、この EMD を使用して実行される唯一の結合に影響します。 他の入力例: 同じ種類のオブジェクトをマージする場合、または、EMD を使用せずにこれらのオブジェクトを作成する他のカスタム コードがある場合は、は受けませんマージのカスタム コード。  
 >   
->  新しい要素または新しいリレーションシップが常に処理される、カスタム コードを確認する場合は、定義することを検討してください、`AddRule`埋め込みリレーションシップに対して、`DeleteRule`要素のドメイン クラス。 詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
+> 新しい要素または新しいリレーションシップが常に処理される、カスタム コードを確認する場合は、定義することを検討してください、`AddRule`埋め込みリレーションシップに対して、`DeleteRule`要素のドメイン クラス。 詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。  
   
 ## <a name="example-defining-an-emd-without-custom-code"></a>例:カスタム コードなし EMD を定義します。  
  次の例では、既存の図形には、ツールボックスからドラッグして、同時に要素とコネクタを作成できます。 例では、DSL 定義に EMD を追加します。 この変更では、前にユーザーは、図に、既存の図形の上にないツールをドラッグできます。  

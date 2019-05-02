@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49d253b63b682d81903003d6bdd148922989f274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d804acd19d585bf9517ce9b8d771290a1f1c214a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435455"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>方法: SharePoint コマンドを作成します。
   SharePoint ツール拡張機能で、サーバー オブジェクト モデルを使用する場合は、カスタムを作成する必要があります*SharePoint コマンド*API を呼び出します。 SharePoint コマンドは、サーバー オブジェクト モデルを直接呼び出すことがアセンブリに定義します。
@@ -33,7 +33,7 @@ ms.locfileid: "60082322"
     - X64、AnyCPU の対象プラットフォーム。 既定では、クラス ライブラリ プロジェクトのターゲット プラットフォームには AnyCPU です。 ターゲット プラットフォームを選択する方法についての詳細については、次を参照してください。[方法。プロジェクトを構成して対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)
 
     > [!NOTE]
-    >  SharePoint コマンドは、.NET Framework 3.5 および SharePoint ツール拡張機能のターゲットをターゲットするため、SharePoint ツールの拡張機能を定義するのと同じプロジェクト内 SharePoint コマンドを実装することはできません、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]します。 別のプロジェクトで、拡張機能によって使用される任意の SharePoint コマンドを定義する必要があります。 詳細については、次を参照してください。 [Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
+    > SharePoint コマンドは、.NET Framework 3.5 および SharePoint ツール拡張機能のターゲットをターゲットするため、SharePoint ツールの拡張機能を定義するのと同じプロジェクト内 SharePoint コマンドを実装することはできません、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]します。 別のプロジェクトで、拡張機能によって使用される任意の SharePoint コマンドを定義する必要があります。 詳細については、次を参照してください。 [Visual Studio の SharePoint ツールの拡張機能を展開](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)します。
 
 2. 次のアセンブリへの参照を追加します。
 

@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db58bb1826aab9a26dcec6a9475c49fc99057891
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431937"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Visual Studio での entity Data Model ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Entity Framework とは、.NET 開発者は、ドメイン固有オブジェク�
 - 使用することができます、**モデルの更新ウィザード**を基になるデータベースの変更を行ったときに、概念モデル、ストレージ モデル、およびマッピングを更新します。
 
   > [!NOTE]
-  >  Visual Studio 2010 以降で[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]ツールがサポートされていない[!INCLUDE[ss2k](../includes/ss2k-md.md)]します。
+  > Visual Studio 2010 以降で[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]ツールがサポートされていない[!INCLUDE[ss2k](../includes/ss2k-md.md)]します。
 
   ツールでは、生成または .edmx ファイルを変更します。 このファイルには、概念モデル、ストレージ モデル、およびそれらの間のマッピングについて説明する情報が含まれています。 詳細については、次を参照してください。 [EDMX](https://msdn.microsoft.com/data/jj650889.aspx)します。
 

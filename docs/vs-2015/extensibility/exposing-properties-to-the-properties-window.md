@@ -12,12 +12,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b7b9e352c3042e5175b7420a9d4203ca7f59e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c28a0520680951920ee19e91f3df098066f432dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432119"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>プロパティ ウィンドウへのプロパティの公開
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,7 +177,7 @@ ms.locfileid: "60117142"
 10. チェック ボックスをオンに、 **MyToolWindow**ウィンドウ。 **IsChecked**で、**プロパティ**にウィンドウが変更された**True**します。 チェック ボックスをオフ、 **MyToolWindow**ウィンドウ。 **IsChecked**で、**プロパティ**にウィンドウが変更された**False**します。 値を変更**IsChecked**で、**プロパティ**ウィンドウ。 チェック ボックス、 **MyToolWindow**ウィンドウが、新しい値に一致するように変更します。  
   
     > [!NOTE]
-    >  かどうかに表示されるオブジェクトを破棄する必要があります、**プロパティ**ウィンドウで、呼び出し`OnSelectChange`で、`null`選択コンテナー最初。 プロパティまたはオブジェクトを破棄して、後に更新されている選択コンテナーに変更できます<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A>と<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A>を一覧表示します。  
+    > かどうかに表示されるオブジェクトを破棄する必要があります、**プロパティ**ウィンドウで、呼び出し`OnSelectChange`で、`null`選択コンテナー最初。 プロパティまたはオブジェクトを破棄して、後に更新されている選択コンテナーに変更できます<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A>と<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A>を一覧表示します。  
   
 ## <a name="changing-selection-lists"></a>選択リストを変更します。  
  このセクションでは、プロパティの基本クラスの選択リストを追加し、ツール ウィンドウ インターフェイスを使用して表示する選択リストを選択します。  
@@ -261,7 +261,7 @@ ms.locfileid: "60117142"
 6. チェック ボックスをオン、 **MyToolWindow**ウィンドウ。 **プロパティ**ウィンドウが表示されます、`Simple`オブジェクトのプロパティ、**しれません**と**ReadOnly**します。 チェック ボックスをオフにします。 ウィンドウのパブリック プロパティに表示されます、**プロパティ**ウィンドウ。  
   
     > [!NOTE]
-    >  表示名**しれません**は**マイ テキスト**します。  
+    > 表示名**しれません**は**マイ テキスト**します。  
   
 ## <a name="best-practice"></a>推奨事項  
  このチュートリアルで<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>は選択可能なオブジェクトのコレクションと、選択したオブジェクトのコレクションが、同じコレクションになるように実装されます。 プロパティ ブラウザーの一覧で選択したオブジェクトのみが表示されます。 詳細な ISelectionContainer 実装、Reference.ToolWindow のサンプルを参照してください。  

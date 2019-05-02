@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2386f1be805f6347fc32fba4ee8bfe57c8602329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436897"
 ---
 # <a name="vsix-project-template"></a>VSIX プロジェクト テンプレート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ VSIX プロジェクトでは、1 つまたは複数の Visual Studio 拡張機�
  VSIX 配置には、Vspackage、アセンブリ、MEF コンポーネント、プロジェクト テンプレート、項目テンプレート、ツールボックス コントロール、およびカスタム拡張機能の種類がサポートしています。  
   
 > [!NOTE]
->  VSIX プロジェクトを使用するには、Visual Studio SDK をインストールする必要があります。 Visual Studio SDK の詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
+> VSIX プロジェクトを使用するには、Visual Studio SDK をインストールする必要があります。 Visual Studio SDK の詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>VSIX プロジェクト テンプレートの検索場所  
  VSIX プロジェクト テンプレートが表示されます、**新しいプロジェクト** ダイアログ ボックス。 いずれかを展開、 **Visual Basic**ノードまたは**Visual c#** ノードを選び、**拡張**します。  
   
 > [!TIP]
->  以降の上部にあるドロップダウン リストで指定されたかを確認してください、.NET Framework 4.5、**新しいプロジェクト** ダイアログ ボックス。  
+> 以降の上部にあるドロップダウン リストで指定されたかを確認してください、.NET Framework 4.5、**新しいプロジェクト** ダイアログ ボックス。  
   
 ## <a name="uses-of-the-vsix-project-template"></a>VSIX プロジェクト テンプレートの使用  
  VSIX プロジェクト テンプレートでは、2 つの主な用途があります。  

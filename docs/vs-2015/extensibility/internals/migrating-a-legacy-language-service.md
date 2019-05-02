@@ -10,12 +10,12 @@ ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fe6870046d1dd15c7bc5795dd82d393272ca6b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc6c5d665367f2d5af9e2dd6d2a7d664e50f4830
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434373"
 ---
 # <a name="migrating-a-legacy-language-service"></a>従来の言語サービスの移行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ ms.locfileid: "60097363"
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 言語サービスを実装する新しい方法の詳細についてを参照してください。[エディターと言語サービス拡張](../../extensibility/editor-and-language-service-extensions.md)します。  
   
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
   
 ## <a name="migrating-a-visual-studio-2008-language-service-solution-to-a-later-version"></a>以降のバージョンに、Visual Studio 2008 の言語サービス ソリューションを移行します。  
  次の手順では、RegExLanguageService という名前の Visual Studio 2008 サンプルを適合させる方法を示します。 Visual Studio 2008 SDK のインストールでこのサンプルを見つけることができます、 *Visual Studio SDK インストール パス*\VisualStudioIntegration\Samples\IDE\CSharp\Example.RegExLanguageService\ フォルダー。  
   
 > [!IMPORTANT]
->  明示的に設定する必要がある、言語サービスが色を定義していない場合<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A>に`true`を VSPackage に。  
+> 明示的に設定する必要がある、言語サービスが色を定義していない場合<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A>に`true`を VSPackage に。  
   
 ```  
 [Microsoft.VisualStudio.Shell.ProvideLanguageService(typeof(YourLanguageService), YourLanguageServiceName, 0, RequestStockColors = true)]  

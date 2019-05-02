@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 199f89d7c2ce4c9674ed9d79ec13a1b392b70371
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8e9fe393f7b0ad52a8d713c0f41f25f03bb056ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434773"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 関数
 この関数は、ソース管理システムに既に存在するファイルの参照をでき、その後に、現在のプロジェクトの一環としてそのファイル。 たとえば、この関数は、ファイルをコピーせず、現在のプロジェクトに共通のヘッダー ファイルを取得できます。 ファイルの戻り値の配列`lplpFileNames`ユーザーが、IDE プロジェクトを追加するファイルの一覧が含まれています。
@@ -69,7 +69,7 @@ SCCRTN SccAddFromScc (
  `lplpFileNames` `char ***`ポインター。 ソース管理プラグインは、この API の標準的な方法で一覧を渡すためのファイル名へのポインターの配列へのポインターを配置します。
 
 > [!NOTE]
->  VSSCI API の最初のバージョンでは、ターゲットのプロジェクトを追加したファイルを示す方法は提供しませんでした。 これのセマンティクスに合わせて、`lplpFIleNames`パラメーターが出力パラメーターではなく、入力/出力パラメーターに強化されています。 1 つのファイルを指定すると、専用の場合は、値によって示される`lpnFiles`= 1、最初の要素の`lplpFileNames`ターゲット フォルダーが含まれています。 このような新しいセマンティクスを IDE の呼び出しを使用する、`SccSetOption`関数と、`nOption`パラメーターに設定`SCC_OPT_SHARESUBPROJ`します。 返すかどうか、ソース管理プラグインは、セマンティクスをサポートしていません、`SCC_E_OPTNOTSUPPORTED`します。 無効にします。 そのための使用を行って、**ソース管理から追加**機能します。 プラグインをサポートしている場合、**ソース管理から追加**機能 (`SCC_CAP_ADDFROMSCC`)、次に新しいセマンティクスをサポートし、返す必要があります`SCC_I_SHARESUBPROJOK`します。
+> VSSCI API の最初のバージョンでは、ターゲットのプロジェクトを追加したファイルを示す方法は提供しませんでした。 これのセマンティクスに合わせて、`lplpFIleNames`パラメーターが出力パラメーターではなく、入力/出力パラメーターに強化されています。 1 つのファイルを指定すると、専用の場合は、値によって示される`lpnFiles`= 1、最初の要素の`lplpFileNames`ターゲット フォルダーが含まれています。 このような新しいセマンティクスを IDE の呼び出しを使用する、`SccSetOption`関数と、`nOption`パラメーターに設定`SCC_OPT_SHARESUBPROJ`します。 返すかどうか、ソース管理プラグインは、セマンティクスをサポートしていません、`SCC_E_OPTNOTSUPPORTED`します。 無効にします。 そのための使用を行って、**ソース管理から追加**機能します。 プラグインをサポートしている場合、**ソース管理から追加**機能 (`SCC_CAP_ADDFROMSCC`)、次に新しいセマンティクスをサポートし、返す必要があります`SCC_I_SHARESUBPROJOK`します。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

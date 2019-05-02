@@ -12,12 +12,12 @@ ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6bcf8979f0240f60de1a6af9d7f6f4163ecf0af9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: daac15bbb7829d510db17ba02057a2dc86c55990
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432508"
 ---
 # <a name="sccadd-function"></a>SccAdd 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ SCCRTN SccAdd(
  通常の`fOptions`、配列では、ここが置き換えられます`pfOptions`、いずれかで`LONG`仕様ファイルごとのオプションします。 これはため、ファイルの種類がファイルをファイルに異なる場合があります。  
   
 > [!NOTE]
->  両方とも指定することはできません`SCC_FILETYPE_TEXT`と`SCC_FILETYPE_BINARY`が同じファイルのオプションはいずれも指定するは無効です。 設定と同じでは、どちらも設定`SCC_FILETYPE_AUTO`ソースがプラグインの初回ファイルの種類を制御する場合。  
+> 両方とも指定することはできません`SCC_FILETYPE_TEXT`と`SCC_FILETYPE_BINARY`が同じファイルのオプションはいずれも指定するは無効です。 設定と同じでは、どちらも設定`SCC_FILETYPE_AUTO`ソースがプラグインの初回ファイルの種類を制御する場合。  
   
  使用されているフラグの一覧を次に示します、`pfOptions`配列。  
   

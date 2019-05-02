@@ -14,12 +14,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 17da1ff036227b50e507fd564618c4f53cf430c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d570c181125a1f94108624e6f9b1ce23bdcca25a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447224"
 ---
 # <a name="shell-isolated-or-integrated"></a>シェル (分離または統合)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60116382"
  Visual Studio の統合シェルの再頒布可能パッケージのバージョンでは、プログラミング言語と、それぞれのプロジェクト システムをサポートする機能は含まれません。  
   
 > [!NOTE]
->  Visual Studio シェル統合モードは、Visual Studio Express edition 以外のすべてのエディションと共にインストールできます。  
+> Visual Studio シェル統合モードは、Visual Studio Express edition 以外のすべてのエディションと共にインストールできます。  
   
  詳細については、次を参照してください。 [Visual Studio Shell (Integrated)](../extensibility/visual-studio-shell-integrated.md)します。  
   
@@ -47,12 +47,12 @@ ms.locfileid: "60116382"
  統合または分離シェル アプリケーションを配布するために、アプリケーションを特殊な統合または分離シェル再頒布可能パッケージ、およびインストール プログラムに含める必要があります。 配布とインストールの詳細については、次を参照してください。[分離シェル アプリケーションを配布する](../extensibility/distributing-isolated-shell-applications.md)します。  
   
 > [!IMPORTANT]
->  [使用許諾契約書 (EULA)](https://www.visualstudio.com/support/legal/mt171552)シェルには Visual Studio 統合シェルと分離のデータ収集のセクションが含まれています (**セクション 3。データ**)。  これには、Microsoft によって、アプリケーションを作成するか、統合または分離シェル ソフトウェアのユーザーから収集する顧客の使用状況データについて説明します。 詳細については、次を参照してください。 [Microsoft Visual Studio 製品ファミリ プライバシーに関する声明](https://www.visualstudio.com/dn948229)します。  
+> [使用許諾契約書 (EULA)](https://www.visualstudio.com/support/legal/mt171552)シェルには Visual Studio 統合シェルと分離のデータ収集のセクションが含まれています (**セクション 3。データ**)。  これには、Microsoft によって、アプリケーションを作成するか、統合または分離シェル ソフトウェアのユーザーから収集する顧客の使用状況データについて説明します。 詳細については、次を参照してください。 [Microsoft Visual Studio 製品ファミリ プライバシーに関する声明](https://www.visualstudio.com/dn948229)します。  
 > 
->  アプリケーションを使って、顧客から別の使用状況データを収集する場合は、収集するのアプリケーションのユーザーに適切な通知を提供する必要があります。  Visual Studio Software Development Kit のライセンス、に従って、アプリケーションの一部として分離または統合シェル ソフトウェアを配布するときに、次のいずれかを含める必要があります。  
+> アプリケーションを使って、顧客から別の使用状況データを収集する場合は、収集するのアプリケーションのユーザーに適切な通知を提供する必要があります。  Visual Studio Software Development Kit のライセンス、に従って、アプリケーションの一部として分離または統合シェル ソフトウェアを配布するときに、次のいずれかを含める必要があります。  
 > 
 > - アプリケーション ライセンスの一部として、エンド ユーザー ライセンス契約  
->   - Visual Studio を保護する条項に同意する顧客を必要とする独自の EULA 統合または分離シェルのソフトウェアの Microsoft のエンド ユーザー ライセンス条項と少なくとも同じのシェル  
+> - Visual Studio を保護する条項に同意する顧客を必要とする独自の EULA 統合または分離シェルのソフトウェアの Microsoft のエンド ユーザー ライセンス条項と少なくとも同じのシェル  
   
 ## <a name="additional-resources"></a>その他のリソース  
  再頒布可能パッケージの詳細については、次を参照してください。、 [Visual Studio 機能拡張ダウンロード](http://go.microsoft.com/fwlink/?LinkID=119298)Web サイト。  

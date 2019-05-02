@@ -12,12 +12,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 75438b5a2ffa5917f667ab3fdc3a9bd3528f0e55
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 607eda7550819e4150f026a0671ed744ba9c10a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427043"
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>TextTransform ユーティリティを使用したファイルの生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58978136"
 TextTransform.exe は、テキスト テンプレートを変換するために使用できるコマンド ライン ツールです。 TextTransform.exe を呼び出すときに、引数として、テキスト テンプレート ファイルの名前を指定します。 TextTransform.exe では、テキスト変換エンジンを呼び出し、テキスト テンプレートを処理します。 TextTransform.exe は通常、スクリプトから呼び出されます。 ただし、Visual Studio あるいは、ビルド プロセスの中で、テキスト変換が実行されるため、通常、必須ではありません。  
   
 > [!NOTE]
->  ビルド プロセスの一部としてテキスト変換を実行する場合は、MSBuild のテキスト変換タスクの使用を検討してください。 詳細については、次を参照してください。[ビルド プロセスでのコード生成](../modeling/code-generation-in-a-build-process.md)  コンピューターでの[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]がインストールされているアプリケーションを記述することもできます。 または[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]テキスト テンプレートを変換できる拡張機能。 詳細については、[カスタム ホストを使用してテキスト テンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md)を参照してください。  
+> ビルド プロセスの一部としてテキスト変換を実行する場合は、MSBuild のテキスト変換タスクの使用を検討してください。 詳細については、次を参照してください。[ビルド プロセスでのコード生成](../modeling/code-generation-in-a-build-process.md)  コンピューターでの[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]がインストールされているアプリケーションを記述することもできます。 または[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]テキスト テンプレートを変換できる拡張機能。 詳細については、[カスタム ホストを使用してテキスト テンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md)を参照してください。  
   
  TextTransform.exe は、次のディレクトリにあります。  
   

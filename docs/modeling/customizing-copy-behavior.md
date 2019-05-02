@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414810"
 ---
 # <a name="customizing-copy-behavior"></a>コピー動作のカスタマイズ
 Visual Studio Visualization and Modeling SDK で作成された、ドメイン固有言語 (DSL)、ユーザーは、コピーし、要素を貼り付けますときの動作を変更できます。
@@ -232,7 +232,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  インスタンスによってコピー、貼り付け、作成、およびオブジェクトの削除に関する DSL の動作の多くの側面を制御<xref:Microsoft.VisualStudio.Modeling.ElementOperations>はダイアグラムに結合されています。 DSL の動作を変更するには、独自のクラスから派生することによって<xref:Microsoft.VisualStudio.Modeling.ElementOperations>をオーバーライドして、<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A>図のクラスのプロパティ。
 
 > [!TIP]
->  プログラム コードを使用して、モデルをカスタマイズする方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。
+> プログラム コードを使用して、モデルをカスタマイズする方法の詳細については、次を参照してください。[を移動すると、プログラム コードでのモデルを更新する](../modeling/navigating-and-updating-a-model-in-program-code.md)します。
 
  ![コピー操作のシーケンス図](../modeling/media/dslcopyseqdiagram.png)
 

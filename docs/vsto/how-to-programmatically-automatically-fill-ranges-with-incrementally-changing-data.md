@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4caede15b17478bb9649f09d9341931511b655f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: edb3a1bfaad8d662fb51a8527da6bef183fd05c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428182"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>方法: プログラムによって自動的に増分するデータ範囲を入力します。
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>のメソッド、<xref:Microsoft.Office.Interop.Excel.Range>オブジェクトでは、値を含むワークシートで範囲を自動的に入力することができます。 ほとんどの場合、<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>メソッドは、段階的増加または減少する範囲の値の格納に使用されます。 任意の定数を指定して、動作を指定することができます、<xref:Microsoft.Office.Interop.Excel.XlAutoFillType>列挙体。
@@ -34,7 +34,7 @@ ms.locfileid: "60117890"
 - パラメーターとして渡される範囲を入力する、<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>メソッド。 この変換先の範囲は、初期値を含む範囲を含める必要があります。
 
     > [!NOTE]
-    >  渡すことはできません、<xref:Microsoft.Office.Tools.Excel.NamedRange>制御の代わりに、<xref:Microsoft.Office.Interop.Excel.Range>します。 詳細については、次を参照してください。[ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)します。
+    > 渡すことはできません、<xref:Microsoft.Office.Tools.Excel.NamedRange>制御の代わりに、<xref:Microsoft.Office.Interop.Excel.Range>します。 詳細については、次を参照してください。[ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)します。
 
 ## <a name="example"></a>例
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]

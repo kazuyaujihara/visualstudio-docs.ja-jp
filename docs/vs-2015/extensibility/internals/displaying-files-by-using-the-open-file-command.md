@@ -12,12 +12,12 @@ ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 96953d77e82dfcec79257da47845ece8281ec869
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dd0018df4efb023357e10ab8050f6cf5e9eba1fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438214"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>ファイルを開くコマンドを使用したファイルの表示
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60106099"
     - ファイルが開いていない場合、IDE によって呼び出さ<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>プロジェクトは、ファイルを開くことを確認するには、各プロジェクトのクエリを実行します。  
   
         > [!NOTE]
-        >  プロジェクトの実装で<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>、位置、プロジェクトが開き、ファイル レベルを示す優先順位値を指定します。 優先度の値がで提供される、<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列挙体。  
+        > プロジェクトの実装で<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>、位置、プロジェクトが開き、ファイル レベルを示す優先順位値を指定します。 優先度の値がで提供される、<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列挙体。  
   
 2. 各プロジェクトは、重要度を示す優先順位の応答ファイルを開くプロジェクトの中にかかります。  
   

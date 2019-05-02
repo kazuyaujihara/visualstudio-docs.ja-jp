@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc5ddb4561c2c353271babe590a9e5b2b3c2e510
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a783d19136998bbc9a18daa975c1db87bda19779
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428735"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>通知と Visual Studio の進行状況
 ## <a name="BKMK_NotificationSystems"></a> 通知システム
@@ -417,7 +417,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 - ドキュメント タブ内で
 
 > [!IMPORTANT]
->  グローバルなコンテキストに関するメッセージを提供する、情報バーを配置することになります。 これは、ツールバーと、ドキュメント ウェルの間が表示されます。 これは推奨されません「ジャンプし、ください」の問題が発生するため、IDE の場合を除き、避ける必要があります、どうしても必要かつ適切な。
+> グローバルなコンテキストに関するメッセージを提供する、情報バーを配置することになります。 これは、ツールバーと、ドキュメント ウェルの間が表示されます。 これは推奨されません「ジャンプし、ください」の問題が発生するため、IDE の場合を除き、避ける必要があります、どうしても必要かつ適切な。
 
 #### <a name="placing-an-infobar-in-a-toolwindowpane"></a>ToolWindowPane で、情報バーを配置します。
  ツール ウィンドウに、情報バーを追加する ToolWindowPane.AddInfoBar(IVsInfoBar) メソッドを使用できます。 この API は、(どの InfoBarModel が既定の実装) IVsInfoBar を追加できますか、または、IVsUIElement します。

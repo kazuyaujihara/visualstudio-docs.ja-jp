@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa0fac38c79e4c54cb461ef51e016508d043f202
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e53e05d9df5a7bbdca5fd8a9b74dd9325dc7aae5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426477"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>リモート コンピューターでの Windows ストア アプリの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
  既定では、リモート デバッガーは Windows 認証を使用します。  
   
 > [!WARNING]
->  リモート デバッガーを認証なしモードで実行することも選択できますが、このモードの使用は避けることを強く推奨します。 このモードで実行した場合、ネットワーク セキュリティはまったく提供されません。 認証なしモードは、ネットワークに悪意のあるコードや悪意のあるトラフィックのリスクがないことが確実である場合のみ選択してください。  
+> リモート デバッガーを認証なしモードで実行することも選択できますが、このモードの使用は避けることを強く推奨します。 このモードで実行した場合、ネットワーク セキュリティはまったく提供されません。 認証なしモードは、ネットワークに悪意のあるコードや悪意のあるトラフィックのリスクがないことが確実である場合のみ選択してください。  
   
 ## <a name="BKMK_DirectConnect"></a> リモート デバイスに接続する方法  
  リモート デバイスに直接接続するには、標準イーサネット ケーブルを使用して Visual Studio コンピューターをデバイスに接続します。 デバイスにイーサネット ポートがない場合は、USB イーサネット アダプターを使用してケーブルを接続できます。  
@@ -74,15 +74,15 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
 ## <a name="BKMK_Installing_the_Remote_Tools"></a> リモート ツールのインストール  
   
 > [!NOTE]
->  **バージョンおよび更新プログラム**  
+> **バージョンおよび更新プログラム**  
 >   
->  **Remote Tools for Visual Studio 2015** は、以前のバージョンの Visual Studio ではサポートされていません。  
+> **Remote Tools for Visual Studio 2015** は、以前のバージョンの Visual Studio ではサポートされていません。  
 >   
->  Visual Studio インストールの更新バージョンと一致する Remote Tools for Visual Studio 2015 の更新バージョンをインストールすることをお勧めします。  
+> Visual Studio インストールの更新バージョンと一致する Remote Tools for Visual Studio 2015 の更新バージョンをインストールすることをお勧めします。  
 >   
->  VS デバッガーは、VS 2015 と Remote Tools for VS 2015 のどのバージョンの組み合わせとも互換性があります。 ただし、Visual Studio の最新機能を使用するには、Visual Studio とリモート ツールの両方が最新バージョンである必要があります。  
+> VS デバッガーは、VS 2015 と Remote Tools for VS 2015 のどのバージョンの組み合わせとも互換性があります。 ただし、Visual Studio の最新機能を使用するには、Visual Studio とリモート ツールの両方が最新バージョンである必要があります。  
 >   
->  他の診断ツールでは、リモート ツールと Visual Studio の同じバージョンを必要とする場合があります。  
+> 他の診断ツールでは、リモート ツールと Visual Studio の同じバージョンを必要とする場合があります。  
   
  **リモート デバイスへのリモート デバッグ コンポーネントのインストール**  
   
@@ -101,7 +101,7 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
 ## <a name="BKMK_Starting_the_Remote_Debugger_Monitor"></a> リモート デバッガー モニターの起動  
   
 > [!NOTE]
->  リモート デバッガーで Visual Studio ホストとの通信ができるようにファイアウォールを構成するため、リモート デバッガーを初めて起動する際は、リモート デバイスの管理者である必要があります。  
+> リモート デバッガーで Visual Studio ホストとの通信ができるようにファイアウォールを構成するため、リモート デバッガーを初めて起動する際は、リモート デバイスの管理者である必要があります。  
   
  リモート ツールをインストールしたら、 **スタート** 画面で **[リモート デバッガー]** をクリックします。 リモート デバッガーを初めて起動すると、 **[リモート デバッグの構成]** が表示されます。  
   
@@ -125,7 +125,7 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
    2. リモート デバッグのアクセス許可を持つユーザーを追加または削除するには、 **[アクセス許可]** を選択します。  
   
        > [!NOTE]
-       >  アクセス許可は、リモートでデバッグするすべてのユーザー アカウントに付与する必要があります。  
+       > アクセス許可は、リモートでデバッグするすべてのユーザー アカウントに付与する必要があります。  
   
    リモート デバッガーの詳細オプションを設定するには、 **リモート デバッガー構成ウィザード** を使用します。 ウィザードを開くには、スタート画面の **リモート デバッガー構成ウィザード** を選択します。  
   
@@ -141,7 +141,7 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
  ダイアログ ボックスには、Visual Studio コンピューターのローカル サブネット上にあるデバイスで、リモート デバッガーを実行中のデバイスだけが表示されます。  
   
 > [!TIP]
->  リモート デバイスへの接続に問題がある場合は、デバイスの IP アドレスを入力してください。 デバイスの IP アドレスを確認するには、コマンド ウィンドウを開き、「 **ipconfig**」と入力します。 IP アドレスは **IPv4 Address**として表示されます。  
+> リモート デバイスへの接続に問題がある場合は、デバイスの IP アドレスを入力してください。 デバイスの IP アドレスを確認するには、コマンド ウィンドウを開き、「 **ipconfig**」と入力します。 IP アドレスは **IPv4 Address**として表示されます。  
   
 ### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> C# プロジェクトと Visual Basic プロジェクト用のリモート デバイスの選択  
  ![リモート デバッグ用のプロジェクトのプロパティを管理](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  

@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425373"
 ---
 # <a name="query-datasets"></a>データセットのクエリ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60054782"
  データセット内にテーブルと列の名前は既定では大文字、つまり、"Customers"という名前のデータセット内のテーブルも参照できます"顧客"として。 SQL サーバーの SQL Server を含む、多数のデータベース内の名前付け規則と一致するこの、既定の動作は、大文字と小文字のデータ要素の名前を区別することはできません。  
   
 > [!NOTE]
->  データセットとは異なりスキーマで定義されたデータ要素の名前は大文字小文字を区別するための XML ドキュメントが大文字小文字が区別されます。 たとえば、スキーマのプロトコルは"Customers"、"customers。"と呼ばれる別のテーブルと呼ばれるテーブルを定義するスキーマを使用できます。 これは、結果、大文字と小文字が異なるだけの要素を含むスキーマを使用して、dataset クラスを生成すると、名前が競合。  
+> データセットとは異なりスキーマで定義されたデータ要素の名前は大文字小文字を区別するための XML ドキュメントが大文字小文字が区別されます。 たとえば、スキーマのプロトコルは"Customers"、"customers。"と呼ばれる別のテーブルと呼ばれるテーブルを定義するスキーマを使用できます。 これは、結果、大文字と小文字が異なるだけの要素を含むスキーマを使用して、dataset クラスを生成すると、名前が競合。  
   
  大文字小文字の区別、ただし、データセット内のデータを解釈する方法の要因ができます。 たとえば、データセット テーブル内のデータをフィルター処理する検索条件は、比較では大文字小文字を区別するかどうかによって異なる結果を返す可能性があります。 フィルター処理、検索、およびデータセットの並べ替えの大文字小文字の区別を制御する<xref:System.Data.DataSet.CaseSensitive%2A>プロパティ。 データセット内のすべてのテーブルは、既定では、このプロパティの値を継承します。 (個別のテーブルに対してこのプロパティをオーバーライドするには、テーブルの設定によって<xref:System.Data.DataTable.CaseSensitive%2A>プロパティです)。  
   

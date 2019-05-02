@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b2ce01cf315404fbd37e1936ac445a37c9a3f72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430917"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>方法: 組み込みのフォントおよび色スキームへをアクセスします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウ�
     この GUID は、カテゴリを一意に識別するために使用<strong>します。</strong> このカテゴリには、IDE の既定のフォントおよび色の仕様が再利用されます。  
   
    > [!NOTE]
-   >  フォントおよび色のデータを取得するときに、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>またはその他のインターフェイスでは、Vspackage この GUID を使用して組み込みの情報を参照します。  
+   > フォントおよび色のデータを取得するときに、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>またはその他のインターフェイスでは、Vspackage この GUID を使用して組み込みの情報を参照します。  
   
 2. カテゴリの名前は、IDE に表示するときに、必要に応じてローカライズできるように、VSPackage のリソース (.rc) ファイル内の文字列テーブルに追加する必要があります。  
   

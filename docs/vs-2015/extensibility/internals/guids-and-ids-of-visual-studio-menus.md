@@ -15,12 +15,12 @@ ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cce7d5d8e3bff5a759fa0f63f5bb9524511c9df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d10549867c355018e301afa14cf2ba3a8f113e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436301"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio メニューの GUID および ID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -180,7 +180,7 @@ ms.locfileid: "58978267"
  次の階層には、Visual Studio のメニュー バーのメニューに関連付けられているサブメニューが表示されます。 グループのみがその親としてのメニューを持てないためすべてサブメニューで開く必要があります降下グループから、メニューの代わりに、メニューから直接。 メニューのグループ、およびサブメニューの間のリレーションシップの詳細については、次を参照してください。[サブメニューのメニューに追加](../../extensibility/adding-a-submenu-to-a-menu.md)します。
 
 > [!NOTE]
->  次のように IDE では、グループの名前付け規則から推論できるため、Visual Studio のメニュー バーのメニューの名前が個別にこの階層では表示されません。IDG_VS_*メニュー名*_*グループ名*します。
+> 次のように IDE では、グループの名前付け規則から推論できるため、Visual Studio のメニュー バーのメニューの名前が個別にこの階層では表示されません。IDG_VS_*メニュー名*_*グループ名*します。
 
 |親グループ|サブメニューで開く|子グループ|
 |------------------|-------------|------------------|

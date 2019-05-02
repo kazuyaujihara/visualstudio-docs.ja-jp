@@ -11,23 +11,23 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7effa937a8faa0a238f8be2505ddf47223010bc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7e710cec4536a5a1327580e56c60cb23ca36f4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436372"
 ---
-# <a name="how-to-debug-a-custom-debug-engine"></a>方法: カスタム デバッグ エンジンをデバッグします。
+# <a name="how-to-debug-a-custom-debug-engine"></a>方法: カスタム デバッグ エンジンのデバッグ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 プロジェクトの種類からのデバッグ エンジン (DE) の起動、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>メソッド。 つまりのインスタンスの管理下にある、DE を起動する[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]プロジェクトの種類を制御します。 ただし、そのインスタンスの[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]DE をデバッグすることはできません。 どのような次のようには、カスタム、DE をデバッグすることを許可する手順を示します。  
   
 > [!NOTE]
->  :   「デバッグをカスタム デバッグ エンジン」の手順では、添付する前に開始するを待つ必要があります。 メッセージ ボックス、DE の開始時に表示される、ドイツの先頭近くに配置する場合は、その時点でアタッチし、引き続きメッセージ ボックスをオフにし。 そうすることを検出できますすべて DE イベント。  
+> :   「デバッグをカスタム デバッグ エンジン」の手順では、添付する前に開始するを待つ必要があります。 メッセージ ボックス、DE の開始時に表示される、ドイツの先頭近くに配置する場合は、その時点でアタッチし、引き続きメッセージ ボックスをオフにし。 そうすることを検出できますすべて DE イベント。  
   
 > [!WARNING]
->  次の手順を試行する前にインストールされているリモート デバッグが必要です。 参照してください[リモート デバッグ](../../debugger/remote-debugging.md)詳細についてはします。  
+> 次の手順を試行する前にインストールされているリモート デバッグが必要です。 参照してください[リモート デバッグ](../../debugger/remote-debugging.md)詳細についてはします。  
   
 ### <a name="debugging-a-custom-debug-engine"></a>カスタム デバッグ エンジンのデバッグ  
   

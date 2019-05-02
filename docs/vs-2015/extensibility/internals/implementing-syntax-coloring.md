@@ -12,12 +12,12 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d2b47598e4102eefaa671fd5f362975aae0f4d53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90ff340efb4cbdbe6e2ac43b5b459642120cc099
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447280"
 ---
 # <a name="implementing-syntax-coloring"></a>構文の色分け表示の実装
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60059814"
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 構文の色分けを実装する新しい方法の詳細についてを参照してください。[チュートリアル。テキストの強調表示](../../extensibility/walkthrough-highlighting-text.md)します。  
   
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
   
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>テキストを色分けして表示するエディターで実行する手順  
   

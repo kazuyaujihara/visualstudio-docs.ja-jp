@@ -11,12 +11,12 @@ ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 03420aa0638fcf12fa36fb871b4a14d2695f0377
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d6d7243c8032b22f9abe89021af138f638729011
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437646"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>従来の言語サービスでのかっこの一致
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58976982"
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 かっこの一致を実装する新しい方法の詳細についてを参照してください。[チュートリアル。中かっこの一致を表示する](../../extensibility/walkthrough-displaying-matching-braces.md)します。  
   
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
   
  <xref:Microsoft.VisualStudio.Package.AuthoringSink>クラスは両方のペアをサポートしで 3 倍になり、<xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A>と<xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A>メソッド。  
   

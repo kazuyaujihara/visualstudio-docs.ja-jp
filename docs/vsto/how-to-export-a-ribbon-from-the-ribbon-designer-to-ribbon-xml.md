@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b36c149022849dd6a788bcb5ee8f58cc12ae4417
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 17d6efe4aa18682c6777128113f6fa60347f8950
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419493"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>方法: リボン デザイナーからリボン XML にエクスポートします。
   **リボン (ビジュアル デザイナー)** 項目は、リボンのカスタマイズのすべての型をサポートしていません。 高度な方法でリボンをカスタマイズするには、リボンをデザイナーからリボン XML にエクスポートし、XML を直接編集します。
 
 > [!NOTE]
->  リボン XML ファイルにすべてのプロパティ値が表示されます。 詳細については、次を参照してください。[リボンの概要](../vsto/ribbon-overview.md)します。
+> リボン XML ファイルにすべてのプロパティ値が表示されます。 詳細については、次を参照してください。[リボンの概要](../vsto/ribbon-overview.md)します。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 

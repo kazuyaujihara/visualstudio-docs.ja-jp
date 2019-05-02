@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a331e94ad57fc4ca23dc859415c61609025f799b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c58762c1060475a85de643ed52fffcc9f311bd96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430386"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>チュートリアル: SharePoint の OData を表示する Silverlight web パーツを作成します。
   SharePoint 2010 では、OData を使用してそのリストのデータを公開します。 SharePoint では、OData サービスは、RESTful サービス ListData.svc によって実装されます。 このチュートリアルでは、Silverlight アプリケーションをホストする SharePoint web パーツを作成する方法を示します。 Silverlight アプリケーションでは、ListData.svc を使用して SharePoint のお知らせリストの情報が表示されます。 詳細については、次を参照してください。 [SharePoint Foundation REST インターフェイス](http://go.microsoft.com/fwlink/?LinkId=225999)と[Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000)します。
@@ -35,7 +35,7 @@ ms.locfileid: "60058253"
  最初に、Visual Studio で Silverlight アプリケーションを作成します。 Silverlight アプリケーションは、SharePoint のお知らせリストから、ListData.svc サービスを使用してデータを取得します。
 
 > [!NOTE]
->  Silverlight 4.0 より前に、のバージョンは、SharePoint リストのデータを参照するため、必要なインターフェイスをサポートありません。
+> Silverlight 4.0 より前に、のバージョンは、SharePoint リストのデータを参照するため、必要なインターフェイスをサポートありません。
 
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Silverlight アプリケーションと Silverlight web パーツを作成するには
 
@@ -73,7 +73,7 @@ ms.locfileid: "60058253"
 2. **ソリューション エクスプ ローラー**、ショートカット メニューを開き**参照**を選び、**サービス参照の追加**します。
 
     > [!NOTE]
-    >  選択する必要がある Visual Basic を使用している場合、 **すべてのファイル**の上部にあるアイコン**ソリューション エクスプ ローラー**を表示する、**参照**ノード。
+    > 選択する必要がある Visual Basic を使用している場合、 **すべてのファイル**の上部にあるアイコン**ソリューション エクスプ ローラー**を表示する、**参照**ノード。
 
 3. アドレス ボックスで、**サービス参照の追加** ダイアログ ボックスで、SharePoint サイトの URL を入力します。 **http://MySPSite**、選択し、**移動**ボタン。
 
@@ -228,7 +228,7 @@ ms.locfileid: "60058253"
      Silverlight web パーツは、ここで、SharePoint サイトからお知らせのデータを表示している必要があります。 既定では、ページは、SharePoint のサイト ページのリストに格納されます。
 
     > [!NOTE]
-    >  Silverlight のドメイン間でのデータにアクセスするときに Silverlight web アプリケーションを攻撃に使用できるセキュリティの脆弱性を防止します。 Silverlight でのリモート データにアクセスするときに問題が発生した場合は、次を参照してください。[使用可能なドメインの境界を越えてサービスを行う](http://go.microsoft.com/fwlink/?LinkId=223276)します。
+    > Silverlight のドメイン間でのデータにアクセスするときに Silverlight web アプリケーションを攻撃に使用できるセキュリティの脆弱性を防止します。 Silverlight でのリモート データにアクセスするときに問題が発生した場合は、次を参照してください。[使用可能なドメインの境界を越えてサービスを行う](http://go.microsoft.com/fwlink/?LinkId=223276)します。
 
 ## <a name="see-also"></a>関連項目
 - [For SharePoint の web パーツを作成します。](../sharepoint/creating-web-parts-for-sharepoint.md)

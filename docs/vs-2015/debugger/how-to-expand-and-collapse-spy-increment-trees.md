@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 037d6100c7137784de3896771dd62c766b4505e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f028370c5790b6e22339f39eacaac5e2b552e213
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438278"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>方法: Spy++ ツリーの展開と折りたたみを行う
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "58964194"
 |**折りたたむ**|現在選択されている項目を完全に折りたたみます。|  
   
 > [!TIP]
->  プロセスを展開する場合、プロセスを所有するすべてのスレッドを参照してください。 スレッドを展開する場合、所有するすべてのウィンドウのリストを参照してください。  
+> プロセスを展開する場合、プロセスを所有するすべてのスレッドを参照してください。 スレッドを展開する場合、所有するすべてのウィンドウのリストを参照してください。  
   
 ### <a name="to-expand-or-collapse-spy-trees"></a>展開または spy++ ツリーを折りたたむ  
   
-1.  Windows、プロセスまたはスレッド ビュー内の項目のいずれかを選択します。  
+1. Windows、プロセスまたはスレッド ビュー内の項目のいずれかを選択します。  
   
-2.  **ツリー**  メニューの 展開 のいずれかを選択するか折りたたみコマンド。  
+2. **ツリー**  メニューの 展開 のいずれかを選択するか折りたたみコマンド。  
   
 ## <a name="see-also"></a>関連項目  
  [Spy++ の使用](../debugger/using-spy-increment.md)   

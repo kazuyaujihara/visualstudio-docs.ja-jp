@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52976875be5d3b6544701e1a52e45d436f1cc6c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 1cc82f81475f742a05abb063bfd3b5a51b7fe2b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434624"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 関数
 この関数は、既存のソース管理プロジェクトを開きますか、新しいを作成します。
@@ -95,14 +95,14 @@ SCCRTN SccOpenProject (
  ユーザー名を渡すことが IDE (`lpUser`)、またはポインターで空の文字列に渡すことがありますだけです。 ユーザー名がある場合、ソース管理プラグインとして使用してください、既定値。 ただし、名前が渡されなかった場合、または指定した名前、ログインに失敗した場合は、プラグイン ログインするユーザーにメッセージを表示してで有効な名前を返す`lpUser`有効なログインを受信すると`.`プラグインは、ユーザー名文字列を変更可能性がありますので、、IDE は常にサイズのバッファーを割り当てます (`SCC_USER_LEN`+1 または SCC_USER_SIZE で、null 終端文字のスペースが含まれています)。
 
 > [!NOTE]
->  最初のアクションを実行する必要があります、IDE への呼び出しがあります、`SccOpenProject`関数または[SccGetProjPath](../extensibility/sccgetprojpath-function.md)します。 このため、これらの両方に同一ある`lpUser`パラメーター。
+> 最初のアクションを実行する必要があります、IDE への呼び出しがあります、`SccOpenProject`関数または[SccGetProjPath](../extensibility/sccgetprojpath-function.md)します。 このため、これらの両方に同一ある`lpUser`パラメーター。
 
  `lpAuxProjPath` `lpProjName` 、ソリューション ファイルから読み取られますへの呼び出しから返された、または、`SccGetProjPath`関数。 これらのパラメーターは、ソース管理プラグインをプロジェクトに関連付ける文字列を含むし、プラグインにのみ意味があります。 ソリューション ファイルにこのような文字列がないと、ユーザーが参照するように要求されていない場合 (は、文字列を返しますが、`SccGetProjPath`関数)、IDE は、両方の空の文字列を渡す`lpAuxProjPath`と`lpProjName`とでこれらの値を更新する必要がありますプラグインのときにこの関数を返します。
 
  `lpTextOutProc` ソース管理プラグイン コマンドの結果の出力を表示できるようにするための IDE によって提供されるコールバック関数へのポインターです。 このコールバック関数がで詳しく説明されている[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)します。
 
 > [!NOTE]
->  設定する必要がありますが、ソース管理プラグインでは、この利用しようとして場合、`SCC_CAP_TEXTOUT`フラグ、 [SccInitialize](../extensibility/sccinitialize-function.md)します。 フラグが設定されていない場合、または IDE では、この機能をサポートしていない場合`lpTextOutProc`なります`NULL`します。
+> 設定する必要がありますが、ソース管理プラグインでは、この利用しようとして場合、`SCC_CAP_TEXTOUT`フラグ、 [SccInitialize](../extensibility/sccinitialize-function.md)します。 フラグが設定されていない場合、または IDE では、この機能をサポートしていない場合`lpTextOutProc`なります`NULL`します。
 
  `dwFlags`パラメーターは、開いているプロジェクトが現在存在していないことに、結果を制御します。 2 つのビットフラグから成る`SCC_OP_CREATEIFNEW`と`SCC_OP_SILENTOPEN`します。 関数は、既に開いているプロジェクトが存在する場合は、単にプロジェクトが開きますを返します`SCC_OK`します。 プロジェクトが存在しない場合、`SCC_OP_CREATEIFNEW`フラグがオンで、ソース管理プラグインは、ソース管理システムで、プロジェクトを作成、それを開いて、および返す`SCC_OK`します。 場合と、プロジェクトが存在しない場合、`SCC_OP_CREATEIFNEW`フラグがオフ、プラグインする必要がありますし、確認、`SCC_OP_SILENTOPEN`フラグ。 フラグがオンがない場合、プラグイン求めることができます、プロジェクト名のユーザー。 フラグがであるかどうか、プラグインを返すだけ`SCC_E_UNKNOWNPROJECT`です。
 
@@ -112,7 +112,7 @@ SCCRTN SccOpenProject (
  ソース管理プラグインのセットがある場合、`SCC_CAP_REENTRANT`ビット`SccInitialize`、上のセッションの順序は、並列で何度も繰り返し可能性があります使用し、します。 異なる`pvContext`構造体で、異なるセッションを追跡する`pvContext`は一度に 1 つ開いているプロジェクトに関連付けられています。 に基づいて、`pvContext`パラメーター、プラグインを調べるどのプロジェクトが、特定の呼び出しで参照されています。 場合は、機能のビット`SCC_CAP_REENTRANT`が設定されていない nonreentrant ソース管理プラグインは、複数のプロジェクトを操作する機能に制限されます。
 
 > [!NOTE]
->  `SCC_CAP_REENTRANT`ビットは、ソース管理プラグイン API のバージョン 1.1 で導入されました。 設定されていないか、バージョン 1.0 では無視され、すべてのバージョン 1.0 ソース管理プラグインは nonreentrant と見なされます。
+> `SCC_CAP_REENTRANT`ビットは、ソース管理プラグイン API のバージョン 1.1 で導入されました。 設定されていないか、バージョン 1.0 では無視され、すべてのバージョン 1.0 ソース管理プラグインは nonreentrant と見なされます。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

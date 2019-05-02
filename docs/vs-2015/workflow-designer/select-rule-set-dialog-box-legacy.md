@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3b619421c2d1eb9d8c2a4853c7a6ce5c3fbb7ea7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6b3c2a7e23aba13cbe843c33510a81b66ba2b815
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445416"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>[ルール セットの選択] ダイアログ ボックス (レガシ)
 このトピックで説明する方法を使用して、**ルール セットの選択** ダイアログ ボックスで、従来の[!INCLUDE[wfd1](../includes/wfd1-md.md)]します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。  
@@ -39,7 +39,7 @@ ms.locfileid: "58977677"
  作成し、ルール セットを編集する方法の詳細については、次を参照してください。[ルール セット エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)します。  
   
 > [!WARNING]
->  [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする場合に使用される、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]のルール エディターは、複数バージョン対応機能をサポートしていません。  
+> [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする場合に使用される、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]のルール エディターは、複数バージョン対応機能をサポートしていません。  
   
  条件の詳細については、次を参照してください。[ワークフロー内の条件を使用して](http://go.microsoft.com/fwlink?LinkID=65009)します。  
   

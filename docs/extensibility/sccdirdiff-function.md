@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbd637fa78e9290402990bdbbc237e0f431e14d7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2a0638b0e644242e471ff30bc58d550675089695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434674"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 関数
 この関数は、クライアントのディスク上の現在のローカル ディレクトリとソース管理下にある対応するプロジェクトの違いを表示します。
@@ -49,7 +49,7 @@ SCCRTN SccDirDiff(
 
  dwFlags
 
-[in]コマンドのフラグ (「解説」を参照してください セクション)。
+[in]コマンドのフラグ (「解説」を参照してください] セクション)。
 
  pvOptions
 
@@ -83,7 +83,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|プラグインでサポートされている、サイレント モードで、タイムスタンプを使用してディレクトリを比較します。 または、サポートされていない場合はフォールバック SCC_DIFF_QD_CHECKSUM または SCC_DIFF_QD_CONTENTS 場合。|
 
 > [!NOTE]
->  この関数と同じコマンド フラグを使用して、 [SccDiff](../extensibility/sccdiff-function.md)します。 ただし、ソース管理プラグインは、ディレクトリの"クイック diff"操作をサポートしないように選択可能性があります。
+> この関数と同じコマンド フラグを使用して、 [SccDiff](../extensibility/sccdiff-function.md)します。 ただし、ソース管理プラグインは、ディレクトリの"クイック diff"操作をサポートしないように選択可能性があります。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

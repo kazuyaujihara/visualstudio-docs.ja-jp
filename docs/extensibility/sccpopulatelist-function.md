@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a28c4aef9284148379d65f3f8bef1b035f8580c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 583731e311f6e6257bfb43c9f21ac2db143145eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434586"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 関数
 この関数は、特定のソース制御コマンドのファイルの一覧を更新し、指定されたすべてのファイルをソース管理の状態を提供します。
@@ -87,7 +87,7 @@ SCCRTN SccPopulateList (
  呼び出す、プラグインは引き続き、`pfnPopulate`関数を追加して、ファイルを削除しますが終了してから戻りますまで、`SccPopulateList`関数。 IDE では、その一覧を表示できます。 `lpStatus`配列は、IDE によって渡される元のリストのすべてのファイルを表します。 プラグインの塗りつぶしにこれらのファイルさらにすべての状態では、コールバック関数の使用します。
 
 > [!NOTE]
->  ソース管理プラグインは、常に、オプションは、リストのまま、この関数からすぐに返すことだけを持ちます。 プラグインは、この関数を実装する場合を示している可能性これを設定して、`SCC_CAP_POPULATELIST`最初の呼び出しで機能フラグ、 [SccInitialize](../extensibility/sccinitialize-function.md)します。 既定では、プラグイン、常に想定してくださいに渡されるすべての項目にファイルがあります。 ただし、IDE が設定されている場合、`SCC_PL_DIR`フラグ、`fOptions`ディレクトリと見なされるパラメーターに渡されるすべての項目が。 プラグインがディレクトリに追加の属しているすべてのファイル。 ファイルとディレクトリの組み合わせの IDE に適合ことはありません。
+> ソース管理プラグインは、常に、オプションは、リストのまま、この関数からすぐに返すことだけを持ちます。 プラグインは、この関数を実装する場合を示している可能性これを設定して、`SCC_CAP_POPULATELIST`最初の呼び出しで機能フラグ、 [SccInitialize](../extensibility/sccinitialize-function.md)します。 既定では、プラグイン、常に想定してくださいに渡されるすべての項目にファイルがあります。 ただし、IDE が設定されている場合、`SCC_PL_DIR`フラグ、`fOptions`ディレクトリと見なされるパラメーターに渡されるすべての項目が。 プラグインがディレクトリに追加の属しているすべてのファイル。 ファイルとディレクトリの組み合わせの IDE に適合ことはありません。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

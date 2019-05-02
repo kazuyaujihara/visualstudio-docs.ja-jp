@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34114c12ef47fb796de7354aa3133af1fc704267
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408553"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>方法: 特定のリスト インスタンスに対するイベント レシーバーを作成します。
   リスト インスタンスのイベント レシーバーは、リスト定義の任意のインスタンスで発生するイベントに応答します。 イベント レシーバーのテンプレートでは、特定のリスト インスタンスのターゲットを有効にはない、特定のリスト インスタンス内のイベントに応答するリスト定義のスコープをイベント レシーバーを変更できます。
@@ -43,7 +43,7 @@ ms.locfileid: "60094347"
 6. **イベント レシーバーの種類が必要ですか?** 一覧で、選択**リスト項目イベント**します。
 
     > [!NOTE]
-    >  たとえば、リスト定義をスコープとなるイベント レシーバーの他の種類を選択することも**リスト電子メール イベント**または**リスト ワークフロー イベント**します。
+    > たとえば、リスト定義をスコープとなるイベント レシーバーの他の種類を選択することも**リスト電子メール イベント**または**リスト ワークフロー イベント**します。
 
 7. **どの項目がイベント ソースにする必要がありますか?** 一覧で、選択**お知らせ**します。
 

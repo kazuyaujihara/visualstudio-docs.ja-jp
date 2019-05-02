@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439176"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>デバッガーでの例外の管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,10 +54,10 @@ ms.locfileid: "60040965"
 - [ [Just My Code](../debugger/just-my-code.md)] を設定済みで、デバッガーが、ユーザー コードで処理されない例外に対して実行を中断するように設定されている場合。  
   
 > [!NOTE]
->  ASP.NET は、エラー ページをブラウザーに表示する最上位の例外ハンドラーを持っています。 **マイ コードのみ** が有効ではない場合、実行は中断されません。 例については、以下の「 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 」をご覧ください。  
+> ASP.NET は、エラー ページをブラウザーに表示する最上位の例外ハンドラーを持っています。 **マイ コードのみ** が有効ではない場合、実行は中断されません。 例については、以下の「 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 」をご覧ください。  
   
 > [!NOTE]
->  Visual Basic アプリケーションのデバッガーでは、すべてのエラーが例外として管理されます。On Error 形式のエラー ハンドラーを使用している場合でもそうです。  
+> Visual Basic アプリケーションのデバッガーでは、すべてのエラーが例外として管理されます。On Error 形式のエラー ハンドラーを使用している場合でもそうです。  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>[例外設定] ウィンドウで例外を管理する  
  **[例外設定]** ウィンドウを使用すれば、デバッガーに実行を中断させる例外 (または例外のセット)、およびデバッガーに実行を中断させるポイントを指定することができます。 例外を追加または削除したり、実行を中断する例外を指定したりすることができます。 ソリューションが開いているときに、このウィンドウを開くには、 **[デバッグ] / [Windows] / [例外設定]** の順にクリックします。  
@@ -162,7 +162,7 @@ ms.locfileid: "60040965"
  GPU メモリ アクセス例外、JavaScript ランタイム例外、または Win32 例外というカテゴリに例外を追加する場合は、エラー コードと説明を含める必要があります。  
   
 > [!TIP]
->  スペルを確認してください。 **[例外設定]** ウィンドウでは、追加された例外の存在について確認が行われません。 したがって、「 **Sytem.UriTemplateMatchException**」と入力した場合は、その例外のエントリ ( **System.UriTemplateMatchException**のエントリではなく) が表示されます。  
+> スペルを確認してください。 **[例外設定]** ウィンドウでは、追加された例外の存在について確認が行われません。 したがって、「 **Sytem.UriTemplateMatchException**」と入力した場合は、その例外のエントリ ( **System.UriTemplateMatchException**のエントリではなく) が表示されます。  
   
  例外の設定はソリューションの .suo ファイルに保持され、特定のソリューションに適用されます。 複数のソリューションの間で、特定の例外設定を再利用することはできません。 この時点では、追加された例外だけが保存されます。削除された例外は保持されません。 すなわち、例外を追加してから、ソリューションをいったん閉じて、再度開いた場合、その例外は表示されたままです。 しかし、例外を削除してから、ソリューションをいったん閉じて、再度開いた場合、例外は再表示されます。  
   

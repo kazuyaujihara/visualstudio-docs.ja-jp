@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3d58b61683c2b25da3e988d307effc28d61dc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2de018cc757adba814c8705fb0f2e02e96f1c59c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420782"
 ---
 # <a name="register-an-expression-evaluator"></a>式エバリュエーターを登録します。
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
 
  式エバリュエーター (EE) は、Windows COM 環境と Visual Studio の両方でクラス ファクトリとして自体を登録する必要があります。 デバッグ エンジン (DE) のアドレス空間またはエンティティが、EE をインスタンス化によって、Visual Studio のアドレス空間のいずれかに挿入がそのように、EE が DLL として設定されます。
 
@@ -101,7 +101,7 @@ namespace EEMC
  EE DLL に実装する、 `DllRegisterServer` COM 環境として Visual Studio に登録する関数。
 
 > [!NOTE]
->  MyCEE コード サンプル レジストリ コードを検索するには、ファイルに*dllentry.cpp*、EnVSDK\MyCPkgs\MyCEE VSIP インストール内に配置されています。
+> MyCEE コード サンプル レジストリ コードを検索するには、ファイルに*dllentry.cpp*、EnVSDK\MyCPkgs\MyCEE VSIP インストール内に配置されています。
 
 ### <a name="dll-server-process"></a>サーバー プロセスの DLL
  EE、DLL サーバーを登録する: 場合
@@ -118,7 +118,7 @@ namespace EEMC
     |`metricEngine`|`GUID`この EE と連携するデバッグ エンジン (DE)|
 
     > [!NOTE]
-    >  `metricLanguage``GUID`によって名、言語を識別しますが、`guidLang`への引数`SetEEMetric`する言語を選択します。 適切な書き込む必要がありますが、コンパイラは、デバッグ情報ファイルを生成するとき`guidLang`DE が使用するには、どの EE を認識できるようにします。 デは、この言語のシンボル プロバイダーを要求する通常`GUID`、デバッグ情報ファイルに格納されています。
+    > `metricLanguage``GUID`によって名、言語を識別しますが、`guidLang`への引数`SetEEMetric`する言語を選択します。 適切な書き込む必要がありますが、コンパイラは、デバッグ情報ファイルを生成するとき`guidLang`DE が使用するには、どの EE を認識できるようにします。 デは、この言語のシンボル プロバイダーを要求する通常`GUID`、デバッグ情報ファイルに格納されています。
 
 3. Hkey_local_machine \software\microsoft\visualstudio の下にキーを作成して Visual Studio を使用した登録\\*X.Y*ここで、 *X.Y*を登録する Visual Studio のバージョンです。
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4b5fd1be29a5c22bcae371faaf7be8c6b70c4e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c30289034c50cc6d754f54ccec3fafcd0f964d15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437407"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則によって変更内容がモデル内に反映される
 1 つの要素から Visualization and Modeling SDK (VMSDK) の間の変更を伝達するストア ルールを作成することができます。 ストア内の任意の要素を変更する場合は、ルールは、通常、最も外側のトランザクションがコミットされたときに実行される予定です。 要素の追加や削除などのイベントのさまざまな種類のルールの種類があります。 ルールは、特定の種類の要素、図形、またはダイアグラムをアタッチできます。 多くの組み込み機能がルールによって定義されます。 など、規則では、モデルが変更されたときに、ダイアグラムが更新されることを確認します。 独自のルールを追加することで、ドメイン固有言語をカスタマイズできます。
@@ -68,7 +68,7 @@ namespace ExampleNamespace
 ```
 
 > [!NOTE]
->  ルールのコードは、ストア内の要素のみの状態を変更する必要があります。つまり、ルールでは、モデル要素、リレーションシップ、図形、コネクタ、図、またはそれらのプロパティのみを変更する必要があります。 ストアの外部リソースへの変更を反映する場合は、イベントの格納を定義します。 詳細については、次を参照してください[イベント ハンドラー反映されるまで変更 Outside the モデル。](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+> ルールのコードは、ストア内の要素のみの状態を変更する必要があります。つまり、ルールでは、モデル要素、リレーションシップ、図形、コネクタ、図、またはそれらのプロパティのみを変更する必要があります。 ストアの外部リソースへの変更を反映する場合は、イベントの格納を定義します。 詳細については、次を参照してください[イベント ハンドラー反映されるまで変更 Outside the モデル。](../modeling/event-handlers-propagate-changes-outside-the-model.md)
 
 ### <a name="to-define-a-rule"></a>規則を定義するには
 

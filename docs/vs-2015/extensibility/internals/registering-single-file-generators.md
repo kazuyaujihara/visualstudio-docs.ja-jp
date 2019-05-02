@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ced598c2a670cd79d7daeeac90f6807baf7d1dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436607"
 ---
 # <a name="registering-single-file-generators"></a>単一ファイル ジェネレーターの登録
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60055419"
   
     - (既定)  
   
-         任意。 カスタム ツールのわかりやすい説明を提供します。 このパラメーターは省略可、ただし推奨されるは。  
+         省略可能です。 カスタム ツールのわかりやすい説明を提供します。 このパラメーターは省略可、ただし推奨されるは。  
   
     - CLSID  
   
@@ -53,7 +53,7 @@ ms.locfileid: "60055419"
          必須。 このカスタムのツールによって生成されたファイルからの種類をビジュアル デザイナーを使用できる構成されるかどうかを示します。 このパラメーターの値は、ビジュアル デザイナーを使用できない種類の 0 (ゼロ) やビジュアル デザイナーを使用可能な型の (1 つ) の 1 にする必要があります。  
   
     > [!NOTE]
-    >  使用するカスタム ツールの対象となる言語ごとに個別にカスタム ツールを登録する必要があります。  
+    > 使用するカスタム ツールの対象となる言語ごとに個別にカスタム ツールを登録する必要があります。  
   
      たとえば、MSDataSetGenerator 自身を登録 1 回の各言語。  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d069f48e39327cf73f741eb2b2ff02688fa4c3d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8401a41c479dea70289cd0ebf072fc3b57eff78d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434510"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF アプリケーションでルックアップ テーブルを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60095920"
     - オブジェクト。 詳細については、「[方法 :データ オブジェクトに接続する](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)します。  
   
     > [!NOTE]
-    >  ルックアップ テーブルを作成するには、2 つの関連するテーブルまたはオブジェクトがプロジェクトのデータ ソースとして存在する必要があります。  
+    > ルックアップ テーブルを作成するには、2 つの関連するテーブルまたはオブジェクトがプロジェクトのデータ ソースとして存在する必要があります。  
   
 2. 開く、**WPF デザイナー**、デザイナーには内の項目の有効なドロップ先であるコンテナーが含まれているかどうかを確認して、**データソース**ウィンドウ。  
   
@@ -58,7 +58,7 @@ ms.locfileid: "60095920"
 4. 内のノードを展開し、**データソース**ウィンドウで、親テーブルまたはオブジェクトと関連する子テーブルまたはオブジェクトが見つかるまで。  
   
     > [!NOTE]
-    >  関連する子テーブルまたはオブジェクトは、親テーブルまたはオブジェクトで拡張可能な子ノードとして表示されるノードです。  
+    > 関連する子テーブルまたはオブジェクトは、親テーブルまたはオブジェクトで拡張可能な子ノードとして表示されるノードです。  
   
 5. 子ノードは、ドロップダウン メニューをクリックし、**詳細**します。  
   
@@ -73,12 +73,12 @@ ms.locfileid: "60095920"
     - **ListView**  
   
         > [!NOTE]
-        >  場合、 **ListBox**または**ListView**コントロールは表示されません一覧で、一覧にこれらのコントロールを追加することができます。 詳しくは、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。  
+        > 場合、 **ListBox**または**ListView**コントロールは表示されません一覧で、一覧にこれらのコントロールを追加することができます。 詳しくは、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。  
   
     - 派生した任意のカスタム コントロール<xref:System.Windows.Controls.Primitives.Selector>します。  
   
         > [!NOTE]
-        >  内の項目のカスタム コントロールをコントロールのリストを追加する方法についての情報を選択できます、**データソース**ウィンドウを参照してください[データ ソース ウィンドウにカスタム コントロールを追加](../data-tools/add-custom-controls-to-the-data-sources-window.md)します。  
+        > 内の項目のカスタム コントロールをコントロールのリストを追加する方法についての情報を選択できます、**データソース**ウィンドウを参照してください[データ ソース ウィンドウにカスタム コントロールを追加](../data-tools/add-custom-controls-to-the-data-sources-window.md)します。  
   
 8. 子ノードをドラッグして、**データソース**ウィンドウから WPF デザイナーでのコンテナーにします。 (前の例では、子ノードは、**注文**ノードです)。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426602"
 ---
 # <a name="in-source-suppression-overview"></a>ソース内抑制の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60057161"
  ソース内抑制のメタデータを誤って発送を防ぐために、リリース ビルドのソース内抑制を使用する必要がありますできません。 ソース内抑制の処理コスト、ために、ソース内抑制のメタデータを含めることによって、アプリケーションのパフォーマンスを低下する可能性もします。  
   
 > [!NOTE]
->  コードがない渡すためにこれらの属性自分でします。 詳細については、「[方法 :メニュー項目を使用して警告を抑制する](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)します。 メニュー項目は、C++ コードのご利用いただけません。  
+> コードがない渡すためにこれらの属性自分でします。 詳細については、「[方法 :メニュー項目を使用して警告を抑制する](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)します。 メニュー項目は、C++ コードのご利用いただけません。  
   
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 属性  
  コード分析警告を右クリックすると、**エラー一覧**順にクリックします**メッセージの抑制**、 **SuppressMessage**属性が、コード内、またはに追加しますプロジェクトのグローバル抑制ファイルです。  
@@ -109,7 +109,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
   
 > [!NOTE]
->  名前空間スコープで警告を抑制すると、名前空間自体に対して警告を抑制します。 名前空間内の型に対する警告は抑制されません。  
+> 名前空間スコープで警告を抑制すると、名前空間自体に対して警告を抑制します。 名前空間内の型に対する警告は抑制されません。  
   
  任意の抑制は、明示的なスコープを指定することによって表現できます。 このような抑制は、グローバル レベルでライブする必要があります。 メンバー レベルの抑制は、型を修飾して指定できません。  
   
@@ -118,7 +118,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
   
 > [!NOTE]
->  常に、ターゲットには、項目の完全修飾名が含まれています。  
+> 常に、ターゲットには、項目の完全修飾名が含まれています。  
   
 ## <a name="global-suppression-file"></a>グローバル抑制ファイル  
  グローバル抑制はグローバル レベルの抑制またはターゲットが指定されていない抑制の抑制が保持されます。 たとえば、アセンブリ レベルの違反の抑制は、このファイルに格納されます。 さらに、いくつかの ASP.NET の抑制は、プロジェクト レベルの設定は、フォームのコードを利用できないために、このファイルに格納されます。 グローバル抑制は作成され、選択した初めてのプロジェクトに追加、**プロジェクト抑制ファイル内**のオプション、**メッセージの抑制**エラー一覧 ウィンドウでコマンド。 詳細については、「[方法 :メニュー項目を使用して警告を抑制する](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)します。  

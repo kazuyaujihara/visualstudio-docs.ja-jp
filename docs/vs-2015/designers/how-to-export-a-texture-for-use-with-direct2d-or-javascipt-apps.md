@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29ee765bfc11362a870d359ff0a9cdc3f633e464
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 44d877f7ff6774e8e52428f4a44acab99816c480
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434423"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>方法: Direct2D または Javascipt アプリで使用するためのテクスチャをエクスポートする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "60080801"
 3. 出力形式を、いずれかのブロック圧縮形式に設定します。 **[構成プロパティ]** で、**[イメージ コンテンツ パイプライン]**、**[全般]** ページの順にクリックし、**[圧縮]** を **[BC3_UNORM compression (/compress:BC3_UNORM)]** (BC3_UNORM 圧縮 (/compress:BC3_UNORM)) に設定します。 要件に応じて、他の BC1、BC2、または BC3 形式を選択することもできます。 Direct2D では現在、BC4、BC5、BC6、または BC7 テクスチャはサポートされていません。 各種の BC 形式の詳細については、「[ブロック圧縮 (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx)」を参照してください。  
   
    > [!NOTE]
-   >  指定した圧縮形式により、イメージ コンテンツ パイプラインによって生成されるファイルの形式が決まります。 これは、イメージ エディターからソース イメージの **[形式]** で指定する形式とは異なります。[形式] で指定するのは、ソース イメージ ファイルがディスクに格納されるときのファイル形式 (*作業形式*) です。 通常、圧縮された作業形式は必要ありません。  
+   > 指定した圧縮形式により、イメージ コンテンツ パイプラインによって生成されるファイルの形式が決まります。 これは、イメージ エディターからソース イメージの **[形式]** で指定する形式とは異なります。[形式] で指定するのは、ソース イメージ ファイルがディスクに格納されるときのファイル形式 (*作業形式*) です。 通常、圧縮された作業形式は必要ありません。  
   
 4. 前乗算されたアルファを使用して出力を生成するようにイメージ コンテンツ パイプラインを構成します。 **[構成プロパティ]** で、**[イメージ コンテンツ パイプライン]**、**[全般]** の順にクリックし、**[Convert to pre-multiplied alpha format]** (前乗算されたアルファ形式に変換) プロパティを **[はい (/generatepremultipliedalpha)]** に設定します。  
   

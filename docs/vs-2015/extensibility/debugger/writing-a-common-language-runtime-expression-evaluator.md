@@ -12,18 +12,18 @@ ms.assetid: bd79d57f-8e0a-4e14-a417-0b1de28fa1b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2db9290f35c2b12469ecf96633967c2979b370e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 961a4d646a61fedda381f9451902b3bcdcc956d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435275"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>共通言語ランタイム式エバリュエーターの書き込み
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
   
  式エバリュエーター (EE) は、構文を処理するデバッグ エンジン (DE) の一部と、デバッグ中のコードを生成したプログラミング言語のセマンティクスです。 プログラミング言語のコンテキスト内で式を評価する必要があります。 たとえば、一部の言語で式の"A + B"、"A の合計と B の" 他の言語で同じ式は「A または b.」可能性があります。 そのため、個別の EE 書き込む必要がある各プログラミング言語、Visual Studio IDE でデバッグ対象のオブジェクト コードを生成します。  
   

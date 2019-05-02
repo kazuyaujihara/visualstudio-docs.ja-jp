@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 506e39537614b50b72a515d882e5592c316cce26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d51474f2e242f764a84edaa9f2712418c859460
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408706"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>どのような&#39;s、Visual Studio 2015 SDK の新機能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,9 +63,9 @@ Visual Studio 2017 以降、カスタム プロジェクトと項目テンプレ
  VS SDK の項目テンプレートは、NuGet の参照を使用し、ビルド ツールが既定で NuGet の特典を利用します。
 
 > [!NOTE]
->  VS SDK がインストールされている参照アセンブリをプロジェクトで使用する続行することができます (下にある\<Visual Studio のインストール場所 > \ VSSDK\VisualStudioIntegration\Common\Assemblies)、既存の機能拡張プロジェクトがある必要はありませんアップグレードすると、NuGet パッケージを使用します。  プロジェクト**参照]、[参照の追加**VS SDK がインストールされている参照アセンブリを使用するダイアログが続行されます。
+> VS SDK がインストールされている参照アセンブリをプロジェクトで使用する続行することができます (下にある\<Visual Studio のインストール場所 > \ VSSDK\VisualStudioIntegration\Common\Assemblies)、既存の機能拡張プロジェクトがある必要はありませんアップグレードすると、NuGet パッケージを使用します。  プロジェクト**参照]、[参照の追加**VS SDK がインストールされている参照アセンブリを使用するダイアログが続行されます。
 >
->  NuGet を使用して、参照してください、既存のプロジェクトを変更したい場合[方法。VSPackages を Visual Studio 2015 に移行](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)NuGet パッケージへの拡張機能プロジェクトを更新する方法のセクションがあります。
+> NuGet を使用して、参照してください、既存のプロジェクトを変更したい場合[方法。VSPackages を Visual Studio 2015 に移行](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)NuGet パッケージへの拡張機能プロジェクトを更新する方法のセクションがあります。
 
 ## <a name="light-bulbs"></a>電球
  拡張機能コードの記述の最も魅力的な新しい方法の 1 つは、Roslyn プロジェクトによって提供されます。 詳細については、次を参照してください。 [Roslyn](https://github.com/dotnet/Roslyn)します。

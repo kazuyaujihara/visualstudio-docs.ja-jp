@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 11c26b9a3aa25688958e784d88d0b494ef893909
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e05bd9173b83ec3303a058dcf61ea48a7ef7675c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438572"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>チュートリアル: リボン XML を使用してカスタム タブを作成します。
   このチュートリアルを使用してカスタム リボン タブを作成する方法について説明、**リボン (XML)** 項目。
@@ -36,7 +36,7 @@ ms.locfileid: "60085234"
 - Microsoft Office Word を自動化するボタンを使用して、**アドイン**タブ。
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。

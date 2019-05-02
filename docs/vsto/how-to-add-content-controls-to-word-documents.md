@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9efc655997a48e070ee60a1d66dc57be31362403
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c7746137cf10e0146ff68eeb2cec9005b72a670
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427615"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>方法: コンテンツの追加を Word 文書にコントロール
   ドキュメント レベルの Word プロジェクト デザイン時または実行時に、プロジェクト内の文書にコンテンツ コントロールを追加できます。 Word の VSTO アドイン プロジェクトでは、実行時に開いている文書にコンテンツ コントロールを追加できます。
@@ -78,10 +78,10 @@ ms.locfileid: "60080412"
     - **[ツールボックス]** からコンテンツ コントロールを文書にドラッグします。 コンテンツ コントロールが、マウス ポインターの場所ではなく、ドキュメント内の現在の選択の場所で追加されます。
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Word.GroupContentControl> [ツールボックス] **を使用して**を追加することはできません。 のみを追加することができます、 <xref:Microsoft.Office.Tools.Word.GroupContentControl> Word で、または実行時にします。
+> <xref:Microsoft.Office.Tools.Word.GroupContentControl> [ツールボックス] **を使用して**を追加することはできません。 のみを追加することができます、 <xref:Microsoft.Office.Tools.Word.GroupContentControl> Word で、または実行時にします。
 
 > [!NOTE]
->  Visual Studio では、チェック ボックス コンテンツ コントロールがツールボックスで提供されていません。 文書にチェック ボックス コンテンツ コントロールを追加するには、プログラムを使用して <xref:Microsoft.Office.Tools.Word.ContentControl> オブジェクトを作成する必要があります。 詳細については、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
+> Visual Studio では、チェック ボックス コンテンツ コントロールがツールボックスで提供されていません。 文書にチェック ボックス コンテンツ コントロールを追加するには、プログラムを使用して <xref:Microsoft.Office.Tools.Word.ContentControl> オブジェクトを作成する必要があります。 詳細については、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
 
 #### <a name="to-add-a-content-control-to-a-document-in-word"></a>Word で文書にコンテンツ コントロールを追加するには
 
@@ -90,7 +90,7 @@ ms.locfileid: "60080412"
 2. リボンの **[開発]** タブをクリックします。
 
     > [!NOTE]
-    >  **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
+    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
 
 3. **[コントロール]** グループで、追加するコンテンツ コントロールのアイコンをクリックします。
 
@@ -106,7 +106,7 @@ ms.locfileid: "60080412"
   動的に作成されたコンテンツ コントロールは、文書を閉じる際に文書に残りません。 ただし、ネイティブなコンテンツ コントロールは、文書内に残ります。 文書を次回開くときに、ネイティブのコンテンツ コントロールに基づくコンテンツ コントロールを再作成できます。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
 
 > [!NOTE]
->  Word 2010 プロジェクトで文書にチェック ボックス コンテンツ コントロールを追加するには、 <xref:Microsoft.Office.Tools.Word.ContentControl> オブジェクトを作成する必要があります。 詳細については、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
+> Word 2010 プロジェクトで文書にチェック ボックス コンテンツ コントロールを追加するには、 <xref:Microsoft.Office.Tools.Word.ContentControl> オブジェクトを作成する必要があります。 詳細については、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>現在の選択項目でコンテンツ コントロールを追加するには
 
@@ -149,7 +149,7 @@ ms.locfileid: "60080412"
   VSTO アドイン プロジェクトでホスト項目の生成の詳細については、次を参照してください。[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)します。
 
 > [!NOTE]
->  文書にチェック ボックス コンテンツ コントロールを追加するには、 <xref:Microsoft.Office.Tools.Word.ContentControl> オブジェクトを作成する必要があります。 詳細については、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
+> 文書にチェック ボックス コンテンツ コントロールを追加するには、 <xref:Microsoft.Office.Tools.Word.ContentControl> オブジェクトを作成する必要があります。 詳細については、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>現在の選択項目でコンテンツ コントロールを追加するには
 

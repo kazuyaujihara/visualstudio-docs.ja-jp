@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22096541df20d2eb6ba5bd00c2fc531e9988d5e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0db5cba76f464e559f46963afd0be6b663ad6d6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407869"
 ---
 # <a name="how-to-use-the-variable-designer"></a>方法: 変数デザイナーを使用する
 変数デザイナーは、データ バインディングや条件ステートメントで使用する変数を作成するために使用します。 デザイナーにアクセスする をクリックして、**変数**デザイン キャンバスの左下隅のボタンをクリックします。 デザイナーには、表形式で表示され、以外の各列見出しで並べ替えることができますを変数の一覧が含まれています、**既定**列。 それぞれの変数には、名前、変数の型、スコープ、および既定値 (存在する場合) があります。 名前および既定値は編集可能なテキスト フィールドで、型およびスコープはドロップダウン リストです。 スコープは、変数デザイナーの呼び出し時に選択されたアクティビティです。 選択したスコープ内に変数を作成できない場合は、対応するスコープに変数を作成できる直近の先祖アクティビティが既定のスコープとなります。 [!INCLUDE[crabout](../includes/crabout-md.md)] 変数を参照してください[変数と引数](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)します。  
@@ -34,7 +34,7 @@ ms.locfileid: "60104292"
 4. というラベルの付いた空の行をクリックします。**変数の作成**です。 これには、次の既定値を使用して新しい変数新しい行を追加するが: の variablex、**名前**x は一意の変数名を作成する自動的にインクリメントされる 1 の初期値を持つ整数**文字列**の**変数の型**、および**シーケンス**の**スコープ**します。 値は追加されません**既定**します。 これらの値は、ワークフローのデザイン プロセス中にいつでも変更できます。  
   
     > [!NOTE]
-    >  変数を削除するをクリックして、変数を選択し、キーを押します、**削除**キー。  
+    > 変数を削除するをクリックして、変数を選択し、キーを押します、**削除**キー。  
   
 ## <a name="see-also"></a>関連項目  
  [ワークフロー デザイナーの使用](../workflow-designer/using-the-workflow-designer.md)   

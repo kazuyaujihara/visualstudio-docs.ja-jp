@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bca76d104550a8607de82c9092f57d43c027e63c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ec5d5d742b5a0749d1d5d52cee0a0545dd8570f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436214"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>方法: ClickOnce の発行バージョンを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60104480"
  `Publish Version`でプロパティを設定することができます、**発行**のページ、**プロジェクト デザイナー**します。  
   
 > [!NOTE]
->  自動的にインクリメントするプロジェクトのオプションがある、`Publish Version`プロパティごとにアプリケーションを発行する。 このオプションは既定で有効にします。 詳細については、「[方法 :ClickOnce の発行バージョンを自動的にインクリメントする](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)」を参照してください。  
+> 自動的にインクリメントするプロジェクトのオプションがある、`Publish Version`プロパティごとにアプリケーションを発行する。 このオプションは既定で有効にします。 詳細については、「[方法 :ClickOnce の発行バージョンを自動的にインクリメントする](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)」を参照してください。  
   
 ### <a name="to-change-the-publish-version"></a>発行バージョンを変更するには  
   
@@ -43,7 +43,7 @@ ms.locfileid: "60104480"
 3. **発行バージョン**フィールドに、インクリメント、**メジャー**、**マイナー**、**ビルド**、または**リビジョン**バージョン数値。  
   
     > [!NOTE]
-    >  バージョン番号がデクリメントしないでください。そうする予期しない更新プログラムの動作と原因でした。  
+    > バージョン番号がデクリメントしないでください。そうする予期しない更新プログラムの動作と原因でした。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce の更新方法を選択します。](../deployment/choosing-a-clickonce-update-strategy.md)   

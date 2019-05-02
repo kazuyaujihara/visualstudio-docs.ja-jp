@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f466473bcc811a688f06e6cf4cdd8b4fc8e80648
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: e6fdbdcdf292d90fc63758c2b7d183225e63a850
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411314"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>共通言語ランタイムよぶ式の評価
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
 
  コンパイラでは、Visual Basic および c# ("C シャープ"と発音)、共通言語ランタイム (CLR) を対象とする Microsoft 中間言語 (MSIL)、後でを生成するなど、ネイティブ コードにコンパイルします。 CLR では、デバッグ エンジンの結果として得られるコードをデバッグするには、(DE) を提供します。 Visual Studio IDE に、独自のプログラミング言語を統合する場合は、MSIL にコンパイルすることができ、そのため、独自の DE を記述する必要はありません。 ただし、使用するプログラミング言語のコンテキスト内で式を評価できる式エバリュエーター (EE) を記述する必要があります。
 

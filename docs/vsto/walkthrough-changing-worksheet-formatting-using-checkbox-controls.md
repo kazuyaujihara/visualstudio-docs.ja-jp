@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aba73d5fc6c1609a3347178765ba516840b5176e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438613"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>チュートリアル: CheckBox コントロールを使用してワークシートの書式設定を変更します。
   このチュートリアルでは、Microsoft Office Excel ワークシートの書式を変更するチェック ボックスの使用の基本を説明します。 Visual Studio での Office 開発ツールを使用して作成し、プロジェクトにコードを追加するは。 完成したサンプルとして結果を参照してくださいにある Excel コントロールのサンプルを参照してください。 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)します。
@@ -35,7 +35,7 @@ ms.locfileid: "60061690"
 - プロジェクトをテストします。
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
@@ -94,7 +94,7 @@ ms.locfileid: "60061690"
      次に、ドラッグするが、<xref:Microsoft.Office.Tools.Excel.NamedRange>ワークシートにコントロール。
 
     > [!NOTE]
-    >  追加することも、 <xref:Microsoft.Office.Tools.Excel.NamedRange> 」と入力してコントロール**ボックス**に、**名前**ボックス。
+    > 追加することも、 <xref:Microsoft.Office.Tools.Excel.NamedRange> 」と入力してコントロール**ボックス**に、**名前**ボックス。
 
 #### <a name="to-add-text-to-a-namedrange-control"></a>NamedRange コントロールにテキストを追加するには
 

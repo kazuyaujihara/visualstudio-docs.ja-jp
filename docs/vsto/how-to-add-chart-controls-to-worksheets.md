@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e3d51f35be039c5eafe15956b2d403c11005b68
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fccd328c521789c8ebb4b32c49b2a03a46027eb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427760"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>方法: ワークシートに Chart コントロールを追加します。
   追加することができます<xref:Microsoft.Office.Tools.Excel.Chart>およびドキュメント レベルのカスタマイズで実行時のデザイン時に、Microsoft Office Excel ワークシートにコントロール。 追加することも<xref:Microsoft.Office.Tools.Excel.Chart>VSTO アドインにおける実行時にコントロール。
@@ -39,7 +39,7 @@ ms.locfileid: "60056316"
  アプリケーションの中からグラフを追加するのと同じ方法で、ワークシートに <xref:Microsoft.Office.Tools.Excel.Chart> コントロールを追加できます。
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.Chart>コントロールはから使用できません、**ツールボックス**または**データソース**ウィンドウ。
+> <xref:Microsoft.Office.Tools.Excel.Chart>コントロールはから使用できません、**ツールボックス**または**データソース**ウィンドウ。
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Excel のワークシートに Chart ホスト コントロールを追加するには
 

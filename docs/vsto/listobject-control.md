@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1df66fcc2e7844bb05ff9a09e8fc71b6fb59ea9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 323286555bf1ed932b85ed6da84a344787fae265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438784"
 ---
 # <a name="listobject-control"></a>ListObject コントロール
   <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールは、イベントを公開するリストであり、データにバインドすることができます。 ワークシートにリストを追加すると、ユーザーが Microsoft Office Excel オブジェクト モデルを走査する必要なく、直接、プログラムできる <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールが Visual Studio により作成されます。
@@ -34,13 +34,13 @@ ms.locfileid: "60073633"
  ドキュメント レベルのプロジェクトでは、デザイン時または実行時に、ワークシートに <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールを追加できます。 VSTO アドイン プロジェクトに追加することができます<xref:Microsoft.Office.Tools.Excel.ListObject>実行時にのみのワークシートにコントロール。 詳細については、「[方法 :ワークシートに ListObject コントロールを追加](../vsto/how-to-add-listobject-controls-to-worksheets.md)します。
 
 > [!NOTE]
->  既定では、動的に作成されたリスト オブジェクトは、ワークシートを閉じる際に、ホスト コントロールとしてワークシートに残りません。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
+> 既定では、動的に作成されたリスト オブジェクトは、ワークシートを閉じる際に、ホスト コントロールとしてワークシートに残りません。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
 
 ## <a name="bind-data-to-the-control"></a>データをコントロールにバインドします。
  <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールでは、単純または複雑なデータ バインディングがサポートされます。 <xref:Microsoft.Office.Tools.Excel.ListObject>コントロールを使用して、データ ソースにバインドすることができます、<xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A>と<xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A>デザイン時プロパティまたは<xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A>メソッド実行時にします。
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.ListObject> は、データが変更されるとイベントを発生させる <xref:System.Data.DataTable>などのデータ ソースにバインドされると自動的に更新されます。 データが変更されたときにイベントを発生させないデータ ソースに <xref:Microsoft.Office.Tools.Excel.ListObject> をバインドする場合、 <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> を更新するには <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> または <xref:Microsoft.Office.Tools.Excel.ListObject>メソッドを呼び出す必要があります。
+> <xref:Microsoft.Office.Tools.Excel.ListObject> は、データが変更されるとイベントを発生させる <xref:System.Data.DataTable>などのデータ ソースにバインドされると自動的に更新されます。 データが変更されたときにイベントを発生させないデータ ソースに <xref:Microsoft.Office.Tools.Excel.ListObject> をバインドする場合、 <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> を更新するには <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> または <xref:Microsoft.Office.Tools.Excel.ListObject>メソッドを呼び出す必要があります。
 
  繰り返されるスキーマ要素をワークシート セルにマップして <xref:Microsoft.Office.Tools.Excel.ListObject> をそのセルに追加する場合、Visual Studio は <xref:Microsoft.Office.Tools.Excel.ListObject> を生成されたデータセットに自動的にマップします。 ただし、 <xref:Microsoft.Office.Tools.Excel.ListObject> はデータに自動的にバインドされません。 バインドに手順を実行することができます、<xref:Microsoft.Office.Tools.Excel.ListObject>データセットのデザイン時またはドキュメント レベル プロジェクト内で実行時にします。 プログラムでバインドすることができます、 <xref:Microsoft.Office.Tools.Excel.ListObject> VSTO アドインにおける実行時、データセットにします。
 
@@ -49,7 +49,7 @@ ms.locfileid: "60073633"
  <xref:Microsoft.Office.Tools.Excel.ListObject> をデータ ソースにバインドすれば、 <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールにすぐにデータを設定することができます。 データにバインドされた <xref:Microsoft.Office.Tools.Excel.ListObject>のデータを編集すると、データ ソースでも自動的に変更されます。 <xref:Microsoft.Office.Tools.Excel.ListObject> にデータを設定し、ユーザーがデータ ソースを変更せずに <xref:Microsoft.Office.Tools.Excel.ListObject> のデータを変更できるようにする場合、 <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> メソッドを使用してデータ ソースから <xref:Microsoft.Office.Tools.Excel.ListObject> をデタッチすることができます。 詳細については、「[方法 :データに ListObject コントロールを塗りつぶす](../vsto/how-to-fill-listobject-controls-with-data.md)します。
 
 > [!NOTE]
->  重複する <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールでは、データ バインディングはサポートされません。
+> 重複する <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールでは、データ バインディングはサポートされません。
 
 ### <a name="improve-performance-in-listobject-controls"></a>ListObject コントロールでのパフォーマンスを向上させる
  まずコントロールをバインドしてから <xref:Microsoft.Office.Tools.Excel.ListObject> を呼び出してデータセットにデータを設定する場合、データにバインドされた <xref:System.Data.DataSet.ReadXml%2A> コントロールに XML ファイルから読み込むときに時間がかかる傾向があります。 パフォーマンスを向上させるには、コントロールをバインドする前に <xref:System.Data.DataSet.ReadXml%2A> を呼び出します。

@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3f79e492440f98f733488afb241fa6f86e220b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444235"
 ---
 # <a name="watch-and-quickwatch-windows"></a>ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,7 +162,7 @@ var1 = var2
  特定のオブジェクトの動作を観察しなければならないことがあります。その一例は、ローカル変数がスコープ外になった後、その変数が参照するオブジェクトを追跡する必要がある場合です。 C# と Visual Basic では、参照型の特定のインスタンスのオブジェクト ID を作成し、それらの ID をウォッチ ウィンドウやブレークポイントの条件で使用できます。 オブジェクト ID は、共通言語ランタイム (CLR) のデバッグ サービスで生成されて、オブジェクトに関連付けられます。  
   
 > [!NOTE]
->  オブジェクト ID による参照は弱参照であり、これによって、オブジェクトがガベージ コレクションの対象から外れることはありません。 オブジェクト ID は、現在のデバッグ セッションでのみ有効です。  
+> オブジェクト ID による参照は弱参照であり、これによって、オブジェクトがガベージ コレクションの対象から外れることはありません。 オブジェクト ID は、現在のデバッグ セッションでのみ有効です。  
   
  次のコードでは、あるメソッドがローカル変数を使用して `Person` を作成しますが、別のメソッドでの `Person`の名前を調べる必要があります。  
   
@@ -215,7 +215,7 @@ public class Program
 6. デバッグを続行します。 `DoSomething()` メソッドで実行が停止すると、 **ウォッチ** ウィンドウに `Person` オブジェクトが表示されます。  
   
 > [!NOTE]
->  オブジェクトのプロパティ (上記の例では `Person.Name` など) を確認する必要がある場合、プロパティの評価を有効にしておく必要があります。  
+> オブジェクトのプロパティ (上記の例では `Person.Name` など) を確認する必要がある場合、プロパティの評価を有効にしておく必要があります。  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>ウォッチ ウィンドウでのレジスタの使用 (C++ のみ)  
  ネイティブ コードをデバッグする場合は、レジスタ名だけでなく、変数の名前を使用してを追加することができます **$\<レジスタ名 >** または **@\<レジスタ名 >**.  詳細については、「 [Pseudovariables](../debugger/pseudovariables.md)」を参照してください。  

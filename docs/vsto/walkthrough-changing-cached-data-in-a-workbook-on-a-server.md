@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cb1793407b7baa3d290d43b0c0ef5a815cb8c40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 386fee1c5c7da4eb06618d0afc522648b5248c6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438640"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>チュートリアル: サーバー上のブックにキャッシュされたデータを変更します。
   このチュートリアルを使用して起動することがなく、Microsoft Office Excel ブックにキャッシュされているデータセットを変更する方法について説明、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>クラス。
@@ -43,7 +43,7 @@ ms.locfileid: "60116967"
   このチュートリアルでは、開発用コンピューターに、コードを実行していることを前提としていますが、Excel がインストールされていないサーバーでこのチュートリアルで示されるコードを使用できます。
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
@@ -269,7 +269,7 @@ ms.locfileid: "60116967"
    - A<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>ブック内のデータ キャッシュへのアクセスに使用するオブジェクト。
 
      > [!NOTE]
-     >  次のコードを持つブックを使用していることを想定しています、 *.xlsx*ファイル拡張子。 プロジェクトのブックに別のファイル拡張子がある場合は、必要に応じて、パスを変更します。
+     > 次のコードを持つブックを使用していることを想定しています、 *.xlsx*ファイル拡張子。 プロジェクトのブックに別のファイル拡張子がある場合は、必要に応じて、パスを変更します。
 
      [!code-csharp[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#6)]
      [!code-vb[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#6)]

@@ -12,12 +12,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a5d5065ca427f0319174aa59e6b87d356816d4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432431"
 ---
 # <a name="sccget-function"></a>SccGet 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL`フラグと組み合わせることができます、`SCC_GET_RECURSIVE`フラグを指定したディレクトリ内のすべてのファイルとすべてのサブディレクトリも取得します。  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE` せずに渡す必要がありますは決して`SCC_GET_ALL`します。 また、ディレクトリ C:\A および C:\A\B が再帰的に渡された両方の取得が場合 C:\A\B とすべてのサブディレクトリは実際に取得すること 2 回に注意してください。 IDE の必要があります: プラグインのソースではなくを制御し、配列から重複ように格納されているかどうかを確認します。  
+> `SCC_GET_RECURSIVE` せずに渡す必要がありますは決して`SCC_GET_ALL`します。 また、ディレクトリ C:\A および C:\A\B が再帰的に渡された両方の取得が場合 C:\A\B とすべてのサブディレクトリは実際に取得すること 2 回に注意してください。 IDE の必要があります: プラグインのソースではなくを制御し、配列から重複ように格納されているかどうかを確認します。  
   
  最後に、場合でも、ソース管理プラグインが指定された、`SCC_CAP_GET_NOUI`の初期化、Get コマンドのユーザー インターフェイスがないことは、この関数は、ファイルを取得する IDE によって呼び出される可能性もことを示すフラグ。 フラグは、単に、IDE で get-item メニューが表示されない、任意の UI を提供する予定のプラグインではないことを意味します。  
   

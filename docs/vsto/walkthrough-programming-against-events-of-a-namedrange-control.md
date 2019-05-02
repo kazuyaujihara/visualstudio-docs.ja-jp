@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dee6c5dadb1634f384fd04d67cb0701b2e972799
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446920"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>チュートリアル: NamedRange コントロールのイベントのプログラム
   このチュートリアルは、追加する方法を示します、 <xref:Microsoft.Office.Tools.Excel.NamedRange> Microsoft Office Excel ワークシートと Visual Studio での Office 開発ツールを使用して、そのイベントに対してプログラミングを制御します。
@@ -37,7 +37,7 @@ ms.locfileid: "60049933"
 - プロジェクトをテストします。
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
@@ -119,7 +119,7 @@ ms.locfileid: "60049933"
      [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
 
     > [!NOTE]
-    >  編集モードでは、Excel の範囲内のセルをダブルクリックすると入力したため、<xref:Microsoft.Office.Tools.Excel.NamedRange.Change>イベント テキストに変更が発生していない場合でも、選択範囲が範囲外で移動するときに発生します。
+    > 編集モードでは、Excel の範囲内のセルをダブルクリックすると入力したため、<xref:Microsoft.Office.Tools.Excel.NamedRange.Change>イベント テキストに変更が発生していない場合でも、選択範囲が範囲外で移動するときに発生します。
 
 ## <a name="add-code-to-respond-to-the-selectionchange-event"></a>SelectionChange イベントに応答するコードを追加します。
 
@@ -131,7 +131,7 @@ ms.locfileid: "60049933"
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
 
     > [!NOTE]
-    >  Excel の範囲内のセルをダブルクリックすると、範囲に移動が発生するため、<xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>イベントが発生する前に、<xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>イベントが発生します。
+    > Excel の範囲内のセルをダブルクリックすると、範囲に移動が発生するため、<xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>イベントが発生する前に、<xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>イベントが発生します。
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
  イベントを表すテキストを確認するブックをテストして、<xref:Microsoft.Office.Tools.Excel.NamedRange>イベントが発生したときに、コントロールが別の名前付き範囲に挿入されます。

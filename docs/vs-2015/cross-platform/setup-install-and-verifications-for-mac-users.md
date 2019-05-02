@@ -6,12 +6,12 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 54297754fcc85484a90e25686b0fd14aa7841946
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 543401b0e3fcebee22c1c9581f22ec96a76000af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433886"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Mac ユーザー向けのセットアップ、インストール、および 検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "60116005"
      ![Visual Studio のオプションで Xamarin の更新プログラムを確認します](../cross-platform/media/cross-plat-xamarin-setup-3.png "クロスプラットフォームの Xamarin セットアップ 3")  
   
     > [!NOTE]
-    >  以前の Xamarin でのライセンス問題を回避するために、Xamarin をバージョン 4.0.3.214 以上に更新してください。  更新プログラムを確認しようとして Microsoft ビルド ツールに関するエラーが表示された場合は、[Xamarin のフォーラム](http://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015)のスレッドをご覧ください。
+    > 以前の Xamarin でのライセンス問題を回避するために、Xamarin をバージョン 4.0.3.214 以上に更新してください。  更新プログラムを確認しようとして Microsoft ビルド ツールに関するエラーが表示された場合は、[Xamarin のフォーラム](http://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015)のスレッドをご覧ください。
   
 6. Windows と Mac のコンピューターの両方に Xamarin をインストールしたら、「[XMA を使用した Mac への接続](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA)」(xamarin.com) の手順に従って、Windows コンピューター上の Visual Studio から iOS と Mac を扱えるようにします。  
   

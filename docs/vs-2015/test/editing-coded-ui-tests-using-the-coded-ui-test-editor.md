@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21acd0970415db23da330ece46131cde72cd706a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416504"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>コード化された UI テスト エディターを使用したコード化された UI テストの編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "60118007"
  ソリューション エクスプローラーで、 **[UIMap.uitest]** のショートカット メニューを開き、 **[開く]** をクリックします。 コード化された UI テスト エディターに、コード化された UI テストが表示されます。 これで、コード化された UI テストの記録されたメソッド、操作、および対応するコントロールを表示および編集できるようになります。  
   
 > [!TIP]
->  **[UI 操作]** ウィンドウでメソッド内にある UI 操作を選択すると、対応するコントロールが強調表示されます。 UI 操作またはコントロール プロパティも変更できます。  
+> **[UI 操作]** ウィンドウでメソッド内にある UI 操作を選択すると、対応するコントロールが強調表示されます。 UI 操作またはコントロール プロパティも変更できます。  
   
  コード化された UI テスト エディターが*表示されません* 。  
  Visual Studio Enterprise の 2012 よりも前のバージョンを使用している可能性があります。 コード化された UI テスト エディターは、MSDN サブスクリプションを備えた Visual Studio 2010 Feature Pack 2 でも使用できます。 [!INCLUDE[crdefault](../includes/crdefault-md.md)]「[Microsoft Visual Studio 2010 Feature Pack 2](http://go.microsoft.com/fwlink/?LinkID=204119)」を参照してください。  
@@ -75,7 +75,7 @@ UI 操作のプロパティの編集
   
  UI 操作のプロパティを **[UI 操作]** ウィンドウで変更する場合は、プロパティを編集する対象の UI 操作を含むテスト メソッドを展開し、UI 操作を選択してから [プロパティ] ウィンドウを使用してプロパティを変更します。  
   
- たとえば、サーバーが使用できないときに **Web ページ ‘<http://Contoso1/default.aspx’> に移動**というメッセージを表示する UI 操作が Web ブラウザーに関連付けられている場合は、URL を `‘http://Contoso2/default.aspx’` に変更できます。  
+ たとえば、サーバーが使用できないときに **Web ページ ‘<http://Contoso1/default.aspx’> に移動**というメッセージを表示する UI 操作が Web ブラウザーに関連付けられている場合は、URL を `‘ http://Contoso2/default.aspx’` に変更できます。  
   
  ![コントロールのプロパティ](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 コントロールのプロパティの編集  

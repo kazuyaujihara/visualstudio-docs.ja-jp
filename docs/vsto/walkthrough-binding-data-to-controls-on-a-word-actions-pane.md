@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7069da816d8f693fc38856d1218f5f9f6284dd4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeba1539cf68d53f4b9f931d2bcd18a159028fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438693"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>チュートリアル: Word の操作ウィンドウ上のコントロールにデータをバインドします。
   このチュートリアルでは、Word の操作ウィンドウ上のコントロールへのデータ バインディングを示します。 このコントロールは、SQL Server データベースのテーブル間のマスター/詳細の関係を示します。
@@ -38,7 +38,7 @@ ms.locfileid: "60063609"
 - アプリケーションを開いたときに、[操作] ウィンドウを表示します。
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
@@ -78,7 +78,7 @@ ms.locfileid: "60063609"
 1. 場合、**データソース**ウィンドウが表示されない、メニュー バーで 表示することによって、**ビュー** > **その他の Windows**  >  **データ ソース**します。
 
    > [!NOTE]
-   >  場合**データ ソースの**使用できない場合、Word 文書をクリックし、もう一度確認します。
+   > 場合**データ ソースの**使用できない場合、Word 文書をクリックし、もう一度確認します。
 
 2. クリックして**新しいデータ ソースの追加**を開始する、**データ ソース構成ウィザード**します。
 
@@ -111,7 +111,7 @@ ms.locfileid: "60063609"
 4. 選択`SuppliersBindingNavigator`で、**コンポーネント**トレイとキーを押して**削除**します。 使用しない、`SuppliersBindingNavigator`このチュートリアルでします。
 
     > [!NOTE]
-    >  削除、`SuppliersBindingNavigator`すべての生成されたコードは削除されません。 このコードを削除することができます。
+    > 削除、`SuppliersBindingNavigator`すべての生成されたコードは削除されません。 このコードを削除することができます。
 
 5. ラベルと変更されるように、コンボ ボックスを移動、**サイズ**プロパティを**171, 21**します。
 

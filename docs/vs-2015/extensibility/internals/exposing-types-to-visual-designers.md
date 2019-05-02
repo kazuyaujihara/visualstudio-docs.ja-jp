@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a50b298dfafe093e404c6575b16a074d106522ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2db026367e43c1092cf9744817449ce51556a4a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436313"
 ---
 # <a name="exposing-types-to-visual-designers"></a>ビジュアル デザイナーへのタイプの公開
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60103434"
  プロジェクト システムは、これらの変更は、カスタム ツールを実行した結果を提供する、カスタム ツールの出力ファイルに変更を追跡する完全なサポートを提供します。 カスタム ツールを実行するたびに新しい一時 PE が生成され、デザイナーに適切な通知が送信されます。  
   
 > [!NOTE]
->  一時的なプログラムの実行可能ファイルの生成ファイルがバック グラウンドであるため、コンパイルが失敗した場合、ユーザーにエラーが報告されません。  
+> 一時的なプログラムの実行可能ファイルの生成ファイルがバック グラウンドであるため、コンパイルが失敗した場合、ユーザーにエラーが報告されません。  
   
  一時 PE サポートを活用するカスタム ツールは、次の規則に従う必要があります。  
   

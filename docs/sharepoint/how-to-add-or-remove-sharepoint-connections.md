@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70594f8c881289bd394f33353f237bdab71c91f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3c094ad703727903e7109d6a748b8383e4cad7d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435482"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>方法: 追加または SharePoint 接続の削除
   サーバー エクスプ ローラーを使用して、データ接続と同様に SharePoint サイトを参照できます。 ただし、SharePoint サイトの内容を参照する前にする必要があります追加、 **SharePoint 接続**ノード。
@@ -41,7 +41,7 @@ ms.locfileid: "60077369"
 3. サイトを選択し、メニュー バーで、次のように選択します。**編集** > **削除**します。
 
     > [!NOTE]
-    >  この手順は、基になるサイトを削除しません。接続のみを削除します**サーバー エクスプ ローラー**します。
+    > この手順は、基になるサイトを削除しません。接続のみを削除します**サーバー エクスプ ローラー**します。
 
 ## <a name="see-also"></a>関連項目
 - [サーバー エクスプ ローラーを使用した SharePoint 接続を参照します。](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

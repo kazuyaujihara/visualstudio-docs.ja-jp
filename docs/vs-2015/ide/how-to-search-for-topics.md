@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04867207ee8510a99ec19dc3f32175abedb39bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 13a26ec22060985705f6a1b54cf691c50ae07f1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435205"
 ---
 # <a name="how-to-search-for-topics"></a>方法: トピックを検索する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60054639"
 2. 検索に適用する論理演算子または高度な検索演算子がある場合は、検索クエリで指定します。 利用可能なすべてのヘルプを検索するには、演算子は使用しません。  
   
     > [!NOTE]
-    >  **[ビューアー オプション]** ダイアログ ボックスで、一度に表示する検索結果の最大数や、プライマリ ロケールが英語でない場合に英語のコンテンツを含めるかどうかなど、追加の設定を指定することができます。  
+    > **[ビューアー オプション]** ダイアログ ボックスで、一度に表示する検索結果の最大数や、プライマリ ロケールが英語でない場合に英語のコンテンツを含めるかどうかなど、追加の設定を指定することができます。  
   
 3. Enter キーを押します。  
   

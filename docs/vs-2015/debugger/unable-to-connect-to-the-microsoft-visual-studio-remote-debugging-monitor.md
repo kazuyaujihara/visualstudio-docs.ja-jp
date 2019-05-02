@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f03936b9404339e3ad46e30ef92286da360323bb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: db946e2dfac035a8e0ddb5581c37e36b0406fb24
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437790"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio リモート デバッグ モニターに接続できません。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60085767"
 このエラー メッセージは、無効な Visual Studio リモート デバッグ モニターの名前を **[プロセスにアタッチ]** ダイアログ ボックスに入力すると表示されます。 リモート デバッグ モニターの名前は、通常、リモート デバッグを実行するために接続するコンピューターの名前と同じです。 このメッセージは、リモート コンピューターがネットワーク上に存在しない、リモート コンピューター上でリモート デバッグ モニターが適切に設定されていない、またはネットワークの問題またはファイアウォールが存在するためにリモート コンピューターにアクセスできない場合に発生することがあります。  
   
 > [!IMPORTANT]
->  製品のバグによりこのメッセージが表示されていると思われる場合は、Visual Studio の [[気に入った機能の報告]](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)でこの問題を報告してください。 その他の支援が必要な場合は、Microsoft へのお問い合わせ方法について、「 [Talk to Us](../ide/talk-to-us.md) 」を参照してください。  
+> 製品のバグによりこのメッセージが表示されていると思われる場合は、Visual Studio の [[気に入った機能の報告]](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)でこの問題を報告してください。 その他の支援が必要な場合は、Microsoft へのお問い合わせ方法について、「 [Talk to Us](../ide/talk-to-us.md) 」を参照してください。  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>ローカルでのデバッグ中にこのメッセージが表示される  
  ローカルでのデバッグ中にこのメッセージが表示される場合、ウイルス対策ソフトウェアまたはサード パーティ製のファイアウォールに原因がある可能性があります。 Visual Studio は 32 ビット アプリケーションであるため、リモート デバッガーの 64 ビット バージョンを使用して 64 ビット アプリケーションをデバッグします。 2 つのプロセスは、ローカル コンピューター内のローカル ネットワークを使用して通信します。 コンピューターからネットワーク トラフィックが送信されることはありませんが、サード パーティのセキュリティ ソフトウェアが通信を妨げる可能性があります。  

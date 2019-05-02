@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d871d469fc71beaa5c3e3323aad08eda3f546729
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434477"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>方法: Visual Studio ソリューションの一環いない実行可能ファイルのデバッグします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60068705"
 5. などの実行コマンドを選択して、実行可能ファイルを開始します。**開始**、から、**デバッグ**メニュー。  
   
     > [!NOTE]
-    >  EXE プロジェクトをサポートしていないプログラミング言語もあります。 この機能を使用する必要がある場合は、[!INCLUDE[vcprvc](../includes/vcprvc-md.md)] をインストールしてください。  
+    > EXE プロジェクトをサポートしていないプログラミング言語もあります。 この機能を使用する必要がある場合は、[!INCLUDE[vcprvc](../includes/vcprvc-md.md)] をインストールしてください。  
   
      ソース コードなしで実行可能ファイルをデバッグする場合は、実行中の実行可能ファイルにアタッチするか、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションに実行可能ファイルを追加するかにかかわらず、利用できるデバッグ機能が限られます。 実行可能ファイルが、互換性のある形式のデバッグ情報を持たずにビルドされていた場合、利用できる機能はさらに限られます。 ソース コードがある場合は、そのソース コードを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] にインポートして、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で実行可能ファイルのデバッグ ビルドを作成するのが最適です。  
   

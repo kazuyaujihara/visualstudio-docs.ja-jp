@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7153c02f5cd3d494edb56b218512ba5de87f318a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438421"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>方法: 基本フォン シェーダーを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60113756"
    次の図は、完成したシェーダー グラフと、ティーポット モデルに適用されるシェーダーのプレビューを示しています。  
   
 > [!NOTE]
->  この図では、シェーダーの効果を分かりやすくするために、シェーダーの **MaterialDiffuse** パラメーターを使用してオレンジ色が指定されています。また、**MaterialSpecular** パラメーターと **MaterialSpecularPower** パラメーターを使用して、金属のような仕上がりが指定されています。 マテリアル パラメーターについては、「[シェーダー デザイナー](../designers/shader-designer.md)」の「シェーダーのプレビュー」を参照してください。  
+> この図では、シェーダーの効果を分かりやすくするために、シェーダーの **MaterialDiffuse** パラメーターを使用してオレンジ色が指定されています。また、**MaterialSpecular** パラメーターと **MaterialSpecularPower** パラメーターを使用して、金属のような仕上がりが指定されています。 マテリアル パラメーターについては、「[シェーダー デザイナー](../designers/shader-designer.md)」の「シェーダーのプレビュー」を参照してください。  
   
  ![シェーダー グラフとその効果のプレビュー](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")  
   
@@ -62,9 +62,9 @@ ms.locfileid: "60113756"
  次の図は、このドキュメントで述べた、3-D モデルに適用されるシェーダーを示しています。 **MaterialSpecular** プロパティは (1.00、0.50、0.20、0.00) に設定され、その **MaterialSpecularPower** プロパティは 16 に設定されています。  
   
 > [!NOTE]
->  **MaterialSpecular** プロパティは、表面の質感の外見上の仕上がりを決定します。 ガラスやプラスチックなどの高光沢サーフェイスの場合、反射色は明るい色合い (白) になる傾向があります。 金属のようなサーフェイスの反射色は、その拡散色に近くなる傾向があります。 サテン仕上がりのサーフェイスの反射色は、暗い色合い (灰色) になる傾向があります。  
+> **MaterialSpecular** プロパティは、表面の質感の外見上の仕上がりを決定します。 ガラスやプラスチックなどの高光沢サーフェイスの場合、反射色は明るい色合い (白) になる傾向があります。 金属のようなサーフェイスの反射色は、その拡散色に近くなる傾向があります。 サテン仕上がりのサーフェイスの反射色は、暗い色合い (灰色) になる傾向があります。  
 >   
->  **MaterialSpecularPower** プロパティは、反射ハイライトの輝度を決定します。 反射輝度が高い場合は、よりくすんだ、より局部的なハイライトがシミュレートされます。 反射輝度が非常に低い場合は、広範囲に及ぶ強いハイライトがシミュレートされ、サーフェイス全体の色が過飽和状態になり隠されます。  
+> **MaterialSpecularPower** プロパティは、反射ハイライトの輝度を決定します。 反射輝度が高い場合は、よりくすんだ、より局部的なハイライトがシミュレートされます。 反射輝度が非常に低い場合は、広範囲に及ぶ強いハイライトがシミュレートされ、サーフェイス全体の色が過飽和状態になり隠されます。  
   
  ![モデルに適用されたフォン ライティング](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")  
   

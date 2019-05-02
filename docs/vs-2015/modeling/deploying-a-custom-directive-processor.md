@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a440fbd87e85a72b2807ea09c7af61adf9f8af7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c485209f47e2d119fe469a59fe379f7cabe03813
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422592"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>カスタム ディレクティブ プロセッサの配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,7 +148,7 @@ ms.locfileid: "60108361"
 ```  
   
 > [!NOTE]
->  この属性は、ディレクティブ プロセッサ クラスではなくパッケージ クラスに配置してください。  
+> この属性は、ディレクティブ プロセッサ クラスではなくパッケージ クラスに配置してください。  
   
  .pkgdef ファイルは、プロジェクトをビルドしたときに生成されます。 VSPackage をインストールすると、.pkgdef ファイルにディレクティブ プロセッサが登録されます。  
   
@@ -160,7 +160,7 @@ ms.locfileid: "60108361"
  これは、カスタム ディレクティブ プロセッサをインストールする方法としては、最も優先順位の低い方法です。 この方法では、ディレクティブ プロセッサを簡単に有効化および無効化できないうえに、ディレクティブ プロセッサを他のユーザーに配布することもできません。  
   
 > [!CAUTION]
->  レジストリを誤って編集すると、システムに重大な障害をもたらす可能性があります。 レジストリを変更する前に、コンピューター上の重要なデータはすべてバックアップしてください。  
+> レジストリを誤って編集すると、システムに重大な障害をもたらす可能性があります。 レジストリを変更する前に、コンピューター上の重要なデータはすべてバックアップしてください。  
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>レジストリ キーを設定してディレクティブ プロセッサを登録するには  
   

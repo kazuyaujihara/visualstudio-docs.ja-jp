@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b5dc42932334b54bb46664da14af7df8dcfe131
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bf1fd84d884068d11d15d614f5e281577bd3ce55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433571"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>方法: PolicyActivity ルール セットを作成する (レガシ)
 このトピックでは、[!INCLUDE[wfd1](../includes/wfd1-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする従来の [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用してポリシー アクティビティのルール セットを作成する方法について説明します。  
@@ -28,7 +28,7 @@ ms.locfileid: "60050787"
  ドラッグした後、**ポリシー**アクティビティ項目から、**ツールボックス**、ワークフロー デザイン サーフェイスには、既存のルールを選択するか、新しい規則のセットを作成しますが、 [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)アクティビティ。 既存のルールを使用して設定を選択する、[選択ルールを設定 ダイアログ ボックス (レガシ)](../workflow-designer/select-rule-set-dialog-box-legacy.md)を使用してルール セットを作成して、[ルール セット エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)します。  
   
 > [!NOTE]
->  開くことができます、[ルール セット エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)  ダイアログ ボックスをダブルクリックして、直接、 [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)ワークフロー デザイン サーフェイス上にあるアクティビティ。  
+> 開くことができます、[ルール セット エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)  ダイアログ ボックスをダブルクリックして、直接、 [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)ワークフロー デザイン サーフェイス上にあるアクティビティ。  
   
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>PolicyActivity アクティビティ用のルール セットを選択または作成するには  
   

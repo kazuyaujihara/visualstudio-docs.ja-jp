@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436549"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>例外のトラブルシューティング。System.ServiceModel.Security.MessageSecurityException
 A<xref:System.ServiceModel.Security.MessageSecurityException>ときに例外がスローされる[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]メッセージが適切に保護されていないまたは改ざんされたことを決定します。 このエラーが最も発生しやすいのは、次の条件がすべて該当する場合です。  
@@ -35,7 +35,7 @@ A<xref:System.ServiceModel.Security.MessageSecurityException>ときに例外が�
  リモート ユーザーが [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 開発サーバーを使用して Web サイトを実行し、さらに Web サービスまたは WCF サービスを使用する可能性がある場合は、カスタム サービス バインディングを作成するか、NTLM セキュリティをオフにすることができます。  
   
 > [!IMPORTANT]
->  セキュリティが脆弱になる可能性があるため、NTLM セキュリティをオフにすることはお勧めしません。  
+> セキュリティが脆弱になる可能性があるため、NTLM セキュリティをオフにすることはお勧めしません。  
   
  カスタム サービス バインディングを作成した場合でも、引き続き NTLM 認証によって保護されます。  
   
@@ -74,7 +74,7 @@ A<xref:System.ServiceModel.Security.MessageSecurityException>ときに例外が�
    WCF サービス参照を使用する場合に NTLM セキュリティをオフにするには、次の手順を実行します。  
   
 > [!IMPORTANT]
->  セキュリティが脆弱になる可能性があるため、NTLM セキュリティをオフにすることはお勧めしません。  
+> セキュリティが脆弱になる可能性があるため、NTLM セキュリティをオフにすることはお勧めしません。  
   
 #### <a name="to-turn-off-ntlm-security"></a>NTLM セキュリティをオフにするには  
   

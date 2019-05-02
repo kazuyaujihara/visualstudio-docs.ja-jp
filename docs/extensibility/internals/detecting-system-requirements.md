@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c65df25645a13f58dce9ddec69acf6834a77210f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420700"
 ---
 # <a name="detect-system-requirements"></a>システム要件を検出します。
 Visual Studio がインストールされていない場合、VSPackage は機能できません。 Microsoft Windows インストーラーを使用して、VSPackage のインストールを管理する場合は、Visual Studio がインストールされているかどうかを検出するインストーラーを構成できます。 など、システムの他の要件を確認して、特定のバージョンの Windows または特定の容量の RAM を構成することもできます。
@@ -33,7 +33,7 @@ Visual Studio がインストールされていない場合、VSPackage は機�
 新しいエディションがインストールされているときにそのエディション用のレジストリ キーが以前のエディションの場合とでも追加されます。 つまり、Enterprise edition がインストールされて、**インストール**にキーが設定されている*1*の Enterprise、および Professional および Community エディション。 そのため、必要な最新のエディションのみを確認する必要があります。
 
 > [!NOTE]
->  レジストリ エディターの 64 ビット バージョンで 32 ビットのキーが表示される **hkey_local_machine \software\wow6432node\\** します。 Visual Studio のキーは、 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**します。
+> レジストリ エディターの 64 ビット バージョンで 32 ビットのキーが表示される **hkey_local_machine \software\wow6432node\\** します。 Visual Studio のキーは、 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**します。
 
 |製品|キー|
 |-------------|---------|

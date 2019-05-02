@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: cdde44b5d960a3f9ef462e06b55260477a8933c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 227d4ba765dbea3be5306f05995cc29d075e6a66
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434149"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60097077"
 Visual C++ for Cross-Platform Mobile Development を使用して、iOS コードを編集およびデバッグし、iOS シミュレーターまたは iOS デバイスに配置することができます。ただし、ライセンスの制限により、コードのビルドと実行は、リモートの Mac 上で行わなければなりません。 Visual Studio を使用して iOS アプリをビルドおよび実行するには、Mac 上にリモート エージェント [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)をセットアップして構成する必要があります。 このリモート エージェントが、Visual Studio からのビルド要求を処理し、Mac に接続された iOS デバイスまたは Mac 上の iOS シミュレーターでアプリを実行します。  
   
 > [!NOTE]
->  Mac ではなくクラウド ホスト型 Mac サービスを使用する場合の詳細については、「 [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/)」を参照してください。 ここでは、Visual Studio Tools for Apache Cordova を使用してビルドする場合の手順を説明します。 Visual C++ for Cross-Platform Mobile Development を使用してビルドする場合は、vcremote を vs-mda-remote に置き換えて手順に従ってください。  
+> Mac ではなくクラウド ホスト型 Mac サービスを使用する場合の詳細については、「 [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/)」を参照してください。 ここでは、Visual Studio Tools for Apache Cordova を使用してビルドする場合の手順を説明します。 Visual C++ for Cross-Platform Mobile Development を使用してビルドする場合は、vcremote を vs-mda-remote に置き換えて手順に従ってください。  
   
  iOS を使用してビルドするためのツールをインストールしたら、このトピックを参照して、Visual Studio と Mac で iOS 開発を行うためにリモート エージェントを素早く構成して更新する方法を確認してください。  
   
@@ -93,7 +93,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
    インストール中、Mac に vcremote がインストールされて、開発者モードがアクティブ化されます。 [Homebrew](http://brew.sh/) と 2 つのパッケージ (vcremote-lib および vcremote-utils) もインストールされます。  
   
   > [!NOTE]
-  >  Homebrew をインストールするには、sudo (管理者) のアクセス許可が必要です。 sudo 以外で vcremote をインストールする必要がある場合には、Homebrew を手動で usr/local の場所にインストールして、その bin フォルダーをパスに追加します。 詳細については、 [Homebrew のドキュメント](https://github.com/Homebrew/homebrew/wiki/Installation)を参照してください。 開発者モードを手動で有効にするには、ターミナル アプリでコマンド `DevToolsSecurity –enable` を入力します。  
+  > Homebrew をインストールするには、sudo (管理者) のアクセス許可が必要です。 sudo 以外で vcremote をインストールする必要がある場合には、Homebrew を手動で usr/local の場所にインストールして、その bin フォルダーをパスに追加します。 詳細については、 [Homebrew のドキュメント](https://github.com/Homebrew/homebrew/wiki/Installation)を参照してください。 開発者モードを手動で有効にするには、ターミナル アプリでコマンド `DevToolsSecurity –enable` を入力します。  
   
   Visual Studio を新しいバージョンに更新した場合は、リモート エージェントも現在のバージョンに更新する必要があります。 リモート エージェントを更新するには、リモート エージェントをダウンロードしてインストールする手順を繰り返します。  
   
@@ -154,7 +154,7 @@ Visual C++ for Cross-Platform Mobile Development を使用して、iOS コード
 5. **[ホスト名]** フィールドと **[ポート]** フィールドに、リモート エージェントの起動時に示された値を入力します。 ホスト名には、Mac の DNS 名または IP アドレスを使用できます。 既定のポートは 3030 です。  
   
    > [!NOTE]
-   >  ホスト名で Mac を ping できない場合は、IP アドレスを使用する必要があります。  
+   > ホスト名で Mac を ping できない場合は、IP アドレスを使用する必要があります。  
   
 6. 既定のセキュリティで保護された接続モードでリモート エージェントを使用する場合は、 **[セキュア]** チェック ボックスをオンにしてから、リモート エージェントから示された PIN の値を **[PIN]** フィールドに入力します。 セキュリティで保護されていない接続モードでリモート エージェントを使用する場合は、 **[セキュア]** チェック ボックスをオフにして、 **[PIN]** フィールドを空白のままにします。  
   

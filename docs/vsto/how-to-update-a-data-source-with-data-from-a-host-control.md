@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 24bbd859b4867225e5ec5df95d298dd04146df46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421016"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>方法: ホスト コントロールからのデータでデータ ソースを更新します。
   ホスト コントロールをデータ ソースにバインドし、コントロール内のデータに加えられた変更でデータ ソースを更新することができます。 この処理には主に 2 つの手順があります。
@@ -61,7 +61,7 @@ ms.locfileid: "60097493"
    - コントロールのデータ バインド プロパティの値が変更されたときに、データ ソースを更新するには、System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged にこのプロパティを設定します。
 
      > [!NOTE]
-     >  Word ではないプラン文書変更やコントロール変更の通知はために、System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged オプションは、Word ホスト コントロールには適用されません。 ただし、Word 文書上の Windows フォーム コントロールには、このオプションを使用できます。
+     > Word ではないプラン文書変更やコントロール変更の通知はために、System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged オプションは、Word ホスト コントロールには適用されません。 ただし、Word 文書上の Windows フォーム コントロールには、このオプションを使用できます。
 
      コントロールの値が変わると自動的にデータ ソースを更新するように <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールを構成する例を次に示します。 この例は、 <xref:Microsoft.Office.Tools.Excel.NamedRange> という名前の `namedRange1` コントロールで <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> プロパティがデータ ソースのフィールドにバインドされていることを前提としています。
 
@@ -85,7 +85,7 @@ ms.locfileid: "60097493"
     - コントロールのデータ バインド プロパティの値が変更されたときにデータ ソースを更新するには、 **[OnPropertyChanged]** を選びます。
 
         > [!NOTE]
-        >  **[OnPropertyChanged]** オプションは、Word ホスト コントロールには適用されません。Word では文書変更やコントロール変更の通知は提供されないためです。 ただし、Word 文書上の Windows フォーム コントロールには、このオプションを使用できます。
+        > **[OnPropertyChanged]** オプションは、Word ホスト コントロールには適用されません。Word では文書変更やコントロール変更の通知は提供されないためです。 ただし、Word 文書上の Windows フォーム コントロールには、このオプションを使用できます。
 
 6. **[フォーマットと詳細バインド]** ダイアログ ボックスを閉じます。
 

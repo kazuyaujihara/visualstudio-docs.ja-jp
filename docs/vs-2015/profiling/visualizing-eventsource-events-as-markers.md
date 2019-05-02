@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431111"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>マーカーとしての EventSource イベントの視覚化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "60044923"
  cvSpanId フィールド (int) を使用して、イベントのペアを照合します。 スパンを表す開始/終了イベントの各ペアの値は一意である必要があります。 そのために、同時実行コードの場合は特に、<xref:System.Threading.Interlocked.Exchange%2A> などの同期プリミティブを使用して、キー (CvSpanID に使用される値) が正しいことを確認する必要があります。  
   
 > [!NOTE]
->  SpanID を使用してスパンを入れ子にすること、同じスレッドで部分的に重複させること、または開始と終了のスレッドを別にすることはサポートされていません。  
+> SpanID を使用してスパンを入れ子にすること、同じスレッドで部分的に重複させること、または開始と終了のスレッドを別にすることはサポートされていません。  
   
 ## <a name="see-also"></a>関連項目  
  [コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)

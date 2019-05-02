@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0ebd89937eedfc2851c3b57998ef2628f9e8904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436811"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>実行中のプロセスへのアタッチ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,10 +133,10 @@ ms.locfileid: "60053300"
 |Visual Studio から起動していない、Windows ユニバーサル (UWP) や OneCore、HoloLens、IoT アプリをデバッグします。|インストールされているアプリ パッケージのデバッグ|N/A|使用**デバッグ/その他のターゲットをデバッグ]/[インストール済みアプリ パッケージをデバッグ**の代わりに**プロセスにアタッチします。**|
 
 > [!WARNING]
->  JavaScript で記述された Windows ユニバーサル アプリにアタッチするには、まずそのアプリに対してデバッグを有効にする必要があります。 Windows デベロッパー センター内の「 [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) 」をご覧ください。
+> JavaScript で記述された Windows ユニバーサル アプリにアタッチするには、まずそのアプリに対してデバッグを有効にする必要があります。 Windows デベロッパー センター内の「 [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) 」をご覧ください。
 
 > [!NOTE]
->  C++ で記述されたコードにデバッガーをアタッチするには、コードが `DebuggableAttribute`を生成する必要があります。 [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) リンカー オプションを使ってリンクすると、これを自動的にコードに追加できます。
+> C++ で記述されたコードにデバッガーをアタッチするには、コードが `DebuggableAttribute`を生成する必要があります。 [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) リンカー オプションを使ってリンクすると、これを自動的にコードに追加できます。
 
 ## <a name="what-debugger-features-can-i-use"></a>どのようなデバッガー機能を使用できますか。
 

@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 46a9b8ce099146b6bae853557404c7bfabbbfb6a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0eadff91e8762349ec95c2d9f3bf5717bfecaa4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435035"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115:ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "58976870"
  このルールは、仮定<xref:System.IntPtr>と<xref:System.UIntPtr>フィールドに格納されているアンマネージ リソースへのポインター。 ファイナライザーの目的は、アンマネージ リソースを解放はであるため、ルールでは、ファイナライザーでは、ポインター フィールドによって示されるアンマネージ リソースを解放前提としています。 このルールでは、メソッドがアンマネージ リソースをアンマネージ コードに渡すポインター フィールドを参照することも想定しています。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を解決するへの呼び出しを追加<xref:System.GC.KeepAlive%2A>メソッドに渡して、現在のインスタンス (`this` C# および C++ で)、引数として。 コードの最後の行の後にガベージ コレクションからオブジェクトを保護する必要がありますに呼び出しを配置します。 呼び出しの直後に<xref:System.GC.KeepAlive%2A>オブジェクトへの参照を管理対象がないと仮定ガベージ コレクションの準備完了と見なされますもう一度です。
+ この規則違反を解決するへの呼び出しを追加<xref:System.GC.KeepAlive%2A>メソッドに渡して、現在のインスタンス (`this` c# および C++ で)、引数として。 コードの最後の行の後にガベージ コレクションからオブジェクトを保護する必要がありますに呼び出しを配置します。 呼び出しの直後に<xref:System.GC.KeepAlive%2A>オブジェクトへの参照を管理対象がないと仮定ガベージ コレクションの準備完了と見なされますもう一度です。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  このルールは、偽陽性につながる可能性があるいくつかの想定です。 場合は、安全にこの規則による警告を抑制することができます。
@@ -56,7 +56,7 @@ ms.locfileid: "58976870"
  次の例では、`BadMethod`への呼び出しを含まない`GC.KeepAlive`そのため、ルールに違反するとします。 `GoodMethod` 修正後のコードが含まれています。
 
 > [!NOTE]
->  この例は、コードをコンパイルして実行が擬似コード、アンマネージ リソースの作成または解放はされないために、この警告は発生しません。
+> この例は、コードをコンパイルして実行が擬似コード、アンマネージ リソースの作成または解放はされないために、この警告は発生しません。
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 

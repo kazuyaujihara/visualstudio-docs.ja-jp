@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434215"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>カスタム プロジェクトと項目テンプレートの Visual Studio 2017 をアップグレードします。
 
@@ -53,7 +53,7 @@ Visual Studio の以前のバージョンで**devenv/setup**または**devenv/in
     3. Visual Studio を再度開きます。 予期された場所にテンプレートを探す必要があります。
 
     > [!NOTE]
-    >  レジストリ キーが存在する場合は、Visual Studio 機能拡張プロジェクト テンプレートは使用できません。 レジストリ キーを削除する必要があります (再実行して**devenv/installvstemplates**) それらを使用します。
+    > レジストリ キーが存在する場合は、Visual Studio 機能拡張プロジェクト テンプレートは使用できません。 レジストリ キーを削除する必要があります (再実行して**devenv/installvstemplates**) それらを使用します。
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>プロジェクトと項目テンプレートをデプロイするための推奨事項
 

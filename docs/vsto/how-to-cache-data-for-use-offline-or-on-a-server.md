@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 510d923d2503aeb6e07859813537c9094fe25b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419702"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>方法: オフラインか、サーバーで使用するデータをキャッシュします。
   オフラインをマーキングするドキュメントでキャッシュされるデータ項目使用できるようにします。 これもにより、データのドキュメントがサーバーに格納されている場合、他のコードによって操作されるドキュメントで。
@@ -32,7 +32,7 @@ ms.locfileid: "60094542"
  データ項目が、コードで宣言されている、または、使用する場合にキャッシュされるデータ項目をマークすることができます、<xref:System.Data.DataSet>のプロパティを設定して、**プロパティ**ウィンドウ。 ないデータ項目をキャッシュするかどうか、<xref:System.Data.DataSet>または<xref:System.Data.DataTable>ドキュメント内にキャッシュされているための条件を満たしていることを確認します。 詳細については、次を参照してください。[データ キャッシュ](../vsto/caching-data.md)します。
 
 > [!NOTE]
->  としてマークされている Visual Basic を使用して作成されたデータセット**キャッシュ**と**WithEvents** (はからドラッグされたデータセットを含む、**データソース**ウィンドウまたは**ツールボックス**がある、 **CacheInDocument**プロパティに設定**True**)、キャッシュ内の名前にプレフィックスとしてアンダー スコアがあります。 たとえば、データセットを作成し、名前を付けます**顧客**、<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem>名前になります **_Customers**キャッシュします。 使用すると<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>このキャッシュされた項目にアクセスすることを指定する必要があります **_Customers**の代わりに**顧客**します。
+> としてマークされている Visual Basic を使用して作成されたデータセット**キャッシュ**と**WithEvents** (はからドラッグされたデータセットを含む、**データソース**ウィンドウまたは**ツールボックス**がある、 **CacheInDocument**プロパティに設定**True**)、キャッシュ内の名前にプレフィックスとしてアンダー スコアがあります。 たとえば、データセットを作成し、名前を付けます**顧客**、<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem>名前になります **_Customers**キャッシュします。 使用すると<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>このキャッシュされた項目にアクセスすることを指定する必要があります **_Customers**の代わりに**顧客**します。
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>コードを使用して、ドキュメント内のデータをキャッシュする
 

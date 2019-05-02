@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 453952f52561a761ab4cf01825d07aa97595d0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 15659cc8061601776e3a3197a49f14e2c824aa7b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420428"
 ---
 # <a name="implementing-syntax-coloring"></a>構文の色分け表示の実装
 言語サービスでは、構文の色表示機能を提供して、パーサー配色可能な項目の配列に 1 行のテキストを変換します。 これらの装飾が可能な項目に対応するトークンの種類を返します。 パーサーは、装飾が可能な項目の一覧に属するトークンの型を返す必要があります。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] colorizer オブジェクトによって適切なトークンの種類に割り当てられた属性に基づいて、コード ウィンドウ内の各装飾が可能な項目を表示します。
@@ -27,7 +27,7 @@ ms.locfileid: "60080203"
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 構文の色分けを実装する新しい方法の詳細についてを参照してください。[チュートリアル。テキストの強調表示](../../extensibility/walkthrough-highlighting-text.md)します。
 
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
 
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>テキストを色分けして表示するエディターで実行する手順
 
@@ -63,7 +63,7 @@ ms.locfileid: "60080203"
  Managed package framework (MPF) は、colorizer を実装するために必要なすべてのクラスを提供します。 言語サービス クラスを継承する必要があります、<xref:Microsoft.VisualStudio.Package.LanguageService>クラスし、必要なメソッドを実装します。 スキャナーとパーサーを実装することで指定する必要があります、<xref:Microsoft.VisualStudio.Package.IScanner>インターフェイスし、そのインターフェイスからのインスタンスを返す、<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>メソッド (いずれの方法で実装する必要があります、<xref:Microsoft.VisualStudio.Package.LanguageService>クラス)。 詳細については、次を参照してください。[従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)します。
 
 ## <a name="see-also"></a>関連項目
-- [方法: 組み込みの配色可能な項目を使用して、](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [方法: ビルトインの配色可能な項目の使用](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [カスタムの配色可能な項目](../../extensibility/internals/custom-colorable-items.md)
 - [従来の言語サービスの開発](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [従来の言語サービスでの構文の配色変更](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

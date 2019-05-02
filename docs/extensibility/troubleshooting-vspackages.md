@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434250"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage のトラブルシューティング
 一般的な問題、VSPackage に可能性のあるし、問題を解決するためのヒントを次に示します。
@@ -46,7 +46,7 @@ ms.locfileid: "60039734"
 4. 開く、**出力**ウィンドウのインスタンスの[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]が VSPackage の読み込みに失敗します。 VSPackage の読み込みが失敗した理由に関する情報は、そのウィンドウに表示可能性があります。
 
    > [!NOTE]
-   >  実験的なバージョンを開始する場合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]から、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE)、検査、**出力**両方のバージョンのウィンドウ。
+   > 実験的なバージョンを開始する場合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]から、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE)、検査、**出力**両方のバージョンのウィンドウ。
 
 5. アクティビティ ログを調べます。
 
@@ -85,7 +85,7 @@ ms.locfileid: "60039734"
     4. **デバッグ** メニューのをクリックして**デバッグの開始** F5 キーを押します。
 
         > [!NOTE]
-        >  プロジェクトをデバッグする場合は、作成またはプロジェクトの既存のインスタンスを読み込むようになりました。
+        > プロジェクトをデバッグする場合は、作成またはプロジェクトの既存のインスタンスを読み込むようになりました。
 
 2. アクティビティ ログを使用します。
 

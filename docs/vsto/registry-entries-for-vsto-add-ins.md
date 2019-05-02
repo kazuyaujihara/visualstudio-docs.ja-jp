@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab8c437285a55013e2c0367865044ee12ba061ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: de101e33e94889a44fe9bc4e21db857763b1c9aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447022"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO アドインのレジストリ エントリ
   Visual Studio で作成した VSTO アドインを配置するときには、一連のレジストリ エントリを作成する必要があります。 それらのレジストリ エントリで指定する情報によって、Microsoft Office アプリケーションは VSTO アドインを検出し、読み込むことができます。
@@ -33,7 +33,7 @@ ms.locfileid: "60071809"
  VSTO アドインの読み込みプロセス中にレジストリ エントリがどのように使用されるかについては、「 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)」を参照してください。
 
 > [!NOTE]
->  このトピックでは、テキスト *アドイン ID* は VSTO アドインの一意の ID を表します。 既定では、この ID は VSTO アドイン アセンブリの名前です。
+> このトピックでは、テキスト *アドイン ID* は VSTO アドインの一意の ID を表します。 既定では、この ID は VSTO アドイン アセンブリの名前です。
 
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>すべてのユーザーと現在のユーザー用の VSTO アドインの登録します。
  VSTO アドインをインストールするときは、次の 2 つの方法で登録できます。

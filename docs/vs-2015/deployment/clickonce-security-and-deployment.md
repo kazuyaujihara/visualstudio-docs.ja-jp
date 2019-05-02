@@ -18,17 +18,17 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835bab46a9537a3a54d0155d9835ab11eaa4c834
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 27090998a7afa6f99da9152e1f5bb7407fed6aa0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423271"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce のセキュリティと配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 展開テクノロジをインストールして最小限のユーザーとのやり取りを実行できる自己更新型の Windows ベースのアプリケーションを作成することができます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 発行および Visual Basic および Visual C# でプロジェクトを開発する場合は、ClickOnce テクノロジで配置されたアプリケーションを更新するためには、完全にサポートを提供します。 Visual C アプリケーションを展開する方法の詳細については、次を参照してください。 [Visual c アプリケーションの ClickOnce 配置](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157)します。  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 展開テクノロジをインストールして最小限のユーザーとのやり取りを実行できる自己更新型の Windows ベースのアプリケーションを作成することができます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 発行および Visual Basic および Visual c# でプロジェクトを開発する場合は、ClickOnce テクノロジで配置されたアプリケーションを更新するためには、完全にサポートを提供します。 Visual C アプリケーションを展開する方法の詳細については、次を参照してください。 [Visual c アプリケーションの ClickOnce 配置](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157)します。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 展開は、展開における 3 つの主な問題を克服します。  
   
@@ -78,13 +78,13 @@ ms.locfileid: "58962616"
  ユーザーのアプリケーションを追加することができます**開始**メニューおよび、**プログラム追加と削除**グループにおいて、**コントロール パネルの**です。 その他の展開テクノロジとは異なりは何も追加する、 **Program Files**フォルダーや、レジストリの管理者権限がありませんは、インストールに必要な  
   
 > [!NOTE]
->  アプリケーションに追加されるを防止することも、**開始**メニューと**プログラム追加と削除**グループ、Web アプリケーションのように動作可能になります。 詳細については、「[ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)」を参照してください。  
+> アプリケーションに追加されるを防止することも、**開始**メニューと**プログラム追加と削除**グループ、Web アプリケーションのように動作可能になります。 詳細については、「[ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)」を参照してください。  
   
 ### <a name="updating-clickonce-applications"></a>ClickOnce アプリケーションの更新  
  新しいアプリケーション マニフェストを生成し、配置場所にファイルをコピー アプリケーション開発者は、アプリケーションの更新バージョンを作成するときに、通常は、元のアプリケーションの展開フォルダーの兄弟フォルダー。 管理者は、アプリケーションの新しいバージョンの場所を示すために配置マニフェストを更新します。  
   
 > [!NOTE]
->  **発行ウィザード**Visual Studio では、次の手順を使用できます。  
+> **発行ウィザード**Visual Studio では、次の手順を使用できます。  
   
  配置マニフェストには、配置場所だけでなく、アプリケーションで最新バージョンをチェックする更新場所 (Web ページまたはネットワーク ファイル共有) も含まれます。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **発行**プロパティを使用して、アプリケーションの更新プログラムを確認するタイミングと頻度を指定します。 配置マニフェストで更新プログラムの動作を指定するかをして、アプリケーションのユーザー インターフェイスにユーザーの選択肢として提示する、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Api。 さらに、**[発行]** プロパティを使用して、更新を必須にしたり、以前のバージョンにロールバックしたりすることもできます。 詳細については、「[ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)」を参照してください。  
   
@@ -97,8 +97,8 @@ ms.locfileid: "58962616"
 |ツール|説明|  
 |----------|-----------------|  
 |[[セキュリティ] ページ (プロジェクト デザイナー)](../ide/reference/security-page-project-designer.md)|アプリケーションと配置マニフェストを登録します。|  
-|[[発行] ページ (プロジェクト デザイナー)](../ide/reference/publish-page-project-designer.md)|生成し、Visual Basic および Visual C# アプリケーションのアプリケーションと配置マニフェストを編集します。|  
-|[Mage.exe (マニフェストの生成および編集ツール)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Visual Basic、Visual C#、および Visual C アプリケーションのアプリケーションと配置マニフェストを生成します。<br /><br /> 署名し、アプリケーション マニフェストと配置マニフェストに再署名します。<br /><br /> バッチ スクリプトとコマンド プロンプトから実行できます。|  
+|[[発行] ページ (プロジェクト デザイナー)](../ide/reference/publish-page-project-designer.md)|生成し、Visual Basic および Visual c# アプリケーションのアプリケーションと配置マニフェストを編集します。|  
+|[Mage.exe (マニフェストの生成および編集ツール)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Visual Basic、Visual c#、および Visual C アプリケーションのアプリケーションと配置マニフェストを生成します。<br /><br /> 署名し、アプリケーション マニフェストと配置マニフェストに再署名します。<br /><br /> バッチ スクリプトとコマンド プロンプトから実行できます。|  
 |[MageUI.exe (マニフェスト生成および編集ツールのグラフィカル クライアント)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|生成し、アプリケーション マニフェストと配置マニフェストを編集します。<br /><br /> 署名し、アプリケーション マニフェストと配置マニフェストに再署名します。|  
 |[GenerateApplicationManifest タスク](../msbuild/generateapplicationmanifest-task.md)|アプリケーション マニフェストを生成します。<br /><br /> MSBuild から実行できます。 詳細については、「[MSBuild リファレンス](../msbuild/msbuild-reference.md)」を参照してください。|  
 |[GenerateDeploymentManifest タスク](../msbuild/generatedeploymentmanifest-task.md)|配置マニフェストを生成します。<br /><br /> MSBuild から実行できます。 詳細については、「[MSBuild リファレンス](../msbuild/msbuild-reference.md)」を参照してください。|  

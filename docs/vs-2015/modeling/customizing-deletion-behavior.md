@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d22db963f895c4ca53a44e20bc0babd0dff49853
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa7db2f55a89bd6c542bff0cf30ee058e339f15c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433288"
 ---
 # <a name="customizing-deletion-behavior"></a>削除動作のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "60107594"
  DSL 定義ファイル内のオプションにより選択できるのは、削除がすぐ隣に伝達するかどうかのみです。 より複雑な削除の伝達のしくみを実装するために、プログラム コードを作成できます。  
   
 > [!NOTE]
->  DSL 定義にプログラム コードを追加するで別のコード ファイルを作成、 **Dsl**プロジェクトし、生成されたコード フォルダー内のクラスを拡張する部分の定義を作成します。 詳細については、次を参照してください。[ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)します。  
+> DSL 定義にプログラム コードを追加するで別のコード ファイルを作成、 **Dsl**プロジェクトし、生成されたコード フォルダー内のクラスを拡張する部分の定義を作成します。 詳細については、次を参照してください。[ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)します。  
   
 ## <a name="closure"></a> 削除クロージャの定義  
  削除操作は、クラスを使用して_YourModel_**DeleteClosure**初期選択を指定を削除する要素を確認します。 これは `ShouldVisitRelationship()` および `ShouldVisitRolePlayer()` を繰り返し呼び出し、リレーションシップのグラフを検索します。 これらのメソッドをオーバーライドできます。 ShouldVisitRolePlayer はリンクの ID およびリンクのロールの一方における要素とともに提供されます。 次のいずれかの値を返す必要があります。  
@@ -213,7 +213,7 @@ partial class Artist
      詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。  
   
     > [!WARNING]
-    >  要素が削除された場合、そのドメイン プロパティ値にアクセスできますが、リレーションシップ リンクに移動できません。 ただし、リレーションシップに deleted イベントを設定した場合、ロール プレーヤーだった 2 つの要素にもアクセスできます。 したがって、モデル要素の削除に応答し、リンクされた要素にアクセスする場合、モデル要素のドメイン クラスの代わりにリレーションシップで delete イベントを設定します。  
+    > 要素が削除された場合、そのドメイン プロパティ値にアクセスできますが、リレーションシップ リンクに移動できません。 ただし、リレーションシップに deleted イベントを設定した場合、ロール プレーヤーだった 2 つの要素にもアクセスできます。 したがって、モデル要素の削除に応答し、リンクされた要素にアクセスする場合、モデル要素のドメイン クラスの代わりにリレーションシップで delete イベントを設定します。  
   
 ### <a name="example-deletion-rules"></a>削除規則の例  
   

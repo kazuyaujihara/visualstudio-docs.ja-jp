@@ -10,12 +10,12 @@ ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6c8aa5d32d579183b0bb42a9152232377423435
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab9301f31976b084c3c8565329dca248503e40ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437424"
 ---
 # <a name="attaching-to-the-program"></a>プログラムへのアタッチ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,12 +52,12 @@ ms.locfileid: "60088692"
      これにより返されます、`GUID`プログラムを識別するために使用されます。 `GUID` DE を表すローカル プログラムを返す必要がある場合に、オブジェクトに格納する必要があります、`IDebugProgram2::GetProgramId`でメソッドが呼び出される、`IDebugProgram2`インターフェイス。  
   
     > [!NOTE]
-    >  実装する場合、`IDebugProgramNodeAttach2`インターフェイス、プログラムの`GUID`に渡される、`IDebugProgramNodeAttach2::OnAttach`メソッド。 これは、`GUID`プログラムの使用は`GUID`によって返される、`IDebugProgram2::GetProgramId`メソッド。  
+    > 実装する場合、`IDebugProgramNodeAttach2`インターフェイス、プログラムの`GUID`に渡される、`IDebugProgramNodeAttach2::OnAttach`メソッド。 これは、`GUID`プログラムの使用は`GUID`によって返される、`IDebugProgram2::GetProgramId`メソッド。  
   
 3. 送信、 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 、SDM を通知するイベント オブジェクトをローカル`IDebugProgram2`DE にプログラムを表現するオブジェクトが作成されました。 詳細については、次を参照してください。[イベントの送信](../../extensibility/debugger/sending-events.md)します。  
   
     > [!NOTE]
-    >  これは、同じ`IDebugProgram2`に渡されたオブジェクト、`IDebugEngine2::Attach`メソッド。 渡された以前`IDebugProgram2`オブジェクトは、ポートのみによって認識され、独立したオブジェクトします。  
+    > これは、同じ`IDebugProgram2`に渡されたオブジェクト、`IDebugEngine2::Attach`メソッド。 渡された以前`IDebugProgram2`オブジェクトは、ポートのみによって認識され、独立したオブジェクトします。  
   
 ## <a name="see-also"></a>関連項目  
  [起動ベースの添付ファイル](../../extensibility/debugger/launch-based-attachment.md)   

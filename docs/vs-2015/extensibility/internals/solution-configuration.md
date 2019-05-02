@@ -10,12 +10,12 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eb14a2031b89f2a7deeb7d98cc483e90125b1905
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: bbd47969a7a48be817e8e2f5359705e03b5d0dc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432090"
 ---
 # <a name="solution-configuration"></a>ソリューション構成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "58975167"
  標準の Visual Studio ツールバーには、[スタート] ボタンとソリューション構成ドロップダウンを [スタート] ボタンの右側が含まれています。 この一覧では、f5 キーが押されたときに開始する構成を選択して、独自のソリューション構成を作成または既存の構成を編集することができます。  
   
 > [!NOTE]
->  機能拡張インターフェイスを作成またはソリューション構成を編集することはありません。 使用する必要があります`DTE.SolutionBuilder`します。 ただし、ソリューションのビルドを管理するの拡張性 Api があります。 詳細については、「<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>」を参照してください。  
+> 機能拡張インターフェイスを作成またはソリューション構成を編集することはありません。 使用する必要があります`DTE.SolutionBuilder`します。 ただし、ソリューションのビルドを管理するの拡張性 Api があります。 詳細については、「 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2> 」を参照してください。  
   
  次に、プロジェクトの種類でサポートされるソリューション構成を実装する方法を示します。  
   
-- Project  
+- プロジェクト  
   
    現在のソリューションに存在するプロジェクトの名前が表示されます。  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6ea3c9a5ecb0fa10c6b020f3af8a51a65952c9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 06db94841a45f648461822c5f205cb68bbb2b1c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437721"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
      監視を開始する前にこのディレクトリの作成を確認します。 アプリの処理が低下するのを回避するには、あまりアクティブではないローカルの高速なディスク上の場所を選択してください。  
   
     > [!IMPORTANT]
-    >  IntelliTrace ログは個人用データおよび重要情報が含まれる場合があります。 このディレクトリへのアクセスを、ファイルを使用する必要がある ID のみに制限します。 企業のプライバシー ポリシーを確認してください。  
+    > IntelliTrace ログは個人用データおよび重要情報が含まれる場合があります。 このディレクトリへのアクセスを、ファイルを使用する必要がある ID のみに制限します。 企業のプライバシー ポリシーを確認してください。  
   
 5. 詳細な、関数レベルの監視を実行するか、または SharePoint アプリケーションを監視するために、Web アプリまたは SharePoint アプリケーションをホストするアプリケーション プールに IntelliTrace ログ ディレクトリへの読み取りおよび書き込みのアクセス許可を与えます。 [Q: アプリケーション プールへのアクセス許可の設定方法](#FullPermissionsITLog)  
   
@@ -137,7 +137,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
   
     |||  
     |-|-|  
-    |*"\<appName>"*|Web サイトへのパスおよび IIS での Web アプリの名前を指定します。 また、IIS パスを含めることもできます。<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> - または -<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> IIS マネージャーでこのパスを検索できます。 例えば:<br /><br /> ![IIS web サイトおよび web アプリへのパス](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> また、 [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) コマンドおよび [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) コマンドを使用できます。|  
+    |*"\<appName>"*|Web サイトへのパスおよび IIS での Web アプリの名前を指定します。 また、IIS パスを含めることもできます。<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> - または -<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> IIS マネージャーでこのパスを検索できます。 例:<br /><br /> ![IIS web サイトおよび web アプリへのパス](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> また、 [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) コマンドおよび [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) コマンドを使用できます。|  
     |*\<monitoringMode>*|監視モードを指定します。<br /><br /> <ul><li>**監視**: 例外イベントとパフォーマンス イベントについての最小限の情報を記録します。 このモードは既定の収集計画を使用します。</li><li>**トレース**: 指定された収集計画を使用して、関数レベルの情報を記録したり、SharePoint 2010 および SharePoint 2013 アプリケーションを監視したりします。 このモードでは、アプリの実行が遅くなる可能性があります。<br /><br /> <ul><li>[Q: アプリケーション プールへのアクセス許可の設定方法](#FullPermissionsITLog)</li><li>[Q: アプリのパフォーマンスの低下なしにほとんどのデータを取得する方法](#Minimizing)</li></ul><br />     この例では、SharePoint サイトでホストされる SharePoint アプリのイベントを記録します。<br /><br />     **Start-webapplicationmonitoring"FabrikamSharePointSite\FabrikamSharePointApp""C:\Program files \microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml""C:\IntelliTraceLogs"のトレース**</li><li>**カスタム**: 指定したカスタム収集計画を使用してカスタムの情報を記録します。 監視を開始してから収集計画を編集するときは、監視を再起動する必要があります。</li></ul>|  
     |*"\<outputPath>"*|IntelliTrace ログを格納するディレクトリへの完全パスを指定します。 監視を開始する前にこのディレクトリの作成を確認します。|  
     |*\<UInt32 >*|IntelliTrace ログの最大サイズを指定します。 IntelliTrace ログの既定の最大サイズは 250 MB です。<br /><br /> ログがこの制限に達すると、エージェントは最も早いエントリを上書きして、さらに多くのエントリのための場所を確保します。 この制限を変更するには、 **-MaximumFileSizeInMegabytes** オプションを使用するか、収集計画の `MaximumLogFileSize` 属性を編集します。|  
@@ -246,7 +246,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
   
     **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
   
-    例:  
+    例えば:  
   
     **PS c:\\> Checkpoint-webapplicationmonitoring"Fabrikam\FabrikamFiber.Web"**  
   
@@ -259,7 +259,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
 3. セキュリティで保護された共有フォルダーにログをコピーし、Visual Studio Enterprise (Professional Edition や Community Edition ではない) がインストールされているコンピューターからそのログを開きます。  
   
    > [!IMPORTANT]
-   >  IntelliTrace ログには個人情報や機密情報が含まれる場合があります。したがって、このログを共有するときは注意してください。 これらのログにアクセスできるすべてのユーザーに、そのデータを閲覧するアクセス許可があることを確認してください。 企業のプライバシー ポリシーを確認してください。  
+   > IntelliTrace ログには個人情報や機密情報が含まれる場合があります。したがって、このログを共有するときは注意してください。 これらのログにアクセスできるすべてのユーザーに、そのデータを閲覧するアクセス許可があることを確認してください。 企業のプライバシー ポリシーを確認してください。  
   
    **次へ:**[Visual Studio Enterprise で記録されたイベントを診断します。](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
@@ -280,7 +280,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
   
     **Stop-webapplicationmonitoring - すべて**  
   
-    例:  
+    例えば:  
   
     **PS C:\\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   

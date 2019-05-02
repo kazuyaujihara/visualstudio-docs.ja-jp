@@ -10,12 +10,12 @@ ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4302e7eabb8e731a4332116956614643a4b95ef2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 09b81294abc708cf7616dad03b5dd7333d6a1719
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435871"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>動的なツール ウィンドウを開く
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,14 +23,14 @@ ms.locfileid: "60076787"
 ツール ウィンドウは通常、対応するキーボード ショートカットやメニューのコマンドから開きます。 ただし、する必要がありますツール ウィンドウを開くたびに、UI の特定のコンテキストが適用され、UI コンテキストが適用されなくなったときに閉じます。 上記のようなツール ウィンドウと呼ばれる*動的*または*自動表示*します。  
   
 > [!NOTE]
->  定義済みの UI コンテキストの一覧は、次を参照してください。<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>します。 の、  
+> 定義済みの UI コンテキストの一覧は、次を参照してください。<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>します。 の、  
   
  起動時に、動的なツール ウィンドウを開くと、作成が失敗する可能性があります、実装する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx>インターフェイスし、テストでエラー条件、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx.QueryShowTool%2A>メソッド。 シェルの起動時に開く必要がある動的なツール ウィンドウがあることを把握するためには、追加する必要があります、`SupportsDynamicToolOwner`パッケージ登録の値 (1 に設定)。 この値は、標準の一部ではない<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>ので、それを追加するカスタム属性を作成する必要があります。 カスタム属性の詳細については、次を参照してください。[カスタム登録属性を使用して、拡張機能の登録に](../misc/using-a-custom-registration-attribute-to-register-an-extension.md)します。  
   
  使用<xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A>ツール ウィンドウを開きます。 必要に応じてツール ウィンドウが作成されます。  
   
 > [!NOTE]
->  ユーザーが、動的なツール ウィンドウを終了できます。 ユーザーがツール ウィンドウを開くことができますので、メニュー コマンドを作成する場合は、ツール ウィンドウ、および無効になっていますそれ以外の場合に表示される同じ UI コンテキスト内でメニュー コマンドが有効にする必要があります。  
+> ユーザーが、動的なツール ウィンドウを終了できます。 ユーザーがツール ウィンドウを開くことができますので、メニュー コマンドを作成する場合は、ツール ウィンドウ、および無効になっていますそれ以外の場合に表示される同じ UI コンテキスト内でメニュー コマンドが有効にする必要があります。  
   
 ### <a name="to-open-a-dynamic-tool-window"></a>動的なツール ウィンドウを開く  
   

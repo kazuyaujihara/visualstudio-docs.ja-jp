@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edba26d951afb0ba2215af4c0a0eac09b1c31513
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: cbddf759841dbe9626868d6c00f42a0849d70520
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406821"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>ClickOnce の更新方法の選択
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] では、アプリケーションを自動的に更新できます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションは、配置マニフェスト ファイルを定期的に読み取り、アプリケーションに対する更新が利用可能かどうかを確認します。 利用可能であれば、アプリケーションの新しいバージョンがダウンロードされて実行されます。 効率性を高めるために、変更されたファイルだけがダウンロードされます。
@@ -31,10 +31,10 @@ ms.locfileid: "56608495"
  また、アプリケーションが更新プログラムをチェックする頻度を決定でき、更新を必須にすることもできます。
 
 > [!NOTE]
->  アプリケーションの更新には、ネットワーク接続が必要です。 ネットワーク接続されていない場合、選択した更新方法に関係なく、アプリケーションは更新プログラムをチェックせずに実行されます。
+> アプリケーションの更新には、ネットワーク接続が必要です。 ネットワーク接続されていない場合、選択した更新方法に関係なく、アプリケーションは更新プログラムをチェックせずに実行されます。
 
 > [!NOTE]
->  .NET Framework 2.0 と .NET Framework 3.0 では、いつでも、アプリケーションのチェック、更新プログラムの前に、または開始の後、またはを使用して、 \<xref:System.Deployment.Application > Api を設定する必要がある`deploymentProvider`配置マニフェストにします。 `deploymentProvider` 要素は、Visual Studio の **[発行]** タブの **[更新]** ダイアログ ボックスにある **[更新の場所]** に対応します。この規則は .NET Framework 3.5 で緩和されています。 詳細については、次を参照してください。 [ClickOnce アプリケーションのテストの展開および Resigning なしの実稼働サーバー](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)します。
+> .NET Framework 2.0 と .NET Framework 3.0 では、いつでも、アプリケーションのチェック、更新プログラムの前に、または開始の後、またはを使用して、 \<xref:System.Deployment.Application > Api を設定する必要がある`deploymentProvider`配置マニフェストにします。 `deploymentProvider` 要素は、Visual Studio の **[発行]** タブの **[更新]** ダイアログ ボックスにある **[更新の場所]** に対応します。この規則は .NET Framework 3.5 で緩和されています。 詳細については、次を参照してください。 [ClickOnce アプリケーションのテストの展開および Resigning なしの実稼働サーバー](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)します。
 
 ## <a name="check-for-updates-after-application-startup"></a>アプリケーションの起動後の更新プログラムの確認
  この方法を使用した場合、アプリケーションは、実行中にバックグラウンドで配置マニフェスト ファイルの検索と読み取りを試みます。 更新が利用可能な場合は、ユーザーが次回アプリケーションを実行したときに、更新プログラムをダウンロードしてインストールするかどうかを確認するプロンプトが表示されます。
@@ -76,7 +76,7 @@ ms.locfileid: "56608495"
  アプリケーションの最新バージョンを実行するようユーザーに要求することが必要な場合があります。 たとえば、Web サービスなどの外部リソースに変更を加えたことで、旧バージョンのアプリケーションが適切に動作できなくなるような場合です。 この場合、更新を必須としてマークし、ユーザーが旧バージョンを実行するのを防ぎます。
 
 > [!NOTE]
->  他の更新方法を使用して更新を要求することもできますが、古いバージョンを確実に実行できないようにするのは、**[アプリケーションの開始前に行う]** をオンにする方法だけです。 起動時に必須の更新が検出された場合、ユーザーは更新を受け入れるか、アプリケーションを終了する必要があります。
+> 他の更新方法を使用して更新を要求することもできますが、古いバージョンを確実に実行できないようにするのは、**[アプリケーションの開始前に行う]** をオンにする方法だけです。 起動時に必須の更新が検出された場合、ユーザーは更新を受け入れるか、アプリケーションを終了する必要があります。
 
  更新を必須としてマークするには、**[アプリケーションの更新]** ダイアログ ボックスで **[このアプリケーションに最低限必要なバージョンを指定してください]** をクリックし、発行バージョン (**[メジャー]**、**[マイナー]**、**[ビルド]**、**[リビジョン]**) を指定することで、インストール可能なアプリケーションの最も低いバージョン番号を指定します。
 
@@ -122,4 +122,4 @@ ms.locfileid: "56608495"
 - [ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)
 - [ClickOnce がアプリケーションの更新を実行するしくみ](../deployment/how-clickonce-performs-application-updates.md)
-- [方法 : ClickOnce アプリケーションの更新プログラムを管理する](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [方法: ClickOnce アプリケーションの更新プログラムを管理する](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

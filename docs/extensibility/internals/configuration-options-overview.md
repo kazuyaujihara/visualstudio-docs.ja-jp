@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ce45aea2f39751822a3dda6f388bd2d8095775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 791c50e6839190fa3700c335896f24f0714a64bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415157"
 ---
 # <a name="configuration-options-overview"></a>構成オプションの概要
 プロジェクトで[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]構築できますが、デバッグ、実行、および配置された複数の構成をサポートすることができます。 構成とは、ビルドの種類のコンパイラ スイッチおよびファイルの場所では通常、プロパティの名前付きセットを使用して記述します。 既定では、新しいソリューションは、2 つの構成を含めることが*デバッグ*と*リリース*します。 既定の設定を使用するか、特定のソリューションやプロジェクトの要件を満たすように変更は、これらの構成を適用できます。 一部のパッケージは、2 つの方法でビルドできます。 またはインプレース コンポーネントとして ActiveX エディターとして。 ただし、複数の構成をサポートするためには、プロジェクトは必要はありません。 1 つのみの構成が使用可能な場合、その構成は、すべてのソリューション構成にマップされます。
@@ -36,15 +36,15 @@ ms.locfileid: "56605095"
 |*MyConfig*|N/A|\<MyConfig Win64 設定 >|
 
 > [!NOTE]
->  作成することはできません、 *MyConfig* Win32 プラットフォームをプロジェクトにターゲットにする場合を除き、除外するソリューション構成が Win32 をサポートしていません。
+> 作成することはできません、 *MyConfig* Win32 プラットフォームをプロジェクトにターゲットにする場合を除き、除外するソリューション構成が Win32 をサポートしていません。
 
  ソリューションのアクティブな構成を変更するは、そのソリューションの構築、実行、デバッグ、または配置するプロジェクト構成のセットを選択します。 アクティブなソリューション構成を変更する場合など*リリース*に*デバッグ*、そのソリューション内のすべてのプロジェクトに示されているプロジェクトの構成で自動的に構築しますソリューションのデバッグ構成します。 このプロジェクトの構成がという名前も*デバッグ*ユーザーが手動で変更を環境の Configuration Manager で行った場合を除き、します。
 
- 格納されている各プロジェクトのソリューション構成のプロパティには、プロジェクト名、プロジェクト構成名、フラグを示すかどうかを構築するかを展開してプラットフォーム名が含まれます。 詳細については、[ソリューション構成](../../extensibility/internals/solution-configuration.md)を参照してください。
+ 格納されている各プロジェクトのソリューション構成のプロパティには、プロジェクト名、プロジェクト構成名、フラグを示すかどうかを構築するかを展開してプラットフォーム名が含まれます。 詳細については、次を参照してください。[ソリューション構成](../../extensibility/internals/solution-configuration.md)します。
 
  ユーザーは、表示し、階層 (ソリューション エクスプ ローラー) で、ソリューションを選択し、プロパティ ページを開くソリューションの構成パラメーターを設定できます。 同様に、表示し、ソリューション エクスプ ローラーでプロジェクトを選択し、そのプロジェクトのプロパティ ページを開くプロジェクトの構成パラメーターを設定することができます。
 
- ユーザーは、必要に応じてデバッグ構成の設定でリリースの構成設定とすべての rest を使用する 1 つのプロジェクトをビルドもできます。 詳細については、[構築するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)を参照してください。
+ ユーザーは、必要に応じてデバッグ構成の設定でリリースの構成設定とすべての rest を使用する 1 つのプロジェクトをビルドもできます。 詳細については、次を参照してください。[構築するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)します。
 
  次の図は、ソリューションとプロジェクト構成をサポートするインターフェイスを実装する方法を示しています。
 
@@ -66,7 +66,7 @@ ms.locfileid: "56605095"
 
 - 特定のオブジェクトは、個別に実装されます。 たとえば、プロジェクトとソリューションの構築とビルドの構成を記述するオブジェクトからビルド生活がどれほどを個別に管理するオブジェクトの個別のスレッドの発生します。
 
-  構成オブジェクトのインターフェイスと、前の図での構成プロバイダー オブジェクトのインターフェイスの詳細については、[プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)を参照してください。 さらに、[構築するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)構成ビルダーとビルドの依存関係オブジェクトのインターフェイスの詳細を提供し、[展開を管理するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-managing-deployment.md)さらに、構成を配置するユーザーと展開の依存関係オブジェクトにアタッチされているインターフェイスについて説明します。 最後に、[出力用のプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)表示および構成に依存するプロパティを設定するには、出力グループと出力オブジェクトのインターフェイス、およびプロパティ ページの使用について説明します。
+  構成オブジェクトのインターフェイスと、前の図での構成プロバイダー オブジェクトのインターフェイスの詳細については、次を参照してください。[プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)します。 さらに、[構築するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)構成ビルダーとビルドの依存関係オブジェクトのインターフェイスの詳細を提供し、[展開を管理するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-managing-deployment.md)さらに、構成を配置するユーザーと展開の依存関係オブジェクトにアタッチされているインターフェイスについて説明します。 最後に、[出力用のプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)表示および構成に依存するプロパティを設定するには、出力グループと出力オブジェクトのインターフェイス、およびプロパティ ページの使用について説明します。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>

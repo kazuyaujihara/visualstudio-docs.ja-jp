@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c079d3f85dbab87e30edb059c76202dd727f715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425064"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>オブジェクトからデータベースにデータを保存する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ TableAdapter の DBDirect メソッドのいずれかに、オブジェクトか
  既定では、データベースに対して直接実行できる TableAdapter の DBDirect メソッドが作成されます。 これらのメソッドは、直接呼び出すことができ、必要としない<xref:System.Data.DataSet>または<xref:System.Data.DataTable>データベースへの更新を送信するために変更を調整するオブジェクト。  
   
 > [!NOTE]
->  TableAdapter を構成するとき、メインのクエリは DBDirect メソッドを作成するのに十分な情報を提供する必要があります。 たとえば、TableAdapter が定義されている主キー列がないテーブルからデータのクエリに構成されている場合に生成しません DBDirect メソッド。  
+> TableAdapter を構成するとき、メインのクエリは DBDirect メソッドを作成するのに十分な情報を提供する必要があります。 たとえば、TableAdapter が定義されている主キー列がないテーブルからデータのクエリに構成されている場合に生成しません DBDirect メソッド。  
   
 |TableAdapter DBDirect メソッド|説明|  
 |----------------------------------|-----------------|  
@@ -57,7 +57,7 @@ TableAdapter の DBDirect メソッドのいずれかに、オブジェクトか
 - 呼び出すことによって、レコードの変更、`TableAdapter.Update`メソッドをレコードを更新する新しい値を渡すと、レコードを検索する元の値を渡します。  
   
     > [!NOTE]
-    >  オブジェクトに渡すために、元の値を維持するために必要のある、`Update`メソッド。 この例でのプロパティを使用して、`orig`元の値を格納するプレフィックス。  
+    > オブジェクトに渡すために、元の値を維持するために必要のある、`Update`メソッド。 この例でのプロパティを使用して、`orig`元の値を格納するプレフィックス。  
   
      次の例の既存のレコードを更新する、`Customers`テーブル内の新しいバージョンと元の値を渡すことによって、`Customer`オブジェクトを`TableAdapter.Update`メソッド。  
   
@@ -69,7 +69,7 @@ TableAdapter の DBDirect メソッドのいずれかに、オブジェクトか
 - 呼び出すことにより、レコードを削除、`TableAdapter.Delete`メソッドとレコードを検索する元の値を渡すことです。  
   
     > [!NOTE]
-    >  オブジェクトに渡すために、元の値を維持するために必要のある、`Delete`メソッド。 この例でのプロパティを使用して、`orig`元の値を格納するプレフィックス。  
+    > オブジェクトに渡すために、元の値を維持するために必要のある、`Delete`メソッド。 この例でのプロパティを使用して、`orig`元の値を格納するプレフィックス。  
   
      次の例からのレコードの削除、`Customers`テーブルの元の値を渡すことによって、`Customer`オブジェクトを`TableAdapter.Delete`メソッド。  
   

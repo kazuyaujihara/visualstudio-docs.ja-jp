@@ -11,12 +11,12 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f84d66a1dc51baffe743b1f7c16b4bf0ff15ef3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 474d5c66507b56bea609568b6acfe9f5eff75e9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414605"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>カスタム カテゴリと 表示項目を実装します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ VSPackage は、そのテキストの色とフォントの制御を提供でき�
   - 各メンバーの情報を表示**カテゴリ**します。  
   
   > [!NOTE]
-  >  すべて**カテゴリ**少なくとも 1 つ含める必要があります**表示項目**します。  
+  > すべて**カテゴリ**少なくとも 1 つ含める必要があります**表示項目**します。  
   
 - IDE を使用して、`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup`いくつかのカテゴリの共用体を定義するインターフェイス。  
   
@@ -122,7 +122,7 @@ VSPackage は、そのテキストの色とフォントの制御を提供でき�
      これは、システムによって実装されるを通して実行<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。 主に、永続化のサポートには、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>のフォントと色の情報を取得するメソッドを使用できる**項目を表示**します。 詳細については、次を参照してください。[にアクセスする格納されているフォントと色の設定](../extensibility/accessing-stored-font-and-color-settings.md)します。  
   
     > [!NOTE]
-    >  ポーリングによって得られた結果が正しいことに、使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>インターフェイスの取得メソッドを呼び出す前に、キャッシュのフラッシュと更新プログラムが必要なかどうかを決定する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。  
+    > ポーリングによって得られた結果が正しいことに、使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>インターフェイスの取得メソッドを呼び出す前に、キャッシュのフラッシュと更新プログラムが必要なかどうかを決定する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>   

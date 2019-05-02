@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 852992b3e7553ee07b2834d7253cd41dd46f4e8b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: e3979b7c50ee3af997924d15908556011682595d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415899"
 ---
 # <a name="sdk-helpers-for-debugging"></a>デバッグ用の SDK ヘルパー
 これらの関数と宣言は、C++ でのデバッグ エンジン、式エバリュエーターでは、およびシンボル プロバイダーを実装するためのグローバルなヘルパー関数です。
 
 > [!NOTE]
->  この時点では、これらの関数と宣言のマネージ バージョンはありません。
+> この時点では、これらの関数と宣言のマネージ バージョンはありません。
 
 ## <a name="overview"></a>概要
  Visual Studio で使用するデバッグ エンジン、式エバリュエーターでは、およびシンボル プロバイダーの順序でこれらを登録する必要があります。 これは、レジストリ サブキーとエントリ、それ以外の場合は「メトリックを設定します」と呼ばれる設定で 次のグローバル関数は、これらのメトリックの更新のプロセスを容易に設計されています。 これらの関数によって更新される各レジストリ サブキーのレイアウトを確認するレジストリの場所に、セクションを参照してください。
@@ -237,7 +237,7 @@ HRESULT EnumMetricSections(
  メトリックを読み取ったりで具体的には、レジストリに書き込まれた、`VisualStudio`サブキー。
 
 > [!NOTE]
->  ほとんどの場合、メトリックは、HKEY_LOCAL_MACHINE キーに書き込まれます。 ただし、場合によって HKEY_CURRENT_USER キーになります、変換先。 Dbgmetric.lib では、両方のキーを処理します。 メトリックを取得するには、HKEY_CURRENT_USER が検索してから、HKEY_LOCAL_MACHINE。 メトリックを設定していることは、パラメーターは、最上位レベルを使用するキーを指定します。
+> ほとんどの場合、メトリックは、HKEY_LOCAL_MACHINE キーに書き込まれます。 ただし、場合によって HKEY_CURRENT_USER キーになります、変換先。 Dbgmetric.lib では、両方のキーを処理します。 メトリックを取得するには、HKEY_CURRENT_USER が検索してから、HKEY_LOCAL_MACHINE。 メトリックを設定していることは、パラメーターは、最上位レベルを使用するキーを指定します。
 
  *[レジストリ キー]*\
 
@@ -269,7 +269,7 @@ HRESULT EnumMetricSections(
 |*[メトリックの値]*|メトリックに割り当てられた値。 型の値 (文字列、数値など) が必要では、メトリックに依存します。|
 
 > [!NOTE]
->  すべての Guid がの形式で格納されている`{GUID}`します。 たとえば、`{123D150B-FA18-461C-B218-45B3E4589F9B}` のようにします。
+> すべての Guid がの形式で格納されている`{GUID}`します。 たとえば、`{123D150B-FA18-461C-B218-45B3E4589F9B}` のようにします。
 
 ### <a name="debug-engines"></a>デバッグ エンジン
  レジストリでのデバッグ エンジンのメトリックの構成を次に示します。 `Engine` デバッグ エンジンのメトリックの種類の名前に対応して *[メトリックの種類]* 上記のレジストリ サブツリーでします。
@@ -348,7 +348,7 @@ HRESULT EnumMetricSections(
  レジストリで、式エバリュエーターのメトリックの構成を次に示します。 `ExpressionEvaluator` 式エバリュエーターのメトリックの種類の名前に対応して *[メトリックの種類]* します。
 
 > [!NOTE]
->  メトリックの種類の`ExpressionEvaluator`式エバリュエーターのメトリックの変更がすべてが適切な式エバリュエーターのメトリック関数を使用して送られることが前提として、dbgmetric.h で定義されていない (のレイアウト、`ExpressionEvaluator`サブキーがいくらか複雑な詳細は dbgmetric.lib 内部に隠されたため)。
+> メトリックの種類の`ExpressionEvaluator`式エバリュエーターのメトリックの変更がすべてが適切な式エバリュエーターのメトリック関数を使用して送られることが前提として、dbgmetric.h で定義されていない (のレイアウト、`ExpressionEvaluator`サブキーがいくらか複雑な詳細は dbgmetric.lib 内部に隠されたため)。
 
  `ExpressionEvaluator`\
 

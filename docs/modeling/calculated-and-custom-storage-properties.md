@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca2401333f7678b821b5c6fa68f7953a91996d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440021"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算プロパティおよびカスタム格納プロパティ
 ドメイン固有言語 (DSL) 内のすべてのドメイン プロパティは、図では、言語エクスプ ローラーで、ユーザーに表示されることができ、プログラム コードからアクセスできます。 ただし、プロパティは、その値が格納される方法では異なります。
@@ -50,7 +50,7 @@ ms.locfileid: "60060424"
      Dsl\GeneratedCode\DomainClasses.cs または DomainRelationships.cs が開きます。 強調表示されているメソッドの呼び出しを上記コメント Get の実装を指定するように求め*YourProperty*()。
 
     > [!NOTE]
-    >  このファイルは、DslDefinition.dsl から生成されます。 このファイルを編集する場合、変更は失われます をクリックした次回**すべてのテンプレートの変換**します。 代わりに、別のファイルに必要なメソッドを追加します。
+    > このファイルは、DslDefinition.dsl から生成されます。 このファイルを編集する場合、変更は失われます をクリックした次回**すべてのテンプレートの変換**します。 代わりに、別のファイルに必要なメソッドを追加します。
 
 6. 作成またはクラス ファイルを別のフォルダー、たとえば CustomCode に\\*YourDomainClass*。 cs します。
 

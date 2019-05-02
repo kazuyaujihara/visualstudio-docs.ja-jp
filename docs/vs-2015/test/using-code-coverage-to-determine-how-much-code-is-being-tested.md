@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9af0a3dc7c08a415f320ce3560cdfc23c462d4c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f539fd0a20bf852b04b5a41aff829cdcf0e52cf3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445925"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60087522"
 3. 結果が低カバレッジを示していた場合は、コードのどの部分が実行されていないかを調べ、その部分をカバーするテストをさらに作成します。 開発チームは、通常、約 80% のコード カバレッジを目標にします。 状況によっては、より低いカバレッジでも許容されます。 たとえば、一部のコードが標準テンプレートから生成される場合は、より低いカバレッジでも許容されます。  
   
 > [!TIP]
->  正確な結果を得るには、次の点に注意します。  
+> 正確な結果を得るには、次の点に注意します。  
 > 
 > - コンパイラの最適化がオフになっていることを確認します。  
 > 
@@ -240,7 +240,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 - 除外は、コンパイラ オプションを設定するか、`#pragma managed(off)` を使用して、アンマネージ (ネイティブ) コードとしてコンパイルする必要があります。  
   
 > [!NOTE]
->  C++/CLI コード内の関数を除外するには、関数に `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` 属性を適用します。 これは、C# の場合と同じです。  
+> C++/CLI コード内の関数を除外するには、関数に `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` 属性を適用します。 これは、C# の場合と同じです。  
   
 ### <a name="including-or-excluding-additional-elements"></a>追加の要素を含めるか除外する  
  コード カバレッジ分析の対象となるのは、読み込まれ、.dll または .exe ファイルと同じディレクトリ内の .pdb ファイルを利用できるアセンブリだけです。 そのため、状況によっては、適切な .pdb ファイルのコピーを取得することによって、対象となるアセンブリのセットを拡張できます。  

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93c30d9966dabdf7ad7b42bbad6ecbae5679e636
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53e227b2fdf97c406a86b31cee2a3c450948ee6b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434779"
 ---
 # <a name="save-data-in-project-files"></a>プロジェクト ファイル内のデータを保存します。
 プロジェクト サブタイプは、保存し、プロジェクト ファイルのサブタイプに固有のデータを取得できます。 マネージ パッケージ フレームワーク (MPF) は、このタスクを実行する 2 つのインターフェイスを提供します。
@@ -206,7 +206,7 @@ ms.locfileid: "60070339"
     ```
 
 > [!NOTE]
->  このトピックで提供されたすべてのコード例は部分の例の[VSSDK のサンプル](https://aka.ms/vs2015sdksamples)します。
+> このトピックで提供されたすべてのコード例は部分の例の[VSSDK のサンプル](https://aka.ms/vs2015sdksamples)します。
 
 ## <a name="see-also"></a>関連項目
 - [MSBuild プロジェクト ファイル内のデータを永続化します。](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

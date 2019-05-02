@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df11af5dee9ce510af01dab037a47a1bdd2f2880
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429125"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>チュートリアル: ClickOnce アプリケーションを手動で配置する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Visual Studio を使用してデプロイすることはできませんがある
      Authenticode 証明書を使用してデプロイを署名する必要があります。 テスト証明書を生成するには、Visual Studio、MageUI.exe、または MakeCert.exe および Pvk2Pfx.exe ツールを使用してまたは証明書機関 (CA) から証明書を取得できます。 信頼されたアプリケーションの配置を使用するように選択した場合はすべてのクライアント コンピューターに証明書のインストールを 1 回も行う必要があります。 詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。  
   
     > [!NOTE]
-    >  CNG 証明書が証明機関から入手できます。 使用してデプロイを登録することもできます。  
+    > CNG 証明書が証明機関から入手できます。 使用してデプロイを登録することもできます。  
   
 - アプリケーションに UAC 情報を含むマニフェストがないことを確認します。  
   
@@ -76,7 +76,7 @@ Visual Studio を使用してデプロイすることはできませんがある
 2. 作成した展開ディレクトリでは、バージョン サブディレクトリを作成します。 初めてアプリケーションを展開する場合は、名前、バージョン サブディレクトリ**1.0.0.0**します。  
   
     > [!NOTE]
-    >  配置のバージョンをアプリケーションのバージョンとは異なることはできます。  
+    > 配置のバージョンをアプリケーションのバージョンとは異なることはできます。  
   
 3. 実行可能ファイル、アセンブリ、リソース、およびデータ ファイルを含む、バージョン サブディレクトリには、すべてのアプリケーション ファイルをコピーします。 必要に応じて、追加のファイルが含まれている追加のサブディレクトリを作成できます。  
   
@@ -89,7 +89,7 @@ Visual Studio を使用してデプロイすることはできませんがある
     ```  
   
     > [!NOTE]
-    >  後にドット (.) を含めるようにしてください、`-FromDirectory`オプションは、現在のディレクトリを示します。 ドットを含めない場合、アプリケーション ファイル パスを指定する必要があります。  
+    > 後にドット (.) を含めるようにしてください、`-FromDirectory`オプションは、現在のディレクトリを示します。 ドットを含めない場合、アプリケーション ファイル パスを指定する必要があります。  
   
 6. Authenticode 証明書をアプリケーション マニフェストに署名します。 置換*mycert.pfx*証明書ファイルへのパス。 置換*passwd*証明書ファイルのパスワードに置き換えます。  
   
@@ -134,7 +134,7 @@ Visual Studio を使用してデプロイすることはできませんがある
 2. 作成した展開ディレクトリでは、バージョン サブディレクトリを作成します。 初めてアプリケーションを展開する場合は、名前、バージョン サブディレクトリ**1.0.0.0**します。  
   
     > [!NOTE]
-    >  配置のバージョンは、アプリケーションのバージョンとは異なる可能性があります。  
+    > 配置のバージョンは、アプリケーションのバージョンとは異なる可能性があります。  
   
 3. 実行可能ファイル、アセンブリ、リソース、およびデータ ファイルを含む、バージョン サブディレクトリには、すべてのアプリケーション ファイルをコピーします。 必要に応じて、追加のファイルが含まれている追加のサブディレクトリを作成できます。  
   

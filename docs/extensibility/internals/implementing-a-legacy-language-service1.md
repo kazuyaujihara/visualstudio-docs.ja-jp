@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88db1e11286c022552419fa70bb6847d36035c36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2fe405ea62562a9e7eb90948d92fcd5075887c8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420495"
 ---
 # <a name="implementing-a-legacy-language-service"></a>従来の言語サービスを実装します。
 構文の強調表示、かっこの一致、および IntelliSense の入力候補など、さまざまな機能をサポートする従来の言語サービスを実装するために、マネージ パッケージ フレームワーク (MPF) クラスを使用できます。
@@ -23,7 +23,7 @@ ms.locfileid: "56602859"
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 言語サービスを実装する新しい方法の詳細についてを参照してください。[エディターと言語サービス拡張](../../extensibility/editor-and-language-service-extensions.md)します。
 
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [従来の言語サービスの概要](../../extensibility/internals/legacy-language-service-overview.md)
@@ -42,11 +42,11 @@ ms.locfileid: "56602859"
 
  MPF を使用して、言語サービスのすべての機能を実装するために必要な 2 つのパーサーをについて説明します。
 
-- [チュートリアル: 従来の言語サービスを作成します。](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)
+- [チュートリアル: 従来の言語サービスの作成](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)
 
  VSPackage で、MPF 言語サービスを実装するために必要な基本的な手順を示します。
 
-- [チュートリアル: インストールされているコード スニペット (従来の実装) の一覧を取得します。](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+- [チュートリアル: インストールされているコード スニペットの一覧の取得 (従来の実装)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
 
  インストールされているコード スニペットの一覧を取得する方法を示します。
 

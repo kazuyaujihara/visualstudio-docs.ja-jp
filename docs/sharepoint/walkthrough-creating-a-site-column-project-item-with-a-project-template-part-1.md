@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4dec78b368991da18c5bc0f5a673c1dca91fbfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430405"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>チュートリアル: プロジェクト テンプレート、第 1 部でサイト列プロジェクト項目を作成します。
   SharePoint プロジェクトは、1 つ以上の SharePoint プロジェクト項目のコンテナーです。 独自の SharePoint プロジェクト項目の種類を作成し、それらをプロジェクト テンプレートと関連付けることで、Visual Studio で SharePoint プロジェクト システムを拡張できます。 このチュートリアルでは、サイト内の列を作成するためのプロジェクト項目の種類を定義し、サイト内の列プロジェクト項目が含まれる新しいプロジェクトの作成に使用できるプロジェクト テンプレートを作成します。
@@ -75,7 +75,7 @@ ms.locfileid: "60059995"
 4. 展開、 **Visual Basic**または**Visual c#** ノードを選択し、 **Extensibility**ノード。
 
     > [!NOTE]
-    >  **Extensibility**ノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
+    > **Extensibility**ノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
 
 5. プロジェクト テンプレートの一覧で選択**VSIX プロジェクト**します。
 
@@ -162,7 +162,7 @@ ms.locfileid: "60059995"
 2. という名前の SharePoint 2010 プロジェクトを作成する**BaseSharePointProject**します。
 
    > [!IMPORTANT]
-   >  **SharePoint カスタマイズ ウィザード**、選択しないでください、**ファーム ソリューションとして配置**オプション ボタンをクリックします。
+   > **SharePoint カスタマイズ ウィザード**、選択しないでください、**ファーム ソリューションとして配置**オプション ボタンをクリックします。
 
 3. プロジェクトに空の要素項目を追加し、名前を項目**Field1**します。
 
@@ -175,7 +175,7 @@ ms.locfileid: "60059995"
 7. BaseSharePointProject プロジェクトが含まれる、ディレクトリで、key.snk ファイルを選択し、**追加**ボタンをクリックします。
 
    > [!NOTE]
-   >  このチュートリアルで作成するプロジェクト テンプレートでは、テンプレートを使用して作成される各プロジェクトに署名するために、同じ key.snk ファイルが使用されます。 プロジェクト インスタンスごとに別の key.snk ファイルを作成するには、このサンプルを拡張する方法については、次を参照してください。[チュートリアル。プロジェクト テンプレート、第 2 部でサイト列プロジェクト項目を作成する](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)します。
+   > このチュートリアルで作成するプロジェクト テンプレートでは、テンプレートを使用して作成される各プロジェクトに署名するために、同じ key.snk ファイルが使用されます。 プロジェクト インスタンスごとに別の key.snk ファイルを作成するには、このサンプルを拡張する方法については、次を参照してください。[チュートリアル。プロジェクト テンプレート、第 2 部でサイト列プロジェクト項目を作成する](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)します。
 
 8. 手順 5. ～ 8. を繰り返して、BaseSharePointProject ディレクトリの指定されているサブフォルダーから次のファイルを追加します。
 
@@ -654,7 +654,7 @@ ms.locfileid: "60059995"
 6. **型**一覧で、選択**Microsoft.VisualStudio.ProjectTemplate**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `ProjectTemplate` 要素に対応します。 この要素は、プロジェクト テンプレートを格納する VSIX パッケージ内のサブフォルダーを示します。 詳細については、次を参照してください。 [ProjectTemplate 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))します。
+    > この値は、extension.vsixmanifest ファイル内の `ProjectTemplate` 要素に対応します。 この要素は、プロジェクト テンプレートを格納する VSIX パッケージ内のサブフォルダーを示します。 詳細については、次を参照してください。 [ProjectTemplate 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))します。
 
 7. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 
@@ -667,7 +667,7 @@ ms.locfileid: "60059995"
 10. **型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    > この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
 
 11. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 
@@ -715,14 +715,14 @@ ms.locfileid: "60059995"
      この手順により、デバッグに使用する開発用コンピューター上のローカル SharePoint サイトが指定されます。
 
     > [!NOTE]
-    >  **サイトの URL** Site Column プロジェクト テンプレートは、プロジェクトが作成されるときに、この値を収集するため、ウィザードを提供しないために、プロパティが既定では空です。 この値を開発者を要求し、新しいプロジェクトでこのプロパティを構成するウィザードを追加する方法については、次を参照してください。[チュートリアル。プロジェクト テンプレート、第 2 部でサイト列プロジェクト項目を作成する](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)します。
+    > **サイトの URL** Site Column プロジェクト テンプレートは、プロジェクトが作成されるときに、この値を収集するため、ウィザードを提供しないために、プロパティが既定では空です。 この値を開発者を要求し、新しいプロジェクトでこのプロパティを構成するウィザードを追加する方法については、次を参照してください。[チュートリアル。プロジェクト テンプレート、第 2 部でサイト列プロジェクト項目を作成する](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)します。
 
 3. **F5** キーを押します。
 
      サイト内の列がパッケージ化されで指定されている SharePoint サイトに配置された、**サイトの URL**プロジェクトのプロパティ。 Web ブラウザーには、このサイトの既定のページが表示されます。
 
     > [!NOTE]
-    >  場合、**スクリプト デバッグが無効**選択 ダイアログ ボックスが表示されたら、**はい**クリックしてプロジェクトのデバッグを続行します。
+    > 場合、**スクリプト デバッグが無効**選択 ダイアログ ボックスが表示されたら、**はい**クリックしてプロジェクトのデバッグを続行します。
 
 4. **サイトの操作**] メニューの [選択**サイト設定**します。
 

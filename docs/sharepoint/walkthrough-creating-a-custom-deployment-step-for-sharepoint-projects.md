@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d4f42793c061436fee83e007def9f1d7e1d8f7c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430433"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>チュートリアル: SharePoint プロジェクトのカスタム配置手順を作成します。
   SharePoint プロジェクトを展開するときに、Visual Studio は、特定の順序で一連の展開の手順を実行します。 Visual Studio には、多くの組み込みの配置手順が含まれていますが、独自に作成することもできます。
@@ -74,7 +74,7 @@ ms.locfileid: "60040173"
 3. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual c#** または**Visual Basic**ノードを選択し、**機能拡張**ノード。
 
     > [!NOTE]
-    >  **Extensibility**ノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
+    > **Extensibility**ノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
 
 4. ダイアログ ボックスの上部にある次のように選択します。 **.NET Framework 4.5**で .NET Framework のバージョンの一覧。
 
@@ -147,7 +147,7 @@ ms.locfileid: "60040173"
 1. **DeploymentStepExtension**プロジェクト、UpgradeStep コード ファイルを開き、そこに次のコードを貼り付けます。
 
     > [!NOTE]
-    >  後はこのコードを追加する、プロジェクトは、一部のコンパイル エラーになりますが、表示されなくなるときにコードを追加する後の手順でします。
+    > 後はこのコードを追加する、プロジェクトは、一部のコンパイル エラーになりますが、表示されなくなるときにコードを追加する後の手順でします。
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
@@ -205,7 +205,7 @@ ms.locfileid: "60040173"
 6. **型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    > この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
 
 7. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 
@@ -218,7 +218,7 @@ ms.locfileid: "60040173"
 10. **型**一覧で、入力**SharePoint.Commands.v4**します。
 
     > [!NOTE]
-    >  この要素は、Visual Studio 拡張機能に含めるカスタム拡張機能を指定します。 詳細については、次を参照してください。[資産要素 (VSX Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)します。
+    > この要素は、Visual Studio 拡張機能に含めるカスタム拡張機能を指定します。 詳細については、次を参照してください。[資産要素 (VSX Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)します。
 
 11. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 
@@ -262,7 +262,7 @@ ms.locfileid: "60040173"
 6. **この SharePoint ソリューションの信頼レベルはどの**、選択、**ファーム ソリューションとして配置**オプション ボタンをクリックします。
 
    > [!NOTE]
-   >  デプロイのアップグレード手順では、サンド ボックス ソリューションをサポートしていません。
+   > デプロイのアップグレード手順では、サンド ボックス ソリューションをサポートしていません。
 
 7. 選択、**完了**ボタンをクリックします。
 

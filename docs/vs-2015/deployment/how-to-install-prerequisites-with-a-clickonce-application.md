@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 04f6c78f3733bbc8aab3aec5811f1eb643ecca4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18c8dd4d0bc79ac2f3af44b8b5f8dd6faacb9f45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434081"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ ms.locfileid: "60056615"
  パッケージ化と発行の前提条件ではなく、コンポーネントのダウンロード場所を指定することもできます。 たとえば、発行されたすべてのアプリケーションと共に必須コンポーネントを含むではなく可能性がありますを使用する一元的なファイル共有またはすべての前提条件インストーラーを含む Web 上の場所: コンポーネントのダウンロード、インストール時に、その場所からインストールします。  
   
 > [!IMPORTANT]
->  初めて発行する前に、開発用コンピューターに必須コンポーネントのインストーラー パッケージを追加する必要があります[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション。 詳細については、「[方法 :ClickOnce アプリケーションと共に必須コンポーネントを含める](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)」を参照してください。  
+> 初めて発行する前に、開発用コンピューターに必須コンポーネントのインストーラー パッケージを追加する必要があります[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション。 詳細については、「[方法 :ClickOnce アプリケーションと共に必須コンポーネントを含める](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)」を参照してください。  
   
  前提条件がで管理されている、**の前提条件**からアクセスできるダイアログ ボックス、**発行**のウィンドウ、**プロジェクト デザイナー**。  
   
 > [!NOTE]
->  前提条件の定義済みの一覧だけでなく、一覧に、独自のコンポーネントを追加できます。 詳細については、次を参照してください。[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)します。  
+> 前提条件の定義済みの一覧だけでなく、一覧に、独自のコンポーネントを追加できます。 詳細については、次を参照してください。[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)します。  
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>ClickOnce アプリケーションと共にをインストールする前提条件を指定するには  
   
@@ -68,7 +68,7 @@ ms.locfileid: "60056615"
 6. ボックスの一覧から場所を選択または URL、ファイルのパスまたは FTP の場所を入力し、クリックして**ok をクリックします。**  
   
     > [!NOTE]
-    >  指定した位置に、指定したコンポーネントのインストーラーが存在することを確認する必要があります。  
+    > 指定した位置に、指定したコンポーネントのインストーラーが存在することを確認する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   

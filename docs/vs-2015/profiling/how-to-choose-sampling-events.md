@@ -19,12 +19,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 50b9fcb98b64e36d37ec2153588dcbb388ea960b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432830"
 ---
 # <a name="how-to-choose-sampling-events"></a>方法: サンプリング イベントを選択します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60105501"
 - パフォーマンス カウンター - 低レベルのパフォーマンスの問題用の CPU カウンター。  
   
 > [!IMPORTANT]
->  サンプリング方法を使用して .NET メモリ データ (割り当てかオブジェクトの有効期間、またはその両方) を収集する場合、ユーザーが指定したサンプリング イベントはすべて無視され、適切なメモリの割り当てイベントかガベージ コレクション イベント、またはその両方を使用してデータが収集されます。  
+> サンプリング方法を使用して .NET メモリ データ (割り当てかオブジェクトの有効期間、またはその両方) を収集する場合、ユーザーが指定したサンプリング イベントはすべて無視され、適切なメモリの割り当てイベントかガベージ コレクション イベント、またはその両方を使用してデータが収集されます。  
   
 ### <a name="to-select-a-sample-event"></a>サンプル イベントを選択するには  
   
@@ -51,7 +51,7 @@ ms.locfileid: "60105501"
 3. **[サンプル イベント]** ドロップダウン リストで、アプリケーションのプロファイリングに使用するサンプル イベントを選択します。  
   
     > [!NOTE]
-    >  **[利用可能なパフォーマンス カウンター]** は、**[サンプル イベント]** ドロップダウン リストの **[パフォーマンス カウンター]** を選択した場合のみ有効です。  
+    > **[利用可能なパフォーマンス カウンター]** は、**[サンプル イベント]** ドロップダウン リストの **[パフォーマンス カウンター]** を選択した場合のみ有効です。  
   
 4. **[パフォーマンス カウンター]** を選択した場合、**[使用可能なパフォーマンス カウンター]** ツリー ビュー コントロールから、特定の CPU カウンターを選択します。  
   

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 94e3ccc30507ccd7995c4d4fad548fe5ff425365
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 264b7cd4d60ebc963d794e0ca06fc16fd5edc7d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445350"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>方法: アクション ペイン上のコントロールのレイアウトを管理します。
   操作ウィンドウが既定では、ドキュメントまたはワークシートの右側にドッキングされています。ただし、左、上、または下部にドッキングできます。 複数のユーザー コントロールを使用している場合は、[操作] ウィンドウにユーザー コントロールを正しくスタックするコードを記述できます。 詳細については、次を参照してください。[操作ウィンドウの概要](../vsto/actions-pane-overview.md)します。
@@ -29,10 +29,10 @@ ms.locfileid: "60094613"
  コントロールの積み重ね順は、[操作] ウィンドウを垂直方向または水平方向にドッキングするかどうかによって異なります。
 
 > [!NOTE]
->  ユーザーには、実行時に操作ウィンドウがサイズ変更、操作ウィンドウのサイズを変更するためにコントロールを設定できます。 Windows フォーム コントロールの <xref:System.Windows.Forms.Control.Anchor%2A> プロパティを使用すると、コントロールを操作ウィンドウに固定できます。 詳細については、「[方法 :Windows フォーム上のコントロールを固定](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)します。
+> ユーザーには、実行時に操作ウィンドウがサイズ変更、操作ウィンドウのサイズを変更するためにコントロールを設定できます。 Windows フォーム コントロールの <xref:System.Windows.Forms.Control.Anchor%2A> プロパティを使用すると、コントロールを操作ウィンドウに固定できます。 詳細については、「[方法 :Windows フォーム上のコントロールを固定](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)します。
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>操作ウィンドウ コントロールの積み重ね順を設定するには
 

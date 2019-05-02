@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 957805caa946dced54d52f1aa6b4a7f96e75b31a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 401ce9b8421cd636fc72c59dcd6641ff4e05d968
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440349"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO アドインのアーキテクチャ
   Visual Studio の Office Developer Tools を使用して作成される VSTO アドインには、安定性とセキュリティを重視するアーキテクチャ上の特性があり、Microsoft Office と密接に連携させることができます。 このトピックでは、VSTO アドインの次の点について説明します。
@@ -44,7 +44,7 @@ ms.locfileid: "60091084"
  アプリケーションに複数の VSTO アドインがインストールされている場合、それぞれの VSTO アドインは異なるアプリケーション ドメインに読み込まれます。 つまり、正しく動作しない 1 つの VSTO アドインが原因で他の VSTO アドインでエラーが発生することはありません。 また、アプリケーションが閉じられた場合に、すべての VSTO アドイン アセンブリを確実にメモリからアンロードするためにも役立ちます。 アプリケーション ドメインの詳細については、次を参照してください。[アプリケーション ドメイン](/dotnet/framework/app-domains/application-domains)します。
 
 > [!NOTE]
->  Visual Studio の Office Developer Tools を使用して作成する VSTO アドインは、エンド ユーザーがホストの Microsoft Office アプリケーションを起動したときにのみ使用されることを目的としています。 アプリケーションがプログラムで起動された場合 (オートメーション機能を使用して起動される場合など)、VSTO アドインが予期したとおりに動作しないことがあります。
+> Visual Studio の Office Developer Tools を使用して作成する VSTO アドインは、エンド ユーザーがホストの Microsoft Office アプリケーションを起動したときにのみ使用されることを目的としています。 アプリケーションがプログラムで起動された場合 (オートメーション機能を使用して起動される場合など)、VSTO アドインが予期したとおりに動作しないことがあります。
 
 ## <a name="AddinComponents"></a> VSTO アドインのコンポーネント
  VSTO アドイン アセンブリは主要なコンポーネントですが、Microsoft Office アプリケーションが VSTO アドインを検出して読み込む動作において重要な役割を果たすコンポーネントが他にもいくつかあります。
@@ -70,7 +70,7 @@ ms.locfileid: "60091084"
  ![2007 office アドイン アーキテクチャ](../vsto/media/office07addin.png "2007 Office アドインのアーキテクチャ")
 
 > [!NOTE]
->  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]を対象とする Office ソリューションでは、PIA を直接呼び出す代わりに、ソリューション アセンブリに埋め込まれた PIA 型情報を使用してホスト アプリケーションのオブジェクト モデルを呼び出します。 詳細については、[Office ソリューションのデザインと作成](../vsto/designing-and-creating-office-solutions.md)を参照してください。
+> [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]を対象とする Office ソリューションでは、PIA を直接呼び出す代わりに、ソリューション アセンブリに埋め込まれた PIA 型情報を使用してホスト アプリケーションのオブジェクト モデルを呼び出します。 詳細については、[Office ソリューションのデザインと作成](../vsto/designing-and-creating-office-solutions.md)を参照してください。
 
 ### <a name="loading-process"></a>読み込みプロセス
  ユーザーがアプリケーションを起動すると、次のステップが実行されます。
@@ -100,7 +100,7 @@ ms.locfileid: "60091084"
      必要に応じて、このメソッドをオーバーライドして、機能拡張インターフェイスを実装するオブジェクトを返すことで Microsoft Office 機能を公開できます。 詳細については、次を参照してください。[機能拡張インターフェイスによる UI のカスタマイズ機能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)します。
 
     > [!NOTE]
-    >  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は、ホスト アプリケーションでサポートされている機能拡張インターフェイスごとに、 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> メソッドを呼び出します。 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> メソッドの最初の呼び出しは、通常、 `ThisAddIn_Startup` メソッド呼び出しの前に実行されますが、 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> メソッドが呼び出される時点や回数について、推測に基づいて VSTO アドインを作成してはいけません。
+    > [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は、ホスト アプリケーションでサポートされている機能拡張インターフェイスごとに、 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> メソッドを呼び出します。 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> メソッドの最初の呼び出しは、通常、 `ThisAddIn_Startup` メソッド呼び出しの前に実行されますが、 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> メソッドが呼び出される時点や回数について、推測に基づいて VSTO アドインを作成してはいけません。
 
 11. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は VSTO アドインの `ThisAddIn_Startup` メソッドを呼び出します。 このメソッドは、 <xref:Microsoft.Office.Tools.AddInBase.Startup> イベントの既定のイベント ハンドラーです。 詳細については、次を参照してください。 [Office プロジェクト内のイベント](../vsto/events-in-office-projects.md)します。
 

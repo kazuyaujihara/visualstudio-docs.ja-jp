@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f64a7f7c018863e85900da2b09e018d29da4dfe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: d5174d00593b44d51b5628851039b1d0a37753c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387493"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045:型を参照によって渡しません
 
@@ -43,7 +43,7 @@ ms.locfileid: "55922876"
  戻り値は一般的であり使用頻度の高いの適切なアプリケーションが`out`と`ref`パラメーターは、中間の設計とコーディングのスキルが必要です。 ライブラリのアーキテクトが設計には一般的なユーザーはユーザーがマスターの操作を期待できません`out`または`ref`パラメーター。
 
 > [!NOTE]
->  大きな構造体のパラメーターを使用するときにこれらの構造をコピーするために必要なその他のリソースにより、パフォーマンスに影響値渡しする場合。 このような場合は、使用を検討できます`ref`または`out`パラメーター。
+> 大きな構造体のパラメーターを使用するときにこれらの構造をコピーするために必要なその他のリソースにより、パフォーマンスに影響値渡しする場合。 このような場合は、使用を検討できます`ref`または`out`パラメーター。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この値の型によって引き起こされるルールの違反を修正するには、その戻り値としてオブジェクトを返すメソッドがあります。 メソッドは、複数の値を返す必要があります、値を保持するオブジェクトの 1 つのインスタンスが返されるまで設計し直します。

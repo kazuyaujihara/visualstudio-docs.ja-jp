@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5137464f253469e62bf4a22c415906a4a3f352a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 684afac90741bbac56a0fc295c21c96a2001859e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424940"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>チュートリアル: Windows フォームでのシンプルな WCF サービスの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60096089"
      ![WCF サービス ライブラリ プロジェクト](../data-tools/media/wcf1.PNG "wcf1")  
   
     > [!NOTE]
-    >  これにより、テストしてアクセスすることが可能な機能するサービスが作成されます。 次の 2 つの手順は、別のデータ型を使用するように既定の方法を変更する方法を示しています。 実際のアプリケーションで、独自の関数をサービスに追加することもできます。  
+    > これにより、テストしてアクセスすることが可能な機能するサービスが作成されます。 次の 2 つの手順は、別のデータ型を使用するように既定の方法を変更する方法を示しています。 実際のアプリケーションで、独自の関数をサービスに追加することもできます。  
   
 3. ![IService1 ファイル](../data-tools/media/wcf2.png "wcf2")  
   

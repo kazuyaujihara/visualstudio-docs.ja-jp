@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f826168d3b198090ba58f409f096b4b12c760c70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 507bb70539019646f57f0aa9267573429d3fa202
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433544"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>方法: ワークフロー デザイナーでワークフローにコメントを追加する
 より大きく複雑なワーク フローを簡単に作成するため、[!INCLUDE[net_v45](../includes/net-v45-md.md)] では開発者がデザイナーで次の種類の項目に注釈を追加できます。  
@@ -35,7 +35,7 @@ ms.locfileid: "60059670"
 - <xref:System.Activities.Argument>  
   
 > [!IMPORTANT]
->  注釈の内容はワーク フローに関連付けられた XAML ファイルにテキスト形式で保存され、他のユーザーに読み取られる可能性があります。 注釈に機密情報を入力する場合は注意してください。  
+> 注釈の内容はワーク フローに関連付けられた XAML ファイルにテキスト形式で保存され、他のユーザーに読み取られる可能性があります。 注釈に機密情報を入力する場合は注意してください。  
   
 ### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>デザイナーのアクティビティへの注釈の追加  
   

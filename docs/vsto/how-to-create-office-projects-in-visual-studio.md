@@ -23,15 +23,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: e41b7714ce5f9a98e50092c1507457b848201773
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419613"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>方法: Visual Studio での Office プロジェクトを作成します。
-  使用することができます[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]VSTO アドインとドキュメント レベルの作成に Microsoft Office アプリケーション用のカスタマイズ。 これらの種類のプロジェクトの詳細については、[Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)を参照してください。
+  使用することができます[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]VSTO アドインとドキュメント レベルの作成に Microsoft Office アプリケーション用のカスタマイズ。 これらの種類のプロジェクトの詳細については、次を参照してください。 [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)します。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -44,16 +44,16 @@ ms.locfileid: "57868173"
     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
    > [!NOTE]
-   >  既定では、Office プロジェクトは [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] を対象とします。 詳細については、[.NET Framework クライアント プロファイル](/dotnet/framework/deployment/client-profile)を参照してください。
+   > 既定では、Office プロジェクトは [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] を対象とします。 詳細については、次を参照してください。 [.NET Framework クライアント プロファイル](/dotnet/framework/deployment/client-profile)します。
 
 2. 展開テンプレート ペインで、使用する言語のノードの下で**Office/sharepoint**します。
 
 3. 選択、 **Office アドイン**ノード。
 
-4. プロジェクト テンプレートの一覧で、VSTO アドイン プロジェクト テンプレートを選択します。 使用可能な VSTO アドイン プロジェクト テンプレートの一覧は、[Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)を参照してください。
+4. プロジェクト テンプレートの一覧で、VSTO アドイン プロジェクト テンプレートを選択します。 使用可能な VSTO アドイン プロジェクト テンプレートの一覧は、次を参照してください。 [Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)します。
 
    > [!NOTE]
-   >  選択してもプロジェクト テンプレートが表示されない場合、 **Office アドイン**ノード、ことを確認します **.NET Framework 4**または後で、ダイアログ ボックスの上部にあるコンボ ボックスで選択されています。 Office プロジェクト テンプレートは、.NET Framework の両方のバージョンで表示されます。
+   > 選択してもプロジェクト テンプレートが表示されない場合、 **Office アドイン**ノード、ことを確認します **.NET Framework 4**または後で、ダイアログ ボックスの上部にあるコンボ ボックスで選択されています。 Office プロジェクト テンプレートは、.NET Framework の両方のバージョンで表示されます。
 
 5. **名前**ボックスに、プロジェクトの名前を入力します。 既定では、このプロジェクト名がソリューション名としても使用されます。
 
@@ -88,7 +88,7 @@ ms.locfileid: "57868173"
    ::: moniker range="vs-2017"
 
    > [!NOTE]
-   > アドイン プロジェクトを作成すると、必ず保存されます。 アドイン プロジェクトを一時プロジェクトとして作成することはできません。 一時プロジェクトの詳細については、[一時プロジェクト](../ide/creating-solutions-and-projects.md#create-a-temporary-project)を参照してください。
+   > アドイン プロジェクトを作成すると、必ず保存されます。 アドイン プロジェクトを一時プロジェクトとして作成することはできません。 一時プロジェクトの詳細については、次を参照してください。[一時プロジェクト](../ide/creating-solutions-and-projects.md#create-a-temporary-project)します。
 
    ::: moniker-end
 
@@ -102,7 +102,7 @@ ms.locfileid: "57868173"
 
 3. **[Office アドイン]** ノードを選択します。
 
-4. プロジェクト テンプレートの一覧で、ドキュメント レベルのプロジェクト テンプレートを選択します。 使用できるドキュメント レベルのプロジェクト テンプレートの一覧は、[Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)を参照してください。
+4. プロジェクト テンプレートの一覧で、ドキュメント レベルのプロジェクト テンプレートを選択します。 使用できるドキュメント レベルのプロジェクト テンプレートの一覧は、次を参照してください。 [Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)します。
 
    > [!NOTE]
    > 選択してもプロジェクト テンプレートが表示されない場合、 **Office アドイン**ノード、ことを確認します **.NET Framework 4**または後で選択されています。
@@ -118,7 +118,7 @@ ms.locfileid: "57868173"
 
 7. 選択**新しい文書を作成**ソリューションでは、新しいドキュメントを作成または選択するかどうか**既存のドキュメントをコピー**を既存のドキュメントをカスタマイズする場合。
 
-    新しいドキュメントを作成する場合は、内の名前を指定、**名前**ボックスし、ドキュメントの形式を使用して、**形式**ボックス。 使用可能な形式の詳細については、[のドキュメント レベル カスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)を参照してください。
+    新しいドキュメントを作成する場合は、内の名前を指定、**名前**ボックスし、ドキュメントの形式を使用して、**形式**ボックス。 使用可能な形式の詳細については、次を参照してください。[のドキュメント レベル カスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)します。
 
     既存のドキュメントを使用する場合は、ドキュメントの場所を指定、 **、既存のドキュメントの完全なパス**ボックス。 使用できるパスは、絶対パスと UNC パスです。 ドキュメントへの HTTP パス、FTP パス、または他のプロトコル パスは使用しないでください。
 
@@ -147,7 +147,7 @@ ms.locfileid: "57868173"
    - パーセント記号 (%)
 
    > [!NOTE]
-   >  [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] プロジェクトで既存のドキュメントを使用する場合は、[!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] で作成したドキュメントか、この形式に変換したドキュメントだけを使用してください。 同様に、Word 2010 プロジェクトで既存のドキュメントを使用する場合は、Word 2010 で作成したドキュメントか、Word 2010 に変換したドキュメントだけを使用してください。 以前のバージョンの Word で作成した文書を使用すると、文書の一部の機能が使用できなくなります。 このような機能を使用するコードを記述しようとすると、プロジェクトでエラーが発生する可能性があります。 ドキュメントを変換するでを開きます[!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]または Word 2010 で、**ファイル**リボンのタブで、選択**情報** > **変換**します。
+   > [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] プロジェクトで既存のドキュメントを使用する場合は、[!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] で作成したドキュメントか、この形式に変換したドキュメントだけを使用してください。 同様に、Word 2010 プロジェクトで既存のドキュメントを使用する場合は、Word 2010 で作成したドキュメントか、Word 2010 に変換したドキュメントだけを使用してください。 以前のバージョンの Word で作成した文書を使用すると、文書の一部の機能が使用できなくなります。 このような機能を使用するコードを記述しようとすると、プロジェクトでエラーが発生する可能性があります。 ドキュメントを変換するでを開きます[!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]または Word 2010 で、**ファイル**リボンのタブで、選択**情報** > **変換**します。
 
 8. **[完了]** を選択します。
 

@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1219543c438c79ad1add068262d9556dd2d7ce8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b2f2a7c134142668613cc38cee9357e42cb95096
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433942"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
 指定されたテキストは、使用可能な文字は提供されませんが、ヘルパーに通知します。  
@@ -57,7 +57,7 @@ HRESULT AddDeferredText(
  前提とする単一の呼び出し`IDebugDocumentText::GetText`複数の呼び出しから文字を取得できます`AddDeferredText`。 遅延の文字の同じ範囲にはヘルパー クラスは複数回要求可能性があります。  
   
 > [!NOTE]
->  呼び出す`AddDeferredText`への呼び出しを混在させないでください`AddUnicodeText`または`AddDBCSText`します。 この場合、`E_FAIL`が返されます。  
+> 呼び出す`AddDeferredText`への呼び出しを混在させないでください`AddUnicodeText`または`AddDBCSText`します。 この場合、`E_FAIL`が返されます。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugDocumentHelper インターフェイス](../../winscript/reference/idebugdocumenthelper-interface.md)   

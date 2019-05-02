@@ -12,12 +12,12 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 63dd7f96e1d7af81b81a1b9d6a445356bb8de27e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: be17b2f78048bd0e9c2052066796857dbeba2048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435262"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>方法: インストーラー向けの登録情報の生成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60117734"
 マネージ VSPackage を登録するマニフェストを生成する RegPkg.exe ユーティリティを使用できます。 マニフェストは、Windows インストーラーのセットアップ パッケージに組み込むことができます。 RegPkg もに基づいてセットアップのソース ファイルに含めることができるファイルを生成できる、 [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=62238)します。  
   
 > [!IMPORTANT]
->  開発システムに固有のパス名を生成するよう RegPkg に、適切な Windows インストーラーがプロパティを書式設定されたので、RegPkg を使用するたびに使用する出力を編集する必要があります。 たとえば、InprocServer32 値必要があります **[SystemFolder]mscoree.dll**パスを使用する必要がありますと **[#filekey]** と **[$componentkey]** します。 この方法で出力を調整することでは、または別のディレクトリ、ローカライズされたディレクトリ名、およびユーザーが選択可能なパスで別のドライブにインストールされている Windows でコンピューターをサポートしています。 詳細については、次を参照してください。[書式付き](http://go.microsoft.com/fwlink/?LinkId=71120)、Windows インストーラー sdk。 開発システムのパスの RegPkg 規則に従うかどうか、たとえば、これは、フォームの Id をファイル*ファイル名*— 少ない数の変更を行う必要があります。  
+> 開発システムに固有のパス名を生成するよう RegPkg に、適切な Windows インストーラーがプロパティを書式設定されたので、RegPkg を使用するたびに使用する出力を編集する必要があります。 たとえば、InprocServer32 値必要があります **[SystemFolder]mscoree.dll**パスを使用する必要がありますと **[#filekey]** と **[$componentkey]** します。 この方法で出力を調整することでは、または別のディレクトリ、ローカライズされたディレクトリ名、およびユーザーが選択可能なパスで別のドライブにインストールされている Windows でコンピューターをサポートしています。 詳細については、次を参照してください。[書式付き](http://go.microsoft.com/fwlink/?LinkId=71120)、Windows インストーラー sdk。 開発システムのパスの RegPkg 規則に従うかどうか、たとえば、これは、フォームの Id をファイル*ファイル名*— 少ない数の変更を行う必要があります。  
   
 ### <a name="to-create-a-registration-manifest"></a>登録のマニフェストを作成するには  
   

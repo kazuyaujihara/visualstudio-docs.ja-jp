@@ -37,12 +37,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a0edc40a8a6523c76a6b6f8074a108219152c06
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 51d361bf74fb1181c64e5299b0925c262f185e9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426331"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Visual Studio Code エディターや、**[検索結果]** ウィンドウなど
  正規表現で検索と置換を行う方法については、「[Visual Studio での正規表現の使用](../ide/using-regular-expressions-in-visual-studio.md)」を参照してください。  
   
 > [!TIP]
->  **[検索]** ボックスは、ツール バー コントロールとして使用できますが、既定では表示されません。 **[標準]** ツール バーの **[ボタンの追加または削除]** を選択し、**[検索]** を選択すると、**[検索]** ボックスを表示できます。 詳細については、「[[検索] ボックス](../ide/find-command-box.md)」を参照してください。  
+> **[検索]** ボックスは、ツール バー コントロールとして使用できますが、既定では表示されません。 **[標準]** ツール バーの **[ボタンの追加または削除]** を選択し、**[検索]** を選択すると、**[検索]** ボックスを表示できます。 詳細については、「[[検索] ボックス](../ide/find-command-box.md)」を参照してください。  
   
 ## <a name="find-and-replace-control"></a>[検索と置換] コントロール  
  **[検索と置換]** コントロールは、コード エディター ウィンドウの右上隅に表示されます。 **[検索と置換]** コントロールにより、現在のドキュメントに出現する指定された検索文字列がすべて直ちに強調表示されます。 検索コントロールの **[次を検索]** または **[前を検索]** をクリックすると、1 つの出現箇所から別の出現箇所に移動できます。  

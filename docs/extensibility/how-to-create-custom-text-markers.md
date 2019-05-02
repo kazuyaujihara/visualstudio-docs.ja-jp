@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0462b4d6aac29c87d71506e3a535f21e2b91a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 717badcc52088568ae348dbb1b712b2202cc7a72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415555"
 ---
 # <a name="how-to-create-custom-text-markers"></a>方法: カスタム テキスト マーカーを作成します。
 強調したり、コードを整理するカスタム テキスト マーカーを作成する場合は、以下の手順を実行する必要があります。
@@ -41,7 +41,7 @@ ms.locfileid: "60103404"
     `<PackageGUID>` オートメーション オブジェクトを実装する VSPackage の GUID です。
 
    > [!NOTE]
-   >  ルート パス**\software\microsoft\visualstudio\\\<バージョン >** 詳細詳細については、Visual Studio シェルが初期化されるときに、代替ルートで上書きすることができます[コマンド ライン スイッチ](../extensibility/command-line-switches-visual-studio-sdk.md)します。
+   > ルート パス**\software\microsoft\visualstudio\\\<バージョン >** 詳細詳細については、Visual Studio シェルが初期化されるときに、代替ルートで上書きすることができます[コマンド ライン スイッチ](../extensibility/command-line-switches-visual-studio-sdk.md)します。
 
 2. 次の 4 つの値を作成する**\software\microsoft\visualstudio\\\<バージョン > \Text Editor\External マーカー\\\<MarkerGUID >**
 

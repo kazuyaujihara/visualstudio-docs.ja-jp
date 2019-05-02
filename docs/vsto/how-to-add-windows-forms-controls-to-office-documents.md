@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 849bffa36050970e164083f7bb90353f18cff01a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9241cb34ca380b2efe0b3c2ceb7f5d11376bef2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427486"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>方法: Office ドキュメントへの Windows フォーム コントロールを追加します。
   Windows フォーム コントロールは、デザイン時にドキュメント レベルのプロジェクトの Microsoft Office Excel および Microsoft Office Word のドキュメントに追加できます。 ドキュメント レベルのカスタマイズと VSTO アドインで、実行時にコントロールを追加できます。たとえば、ユーザーがオプションの一覧から選択できるように、<xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> コントロールをワークシートに追加できます。
@@ -49,7 +49,7 @@ ms.locfileid: "60047112"
 2. **コモン コントロール**のタブ、**ツールボックス**、追加するコントロールをクリックして、ドキュメントにドラッグします。
 
     > [!NOTE]
-    >  Excel 内でコントロールを選択すると、 **数式バー** に  " **=EMBED("WinForms.Control.Host","")**" と表示されます。 このテキストは必要なので、削除しないでください。
+    > Excel 内でコントロールを選択すると、 **数式バー** に  " **=EMBED("WinForms.Control.Host","")**" と表示されます。 このテキストは必要なので、削除しないでください。
 
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>Windows フォーム コントロールをドキュメントに描画するには
 
@@ -62,7 +62,7 @@ ms.locfileid: "60047112"
      指定したドキュメントの位置に、指定したサイズのコントロールが追加されます。
 
     > [!NOTE]
-    >  Excel でコントロールを選択すると表示されます **=EMBED("WinForms.Control.Host","")** で、**数式バー**します。 このテキストは必要なので、削除しないでください。
+    > Excel でコントロールを選択すると表示されます **=EMBED("WinForms.Control.Host","")** で、**数式バー**します。 このテキストは必要なので、削除しないでください。
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>シングルクリックで Windows フォーム コントロールをドキュメントに追加するには
 
@@ -75,7 +75,7 @@ ms.locfileid: "60047112"
      コントロールが既定のサイズでドキュメントに追加されます。
 
     > [!NOTE]
-    >  Excel 内でコントロールを選択すると、 **数式バー** に  " **=EMBED("WinForms.Control.Host","")**" と表示されます。 このテキストは必要なので、削除しないでください。
+    > Excel 内でコントロールを選択すると、 **数式バー** に  " **=EMBED("WinForms.Control.Host","")**" と表示されます。 このテキストは必要なので、削除しないでください。
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>ダブルクリックで Windows フォーム コントロールをドキュメントに追加するには
 
@@ -86,7 +86,7 @@ ms.locfileid: "60047112"
      コントロールは、ドキュメントまたはアクティブなペインの中央に追加されます。
 
     > [!NOTE]
-    >  Excel 内でコントロールを選択すると、 **数式バー** に  " **=EMBED("WinForms.Control.Host","")**" と表示されます。 このテキストは必要なので、削除しないでください。
+    > Excel 内でコントロールを選択すると、 **数式バー** に  " **=EMBED("WinForms.Control.Host","")**" と表示されます。 このテキストは必要なので、削除しないでください。
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>Enter キーを押して、ドキュメントに Windows フォーム コントロールを追加するには
 
@@ -97,7 +97,7 @@ ms.locfileid: "60047112"
      コントロールは、ドキュメントまたはアクティブなペインの中央に追加されます。
 
     > [!NOTE]
-    >  Excel 内でコントロールを選択すると、 **数式バー** に  " **=EMBED("WinForms.Control.Host","")**" と表示されます。 このテキストは必要なので、削除しないでください。
+    > Excel 内でコントロールを選択すると、 **数式バー** に  " **=EMBED("WinForms.Control.Host","")**" と表示されます。 このテキストは必要なので、削除しないでください。
 
 ## <a name="runtimedoclevel"></a> ドキュメント レベルのプロジェクトでの実行時にコントロールを追加します。
  プログラムで、実行時にドキュメントに Windows フォーム コントロールを追加することができます。 Word では、`ThisDocument` クラスの <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> プロパティのメソッドを使用します。 Excel でのメソッドを使用して、<xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A>のプロパティを`Sheet` *n*クラス。 各メソッドにはいくつかのオーバーロードがあり、それらを使用してさまざまな方法でコントロールの場所を指定できます。
@@ -125,7 +125,7 @@ ms.locfileid: "60047112"
 1. 追加の名前を持つメソッドを使用して\<*コントロール クラス*> (場所*コントロール クラス*などの追加する Windows フォーム コントロールのクラス名は、 <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>)。
 
     > [!NOTE]
-    >  プロジェクトを対象の VSTO アドインで、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または後への参照を追加する必要があります、 *Microsoft.Office.Tools.Excel.v4.0.Utilities.dll*または*Microsoft.Office.Tools.Word.v4.0.Utilities.dll*アセンブリの追加をアクセスする前に\<*コントロール クラス*> メソッドです。
+    > プロジェクトを対象の VSTO アドインで、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または後への参照を追加する必要があります、 *Microsoft.Office.Tools.Excel.v4.0.Utilities.dll*または*Microsoft.Office.Tools.Word.v4.0.Utilities.dll*アセンブリの追加をアクセスする前に\<*コントロール クラス*> メソッドです。
 
      次のコード例で、Word VSTO アドインを使用して作業中のドキュメントの最初の段落に <xref:Microsoft.Office.Tools.Word.Controls.Button> を追加する方法を示します。
 

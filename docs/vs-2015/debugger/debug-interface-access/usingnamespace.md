@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8e5be853d75fd1aa7ed701c428cdb15822d867cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a8213aeba3d9b1b0577e7639725642d574189b1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434135"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58975249"
 一部のシンボルを参照して、名前空間とで識別されて、その後、`SymTagUsingNameSpace`タグ。  
   
 > [!NOTE]
->  UsingNamespace シンボル タグは、マネージ コードでのみが表示されます。  
+> UsingNamespace シンボル タグは、マネージ コードでのみが表示されます。  
   
 ## <a name="properties"></a>プロパティ  
  次の表では、この記号の型の有効なプロパティを示します。  

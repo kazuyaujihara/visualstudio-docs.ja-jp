@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c23bbb74a4f166ebe33cc45f40f42f9847316d30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9238bd4f42291af23a1279c9caa83f1039c8f249
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437760"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Windows ストア アプリ用の Visual Studio デバッグ セッションでの、ストア アプリの実行制御 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ ms.locfileid: "60043298"
  **デバッガーのキーボード ショートカット。** Visual Studio デバッガーのナビゲーションは、マウスとキーボードの両方に最適化されています。 このトピックの手順の多くでは、キーボード アクセス キーまたはショートカット キーが、かっこで囲まれて示されています。 たとえば、(キーボード。F5 キー) は、f5 キーを開始またはデバッガーの実行が続けキーを押すことを示します。
 
 > [!NOTE]
->  **モジュール パターン**
+> **モジュール パターン**
 >
->  Windows ストア アプリでは、JavaScript の *モジュール パターン* を使用してデータと関数をページ内にカプセル化することがよくあります。 モジュール パターンでは、自己実行形式の単一の匿名クロージャを使用して、ページの機能をグローバル名前空間から分離します。 このトピックでは、そのような関数を *モジュール*と呼びます。
+> Windows ストア アプリでは、JavaScript の *モジュール パターン* を使用してデータと関数をページ内にカプセル化することがよくあります。 モジュール パターンでは、自己実行形式の単一の匿名クロージャを使用して、ページの機能をグローバル名前空間から分離します。 このトピックでは、そのような関数を *モジュール*と呼びます。
 
 ## <a name="in-this-topic"></a>このトピックの内容
  以下の方法について説明します。

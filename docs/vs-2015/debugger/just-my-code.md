@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e105ef33202781dcf3a2f82706827156e76548eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421826"
 ---
 # <a name="just-my-code"></a>マイ コードのみ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "60084337"
  ![オプション] ダイアログ ボックスで [マイ コードのみを有効にする](../debugger/media/dbg-justmycode-options.png "DBG_JustMyCode_Options")  
   
 > [!NOTE]
->  **マイ コードのみを有効にする**はすべての言語のすべての Visual Studio プロジェクトに適用されるグローバル設定です。  
+> **マイ コードのみを有効にする**はすべての言語のすべての Visual Studio プロジェクトに適用されるグローバル設定です。  
   
 ### <a name="BKMK_Override_call_stack_filtering"></a> 呼び出し履歴のフィルター処理をオーバーライドします。  
  "マイ コードのみ" が有効な場合は、[呼び出し履歴] ウィンドウや [タスク] ウィンドウなどの呼び出し履歴の表示で、非ユーザー コードは`[External Code]` というラベルの注釈付きフレームに折りたたまれます。 折りたたまれたフレームを表示する**外部コードの表示**呼び出し履歴のコンテキスト メニューを表示します。  
   
 > [!NOTE]
->  **外部コードの表示**設定は、現在のユーザーのプロファイラーに保存されます。 この設定は、ユーザーによって開かれたすべての言語のすべてのプロジェクトに適用されます。  
+> **外部コードの表示**設定は、現在のユーザーのプロファイラーに保存されます。 この設定は、ユーザーによって開かれたすべての言語のすべてのプロジェクトに適用されます。  
   
 ## <a name="BKMK__NET_Framework_Just_My_Code"></a> .NET framework マイ コードのみ  
   
@@ -124,7 +124,7 @@ ms.locfileid: "60084337"
 |-------------|-----------------|  
 |関数|必須。 1 つ以上の関数を非ユーザー関数として指定します。|  
 |`Name`|必須。 一致を照合する完全な関数名を指定する ECMA-262 書式の正規表現。 例:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> は、`MyNS::MyClass` のすべてのメソッドが非ユーザー コードと見なされることをデバッガーに知らせます。 一致照合では、大文字と小文字が区別されます。|  
-|`Module`|省略可能です。 関数を含むモジュールへの完全パスを指定する ECMA-262 書式の正規表現。 一致では、大文字と小文字を区別しません。|  
+|`Module`|任意。 関数を含むモジュールへの完全パスを指定する ECMA-262 書式の正規表現。 一致では、大文字と小文字を区別しません。|  
 |`Action`|必須。 大文字と小文字が区別される以下のいずれかの値です。<br /><br /> -   `NoStepInto`  – 一致した関数をステップ オーバーするデバッガーに指示します。<br />-   `StepInto`  – その他をオーバーライドする一致した関数にステップ インするデバッガーに指示`NoStepInto`の一致する関数。|  
   
 ### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 呼び出し履歴の動作をカスタマイズします。  

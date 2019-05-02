@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9874379586dd077f857a58800010391da36d19f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428210"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>チュートリアル: 作成して、Windows ストア アプリの単体テストの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60069851"
 Visual Studio には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] マネージド アプリの単体テストのサポートと、Visual C#、Visual Basic、および Visual C++ 用の単体テスト ライブラリ テンプレートが含まれています。  
   
 > [!TIP]
->  [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリの開発の詳細については、「 [Windows ストア アプリ開発の開始](http://go.microsoft.com/fwlink/?LinkID=241410)」を参照してください。  
+> [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリの開発の詳細については、「 [Windows ストア アプリ開発の開始](http://go.microsoft.com/fwlink/?LinkID=241410)」を参照してください。  
   
  Visual Studio は、次の単体テスト機能を備えています。  
   
@@ -54,7 +54,7 @@ Visual Studio には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-lo
 2. テンプレートで、単体テストを作成するプログラミング言語を選択した後、関連する [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 単体テスト ライブラリを選択します。 たとえば、 **[Visual C#]** 、 **[Windows ストア]**、 **[単体テスト ライブラリ (Windows ストア アプリ)]** の順に選択します。  
   
     > [!NOTE]
-    >  Visual Studio には、Visual C#、Visual Basic、および Visual C++ 用の単体テスト ライブラリ テンプレートがあります。  
+    > Visual Studio には、Visual C#、Visual Basic、および Visual C++ 用の単体テスト ライブラリ テンプレートがあります。  
   
 3. (省略可能) **[名前]** テキストボックスで、 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]の単体テスト プロジェクトで使用する名前を入力します。  
   
@@ -84,7 +84,7 @@ Visual Studio には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-lo
 3. **[機能]** リストで、単体テストを必要とする機能とコードを選択します。 たとえば、単体テストが必要で、テストするコードにインターネットにアクセスする機能が必要な場合は、 **[インターネット]** チェック ボックスをオンにします。  
   
     > [!NOTE]
-    >  選択する機能には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] の単体テストが正しく機能するために必要な機能だけが含まれる必要があります。 機能は、テスト中の [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションの一部ではない機能を含む必要はなく、一般に、テスト対象の [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションに指定された機能のサブセットです。  
+    > 選択する機能には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] の単体テストが正しく機能するために必要な機能だけが含まれる必要があります。 機能は、テスト中の [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションの一部ではない機能を含む必要はなく、一般に、テスト対象の [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションに指定された機能のサブセットです。  
   
      マニフェスト デザイナーの詳細については、「[マニフェスト デザイナーを使用した Windows 8.1 アプリ パッケージの構成](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d)」を参照してください。  
   
@@ -111,22 +111,22 @@ Visual Studio には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-lo
      これで、単体テストが一覧に含まれます。  
   
     > [!NOTE]
-    >  テスト エクスプローラーの単体テストの一覧を更新するソリューションをビルドする必要があります。  
+    > テスト エクスプローラーの単体テストの一覧を更新するソリューションをビルドする必要があります。  
   
     > [!WARNING]
-    >  Visual Studio の既知の問題:テスト プロジェクトをビルドする前に、テスト エクスプ ローラーを開く必要があります。  
+    > Visual Studio の既知の問題:テスト プロジェクトをビルドする前に、テスト エクスプ ローラーを開く必要があります。  
   
 3. テスト エクスプローラーで、作成した単体テストを選択します。  
   
     > [!TIP]
-    >  テスト エクスプローラーでは、 **[ソース]** の横のソース コードへのリンクが表示されます。  
+    > テスト エクスプローラーでは、 **[ソース]** の横のソース コードへのリンクが表示されます。  
   
 4. **[すべて実行]** をクリックします。  
   
      ![単体テスト エクスプローラー &#45; 単体テストの実行](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
   
     > [!TIP]
-    >  エクスプローラーに一覧表示された 1 つ以上の単体テストを選択し、 **[選択したテストの実行]** を右クリックして選択します。  
+    > エクスプローラーに一覧表示された 1 つ以上の単体テストを選択し、 **[選択したテストの実行]** を右クリックして選択します。  
     >   
     >  また、 **[選択されたテストをデバッグ]**、 **[テストを開く]** をクリックし、 **[プロパティ]** オプションを使用できます。  
     >   

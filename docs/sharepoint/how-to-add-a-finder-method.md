@@ -17,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc61db134063c1e300a2620f611d62497fffe6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 49f494fa2c0fb35f7d2a65dc2ccb6b6d2d761cbe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428726"
 ---
 # <a name="how-to-add-a-finder-method"></a>方法: Finder メソッドを追加します。
-  Web パーツまたは一覧内のエンティティの一覧を表示するビジネス データ接続 (BDC) サービスを有効にすることを作成する必要があります、 *Finder*メソッド。 Finder メソッドは、エンティティ インスタンスのコレクションを返す特殊なメソッドです。 詳細については、[ビジネス データ接続モデルをデザイン](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
+  Web パーツまたは一覧内のエンティティの一覧を表示するビジネス データ接続 (BDC) サービスを有効にすることを作成する必要があります、 *Finder*メソッド。 Finder メソッドは、エンティティ インスタンスのコレクションを返す特殊なメソッドです。 詳細については、次を参照してください。[ビジネス データ接続モデルをデザイン](../sharepoint/designing-a-business-data-connectivity-model.md)します。
 
 ### <a name="to-create-a-finder-method"></a>Finder メソッドを作成するには
 
@@ -44,9 +44,9 @@ ms.locfileid: "56608072"
 4. エンティティ コレクション型記述子としては、型記述子を構成します。 エンティティ コレクション型記述子を作成する方法の詳細については、次を参照してください。[方法。パラメーターの型記述子を定義](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)します。
 
    > [!NOTE]
-   >  エンティティの Specificfinder メソッドを追加した場合、この手順を実行する必要はありません。 Visual Studio では、Specificfinder メソッドで定義した型記述子を使用します。
+   > エンティティの Specificfinder メソッドを追加した場合、この手順を実行する必要はありません。 Visual Studio では、Specificfinder メソッドで定義した型記述子を使用します。
 
-5. **ソリューション エクスプ ローラー**エンティティの場合に生成されたサービスのコード ファイルのショートカット メニューを開き、選択し、**コードの表示**します。 サービス コード ファイルの詳細については、[business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)を参照してください。
+5. **ソリューション エクスプ ローラー**エンティティの場合に生成されたサービスのコード ファイルのショートカット メニューを開き、選択し、**コードの表示**します。 サービス コード ファイルの詳細については、次を参照してください。 [business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)です。
 
 6. Finder メソッドにコードを追加します。 このコードは次のタスクを実行します。
 
@@ -57,7 +57,7 @@ ms.locfileid: "56608072"
      次の例のコレクションを返します`Contact`SQL Server の AdventureWorks サンプル データベースからデータを使用してエンティティ。
 
    > [!NOTE]
-   >  値を置き換える、`ServerName`フィールドに、サーバーの名前。
+   > 値を置き換える、`ServerName`フィールドに、サーバーの名前。
 
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
