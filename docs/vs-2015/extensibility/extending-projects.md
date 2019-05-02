@@ -1,34 +1,29 @@
 ---
 title: プロジェクトの拡張 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8ad4218447e6cc910ff98970d14a53d83ccc8497
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 72841d1f0bbc812d80528858384b14ced2048857
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796572"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974100"
 ---
 # <a name="extending-projects"></a>プロジェクトの拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 プロジェクトおよびソリューションは、Visual Studio コードとリソース ファイルをコンパイルおよび展開の単位に整理する方法です。 プロジェクトの詳細については見つかります[プロジェクト (Visual Studio SDK)](../extensibility/extending-projects.md)します。  
   
- 独自のプロジェクトの種類を作成するには、Visual Studio SDK をダウンロードできるプロジェクトでは、Managed Package Framework[プロジェクト用 Managed Package Framework](http://mpfproj12.codeplex.com/)します。 理解するカスタム プロジェクトは、実装方法を参照してください。[新しいプロジェクトの生成: 内部、パート 1](../extensibility/internals/new-project-generation-under-the-hood-part-one.md)と[新しいプロジェクトの生成: 内部、パート 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)します。  
+ 独自のプロジェクトの種類を作成するには、Visual Studio SDK をダウンロードできるプロジェクトでは、Managed Package Framework[プロジェクト用 Managed Package Framework](http://mpfproj12.codeplex.com/)します。 理解するカスタム プロジェクトは、実装方法を参照してください。[新しいプロジェクトの生成。内部的には、パート 1](../extensibility/internals/new-project-generation-under-the-hood-part-one.md)と[新しいプロジェクトの生成。内部的には、2 つのパート](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)します。  
   
  このセクションのトピックでは、カスタムのプロジェクトを作成する方法とさまざまな種類の Visual Studio ソリューションを管理する方法について説明します。  
   
@@ -58,4 +53,3 @@ ms.locfileid: "51796572"
  ユニバーサル プロジェクトを管理する方法について説明します。  
   
 ## <a name="related-sections"></a>関連項目
-

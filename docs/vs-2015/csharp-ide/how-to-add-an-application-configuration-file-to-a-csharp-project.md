@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 481c1a66f3e025d3a29b2d5a1e39cd29bbb22490
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b26a152567da3b6285653ba8e14a72bce664ce0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434524"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>方法: C# プロジェクトに、アプリケーション構成ファイルを追加します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ ms.locfileid: "58974335"
 アプリケーション構成ファイル (app.config ファイル) を C# プロジェクトに追加すると、共通言語ランタイムがアセンブリ ファイルを検索し読み込む方法をカスタマイズできます。 アプリケーション構成ファイルの詳細については、次を参照してください。[ランタイムがアセンブリを検索する方法](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34)します。  
   
 > [!NOTE]
->  Windows ストアをサポートしていない<xref:System.Configuration>します。 その結果、ストア アプリには、app.config テンプレートが含まれていません。  
+> Windows ストアをサポートしていない<xref:System.Configuration>します。 その結果、ストア アプリには、app.config テンプレートが含まれていません。  
   
  プロジェクトをビルドするときに、開発環境は、app.config ファイルを自動的にコピー、実行可能ファイルと一致するコピーのファイル名を変更し、bin ディレクトリにコピーを移動します。  
   
 ### <a name="to-add-an-application-configuration-file-to-your-c-project"></a>C# プロジェクトに、アプリケーション構成ファイルを追加するには  
   
-1.  メニュー バーで、**プロジェクト**、**新しい項目の追加**します。  
+1. メニュー バーで、**プロジェクト**、**新しい項目の追加**します。  
   
      **[新しい項目の追加]** ダイアログ ボックスが表示されます。  
   
-2.  展開**インストール済み**、展開**Visual c# アイテム**を選択し、**アプリケーション構成ファイル**テンプレート。  
+2. 展開**インストール済み**、展開**Visual c# アイテム**を選択し、**アプリケーション構成ファイル**テンプレート。  
   
-3.  **[名前]** ボックスに名前を入力し、**[追加]** ボタンをクリックします。  
+3. **[名前]** ボックスに名前を入力し、**[追加]** ボタンをクリックします。  
   
      App.config はという名前のファイルは、プロジェクトに追加されます。  
   

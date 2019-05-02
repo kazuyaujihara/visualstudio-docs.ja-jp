@@ -1,13 +1,8 @@
 ---
 title: Getting Started with the Debugger |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -18,21 +13,21 @@ ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 755c4a0b66c91aa37f96d3d6f06972878ee856b8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771608"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109524"
 ---
 # <a name="getting-started-with-the-debugger"></a>デバッガーの使用開始
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio デバッガーは、どの言語でも簡単に使用できます。 ここでは、簡単な C# プログラムのデバッグ方法について説明しますが、C++、JavaScript などの他の言語のコードに同じ手順を適用することができます。  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> 基本的な c# プロジェクトをデバッグします。  
- 単純な c# コンソール アプリケーションから始めましょう (**ファイル/新しいプロジェクト/** を選択し、 **Visual c#** 選び**コンソール アプリケーション**)。 Visual Studio で初めて作業する場合を参照してください。[チュートリアル: 単純なアプリケーション作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)です。 **Main**だけメソッドは整数変数を 10 回に 1 が加算し、コンソールに結果を出力します。  
+## <a name="BKMK_Start_debugging_a_VS_project"></a> 基本的な c# プロジェクトをデバッグします。  
+ 単純な c# コンソール アプリケーションから始めましょう (**ファイル/新しいプロジェクト/** を選択し、 **Visual c#** 選び**コンソール アプリケーション**)。 表示する前に Visual Studio で作業する、[チュートリアル。単純なアプリケーション作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)です。 **Main**だけメソッドは整数変数を 10 回に 1 が加算し、コンソールに結果を出力します。  
   
 ```csharp  
 static void Main(string[] args)  
@@ -46,7 +41,7 @@ static void Main(string[] args)
 }  
 ```  
   
- このコードをビルド、**デバッグ**構成します。 この構成は、既定で設定されています。 構成の詳細については、[ビルド構成について](../ide/understanding-build-configurations.md)を参照してください。  
+ このコードをビルド、**デバッグ**構成します。 この構成は、既定で設定されています。 構成の詳細については、次を参照してください。[ビルド構成について](../ide/understanding-build-configurations.md)します。  
   
  クリックして、デバッガーでこのコードを実行**デバッグ]/[デバッグの開始**(または**開始**ツールバーで、または**F5**)。 アプリケーションはほぼ即座に終了するため、実際に何かがコンソール ウィンドウに出力されたかどうかは分かりません。  
   
@@ -54,24 +49,24 @@ static void Main(string[] args)
   
  ![ブレークポイントを設定する](../debugger/media/getstartedbreakpoint.png "GetStartedBreakpoint")  
   
- ブレークポイントの詳細については、[を使用してブレークポイント](../debugger/using-breakpoints.md)を参照してください。  
+ ブレークポイントの詳細については、次を参照してください。[を使用してブレークポイント](../debugger/using-breakpoints.md)します。  
   
-##  <a name="BKMK_Inspect_Variables"></a> 変数を検査します。  
+## <a name="BKMK_Inspect_Variables"></a> 変数を検査します。  
  多くの場合、デバッグするには、特定の時点で予期される値が含まれていない変数を検索する必要があります。 いくつかの変数を検査することができます、方法を示します。  
   
  デバッグを再度開始します。 `Console.WriteLine` のコードが実行される前に実行が停止します。 先に進むで実行するように発生することができます (をクリックして**デバッグ]/[ステップ オーバー**または**F10**)。 ここで選択した可能性があります**ステップ イン**(**F11**) と同じ結果を取得後で違いを説明します。 メソッドの最後の中かっこの行が黄色に変わっているはずです。 コンソール ウィンドウを見てください。 表示する必要があります**10**します。  
   
  ポイントすると、 **testInt**変数がデータ ヒントで現在の値を表示します。  
   
- ![DBG&#95;基本&#95;データ&#95;ヒント](../debugger/media/dbg-basics-data-tips.png "DBG_Basics_Data_Tips")  
+ ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg-basics-data-tips.png "DBG_Basics_Data_Tips")  
   
  コード ウィンドウのすぐ下に表示されます、 **[自動変数]**、**ローカル**、および**ウォッチ**windows。 これらのウィンドウは、実行時における変数の現行値を表示します。 両方、 **[自動変数]** と**ローカル**windows show **testInt**の値を持つ**10**します。  
   
  ![[自動変数] ウィンドウのデバッグ時に](../debugger/media/getstartedwindows.png "GetStartedWindows")  
   
- これらのウィンドウの詳細については、[[自動変数] と ローカル Windows](../debugger/autos-and-locals-windows.md)を参照してください。  
+ これらのウィンドウの詳細については、次を参照してください。 [[自動変数] と [ローカル Windows](../debugger/autos-and-locals-windows.md)します。  
   
- プログラムを進めながら、変数の値がどのように変化するかを見てみましょう。 ブレークポイントを設定、`testInt += 1;`し、デバッグを再開します。 表示する必要があります**testInt**で、**ローカル**と **[自動変数]** windows が**0**、および**は**は**1**します。 デバッグを続行すると (**デバッグ]/[続行**、または**続行**ツールバーで、または**F5**)、ことを確認の値**testInt**変更**1**、し**2**など。 これらの変更を見るが面倒なときは、ブレークポイントを削除 (**]/[デバッグのブレークポイント**余白内でクリックしてまたは)、デバッグを続行します。 すべてのブレークポイントを削除する場合をクリックして**デバッグ/すべてのブレークポイントを削除**、または**CTRL + SHIFT + F9**、 をクリック**はい**確認するダイアログ ボックスで**Do youすべてのブレークポイントを削除しますか。**  
+ プログラムを進めながら、変数の値がどのように変化するかを見てみましょう。 ブレークポイントを設定、`testInt += 1;`し、デバッグを再開します。 表示する必要があります**testInt**で、**ローカル**と **[自動変数]** windows が**0**、および**は**は**1**します。 デバッグを続行すると (**デバッグ]/[続行**、または**続行**ツールバーで、または**F5**)、ことを確認の値**testInt**変更**1**、し**2**など。 これらの変更を見るが面倒なときは、ブレークポイントを削除 (**]/[デバッグのブレークポイント**余白内でクリックしてまたは)、デバッグを続行します。 すべてのブレークポイントを削除する場合をクリックして**デバッグ/すべてのブレークポイントを削除**、または**CTRL + SHIFT + F9**、 をクリック**はい**確認するダイアログ ボックスで**Do youすべてのブレークポイントを削除しますか**。  
   
 ## <a name="stepping-into-and-over-function-calls"></a>関数の呼び出しのステップ インとステップ オーバー  
  デバッガーをステートメント-by-ステートメント内でコードを実行することができます (**ステップ イン**) か、デバッガーは関数をスキップ中にコードを実行することができます (**ステップ オーバー**) (に強い関心いるコードを迅速に取得するには関数コードが実行されます)。 どちらの方法で、同じデバッグ セッションを切り替えることができます。  
@@ -98,8 +93,3 @@ private static void Method1()
  デバッグを停止し、再び起動し、実行がブレークポイントで中断、 をクリックして**デバッグ/ステップ オーバー** (または**ステップ オーバー**ツールバーで、または**F10**)。 実行が `Console.WriteLine("end");` で再度中断します。  
   
  場合は、デバッガーでコード間の移動の詳細を参照してください[デバッガーでコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)します。
-
-
-
-
-

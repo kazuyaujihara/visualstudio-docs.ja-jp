@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7cbe3b0593b3a71c65667e78d7b0284cacc4538
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f48a30e11e28daef2d1803646d2b495bcb718b84
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993201"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>[.NET 型の参照と選択] ダイアログ ボックス
 
@@ -24,11 +24,11 @@ ms.locfileid: "55942194"
 
 このダイアログ ボックスは、次のようなさまざなユーザー シナリオで使用されます。
 
--   変数または引数の型を設定する。
+- 変数または引数の型を設定する。
 
--   一般的なアクティビティの型を選択する。
+- 一般的なアクティビティの型を選択する。
 
--   <xref:System.Activities.Statements.TryCatch> アクティビティに catch を追加する。
+- <xref:System.Activities.Statements.TryCatch> アクティビティに catch を追加する。
 
 > [!NOTE]
 > 型ブラウザーは、多次元配列型ではなく Visual Basic ジャグ配列型を表示できます。 参照してください[ジャグ配列](http://go.microsoft.com/fwlink/?LinkId=195226)と[多次元配列](http://go.microsoft.com/fwlink/?LinkId=195227)詳細についてはします。
@@ -37,19 +37,19 @@ ms.locfileid: "55942194"
 
 ### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>型ブラウザーで値型または参照型を選択するには
 
-1.  **型名**ボックスを使用する型の名前を入力します。
+1. **型名**ボックスを使用する型の名前を入力します。
 
-2.  次のいずれかの操作を行います。
+2. 次のいずれかの操作を行います。
 
-    -   ツリーで使用する型の名前が表示されたら、**型名**ボックスに、それを選択する種類をダブルクリックします。
+    - ツリーで使用する型の名前が表示されたら、**型名**ボックスに、それを選択する種類をダブルクリックします。
 
-    -   十分な文字を入力、**型名**ボックスを使用して、enter キーを押しての種類を選択し、型を一意に識別するには
+    - 十分な文字を入力、**型名**ボックスを使用して、enter キーを押しての種類を選択し、型を一意に識別するには
 
 ### <a name="to-select-a-generic-type-from-the-type-browser"></a>型ブラウザーでジェネリック型を選択するには
 
-1.  **型名**ボックスに、使用する種類の名前を入力します。
+1. **型名**ボックスに、使用する種類の名前を入力します。
 
-2.  ツリーで使用する型の名前が表示されたら、**型名**ボックス、ドロップダウン ボックスをオンにする型の表示 をクリックします。
+2. ツリーで使用する型の名前が表示されたら、**型名**ボックス、ドロップダウン ボックスをオンにする型の表示 をクリックします。
 
      ドロップダウン ボックスから、ジェネリックを閉じ をクリックし、使用する種類を選択します**OK**します。
 
@@ -63,11 +63,11 @@ ms.locfileid: "55942194"
 
 型の一覧、**型名**検索する文字を入力すると、短いボックスを取得します。 Fullyqualified 名前が入力した文字列で始まる型のみまたは短い名前が入力した文字列で始まる型は、フィルター処理された一覧に表示されます。
 
-例:
+例えば:
 
-1.  入力**操作**と一致する<xref:System.OperationCanceledException>なく<xref:System.InvalidOperationException>します。 <xref:System.InvalidOperationException> と一致するためには、「System.I」または「Invalid」と入力します。
+1. 入力**操作**と一致する<xref:System.OperationCanceledException>なく<xref:System.InvalidOperationException>します。 <xref:System.InvalidOperationException> と一致するためには、「System.I」または「Invalid」と入力します。
 
-2.  入力**ジェネリック**と一致する<xref:System.GenericUriParser>でない型しますが、<xref:System.Collections.Generic>名前空間。 内の型を検索する、<xref:System.Collections.Generic>名前空間、名前空間の完全修飾名を入力します。
+2. 入力**ジェネリック**と一致する<xref:System.GenericUriParser>でない型しますが、<xref:System.Collections.Generic>名前空間。 内の型を検索する、<xref:System.Collections.Generic>名前空間、名前空間の完全修飾名を入力します。
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>型ブラウザー ダイアログを使用したサービス コントラクトの選択
 

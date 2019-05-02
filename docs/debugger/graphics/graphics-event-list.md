@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbffb56d437eebffcaa59a146ede2a8b5f94273
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6af97740302d5e7053323b54ef11cbf1a279dd94
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848867"
 ---
 # <a name="graphics-event-list"></a>グラフィックス イベント一覧
 Visual Studio Graphics Analyzer でグラフィックス イベント一覧を使用して、ゲームまたはアプリのフレームのレンダリング中に記録された Direct3D イベントを調査できます。
@@ -49,7 +49,7 @@ Visual Studio Graphics Analyzer でグラフィックス イベント一覧を�
 
 ##### <a name="to-change-the-event-list-view-mode"></a>イベント一覧ビューのモードを変更するには
 
--   **グラフィックス イベント一覧**、イベントの一覧の上のウィンドウの検索、**ビュー**ドロップダウンいずれかを選択、**タイムライン**ビューまたは**のGPUの処理**ビュー。
+- **グラフィックス イベント一覧**、イベントの一覧の上のウィンドウの検索、**ビュー**ドロップダウンいずれかを選択、**タイムライン**ビューまたは**のGPUの処理**ビュー。
 
 ### <a name="filtering-events"></a>イベントのフィルタリング
  **[グラフィックス イベント一覧]** ウィンドウの右上にある [検索] ボックスを使用してイベント一覧をフィルタリングし、特定のキーワードが含まれている名前のイベントのみを検索することができます。 前の図に示されているように、「 `Vertex`」などの 1 つのキーワードを指定することも、「 `Draw;Primitive`」のようにセミコロンで区切って複数のキーワードを指定することもできます。複数のキーワードを指定すると、名前に `Draw` または `Primitive` のいずれかが含まれているイベントが該当します。 検索では、空白の有無も区別されます。たとえば、「 `VSSet` 」と「 `VS Set` 」は異なる検索であるため、検索する語には注意が必要です。
@@ -104,7 +104,6 @@ Visual Studio 2017 およびそれ以降を含む、**リソース履歴**ウィ
 ![リソース履歴](media/gfx_diag_resource_history.png)
 
 このウィンドウを使用すると、イベントの一覧で選択した項目の履歴を表示できます。  上部にあるドロップダウン リストには、履歴を表示するには、他の項目の選択ができます。  ウィンドウの上半分が含まれています、**フレーム セットアップ イベント**します。  これらはイベントには、*作成*カテゴリを入力し、呼び出しが通常を初期化し、リソースを作成します。  含むウィンドウの下部にある、**フレーム イベント**セクション。  これらは通常の読み取りであり、リソースの使用状況の中に発生するイベントを書き込みます。
-
 
 | Column | 説明 |
 |-----------| - |

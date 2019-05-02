@@ -15,17 +15,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f020e23b5a58d700fb698e8026ef0b783b6de6a4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e69b9a96ba2529eba2f981ab79e59c5e7936cf97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441432"
 ---
 # <a name="convert-dialog-box"></a>[変換] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **[変換]** ダイアログ ボックスでは、古いプロジェクトから新しいプロジェクトを作成するための変換ツールを選択できます。たとえば、Visual Basic 6 プロジェクトから [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] プロジェクトを作成するような場合です。 また、CodePlex の Web サイトで入手できる [Visual Studio Project Converter](http://go.microsoft.com/fwlink/?LinkID=246465)を使用して、旧バージョンの Visual Studio で作成したプロジェクトをアップグレードすることもできます。  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
@@ -34,11 +33,11 @@ ms.locfileid: "54758568"
   
 #### <a name="to-access-the-convert-dialog-box"></a>[変換] ダイアログ ボックスにアクセするには  
   
-1.  メニュー バーから **[ファイル]**、 **[開く]**、 **[変換]** の順に選択します。  
+1. メニュー バーから **[ファイル]**、 **[開く]**、 **[変換]** の順に選択します。  
   
      現在使用できるコード変換ツールの一覧が表示されます。  
   
-2.  アプリケーションに適したツールを選択します。  
+2. アプリケーションに適したツールを選択します。  
   
 ## <a name="see-also"></a>関連項目  
  [NOTINBUILD - 方法: プロジェクトを Visual Basic 6.0 からアップグレードする](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   

@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 31268b94ab632e598badcba3def387ef1fc2ba1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2198ed401f714353be2dd18846dd527cc433e695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447311"
 ---
 # <a name="error-aspnet-not-installed"></a>エラー :ASP.NET がインストールされていません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "58962323"
   
 ### <a name="to-reinstall-aspnet"></a>ASP.NET を再インストールするには  
   
-1.  コマンド プロンプト ウィンドウで、次のコマンドを実行します。  
+1. コマンド プロンプト ウィンドウで、次のコマンドを実行します。  
   
     ```  
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
@@ -44,7 +44,7 @@ ms.locfileid: "58962323"
      場所*バージョン*v1.0.370 など、コンピューターにインストールされている .NET Framework のバージョン番号を表します。 によってフレームワークのバージョンを確認することができます、`\WINDOWS\Microsoft.NET\Framework`ディレクトリ。  
   
     > [!NOTE]
-    >  Windows Server 2003 の場合は、コントロール パネルの **[プログラムの追加と削除]** を使って [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] をインストールできます。  
+    > Windows Server 2003 の場合は、コントロール パネルの **[プログラムの追加と削除]** を使って [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] をインストールできます。  
   
 ## <a name="see-also"></a>関連項目  
  [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

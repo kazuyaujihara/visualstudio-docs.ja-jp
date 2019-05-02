@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2ff75594cd3c1eb560f9cded5dad2a764198fb5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 269ecdb67fe58a5ad2aff6af63ba6ea45647811a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412618"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>方法: プログラムによってワークシート内の行をグループ化します。
   1 つ以上の行をグループ化することができます。 ワークシート内でグループを作成するには、使用、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールまたはネイティブな Excel 範囲オブジェクト。
@@ -37,26 +37,26 @@ ms.locfileid: "56598236"
 
 ### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>ワークシートに NamedRange コントロールのグループを作成するには
 
-1.  呼び出して 3 つの名前付き範囲をグループ化、<xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A>各範囲のメソッド。 このコードは、 `ThisWorkbook` クラスではなく、シート クラスに配置する必要があります。
+1. 呼び出して 3 つの名前付き範囲をグループ化、<xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A>各範囲のメソッド。 このコードは、 `ThisWorkbook` クラスではなく、シート クラスに配置する必要があります。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
 
     > [!NOTE]
-    >  グループを解除するには、行を呼び出し、<xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A>メソッド。
+    > グループを解除するには、行を呼び出し、<xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A>メソッド。
 
 ## <a name="use-native-excel-ranges"></a>ネイティブの Excel の範囲を使用して、
  コードでは、という名前の 3 つの Excel の範囲であると想定`data2001`、 `data2002`、および`dataAll`ワークシートにします。
 
 ### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>ワークシート内で Excel の範囲のグループを作成するには
 
-1.  呼び出して 3 つの名前付き範囲をグループ化、<xref:Microsoft.Office.Interop.Excel.Range.Group%2A>各範囲のメソッド。 次の例である 3 つ<xref:Microsoft.Office.Interop.Excel.Range>という名前のコントロール`data2001`、 `data2002`、および`dataAll`同じワークシートにします。 各名前付き範囲は、ワークシートの行全体を指します。
+1. 呼び出して 3 つの名前付き範囲をグループ化、<xref:Microsoft.Office.Interop.Excel.Range.Group%2A>各範囲のメソッド。 次の例である 3 つ<xref:Microsoft.Office.Interop.Excel.Range>という名前のコントロール`data2001`、 `data2002`、および`dataAll`同じワークシートにします。 各名前付き範囲は、ワークシートの行全体を指します。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]
 
     > [!NOTE]
-    >  グループを解除するには、行を呼び出し、<xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A>メソッド。
+    > グループを解除するには、行を呼び出し、<xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A>メソッド。
 
 ## <a name="see-also"></a>関連項目
 - [ワークシートを操作します。](../vsto/working-with-worksheets.md)

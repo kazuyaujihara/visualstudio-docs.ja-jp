@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 10e10b512dc8deb63db7ade2075347d9e6405b6b
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 4bf9306ea1604d032ce9f4436759b11c4d17c343
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563182"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Visual Studio でインストールされている UWP アプリ パッケージをデバッグします。
 
@@ -97,7 +97,7 @@ UWP アプリのリモート展開の詳細については、次を参照して�
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio でのデバッグ](../debugger/index.md)
-- [デバッガー機能ツアー](../debugger/debugger-feature-tour.md)
+- [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
 - [リモート デバッグ](../debugger/remote-debugging.md)
 - [Windows ファイアウォールをリモート デバッグ用に構成する](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [リモート デバッガーのポートの割り当て](../debugger/remote-debugger-port-assignments.md)

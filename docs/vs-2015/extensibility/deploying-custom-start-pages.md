@@ -11,12 +11,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002434"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039143"
 ---
 # <a name="deploying-custom-start-pages"></a>カスタム スタート ページのデプロイ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ VSIX 配置を使用するか、ターゲット コンピューター上の適�
   
 ##### <a name="to-create-an-all-users-deployment"></a>すべてのユーザーの展開を作成するには  
   
-1.  コード ビューでは、extension.vsixmanifest ファイルを開きます。  
+1. コード ビューでは、extension.vsixmanifest ファイルを開きます。  
   
-2.  `Identifier` 、Vsix マニフェストの要素を追加、`AllUsers`要素の値を持つ`true`します。  
+2. `Identifier` 、Vsix マニフェストの要素を追加、`AllUsers`要素の値を持つ`true`します。  
   
     ```  
     <AllUsers>true</AllUsers>  
@@ -67,9 +67,9 @@ VSIX 配置を使用するか、ターゲット コンピューター上の適�
   
      これにより、管理者のアクセス許可を要求し、\Common7\IDE\Extensions にファイルをインストールするには、vsix インストーラーです。  
   
-3.  .Pkgdef ファイルを開きます。  
+3. .Pkgdef ファイルを開きます。  
   
-4.  変更を次を追加することで hklm の既定のスタート ページを設定する .pkgdef、 *MyStartPage.xaml*のスタート ページを含む .xaml ファイルの名前を指定します。  
+4. 変更を次を追加することで hklm の既定のスタート ページを設定する .pkgdef、 *MyStartPage.xaml*のスタート ページを含む .xaml ファイルの名前を指定します。  
   
      [$RootKey$\StartPage\Default]  
   
@@ -84,11 +84,11 @@ VSIX 配置を使用するか、ターゲット コンピューター上の適�
   
 #### <a name="to-manually-install-a-custom-start-page"></a>カスタム スタート ページを手動でインストールするには  
   
-1.  アセンブリ以外の任意のサポート ファイルと共に、スタート ページのマークアップを含む .xaml ファイルをコピーし、ユーザーの \StartPages\ フォルダーに貼り付けます。  
+1. アセンブリ以外の任意のサポート ファイルと共に、スタート ページのマークアップを含む .xaml ファイルをコピーし、ユーザーの \StartPages\ フォルダーに貼り付けます。  
   
-2.  スタート ページには、アセンブリが必要とする場合は、それらをコピーし、貼り付けることで.\\ *Visual Studio インストール フォルダー*\Common7\IDE\PrivateAssemblies\\します。  
+2. スタート ページには、アセンブリが必要とする場合は、それらをコピーし、貼り付けることで.\\ *Visual Studio インストール フォルダー*\Common7\IDE\PrivateAssemblies\\します。  
   
-3.  **スタート ページのカスタマイズ**ボックスの一覧、**スタートアップ**オプション ページで、新しいスタート ページを選択します。 詳細については、[スタート ページのカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)に関するページを参照してください。  
+3. **スタート ページのカスタマイズ**ボックスの一覧、**スタートアップ**オプション ページで、新しいスタート ページを選択します。 詳細については、[スタート ページのカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)に関するページを参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [スタート ページのカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)   

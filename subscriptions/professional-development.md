@@ -7,12 +7,12 @@ ms.date: 07/31/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるプロフェッショナルな開発特典について説明します
 searchscope: VS Subscription
-ms.openlocfilehash: 7b2dd9eaafa7b68f12a8ee72b7ffb4108c516292
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: d63fd098c003f606a1d88aec55157e554620b20b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007703"
 ---
 # <a name="professional-development-benefits-available-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで利用できるプロフェッショナルな開発特典
 
@@ -26,3 +26,4 @@ ms.locfileid: "56842417"
 - [Opsgility](vs-opsgility.md)
 - [Pluralsight](vs-pluralsight.md)
 - [MSDN マガジン](vs-msdn.md)
+- [LinkedIn Learning](vs-linkedin-learning.md)

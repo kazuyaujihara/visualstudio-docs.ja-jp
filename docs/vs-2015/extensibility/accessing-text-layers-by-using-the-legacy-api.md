@@ -10,12 +10,12 @@ ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6ae3c134fb97b7ec899dc63c2f0d23420390302d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 975e8624a6ffbfe0c5ae7544f2b978487465e34e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963197"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082777"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>レガシ API を使用してテキスト レイヤーへのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ ms.locfileid: "58963197"
 ## <a name="text-layer-information"></a>テキスト レイヤー情報  
  次の一覧のテキスト レイヤーの機能について説明します[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:  
   
--   テキスト レイヤー内のテキストは、構文の色分け、およびマーカーで修飾できます。  
+- テキスト レイヤー内のテキストは、構文の色分け、およびマーカーで修飾できます。  
   
--   現在、独自のレイヤーを実装することはできません。  
+- 現在、独自のレイヤーを実装することはできません。  
   
--   レイヤーを公開<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>から派生<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>します。 テキスト バッファー自体は、これにより、ビューを基になるレイヤーをポリモーフィック扱うレイヤーとしても実装されます。  
+- レイヤーを公開<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>から派生<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>します。 テキスト バッファー自体は、これにより、ビューを基になるレイヤーをポリモーフィック扱うレイヤーとしても実装されます。  
   
--   レイヤーの任意の数は、バッファーとビューの間に可能性があります。 各レイヤーが、その下のレイヤーのみを処理し、ビューが最上位のレイヤーを大きく処理します。 (ビューがいくつかについては、バッファー。)  
+- レイヤーの任意の数は、バッファーとビューの間に可能性があります。 各レイヤーが、その下のレイヤーのみを処理し、ビューが最上位のレイヤーを大きく処理します。 (ビューがいくつかについては、バッファー。)  
   
--   レイヤーは、その下のレイヤーだけに影響を与えます。 超える標準的なイベントが発生した上位層に影響を与えることはできません。  
+- レイヤーは、その下のレイヤーだけに影響を与えます。 超える標準的なイベントが発生した上位層に影響を与えることはできません。  
   
--   エディターで、非表示のテキスト、合成のテキストおよびワード ラップがレイヤーとして実装されます。 レイヤーと直接対話することがなく、非表示と代理のテキストを実装できます。 詳細については、次を参照してください。[従来の言語サービスでのアウトライン](../extensibility/internals/outlining-in-a-legacy-language-service.md)と<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>します。  
+- エディターで、非表示のテキスト、合成のテキストおよびワード ラップがレイヤーとして実装されます。 レイヤーと直接対話することがなく、非表示と代理のテキストを実装できます。 詳細については、次を参照してください。[従来の言語サービスでのアウトライン](../extensibility/internals/outlining-in-a-legacy-language-service.md)と<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>します。  
   
--   各テキスト レイヤーを介して公開される、独自のローカルの座標システムが、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>インターフェイス。 行の折り返しのレイヤーなどが含まれの 2 行、基になるテキスト バッファーに 1 行のみを含めることができます。  
+- 各テキスト レイヤーを介して公開される、独自のローカルの座標システムが、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>インターフェイス。 行の折り返しのレイヤーなどが含まれの 2 行、基になるテキスト バッファーに 1 行のみを含めることができます。  
   
--   ビューと通信層を<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>インターフェイス。 このインターフェイスを使用して、バッファーの座標を使用してビューの座標を調整します。  
+- ビューと通信層を<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>インターフェイス。 このインターフェイスを使用して、バッファーの座標を使用してビューの座標を調整します。  
   
--   レイヤーのいずれかなど、テキストから発信された代理テキスト レイヤーは、ローカルの実装を提供する必要があります<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>します。  
+- レイヤーのいずれかなど、テキストから発信された代理テキスト レイヤーは、ローカルの実装を提供する必要があります<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>します。  
   
--   それに<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>、テキスト レイヤーを実装する必要があります<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>でイベントを発生させると、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>インターフェイス。  
+- それに<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>、テキスト レイヤーを実装する必要があります<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>でイベントを発生させると、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>インターフェイス。  
   
 ## <a name="see-also"></a>関連項目  
  [構文のカスタム エディターで色分け表示](../extensibility/syntax-coloring-in-custom-editors.md)   

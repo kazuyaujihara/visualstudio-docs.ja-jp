@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fe1fdfc8b16988505ef30773cf1ec2e98d58edd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e45fb303c840ec66655e3900dcea3d57b75c7da7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891356"
 ---
 # <a name="contained-languages"></a>含まれている言語
 
@@ -25,16 +25,16 @@ ms.locfileid: "55039645"
 
 含まれている言語を実装する必要がある最も重要なインターフェイスは、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>インターフェイス。 このインターフェイスは、主言語内でホストされる任意の言語によって実装されます。 言語サービスの colorizer、テキスト ビューのフィルター、およびプライマリ言語サービスの ID にアクセスします。 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>を作成することができます、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>インターフェイス。 次の手順では、含まれている言語を実装する方法を示します。
 
-1.  使用`QueryService()`言語サービスの ID とのインターフェイス ID を取得する、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>します。
+1. 使用`QueryService()`言語サービスの ID とのインターフェイス ID を取得する、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>します。
 
-2.  作成する、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>インターフェイスを呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A>メソッド。 渡す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>インターフェイス、1 つまたは複数[項目の Id](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>)、および<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>インターフェイス。
+2. 作成する、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>インターフェイスを呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A>メソッド。 渡す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>インターフェイス、1 つまたは複数[項目の Id](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>)、および<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>インターフェイス。
 
-3.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>テキスト バッファーのコーディネーター オブジェクトであるインターフェイスを第 2 言語のバッファーでプライマリ ファイルの場所にマップするために必要な基本的なサービスを提供します。
+3. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>テキスト バッファーのコーディネーター オブジェクトであるインターフェイスを第 2 言語のバッファーでプライマリ ファイルの場所にマップするために必要な基本的なサービスを提供します。
 
      たとえば、1 つの *.aspx* ASP、HTML、およびすべてのコードに含まれているファイル、プライマリ ファイルが含まれます。 ただし、セカンダリ バッファーには、有効なコード ファイル、2 次バッファーを作成する、クラス定義と共に含まれているコードのみが含まれています。 バッファー コーディネーターは、その他の 1 つのバッファーに編集の調整作業を処理します。
 
-4.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A>第一言語には、メソッドはバッファー コーディネーター、バッファー内でどのようなテキストがセカンダリ バッファー内の対応するテキストにマップされます。
+4. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A>第一言語には、メソッドはバッファー コーディネーター、バッファー内でどのようなテキストがセカンダリ バッファー内の対応するテキストにマップされます。
 
      配列で、言語に合格、<xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping>構造体は、現在プライマリとセカンダリのスパンのみ含みます。
 
-5.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A>メソッドと<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A>メソッドは、プライマリとセカンダリ バッファーからマッピングを提供します。
+5. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A>メソッドと<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A>メソッドは、プライマリとセカンダリ バッファーからマッピングを提供します。

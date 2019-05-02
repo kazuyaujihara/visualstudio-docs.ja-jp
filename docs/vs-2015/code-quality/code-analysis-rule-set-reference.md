@@ -1,14 +1,9 @@
 ---
 title: コード分析規則セットの参照 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets
 ms.assetid: 5874e854-e298-4d2e-bbe4-95e899d22587
@@ -16,12 +11,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 928b838a4172537ec12937b02c3deab2cf666ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a1f91b352da5a41ec2ef81fb6067976073c787ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576755"
 ---
 # <a name="code-analysis-rule-set-reference"></a>コード分析規則セットの参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ ms.locfileid: "49279163"
 |["ネイティブ最小規則" 規則セット](../code-quality/native-minimum-rules-rule-set.md)|これらの規則は、ネイティブ コードの最も重大な問題 (潜在的なセキュリティ ホールやアプリケーションのクラッシュなど) に関するものです。 ネイティブ プロジェクトにカスタムの規則セットを作成する場合は、必ずこの規則セットを含める必要があります。|  
 |["ネイティブ推奨規則" 規則セット](../code-quality/native-recommended-rules-rule-set.md)|これらの規則は、ネイティブ コードで最も重大で一般的な問題 (潜在的なセキュリティ ホールやアプリケーションのクラッシュなど) に関するものです。  ネイティブ プロジェクトにカスタムの規則セットを作成する場合は、必ずこの規則セットを含める必要があります。  この規則セットは、Visual Studio Professional Edition 以上で動作するように設計されています。|  
 |[マネージド コードの "セキュリティ規則" 規則セット](../code-quality/security-rules-rule-set-for-managed-code.md)|この規則セットには、Microsoft のセキュリティ規則がすべて含まれます。 セキュリティ問題の検出範囲を最大化するには、この規則セットを使用してください。|
-
-
-

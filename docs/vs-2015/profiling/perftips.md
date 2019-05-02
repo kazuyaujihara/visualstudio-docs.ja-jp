@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5177add88897a838b95b6ca2aff94e03bc9e3509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 85df0daced767311692213e0a0fb0b9c4cbd5836
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763494"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108036"
 ---
 # <a name="perftips"></a>パフォーマンスのヒント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,24 +35,24 @@ Visual Studio デバッガーの *PerfTips* 、および統合デバッガー **
   
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
--   **[Break イベント]** タイムラインは、デバッグ セッションでヒットしたブレークポイントにマークを付けます。 イベントをクリックして、 **[デバッガー]** の詳細リストで選択します。  
+- **[Break イベント]** タイムラインは、デバッグ セッションでヒットしたブレークポイントにマークを付けます。 イベントをクリックして、 **[デバッガー]** の詳細リストで選択します。  
   
--   **[CPU 使用率]** グラフには、すべてのプロセッサ コアのデバッグ セッション中の CPU 使用率の変化が表示されます。  
+- **[CPU 使用率]** グラフには、すべてのプロセッサ コアのデバッグ セッション中の CPU 使用率の変化が表示されます。  
   
--   **[デバッガー]** 詳細ペインの **[イベント]** の一覧には、各中断イベントの項目が含まれます。  
+- **[デバッガー]** 詳細ペインの **[イベント]** の一覧には、各中断イベントの項目が含まれます。  
   
--   中断イベントの **[期間]** の列には、前のブレークポイントからそのイベントまでの経過時間が表示されます。  
+- 中断イベントの **[期間]** の列には、前のブレークポイントからそのイベントまでの経過時間が表示されます。  
   
 ## <a name="turn-perftips-on-or-off"></a>PerfTips をオンまたはオフにする  
  PerfTips を有効または無効にするには:  
   
-1.  **[デバッグ]** メニューの **[オプション]** をクリックします。  
+1. **[デバッグ]** メニューの **[オプション]** をクリックします。  
   
-2.  **[デバッグ中に経過時間の PerfTip を表示する]** チェック ボックスをオンまたはオフにします。  
+2. **[デバッグ中に経過時間の PerfTip を表示する]** チェック ボックスをオンまたはオフにします。  
   
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>[診断ツール] ウィンドウをオンまたはオフにする  
  [診断ツール] ウィンドウを有効または無効にするには:  
   
-1.  **[デバッグ]** メニューの **[オプション]** をクリックします。  
+1. **[デバッグ]** メニューの **[オプション]** をクリックします。  
   
-2.  **[デバッグ中に診断ツールを有効にする]** チェック ボックスをオンまたはオフにします。
+2. **[デバッグ中に診断ツールを有効にする]** チェック ボックスをオンまたはオフにします。

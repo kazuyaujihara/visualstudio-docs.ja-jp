@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c40db5b1639112bb95c0859da63705afcd9a3411
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f85f810d5ef6a97af4df6a03a0972a87ca60a49d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955228"
 ---
 # <a name="debug-property-interfaces"></a>デバッグ プロパティ インターフェイス
 DbgProp.h のヘッダー ファイルでは、このセクションにリストされたインターフェイスを提供します。  
@@ -27,24 +27,24 @@ DbgProp.h のヘッダー ファイルでは、このセクションにリスト
 ## <a name="in-this-section"></a>このセクションの内容  
  次のインターフェイス、構造、および列挙型 デバッグ中のアプリケーションの階層的なプロパティについて説明します。  
   
--   [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)  
+- [IDebugProperty インターフェイス](../../winscript/reference/idebugproperty-interface.md)  
   
--   [IDebugExtendedProperty インターフェイス](../../winscript/reference/idebugextendedproperty-interface.md)  
+- [IDebugExtendedProperty インターフェイス](../../winscript/reference/idebugextendedproperty-interface.md)  
   
--   [IEnumDebugPropertyInfo インターフェイス](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
+- [IEnumDebugPropertyInfo インターフェイス](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
   
--   [IEnumDebugExtendedPropertyInfo インターフェイス](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
+- [IEnumDebugExtendedPropertyInfo インターフェイス](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
   
--   [IPerPropertyBrowsing2 インターフェイス 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)  
+- [IPerPropertyBrowsing2 インターフェイス 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)  
   
--   [IDebugPropertyEnumType_All インターフェイス](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
+- [IDebugPropertyEnumType_All インターフェイス](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
   
--   [DebugPropertyInfo 構造体](../../winscript/reference/debugpropertyinfo-structure.md)  
+- [DebugPropertyInfo 構造体](../../winscript/reference/debugpropertyinfo-structure.md)  
   
--   [ExtendedDebugPropertyInfo 構造体](../../winscript/reference/extendeddebugpropertyinfo-structure.md)  
+- [ExtendedDebugPropertyInfo 構造体](../../winscript/reference/extendeddebugpropertyinfo-structure.md)  
   
--   [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)  
+- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)  
   
--   [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)  
+- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)  
   
--   [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)
+- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)

@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0ee2059c6a2bc1c5456cc949cf05b921c874cd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962839"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049309"
 ---
 # <a name="supplying-undo-support-to-designers"></a>デザイナー向けの元に戻す操作のサポート提供
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ ms.locfileid: "58962839"
 ## <a name="obtaining-undo-support-automatically"></a>取り消しのサポートを自動的に取得します。  
  デザイナーで作成した[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]自動および完全な取り消しのサポートを持つ場合、デザイナー。  
   
--   利用、<xref:System.Windows.Forms.Control>ベースのユーザー インターフェイスのクラス。  
+- 利用、<xref:System.Windows.Forms.Control>ベースのユーザー インターフェイスのクラス。  
   
--   コードの生成と永続化は、標準の CodeDOM に基づくコードの生成と解析システムを採用しています。  
+- コードの生成と永続化は、標準の CodeDOM に基づくコードの生成と解析システムを採用しています。  
   
      Visual Studio の CodeDOM のサポートの操作方法の詳細については、次を参照してください[動的ソース コードの生成とコンパイル。](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
@@ -80,15 +80,15 @@ ms.locfileid: "58962839"
   
 - これは、<xref:System.IServiceProvider>クラスは、次のサービスを提供する必要があります。  
   
-  -   <xref:System.ComponentModel.Design.IDesignerHost>。  
+  - <xref:System.ComponentModel.Design.IDesignerHost>。  
   
-  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
        デザイナーを使用して[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]CodeDOM シリアル化を使用することもできます<xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>で提供される、[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]の実装として、<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>します。  
   
        ここで、<xref:System.IServiceProvider>クラスに提供される、<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>コンス トラクターの実装としてこのオブジェクトを返す必要があります、<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>クラス。  
   
-  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
        既定値を使用するデザイナー<xref:System.ComponentModel.Design.DesignSurface>によって提供される、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]デザイン ホストの既定の実装をさせることが保証されます、<xref:System.ComponentModel.Design.IComponentChangeService>クラス。  
   

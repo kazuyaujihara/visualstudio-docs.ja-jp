@@ -1,11 +1,11 @@
 ---
 ms.topic: include
 ms.openlocfilehash: 62fc9607b6f54dc90d4eb8864cba3a0fb1e74779
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430679"
 ---
 VS 内から GitHub リポジトリを操作するには、Visual Studio 用の GitHub 拡張機能をインストールする必要があります。 これを行うには、Visual Studio インストーラーを実行し、**[変更]** を選択し、**[個別のコンポーネント]** タブを選択します。下方にスクロールして **[コード ツール]** セクションを表示し、**[Visual Studio 向け GitHub 拡張]** を選択し、**[変更]** を選択します。
 

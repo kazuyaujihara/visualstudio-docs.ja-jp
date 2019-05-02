@@ -10,30 +10,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c63d2eff11997a37d27f71d01403b59f276e2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 46e41cacafa2251c96ec7a97899b81034f455d6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414210"
 ---
 # <a name="program-control"></a>プログラムの制御
 Visual Studio でデバッグする場合に、次のステップ実行のすべてとルーチンの続行がプログラムのレベルで発生します。
 
--   特定のフレームの環境で実行するには、次の命令をコンピューターの設定は、次のステートメントを設定するには、
+- 特定のフレームの環境で実行するには、次の命令をコンピューターの設定は、次のステートメントを設定するには、
 
--   ステップ実行モードを終了するは、継続を実行します。
+- ステップ実行モードを終了するは、継続を実行します。
 
--   次の命令をステップ実行
+- 次の命令をステップ実行
 
--   現在のステップ実行モードを続行
+- 現在のステップ実行モードを続行
 
--   プログラムに含まれるスレッドの中断
+- プログラムに含まれるスレッドの中断
 
--   プログラムに含まれるスレッドを再開します。
+- プログラムに含まれるスレッドを再開します。
 
 > [!NOTE]
->  コール スタックの表示は、スレッド レベルで実装されます。 スレッドの呼び出し履歴を表示するときに、フレームの情報を列挙するには、すべてのメソッドを実装する必要があります、 [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)インターフェイス。
+> コール スタックの表示は、スレッド レベルで実装されます。 スレッドの呼び出し履歴を表示するときに、フレームの情報を列挙するには、すべてのメソッドを実装する必要があります、 [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)インターフェイス。
 
 ## <a name="methods-of-program-control"></a>プログラム コントロールのメソッド
  次の表は、メソッドの[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)最低限機能のデバッグ エンジン (DE) と実行の制御を実装する必要があります。

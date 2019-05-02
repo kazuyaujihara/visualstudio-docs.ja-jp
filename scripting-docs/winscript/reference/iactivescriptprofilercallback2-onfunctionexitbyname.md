@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 87f0b7e7a3cea4e3e59fb43ef9ddc2d4934552e6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993346"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionexitbyname"></a>IActiveScriptProfilerCallback2::OnFunctionExitByName
 スクリプト エンジン オブジェクトは、ドキュメント オブジェクト モデル (DOM) の関数呼び出しの実行が完了をプロファイラーに通知します。  
@@ -37,7 +37,7 @@ HRESULT OnFunctionExitByName(
  [in]スクリプト エンジンが実行を終了したこと、関数の名前。  
   
  `scriptType`  
- [in]関数の型。 有効な値の説明については、[PROFILER_SCRIPT_TYPE 列挙型](../../winscript/reference/profiler-script-type-enumeration.md)を参照してください。  
+ [in]関数の型。 有効な値の説明については、次を参照してください。 [PROFILER_SCRIPT_TYPE 列挙型](../../winscript/reference/profiler-script-type-enumeration.md)します。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドの戻り値は、スクリプト エンジンによって無視されます。  

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f1fda2930989ad4d2780b083b9e953c26889b32
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 38245a3c16c79806f495b76a0ae0d64b55c05623
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438723"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>チュートリアル: カスタム作業ウィンドウからアプリケーションを自動化します。
   このチュートリアルでは、PowerPoint を自動化するカスタム作業ウィンドウの作成方法を示します。 このカスタム作業ウィンドウでは、カスタム作業ウィンドウに配置された <xref:System.Windows.Forms.MonthCalendar> コントロールをユーザーがクリックしたときに、日付をスライドに挿入します。
@@ -33,28 +33,28 @@ ms.locfileid: "56641378"
 
  このチュートリアルでは、次の作業について説明します。
 
--   カスタム作業ウィンドウのユーザー インターフェイスの設計。
+- カスタム作業ウィンドウのユーザー インターフェイスの設計。
 
--   カスタム作業ウィンドウによる PowerPoint の自動化。
+- カスタム作業ウィンドウによる PowerPoint の自動化。
 
--   PowerPoint でのカスタム作業ウィンドウの表示。
+- PowerPoint でのカスタム作業ウィンドウの表示。
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft PowerPoint 2010 または [!INCLUDE[PowerPoint_15_short](../vsto/includes/powerpoint-15-short-md.md)]。
+- Microsoft PowerPoint 2010 または [!INCLUDE[PowerPoint_15_short](../vsto/includes/powerpoint-15-short-md.md)]。
 
 ## <a name="create-the-add-in-project"></a>アドイン プロジェクトを作成します。
  最初の手順では、PowerPoint の VSTO アドイン プロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1.  PowerPoint アドイン プロジェクト テンプレートを使用して、 **MyAddIn**という名前の PowerPoint VSTO アドイン プロジェクトを作成します。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. PowerPoint アドイン プロジェクト テンプレートを使用して、 **MyAddIn**という名前の PowerPoint VSTO アドイン プロジェクトを作成します。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によって、 **ThisAddIn.cs** コード ファイルまたは **ThisAddIn.vb** コード ファイルが開かれ、 **ソリューション エクスプローラー** に **MyAddIn**プロジェクトが追加されます。
 
@@ -63,13 +63,13 @@ ms.locfileid: "56641378"
 
 #### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>カスタム作業ウィンドウのユーザー インターフェイスを設計するには
 
-1.  **[プロジェクト]** メニューの **[ユーザー コントロールの追加]** をクリックします。
+1. **[プロジェクト]** メニューの **[ユーザー コントロールの追加]** をクリックします。
 
-2.  **[新しい項目の追加]** ダイアログ ボックスで、ユーザー コントロールの名前を **MyUserControl**に変更して、 **[追加]** をクリックします。
+2. **[新しい項目の追加]** ダイアログ ボックスで、ユーザー コントロールの名前を **MyUserControl**に変更して、 **[追加]** をクリックします。
 
      ユーザー コントロールがデザイナーで開きます。
 
-3.  **ツールボックス** の **[コモン コントロール]** タブから、 **MonthCalendar** コントロールをユーザー コントロールにドラッグします。
+3. **ツールボックス** の **[コモン コントロール]** タブから、 **MonthCalendar** コントロールをユーザー コントロールにドラッグします。
 
      **MonthCalendar** コントロールがユーザー コントロールのデザイン領域よりも大きい場合は、ユーザー コントロールのサイズを変更して、 **MonthCalendar** コントロールが収まるようにします。
 
@@ -78,42 +78,42 @@ ms.locfileid: "56641378"
 
 ### <a name="to-automate-powerpoint-from-the-custom-task-pane"></a>カスタム作業ウィンドウから PowerPoint を自動化するには
 
-1.  デザイナーで、 <xref:System.Windows.Forms.MonthCalendar> コントロールをダブルクリックします。
+1. デザイナーで、 <xref:System.Windows.Forms.MonthCalendar> コントロールをダブルクリックします。
 
      **MyUserControl.cs** ファイルまたは **MyUserControl.vb** ファイルが開き、 <xref:System.Windows.Forms.MonthCalendar.DateChanged> イベントのイベント ハンドラーが作成されます。
 
-2.  ファイルの先頭に次のコードを追加します。 このコードでは、 <xref:Microsoft.Office.Core> 名前空間と <xref:Microsoft.Office.Interop.PowerPoint> 名前空間のエイリアスを作成します。
+2. ファイルの先頭に次のコードを追加します。 このコードでは、 <xref:Microsoft.Office.Core> 名前空間と <xref:Microsoft.Office.Interop.PowerPoint> 名前空間のエイリアスを作成します。
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
      [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]
 
-3.  `MyUserControl` クラスに次のコードを追加します。 このコードでは、 <xref:Microsoft.Office.Interop.PowerPoint.Shape> オブジェクトを `MyUserControl`のメンバーとして宣言します。 次の手順では、この <xref:Microsoft.Office.Interop.PowerPoint.Shape> を使用して、アクティブなプレゼンテーションのスライドにテキスト ボックスを追加します。
+3. `MyUserControl` クラスに次のコードを追加します。 このコードでは、 <xref:Microsoft.Office.Interop.PowerPoint.Shape> オブジェクトを `MyUserControl`のメンバーとして宣言します。 次の手順では、この <xref:Microsoft.Office.Interop.PowerPoint.Shape> を使用して、アクティブなプレゼンテーションのスライドにテキスト ボックスを追加します。
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
      [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]
 
-4.  `monthCalendar1_DateChanged` イベント ハンドラーを次のコードで置き換えます。 このコードでは、アクティブなプレゼンテーションの最初のスライドにテキスト ボックスを追加して、現在選択されている日付をそのテキスト ボックスに追加します。 また、このコードでは `Globals.ThisAddIn` オブジェクトを使用して PowerPoint のオブジェクト モデルにアクセスします。
+4. `monthCalendar1_DateChanged` イベント ハンドラーを次のコードで置き換えます。 このコードでは、アクティブなプレゼンテーションの最初のスライドにテキスト ボックスを追加して、現在選択されている日付をそのテキスト ボックスに追加します。 また、このコードでは `Globals.ThisAddIn` オブジェクトを使用して PowerPoint のオブジェクト モデルにアクセスします。
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#3)]
      [!code-vb[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#3)]
 
-5.  **ソリューション エクスプローラー**で、 **MyAddIn** プロジェクトを右クリックして、 **[ビルド]** をクリックします。 プロジェクトのビルドでエラーが発生しないことを確認します。
+5. **ソリューション エクスプローラー**で、 **MyAddIn** プロジェクトを右クリックして、 **[ビルド]** をクリックします。 プロジェクトのビルドでエラーが発生しないことを確認します。
 
 ## <a name="display-the-custom-task-pane"></a>カスタム作業ウィンドウを表示します。
  VSTO アドインの起動時にカスタム作業ウィンドウを表示するには、VSTO アドインの <xref:Microsoft.Office.Tools.AddIn.Startup> イベント ハンドラーで、ユーザー コントロールを作業ウィンドウに追加します。
 
 ### <a name="to-display-the-custom-task-pane"></a>カスタム作業ウィンドウを表示するには
 
-1.  **ソリューション エクスプローラー**で、 **[PowerPoint]** を展開します。
+1. **ソリューション エクスプローラー**で、 **[PowerPoint]** を展開します。
 
-2.  **ThisAddIn.cs** または **ThisAddIn.vb** を右クリックして、 **[コードの表示]** をクリックします。
+2. **ThisAddIn.cs** または **ThisAddIn.vb** を右クリックして、 **[コードの表示]** をクリックします。
 
-3.  `ThisAddIn` クラスに次のコードを追加します。 このコードは `MyUserControl` と <xref:Microsoft.Office.Tools.CustomTaskPane> のインスタンスを `ThisAddIn` クラスのメンバーとして宣言します。
+3. `ThisAddIn` クラスに次のコードを追加します。 このコードは `MyUserControl` と <xref:Microsoft.Office.Tools.CustomTaskPane> のインスタンスを `ThisAddIn` クラスのメンバーとして宣言します。
 
      [!code-vb[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#4)]
      [!code-csharp[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#4)]
 
-4.  `ThisAddIn_Startup` イベント ハンドラーを次のコードで置き換えます。 このコードは <xref:Microsoft.Office.Tools.CustomTaskPane> オブジェクトを `MyUserControl` コレクションに追加することにより、新しい `CustomTaskPanes` を作成します。 コードでは、作業ウィンドウも表示されます。
+4. `ThisAddIn_Startup` イベント ハンドラーを次のコードで置き換えます。 このコードは <xref:Microsoft.Office.Tools.CustomTaskPane> オブジェクトを `MyUserControl` コレクションに追加することにより、新しい `CustomTaskPanes` を作成します。 コードでは、作業ウィンドウも表示されます。
 
      [!code-vb[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#5)]
      [!code-csharp[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#5)]
@@ -123,22 +123,22 @@ ms.locfileid: "56641378"
 
 ### <a name="to-test-your-vsto-add-in"></a>VSTO アドインをテストするには
 
-1.  キーを押して**F5**プロジェクトを実行します。
+1. キーを押して**F5**プロジェクトを実行します。
 
-2.  カスタム作業ウィンドウが表示されていることを確認します。
+2. カスタム作業ウィンドウが表示されていることを確認します。
 
-3.  作業ウィンドウの <xref:System.Windows.Forms.MonthCalendar> コントロールで日付をクリックします。
+3. 作業ウィンドウの <xref:System.Windows.Forms.MonthCalendar> コントロールで日付をクリックします。
 
      アクティブなプレゼンテーションの最初のスライドに日付が挿入されます。
 
 ## <a name="next-steps"></a>次の手順
  カスタム作業ウィンドウを作成する方法の詳細については、次のトピックで説明します。
 
--   別のアプリケーションの VSTO アドインでカスタム作業ウィンドウを作成します。 カスタム作業ウィンドウをサポートするアプリケーションの詳細については、[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)を参照してください。
+- 別のアプリケーションの VSTO アドインでカスタム作業ウィンドウを作成します。 カスタム作業ウィンドウをサポートするアプリケーションの詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
 
--   カスタム作業ウィンドウの表示/非表示の切り替えに使用できるリボン ボタンを作成する。 詳細については、「[チュートリアル:リボン ボタンとカスタム作業ウィンドウを同期](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)します。
+- カスタム作業ウィンドウの表示/非表示の切り替えに使用できるリボン ボタンを作成する。 詳細については、「[チュートリアル:リボン ボタンとカスタム作業ウィンドウを同期](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)します。
 
--   Outlook で開いたそれぞれの電子メール メッセージ用に、カスタム作業ウィンドウを作成する。 詳細については、「[チュートリアル:Outlook で電子メール メッセージと共にカスタム作業ウィンドウを表示](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)します。
+- Outlook で開いたそれぞれの電子メール メッセージ用に、カスタム作業ウィンドウを作成する。 詳細については、「[チュートリアル:Outlook で電子メール メッセージと共にカスタム作業ウィンドウを表示](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [カスタム作業ウィンドウ](../vsto/custom-task-panes.md)

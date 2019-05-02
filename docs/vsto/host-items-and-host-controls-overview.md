@@ -36,12 +36,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ef2d97b0e3b15accdeb267513b38ef6d5bd729d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e9bd569f41ae15b6e95cc92fe969a4263c760735
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427974"
 ---
 # <a name="host-items-and-host-controls-overview"></a>ホスト項目とホスト コントロールの概要
   ホスト項目とホスト コントロールは、Visual Studio の Office 開発ツールを使用して作成される Office ソリューションのプログラミング モデルを提供する助けとなる型です。 ホスト項目とホスト コントロールは、Microsoft Office Word および Microsoft Office Excel の COM ベースのオブジェクト モデルとの対話を、Windows フォーム コントロールなどのマネージド オブジェクトとの対話と似たものにします。
@@ -70,16 +70,16 @@ ms.locfileid: "56607110"
 ### <a name="understand-host-items-in-document-level-projects"></a>ドキュメント レベルのプロジェクトでのホスト項目を理解します。
  ドキュメント レベルのプロジェクトでは、ホスト項目はコードのエントリ ポイントを提供し、ソリューションの開発に役立つデザイナーを備えています。
 
- <xref:Microsoft.Office.Tools.Word.Document> と <xref:Microsoft.Office.Tools.Excel.Worksheet> のホスト項目は、Windows フォーム デザイナーに似た、文書やワークシートを視覚的に表現する関連デザイナーを備えています。 このデザイナーを使用して、Word や Excel で文書やワークシートのコンテンツを変更したり、デザイン サーフェイスにコントロールをドラッグしたりすることができます。 詳細については、[Document ホスト項目](../vsto/document-host-item.md)と[Worksheet ホスト項目](../vsto/worksheet-host-item.md)を参照してください。
+ <xref:Microsoft.Office.Tools.Word.Document> と <xref:Microsoft.Office.Tools.Excel.Worksheet> のホスト項目は、Windows フォーム デザイナーに似た、文書やワークシートを視覚的に表現する関連デザイナーを備えています。 このデザイナーを使用して、Word や Excel で文書やワークシートのコンテンツを変更したり、デザイン サーフェイスにコントロールをドラッグしたりすることができます。 詳細については、次を参照してください。 [Document ホスト項目](../vsto/document-host-item.md)と[Worksheet ホスト項目](../vsto/worksheet-host-item.md)します。
 
- <xref:Microsoft.Office.Tools.Excel.Workbook> ホスト項目は、ユーザー インターフェイスのあるコントロールのコンテナーとしては動作しません 代わりに、このホスト項目のデザイナーはコンポーネント トレイとして機能し、ユーザーはこのデザイナーを使用して <xref:System.Data.DataSet>などのコンポーネントをデザイン サーフェイスにドラッグできます。 詳細については、[Workbook ホスト項目](../vsto/workbook-host-item.md)を参照してください。
+ <xref:Microsoft.Office.Tools.Excel.Workbook> ホスト項目は、ユーザー インターフェイスのあるコントロールのコンテナーとしては動作しません 代わりに、このホスト項目のデザイナーはコンポーネント トレイとして機能し、ユーザーはこのデザイナーを使用して <xref:System.Data.DataSet>などのコンポーネントをデザイン サーフェイスにドラッグできます。 詳細については、次を参照してください。 [Workbook ホスト項目](../vsto/workbook-host-item.md)します。
 
- ドキュメント レベルのプロジェクトでは、ホスト項目をプログラムで作成することはできません。 その代わり、デザイン時に Visual Studio によってプロジェクトに自動的に生成される `ThisDocument`、 `ThisWorkbook`、または `Sheet`*n* クラスを使用します。 生成されるこれらのクラスは、ホスト項目から派生するもので、コードのエントリ ポイントを提供します。 詳細については、[ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)を参照してください。
+ ドキュメント レベルのプロジェクトでは、ホスト項目をプログラムで作成することはできません。 その代わり、デザイン時に Visual Studio によってプロジェクトに自動的に生成される `ThisDocument`、 `ThisWorkbook`、または `Sheet`*n* クラスを使用します。 生成されるこれらのクラスは、ホスト項目から派生するもので、コードのエントリ ポイントを提供します。 詳細については、次を参照してください。[ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)します。
 
 ### <a name="understand-host-items-in-vsto-add-in-projects"></a>VSTO アドイン プロジェクトのホスト項目を理解します。
  VSTO アドインを作成するときにありませんアクセス、ホスト項目に既定では。 ただし、生成<xref:Microsoft.Office.Tools.Word.Document>、 <xref:Microsoft.Office.Tools.Excel.Workbook>、および<xref:Microsoft.Office.Tools.Excel.Worksheet>Word と実行時に Excel VSTO アドイン内の項目をホストします。
 
- ホスト項目を生成すると、文書にコントロールを追加するなどのタスクを実行できます。 詳細については、[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)を参照してください。
+ ホスト項目を生成すると、文書にコントロールを追加するなどのタスクを実行できます。 詳細については、次を参照してください。[拡張 Word 文書や Excel ブックを実行時に VSTO アドインで](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)します。
 
 ## <a name="host-controls"></a>ホスト コントロール
  ホスト コントロールは、Word や Excel のオブジェクト モデルで、`Microsoft.Office.Interop.Word.ContentControl` や <xref:Microsoft.Office.Interop.Excel.Range> オブジェクトなどのさまざまなユーザー インターフェイス (UI) オブジェクトを拡張します。
@@ -110,10 +110,10 @@ ms.locfileid: "56607110"
 
   ![ホスト項目とホスト コントロールの間のリレーションシップ](../vsto/media/hostitemscontrols.png "ホスト項目とホスト コントロールの間のリレーションシップ")
 
-  また、Windows フォーム コントロールを Word および Excel の文書領域に直接追加することによって、Office ソリューションで Windows フォーム コントロールを使用できます。 詳細については、[Windows フォーム コントロールの Office ドキュメントの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)を参照してください。
+  また、Windows フォーム コントロールを Word および Excel の文書領域に直接追加することによって、Office ソリューションで Windows フォーム コントロールを使用できます。 詳細については、次を参照してください。 [Windows フォーム コントロールの Office ドキュメントの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)します。
 
 > [!NOTE]
->  Word サブ文書へのホスト コントロールおよび Windows フォーム コントロールの追加はサポートされていません。
+> Word サブ文書へのホスト コントロールおよび Windows フォーム コントロールの追加はサポートされていません。
 
 ### <a name="add-host-controls-to-your-documents"></a>ホスト コントロールをドキュメントに追加します。
  ドキュメント レベルのプロジェクトでは、次の方法を使用して、デザイン時に Word 文書や Excel ワークシートにホスト コントロールを追加できます。
@@ -124,7 +124,7 @@ ms.locfileid: "56607110"
 
 - **[データ ソース]** ウィンドウから文書やワークシートに、ホスト コントロールをドラッグします。 これによって、既にデータにバインドされているコントロールを追加できます。 詳細については、「[Office ソリューションでのコントロールにデータをバインド](../vsto/binding-data-to-controls-in-office-solutions.md)」を参照してください。
 
-  ドキュメント レベルと VSTO アドイン プロジェクトでは、実行時にドキュメントをいくつかのホスト コントロールを追加することもできます。 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
+  ドキュメント レベルと VSTO アドイン プロジェクトでは、実行時にドキュメントをいくつかのホスト コントロールを追加することもできます。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
 
   ホスト コントロールをドキュメントに追加する方法の詳細については、以下のトピックを参照してください:
 
@@ -148,25 +148,25 @@ ms.locfileid: "56607110"
  **ツールボックス** から文書にホスト コントロールをドラッグすると、コントロールには自動的にコントロールの型と末尾の増分番号で構成される名前が付けられます。 たとえば、ブックマークには **bookmark1**や **bookmark2**などの名前が付けられます。 Word または Excel のネイティブ機能を使用してコントロールを追加する場合は、コントロールの作成時に特定の名前を指定できます。 **[プロパティ]** ウィンドウで、 **[名前]** プロパティの値を変更してコントロールの名前を変更することもできます。
 
 > [!NOTE]
->  ホスト コントロールの名前に予約語は使用できません。 たとえば、 <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールをワークシートに追加し、名前を **System**に変更すると、プロジェクトをビルドするときにエラーが発生します。
+> ホスト コントロールの名前に予約語は使用できません。 たとえば、 <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールをワークシートに追加し、名前を **System**に変更すると、プロジェクトをビルドするときにエラーが発生します。
 
 ### <a name="delete-host-controls"></a>ホスト コントロールを削除します。
  ドキュメント レベルのプロジェクトでコントロールを削除できますホスト デザイン時に、Excel ワークシートまたは Word 文書にコントロールを選択し、キーを押して、**削除**キー。 ただし、 **コントロールを削除するには、Excel の** [名前の定義] <xref:Microsoft.Office.Tools.Excel.NamedRange> ダイアログ ボックスを使用する必要があります。
 
  デザイン時にホスト コントロールをドキュメントに追加する場合をする必要があるために削除できません、プログラムで実行時に、次回のコードでは、コントロールを使用しようとする、例外がスローされます。 `Delete`ホスト コントロールのメソッドでは、実行時にドキュメントに追加されるホスト コントロールのみ削除します。 デザイン時に作成されたホスト コントロールの `Delete` メソッドを呼び出すと、例外がスローされます。
 
- たとえば、 <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> の <xref:Microsoft.Office.Tools.Excel.NamedRange> メソッドは、プログラムによってワークシートに追加された場合のみ (動的に作成されたホスト コントロールと呼ばれます)、 <xref:Microsoft.Office.Tools.Excel.NamedRange> を正しく削除します。 動的に作成されたホスト コントロールは、コントロール名を `Remove` プロパティまたは <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> プロパティの <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> メソッドに渡すことによっても削除できます。 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
+ たとえば、 <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> の <xref:Microsoft.Office.Tools.Excel.NamedRange> メソッドは、プログラムによってワークシートに追加された場合のみ (動的に作成されたホスト コントロールと呼ばれます)、 <xref:Microsoft.Office.Tools.Excel.NamedRange> を正しく削除します。 動的に作成されたホスト コントロールは、コントロール名を `Remove` プロパティまたは <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> プロパティの <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> メソッドに渡すことによっても削除できます。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
 
- エンドユーザーは、実行時にドキュメントからホスト コントロールを削除する、予期しない方法で、ソリューションが失敗する可能性があります。 Word および Excel のドキュメント保護機能を使用して、ホスト コントロールが削除されないように保護できます。 詳細については、[Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)を参照してください。
+ エンドユーザーは、実行時にドキュメントからホスト コントロールを削除する、予期しない方法で、ソリューションが失敗する可能性があります。 Word および Excel のドキュメント保護機能を使用して、ホスト コントロールが削除されないように保護できます。 詳細については、次を参照してください。 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)します。
 
 > [!NOTE]
->  文書やワークシートの `Shutdown` イベント ハンドラーでは、コントロールをプログラムで削除しないでください。 `Shutdown` イベントが発生すると、UI 要素は使用できなくなります。 アプリケーションが終了する前にコントロールを削除する場合は、 `BeforeClose` や `BeforeSave`などの別のイベント ハンドラーにコードを追加してください。
+> 文書やワークシートの `Shutdown` イベント ハンドラーでは、コントロールをプログラムで削除しないでください。 `Shutdown` イベントが発生すると、UI 要素は使用できなくなります。 アプリケーションが終了する前にコントロールを削除する場合は、 `BeforeClose` や `BeforeSave`などの別のイベント ハンドラーにコードを追加してください。
 
 ### <a name="program-against-host-control-events"></a>ホスト コントロールのイベントに対してプログラム
  ホスト コントロールが Office オブジェクトを拡張する方法の 1 つに、イベントの追加が挙げられます。 たとえば、Excel の <xref:Microsoft.Office.Interop.Excel.Range> オブジェクトと Word の <xref:Microsoft.Office.Interop.Word.Bookmark> オブジェクトはイベントを持ちませんが、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] では、プログラミング可能なイベントを追加することによってこれらのオブジェクトを拡張します。 Windows フォームのコントロールのイベントにアクセスするのと同じ方法で、これらのイベントにアクセスし、コーディングすることができます。Visual Basic ではイベント ドロップダウン リストを使用し、C# ではイベント プロパティ ページを使用します。 詳細については、「[チュートリアル:NamedRange コントロールのイベントに対してプログラム](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)します。
 
 > [!NOTE]
->  Excel の <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> オブジェクトの <xref:Microsoft.Office.Interop.Excel.Application> プロパティを **false**と呼ばれるオブジェクトを拡張します。 このプロパティを **false** に設定すると、ホスト コントロールのイベントを含む、すべてのイベントが Excel で発生しなくなります。
+> Excel の <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> オブジェクトの <xref:Microsoft.Office.Interop.Excel.Application> プロパティを **false**と呼ばれるオブジェクトを拡張します。 このプロパティを **false** に設定すると、ホスト コントロールのイベントを含む、すべてのイベントが Excel で発生しなくなります。
 
 ## <a name="see-also"></a>関連項目
 - [ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

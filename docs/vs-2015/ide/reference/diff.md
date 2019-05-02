@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ad1f619930f79d1810eb999163110aa015c65f0a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a7e7d7c7a7fba122f62dd3edb7cdac2b6e175167
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62419973"
 ---
 # <a name="diff"></a>/Diff
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 2 つのファイルを比較します。 相違点は特殊な Visual Studio のウィンドウに表示されます。  
   
 ## <a name="syntax"></a>構文  
@@ -30,13 +29,13 @@ devenv /Diff SourceFile, TargetFile, [SourceDisplayName],[TargetDisplayName]
   
 ## <a name="arguments"></a>引数  
  `SourceFile`  
- 必須です。 比較する最初のファイルの完全パスと名前。  
+ 必須。 比較する最初のファイルの完全パスと名前。  
   
  `TargetFile`  
- 必須です。 比較する 2 番目のファイルの完全パスと名前。  
+ 必須。 比較する 2 番目のファイルの完全パスと名前。  
   
  `SourceDisplayName`  
- 任意。 最初のファイルの表示名。  
+ 省略可能です。 最初のファイルの表示名。  
   
  `TargetDisplayName`  
  任意。 2 番目のファイルの表示名。

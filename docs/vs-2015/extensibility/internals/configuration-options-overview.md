@@ -11,12 +11,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 702cac3c224b958a4de37b03814ecea7390ae217
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441521"
 ---
 # <a name="configuration-options-overview"></a>構成オプションの概要
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58975193"
 |MyConfig|N/A|\<MyConfig Win64 設定 >|  
   
 > [!NOTE]
->  対象とするプロジェクトは Win32 をサポートしていない場合を除き、"Win32"プラットフォームを除外する"MyConfig"ソリューション構成を作成することはできません。  
+> 対象とするプロジェクトは Win32 をサポートしていない場合を除き、"Win32"プラットフォームを除外する"MyConfig"ソリューション構成を作成することはできません。  
   
  ソリューションのアクティブな構成の変更は、そのソリューションにビルド、実行、デバッグまたは配置するプロジェクト構成のセットを選択します。 たとえば、リリースからデバッグするアクティブなソリューション構成を変更する場合、ソリューションのデバッグ構成に示されているプロジェクトの構成ではそのソリューション内のすべてのプロジェクトはビルド自動的に。 プロジェクトの構成は、します通常はも名前付きのデバッグ、ユーザーが手動で変更を環境の Configuration Manager で行った場合を除き。  
   

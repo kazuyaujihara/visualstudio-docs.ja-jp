@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a8f4ce6ab886fea3364526b53a32f72ad3f1408e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4b2ce01cf315404fbd37e1936ac445a37c9a3f72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430917"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>方法: 組み込みのフォントおよび色スキームへをアクセスします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウ�
     この GUID は、カテゴリを一意に識別するために使用<strong>します。</strong> このカテゴリには、IDE の既定のフォントおよび色の仕様が再利用されます。  
   
    > [!NOTE]
-   >  フォントおよび色のデータを取得するときに、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>またはその他のインターフェイスでは、Vspackage この GUID を使用して組み込みの情報を参照します。  
+   > フォントおよび色のデータを取得するときに、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>またはその他のインターフェイスでは、Vspackage この GUID を使用して組み込みの情報を参照します。  
   
 2. カテゴリの名前は、IDE に表示するときに、必要に応じてローカライズできるように、VSPackage のリソース (.rc) ファイル内の文字列テーブルに追加する必要があります。  
   
@@ -49,13 +49,13 @@ Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウ�
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>組み込みのフォントと色を使用してカテゴリを登録するには  
   
-1.  特殊な種類のカテゴリのレジストリ エントリの次の場所を作成します。  
+1. 特殊な種類のカテゴリのレジストリ エントリの次の場所を作成します。  
   
      [Hklm \software\microsoft \Visual Studio\\*\<Visual Studio のバージョン >* \FontAndColors\\*\<カテゴリ >*]  
   
      *\<カテゴリ >* カテゴリのローカライズされていない名前を指定します。  
   
-2.  4 つの値をストックのフォントとカラー スキームを使用するレジストリを作成します。  
+2. 4 つの値をストックのフォントとカラー スキームを使用するレジストリを作成します。  
   
     |名前|型|データ|説明|  
     |----------|----------|----------|-----------------|  
@@ -64,7 +64,7 @@ Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウ�
     |NameID|REG_DWORD|ID|VSPackage のローカライズ可能なカテゴリ名のリソース ID。|  
     |ToolWindowPackage|REG_SZ|GUID|VSPackage の実装の GUID、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>インターフェイス。|  
   
-3.  
+3. 
   
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>システム指定のフォントと色の使用を開始します  
   

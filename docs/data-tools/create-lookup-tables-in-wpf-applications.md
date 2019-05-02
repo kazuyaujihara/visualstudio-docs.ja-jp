@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5fd3e7867b74c9dab923e91fd76424e88b309743
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 1631f1b93f79c21914f990620f7e0047c301163f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567820"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF アプリケーションでルックアップ テーブルを作成する
 
@@ -31,49 +31,49 @@ ms.locfileid: "55931612"
 
 ## <a name="to-create-a-lookup-table"></a>ルックアップ テーブルを作成するには
 
-1.  プロジェクトに関連するデータを使用してデータ ソースの種類は、次のいずれかを追加します。
+1. プロジェクトに関連するデータを使用してデータ ソースの種類は、次のいずれかを追加します。
 
-    -   データセットまたはエンティティ データ モデル。
+    - データセットまたはエンティティ データ モデル。
 
-    -   WCF データ サービス、WCF サービスまたは web サービス。 詳細については、次を参照してください。[方法: データ サービスに接続する](../data-tools/how-to-connect-to-data-in-a-service.md)します。
+    - WCF データ サービス、WCF サービスまたは web サービス。 詳細については、「[方法 :サービスのデータに接続する](../data-tools/how-to-connect-to-data-in-a-service.md)
 
-    -   オブジェクト。 詳細については、次を参照してください。 [Visual Studio でのオブジェクトにバインド](bind-objects-in-visual-studio.md)します。
+    - オブジェクト。 詳細については、次を参照してください。 [Visual Studio でのオブジェクトにバインド](bind-objects-in-visual-studio.md)します。
 
     > [!NOTE]
     > ルックアップ テーブルを作成するには、2 つの関連するテーブルまたはオブジェクトがプロジェクトのデータ ソースとして存在する必要があります。
 
-2.  開く、 **WPF デザイナー**、デザイナーには内の項目の有効なドロップ先であるコンテナーが含まれているかどうかを確認して、**データソース**ウィンドウ。
+2. 開く、 **WPF デザイナー**、デザイナーには内の項目の有効なドロップ先であるコンテナーが含まれているかどうかを確認して、**データソース**ウィンドウ。
 
      有効なドロップ ターゲットの詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)します。
 
-3.  **[データ]** メニューの **[データ ソースの表示]** をクリックして **[データ ソース]** ウィンドウを開きます。
+3. **[データ]** メニューの **[データ ソースの表示]** をクリックして **[データ ソース]** ウィンドウを開きます。
 
-4.  内のノードを展開し、**データソース**ウィンドウで、親テーブルまたはオブジェクトと関連する子テーブルまたはオブジェクトが見つかるまで。
+4. 内のノードを展開し、**データソース**ウィンドウで、親テーブルまたはオブジェクトと関連する子テーブルまたはオブジェクトが見つかるまで。
 
     > [!NOTE]
     > 関連する子テーブルまたはオブジェクトは、親テーブルまたはオブジェクトで拡張可能な子ノードとして表示されるノードです。
 
-5.  子ノードは、ドロップダウン メニューをクリックし、**詳細**します。
+5. 子ノードは、ドロップダウン メニューをクリックし、**詳細**します。
 
-6.  子ノードを展開します。
+6. 子ノードを展開します。
 
-7.  子ノードの下の子と親のデータを関連する項目のドロップダウン メニューをクリックします。 (前の例では、 **CustomerID**ノードです)。次の種類の参照のバインディングをサポートするコントロールのいずれかを選択します。
+7. 子ノードの下の子と親のデータを関連する項目のドロップダウン メニューをクリックします。 (前の例では、 **CustomerID**ノードです)。次の種類の参照のバインディングをサポートするコントロールのいずれかを選択します。
 
-    -   **ComboBox**
+    - **ComboBox**
 
-    -   **ListBox**
+    - **ListBox**
 
-    -   **ListView**
+    - **ListView**
 
         > [!NOTE]
         > 場合、 **ListBox**または**ListView**コントロールは表示されません一覧で、一覧にこれらのコントロールを追加することができます。 詳しくは、次を参照してください。[設定、データ ソース ウィンドウからドラッグするときに作成されるコントロール](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)します。
 
-    -   派生した任意のカスタム コントロール<xref:System.Windows.Controls.Primitives.Selector>します。
+    - 派生した任意のカスタム コントロール<xref:System.Windows.Controls.Primitives.Selector>します。
 
         > [!NOTE]
         > 内の項目のカスタム コントロールをコントロールのリストを追加する方法についての情報を選択できます、**データソース**ウィンドウを参照してください[データ ソース ウィンドウにカスタム コントロールを追加](../data-tools/add-custom-controls-to-the-data-sources-window.md)します。
 
-8.  子ノードをドラッグして、**データソース**ウィンドウから WPF デザイナーでのコンテナーにします。 (前の例では、子ノードは、**注文**ノードです)。
+8. 子ノードをドラッグして、**データソース**ウィンドウから WPF デザイナーでのコンテナーにします。 (前の例では、子ノードは、**注文**ノードです)。
 
      Visual Studio には、ドラッグした項目ごとに新しいデータ バインド コントロールを作成する XAML が生成されます。 XAML も新しく追加<xref:System.Windows.Data.CollectionViewSource>子テーブルまたはドロップ先のリソースへのオブジェクト。 Visual Studio には、一部のデータ ソースのテーブルまたはオブジェクトにデータを読み込むコードも生成されます。 詳細については、次を参照してください。 [Visual Studio でのデータにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)します。
 
@@ -92,4 +92,4 @@ ms.locfileid: "55931612"
 
 - [Visual Studio でデータに WPF コントロールをバインドする](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [WPF アプリケーションで関連データを表示する](../data-tools/display-related-data-in-wpf-applications.md)
-- [チュートリアル: WPF アプリケーションでの関連データの表示](../data-tools/display-related-data-in-wpf-applications.md)
+- [チュートリアル: WPF アプリケーションで関連データを表示する](../data-tools/display-related-data-in-wpf-applications.md)

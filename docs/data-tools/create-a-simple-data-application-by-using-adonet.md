@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62570099"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET を使用した単純なデータ アプリケーションの作成
 
@@ -27,13 +27,13 @@ ms.locfileid: "55929402"
 > [!IMPORTANT]
 > コードをシンプルにするため、運用環境で使用する例外処理は含まれていません。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 アプリケーションの作成には、次が必要です:
 
--   Visual Studio
+- Visual Studio
 
--   SQL Server Express LocalDB。 SQL Server Express LocalDB をお持ちでない場合からをインストール、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)します。
+- SQL Server Express LocalDB。 SQL Server Express LocalDB をお持ちでない場合からをインストール、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)します。
 
 このトピックでする Visual Studio IDE の基本的な機能を使い慣れているとできる Windows フォーム アプリケーションを作成と仮定ボタンと、フォームの他のコントロールを配置するプロジェクトにフォーム コントロール、およびコードの単純なイベントのプロパティの設定を追加します。 完了することをお勧め、これらのタスクを慣れていない場合、 [Visual c# および Visual Basic の概要](../ide/quickstart-visual-basic-console.md)トピックでこのチュートリアルを開始する前にします。
 
@@ -59,7 +59,7 @@ ms.locfileid: "55929402"
 
 7. T-SQL スクリプトをクエリ エディターに貼り付けて選択し、 **Execute**ボタンをクリックします。
 
-     しばらくすると、クエリの実行が完了し、データベース オブジェクトを作成します。 データベースには、2 つのテーブルが含まれています: 顧客と注文です。 これらのテーブル データを含まない初期状態で、作成するアプリケーションを実行するときにデータを追加することができます。 データベースには、次の 4 つのシンプルなストアド プロシージャも含まれています。
+     しばらくすると、クエリの実行が完了し、データベース オブジェクトを作成します。 データベースには、2 つのテーブルが含まれています。顧客と注文です。 これらのテーブル データを含まない初期状態で、作成するアプリケーションを実行するときにデータを追加することができます。 データベースには、次の 4 つのシンプルなストアド プロシージャも含まれています。
 
 ## <a name="create-the-forms-and-add-controls"></a>フォームを作成してコントロールを追加する
 
@@ -69,11 +69,11 @@ ms.locfileid: "55929402"
 
 2. 2 つの Windows フォームをプロジェクトに追加し、合計 3 つのフォームに次の名前を付けます。
 
-   -   **ナビゲーション**
+   - **ナビゲーション**
 
-   -   **NewCustomer**
+   - **NewCustomer**
 
-   -   **FillOrCancel**
+   - **FillOrCancel**
 
 3. 各フォームに、次の図に示されるように、テキスト ボックス、ボタン、および他のコントロールを追加します。 各コントロールに、テーブルを示すプロパティを設定します。
 
@@ -124,21 +124,21 @@ ms.locfileid: "55929402"
 
  右クリックし、接続文字列を見つけることができます、 **Sales**内のデータ接続**サーバー エクスプ ローラー**を選択して**プロパティ**します。 検索、 **ConnectionString**プロパティを使用して**Ctrl**+**A**、 **Ctrl**+**C**を選択し、文字列をクリップボードにコピーします。
 
-1.  C# を使用している場合**ソリューション エクスプ ローラー**、展開、**プロパティ**ノードのプロジェクトで開くと、 **Settings.settings**ファイル。
+1. C# を使用している場合**ソリューション エクスプ ローラー**、展開、**プロパティ**ノードのプロジェクトで開くと、 **Settings.settings**ファイル。
     Visual Basic の場合に使用する場合**ソリューション エクスプ ローラー**、] をクリックして **[すべてのファイル**、展開、 **My Project**ノード、および順に開いて、 **Settings.settings**ファイル。
 
-2.  **名前**列、入力`connString`します。
+2. **名前**列、入力`connString`します。
 
-3.  **型**一覧で、 **(接続文字列)** します。
+3. **型**一覧で、 **(接続文字列)** します。
 
-4.  **スコープ**一覧で、**アプリケーション**します。
+4. **スコープ**一覧で、**アプリケーション**します。
 
-5.  **値**列で、(任意の外部の引用符)、なし、接続文字列を入力し、変更を保存します。
+5. **値**列で、(任意の外部の引用符)、なし、接続文字列を入力し、変更を保存します。
 
 > [!NOTE]
 > 実際のアプリケーションでは文字列を格納する接続」の説明に従って、安全に[接続文字列と構成ファイル](/dotnet/framework/data/adonet/connection-strings-and-configuration-files)します。
 
-##  <a name="write-the-code-for-the-forms"></a>フォームのコードを記述する
+## <a name="write-the-code-for-the-forms"></a>フォームのコードを記述する
 
 このセクションでは、各フォームの動作の簡単な概要を説明します。 フォーム上のボタンがクリックされたときに、基になるロジックを定義するコードも提供します。
 
@@ -180,6 +180,7 @@ NewCustomer フォームのロジックを完了するには、次の手順に�
      ```csharp
      using System.Data.SqlClient;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      ```
@@ -212,6 +213,7 @@ FillOrCancel フォームのロジックを完了するには、次の手順に�
      using System.Data.SqlClient;
      using System.Text.RegularExpressions;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      Imports System.Text.RegularExpressions

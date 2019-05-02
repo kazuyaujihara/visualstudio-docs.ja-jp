@@ -8,42 +8,42 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783331"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>方法: XSD スキーマに基づいて XML ドキュメントを作成します。
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>方法: XSD スキーマに基づいて XML ドキュメントを作成する
 
 **サンプル XML の生成**機能には、XML スキーマ (XSD) ファイルに基づくサンプル XML ファイルが生成されます。
 
  このオプションは、次のようなシナリオで使用できます。
 
--   スキーマのさまざまな構造の使用法を理解する。
+- スキーマのさまざまな構造の使用法を理解する。
 
--   スキーマが意図したとおりに機能しているかどうかを確認する。
+- スキーマが意図したとおりに機能しているかどうかを確認する。
 
 **サンプル XML の生成**機能は、グローバル要素でのみ使用し、有効な XML スキーマ セットが必要です。
 
 この機能では、通常は有効な XML ドキュメントが生成されます。 ただし、スキーマに次のものが 1 つ以上含まれていると、有効なサンプルが生成されない可能性があります。
 
--   `xs:key`、`xs:keyref`、および `xs:unique` の ID 制約
+- `xs:key`、`xs:keyref`、および `xs:unique` の ID 制約
 
--   `xs:pattern` ファセット
+- `xs:pattern` ファセット
 
--   `xs:QName` 型の列挙
+- `xs:QName` 型の列挙
 
--   `xs:ENTITY` 型、`xs:ENTITIES` 型、および `xs:NOTATION` 型
+- `xs:ENTITY` 型、`xs:ENTITIES` 型、および `xs:NOTATION` 型
 
 また、`xs:base64Binary` の内容は、その型のスキーマで列挙が発生する場合にのみ生成されることに注意してください。
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>XSD ファイルに基づいて XML インスタンス ドキュメントを生成するには
 
-1.  次の手順では、[方法。作成し、XSD スキーマ ファイルを編集する](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)します。
+1. 次の手順では、[方法。作成し、XSD スキーマ ファイルを編集する](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)します。
 
-2.  [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)を右クリックし、`PurchaseOrder`グローバル要素。 選択**サンプル XML の生成**します。
+2. [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)を右クリックし、`PurchaseOrder`グローバル要素。 選択**サンプル XML の生成**します。
 
      このオプションは、PurchaseOrder を選択するとします。*xml*次のサンプル XML コンテンツを含むファイルが生成され、XML エディターで開かれます。
 

@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 821396989a2de9444fdbf3499709588d00e66b45
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000877"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054301"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>マルチスレッド アプリケーションのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,8 +77,9 @@ ms.locfileid: "59000877"
  [方法: GPU スレッド ウィンドウを使用して、](../debugger/how-to-use-the-gpu-threads-window.md)の確認とデバッグ中に GPU 上で実行されているスレッドで作業します。
 
 ## <a name="related-sections"></a>関連項目
- [ブレークポイントの使用](../debugger/using-breakpoints.md)
- -   個々のスレッドにブレークポイントを配置する場合にブレークポイント フィルターを使用する方法について説明します。
+
+[ブレークポイントの使用](../debugger/using-breakpoints.md)
+- 個々のスレッドにブレークポイントを配置する場合にブレークポイント フィルターを使用する方法について説明します。
 
 - トレースポイントを使用すると、プログラムの実行を中断なしでトレースできます。 この方法はデッドロックなどの問題を調べる場合に役立ちます。
 

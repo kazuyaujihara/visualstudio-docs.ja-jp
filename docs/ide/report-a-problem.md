@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56800532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62980142"
 ---
 # <a name="overview-report-a-problem"></a>概要: 問題を報告する
 
@@ -104,7 +104,7 @@ Visual Studio 開発者コミュニティは、問題の報告ツールを使用
 
 - - -
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よくあるご質問
 
 ### <a name="how-can-i-increase-the-chance-of-my-problem-getting-resolved-quickly"></a>問題が迅速に解決される可能性を高くするにはどうすればよいですか。
 

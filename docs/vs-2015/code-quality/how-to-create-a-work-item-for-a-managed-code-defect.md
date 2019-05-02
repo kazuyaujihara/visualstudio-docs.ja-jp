@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 26dbe873d1552136c36748e638085bf39e5e530c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab8744e84e035501ba9bb8d531d982f4c17e206e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103237"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>方法: マネージド コードの障害に対する作業項目を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,16 +26,16 @@ ms.locfileid: "58975789"
   
 ### <a name="to-create-a-work-item-for-managed-code-defect"></a>マネージ コードの障害に対する作業項目を作成するには  
   
-1.  **コード分析**ウィンドウで、警告を選択します。  
+1. **コード分析**ウィンドウで、警告を選択します。  
   
-2.  選択**アクション**を選択し、**作業項目の作成**し作成する作業項目の種類を選択します。  
+2. 選択**アクション**を選択し、**作業項目の作成**し作成する作業項目の種類を選択します。  
   
      欠陥の情報を指定するための新しい作業項目が作成されます。  
   
 ### <a name="to-create-a-work-item-for-multiple-managed-code-defects"></a>複数の作業項目を作成するには、マネージ コードの不具合  
   
-1.  **エラー一覧**を複数の警告を選択し、警告を右クリックします。  
+1. **エラー一覧**を複数の警告を選択し、警告を右クリックします。  
   
-2.  をポイント**作業項目の作成**を作成する作業項目の種類をクリックします。  
+2. をポイント**作業項目の作成**を作成する作業項目の種類をクリックします。  
   
      選択したすべての警告バグ情報を指定するための単一の作業項目が作成されます。

@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9c592663e32b8050644d459b8db45f3f0f5307
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 160e219b6fc2ab314f8d0dd91043c18101f2c3a5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853341"
 ---
-# <a name="debug-multiple-processes-c-visual-basic-c"></a>複数のプロセスをデバッグ (C#、Visual Basic、C++)
+# <a name="debug-multiple-processes-c-visual-basic-c"></a>複数のプロセスをデバッグ (C#、Visual Basic、 C++)
 
 Visual Studio では、いくつかのプロセスを含むソリューションをデバッグできます。 開始しプロセス間の切り替え、中断、続行するとソース、デバッグの停止、および最後の手順したり個々 のプロセスからデタッチできます。
 
@@ -48,11 +48,11 @@ Visual Studio ソリューションでは、複数のプロジェクトは個別
 
 1. 選択**現在の選択範囲**、**シングル スタートアップ プロジェクト**とプロジェクト ファイル、または**マルチ スタートアップ プロジェクト**します。
 
-   選択した場合**マルチ スタートアップ プロジェクト**、プロジェクトごとに実行するには、起動順序とアクションを変更することができます:**開始**、**デバッグなしで開始**、または**None**します。
+   選択した場合**マルチ スタートアップ プロジェクト**、プロジェクトごとに実行するには、起動順序とアクションを変更することができます。**開始**、**デバッグなしで開始**、または**None**します。
 
 1. 選択**適用**、または**OK**を適用し、ダイアログ ボックスを閉じます。
 
-###  <a name="BKMK_Attach_to_a_process"></a> プロセスにアタッチする
+### <a name="BKMK_Attach_to_a_process"></a> プロセスにアタッチする
 
 デバッガーこともできます*アタッチ*リモート デバイス上でなど、Visual Studio の外部プロセスで実行されているアプリ。 アプリにアタッチした後は、Visual Studio デバッガーを使用できます。 デバッグ機能は、限られた可能性があります。 デバッグ情報を持つかどうか、アプリの構築、アプリのソース コードへのアクセスがあるかどうかと、JIT コンパイラがデバッグ情報を追跡するかどうかによって異なります。
 
@@ -69,7 +69,7 @@ Visual Studio ソリューションでは、複数のプロジェクトは個別
 >[!NOTE]
 >デバッガーは、子プロジェクトが同じソリューション内にある場合でも、デバッグ対象のプロセスによって開始された子プロセスに自動的にアタッチされません。 子プロセスをデバッグするには、開始後に、子プロセスにアタッチするか、新しいデバッガー インスタンスで子プロセスを起動する Windows レジストリ エディターを構成します。
 
-###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> レジストリ エディターを使用して、デバッガーでプロセスを自動的に開始
+### <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> レジストリ エディターを使用して、デバッガーでプロセスを自動的に開始
 
 場合によっては、別のプロセスによって起動されるアプリのスタートアップ コードをデバッグする必要があります。 たとえば、サービスやカスタムのセットアップ動作などです。 デバッガーを起動し、アプリに自動的に関連付けることができます。
 
@@ -93,7 +93,7 @@ Visual Studio ソリューションでは、複数のプロジェクトは個別
 
    ![Regedit.exe の自動デバッガー開始エントリ](../debugger/media/dbg_execution_automaticstart_result.png "regedit.exe の自動デバッガー開始エントリ")
 
-##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> 複数のプロセスを使用したデバッグします。
+## <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> 複数のプロセスを使用したデバッグします。
 <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>
 
 複数のプロセスを使用してアプリをデバッグするときに重大なステップ実行、および継続のデバッガー コマンドは既定ですべてのプロセスに影響します。 たとえば、プロセスがブレークポイントで中断されると、またその他のすべてのプロセスの実行は中断されます。 コマンドの実行対象をより詳細に制御するために、この既定の動作を変更できます。
@@ -102,7 +102,7 @@ Visual Studio ソリューションでは、複数のプロジェクトは個別
 
 - **ツール**(または**デバッグ**) >**オプション** > **デバッグ** > **全般**、オンまたはオフ、 **1 つのプロセスがブレークするときに、すべてのプロセスをブレーク**チェック ボックスをオンします。
 
-###  <a name="BKMK_Break__step__and_continue_commands"></a> 中断、ステップ実行、続行のコマンド
+### <a name="BKMK_Break__step__and_continue_commands"></a> 中断、ステップ実行、続行のコマンド
 
 次の表に、デバッグの動作を説明するときにコマンド、 **1 つのプロセスがブレークするときに、すべてのプロセスをブレーク** チェック ボックスを選択または選択解除。
 
@@ -117,12 +117,12 @@ Visual Studio ソリューションでは、複数のプロジェクトは個別
 |**プロセス**ウィンドウ >**プロセスのブレーク**|N/A|選択したプロセスが中断されます。<br />他のプロセスの既存の状態 (一時停止中または実行中) が維持されます。|
 |**プロセス**ウィンドウ >**プロセスの続行**|N/A|選択したプロセスが再開されます。<br />他のプロセスの既存の状態 (一時停止中または実行中) が維持されます。|
 
-###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> ソースとシンボル (.pdb) ファイルを検索する
+### <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> ソースとシンボル (.pdb) ファイルを検索する
 プロセスのソース コードを移動するには、デバッガーはそのソース ファイルとシンボル ファイルへのアクセスが必要です。 詳細については、[シンボル (.pdb) ファイルとソース ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)の指定に関する記事をご覧ください。
 
-使用して移動することができます、プロセスのファイルにアクセスできない場合、**逆アセンブル**ウィンドウ。 詳細については、次を参照してください。[方法: [逆アセンブル] ウィンドウを使用して](../debugger/how-to-use-the-disassembly-window.md)します。
+使用して移動することができます、プロセスのファイルにアクセスできない場合、**逆アセンブル**ウィンドウ。 詳細については、「[方法 :[逆アセンブル] ウィンドウを使用する](../debugger/how-to-use-the-disassembly-window.md)」を参照してください。
 
-###  <a name="BKMK_Switch_between_processes"></a> プロセスの切り替え
+### <a name="BKMK_Switch_between_processes"></a> プロセスの切り替え
 
 をデバッグしているが、特定の時点に 1 つだけのプロセスがデバッガーでアクティブなときに、複数のプロセスにアタッチすることができます。 **[デバッグの場所]** ツール バーまたは **[プロセス]** ウィンドウでアクティブまたは*現在*のプロセスを設定できます。 プロセス間で切り替えるには、両方のプロセスが中断モードであることが必要です。
 

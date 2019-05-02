@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26666ff9955d7516ff30c7276bfd46e990577e70
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 50ae796a4662b51c186e6e9d69bf41771d040c8b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62865691"
 ---
 # <a name="namematch"></a>NAME_MATCH
 一致する名前の大文字と小文字のオプションを選択します。
@@ -50,13 +50,13 @@ public enum NameMatchOptions { 
 ## <a name="remarks"></a>Remarks
  次のメソッドに引数として渡されます。
 
--   [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
+- [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
 
--   [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)
+- [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)
 
--   [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)
+- [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)
 
--   [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
+- [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: sh.h

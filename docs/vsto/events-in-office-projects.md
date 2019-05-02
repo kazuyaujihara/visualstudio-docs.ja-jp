@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63329433204af7c7fe7ae40366a376c9da16fdcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441822"
 ---
 # <a name="events-in-office-projects"></a>Office プロジェクト内のイベント
   各 Office プロジェクト テンプレートは、自動的に複数のイベント ハンドラーを生成します。 ドキュメント レベルのカスタマイズに使用するイベント ハンドラーは、VSTO アドイン用のイベント ハンドラーとは若干異なります。
@@ -48,41 +48,41 @@ ms.locfileid: "56627741"
  Visual Studio では、ドキュメント レベルのカスタマイズ内の新規または既存のドキュメントまたはワークシートの背後に生成されたコードを提供します。 このコードは、2 つの異なるイベントを発生させます。**スタートアップ**と**シャット ダウン**します。
 
 ### <a name="startup-event"></a>Startup イベント
- **Startup** イベントは、ドキュメントが実行中になり、アセンブリ内の初期化コードがすべて実行された後で、ホスト項目 (ドキュメント、ブックまたはワークシート) ごとに発生します。 これは、コードが実行されているクラスのコンストラクターで最後に実行されるイベントです。 ホスト項目の詳細については、[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)を参照してください。
+ **Startup** イベントは、ドキュメントが実行中になり、アセンブリ内の初期化コードがすべて実行された後で、ホスト項目 (ドキュメント、ブックまたはワークシート) ごとに発生します。 これは、コードが実行されているクラスのコンストラクターで最後に実行されるイベントです。 ホスト項目の詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)します。
 
  ドキュメント レベルのプロジェクトを作成する場合、Visual Studio は生成されたコード ファイル内の **Startup** イベント用に次のイベント ハンドラーを作成します。
 
--   Microsoft Office Word プロジェクトの場合、イベント ハンドラーの名前は `ThisDocument_Startup`です。
+- Microsoft Office Word プロジェクトの場合、イベント ハンドラーの名前は `ThisDocument_Startup`です。
 
--   Microsoft Office Excel プロジェクトの場合、イベント ハンドラーの名前は次のようになります。
+- Microsoft Office Excel プロジェクトの場合、イベント ハンドラーの名前は次のようになります。
 
-    -   `Sheet1_Startup`
+    - `Sheet1_Startup`
 
-    -   `Sheet2_Startup`
+    - `Sheet2_Startup`
 
-    -   `Sheet3_Startup`
+    - `Sheet3_Startup`
 
-    -   `ThisWorkbook_Startup`
+    - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>Shutdown イベント
  **Shutdown** イベントは、コードが読み込まれるアプリケーション ドメインがアンロードされるときに、ホスト項目 (ドキュメントまたはワークシート) ごとに発生します。 これは、アンロード時にクラス内で呼び出される最後のイベントです。
 
  ドキュメント レベルのプロジェクトを作成する場合、Visual Studio は生成されたコード ファイル内の **Shutdown** イベント用に次のイベント ハンドラーを作成します。
 
--   Microsoft Office Word プロジェクトの場合、イベント ハンドラーの名前は `ThisDocument_Shutdown`です。
+- Microsoft Office Word プロジェクトの場合、イベント ハンドラーの名前は `ThisDocument_Shutdown`です。
 
--   Microsoft Office Excel プロジェクトの場合、イベント ハンドラーの名前は次のようになります。
+- Microsoft Office Excel プロジェクトの場合、イベント ハンドラーの名前は次のようになります。
 
-    -   `Sheet1_Shutdown`
+    - `Sheet1_Shutdown`
 
-    -   `Sheet2_Shutdown`
+    - `Sheet2_Shutdown`
 
-    -   `Sheet3_Shutdown`
+    - `Sheet3_Shutdown`
 
-    -   `ThisWorkbook_Shutdown`
+    - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
->  ドキュメントの **Shutdown** イベント ハンドラー中にプログラムによってコントロールを削除しないでください。 **Shutdown** イベントが発生すると、ドキュメントの UI 要素は利用できなくなります。 アプリケーションが終了する前にコントロールを削除する場合は、 **BeforeClose** や **BeforeSave**などの別のイベント ハンドラーにコードを追加します。
+> ドキュメントの **Shutdown** イベント ハンドラー中にプログラムによってコントロールを削除しないでください。 **Shutdown** イベントが発生すると、ドキュメントの UI 要素は利用できなくなります。 アプリケーションが終了する前にコントロールを削除する場合は、 **BeforeClose** や **BeforeSave**などの別のイベント ハンドラーにコードを追加します。
 
 ### <a name="event-handler-method-declarations"></a>イベント ハンドラー メソッドの宣言
  イベント ハンドラー メソッドの宣言にはすべて次の同じ引数が渡されます。 *sender* と *e*です。 Excel では、 *sender* 引数は `Sheet1` や `Sheet2`などのシートを参照します。Word では、 *sender* 引数はドキュメントを参照します。 *e* 引数は、ここでは使用されませんが、イベントの標準の引数を参照します。
@@ -95,7 +95,7 @@ ms.locfileid: "56627741"
  次のコード例は、Excel のドキュメント レベルのプロジェクト内にある既定のイベント ハンドラーを示します。
 
 > [!NOTE]
->  次のコード例は、 `Sheet1` クラスのイベント ハンドラーを示します。 その他のホスト項目クラス内のイベント ハンドラーの名前は、クラス名に対応しています。 たとえば、 `Sheet2` クラスでは、 **Startup** イベント ハンドラーの名前は `Sheet2_Startup`です。 `ThisWorkbook`クラス、**スタートアップ**イベント ハンドラーの名前は`ThisWorkbook_Startup`します。
+> 次のコード例は、 `Sheet1` クラスのイベント ハンドラーを示します。 その他のホスト項目クラス内のイベント ハンドラーの名前は、クラス名に対応しています。 たとえば、 `Sheet2` クラスでは、 **Startup** イベント ハンドラーの名前は `Sheet2_Startup`です。 `ThisWorkbook`クラス、**スタートアップ**イベント ハンドラーの名前は`ThisWorkbook_Startup`します。
 
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
@@ -135,9 +135,9 @@ ms.locfileid: "56627741"
 
  `ThisAddIn_Startup` イベント ハンドラー内のコードは、VSTO アドインが <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> メソッドをオーバーライドしない限り、最初に実行されるユーザー コードです。 この場合、 `ThisAddIn_Startup` イベント ハンドラーが、 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>の後に呼び出されます。
 
- 内のコードを追加しないでください、`ThisAdd-In_Startup`イベント ハンドラーの場合は、コードがドキュメントを開く必要があります。 代わりに、ユーザーがドキュメントを作成するとき、または開くときに Office アプリケーションが発生させるイベントにそのコードを追加します。 詳細については、[Office アプリケーションの起動時にドキュメントにアクセス](../vsto/programming-vsto-add-ins.md#AccessingDocuments)を参照してください。
+ 内のコードを追加しないでください、`ThisAdd-In_Startup`イベント ハンドラーの場合は、コードがドキュメントを開く必要があります。 代わりに、ユーザーがドキュメントを作成するとき、または開くときに Office アプリケーションが発生させるイベントにそのコードを追加します。 詳細については、次を参照してください。 [Office アプリケーションの起動時にドキュメントにアクセス](../vsto/programming-vsto-add-ins.md#AccessingDocuments)します。
 
- VSTO アドインの詳細については、スタートアップ シーケンスは、[Architecture of VSTO アドイン](../vsto/architecture-of-vsto-add-ins.md)を参照してください。
+ VSTO アドインの詳細については、スタートアップ シーケンスは、次を参照してください。 [Architecture of VSTO アドイン](../vsto/architecture-of-vsto-add-ins.md)します。
 
 ### <a name="shutdown-event"></a>Shutdown イベント
  <xref:Microsoft.Office.Tools.AddInBase.Shutdown> イベントは、コードが読み込まれるアプリケーション ドメインがアンロードされるときに発生します。 このイベントは、生成されたコード ファイル内の `ThisAddIn_Shutdown` メソッドによって処理されます。 このイベント ハンドラーは、VSTO アドインがアンロードされるときに最後に実行されるユーザー コードです。
@@ -145,12 +145,12 @@ ms.locfileid: "56627741"
 #### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Outlook VSTO アドインのシャット ダウン イベント
  <xref:Microsoft.Office.Tools.AddInBase.Shutdown> イベントは、ユーザーが Outlook の COM アドイン ダイアログ ボックスを使用して、VSTO アドインを無効にした場合にのみ発生します。 Outlook の終了時には発生しません。 Outlook の終了時に実行する必要のあるコードがある場合は、次のいずれかのイベントを処理します。
 
--   <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> オブジェクトの <xref:Microsoft.Office.Interop.Outlook.Application> イベント。
+- <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> オブジェクトの <xref:Microsoft.Office.Interop.Outlook.Application> イベント。
 
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> オブジェクトの <xref:Microsoft.Office.Interop.Outlook.Explorer> イベント。
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> オブジェクトの <xref:Microsoft.Office.Interop.Outlook.Explorer> イベント。
 
 > [!NOTE]
->  レジストリを変更して終了する場合、Outlook が <xref:Microsoft.Office.Tools.AddInBase.Shutdown> イベントを発生させるように強制することができます。 ただし、管理者がこの設定を元に戻す場合、 `ThisAddIn_Shutdown` メソッドに追加したコードは Outlook の終了時に実行されなくなります。 詳細については、[Outlook 2010 でのシャット ダウンの変更](http://go.microsoft.com/fwlink/?LinkID=184614)を参照してください。
+> レジストリを変更して終了する場合、Outlook が <xref:Microsoft.Office.Tools.AddInBase.Shutdown> イベントを発生させるように強制することができます。 ただし、管理者がこの設定を元に戻す場合、 `ThisAddIn_Shutdown` メソッドに追加したコードは Outlook の終了時に実行されなくなります。 詳細については、次を参照してください。 [Outlook 2010 でのシャット ダウンの変更](http://go.microsoft.com/fwlink/?LinkID=184614)します。
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューションの開発](../vsto/developing-office-solutions.md)

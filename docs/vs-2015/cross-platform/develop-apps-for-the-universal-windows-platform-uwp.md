@@ -9,17 +9,16 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 949cbbc7146fc744f549201a98f61d82a80185e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787019"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666768"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 ユニバーサル Windows プラットフォームと 1 つの Windows コアを使用することで、電話やデスクトップなどの Windows 10 デバイスで同じアプリを実行できます。 これらのユニバーサル Windows アプリは、Visual Studio 2015 とユニバーサル Windows アプリ開発ツールを使用して作成します。  
   
  ![ユニバーサル Windows プラットフォーム](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")  
@@ -34,7 +33,7 @@ ms.locfileid: "54787019"
   
  これはコントラクトとバージョンの単純なコレクションです。 これらにより、アプリを実行する対象となる場所を指定できます。 オペレーティング システムを対象とすることは、もはやありません。 今後は、1 つ以上のデバイス ファミリがアプリの対象になります。 詳しくは、この [プラットフォーム ガイド](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx)をご覧ください。  
   
-## <a name="requirements"></a>要件  
+## <a name="requirements"></a>必要条件  
  ユニバーサル Windows アプリの開発ツールには、別のデバイス上のアプリの外観を確認する際に使用できるエミュレーターが付属しています。 これらのエミュレーターを使用する場合は、このソフトウェアを物理マシンにインストールする必要があります。 その物理マシンでは、Windows 8.1 (x64) Professional エディション以上が実行され、クライアント Hyper-V および第 2 レベルのアドレス変換 (SLAT) をサポートするプロセッサが搭載されている必要があります。 Visual Studio が仮想マシンにインストールされている場合は、エミュレーターを使用できません。  
   
  必要なソフトウェアの一覧を次に示します。  
@@ -49,7 +48,7 @@ ms.locfileid: "54787019"
   
   Windows 10 以外のプラットフォームで Visual Studio 2015 を使用してユニバーサル Windows アプリを開発する場合は、以下の制限事項があります。  
   
-- Windows 8.1(リモート Windows 10 デバイス) でのみアプリをローカルでを実行することはできません。 Visual Studio でエミュレーターを使用できますが、シミュレーターを使用することはできません。  
+- Windows 8.1:(リモート Windows 10 デバイス) でのみアプリをローカルでを実行することはできません。 Visual Studio でエミュレーターを使用できますが、シミュレーターを使用することはできません。  
   
 - Windows 7:(リモート Windows 10 デバイス) でのみアプリをローカルでを実行することはできません。 Visual Studio では、エミュレーターとシミュレーターのいずれも使用することはできません。  
   

@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847539"
 ---
-# <a name="how-to-set-a-thread-name-in-native-code"></a>方法 : ネイティブ コードのスレッド名を設定する
+# <a name="how-to-set-a-thread-name-in-native-code"></a>方法: ネイティブ コードのスレッド名を設定する
 スレッド名の設定は、Visual Studio のどのエディションでも実行できます。 関心のあるスレッドを識別するために便利ですがスレッドの名前を付け、**スレッド**ウィンドウの実行中のプロセスをデバッグするときにします。 スレッドの関係という名前を持つも役に立ちますさまざまなツールを使用してキャプチャするパフォーマンスの分析とクラッシュ ダンプの検査を使用して事後分析のデバッグを実行する場合。
 
 ## <a name="ways-to-set-a-thread-name"></a>スレッド名を設定する方法
@@ -111,4 +111,4 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 ## <a name="see-also"></a>関連項目
 - [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)
-- [方法 : マネージド コードのスレッド名を設定する](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+- [方法: マネージド コードのスレッド名を設定する](../debugger/how-to-set-a-thread-name-in-managed-code.md)

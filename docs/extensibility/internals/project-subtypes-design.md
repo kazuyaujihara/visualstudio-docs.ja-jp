@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac7771e657b546fdfced7033067d6de26256b96
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28cc20d00a9846fa119666b01aea2efab3a128ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909390"
 ---
 # <a name="project-subtypes-design"></a>プロジェクト サブタイプのデザイン
 
@@ -23,11 +23,11 @@ ms.locfileid: "56335650"
 
  次のトピックでは、基本的な設計とプロジェクト サブタイプの実装について詳しく説明します。
 
--   プロジェクト サブタイプのデザイン。
+- プロジェクト サブタイプのデザイン。
 
--   複数レベルの集計。
+- 複数レベルの集計。
 
--   インターフェイスをサポートします。
+- インターフェイスをサポートします。
 
 ## <a name="project-subtype-design"></a>プロジェクト サブタイプのデザイン
 
@@ -43,7 +43,7 @@ ms.locfileid: "56335650"
 
 - プロジェクトのオートメーション プロパティのコレクション。
 
-プロジェクト サブタイプによって拡張機能の詳細については、[プロパティとメソッドは、プロジェクト サブタイプによって拡張](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)を参照してください。
+プロジェクト サブタイプによって拡張機能の詳細については、次を参照してください。[プロパティとメソッドは、プロジェクト サブタイプによって拡張](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)します。
 
 ### <a name="policy-files"></a>ポリシー ファイル
 
@@ -61,7 +61,7 @@ ms.locfileid: "56335650"
 
 ### <a name="deployment-mechanisms"></a>展開メカニズム
 
-基本プロジェクト システムの多くは、プロジェクト サブタイプによって拡張機能は、展開の機構です。 プロジェクト サブタイプ構成インターフェイスを実装することによって展開メカニズムに影響を与えます (など<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) の QueryInterface を呼び出すことによって取得される<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>します。 ベースのプロジェクトを呼び出すシナリオでは、プロジェクトのサブタイプと高度なプロジェクト サブタイプの両方が別の構成の実装を追加する場所、`QueryInterface`で高度なプロジェクト サブタイプの`IUnknown`します。 内部のプロジェクト サブタイプに基本プロジェクトが求める構成の実装が含まれている場合、高度なプロジェクトのサブタイプは内部のプロジェクト サブタイプによって提供される実装に委任されます。 プロジェクト サブタイプのすべてのレベルの実装として 1 つの集計レベルから別の状態を維持するためのメカニズム、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>非ビルドを保持するプロジェクト ファイルに XML データに関連します。 詳細については、[MSBuild プロジェクト ファイル内のデータの永続化](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)を参照してください。 <xref:EnvDTE80.IInternalExtenderProvider> プロジェクト サブタイプからオートメーション エクステンダーを取得するためのメカニズムとして実装されます。
+基本プロジェクト システムの多くは、プロジェクト サブタイプによって拡張機能は、展開の機構です。 プロジェクト サブタイプ構成インターフェイスを実装することによって展開メカニズムに影響を与えます (など<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) の QueryInterface を呼び出すことによって取得される<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>します。 ベースのプロジェクトを呼び出すシナリオでは、プロジェクトのサブタイプと高度なプロジェクト サブタイプの両方が別の構成の実装を追加する場所、`QueryInterface`で高度なプロジェクト サブタイプの`IUnknown`します。 内部のプロジェクト サブタイプに基本プロジェクトが求める構成の実装が含まれている場合、高度なプロジェクトのサブタイプは内部のプロジェクト サブタイプによって提供される実装に委任されます。 プロジェクト サブタイプのすべてのレベルの実装として 1 つの集計レベルから別の状態を維持するためのメカニズム、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>非ビルドを保持するプロジェクト ファイルに XML データに関連します。 詳細については、次を参照してください。 [MSBuild プロジェクト ファイル内のデータの永続化](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)します。 <xref:EnvDTE80.IInternalExtenderProvider> プロジェクト サブタイプからオートメーション エクステンダーを取得するためのメカニズムとして実装されます。
 
 次の図について重点的にオートメーション エクステンダーの実装、プロジェクト構成の参照オブジェクト具体的には、プロジェクトのサブタイプ基本プロジェクト システムを拡張するために使用します。
 
@@ -73,11 +73,11 @@ ms.locfileid: "56335650"
 
 下位レベルのプロジェクト サブタイプをラップするプロジェクト サブタイプの実装では、適切に機能する内部のプロジェクト サブタイプを許可する協調的なプログラムを作成する必要があります。 責任のプログラミングの一覧は次のとおりです。
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>を内部のサブタイプで折り返されるプロジェクト サブタイプの実装に委任する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>両方の内部のプロジェクト サブタイプの実装<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>メソッド。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>を内部のサブタイプで折り返されるプロジェクト サブタイプの実装に委任する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>両方の内部のプロジェクト サブタイプの実装<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>メソッド。
 
--   <xref:EnvDTE80.IInternalExtenderProvider>その内部のプロジェクト サブタイプのラッパーのプロジェクト サブタイプの実装に委任する必要があります。 具体的には、実装で<xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A>エクステンダーとして追加する文字列を連結し、内部のプロジェクト サブタイプから名の文字列を取得する必要があります。
+- <xref:EnvDTE80.IInternalExtenderProvider>その内部のプロジェクト サブタイプのラッパーのプロジェクト サブタイプの実装に委任する必要があります。 具体的には、実装で<xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A>エクステンダーとして追加する文字列を連結し、内部のプロジェクト サブタイプから名の文字列を取得する必要があります。
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>ラッパー プロジェクト サブタイプの実装のインスタンスを作成する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>オブジェクト、内部のプロジェクトのサブタイプ、押したままに、プライベート デリゲートでは、ためベースのプロジェクトのプロジェクト構成オブジェクトを直接知っているだけで、ラッパープロジェクト サブタイプの構成オブジェクトが存在します。 外部プロジェクト サブタイプが最初に、直接処理する構成インターフェイスを選択およびの内部のプロジェクト サブタイプの実装に残りの部分を委任し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>します。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>ラッパー プロジェクト サブタイプの実装のインスタンスを作成する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>オブジェクト、内部のプロジェクトのサブタイプ、押したままに、プライベート デリゲートでは、ためベースのプロジェクトのプロジェクト構成オブジェクトを直接知っているだけで、ラッパープロジェクト サブタイプの構成オブジェクトが存在します。 外部プロジェクト サブタイプが最初に、直接処理する構成インターフェイスを選択およびの内部のプロジェクト サブタイプの実装に残りの部分を委任し、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>します。
 
 ## <a name="supporting-interfaces"></a>インターフェイスのサポート
 

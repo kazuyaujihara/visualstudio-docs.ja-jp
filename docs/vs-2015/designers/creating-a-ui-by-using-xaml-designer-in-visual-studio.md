@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580701"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio での XAML デザイナーを使用した UI の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,9 +87,9 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
  **表示** アプリの異なる画面サイズと解像度を指定します。
 
- **向き** アプリの向きを **[横]** または **[縦]** に指定します。
+ **印刷の向き**アプリの向きを指定します。**[横]** または **[縦]** に指定します。
 
- **エッジ** アプリの端の位置揃えを **[両方]**、**[左]**、**[右]**、または **[なし]** に指定します。
+ **Edge**アプリの端の位置揃えを指定します。**[両方]**、**[左]**、**[右]**、または **[なし]** に指定します。
 
  **ハイコントラスト** 選択したコントラスト設定に基づいてアプリをプレビューします。 **[既定]** 以外の値を設定すると、App.xaml 内に設定された `RequestedTheme` プロパティをオーバーライドします。
 

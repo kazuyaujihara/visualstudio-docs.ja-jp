@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d40becc02333a95801794bd20f2b2abd45043c08
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c87b197219cec112a9235f4af6fb1a51ae793a88
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441026"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>方法: プログラム コード内のファイルからモデルを開く
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,34 +28,34 @@ ms.locfileid: "58978272"
   
 #### <a name="to-set-the-target-framework"></a>ターゲット フレームワークを設定するには  
   
-1.  開く、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL モデルを読み取るアプリケーション用のプロジェクト。  
+1. 開く、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL モデルを読み取るアプリケーション用のプロジェクト。  
   
-2.  **ソリューション エクスプ ローラー**プロジェクトを右クリックし、クリックして**プロパティ**します。  
+2. **ソリューション エクスプ ローラー**プロジェクトを右クリックし、クリックして**プロパティ**します。  
   
-3.  プロジェクトのプロパティ ウィンドウでの**アプリケーション**タブで、設定、**ターゲット フレームワーク**フィールドを **.NET Framework 4**します。  
+3. プロジェクトのプロパティ ウィンドウでの**アプリケーション**タブで、設定、**ターゲット フレームワーク**フィールドを **.NET Framework 4**します。  
   
 > [!NOTE]
->  選択した場合でもこれを実行する必要があります **.NET Framework 4**プロジェクトの作成 ダイアログ ボックス。 ターゲット フレームワークがすることはできません **.NET Framework 4 Client Profile**します。  
+> 選択した場合でもこれを実行する必要があります **.NET Framework 4**プロジェクトの作成 ダイアログ ボックス。 ターゲット フレームワークがすることはできません **.NET Framework 4 Client Profile**します。  
   
 ## <a name="references"></a>参照  
  これらの参照を追加する必要が、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]アプリケーション プロジェクト。  
   
--   `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
+- `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
   
-    -   表示されない場合、 **.NET**  タブで、**参照の追加**ダイアログ ボックスで、をクリックして、**参照**タブに移動して`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`します。  
+    - 表示されない場合、 **.NET**  タブで、**参照の追加**ダイアログ ボックスで、をクリックして、**参照**タブに移動して`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`します。  
   
--   DSL アセンブリ、DSL プロジェクト bin フォルダーの下で検索されます。 その名前の形式では通常です。*Yourcompany ' と*.*プロジェクト*`.Dsl.dll`します。  
+- DSL アセンブリ、DSL プロジェクト bin フォルダーの下で検索されます。 その名前の形式では通常です。*Yourcompany ' と*.*プロジェクト*`.Dsl.dll`します。  
   
 ## <a name="important-classes-in-the-dsl"></a>DSL で重要なクラス  
  DSL を読み取るコードを記述する前に、一部の DSL によって生成されたクラスの名前を知っておくべきです。 DSL ソリューションで開く、 **Dsl**プロジェクトし、ファイルの場所、 **GeneratedCode**フォルダー。 または、プロジェクトで DSL のアセンブリをダブルクリック**参照**、DSL の名前空間を開くと**オブジェクト ブラウザー**します。  
   
  これらは、クラスを識別する必要があります。  
   
--   *YourDslRootClass* -これは、内のルート クラスの名前、`DslDefinition.dsl`します。  
+- *YourDslRootClass* -これは、内のルート クラスの名前、`DslDefinition.dsl`します。  
   
--   *YourDslName* `SerializationHelper` -でこのクラスが定義されている`SerializationHelper.cs`DSL プロジェクト。  
+- *YourDslName* `SerializationHelper` -でこのクラスが定義されている`SerializationHelper.cs`DSL プロジェクト。  
   
--   *YourDslName* `DomainModel` -でこのクラスが定義されている`DomainModel.cs`DSL プロジェクト。  
+- *YourDslName* `DomainModel` -でこのクラスが定義されている`DomainModel.cs`DSL プロジェクト。  
   
 ## <a name="reading-from-a-file"></a>ファイルからの読み取り  
  次の例は、重要なクラスの次のように DSL を読み取るために設計されました。  

@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64527c784cf61c02ad3031e9ba922ebf707e7e6f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b85efc44b39485476154d0f41f3261b2aeb1ea7c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973736"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047203"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>エラー : Web サーバーが制限され、デバッグの有効化に必要な DEBUG 動詞をブロックしています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ IIS Lockdown ツールが実行され、URLScan がインストールされて�
   
 ### <a name="to-enable-debugging-on-a-web-server-with-urlscan-installed"></a>URLScan がインストールされた Web サーバーでデバッグを有効にするには  
   
-1.  Urlscan.ini ファイルを探します。 通常は、次のようなディレクトリの下にあります。  
+1. Urlscan.ini ファイルを探します。 通常は、次のようなディレクトリの下にあります。  
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  このファイルのコピーを作成し、**Urlscan.old** という名前を付けます。  
+2. このファイルのコピーを作成し、**Urlscan.old** という名前を付けます。  
   
-3.  メモ帳または任意のテキスト エディターを使って、元の Urlscan.ini ファイルを開きます。  
+3. メモ帳または任意のテキスト エディターを使って、元の Urlscan.ini ファイルを開きます。  
   
-4.  Urlscan.ini で、[AllowVerbs] セクションを探します。 DEBUG を [AllowVerbs] セクションに追加します。 DEBUG が [AllowVerbs] セクションにある場合は、セミコロン (;) を削除して、動詞のコメント アウトを解除します。  
+4. Urlscan.ini で、[AllowVerbs] セクションを探します。 DEBUG を [AllowVerbs] セクションに追加します。 DEBUG が [AllowVerbs] セクションにある場合は、セミコロン (;) を削除して、動詞のコメント アウトを解除します。  
   
-5.  [DenyVerbs] セクションを探します。 DEBUG が [DenyVerbs] セクションにある場合は、それを削除します。  
+5. [DenyVerbs] セクションを探します。 DEBUG が [DenyVerbs] セクションにある場合は、それを削除します。  
   
-6.  ファイルを保存します。  
+6. ファイルを保存します。  
   
-7.  サーバーまたは IIS を再起動します。  
+7. サーバーまたは IIS を再起動します。  
   
 ## <a name="see-also"></a>関連項目  
  [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   

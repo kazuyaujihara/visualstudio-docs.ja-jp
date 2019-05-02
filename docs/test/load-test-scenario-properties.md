@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 86ed8346a27a02eb7e04c1f7a9fa361b0e03431a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785957"
 ---
 # <a name="load-test-scenario-properties"></a>ロード テスト シナリオのプロパティ
 
@@ -48,7 +48,7 @@ ms.locfileid: "55935070"
 |**新しいユーザーのパーセンテージ**|新しいユーザーまたはシナリオの初めてのビジターのパーセンテージを指定する数値。<br /><br />詳細については、「[方法 :Web キャッシュ データを使用する仮想ユーザーの割合を指定する](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)」を参照してください。|
 |**待ち動作のプロファイル**|シナリオが **[記録された待ち時間を中央値とする正規分布を使用する]** を使用するかどうか、または待ち動作のプロファイルが **[オン]** か **[オフ]** かを指定します。<br /><br />詳細については、「[待ち時間を編集してロード テスト シナリオにおける Web サイトでの対話操作の遅延をシミュレートする](../test/edit-think-times-in-load-test-scenarios.md)」を参照してください。|
 
-## <a name="timing"></a>タイミング
+## <a name="timing"></a>[タイミング]
 
 |プロパティ|定義|
 |-|----------------|

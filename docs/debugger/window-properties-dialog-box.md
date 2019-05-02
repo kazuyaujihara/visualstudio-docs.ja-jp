@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c27f10298f3a5621bc68e31bc2b150663955d6c9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929212"
 ---
 # <a name="window-properties-dialog-box"></a>[ウィンドウ プロパティ] ダイアログ ボックス
 特定のウィンドウの詳細を確認するには、このダイアログ ボックスを使用します。 このダイアログ ボックスを表示するには、フォーカスを移動、 [Windows ビュー](../debugger/windows-view.md)ウィンドウ。 ツリーで、ウィンドウの任意のノードを選択し、**プロパティ**から、**ビュー**メニュー。
@@ -23,7 +23,7 @@ ms.locfileid: "56699159"
 ## <a name="in-this-section"></a>このセクションの内容
  [[全般] タブ、ウィンドウのプロパティ ダイアログ ボックス](../debugger/general-tab-window-properties-dialog-box.md)選択したウィンドウに関する情報が表示されます。
 
- [[スタイル] タブ、ウィンドウのプロパティ ダイアログ ボックス](../debugger/styles-tab-window-properties-dialog-box.md)選択したウィンドウに適用されるスタイルを示しています。
+ [スタイルタブウィンドウのプロパティ ダイアログ ボックス](../debugger/styles-tab-window-properties-dialog-box.md)選択したウィンドウに適用されるスタイルを示しています。
 
  [[Windows] タブ、ウィンドウのプロパティ ダイアログ ボックス](../debugger/windows-tab-window-properties-dialog-box.md)windows に関連する、選択したウィンドウに関する情報を表示します。
 

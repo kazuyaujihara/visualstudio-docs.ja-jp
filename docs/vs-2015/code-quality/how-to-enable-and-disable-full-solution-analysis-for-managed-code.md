@@ -11,18 +11,18 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: df06a17ecc093cf24a64e7c3aa11a096a61ee44f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436838"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>方法: 有効にして、マネージ コードの完全ソリューション解析を無効にします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 注意]
->  このトピックでは、Visual Studio 2015 Update 3 RC にのみ以降に適用されます。  
+> このトピックでは、Visual Studio 2015 Update 3 RC にのみ以降に適用されます。  
   
  *完全ソリューション解析*は Visual Studio の機能で開いている Visual c# または Visual Basic ファイルのみ、ソリューションまたはオープンおよびクローズされた両方 Visual c# または Visual Basic ファイル、ソリューション内のコード分析の問題が発生するかどうかを選択することができます。  
   
@@ -30,11 +30,11 @@ ms.locfileid: "58962935"
   
 #### <a name="to-toggle-full-solution-analysis"></a>完全ソリューション解析を切り替える  
   
-1.  Visual Studio のメイン メニューで、次のように選択します。**ツール** &#124; **オプション**を表示する、**オプション** ダイアログ ボックス。  
+1. Visual Studio のメイン メニューで、次のように選択します。**ツール** &#124; **オプション**を表示する、**オプション** ダイアログ ボックス。  
   
-2.  **オプション** ダイアログ ボックスで、選択**テキスト エディター** &#124; **c#** または**基本的な** &#124; **詳細**.  
+2. **オプション** ダイアログ ボックスで、選択**テキスト エディター** &#124; **c#** または**基本的な** &#124; **詳細**.  
   
-3.  選択、**完全ソリューション解析を有効にする**チェック ボックスを完全なソリューション分析を有効または無効にするボックスをオフにします。 選択、 **OK**終わったときにボタンをクリックします。  
+3. 選択、**完全ソリューション解析を有効にする**チェック ボックスを完全なソリューション分析を有効または無効にするボックスをオフにします。 選択、 **OK**終わったときにボタンをクリックします。  
   
      ![完全なソリューション分析 チェック ボックスを有効にします。](../code-quality/media/fsa-toolsoptions.png "FSA_ToolsOptions")  
   
@@ -53,6 +53,6 @@ ms.locfileid: "58962935"
  ![完全ソリューション解析を中断する警告テキスト](../code-quality/media/fsa-alert.png "FSA_Alert")  
   
 ## <a name="additional-details"></a>追加の詳細  
- 完全ソリューション解析は既定では、Visual Basic を有効になっているし、無効になっている Visual c# 用。  
+ 完全ソリューション解析は既定では、Visual Basic を有効になっているし、無効になっている Visual C# 用。  
   
  Visual Studio Update 3 RC には、メモリ使用量が少なくなり、完全ソリューション解析が有効になっている場合でもアイドル、CPU 時間を減少が大幅に強化されたコード アナライザー診断 v2 エンジンが含まれています。

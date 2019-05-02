@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f070b02c9b91420fab9058e3d33aa682334f9cd4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974671"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>ドメイン固有言語ソリューションの使用
 ドメイン固有言語 (DSL) は、Visual Studio ソリューションを使用して作成されます。 このセクション設定し、ソリューションをカスタマイズする方法の詳細については。

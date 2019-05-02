@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed55c42211222ca94587b4358bb904f9637cb3f4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 320b20fa40250ca47dd414b362059e152eba2c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420994"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin インターフェイス
   読み込むコンポーネントを作成するには、その IManagedAddin インターフェイスを実装では、VSTO アドインを管理します。このインターフェイスは、2007 Microsoft Office system に追加された機能です。
@@ -82,7 +82,7 @@ interface IManagedAddin : IUnknown
  Microsoft Office アプリケーションでは、この CLSID を使用して、読み込みを実装する COM オブジェクトを作成します。
 
 > [!CAUTION]
->  この CLSID はによっても使用*VSTOLoader.dll*で、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]します。 そのため、IManagedAddin を使用して、独自の VSTO アドイン ローダーおよびランタイム コンポーネントを作成する場合は展開できませんコンポーネントに依存する VSTO アドインを実行しているコンピューターに、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]します。
+> この CLSID はによっても使用*VSTOLoader.dll*で、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]します。 そのため、IManagedAddin を使用して、独自の VSTO アドイン ローダーおよびランタイム コンポーネントを作成する場合は展開できませんコンポーネントに依存する VSTO アドインを実行しているコンピューターに、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]します。
 
 ## <a name="see-also"></a>関連項目
 - [アンマネージ API リファレンス&#40;Visual Studio での Office 開発&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

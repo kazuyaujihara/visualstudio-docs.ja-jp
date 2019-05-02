@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34c7ac8e496fedbff836eb118f60157c5f637117
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ac0d81c9e42a5c3aa22a09d59f346e6127b1284f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961567"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>方法: ドキュメント プロパティの読み書き
   ドキュメント プロパティをドキュメントと共に保存できます。 Office アプリケーションには、作成者、タイトル、件名など、多数の組み込みプロパティが用意されています。 このトピックでは、Microsoft Office Excel および Microsoft Office Word でドキュメント プロパティを設定する方法について説明します。
 
- ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:アクセスし、Microsoft Word のカスタム ドキュメント プロパティを操作しますか](http://go.microsoft.com/fwlink/?LinkId=136772).
+ ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。アクセスし、Microsoft Word のカスタム ドキュメント プロパティを操作しますか](http://go.microsoft.com/fwlink/?LinkId=136772)。
 
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]
 
@@ -42,12 +42,12 @@ ms.locfileid: "56628872"
 
 ### <a name="to-change-the-revision-number-property-in-excel"></a>Excel の Revision Number プロパティを変更するには
 
-1.  組み込みのドキュメント プロパティを変数に代入します。
+1. 組み込みのドキュメント プロパティを変数に代入します。
 
      [!code-vb[Trin_VstcoreProgramming#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#7)]
      [!code-csharp[Trin_VstcoreProgramming#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#7)]
 
-2.  `Revision Number` プロパティの値を 1 つインクリメントします。
+2. `Revision Number` プロパティの値を 1 つインクリメントします。
 
      [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
      [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]
@@ -65,12 +65,12 @@ ms.locfileid: "56628872"
 
 ### <a name="to-change-the-subject-property"></a>Subject プロパティを変更するには
 
-1.  組み込みのドキュメント プロパティを変数に代入します。
+1. 組み込みのドキュメント プロパティを変数に代入します。
 
      [!code-csharp[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#1)]
      [!code-vb[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#1)]
 
-2.  `Subject` プロパティを「Whitepaper」に変更します。
+2. `Subject` プロパティを「Whitepaper」に変更します。
 
      [!code-csharp[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#2)]
      [!code-vb[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#2)]

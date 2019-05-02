@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 034afff7b907a8f9079242e26105a46a68e8da6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8dfc751b040bd775c3f55ff7db804c2a16d45d5f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414613"
 ---
 # <a name="inside-the-editor"></a>エディターの内部
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "58974536"
   
 - [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-##  <a name="overview"></a> サブシステムの概要  
+## <a name="overview"></a> サブシステムの概要  
   
 ### <a name="text-model-subsystem"></a>テキスト モデル サブシステム  
  テキスト モデルのサブシステムはテキストを表すと、その操作を有効化します。 テキスト モデルのサブシステムを含む、<xref:Microsoft.VisualStudio.Text.ITextBuffer>インターフェイスで、エディターによって表示される文字のシーケンスについて説明します。 このテキストは、変更、追跡、およびそれ以外の場合さまざまな方法で操作できることができます。 テキスト モデルには、次の側面の型も用意されています。  
@@ -76,7 +76,7 @@ ms.locfileid: "58974536"
   
 ## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>テキスト モデルとテキスト ビューについて詳しく見て  
   
-###  <a name="textmodel"></a> テキスト モデル  
+### <a name="textmodel"></a> テキスト モデル  
  テキスト モデルのサブシステムは、テキスト型のさまざまなグループで構成されます。 テキスト バッファー、テキストのスナップショット、およびテキストの範囲が含まれます。  
   
 #### <a name="text-buffers-and-text-snapshots"></a>テキスト バッファーとテキストのスナップショット  
@@ -92,7 +92,7 @@ ms.locfileid: "58974536"
  文字のシーケンス、または行のシーケンスとしては、テキストのスナップショットの内容を表示できます。 行の文字とは、0 から始まるインデックス両方が。 空のテキストのスナップショットには、ゼロの文字と 1 つの空の行が含まれています。 行は、有効な Unicode の改行文字シーケンス、または先頭またはバッファーの末尾で区切られます。 改行文字は、テキストのスナップショットに明示的に表現し、テキスト スナップショット内の改行はすべて同じであるがします。  
   
 > [!NOTE]
->  Visual Studio エディターでの改行文字の詳細については、次を参照してください。[エンコーディングと改行](../ide/encodings-and-line-breaks.md)します。  
+> Visual Studio エディターでの改行文字の詳細については、次を参照してください。[エンコーディングと改行](../ide/encodings-and-line-breaks.md)します。  
   
  によって表される行のテキスト、<xref:Microsoft.VisualStudio.Text.ITextSnapshotLine>オブジェクトで、特定の行番号または特定の文字位置のテキスト スナップショットから取得できます。  
   
@@ -149,7 +149,7 @@ abXefYj
   
  開発者が独自のコンテンツの種類を定義およびそれらを使用して、登録、<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>します。 使用して、特定のコンテンツの種類に関してエディター多くの機能を定義できます、<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>します。 たとえば、エディターの余白、表示要素、およびマウス ハンドラーは特定のコンテンツ タイプを表示する編集者にのみ適用されるようにします。  
   
-###  <a name="textview"></a> テキスト ビュー  
+### <a name="textview"></a> テキスト ビュー  
  モデル ビュー コント ローラー (MVC) パターンのビューの一部では、ビュー、カーソル、スクロール バーなどのグラフィック要素の書式設定、テキスト ビューを定義します。 Visual Studio エディターのすべてのプレゼンテーション要素は、WPF に基づいています。  
   
 #### <a name="text-views"></a>テキスト ビュー  
@@ -184,21 +184,21 @@ abXefYj
 ## <a name="editor-features"></a>エディターの機能  
  エディターの機能では、フィーチャーの定義とは別の実装できるように設計されています。 エディターには、これらの機能が含まれています。  
   
--   タグおよび分類子  
+- タグおよび分類子  
   
--   修飾  
+- 修飾  
   
--   射影  
+- 射影  
   
--   アウトライン  
+- アウトライン  
   
--   マウスとキー バインド  
+- マウスとキー バインド  
   
--   操作およびプリミティブ  
+- 操作およびプリミティブ  
   
--   IntelliSense  
+- IntelliSense  
   
-###  <a name="tagsandclassifiers"></a> タグおよび分類子  
+### <a name="tagsandclassifiers"></a> タグおよび分類子  
  タグは、テキストの範囲に関連付けられているマーカーです。 提示できます、さまざまな方法で、テキストの色分け表示、下線、グラフィック、またはポップアップを使用しています。 分類子は、1 つの種類のタグです。  
   
  その他のタグは<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>のテキストが強調表示、<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>アウトラインと<xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>のコンパイル エラー。  
@@ -230,14 +230,14 @@ abXefYj
   
  <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap>は分類の種類からテキストを書式設定プロパティのセットへのマップ。 エディターで書式設定のマップの実装では、分類の形式のすべてのエクスポートを処理します。  
   
-###  <a name="adornments"></a> 修飾  
+### <a name="adornments"></a> 修飾  
  修飾は、フォントとテキスト ビュー内の文字の色に直接関連しないグラフィック効果です。 たとえば、多くのプログラミング言語でのコンパイルされていないコードをマークするために使用する赤い波線の下線は、埋め込みの表示要素と、ツール ヒントがポップアップ表示要素。 派生修飾<xref:System.Windows.UIElement>実装と<xref:Microsoft.VisualStudio.Text.Tagging.ITag>。 タグの表示要素の 2 つの特殊な型は、 <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>、ビューでは、テキストとして同じ領域の表示要素の<xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>波線の下線の。  
   
  埋め込みの表示要素は、書式設定されたテキスト ビューの一部を形成するグラフィックスです。 これらは、Z オーダーの異なる層で構成されます。 次のように 3 つの組み込みのレイヤーがある: テキスト、カレット、および選択します。 ただし、開発者はレイヤーを定義し、互いの順序で配置できます。 埋め込みの表示要素の 3 種類がテキストの相対表示要素 (これは、テキストが移動したときの移動とは、テキストが削除されたときに削除)、ビューの相対修飾 (これは、ビューのテキスト以外の部分に必要)、および所有者によって制御された表示要素 (、開発する必要がありますの管理 の配置)。  
   
  ポップアップの表示要素は、ツールヒントなどのテキスト ビュー上の小さいウィンドウに表示されるグラフィックスです。  
   
-###  <a name="projection"></a> 射影  
+### <a name="projection"></a> 射影  
  プロジェクションは、別の種類のテキストを実際には保存されませんが、他のテキスト バッファーからのテキストを代わりに組み合わされているテキスト バッファーを構築するための手法です。 たとえばを他の 2 つのバッファーからテキストを連結し、1 つのバッファー内にある場合、結果を表示、または 1 つのバッファー内のテキストの部分を非表示には、投影のバッファーを使用できます。 投影のバッファーは、ソース バッファーを別の投影バッファーとして機能できます。 さまざまな方法でテキストを並べ替えるには、プロジェクションによって関連付けられたバッファーのセットを構築できます。 (このようなセットとも呼ばれますが、*バッファー グラフ*)。Visual Studio のテキストのアウトライン機能は、折りたたまれたテキストを非表示にするプロジェクション バッファーを使用して実装され、ASP.NET ページの Visual Studio エディターでは、プロジェクションを使用して、Visual Basic や c# などの埋め込みの言語をサポートします。  
   
  <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer>を使用して作成されて<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>します。 投影のバッファーが、順序付けられたシーケンスによって表される<xref:Microsoft.VisualStudio.Text.ITrackingSpan>オブジェクトと呼ばれる*ソース スパン*します。 これらの範囲の内容は、一連の文字として表示されます。 ソース範囲の描画元となるテキスト バッファーの名前は*ソース バッファー*します。 投影のバッファーのクライアントを通常のテキスト バッファーとは異なることに注意してくださいに必要はありません。  
@@ -271,18 +271,18 @@ P: ABCDEvwxyz
 ##### <a name="events-and-projection-buffers"></a>イベントと投影バッファー  
  投影バッファーが変更されたときに、変更が依存しているバッファーに投影バッファーから送信されます。 すべてのバッファーを変更した後以降、最下位のバッファーでバッファーの変更イベントが発生します。  
   
-###  <a name="outlining"></a> アウトライン表示  
+### <a name="outlining"></a> アウトライン表示  
  アウトラインを展開または折りたたむテキスト ビュー内のテキストのブロックをさまざまな機能があります。 アウトライン表示は、種類として定義の<xref:Microsoft.VisualStudio.Text.Tagging.ITag>、表示要素が定義されていると同じにします。 A<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>展開または折りたたむテキスト領域を定義するタグします。 インポートする必要がありますのアウトラインを使用する、<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService>を取得する、<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>します。 アウトラインのマネージャーを列挙、縮小、およびとして表現される別のブロックを展開する<xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible>オブジェクトし、それに応じてイベントを発生させます。  
   
-###  <a name="mousebindings"></a> マウスのバインド  
+### <a name="mousebindings"></a> マウスのバインド  
  マウスのバインドは、別のコマンドにマウスの動きをリンクします。 使用してマウス バインディングが定義されている、<xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>を使用してキー バインドが定義されていると、<xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>します。 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>自動的にすべてのバインディングをインスタンス化して、ビュー内でマウス イベントに接続します。  
   
  <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor>インターフェイスには、別のマウス イベントの前処理と後処理のイベント ハンドラーが含まれています。 イベントのいずれかのハンドルをいくつかのメソッドのオーバーライドできます<xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>します。  
   
-###  <a name="editoroperations"></a> エディターの操作  
+### <a name="editoroperations"></a> エディターの操作  
  エディター操作は、自動化スクリプトを実行して、エディター、またはその他の目的とのやり取りに使用できます。 インポートすることができます、<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService>でアクセス操作を指定された<xref:Microsoft.VisualStudio.Text.Editor.ITextView>します。 選択範囲の変更、ビューをスクロールまたはビューのさまざまな部分へカレットを移動し、これらのオブジェクトを使用できます。  
   
-###  <a name="intellisense"></a> IntelliSense  
+### <a name="intellisense"></a> IntelliSense  
  IntelliSense は、ステートメント入力候補、シグネチャ ヘルプ (パラメーターの情報とも呼ばれます)、クイック ヒント、および電球をサポートしています。  
   
  ステートメント入力候補は、メソッド名、XML 要素、およびその他のコードまたはマークアップ要素の潜在的な入力候補のポップアップ リストを提供します。 一般に、ユーザー ジェスチャには、完了セッションが起動します。 セッション、潜在的な入力候補の一覧を表示して、ユーザーが 1 つを選択または一覧を消すことができます。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>を作成して、トリガーする責任を負いますが、<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>します。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>計算、<xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet>のセッションの項目を完了します。  

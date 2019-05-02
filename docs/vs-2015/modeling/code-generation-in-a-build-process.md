@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f2146c8a15292ddc9233c8e10b8f58f5212df0c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077603"
 ---
 # <a name="code-generation-in-a-build-process"></a>ビルド処理でのコード生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ Visual Studio ソリューションのビルド プロセスの一環として�
 
 つまり、MSBuild でテキスト テンプレートをビルドすると、プロジェクト ファイル名などに同じようにアクセスできないことになります。 ただし、[ビルド パラメーターを使用してテキスト テンプレートとディレクティブ プロセッサに環境情報を渡す](#parameters)ことができます。
 
-##  <a name="buildserver"></a> コンピューターを構成します。
+## <a name="buildserver"></a> コンピューターを構成します。
 
 開発用コンピューターでビルド タスクを有効にするにはインストール[Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)します。
 
 [ビルド サーバー](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9)を Visual Studio がインストールされていないコンピューター上で、実行している場合、開発用コンピューターからビルド コンピューターに次のファイルをコピーします。 最新のバージョン番号を「*」で置き換えます。
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+    - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+    - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (複数のファイル)
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (複数のファイル)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>プロジェクト ファイルを編集するには
 
@@ -90,7 +90,7 @@ MSBuild の機能の一部を構成するには、プロジェクト ファイ�
 
 プロジェクト ファイルに挿入して変換タスクを制御できるプロパティがいくつかあります。
 
--   すべてのビルドの開始時に変換タスクを実行します。
+- すべてのビルドの開始時に変換タスクを実行します。
 
     ```xml
     <PropertyGroup>
@@ -98,7 +98,7 @@ MSBuild の機能の一部を構成するには、プロジェクト ファイ�
     </PropertyGroup>
     ```
 
--   たとえばチェックアウトされているために、読み取り専用であるファイルを上書きします。
+- たとえばチェックアウトされているために、読み取り専用であるファイルを上書きします。
 
     ```xml
     <PropertyGroup>
@@ -106,7 +106,7 @@ MSBuild の機能の一部を構成するには、プロジェクト ファイ�
     </PropertyGroup>
     ```
 
--   毎回、すべてのテンプレートを変換します。
+- 毎回、すべてのテンプレートを変換します。
 
     ```xml
     <PropertyGroup>
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> テンプレートにビルド コンテキスト データを渡す
+## <a name="parameters"></a> テンプレートにビルド コンテキスト データを渡す
 
 プロジェクト ファイルにパラメーターと値を設定できます。 たとえば、ビルド プロパティを渡すことができますと[環境変数](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,7 +234,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-##  <a name="msbuild"></a> アセンブリのプロジェクトのプロパティを使用および include ディレクティブ
+## <a name="msbuild"></a> アセンブリのプロジェクトのプロパティを使用および include ディレクティブ
 
 $(SolutionDir) などの Visual Studio のマクロは、MSBuild では動作しません。 その代わりに、プロジェクト プロパティを使用できます。
 
@@ -271,13 +271,13 @@ $(SolutionDir) などの Visual Studio のマクロは、MSBuild では動作し
 
 **テキスト テンプレート変換には、その他のオプションがありますか。**
 
--   [TextTransform ユーティリティ](../modeling/generating-files-with-the-texttransform-utility.md)コマンドのスクリプトで使用することができます。 ほとんどの場合、MSBuild を使用する方が簡単です。
+- [TextTransform ユーティリティ](../modeling/generating-files-with-the-texttransform-utility.md)コマンドのスクリプトで使用することができます。 ほとんどの場合、MSBuild を使用する方が簡単です。
 
--   [VS 拡張機能内でのテキスト変換の呼び出し](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [VS 拡張機能内でのテキスト変換の呼び出し](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [デザイン時テキスト テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)は、Visual Studio によって変換されます。
+- [デザイン時テキスト テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)は、Visual Studio によって変換されます。
 
--   [実行時テキスト テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)は、アプリケーションでの実行時に変換されます。
+- [実行時テキスト テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)は、アプリケーションでの実行時に変換されます。
 
 ## <a name="read-more"></a>関連項目
 

@@ -10,31 +10,31 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b6e2b7f5062bd1350012c5991348903efc6d746
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 307e8e5285dd0023d30772c5eac7a4e351287aa5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909183"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild プロジェクト ファイルでのデータの保持
 プロジェクト サブタイプは、後で使用するためのプロジェクト ファイルにサブタイプ固有のデータを保持する必要があります。 プロジェクト サブタイプは、次の要件を満たすためにプロジェクト ファイルの永続化を使用します。
 
-1.  プロジェクトのビルドの一部として使用されるデータを保持します。 (Microsoft Build Engine の詳細については、次を参照してください[MSBuild](../../msbuild/msbuild.md)。)。ビルド関連の情報を実行できますか。
+1. プロジェクトのビルドの一部として使用されるデータを保持します。 (Microsoft Build Engine の詳細については、次を参照してください[MSBuild](../../msbuild/msbuild.md)。)。ビルド関連の情報を実行できますか。
 
-    1.  構成に依存しないデータ。 つまり、空白または不足している条件を持つ MSBuild 要素に格納されているデータ。
+    1. 構成に依存しないデータ。 つまり、空白または不足している条件を持つ MSBuild 要素に格納されているデータ。
 
-    2.  構成に依存するデータ。 つまり、データが、特定のプロジェクト構成を規定する MSBuild 要素に格納されています。 例:
+    2. 構成に依存するデータ。 つまり、データが、特定のプロジェクト構成を規定する MSBuild 要素に格納されています。 例:
 
         ```
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
         ```
 
-2.  ビルドには関係ないデータを保持します。 このデータは、XML スキーマに対して検証されていない自由形式の XML で表現できます。
+2. ビルドには関係ないデータを保持します。 このデータは、XML スキーマに対して検証されていない自由形式の XML で表現できます。
 
-    1.  構成に依存しないデータ。
+    1. 構成に依存しないデータ。
 
-    2.  構成に依存するデータ。
+    2. 構成に依存するデータ。
 
 ## <a name="persisting-build-related-information"></a>ビルドに関連する情報の保存
  プロジェクトのビルドに役立つデータの永続化は、MSBuild によって処理されます。 MSBuild システムでは、ビルドに関連する情報のマスター テーブルを保持します。 プロジェクト サブタイプは、プロパティ値を取得および設定は、このデータにアクセスする責任を負います。 プロジェクト サブタイプは、永続化する追加のプロパティを追加することは保存されませんので、プロパティを削除することで、ビルドに関連するデータ テーブルを補強もできます。
@@ -45,9 +45,9 @@ ms.locfileid: "56629704"
 
 #### <a name="to-remove-a-property-from-an-msbuild-project-file"></a>MSBuild プロジェクト ファイルからプロパティを削除するには
 
-1.  呼び出す`QueryInterface`で<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>のプロジェクト サブタイプ。
+1. 呼び出す`QueryInterface`で<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>のプロジェクト サブタイプ。
 
-2.  呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.RemoveProperty%2A>で`pszPropName`を削除するプロパティに設定します。
+2. 呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.RemoveProperty%2A>で`pszPropName`を削除するプロパティに設定します。
 
 ### <a name="persisting-non-build-related-information"></a>関連情報を永続化非ビルド
  ビルドには関係ありませんプロジェクト ファイル内のデータの永続化はを通じて処理<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>します。
@@ -56,15 +56,15 @@ ms.locfileid: "56629704"
 
  次の点では、非ビルド関連情報の永続化に関する主要な概念を説明します。
 
--   読み込みし、構成の独立したデータを保存するメイン プロジェクトのサブタイプ (つまり、最も外側にあるプロジェクトのサブタイプ) アグリゲーター オブジェクトの基本プロジェクトを呼び出すし、プロジェクト サブタイプ プロジェクトの構成オブジェクトの読み込みまたは保存の構成に依存するを呼び出しますデータ。
+- 読み込みし、構成の独立したデータを保存するメイン プロジェクトのサブタイプ (つまり、最も外側にあるプロジェクトのサブタイプ) アグリゲーター オブジェクトの基本プロジェクトを呼び出すし、プロジェクト サブタイプ プロジェクトの構成オブジェクトの読み込みまたは保存の構成に依存するを呼び出しますデータ。
 
--   ベースのプロジェクトのメソッドを呼び出して、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>複数のプロジェクト サブタイプの集計の各レベルには時刻および各レベルの GUID を渡します。
+- ベースのプロジェクトのメソッドを呼び出して、<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>複数のプロジェクト サブタイプの集計の各レベルには時刻および各レベルの GUID を渡します。
 
--   ベースのプロジェクトでは、渡すか、特定のプロジェクト サブタイプには専用であり、集計レベルの間の状態を保持する方法として、このメカニズムを使用する XML フラグメントを受け取る。
+- ベースのプロジェクトでは、渡すか、特定のプロジェクト サブタイプには専用であり、集計レベルの間の状態を保持する方法として、このメカニズムを使用する XML フラグメントを受け取る。
 
--   基本プロジェクト呼び出しの最も外側のプロジェクト サブタイプの<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>実装の GUID を渡します。 呼び出し自体を処理、GUID が最も外側のプロジェクト サブタイプに所属している場合それ以外の場合、GUID に対応するプロジェクトのサブタイプが見つかるまで、内部のプロジェクト サブタイプ、およびへの呼び出しを委任します。
+- 基本プロジェクト呼び出しの最も外側のプロジェクト サブタイプの<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>実装の GUID を渡します。 呼び出し自体を処理、GUID が最も外側のプロジェクト サブタイプに所属している場合それ以外の場合、GUID に対応するプロジェクトのサブタイプが見つかるまで、内部のプロジェクト サブタイプ、およびへの呼び出しを委任します。
 
--   プロジェクト サブタイプの前に、または後、内部のプロジェクト サブタイプに呼び出しを代行 XML フラグメントを変更できます。 次の例では、そのプロジェクト サブタイプに渡されたはプロジェクトのサブタイプに固有のプロパティを含むファイルの名前、プロジェクト ファイルからの抜粋を示します。
+- プロジェクト サブタイプの前に、または後、内部のプロジェクト サブタイプに呼び出しを代行 XML フラグメントを変更できます。 次の例では、そのプロジェクト サブタイプに渡されたはプロジェクトのサブタイプに固有のプロパティを含むファイルの名前、プロジェクト ファイルからの抜粋を示します。
 
     ```
     <ProjectExtensions>

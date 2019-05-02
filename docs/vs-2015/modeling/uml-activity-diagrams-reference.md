@@ -20,12 +20,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087145"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML アクティビティ図:参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ ms.locfileid: "58978229"
 |13|**シグナル送信アクション**|別のアクティビティ、または同じアクティビティ内の同時実行スレッドに対して、メッセージや信号を送信するアクション。 メッセージの種類と内容は、アクションのタイトルに示されるか、追加コメントで指定されます。<br /><br /> アクションでは、信号でデータを送信できます。このデータは、オブジェクト フロー内または入力ピン (16) で、アクションに渡すことができます。|  
 |14|**イベント受理アクション**|アクションを続行する前に、メッセージまたは信号を待機するアクション。 アクションが受け取ることができるメッセージの種類は、タイトルで示すか、追加コメントで指定します。<br /><br /> アクションに入力制御フローが存在しない場合、そのアクションでメッセージを受信すると、トークンが 1 つ生成されます。<br /><br /> アクションでは、信号でデータを送信できます。このデータは、オブジェクト フローまたは出力ピン (17) に渡すことができます。<br /><br /> -   **IsUnmarshall** - 場合は true、いくつかの型指定された出力ピンでき、データは、それらをマーシャ リングすることはありません。 False の場合、データはすべて 1 つのピンに送信されます。|  
   
-###  <a name="DataFlow"></a> データ フロー  
+### <a name="DataFlow"></a> データ フロー  
  1 つのアクションから別のアクションに、データ フローを記述できます。 このセクションで使われる要素の詳細については、トピック「アクティビティ図を描画するためのガイドライン」の「データ フローの描画」セクションを参照してください。  
   
  ![データ フローを示すアクティビティ図](../modeling/media/uml-actovdata.png "UML_ActOvData")  

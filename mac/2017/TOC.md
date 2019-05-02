@@ -7,14 +7,12 @@
 ## [更新](/visualstudio/mac/update)
 ## [アンインストール](/visualstudio/mac/uninstall)
 
-
 # [ユーザー アカウント](/visualstudio/mac/user-accounts)
 ## [サインイン](/visualstudio/mac/signing-in)
 ## [サブスクリプションの有効化](/visualstudio/mac/enable-subscription)
 
 # [IDE のカスタマイズ](/visualstudio/mac/customizing-the-ide)
 ## [Visual Studio for Mac の拡張](/visualstudio/mac/extending-visual-studio-mac)
-
 
 # [プロジェクトおよびソリューション](/visualstudio/mac/projects-and-solutions)
 ## [プロジェクトの新規作成](/visualstudio/mac/create-new-projects)
@@ -77,3 +75,4 @@
 # [トラブルシューティング](/visualstudio/mac/troubleshooting)
 ## [Visual Studio カスタマー エクスペリエンス向上プログラム](/visualstudio/mac/visual-studio-experience-improvement-program)
 ## [問題を報告する](/visualstudio/mac/report-a-problem)
+## [トラブルシューティング : アップデーターが情報の取得中にエラーを表示する](updater-troubleshooting.md)

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: afbfaae56470fa9b16c99277d36b0e39a6504906
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 362eb5fd1973035e31ccd301f6cc46a748a9b2ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62988285"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint のエラーに関する追加情報
   トラブルシューティングで支援が見つかります[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint ツールのエラーと警告のトラブルシューティングのトピックとパブリック フォーラム。
@@ -29,11 +29,11 @@ ms.locfileid: "56628911"
 ## <a name="troubleshoot-errors-and-issues"></a>エラーおよび問題をトラブルシューティングします。
  一般的なエラーとその他の問題の支援について[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint ツールでは、次のトピックを参照してください。
 
--   [SharePoint ソリューションをトラブルシューティングします。](../sharepoint/troubleshooting-sharepoint-solutions.md)
+- [SharePoint ソリューションをトラブルシューティングします。](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
--   [SharePoint ソリューションをデバッグします。](../sharepoint/debugging-sharepoint-solutions.md)
+- [SharePoint ソリューションをデバッグします。](../sharepoint/debugging-sharepoint-solutions.md)
 
--   [SharePoint のパッケージ化とデプロイをトラブルシューティングします。](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+- [SharePoint のパッケージ化とデプロイをトラブルシューティングします。](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>その他のリソース
  次の表、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint ツールのフォーラムやその他のリソースを使用できます。

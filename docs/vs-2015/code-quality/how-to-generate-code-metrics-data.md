@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ec6063f859333b54adaabea0c68af9fd884845b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045630"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>方法: コード メトリックス データの生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "58973265"
   
 ### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>ソリューション全体のコード メトリックスの結果を生成するには  
   
--   をクリックして**分析 メニュー**、順にクリックします**ソリューションの CalculateCode メトリックス**します。  
+- をクリックして**分析 メニュー**、順にクリックします**ソリューションの CalculateCode メトリックス**します。  
   
      \- または -  
   
--   **ソリューション エクスプ ローラー**ソリューションを右クリックし、クリックして**CalculateCode メトリック**します。  
+- **ソリューション エクスプ ローラー**ソリューションを右クリックし、クリックして**CalculateCode メトリック**します。  
   
      \- または -  
   
--   **コード メトリックスの結果**ウィンドウで、をクリックして、 **CalculateCode メトリックは、ソリューションを**ボタンをクリックします。  
+- **コード メトリックスの結果**ウィンドウで、をクリックして、 **CalculateCode メトリックは、ソリューションを**ボタンをクリックします。  
   
      結果を生成し、**コード メトリックスの結果**ウィンドウが表示されます。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "58973265"
   
 ### <a name="to-view-the-results-details"></a>結果の詳細を表示するには  
   
--   ツリーを展開、**階層**列。  
+- ツリーを展開、**階層**列。  
   
 ## <a name="see-also"></a>関連項目  
  [マネージド コードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

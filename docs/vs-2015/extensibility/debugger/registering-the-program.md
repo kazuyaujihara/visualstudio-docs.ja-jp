@@ -11,27 +11,27 @@ ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bc4a8de9f93a04fb062954703a1c14b4c4447308
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 31d03f12a31953cbc0e20d06820dd49b5f9827e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441967"
 ---
 # <a name="registering-the-program"></a>プログラムの登録
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 によって表されるデバッグ エンジンでは、ポート、取得された後、 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)インターフェイス、デバッグするプログラムを有効にするのには、次の手順は、ポートを使用して登録します。 登録されると、プログラムがでは、次のいずれかのデバッグに使用します。  
   
--   使用する実行中のアプリケーションの制御をデバッグするデバッガーのアタッチ、プロセス。  
+- 使用する実行中のアプリケーションの制御をデバッグするデバッガーのアタッチ、プロセス。  
   
--   -Just-in-time (JIT) デバッグは、ファクトの後は、デバッガーとは無関係に実行されるプログラムのデバッグできます。 実行時のアーキテクチャでは、エラーをキャッチ、したときに、オペレーティング システムの前に、デバッガーに通知またはランタイム環境は、メモリと、エラーが発生したプログラムのリソースを解放します。  
+- -Just-in-time (JIT) デバッグは、ファクトの後は、デバッガーとは無関係に実行されるプログラムのデバッグできます。 実行時のアーキテクチャでは、エラーをキャッチ、したときに、オペレーティング システムの前に、デバッガーに通知またはランタイム環境は、メモリと、エラーが発生したプログラムのリソースを解放します。  
   
 ## <a name="registering-procedure"></a>プロシージャの登録  
   
 #### <a name="to-register-your-program"></a>プログラムを登録するには  
   
-1.  呼び出す、 [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)ポートによって実装されるメソッド。  
+1. 呼び出す、 [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)ポートによって実装されるメソッド。  
   
      `IDebugPortNotify2::AddProgramNode` ポインターが必要です、 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)インターフェイス。  
   
@@ -40,7 +40,7 @@ ms.locfileid: "58974312"
      次の例では、プログラムを起動し、ポートに登録するデバッグ エンジンを示します。  
   
     > [!NOTE]
-    >  これは起動し、プロセスを再開する唯一の方法ではありません。これは、ポートをプログラムに登録の例では主に。  
+    > これは起動し、プロセスを再開する唯一の方法ではありません。これは、ポートをプログラムに登録の例では主に。  
   
     ```cpp#  
     // This is an IDebugEngineLaunch2 method.  

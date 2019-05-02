@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8ed8e7366b438d152abbd6faef91e3f3a0707a61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1f02018ed9ddb6f91f965d28767cde55e4c3e524
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437300"
 ---
 # <a name="introduction-to-wpf"></a>WPF の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,12 +27,12 @@ Windows Presentation Foundation (WPF) を使用して、視覚的に美しいユ
   
  この概要は初めての方を対象としており、WPF の主要な機能と概念を説明します。  
   
-##  <a name="Programming_with_WPF"></a> WPF によるプログラミング  
+## <a name="Programming_with_WPF"></a> WPF によるプログラミング  
  WPF は、ほとんどの部分が <xref:System.Windows> 名前空間に格納されている .NET Framework 型のサブセットとして存在します。 ASP.NET や Windows フォームのようなマネージド テクノロジを使用して .NET Framework で以前にアプリケーションを構築したことがあるユーザーは、基本的な WPF のプログラミングの経験には慣れているはずです。クラスのインスタンス化、プロパティの設定、メソッドの呼び出し、イベントの処理など、すべての操作は C# または Visual Basic などの使い慣れた .NET プログラミング言語を使用して行うことができます。  
   
  WPF には、プロパティとイベントを拡張する追加のプログラミング構成要素である、 [依存関係プロパティ](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx) と [ルーティング イベント](https://msdn.microsoft.com/library/ms742806\(v=vs.100\).aspx)が含まれています。  
   
-##  <a name="Markup_And_Codebehind"></a> マークアップおよび分離コード  
+## <a name="Markup_And_Codebehind"></a> マークアップおよび分離コード  
  WPF では *マークアップ* と *分離コード*の両方を使用したアプリケーションを開発できます。これは ASP.NET 開発者にとってなじみ深いエクスペリエンスに違いありません。 一般に、アプリケーションの外観を実装するには XAML マークアップを使用し、一方、その動作を実装するには、マネージド プログラミング言語 (分離コード) を使用します。 外観と動作の実装を別々に行うことには、次の利点があります。  
   
 - 外観固有のマークアップが動作固有のコードと密接に結び付いていないので、開発と保守のコストが削減されます。  
@@ -143,7 +143,7 @@ End Namespace
   
  ![MessageBox](../designers/media/wpfintrofigure25.png "WPFIntroFigure25")  
   
-##  <a name="Controls"></a> コントロール  
+## <a name="Controls"></a> コントロール  
  アプリケーション モデルにより提供されるユーザー エクスペリエンスは、構築済みのコントロールです。 WPF において、「コントロール」とはウィンドウまたはページによりホストされ、ユーザー インターフェイスを持ち、何らかの動作を実装する WPF クラスのカテゴリに適用される総称です。  
   
  詳しくは、「 [コントロール](http://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599)」をご覧ください。  
@@ -151,38 +151,38 @@ End Namespace
 ### <a name="wpf-controls-by-function"></a>WPF コントロールの機能別一覧  
  組み込まれた WPF コントロールを次に挙げます。  
   
--   **ボタン類**: <xref:System.Windows.Controls.Button> および <xref:System.Windows.Controls.Primitives.RepeatButton>。  
+- **ボタン類**: <xref:System.Windows.Controls.Button> および <xref:System.Windows.Controls.Primitives.RepeatButton>。  
   
--   **データの表示**: <xref:System.Windows.Controls.DataGrid>、 <xref:System.Windows.Controls.ListView>、 <xref:System.Windows.Controls.TreeView>。  
+- **データの表示**: <xref:System.Windows.Controls.DataGrid>、 <xref:System.Windows.Controls.ListView>、 <xref:System.Windows.Controls.TreeView>。  
   
--   **日付表示と選択**: <xref:System.Windows.Controls.Calendar> および <xref:System.Windows.Controls.DatePicker>。  
+- **日付表示と選択**: <xref:System.Windows.Controls.Calendar> および <xref:System.Windows.Controls.DatePicker>。  
   
--   **ダイアログ ボックス**: <xref:Microsoft.Win32.OpenFileDialog>、 <xref:System.Windows.Controls.PrintDialog>、 <xref:Microsoft.Win32.SaveFileDialog>。  
+- **ダイアログ ボックス**: <xref:Microsoft.Win32.OpenFileDialog>、 <xref:System.Windows.Controls.PrintDialog>、 <xref:Microsoft.Win32.SaveFileDialog>。  
   
--   **デジタル インク**: <xref:System.Windows.Controls.InkCanvas> および <xref:System.Windows.Controls.InkPresenter>。  
+- **デジタル インク**: <xref:System.Windows.Controls.InkCanvas> および <xref:System.Windows.Controls.InkPresenter>。  
   
--   **ドキュメント**: <xref:System.Windows.Controls.DocumentViewer>、 <xref:System.Windows.Controls.FlowDocumentPageViewer>、 <xref:System.Windows.Controls.FlowDocumentReader>、 <xref:System.Windows.Controls.FlowDocumentScrollViewer>、 <xref:System.Windows.Controls.StickyNoteControl>。  
+- **ドキュメント**: <xref:System.Windows.Controls.DocumentViewer>、 <xref:System.Windows.Controls.FlowDocumentPageViewer>、 <xref:System.Windows.Controls.FlowDocumentReader>、 <xref:System.Windows.Controls.FlowDocumentScrollViewer>、 <xref:System.Windows.Controls.StickyNoteControl>。  
   
--   **入力**: <xref:System.Windows.Controls.TextBox>、 <xref:System.Windows.Controls.RichTextBox>、 <xref:System.Windows.Controls.PasswordBox>。  
+- **入力**: <xref:System.Windows.Controls.TextBox>、 <xref:System.Windows.Controls.RichTextBox>、 <xref:System.Windows.Controls.PasswordBox>。  
   
--   **レイアウト**: <xref:System.Windows.Controls.Border>、 <xref:System.Windows.Controls.Primitives.BulletDecorator>、 <xref:System.Windows.Controls.Canvas>、 <xref:System.Windows.Controls.DockPanel>、 <xref:System.Windows.Controls.Expander>、 <xref:System.Windows.Controls.Grid>、 <xref:System.Windows.Controls.GridView>、 <xref:System.Windows.Controls.GridSplitter>、 <xref:System.Windows.Controls.GroupBox>、 <xref:System.Windows.Controls.Panel>、 <xref:System.Windows.Controls.Primitives.ResizeGrip>、 <xref:System.Windows.Controls.Separator>、 <xref:System.Windows.Controls.Primitives.ScrollBar>、 <xref:System.Windows.Controls.ScrollViewer>、 <xref:System.Windows.Controls.StackPanel>、 <xref:System.Windows.Controls.Primitives.Thumb>、 <xref:System.Windows.Controls.Viewbox>、 <xref:System.Windows.Controls.VirtualizingStackPanel>、 <xref:System.Windows.Window>、 <xref:System.Windows.Controls.WrapPanel>。  
+- **レイアウト**: <xref:System.Windows.Controls.Border>、 <xref:System.Windows.Controls.Primitives.BulletDecorator>、 <xref:System.Windows.Controls.Canvas>、 <xref:System.Windows.Controls.DockPanel>、 <xref:System.Windows.Controls.Expander>、 <xref:System.Windows.Controls.Grid>、 <xref:System.Windows.Controls.GridView>、 <xref:System.Windows.Controls.GridSplitter>、 <xref:System.Windows.Controls.GroupBox>、 <xref:System.Windows.Controls.Panel>、 <xref:System.Windows.Controls.Primitives.ResizeGrip>、 <xref:System.Windows.Controls.Separator>、 <xref:System.Windows.Controls.Primitives.ScrollBar>、 <xref:System.Windows.Controls.ScrollViewer>、 <xref:System.Windows.Controls.StackPanel>、 <xref:System.Windows.Controls.Primitives.Thumb>、 <xref:System.Windows.Controls.Viewbox>、 <xref:System.Windows.Controls.VirtualizingStackPanel>、 <xref:System.Windows.Window>、 <xref:System.Windows.Controls.WrapPanel>。  
   
--   **メディア**: <xref:System.Windows.Controls.Image>、 <xref:System.Windows.Controls.MediaElement>、 <xref:System.Windows.Controls.SoundPlayerAction>。  
+- **メディア**: <xref:System.Windows.Controls.Image>、 <xref:System.Windows.Controls.MediaElement>、 <xref:System.Windows.Controls.SoundPlayerAction>。  
   
--   **メニュー類**: <xref:System.Windows.Controls.ContextMenu>、 <xref:System.Windows.Controls.Menu>、 <xref:System.Windows.Controls.ToolBar>。  
+- **メニュー類**: <xref:System.Windows.Controls.ContextMenu>、 <xref:System.Windows.Controls.Menu>、 <xref:System.Windows.Controls.ToolBar>。  
   
--   **ナビゲーション**: <xref:System.Windows.Controls.Frame>、 <xref:System.Windows.Documents.Hyperlink>、 <xref:System.Windows.Controls.Page>、 <xref:System.Windows.Navigation.NavigationWindow>、 <xref:System.Windows.Controls.TabControl>。  
+- **ナビゲーション**: <xref:System.Windows.Controls.Frame>、 <xref:System.Windows.Documents.Hyperlink>、 <xref:System.Windows.Controls.Page>、 <xref:System.Windows.Navigation.NavigationWindow>、 <xref:System.Windows.Controls.TabControl>。  
   
--   **選択**: <xref:System.Windows.Controls.CheckBox>、 <xref:System.Windows.Controls.ComboBox>、 <xref:System.Windows.Controls.ListBox>、 <xref:System.Windows.Controls.RadioButton>、 <xref:System.Windows.Controls.Slider>。  
+- **選択**: <xref:System.Windows.Controls.CheckBox>、 <xref:System.Windows.Controls.ComboBox>、 <xref:System.Windows.Controls.ListBox>、 <xref:System.Windows.Controls.RadioButton>、 <xref:System.Windows.Controls.Slider>。  
   
--   **ユーザー情報**: <xref:System.Windows.Controls.AccessText>、 <xref:System.Windows.Controls.Label>、 <xref:System.Windows.Controls.Primitives.Popup>、 <xref:System.Windows.Controls.ProgressBar>、 <xref:System.Windows.Controls.Primitives.StatusBar>、 <xref:System.Windows.Controls.TextBlock>、 <xref:System.Windows.Controls.ToolTip>。  
+- **ユーザー情報**: <xref:System.Windows.Controls.AccessText>、 <xref:System.Windows.Controls.Label>、 <xref:System.Windows.Controls.Primitives.Popup>、 <xref:System.Windows.Controls.ProgressBar>、 <xref:System.Windows.Controls.Primitives.StatusBar>、 <xref:System.Windows.Controls.TextBlock>、 <xref:System.Windows.Controls.ToolTip>。  
   
-##  <a name="Input_And_Commanding"></a> 入力とコマンド実行  
+## <a name="Input_And_Commanding"></a> 入力とコマンド実行  
  コントロールはほとんどの場合、ユーザー入力の検出と応答に使用されます。 [WPF 入力システム](https://msdn.microsoft.com/library/ms754010\(v=vs.100\).aspx) では直接イベントとルーティング イベントの両方を使用して、テキスト入力、フォーカス管理、マウス位置指定をサポートしています。  
   
  アプリケーションにはたいてい、複雑な入力要件があります。 WPF には、ユーザー入力動作と、それらの動作に応答するコードを分離する [コマンド システム](https://msdn.microsoft.com/library/ms752308\(v=vs.100\).aspx) があります。  
   
-##  <a name="Layout"></a> レイアウト  
+## <a name="Layout"></a> レイアウト  
  ユーザー インターフェイスを作成すると、場所とサイズによりコントロール類を配置して、レイアウトを決めます。 すべてのレイアウトの重要な要件は、ウィンドウ サイズと表示設定の変更に適応させることです。 こうした状況でレイアウトを適応させるために開発者にコードを作成させるのではなく、WPF では最上級の拡張可能なレイアウト システムを提供します。  
   
  レイアウト システムの要となるのは、相対的な位置指定です。これにより、ウィンドウや表示条件の変化への適応性が高まります。 さらに、レイアウト システムは各コントロール間のネゴシエーションを管理して、レイアウトを決定します。 このネゴシエーションは 2 段階のプロセスで行われます。まず、コントロールがその親に対して、必要な場所とサイズを伝えます。次に、親コントロールはどれぐらいの空間を持てるかを子コントロールに伝えます。  
@@ -208,13 +208,13 @@ End Namespace
   <xref:System.Windows.Controls.DockPanel> により、子 <xref:System.Windows.Controls.TextBox> コントロールはどのように配置するかを伝えることができます。 このために、 <xref:System.Windows.Controls.DockPanel> は <xref:System.Windows.Controls.DockPanel.Dock%2A> プロパティを実装しています。このプロパティが子コントロールに公開されて、それぞれのコントロールがドック スタイルを指定できるようになります。  
   
 > [!NOTE]
->  子コントロールが使うために、親コントロールにより実装されるプロパティは、 [添付プロパティ](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx)と呼ばれる WPF 構成要素です。  
+> 子コントロールが使うために、親コントロールにより実装されるプロパティは、 [添付プロパティ](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx)と呼ばれる WPF 構成要素です。  
   
  次の図に、前の例の XAML マークアップの結果を示します。  
   
  ![DockPanel ページ](../designers/media/wpfintrofigure11.png "WPFIntroFigure11")  
   
-##  <a name="Data_Binding"></a> データ バインディング  
+## <a name="Data_Binding"></a> データ バインディング  
  ほとんどのアプリケーションは、データの表示と編集の手段をユーザーに提供するために作成されます。 WPF アプリケーションの場合、データ格納とアクセスの機能は、SQL Server や ADO .NET などのテクノロジにより、すでに提供されています。 データがアクセスされ、アプリケーションの管理対象オブジェクトに読み込まれると、WPF アプリケーションの処理が開始します。 基本的に、これには 2 つの処理が伴います。  
   
 1. 管理対象のオブジェクトからコントロールにデータをコピーします。これらのコントロールで、データを表示および編集できます。  
@@ -245,16 +245,16 @@ End Namespace
   
    詳しくは、「 [データ バインディングの概要](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)」をご覧ください。  
   
-##  <a name="Graphics"></a> グラフィックス  
+## <a name="Graphics"></a> グラフィックス  
  WPF では次の利点を備えた、広範囲にわたるスケーラブルで柔軟なグラフィックス機能セットが導入されています。  
   
--   **解像度にもデバイスにも依存しないグラフィックス**。 WPF グラフィックス システムでの測定値の基本単位は、デバイスに依存しないピクセル、すなわち 1 インチの 1/96 であり、実際の画面解像度には関係ありません。このため、解像度にもデバイスにも依存しないレンダリングの基盤が提供されます。 デバイスに依存しない各ピクセルは、レンダリングを行うシステムのドット/インチ (dpi) 設定に合うように、自動的にスケーリングされます。  
+- **解像度にもデバイスにも依存しないグラフィックス**。 WPF グラフィックス システムでの測定値の基本単位は、デバイスに依存しないピクセル、すなわち 1 インチの 1/96 であり、実際の画面解像度には関係ありません。このため、解像度にもデバイスにも依存しないレンダリングの基盤が提供されます。 デバイスに依存しない各ピクセルは、レンダリングを行うシステムのドット/インチ (dpi) 設定に合うように、自動的にスケーリングされます。  
   
--   **精度の向上**。 WPF の座標系は、単精度ではなく、倍精度浮動小数点数で測定されます。 変換および不透明度の値も倍精度で表現されます。 また、WPF は、広色域 (scRGB) に対応しており、異なる色空間からの入力を管理する統合サポートを提供します。  
+- **精度の向上**。 WPF の座標系は、単精度ではなく、倍精度浮動小数点数で測定されます。 変換および不透明度の値も倍精度で表現されます。 また、WPF は、広色域 (scRGB) に対応しており、異なる色空間からの入力を管理する統合サポートを提供します。  
   
--   **高度なグラフィックスおよびアニメーションのサポート**。 WPF はアニメーションのシーンを管理してグラフィックスのプログラミングを簡略化します。シーンの処理、レンダリング ループ、バイリニア補間について心配する必要はありません。 WPF はさらに、ヒット テストのサポートとアルファ合成の完全なサポートを提供しています。  
+- **高度なグラフィックスおよびアニメーションのサポート**。 WPF はアニメーションのシーンを管理してグラフィックスのプログラミングを簡略化します。シーンの処理、レンダリング ループ、バイリニア補間について心配する必要はありません。 WPF はさらに、ヒット テストのサポートとアルファ合成の完全なサポートを提供しています。  
   
--   **ハードウェアの高速化** WPF グラフィックス システムでは、CPU 使用率を最小限に抑えるためにグラフィックス ハードウェアを利用します。  
+- **ハードウェアの高速化** WPF グラフィックス システムでは、CPU 使用率を最小限に抑えるためにグラフィックス ハードウェアを利用します。  
   
 ### <a name="2-d-shapes"></a>2-D 図形  
  WPF には、次の図に示す四角形や楕円のような、一般的なベクター描画による 2-D 図形のライブラリが用意されています。  
@@ -299,14 +299,14 @@ End Namespace
   
  詳しくは、「 [3-D グラフィックスの概要](https://msdn.microsoft.com/library/ms747437\(v=vs.100\).aspx)」をご覧ください。  
   
-##  <a name="Animation"></a> アニメーション  
+## <a name="Animation"></a> アニメーション  
  WPF のアニメーション サポートを使用すると、コントロールを拡大、振動、スピン、フェードさせることができ、魅力的なページ遷移などを作成できです。 カスタム クラスも含めて、ほとんどの WPF クラスをアニメーション表示できます。 次の図に、実行中の単純なアニメーションを示します。  
   
  ![アニメーション キューブのイメージ](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
   
  詳しくは、「 [アニメーションの概要](https://msdn.microsoft.com/library/ms752312\(v=vs.100\).aspx)」をご覧ください。  
   
-##  <a name="Media"></a> メディア  
+## <a name="Media"></a> メディア  
  リッチ コンテンツを伝達するための 1 つの方法は、オーディオビジュアル メディアを使用することです。 WPF では、イメージ、ビデオ、オーディオに対して特別なサポートを提供しています。  
   
 ### <a name="images"></a>イメージ  
@@ -327,7 +327,7 @@ End Namespace
   
  詳しくは、「 [WPF のグラフィックス、アニメーション、およびメディアの概要](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)」をご覧ください。  
   
-##  <a name="Text_and_Typography"></a> テキストとタイポグラフィ  
+## <a name="Text_and_Typography"></a> テキストとタイポグラフィ  
  高品質のテキスト レンダリングを容易に行うために、WPF では次の機能が提供されています。  
   
 - OpenType フォントのサポート。  
@@ -346,7 +346,7 @@ End Namespace
   
   詳しくは、「 [Windows Presentation Foundation のタイポグラフィ](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx)」をご覧ください。  
   
-##  <a name="WPF_Customization"></a> WPF アプリケーションのカスタマイズ  
+## <a name="WPF_Customization"></a> WPF アプリケーションのカスタマイズ  
  ここまで、アプリケーションを開発するための中核となる WPF 構成要素を説明してきました。 主にコントロールから成るアプリケーション コンテンツをホストして提供するには、アプリケーション モデルを使用します。 ユーザー インターフェイスでのコントロールの配置を簡素化して、ウィンドウ サイズや表示設定に変更が発生した場合にも配置を維持するには、WPF レイアウト システムを使用します。 ほとんどのアプリケーションでは、ユーザーがデータと対話できるようになっているため、データ バインディングを使用すればユーザー インターフェイスとデータの統合作業を削減できます。 アプリケーションの外観を向上させるには、WPF が提供する幅広いグラフィックス、アニメーション、メディアのサポートを使用します。  
   
  ただし多くの場合、基本要素だけでは、真に個性的で視覚的に美しいユーザー エクスペリエンスを作成し、管理するには不十分です。 標準の WPF コントロールでは、アプリケーションの目的の外観にはそぐわない場合があります。 最も効果的な方法でデータを表示できない可能性があります。 アプリケーションの全体的なユーザー エクスペリエンスが、Windows のテーマの既定のルック アンド フィールに適合しない場合があります。 多くの点で、プレゼンテーション技術には他の機能拡張と同様、視覚的な機能拡張性が必要です。  
@@ -485,8 +485,7 @@ End Namespace
   [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind1)]  
   [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind2)]
   [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind2)]  
-  
-  
+
  次の例は、ユーザー コントロールを <xref:System.Windows.Window>に組み込むために必要な XAML を示しています。  
   
  [!code-xml[IntroToWPFSnippets#UserControlWindowMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/UserControlWindow.xaml#usercontrolwindowmarkup1)]  
@@ -499,18 +498,18 @@ End Namespace
   
  カスタム コントロールについて詳しくは、「 [コントロールの作成の概要](https://msdn.microsoft.com/library/ms745025\(v=vs.100\).aspx)」をご覧ください。  
   
-##  <a name="WPF_Best_Practices"></a> WPF のベスト プラクティス  
+## <a name="WPF_Best_Practices"></a> WPF のベスト プラクティス  
  WPF はすべての開発プラットフォームと同様、目的の結果を得るために、さまざまな方法で使用できます。 必要なユーザー エクスペリエンスを WPF アプリケーションが確実に提供し、オーディエンス一般の需要に応える 1 つの方法として、アクセシビリティ、グローバリゼーションとローカリゼーション、パフォーマンスに関するお勧めのベスト プラクティスがあります。 詳しくは、次のトピックをご覧ください。  
   
--   [ユーザー補助のベスト プラクティス](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)ユーザー補助のベスト プラクティス  
+- [ユーザー補助のベスト プラクティス](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)ユーザー補助のベスト プラクティス  
   
--   [WPF のグローバリゼーションおよびローカリゼーションの概要](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx)  
+- [WPF のグローバリゼーションおよびローカリゼーションの概要](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx)  
   
--   [WPF アプリケーションのパフォーマンスの最適化](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)  
+- [WPF アプリケーションのパフォーマンスの最適化](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)  
   
--   [Windows Presentation Foundation のセキュリティ](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)  
+- [Windows Presentation Foundation のセキュリティ](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)  
   
-##  <a name="Summary"></a> まとめ  
+## <a name="Summary"></a> まとめ  
  WPF とは、視覚的に美しいさまざまなクライアント アプリケーションを構築するための包括的なプレゼンテーション テクノロジです。 この概要では、WPF の主な機能を紹介しました。  
   
  次の手順では、WPF アプリケーションを構築します。  

@@ -3,18 +3,18 @@ title: データ サイエンスと分析のアプリケーション ワーク�
 description: この Visual Studio ワークロードでは、Python、F# と、そのランタイム ディストリビューション (Anaconda など) を使うことができます。 (R は Visual Studio 2017 にのみ含まれています。)
 ms.date: 02/28/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 44dfa13059e16338111bbeb2eb2f0bc6d6b44408
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958387"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Visual Studio でのデータ サイエンス サポートのインストール
 
@@ -111,4 +111,4 @@ Azure SDK for Python を使用すると、Windows、Mac、Linux で実行され�
 Azure Notebook (現在プレビュー中) を使用すると、クラウドで Microsoft Azure で実行されている Jupyter Notebook に自由にオンライン アクセスできます。 このサービスには、使用を開始できるように Python、R および F# のサンプル ノートブックが含まれています。 [notebooks.azure.com](https://notebooks.azure.com/) にアクセスしてください。
 
 <!--Note link on the image because this one is large -->
-[![入門用の R のサンプルと Azure Notebooks のスクリーンショット](media/workload/data-science-workload-notebooks.png)](media/workload/data-science-workload-notebooks.png#lightbox)
+[![入門用の R のサンプルと Azure Notebook のスクリーンショット](media/workload/data-science-workload-notebooks.png)](media/workload/data-science-workload-notebooks.png#lightbox)

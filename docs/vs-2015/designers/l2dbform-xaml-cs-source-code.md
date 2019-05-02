@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a63234a820c4f3cffae65342bad0b7fd439edfff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ba6262ef3174428dc14c5f747c4346b5f04e35ee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428002"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ ms.locfileid: "54769954"
 ## <a name="data-members"></a>データ メンバー  
  このクラスを L2DBForm.xaml で使用されているウィンドウ リソースに関連付けるために、2 つのプライベート データ メンバーが使用されています。  
   
--   名前空間変数 `myBooks` は、`"http://www.mybooks.com"` に初期化されます。  
+- 名前空間変数 `myBooks` は、`"http://www.mybooks.com"` に初期化されます。  
   
--   メンバー `bookList` は、コンストラクター内で次の行を使用して L2DBForm.xaml 内の CDATA 文字列に初期化されます。  
+- メンバー `bookList` は、コンストラクター内で次の行を使用して L2DBForm.xaml 内の CDATA 文字列に初期化されます。  
   
     ```  
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;  
@@ -35,11 +35,11 @@ ms.locfileid: "54769954"
 ## <a name="onaddbook-event-handler"></a>OnAddBook イベント ハンドラー  
  このメソッドには次の 3 つのステートメントが含まれています。  
   
--   最初の条件ステートメントでは、入力が検証されます。  
+- 最初の条件ステートメントでは、入力が検証されます。  
   
--   2 番目のステートメントでは、**[Add New Book]\(新しい書籍の追加\)** ユーザー インターフェイス (UI) セクションでユーザーが入力した文字列値から新しい <xref:System.Xml.Linq.XElement> が作成されます。  
+- 2 番目のステートメントでは、**[Add New Book]\(新しい書籍の追加\)** ユーザー インターフェイス (UI) セクションでユーザーが入力した文字列値から新しい <xref:System.Xml.Linq.XElement> が作成されます。  
   
--   最後のステートメントでは、この新しい書籍要素が、L2DBForm.xaml のデータ プロバイダーに追加されます。 その結果、動的なデータ バインドによって UI がこの新しい項目で自動的に更新されます。ユーザーがコードを追加する必要はありません。  
+- 最後のステートメントでは、この新しい書籍要素が、L2DBForm.xaml のデータ プロバイダーに追加されます。 その結果、動的なデータ バインドによって UI がこの新しい項目で自動的に更新されます。ユーザーがコードを追加する必要はありません。  
   
 ## <a name="onremove-event-handler"></a>OnRemove イベント ハンドラー  
  `OnRemove` ハンドラーは、2 つの理由で `OnAddBook` ハンドラーよりも複雑です。 1 つは、生の XML に保持された空白が含まれているために、一致する改行を書籍エントリと共に削除する必要があることです。 もう 1 つは、削除された項目に設定されていた選択が、便宜上、一覧の前の項目にリセットされることです。  

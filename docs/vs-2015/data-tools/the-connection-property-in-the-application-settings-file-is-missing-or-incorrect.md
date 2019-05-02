@@ -9,24 +9,23 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 671b0acfd0f2ec81e349bd6a69db0fb64bff94d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 043db1aca02a82abe08786466f4b47213d09540d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563664"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>アプリケーション設定ファイルの接続プロパティが、存在しないか、正しくありません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 アプリケーション設定ファイルの接続プロパティが、存在しないか、正しくありません。 .dbml ファイルの接続文字列が代わりに使用されます。  
   
  .dbml ファイルには、アプリケーション設定ファイルに見つからない接続文字列への参照が含まれています。 このメッセージは情報であり、**[OK]** をクリックすると接続文字列設定が作成されます。  
   
 ### <a name="to-respond-to-this-message"></a>対処方法  
   
--   **[OK]** をクリックします。 .dbml ファイルに含まれている接続情報がアプリケーション設定に追加されます。  
+- **[OK]** をクリックします。 .dbml ファイルに含まれている接続情報がアプリケーション設定に追加されます。  
   
 ## <a name="see-also"></a>関連項目  
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

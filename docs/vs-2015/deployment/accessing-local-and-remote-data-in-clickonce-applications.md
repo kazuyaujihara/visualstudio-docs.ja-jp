@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 21e16823d664b927008e43f8bfc6972ac284eac7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427248"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>ClickOnce アプリケーションにおけるローカル データおよびリモート データへのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58963858"
 ## <a name="local-data"></a>ローカル データ  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] では、次のいずれかの方法を使用してデータを読み込んでローカルに格納できます。  
   
--   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] データ ディレクトリ  
+- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] データ ディレクトリ  
   
--   分離ストレージ  
+- 分離ストレージ  
   
--   その他のローカル ファイル  
+- その他のローカル ファイル  
   
 ### <a name="clickonce-data-directory"></a>ClickOnce データ ディレクトリ  
  ローカル コンピューターにインストールされている各 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションには、データ ディレクトリがあります。このデータ ディレクトリは、ユーザーの "Documents and Settings" フォルダーにあります。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションに含まれていて、"データ" ファイルとしてマークされているすべてのファイルは、アプリケーションのインストール時にこのディレクトリにコピーされます。 どのような種類のファイルでもデータ ファイルとして指定できます。最もよく使用されるのは、テキスト ファイルや XML ファイル、データベース ファイル (Microsoft Access の .mdb ファイルなど) です。  
@@ -43,7 +43,7 @@ ms.locfileid: "58963858"
  データ ディレクトリは、アプリケーションで管理するデータ、つまり、アプリケーションによって明示的に格納および保守されるデータ用のディレクトリです。 アプリケーション マニフェストで "データ" のマークが付けられていない静的で非依存のすべてのファイルは、アプリケーション ディレクトリに格納されます。 このディレクトリには、アプリケーションの実行可能ファイル (.exe) とアセンブリがあります。  
   
 > [!NOTE]
->  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションをアンインストールすると、そのアプリケーションのデータ ディレクトリも削除されます。 文書ファイルなど、エンド ユーザーが管理するデータを格納するためには、データ ディレクトリを使用しないでください。  
+> [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションをアンインストールすると、そのアプリケーションのデータ ディレクトリも削除されます。 文書ファイルなど、エンド ユーザーが管理するデータを格納するためには、データ ディレクトリを使用しないでください。  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>ClickOnce で配布するデータ ファイルのマーク付け  
  既存のファイルをデータ ディレクトリに格納するには、そのファイルを [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションのアプリケーション マニフェスト ファイル内でデータ ファイルとしてマークする必要があります。 詳細については、「[方法 :ClickOnce アプリケーションにデータ ファイルを含める](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。  
@@ -52,7 +52,7 @@ ms.locfileid: "58963858"
  データ ディレクトリからデータを読み込むには、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションで読み取りアクセス許可を要求することが必要です。同じように、データ ディレクトリにデータを書き込むには、書き込みのアクセス許可が必要です。 完全な信頼を得て実行するようにアプリケーションが構成されている場合、これらのアクセス許可は自動的にアプリケーションに与えられます。 アクセス許可の昇格または信頼されたアプリケーションの配置を使用して、アプリケーションのアクセス許可の昇格の詳細については、次を参照してください。 [ClickOnce アプリケーションのセキュリティで保護する](../deployment/securing-clickonce-applications.md)します。  
   
 > [!NOTE]
->  組織が信頼されたアプリケーションの配置を使用しておらず、アクセス許可の昇格機能をオフにしている場合は、アクセス許可のアサートは失敗します。  
+> 組織が信頼されたアプリケーションの配置を使用しておらず、アクセス許可の昇格機能をオフにしている場合は、アクセス許可のアサートは失敗します。  
   
  アプリケーションにこれらのアクセス許可が与えられると、アプリケーションは <xref:System.IO>に属する各クラスのメソッド呼び出しを使用して、データ ディレクトリにアクセスできます。 Windows フォーム [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーション内のデータ ディレクトリのパスを取得するには、<xref:System.Deployment.Application.ApplicationDeployment> の <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> プロパティで定義された <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> プロパティを使用できます。 これは、データにアクセスする最も便利な方法として推奨されています。 次のコード例では、配置にデータ ファイルとして組み込んだ CSV.txt というテキスト ファイルに対してこの操作を実行する方法を示します。  
   

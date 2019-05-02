@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b28a279e729900d8a1cb26f25bca6370c00a08c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a89e06fad1e47e3c2fd7be565acab9d94e3f29d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434428"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>方法: 3-D モデルのピボット ポイントを変更します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54774102"
   
  このドキュメントでは、以下のアクティビティについて説明します:  
   
--   オブジェクトのピボット ポイントの変更  
+- オブジェクトのピボット ポイントの変更  
   
 ## <a name="modifying-the-pivot-point-of-a-3-d-model"></a>3-D モデルのピボット ポイントの変更  
  ピボット ポイントを変更することにより、3-D モデルの原点を再定義できます。  
@@ -43,7 +43,7 @@ ms.locfileid: "54774102"
     **[プロパティ]** ウィンドウで **[ピボット平行移動]** プロパティを使用して、ピボット ポイントを移動することもできます。  
   
    > [!TIP]
-   >  オブジェクトを回転することで新しいピボット ポイントの効果を表示できます。 回転するには、**[回転]** ツールを使用するか、**[回転]** プロパティを変更します。  
+   > オブジェクトを回転することで新しいピボット ポイントの効果を表示できます。 回転するには、**[回転]** ツールを使用するか、**[回転]** プロパティを変更します。  
   
    変更されたピボット ポイントを含むモデルを次に示します。  
   

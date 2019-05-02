@@ -18,12 +18,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54469f2e255ff9ea726ea1b6c13abcb55c33252d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444115"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>従来のステート マシン ワークフロー デザイナーの使用
 新しいステート マシン ワークフロー プロジェクトを作成するときに[!INCLUDE[vs2010](../includes/vs2010-md.md)]をターゲットとするか、[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]または[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]、いずれかを使用することもできます、**ステート マシン ワークフロー コンソール アプリケーション**または、 **ステート マシン ワークフロー ライブラリ**従来のプロジェクト テンプレート。 これらのいずれかのステート マシン プロジェクト テンプレートを選択した場合、ステート マシン デザイナーが従来のワークフロー デザイナーのユーザー インターフェイスとして表示されます。 従来のステート マシン プロジェクト テンプレートの詳細については、次を参照してください。[方法。ステート マシン ワークフロー コンソール アプリケーション (レガシ) を作成](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)と[方法。ステート マシン ワークフロー ライブラリ (レガシ) 作成](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)です。  
@@ -53,9 +53,9 @@ ms.locfileid: "58962395"
  新しいをドラッグすると**StateActivity**をワークフロー デザイン サーフェイスに追加することができます[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)、 [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)、 [StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)、または追加**StateActivity**子アクティビティとしてアクティビティ。  
   
 > [!CAUTION]
->  デザインするワークフローの構造を監視する必要があります、ステート マシン ワークフロー デザイナーを使用してワークフローを作成するときに、**ドキュメント アウトライン**ビュー ウィンドウ。 ステート マシン ワークフローの構造の表示、**ドキュメント アウトライン**ビュー ウィンドウは、ワークフロー マークアップ ファイル内のアクティビティの論理的レイアウトを表します。 デザイン サーフェイスに表示されるワークフロー アクティビティの物理的レイアウトは、ワークフロー マークアップ ファイル内のアクティビティの論理的レイアウトを表さない可能性があります。  
+> デザインするワークフローの構造を監視する必要があります、ステート マシン ワークフロー デザイナーを使用してワークフローを作成するときに、**ドキュメント アウトライン**ビュー ウィンドウ。 ステート マシン ワークフローの構造の表示、**ドキュメント アウトライン**ビュー ウィンドウは、ワークフロー マークアップ ファイル内のアクティビティの論理的レイアウトを表します。 デザイン サーフェイスに表示されるワークフロー アクティビティの物理的レイアウトは、ワークフロー マークアップ ファイル内のアクティビティの論理的レイアウトを表さない可能性があります。  
 >   
->  開くには、**ドキュメント アウトライン**ウィンドウで、**ビュー**メニューで、**その他の Windows**、し、**ドキュメント アウトライン**します。  
+> 開くには、**ドキュメント アウトライン**ウィンドウで、**ビュー**メニューで、**その他の Windows**、し、**ドキュメント アウトライン**します。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: ステート マシン ワークフロー コンソール アプリケーション (レガシ) を作成します。](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   

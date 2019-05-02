@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7ea9c2efd6a204932e24de0ef250ba143b8b34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa331fea595c2143dd3ab47aa562fbd61277f81f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817789"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>[オプション]、[テキスト エディター]、[基本] (Visual Basic)、[詳細]
 **[オプション]** (**[ツール]** メニュー) ダイアログ ボックスの **[テキスト エディター]** フォルダーにある **[Basic]** フォルダーの **[VB 固有]** プロパティ ページでは、次のプロパティを指定します。
@@ -50,7 +50,6 @@ ms.locfileid: "55925463"
    これらのオプションを選択した場合、[クイック アクション](../quick-actions.md)を使用して NuGet パッケージをインストールし、参照されていない型の `using` ディレクティブを追加できます。
 
    ![Visual Studio に NuGet パッケージをインストールするためのクイック アクション](media/nuget-lightbulb.png)
-
 
 ## <a name="highlighting"></a>強調表示
 
@@ -82,19 +81,19 @@ ms.locfileid: "55925463"
 
 **[コードの再フォーマット]** 必要に応じてコードの書式が再設定されます。 このオプションをオンにすると、コード エディターによって次の処理が行われます。
 
--   コードを正しいタブ位置に揃える。
+- コードを正しいタブ位置に揃える。
 
--   キーワード、変数、およびオブジェクトの大文字と小文字の区別を修正する。
+- キーワード、変数、およびオブジェクトの大文字と小文字の区別を修正する。
 
--   `Then` ステートメントの `If...Then` が欠けていた場合に補う。
+- `Then` ステートメントの `If...Then` が欠けていた場合に補う。
 
--   関数呼び出しにかっこを追加する。
+- 関数呼び出しにかっこを追加する。
 
--   文字列の右引用符が欠けていた場合に補う。
+- 文字列の右引用符が欠けていた場合に補う。
 
--   指数表記の書式を正す。
+- 指数表記の書式を正す。
 
--   日付の書式を正す。
+- 日付の書式を正す。
 
 **[End コンストラクトの自動挿入]**
 

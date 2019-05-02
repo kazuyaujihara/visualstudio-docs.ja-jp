@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8762d13e1a5981f634b1b13fe08968a6b01c2b94
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: a5e39778a2d503470629f6c8b7c9243b9dc69cf3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903823"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>クイック スタート: Visual Studio デバッガーを使用して C# または Visual Basic でデバッグする
 
@@ -28,7 +28,7 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 1. Visual Studio を起動し、新しいプロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Ctrl + Q** キーを押して検索ボックスを開き、「**コンソール**」と入力し、**[テンプレート]**、**[新しいコンソール アプリ (.NET Core) プロジェクトの作成]** の順に選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**コンソール**」と入力し、**[テンプレート]**、**[新しいコンソール アプリ (.NET Core) プロジェクトの作成]** の順に選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
     上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** の左側のウィンドウで、**[Visual C#]** の下にある **[.NET Core]** を選択し、次に、真ん中のウィンドウで **[コンソール アプリ (.NET Core)]** を選択します。 次に、「**MyDbgApp**」のような名前を入力し、**[OK]** をクリックします。
@@ -186,4 +186,4 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 このチュートリアルでは、デバッガーを起動する方法、コードをステップ実行する方法、変数を確認する方法について学習しました。 必要に応じて、デバッガー機能の概要と、詳細情報へのリンクを取得します。
 
 > [!div class="nextstepaction"]
-> [デバッガー機能ツアー](../debugger/debugger-feature-tour.md)
+> [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

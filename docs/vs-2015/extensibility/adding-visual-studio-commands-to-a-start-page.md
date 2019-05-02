@@ -11,12 +11,12 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 34336b93e8739bcba807aca72b26a47b581b7413
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429010"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Visual Studio コマンドのスタート ページへの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```  
   
 > [!NOTE]
->  `x:` XAML スキーマを指すのエイリアスがすべてのコマンドの先頭に必要です。  
+> `x:` XAML スキーマを指すのエイリアスがすべてのコマンドの先頭に必要です。  
   
  値を設定することができます、`Command`プロパティからアクセスできる任意のコマンドを**コマンド**ウィンドウ。 使用可能なコマンドの一覧は、次を参照してください。 [Visual Studio Command Aliases](../ide/reference/visual-studio-command-aliases.md)します。  
   
@@ -65,22 +65,22 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
  その他の Visual Studio コマンドの呼び出しに使用する同じ構文を使用して、登録済みの Vspackage からコマンドを呼び出すことができます。 インストール済みの VSPackage に追加する場合など、**ホーム ページ**コマンドを**ビュー**  メニューを設定してそのコマンドを呼び出すことができます`CommandParameter`に`View.HomePage`します。  
   
 > [!NOTE]
->  VSPackage に関連付けられているコマンドを呼び出す場合は、コマンドが呼び出されたときにパッケージを読み込む必要があります。  
+> VSPackage に関連付けられているコマンドを呼び出す場合は、コマンドが呼び出されたときにパッケージを読み込む必要があります。  
   
 ## <a name="adding-commands-from-assemblies"></a>アセンブリからのコマンドの追加  
  アセンブリの場合、またはメニュー コマンドに関連付けられていない VSPackage でのアクセス コードには、コマンドを呼び出す、アセンブリのエイリアスを作成し、エイリアスを呼び出してください。  
   
 #### <a name="to-call-a-command-from-an-assembly"></a>アセンブリからコマンドを呼び出す  
   
-1.  ソリューションでは、アセンブリへの参照を追加します。  
+1. ソリューションでは、アセンブリへの参照を追加します。  
   
-2.  StartPage.xaml ファイルの上部にある次の例に示すように、アセンブリの名前空間ディレクティブを追加します。  
+2. StartPage.xaml ファイルの上部にある次の例に示すように、アセンブリの名前空間ディレクティブを追加します。  
   
     ```xml  
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
     ```  
   
-3.  設定してコマンドを呼び出す、`Command`次の例に示すように、XAML オブジェクトのプロパティ。  
+3. 設定してコマンドを呼び出す、`Command`次の例に示すように、XAML オブジェクトのプロパティ。  
   
      Xaml  
   
@@ -89,7 +89,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```  
   
 > [!NOTE]
->  アセンブリをコピーして貼り付けます.\\ *Visual Studio インストール フォルダー*\Common7\IDE\PrivateAssemblies\ にそれを呼び出す前に読み込まれるかどうかを確認します。  
+> アセンブリをコピーして貼り付けます.\\ *Visual Studio インストール フォルダー*\Common7\IDE\PrivateAssemblies\ にそれを呼び出す前に読み込まれるかどうかを確認します。  
   
 ## <a name="adding-commands-with-the-dte-object"></a>DTE オブジェクトにコマンドを追加します。  
  DTE オブジェクトは、スタート ページ、マークアップとコードの両方からアクセスできます。  

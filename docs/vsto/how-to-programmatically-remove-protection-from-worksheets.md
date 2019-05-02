@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd071a10ab456014190df4f84d6a0bff13c859b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ccf7de70c3ef741119ec22f8fa9bc76868a47030
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955956"
 ---
 # <a name="how-to-programmatically-remove-protection-from-worksheets"></a>方法: プログラムによってワークシートの保護を解除します。
   プログラムを使用して、Microsoft Office Excel ワークシートから保護を削除できます。
@@ -31,14 +31,14 @@ ms.locfileid: "56604848"
 
 ## <a name="to-unprotect-a-worksheet-in-a-document-level-customization"></a>ドキュメント レベルのカスタマイズでワークシートの保護を解除するには
 
-1.  呼び出す、<xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A>メソッドのワークシートと必要な場合、そのパスワードを渡します。 この例では、 `Sheet1`という名前のワークシートを操作していると仮定します。
+1. 呼び出す、<xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A>メソッドのワークシートと必要な場合、そのパスワードを渡します。 この例では、 `Sheet1`という名前のワークシートを操作していると仮定します。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#28)]
      [!code-vb[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#28)]
 
 ## <a name="to-unprotect-a-worksheet-in-a-vsto-add-in"></a>VSTO アドインでワークシートの保護を解除するには
 
-1.  呼び出す、<xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A>メソッドのアクティブなワークシートと必要な場合、そのパスワードを渡します。
+1. 呼び出す、<xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A>メソッドのアクティブなワークシートと必要な場合、そのパスワードを渡します。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#18)]

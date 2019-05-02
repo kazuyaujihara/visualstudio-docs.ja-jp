@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441458"
 ---
 # <a name="extending-javascript-intellisense"></a>JavaScript IntelliSense の拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ JavaScript IntelliSense の拡張機能では、サードパーティ製のラ�
   
  開発者エクスペリエンスをさらに強化するには、ポップアップ ボックスで開発者に型情報を提供する可能性があります。 JavaScript を使用して型情報を提供できます[XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)の標準のコメント用タグの代わりにします。 XML ドキュメントのコメントを追加するには、トリプル スラッシュ コメント タグ (///) と定義された一連の XML 要素を使用します。  
   
- また、JavaScript IntelliSense の機能拡張を使用して型情報を提供できます。 この機能では、JavaScript の拡張機能の作成と、スクリプトのコンテキストに追加することによって IntelliSense の結果をカスタマイズすることができます。 によって公開されているイベントにサブスクライブする JavaScript ファイルには、拡張機能で、`intellisense`言語サービスのオブジェクト。 場合、宣言型 XML の代替とライブラリの動作パターンが原因で、JavaScript 言語サービスが、必要なレベルの IntelliSense のサポートを提供する場合、JavaScript IntelliSense の機能拡張は、ライブラリに推奨されるソリューションドキュメントのコメントも必要です。 IntelliSense の結果をカスタマイズすることで、言語サービスの既定の機能を妨げる可能性のある動作パターンに関係なく、最上級の IntelliSense エクスペリエンスを作成できます。 詳細については、次を参照してください。[識別子の入力候補](../ide/statement-completion-for-identifiers.md)します。  
+ また、JavaScript IntelliSense の機能拡張を使用して型情報を提供できます。 この機能では、JavaScript の拡張機能の作成と、スクリプトのコンテキストに追加することによって IntelliSense の結果をカスタマイズすることができます。 によって公開されているイベントにサブスクライブする JavaScript ファイルには、拡張機能で、`intellisense`言語サービスのオブジェクト。 場合、宣言型 XML の代替とライブラリの動作パターンが原因で、JavaScript 言語サービスが、必要なレベルの IntelliSense のサポートを提供する場合、JavaScript IntelliSense の機能拡張は、ライブラリに推奨されるソリューションドキュメントのコメントも必要です。 IntelliSense の結果をカスタマイズすることで、言語サービスの既定の機能を妨げる可能性のある動作パターンに関係なく、最上級の IntelliSense エクスペリエンスを作成できます。 詳細については、「[Statement Completion for Identifiers (識別子の入力候補)](../ide/statement-completion-for-identifiers.md)」をご覧ください。  
   
 ## <a name="adding-an-extension-to-the-script-context"></a>スクリプト コンテキストへの拡張機能の追加  
  実行される IntelliSense の拡張機能、現在のスクリプト コンテキストに追加するが必要です。 拡張機能に自動的に追加できるスクリプトのコンテキスト、自動検出メカニズムによってまたはできる拡張機能のスクリプト コンテキストに手動で追加する参照グループまたは reference ディレクティブを使用しています。  
@@ -75,7 +75,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
  その他の例では、検索、 \\ \\ *Visual Studio インストール パス*\JavaScript\References フォルダー。 このフォルダーに showPlainComments.js ファイルは、標準の JavaScript コメント タグの既定の IntelliSense サポートを提供するその他のイベントを使用しての例を示します (//)。 Underscorefilter.js のような showPlainComments.js 既に作業の拡張機能として利用可能な変数、関数、およびオブジェクトをコード内のコメント用タグを使用する場合は、IntelliSense の結果として得られる情報を確認できます。 その他の例では、次を参照してください。[コード例](#CodeExamples)します。  
   
 > [!WARNING]
->  Visual Studio に含まれている拡張機能のファイルを変更する場合、JavaScript IntelliSense や、拡張機能でサポートされている機能を無効にする可能性があります。  
+> Visual Studio に含まれている拡張機能のファイルを変更する場合、JavaScript IntelliSense や、拡張機能でサポートされている機能を無効にする可能性があります。  
   
  使用して、次のイベントの種類のハンドラーを作成する、拡張機能コードで`addEventListener`:  
   
@@ -88,9 +88,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
   ステートメント入力候補、パラメーター情報、およびクイック ヒントなどの IntelliSense 機能を示す例については、次を参照してください。[を使用して IntelliSense](../ide/using-intellisense.md)します。  
   
 > [!NOTE]
->  JavaScript では、クイック ヒントは、入力候補一覧の右側に表示されるポップアップ ボックスを参照します。 クイック ヒントを手動で起動することはできません。  
+> JavaScript では、クイック ヒントは、入力候補一覧の右側に表示されるポップアップ ボックスを参照します。 クイック ヒントを手動で起動することはできません。  
   
-##  <a name="intellisenseObject"></a> IntelliSense オブジェクト  
+## <a name="intellisenseObject"></a> IntelliSense オブジェクト  
  次の表に、使用可能な関数、`intellisense`オブジェクト。 `intellisense`オブジェクトは、デザイン時にのみ使用します。  
   
 |関数|説明|  
@@ -108,118 +108,118 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="event-members"></a>イベント メンバー  
  次のセクションでは、次のイベントのイベント オブジェクトで公開されるメンバーを示しています。: `statementcompletion`、 `signaturehelp`、および`statementcompletionhint`します。  
   
-###  <a name="CompletionItem"></a> completionItem プロパティ  
+### <a name="CompletionItem"></a> completionItem プロパティ  
  クイック ヒント ポップアップ ボックスが要求される、入力候補アイテムと呼ばれる識別子を返します。 このプロパティは使用できます、`statementcompletionhint`イベント オブジェクトと、[項目のプロパティ](#Items)のプロパティ、`statementcompletion`イベント オブジェクト。  
   
  戻り値:`completionItem`オブジェクト  
   
  メンバーを次に、`completionItem`オブジェクト。  
   
--   `name`。 読み取り/書き込みで使用すると、`items`コレクション。 それ以外の場合、読み取り専用です。 入力候補アイテムを識別する文字列を返します。  
+- `name`。 読み取り/書き込みで使用すると、`items`コレクション。 それ以外の場合、読み取り専用です。 入力候補アイテムを識別する文字列を返します。  
   
--   `kind`。 読み取り/書き込みで使用すると、`items`コレクション。 それ以外の場合、読み取り専用です。 入力候補アイテムの型を表す文字列を返します。 使用可能な値は、メソッド、フィールド、プロパティ、パラメーター、変数とに予約されています。  
+- `kind`。 読み取り/書き込みで使用すると、`items`コレクション。 それ以外の場合、読み取り専用です。 入力候補アイテムの型を表す文字列を返します。 使用可能な値は、メソッド、フィールド、プロパティ、パラメーター、変数とに予約されています。  
   
--   `glyph`。 読み取り/書き込みで使用すると、`items`コレクション。 それ以外の場合、読み取り専用です。 入力候補一覧に表示されるアイコンを表す文字列を返します。 使用可能な値を`glyph`、次の形式を使用して: vs:*glyphType*ここで、 *glyphType*で言語に依存しないメンバーに対応して、<xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup>列挙体。 たとえば、`vs:GlyphGroupMethod`に対して 1 つの可能な値は、`glyph`します。 ときに`glyph`が設定されていない、`kind`プロパティの既定のアイコンを決定します。  
+- `glyph`。 読み取り/書き込みで使用すると、`items`コレクション。 それ以外の場合、読み取り専用です。 入力候補一覧に表示されるアイコンを表す文字列を返します。 使用可能な値を`glyph`、次の形式を使用して: vs:*glyphType*ここで、 *glyphType*で言語に依存しないメンバーに対応して、<xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup>列挙体。 たとえば、`vs:GlyphGroupMethod`に対して 1 つの可能な値は、`glyph`します。 ときに`glyph`が設定されていない、`kind`プロパティの既定のアイコンを決定します。  
   
--   `parentObject`。 読み取り専用。 親オブジェクトを返します。  
+- `parentObject`。 読み取り専用。 親オブジェクトを返します。  
   
--   `value`。 読み取り専用。 入力候補アイテムの値を表すオブジェクトを返します。  
+- `value`。 読み取り専用。 入力候補アイテムの値を表すオブジェクトを返します。  
   
--   `comments`。 読み取り専用。 フィールドまたは変数のより上位にあるコメントを含む文字列を返します。  
+- `comments`。 読み取り専用。 フィールドまたは変数のより上位にあるコメントを含む文字列を返します。  
   
--   `scope`。 読み取り専用。 入力候補アイテムのスコープを返します。 可能な値は、グローバル、ローカル、パラメーターおよびメンバーです。  
+- `scope`。 読み取り専用。 入力候補アイテムのスコープを返します。 可能な値は、グローバル、ローカル、パラメーターおよびメンバーです。  
   
-###  <a name="Items"></a> 項目のプロパティ  
+### <a name="Items"></a> 項目のプロパティ  
  取得またはステートメントの配列の入力候補の項目を設定します。 配列内の各要素は、 [completionItem プロパティ](#CompletionItem)オブジェクト。 `items`プロパティは使用できます、`statementcompletion`イベント オブジェクト。  
   
  戻り値: 配列  
   
-###  <a name="FunctionComments"></a> functionComments プロパティ  
+### <a name="FunctionComments"></a> functionComments プロパティ  
  関数は、コメントを返します。 このプロパティは使用できます、`signaturehelp`イベント オブジェクト。  
   
  戻り値:`comments`オブジェクト  
   
  メンバーを次に、`comments`オブジェクト。  
   
--   `above`。 関数の上にコメントを返します。  
+- `above`。 関数の上にコメントを返します。  
   
--   `inside`。 通常、関数内でコメント VSDoc 形式を返します。  
+- `inside`。 通常、関数内でコメント VSDoc 形式を返します。  
   
--   `paramComments`。 関数の各パラメーターにコメントを表す配列を返します。 配列のメンバーは次のとおりです。  
+- `paramComments`。 関数の各パラメーターにコメントを表す配列を返します。 配列のメンバーは次のとおりです。  
   
-    -   `name`。 パラメーター名を表す文字列を返します。  
+    - `name`。 パラメーター名を表す文字列を返します。  
   
-    -   `comment`。 パラメーターのコメントを含む文字列を返します。  
+    - `comment`。 パラメーターのコメントを含む文字列を返します。  
   
-###  <a name="FunctionHelp"></a> functionHelp プロパティ  
+### <a name="FunctionHelp"></a> functionHelp プロパティ  
  関数のヘルプを返します。 このプロパティは使用できます、`signaturehelp`イベント オブジェクト。  
   
  戻り値:`functionHelp`オブジェクト  
   
  メンバーを次に、`functionHelp`オブジェクト。  
   
--   `functionName`。 読み取り/書き込み。 関数名を含む文字列を返します。  
+- `functionName`。 読み取り/書き込み。 関数名を含む文字列を返します。  
   
--   `signatures`。 読み取り/書き込み。 取得または関数のシグネチャの配列を設定します。 配列内の各要素は、`signature`オブジェクト。 いくつか`signature`プロパティなど`locid`、共通に対応して[XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)属性。  
+- `signatures`。 読み取り/書き込み。 取得または関数のシグネチャの配列を設定します。 配列内の各要素は、`signature`オブジェクト。 いくつか`signature`プロパティなど`locid`、共通に対応して[XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)属性。  
   
      メンバー、`signature`オブジェクトが含まれます。  
   
-    -   `description`。 読み取り/書き込み。 機能を説明する文字列を返します。  
+    - `description`。 読み取り/書き込み。 機能を説明する文字列を返します。  
   
-    -   `locid`。 読み取り/書き込み。 関数に関するローカライズ情報を含む文字列識別子を返します。  
+    - `locid`。 読み取り/書き込み。 関数に関するローカライズ情報を含む文字列識別子を返します。  
   
-    -   `helpKeyword`。 読み取り/書き込み。 ヘルプ キーワードを含む文字列を返します。  
+    - `helpKeyword`。 読み取り/書き込み。 ヘルプ キーワードを含む文字列を返します。  
   
-    -   `externalFile`。 読み取り/書き込み。 メンバー ID を含むファイルを表す文字列を返します  
+    - `externalFile`。 読み取り/書き込み。 メンバー ID を含むファイルを表す文字列を返します  
   
-    -   `externalid`。 読み取り/書き込み。 関数のメンバー ID を表す文字列を返します。  
+    - `externalid`。 読み取り/書き込み。 関数のメンバー ID を表す文字列を返します。  
   
-    -   `params`。 読み取り/書き込み。 取得または関数のパラメーターの配列を設定します。 パラメーター配列内の各要素は、`parameter`オブジェクトの次の属性に対応するプロパティを持つ、 [ \<param >](../ide/param-javascript.md)要素。  
+    - `params`。 読み取り/書き込み。 取得または関数のパラメーターの配列を設定します。 パラメーター配列内の各要素は、`parameter`オブジェクトの次の属性に対応するプロパティを持つ、 [ \<param >](../ide/param-javascript.md)要素。  
   
-        -   `name`。 読み取り/書き込み。 パラメーター名を表す文字列を返します。  
+        - `name`。 読み取り/書き込み。 パラメーター名を表す文字列を返します。  
   
-        -   `type`。 読み取り/書き込み。 パラメーターの型を表す文字列を返します。  
+        - `type`。 読み取り/書き込み。 パラメーターの型を表す文字列を返します。  
   
-        -   `elementType`。 読み取り/書き込み。 型の場合`Array`配列内の要素の型を表す文字列を返します。  
+        - `elementType`。 読み取り/書き込み。 型の場合`Array`配列内の要素の型を表す文字列を返します。  
   
-        -   `description`。 読み取り/書き込み。 パラメーターを説明する文字列を返します。  
+        - `description`。 読み取り/書き込み。 パラメーターを説明する文字列を返します。  
   
-        -   `locid`。 読み取り/書き込み。 関数に関するローカライズ情報を含む文字列識別子を返します。  
+        - `locid`。 読み取り/書き込み。 関数に関するローカライズ情報を含む文字列識別子を返します。  
   
-        -   `optional`。 読み取り/書き込み。 パラメーターは省略可能かどうかを示す文字列を返します。 `true` パラメーターが省略可能です。`false`がないことを示します。  
+        - `optional`。 読み取り/書き込み。 パラメーターは省略可能かどうかを示す文字列を返します。 `true` パラメーターが省略可能です。`false`がないことを示します。  
   
-    -   `returnValue`。 読み取り/書き込み。 取得または次の属性に対応するプロパティを使用して、戻り値オブジェクトを設定、 [\<返します >](../ide/returns-javascript.md)要素。  
+    - `returnValue`。 読み取り/書き込み。 取得または次の属性に対応するプロパティを使用して、戻り値オブジェクトを設定、 [\<返します >](../ide/returns-javascript.md)要素。  
   
-        -   `type`。 読み取り/書き込み。 戻り値の型を表す文字列を返します。  
+        - `type`。 読み取り/書き込み。 戻り値の型を表す文字列を返します。  
   
-        -   `elementType`。 読み取り/書き込み。 型の場合`Array`配列内の要素の型を表す文字列を返します。  
+        - `elementType`。 読み取り/書き込み。 型の場合`Array`配列内の要素の型を表す文字列を返します。  
   
-        -   `description`。 読み取り/書き込み。 戻り値を記述する文字列を返します。  
+        - `description`。 読み取り/書き込み。 戻り値を記述する文字列を返します。  
   
-        -   `locid`。 読み取り/書き込み。 関数に関するローカライズ情報を含む文字列識別子を返します。  
+        - `locid`。 読み取り/書き込み。 関数に関するローカライズ情報を含む文字列識別子を返します。  
   
-        -   `helpKeyword`。 読み取り/書き込み。 ヘルプ キーワードを含む文字列を返します。  
+        - `helpKeyword`。 読み取り/書き込み。 ヘルプ キーワードを含む文字列を返します。  
   
-        -   `externalFile`。 読み取り/書き込み。 メンバー ID を含むファイルを表す文字列を返します  
+        - `externalFile`。 読み取り/書き込み。 メンバー ID を含むファイルを表す文字列を返します  
   
-        -   `externalid`。 読み取り/書き込み。 関数のメンバー ID を表す文字列を返します。  
+        - `externalid`。 読み取り/書き込み。 関数のメンバー ID を表す文字列を返します。  
   
-###  <a name="ParentObject"></a> parentObject プロパティ  
+### <a name="ParentObject"></a> parentObject プロパティ  
  メンバー関数の親オブジェクトを返します。 たとえば、 `document.getElementByID`、`parentObject`を返します、`document`オブジェクト。 このプロパティは使用できます、`signaturehelp`イベント オブジェクト。  
   
  戻り値: オブジェクト  
   
-###  <a name="Target"></a> target プロパティ  
+### <a name="Target"></a> target プロパティ  
  ピリオド (.) は、トリガーの文字の左側に項目を表すオブジェクトを返します。 関数では、`target`パラメーター情報を要求する対象の関数を返します。 このプロパティは使用できます、`statementcompletion`と`signaturehelp`イベント オブジェクト。  
   
  戻り値: オブジェクト  
   
-###  <a name="TargetName"></a> targetName プロパティ  
+### <a name="TargetName"></a> targetName プロパティ  
  ターゲットを表す文字列を返します。 たとえば、"this."、 `targetName` "this"を返します。 "A.B"("B"の後にカーソルがある) 場合の`targetName`"B"を返します。 このプロパティは使用できます、`statementcompletion`イベント オブジェクト。  
   
  戻り値: 文字列  
   
-###  <a name="SymbolHelp"></a> symbolHelp プロパティ  
+### <a name="SymbolHelp"></a> symbolHelp プロパティ  
  クイック ヒント ポップアップ ボックスが要求される入力候補の項目を返します。 このプロパティは使用できます、`statementcompletionhint`イベント オブジェクト。  
   
  戻り値:`symbolHelp`オブジェクト。  
@@ -228,29 +228,29 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  メンバーを次に、`symbolHelp`オブジェクト。  
   
--   `name`。 読み取り/書き込み。 識別子名を含む文字列を返します。  
+- `name`。 読み取り/書き込み。 識別子名を含む文字列を返します。  
   
--   `symbolType`。 読み取り/書き込み。 記号の型を表す文字列を返します。 使用可能な値には、不明なブール値、数値、文字列、オブジェクト、関数、配列、日付、および正規表現が含まれます。  
+- `symbolType`。 読み取り/書き込み。 記号の型を表す文字列を返します。 使用可能な値には、不明なブール値、数値、文字列、オブジェクト、関数、配列、日付、および正規表現が含まれます。  
   
--   `symbolDisplayType`。 読み取り/書き込み。 表示する型名を含む文字列を返します。 場合`symbolDisplayType`設定されていない`symbolType`使用されます。  
+- `symbolDisplayType`。 読み取り/書き込み。 表示する型名を含む文字列を返します。 場合`symbolDisplayType`設定されていない`symbolType`使用されます。  
   
--   `elementType`。 読み取り/書き込み。 場合、`symbolType`は`Array`配列内の要素の型を表す文字列を返します。  
+- `elementType`。 読み取り/書き込み。 場合、`symbolType`は`Array`配列内の要素の型を表す文字列を返します。  
   
--   `scope`。 読み取り/書き込み。 シンボルのスコープを表す文字列を返します。 使用可能な値には、グローバル、ローカル、パラメーター、およびメンバーが含まれます。  
+- `scope`。 読み取り/書き込み。 シンボルのスコープを表す文字列を返します。 使用可能な値には、グローバル、ローカル、パラメーター、およびメンバーが含まれます。  
   
--   `description`。 読み取り/書き込み。 シンボルの説明を含む文字列を返します。  
+- `description`。 読み取り/書き込み。 シンボルの説明を含む文字列を返します。  
   
--   `locid`。 読み取り/書き込み。 シンボルに関するローカライズ情報を含む文字列識別子を返します。  
+- `locid`。 読み取り/書き込み。 シンボルに関するローカライズ情報を含む文字列識別子を返します。  
   
--   `helpKeyword`。 読み取り/書き込み。 ヘルプ キーワードを含む文字列を返します。  
+- `helpKeyword`。 読み取り/書き込み。 ヘルプ キーワードを含む文字列を返します。  
   
--   `externalFile`。 読み取り/書き込み。 メンバー ID を含むファイルを表す文字列を返します  
+- `externalFile`。 読み取り/書き込み。 メンバー ID を含むファイルを表す文字列を返します  
   
--   `externalid`。 読み取り/書き込み。 シンボルのメンバー ID を表す文字列を返します。  
+- `externalid`。 読み取り/書き込み。 シンボルのメンバー ID を表す文字列を返します。  
   
--   `functionHelp`。 読み取り/書き込み。 返します、 [functionHelp プロパティ](#FunctionHelp)、情報が含まれているときに、`symbolType`関数は、します。  
+- `functionHelp`。 読み取り/書き込み。 返します、 [functionHelp プロパティ](#FunctionHelp)、情報が含まれているときに、`symbolType`関数は、します。  
   
-###  <a name="Scope"></a> スコープ プロパティ  
+### <a name="Scope"></a> スコープ プロパティ  
  イベントの完了スコープを返します。 完了時に使用できる値はグローバルとメンバーをスコープします。 このプロパティは使用できます、`statementcompletion`イベント オブジェクト。  
   
  戻り値: 文字列  
@@ -258,27 +258,27 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="debugging-intellisense-extensions"></a>IntelliSense の拡張機能のデバッグ  
  拡張機能をデバッグすることはできませんが、使用することができます、 [intellisense オブジェクト](#intellisenseObject)Visual Studio の出力ウィンドウに情報を送信します。 この関数を使用する方法を示しますたとえば、次を参照してください。[出力ウィンドウにメッセージを送信する](#Logging)このトピックで後述します。 `logMessage`の拡張機能でするのには、少なくとも 1 つのイベント ハンドラーを登録する必要があります。  
   
-##  <a name="CodeExamples"></a> コード例  
+## <a name="CodeExamples"></a> コード例  
  このセクションには、IntelliSense の機能拡張 Api を使用する方法を示すコード例が含まれています。 これらの Api を使用する他の方法もあります。 その他の例では、次のファイルを参照してください、 \\ \\ *Visual Studio インストール パス*\JavaScript\References フォルダー。 これらは、JavaScript 言語サービスで使用される例を作業しています。  
   
--   underscoreFilter.js します。 このコードでは、IntelliSense からのプライベート メンバーを非表示にします。 イベント ハンドラーが含まれています、`statementcompletion`イベント。  
+- underscoreFilter.js します。 このコードでは、IntelliSense からのプライベート メンバーを非表示にします。 イベント ハンドラーが含まれています、`statementcompletion`イベント。  
   
--   showPlainComments.js します。 このコードは、標準のコメントの IntelliSense サポートを提供します。 イベント ハンドラーが含まれています、`signaturehelp`と`statementcompletionhint`イベント。  
+- showPlainComments.js します。 このコードは、標準のコメントの IntelliSense サポートを提供します。 イベント ハンドラーが含まれています、`signaturehelp`と`statementcompletionhint`イベント。  
   
-###  <a name="Annotations"></a> IntelliSense の注釈を追加します。  
+### <a name="Annotations"></a> IntelliSense の注釈を追加します。  
  次の手順では、ライブラリを直接変更することがなく、サード パーティ製ライブラリの IntelliSense ドキュメントのサポートを提供する方法を示します。 これを行うには、使用することができます`intellisense.annotate`の拡張機能で。  
   
  この例を実行するには、プロジェクトに次の JavaScript ファイルが必要です。  
   
--   demoLib.js はサード パーティ製ライブラリを表すプロジェクト ファイルです。  
+- demoLib.js はサード パーティ製ライブラリを表すプロジェクト ファイルです。  
   
--   demoLib.intellisense.js は IntelliSense の拡張機能です。 このファイルは、プロジェクトに含める必要はありませんが、exampleLib.js と同じフォルダーに含める必要があります。  
+- demoLib.intellisense.js は IntelliSense の拡張機能です。 このファイルは、プロジェクトに含める必要はありませんが、exampleLib.js と同じフォルダーに含める必要があります。  
   
--   appCode.js (アプリケーション コードを表すプロジェクト ファイル)。  
+- appCode.js (アプリケーション コードを表すプロジェクト ファイル)。  
   
 ##### <a name="to-add-an-intellisense-annotation"></a>IntelliSense 注釈を追加するには  
   
-1.  DemoLib.js するには、次のコードを追加します。  
+1. DemoLib.js するには、次のコードを追加します。  
   
     ```javascript  
     function someFunc(a) { };  
@@ -286,7 +286,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
     ```  
   
-2.  DemoLib.intellisense.js するには、次のコードを追加します。  
+2. DemoLib.intellisense.js するには、次のコードを追加します。  
   
     ```javascript  
     intellisense.annotate(someFunc, function (a) {  
@@ -302,35 +302,35 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  次の reference ディレクティブを appCode.js の最初の行として追加します。 ここで使用するパスは、JavaScript ファイルが同じフォルダーにあることを示しています。  
+3. 次の reference ディレクティブを appCode.js の最初の行として追加します。 ここで使用するパスは、JavaScript ファイルが同じフォルダーにあることを示しています。  
   
     ```javascript  
     /// <reference path="demoLib.js" />  
   
     ```  
   
-4.  appCode.js で、次のコードを入力します。 パラメーターの IntelliSense のヒントとして表示拡張機能で XML ドキュメントのコメントが表示されます。  
+4. appCode.js で、次のコードを入力します。 パラメーターの IntelliSense のヒントとして表示拡張機能で XML ドキュメントのコメントが表示されます。  
   
      ![Intellisense.annotate の使用例](../ide/media/js-intellisense-annotate-paraminfo.png "js_intellisense_annotate_paraminfo")  
   
-5.  appCode.js で、次のコードを入力します。 入力するときに、IntelliSense によるクイック ヒントとして表示拡張機能では、標準のコメントを確認します。  
+5. appCode.js で、次のコードを入力します。 入力するときに、IntelliSense によるクイック ヒントとして表示拡張機能では、標準のコメントを確認します。  
   
      ![Intellisense.annotate の使用例](../ide/media/js-intellisense-annotations.png "js_intellisense_annotations")  
   
-###  <a name="Logging"></a> 出力ウィンドウにメッセージを送信します。  
+### <a name="Logging"></a> 出力ウィンドウにメッセージを送信します。  
  次の手順では、出力ウィンドウにメッセージを送信する方法を示します。 IntelliSense の拡張機能をデバッグする際にメッセージを送信することができます。  
   
  この例を実行するには、プロジェクトに次の JavaScript ファイルが必要です。  
   
--   exampleLib.js はサード パーティ製ライブラリを表すプロジェクト ファイルです。  
+- exampleLib.js はサード パーティ製ライブラリを表すプロジェクト ファイルです。  
   
--   exampleLib.intellisense.js は IntelliSense の拡張機能です。 このファイルは、プロジェクトに含める必要はありませんが、exampleLib.js と同じフォルダーに含める必要があります。  
+- exampleLib.intellisense.js は IntelliSense の拡張機能です。 このファイルは、プロジェクトに含める必要はありませんが、exampleLib.js と同じフォルダーに含める必要があります。  
   
--   appCode.js (アプリケーション コードを表すプロジェクト ファイル)。  
+- appCode.js (アプリケーション コードを表すプロジェクト ファイル)。  
   
 ##### <a name="to-send-a-message-to-the-output-window"></a>出力ウィンドウにメッセージを送信するには  
   
-1.  ExampleLib.js するには、次のコードを追加します。  
+1. ExampleLib.js するには、次のコードを追加します。  
   
     ```javascript  
     var someVar = {  
@@ -339,7 +339,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
     };  
     ```  
   
-2.  ExampleLib.intellisense.js するには、次のコードを追加します。  
+2. ExampleLib.intellisense.js するには、次のコードを追加します。  
   
     ```javascript  
     intellisense.addEventListener('statementcompletion', function (e) {  
@@ -357,16 +357,16 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  次の reference ディレクティブを appCode.js の最初の行として追加します。 ここで使用するパスは、JavaScript ファイルが同じフォルダーにあることを示しています。  
+3. 次の reference ディレクティブを appCode.js の最初の行として追加します。 ここで使用するパスは、JavaScript ファイルが同じフォルダーにあることを示しています。  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-4.  [出力] ウィンドウで次のように選択します。 **JavaScript Language Service**で、**から出力の表示**一覧。 (出力ウィンドウを表示する選択**出力**表示 メニューから)。  
+4. [出力] ウィンドウで次のように選択します。 **JavaScript Language Service**で、**から出力の表示**一覧。 (出力ウィンドウを表示する選択**出力**表示 メニューから)。  
   
-5.  appCode.js で、次のコードを入力します。 入力するときに、出力ウィンドウには、言語サービスからのメッセージが表示されます。 出力ウィンドウの最初のメッセージは、現在のスコープの入力候補が要求されていることを示します。  
+5. appCode.js で、次のコードを入力します。 入力するときに、出力ウィンドウには、言語サービスからのメッセージが表示されます。 出力ウィンドウの最初のメッセージは、現在のスコープの入力候補が要求されていることを示します。  
   
     ```javascript  
     some  
@@ -383,9 +383,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
     …  
     ```  
   
-6.  選択、**すべてクリア**出力ウィンドウにボタンをクリックします。  
+6. 選択、**すべてクリア**出力ウィンドウにボタンをクリックします。  
   
-7.  次のコードを入力します。 出力ウィンドウの最初のメッセージは、メンバーの一覧が要求されていることを示します。  
+7. 次のコードを入力します。 出力ウィンドウの最初のメッセージは、メンバーの一覧が要求されていることを示します。  
   
     ```javascript  
     someVar.  
@@ -402,22 +402,22 @@ intellisense.addEventListener('statementcompletion', function (event) {
     …  
     ```  
   
-###  <a name="Icons"></a> IntelliSense アイコンを変更します。  
+### <a name="Icons"></a> IntelliSense アイコンを変更します。  
  次の手順では、既定では、IntelliSense によって表示されるアイコンを変更する方法を示します。 名前空間、クラス、インターフェイス、および列挙体などのライブラリに固有な概念についての IntelliSense 情報を提供する場合に便利ですがあります。  
   
  使用可能なアイコンの値を参照してください。<xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup>します。  
   
  この例を実行するには、プロジェクトに次の JavaScript ファイルが必要です。  
   
--   exampleLib.js で、プロジェクトは、その represens サード パーティのライブラリをファイルします。  
+- exampleLib.js で、プロジェクトは、その represens サード パーティのライブラリをファイルします。  
   
--   exampleLib.intellisense.js は IntelliSense の拡張機能です。 このファイルは、プロジェクトに含める必要はありませんが、exampleLib.js と同じフォルダーに含める必要があります。  
+- exampleLib.intellisense.js は IntelliSense の拡張機能です。 このファイルは、プロジェクトに含める必要はありませんが、exampleLib.js と同じフォルダーに含める必要があります。  
   
--   appCode.js (アプリケーション コードを表すプロジェクト ファイル)。  
+- appCode.js (アプリケーション コードを表すプロジェクト ファイル)。  
   
 ##### <a name="to-change-the-icons"></a>アイコンを変更するには  
   
-1.  ExampleLib.js するには、次のコードを追加します。  
+1. ExampleLib.js するには、次のコードを追加します。  
   
     ```javascript  
     function Namespace(name) {  
@@ -437,7 +437,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
     SomeNamespace.Enum1 = new Enum({ VALUE1: 0, VALUE2: 1 });  
     ```  
   
-2.  ExampleLib.intellisense.js するには、次のコードを追加します。  
+2. ExampleLib.intellisense.js するには、次のコードを追加します。  
   
     ```javascript  
     intellisense.addEventListener('statementcompletion', function (e) {  
@@ -479,35 +479,35 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  次の reference ディレクティブを appCode.js の最初の行として追加します。 ここで使用するパスは、JavaScript ファイルが同じフォルダーにあることを示しています。  
+3. 次の reference ディレクティブを appCode.js の最初の行として追加します。 ここで使用するパスは、JavaScript ファイルが同じフォルダーにあることを示しています。  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-4.  appCode.js で、次のコードを入力します。 入力するときに、名前空間のアイコンに変更されたことが表示されます"{}"、c# で使用されているためです。  
+4. appCode.js で、次のコードを入力します。 入力するときに、名前空間のアイコンに変更されたことが表示されます"{}"、c# で使用されているためです。  
   
      ![グリフのプロパティの使用例](../ide/media/js-intellisense-glyph-namespace.png "js_intellisense_glyph_namespace")  
   
-5.  appCode.js で、次のコードを入力します。 入力するときに、Enum1 メンバー用の新しい列挙アイコンと SomeClass1 メンバーのクラスの新しいアイコンが表示されます。  
+5. appCode.js で、次のコードを入力します。 入力するときに、Enum1 メンバー用の新しい列挙アイコンと SomeClass1 メンバーのクラスの新しいアイコンが表示されます。  
   
      ![グリフのプロパティの使用例](../ide/media/js-intellisense-glyph-class-enum.png "js_intellisense_glyph_class_enum")  
   
-###  <a name="Overriding"></a> IntelliSense の結果に対する実行時の影響を回避します。  
+### <a name="Overriding"></a> IntelliSense の結果に対する実行時の影響を回避します。  
  JavaScript 言語サービスでは、動的に IntelliSense の情報を提供するコードを実行します。 その結果、実行時の動作が場合によっては干渉を目的の結果。 次の手順では、不適切な IntelliSense、実行時の動作になる場合、IntelliSense の結果をオーバーライドする方法を示します。  
   
  この例を実行するには、プロジェクトに次の JavaScript ファイルが必要です。  
   
--   exampleLib.js はサード パーティ製ライブラリを表すプロジェクト ファイルです。  
+- exampleLib.js はサード パーティ製ライブラリを表すプロジェクト ファイルです。  
   
--   exampleLib.intellisense.js は IntelliSense の拡張機能です。 このファイルは、プロジェクトに含める必要はありませんが、exampleLib.js と同じフォルダーに含める必要があります。  
+- exampleLib.intellisense.js は IntelliSense の拡張機能です。 このファイルは、プロジェクトに含める必要はありませんが、exampleLib.js と同じフォルダーに含める必要があります。  
   
--   appCode.js (アプリケーション コードを表すプロジェクト ファイル)。  
+- appCode.js (アプリケーション コードを表すプロジェクト ファイル)。  
   
 ##### <a name="to-avoid-run-time-effects-on-intellisense-results"></a>IntelliSense の結果に対する実行時の影響を回避するには  
   
-1.  ExampleLib.js するには、次のコードを追加します。  
+1. ExampleLib.js するには、次のコードを追加します。  
   
     ```javascript  
     function after(count, func) {  
@@ -521,18 +521,18 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
      上記のコードでラップされた関数がの値に基づいて最初の呼び出しを無視`count`結果は返されません。  
   
-2.  次の reference ディレクティブを appCode.js の最初の行として追加します。 ここで使用するパスは、JavaScript ファイルが同じフォルダーにあることを示しています。  
+2. 次の reference ディレクティブを appCode.js の最初の行として追加します。 ここで使用するパスは、JavaScript ファイルが同じフォルダーにあることを示しています。  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-3.  appCode.js で、次のコードを入力します。 つまり、ラップされた関数が呼び出されることはありませんので、IntelliSense ではなく、識別子の一覧が表示されます、`throttled`関数結果が返されない。  
+3. appCode.js で、次のコードを入力します。 つまり、ラップされた関数が呼び出されることはありませんので、IntelliSense ではなく、識別子の一覧が表示されます、`throttled`関数結果が返されない。  
   
      ![Intellisense の結果をオーバーライドする例](../ide/media/js-intellisense-override.png "js_intellisense_override")  
   
-4.  ExampleLib.intellisense.js するには、次のコードを追加します。 期待どおりに、ラップされた関数の IntelliSense が表示されるように、デザイン時動作を変更これは。  
+4. ExampleLib.intellisense.js するには、次のコードを追加します。 期待どおりに、ラップされた関数の IntelliSense が表示されるように、デザイン時動作を変更これは。  
   
     ```javascript  
     window.after = function (count, func) {  
@@ -541,7 +541,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
     };  
     ```  
   
-5.  AppCode.js では、以前に入力したのと同じコードを入力して結果をテストします。 今回は、IntelliSense は、必要な情報を提供します。  
+5. AppCode.js では、以前に入力したのと同じコードを入力して結果をテストします。 今回は、IntelliSense は、必要な情報を提供します。  
   
      ![IntelliSense の結果をオーバーライドする例](../ide/media/js-intellisense-override-fixed.png "js_intellisense_override_fixed")  
   

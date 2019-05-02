@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f6ca07ebf8489dd62d6cfbe232f2522ac0f448a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7c088078ce594ab1333eb4ec2316e120cc153ced
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440382"
 ---
 # <a name="actions-pane-overview"></a>操作ウィンドウの概要
   操作ウィンドウは、カスタマイズ可能な**ドキュメント アクション**特定の Microsoft Office Word ドキュメントまたは Microsoft Office Excel ブックに関連付けられている作業ウィンドウ。 [操作] ウィンドウがなどの他の組み込み作業ウィンドウと Office 作業ウィンドウ内でホストされる、 **XML ソース**Excel での作業ウィンドウ、または**スタイルと書式**Word 作業ウィンドウ。 操作ウィンドウのユーザー インターフェイスは、Windows フォーム コントロールまたは WPF コントロールを使用してデザインできます。
@@ -30,9 +30,9 @@ ms.locfileid: "56608813"
  操作ウィンドウは、Word または Excel のドキュメント レベルのカスタマイズ内でのみ作成できます。 VSTO アドイン内に操作ウィンドウを作成することはできません。 詳細については、「[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
 
 > [!NOTE]
->  カスタム作業ウィンドウは、操作ウィンドウとは異なります。 カスタム作業ウィンドウは、特定のドキュメントではなく、アプリケーションに関連付けられます。 カスタム作業ウィンドウは、一部の Microsoft Office アプリケーション向けの VSTO アドインで作成できます。 詳細については、[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)を参照してください。
+> カスタム作業ウィンドウは、操作ウィンドウとは異なります。 カスタム作業ウィンドウは、特定のドキュメントではなく、アプリケーションに関連付けられます。 カスタム作業ウィンドウは、一部の Microsoft Office アプリケーション向けの VSTO アドインで作成できます。 詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
 
- ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:Excel の操作ウィンドウ内での WPF コントロールを使用しますか](http://go.microsoft.com/fwlink/?LinkId=132763).
+ ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。Excel の操作ウィンドウ内での WPF コントロールを使用しますか](http://go.microsoft.com/fwlink/?LinkId=132763)。
 
 ## <a name="display-the-actions-pane"></a>操作ウィンドウを表示します。
  操作ウィンドウは、<xref:Microsoft.Office.Tools.ActionsPane> クラスによって表されます。 ドキュメント レベルのプロジェクトを作成するとき、`ThisWorkbook` クラス (Excel の場合) または `ThisDocument` クラス (Word の場合) の `ActionsPane` フィールドをプロジェクトで使用することで、このクラスのインスタンスをコードで使用できます。 操作ウィンドウを表示するには、`ActionsPane` フィールドの <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> プロパティに Windows フォーム コントロールを追加します。 `actions` という名前のコントロールを操作ウィンドウに追加するコード例を次に示します。
@@ -50,7 +50,7 @@ ms.locfileid: "56608813"
 2. デザイナーを使用するか、またはコードを記述して、Windows フォーム コントロールを <xref:System.Windows.Forms.UserControl> に追加します。
 
    > [!NOTE]
-   >  また、WPF の <xref:System.Windows.Controls.UserControl> を Windows フォーム <xref:System.Windows.Forms.UserControl> に追加することにより、WPF コントロールを操作ウィンドウに追加することもできます。 詳細については、[Office ソリューションでコントロールを使用して WPF](../vsto/using-wpf-controls-in-office-solutions.md)を参照してください。
+   > また、WPF の <xref:System.Windows.Controls.UserControl> を Windows フォーム <xref:System.Windows.Forms.UserControl> に追加することにより、WPF コントロールを操作ウィンドウに追加することもできます。 詳細については、次を参照してください。 [Office ソリューションでコントロールを使用して WPF](../vsto/using-wpf-controls-in-office-solutions.md)します。
 
 3. カスタム ユーザー コントロールのインスタンスを、プロジェクトの `ThisWorkbook` クラス (Excel の場合) または `ThisDocument` クラス (Word の場合) の `ActionsPane` フィールドに含まれるコントロールに追加します。
 
@@ -61,17 +61,17 @@ ms.locfileid: "56608813"
 
  ソリューションの作業ウィンドウを非表示にするには、いくつかの方法があります。
 
--   Word、設定、<xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A>のプロパティ、<xref:Microsoft.Office.Interop.Word.TaskPane>ドキュメント アクション タスク ペインを表すオブジェクトを**false**します。 次のコード例は、プロジェクトの `ThisDocument` クラスから実行することを前提としています。
+- Word、設定、<xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A>のプロパティ、<xref:Microsoft.Office.Interop.Word.TaskPane>ドキュメント アクション タスク ペインを表すオブジェクトを**false**します。 次のコード例は、プロジェクトの `ThisDocument` クラスから実行することを前提としています。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
--   Excel、設定、<xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A>のプロパティ、<xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A>オブジェクトを**false**します。 次のコード例は、プロジェクトの `ThisWorkbook` クラスから実行することを前提としています。
+- Excel、設定、<xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A>のプロパティ、<xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A>オブジェクトを**false**します。 次のコード例は、プロジェクトの `ThisWorkbook` クラスから実行することを前提としています。
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
--   Word または Excel では、別の方法として設定できる、<xref:Microsoft.Office.Core.CommandBar.Visible%2A>に作業ウィンドウを表すコマンド バーの**false**します。 次のコード例は、プロジェクトの `ThisDocument` クラスまたは `ThisWorkbook` から実行することを前提としています。
+- Word または Excel では、別の方法として設定できる、<xref:Microsoft.Office.Core.CommandBar.Visible%2A>に作業ウィンドウを表すコマンド バーの**false**します。 次のコード例は、プロジェクトの `ThisDocument` クラスまたは `ThisWorkbook` から実行することを前提としています。
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -86,9 +86,9 @@ ms.locfileid: "56608813"
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Word または Excel の UI を使用して操作ウィンドウを表示するには
 
-1.  リボンのクリックして、**ビュー**タブ。
+1. リボンのクリックして、**ビュー**タブ。
 
-2.  **表示/非表示**グループで、、**ドキュメント アクション**トグル ボタンをクリックします。
+2. **表示/非表示**グループで、、**ドキュメント アクション**トグル ボタンをクリックします。
 
 ## <a name="program-actions-pane-events"></a>プログラムの操作ウィンドウのイベント
  操作ウィンドウに複数のユーザー コントロールを追加し、ドキュメント上のイベントに応答するコードを作成して、ユーザー コントロールを表示したり非表示にしたりすることができます。 XML スキーマ要素をドキュメントにマップした場合は、XML 要素の 1 つにカーソルが置かれた時点で、操作ウィンドウに特定のユーザー コントロールを表示するようにできます。 詳細については、「[方法 :Visual Studio 内で Word 文書にスキーマを割り当てる](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)と[方法。Visual Studio 内でワークシートにスキーマを割り当てる](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)します。
@@ -96,7 +96,7 @@ ms.locfileid: "56608813"
  また、ホスト コントロール、アプリケーション、またはドキュメント イベントなど、任意のオブジェクトのイベントに応答するコードを作成することもできます。 詳細については、「[チュートリアル:NamedRange コントロールのイベントに対してプログラム](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)します。
 
 ## <a name="bind-data-to-controls-on-the-actions-pane"></a>操作ウィンドウ上のコントロールにデータをバインドします。
- 操作ウィンドウのコントロールは、Windows フォームのコントロールと同じデータ バインディング機能を備えています。 データセット、型指定されたデータセット、XML などのデータ ソースに、コントロールをバインドできます。 詳細については、[データ連結と Windows フォーム](/dotnet/framework/winforms/data-binding-and-windows-forms)を参照してください。
+ 操作ウィンドウのコントロールは、Windows フォームのコントロールと同じデータ バインディング機能を備えています。 データセット、型指定されたデータセット、XML などのデータ ソースに、コントロールをバインドできます。 詳細については、次を参照してください。[データ連結と Windows フォーム](/dotnet/framework/winforms/data-binding-and-windows-forms)します。
 
  操作ウィンドウのコントロールとドキュメントのコントロールは、同じデータセットにバインドできます。 たとえば、操作ウィンドウのコントロールとワークシートのコントロール間でマスター/詳細関係を作成できます。 詳細については、「[チュートリアル:Excel の操作ウィンドウ上のコントロールにデータをバインド](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)します。
 
@@ -141,7 +141,7 @@ ms.locfileid: "56608813"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
->  エンド ユーザーは、作業ウィンドウの位置を手動でいつでも変更できます。 プログラムで指定した位置に作業ウィンドウを常にドッキングしておくことはできません。 ただし、向きの変更を確認し、操作ウィンドウ上のコントロールが正しい方向で積み重ねられるようにすることは可能です。 詳細については、「[方法 :アクション ペイン上のコントロールのレイアウトを管理](../vsto/how-to-manage-control-layout-on-actions-panes.md)します。
+> エンド ユーザーは、作業ウィンドウの位置を手動でいつでも変更できます。 プログラムで指定した位置に作業ウィンドウを常にドッキングしておくことはできません。 ただし、向きの変更を確認し、操作ウィンドウ上のコントロールが正しい方向で積み重ねられるようにすることは可能です。 詳細については、「[方法 :アクション ペイン上のコントロールのレイアウトを管理](../vsto/how-to-manage-control-layout-on-actions-panes.md)します。
 
  設定、<xref:Microsoft.Office.Tools.ActionsPane.Top%2A>と<xref:Microsoft.Office.Tools.ActionsPane.Left%2A>のプロパティ、<xref:Microsoft.Office.Tools.ActionsPane>の位置を変更しないため、<xref:Microsoft.Office.Tools.ActionsPane>オブジェクトが作業ウィンドウに埋め込まれています。
 

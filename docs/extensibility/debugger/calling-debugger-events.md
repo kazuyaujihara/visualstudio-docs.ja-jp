@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27792aa1a8ca9edf1a85f4d607bbef926fb69027
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b4a727b078d55227b557621b673ea39b36d790f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890919"
 ---
 # <a name="call-debugger-events"></a>デバッガー イベントを呼び出す
 デバッグ セッションでのイベントは、特定の順序で発生します。
@@ -23,21 +23,21 @@ ms.locfileid: "56719026"
 ## <a name="discussion"></a>説明
  デバッグ エンジン (DE) とセッション デバッグ マネージャー (SDM) 間の呼び出しのパターンを理解するには、次は、一般的なデバッグ セッションで発生するイベントの呼び出しの順序を表します。
 
-1.  [アタッチとデタッチをプログラムする](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
+1. [アタッチとデタッチをプログラムする](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
 
-2.  [デバッガーを起動します。](../../extensibility/debugger/launching-the-debugger.md)
+2. [デバッガーを起動します。](../../extensibility/debugger/launching-the-debugger.md)
 
-3.  [プログラムの終了](../../extensibility/debugger/terminating-a-program.md)
+3. [プログラムの終了](../../extensibility/debugger/terminating-a-program.md)
 
-4.  [ブレークポイントの作成](../../extensibility/debugger/creating-a-breakpoint.md)
+4. [ブレークポイントの作成](../../extensibility/debugger/creating-a-breakpoint.md)
 
-5.  [ときに、ブレークポイントがバインドまたはバインド解除になります。](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)
+5. [ときに、ブレークポイントがバインドまたはバインド解除になります。](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)
 
-6.  [ブレークポイント エラー](../../extensibility/debugger/breakpoint-errors.md)
+6. [ブレークポイント エラー](../../extensibility/debugger/breakpoint-errors.md)
 
-7.  [ブレークポイントのヒット](../../extensibility/debugger/hitting-a-breakpoint.md)
+7. [ブレークポイントのヒット](../../extensibility/debugger/hitting-a-breakpoint.md)
 
-8.  [ブレークポイントの削除](../../extensibility/debugger/deleting-a-breakpoint.md)
+8. [ブレークポイントの削除](../../extensibility/debugger/deleting-a-breakpoint.md)
 
 9. [中断モード](../../extensibility/debugger/entering-break-mode.md)
 

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983169"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Visual Studio for Mac の拡張
 
@@ -28,7 +28,7 @@ Visual Studio for Mac から拡張機能パッケージを構築するには、V
 このモジュール式設計の利点は、Visual Studio for Mac が拡張可能であり、カスタム拡張機能パッケージを使用して構築できる拡張ポイントが多数あります。 現在の拡張機能パッケージの例として、C# および F# のサポート、デバッガー ツール、プロジェクト テンプレートなどがあります。
 
 > [!NOTE]
-> **注**: Add-in Maker 1.2 より前のバージョンで作成した Add-in Maker プロジェクトがある場合、[こちらの手順](https://mhut.ch/addinmaker/1.2)に従ってプロジェクトを移行する必要があります。
+> **注**:Add-in Maker 1.2 より前のバージョンで作成した Add-in Maker プロジェクトがある場合、[こちらの手順](https://mhut.ch/addinmaker/1.2)に従ってプロジェクトを移行する必要があります。
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -81,10 +81,10 @@ Visual Studio for Mac から拡張機能パッケージを構築するには、V
 
 拡張機能ノードには、接続先の拡張ポイントを指定するパス属性が含まれています。この場合は `/MonoDevelop/Ide/Commands/Edit` です。 また、コマンドの親ノードとして動作します。 コマンド ノードには、次の属性が含まれています。
 
-*   **id** - このコマンドの識別子を示します。 コマンド識別子は、列挙型のメンバーとして宣言する必要があります。この識別子は、Commands を CommandItems に接続するために使用されます。
-*   **_label** - メニューに表示されるテキスト。
-*   **_description** - ツールバー ボタンのツールヒントとして表示されるテキスト。
-*   **defaultHandler** - コマンドを利用する `CommandHandler` クラスを指定します
+* **id** - このコマンドの識別子を示します。 コマンド識別子は、列挙型のメンバーとして宣言する必要があります。この識別子は、Commands を CommandItems に接続するために使用されます。
+* **_label** - メニューに表示されるテキスト。
+* **_description** - ツールバー ボタンのツールヒントとして表示されるテキスト。
+* **defaultHandler** - コマンドを利用する `CommandHandler` クラスを指定します
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -137,27 +137,27 @@ public enum DateInserterCommands
 
 開発に使用できる領域の範囲については、「[Extension Tree Reference](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference)」(拡張機能ツリー リファレンス) と「[API Overview](http://monodevelop.com/Developers/Articles/API_Overview)」(API の概要) を参照してください。 高度な拡張機能パッケージを構築する場合は、[開発者向け](http://monodevelop.com/Developers/Articles)の記事も参照してください。 カスタマイズ可能な領域の一部を次に示します。
 
-*   パッド
-*   キー バインド スキーム
-*   ポリシー
-*   コード フォーマッタ
-*   プロジェクト ファイルの形式
-*   ユーザー設定パネル
-*   オプション パネル
-*   デバッガー プロトコル
-*   デバッガー ビジュアライザー
-*   ワークスペースのレイアウト
-*   Solution Pad のツリー ノード
-*   ソース エディターの余白
-*   単体テスト エンジン
-*   コード ジェネレーター
-*   コード スニペット
-*   ターゲット フレームワーク
-*   ターゲット ランタイム
-*   VCS バックエンド
-*   リファクタリング
-*   実行ハンドラー
-*   構文の強調表示
+* パッド
+* キー バインド スキーム
+* ポリシー
+* コード フォーマッタ
+* プロジェクト ファイルの形式
+* ユーザー設定パネル
+* オプション パネル
+* デバッガー プロトコル
+* デバッガー ビジュアライザー
+* ワークスペースのレイアウト
+* Solution Pad のツリー ノード
+* ソース エディターの余白
+* 単体テスト エンジン
+* コード ジェネレーター
+* コード スニペット
+* ターゲット フレームワーク
+* ターゲット ランタイム
+* VCS バックエンド
+* リファクタリング
+* 実行ハンドラー
+* 構文の強調表示
 
 ## <a name="additional-information"></a>追加情報
 

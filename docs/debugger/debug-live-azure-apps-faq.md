@@ -1,5 +1,5 @@
 ---
-title: スナップショットのデバッグに関する FAQ |Microsoft Docs
+title: スナップショットのデバッグに関する FAQ | Microsoft Docs
 ms.date: 11/07/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -10,48 +10,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5b6315ba3cc99b60c97e70621f42cf13f6397c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7ea593ad5f88ba29f6b1c0d7c64a129b8f71c7f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853312"
 ---
-# <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>よく寄せられる質問の Visual Studio でスナップショットのデバッグ
+# <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio でのスナップショットのデバッグについてよく寄せられる質問
 
-スナップショット デバッガーを使用して、ライブ Azure アプリケーションのデバッグ時に生じる可能性がありますの質問の一覧を示します。
+スナップショット デバッガーを使用してライブ Azure アプリケーションをデバッグするときに考えられる質問の一覧を以下に示します。
 
-#### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>スナップショットの作成のパフォーマンス コストとは何ですか。
+#### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>スナップショットの取得にはどのようなパフォーマンス コストがかかりますか?
 
-スナップショット デバッガーは、アプリのスナップショットをキャプチャする場合は、アプリのプロセスをフォークとフォークしたコピーを中断します。 スナップショットをデバッグするときに、プロセスのフォークしたコピーをデバッグします。 このプロセスは 10 ~ 20 ミリ秒しかかかりませんが、アプリの完全なヒープではコピーされません。 代わりに、ページのテーブルのみをコピーし、設定ページの書き込み時にコピーします。 ヒープの変更、アプリのオブジェクトの一部には場合、それぞれのページはコピーされます。 したがって、各スナップショットには、少ないメモリ内 (ほとんどのアプリのキロバイト数百) の順序があります。
+スナップショット デバッガーがアプリのスナップショットをキャプチャすると、アプリのプロセスはフォークされ、フォークされたコピーは中断されます。 スナップショットをデバッグする場合、デバッグ対象はプロセスのフォークされたコピーです。 このプロセスにかかる時間はわずか 10 から 20 ミリ秒ですが、アプリのヒープ全体はコピーされません。 代わりに、ページ テーブルのみがコピーされ、書き込み時にコピーするページが設定されます。 ヒープ上のアプリのオブジェクトの一部が変更された場合は、それぞれのページがコピーされます。 各スナップショットのメモリ内コストが小さい理由はこのためです (ほとんどのアプリケーションでは数百キロバイト程度)。
 
-#### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>スケール アウトされた Azure App Service (アプリの複数のインスタンス) があるとすると、どうなりますか。
+#### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>スケールアウトされた Azure App Service (アプリの複数のインスタンス) があるとどうなりますか?
 
-アプリの複数のインスタンスがある場合は、スナップ ポイントすべて 1 つのインスタンスに適用されます。 指定された条件とヒットする最初のスナップ ポイントのみでは、スナップショットを作成します。 を複数個のスナップ ポイントがある場合は、最初のスナップショットを作成する同じインスタンスからそれ以降のスナップショットが取得されます。 出力ウィンドウに送信されるログポイント ログポイント アプリケーション ログに送信されるすべてのインスタンスからメッセージを送信するときに 1 つのインスタンスからのメッセージがのみ表示されます。
+アプリのインスタンスが複数ある場合、スナップポイントはすべてのインスタンスに適用されます。 指定した条件で最初にヒットしたスナップポイントでのみ、スナップショットが作成されます。 複数のスナップポイントがある場合、後のスナップショットは最初のスナップショットを作成したものと同じインスタンスから取得されます。 出力ウィンドウに送信されたログポイントには、1 つのインスタンスのメッセージのみが表示されますが、アプリケーション ログに送信されたログポイントではすべてのインスタンスからメッセージが送信されます。
 
-#### <a name="how-does-the-snapshot-debugger-load-symbols"></a>スナップショット デバッガーがシンボルを読み込む方法
+#### <a name="how-does-the-snapshot-debugger-load-symbols"></a>スナップショット デバッガーがシンボルを読み込む方法を教えてください。
 
-スナップショット デバッガーでは、Azure App Service へのローカルまたはデプロイされたアプリケーションは対応するシンボルがあることが必要です。 (埋め込みの Pdb が現在サポートされていません。)スナップショット デバッガーは、Azure App Service からシンボルを自動的にダウンロードします。 Visual Studio 2017 バージョン 15.2 でも、Azure App Service に展開するアプリのシンボルを展開します。
+スナップショット デバッガーを使用するには、ローカルのアプリケーションまたは Azure App Service にデプロイされているアプリケーションに一致するシンボルが必要です (埋め込みの PDB は現在サポートされていません)。スナップショット デバッガーでは、Azure App Service からシンボルが自動的にダウンロードされます。 Visual Studio 2017 バージョン 15.2 以降、Azure App Service にデプロイすると、アプリのシンボルもデプロイされます。
 
-#### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>スナップショット デバッガーは、アプリケーションのリリース ビルドに対して動作しますか。
+#### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>スナップショット デバッガーはアプリケーションのリリース ビルドに対して動作しますか?
 
-はい - スナップショット デバッガーは、リリース ビルドに対して機能するものです。 関数で、スナップ ポイントが配置されると、デバッグできるように、デバッグ バージョンに戻す、関数が再コンパイルされます。 スナップショット デバッガーを停止すると、関数は、リリース ビルドに返されます。
+はい。スナップショット デバッガーはリリース ビルドに対して動作するように設計されています。 スナップポイントが関数に配置されると、その関数はデバッグ バージョンに再コンパイルされ、デバッグ可能になります。 スナップショット デバッガーを停止すると、関数はリリース ビルドのバージョンに戻ります。
 
-#### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>実稼働アプリケーションで副作用が発生ログポイントことができますか。
+#### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>ログポイントが運用アプリケーションに副作用を及ぼす可能性はありますか?
 
-いいえ - アプリに追加するすべてのログ メッセージは実質的に評価されます。 すべての副作用は、アプリケーションでが発生することはできません。 ただし、いくつかのネイティブ プロパティをログポイントをアクセスできない可能性があります。
+いいえ。アプリに追加したログ メッセージは仮想的に評価されます。 アプリケーションに副作用を引き起こすことはありません。 ただし、ログポイントでは一部のネイティブ プロパティにアクセスできない場合があります。
 
-#### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>マイ サーバーは、負荷がある場合、スナップショット デバッガーは動作でしょうか。
+#### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>サーバーに負荷がかかっていてもスナップショット デバッガーは機能しますか?
 
-はい、スナップショットのデバッグは、サーバー負荷の下で作業できます。 スナップショット デバッガーの調整し、状況でのスナップショットをキャプチャしませんが、サーバーで少量のメモリを解放します。
+はい。スナップショットのデバッグは、サーバーに負荷がかかっていても機能します。 サーバーの空きメモリが少ない状況になると、スナップショット デバッガーが調整され、スナップショットがキャプチャされなくなります。
 
-#### <a name="how-do-i-uninstall-the-snapshot-debugger"></a>スナップショット デバッガーのアンインストール方法
+#### <a name="how-do-i-uninstall-the-snapshot-debugger"></a>スナップショット デバッガーをアンインストールする方法を教えてください。
 
-次の手順で、App Service では、スナップショット デバッガー サイト拡張機能をアンインストールできます。
+App Service からスナップショット デバッガー サイト拡張機能をアンインストールするには、次の手順を実行します。
 
-1. Visual Studio または Azure portal で Cloud Explorer を使用するか、アプリをオフにするサービスを提供します。
-1. App Service の Kudu サイトに移動します (つまり、yourappservice **。scm**. azurewebsites.net) に移動します**サイト拡張機能**します。
-1. それを削除するスナップショット デバッガー サイト拡張機能にある [X] をクリックします。
+1. Visual Studio の Cloud Explorer または Azure portal のいずれかを使用して App Service を無効にします。
+1. App Service の Kudu サイト (つまり yourappservice.**scm**.azurewebsites.net) にアクセスし、**[サイト拡張機能]** に移動します。
+1. スナップショット デバッガー サイト拡張機能の [X] をクリックして削除します。
+
+#### <a name="why-are-ports-opened-during-a-snapshot-debugger-session"></a>スナップショット デバッガー セッション中にポートが開かれるのはなぜですか?
+
+Azure で取得されたスナップショットをデバッグするために、スナップショット デバッガーでは一連のポートを開く必要があります。これらは、リモート デバッグに必要なポートと同じです。 [ポートの一覧については、こちらを参照してください](../debugger/remote-debugger-port-assignments.md)。
 
 ## <a name="see-also"></a>関連項目
 

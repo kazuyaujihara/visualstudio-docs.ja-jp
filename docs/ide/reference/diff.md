@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2e69435a319a9730af846a912cb3f90a12d4ac8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945784"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 
@@ -47,7 +47,7 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
   任意。 2 番目のファイルの表示名。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 IDE のインスタンスが既に開かれている場合は、現在の IDE のタブにファイルの比較が表示されます。
 

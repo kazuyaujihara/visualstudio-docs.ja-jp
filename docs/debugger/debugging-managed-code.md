@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 384b5dca1da11a430036cce2536e6859f3e98f94
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851877"
 ---
 # <a name="debugging-managed-code"></a>マネージド コードのデバッグ
 
@@ -38,7 +38,7 @@ ms.locfileid: "57868092"
 [Visual Basic の Stop ステートメント](../debugger/stop-statements-in-visual-basic.md)\
 ブレークポイントの設定の代わりに使用できる `Stop` ステートメントについて説明します。 サンプル コードを示し、`Stop` ステートメントと `End` ステートメントの比較、および `Stop` ステートメントと `Assert` ステートメントの比較を行います。
 
-[チュートリアル : Windows フォームのデバッグ](../debugger/walkthrough-debugging-a-windows-form.md)\
+[チュートリアル: Windows フォームのデバッグ](../debugger/walkthrough-debugging-a-windows-form.md)\
 Windows フォームを作成し、そのフォームをデバッグする方法を順をおって説明します。 マネージド Windows アプリケーションの標準コンポーネントである Windows フォームは、最も一般的なマネージド アプリケーションの 1 つです。 このチュートリアルでは Visual C# と Visual Basic を使用しますが、C++ を使って Windows フォームを作成する場合と方法は似ています。
 
 [OnStart メソッドのデバッグ](../debugger/how-to-debug-the-onstart-method.md)\
@@ -47,7 +47,7 @@ Windows フォームを作成し、そのフォームをデバッグする方法
 [混合モードのデバッグ](../debugger/debugging-mixed-mode-applications.md)\
 混合モード アプリケーションのデバッグについて説明します。 これは、ネイティブ コードとマネージド コードを組み合わせたアプリケーションです。
 
-[エラー: システム上でカーネル デバッガーが有効になっているため、デバッグできません](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[エラー: システムのカーネル デバッガーが有効になっているため、デバッグできません。](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 デバッグ モードで起動された [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]、[!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]、[!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)]、または Windows NT システムでマネージド コードのデバッグを試みたときに発生するエラー メッセージについて説明します。
 
 [JIT の最適化とデバッグ](../debugger/jit-optimization-and-debugging.md)\
@@ -56,7 +56,7 @@ Windows フォームを作成し、そのフォームをデバッグする方法
 [LINQ および DLINQ のデバッグ](../debugger/debugging-linq.md)\
 LINQ クエリのデバッグ手法について説明します。
 
-[チュートリアル: 並行アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)\
+[チュートリアル: 並列アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)\
 **[並列タスク]** ツール ウィンドウと **[並列スタック]** ツール ウィンドウを使用して並行アプリケーションをデバッグする方法について説明します。
 
 ## <a name="related-sections"></a>関連項目
@@ -78,9 +78,6 @@ Windows サービス アプリケーションのデバッグに関する注意�
 
 [スクリプトと Web アプリケーションのデバッグ](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
 スクリプトおよび Web アプリケーションのデバッグ時に発生する一般的な問題、およびデバッグの手法について説明します。
-
-[ホーム ページのデバッグ](../debugger/debugger-feature-tour.md)\
-デバッグに関連するドキュメントのより広範囲なリンクを提供します。 これらのリンクでは、デバッガーの新機能、設定と準備、ブレークポイント、例外処理、エディット コンティニュ、マネージド コードのデバッグ、Visual C++ プロジェクトのデバッグ、COM および ActiveX のデバッグ、DLL のデバッグ、SQL のデバッグ、ユーザー インターフェイス リファレンスなどの情報が示されます。
 
 ## <a name="see-also"></a>関連項目
 

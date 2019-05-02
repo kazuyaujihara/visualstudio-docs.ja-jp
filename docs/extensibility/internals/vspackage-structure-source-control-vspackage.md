@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeaa87cf55b9429904286817b043dcba92d2bfcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 03b9d4fb6a92694df55d6732ac80d75645209a87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857065"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 構造 (ソース管理 VSPackage)
 
@@ -28,23 +28,23 @@ VSPackage では、そのメニュー項目を宣言し、.vsct ファイルを�
 
 ソース管理 VSPackage は Visual Studio に緊密に統合します。 VSPackage のセマンティクスは次のとおりです。
 
--   あること、VSPackage によって実装されるインターフェイス (、`IVsPackage`インターフェイス)
+- あること、VSPackage によって実装されるインターフェイス (、`IVsPackage`インターフェイス)
 
--   UI コマンドの実装 (.vsct ファイルとの実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイス)
+- UI コマンドの実装 (.vsct ファイルとの実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイス)
 
--   Visual Studio を使用した VSPackage の登録。
+- Visual Studio を使用した VSPackage の登録。
 
 ソース管理 VSPackage は、これら他の Visual Studio のエンティティと通信する必要があります。
 
--   プロジェクト
+- プロジェクト
 
--   エディター
+- エディター
 
--   解決策
+- 解決策
 
--   Windows
+- Windows
 
--   実行中の document テーブル
+- 実行中の document テーブル
 
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>使用できる visual Studio 環境のサービス
 

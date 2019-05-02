@@ -2,7 +2,7 @@
 title: Visual Studio のアンインストール
 titleSuffix: ''
 description: Visual Studio をアンインストールする方法について、ステップ バイ ステップで説明します。
-ms.date: 08/16/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3836ee8d0f2f503b415eb84d811067617266c3b1
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 759a1e2c5ba1c3ecff983e1d2ca3903471b7f5fe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951402"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio のアンインストール
 
@@ -29,6 +29,8 @@ ms.locfileid: "58324813"
 
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、[Visual Studio for Mac のアンインストール](/visualstudio/mac/uninstall)に関するページを参照してください。
+
+::: moniker range="vs-2017"
 
 1. コンピューター上で Visual Studio インストーラーを見つけます。
 
@@ -39,13 +41,11 @@ ms.locfileid: "58324813"
    > [!NOTE]
    > 一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー**として **"M"** の項に表示される場合があります。<br/><br/> Visual Studio インストーラーは `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe` にもあります。
 
-2. クリックしてインストーラーを起動し、![詳細アイコン](media/vs2017uninstall-UninstallIcon.png "オプション アイコンを選択") アイコンをクリックして、**[アンインストール]** をクリックします。
+1. インストーラーで、インストールした Visual Studio のエディションを探します。 次に、**[その他]** を選択した後、**[アンインストール]** を選択します。
 
-     ![Visual Studio の変更 (変更、起動、修復、またはアンインストール)](media/vs2017-uninstall.PNG "Visual Studio 2017 の修復またはアンインストール")
+     ![Visual Studio 2017 のアンインストール](media/uninstall-visual-studio.png "Visual Studio 2017 のアンインストール")
 
-3. **[OK]** をクリックして選択を確定します。
-
-     ![Visual Studio 2017 の変更 (製品のアンインストール)](media/vs2017-uninstall-confirm.PNG "Visual Studio 2017 のアンインストールを確定")
+1. **[OK]** をクリックして選択を確定します。
 
 後で気が変わり、Visual Studio 2017 を再インストールする場合は、もう一度 Visual Studio インストーラーを起動し、選択画面で **[インストール]** を選びます。
 
@@ -53,9 +53,50 @@ ms.locfileid: "58324813"
 
 Visual Studio 2017 と Visual Studio インストーラーを自分のマシンから完全に削除するには、[アプリと機能] からアンインストールします。
 
-1. [アプリと機能] を開きます。 たとえば、Windows 10 の場合、**[スタート]** を選択し、検索バーに「**アプリと機能**」と入力します。
-2. **Microsoft Visual Studio 2017** を見つけます。
-3. **[アンインストール]** をクリックします。
+1. Windows 10 では、[検索するテキストをここに入力] ボックスに「**アプリと機能**」と入力します。
+1. **Microsoft Visual Studio 2017** (または **Visual Studio 2017**) を検索します。
+1. **[アンインストール]** を選択します。
+1. 次に、**Microsoft Visual Studio インストーラー**を見つけます。
+1. **[アンインストール]** を選択します。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. コンピューター上で Visual Studio インストーラーを見つけます。
+
+     たとえば、Windows 10 を実行しているコンピューター上で、**[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
+
+     ![Visual Studio インストーラーを開く](media/vs2019-visual-studio-installer.png "Visual Studio インストーラーを開く")
+
+     > [!NOTE]
+     > また、Visual Studio インストーラーは次の場所にもあります。
+     >
+     > `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+
+    続行する前に、インストーラーの更新が必要な場合があります。 その場合は、画面の指示に従います。
+
+1. インストーラーで、インストールした Visual Studio のエディションを探します。 次に、**[その他]** を選択した後、**[アンインストール]** を選択します。
+
+     ![Visual Studio 2019 のアンインストール](media/vs-2019/vs-installer-uninstall.png "Visual Studio 2019 のアンインストール")
+
+1. **[OK]** をクリックして選択を確定します。
+
+     ![Visual Studio のアンインストールの確認](media/vs-2019/uninstall-visualstudio-confirm.png "Visual Studio 2019 のアンインストールの確認")
+
+後で気が変わって Visual Studio 2019 を再インストールする場合は、再度 Visual Studio インストーラーを起動し、**[使用可能]** タブを選択し、インストールする Visual Studio のエディションを選択してから、**[インストール]** を選択します。
+
+## <a name="uninstall-visual-studio-installer"></a>Visual Studio インストーラーをアンインストールする
+
+Visual Studio 2019 と Visual Studio インストーラーを自分のマシンから削除するには、[アプリと機能] からアンインストールします。
+
+1. Windows 10 では、[検索するテキストをここに入力] ボックスに「**アプリと機能**」と入力します。
+1. **Visual Studio 2019** を見つけます。
+1. **[アンインストール]** を選択します。
+1. 次に、**Microsoft Visual Studio インストーラー**を見つけます。
+1. **[アンインストール]** を選択します。
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

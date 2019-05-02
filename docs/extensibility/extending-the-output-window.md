@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e7cb1a462c79f498687296afd8c64accfc1458
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 86498adc4d8bce2a7d428b2951764e5d4b8a96a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912396"
 ---
 # <a name="extend-the-output-window"></a>出力ウィンドウを拡張します。
 **出力**ウィンドウはテキスト ペインの読み取り/書き込みのセットです。 Visual Studio では、これらの組み込みのペインがあります。**ビルド**、プロジェクトのビルドに関するメッセージを通信および**全般**を[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]は IDE に関するメッセージを伝えます。 プロジェクトへの参照を取得する、**ビルド**ペインを使用して自動的に、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>インターフェイスのメソッド、および Visual Studio への直接アクセスを提供しています、**全般**ウィンドウを通じて、 <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> 。サービス。 だけでなく、組み込みのペインには、作成および独自のカスタム ペインを管理することができます。
@@ -25,22 +25,22 @@ ms.locfileid: "56706211"
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>[出力] ペインを使用する拡張機能を作成します。
  [出力] ウィンドウのさまざまな側面を実行する拡張機能を行うことができます。
 
-1.  という名前の VSIX プロジェクトを作成する`TestOutput`メニュー コマンドを使用して名前付き**TestOutput**します。 詳細については、[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。
+1. という名前の VSIX プロジェクトを作成する`TestOutput`メニュー コマンドを使用して名前付き**TestOutput**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
 
-2.  次の参照を追加します。
+2. 次の参照を追加します。
 
-    1.  EnvDTE
+    1. EnvDTE
 
-    2.  EnvDTE80
+    2. EnvDTE80
 
-3.  *TestOutput.cs*次の追加ステートメントを使用します。
+3. *TestOutput.cs*次の追加ステートメントを使用します。
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  *TestOutput.cs*、削除、`ShowMessageBox`メソッド。 次のメソッド スタブを追加します。
+4. *TestOutput.cs*、削除、`ShowMessageBox`メソッド。 次のメソッド スタブを追加します。
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -48,7 +48,7 @@ ms.locfileid: "56706211"
     }
     ```
 
-5.  TestOutput コンス トラクターでは、OutputCommandHandler にコマンド ハンドラーを変更します。 コマンドを追加する部分を次に示します。
+5. TestOutput コンス トラクターでは、OutputCommandHandler にコマンド ハンドラーを変更します。 コマンドを追加する部分を次に示します。
 
     ```csharp
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -61,7 +61,7 @@ ms.locfileid: "56706211"
     }
     ```
 
-6.  以下のセクションでは、出力ウィンドウの処理のさまざまな方法を示すとおりの方法があります。 本体にこれらのメソッドを呼び出すことができます、`OutputCommandHandler()`メソッド。 たとえば、次のコードを追加、`CreatePane()`メソッドに次のセクションでを指定します。
+6. 以下のセクションでは、出力ウィンドウの処理のさまざまな方法を示すとおりの方法があります。 本体にこれらのメソッドを呼び出すことができます、`OutputCommandHandler()`メソッド。 たとえば、次のコードを追加、`CreatePane()`メソッドに次のセクションでを指定します。
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

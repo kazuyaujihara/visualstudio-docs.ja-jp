@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: eda8424aeb28231df0ae0355931989bec13a89b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436172"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>方法: ジオメトリベースのグラデーション シェーダーを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "54797538"
   
  このドキュメントでは、以下のアクティビティについて説明します。  
   
--   シェーダー グラフへのノードの追加  
+- シェーダー グラフへのノードの追加  
   
--   ノードのプロパティの設定  
+- ノードのプロパティの設定  
   
--   ノードの接続の解除  
+- ノードの接続の解除  
   
--   ノードの接続  
+- ノードの接続  
   
 ## <a name="creating-a-geometry-based-gradient-shader"></a>ジオメトリベースのグラデーション シェーダーの作成  
  シェーダーにピクセルの位置を組み込むことによって、ジオメトリ ベースのシェーダーを実装できます。 シェーディング言語では、ピクセルには単なるカラーと 2-D 画面の場所より詳しい情報が含まれています。 ピクセルとは、システムによっては*フラグメント*とも呼ばれ、ピクセルに対応するサーフェイスを表す値のコレクションのことです。 このドキュメントで説明するシェーダーは、ワールド空間内の 3-D オブジェクトの各ピクセルの高さを使用して、フラグメントの最終的な出力の色に影響を及ぼします。  
@@ -59,7 +59,7 @@ ms.locfileid: "54797538"
    次の図は、完成したシェーダー グラフと、球に適用されるシェーダーのプレビューを示します。  
   
 > [!NOTE]
->  この図では、シェーダーの効果をわかりやすく示すためにオレンジ色が指定されていますが、ワールド空間にプレビュー図形の位置がないため、シェーダー デザイナーでシェーダーを完全にプレビューすることができません。 完全な効果を確認するには、シェーダーを実際のシーンでプレビューする必要があります。  
+> この図では、シェーダーの効果をわかりやすく示すためにオレンジ色が指定されていますが、ワールド空間にプレビュー図形の位置がないため、シェーダー デザイナーでシェーダーを完全にプレビューすることができません。 完全な効果を確認するには、シェーダーを実際のシーンでプレビューする必要があります。  
   
  ![シェーダー グラフとその効果のプレビュー](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")  
   
@@ -73,8 +73,8 @@ ms.locfileid: "54797538"
   
 ## <a name="see-also"></a>関連項目
  [方法: シェーダーを 3-D モデルに適用します。](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)   
+ [方法: シェーダーをエクスポートします。](../designers/how-to-export-a-shader.md)   
  [方法: 3-D 地形をモデル](../designers/how-to-model-3-d-terrain.md)   
- [方法: グレースケール テクスチャ シェーダーを作成する](../designers/how-to-create-a-grayscale-texture-shader.md)   
+ [方法: グレースケール テクスチャ シェーダーを作成します。](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [シェーダー デザイナー](../designers/shader-designer.md)   
  [シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)

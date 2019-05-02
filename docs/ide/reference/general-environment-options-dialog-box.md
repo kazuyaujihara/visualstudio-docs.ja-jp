@@ -1,6 +1,6 @@
 ---
 title: '[全般] ([オプション] ダイアログ ボックス - [環境])'
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
@@ -24,32 +24,51 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faae6f061da675efdecdea5f8c4a0e606d486b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790136"
 ---
-# <a name="general-environment-options-dialog-box"></a>[全般] ([オプション] ダイアログ ボックス - [環境])
+# <a name="options-dialog-box-environment--general"></a>[オプション] ダイアログ ボックス: [環境] \> [全般]
 
 このページを使用して、統合開発環境 (IDE: Integrated Development Environment) のオプションのうち特に配色テーマ、ステータス バーの設定、およびファイル拡張子の関連付けを変更します。 **[オプション]** ダイアログ ボックスを表示するには、**[ツール]** メニューを開いて、**[オプション]** をクリックし、**[環境]** フォルダーを開き、**[全般]** ページをクリックします。 このページが一覧に表示されない場合は、**[オプション]** ダイアログ ボックスの **[すべての設定を表示]** チェック ボックスをオンにします。
 
 ## <a name="visual-experience"></a>視覚的効果
 
-**[配色テーマ]**
+**配色テーマ**
 
-IDE の配色テーマで **[青]**、**[淡色]** または **[濃色]** を選択します。
+IDE の配色テーマ (**[青]**、**[淡色]**、**[濃色]**、または **[青 (エクストラ コントラスト)]**) を選択します。
 
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) から **Visual Studio 配色テーマ エディター**をダウンロードしインストールすることで、定義済みテーマを追加でインストールしたりカスタム テーマを作成したりすることもできます。 このツールをインストールすると、追加の配色テーマが [配色テーマ] ボックスの一覧に表示されます。
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) から **Visual Studio 配色テーマ エディター**をダウンロードしてインストールすることで、定義済みテーマを追加でインストールしたりカスタム テーマを作成したりすることもできます。 このツールをインストールすると、追加の配色テーマが **[配色テーマ]** ボックスの一覧に表示されます。
 
-**メニュー バーにタイトルの文字種を適用する**
+**タイトルの文字スタイルをメニュー バーに適用する**
 
-既定では、メニューは**タイトルの文字種**になります。 このオプションのチェック ボックスをオフにすると、メニューが**すべて大文字**に設定されます。
+メニューでは、タイトルの大文字と小文字のスタイルが既定で使用されます。 すべて大文字のスタイルを使用するには、このオプションをオフにします。
+
+::: moniker range=">=vs-2019"
+
+**ピクセルの密度が異なる画面のレンダリングを最適化する (再起動が必要)**
+
+このオプションを使用して、モニターごとの 1インチあたりのドット数 (DPI) の認識 (または *PMA*) を有効または無効にします。 PMA を有効にすると、Visual Studio ユーザー インターフェイスは、表示倍率と DPI 構成に関係なく、すべてのモニターで鮮明に表示されます (複数のモニター間の表示も含まれます)。 PMA を有効にするには、Windows 10 April 2018 Update 以降および .NET Framework 4.8 以降が必要です  (これら 2 つの前提条件が満たされていない場合、このオプションは灰色表示されます)。
+
+> [!TIP]
+> - Windows 10 には、**[Let Windows try to fix apps so they're not blurry]\(ぼやけないように Windows でアプリの修正を試みる\)** という設定があります。 **[Optimize rendering for screens with different pixel densities]\(ピクセルの密度が異なる画面のレンダリングを最適化する\)** オプションがオンの場合は、この Windows 設定を**オン**にしても、効果はほとんどありません。
+> - Windows 10 には、**[プログラム互換性のトラブルシューティング ツール]** という設定もあります。 Visual Studio の外観の修正を試みるときは、このトラブルシューティング ツールを使用しないことをお勧めします。
+
+::: moniker-end
 
 **クライアントのパフォーマンスに基づいて視覚的効果を自動的に調整する**
 
 Visual Studio で視覚的効果を自動的に調整するか、ユーザーが明示的に調整するかを指定します。 この調整によって、色の表示がグラデーションからフラットに変わったり、メニューまたはポップアップ ウィンドウでのアニメーションの使用が制限されたりすることがあります。
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Windows 10 には、**[Let Windows try to fix apps so they're not blurry]\(ぼやけないように Windows でアプリの修正を試みる\)** という設定があります。 Visual Studio がモニター上でぼやけて見える場合は、この設定を**オン**にすることをお勧めします。 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) へのアップグレードを検討してください。Visual Studio 2019 は、モニターごとの DPI に対応したアプリケーションであるため、表示の明瞭度が大幅に向上しています。
+
+::: moniker-end
 
 **リッチ クライアント エクスペリエンスを有効にする**
 
@@ -61,13 +80,13 @@ Visual Studio で視覚的効果を自動的に調整するか、ユーザーが
 
 ## <a name="other"></a>その他
 
-**項目をウィンドウ メニューに表示**
+**ウィンドウ メニューに表示する項目**
 
-**[ウィンドウ]** メニューの [ウィンドウ] の一覧に表示されるウィンドウ数をカスタマイズします。 1 ～ 24 の値を入力します。 既定値は 10 です。
+**[ウィンドウ]** メニューの [ウィンドウ] の一覧に表示されるウィンドウ数をカスタマイズします。 1 から 24 の範囲の数字を入力してください。 既定値は 10 です。
 
 **項目を最近使用した一覧に表示**
 
-**[ファイル]** メニューに表示される、最近使ったプロジェクトとファイルの数をカスタマイズします。 1 ～ 24 の値を入力します。 既定値は 10 です。 このオプションを使用すると、最近使用したプロジェクトやファイルを簡単に表示できます。
+**[ファイル]** メニューに表示される、最近使ったプロジェクトとファイルの数をカスタマイズします。 1 から 24 の範囲の数字を入力してください。 既定値は 10 です。 このオプションを使用すると、最近使用したプロジェクトやファイルを簡単に表示できます。
 
 **ステータス バーの表示**
 

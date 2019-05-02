@@ -1,11 +1,9 @@
 ---
-ms.openlocfilehash: eb7a4bf84f3df2e10074419b8f7ebc5a48d0a16a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: HT
+ms.openlocfilehash: 610f019995bd507d743a1e1d328f6691f8386fbf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "38945082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825791"
 ---
-  **適用されます:** ドキュメントにこのトピックの情報が適用されます\-レベルのプロジェクトおよび VSTO 追加\-次のアプリケーション用のプロジェクトで: Excel;PowerPoint です。プロジェクトです。単語があります。 詳細については、[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../../vsto/features-available-by-office-application-and-project-type.md)を参照してください。
-
-  
+  **適用対象:** このトピックの情報は、ドキュメントに適用されます\-レベルのプロジェクトおよび VSTO 追加\-次のアプリケーション用のプロジェクトで。Excel です。PowerPoint です。プロジェクトです。単語があります。 詳細については、「[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。

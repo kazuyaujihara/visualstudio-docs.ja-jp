@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75f7dd3149785520023657bb86ec8172dc379ab6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: e61b9e35464c4200581f6859b2f394911d266d44
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402904"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>n 層アプリケーションの TableAdapters にコードを追加する
 TableAdapter の部分クラス ファイルを作成し、コードを追加して、TableAdapter の機能を拡張することができます (コードを追加するのではなく、 *DatasetName.DataSet.Designer*ファイル)。 部分クラスには、特定のクラスを複数の物理ファイルに分割するためのコードが有効にします。 詳細については、次を参照してください。[部分](/dotnet/visual-basic/language-reference/modifiers/partial)または[partial (型)](/dotnet/csharp/language-reference/keywords/partial-type)します。
@@ -29,7 +29,7 @@ TableAdapter の部分クラス ファイルを作成し、コードを追加し
 既定では、データセットと TableAdapter コードを分離したら、結果はプロジェクトごとに別個のクラス ファイルが。 元のプロジェクトにという名前のファイル*DatasetName.Designer.vb* (または*DatasetName.Designer.cs*) TableAdapter コードを格納しています。 指定されているプロジェクト、 **Dataset プロジェクト**プロパティという名前のファイルは、 *DatasetName.DataSet.Designer.vb* (または*DatasetName.DataSet.Designer.cs*) します。データセット コードが含まれています。
 
 > [!NOTE]
->  **[DataSet プロジェクト]** プロパティを設定してデータセットと TableAdapter を分離する場合でも、プロジェクト内の既存のデータセット部分クラスは自動的には移動されません。 既存のデータセット部分クラスは、データセット プロジェクトに手動で移動する必要があります。
+> **[DataSet プロジェクト]** プロパティを設定してデータセットと TableAdapter を分離する場合でも、プロジェクト内の既存のデータセット部分クラスは自動的には移動されません。 既存のデータセット部分クラスは、データセット プロジェクトに手動で移動する必要があります。
 
 > [!NOTE]
 > データセットを生成するための機能を提供する<xref:System.Data.DataTable.ColumnChanging>と<xref:System.Data.DataTable.RowChanging>検証が必要なときにイベント ハンドラー。 詳細については、次を参照してください。 [n 層データセットに検証を追加](../data-tools/add-validation-to-an-n-tier-dataset.md)します。
@@ -38,17 +38,17 @@ TableAdapter の部分クラス ファイルを作成し、コードを追加し
 
 ## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>N 層アプリケーションでの TableAdapter にユーザー コードを追加するには
 
-1.  含むプロジェクトを見つけ、 *.xsd*ファイル。
+1. 含むプロジェクトを見つけ、 *.xsd*ファイル。
 
-2.  ダブルクリックして、 *.xsd*ファイルを開く、**データセット デザイナー**します。
+2. ダブルクリックして、 *.xsd*ファイルを開く、**データセット デザイナー**します。
 
-3.  コードを追加し、選択する TableAdapter を右クリックして**コードの表示**します。
+3. コードを追加し、選択する TableAdapter を右クリックして**コードの表示**します。
 
      部分クラスが作成され、コード エディターで開きます。
 
-4.  部分クラス宣言内でコードを追加します。
+4. 部分クラス宣言内でコードを追加します。
 
-5.  次の例では、コードを追加する場所、`CustomersTableAdapter`で、 `NorthwindDataSet`:
+5. 次の例では、コードを追加する場所、`CustomersTableAdapter`で、 `NorthwindDataSet`:
 
     ```vb
     Partial Public Class CustomersTableAdapter

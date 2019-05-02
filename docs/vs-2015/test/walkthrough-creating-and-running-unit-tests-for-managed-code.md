@@ -14,14 +14,14 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408485"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>チュートリアル: マネージド コードに対する単体テストの作成と実行
+# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>チュートリアル: 作成して、マネージ コードの単体テストの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、マネージド コード用の Microsoft 単体テスト フレームワークと Visual Studio テスト エクスプローラーを使用して一連の単体テストを作成、実行、およびカスタマイズする手順について説明します。 開発中の C# プロジェクトで作業を開始し、そのコードを実行するテストを作成し、テストを実行し、結果を調べます。 次に、プロジェクト コードを変更し、テストを再実行します。  
@@ -47,16 +47,16 @@ ms.locfileid: "54784661"
   [単体テストを使用してコードを改良する](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
->  このチュートリアルでは、マネージド コード用の Microsoft 単体テスト フレームワークを使用します。 また、テスト エクスプローラー用のアダプターを備えたサード パーティの単体テスト フレームワークからテスト エクスプローラーを実行することもできます。 詳細については、「[サードパーティ製の単体テスト フレームワークをインストールする](../test/install-third-party-unit-test-frameworks.md)」をご覧ください。  
+> このチュートリアルでは、マネージド コード用の Microsoft 単体テスト フレームワークを使用します。 また、テスト エクスプローラー用のアダプターを備えたサード パーティの単体テスト フレームワークからテスト エクスプローラーを実行することもできます。 詳細については、「[サードパーティ製の単体テスト フレームワークをインストールする](../test/install-third-party-unit-test-frameworks.md)」をご覧ください。  
   
 > [!NOTE]
->  コマンド ラインからテストを実行する方法については、「[チュートリアル: コマンド ライン テスト ユーティリティの使用](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)」をご覧ください。  
+> コマンド ラインからテストを実行する方法については、「[チュートリアル: コマンド ライン テスト ユーティリティの使用](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)」をご覧ください。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
   
--   Bank プロジェクト。 「[単体テストを作成するサンプル プロジェクト](../test/sample-project-for-creating-unit-tests.md)」をご覧ください。  
+- Bank プロジェクト。 「[単体テストを作成するサンプル プロジェクト](../test/sample-project-for-creating-unit-tests.md)」をご覧ください。  
   
-##  <a name="BKMK_Prepare_the_walkthrough"></a> チュートリアルを準備する  
+## <a name="BKMK_Prepare_the_walkthrough"></a> チュートリアルを準備する  
   
 1. Visual Studio を開きます。  
   
@@ -71,12 +71,12 @@ ms.locfileid: "54784661"
 5. In the **[名前]** ボックスに「 `Bank` をポイントし、 **[OK]**」をご覧ください。  
   
    > [!NOTE]
-   >  "Bank" という名前が既に使用されている場合は、別のプロジェクト名を選択します。  
+   > "Bank" という名前が既に使用されている場合は、別のプロジェクト名を選択します。  
   
     新しい Bank プロジェクトが作成され、コード エディターに Class1.cs ファイルが開いた状態でソリューション エクスプローラーが表示されます。  
   
    > [!NOTE]
-   >  コード エディターに Class1.cs ファイルが表示されない場合、ソリューション エクスプローラーのファイル Class1.cs をダブルクリックして開きます。  
+   > コード エディターに Class1.cs ファイルが表示されない場合、ソリューション エクスプローラーのファイル Class1.cs をダブルクリックして開きます。  
   
 6. 「[単体テストを作成するためのサンプル プロジェクト](../test/sample-project-for-creating-unit-tests.md)」からソース コードをコピーします。  
   
@@ -107,28 +107,28 @@ public void Debit(double amount)
   
 ```  
   
-##  <a name="BKMK_Create_a_unit_test_project"></a> 単体テスト プロジェクトを作成する  
- **前提条件となる**: 次の手順では、手順[チュートリアルを準備する](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)します。  
+## <a name="BKMK_Create_a_unit_test_project"></a> 単体テスト プロジェクトを作成する  
+ **前提条件となる**:次の手順では、手順[チュートリアルを準備する](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)します。  
   
 #### <a name="to-create-a-unit-test-project"></a>単体テスト プロジェクトを作成するには  
   
-1.  **[ファイル]** メニューの **[追加]** をポイントし、 **[新しいプロジェクト]** をクリックします。  
+1. **[ファイル]** メニューの **[追加]** をポイントし、 **[新しいプロジェクト]** をクリックします。  
   
-2.  [新しいプロジェクト] ダイアログ ボックスで、 **[インストール済み]**、 **[Visual C#]** の順に展開し、 **[テスト]** をクリックします。  
+2. [新しいプロジェクト] ダイアログ ボックスで、 **[インストール済み]**、 **[Visual C#]** の順に展開し、 **[テスト]** をクリックします。  
   
-3.  テンプレートの一覧から、 **[単体テスト プロジェクト]** を選択します。  
+3. テンプレートの一覧から、 **[単体テスト プロジェクト]** を選択します。  
   
-4.  **[名前]** ボックスに「BankTest」と入力し、 **[OK]** をクリックします。  
+4. **[名前]** ボックスに「BankTest」と入力し、 **[OK]** をクリックします。  
   
      **BankTests** プロジェクトが **Bank** ソリューションに追加されます。  
   
-5.  **BankTests** プロジェクトで、 **Bank** ソリューションへの参照を追加します。  
+5. **BankTests** プロジェクトで、 **Bank** ソリューションへの参照を追加します。  
   
      ソリューション エクスプローラーで、 **BankTests** プロジェクトの **[参照設定]** をクリックし、コンテキスト メニューの **[参照の追加]** をクリックします。  
   
-6.  [参照マネージャー] ダイアログ ボックスで、 **[ソリューション]** を展開し、 **[Bank]** チェックボックスをオンにします。  
+6. [参照マネージャー] ダイアログ ボックスで、 **[ソリューション]** を展開し、 **[Bank]** チェックボックスをオンにします。  
   
-##  <a name="BKMK_Create_the_test_class"></a> テスト クラスを作成する  
+## <a name="BKMK_Create_the_test_class"></a> テスト クラスを作成する  
  `BankAccount` クラスを検証するためのテスト クラスが必要です。 プロジェクト テンプレートによって生成された UnitTest1.cs を使用できますが、ファイルとクラスにはよりわかりやすい名前を付ける必要があります。 ソリューション エクスプローラーでファイルの名前変更機能を使用すると、この処理を 1 つの手順で実行できます。  
   
  **クラス ファイルの名前を変更する**  
@@ -163,7 +163,7 @@ namespace BankTests
 using BankAccountNS;  
 ```  
   
-###  <a name="BKMK_Test_class_requirements"></a> テスト クラスの要件  
+### <a name="BKMK_Test_class_requirements"></a> テスト クラスの要件  
  テスト クラスの最小要件は次のとおりです。  
   
 - マネージド コード用の Microsoft 単体テスト フレームワークでは、テスト エクスプローラーで実行する単体テスト メソッドを含むすべてのクラスについて、 `[TestClass]` 属性が必要です。  
@@ -172,12 +172,12 @@ using BankAccountNS;
   
   単体テスト プロジェクトで `[TestClass]` 属性がない別のクラスを使用することができます。また、テスト クラスで `[TestMethod]` 属性がない別のメソッドを使用することもできます。 こうした別のクラスやメソッドをテスト メソッドで使用できます。  
   
-##  <a name="BKMK_Create_the_first_test_method"></a> 最初のテスト メソッドを作成する  
+## <a name="BKMK_Create_the_first_test_method"></a> 最初のテスト メソッドを作成する  
  この手順では、 `Debit` クラスの `BankAccount` メソッドの動作を検証する単体テスト メソッドを記述します。 メソッドは上に一覧表示されています。  
   
  テスト対象のメソッドを分析したところ、チェックする必要のある動作が 3 つ以上あると判断されます。  
   
-1. 引き落とし金額が残高を上回る場合、このメソッドは [ArgumentOutOfRangeException](<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) をスローします。  
+1. メソッドは、[argumentoutofrangeexception が発生しました] (をスローします。<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) 引き落とし金額が残高を上回る場合。  
   
 2. また、引き落とし金額が 0 未満の場合も、このメソッドは `ArgumentOutOfRangeException` をスローします。  
   
@@ -213,28 +213,28 @@ using BankAccountNS;
   
    このメソッドはやや単純です。 期首残高を含む新しい `BankAccount` オブジェクトを設定し、有効な金額を引き出します。 マネージド コード用の Microsoft 単体テスト フレームワークの <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> メソッドを使用して、期末残高が想定どおりであることを確認します。  
   
-###  <a name="BKMK_Test_method_requirements"></a> テスト メソッドの要件  
+### <a name="BKMK_Test_method_requirements"></a> テスト メソッドの要件  
  テスト メソッドは次の条件を満たしている必要があります。  
   
--   メソッドは `[TestMethod]` 属性で装飾される必要があります。  
+- メソッドは `[TestMethod]` 属性で装飾される必要があります。  
   
--   メソッドは `void`を返します。  
+- メソッドは `void`を返します。  
   
--   メソッドはパラメーターを含むことができません。  
+- メソッドはパラメーターを含むことができません。  
   
-##  <a name="BKMK_Build_and_run_the_test"></a> テストをビルドして実行する  
+## <a name="BKMK_Build_and_run_the_test"></a> テストをビルドして実行する  
   
 #### <a name="to-build-and-run-the-test"></a>テストをビルドして実行するには  
   
-1.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
+1. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
      エラーがない場合は、[UnitTestExplorer] ウィンドウが表示され、 **[テストを実行しない]** グループに **[Debit_WithValidAmount_UpdatesBalance]** が表示されます。 ビルドの成功後にテスト エクスプローラーが表示されない場合は、メニューの **[テスト]** をクリックし、 **[ウィンドウ]**、  **[テスト エクスプローラー]** の順にクリックします。  
   
-2.  **[すべて実行]** をクリックしてテストを実行します。 テストの実行中は、ウィンドウの上部にあるステータス バーがアニメーション化されます。 テストの実行の終了時に、すべてのテスト メソッドが成功した場合はステータス バーが緑色に変わり、いずれかのテストが失敗した場合は赤色に変わります。  
+2. **[すべて実行]** をクリックしてテストを実行します。 テストの実行中は、ウィンドウの上部にあるステータス バーがアニメーション化されます。 テストの実行の終了時に、すべてのテスト メソッドが成功した場合はステータス バーが緑色に変わり、いずれかのテストが失敗した場合は赤色に変わります。  
   
-3.  この場合は、テストが失敗します。 このテスト メソッドは、 **[失敗したテスト]** に移動します。 が表示されます。 エクスプローラーでテスト メソッドを選択すると、ウィンドウの下部に詳細が表示されます。  
+3. この場合は、テストが失敗します。 このテスト メソッドは、 **[失敗したテスト]** に移動します。 が表示されます。 エクスプローラーでテスト メソッドを選択すると、ウィンドウの下部に詳細が表示されます。  
   
-##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> コードを修正してテストを再実行する  
+## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> コードを修正してテストを再実行する  
  **テスト結果を分析する**  
   
  テスト結果には失敗を示すメッセージが含まれています。 `AreEquals` メソッドについて、メッセージには、想定された事項 (<strong>Expected\<*XXX*></strong> パラメーター) および実際に受け取られた事項 (**Actual\<*YYY*>** パラメーター) が示されます。 ここでは、残高が期首残高よりも減少していることを想定していましたが、逆に、引き出し額の分が増加していました。  
@@ -259,7 +259,7 @@ m_balance -= amount;
   
  テスト エクスプローラーで、 **[すべて実行]** をクリックしてテストを再実行します。 赤色/緑色のステータス バーは緑色になり、テストは **[成功したテスト]** グループに移動します。  
   
-##  <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> 単体テストを使用してコードを改良する  
+## <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> 単体テストを使用してコードを改良する  
  このセクションでは、分析の反復処理、単体テストの進展、およびリファクタリングが、実稼働のコードの堅牢性と有効性を高めるうえでどのように役立つかを説明します。  
   
  **問題を分析する**  

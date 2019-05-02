@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 15e65b85490c2cc65a6f965a37bd28b9a241b428
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048763"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>エラー :Web サーバー上でデバッグを開始できません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Web サーバーで実行されている ASP.NET アプリケーションをデ�
   
 多くの場合、IIS が正しく構成されていないためにこのエラーが発生します。
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> IIS の構成を確認してください。
+## <a name="vxtbshttpservererrorsthingstocheck"></a> IIS の構成を確認してください。
 
 詳細なここでは、およびデバッグをもう一度試す前に、問題を解決する手順を実行するには後、は、IIS をリセットする必要がありますも。 管理者のコマンド プロンプトを開き、入力を行うことができます`iisreset`、またはこれを行う IIS マネージャーでします。 
 
@@ -88,7 +88,6 @@ Web サーバーで実行されている ASP.NET アプリケーションをデ�
     (後ほど修正) 以前のバージョンのバグには、ASP.NET のデバッグ シナリオの一部で管理者特権が必要です。
     
 - Visual Studio の複数のインスタンスが実行されている場合、Visual Studio の 1 つのインスタンスでプロジェクトを再び開くもう一度やり直してください。
-   
-  
+
 ## <a name="see-also"></a>関連項目  
  [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

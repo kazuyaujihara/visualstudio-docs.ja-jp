@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971122"
 ---
 # <a name="how-to-sign-office-solutions"></a>方法: Office ソリューションに署名します。
   ソリューションに署名する場合は、証拠として、証明書を使用してソリューションに信頼を付与できます。 複数のソリューションに対して、同じ証明書を使用して追加のセキュリティ ポリシーの更新プログラムのないすべてのソリューションが信頼されます。
@@ -35,15 +35,15 @@ ms.locfileid: "54871664"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>証明書を使用して Office ソリューションに署名するには
 
-1.  **プロジェクト** メニューのをクリックして_SolutionName_**プロパティ**します。
+1. **プロジェクト** メニューのをクリックして_SolutionName_**プロパティ**します。
 
-2.  **[署名]** タブをクリックします。
+2. **[署名]** タブをクリックします。
 
-3.  選択**ClickOnce マニフェストに署名**します。
+3. 選択**ClickOnce マニフェストに署名**します。
 
-4.  クリックして証明書を見つけます**ストアから選択**または**ファイルから選択**証明書に移動するとします。
+4. クリックして証明書を見つけます**ストアから選択**または**ファイルから選択**証明書に移動するとします。
 
-5.  正しい証明書が使用されていることを確認するには、次のようにクリックします。**詳細**証明書情報を表示します。
+5. 正しい証明書が使用されていることを確認するには、次のようにクリックします。**詳細**証明書情報を表示します。
 
 ## <a name="see-also"></a>関連項目
 

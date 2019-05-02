@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d86074dabc4365d1d0336f191beada215f4dc1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569681"
 ---
 # <a name="compare-properties-and-items"></a>プロパティと項目を比較する
 MSBuild のプロパティと項目は、いずれもタスクに情報を渡し、条件を評価し、プロジェクト ファイルで参照する値を格納しておくために使用されます。
@@ -86,7 +86,6 @@ MSBuild は、項目の種類と文字列値の変換を必要に応じて実行
 - 項目定義が出現順に定義および修正されます。
 
 - 項目が出現順に定義および修正されます。
-
 
 ビルドの実行フェーズでは、ターゲット内で定義されるプロパティおよび項目は、出現順に、1 つの段階でまとめて評価されます。
 

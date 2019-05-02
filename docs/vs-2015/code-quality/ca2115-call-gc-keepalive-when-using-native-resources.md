@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 46a9b8ce099146b6bae853557404c7bfabbbfb6a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0eadff91e8762349ec95c2d9f3bf5717bfecaa4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435035"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115:ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "58976870"
  次の例では、`BadMethod`への呼び出しを含まない`GC.KeepAlive`そのため、ルールに違反するとします。 `GoodMethod` 修正後のコードが含まれています。
 
 > [!NOTE]
->  この例は、コードをコンパイルして実行が擬似コード、アンマネージ リソースの作成または解放はされないために、この警告は発生しません。
+> この例は、コードをコンパイルして実行が擬似コード、アンマネージ リソースの作成または解放はされないために、この警告は発生しません。
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 

@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3a4e4f67ef8a7cc1e13e513d2f03db5f755363
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MT
+ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59003007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437678"
 ---
 # <a name="view-dom-event-listeners"></a>DOM イベント リスナーの表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,30 +34,30 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  リスト、**イベント** タブは動的です。 アプリの実行中にイベント リスナーを追加すると、新しいイベント リスナーが一覧に表示されます。 追加とイベント リスナーの削除については、次を参照してください。[をイベント リスナーで問題を解決するためのヒント](#Tips)このトピックの「します。
 
 > [!NOTE]
->  イベント リスナーなど、DOM 要素でないコード要素の`xhr`に表示されない、**イベント**タブ。
+> イベント リスナーなど、DOM 要素でないコード要素の`xhr`に表示されない、**イベント**タブ。
 
 ## <a name="view-event-listeners-for-dom-elements"></a>DOM 要素のイベント リスナーの表示
  この例は、Windows Phone ストア アプリを示します。 ここで説明する DOM Explorer の機能は、Windows ストア アプリでもサポートされます。
 
 #### <a name="to-view-event-listeners"></a>イベント リスナーを表示するには
 
-1.  Visual Studio で、Windows Phone ピボット アプリケーション プロジェクト テンプレートを使用する JavaScript アプリを作成します。
+1. Visual Studio で、Windows Phone ピボット アプリケーション プロジェクト テンプレートを使用する JavaScript アプリを作成します。
 
-2.  テンプレートを Visual Studio で開いて、次のように選択します。 **4 in 512 MB のエミュレーター 8.1 WVGA**デバッガーでデバッグ ツールバーのドロップダウン リストで。
+2. テンプレートを Visual Studio で開いて、次のように選択します。 **4 in 512 MB のエミュレーター 8.1 WVGA**デバッガーでデバッグ ツールバーのドロップダウン リストで。
 
      ![デバッグ対象を選択する](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")
 
-3.  F5 キーを押して、アプリをデバッグ モードで実行します。
+3. F5 キーを押して、アプリをデバッグ モードで実行します。
 
-4.  実行中のアプリに移動、**セクション 3**ピボット テーブル アイテム。
+4. 実行中のアプリに移動、**セクション 3**ピボット テーブル アイテム。
 
-5.  Visual Studio に切り替えます (Alt + Tab キーまたは F12 キーを押します)。
+5. Visual Studio に切り替えます (Alt + Tab キーまたは F12 キーを押します)。
 
-6.  DOM Explorer で、右上の [`Find`] を選択します。
+6. DOM Explorer で、右上の [`Find`] を選択します。
 
-7.  「 `ListView`」と入力して Enter キーを押します。
+7. 「 `ListView`」と入力して Enter キーを押します。
 
-8.  必要に応じて、選択、 **[次へ]** を検索するボタン、`DIV`要素を表す、`ListView`コントロール (この要素には、`data-win-control`の値`WinJS.UI.ListView`)。
+8. 必要に応じて、選択、 **[次へ]** を検索するボタン、`DIV`要素を表す、`ListView`コントロール (この要素には、`data-win-control`の値`WinJS.UI.ListView`)。
 
      DOM Explorer で `DIV` 要素が選択された状態になります。
 
@@ -75,16 +75,16 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
      **イベント** タブには、階層リストで選択した任意の要素のイベント リスナーが表示されます。
 
-###  <a name="Tips"></a> イベント リスナーで問題を解決するためのヒント
+### <a name="Tips"></a> イベント リスナーで問題を解決するためのヒント
  一部のアプリのシナリオでイベント リスナーする必要があります明示的に削除するを使用して[removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx)します。 使用して、**イベント**イベント リスナーは、コードの実行中に DOM 要素から削除されているかどうかをテストする DOM エクスプ ローラー タブ。 これらの問題の解決に役立つヒントを次に示します。
 
--   Visual Studio で実装された単一ページ ナビゲーション モデルを使用するアプリの[プロジェクト テンプレート](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx)、通常、ページの一部である DOM 要素などのオブジェクトに登録されたイベント リスナーを削除する必要はありません。 このシナリオでは、DOM 要素およびその関連付けられたイベント リスナーの有効期間は同じであり、ガベージ コレクションが可能です。
+- Visual Studio で実装された単一ページ ナビゲーション モデルを使用するアプリの[プロジェクト テンプレート](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx)、通常、ページの一部である DOM 要素などのオブジェクトに登録されたイベント リスナーを削除する必要はありません。 このシナリオでは、DOM 要素およびその関連付けられたイベント リスナーの有効期間は同じであり、ガベージ コレクションが可能です。
 
--   DOM 要素またはオブジェクトの有効期間が関連付けられたイベント リスナーと異なる場合には、`removeEventListener` メソッドを呼び出す必要があります。 たとえば、`window.onresize` イベントを使用する場合に、イベントを処理するページから離れるとイベント リスナーを削除しなければならない場合があります。
+- DOM 要素またはオブジェクトの有効期間が関連付けられたイベント リスナーと異なる場合には、`removeEventListener` メソッドを呼び出す必要があります。 たとえば、`window.onresize` イベントを使用する場合に、イベントを処理するページから離れるとイベント リスナーを削除しなければならない場合があります。
 
--   `removeEventListener` が指定のリスナーを削除できなかった場合は、別のオブジェクトのインスタンスが呼び出された可能性があります。 使用することができます、 [bind メソッド (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)リスナーを追加するときに、この問題を解決するメソッド。
+- `removeEventListener` が指定のリスナーを削除できなかった場合は、別のオブジェクトのインスタンスが呼び出された可能性があります。 使用することができます、 [bind メソッド (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)リスナーを追加するときに、この問題を解決するメソッド。
 
--   いずれかを使用して追加されたイベント リスナーを削除する[bind メソッド (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)または匿名関数を使用して、リスナーを追加するときに、関数のインスタンスを格納します。 このパターンを安全に使用するための 1 つの方法を次に示します。
+- いずれかを使用して追加されたイベント リスナーを削除する[bind メソッド (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)または匿名関数を使用して、リスナーを追加するときに、関数のインスタンスを格納します。 このパターンを安全に使用するための 1 つの方法を次に示します。
 
     ```javascript
     // You could use the following code within the constructor function of an object, or
@@ -104,9 +104,9 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
     elem.addEventListener('mouseup', this._handlerFunc.bind(this));
     ```
 
--   `removeEventListener` のような `obj.on<eventname>` 属性を使用して追加した場合には、`window.onresize = handlerFunc` を使用してイベント リスナーを削除することはできません。
+- `removeEventListener` のような `obj.on<eventname>` 属性を使用して追加した場合には、`window.onresize = handlerFunc` を使用してイベント リスナーを削除することはできません。
 
--   JavaScript メモリ アナライザーを使用して[JavaScript メモリ](../profiling/javascript-memory.md)アプリ。 明示的に削除されたイベント リスナーは、メモリー リークとして表示されることがあります。
+- JavaScript メモリ アナライザーを使用して[JavaScript メモリ](../profiling/javascript-memory.md)アプリ。 明示的に削除されたイベント リスナーは、メモリー リークとして表示されることがあります。
 
 ## <a name="see-also"></a>関連項目
 

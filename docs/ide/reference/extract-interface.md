@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 261ddf457ad117812be9971b630c2fcd3b75b550
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791237"
 ---
 # <a name="extract-an-interface-refactoring"></a>インターフェイスの抽出リファクタリング
 
@@ -58,13 +58,11 @@ ms.locfileid: "57983201"
 
    ![インターフェイスの展開](media/extractinterface-dialog-same-file.png)
 
-
    | フィールド | 説明 |
    | - | - |
    | **新しいインターフェイス名** | 作成するインターフェイスの名前。 名前は既定値の I*ClassName* になります。ここで、*ClassName* は上で選択したクラスの名前になります。 |
    | **新しいファイル名** | インターフェイスを含む、生成されたファイルの名前。 インターフェイス名と同様に、この名前の既定値は I*ClassName* になります。ここで、*ClassName* は上で選択したクラスの名前です。 **現在のファイルに追加**するオプションを選択することもできます。 |
    | **インターフェイスを形成するパブリック メンバーを選択する** | インターフェイスに抽出する項目。 選択できる数に制限はありません。 |
-
 
 4. **[OK]** をクリックします。
 
@@ -73,15 +71,13 @@ ms.locfileid: "57983201"
    - C#: 
 
       ![結果のクラス - C#](media/extractinterface-class-cs.png)
-      
-      
+
       ![結果のインターフェイス - C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic: 
 
       ![結果のクラス - Visual Basic](media/extractinterface-class-vb.png)
-      
-      
+
       ![結果のインターフェイス - Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>関連項目

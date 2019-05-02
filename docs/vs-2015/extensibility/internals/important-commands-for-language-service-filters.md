@@ -1,27 +1,22 @@
 ---
 title: 言語の重要なコマンド サービス フィルター |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, filters
 - language services, commands to support
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2c99fdefdd8a215be04bb16b88f56be56b7fff67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 03bb20abf32f7c320ed56f4a649a9f43453e7694
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447263"
 ---
 # <a name="important-commands-for-language-service-filters"></a>言語サービス フィルターの重要なコマンド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51787100"
 ## <a name="commands-to-handle"></a>ハンドルするためのコマンド  
   
 > [!NOTE]
->  場合によっては、次の表のすべてのコマンドのフィルター処理する必要はありません。  
+> 場合によっては、次の表のすべてのコマンドのフィルター処理する必要はありません。  
   
 |コマンド|説明|  
 |-------------|-----------------|  
@@ -47,4 +42,3 @@ ms.locfileid: "51787100"
   
 ## <a name="see-also"></a>関連項目  
  [従来の言語サービスの開発](../../extensibility/internals/developing-a-legacy-language-service.md)
-

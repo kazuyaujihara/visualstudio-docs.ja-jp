@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 348ddd00d6f6db0ac4080030d2ecaa5b73c57f18
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f14924ac9464cc6239564f775a122551a9d94c15
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843646"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 要素 (Visual Studio テンプレート)
 
@@ -60,19 +60,19 @@ Visual Studio 2013 更新プログラム 2 で導入されました。 正しい
 
 有効な式の構文は次のように定義されます。
 
--   機能の式など"(Visualc++ &#124; CSharp) + (MSTest &#124; NUnit)"。
+- 機能の式など"(Visualc++ &#124; CSharp) + (MSTest &#124; NUnit)"。
 
--   "&#124;"は OR 演算子です。
+- "&#124;"は OR 演算子です。
 
--   "&" および "+" 文字は、どちらも AND 演算子です。
+- "&"と「+」文字は、どちらも AND 演算子。
 
--   "!" 文字は NOT 演算子です。
+- "!" 文字は NOT 演算子です。
 
--   かっこで囲むことで、評価の優先順位が強制的に設定されます。
+- かっこで囲むことで、評価の優先順位が強制的に設定されます。
 
--   Null または空の式は、一致として評価されます。
+- Null または空の式は、一致として評価されます。
 
--   これらの予約文字を除く任意の文字をプロジェクトの機能があります:"':;,+-*/\\! ~&#124;& %$@^() ={}:operator[] <> でしょうか。 を除く文字を使用できます。
+- これらの予約文字を除く任意の文字をプロジェクトの機能があります:"':;,+-*/\\! ~&#124;& %$@^() ={}:operator[] <> でしょうか。 を除く文字を使用できます。
 
 ## <a name="example"></a>例
 

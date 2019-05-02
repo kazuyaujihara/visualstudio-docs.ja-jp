@@ -15,19 +15,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 640eefb53304de48e4ad2398a02910a1cff1b57d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 46e01a4e6bb989fad2da6f979c79b7aba13df63a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007315"
 ---
 # <a name="invalid-replacer-argument"></a>置換関数の引数が無効です。
 呼び出しが試行された`JSON.stringify`引数が無効です。 `replacer`関数または配列を引数として使用することがあります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   変更、`replacer`関数または配列への引数。  
+- 変更、`replacer`関数または配列への引数。  
   
 ## <a name="example"></a>例  
  この例では、コードが実行時エラー`memberfilter`関数または配列ではなくオブジェクトです。  

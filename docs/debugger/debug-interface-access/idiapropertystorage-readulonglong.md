@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f365578aba73ed94bdcd1d87801fc53030cfecdb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828375"
 ---
 # <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
 読み取り`ULONGLONG`プロパティ セット内の値。
@@ -43,7 +43,7 @@ HRESULT ReadULONGLONG ( 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。 返します`E_INVALIDARG`型のプロパティがない場合`ULONGLONG`します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  A `ULONGLONG` 64 ビット符号なし整数としての Windows によって定義されます。
 
 ## <a name="see-also"></a>関連項目

@@ -12,37 +12,37 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 167e4f4b8977ed847823fb6db101f207142d6b4d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0beb86e3cb939a33a6b0fab3922b2a31a88a3307
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439256"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>方法 : エディター内のテキストの大文字と小文字を変更する
+# <a name="how-to-change-text-case-in-the-editor"></a>方法: エディターでテキストの大文字小文字を変更します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 メニュー コマンドやキーボード ショートカットを使って、選択したテキストを、すべて大文字またはすべて小文字に変換できます。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、**ヘルプ**の説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、**ヘルプ**の説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="procedure"></a>プロシージャ  
   
 #### <a name="to-switch-text-to-upper-case"></a>テキストを大文字に切り替えるには  
   
-1.  変換するテキストを選択します。  
+1. 変換するテキストを選択します。  
   
-2.  **[編集]** メニューの **[詳細設定]** を選択します。  
+2. **[編集]** メニューの **[詳細設定]** を選択します。  
   
-3.  テキストをすべて大文字に変換するには、**[大文字に変換]** を選択するか、または **Ctrl** + **Shift** + **U** キーを押します。  
+3. テキストをすべて大文字に変換するには、**[大文字に変換]** を選択するか、または **Ctrl** + **Shift** + **U** キーを押します。  
   
      または  
   
      テキストをすべて小文字に変換するには、**[小文字に変換]** を選択するか、または **Ctrl** + **U** キーを押します。  
   
     > [!TIP]
-    >  大文字/小文字の書式設定を元に戻すには、**[編集]** メニューの **[元に戻す]** を選択します。  
+    > 大文字/小文字の書式設定を元に戻すには、**[編集]** メニューの **[元に戻す]** を選択します。  
   
 ## <a name="see-also"></a>関連項目
  [エディターのカスタマイズ](../ide/customizing-the-editor.md)   

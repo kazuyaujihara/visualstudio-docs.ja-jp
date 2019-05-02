@@ -13,17 +13,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ef637126c75dd05eea2e8bfca76f0fe0bd13ac75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445391"
 ---
 # <a name="task-writing"></a>タスクの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 タスクでは、ビルド プロセスの間に実行するコードを指定します。 タスクはターゲットに含まれます。 一般的なタスクのライブラリは [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] に付属します。独自のタスクを作成することもできます。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] に付属するタスク ライブラリの詳細については、[タスク リファレンス](../msbuild/msbuild-task-reference.md)を参照してください。  
   
 ## <a name="tasks"></a>[タスク]  
@@ -106,7 +105,7 @@ namespace MyTasks
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ファイルの Microsoft.Common.Tasks は、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] に付属するすべてのタスクを登録する `UsingTask` 要素の一覧が含まれるプロジェクト ファイルです。 このファイルは、あらゆるプロジェクトのビルド時に自動的に追加されます。 Microsoft.Common.Tasks に登録されているタスクが現在のプロジェクト ファイルにも登録されている場合、現在のプロジェクト ファイルに優先権が与えられます。つまり、既定のタスクが、同じ名前を持つ独自のタスクでオーバーライドされます。  
   
 > [!TIP]
->  Microsoft.Common.Tasks のコンテンツを表示することで、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] に付属するタスクの一覧を確認できます。  
+> Microsoft.Common.Tasks のコンテンツを表示することで、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] に付属するタスクの一覧を確認できます。  
   
 ## <a name="raising-events-from-a-task"></a>タスクからイベントを生成する  
  タスクが <xref:Microsoft.Build.Utilities.Task> ヘルパー クラスから派生する場合、<xref:Microsoft.Build.Utilities.Task> クラスで次のいずれかのヘルパー メソッドを利用して生成したイベントは、登録されているあらゆるロガーで記録され、表示されます。  

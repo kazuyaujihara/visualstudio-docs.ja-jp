@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d34b7a915f2eb2bd1ddf9440c543d652de8eb892
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b1096755c1647f976b76ab61be1c24b358d4363d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412624"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 このインターフェイスは、スタック フレームのプロパティまたはその他のいくつかのプロパティへの参照を表します。
 
 > [!NOTE]
->  `IDebugReference2` 将来の使用とそのメソッドが返す必要がありますすべてに予約されている`E_NOTIMPL`します。
+> `IDebugReference2` 将来の使用とそのメソッドが返す必要がありますすべてに予約されている`E_NOTIMPL`します。
 
 ## <a name="syntax"></a>構文
 
@@ -57,7 +57,7 @@ IDebugReference2 : IUnknown
 ## <a name="remarks"></a>Remarks
 
 > [!NOTE]
->  この「プロパティ」を使用する必要がありますと混同しない、つまり、クラスのメンバー変数が、`IDebugReference2`そのエンティティを表すことができます。
+> この「プロパティ」を使用する必要がありますと混同しない、つまり、クラスのメンバー変数が、`IDebugReference2`そのエンティティを表すことができます。
 
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 、プロパティを表す、 `IDebugReference2` 、デバッグ中のプログラム内のオブジェクトへの参照を通常のプロパティの参照を表します。
 

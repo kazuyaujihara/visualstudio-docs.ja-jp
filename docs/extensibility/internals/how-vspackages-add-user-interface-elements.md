@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d37ef5efcdc7e559e19fcce396e8c87875bdf59
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: b392c962a2ddbed57ca1af934c0ef9d8b5175595
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418402"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage がユーザー インターフェイス要素を追加する方法
 VSPackage は、たとえば、メニュー、ツールバーのユーザー インターフェイス (UI) 要素を追加し、ツール ウィンドウ、Visual studio で、 *.vsct*ファイル。
@@ -27,11 +27,11 @@ VSPackage は、たとえば、メニュー、ツールバーのユーザー イ
 ## <a name="the-visual-studio-command-table-architecture"></a>Visual Studio コマンド テーブルのアーキテクチャ
  前述のように、コマンド テーブルのアーキテクチャは、上記のアーキテクチャの原則をサポートします。 抽象化、データ構造、およびツールのコマンド テーブルのアーキテクチャの背後にある原則は次のとおりです。
 
--   項目の 3 つの基本的な種類があります: メニューのコマンド、およびグループ。 メニューは、メニューのサブメニュー、ツールバー、またはツール ウィンドウとして、UI で公開できます。 コマンドは、IDE では、ユーザーが実行できるし、メニューのボタン、リスト ボックス、または他のコントロールとして公開できるようするプロシージャです。 グループは、メニューとコマンドの両方のコンテナーです。
+- 項目の 3 つの基本的な種類があります: メニューのコマンド、およびグループ。 メニューは、メニューのサブメニュー、ツールバー、またはツール ウィンドウとして、UI で公開できます。 コマンドは、IDE では、ユーザーが実行できるし、メニューのボタン、リスト ボックス、または他のコントロールとして公開できるようするプロシージャです。 グループは、メニューとコマンドの両方のコンテナーです。
 
--   各項目は、アイテム、その優先順位の他の項目とその動作を変更するフラグを記述する定義によって指定されます。
+- 各項目は、アイテム、その優先順位の他の項目とその動作を変更するフラグを記述する定義によって指定されます。
 
--   各項目には、項目の親を表す配置します。 項目は、UI に複数の場所で表示できるようにする、複数の親を指定できます。
+- 各項目には、項目の親を表す配置します。 項目は、UI に複数の場所で表示できるようにする、複数の親を指定できます。
 
      すべてのコマンドは、そのグループ内の唯一の子である場合でも、その親グループが必要です。 すべての標準のメニューは、親グループも必要です。 ツールバーとツール ウィンドウは、独自の親として機能します。 グループは、その親のメインの Visual Studio のメニュー バー、または、メニューのツールバー、またはツール ウィンドウとして設定できます。
 
@@ -63,7 +63,7 @@ VSPackage は、たとえば、メニュー、ツールバーのユーザー イ
  最上位の要素、`Symbols`セクションは、 [GuidSymbol 要素](../../extensibility/guidsymbol-element.md)します。 `GuidSymbol` 要素は、パッケージとその構成要素を識別するために、IDE で使用される Guid に名をマップします。
 
 > [!NOTE]
->  Guid は、Visual Studio パッケージ テンプレートによって自動的に生成されます。 クリックして、一意の GUID を作成することも**GUID の作成**上、**ツール**メニュー。
+> Guid は、Visual Studio パッケージ テンプレートによって自動的に生成されます。 クリックして、一意の GUID を作成することも**GUID の作成**上、**ツール**メニュー。
 
  最初の`GuidSymbol`要素、 `guid<PackageName>Pkg`、パッケージ自体の GUID です。 これは、Visual Studio によってパッケージの読み込みに使用される GUID です。 通常、子要素はありません。
 
@@ -74,15 +74,15 @@ VSPackage は、たとえば、メニュー、ツールバーのユーザー イ
 ### <a name="menus-groups-and-commands"></a>メニューのグループ、およびコマンド
  メニューのグループ、またはコマンドの GUID と ID を持つ、ときに、IDE に追加できます。 UI 要素はすべて、次のことがあります。
 
--   A`guid`属性の名前に一致する、`GuidSymbol`で UI 要素が定義されている要素。
+- A`guid`属性の名前に一致する、`GuidSymbol`で UI 要素が定義されている要素。
 
--   `id` 、関連付けられている名前に一致する属性`IDSymbol`要素。
+- `id` 、関連付けられている名前に一致する属性`IDSymbol`要素。
 
      同時に、`guid`と`id`属性を作成、*署名*の UI 要素。
 
--   A`priority`属性を親メニューまたはグループの UI 要素の位置を決定します。
+- A`priority`属性を親メニューまたはグループの UI 要素の位置を決定します。
 
--   A[親要素](../../extensibility/parent-element.md)を持つ`guid`と`id`親メニューまたはグループの署名を指定する属性。
+- A[親要素](../../extensibility/parent-element.md)を持つ`guid`と`id`親メニューまたはグループの署名を指定する属性。
 
 #### <a name="menus"></a>メニュー
  各メニューとして定義されている、[メニュー要素](../../extensibility/menu-element.md)で、`Menus`セクション。 メニューがあります`guid`、 `id`、および`priority`属性、および`Parent`要素と次の追加属性も子。
@@ -263,20 +263,20 @@ priority="0x0100" type="Menu">
 #### <a name="general-requirements"></a>一般的な要件
  コマンドは、表示および有効にする前に、次の一連のテストを渡す必要があります。
 
--   コマンドが正しく配置されています。
+- コマンドが正しく配置されています。
 
--   `DefaultInvisible`フラグは設定されません。
+- `DefaultInvisible`フラグは設定されません。
 
--   親メニューやツールバーが表示されます。
+- 親メニューやツールバーが表示されます。
 
--   コンテキストのエントリのため、コマンドが非表示は、 [VisibilityConstraints 要素](../../extensibility/visibilityconstraints-element.md)セクション。
+- コンテキストのエントリのため、コマンドが非表示は、 [VisibilityConstraints 要素](../../extensibility/visibilityconstraints-element.md)セクション。
 
--   実装する VSPackage コード、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイスが表示され、コマンドを使用します。 インターセプトがし、その実施するインターフェイスのコードはありません。
+- 実装する VSPackage コード、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイスが表示され、コマンドを使用します。 インターセプトがし、その実施するインターフェイスのコードはありません。
 
--   ユーザーは、コマンドをクリックするに記載されている手順に従ってなります[ルーティング アルゴリズム](../../extensibility/internals/command-routing-algorithm.md)します。
+- ユーザーは、コマンドをクリックするに記載されている手順に従ってなります[ルーティング アルゴリズム](../../extensibility/internals/command-routing-algorithm.md)します。
 
 ## <a name="call-pre-defined-commands"></a>定義済みのコマンドを呼び出す
- [UsedCommands 要素](../../extensibility/usedcommands-element.md)または IDE で他の Vspackage によって提供されるコマンドにアクセスする Vspackage を使用します。 これを行うには、作成、 [UsedCommand 要素](../../extensibility/usedcommand-element.md)GUID とコマンドの使用の ID を持ちます。 こう現在の Visual Studio の構成の一部ではない場合でも、Visual Studio によって、コマンドが読み込まれます。 詳細については、[UsedCommand 要素](../../extensibility/usedcommand-element.md)を参照してください。
+ [UsedCommands 要素](../../extensibility/usedcommands-element.md)または IDE で他の Vspackage によって提供されるコマンドにアクセスする Vspackage を使用します。 これを行うには、作成、 [UsedCommand 要素](../../extensibility/usedcommand-element.md)GUID とコマンドの使用の ID を持ちます。 こう現在の Visual Studio の構成の一部ではない場合でも、Visual Studio によって、コマンドが読み込まれます。 詳細については、次を参照してください。 [UsedCommand 要素](../../extensibility/usedcommand-element.md)します。
 
 ## <a name="interface-element-appearance"></a>インターフェイス要素の外観
  選択して、コマンド要素の配置に関する考慮事項は次のとおりです。

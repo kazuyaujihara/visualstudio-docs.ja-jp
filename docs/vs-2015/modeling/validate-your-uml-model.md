@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c805c842832ac99c527ea382169775d8b6b2529
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437456"
 ---
 # <a name="validate-your-uml-model"></a>UML モデルの検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Visual Studio で描画できる UML モデルの一部が、プロジェクト�
 - **検証コマンド。** いつでも検証を呼び出す次のようにクリックします。 **UML モデルの検証**上、**アーキテクチャ**メニュー。  
   
   > [!NOTE]
-  >  検証制約がインストールされている場合に限り、コマンドが表示されます。  
+  > 検証制約がインストールされている場合に限り、コマンドが表示されます。  
   
 - **でモデルを保存しています。** モデルを保存するとき、検証制約を適用できます。 これらの制約の目的は、プロジェクトの解釈に従った場合に無効であるモデルが保存されることがないようにすることです。  
   
@@ -49,24 +49,24 @@ Visual Studio で描画できる UML モデルの一部が、プロジェクト�
   
 #### <a name="to-install-a-visual-studio-extension"></a>Visual Studio 拡張機能をインストールするには  
   
-1.  ダブルクリックして、 **.vsix** Windows エクスプ ローラー (またはファイル エクスプ ローラー) でのファイル。  
+1. ダブルクリックして、 **.vsix** Windows エクスプ ローラー (またはファイル エクスプ ローラー) でのファイル。  
   
-2.  既に実行されている [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のインスタンスを再起動します。  
+2. 既に実行されている [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のインスタンスを再起動します。  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>検証制約の無効化およびインストール  
  制約を適用しないモデルを操作するとき、制約を含んだ拡張機能を一時的に無効にすることができます。 この方法により、各種の拡張機能を有効または無効にして、さまざまなモデルを個別に操作できます。  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Visual Studio 拡張機能を無効化またはアンインストールするには  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ツール** メニューのをクリックして**拡張機能と更新**します。  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ツール** メニューのをクリックして**拡張機能と更新**します。  
   
-2.  拡張機能、と共に次のようにクリックします。**を無効にする**、拡張機能を一時的に無効にします。 返すことによって後で有効再ことができます、**拡張機能と更新**ウィンドウ。  
+2. 拡張機能、と共に次のようにクリックします。**を無効にする**、拡張機能を一時的に無効にします。 返すことによって後で有効再ことができます、**拡張機能と更新**ウィンドウ。  
   
      \- または -  
   
      クリックして**アンインストール**拡張機能を削除します。  
   
-3.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を再起動します。  
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を再起動します。  
   
 ## <a name="see-also"></a>関連項目  
  [UML モデルの検証制約を定義します。](../modeling/define-validation-constraints-for-uml-models.md)   

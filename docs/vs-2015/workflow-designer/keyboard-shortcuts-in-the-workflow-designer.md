@@ -1,11 +1,8 @@
 ---
 title: ワークフロー デザイナーでのキーボード ショートカット |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
@@ -13,13 +10,13 @@ ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951958"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>ワークフロー デザイナーのキーボード ショートカット
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]のすべてのコア機能に、キーボードでアクセスできます。  
@@ -57,13 +54,13 @@ ms.locfileid: "49895341"
   
 - アクティビティを接続するには、次の操作を実行します。  
   
-  1.  Tab キーで接続元アクティビティに移動して選択します。  
+  1. Tab キーで接続元アクティビティに移動して選択します。  
   
-  2.  必要な回数だけ Ctrl キーを押しながら E キーを押し、X キーを押して、キーボード フォーカスを接続先アクティビティに移動します。  
+  2. 必要な回数だけ Ctrl キーを押しながら E キーを押し、X キーを押して、キーボード フォーカスを接続先アクティビティに移動します。  
   
-  3.  Ctrl キーを押しながら E キーを押し、S キーを押して、接続先アクティビティを選択範囲に追加します。  
+  3. Ctrl キーを押しながら E キーを押し、S キーを押して、接続先アクティビティを選択範囲に追加します。  
   
-  4.  Ctrl キーを押しながら E キーを押し、F キーを押して、接続元アクティビティから接続先アクティビティへのコネクタを追加します。  
+  4. Ctrl キーを押しながら E キーを押し、F キーを押して、接続元アクティビティから接続先アクティビティへのコネクタを追加します。  
   
   キーボードでアクティビティを接続する際は、次のことに注意してください。  
   
@@ -76,18 +73,18 @@ ms.locfileid: "49895341"
 ### <a name="expression-editing"></a>式の編集  
  既定では、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] のテキスト編集用の既定のキーボード ショートカットが、[!INCLUDE[wfd2](../includes/wfd2-md.md)]の式エディター内に適用されます。だたし、次の制限があります。  
   
--   次のコマンドのキーボード ショートカットの再マップは無効です。 既定のキーボード ショートカットは、式の編集時にこれらのコマンドにアクセスするためにのみ使用できます。  
+- 次のコマンドのキーボード ショートカットの再マップは無効です。 既定のキーボード ショートカットは、式の編集時にこれらのコマンドにアクセスするためにのみ使用できます。  
   
-    1.  切り取り  
+    1. 切り取り  
   
-    2.  コピー  
+    2. コピー  
   
-    3.  貼り付け  
+    3. 貼り付け  
   
-    4.  すべて選択  
+    4. すべて選択  
   
-    5.  [元に戻す]  
+    5. 元に戻す  
   
-    6.  やり直し  
+    6. やり直し  
   
--   [!INCLUDE[wfd2](../includes/wfd2-md.md)] で、[!INCLUDE[vs2010](../includes/vs2010-md.md)]内の式の編集コマンドのキーボード ショートカットを再マップするには、[!INCLUDE[wfd2](../includes/wfd2-md.md)] スコープでショートカットを編集します。 テキスト エディター スコープで行った変更は、自動的には[!INCLUDE[wfd2](../includes/wfd2-md.md)]に適用されません。 両方の場所でショートカットを再マップするには、変更を 2 回 (スコープごとに 1 回ずつ) 適用する必要があります。
+- [!INCLUDE[wfd2](../includes/wfd2-md.md)] で、[!INCLUDE[vs2010](../includes/vs2010-md.md)]内の式の編集コマンドのキーボード ショートカットを再マップするには、[!INCLUDE[wfd2](../includes/wfd2-md.md)] スコープでショートカットを編集します。 テキスト エディター スコープで行った変更は、自動的には[!INCLUDE[wfd2](../includes/wfd2-md.md)]に適用されません。 両方の場所でショートカットを再マップするには、変更を 2 回 (スコープごとに 1 回ずつ) 適用する必要があります。

@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35713751061e5a590a5a7bc9cc5fa03bccd56966
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b9a5612a9d6fd04850134a51f62a02496deb1708
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441938"
 ---
 # <a name="setting-bookmarks-in-code"></a>コードへのブックマークの設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54769305"
  ブックマークを追加するには、ブックマークを設定する行にカーソルを置きます。 **トグル** ボタンをクリックするか、Ctrl + K キーを押します。 これで、ブックマークが追加されます。 もう一度、トグル ボタンをクリックすると (または Ctrl + K を押すと)、ブックマークが削除されます。 ブックマーク ウィンドウの **[削除]** ボタンをクリックしても、ブックマークを削除できます。  
   
 > [!IMPORTANT]
->  ブックマークは、コードではなく行番号に設定されます。 コードを変更しても、ブックマークはその行番号の位置に維持され、コードと一緒に移動しません。  
+> ブックマークは、コードではなく行番号に設定されます。 コードを変更しても、ブックマークはその行番号の位置に維持され、コードと一緒に移動しません。  
   
  ブックマーク ウィンドウの **[次のブックマーク]** および **[前のブックマーク]** ボタンを使用して、ブックマークの間で移動できます。  
   

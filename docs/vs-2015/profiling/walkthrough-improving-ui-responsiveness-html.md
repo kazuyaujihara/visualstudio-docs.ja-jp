@@ -19,30 +19,30 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b31d5c7d22ae209b46bdd4c422f6c3e7473ec8e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433169"
 ---
-# <a name="walkthrough-improving-ui-responsiveness-html"></a>チュートリアル: UI の応答性の向上 (HTML)
+# <a name="walkthrough-improving-ui-responsiveness-html"></a>チュートリアル: UI 応答性 (HTML) の向上
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、[HTML UI の応答性プロファイラー](../profiling/html-ui-responsiveness.md)を使って、パフォーマンスの問題を特定し修復するプロセスについて説明します。 このプロファイラーは、Visual Studio で、JavaScript を使用した Windows ユニバーサルおよび Windows ストアのアプリに対して使用できます。 このシナリオでは、DOM 要素の更新の頻度が高すぎるパフォーマンス テスト アプリを作成し、この問題をプロファイラーを使用して特定および修正します。  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>パフォーマンス テスト アプリを作成して実行する  
   
-1.  Visual Studio で、新しい Windows ユニバーサル JavaScript プロジェクトを作成します。 (**[ファイル]、[新規作成]、[プロジェクト] の順に選択します**。 左ペインで **[JavaScript]** を選択し、次に **[Windows]**、**[Windows 10]** と選択してから、**[ユニバーサル]** または **[Windows Phone]** を選択します。  
+1. Visual Studio で、新しい Windows ユニバーサル JavaScript プロジェクトを作成します。 (**[ファイル]、[新規作成]、[プロジェクト] の順に選択します**。 左ペインで **[JavaScript]** を選択し、次に **[Windows]**、**[Windows 10]** と選択してから、**[ユニバーサル]** または **[Windows Phone]** を選択します。  
   
-2.  > [!IMPORTANT]
-    >  このトピックで示す診断の結果は、Windows 8 アプリ用です。  
+2. > [!IMPORTANT]
+    > このトピックで示す診断の結果は、Windows 8 アプリ用です。  
   
-3.  中央のペインで **[空のアプリケーション]** などの空のプロジェクト テンプレートの 1 つを選択します。  
+3. 中央のペインで **[空のアプリケーション]** などの空のプロジェクト テンプレートの 1 つを選択します。  
   
-4.  **[名前]** ボックスに `JS_Perf_Tester` などの名前を指定し、**[OK]** をクリックします。  
+4. **[名前]** ボックスに `JS_Perf_Tester` などの名前を指定し、**[OK]** をクリックします。  
   
-5.  **ソリューション エクスプローラー** で default.html を開き、次のコードを \<body> タグの間に貼り付けます。  
+5. **ソリューション エクスプローラー** で default.html を開き、次のコードを \<body> タグの間に貼り付けます。  
   
     ```html  
     <div class="wrapper">  
@@ -50,7 +50,7 @@ ms.locfileid: "54758686"
     </div>  
     ```  
   
-6.  default.css を開き、次の CSS コードを追加します。  
+6. default.css を開き、次の CSS コードを追加します。  
   
     ```css  
     #content {  
@@ -59,7 +59,7 @@ ms.locfileid: "54758686"
     }  
     ```  
   
-7.  default.js を開き、すべてのコードを次のコードに置き換えます。  
+7. default.js を開き、すべてのコードを次のコードに置き換えます。  
   
     ```javascript  
     (function () {  
@@ -148,7 +148,7 @@ ms.locfileid: "54758686"
   
     ```  
   
-8.  F5 キーを押してデバッグを開始します。 **[Waiting for values]\(値の待機)** ボタンがページに表示されることを確認します。  
+8. F5 キーを押してデバッグを開始します。 **[Waiting for values]\(値の待機)** ボタンがページに表示されることを確認します。  
   
 9. **[Waiting for values]\(値の待機)** を選択し、ボタンのテキストと色が 1 秒に 1 回更新されることを確認します。 これは仕様に基づく制限事項です。  
   
@@ -202,11 +202,11 @@ ms.locfileid: "54758686"
   
      ![タイマー イベント](../profiling/media/js-htmlviz-app-timer.png "JS_HTMLViz_App_Timer")  
   
-     このデータからはさまざまなことがわかります。 次に例を示します。  
+     このデータからはさまざまなことがわかります。 例:  
   
-    -   各 `Timer` イベント (色分けからスクリプト イベントであることがわかります) には `document.createElement` の呼び出しが含まれており、その後にスタイルの計算と `style.backgroundColor` および `appendChild()` の呼び出しが続いています。  
+    - 各 `Timer` イベント (色分けからスクリプト イベントであることがわかります) には `document.createElement` の呼び出しが含まれており、その後にスタイルの計算と `style.backgroundColor` および `appendChild()` の呼び出しが続いています。  
   
-    -   選択した短い期間 (約 1 ～ 2 秒) に、`Timer` イベント、`Layout` イベント、`Paint` イベントが数多く発生しています。 `Timer`イベントは、アプリを実行して **[Waiting for values]** \(値の待機) ボタンをクリックした後に見られる 1 秒間に約 1 回のペースをはるかに超える頻度で発生します。  
+    - 選択した短い期間 (約 1 ～ 2 秒) に、`Timer` イベント、`Layout` イベント、`Paint` イベントが数多く発生しています。 `Timer`イベントは、アプリを実行して **[Waiting for values]** \(値の待機) ボタンをクリックした後に見られる 1 秒間に約 1 回のペースをはるかに超える頻度で発生します。  
   
 10. 調査のために、左下のペインでいずれかの `Timer` イベントの匿名関数へのリンクをクリックします。 default.js の次の関数が表示されます。  
   
@@ -225,7 +225,7 @@ ms.locfileid: "54758686"
   
 ### <a name="fixing-the-performance-issue"></a>パフォーマンスの問題を修正する  
   
-1.  `update()` 関数を次のコードに置き換えます。  
+1. `update()` 関数を次のコードに置き換えます。  
   
     ```javascript  
     function update() {  
@@ -240,7 +240,7 @@ ms.locfileid: "54758686"
   
      この修正したバージョンのコードには 1000 ミリ秒の遅延が含まれています。前のバージョンのコードではこれが省略されていたため、既定値が使用されていました。 プロファイラー データから、既定値は 0 ミリ秒であると思われ、これによって `setValues()` 関数が頻繁に発生していると思われます。  
   
-2.  HTML UI の応答性プロファイラーを再度実行し、CPU 使用状況グラフを確認します。 過剰なイベントはなくなり、CPU 使用状況はゼロに近い値に下がっています。 問題は修正されました。  
+2. HTML UI の応答性プロファイラーを再度実行し、CPU 使用状況グラフを確認します。 過剰なイベントはなくなり、CPU 使用状況はゼロに近い値に下がっています。 問題は修正されました。  
   
 ## <a name="see-also"></a>関連項目  
  [HTML UI の応答性](../profiling/html-ui-responsiveness.md)

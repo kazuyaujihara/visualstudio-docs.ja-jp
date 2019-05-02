@@ -14,11 +14,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b94bd5dc40102bce073e42302e92b737b4e8b0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825228"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>注釈を適用するタイミングと場所の指定
 注釈が条件付きの場合、アナライザーを指定するには、その他の注釈が必要です。  たとえば、関数に同期または非同期にできる変数がある場合、関数は次のましょう。同期の場合は、常に最終的に成功しますが、非同期の場合、エラーを報告場合、それがすぐに成功することはできません。 関数は同期的に呼び出されると、結果の値をチェックはない値をコード アナライザー返されませんが、これはからです。  ただし、関数を非同期的に呼び出すし、関数の結果はチェックされません、重大なエラーが発生する可能性があります。 この例で使用することが状況、`_When_`注釈: この記事の後半で説明されている、チェックを有効にします。

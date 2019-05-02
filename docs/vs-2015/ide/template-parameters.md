@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ed7dd478f63cf4d5dba38f6d721d4b728e1856b4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419620"
 ---
 # <a name="template-parameters"></a>テンプレート パラメーター
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "54787093"
 ## <a name="declaring-and-enabling-template-parameters"></a>テンプレート パラメーターの宣言と有効化  
  テンプレート パラメーターは、$*parameter*$ という形式で宣言されます。 次に例を示します。  
   
--   $safeprojectname$  
+- $safeprojectname$  
   
--   $guid1$  
+- $guid1$  
   
--   $guid5$  
+- $guid5$  
   
 #### <a name="to-enable-parameter-substitution-in-templates"></a>テンプレートでパラメーター置換を有効にするには  
   
-1.  テンプレートの .vstemplate ファイル内で、パラメーター置換を有効にする項目に対応する `ProjectItem` 要素を見つけます。  
+1. テンプレートの .vstemplate ファイル内で、パラメーター置換を有効にする項目に対応する `ProjectItem` 要素を見つけます。  
   
-2.  `ReplaceParameters` 要素の `ProjectItem` 属性を `true` に設定します。  
+2. `ReplaceParameters` 要素の `ProjectItem` 属性を `true` に設定します。  
   
-3.  プロジェクト項目のコード ファイルで、必要に応じてパラメーターを含めます。 たとえば、次のパラメーターは、ファイル内で名前空間に対して安全なプロジェクト名が使用されることを指定します。  
+3. プロジェクト項目のコード ファイルで、必要に応じてパラメーターを含めます。 たとえば、次のパラメーターは、ファイル内で名前空間に対して安全なプロジェクト名が使用されることを指定します。  
   
     ```  
     namespace $safeprojectname$  
@@ -51,7 +51,7 @@ ms.locfileid: "54787093"
  テンプレートで使用できる予約済みテンプレート パラメーターを次の表に示します。  
   
 > [!NOTE]
->  テンプレート パラメーターでは、大文字と小文字が区別されます。  
+> テンプレート パラメーターでは、大文字と小文字が区別されます。  
   
 |パラメーター|説明|  
 |---------------|-----------------|  

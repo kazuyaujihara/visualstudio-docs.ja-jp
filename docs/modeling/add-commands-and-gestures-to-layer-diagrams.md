@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 630934ce6915191ccb111e8bc061d8faacc421f7
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822834"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>依存関係図にコマンドおよびジェスチャを追加する
 
@@ -24,7 +24,7 @@ ms.locfileid: "58415474"
 必要に応じて、複数のコマンドおよびジェスチャ ハンドラーを同じ Visual Studio プロジェクトで定義できます。 また、複数のプロジェクトを組み合わせて 1 つの VSIX に含めることもできます。 たとえば、レイヤー コマンド、およびドメイン固有言語を含む 1 つの VSIX を定義できます。
 
 > [!NOTE]
-> 依存関係図を使用したコードを比較するユーザーのソースで、アーキテクチャの検証をカスタマイズすることもできます。 アーキテクチャの検証は、別の Visual Studio プロジェクトで定義する必要があります。 それを他の拡張機能と同じ VSIX に追加できます。 詳細については、[依存関係図へのカスタム アーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)を参照してください。
+> 依存関係図を使用したコードを比較するユーザーのソースで、アーキテクチャの検証をカスタマイズすることもできます。 アーキテクチャの検証は、別の Visual Studio プロジェクトで定義する必要があります。 それを他の拡張機能と同じ VSIX に追加できます。 詳細については、次を参照してください。[依存関係図へのカスタム アーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)します。
 
 ## <a name="requirements"></a>必要条件
 
@@ -66,7 +66,7 @@ ms.locfileid: "58415474"
 
 コマンド、レイヤー検証コントロール、および他の拡張機能を含む 1 つの VSIX を作成する場合は、VSIX を定義するプロジェクトとハンドラー用のプロジェクトを分けることをお勧めします。
 
-1. 新規作成**クラス ライブラリ**プロジェクト。 このプロジェクトに、コマンドまたはジェスチャ ハンドラーのクラスを格納します。
+1. 新しい**クラス ライブラリ** プロジェクトを作成します。 このプロジェクトに、コマンドまたはジェスチャ ハンドラーのクラスを格納します。
 
    > [!NOTE]
    > コマンドまたはジェスチャ ハンドラーのクラスは 1 つのクラス ライブラリに複数定義できますが、レイヤー検証クラスは別のクラス ライブラリで定義する必要があります。
@@ -108,7 +108,7 @@ ms.locfileid: "58415474"
 
 8. または別のコンピューターで、Visual Studio のメイン インスタンスで、VSIX をインストールするには、検索、 **.vsix**ファイル、 **bin** VSIX プロジェクトのディレクトリ。 このファイルを、VSIX をインストールするコンピューターにコピーします。 ファイル エクスプ ローラーで、VSIX ファイルをダブルクリックします。
 
-##  <a name="command"></a> メニュー コマンドを定義する
+## <a name="command"></a> メニュー コマンドを定義する
 
 ジェスチャまたはコマンドの既存のプロジェクトに、さらにメニュー コマンド定義を追加できます。 各コマンドは、次のような特徴を持つクラスによって定義されます。
 
@@ -124,11 +124,11 @@ ms.locfileid: "58415474"
 
 - `ICommandExtension` を実装するメソッドは次のとおりです。
 
-  -   `string Text {get;}` : メニューに表示されるラベルです。
+  - `string Text {get;}` : メニューに表示されるラベルです。
 
-  -   `void QueryStatus(IMenuCommand command)` : ユーザーが図を右クリックすると呼び出され、ユーザーの現在の選択に対してコマンドを表示して有効にする必要があるかどうかを判定します。
+  - `void QueryStatus(IMenuCommand command)` : ユーザーが図を右クリックすると呼び出され、ユーザーの現在の選択に対してコマンドを表示して有効にする必要があるかどうかを判定します。
 
-  -   `void Execute(IMenuCommand command)` : ユーザーがコマンドを選択すると呼び出されます。
+  - `void Execute(IMenuCommand command)` : ユーザーがコマンドを選択すると呼び出されます。
 
 - 現在の選択項目を特定するには、 `IDiagramContext`をインポートします。
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-##  <a name="gesture"></a> ジェスチャ ハンドラーを定義する
+## <a name="gesture"></a> ジェスチャ ハンドラーを定義する
 
 ジェスチャ ハンドラーは、ユーザーが依存関係の図に項目をドラッグし、ユーザーが図の任意の場所をダブルクリックしたときに応答します。
 
@@ -238,7 +238,7 @@ namespace MyLayerExtensions // change to your preference
 
 ジェスチャ ハンドラーについては次の点に注意してください。
 
--   `IGestureExtension` のメンバーは次のとおりです。
+- `IGestureExtension` のメンバーは次のとおりです。
 
      **OnDoubleClick** : ユーザーが図のどこかをダブルクリックすると呼び出されます。
 
@@ -246,7 +246,7 @@ namespace MyLayerExtensions // change to your preference
 
      **OnDragDrop** : ユーザーが図にアイテムをドロップすると呼び出されます。
 
--   各メソッドの最初の引数は、レイヤー要素を取得できる `IShape`です。 例:
+- 各メソッドの最初の引数は、レイヤー要素を取得できる `IShape`です。 例:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,7 +259,7 @@ namespace MyLayerExtensions // change to your preference
     }
     ```
 
--   ドラッグされるアイテムの種類によっては、ハンドラーが既に定義されています。 たとえば、ユーザーは、依存関係図に、ソリューション エクスプ ローラーから項目をドラッグできます。 このような種類のアイテムに対しては、ドラッグ ハンドラーを定義できません。 その場合、 `DragDrop` メソッドは呼び出されません。
+- ドラッグされるアイテムの種類によっては、ハンドラーが既に定義されています。 たとえば、ユーザーは、依存関係図に、ソリューション エクスプ ローラーから項目をドラッグできます。 このような種類のアイテムに対しては、ドラッグ ハンドラーを定義できません。 その場合、 `DragDrop` メソッドは呼び出されません。
 
 ## <a name="see-also"></a>関連項目
 

@@ -23,24 +23,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ad84f5a0db677ca9efa9d24b1963959010f25e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436492"
 ---
 # <a name="ribbon-xml"></a>リボン XML
-  リボン (XML) 項目では、XML を使用してリボンをカスタマイズすることができます。 リボン (ビジュアル デザイナー) 項目でサポートされていない方法でリボンをカスタマイズする場合は、リボン (XML) 項目を使用します。 各項目で実行できる処理の比較は、[リボンの概要](../vsto/Ribbon-overview.md)を参照してください。
+  リボン (XML) 項目では、XML を使用してリボンをカスタマイズすることができます。 リボン (ビジュアル デザイナー) 項目でサポートされていない方法でリボンをカスタマイズする場合は、リボン (XML) 項目を使用します。 各項目で実行できる処理の比較は、次を参照してください。[リボンの概要](../vsto/Ribbon-overview.md)します。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 ## <a name="add-a-ribbon-xml-item-to-a-project"></a>リボン (XML) 項目をプロジェクトに追加します。
  **[新しい項目の追加]** ダイアログ ボックスから、 **リボン (XML)** 項目を任意の Office プロジェクトに追加できます。 Visual Studio によってプロジェクトに次のファイルが自動的に追加されます。
 
-- リボン XML ファイル。 このファイルは、リボン ユーザー インターフェイス (UI) を定義します。 タブ、グループ、およびコントロールなどの UI 要素を追加するには、このファイルを使用します。 詳細については、[リボン XML ファイル リファレンス](#RibbonDescriptorFile)このトピックで後述を参照してください。
+- リボン XML ファイル。 このファイルは、リボン ユーザー インターフェイス (UI) を定義します。 タブ、グループ、およびコントロールなどの UI 要素を追加するには、このファイルを使用します。 詳細については、次を参照してください。[リボン XML ファイル リファレンス](#RibbonDescriptorFile)このトピックで後述します。
 
-- リボン コード ファイル。 このファイルには *リボン クラス*が含まれています。 このクラスの名前は、 **[新しい項目の追加]** ダイアログ ボックスで **リボン (XML)** 項目に指定した名前になります。 Microsoft Office アプリケーションでは、このクラスのインスタンスを使用して、カスタムのリボンを読み込みます。 詳細については、[クラスの参照をリボン](#RibbonExtensionClass)このトピックで後述を参照してください。
+- リボン コード ファイル。 このファイルには *リボン クラス*が含まれています。 このクラスの名前は、 **[新しい項目の追加]** ダイアログ ボックスで **リボン (XML)** 項目に指定した名前になります。 Microsoft Office アプリケーションでは、このクラスのインスタンスを使用して、カスタムのリボンを読み込みます。 詳細については、次を参照してください。[クラスの参照をリボン](#RibbonExtensionClass)このトピックで後述します。
 
   既定では、これらのファイルはカスタム グループを追加、**アドイン**リボン タブ。
 
@@ -55,12 +55,12 @@ ms.locfileid: "56602025"
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>カスタムのリボンの動作を定義します。
  作成して、リボンのボタンのクリックしてなどのユーザー操作に応答できる*コールバック メソッド*します。 コールバック メソッドは Windows フォーム コントロールのイベントと似ていますが、UI 要素の XML の属性によって識別されます。 リボン クラスでメソッドを記述すると、コントロールは属性値と同じ名前を持つメソッドを呼び出します。 たとえば、ユーザーがリボンのボタンをクリックしたときに呼び出されるコールバック メソッドを作成することができます。 コールバック メソッドを作成するには、2 つの手順が必要です。
 
--   コード内のコールバック メソッドを識別するリボン XML ファイル内のコントロールに、属性を割り当てます。
+- コード内のコールバック メソッドを識別するリボン XML ファイル内のコントロールに、属性を割り当てます。
 
--   リボン クラスでコールバック メソッドを定義します。
+- リボン クラスでコールバック メソッドを定義します。
 
 > [!NOTE]
->  Outlook では追加の手順が必要です。 詳細については、[Outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)を参照してください。
+> Outlook では追加の手順が必要です。 詳細については、次を参照してください。 [Outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)します。
 
  リボンからアプリケーションを自動化する方法について説明するチュートリアルでは、次を参照してください。[チュートリアル。カスタム タブをリボン XML を使用して作成](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)です。
 
@@ -77,7 +77,7 @@ ms.locfileid: "56602025"
 
  リボン コントロールに割り当てることができるコールバック メソッドにはさまざまな種類があります。 各コントロールのコールバック メソッドの完全な一覧は、技術記事を参照してください。 [(パート 3/3) の開発者向け Office (2007) リボン ユーザー インターフェイスのカスタマイズ](/previous-versions/office/developer/office-2007/aa722523(v=office.12))します。
 
-###  <a name="CallBackMethods"></a> コールバック メソッドを定義します。
+### <a name="CallBackMethods"></a> コールバック メソッドを定義します。
  リボン クラスのコールバック メソッドはリボン コード ファイルで定義します。 コールバック メソッドにはいくつかの要件があります。
 
 - コールバック メソッドはパブリック メソッドとして宣言されなければなりません。
@@ -93,7 +93,7 @@ ms.locfileid: "56602025"
   [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
   [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]
 
-##  <a name="RibbonDescriptorFile"></a> リボン XML ファイル リファレンス
+## <a name="RibbonDescriptorFile"></a> リボン XML ファイル リファレンス
  要素を追加して、属性により、カスタム リボンをリボン XML ファイルに定義できます。 既定では、リボン XML ファイルには次の XML が含まれています。
 
 ```xml
@@ -132,7 +132,7 @@ ms.locfileid: "56602025"
 
  リボン XML ファイルの既定の要素と属性は、使用できる要素と属性の小さなサブセットです。 使用可能な要素と属性の完全な一覧は、技術記事を参照してください。 [(パート 2/3) の開発者向け Office (2007) リボン ユーザー インターフェイスのカスタマイズ](/previous-versions/office/developer/office-2007/aa338199(v=office.12))します。
 
-##  <a name="RibbonExtensionClass"></a> リボン クラスのリファレンス
+## <a name="RibbonExtensionClass"></a> リボン クラスのリファレンス
  Visual Studio は、リボン コード ファイルにリボン クラスを生成します。 このクラスには、リボン上のコントロールのコールバック メソッドを追加します。 このクラスは、 <xref:Microsoft.Office.Core.IRibbonExtensibility> インターフェイスを実装します。
 
  次の表はこのクラスの既定のメソッドについて説明しています。

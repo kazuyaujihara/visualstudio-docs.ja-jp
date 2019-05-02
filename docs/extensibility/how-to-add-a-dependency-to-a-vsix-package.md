@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 225f2bba47aea209e406abe4555b508a2ee93ade
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1aabb7feaa565f5118904bba3850b153a20445b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911782"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>方法: VSIX パッケージへの依存関係を追加します。
 
@@ -45,7 +45,6 @@ ms.locfileid: "56708577"
 ```
 
 VSIXInstaller は Visual Studio の以前のバージョンを検出し、以降の更新プログラムが必要であるユーザーに通知します。
-
 
 ## <a name="see-also"></a>関連項目
 

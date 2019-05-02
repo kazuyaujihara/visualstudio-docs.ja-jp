@@ -3,19 +3,19 @@ title: Python コードのデバッグ
 description: Visual Studio には、ブレークポイントの設定、ステップ実行、値の検査、例外の確認、対話型ウィンドウでのデバッグなど、Python コード用の高度なデバッグ機能が用意されています。
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81e83b85c3f221cbd949067da6279facafb6e3d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959895"
 ---
 # <a name="debug-your-python-code"></a>Python コードのデバッグ
 
@@ -163,7 +163,7 @@ HTML、XML、JSON のビジュアライザーは別のポップアップ ウィ�
 
 | コマンド | 引数 | 説明 |
 | --- | --- | --- |
-| `$continue`、 `$cont`、 `$c` | 現在のステートメントからプログラムの実行を開始します。 |
+| `$continue`、`$cont`、`$c` | 現在のステートメントからプログラムの実行を開始します。 |
 | `$down`、 `$d` | スタック トレースで現在のフレームを 1 つ下のレベルに移動します。 |
 | `$frame` | | 現在のフレーム ID を表示します。
 | `$frame` | フレーム ID | 現在のフレームを指定のフレーム ID に切り替えます。
@@ -171,14 +171,14 @@ HTML、XML、JSON のビジュアライザーは別のポップアップ ウィ�
 | `$proc` |  | 現在のプロセス ID を表示します。 |
 | `$proc` | プロセス ID | 現在のプロセスを指定のプロセス ID に切り替えます。 |
 | `$procs` | | 現在デバッグ中のプロセスの一覧を表示します。 |
-| `$stepin`、 `$step`、 `$s` | 次の関数呼び出しにステップ インします (可能な場合)。 |
-| `$stepout`、 `$return`、 `$r` | 現在の関数からステップ アウトします。 |
-| `$stepover`、 `$until`、 `$unt` | 次の関数呼び出しにステップ オーバーします。 |
+| `$stepin`、`$step`、`$s` | 次の関数呼び出しにステップ インします (可能な場合)。 |
+| `$stepout`、`$return`、`$r` | 現在の関数からステップ アウトします。 |
+| `$stepover`、`$until`、`$unt` | 次の関数呼び出しにステップ オーバーします。 |
 | `$thread` | | 現在のスレッド ID を表示します。 |
 | `$thread` | スレッド ID | 現在のスレッドを指定のスレッド ID に切り替えます。 |
 | `$threads` | | 現在デバッグ中のスレッドの一覧を表示します。 |
 | `$up`、 `$u` | | スタック トレースで現在のフレームを 1 つ上のレベルに移動します。 |
-| `$where`、 `$w`、 `$bt` | 現在のスレッドのフレームを一覧表示します。 |
+| `$where`、`$w`、`$bt` | 現在のスレッドのフレームを一覧表示します。 |
 
 標準のデバッガー ウィンドウの**プロセス**、**スレッド**、**呼び出し履歴**などは、**Debug Interactive** ウィンドウとは同期されないことに注意してください。 **Debug Interactive** ウィンドウでアクティブなプロセス、スレッド、またはフレームを変更しても、他のデバッガー ウィンドウに影響はありません。 同様に、他のデバッガー ウィンドウでアクティブなプロセス、スレッド、またはフレームを変更しても、**Debug Interactive** ウィンドウに影響はありません。
 

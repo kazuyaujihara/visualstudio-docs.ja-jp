@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002570"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>コード化された Web パフォーマンス テストの生成と実行
 
@@ -29,13 +29,13 @@ Web パフォーマンス テストは、Web アプリ内を移動すること�
 
 ## <a name="generate-a-coded-web-performance-test"></a>コード化された Web パフォーマンス テストを生成する
 
-1.  Web パフォーマンス テストを作成していない場合は、「[Record a web performance test](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project)」(Web パフォーマンス テストの記録) を参照してください。
+1. Web パフォーマンス テストを作成していない場合は、「[Record a web performance test](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project)」(Web パフォーマンス テストの記録) を参照してください。
 
-2.  コード化されたテストを生成します。
+2. コード化されたテストを生成します。
 
      ![コード化された Web パフォーマンス テストを生成する](../test/media/web_test_coded_generate.png)
 
-3.  テストの名前を指定します。
+3. テストの名前を指定します。
 
      ![コード化された Web パフォーマンス テストの名前を入力する](../test/media/web_test_coded_generate_nametest.png)
 
@@ -47,7 +47,7 @@ Web パフォーマンス テストは、Web アプリ内を移動すること�
 
      このコードでは、記録されたテストにあった各検証規則と Web 要求が、C# の GetRequestEnumerator() メソッドまたは Visual Basic の Run() メソッドに含まれていることを確認できます。
 
-4.  単純なコードの追加を行います。これには、メソッドの終わりまでスクロール ダウンし、最後の Web 要求のコードの後に、次のコードを追加します。
+4. 単純なコードの追加を行います。これには、メソッドの終わりまでスクロール ダウンし、最後の Web 要求のコードの後に、次のコードを追加します。
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -72,9 +72,9 @@ Web パフォーマンス テストは、Web アプリ内を移動すること�
     End If
     ```
 
-5.  ソリューションをビルドし、カスタム コードのコンパイルを確認します。
+5. ソリューションをビルドし、カスタム コードのコンパイルを確認します。
 
-6.  テストを実行します。
+6. テストを実行します。
 
      ![コード化された Web パフォーマンス テストの実行](../test/media/web_test_coded_generate_run.png)
 

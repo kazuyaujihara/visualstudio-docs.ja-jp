@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 427035b0fa07f390e13c21a0e420fed89e2d461b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965055"
 ---
 # <a name="walkthrough-outlining"></a>チュートリアル: アウトライン
 アウトラインの展開または折りたたみをするテキスト領域の種類を定義することでなどの言語ベースの機能を設定します。 言語サービスのコンテキストで領域を定義して独自ファイル名拡張子とコンテンツ タイプを定義し、または領域の定義をその型だけに適用するか、または領域の定義を ("text") などの既存のコンテンツ タイプに適用できます。 このチュートリアルでは、定義のアウトライン領域を表示する方法を示します。
@@ -27,11 +27,11 @@ ms.locfileid: "56697419"
 
 ### <a name="to-create-a-mef-project"></a>MEF プロジェクトを作成するには
 
-1.  VSIX プロジェクトを作成する。 ソリューション `OutlineRegionTest`の名前を指定します。
+1. VSIX プロジェクトを作成する。 ソリューション `OutlineRegionTest`の名前を指定します。
 
-2.  エディター分類子の項目テンプレートをプロジェクトに追加します。 詳細については、[エディターの項目テンプレートを使用した拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)を参照してください。
+2. エディター分類子の項目テンプレートをプロジェクトに追加します。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)します。
 
-3.  既存のクラス ファイルを削除します。
+3. 既存のクラス ファイルを削除します。
 
 ## <a name="implement-an-outlining-tagger"></a>アウトラインのタガーを実装します。
  アウトライン領域がある種のタグでマークされている (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>)。 このタグは、標準の動作のアウトラインを提供します。 アウトライン表示の領域を展開または折りたたむことができます。 アウトライン表示の領域がプラス記号でマークされている (**+**) またはマイナス記号 a が折りたたまれている場合 (**-**) が展開されていて、展開された領域が縦線で区分されています。
@@ -40,39 +40,39 @@ ms.locfileid: "56697419"
 
 ### <a name="to-implement-an-outlining-tagger"></a>アウトラインのタガーを実装するには
 
-1.  クラス ファイルを追加し、その名前を `OutliningTagger`にします。
+1. クラス ファイルを追加し、その名前を `OutliningTagger`にします。
 
-2.  次の名前空間をインポートします。
+2. 次の名前空間をインポートします。
 
      [!code-csharp[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/CSharp/walkthrough-outlining_1.cs)]
      [!code-vb[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_1.vb)]
 
-3.  という名前のクラスを作成する`OutliningTagger`、実装すること<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:
+3. という名前のクラスを作成する`OutliningTagger`、実装すること<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:
 
      [!code-csharp[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/CSharp/walkthrough-outlining_2.cs)]
      [!code-vb[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_2.vb)]
 
-4.  アウトライン領域としてタグ付けする必要があります行のセットを蓄積して、テキスト バッファーとスナップショットを追跡するためにいくつかのフィールドを追加します。 このコードには、(後で定義) にアウトライン領域を表す領域オブジェクトの一覧が含まれています。
+4. アウトライン領域としてタグ付けする必要があります行のセットを蓄積して、テキスト バッファーとスナップショットを追跡するためにいくつかのフィールドを追加します。 このコードには、(後で定義) にアウトライン領域を表す領域オブジェクトの一覧が含まれています。
 
      [!code-csharp[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/CSharp/walkthrough-outlining_3.cs)]
      [!code-vb[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_3.vb)]
 
-5.  バッファーを解析し、イベント ハンドラーを追加、フィールドを初期化するタガー コンス トラクターを追加、<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>イベント。
+5. バッファーを解析し、イベント ハンドラーを追加、フィールドを初期化するタガー コンス トラクターを追加、<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>イベント。
 
      [!code-csharp[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/CSharp/walkthrough-outlining_4.cs)]
      [!code-vb[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_4.vb)]
 
-6.  実装、<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>にまたがるメソッドで、タグをインスタンス化します。 この例では、範囲、<xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection>メソッドに渡されたは、大文字と小文字が常にする場合がありますいないが、連続します。 このメソッドは、アウトライン領域の新しいタグの範囲をインスタンス化します。
+6. 実装、<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>にまたがるメソッドで、タグをインスタンス化します。 この例では、範囲、<xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection>メソッドに渡されたは、大文字と小文字が常にする場合がありますいないが、連続します。 このメソッドは、アウトライン領域の新しいタグの範囲をインスタンス化します。
 
      [!code-csharp[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/CSharp/walkthrough-outlining_5.cs)]
      [!code-vb[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_5.vb)]
 
-7.  宣言を`TagsChanged`イベント ハンドラー。
+7. 宣言を`TagsChanged`イベント ハンドラー。
 
      [!code-csharp[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/CSharp/walkthrough-outlining_6.cs)]
      [!code-vb[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_6.vb)]
 
-8.  追加、`BufferChanged`に応答するイベント ハンドラー<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>テキスト バッファーを解析することによってイベント。
+8. 追加、`BufferChanged`に応答するイベント ハンドラー<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>テキスト バッファーを解析することによってイベント。
 
      [!code-csharp[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/CSharp/walkthrough-outlining_7.cs)]
      [!code-vb[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_7.vb)]
@@ -102,12 +102,12 @@ ms.locfileid: "56697419"
 
 ### <a name="to-implement-a-tagger-provider"></a>タガー プロバイダーを実装するには
 
-1.  という名前のクラスを作成する`OutliningTaggerProvider`を実装する<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>ContentType と TagType 属性を持つエクスポート。
+1. という名前のクラスを作成する`OutliningTaggerProvider`を実装する<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>ContentType と TagType 属性を持つエクスポート。
 
      [!code-csharp[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/CSharp/walkthrough-outlining_12.cs)]
      [!code-vb[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_12.vb)]
 
-2.  実装、<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A>メソッドを追加することで、`OutliningTagger`バッファーのプロパティにします。
+2. 実装、<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A>メソッドを追加することで、`OutliningTagger`バッファーのプロパティにします。
 
      [!code-csharp[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/CSharp/walkthrough-outlining_13.cs)]
      [!code-vb[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_13.vb)]
@@ -117,11 +117,11 @@ ms.locfileid: "56697419"
 
 ### <a name="to-build-and-test-the-outlineregiontest-solution"></a>ビルドして OutlineRegionTest ソリューションをテストするには
 
-1.  ソリューションをビルドします。
+1. ソリューションをビルドします。
 
-2.  デバッガーでこのプロジェクトを実行する場合は、Visual Studio の 2 番目のインスタンスが開始します。
+2. デバッガーでこのプロジェクトを実行する場合は、Visual Studio の 2 番目のインスタンスが開始します。
 
-3.  テキスト ファイルを作成します。 左かっこと右角かっこの両方を含むいくつかのテキストを入力します。
+3. テキスト ファイルを作成します。 左かっこと右角かっこの両方を含むいくつかのテキストを入力します。
 
     ```
     [
@@ -129,7 +129,7 @@ ms.locfileid: "56697419"
     ]
     ```
 
-4.  両方の角かっこを含むアウトライン領域が必要です。 始めかっこの左側にアウトライン領域を折りたたむにマイナス記号をクリックする必要があります。 ときに領域が折りたたまれている、省略記号 (*.*) 折りたたまれた領域とテキストを含むポップアップの左に表示する**ホバー テキスト**省略記号上にポインターを移動するときに表示する必要があります。
+4. 両方の角かっこを含むアウトライン領域が必要です。 始めかっこの左側にアウトライン領域を折りたたむにマイナス記号をクリックする必要があります。 ときに領域が折りたたまれている、省略記号 (*.*) 折りたたまれた領域とテキストを含むポップアップの左に表示する**ホバー テキスト**省略記号上にポインターを移動するときに表示する必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [チュートリアル: コンテンツの種類をファイル名拡張子にリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

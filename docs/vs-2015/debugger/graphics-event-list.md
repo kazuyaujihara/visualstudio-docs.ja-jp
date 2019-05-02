@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ecfff316a6daa4fe7f0b1fc0619f7dd7961c682
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 15a07796278faad43f95b33c020b167f07daa009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59002127"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105631"
 ---
 # <a name="graphics-event-list"></a>グラフィックス イベント一覧
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Visual Studio Graphics Analyzer でグラフィックス イベント一覧を�
   
 ##### <a name="to-change-the-event-list-view-mode"></a>イベント一覧ビューのモードを変更するには  
   
--   **[グラフィックス イベント一覧]** ウィンドウで、イベント一覧の上の **[ビュー]** ボックスから、 **[タイムライン]** ビューまたは **[描画呼び出し]** ビューのいずれかを選択します。  
+- **[グラフィックス イベント一覧]** ウィンドウで、イベント一覧の上の **[ビュー]** ボックスから、 **[タイムライン]** ビューまたは **[描画呼び出し]** ビューのいずれかを選択します。  
   
 ### <a name="filtering-events"></a>イベントのフィルタリング  
  **[グラフィックス イベント一覧]** ウィンドウの右上にある [検索] ボックスを使用してイベント一覧をフィルタリングし、特定のキーワードが含まれている名前のイベントのみを検索することができます。 前の図に示されているように、「 `Vertex`」などの 1 つのキーワードを指定することも、「 `Draw;Primitive`」のようにセミコロンで区切って複数のキーワードを指定することもできます。複数のキーワードを指定すると、名前に `Draw` または `Primitive` のいずれかが含まれているイベントが該当します。 検索では、空白の有無も区別されます。たとえば、「 `VSSet` 」と「 `VS Set` 」は異なる検索であるため、検索する語には注意が必要です。  

@@ -1,14 +1,9 @@
 ---
 title: プロジェクトの種類の設計上の決定 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, project file persistence
 - project types, commitment mechanics
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 62d1a0e78aebd39c1f305c3480d6a418b382b4fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 323fbbc48953537dbcad4a13d2774fefec65dd52
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781791"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976838"
 ---
 # <a name="project-type-design-decisions"></a>プロジェクト タイプのデザインの方針
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51781791"
   
  プロジェクト内の項目は、ファイル、または、インターネット経由でデータベースのリポジトリまたはデータ接続内のオブジェクトより抽象的オブジェクトができます。 項目がファイルの場合は、プロジェクト参照に基づくまたはディレクトリ ベースのプロジェクトのいずれかにすることができます。  
   
- 参照ベースのプロジェクトでは、項目が 1 つ以上のプロジェクトに表示できます。 ただし、項目が表す実際のファイルは、1 つのディレクトリのみであります。 ディレクトリ ベースのプロジェクトでは、すべてのプロジェクト項目は、ディレクトリ構造に存在します。 詳細については、[プロジェクトにおける NIB: 項目の管理](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)を参照してください。  
+ 参照ベースのプロジェクトでは、項目が 1 つ以上のプロジェクトに表示できます。 ただし、項目が表す実際のファイルは、1 つのディレクトリのみであります。 ディレクトリ ベースのプロジェクトでは、すべてのプロジェクト項目は、ディレクトリ構造に存在します。 詳細については、次を参照してください。[プロジェクトにおける NIB: 項目の管理](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)します。  
   
  ローカル項目は、アプリケーションがインストールされている同じコンピューターに格納されます。 リモートの項目は、ローカル ネットワークでは、別のサーバーまたは別の場所はインターネット上に格納できます。  
   
@@ -54,7 +49,7 @@ ms.locfileid: "51781791"
   
 - ファイルをローカルに保存をサーバーにパブリッシュしたり、アイテムは、リモート オブジェクトへのデータ接続を表す場合に、プロジェクト項目を保存するための別のアプローチを使用してキーを押します。  
   
-  永続化の詳細については、[プロジェクトの永続化](../../extensibility/internals/project-persistence.md)と[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)を参照してください。  
+  永続化の詳細については、次を参照してください。[プロジェクトの永続化](../../extensibility/internals/project-persistence.md)と[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)します。  
   
 ## <a name="project-commitment-model"></a>コミットメントのプロジェクト モデル  
  永続化されたデータ オブジェクトが開かれるダイレクト モードまたはトランザクション モードにしますか?  
@@ -64,11 +59,10 @@ ms.locfileid: "51781791"
  トランザクション モードを使用してデータ オブジェクトが開かれると、変更はメモリに一時的な場所に保存され、ユーザーが手動でファイルの保存を選択するまではコミットされません。 その時点では、すべての変更はまとめて行う必要があります。 または変更は行われません。  
   
 ## <a name="see-also"></a>関連項目  
- [チェックリスト: 新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [プロジェクトにおける NIB: 項目の管理](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)   
+ [チェックリスト:新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [プロジェクトにおける NIB: 項目の管理](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [開くと、プロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)   
  [プロジェクトの永続化](../../extensibility/internals/project-persistence.md)   
  [プロジェクト モデルの要素](../../extensibility/internals/elements-of-a-project-model.md)   
  [プロジェクト モデルのコア コンポーネント](../../extensibility/internals/project-model-core-components.md)   
  [プロジェクト タイプの作成](../../extensibility/internals/creating-project-types.md)
-

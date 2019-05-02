@@ -1,6 +1,6 @@
 ---
 title: 単体テストの概要
-ms.date: 05/02/2017
+ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a01f08d430e9812283c3f5179e08d20f98a687a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57984119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003223"
 ---
 # <a name="get-started-with-unit-testing"></a>単体テストの概要
 
@@ -24,145 +24,153 @@ Visual Studio を使用して、単体テストを定義および実行してコ
 
 このセクションでは、単体テスト プロジェクトの作成方法に関する概要を説明します。
 
-> [!TIP]
-> テスト対象のプロジェクト "HelloWorld" はプロジェクト例であり、コードを示すことは想定されていません。 テストする "HelloWorld" プロジェクトを作成したい場合は、[初めての C# コンソール アプリの作成](../ide/quickstart-csharp-console.md)に関する記事をご覧ください。 完全なチュートリアルの記事については、「[マネージド コードの単体テストを作成し、実行する](walkthrough-creating-and-running-unit-tests-for-managed-code.md)」をご覧ください。
+1. Visual Studio でテストするプロジェクトを開きます。
 
-1. 単体テスト プロジェクトを作成します。
+   単体テストの例をデモすることを目的として、この記事ではシンプルな "Hello World" プロジェクトをテストします。 そのようなプロジェクトのサンプル コードは、次のとおりです。
 
-   ![単体テスト プロジェクトをソリューションに追加する](media/createunittest1.png)
+   ```csharp
+   public class Program
+   {
+       public static void Main()
+       {
+           Console.WriteLine("Hello World!");
+       }
+   }
+   ```
 
-1. プロジェクトに名前を付けます。
+1. **ソリューション エクスプローラー**で、ソリューション ノードを選びます。 次に、上部のメニュー バーで **[ファイル]** > **[追加]** > **[新しいプロジェクト]** を選択します。
 
-   ![単体テスト プロジェクト テンプレート](media/createunittest2.png)
+1. 新しいプロジェクトのダイアログ ボックスで、使用するテスト フレームワーク用の単体テスト プロジェクト テンプレートを検索して選択します。
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio 2019 の単体テスト プロジェクト テンプレート](media/vs-2019/add-new-test-project.png)
+
+   **[次へ]** をクリックし、テスト プロジェクトの名前を選択して、**[作成]** をクリックします。
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2017"
+
+   ![Visual Studio 2019 の単体テスト プロジェクト テンプレート](media/mstest-test-project-template.png)
+
+   テスト プロジェクトの名前を選択し、**[OK]** をクリックします。
+
+   ::: moniker-end
 
    プロジェクトがソリューションに追加されます。
 
-   ![ソリューション エクスプローラーの単体テスト プロジェクト](media/createunittest5.png)
+   ![ソリューション エクスプローラーの単体テスト プロジェクト](media/vs-2019/solution-explorer.png)
 
-1. 単体テスト プロジェクトで、テストするプロジェクトに参照を追加します。
+1. 単体テスト プロジェクトで、**[参照]** または **[依存関係]** を右クリックし、**[参照の追加]** を選択して、テストするプロジェクトに参照を追加します。
 
-   ![単体テストプロジェクトへの参照を追加する](media/createunittest6.png)
+1. テストするコードを含むプロジェクトを選択し、**[OK]** をクリックします。
 
-1. テストするコードを含むプロジェクトを選択します。
+   ![Visual Studio でプロジェクト参照を追加する](media/vs-2019/reference-manager.png)
 
-   ![追加する参照を選択する](media/createunittest7.png)
+1. 単体テスト メソッドにコードを追加します。
 
-1. 単体テストのコードを作成します。
+   ![Visual Studio で単体テスト メソッドにコードを追加する](media/vs-2019/unit-test-method.png)
 
-   ![コードを単体テストに追加する](media/createunittest8.png)
-
-**[単体テストの作成]** [コマンド](create-unit-tests-menu.md)を使用して、単体テスト メソッド スタブを作成することもできます。
-
-![[単体テストの作成] コマンドの使用](media/createunittestcommand2.png)
+> [!TIP]
+> 単体テストの作成を詳述するチュートリアルについては、[マネージド コードの単体テストの作成および実行](walkthrough-creating-and-running-unit-tests-for-managed-code.md)に関するページを参照してください。
 
 ## <a name="run-unit-tests"></a>単体テストを実行する
 
-1. **テスト エクスプローラー**を開きます。
+1. 上部のメニュー バーで **[テスト]** > **[Windows]** > **[テスト エクスプローラー]** を選択して、[テスト エクスプローラー](../test/run-unit-tests-with-test-explorer.md)を開きます。
 
-   ![[テスト] メニューで、テスト エクスプローラーを開く](media/rununittest1.png)
+1. **[すべて実行]** をクリックして、単体テストを実行します。
 
-1. 単体テストを実行します。
+   ![テスト エクスプローラーでの単体テストの実行](media/vs-2019/test-explorer-run-all.png)
 
-   ![テスト エクスプローラーでの単体テストの実行](media/rununittest2.png)
+   テストが完了すると、緑色のチェック マークが、テストが成功したことを示します。 赤色の "x" アイコンは、テストが失敗したことを示します。
 
-   **テスト エクスプローラー**に成功または失敗した単体ユニット テストが表示されます。
+   ![テスト エクスプローラーで単体テストの結果を確認する](media/vs-2019/unit-test-passed.png)
 
-   ![テスト エクスプローラーで単体テストの結果を確認する](media/rununittest3.png)
+> [!TIP]
+> [テスト エクスプローラー](../test/run-unit-tests-with-test-explorer.md)を使用して、組み込みのテスト フレームワーク (MSTest) またはサードパーティのテスト フレームワークから、単体テストを実行できます。 テストをカテゴリにまとめたり、テストの一覧にフィルターを適用したり、テストのプレイリストを実行したりできます。 テストをデバッグし、テストのパフォーマンスとコード カバレッジを分析することもできます。
 
 ## <a name="view-live-unit-test-results"></a>ライブ単体テストの結果を表示する
 
 Visual Studio 2017 以降で MSTest、xUnit、または NUnit テスト フレームワークを使用する場合は、単体テストのライブ結果を表示できます。
 
 > [!NOTE]
-> ライブ単体テストは、Visual Studio Enterprise Edition のみで使用できます。
+> ライブ単体テストは、Enterprise Edition でのみ使用できます。
 
-1. **[テスト]** メニューで、ライブ単体テストをオンにします。
+1. **[テスト]** > **[Live Unit Testing]** > **[開始]** を選択して、**[テスト]** メニューでライブ単体テストをオンにします。
+
+   ::: moniker range="vs-2017"
 
    ![ライブ単体テストをオンにする](media/live-test-results-start.png)
 
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio 2019 でライブ単体テストを開始する](media/vs-2019/start-live-unit-testing.png)
+
+   ::: moniker-end
+
 1. コードの作成および編集時に、コード エディター ウィンドウ内でテストの結果を表示します。
 
-   ![テスト結果を表示する](media/live-test-results-ui.png)
+   ![テスト結果を表示する](media/vs-2019/live-unit-testing-results.png)
 
-1. テスト結果インジケーターを選択すると、詳細が表示されます。
+1. そのメソッドをカバーしているテストの名前などの詳細については、テスト結果インジケーターをクリックします。
 
-   ![テスト結果インジケーターを選択します。](media/live-test-results-details.png)
+   ![テスト結果インジケーターを選択します。](media/vs-2019/live-unit-testing-details.png)
 
-詳細については、[ライブ単体テスト](../test/live-unit-testing-intro.md)に関するページを参照してください。
+ライブ単体テストの詳細については、[ライブ単体テスト](../test/live-unit-testing-intro.md)に関するページを参照してください。
 
 ## <a name="generate-unit-tests-with-intellitest"></a>IntelliTest で単体テストを生成する
 
-IntelliTest を実行すると、どのテストが失敗しているかを簡単に把握し、必要なコードを追加して修正できます。 回帰スイートを提供するために、生成されたどのテストをテスト プロジェクトに保存するかを選択できます。 コードを変更する際に、IntelliTest を再実行して、生成されたテストとコードの変更を同期させます。 その方法については、「[IntelliTest でのコードの単体テストの生成](../test/generate-unit-tests-for-your-code-with-intellitest.md)」を参照してください。
+IntelliTest を実行すると、どのテストが失敗しているかを把握し、必要なコードを追加して修正できます。 回帰スイートを提供するために、生成されたどのテストをテスト プロジェクトに保存するかを選択できます。 コードを変更する際に、IntelliTest を再実行して、生成されたテストとコードの変更を同期させます。 その方法については、「[IntelliTest でのコードの単体テストの生成](../test/generate-unit-tests-for-your-code-with-intellitest.md)」を参照してください。
+
+> [!TIP]
+> IntelliTest は、.NET Framework を対象とするマネージド コードでのみ使用できます。
 
 ![IntelliTest での単体テストの生成](media/intellitest.png)
 
-## <a name="run-unit-tests-with-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行する
-
-**テスト エクスプローラー**を使用して、Visual Studio またはサードパーティの単体テスト プロジェクトから単体テストを実行し、テストをカテゴリにグループ化し、テスト リストをフィルター処理し、テストのプレイリストを作成、保存、および実行します。 テストをデバッグし、テストのパフォーマンスとコード カバレッジを分析することもできます。 その方法については、「[テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md)」を参照してください。
-
-![テスト エクスプローラーを使用した単体テストの実行](media/testexplorer.png)
-
-## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>コード カバレッジを使用した、テストされるコード割合の確認
+## <a name="analyze-code-coverage"></a>コード カバレッジの分析
 
 単体テストなどのコード化されたテストによって実際にテストされるプロジェクトのコードの割合を調べるには、Visual Studio のコード カバレッジ機能を使用できます。 バグを効果的に回避するには、コードの大部分を対象としたテストが必要です。 その方法については、「[コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)」を参照してください。
 
-## <a name="use-a-different-unit-test-framework"></a>別の単体テスト フレームワークを使用する
+## <a name="use-a-third-party-test-framework"></a>サードパーティのテスト フレームワークを使用する
 
-Boost、Google、NUnit など、サードパーティのテスト フレームワークを利用して、Visual Studio で単体テストを実行できます。 Visual Studio のテスト ランナーがそのフレームワークで作業できるようにそのフレームワークのプラグインを使用します。
+Boost、Google、NUnit など、サードパーティのテスト フレームワークを利用して、Visual Studio で単体テストを実行できます。 **NuGet パッケージ マネージャー**を使用して、お好きなフレームワーク用の NuGet パッケージをインストールします。 また、NUnit テスト フレームワークと xUnit テスト フレームワーク用に、Visual Studio には、必要な NuGet パッケージを含む事前構成済みのテスト プロジェクト テンプレートが含まれています。
 
-サードパーティのテスト フレームワークを有効にする手順は次のとおりです。
+[NUnit](https://nunit.org/) を使用する単体テストを作成するには:
 
-::: moniker range="vs-2017"
+1. テストするコードを含むソリューションを開きます。
 
-1. メニュー バーから **[ツール]** > **[拡張機能と更新プログラム]** を選択します。
+2. **ソリューション エクスプローラー**でソリューションを右クリックし、**[追加]** > **[新しいプロジェクト]** を選択します。
 
-2. **[拡張機能と更新プログラム]** ダイアログ ボックスで **[オンライン]** カテゴリを展開し、**[Visual Studio Marketplace]** を選択します。 **[ツール]**、 > **[テスト]** の順に選択します。
+3. **[NUnit テスト プロジェクト]** プロジェクト テンプレートを選択します。
 
-   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+   ::: moniker range=">=vs-2019"
 
-::: moniker-end
+   ![Visual Studio 2019 の NUnit テスト プロジェクト テンプレート](media/vs-2019/nunit-test-project-template.png)
 
-::: moniker range=">=vs-2019"
+   **[次へ]** をクリックし、プロジェクトに名前を設定して、**[作成]** をクリックします。
 
-1. メニュー バーから **[拡張機能]** > **[拡張機能の管理]** を選択します。
+   ::: moniker-end
 
-2. **[拡張機能の管理]** ダイアログ ボックスで **[オンライン]** カテゴリを展開し、**[Visual Studio Marketplace]** を選択します。 **[ツール]**、 > **[テスト]** の順に選択します。
+   ::: moniker range="vs-2017"
 
-   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+   プロジェクトに名前を設定し、**[OK]** をクリックして作成します。
 
-::: moniker-end
+   ::: moniker-end
 
-3. インストールするフレームワークまたはアダプターを選択し、**[ダウンロード]** を選択します。
+   プロジェクト テンプレートには、NUnit と NUnit3TestAdapter への NuGet 参照が含まれています。
 
-4. クラス ライブラリ プロジェクトを作成し、ソリューションに追加します。
+   ![ソリューション エクスプローラーでの NUnit NuGet の依存関係](media/vs-2019/nunit-nuget-dependencies.png)
 
-   ![クラス ライブラリ プロジェクトに名前を付けて追加する](media/create3rdpartyunittest3.png)
+4. テスト プロジェクトから、テストするコードを含むプロジェクトに参照を追加します。
 
-5. プラグインをインストールします。 **ソリューション エクスプローラー**で、クラス ライブラリ プロジェクトを選択し、その右クリック メニューまたはコンテキスト メニューから **[NuGet パッケージの管理]** を選択します。
+5. テスト メソッドにコードを追加する
 
-   ![プラグインをインストールするための [NuGet パッケージの管理]](media/create3rdpartyunittest3a.png)
+   ![コードを単体テスト コード ファイルに追加する](media/vs-2019/unit-test-method.png)
 
-   [NuGet](https://www.nuget.org/) はプロジェクトのライブラリとツールの追加および更新に使用できる Visual Studio の拡張機能です。
-
-6. **[NuGet パッケージ マネージャー]** ウィンドウで、プラグインを探して選択し、**[インストール]** を選択します。
-
-   ![サード パーティのフレームワークをインストールする](media/create3rdpartyunittest4.png)
-
-   フレームワークはプロジェクトで参照されます。
-
-   ![サード パーティの単体テスト フレームワークの参照がソリューションに追加されている](media/create3rdpartyunittest6.png)
-
-7. クラス ライブラリ オブジェクトの **[参照]** ノードから **[参照の追加]** を選択します。
-
-   ![プロジェクトに参照を追加する](media/createunittest6.png)
-
-8. **[参照マネージャー]** ダイアログ ボックスで、テストするコードが含まれるプロジェクトを選択します。
-
-   ![テストするコード プロジェクトを選択する](media/createunittest7.png)
-
-9. 単体テストのコードを作成します。
-
-   ![コードを単体テスト コード ファイルに追加する](media/create3rdpartyunittest7.png)
+6. **テスト エクスプローラー**で、またはテスト コードを右クリックして **[テストの実行]** を選択して、テストを実行します。
 
 ## <a name="see-also"></a>関連項目
 
@@ -170,5 +178,4 @@ Boost、Google、NUnit など、サードパーティのテスト フレーム�
 * [単体テスト コマンドの作成](create-unit-tests-menu.md)
 * [IntelliTest でのテストの生成](generate-unit-tests-for-your-code-with-intellitest.md)
 * [テスト エクスプローラーを使用してテストを実行する](run-unit-tests-with-test-explorer.md)
-* [コード カバレッジを確認する](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [コード品質の向上](improve-code-quality.md)
+* [コード カバレッジの分析](using-code-coverage-to-determine-how-much-code-is-being-tested.md)

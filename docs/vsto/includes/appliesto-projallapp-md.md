@@ -1,11 +1,9 @@
 ---
-ms.openlocfilehash: a494e7a8d8b014ae8d608a9e8b85fe683c1bdb87
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: HT
+ms.openlocfilehash: 255044e0e00c0dcab3ce9c30eb0fdf14742aa981
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "38812098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62561534"
 ---
-  **適用対象:** VSTO を追加するこのトピックの情報が適用されます\-プロジェクト用のプロジェクトでします。 詳細については、[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../../vsto/features-available-by-office-application-and-project-type.md)を参照してください。
-
-  
+  **適用対象:** このトピックの情報は、VSTO の追加に適用されます\-プロジェクト用のプロジェクトでします。 詳細については、「[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。

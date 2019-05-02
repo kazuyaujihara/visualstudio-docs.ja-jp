@@ -11,19 +11,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e90b66288d15abdaf85c519bd89deb6262e4363
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 37539ee6c031d88b9db279cc61214ac5e3077e76
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387667"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>プログラム コードで UML モデルを読み取る
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UML API を使用して、UML モデルおよび UML 図を読み込むことができます。  
   
-##  <a name="Reading"></a> プログラム コードでのモデルの読み込み  
+## <a name="Reading"></a> プログラム コードでのモデルの読み込み  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ウィンドウに表示せずにモデルのコンテンツにアクセスするには、`ModelingProject.LoadReadOnly()` を使用します。  
   
  例:  
@@ -70,11 +70,11 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API を使用して、ユーザー インターフェイスでモデルおよび図を開くこともできます。 詳細については、次を参照してください。 [Visual Studio API を使用して UML モデルを開く](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)します。  
   
-##  <a name="Standalone"></a> スタンドアロン アプリケーション  
+## <a name="Standalone"></a> スタンドアロン アプリケーション  
  前のセクションの例は、Visual Studio 拡張機能で動作します。 スタンドアロン アプリーションでモデルを読み込むこともできますが、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクトにいくつかの参照を追加する必要があります。  
   
 > [!NOTE]
->  スタンドアロン アプリケーションでモデルを読み込む方法については、製品の今後のバージョンで変更される可能性があります。 現在のバージョンで使用できる機能のいくつかは、将来のバージョンでは利用できなくなる可能性があります。  
+> スタンドアロン アプリケーションでモデルを読み込む方法については、製品の今後のバージョンで変更される可能性があります。 現在のバージョンで使用できる機能のいくつかは、将来のバージョンでは利用できなくなる可能性があります。  
   
 #### <a name="to-add-references-to-read-a-model-in-a-stand-alone-application"></a>スタンドアロン アプリケーションのモデルを読み込むための参照を追加するには  
   
@@ -82,9 +82,9 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
 2. UML モデルにアクセスするために必要な [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 参照を追加します。  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces.dll  
+   - Microsoft.VisualStudio.Uml.Interfaces.dll  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
 3. 次のプロジェクト参照を追加すると、前のセクションで示した参照に加えて**\Program Files\Microsoft Visual Studio [バージョン] \Common7\IDE\PrivateAssemblies**:  
   

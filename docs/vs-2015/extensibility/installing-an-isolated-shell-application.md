@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 60862d631d93788f10c372310da9eb3d181943ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414540"
 ---
 # <a name="installing-an-isolated-shell-application"></a>分離シェル アプリケーションをインストールします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58974526"
   
 #### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>MSI の展開のシェル アプリケーションを準備するには  
   
-1.  ソリューション内の各 .vsixmanifest ファイルを編集します。  
+1. ソリューション内の各 .vsixmanifest ファイルを編集します。  
   
      `Identifier`要素を追加、`InstalledByMSI`要素と`SystemComponent`要素にその値を設定して`true`します。  
   
      これらの要素を使用してアンインストールしてから、コンポーネントとユーザーをインストールしようとしてから、VSIX インストーラーを防ぐため、**拡張機能と更新** ダイアログ ボックス。  
   
-2.  VSIX マニフェストを含むプロジェクトごとに、MSI がインストール元の場所にコンテンツを出力するビルド タスクを編集します。 ビルド出力では、VSIX マニフェストが含まれますが、.vsix ファイルのビルドはありません。  
+2. VSIX マニフェストを含むプロジェクトごとに、MSI がインストール元の場所にコンテンツを出力するビルド タスクを編集します。 ビルド出力では、VSIX マニフェストが含まれますが、.vsix ファイルのビルドはありません。  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Shell の MSI を作成します。  
  MSI パッケージを構築することをお勧めしますを使用すること、 [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=82720)標準セットアップ プロジェクトよりも優れた柔軟性を提供するためです。  
@@ -85,7 +85,7 @@ ms.locfileid: "58974526"
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>シェル コンポーネントのレイアウトを設定するには  
   
-1.  階層を作成`Directory`を表すすべてのディレクトリとして次の例は、対象のコンピューター上のファイル システムを作成する要素。  
+1. 階層を作成`Directory`を表すすべてのディレクトリとして次の例は、対象のコンピューター上のファイル システムを作成する要素。  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -105,10 +105,10 @@ ms.locfileid: "58974526"
   
      これらのディレクトリによって参照される`Id`インストール必要があるファイルが指定されている場合。  
   
-2.  シェルとシェル アプリケーションを必要とする、次の例は、コンポーネントを特定します。  
+2. シェルとシェル アプリケーションを必要とする、次の例は、コンポーネントを特定します。  
   
     > [!NOTE]
-    >  いくつかの要素は、他のデコンパイルして .wxs ファイルで定義を参照できます。  
+    > いくつかの要素は、他のデコンパイルして .wxs ファイルで定義を参照できます。  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -123,7 +123,7 @@ ms.locfileid: "58974526"
     </Feature>  
     ```  
   
-    1.  `ComponentRef`要素は、現在のコンポーネントが必要なファイルを識別する別のデコンパイルして .wxs ファイルを参照します。 たとえば、GeneralProfile には、次の定義が HelpAbout.wxs でがあります。  
+    1. `ComponentRef`要素は、現在のコンポーネントが必要なファイルを識別する別のデコンパイルして .wxs ファイルを参照します。 たとえば、GeneralProfile には、次の定義が HelpAbout.wxs でがあります。  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -139,7 +139,7 @@ ms.locfileid: "58974526"
   
          `DirectoryRef`要素は、ユーザーのコンピューターにこれらのファイルを移動する場所を指定します。 `Directory`がインストールされるようにし、サブディレクトリに、各要素を指定`File`要素が組み込まれているものや、ソリューションの一部としてが存在し、そのファイルがある MSI ファイルを作成するときに識別するファイルを表します。  
   
-    2.  `ComponentGroupRef`要素は他のコンポーネント (またはコンポーネントとコンポーネントのグループ) のグループを参照します。 たとえば、 `ComponentGroupRef` ApplicationGroup 下で定義されて次のように Application.wxs します。  
+    2. `ComponentGroupRef`要素は他のコンポーネント (またはコンポーネントとコンポーネントのグループ) のグループを参照します。 たとえば、 `ComponentGroupRef` ApplicationGroup 下で定義されて次のように Application.wxs します。  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -159,22 +159,22 @@ ms.locfileid: "58974526"
         ```  
   
     > [!NOTE]
-    >  Shell (Isolated) アプリケーションに必要な依存関係は次のとおりです。DebuggerProxy、MasterPkgDef、リソース (特に .winprf ファイル)、アプリケーション、および PkgDefs します。  
+    > Shell (Isolated) アプリケーションに必要な依存関係は次のとおりです。DebuggerProxy、MasterPkgDef、リソース (特に .winprf ファイル)、アプリケーション、および PkgDefs します。  
   
 ### <a name="registry-entries"></a>レジストリ エントリ  
  Shell (Isolated) のプロジェクト テンプレートが含まれています、 *ProjectName*インストールでマージするレジストリ キーの .reg ファイル。 これらのレジストリ エントリは、インストールとクリーンアップのための両方の MSI の一部である必要があります。 ApplicationRegistry.wxs で一致するレジストリのブロックを作成することも必要があります。  
   
 ##### <a name="to-integrate-registry-entries-into-the-msi"></a>MSI にレジストリ エントリを統合するには  
   
-1.  **シェルのカスタマイズ**フォルダーを開き、 *ProjectName*レジストリ。  
+1. **シェルのカスタマイズ**フォルダーを開き、 *ProjectName*レジストリ。  
   
-2.  $RootFolder$ トークンのすべてのインスタンスをインストール先のディレクトリのパスに置き換えます。  
+2. $RootFolder$ トークンのすべてのインスタンスをインストール先のディレクトリのパスに置き換えます。  
   
-3.  アプリケーションに必要な他のレジストリ エントリを追加します。  
+3. アプリケーションに必要な他のレジストリ エントリを追加します。  
   
-4.  ApplicationRegistry.wxs を開きます。  
+4. ApplicationRegistry.wxs を開きます。  
   
-5.  各レジストリ エントリで*ProjectName*.reg、次の例として、対応するレジストリのブロックを追加します。  
+5. 各レジストリ エントリで*ProjectName*.reg、次の例として、対応するレジストリのブロックを追加します。  
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
@@ -186,24 +186,24 @@ ms.locfileid: "58974526"
 ## <a name="creating-a-setup-bootstrapper"></a>セットアップ ブートス トラップの作成  
  すべての前提条件が最初にインストールされている場合にのみ、完了した MSI がインストールされます。 エンド ユーザー エクスペリエンスを容易にするには、収集し、アプリケーションのインストール前に、すべての前提条件をインストールするセットアップ プログラムを作成します。 インストールの成功を確認するには、これらのアクションを実行します。  
   
--   管理者によってインストールを強制します。  
+- 管理者によってインストールを強制します。  
   
--   Visual Studio Shell (Isolated) がインストールされているかどうかを検出します。  
+- Visual Studio Shell (Isolated) がインストールされているかどうかを検出します。  
   
--   順序で 1 つまたは両方のシェル インストーラーを実行します。  
+- 順序で 1 つまたは両方のシェル インストーラーを実行します。  
   
--   再起動要求を処理します。  
+- 再起動要求を処理します。  
   
--   MSI を実行します。  
+- MSI を実行します。  
   
 ### <a name="enforcing-installation-by-administrator"></a>管理者によってインストールを適用します。  
  この手順は \Program Files などに必要なディレクトリにアクセスするセットアップ プログラムを有効にするために必要な\\します。  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>管理者によってインストールを強制するには  
   
-1.  セットアップ プロジェクトのショートカット メニューを開き、選択し、**プロパティ**します。  
+1. セットアップ プロジェクトのショートカット メニューを開き、選択し、**プロパティ**します。  
   
-2.  **構成プロパティ/リンカー/マニフェスト ファイル**設定**UAC の実行レベル**に**requireAdministrator**します。  
+2. **構成プロパティ/リンカー/マニフェスト ファイル**設定**UAC の実行レベル**に**requireAdministrator**します。  
   
      このプロパティは、埋め込みのマニフェスト ファイルに管理者として実行するプログラムを必要とする属性を配置します。  
   
@@ -211,7 +211,7 @@ ms.locfileid: "58974526"
  Visual Studio Shell (Isolated) をインストールする必要があるかどうかを判断するには、まず HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install のレジストリ値をチェックして既にインストールされているかどうかを決定します。  
   
 > [!NOTE]
->  これらの値は、Product.wxs にシェル検出ブロックによっても読み込まれます。  
+> これらの値は、Product.wxs にシェル検出ブロックによっても読み込まれます。  
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder では、Visual Studio シェルがインストールされているファイルをチェックすることができますをする場所を指定します。  
   
@@ -252,15 +252,15 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
   
  再起動を処理するには、これらのアクションを実行します。  
   
--   Windows の起動時に、インストールを再開するレジストリを設定します。  
+- Windows の起動時に、インストールを再開するレジストリを設定します。  
   
--   ブートス トラップの二重の再起動を実行します。  
+- ブートス トラップの二重の再起動を実行します。  
   
--   シェル インストーラー ResumeData キーを削除します。  
+- シェル インストーラー ResumeData キーを削除します。  
   
--   Windows を再起動します。  
+- Windows を再起動します。  
   
--   Msi ファイルの開始パスをリセットします。  
+- Msi ファイルの開始パスをリセットします。  
   
 ### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>Windows の起動時にセットアップを再開するレジストリを設定  
  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ のレジストリ キーは、管理者権限でシステムの起動時に実行し、しは消去されます。 HKEY_CURRENT_USER にはようなキーが含まれていますが、通常のユーザーとして実行されるはのインストールに適していません。 呼び出すインストーラー RunOnce キーに文字列値を配置することで、インストールを再開できます。 ただしを使用して、インストーラーを呼び出すことは推奨、 **再起動/** または開始する代わりにそれを再開しているアプリケーションに通知するようなパラメーター。 複数の再起動が必要なインストールで特に便利ですが、インストール プロセスであるかを示すパラメーターを含めることもできます。  
@@ -369,4 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: 基本的な分離シェル アプリケーションを作成します。](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

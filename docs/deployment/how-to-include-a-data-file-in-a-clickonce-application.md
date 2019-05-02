@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 470ee530a61ecba5c1acd40be88c469fee6d4f5e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: fd2db09937ad76c0ea4c990fcdba5c34a0f8f66c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898637"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>方法: ClickOnce アプリケーションにデータ ファイルを含める
 各[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションをインストールするには、アプリケーションが独自のデータを管理できる先のコンピューターのローカル ディスク上のデータ ディレクトリが割り当てられます。 データ ファイルは、任意の種類のファイルを含めることができます。 テキスト ファイル、XML ファイル、または Microsoft Access データベース (*.mdb*) ファイル。 次の手順に任意の型のデータ ファイルを追加する方法を示して、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション。
@@ -60,25 +60,25 @@ ms.locfileid: "56596270"
 
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>MageUI.exe を使用してデータ ファイルを追加するには
 
-1.  アプリケーションのファイルの残りの部分で、アプリケーション ディレクトリにデータ ファイルを追加します。
+1. アプリケーションのファイルの残りの部分で、アプリケーション ディレクトリにデータ ファイルを追加します。
 
-2.  通常、アプリケーションのディレクトリは、展開の現在のバージョン ラベルが付いた、ディレクトリに — v1.0.0.0 など。
+2. 通常、アプリケーションのディレクトリは、展開の現在のバージョン ラベルが付いた、ディレクトリに — v1.0.0.0 など。
 
-3.  **ファイル** メニューのをクリックして**開く**をアプリケーション マニフェストを開きます。
+3. **ファイル** メニューのをクリックして**開く**をアプリケーション マニフェストを開きます。
 
-4.  選択、**ファイル**タブ。
+4. 選択、**ファイル**タブ。
 
-5.  タブの上部にあるテキスト ボックスで、アプリケーションのファイルを含むディレクトリを入力し、クリックして**Populate**します。
+5. タブの上部にあるテキスト ボックスで、アプリケーションのファイルを含むディレクトリを入力し、クリックして**Populate**します。
 
      データ ファイルは、グリッドに表示されます。
 
-6.  設定、**ファイルの種類**データ ファイルの値**データ**します。
+6. 設定、**ファイルの種類**データ ファイルの値**データ**します。
 
-7.  アプリケーション マニフェストを保存し、ファイルを再署名します。
+7. アプリケーション マニフェストを保存し、ファイルを再署名します。
 
      *MageUI.exe*ファイルに再署名するように求められます。
 
-8.  配置マニフェストに再署名します。
+8. 配置マニフェストに再署名します。
 
      アプリケーション マニフェストのハッシュが変更されたため、配置マニフェストを再署名する必要があります。
 

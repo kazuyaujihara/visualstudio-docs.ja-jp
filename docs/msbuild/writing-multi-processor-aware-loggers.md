@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6322e860cb45cecc3db5d5060e1322c41d57e695
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443135"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>マルチプロセッサ対応のロガーの記述
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では複数のプロセッサを使用できるため、プロジェクトのビルド時間が短縮されますが、同時にビルド イベント ログの複雑性も高まります。 シングルプロセッサ環境では、イベント、メッセージ、警告、およびエラーが順序に従った予測可能な方法で logger に到着します。 それに対し、マルチプロセッサ環境では、イベントが複数のソースから同時に、または誤った順序で送られてくることがあります。 この問題を解決するために、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] にはマルチプロセッサ対応の logger と新しいログ モデルが導入されており、カスタム "転送 logger" を作成できます。
@@ -62,9 +62,9 @@ public interface INodeLogger: ILogger
 
  分散ログには次の 2 つの使用方法があります。
 
--   <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> という名前の用意された転送 logger をカスタマイズします。
+- <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> という名前の用意された転送 logger をカスタマイズします。
 
--   カスタム転送 logger を独自に作成します。
+- カスタム転送 logger を独自に作成します。
 
 ConfigurableForwardingLogger を実際の要件に合わせて変更できます。 これを行うには、このロガーをコマンド ラインで *MSBuild.exe* を使用して呼び出し、このロガーから中央ノードに転送するビルド イベントを指定します。
 
@@ -78,7 +78,7 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 ```
 
 > [!NOTE]
->  `-dl` スイッチでは、2 つの logger 名をアスタリスク (*) で区切る必要があります。
+> `-dl` スイッチでは、2 つの logger 名をアスタリスク (*) で区切る必要があります。
 
  ConfigurableForwardingLogger の使用方法は、通常の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ではなく ConfigurableForwardingLogger ロガーをアタッチし、ConfigurableForwardingLogger から中央ノードに渡すイベントをパラメーターとして指定する点を除き、他のロガーと同じです (「[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)」を参照)。
 

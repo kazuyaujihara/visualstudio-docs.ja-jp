@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d99ff4013b7cdb16cea8b8c3231709d2e5b0aff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8dc28a64d42d2184734142c68aef95cbc3b1d245
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410113"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>キーボード ショートカットをメニュー項目にバインドします。
 カスタム メニュー コマンドをキーボード ショートカットをバインドするだけにエントリを追加、 *.vsct*パッケージのファイル。 このトピックでは、カスタム ボタン、メニュー項目、またはツールバーのコマンドをキーボード ショートカットをマップする方法と、既定のエディターのキーボード マッピングを適用またはカスタム エディターに制限する方法について説明します。
@@ -42,7 +42,7 @@ ms.locfileid: "56705860"
 4. マップされていないものが見つかるまで、さまざまなキーの組み合わせをお試しください。
 
    > [!NOTE]
-   >  キーボード ショートカットを使用する**Alt**メニューを開き、コマンドを直接実行可能性があります。 そのため、**現在使用されているショートカット**が含まれるショートカットを入力するときにボックスを空白にすることがあります**Alt**します。ショートカットを閉じて、メニューが開きますしないことを確認することができます、**オプション** ダイアログ ボックスとし、キーを押します。
+   > キーボード ショートカットを使用する**Alt**メニューを開き、コマンドを直接実行可能性があります。 そのため、**現在使用されているショートカット**が含まれるショートカットを入力するときにボックスを空白にすることがあります**Alt**します。ショートカットを閉じて、メニューが開きますしないことを確認することができます、**オプション** ダイアログ ボックスとし、キーを押します。
 
    次の手順では、メニュー コマンドを使用して既存の VSPackage があることを前提としています。 この操作の説明を必要がある場合について見て[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "56705860"
 2. 空の作成`<KeyBindings>`セクションの後に、`<Commands>`が存在しない場合。
 
    > [!WARNING]
-   >  キー バインドの詳細については、[Keybinding](../extensibility/keybinding-element.md)を参照してください。
+   > キー バインドの詳細については、次を参照してください。 [Keybinding](../extensibility/keybinding-element.md)します。
 
     `<KeyBindings>`セクションで、作成、`<KeyBinding>`エントリ。
 
@@ -75,7 +75,7 @@ ms.locfileid: "56705860"
 
    ほとんどの状況で**Shift**文字の大文字または記号を入力するほとんどの英数字キー既にキーを押すと、ために、2 つ目の修飾子を指定せず使用できません必要があります。
 
-   仮想キー コードに、たとえば、ファンクション キーに関連付けられている文字がない特殊なキーにアクセスできるように、 **Backspace**キー。 詳細については、[仮想キー コード](https://docs.microsoft.com/windows/desktop/inputdev/virtual-key-codes)を参照してください。
+   仮想キー コードに、たとえば、ファンクション キーに関連付けられている文字がない特殊なキーにアクセスできるように、 **Backspace**キー。 詳細については、次を参照してください。[仮想キー コード](https://docs.microsoft.com/windows/desktop/inputdev/virtual-key-codes)します。
 
    コマンドで使用できるように、Visual studio エディターの設定、`editor`属性を`guidVSStd97`します。
 

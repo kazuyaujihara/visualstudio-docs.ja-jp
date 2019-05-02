@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d03c7b96a6329775db426f7306dcf4cf60ca0e4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 717badcc52088568ae348dbb1b712b2202cc7a72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415555"
 ---
 # <a name="how-to-create-custom-text-markers"></a>方法: カスタム テキスト マーカーを作成します。
 強調したり、コードを整理するカスタム テキスト マーカーを作成する場合は、以下の手順を実行する必要があります。
@@ -41,49 +41,49 @@ ms.locfileid: "56712035"
     `<PackageGUID>` オートメーション オブジェクトを実装する VSPackage の GUID です。
 
    > [!NOTE]
-   >  ルート パス**\software\microsoft\visualstudio\\\<バージョン >** 詳細詳細については、Visual Studio シェルが初期化されるときに、代替ルートで上書きすることができます[コマンド ライン スイッチ](../extensibility/command-line-switches-visual-studio-sdk.md)します。
+   > ルート パス**\software\microsoft\visualstudio\\\<バージョン >** 詳細詳細については、Visual Studio シェルが初期化されるときに、代替ルートで上書きすることができます[コマンド ライン スイッチ](../extensibility/command-line-switches-visual-studio-sdk.md)します。
 
 2. 次の 4 つの値を作成する**\software\microsoft\visualstudio\\\<バージョン > \Text Editor\External マーカー\\\<MarkerGUID >**
 
-   -   (既定)
+   - (既定)
 
-   -   サービス
+   - サービス
 
-   -   DisplayName
+   - DisplayName
 
-   -   Package
+   - Package
 
-   -   `Default` REG_SZ 型の省略可能なエントリです。 設定すると、エントリの値は、便利な識別情報、たとえば「カスタム テキスト マーカー」を含む文字列です。
+   - `Default` REG_SZ 型の省略可能なエントリです。 設定すると、エントリの値は、便利な識別情報、たとえば「カスタム テキスト マーカー」を含む文字列です。
 
-   -   `Service` REG_SZ 型のエントリは proffering によってカスタム テキスト マーカーを提供するサービスの GUID の文字列を含む<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>します。 形式は、{XXXXXX XXXX XXXX XXXX XXXXXXXXX} です。
+   - `Service` REG_SZ 型のエントリは proffering によってカスタム テキスト マーカーを提供するサービスの GUID の文字列を含む<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>します。 形式は、{XXXXXX XXXX XXXX XXXX XXXXXXXXX} です。
 
-   -   `DisplayName` カスタム テキスト マーカーの名前のリソース ID を含む REG_SZ 型のエントリです。 形式は、#YYYY です。
+   - `DisplayName` カスタム テキスト マーカーの名前のリソース ID を含む REG_SZ 型のエントリです。 形式は、#YYYY です。
 
-   -   `Package` REG_SZ が含まれる型のエントリには、`GUID`のサービスを提供する VSPackage は、サービスの下に一覧表示します。 形式は、{XXXXXX XXXX XXXX XXXX XXXXXXXXX} です。
+   - `Package` REG_SZ が含まれる型のエントリには、`GUID`のサービスを提供する VSPackage は、サービスの下に一覧表示します。 形式は、{XXXXXX XXXX XXXX XXXX XXXXXXXXX} です。
 
 ## <a name="to-create-a-custom-text-marker"></a>カスタム テキスト マーカーを作成するには
 
-1.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> インターフェイスを実装します。
+1. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> インターフェイスを実装します。
 
      このインターフェイスの実装では、動作と、カスタムのマーカーの種類の外観を定義します。
 
      このインターフェイスが呼び出されます
 
-    1.  ユーザーは、最初に、IDE を起動します。
+    1. ユーザーは、最初に、IDE を起動します。
 
-    2.  ユーザーが選択、**既定値をリセット**下ボタン、**フォントおよび色**プロパティ ページで、**環境**の左側のウィンドウにある、フォルダー、 **オプション** ダイアログ ボックスがから取得した、**ツール**IDE のメニュー。
+    2. ユーザーが選択、**既定値をリセット**下ボタン、**フォントおよび色**プロパティ ページで、**環境**の左側のウィンドウにある、フォルダー、 **オプション** ダイアログ ボックスがから取得した、**ツール**IDE のメニュー。
 
-2.  実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A>メソッドを指定する`IVsPackageDefinedTextMarkerType`実装する必要がありますに基づいて返されるマーカーの種類のメソッド呼び出しで指定された GUID。
+2. 実装、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A>メソッドを指定する`IVsPackageDefinedTextMarkerType`実装する必要がありますに基づいて返されるマーカーの種類のメソッド呼び出しで指定された GUID。
 
      環境が、カスタムのマーカーの種類が作成され、カスタムのマーカーの種類を識別する GUID を指定します。 このメソッドの最初の時間を呼び出します。
 
 ## <a name="to-proffer-your-marker-type-as-a-service"></a>マーカーの種類をサービスとして提供するには
 
-1.  呼び出す、<xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A>メソッド<xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>します。
+1. 呼び出す、<xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A>メソッド<xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>します。
 
      ポインター<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService>が返されます。
 
-2.  呼び出す、 <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> 、カスタム マーカーの種類のサービスを識別しての実装へのポインターを提供する GUID を指定して、メソッド、<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>インターフェイス。 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>実装の実装にポインターを返す必要があります<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>インターフェイス。
+2. 呼び出す、 <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> 、カスタム マーカーの種類のサービスを識別しての実装へのポインターを提供する GUID を指定して、メソッド、<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>インターフェイス。 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>実装の実装にポインターを返す必要があります<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>インターフェイス。
 
      サービスが返されることを識別する一意の cookie。 呼び出すことによって、カスタム マーカーの種類のサービスを取り消すこの cookie を後で使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>のメソッド、<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService>この cookie の値を指定するインターフェイス。
 

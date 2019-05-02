@@ -9,29 +9,29 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b653d1b19842910fc88deb9d9cae5db918f35b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bd1a9a2a269c173ef9dcb47b39921073802fe1ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438411"
 ---
-# <a name="how-to-create-a-basic-texture"></a>方法: 基本テクスチャを作成する
+# <a name="how-to-create-a-basic-texture"></a>方法: 基本的なテクスチャを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このドキュメントでは、イメージ エディターを使用した基本的なテクスチャの作成方法を示します。  
   
  このドキュメントでは、以下のアクティビティについて説明します。  
   
--   テクスチャのサイズの設定  
+- テクスチャのサイズの設定  
   
--   前景色と背景色の設定  
+- 前景色と背景色の設定  
   
--   アルファ チャネル (透過性) の使用  
+- アルファ チャネル (透過性) の使用  
   
--   **塗りつぶし**ツールと**楕円**ツールの使用  
+- **塗りつぶし**ツールと**楕円**ツールの使用  
   
--   ツール プロパティの設定  
+- ツール プロパティの設定  
   
 ## <a name="creating-a-basic-texture"></a>基本的なテクスチャの作成  
  イメージ エディターを使用すると、ゲームやアプリのイメージやテクスチャを作成したり変更したりできます。  
@@ -55,7 +55,7 @@ ms.locfileid: "54767100"
 5. イメージ エディターのツール バーで、**[塗りつぶし]** ツールを選択してから、Shift キーを押したままにして、イメージ内のポイントを選択します。 Shift キーを使用すると、塗りつぶしの色のアルファ値がイメージ内の色と置き換わります。Shift キーを使用しないと、アルファ値とイメージ内の色が混ぜ合わされて塗りつぶしの色になります。  
   
    > [!IMPORTANT]
-   >  この手順と、前の手順で選択した色を組み合わせて、描画対象の "bullseye" ターゲットのテクスチャの基本イメージが準備されることになります。 イメージが透明な黒色で塗りつぶされると、ターゲットの罫線は黒色になりますが、ターゲットの周囲の成果物にエイリアシングは発生しません。  
+   > この手順と、前の手順で選択した色を組み合わせて、描画対象の "bullseye" ターゲットのテクスチャの基本イメージが準備されることになります。 イメージが透明な黒色で塗りつぶされると、ターゲットの罫線は黒色になりますが、ターゲットの周囲の成果物にエイリアシングは発生しません。  
   
 6. イメージ エディターのツール バーで、**[楕円]** ツールを選択します。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "54767100"
 11. **楕円**ツールを使用して、ピクセル座標 `(3, 3)` からピクセル座標 `(508, 508)` に円を描画します。 円の描画を簡単にするには、描画する間 Shift キーを押したままにすることができます。  
   
     > [!NOTE]
-    >  現在のポインターの位置にあるピクセル座標は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のステータス バーに表示されます。  
+    > 現在のポインターの位置にあるピクセル座標は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のステータス バーに表示されます。  
   
 12. 背景色を変更します。 **[R]** を `44` に、**[G]** を `165` に、**[B]** を `211` に、**[A]** を `255` に設定します。  
   
@@ -88,7 +88,7 @@ ms.locfileid: "54767100"
   
     !["bullseye" ターゲットのテクスチャ全体](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
-    次の手順では、このテクスチャの MIP レベルを生成できます。 詳細については、「[方法: MIP レベルを作成および変更する](../designers/how-to-create-and-modify-mip-levels.md)」を参照してください。  
+    次の手順では、このテクスチャの MIP レベルを生成できます。 詳細については、「[方法:作成し、MIP レベル](../designers/how-to-create-and-modify-mip-levels.md)します。  
   
 ## <a name="see-also"></a>関連項目
  [Image Editor](../designers/image-editor.md)

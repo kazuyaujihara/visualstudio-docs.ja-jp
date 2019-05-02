@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
-ms.openlocfilehash: 7de79fbbd5221a75bec1e168c22e687ddc9c7ffa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973787"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091669"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>方法: AsyncPackage を使用してバックグラウンドで VSPackage を読み込む
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>AsyncPackage を既存の VSPackage に変換します。  
  作業の大部分は、新しいを作成すると同じ**AsyncPackage**します。 1 ~ 5 の上記の手順に従う必要があります。 また、次のように特別な注意を実行する必要があります。  
   
-1.  必ず削除してください、**初期化**オーバーライドは、パッケージにする必要があります。  
+1. 必ず削除してください、**初期化**オーバーライドは、パッケージにする必要があります。  
   
-2.  デッドロックを回避するには。ある Rpc を非表示に、コードはバック グラウンド スレッドで発生するようになりました。 RPC を行う場合は、ことを確認する必要があります (例: **GetService**)、いずれか (1) スイッチをメイン スレッドにする必要がある、または (2) を使用した場合は、1 つの API の非同期バージョンが存在します (例: **GetServiceAsync**)。  
+2. デッドロックを回避するには。ある Rpc を非表示に、コードはバック グラウンド スレッドで発生するようになりました。 RPC を行う場合は、ことを確認する必要があります (例: **GetService**)、いずれか (1) スイッチをメイン スレッドにする必要がある、または (2) を使用した場合は、1 つの API の非同期バージョンが存在します (例: **GetServiceAsync**)。  
   
-3.  頻度が高すぎるのスレッド間で切り替えないでください。 バック グラウンド スレッドで実行できる作業をローカライズしてみてください。 これには、読み込み時間が短縮されます。  
+3. 頻度が高すぎるのスレッド間で切り替えないでください。 バック グラウンド スレッドで実行できる作業をローカライズしてみてください。 これには、読み込み時間が短縮されます。  
   
 ## <a name="querying-services-from-asyncpackage"></a>AsyncPackage からサービスのクエリを実行します。  
  **AsyncPackage**可能性がありますまたは呼び出し元によって非同期的に読み込まれないことができます。 例えば  

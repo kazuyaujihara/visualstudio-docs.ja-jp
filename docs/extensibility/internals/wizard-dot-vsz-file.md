@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b1bd68e9d647f9a44eaa8b975995f2d7de3d9640
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907553"
 ---
 # <a name="wizard-vsz-file"></a>ウィザード (.Vsz) ファイル
 
@@ -42,7 +42,7 @@ Param="WIZARDUI = FALSE"
 |ウィザード|このフィールドには、OLE の ProgID ウィザード、または、IDE によって一緒はウィザードの CLSID の GUID の文字列表現が含まれています。|
 |Param|これらの部分は省略可能です。 必要な数だけ追加できます。|
 
-パラメーターには、ウィザードに追加のカスタム パラメーターを渡す .vsz ファイルが有効にします。 各値は、variant の配列内の文字列要素としてウィザードに渡されます。 詳細については、[カスタム パラメーター](../../extensibility/internals/custom-parameters.md)を参照してください。
+パラメーターには、ウィザードに追加のカスタム パラメーターを渡す .vsz ファイルが有効にします。 各値は、variant の配列内の文字列要素としてウィザードに渡されます。 詳細については、次を参照してください。[カスタム パラメーター](../../extensibility/internals/custom-parameters.md)します。
 
 .Vsz ファイルには、既定のロケール ID を追加するには、指定`FALLBACK_LCID`= xxxx, ここで xxxx は、ロケール ID を英語の場合は 1033 など。 ときに`FALLBACK_LCID`パラメーターが定義されている場合、ウィザードは、現在の ID が見つからない場合に指定されたフォールバック ロケール ID を使用します。
 

@@ -10,12 +10,12 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cd48e7338823c94ad9a16f1b087daac6abe8f6e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a208fabd3d205793763698cde0f6fe367c7bb8b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973234"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067834"
 ---
 # <a name="command-implementation"></a>コマンドの実装
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ if ( null != mcs )
   
 - かどうかには、いずれかのメソッドの実装は、GUID と、コマンドの両方を認識し、メソッドは、すべてのコマンドのコマンド フラグ フィールドを設定する必要があります (で、`prgCmds`パラメーター)、次のフラグを使用しています。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 場合は、コマンドがサポートされています。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 場合は、コマンドがサポートされています。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 場合は、コマンドは表示されません。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 場合は、コマンドは表示されません。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> コマンドがオンにし、あると思われる場合はチェックされています。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> コマンドがオンにし、あると思われる場合はチェックされています。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 場合は、コマンドが有効になっているとします。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 場合は、コマンドが有効になっているとします。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> ショートカット メニューに表示される場合、コマンドを非表示にする場合。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> ショートカット メニューに表示される場合、コマンドを非表示にする場合。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> コマンドがメニュー コント ローラーが有効でないかどうかが、ドロップダウン メニューからリストが空でないとは引き続き使用できます。 (このフラグはあまり使用されません。)  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> コマンドがメニュー コント ローラーが有効でないかどうかが、ドロップダウン メニューからリストが空でないとは引き続き使用できます。 (このフラグはあまり使用されません。)  
   
 - コマンドを使用して、.vsct ファイルで定義したかどうか、`TextChanges`フラグは、次のパラメーターを設定します。  
   
-  -   設定、`rgwz`の要素、`pCmdText`パラメーターをコマンドの新しいテキスト。  
+  - 設定、`rgwz`の要素、`pCmdText`パラメーターをコマンドの新しいテキスト。  
   
-  -   設定、`cwActual`の要素、`pCmdText`パラメーターをコマンド文字列のサイズ。  
+  - 設定、`cwActual`の要素、`pCmdText`パラメーターをコマンド文字列のサイズ。  
   
   オートメーション機能を処理するために、コマンドの目的は特にない限りは、現在のコンテキストは、automation 関数ではないことを確認しますをことも。  
   

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 06cb3ad9a3f424d4e7ec0c5ed239303c9b85ca58
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b986e5219c1e8d437651feebeec09eb4ca3dd5cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545408"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000:スコープを失う前にオブジェクトを破棄
 
@@ -147,7 +147,6 @@ Public Function OpenPort2(ByVal PortName As String) As SerialPort
       If Not tempPort Is Nothing Then
          tempPort.Close()
       End If
-
 
    End Try
 

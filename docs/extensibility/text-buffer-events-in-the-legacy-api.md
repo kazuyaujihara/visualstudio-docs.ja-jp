@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 85c59ffd5b0289edf3b36fbd2ef7d0a62313af72
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798883"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>従来の API でのテキスト バッファー イベント
 テキスト バッファー オブジェクトは、さまざまな状況に対応するためのいくつかのイベントを出力します。

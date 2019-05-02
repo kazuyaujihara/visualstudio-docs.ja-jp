@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edf0bc2b233a44893e9a526e172fa75043ebaa42
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: e44e62997cac1060047de03253880bbf577935da
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895170"
 ---
-# <a name="historical-debugging-c-visual-basic-c"></a>デバッグ履歴 (C#、Visual Basic、C++)
+# <a name="historical-debugging-c-visual-basic-c"></a>デバッグ履歴 (C#、Visual Basic、 C++)
 
 デバッグ履歴は、IntelliTrace で収集された情報に依存するデバッグのモードです。 アプリケーションの実行内を前後に移動して、実行の状態を調べることができます。
 
@@ -31,8 +31,8 @@ ms.locfileid: "56689266"
 
 ## <a name="how-do-i-start-using-historical-debugging"></a>デバッグ履歴の使用を始める方法
 
- IntelliTrace は既定で有効になります。 行う必要があるすべてが対象のイベントと関数の呼び出しは、関心のあるし、の完全なアプリケーション状態のスナップショットを表示するかどうかを決定します。 調べる対象の定義について詳しくは、「[IntelliTrace の機能](../debugger/intellitrace-features.md)」をご覧ください。 言語アプリによってサポートされている機能は変化の種類。
+IntelliTrace は既定で有効になります。 行う必要があるすべてが対象のイベントと関数の呼び出しは、関心のあるし、の完全なアプリケーション状態のスナップショットを表示するかどうかを決定します。 調べる対象の定義について詳しくは、「[IntelliTrace の機能](../debugger/intellitrace-features.md)」をご覧ください。 言語アプリによってサポートされている機能は変化の種類。
 
- - デバッグ履歴のスナップショットを表示するを参照してください[IntelliTrace を使用して前のアプリ状態を調べる。](../debugger/view-historical-application-state.md)
- - 変数を検査して、コードを移動する方法については、次を参照してください[デバッグ履歴を使用してアプリを調べる。](../debugger/historical-debugging-inspect-app.md)
- - IntelliTrace イベントでのデバッグの詳細については、次を参照してください。[チュートリアル: IntelliTrace を使用した](../debugger/walkthrough-using-intellitrace.md)します。
+- デバッグ履歴のスナップショットを表示するを参照してください[IntelliTrace を使用して前のアプリ状態を調べる。](../debugger/view-historical-application-state.md)
+- 変数を検査して、コードを移動する方法については、次を参照してください[デバッグ履歴を使用してアプリを調べる。](../debugger/historical-debugging-inspect-app.md)
+- IntelliTrace イベントでのデバッグの詳細については、次を参照してください。[チュートリアル。IntelliTrace を使用して](../debugger/walkthrough-using-intellitrace.md)します。

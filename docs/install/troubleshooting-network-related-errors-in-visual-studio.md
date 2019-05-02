@@ -1,7 +1,7 @@
 ---
 title: ネットワーク エラーまたはプロキシ エラーをトラブルシューティングする
 description: ファイアウォールまたはプロキシ サーバーの内側で Visual Studio をインストールし使用するときに発生する可能性があるネットワークまたはプロキシに関連するエラーの解決策を探します。
-ms.date: 02/23/2018
+ms.date: 03/30/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4cd62e73d3a10eded5d74eaffc5486e237ca02ca
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968133"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio をインストールまたは使用するときのネットワーク関連のエラーのトラブルシューティング
 
@@ -54,6 +54,8 @@ ms.locfileid: "58324962"
 
 - プロキシで既定の資格情報を使用する場合は、次のアクションを実行します。
 
+::: moniker range="vs-2017"
+
   1. **devenv.exe.config** (devenv.exe 構成ファイル) を、**%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** または **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** で見つけます。
 
   2. 構成ファイル内で、`<system.net>` ブロックを探し、次のコードを追加します。
@@ -67,11 +69,28 @@ ms.locfileid: "58324962"
       `proxyaddress="<http://<yourproxy:port#>`には、使用しているネットワークの正しいプロキシ アドレスを挿入する必要があります。
 
      > [!NOTE]
-     > 詳細については、「[ &lt;defaultProxy&gt; 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)」ページおよび「[&lt;proxy&gt; 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)」ページを参照してください。
+     > 詳細については、「[ &lt;defaultProxy&gt; 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/)」ページおよび「[&lt;proxy&gt; 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)」ページを参照してください。
 
-  または
+::: moniker-end
 
-- 「[How to connect through an authenticated Web Proxy](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/)」 (認証された Web プロキシを通して接続する方法) ブログ投稿に含まれる手順に従うこともできます。プロキシを使用するためのコードを追加する方法が説明されています。
+::: moniker range="vs-2019"
+
+  1. **devenv.exe.config** (the devenv.exe 構成ファイル) を、**%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** または **%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** で見つけます。
+
+  2. 構成ファイル内で、`<system.net>` ブロックを探し、次のコードを追加します。
+
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
+
+      `proxyaddress="<http://<yourproxy:port#>`には、使用しているネットワークの正しいプロキシ アドレスを挿入する必要があります。
+
+     > [!NOTE]
+     > 詳細については、「[ &lt;defaultProxy&gt; 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/)」ページおよび「[&lt;proxy&gt; 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)」ページを参照してください。
+
+::: moniker-end
 
 ## <a name="error-the-underlying-connection-was-closed"></a>エラー :"基になる接続がサーバーによって閉じられました"
 

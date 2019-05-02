@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a9661673adf6cdab2d9a880ce27197a4e53127
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
-ms.translationtype: MTE95
+ms.openlocfilehash: b2aff8e1b515f460e6fdc31a528e6730971b7853
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853186"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Visual studio Just-In-Time デバッガーを使用してデバッグします。
 
@@ -26,7 +26,7 @@ ms.locfileid: "56796557"
 > [!TIP]
 > 停止するを表示するには、Just-In-Time デバッガー ダイアログ ボックスがない Visual Studio がインストールされているを参照してください、たい場合[Just-In-Time デバッガーを無効にする](../debugger/just-in-time-debugging-in-visual-studio.md)します。 Visual Studio がインストールされている 1 回場合、は、する必要があります[Windows レジストリからデバッグを使用しないジャスト イン タイム](#disable-just-in-time-debugging-from-the-windows-registry)します。
 
-##  <a name="BKMK_Enabling"></a> 有効または無効にするジャスト イン タイムが Visual Studio のデバッグ
+## <a name="BKMK_Enabling"></a> 有効または無効にするジャスト イン タイムが Visual Studio のデバッグ
 
 >[!NOTE]
 >有効または時間でのみデバッグを無効にするは、管理者として Visual Studio する実行する必要があります。 有効にするか、ジャスト イン タイムを無効にすると、レジストリ キーを設定してデバッグし、管理者特権は、そのキーを変更する必要があります。 管理者として Visual Studio を開くには、Visual Studio アプリケーションを右クリックし、選択**管理者として実行**します。
@@ -39,7 +39,7 @@ ms.locfileid: "56796557"
 
    ![有効にするか、JIT デバッグを無効にする](../debugger/media/dbg-jit-enable-or-disable.png "を有効にするか、JIT デバッグを無効にします。")
 
-1. **コードの種類の有効にする Just-In-Time デバッグを**ボックスに、時にのみをデバッグするデバッグするコードの種類を選択:**マネージ**、**ネイティブ**、や**スクリプト**します。
+1. **コードの種類の有効にする Just-In-Time デバッグを**ボックスに、時にのみをデバッグするデバッグするコードの種類を選択します。**マネージ**、**ネイティブ**、や**スクリプト**します。
 
 1. **[OK]** を選択します。
 
@@ -51,25 +51,25 @@ Visual Studio がコンピューターからアンインストールされた後
 
 **レジストリを編集して Just-In-Time デバッグを無効にするには:** 
 
-1.  Windows から**開始**メニュー、実行、**レジストリ エディター** (*regedit.exe*)。
+1. Windows から**開始**メニュー、実行、**レジストリ エディター** (*regedit.exe*)。
 
-2.  **レジストリ エディター**ウィンドウを見つけて、次のレジストリ エントリを削除します。
+2. **レジストリ エディター**ウィンドウを見つけて、次のレジストリ エントリを削除します。
 
-    -   **Hkey_local_machine \software\microsoft\\します。NETFramework\DbgManagedDebugger**
+    - **Hkey_local_machine \software\microsoft\\します。NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     ![レジストリ キーの JIT](../debugger/media/dbg-jit-registry.png "JIT レジストリ キー")
 
-3.  お使いのコンピューターで 64 ビットのオペレーティング システムが実行されている場合も、次のレジストリ エントリを削除します。
+3. お使いのコンピューターで 64 ビットのオペレーティング システムが実行されている場合も、次のレジストリ エントリを削除します。
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     削除または他のレジストリ キーの変更を確認します。
 
-5.  閉じる、**レジストリ エディター**ウィンドウ。
+5. 閉じる、**レジストリ エディター**ウィンドウ。
 
 ## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>ジャスト イン タイムを有効にする Windows フォームのデバッグ
 
@@ -79,7 +79,7 @@ Visual Studio がコンピューターからアンインストールされた後
 
 時間で Just 標準の Windows フォーム エラーを処理ではなくデバッグを有効にするには、これらの設定を追加します。
 
--  `system.windows.forms`のセクション、 *machine.config*または*\<アプリ名 >. exe.config*ファイル、設定、`jitDebugging`値を`true`:
+- `system.windows.forms`のセクション、 *machine.config*または*\<アプリ名 >. exe.config*ファイル、設定、`jitDebugging`値を`true`:
 
     ```xml
     <configuration>
@@ -87,24 +87,24 @@ Visual Studio がコンピューターからアンインストールされた後
     </configuration>
     ```
 
--  C++ Windows フォーム アプリケーションでも設定`DebuggableAttribute`に`true`で、 *.config*ファイルまたはコード。 [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) を使用し、[/Og](/cpp/build/reference/og-global-optimizations) は使用しないでコンパイルすると、コンパイラによってこの属性が設定されます。 最適化されていないリリース ビルドをデバッグする場合は、ただし、する必要があります設定`DebuggableAttribute`アプリの次の行を追加することで*AssemblyInfo.cpp*ファイル。
+- C++ Windows フォーム アプリケーションでも設定`DebuggableAttribute`に`true`で、 *.config*ファイルまたはコード。 [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) を使用し、[/Og](/cpp/build/reference/og-global-optimizations) は使用しないでコンパイルすると、コンパイラによってこの属性が設定されます。 最適化されていないリリース ビルドをデバッグする場合は、ただし、する必要があります設定`DebuggableAttribute`アプリの次の行を追加することで*AssemblyInfo.cpp*ファイル。
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
    ```
 
-   詳細については、「<xref:System.Diagnostics.DebuggableAttribute>」を参照してください。
+   詳細については、「 <xref:System.Diagnostics.DebuggableAttribute> 」を参照してください。
 
 ## <a name="BKMK_Using_JIT"></a>ジャスト イン タイムを使用して、デバッグ
- この例では、時にのみアプリがエラーをスローするときにデバッグについて説明します。
+この例では、時にのみアプリがエラーをスローするときにデバッグについて説明します。
 
- - Visual Studio をインストールする次の手順が必要です。 Visual Studio を持っていない場合は、無料でダウンロードできます、 [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)します。
+- Visual Studio をインストールする次の手順が必要です。 Visual Studio を持っていない場合は、無料でダウンロードできます、 [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)します。
 
- - 時間だけのことを確認のデバッグは[有効になっている](#BKMK_Enabling)で**ツール** > **オプション** > **デバッグ** > **ジャストイン タイム**します。
+- 時間だけのことを確認のデバッグは[有効になっている](#BKMK_Enabling)で**ツール** > **オプション** > **デバッグ** > **ジャストイン タイム**します。
 
 この例では、することになります、C#をスローする Visual Studio でコンソール アプリを[NullReferenceException](/dotnet/api/system.nullreferenceexception)します。
 
-1. Visual Studio で、作成、C#コンソール アプリ (**ファイル** > **新規** > **プロジェクト** > **Visual C#**   > **コンソール アプリケーション**) という名前の*ThrowsNullException*します。 Visual Studio でプロジェクトを作成する方法の詳細については、次を参照してください。[チュートリアル: 単純なアプリケーション作成](/visualstudio/get-started/csharp/tutorial-wpf)です。
+1. Visual Studio で、作成、C#コンソール アプリ (**ファイル** > **新規** > **プロジェクト** > **Visual C#**   > **コンソール アプリケーション**) という名前の*ThrowsNullException*します。 Visual Studio でプロジェクトを作成する方法の詳細については、次を参照してください。[チュートリアル。単純なアプリケーション作成](/visualstudio/get-started/csharp/tutorial-wpf)です。
 
 1. Visual Studio でプロジェクトを開いたら、開く、 *Program.cs*ファイル。 Main() メソッドをコンソールには行を表示し、NullReferenceException をスローし、次のコードに置き換えます。
 
@@ -157,7 +157,7 @@ Visual Studio がコンピューターからアンインストールされた後
 
   - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows エラーの報告**
 
-  - (64 ビット コンピューター) 用: **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows エラーの報告**
+  - (64 ビット コンピューターの場合)。**HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows エラーの報告**
 
   詳細については、次を参照してください。[します。WER 設定](https://docs.microsoft.com/windows/desktop/wer/wer-settings)します。
 
@@ -167,7 +167,7 @@ Visual Studio がコンピューターからアンインストールされた後
 
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
-  - (64 ビット コンピューター) 用: **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
+  - (64 ビット コンピューターの場合)。**HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 ジャスト イン タイムの中に次のエラー メッセージを表示する場合がありますのデバッグします。
 

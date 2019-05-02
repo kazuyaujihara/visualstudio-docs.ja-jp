@@ -17,21 +17,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71d22bb6210bb515941ca00ebb8b8655a6c089e0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 90da60cb904ba6e3db2be3805256fcf4eb9122ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444348"
 ---
 # <a name="localize-sharepoint-solutions"></a>SharePoint ソリューションをローカライズします。
 
-  アプリケーションを世界中で使用できるように準備するプロセスをローカライズと呼びます。 ローカライズでは、リソースを特定のカルチャに翻訳します。 詳細については、[Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md)を参照してください。 このトピックでは、SharePoint ソリューションをローカライズする方法の概要について説明します。
+  アプリケーションを世界中で使用できるように準備するプロセスをローカライズと呼びます。 ローカライズでは、リソースを特定のカルチャに翻訳します。 詳細については、次を参照してください。 [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md)します。 このトピックでは、SharePoint ソリューションをローカライズする方法の概要について説明します。
 
- ソリューションをローカライズするには、ハードコーディングされた文字列をコードから削除してリソース ファイルに抽出します。 リソース ファイルとは、 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-ベースのファイルで、 *.resx*拡張機能。 リソース ファイルには、ソリューションで使用される文字列の翻訳されたバージョンが含まれています。 詳細については、[アプリケーションのリソース](http://go.microsoft.com/fwlink/?LinkID=155844)を参照してください。
+ ソリューションをローカライズするには、ハードコーディングされた文字列をコードから削除してリソース ファイルに抽出します。 リソース ファイルとは、 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-ベースのファイルで、 *.resx*拡張機能。 リソース ファイルには、ソリューションで使用される文字列の翻訳されたバージョンが含まれています。 詳細については、次を参照してください。[アプリケーションのリソース](http://go.microsoft.com/fwlink/?LinkID=155844)します。
 
 > [!NOTE]
->  SharePoint ソリューションのリソース ファイルに追加するのは文字列リソースだけです。 リソース エディターでは文字列以外のリソースも追加できますが、文字列以外のリソースは SharePoint に配置されません。
+> SharePoint ソリューションのリソース ファイルに追加するのは文字列リソースだけです。 リソース エディターでは文字列以外のリソースも追加できますが、文字列以外のリソースは SharePoint に配置されません。
 
 ## <a name="resource-files"></a>リソース ファイル
  リソース ファイルには、既定のリソース ファイル、言語に依存しないリソース ファイル、および言語固有のリソース ファイルの 3 種類があります。
@@ -42,7 +42,7 @@ ms.locfileid: "56639922"
 |言語に依存しないリソース ファイル|特定の言語にはローカライズされているが特定のカルチャにはローカライズされていない文字列を含むリソース ファイル  (たとえば、フランス語の場合は "fr")。|
 |言語固有のリソース ファイル|特定の言語とカルチャにローカライズされた文字列を含むリソース ファイル  (たとえば、フランス語 (カナダ) の場合は "fr-CA")。|
 
- 詳細については、[ローカリゼーション用リソースの階層編成](http://go.microsoft.com/fwlink/?LinkId=178360)を参照してください。
+ 詳細については、次を参照してください。[ローカリゼーション用リソースの階層編成](http://go.microsoft.com/fwlink/?LinkId=178360)します。
 
  開発する SharePoint プロジェクトで既定のリソース ファイルを指定する[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、選択**インバリアント言語 (国のインバリアント)** カルチャの一覧で、**リソースの追加** ダイアログ ボックスの場合にします。リソース ファイルを追加します。
 
@@ -76,7 +76,7 @@ $Resources:String ID
  設定、**展開の種類**プロパティには、各リソース ファイルの**AppGlobalResource**します。 これにより、リソース ファイルが App_GlobalResources フォルダーに配置されます。このフォルダーに配置されたリソース ファイルは、ソリューション内のすべての ASPX ページと ASPX コントロールで使用できます。 App_GlobalResources フォルダー C:\inetpub\wwwroot\wss\VirtualDirectories で\\< ポート番号\>\App_GlobalResources します。
 
 > [!NOTE]
->  グローバルではないリソース ファイルを使用する場合は、それらをプロジェクト項目フォルダーに移動します。これにより、[配置タイプ] プロパティやその他の SharePoint 固有のプロパティを使用できるようになります。
+> グローバルではないリソース ファイルを使用する場合は、それらをプロジェクト項目フォルダーに移動します。これにより、[配置タイプ] プロパティやその他の SharePoint 固有のプロパティを使用できるようになります。
 
  ASPX マークアップ リソース ファイルは、コードのローカライズにも使用できます。 リソースを ASPX マークアップだけでなくコードのローカライズにも使用する場合は、各ファイルの [ビルド アクション] プロパティの設定を [埋め込まれたリソース] のままにして、リソースがサテライト アセンブリにコンパイルされるようにします。 リソース ファイルをマークアップのローカライズのみに使用する場合は、[ビルド アクション] プロパティを [コンテンツ] に変更して、ファイルがメイン アプリケーション アセンブリにコンパイルされないようにすることもできます。
 

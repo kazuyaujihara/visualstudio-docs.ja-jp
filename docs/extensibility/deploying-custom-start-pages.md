@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: ed8f06513b240719364539a24295a403b83265f4
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 3f09f03a3404bbde346370149f210bf45e6e2306
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864050"
 ---
 # <a name="deploy-custom-start-pages"></a>カスタム スタート ページをデプロイします。
 
@@ -27,9 +27,9 @@ VSIX 配置を使用するか、ターゲット コンピューター上の適�
 
 Visual Studio をスタート ページ プロジェクト テンプレートを使用して、[スタート] ページを作成し、プロジェクトをビルドすると、作成、 *.vsix*ファイルを配布することができます。 パッケージを開始 ページで、 *.vsix*ファイルには、対象ユーザーにに応じて、デプロイに次のオプションが与えられます。
 
--   配置することができます、 *.vsix*ファイル、ネットワーク共有またはパブリック Web サイト。 ファイルを開く誰かと、スタート ページが自動的にインストールします。
+- 配置することができます、 *.vsix*ファイル、ネットワーク共有またはパブリック Web サイト。 ファイルを開く誰かと、スタート ページが自動的にインストールします。
 
--   アップロードすることができます、 *.vsix*ファイルを[Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイトのユーザーを使用してインストールできるように**拡張機能マネージャー**します。
+- アップロードすることができます、 *.vsix*ファイルを[Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイトのユーザーを使用してインストールできるように**拡張機能マネージャー**します。
 
 スタート ページ プロジェクト テンプレートは、コピーを変更して、元を保持するように Visual Studio スタート ページの既定のコピーを作成します。
 
@@ -40,11 +40,11 @@ Visual Studio をスタート ページ プロジェクト テンプレートを
 
  スタート ページ プロジェクト テンプレートを使用せずには、VSIX 配置を作成するに最初に作成、 *.vsix*これら 2 つの方法のいずれかで [スタート] ページのファイル。
 
-- によって、カスタム スタート ページにファイルを空の VSIX プロジェクトに追加します。 詳細については、[VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)を参照してください。
+- によって、カスタム スタート ページにファイルを空の VSIX プロジェクトに追加します。 詳細については、次を参照してください。 [VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)します。
 
 - 手動で作成、 *.vsix*ファイル。 作成する、 *.vsix*ファイルを手動で。
 
-   1. 作成、 *extension.vsixmanifest*ファイルと *[Content_Types] .xml*新しいフォルダー内のファイル。 詳細については、[VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)を参照してください。
+   1. 作成、 *extension.vsixmanifest*ファイルと *[Content_Types] .xml*新しいフォルダー内のファイル。 詳細については、次を参照してください。 [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)します。
 
    2. Windows エクスプ ローラーでは、2 つの XML ファイルを含むフォルダーを右クリックし、をクリックして**送信**圧縮 (zip 形式) フォルダーを順にクリックします。 結果の名前を変更 *.zip*ファイルを*Filename.vsix*ファイル名は、パッケージをインストールする再頒布可能ファイルの名前です。
 
@@ -62,9 +62,9 @@ Visual studio がスタート ページでは、認識、 `Content Element` VSIX
 
 ### <a name="to-create-an-all-users-deployment"></a>すべてのユーザーの展開を作成するには
 
-1.  開く、 *extension.vsixmanifest*コード ビューでのファイル。
+1. 開く、 *extension.vsixmanifest*コード ビューでのファイル。
 
-2.  `Identifier` 、Vsix マニフェストの要素を追加、`AllUsers`要素の値を持つ`true`します。
+2. `Identifier` 、Vsix マニフェストの要素を追加、`AllUsers`要素の値を持つ`true`します。
 
     ```
     <AllUsers>true</AllUsers>
@@ -72,9 +72,9 @@ Visual studio がスタート ページでは、認識、 `Content Element` VSIX
 
      これにより、管理者のアクセス許可を要求し、ファイルをインストールするには、vsix インストーラー *\Common7\IDE\Extensions* します。
 
-3.  開く、 *.pkgdef*ファイル。
+3. 開く、 *.pkgdef*ファイル。
 
-4.  変更、 *.pkgdef* 、次を追加することで、hklm の既定のスタート ページを設定する場所*MyStartPage.xaml*の名前を指定します、 *.xaml*開始を含むファイルページです。
+4. 変更、 *.pkgdef* 、次を追加することで、hklm の既定のスタート ページを設定する場所*MyStartPage.xaml*の名前を指定します、 *.xaml*開始を含むファイルページです。
 
      [$RootKey$\StartPage\Default]
 
@@ -89,11 +89,11 @@ Visual studio がスタート ページでは、認識、 `Content Element` VSIX
 
 ### <a name="to-manually-install-a-custom-start-page"></a>カスタム スタート ページを手動でインストールするには
 
-1.  コピー、 *.xaml*ファイルをアセンブリ以外の任意のサポート ファイルと共に、スタート ページ マークアップを格納し、ユーザーの貼り付けます * \StartPages\*フォルダー。
+1. コピー、 *.xaml*ファイルをアセンブリ以外の任意のサポート ファイルと共に、スタート ページ マークアップを格納し、ユーザーの貼り付けます * \StartPages\*フォルダー。
 
-2.  スタート ページは、アセンブリを必要とする場合、コピーし、貼り付けることで *.\\{Visual Studio インストール フォルダー} \Common7\IDE\PrivateAssemblies\\*します。
+2. スタート ページは、アセンブリを必要とする場合、コピーし、貼り付けることで *.\\{Visual Studio インストール フォルダー} \Common7\IDE\PrivateAssemblies\\*します。
 
-3.  **スタート ページのカスタマイズ**ボックスの一覧、**スタートアップ**オプション ページで、新しいスタート ページを選択します。 詳細については、[スタート ページをカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)を参照してください。
+3. **スタート ページのカスタマイズ**ボックスの一覧、**スタートアップ**オプション ページで、新しいスタート ページを選択します。 詳細については、次を参照してください。[スタート ページをカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)します。
 
 ## <a name="see-also"></a>関連項目
 

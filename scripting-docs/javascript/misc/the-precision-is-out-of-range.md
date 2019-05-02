@@ -14,19 +14,19 @@ ms.assetid: c16760ac-fc08-49d7-8878-9bc434b3c080
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 875f09acb6a9ab66c656524a7bb2a1a61cbcdb6f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 92a6e7fc6433f120c053303421feb5e8d58bd1c1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56839803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006196"
 ---
 # <a name="the-precision-is-out-of-range"></a>有効桁数の範囲を超えています。
 関数に無効な引数を渡すしようとしています。 **Number.prototype.toPrecision**します。 引数に**toPrecision** 1 ~ 21 (両端を含む) である必要があります。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   引数を確認します。`toPrecision`が大きすぎるか小さすぎます。  
+- 引数を確認します。`toPrecision`が大きすぎるか小さすぎます。  
   
 ## <a name="see-also"></a>関連項目  
  [toPrecision メソッド (Number)](../../javascript/reference/toprecision-method-number-javascript.md)

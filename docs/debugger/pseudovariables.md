@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 336d177ec939ca0f7dfdc32535e2d2e92b0f04d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903647"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio デバッガーで擬似変数
 擬似変数は、変数ウィンドウまたは **[クイック ウォッチ]** ダイアログ ボックスに特定の情報を表示するときに使用される用語です。 通常の変数を入力するときと同様に、擬似変数を入力できます。 ただし、擬似変数は変数ではなく、プログラム内の変数名に対応しません。
@@ -32,7 +32,7 @@ ms.locfileid: "56686510"
 
 `$handles`
 
- ネイティブ コードの場合、次の表に示す擬似変数を使用できます。
+ ネイティブ コードでは、次の表に示す擬似変数を使用できます。
 
 |擬似変数|関数|
 |--------------------|--------------|
@@ -47,19 +47,21 @@ ms.locfileid: "56686510"
 |`$clk`|クロック周期の時間を表示します。|
 |`$user`|アプリケーションを実行しているアカウントのアカウント情報と共に、構造体を表示します。 セキュリティ上の理由から、パスワード情報は表示されません。|
 |`$exceptionstack`|現在の Windows ランタイムの例外のスタック トレースを表示します。 `$ exceptionstack` UWP アプリでのみ機能します。 `$ exceptionstack` C++ と SEH 例外はサポートされていません|
-|`$ReturnValue`|.NET Framework メソッドの戻り値を表示します。|
+|`$returnvalue`|.NET Framework メソッドの戻り値を表示します。|
 
- C# と Visual Basic では、次の表に示す擬似変数を使用できます。
+ C# 、次の表に示す擬似変数を使用することができます。
 
 |擬似変数|関数|
 |--------------------|--------------|
-|`$exception`|最後の例外に関する情報が表示されます。 例外が発生しなかった場合、`$exception` を評価してエラー メッセージが表示されます。<br /><br /> Visual C# のみに、Exception Assistant が無効なときに例外が発生すると、`$exception` が自動的に **[ローカル]** ウィンドウに追加されます。|
+|`$exception`|最後の例外に関する情報が表示されます。 例外が発生しなかった場合、`$exception` を評価してエラー メッセージが表示されます。<br /><br /> 例外処理アシスタントを無効に`$exception`が自動的に追加、**ローカル**ウィンドウ例外が発生します。|
 |`$user`|アプリケーションを実行しているアカウントのアカウント情報と共に、構造体を表示します。 セキュリティ上の理由から、パスワード情報は表示されません。|
+|`$returnvalue`|.NET Framework メソッドの戻り値を表示します。|
 
  Visual Basic では、次の表に示す擬似変数を使用できます。
 
 |擬似変数|関数|
 |--------------------|--------------|
+|`$exception`|最後の例外に関する情報が表示されます。 例外が発生しなかった場合、`$exception` を評価してエラー メッセージが表示されます。|
 |`$delete` または `$$delete`|**[イミディエイト]** ウィンドウで作成された暗黙的な変数を削除します。 構文は`$delete,`*変数*または`$delete,`*変数*`.`|
 |`$objectids` または `$listobjectids`|すべてのアクティブ オブジェクト ID を、指定された式の子として表示します。 構文は`$objectid,`*式*または`$listobjectids,`*式*`.`|
 |`$` *N* `#`|*N* と等しいオブジェクト ID を持つオブジェクトを表示します。|

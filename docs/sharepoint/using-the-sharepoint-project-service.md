@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4dfb7592fb2cec05da1bd72bd69a76e9a3b270db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007940"
 ---
 # <a name="use-the-sharepoint-project-service"></a>SharePoint プロジェクト サービスを使用します。
   SharePoint プロジェクト システムには、そのプロジェクト システムに関係するタスクを実行するために使用できるプロジェクト サービスが含まれています。 プロジェクト サービスは <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> オブジェクトです。
@@ -34,8 +34,8 @@ ms.locfileid: "56619980"
 |使用可能なすべての種類の SharePoint プロジェクト項目にアクセスする (組み込みプロジェクト項目の種類とカスタム プロジェクト項目の種類を含む)。|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ProjectItemTypes%2A> プロパティ。|
 |SharePoint プロジェクトで使用可能なすべての配置手順にアクセスする (組み込み配置手順とカスタム配置手順を含む)。|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.DeploymentSteps%2A> プロパティ。|
 |SharePoint プロジェクトのコードを開発者がリファクタリングしたときに発生するイベントにアクセスする。|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.CodeRefactoringEvents%2A> プロパティ。|
-|カスタム実行*SharePoint コマンド*を SharePoint サーバー オブジェクト モデルを呼び出します。 SharePoint コマンドの詳細については、[の SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)を参照してください。|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> プロパティ。|
-|SharePoint プロジェクト システム内の種類を、Visual Studio オートメーション オブジェクト モデルまたは統合オブジェクト モデル内の種類に変換する (あるいは逆方向に変換する)。 詳細については、[SharePoint プロジェクト システムの種類とその他の Visual Studio プロジェクトの種類間で変換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)を参照してください。|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> メソッド|
+|カスタム実行*SharePoint コマンド*を SharePoint サーバー オブジェクト モデルを呼び出します。 SharePoint コマンドの詳細については、次を参照してください。[の SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)します。|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> プロパティ。|
+|SharePoint プロジェクト システム内の種類を、Visual Studio オートメーション オブジェクト モデルまたは統合オブジェクト モデル内の種類に変換する (あるいは逆方向に変換する)。 詳細については、次を参照してください。 [SharePoint プロジェクト システムの種類とその他の Visual Studio プロジェクトの種類間で変換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)します。|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> メソッド|
 |メッセージ ログを書き込む、**出力**ウィンドウまたは**エラー一覧**Visual Studio のウィンドウ。|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Logger%2A> プロパティ。|
 |Visual Studio で使用可能な他のサービスにアクセスする。|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ServiceProvider%2A> プロパティ。|
 |ソリューションのデバッグに使用するローカル SharePoint サイトのインストール フォルダーのパスを取得する。|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointInstallPath%2A> プロパティ。|

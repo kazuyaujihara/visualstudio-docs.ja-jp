@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f879f8367ad1b992300c9e5b1c8a2887e89205b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814112"
 ---
 # <a name="how-to-define-a-method-instance"></a>方法: メソッド インスタンスを定義します。
   モデルでは、少なくとも 1 つのメソッド インスタンスのすべてのメソッドを定義する必要があります。
@@ -29,15 +29,15 @@ ms.locfileid: "56608011"
 
 ### <a name="to-define-a-method-instance"></a>メソッド インスタンスを定義するには
 
-1.  **BDC メソッドの詳細**ウィンドウが、メソッドのノードを展開し、展開、**インスタンス**ノード。
+1. **BDC メソッドの詳細**ウィンドウが、メソッドのノードを展開し、展開、**インスタンス**ノード。
 
-2.  **メソッド インスタンスの追加**一覧で、選択**Finder インスタンスの作成**です。
+2. **メソッド インスタンスの追加**一覧で、選択**Finder インスタンスの作成**です。
 
      新しいメソッド インスタンスの下に表示されます、**インスタンス**ノード。
 
-3.  メニュー バーで、**ビュー** > **プロパティ ウィンドウ**します。
+3. メニュー バーで、**ビュー** > **プロパティ ウィンドウ**します。
 
-4.  **プロパティ**ウィンドウ、メソッドのインスタンスのプロパティを設定します。 各プロパティの詳細については、[MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)を参照してください。
+4. **プロパティ**ウィンドウ、メソッドのインスタンスのプロパティを設定します。 各プロパティの詳細については、次を参照してください。 [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)します。
 
 ## <a name="see-also"></a>関連項目
 - [BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)

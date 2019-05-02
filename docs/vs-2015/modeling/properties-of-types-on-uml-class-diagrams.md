@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 520843ee596e67de5d4e804e90302f931a1d3b57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 996f2f75499a54e0d5514590f2b087130b73ffb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387771"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>UML クラス ダイアグラムの型のプロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,17 +26,17 @@ ms.locfileid: "58978232"
 UML クラス図で、*型*がクラス、インターフェイス、または列挙体。  
   
 > [!NOTE]
->  このトピックでは、UML クラス図における型のプロパティについて説明します。 詳細については、次のトピックを参照してください。  
+> このトピックでは、UML クラス図における型のプロパティについて説明します。 詳細については、次のトピックを参照してください。  
   
--   [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)  
+- [UML クラス図: リファレンス](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML クラス図: ガイドライン](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [UML クラス図の属性のプロパティ](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [UML クラス図の属性のプロパティ](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [UML クラス ダイアグラムの操作のプロパティ](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [UML クラス ダイアグラムの操作のプロパティ](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [UML クラス ダイアグラムの関連のプロパティ](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [UML クラス ダイアグラムの関連のプロパティ](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
 ## <a name="properties"></a>プロパティ  
  クラス、インターフェイス、または列挙のプロパティを次に示します。  

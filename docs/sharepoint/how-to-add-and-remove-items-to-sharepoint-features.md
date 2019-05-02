@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 949014204f67f16e22d25cd604585a229c8967e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3454ca7c01b44dcae60156e93bffde351209cc5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966901"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>方法: 項目を SharePoint の機能を追加および削除
   SharePoint ソリューションを作成するときに、Visual Studio は、機能に既定の SharePoint プロジェクト項目を追加します。 、展開前に追加し、SharePoint の機能を変更する SharePoint プロジェクト項目を削除することができます。
@@ -46,9 +46,9 @@ ms.locfileid: "56619226"
 
 #### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>フィーチャー デザイナーを使用した SharePoint 項目を削除するには
 
-1.  1 つまたは複数の項目を選択、**フィーチャー内の項目**一覧。
+1. 1 つまたは複数の項目を選択、**フィーチャー内の項目**一覧。
 
-2.  選択、**削除**、一度に 1 つの項目を削除するか選択するボタン (<)、**すべて削除**ボタン (<<) すべての項目を削除します。
+2. 選択、**削除**、一度に 1 つの項目を削除するか選択するボタン (<)、**すべて削除**ボタン (<<) すべての項目を削除します。
 
      SharePoint プロジェクトの項目に表示される、**ソリューション内の項目**一覧。
 

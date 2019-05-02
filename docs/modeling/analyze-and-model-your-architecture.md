@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 253f86f83805d11d7a1a6475fcbaf4eb76bfbc50
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795670"
 ---
 # <a name="analyze-and-model-your-architecture"></a>アーキテクチャを分析およびモデルする
 
@@ -69,39 +69,39 @@ ms.locfileid: "57873669"
 
 **一般的な用途:**
 
--   コードの構造と依存関係および更新方法の理解を深め、提案された変更のコストを見積もることができるように、プログラム コードを調べます。
+- コードの構造と依存関係および更新方法の理解を深め、提案された変更のコストを見積もることができるように、プログラム コードを調べます。
 
 **参照してください。**
 
--   [ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)
--   [コード マップを使用してアプリケーションをデバッグする](../modeling/use-code-maps-to-debug-your-applications.md)
--   [コード マップ アナライザーを使用して潜在的な問題を検索する](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)
+- [コード マップを使用してアプリケーションをデバッグする](../modeling/use-code-maps-to-debug-your-applications.md)
+- [コード マップ アナライザーを使用して潜在的な問題を検索する](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ### <a name="dependency-diagram"></a>依存関係図
 依存関係図を使用して、一連のレイヤーまたは明示的な依存関係を持つブロックとして、アプリケーションの構造を定義できます。 コード内の依存関係と依存関係図で説明されている依存関係の競合を検出する検証を行うことができます。
 
 **一般的な用途:**
 
--   アプリケーションのライフサイクルを通じて多数の変更を行うことにより、アプリケーションの構造を安定化する。
--   コードへの変更をチェックインする前に、意図しない依存関係の競合を検出します。
+- アプリケーションのライフサイクルを通じて多数の変更を行うことにより、アプリケーションの構造を安定化する。
+- コードへの変更をチェックインする前に、意図しない依存関係の競合を検出します。
 
 **参照してください。**
 
--   [コードからの依存関係図の作成](../modeling/create-layer-diagrams-from-your-code.md)
--   [依存関係図:リファレンス](../modeling/layer-diagrams-reference.md)
--   [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)
+- [コードからの依存関係図の作成](../modeling/create-layer-diagrams-from-your-code.md)
+- [依存関係図:リファレンス](../modeling/layer-diagrams-reference.md)
+- [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>ドメイン固有言語 (DSL)
 DSL は、特定の目的のために設計する表記法です。 Visual Studio では、通常、グラフィックです。
 
 **一般的な用途:**
 
--   アプリケーションの各部分を生成または構成する。 表記法およびツールを開発するには、作業が必要です。 これを行うと、UML のカスタマイズよりもドメインに適合する結果となることがあります。
--   DSL およびそのツールの開発への投資が複数のプロジェクトでの DSL の利用という結果をもたらす大規模プロジェクトまたは製品ライン。
+- アプリケーションの各部分を生成または構成する。 表記法およびツールを開発するには、作業が必要です。 これを行うと、UML のカスタマイズよりもドメインに適合する結果となることがあります。
+- DSL およびそのツールの開発への投資が複数のプロジェクトでの DSL の利用という結果をもたらす大規模プロジェクトまたは製品ライン。
 
 **参照してください。**
 
--   [Modeling SDK for Visual Studio - ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
+- [Modeling SDK for Visual Studio - ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
 ## <a name="where-can-i-get-more-information"></a>情報の入手方法
 

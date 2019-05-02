@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990318"
 ---
 # <a name="unit-test-basics"></a>単体テストの基本
 
@@ -78,17 +78,20 @@ public void Withdraw(double amount)
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>単体テスト プロジェクトとテスト メソッドを作成する
 
-ほとんどの場合、コードから単体テスト プロジェクトと単体テスト スタブを生成する方が手軽です。 また、必要に応じて単体テスト プロジェクトとテストを手動で作成することもできます。
+ほとんどの場合、コードから単体テスト プロジェクトと単体テスト スタブを生成する方が手軽です。 また、必要に応じて単体テスト プロジェクトとテストを手動で作成することもできます。 サード パーティ製のフレームワークで単体テストを作成する場合は、拡張機能[NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) または [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator) のいずれかをインストールする必要があります。
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>単体テスト プロジェクトと単体テスト スタブを生成する
 
-1. コード エディター ウィンドウで、右クリックして右クリック メニューから **[単体テストの作成]** を選択します。
+1. コード エディター ウィンドウで、右クリックして右クリック メニューから [**[単体テストの作成]**](create-unit-tests-menu.md) を選択します。
 
-    ![エディター ウィンドウで、コンテキスト メニューを表示](../test/media/createunittestsrightclick.png)
+   ![エディター ウィンドウで、コンテキスト メニューを表示](../test/media/createunittestsrightclick.png)
+
+   > [!NOTE]
+   > **[単体テストの作成]** メニュー コマンドは、.NET Framework を対象とするマネージド コードに対してのみ使用できます (.NET Core では使用できません)。
 
 2. **[OK]** をクリックして、既定値をそのまま使用して単体テストを作成するか、単体テスト プロジェクトと単体テストの作成と名前付けに使用される値を変更します。 単体テスト メソッドに既定で追加されるコードを選択することができます。
 
-    ![エディター内を右クリックし、[単体テストの作成] を選択](../test/media/createunittestsdialog.png)
+    ![Visual Studio の [単体テストの作成] ダイアログ ボックス](../test/media/create-unit-tests.png)
 
 3. 新しい単体テスト プロジェクトでは、クラス内のすべてのメソッドに単体テスト スタブが作成されます。
 
@@ -127,17 +130,17 @@ public void Withdraw(double amount)
 
    コード プロジェクトへの参照を作成する方法は次のとおりです。
 
-   1.  **ソリューション エクスプローラー**でプロジェクトを選択します。
+   1. **ソリューション エクスプローラー**でプロジェクトを選択します。
 
-   2.  **[プロジェクト]** メニューの **[参照の追加]** をクリックします。
+   2. **[プロジェクト]** メニューの **[参照の追加]** をクリックします。
 
-   3.  **[参照マネージャー]** ダイアログ ボックスで、**[ソリューション]** ノードを開き、**[プロジェクト]** を選択します。 コード プロジェクトの名前を選択し、ダイアログ ボックスを閉じます。
+   3. **[参照マネージャー]** ダイアログ ボックスで、**[ソリューション]** ノードを開き、**[プロジェクト]** を選択します。 コード プロジェクトの名前を選択し、ダイアログ ボックスを閉じます。
 
 各単体テスト プロジェクトには、コード プロジェクト内のクラス名を反映したクラスが含まれています。 この例では、 `AccountsTests` プロジェクトに次のクラスが含まれています。
 
--   `AccountInfoTests` クラスには、 `AccountInfo` プロジェクトの `Accounts` クラス用の単体テスト メソッドが含まれています。
+- `AccountInfoTests` クラスには、 `AccountInfo` プロジェクトの `Accounts` クラス用の単体テスト メソッドが含まれています。
 
--   `CheckingAccountTests` クラスには、 `CheckingAccount` クラス用の単体テスト メソッドが含まれています。
+- `CheckingAccountTests` クラスには、 `CheckingAccount` クラス用の単体テスト メソッドが含まれています。
 
 ## <a name="write-your-tests"></a>テストを作成する
 
@@ -185,11 +188,11 @@ public void Withdraw_AmountMoreThanBalance_Throws()
 
 Microsoft 単体テスト フレームワークの詳細については、次のトピックのいずれかを参照してください。
 
--   [コードの単体テスト](unit-test-your-code.md)
+- [コードの単体テスト](unit-test-your-code.md)
 
--   [C/C++ 用の単体テストの記述](writing-unit-tests-for-c-cpp.md)
+- [C/C++ 用の単体テストの記述](writing-unit-tests-for-c-cpp.md)
 
--   [単体テストでの MSTest フレームワークの使用](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [単体テストでの MSTest フレームワークの使用](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>単体テストのタイムアウトを設定する
 
@@ -260,12 +263,12 @@ public void My_Test ()
 
 **A:** **テスト エクスプローラー**を使用して、自分のテストに対するデバッグ セッションを開始します。 Visual Studio デバッガーを使用してコードをシームレスにステップ実行すると、テスト対象のプロジェクトと単体テストの間を切り替えることができます。 デバッグを開始するには:
 
-1.  Visual Studio エディターで、デバッグする 1 つ以上のテスト メソッドにブレークポイントを設定します。
+1. Visual Studio エディターで、デバッグする 1 つ以上のテスト メソッドにブレークポイントを設定します。
 
     > [!NOTE]
     > テスト メソッドを任意の順序で実行できるため、デバッグするすべてのテスト メソッドにブレークポイントを設定します。
 
-2.  **テスト エクスプローラー**でテスト メソッドを選択し、ショートカット メニューから **[選択したテストのデバッグ]** を選択します。
+2. **テスト エクスプローラー**でテスト メソッドを選択し、ショートカット メニューから **[選択したテストのデバッグ]** を選択します。
 
 [単体テストのデバッグ](../debugger/debugger-feature-tour.md)の詳細を確認してください。
 
@@ -327,9 +330,9 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 Microsoft Fakes は、次の 2 つの方法で外部依存関係の代替クラスを作成します。
 
-1.  *スタブ* は、対象の依存関係クラスの親インターフェイスから派生した代替クラスを生成します。 スタブ メソッドは、対象クラスのパブリック仮想メソッドの代わりに使用できます。
+1. *スタブ* は、対象の依存関係クラスの親インターフェイスから派生した代替クラスを生成します。 スタブ メソッドは、対象クラスのパブリック仮想メソッドの代わりに使用できます。
 
-2.  *Shim* は、ランタイム インストルメンテーションを使用して、対象メソッドへの呼び出しを仮想でないメソッドの代替 shim メソッドに転換します。
+2. *Shim* は、ランタイム インストルメンテーションを使用して、対象メソッドへの呼び出しを仮想でないメソッドの代替 shim メソッドに転換します。
 
 いずれの方法でも、依存関係メソッドへの呼び出しの生成されたデリゲートを使用して、テスト メソッド内の動作を指定します。
 

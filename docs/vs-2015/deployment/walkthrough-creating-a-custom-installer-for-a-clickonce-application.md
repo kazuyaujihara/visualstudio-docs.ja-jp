@@ -19,12 +19,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11ce31ce0a128114e3751dd412d7c3a0ea36df25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9ebde75fdf36c84f40ae660a24d469c36e72ceaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386599"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>チュートリアル: ClickOnce アプリケーションのカスタム インストーラーを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58977267"
   
 ### <a name="to-create-a-custom-clickonce-application-installer"></a>カスタム ClickOnce アプリケーション インストーラーを作成するには  
   
-1.  ClickOnce アプリケーションでは、System.Deployment および System.Windows.Forms への参照を追加します。  
+1. ClickOnce アプリケーションでは、System.Deployment および System.Windows.Forms への参照を追加します。  
   
-2.  アプリケーションに新しいクラスを追加し、任意の名前を指定します。 このチュートリアルでは、名前 `MyInstaller` を使用します。  
+2. アプリケーションに新しいクラスを追加し、任意の名前を指定します。 このチュートリアルでは、名前 `MyInstaller` を使用します。  
   
-3.  次の追加`Imports`または`using`ステートメントを新しいクラスの先頭にします。  
+3. 次の追加`Imports`または`using`ステートメントを新しいクラスの先頭にします。  
   
     ```vb  
     Imports System.Deployment.Application  
@@ -51,17 +51,17 @@ ms.locfileid: "58977267"
     using System.Windows.Forms;  
     ```  
   
-4.  次のメソッドをクラスに追加します。  
+4. 次のメソッドをクラスに追加します。  
   
      これらのメソッドを呼び出す<xref:System.Deployment.Application.InPlaceHostingManager>配置マニフェストをダウンロードする方法はインストール、ダウンロードして、ClickOnce キャッシュにアプリケーションをインストールするアクセス許可をユーザーに確認、適切なアクセス許可をアサートします。 カスタム インストーラーは、ClickOnce アプリケーションが事前に信頼されている、または、信頼の決定を遅らせることができますを指定できます、<xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A>メソッドの呼び出し。 このコードは、あらかじめアプリケーションを信頼します。  
   
     > [!NOTE]
-    >  事前に信頼する割り当てられたアクセス許可は、カスタム インストーラーのコードのアクセス許可を超えることはできません。  
+    > 事前に信頼する割り当てられたアクセス許可は、カスタム インストーラーのコードのアクセス許可を超えることはできません。  
   
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  
   
-5.  コードからのインストールには、呼び出し、`InstallApplication`メソッド。 たとえば、クラスの名前を付けた`MyInstaller`、呼び出すことができます`InstallApplication`次のようにします。  
+5. コードからのインストールには、呼び出し、`InstallApplication`メソッド。 たとえば、クラスの名前を付けた`MyInstaller`、呼び出すことができます`InstallApplication`次のようにします。  
   
     ```vb  
     Dim installer As New MyInstaller()  

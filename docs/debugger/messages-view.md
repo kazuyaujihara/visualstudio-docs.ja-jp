@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9d64119a94e2358a6f52e6e1269fca8d726cbb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845854"
 ---
 # <a name="messages-view"></a>メッセージ ビュー
 各ウィンドウには、関連のメッセージ ストリームがあります。 メッセージ ビュー ウィンドウには、このメッセージのストリームが表示されます。 ウィンドウ ハンドル、メッセージのコードとメッセージが表示されます。 スレッドまたはプロセスもメッセージ ビューを作成することができます。 これにより、特定のプロセスまたはスレッドは初期化のウィンドウ メッセージをキャプチャするために特に便利ですが所有するすべてのウィンドウに送信されるメッセージを表示することができます。
@@ -30,21 +30,21 @@ ms.locfileid: "56694401"
 
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>ウィンドウ、プロセス、またはスレッドのメッセージ ビューを開く
 
-1.  フォーカスを移動する、 [Windows ビュー](../debugger/windows-view.md)、[プロセス ビュー](../debugger/processes-view.md)、または[スレッド ビュー](../debugger/threads-view.md)ウィンドウ。
+1. フォーカスを移動する、 [Windows ビュー](../debugger/windows-view.md)、[プロセス ビュー](../debugger/processes-view.md)、または[スレッド ビュー](../debugger/threads-view.md)ウィンドウ。
 
-2.  確認するメッセージが含まれる項目のノードを検索し、それを選択します。
+2. 確認するメッセージが含まれる項目のノードを検索し、それを選択します。
 
-3.  **スパイ**] メニューの [選択**ログ メッセージ**します。
+3. **スパイ**] メニューの [選択**ログ メッセージ**します。
 
      [メッセージ オプション ダイアログ ボックス](../debugger/message-options-dialog-box.md)が開きます。
 
-4.  メッセージを表示するためのオプションを選択します。
+4. メッセージを表示するためのオプションを選択します。
 
-5.  キーを押して**OK**メッセージのログ記録を開始します。
+5. キーを押して**OK**メッセージのログ記録を開始します。
 
      ビュー ウィンドウが開き、メッセージおよび**メッセージ**spy++ ツールバーにメニューが追加されます。 選択したオプションに応じて、メッセージは、アクティブなメッセージ ビュー ウィンドウにストリーミングを開始します。
 
-6.  十分なメッセージを使用する場合は、選択**ログの停止**から、**メッセージ**メニュー。
+6. 十分なメッセージを使用する場合は、選択**ログの停止**から、**メッセージ**メニュー。
 
 ## <a name="in-this-section"></a>このセクションの内容
  [メッセージ ビューを制御する](../debugger/how-to-control-messages-view.md)メッセージ ビューを管理する方法について説明します。

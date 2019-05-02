@@ -14,12 +14,12 @@ ms.assetid: d6ab82e6-ca64-46b4-a06c-5c6b0aa057cb
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a53ff758622cf719c2b10ea47fc516ac8684eb6a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2767ffc16b637c6b1e7bdf51cb0815d71f58edac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946382"
 ---
 # <a name="date-object-expected"></a>Date オブジェクトが必要です。
 呼び出そうとしたか、 **Date.prototype.toString**または**Date.prototype.valueOf**メソッド以外の型のオブジェクトを`Date`します。 呼び出し元のオブジェクト型でなければなりません`Date`します。 例えば:  
@@ -32,7 +32,7 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   のみを呼び出す、 **Date.prototype.toString**または**Date.prototype.valueOf**型のオブジェクトに対するメソッド`Date`します。  
+- のみを呼び出す、 **Date.prototype.toString**または**Date.prototype.valueOf**型のオブジェクトに対するメソッド`Date`します。  
   
 ## <a name="see-also"></a>関連項目  
  [Date オブジェクト](../../javascript/reference/date-object-javascript.md)   

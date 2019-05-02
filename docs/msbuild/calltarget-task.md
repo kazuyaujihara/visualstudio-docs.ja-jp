@@ -16,19 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6594620051675f2c0ce6e06ca098d26e443f624b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b7aac5078f5fec4da59538543a9d6123f4473c03
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823268"
 ---
 # <a name="calltarget-task"></a>CallTarget タスク
 プロジェクト ファイル内で指定されたターゲットを呼び出します。
 
 ## <a name="task-parameters"></a>タスク パラメーター
  `CallTarget` タスクのパラメーターの説明を次の表に示します。
-
 
 | パラメーター | 説明 |
 |---------------------------| - |

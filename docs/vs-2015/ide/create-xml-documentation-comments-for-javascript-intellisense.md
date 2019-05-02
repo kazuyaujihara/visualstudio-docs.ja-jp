@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 613a1ac89242daeee9b6647f63946eae23c9af1e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 90fb5b1c9a388d64e191915bbcbbe3de65f6aa99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437626"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>JavaScript IntelliSense の XML ドキュメント コメントを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "54802059"
  このトピックでは、XML ドキュメント コメントの使用に関する基本的なチュートリアルを提供します。 については、他の要素を使用して[ \<var >](../ide/var-javascript.md)と[\<値 >](../ide/value-javascript.md)、および追加のコード例については、次を参照してください[XML ドキュメントのコメント](../ide/xml-documentation-comments-javascript.md)。 など、非同期コールバックの IntelliSense の情報を提供する方法については、`Promise`を参照してください[\<返します >](../ide/returns-javascript.md)します。  
   
 > [!NOTE]
->  XML ドキュメントのコメントは、参照されるファイル、アセンブリ、およびサービスでのみ使用できます。  
+> XML ドキュメントのコメントは、参照されるファイル、アセンブリ、およびサービスでのみ使用できます。  
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>JavaScript 関数の XML ドキュメント コメントを作成するには  
   
--   関数で追加[\<概要 >](../ide/summary-javascript.md)、 [ \<param >](../ide/param-javascript.md)と[\<を返します >](../ide/returns-javascript.md)要素の各要素の前に、3 つのスラッシュ記号 (///) です。  
+- 関数で追加[\<概要 >](../ide/summary-javascript.md)、 [ \<param >](../ide/param-javascript.md)と[\<を返します >](../ide/returns-javascript.md)要素の各要素の前に、3 つのスラッシュ記号 (///) です。  
   
     > [!NOTE]
-    >  各要素は、1 行にある必要があります。  
+    > 各要素は、1 行にある必要があります。  
   
      次の例では、JavaScript 関数を示します。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "54802059"
     }  
     ```  
   
--   XML ドキュメント コメントを表示するには、名前と次の例のように、XML ドキュメント コメントでマークされている関数の始めかっこを入力します。  
+- XML ドキュメント コメントを表示するには、名前と次の例のように、XML ドキュメント コメントでマークされている関数の始めかっこを入力します。  
   
     ```javascript  
     var areaVal = getArea(  
@@ -62,7 +62,7 @@ ms.locfileid: "54802059"
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-field"></a>JavaScript のフィールドの XML ドキュメントのコメントを作成するには  
   
--   コンス トラクター関数またはオブジェクト定義、追加、 [\<フィールド >](../ide/field-javascript.md)要素に続く 3 つのスラッシュ (///)。  
+- コンス トラクター関数またはオブジェクト定義、追加、 [\<フィールド >](../ide/field-javascript.md)要素に続く 3 つのスラッシュ (///)。  
   
      次の例では、使用、`<field>`コンス トラクター関数内の要素。 その他の例では、次を参照してください。 [\<フィールド >](../ide/field-javascript.md)します。  
   
@@ -73,13 +73,13 @@ ms.locfileid: "54802059"
     }  
     ```  
   
--   XML ドキュメント コメントを表示するには、次の例のように、XML ドキュメントのコメントをマークされている関数コンス トラクターを使用してオブジェクトを作成します。  
+- XML ドキュメント コメントを表示するには、次の例のように、XML ドキュメントのコメントをマークされている関数コンス トラクターを使用してオブジェクトを作成します。  
   
     ```javascript  
     var eng = new Engine();  
     ```  
   
--   次の行には、オブジェクトと、フィールドの IntelliSense 情報を表示する期間の名前を入力します。  
+- 次の行には、オブジェクトと、フィールドの IntelliSense 情報を表示する期間の名前を入力します。  
   
     ```javascript  
     eng.  
@@ -87,7 +87,7 @@ ms.locfileid: "54802059"
   
 ### <a name="to-create-xml-documentation-comments-for-an-overloaded-function"></a>オーバー ロードされた関数の場合、XML ドキュメント コメントを作成するには  
   
-1.  関数では、追加、 [\<署名 >](../ide/signature-javascript.md)各オーバー ロードの要素。 これらの要素で、追加など、他の要素`<summary>`、 `<param>`、および`<returns>`、3 つのスラッシュ (///) を持つ各要素の前します。  
+1. 関数では、追加、 [\<署名 >](../ide/signature-javascript.md)各オーバー ロードの要素。 これらの要素で、追加など、他の要素`<summary>`、 `<param>`、および`<returns>`、3 つのスラッシュ (///) を持つ各要素の前します。  
   
      次の例では、オーバー ロードの JavaScript 関数を示します。 この例では、オーバー ロードは、パラメーターの型によって異なります。  
   
@@ -107,7 +107,7 @@ ms.locfileid: "54802059"
     }  
     ```  
   
-2.  XML ドキュメント コメントを表示するには、名前と次の例のように、XML ドキュメント コメントでマークされている関数の始めかっこを入力します。  
+2. XML ドキュメント コメントを表示するには、名前と次の例のように、XML ドキュメント コメントでマークされている関数の始めかっこを入力します。  
   
     ```javascript  
     calc(  
@@ -115,10 +115,10 @@ ms.locfileid: "54802059"
   
 ### <a name="to-create-localized-intellisense"></a>ローカライズされた IntelliSense を作成するには  
   
-1.  OpenAjax MessageBundle 形式でドキュメントのコメントを含む XML ファイルを作成します。  
+1. OpenAjax MessageBundle 形式でドキュメントのコメントを含む XML ファイルを作成します。  
   
     > [!IMPORTANT]
-    >  MessageBundle は、推奨される形式です。 Microsoft Ajax または .winmd ファイルは、この形式はサポートされていません。 代わりに、使用について`VSDoc`書式設定を参照してください[ \<loc >](../ide/loc-javascript.md)します。  
+    > MessageBundle は、推奨される形式です。 Microsoft Ajax または .winmd ファイルは、この形式はサポートされていません。 代わりに、使用について`VSDoc`書式設定を参照してください[ \<loc >](../ide/loc-javascript.md)します。  
   
      次の例を示しています、ローカライズされた IntelliSense 情報を含むサイドカー ファイルのコンテンツ。 これは、JA など、カルチャ固有のフォルダーにある XML ファイルです。 フォルダーを格納する .js ファイルと同じ場所にある必要があります、`<loc>`要素。 XML ファイルのファイル名に一致する必要があります、`filename`パラメーターで指定された、`<loc>`要素。  
   
@@ -131,14 +131,14 @@ ms.locfileid: "54802059"
   
     ```  
   
-2.  .Js ファイルには、次のコードを追加します。 `<loc>`要素は、任意のスクリプトでは、前に宣言する必要がありますと同じ使用状況規則に従います、`<reference>`要素。 詳細については、次を参照してください。 [JavaScript IntelliSense](../ide/javascript-intellisense.md)と[ \<loc >](../ide/loc-javascript.md)します。  
+2. .Js ファイルには、次のコードを追加します。 `<loc>`要素は、任意のスクリプトでは、前に宣言する必要がありますと同じ使用状況規則に従います、`<reference>`要素。 詳細については、次を参照してください。 [JavaScript IntelliSense](../ide/javascript-intellisense.md)と[ \<loc >](../ide/loc-javascript.md)します。  
   
     ```javascript  
     /// <loc filename="messageFilename.xml" format="messagebundle"/>  
   
     ```  
   
-3.  .Js ファイルには、XML ドキュメントの要素とその既定の説明を追加します。 設定、`locid`属性値に対応する一致`name`サイドカー ファイルからの属性値。 使用できる場合、ローカライズされた IntelliSense 情報が既定の説明が置き換えられます。  
+3. .Js ファイルには、XML ドキュメントの要素とその既定の説明を追加します。 設定、`locid`属性値に対応する一致`name`サイドカー ファイルからの属性値。 使用できる場合、ローカライズされた IntelliSense 情報が既定の説明が置き換えられます。  
   
     ```javascript  
     function add(a,b)   
@@ -150,7 +150,7 @@ ms.locfileid: "54802059"
   
     ```  
   
-4.  XML ドキュメント コメントを表示するには、名前と次の例のように、関数の始めかっこを入力します。  
+4. XML ドキュメント コメントを表示するには、名前と次の例のように、関数の始めかっこを入力します。  
   
     ```javascript  
     add(  

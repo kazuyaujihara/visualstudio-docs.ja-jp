@@ -10,12 +10,12 @@ ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 656ca1e4bfaa37afa3a8da8516e67c33bf315dc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b14b59465b94ddd0a09748f0e309166bf3d4114
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974543"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065819"
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>チュートリアル: エディターの拡張機能から DTE オブジェクトにアクセスする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ Vspackage では、呼び出すことによって、DTE オブジェクトを取
   
 #### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>DTE オブジェクトをサービス プロバイダーから取得するには  
   
-1.  という名前の c# VSIX プロジェクトを作成する`DTETest`します。 エディター分類子の項目テンプレートを追加し、名前`DTETest`します。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能の作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)です。  
+1. という名前の c# VSIX プロジェクトを作成する`DTETest`します。 エディター分類子の項目テンプレートを追加し、名前`DTETest`します。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能の作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)です。  
   
-2.  プロジェクトには、次のアセンブリ参照を追加します。  
+2. プロジェクトには、次のアセンブリ参照を追加します。  
   
-    -   EnvDTE  
+    - EnvDTE  
   
-    -   EnvDTE80  
+    - EnvDTE80  
   
-    -   Microsoft.VisualStudio.Shell.Immutable.10.0  
+    - Microsoft.VisualStudio.Shell.Immutable.10.0  
   
-3.  DTETest.cs ファイルに移動し、次の追加`using`ディレクティブ。  
+3. DTETest.cs ファイルに移動し、次の追加`using`ディレクティブ。  
   
     ```csharp  
     using EnvDTE;  
@@ -48,7 +48,7 @@ Vspackage では、呼び出すことによって、DTE オブジェクトを取
   
     ```  
   
-4.  `GetDTEProvider`クラスは、インポート、<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>します。  
+4. `GetDTEProvider`クラスは、インポート、<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>します。  
   
     ```csharp  
     [Import]  
@@ -56,14 +56,14 @@ Vspackage では、呼び出すことによって、DTE オブジェクトを取
   
     ```  
   
-5.  `GetClassifier()` メソッドに次のコードを追加します。  
+5. `GetClassifier()` メソッドに次のコードを追加します。  
   
     ```csharp  
     DTE dte = (DTE)ServiceProvider.GetService(typeof(DTE));  
   
     ```  
   
-6.  使用した場合、<xref:EnvDTE80.DTE2>インターフェイス、DTE オブジェクトをキャストすることができます。  
+6. 使用した場合、<xref:EnvDTE80.DTE2>インターフェイス、DTE オブジェクトをキャストすることができます。  
   
 ## <a name="see-also"></a>関連項目  
  [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)

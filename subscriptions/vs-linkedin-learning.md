@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる LinkedIn Premium サブスクリプションに含まれる LinkedIn Learning 特典について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 2f1e465be1d9c81235af1bad723f827a0f04147c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: b6d60a5bedb960c2302a8823d1248b36849c604d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948628"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの LinkedIn Learning 特典
 
@@ -28,7 +28,6 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
 2. [教育] カテゴリで [LinkedIn Learning] タイルを見つけて、**[コードの取得]** リンクをクリックします。
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning 特典のタイル](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
-
 
 3. LinkedIn アカウントを既に持っていて、自動的にサインインされた場合は、LinkedIn Learning 特典のアクティブ化ページが表示されます。  LinkedIn アカウントを持っているが、自動的にサインインされなかった場合は、ユーザー名とパスワードを入力し、**[サインイン]** をクリックします。  [この手順](#activate-your-offer)までスキップして、プランをアクティブにしてください。
 
@@ -80,7 +79,6 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning: アクティブ化](_img/vs-linkedin/vs-linkedin-Activate1.png)
 
-
 16. 関心のあるスキルの探索を開始できます。  お勧め候補の一覧から選択するか、その他のスキルを検索します。あるいは **[スキップ]** をクリックしてスキルの選択は行わずに続行します。
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning: スキル](_img/vs-linkedin/vs-linkedin-skills.png)
@@ -97,15 +95,13 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 3 か月                                                            |いいえ。  新しいサブスクライバーのみが使用できます         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 3 か月                                             |  いいえ。  新しいサブスクライバーのみが使用できます         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 3 か月                                              | いいえ。  新しいサブスクライバーのみが使用できます         |
-| Visual Studio Dev Essentials | N/A  | 3 か月 |いいえ。  新しいサブスクライバーのみが使用できます |
+| Visual Studio Dev Essentials | N/A  | 使用できません |N/A|
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
 
 <sup>1</sup>  *Not for Resale (NFR)、Visual Studio Industry Partner (VSIP) が含まれます除外:Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
 
-
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
-
 
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
@@ -114,8 +110,8 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
 A: いいえ、LinkedIn Learning プランは新規サブスクライバーのみが利用できます。
 
 ## <a name="support-resources"></a>サポート リソース
--  LinkedIn Learning のヘルプが必要ですか。  以下のリソースを確認してください。
+- LinkedIn Learning のヘルプが必要ですか。  以下のリソースを確認してください。
     - [LinkedIn Learning の使用方法](https://www.linkedin.com/help/learning)に関するヘルプ。
     - アカウントやプロファイルの作成、ネットワークの維持などの [LinkedIn](https://www.linkedin.com/help/linkedin) に関する一般的な質問のヘルプ。
--  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
--  Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

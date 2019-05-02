@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6cdd551a0cf8ee085359f5545dd16dfac163c4d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d42c9698c6d3a247601909909c49fa92d2d29978
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855974"
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>方法: Windows Communication Foundation コントラクト操作を呼び出す (レガシ)
 このトピックでは、[!INCLUDE[indigo1](../includes/indigo1-md.md)] または [!INCLUDE[wfd1](../includes/wfd1-md.md)] を対象とする従来の [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]を使用して [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] コントラクト操作を呼び出す方法について説明します。  
@@ -25,27 +25,27 @@ ms.locfileid: "58963777"
   
 ### <a name="to-invoke-a-wcf-contract-operation-from-a-sendactivity-activity"></a>SendActivity アクティビティから WCF コントラクト操作を呼び出すには  
   
-1.  ダブルクリック、 **SendActivity**アクティビティ デザイナーの横にある省略記号をクリックしてまたは、 **ServiceOperationInfo**プロパティ、**プロパティ**ウィンドウ。  
+1. ダブルクリック、 **SendActivity**アクティビティ デザイナーの横にある省略記号をクリックしてまたは、 **ServiceOperationInfo**プロパティ、**プロパティ**ウィンドウ。  
   
-2.  ときに、**操作の選択**  ダイアログ ボックスが開いたら、**インポート** ダイアログ ボックスの右上隅にします。  
+2. ときに、**操作の選択**  ダイアログ ボックスが開いたら、**インポート** ダイアログ ボックスの右上隅にします。  
   
      [参照し、.NET の種類 ダイアログ ボックス (レガシ) を選択](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)が開きます。  
   
-3.  必要なコントラクトを含んでいるアセンブリまたはプロジェクトを検索します。  
+3. 必要なコントラクトを含んでいるアセンブリまたはプロジェクトを検索します。  
   
-4.  コントラクトを選択し、をクリックして**OK**します。  
+4. コントラクトを選択し、をクリックして**OK**します。  
   
-5.  **使用可能な操作**を起動し、をクリックする操作を選択します。 **OK**。  
+5. **使用可能な操作**を起動し、をクリックする操作を選択します。 **OK**。  
   
 ### <a name="to-specify-a-channel-token"></a>チャネル トークンを指定するには  
   
-1.  デザイナで <xref:System.Workflow.Activities.SendActivity> アクティビティを選択します。  
+1. デザイナで <xref:System.Workflow.Activities.SendActivity> アクティビティを選択します。  
   
-2.  **プロパティ**ウィンドウの名前を指定、<xref:System.Workflow.Activities.ChannelToken>します。 この名前は、チャネル トークンを一意に識別します。  
+2. **プロパティ**ウィンドウの名前を指定、<xref:System.Workflow.Activities.ChannelToken>します。 この名前は、チャネル トークンを一意に識別します。  
   
-3.  チャネル トークン ノードを展開し、<xref:System.Workflow.Activities.ChannelToken.EndpointName%2A> フィールドで使用するクライアント エンドポイントの名前を指定します。 構成ファイル内の同名のエンドポイント構成が、チャネルの構成に使用されます。  
+3. チャネル トークン ノードを展開し、<xref:System.Workflow.Activities.ChannelToken.EndpointName%2A> フィールドで使用するクライアント エンドポイントの名前を指定します。 構成ファイル内の同名のエンドポイント構成が、チャネルの構成に使用されます。  
   
-4.  構成ファイル内にエンドポイント構成が存在しない場合は、エンドポイント構成を作成します。 クライアントの構成の詳細については、次を参照してください。 [WCF Client Overview](http://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d)します。  
+4. 構成ファイル内にエンドポイント構成が存在しない場合は、エンドポイント構成を作成します。 クライアントの構成の詳細については、次を参照してください。 [WCF Client Overview](http://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d)します。  
   
 ## <a name="see-also"></a>関連項目  
  [選択操作 ダイアログ ボックス (レガシ)](../workflow-designer/choose-operation-dialog-box-legacy.md)   

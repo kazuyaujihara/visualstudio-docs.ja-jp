@@ -12,12 +12,12 @@ ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a0617d23b49af182504406417023b0d907cadf27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b2a73dfae7772d8edec076238704aa1b52c9b028
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383437"
 ---
 # <a name="creating-a-custom-debug-engine"></a>カスタム デバッグ エンジンの作成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,21 +25,21 @@ ms.locfileid: "58963423"
 デバッグ エンジン (DE) は、特定のランタイム アーキテクチャのデバッグを許可するコンポーネントです。 通常は実行時環境ごとに 1 つだけ DE 実装です。  
   
 > [!NOTE]
->  TRANSACT-SQL および JScript 別々 の DE 実装もありますが、VBScript や JScript 単一 DE を共有します。  
+> TRANSACT-SQL および JScript 別々 の DE 実装もありますが、VBScript や JScript 単一 DE を共有します。  
   
  DE は、実行の制御やブレークポイントなど、式の評価などのデバッグ サービスを提供する、インタープリターや操作のシステムで動作します。 これらのサービスでは、DE インターフェイスを通じては実装され、デバッガーは別の操作モード間の遷移が発生することができます。 詳細については、次を参照してください。[操作モード](../../extensibility/debugger/operational-modes.md)します。  
   
  作成、DE、次の手順で構成されます。  
   
-1.  Visual Studio を使用した、DE を登録します。  
+1. Visual Studio を使用した、DE を登録します。  
   
-2.  デバッグするプログラムを有効にします。  
+2. デバッグするプログラムを有効にします。  
   
-3.  実行の制御と状態の評価  
+3. 実行の制御と状態の評価  
   
-4.  イベントの送信  
+4. イベントの送信  
   
-5.  切り離しとデタッチ  
+5. 切り離しとデタッチ  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [カスタム デバッグ エンジンの登録](../../extensibility/debugger/registering-a-custom-debug-engine.md)  

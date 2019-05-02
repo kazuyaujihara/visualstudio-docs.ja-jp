@@ -11,17 +11,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 104fe082f9e18a7be97f2ab95a022288316cc638
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2399ff36639732f20babef368a1d9e2f6758a1c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437872"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 プロパティはビルドを設定するための名前と値のペアです。 プロパティを使用することで、タスクに値を渡したり、条件を評価したりできるだけでなく、プロジェクト ファイルで参照する値を格納しておくこともできます。  
   
 ## <a name="defining-and-referencing-properties-in-a-project-file"></a>プロジェクト ファイルでのプロパティの定義と参照  
@@ -48,7 +47,7 @@ ms.locfileid: "54773236"
 ## <a name="reserved-properties"></a>予約済みのプロパティ  
  MSBuild では、プロジェクト ファイルに関する情報や MSBuild のバイナリに関する情報を保持するために、いくつかのプロパティ名が予約されています。 これらのプロパティは、他のプロパティと同じように $ 表記を使用して参照できます。 たとえば、$(MSBuildProjectFile) は、ファイル名の拡張子を含むプロジェクト ファイルの完全なファイル名を返します。  
   
- 詳細については、「[方法: プロジェクト ファイルの名前または場所を参照する](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)」および「[MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)」を参照してください。  
+ 詳細については、「[方法 :名前またはプロジェクト ファイルの場所を参照](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)と[MSBuild プロパティが予約済みおよび既知](../msbuild/msbuild-reserved-and-well-known-properties.md)します。  
   
 ## <a name="environment-properties"></a>環境プロパティ  
  プロジェクト ファイルで環境変数を参照する場合も、予約済みのプロパティを参照するときと同じ方法を使用します。 たとえば、プロジェクト ファイルで `PATH` 環境変数を使用するには、$(Path) と記述します。 プロジェクト ファイルに、環境プロパティと同じ名前のプロパティが定義されている場合、環境変数の値はプロジェクト内のプロパティによってオーバーライドされます。  
@@ -58,9 +57,9 @@ ms.locfileid: "54773236"
  起動されたツール内から環境変数の現在の値を取得するには、[プロパティ関数](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable を使用します。 ただし推奨される方法は、タスク パラメーター <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> を使用する方法です。 この文字列配列に設定されている環境プロパティは、起動されたツールに渡すことができます。このとき、システム環境変数は影響を受けません。  
   
 > [!TIP]
->  すべての環境変数が読み取られて、初期プロパティになるわけではありません。 有効な MSBuild プロパティ名 ("386" など) を名前として持っていない環境変数は無視されます。  
+> すべての環境変数が読み取られて、初期プロパティになるわけではありません。 有効な MSBuild プロパティ名 ("386" など) を名前として持っていない環境変数は無視されます。  
   
- 詳細については、「[方法: ビルドで環境変数を使用する](../msbuild/how-to-use-environment-variables-in-a-build.md)」を参照してください。  
+ 詳細については、「[方法 :ビルドで環境変数を使用して](../msbuild/how-to-use-environment-variables-in-a-build.md)します。  
   
 ## <a name="registry-properties"></a>レジストリのプロパティ  
  システム レジストリ値を読み取るには、次の構文を使用します。ここで、`Hive` はレジストリ ハイブ (たとえば、HKEY_LOCAL_MACHINE)、`Key` はキー名、`SubKey` はサブキー名、`Value` はサブキーの値をそれぞれ表します。  
@@ -96,7 +95,7 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
   
  グローバル プロパティは、MSBuild タスクの `Properties` 属性を使用することで、複数プロジェクトのビルドに含まれる子プロジェクトに対して設定または変更することもできます。 詳細については、「[MSBuild タスク](../msbuild/msbuild-task.md)」を参照してください。  
   
- プロジェクト タグで `TreatAsLocalProperty` 属性を使用してプロパティを指定する場合、そのグローバル プロパティ値は、プロジェクト ファイルで設定されているプロパティ値をオーバーライドしません。 詳細については、「[Project 要素 (MSBuild)](../msbuild/project-element-msbuild.md)」「[How to: Build the Same Source Files with Different Options (方法: 同じソース ファイルを異なるオプションでビルドする)](../msbuild/how-to-build-the-same-source-files-with-different-options.md)」を参照してください。  
+ プロジェクト タグで `TreatAsLocalProperty` 属性を使用してプロパティを指定する場合、そのグローバル プロパティ値は、プロジェクト ファイルで設定されているプロパティ値をオーバーライドしません。 詳細については、次を参照してください。 [Project 要素 (MSBuild)](../msbuild/project-element-msbuild.md)と[方法。同じソース ファイルを異なるオプションでビルド](../msbuild/how-to-build-the-same-source-files-with-different-options.md)します。  
   
 ## <a name="property-functions"></a>プロパティ関数  
  .NET Framework Version 4 以降では、プロパティ関数を使用して MSBuild スクリプトを評価できるようになりました。 MSBuild タスクを使用しなくても、システム時刻の読み取り、文字列の比較、正規表現の照合、その他のさまざまな処理をビルド スクリプト内で実行できます。  
@@ -112,11 +111,11 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 ## <a name="creating-properties-during-execution"></a>実行時のプロパティの作成  
  `Target` 要素の外側にあるプロパティには、ビルドの評価フェーズで値が割り当てられます。 その後の実行フェーズでプロパティを作成または変更するには、次のようにします。  
   
--   プロパティはどのタスクでも生成できます。 プロパティを生成するには、[Task](../msbuild/task-element-msbuild.md) 要素の子要素として、`PropertyName` 属性を持つ [Output](../msbuild/output-element-msbuild.md) 要素を持つ必要があります。  
+- プロパティはどのタスクでも生成できます。 プロパティを生成するには、[Task](../msbuild/task-element-msbuild.md) 要素の子要素として、`PropertyName` 属性を持つ [Output](../msbuild/output-element-msbuild.md) 要素を持つ必要があります。  
   
--   プロパティは [CreateProperty](../msbuild/createproperty-task.md) タスクによって生成できます。 この使用法は非推奨とされます。  
+- プロパティは [CreateProperty](../msbuild/createproperty-task.md) タスクによって生成できます。 この使用法は非推奨とされます。  
   
--   .NET Framework 3.5 以降では、プロパティ宣言を格納できる `Target` 要素を  `PropertyGroup` 要素に含めることができます。  
+- .NET Framework 3.5 以降では、プロパティ宣言を格納できる `Target` 要素を  `PropertyGroup` 要素に含めることができます。  
   
 ## <a name="storing-xml-in-properties"></a>プロパティに XML を格納する  
  プロパティには、タスクに値を渡したり、ログ情報を表示したりするための任意の XML を格納できます。 次の例では、`ConfigTemplate` プロパティの値に、XML や他のプロパティ参照が使用されています。 このプロパティ参照は、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] により、対応するプロパティ値を使用して置き換えられます。 プロパティ値は表示される順に割り当てられます。 したがって、この例では、`$(MySupportedVersion)`、`$(MyRequiredVersion)`、および `$(MySafeMode)` は既に定義されています。  
@@ -143,8 +142,8 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 ## <a name="see-also"></a>関連項目  
  [MSBuild の概念](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)  
- [方法: ビルドで環境変数を使用する](../msbuild/how-to-use-environment-variables-in-a-build.md)   
- [方法: プロジェクト ファイルの名前または場所を参照する](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
- [方法: 同じソース ファイルを異なるオプションでビルドする](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
+ [方法: ビルドで環境変数を使用します。](../msbuild/how-to-use-environment-variables-in-a-build.md)   
+ [方法: 名前またはプロジェクト ファイルの場所を参照します。](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
+ [方法: さまざまなオプションを同じソース ファイルをビルドします。](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
  [MSBuild の予約済みおよび既知のプロパティ](../msbuild/msbuild-reserved-and-well-known-properties.md)   
  [Property 要素 (MSBuild)](../msbuild/property-element-msbuild.md)

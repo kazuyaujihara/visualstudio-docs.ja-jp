@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447096"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office プライマリ相互運用機能アセンブリ
 
@@ -35,7 +35,7 @@ Office プロジェクトから Microsoft Office アプリケーションの機�
 
 - [Microsoft Office アプリケーション プライマリ相互運用機能アセンブリの完全な一覧](#pialist)
 
-プライマリ相互運用機能アセンブリの詳細については、[プライマリ相互運用機能アセンブリ](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))を参照してください。
+プライマリ相互運用機能アセンブリの詳細については、次を参照してください。[プライマリ相互運用機能アセンブリ](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))します。
 
 <a name="separateassemblies"></a>
 
@@ -84,7 +84,7 @@ Visual Studio の各 Office プロジェクト テンプレートは、単一の
 グローバル アセンブリ キャッシュに PIA をインストールして登録すると、これらのバージョンのアセンブリは、 **[参照マネージャー]** ダイアログ ボックスの **[COM]** タブに表示されます。 これらのバージョンのアセンブリを使用すると開発上の問題が発生するため、これらのアセンブリに参照を追加することは避ける必要があります。 たとえば、異なるバージョンの PIA がグローバル アセンブリ キャッシュに登録されている場合、 **[参照マネージャー]** ダイアログ ボックスの **[COM]** タブで別のバージョンのアセンブリを指定しても、プロジェクトは最後に登録されたバージョンのアセンブリにバインドします。
 
 > [!NOTE]
->  アセンブリによっては、参照元のアセンブリを追加すると、参照先のアセンブリも自動的に追加される場合があります。 たとえばへの参照、 *Office.dll*と*Microsoft.Vbe.Interop.dll* Word、Excel、Outlook、Microsoft Forms、またはグラフへの参照を追加すると、アセンブリは自動的に追加アセンブリ。
+> アセンブリによっては、参照元のアセンブリを追加すると、参照先のアセンブリも自動的に追加される場合があります。 たとえばへの参照、 *Office.dll*と*Microsoft.Vbe.Interop.dll* Word、Excel、Outlook、Microsoft Forms、またはグラフへの参照を追加すると、アセンブリは自動的に追加アセンブリ。
 
 <a name="pialist"></a>
 

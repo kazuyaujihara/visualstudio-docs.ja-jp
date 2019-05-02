@@ -8,12 +8,12 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dc913e3a456e46e1f9e19102dadddb1092358e0b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8976d329f6303d60cc00609bc9ed9471456c1b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408754"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>チュートリアル: スタート ページのユーザー設定の保存
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,43 +29,43 @@ ms.locfileid: "58977825"
 ## <a name="prerequisites"></a>必須コンポーネント  
   
 > [!NOTE]
->  このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
+> このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
 >   
->  使用して、スタート ページ プロジェクト テンプレートをダウンロードする**拡張機能マネージャー**します。  
+> 使用して、スタート ページ プロジェクト テンプレートをダウンロードする**拡張機能マネージャー**します。  
   
 ## <a name="setting-up-the-project"></a>プロジェクトの設定  
   
 #### <a name="to-configure-the-project-for-this-walkthrough"></a>このチュートリアルのプロジェクトを構成するには  
   
-1.  」の説明に従って、スタート ページ プロジェクト テンプレートを使用して、スタート ページ プロジェクトを作成[独自のスタート ページの作成](../misc/creating-your-own-start-page.md)です。 プロジェクトに名前を**SaveMySettings**します。  
+1. 」の説明に従って、スタート ページ プロジェクト テンプレートを使用して、スタート ページ プロジェクトを作成[独自のスタート ページの作成](../misc/creating-your-own-start-page.md)です。 プロジェクトに名前を**SaveMySettings**します。  
   
-2.  **ソリューション エクスプ ローラー**、StartPageControl プロジェクトに次のアセンブリ参照を追加します。  
+2. **ソリューション エクスプ ローラー**、StartPageControl プロジェクトに次のアセンブリ参照を追加します。  
   
-    -   EnvDTE  
+    - EnvDTE  
   
-    -   EnvDTE80  
+    - EnvDTE80  
   
-    -   Microsoft.VisualStudio.OLE.Interop  
+    - Microsoft.VisualStudio.OLE.Interop  
   
-    -   Microsoft.VisualStudio.Shell.Interop.11.0  
+    - Microsoft.VisualStudio.Shell.Interop.11.0  
   
-3.  MyControl.xaml を開きます。  
+3. MyControl.xaml を開きます。  
   
-4.  XAML ウィンドウの最上位から<xref:System.Windows.Controls.UserControl>要素の定義、名前空間宣言の後、次のイベント宣言を追加します。  
+4. XAML ウィンドウの最上位から<xref:System.Windows.Controls.UserControl>要素の定義、名前空間宣言の後、次のイベント宣言を追加します。  
   
     ```  
     Loaded="OnLoaded"  
     ```  
   
-5.  デザイン ペインで、コントロールの主な領域をクリックし、DELETE キーを押します。  
+5. デザイン ペインで、コントロールの主な領域をクリックし、DELETE キーを押します。  
   
      これにより、削除、<xref:System.Windows.Controls.Border>要素と、およびリーフのみ最上位にあるすべて<xref:System.Windows.Controls.Grid>要素。  
   
-6.  **ツールボックス**、ドラッグ、<xref:System.Windows.Controls.StackPanel>グリッド コントロール。  
+6. **ツールボックス**、ドラッグ、<xref:System.Windows.Controls.StackPanel>グリッド コントロール。  
   
-7.  ここで、ドラッグ、 <xref:System.Windows.Controls.TextBlock>、 <xref:System.Windows.Controls.TextBox>、ボタンをクリックし、 <xref:System.Windows.Controls.StackPanel>。  
+7. ここで、ドラッグ、 <xref:System.Windows.Controls.TextBlock>、 <xref:System.Windows.Controls.TextBox>、ボタンをクリックし、 <xref:System.Windows.Controls.StackPanel>。  
   
-8.  追加、 **X:name**属性、<xref:System.Windows.Controls.TextBox>と`Click`イベントを<xref:System.Windows.Controls.Button>次の例のようにします。  
+8. 追加、 **X:name**属性、<xref:System.Windows.Controls.TextBox>と`Click`イベントを<xref:System.Windows.Controls.Button>次の例のようにします。  
   
     ```xml  
     <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">  
@@ -79,15 +79,15 @@ ms.locfileid: "58977825"
   
 #### <a name="to-implement-the-user-control"></a>ユーザー コントロールを実装するには  
   
-1.  XAML ウィンドウで右クリックし、`Click`の属性、<xref:System.Windows.Controls.Button>要素、およびクリック**イベント ハンドラーへ移動**します。  
+1. XAML ウィンドウで右クリックし、`Click`の属性、<xref:System.Windows.Controls.Button>要素、およびクリック**イベント ハンドラーへ移動**します。  
   
      MyControl.xaml.cs を開き、スタブのハンドラーを作成し、`Button_Click`イベント。  
   
-2.  次の追加`using`ステートメント ファイルの先頭にします。  
+2. 次の追加`using`ステートメント ファイルの先頭にします。  
   
      [!code-csharp[StartPageDTE#11](../snippets/csharp/VS_Snippets_VSSDK/startpagedte/cs/startpagecontrol/mycontrol.xaml.cs#11)]  
   
-3.  追加のプライベート`SettingsStore`プロパティは、次の例に示すようにします。  
+3. 追加のプライベート`SettingsStore`プロパティは、次の例に示すようにします。  
   
     ```csharp  
     private IVsWritableSettingsStore _settingsStore = null;  
@@ -121,7 +121,7 @@ ms.locfileid: "58977825"
   
      このプロパティは、まずへの参照を取得します。、<xref:EnvDTE80.DTE2>インターフェイスから、オートメーション オブジェクト モデルを含む、<xref:System.Windows.FrameworkElement.DataContext%2A>のユーザー コントロール、および、使用のインスタンスを取得する DTE、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager>インターフェイス。 そのインスタンスを使用して現在のユーザー設定を返します。  
   
-4.  入力、`Button_Click`イベントとして次のとおりです。  
+4. 入力、`Button_Click`イベントとして次のとおりです。  
   
     ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
@@ -138,7 +138,7 @@ ms.locfileid: "58977825"
   
      これは、レジストリ内の"MySettings"コレクション内の"MySetting"フィールドにテキスト ボックスのコンテンツを書き込みます。 コレクションが存在しない場合は作成されます。  
   
-5.  次のハンドラーを追加、`OnLoaded`ユーザー コントロールのイベント。  
+5. 次のハンドラーを追加、`OnLoaded`ユーザー コントロールのイベント。  
   
     ```csharp  
     private void OnLoaded(Object sender, RoutedEventArgs e)  
@@ -152,11 +152,11 @@ ms.locfileid: "58977825"
   
      テキスト ボックスのテキストを"MySetting"の現在の値に設定します。  
   
-6.  ユーザー コントロールをビルドします。  
+6. ユーザー コントロールをビルドします。  
   
-7.  **ソリューション エクスプ ローラー**source.extension.vsixmanifest を開きます。  
+7. **ソリューション エクスプ ローラー**source.extension.vsixmanifest を開きます。  
   
-8.  マニフェストのエディターで次のように設定します。**製品名**に**個人用設定のスタート ページの保存**します。  
+8. マニフェストのエディターで次のように設定します。**製品名**に**個人用設定のスタート ページの保存**します。  
   
      スタート ページの名前で表示する設定、**スタート ページのカスタマイズ**の一覧で、**オプション** ダイアログ ボックス。  
   
@@ -166,27 +166,27 @@ ms.locfileid: "58977825"
   
 #### <a name="to-test-the-user-control"></a>ユーザー コントロールをテストするには  
   
-1.  F5 キーを押します。  
+1. F5 キーを押します。  
   
      Visual Studio の実験用インスタンスを開きます。  
   
-2.  実験用インスタンスでは、上、**ツール** メニューのをクリックして**オプション**します。  
+2. 実験用インスタンスでは、上、**ツール** メニューのをクリックして**オプション**します。  
   
-3.  **環境**ノード、をクリックして**スタートアップ**、[、**スタート ページのカスタマイズ**一覧で、 **[インストールされている拡張機能] ページの保存個人用設定を開始]**.  
+3. **環境**ノード、をクリックして**スタートアップ**、[、**スタート ページのカスタマイズ**一覧で、 **[インストールされている拡張機能] ページの保存個人用設定を開始]**.  
   
      **[OK]** をクリックします。  
   
-4.  場合は、開いているし、[スタート ページを閉じ、**ビュー** ] メニューのをクリックして**スタート ページ**します。  
+4. 場合は、開いているし、[スタート ページを閉じ、**ビュー** ] メニューのをクリックして**スタート ページ**します。  
   
-5.  [スタート] ページで、をクリックして、 **MyControl**タブ。  
+5. [スタート] ページで、をクリックして、 **MyControl**タブ。  
   
-6.  テキスト ボックスに「 **Cat**、 をクリックし、**個人用設定の保存**します。  
+6. テキスト ボックスに「 **Cat**、 をクリックし、**個人用設定の保存**します。  
   
-7.  スタート ページを閉じて、再び開きます。  
+7. スタート ページを閉じて、再び開きます。  
   
      "Cat"という単語は、テキスト ボックスに表示する必要があります。  
   
-8.  "Cat"という単語を"Dog"ワードに置き換えます。 ボタンをクリックしてしないでください。  
+8. "Cat"という単語を"Dog"ワードに置き換えます。 ボタンをクリックしてしないでください。  
   
 9. スタート ページを閉じて、再び開きます。  
   

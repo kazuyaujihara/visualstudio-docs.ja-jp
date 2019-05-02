@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26632961474f54a545ff0fa900fff6c50a9ec3da
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3feb17c2cfc51326f125fb6991b37ccde1f9b1bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438563"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>チュートリアル: コンテンツ コントロールを使用してテンプレートを作成します。
   このチュートリアルでは、コンテンツ コントロールを使用して、Microsoft Office Word テンプレートで構造化された再利用可能なコンテンツを作成するための、ドキュメント レベルのカスタマイズを作成する方法について説明します。
@@ -47,16 +47,16 @@ ms.locfileid: "56605940"
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Word。
+- Microsoft Word。
 
 ## <a name="create-a-new-word-template-project"></a>新しい Word テンプレート プロジェクトを作成します。
  ユーザーが独自のコピーを簡単に作成できるように、Word テンプレートを作成します。
 
 ### <a name="to-create-a-new-word-template-project"></a>新しい Word テンプレート プロジェクトを作成するには
 
-1.  名前の Word テンプレート プロジェクトを作成**MyBuildingBlockTemplate**します。 ウィザードで、ソリューション内に新しいドキュメントを作成します。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
+1. 名前の Word テンプレート プロジェクトを作成**MyBuildingBlockTemplate**します。 ウィザードで、ソリューション内に新しいドキュメントを作成します。 詳細については、「[方法 :Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デザイナーで新しい Word テンプレートを開き、追加、 **MyBuildingBlockTemplate**プロジェクトを**ソリューション エクスプ ローラー**します。
 
@@ -83,7 +83,7 @@ ms.locfileid: "56605940"
 5. リボンの **[開発]** タブをクリックします。
 
    > [!NOTE]
-   >  **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
+   > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
 
 6. **コントロール**グループで、、**テキスト**ボタン![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") を追加する<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>最初のセルにします。
 
@@ -137,39 +137,39 @@ ms.locfileid: "56605940"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>コンテンツ コントロールの UI をプログラムで変更するには
 
-1.  **ソリューション エクスプ ローラー**を右クリックして**ThisDocument.cs**または**ThisDocument.vb**、 をクリックし、**コードの表示**します。
+1. **ソリューション エクスプ ローラー**を右クリックして**ThisDocument.cs**または**ThisDocument.vb**、 をクリックし、**コードの表示**します。
 
-2.  `ThisDocument` クラスに次のコードを追加します。 このコードは、このチュートリアルの後半で使用するいくつかのオブジェクトを宣言します。
+2. `ThisDocument` クラスに次のコードを追加します。 このコードは、このチュートリアルの後半で使用するいくつかのオブジェクトを宣言します。
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]
 
-3.  `ThisDocument_Startup` クラスの `ThisDocument` メソッドに次のコード行を追加します。 このコードは表の <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> と <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> にエントリを追加し、ユーザーがコンテンツ コントロールを編集する前に、各コントロールに表示されるプレースホルダー テキストを設定します。
+3. `ThisDocument_Startup` クラスの `ThisDocument` メソッドに次のコード行を追加します。 このコードは表の <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> と <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> にエントリを追加し、ユーザーがコンテンツ コントロールを編集する前に、各コントロールに表示されるプレースホルダー テキストを設定します。
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]
 
 ## <a name="prevent-users-from-editing-the-employee-table"></a>ユーザーが employee テーブルを編集することを妨げる
- 先ほど宣言した <xref:Microsoft.Office.Tools.Word.GroupContentControl> オブジェクトを使用して、従業員表を保護します。 表を保護した後でも、ユーザーは表内のコンテンツ コントロールを編集できます。 ただし、最初の列のテキストを編集したり、他の方法で表を変更すること (行や列を追加/削除するなど) はできません。 使用する方法についての詳細、<xref:Microsoft.Office.Tools.Word.GroupContentControl>ドキュメントの一部を保護するには、[コンテンツ コントロール](../vsto/content-controls.md)を参照してください。
+ 先ほど宣言した <xref:Microsoft.Office.Tools.Word.GroupContentControl> オブジェクトを使用して、従業員表を保護します。 表を保護した後でも、ユーザーは表内のコンテンツ コントロールを編集できます。 ただし、最初の列のテキストを編集したり、他の方法で表を変更すること (行や列を追加/削除するなど) はできません。 使用する方法についての詳細、<xref:Microsoft.Office.Tools.Word.GroupContentControl>ドキュメントの一部を保護するには、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
 
 ### <a name="to-prevent-users-from-editing-the-employee-table"></a>従業員表を保護してユーザーが編集できないようにするには
 
-1.  `ThisDocument` クラスの `ThisDocument_Startup` メソッドに (前の手順で追加したコードの後ろに) 次のコードを追加します。 このコードにより、先ほど宣言した <xref:Microsoft.Office.Tools.Word.GroupContentControl> オブジェクト内に表を配置することで、ユーザーが従業員表を編集できないようにします。
+1. `ThisDocument` クラスの `ThisDocument_Startup` メソッドに (前の手順で追加したコードの後ろに) 次のコードを追加します。 このコードにより、先ほど宣言した <xref:Microsoft.Office.Tools.Word.GroupContentControl> オブジェクト内に表を配置することで、ユーザーが従業員表を編集できないようにします。
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#3)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]
 
 ## <a name="add-the-tables-to-the-building-block-collection"></a>文書パーツ コレクションにテーブルを追加します。
- 作成した表をユーザーがドキュメントに挿入できるように、テンプレート内の文書パーツ コレクションに表を追加します。 文書パーツの詳細については、[コンテンツ コントロール](../vsto/content-controls.md)を参照してください。
+ 作成した表をユーザーがドキュメントに挿入できるように、テンプレート内の文書パーツ コレクションに表を追加します。 文書パーツの詳細については、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)します。
 
 ### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>テンプレートの文書パーツに表を追加するには
 
-1.  `ThisDocument` クラスの `ThisDocument_Startup` メソッドに (前の手順で追加したコードの後ろに) 次のコードを追加します。 このコードは、テンプレートで再利用可能なすべての構成要素を含む Microsoft.Office.Interop.Word.BuildingBlockEntries コレクションにテーブルを含む新しい文書パーツを追加します。 という名前の新しいカテゴリで、新しい構成要素が定義されている**Employee and Customer Information**ビルディング ブロックの型が割り当てられていると`Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`します。
+1. `ThisDocument` クラスの `ThisDocument_Startup` メソッドに (前の手順で追加したコードの後ろに) 次のコードを追加します。 このコードは、テンプレートで再利用可能なすべての構成要素を含む Microsoft.Office.Interop.Word.BuildingBlockEntries コレクションにテーブルを含む新しい文書パーツを追加します。 という名前の新しいカテゴリで、新しい構成要素が定義されている**Employee and Customer Information**ビルディング ブロックの型が割り当てられていると`Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`します。
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]
 
-2.  `ThisDocument` クラスの `ThisDocument_Startup` メソッドに (前の手順で追加したコードの後ろに) 次のコードを追加します。 このコードは、テンプレートから、表を削除します。 表は、テンプレートの再利用可能な文書パーツのギャラリーに追加されたため、もう必要ありません。 コードは最初にドキュメントをデザイン モードにして、保護されている従業員表を削除できるようにします。
+2. `ThisDocument` クラスの `ThisDocument_Startup` メソッドに (前の手順で追加したコードの後ろに) 次のコードを追加します。 このコードは、テンプレートから、表を削除します。 表は、テンプレートの再利用可能な文書パーツのギャラリーに追加されたため、もう必要ありません。 コードは最初にドキュメントをデザイン モードにして、保護されている従業員表を削除できるようにします。
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]
@@ -179,7 +179,7 @@ ms.locfileid: "56605940"
 
 ### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>文書パーツを表示するコンテンツ コントロールを作成するには
 
-1.  `ThisDocument` クラスの `ThisDocument_Startup` メソッドに (前の手順で追加したコードの後ろに) 次のコードを追加します。 このコードは先ほど宣言した <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> オブジェクトを初期化します。 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>カテゴリで定義されているすべての構成要素を表示します。 **Employee and Customer Information**のビルディング ブロックの種類があると`Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`します。
+1. `ThisDocument` クラスの `ThisDocument_Startup` メソッドに (前の手順で追加したコードの後ろに) 次のコードを追加します。 このコードは先ほど宣言した <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> オブジェクトを初期化します。 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>カテゴリで定義されているすべての構成要素を表示します。 **Employee and Customer Information**のビルディング ブロックの種類があると`Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`します。
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]
@@ -189,50 +189,50 @@ ms.locfileid: "56605940"
 
 ### <a name="to-test-the-employee-table"></a>従業員表をテストするには
 
-1.  **F5** キーを押してプロジェクトを実行します。
+1. **F5** キーを押してプロジェクトを実行します。
 
-2.  クリックして**最初の文書パーツを選択**最初の文書パーツ ギャラリー コンテンツ コントロールを表示します。
+2. クリックして**最初の文書パーツを選択**最初の文書パーツ ギャラリー コンテンツ コントロールを表示します。
 
-3.  ドロップダウン矢印をクリックして、**カスタム ギャラリー 1**コントロールでは、見出しと選択**Employee テーブル**します。
+3. ドロップダウン矢印をクリックして、**カスタム ギャラリー 1**コントロールでは、見出しと選択**Employee テーブル**します。
 
-4.  右にセルをクリックして、 **Employee Name**セルし、名前を入力します。
+4. 右にセルをクリックして、 **Employee Name**セルし、名前を入力します。
 
      このセルにテキストのみを追加できることを確認します。 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> により、ユーザーはテキストのみを追加でき、アートや表など他の種類のコンテンツは追加できません。
 
-5.  右にセルをクリックして、 **Hire Date**セルし、日付の選択で日付を選択します。
+5. 右にセルをクリックして、 **Hire Date**セルし、日付の選択で日付を選択します。
 
-6.  右にセルをクリックして、**タイトル**セルし、コンボ ボックスで役職名のいずれかを選択します。
+6. 右にセルをクリックして、**タイトル**セルし、コンボ ボックスで役職名のいずれかを選択します。
 
      必要に応じて、リストに含まれていない役職名を入力します。 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> ではユーザーがエントリの一覧から選択することも、独自のエントリを入力することもできるため、このようなケースが生じることがあります。
 
-7.  右側にあるセルでアイコンをクリックして、**画像**セルし、それを表示する画像を参照します。
+7. 右側にあるセルでアイコンをクリックして、**画像**セルし、それを表示する画像を参照します。
 
-8.  表に行や列を追加できるか、また、表から行や列を削除できるか、試してみます。 表を変更できないことを確認します。 <xref:Microsoft.Office.Tools.Word.GroupContentControl> により、表は変更できないようになっています。
+8. 表に行や列を追加できるか、また、表から行や列を削除できるか、試してみます。 表を変更できないことを確認します。 <xref:Microsoft.Office.Tools.Word.GroupContentControl> により、表は変更できないようになっています。
 
 ### <a name="to-test-the-customer-feedback-table"></a>顧客フィードバック表をテストするには
 
-1.  をクリックして **、2 つ目の構成要素を選択**を 2 番目の文書パーツ ギャラリー コンテンツ コントロールを表示します。
+1. をクリックして **、2 つ目の構成要素を選択**を 2 番目の文書パーツ ギャラリー コンテンツ コントロールを表示します。
 
-2.  ドロップダウン矢印をクリックして、**カスタム ギャラリー 1**コントロールでは、見出しと選択**Customer テーブル**します。
+2. ドロップダウン矢印をクリックして、**カスタム ギャラリー 1**コントロールでは、見出しと選択**Customer テーブル**します。
 
-3.  右にセルをクリックして、**顧客名**セルし、名前を入力します。
+3. 右にセルをクリックして、**顧客名**セルし、名前を入力します。
 
-4.  右にセルをクリックして、**満足度評価**セルし、使用可能なオプションのいずれかを選択します。
+4. 右にセルをクリックして、**満足度評価**セルし、使用可能なオプションのいずれかを選択します。
 
      独自のエントリを入力できないことを確認します。 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> では、ユーザーはエントリの一覧から選択することのみが可能です。
 
-5.  右にセルをクリックして、**コメント**セルし、いくつかのコメントを入力します。
+5. 右にセルをクリックして、**コメント**セルし、いくつかのコメントを入力します。
 
      必要に応じて、アートや、埋め込み表など、テキスト以外のコンテンツを追加します。 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> ではユーザーがテキスト以外のコンテンツを追加できるため、このようなケースが生じることがあります。
 
-6.  表に行や列を追加できること、また、表から行や列を削除できることを確認します。 表を <xref:Microsoft.Office.Tools.Word.GroupContentControl> に配置して保護していないため、表への変更が可能です。
+6. 表に行や列を追加できること、また、表から行や列を削除できることを確認します。 表を <xref:Microsoft.Office.Tools.Word.GroupContentControl> に配置して保護していないため、表への変更が可能です。
 
-7.  テンプレートを閉じます。
+7. テンプレートを閉じます。
 
 ## <a name="next-steps"></a>次の手順
  コンテンツ コントロールの使用方法の詳細については、次の各トピックを参照してください。
 
--   コンテンツ コントロールを、文書に埋め込まれている XML の一部 (「カスタム XML 部分」とも呼ばれます) にバインドします。 詳細については、「[チュートリアル:カスタム XML 部分にコンテンツ コントロールをバインド](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)します。
+- コンテンツ コントロールを、文書に埋め込まれている XML の一部 (「カスタム XML 部分」とも呼ばれます) にバインドします。 詳細については、「[チュートリアル:カスタム XML 部分にコンテンツ コントロールをバインド](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [拡張オブジェクトを使用して Word を自動化します。](../vsto/automating-word-by-using-extended-objects.md)

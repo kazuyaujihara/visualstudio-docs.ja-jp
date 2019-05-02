@@ -1,27 +1,22 @@
 ---
 title: 従来の言語サービスでのコメント コード |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - comments, supporting in language services [managed package framework]
 - language services [managed package framework], commenting code
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d6577a10446ce1db36746959f6d456a56e4667bb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cd1405456ca9a6ba00926c82bcc7959ea36d26c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761073"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972650"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>従来の言語サービスのコメント コード
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "51761073"
   
 2. ブロックのコメント、コメントが複数の行を含めることができます。  
   
-   行のコメントは、通常、開始文字 (文字)、ブロックのコメントの中に開始と終了の両方の文字があります。 たとえば、c# の場合は、行のコメントから始まります//、ブロックのコメントの始まりと/* で終わる\*/。  
+   行のコメントは、通常、開始文字 (文字)、ブロックのコメントの中に開始と終了の両方の文字があります。 たとえば、C# の場合は、行のコメントから始まります//、ブロックのコメントの始まりと/* で終わる\*/。  
   
    ユーザーがコマンドを選択すると**選択範囲のコメント**から、**編集** -> **詳細** メニューにコマンドがルーティングされます、<xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A>メソッドを<xref:Microsoft.VisualStudio.Package.Source>クラス。 ユーザーがコマンドを選択すると**選択範囲のコメントを解除します**にルーティングは、コマンド、<xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A>メソッド。  
   
@@ -71,4 +66,3 @@ namespace MyLanguagePackage
 ## <a name="see-also"></a>関連項目  
  [従来の言語サービスの機能](../../extensibility/internals/legacy-language-service-features1.md)   
  [従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)
-

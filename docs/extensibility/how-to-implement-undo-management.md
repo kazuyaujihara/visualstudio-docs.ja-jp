@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a896a5b850887b36a4fb6596923e742429c44dc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b29b95b9c53f18d6f97ac2455dd30aa6e26ccde4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415476"
 ---
 # <a name="how-to-implement-undo-management"></a>方法: 元に戻す管理を実装
 元に戻すの管理に使用される主要なインターフェイスは<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>、環境によって実装されます。 元に戻す管理をサポートするには、実装元に戻す単位 (つまり、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>、複数の個々 のステップを含むことができます。
@@ -27,9 +27,9 @@ ms.locfileid: "56714128"
 
 ### <a name="to-support-undo-management-for-a-single-view-editor"></a>単一ビュー エディターの元に戻す管理をサポートするには
 
-1.  呼び出す`QueryInterface`上、`IServiceProvider`インターフェイスのウィンドウ フレームを`IOleUndoManager`、元に戻すマネージャーにアクセスするドキュメント ビュー オブジェクトから (`IID_IOLEUndoManager`)。
+1. 呼び出す`QueryInterface`上、`IServiceProvider`インターフェイスのウィンドウ フレームを`IOleUndoManager`、元に戻すマネージャーにアクセスするドキュメント ビュー オブジェクトから (`IID_IOLEUndoManager`)。
 
-2.  ビューはウィンドウ フレームに配置された、場合に、呼び出しに使用できること、サイトのポインターを取得します。`QueryInterface`の`IServiceProvider`します。
+2. ビューはウィンドウ フレームに配置された、場合に、呼び出しに使用できること、サイトのポインターを取得します。`QueryInterface`の`IServiceProvider`します。
 
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>エディターが複数のビューをサポートしている場合
  ドキュメントとビューの分離した場合は、ドキュメント自体に関連付けられている通常の 1 つの元に戻すマネージャーです。 すべての元に戻す単位は、ドキュメント データ オブジェクトに関連付けられている 1 つの元に戻すマネージャーに配置されます。
@@ -46,17 +46,17 @@ ms.locfileid: "56714128"
 
 3. リレー、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>と<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>に格納されている呼び出し`IOleCommandTarget`StandardCommandSet97 コマンドを次のインターフェイス。
 
-   -   cmdidUndo
+   - cmdidUndo
 
-   -   cmdidMultiLevelUndo
+   - cmdidMultiLevelUndo
 
-   -   cmdidRedo
+   - cmdidRedo
 
-   -   cmdidMultiLevelRedo
+   - cmdidMultiLevelRedo
 
-   -   cmdidMultiLevelUndoList
+   - cmdidMultiLevelUndoList
 
-   -   cmdidMultiLevelRedoList
+   - cmdidMultiLevelRedoList
 
 4. 呼び出す`QueryInterface`で`IOleUndoManager`の`IID_IVsChangeTrackingUndoManager`します。 ポインターを格納<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>します。
 
@@ -68,15 +68,14 @@ ms.locfileid: "56714128"
 
 7. ドキュメントが閉じられたときに呼び出す`QueryInterface`で元に戻すマネージャー`IID_IVsLifetimeControlledObject`します。
 
-8. 
-  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A> を呼び出す。
+8. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A> を呼び出す。
 
 9. 変更されたドキュメントをときに呼び出す<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>のマネージャーで、`OleUndoUnit`クラス。 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>メソッドは、オブジェクトへの参照を解放する通常直後に、<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>します。
 
    `OleUndoManager`クラスは、1 つの元に戻すスタックのインスタンスを表します。 したがって、undo または redo の追跡されているデータ エンティティごとに 1 つの元に戻すマネージャー オブジェクトがあります。
 
 > [!NOTE]
->  元に戻すマネージャー オブジェクトは、テキスト エディターに広範囲に使用される、中に、テキスト エディターの特定のサポートを持たない全般コンポーネントになります。 複数レベルの取り消しまたはやり直しをサポートする場合は、このオブジェクトを使用してこれを行うことができます。
+> 元に戻すマネージャー オブジェクトは、テキスト エディターに広範囲に使用される、中に、テキスト エディターの特定のサポートを持たない全般コンポーネントになります。 複数レベルの取り消しまたはやり直しをサポートする場合は、このオブジェクトを使用してこれを行うことができます。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>

@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e6ea971705b164a27fc7f65c3ac2d681b1569177
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428266"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Visual Studio での同期された設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,27 +26,27 @@ ms.locfileid: "54758800"
 ## <a name="synchronized-settings"></a>同期された設定
  既定では、次の設定が同期されます。
 
--   開発設定 (Visual Studio を初めて実行するときに設定を選択する必要がありますが、選択内容はいつでも変更できます)。 詳細については、「[Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
+- 開発設定 (Visual Studio を初めて実行するときに設定を選択する必要がありますが、選択内容はいつでも変更できます)。 詳細については、「[Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
 
--   **[ツール &#124; オプション]** ページの次のオプション。
+- **[ツール &#124; オプション]** ページの次のオプション。
 
-    -   **[環境]**、**[全般]** オプション ページの **[テーマ]** およびメニュー バー枠の設定
+    - **[環境]**、**[全般]** オプション ページの **[テーマ]** およびメニュー バー枠の設定
 
-    -   **[環境]**、**[フォントおよび色]** オプション ページのすべての設定
+    - **[環境]**、**[フォントおよび色]** オプション ページのすべての設定
 
-    -   **[環境]**、**[キーボード]** オプション ページのすべてのキーボード ショートカット
+    - **[環境]**、**[キーボード]** オプション ページのすべてのキーボード ショートカット
 
-    -   **[環境]、[タブ]、および [ウィンドウ]** オプション ページのすべての設定
+    - **[環境]、[タブ]、および [ウィンドウ]** オプション ページのすべての設定
 
-    -   **[環境]**、**[スタートアップ]** オプション ページのすべての設定
+    - **[環境]**、**[スタートアップ]** オプション ページのすべての設定
 
-    -   **[テキスト エディター]** オプション ページのすべての設定
+    - **[テキスト エディター]** オプション ページのすべての設定
 
--   [XAML デザイナー] オプション ページのすべての設定
+- [XAML デザイナー] オプション ページのすべての設定
 
--   ユーザー定義のコマンド エイリアス。 コマンド エイリアスを定義する方法の詳細については、「[Visual Studio コマンドの定義済みのエイリアス](../ide/reference/visual-studio-command-aliases.md)」を参照してください。
+- ユーザー定義のコマンド エイリアス。 コマンド エイリアスを定義する方法の詳細については、「[Visual Studio コマンドの定義済みのエイリアス](../ide/reference/visual-studio-command-aliases.md)」を参照してください。
 
--   **[ウィンドウ &#124; ウィンドウ レイアウトの管理]** ページのユーザー定義のウィンドウ レイアウト
+- **[ウィンドウ &#124; ウィンドウ レイアウトの管理]** ページのユーザー定義のウィンドウ レイアウト
 
 ## <a name="turning-synchronized-settings-off-for-a-particular-computer"></a>特定のコンピューター上の同期された設定の無効化
  Visual Studio の同期された設定は、既定でオンになっています。 あるコンピューター上の同期された設定をオフにするには、**[ツール &#124; オプション &#124; 環境 &#124; 同期された設定]** ページに移動して、チェック ボックスをオフにします。  たとえば、コンピューター A 上の Visual Studio の設定を同期しないようにすると、コンピューター A で行った設定変更がコンピューター B やコンピューター C に表示されなくなります。コンピューター B および C は、引き続き相互に同期しますが、コンピューター A とは同期しなくなります。
@@ -55,7 +55,7 @@ ms.locfileid: "54758800"
  Express エディションや Community エディションを含む Visual Studio 2015 の任意のエディション間で、設定を同期できます。 Blend などの Visual Studio ファミリ製品の間でも設定が同期されます。 ただし、各ファミリ製品には Visual Studio で共有されない独自の設定が含まれる場合があります。 たとえば、コンピューター A 上の Blend に固有の設定は、コンピューター B 上の Blend で共有されますが、コンピューター A または B 上の Visual Studio では共有されません。
 
 > [!WARNING]
->  Visual Studio 2013 と Visual Studio 2015 の間では、設定は同期されません。 Visual Studio 2015 を初めて開くと、Visual Studio 2013 の設定が移行されますが、その後で設定を Visual Studio 2013 に再度移行することはできません。
+> Visual Studio 2013 と Visual Studio 2015 の間では、設定は同期されません。 Visual Studio 2015 を初めて開くと、Visual Studio 2013 の設定が移行されますが、その後で設定を Visual Studio 2013 に再度移行することはできません。
 
 ## <a name="see-also"></a>関連項目
  [IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)

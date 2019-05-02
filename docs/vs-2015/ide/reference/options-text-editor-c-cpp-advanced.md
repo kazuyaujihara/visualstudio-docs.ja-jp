@@ -15,23 +15,22 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c734e6bd41e91ba208a13e36c06f04111cac5ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d045957dde862d0552d8eeb4885f29957e420f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441406"
 ---
 # <a name="options-text-editor-cc-advanced"></a>[オプション]、[テキスト エディター]、[C/C++]、[詳細]
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 これらのオプションを変更することによって、C または C++ でプログラミングを行うときに、IntelliSense に関連する動作と参照データベースを変更できます。  
   
  このページにアクセスするには、左ウィンドウ枠の **[オプション]** ダイアログ ボックスで、**[テキスト エディター]**、**[C/C++]** の順に展開して、**[詳細]** を選択します。  
   
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 「[Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 「[Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="browsingnavigation"></a>参照/ナビゲーション  
  ソリューションの規模が大きすぎるため、データベース アクティビティにより許容できない量のシステム リソースが消費されるというまれなケースを除いて、これらのオプションを選択しないでください。  
@@ -74,19 +73,19 @@ ms.locfileid: "54790098"
   
  次の任意のオプションの合計で設定します。  
   
--   0 - なし  
+- 0 - なし  
   
--   1 - General  
+- 1 - General  
   
--   2 - Idle  
+- 2 - Idle  
   
--   4 - WorkItem  
+- 4 - WorkItem  
   
--   8 - IntelliSense  
+- 8 - IntelliSense  
   
--   16 - ACPerf  
+- 16 - ACPerf  
   
--   32 - ClassView  
+- 32 - ClassView  
   
 ## <a name="fallback-location"></a>フォールバック位置  
  フォールバック位置は、プライマリの場所 (ソリューションと同じディレクトリ) が使用されないときに SDF および IntelliSense サポート ファイル (たとえば、iPCH) が置かれる場所です。 ユーザーにソリューション ディレクトリへの書き込みアクセス許可がない場合、またはソリューション ディレクトリが低速のデバイス上にある場合、この状況が発生することがあります。 既定のフォールバック位置は、ユーザーの一時ディレクトリにあります。  

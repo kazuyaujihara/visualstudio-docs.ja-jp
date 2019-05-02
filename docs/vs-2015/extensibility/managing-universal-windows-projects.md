@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e905ca4a34399c1ec590d5ff16441bd5afe9ce23
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412332"
 ---
 # <a name="managing-universal-windows-projects"></a>ユニバーサル Windows プロジェクトの管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "58973603"
   
 ### <a name="navigate-the-shared-project"></a>共有プロジェクトを移動します。  
   
-1.  という名前の c# VSIX プロジェクトを作成する**TestUniversalProject**します。 (**新しいファイル]、[プロジェクト**し**c#、機能拡張、Visual Studio パッケージ**)。 追加、**カスタム コマンド**プロジェクト項目テンプレート (ソリューション エクスプ ローラーでプロジェクト ノードを右クリックし、選択**追加/新しい項目の**に移動し、**拡張**)。 ファイルに名前を**TestUniversalProject**します。  
+1. という名前の c# VSIX プロジェクトを作成する**TestUniversalProject**します。 (**新しいファイル]、[プロジェクト**し**c#、機能拡張、Visual Studio パッケージ**)。 追加、**カスタム コマンド**プロジェクト項目テンプレート (ソリューション エクスプ ローラーでプロジェクト ノードを右クリックし、選択**追加/新しい項目の**に移動し、**拡張**)。 ファイルに名前を**TestUniversalProject**します。  
   
-2.  Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll への参照の追加 (で、**拡張**セクション)。  
+2. Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll への参照の追加 (で、**拡張**セクション)。  
   
-3.  TestUniversalProject.cs を開き、次の追加`using`ステートメント。  
+3. TestUniversalProject.cs を開き、次の追加`using`ステートメント。  
   
     ```csharp  
     using EnvDTE;  
@@ -42,7 +42,7 @@ ms.locfileid: "58973603"
     using System.Windows.Forms;  
     ```  
   
-4.  TestUniversalProject クラスでポイントするプライベート フィールドを追加、**出力**ウィンドウ。  
+4. TestUniversalProject クラスでポイントするプライベート フィールドを追加、**出力**ウィンドウ。  
   
     ```csharp  
     public sealed class TestUniversalProject   
@@ -52,7 +52,7 @@ ms.locfileid: "58973603"
     }  
     ```  
   
-5.  TestUniversalProject コンス トラクター内で出力ウィンドウへの参照を設定します。  
+5. TestUniversalProject コンス トラクター内で出力ウィンドウへの参照を設定します。  
   
     ```csharp  
     private TestUniversalProject(Package package)  
@@ -77,7 +77,7 @@ ms.locfileid: "58973603"
     }  
     ```  
   
-6.  既存のコードからの削除、`ShowMessageBox`メソッド。  
+6. 既存のコードからの削除、`ShowMessageBox`メソッド。  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)   
@@ -85,7 +85,7 @@ ms.locfileid: "58973603"
     }  
     ```  
   
-7.  このチュートリアルでは、複数のさまざまな目的に使用する DTE オブジェクトを取得します。 また、メニュー ボタンがクリックされたときに、ソリューションが読み込まれていることを確認してください。  
+7. このチュートリアルでは、複数のさまざまな目的に使用する DTE オブジェクトを取得します。 また、メニュー ボタンがクリックされたときに、ソリューションが読み込まれていることを確認してください。  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -103,7 +103,7 @@ ms.locfileid: "58973603"
     }  
     ```  
   
-8.  共有プロジェクトを検索します。 共有プロジェクトは、純粋なコンテナーです。出力を生成またはビルドにしません。 次のメソッドを探すことによって、ソリューションの最初の共有プロジェクトを検索します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>共有プロジェクトの機能を持つオブジェクト。  
+8. 共有プロジェクトを検索します。 共有プロジェクトは、純粋なコンテナーです。出力を生成またはビルドにしません。 次のメソッドを探すことによって、ソリューションの最初の共有プロジェクトを検索します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>共有プロジェクトの機能を持つオブジェクト。  
   
     ```csharp  
     private IVsHierarchy FindSharedProject()  
@@ -235,7 +235,7 @@ ms.locfileid: "58973603"
     ```  
   
     > [!IMPORTANT]
-    >  ユーザーが実験用インスタンスで C++ ユニバーサル Windows アプリ プロジェクトを開き、上記のコードは例外をスローします。 これは既知の問題です。 例外を避けるためには、置換、`foreach`上、次のブロックします。  
+    > ユーザーが実験用インスタンスで C++ ユニバーサル Windows アプリ プロジェクトを開き、上記のコードは例外をスローします。 これは既知の問題です。 例外を避けるためには、置換、`foreach`上、次のブロックします。  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -306,7 +306,7 @@ ms.locfileid: "58973603"
   
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>共有プラットフォーム プロジェクト アイテムを管理します。  
   
-1.  プラットフォームのプロジェクト共有項目を検索します。 共有プロジェクト内の項目が、プラットフォーム プロジェクトに共有項目として表示されます。 表示することはできません、**ソリューション エクスプ ローラー**を検索して、プロジェクト階層を移動することができますが、します。 次のメソッドは、階層について説明し、共有のすべての項目を収集します。 必要に応じて、各項目のキャプションを出力します。 共有アイテムは、新しいプロパティで識別される<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>します。  
+1. プラットフォームのプロジェクト共有項目を検索します。 共有プロジェクト内の項目が、プラットフォーム プロジェクトに共有項目として表示されます。 表示することはできません、**ソリューション エクスプ ローラー**を検索して、プロジェクト階層を移動することができますが、します。 次のメソッドは、階層について説明し、共有のすべての項目を収集します。 必要に応じて、各項目のキャプションを出力します。 共有アイテムは、新しいプロパティで識別される<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>します。  
   
     ```csharp  
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)  
@@ -338,7 +338,7 @@ ms.locfileid: "58973603"
     }  
     ```  
   
-2.  `ShowMessageBox`メソッドでは、次のコードをプラットフォームのプロジェクト階層アイテムの説明を追加します。 内で挿入、`foreach`ブロックします。  
+2. `ShowMessageBox`メソッドでは、次のコードをプラットフォームのプロジェクト階層アイテムの説明を追加します。 内で挿入、`foreach`ブロックします。  
   
     ```csharp  
     output.OutputStringThreadSafe("Walk the active platform project:\n");  
@@ -346,7 +346,7 @@ ms.locfileid: "58973603"
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);  
     ```  
   
-3.  共有項目を読み取ります。 共有項目が非表示のリンクされたファイルとして、プラットフォーム プロジェクトに表示され、通常のリンクされたファイルとしてのすべてのプロパティを読み取ることができます。 次のコードでは、共有の最初の項目の完全なパスを読み取ります。  
+3. 共有項目を読み取ります。 共有項目が非表示のリンクされたファイルとして、プラットフォーム プロジェクトに表示され、通常のリンクされたファイルとしてのすべてのプロパティを読み取ることができます。 次のコードでは、共有の最初の項目の完全なパスを読み取ります。  
   
     ```csharp  
     var sharedItemId = sharedItemIds[0];  
@@ -355,7 +355,7 @@ ms.locfileid: "58973603"
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));  
     ```  
   
-4.  試してみましょう。F5 キーを押して、実験用インスタンスを起動します。 実験用インスタンスでの c# ユニバーサル ハブ アプリ プロジェクトの作成 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#/Windows/Windows 8 ユニバーサル//ハブ アプリ**) に移動して、**ツール**メニューをクリックします**呼び出す TestUniversalProject**、およびチェックインし、テキスト、**出力**ウィンドウ。 次のように表示されます。  
+4. 試してみましょう。F5 キーを押して、実験用インスタンスを起動します。 実験用インスタンスでの c# ユニバーサル ハブ アプリ プロジェクトの作成 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#/Windows/Windows 8 ユニバーサル//ハブ アプリ**) に移動して、**ツール**メニューをクリックします**呼び出す TestUniversalProject**、およびチェックインし、テキスト、**出力**ウィンドウ。 次のように表示されます。  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -525,7 +525,7 @@ ms.locfileid: "58973603"
 9. 共有対象アイテムを変更します。 プラットフォーム プロジェクトで共有項目を変更することはできません。代わりに、これらの項目の実際の所有者である共有プロジェクトでそれらを変更する必要があります。 共有のプロジェクトに対応する項目の ID を取得できます<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>、共有対象アイテムの完全なパスを指定します。 共有対象アイテムを変更します。 プラットフォームのプロジェクトに反映されます。  
   
     > [!IMPORTANT]
-    >  プロジェクト項目が変更する前に共有項目がかどうかを確認する必要があります。  
+    > プロジェクト項目が変更する前に共有項目がかどうかを確認する必要があります。  
   
      次のメソッドは、プロジェクト アイテム ファイルの名前を変更します。  
   

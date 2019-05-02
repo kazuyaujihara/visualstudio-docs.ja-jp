@@ -13,27 +13,27 @@ helpviewer_keywords:
 ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
-ms.openlocfilehash: 1ef6984a21099bfad013ef97534d9984fa81d10d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002454"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>プロパティ ウィンドウの選択の追跡の発表
 使用する場合、**プロパティ**ウィンドウまたは**プロパティ**フォーム、テキスト、またはするプロパティを表示する方法の完全な知識が必要し、選択などページします。選択範囲を調整します。 たとえば、選択範囲の 1 つまたは複数の選択肢があるかどうかを認識する必要があります。 選択範囲の種類 (1 つまたは複数) を使用して、IDE を発表する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>インターフェイス。 このインターフェイスで必要な情報を提供する、**プロパティ**ウィンドウ。  
   
 ### <a name="to-announce-selection-to-the-environment"></a>選択範囲を環境のことをお知らせ  
   
-1.  呼び出す`QueryInterface`の<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>します。  
+1. 呼び出す`QueryInterface`の<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>します。  
   
-    1.  これを行うには、作成時に、ビューに渡されたサイト ポインターを使用します。  
+    1. これを行うには、作成時に、ビューに渡されたサイト ポインターを使用します。  
   
-    2.  呼び出す`QueryService`のビューから、`SID_STrackSelection`サービス。  
+    2. 呼び出す`QueryService`のビューから、`SID_STrackSelection`サービス。  
   
          ポインターが返されます<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>します。  
   
-2.  呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>選択内容が変更されるたびにメソッドを実装するオブジェクトへのポインターを渡す<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>します。  
+2. 呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>選択内容が変更されるたびにメソッドを実装するオブジェクトへのポインターを渡す<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>します。  
   
      選択コンテナー オブジェクトの 1 つまたは複数選択のいずれかを使用することができでは、選択した情報が含まれています、`IDispatch`オブジェクト。 呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>メソッドは、通知、**プロパティ**選択が変更されたウィンドウ。 **プロパティ**ウィンドウにあるオブジェクトが使用し、<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>を 1 つまたは複数選択が発生したかどうかを実際のオブジェクトの選択項目を決定します。  
   

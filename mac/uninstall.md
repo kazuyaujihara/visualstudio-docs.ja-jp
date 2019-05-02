@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971450"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Visual Studio for Mac のアンインストール
 
@@ -48,12 +48,14 @@ Visual Studio for Mac とご利用のコンピューター用のコンポーネ�
     ```bash
     cd /location/of/file
     ```
+
 3. スクリプトを実行可能にして、**sudo** で実行します。
 
     ```bash
     chmod +x ./uninstall-vsmac.sh
     sudo ./uninstall-vsmac.sh
     ```
+
 4. 最後に、アンインストール スクリプトを削除します。
 
 ### <a name="net-core-script"></a>.NET Core スクリプト
@@ -68,12 +70,14 @@ Visual Studio for Mac とご利用のコンピューター用のコンポーネ�
     ```bash
     cd /location/of/file
     ```
+
 3. スクリプトを実行可能にして、**sudo** で実行します。
 
     ```bash
     chmod +x ./dotnet-uninstall-pkgs.sh
     sudo ./dotnet-uninstall-pkgs.sh
     ```
+
 4. 最後に、.NET Core のアンインストール スクリプトを削除します。
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Visual Studio for Mac をアンインストールする
@@ -96,6 +100,7 @@ rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
+rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
 Xamarin のさまざまなファイルやフォルダーを含む次のディレクトリを削除することもできます。 ただし、実行する前に、このディレクトリに Android の署名キーが含まれていることに注意してください。 詳細については、セクション「**[Android SDK と Java SDK をアンインストールする](#uninstall-android-sdk-and-java-sdk)**」を参照してください。
@@ -103,7 +108,6 @@ Xamarin のさまざまなファイルやフォルダーを含む次のディレ
 ```bash
 rm -rf ~/Library/Developer/Xamarin
 ```
-
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Mono SDK (MDK) をアンインストールする
 
@@ -216,6 +220,22 @@ rm -rf ~/Library/Logs/XamarinInstaller/
 rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
+```
+
+## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Visual Studio 2019 for Mac プレビューをアンインストールする
+
+Visual Studio 2019 for Mac プレビューは、独立したプレビューとして提供されており、サイドバイサイド Visual Studio 2017 for Mac インストールを引き続き使用できます。
+
+Visual Studio 2019 for Mac がリリースされたので、Visual Studio 2019 for Mac プレビュー アプリケーションを安全に削除できます。
+
+プレビュー アプリケーション バンドルをアンインストールするには、次の図に示すように、**アプリケーション** フォルダーで **[Visual Studio (プレビュー)]** を選択し、**[ごみ箱に移動]** をクリックします。
+
+![ファインダーで [ごみ箱に移動] オプションを選択](media/uninstall-remove-vspreview.png)
+
+また、次のコマンドを使用してプレビューの plist ファイルを削除することもできます。
+
+```bash
+rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
 ## <a name="see-also"></a>関連項目

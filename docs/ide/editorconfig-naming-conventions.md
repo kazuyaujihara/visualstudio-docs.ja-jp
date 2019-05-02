@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557321"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig での .NET の名前付け規則
 
 名前付け規則は、クラス、プロパティ、およびメソッドなどのコード要素の名前付けに関するものです。 たとえば、パブリック メンバーは大文字表記とする必要があること、または非同期メソッドは "Async" で終わる必要があることを指定できます。 これらの規則を適用するには、[.editorconfig ファイル](../ide/create-portable-custom-editor-options.md)にそれらを含めます。 名前付け規則違反は、規則に対して選択した重大度に応じて、**エラー一覧**内に表示されるか、または名前の下に修正候補として表示されます。 違反を確認するためにプロジェクトをビルドする必要はありません。
 
-名前付け規則は、*.editorconfig* ファイル内に固有度の高いものから低いものの順に並べる必要があります。 適用可能な最初に検出されたルールのみが適用されます。
+名前付け規則は、EditorConfig ファイル内に固有度の高いものから低いものの順に並べる必要があります。 適用可能な最初に検出されたルールのみが適用されます。 ただし、同じ名前のルールの "*プロパティ*" が複数ある場合は、その名前の最も最近見つかったプロパティが優先されます。 詳細については、「[File hierarchy and precedence (ファイルの階層と優先順位)](create-portable-custom-editor-options.md#file-hierarchy-and-precedence)」を参照してください。
 
 それぞれの名前付け規則については、名前付け規則を適用するシンボル、名前付けのスタイル、および規則を適用する上での重大度を、以下に示すプロパティを使用して指定する必要があります。 プロパティの順序は重要ではありません。
 
@@ -76,8 +76,21 @@ ms.locfileid: "57983275"
 - private\_protected
 - local
 
-> [!NOTE]
-> 対象とするシンボルの種類にアクセシビリティが適用されない場合は、アクセシビリティ レベルを名前付け規則の一部には指定しません。 たとえば、パラメーターにはアクセシビリティ レベルはありません。 パラメーターの名前付け規則にアクセシビリティ レベルを指定すると、名前付け規則は正しく機能しません。
+   `local` アクセシビリティ レベルは、メソッド内で定義された記号に適用されます。 コード内でアクセシビリティを指定できない記号には、名前規則を定義すると便利です。 たとえば、定数 (`required_modifiers = const`) の名前規則に `applicable_accessibilities = local` を指定した場合、規則はメソッド内で定義された定数のみに適用され、型の中で定義されたものには適用されません。
+
+   ```csharp
+   class TypeName
+   {
+     // Constant defined in a type.
+     const int X = 3;
+
+     void Method()
+     {
+       // Constant defined in a method with "local" accessibility.
+       const int Y = 4;
+     }
+   }
+   ```
 
 ### <a name="symbol-modifiers-optional"></a>シンボルの修飾子 (省略可能)
 
@@ -156,8 +169,8 @@ ms.locfileid: "57983275"
 ------------ | -------------
 none または silent | このスタイルに準拠していないときは、ユーザーには何も表示されません。ただし、自動生成コードは、このスタイルに従います。
 修正候補 | このスタイルに準拠していないとき、修正候補としてユーザーに表示されます (最初の 2 文字の下に点線が付きます)。 コンパイル時には影響しません。
-警告 | このスタイルに準拠していないとき、**エラー一覧**にコンパイラの警告が表示されます。
-エラー | このスタイルに準拠していないとき、**エラー一覧**にコンパイラ エラーが表示されます。
+warning | このスタイルに準拠していないとき、**エラー一覧**にコンパイラの警告が表示されます。
+error | このスタイルに準拠していないとき、**エラー一覧**にコンパイラ エラーが表示されます。
 
 > [!NOTE]
 > 名前付け規則違反を確認するために、プロジェクトをビルドする必要はありません。 名前付け規則違反は、コードの編集時に、**エラー一覧**に表示されるか、または修正候補として表示されます。

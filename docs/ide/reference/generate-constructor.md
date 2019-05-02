@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa3d347c08ee73054d4b229d7d2598331e44c1d7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: faef5f2420f4abd30ecec9151212b8a731736886
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795213"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Visual Studio でコンストラクターを生成する
 
@@ -30,11 +30,11 @@ ms.locfileid: "55941375"
 
 **方法:** コンストラクターを生成するにはいくつかの方法があります。
 
-   - [コンストラクターを生成してメンバーを選択する](#pick)
-   - [選択したフィールドからコンストラクターを生成する](#selection)
-   - [新しい使用からコンストラクターを生成する](#usage)
-   - [既存のコンストラクターにパラメーターを追加する](#addparameter)
-   - [コンストラクターのパラメーターからフィールド/プロパティを作成して初期化する](#create)
+- [コンストラクターを生成してメンバーを選択する](#pick)
+- [選択したフィールドからコンストラクターを生成する](#selection)
+- [新しい使用からコンストラクターを生成する](#usage)
+- [既存のコンストラクターにパラメーターを追加する](#addparameter)
+- [コンストラクターのパラメーターからフィールド/プロパティを作成して初期化する](#create)
 
 ## <a id = "pick"></a> コンストラクターを生成してメンバーを選択する (C# のみ)
 

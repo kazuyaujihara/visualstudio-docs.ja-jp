@@ -9,54 +9,53 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 5b3c1d384ea42f4a1cdc864c261586ff1ee2e384
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443055"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity の使用を開始する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このセクションでは、Visual Studio Tools for Unity をインストールする方法と、Visual Studio で操作できるように Unity プロジェクトを構成する方法を説明します。  
   
 > [!IMPORTANT]
->  Unity 5.2 では Visual Studio Tools for Unity 2.1 の組み込みサポートが追加され、プロジェクトのセットアップが簡単になりました。 これを活用するには、Windows で Unity バージョン 5.2.0 以降と、Visual Studio Tools for Unity バージョン 2.1 以降が必要です。  
+> Unity 5.2 では Visual Studio Tools for Unity 2.1 の組み込みサポートが追加され、プロジェクトのセットアップが簡単になりました。 これを活用するには、Windows で Unity バージョン 5.2.0 以降と、Visual Studio Tools for Unity バージョン 2.1 以降が必要です。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  Visual Studio Tools for Unity を使用するには、次のコンポーネントが必要です。  
   
--   拡張機能をサポートしているバージョンの **Visual Studio** (Visual Studio Community、Professional、Premium、Enterprise など)。 Visual Studio Community は無料でダウンロードできます。  
+- 拡張機能をサポートしているバージョンの **Visual Studio** (Visual Studio Community、Professional、Premium、Enterprise など)。 Visual Studio Community は無料でダウンロードできます。  
   
      [Visual Studio Community をダウンロード](http://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   **Unity** バージョン 4.0.0 以降、 **Unity** バージョン 5.2.0 以降 (Visual Studio Tools for Unity バージョン 2.1 以降の組み込みサポートを利用する場合)  
+- **Unity** バージョン 4.0.0 以降、 **Unity** バージョン 5.2.0 以降 (Visual Studio Tools for Unity バージョン 2.1 以降の組み込みサポートを利用する場合)  
   
      [Unity をダウンロード](https://unity3d.com/get-unity/download)  
   
 ## <a name="install-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity のインストール  
  Visual Studio Tools for Unity を Visual Studio ギャラリーからダウンロードしてインストールします。 ご使用の Visual Studio バージョンに適したパッケージをインストールする必要があります。 Unity 5.2 以降で VSTU の組み込みサポートを利用するには、Visual Studio Tools for Unity バージョン 2.1 以降をインストールしてください。  
   
--   Visual Studio 2015 Community、Visual Studio 2015 Professional、または Visual Studio 2015 Enterprise の場合:  
+- Visual Studio 2015 Community、Visual Studio 2015 Professional、または Visual Studio 2015 Enterprise の場合:  
   
      [Visual Studio 2015 Tools for Unity をダウンロード](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
   
--   Visual Studio 2013 Community、Visual Studio 2013 Professional、または Visual Studio 2013 Premium の場合:  
+- Visual Studio 2013 Community、Visual Studio 2013 Professional、または Visual Studio 2013 Premium の場合:  
   
      [Visual Studio 2013 Tools for Unity をダウンロード](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
   
--   Visual Studio 2012 Professional または Visual Studio 2012 Premium の場合:  
+- Visual Studio 2012 Professional または Visual Studio 2012 Premium の場合:  
   
      [Visual Studio 2012 Tools for Unity をダウンロード](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
   
--   Visual Studio 2010 Professional または Visual Studio 2010 Premium の場合:  
+- Visual Studio 2010 Professional または Visual Studio 2010 Premium の場合:  
   
      [Visual Studio 2010 Tools for Unity をダウンロード](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   
 > [!NOTE]
->  Visual Studio Express バージョンは、Visual Studio Tools for Unity などの拡張機能をサポートしていません。 Visual Studio Community は、Visual Studio Tools for Unity と他の拡張機能をサポートしている無料版の Visual Studio です。 ほとんどのユーザーの場合、Visual Studio Community が Express よりも適した選択肢になります。  
+> Visual Studio Express バージョンは、Visual Studio Tools for Unity などの拡張機能をサポートしていません。 Visual Studio Community は、Visual Studio Tools for Unity と他の拡張機能をサポートしている無料版の Visual Studio です。 ほとんどのユーザーの場合、Visual Studio Community が Express よりも適した選択肢になります。  
   
 ## <a name="your-first-unity-project-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity で取り組む最初の Unity プロジェクト  
  これで必要なすべてが揃ったので、Visual Studio による初めての Unity プロジェクトに取り組む準備が整いました。 Unity プロジェクトの設定は、インストールされている Unity と Visual Studio Tools for Unity のバージョンによって異なります。 次の手順で、インストールされている Unity と Visual Studio Tools for Unity のバージョンを確認します。  

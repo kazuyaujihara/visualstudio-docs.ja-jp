@@ -10,12 +10,12 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb5227c4b5f771747a43a7f0f12e0125b125604e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e19e1cb4f9b49c40923d96b177ceb4d6c31b746f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783348"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>待ち時間を編集してロード テスト シナリオにおける Web サイトでの対話操作の遅延をシミュレートする
 
@@ -48,13 +48,13 @@ ms.locfileid: "55943377"
 
 ### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>ロード テスト シナリオで待ち動作のプロファイルを変更するには
 
-1.  Web パフォーマンスとロード テストのプロジェクトから、ロード テストを開きます。
+1. Web パフォーマンスとロード テストのプロジェクトから、ロード テストを開きます。
 
-2.  **ロード テスト エディター**で、**[待ち動作のプロファイル]** を変更するシナリオ ノードを選択します。 **[待ち動作のプロファイル]** は、**[プロパティ]** ウィンドウに表示されます。 **F4** キーを押して **[プロパティ]** ウィンドウを表示します。
+2. **ロード テスト エディター**で、**[待ち動作のプロファイル]** を変更するシナリオ ノードを選択します。 **[待ち動作のプロファイル]** は、**[プロパティ]** ウィンドウに表示されます。 **F4** キーを押して **[プロパティ]** ウィンドウを表示します。
 
-3.  **[プロパティ]** ウィンドウで **[待ち動作のプロファイル]** プロパティを変更します。
+3. **[プロパティ]** ウィンドウで **[待ち動作のプロファイル]** プロパティを変更します。
 
-4.  プロパティを変更したら、**[ファイル]** メニューの **[保存]** を選択します。 新しい待ち動作のプロファイルでロード テストを実行できるようになります。
+4. プロパティを変更したら、**[ファイル]** メニューの **[保存]** を選択します。 新しい待ち動作のプロファイルでロード テストを実行できるようになります。
 
 ## <a name="see-also"></a>関連項目
 

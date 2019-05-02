@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d1a9fc5ac7fa35afb53c89f5af016ed909d11e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e31d9c01ded7754fd10419f3fd0e18d9616a51eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814125"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>ドメイン固有言語ツールの概要
 Visual Studio でホストされている、ドメイン固有言語ツール (DSL ツール) では、ドメイン固有言語を設計し、言語に基づくモデルを作成するユーザーが必要なすべてのものを生成できます。
 
  DSL ツールには次のツールが含まれています。
 
--   さまざまなソリューション テンプレートを使用してドメイン固有言語の開発を始めるのに役立つ、プロジェクト ウィザード。
+- さまざまなソリューション テンプレートを使用してドメイン固有言語の開発を始めるのに役立つ、プロジェクト ウィザード。
 
--   ドメイン固有言語の定義を作成、編集するためのグラフィカル デザイナー。
+- ドメイン固有言語の定義を作成、編集するためのグラフィカル デザイナー。
 
--   ドメイン固有言語の定義が適切な形式であることを確認し、問題がある場合はエラーや警告を表示する検証エンジン。
+- ドメイン固有言語の定義が適切な形式であることを確認し、問題がある場合はエラーや警告を表示する検証エンジン。
 
--   ドメイン固有言語の定義を入力として受け取り、ソース コードを出力として生成するコード ジェネレーター。
+- ドメイン固有言語の定義を入力として受け取り、ソース コードを出力として生成するコード ジェネレーター。
 
 ## <a name="the-dsl-tools-solution"></a>DSL ツール ソリューション
  ドメイン固有デザイナー ウィザードには、次のソリューション テンプレートが用意されています。

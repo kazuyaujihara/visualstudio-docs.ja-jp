@@ -8,12 +8,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b8129b4ff946658c5e1b4f24c57ca77cb50e14a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 780745e2b4213d8fdd130fe03cac292b233c5b0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430672"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 破られた暗号アルゴリズムを使用しないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58976053"
 |互換性に影響する変更点|中断なし|  
   
 > [!NOTE]
->  この警告の最終更新は 2015 年 11 月です。  
+> この警告の最終更新は 2015 年 11 月です。  
   
 ## <a name="cause"></a>原因  
  <xref:System.Security.Cryptography.MD5> などのハッシュ関数および <xref:System.Security.Cryptography.DES> や <xref:System.Security.Cryptography.RC2> などの暗号アルゴリズムは、重大な危険にさらされている可能性があり、ブルート フォース攻撃やハッシュの競合など、単純な攻撃方法を通して機密情報が漏洩する可能性があります。  
@@ -47,9 +47,9 @@ ms.locfileid: "58976053"
 ## <a name="how-to-fix-violations"></a>違反の修正方法  
  暗号強度の高いオプションを使用します。  
   
--   MD5 の場合は、 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) ファミリ ( <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>など) のハッシュを使用します。  
+- MD5 の場合は、 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) ファミリ ( <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>など) のハッシュを使用します。  
   
--   DES と RC2 の場合は、 <xref:System.Security.Cryptography.Aes> 暗号を使用します。  
+- DES と RC2 の場合は、 <xref:System.Security.Cryptography.Aes> 暗号を使用します。  
   
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況  
  暗号の専門家によって確認された場合を除き、この規則からの警告を抑制しないでください。  

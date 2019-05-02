@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445687"
 ---
 # <a name="help-viewer-administrator-guide"></a>ヘルプ ビューアー の管理者ガイド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "54799706"
 - ヘルプの既定のソースはオンラインのままです。  
   
   > [!TIP]
-  >  レジストリ キー HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp を変更することで、ヘルプの既定のソースを変更できます。 詳細については、「[ヘルプ コンテンツ マネージャーのオーバーライド](../ide/help-content-manager-overrides.md)」を参照してください。  
+  > レジストリ キー HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp を変更することで、ヘルプの既定のソースを変更できます。 詳細については、「[ヘルプ コンテンツ マネージャーのオーバーライド](../ide/help-content-manager-overrides.md)」を参照してください。  
   
 - Visual Studio の最初の起動時には、基本ヘルプ コンテンツをインストールするよう求めるメッセージが表示されます。 レジストリ キー HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection を変更することで、このメッセージを無効にできます。  
   
@@ -60,13 +60,13 @@ ms.locfileid: "54799706"
   
 ##### <a name="to-install-english-content-from-the-internet"></a>インターネットから英語のコンテンツをインストールするには  
   
-1.  **[スタート]** を選択し、**[ファイル名を指定して実行]** を選択します。  
+1. **[スタート]** を選択し、**[ファイル名を指定して実行]** を選択します。  
   
-2.  次のように入力します。  
+2. 次のように入力します。  
   
      C:\Program Files (x86)\Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us  
   
-3.  ENTER キーを押します。  
+3. ENTER キーを押します。  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>クライアント コンピューターに事前にインストールされたローカル ヘルプ コンテンツの配置  
  オンラインから 1 台のコンピューターに一連のコンテンツをインストールし、そのインストールされたコンテンツを他のコンピューターにコピーすることができます。  
@@ -78,7 +78,7 @@ ms.locfileid: "54799706"
 - インストール後にユーザーがローカル ヘルプ コンテンツを更新、追加、または削除するには、そのユーザーに管理者権限が必要です。  
   
   > [!TIP]
-  >  ユーザーに管理者権限がない場合は、ヘルプ ビューアーで [コンテンツの管理] タブを無効にすることをお勧めします。 詳細については、「[ヘルプ コンテンツ マネージャーのオーバーライド](../ide/help-content-manager-overrides.md)」を参照してください。  
+  > ユーザーに管理者権限がない場合は、ヘルプ ビューアーで [コンテンツの管理] タブを無効にすることをお勧めします。 詳細については、「[ヘルプ コンテンツ マネージャーのオーバーライド](../ide/help-content-manager-overrides.md)」を参照してください。  
   
   注意事項:  
   
@@ -117,15 +117,15 @@ ms.locfileid: "54799706"
   
 ##### <a name="to-package-the-content"></a>コンテンツをパッケージ化するには  
   
-1.  後の配置でコンテンツをコピーするフォルダーを作成します。  
+1. 後の配置でコンテンツをコピーするフォルダーを作成します。  
   
      たとえば、c:\VS12Help フォルダーを作成します。  
   
-2.  管理者のアクセス許可で cmd.exe を開きます。  
+2. 管理者のアクセス許可で cmd.exe を開きます。  
   
-3.  手順 1 で作成したフォルダーに移動します。  
+3. 手順 1 で作成したフォルダーに移動します。  
   
-4.  次のように入力します。  
+4. 次のように入力します。  
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o  
   
@@ -135,13 +135,13 @@ ms.locfileid: "54799706"
   
 ##### <a name="to-deploy-the-content"></a>コンテンツを配置するには  
   
-1.  ネットワーク共有を作成し、その場所に theee ヘルプ コンテンツをコピーします。  
+1. ネットワーク共有を作成し、その場所に theee ヘルプ コンテンツをコピーします。  
   
      たとえば、c:\VS12Help のコンテンツを \\\myserver\VS12Help にコピーします。  
   
-2.  ヘルプ コンテンツの配置スクリプトを含める .bat ファイルを作成します。 クライアントがプッシュの一部として、削除されるファイルのいずれかに読み取りロックを設定している可能性があるため、更新をプッシュする前にクライアントをシャットダウンする必要があります。  
+2. ヘルプ コンテンツの配置スクリプトを含める .bat ファイルを作成します。 クライアントがプッシュの一部として、削除されるファイルのいずれかに読み取りロックを設定している可能性があるため、更新をプッシュする前にクライアントをシャットダウンする必要があります。  
   
-     次に例を示します。  
+     例えば:  
   
     ```  
     REM - copy pre-ripped content to ProgramData  
@@ -199,7 +199,7 @@ ms.locfileid: "54799706"
     :CONTINUE  
     ```  
   
-3.  ヘルプ コンテンツをインストールするローカル コンピューターで、bat ファイルを実行します。  
+3. ヘルプ コンテンツをインストールするローカル コンピューターで、bat ファイルを実行します。  
   
 ## <a name="see-also"></a>関連項目
  [ヘルプ コンテンツ マネージャーのコマンドライン引数](../ide/command-line-arguments-for-the-help-content-manager.md)   

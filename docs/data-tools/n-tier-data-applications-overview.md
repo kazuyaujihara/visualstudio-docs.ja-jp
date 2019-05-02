@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00bd9dff41e6c57fc6969f4198f96d0e209e2a77
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566472"
 ---
 # <a name="n-tier-data-applications-overview"></a>n 層データ アプリケーションの概要
 *N 層*データ アプリケーションはデータ アプリケーションは複数に分割された*層*します。 n 層アプリケーションは、"分散アプリケーション" および "多階層アプリケーション" とも呼ばれ、クライアントとサーバー間に分散された別個の層に処理を分離します。 データにアクセスするアプリケーションを開発する場合は、アプリケーションを構成する各種の層を明確に分離する必要があります。
@@ -27,33 +27,33 @@ ms.locfileid: "55943690"
 
 Visual Studio には、開発者が n 層アプリケーションを作成するときに役立つ機能がいくつか用意されています。
 
--   データセットでは、 **DataSet プロジェクト**プロパティ (データ エンティティ層) のデータセットと Tableadapter を分離することができます (データ アクセス層) に別個のプロジェクト。
+- データセットでは、 **DataSet プロジェクト**プロパティ (データ エンティティ層) のデータセットと Tableadapter を分離することができます (データ アクセス層) に別個のプロジェクト。
 
--   [Visual Studio での LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)個別の名前空間に DataContext とデータ クラスを生成する設定を提供します。 これにより、データ アクセス層とデータ エンティティ層の論理的な分離が可能になります。
+- [Visual Studio での LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)個別の名前空間に DataContext とデータ クラスを生成する設定を提供します。 これにより、データ アクセス層とデータ エンティティ層の論理的な分離が可能になります。
 
--   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)提供、<xref:System.Data.Linq.Table%601.Attach%2A>メソッドすると、アプリケーションでさまざまな層から DataContext をまとめることができます。 詳細については、次を参照してください。 [N 層アプリケーションと linq to SQL のリモート アプリケーション](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)します。
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)提供、<xref:System.Data.Linq.Table%601.Attach%2A>メソッドすると、アプリケーションでさまざまな層から DataContext をまとめることができます。 詳細については、次を参照してください。 [N 層アプリケーションと linq to SQL のリモート アプリケーション](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)します。
 
 ## <a name="presentation-tier"></a>プレゼンテーション層
 *プレゼンテーション層*は、ユーザーがアプリケーションとやりとりする層です。 多くの場合、追加のアプリケーション ロジックも含まれています。 一般的なプレゼンテーション層のコンポーネントには、次のようなものがあります。
 
--   データ バインディング コンポーネント (<xref:System.Windows.Forms.BindingSource> や <xref:System.Windows.Forms.BindingNavigator> など)
+- データ バインディング コンポーネント (<xref:System.Windows.Forms.BindingSource> や <xref:System.Windows.Forms.BindingNavigator> など)
 
--   データの表現をオブジェクト[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)エンティティ クラス、プレゼンテーション層で使用します。
+- データの表現をオブジェクト[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)エンティティ クラス、プレゼンテーション層で使用します。
 
 プレゼンテーション層、中間層にサービス参照を使用して通常アクセスする (たとえば、 [Windows Communication Foundation サービスと Visual Studio での WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)アプリケーション)。 プレゼンテーション層からデータ層に直接アクセスすることはありません。 プレゼンテーション層は、中間層のデータ アクセス コンポーネントを通してデータ層と通信します。
 
 ## <a name="middle-tier"></a>中間層
 *中間層*は、プレゼンテーション層とデータ層が互いに通信するために使用する層です。 一般的な中間層のコンポーネントには、次のようなものがあります。
 
--   ビジネス ロジック (ビジネス ルールやデータ検証など)
+- ビジネス ロジック (ビジネス ルールやデータ検証など)
 
--   次のようなデータ アクセス コンポーネントおよびロジック
+- 次のようなデータ アクセス コンポーネントおよびロジック
 
-    -   [Tableadapter](create-and-configure-tableadapters.md)と[Dataadapter と Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)します。
+    - [Tableadapter](create-and-configure-tableadapters.md)と[Dataadapter と Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)します。
 
-    -   データの表現をオブジェクト[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)エンティティ クラスです。
+    - データの表現をオブジェクト[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)エンティティ クラスです。
 
-    -   共通のアプリケーション サービス (認証、承認、パーソナル化など)
+    - 共通のアプリケーション サービス (認証、承認、パーソナル化など)
 
 次の図は、Visual Studio で使用できる機能および技術と、n 層アプリケーションの中間層においてそれらが適合する位置を示しています。
 

@@ -11,12 +11,12 @@ ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 805b86802e64c91e52d869b067fac871603019e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e20caff476e116ad59430692719bdbbe22c4914c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439776"
 ---
 # <a name="loading-vspackages"></a>VSPackage の読み込み
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,13 +24,13 @@ ms.locfileid: "58963143"
 Vspackage は、それらの機能が必要な場合にのみ、Visual Studio に読み込まれます。 たとえば、Visual Studio がプロジェクト ファクトリや VSPackage を実装するサービスを使用するときに VSPackage が読み込まれます。 この機能には、パフォーマンスを向上させるために可能な場合に使用される、遅延読み込みが呼び出されます。  
   
 > [!NOTE]
->  Visual Studio では、VSPackage を読み込むことがなく、VSPackage を提供するコマンドなどの VSPackage の情報を確認できます。  
+> Visual Studio では、VSPackage を読み込むことがなく、VSPackage を提供するコマンドなどの VSPackage の情報を確認できます。  
   
  Vspackage に設定できます、特定のユーザー インターフェイス (UI) のコンテキストでの自動読み込みなど、ソリューションが開いているとき。 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>属性は、このコンテキストを設定します。  
   
 ### <a name="autoloading-a-vspackage-in-a-specific-context"></a>特定のコンテキストで VSPackage を自動読み込み  
   
--   追加、 `ProvideAutoLoad` VSPackage 属性に属性します。  
+- 追加、 `ProvideAutoLoad` VSPackage 属性に属性します。  
   
     ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
@@ -43,11 +43,11 @@ Vspackage は、それらの機能が必要な場合にのみ、Visual Studio �
   
      列挙型のフィールドを参照してください。 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> UI コンテキストとその GUID 値の一覧についてはします。  
   
--   ブレークポイントを設定、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。  
+- ブレークポイントを設定、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。  
   
--   VSPackage をビルドしてデバッグを開始します。  
+- VSPackage をビルドしてデバッグを開始します。  
   
--   ソリューションを読み込むか、1 つを作成します。  
+- ソリューションを読み込むか、1 つを作成します。  
   
      VSPackage では、読み込みをブレークポイントで停止します。  
   
@@ -56,7 +56,7 @@ Vspackage は、それらの機能が必要な場合にのみ、Visual Studio �
   
  使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A>をロードするために VSPackage を強制する方法。  
   
--   次のコードを挿入、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッドの VSPackage を読み込む別の VSPackage を強制します。  
+- 次のコードを挿入、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッドの VSPackage を読み込む別の VSPackage を強制します。  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  

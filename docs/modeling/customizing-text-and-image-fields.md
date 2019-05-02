@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d63354d552b04d07f0b2d0ede41d28fc33cda3a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 607809b05688931b139b27fec1803719b928dfea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445819"
 ---
 # <a name="customizing-text-and-image-fields"></a>テキストおよびイメージ フィールドのカスタマイズ
 図形のテキスト デコレータを定義するときに、テキスト フィールドで表されます。 テキスト フィールドとその他の ShapeFields の初期化の例については、DSL ソリューションで Dsl\GeneratedCode\Shapes.cs を検査します。
@@ -88,7 +88,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  そうでない場合、上書き、`InitializeShapeFields`を適切な値を割り当てます、図形のクラスのメソッド`Default...`テキスト フィールドのプロパティ。
 
 > [!WARNING]
->  オーバーライドする`InitializeShapeFields()`を設定する必要があります、 **Double Derived の生成**の図形クラスのプロパティ`true`DSL 定義でします。
+> オーバーライドする`InitializeShapeFields()`を設定する必要があります、 **Double Derived の生成**の図形クラスのプロパティ`true`DSL 定義でします。
 
  この例では、ユーザーのコメントを使用するテキスト フィールドが図形にあります。 標準のコメントのフォントを使用します。 スタイルのセットから標準フォントであるために、既定のフォント id を設定できます。
 
@@ -181,13 +181,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 #### <a name="to-create-a-subclass-of-imagefield"></a>ImageField のサブクラスを作成するには
 
-1.  設定、 **Double Derived の生成**DSL 定義で親シェイプ クラスのプロパティ。
+1. 設定、 **Double Derived の生成**DSL 定義で親シェイプ クラスのプロパティ。
 
-2.  上書き、`InitializeShapeFields`図形クラスのメソッド。
+2. 上書き、`InitializeShapeFields`図形クラスのメソッド。
 
-    -   DSL プロジェクトで新しいコード ファイルを作成し、シェイプ クラスの部分クラス定義を記述します。 メソッドの定義をオーバーライドします。
+    - DSL プロジェクトで新しいコード ファイルを作成し、シェイプ クラスの部分クラス定義を記述します。 メソッドの定義をオーバーライドします。
 
-3.  コードを調べ、 `InitializeShapeFields` DSL\GeneratedCode\Shapes.cs でします。
+3. コードを調べ、 `InitializeShapeFields` DSL\GeneratedCode\Shapes.cs でします。
 
      オーバーライド メソッドで基本メソッドを呼び出しておよびイメージ フィールド クラスのインスタンスを作成します。 これで通常の画像フィールドを置換を使用して、`shapeFields`一覧。
 
@@ -195,7 +195,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  この例では、変更アイコンが図形のモデル要素の状態に依存します。
 
 > [!WARNING]
->  この例では、動的な画像デコレーターを作成する方法を示します。 モデルの変数の状態に応じて 1 つまたは 2 つのイメージ間で切り替える場合は、いくつかのイメージのデコレータを作成し、図形の上の同じ位置に配置し、モデルの特定の値に依存する可視性フィルターを設定する方が簡単変数。 このフィルターを設定するに、DSL 定義でマップのシェイプを選択します。 DSL の詳細 ウィンドウを開き、デコレーター タブをクリックします。
+> この例では、動的な画像デコレーターを作成する方法を示します。 モデルの変数の状態に応じて 1 つまたは 2 つのイメージ間で切り替える場合は、いくつかのイメージのデコレータを作成し、図形の上の同じ位置に配置し、モデルの特定の値に依存する可視性フィルターを設定する方が簡単変数。 このフィルターを設定するに、DSL 定義でマップのシェイプを選択します。 DSL の詳細 ウィンドウを開き、デコレーター タブをクリックします。
 
  この例のコードを実行するには、最小言語テンプレートを使用して、新しい DSL ソリューションを作成します。 ブール型のドメイン プロパティを追加`AlternateState`ExampleElement ドメイン クラスにします。 ExampleShape クラスに、アイコン デコレータを追加し、そのイメージをビットマップ ファイルに設定します。 クリックして**すべてのテンプレートの変換**します。 DSL プロジェクトで新しいコード ファイルを追加し、次のコードを挿入します。
 

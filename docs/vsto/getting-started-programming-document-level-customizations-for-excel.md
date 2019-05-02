@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a336463a3a7d8003c949242ad2f295a76633c894
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 221f755ff934946ca829aa2abe088aeec864cf87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972136"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Excel 用ドキュメント レベル カスタマイズのプログラミングのスタート ガイド
   Visual Studio を使用して Microsoft Office Excel のドキュメント レベルのカスタマイズを作成することを始めるには、次を知る必要があります。
@@ -44,11 +44,11 @@ ms.locfileid: "56603795"
 
  詳細については、次のトピックを参照してください。
 
--   [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)
+- [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)
 
--   [拡張オブジェクトを使用した Excel の自動化](../vsto/automating-excel-by-using-extended-objects.md)
+- [拡張オブジェクトを使用した Excel の自動化](../vsto/automating-excel-by-using-extended-objects.md)
 
--   [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)
+- [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-excel"></a>Excel のユーザー インターフェイスのカスタマイズ
  ほとんどの Microsoft Office ソリューションは、Office アプリケーションのユーザー インターフェイス (UI) を変更して、ユーザーがソリューションと対話するためのなんらかの方法を提供します。 ドキュメント レベルのカスタマイズを使用して Excel の UI を変更する方法はたくさんあります。 たとえば、リボンにコントロールを追加したり、操作ウィンドウを表示したりすることが可能です。 詳細については、「[Office UI のカスタマイズ](../vsto/office-ui-customization.md)」を参照してください。

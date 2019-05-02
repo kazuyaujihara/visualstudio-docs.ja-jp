@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b58fcf55741975a776e222b2845ae50774e7fc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832915"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 一意の識別子をシンボルを取得します。
@@ -43,7 +43,7 @@ HRESULT symbolById (
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 指定された識別子が、一意の値がすべてのシンボルを一意にする、DIA SDK によって内部的に使用します。
 
 このメソッドができますが、たとえば、他の記号の型を表すシンボルを取得する (例を参照してください)。

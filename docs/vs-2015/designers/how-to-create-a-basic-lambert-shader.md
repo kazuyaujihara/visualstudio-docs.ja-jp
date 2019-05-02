@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15bf6243fc6e39a4cd7817bdfe964943ab16a3d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 227c9c84022e3c3340b4821df9dbd2dbe9465a03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414683"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>方法: 基本ランバート シェーダーを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "54792009"
   
  このドキュメントでは、以下のアクティビティについて説明します。  
   
--   シェーダー グラフへのノードの追加  
+- シェーダー グラフへのノードの追加  
   
--   ノードの接続の解除  
+- ノードの接続の解除  
   
--   ノードの接続  
+- ノードの接続  
   
 ## <a name="the-lambert-lighting-model"></a>ランバート照明モデル  
  ランバート照明モデルには、3-D シーン内のオブジェクトに陰影をつけるためのアンビエント照明と指向性照明が組み込まれています。 アンビエント コンポーネントは、3-D シーン内の照明の基本レベルとなります。 指向性コンポーネントは、指向性 (遠隔) 光源からの追加の照明となります。 アンビエント照明は、サーフェイスの向きに関係なく、シーン内のすべてのサーフェイスに均等に影響を及ぼします。 ある特定のサーフェイスでは、これはサーフェイスのアンビエント色とシーン内のアンビエント照明の色および輝度で決まります。 指向性照明がシーン内のサーフェイスに与える影響は、光源の方向に対するサーフェイスの向きによって、サーフェイスごとに異なります。 これは、サーフェイスの拡散色および向きと、光源の色、輝度、方向で決まります。 光源に直接面しているサーフェイスは最大の効果を受け、反対側のサーフェイスは効果を受けません。 ランバート照明モデルでは、アンビエント コンポーネントと 1 つ以上の指向性コンポーネントの組み合わせで、オブジェクトの各ポイントの総拡散色効果が決まります。  
@@ -49,7 +49,7 @@ ms.locfileid: "54792009"
    次の図は、完成したシェーダー グラフと、ティーポット モデルに適用されるシェーダーのプレビューを示しています。  
   
 > [!NOTE]
->  この図では、シェーダーの効果を分かりやすくするために、シェーダーの **MaterialDiffuse** パラメーターを使用してオレンジ色が指定されています。 このパラメーターをゲームやアプリで使用して、オブジェクトごとに一意の色値を指定できます。 マテリアル パラメーターについては、「[シェーダー デザイナー](../designers/shader-designer.md)」の「シェーダーのプレビュー」を参照してください。  
+> この図では、シェーダーの効果を分かりやすくするために、シェーダーの **MaterialDiffuse** パラメーターを使用してオレンジ色が指定されています。 このパラメーターをゲームやアプリで使用して、オブジェクトごとに一意の色値を指定できます。 マテリアル パラメーターについては、「[シェーダー デザイナー](../designers/shader-designer.md)」の「シェーダーのプレビュー」を参照してください。  
   
  ![シェーダー グラフとその効果のプレビュー。](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")  
   
@@ -63,7 +63,7 @@ ms.locfileid: "54792009"
   
 ## <a name="see-also"></a>関連項目
  [方法: シェーダーを 3-D モデルに適用します。](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)   
- [方法: 基本フォン シェーダーを作成する](../designers/how-to-create-a-basic-phong-shader.md)   
+ [方法: シェーダーをエクスポートします。](../designers/how-to-export-a-shader.md)   
+ [方法: 基本フォン シェーダーを作成します。](../designers/how-to-create-a-basic-phong-shader.md)   
  [シェーダー デザイナー](../designers/shader-designer.md)   
  [シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)

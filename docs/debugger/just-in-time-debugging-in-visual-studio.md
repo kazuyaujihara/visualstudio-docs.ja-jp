@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c848281a89213a216bd8ec3ac1e651b6dfc32e4
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905719"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Just-In-Time デバッガーを無効にする
 
@@ -32,7 +32,7 @@ Visual Studio インストールを持っていない場合は、時間で Just 
 
 - Web アプリを実行しようとしている場合は、スクリプトのデバッグを無効にします。
 
-  Windows で**コントロール パネルの**  > **ネットワークとインターネット** > **インターネット オプション**、**無効にするスクリプト デバッグ (Internet Explorer)** と**スクリプトのデバッグ (その他) を無効にする**します。 正確な手順と設定は、Windows と、ブラウザーのバージョンによって異なります。
+  Windows で**コントロール パネルの ** > **ネットワークとインターネット** > **インターネット オプション**、**無効にするスクリプト デバッグ (Internet Explorer)** と**スクリプトのデバッグ (その他) を無効にする**します。 正確な手順と設定は、Windows と、ブラウザーのバージョンによって異なります。
 
   ![インターネット オプションの JIT](../debugger/media/jitinternetoptions.png "JIT インターネット オプション")
 

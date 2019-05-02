@@ -67,7 +67,7 @@ ms.locfileid: "58973657"
 ### <a name="registering-file-filters"></a>ファイル フィルターを登録します。  
  必要に応じて、フィルターを登録することができますを[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ファイル名を要求するときに使用します。 たとえば、[!INCLUDE[csprcs](../../includes/csprcs-md.md)]のフィルター処理、**ファイルを開く** ダイアログ ボックスは。  
   
- **Visual c# ファイル (\*.cs、\*.resx、\*.settings、\*.xsd、\*.wsdl);\*します。cs、\*.resx、\*.settings、\*.xsd、\*.wsdl)**  
+ **Visual C# ファイル (\*.cs、\*.resx、\*.settings、\*.xsd、\*.wsdl);\*します。cs、\*.resx、\*.settings、\*.xsd、\*.wsdl)**  
   
  独自のサブキー hkey_local_machine \software\microsoft\visualstudio 下で複数のフィルターの登録をサポートする各フィルターが登録されている\\<*バージョン*> \Projects\\{\< *ProjectGUID*>} \Filters\\<*サブキー*>。 サブキーの名前は任意です。[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]サブキーの名前を無視し、その値だけを使用します。  
   

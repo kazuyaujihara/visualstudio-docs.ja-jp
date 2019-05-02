@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d369bae532fae40c2856cce88169137146d826d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e95520c526c1d26f0122d9631dfb8196077853
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970149"
 ---
-# <a name="keyboard-environment-options-dialog-box"></a>[キーボード] ([オプション] ダイアログ ボックス - [環境])
+# <a name="options-dialog-box-environment--keyboard"></a>[オプション] ダイアログ ボックス: [環境] \> [キーボード]
+
 このページを使用して、キーボード マップを設定します。 マッピングの詳細については、「[キーボード ショートカットの識別とカスタマイズ](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目

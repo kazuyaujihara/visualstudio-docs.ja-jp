@@ -14,22 +14,22 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2abf61bbc960e342a395e9c0ff3395ecde852137
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580976"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>SharePoint のサイト定義を作成します。
   SharePoint サイト定義プロジェクト[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を作成することができます、*サイト定義*、新しい SharePoint サイトの基盤として機能します。 だけでなく、これらの定義は、SharePoint サイトも既定の内容と機能の動作と外観を決定します。 定義では、事前構成済みのリスト、コンテンツの種類、イベント レシーバー、イメージ、およびその他のアイテムを配置できます。 SharePoint には、たとえば、ブログなどのいくつかのサイト定義が含まれます。 ブログ サイト定義に基づいてサイトを作成するときに、サイトには、リスト、Web パーツ、およびブログ サイトを必要とするその他の項目が含まれています。
 
- サイト定義の詳細については、[サイト テンプレートと定義](http://go.microsoft.com/fwlink/?LinkId=179134)を参照してください。
+ サイト定義の詳細については、次を参照してください。[サイト テンプレートと定義](http://go.microsoft.com/fwlink/?LinkId=179134)します。
 
 ## <a name="site-definition-projects"></a>サイト定義プロジェクト
  サイト定義プロジェクトで[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint サイトに必要な基本的なファイルのみを提供する; 既定の機能は提供されません。 ファイルとする機能を提供するコンテンツを追加する必要があります。 作成に必要なファイルを追加して、手動でサイトを構築できます。
 
 ## <a name="feature-stapling"></a>ホチキス止め機能
- サイト定義の作成の利点の 1 つ[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]が自動的に使用する*ホチキス止め機能*します。 ホチキス止めの機能は、機能をサイト定義自体でその機能を埋め込む代わりのサイト定義にアタッチします。 これを行うには、元のサイト定義を変更することがなく、サイト定義を使用して作成されたすべてのサイトに機能を追加することができます。 詳細については、[ホチキス止め機能](http://go.microsoft.com/fwlink/?LinkID=119283)を参照してください。
+ サイト定義の作成の利点の 1 つ[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]が自動的に使用する*ホチキス止め機能*します。 ホチキス止めの機能は、機能をサイト定義自体でその機能を埋め込む代わりのサイト定義にアタッチします。 これを行うには、元のサイト定義を変更することがなく、サイト定義を使用して作成されたすべてのサイトに機能を追加することができます。 詳細については、次を参照してください。[ホチキス止め機能](http://go.microsoft.com/fwlink/?LinkID=119283)します。
 
 ## <a name="site-definition-project-components"></a>サイト定義プロジェクトのコンポーネント
  次の既定のファイルを追加サイト定義ソリューションを作成するときにその**SiteDefinition**ノード。

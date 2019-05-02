@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26fdadf92fa94efe0a08fdf090e5a295e2f65096
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 6841b8a91cec24f467f6e3f684cbb27e25c9fa63
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899350"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>方法: ClickOnce アプリケーションの URL アクティベーションを無効にする
 
@@ -35,13 +35,13 @@ ms.locfileid: "54999978"
 
 ### <a name="to-disable-url-activation-for-your-application"></a>アプリケーションの URL アクティベーションを無効にするには
 
-1.  MageUI.exe で配置マニフェストを開きます。 まだ作成していない 1 つ場合の手順に従います[チュートリアル。ClickOnce アプリケーションを手動で展開](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。
+1. MageUI.exe で配置マニフェストを開きます。 まだ作成していない 1 つ場合の手順に従います[チュートリアル。ClickOnce アプリケーションを手動で展開](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。
 
-2.  **[配置オプション]** タブを選択します。
+2. **[配置オプション]** タブを選択します。
 
-3.  **[インストール後にアプリケーションを自動的に実行する]** チェックボックスをオフにします。
+3. **[インストール後にアプリケーションを自動的に実行する]** チェックボックスをオフにします。
 
-4.  マニフェストを保存し、署名します。
+4. マニフェストを保存し、署名します。
 
 ## <a name="see-also"></a>関連項目
 

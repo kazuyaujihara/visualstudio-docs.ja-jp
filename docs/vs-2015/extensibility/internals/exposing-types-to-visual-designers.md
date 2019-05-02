@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c87f44dd12724c694fc27bae985f5f7fb617e45c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2db026367e43c1092cf9744817449ce51556a4a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436313"
 ---
 # <a name="exposing-types-to-visual-designers"></a>ビジュアル デザイナーへのタイプの公開
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "58973014"
  プロジェクト システムは、これらの変更は、カスタム ツールを実行した結果を提供する、カスタム ツールの出力ファイルに変更を追跡する完全なサポートを提供します。 カスタム ツールを実行するたびに新しい一時 PE が生成され、デザイナーに適切な通知が送信されます。  
   
 > [!NOTE]
->  一時的なプログラムの実行可能ファイルの生成ファイルがバック グラウンドであるため、コンパイルが失敗した場合、ユーザーにエラーが報告されません。  
+> 一時的なプログラムの実行可能ファイルの生成ファイルがバック グラウンドであるため、コンパイルが失敗した場合、ユーザーにエラーが報告されません。  
   
  一時 PE サポートを活用するカスタム ツールは、次の規則に従う必要があります。  
   
--   `GeneratesDesignTimeSource` レジストリで 1 に設定する必要があります。  
+- `GeneratesDesignTimeSource` レジストリで 1 に設定する必要があります。  
   
      プログラム実行可能ファイルのコンパイルには、この設定がない場所はありません。  
   
--   生成されたコードは、グローバル プロジェクト設定と同じ言語でなければなりません。  
+- 生成されたコードは、グローバル プロジェクト設定と同じ言語でなければなりません。  
   
      要求された拡張機能として、カスタム ツールのレポートに関係なく一時 PE がコンパイルされる<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>される`GeneratesDesignTimeSource`がレジストリ内の 1 に設定します。 拡張子が .vb、.cs、または .jsl; を指定する必要はありません。任意の拡張機能があります。  
   
--   カスタム ツールによって生成されたコードを有効にする必要があり、時に、プロジェクトに存在する参照のセットのみを使用して、独自にコンパイルする必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>の実行が終了します。  
+- カスタム ツールによって生成されたコードを有効にする必要があり、時に、プロジェクトに存在する参照のセットのみを使用して、独自にコンパイルする必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>の実行が終了します。  
   
      一時 PE がコンパイルされると、コンパイラに提供される唯一のソース ファイルは、カスタム ツールの出力を示します。 そのため、一時 PE を使用するカスタム ツールは、プロジェクト内の他のファイルとは別にコンパイルできる出力ファイルを生成する必要があります。  
   

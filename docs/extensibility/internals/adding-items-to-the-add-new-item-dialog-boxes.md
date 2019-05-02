@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e392947f86a1adab92289934632dd393f4ff24ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418687"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>新しい項目の追加 ダイアログ ボックスに項目の追加
 項目を追加するプロセス、**新しい項目の追加**レジストリ キー ダイアログ ボックスを起動します。 次のレジストリ エントリのように、 **AddItemTemplates**セクションには、どの項目で利用できるように、ディレクトリの名前とパスが含まれています、**新しい項目の追加** ダイアログ ボックスが配置されます。
 
 > [!NOTE]
->  コード セグメントの直後に続くテーブルには、レジストリ エントリに関する追加情報が含まれています。
+> コード セグメントの直後に続くテーブルには、レジストリ エントリに関する追加情報が含まれています。
 
  このセクションでは、下にある**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**します。
 
@@ -35,7 +35,6 @@ ms.locfileid: "56620994"
 
  **SortPriority** dword:00000064 を =
 
-
 | 名前 | 型 | データ (から *.rgs*ファイル) | 説明 |
 |------------------|-----------| - | - |
 | @ (既定値) | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY% | リソース ID を**項目の追加**テンプレート。 |
@@ -43,7 +42,7 @@ ms.locfileid: "56620994"
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | ツリー ノードに表示されるファイルの並べ替え順序を決定、**新しい項目の追加** ダイアログ ボックス。 |
 
 > [!NOTE]
->  Visual c# および Visual Basic プロジェクトの種類の GUID は次のとおりです。
+> Visual c# および Visual Basic プロジェクトの種類の GUID は次のとおりです。
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
@@ -51,10 +50,10 @@ ms.locfileid: "56620994"
 
  通常、このフォルダーは HTML テンプレートなど、プロジェクトのテンプレート ファイルを含めるまたは *.cpp*ファイル、および *.vsz*ウィザードを開始するためのファイル。 アイテムの表示方法を制御するには、含める *.vsdir*ファイルのディレクトリ名とアイコンをローカライズします。 ローカライズされた文字列がこのノードを表す ダイアログ ボックスに表示されるキャプション、**新しい項目の追加** ダイアログ ボックスのツリーです。
 
- ただし、すべてが 1 つである必要はない *.vsdir*ファイル。 1 つできます *.vsdir*ディレクトリ内のすべての項目のファイル。 詳細については、[ウィザード (.vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)と[テンプレート ディレクトリの説明 (.vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)を参照してください。
+ ただし、すべてが 1 つである必要はない *.vsdir*ファイル。 1 つできます *.vsdir*ディレクトリ内のすべての項目のファイル。 詳細については、次を参照してください。[ウィザード (.vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)と[テンプレート ディレクトリの説明 (.vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)します。
 
 > [!NOTE]
->  *.Vsdir*テンプレート ディレクトリ内のファイルは省略可能です。 プロジェクト要素をディレクトリに置きで表示したい場合、**新しい項目の追加** ダイアログ ボックスで指定したテンプレートのディレクトリでそのファイルを配置することができます、 **TemplatesDir**ステートメント。 ファイルは、の右側のウィンドウに表示されますが、**新しい項目の追加**そのプロジェクトのダイアログ ボックス。 ただし、ファイルまたはアイコンのローカライズされたキャプションを表示する場合は、する必要がありますが含まれている、少なくとも *.vsdir*テンプレート ディレクトリ内のファイル。
+> *.Vsdir*テンプレート ディレクトリ内のファイルは省略可能です。 プロジェクト要素をディレクトリに置きで表示したい場合、**新しい項目の追加** ダイアログ ボックスで指定したテンプレートのディレクトリでそのファイルを配置することができます、 **TemplatesDir**ステートメント。 ファイルは、の右側のウィンドウに表示されますが、**新しい項目の追加**そのプロジェクトのダイアログ ボックス。 ただし、ファイルまたはアイコンのローカライズされたキャプションを表示する場合は、する必要がありますが含まれている、少なくとも *.vsdir*テンプレート ディレクトリ内のファイル。
 
 ## <a name="group-project-items"></a>プロジェクト項目をグループ化
  テンプレートのグループで、フォルダーを格納するかどうか、**新しい項目の追加** ダイアログ ボックスのツリーで、項目を含むルート テンプレートのディレクトリの下のサブディレクトリがあります。 ときに、**新しい項目の追加** ダイアログ ボックスがユーザーに表示されるはサブフォルダーを参照してからそれらのプロジェクト要素を選択できるようにもします。

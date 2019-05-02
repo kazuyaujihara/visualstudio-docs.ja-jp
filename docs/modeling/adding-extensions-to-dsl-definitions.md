@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f39c45382fc55144f8200c3951fb4a229b7a43
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960488"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>DSL 定義に拡張機能を追加する
 
@@ -20,15 +20,15 @@ DSL 定義の拡張機能では、ドメイン固有言語 (DSL) の拡張機能
 
 DSL の拡張機能は、次の機能を含めることができます。
 
--   モデルとプレゼンテーション要素のプロパティ
+- モデルとプレゼンテーション要素のプロパティ
 
--   シェイプとコネクタのデコレーター
+- シェイプとコネクタのデコレーター
 
--   クラス、リレーションシップ、図形、およびコネクタ
+- クラス、リレーションシップ、図形、およびコネクタ
 
--   検証制約
+- 検証制約
 
--   ツールボックス項目とタブ
+- ツールボックス項目とタブ
 
 拡張の DSL のユーザーは、作成し、追加の機能のインスタンスを含むモデルを保存します。 適切な拡張機能がインストールされている他のユーザーでは、モデルを読み取ることができます。 拡張機能をインストールしていないユーザーは、追加の機能を使用できませんが、更新、追加の機能を失うことがなく、モデルを保存します。
 

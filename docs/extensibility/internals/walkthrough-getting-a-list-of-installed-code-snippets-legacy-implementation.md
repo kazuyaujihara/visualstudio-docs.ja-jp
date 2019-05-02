@@ -12,14 +12,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08040f2436bfd68b5352a1c4cabc15d7ff49c0c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 910ee20cf08c1d5a42e6b6a430f7b51ccddf4925
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429374"
 ---
-# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>チュートリアル: インストールされているコード スニペット (従来の実装) の一覧を取得します。
+# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>チュートリアル: インストールされているコード スニペットの一覧の取得 (従来の実装)
 コード スニペットは、(これにより、インストールされているコード スニペットの一覧の中から選択) メニューのコマンドを使用して、または、元のバッファーに挿入できるコードの IntelliSense のコンプリート リストから、スニペット ショートカットを選択します。
 
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A>メソッドは、言語固有の GUID のすべてのコード スニペットを取得します。 これらのスニペットのショートカットは、IntelliSense のコンプリート リストに挿入できます。
@@ -28,7 +28,7 @@ ms.locfileid: "56614533"
 
 ### <a name="to-retrieve-a-list-of-code-snippets"></a>コード スニペットの一覧を取得するには
 
-1.  次のコードでは、特定の言語コード スニペットの一覧を取得する方法を示します。 配列で、結果が格納されている<xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion>構造体。 このメソッドは、静的な<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>を取得するメソッド、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>からインターフェイス、<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>サービス。 ただし、サービス プロバイダーが、VSPackage と呼び出しに指定された使用も、<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>メソッド。
+1. 次のコードでは、特定の言語コード スニペットの一覧を取得する方法を示します。 配列で、結果が格納されている<xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion>構造体。 このメソッドは、静的な<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>を取得するメソッド、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>からインターフェイス、<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>サービス。 ただし、サービス プロバイダーが、VSPackage と呼び出しに指定された使用も、<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>メソッド。
 
     ```csharp
     using System;
@@ -103,10 +103,10 @@ ms.locfileid: "56614533"
 
 ### <a name="to-call-the-getsnippets-method"></a>GetSnippets メソッドを呼び出す
 
-1.  次のメソッドを呼び出す方法を示しています、`GetSnippets`解析操作の完了時のメソッド。 <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>解析操作の理由で開始された後、メソッドが呼び出された<xref:Microsoft.VisualStudio.Package.ParseReason>します。
+1. 次のメソッドを呼び出す方法を示しています、`GetSnippets`解析操作の完了時のメソッド。 <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>解析操作の理由で開始された後、メソッドが呼び出された<xref:Microsoft.VisualStudio.Package.ParseReason>します。
 
 > [!NOTE]
->  `expansionsList`配列リストでは、パフォーマンス上の理由がキャッシュされます。 一覧には、言語サービスを停止して再度読み込むまで、スニペットへの変更は反映されません (停止して再起動をなど[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)])。
+> `expansionsList`配列リストでは、パフォーマンス上の理由がキャッシュされます。 一覧には、言語サービスを停止して再度読み込むまで、スニペットへの変更は反映されません (停止して再起動をなど[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)])。
 
 ```csharp
 class TestLanguageService : LanguageService
@@ -127,7 +127,7 @@ class TestLanguageService : LanguageService
 
 ### <a name="to-use-the-snippet-information"></a>スニペットの情報を使用するには
 
-1.  次のコードは、によって返されるスニペットの情報を使用する方法を示します、`GetSnippets`メソッド。 `AddSnippets`コード スニペットの一覧を設定するために使用するすべての解析理由に応じて、パーサーからメソッドが呼び出されます。 最初に、完全な解析が完了した後、配置がかかります。
+1. 次のコードは、によって返されるスニペットの情報を使用する方法を示します、`GetSnippets`メソッド。 `AddSnippets`コード スニペットの一覧を設定するために使用するすべての解析理由に応じて、パーサーからメソッドが呼び出されます。 最初に、完全な解析が完了した後、配置がかかります。
 
      `AddDeclaration`メソッドは、後で、入力候補一覧に表示される宣言のリストを構築します。
 

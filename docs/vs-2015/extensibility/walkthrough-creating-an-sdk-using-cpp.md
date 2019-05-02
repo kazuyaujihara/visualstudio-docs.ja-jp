@@ -1,86 +1,81 @@
 ---
-title: 'チュートリアル: C++ を使用して、SDK の作成 |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: C++ を使用して SDK の作成 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0932759213d064c3df717b7b6735c1201e62ce14
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 1312d61b2d287a5dd8cb757b73e818a9e9cb2241
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773471"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110038"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>チュートリアル: C++ を使用して SDK を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、ネイティブ C++ 数値演算ライブラリを SDK パッケージとして、Visual Studio Extension (VSIX)、SDK を作成し、それを使用して、アプリを作成する方法を示します。 このチュートリアルは、次の手順に分かれています。  
   
--   [ネイティブと Windows ランタイム ライブラリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)  
+- [ネイティブと Windows ランタイム ライブラリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)  
   
--   [NativeMathVSIX 拡張機能プロジェクトを作成するには](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)  
+- [NativeMathVSIX 拡張機能プロジェクトを作成するには](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)  
   
--   [クラス ライブラリを使用するサンプル アプリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)  
+- [クラス ライブラリを使用するサンプル アプリを作成するには](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。  
+ このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
   
-##  <a name="createClassLibrary"></a> ネイティブと Windows ランタイム ライブラリを作成するには  
+## <a name="createClassLibrary"></a> ネイティブと Windows ランタイム ライブラリを作成するには  
   
-1.  メニュー バーで、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
+1. メニュー バーで、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
   
-2.  テンプレートの一覧で展開**Visual C**、 **Windows ストア**、クリックして、 **DLL (Windows ストア アプリ)** テンプレート。 **名前**ボックスで、指定`NativeMath`、選択し、 **OK**ボタン。  
+2. テンプレートの一覧で展開**Visual C**、 **Windows ストア**、クリックして、 **DLL (Windows ストア アプリ)** テンプレート。 **名前**ボックスで、指定`NativeMath`、選択し、 **OK**ボタン。  
   
-3.  次のコードに合わせて NativeMath.h を更新します。  
+3. 次のコードに合わせて NativeMath.h を更新します。  
   
      [!code-cpp[CreatingAnSDKUsingCpp#1](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.h#1)]  
   
-4.  このコードに合わせて NativeMath.cpp を更新します。  
+4. このコードに合わせて NativeMath.cpp を更新します。  
   
      [!code-cpp[CreatingAnSDKUsingCpp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.cpp#2)]  
   
-5.  **ソリューション エクスプ ローラー**、ショートカット メニューを開き**ソリューション 'NativeMath'** を選び、**追加**、**新しいプロジェクト**します。  
+5. **ソリューション エクスプ ローラー**、ショートカット メニューを開き**ソリューション 'NativeMath'** を選び、**追加**、**新しいプロジェクト**します。  
   
-6.  テンプレートの一覧で展開**Visual C**、クリックして、 **Windows ランタイム コンポーネント**テンプレート。 **名前**ボックスで、指定`NativeMathWRT`、選択し、 **OK**ボタン。  
+6. テンプレートの一覧で展開**Visual C**、クリックして、 **Windows ランタイム コンポーネント**テンプレート。 **名前**ボックスで、指定`NativeMathWRT`、選択し、 **OK**ボタン。  
   
-7.  このコードに合わせて class1.h の中を更新します。  
+7. このコードに合わせて class1.h の中を更新します。  
   
      [!code-cpp[CreatingAnSDKUsingCpp#3](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathwrt/class1.h#3)]  
   
-8.  このコードに合わせて Class1.cpp を更新します。  
+8. このコードに合わせて Class1.cpp を更新します。  
   
      [!code-cpp[CreatingAnSDKUsingCpp#4](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathwrt/class1.cpp#4)]  
   
 9. メニュー バーの **[ビルド]**、 **[ソリューションのビルド]** の順にクリックします。  
   
-##  <a name="createVSIX"></a> NativeMathVSIX 拡張機能プロジェクトを作成するには  
+## <a name="createVSIX"></a> NativeMathVSIX 拡張機能プロジェクトを作成するには  
   
-1.  **ソリューション エクスプ ローラー**、ショートカット メニューを開き**ソリューション 'NativeMath'** を選び、**追加**、**新しいプロジェクト**します。  
+1. **ソリューション エクスプ ローラー**、ショートカット メニューを開き**ソリューション 'NativeMath'** を選び、**追加**、**新しいプロジェクト**します。  
   
-2.  テンプレートの一覧で  **Visual c#**、**拡張**、し、 **VSIX パッケージ**します。 **名前**ボックスで、指定**NativeMathVSIX**、選択し、 **OK**ボタン。  
+2. テンプレートの一覧で  **Visual c#**、**拡張**、し、 **VSIX パッケージ**します。 **名前**ボックスで、指定**NativeMathVSIX**、選択し、 **OK**ボタン。  
   
-3.  VSIX マニフェスト デザイナーが表示されたら、それを閉じます。  
+3. VSIX マニフェスト デザイナーが表示されたら、それを閉じます。  
   
-4.  **ソリューション エクスプ ローラー**、ショートカット メニューを開き**source.extension.vsixmanifest**を選び、**コードの表示**します。  
+4. **ソリューション エクスプ ローラー**、ショートカット メニューを開き**source.extension.vsixmanifest**を選び、**コードの表示**します。  
   
-5.  次の XML を使用すると、既存の XML を置換できます。  
+5. 次の XML を使用すると、既存の XML を置換できます。  
   
     [!code-xml[CreatingAnSDKUsingCpp#6](../../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
   
-6.  **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **NativeMathVSIX**プロジェクトを選び、**追加**、**新しい項目の**します。  
+6. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **NativeMathVSIX**プロジェクトを選び、**追加**、**新しい項目の**します。  
   
-7.  一覧で**Visual c# アイテム**、展開**データ**、し、 **XML ファイル**します。 **名前**ボックスで、指定`SDKManifest.xml`、選択し、 **OK**ボタン。  
+7. 一覧で**Visual c# アイテム**、展開**データ**、し、 **XML ファイル**します。 **名前**ボックスで、指定`SDKManifest.xml`、選択し、 **OK**ボタン。  
   
-8.  ファイルの内容を置き換えるには、この XML を使用します。  
+8. ファイルの内容を置き換えるには、この XML を使用します。  
   
      [!code-xml[CreatingAnSDKUsingCpp#5](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/sdkmanifest.xml#5)]  
   
@@ -120,7 +115,7 @@ ms.locfileid: "51773471"
   
     [!code-xml[CreatingAnSDKUsingCpp#7](../../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]  
   
-13. メニュー バーで、**ビュー**、**その他の Windows**、**プロパティ ウィンドウ**(キーボード: F4 キーを押します)。  
+13. メニュー バーで、**ビュー**、**その他の Windows**、**プロパティ ウィンドウ**(キーボード。F4 キーを押します)。  
   
 14. **ソリューション エクスプ ローラー**を選択、 **NativeMathWRT.winmd**ファイル。 **プロパティ**ウィンドウで、変更、**ビルド アクション**プロパティを**コンテンツ**、し、変更、 **VSIX に含める**プロパティ**True**します。  
   
@@ -146,7 +141,7 @@ ms.locfileid: "51773471"
   
 19. 選択、**インストール**ボタンをクリックし、インストールを完了するまで待機し、Visual Studio を再起動します。  
   
-##  <a name="createSample"></a> クラス ライブラリを使用するサンプル アプリを作成するには  
+## <a name="createSample"></a> クラス ライブラリを使用するサンプル アプリを作成するには  
   
 1. メニュー バーで、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
   
@@ -185,6 +180,5 @@ ms.locfileid: "51773471"
 ## <a name="next-steps"></a>次の手順  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: c# または Visual Basic を使用して、SDK の作成](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+ [チュートリアル: C# または Visual Basic を使用して SDK を作成します。](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [ソフトウェア開発キットを作成する](../extensibility/creating-a-software-development-kit.md)
-

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 451afe75d71969b4a4a866fc9a7cda1fd85562d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4f5de2926cb38f570defa95463489523c694132
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079072"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>方法: 有効にして、マネージ コードの自動コード分析を無効にします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,10 +23,10 @@ ms.locfileid: "58972394"
   
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>自動コード分析を有効または無効にするには  
   
-1.  **ソリューション エクスプ ローラー**プロジェクトを右クリックし、クリックして**プロパティ**します。  
+1. **ソリューション エクスプ ローラー**プロジェクトを右クリックし、クリックして**プロパティ**します。  
   
-2.  プロジェクトのプロパティ ダイアログ ボックスで、次のようにクリックします。**コード分析**します。  
+2. プロジェクトのプロパティ ダイアログ ボックスで、次のようにクリックします。**コード分析**します。  
   
-3.  **プラットフォーム** の **構成およびターゲット プラットフォーム** でビルドの種類を指定します。  
+3. **プラットフォーム** の **構成およびターゲット プラットフォーム** でビルドの種類を指定します。  
   
-4.  有効または自動コード分析を無効にするには、オンまたはオフ、**を有効にするビルドに対するコード分析 (CODE_ANALYSIS 定数を定義します)** チェック ボックスをオンします。
+4. 有効または自動コード分析を無効にするには、オンまたはオフ、**を有効にするビルドに対するコード分析 (CODE_ANALYSIS 定数を定義します)** チェック ボックスをオンします。

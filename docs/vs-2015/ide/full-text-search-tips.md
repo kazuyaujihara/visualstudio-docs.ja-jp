@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a015aeff983979bbb8f6ddedc245c74d3fb5f77b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 686bf7962e164e718f007a44c83febfc8f49418d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584684"
 ---
 # <a name="full-text-search-tips"></a>フルテキスト検索のヒント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "54791709"
   
 > [!IMPORTANT]
 > 1. 句を検索することはできません。 検索文字列に複数の単語を指定した場合、返されるトピックには、指定したすべての単語が含まれますが、必ずしも指定した句とは厳密に同じにはなりません。  
->    2.  検索句の単語間の関係を指定するには、論理演算子を使用します。 AND、OR、NOT、NEAR のような論理演算子を追加し、検索をさらに絞り込むことができます。 たとえば、"declaring NEAR union" と検索すると、"declaring" という単語と "union" という単語がそれほど離れていないトピックが検索されます。 詳細については、「[検索式の論理演算子](../ide/logical-operators-in-search-expressions.md)」を参照してください。  
+>    2. 検索句の単語間の関係を指定するには、論理演算子を使用します。 AND、OR、NOT、NEAR のような論理演算子を追加し、検索をさらに絞り込むことができます。 たとえば、"declaring NEAR union" と検索すると、"declaring" という単語と "union" という単語がそれほど離れていないトピックが検索されます。 詳細については、「[検索式の論理演算子](../ide/logical-operators-in-search-expressions.md)」を参照してください。  
   
 ### <a name="filters"></a>フィルター  
  高度な検索演算子を利用し、検索結果をさらに制限できます。 ヘルプには、フルテキスト検索の結果を絞り込むためのカテゴリが 3 つあります。タイトル、コード、キーワードです。 詳細については、「[検索式の高度な検索演算子](../ide/advanced-search-operators-in-search-expressions.md)」を参照してください。  
@@ -51,11 +51,11 @@ ms.locfileid: "54791709"
 ### <a name="ranking-of-search-results"></a>検索結果のランク  
  検索アルゴリズムは特定の条件を適用し、結果一覧で検索結果を上または下のランクにします。 一般的には、次のようなランク付けが行われます。  
   
-1.  タイトルに検索語を含むコンテンツは、それを含まないコンテンツより上のランクになります。  
+1. タイトルに検索語を含むコンテンツは、それを含まないコンテンツより上のランクになります。  
   
-2.  検索語が近接しているコンテンツは、そうではないコンテンツより上のランクになります。  
+2. 検索語が近接しているコンテンツは、そうではないコンテンツより上のランクになります。  
   
-3.  検索語の密度が高いコンテンツは、密度が低いコンテンツより上のランクになります。  
+3. 検索語の密度が高いコンテンツは、密度が低いコンテンツより上のランクになります。  
   
 ### <a name="words-ignored-in-searches-stop-words"></a>検索で無視される言葉 (ストップ ワード)  
  よく使われる言葉や数字 (ストップ ワードと呼ばれることもあります) は、フルテキスト検索で自動的に無視されます。 たとえば、"pass through" という句を検索すると、"pass" という単語を含むトピックが表示され、"through" は無視されます。  

@@ -10,22 +10,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c38f28ae99c2fb70f811b9d6b85e3c771512b17
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2be56d37ddcd1047e776df2652c7e874e260a806
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417108"
 ---
 # <a name="how-to-provide-a-service"></a>方法: サービスを提供します。
 VSPackage では、その他の Vspackage を使用できるサービスを提供できます。 サービスを提供するには、VSPackage は Visual Studio でサービスを登録して、サービスの追加する必要があります。
 
  <xref:Microsoft.VisualStudio.Shell.Package>両方を実装するクラス<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>と<xref:System.ComponentModel.Design.IServiceContainer>します。 <xref:System.ComponentModel.Design.IServiceContainer> オンデマンドでサービスを提供するコールバック メソッドが含まれています。
 
- サービスの詳細については、[essentials サービス](../extensibility/internals/service-essentials.md)を参照してください。
+ サービスの詳細については、次を参照してください。 [essentials サービス](../extensibility/internals/service-essentials.md)します。
 
 > [!NOTE]
->  VSPackage は、アンロードしようとしていますが、Visual Studio は、VSPackage が提供するサービスのすべての要求が配信されたまでを待機します。 これらのサービスに対する新しい要求は許可されません。 明示的に呼び出す必要がありますいない、<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>をアンロードするときに、サービスを取り消すメソッド。
+> VSPackage は、アンロードしようとしていますが、Visual Studio は、VSPackage が提供するサービスのすべての要求が配信されたまでを待機します。 これらのサービスに対する新しい要求は許可されません。 明示的に呼び出す必要がありますいない、<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>をアンロードするときに、サービスを取り消すメソッド。
 
 ## <a name="implement-a-service"></a>サービスを実装します。
 
@@ -76,7 +76,7 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
 
 ### <a name="register-a-service"></a>サービスを登録します。
 
-1.  サービスを登録するには、追加、<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>サービスを提供する VSPackage にします。 次に例を示します。
+1. サービスを登録するには、追加、<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>サービスを提供する VSPackage にします。 次に例を示します。
 
     ```csharp
     [ProvideService(typeof(SMyService))]
@@ -89,11 +89,11 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
      この属性を登録`SMyService`Visual Studio を使用します。
 
     > [!NOTE]
-    >  同じ名前の別のサービスを置換するサービスを登録するには、使用、<xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>します。 注サービスの 1 つだけそのオーバーライドを許可します。
+    > 同じ名前の別のサービスを置換するサービスを登録するには、使用、<xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>します。 注サービスの 1 つだけそのオーバーライドを許可します。
 
 ### <a name="add-a-service"></a>サービスを追加します。
 
-1.  VSPackage の初期化子では、サービスを追加し、サービスを作成するコールバック メソッドを追加します。 に対する変更をここでは、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。
+1. VSPackage の初期化子では、サービスを追加し、サービスを作成するコールバック メソッドを追加します。 に対する変更をここでは、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。
 
     ```csharp
     protected override void Initialize()
@@ -105,7 +105,7 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
     }
     ```
 
-2.  作成し、サービスを返す、または作成できない場合は null にする必要がありますコールバック メソッドを実装します。
+2. 作成し、サービスを返す、または作成できない場合は null にする必要がありますコールバック メソッドを実装します。
 
     ```csharp
     private object CreateService(IServiceContainer container, Type serviceType)
@@ -117,9 +117,9 @@ VSPackage では、その他の Vspackage を使用できるサービスを提�
     ```
 
     > [!NOTE]
-    >  Visual Studio では、サービスを提供する要求を拒否できます。 そうなった場合、別の VSPackage に、サービスが既に用意されています。
+    > Visual Studio では、サービスを提供する要求を拒否できます。 そうなった場合、別の VSPackage に、サービスが既に用意されています。
 
-3.  これで、サービスを取得し、そのメソッドを使用できます。 サービスを使用して、初期化子で次の例を示していますが、サービスを使用する任意の場所サービスを取得することができます。
+3. これで、サービスを取得し、そのメソッドを使用できます。 サービスを使用して、初期化子で次の例を示していますが、サービスを使用する任意の場所サービスを取得することができます。
 
     ```csharp
     protected override void Initialize()

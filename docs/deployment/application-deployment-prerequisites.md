@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dfc0bccd0b5b8ae55f5e4df6aec1a85254e2220
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 6a4bf5545deecccb647b5113c4335539c6acb488
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408585"
 ---
 # <a name="application-deployment-prerequisites"></a>アプリケーション配置の必要条件
 
@@ -45,10 +45,10 @@ ms.locfileid: "56600489"
 
 - アセンブリ マニフェストにアセンブリ依存関係の宣言で指定されたグローバル アセンブリ キャッシュ (GAC) にプレインストールする必要がありますすべてのアセンブリの最小バージョン。
 
-  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不足している前提条件を検出できるし、ブートス トラップを使用して、前提条件をインストールすることができます。 詳細については、次を参照してください。[方法: ClickOnce アプリケーションと共に必須コンポーネントをインストール](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)します。
+  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不足している前提条件を検出できるし、ブートス トラップを使用して、前提条件をインストールすることができます。 詳細については、「[方法 :ClickOnce アプリケーションと共に必須コンポーネントをインストールする](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)」を参照してください。
 
 > [!NOTE]
->  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] や *MageUI.exe* などのツールによって生成されたマニフェスト内の値を変更するには、アプリケーション マニフェストをテキスト エディターで編集した後に、アプリケーション マニフェストと配置マニフェストの両方に再署名する必要があります。 詳細については、「[方法: アプリケーション マニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)」を参照してください。
+> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] や *MageUI.exe* などのツールによって生成されたマニフェスト内の値を変更するには、アプリケーション マニフェストをテキスト エディターで編集した後に、アプリケーション マニフェストと配置マニフェストの両方に再署名する必要があります。 詳細については、「[方法 :アプリケーション マニフェストと配置マニフェストの再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)」を参照してください。
 
  Visual Studio と ClickOnce を使用してアプリケーションを配置する場合、既定で選択されるブートストラップ パッケージは、ソリューション内の .NET Framework のバージョンによって異なります。 ただし、対象の .NET Framework のバージョンを変更する場合は、**[必須コンポーネント]** ダイアログ ボックスのオプションを手動で更新する必要があります。
 
@@ -71,14 +71,13 @@ ms.locfileid: "56600489"
 
  ブートス トラップ オプションを変更する場合は、未署名のブートス トラップの変更し、ブートス トラップ ファイルを後でサインインする必要があります。
 
-
 | コマンド ライン引数 | 説明 |
 | - | - |
-| **-?、-h、-help** | [ヘルプ] ダイアログ ボックスを表示します。 |
-| **-url、-componentsurl** | このセットアップ用に保存されている URL とコンポーネントの URL を表示します。 |
+| **-?, -h, -help** | [ヘルプ] ダイアログ ボックスを表示します。 |
+| **-url, -componentsurl** | このセットアップ用に保存されている URL とコンポーネントの URL を表示します。 |
 | **-url=** `location` | *Setup.exe* が [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを検索する URL を設定します。 |
 | **-componentsurl=** `location` | *Setup.exe* が [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] などの依存関係を検索する URL を設定します。 |
-| **-homesite=** `true` **&#124;** `false` | ときに`true`、仕入先のサイトで適切な場所からの依存関係をダウンロードします。 この設定をオーバーライド、 **- 用**設定します。 ときに`false`で指定された URL から依存関係がダウンロード **- 用**します。 |
+| **-homesite=** `true` **&#124;** `false` | `true`の場合、ベンダーサイトの適切な場所から依存関係がダウンロードされます。 この設定をオーバーライド、 **- 用**設定します。 `false` の場合は、**-componentsurl** で指定された URL から依存関係がダウンロードされます。 |
 
 ## <a name="operating-system-support"></a>オペレーティング システムのサポート
  Visual Studio ブートス トラップは、低いメンテナンス サーバー環境を提供する機能が制限された Windows Server 2008 の Server Core または Windows Server 2008 R2 Server Core でサポートされていません。 たとえば、Server Core インストール オプションは、完全な .NET Framework に依存する Visual Studio の機能を実行することはできませんが、.NET Framework 3.5 Server Core プロファイルのみをサポートします。

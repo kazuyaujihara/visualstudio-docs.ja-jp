@@ -8,12 +8,12 @@ ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f07cb45d6b77fc554475558fddba34792c0d8a55
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 94c8335b8d723ef20c04cfffe6b3788d71ecaa4f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431850"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>ツール ウィンドウでの拡張機能の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ ms.locfileid: "58974170"
   
 ### <a name="creating-a-tool-window"></a>ツール ウィンドウの作成  
   
-1.  という名前の VSIX プロジェクトを作成する**最初**します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#/機能拡張**します。  
+1. という名前の VSIX プロジェクトを作成する**最初**します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#/機能拡張**します。  
   
-2.  という名前のツール ウィンドウの項目テンプレートを追加、プロジェクトが開いたら、**最初**します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#/機能拡張**選択と**カスタム ツール ウィンドウ**します。 **名前**ウィンドウの下部にあるフィールドに、ツール ウィンドウのファイル名を変更して**FirstWindow.cs**します。  
+2. という名前のツール ウィンドウの項目テンプレートを追加、プロジェクトが開いたら、**最初**します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#/機能拡張**選択と**カスタム ツール ウィンドウ**します。 **名前**ウィンドウの下部にあるフィールドに、ツール ウィンドウのファイル名を変更して**FirstWindow.cs**します。  
   
-3.  プロジェクトをビルドし、デバッグを開始します。  
+3. プロジェクトをビルドし、デバッグを開始します。  
   
      Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、次を参照してください。 [、実験用インスタンス](../extensibility/the-experimental-instance.md)します。  
   
-4.  実験用のインスタンスに移動**ビュー/その他の Windows**します。  
+4. 実験用のインスタンスに移動**ビュー/その他の Windows**します。  
   
      メニュー項目を表示する必要があります**最初**します。 クリックします。  
   

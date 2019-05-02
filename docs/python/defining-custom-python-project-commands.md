@@ -3,19 +3,19 @@ title: Python プロジェクトのカスタム メニュー コマンドを定�
 description: プロジェクトやターゲット ファイルを編集することで、Visual Studio で Python プロジェクト コンテキスト メニューにカスタム コマンドを追加し、実行可能プログラム、スクリプト、モジュール、インライン コード スニペット、pip を呼び出すことができます。
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d183041732b5170da4a7e8832346a93dec32451
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957705"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Python プロジェクトのカスタム コマンドを定義する
 
@@ -144,7 +144,7 @@ Visual Studio の特定の Python プロジェクト テンプレートでは、
 | 属性 | 必須 | 説明 |
 | --- | --- | --- |
 | TargetType | はい | 含まれる Target 属性と、Arguments 属性でのその使い方を指定します。<ul><li>**executable**:Target で指定されている実行可能ファイルを実行します。コマンド ラインで直接入力された場合と同じように、Arguments の値を追加します。 値には、引数なしのプログラム名のみが含まれる必要があります。</li><li>**script**:Target のファイル名とそれに続く Arguments の値で、*python.exe* を実行します。</li><li>**module**:`python -m` の後に Target のモジュール名と Arguments の値を指定して実行します。</li><li>**code**:Target に含まれるインライン コードを実行します。 Arguments の値は無視されます。</li><li>**pip**:Target のコマンドと Arguments の値で `pip` を実行します。ただし、ExecuteIn は "output" に設定され、pip は `install` コマンドを想定し、Target をパッケージ名として使います。</li></ul> |
-| ターゲット | はい | TargetType に応じて、使うファイル名、モジュール名、コード、または pip コマンドです。 |
+| Target | はい | TargetType に応じて、使うファイル名、モジュール名、コード、または pip コマンドです。 |
 | 引数 | Optional | ターゲットに渡す引数の文字列を指定します (存在する場合)。 TargetType が `script` の場合は、引数は *python.exe* ではなく Python プログラムに渡されることに注意してください。 TargetType が `code` のときは無視されます。 |
 | ExecuteIn | はい | コマンドを実行する環境を指定します。<ul><li>**console**:(既定値) Target と引数を、コマンド ラインで直接入力された場合と同じように実行します。 Target の実行中はコマンド ウィンドウが表示された後、自動的に閉じられます。</li><li>**consolepause**:console と同じですが、キー押下を待ってからウィンドウを閉じます。</li><li>**output**:Target を実行し、Visual Studio の**出力**ウィンドウに結果を表示します。 TargetType が "pip" の場合、Visual Studio は Target をパッケージ名として使い、Arguments を付加します。</li><li>**repl**:Target を [Python Interactive ウィンドウ](python-interactive-repl-in-visual-studio.md)で実行します。ウィンドウのタイトルには、省略可能な表示名が使われます。</li><li>**none**: 動作は console と同じです。</li></ul>|
 | WorkingDirectory | Optional | コマンドを実行するフォルダーです。 |

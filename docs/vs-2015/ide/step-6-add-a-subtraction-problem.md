@@ -9,29 +9,29 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 500836281c1dba10bfdfe61b2442d30fb985fe38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e846bc8dc8d3087c58d58ee91752abc713c5f66e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796625"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064221"
 ---
-# <a name="step-6-add-a-subtraction-problem"></a>手順 6: 減算問題の追加
+# <a name="step-6-add-a-subtraction-problem"></a>手順 6: 減算問題を追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルの第 6 部では、減算問題を追加し、次のタスクを実行する方法を説明します。  
   
--   減算の値を格納します。  
+- 減算の値を格納します。  
   
--   問題の乱数を生成します (答えが 0 ～ 100 になるようにします)。  
+- 問題の乱数を生成します (答えが 0 ～ 100 になるようにします)。  
   
--   解答を確認するメソッドを更新して、新しい減算問題についても確認するようにします。  
+- 解答を確認するメソッドを更新して、新しい減算問題についても確認するようにします。  
   
--   タイマーの Tick イベント ハンドラーを、残り時間がなくなったら正しい答えを表示するように更新します。  
+- タイマーの Tick イベント ハンドラーを、残り時間がなくなったら正しい答えを表示するように更新します。  
   
 ### <a name="to-add-a-subtraction-problem"></a>減算問題を追加するには  
   
-1.  減算問題の 2 つの整数変数をフォームの加算問題の整数変数とタイマーの間に追加します。 コードは次のようになります。  
+1. 減算問題の 2 つの整数変数をフォームの加算問題の整数変数とタイマーの間に追加します。 コードは次のようになります。  
   
      [!code-csharp[VbExpressTutorial3Step5_6#12](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#12)]
      [!code-vb[VbExpressTutorial3Step5_6#12](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#12)]  
@@ -40,7 +40,7 @@ ms.locfileid: "54796625"
   
      次に、`StartTheQuiz()` メソッドを変更して減算問題に乱数値を提供します。  
   
-2.  "Fill in the subtraction problem" というコメントの後に次のコードを追加します。  
+2. "Fill in the subtraction problem" というコメントの後に次のコードを追加します。  
   
      [!code-csharp[VbExpressTutorial3Step5_6#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#13)]
      [!code-vb[VbExpressTutorial3Step5_6#13](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#13)]  
@@ -62,19 +62,19 @@ IntelliSense 内での Next() メソッドのオーバーライド
   
      この場合、最小値と最大値を指定できるため、最後のオーバーロードを選択する必要があります。  
   
-3.  `CheckTheAnswer()` メソッドを、減算の答えが正しいかどうかを確認するように変更します。  
+3. `CheckTheAnswer()` メソッドを、減算の答えが正しいかどうかを確認するように変更します。  
   
      [!code-csharp[VbExpressTutorial3Step5_6#14](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#14)]
      [!code-vb[VbExpressTutorial3Step5_6#14](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#14)]  
   
      Visual C# では、`&&` は `logical and` 演算子です。 Visual Basic でこれに相当する演算子は `AndAlso` です。 これらの演算子は、"addend1 と addend2 の合計が sum NumericUpDown の値と等しい場合、かつ minuend から subtrahend を引いた値が difference NumericUpDown の値と等しい場合" ということを示しています。 `CheckTheAnswer()` メソッドは、加算問題と減算問題の両方に正解した場合にのみ `true` を返します。  
   
-4.  タイマーの Tick イベント ハンドラーの最後の部分を次のコードで置き換えて、残り時間がなくなったら正しい解答を表示するようにします。  
+4. タイマーの Tick イベント ハンドラーの最後の部分を次のコードで置き換えて、残り時間がなくなったら正しい解答を表示するようにします。  
   
      [!code-csharp[VbExpressTutorial3Step5_6#22](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#22)]
      [!code-vb[VbExpressTutorial3Step5_6#22](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#22)]  
   
-5.  コードを保存し、実行します。  
+5. コードを保存し、実行します。  
   
      プログラムには、次の図に示すように減算問題が含まれます。  
   
@@ -83,6 +83,6 @@ IntelliSense 内での Next() メソッドのオーバーライド
   
 ### <a name="to-continue-or-review"></a>続行または確認するには  
   
--   チュートリアルの次の手順に進むには、「[手順 7: 乗算問題と除算問題の追加](../ide/step-7-add-multiplication-and-division-problems.md)」を参照してください。  
+- チュートリアルの次の手順に進むには、「[手順 7:乗算と除算問題の追加](../ide/step-7-add-multiplication-and-division-problems.md)します。  
   
--   チュートリアルの前の手順に戻るには、「[手順 5: NumericUpDown コントロールの Enter イベント ハンドラーの追加](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「[手順 5:追加 NumericUpDown コントロールの Enter イベント ハンドラー](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)します。

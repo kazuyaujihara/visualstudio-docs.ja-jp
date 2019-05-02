@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1eb503e9f5a9251cb9a348d29c7cd9636389a080
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 755cce18afcad3fde621fb5a960cc780906afe51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385991"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124:脆弱性のある finally 句を外側の try でラップします
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58975870"
  このルールでは検索`try` / `finally`バージョン 1.0 および 1.1 を対象とするコードのブロック、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]呼び出し履歴に存在する悪意のある例外フィルターを受ける可能性があります。 偽装などの機密情報の操作が、try ブロックで発生して、例外がスローされた、フィルターが実行する前に、`finally`ブロックします。 権限借用の使用例、フィルターが権限を借用したユーザーとして実行されていることを意味します。 フィルターは、現在、Visual Basic でのみ実装できます。
 
 > [!WARNING]
->  **注**2.0 以降のバージョンでは、 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]、ランタイムが自動的に保護を`try` / `catch` /  `finally`リセットが発生した場合、悪意のある例外フィルターからブロックメソッド内で直接には、例外ブロックが含まれています。
+> **注**2.0 以降のバージョンでは、 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]、ランタイムが自動的に保護を`try` / `catch` /  `finally`リセットが発生した場合、悪意のある例外フィルターからブロックメソッド内で直接には、例外ブロックが含まれています。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  配置、ラップされていない`try` / `finally` try ブロックの外側でします。 次の 2 つ目の例を参照してください。 これにより、`finally`フィルター コードの前に実行します。

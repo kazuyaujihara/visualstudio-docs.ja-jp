@@ -1,14 +1,9 @@
 ---
 title: Spy++ リファレンス |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 helpviewer_keywords:
 - reference, Spy++
 - Spy++ reference
@@ -16,13 +11,13 @@ ms.assetid: 2cf41bc9-55f3-4bb6-b28d-08c75215debd
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ed7aea0617db31c6edec9a739d7bae66d8fbe43f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c3402eefb480efe2ec1d82b9f689f94235c2934a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817595"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975142"
 ---
 # <a name="spy-reference"></a>Spy++ リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51817595"
  [メニュー コマンド](../debugger/menu-commands.md)  
  各 spy++ メニューで使用できるコマンドについて説明します。  
   
- [フォント ダイアログ ボックス](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
+ [[フォント]](../debugger/font-dialog-box-microsoft-spy-increment-help.md) ダイアログ ボックス  
  Spy++ ビュー ウィンドウで使用される文字のフォントを構成するために使用します。  
   
  [Spy++ ビュー用の検索ツール](../debugger/search-tools-for-spy-increment-views.md)  
@@ -63,6 +58,3 @@ ms.locfileid: "51817595"
   
  [Spy++ ビュー](../debugger/spy-increment-views.md)  
  Windows、メッセージ、プロセス、およびスレッドの spy++ ツリー ビューについて説明します。
-
-
-

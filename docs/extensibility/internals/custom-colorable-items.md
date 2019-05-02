@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95ebf093b8ed761f39cc3cac290a99708b7f417f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 35a3b7a82431354345c7a7b583b35891657350f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415182"
 ---
 # <a name="custom-colorable-items"></a>カスタムの配色可能な項目
 言語サービスの一部としてカスタムの配色可能な項目を実装することでの色分け、キーワードやコメントなどの種類の一覧をオーバーライドできます。
@@ -28,11 +28,11 @@ ms.locfileid: "56641534"
  IDE の配色可能な項目のユーザー オーバーライドをによって処理されるため、**フォントおよび色** ダイアログ ボックスでのみ各カスタム装飾が可能な項目を名前を指定する必要があります。 この名前に表示されます、**表示項目**一覧。 装飾が可能な項目は、アルファベット順に表示されます。 言語サービスのカスタムの配色可能な項目をグループ化することができますを開始する各名、言語の名前、たとえば**NewLanguage - コメント**と**NewLanguage - キーワード**します。
 
 > [!CAUTION]
->  既存の装飾が可能な項目名の競合を回避するために装飾が可能な項目名には、言語の名前を含める必要があります。 開発中に、装飾が可能な項目の 1 つの名前を変更する場合は、初めてアクセスされた装飾が可能な項目が作成されたキャッシュをリセットする必要があります。 実験的なキャッシュをリセットすることができます、 **CreateExpInstance**ツールで、通常は、ディレクトリで、Visual Studio SDK と共にインストールされます。
+> 既存の装飾が可能な項目名の競合を回避するために装飾が可能な項目名には、言語の名前を含める必要があります。 開発中に、装飾が可能な項目の 1 つの名前を変更する場合は、初めてアクセスされた装飾が可能な項目が作成されたキャッシュをリセットする必要があります。 実験的なキャッシュをリセットすることができます、 **CreateExpInstance**ツールで、通常は、ディレクトリで、Visual Studio SDK と共にインストールされます。
 >
->  *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+> *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >
->  キャッシュをリセットするには入力**CreateExpInstance/Reset**します。 詳細については**CreateExpInstance**を参照してください[CreateExpInstance ユーティリティ](../../extensibility/internals/createexpinstance-utility.md)します。
+> キャッシュをリセットするには入力**CreateExpInstance/Reset**します。 詳細については**CreateExpInstance**を参照してください[CreateExpInstance ユーティリティ](../../extensibility/internals/createexpinstance-utility.md)します。
 
  装飾が可能な項目の一覧の最初の項目が参照されていることはありません。 最初の項目は、0 の装飾が可能な項目のインデックスに対応し、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]は常に既定のテキストの色とその項目の属性に提供します。 この参照されていない項目の処理の最も簡単な方法では、最初の項目として一覧内のプレース ホルダーの装飾が可能な項目を指定します。
 

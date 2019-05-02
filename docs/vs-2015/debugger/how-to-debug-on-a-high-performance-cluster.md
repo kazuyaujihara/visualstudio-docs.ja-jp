@@ -1,14 +1,9 @@
 ---
 title: '方法: 高パフォーマンス クラスター上のデバッグ |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,27 +11,27 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - cluster debugging
-- high-perfomance debugging
+- high-performance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 75f2a96df18137f04b8b7637940c70378842e23d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4bb7245e57dedf6f94ce7766fcfae24ac930f608
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117552"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>方法 : 高パフォーマンス クラスター上でデバッグする
+# <a name="how-to-debug-on-a-high-performance-cluster"></a>方法: 高パフォーマンス クラスター上でデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-高パフォーマンス クラスター上でのマルチプロセス プログラムのデバッグは、リモート コンピューター上での通常のプログラムのデバッグと似ています。 ただし、追加の考慮事項がいくつかあります。 一般的なリモート セットアップ要件は、[リモート デバッグ](../debugger/remote-debugging.md)を参照してください。  
+高パフォーマンス クラスター上でのマルチプロセス プログラムのデバッグは、リモート コンピューター上での通常のプログラムのデバッグと似ています。 ただし、追加の考慮事項がいくつかあります。 一般的なリモート セットアップ要件は、次を参照してください。[リモート デバッグ](../debugger/remote-debugging.md)します。  
   
  高パフォーマンス クラスター上でデバッグするときは、リモート デバッグに使用できる [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のデバッグ ウィンドウとデバッグ手法をすべて使用できます。 ただし、リモートでデバッグするため、外部のコンソール ウィンドウは使用できません。  
   
- **スレッド**ウィンドウと**プロセス**ウィンドウは並列アプリケーションのデバッグに特に便利です。 これらのウィンドウを使用する方法のヒントについては、[方法: [プロセス] ウィンドウを使用して](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)と[方法: [スレッド] ウィンドウを使用して](../debugger/how-to-use-the-threads-window.md)を参照してください。  
+ **[スレッド]** ウィンドウと **[プロセス]** ウィンドウは、並列アプリケーションをデバッグする際に特に役立ちます。 これらのウィンドウを使用する方法のヒントについては、次を参照してください。[方法。[プロセス] ウィンドウを使用して、](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)と[方法。[スレッド] ウィンドウを使用して、](../debugger/how-to-use-the-threads-window.md)します。  
   
  以下の手順では、高パフォーマンス クラスター上でのデバッグに特に役立つ手法を示します。  
   
@@ -44,31 +39,31 @@ ms.locfileid: "51747731"
   
 ### <a name="to-open-the-breakpoint-filter-dialog-box"></a>[ブレークポイントのフィルター] ダイアログ ボックスを開くには  
   
-1.  ソース ウィンドウでブレークポイント グリフを右クリックして、**逆アセンブリ**ウィンドウで、**呼び出し履歴**ウィンドウ、または**ブレークポイント**ウィンドウ。  
+1. ソース ウィンドウ、**[逆アセンブル]** ウィンドウ、**[呼び出し履歴]** ウィンドウ、または **[ブレークポイント]** ウィンドウでブレークポイント グリフを右クリックします。  
   
-2.  ショートカット メニューで、**フィルター**します。 このオプションは、レベル、またはサブメニューの下の上部に表示可能性があります**ブレークポイント**します。  
+2. ショートカット メニューの **[フィルター]** をクリックします。 このオプションは、最上位レベルまたは **[ブレークポイント]** のサブメニューとして表示されます。  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>特定のコンピューターにブレークポイントを設定するには  
   
-1.  コンピューター名を取得、**プロセス**ウィンドウ。  
+1. **[プロセス]** ウィンドウでコンピューター名を確認します。  
   
-2.  ブレークポイントを選択し、開く、**ブレークポイント フィルター**  ダイアログ ボックスのように、前の手順で説明されています。  
+2. ブレークポイントを選択し、前記の手順に従って **[ブレークポイントのフィルター]** ダイアログ ボックスを開きます。  
   
-3.  **ブレークポイント フィルター**ダイアログ ボックスで、種類。  
+3. **[ブレークポイントのフィルター]** ダイアログ ボックスに次の文字列を入力します。  
   
-     MachineName =*コンピューター名*  
+     MachineName =*yourmachinename*  
   
      より複雑なフィルターを作成する場合は、AND 演算子 (`&`)、OR 演算子 (`||`)、NOT 演算子 (`!`)、およびかっこを使って句を結合できます。  
   
-4.  **[OK]** をクリックします。  
+4. **[OK]** をクリックします。  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>特定のプロセスにブレークポイントを設定するには  
   
-1.  プロセス名を取得またはプロセス ID 番号を**プロセス**ウィンドウ。  
+1. **[プロセス]** ウィンドウで、プロセス名またはプロセス ID 番号を取得します。  
   
-2.  ブレークポイントを選択し、開く、**ブレークポイント フィルター**  ダイアログ ボックスの最初の手順のようにします。  
+2. ブレークポイントを選択し、最初の手順に従って **[ブレークポイントのフィルター]** ダイアログ ボックスを開きます。  
   
-3.  **ブレークポイント フィルター**ダイアログ ボックスで、種類。  
+3. **[ブレークポイントのフィルター]** ダイアログ ボックスに次の文字列を入力します。  
   
      `ProcessName =`  *yourprocessname*  
   
@@ -78,15 +73,15 @@ ms.locfileid: "51747731"
   
      より複雑なフィルターを作成する場合は、AND 演算子 (`&`)、OR 演算子 (`||`)、NOT 演算子 (`!`)、およびかっこを使って句を結合できます。  
   
-4.  **[OK]** をクリックします。  
+4. **[OK]** をクリックします。  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>特定のスレッドにブレークポイントを設定するには  
   
-1.  スレッド名を取得またはスレッド ID 番号を**スレッド**ウィンドウ。  
+1. **[スレッド]** ウィンドウで、スレッド名またはスレッド ID 番号を取得します。  
   
-2.  ブレークポイントを選択し、開く、**ブレークポイントのフィルター**  ダイアログ ボックスの最初の手順で説明します。  
+2. ブレークポイントを選択し、最初の手順に従って **[ブレークポイントのフィルター]** ダイアログ ボックスを開きます。  
   
-3.  **ブレークポイント フィルター**ダイアログ ボックスで、種類。  
+3. **[ブレークポイントのフィルター]** ダイアログ ボックスに次の文字列を入力します。  
   
      `ThreadName =` *yourthreadname*  
   
@@ -96,7 +91,7 @@ ms.locfileid: "51747731"
   
      より複雑なフィルターを作成する場合は、AND 演算子 (`&`)、OR 演算子 (`||`)、NOT 演算子 (`!`)、およびかっこを使って句を結合できます。  
   
-4.  **[OK]** をクリックします。  
+4. **[OK]** をクリックします。  
   
 ## <a name="example"></a>例  
  次の例は、`marvin` というコンピューターと `fourier1` というスレッドを対象とするブレークポイントのフィルターを作成する方法を示しています。  
@@ -106,12 +101,9 @@ ms.locfileid: "51747731"
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [マルチ スレッド アプリケーションをデバッグします。](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [リモート デバッグ](../debugger/remote-debugging.md)   
- [方法: [プロセス] ウィンドウの使用](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
- [方法: [スレッド] ウィンドウの使用](../debugger/how-to-use-the-threads-window.md)   
- [スレッドとプロセス](http://msdn.microsoft.com/en-us/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [方法: [プロセス] ウィンドウを使用します。](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [方法: [スレッド] ウィンドウを使用します。](../debugger/how-to-use-the-threads-window.md)   
+ [スレッドとプロセス](http://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [ブレークポイントの使用](../debugger/using-breakpoints.md)
-
-
-

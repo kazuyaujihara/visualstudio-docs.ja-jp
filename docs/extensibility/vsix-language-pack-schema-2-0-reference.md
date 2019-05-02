@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - dagriffe
 ms.openlocfilehash: acea36031b98693e1d618986720d9932f76a0a63
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953102"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 言語パック スキーマ 2.0 リファレンス
 
@@ -32,7 +32,7 @@ VSIX 言語パックのスキーマは、VSIX パッケージのローカライ�
 
 内で、`<PackageLanguagePackManifest>`要素の次の要素が存在する必要があります。
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
 |`<Metadata>`| ローカライズされたパッケージのすべてのメタデータのコンテナー要素
 
@@ -40,7 +40,7 @@ VSIX 言語パックのスキーマは、VSIX パッケージのローカライ�
 
 内で、`<Metadata>`要素は、次の要素があることができます。
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
 |`<DisplayName>`|拡張機能のインストールのローカライズされた名前|
 |`<Description>`|ローカライズされた拡張機能のインストールの説明|
@@ -67,7 +67,7 @@ VSIX 言語パックのスキーマは、VSIX パッケージのローカライ�
 
 ## <a name="see-also"></a>関連項目
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
 |[VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)|VSIX パッケージのローカライズされたインストールのサポートを提供する方法を示しています。|
 |[VSIX 拡張機能スキーマ 2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX マニフェストの内容を記述する、 *.vsix*展開ファイル。 配置ファイルを使用して Visual Studio 拡張機能をインストールすることができます、**拡張機能と更新** ダイアログ ボックス。|

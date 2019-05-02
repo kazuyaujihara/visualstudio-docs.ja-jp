@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3434e9baaeb483e60087aec1b8536108c8af4471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415993"
 ---
 # <a name="windows-script-engines"></a>Windows スクリプト エンジン
 Microsoft Windows スクリプト エンジンを実装するには、次のインターフェイスをサポートする OLE COM オブジェクトを作成します。  
@@ -31,7 +31,7 @@ Microsoft Windows スクリプト エンジンを実装するには、次のイ�
 |IPersist*|永続性のサポートを提供します。 [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) が実装されていない場合は、次のインターフェイスの 1 つ以上の実装が必要になります。<br /><br /> IPersistStorage: OBJECT タグの DATA={url} 属性のサポートを提供します。<br /><br /> IPersistStreamInit: OBJECT タグの DATA="string-encoded byte stream" 属性および `IPersistStorage` と同じサポートを提供します。<br /><br /> IPersistPropertyBag: OBJECT タグの PARAM 属性のサポートを提供します。|  
   
 > [!NOTE]
->  `IPersist*` でスクリプト状態を保存または復元する際にスクリプト エンジンが呼び出されなくなる可能性があります。 代わりに、[IActiveScriptParse](../winscript/reference/iactivescriptparse.md) が使用されます。その場合、空のスクリプトを作成するために [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) が呼び出され、[IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) でスクリプトレットがイベントに追加されて接続され、[IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) で一般的なコードが追加されます。 それでも、スクリプト エンジンは 1 つ以上の `IPersist*` インターフェイス (可能であれば `IPersistStreamInit`) を完全に実装する必要があります。他のホスト アプリケーションがそれらを利用しようとする場合があるためです。  
+> `IPersist*` でスクリプト状態を保存または復元する際にスクリプト エンジンが呼び出されなくなる可能性があります。 代わりに、[IActiveScriptParse](../winscript/reference/iactivescriptparse.md) が使用されます。その場合、空のスクリプトを作成するために [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) が呼び出され、[IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) でスクリプトレットがイベントに追加されて接続され、[IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) で一般的なコードが追加されます。 それでも、スクリプト エンジンは 1 つ以上の `IPersist*` インターフェイス (可能であれば `IPersistStreamInit`) を完全に実装する必要があります。他のホスト アプリケーションがそれらを利用しようとする場合があるためです。  
   
  次のセクションでは、Windows スクリプト エンジンの実装について、さらに詳しく説明します。  
   

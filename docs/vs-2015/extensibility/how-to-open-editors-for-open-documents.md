@@ -10,12 +10,12 @@ ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1a8238ce632f8552b36ccb259af683636732b469
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ae6e565e026ca49825a7b00a82e4e5c62a2f6c3c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092332"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>方法: 開いているドキュメントのエディターを開く
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,11 +48,11 @@ ms.locfileid: "58976343"
   
 #### <a name="to-open-a-standard-editor-for-an-open-file"></a>開いているファイルの標準のエディターを開く  
   
-1.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> を呼び出す。  
+1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> を呼び出す。  
   
      このメソッドが最初に、ドキュメントがまだ開いていない呼び出してを検証します<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>します。 ドキュメントが既に開いている場合、エディター ウィンドウが示されます。  
   
-2.  ドキュメントが開いていない場合、その後の手順を完了[方法。標準のエディターを開く](../extensibility/how-to-open-standard-editors.md)します。  
+2. ドキュメントが開いていない場合、その後の手順を完了[方法。標準のエディターを開く](../extensibility/how-to-open-standard-editors.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [開くと、プロジェクト項目の保存](../extensibility/internals/opening-and-saving-project-items.md)   

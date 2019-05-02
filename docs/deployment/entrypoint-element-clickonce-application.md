@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3002fa5c015d80304a9de5aaf3b7f7aa1d2d85f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 615a606dc4d04682a9d5a1a69c91b4d2cd67de15
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928611"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint&gt;要素 (ClickOnce アプリケーション)
 必要のあるアセンブリを識別するときに実行この[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]クライアント コンピューターでアプリケーションを実行します。
@@ -61,18 +61,17 @@ ms.locfileid: "56629041"
  `entryPoint` には、次の要素があります。
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
- 必須です。 ロール`assemblyIdentity`でその属性が定義されていると[ \<assemblyIdentity > 要素](../deployment/assemblyidentity-element-clickonce-application.md)します。
+ 必須。 ロール`assemblyIdentity`でその属性が定義されていると[ \<assemblyIdentity > 要素](../deployment/assemblyidentity-element-clickonce-application.md)します。
 
  `processorArchitecture`この要素の属性と`processorArchitecture`属性で定義されている、`assemblyIdentity`別の場所、アプリケーション マニフェストと一致しなければなりません。
 
 ## <a name="commandline"></a>CommandLine
- 必須です。 子である必要があります、`entryPoint`要素。 子要素が存在しないと、次の属性があります。
-
+ 必須。 子である必要があります、`entryPoint`要素。 子要素が存在しないと、次の属性があります。
 
 | 属性 | 説明 |
 |--------------| - |
-| `file` | 必須です。 スタートアップ アセンブリへの参照をローカル、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション。 この値は、スラッシュ (/) または円記号を含めることはできません (\\) パスの区切り記号。 |
-| `parameters` | 必須です。 エントリ ポイントで実行するアクションをについて説明します。 唯一の有効な値は`run`場合は、空の文字列は、指定した`run`と見なされます。 |
+| `file` | 必須。 スタートアップ アセンブリへの参照をローカル、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション。 この値は、スラッシュ (/) または円記号を含めることはできません (\\) パスの区切り記号。 |
+| `parameters` | 必須。 エントリ ポイントで実行するアクションをについて説明します。 唯一の有効な値は`run`場合は、空の文字列は、指定した`run`と見なされます。 |
 
 ## <a name="customhostrequired"></a>customHostRequired
  任意。 に含まれている場合は、この配置にカスタム ホストの内部で展開されるコンポーネントが含まれているを指定し、スタンドアロン アプリケーションではありません。
@@ -88,12 +87,12 @@ ms.locfileid: "56629041"
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />
 ```
 
- CustomUX 要素が含まれているアプリケーションは、カスタム インストーラーを提供する必要がありますを使用して、<xref:System.Deployment.Application.InPlaceHostingManager>を実行するクラスは、操作をインストールします。 この要素を持つアプリケーションは、そのマニフェストまたは setup.exe 前提条件となるブートス トラップをダブルクリックしてインストールできません。 カスタム インストーラーには、スタート メニュー エントリ、ショートカット、およびプログラム追加と削除のエントリを作成できます。 によって提供されたサブスクリプション識別子を格納する必要があります、カスタム インストーラーが追加または削除するプログラムのエントリを作成できない場合、<xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A>プロパティと呼び出すことによって後でアプリケーションをアンインストールするユーザーの有効化、<xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A>メソッド。 詳細については、次を参照してください。[チュートリアル: ClickOnce アプリケーションのカスタム インストーラーを作成する](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)します。
+ CustomUX 要素が含まれているアプリケーションは、カスタム インストーラーを提供する必要がありますを使用して、<xref:System.Deployment.Application.InPlaceHostingManager>を実行するクラスは、操作をインストールします。 この要素を持つアプリケーションは、そのマニフェストまたは setup.exe 前提条件となるブートス トラップをダブルクリックしてインストールできません。 カスタム インストーラーには、スタート メニュー エントリ、ショートカット、およびプログラム追加と削除のエントリを作成できます。 によって提供されたサブスクリプション識別子を格納する必要があります、カスタム インストーラーが追加または削除するプログラムのエントリを作成できない場合、<xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A>プロパティと呼び出すことによって後でアプリケーションをアンインストールするユーザーの有効化、<xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A>メソッド。 詳細については、「[チュートリアル:ClickOnce アプリケーションのカスタム インストーラーの作成](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)」を参照してください。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  この要素のアセンブリとエントリ ポイントを識別する、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション。
 
- 使用することはできません`commandLine`パラメーターを実行時に、アプリケーションに渡します。 クエリ文字列パラメーターにアクセスすることができます、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]からアプリケーションのデプロイを<xref:System.AppDomain>します。 詳細については、次を参照してください。[方法: オンライン ClickOnce アプリケーションでのクエリ文字列情報の取得](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)します。
+ 使用することはできません`commandLine`パラメーターを実行時に、アプリケーションに渡します。 クエリ文字列パラメーターにアクセスすることができます、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]からアプリケーションのデプロイを<xref:System.AppDomain>します。 詳細については、「[方法 :オンライン ClickOnce アプリケーションでクエリ文字列の情報を取得する](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)」を参照してください。
 
 ## <a name="example"></a>例
  次のコード例を示しています、`entryPoint`に対するアプリケーション マニフェスト内の要素を[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション。 このコード例が示されている例の一部、 [ClickOnce アプリケーション マニフェスト](../deployment/clickonce-application-manifest.md)トピック。

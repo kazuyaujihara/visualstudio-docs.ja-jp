@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 3775e3fc4f391ea075a939a877fdab23f1eec1d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983463"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>カスタム EditorConfig ファイルの作成と編集
 
 Visual Studio for Mac では、[EditorConfig](http://editorconfig.org/) ファイルをプロジェクトまたはソリューションに追加して、そのコードベースを使用するすべてのユーザーに一貫したコーディング スタイルを使用させることができます。 EditorConfig ファイルで宣言された設定は、Visual Studio for Mac テキスト エディターのグローバルな設定より優先されます。 プロジェクトまたはコードベース内で EditorConfig ファイルを使用すると、プロジェクトのコード記述スタイル、優先設定、警告を設定できます。 このファイルはコードベースの一部であるため、すべてのユーザーが使用している IDE またはコード エディターに関わらず、より容易にプロジェクトのコーディング方法に従うことができます。
 
-[EditorConfig](http://editorconfig.org/) ファイルは、Visual Studio 2017 など、さまざまな IDE やコード エディターでサポートされています。
+[EditorConfig](http://editorconfig.org/) ファイルは、Visual Studio など、さまざまな IDE やコード エディターでサポートされています。
 
 ## <a name="supported-settings"></a>サポートされる設定
 
@@ -53,7 +53,7 @@ EditorConfig は、C# の[コーディング規則](/visualstudio/ide/editorconf
 
     ![ソリューション パッドに表示されているソリューション項目](media/editorconfig-image1a.png)
 
-4. ファイルを編集します。 例:
+4. ファイルを編集します。 次に例を示します。
 
     ```EditorConfig
     # This file is the top-most EditorConfig file

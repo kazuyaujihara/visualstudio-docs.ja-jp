@@ -1,13 +1,14 @@
 ---
-title: Dotfuscator Community Edition (CE) をアップグレードする
-ms.date: 02/08/2017
+title: Dotfuscator Community をアップグレードする
+ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
-keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protection, community edition, 難読化, .NET, 無料, Visual Studio 2017, アップグレード, コマンド ライン
+keywords: Dotfuscator, Dotfuscator Community, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保護, Community Edition, 難読化, .NET, 無料, Visual Studio 2019, Visual Studio 2017, Visual Studio, アップグレード, コマンド ライン
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
 - Dotfuscator CE
+- Dotfuscator Community
 - Dotfuscator
 - obfuscation
 - protection
@@ -18,37 +19,36 @@ helpviewer_keywords:
 - registering Dotfuscator
 - Dotfuscator command line
 - Dotfuscator Professional
-description: Visual Studio 2017 に含まれる無料の Dotfuscator Community Edition をアップグレードする方法について説明します。
+description: Visual Studio に含まれている Dotfuscator Community の無料コピーをアップグレードする方法について説明します。
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8665fdb1cc527c85e3071f9f19362caf4e5bc544
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557243"
 ---
-# <a name="upgrade-dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE) をアップグレードする
+# <a name="upgrade-dotfuscator-community"></a>Dotfuscator Community をアップグレードする
 
-Dotfuscator Community Edition (Dotfuscator CE) には、Microsoft Visual Studio.を使用しているすべての開発者がすぐに利用できる多くのアプリケーション保護機能と強化機能がありますが、
+Dotfuscator Community には、Microsoft Visual Studio を使用しているすべての開発者がすぐに利用できる多くのアプリケーション保護機能と強化機能がありますが、
 Dotfuscator のバージョンをアップグレードすると、さらに多くの機能を利用できるようになります。
 
-## <a name="registering-dotfuscator-ce"></a>Dotfuscator CE の登録
+## <a name="registering-dotfuscator-community"></a>Dotfuscator Community の登録
 
-Dotfuscator CE の登録ユーザーは、[コマンド ライン サポート][cli]などの追加機能にアクセスできます。コマンド ラインを使用すると、Dotfuscator CE を自動ビルド プロセスに簡単に統合できます。 また、登録することで、[難読化されたスタック トレースをデコードする][decode-obfuscated]ために使用される組み込みツールである Lucidator へのアクセスが許可されます。
+Dotfuscator Community の登録ユーザーは、[コマンド ライン サポート][cli]などの追加機能にアクセスできます。コマンド ラインを使用すると、Dotfuscator Community を自動ビルド プロセスに簡単に統合できます。 また、登録することで、[難読化されたスタック トレースをデコードする][decode-obfuscated]ために使用される組み込みツールへのアクセスが許可されます。
 
 登録は無料で、簡単な手順ですぐに実行できます。
-Dotfuscator CE を登録する方法については、[「Dotfuscator CE User Guide」(Dotfuscator CE ユーザー ガイド) の「Registering Dotfuscator CE」(Dotfuscator CE の登録) セクション][register-ce]を参照してください。
+Dotfuscator Community に登録するには、[Dotfuscator Community の完全なユーザー ガイドの手順][register-ce]を参照してください。
 
 ## <a name="dotfuscator-professional"></a>Dotfuscator Professional
 
-Dotfuscator Community Edition には基本的なレベルの保護機能である **_PreEmptive Protection - Dotfuscator_ が備わっています。一方、Professional Edition** では、難読化変換機能と保護機能が強化されています。 強化された変換と機能には、以下が含まれます。
+Dotfuscator Community では基本的なレベルの保護機能が提供され、***PreEmptive Protection - Dotfuscator Professional*** には、次のような強化された難読化変換機能と保護機能が含まれています。
 
 * *知的財産の保護*
   * Enhanced Overload Induction™、ランダムな識別子選択など、追加の名前変更オプション。
-  * 難読化されたスタック トレースをデコードするツール。
   * エンタープライズレベルの難読化変換へのアクセス ([自動コード逆コンパイルを阻止する目的の変換など][control-flow])。
   * [機密性の高い文字列を難読化][string-encryption]し、逆コンパイルされたコードの単純な検索不可能にする機能。
   * [所有権と配布文字列をアセンブリに慎重に埋め込み][watermarking]、不正なソフトウェア リークのソースを判断できる機能。
@@ -62,14 +62,14 @@ Dotfuscator Community Edition には基本的なレベルの保護機能であ�
 Dotfuscator Professional は業界標準の [.NET 難読化ツール][net-obfuscator]です。継続的なサポート、保守、製品の更新が必要な企業の開発者に適しています。
 また、Dotfuscator Professional は Visual Studio との統合が強化され、商業目的の使用についてライセンスが付与されます。
 
-Dotfuscator Professional の高度なアプリケーション保護機能の詳細については、PreEmptive Solutions の [Dotfuscator の概要][product-about]と、[Community Edition との比較][product-compare]に関するページを参照してください。
+Dotfuscator Professional の高度なアプリケーション保護機能の詳細については、PreEmptive Solutions の [Dotfuscator の概要][product-about]に関するページと、[Community Edition との比較][product-compare]に関するページを参照してください。
 [preemptive.com では、完全にサポートされている評価版を入手できます][eval]。
 
 ## <a name="see-also"></a>関連項目
 
-[Dotfuscator CE の完全なユーザー ガイドのこの記事][full]
+[Dotfuscator Community の完全なユーザー ガイドのこのトピック][full]
 
-<!-- Copyright © 2017 PreEmptive Solutions, LLC -->
+<!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 
 [control-flow]:  https://www.preemptive.com/products/dotfuscator/features#controlflow
 [string-encryption]:  https://www.preemptive.com/products/dotfuscator/features#string

@@ -1,25 +1,20 @@
 ---
 title: デバッグ履歴 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d43e48b67cdbfabcb38703469f8570f78336dcab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c7db175535e0eebdcf1974f0f85123959ba5a3ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794596"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58978056"
 ---
 # <a name="historical-debugging"></a>デバッグ履歴
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51794596"
  IntelliTrace とデバッグ履歴を使用すると、アプリケーション内を移動して状態を調べることができ (呼び出し履歴およびローカル変数)、ブレークポイントを設定し、デバッグを再実行し、テスト手順を繰り返す必要はありません。 これにより多くの時間を節約できます。実行に時間がかかるテスト シナリオの深い場所にバグがある場合は特に有効です。  
   
 ## <a name="how-do-i-start-using-historical-debugging"></a>デバッグ履歴の使用を始める方法  
- IntelliTrace は既定で有効になります。 決定する必要があるのは、調査対象のイベントと関数呼び出しだけです。 検索する対象の定義の詳細については、[IntelliTrace 機能](../debugger/intellitrace-features.md)を参照してください。 IntelliTrace によるデバッグのステップ バイ ステップ アカウントは、[チュートリアル: IntelliTrace を使用した](../debugger/walkthrough-using-intellitrace.md)を参照してください。  
+ IntelliTrace は既定で有効になります。 決定する必要があるのは、調査対象のイベントと関数呼び出しだけです。 調べる対象の定義について詳しくは、「[IntelliTrace の機能](../debugger/intellitrace-features.md)」をご覧ください。 IntelliTrace によるデバッグのステップ バイ ステップ アカウントは、次を参照してください。[チュートリアル。IntelliTrace を使用して](../debugger/walkthrough-using-intellitrace.md)します。  
   
 ## <a name="navigating-your-code-with-historical-debugging"></a>デバッグ履歴でのコード内の移動  
  バグのある単純なプログラムから始めましょう。 C# コンソール アプリケーションで次のコードを追加します。  
@@ -73,7 +68,7 @@ private static int AddInt(int add)
   
 2. `Console.WriteLine(resultInt);` の行にブレークポイントを設定します。  
   
-3. デバッグを開始します。 コードがブレークポイントまで実行されます。 **ローカル**ウィンドウで、ことを確認の値`resultInt`は 44 です。  
+3. デバッグを開始します。 コードがブレークポイントまで実行されます。 **[ローカル]** ウィンドウで、`resultInt` の値が 44 であることを確認できます。  
   
 4. 開く、**診断ツール**ウィンドウ (**/show デバッグ診断ツール**)。 コード ウィンドウは、次のようになります。  
   
@@ -87,13 +82,8 @@ private static int AddInt(int add)
   
     ![デバッグ履歴モードでのコード ウィンドウ](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6. ステップ インできますので、`AddAll()`メソッド (**F11**、または**ステップ イン**ナビゲーション余白のボタン。 ステップ前進 (**F10**、または**に次の呼び出しに移動**ナビゲーション余白。 ピンクの行が `j = AddInt(j);` 行に移ります。 **F10 キーを押して**ここで、次のコード行をステップはしません。 代わりに、次の関数呼び出しに移動します。 デバッグ履歴は呼び出しから呼び出しに移動し、関数呼び出しを含まないコード行はスキップされます。  
+6. ここで、`AddAll()` メソッドにステップ インできます (**F11** キー、またはナビゲーション余白の **[ステップ イン]** ボタン)。 ステップ前進します (**F10** キー、またはナビゲーション余白の **[次の呼び出しへ移動]**)。 ピンクの行が `j = AddInt(j);` 行に移ります。 ここで **F10** キーを押しても、次のコード行には移動しません。 代わりに、次の関数呼び出しに移動します。 デバッグ履歴は呼び出しから呼び出しに移動し、関数呼び出しを含まないコード行はスキップされます。  
   
 7. ここで、`AddInt()` メソッドにステップ インします。 このコードにバグがあることがすぐにわかります。  
   
-   この手順では、デバッグ履歴でできることの表面的な部分のみを見ています。 さまざまな設定とナビゲーション余白がさまざまなボタンの影響に関する詳細については、[IntelliTrace 機能](../debugger/intellitrace-features.md)を参照してください。
-
-
-
-
-
+   この手順では、デバッグ履歴でできることの表面的な部分のみを見ています。 他の設定およびナビゲーション余白の他のボタンの効果について詳しくは、「[IntelliTrace の機能](../debugger/intellitrace-features.md)」をご覧ください。

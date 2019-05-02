@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8dfb0330f08dab158c298bbc944d8dc6410f719f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839434"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 セクション数からアドレス空間のセグメントにデータをマップします。
@@ -43,7 +43,7 @@ IDiaSegment : IUnknown
 |[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|セクションの先頭の相対仮想アドレス (RVA) を取得します。|
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|セクションの先頭の仮想アドレス (VA) を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 ほとんどのアプリケーションのことはありません、DIA SDK は既に、相対仮想アドレスをセクションのオフセット位置から翻訳を実行するためのセグメント マップ内の情報を使用します。
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
@@ -93,8 +93,8 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>要件
-ヘッダー: Dia2.h
+## <a name="requirements"></a>必要条件
+ヘッダー:Dia2.h
 
 ライブラリ: diaguids.lib
 

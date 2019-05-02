@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a033ed83d6d349ac3876a6f11a24570f3ff8f60c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40fdeefc2d664b80bb6e17c109349cb5912b0516
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545356"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104:読み取り専用の変更可能な参照型を宣言しません
 
@@ -35,7 +35,7 @@ ms.locfileid: "55945015"
 |互換性に影響する変更点|なし|
 
 > [!NOTE]
-> Ca 2104 のルールは廃止され、Visual Studio の将来のバージョンで削除される予定です。
+> Ca 2104 のルールは廃止され、Visual Studio の将来のバージョンで削除される予定です。 として実装しない、[アナライザー](roslyn-analyzers-overview.md)型の実際の不変性を判断するために必要な複雑な分析のためです。
 
 ## <a name="cause"></a>原因
 

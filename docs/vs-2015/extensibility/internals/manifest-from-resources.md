@@ -1,21 +1,17 @@
 ---
 title: リソースからマニフェスト |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d442686ab588932cac077a0b5fdc09a1a746c3d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771867"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112833"
 ---
 # <a name="manifest-from-resources"></a>リソースからのマニフェスト
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +28,11 @@ ms.locfileid: "51771867"
 ||||  
 |-|-|-|  
 |**スイッチ名**|**ノート**|**必須またはオプション**|  
-|/resources|イメージまたはディレクトリのセミコロン区切りの一覧。 この一覧は、マニフェストに追加するイメージの完全な一覧を常に含める必要があります。 だけ、一覧の一部を指定すると、含まれていないエントリが失われます。<br /><br /> イメージ ストリップの場合は、特定のリソース ファイル、ツールは各サブイメージをマニフェストに追加する前に別のイメージに分割します。<br /><br /> ツール、イメージの適切な属性で入力できるように、このような名前が書式設定をお勧め、イメージが .png ファイルの場合:\<名 >.\<幅 >。\<高さ > .png です。|必須|  
+|/resources|イメージまたはディレクトリのセミコロン区切りの一覧。 この一覧は、マニフェストに追加するイメージの完全な一覧を常に含める必要があります。 だけ、一覧の一部を指定すると、含まれていないエントリが失われます。<br /><br /> イメージ ストリップの場合は、特定のリソース ファイル、ツールは各サブイメージをマニフェストに追加する前に別のイメージに分割します。<br /><br /> .Png ファイルに、イメージには、ツール、イメージの適切な属性で入力できるように、このような名前の書式を設定することをお勧め。\<名前 >。\<幅 >。\<高さ > .png です。|必須|  
 |/assembly|(拡張子を含まない)、マネージ アセンブリまたは (マニフェストのランタイムの場所) を基準とリソースをホストするネイティブ アセンブリのランタイム パスの名前。|必須|  
-|/manifest|生成された .imagemanifest ファイルに付ける名前です。 別の場所にファイルを作成する、絶対または相対パスを含めることもできます。 既定の名前では、アセンブリ名と一致します。<br /><br /> 既定値:\<現在のディレクトリ >\\< アセンブリ\>.imagemanifest|Optional|  
-|/guidName|生成されるマニフェスト内のイメージのすべての GUID のシンボルに付ける名前。<br /><br /> 既定: AssetsGuid|Optional|  
-|/rootPath|マネージ リソースの Uri を作成する前から除去される必要があるルートのパス。 (このフラグは、場所、ツール、相対パスを取得 URI 正しくない、ため、リソースの読み込みに失敗するケースを扱いやすくです)。<br /><br /> 既定値:\<現在のディレクトリ >|Optional|  
+|/manifest|生成された .imagemanifest ファイルに付ける名前です。 別の場所にファイルを作成する、絶対または相対パスを含めることもできます。 既定の名前では、アセンブリ名と一致します。<br /><br /> 既定:\<現在のディレクトリ >\\< アセンブリ\>.imagemanifest|Optional|  
+|/guidName|生成されるマニフェスト内のイメージのすべての GUID のシンボルに付ける名前。<br /><br /> 既定:AssetsGuid|Optional|  
+|/rootPath|マネージ リソースの Uri を作成する前から除去される必要があるルートのパス。 (このフラグは、場所、ツール、相対パスを取得 URI 正しくない、ため、リソースの読み込みに失敗するケースを扱いやすくです)。<br /><br /> 既定:\<現在のディレクトリ >|Optional|  
 |/recursive|このフラグを設定する再帰的にツールに指示/resources 引数のすべてのディレクトリを検索します。 このフラグを省略すると、ディレクトリの top レベルのみの検索が発生します。|Optional|  
 |/isNative|アセンブリの引数がネイティブ アセンブリのパスである場合は、このフラグを設定します。 アセンブリの引数が、マネージ アセンブリの名前である場合は、このフラグを省略します。 (詳細については、このフラグは、ノートのセクションを参照してください)。|Optional|  
 |/newGuids|このフラグを設定、既存のマニフェストから 1 つのマージではなく、イメージの GUID のシンボルに新しい値を作成するツールに指示します。|Optional|  
@@ -47,25 +43,25 @@ ms.locfileid: "51771867"
   
  **例**  
   
--   ManifestFromResources/resources:D:\Images/assembly:My.Assembly.Name/isNative  
+- ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
--   ManifestFromResources/resources:D:\Images\Image1.png;D:\Images\Image1.xaml/assembly:My.Assembly.Name/manifest:MyImageManifest.imagemanifest  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
--   ManifestFromResources/resources:D:\Images\Image1.png;D:\Images\Image1.xaml/assembly:My.Assembly.Name/guidName:MyImages/newGuids/newIds  
+- ManifestFromResources/resources:D:\Images\Image1.png;D:\Images\Image1.xaml/assembly:My.Assembly.Name/guidName:MyImages/newGuids/newIds  
   
 ## <a name="notes"></a>メモ  
   
--   ツールは、.png、.xaml ファイルのみをサポートします。 その他のイメージまたはファイルの種類は無視されます。 リソースの解析中に発生したすべてのサポートされていない型では、警告が生成されます。 ツールが終了するとイメージを検出するサポートされていない場合、リソースの解析エラーが生成されます  
+- ツールは、.png、.xaml ファイルのみをサポートします。 その他のイメージまたはファイルの種類は無視されます。 リソースの解析中に発生したすべてのサポートされていない型では、警告が生成されます。 ツールが終了するとイメージを検出するサポートされていない場合、リソースの解析エラーが生成されます  
   
--   .Png イメージに対する推奨形式では、ツールは、イメージの実際のサイズとは異なる場合でも、形式が指定したサイズ、.png のサイズ/ディメンションの値が設定されます。  
+- .Png イメージに対する推奨形式では、ツールは、イメージの実際のサイズとは異なる場合でも、形式が指定したサイズ、.png のサイズ/ディメンションの値が設定されます。  
   
--   幅と高さの形式は .png イメージでは、省略できますが、ツールは、イメージの実際の幅と高さを読み取り、それらのイメージのサイズ/ディメンションの値を使用しています。  
+- 幅と高さの形式は .png イメージでは、省略できますが、ツールは、イメージの実際の幅と高さを読み取り、それらのイメージのサイズ/ディメンションの値を使用しています。  
   
--   ツールは、スタンドアロン画像イメージ ストリップに分割し、それらを既存のマニフェストに追加しようとするのでこのツールを複数回の同じ .imagemanifest 同じイメージ ストリップで実行されているが、マニフェストのエントリが重複する発生します。  
+- ツールは、スタンドアロン画像イメージ ストリップに分割し、それらを既存のマニフェストに追加しようとするのでこのツールを複数回の同じ .imagemanifest 同じイメージ ストリップで実行されているが、マニフェストのエントリが重複する発生します。  
   
--   マージ (/newGuids または/newIds を省略すると) は、ツールで生成されるマニフェストののみ行ってください。 カスタマイズまたはその他の手段を使用して生成されたマニフェストを正しくマージされません可能性があります。  
+- マージ (/newGuids または/newIds を省略すると) は、ツールで生成されるマニフェストののみ行ってください。 カスタマイズまたはその他の手段を使用して生成されたマニフェストを正しくマージされません可能性があります。  
   
--   ネイティブ アセンブリに対して生成されるマニフェストは、リソース、ネイティブ アセンブリの .rc ファイルから Id と一致する ID のシンボルを生成後の手作業で編集をする必要があります。  
+- ネイティブ アセンブリに対して生成されるマニフェストは、リソース、ネイティブ アセンブリの .rc ファイルから Id と一致する ID のシンボルを生成後の手作業で編集をする必要があります。  
   
 ## <a name="sample-output"></a>出力例  
  **単純なイメージ マニフェスト**  
@@ -163,4 +159,3 @@ ms.locfileid: "51771867"
   <ImageLists />  
 </ImageManifest>  
 ```
-

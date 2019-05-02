@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 280b4f526bad3e0ba646058b3e2410a98ca910fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961889"
 ---
 # <a name="how-to-programmatically-send-email"></a>方法: プログラムによって電子メールを送信します。
   この例は、ドメイン名を持つ連絡先に電子メール メッセージを送信**example.com**が電子メール アドレス。
@@ -33,7 +33,7 @@ ms.locfileid: "56646006"
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例で必要な要素は次のとおりです。
 
--   ドメイン名を持つ連絡先**example.com**が電子メール アドレス。
+- ドメイン名を持つ連絡先**example.com**が電子メール アドレス。
 
 ## <a name="robust-programming"></a>信頼性の高いプログラミング
  ドメイン名を検索するフィルターのコードを削除しないで**example.com**します。 ソリューションが、フィルターを削除する場合は、すべての連絡先に電子メール メッセージを送信します。

@@ -17,23 +17,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d9179bb0a3c3c2f08bbccafbca5db0202208e3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 8b48335ccaa8bd21cf9f6e108d043ecf706903bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441879"
 ---
 # <a name="debug-office-projects"></a>Office プロジェクトをデバッグします。
   Office プロジェクトのデバッグは、他の [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] プロジェクトに使用するのと同じ Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tools を使用して実行できます。 Office プロジェクトのデバッグ時には、ブレークポイントの挿入や[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [ローカル] **ウィンドウでの変数の表示など、** デバッガーの機能も使用できます。 詳細については[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デバッグ ツールを参照してください[Visual Studio でデバッグ](../debugger/debugging-in-visual-studio.md)します。
 
 > [!TIP]
->  デバッグを簡略化するには、ビルドしてデバッグする前に、Office アプリケーションで開いているすべてのインスタンスを閉じます。
+> デバッグを簡略化するには、ビルドしてデバッグする前に、Office アプリケーションで開いているすべてのインスタンスを閉じます。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは VSTO アドインやソリューションと比較して、小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML などのほぼすべての web プログラミング テクノロジを使用して、ビルドすることができます。
+> [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは VSTO アドインやソリューションと比較して、小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML などのほぼすべての web プログラミング テクノロジを使用して、ビルドすることができます。
 
 ## <a name="start-and-stop-the-debugger"></a>起動し、デバッガーを停止します
  その他のデバッグを開始するように、Office プロジェクトをデバッグすることができます[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]プロジェクト; たとえば、キーを押して、 **f5 キーを押して**キー。 VSTO アドイン プロジェクトのデバッグを開始するときに、対象となる Office アプリケーションの新しいプロセスが開始され、VSTO アドインが読み込まれます。
@@ -55,13 +55,13 @@ ms.locfileid: "54867966"
  Office プロジェクトのデバッグを開始するときに**F10**と**F11**他の Visual Basic または c# プロジェクトのデバッグを開始するときと同じ動作にはありません。 Visual Basic や C# のプロジェクトの場合、デバッガーはメイン関数で停止しますが、Office プロジェクトの場合、Visual Studio では Office アプリケーションのメイン関数に対する制御権がありません。 ただし、デバッグ中に、 **F10**と**F11** Visual Basic および c# プロジェクトのように、同じ関数には。
 
 ## <a name="display-exceptions"></a>例外を表示します。
- Visual Studio では、マネージド コードによるアンマネージド コードの操作方法が原因で、Microsoft Office アプリケーションからスローされたエラーは表示されません。 たとえば、VSTO アドインを Visual Studio での Office 開発ツールを使用して作成された例外をスローする場合、Microsoft Office アプリケーションはエラーを表示せず続行されます。 これらのエラーを表示するには、デバッガーが共通言語ランタイムの例外で中断されるように設定します。 詳細については、[デバッガーでの例外を管理](../debugger/managing-exceptions-with-the-debugger.md)を参照してください。
+ Visual Studio では、マネージド コードによるアンマネージド コードの操作方法が原因で、Microsoft Office アプリケーションからスローされたエラーは表示されません。 たとえば、VSTO アドインを Visual Studio での Office 開発ツールを使用して作成された例外をスローする場合、Microsoft Office アプリケーションはエラーを表示せず続行されます。 これらのエラーを表示するには、デバッガーが共通言語ランタイムの例外で中断されるように設定します。 詳細については、次を参照してください。[デバッガーでの例外を管理](../debugger/managing-exceptions-with-the-debugger.md)します。
 
  共通言語ランタイム例外で中断するようにデバッガーを設定した場合、処理済みの例外や、プロジェクトに関係しない可能性もあるランタイム自体からのいくつかの初回例外も含め、すべての例外でデバッガーが中断されるようになります。 どのプロジェクトでも、不明な msosec を参照するエラーが表示されますが、これは無視してもかまいません。 このような msosec 例外はソリューションに影響しません。
 
  メソッドの周囲で **Try...Catch** ステートメントを使用して、例外をキャッチすることもできます。
 
- 既定では、Visual Studio で Office プロジェクトの Just-In-Time デバッグ エラーも表示されませんが、発生したエラーを表示できるように、この機能を有効にすることができます。 詳細については、[時間で Just Visual Studio でのデバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)を参照してください。
+ 既定では、Visual Studio で Office プロジェクトの Just-In-Time デバッグ エラーも表示されませんが、発生したエラーを表示できるように、この機能を有効にすることができます。 詳細については、次を参照してください。[時間で Just Visual Studio でのデバッグ](../debugger/just-in-time-debugging-in-visual-studio.md)します。
 
 ## <a name="command-line-arguments"></a>コマンド ライン引数
  場合、**開始動作**上、**デバッグ**プロパティ ページに設定されている**スタート プロジェクト**、Visual Studio は使いませんコマンドライン引数、プロジェクトをデバッグするときにしている場合でも開始オプションのコマンドライン引数を指定してください。 デバッグを開始するときに、コマンドライン引数を使用する場合は、する必要があります、**開始動作**以外**スタート プロジェクト**します。
@@ -73,7 +73,7 @@ ms.locfileid: "54867966"
  プロジェクトをビルドするたびに、データセットは空になり、再作成されます。 キャッシュされたデータセットをデバッグする場合は、Visual Studio の外部で文書を開いてからデバッガーをアタッチする必要があります。
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>Word 97-2003 ドキュメントに基づくデバッグ Word ドキュメント プロジェクト (* .doc) 形式
- Word 97-2003 ドキュメントに基づく Word 文書プロジェクトをデバッグする (*/*.doc *) 形式では、信頼できるフォルダー一覧に、プロジェクト フォルダーを追加する必要があります。 これを行う方法の詳細については、[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)を参照してください。
+ Word 97-2003 ドキュメントに基づく Word 文書プロジェクトをデバッグする (*/*.doc *) 形式では、信頼できるフォルダー一覧に、プロジェクト フォルダーを追加する必要があります。 これを行う方法の詳細については、次を参照してください。[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)します。
 
 ## <a name="debug-disabled-add-ins"></a>デバッグには、アドインが無効になっています
  Microsoft Office アプリケーションにより、予期しない動作をする VSTO アドインが無効にされる場合があります。 Microsoft Office アプリケーションは、起動するたびに問題のあるコードが読み込まれないようにするため、VSTO アドインを無効にします。 しかし、通常のデバッグ時に、予期しない動作が発生することはよくあります。 VSTO アドインを再度有効にする方法については、次を参照してください。[方法。無効になっている VSTO アドインを再度有効にする](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)します。
@@ -100,6 +100,6 @@ ms.locfileid: "54867966"
 
 ## <a name="see-also"></a>関連項目
 
-- [Office ソリューションを構築します。](../vsto/building-office-solutions.md)
+- [Office ソリューションの構築](../vsto/building-office-solutions.md)
 - [方法: 無効になっている VSTO アドインを再度有効にします。](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
 - [VSTO アドインをプログラミングします。](../vsto/programming-vsto-add-ins.md)

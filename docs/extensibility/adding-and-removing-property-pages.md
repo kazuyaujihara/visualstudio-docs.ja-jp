@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45d402287443e3cdd643a76853e62c11c64e3d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0277d0f04042b6d7ed4cb8b6233d8b0ccec464f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843892"
 ---
 # <a name="add-and-remove-property-pages"></a>追加および削除のプロパティ ページ
 
@@ -32,7 +32,7 @@ ms.locfileid: "54951158"
 
 ### <a name="remove-a-property-page"></a>プロパティ ページを削除します。
 
-1.  上書き、`GetProperty(uint itemId, int propId, out object property)`メソッドをプロパティ ページをフィルター処理し、取得、`clsids`一覧。
+1. 上書き、`GetProperty(uint itemId, int propId, out object property)`メソッドをプロパティ ページをフィルター処理し、取得、`clsids`一覧。
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ ms.locfileid: "54951158"
     }
     ```
 
-2.  削除、**ビルド イベント**ページから取得した`clsids`一覧。
+2. 削除、**ビルド イベント**ページから取得した`clsids`一覧。
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -113,7 +113,7 @@ ms.locfileid: "54951158"
 
 ### <a name="add-a-property-page"></a>プロパティ ページを追加します。
 
-1.  追加するプロパティ ページを作成します。
+1. 追加するプロパティ ページを作成します。
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ ms.locfileid: "54951158"
     }
     ```
 
-2.  新しいプロパティ ページを登録します。
+2. 新しいプロパティ ページを登録します。
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ ms.locfileid: "54951158"
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3.  上書き、`GetProperty(uint itemId, int propId, out object property)`プロパティ ページをフィルター処理を取得するメソッド、`clsids`を一覧表示し、新しいプロパティ ページを追加します。
+3. 上書き、`GetProperty(uint itemId, int propId, out object property)`プロパティ ページをフィルター処理を取得するメソッド、`clsids`を一覧表示し、新しいプロパティ ページを追加します。
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer

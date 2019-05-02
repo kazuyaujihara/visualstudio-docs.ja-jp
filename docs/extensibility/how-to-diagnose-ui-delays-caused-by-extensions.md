@@ -7,11 +7,11 @@ ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
 ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912081"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>方法: 拡張機能による診断 UI の遅延
 
@@ -49,7 +49,7 @@ Visual Studio は、「アクティビティ ログ」を生成できます問�
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
 ```
 
-インスタンス ID で、VS を検索する方法の詳細については、[を検出すると、Visual Studio インスタンスを管理するためのツール](../install/tools-for-managing-visual-studio-instances.md)を参照してください。 このアクティビティ ログは、UI の遅延と関連する通知の詳細を確認する後で使用されます。
+インスタンス ID で、VS を検索する方法の詳細については、次を参照してください。[を検出すると、Visual Studio インスタンスを管理するためのツール](../install/tools-for-managing-visual-studio-instances.md)します。 このアクティビティ ログは、UI の遅延と関連する通知の詳細を確認する後で使用されます。
 
 ## <a name="starting-etw-tracing"></a>ETW トレースの開始
 

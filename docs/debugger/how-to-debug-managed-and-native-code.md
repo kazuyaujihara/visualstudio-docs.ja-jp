@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847916"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>チュートリアル: 同じデバッグ セッションで C# と C++ をデバッグする
 
@@ -44,7 +44,7 @@ Visual Studio がインストールされ、次のワークロードがある必
 - **C++ によるデスクトップ開発**
 - 作成するアプリの種類に応じて、**.NET デスクトップ開発**または **.NET Core クロス プラットフォーム開発**のいずれか
 
-Visual Studio をお持ちでない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  ページに移動し、無料試用版をインストールしてください。
+Visual Studio をお持ちでない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
 
 Visual Studio はインストールされているが、必要なワークロードがない場合は、Visual Studio の **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** を選択します。 Visual Studio インストーラーで、必要なワークロードを選択し、**[変更]** を選択します。
 
@@ -55,7 +55,7 @@ Visual Studio はインストールされているが、必要なワークロー
 1. Visual Studio を開き、プロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Ctrl + Q** キーを押して検索ボックスを開き、「**空のプロジェクト**」と入力し、**[テンプレート]** を選択して、C++ 用の **[新しい空のプロジェクト プロジェクトの作成]** の順に選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。 次に、**Mixed_Mode_Debugging** のような名前を入力して、**[作成]** をクリックします。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**空のプロジェクト**」と入力し、**[テンプレート]** を選択して、C++ 用の **[新しい空のプロジェクト プロジェクトの作成]** の順に選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。 次に、**Mixed_Mode_Debugging** のような名前を入力して、**[作成]** をクリックします。
     ::: moniker-end
     ::: moniker range="vs-2017"
     上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** の左側のウィンドウで、**[Visual C++]** の下にある **[その他]** を選択し、次に、真ん中のウィンドウで **[空のプロジェクト]** を選択します。 次に、**Mixed_Mode_Debugging** のような名前を入力して、**[OK]** をクリックします。
@@ -132,7 +132,7 @@ Visual Studio はインストールされているが、必要なワークロー
 1. Visual Studio を起動し、新しいプロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Ctrl + Q** キーを押して検索ボックスを開き、「**コンソール**」と入力し、**[テンプレート]** を選択して、C# 用の **[Create new Console App (.NET Framework) project]\(新しいコンソール アプリ (.NET Framework) プロジェクトの作成\)** を選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**コンソール**」と入力し、**[テンプレート]** を選択して、C# 用の **[Create new Console App (.NET Framework) project]\(新しいコンソール アプリ (.NET Framework) プロジェクトの作成\)** を選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
 
     次に、**Mixed_Mode_Calling_App** のような名前を入力して、**[作成]** をクリックします。
     ::: moniker-end
@@ -193,7 +193,7 @@ Visual Studio はインストールされているが、必要なワークロー
 
 ### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>.NET Core アプリ用に混合モード デバッグを構成するには
 
-Visual Studio 2017 のほとんどのバージョンでは、プロジェクト プロパティの代わりに *launchSettings.json* ファイルを使用して、.NET Core アプリでネイティブ コードの混合モード デバッグを有効にする必要があります。 この機能の UI の更新を追跡するには、この [GitHub の問題](https://github.com/dotnet/project-system/issues/1125)を参照してください。
+Visual Studio 2017 以降、Visual Studio のほとんどのバージョンでは、プロジェクト プロパティの代わりに *launchSettings.json* ファイルを使用して、.NET Core アプリでネイティブ コードの混合モード デバッグを有効にする必要があります。 この機能の UI の更新を追跡するには、この [GitHub の問題](https://github.com/dotnet/project-system/issues/1125)を参照してください。
 
 1. **ソリューション エクスプローラー**で、**[プロパティ]** を展開し、*launchSettings.json* ファイルを開きます。
 

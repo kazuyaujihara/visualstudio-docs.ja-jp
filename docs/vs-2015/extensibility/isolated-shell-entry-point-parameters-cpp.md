@@ -11,12 +11,12 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 313632661c3f73fdbd0f23616a068913c77508f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9e736343212c4bf6acd833f5740b996c6c032c3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439818"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>分離シェル エントリ ポイントのパラメーター (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,21 +75,21 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
  1 つまたは複数の設定を無効にするには、オーバーライドする設定を含む Unicode 文字列を渡します。 文字列は、名前/値ペアのセミコロンで区切られた一覧を示します。 各ペアは、後に等号 (=) の後に、設定を適用する値を無効にすると、設定の名前を表します。  
   
 > [!NOTE]
->  Unicode 文字列に空白文字を含めないでください。  
+> Unicode 文字列に空白文字を含めないでください。  
   
  次の文字列が値 true を表すブール値の設定その他のすべての文字列は、値 false を表します。 これらの文字列が、区別されます。  
   
--   \+  
+- \+  
   
--   1  
+- 1  
   
--   -1  
+- -1  
   
--   日付  
+- 日付  
   
--   true  
+- true  
   
--   可  
+- 可  
   
 ## <a name="example"></a>例  
  アドインを無効にして、アプリケーションの既定のプロジェクトの場所を変更、最後の"AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp"パラメーターを設定できます。  

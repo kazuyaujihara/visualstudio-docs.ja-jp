@@ -14,23 +14,23 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09027661b07bbc489dff4985d3858eb8366437a7
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 501496c4f1bb929308ffbb75c6572de3d3f5b33b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006367"
 ---
 # <a name="object-expected"></a>オブジェクトが必要です。
 `Object` 以外の型のメソッドまたはプロパティを呼び出そうとしたか、または `Object` が必要なときに `Object` 以外の型の引数を渡しました。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   `Object` 型のオブジェクトに対してのみメソッドまたはプロパティを呼び出します。  
+- `Object` 型のオブジェクトに対してのみメソッドまたはプロパティを呼び出します。  
   
--   オブジェクト以外の引数でエラーが発生した場合は、`Object` 型のオブジェクトを渡します。  
+- オブジェクト以外の引数でエラーが発生した場合は、`Object` 型のオブジェクトを渡します。  
   
--   `Object` 型のオブジェクトの代わりに、未定義または null 参照のどちらが呼び出されているかを調べます。  
+- `Object` 型のオブジェクトの代わりに、未定義または null 参照のどちらが呼び出されているかを調べます。  
   
      たとえば、次のコードの myVar でこのエラーが生じた場合:  
   

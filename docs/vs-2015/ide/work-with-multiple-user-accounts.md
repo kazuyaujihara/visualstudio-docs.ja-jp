@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a60a44a20c06c24645583db4e16ce60cef166554
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441646"
 ---
 # <a name="work-with-multiple-user-accounts"></a>複数のユーザー アカウントを使って作業する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54802643"
   
 #### <a name="sign-in-to-visual-studio"></a>Visual Studio にサインイン  
   
-1.  Microsoft アカウントまたは組織アカウントで、Visual Studio 2015 にサインインします。 ウィンドウの右上に、次のようにユーザー名が反映されています。  
+1. Microsoft アカウントまたは組織アカウントで、Visual Studio 2015 にサインインします。 ウィンドウの右上に、次のようにユーザー名が反映されています。  
   
      ![現在ログインしているユーザー](../ide/media/vs2015-username.png "VS2015_UserName")  
   
@@ -44,14 +44,14 @@ ms.locfileid: "54802643"
   
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>[接続済みサービスの追加] ダイアログを通して Azure アカウントにアクセスします。  
   
-1.  C# でユニバーサル アプリ プロジェクトを作成します。  
+1. C# でユニバーサル アプリ プロジェクトを作成します。  
   
-2.  ソリューション エクスプローラーでプロジェクト ノードを右クリックし、**[追加] > [接続済みサービス]** を選択します。 [接続済みサービスの追加] ウィザードが表示され、Visual Studio ログイン ID に関連付けられた Azure アカウントのサービスの一覧が表示されます。 なお、Azure には個別にサインインする必要はありません。 ただし、特定のコンピューターから他のアカウントのリソースへのアクセスを初めて試みるときは、そのアカウントにサインインする必要があります。  
+2. ソリューション エクスプローラーでプロジェクト ノードを右クリックし、**[追加] > [接続済みサービス]** を選択します。 [接続済みサービスの追加] ウィザードが表示され、Visual Studio ログイン ID に関連付けられた Azure アカウントのサービスの一覧が表示されます。 なお、Azure には個別にサインインする必要はありません。 ただし、特定のコンピューターから他のアカウントのリソースへのアクセスを初めて試みるときは、そのアカウントにサインインする必要があります。  
   
     > [!WARNING]
-    >  特定のコンピューターの Visual Studio 2015 でストア アプリを初めて作成する場合は、コンピューターの [設定]**、更新プログラムおよびセキュリティ&#124;開発者向け**コンピューターにします。 詳細については、「[デバイスを開発用に有効にする](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx)」を参照してください。  
+    > これが初めてである場合は、特定のコンピューターで Visual Studio 2015 でストア アプリを作成してに移動して、デバイスを開発モードを有効にすることを求められます**設定&#124;します。更新プログラムおよびセキュリティ&#124;開発者向け**コンピューターにします。 詳細については、「[デバイスを開発用に有効にする](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx)」を参照してください。  
   
-###  <a name="access_azure"></a>Web プロジェクトで Azure Active Directory にアクセス  
+### <a name="access_azure"></a>Web プロジェクトで Azure Active Directory にアクセス  
  Azure AD では、ASP.NET MVC の Web アプリケーションでのエンド ユーザー シングル サインオンや、Web API サービスでの AD 認証をサポートしています。 ドメイン認証は個々のユーザー アカウント認証とは異なります。Active Directory ドメインにアクセスできるユーザーは、既存の Azure AD アカウントを使用して、Web アプリケーションに接続できます。 Office 365 アプリでは、ドメイン認証も使用できます。 これを実際に見るには、Web アプリケーションを作成します (**[ファイル]、[新しいプロジェクト]、[C#]、[クラウド]、[ASP.NET Web アプリケーション]**)。 新しい ASP.NET プロジェクトのダイアログで、**[認証の変更]** を選択します。 認証ウィザードが表示され、アプリケーションで使用する認証の種類を選択できます。  
   
  ![ASP.NET の認証の変更ダイアログ](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")  

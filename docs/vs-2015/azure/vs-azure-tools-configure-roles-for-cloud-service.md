@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 8cbf01d79011f2917236f3577cf25986e4bc5b76
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c14de7498cf893169295c08947d6687a2121bd6e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59002322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965029"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio で Azure クラウド サービスのロールを構成する
 Azure クラウド サービスには、worker ロールまたは Web ロールを割り当てることができます。 それぞれのロールについて、そのセットアップ方法を定義すると共に、実行方法を構成する必要があります。 クラウド サービスのロールの詳細については、 [Azure Cloud Services の概要](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)を紹介した動画をご覧ください。
@@ -259,7 +259,7 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
 前のセクションのコードによって作成されたファイルを確認するには、次の手順を実行します。
 
-1.  Windows 通知領域で Azure アイコンを右クリックし、コンテキスト メニューから **[Show Compute Emulator UI (コンピューティング エミュレーター UI の表示)]** を選択します。
+1. Windows 通知領域で Azure アイコンを右クリックし、コンテキスト メニューから **[Show Compute Emulator UI (コンピューティング エミュレーター UI の表示)]** を選択します。
 
     ![コンピューティング エミュレーターの表示](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 

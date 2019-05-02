@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b561a4aebe34ac943b0163e66dfbf2edf423eedb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f53083c49504146aca545da73bd38950493efcd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429201"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>SharePoint でサポートされる MsBuild プロパティ
   すべて[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]Microsoft.VisualStudio.SharePoint.targets ファイル、プロジェクト ファイル、またはプロジェクト ユーザー ファイルで定義されているプロパティを使用することができます[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint プロジェクト。 一般的なだけでなく[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]プロパティは、プロジェクトでは、SharePoint によって提供される SharePoint プロジェクトに固有の追加のプロパティを定義します。
@@ -49,7 +49,7 @@ ms.locfileid: "56599689"
  ハード コーディングされた文字列を使用するのではなく、柔軟性、**配置前コマンドライン**と**配置後コマンドライン**ボックス SharePoint プロパティ ページで、SharePoint を使用することができます引数としてのプロパティです。 特定の指定ではなく、たとえば、[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]文字列、SharePoint サイトの代わりに使える`$(SharePointSiteUrl)`します。
 
 > [!NOTE]
->  いずれかを使用することができます、[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]変数構文`$(` *propertyName* `)`または環境変数の構文`%` *propertyName* `%`プロパティを指定します。
+> いずれかを使用することができます、[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]変数構文`$(` *propertyName* `)`または環境変数の構文`%` *propertyName* `%`プロパティを指定します。
 
 ## <a name="see-also"></a>関連項目
 

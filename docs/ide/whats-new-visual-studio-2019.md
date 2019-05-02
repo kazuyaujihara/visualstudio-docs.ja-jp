@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 04/03/2019
+ms.date: 04/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f75f1172e96e3dc2576a199949fdbb0c32f68
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432030"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
-**[16.0 リリース](/visualstudio/releases/2019/release-notes/)の更新**
+**[16.0 リリースの更新](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Visual Studio 2019 のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -34,10 +34,10 @@ Visual Studio 2019 では、あらゆる開発者、アプリ、プラットフ�
 新機能の大まかな要約を示します。
 
 * **[開発](#develop)**:パフォーマンスの向上、迅速なコードのクリーンアップ、優れた検索結果による生産性向上に引き続き注力しています。
-* **[共同作業](#collaborate)**:クラウド ファーストのワークフロー、リアルタイムでの編集とデバッグ、Visual Studio でのコード レビューによる自然な共同作業を体験してください。
+* **[共同作業](#collaborate)**:Git ファーストのワークフロー、リアルタイムでの編集とデバッグ、Visual Studio でのコード レビューによる自然な共同作業を体験してください。
 * **[デバッグ](#debug)**:特定の値を強調表示してそこに移動したり、メモリの使用を最適化したり、アプリケーションの実行のスナップショットを自動的に取得したりできます。
 
-このバージョンのすべての新機能の一覧は、[リリース ノート](/visualstudio/releases/2019/release-notes/)を参照してください。 
+このバージョンのすべての新機能の一覧は、[リリース ノート](/visualstudio/releases/2019/release-notes/)を参照してください。
 
 ## <a name="develop"></a>開発
 
@@ -55,11 +55,11 @@ Visual Studio 2019 では、あらゆる開発者、アプリ、プラットフ�
 
 ### <a name="refactorings"></a>リファクタリング
 
-新しい C# リファクタリングにより、コードの整理が簡単になります。 **Ctrl +.** を押し、 実行するアクションを選択するだけでリファクタリングを呼び出せます。 
+C# には非常に便利な新しいリファクタリングが多数あります。これにより、コードの整理がより簡単になります。 それらは電球で提案として表示されます。インターフェイスや基底クラスへのメンバーの移動、フォルダー構造に一致させるための名前空間の調整、foreach ループの Linq クエリへの変換などのアクションが含まれています。
 
    ![Visual Studio 2019 のリファクタリングのアニメーション](media/vs-2019/refactorings.gif)
 
-メソッド パラメーターをラップできるものなど、新しいリファクタリングが多数追加されました。
+**Ctrl +.** を押し、 実行するアクションを選択するだけでリファクタリングを呼び出せます。
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -78,13 +78,13 @@ Visual Studio 向けの IntelliCode を初めてプレビューしたときに�
 
 C# を使用している場合は、独自のコードでカスタム モデルをトレーニングする機能も追加されました。
 
-IntelliCode の詳細については、ブログの投稿「[Code more, scroll less with Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/)」(Visual Studio IntelliCode を使用して少ないスクロールで多くのコードを書く) を参照してください。 
+IntelliCode の詳細については、ブログの投稿「[Code more, scroll less with Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/)」(Visual Studio IntelliCode を使用して少ないスクロールで多くのコードを書く) を参照してください。
 
 ### <a name="code-cleanup"></a>コードのクリーンアップ
 
 新しいドキュメントの正常性インジケーターと組み合わされたのが、新しいコード クリーンアップ コマンドです。 この新しいコマンドを使用して、警告と提案を特定し、ボタンをクリックして両方を修正することができます。
 
-クリーンアップにより、コードが書式設定され、[現在の設定](code-styles-and-quick-actions.md)、[.editorconfig files](create-portable-custom-editor-options.md)、または [Roslyn アナライザー](../code-quality/roslyn-analyzers-overview.md) のいずれかの提案に従って、任意のコード修正が適用されます。
+クリーンアップにより、コードが書式設定され、[現在の設定](code-styles-and-quick-actions.md)および [.editorconfig ファイル](create-portable-custom-editor-options.md)のいずれかの提案に従って、任意のコード修正が適用されます。
 
    ![Visual Studio 2019 の新しいコード クリーンアップ コントロールのスクリーン ショット](media/vs-2019/code-cleanup-profile.png)
 
@@ -142,7 +142,7 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
    ![Visual Studio 2019 のデバッグ データ ブレークポイントを示すアニメーション](media/vs-2019/debug-data-breakpoints.gif)
 
-コードを C++ と .NET Core のどちらで書いている場合でも、データ ブレークポイントは通常のブレークポイントを配置する適切な代替手段となります。 データ ブレークポイントは、グローバル オブジェクトがリストのどこで修正、追加、削除されているかを見つけるようなシナリオでも適しています。 
+コードを C++ と .NET Core のどちらで書いている場合でも、データ ブレークポイントは通常のブレークポイントを配置する適切な代替手段となります。 データ ブレークポイントは、グローバル オブジェクトがリストのどこで修正、追加、削除されているかを見つけるようなシナリオでも適しています。
 
 また、大規模なアプリケーションを開発している C++ の開発者の場合、Visual Studio 2019 ではシンボルをプロセス外にできるため、メモリ関連の問題が発生することなくアプリケーションをデバッグできます。
 
@@ -166,7 +166,13 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
 Azure VM で実行される ASP.NET (Core およびデスクトップ) アプリケーションを対象とするサポートが追加されました。 また、Azure Kubernetes Service で実行されるアプリケーションのサポートが追加されました。 スナップショット デバッガーは、実稼働環境で発生する問題の解決にかかる時間を大幅に短縮するのに役立ちます。
 
-詳細については、「[Debug live ASP.NET apps using the Snapshot Debugger](../debugger/debug-live-azure-applications.md)」(スナップショット デバッガーを使用してライブ ASP.NET アプリをデバッグする) のページを参照してください。
+詳細については、「[Debug live ASP.NET Azure apps using the Snapshot Debugger (スナップショット デバッガーを使用したライブ ASP.NET Azure アプリのデバッグ)](../debugger/debug-live-azure-applications.md)」ページと「[Introducing Time Travel Debugging for Visual Studio Enterprise 2019 (Visual Studio Enterprise 2019 のタイム トラベル デバッグの概要)](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/)」ブログ投稿を参照してください。
+
+## <a name="whats-next"></a>次の内容
+
+Visual Studio 2019 は、より優れた開発を可能にする新機能で頻繁に更新されています。 最新のイノベーションの詳細については、「[The Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)」 (Visual Studio に関するブログ) を参照してください。 現在までプレビューでリリースしたものの記録については、[プレビュー リリース ノート](/visualstudio/releases/2019/release-notes-preview/)に関する記事を参照してください。
+
+Visual Studio 2019 のその他の機能について詳細を知りたい場合は、 [Visual Studio のロードマップ](/visualstudio/productinfo/vs-roadmap/)に関するページを参照してください。
 
 ## <a name="give-us-feedback"></a>フィードバックの送信
 
@@ -181,5 +187,5 @@ Visual Studio チームにフィードバックを送ることにどんな意味
 * [Visual Studio 2019 のお知らせ](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Visual Studio 2019 リリース ノート](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 SDK の新機能](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Visual Studio 2019 for Mac が公開](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Visual Studio 2019 for Mac が利用できるようになりました](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
 * [Microsoft Connect(); 2018 カンファレンス](https://www.microsoft.com/connectevent)

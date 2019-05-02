@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3467b33a7dd152de439d7859c89b5b3707fea7ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: aef35ff50080e9b596cc63915da77851b549bc3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438862"
 ---
 # <a name="working-with-xml-data"></a>XML データの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML とその関連技術は、[!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio でのデータ処理において大きな役割を果たしています。 Visual Studio には、XML、XSLT、および XML スキーマの操作を容易にするツールと機能が含まれています。  
   
 ## <a name="xml-editor"></a>XML エディター  
@@ -27,17 +26,17 @@ XML とその関連技術は、[!INCLUDE[msCoName](../includes/msconame-md.md)] 
   
  次のような機能も含まれています。  
   
--   スキーマから生成されるスニペットを含めた、XML スニペットのサポート。  
+- スキーマから生成されるスニペットを含めた、XML スニペットのサポート。  
   
--   要素の展開と折りたたみが可能なドキュメントのアウトライン表示。  
+- 要素の展開と折りたたみが可能なドキュメントのアウトライン表示。  
   
--   XSLT 変換を実行し、結果をテキスト、XML、または HTML で表示する機能。  
+- XSLT 変換を実行し、結果をテキスト、XML、または HTML で表示する機能。  
   
--   XML インスタンス ドキュメントから XML スキーマ定義言語 (XSD) スキーマを生成する機能。  
+- XML インスタンス ドキュメントから XML スキーマ定義言語 (XSD) スキーマを生成する機能。  
   
--   IntelliSense サポートを含めた、XSLT スタイル シートの編集のサポート。  
+- IntelliSense サポートを含めた、XSLT スタイル シートの編集のサポート。  
   
--   XML スキーマ エクスプローラー  
+- XML スキーマ エクスプローラー  
   
 ## <a name="xml-schema-designer"></a>XML スキーマ デザイナー  
  XML スキーマ デザイナーは Microsoft Visual Studio 2010 および XML エディターに統合されており、これを使用すると、XML スキーマ定義言語 (XSD) スキーマの操作が可能になります。  
@@ -46,7 +45,7 @@ XML とその関連技術は、[!INCLUDE[msCoName](../includes/msconame-md.md)] 
  Visual Studio は XSLT スタイル シートのデバッグをサポートしています。 デバッガーを使用すると、XSLT スタイル シート内のブレークポイントの設定や、コードから XSLT スタイル シートへのステップ インなどが可能になります。  
   
 > [!NOTE]
->  XSLT のデバッグは、Professional Edition および Team Edition で使用できます。  
+> XSLT のデバッグは、Professional Edition および Team Edition で使用できます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [XML エディター](../xml-tools/xml-editor.md)  

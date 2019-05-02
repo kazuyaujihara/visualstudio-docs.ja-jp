@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84e9c6dadd9e553d456bfb46d054a7ae727aa087
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a738a01df224051e3190d828f852fe1ccfa7e9da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434726"
 ---
 # <a name="sccadd-function"></a>SccAdd 関数
 この関数では、ソース管理システムに新しいファイルを追加します。
@@ -85,7 +85,7 @@ SCCRTN SccAdd(
  通常の`fOptions`、配列では、ここが置き換えられます`pfOptions`、いずれかで`LONG`仕様ファイルごとのオプションします。 これはため、ファイルの種類がファイルをファイルに異なる場合があります。
 
 > [!NOTE]
->  両方とも指定することはできません`SCC_FILETYPE_TEXT`と`SCC_FILETYPE_BINARY`が同じファイルのオプションはいずれも指定するは無効です。 設定と同じでは、どちらも設定`SCC_FILETYPE_AUTO`ソースがプラグインの初回ファイルの種類を制御する場合。
+> 両方とも指定することはできません`SCC_FILETYPE_TEXT`と`SCC_FILETYPE_BINARY`が同じファイルのオプションはいずれも指定するは無効です。 設定と同じでは、どちらも設定`SCC_FILETYPE_AUTO`ソースがプラグインの初回ファイルの種類を制御する場合。
 
  使用されているフラグの一覧を次に示します、`pfOptions`配列。
 

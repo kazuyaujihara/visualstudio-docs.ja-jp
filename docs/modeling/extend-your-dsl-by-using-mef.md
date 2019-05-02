@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40442d9cf740bd4122aaf48f82fdba425aff261e
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 40b62719fb00910e4eef183f960e1a1d4ea9a4a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994533"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF による DSL の拡張
 
@@ -20,11 +20,11 @@ Managed Extensibility Framework (MEF) を使用して、ドメイン固有言語
 
 さらに、DSL で MEF を有効にするとできます簡単に、DSL の機能の一部を記述する場合でも、すべて DSL と共に構築されます。
 
-MEF の詳細については、[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)を参照してください。
+MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)します。
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>MEF で拡張する DSL を有効にするには
 
-1.  という名前の新しいフォルダーを作成する**MefExtension**内で、 **DslPackage**プロジェクト。 次のファイルを追加します。
+1. という名前の新しいフォルダーを作成する**MefExtension**内で、 **DslPackage**プロジェクト。 次のファイルを追加します。
 
      ファイル名: `CommandExtensionVSCT.tt`
 
@@ -72,7 +72,7 @@ MEF の詳細については、[Managed Extensibility Framework (MEF)](/dotnet/f
     <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>
     ```
 
-2.  という名前の新しいフォルダーを作成する**MefExtension**内で、 **Dsl**プロジェクト。 次のファイルを追加します。
+2. という名前の新しいフォルダーを作成する**MefExtension**内で、 **Dsl**プロジェクト。 次のファイルを追加します。
 
      ファイル名: `DesignerExtensionMetaDataAttribute.tt`
 
@@ -95,7 +95,7 @@ MEF の詳細については、[Managed Extensibility Framework (MEF)](/dotnet/f
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3.  という名前の既存のファイルに次の行を追加**dslpackage \commands.vsct**:
+3. という名前の既存のファイルに次の行を追加**dslpackage \commands.vsct**:
 
     ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
@@ -103,17 +103,17 @@ MEF の詳細については、[Managed Extensibility Framework (MEF)](/dotnet/f
 
     既存の後の行を挿入`<Include>`ディレクティブ。
 
-4.  開いている*DslDefinition.dsl*します。
+4. 開いている*DslDefinition.dsl*します。
 
-5.  DSL エクスプ ローラーで選択**発します**します。
+5. DSL エクスプ ローラーで選択**発します**します。
 
-6.  [プロパティ] ウィンドウでプロパティの少なくとも 1 つという名前を確認します**使用**は`true`します。
+6. [プロパティ] ウィンドウでプロパティの少なくとも 1 つという名前を確認します**使用**は`true`します。
 
-7.  **ソリューション エクスプ ローラー**ツールバーで、をクリックして**すべてのテンプレートの変換**します。
+7. **ソリューション エクスプ ローラー**ツールバーで、をクリックして**すべてのテンプレートの変換**します。
 
      各追加したファイルの下にある関連会社のファイルが表示されます。
 
-8.  ビルドおよびがまだ動作していることを確認するソリューションを実行します。
+8. ビルドおよびがまだ動作していることを確認するソリューションを実行します。
 
 DSL は、MEF-有効になっているようになりました。 MEF 拡張機能としては、メニュー コマンド、ジェスチャ ハンドラー、および検証制約を作成できます。 その他のカスタム コードと共に、DSL ソリューションでは、これらの拡張機能を記述できます。 さらに、か、他の開発者は、DSL を拡張する別の Visual Studio 拡張機能を記述できます。
 
@@ -123,7 +123,7 @@ DSL は、MEF-有効になっているようになりました。 MEF 拡張機�
 
 ### <a name="to-create-a-dsl-extension-vsix"></a>DSL 拡張 VSIX を作成するには
 
-1. 新規作成**クラス ライブラリ**プロジェクト。
+1. 新しい**クラス ライブラリ** プロジェクトを作成します。
 
 2. 新しいプロジェクトでは、DSL のアセンブリへの参照を追加します。
 
@@ -135,15 +135,15 @@ DSL は、MEF-有効になっているようになりました。 MEF 拡張機�
 
 3. 次の .NET アセンブリへの参照を追加します。
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-   -   System.ComponentModel.Composition.dll
+   - System.ComponentModel.Composition.dll
 
-   -   System.Windows.Forms.dll
+   - System.Windows.Forms.dll
 
 4. 新規作成**VSIX プロジェクト**プロジェクト。
 
@@ -323,7 +323,7 @@ namespace MefExtension
 
 検証メソッドがによってマークされている、 `ValidationExtension` 、DSL ともによって生成される属性<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>します。 メソッドは、属性でマークされていないすべてのクラスで表示できます。
 
-詳細については、[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)を参照してください。
+詳細については、次を参照してください。[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。
 
 ```csharp
 using Company.MyDsl;

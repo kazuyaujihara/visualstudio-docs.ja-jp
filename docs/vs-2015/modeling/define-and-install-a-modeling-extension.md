@@ -1,12 +1,9 @@
 ---
 title: 定義およびモデリング拡張機能のインストール |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: 82a58dc5-c7cf-4521-a6da-7ff09cd0de9d
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f7895916cc4ee877c53b056f703d8e46b64b409
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805568"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049738"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>モデリング拡張機能を定義およびインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,39 +42,39 @@ Visual Studio では、モデリング図に対して拡張機能を定義する
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>メニュー コマンド、ジェスチャ ハンドラー、または検証のクラス ライブラリ プロジェクトを作成するには  
   
-1.  **[ファイル]** メニューで、 **[新規]**、 **[プロジェクト]** をクリックします。  
+1. **[ファイル]** メニューで、 **[新規]**、 **[プロジェクト]** をクリックします。  
   
-2.  **[インストールされたテンプレート]** の **[Visual Basic]** または **[Visual C#]** をクリックし、 **[クラス ライブラリ]** をクリックします。  
+2. **[インストールされたテンプレート]** の **[Visual Basic]** または **[Visual C#]** をクリックし、 **[クラス ライブラリ]** をクリックします。  
   
 #### <a name="to-create-a-vsix-project"></a>VSIX プロジェクトを作成するには  
   
-1.  コードを含むコンポーネントを作成する場合は、最初にクラス ライブラリ プロジェクトを作成するのが最も簡単な方法です。 コードはそのプロジェクトに追加します。  
+1. コードを含むコンポーネントを作成する場合は、最初にクラス ライブラリ プロジェクトを作成するのが最も簡単な方法です。 コードはそのプロジェクトに追加します。  
   
-2.  VSIX プロジェクトを作成する。  
+2. VSIX プロジェクトを作成する。  
   
-    1.  **ソリューション エクスプローラー**で、ソリューションのショートカット メニューを開き、 **[追加]**、 **[新しいプロジェクト]** の順にクリックします。  
+    1. **ソリューション エクスプローラー**で、ソリューションのショートカット メニューを開き、 **[追加]**、 **[新しいプロジェクト]** の順にクリックします。  
   
-    2.  **[インストールされたテンプレート]** の **[Visual C#]** または **[Visual Basic]** を展開し、 **[機能拡張]** をクリックします。 中央の列で、 **[VSIX プロジェクト]** をクリックします。  
+    2. **[インストールされたテンプレート]** の **[Visual C#]** または **[Visual Basic]** を展開し、 **[機能拡張]** をクリックします。 中央の列で、 **[VSIX プロジェクト]** をクリックします。  
   
-3.  VSIX プロジェクトをソリューションのスタートアップ プロジェクトとして設定します。  
+3. VSIX プロジェクトをソリューションのスタートアップ プロジェクトとして設定します。  
   
-    -   ソリューション エクスプローラーで、VSIX プロジェクトのショートカット メニューを開き、 **[スタートアップ プロジェクトに設定]** をクリックします。  
+    - ソリューション エクスプローラーで、VSIX プロジェクトのショートカット メニューを開き、 **[スタートアップ プロジェクトに設定]** をクリックします。  
   
-4.  **source.extension.vsixmanifest**を開きます。 マニフェスト エディターでファイルが開きます。  
+4. **source.extension.vsixmanifest**を開きます。 マニフェスト エディターでファイルが開きます。  
   
-5.  **[メタデータ]** タブで、VSIX の名前と説明のフィールドを設定します。  
+5. **[メタデータ]** タブで、VSIX の名前と説明のフィールドを設定します。  
   
-6.  **[インストールの対象]** タブで **[新規作成]** を選択し、Visual Studio のバージョンを対象として設定します。  
+6. **[インストールの対象]** タブで **[新規作成]** を選択し、Visual Studio のバージョンを対象として設定します。  
   
-7.  **[アセット]** タブで、コンポーネントを Visual Studio 拡張機能に追加します。  
+7. **[アセット]** タブで、コンポーネントを Visual Studio 拡張機能に追加します。  
   
-    1.  **[新規作成]** をクリックします。  
+    1. **[新規作成]** をクリックします。  
   
-    2.  コードを含むコンポーネントの場合は、 **[Add New Asset]** (新しいアセットの追加) ダイアログ ボックスで、次のフィールドを設定します。  
+    2. コードを含むコンポーネントの場合は、 **[Add New Asset]** (新しいアセットの追加) ダイアログ ボックスで、次のフィールドを設定します。  
   
         |||  
         |-|-|  
-        |**型** =|**[Microsoft.visualstudio.mefcomponent]**|  
+        |**型** =|**Microsoft.VisualStudio.MefComponent**|  
         |**Source** =|**現在のソリューション内のプロジェクト**|  
         |**プロジェクト** =|*クラス ライブラリ プロジェクト*|  
         |**このフォルダーに埋め込む** =|*(空)*|  
@@ -100,36 +97,36 @@ Visual Studio では、モデリング図に対して拡張機能を定義する
   
 #### <a name="to-run-an-extension-during-its-development"></a>拡張機能を開発段階において実行するには  
   
-1.  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **デバッグ**] メニューの [選択**デバッグの開始**します。  
+1. [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **デバッグ**] メニューの [選択**デバッグの開始**します。  
   
      プロジェクトがビルドされ、 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] の新しいインスタンスが実験モードで起動されます。  
   
-    -   または、 **[デバッグなしで開始]** を選択することもできます。 これにより、プログラムの起動時間が短縮されます。  
+    - または、 **[デバッグなしで開始]** を選択することもできます。 これにより、プログラムの起動時間が短縮されます。  
   
-2.  Visual Studio の実験用のインスタンスでモデリング プロジェクトを生成または開き、図を生成または開きます。  
+2. Visual Studio の実験用のインスタンスでモデリング プロジェクトを生成または開き、図を生成または開きます。  
   
      拡張機能が読み込まれて実行されます。  
   
-3.  **[デバッグなしで開始]** を使用したがデバッガーを使用する必要がある場合は、Visual Studio のメイン インスタンスに戻ります。 **[デバッグ]** メニューの **[プロセスにアタッチ]** をクリックします。 ダイアログ ボックスで、Visual Studio の実験用インスタンスを選択します。プログラム名は **devenv**です。  
+3. **[デバッグなしで開始]** を使用したがデバッガーを使用する必要がある場合は、Visual Studio のメイン インスタンスに戻ります。 **[デバッグ]** メニューの **[プロセスにアタッチ]** をクリックします。 ダイアログ ボックスで、Visual Studio の実験用インスタンスを選択します。プログラム名は **devenv**です。  
   
-##  <a name="Installing"></a> インストールして、拡張機能をアンインストールします。  
+## <a name="Installing"></a> インストールして、拡張機能をアンインストールします。  
  自分のコンピューターまたは他のコンピューターにおいて Visual Studio のメイン インスタンスで拡張機能を実行するには、次の手順を実行します。  
   
-1.  自分のコンピューターで、拡張機能プロジェクトによってビルドされた **.vsix** ファイルを見つけます。  
+1. 自分のコンピューターで、拡張機能プロジェクトによってビルドされた **.vsix** ファイルを見つけます。  
   
-    1.  **ソリューション エクスプローラー**で、プロジェクトのショートカット メニューを開き、 **[エクスプローラーでフォルダーを開く]** をクリックします。  
+    1. **ソリューション エクスプローラー**で、プロジェクトのショートカット メニューを開き、 **[エクスプローラーでフォルダーを開く]** をクリックします。  
   
-    2.  ファイルを見つけます**bin\\\*\\**_プロジェクト_**.vsix**  
+    2. ファイルを見つけます**bin\\\*\\**_プロジェクト_**.vsix**  
   
-2.  拡張機能をインストールするターゲット コンピューターに **.vsix** ファイルをコピーします。 自分のコンピューターでも別のコンピューターでもかまいません。  
+2. 拡張機能をインストールするターゲット コンピューターに **.vsix** ファイルをコピーします。 自分のコンピューターでも別のコンピューターでもかまいません。  
   
-    -   ターゲット コンピューターは、**source.extension.vsixmanifest** の **[インストールの対象]** タブで指定した Visual Studio のいずれかのエディションを搭載している必要があります。  
+    - ターゲット コンピューターは、**source.extension.vsixmanifest** の **[インストールの対象]** タブで指定した Visual Studio のいずれかのエディションを搭載している必要があります。  
   
-3.  ターゲット コンピューターで **.vsix** ファイルを開きます。たとえば、ダブルクリックして開きます。  
+3. ターゲット コンピューターで **.vsix** ファイルを開きます。たとえば、ダブルクリックして開きます。  
   
      **Visual Studio 拡張機能インストーラー** が起動され、拡張機能がインストールされます。  
   
-4.  Visual Studio を起動または再起動します。  
+4. Visual Studio を起動または再起動します。  
   
 #### <a name="to-uninstall-an-extension"></a>拡張機能をアンインストールするには  
   
@@ -141,13 +138,10 @@ Visual Studio では、モデリング図に対して拡張機能を定義する
   
    拡張機能の障害が原因で読み込みが失敗し、エラー ウィンドウにレポートが生成されることがまれにありますが、それは拡張機能マネージャーには表示されません。 次の場所からファイルを削除することによって、拡張機能を削除する場合、場所 *%localappdata%* は通常*DriveName*: \Users\\*ユーザー名*\AppData\Local:  
   
-   *%Localappdata%* **\Microsoft\VisualStudio\\[バージョン] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ## <a name="see-also"></a>関連項目  
  [プロファイルを定義すると、UML を拡張](../modeling/define-a-profile-to-extend-uml.md)   
  [定義のカスタム モデリング ツールボックス アイテム](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [UML モデルの検証制約を定義します。](../modeling/define-validation-constraints-for-uml-models.md)   
  [モデリング図にメニュー コマンドを定義する](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-
-

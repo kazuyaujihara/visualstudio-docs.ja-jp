@@ -11,12 +11,12 @@ ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
 caps.latest.revision: 49
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fe1aa2d105756ac6f727a54e431b8324176f7516
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2c5df1ce1721c63b5c5cfc3c5b94929da088660f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077011"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>ツール ウィンドウへのツールバーの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ ms.locfileid: "58977421"
   
 ## <a name="creating-a-toolbar-for-a-tool-window"></a>ツール ウィンドウのツールバーの作成  
   
-1.  という名前の VSIX プロジェクトを作成する`TWToolbar`という名前の両方をメニュー コマンドを持つ**TWTestCommand**というツール ウィンドウと**TestToolWindow**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)と[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。 ツール ウィンドウのテンプレートを追加する前に、コマンドの項目テンプレートを追加する必要があります。  
+1. という名前の VSIX プロジェクトを作成する`TWToolbar`という名前の両方をメニュー コマンドを持つ**TWTestCommand**というツール ウィンドウと**TestToolWindow**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能の作成](../extensibility/creating-an-extension-with-a-menu-command.md)と[ツール ウィンドウで、拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。 ツール ウィンドウのテンプレートを追加する前に、コマンドの項目テンプレートを追加する必要があります。  
   
-2.  TWTestCommandPackage.vsct の Symbols セクションを探します。 GuidTWTestCommandPackageCmdSet をという名前の GuidSymbol ノードで次のようにツールバーとツールバーのグループを宣言します。  
+2. TWTestCommandPackage.vsct の Symbols セクションを探します。 GuidTWTestCommandPackageCmdSet をという名前の GuidSymbol ノードで次のようにツールバーとツールバーのグループを宣言します。  
   
     ```xml  
     <IDSymbol name="TWToolbar" value="0x1000" />  
     <IDSymbol name="TWToolbarGroup" value="0x1050" />  
     ```  
   
-3.  上部にある、`Commands`セクションで、作成、`Menus`セクション。 追加、`Menu`ツールバーを定義する要素。  
+3. 上部にある、`Commands`セクションで、作成、`Menus`セクション。 追加、`Menu`ツールバーを定義する要素。  
   
     ```xml  
     <Menus>  
@@ -59,7 +59,7 @@ ms.locfileid: "58977421"
   
      ツールバーは、サブメニューのような入れ子にすることはできません。 そのため、親を割り当てるにはありません。 またがありません、優先順位を設定するため、ユーザーがツールバーを移動できます。 通常、ツールバーの初期配置がプログラムで定義されているが、ユーザーがそれ以降の変更が保存されます。  
   
-4.  Groups セクションでは、ツールバーのコマンドを格納するグループを定義します。  
+4. Groups セクションでは、ツールバーのコマンドを格納するグループを定義します。  
   
     ```xml  
   
@@ -68,7 +68,7 @@ ms.locfileid: "58977421"
     </Group>  
     ```  
   
-5.  ボタンのセクションでは既存のボタン要素の親をツールバーのグループに変更して、ツールバーが表示されますようにします。  
+5. ボタンのセクションでは既存のボタン要素の親をツールバーのグループに変更して、ツールバーが表示されますようにします。  
   
     ```xml  
     <Button guid="guidTWTestCommandPackageCmdSet" id="TWTestCommandId" priority="0x0100" type="Button">  
@@ -86,20 +86,20 @@ ms.locfileid: "58977421"
   
 ## <a name="adding-the-toolbar-to-the-tool-window"></a>ツール ウィンドウにツールバーを追加します。  
   
-1.  TWTestCommandPackageGuids.cs では、次の行を追加します。  
+1. TWTestCommandPackageGuids.cs では、次の行を追加します。  
   
     ```csharp  
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file  
     public const int TWToolbar = 0x1000;  
     ```  
   
-2.  TestToolWindow.cs で次のコードを追加ステートメントを使用します。  
+2. TestToolWindow.cs で次のコードを追加ステートメントを使用します。  
   
     ```csharp  
     using System.ComponentModel.Design;  
     ```  
   
-3.  TestToolWindow コンス トラクターでは、次の行を追加します。  
+3. TestToolWindow コンス トラクターでは、次の行を追加します。  
   
     ```csharp  
     this.ToolBar = new CommandID(new Guid(TWTestCommandPackageGuids.guidTWTestCommandPackageCmdSet), TWTestCommandPackageGuids.TWToolbar);  
@@ -107,13 +107,13 @@ ms.locfileid: "58977421"
   
 ## <a name="testing-the-toolbar-in-the-tool-window"></a>ツール ウィンドウで、ツールバーのテスト  
   
-1.  プロジェクトをビルドし、デバッグを開始します。 Visual Studio の実験用インスタンスが表示されます。  
+1. プロジェクトをビルドし、デバッグを開始します。 Visual Studio の実験用インスタンスが表示されます。  
   
-2.  **ビュー/その他の Windows**  メニューのをクリックして**テスト ToolWindow**ツール ウィンドウを表示します。  
+2. **ビュー/その他の Windows**  メニューのをクリックして**テスト ToolWindow**ツール ウィンドウを表示します。  
   
      上部のツールバーのような既定のアイコン) がツール ウィンドウのタイトルのすぐ下の左に表示されます。  
   
-3.  ツールバーで、メッセージを表示するアイコンをクリックします。 **TWTestCommandPackage 内 TWToolbar.TWTestCommand.MenuItemCallback()** します。  
+3. ツールバーで、メッセージを表示するアイコンをクリックします。 **TWTestCommandPackage 内 TWToolbar.TWTestCommand.MenuItemCallback()** します。  
   
 ## <a name="see-also"></a>関連項目  
  [ツール バーの追加](../extensibility/adding-a-toolbar.md)

@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c2b8df3878f67207b22127881722aedd8caae8e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6befa20bcda7f30896fb2b04fadefb0eb5f21f8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408404"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>検索式の高度な検索演算子
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "54775575"
 高度な検索演算子を使用すると、単純なからより複雑な検索式を作成してコンテンツの検索を調整できます。 次の表にあるとおり、演算子はクエリが実行されるコンテキストを制限します。  
   
 > [!WARNING]
->  高度な検索演算子を入力するときは、検索エンジンに認識させるために最後にコロンを付け、コロンの前にはスペースを入れません。  
+> 高度な検索演算子を入力するときは、検索エンジンに認識させるために最後にコロンを付け、コロンの前にはスペースを入れません。  
   
-|検索対象|使用|例|結果|  
+|検索対象|用途|例|結果|  
 |-------------------|---------|-------------|------------|  
 |トピックのタイトルの言葉|title:|title:binaryreader|タイトルに "binaryreader" が含まれるトピック。|  
 |コード サンプルの言葉|code:|code:readdouble|コード サンプルに "readdouble" が含まれるトピック。|  
@@ -40,7 +40,7 @@ ms.locfileid: "54775575"
   
  code: 演算子を利用して任意のいくつかのプログラミング言語に関するコンテンツを検索できますが、特定のプログラミング言語でマークアップされているコンテンツのみ、結果が返されます。 次の表は、この演算子が対応しているプログラミング言語を一覧にまとめたものです。  
   
-|プログラミング言語|使用|  
+|プログラミング言語|用途|  
 |--------------------------|---------|  
 |Visual Basic|code:vb<br /><br /> または<br /><br /> code:visualbasic|  
 |C#|code:c#<br /><br /> または<br /><br /> code:csharp|  

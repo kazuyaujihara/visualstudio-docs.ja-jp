@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 84c55f9568cc227d067875d7579a99acb81f12a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a69b6fd2f96f737d032676e5cd250a985bf69fb6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446469"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio グラフィックス診断の使用を開始する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58975258"
 
  Windows 8.1 を実行する開発用コンピューターから、Windows 10 を実行しているリモート再生コンピューターを使用するには、開発用コンピューターに Windows 10 SDK をインストールして、再生コンピューターにオプションのグラフィック ツール機能をインストールする必要があります。
 
-##  <a name="InstallGraphicsTools"></a> Windows 10 用のグラフィック ツールをインストールする
+## <a name="InstallGraphicsTools"></a> Windows 10 用のグラフィック ツールをインストールする
  Windows 10 では、グラフィックス診断のインフラストラクチャが、"*グラフィック ツール*" と呼ばれる Windows のオプション機能によって提供されます。 この機能は、キャプチャするアプリが以前のバージョンの Windows を対象にしているかどうか、またはどのバージョンの Direct3D を使用しているかに関係なく、Windows 10 でグラフィックス情報をキャプチャおよび再生するために必要です。 グラフィック ツール機能を事前にインストールすることができます。それ以外の場合は、Visual Studio からグラフィックス診断セッションを最初に開始するときに、オンデマンドでインストールされます。
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Windows 10 用のグラフィック ツールをインストールするには
@@ -62,7 +62,7 @@ ms.locfileid: "58975258"
    グラフィック ツールの機能は Windows 10 SDK をインストールするときにも、自動的にインストールされます。
 
 > [!TIP]
->  Windows 10 のオプションのグラフィック ツール機能は、コマンド ライン キャプチャ プログラム **dxcap.exe** など、軽量のキャプチャおよび再生機能を提供しており、開発者用ツールがインストールされていないコンピューターでサポート、テスト、および診断を行うシナリオで利用できます。 詳細については、「[コマンド ライン キャプチャ ツール](../debugger/command-line-capture-tool.md)」のトピックを参照してください。
+> Windows 10 のオプションのグラフィック ツール機能は、コマンド ライン キャプチャ プログラム **dxcap.exe** など、軽量のキャプチャおよび再生機能を提供しており、開発者用ツールがインストールされていないコンピューターでサポート、テスト、および診断を行うシナリオで利用できます。 詳細については、「[コマンド ライン キャプチャ ツール](../debugger/command-line-capture-tool.md)」のトピックを参照してください。
 
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>グラフィックス診断を初めて使用する
  これで、必要なものがすべて揃い、グラフィックス診断の使用を開始する準備が整いました。 以下の手順に実行します。
@@ -80,14 +80,14 @@ ms.locfileid: "58975258"
  これで、最初のグラフィックス診断のセッションを開始する準備ができました。 Visual Studio のメイン メニューで、選択**デバッグ、グラフィックス診断の開始**、キーを押すか**alt キーを押しながら f5 キー**します。 これで、グラフィックス診断の下でアプリが開始され、Visual Studio の診断セッションのウィンドウが表示されます。
 
 > [!IMPORTANT]
->  Windows 10 でアプリを実行しており、オプションのグラフィック ツール機能をまだインストールしていない場合は、今すぐインストールするよう求められます。 インストールは、Windows 10 でグラフィックス診断を使用する前に済ませておく必要があります。
+> Windows 10 でアプリを実行しており、オプションのグラフィック ツール機能をまだインストールしていない場合は、今すぐインストールするよう求められます。 インストールは、Windows 10 でグラフィックス診断を使用する前に済ませておく必要があります。
 
 ### <a name="3---capture-frames"></a>3 - フレームをキャプチャする
  アプリが起動すると、すぐにフレームをキャプチャできます。
 
 ##### <a name="to-capture-single-frames"></a>1 つのフレームをキャプチャするには
 
--   Visual Studio の [グラフィックス] ツール バーまたは診断セッション ウィンドウで、**[フレームのキャプチャ]** を選択します。 または、アプリにフォーカスがある場合は、キーを押す**Print Screen**します。
+- Visual Studio の [グラフィックス] ツール バーまたは診断セッション ウィンドウで、**[フレームのキャプチャ]** を選択します。 または、アプリにフォーカスがある場合は、キーを押す**Print Screen**します。
 
 ##### <a name="to-capture-a-sequence-of-frames"></a>フレームのシーケンスをキャプチャするには
 

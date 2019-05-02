@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f512ac0788128db87269407c10ae400268283f5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 4929464f04ecb630f4c6898f7b2cc1ce132a79a9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445976"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>コード化された UI テストを使用した SharePoint 2010 アプリケーションのテスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,16 +22,16 @@ ms.locfileid: "57873545"
   
  **必要条件**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>コード化された UI テストについて把握しておくべきこと  
  コード化された UI テストを使用する利点の詳細については、「[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)」と「[Visual Studio 2012 を使用した継続的デリバリーのためのテスト – 第 5 章: システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)」を参照してください。  
   
  **ノート**  
   
--   ![必須コンポーネント](../test/media/prereq.png "必須コンポーネント") SharePoint アプリケーションのコード化された UI テストは、SharePoint 2010 でのみサポートされます。  
+- ![必須コンポーネント](../test/media/prereq.png "必須コンポーネント") SharePoint アプリケーションのコード化された UI テストは、SharePoint 2010 でのみサポートされます。  
   
--   ![必須コンポーネント](../test/media/prereq.png "必須コンポーネント") SharePoint アプリケーションでは、Visio および PowerPoint 2010 コントロールはサポートされていません。  
+- ![必須コンポーネント](../test/media/prereq.png "必須コンポーネント") SharePoint アプリケーションでは、Visio および PowerPoint 2010 コントロールはサポートされていません。  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>SharePoint アプリのコード化された UI テストを作成する  
  SharePoint 2010 アプリケーションでの[コード化された UI テストの作成](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) 方法は、他の種類のアプリケーションでのテストの作成方法と同じです。 記録と再生は、Web 編集インターフェイス上のすべてのコントロールでサポートされています。 カテゴリと Web パーツを選択するためのインターフェイスは、すべてが標準 Web コントロールです。  
@@ -39,21 +39,21 @@ ms.locfileid: "57873545"
  ![SharePoint Web パーツ](../test/media/cuit-sharepoint.png "CUIT_SharePoint")  
   
 > [!NOTE]
->  操作を記録している場合は、コードを生成する前に操作を検証します。 マウス ホバーにはいくつかの動作が関連付けられているため、既定で有効になっています。 コード化された UI テストから冗長なホバーを削除するようにしてください。 そのためには、テスト用のコードを編集するか、 [コード化された UI テスト エディター](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)を使用します。  
+> 操作を記録している場合は、コードを生成する前に操作を検証します。 マウス ホバーにはいくつかの動作が関連付けられているため、既定で有効になっています。 コード化された UI テストから冗長なホバーを削除するようにしてください。 そのためには、テスト用のコードを編集するか、 [コード化された UI テスト エディター](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)を使用します。  
   
 ## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>SharePoint アプリ内に Office 2010 コントロールのテストを含める  
  SharePoint アプリでいくつかの Office 2010 Web パーツの自動化を有効にするには、コードを少し変更する必要があります。  
   
 > [!WARNING]
->  Visio および PowerPoint 2010 コントロールはサポートされていません。  
+> Visio および PowerPoint 2010 コントロールはサポートされていません。  
   
 ### <a name="excel-2010-cell-controls"></a>Excel 2010 のセル コントロール  
  Excel セル コントロールを含めるには、コード化された UI テストのコードを少し変更する必要があります。  
   
 > [!WARNING]
->  Excel のセルにテキストを入力してから方向キーを操作すると、正しく記録されません。 セルの選択にはマウスを使用してください。  
+> Excel のセルにテキストを入力してから方向キーを操作すると、正しく記録されません。 セルの選択にはマウスを使用してください。  
   
- 空のセルに対する操作を記録している場合は、セルをダブルクリックしてからテキスト設定操作を実行して、コードを変更する必要があります。 そうする必要があるのは、セルをクリックした後、キーボードを操作すると、セル内の `textarea` がアクティブになるためです。 単に空のセルで `setvalue` を記録すると、セルがクリックされるまでは存在しない `editbox` が検索されます。 次に例を示します。  
+ 空のセルに対する操作を記録している場合は、セルをダブルクリックしてからテキスト設定操作を実行して、コードを変更する必要があります。 そうする必要があるのは、セルをクリックした後、キーボードを操作すると、セル内の `textarea` がアクティブになるためです。 単に空のセルで `setvalue` を記録すると、セルがクリックされるまでは存在しない `editbox` が検索されます。 例:  
   
 ```csharp  
 Mouse.DoubliClick(uiItemCell,new Point(31,14));  
@@ -62,14 +62,14 @@ uiGridKeyboardInputEdit.Text=value;
   
  空でないセルに対する操作を記録している場合は、セルにテキストを追加したときに新しい \<div> コントロールがセルの子として追加されるため、記録はより複雑になります。 新しい \<div> コントロールには、入力したテキストが含まれます。 レコーダーは新しい \<div> コントロールに対する操作を記録する必要がありますが、新しい \<div> コントロールはテキストが入力されるまで存在しないため、記録できません。 この問題に対応するために、手動で次のようにコードを変更する必要があります。  
   
-1.  セルの初期化に移動して、 `RowIndex` および `ColumnIndex` プライマリ プロパティを作成します。  
+1. セルの初期化に移動して、 `RowIndex` および `ColumnIndex` プライマリ プロパティを作成します。  
   
     ```csharp  
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. RowIndex] = "3";   
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. ColumnIndex] = "3";  
     ```  
   
-2.  セルの `HtmlDiv` 子を検索します。  
+2. セルの `HtmlDiv` 子を検索します。  
   
     ```csharp  
     private UITestControl getControlToDoubleClick(HtmlCell cell)   
@@ -85,13 +85,13 @@ uiGridKeyboardInputEdit.Text=value;
   
     ```  
   
-3.  `HtmlDiv`にマウスのダブルクリック操作のコードを追加します。  
+3. `HtmlDiv`にマウスのダブルクリック操作のコードを追加します。  
   
     ```csharp  
     Mouse.DoubleClick(uIItemPane, new Point(31, 14)); )  
     ```  
   
-4.  `TextArea`にテキストを設定するコードを追加します。  
+4. `TextArea`にテキストを設定するコードを追加します。  
   
     ```csharp  
     uIGridKeyboardInputEdit.Text = value; }  
@@ -114,15 +114,15 @@ uiGridKeyboardInputEdit.Text=value;
   
 #### <a name="testing-silverlight-web-parts"></a>Silverlight Web パーツをテストする  
   
-1.  Fiddler を起動します。  
+1. Fiddler を起動します。  
   
-2.  ブラウザーのキャッシュを消去します。 この操作が必要なのは、Silverlight UI オートメーション ヘルパー DLL が含まれている XAP ファイルが、通常はキャッシュされるためです。 変更した XAP ファイルが確実に格納されるようにするために、ブラウザーのキャッシュを消去します。  
+2. ブラウザーのキャッシュを消去します。 この操作が必要なのは、Silverlight UI オートメーション ヘルパー DLL が含まれている XAP ファイルが、通常はキャッシュされるためです。 変更した XAP ファイルが確実に格納されるようにするために、ブラウザーのキャッシュを消去します。  
   
-3.  Web ページを開きます。  
+3. Web ページを開きます。  
   
-4.  通常の Web アプリケーション テストと同様に、レコーダーを開始し、コードを生成します。  
+4. 通常の Web アプリケーション テストと同様に、レコーダーを開始し、コードを生成します。  
   
-5.  生成されたコードが、Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll を参照することを確認する必要があります。  
+5. 生成されたコードが、Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll を参照することを確認する必要があります。  
   
      詳細については、「 [Visual Studio 2012 での SharePoint 2010 の UI テスト](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)」をご覧ください。  
   

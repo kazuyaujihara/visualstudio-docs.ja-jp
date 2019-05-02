@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: fbe0942226e44e5ca2908f7c13f34595bef34887
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ac2f040addb4c387afe0b325fe53b6a9c289f33a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819620"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android Native Activity アプリの作成
 
@@ -45,9 +45,9 @@ Android Native Activity アプリを作成する前に、すべてのシステ�
 
    新しい Android Native Activity アプリのソリューションには、次の 2 つのプロジェクトが含まれています。
 
--   `MyAndroidApp.NativeActivity` には、アプリが Android 上でネイティブ アクティビティとして動作するための参照とグルー コードが含まれています。 グルー コードからのエントリ ポイントの実装は *main.cpp* にあります。 プリコンパイル済みヘッダーは *pch.h* にあります。 この Native Activity アプリ プロジェクトは、共有ライブラリ (*.so*) ファイルにコンパイルされ、Packaging プロジェクトで使用されます。
+- `MyAndroidApp.NativeActivity` には、アプリが Android 上でネイティブ アクティビティとして動作するための参照とグルー コードが含まれています。 グルー コードからのエントリ ポイントの実装は *main.cpp* にあります。 プリコンパイル済みヘッダーは *pch.h* にあります。 この Native Activity アプリ プロジェクトは、共有ライブラリ (*.so*) ファイルにコンパイルされ、Packaging プロジェクトで使用されます。
 
--   `MyAndroidApp.Packaging` は、Android デバイスまたはエミュレーターに配置する *.apk* ファイルを作成します。 これには、リソースと、マニフェスト プロパティを設定する *AndroidManifest.xml* ファイルが含まれています。 Ant のビルド プロセスを制御する *build.xml* ファイルも含まれています。 それは既定でスタートアップ プロジェクトとして設定されているため、Visual Studio から直接、配置して実行できます。
+- `MyAndroidApp.Packaging` は、Android デバイスまたはエミュレーターに配置する *.apk* ファイルを作成します。 これには、リソースと、マニフェスト プロパティを設定する *AndroidManifest.xml* ファイルが含まれています。 Ant のビルド プロセスを制御する *build.xml* ファイルも含まれています。 それは既定でスタートアップ プロジェクトとして設定されているため、Visual Studio から直接、配置して実行できます。
 
 ## <a name="build-and-run-the-default-android-native-activity-app"></a>既定の Android Native Activity アプリをビルドして実行する
 
@@ -55,21 +55,21 @@ Android Native Activity アプリを作成する前に、すべてのシステ�
 
 ## <a name="to-build-and-run-the-default-native-activity-app"></a>既定の Native Activity アプリをビルドして実行するには
 
-1.  選択されていない場合は、 **[ソリューション プラットフォーム]** ドロップダウン リストから **[x86]** を選択します。
+1. 選択されていない場合は、 **[ソリューション プラットフォーム]** ドロップダウン リストから **[x86]** を選択します。
 
      ![ソリューション プラットフォーム ドロップダウン x86 の選択](../cross-platform/media/cppmdd_rc_na_solution_x86.png "CPPMDD_RC_NA_Solution_x86")
 
      **[ソリューション プラットフォーム]** リストが表示されない場合は、**[ボタンの追加と削除]** リストから **[ソリューション プラットフォーム]** を選択してから、使用するプラットフォームを選択します。
 
-2.  メニュー バーで、**[ビルド]** > **[ソリューションのビルド]** の順にクリックします。
+2. メニュー バーで、**[ビルド]** > **[ソリューションのビルド]** の順にクリックします。
 
      ソリューションに含まれる 2 つのプロジェクトのビルド プロセスの出力が [出力] ウィンドウに表示されます。
 
-3.  配置ターゲットとして、いずれかの VS Emulator Android Phone (x86) プロファイルを選択します。
+3. 配置ターゲットとして、いずれかの VS Emulator Android Phone (x86) プロファイルを選択します。
 
      別のエミュレーターをインストールしてあるか、Android デバイスを接続してある場合は、配置対象のドロップダウン リストからそれらを選択できます。
 
-4.  **F5** キーを押してデバッグを開始するか、Shift + F5 キーを押してデバッグなしで開始します。
+4. **F5** キーを押してデバッグを開始するか、Shift + F5 キーを押してデバッグなしで開始します。
 
      Visual Studio Emulator for Android で、既定のアプリは次のようになります。
 
@@ -77,6 +77,6 @@ Android Native Activity アプリを作成する前に、すべてのシステ�
 
      Visual Studio によってエミュレーターが起動されます。コードを読み込んで配置するのに数秒かかります。 アプリが開始されると、ブレークポイントの設定や、デバッガーを使用したステップ実行、ローカルの確認、値のウォッチができるようになります。
 
-5.  **Shift** + **F5** キーを押してデバッグを停止します。
+5. **Shift** + **F5** キーを押してデバッグを停止します。
 
      エミュレーターは実行され続ける独立したプロセスです。 同じエミュレーターに対して、コードを何度も編集、コンパイル、配置できます。

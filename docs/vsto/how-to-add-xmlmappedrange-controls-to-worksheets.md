@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f055ba84c4e6a6b48c13f3eef9a433eb4c5b3e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 60f1fe8330e3a40676738c4187273ee60215db6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427443"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>方法: ワークシートに XMLMappedRange コントロールを追加します。
   Microsoft Office Excel のセルに XML 要素をマップすると、Visual Studio は自動的に追加、<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールをワークシートにします。
@@ -26,39 +26,39 @@ ms.locfileid: "56605849"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールでは使用できません、**ツールボックス**または**データソース**ウィンドウ。 さらに、作成することはできません<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>プログラムで制御します。
+> <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールでは使用できません、**ツールボックス**または**データソース**ウィンドウ。 さらに、作成することはできません<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>プログラムで制御します。
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>ワークシートに XMLMappedRange コントロールを追加するには
 
-1.  Visual Studio デザイナーで Excel ブックを開きます。
+1. Visual Studio デザイナーで Excel ブックを開きます。
 
-2.  コントロールを追加するワークシートを開きます。
+2. コントロールを追加するワークシートを開きます。
 
-3.  **開発者**] タブで [**ソース**します。
+3. **開発者**] タブで [**ソース**します。
 
     > [!NOTE]
-    >  場合、**開発者**タブがリボンに表示されない、有効にする必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
+    > 場合、**開発者**タブがリボンに表示されない、有効にする必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
 
      **XML ソース**タスク ウィンドウが表示されます。
 
-4.  **XML ソース**タスク ウィンドウで、をクリックして**XML マップ**します。
+4. **XML ソース**タスク ウィンドウで、をクリックして**XML マップ**します。
 
-5.  **XML マップ**ダイアログ ボックスで、をクリックして**追加**します。
+5. **XML マップ**ダイアログ ボックスで、をクリックして**追加**します。
 
      **XML ソース** ダイアログ ボックスが表示されます。
 
-6.  XML スキーマを選択、 **XML ソース** ダイアログ ボックスをクリックします**オープン**します。
+6. XML スキーマを選択、 **XML ソース** ダイアログ ボックスをクリックします**オープン**します。
 
      スキーマを追加、 **XML マップ** ダイアログ ボックス。
 
-7.  **XML マップ**ダイアログ ボックスで、をクリックして**OK**。
+7. **XML マップ**ダイアログ ボックスで、をクリックして**OK**。
 
-8.  要素をドラッグ、 **XML ソース**ワークシートのセルに作業ウィンドウ。
+8. 要素をドラッグ、 **XML ソース**ワークシートのセルに作業ウィンドウ。
 
      <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>が作成され、プロジェクトに追加します。
 
     > [!NOTE]
-    >  親要素をドラッグする場合、 **XML ソース** 作業ウィンドウ、<xref:Microsoft.Office.Tools.Excel.ListObject>コントロールが作成されます。
+    > 親要素をドラッグする場合、 **XML ソース** 作業ウィンドウ、<xref:Microsoft.Office.Tools.Excel.ListObject>コントロールが作成されます。
 
 ## <a name="see-also"></a>関連項目
 - [XmlMappedRange コントロール](../vsto/xmlmappedrange-control.md)

@@ -8,14 +8,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daa4203ccdcbce89f1eb09efdd9433210bcbc987
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
-ms.translationtype: MT
+ms.openlocfilehash: 30ab0004a492316ff9cbe11016e24b1a28dadf16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444895"
 ---
-# <a name="whats-new-in-the-visual-studio-2019-sdk"></a>新機能については、Visual Studio 2019 SDK です。
+# <a name="whats-new-in-the-visual-studio-2019-sdk"></a>Visual Studio 2019 SDK の新機能
 
 Visual Studio SDK では、Visual Studio 2019 の次の新規および更新の機能があります。
 

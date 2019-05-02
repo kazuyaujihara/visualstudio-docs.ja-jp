@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0db376b57c6f581137b2bf48fbc5d354651a8ef6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 612549e9aceb7a9bad6da2a5388dedd277469bad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908787"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE での選択と通貨
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]選択を使用してユーザーの情報がオブジェクトに現在選択されている統合開発環境 (IDE) の保持*コンテキスト*します。 選択範囲のコンテキストで Vspackage を活用する通貨の 2 つの方法で追跡。
 
--   によって、通貨については、IDE に Vspackage を伝達します。
+- によって、通貨については、IDE に Vspackage を伝達します。
 
--   IDE 内でユーザーの現在アクティブな選択を監視します。
+- IDE 内でユーザーの現在アクティブな選択を監視します。
 
 ## <a name="selection-context"></a>選択範囲のコンテキスト
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE グローバルの追跡 IDE の通貨で独自のグローバルの選択コンテキスト オブジェクト。 次の表では、選択コンテキストを構成する要素を示します。
@@ -38,9 +38,9 @@ ms.locfileid: "56653958"
 
  さらに、環境では、2 つのグローバル リストを保持しています。
 
--   アクティブな UI コマンド識別子の一覧
+- アクティブな UI コマンド識別子の一覧
 
--   現在アクティブな要素の型の一覧。
+- 現在アクティブな要素の型の一覧。
 
 ### <a name="window-types-and-selection"></a>ウィンドウの種類と選択
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE では、2 つの一般的な種類に windows が整理されます。
@@ -58,9 +58,9 @@ ms.locfileid: "56653958"
 ### <a name="events-and-currency"></a>イベントと通貨
  通貨の環境の概念に影響する 2 種類のイベントが発生する可能性があります。
 
--   グローバル レベルに伝達され、ウィンドウ フレームの選択コンテキストを変更するイベントです。 このようなイベントの例には、グローバル ツール ウィンドウが開かれている、または開いているプロジェクトの種類のツール ウィンドウは、開いている MDI 子ウィンドウが含まれます。
+- グローバル レベルに伝達され、ウィンドウ フレームの選択コンテキストを変更するイベントです。 このようなイベントの例には、グローバル ツール ウィンドウが開かれている、または開いているプロジェクトの種類のツール ウィンドウは、開いている MDI 子ウィンドウが含まれます。
 
--   トレース ウィンドウ フレームの選択コンテキスト内で要素を変更するイベントです。 例には、プロジェクトの種類 ウィンドウで選択を変更するか DocObject 内の選択範囲の変更が含まれます。
+- トレース ウィンドウ フレームの選択コンテキスト内で要素を変更するイベントです。 例には、プロジェクトの種類 ウィンドウで選択を変更するか DocObject 内の選択範囲の変更が含まれます。
 
 ## <a name="see-also"></a>関連項目
 - [コンテキスト オブジェクトの選択](../../extensibility/internals/selection-context-objects.md)

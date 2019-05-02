@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b96eaa576fbb7016b8c907b19a15be3e9c6dedd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e5e627d758a1249a1e9b5e877255a67cfb255cf9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62799067"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>カスタム エディターでの構文の色分け表示
 Visual Studio 環境の SDK エディターなどのコア エディターは、構文の特定の項目を識別し、特定のドキュメント ビューの指定した色で表示する言語サービスを使用します。
@@ -23,36 +23,36 @@ Visual Studio 環境の SDK エディターなどのコア エディターは、
 ## <a name="colorization-requirements"></a>色づけの要件
  すべてのエディターの言語サービスの colorizer を実装する必要があります。
 
-1.  実装するオブジェクトを使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>テキストの色で表示されますおよび実装するオブジェクトを管理する<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>テキストのドキュメント ビューを提供します。
+1. 実装するオブジェクトを使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>テキストの色で表示されますおよび実装するオブジェクトを管理する<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>テキストのドキュメント ビューを提供します。
 
-2.  言語サービスの特定の GUID を使用して、VSPackage のサービス プロバイダーのクエリを実行して、特定の言語サービスへのインターフェイスを取得します。
+2. 言語サービスの特定の GUID を使用して、VSPackage のサービス プロバイダーのクエリを実行して、特定の言語サービスへのインターフェイスを取得します。
 
-3.  呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>メソッドを実装するオブジェクトの<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>します。 このメソッドは、使用して、言語サービスを関連付けます、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>色で表示されますが、テキストを管理する VSPackage を使用して実装します。
+3. 呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>メソッドを実装するオブジェクトの<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>します。 このメソッドは、使用して、言語サービスを関連付けます、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>色で表示されますが、テキストを管理する VSPackage を使用して実装します。
 
 ## <a name="core-editor-usage-of-a-language-services-colorizer"></a>言語サービスの Colorizer のコア エディターの使用状況
  コア エディター、解析および言語サービスの colorizer によるテキストのレンダリングのインスタンスによって、colorizer の言語サービスを取得する場合は、さらに、一部の介入を必要とせずに自動的に発生します。
 
  IDE に透過的に。
 
--   呼び出しを解析し、テキストの分析が追加または変更の実装では、必要に応じて colorizer<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>します。
+- 呼び出しを解析し、テキストの分析が追加または変更の実装では、必要に応じて colorizer<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>します。
 
--   提供されるドキュメント ビューによって提供される表示により、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>実装が更新され、colorizer によって返される情報を使用して再描画します。
+- 提供されるドキュメント ビューによって提供される表示により、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>実装が更新され、colorizer によって返される情報を使用して再描画します。
 
 ## <a name="non-core-editor-usage-of-a-language-services-colorizer"></a>言語サービスの Colorizer の非コア エディターの使用状況
  非コア エディター インスタンスでは、言語サービスの構文の色づけのサービスを使用できますもが、必要があります明示的に取得し適用、サービスの colorizer のドキュメント ビュー自体を再描画します。
 
  これを行うには、非コア エディターが必要です。
 
-1.  言語サービスの colorizer オブジェクトを取得します (実装<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>と<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>)。 VSPackage は呼び出すことによって、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>言語サービスのインターフェイスのメソッド。
+1. 言語サービスの colorizer オブジェクトを取得します (実装<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>と<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>)。 VSPackage は呼び出すことによって、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>言語サービスのインターフェイスのメソッド。
 
-2.  呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>テキストの特定の範囲の一覧を要求するメソッド。
+2. 呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>テキストの特定の範囲の一覧を要求するメソッド。
 
      <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>メソッドは値の配列を返します、色分けされて表示される span の各文字のテキストに 1 つ。 また、コメント、キーワード、またはデータ型などの装飾が可能な項目の特定の種類としてテキスト範囲を識別します。
 
-3.  によって返される色づけの情報を使用して<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>を再描画し、そのテキストが表示されます。
+3. によって返される色づけの情報を使用して<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>を再描画し、そのテキストが表示されます。
 
 > [!NOTE]
-> 言語サービスの colorizer だけでなく、VSPackage は、汎用的な Visual Studio 環境の SDK のテキストの色指定メカニズムを使用してが選択できます。 このメカニズムの詳細については、[を使用してフォントおよび色](../extensibility/using-fonts-and-colors.md)を参照してください。
+> 言語サービスの colorizer だけでなく、VSPackage は、汎用的な Visual Studio 環境の SDK のテキストの色指定メカニズムを使用してが選択できます。 このメカニズムの詳細については、次を参照してください。[を使用してフォントおよび色](../extensibility/using-fonts-and-colors.md)します。
 
 ## <a name="see-also"></a>関連項目
 

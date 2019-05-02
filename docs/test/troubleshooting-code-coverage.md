@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 07212350ab95c3f9ee3d00fb2ac33768964555e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990495"
 ---
 # <a name="troubleshoot-code-coverage"></a>コード カバレッジのトラブルシューティング
 
@@ -43,9 +43,9 @@ Visual Studio のコード カバレッジ分析ツールは、ネイティブ �
 
 テストを変更し、再実行したときに、まだ前のコード カバレッジの結果が表示され、コードの色分けも前の実行のものである場合があります。
 
-1.  コード カバレッジの分析を実行します。
+1. コード カバレッジの分析を実行します。
 
-2.  **[コード カバレッジの結果]** ウィンドウで、最新の結果セットが選択されていることを確認します。
+2. **[コード カバレッジの結果]** ウィンドウで、最新の結果セットが選択されていることを確認します。
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>.pdb (シンボル) ファイルが使用できない
 
@@ -91,17 +91,17 @@ Visual Studio のコード カバレッジ分析ツールは、ネイティブ �
 
 解決&mdash;エラーには次の 2 種類があります。
 
--   **XML エラー**
+- **XML エラー**
 
      Visual Studio XML エディターで *.runsettings* ファイルを開きます。 エラーを示す箇所を探します。
 
--   **正規表現エラー**
+- **正規表現エラー**
 
      ファイル内の各文字列は正規表現です。 エラーのすべてをレビューし、特に次の文字を探します。
 
-    -   一致しないかっこ (...) またはエスケープされないかっこ \\(...\\)。 検索文字列内でかっこを一致させる場合は、エスケープする必要があります。 たとえば、関数を一致させるには `.*MyFunction\(double\)` を使用します。
+    - 一致しないかっこ (...) またはエスケープされないかっこ \\(...\\)。 検索文字列内でかっこを一致させる場合は、エスケープする必要があります。 たとえば、関数を一致させるには `.*MyFunction\(double\)` を使用します。
 
-    -   式の先頭のアスタリスクまたは正符号。 任意の文字列と一致させるには、ピリオドとアスタリスクを続けて使用します (`.*`)。
+    - 式の先頭のアスタリスクまたは正符号。 任意の文字列と一致させるには、ピリオドとアスタリスクを続けて使用します (`.*`)。
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>カスタム .runsettings ファイルに不適切な除外が含まれている
 

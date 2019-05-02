@@ -1,6 +1,7 @@
 ---
 title: '方法: Visual Studio のロックを解除する'
-ms.date: 07/20/2017
+titleSuffix: ''
+ms.date: 03/30/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -8,12 +9,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f40ee1e5eb2fe40261c15b17ce12b7471a2c0c11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549203"
 ---
 # <a name="how-to-unlock-visual-studio"></a>方法: Visual Studio のロックを解除する
 
@@ -27,7 +30,7 @@ Visual Studio は最大で 30 日間無料で評価できます。 IDE にサイ
 
 Microsoft アカウントか、職場または学校アカウントに関連付けられた Visual Studio サブスクリプションまたは Azure DevOps 組織を使用して Visual Studio のロックを解除するには、次の手順を行います。
 
-1. IDE の右上隅にある **[サインイン]** ボタンをクリックします (または、**[ファイル]** > **[アカウントの設定]** の順に移動して **[アカウントの設定]** ダイアログを開き、**[サインイン]** ボタンをクリックします)。
+1. IDE の右上隅にある **[サインイン]** ボタンを選択します (または、**[ファイル]** > **[アカウントの設定]** の順に移動して **[アカウントの設定]** ダイアログを開き、**[サインイン]** ボタンを選択します)。
 
 1. Microsoft アカウントか、職場または学校のアカウントの資格情報を入力します。 Visual Studio は、アカウントに関連付けられている Visual Studio サブスクリプションまたは Azure DevOps 組織を検索します。
 
@@ -36,9 +39,9 @@ Microsoft アカウントか、職場または学校アカウントに関連付�
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>プロダクト キーを使って Visual Studio のロックを解除するには
 
-1. **[ファイル]** > **[アカウントの設定]** の順に選択して **[アカウントの設定]** ダイアログを開き、**[プロダクト キーを使用してライセンスを取得します]** リンクをクリックします。
+1. **[ファイル]** > **[アカウントの設定]** の順に選択して **[アカウントの設定]** ダイアログを開き、**[プロダクト キーを使用してライセンスを取得します]** リンクを選択します。
 
-所定の場所にプロダクト キーを入力します。
+1. 所定の場所にプロダクト キーを入力します。
 
 > [!TIP]
 > Visual Studio のプレリリース版には、プロダクト キーはありません。 プレリリース版を使用するには、IDE にサインインする必要があります。
@@ -47,7 +50,7 @@ Microsoft アカウントか、職場または学校アカウントに関連付�
 
 ### <a name="update-stale-licenses"></a>古いライセンスを更新する
 
- Visual Studio でライセンスが古くなっていることを示す次のようなメッセージが表示されることがあります: "ライセンスが古くなったため、更新する必要があります。"
+ Visual Studio のライセンスが古くなっているという、次のようなメッセージが表示されることがあります。 「ライセンスが古くなったため、更新する必要があります。」
 
  ![Visual Studio の古いライセンスに関するメッセージ](../ide/media/vs2017_stale-license.png)
 
@@ -56,9 +59,9 @@ Microsoft アカウントか、職場または学校アカウントに関連付�
 - 長期間にわたって Visual Studio を使用しなかったか、インターネット接続がなかった。
 - Visual Studio からサインアウトした。
 
-ライセンス トークンの有効期限が切れる前に、はじめに資格情報の再入力を求めるメッセージが Visual Studio により表示されます。
+ライセンス トークンの有効期限が切れる前に、資格情報の再入力を求めるメッセージが Visual Studio により表示されます。
 
-資格情報を再入力しない場合、トークンの有効期限が近づきます。この場合、**[アカウントの設定]** ダイアログで、トークンの有効期限が完全に切れるまでの日数が通知されます。 トークンの有効期限が切れた後は、このアカウントの資格情報またはライセンスを前述の別の方法で再入力しないと、Visual Studio の使用を続行できなくなります。
+資格情報を再入力しない場合、トークンの有効期限が近づきます。この場合、**[アカウントの設定]** ダイアログで、トークンの有効期限が完全に切れるまでの日数が通知されます。 トークンの有効期限が切れた後で Visual Studio を引き続き使用するには、アカウントの資格情報を再入力する必要があります。
 
 > [!Important]
 > インターネットへのアクセスが限定的またはアクセスできない環境で長期間にわたって Visual Studio を使用している場合は、Visual Studio の中断を回避するためにプロダクト キーを使用してロックを解除する必要があります。

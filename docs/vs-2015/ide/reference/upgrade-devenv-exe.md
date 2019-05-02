@@ -13,17 +13,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 465c90736f5470f48d47336bc916ca3cb2c09b6a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b2ba3caf7931449e2c1657270838a45505fd5d92
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779347"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657286"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 ソリューション ファイルおよびそのすべてのプロジェクト ファイル、または指定されたプロジェクト ファイルを、そのファイルに対応する現在の [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] の形式に更新します。  
   
 ## <a name="syntax"></a>構文  
@@ -44,7 +43,7 @@ devenv SolutionFile | ProjectFile /upgrade
   
  ソース管理されたソリューションまたはプロジェクトは、アップグレードする前にチェックアウトする必要があります。  
   
- `/upgrade` スイッチを使用した場合、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] は起動されません。 アップグレードの結果は、ソリューションまたはプロジェクトの開発言語のアップグレード レポートで参照できます。 エラーや使用方法は返されません。 プロジェクトのアップグレードの詳細については[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]を参照してください[方法: トラブルシューティング失敗した Visual Studio プロジェクトのアップグレード](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)します。  
+ `/upgrade` スイッチを使用した場合、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] は起動されません。 アップグレードの結果は、ソリューションまたはプロジェクトの開発言語のアップグレード レポートで参照できます。 エラーや使用方法は返されません。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] でのプロジェクトのアップグレードについて詳しくは、「[How to: Troubleshoot Unsuccessful Visual Studio Project Upgrades (方法: Visual Studio プロジェクトのアップグレードが成功しなかった場合のトラブルシューティング)](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)」をご覧ください。  
   
 ## <a name="example"></a>例  
  この例では、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ソリューションの既定フォルダーにある "MyProject.sln" という名前のソリューション ファイルをアップグレードします。  

@@ -1,30 +1,24 @@
 ---
 title: XML エディター |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 623869f3-040b-4bf4-b353-ddc2229694e4
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5dd1834593be7638a56eb31c70677ea9be146b8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896329"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112176"
 ---
 # <a name="xml-editor"></a>XML エディター
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML エディターは [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio のテキスト エディターに基づいており、XML 言語のサポートが追加されています。 XML エディターには次の機能が含まれます。  
   
 - XML 1.0 の構文チェック。  
@@ -52,13 +46,13 @@ XML エディターは [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual S
 ## <a name="express-editions"></a>Express Edition  
  XML エディターの次の機能は、Visual Studio Express Edition で提供されていません。  
   
--   XML インスタンス ドキュメントからの XML スキーマの作成。  
+- XML インスタンス ドキュメントからの XML スキーマの作成。  
   
--   XML エディターからの XSLT 出力の表示。  
+- XML エディターからの XSLT 出力の表示。  
   
--   XSLT スタイル シート編集中の自動検証。  
+- XSLT スタイル シート編集中の自動検証。  
   
--   XML スキーマ エクスプローラー。  
+- XML スキーマ エクスプローラー。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [XML ドキュメントの検証](../xml-tools/xml-document-validation.md)  
@@ -80,14 +74,11 @@ XML エディターは [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual S
  XML エディターのユーザー インターフェイス コンポーネントについて説明します。  
   
 ## <a name="related-sections"></a>関連項目  
- [テキスト、コード、およびマークアップの編集](http://msdn.microsoft.com/en-us/0d9c00d7-5df4-48a3-b185-2a265f055439)  
+ [テキスト、コード、およびマークアップの編集](http://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
  テキスト エディターについて説明します。  
   
- [XML 標準のリファレンス](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
+ [XML 標準のリファレンス](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  XML、DTD (Document Type Definition)、XSD (XML Schema Definition) 言語、XSLT などの XML テクノロジについて説明します。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio の XML ツール](../xml-tools/xml-tools-in-visual-studio.md)
-
-
-

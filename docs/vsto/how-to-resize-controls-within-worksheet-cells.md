@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d039de309e1e9d5ec80d469d4d1329aad7118e71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b51f26a4ea2dec50c5ee90c38f49412866b6f866
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961492"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>方法: ワークシートのセル内のコントロールをサイズ変更します。
   ワークシートの列または行のサイズを変更するときに、セル内の任意のホスト コントロールが自動的にサイズが変更されたセルの幅、高さにサイズ変更します。 Windows フォーム コントロールは既定で自動的にサイズ変更されません。
@@ -29,19 +29,19 @@ ms.locfileid: "56625466"
 
  デザイン時に、コントロールを追加する場合は、各コントロールに配置オプションを設定する必要があります。
 
- Windows フォーム コントロールをプログラムで追加して、引数を範囲指定、コントロールに自動的に、範囲内のセルのサイズが変更されたときにサイズ変更します。 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。
+ Windows フォーム コントロールをプログラムで追加して、引数を範囲指定、コントロールに自動的に、範囲内のセルのサイズが変更されたときにサイズ変更します。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。
 
 ## <a name="resize-controls-at-design-time"></a>デザイン時にコントロールをサイズ変更します。
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>コントロールのデザイン時にセルのサイズを変更するには
 
-1.  **ツールボックス**、Windows フォーム コントロールをワークシートにドラッグします。
+1. **ツールボックス**、Windows フォーム コントロールをワークシートにドラッグします。
 
-2.  コントロールを右クリックし、をクリックし、**コントロールの書式設定**します。
+2. コントロールを右クリックし、をクリックし、**コントロールの書式設定**します。
 
-3.  **コントロールの書式設定**ダイアログ ボックスで、をクリックして、**プロパティ**タブ。
+3. **コントロールの書式設定**ダイアログ ボックスで、をクリックして、**プロパティ**タブ。
 
-4.  **オブジェクトの位置関係**を選択、**移動やサイズのセルで、** オプションをクリックして**ok**します。
+4. **オブジェクトの位置関係**を選択、**移動やサイズのセルで、** オプションをクリックして**ok**します。
 
      コントロールを格納するセルのサイズを変更するときに、コントロールをセルに合わせてサイズ変更します。
 
@@ -50,7 +50,7 @@ ms.locfileid: "56625466"
 
 ### <a name="to-make-controls-resize-with-cells-at-run-time"></a>コントロールの実行時にセルのサイズを変更するには
 
-1.  A1 の範囲にコントロールを追加します。
+1. A1 の範囲にコントロールを追加します。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]
@@ -60,15 +60,15 @@ ms.locfileid: "56625466"
 ## <a name="reset-control-placement"></a>コントロールの配置をリセットします。
  設定して、コントロールのサイズ変更および配置をリセットすることができます、`Placement`プロパティを次のいずれか<xref:Microsoft.Office.Interop.Excel.XlPlacement>値。
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
 
 ### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>サイズを変更したり、セルに移動しないように、コントロールの動作を変更するには
 
-1.  コントロールの配置プロパティを呼び出すし、値を設定<xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>します。
+1. コントロールの配置プロパティを呼び出すし、値を設定<xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>します。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'チュートリアル: カスタム テキスト テンプレート ホストの作成'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: bd488230fc6b88feb60ceeb0556385b99e823de9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 71b72b677e9735edb3254290055815885e543fa9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961990"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>チュートリアル: カスタム テキスト テンプレート ホストの作成
 
@@ -31,17 +31,17 @@ Visual Studio の外部から*テキスト テンプレート変換*機能を使
 
 このチュートリアルでは、次の作業について説明します。
 
--   カスタム テキスト テンプレート ホストの作成。
+- カスタム テキスト テンプレート ホストの作成。
 
--   カスタム ホストのテスト。
+- カスタム ホストのテスト。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
 このチュートリアルを完了するには、次の製品が必要です。
 
--   Visual Studio 2010 以降
+- Visual Studio 2010 以降
 
--   Visual Studio SDK
+- Visual Studio SDK
 
 ## <a name="create-a-custom-text-template-host"></a>カスタム テキスト テンプレート ホストの作成
 
@@ -51,9 +51,9 @@ Visual Studio の外部から*テキスト テンプレート変換*機能を使
 
 2. 次のアセンブリへの参照を追加します。
 
-   -   **Microsoft.VisualStudio.TextTemplating.\*.0**
+   - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-   -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 以降**
+   - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 以降**
 
 3. Program.cs ファイルまたは Module1.vb ファイル内のコードを次のコードに置き換えます。
 
@@ -714,7 +714,7 @@ Visual Studio の外部から*テキスト テンプレート変換*機能を使
    End Namespace
    ```
 
-4. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]の場合のみ、**プロジェクト** メニューを開き、**CustomHost のプロパティ**をクリックします。 **スタートアップ オブジェクト**一覧で、 **customhost.program** をクリックします。
+4. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]のみ、開く、**プロジェクト** メニューをクリック**CustomHost のプロパティ**です。 **スタートアップ オブジェクト**一覧で、 **customhost.program** をクリックします。
 
 5. **[ファイル]** メニューの **[すべてを保存]** をクリックします。
 
@@ -726,11 +726,11 @@ Visual Studio の外部から*テキスト テンプレート変換*機能を使
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>テキスト テンプレートを作成してカスタム ホストをテストするには
 
-1.  テキスト ファイルを作成し、名前を `TestTemplate.tt` にします。
+1. テキスト ファイルを作成し、名前を `TestTemplate.tt` にします。
 
      ファイルの作成には、メモ帳など、任意のテキスト エディターを使用できます。
 
-2.  ファイルに次のコードを追加します。
+2. ファイルに次のコードを追加します。
 
     > [!NOTE]
     > テキスト テンプレートのプログラミング言語は、カスタム ホストのプログラミング言語と同じでなくてもかまいません。
@@ -773,13 +773,13 @@ Visual Studio の外部から*テキスト テンプレート変換*機能を使
 
     ```
 
-3.  ファイルを保存して閉じます。
+3. ファイルを保存して閉じます。
 
 ### <a name="to-test-the-custom-host"></a>カスタム ホストをテストするには
 
-1.  コマンド プロンプト ウィンドウを開きます。
+1. コマンド プロンプト ウィンドウを開きます。
 
-2.  カスタム ホストの実行可能ファイルのパスを入力します。ただし、Enter キーはまだ押さないでください。
+2. カスタム ホストの実行可能ファイルのパスを入力します。ただし、Enter キーはまだ押さないでください。
 
      たとえば、次のように入力します。
 
@@ -788,9 +788,9 @@ Visual Studio の外部から*テキスト テンプレート変換*機能を使
     > [!NOTE]
     > アドレスを入力する代わりに、**Windows エクスプ ローラー**でファイル CustomHost.exe を参照し、コマンド プロンプト ウィンドウにファイルをドラッグすることもできます。
 
-3.  空白を入力します。
+3. 空白を入力します。
 
-4.  テキスト テンプレート ファイルのパスを入力し、Enter キーを押します。
+4. テキスト テンプレート ファイルのパスを入力し、Enter キーを押します。
 
      たとえば、次のように入力します。
 
@@ -801,11 +801,11 @@ Visual Studio の外部から*テキスト テンプレート変換*機能を使
 
      カスタム ホスト アプリケーションが実行され、テキスト テンプレート変換プロセスが完了します。
 
-5.  **Windows エクスプローラー**で、ファイル TestTemplate.tt が含まれているフォルダーを参照します。
+5. **Windows エクスプローラー**で、ファイル TestTemplate.tt が含まれているフォルダーを参照します。
 
      このフォルダーには、TestTemplate1.txt ファイルも含まれています。
 
-6.  このファイルを開き、テキスト テンプレート変換の結果を確認します。
+6. このファイルを開き、テキスト テンプレート変換の結果を確認します。
 
      生成されたテキスト出力は、次のようになります。
 

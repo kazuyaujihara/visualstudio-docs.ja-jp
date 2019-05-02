@@ -10,33 +10,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c80ee3cebe003eff7248626f0d8e27b3c179453
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MT
+ms.openlocfilehash: d6cb4df68cc8a1f9271b43de59b7196e61ab82cc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430998"
 ---
 # <a name="language-service-and-editor-extension-points"></a>言語サービスとエディターの拡張ポイント
 エディターでは、ほとんどの言語サービスの機能を含む、Managed Extensibility Framework (MEF) コンポーネント パーツとして拡張する拡張ポイントを提供します。 これらには、主要な拡張機能ポイントのカテゴリです。
 
--   コンテンツの種類
+- コンテンツの種類
 
--   分類の種類と分類の形式
+- 分類の種類と分類の形式
 
--   余白とスクロール バー
+- 余白とスクロール バー
 
--   Tags
+- Tags
 
--   修飾
+- 修飾
 
--   マウスのプロセッサ
+- マウスのプロセッサ
 
--   ハンドラーを削除します。
+- ハンドラーを削除します。
 
--   オプション
+- オプション
 
--   IntelliSense
+- IntelliSense
 
 ## <a name="extend-content-types"></a>コンテンツの種類を拡張します。
  コンテンツの種類は、たとえば、エディターによって処理されるテキスト、"text"、"code"または"CSharp"の種類の定義です。 型の変数を宣言することで新しいコンテンツ タイプを定義する<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>新しいコンテンツ タイプに一意の名前を提供します。 エディターを使用して、コンテンツの種類を登録するには、次の属性とエクスポートします。
@@ -113,7 +113,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  ファイル名拡張子とコンテンツの種類を関連付けるには使用<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>します。
 
 > [!NOTE]
->  使用して Visual Studio で、ファイル名拡張子が登録されている、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>言語サービスのパッケージにします。 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF コンテンツの種類をこの方法で登録されているファイル名拡張子を関連付けます。
+> 使用して Visual Studio で、ファイル名拡張子が登録されている、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>言語サービスのパッケージにします。 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF コンテンツの種類をこの方法で登録されているファイル名拡張子を関連付けます。
 
  ファイル名拡張子をコンテンツ タイプの定義をエクスポートするには、次の属性を含める必要があります。
 
@@ -269,7 +269,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: 表示要素に関連付けられています。
 
   > [!NOTE]
-  >  例については、 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>、HighlightWordTag 定義を参照してください。[チュートリアル。テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)します。
+  > 例については、 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>、HighlightWordTag 定義を参照してください。[チュートリアル。テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)します。
 
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: に関連付けられたリージョン展開またはアウトラインで折りたたまれていることができます。
 
@@ -315,7 +315,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  タグには、この形式の定義を適用するには、クラス (表示名ではなく) の name 属性で設定した名前を参照します。
 
 > [!NOTE]
->  例については、 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>、HighlightWordFormatDefinition クラスを参照してください。[チュートリアル。テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)します。
+> 例については、 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>、HighlightWordFormatDefinition クラスを参照してください。[チュートリアル。テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)します。
 
 ## <a name="extend-adornments"></a>表示要素を拡張します。
  修飾は、テキスト ビューに表示されるテキストを追加できるかをテキスト自体を表示する視覚効果を定義します。 任意の型として、独自の表示要素を定義する<xref:System.Windows.UIElement>します。
@@ -400,25 +400,25 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
 - <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: このドロップ ハンドラーの有効なテキスト形式。 次の形式は、最上位から最下位までの優先順位で処理されます。
 
-  1.  任意のカスタム書式指定
+  1. 任意のカスタム書式指定
 
-  2.  FileDrop
+  2. FileDrop
 
-  3.  EnhancedMetafile
+  3. EnhancedMetafile
 
-  4.  Waveaudio で
+  4. Waveaudio で
 
-  5.  Riff
+  5. Riff
 
-  6.  差分
+  6. 差分
 
-  7.  ロケール
+  7. ロケール
 
-  8.  [パレット]
+  8. [パレット]
 
   9. PenData
 
-  10. シリアル化可能です
+  10. Serializable
 
   11. シンボリック リンク
 
@@ -498,39 +498,39 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ### <a name="implement-an-intellisense-source"></a>IntelliSense、ソースを実装します。
  ソースをカスタマイズするには、次のソース インターフェイスの 1 つ (または複数) を実装する必要があります。
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
 
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 非推奨の好評だった<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>します。
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 非推奨の好評だった<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>します。
 
  さらに、同じ種類のプロバイダーを実装する必要があります。
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
 
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 非推奨の好評だった<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>します。
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 非推奨の好評だった<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>します。
 
  次の属性とプロバイダーをエクスポートする必要があります。
 
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: ソースの名前。
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: ソースの名前。
 
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: ソースが適用されます (たとえば、"text"または「コード」) のコンテンツの種類。
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: ソースが適用されます (たとえば、"text"または「コード」) のコンテンツの種類。
 
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: (その他のソース) に関して、ソースを表示する順序。
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: (その他のソース) に関して、ソースを表示する順序。
 
--   次の例では、入力候補のソース プロバイダーでエクスポート属性を示します。
+- 次の例では、入力候補のソース プロバイダーでエクスポート属性を示します。
 
 ```
 Export(typeof(ICompletionSourceProvider))]

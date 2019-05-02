@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950346"
 ---
 # <a name="template-parameters"></a>テンプレート パラメーター
 
@@ -52,12 +52,12 @@ ms.locfileid: "58355673"
 |clrversion|共通言語ランタイム (CLR: Common Language Runtime) の現在のバージョン。|
 |ext_*|親テンプレートの変数を参照するには、パラメーターに `ext_` プレフィックスを追加します。 たとえば、`ext_safeprojectname` のようにします。|
 |guid[1-10]|プロジェクト ファイルでプロジェクト GUID を置き換えるために使用される GUID。 最大 10 個の一意 GUID を指定できます (例: `guid1`)。|
-|itemname|**[新しい項目の追加]** ダイアログ ボックスでユーザーが指定した名前。|
+|itemname|パラメーターが使用されているファイルの名前。|
 |machinename|現在のコンピューター名 (たとえば、Computer01)。|
 |projectname|プロジェクトの作成時にユーザーが指定した名前。|
 |registeredorganization|HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization のレジストリ キー値。|
 |rootnamespace|現在のプロジェクトのルート名前空間。 このパラメーターは、項目テンプレートにのみ適用されます。|
-|safeitemname|**[新しい項目の追加]** ダイアログ ボックスでユーザーが指定した名前から、安全でないすべての文字とスペースを削除したもの。|
+|safeitemname|`itemname` と同じですが、安全でない文字とスペースはすべて削除されています。|
 |safeprojectname|プロジェクトの作成時にユーザーによって指定された名前ですが、すべての安全でない文字およびスペースがすべて削除されています。|
 |時間|DD/MM/YYYY 00:00:00 の形式で表した現在の時間。|
 |SpecificSolutionName|ソリューションの名前。 [ソリューションのディレクトリを作成] がオンになっている場合は、`SpecificSolutionName` にソリューション名が指定されます。 [ソリューションのディレクトリを作成] がオフになっている場合、`SpecificSolutionName` は空白です。|

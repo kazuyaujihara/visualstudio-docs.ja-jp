@@ -12,23 +12,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994135458fb7bc76ef2ab7f4a76ac184e1b6426e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MT
+ms.openlocfilehash: 0e173819f4966bd1770ac862626987bafb9bf120
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418442"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>方法: インストーラーのレジストリ情報を生成します。
 
 *RegPkg.exe*マネージ VSPackage を登録するマニフェストを生成するユーティリティを使用できます。 マニフェストは、Windows インストーラーのセットアップ パッケージに組み込むことができます。 RegPkg もに基づいてセットアップのソース ファイルに含めることができるファイルを生成できる、 [Windows Installer XML ツールセット](http://go.microsoft.com/fwlink/?LinkId=62238)します。
 
 > [!IMPORTANT]
->  開発システムに固有のパス名を生成するよう RegPkg に、適切な Windows インストーラーがプロパティを書式設定されたので、RegPkg を使用するたびに使用する出力を編集する必要があります。 たとえば、`InprocServer32`値にする必要があります *\<SystemFolder\>mscoree.dll*パスを使用する必要がありますと*\<#filekey\>* と*\<$componentkey\>* します。 この方法で出力を調整することでは、または別のディレクトリ、ローカライズされたディレクトリ名、およびユーザーが選択可能なパスで別のドライブにインストールされている Windows でコンピューターをサポートしています。 詳細については、次を参照してください。[書式付き](http://go.microsoft.com/fwlink/?LinkId=71120)、Windows インストーラー sdk。 開発システムのパスの RegPkg 規則に従うかどうか、たとえば、ファイル形式の Id*これは\<ファイル名\>*— 少ない数の変更を行う必要があります。
+> 開発システムに固有のパス名を生成するよう RegPkg に、適切な Windows インストーラーがプロパティを書式設定されたので、RegPkg を使用するたびに使用する出力を編集する必要があります。 たとえば、`InprocServer32`値にする必要があります *\<SystemFolder\>mscoree.dll*パスを使用する必要がありますと*\<#filekey\>* と*\<$componentkey\>* します。 この方法で出力を調整することでは、または別のディレクトリ、ローカライズされたディレクトリ名、およびユーザーが選択可能なパスで別のドライブにインストールされている Windows でコンピューターをサポートしています。 詳細については、次を参照してください。[書式付き](http://go.microsoft.com/fwlink/?LinkId=71120)、Windows インストーラー sdk。 開発システムのパスの RegPkg 規則に従うかどうか、たとえば、ファイル形式の Id*これは\<ファイル名\>*— 少ない数の変更を行う必要があります。
 
 ## <a name="to-create-a-registration-manifest"></a>登録のマニフェストを作成するには
 
--   RegPkg での実行、 **/regfile**スイッチします。 その他のスイッチでは、出力ファイルの名前と、VSPackage のパスを指定します。
+- RegPkg での実行、 **/regfile**スイッチします。 その他のスイッチでは、出力ファイルの名前と、VSPackage のパスを指定します。
 
      たとえば、コマンド プロンプトには、次のようなものは入力します。
 
@@ -38,7 +38,7 @@ ms.locfileid: "54945984"
 
 ## <a name="to-view-a-registration-manifest"></a>登録のマニフェストを表示するには
 
--   任意のテキスト エディターでは、登録、マニフェストを開きます。
+- 任意のテキスト エディターでは、登録、マニフェストを開きます。
 
      次の例では、RegPkg IronPython の言語サービスによって作成された登録マニフェストを示します。
 
@@ -99,7 +99,7 @@ ms.locfileid: "54945984"
 
 ## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>ツールセットには、Windows Installer XML を作成するにはファイルが含まれます
 
--   RegPkg での実行、 **/wixfile**スイッチします。 その他のスイッチでは、出力ファイルの名前と、VSPackage のパスを指定します。
+- RegPkg での実行、 **/wixfile**スイッチします。 その他のスイッチでは、出力ファイルの名前と、VSPackage のパスを指定します。
 
      たとえば、コマンド プロンプトには、次のようなものは入力します。
 
@@ -109,7 +109,7 @@ ms.locfileid: "54945984"
 
 ## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>ツールセットには、Windows Installer XML を表示するにはファイルが含まれます
 
--   開いている、Windows Installer XML Toolset ファイルに含める任意のテキスト エディター。
+- 開いている、Windows Installer XML Toolset ファイルに含める任意のテキスト エディター。
 
      次の例は、IronPython の言語サービスのよう RegPkg に作成したインクルード ファイルです。
 

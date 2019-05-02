@@ -13,12 +13,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e3bbf6b3b1ed2565d5e58806bd0935f713ba5bfd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572888"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>メニュー コマンドを使用した拡張機能の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ ms.locfileid: "58974173"
   
 ## <a name="creating-a-menu-command"></a>メニュー コマンドの作成  
   
-1.  という名前の VSIX プロジェクトを作成する**FirstMenuCommand**します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#/機能拡張**します。  
+1. という名前の VSIX プロジェクトを作成する**FirstMenuCommand**します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**] ダイアログ ボックス [ **Visual c#/機能拡張**します。  
   
-2.  という名前のカスタム コマンド項目テンプレートを追加、プロジェクトが開いたら、 **FirstCommand**します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#/機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して**FirstCommand.cs**します。  
+2. という名前のカスタム コマンド項目テンプレートを追加、プロジェクトが開いたら、 **FirstCommand**します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加/新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#/機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して**FirstCommand.cs**します。  
   
-3.  プロジェクトをビルドし、デバッグを開始します。  
+3. プロジェクトをビルドし、デバッグを開始します。  
   
      Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、次を参照してください。 [、実験用インスタンス](../extensibility/the-experimental-instance.md)します。  
   
-4.  実験用インスタンスの開く、**ツール/拡張機能と更新**ウィンドウ。 表示する必要があります、 **FirstMenuCommand**拡張します。 (を開いた場合**拡張機能と更新**、Visual Studio の作業用インスタンスでは表示されません**FirstMenuCommand**)。  
+4. 実験用インスタンスの開く、**ツール/拡張機能と更新**ウィンドウ。 表示する必要があります、 **FirstMenuCommand**拡張します。 (を開いた場合**拡張機能と更新**、Visual Studio の作業用インスタンスでは表示されません**FirstMenuCommand**)。  
   
      次に「、**ツール**実験用インスタンスのメニュー。 表示する必要があります**呼び出す FirstCommand**コマンド。 この時点でそれだけが表示されます"FirstCommandPackage 内 FirstMenuCommand.FirstCommand.MenuItemCallback()"ことを示すメッセージ ボックス。 実際には、次のセクションで、このコマンドからメモ帳を起動する方法を見ていきます。  
   
 ## <a name="changing-the-menu-command-handler"></a>メニュー コマンドのハンドラーを変更します。  
  ここでメモ帳を起動するコマンド ハンドラーを更新しましょう。  
   
-1.  デバッグを停止し、作業のインスタンスの Visual Studio に戻ります。 FirstCommand.cs ファイルを開き、次を追加するステートメントを使用します。  
+1. デバッグを停止し、作業のインスタンスの Visual Studio に戻ります。 FirstCommand.cs ファイルを開き、次を追加するステートメントを使用します。  
   
     ```csharp  
     using System.Diagnostics;  
     ```  
   
-2.  プライベート FirstCommand コンス トラクターを検索します。 これは、コマンドがコマンド サービスにフックし、コマンド ハンドラーが指定されてです。 コマンド ハンドラーの名前を StartNotepad、としては、次のように変更します。  
+2. プライベート FirstCommand コンス トラクターを検索します。 これは、コマンドがコマンド サービスにフックし、コマンド ハンドラーが指定されてです。 コマンド ハンドラーの名前を StartNotepad、としては、次のように変更します。  
   
     ```csharp  
     private FirstCommand(Package package)  
@@ -74,7 +74,7 @@ ms.locfileid: "58974173"
     }  
     ```  
   
-3.  MenuItemCallback メソッドを削除し、メモ帳が起動した StartNotepad メソッドを追加します。  
+3. MenuItemCallback メソッドを削除し、メモ帳が起動した StartNotepad メソッドを追加します。  
   
     ```csharp  
     private void StartNotepad(object sender, EventArgs e)  
@@ -85,7 +85,7 @@ ms.locfileid: "58974173"
     }  
     ```  
   
-4.  試してみましょう。プロジェクトのデバッグを開始し、をクリックして**ツール]/[呼び出し FirstCommand**、メモ帳のインスタンスが起動を表示する必要があります。  
+4. 試してみましょう。プロジェクトのデバッグを開始し、をクリックして**ツール]/[呼び出し FirstCommand**、メモ帳のインスタンスが起動を表示する必要があります。  
   
      インスタンスを使用することができます、<xref:System.Diagnostics.Process>クラスは実行可能ファイル、メモ帳だけでなくを実行します。 使って試す calc.exe など。  
   
@@ -94,9 +94,9 @@ ms.locfileid: "58974173"
   
  2 つの方法のいずれかでこのスクリプトを取得できます。  
   
-1.  デスクトップから、検索**Visual Studio 2015 の実験用インスタンスをリセット**します。  
+1. デスクトップから、検索**Visual Studio 2015 の実験用インスタンスをリセット**します。  
   
-2.  コマンド ラインから次を実行します。  
+2. コマンド ラインから次を実行します。  
   
     ```  
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp && PAUSE  
@@ -119,11 +119,11 @@ ms.locfileid: "58974173"
   
 1. 多くの単純なメニュー コマンドを使用して行うことができます。  
   
-   1.  独自のアイコンを追加します。[メニュー コマンドへのアイコンの追加](../extensibility/adding-icons-to-menu-commands.md)  
+   1. 独自のアイコンを追加します。[メニュー コマンドへのアイコンの追加](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  メニュー コマンドのテキストを変更します。[メニュー コマンドのテキストの変更](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2. メニュー コマンドのテキストを変更します。[メニュー コマンドのテキストの変更](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  コマンドには、メニューのショートカットを追加します。[キーボード ショートカットのメニュー項目へのバインド](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3. コマンドには、メニューのショートカットを追加します。[キーボード ショートカットのメニュー項目へのバインド](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
 2. さまざまな種類のコマンド、メニューのおよびツールバーを追加します。[メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)  
   

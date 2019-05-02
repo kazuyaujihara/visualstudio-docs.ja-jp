@@ -1,12 +1,9 @@
 ---
 title: DSL 定義図の使用 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.diagram
 - vs.dsltools.dsldesigner.dsldiagram
@@ -20,13 +17,13 @@ ms.assetid: 1a4c7a58-e134-438e-848e-efd98f92bf10
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1fc0dbc007dcb3e15891a4176fc5bdb96babbfa8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fe01664694b8c4ebdf5a5edcd57d9d4fc600d6fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208586"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976847"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>DSL 定義図の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,17 +65,14 @@ ms.locfileid: "49208586"
 ### <a name="expandcollapse-inheritance-tree"></a>継承ツリーの展開/折りたたみ  
  ドメイン クラスが他のドメイン クラスの基底クラスの場合は、ドメイン クラス定義を右クリックし、をクリックしてに継承ツリーが非表示にできます**継承ツリーを折りたたむ**します。 継承ツリーを表示するには、定義要素を右クリックし、順にクリックします**継承ツリーを**します。  
   
-### <a name="bring-tree-here"></a>[Bring Tree Here] (ツリーをここに配置)  
+### <a name="bring-tree-here"></a>ツリーをここに移動  
  プレース ホルダー ドメイン クラスを右クリックし、をクリックして、ダイアグラムを統合する**ツリーをここ**します。 プレースホルダー ドメイン クラスは定義要素になり、継承とリレーションシップ ツリーを表示します。 以前の定義要素は、リレーションシップのターゲットまたは継承リレーションシップの子である場合、プレースホルダー要素に変わります。その他の場合は、消滅します。  
   
-### <a name="split-tree"></a>[Split Tree] (ツリーの分割)  
+### <a name="split-tree"></a>ツリーを分割する  
  継承やリレーションシップ ツリーを分割するには、それらを表示するドメイン クラス定義を右クリックし、をクリックして**ツリーの分割**します。 定義要素はプレースホルダー要素になり、継承ツリーやリレーションシップ ツリーと共に、定義ドメイン クラスがパーティションの下部に表示されます。  
   
-### <a name="show-as-class"></a>[Show As Class] (クラスとして表示)  
+### <a name="show-as-class"></a>クラスとして表示する  
  ドメイン リレーションシップに派生リレーションシップ、か、その他のドメイン リレーションシップ埋め込みまたは参照リレーションシップがある場合クラスとしてのリレーションシップを表示、リレーションシップを右クリックし、をクリックして**クラスとして表示します。**. リレーションシップが表示されます、**ドメイン プロパティ**コンパートメントし、継承やリレーションシップ ツリーが表示されます。  
   
 ## <a name="see-also"></a>関連項目  
- [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,26 +1,21 @@
 ---
 title: サポートされているイベントの種類 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dd6f8f5b7c2782bb908538426cb531db216b72fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f671e8d0128bee2c52dc1191b33edb889c92d2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446445"
 ---
 # <a name="supported-event-types"></a>サポートされているイベントの種類
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ Visual Studio のデバッグでは、次のイベントの種類現在サポー
     インターフェイス[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)と[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)停止イベントの例を示します。  
   
   > [!NOTE]
-  >  非同期の停止イベントがサポートされていません。 非同期の停止イベントを送信するエラーになります。  
+  > 非同期の停止イベントがサポートされていません。 非同期の停止イベントを送信するエラーになります。  
   
 ## <a name="discussion"></a>説明  
  イベントの実際の実装は、DE の設計に依存します。 送信される各イベントの種類は、DE を設計する際に、その属性によって決定されます。 たとえば、1 つ DE が送信可能性があります、 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) stopping イベントとして送信することがあります別中に、非同期のイベントとして。  
@@ -58,7 +53,7 @@ Visual Studio のデバッグでは、次のイベントの種類現在サポー
  次の表では、どのプログラムとスレッドのパラメーターは、どのイベントとイベントの種類に必要なを指定します。 すべてのイベントは、同期されることができます。 イベントを同期する必要はありません。  
   
 > [!NOTE]
->  [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md)インターフェイスがすべてのイベントが必要です。  
+> [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md)インターフェイスがすべてのイベントが必要です。  
   
 |event|IDebugProgram2|IDebugThread2|停止イベント|  
 |-----------|--------------------|-------------------|---------------------|  
@@ -69,8 +64,8 @@ Visual Studio のデバッグでは、次のイベントの種類現在サポー
 |[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|許可されているときに必要ありません。|許可されているときに必要ありません。|いいえ|  
 |[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)|必須|必須|はい|  
 |[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|必須|必須|いいえ|  
-|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|許可されていません|許可されていません|いいえ|  
-|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|許可されていません|許可されていません|いいえ|  
+|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|使用できません|使用できません|いいえ|  
+|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|使用できません|使用できません|いいえ|  
 |[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|必須|必須|はい|  
 |[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|許可されているときに必要ありません。|許可されているときに必要ありません。|シリアル化|  
 |[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|必須|必須|はい|  
@@ -94,4 +89,3 @@ Visual Studio のデバッグでは、次のイベントの種類現在サポー
   
 ## <a name="see-also"></a>関連項目  
  [イベントの送信](../../extensibility/debugger/sending-events.md)
-

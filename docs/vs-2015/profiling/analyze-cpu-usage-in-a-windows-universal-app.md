@@ -15,12 +15,12 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d6728ce1f83c53a406512c75d89368dbcdd87c3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 646bba541e18fd372bd5236f7ebb6b91d1472d55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435080"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Windows ユニバーサル アプリでの CPU 使用率の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,31 +30,31 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  アプリのパフォーマンスの問題を調査する必要がある場合、まず CPU の使用状況を理解することから始めることができます。 **CPU 使用率** ツールは、CPU がコードを実行する際、どこで時間を費やしているかを示します。 特定のシナリオに限定する場合、単一の診断セッションで、CPU 使用率を [XAML UI の応答性](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480)ツール、[エネルギー消費量](../profiling/analyze-energy-use-in-store-apps.md)ツール、またはその両方と一緒に実行できます。  
   
 > [!NOTE]
->  **CPU 使用率**ツールは、Windows Phone Silverlight 8.1 アプリには使用できません。  
+> **CPU 使用率**ツールは、Windows Phone Silverlight 8.1 アプリには使用できません。  
   
  このチュートリアルでは、簡単な Windows Universal XAML アプリの CPU 使用率の収集と分析について説明します。  
   
-##  <a name="BKMK_Create_the_CpuUseDemo_project"></a> CpuUseDemo プロジェクトの作成  
+## <a name="BKMK_Create_the_CpuUseDemo_project"></a> CpuUseDemo プロジェクトの作成  
  **CpuUseDemo** とは、CPU 使用率のデータを収集して分析する方法を説明するために作成されたアプリです。 ボタンは、関数に対する複数の呼び出しの中から最大の値を選択するメソッドを呼び出して数字を生成します。 呼び出された関数は、非常に多くの乱数値を作成した後、最後の値を返します。 データはテキスト ボックスに表示されます。  
   
-1.  **BlankApp** テンプレートを使って **CpuUseDemo** という名前の新しい C# Windows Universal アプリ プロジェクトを作成します。  
+1. **BlankApp** テンプレートを使って **CpuUseDemo** という名前の新しい C# Windows Universal アプリ プロジェクトを作成します。  
   
      ![CpuUseDemoProject の作成](../profiling/media/cpu-use-newproject.png "CPU_USE_NewProject")  
   
-2.  MainPage.xaml を[このコード](#BKMK_MainPage_xaml)で置き換えます。  
+2. MainPage.xaml を[このコード](#BKMK_MainPage_xaml)で置き換えます。  
   
-3.  MainPage.xaml.cs を[このコード](#BKMK_MainPage_xaml_cs)で置き換えます。  
+3. MainPage.xaml.cs を[このコード](#BKMK_MainPage_xaml_cs)で置き換えます。  
   
-4.  アプリを構築してお試しください。アプリは、CPU 使用率データの分析の一般的なケースを表示するには十分です。  
+4. アプリを構築してお試しください。アプリは、CPU 使用率データの分析の一般的なケースを表示するには十分です。  
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> CPU 使用率のデータの収集  
+## <a name="BKMK_Collect_CPU_usage_data"></a> CPU 使用率のデータの収集  
  ![シミュレーターでアプリのリリース ビルドを実行する](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1. Visual Studio で、配置ターゲットを **[シミュレーター]** に設定し、ソリューション構成を **[リリース]** に設定します。  
   
-   -   シミュレーターでアプリを実行すると、アプリと Visual Studio IDE との間で簡単に切り替えることができます。  
+   - シミュレーターでアプリを実行すると、アプリと Visual Studio IDE との間で簡単に切り替えることができます。  
   
-   -   このアプリを **[リリース]** モードで実行すると、アプリの実際のパフォーマンスをよりよく把握できます。  
+   - このアプリを **[リリース]** モードで実行すると、アプリの実際のパフォーマンスをよりよく把握できます。  
   
 2. **[デバッグ]** メニューの **[パフォーマンス プロファイラー...]** をクリックします。  
   
@@ -72,14 +72,14 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
    ![CpuUsage レポート](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
-##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> CPU 使用率レポートの分析  
+## <a name="BKMK_Analyze_the_CPU_Usage_report"></a> CPU 使用率レポートの分析  
   
-###  <a name="BKMK_CPU_utilization_timeline_graph"></a> CPU 使用状況タイムライン グラフ  
+### <a name="BKMK_CPU_utilization_timeline_graph"></a> CPU 使用状況タイムライン グラフ  
  ![CpuUtilization (%) のタイムライン グラフ](../profiling/media/cpu-use-wt-timelinegraph.png "CPU_USE_WT_TimelineGraph")  
   
  CPU 使用状況グラフは、デバイスにあるすべてのプロセッサー コアのすべての CPU 時間に対するアプリの CPU アクティビティの割合を示します。 このレポートのデータはデュアル コアのコンピューターで収集されました。 2 つの急激な増加は、2 つのボタン クリックの CPU アクティビティを表します。 `GetMaxNumberButton_Click` はシングル コアで同期的に実行されるため、メソッドのグラフの高さが 50% を超えていないのは理にかなっています。 また、`GetMaxNumberAsycButton_Click` は非同期的に両方のコアで実行されるため、グラフの急激な増加が両方のコアでほぼすべての CPU リソースを活用しているように見えるのも適切と言えます。  
   
-####  <a name="BKMK_Select_timeline_segments_to_view_details"></a> 詳細を確認するためにタイムライン セグメントを選択する  
+#### <a name="BKMK_Select_timeline_segments_to_view_details"></a> 詳細を確認するためにタイムライン セグメントを選択する  
  **[診断セッション]** タイムラインの選択バーを使用して、GetMaxNumberButton_Click のデータに注目します。  
   
  ![選択された GetMaxNumberButton_Click](../profiling/media/cpu-use-wt-getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
@@ -92,10 +92,10 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
  このメソッドは `GetMaxNumberButton_Click` よりも 1 秒早く完了しますが、コール ツリー エントリの意味はそれほど明確ではありません。  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用率コール ツリー  
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用率コール ツリー  
  コール ツリー情報を理解するには、 `GetMaxNumberButton_Click` セグメントを再度選択し、コール ツリーの詳細を確認します。  
   
-####  <a name="BKMK_Call_tree_structure"></a> コール ツリーの構造  
+#### <a name="BKMK_Call_tree_structure"></a> コール ツリーの構造  
  ![GetMaxNumberButton&#95;Click コール ツリー](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
@@ -105,7 +105,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 |![手順 3](../profiling/media/procguid-3.png "ProcGuid_3")|セカンド レベル ノードの子はユーザー コード メソッドおよび非同期ルーチンで、セカンド レベル システムとフレームワーク コードによって呼び出される、または作成されます。|  
 |![手順 4](../profiling/media/procguid-4.png "ProcGuid_4")|メソッドの子ノードには、親メソッドの呼び出しのみのデータが含まれます。 **[外部コードの表示]** がオフのとき、アプリ メソッドには **[外部コード]** ノードが含まれる場合もあります。|  
   
-####  <a name="BKMK_External_Code"></a> 外部コード  
+#### <a name="BKMK_External_Code"></a> 外部コード  
  外部コードは、作成したコードによって実行されるシステムおよびフレームワーク コンポーネント内の関数で構成されます。 外部コードには、アプリの開始と停止、UI の描画、スレッドの制御、およびアプリへの他の低レベル サービスの提供を行う関数が含まれます。 外部コードを確認することはほとんどないため、CPU 使用率コール ツリーはユーザー メソッドの外部関数を 1 つの **[外部コード]** ノードにまとめます。  
   
  外部コードのコール パスを表示する場合、 **[フィルター ビュー]** リストから **[外部コードの表示]** をクリックし、 **[適用]** をクリックします。  
@@ -120,7 +120,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
  ![入れ子式の外部コードの検索](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-###  <a name="BKMK_Call_tree_data_columns"></a> コール ツリー データの列  
+### <a name="BKMK_Call_tree_data_columns"></a> コール ツリー データの列  
   
 |||  
 |-|-|  
@@ -130,7 +130,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 |**セルフ CPU (ミリ秒)**|選択した時間範囲内で、関数への呼び出しおよび関数が呼び出した関数によって使用されたミリ秒です。|  
 |**モジュール**|関数が含まれるモジュールの名前です。あるいは、[外部コード] ノード内の関数が含まれるモジュールの数です。|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用率コール ツリー内の非同期関数  
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用率コール ツリー内の非同期関数  
  コンパイラが非同期メソッドを検出すると、メソッドの実行を制御するために非表示のクラスを作成します。 概念的に言って、クラスとはコンパイラによって生成された関数のリストを含んだステート マシンです。これらの関数は、元のメソッドの操作を非同期で呼び出したり、それに必要なコールバック、スケジューラ、および反復子を正しく呼び出したりします。 元のメソッドが親メソッドによって呼び出されると、ランタイムは親の実行コンテキストからメソッドを削除し、アプリの実行を制御するシステムとフレームワーク コードのコンテキストにある非表示のクラスのメソッドを実行します。 非同期のメソッドは、多くの場合、1 つ以上の異なるスレッドで実行されます (必ずそうなるわけではありません)。 このコードは、CPU 使用率コール ツリーで、ツリーのトップ ノードのすぐ下にある **[外部コード]** ノードの子として表示されます。  
   
  これをこの例で表示するには、タイムラインで `GetMaxNumberAsyncButton_Click` セグメントを再度選択します。  
@@ -141,22 +141,22 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
  ![展開された GetMaxNumberAsyncButton&#95;Click コール ツリー](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
--   `MainPage::GetMaxNumberAsyncButton_Click` の機能は非常にわずかで、タスクの値のリストを管理し、結果の最大値を計算し、出力を表示するに過ぎません。  
+- `MainPage::GetMaxNumberAsyncButton_Click` の機能は非常にわずかで、タスクの値のリストを管理し、結果の最大値を計算し、出力を表示するに過ぎません。  
   
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` は、 `GetNumberAsync`の呼び出しをラップする 48 個のタスクをスケジュールして起動するために必要なアクティビティを表示します。  
+- `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` は、 `GetNumberAsync`の呼び出しをラップする 48 個のタスクをスケジュールして起動するために必要なアクティビティを表示します。  
   
--   `MainPage::<GetNumberAsync>b__b` は `GetNumber` を呼び出すタスクのアクティビティを表示します。  
+- `MainPage::<GetNumberAsync>b__b` は `GetNumber` を呼び出すタスクのアクティビティを表示します。  
   
-##  <a name="BKMK_Next_steps"></a>次のステップ  
+## <a name="BKMK_Next_steps"></a>次のステップ  
  CpuUseDemo アプリには目立った機能がないかもしれませんが、非同期操作やパフォーマンスと診断ハブの他のツールで試行錯誤することによって、ユーティリティを拡張することができます。  
   
--   `MainPage::<GetNumberAsync>b__b` は、GetNumber メソッドの実行よりも、[外部コード] でより多くの時間を費やします。 この時間の大半は、非同期操作のオーバーヘッドです。 `NUM_TASKS` で、タスクの数を増やし (MainPage.xaml.cs の `GetNumber` 定数で設定)、イテレーションの数を減らしてみます (`MIN_ITERATIONS` の値を変更)。 コレクション シナリオを実行し、`MainPage::<GetNumberAsync>b__b` の CPU アクティビティを元の CPU 使用率の診断セッションのものと比較します。 タスクを減らし、イテレーションを増やしてみます。  
+- `MainPage::<GetNumberAsync>b__b` は、GetNumber メソッドの実行よりも、[外部コード] でより多くの時間を費やします。 この時間の大半は、非同期操作のオーバーヘッドです。 `NUM_TASKS` で、タスクの数を増やし (MainPage.xaml.cs の `GetNumber` 定数で設定)、イテレーションの数を減らしてみます (`MIN_ITERATIONS` の値を変更)。 コレクション シナリオを実行し、`MainPage::<GetNumberAsync>b__b` の CPU アクティビティを元の CPU 使用率の診断セッションのものと比較します。 タスクを減らし、イテレーションを増やしてみます。  
   
--   ユーザーは多くの場合、アプリの実際のパフォーマンスは気にしていませんが、アプリの見かけ上のパフォーマンスや応答性は気にします。 XAML UI 応答性ツールは、見かけ上の応答性に影響するアクティビティの詳細を UI スレッドに表示します。  
+- ユーザーは多くの場合、アプリの実際のパフォーマンスは気にしていませんが、アプリの見かけ上のパフォーマンスや応答性は気にします。 XAML UI 応答性ツールは、見かけ上の応答性に影響するアクティビティの詳細を UI スレッドに表示します。  
   
      診断とパフォーマンス ハブで新しいセッションを作成し、XAML UI 応答性ツールと CPU 使用率ツールの両方を追加します。 コレクション シナリオを実行します。 ここまで読み進めることができた場合、レポートには既にわかっていること以外の情報はないでしょう。しかし、2 つのメソッドの **UI スレッド使用状況**のタイムライン グラフの違いは歴然としています。 複雑な実世界のアプリでは、ツールを組み合わせて使用することは非常に役立ちます。  
   
-##  <a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
+## <a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
   
 ```csharp  
 <Page  
@@ -191,7 +191,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 ```  
   
-##  <a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
+## <a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
   
 ```csharp  
 using System;  

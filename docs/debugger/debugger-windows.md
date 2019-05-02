@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: de19d073a3002c777c0458a99381ee943d297944
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852509"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Visual Studio で Windows をデバッガーについて説明します
 
@@ -30,22 +30,22 @@ ms.locfileid: "57526348"
 |クイック ウォッチ|Shift + F9|[ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)|
 |Autos|Ctrl + Alt + V、A|[[自動変数] ウィンドウと [ローカル] ウィンドウ](../debugger/autos-and-locals-windows.md)|
 |ローカル|Ctrl + Alt + V、L|[[自動変数] ウィンドウと [ローカル] ウィンドウ](../debugger/autos-and-locals-windows.md)|
-|呼び出し履歴|Ctrl + Alt + C|[方法 : [呼び出し履歴] ウィンドウを使用する](../debugger/how-to-use-the-call-stack-window.md)|
+|呼び出し履歴|Ctrl + Alt + C|[方法: [呼び出し履歴] ウィンドウを使用する](../debugger/how-to-use-the-call-stack-window.md)|
 |イミディエイト|Ctrl + Alt + I|[イミディエイト ウィンドウ](../ide/reference/immediate-window.md)|
 |並列スタック|Ctrl + Shift + D、S|[[並列スタック] ウィンドウの使用](../debugger/using-the-parallel-stacks-window.md)|
 |並列ウォッチ|Ctrl + Shift + D、(1、2、3、4)|[マルチ スレッド アプリケーションのデバッグの開始](../debugger/get-started-debugging-multithreaded-apps.md)|
 |スレッド|Ctrl + Alt + H|[[スレッド] ウィンドウを使用してデバッグする](../debugger/how-to-use-the-threads-window.md)|
-|モジュール|Ctrl + Alt + U|[方法 : [モジュール] ウィンドウを使用する](../debugger/how-to-use-the-modules-window.md)|
-|GPU スレッド|-|[方法: GPU スレッド ウィンドウを使用する](../debugger/how-to-use-the-gpu-threads-window.md)|
+|モジュール|Ctrl + Alt + U|[方法: [モジュール] ウィンドウを使用する](../debugger/how-to-use-the-modules-window.md)|
+|GPU スレッド|-|[方法: [GPU スレッド] ウィンドウを使用する](../debugger/how-to-use-the-gpu-threads-window.md)|
 |[タスク]|Ctrl + Shift + D、K|[[タスク] ウィンドウの使用](../debugger/using-the-tasks-window.md)|
 |Python 対話形式デバッグ|Shift + Alt + I|[Python 対話型 REPL](../python/python-interactive-repl-in-visual-studio.md)|
-|JavaScript コンソール|Ctrl + Alt + V、C|[クイックスタート: JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|JavaScript コンソール|Ctrl + Alt + V、C|[クイック スタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |DOM Explorer|Ctrl + Alt + V、D|[DOM Explorer を使用したレイアウトのデバッグ](/visualstudio/debugger/quickstart-debug-html-and-css)|
 |ライブ ビジュアル ツリー|-|[デバッグ中にXAML のプロパティを調べる](../debugger/inspect-xaml-properties-while-debugging.md)|
 |ライブ プロパティ エクスプローラー|-|[デバッグ中にXAML のプロパティを調べる](../debugger/inspect-xaml-properties-while-debugging.md)|
 |プロセス|Ctrl + Alt + Z|[スレッドとプロセスの操作](../debugger/debug-threads-and-processes.md)|
 |メモリ|Ctrl + Alt + M、(1、2、3、4)|[[メモリ] ウィンドウ](../debugger/memory-windows.md)|
-|逆アセンブリ|Ctrl + Alt + D|[方法 : [逆アセンブル] ウィンドウを使用する](../debugger/how-to-use-the-disassembly-window.md)|
+|逆アセンブリ|Ctrl + Alt + D|[方法: [逆アセンブル] ウィンドウを使用する](../debugger/how-to-use-the-disassembly-window.md)|
 |レジスタ|Ctrl + Alt + G|[方法: [レジスタ] ウィンドウを使用する](../debugger/how-to-use-the-registers-window.md)|
 
 ## <a name="see-also"></a>関連項目

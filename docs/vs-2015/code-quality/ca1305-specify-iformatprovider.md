@@ -15,12 +15,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a31dfbae3ca07f913a5ddad3cf0a788cd9c62b73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 11e1d9614c4f2a512c56f84117d28363e80c6b90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964034"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048102"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305:IFormatProvider を指定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58964034"
 ## <a name="cause"></a>原因
  メソッドまたはコンス トラクターの呼び出しを受け入れるオーバー ロードを持つ 1 つまたは複数のメンバー、<xref:System.IFormatProvider?displayProperty=fullName>パラメーター、およびメソッドまたはコンス トラクターは使用するオーバー ロードを呼び出しません、<xref:System.IFormatProvider>パラメーター。 このルールの呼び出しを無視する[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]無視として説明されているメソッド、<xref:System.IFormatProvider>パラメーターと、さらに次のメソッド。
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則の説明
  ときに、<xref:System.Globalization.CultureInfo?displayProperty=fullName>または<xref:System.IFormatProvider>オブジェクトが指定されていない、オーバー ロードされたメンバーによって提供される既定値はすべてのロケールに効果がありません。 また、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]メンバーが既定のカルチャを選択し、コードの適切なことができない可能性がある前提条件に基づく書式設定します。 コードが、シナリオのために期待どおりに動作することを確認するには、次のガイドラインに従って、カルチャに固有の情報を指定する必要があります。

@@ -9,25 +9,25 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45904463abf5d7cd420c938f58eed6f35a2831eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d76eb9882eaf51de031d886c15954df8d5180e25
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432711"
 ---
-# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>方法: プロファイラーのコマンド ラインを使用して .NET Framework サービスをインストルメントし、メモリ データを収集する
+# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>方法: .NET Framework サービスをインストルメント化と Profiler のコマンドラインを使用して収集メモリ データ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールのコマンド ライン ツールを使用して [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] サービスをインストルメントし、メモリ使用量データを収集する方法について説明します。 メモリ割り当てデータを収集することも、メモリ割り当てデータとオブジェクト有効期間データの両方を収集することもできます。  
 
 > [!NOTE]
->  Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
 
 > [!NOTE]
->  コンピューターの起動後にサービスを再起動できない場合、インストルメンテーション メソッドを使用してサービスをプロファイリングすることはできません。このようなサービスが起動されるのは、オペレーティング システムの起動時です。  
+> コンピューターの起動後にサービスを再起動できない場合、インストルメンテーション メソッドを使用してサービスをプロファイリングすることはできません。このようなサービスが起動されるのは、オペレーティング システムの起動時です。  
 >   
->  プロファイリング ツールのコマンド ライン ツールは、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] インストール ディレクトリの \Team Tools\Performance Tools サブディレクトリにあります。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。 詳細については、「[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)」をご覧ください。  
+> プロファイリング ツールのコマンド ライン ツールは、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] インストール ディレクトリの \Team Tools\Performance Tools サブディレクトリにあります。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。 詳細については、「[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)」をご覧ください。  
 
 ## <a name="starting-the-profiling-session"></a>プロファイル セッションの開始  
  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] サービスからパフォーマンス データを収集するには、[VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) ツールを使用して適切な環境変数を初期化し、[VSInstr.exe](../profiling/vsinstr.md) ツールを使用してサービス バイナリ ファイルのインストルメントされたコピーを作成します。  
@@ -50,7 +50,7 @@ ms.locfileid: "54766449"
 
     **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}  
 
-   -   **/globaltracegc** および **/globaltracegclife** を使用すると、メモリの割り当てデータとオブジェクトの有効期間データを収集できます。  
+   - **/globaltracegc** および **/globaltracegclife** を使用すると、メモリの割り当てデータとオブジェクトの有効期間データを収集できます。  
 
        |オプション|説明|  
        |------------|-----------------|  
@@ -72,7 +72,7 @@ ms.locfileid: "54766449"
      **/start:sample** オプションを使用する場合は、次のうちいずれかのオプションを指定できます。  
 
    > [!NOTE]
-   >  **/user** オプションと **/crosssession** オプションは、通常、サービスで必要です。  
+   > **/user** オプションと **/crosssession** オプションは、通常、サービスで必要です。  
 
    |                                 オプション                                  |                                                                                                                                                   説明                                                                                                                                                    |
    |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -85,21 +85,20 @@ ms.locfileid: "54766449"
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  **/wincounter** との組み合わせでのみ使用します。 Windows パフォーマンス カウンター コレクション イベントの間隔をミリ秒単位で指定します。 既定値は 500 ミリ秒です。                                                                                   |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.etl) ファイルに収集されます。                                                                                     |
 
-
 8. 起動の必要なサービスがあれば起動します。  
 
 9. プロファイラーをサービスにアタッチします。 型:  
 
      **VSPerfCmd /attach:** `PID`&#124;`ProcessName`  
 
-    -   サービスのプロセス ID またはプロセス名を指定します。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID と名前を参照できます。  
+    - サービスのプロセス ID またはプロセス名を指定します。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID と名前を参照できます。  
 
 ## <a name="controlling-data-collection"></a>データ コレクションの制御  
  サービスの実行中は、**VSPerfCmd.exe** のオプションを使用してファイルへのデータ書き込みを開始または停止することにより、データ収集を制御できます。 データ コレクションを制御することにより、アプリケーションの起動や終了など、プログラム実行の特定の部分についてのデータ コレクションを行うことができます。  
 
 #### <a name="to-start-and-stop-data-collection"></a>データ コレクションを開始および停止するには  
 
--   次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
+- 次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。  
 
     |オプション|説明|  
     |------------|-----------------|  
@@ -112,19 +111,19 @@ ms.locfileid: "54766449"
 
 #### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには  
 
-1.  サービス コントロール マネージャーからサービスを停止します。  
+1. サービス コントロール マネージャーからサービスを停止します。  
 
-2.  プロファイラーをシャットダウンします。 型:  
+2. プロファイラーをシャットダウンします。 型:  
 
      **VSPerfCmd /shutdown**  
 
-3.  すべてのプロファイリングを完了したら、プロファイル環境変数を消去します。 型:  
+3. すべてのプロファイリングを完了したら、プロファイル環境変数を消去します。 型:  
 
      **VSPerfClrEnv /globaloff**  
 
      インストルメントされたモジュールを元のモジュールに置き換えます。 必要に応じて、サービスの [スタートアップの種類] を再構成します。  
 
-4.  コンピューターを再起動します。  
+4. コンピューターを再起動します。  
 
 ## <a name="see-also"></a>関連項目  
  [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)   

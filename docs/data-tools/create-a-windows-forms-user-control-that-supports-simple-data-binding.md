@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 716366366bd9bb7514d042748b07dcb30a3567eb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 6c3d9394eef00ef315d6a0c6afc35e0af5dd7854
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567487"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>単純なデータ バインディングをサポートする Windows フォーム ユーザー コントロールの作成
 
@@ -39,27 +39,27 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 このチュートリアルでは、次の作業を行う方法について説明します。
 
--   新しい **Windows フォーム アプリケーション**を作成します。
+- 新しい **Windows フォーム アプリケーション**を作成します。
 
--   新しい**ユーザー コントロール**をプロジェクトに追加します。
+- 新しい**ユーザー コントロール**をプロジェクトに追加します。
 
--   ユーザー コントロールをビジュアルに設計します。
+- ユーザー コントロールをビジュアルに設計します。
 
--   `DefaultBindingProperty` 属性を実装します。
+- `DefaultBindingProperty` 属性を実装します。
 
--   使用してデータセットを作成、**データ ソースの構成**ウィザード。
+- 使用してデータセットを作成、**データ ソースの構成**ウィザード。
 
--   **[データ ソース]** ウィンドウで **[Phone]** 列が新しいコントロールを使用するように設定します。
+- **[データ ソース]** ウィンドウで **[Phone]** 列が新しいコントロールを使用するように設定します。
 
--   フォームを作成して、新しいコントロールにデータを表示します。
+- フォームを作成して、新しいコントロールにデータを表示します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
 
-1.  SQL Server Express LocalDB をお持ちでない場合は、インストールのいずれかから、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)、または、 **Visual Studio インストーラー**します。 **Visual Studio インストーラー**の一部として SQL Server Express LocalDB をインストールすることができます、**データ ストレージと処理**ワークロード、または個々 のコンポーネントとして。
+1. SQL Server Express LocalDB をお持ちでない場合は、インストールのいずれかから、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)、または、 **Visual Studio インストーラー**します。 **Visual Studio インストーラー**の一部として SQL Server Express LocalDB をインストールすることができます、**データ ストレージと処理**ワークロード、または個々 のコンポーネントとして。
 
-2.  次の手順に従って、Northwind サンプル データベースをインストールします。
+2. 次の手順に従って、Northwind サンプル データベースをインストールします。
 
     1. Visual Studio で開く、 **SQL Server オブジェクト エクスプ ローラー**ウィンドウ。 (SQL Server オブジェクト エクスプ ローラーがの一部としてインストールされている、**データ ストレージと処理**ワークロードで、 **Visual Studio インストーラー**)。展開、 **SQL Server**ノード。 LocalDB インスタンスを右クリックし、選択**新しいクエリ**します。
 
@@ -89,9 +89,9 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 このチュートリアルから単純なデータ バインド可能なコントロールを作成、**ユーザー コントロール**します。 追加、**ユーザー コントロール**項目を**SimpleControlWalkthrough**プロジェクト。
 
-1.  **[プロジェクト]** メニューの **[ユーザー コントロールの追加]** を選択します。
+1. **[プロジェクト]** メニューの **[ユーザー コントロールの追加]** を選択します。
 
-2.  [ファイル名] 領域に「**PhoneNumberBox**」と入力し、**[追加]** をクリックします。
+2. [ファイル名] 領域に「**PhoneNumberBox**」と入力し、**[追加]** をクリックします。
 
      **PhoneNumberBox** コントロールが **ソリューション エクスプローラー**に追加され、デザイナーが開きます。
 
@@ -99,48 +99,48 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 このチュートリアルでは、既存<xref:System.Windows.Forms.MaskedTextBox>を作成する、 **PhoneNumberBox**コントロール。
 
-1.  **ツールボックス**からユーザー コントロールのデザイン サーフェイスに <xref:System.Windows.Forms.MaskedTextBox> をドラッグします。
+1. **ツールボックス**からユーザー コントロールのデザイン サーフェイスに <xref:System.Windows.Forms.MaskedTextBox> をドラッグします。
 
-2.  ドラッグした <xref:System.Windows.Forms.MaskedTextBox> のスマート タグを選択し、**[マスクの設定]** を選択します。
+2. ドラッグした <xref:System.Windows.Forms.MaskedTextBox> のスマート タグを選択し、**[マスクの設定]** を選択します。
 
-3.  **[定型入力]** ダイアログ ボックスで **[電話番号]** を選択し、**[OK]** をクリックしてマスクを設定します。
+3. **[定型入力]** ダイアログ ボックスで **[電話番号]** を選択し、**[OK]** をクリックしてマスクを設定します。
 
 ## <a name="add-the-required-data-binding-attribute"></a>必要なデータ バインディング属性を追加します。
 
 データ バインディングをサポートする簡単なコントロールに対しては <xref:System.ComponentModel.DefaultBindingPropertyAttribute> を実装します。
 
-1.  スイッチ、 **PhoneNumberBox**コントロールをコード ビューにします。 (**[表示]** メニューの **[コード]** を選択します。)
+1. スイッチ、 **PhoneNumberBox**コントロールをコード ビューにします。 (**[表示]** メニューの **[コード]** を選択します。)
 
-2.  コードに置き換えます、 **PhoneNumberBox**次。
+2. コードに置き換えます、 **PhoneNumberBox**次。
 
      [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]
      [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]
 
-3.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
+3. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
 ## <a name="create-a-data-source-from-your-database"></a>データベースからデータ ソースを作成します。
 
-この手順では、**データ ソース構成**ウィザードを使用して、Northwind サンプル データベースの `Customers` テーブルに基づいてデータ ソースを作成します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプル データベースのセットアップについては、次を参照してください。[方法: サンプル データベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)します。
+この手順では、**データ ソース構成**ウィザードを使用して、Northwind サンプル データベースの `Customers` テーブルに基づいてデータ ソースを作成します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプル データベースのセットアップについては、次を参照してください。[方法。サンプル データベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)します。
 
-1.  開くには、**データ ソース**ウィンドウで、**データ**] メニューのをクリックして **[データ ソースの**します。
+1. 開くには、**データ ソース**ウィンドウで、**データ**] メニューのをクリックして **[データ ソースの**します。
 
-2.  **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして**データ ソース構成**ウィザードを起動します。
+2. **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして**データ ソース構成**ウィザードを起動します。
 
-3.  **[データソースの種類を選択]** ページで、**[データベース]** を選択し、**[次へ]** をクリックします。
+3. **[データソースの種類を選択]** ページで、**[データベース]** を選択し、**[次へ]** をクリックします。
 
-4.  **[データ接続の選択]** ページで、次のいずれかの操作を行います。
+4. **[データ接続の選択]** ページで、次のいずれかの操作を行います。
 
-    -   Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
+    - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
-    -   **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示します。
+    - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示します。
 
-5.  データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、**[次へ]** をクリックします。
+5. データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、**[次へ]** をクリックします。
 
-6.  **[アプリケーション構成ファイルに接続文字列を保存]** ページで、**[次へ]** をクリックします。
+6. **[アプリケーション構成ファイルに接続文字列を保存]** ページで、**[次へ]** をクリックします。
 
-7.  **[データベース オブジェクトの選択]** ページで、**[テーブル]** ノードを展開します。
+7. **[データベース オブジェクトの選択]** ページで、**[テーブル]** ノードを展開します。
 
-8.  `Customers` テーブルを選択し、**[完了]** をクリックします。
+8. `Customers` テーブルを選択し、**[完了]** をクリックします。
 
      プロジェクトに **NorthwindDataSet** が追加され、**[データ ソース]** ウィンドウに `Customers` テーブルが表示されます。
 
@@ -148,17 +148,17 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 **[データ ソース]** ウィンドウでは、フォームにコントロールをドラッグする前に作成するコントロールを設定できます。
 
-1.  デザイナーで **Form1** を開きます。
+1. デザイナーで **Form1** を開きます。
 
-2.  **[データ ソース]** ウィンドウの **[Customers]** ノードを展開します。
+2. **[データ ソース]** ウィンドウの **[Customers]** ノードを展開します。
 
-3.  **[Customers]** ノードのドロップダウン矢印をクリックし、コントロール リストの **[Details]** を選択します。
+3. **[Customers]** ノードのドロップダウン矢印をクリックし、コントロール リストの **[Details]** を選択します。
 
-4.  **[Phone]** 列のドロップダウン矢印をクリックし、**[Customize]** をクリックします。
+4. **[Phone]** 列のドロップダウン矢印をクリックし、**[Customize]** をクリックします。
 
-5.  **[データ UI カスタマイズ オプション]** ダイアログ ボックスの **[関連付けられたコントロール]** の一覧の **[PhoneNumberBox]** を選択します。
+5. **[データ UI カスタマイズ オプション]** ダイアログ ボックスの **[関連付けられたコントロール]** の一覧の **[PhoneNumberBox]** を選択します。
 
-6.  **[Phone]** 列のドロップダウン矢印をクリックし、**[PhoneNumberBox]** をクリックします。
+6. **[Phone]** 列のドロップダウン矢印をクリックし、**[PhoneNumberBox]** をクリックします。
 
 ## <a name="add-controls-to-the-form"></a>コントロールをフォームに追加します。
 
@@ -176,9 +176,9 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 アプリケーションの要件に応じて、データ バインディングをサポートするコントロールの作成後に、追加の操作を実行できます。 次の手順として、一般的には、次のようなことを実行します。
 
--   他のアプリケーションで再利用できるように、コントロール ライブラリにカスタム コントロールを配置します。
+- 他のアプリケーションで再利用できるように、コントロール ライブラリにカスタム コントロールを配置します。
 
--   より複雑なデータ バインディングのシナリオをサポートするコントロールを作成します。 詳細については、次を参照してください。[複合データ バインディングをサポートする Windows フォーム ユーザー コントロールを作成](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)と[ルックアップ データ バインディングをサポートする Windows フォーム ユーザー コントロール作成](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)です。
+- より複雑なデータ バインディングのシナリオをサポートするコントロールを作成します。 詳細については、次を参照してください。[複合データ バインディングをサポートする Windows フォーム ユーザー コントロールを作成](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)と[ルックアップ データ バインディングをサポートする Windows フォーム ユーザー コントロール作成](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)です。
 
 ## <a name="see-also"></a>関連項目
 

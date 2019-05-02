@@ -12,21 +12,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce7b6705fcbafaf713faed6f937fcfa29bd013d6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 75caa29d90b41dc696ce586d50928b2adb0875f9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813430"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>方法: SharePoint プロジェクト サービスを取得します。
   次の種類のソリューションで SharePoint プロジェクト サービスにアクセスすることができます。
 
--   プロジェクトの拡張機能、プロジェクト項目の拡張機能、またはプロジェクト項目の種類の定義など、SharePoint プロジェクト システムの拡張機能。 これらの種類の拡張機能の詳細については、[SharePoint プロジェクト システムを拡張](../sharepoint/extending-the-sharepoint-project-system.md)を参照してください。
+- プロジェクトの拡張機能、プロジェクト項目の拡張機能、またはプロジェクト項目の種類の定義など、SharePoint プロジェクト システムの拡張機能。 これらの種類の拡張機能の詳細については、次を参照してください。 [SharePoint プロジェクト システムを拡張](../sharepoint/extending-the-sharepoint-project-system.md)します。
 
--   拡張機能、 **SharePoint 接続**ノード**サーバー エクスプ ローラー**します。 これらの種類の拡張機能の詳細については、[サーバー エクスプ ローラーで、SharePoint 接続 ノードを拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)を参照してください。
+- 拡張機能、 **SharePoint 接続**ノード**サーバー エクスプ ローラー**します。 これらの種類の拡張機能の詳細については、次を参照してください。[サーバー エクスプ ローラーで、SharePoint 接続 ノードを拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)します。
 
--   Visual Studio 拡張機能、VSPackage などの別の型。
+- Visual Studio 拡張機能、VSPackage などの別の型。
 
 ## <a name="retrieve-the-service-in-project-system-extensions"></a>プロジェクト システムの拡張機能でサービスを取得します。
  SharePoint プロジェクト システムの拡張機能を使用してプロジェクトのサービスにアクセスすることができます、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectService%2A>のプロパティ、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>オブジェクト。
@@ -35,9 +35,9 @@ ms.locfileid: "56597376"
 
 #### <a name="to-retrieve-the-service-in-a-project-extension"></a>プロジェクトの拡張機能でサービスを取得するには
 
-1.  実装で、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>を探し、インターフェイス、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>メソッド。
+1. 実装で、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>を探し、インターフェイス、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>メソッド。
 
-2.  使用して、 *projectService*サービスにアクセスするパラメーター。
+2. 使用して、 *projectService*サービスにアクセスするパラメーター。
 
      次のコード例は、プロジェクト サービスを使用してメッセージを記述する方法を示します、**出力**ウィンドウと**エラー一覧**単純なプロジェクトの拡張機能ウィンドウ。
 
@@ -48,9 +48,9 @@ ms.locfileid: "56597376"
 
 #### <a name="to-retrieve-the-service-in-a-project-item-extension"></a>プロジェクト項目の拡張機能でサービスを取得するには
 
-1.  実装で、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>を探し、インターフェイス、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>メソッド。
+1. 実装で、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>を探し、インターフェイス、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>メソッド。
 
-2.  使用して、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A>のプロパティ、 *projectItemType*パラメーターは、サービスを取得します。
+2. 使用して、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A>のプロパティ、 *projectItemType*パラメーターは、サービスを取得します。
 
      次のコード例は、プロジェクト サービスを使用してメッセージを記述する方法を示します、**出力**ウィンドウと**エラー一覧**の単純な拡張機能にウィンドウ、**リスト定義**プロジェクト アイテム。
 
@@ -61,9 +61,9 @@ ms.locfileid: "56597376"
 
 #### <a name="to-retrieve-the-service-in-a-project-item-type-definition"></a>プロジェクト項目の種類の定義でサービスを取得するには
 
-1.  実装で、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>を探し、インターフェイス、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>メソッド。
+1. 実装で、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>を探し、インターフェイス、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>メソッド。
 
-2.  使用して、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.ProjectService%2A>のプロパティ、 *typeDefinition*パラメーターは、サービスを取得します。
+2. 使用して、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.ProjectService%2A>のプロパティ、 *typeDefinition*パラメーターは、サービスを取得します。
 
      次のコード例は、プロジェクト サービスを使用してメッセージを記述する方法を示します、**出力**ウィンドウと**エラー一覧**単純なプロジェクト項目の種類定義のウィンドウ。
 
@@ -77,9 +77,9 @@ ms.locfileid: "56597376"
 
 #### <a name="to-retrieve-the-service-in-a-server-explorer-extension"></a>サーバー エクスプ ローラー拡張機能でサービスを取得するには
 
-1.  取得、<xref:System.IServiceProvider>オブジェクトから、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A>のプロパティ、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode>拡張機能内のオブジェクト。
+1. 取得、<xref:System.IServiceProvider>オブジェクトから、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A>のプロパティ、<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode>拡張機能内のオブジェクト。
 
-2.  使用して、<xref:System.IServiceProvider.GetService%2A>を要求するメソッド、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>オブジェクト。
+2. 使用して、<xref:System.IServiceProvider.GetService%2A>を要求するメソッド、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>オブジェクト。
 
      次のコード例は、プロジェクト サービスを使用してメッセージを記述する方法を示します、**出力**ウィンドウと**エラー一覧**内のノードの一覧に、拡張機能を追加するショートカットメニューからウィンドウ**サーバー エクスプ ローラー**します。
 
@@ -95,9 +95,9 @@ ms.locfileid: "56597376"
 
 - <xref:System.IServiceProvider.GetService%2A>から派生したマネージ VSPackage のメソッド、<xref:Microsoft.VisualStudio.Shell.Package>クラス。 詳細については、「[方法 :サービスを取得](../extensibility/how-to-get-a-service.md)します。
 
-- 静的な<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>メソッド。 詳細については、[使用 GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice)を参照してください。
+- 静的な<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>メソッド。 詳細については、次を参照してください。[使用 GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice)します。
 
-  Visual Studio の拡張機能にアクセスできる、<xref:EnvDTE80.DTE2>オブジェクトを要求できます、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>オブジェクトを使用して、<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>のメソッドを<xref:Microsoft.VisualStudio.Shell.ServiceProvider>オブジェクト。 詳細については、[DTE オブジェクトからサービスを取得する](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object)を参照してください。
+  Visual Studio の拡張機能にアクセスできる、<xref:EnvDTE80.DTE2>オブジェクトを要求できます、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>オブジェクトを使用して、<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>のメソッドを<xref:Microsoft.VisualStudio.Shell.ServiceProvider>オブジェクト。 詳細については、次を参照してください。 [DTE オブジェクトからサービスを取得する](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object)します。
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint プロジェクト サービスを使用します。](../sharepoint/using-the-sharepoint-project-service.md)

@@ -9,39 +9,38 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c676032c2d0bc6c47023c5fd43bc759cccff8de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2c7eecfb6d56d4db378882f6cd45f96454a086dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421736"
 ---
 # <a name="how-to-create-xml-snippets"></a>方法: XML スニペットを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML エディターを使用して、新しい XML スニペットを作成することができます。 エディターには、新しい XML スニペットを作成する際の定型スニペットである、"Snippet" という名前の XML スニペットが含まれています。  
   
 ## <a name="to-create-a-new-xml-snippet"></a>新しい XML スニペットを作成するには  
  新しい XML コードを作成するスニペットが新しい XML ファイルを作成し、使用、**スニペットの挿入**機能します。  
   
-1.  **ファイル** メニューのをクリックして**新規** をクリックし、**ファイル**します。  
+1. **ファイル** メニューのをクリックして**新規** をクリックし、**ファイル**します。  
   
-2.  クリックして**XML ファイル**順にクリックします**オープン**します。  
+2. クリックして**XML ファイル**順にクリックします**オープン**します。  
   
-3.  エディター ウィンドウで右クリックして**スニペットの挿入**します。  
+3. エディター ウィンドウで右クリックして**スニペットの挿入**します。  
   
-4.  選択**スニペット**ENTER キーを押して、一覧から。  
+4. 選択**スニペット**ENTER キーを押して、一覧から。  
   
-5.  新しいスニペットに必要な変更を加えます。  
+5. 新しいスニペットに必要な変更を加えます。  
   
-6.  **ファイル**メニューの  **XMLFile.xml の保存**します。  
+6. **ファイル**メニューの  **XMLFile.xml の保存**します。  
   
      **ファイルに名前を付けて** ダイアログ ボックスが表示されます。  
   
-7.  新しいスニペットの名前を入力し、選択**スニペット ファイル**から、**型として保存**ドロップダウン ウィンドウ。  
+7. 新しいスニペットの名前を入力し、選択**スニペット ファイル**から、**型として保存**ドロップダウン ウィンドウ。  
   
-8.  使用して、**で保存**を My documents \visual Studio 2005\Code \xml\my XML Snippets フォルダーにファイルの場所を変更し、ドロップダウン リスト**保存**します。  
+8. 使用して、**で保存**を My documents \visual Studio 2005\Code \xml\my XML Snippets フォルダーにファイルの場所を変更し、ドロップダウン リスト**保存**します。  
   
 ## <a name="snippet-description"></a>スニペットの説明  
  このセクションでは、定型スニペットの主な要素について説明します。 XML スニペットで使用されるスキーマ要素の詳細については、次を参照してください。[コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)します。  
@@ -62,7 +61,7 @@ XML エディターを使用して、新しい XML スニペットを作成す�
  `Code` 要素は、スニペットが呼び出されたときに挿入される XML テキストを定義します。  
   
 > [!NOTE]
->  XML スニペットのテキストは、`<![CDATA[...]]>` セクションで囲む必要があります。  
+> XML スニペットのテキストは、`<![CDATA[...]]>` セクションで囲む必要があります。  
   
  定型スニペットによって作成される `Code` 要素を次に示します。  
   

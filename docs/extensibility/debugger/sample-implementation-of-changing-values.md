@@ -11,31 +11,31 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f90ae35a002517c34af39cb53deec05a458f716
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c634d394fb6d30a22763cd12efe2d97ba5269986
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415616"
 ---
 # <a name="sample-implementation-of-changing-values"></a>値を変更するサンプルの実装
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)を参照してください。
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
 
  表示されるすべてのローカル、**ローカル**ウィンドウには、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)関連付けられているオブジェクト。 これは、`IDebugProperty2`オブジェクトには、ローカルの名前、値、および種類が含まれています。 ユーザーは、ローカルの値を変更するときに Visual Studio を呼び出す[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)ローカル メモリ内の値を更新します。 この例では、ローカルで表される、`CFieldProperty`を実装するクラス、`IDebugProperty2`インターフェイス。
 
 > [!NOTE]
->  **ウォッチ**と **[クイック ウォッチ]** 式によって表される値を変更する、 `CValueProperty` MyCEE サンプル クラスです。 ただし、実装の`IDebugProperty2::SetValueAsString`は次のように同じです。
+> **ウォッチ**と **[クイック ウォッチ]** 式によって表される値を変更する、 `CValueProperty` MyCEE サンプル クラスです。 ただし、実装の`IDebugProperty2::SetValueAsString`は次のように同じです。
 
  実装`IDebugProperty2::SetValueAsString`は、次のタスクを実行します。
 
-1.  値を生成する式を評価します。
+1. 値を生成する式を評価します。
 
-2.  関連付けられているバインド[IDebugField](../../extensibility/debugger/reference/idebugfield.md)メモリ位置に、生成するオブジェクト、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。
+2. 関連付けられているバインド[IDebugField](../../extensibility/debugger/reference/idebugfield.md)メモリ位置に、生成するオブジェクト、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。
 
-3.  一連のバイト値に変換します。
+3. 一連のバイト値に変換します。
 
-4.  呼び出し[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)メモリ内のバイトを格納します。
+4. 呼び出し[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)メモリ内のバイトを格納します。
 
 ## <a name="managed-code"></a>マネージド コード
  次のコードは、実装の`IDebugProperty2::SetValueAsString`マネージ コードでします。

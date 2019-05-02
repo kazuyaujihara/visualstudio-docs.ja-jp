@@ -7,12 +7,12 @@ ms.date: 12/11/2017
 ms.topic: conceptual
 description: MPN パートナーのために Visual Studio サブスクリプションをエンド ユーザーに割り当てる方法。
 searchscope: VS Subscription
-ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412398"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) で提供されている Visual Studio サブスクリプションの管理
 
@@ -42,7 +42,6 @@ Microsoft Action Pack サブスクライバーと Visual Studio サブスクリ�
     - 連絡先の電子メール
 13. これでサインインが完了し、サブスクライバーが特典にアクセスできます。
 
-
 ### <a name="competency-partners"></a>コンピテンシー パートナー
 1. **[実績と必要要件]** を選びます。
 2. **[アクセス許可]** を選びます。
@@ -66,7 +65,7 @@ Microsoft Action Pack サブスクライバーと Visual Studio サブスクリ�
 
 > [!NOTE]
 > Visual Studio サブスクリプションには、技術担当者ロールが必要
->     - 8 ページ: Assigning Visual Studio subscriptions for Competency Partners (コンピテンシー パートナーへの Visual Studio サブスクリプションの割り当て)
+> - 8 ページ: Assigning Visual Studio subscriptions for Competency Partners (コンピテンシー パートナーへの Visual Studio サブスクリプションの割り当て)
 
 ## <a name="need-help"></a>お困りの際は、
 サブスクライバーのサブスクリプションへのアクセスに関する問題を解決するには、サブスクライバーとプログラム管理者が、Microsoft Partner Network のサポート チームと直接作業する必要があります。 [パートナーのサポート](https://partner.microsoft.com/support) ページをご覧ください  (MPN サインイン資格情報が必要です)。

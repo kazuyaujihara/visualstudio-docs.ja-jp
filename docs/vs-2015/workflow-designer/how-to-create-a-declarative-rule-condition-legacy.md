@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba2db8f1accafab1bdb20eacab73b2a963391075
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbdcc268b71f2926307b500126840391dd5308fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931243"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>方法: 宣言的ルール条件を作成する (レガシ)
 このトピックでは、[!INCLUDE[wfd1](../includes/wfd1-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする従来の [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用してルール条件を宣言する方法について説明します。  
@@ -27,37 +27,37 @@ ms.locfileid: "58963284"
   
  宣言的ルール条件は、次のような Windows Workflow Foundation 事前定義アクティビティで使用されます。  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>ルール条件エディタを使って宣言的ルール条件を作成するには  
   
-1.  アクティビティの**プロパティ**ウィンドウで、をクリックして、**条件**プロパティまたは**UntilCondition**アクティビティに応じてプロパティ。  
+1. アクティビティの**プロパティ**ウィンドウで、をクリックして、**条件**プロパティまたは**UntilCondition**アクティビティに応じてプロパティ。  
   
-2.  選択**宣言型ルール条件**プロパティの一覧から。  
+2. 選択**宣言型ルール条件**プロパティの一覧から。  
   
-3.  展開、**条件**または**UntilCondition**プロパティ。  
+3. 展開、**条件**または**UntilCondition**プロパティ。  
   
-4.  をクリックして、 **ConditionName**プロパティ。  
+4. をクリックして、 **ConditionName**プロパティ。  
   
-5.  をクリックして、 **ConditionName**楕円 **[...]** を開く、**条件の選択** ダイアログ ボックス。  
+5. をクリックして、 **ConditionName**楕円 **[...]** を開く、**条件の選択** ダイアログ ボックス。  
   
-6.  クリックして**新しい条件**を開く、**ルール条件エディター**  ダイアログ ボックス。  
+6. クリックして**新しい条件**を開く、**ルール条件エディター**  ダイアログ ボックス。  
   
-7.  条件の式を入力、**条件**テキスト ボックス。  
+7. 条件の式を入力、**条件**テキスト ボックス。  
   
      条件式を作成する方法については、次を参照してください。[ルール条件エディター ダイアログ ボックス (レガシ)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)します。  
   
-8.  条件式の作成が完了したら、クリックして**OK**ダイアログ ボックスを閉じ、割り当て済みの名前を持つルールの条件を作成します。  
+8. 条件式の作成が完了したら、クリックして**OK**ダイアログ ボックスを閉じ、割り当て済みの名前を持つルールの条件を作成します。  
   
      **条件の選択** ダイアログ ボックスが表示されます。  
   

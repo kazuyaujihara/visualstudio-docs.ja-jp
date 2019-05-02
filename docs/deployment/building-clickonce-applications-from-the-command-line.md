@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929166"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>ClickOnce アプリケーションのコマンド ラインからのビルド
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]、統合開発環境 (IDE) で作成される場合でも、コマンドラインからプロジェクトをビルドできます。 実際で作成されたプロジェクトを再構築する[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]のみを持つ別のコンピューターで、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]をインストールします。 自動化されたプロセスを使用してビルドを再現することができます、たとえば、中央のビルド ラボまたはを使用して高度なスクリプティング プロジェクト自体のビルドの範囲外の手法です。
@@ -35,7 +35,7 @@ ms.locfileid: "58567842"
 
  `/target:publish`コマンドは、発行ターゲットを呼び出すための MSBuild に指示します。 発行先は、ビルド ターゲットに依存します。 これは、発行操作は、ビルド操作のスーパー セットであることを意味します。 たとえば、Visual Basic または c# ソース ファイルのいずれかに変更を加えた場合、対応するアセンブリは自動的にして再構築、発行操作。
 
- 完全なを生成する方法について[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Mage.exe コマンド ライン ツールを使用して作成する展開、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]マニフェストは、「[チュートリアル: ClickOnce アプリケーションを手動で展開](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。
+ 完全なを生成する方法について[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Mage.exe コマンド ライン ツールを使用して作成する展開、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]マニフェストは、「[チュートリアル。ClickOnce アプリケーションを手動で展開](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)します。
 
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>作成し、MSBuild を使用した基本的な ClickOnce アプリケーションの構築
 
@@ -160,13 +160,13 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |[URL]|説明|
 |----------------|-----------------|
 |`PublishURL`|Web サイトに、ClickOnce アプリケーションをパブリッシュするかどうかに必要です。|
-|`InstallURL`|任意。 インストールのサイトが異なる場合、この URL オプションを設定、`PublishURL`します。 たとえば、設定する、`PublishURL`に、FTP パスを設定し、 `InstallURL` Web URL にします。|
+|`InstallURL`|省略可能です。 インストールのサイトが異なる場合、この URL オプションを設定、`PublishURL`します。 たとえば、設定する、`PublishURL`に、FTP パスを設定し、 `InstallURL` Web URL にします。|
 |`SupportURL`|任意。 サポート サイトが異なる場合は、この URL オプションを設定、`PublishURL`します。 たとえば、設定する、`SupportURL`会社の顧客のサポート Web サイトにします。|
-|`UpdateURL`|任意。 更新プログラムの場所が異なる場合は、この URL オプションを設定、`InstallURL`します。 たとえば、設定する、`PublishURL`に、FTP パスを設定し、 `UpdateURL` Web URL にします。|
+|`UpdateURL`|省略可能です。 更新プログラムの場所が異なる場合は、この URL オプションを設定、`InstallURL`します。 たとえば、設定する、`PublishURL`に、FTP パスを設定し、 `UpdateURL` Web URL にします。|
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.Build.Tasks.GenerateBootstrapper>
 - <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>
 - <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>
 - [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)
-- [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+- [チュートリアル: ClickOnce アプリケーションを手動で展開します。](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b6176fda41b16a092b52e83e0ce894e1d1898e0a
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911883"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>VSIX プロジェクト テンプレートを概要します。
 
@@ -23,7 +23,7 @@ ms.locfileid: "58194322"
 
  VSIX プロジェクト テンプレートは構成だけを*source.extension.vsixmanifest*ファイルで、出荷、拡張機能と、資産に関する情報が含まれます。
 
- VSIX プロジェクト テンプレートを検索するには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。
+ VSIX プロジェクト テンプレートを検索するには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
 
 ## <a name="deploy-a-custom-project-template-using-the-vsix-project-template"></a>VSIX プロジェクト テンプレートを使用してカスタム プロジェクト テンプレートのデプロイします。
 

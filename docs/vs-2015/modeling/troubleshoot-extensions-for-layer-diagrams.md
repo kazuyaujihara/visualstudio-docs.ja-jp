@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3087353b4d8875d1933c285343c3f1460c0e276
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 38a459760dd66e1160bd8b197ee9883b617639b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439747"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>レイヤー図の拡張機能のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ ms.locfileid: "58973120"
 2. 次のフォルダーの削除: %LocalAppData%\Microsoft\VisualStudio\\[バージョン] \ComponentModelCache  
   
    > [!NOTE]
-   >  %Localappdata% は通常*DriveName*: \Users\\*UserName*\AppData\Local です。  
+   > %Localappdata% は通常*DriveName*: \Users\\*UserName*\AppData\Local です。  
   
    必要に応じて、次の手順に進みます。  
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>古いバージョンの検証結果が表示される、または検証メソッドが呼び出されない  
   
-1.  実験用インスタンスで[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の**ビルド** メニューのをクリックして**ソリューションのクリーン**します。 これにより、前に行った検証分析のキャッシュされている結果がクリアされます。  
+1. 実験用インスタンスで[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の**ビルド** メニューのをクリックして**ソリューションのクリーン**します。 これにより、前に行った検証分析のキャッシュされている結果がクリアされます。  
   
-2.  モデルのレイヤーがコード要素と関連付けられていること、および少なくとも 1 つの依存関係リンクがモデルに存在することを確認します。 検証する項目がない場合、検証は呼び出されません。  
+2. モデルのレイヤーがコード要素と関連付けられていること、および少なくとも 1 つの依存関係リンクがモデルに存在することを確認します。 検証する項目がない場合、検証は呼び出されません。  
   
-3.  検証メソッドは別のプロセスで実行するので、標準のブレークポイントは検証メソッドでは機能しない場合があります。 メソッドをステップ実行する場合は、`System.Diagnostics.Debugger.Launch()` の呼び出しを挿入する必要があります。  
+3. 検証メソッドは別のプロセスで実行するので、標準のブレークポイントは検証メソッドでは機能しない場合があります。 メソッドをステップ実行する場合は、`System.Diagnostics.Debugger.Launch()` の呼び出しを挿入する必要があります。  
   
-4.  **Source.extension.vsixmanifest** 、レイヤー検証プロジェクトの両方を追加したことを確認します、 **MEF コンポーネント**項目と**カスタム拡張機能の種類**] の [**コンテンツ**します。  
+4. **Source.extension.vsixmanifest** 、レイヤー検証プロジェクトの両方を追加したことを確認します、 **MEF コンポーネント**項目と**カスタム拡張機能の種類**] の [**コンテンツ**します。  
   
 ## <a name="see-also"></a>関連項目  
  [レイヤー図を拡張する](../modeling/extend-layer-diagrams.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 780cbcf5c6e03c5534b7f2125662696344e9cec4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 00535fd336f504afcebdd24a4d009a10f7f6ff33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440304"
 ---
 # <a name="how-to-use-the-finder-tool"></a>方法: ファインダー ツールを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "58973737"
   
 ### <a name="to-display-window-properties-or-messages"></a>ウィンドウのプロパティまたはメッセージを表示するには  
   
-1.  Spy++ とターゲット ウィンドウの両方が表示されるように、windows を配置します。  
+1. Spy++ とターゲット ウィンドウの両方が表示されるように、windows を配置します。  
   
-2.  **スパイ**] メニューの [選択**ウィンドウ検索**します。  
+2. **スパイ**] メニューの [選択**ウィンドウ検索**します。  
   
      [ウィンドウの検索 ダイアログ ボックス](../debugger/find-window-dialog-box.md)が開きます。  
   
-3.  ドラッグ、**ファインダー ツール**ターゲット枠。  
+3. ドラッグ、**ファインダー ツール**ターゲット枠。  
   
      このツールをドラッグすると、**ウィンドウ検索** ダイアログ ボックスでは、選択したウィンドウの詳細が表示されます。  
   
@@ -45,11 +45,11 @@ ms.locfileid: "58973737"
      (たとえば、デバッガーからコピー) を確認するウィンドウのハンドルがあれば、入力に、**処理**テキスト ボックス。  
   
     > [!TIP]
-    >  画面の煩雑さを減らすためには、選択、 **Spy++ を非表示**オプション。 このオプションは、主な spy++ ウィンドウだけを非表示、**ウィンドウ検索**ダイアログ ボックスで、他のアプリケーションの上に表示します。 クリックすると、spy++ のメイン ウィンドウが復元**OK**または**キャンセル**、またはオフにすると、 **spy++ を非表示にする**オプション。  
+    > 画面の煩雑さを減らすためには、選択、 **Spy++ を非表示**オプション。 このオプションは、主な spy++ ウィンドウだけを非表示、**ウィンドウ検索**ダイアログ ボックスで、他のアプリケーションの上に表示します。 クリックすると、spy++ のメイン ウィンドウが復元**OK**または**キャンセル**、またはオフにすると、 **spy++ を非表示にする**オプション。  
   
-4.  **表示**、いずれかを選択**プロパティ**または**メッセージ**します。  
+4. **表示**、いずれかを選択**プロパティ**または**メッセージ**します。  
   
-5.  **[OK]** を押します。  
+5. **[OK]** を押します。  
   
      選択した場合**プロパティ**、[ウィンドウ プロパティ ダイアログ ボックス](../debugger/window-properties-dialog-box.md)が開きます。 選択した場合**メッセージ**、[メッセージ ビュー](../debugger/messages-view.md)ウィンドウが開きます。  
   

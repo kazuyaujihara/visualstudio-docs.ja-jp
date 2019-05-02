@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00baf3697347f208c5bd6cd2aa1abfe02b6fa2cb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 40be072c9ebc518068d9f02a28507b011bec125a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58978468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446772"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>チュートリアル: 生成済みディレクティブ プロセッサをホストに接続します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ ms.locfileid: "58978468"
  このチュートリアルでは、テキスト テンプレート ディレクティブ プロセッサの呼び出しをサポートするように、そのカスタム ホストを展開します。 ドメイン固有言語を定義するときに生成、*ディレクティブ プロセッサ*ドメイン モデルです。 ディレクティブ プロセッサによって、ユーザー アセンブリを記述し、テンプレートのディレクティブをインポートする必要が少なくなり、モデルにアクセスするためのテンプレートを作成するために簡単にできます。  
   
 > [!WARNING]
->  このチュートリアル[チュートリアル。カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)です。 このチュートリアルを最初に実行します。  
+> このチュートリアル[チュートリアル。カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)です。 このチュートリアルを最初に実行します。  
   
  このチュートリアルでは、次のタスクについて説明します。  
   
--   使用して[!INCLUDE[dsl](../includes/dsl-md.md)]ドメイン モデルに基づいているディレクティブ プロセッサを生成します。  
+- 使用して[!INCLUDE[dsl](../includes/dsl-md.md)]ドメイン モデルに基づいているディレクティブ プロセッサを生成します。  
   
--   生成されたディレクティブ プロセッサへのカスタム テキスト テンプレート ホストを接続します。  
+- 生成されたディレクティブ プロセッサへのカスタム テキスト テンプレート ホストを接続します。  
   
--   生成されたディレクティブ プロセッサを搭載したカスタム ホストをテストします。  
+- 生成されたディレクティブ プロセッサを搭載したカスタム ホストをテストします。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  DSL を定義するには、以下のコンポーネントをインストールしておく必要があります。  
@@ -68,7 +68,7 @@ ms.locfileid: "58978468"
 2. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
    > [!IMPORTANT]
-   >  この手順では、ディレクティブ プロセッサを生成し、レジストリでは、キーを追加します。  
+   > この手順では、ディレクティブ プロセッサを生成し、レジストリでは、キーを追加します。  
   
 3. **[デバッグ]** メニューの **[デバッグの開始]** をクリックします。  
   
@@ -87,27 +87,27 @@ ms.locfileid: "58978468"
   
 #### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>生成されたディレクティブ プロセッサへのカスタム テキスト テンプレート ホストを接続するには  
   
-1.  CustomHost ソリューションを開きます。  
+1. CustomHost ソリューションを開きます。  
   
-2.  **[プロジェクト]** メニューの **[参照の追加]** をクリックします。  
+2. **[プロジェクト]** メニューの **[参照の追加]** をクリックします。  
   
      **参照の追加**ダイアログ ボックスが開き、 **.NET**タブが表示されます。  
   
-3.  次の参照を追加します。  
+3. 次の参照を追加します。  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0  
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0  
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.11.0  
+    - Microsoft.VisualStudio.TextTemplating.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.11.0  
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.11.0  
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.11.0  
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0  
   
-4.  Module1.vb、Program.cs の上部にある次のコード行を追加します。  
+4. Module1.vb、Program.cs の上部にある次のコード行を追加します。  
   
     ```csharp  
     using Microsoft.Win32;  
@@ -117,10 +117,10 @@ ms.locfileid: "58978468"
     Imports Microsoft.Win32  
     ```  
   
-5.  プロパティのコードを見つけます`StandardAssemblyReferences`、し、次のコードに置き換えます。  
+5. プロパティのコードを見つけます`StandardAssemblyReferences`、し、次のコードに置き換えます。  
   
     > [!NOTE]
-    >  この手順では、生成されたディレクティブ プロセッサ ホストをサポートするに必要なアセンブリへの参照を追加します。  
+    > この手順では、生成されたディレクティブ プロセッサ ホストをサポートするに必要なアセンブリへの参照を追加します。  
   
     ```csharp  
     //the host can provide standard assembly references  
@@ -153,10 +153,10 @@ ms.locfileid: "58978468"
     }  
     ```  
   
-6.  関数のコードを見つけます`ResolveDirectiveProcessor`、し、次のコードに置き換えます。  
+6. 関数のコードを見つけます`ResolveDirectiveProcessor`、し、次のコードに置き換えます。  
   
     > [!IMPORTANT]
-    >  このコードには、接続する生成されたディレクティブ プロセッサの名前にハード コーディングされた参照が含まれています。 行うことができます簡単にこれより一般的なすべてのディレクティブ プロセッサを探す場合、レジストリに一覧表示し一致するものを見つけようとします。 その場合は、ホストは、生成されたディレクティブ プロセッサを行います。  
+    > このコードには、接続する生成されたディレクティブ プロセッサの名前にハード コーディングされた参照が含まれています。 行うことができます簡単にこれより一般的なすべてのディレクティブ プロセッサを探す場合、レジストリに一覧表示し一致するものを見つけようとします。 その場合は、ホストは、生成されたディレクティブ プロセッサを行います。  
   
     ```csharp  
     //the engine calls this method based on the directives the user has   
@@ -227,21 +227,21 @@ ms.locfileid: "58978468"
             }  
     ```  
   
-7.  **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
+7. **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   
-8.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
+8. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
 ## <a name="testing-the-custom-host-with-the-directive-processor"></a>カスタム ディレクティブ プロセッサを搭載したホストのテスト  
  最初、カスタム テキスト テンプレート ホストをテストするには、生成されたディレクティブ プロセッサを呼び出すテキスト テンプレートを記述する必要があります。 テキスト テンプレートの名前を渡す、および、ディレクティブが正しく処理されたことを確認します。 カスタム ホストを実行します。  
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>テキスト テンプレートを作成してカスタム ホストをテストするには  
   
-1.  テキスト ファイルを作成し、名前を `TestTemplateWithDP.tt` にします。 メモ帳などの任意のテキスト エディターを使用して、ファイルを作成することができます。  
+1. テキスト ファイルを作成し、名前を `TestTemplateWithDP.tt` にします。 メモ帳などの任意のテキスト エディターを使用して、ファイルを作成することができます。  
   
-2.  次の内容をテキスト ファイルに追加します。  
+2. 次の内容をテキスト ファイルに追加します。  
   
     > [!NOTE]
-    >  テキスト テンプレートのプログラミング言語は、カスタム ホストと一致する必要はありません。  
+    > テキスト テンプレートのプログラミング言語は、カスタム ホストと一致する必要はありません。  
   
     ```csharp  
     Text Template Host Test  
@@ -310,41 +310,41 @@ ms.locfileid: "58978468"
     #>  
     ```  
   
-3.  コードでは、次のように置換します。 \<YOUR パス > 最初の手順で作成した設計に固有の言語から Sample.min ファイルのパスを使用します。  
+3. コードでは、次のように置換します。 \<YOUR パス > 最初の手順で作成した設計に固有の言語から Sample.min ファイルのパスを使用します。  
   
-4.  ファイルを保存して閉じます。  
+4. ファイルを保存して閉じます。  
   
 #### <a name="to-test-the-custom-host"></a>カスタム ホストをテストするには  
   
-1.  コマンド プロンプト ウィンドウを開きます。  
+1. コマンド プロンプト ウィンドウを開きます。  
   
-2.  カスタム ホストの実行可能ファイルのパスを入力します。ただし、Enter キーはまだ押さないでください。  
+2. カスタム ホストの実行可能ファイルのパスを入力します。ただし、Enter キーはまだ押さないでください。  
   
      たとえば、次のように入力します。  
   
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  アドレスを入力する代わりに CustomHost.exe ファイルを参照できますで**Windows エクスプ ローラー**、コマンド プロンプト ウィンドウにファイルをドラッグします。  
+    > アドレスを入力する代わりに CustomHost.exe ファイルを参照できますで**Windows エクスプ ローラー**、コマンド プロンプト ウィンドウにファイルをドラッグします。  
   
-3.  空白を入力します。  
+3. 空白を入力します。  
   
-4.  テキスト テンプレート ファイルのパスを入力し、Enter キーを押します。  
+4. テキスト テンプレート ファイルのパスを入力し、Enter キーを押します。  
   
      たとえば、次のように入力します。  
   
      `<YOUR PATH>TestTemplateWithDP.txt`  
   
     > [!NOTE]
-    >  アドレスを入力する代わりに TestTemplateWithDP.txt ファイルを参照できますで**Windows エクスプ ローラー**、コマンド プロンプト ウィンドウにファイルをドラッグします。  
+    > アドレスを入力する代わりに TestTemplateWithDP.txt ファイルを参照できますで**Windows エクスプ ローラー**、コマンド プロンプト ウィンドウにファイルをドラッグします。  
   
      カスタム ホスト アプリケーションが実行され、テキスト テンプレート変換プロセスを開始します。  
   
-5.  **Windows エクスプ ローラー**、TestTemplateWithDP.txt ファイルが含まれているフォルダーを参照します。  
+5. **Windows エクスプ ローラー**、TestTemplateWithDP.txt ファイルが含まれているフォルダーを参照します。  
   
      フォルダーには、TestTemplateWithDP1.txt ファイルも含まれています。  
   
-6.  このファイルを開き、テキスト テンプレート変換の結果を確認します。  
+6. このファイルを開き、テキスト テンプレート変換の結果を確認します。  
   
      生成されたテキスト出力の結果が表示され、ようになります。  
   

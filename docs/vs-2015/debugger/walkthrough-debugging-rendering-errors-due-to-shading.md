@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42627b336bb83d915b2af96f0ee569a305212f6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4c158c4ce6762b69f73a55915cc459f84cd7fff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974356"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067158"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>チュートリアル: 網かけによるレンダリング エラーのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "58974356"
   
  このチュートリアルでは、次の方法を示します。  
   
--   問題を示すピクセルを識別するために、グラフィックスのログのドキュメントを調査する。  
+- 問題を示すピクセルを識別するために、グラフィックスのログのドキュメントを調査する。  
   
--   **[グラフィックス ピクセル履歴]** ウィンドウを使用して、ピクセルの状態をより詳しく調査する。  
+- **[グラフィックス ピクセル履歴]** ウィンドウを使用して、ピクセルの状態をより詳しく調査する。  
   
--   **HLSL デバッガー** を使用して、ピクセルと頂点シェーダーを調査する。  
+- **HLSL デバッガー** を使用して、ピクセルと頂点シェーダーを調査する。  
   
 ## <a name="scenario"></a>シナリオ  
  オブジェクトに正しくない色が指定される問題は、一般的に、頂点シェーダーからピクセル シェーダーに渡される情報が正しくないまたは不完全な場合に発生します。  

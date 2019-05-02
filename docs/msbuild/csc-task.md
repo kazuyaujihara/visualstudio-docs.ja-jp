@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a505194a71058d791b7d67d74cd203c43298d684
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778413"
 ---
 # <a name="csc-task"></a>Csc タスク
 *csc.exe* をラップし、実行可能ファイル (*.exe* ファイル)、ダイナミック リンク ライブラリ (*.dll* ファイル)、またはコード モジュール (*.netmodule* ファイル) を生成します。 *csc.exe* の詳細については、「[C# コンパイラ オプション](/dotnet/csharp/language-reference/compiler-options/index)」を参照してください。

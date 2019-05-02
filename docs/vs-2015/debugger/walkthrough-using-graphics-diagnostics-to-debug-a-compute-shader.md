@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a57a77e401564b3bd32897a9b32d9773d959a17
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59002119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080347"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>チュートリアル: 計算シェーダーをデバッグするためのグラフィックス診断の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "59002119"
   
  このチュートリアルでは、次の作業について説明します。  
   
--   **[グラフィックス イベント一覧]** を使用して、問題の原因となる可能性がある部分を検索します。  
+- **[グラフィックス イベント一覧]** を使用して、問題の原因となる可能性がある部分を検索します。  
   
--   **[グラフィックス イベント呼び出し履歴]** を使用して、DirectCompute `Dispatch` イベントによって実行される計算シェーダーを決定します。  
+- **[グラフィックス イベント呼び出し履歴]** を使用して、DirectCompute `Dispatch` イベントによって実行される計算シェーダーを決定します。  
   
--   **[グラフィックス パイプライン ステージ]** ウィンドウと HLSL デバッガーを使用して、問題の原因になっている計算シェーダーを調べます。  
+- **[グラフィックス パイプライン ステージ]** ウィンドウと HLSL デバッガーを使用して、問題の原因になっている計算シェーダーを調べます。  
   
 ## <a name="scenario"></a>シナリオ  
  このシナリオでは、シミュレーション更新の計算量が最も多い部分を実行するために DirectCompute を使用する流体力学シミュレーションを記述しました。 アプリを実行したときに、データセットと UI は正しくレンダリングされますが、シミュレーションが想定どおりに動作しません。 グラフィックス診断を使用すると、グラフィックス ログに問題をキャプチャして、アプリのデバッグを実行できます。 問題は、アプリケーションでは次のように見えます。  

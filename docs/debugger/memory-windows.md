@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a35e679ebff8a0a262b329298b0f2d135eb9dc8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 794400a14cac5b85f813e7a384c650c581a719e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905579"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio デバッガーで、[メモリ] ウィンドウを使用して (C#、C++、Visual Basic、 F#)
 
@@ -84,7 +84,7 @@ ms.locfileid: "57526686"
 
 **メモリの内容の表示形式を変更するには:** 
 
--  右クリックし、**メモリ**ウィンドウで、コンテキスト メニューから使用する形式を選択します。
+- 右クリックし、**メモリ**ウィンドウで、コンテキスト メニューから使用する形式を選択します。
 
 **[メモリ] ウィンドウの列数を変更するには:** 
 
@@ -103,7 +103,7 @@ ms.locfileid: "57526686"
 
 **ツールバーの表示を切り替えます。**
 
-- 右クリックし、**メモリ**ウィンドウ、および選択 **ツールバーの表示**のコンテキスト メニュー。 直前の状態に応じて、ツール バーが表示されるか非表示になります。
+- 右クリックし、**メモリ**ウィンドウ、および選択 **ツールバーの表示** のコンテキスト メニュー。 直前の状態に応じて、ツール バーが表示されるか非表示になります。
 
 ## <a name="follow-a-pointer-through-memory"></a>メモリ内でポインターに従います。
 

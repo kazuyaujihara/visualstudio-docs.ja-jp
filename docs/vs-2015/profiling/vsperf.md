@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a32de469c5b58ca2bf58901e30b81cfb70ed84b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ee221f0c1da32694e869177399981cc16ce901f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803528"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099469"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54803528"
   
    プロファイル オプションの詳細については、「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
   
-##  <a name="BKMK_In_this_topic"></a> このトピックの内容  
+## <a name="BKMK_In_this_topic"></a> このトピックの内容  
  このトピックでは、`vsperf.exe` コマンド ライン ツールで使用できるオプションについて説明します。 このトピックは、次のセクションで構成されています。  
   
  [Windows ストア アプリのみ](#BKMK_windows_store_apps_only)  
@@ -36,7 +36,7 @@ ms.locfileid: "54803528"
   
  [すべてのアプリケーション](#BKMK_All_applications)  
   
-##  <a name="BKMK_windows_store_apps_only"></a> Windows ストア アプリのみ  
+## <a name="BKMK_windows_store_apps_only"></a> Windows ストア アプリのみ  
  これらのオプションは、Windows ストア アプリにのみ適用されます。  
   
 |||  
@@ -47,7 +47,7 @@ ms.locfileid: "54803528"
 |**/noclr**|任意。 CLR データは収集しません。<br /><br /> /package または /attach でのみ使用します。<br /><br /> 最適化で、マネージド シンボルは解決されません。|  
 |**/listapps**|インストール済みアプリの Name と PackageFullName を一覧表示します。|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Windows 8 デスクトップ アプリケーション、および Windows Server 2012 のアプリケーションのみ  
+## <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Windows 8 デスクトップ アプリケーション、および Windows Server 2012 のアプリケーションのみ  
  これらのオプションは、Windows ストア アプリでは機能しません。  
   
 |||  
@@ -56,7 +56,7 @@ ms.locfileid: "54803528"
 |**/args:{ExecutableArguments}**|**/launch** ターゲットに渡すようにコマンド ライン引数を指定します。|  
 |**/console**|新しいコマンド ウィンドウで **/launch** ターゲットを実行します。|  
   
-##  <a name="BKMK_All_applications"></a> すべてのアプリケーション  
+## <a name="BKMK_All_applications"></a> すべてのアプリケーション  
  これらのオプションは、すべての Windows 8 アプリケーションまたは Windows Server 2012 アプリケーションに適用されます。  
   
 |||  

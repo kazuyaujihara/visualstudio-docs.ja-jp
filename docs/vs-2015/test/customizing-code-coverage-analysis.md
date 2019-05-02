@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416642"
 ---
 # <a name="customizing-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,10 +69,10 @@ ms.locfileid: "54768035"
 ```  
   
 > [!WARNING]
->  シンボルの解決には、特に多数のアセンブリでリモートのファイルの場所を使用している場合、時間がかかることがあります。 そのため、リモート .pdb ファイルをバイナリ (.dll または .exe) ファイルと同じローカルの場所にコピーすることを検討してください。  
+> シンボルの解決には、特に多数のアセンブリでリモートのファイルの場所を使用している場合、時間がかかることがあります。 そのため、リモート .pdb ファイルをバイナリ (.dll または .exe) ファイルと同じローカルの場所にコピーすることを検討してください。  
   
 ### <a name="excluding-and-including"></a>除外と包含  
- 指定したアセンブリをコード カバレッジ分析から除外できます。 次に例を示します。  
+ 指定したアセンブリをコード カバレッジ分析から除外できます。 例えば:  
   
 ```minterastlib  
 <ModulePaths>  
@@ -115,7 +115,7 @@ ms.locfileid: "54768035"
   
    すべての一致で、大文字と小文字が区別されます。  
   
-   次に例を示します。  
+   例:  
   
 ```xml  
 <ModulePaths>  
@@ -134,7 +134,7 @@ ms.locfileid: "54768035"
 ```  
   
 > [!WARNING]
->  正規表現にエラー (エスケープされず、一致しないかっこなど) がある場合、コード カバレッジ分析は実行されません。  
+> 正規表現にエラー (エスケープされず、一致しないかっこなど) がある場合、コード カバレッジ分析は実行されません。  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>要素を包含または除外するための別の方法  
  例については、[このトピックの末尾のサンプル](#sample)を参照してください。  
@@ -153,7 +153,7 @@ ms.locfileid: "54768035"
   
   **関数名の一致**  
   
-  正規表現が、名前空間、クラス名、メソッド名、およびパラメーター リストを含む関数の完全修飾名と一致する必要があります。 たとえば、オブジェクトに適用された  
+  正規表現が、名前空間、クラス名、メソッド名、およびパラメーター リストを含む関数の完全修飾名と一致する必要があります。 例えば以下のようにします。  
   
 - C# または Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
@@ -183,11 +183,11 @@ ms.locfileid: "54768035"
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>コマンド ライン テストで実行設定をカスタマイズするには  
  コマンド ラインからテストを実行するには、vstest.console.exe を使用します。 設定ファイルは、このユーティリティのパラメーターです。 詳細については、「[コマンド ラインからの VSTest.console の使用](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a)」を参照してください。  
   
-1.  Visual Studio 開発者コマンド プロンプトを起動します。  
+1. Visual Studio 開発者コマンド プロンプトを起動します。  
   
      Windows の **[スタート]** メニューで **[すべてのプログラム]**、**[Microsoft Visual Studio]**、**[Visual Studio Tools]**、**[開発者コマンド プロンプト]** の順に選択します。  
   
-2.  実行します。  
+2. 実行します。  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
   
@@ -202,13 +202,13 @@ ms.locfileid: "54768035"
   
 3. **[プロセス]** ページで **[自動テスト]**、**[テスト ソース]**、**[実行設定]** の順に展開します。 **.runsettings** ファイルを選択します。  
   
-   - <em>しかし、**[テスト ソース]** の代わりに **[テスト アセンブリ]</em>* が表示されます。**[実行設定]** フィールドを設定しようとすると、.testsettings ファイルしか選択できません。*  
+   - <em>しかし、**[テスト ソース]** の代わりに **[テスト アセンブリ]</em>* が表示されます。[実行設定]** フィールドを設定しようとすると、.testsettings ファイルしか選択できません。*  
   
       **[自動テスト]** の下の **[テスト アセンブリ]** を選択し、行の末尾の **[...]** ボタンを選択します。 **[テストの実行の追加と編集]** ダイアログ ボックスで、**[テスト ランナー]** を **[Visual Studio テスト ランナー]** に設定します。  
   
    結果は、ビルド レポートの概要セクションに表示されます。  
   
-##  <a name="sample"></a>サンプル .runsettings ファイル  
+## <a name="sample"></a>サンプル .runsettings ファイル  
  このコードをコピーし、独自のニーズに合わせて編集します。 これは、既定の .runsettings ファイルです。  
   
  (.runsettings ファイルのその他の用途については、「[.runsettings ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)」を参照してください。)  

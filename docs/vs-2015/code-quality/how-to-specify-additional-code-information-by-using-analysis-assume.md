@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 96f4d628d32aec9a0f7eb2d091a017edfba3d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e130f2248ae6715b3248226c780bc162e1ff01ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426634"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>方法: __analysis_assume を使用して追加のコード情報を指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ C/C++ コード分析のプロセスを支援し、警告を減らすは、コ�
  コード分析ツールでは、関数が表示され、式が変更されるまで、たとえば、変数への代入によってが true の時点で、式で表される条件のことを前提としています。  
   
 > [!NOTE]
->  `__analysis_assume` コードの最適化には影響しません。 コード分析ツールでは、外部`__analysis_assume`操作なしとして定義されます。  
+> `__analysis_assume` コードの最適化には影響しません。 コード分析ツールでは、外部`__analysis_assume`操作なしとして定義されます。  
   
 ## <a name="example"></a>例  
  次のコードでは`__analysis_assume`コード分析の警告を解決する[C6388](../code-quality/c6388.md):  

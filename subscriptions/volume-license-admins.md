@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: サブスクリプションの管理者が管理ポータルにアクセスし、ボリューム ライセンス (VL) で取得したサブスクリプションを管理する方法について説明します
 searchscope: VS Subscription
 ms.openlocfilehash: 6c8a68a1a25e99018e7f41fedbfc9d01b191e2e7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428041"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>ポータルへのアクセスおよび管理者の管理: ボリューム ライセンス (VL) で取得したサブスクリプションの場合
 

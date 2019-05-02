@@ -10,11 +10,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 23e108e476bfa9cb3ce699a16c77eb3520ed4785
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838481"
 ---
 # <a name="debugging-xslt"></a>XSLT のデバッグ
 
@@ -88,7 +88,7 @@ namespace ConsoleApplication
 
 ## <a name="xslt-profiler"></a>XSLT プロファイラー
 
-[XSLT プロファイラー](../xml-tools/xslt-profiler.md)はにより、開発者は、計測、評価、および詳細な XSLT パフォーマンス レポートを作成して XSLT コード内のパフォーマンスに関連する問題を特定するツールです。 詳細については、[XSLT プロファイラー](../xml-tools/xslt-profiler.md)を参照してください。
+[XSLT プロファイラー](../xml-tools/xslt-profiler.md)はにより、開発者は、計測、評価、および詳細な XSLT パフォーマンス レポートを作成して XSLT コード内のパフォーマンスに関連する問題を特定するツールです。 詳細については、次を参照してください。 [XSLT プロファイラー](../xml-tools/xslt-profiler.md)します。
 
 ## <a name="see-also"></a>関連項目
 

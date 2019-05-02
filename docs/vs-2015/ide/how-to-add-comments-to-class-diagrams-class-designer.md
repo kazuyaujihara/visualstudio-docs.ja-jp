@@ -15,14 +15,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 476d117b04b648c2893885700d94a157399cea15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bcf6a06ee89bcc3ba691b38e98cf8bf43d9c063b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584440"
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>方法: クラス ダイアグラムにコメント追加する (クラス デザイナー)
+# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>方法: クラス ダイアグラムにコメントを追加する (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 コメントのシェイプを使用し、クラス ダイアグラムに注釈を付けることができます。 コメントのシェイプには 1 つのプロパティ **[テキスト]** があります。これにテキストを入力できます。 コメントのシェイプはダイアグラム サーフェイスにのみ存在し、コードには存在しません。  
@@ -33,9 +33,9 @@ ms.locfileid: "54802423"
   
 ### <a name="to-add-a-comment"></a>コメントを追加するには  
   
-1.  **クラス デザイナーのツールボックス**からクラス ダイアグラムにコメントをドラッグします。  
+1. **クラス デザイナーのツールボックス**からクラス ダイアグラムにコメントをドラッグします。  
   
-2.  ダイアグラムの新しいコメントのシェイプをクリックし、テキストを入力します。  
+2. ダイアグラムの新しいコメントのシェイプをクリックし、テキストを入力します。  
   
 ## <a name="see-also"></a>関連項目
  [クラス ダイアグラムの使用 (クラス デザイナー)](../ide/working-with-class-diagrams-class-designer.md)   

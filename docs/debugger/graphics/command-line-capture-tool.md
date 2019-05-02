@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be492ea3d9e61e25c28d8fc74ab870d7a6f959a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389692"
 ---
 # <a name="command-line-capture-tool"></a>コマンド ライン キャプチャ ツール
 DXCap.exe は、グラフィックス診断のキャプチャと再生に使用されるコマンド ライン ツールです。 すべての機能レベルで、Direct3D 10 から Direct3D 12 をサポートしています。
@@ -63,7 +63,7 @@ DXCap.exe -info
  `-examine` `events` 検証モードの場合、`events` には、直近の結果を比較する一連のグラフィックス イベントを指定します。 たとえば、`-examine present,draw,copy,clear`制限をカテゴリに属するイベントのみを比較します。
 
 > [!TIP]
->  始まることをお勧めします。`-examine present,draw,copy,clear`これはほとんどの問題を表示がより広範な一連のイベントよりも大幅に少ない時間がかかるためです。 必要に応じて、より多くの、または異なる一連のイベントを指定して、それらのイベントを検証し、その他の種類の問題を明らかにすることもできます。
+> 始まることをお勧めします。`-examine present,draw,copy,clear`これはほとんどの問題を表示がより広範な一連のイベントよりも大幅に少ない時間がかかるためです。 必要に応じて、より多くの、または異なる一連のイベントを指定して、それらのイベントを検証し、その他の種類の問題を明らかにすることもできます。
 
  `-haltonfail` 検証モードの場合は、`-haltonfail`ハードウェア レンダラーと WARP レンダラーの違いが検出されたときに、検証を停止します。 検証は、キーが押された後に再開されます。
 
@@ -75,7 +75,7 @@ DXCap.exe -info
 
  `-info` コンピューターとキャプチャの DLL に関する情報を表示します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  DXCap.exe は 3 つのモードで動作します。
 
  キャプチャ モード (-c) 実行中のアプリからグラフィックス情報をキャプチャしてグラフィックス ログ ファイルに記録します。 キャプチャ機能とファイル形式は、Visual Studio と同じです。
@@ -114,7 +114,7 @@ DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"
  上記の例のコマンドでは、WebGL API を使用して 3-D コンテンツをレンダリングする、www.fishgl.com にある Web ページの表示中に、Internet Explorer のデスクトップ バージョンからグラフィックス情報をキャプチャします。
 
 > [!NOTE]
->  アプリの後に指定したコマンド ライン引数はアプリに渡されるため、`-c` オプションを使用する前に、DXCap.exe の引数を指定する必要があります。
+> アプリの後に指定したコマンド ライン引数はアプリに渡されるため、`-c` オプションを使用する前に、DXCap.exe の引数を指定する必要があります。
 
 ### <a name="capture-graphics-information-from-a-uwp-app"></a>UWP アプリからグラフィックス情報をキャプチャします。
  UWP アプリからグラフィックス情報をキャプチャすることができます。
@@ -137,7 +137,7 @@ DXCap.exe -e map
 
  上記のコマンドは、"map"; に一致する UWP アプリを列挙します。出力を次に示します。
 
- **パッケージ"Microsoft.BingMaps":** **検出: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533** **名: Microsoft.BingMaps** **発行者: CN = MicrosoftCorporation、O = Microsoft Corporation, L = Redmond, S = Washington, C = 米国****バージョン: 2.1.2914.1734** **起動可能なアプリケーション:** **Id: AppexMaps****Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: No** **(起動) を AppSpec: DXCap.exe-cMicrosoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**列挙された各アプリの出力の最後の行からグラフィックス情報をキャプチャする際のコマンドを表示します。
+ **パッケージ "Microsoft.BingMaps":****検出:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName         :Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533** **名。Microsoft.BingMaps** **発行元。CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = 米国****バージョン。2.1.2914.1734** **起動可能なアプリケーション。****Id:AppexMaps** **Exe:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA:いいえ** **AppSpec (起動) します。DXCap.exe の-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**列挙された各アプリの出力の最後の行からグラフィックス情報をキャプチャする際のコマンドを表示します。
 
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>特定のフレームまたは特定の期間のフレームのキャプチャ
  使用`-frame`コンマおよび範囲を使用してキャプチャするフレームを指定します。
@@ -259,4 +259,4 @@ DXCap.exe -p regression_test_12.vsglog -toXML temp.xml
 </Method>
 ```
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件

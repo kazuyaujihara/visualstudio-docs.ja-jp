@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1816: では、Gc が発生します。SuppressFinalize 正しく |Microsoft Docs'
-ms.custom: ''
+title: CA1816:GC を呼び出します。SuppressFinalize 正しく |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1816
 - DisposeMethodsShouldCallSuppressFinalize
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d859f8fe38d4b6efecb83b117f35cbf483467b6f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50375390b3a09ec18fcccd45e4eaee7e9fe102e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913879"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094789"
 ---
-# <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: GC.SuppressFinalize を正しく呼び出します
+# <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816:GC.SuppressFinalize を正しく呼び出します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -39,16 +34,16 @@ ms.locfileid: "49913879"
 
 ## <a name="cause"></a>原因
 
--   メソッドの実装である<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>呼び出しません<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>します。
+- メソッドの実装である<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>呼び出しません<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>します。
 
--   メソッドの実装ではない<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>呼び出し<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>します。
+- メソッドの実装ではない<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>呼び出し<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>します。
 
--   メソッドを呼び出す<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>この (Visual Basic で Me) 以外の何かを渡します。
+- メソッドを呼び出す<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>この (Visual Basic で Me) 以外の何かを渡します。
 
 ## <a name="rule-description"></a>規則の説明
  <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>メソッドにより、ユーザーはガベージ コレクションの対象になるオブジェクトの前に、いつでもリソースを解放します。 場合、<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>メソッドが呼び出されると、オブジェクトのリソースを解放します。 これにより、終了処理は不要です。 <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 呼び出す必要があります<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>ガベージ コレクターがオブジェクトのファイナライザーを呼び出さないようにします。
 
- [System.IDisposable] を再実装する派生型でファイナライザーを防ぐために (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) を付けますについては、封印されていない型のファイナライザーなしは呼び出す必要がありますと<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>します。
+ 防ぐためにファイナライザーを持つ型の派生 [System.IDisposable] (を再実装する必要がありません。<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) を付けますについては、封印されていない型のファイナライザーなしは呼び出す必要がありますと<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  このルールの違反を修正するには。
@@ -75,12 +70,9 @@ ms.locfileid: "49913879"
  [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.CallGCSuppressFinalizeCorrectly2/VB/FxCop.Usage.CallGCSuppressFinalizeCorrectly2.vb#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA2215: Dispose メソッドから基本クラスの破棄を呼び出します](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+ [CA2215:Dispose メソッドが基底クラス dispose を呼び出す必要があります。](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
 
- [CA2216: 破棄できる型ではファイナライザーを宣言します](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+ [CA 2216:破棄可能な型はファイナライザーを宣言する必要があります。](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
 ## <a name="see-also"></a>関連項目
  [Dispose パターン](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-

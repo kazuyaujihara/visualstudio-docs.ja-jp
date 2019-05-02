@@ -11,12 +11,12 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 31afa6229a7eeb39c146d40992effd8969e76725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973493"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065546"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "58973493"
   
 - 追跡シェル全体の選択、コンテキスト、および通貨。 シェルでは、次の種類の項目を追跡します。  
   
-  -   現在のプロジェクト  
+  - 現在のプロジェクト  
   
-  -   現在のプロジェクト項目または現在の itemid であります。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - 現在のプロジェクト項目または現在の itemid であります。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  -   現在の選択、**プロパティ**ウィンドウまたは `SelectionContainer`  
+  - 現在の選択、**プロパティ**ウィンドウまたは `SelectionContainer`  
   
-  -   Id または CmdUIGuids コマンド、メニューのおよびツールバーの表示を制御する UI コンテキスト  
+  - Id または CmdUIGuids コマンド、メニューのおよびツールバーの表示を制御する UI コンテキスト  
   
-  -   アクティブなウィンドウ、ドキュメント、および元に戻すマネージャーなどの現在アクティブな要素  
+  - アクティブなウィンドウ、ドキュメント、および元に戻すマネージャーなどの現在アクティブな要素  
   
-  -   ダイナミック ヘルプを促進するユーザー コンテキストの属性  
+  - ダイナミック ヘルプを促進するユーザー コンテキストの属性  
   
   シェルもインストールされている Vspackage と現在のサービス間の通信を仲介します。 シェルのコア機能をサポートしに統合されているすべての VSPackages に利用できるように[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 これらのコア機能には、次の項目があります。  
   

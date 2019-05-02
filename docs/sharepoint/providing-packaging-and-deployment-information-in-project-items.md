@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4b2bf1fc1b011b79fdd8123218a78ac91a14579b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550502"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>プロジェクト項目でパッケージ化と配置の情報を提供します。
   すべての SharePoint プロジェクト アイテム[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]プロジェクトが SharePoint に配置されるときに、追加のデータを提供するのに使用できるプロパティがあります。 選択できるプロパティは次のとおりです。
@@ -53,7 +53,7 @@ ms.locfileid: "56621956"
 <Property Key="ModelFileName" Value="BdcModel1\BdcModel1.bdcm" />
 ```
 
- フィーチャー プロパティの値を設定した後、プロジェクトの FeatureProperty 要素として追加された *.spdata*ファイル。 Sharepoint プロパティへのアクセス方法の詳細については、[SPFeaturePropertyCollection クラス](http://go.microsoft.com/fwlink/?LinkId=177391)を参照してください。
+ フィーチャー プロパティの値を設定した後、プロジェクトの FeatureProperty 要素として追加された *.spdata*ファイル。 Sharepoint プロパティへのアクセス方法の詳細については、次を参照してください。 [SPFeaturePropertyCollection クラス](http://go.microsoft.com/fwlink/?LinkId=177391)します。
 
  すべてのプロジェクト項目からプロパティ値を同一の機能は、機能マニフェストで一緒にマージされます。 ただし、2 つの別のプロジェクト項目では、一致しない値を持つ同じの機能プロパティのキーを指定する場合は、検証エラーが発生します。
 
@@ -72,7 +72,7 @@ ms.locfileid: "56621956"
 
  パッケージにアセンブリ ファイル自体を含める必要がありますも既にサーバーではないにフィーチャー レシーバー アセンブリを参照する場合[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]するには追加できません。 システムのアセンブリ ファイルをコピー、機能を展開するときに[!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)]または SharePoint の物理ディレクトリの Bin フォルダー。 詳細については、次を参照してください。 方法。[方法: 追加およびその他のアセンブリを削除](../sharepoint/how-to-add-and-remove-additional-assemblies.md)します。
 
- フィーチャー レシーバーの詳細については、[フィーチャー イベント レシーバー](http://go.microsoft.com/fwlink/?LinkID=169574)と[機能イベント](http://go.microsoft.com/fwlink/?LinkID=169575)を参照してください。
+ フィーチャー レシーバーの詳細については、次を参照してください。[フィーチャー イベント レシーバー](http://go.microsoft.com/fwlink/?LinkID=169574)と[機能イベント](http://go.microsoft.com/fwlink/?LinkID=169575)します。
 
 ## <a name="project-output-references"></a>プロジェクト出力参照
  プロジェクト出力参照プロパティには、プロジェクト項目の実行に必要なアセンブリなどの依存関係を指定します。 たとえば、ソリューションに BDC プロジェクトとクラス プロジェクトとします。 BDC プロジェクトには、クラス プロジェクトの出力でのアセンブリに依存関係が存在する場合は、BDC プロジェクトのプロジェクト出力参照のプロパティでアセンブリを参照できます。 BDC プロジェクトをパッケージ化すると、パッケージの依存アセンブリが含まれます。

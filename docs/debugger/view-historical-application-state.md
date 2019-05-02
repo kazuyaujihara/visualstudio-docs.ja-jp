@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf319dd00048a4abf6cc4e3806845200c9eefc64
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 78b755991bd90684c08c7126cb17fd169db7e57c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901708"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Visual Studio の IntelliTrace のステップ バックを使用して以前のアプリケーション状態を調べる (Visual Studio Enterprise)
 
@@ -87,7 +87,7 @@ IntelliTrace のステップ バックは、Visual Studio Enterprise 2017 バー
 
     ![IntelliTrace のステップ バックの概要](../debugger/media/intellitrace-step-back-overview.png "IntelliTrace のステップ バックの概要")
 
-    Visual Studio で変数を確認する方法の詳細については、[デバッガーの機能の紹介](../debugger/debugger-feature-tour.md)ページを参照してください。
+    Visual Studio で変数を確認する方法の詳細については、[デバッガーでのはじめに](../debugger/debugger-feature-tour.md)に関するページを参照してください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

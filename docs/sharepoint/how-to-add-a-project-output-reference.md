@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 22b2073e63d2e6551a47469742142821391c86e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ae3965647416d7a8e11cf0ea5e24cef1e54a09b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967254"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>方法: プロジェクト出力参照を追加します。
   SharePoint 以外のプロジェクト アセンブリ (または Silverlight プロジェクトの .xap ファイル) を SharePoint に展開するには、それらをプロジェクト出力参照として追加します。
@@ -28,17 +28,17 @@ ms.locfileid: "56619330"
 
 ### <a name="to-add-a-project-output-reference"></a>プロジェクト出力参照を追加するには
 
-1.  少なくとも 1 つの SharePoint プロジェクトと 1 つの SharePoint 以外のプロジェクトを含むソリューションを読み込みます。
+1. 少なくとも 1 つの SharePoint プロジェクトと 1 つの SharePoint 以外のプロジェクトを含むソリューションを読み込みます。
 
-2.  **ソリューション エクスプ ローラー**、SharePoint プロジェクト ノードから項目をクリックします。
+2. **ソリューション エクスプ ローラー**、SharePoint プロジェクト ノードから項目をクリックします。
 
-3.  **プロパティ**ウィンドウで、選択、**プロジェクト出力参照**プロパティ、省略記号を選択し (![ASP.NET モバイル デザイナー楕円](../sharepoint/media/mwellipsis.gif "ASP します。NET モバイル デザイナー楕円")) ボタンをクリックします。
+3. **プロパティ**ウィンドウで、選択、**プロジェクト出力参照**プロパティ、省略記号を選択し (![ASP.NET モバイル デザイナー楕円](../sharepoint/media/mwellipsis.gif "ASP します。NET モバイル デザイナー楕円")) ボタンをクリックします。
 
-4.  **プロジェクト出力参照** ダイアログ ボックスで、選択、**追加**ボタンをクリックします。
+4. **プロジェクト出力参照** ダイアログ ボックスで、選択、**追加**ボタンをクリックします。
 
-5.  プロパティ ペインでに横に矢印を選択、**展開の種類**プロパティなど、参照は、SharePoint 以外の項目に対して適切な値を選択し、 **ElementFile**します。
+5. プロパティ ペインでに横に矢印を選択、**展開の種類**プロパティなど、参照は、SharePoint 以外の項目に対して適切な値を選択し、 **ElementFile**します。
 
-6.  横にある矢印を選択**プロジェクト名**、非 SharePoint プロジェクト項目の名前を選択し、、 **OK**ボタンをクリックします。
+6. 横にある矢印を選択**プロジェクト名**、非 SharePoint プロジェクト項目の名前を選択し、、 **OK**ボタンをクリックします。
 
 ## <a name="see-also"></a>関連項目
 - [プロジェクト項目でパッケージ化と配置の情報を提供します。](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

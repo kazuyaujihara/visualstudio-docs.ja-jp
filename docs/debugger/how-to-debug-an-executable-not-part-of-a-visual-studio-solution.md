@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49636dc4a43d56afe6d9307fc7ec2ddd44a6c37f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2db4cf8a678b6c20693dcc9c1e730d83f0d5ca7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848010"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Visual Studio ソリューションに含まれていないアプリのデバッグ (C++、 C#、Visual Basic、 F#)
 
@@ -35,7 +35,7 @@ Visual Studio に存在しないアプリをデバッグする通常の方法が
 
 アプリにアタッチするには、数秒かかる手動の手順が必要です。 この遅延のためのアタッチ、起動時の問題をデバッグすることはできませんまたはアプリ ユーザーを待ちませんを入力し、すぐに終了します。
 
-このような場合は、アプリでは、Visual Studio の EXE プロジェクトを作成または既存のインポートC#、Visual Basic、または C++ ソリューション。 EXE プロジェクトをサポートしていないプログラミング言語もあります。
+このような場合は、アプリでは、Visual Studio の EXE プロジェクトを作成または既存のインポートC#、Visual Basic、またはC++ソリューション。 EXE プロジェクトをサポートしていないプログラミング言語もあります。
 
 >[!IMPORTANT]
 >Visual Studio に組み込まれていないアプリのデバッグ機能は、アプリにアタッチするか、Visual Studio ソリューションに追加するかどうか、制限されます。
@@ -58,7 +58,7 @@ Visual Studio に存在しないアプリをデバッグする通常の方法が
 
 ### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>既存の Visual Studio ソリューションにアプリをインポートするには
 
-1.  C++、 C#、Visual Studio で開いている Visual Basic ソリューションを選択または**ファイル** > **追加** > **既存のプロジェクト**。
+1. C++、 C#、Visual Studio で開いている Visual Basic ソリューションを選択または**ファイル** > **追加** > **既存のプロジェクト**します。
 
 1. **プロジェクトを開く**ダイアログ ボックスで、**すべてのプロジェクト ファイル**選択されていない場合、ドロップダウンの横に、**ファイル名**します。
 

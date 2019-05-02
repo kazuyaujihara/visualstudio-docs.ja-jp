@@ -29,31 +29,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 3de5a3f9e9c5b8f89a9c8917794247098ba12d06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846803"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>デバッグ中に呼び出し履歴のビジュアル マップを作成 (C#、Visual Basic、C++、JavaScript)
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>デバッグ中に呼び出し履歴のビジュアル マップを作成 (C#、Visual Basic、 C++、JavaScript)
 
 デバッグ中に呼び出し履歴を視覚的にトレースするためのコード マップを作成します。 コメントをマップに追加することで、バグを見つけることに重点を置いてコードの動作を追跡できます。
 
-チュートリアル、ビデオをご覧ください:[ビデオ: コード マップ デバッガーの統合 (チャネル 9) で視覚的にデバッグ](http://go.microsoft.com/fwlink/?LinkId=293418)
+チュートリアルについては、このビデオをご覧ください。[ビデオ:コード マップ デバッガーの統合 (チャネル 9) で視覚的にデバッグします。](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 コマンドとコード マップで使用できる操作の詳細については、次を参照してください。[参照およびコード マップの再配置](../modeling/browse-and-rearrange-code-maps.md)します。
 
 >[!IMPORTANT]
->作成することができますのみでコード マップを[Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/)します。
+>作成することができますのみでコード マップを[Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)します。
 
 コード マップの概要を次に示します。
 
  ![呼び出し履歴コード マップを使用したデバッグ](../debugger/media/debuggermap_overview.png "DebuggerMap_Overview")
 
-##  <a name="MapStack"></a>呼び出し履歴でマップを作成する
+## <a name="MapStack"></a>呼び出し履歴でマップを作成する
 
-1. Visual Studio Enterprise でC#、Visual Basic、C++ または JavaScript プロジェクトを選択してデバッグを開始**デバッグ** > **デバッグの開始**キーを押して**F5**.
+1. Visual Studio Enterprise でC#、Visual Basic、 C++、または JavaScript プロジェクトを選択してデバッグを開始**デバッグ** > **デバッグの開始**キーを押して**F5**.
 
 1. アプリが中断モードになるか、関数にステップ イン、選択**デバッグ** > **コード マップ**、またはキーを押します**Ctrl**+**シフト**+**`**.
 
@@ -89,11 +89,11 @@ ms.locfileid: "57526091"
 
 **レイアウト**ことができます メニュー。
 
--   既定のレイアウトを変更します。
--   選択を解除して、マップを自動的に再配置されないように**デバッグ時に自動レイアウト**します。
--   選択を解除して、項目を追加するときにできるだけのマップを再配置**インクリメンタル レイアウト**します。
+- 既定のレイアウトを変更します。
+- 選択を解除して、マップを自動的に再配置されないように**デバッグ時に自動レイアウト**します。
+- 選択を解除して、項目を追加するときにできるだけのマップを再配置**インクリメンタル レイアウト**します。
 
-##  <a name="MakeNotes"></a>コードに関するコメントを追加する
+## <a name="MakeNotes"></a>コードに関するコメントを追加する
 
 コードで何が起こっているかを追跡するためにコメントを追加することができます。
 
@@ -103,7 +103,7 @@ ms.locfileid: "57526091"
 
  ![呼び出し履歴コード マップにコメントを追加](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
 
-##  <a name="UpdateMap"></a>次の呼び出し履歴でマップを更新する
+## <a name="UpdateMap"></a>次の呼び出し履歴でマップを更新する
 
 関数に次のブレークポイントまたはステップにアプリを実行すると、マップは新しい呼び出し履歴を自動的に追加します。
 
@@ -111,7 +111,7 @@ ms.locfileid: "57526091"
 
 新しい呼び出し履歴を自動的に追加することから、マップを停止する次のように選択します。 ![Show 呼び出しスタックは、自動的にコード マップを](../debugger/media/debuggermap_automaticupdateicon.gif "Show コール スタックは、自動的にコード マップに")コード マップのツールバー。 マップは、既存の呼び出し履歴を強調表示が続行されます。 マップを現在の呼び出し履歴を手動で追加するには、キーを押して**Ctrl**+**Shift**+**`** します。
 
-##  <a name="AddRelatedCode"></a>関連するコードをマップに追加する
+## <a name="AddRelatedCode"></a>関連するコードをマップに追加する
 
 マップを取得したできたC#または Visual Basic では、フィールド、プロパティ、およびコードで何が起こっているかを追跡するために、他の方法などの項目を追加することができます。
 
@@ -134,7 +134,7 @@ ms.locfileid: "57526091"
 
  ![呼び出し履歴コード マップ上のフィールドを使用するメソッド](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")
 
-##  <a name="FindBugs"></a>マップを使用してバグを見つける
+## <a name="FindBugs"></a>マップを使用してバグを見つける
  コードの視覚化はバグをよりすばやく見つけるために役立ちます。 たとえば、描画のアプリでのバグを調査するいるとします。 直線を描画して元に戻そうとしても、別の直線を描画するまで何も起こりません。
 
  そのため、`clear`、`undo`、および `Repaint` メソッドにブレークポイントを設定し、デバッグを開始して、次のようなマップを作成します。

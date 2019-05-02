@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87b48a1cd5dc791609a2a15d1fcb657b41e9dcc8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 409021e9a88f5bedfcab9ec172f7f962c7623d3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442255"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF による DSL の拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Managed Extensibility Framework (MEF) を使用して、ドメイン固有言語
     ファイル名: `CommandExtensionVSCT.tt`  
   
    > [!IMPORTANT]
-   >  GUID を GUID CommandSetId DslPackage\GeneratedCode\Constants.tt で定義されているのと同じにするのには、このファイルの設定します。  
+   > GUID を GUID CommandSetId DslPackage\GeneratedCode\Constants.tt で定義されているのと同じにするのには、このファイルの設定します。  
   
    ```  
    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -137,15 +137,15 @@ Managed Extensibility Framework (MEF) を使用して、ドメイン固有言語
   
 3. 次の .NET アセンブリへの参照を追加します。  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
   
-   -   System.ComponentModel.Composition.dll  
+   - System.ComponentModel.Composition.dll  
   
-   -   System.Windows.Forms.dll  
+   - System.Windows.Forms.dll  
   
 4. 同じソリューションで VSIX プロジェクトを作成します。 これを実行する、**新しいプロジェクト** ダイアログ ボックスで、展開**Visual Basic**または**Visual c#**、 をクリックして**Extensibility**、しを選択します。**VSIX プロジェクト**します。  
   

@@ -19,31 +19,30 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 77b962d9ab4594bba5be42100a46e67e1c861384
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445773"
 ---
 # <a name="add-new-data-sources"></a>新しいデータ ソースの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio での .NET データ ツールのコンテキストでは、用語*データ ソース*データ ストアに接続し、.NET アプリケーションにデータを公開する .NET オブジェクトを参照します。 Visual Studio のデザイナーにドラッグしてからデータベース オブジェクトを削除すると、フォームにデータをバインドする定型コードを生成するデータ ソースの出力を使用できる、**データソース**ウィンドウ。 この種類のデータ ソースを指定できます。  
   
--   いくつかの種類のデータベースに関連付けられている Entity Framework モデル内のクラス。  
+- いくつかの種類のデータベースに関連付けられている Entity Framework モデル内のクラス。  
   
--   いくつかの種類のデータベースに関連付けられているデータセットです。  
+- いくつかの種類のデータベースに関連付けられているデータセットです。  
   
--   Windows Communication Foundation (WCF) のデータ サービス、または REST サービスなどのネットワーク サービスを表すクラス。  
+- Windows Communication Foundation (WCF) のデータ サービス、または REST サービスなどのネットワーク サービスを表すクラス。  
   
--   SharePoint サービスを表すクラス。  
+- SharePoint サービスを表すクラス。  
   
--   クラスまたはソリューション内のコレクション。  
+- クラスまたはソリューション内のコレクション。  
   
 > [!NOTE]
->  データ バインド機能を使用していない場合のデータセットや Entity Framework、LINQ to SQL、WCF では、SharePoint、"data source"の概念は適用されません。 SQLCommand オブジェクトを使用して、データベースに直接接続して、データベースと直接通信だけです。  
+> データ バインド機能を使用していない場合のデータセットや Entity Framework、LINQ to SQL、WCF では、SharePoint、"data source"の概念は適用されません。 SQLCommand オブジェクトを使用して、データベースに直接接続して、データベースと直接通信だけです。  
   
  作成してデータ ソースを使用して、編集、**データ ソース構成ウィザード**Windows フォームや Windows Presentation Foundation アプリケーションでします。 Entity Framework では、まず、エンティティ クラスを作成し、選択して、ウィザードを開始**プロジェクト** > **新しいデータ ソースの追加**(この記事の後半で詳しく説明します)。  
   
@@ -78,14 +77,14 @@ Visual Studio での .NET データ ツールのコンテキストでは、用�
   
  次の種類のサービスからデータ ソースを作成できます。  
   
--   WCF Data Services。 詳細については、次を参照してください。[概要](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)します。  
+- WCF Data Services。 詳細については、次を参照してください。[概要](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)します。  
   
--   WCF data services。 詳細については、次を参照してください。 [Windows Communication Foundation サービスと Visual Studio での WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)します。  
+- WCF data services。 詳細については、次を参照してください。 [Windows Communication Foundation サービスと Visual Studio での WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)します。  
   
--   Web サービス  
+- Web サービス  
   
     > [!NOTE]
-    >  表示される項目、**データソース**ウィンドウは、サービスが返すデータに依存します。 サービスによっては、**データ ソース構成ウィザード**でバインドできるオブジェクトを作成するための十分な情報を提供しないものもあります。 などの場合は、サービスは、型指定されていないデータセットを返します、項目は表示されません、**データソース**ウィンドウ、ウィザードを完了するとします。 これは、型指定されていないデータセットからはスキーマが提供されず、したがってウィザードでデータ ソースを作成するための十分な情報が得られないためです。  
+    > 表示される項目、**データソース**ウィンドウは、サービスが返すデータに依存します。 サービスによっては、**データ ソース構成ウィザード**でバインドできるオブジェクトを作成するための十分な情報を提供しないものもあります。 などの場合は、サービスは、型指定されていないデータセットを返します、項目は表示されません、**データソース**ウィンドウ、ウィザードを完了するとします。 これは、型指定されていないデータセットからはスキーマが提供されず、したがってウィザードでデータ ソースを作成するための十分な情報が得られないためです。  
   
 ## <a name="data-source-for-an-object"></a>オブジェクトのデータ ソース  
  1 つ以上のパブリック プロパティを公開する任意のオブジェクトからデータ ソースを作成できます。それには、**データ ソース構成ウィザード**を実行し、データ ソースの種類として **[オブジェクト]** を選択します。 オブジェクトのすべてのパブリック プロパティは、**[データ ソース]** ウィンドウに表示されます。   Entity Framework を使用している、モデルを生成した場合は、これは、アプリケーションのデータ ソースとなるエンティティ クラスを検索します。  
@@ -95,10 +94,10 @@ Visual Studio での .NET データ ツールのコンテキストでは、用�
  アセンブリまたはツリー ビューで表示されていないプロジェクトでオブジェクトにバインドする場合は、クリックして**参照の追加**を使用して、 **Add Reference Dialog Box**アセンブリまたはプロジェクトへの参照を追加します。 参照を追加した後は、アセンブリまたはプロジェクトがツリー ビューに追加されます。  
   
 > [!NOTE]
->  オブジェクトのツリー ビューに表示される前に、オブジェクトを含むプロジェクトをビルドする必要があります。  
+> オブジェクトのツリー ビューに表示される前に、オブジェクトを含むプロジェクトをビルドする必要があります。  
   
 > [!NOTE]
->  実装するオブジェクトにドラッグ アンド ドロップのデータ バインディングをサポートするために、<xref:System.ComponentModel.ITypedList>または<xref:System.ComponentModel.IListSource>インターフェイスは、既定のコンス トラクターをいる必要があります。 それ以外の場合、Visual Studio は、データ ソース オブジェクトをインスタンス化できないし、デザイン サーフェイスに項目をドラッグするときにエラーが表示されます。  
+> 実装するオブジェクトにドラッグ アンド ドロップのデータ バインディングをサポートするために、<xref:System.ComponentModel.ITypedList>または<xref:System.ComponentModel.IListSource>インターフェイスは、既定のコンス トラクターをいる必要があります。 それ以外の場合、Visual Studio は、データ ソース オブジェクトをインスタンス化できないし、デザイン サーフェイスに項目をドラッグするときにエラーが表示されます。  
   
 ## <a name="data-source-for-a-sharepoint-list"></a>SharePoint リストのデータ ソース  
  **データ ソース構成ウィザード**を実行し、データ ソースの種類として **[SharePoint]** を選択すると、SharePoint リストからデータ ソースを作成できます。 SharePoint を使用してデータを公開する[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]ので、サービスからデータ ソースの作成と同じでは、SharePoint データ ソースを作成します。 **データ ソース構成ウィザード**で **[SharePoint]** 項目をクリックすると、**[サービス参照の追加]** ダイアログ ボックスが表示されます。このダイアログ ボックスで、SharePoint サーバーを指定することにより SharePoint データ サービスに接続します。  これには、SharePoint の SDK が必要です。  

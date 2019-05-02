@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a145907ad76016802e0547fc251b929b913253d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: c639ecc19f99f25fb5cb38539d2322131ddc2e0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446330"
 ---
 # <a name="accessing-models-from-text-templates"></a>テキスト テンプレートからモデルへのアクセス
-テキスト テンプレートを使用すると、レポート ファイル、ソース コード ファイル、およびその他のドメイン固有言語モデルを基にテキスト ファイルを作成できます。 テキスト テンプレートの基本については、[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)を参照してください。 テキスト テンプレートは、DSL をデバッグするときは、実験モードで動作し、DSL が配置されているコンピューターにも機能します。
+テキスト テンプレートを使用すると、レポート ファイル、ソース コード ファイル、およびその他のドメイン固有言語モデルを基にテキスト ファイルを作成できます。 テキスト テンプレートの基本については、次を参照してください。[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。 テキスト テンプレートは、DSL をデバッグするときは、実験モードで動作し、DSL が配置されているコンピューターにも機能します。
 
 > [!NOTE]
->  DSL ソリューション、サンプル テキスト テンプレートを作成するときに **\*.tt**デバッグ プロジェクトでファイルが生成されます。 ドメイン クラスの名前を変更すると、これらのテンプレートが機能しなくなります。 それにもかかわらずが、必要な基本的なディレクティブを含めるし、DSL を一致するように更新できる例を示します。
+> DSL ソリューション、サンプル テキスト テンプレートを作成するときに **\*.tt**デバッグ プロジェクトでファイルが生成されます。 ドメイン クラスの名前を変更すると、これらのテンプレートが機能しなくなります。 それにもかかわらずが、必要な基本的なディレクティブを含めるし、DSL を一致するように更新できる例を示します。
 
  テキスト テンプレートからモデルにアクセスします。
 
@@ -62,7 +62,7 @@ Here is a list of elements in the model:
 
 - テンプレートをデバッグするには、追加`debug="true"`を`template`ディレクティブ。 テンプレートは、例外が発生した場合、Visual Studio の別のインスタンスで開かれます。 コードの特定の時点でデバッガーを中断する場合は、insert ステートメント `System.Diagnostics.Debugger.Break();`
 
-   詳細については、[T4 テキスト テンプレートのデバッグ](../modeling/debugging-a-t4-text-template.md)を参照してください。
+   詳細については、次を参照してください。 [T4 テキスト テンプレートのデバッグ](../modeling/debugging-a-t4-text-template.md)します。
 
 ## <a name="about-the-dsl-directive-processor"></a>DSL のディレクティブ プロセッサについて
  テンプレートには、DSL 定義で定義されているドメイン クラスを使用できます。 これはの詳細については、通常は、テンプレートの先頭近くに表示される、ディレクティブになります。 前の例では、次は。
@@ -75,9 +75,9 @@ Here is a list of elements in the model:
 
  DSL のディレクティブ プロセッサは、2 つの主要なタスクを実行します。
 
--   アセンブリおよびインポート ディレクティブは、DSL を参照するテンプレートに効果的に挿入します。 これにより、テンプレート コードで、ドメイン クラスを使用できます。
+- アセンブリおよびインポート ディレクティブは、DSL を参照するテンプレートに効果的に挿入します。 これにより、テンプレート コードで、ドメイン クラスを使用できます。
 
--   指定したファイルを読み込む、`requires`パラメーター セットのプロパティと`this`読み込み済みのモデルのルート要素を参照します。
+- 指定したファイルを読み込む、`requires`パラメーター セットのプロパティと`this`読み込み済みのモデルのルート要素を参照します。
 
 ## <a name="validating-the-model-before-running-the-template"></a>テンプレートを実行する前に、モデルの検証
  このテンプレートを実行する前に検証するモデルが発生することができます。
@@ -97,7 +97,7 @@ Here is a list of elements in the model:
 ## <a name="Multiple"></a> テキスト テンプレートから複数のモデルへのアクセス
 
 > [!NOTE]
->  このメソッドは、同じテンプレートに複数のモデルを読み取ることができますが、ModelBus references をサポートしていません。 ModelBus 参照によって指定されたモデルを読み取り、[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)を参照してください。
+> このメソッドは、同じテンプレートに複数のモデルを読み取ることができますが、ModelBus references をサポートしていません。 ModelBus 参照によって指定されたモデルを読み取り、次を参照してください。[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)します。
 
  同じテキスト テンプレートから複数のモデルにアクセスする場合は、各モデルの生成されたディレクティブ プロセッサに 1 回を呼び出す必要があります。 各モデルでのファイル名を指定する必要があります、`requires`パラメーター。 内のルート ドメイン クラスを使用する名前を指定する必要があります、`provides`パラメーター。 別の値を指定する必要があります、`provides`内の各ディレクティブの呼び出しのパラメーター。 たとえば、Library.xyz、School.xyz、および Work.xyz と呼ばれる 3 つのモデル ファイルがあることを想定しています。 同じテキスト テンプレートからそれらにアクセスするには、次のように 3 つのディレクティブの呼び出しを記述する必要があります。
 
@@ -108,7 +108,7 @@ Here is a list of elements in the model:
 ```
 
 > [!NOTE]
->  このコード例では、最小言語ソリューション テンプレートに基づいている言語です。
+> このコード例では、最小言語ソリューション テンプレートに基づいている言語です。
 
  テキスト テンプレートでのモデルにアクセスするには、次の例では、コードのようなコードを記述できます。
 

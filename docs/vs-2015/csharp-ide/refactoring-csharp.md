@@ -1,14 +1,9 @@
 ---
 title: リファクタリング (c#) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.csharp.refactoring.preview
 - vs.csharp.refactoring.issues
@@ -22,13 +17,13 @@ ms.assetid: a39e656a-f81f-4c87-b484-a23168ff1dfc
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: b4f74017a067d4681eb14ba4eb826df504497430
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fa8fbfd8837fb35617b79089fffd11ea3b8d2e93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444532"
 ---
 # <a name="refactoring-c"></a>リファクタリング (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +32,17 @@ ms.locfileid: "49262315"
   
  Visual c# のリファクタリングの次のコマンドを提供する、**リファクタリング**メニュー。  
   
--   [メソッドの抽出リファクタリング (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [メソッドの抽出リファクタリング (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [名前の変更リファクタリング (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [名前の変更リファクタリング (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [フィールドのカプセル化リファクタリング (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [フィールドのカプセル化リファクタリング (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [インターフェイスの抽出リファクタリング (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [インターフェイスの抽出リファクタリング (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [パラメーターの削除リファクタリング (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [パラメーターの削除リファクタリング (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [パラメーター順序の再変更リファクタリング (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [パラメーター順序の再変更リファクタリング (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>複数プロジェクトのリファクタリング  
  Visual Studio では、複数のプロジェクトが同じソリューション内にあるプロジェクトのリファクタリングをサポートします。 すべてのファイル間での参照を修正、リファクタリング操作は、同じ言語のすべてのプロジェクト間でこれらの参照を修正します。 これは、すべてのプロジェクト間参照に対して機能します。 たとえば、クラス ライブラリ型の名前を変更するときに、クラス ライブラリを参照するコンソール アプリケーションがある場合 (を使用して、`Rename`リファクタリング操作)、コンソール アプリケーションでは、クラス ライブラリ型への参照も更新されます。  
@@ -59,7 +54,7 @@ ms.locfileid: "49262315"
  コンパイラには、プログラムの詳細についてはありませんが、リファクタリングのエンジンがすべての適切な参照を更新できなかった可能性が考えられる場合は、警告ダイアログ ボックスが表示されます。 この警告ダイアログ ボックスでコードをプレビューする機会が得、**変更のプレビュー**変更をコミットする前に ダイアログ ボックス。  
   
 > [!NOTE]
->  メソッドに構文エラー (を IDE では、赤い波線の下線で示す) が含まれている場合、リファクタリングのエンジンにはそのメソッド内の要素への参照項目更新されません。 次の例では、この動作を示します。  
+> メソッドに構文エラー (を IDE では、赤い波線の下線で示す) が含まれている場合、リファクタリングのエンジンにはそのメソッド内の要素への参照項目更新されません。 次の例では、この動作を示します。  
   
  既定を実行する場合、リファクタリング操作の参照をプレビューすることがなく変更プログラムでは、コンパイル エラーが検出されたし、開発環境には、この警告ダイアログ ボックスが表示されます。  
   
@@ -113,4 +108,4 @@ class Example
   
 ## <a name="see-also"></a>関連項目  
  [C#、Visual Studio 開発環境を使用します。](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
- [方法 : C# リファクタリング スニペットを復元する](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [方法: C# リファクタリング スニペットを復元する](../ide/how-to-restore-csharp-refactoring-snippets.md)

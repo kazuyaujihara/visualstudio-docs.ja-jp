@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e368d22a876ddb29770416ba5bbbb2a7995d576
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975660"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Visual Studio エディターの他の言語のサポートの追加
 
@@ -46,33 +46,33 @@ Visual Studio エディターでさまざまなコンピューター言語の読
 
 構文の色づけと基本的なステートメント入力候補に加え、Visual Studio には[移動](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/)という機能もあります。 この機能を使用すれば、コード ファイル、ファイル パスおよびコード シンボルをすばやく検索することができます。 Visual Studio では、次の言語の移動がサポートされます。
 
--   移動
+- 移動
 
--   Java
+- Java
 
--   JavaScript
+- JavaScript
 
--   PHP
+- PHP
 
--   TypeScript
+- TypeScript
 
--   Visual Basic
+- Visual Basic
 
--   Visual C++
+- Visual C++
 
--   C#
+- C#
 
 特定の言語のサポートがまだインストールされていない場合でも、これらのファイルの種類にはすべて前述の機能があります。 一部の言語の特別なサポートをインストールすると、IntelliSense や電球などのようなその他の高度な言語機能など、追加の言語サポートが提供される場合があります。
 
 ## <a name="add-support-for-non-supported-languages"></a>サポートされていない言語のサポートの追加
 
-Visual Studio 2015 Update 1 以降のバージョンでは、エディターで [TextMate 文法](https://manual.macromates.com/en/language_grammars)を使用することで言語サポートを提供します。 現在、Visual Studio エディターで好みのプログラミング言語がサポートされていない場合は、まず、Web を検索します。その言語に対応する TextMate バンドルが既に存在している可能性があります。 それでも見つからない場合は、Visual Studio 2015 Update 1 以降で、言語の文法とスニペットに対応する TextMate バンドル モデルを作成して、自分でサポートを追加することができます。
+Visual Studio では、[TextMate 文法](https://manual.macromates.com/en/language_grammars)を使用して、エディターの言語サポートが提供されます。 現在、Visual Studio エディターで好みのプログラミング言語がサポートされていない場合は、まず、Web を検索します。その言語に対応する TextMate バンドルが既に存在している可能性があります。 それでも見つからない場合は、言語の文法とスニペットに対応する TextMate バンドル モデルを作成して、自分でサポートを追加することができます。
 
 次のフォルダーに Visual Studio の新しい TextMate 文法を追加します。
 
 *%userprofile%\\.vs\Extensions*
 
-自分の状況に当てはまる場合は、この基本パスの下に次のフォルダーを追加します。
+自分の状況に当てはまる場合は、この基本パスの下に以下のフォルダーを追加します。
 
 |フォルダー名|説明|
 |-----------------|-----------------|
@@ -80,9 +80,12 @@ Visual Studio 2015 Update 1 以降のバージョンでは、エディターで 
 |*\Syntaxes*|文法のフォルダーです。 *Matlab.json* などの、言語に対応する文法の *.json* ファイルが含まれています。|
 |*\Snippets*|スニペットのフォルダーです。 言語のスニペットが含まれています。|
 
-Windows では、*%userprofile%* はパス (*c:\Users\\\<ユーザー名>*) に解決されます。 システム上に拡張機能フォルダーが存在しない場合は、作成する必要があります。 フォルダーが既に存在する場合は、表示されません。
+Windows では、*%userprofile%* はパス (*c:\Users\\\<ユーザー名>*) に解決されます。 システム上に *Extensions* フォルダーが存在しない場合は、作成する必要があります。 フォルダーが既に存在する場合は、表示されません。
 
-TextMate 文法の作成方法の詳細については、「[TextMate - Introduction to Language Grammars:How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)」 (TextMate - 言語の文法の概要: HTML に埋め込みのソース コード構文の強調表示を追加する方法) と「[Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)」 (Textmate バンドルの言語の文法とカスタム テーマを作成する方法に関する注意事項) を参照してください。
+> [!TIP]
+> エディターでファイルを開いている場合、TextMate 文法を追加した後に構文の強調表示を参照するには、ファイルをいったん閉じてから、再び開く必要があります。
+
+TextMate 文法の作成方法の詳細については、「[TextMate - Introduction to Language Grammars (TextMate - 言語の文法の概要)](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)」 と「[Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle (Textmate バンドルの言語の文法とカスタム テーマを作成する方法に関する注意事項)](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)」 を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

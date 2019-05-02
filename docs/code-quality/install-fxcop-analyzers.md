@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e3719201c561e013d33549584d00b397c89a832
-ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
+ms.openlocfilehash: 017077717f5353fed941124d69d258beaab04e40
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823672"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>FxCop アナライザーを Visual Studio をインストールします。
 
 Microsoft と呼ばれるアナライザーのセットを作成する[Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)、静的コード分析、Roslyn アナライザーへの変換から最も重要な"FxCop"ルールを格納しています。 これらのアナライザーは、セキュリティ、パフォーマンス、およびその他の設計上の問題のコードを確認します。
 
-これらの FxCop アナライザーを NuGet パッケージとして、または Visual Studio に VSIX 拡張機能としてインストールできます。 長所と短所をそれぞれの詳細については、[NuGet パッケージとを参照してください。VSIX 拡張機能](roslyn-analyzers-overview.md#nuget-package-versus-vsix-extension)します。
+これらの FxCop アナライザーを NuGet パッケージとして、または Visual Studio に VSIX 拡張機能としてインストールできます。 長所と短所をそれぞれの詳細については、次を参照してください。 [NuGet パッケージとします。VSIX 拡張機能](roslyn-analyzers-overview.md#nuget-package-versus-vsix-extension)します。
 
 ## <a name="to-install-fxcop-analyzers-as-a-nuget-package"></a>FxCop アナライザーを NuGet パッケージとしてインストールするには
 
@@ -43,7 +43,7 @@ Microsoft と呼ばれるアナライザーのセットを作成する[Microsoft
 
 | Visual Studio のバージョン | FxCop アナライザー パッケージ バージョン |
 | - | - |
-| Visual Studio 2017 バージョン 15.8 以降 | [2.9.1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.1) |
+| Visual Studio 2017 バージョン 15.8 以降 | [2.9.2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.2) |
 | Visual Studio 2017 バージョン 15.5 に 15.7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
 | Visual Studio 2017 バージョン 15.3 を 15.4 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
 | Visual Studio 2017 バージョン 15.0 を 15.2 | [2.0.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |

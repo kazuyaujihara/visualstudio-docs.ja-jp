@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70782190bbfd76f5536a68eb597dbf3d122e773
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
-ms.translationtype: MTE95
+ms.openlocfilehash: cb3003ebf8fe102caac1dabfb4c87de521a57c77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405905"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>チュートリアル: ClickOnce 配置デザイナーを使用して API で必要に応じてサテライト アセンブリをダウンロードします。
 サテライト アセンブリを使用すると、複数のカルチャに対して Windows フォーム アプリケーションを構成できます。 *サテライト アセンブリ* とは、アプリケーションの既定のカルチャ以外のカルチャ用アプリケーション リソースを含むアセンブリのことです。
@@ -35,43 +35,43 @@ ms.locfileid: "57323829"
  このチュートリアルでは、サテライト アセンブリをオプションとしてマークする方法、および現在のカルチャ設定にクライアント コンピューターが必要とするアセンブリのみをダウンロードする方法について説明します。
 
 > [!NOTE]
->  次のコード例は、テストを目的としているため、プログラム内でカルチャを `ja-JP` に設定しています。 このコードを運用環境用に調整する方法については、このトピックの「次の手順」セクションを参照してください。
+> 次のコード例は、テストを目的としているため、プログラム内でカルチャを `ja-JP` に設定しています。 このコードを運用環境用に調整する方法については、このトピックの「次の手順」セクションを参照してください。
 
 ### <a name="to-mark-satellite-assemblies-as-optional"></a>サテライト アセンブリをオプションとしてマークするには
 
-1.  プロジェクトをビルドします。 これにより、ローカライズの対象としているすべてのカルチャについて、サテライト アセンブリが生成されます。
+1. プロジェクトをビルドします。 これにより、ローカライズの対象としているすべてのカルチャについて、サテライト アセンブリが生成されます。
 
-2.  ソリューション エクスプローラーでご利用のプロジェクト名を右クリックし、**[プロパティ]** をクリックします。
+2. ソリューション エクスプローラーでご利用のプロジェクト名を右クリックし、**[プロパティ]** をクリックします。
 
-3.  **[発行]** タブをクリックし、**[アプリケーション ファイル]** をクリックします。
+3. **[発行]** タブをクリックし、**[アプリケーション ファイル]** をクリックします。
 
-4.  **[すべてのファイルを表示]** チェック ボックスをオンにして、サテライト アセンブリを表示します。 既定では、すべてのサテライト アセンブリが配置対象に含められ、このダイアログ ボックスに表示されます。
+4. **[すべてのファイルを表示]** チェック ボックスをオンにして、サテライト アセンブリを表示します。 既定では、すべてのサテライト アセンブリが配置対象に含められ、このダイアログ ボックスに表示されます。
 
      サテライト アセンブリには、"*\<isoCode>\ApplicationName.resources.dll*" という形式の名前があります。\<isoCode> は RFC 1766 形式の言語識別子を表します。
 
-5.  各言語識別子の **[ダウンロード グループ]** リストで、**[新規作成]** をクリックします。 ダウンロード グループ名の入力を求めるメッセージが表示されたら、言語識別子を入力します。 たとえば、日本語のサテライト アセンブリの場合は指定する、ダウンロード グループ名`ja-JP`します。
+5. 各言語識別子の **[ダウンロード グループ]** リストで、**[新規作成]** をクリックします。 ダウンロード グループ名の入力を求めるメッセージが表示されたら、言語識別子を入力します。 たとえば、日本語のサテライト アセンブリの場合は指定する、ダウンロード グループ名`ja-JP`します。
 
-6.  **[アプリケーション ファイル]** ダイアログ ボックスを閉じます。
+6. **[アプリケーション ファイル]** ダイアログ ボックスを閉じます。
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>必要に応じてサテライト アセンブリをダウンロードするには (C\#)
 
-1.  *Program.cs* ファイルを開きます。 このファイルがソリューション エクスプローラーに表示されない場合は、プロジェクトを選択し、**[プロジェクト]** メニューの **[すべてのファイルを表示]** をクリックします。
+1. *Program.cs* ファイルを開きます。 このファイルがソリューション エクスプローラーに表示されない場合は、プロジェクトを選択し、**[プロジェクト]** メニューの **[すべてのファイルを表示]** をクリックします。
 
-2.  該当するサテライト アセンブリをダウンロードし、アプリケーションを起動するには、次のコードを使用します。
+2. 該当するサテライト アセンブリをダウンロードし、アプリケーションを起動するには、次のコードを使用します。
 
      [!code-csharp[ClickOnce.SatelliteAssemblies#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>必要に応じてサテライト アセンブリをダウンロードするには (Visual Basic)
 
-1.  アプリケーションの **[プロパティ]** ウィンドウで、**[アプリケーション]** タブをクリックします。
+1. アプリケーションの **[プロパティ]** ウィンドウで、**[アプリケーション]** タブをクリックします。
 
-2.  タブ ページの一番下にある **[アプリケーション イベントの表示]** をクリックします。
+2. タブ ページの一番下にある **[アプリケーション イベントの表示]** をクリックします。
 
-3.  *ApplicationEvents.VB* ファイルの先頭に、次のインポートを追加します。
+3. *ApplicationEvents.VB* ファイルの先頭に、次のインポートを追加します。
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
 
-4.  `MyApplication` クラスに次のコードを追加します。
+4. `MyApplication` クラスに次のコードを追加します。
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]
 

@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f211e2f13f710b66e33691dbc318349eddf15ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5e685e77dafe00b8cadd9b273ccc61c8e5d9e1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962543"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085104"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>チュートリアル: XSLT スタイル シートをデバッグします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ ms.locfileid: "58962543"
   
 ### <a name="to-prepare-for-this-walkthrough"></a>このチュートリアルの準備をするには  
   
-1.  開かれているソリューションをすべて閉じます。  
+1. 開かれているソリューションをすべて閉じます。  
   
-2.  2 つのサンプル ファイルをローカル コンピューターにコピーします。  
+2. 2 つのサンプル ファイルをローカル コンピューターにコピーします。  
   
 ## <a name="start-debugging"></a>デバッグの開始  
   
@@ -59,19 +59,19 @@ ms.locfileid: "58962543"
   
 #### <a name="to-use-the-watch-window"></a>[ウォッチ] ウィンドウを使用するには  
   
-1.  **デバッグ**メニューで、 **Windows**、 をポイント**ウォッチ**、 をクリック**ウォッチ 1**します。  
+1. **デバッグ**メニューで、 **Windows**、 をポイント**ウォッチ**、 をクリック**ウォッチ 1**します。  
   
      これで [ウォッチ 1] ウィンドウが表示されます。  
   
-2.  型`$bookAverage`で、**名前**フィールドし、ENTER キーを押します。  
+2. 型`$bookAverage`で、**名前**フィールドし、ENTER キーを押します。  
   
      ウィンドウに、`$bookAverage` 変数の値が表示されます。  
   
-3.  型`self::node()`で、**名前**フィールドし、ENTER キーを押します。  
+3. 型`self::node()`で、**名前**フィールドし、ENTER キーを押します。  
   
      `self::node()` は、現在のコンテキスト ノードに評価される XPath 式です。 `self::node()` XPath 式の値は、最初の book ノードです。 この値は、変換処理の進行につれて変化します。  
   
-4.  `self::node()` ノードを展開して、`price` ノードを展開します。  
+4. `self::node()` ノードを展開して、`price` ノードを展開します。  
   
      この操作によって書籍価格の値を確認できるので、その値を `$bookAverage` の値と容易に比較することができます。 この書籍価格は平均値より低いため、`xsl:if` 条件は成功するはずです。  
   
@@ -80,19 +80,19 @@ ms.locfileid: "58962543"
   
 #### <a name="to-step-through-the-code"></a>コードをステップ実行するには  
   
-1.  **F5** キーを押して続行します。  
+1. **F5** キーを押して続行します。  
   
      最初の book ノードは `xsl:if` 条件を満たしたため、この book ノードは [XSL Output] ウィンドウに追加されます。 デバッガーは、再度スタイル シートの `xsl:if` 要素に到達するまで、引き続き実行されます。 今度は、デバッガーが、books.xml ファイルの 2 番目の book ノードに到達して中断します。  
   
      [ウォッチ 1] ウィンドウでは、`self::node()` の値が 2 番目の book ノードに変化します。 price 要素の値を調べることで、価格が平均値より高いことを判断できるため、`xsl:if` 条件は失敗します。  
   
-2.  **F5** キーを押して続行します。  
+2. **F5** キーを押して続行します。  
   
      2 番目の book ノードは `xsl:if` 条件を満たしていないため、この book ノードは [XSL Output] ウィンドウに追加されません。 デバッガーは、再度スタイル シートの `xsl:if` 要素に到達するまで、引き続き実行されます。 今度は、デバッガーが、books.xml ファイルの 3 番目の `book` ノードに到達して中断します。  
   
      [ウォッチ 1] ウィンドウでは、`self::node()` の値が 3 番目の book ノードに変化します。 `price` 要素の値を調べると、価格が平均値未満、つまり、`xsl:if` 条件が満たされていると判断できます。  
   
-3.  **F5** キーを押して続行します。  
+3. **F5** キーを押して続行します。  
   
      `xsl:if` 条件が満たされたため、3 番目の book ノードは [XSL Output (XSL 出力)] ウィンドウに追加されます。 XML ドキュメント内の書籍がすべて処理され、デバッガーが停止します。  
   

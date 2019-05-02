@@ -8,19 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b49f87013671d459c0cd5843b9ecb4c4a0b3ae74
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 06fd67a62e37b3e498272fcc629b479b50c42944
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436751"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>方法: プロファイラーのコマンド ラインを使用してスタンドアロンの .NET Framework コンポーネントをインストルメントし、メモリ データを収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、スタンドアロン アプリケーションの .NET Framework コンポーネント (.exe ファイル、.dll ファイルなど) をインストルメント化し、プロファイラーを使用してメモリ情報を収集する方法について説明します。
 
 > [!NOTE]
->  プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。
-
+> プロファイル ツールへのパスを取得するには、[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事をご覧ください。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。
 
  インストルメンテーション メソッドを使用して .NET Framework コンポーネントからメモリ データを収集するには、[VSInstr.exe](../profiling/vsinstr.md) ツールを使用してそのコンポーネントのインストルメントされたバージョンを生成し、[VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) ツールを使用して、プロファイル環境変数を初期化します。 その後、*VSPerfCmd.exe* ツールを使用してプロファイラーを起動します。
 
@@ -40,7 +39,7 @@ ms.locfileid: "56604640"
 
     **VSPerfClrEnv** {**/tracegc** &#124; **/tracegclife**}
 
-   -   **/tracegc** オプションと **/tracegclife** オプションは環境変数を初期化し、メモリの割り当てデータのみを収集するか、メモリの割り当てデータとオブジェクトの有効期間データの両方を収集します。
+   - **/tracegc** オプションと **/tracegclife** オプションは環境変数を初期化し、メモリの割り当てデータのみを収集するか、メモリの割り当てデータとオブジェクトの有効期間データの両方を収集します。
 
        |オプション|説明|
        |------------|-----------------|
@@ -67,7 +66,6 @@ ms.locfileid: "56604640"
    | [/counter](../profiling/counter.md) **:** `Config` | Config で指定されたプロセッサのパフォーマンス カウンターから情報を収集します。カウンター情報は、プロファイル イベントが発生するたびに、収集されたデータに追加されます。 |
    | [events](../profiling/events-vsperfcmd.md) **:** `Config` | プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.*etl*) ファイルに収集されます。 |
 
-
 5. コマンド プロンプト ウィンドウから対象のアプリケーションを開始します。
 
 ## <a name="control-data-collection"></a>データ収集の制御
@@ -75,7 +73,7 @@ ms.locfileid: "56604640"
 
 #### <a name="to-start-and-stop-data-collection"></a>データ コレクションを開始および停止するには
 
--   次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
+- 次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
 
     |オプション|説明|
     |------------|-----------------|
@@ -88,13 +86,13 @@ ms.locfileid: "56604640"
 
 #### <a name="to-end-a-profiling-session"></a>プロファイル セッションを終了するには
 
-1.  対象アプリケーションを終了します。
+1. 対象アプリケーションを終了します。
 
-2.  プロファイラーをシャットダウンします。 型:
+2. プロファイラーをシャットダウンします。 型:
 
      **VSPerfCmd /shutdown**
 
-3.  (省略可能) プロファイル環境変数を削除します。 型:
+3. (省略可能) プロファイル環境変数を削除します。 型:
 
      **VSPerfCmd /off**
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: トラブルシューティング コード カバレッジ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5af016c0ef1e38a4ae7ca42d79ed2030821d0369
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797367"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117409"
 ---
 # <a name="troubleshooting-code-coverage"></a>トラブルシューティング コード カバレッジ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Visual Studio のコード カバレッジ分析ツールは、ネイティブ �
 ### <a name="youre-looking-at-a-previous-result"></a>前の結果が表示されている  
  テストを変更し、再実行したときに、まだ前のコード カバレッジの結果が表示され、コードの色分けも前の実行のものである場合があります。  
   
-1.  コード カバレッジの分析を実行します。  
+1. コード カバレッジの分析を実行します。  
   
-2.  [コード カバレッジの結果] ウィンドウで、最新の結果セットが選択されていることを確認します。  
+2. [コード カバレッジの結果] ウィンドウで、最新の結果セットが選択されていることを確認します。  
   
 ### <a name="pdb-symbol-files-are-unavailable"></a>.pdb (シンボル) ファイルが使用できない  
  分析  
@@ -107,17 +107,17 @@ Visual Studio のコード カバレッジ分析ツールは、ネイティブ �
  解像度  
  エラーには次の 2 種類があります。  
   
--   **XML エラー**  
+- **XML エラー**  
   
      Visual Studio XML エディターで .runsettings ファイルを開きます。 エラーを示す箇所を探します。  
   
--   **正規表現エラー**  
+- **正規表現エラー**  
   
      ファイル内の各文字列は正規表現です。 エラーのすべてをレビューし、特に次の文字を探します。  
   
-    -   一致しないかっこ (...) またはエスケープされないかっこ \\(...\\)。 検索文字列内でかっこを一致させる場合は、エスケープする必要があります。 たとえば、関数を一致させるには `.*MyFunction\(double\)` を使用します。  
+    - 一致しないかっこ (...) またはエスケープされないかっこ \\(...\\)。 検索文字列内でかっこを一致させる場合は、エスケープする必要があります。 たとえば、関数を一致させるには `.*MyFunction\(double\)` を使用します。  
   
-    -   式の先頭のアスタリスクまたは正符号。 任意の文字列と一致させるには、ピリオドとアスタリスクを続けて使用します (`.*`)。  
+    - 式の先頭のアスタリスクまたは正符号。 任意の文字列と一致させるには、ピリオドとアスタリスクを続けて使用します (`.*`)。  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>カスタム .runsettings ファイルに不適切な除外が含まれている  
  分析  
@@ -145,5 +145,5 @@ Visual Studio のコード カバレッジ分析ツールは、ネイティブ �
  解像度  
  なし。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

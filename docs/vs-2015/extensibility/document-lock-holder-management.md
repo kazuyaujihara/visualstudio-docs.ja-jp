@@ -10,12 +10,12 @@ ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 260f82822c575ba2476541c889608e9cdcba8ed0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73c6151b5c02cb81a10c2725091c16457db70e33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056823"
 ---
 # <a name="document-lock-holder-management"></a>ドキュメント ロック ホルダーの管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "58974996"
 ### <a name="file-b-is-opened-by-a-different-editor"></a>"B"のファイルを別のエディターで開く  
  ファイル"b"は"B"のエディターで既に開かれてエディター"A"は、それを開こうとすると、ある 2 つの独立したシナリオを処理するにがあります。  
   
--   ファイル"b"が互換性のあるエディターで開いている場合は、エディター「を」登録"b"のファイルを使用してドキュメント編集のロックが必要、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A>メソッド。 ロックを使用して、エディターの"A"には、変更ファイル"b"が完了したら、ドキュメントの登録を解除の編集、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A>メソッド。  
+- ファイル"b"が互換性のあるエディターで開いている場合は、エディター「を」登録"b"のファイルを使用してドキュメント編集のロックが必要、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A>メソッド。 ロックを使用して、エディターの"A"には、変更ファイル"b"が完了したら、ドキュメントの登録を解除の編集、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A>メソッド。  
   
--   ファイル"b"が、互換性のない方法で開いている場合は、"A"は、部分的に開くし、適切なエラー メッセージが表示のエディターに関連付けられているビューをさせることができます"A"の失敗、またはエディターでファイル"b"の試行開始させるかことができます。 互換性のないエディターでファイル"b"を閉じるし、"a"を使用してファイルを開いたりするユーザーに指示する必要がありますには、エラー メッセージ"A"のエディター。 実装することも、[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]メソッド<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A>"b"のファイルを閉じるには、互換性のないエディターで開いているユーザーに確認します。 ユーザーが"b"、ファイルを開くファイルを閉じる場合の"a"エディター"A"が正常に続行されます。  
+- ファイル"b"が、互換性のない方法で開いている場合は、"A"は、部分的に開くし、適切なエラー メッセージが表示のエディターに関連付けられているビューをさせることができます"A"の失敗、またはエディターでファイル"b"の試行開始させるかことができます。 互換性のないエディターでファイル"b"を閉じるし、"a"を使用してファイルを開いたりするユーザーに指示する必要がありますには、エラー メッセージ"A"のエディター。 実装することも、[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]メソッド<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A>"b"のファイルを閉じるには、互換性のないエディターで開いているユーザーに確認します。 ユーザーが"b"、ファイルを開くファイルを閉じる場合の"a"エディター"A"が正常に続行されます。  
   
 ## <a name="additional-document-edit-lock-considerations"></a>追加のドキュメントの編集のロックに関する考慮事項  
  エディター"の A"はエディター"B"には、ドキュメントも保持している場合よりも、"b"のファイルのロックを編集、ドキュメントのある唯一のエディターはファイル"b"のロックを編集する場合は、異なる動作を取得します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、**クラス デザイナー**関連付けられたコード ファイルで、編集のロックを保持していないビジュアルなデザイナーの例を示します。 これは、ユーザーが、クラス図をデザイン ビューで開くし、同時に、関連付けられたコード ファイルを開く、ユーザーは、コード ファイルを変更しますが、変更を保存できない場合は、変更は失わクラス ダイアグラム (.cd) ファイルにもします。 場合、**クラス デザイナー**が専用のドキュメントでは、コード ファイルのロックを編集、ユーザーは求められませんコード ファイルを閉じるときに変更を保存します。 IDE には、ユーザーが閉じた後にのみ、変更を保存を求める、**クラス デザイナー**します。 両方のファイルには、保存された変更が反映されます。 どちらの場合、**クラス デザイナー**コード ファイルのエディターでは、ユーザーは、コード ファイルまたはフォームを閉じるときに保存するように求められますし、コード ファイルで、ドキュメント編集のロックを保持します。 その時点で、保存された変更は、フォームと、コード ファイルの両方に反映されます。 クラス ダイアグラムの詳細については、次を参照してください。[クラス ダイアグラム (クラス デザイナー) の使用](../ide/working-with-class-diagrams-class-designer.md)します。  

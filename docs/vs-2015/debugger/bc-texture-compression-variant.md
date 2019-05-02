@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b164933b3d695e1a680e26629b093b59009b502
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974812"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111234"
 ---
 # <a name="bc-texture-compression-variant"></a>BC テクスチャ圧縮バリアント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ B8G8R8X8、B8G8R8A8、または R8G8B8A8 のバリエーションであるピク
   
 - `D3D11_TEXTURE2D_DESC` で渡される`pDesc` オブジェクトが、不変のシェーダー リソースを記述する場合、つまり  
   
-  -   BindFlags メンバーは D3D11_BIND_SHADER_RESOURCE フラグを設定するだけです。  
+  - BindFlags メンバーは D3D11_BIND_SHADER_RESOURCE フラグを設定するだけです。  
   
-  -   Usage メンバーは、D3D11_USAGE_DEFAULT または D3D11_USAGE_IMMUTABLE に設定されます。  
+  - Usage メンバーは、D3D11_USAGE_DEFAULT または D3D11_USAGE_IMMUTABLE に設定されます。  
   
-  -   CPUAccessFlags メンバーは 0 に設定されます(CPU アクセスなし)。  
+  - CPUAccessFlags メンバーは 0 に設定されます(CPU アクセスなし)。  
   
-  -   SamplerDesc メンバーは自身の Count メンバーを 1 に設定します (Multi-Sample Anti-Aliasing (MSAA) なし)。  
+  - SamplerDesc メンバーは自身の Count メンバーを 1 に設定します (Multi-Sample Anti-Aliasing (MSAA) なし)。  
   
 - `CreateTexture2D` への呼び出しに対して初期データが提供される場合。  
   

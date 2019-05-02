@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3650c06b38ab139c6c4bcc26033922c284dd1184
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9ad16165924a33a25dab2b1cfb49a0a7bbfe0875
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421536"
 ---
 # <a name="xmlnodes-control"></a>XMLNodes コントロール
   **重要な**に関する Microsoft Word には、このトピックでまとめられている情報が提示の特典および個人や組織のユーザーは、米国およびその担当地域外部にあるまたはを使用しているユーザーの使用専用、または開発上で実行されるプログラム、Microsoft が特定の機能の実装を削除する場合、2010 年 1 月の前に、Microsoft によってライセンスされた Microsoft Word の製品に関連するカスタム XML から Microsoft Word です。 Microsoft Word に関するこの情報が読み取りまたは個人または組織、米国またはその区域を使用して、または、2010 年 1 月 10 日後に Microsoft によってライセンス供与された Microsoft Word の製品で実行されるプログラムの開発で使用しない可能性があります。;これらの製品では、その日付より前にライセンスまたは購入を米国外の使用ライセンスの製品と同じ動作はしません。
@@ -30,7 +30,7 @@ ms.locfileid: "56604146"
  Visual Studio では、XML ノードのコレクションが作成された後、Word オブジェクト モデルを走査することがなく直接コントロールに対してプログラミングできます。 <xref:Microsoft.Office.Tools.Word.XMLNodes>コントロールをドキュメントから要素のマッピングを削除することによってのみ削除できます。
 
 > [!NOTE]
->  子要素にアクセスする場合、<xref:Microsoft.Office.Tools.Word.XMLNodes>を介して制御、<xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A>プロパティを取得、<xref:Microsoft.Office.Interop.Word.XMLNode>オブジェクトではなく<xref:Microsoft.Office.Tools.Word.XMLNode>コントロール。 詳細については、[ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)を参照してください。
+> 子要素にアクセスする場合、<xref:Microsoft.Office.Tools.Word.XMLNodes>を介して制御、<xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A>プロパティを取得、<xref:Microsoft.Office.Interop.Word.XMLNode>オブジェクトではなく<xref:Microsoft.Office.Tools.Word.XMLNode>コントロール。 詳細については、次を参照してください。[ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)します。
 
 ## <a name="bind-data-to-the-control"></a>データをコントロールにバインドします。
  <xref:Microsoft.Office.Tools.Word.XMLNodes>コントロールがデータ バインディングをサポートしていません。 これは、ため、<xref:Microsoft.Office.Tools.Word.XMLNodes>コントロールにバインディング機能、複雑なデータがないと、単純データ バインディングを表すことはできません繰り返しデータ。
@@ -41,21 +41,21 @@ ms.locfileid: "56604146"
 ## <a name="events"></a>イベント
  利用可能なイベント、<xref:Microsoft.Office.Tools.Word.XMLNodes>コントロールは。
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.AfterInsert>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.AfterInsert>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.BeforeDelete>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.BeforeDelete>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextEnter>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextLeave>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.ContextLeave>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.Deselect>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.Deselect>
 
--   <xref:System.ComponentModel.IComponent.Disposed>
+- <xref:System.ComponentModel.IComponent.Disposed>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.Select>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.Select>
 
--   <xref:Microsoft.Office.Tools.Word.XMLNodes.ValidationError>
+- <xref:Microsoft.Office.Tools.Word.XMLNodes.ValidationError>
 
 ## <a name="compare-events"></a>イベントを比較します。
  特定のコンテキスト内で自分のカーソルを動かしたときにイベントをキャプチャする<xref:Microsoft.Office.Tools.Word.XMLNodes>コントロール。 たとえば、する必要があります、<xref:Microsoft.Office.Tools.Word.XMLNodes>という名前のコントロール`Customer`子を持つ<xref:Microsoft.Office.Tools.Word.XMLNodes>という名前のコントロール`Company`、および`Company`が 2 つの子<xref:Microsoft.Office.Tools.Word.XMLNodes>という名前のコントロール`CompanyName`と`CompanyRegion`次のように。

@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 3ded7e5593f40f469ad93dd64e27c24be37b3ed4
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868967"
 documentType: LandingData
 title: FxCop コード分析から .NET コンパイラ プラットフォームのアナライザーへの移行します。
 metadata:
@@ -24,80 +18,80 @@ abstract:
       alt: 一般的な管理タスクのロゴ
       height: 133
       width: 48
-      src: https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg
-    title: 
+      src: 'https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg'
+    title: null
 sections:
-- title: よく寄せられる質問
-  items:
-  - html: いくつかに対する回答を得ます<a href="fxcop-analyzers-faq.md">よく寄せられる質問</a>FxCop とアナライザーとの違いについて。
-- title: コード分析を初めて使用する場合.
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+  - title: よく寄せられる質問
     items:
-    - href: roslyn-analyzers-overview.md
-      html: <p>アナライザーとは何を説明します。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_learn-about.svg
-      title: アナライザーの概要
-    - href: install-roslyn-analyzers.md
-      html: <p>アナライザーを NuGet パッケージまたは Visual Studio 拡張機能としてインストールする方法について説明します。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: アナライザーをインストールします。
-    - href: use-roslyn-analyzers.md
-      html: <p>アナライザーを使用して、違反を抑制する方法について説明しますC#または Visual Basic コードです。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_config-tools.svg
-      title: ルールの重要度を設定し、エラーを抑制します。
-    - href: use-roslyn-analyzers.md#command-line-usage
-      html: <p>コマンドラインからアナライザーを使用する方法について説明します。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_cligeneric.svg
-      title: コマンドラインの使用状況
-- title: 場合は、FxCop ユーザー.
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+      - html: いくつかに対する回答を得ます<a href="fxcop-analyzers-faq.md">よく寄せられる質問</a>FxCop とアナライザーとの違いについて。
+  - title: コード分析を初めて使用する場合.
     items:
-    - href: roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis
-      html: <p>静的 (FxCop) とアナライザー パッケージ コード分析の違いについて説明します。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_learn-about.svg
-      title: さまざまな新機能ですか。
-    - href: install-fxcop-analyzers.md
-      html: <p>FxCop アナライザー パッケージをインストールする方法について説明します。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: FxCop アナライザーのインストール
-    - href: use-roslyn-analyzers.md#command-line-usage
-      html: <p>通常、コマンドラインからコード分析を実行する場合は、コマンドラインからアナライザーを使用する方法を説明します。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_cligeneric.svg
-      title: コマンドラインの使用状況
-    - href: analyzer-rule-sets.md
-      html: <p>アナライザー パッケージ規則セットについて説明します。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-samples.svg
-      title: 規則セット
-- title: 関連記事
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: roslyn-analyzers-overview.md
+            html: <p>アナライザーとは何を説明します。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
+            title: アナライザーの概要
+          - href: install-roslyn-analyzers.md
+            html: <p>アナライザーを NuGet パッケージまたは Visual Studio 拡張機能としてインストールする方法について説明します。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: アナライザーをインストールします。
+          - href: use-roslyn-analyzers.md
+            html: '<p>アナライザーを使用して、違反を抑制する方法について説明しますC#または Visual Basic コードです。</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
+            title: ルールの重要度を設定し、エラーを抑制します。
+          - href: 'use-roslyn-analyzers.md#command-line-usage'
+            html: <p>コマンドラインからアナライザーを使用する方法について説明します。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
+            title: コマンドラインの使用状況
+  - title: 場合は、FxCop ユーザー.
     items:
-    - href: code-analysis-for-c-cpp-overview.md
-      html: <p>ネイティブ C++ コードでコード分析を実行する方法について説明します。 マネージ C++ コードの分析が非推奨とされます。</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
-      title: C++ コードの分析
-    - href: code-metrics-values.md
-      html: <p>コード メトリックを取得する方法について説明します。 コード メトリックスのユーザー エクスペリエンスは変更されません。</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_data-collection.svg
-      title: コード メトリックス
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
+            html: <p>静的 (FxCop) とアナライザー パッケージ コード分析の違いについて説明します。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
+            title: さまざまな新機能ですか。
+          - href: install-fxcop-analyzers.md
+            html: <p>FxCop アナライザー パッケージをインストールする方法について説明します。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: FxCop アナライザーのインストール
+          - href: 'use-roslyn-analyzers.md#command-line-usage'
+            html: <p>通常、コマンドラインからコード分析を実行する場合は、コマンドラインからアナライザーを使用する方法を説明します。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
+            title: コマンドラインの使用状況
+          - href: analyzer-rule-sets.md
+            html: <p>アナライザー パッケージ規則セットについて説明します。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
+            title: 規則セット
+  - title: 関連記事
+    items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: code-analysis-for-c-cpp-overview.md
+            html: <p>ネイティブ C++ コードでコード分析を実行する方法について説明します。 マネージ C++ コードの分析が非推奨とされます。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Cplusplus.svg'
+            title: C++ コードの分析
+          - href: code-metrics-values.md
+            html: <p>コード メトリックを取得する方法について説明します。 コード メトリックスのユーザー エクスペリエンスは変更されません。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_data-collection.svg'
+            title: コード メトリックス

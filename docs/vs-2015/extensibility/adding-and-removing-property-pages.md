@@ -1,14 +1,9 @@
 ---
 title: 追加とプロパティ ページの削除 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
 - property pages, project subtypes
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 680a375d025d59d12c2a070bc564ff94085bc4b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 98838f09df3094e16d5f1a18263ffdad603ded0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440140"
 ---
 # <a name="adding-and-removing-property-pages"></a>プロパティ ページの追加と削除
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51798964"
   
 #### <a name="to-remove-a-property-page-in-project-designer"></a>プロジェクト デザイナーのプロパティ ページを削除するには  
   
-1.  上書き、`GetProperty(uint itemId, int propId, out object property)`メソッドをプロパティ ページをフィルター処理し、取得、`clsids`一覧。  
+1. 上書き、`GetProperty(uint itemId, int propId, out object property)`メソッドをプロパティ ページをフィルター処理し、取得、`clsids`一覧。  
   
     ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
@@ -80,7 +75,7 @@ ms.locfileid: "51798964"
     }  
     ```  
   
-2.  削除、**ビルド イベント**ページから取得した`clsids`一覧。  
+2. 削除、**ビルド イベント**ページから取得した`clsids`一覧。  
   
     ```vb  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
@@ -116,7 +111,7 @@ ms.locfileid: "51798964"
   
 #### <a name="to-add-a-property-page-in-project-designer"></a>プロジェクト デザイナーのプロパティ ページを追加するには  
   
-1.  追加するプロパティ ページを作成します。  
+1. 追加するプロパティ ページを作成します。  
   
     ```vb  
     Class DeployPropertyPage  
@@ -161,7 +156,7 @@ ms.locfileid: "51798964"
     }  
     ```  
   
-2.  新しいプロパティ ページを登録します。  
+2. 新しいプロパティ ページを登録します。  
   
     ```vb  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
@@ -171,7 +166,7 @@ ms.locfileid: "51798964"
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3.  上書き、`GetProperty(uint itemId, int propId, out object property)`プロパティ ページをフィルター処理を取得するメソッド、`clsids`を一覧表示し、新しいプロパティ ページを追加します。  
+3. 上書き、`GetProperty(uint itemId, int propId, out object property)`プロパティ ページをフィルター処理を取得するメソッド、`clsids`を一覧表示し、新しいプロパティ ページを追加します。  
   
     ```vb  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  
@@ -210,8 +205,7 @@ ms.locfileid: "51798964"
     ```  
   
 > [!NOTE]
->  このトピックで提供されたすべてのコード例は、例のパーツ[VSSDK のサンプル](../misc/vssdk-samples.md)します。  
+> このトピックで提供されたすべてのコード例は、例のパーツ[VSSDK のサンプル](../misc/vssdk-samples.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [プロジェクト サブタイプ](../extensibility/internals/project-subtypes.md)
-

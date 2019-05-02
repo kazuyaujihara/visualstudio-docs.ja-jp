@@ -57,7 +57,7 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
  `DebuggerTypeProxy` 内でジェネリック型を対象として使用する場合は、この構文を使用する必要があります。 `DebuggerTypeProxy` の機構は、型パラメーターを推論します。  
   
- C# のオープンおよびクローズされた型の詳細については、次を参照してください。、 [c# 言語仕様](http://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22)、セクション「20.5.2 を開くとクローズ型。  
+ C# のオープンおよびクローズされた型の詳細については、次を参照してください。、 [C# 言語仕様](http://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22)、セクション「20.5.2 を開くとクローズ型。  
   
  Visual Basic にはクローズ型の構文はないため、Visual Basic で同じ処理はできません。 代わりに、オープン型の名前の文字列形式を使用する必要があります。  
   

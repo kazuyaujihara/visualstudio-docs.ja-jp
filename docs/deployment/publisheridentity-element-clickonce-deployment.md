@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927540"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt;要素 (ClickOnce 配置)
 この配置マニフェストに署名した発行元についての情報が含まれます。
@@ -40,8 +40,8 @@ ms.locfileid: "56628443"
 
 |属性|説明|
 |---------------|-----------------|
-|`name`|必須です。 このアプリケーションを発行したパーティの id をについて説明します。|
-|`issuerKeyHash`|必須です。 証明書の発行者の公開キーの sha-1 ハッシュが含まれています。|
+|`name`|必須。 このアプリケーションを発行したパーティの id をについて説明します。|
+|`issuerKeyHash`|必須。 証明書の発行者の公開キーの sha-1 ハッシュが含まれています。|
 
 #### <a name="parameters"></a>パラメーター
 
@@ -49,8 +49,8 @@ ms.locfileid: "56628443"
 
 ## <a name="exceptions"></a>例外
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 ## <a name="subhead"></a>小見出し

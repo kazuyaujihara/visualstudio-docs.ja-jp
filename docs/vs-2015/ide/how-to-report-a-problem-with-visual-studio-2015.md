@@ -9,30 +9,31 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834440"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083650"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Visual Studio 2015 で問題を報告する方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、次を参照してください。 [Visual Studio 2017 で問題を報告する方法](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)します。
+Visual Studio に関する最新のドキュメントについては、[Visual Studio で問題を報告する方法](/visualstudio/ide/how-to-report-a-problem-with-visual-studio)に関するページをご覧ください。
 
-Visual Studio 2015 で問題が発生した場合について知りたいが診断して修正できるようにします。  **[問題の報告]** ツールを使うと、問題に関する詳しい情報を収集し、数回のクリックで問題を Microsoft に送信できます。
+Visual Studio 2015 で問題が発生した場合は、それを診断して修正できるように、Microsoft にご報告ください。  **[問題の報告]** ツールを使うと、問題に関する詳しい情報を収集し、数回のクリックで問題を Microsoft に送信できます。
 
- Microsoft は、お客様のプライバシーを尊重いたします。 お客様から送信していただいたデータの扱いについて詳しくは、「[Microsoft Visual Studio 製品ファミリのプライバシーに関する声明](https://www.visualstudio.com/dn948229)」をご覧ください。
+Microsoft は、お客様のプライバシーを尊重いたします。 お客様から送信していただいたデータの扱いについて詳しくは、「[Microsoft Visual Studio 製品ファミリのプライバシーに関する声明](https://www.visualstudio.com/dn948229)」をご覧ください。
 
 ## <a name="open-the-report-a-problem-tool"></a>[問題の報告] ツールを開きます
- タイトル バーで **[クイック起動]** の横にあるユーザー フィードバック アイコンをクリックするか、**[ヘルプ &#124; フィードバックの送信 &#124; 問題の報告]** の順にクリックします。
 
- ![[問題の報告] メニュー項目](../ide/media/report-a-problem-menu-item.png "[問題の報告] メニュー項目")
+タイトル バーで **[クイック起動]** の横にあるユーザー フィードバック アイコンをクリックするか、**[ヘルプ] > [フィードバックの送信]、[問題の報告]** の順にクリックします。
+
+![[問題の報告] メニュー項目](../ide/media/report-a-problem-menu-item.png "[問題の報告] メニュー項目")
 
 ## <a name="describe-the-problem"></a>問題について説明します
 
-###  <a name="describe_the_problem"></a>
+### <a name="describe_the_problem"></a>
 
 1. 問題がわかりやすいタイトルを指定していただくと、適切な Visual Studio チームに転送するのに役立ちます。
 
@@ -43,27 +44,31 @@ Visual Studio 2015 で問題が発生した場合について知りたいが診�
    ![[問題の報告] ダイアログ](../ide/media/report-a-problem-dialog.png "[問題の報告] ダイアログ")
 
 ## <a name="provide-a-screenshot-optional"></a>スクリーンショットを提供します (オプション)
- **[スクリーンショットを含める]** を選び、Microsoft に現在の画面を送信します。 ツールでは、画面中のこの問題が表示された部分のみにイメージをトリミングできます。 **[追加のファイルの添付]** ボタンをクリックして、その他のスクリーン ショットやファイルをさらに添付できます。
+
+**[スクリーンショットを含める]** を選択し、Microsoft に現在の画面を送信します。 ツールを使うと、画像をトリミングして、問題が表示されている画面の部分だけを表示できます。 **[追加のファイルの添付]** ボタンをクリックして、その他のスクリーン ショットやファイルをさらに添付できます。
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>トレースとヒープ ダンプを提供します (省略可能)
 
-###  <a name="provide_a_trace_and_heap_dump"></a>
+### <a name="provide_a_trace_and_heap_dump"></a>
 
-1.  トレースとヒープ ダンプのファイルは、問題を診断するうえで非常に役立ちます。   [問題の報告] ツールで再現する手順を記録し Microsoft にデータを送信してくだされば、大変助かります。
+1. トレースとヒープ ダンプのファイルは、問題を診断するうえで非常に役立ちます。   [問題の報告] ツールで再現する手順を記録し Microsoft にデータを送信してくだされば、大変助かります。
 
-2.  **[操作を記録して問題を再現する]** の横にあるシェブロンをクリックします。 問題が原因で Visual Studio のハングやクラッシュが生じる場合、Visual Studio の別のインスタンスを開き、リスト ビューから選択します。
+2. **[操作を記録して問題を再現する]** の横にあるシェブロンをクリックします。 問題が原因で Visual Studio のハングやクラッシュが生じる場合、Visual Studio の別のインスタンスを開き、リスト ビューから選択します。
 
-3.  **[記録の開始]** をクリックし、問題を再現するための操作を行います。 完了したら、フローティング ウィンドウで **[記録の停止]** ボタンをクリックします。
+3. **[記録の開始]** をクリックし、問題を再現するための操作を行います。 完了したら、フローティング ウィンドウで **[記録の停止]** ボタンをクリックします。
 
-4.  記録された情報を Visual Studio が収集してパッケージ化するまで、しばらくお待ちください。 収集プロセスが完了すると、次のようなダイアログ ボックスが表示されます。
+4. 記録された情報を Visual Studio が収集してパッケージ化するまで、しばらくお待ちください。 収集プロセスが完了すると、次のようなダイアログ ボックスが表示されます。
 
      ![トレース ファイルの記録](../ide/media/record-a-trace-file.png "トレース ファイルの記録")
 
 ## <a name="describe-the-workaround-if-there-is-one"></a>回避策がある場合は、記載します
- 問題を回避できた場合は、そのためのエディット ボックスに回避策を記載してください。 これは、問題の診断だけでなく、同じ問題が発生した他のユーザーのサポートにも役立ちます。
+
+問題を回避できた場合は、そのためのエディット ボックスに回避策を記載してください。 これは、問題の診断だけでなく、同じ問題が発生した他のユーザーのサポートにも役立ちます。
 
 ## <a name="submit-the-report"></a>レポートを送信します
- [送信] ボタンをクリックして、イメージ、トレースやダンプ ファイルと共にレポートを送信します。 **[送信]** ボタンが灰色表示の場合、タイトルと説明が記載されていることを確認します。
+
+[送信] ボタンをクリックして、イメージ、トレースやダンプ ファイルと共にレポートを送信します。 **[送信]** ボタンが灰色表示の場合、タイトルと説明が記載されていることを確認します。
 
 ## <a name="see-also"></a>関連項目
- [ご意見](../ide/talk-to-us.md)
+
+- [ご意見](../ide/talk-to-us.md)

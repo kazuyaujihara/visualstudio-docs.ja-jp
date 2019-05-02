@@ -15,17 +15,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd5755f2b0bf8fe4379d503d952341f176c0b870
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 648bf8baebc8a0a2f42c69bc698d9f2edd729615
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907353"
 ---
 # <a name="localize-menu-commands"></a>メニュー コマンドをローカライズします。
 ローカライズされたを作成してメニューやツールバーのローカライズされたテキストを行うことができます *.vsct*ファイルし、ローカライズ *.resx*に組み込むこと、VSPackage とし、プロジェクト ファイルの更新ファイル、変更します。
 
- インストール エクスペリエンスをローカライズする方法については、[ローカライズ VSIX パッケージ](../extensibility/localizing-vsix-packages.md)を参照してください。
+ インストール エクスペリエンスをローカライズする方法については、次を参照してください。[ローカライズ VSIX パッケージ](../extensibility/localizing-vsix-packages.md)します。
 
 ## <a name="localize-command-names"></a>コマンド名をローカライズします。
  Vspackage では、メニュー コマンドやツールバーのボタンがで定義されて、 *.vsct*ファイル。
@@ -34,7 +34,7 @@ ms.locfileid: "56679269"
 
 2. コピーを作成*filename.en US.vsct*各ローカライズ言語。
 
-    各コピーを名前*ファイル名 {。ロケール} .vsct*ここで、 *{ロケール}* は特定のカルチャの名前です。 カルチャ名の値の一覧は、[Microsoft によって割り当てられたロケール Id](/windows/uwp/publish/supported-languages)を参照してください。
+    各コピーを名前*ファイル名 {。ロケール} .vsct*ここで、 *{ロケール}* は特定のカルチャの名前です。 カルチャ名の値の一覧は、次を参照してください。 [Microsoft によって割り当てられたロケール Id](/windows/uwp/publish/supported-languages)します。
 
     これら*ファイル名。Locale.vsct*ファイル、パッケージのローカライズされたメニュー テキストが含まれます。
 
@@ -76,19 +76,19 @@ ms.locfileid: "56679269"
 ## <a name="localize-other-text-resources"></a>その他のテキストのリソースをローカライズします。
  コマンド名以外の文字列リソースがリソースで定義されている (*.resx*) ファイル。
 
-1.  名前を変更*VSPackage.resx*に*VSPackage.en US.resx*します。
+1. 名前を変更*VSPackage.resx*に*VSPackage.en US.resx*します。
 
-2.  コピーを作成、 *VSPackage.en US.resx*ファイルごとにローカライズされた言語です。
+2. コピーを作成、 *VSPackage.en US.resx*ファイルごとにローカライズされた言語です。
 
      各コピーを名前*VSPackage {。ロケール} .resx*ここで、 *{ロケール}* は特定のカルチャの名前です。
 
-3.  名前を変更*Resources.resx*に*各カルチャ用 US.resx*します。
+3. 名前を変更*Resources.resx*に*各カルチャ用 US.resx*します。
 
-4.  コピーを作成、*各カルチャ用 US.resx*ファイルごとにローカライズされた言語です。
+4. コピーを作成、*各カルチャ用 US.resx*ファイルごとにローカライズされた言語です。
 
      各コピーを名前*リソースです {。ロケール} .resx*ここで、 *{ロケール}* は特定のカルチャの名前です。
 
-5.  各を開きます。 *.resx*の特定の言語およびカルチャに適切な値は文字列を変更するファイル。 次の例では、ツール ウィンドウのタイトル バーのローカライズされたリソースの定義を示します。
+5. 各を開きます。 *.resx*の特定の言語およびカルチャに適切な値は文字列を変更するファイル。 次の例では、ツール ウィンドウのタイトル バーのローカライズされたリソースの定義を示します。
 
      [*Resources.en-US.resx*]
 
@@ -110,9 +110,9 @@ ms.locfileid: "56679269"
 ## <a name="incorporate-localized-resources-into-the-project"></a>ローカライズされたリソースをプロジェクトに組み込む
  変更する必要があります、 *assemblyinfo.cs*ファイルとローカライズされたリソースを組み込むプロジェクト ファイル。
 
-1.  **プロパティ**ノード**ソリューション エクスプ ローラー**オープン*assemblyinfo.cs*または*assemblyinfo.vb*エディターで。
+1. **プロパティ**ノード**ソリューション エクスプ ローラー**オープン*assemblyinfo.cs*または*assemblyinfo.vb*エディターで。
 
-2.  次のエントリを追加します。
+2. 次のエントリを追加します。
 
     ```csharp
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
@@ -120,13 +120,13 @@ ms.locfileid: "56679269"
 
      これは既定の言語として英語 (米国) 設定します。
 
-3.  プロジェクトをアンロードします。
+3. プロジェクトをアンロードします。
 
-4.  エディターでプロジェクト ファイルを開きます。
+4. エディターでプロジェクト ファイルを開きます。
 
-5.  検索、`ItemGroup`要素を含む`EmbeddedResource`要素。
+5. 検索、`ItemGroup`要素を含む`EmbeddedResource`要素。
 
-6.  `EmbeddedResource`要素を呼び出す*VSPackage.en US.resx*、置換、`ManifestResourceName`を持つ要素を`LogicalName`に設定されている要素`VSPackage.en-US.Resources`、次のようにします。
+6. `EmbeddedResource`要素を呼び出す*VSPackage.en US.resx*、置換、`ManifestResourceName`を持つ要素を`LogicalName`に設定されている要素`VSPackage.en-US.Resources`、次のようにします。
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -135,9 +135,9 @@ ms.locfileid: "56679269"
     </EmbeddedResource>
     ```
 
-7.  ローカライズされた言語ごとに、コピー、`EmbeddedResource`要素`VsPackage.en-US`、設定、 **Include**属性と**LogicalName**コピーでは、次に示すように、対象のロケールの要素例です。
+7. ローカライズされた言語ごとに、コピー、`EmbeddedResource`要素`VsPackage.en-US`、設定、 **Include**属性と**LogicalName**コピーでは、次に示すように、対象のロケールの要素例です。
 
-8.  ローカライズされた各`VSCTCompile`要素を追加、`ResourceName`要素を指す`Menus.ctmenu`次の例のようにします。
+8. ローカライズされた各`VSCTCompile`要素を追加、`ResourceName`要素を指す`Menus.ctmenu`次の例のようにします。
 
     ```xml
     <ItemGroup>

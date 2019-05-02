@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e93155f230ee4a564116f5d1357a97923706c36
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783494"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>方法: XML ドキュメントから XML スキーマを作成します。
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>方法: XML ドキュメントから XML スキーマを作成する
 
 XML エディターを使用して、XML ドキュメントから XML スキーマ定義言語 (XSD) スキーマを作成できます。 XML ファイルは、次のように、スキーマを生成する方法を決定します。
 
@@ -27,7 +27,7 @@ XML エディターを使用して、XML ドキュメントから XML スキー�
 
 作成されるスキーマを使用し、XML ファイルに対して IntelliSense を提供します。
 
-スキーマ推論エンジンの詳細については、[XML スキーマを推論](/dotnet/standard/data/xml/inferring-an-xml-schema)を参照してください。
+スキーマ推論エンジンの詳細については、次を参照してください。 [XML スキーマを推論](/dotnet/standard/data/xml/inferring-an-xml-schema)します。
 
 ## <a name="to-create-an-xml-schema"></a>XML スキーマを作成するには
 

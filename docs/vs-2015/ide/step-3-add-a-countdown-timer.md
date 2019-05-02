@@ -9,43 +9,43 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4440370453db96fa207c283e9c4a03b28d7ef6b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d95708f940bfb12f67903f41d9f030a77877008d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442602"
 ---
-# <a name="step-3-add-a-countdown-timer"></a>手順 3: カウントダウン タイマーの追加
+# <a name="step-3-add-a-countdown-timer"></a>手順 3: カウントダウン タイマーを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルの第 3 部では、クイズの受け手が完了するまでの残り秒数を追跡するためのカウントダウン タイマーを追加します。  
   
 > [!NOTE]
->  このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2: 制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。  
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2:クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)です。  
   
 ### <a name="to-add-a-countdown-timer"></a>カウントダウン タイマーを追加するには  
   
-1.  前の手順と同様に、**timeLeft** という名前の整数変数を追加します。 コードは次のようになります。  
+1. 前の手順と同様に、**timeLeft** という名前の整数変数を追加します。 コードは次のようになります。  
   
      [!code-csharp[VbExpressTutorial3Step3#5](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#5)]
      [!code-vb[VbExpressTutorial3Step3#5](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#5)]  
   
      次に、指定した時間の後にイベントを生成する、タイマーのような、実際に秒をカウントするメソッドが必要になります。  
   
-2.  デザイン ウィンドウで、ツールボックスの **[コンポーネント]** カテゴリから `Timer` コントロールをフォームに移動します。  
+2. デザイン ウィンドウで、ツールボックスの **[コンポーネント]** カテゴリから `Timer` コントロールをフォームに移動します。  
   
      このコントロールは、デザイン ウィンドウの下部にある灰色の領域に表示されます。  
   
-3.  フォーム上で、追加した **[timer1]** アイコンをクリックし、**Interval** プロパティを **1000** に設定します。  
+3. フォーム上で、追加した **[timer1]** アイコンをクリックし、**Interval** プロパティを **1000** に設定します。  
   
      間隔の値はミリ秒であるため、値が 1000 の場合は Tick イベントが毎秒生成されます。  
   
-4.  フォーム上で、Timer コントロールをダブルクリックするか、または Timer コントロールをクリックして Enter キーを押します。  
+4. フォーム上で、Timer コントロールをダブルクリックするか、または Timer コントロールをクリックして Enter キーを押します。  
   
      コード エディターが開き、追加した Tick イベント ハンドラーのメソッドが表示されます。  
   
-5.  次のステートメントを新しいイベント ハンドラー メソッドに追加します。  
+5. 次のステートメントを新しいイベント ハンドラー メソッドに追加します。  
   
      [!code-csharp[VbExpressTutorial3Step3#6](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#6)]
      [!code-vb[VbExpressTutorial3Step3#6](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#6)]  
@@ -57,7 +57,7 @@ ms.locfileid: "54775969"
      ここでは、`if else` ステートメントを追加しました。これは、プログラムで条件判断を行うように指定するためのステートメントです。 `if else` ステートメントは次のようになります。  
   
     > [!NOTE]
-    >  次の例は例示のみを目的としています。プロジェクトに追加しないでください。  
+    > 次の例は例示のみを目的としています。プロジェクトに追加しないでください。  
   
     ```vb  
     If (something that your program will check) Then  
@@ -91,14 +91,14 @@ ms.locfileid: "54775969"
   
      `NumericUpDown` コントロールを使用するとクイズの受け手がさらに簡単に数値を入力できるので、これを計算問題の解答のために使用します。 解答となる可能性があるものはすべて、0 ～ 100 の整数です。 **[最小値]**、**[最大値]**、および **[DecimalPlaces]** の各プロパティの既定値を残しておくと、クイズの受け手は小数、負の値、大きすぎる数を入力できなくなります  (クイズの受け手が 3.141 は入力できるが、3.1415 は入力できないようにする場合は、**DecimalPlaces** プロパティを 3 に設定します)。  
   
-6.  `StartTheQuiz()` メソッドの最後に 3 行のコードを追加します。コードは次のようになります。  
+6. `StartTheQuiz()` メソッドの最後に 3 行のコードを追加します。コードは次のようになります。  
   
      [!code-csharp[VbExpressTutorial3Step3#7](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#7)]
      [!code-vb[VbExpressTutorial3Step3#7](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#7)]  
   
      これで、クイズの開始時に、**timeLeft** 変数が 30 に設定され、`timeLabel` コントロールの **Text** プロパティが 30 seconds に変更されます。 次に、`Timer` コントロールの `Start()` メソッドがカウントダウンを開始します  (解答の確認は次の手順で設定するため、まだ行われません)。  
   
-7.  プログラムを保存し、実行して、フォームの **[Start]** ボタンをクリックします。  
+7. プログラムを保存し、実行して、フォームの **[Start]** ボタンをクリックします。  
   
      タイマーはカウント ダウンを開始します。 残り時間がなくなると、クイズが終了し、答えが表示されます。 次の図は実行中のクイズを示します。  
   
@@ -107,6 +107,6 @@ ms.locfileid: "54775969"
   
 ### <a name="to-continue-or-review"></a>続行または確認するには  
   
--   チュートリアルの次の手順に進むには、「[手順 4: CheckTheAnswer() メソッドの追加](../ide/step-4-add-the-checktheanswer-parens-method.md)」を参照してください。  
+- チュートリアルの次の手順に進むには、「[手順 4:CheckTheAnswer() メソッドの追加](../ide/step-4-add-the-checktheanswer-parens-method.md)します。  
   
--   チュートリアルの前の手順に戻るには、「[手順 2: ランダムな加算問題の作成](../ide/step-2-create-a-random-addition-problem.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「[手順 2:ランダムな加算問題の作成](../ide/step-2-create-a-random-addition-problem.md)です。

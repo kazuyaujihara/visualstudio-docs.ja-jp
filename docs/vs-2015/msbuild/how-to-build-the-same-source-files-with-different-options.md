@@ -14,17 +14,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 738f6e9f3a31407f30d30c963265b78d8000ca82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800423"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045604"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>方法 : 同じソース ファイルを異なるオプションでビルドする
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>方法: 同じソース ファイルを異なるオプションでビルドする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 プロジェクトをビルドする場合、同じコンポーネントを異なるビルド オプションでコンパイルすることがよくあります。 たとえば、シンボル情報を付ければデバッグ ビルドを作成でき、シンボル情報なしで最適化を有効にすればリリース ビルドを作成できます。 あるいは、x86 や [!INCLUDE[vcprx64](../includes/vcprx64-md.md)] などのように、特定のプラットフォーム上で実行するようにプロジェクトをビルドできます。 これらのいずれの場合も、ほとんどのビルド オプションは同じままで、ビルド構成を制御するためにいくつかのオプションが変更されるだけです。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] では、異なるビルド構成を作成するためにプロパティと条件を使用します。  
   
 ## <a name="using-properties-to-modify-projects"></a>プロパティを使用してプロジェクトを変更  
@@ -34,7 +33,7 @@ ms.locfileid: "54800423"
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>プロパティのグループを別のプロパティに基づいて設定するには  
   
--   `PropertyGroup` 要素で以下のような `Condition` 属性を使用します。  
+- `PropertyGroup` 要素で以下のような `Condition` 属性を使用します。  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -45,7 +44,7 @@ ms.locfileid: "54800423"
   
 #### <a name="to-define-a-property-based-on-another-property"></a>プロパティを別のプロパティに基づいて定義するには  
   
--   `Property` 要素で以下のような `Condition` 属性を使用します。  
+- `Property` 要素で以下のような `Condition` 属性を使用します。  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -56,7 +55,7 @@ ms.locfileid: "54800423"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>コマンド ライン上でプロジェクト プロパティを設定するには  
   
--   **/property** スイッチをプロパティおよびプロパティ値と共に使用します。 次に例を示します。  
+- **/property** スイッチをプロパティおよびプロパティ値と共に使用します。 例:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
@@ -70,7 +69,7 @@ ms.locfileid: "54800423"
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>コマンド ライン上で 2 つ以上のプロジェクト プロパティを指定するには  
   
-- **/property** または **/p** スイッチをプロパティおよびプロパティ値と共に複数回使用するか、**/property** または **/p** スイッチを 1 回使用し、複数のプロパティをセミコロン (;) で分けます。 次に例を示します。  
+- **/property** または **/p** スイッチをプロパティおよびプロパティ値と共に複数回使用するか、**/property** または **/p** スイッチを 1 回使用し、複数のプロパティをセミコロン (;) で分けます。 例えば:  
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
@@ -82,7 +81,7 @@ ms.locfileid: "54800423"
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
   ```  
   
-  環境変数はプロパティとしても扱われ、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] によって自動的に組み込まれます。 環境変数の使用に関する詳細については、「[方法: ビルドで環境変数を使用する](../msbuild/how-to-use-environment-variables-in-a-build.md)」を参照してください。  
+  環境変数はプロパティとしても扱われ、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] によって自動的に組み込まれます。 環境変数の使用方法の詳細については、「[方法: ビルドで環境変数を使用して](../msbuild/how-to-use-environment-variables-in-a-build.md)します。  
   
   コマンド ラインで指定されたプロパティ値は、同じプロパティに対してプロジェクト ファイル内で設定されているどの値よりも優先され、プロジェクト ファイル内の値は環境変数の値よりも優先されます。  
   

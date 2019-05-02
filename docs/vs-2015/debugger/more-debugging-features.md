@@ -1,14 +1,9 @@
 ---
 title: 多くのデバッグの機能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: a41166d7-e03e-42ef-862e-dd025ef600b6
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9b3375e97aa356b9c22f29bcf7bf696607cd30de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f2e6140b10b9f0c9a540144ca70bb081ac2d3e7a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729323"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58974574"
 ---
 # <a name="more-debugging-features"></a>その他のデバッグ機能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ ms.locfileid: "51729323"
   
  [方法: 非表示のデバッガー コマンドを復元する](../debugger/how-to-restore-hidden-debugger-commands.md)  
  IDE の既定の設定によって非表示にされているデバッガー コマンドを表示する方法について説明します。
-
-
-

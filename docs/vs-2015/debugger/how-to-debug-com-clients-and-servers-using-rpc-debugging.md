@@ -26,12 +26,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1235abfc6e8a2c384b02fd1d48a859063c058d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fda2a10cd559f940ab87e5cc8c26f5b47dbec194
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384033"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>方法: RPC デバッグを使用して COM クライアントおよびサーバーをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ ms.locfileid: "58972959"
   
 ### <a name="to-enable-rpc-debugging"></a>RPC デバッグを有効にするには  
   
-1.  **[ツール]** メニューの **[オプション]** をクリックします。  
+1. **[ツール]** メニューの **[オプション]** をクリックします。  
   
-2.  **[オプション]** ダイアログ ボックスで、**[デバッグ]** フォルダーをクリックします。  
+2. **[オプション]** ダイアログ ボックスで、**[デバッグ]** フォルダーをクリックします。  
   
-3.  **[ネイティブ]** ページをクリックします。  
+3. **[ネイティブ]** ページをクリックします。  
   
-4.  **[RPC デバッグ]** チェック ボックスをオンにします。  
-  
-    > [!NOTE]
-    >  RPC 呼び出しをデバッグするには、管理者またはパワー ユーザーの権限が必要です。  
+4. **[RPC デバッグ]** チェック ボックスをオンにします。  
   
     > [!NOTE]
-    >  Microsoft Windows Vista が実行されているリモート サーバーへの RPC ステップ実行は、そのリモート サーバーにネイティブ デバッガーがアタッチされている場合のみ機能します。 それ以外の場合、エラー メッセージが表示されることなく RPC 呼び出しが失敗します。 何らかの方法で RPC 呼び出しに成功したとしても、RPC 呼び出しへのステップ インは正常に機能しません。  
+    > RPC 呼び出しをデバッグするには、管理者またはパワー ユーザーの権限が必要です。  
+  
+    > [!NOTE]
+    > Microsoft Windows Vista が実行されているリモート サーバーへの RPC ステップ実行は、そのリモート サーバーにネイティブ デバッガーがアタッチされている場合のみ機能します。 それ以外の場合、エラー メッセージが表示されることなく RPC 呼び出しが失敗します。 何らかの方法で RPC 呼び出しに成功したとしても、RPC 呼び出しへのステップ インは正常に機能しません。  
   
 ## <a name="see-also"></a>関連項目  
  [COM サーバーおよび COM コンテナーのデバッグ](../debugger/com-server-and-container-debugging.md)   

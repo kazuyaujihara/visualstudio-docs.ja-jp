@@ -11,12 +11,12 @@ ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5d7abb72d3d577c4870030c76f87f0a41f133480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c0662bfe22b4c78bb754bbac2fbfdd281a4a7bce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408510"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>VSPackage ファイルの場所を VS Shell に指定する
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,4 +31,4 @@ ms.locfileid: "58964241"
 |DLL を配置、 **PublicAssemblies**ディレクトリ。|最後に、アセンブリもに配置できる、 **PublicAssemblies**サブディレクトリ。 アセンブリに配置**PublicAssemblies**は自動的に検出し、も表示されます、**参照の追加** ダイアログ ボックスで[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。<br /><br /> VSPackage アセンブリにのみ配置する必要があります、 **PublicAssemblies**ディレクトリが含まれている場合は他の VSPackage 開発者が再利用を想定しているコンポーネントを管理します。 アセンブリの大半は、この条件を満たしていません。|  
   
 > [!NOTE]
->  すべての依存アセンブリの厳密な名前の符号付きのアセンブリを使用します。 これらのアセンブリは、独自のディレクトリまたはグローバル アセンブリ キャッシュ (GAC) にもインストールする必要があります。 これを弱い名前のバインドと呼ばれる、同じ基本ファイル名を持つアセンブリとの競合を防ぎます。
+> すべての依存アセンブリの厳密な名前の符号付きのアセンブリを使用します。 これらのアセンブリは、独自のディレクトリまたはグローバル アセンブリ キャッシュ (GAC) にもインストールする必要があります。 これを弱い名前のバインドと呼ばれる、同じ基本ファイル名を持つアセンブリとの競合を防ぎます。

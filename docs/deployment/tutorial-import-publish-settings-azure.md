@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38601f8d88b56c3957943b28be298ac24eb12c91
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3965fdaa085d609fd87bf070e9a38aa2079cc9b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899181"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Visual Studio で発行設定をインポートしてアプリケーションを Azure App Service に発行する
 
@@ -55,9 +55,9 @@ ms.locfileid: "57983924"
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Visual Studio で新しい ASP.NET プロジェクトを作成する
 
-1. Visual Studio を実行しているコンピューター上で **[ファイル]** > **[新しいプロジェクト]** の順に選択します。
+1. Visual Studio を実行しているコンピューター上で新しいプロジェクトを作成します。
 
-1. **[Visual C#]** または **[Visual Basic]** で **[Web]** を選択し、中央のウィンドウで **[ASP.NET Web アプリケーション (.NET Framework)]** または (C# のみ) **[ASP.NET Core Web アプリケーション]** を選択し、**[OK]** をクリックします。
+    適切なテンプレートを選択します。 この例では、**[ASP.NET Web アプリケーション (.NET Framework)]** または (C# の場合のみ) **[ASP.NET Core Web アプリケーション]** を選択し、**[OK]** をクリックします。
 
     指定したプロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 **ASP.NET と Web 開発**ワークロードをインストールします。
 
@@ -100,6 +100,7 @@ ms.locfileid: "57983924"
       </publishProfile>
     </publishData>
     ```
+
     通常、前述の *.publishsettings ファイルには、Visual Studio で使用できる 2 つの発行プロファイル (Web Deploy を使用して配置するものと、FTP を使用して配置するもの) が含まれています。 上記のコードは Web Deploy プロファイルを示しています。 いずれのプロファイルも、後でプロファイルをインポートするときにインポートされます。
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Visual Studio で発行設定をインポートして配置する

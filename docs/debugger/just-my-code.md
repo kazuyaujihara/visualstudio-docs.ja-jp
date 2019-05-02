@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ebbf2401432b9afec5a66fb6a7322e3e2df035
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.openlocfilehash: edb78ed49add85b35f3fb89b4ba424d44f52bf8b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905792"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>マイ コードのみのユーザー コードのみのデバッグします。
 
@@ -81,23 +81,23 @@ ms.locfileid: "58325332"
 
 ## <a name="BKMK_C___Just_My_Code"></a>C++ での "マイ コードのみ"
 
-以降では、Visual Studio 2017 バージョン 15.8、マイ コードのみコードをステップ実行がサポートされています。 この機能では、使用も必要です、 [(だけマイ コードのデバッグ)/JMC](/cpp/build/reference/jmc)コンパイラ スイッチ。 スイッチは、C++ プロジェクトで既定で有効です。 **呼び出し履歴**ウィンドウと呼び出しスタックのサポート マイ コードのみで/JMC スイッチは必要ありません。
+以降では、Visual Studio 2017 バージョン 15.8、マイ コードのみコードをステップ実行がサポートされています。 この機能では、使用も必要です、 [(だけマイ コードのデバッグ)/JMC](/cpp/build/reference/jmc)コンパイラ スイッチ。 スイッチが既定で有効になっているC++プロジェクト。 **呼び出し履歴**ウィンドウと呼び出しスタックのサポート マイ コードのみで/JMC スイッチは必要ありません。
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> ユーザー コードとして分類される、デバッガーによってユーザー コードを含むバイナリの PDB を読み込む必要があります (を使用して、**モジュール**これを確認するウィンドウ)。
 
-などで呼び出し履歴の動作、用、**呼び出し履歴**ウィンドウで、C++ でマイ コードのみにこれらの関数のみが考慮*非ユーザー コード*:
+などで呼び出し履歴の動作、用、**呼び出し履歴**ウィンドウで、マイ コードのみでC++するこれらの関数のみが考慮*非ユーザー コード*:
 
 - シンボル ファイル内に除去されたソース情報がある関数。
 - シンボル ファイルがスタック フレームに対応するソース ファイルがないことを示す関数。
 - 指定された関数 *\*.natjmc*内のファイル、 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*フォルダー。
 
-C++ でマイ コードのみがこれらの関数にのみを考慮するコードのステップ実行動作の*非ユーザー コード*:
+マイ コードのみで、コード ステップ実行動作C++するこれらの関数のみが考慮*非ユーザー コード*:
 
 - 対応する PDB ファイルが読み込まれていないデバッガーで機能します。
 - 指定された関数 *\*.natjmc*内のファイル、 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*フォルダー。
 
 > [!NOTE]
-> マイ コードのみでコードのステップ実行サポートの C++ コードをコンパイルする Visual Studio 15.8 Preview 3 以降では、MSVC コンパイラを使用して、/JMC コンパイラ スイッチを有効にする必要があります (既定では有効です)。 詳細については、次を参照してください。 [C++ のカスタマイズのコール スタックとコードのステップ実行の動作](#BKMK_CPP_Customize_call_stack_behavior)) この[ブログの投稿](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)します。 以前のコンパイラを使用してコンパイルされたコードの *.natstepfilter*ファイルは、これは、マイ コードのみの独立したステップ実行、コードをカスタマイズする唯一の方法です。 参照してください[ステップ実行の動作をカスタマイズする C++](#BKMK_CPP_Customize_stepping_behavior)します。
+> マイ コードのみでコードをステップ実行サポートC++Visual Studio 15.8 Preview 3 以降では、MSVC コンパイラを使用してコードをコンパイルして、/JMC コンパイラ スイッチを有効にする必要があります (既定では有効です)。 詳細については、次を参照してください。[カスタマイズC++ステップ実行の動作のコードのコール スタックと](#BKMK_CPP_Customize_call_stack_behavior)) と[ブログの投稿](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)します。 以前のコンパイラを使用してコンパイルされたコードの *.natstepfilter*ファイルは、これは、マイ コードのみの独立したステップ実行、コードをカスタマイズする唯一の方法です。 参照してください[カスタマイズC++ステップ実行の動作](#BKMK_CPP_Customize_stepping_behavior)します。
 
 <a name="BKMK_CPP_Stepping_behavior"></a> C++ のデバッグ中には
 
@@ -110,9 +110,9 @@ C++ でマイ コードのみがこれらの関数にのみを考慮するコー
 
 デバッガーが例外に達する場合ユーザーまたは非ユーザー コード内にあるかどうか、例外で停止します。 **ユーザーよって処理されない**オプション、**例外設定** ダイアログ ボックスは無視されます。
 
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> C++ の呼び出し履歴とコードをステップ実行の動作をカスタマイズします。
+### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> カスタマイズC++のコール スタックとコードのステップ実行の動作
 
-C++ プロジェクトでは、モジュール、ソース ファイル、および関数を指定することができます、**呼び出し履歴**でそれらを指定し、ウィンドウが非ユーザー コードとして扱います *\*.natjmc*ファイル。 このカスタマイズは、最新のコンパイラを使用している場合をステップ実行するコードにも適用されます (を参照してください[マイ コードのみを C++](#BKMK_CPP_User_and_non_user_code))。
+C++ プロジェクトでは、モジュール、ソース ファイル、および関数を指定することができます、**呼び出し履歴**でそれらを指定し、ウィンドウが非ユーザー コードとして扱います *\*.natjmc*ファイル。 このカスタマイズは、最新のコンパイラを使用している場合をステップ実行するコードにも適用されます (を参照してください[C++マイ コードのみ](#BKMK_CPP_User_and_non_user_code))。
 
 - Visual Studio コンピューターのすべてのユーザーの非ユーザー コードを指定するには、*%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* フォルダーに *.natjmc* ファイルを追加します。
 - 個々 のユーザーの非ユーザー コードを指定するには、追加、 *.natjmc*ファイルを *%USERPROFILE%\My Documents\\< Visual Studio バージョン\>\Visualizers*フォルダー。
@@ -143,24 +143,24 @@ A *.natjmc*ファイルは、この構文を使用して XML ファイル。
 
 |属性|説明|
 |---------------|-----------------|
-|`Name`|必須です。 モジュールの完全パス。 Windows のワイルドカード文字を使用することができます`?`(0 個または 1 つの文字) と`*`(0 個以上の文字)。 たとえば、オブジェクトに適用された<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> では、ドライブの *\3rdParty\UtilLibs* 内のすべてのモジュールを外部コードとして扱うことをデバッガーに指示します。|
+|`Name`|必須。 モジュールの完全パス。 Windows のワイルドカード文字を使用することができます`?`(0 個または 1 つの文字) と`*`(0 個以上の文字)。 例えば以下のようにします。<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> では、ドライブの *\3rdParty\UtilLibs* 内のすべてのモジュールを外部コードとして扱うことをデバッガーに指示します。|
 |`Company`|任意。 実行可能ファイルに埋め込まれているモジュールを発行する会社の名前。 この属性を使用して、モジュールのあいまいさを解消することができます。|
 
  **File 要素の属性**
 
 |属性|説明|
 |---------------|-----------------|
-|`Name`|必須です。 外部コードとして扱うソース ファイルの完全パス。 パスを指定するときに Windows のワイルドカード文字、`?` および `*` を使用できます。|
+|`Name`|必須。 外部コードとして扱うソース ファイルの完全パス。 パスを指定するときに Windows のワイルドカード文字、`?` および `*` を使用できます。|
 
  **Function 要素の属性**
 
 |属性|説明|
 |---------------|-----------------|
-|`Name`|必須です。 外部コードとして扱う関数の完全修飾名。|
-|`Module`|任意。 関数を含むモジュールの名前または完全パス。 この属性を使用して、同じ名前の関数のあいまいさを解消することができます。|
+|`Name`|必須。 外部コードとして扱う関数の完全修飾名。|
+|`Module`|省略可能です。 関数を含むモジュールの名前または完全パス。 この属性を使用して、同じ名前の関数のあいまいさを解消することができます。|
 |`ExceptionImplementation`|`true` に設定すると、この関数ではなく、例外をスローした関数が呼び出し履歴に表示されます。|
 
-###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> マイ コードのみの設定の独立した C++ のステップ実行動作をカスタマイズします。
+### <a name="BKMK_CPP_Customize_stepping_behavior"></a> カスタマイズC++マイ コードのみの設定の独立したステップ実行の動作
 
 C++ のプロジェクトでは、関数を非ユーザー コードとしてオーバーしてステップを指定できます *\*.natstepfilter*ファイル。 関数の一覧で *\*.natstepfilter*ファイルは マイ コードのみの設定に依存しません。
 
@@ -187,12 +187,12 @@ A *.natstepfilter*ファイルは、この構文を使用して XML ファイル
 
 |要素|説明|
 |-------------|-----------------|
-|`Function`|必須です。 1 つ以上の関数を非ユーザー関数として指定します。|
-|`Name`|必須です。 一致を照合する完全な関数名を指定する ECMA-262 書式の正規表現。 次に例を示します。<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> は、`MyNS::MyClass` のすべてのメソッドが非ユーザー コードと見なされることをデバッガーに知らせます。 一致照合では、大文字と小文字が区別されます。|
+|`Function`|必須。 1 つ以上の関数を非ユーザー関数として指定します。|
+|`Name`|必須。 一致を照合する完全な関数名を指定する ECMA-262 書式の正規表現。 例えば:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> は、`MyNS::MyClass` のすべてのメソッドが非ユーザー コードと見なされることをデバッガーに知らせます。 一致照合では、大文字と小文字が区別されます。|
 |`Module`|任意。 関数を含むモジュールへの完全パスを指定する ECMA-262 書式の正規表現。 一致では、大文字と小文字を区別しません。|
-|`Action`|必須です。 大文字と小文字が区別される以下のいずれかの値です。<br /><br /> `NoStepInto`  -関数をステップ オーバーするデバッガーに指示します。<br /> `StepInto`  -その他のオーバーライド、関数にステップ インをデバッガーに指示`NoStepInto`一致する関数。|
+|`Action`|必須。 大文字と小文字が区別される以下のいずれかの値です。<br /><br /> `NoStepInto`  -関数をステップ オーバーするデバッガーに指示します。<br /> `StepInto`  -その他のオーバーライド、関数にステップ インをデバッガーに指示`NoStepInto`一致する関数。|
 
-##  <a name="BKMK_JavaScript_Just_My_Code"></a>JavaScript での "マイ コードのみ"
+## <a name="BKMK_JavaScript_Just_My_Code"></a>JavaScript での "マイ コードのみ"
 
 <a name="BKMK_JS_User_and_non_user_code"></a>JavaScript の "マイ コードのみ" では、以下のいずれかの方法でコードを分類することによって、ステップ実行と呼び出し履歴表示が制御されます。
 
@@ -205,10 +205,10 @@ A *.natstepfilter*ファイルは、この構文を使用して XML ファイル
 JavaScript デバッガーはユーザーまたはこの順序でないユーザーとしてコードを分類します。
 
 1. 既定の分類。
-   -   ホスト提供する文字列を渡すことによって実行されるスクリプト`eval`関数は**MyCode**します。
-   -   文字列を渡すことによって実行されるスクリプト、`Function`コンス トラクターは**LibraryCode**します。
-   -   WinJS や、Azure SDK などのフレームワーク参照内のスクリプトが**LibraryCode**します。
-   -   文字列を渡すことによって実行されるスクリプト、 `setTimeout`、 `setImmediate`、または`setInterval`関数は**UnrelatedCode**します。
+   - ホスト提供する文字列を渡すことによって実行されるスクリプト`eval`関数は**MyCode**します。
+   - 文字列を渡すことによって実行されるスクリプト、`Function`コンス トラクターは**LibraryCode**します。
+   - WinJS や、Azure SDK などのフレームワーク参照内のスクリプトが**LibraryCode**します。
+   - 文字列を渡すことによって実行されるスクリプト、 `setTimeout`、 `setImmediate`、または`setInterval`関数は**UnrelatedCode**します。
 
 2. 指定されたすべての Visual Studio JavaScript プロジェクトの分類、 *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json*ファイル。
 

@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: de300a7af8492e6431f6b8513cde84a15895ad96
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786309"
 ---
 # <a name="isetnextstatement-interface"></a>ISetNextStatement インターフェイス
 このインターフェイスは、現在のステートメントを更新するプロセス デバッグ マネージャーを許可する、インタープリターによって実装されます。 これは、スタック フレーム オブジェクトから実装され、PDM は QueryInterface を使用して、このインターフェイスを取得します。  

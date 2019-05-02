@@ -1,4 +1,4 @@
----
+﻿---
 title: コマンド ライン パラメーターを使用して、Visual Studio 2015 をインストールする |Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
@@ -14,25 +14,26 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: cd61d03b5639038612e305697f4245e582ee3efe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a3fe0233f08f33535be4b02cc06c29d919d75169
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794040"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651164"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>コマンド ライン パラメーターを使用して Visual Studio をインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 の最新ドキュメントについては、次を参照してください。[コマンド ライン パラメーターを使用して、Visual Studio 2017 をインストールする](https://docs.microsoft.com/visualstudio/install/use-command-line-parameters-to-install-visual-studio)します。
+Visual Studio の最新ドキュメントについては、次を参照してください。[コマンド ライン パラメーターを使用して、Visual Studio をインストールする](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)します。
 
 コマンド プロンプトから Visual Studio 2015 をインストールする場合、次のコマンド ライン パラメーター (スイッチとも呼ばれます) を使用することができます。
 
 > [!NOTE]
->  ブートス トラップ ファイルではなく、実際のインストーラーを使用することを確認します。 使用するかどうかを確認、 **`vs_enterprise.exe`** vs_enterprise_ ではなく*GUID*.exe です。 インストーラーをダウンロードする[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)します。
+> ブートス トラップ ファイルではなく、実際のインストーラーを使用することを確認します。 使用するかどうかを確認、 **`vs_enterprise.exe`** vs_enterprise_ ではなく*GUID*.exe です。 インストーラーをダウンロードする[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)します。
 
 ## <a name="list-of-command-line-parameters"></a>コマンド ライン パラメーターの一覧
- Visual Studio のコマンド ライン パラメーターでは、大文字と小文字は区別されません。
+
+Visual Studio のコマンド ライン パラメーターでは、大文字と小文字は区別されません。
 
 |パラメーター|説明|
 |---------------|-----------------|
@@ -59,7 +60,8 @@ Visual Studio 2017 の最新ドキュメントについては、次を参照し�
 |**/repair**|Visual Studio を修復します。|
 |**/SuppressRefreshPrompt**|インストール ウィザードに更新プログラムの入手可能ダイアログが表示されないようにし、必須の更新バージョンまたは推奨の更新バージョンが存在する場合に、インストール ウィザードで自動的に受け入れられるようにします。|
 |**/u**<br /><br /> **/Uninstall**|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]をアンインストールします。|
-|**/Uninstall/Force**<br /><br /> **/u/force**|Visual Studio および他の製品と共有するすべての機能をアンインストールします。 **警告:** このパラメーターを使用する場合、同じコンピューターにインストールされているその他の製品が正しく機能しているを停止する可能性があります。|
+|**/Uninstall/Force**<br /><br /> **/u/force**|Visual Studio および他の製品と共有するすべての機能をアンインストールします。 **警告:** このパラメーターを使用すると、同じコンピューターにインストールされている他の製品が正しく機能しなくなることがあります。|
 
 ## <a name="see-also"></a>関連項目
- [Visual Studio 管理者ガイド](../install/visual-studio-administrator-guide.md)
+
+- [Visual Studio 管理者ガイド](../install/visual-studio-administrator-guide.md)

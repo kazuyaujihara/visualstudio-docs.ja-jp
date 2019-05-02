@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5766beb87626efd11ba50422d5f811d1ae1d91e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898699"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;文字列&gt;要素 (ブートス トラップ)
 製品名、パッケージ名、およびインストールのエラー メッセージのローカライズされた文字列を定義します。
@@ -49,7 +49,7 @@ ms.locfileid: "56632343"
 
 |属性|説明|
 |---------------|-----------------|
-|`Name`|必須です。 文字列の名前。|
+|`Name`|必須。 文字列の名前。|
 
 ## <a name="example"></a>例
  次のコード例では、すべての英語文字列を指定します、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]インストーラー。

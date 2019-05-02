@@ -26,20 +26,19 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fc7c3202b26e94736f59561c6c13f8350102d7b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780370"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656483"
 ---
 # <a name="file-properties-javascript"></a>ファイルのプロパティ、JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 ファイルのプロパティを使用して、プロジェクト システムがファイルに対して実行するアクションを指定できます。 たとえば、ファイルがリソース ファイルとしてパッケージに追加するかどうかを示すには、ファイル プロパティを設定できます。  
   
- ソリューション エクスプローラーでファイルを選択し、[プロパティ] ウィンドウでそのプロパティを調べることができます。 JavaScript ファイルは、**[出力ディレクトリにコピー]**、**[パッケージ アクション]**、**[ファイル名]**、**[ファイル パス]** という 4 種類のプロパティがあります。  
+ ソリューション エクスプローラーでファイルを選択し、[プロパティ] ウィンドウでそのプロパティを調べることができます。 JavaScript ファイルには、**[出力ディレクトリにコピー]**、**[パッケージ アクション]**、**[ファイル名]**、**[ファイル パス]** という 4 種類のプロパティがあります。  
   
 ## <a name="file-properties"></a>ファイルのプロパティ  
  このセクションでは、JavaScript ファイルに共通のプロパティについて説明します。  
@@ -78,7 +77,7 @@ ms.locfileid: "54780370"
 ### <a name="file-version"></a>ファイルのバージョン  
  参照のファイル バージョンが表示されます。  
   
-### <a name="identity"></a>Identity  
+### <a name="identity"></a>同一。  
  プロジェクトに使用されている参照の ID が表示されます。これはプロジェクト ファイルに保存されています。  
   
 ### <a name="package"></a>Package  
@@ -97,4 +96,4 @@ ms.locfileid: "54780370"
  参照のバージョンが表示されます。  
   
 ## <a name="see-also"></a>関連項目
- [NIB: プロジェクトのプロパティ (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
+ [NIB:プロジェクトのプロパティ (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

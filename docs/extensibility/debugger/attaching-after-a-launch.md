@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54284b9e1e55e4e3a3ba8b8237b9420cbf195089
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 1b0a34505cf32e0e3fd4dc18bfeab4588856dba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409946"
 ---
 # <a name="attach-after-a-launch"></a>起動の後のアタッチします。
 プログラムを起動した後、デバッグ セッションとプログラムをデバッグ エンジン (DE) をアタッチする準備ができます。
@@ -23,12 +23,12 @@ ms.locfileid: "56704047"
 ## <a name="design-decisions"></a>設計上の決定
  2 つのデザイン方法を選択する必要があります通信が、共有のアドレス空間内で簡単にあるため、: デバッグ セッションと、DE 間の通信を設定します。 または、DE、およびプログラムの間の通信を設定します。 次の設定の選択します。
 
--   デバッグ セッションと、DE 間の通信を設定する方を提示した場合に、デバッグ セッション、DE を共同作成し、のプログラムにアタッチする DE を尋ねます。 この設計のままに、デバッグ セッションと DE まとめて 1 つのアドレス空間、およびランタイム環境とプログラム別にまとめる。
+- デバッグ セッションと、DE 間の通信を設定する方を提示した場合に、デバッグ セッション、DE を共同作成し、のプログラムにアタッチする DE を尋ねます。 この設計のままに、デバッグ セッションと DE まとめて 1 つのアドレス空間、およびランタイム環境とプログラム別にまとめる。
 
--   方、DE とプログラムの間の通信を設定する、実行時環境は共同、DE を作成します。 この設計は、別にまとめて 1 つのアドレス空間と、DE、実行時環境、およびプログラムに SDM を残します。 この設計は、スクリプト言語を実行する、インタープリターに実装されている DE の一般的な例です。
+- 方、DE とプログラムの間の通信を設定する、実行時環境は共同、DE を作成します。 この設計は、別にまとめて 1 つのアドレス空間と、DE、実行時環境、およびプログラムに SDM を残します。 この設計は、スクリプト言語を実行する、インタープリターに実装されている DE の一般的な例です。
 
     > [!NOTE]
-    >  デがプログラムにアタッチする方法とは実装によって異なります。 デと、プログラム間の通信も実装に依存します。
+    > デがプログラムにアタッチする方法とは実装によって異なります。 デと、プログラム間の通信も実装に依存します。
 
 ## <a name="implementation"></a>実装
  プログラムでは、受信すると、セッション デバッグ マネージャー (SDM) まず、 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)を起動するプログラムを表すオブジェクトを呼び出す、[アタッチ](../../extensibility/debugger/reference/idebugprogram2-attach.md)を引数としてメソッドを[IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)以降であるオブジェクト、SDM にデバッグ イベントを渡すために使用します。 `IDebugProgram2::Attach`メソッドを呼び出して、 [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)メソッド。 SDM を受信する方法の詳細については、`IDebugProgram2`インターフェイスは、「[ポートへの通知](../../extensibility/debugger/notifying-the-port.md)します。

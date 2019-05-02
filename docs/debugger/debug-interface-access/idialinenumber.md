@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 327a53a28e5b37d33d44375653c1bffa56c7ddd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829018"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 イメージのテキストのバイトのブロックからソース ファイルの行番号へのマッピングのプロセスを説明する情報にアクセスします。
@@ -48,7 +48,7 @@ IDiaLineNumber : IUnknown
 |[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|この行の情報がプログラムのソース内のステートメントの先頭を説明することを示すフラグを取得します。|
 |[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|この行を提供するコンパイル単位の一意の識別子を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
 このインターフェイスを呼び出すことによって取得、 [idiaenumlinenumbers::item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)または[idiaenumlinenumbers::next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)メソッド。
@@ -134,8 +134,8 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 }
 ```
 
-## <a name="requirements"></a>要件
-ヘッダー: Dia2.h
+## <a name="requirements"></a>必要条件
+ヘッダー:Dia2.h
 
 ライブラリ: diaguids.lib
 

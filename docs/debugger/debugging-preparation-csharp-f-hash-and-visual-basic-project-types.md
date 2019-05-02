@@ -22,13 +22,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6cedb5e0b8dd80aadc3ee3a9507b2210811fb1bf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851859"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>デバッグの準備: プロジェクトの種類が C#、F#、および Visual Basic のプロジェクト
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>デバッグの準備: C#、F#、および Visual Basic のプロジェクト
 ここでは、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] プロジェクト テンプレートで作成した C#、F#、および [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のプロジェクトをデバッグする方法について説明します。
 
  出力として Dll を作成するプロジェクトの種類に分類された注[DLL プロジェクトのデバッグ](../debugger/debugging-dll-projects.md)共有している一般的な機能のため。

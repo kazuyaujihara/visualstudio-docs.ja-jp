@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2768a2e55b3e38158f2ef6b856a653a1a2c12dfa
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562404"
 ---
 # <a name="projectitem-element"></a>ProjectItem 要素
   SharePoint プロジェクト項目を表します。 この要素の必須のルート要素の *.spdata*ファイル。
@@ -47,11 +47,11 @@ ms.locfileid: "58322996"
 |属性|説明|
 |---------------|-----------------|
 |**DefaultFile**|省略可能な**xs: 文字列**属性。<br /><br /> SharePoint プロジェクト項目を開くときに、Visual Studio エディターで表示されるファイルのファイル名を含む、相対パス**ソリューション エクスプ ローラー**します。 含むフォルダーからの相対パスでは、 *.spdata*ファイル。|
-|**FeatureReceiverClass**|省略可能な**xs:string**属性。<br /><br /> この SharePoint プロジェクト アイテムのフィーチャー レシーバー クラスの完全修飾名。 フィーチャー レシーバーの詳細については、[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)を参照してください。|
-|**FeatureReceiverAssembly**|省略可能な**xs:string**属性。<br /><br /> この SharePoint プロジェクト アイテムのフィーチャー レシーバーを定義するアセンブリの完全修飾名を指定します。 フィーチャー レシーバーの詳細については、[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)を参照してください。 完全修飾アセンブリ名の詳細については、[アセンブリ名](/dotnet/framework/app-domains/assembly-names)を参照してください。|
+|**FeatureReceiverClass**|省略可能な**xs:string**属性。<br /><br /> この SharePoint プロジェクト アイテムのフィーチャー レシーバー クラスの完全修飾名。 フィーチャー レシーバーの詳細については、次を参照してください。[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)します。|
+|**FeatureReceiverAssembly**|省略可能な**xs:string**属性。<br /><br /> この SharePoint プロジェクト アイテムのフィーチャー レシーバーを定義するアセンブリの完全修飾名を指定します。 フィーチャー レシーバーの詳細については、次を参照してください。[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)します。 完全修飾アセンブリ名の詳細については、次を参照してください。[アセンブリ名](/dotnet/framework/app-domains/assembly-names)します。|
 |**SupportedTrustLevels**|省略可能な**xs:string**属性。<br /><br /> この SharePoint プロジェクト アイテムがサポートされる信頼レベルを指定します。 この値は、次の文字列のいずれかを指定できます。サンド ボックス化された、FullTrust、またはすべて。 値 All は、Sandboxed および FullTrust の両方を指定します。<br /><br /> カスタム SharePoint プロジェクト項目の種類、この属性の値に割り当てた値に対応、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A>プロパティの実装で、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>メソッド。 Visual Studio で指定した同じ信頼レベルを指定するために、値が上書きされますこの属性に別の値を指定する場合、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A>プロパティ。|
 |**SupportedDeploymentScopes**|省略可能な**xs:string**属性。<br /><br /> この SharePoint プロジェクト アイテムをサポートする展開のスコープを指定します。 この値は、次の文字列の 1 つ以上で構成されるコンマ区切りの文字列です。ファーム、サイト、Web、web アプリケーション、またはパッケージです。 例: `Web, Site`<br /><br /> カスタム SharePoint プロジェクト項目の種類、この属性の値に割り当てた値に対応、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>プロパティの実装で、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>メソッド。 Visual Studio で指定した同じ信頼レベルを指定するために、値が上書きされますこの属性に別の値を指定する場合、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>プロパティ。|
-|**Type**|必要な**xs:string**属性。<br /><br /> SharePoint プロジェクト アイテムの識別子。 カスタム SharePoint プロジェクト項目の種類、識別子は文字列に渡す、<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>します。 詳細については、「[方法 :SharePoint プロジェクト項目の種類定義](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)します。<br /><br /> Visual Studio に含まれている組み込みの SharePoint プロジェクト アイテムの識別子の一覧は、[拡張の SharePoint プロジェクト アイテム](../sharepoint/extending-sharepoint-project-items.md)を参照してください。|
+|**Type**|必要な**xs:string**属性。<br /><br /> SharePoint プロジェクト アイテムの識別子。 カスタム SharePoint プロジェクト項目の種類、識別子は文字列に渡す、<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>します。 詳細については、「[方法 :SharePoint プロジェクト項目の種類定義](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)します。<br /><br /> Visual Studio に含まれている組み込みの SharePoint プロジェクト アイテムの識別子の一覧は、次を参照してください。[拡張の SharePoint プロジェクト アイテム](../sharepoint/extending-sharepoint-project-items.md)します。|
 
 ### <a name="child-elements"></a>子要素
 

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ee5d76060789118e9051c2d8dcc5fc570617f6a8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954955"
 ---
 # <a name="iactivescriptparseaddscriptlet"></a>IActiveScriptParse::AddScriptlet
 コード スクリプトレットをスクリプトに追加します。 このメソッドは、ホスト ドキュメントと絡まり合って、スクリプトの永続的な状態であり、ホストは、スクリプトを復元するため、環境で使用ではなくを通じて、`IPersist*`インターフェイス。 プライマリの例は、組み込みイベントにアタッチする HTML ドキュメントに埋め込まれたコードのスクリプトレットを許可する HTML のスクリプト言語 (たとえば、ONCLICK="button1.text='Exit'")。  

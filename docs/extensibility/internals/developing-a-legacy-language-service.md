@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a4cbc68e84c6593ca61be9234fcec3e88f3f333
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9603c8d7955a34ae42dd7339a708c12441e98634
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418658"
 ---
 # <a name="develop-a-legacy-language-service"></a>従来の言語サービスを開発します。
 このセクションにリンクする際に役立つトピックへは、従来の言語サービスを作成します。
@@ -29,7 +29,7 @@ ms.locfileid: "56631875"
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 言語サービスを実装する新しい方法の詳細についてを参照してください。[エディターと言語サービス拡張](../../extensibility/editor-and-language-service-extensions.md)します。
 
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [従来の言語サービスのモデル](../../extensibility/internals/model-of-a-legacy-language-service.md)
@@ -52,7 +52,7 @@ ms.locfileid: "56631875"
 
  言語サービスが、デバッガーをサポートする機能を提供する方法について説明します。
 
-- [チェックリスト:従来の言語サービスを作成します。](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+- [チェックリスト: 従来の言語サービスを作成します。](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
 
  作成すると、コア エディターの言語サービスを統合する手順について説明します。
 

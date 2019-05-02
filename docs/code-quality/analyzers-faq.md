@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bec9296f15c48cf3b327c78cd0ce7d57adafa002
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57874686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571473"
 ---
-# <a name="analyzers-faq"></a>アナライザーの FAQ
+# <a name="analyzers-faq"></a>アナライザーに関する FAQ
 
 このページには、Visual Studio で Roslyn アナライザーについてよく寄せられる質問に対する回答が含まれています。
 
@@ -55,7 +55,7 @@ ms.locfileid: "57874686"
 
 **Q**:アナライザーと静的コード分析の違いは何ですか。
 
-**A**:アナライザーは、静的コード分析は、ビルドが完了した後にバイナリ ファイルを分析し、リアルタイムでは、コンパイル時にソース コードを分析します。 詳細については、[静的コード分析と Roslyn アナライザー](roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis)と[FxCop アナライザー FAQ](fxcop-analyzers-faq.md)を参照してください。
+**A**:アナライザーは、静的コード分析は、ビルドが完了した後にバイナリ ファイルを分析し、リアルタイムでは、コンパイル時にソース コードを分析します。 詳細については、次を参照してください。[静的コード分析と Roslyn アナライザー](roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis)と[FxCop アナライザー FAQ](fxcop-analyzers-faq.md)します。
 
 ## <a name="see-also"></a>関連項目
 

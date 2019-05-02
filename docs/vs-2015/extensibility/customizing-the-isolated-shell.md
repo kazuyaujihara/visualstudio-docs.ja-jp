@@ -1,26 +1,21 @@
 ---
 title: 分離シェルのカスタマイズ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: e0b7c3ae-210f-4f48-ac49-6a59e6034f5f
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 097186ba43202c537bf8acbe0b47893151055c19
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555969"
 ---
 # <a name="customizing-the-isolated-shell"></a>分離シェルのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +26,15 @@ Visual Studio のユーザー インターフェイスのさまざまな側面�
  分離シェルのテンプレート ソリューションが含まれています、 *SolutionName*します。次の機能を変更することができます Application.pkgdef ファイル:  
   
 ##### <a name="the-application-title"></a>アプリケーションのタイトル  
- アプリケーションのタイトルは"AppName"の行の値を変更することで、アプリケーションのタイトル バーに表示される名前を指定することができます、 *SolutionName*します。Application.pkgdef ファイルです。 詳細については、[チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)を参照してください。  
+ アプリケーションのタイトルは"AppName"の行の値を変更することで、アプリケーションのタイトル バーに表示される名前を指定することができます、 *SolutionName*します。Application.pkgdef ファイルです。 詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
   
  アプリケーションのタイトルに現在読み込まれているプロジェクトを表示したくない場合は、"ShowHierarchyRootInTitle"の行の値を変更、 *SolutionName*します。Application.pkgdef のファイルは dword:00000001 から場合は dword:00000000 です。  
   
 ##### <a name="the-application-icon"></a>アプリケーション アイコン  
- アプリケーションのタイトル バー内のアプリケーション名で表示されるアイコンは、アプリケーションのアイコンをカスタマイズできます。 別のアイコンをアイコンのディレクトリにコピーします。 **ソリューション エクスプ ローラー**、リソース ファイルのフォルダーにアイコンを追加します。 VSShellStub.rc ファイルを開き IDI_STUBPROGRAM の値を新しいアイコンの名前に置き換えます。 詳細については、[チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)を参照してください。  
+ アプリケーションのタイトル バー内のアプリケーション名で表示されるアイコンは、アプリケーションのアイコンをカスタマイズできます。 別のアイコンをアイコンのディレクトリにコピーします。 **ソリューション エクスプ ローラー**、リソース ファイルのフォルダーにアイコンを追加します。 VSShellStub.rc ファイルを開き IDI_STUBPROGRAM の値を新しいアイコンの名前に置き換えます。 詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
   
 ##### <a name="the-command-line-logo"></a>コマンド ラインのロゴ  
- コマンド ラインのロゴは、"CommandLineLogo"の行の値を変更することで、コマンドラインから、アプリケーションを起動するときに表示されるテキストをカスタマイズすることができます、 *SolutionName*します。Application.pkgdef ファイルです。 詳細については、次を参照してください[チュートリアル: 基本的な分離シェル アプリケーションを作成する。](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ コマンド ラインのロゴは、"CommandLineLogo"の行の値を変更することで、コマンドラインから、アプリケーションを起動するときに表示されるテキストをカスタマイズすることができます、 *SolutionName*します。Application.pkgdef ファイルです。 詳細については、次を参照してください。[チュートリアル。基本的な分離シェル アプリケーションを作成します。](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="the-name-of-the-user-files-subfolder"></a>ユーザー ファイルのサブフォルダーの名前  
  "UserFilesSubFolderName"の行の値を変更することで、アプリケーションがユーザー ファイルの保持フォルダーの名前を変更する*SolutionName*します。Application.pkgdef ファイルです。  
@@ -63,7 +58,7 @@ Visual Studio のユーザー インターフェイスのさまざまな側面�
  "DefaultSearchPage"の行の値を変更することで、web ブラウザー ウィンドウを開いたときに表示されるページには、web ブラウザー ページをカスタマイズすることができます、 *SolutionName*します。Application.pkgdef ファイルです。  
   
 ##### <a name="the-default-home-page"></a>既定のホーム ページ  
- ホーム ページをカスタマイズするには"DefaultHomePage"の行の値を変更することで、 *SolutionName*します。Application.pkgdef ファイルです。 詳細については、次を参照してください[チュートリアル: 基本的な分離シェル アプリケーションを作成する。](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ ホーム ページをカスタマイズするには"DefaultHomePage"の行の値を変更することで、 *SolutionName*します。Application.pkgdef ファイルです。 詳細については、次を参照してください。[チュートリアル。基本的な分離シェル アプリケーションを作成します。](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>ソリューションの概念を非表示にするかどうか  
  "HideSolutionConcept"の行の値を変更することで、アプリケーションでソリューションを非表示にするかどうかを指定することができます、 *SolutionName*します。Application.pkgdef ファイルです。 ソリューションを非表示にする値を設定`dword:00000001`、ソリューションを表示するには、値を設定および`dword:00000000`します。  
@@ -111,7 +106,7 @@ DisableStartPage=dword:00000000
   
  すべてのファイルに次のように設定します。、**項目の種類**プロパティを**分離シェル ファイル**ファイルにコピーするために、 *$RootFolder$* ディレクトリ。 (設定、**項目の種類**プロパティは、ファイルを右クリックし、選択**プロパティ**します。 このプロパティが見つかります**構成プロパティ**、**全般**)。  
   
- スタート ページをカスタマイズする方法の詳細については、[スタート ページのカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)を参照してください。  
+ スタート ページをカスタマイズする方法の詳細については、次を参照してください。[スタート ページのカスタマイズ](../ide/customizing-the-start-page-for-visual-studio.md)します。  
   
 ## <a name="using-other-elements-of-the-isolated-shell"></a>分離シェルの他の要素を使用します。  
  その他のファイルと、アプリケーションをさらにカスタマイズする分離シェルのソリューション テンプレートに含まれているプロジェクトを使用することができます。  
@@ -123,14 +118,13 @@ DisableStartPage=dword:00000000
 [$RootKey$\Projects\{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}\AddItemTemplates\TemplateDirs\{39c9c826-8ef8-4079-8c95-428f5b1c323f}]  
 ```  
   
- その他のファイル プロジェクトに表示されるプロジェクト テンプレートのセットから削除、**新しいプロジェクト**ダイアログ。 詳細については、[チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)を参照してください。  
+ その他のファイル プロジェクトに表示されるプロジェクト テンプレートのセットから削除、**新しいプロジェクト**ダイアログ。 詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
   
 ##### <a name="enabledisable-menu-commands"></a>メニュー コマンドを有効/無効にします。  
- *SolutionName*UI.vsct ファイルには、分離シェルを使用できるすべてのメニュー コマンドのコメント アウトされた一覧が含まれています。 特定のコマンドを無効にするのには、対応する行をコメント解除します。 たとえば、ウィンドウの分割/コメントを無効にするのには、`<Define name="No_SplitCommand"/>`行。 詳細については、[チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)を参照してください。  
+ *SolutionName*UI.vsct ファイルには、分離シェルを使用できるすべてのメニュー コマンドのコメント アウトされた一覧が含まれています。 特定のコマンドを無効にするのには、対応する行をコメント解除します。 たとえば、ウィンドウの分割/コメントを無効にするのには、`<Define name="No_SplitCommand"/>`行。 詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
   
 ##### <a name="the-bitmap-used-on-the-splash-screen"></a>スプラッシュ スクリーンで使用されるビットマップ  
- スプラッシュ画面で、"SplashScreenBitmap"の行の値を変更することで、アプリケーションを起動するときに表示されるウィンドウは、使用されるビットマップをカスタマイズすることができます、 *SolutionName*します。Application.pkgdef ファイルです。 詳細については、[チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)を参照してください。  
+ スプラッシュ画面で、"SplashScreenBitmap"の行の値を変更することで、アプリケーションを起動するときに表示されるウィンドウは、使用されるビットマップをカスタマイズすることができます、 *SolutionName*します。Application.pkgdef ファイルです。 詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。  
   
 ##### <a name="the-helpabout-window"></a>ヘルプ、ウィンドウの概要  
- 分離シェル テンプレートでは、ヘルプをカスタマイズに使用できる別のプロジェクト]、[アプリケーションのボックスの詳細について。 詳細については、[チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)を参照してください。
-
+ 分離シェル テンプレートでは、ヘルプをカスタマイズに使用できる別のプロジェクト]、[アプリケーションのボックスの詳細について。 詳細については、次を参照してください。[チュートリアル。分離シェル アプリケーションの基本的な作成](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)です。

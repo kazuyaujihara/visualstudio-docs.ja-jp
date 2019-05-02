@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a38e453d9bfff3b2633eb98cc5d6127fa126335f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7a1b7c93e4b30bbfd373a5fad9d7001452d4f587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403542"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>方法: ClickOnce 配置エラー用にカスタム ログ ファイルの場所を設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ ms.locfileid: "58977648"
  レジストリ エディターを使用して、特定のクライアントのこの動作を変更することができます (**regedit.exe**) カスタム ログ ファイルのパスを設定します。 この場合、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 1 つのファイルにすべてのデプロイのライセンス認証の成功と失敗を記録します。  
   
 > [!CAUTION]
->  レジストリ エディターを正しく使用する場合、オペレーティング システムを再インストールする必要があります深刻な問題が発生する可能性があります。 問題が発生する可能性のあることを十分に認識したうえで利用してください。  
+> レジストリ エディターを正しく使用する場合、オペレーティング システムを再インストールする必要があります深刻な問題が発生する可能性があります。 問題が発生する可能性のあることを十分に認識したうえで利用してください。  
   
 > [!NOTE]
->  切り捨てるか大きくなりすぎないようにするには、場合によっては、ログ ファイルを削除する必要があります。  
+> 切り捨てるか大きくなりすぎないようにするには、場合によっては、ログ ファイルを削除する必要があります。  
   
  次の手順では、1 つのクライアントのカスタム ログ ファイルの場所を設定する方法について説明します。  
   
 ### <a name="to-set-a-custom-log-file-location"></a>カスタム ログ ファイルの場所を設定するには  
   
-1.  開いている**Regedit.exe**します。  
+1. 開いている**Regedit.exe**します。  
   
-2.  ノードに移動`HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`します。  
+2. ノードに移動`HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`します。  
   
-3.  文字列値を設定`LogFilePath`の完全なパスと、任意のカスタム ログの場所のファイル名にします。  
+3. 文字列値を設定`LogFilePath`の完全なパスと、任意のカスタム ログの場所のファイル名にします。  
   
      この場所は、ユーザーが書き込みアクセス権を持っているディレクトリにある必要があります。 たとえば、Windows vista では、次のフォルダー構造を作成し、設定`LogFilePath`C:\Users に\\< ユーザー名\>\Documents\Logs\ClickOnce\installation.log します。  
   

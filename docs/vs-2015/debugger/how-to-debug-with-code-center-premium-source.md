@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0290fa7c83b36c19663aef85c0179fb9458ddcf
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MT
+ms.openlocfilehash: db9a3e08e14e7fadca6df9e32361c0b042f565e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438328"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>方法: Code Center Premium ソースをデバッグします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +56,12 @@ ms.locfileid: "59002975"
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  末尾のスラッシュを必ず<strong>/</strong> パスの末尾。  
+   > 末尾のスラッシュを必ず<strong>/</strong> パスの末尾。  
   
      これらの場所を一覧の最上部に移動して、これらのシンボルが最初に読み込まれるようにします。  
   
    > [!NOTE]
-   >  これらの Code Center Premium の場所が最初に読み込まれる場所になるように、これらが一覧の最初に配置されている必要があります。 Visual Studio 2010 では、上記のすべてのサーバーを移動することはできません、 **Microsoft シンボル サーバー**エントリは、チェック ボックスをオフにする必要があります。  
+   > これらの Code Center Premium の場所が最初に読み込まれる場所になるように、これらが一覧の最初に配置されている必要があります。 Visual Studio 2010 では、上記のすべてのサーバーを移動することはできません、 **Microsoft シンボル サーバー**エントリは、チェック ボックスをオフにする必要があります。  
    > 
    >  デバッグ セッション中に Microsoft シンボルからシンボルを読み込むには、次の手順に従います。  
    > 
@@ -78,21 +78,21 @@ ms.locfileid: "59002975"
   
 ### <a name="to-debug-your-source-code-using-attach-to-process"></a>[プロセスにアタッチ] を使用してソース コードをデバッグするには  
   
-1.  スマートカード リーダーを接続し、シェアード ソース イニシアティブから取得したカードを挿入します。  
+1. スマートカード リーダーを接続し、シェアード ソース イニシアティブから取得したカードを挿入します。  
   
-2.  Visual Studio を起動します。  
+2. Visual Studio を起動します。  
   
-3.  Visual Studio プロジェクトを開きます。  
+3. Visual Studio プロジェクトを開きます。  
   
-4.  **ツール** メニューのをクリックして**プロセスにアタッチ**します。  
+4. **ツール** メニューのをクリックして**プロセスにアタッチ**します。  
   
-5.  **プロセスにアタッチ**ダイアログ ボックスで、をクリックして**選択**します。  
+5. **プロセスにアタッチ**ダイアログ ボックスで、をクリックして**選択**します。  
   
-6.  **コードの種類の選択**ダイアログ ボックスで、**コードの種類を検出**を選択します**ネイティブ**、**マネージ**、および **(の管理v4.0)** します。  
+6. **コードの種類の選択**ダイアログ ボックスで、**コードの種類を検出**を選択します**ネイティブ**、**マネージ**、および **(の管理v4.0)** します。  
   
-7.  をクリックして**OK**を閉じる、**コードの種類の選択** ダイアログ ボックス。  
+7. をクリックして**OK**を閉じる、**コードの種類の選択** ダイアログ ボックス。  
   
-8.  **選択可能なプロセス**ボックスで、デバッグするプロセスを選択します。  
+8. **選択可能なプロセス**ボックスで、デバッグするプロセスを選択します。  
   
 9. **[アタッチ]** をクリックします。  
   
@@ -113,31 +113,31 @@ ms.locfileid: "59002975"
     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  末尾のスラッシュを必ず<strong>/</strong> パスの末尾。  
+   > 末尾のスラッシュを必ず<strong>/</strong> パスの末尾。  
   
 4. ソリューション内のマネージド プロジェクトごとに、次の操作を行います。  
   
-   1.  ソリューション エクスプ ローラーで プロジェクトのショートカット メニューを開き、**プロパティ**します。  
+   1. ソリューション エクスプ ローラーで プロジェクトのショートカット メニューを開き、**プロパティ**します。  
   
-   2.  選択**デバッグ**選び、**アンマネージ コード デバッグを有効にする**します。  
+   2. 選択**デバッグ**選び、**アンマネージ コード デバッグを有効にする**します。  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Code Center Premium ソースを使用したソリューションをデバッグするには  
   
-1.  `Package` クラスで、パッケージ コンストラクターにブレークポイントを設定します。  
+1. `Package` クラスで、パッケージ コンストラクターにブレークポイントを設定します。  
   
-2.  `Debug`  メニューのをクリックして**デバッグの開始**します。  
+2. `Debug`  メニューのをクリックして**デバッグの開始**します。  
   
-3.  パッケージ コンス トラクター内のブレークポイントにヒットしたらに移動、**呼び出し履歴**ウィンドウとをクリックし、シンボルからロードするアセンブリのスタック フレーム右**シンボルの読み込み**します。  
+3. パッケージ コンス トラクター内のブレークポイントにヒットしたらに移動、**呼び出し履歴**ウィンドウとをクリックし、シンボルからロードするアセンブリのスタック フレーム右**シンボルの読み込み**します。  
   
      ソースを読み込むには、呼び出しフレームをダブルクリックします。  
   
 ### <a name="to-browse-source-code-on-code-center-premium"></a>Code Center Premium のソース コードを参照するには  
   
-1.  スマートカード リーダーを接続し、シェアード ソース イニシアティブから取得したカードを挿入します。  
+1. スマートカード リーダーを接続し、シェアード ソース イニシアティブから取得したカードを挿入します。  
   
-2.  Internet Explorer を起動し、URL として「`https://codepremium.msdn.microsoft.com`」と入力します。  
+2. Internet Explorer を起動し、URL として「`https://codepremium.msdn.microsoft.com`」と入力します。  
   
-3.  必要なソースを探します。  
+3. 必要なソースを探します。  
   
 ## <a name="see-also"></a>関連項目  
  [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)   

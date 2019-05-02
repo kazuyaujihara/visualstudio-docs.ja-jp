@@ -12,12 +12,12 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a7650fc8a2ba297ccd3bc2a87be72a3f70062a18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b54c6ba8f3daefa53f00478c1d7e4573311cfb6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429159"
 ---
 # <a name="project-property-user-interface"></a>プロジェクト プロパティのユーザー インターフェイス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ ms.locfileid: "58975335"
   
 - プロジェクト サブタイプであるか、次を取得することによって実行時に基本プロジェクトのさまざまな拡張可能なオブジェクトの適切な Catid を調べる<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>値。  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
   プロジェクト サブタイプ プロジェクト スコープの Catid を判断するには上記のプロパティを取得します<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>から、`VSITEMID``typedef`します。 プロジェクト サブタイプを制御する可能性がありますも**プロパティ ページ**プロジェクトのダイアログ ボックスのページが表示されます構成に依存し、構成に依存しません。 いくつかのプロジェクト サブタイプは、組み込みのページを削除し、プロジェクトのサブタイプの特定のページを追加する必要があります。 この管理対象のクライアント プロジェクトの呼び出しを有効にするには、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>メソッドは、次のプロパティ。  
   

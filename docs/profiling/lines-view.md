@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 905979e0bc563e7525f1385a484e9b44b523a1f9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dbfb1780cfb8a64ebe20fc45f02992e60d7bb201
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000084"
 ---
 # <a name="lines-view"></a>行ビュー
 行ビューは、サンプリング メソッドを使用して収集したプロファイラー データに対してのみ使用できます。 このビューは、インストルメンテーションを使用して収集したデータに対しては使用できません。
@@ -30,17 +30,17 @@ ms.locfileid: "56613987"
 
  ステートメントは、次の項目によって識別されます。
 
--   function ステートメントを含むソース ファイル。
+- function ステートメントを含むソース ファイル。
 
--   ステートメントを含む関数。
+- ステートメントを含む関数。
 
--   ステートメントが開始されるソース行。
+- ステートメントが開始されるソース行。
 
--   ステートメントが開始されるソース行の文字。
+- ステートメントが開始されるソース行の文字。
 
--   ステートメントが終了するソース行。
+- ステートメントが終了するソース行。
 
--   ステートメントが終了するソース行の文字。
+- ステートメントが終了するソース行の文字。
 
 ## <a name="see-also"></a>関連項目
 - [行 ビュー](../profiling/lines-view-sampling-data.md)

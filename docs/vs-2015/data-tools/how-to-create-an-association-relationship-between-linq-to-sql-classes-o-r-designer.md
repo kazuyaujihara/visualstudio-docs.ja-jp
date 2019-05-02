@@ -9,23 +9,22 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a3f8071e38fabffd73e10f3ac6f23558876c2ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c5b97247ebf16a588e8f28b4b4e6f7c512566226
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386773"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>方法: LINQ to SQL クラス (O/R デザイナー) 間の関連付け (リレーションシップ) を作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] のエンティティ クラス間の関連付けは、データベース内のテーブル間の関連付けに似ています。 **[関連付けエディター]** ダイアログ ボックスを使用することで、エンティティ クラス間の関連付けを作成できます。  
   
  **[関連付けエディター]** ダイアログ ボックスを使用して関連付けを作成するときは、親クラスと子クラスを選択する必要があります。 親クラスは、主キーを含むエンティティ クラスであり、子クラスは、外部キーを含むエンティティ クラスです。 たとえば、Northwind の Customers テーブルと Orders テーブルにマップされるエンティティ クラスが作成された場合は、Customer クラスが親クラスであり、Order クラスが子クラスです。  
   
 > [!NOTE]
->  テーブルをドラッグすると**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**上に、 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)])、アソシエーションが既存のに基づいて自動的に作成データベース内の外部キー リレーションシップ。  
+> テーブルをドラッグすると**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**上に、 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)])、アソシエーションが既存のに基づいて自動的に作成データベース内の外部キー リレーションシップ。  
   
  O/R デザイナーでアソシエーションを選択すると、アソシエーションを作成すると後、は、いくつかの構成可能なプロパティ、**プロパティ**ウィンドウ。 関連付けは、関連クラス間の線で表されます。次の表は、関連付けのプロパティの説明を示しています。  
   
@@ -39,15 +38,15 @@ ms.locfileid: "58977533"
   
 ### <a name="to-create-an-association-between-entity-classes"></a>エンティティ クラス間に関連付けを作成するには  
   
-1.  関連付けの親クラスを表すエンティティ クラスを右クリックし、**[追加]** をポイントして、**[関連付け]** をクリックします。  
+1. 関連付けの親クラスを表すエンティティ クラスを右クリックし、**[追加]** をポイントして、**[関連付け]** をクリックします。  
   
-2.  **[関連付けエディター]** ダイアログ ボックスで、正しい**親クラス**が選択されていることを確認します。  
+2. **[関連付けエディター]** ダイアログ ボックスで、正しい**親クラス**が選択されていることを確認します。  
   
-3.  コンボ ボックスで**子クラス**を選択します。  
+3. コンボ ボックスで**子クラス**を選択します。  
   
-4.  クラスに関連する **[関連付けのプロパティ]** を選択します。 通常、これはデータベースで定義されている外部キー リレーションシップにマップされます。 たとえば、顧客と注文の関連付けで、**関連付けのプロパティ**各クラスの CustomerID は。  
+4. クラスに関連する **[関連付けのプロパティ]** を選択します。 通常、これはデータベースで定義されている外部キー リレーションシップにマップされます。 たとえば、顧客と注文の関連付けで、**関連付けのプロパティ**各クラスの CustomerID は。  
   
-5.  **[OK]** をクリックして、関連付けを作成します。  
+5. **[OK]** をクリックして、関連付けを作成します。  
   
 ## <a name="see-also"></a>関連項目  
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

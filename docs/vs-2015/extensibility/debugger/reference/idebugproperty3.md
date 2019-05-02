@@ -12,25 +12,25 @@ ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c38f0a891c6ee57ad2d483e48e06624fa9bccdf1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 272946c80f5df2c96d4cf2bf20ea988c71766d46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973399"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100574"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 このインターフェイスは、サポートを提供します。  
   
--   プロパティに関連付けられている任意の長さの文字列を取得しています。  
+- プロパティに関連付けられている任意の長さの文字列を取得しています。  
   
--   プロパティを使用して一意の ID を関連付けます。  
+- プロパティを使用して一意の ID を関連付けます。  
   
--   プロパティのカスタム ビューアーの一覧を取得しています。  
+- プロパティのカスタム ビューアーの一覧を取得しています。  
   
--   プロパティの値を生成されるエラーを報告する機能を設定  
+- プロパティの値を生成されるエラーを報告する機能を設定  
   
 ## <a name="syntax"></a>構文  
   

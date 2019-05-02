@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dba1ec7a21c0340db8b89124892edf78db2e04c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5e85bc7a5bac87692448aab393056fa1db5edbd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535641"
 ---
 # <a name="error-kerberos-authentication-failed"></a>エラー :Kerberos 認証に失敗しました
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>ターゲット コンピューターの DNS がデバッガー ホスト コンピューター名を正しく解決していることを確認するには  
   
-1.  ターゲット コンピューターで **[スタート]** メニューを開き、**[アクセサリ]** をポイントして **[コマンド プロンプト]** をクリックします。  
+1. ターゲット コンピューターで **[スタート]** メニューを開き、**[アクセサリ]** をポイントして **[コマンド プロンプト]** をクリックします。  
   
-2.  **[コマンド プロンプト]** ウィンドウに次のように入力します。  
+2. **[コマンド プロンプト]** ウィンドウに次のように入力します。  
   
     ```  
     ping <debugger_host_computer_name>  
     ```  
   
-3.  `ping` の応答の 1 行目には、DNS が返した完全なコンピューター名と IP アドレスが表示されます。  
+3. `ping` の応答の 1 行目には、DNS が返した完全なコンピューター名と IP アドレスが表示されます。  
   
-4.  デバッガー ホスト コンピューターで **[コマンド プロンプト]** を開き、`ipconfig` を実行します。  
+4. デバッガー ホスト コンピューターで **[コマンド プロンプト]** を開き、`ipconfig` を実行します。  
   
-5.  IP アドレス値を比較します。  
+5. IP アドレス値を比較します。  
   
 ## <a name="see-also"></a>関連項目  
  [リモート デバッグ エラーとトラブルシューティング](../debugger/remote-debugging-errors-and-troubleshooting.md)   

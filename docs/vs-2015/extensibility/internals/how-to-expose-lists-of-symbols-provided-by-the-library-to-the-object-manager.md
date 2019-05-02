@@ -14,12 +14,12 @@ ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 269c26d1b2caa56ba3306d151cff1a7607ac837c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 888ffbf255816fb04d84cb72219df2cfeae73f45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431654"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>方法: ライブラリによって提供されるシンボルのリストをオブジェクト マネージャーに公開する
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,15 +29,15 @@ ms.locfileid: "58978023"
  ライブラリでは、ツールが呼び出され、ノードを展開すると、またはビューが更新されたとき、データの要求を取得することがあります。 シンボル参照ツールが初めて呼び出されると、オブジェクト マネージャーは、最上位レベルの一覧を提供するライブラリを要求します。 ユーザーは、一覧にノードを展開、ライブラリは、そのノードの下の子の一覧を提供します。 すべてのオブジェクト マネージャーの照会には、関心のある項目のインデックスが含まれています。 新しい一覧を表示するには、項目の数が、項目、その名前、アクセシビリティ、およびその他のプロパティの種類の一覧ではオブジェクト マネージャーを決定する必要があります。  
   
 > [!NOTE]
->  実装するシンボルのリストを提供する管理対象のコード例を以下に示します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>インターフェイス。 オブジェクト マネージャーでは、このインターフェイスでメソッドを呼び出して、取得したデータを使用して設定またはシンボル参照ツールを更新します。  
+> 実装するシンボルのリストを提供する管理対象のコード例を以下に示します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>インターフェイス。 オブジェクト マネージャーでは、このインターフェイスでメソッドを呼び出して、取得したデータを使用して設定またはシンボル参照ツールを更新します。  
 >   
->  ネイティブ コード シンボル プロバイダーの実装を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>インターフェイス。  
+> ネイティブ コード シンボル プロバイダーの実装を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>インターフェイス。  
   
 ## <a name="providing-lists-of-symbols-to-the-object-manager"></a>オブジェクト マネージャーにシンボルの一覧が提供されます。  
   
 #### <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>オブジェクト マネージャーにシンボルのリストを提供するには  
   
-1.  実装することで、シンボルの一覧で項目の数を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>メソッド。 次の例では、オブジェクト マネージャーが、リスト内の項目の数に関する情報を取得する方法を示します。  
+1. 実装することで、シンボルの一覧で項目の数を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>メソッド。 次の例では、オブジェクト マネージャーが、リスト内の項目の数に関する情報を取得する方法を示します。  
   
     ```vb  
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()  
@@ -59,7 +59,7 @@ ms.locfileid: "58978023"
   
     ```  
   
-2.  実装することで、カテゴリおよび特定のリスト項目の属性に関する情報を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>メソッド。 指定された項目のカテゴリ、<xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY>列挙体。 次の例では、オブジェクト マネージャーが特定のカテゴリの項目の属性を取得する方法を示します。  
+2. 実装することで、カテゴリおよび特定のリスト項目の属性に関する情報を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>メソッド。 指定された項目のカテゴリ、<xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY>列挙体。 次の例では、オブジェクト マネージャーが特定のカテゴリの項目の属性を取得する方法を示します。  
   
     ```vb  
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer  
@@ -154,7 +154,7 @@ ms.locfileid: "58978023"
   
     ```  
   
-3.  実装することによって指定されたリスト項目のテキスト表現を取得する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>メソッド。 次の例では、特定の項目の完全な名前を取得する方法を示します。  
+3. 実装することによって指定されたリスト項目のテキスト表現を取得する、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>メソッド。 次の例では、特定の項目の完全な名前を取得する方法を示します。  
   
     ```vb  
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer  
@@ -172,7 +172,7 @@ ms.locfileid: "58978023"
   
     ```  
   
-4.  実装することによって指定されたリスト項目のアイコンの情報を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>メソッド。 アイコンは、型 (クラス、メソッド、およびなど)、およびリスト項目のアクセシビリティ (プライベート、パブリック、およびなど) を表します。 次の例では、特定の項目の属性に基づいてアイコンの情報を取得する方法を示します。  
+4. 実装することによって指定されたリスト項目のアイコンの情報を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>メソッド。 アイコンは、型 (クラス、メソッド、およびなど)、およびリスト項目のアクセシビリティ (プライベート、パブリック、およびなど) を表します。 次の例では、特定の項目の属性に基づいてアイコンの情報を取得する方法を示します。  
   
     ```vb  
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer  
@@ -254,7 +254,7 @@ ms.locfileid: "58978023"
   
     ```  
   
-5.  特定のリスト項目は実装することで拡張可能なかどうかに関する情報を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>メソッド。 次の例では、特定の項目を展開するかどうかの情報を取得する方法を示します。  
+5. 特定のリスト項目は実装することで拡張可能なかどうかに関する情報を取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>メソッド。 次の例では、特定の項目を展開するかどうかの情報を取得する方法を示します。  
   
     ```vb  
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer  
@@ -281,7 +281,7 @@ ms.locfileid: "58978023"
   
     ```  
   
-6.  実装することで特定のリスト項目のシンボルの子リストを取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>メソッド。 次の例は、子の指定した項目のシンボルの一覧を取得する方法を示します**呼び出す**または**呼び出し元**グラフ。  
+6. 実装することで特定のリスト項目のシンボルの子リストを取得、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>メソッド。 次の例は、子の指定した項目のシンボルの一覧を取得する方法を示します**呼び出す**または**呼び出し元**グラフ。  
   
     ```vb  
     ' Call graph list.  

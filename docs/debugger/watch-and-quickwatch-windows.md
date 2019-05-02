@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8045b5f52dc57838731c24d41534c05b7cd1094
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929320"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>ウォッチ ウィンドウと クイック ウォッチ変数なウォッチ
 
@@ -91,6 +91,19 @@ int main()
 ![ウォッチ式のエラー](../debugger/media/watchexpressionerror.png "式のエラーをご覧ください。")
 
 2 本の波線アイコンの円が表示される、**ウォッチ**ウィンドウ。 このアイコンは、デバッガーは、潜在的なスレッド間の依存関係のため、式を評価しないことを意味します。 他のスレッドを一時的に実行するアプリでコードを評価する必要がありますが、中断モードでは、アプリのすべてのスレッドが停止通常します。 他のスレッドを一時的に実行できるように持つことができます、アプリと、デバッガーの状態に予期しない影響がブレークポイントとそれらのスレッドの例外などのイベントを無視することができます。
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-watch-window"></a>[ウォッチ] ウィンドウで検索します。
+
+名前、値、および型の列に含まれるキーワードを検索することができます、**ウォッチ**ウィンドウの各ウィンドウの上部の検索バーを使用します。 ENTER キーまたは検索を実行する矢印のいずれかを選択します。 進行中の検索をキャンセルするには、検索バーに"x"アイコンを選択します。
+
+左と右矢印を使用して (Shift + F3 および F3、それぞれ) 間を移動する一致が見つかりました。
+
+![[ウォッチ] ウィンドウで検索](../debugger/media/ee-search-watch.png "ウォッチ ウィンドウでの検索")
+
+検索をより小さいか完全に利用できるように、**検索深い**の上部にあるドロップダウン リスト、**ウォッチ**ウィンドウに検索するレベルの深さを選択するには、オブジェクトが入れ子になった。 
+
+::: moniker-end
 
 ### <a name="bkmk_refreshWatch"></a> ウォッチ値を更新します。
 

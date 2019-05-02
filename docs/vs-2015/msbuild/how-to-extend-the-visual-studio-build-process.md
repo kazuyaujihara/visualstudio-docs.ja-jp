@@ -1,5 +1,5 @@
 ---
-title: '方法: ビルド処理を拡張 |Microsoft Docs'
+title: '方法: ビルド処理を拡張する | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,22 +14,21 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108601"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>方法 : Visual Studio ビルド処理を拡張する
+# <a name="how-to-extend-the-visual-studio-build-process"></a>方法: Visual Studio ビルド処理を拡張する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ビルド処理は、プロジェクト ファイルにインポートされる一連の [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .targets ファイルによって定義されます。 このインポートされるファイルの 1 つである Microsoft.Common.targets を拡張することで、ビルド処理の複数のポイントでカスタム タスクを実行できます。 このトピックでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ビルド処理を拡張するための 2 つの方法について説明します。
 
--   Microsoft.Common.targets で事前定義されている特定のターゲットをオーバーライドする。
+- Microsoft.Common.targets で事前定義されている特定のターゲットをオーバーライドする。
 
--   Microsoft.Common.targets で定義されている "DependsOn" プロパティをオーバーライドする。
+- Microsoft.Common.targets で定義されている "DependsOn" プロパティをオーバーライドする。
 
 ## <a name="overriding-predefined-targets"></a>事前定義されているターゲットをオーバーライドする
  Microsoft.Common.targets ファイルには、事前定義されている空のファイルが含まれています。この一連のファイルは、ビルド処理の一部の主要ターゲットの前後で呼び出されます。 たとえば、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] は、メインの `CoreBuild` ターゲットの前に `BeforeBuild` ターゲットを、`CoreBuild` ターゲットの後に `AfterBuild` ターゲットを呼び出します。 既定では、Microsoft.Common.targets の空のターゲットは何も行いませんが、その既定の動作をオーバーライドできます。その方法としては、Microsoft.Common.targets をインポートするプロジェクト ファイルでターゲットを定義します。 これを行うことで、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] タスクを利用し、ビルド処理をさらに細かく制御できます。
@@ -59,7 +58,7 @@ ms.locfileid: "54758666"
 |ターゲット名|説明|
 |-----------------|-----------------|
 |`BeforeCompile`、 `AfterCompile`|これらのターゲットのいずれかに挿入されているタスクは、コア コンパイル完了の前または後に実行されます。 ほとんどのカスタマイズはこれら 2 つのターゲットのいずれかで行われます。|
-|`BeforeBuild`、 `AfterBuild`|これらのターゲットのいずれかに挿入されているタスクは、ビルド内の他のすべての前または後に実行されます。 **注:**  `BeforeBuild` ターゲットと `AfterBuild` ターゲットは、ほとんどのプロジェクト ファイルの終わりにあるコメントで既に定義されています。 これにより、ビルド前イベントとビルド後イベントをプロジェクト ファイルに簡単に追加できます。|
+|`BeforeBuild`、 `AfterBuild`|これらのターゲットのいずれかに挿入されているタスクは、ビルド内の他のすべての前または後に実行されます。 **注:**`BeforeBuild` ターゲットと `AfterBuild` ターゲットは、ほとんどのプロジェクト ファイルの終わりにあるコメントで既に定義されています。 これにより、ビルド前イベントとビルド後イベントをプロジェクト ファイルに簡単に追加できます。|
 |`BeforeRebuild`、 `AfterRebuild`|これらのターゲットのいずれかに挿入されているタスクは、コア再ビルド機能の呼び出しの前または後に実行されます。 Microsoft.Common.targets のターゲット実行順序は `BeforeRebuild`、`Clean`、`Build`、`AfterRebuild` です。|
 |`BeforeClean`、 `AfterClean`|これらのターゲットのいずれかに挿入されているタスクは、コア クリーン機能の呼び出しの前または後に実行されます。|
 |`BeforePublish`、 `AfterPublish`|これらのターゲットのいずれかに挿入されているタスクは、コア公開機能の呼び出しの前または後に実行されます。|
@@ -110,13 +109,13 @@ ms.locfileid: "54758666"
 
 #### <a name="to-override-a-dependson-property"></a>"DependsOn" プロパティをオーバーライドするには
 
-1.  オーバーライドする Microsoft.Common.targets で事前定義済み "DependsOn" プロパティを見つけます。 下の表をご覧ください。一般的にオーバーライドされる "DependsOn" プロパティの一覧です。
+1. オーバーライドする Microsoft.Common.targets で事前定義済み "DependsOn" プロパティを見つけます。 下の表をご覧ください。一般的にオーバーライドされる "DependsOn" プロパティの一覧です。
 
-2.  プロパティ ファイルの終わりにプロパティの別のインスタンスを定義します。 新しいプロパティに元のプロパティ (たとえば、`$(BuildDependsOn)`) を含めます。
+2. プロパティ ファイルの終わりにプロパティの別のインスタンスを定義します。 新しいプロパティに元のプロパティ (たとえば、`$(BuildDependsOn)`) を含めます。
 
-3.  プロパティ定義の前または後にカスタム ターゲットを定義します。
+3. プロパティ定義の前または後にカスタム ターゲットを定義します。
 
-4.  プロジェクト ファイルをビルドします。
+4. プロジェクト ファイルをビルドします。
 
 ### <a name="commonly-overridden-dependson-properties"></a>一般的にオーバーライドされる "DependsOn" プロパティ
 
@@ -127,4 +126,4 @@ ms.locfileid: "54758666"
 |`CompileDependsOn`|コンパイル手順の前または後にカスタム プロセスを挿入する場合にオーバーライドするプロパティ。|
 
 ## <a name="see-also"></a>関連項目
- [Visual Studio の統合](../msbuild/visual-studio-integration-msbuild.md) [MSBuild の概念](../msbuild/msbuild-concepts.md)[します。ターゲット ファイル](../msbuild/msbuild-dot-targets-files.md)
+ [Visual Studio の統合](../msbuild/visual-studio-integration-msbuild.md) [MSBuild の概念](../msbuild/msbuild-concepts.md) [.targets ファイル](../msbuild/msbuild-dot-targets-files.md)

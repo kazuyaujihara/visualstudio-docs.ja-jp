@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9de8ea0a42d80adca560655c5f70c5dba84e015d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 77fc67d50d448ef58714f4c6a8a137c86d7f9d66
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864225"
 ---
 # <a name="drop-down-bar"></a>ドロップダウン バー
 ドロップダウン バーは、コード ウィンドウの上部にあるは提供され、2 つのドロップダウン リストが含まれています。
@@ -27,19 +27,19 @@ ms.locfileid: "56700043"
 
  ドロップダウン バーを実装する場合は、プライマリの重要度の 4 つのインターフェイスがあります。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient>
 
      ドロップダウン バーのコンテンツを挿入するには、このインターフェイスを実装します。 ドロップダウン リストの組み合わせは、プレーン テキストまたは手の込んだテキストに含めることができます (太字、下線、または斜体) ウィンドウのテキストのフォント色または色分け、グレーのフォントを持つことができます、および、必要に応じて、ドロップダウン リストの項目の横にある小さいビットマップを指定できます。 ような<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>インターフェイス、イメージ リストで、ビットマップ イメージが提供されます。 ドロップダウン リストの組み合わせごとに、別のイメージ リストを持つことができます。ただし、各イメージの一覧には、同じ高さのイメージを含める必要があります。 さらを使用して、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient.GetComboTipText%2A>メソッドの組み合わせごとにツールヒントを提供できます。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>
 
      このインターフェイスを作成するか、コード ウィンドウのドロップダウン バーの破棄を呼び出します。 このインターフェイスが呼び出すことによって、コード ウィンドウにドロップダウン バーを既にアタッチかどうかを判断することもでき、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A>メソッド。 呼び出す<xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A>の<xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>から<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>します。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>
 
      ドロップダウン バーと直接通信するには、このインターフェイスを呼び出します。 このインターフェイスを使用するには、ドロップダウン リストの更新を強制するコンテンツ バーまたはリスト ボックスのいずれかで選択を変更します。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>
 
      登録している場合、`ShowDropdownBarOption`言語サービスのレジストリ キーにし、コード ウィンドウ マネージャー監視する必要がありますドロップダウン バーを表示するかどうかに関するユーザー設定と同期するには、このイベント。 ドロップダウン バーを非表示オプションが無効になっている場合、言語サービス キーでこのオプションを登録しないでください、**オプション**メニュー。
 

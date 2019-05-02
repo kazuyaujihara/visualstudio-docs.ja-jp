@@ -9,21 +9,20 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0181609f083aada564edb585f64ccdaaf104ed15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: edf638420ac41d6ad6f7ebf5e20ab5d78d1c7b3d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435363"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>[その他] ([オプション] ダイアログ ボックス - [テキスト エディター] - [XML])
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このダイアログ ボックスでは、XML エディターのオートコンプリートとスキーマの設定を変更することができます。 アクセスできる、**オプション** ダイアログ ボックスから、**ツール**メニュー。  
   
 > [!NOTE]
->  選択すると、これらの設定は使用可能な**テキスト エディター**フォルダー、 **XML**フォルダーをクリックし、 **その他**オプションを**のオプション**  ダイアログ ボックス。  
+> 選択すると、これらの設定は使用可能な**テキスト エディター**フォルダー、 **XML**フォルダーをクリックし、 **その他**オプションを**のオプション**  ダイアログ ボックス。  
   
 ## <a name="auto-insert"></a>自動挿入  
  **終了タグ**  

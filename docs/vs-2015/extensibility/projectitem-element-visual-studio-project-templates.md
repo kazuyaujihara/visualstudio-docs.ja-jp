@@ -1,14 +1,9 @@
 ---
 title: ProjectItem 要素 (Visual Studio プロジェクト テンプレート) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bca26cba66169758aa882535c07846cfa451d172
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84fb371460bc697660e176ca9df4c984d2b234bf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438371"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 要素 (Visual Studio プロジェクト テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,12 +26,12 @@ ms.locfileid: "51737073"
 プロジェクト テンプレートに含まれているファイルを指定します。  
   
 > [!NOTE]
->  `ProjectItem`要素には、プロジェクトまたは項目テンプレートは、かどうかに応じてさまざまな属性が使用できます。 このトピックで説明します、`ProjectItem`プロジェクト テンプレートの要素。 詳細については、`ProjectItem`項目テンプレートの要素を参照してください[ProjectItem 要素 (Visual Studio 項目テンプレート)](../extensibility/projectitem-element-visual-studio-item-templates.md)します。  
+> `ProjectItem`要素には、プロジェクトまたは項目テンプレートは、かどうかに応じてさまざまな属性が使用できます。 このトピックで説明します、`ProjectItem`プロジェクト テンプレートの要素。 詳細については、`ProjectItem`項目テンプレートの要素を参照してください[ProjectItem 要素 (Visual Studio 項目テンプレート)](../extensibility/projectitem-element-visual-studio-item-templates.md)します。  
   
  \<VSTemplate>  
  \<TemplateContent >  
  \<Project>  
- \<ProjectItem >  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>構文  
   
@@ -95,27 +90,27 @@ ms.locfileid: "51737073"
   
 ### <a name="to-rename-files-with-parameters"></a>パラメーターを持つファイルの名前を変更するには  
   
-1.  .Vstemplate ファイルでは、次の XML を使用します。  
+1. .Vstemplate ファイルでは、次の XML を使用します。  
   
     ```  
     <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
     ```  
   
-2.  プロジェクト ファイルを開きます (の .vbproj、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]プロジェクト) をテキスト エディターでまたは[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
+2. プロジェクト ファイルを開きます (の .vbproj、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]プロジェクト) をテキスト エディターでまたは[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
   
-3.  次の xml のようなプロジェクト ファイル内の行を見つけます。  
+3. 次の xml のようなプロジェクト ファイル内の行を見つけます。  
   
     ```  
     <Compile Include="MyFile.vb">  
     ```  
   
-4.  コード行を次の XML に置き換えます。  
+4. コード行を次の XML に置き換えます。  
   
     ```  
     <Compile Include="$safeprojectname$.vb">  
     ```  
   
-     ファイル名はで、ユーザーが入力した名前に基づいて、このテンプレートからプロジェクトが作成されると、**新しいプロジェクト** ダイアログ ボックスのすべての安全でない文字とスペースを削除します。 詳細については、[テンプレート パラメーター](../ide/template-parameters.md)を参照してください。  
+     ファイル名はで、ユーザーが入力した名前に基づいて、このテンプレートからプロジェクトが作成されると、**新しいプロジェクト** ダイアログ ボックスのすべての安全でない文字とスペースを削除します。 詳細については、次を参照してください。[テンプレート パラメーター](../ide/template-parameters.md)します。  
   
 ## <a name="example"></a>例  
  [!INCLUDE[csprcs](../includes/csprcs-md.md)] アプリケーションでのプロジェクト テンプレートのメタデータの例を次に示します。  
@@ -149,4 +144,3 @@ ms.locfileid: "51737073"
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [テンプレート パラメーター](../ide/template-parameters.md)   
  [ProjectItem 要素 (Visual Studio 項目テンプレート)](../extensibility/projectitem-element-visual-studio-item-templates.md)
-

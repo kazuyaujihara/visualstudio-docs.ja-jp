@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a668e64f6b8a10cf22e08575ca9c2df385131666
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d42087b023718cd31528a2e5d60e2a43e34097c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792219"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>[ビルドの詳細設定] ダイアログ ボックス (C#)
 
@@ -55,7 +55,7 @@ ms.locfileid: "55930463"
 
 <xref:System> 名前空間全体を定義して、mscorlib.dll をプログラムにインポートするかどうかを指定します。 独自の <xref:System> 名前空間およびオブジェクトを定義または作成する場合は、このチェック ボックスをオンにします。 詳しくは、「[/nostdlib (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)」をご覧ください。
 
-## <a name="output"></a>出力
+## <a name="output"></a>Output
 
 次のオプションを使用すると、詳細な出力オプションを指定できます。
 
@@ -75,7 +75,7 @@ ms.locfileid: "55930463"
 
    プログラムがデバッガーで開始されたとき、ソース コードのデバッグが有効になりますが、実行中のプログラムがデバッガーにアタッチされているときにのみアセンブラーが表示されます。
 
--  **ポータブル**
+- **ポータブル**
 
    プラットフォーム固有ではない、移植可能なシンボル ファイルである .PDB ファイルを生成します。このファイルは、他のツール、特にデバッガーに、主要な実行可能ファイルの内容やそれが作られた経緯に関する情報を提供します。 詳細については、「[ポータブル PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md)」を参照してください。
 

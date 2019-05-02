@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f56121354e9c6e508ab591d306f7e210f6963694
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 181bcf665ce905bff20f98be19d4a789cfe530c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431565"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>方法: 実行中のプロセスに対するパフォーマンス ツールのアタッチとデタッチ
 実行中のプロセスに対してプロファイラーのアタッチまたはデタッチを行うことで、パフォーマンス データのサンプリングや収集を容易にすることができます。 この方法は、アプリケーションの読み込み時間に関するデータの収集を行わない場合や、プロセスが特定の状態に達した後にそのパフォーマンスを監視する場合に、プロセスのプロファイリングを行うために使用します。
 
 > [!NOTE]
->  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 統合開発環境 (IDE) の内部からプロセスのアタッチおよびデタッチを実行する手順を次に示します。 コマンド ライン ツールの使用方法の詳細については、[コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)に関する記事を参照してください。 サービスのプロファイリングの詳細については、[サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)に関する記事を参照してください。
+> [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 統合開発環境 (IDE) の内部からプロセスのアタッチおよびデタッチを実行する手順を次に示します。 コマンド ライン ツールの使用方法の詳細については、[コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)に関する記事を参照してください。 サービスのプロファイリングの詳細については、[サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)に関する記事を参照してください。
 
  プロファイルに使用できるプロセスは、コンピューターの管理者によって設定されたユーザーのアクセス許可によって異なります。 たとえば、ユーザー アカウントには、次のようなアクセス許可が設定されていることがあります。
 
@@ -42,23 +42,23 @@ ms.locfileid: "56603585"
 
 ### <a name="to-attach-to-a-running-process"></a>実行中のプロセスにアタッチするには
 
-1.  **[デバッグ]** メニューで、**[プロファイラー]**、**[パフォーマンス エクスプローラー]** の順にポイントし、**[アタッチ]** をクリックします。
+1. **[デバッグ]** メニューで、**[プロファイラー]**、**[パフォーマンス エクスプローラー]** の順にポイントし、**[アタッチ]** をクリックします。
 
      **[プロファイラーをプロセスにアタッチします]** ダイアログ ボックスが表示されます。
 
-2.  アタッチするプロセスの名前をクリックします。
+2. アタッチするプロセスの名前をクリックします。
 
-3.  **[アタッチ]** をクリックします。
+3. **[アタッチ]** をクリックします。
 
 ### <a name="to-detach-from-a-running-process"></a>実行中のプロセスからデタッチするには
 
-1.  **[デバッグ]** メニューで、**[プロファイラー]**、**[パフォーマンス エクスプローラー]** の順にポイントし、**[デタッチ]** をクリックします。
+1. **[デバッグ]** メニューで、**[プロファイラー]**、**[パフォーマンス エクスプローラー]** の順にポイントし、**[デタッチ]** をクリックします。
 
      **[プロファイラーをプロセスにアタッチします]** ダイアログ ボックスが表示されます。
 
-2.  デタッチするイメージの名前をクリックします。
+2. デタッチするイメージの名前をクリックします。
 
-3.  **[デタッチ]** をクリックします。
+3. **[デタッチ]** をクリックします。
 
 ## <a name="see-also"></a>関連項目
 - [データ収集の制御](../profiling/controlling-data-collection.md)

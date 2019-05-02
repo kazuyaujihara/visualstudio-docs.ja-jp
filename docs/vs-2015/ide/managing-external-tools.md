@@ -1,5 +1,5 @@
 ﻿---
-title: 外部ツールの管理 |Microsoft Docs
+title: 外部ツールの管理 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -57,52 +57,52 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445423"
 ---
 # <a name="managing-external-tools"></a>Visual Studio の外部ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio から、外部ツールを呼び出すことができます。 いくつかの既定ツールは **[ツール]** メニューで使用できますが、他の実行可能ファイルを独自に追加することもできます。  
   
-## <a name="tools-available-on-the-visual-studio-tools-menu"></a>[Visual Studio Tools] メニューで使用できるツール  
+## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Visual Studio の [ツール] メニューで使用できるツール  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の **[ツール]** メニューでは、次のツールを呼び出すことができます。 これらは、名前を指定して **[クイック起動]** ウィンドウから呼び出すこともできます。 たとえば、GuidGen.exe を呼び出すには、「**GUID の作成**」と入力します。  
   
-1.  GUID の作成: GUID を生成します。  
+1. GUID の作成: GUID を生成します。  
   
-2.  エラー検索: 入力された値からエラー メッセージを取得します。 詳細については、「[ERRLOOK リファレンス](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91)」を参照してください。  
+2. エラー検索: 入力された値からエラー メッセージを取得します。 詳細については、「[ERRLOOK リファレンス](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91)」を参照してください。  
   
-3.  ATL/MFC トレース ツール: ATL および ATL のソースに含まれているデバッグ トレース メッセージを表示します。  
+3. ATL/MFC トレース ツール: ATL および ATL のソースに含まれているデバッグ トレース メッセージを表示します。  
   
-4.  PreEmptive Dotfuscator および Analytics:リバース エンジニア リングに対して .NET プログラムを保護します。  
+4. PreEmptive Protection - Dotfuscator:リバース エンジニア リングに対して .NET プログラムを保護します。  
   
-5.  SPY++プロセス、スレッド、windows、およびウィンドウ メッセージをグラフィカルに表示します。  
+5. SPY++:プロセス、スレッド、windows、およびウィンドウ メッセージをグラフィカルに表示します。  
   
-6.  WCF サービス構成エディター(&W)作成および WCF サービスの構成設定を変更することができます。  
+6. WCF サービス構成エディター:作成および WCF サービスの構成設定を変更することができます。  
   
 > [!WARNING]
->  表示される外部ツールの一覧は、インストールされている Visual Studio のエディションおよび適用されている設定プロファイルによって異なります。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 表示される外部ツールの一覧は、インストールされている Visual Studio のエディションおよび適用されている設定プロファイルによって異なります。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="adding-new-tools"></a>新しいツールの追加  
  **[ツール]** メニューに外部ツールを追加することができます。 **[外部ツール]** ダイアログ ボックスを開き、**[追加]** をクリックして、情報を入力します。 たとえば、次のエントリを指定すると、Visual Studio で現在開いているファイルのディレクトリでエクスプローラーが開きます。  
   
-1.  タイトル: 開いているファイルの場所  
+1. タイトル:開いているファイルの場所  
   
-2.  コマンド: explorer.exe  
+2. コマンド: explorer.exe  
   
-3.  引数: /root、"$(ItemDir)"  
+3. 引数: /root、"$(ItemDir)"  
   
 ## <a name="arguments-for-external-tools"></a>外部ツールの引数  
  次の引数は、外部ツールを起動するときに割り当てられる、Visual Studio の変数です。 [外部ツール] ダイアログ ボックスを使用して、メモ帳や Spy++ などの外部ツールへのリンクを **[ツール]** メニューでリストできます。  
   
 > [!NOTE]
->  IDE のステータス バーに、アクティブなコード エディターの挿入位置を示す、Current Line 変数および Current Column 変数が表示されます。 Current Text 変数は、その場所で選択されているテキストまたはコードを返します。  
+> IDE のステータス バーに、アクティブなコード エディターの挿入位置を示す、Current Line 変数および Current Column 変数が表示されます。 Current Text 変数は、その場所で選択されているテキストまたはコードを返します。  
   
-|name|引数|説明|  
+|名前|引数|説明|  
 |----------|--------------|-----------------|  
 |項目のパス|$(ItemPath)|現在のファイルの完全なファイル名 (ドライブ + パス + ファイル名)。|  
 |項目のディレクトリ|$(ItemDir)|現在のファイルのディレクトリ (ドライブ + パス)。|  

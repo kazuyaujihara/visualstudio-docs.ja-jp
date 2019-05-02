@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 585a3d4940d11508dbe6d8874cb401cfe380a690
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 247d7c5a204418fdddf41e906a12ef2ef1fb232f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62577773"
 ---
 # <a name="vbc-task"></a>Vbc タスク
 実行可能ファイル (*.exe*)、ダイナミック リンク ライブラリ (*.dll*)、またはコード モジュール (*.netmodule*) を生成する *vbc.exe* をラップします。 *vbc.exe* の詳細については、「[Visual Basic のコマンド ライン コンパイラ](/dotnet/visual-basic/reference/command-line-compiler/index)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
  `Vbc` タスクのパラメーターの説明を次の表に示します。
-
 
 | パラメーター | 説明 |
 |------------------------------| - |

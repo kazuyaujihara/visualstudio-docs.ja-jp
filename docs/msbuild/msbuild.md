@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce0e95a72c6c2400f5ac245f3ac4741423194c68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ae010fac8978b0669021bc6645449f57da754d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437857"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] は、アプリケーションをビルドするためのプラットフォームです。 MSBuild とも呼ばれるこのエンジンには、ビルド プラットフォームでソフトウェアを処理およびビルドする方法を制御する、プロジェクト ファイル用の XML スキーマが用意されています。 Visual Studio は MSBuild を使用しますが、MSBuild は Visual Studio に依存しません。 プロジェクト ファイルまたはソリューション ファイルに対して *msbuild.exe* を実行すると、Visual Studio がインストールされていない環境で、製品の統合とビルドを実行できます。
@@ -27,30 +27,30 @@ ms.locfileid: "56618238"
 
  次の例では、Visual Studio IDE の代わりに、MSBuild コマンド ラインでビルドを実行する状況について説明します。
 
--   Visual Studio 2013 がインストールされていません。 ([Visual Studio なしの MSBuild をダウンロードする](https://visualstudio.microsoft.com/downloads/?q=build+tools))
+- Visual Studio 2013 がインストールされていません。 ([Visual Studio なしの MSBuild をダウンロードする](https://visualstudio.microsoft.com/downloads/?q=build+tools))
 
--   MSBuild の 64 ビット バージョンを使用することを希望しています。 通常は MSBuild のこのバージョンは不要ですが、このバージョンを使用すると、MSBuild はより多くのメモリにアクセスできます。
+- MSBuild の 64 ビット バージョンを使用することを希望しています。 通常は MSBuild のこのバージョンは不要ですが、このバージョンを使用すると、MSBuild はより多くのメモリにアクセスできます。
 
--   複数のプロセスでビルドを実行することを希望しています。 ただし、C++ および C# で記述したプロジェクトに関しては、同じ結果を達成するために IDE を使用することもできます。
+- 複数のプロセスでビルドを実行することを希望しています。 ただし、C++ および C# で記述したプロジェクトに関しては、同じ結果を達成するために IDE を使用することもできます。
 
--   ビルド システムを変更することを希望しています。 たとえば、次の操作を有効にすることを希望する場合があります。
+- ビルド システムを変更することを希望しています。 たとえば、次の操作を有効にすることを希望する場合があります。
 
-    -   コンパイラに渡す前に、ファイルを前処理します。
+    - コンパイラに渡す前に、ファイルを前処理します。
 
-    -   ビルド出力を別の場所にコピーします。
+    - ビルド出力を別の場所にコピーします。
 
-    -   ビルド出力から圧縮ファイルを作成します。
+    - ビルド出力から圧縮ファイルを作成します。
 
-    -   後処理手順を実行します。 たとえば、1 つのアセンブリに対して、異なる複数のバージョンをスタンプとして割り当てることがあります。
+    - 後処理手順を実行します。 たとえば、1 つのアセンブリに対して、異なる複数のバージョンをスタンプとして割り当てることがあります。
 
 Visual Studio IDE でコードを作成し、MSBuild を使用してビルドを実行することもできます。 別の方法として、開発用コンピューターの IDE でコードをビルドすることもできますが、単一の MSBuild コマンド ラインを使用して、複数の開発者から取得して統合したコードをビルドすることもできます。
 
 > [!NOTE]
->  Team Foundation ビルドを使用して、アプリケーションのコンパイル、テスト、および配置を自動的に実行することもできます。 開発者がコードをチェックインしたとき (たとえば、継続的インテグレーションの手法の一環として)、またはスケジュールに従って (たとえば、夜間のビルド確認テストの一部として)、ビルド システムがビルドを自動的に実行ですることもできます。 Team Foundation ビルドは、MSBuild を使用してコードをコンパイルします。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)」を参照してください。
+> Team Foundation ビルドを使用して、アプリケーションのコンパイル、テスト、および配置を自動的に実行することもできます。 開発者がコードをチェックインしたとき (たとえば、継続的インテグレーションの手法の一環として)、またはスケジュールに従って (たとえば、夜間のビルド確認テストの一部として)、ビルド システムがビルドを自動的に実行ですることもできます。 Team Foundation ビルドは、MSBuild を使用してコードをコンパイルします。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)」を参照してください。
 
  ここでは、MSBuild の概要について説明します。 入門チュートリアルについては、[チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)に関するページを参照してください。
 
-##  <a name="use-msbuild-at-a-command-prompt"></a>コマンド プロンプトでの MSBuild の使用
+## <a name="use-msbuild-at-a-command-prompt"></a>コマンド プロンプトでの MSBuild の使用
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] をコマンド プロンプトで実行するには、*MSBuild.exe* にプロジェクト ファイルを渡し、適切なコマンド ライン オプションを指定して実行します。 コマンド ライン オプションでは、プロパティを設定したり、特定のターゲットを実行したりできるほか、ビルド処理を制御するその他のオプションも設定できます。 たとえば、`Configuration` プロパティを `Debug` に設定して *MyProj.proj* ファイルをビルドするには、次のコマンド ライン構文を使用します。
 
 ```cmd
@@ -60,14 +60,14 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] のコマンド ライン オプションの詳細については、「[コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)」をご覧ください。
 
 > [!IMPORTANT]
->  プロジェクトをダウンロードする前に、コードが信頼できるものかどうかを確認してください。
+> プロジェクトをダウンロードする前に、コードが信頼できるものかどうかを確認してください。
 
-##  <a name="project-file"></a>プロジェクト ファイル
+## <a name="project-file"></a>プロジェクト ファイル
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、簡単で拡張性がある XML ベースのプロジェクト ファイル形式が採用されています。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] のプロジェクト ファイル形式では、ビルドする項目のほか、それらを異なるオペレーティング システムや構成用にビルドする方法を開発者が指定できます。 また、異なるファイルに適用できるビルド規則を記述しておき、製品を構成するさまざまなプロジェクトで再利用することにより、一貫したビルド作業を行うことができます。
 
  以下のセクションでは [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイル形式のいくつかの基本要素について説明します。 基本的なプロジェクト ファイルを作成する方法のチュートリアルについては、[チュートリアル:MSBuild プロジェクト ファイルのゼロからの作成](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)に関するページを参照してください。
 
-###  <a name="BKMK_Properties"></a> プロパティ
+### <a name="BKMK_Properties"></a> プロパティ
  プロパティはビルドを設定するためのキーと値のペアです。 プロパティを宣言するには、そのプロパティの名前を持つ要素を [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) 要素の子として作成します。 たとえば、次の コードでは、`BuildDir` という名前のプロパティを作成し、`Build` を値として設定しています。
 
 ```xml
@@ -86,7 +86,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  プロパティの詳細については、「[MSBuild プロパティ](../msbuild/msbuild-properties.md)」をご覧ください。
 
-###  <a name="BKMK_Items"></a> 項目
+### <a name="BKMK_Items"></a> 項目
  項目はビルド システムへの入力であり、通常はファイルを表します。 項目はユーザー定義の項目名に基づいて項目の種類にグループ化されます。 これらの項目の種類は、タスクのパラメーターとして使用できます。タスクでは、個々の項目を使用してビルド処理の各ステップを実行します。
 
  項目は、その項目の種類名を名前に持つ要素を、[ItemGroup](../msbuild/itemgroup-element-msbuild.md) 要素の子として作成することにより、プロジェクト ファイルで宣言します。 たとえば、次のコードでは、`Compile` という名前の項目の種類を作成し、2 つのファイルを含めています。
@@ -111,7 +111,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  項目はワイルドカード文字を使って宣言できるほか、メタデータを追加することで、より高度なビルド作業を行うことができます。 項目の詳細については、「[項目](../msbuild/msbuild-items.md)」をご覧ください。
 
-###  <a name="BKMK_Tasks"></a> タスク
+### <a name="BKMK_Tasks"></a> タスク
  タスクとは、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトでビルド処理を実行するために使用される一連の実行可能コードです。 たとえば、タスクでは入力ファイルをコンパイルしたり、外部ツールを実行したりします。 タスクは再利用が可能で、複数の開発者が複数のプロジェクトで共有できます。
 
  タスクの実行ロジックはマネージド コードで記述され、[UsingTask](../msbuild/usingtask-element-msbuild.md) 要素を使用して [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] にマップされます。 <xref:Microsoft.Build.Framework.ITask> インターフェイスを実装するマネージド型を記述することにより、独自のタスクを作成できます。 タスクを記述する方法の詳細については、「[タスクの作成](../msbuild/task-writing.md)」をご覧ください。
@@ -128,7 +128,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  タスクの詳細については、「[MSBuild タスク](../msbuild/msbuild-tasks.md)」をご覧ください。
 
-###  <a name="BKMK_Targets"></a> ターゲット
+### <a name="BKMK_Targets"></a> ターゲット
  ターゲットは、タスクを特定の順序でグループ化し、プロジェクト ファイルの各セクションを、ビルド プロセスのエントリ ポイントとして公開する役割を果たします。 読みやすさや拡張性を高める目的で、複数のターゲットを論理的なセクションとしてグループ化することもできます。 ビルド ステップを複数のターゲットに分割することにより、他のターゲットから、一部のビルド処理だけを呼び出すことができ、そのコード セクションをすべてのターゲットに逐一コピーする手間をなくすことができます。 たとえば、ビルド処理の複数のエントリ ポイントで、参照をビルドする必要がある場合、参照をビルドするターゲットを作成しておけば、必要なすべてのエントリ ポイントからそのターゲットを実行できます。
 
  ターゲットは、プロジェクト ファイル内で、[Target](../msbuild/target-element-msbuild.md) 要素を使用して宣言します。 たとえば、次のコードでは、先ほどの例で宣言した項目のリストをパラメーターに指定して [Csc](../msbuild/csc-task.md) タスクを呼び出す、`Compile` という名前のターゲットを作成しています。
@@ -141,7 +141,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  ターゲットを使用して相互の関係を定義し、依存関係の分析を実行するなど、より高度なシナリオにも対応しています。これにより、ターゲットが最新のものである場合に、ビルド処理からセクション全体をスキップするようなことが可能となります。 ターゲットの詳細については、「[MSBuild ターゲット](../msbuild/msbuild-targets.md)」をご覧ください。
 
-##  <a name="build-logs"></a>ビルド ログ
+## <a name="build-logs"></a>ビルド ログ
  コンソールまたは別の出力デバイスにビルド エラー、警告、およびメッセージを記録できます。 詳細については、「[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)」と「[MSBuild でのログ](../msbuild/logging-in-msbuild.md)」をご覧ください。
 
 ## <a name="use-msbuild-in-visual-studio"></a>Visual Studio で MSBuild を使用する
@@ -149,20 +149,20 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Visual Studio で MSBuild を使用する方法のチュートリアルについては、[チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)に関するページを参照してください。
 
-##  <a name="BKMK_Multitargeting"></a> マルチ ターゲット
+## <a name="BKMK_Multitargeting"></a> マルチ ターゲット
  Visual Studio を使用すると、いくつかのバージョンの .NET Framework のうち、任意のバージョンで動作するようにアプリケーションをコンパイルできます。 たとえば、あるアプリケーションを 32 ビット プラットフォーム上の .NET Framework 2.0 で動作するようにコンパイルしたり、これと同じアプリケーションを 64 ビット プラットフォーム上の .NET Framework 4.5 で動作するようにコンパイルしたりできます。 複数のフレームワークに対してコンパイルする機能をマルチ ターゲットといいます。
 
  マルチ ターゲットには、次のような利点があります。
 
--   バージョン 2.0、3.0、3.5 などの以前のバージョンの .NET Framework を対象とするアプリケーションを開発できます。
+- バージョン 2.0、3.0、3.5 などの以前のバージョンの .NET Framework を対象とするアプリケーションを開発できます。
 
--   Silverlight など、.NET Framework 以外のフレームワークを対象にできます。
+- Silverlight など、.NET Framework 以外のフレームワークを対象にできます。
 
--   ターゲット フレームワークの定義済みのサブセットである*フレームワーク プロファイル*を対象にできます。
+- ターゲット フレームワークの定義済みのサブセットである*フレームワーク プロファイル*を対象にできます。
 
--   現在のバージョンの .NET Framework 用サービス パックがリリースされた場合、そのバージョンを対象にできます。
+- 現在のバージョンの .NET Framework 用サービス パックがリリースされた場合、そのバージョンを対象にできます。
 
--   複数バージョン対応により、アプリケーションが、対象となるフレームワークやプラットフォームのみで利用できる機能を使うことができます。
+- 複数バージョン対応により、アプリケーションが、対象となるフレームワークやプラットフォームのみで利用できる機能を使うことができます。
 
 詳細については、[MSBuild のマルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)に関する記事をご覧ください。
 

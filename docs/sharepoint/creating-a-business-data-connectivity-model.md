@@ -15,21 +15,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4873085a4e4508b40b866eee79e79f624f3c01d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443561"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>ビジネス データ接続モデルを作成します。
-  ビジネス データ接続 (BDC) モデルを作成したり、Visual Studio を使用して、既存の BDC モデルをカスタマイズすることができます。 各 SharePoint プロジェクトには、モデルの 1 つだけ含めることができます。 詳細については、[SharePoint ビジネス データを統合](../sharepoint/integrating-business-data-into-sharepoint.md)を参照してください。
+  ビジネス データ接続 (BDC) モデルを作成したり、Visual Studio を使用して、既存の BDC モデルをカスタマイズすることができます。 各 SharePoint プロジェクトには、モデルの 1 つだけ含めることができます。 詳細については、次を参照してください。 [SharePoint ビジネス データを統合](../sharepoint/integrating-business-data-into-sharepoint.md)します。
 
 ## <a name="create-a-new-model"></a>新しいモデルを作成します。
  新しいモデルを作成するには、作成、 **Business Data Connectivity モデル**プロジェクトまたは追加を**Business Data Connectivity モデル**項目を**空の SharePoint プロジェクト**します。
 
 > [!NOTE]
->  必要があります[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]コンピューターにインストールします。
+> 必要があります[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]コンピューターにインストールします。
 
  Visual Studio では、プロジェクトにフォルダーを追加します。 このフォルダーの指定した名前には、 **Business Data Connectivity モデル**内の項目、**新しい項目の追加** ダイアログ ボックス。 新規に作成する場合**Business Data Connectivity モデル**プロジェクト、Visual Studio という名前のフォルダー **BdcModel1**します。
 
@@ -42,12 +42,12 @@ ms.locfileid: "56605732"
 
  エンティティのプロパティを定義するには、エンティティのコード ファイルを編集します。 詳細については、「[方法 :エンティティ モデルを追加する](../sharepoint/how-to-add-an-entity-to-a-model.md)します。
 
- 取得、更新、およびエンティティのインスタンスを削除、エンティティ サービス コード ファイルにコードを追加します。 詳細については、[ビジネス データ接続モデルをデザイン](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
+ 取得、更新、およびエンティティのインスタンスを削除、エンティティ サービス コード ファイルにコードを追加します。 詳細については、次を参照してください。[ビジネス データ接続モデルをデザイン](../sharepoint/designing-a-business-data-connectivity-model.md)します。
 
  プロジェクトをコンパイルするときに、Visual Studio は、アセンブリを作成します。 プロジェクトのアセンブリにコードを追加するプロジェクトにその他の項目を追加しないことを確認します (例:**シーケンシャル ワークフロー**項目または**Web パーツ**項目)。 ソリューション パッケージがグローバル アセンブリ キャッシュにアセンブリをコピーしていないために、ソリューションをデプロイすると、そのアイテムのコードは実行されません。  ソリューション パッケージには、SharePoint で BDC データベースをのみに、アセンブリがデプロイされます。
 
 > [!NOTE]
->  Visual Studio では、プロジェクトをデバッグするときに、ローカル コンピューター上の両方の場所にアセンブリをコピーします。
+> Visual Studio では、プロジェクトをデバッグするときに、ローカル コンピューター上の両方の場所にアセンブリをコピーします。
 
 ## <a name="add-an-existing-model"></a>既存のモデルを追加します。
  SharePoint Designer などの他のツールを使用して作成されたモデルをインポートすることができます。 次の状況で、プロジェクトに既存のモデルをインポートすることができます。

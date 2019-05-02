@@ -1,5 +1,5 @@
 ---
-title: CA3006:プロセス コマンド インジェクションの脆弱性の確認コード
+title: CA3006:プロセス コマンド インジェクションの脆弱性のコード レビュー
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: da161e611ca1d802c8da16370907029233bfd785
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806512"
 ---
-# <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006:プロセス コマンド インジェクションの脆弱性の確認コード
+# <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006:プロセス コマンド インジェクションの脆弱性のコード レビュー
 
 |||
 |-|-|

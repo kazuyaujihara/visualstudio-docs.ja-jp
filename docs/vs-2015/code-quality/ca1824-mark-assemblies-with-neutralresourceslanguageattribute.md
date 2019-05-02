@@ -1,14 +1,9 @@
 ---
-title: ': Ca 1824 アセンブリを neutralresourceslanguageattribute に設定します |Microsoft Docs'
-ms.custom: ''
+title: CA1824:アセンブリを NeutralResourcesLanguageAttribute にマーク |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1824
 - MarkAssembliesWithNeutralResourcesLanguage
@@ -20,14 +15,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 13f635398ecab7c0bd9436a86a43a15d4908b163
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892598"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052169"
 ---
-# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: アセンブリを NeutralResourcesLanguageAttribute に設定します
+# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824:アセンブリを NeutralResourcesLanguageAttribute に設定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -50,16 +45,13 @@ ms.locfileid: "49892598"
 
 #### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>ニュートラル カルチャのリソースの言語を指定するには
 
-1.  **ソリューション エクスプ ローラー**、プロジェクトを右クリックし、クリックして**プロパティ**します。
+1. **ソリューション エクスプ ローラー**、プロジェクトを右クリックし、クリックして**プロパティ**します。
 
-2.  左側のナビゲーション バーから選択**アプリケーション**、 をクリックし、**アセンブリ情報**します。
+2. 左側のナビゲーション バーから選択**アプリケーション**、 をクリックし、**アセンブリ情報**します。
 
-3.  **アセンブリ情報** ダイアログ ボックスから言語を選択、**ニュートラル言語**ドロップダウン リスト。
+3. **アセンブリ情報** ダイアログ ボックスから言語を選択、**ニュートラル言語**ドロップダウン リスト。
 
-4.  **[OK]** をクリックします。
+4. **[OK]** をクリックします。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告を抑制することはできます。 ただし、起動時のパフォーマンスが低下する可能性があります。
-
-
-

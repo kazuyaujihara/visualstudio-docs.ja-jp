@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6821275f7511b48ac6472b468480e6248463b253
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6fb65b66bed790a306280a437a1722abea27848a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864204"
 ---
 # <a name="task-class---internal-members"></a>タスク クラスの内部メンバー
-この記事の内部メンバーを説明します、<xref:System.Threading.Tasks.Task?displayProperty=fullName>する際に役立つクラスがカスタムのデバッガーを実装します。 このクラスの詳細については、、<xref:System.Threading.Tasks.Task>参照資料を参照してください。
+この記事の内部メンバーを説明します、<xref:System.Threading.Tasks.Task?displayProperty=fullName>する際に役立つクラスがカスタムのデバッガーを実装します。 このクラスの詳細については、次を参照してください。、<xref:System.Threading.Tasks.Task>参照資料です。
 
  **名前空間:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
@@ -67,17 +67,17 @@ ms.locfileid: "56704879"
 ## <a name="remarks"></a>Remarks
  次の内部メソッドは、マークの入り口ので、デバッガー エンジンに便利です<xref:System.Threading.Tasks.Task>コードの実行。
 
--   `Execute`
+- `Execute`
 
--   `ExecuteEntry`
+- `ExecuteEntry`
 
--   `ExecuteWithThreadLocal`
+- `ExecuteWithThreadLocal`
 
--   `Finish`
+- `Finish`
 
--   `InnerInvoke`
+- `InnerInvoke`
 
--   `InternalWait`
+- `InternalWait`
 
 ## <a name="see-also"></a>関連項目
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>

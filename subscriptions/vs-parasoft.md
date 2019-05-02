@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Parasoft Virtualize/SOA Test Professional サブスクリプションをアクティブ化する方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 89b079f9f797db58eb0afc887a70cdc78c48d886
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947325"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Parasoft Virtualize/SOAtest Professional Desktop
 
 より早い段階でより多くのテストを行う必要があります。  入手不可能、または進化しているアプリケーションとシステムの動作をシミュレーションおよびテストします。  特典には、6 か月間の無料サブスクリプションが含まれます。  6 か月のサブスクリプションの終了時には、年間サブスクリプション料金の 25% 割り引きを受けることができます。
-
 
 ## <a name="activation-steps"></a>アクティブ化の手順
 
@@ -30,7 +29,6 @@ ms.locfileid: "56844114"
 3. Parasoft の Web サイトにリダイレクトされるので、アカウントを作成します。  連絡先情報を入力して、**[Submit]\(送信\)** をクリックするだけです。
    > [!div class="mx-imgBorder"]
    > ![Parasoft 特典アカウント作成](_img/vs-parasoft/vs-parasoft-account-cropped.png)
-
 
 4. アカウントを作成すると、ダウンロード方法が記載されたメールが送信されたことの通知が表示されます   (受信トレイにメールが表示されない場合は、スパムまたは迷惑メール フォルダーを確認してください)。
 
@@ -83,14 +81,12 @@ ms.locfileid: "56844114"
 
 <sup>1</sup>  *Microsoft Partner Network (Enterprise) が含まれます除外:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
 
-
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
 
-
 ## <a name="support-resources"></a>サポート リソース
--  Parasoft 製品のヘルプが必要ですか。  以下のリソースを確認してください。
+- Parasoft 製品のヘルプが必要ですか。  以下のリソースを確認してください。
     - テクニカル サポート: https://www.parasoft.com/support/
     - Parasoft リソース センター: https://www.parasoft.com/resources/
--  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
--  Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

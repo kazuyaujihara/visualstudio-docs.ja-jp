@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21fafd202fd89666cedb1132d9647f2f1d95f4b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852268"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio で [レジスタ] ウィンドウの概要 (C#、C++、Visual Basic、 F#)
 
@@ -47,7 +47,23 @@ ms.locfileid: "56685054"
  **[レジスタ]** ウィンドウでは、レジスタの内容を表示するだけでなく、他の操作も実行できます。 ネイティブ コードで中断モードのときは、レジスタの内容をクリックして値を編集できます。 ただし、むやみに値を編集しないでください。 編集するレジスタと格納するデータについて理解していないと、不正確な編集によってプログラムがクラッシュしたり、その他の予想外の結果が生じたりする可能性があります。 さまざまな Intel プロセッサと Intel 互換プロセッサのレジスタ セットの詳細は、ここでの簡単な概要説明で扱える内容ではありません。
 
 ## <a name="register-groups"></a>レジスタ グループ
- **[レジスタ]** ウィンドウでは、見やすいようにレジスタがグループ別に表示されます。 **[レジスタ]** ウィンドウを右クリックすると、ショートカット メニューがグループの一覧と共に表示され、必要に応じて表示と非表示を切り替えることができます。
+
+**[レジスタ]** ウィンドウでは、見やすいようにレジスタがグループ別に表示されます。 **[レジスタ]** ウィンドウを右クリックすると、ショートカット メニューがグループの一覧と共に表示され、必要に応じて表示と非表示を切り替えることができます。
+
+## <a name="register-flags"></a>フラグを登録します。
+
+Intel x86 プロセッサ用に次のフラグが生じる、**登録**ウィンドウ。 デバッグ セッションは、これらのフラグを編集することもできます。
+
+|フラグ|値の設定|
+|-|-|
+|オーバーフロー|OV = 1|
+|Direction|1 =|
+|割り込み|EI = 1|
+|Sign|PL = 1|
+|0|ZR = 1|
+|補助キャリー|AC = 1|
+|パリティ|PE = 1|
+|実行|CY = 1|
 
 ## <a name="see-also"></a>関連項目
 - [方法: [レジスタ] ウィンドウを使用する](../debugger/how-to-use-the-registers-window.md)

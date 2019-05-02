@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3fca78c684ac30ca09aedf3c1b9547103608a4f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436811"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>実行中のプロセスへのアタッチ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,12 +46,12 @@ ms.locfileid: "58976172"
 > [!TIP]
 > わからない場合は、かどうかを使用する必要が**プロセスにアタッチ**デバッグ シナリオのでしょうか。 参照してください[デバッグ シナリオ共通](#BKMK_Scenarios)します。 IIS に配置されている、参照される ASP.NET アプリケーションをデバッグする場合[リモート IIS コンピューター上の Remote Debugging ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)します。
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> ローカル コンピューターで実行中のプロセスにアタッチします。
+## <a name="BKMK_Attach_to_a_running_process"></a> ローカル コンピューターで実行中のプロセスにアタッチします。
  プロセスにアタッチするには、プロセスの名前を知る必要があります (を参照してください[デバッグ シナリオ共通](#BKMK_Scenarios)のいくつかの一般的なプロセス名)。
 
-1.  Visual Studio で、次のように選択します。**デバッグ]/[プロセスにアタッチ**(またはキーを押します**CTRL + ALT + P**)。
+1. Visual Studio で、次のように選択します。**デバッグ]/[プロセスにアタッチ**(またはキーを押します**CTRL + ALT + P**)。
 
-2.  **[プロセスにアタッチ]** ダイアログ ボックスの **[選択可能なプロセス]** ボックスの一覧で、アタッチするプログラムを探します。
+2. **[プロセスにアタッチ]** ダイアログ ボックスの **[選択可能なプロセス]** ボックスの一覧で、アタッチするプログラムを探します。
 
      簡単にプロセスを選択するには、プロセス名の最初の文字を入力します。 プロセス名がわからない場合は、次を参照してください。[デバッグ シナリオ共通](#BKMK_Scenarios)します。
 
@@ -59,17 +59,17 @@ ms.locfileid: "58976172"
 
      プロセスが別のユーザー アカウントで実行されている場合は、 **[すべてのユーザーからのプロセスを表示する]** チェック ボックスをオンにします。
 
-3.  **[アタッチ先]** ボックスに、デバッグするコードの種類が表示されていることを確認します。 既定の **[自動]** 設定では、デバッグするコードの種類が自動的に判断されます。 コードの種類を手動で設定するには、次の操作を行います
+3. **[アタッチ先]** ボックスに、デバッグするコードの種類が表示されていることを確認します。 既定の **[自動]** 設定では、デバッグするコードの種類が自動的に判断されます。 コードの種類を手動で設定するには、次の操作を行います
 
-    1.  **[プロセスにアタッチ]** ボックスで、 **[選択]** をクリックします。
+    1. **[プロセスにアタッチ]** ボックスで、 **[選択]** をクリックします。
 
-    2.  **[コードの種類の選択]** ダイアログ ボックスで、 **[次のコードの種類をデバッグする]** をクリックし、デバッグする種類を選択します。
+    2. **[コードの種類の選択]** ダイアログ ボックスで、 **[次のコードの種類をデバッグする]** をクリックし、デバッグする種類を選択します。
 
-    3.  **[OK]** をクリックします。
+    3. **[OK]** をクリックします。
 
-4.  **[アタッチ]** をクリックします。
+4. **[アタッチ]** をクリックします。
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a>リモート コンピューター上のプロセスにアタッチする
+## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a>リモート コンピューター上のプロセスにアタッチする
  プロセスにアタッチするには、プロセスの名前を知る必要があります (を参照してください[デバッグ シナリオ共通](#BKMK_Scenarios)のいくつかの一般的なプロセス名)。 IIS に配置された ASP.NET アプリのより詳細なガイダンスについては、次を参照してください。[リモート IIS コンピューター上の Remote Debugging ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)します。 他のアプリについては、タスク マネージャーで、プロセスの名前を検索できる場合があります。
 
  **[プロセスにアタッチ]** ダイアログ ボックスでは、リモート デバッグ用にセットアップした他のコンピューターを選択できます。 詳細については、次を参照してください。[リモート デバッグ](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)します。 リモート コンピューターを選択すると、そのコンピューターで実行されている選択可能なプロセスの一覧を表示して、1 つ以上のプロセスにアタッチしてデバッグを実行できます。
@@ -133,10 +133,10 @@ ms.locfileid: "58976172"
 |Visual Studio から起動していない、Windows ユニバーサル (UWP) や OneCore、HoloLens、IoT アプリをデバッグします。|インストールされているアプリ パッケージのデバッグ|N/A|使用**デバッグ/その他のターゲットをデバッグ]/[インストール済みアプリ パッケージをデバッグ**の代わりに**プロセスにアタッチします。**|
 
 > [!WARNING]
->  JavaScript で記述された Windows ユニバーサル アプリにアタッチするには、まずそのアプリに対してデバッグを有効にする必要があります。 Windows デベロッパー センター内の「 [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) 」をご覧ください。
+> JavaScript で記述された Windows ユニバーサル アプリにアタッチするには、まずそのアプリに対してデバッグを有効にする必要があります。 Windows デベロッパー センター内の「 [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) 」をご覧ください。
 
 > [!NOTE]
->  C++ で記述されたコードにデバッガーをアタッチするには、コードが `DebuggableAttribute`を生成する必要があります。 [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) リンカー オプションを使ってリンクすると、これを自動的にコードに追加できます。
+> C++ で記述されたコードにデバッガーをアタッチするには、コードが `DebuggableAttribute`を生成する必要があります。 [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) リンカー オプションを使ってリンクすると、これを自動的にコードに追加できます。
 
 ## <a name="what-debugger-features-can-i-use"></a>どのようなデバッガー機能を使用できますか。
 
@@ -146,7 +146,7 @@ Visual Studio デバッガー (ブレークポイントにヒット) などの�
 
 いくつかのローカル デバッグ シナリオでデバッグできます Visual Studio で、ソースへのアクセスなしで、適切なシンボル ファイルがアプリに存在する場合 (既定では、これが必要、デバッグ ビルド)。 詳細については、次を参照してください。[指定シンボルとソース ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)します。
 
-##  <a name="BKMK_Troubleshoot_attach_errors"></a>アタッチ エラーをトラブルシューティングする
+## <a name="BKMK_Troubleshoot_attach_errors"></a>アタッチ エラーをトラブルシューティングする
  実行中のプロセスにデバッガーがアタッチすると、このプロセスは、1 種類以上のコードを含むことができます。 デバッガーをアタッチできるコードの種類は **[コードの種類の選択]** ダイアログ ボックスで表示されて選択されています。
 
  デバッガーは、ある種類のコードに正常にアタッチできても、別の種類にはアタッチできないことがあります。 この問題は、リモート コンピューターで動作しているプロセスにアタッチしようとする場合に発生することがあります。 リモート コンピューターには、一部の種類のコードにしか対応しないリモート デバッグ コンポーネントがインストールされている場合があるためです。 また、ダイレクト データベース デバッグのために複数のプロセスにアタッチしようとした場合にも発生することがあります。 SQL デバッグ機能は、単一プロセスへのアタッチのみをサポートします。

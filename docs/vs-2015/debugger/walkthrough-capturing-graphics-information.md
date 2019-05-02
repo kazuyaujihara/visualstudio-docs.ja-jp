@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ad2f63bdbbad7d4427454e69806b06937b259b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053885"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>チュートリアル: グラフィックス情報をキャプチャする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,18 +23,18 @@ ms.locfileid: "58974281"
   
  このチュートリアルでは、次の作業について説明します。  
   
--   グラフィックス診断をアプリケーションにフックする  
+- グラフィックス診断をアプリケーションにフックする  
   
--   グラフィックス情報をキャプチャする  
+- グラフィックス情報をキャプチャする  
   
 ## <a name="capturing-graphics-information"></a>グラフィックス情報をキャプチャする  
  グラフィックス診断ツールを使用するには、まず依存するグラフィックス情報をキャプチャする必要があります。 キャプチャを有効にするには、 **[診断の開始]** を使用してアプリケーションの起動時にグラフィックス診断をフックします。  
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>プロジェクトまたはソリューションの読み込み後にグラフィックス情報のキャプチャを有効にするには  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で、グラフィックス情報をキャプチャするアプリケーションのプロジェクト ファイルまたはソリューション ファイルを読み込みます。  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で、グラフィックス情報をキャプチャするアプリケーションのプロジェクト ファイルまたはソリューション ファイルを読み込みます。  
   
-2.  グラフィックス診断ツール バーで、 **[診断の開始]** を選択します。  
+2. グラフィックス診断ツール バーで、 **[診断の開始]** を選択します。  
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>プロジェクトまたはソリューションを読み込まずにグラフィックス情報のキャプチャを有効にするには  
   
@@ -59,7 +59,7 @@ ms.locfileid: "58974281"
 ## <a name="next-steps"></a>次の手順  
  このチュートリアルでは、手動でグラフィックス情報をキャプチャする方法を示しました。 次の手順では、次のオプションを検討します。  
   
--   グラフィックス診断ツールを使用してキャプチャされたグラフィックス情報を解析する方法について学習します。 参照してください[概要](../debugger/overview-of-visual-studio-graphics-diagnostics.md)します。  
+- グラフィックス診断ツールを使用してキャプチャされたグラフィックス情報を解析する方法について学習します。 参照してください[概要](../debugger/overview-of-visual-studio-graphics-diagnostics.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)

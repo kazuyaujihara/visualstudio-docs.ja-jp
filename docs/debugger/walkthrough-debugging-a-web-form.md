@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901633"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>チュートリアル: Web フォームのデバッグ
 このチュートリアルでは、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーション (Web フォーム) をデバッグする方法について説明します。 実行の開始と終了の方法、ブレークポイントの設定方法、および**ウォッチ** ウィンドウでの変数の確認方法についても説明します。
@@ -68,7 +68,7 @@ ms.locfileid: "54948727"
 
 11. ドロップしたボタン コントロールをダブルクリックします。
 
-     コード ページが表示されます。C# の場合は default.aspx.vb の場合は Default.aspx.cs[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]します。 `Button1_Click` 関数の場所にカーソルがあります。
+     コード ページに移動します。C# の場合は default.aspx.vb の場合は Default.aspx.cs[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]します。 `Button1_Click` 関数の場所にカーソルがあります。
 
 12. `Button1_Click` 関数に次のコードを追加します。
 

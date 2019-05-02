@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fe73901d92cb42675ff9ec981bd9b90dcca5d546
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979049"
 ---
 # <a name="idebugsessionprovider-interface"></a>IDebugSessionProvider インターフェイス
 デバッガー ホストと言語を有効にする IDE によって提供される主要なインターフェイスでは、デバッグを開始します。 実行中のアプリケーションのデバッグ セッションを確立します。 このインターフェイスは、マシン デバッグ マネージャーによって実装されます。  

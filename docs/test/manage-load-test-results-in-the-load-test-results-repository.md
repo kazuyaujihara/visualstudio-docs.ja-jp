@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f9623022d5e0132c8b099757a5af85a3ddd62ed1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788909"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>ロード テストの結果リポジトリ内のロード テスト結果の管理
 
@@ -26,7 +26,7 @@ ms.locfileid: "55934771"
 
 コントローラーの結果リポジトリの接続文字列を変更して別のサーバーを使用する場合は、新しいサーバーでスキーマを作成するために、*loadtestresultsrepository.sql* スクリプトを実行する必要があります。
 
-Visual Studio Enterprise には、テクノロジに基づいて一般的なパフォーマンス カウンターを収集する名前付きカウンター セットが用意されています。 これらのセットは、IIS サーバー、ASP.NET サーバー、または SQL サーバーを分析する場合に役立ちます。 カウンター セットで収集されたすべてのデータは、ロード テストの結果リポジトリに保存されます。
+Visual Studio Ultimate には、テクノロジに基づいて一般的なパフォーマンス カウンターを収集する名前付きカウンター セットが用意されています。 これらのセットは、IIS サーバー、ASP.NET サーバー、または SQL サーバーを分析する場合に役立ちます。 カウンター セットで収集されたすべてのデータは、ロード テストの結果リポジトリに保存されます。
 
 > [!IMPORTANT]
 > カウンター セットとパフォーマンス カウンター データは別のものです。 カウンター セットはメタデータです。 IIS サーバーや SQL サーバーなど、特定の役割を持つコンピューターから収集する必要があるパフォーマンス カウンターのグループを定義します。 カウンター セットは、ロード テスト定義の一部です。 パフォーマンス カウンター データは、カウンター セット、特定のコンピューターへのカウンター セットの割り当て、およびサンプル率に基づいて収集されます。

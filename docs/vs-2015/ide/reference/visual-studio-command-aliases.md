@@ -17,16 +17,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0f277ca35552da9deb476d56c15a7b2434463e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763410"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654374"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 エイリアスを使用すると、コマンドの実行に必要な文字列を短縮して **[検索]** ボックスまたは **[コマンド]** ウィンドウに入力できます。 たとえば、**[ファイルを開く]** ダイアログ ボックスを表示するときに、「`>File.OpenFile`」ではなく、定義済みのエイリアス「`>of`」を入力できます。
 
@@ -72,7 +71,7 @@ ms.locfileid: "54763410"
 |[Start コマンド](../../ide/reference/start-command.md)|G|Debug.Start|
 |[Go To コマンド](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |[かっこに移動]|GotoBrace|Edit.GotoBrace|
-|F1 ヘルプ|ヘルプ|Help.F1Help|
+|F1 ヘルプ|Help|Help.F1Help|
 |[イミディエイト モード]|immed|Tools.ImmediateMode|
 |[テキストとしてファイルを挿入]|InsertFile|Edit.InsertFileAsText|
 |[ListCallStack コマンド](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -128,5 +127,5 @@ ms.locfileid: "54763410"
 |[プロセスの一覧]|&#124;|Debug.ListProcesses|
 |[ListThreads コマンド](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>この表で後述する
+## <a name="see-also"></a>関連項目
  [Visual Studio コマンド](../../ide/reference/visual-studio-commands.md)[コマンド ウィンドウ](../../ide/reference/command-window.md)[検索/コマンドボックス](../../ide/find-command-box.md)

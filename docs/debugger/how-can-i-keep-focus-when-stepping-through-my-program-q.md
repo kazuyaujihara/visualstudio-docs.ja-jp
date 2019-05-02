@@ -22,18 +22,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a409ee1e8d1b633689a0c33e39e300071b9b4d83
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848081"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>アプリのステップ実行時にフォーカスを保持する方法するでしょうか。
 ## <a name="description"></a>説明
  プログラムで、ウィンドウのアクティブ化が正しく動作しません。 デバッガーでプログラムをステップ実行すると、プログラムがフォーカスを保持できないため、問題を再現できなくなります。 どのようにすればフォーカスを保持できますか。
 
 ## <a name="solution"></a>ソリューション
- コンピューターがもう 1 台ある場合は、リモート デバッグを行います。 リモート コンピューター上でプログラムを操作し、ホスト上でデバッガーを実行します。 詳細については、次を参照してください。[方法: リモート コンピューターを選択して](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100))します。
+ コンピューターがもう 1 台ある場合は、リモート デバッグを行います。 リモート コンピューター上でプログラムを操作し、ホスト上でデバッガーを実行します。 詳細については、「[方法 :リモート コンピューターを選択する](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100))」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)

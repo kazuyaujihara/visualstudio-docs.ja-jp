@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 768efb3e874f6427cd23f63f14671aa2db1bea71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816358"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>方法: 標準のコード分析チェックイン ポリシーを作成または更新する
 
@@ -29,7 +29,7 @@ ms.locfileid: "55917078"
 
 - マネージ コードを指定してチェックイン ポリシーを設定する、*ルール セット*コード分析規則のサブセットを格納しています。
 
-- Visual Studio 2017 バージョン 15.6 以降での C/C++ コードのチェックイン ポリシーでは、すべてのコード分析規則を実行することが必要です。 Azure DevOps プロジェクト内の個々 のコード プロジェクトの特定のルールを無効にするプリプロセッサ ディレクティブを追加することができます。 15.7 以降では、使用 **/analyze: ruleset**を実行する規則を指定します。 詳細については、[ルール セットを実行するように C++ 規則の指定を使用して](using-rule-sets-to-specify-the-cpp-rules-to-run.md)を参照してください。
+- Visual Studio 2017 バージョン 15.6 以降での C/C++ コードのチェックイン ポリシーでは、すべてのコード分析規則を実行することが必要です。 Azure DevOps プロジェクト内の個々 のコード プロジェクトの特定のルールを無効にするプリプロセッサ ディレクティブを追加することができます。 15.7 以降では、使用 **/analyze: ruleset**を実行する規則を指定します。 詳細については、次を参照してください。[ルール セットを実行するように C++ 規則の指定を使用して](using-rule-sets-to-specify-the-cpp-rules-to-run.md)します。
 
 マネージ コードのチェックイン ポリシーを指定すると、チーム メンバーは、Azure DevOps プロジェクトのポリシー設定をコード プロジェクトのコード分析設定を同期できます。
 

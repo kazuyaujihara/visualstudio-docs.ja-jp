@@ -11,25 +11,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7b07d6433bbec7e0afb871931fdf3be314c86d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 162f8df09b1f6ce9372a57728d653d5d3c20a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415726"
 ---
 # <a name="register-the-program"></a>プログラムを登録します。
 によって表されるデバッグ エンジンでは、ポート、取得された後、 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)インターフェイス、デバッグするプログラムを有効にするのには、次の手順は、ポートを使用して登録します。 登録されると、プログラムがでは、次のいずれかのデバッグに使用します。
 
--   使用する実行中のアプリケーションの制御をデバッグするデバッガーのアタッチ、プロセス。
+- 使用する実行中のアプリケーションの制御をデバッグするデバッガーのアタッチ、プロセス。
 
--   -Just-in-time (JIT) デバッグは、ファクトの後は、デバッガーとは無関係に実行されるプログラムのデバッグできます。 実行時のアーキテクチャでは、エラーをキャッチ、したときに、オペレーティング システムの前に、デバッガーに通知またはランタイム環境は、メモリと、エラーが発生したプログラムのリソースを解放します。
+- -Just-in-time (JIT) デバッグは、ファクトの後は、デバッガーとは無関係に実行されるプログラムのデバッグできます。 実行時のアーキテクチャでは、エラーをキャッチ、したときに、オペレーティング システムの前に、デバッガーに通知またはランタイム環境は、メモリと、エラーが発生したプログラムのリソースを解放します。
 
 ## <a name="registering-procedure"></a>プロシージャの登録
 
 ### <a name="to-register-your-program"></a>プログラムを登録するには
 
-1.  呼び出す、 [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)ポートによって実装されるメソッド。
+1. 呼び出す、 [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)ポートによって実装されるメソッド。
 
      `IDebugPortNotify2::AddProgramNode` ポインターが必要です、 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)インターフェイス。
 
@@ -38,7 +38,7 @@ ms.locfileid: "56715389"
      次の例では、プログラムを起動し、ポートに登録するデバッグ エンジンを示します。
 
     > [!NOTE]
-    >  このコード サンプルを起動し、プロセスを再開する唯一の方法ではありません。このコードは、主にポートとプログラムを登録する例です。
+    > このコード サンプルを起動し、プロセスを再開する唯一の方法ではありません。このコードは、主にポートとプログラムを登録する例です。
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.

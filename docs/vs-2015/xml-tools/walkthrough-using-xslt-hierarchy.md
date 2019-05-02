@@ -1,30 +1,24 @@
 ---
 title: 'チュートリアル: XSLT 階層の使用 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 5e60c8ec-cd05-4597-b856-55038218acf4
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5b94a958a915ad7858575e093cae525df17cc23e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280963"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075625"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>チュートリアル: XSLT 階層の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XSLT 階層ツールは、多くの XML 開発タスクを簡素化します。 XSLT スタイル シートには、多くの場合 `includes` 命令および `imports` 命令が使用されています。 コンパイルはプリンシパル スタイル シートから開始されますが、XSLT スタイル シートのコンパイル結果としてエラーが表示された場合、プリンシパル スタイル シート以外のものがエラーの原因である可能性があります。 エラーを修正するか、スタイル シートを編集するには、インクルードまたはインポートされたスタイル シートへのアクセスが必要になる場合があります。 デバッガーでスタイル シートをステップ実行すると、インクルードまたはインポートされたスタイル シートが開かれる場合があり、1 つまたは複数のインクルードされたスタイル シートにブレークポイントを追加することができます。  
   
  XSLT 階層ツールが役立つ別のシナリオとして、ビルトイン テンプレート規則にブレークポイントを挿入することがあります。 テンプレート規則は、スタイル シートの各モードに対して生成される特別なテンプレートであり、ノードに該当するテンプレートが他にない場合に、`xsl:apply-templates` により呼び出されます。 ビルトイン テンプレート規則でデバッグを実行するには、XSLT デバッガーで一時フォルダーに規則のファイルを作成し、プリンシパル スタイル シートと共にコンパイルします。 何らかの `xsl:apply-template` からコードへのステップ インを実行しないと、プリンシパル スタイル シートにインクルードされたスタイル シートを探したり、ビルトイン テンプレート規則を持つスタイル シートを探して開くことが困難になる場合があります。  
@@ -33,7 +27,7 @@ XSLT 階層ツールは、多くの XML 開発タスクを簡素化します。 
   
 ### <a name="procedure-title"></a>手順のタイトル  
   
-1.  Visual Studio で XML ドキュメントを開きます。 この例では、次の `collection.xml` ドキュメントを使用しています。  
+1. Visual Studio で XML ドキュメントを開きます。 この例では、次の `collection.xml` ドキュメントを使用しています。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -57,7 +51,7 @@ XSLT 階層ツールは、多くの XML 開発タスクを簡素化します。 
     </COLLECTION>  
     ```  
   
-2.  次の `xslincludefile.xsl` を追加します。  
+2. 次の `xslincludefile.xsl` を追加します。  
   
     ```  
     <?xml version='1.0'?>  
@@ -80,7 +74,7 @@ XSLT 階層ツールは、多くの XML 開発タスクを簡素化します。 
     </xsl:stylesheet>  
     ```  
   
-3.  次の `xslinclude.xsl` ファイルを追加します。  
+3. 次の `xslinclude.xsl` ファイルを追加します。  
   
     ```  
     <?xml version='1.0'?>  
@@ -114,14 +108,11 @@ XSLT 階層ツールは、多くの XML 開発タスクを簡素化します。 
     </xsl:stylesheet>  
     ```  
   
-4.  `<xsl:include href="xslincludefile.xsl" />` 命令にブレークポイントを追加します。  
+4. `<xsl:include href="xslincludefile.xsl" />` 命令にブレークポイントを追加します。  
   
-5.  デバッグを開始します。  
+5. デバッグを開始します。  
   
-6.  デバッガーが `<xsl:include href="xslincludefile.xsl" />` 命令で停止したときに、ステップ イン ボタンを押します。 参照されるスタイル シート内でデバッグを継続することができます。 階層が表示され、デザイナーに正しいパスが示されます。  
+6. デバッガーが `<xsl:include href="xslincludefile.xsl" />` 命令で停止したときに、ステップ イン ボタンを押します。 参照されるスタイル シート内でデバッグを継続することができます。 階層が表示され、デザイナーに正しいパスが示されます。  
   
 ## <a name="see-also"></a>関連項目  
  [チュートリアル: XSLT プロファイラー](../xml-tools/walkthrough-xslt-profiler.md)
-
-
-

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 551af75c985c9103db37cd3f9fe585655a4df342
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073554"
 ---
 # <a name="start"></a>[開始]
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  `Method`  
  次のいずれかのキーワードを指定する必要があります。  
   
--   **TRACE** - インストルメンテーション メソッドを指定します。  
+- **TRACE** - インストルメンテーション メソッドを指定します。  
   
--   **SAMPLE** - サンプリング方法を指定します。  
+- **SAMPLE** - サンプリング方法を指定します。  
   
--   **COVERAGE** - コード カバレッジを指定します。  
+- **COVERAGE** - コード カバレッジを指定します。  
   
--   **CONCURRENCY** - リソースの競合メソッドを指定します。  
+- **CONCURRENCY** - リソースの競合メソッドを指定します。  
   
 ## <a name="required-options"></a>必須オプション  
  **Output** オプションは、コマンド ラインで **Start** が指定されている場合に指定する必要があります。  

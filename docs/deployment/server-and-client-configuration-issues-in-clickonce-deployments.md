@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b834ce2b76d9c73fc5247da3402003b766dd9d87
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406785"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 配置でのサーバーおよびクライアント構成の問題
 Windows Server で、インターネット インフォメーション サービス (IIS) を使用する、展開には、Windows で認識されない種類のファイルが含まれている場合は、Microsoft Word ファイルなど、そのファイルを送信する IIS は拒否し、配置は失敗します。
@@ -49,7 +49,7 @@ Windows Server で、インターネット インフォメーション サービ
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce とプロキシの認証
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .NET Framework 3.5 以降で Windows 統合のプロキシ認証のサポートを提供します。 特定の machine.config ディレクティブは必要ありません。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 基本認証またはダイジェストなどの他の認証プロトコルのサポートを行いません。
 
- この機能を有効にする .NET Framework 2.0 修正プログラムを適用することもできます。 詳細については、「 http://go.microsoft.com/fwlink/?LinkId=158730」を参照してください。
+ この機能を有効にする .NET Framework 2.0 修正プログラムを適用することもできます。 詳細については、「 http://go.microsoft.com/fwlink/?LinkId=158730 」を参照してください。
 
  詳細については、次を参照してください。 [ \<defaultProxy > 要素 (ネットワーク設定)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)します。
 
@@ -57,7 +57,7 @@ Windows Server で、インターネット インフォメーション サービ
  現時点では、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]配置マニフェストへの URL が Internet Explorer で開かれている場合にのみインストールが起動します。 Internet Explorer が既定の Web ブラウザーとして設定されている場合にのみ、Microsoft Office Outlook などの別のアプリケーションが起動される URL のデプロイが正常に起動します。
 
 > [!NOTE]
->  Mozilla Firefox は、配置プロバイダーが空白でないか、Microsoft .NET Framework Assistant の拡張機能がインストールされている場合にサポートされます。 この拡張機能は、.NET Framework 3.5 SP1 と共にパッケージ化されます。 XBAP サポートについては、必要なときに、プラグインの NPWPF がアクティブになります。
+> Mozilla Firefox は、配置プロバイダーが空白でないか、Microsoft .NET Framework Assistant の拡張機能がインストールされている場合にサポートされます。 この拡張機能は、.NET Framework 3.5 SP1 と共にパッケージ化されます。 XBAP サポートについては、必要なときに、プラグインの NPWPF がアクティブになります。
 
 ## <a name="activate-clickonce-applications-through-browser-scripting"></a>ブラウザーのスクリプトを通じて ClickOnce アプリケーションをアクティブ化します。
  開発したカスタムの Web ページを起動するかどうか、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アクティブ スクリプトを使用してアプリケーション、アプリケーションがいくつかのマシンの起動はしないことがわかります。 Internet Explorer にはと呼ばれる設定が含まれています**自動的な確認ダイアログ ファイルのダウンロード**、この動作に影響します。 この設定は、**セキュリティ** タブでその**オプション** メニューのこの動作に影響します。 呼び出された**自動的な確認ダイアログ ファイルのダウンロード**、下に記載されていると、**ダウンロード**カテゴリ。 設定されて**を有効にする**イントラネット Web ページに既定で**を無効にする**Internet の Web ページの既定でします。 この設定を設定すると**を無効にする**とアクティブ化すると、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション プログラムで (すると、URL を割り当てることで、たとえば、`document.location`プロパティ) はブロックされます。 このような状況では、ユーザー アプリケーションを起動できます、ユーザーが開始したダウンロードのみをたとえば、アプリケーションの URL に設定されたハイパーリンクをクリックしています。
@@ -75,7 +75,7 @@ Windows Server で、インターネット インフォメーション サービ
 ```
 
 > [!NOTE]
->  NTLM (NT チャレンジ/レスポンス) 認証を求めるメッセージが既定の資格情報以外の資格情報のセキュリティ ダイアログ ボックスで、クリックして、機能を行うことができます**OK**を求められた場合は、指定された保存します。今後のセッションの資格情報。 ただし、この回避策は、基本認証は機能しません。
+> NTLM (NT チャレンジ/レスポンス) 認証を求めるメッセージが既定の資格情報以外の資格情報のセキュリティ ダイアログ ボックスで、クリックして、機能を行うことができます**OK**を求められた場合は、指定された保存します。今後のセッションの資格情報。 ただし、この回避策は、基本認証は機能しません。
 
 ## <a name="use-third-party-web-servers"></a>サード パーティの Web サーバーを使用します。
  展開する場合、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] IIS 以外の Web サーバーからアプリケーションが問題が発生したサーバーがキーの不適切なコンテンツの種類を返す場合[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]など、配置マニフェストとアプリケーション マニフェスト ファイル。 この問題を解決するには、Web サーバーのヘルプが設定されているサーバーに新しいコンテンツ タイプを追加し、すべてのファイル名拡張子マッピングを次の表に表示されていることを確認する方法に関するドキュメントを参照してください。
@@ -94,7 +94,6 @@ Windows Server で、インターネット インフォメーション サービ
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP プロトコルのアプリケーションをインストールするためにサポートされていません
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] HTTP 1.1 の Web サーバーまたはファイル サーバーからアプリケーションのインストールをサポートします。 アプリケーションをインストールするのには、FTP、ファイル転送プロトコルはサポートされていません。 アプリケーションのみを公開するのに FTP を使用することができます。 次の表は、これらの違いをまとめたものです。
 
-
 | URL の種類 | 説明 |
 |----------| - |
 | ftp:// | 発行することができます、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]このプロトコルを使用してアプリケーション。 |
@@ -102,15 +101,15 @@ Windows Server で、インターネット インフォメーション サービ
 | https:// | インストールすることができます、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]このプロトコルを使用してアプリケーション。 |
 | file:// | インストールすることができます、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]このプロトコルを使用してアプリケーション。 |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP sp 2: Windows ファイアウォール
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows ファイアウォール
  既定では、Windows XP SP2、Windows ファイアウォールが可能です。 発行および実行する場合は Windows XP がインストールされているコンピューター上でアプリケーションを開発している場合[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]IIS を実行しているローカル サーバーからのアプリケーション。 ただし、Windows ファイアウォールを開く場合を除き、別のコンピューターから IIS を実行するサーバーはアクセスできません。 Windows ファイアウォールを管理する手順については、Windows のヘルプを参照してください。
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server:、FrontPage server extensions が有効にします。
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server:FrontPage server extensions を有効にします。
  Microsoft の FrontPage Server Extensions は、HTTP を使用する Windows の Web サーバーにアプリケーションの発行に必要です。
 
  既定では、Windows Server にインストールされている FrontPage Server Extensions はありません。 使用する場合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]FrontPage Server Extensions で HTTP を使用する Windows Server の Web サーバーで発行する必要があります最初にインストールする FrontPage Server Extensions。 インストールを実行するには、Windows Server のサーバーの管理の管理ツールを使用します。
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: ロックされたコンテンツの種類
+## <a name="windows-server-locked-down-content-types"></a>Windows Server:ロックされたコンテンツの種類
  上の IIS[!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)]ロックは特定の既知のコンテンツ タイプを除くすべてのファイルの種類 (たとえば、 *.htm*、 *.html*、 *.txt*など)。 展開を有効にする[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]の種類のファイルをダウンロードできるようにするのには、IIS 設定を変更する必要があるアプリケーションがこのサーバーを使用して、 *.application*、 *.manifest*、およびその他のカスタムのファイルの種類アプリケーションで使用します。
 
  IIS サーバーを使用してを展開する場合は、実行*inetmgr.exe*し、既定の Web ページの新しいファイルの種類を追加します。

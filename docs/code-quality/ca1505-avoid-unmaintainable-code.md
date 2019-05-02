@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 017d7ec1b28c1a76b7a837a38f5089c95724fe97
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 740ef26af6f1f84d23ef27de5176df1b3de98b34
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797329"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505:メンテナンスできないコードを使用しないでください
 
@@ -31,20 +31,24 @@ ms.locfileid: "55930715"
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- 型またはメソッドの保守容易性指数が低い値です。
+
+型またはメソッドの保守容易性指数が低い値です。
 
 ## <a name="rule-description"></a>規則の説明
- 保守容易性指数は、次のメトリックを使用して計算されます。 行のコード、プログラムのボリューム、およびサイクロマティック複雑度。 プログラムのボリュームは、型または演算子とオペランドのコードの数に基づいているメソッドの理解の難しさの尺度です。 サイクロマティック複雑度は、型またはメソッドの構造上の複雑さの基準です。 コード メトリックに関する詳細については、[を測定する複雑さとマネージ コードの保守容易性](../code-quality/code-metrics-values.md)します。
 
- 保守性が低いインデックスことを示します型またはメソッドを維持するが困難な可能性が再設計に適した候補となります。
+保守容易性指数は、次のメトリックを使用して計算されます。 行のコード、プログラムのボリューム、およびサイクロマティック複雑度。 プログラムのボリュームは、型または演算子とオペランドのコードの数に基づいているメソッドの理解の難しさの尺度です。 サイクロマティック複雑度は、型またはメソッドの構造上の複雑さの基準です。 コード メトリックに関する詳細については、[複雑さとマネージ コードの保守性の測定](../code-quality/code-metrics-values.md)します。
+
+保守性が低いインデックスことを示します型またはメソッドを維持するが困難な可能性が再設計に適した候補となります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この違反を修正するには、型またはメソッドを再設計し、小さくなりより対象を絞った型またはメソッドに分割することをお試しください。
+
+この違反を修正するには、型またはメソッドを再設計し、小さくなりより対象を絞った型またはメソッドに分割することをお試しください。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- 型またはメソッドと見なされます、大きなサイズに関係なく、または、型またはメソッドを分割することはできません、保守性の高いときに、この警告を除外します。
+
+この警告を抑制するには、分割できない型またはメソッド、またはサイズが大きくて保守しやすいと見なされます。
 
 ## <a name="see-also"></a>関連項目
 
-- [保守性の警告](../code-quality/maintainability-warnings.md)
+- [保守性に関する警告](../code-quality/maintainability-warnings.md)
 - [マネージド コードの複雑さと保守性の測定](../code-quality/code-metrics-values.md)

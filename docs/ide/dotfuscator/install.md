@@ -1,13 +1,14 @@
 ---
-title: Dotfuscator Community Edition (CE) をインストールする
-ms.date: 06/22/2017
+title: Dotfuscator Community をインストールする
+ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
-keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protection, community edition, 難読化, .NET, 無料, Visual Studio 2017, インストール
+keywords: Dotfuscator, Dotfuscator Community, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protection, Community Edition, 難読化, .NET, 無料, Visual Studio 2017, Visual Studio 2019, Visual Studio, インストール
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
 - Dotfuscator CE
+- Dotfuscator Community
 - Dotfuscator
 - obfuscation
 - protection
@@ -16,50 +17,83 @@ helpviewer_keywords:
 - install Dotfuscator
 - installing Dotfuscator
 - set up Dotfuscator
-description: Visual Studio 2017 に含まれる無料の Dotfuscator Community Edition をインストールする方法について説明します。
+description: Visual Studio に含まれている Dotfuscator Community の無料コピーをインストールする方法について説明します。
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d62b531bac02cedc5b1de5a7c69443cc97571281
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a6945713d86c510112992be3fefd2d41280ef14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557716"
 ---
-# <a name="install-dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE) をインストールする
+# <a name="install-dotfuscator-community"></a>Dotfuscator Community をインストールする
 
-Visual Studio 2017 には、影響の少ない新しいインストール エクスペリエンスが導入されています。
-そのため、Dotfuscator Community Edition (Dotfuscator CE) は既定ではインストールされません。
-ただし、Visual Studio を既にインストールしている場合でも、Dotfuscator CE は簡単にインストールできます。
+Dotfuscator Community は、Visual Studio のオプション コンポーネントです。
+これらの手順では、そのインストール方法について説明します。
 
 > [!NOTE]
-> 各リリースの Visual Studio に付属の Dotfuscator CE のバージョンだけでなく、PreEmptive Solutions も Web サイトで定期的に更新バージョンが提供されます。
+> 各リリースの Visual Studio に付属の Dotfuscator Community のバージョンだけでなく、PreEmptive Solutions もその Web サイトで定期的に更新バージョンが提供されます。
 > Visual Studio からインストールするのではなく、**最新バージョン**を直接ダウンロードする場合は、**[ここをクリックして Dotfuscator のダウンロード ページに移動してください][download]**。
 
 ## <a name="within-visual-studio"></a>Visual Studio 内
 
-次のようにして、Visual Studio IDE から Dotfuscator CE をインストールすることができます。
+::: moniker range="vs-2019"
+
+Visual Studio IDE から Dotfuscator Community をインストールできます。
+
+1. **検索ボックス** (Ctrl+Q) に `dotfuscator` と入力します。 <br/> <br/> ![検索ボックス](media/install_in_vs19_12.png) <br/> <br/>
+
+2. 表示された検索結果で、*[コンポーネント]* 見出しの下の **[Install PreEmptive Protection - Dotfuscator]\(PreEmptive Protection - Dotfuscator のインストール\)** を選択します。
+   * *[メニュー]* 見出しの下に **[PreEmptive Protection - Dotfuscator Community]** と表示されている場合、Dotfuscator Community は既にインストールされています。 [開始][get-started]するには、そのオプションを選択します。
+
+3. Dotfuscator Community のインストール用に事前構成された Visual Studio のインストーラー ウィンドウが起動します。
+   > [!NOTE]
+   > 続行するには管理者の資格情報を提供する必要がある場合があります。 
+
+4. Visual Studio インストーラー ウィンドウで、*[インストール]* をクリックします。 <br/> <br/> ![[インストール] をクリックします](media/install_in_vs19_34.png) <br/> <br/>
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Visual Studio IDE から Dotfuscator Community をインストールできます。
 
 1. **クイック起動** (Ctrl キーを押しながら Q キーを押す) 検索バーで、「`dotfuscator`」と入力します。 <br/> <br/> ![クイック起動](media/install_from_vs_12.png) <br/> <br/>
-2. 表示されたクイック起動の結果の *[インストール]* 見出しで、**[PreEmptive Protection - Dotfuscator (個々のコンポーネント)]** を選択します。
-   * または、*[メニュー]* 見出しで、**[ツール] > [PreEmptive Protection - Dotfuscator]** を選択します。この場合、Dotfuscator CE は既にインストールされています。 使用の詳細については、[Dotfuscator CE の完全なユーザー ガイドの概要ページ][get-started]を参照してください。
-3. Visual Studio のインストーラー ウィンドウが起動します。このウィンドウは Dotfuscator CE のインストール用に事前に構成されています。
-   * 続行するには管理者の資格情報を提供する必要がある場合があります。
-4. Visual Studio IDE のすべてのインスタンスを閉じます。 <br/> <br/> ![[インストール] をクリックします](media/install_from_vs_345.png) <br/> <br/>
-5. Visual Studio インストーラー ウィンドウで、*[インストール]* をクリックします。
 
-インストールが完了したら、Dotfuscator CE の使用を開始できます。 詳細については、[Dotfuscator CE の完全なユーザー ガイドの概要ページ][get-started]を参照してください。
+2. 表示されたクイック起動の結果の *[インストール]* 見出しで、**[PreEmptive Protection - Dotfuscator (個々のコンポーネント)]** を選択します。
+   * または、*[メニュー]* 見出しで、**[ツール] > [PreEmptive Protection - Dotfuscator]** を選択します。この場合、Dotfuscator CE は既にインストールされています。 [開始する][get-started]には、そのオプションを選択します。
+
+3. Dotfuscator CE のインストール用に事前構成された Visual Studio のインストーラー ウィンドウが起動します。
+   > [!NOTE] 
+   > 続行するには管理者の資格情報を提供する必要がある場合があります。
+
+4. Visual Studio インストーラー ウィンドウで、*[インストール]* をクリックします。 <br/> <br/> ![[インストール] をクリックします](media/install_from_vs_345.png) <br/> <br/>
+
+::: moniker-end
+
+インストールが完了したら、[Dotfuscator Community][get-started] の使用を開始できます。
 
 ## <a name="during-visual-studio-installation"></a>Visual Studio のインストール中
 
-Visual Studio 2017 をまだインストールしていない場合は、[Visual Studio の Web サイト][2017-install]からインストーラーを取得できます。
+Visual Studio をまだインストールしていない場合は、[Visual Studio の Web サイト][vs-install]からインストーラーを取得できます。
 実行すると、選択した Visual Studio エディションのインストール オプションが表示されます。
+
+::: moniker range="vs-2019"
 
 ![インストール オプション](media/install_ui.png)
 
-その後、次のように、Visual Studio 2017 の個々のコンポーネントとして Dotfuscator CE をインストールできます。
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+![インストール オプション](media/install_ui_17.png)
+
+::: moniker-end
+
+その後、Visual Studio の個々のコンポーネントとして Dotfuscator Community をインストールできます。
 
 1. **[個々のコンポーネント]** タブを選択します。
 2. *[コード ツール]* で、*[PreEmptive Protection - Dotfuscator]* 項目のチェック ボックスをオンにします。<br/> <br/> ![個々のコンポーネント](media/install_individually_12.png) <br/> <br/>
@@ -67,15 +101,15 @@ Visual Studio 2017 をまだインストールしていない場合は、[Visual
 4. 使用環境に合わせて、インストール設定をさらに構成します。
 5. Visual Studio をインストールする準備ができたら、*[インストール]* ボタンをクリックします。
 
-インストールが完了したら、Dotfuscator CE の使用を開始できます。 詳細については、[Dotfuscator CE の完全なユーザー ガイドの概要ページ][get-started]を参照してください。
+インストールが完了したら、Dotfuscator Community の使用を開始できます。 詳細については、[Dotfuscator Community の完全なユーザー ガイドの概要ページ][get-started]を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-[This topic in the full Dotfuscator CE User Guide]: https://www.preemptive.com/dotfuscator/ce/docs/help/
+[Dotfuscator Community の完全なユーザー ガイドのこのトピック](https://www.preemptive.com/dotfuscator/ce/docs/help/)
 
-<!-- Copyright © 2017 PreEmptive Solutions, LLC -->
+<!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 
-[2017-install]:  https://visualstudio.microsoft.com/downloads/#vs-2017
+[vs-install]:  https://visualstudio.microsoft.com/downloads/
 [get-started]:  https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
 
 [download]:  https://www.preemptive.com/products/dotfuscator/downloads

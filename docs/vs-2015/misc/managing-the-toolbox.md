@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838681"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] では、エディターやデザイナーなどの VSPackage を使用して **ツールボックス**のメンバーシップと外観を管理できます。  
@@ -27,9 +27,9 @@ ms.locfileid: "58973828"
   
  このサポートは、次を必要とするエディターおよびデザイナーに限定されます。  
   
-1.  エディターまたはデザイナーのインスタンスを提供するファクトリ オブジェクトの実装。 デザイナーまたはエディターのファクトリ オブジェクトの実装の詳細については、「 [Editor Factories](../extensibility/editor-factories.md)」を参照してください。  
+1. エディターまたはデザイナーのインスタンスを提供するファクトリ オブジェクトの実装。 デザイナーまたはエディターのファクトリ オブジェクトの実装の詳細については、「 [Editor Factories](../extensibility/editor-factories.md)」を参照してください。  
   
-2.  エディターまたはデザイナーが存在する場合に自動的にアクティブにするツールボックスのタブの登録。  
+2. エディターまたはデザイナーが存在する場合に自動的にアクティブにするツールボックスのタブの登録。  
   
 ## <a name="controlling-the-toolbox"></a>ツールボックスの制御  
  オートメーションのサポートを補うために、 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] は次のインターフェイスを提供して、 **ツールボックス** の管理方法を VSPackage でより詳細に制御できるようにします。  

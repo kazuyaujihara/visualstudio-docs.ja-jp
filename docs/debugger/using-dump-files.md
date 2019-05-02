@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b392cf5eddaab877af56ee952074cff646e10a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ff4cc9501552b0a482e93aa1917a175680d6d78
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901759"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでのダンプ ファイル
 
@@ -39,27 +39,27 @@ Visual Studio でのヒープ ダンプ ファイルを開くと、デバッグ 
 
 Visual Studio デバッガーでは、マネージドまたはネイティブ コードのダンプ ファイルを保存できます。 内のファイルを保存する他のアプリまたは Visual Studio によって作成されたダンプ ファイルをデバッグできる、*ミニダンプ*形式。
 
-##  <a name="BKMK_Requirements_and_limitations"></a> 要件と制限事項
+## <a name="BKMK_Requirements_and_limitations"></a> 要件と制限事項
 
--   64 ビット コンピューターからのダンプ ファイルをデバッグするには、64 ビット コンピューターで Visual Studio を実行する必要があります。
+- 64 ビット コンピューターからのダンプ ファイルをデバッグするには、64 ビット コンピューターで Visual Studio を実行する必要があります。
 
--   Visual Studio では、ARM デバイスからのネイティブ アプリのダンプ ファイルをデバッグできます。 ネイティブ デバッガーでのみが、ARM デバイスから管理対象アプリのダンプ デバッグすることもできます。
+- Visual Studio では、ARM デバイスからのネイティブ アプリのダンプ ファイルをデバッグできます。 ネイティブ デバッガーでのみが、ARM デバイスから管理対象アプリのダンプ デバッグすることもできます。
 
--   デバッグする[カーネル モード](/windows-hardware/drivers/debugger/kernel-mode-dump-files)ダンプ ファイル、またはを使用して、 [SOS.dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension)で Windows 用デバッグ ツールをダウンロードする Visual Studio で、拡張機能のデバッグ、 [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)します。
+- デバッグする[カーネル モード](/windows-hardware/drivers/debugger/kernel-mode-dump-files)ダンプ ファイル、またはを使用して、 [SOS.dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension)で Windows 用デバッグ ツールをダウンロードする Visual Studio で、拡張機能のデバッグ、 [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)します。
 
--   Visual Studio は、旧バージョンの保存されたダンプ ファイルをデバッグできません[フル ユーザー モード ダンプ](/windows/desktop/wer/collecting-user-mode-dumps)形式。 フル ユーザー モード ダンプがヒープ ダンプとされません。
+- Visual Studio は、旧バージョンの保存されたダンプ ファイルをデバッグできません[フル ユーザー モード ダンプ](/windows/desktop/wer/collecting-user-mode-dumps)形式。 フル ユーザー モード ダンプがヒープ ダンプとされません。
 
--   最適化されたコードのダンプ ファイルをデバッグすると、混乱が生じることがあります。 たとえば、コンパイラによる関数のインライン展開により、予期しない呼び出し履歴になっていたり、その他の最適化により、変数の有効期間が変更されていたりします。
+- 最適化されたコードのダンプ ファイルをデバッグすると、混乱が生じることがあります。 たとえば、コンパイラによる関数のインライン展開により、予期しない呼び出し履歴になっていたり、その他の最適化により、変数の有効期間が変更されていたりします。
 
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> ヒープ情報あり/なしのダンプ ファイル
+## <a name="BKMK_Dump_files__with_or_without_heaps"></a> ヒープ情報あり/なしのダンプ ファイル
 
 ダンプ ファイルは、可能性がありますか、ヒープ情報がない可能性があります。
 
--   **ダンプ ファイルがヒープ情報あり**ダンプの時に、変数の値を含む、アプリのメモリのスナップショットが含まれます。 Visual Studio には、非常に簡単にデバッグを行い、ヒープを使用して、ダンプ ファイルに読み込まれたネイティブ モジュールのバイナリも保存します。 Visual Studio は、バイナリ、アプリを見つけられない場合でも、ヒープを使用してダンプ ファイルからシンボルを読み込むことができます。
+- **ダンプ ファイルがヒープ情報あり**ダンプの時に、変数の値を含む、アプリのメモリのスナップショットが含まれます。 Visual Studio には、非常に簡単にデバッグを行い、ヒープを使用して、ダンプ ファイルに読み込まれたネイティブ モジュールのバイナリも保存します。 Visual Studio は、バイナリ、アプリを見つけられない場合でも、ヒープを使用してダンプ ファイルからシンボルを読み込むことができます。
 
--   **ヒープなしのダンプ ファイル**ヒープ情報あり、ダンプよりかなり小さくなりますが、デバッガーがシンボル情報を検索するアプリのバイナリを読み込む必要がありますが、します。 読み込まれたバイナリはダンプの作成時に実行されているものと正確に一致する必要があります。 ヒープなしのダンプ ファイルは、スタック変数のみの値を保存します。
+- **ヒープなしのダンプ ファイル**ヒープ情報あり、ダンプよりかなり小さくなりますが、デバッガーがシンボル情報を検索するアプリのバイナリを読み込む必要がありますが、します。 読み込まれたバイナリはダンプの作成時に実行されているものと正確に一致する必要があります。 ヒープなしのダンプ ファイルは、スタック変数のみの値を保存します。
 
-##  <a name="BKMK_Create_a_dump_file"></a> ダンプ ファイルを作成する
+## <a name="BKMK_Create_a_dump_file"></a> ダンプ ファイルを作成する
 
 Visual Studio でのプロセスをデバッグするときに、例外またはブレークポイントでデバッガーが停止したときにダンプを保存できます。
 
@@ -76,7 +76,7 @@ Visual Studio でのプロセスをデバッグするときに、例外または
 >[!NOTE]
 >Windows ミニダンプ形式をサポートする任意のプログラムでは、ダンプ ファイルを作成できます。 たとえば、[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) の **Procdump** コマンド ライン ユーティリティでは、トリガーまたは必要に応じてプロセスのクラッシュ ダンプ ファイルを作成できます。 参照してください[要件と制限事項](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)については、その他のツールを使用して、ダンプ ファイルを作成する方法。
 
-##  <a name="BKMK_Open_a_dump_file"></a> ダンプ ファイルを開く
+## <a name="BKMK_Open_a_dump_file"></a> ダンプ ファイルを開く
 
 1. Visual Studio で、次のように選択します。**ファイル** > **オープン** > **ファイル**します。
 
@@ -90,7 +90,7 @@ Visual Studio でのプロセスをデバッグするときに、例外または
    - シンボルの読み込み場所を設定する選択**シンボル パスの設定**します。
    - デバッグを開始する次のように選択します。**管理のみでデバッグ**、**ネイティブのみでデバッグ**、**混合でデバッグ**、または**マネージ メモリの使用をデバッグ**します。
 
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> .Exe、.pdb、およびソース ファイルを検索します。
+## <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> .Exe、.pdb、およびソース ファイルを検索します。
 
 使用するには、完全なデバッグ機能、ダンプ ファイルを Visual Studio が必要です。
 

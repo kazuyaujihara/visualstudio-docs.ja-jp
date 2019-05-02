@@ -12,18 +12,17 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 619cbaeee977f3ff850edf9d58d0790d5219dc36
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c7154395be43f6a0b07e9f2557d94fa594ef5ba4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002858"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647202"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Visual Studio 拡張機能の配布
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **注**:Visual Studio ギャラリーは、Visual Studio Marketplace に置き換えられます。 詳細については、このトピックの最新バージョンを参照してください。
-
 
 拡張機能の開発が完了したらは、他のコンピューターにインストールして、友人や同僚と共有または Visual Studio ギャラリーに発行できます。 このセクションで発行し、拡張機能を維持するために行う必要があるすべての事項を説明します。 .vsix ファイル、公開、ローカライズ、および更新を使用します。
 

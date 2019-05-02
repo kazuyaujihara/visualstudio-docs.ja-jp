@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 348cb15ebc348d6c0ece5e7118e896cc6a21b23b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420153"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 配置の固有のエラーのトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ ms.locfileid: "58973485"
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>エラー メッセージでは、"アプリケーションを取得できません。 ファイルの展開が見つかりません"または「アプリケーションのダウンロードが中断された、ネットワーク エラーを確認し、後でもう一度お試しください」  
  このメッセージを示すによって参照される 1 つまたは複数のファイル、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]マニフェストをダウンロードすることはできません。 このエラーをデバッグする最も簡単な方法は、URL をダウンロードしようとするする[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]をダウンロードできないことを示します。 考えられる原因を次に示します。  
   
--   ログ ファイルが "(403) Forbidden" または "(404) Not found" かどうか、Web サーバーがこのファイルのダウンロードをブロックしないように構成されていることを確認します。 詳細については、「[ClickOnce 配置でのサーバーおよびクライアント構成の問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)」を参照してください。  
+- ログ ファイルが "(403) Forbidden" または "(404) Not found" かどうか、Web サーバーがこのファイルのダウンロードをブロックしないように構成されていることを確認します。 詳細については、「[ClickOnce 配置でのサーバーおよびクライアント構成の問題](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)」を参照してください。  
   
--   場合は、.config ファイルは、サーバーによってブロックされているは、「"をインストールしようすると、エラーをダウンロード、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .config ファイルがあるアプリケーション"このトピックで後述します。  
+- 場合は、.config ファイルは、サーバーによってブロックされているは、「"をインストールしようすると、エラーをダウンロード、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .config ファイルがあるアプリケーション"このトピックで後述します。  
   
--   このため、発生されているかどうかを判断、`deploymentProvider`配置マニフェストで URL がアクティブ化に使用する URL とは異なる場所を指しています。  
+- このため、発生されているかどうかを判断、`deploymentProvider`配置マニフェストで URL がアクティブ化に使用する URL とは異なる場所を指しています。  
   
--   すべてのファイルがサーバー上に存在することを確認します。[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]ログがどのように指示するファイルが見つかりませんでした。  
+- すべてのファイルがサーバー上に存在することを確認します。[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]ログがどのように指示するファイルが見つかりませんでした。  
   
--   ネットワーク接続の問題があるかどうかを参照してください。ダウンロード中に、クライアント コンピューターがオフラインになった場合、このメッセージが表示されることができます。  
+- ネットワーク接続の問題があるかどうかを参照してください。ダウンロード中に、クライアント コンピューターがオフラインになった場合、このメッセージが表示されることができます。  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>.Config ファイルがある ClickOnce アプリケーションをインストールしようとすると、エラーをダウンロードします。  
  既定では、Visual Basic の Windows ベースのアプリケーションには、App.config ファイルが含まれています。 問題があるユーザーはオペレーティング システムがセキュリティ上の理由の .config ファイルのインストールをブロックするため、Windows Server 2003 を使用する Web サーバーからインストールしようとしています。 インストールする .config ファイルを有効にするには、 **".deploy"ファイル拡張子を使用して、** で、**発行オプション** ダイアログ ボックス。  
@@ -67,11 +67,11 @@ ms.locfileid: "58973485"
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>サーバーで、アプリケーションの更新が、クライアントは、更新プログラムをダウンロードしていません。  
  次のタスクのいずれかを実行して、この問題を解決可能性があります。  
   
--   確認、`deploymentProvider`配置マニフェストの URL。 同じ場所に bits を更新することを確認する`deploymentProvider`を指します。  
+- 確認、`deploymentProvider`配置マニフェストの URL。 同じ場所に bits を更新することを確認する`deploymentProvider`を指します。  
   
--   配置マニフェストの更新間隔を確認します。 この間隔が 1 回、6 時間ごとなどの定期的な間隔に設定されている場合[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]はこの間隔が経過するまでに更新プログラムをスキャンしません。 アプリケーションを起動するたびに更新プログラムをスキャンするマニフェストを変更することができます。 更新間隔の変更は、開発時に更新プログラムがインストールされているアプリケーションのアクティベーションが長くなることを確認する便利なオプションです。  
+- 配置マニフェストの更新間隔を確認します。 この間隔が 1 回、6 時間ごとなどの定期的な間隔に設定されている場合[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]はこの間隔が経過するまでに更新プログラムをスキャンしません。 アプリケーションを起動するたびに更新プログラムをスキャンするマニフェストを変更することができます。 更新間隔の変更は、開発時に更新プログラムがインストールされているアプリケーションのアクティベーションが長くなることを確認する便利なオプションです。  
   
--   [スタート] メニューにアプリケーションをもう一度起動してみてください。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] バック グラウンドで更新を検出した可能性がありますが、次回の起動時に、bits をインストールするように求められます。  
+- [スタート] メニューにアプリケーションをもう一度起動してみてください。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] バック グラウンドで更新を検出した可能性がありますが、次回の起動時に、bits をインストールするように求められます。  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>更新中には、次のログ エントリがあるエラーが表示されます。「デプロイメント内の参照は、アプリケーション マニフェストで定義されている id に一致しない」  
  展開およびアプリケーション マニフェストでは、手動で編集し、両者を同期するように 1 つのマニフェストにアセンブリの id の説明が原因となったために、このエラーが発生する可能性があります。 アセンブリの id は、その名前、バージョン、カルチャ、および公開キー トークンで構成されます。 マニフェストの identity の説明を確認し、任意の相違点を修正します。  
@@ -84,9 +84,9 @@ ms.locfileid: "58973485"
   
  次の操作を行う必要があります。  
   
--   配置マニフェストの id、アプリケーション マニフェストの id、およびメイン アプリケーションの EXE の id がすべて一意であることを確認します。  
+- 配置マニフェストの id、アプリケーション マニフェストの id、およびメイン アプリケーションの EXE の id がすべて一意であることを確認します。  
   
--   ファイルのパスが 100 文字を超えていないことを確認します。 アプリケーションには長すぎるファイル パスが含まれている場合は、格納できるパスの最大の制限を超える可能性があります。 再インストールして、パスを短くしてください。  
+- ファイルのパスが 100 文字を超えていないことを確認します。 アプリケーションには長すぎるファイル パスが含まれている場合は、格納できるパスの最大の制限を超える可能性があります。 再インストールして、パスを短くしてください。  
   
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>アプリケーション構成ファイルで PrivatePath 設定は適用されません。  
  PrivatePath (Fusion のプローブ パス) を使用するには、アプリケーションは、完全な信頼のアクセス許可を要求する必要があります。 完全な信頼を要求し、もう一度お試しに、アプリケーション マニフェストを変更してください。  
@@ -115,9 +115,9 @@ ms.locfileid: "58973485"
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>証明書ストアと空白のメッセージを受信したボックス内の証明書に署名しようとしています。  
  **署名** ダイアログ ボックスがあります。  
   
--   選択**格納された証明書を使用してサインイン**と  
+- 選択**格納された証明書を使用してサインイン**と  
   
--   は、一覧から証明書を選択します。最初の証明書は、既定で選択します。  
+- は、一覧から証明書を選択します。最初の証明書は、既定で選択します。  
   
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>「署名のない」ボタンをクリックすると、例外が発生します。  
  この問題は、既知のバグです。 すべて[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]マニフェストが署名するために必要です。 署名のオプションのいずれかを選択し、 **OK**します。  

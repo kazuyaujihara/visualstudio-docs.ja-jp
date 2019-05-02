@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2971a13e82e4b31f985be6db2a8a32167a3f74b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 51430c78dcf694a602ce6b8904262647a257ac32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403484"
 ---
 # <a name="math-nodes"></a>数値演算ノード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54796221"
 シェーダー デザイナーでは、代数演算、論理演算、三角関数演算などの数値演算が演算ノードによって実行されます。  
   
 > [!NOTE]
->  シェーダー デザイナーで演算ノードを使用する際には、型の上位変換が特に顕著に見られます。 型の上位変換が入力パラメーターに及ぼす影響については、「[シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)」の「入力の上位変換」を参照してください。  
+> シェーダー デザイナーで演算ノードを使用する際には、型の上位変換が特に顕著に見られます。 型の上位変換が入力パラメーターに及ぼす影響については、「[シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)」の「入力の上位変換」を参照してください。  
   
 ## <a name="math-node-reference"></a>数値演算ノードの参照  
   

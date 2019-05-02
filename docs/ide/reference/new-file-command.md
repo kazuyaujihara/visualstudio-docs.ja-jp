@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d6707d2e9ed8e001762939cb08ffee58f1c1cdc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950909"
 ---
 # <a name="new-file-command"></a>NewFile コマンド
 新規ファイルを作成して開きます。 ファイルは [その他のファイル] フォルダーの下に表示されます。

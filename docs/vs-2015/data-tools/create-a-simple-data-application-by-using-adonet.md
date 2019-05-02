@@ -14,37 +14,36 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58973889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436973"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET を使用した単純なデータ アプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 データベースのデータを処理するアプリケーションの作成では、接続文字列の定義、データの挿入、ストアド プロシージャの実行などの基本的なタスクを実行します。 このトピックでは、Visual c# または Visual Basic および ADO.NET を使用して単純な Windows フォームの「フォーム オーバー データ」アプリケーションからデータベースと対話する方法を検出できます。  すべての .NET データ テクノロジ: LINQ to SQL、および Entity Framework のデータセットを含む-最終的にこの記事で示したものとよく似ている手順を実行します。  
   
  この記事では、非常に高速の方法で、データベースからデータを取得する簡単な方法を示します。 を、アプリケーションが自明でない方法でデータを変更し、データベースを更新する必要がある場合は、Entity Framework を使用して、基になるデータの変更をユーザー インターフェイス コントロールを自動的に同期へのデータ バインディングを使用してを検討してください。  
   
 > [!IMPORTANT]
->  コードをシンプルにするため、運用環境で使用する例外処理は含まれていません。  
+> コードをシンプルにするため、運用環境で使用する例外処理は含まれていません。  
   
  **このトピックの内容**  
   
--   [サンプル データベースを設定します。](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+- [サンプル データベースを設定します。](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [フォームを作成して、コントロールを追加します。](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+- [フォームを作成して、コントロールを追加します。](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [接続文字列を保存します。](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+- [接続文字列を保存します。](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [接続文字列を取得します。](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+- [接続文字列を取得します。](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [フォームのコードを記述します。](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+- [フォームのコードを記述します。](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [アプリケーションをテストします。](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+- [アプリケーションをテストします。](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  アプリケーションの作成には、次が必要です:  
@@ -59,10 +58,10 @@ ms.locfileid: "58973889"
   
   このトピックは、Visual Studio IDE の基本的な機能を理解していて、Windows フォーム アプリケーションの作成、そのプロジェクトへのフォームの追加、フォームにボタンなどのコントロールの追加、コントロールのプロパティの設定、およびシンプルなイベントのコード記述ができることを前提としています。 完了することをお勧め、これらのタスクを慣れていない場合、 [Visual c# および Visual Basic の概要](../ide/getting-started-with-visual-csharp-and-visual-basic.md)このトピックを開始する前にします。  
   
-##  <a name="BKMK_setupthesampledatabase"></a> サンプル データベースを設定します。  
+## <a name="BKMK_setupthesampledatabase"></a> サンプル データベースを設定します。  
  このチュートリアルで扱うサンプル データベースには、「Customer (顧客)」と「Order (注文)」のテーブルがあります。 最初はテーブルにデータはありませんが、作成したアプリケーションを実行するとデータが追加されます。 データベースには、5 種類のシンプルなストアド プロシージャもあります。 [スクリプトを使用して SQL database を作成する](../data-tools/create-a-sql-database-by-using-a-script.md)テーブル、主キーと外部キー、制約、およびストアド プロシージャを作成する TRANSACT-SQL スクリプトが含まれています。  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> フォームを作成して、コントロールを追加します。  
+## <a name="BKMK_createtheformsandaddcontrols"></a> フォームを作成して、コントロールを追加します。  
   
 1. Windows フォーム アプリケーションでは、プロジェクトを作成し、SimpleDataApp と名前をつけます。  
   
@@ -70,16 +69,16 @@ ms.locfileid: "58973889"
   
 2. 2 つの Windows フォームをプロジェクトに追加し、合計 3 つのフォームに次の名前を付けます。  
   
-   -   ナビゲーション  
+   - ナビゲーション  
   
-   -   NewCustomer  
+   - NewCustomer  
   
-   -   FillOrCancel  
+   - FillOrCancel  
   
 3. 各フォームに、次の図に示されるように、テキスト ボックス、ボタン、および他のコントロールを追加します。 各コントロールに、テーブルを示すプロパティを設定します。  
   
    > [!NOTE]
-   >  グループ ボックス、およびラベル コントロールは明確性を追加しますが、コードでは使用されません。  
+   > グループ ボックス、およびラベル コントロールは明確性を追加しますが、コードでは使用されません。  
   
    **Navigation フォーム**  
   
@@ -120,33 +119,33 @@ ms.locfileid: "58973889"
 |ボタン|Name = btnFillOrder|  
 |ボタン|Name = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> 接続文字列を保存します。  
+## <a name="BKMK_storetheconnectionstring"></a> 接続文字列を保存します。  
  アプリケーションがデータベースの接続を開くとき、アプリケーションは接続文字列にアクセスする必要があります。 各フォーム上の文字列を手動で入力しなくても、プロジェクトで、アプリケーション構成ファイルに文字列を格納し、メソッドは、アプリケーションのすべてのフォームから呼び出されたときに、文字列を返すメソッドを作成します。  
   
  内の接続文字列を検索する**SQL Server オブジェクト エクスプ ローラー**でデータベースを右クリックし、選択**プロパティ**、ConnectionString プロパティを検索します。 Ctrl キーを押しながら A キーを使用すると、文字列を選択します。  
   
-1.  **ソリューション エクスプ ローラー**を選択、**プロパティ**ノードをクリックして、プロジェクトの下で**Settings.settings**します。  
+1. **ソリューション エクスプ ローラー**を選択、**プロパティ**ノードをクリックして、プロジェクトの下で**Settings.settings**します。  
   
-2.  **名前**列、入力`connString`します。  
+2. **名前**列、入力`connString`します。  
   
-3.  **型**一覧で、 **(接続文字列)** します。  
+3. **型**一覧で、 **(接続文字列)** します。  
   
-4.  **スコープ**一覧で、**アプリケーション**します。  
+4. **スコープ**一覧で、**アプリケーション**します。  
   
-5.  **値**列で、(任意の外部の引用符)、なし、接続文字列を入力し、変更を保存します。  
+5. **値**列で、(任意の外部の引用符)、なし、接続文字列を入力し、変更を保存します。  
   
 > [!NOTE]
->  実際のアプリケーションでは文字列を格納する接続」の説明に従って、安全に[接続文字列と構成ファイル](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)します。  
+> 実際のアプリケーションでは文字列を格納する接続」の説明に従って、安全に[接続文字列と構成ファイル](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)します。  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> 接続文字列を取得します。  
+## <a name="BKMK_retrievetheconnectionstring"></a> 接続文字列を取得します。  
   
-1.  メニュー バーで選択**プロジェクト** > **参照の追加**、し、System.Configuration.dll への参照を追加します。  
+1. メニュー バーで選択**プロジェクト** > **参照の追加**、し、System.Configuration.dll への参照を追加します。  
   
-2.  メニュー バーで選択**プロジェクト** > **クラスの追加**クラス ファイルをプロジェクトに追加し、ファイルの名前を`Utility`します。  
+2. メニュー バーで選択**プロジェクト** > **クラスの追加**クラス ファイルをプロジェクトに追加し、ファイルの名前を`Utility`します。  
   
      Visual Studio がファイルを作成し、表示で**ソリューション エクスプ ローラー**します。  
   
-3.  Utility ファイルでプレースホルダー コードを次のコードに置き換えます。 コードのセクションを識別する (Util- が付けられた) 番号付きのコメントを確認します。 テーブルはコードに従ってキー ポイントを呼び出します。  
+3. Utility ファイルでプレースホルダー コードを次のコードに置き換えます。 コードのセクションを識別する (Util- が付けられた) 番号付きのコメントを確認します。 テーブルはコードに従ってキー ポイントを呼び出します。  
   
     ```csharp  
     using System;  
@@ -220,7 +219,7 @@ ms.locfileid: "58973889"
     |Util-2|変数 `returnValue` を定義し、`null` (C#)、または `Nothing` (Visual Basic) に初期化します。|  
     |Util-3|入力した場合でも`connString`内の接続文字列の名前として、**プロパティ**指定する必要があります ウィンドウ、 `"SimpleDataApp.Properties.Settings.connString"` (c#) または`"SimpleDataApp.My.MySettings.connString"`(Visual Basic)、コードでします。|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> フォームのコードを記述します。  
+## <a name="BKMK_writethecodefortheforms"></a> フォームのコードを記述します。  
  このセクションには、各フォームの動作を簡単な概要と、フォームを作成するコードがあります。 番号付きコメントは、コードのセクションを識別します。  
   
 ### <a name="navigation-form"></a>Navigation フォーム  
@@ -1140,5 +1139,5 @@ End Namespace
 |FC-8|`btnFillOrder` のクリック イベント ハンドラーのコードを追加します。 このコードは `Sales.uspFillOrder` ストアド プロシージャを実行します。|  
 |FC-9|いることを確認するメソッドを作成`OrderID`へのパラメーターとして送信する準備ができて、`SqlCommand`オブジェクト。<br /><br /> -で、ID が入力されていることを確認して`txtOrderID`します。<br />-使用`Regex.IsMatch`整数以外の文字の簡単なチェックを定義します。<br />-宣言して、 `parsedOrderID` fc-2 で変数。<br />-入力が有効な場合、テキストを整数に変換しに値を格納、`parsedOrderID`変数。<br />-ラップ、`isOrderID`に関するメソッド、 `btnFindByOrderID`、 `btnCancelOrder`、および`btnFillOrder`クリックしてイベント ハンドラー。|  
   
-##  <a name="BKMK_testyourapplication"></a> アプリケーションをテストします。  
+## <a name="BKMK_testyourapplication"></a> アプリケーションをテストします。  
  ビルドし、各クリック イベント ハンドラーのコードを記述した後、アプリケーションをテストするには、F5 キーを選択し、コーディングを完了した後、します。

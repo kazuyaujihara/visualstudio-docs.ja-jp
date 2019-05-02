@@ -10,12 +10,12 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de44dde72e339a2afe4caff779e3468ae2b8601e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 197df09d54500e16ca4f904662693bdfc983f7b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822803"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>ロード テスト アナライザーを使用したロード テスト結果の分析
 
@@ -25,11 +25,11 @@ ms.locfileid: "55942896"
 
 次のように、ロード テストの結果を分析します。
 
--   実行中にロード テストを監視する。
+- 実行中にロード テストを監視する。
 
--   完了後にロード テストを分析する。
+- 完了後にロード テストを分析する。
 
--   以前のロード テストの結果を表示する。
+- 以前のロード テストの結果を表示する。
 
 また、傾向分析用に複数のレポートを比較するレポートを作成して、関係者と共有することもできます。 「[テストの比較または傾向分析に備えたロード テストの結果レポートの作成](../test/compare-load-test-results.md)」を参照してください。
 

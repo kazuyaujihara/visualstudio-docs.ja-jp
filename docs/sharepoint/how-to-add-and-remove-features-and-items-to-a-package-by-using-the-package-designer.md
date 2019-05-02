@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f76abaaa1210320c14175be2bb47828b7bd06aa9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966979"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>方法: 追加して、パッケージ デザイナーを使用して機能と、パッケージにアイテムを削除
   SharePoint ソリューションを作成するときに、Visual Studio は、ソリューション内のパッケージに既定の SharePoint 機能を追加します。 最終的な配置は、前に追加し、SharePoint プロジェクト アイテムと SharePoint のパッケージを変更する機能を削除できます。
@@ -52,7 +52,7 @@ ms.locfileid: "56608098"
 
 #### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>パッケージ デザイナーを使用した SharePoint の機能を削除するには
 
-1.  **パッケージ内の項目**一覧で、削除、および選択する項目を選択して、**削除**(<) ボタンをクリックしてまたは選択、**すべて削除**ボタン (<<) を削除するにはすべての項目。
+1. **パッケージ内の項目**一覧で、削除、および選択する項目を選択して、**削除**(<) ボタンをクリックしてまたは選択、**すべて削除**ボタン (<<) を削除するにはすべての項目。
 
      SharePoint 項目に表示される、**ソリューション内の項目**一覧。
 

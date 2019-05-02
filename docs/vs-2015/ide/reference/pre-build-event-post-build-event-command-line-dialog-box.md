@@ -34,28 +34,27 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3e6597e8b288e85c6bd49d3c8e843fd464bf094
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 213535d983f95f304b8e0fba3241fa502577f0f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438052"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 エディット ボックスに [[ビルド イベント] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) のビルド前またはビルド後イベントを直接入力したり、使用できるマクロの一覧からビルド前およびビルド後のマクロを選択したりできます。  
   
 > [!NOTE]
->  プロジェクトが最新の状態で、ビルドがトリガーされない場合、ビルド前イベントは実行されません。  
+> プロジェクトが最新の状態で、ビルドがトリガーされない場合、ビルド前イベントは実行されません。  
   
 ## <a name="ui-element-list"></a>UI 要素の一覧  
  **コマンド ライン エディット ボックス**  
  ビルド前またはビルド後に実行するイベントが含まれます。  
   
 > [!NOTE]
->  .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。  
+> .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。  
   
  **[マクロ]**  
  エディット ボックスを展開して、コマンド ライン エディット ボックスに挿入するマクロの一覧を表示します。  
@@ -94,5 +93,5 @@ ms.locfileid: "54753379"
 ## <a name="see-also"></a>関連項目
  [Visual Studio でのカスタム ビルド イベントの指定](../../ide/specifying-custom-build-events-in-visual-studio.md)   
  [[ビルド イベント] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)   
- [方法 : ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [方法 : ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)
+ [方法: ビルド イベント (Visual Basic) を指定します。](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [方法: ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)

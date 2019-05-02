@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 67e16e2825f03c9ae452e639d6a086bee584ac95
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992567"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
 Windows スクリプト エンジンのサイトを作成するホストによって実装されます。 通常、このサイトは、スクリプト (たとえば、ActiveX コントロール) に表示されるすべてのオブジェクトのコンテナーに関連付けられます。 通常、このコンテナーは、ドキュメントまたは表示されているページに対応します。 たとえば、Microsoft Internet Explorer は、HTML ページが表示されている各のようなコンテナーを作成は。 各 ActiveX コントロール (またはその他のオートメーション オブジェクト)、ページと、スクリプト エンジン自体には、このコンテナー内で列挙可能になります。  

@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1f2969fe93ab2623b1f8406f6eaa0ce35c454202
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 123f01b2e4545545a380f5a37adcdaf883bc9e91
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974723"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>複数バージョンの Visual Studio をインストールする
 
@@ -38,7 +38,7 @@ Visual Studio は、以前のバージョンまたは最新バージョンの Vi
 
 * Visual Studio 2017 で作成されたソリューションを Visual Studio 2019 を使用して開く場合、Visual Studio 2019 に固有の機能が実装されていない限り、後で以前のバージョンのソリューションを開き、再度変更することが。
 
-* Visual Studio 2017 以前のバージョンで作成されたソリューションを Visual Studio 2019 を使用して開こうとする場合、ご利用のプロジェクトとファイルを Visual Studio 2019 に対応するように変更することが必要な場合があります。 詳細については、[Visual Studio プロジェクトの移植、移行、およびアップグレード](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)に関するページを参照してください。
+* Visual Studio 2017 以前のバージョンで作成されたソリューションを Visual Studio 2019 を使用して開こうとする場合、ご利用のプロジェクトとファイルを Visual Studio 2019 に対応するように変更することが必要な場合があります。 詳細については、[Visual Studio プロジェクトの移植、移行、およびアップグレード](../porting/port-migrate-and-upgrade-visual-studio-projects.md)に関するページを参照してください。
 
 ::: moniker-end
 
@@ -77,17 +77,17 @@ Visual Basic、Visual C#、および Visual F# のプロジェクトでは、**�
 
 | 言語 | トピック |
 |--------------|-----------|
-| Visual Basic | [[アプリケーション] ページ (プロジェクト デザイナー)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2019) |
-| Visual C# | [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2019) |
-| Visual F# | [Visual Studio で Visual F# を使用して開発する](../ide/fsharp-visual-studio.md?view=vs-2019) |
+| Visual Basic | [[アプリケーション] ページ (プロジェクト デザイナー)](../ide/reference/application-page-project-designer-visual-basic.md) |
+| Visual C# | [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md) |
+| Visual F# | [Visual Studio で Visual F# を使用して開発する](../ide/fsharp-visual-studio.md) |
 | C++ | [方法: ターゲット フレームワークおよびプラットフォームのツールセットを変更する](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio のインストール](install-visual-studio.md?view=vs-2019)
-* [Visual Studio プロジェクトのポート、移行、アップグレード](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)
+* [Visual Studio のインストール](install-visual-studio.md)
+* [Visual Studio プロジェクトのポート、移行、アップグレード](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 * [C/C++ 分離アプリケーションおよび side-by-side アセンブリのビルド](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end

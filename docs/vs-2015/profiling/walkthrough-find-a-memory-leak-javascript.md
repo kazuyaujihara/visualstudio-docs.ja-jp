@@ -16,14 +16,14 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439662"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>チュートリアル: メモリ リークの検出 (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>チュートリアル: メモリ リーク (JavaScript) の検出します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows および Windows Phone に適用されます] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
@@ -34,18 +34,18 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>JavaScript メモリ アナライザーのテスト アプリの実行  
   
-1.  Visual Studio で、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
+1. Visual Studio で、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
   
-2.  左ペインで **[JavaScript]** を選択し、次に **[Windows]**、 **[Windows 8]** の順に選択してから、 **[ユニバーサル]** または **[Windows Phone アプリ]** を選択します。  
+2. 左ペインで **[JavaScript]** を選択し、次に **[Windows]**、 **[Windows 8]** の順に選択してから、 **[ユニバーサル]** または **[Windows Phone アプリ]** を選択します。  
   
     > [!IMPORTANT]
-    >  このトピックに示すメモリ使用量の結果は、Windows 8 アプリでテストされます。  
+    > このトピックに示すメモリ使用量の結果は、Windows 8 アプリでテストされます。  
   
-3.  中央のペインにある **[空のアプリケーション]** プロジェクト テンプレートを選択します。  
+3. 中央のペインにある **[空のアプリケーション]** プロジェクト テンプレートを選択します。  
   
-4.  **[名前]** ボックスに `JS_Mem_Tester`などの名前を指定し、 **[OK]** をクリックします。  
+4. **[名前]** ボックスに `JS_Mem_Tester`などの名前を指定し、 **[OK]** をクリックします。  
   
-5.  **ソリューション エクスプローラー**で default.html を開き、次のコードを \<body> タグの間に貼り付けます。  
+5. **ソリューション エクスプローラー**で default.html を開き、次のコードを \<body> タグの間に貼り付けます。  
   
     ```html  
     <div class="wrapper">  
@@ -55,9 +55,9 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
     ```  
   
     > [!IMPORTANT]
-    >  「Windows 8.1 ユニバーサル アプリ」テンプレートを使用する場合、Windows および.WindowsPhone プロジェクトの両方で HTML および CSS コードを更新する必要があります。  
+    > 「Windows 8.1 ユニバーサル アプリ」テンプレートを使用する場合、Windows および.WindowsPhone プロジェクトの両方で HTML および CSS コードを更新する必要があります。  
   
-6.  default.css を開き、次の CSS コードを追加します。  
+6. default.css を開き、次の CSS コードを追加します。  
   
     ```css  
     .memleak {  
@@ -65,7 +65,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
     }  
     ```  
   
-7.  default.js を開き、すべてのコードを次のコードに置き換えます。  
+7. default.js を開き、すべてのコードを次のコードに置き換えます。  
   
     ```javascript  
     (function () {  
@@ -126,7 +126,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
     })();  
     ```  
   
-8.  F5 キーを押してデバッグを開始します。 **[Leak Memory]** ボタンがページに表示されることを確認します。  
+8. F5 キーを押してデバッグを開始します。 **[Leak Memory]** ボタンがページに表示されることを確認します。  
   
 9. Visual Studio に戻り (Alt + Tab キー)、Shift キーを押しながら F5 キーを押してデバッグを停止します。  
   
@@ -137,7 +137,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 1. **[デバッグ]** ツール バーの、 **[デバッグの開始]** の一覧で、更新されたプロジェクトのデバッグ対象を選択します (Windows Phone エミュレーターまたは **[シミュレーター]** のいずれか)。  
   
    > [!TIP]
-   >  Windows ストア アプリについては、この一覧で **[ローカル コンピューター]** または **[リモート コンピューター]** を選択することもできます。 ただし、エミュレーターやシミュレーターの場合は、Visual Studio の横に配置することで、実行中のアプリと JavaScript メモリ アナライザーを簡単に切り替えることができます。 詳しくは、「[Visual Studio からのアプリの実行](../debugger/run-store-apps-from-visual-studio.md)」および「[リモート コンピューターでの Windows ストア アプリの実行](../debugger/run-windows-store-apps-on-a-remote-machine.md)」を参照してください。  
+   > Windows ストア アプリについては、この一覧で **[ローカル コンピューター]** または **[リモート コンピューター]** を選択することもできます。 ただし、エミュレーターやシミュレーターの場合は、Visual Studio の横に配置することで、実行中のアプリと JavaScript メモリ アナライザーを簡単に切り替えることができます。 詳しくは、「[Visual Studio からのアプリの実行](../debugger/run-store-apps-from-visual-studio.md)」および「[リモート コンピューターでの Windows ストア アプリの実行](../debugger/run-windows-store-apps-on-a-remote-machine.md)」を参照してください。  
   
 2. **[デバッグ]** メニューの **[パフォーマンス プロファイラー...]** をクリックします。  
   
@@ -152,7 +152,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
     ボタンをクリックすると、default.js のイベント処理コードで、メモリ リークを引き起こす処理が実行されます。 これを診断用に使用します。  
   
    > [!TIP]
-   >  メモリ リークをテストするシナリオを繰り返すことによって、アプリの初期化中やページの読み込み時にヒープに追加されるオブジェクトなど、必要のない情報を簡単に除去できます。  
+   > メモリ リークをテストするシナリオを繰り返すことによって、アプリの初期化中やページの読み込み時にヒープに追加されるオブジェクトなど、必要のない情報を簡単に除去できます。  
   
 5. 実行中のアプリから Visual Studio に切り替えます (Alt + Tab キーを押します)。  
   
@@ -171,14 +171,14 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
     ![ベースライン スナップショットとスナップショット 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
    > [!NOTE]
-   >  Windows Phone エミュレーターでは、スナップショットが取得されたときにアプリのスクリーンショットが表示されません。  
+   > Windows Phone エミュレーターでは、スナップショットが取得されたときにアプリのスクリーンショットが表示されません。  
   
 9. アプリに切り替え、もう一度 **[Leak Memory]** をクリックします。  
   
 10. Visual Studio に切り替え、 **[ヒープ スナップショットの作成]** をもう一度クリックします。  
   
     > [!TIP]
-    >  このワークフローの 3 番目のスナップショットを取得することにより、ベースラインのスナップショットと 2 番目のスナップショットの間での、メモリ リークと関連しない変更を除外できます。 たとえば、ページのヘッダーやフッターの更新などがある場合、メモリ使用量には変化があっても、メモリ リークには無関係である場合があります。  
+    > このワークフローの 3 番目のスナップショットを取得することにより、ベースラインのスナップショットと 2 番目のスナップショットの間での、メモリ リークと関連しない変更を除外できます。 たとえば、ページのヘッダーやフッターの更新などがある場合、メモリ使用量には変化があっても、メモリ リークには無関係である場合があります。  
   
      次の図は、スナップショット #2 とスナップショット #3 を示しています。  
   
@@ -191,7 +191,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
     - ヒープ サイズ (左側の赤い上矢印) は、スナップショット #1 に比べて数 KB 増加しています。  
   
       > [!IMPORTANT]
-      >  ヒープ サイズの正確なメモリ使用量の値はデバッグ対象によって異なります。  
+      > ヒープ サイズの正確なメモリ使用量の値はデバッグ対象によって異なります。  
   
     - ヒープのオブジェクト数 (右側の赤い上矢印) も、スナップショット #1 に比べて増加しています。 1 つのオブジェクトが追加され (+1)、削除されたオブジェクトはありません (-0)。  
   
@@ -222,9 +222,9 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
       この時点でのアプリの知識が役立ちます。選択、 **Leak Memory**ボタンの DIV 要素を削除して、コードが正しく動作してないようですので、要素を追加する必要があります (つまり、メモリがリークする)。 次のセクションでは、その修正方法について説明します。  
   
     > [!TIP]
-    >  `Global` オブジェクトに対する相対的な位置を特定することによってオブジェクトを識別できる場合があります。 これを行うには、その識別子のショートカット メニューを開き、 **[ルート ビューで表示]** をクリックします。  
+    > `Global` オブジェクトに対する相対的な位置を特定することによってオブジェクトを識別できる場合があります。 これを行うには、その識別子のショートカット メニューを開き、 **[ルート ビューで表示]** をクリックします。  
   
-##  <a name="FixingMemory"></a> メモリの問題の修正  
+## <a name="FixingMemory"></a> メモリの問題の修正  
   
 1. プロファイラーで公開されたデータを使用して、"項目" の ID と共に DOM 要素の削除を担当するコードを確認します。 これは `initialize()` 関数で発生します。  
   

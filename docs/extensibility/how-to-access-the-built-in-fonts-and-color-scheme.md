@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 831123caead6593fdbb548fd6e69a63646790d8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MT
+ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415512"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>方法: 組み込みのフォントをアクセスし、ccheme の色
 Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウに関連付けられているフォントおよび色のスキームがあります。 このスキームを通じてアクセスできる、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>インターフェイス。
@@ -34,26 +34,26 @@ Visual Studio 統合開発環境 (IDE) では、エディター ウィンドウ�
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>組み込みのフォントと色を使用してカテゴリを定義するには
 
-1.  任意の GUID を作成します。
+1. 任意の GUID を作成します。
 
      この GUID は、カテゴリを一意に識別に使用されます。 このカテゴリには、IDE の既定のフォントおよび色の仕様が再利用されます。
 
     > [!NOTE]
-    >  フォントおよび色のデータを取得するときに、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>またはその他のインターフェイスでは、Vspackage この GUID を使用して組み込みの情報を参照します。
+    > フォントおよび色のデータを取得するときに、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>またはその他のインターフェイスでは、Vspackage この GUID を使用して組み込みの情報を参照します。
 
-2.  カテゴリの名前は、VSPackage のリソース内の文字列テーブルに追加する必要があります (*.rc*) ファイルを IDE に表示するときに、必要に応じてローカライズできるようにします。
+2. カテゴリの名前は、VSPackage のリソース内の文字列テーブルに追加する必要があります (*.rc*) ファイルを IDE に表示するときに、必要に応じてローカライズできるようにします。
 
-     詳細については、[を追加または削除する文字列](/cpp/windows/adding-or-deleting-a-string)を参照してください。
+     詳細については、次を参照してください。[を追加または削除する文字列](/cpp/windows/adding-or-deleting-a-string)します。
 
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>組み込みのフォントと色を使用してカテゴリを登録するには
 
-1.  特殊な種類のカテゴリのレジストリ エントリの次の場所を作成します。
+1. 特殊な種類のカテゴリのレジストリ エントリの次の場所を作成します。
 
      *[Hklm \software\microsoft \Visual Studio\\\<Visual Studio のバージョン > \FontAndColors\\\<カテゴリ >*]
 
      *\<カテゴリ >* カテゴリのローカライズされていない名前を指定します。
 
-2.  4 つの値をストックのフォントとカラー スキームを使用するレジストリを作成します。
+2. 4 つの値をストックのフォントとカラー スキームを使用するレジストリを作成します。
 
     |名前|型|データ|説明|
     |----------|----------|----------|-----------------|

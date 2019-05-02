@@ -1,6 +1,6 @@
 ---
 title: 複数プロジェクトのテンプレートを作成する
-ms.date: 01/02/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ef0dc772422322d8cfa2f8c7ca88a7cf30eab31
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430498"
 ---
 # <a name="how-to-create-multi-project-templates"></a>方法: 複数プロジェクトのテンプレートを作成する
 
@@ -68,6 +68,19 @@ ms.locfileid: "58416254"
     </TemplateContent>
     ```
 
+> [!TIP]
+> 複数プロジェクトのテンプレートのみを新しいプロジェクト ダイアログ ボックスに表示し、それに含まれる個々のプロジェクトを表示しない場合は、内部テンプレートに[非表示](../extensibility/hidden-element-visual-studio-templates.md)とマークを付けます。 次に例を示します。
+>
+> ```xml
+> <VSTemplate Type="Project" ... >
+>     <TemplateData>
+>         ...
+>         <Hidden>true</Hidden>
+>     </TemplateData>
+>     ...
+> </VSTemplate>
+> ```
+
 ## <a name="create-a-multi-project-template-from-an-existing-solution"></a>既存のソリューションから複数プロジェクトのテンプレートを作成する
 
 1. ソリューションを作成して 2 つ以上のプロジェクトを追加します。
@@ -75,7 +88,11 @@ ms.locfileid: "58416254"
 2. テンプレートにエクスポートする準備ができるまで、プロジェクトをカスタマイズします。
 
    > [!TIP]
-   > [テンプレート パラメーター](template-parameters.md)を使用していて、親テンプレートの変数を参照したい場合は、パラメーターの名前にプレフィックス `ext_` を付加します。 たとえば、`$ext_safeprojectname$` のようにします。
+   > [テンプレート パラメーター](template-parameters.md)を使用していて、親テンプレートの変数を参照したい場合は、パラメーターの名前にプレフィックス `ext_` を付加します。 たとえば、`$ext_safeprojectname$` のようにします。 また、**ProjectTemplateLink** 要素の **CopyParameters** 属性を **true** に設定します。
+   >
+   > ```xml
+   > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
+   > ```
 
 3. **[プロジェクト]** メニューの **[テンプレートのエクスポート]** を選択します。
 

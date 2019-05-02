@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1edc2182b475fca2cb641a2b7598ea5164db368d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a25411449c1b13b12f05819061847c252a76c9c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848701"
 ---
 # <a name="bc-texture-compression-variant"></a>BC テクスチャ圧縮バリアント
 B8G8R8X8、B8G8R8A8、または R8G8B8A8 のバリエーションであるピクセル形式を持つテクスチャで、ブロック圧縮を有効にします。
@@ -23,18 +23,18 @@ B8G8R8X8、B8G8R8A8、または R8G8B8A8 のバリエーションであるピク
 
  対象のテクスチャがブロックベースの圧縮に適していて、完全な色の忠実性が必要ない場合は、ブロック圧縮形式を使用してメモリの使用量を減らし、帯域幅の使用を減らすことを検討します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  ソース テクスチャを作成する `ID3DDevice::CreateTexture2D` への呼び出しのたびに、ブロックベースの圧縮形式を使用してテクスチャを圧縮します。 具体的には、以下の場合にテクスチャが圧縮されます。
 
 - `D3D11_TEXTURE2D_DESC` で渡される`pDesc` オブジェクトが、不変のシェーダー リソースを記述する場合、つまり
 
-  -   BindFlags メンバーは D3D11_BIND_SHADER_RESOURCE フラグを設定するだけです。
+  - BindFlags メンバーは D3D11_BIND_SHADER_RESOURCE フラグを設定するだけです。
 
-  -   Usage メンバーは、D3D11_USAGE_DEFAULT または D3D11_USAGE_IMMUTABLE に設定されます。
+  - Usage メンバーは、D3D11_USAGE_DEFAULT または D3D11_USAGE_IMMUTABLE に設定されます。
 
-  -   CPUAccessFlags メンバーは 0 に設定されます(CPU アクセスなし)。
+  - CPUAccessFlags メンバーは 0 に設定されます(CPU アクセスなし)。
 
-  -   SamplerDesc メンバーは自身の Count メンバーを 1 に設定します (Multi-Sample Anti-Aliasing (MSAA) なし)。
+  - SamplerDesc メンバーは自身の Count メンバーを 1 に設定します (Multi-Sample Anti-Aliasing (MSAA) なし)。
 
 - `CreateTexture2D` への呼び出しに対して初期データが提供される場合。
 

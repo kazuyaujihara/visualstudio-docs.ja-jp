@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7c43a8c6c306fd33dd7cb975dee9a7d89128d7cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bcde97691a2a3cec0e7b2452cfcac9b335a170f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559909"
 ---
 # <a name="or-designer-messages"></a>O/R デザイナーのメッセージ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このトピックでは、O/R デザイナーを使用しているときに表示される可能性のあるメッセージの一覧を示します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  

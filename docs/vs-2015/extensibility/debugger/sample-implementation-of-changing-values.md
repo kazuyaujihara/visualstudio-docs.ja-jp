@@ -11,33 +11,33 @@ ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 66b949ee2bd065186c13f32e788eea8f40faf34d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6a7f8f8c352db4f2fcd0230f4eac66e8bddb94e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436682"
 ---
 # <a name="sample-implementation-of-changing-values"></a>値の変更の実装のサンプル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
   
  表示されるすべてのローカル、**ローカル**ウィンドウには、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)関連付けられているオブジェクト。 これは、`IDebugProperty2`オブジェクトには、ローカルの名前、値、および種類が含まれています。 ユーザーは、ローカルの値を変更するときに Visual Studio を呼び出す[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)ローカル メモリ内の値を更新します。 この例では、ローカルで表される、`CFieldProperty`を実装するクラス、`IDebugProperty2`インターフェイス。  
   
 > [!NOTE]
->  **ウォッチ**と **[クイック ウォッチ]** 式によって表される値を変更する、 `CValueProperty` MyCEE サンプル クラスです。 ただし、実装の`IDebugProperty2::SetValueAsString`は次のように同じです。  
+> **ウォッチ**と **[クイック ウォッチ]** 式によって表される値を変更する、 `CValueProperty` MyCEE サンプル クラスです。 ただし、実装の`IDebugProperty2::SetValueAsString`は次のように同じです。  
   
  この実装の`IDebugProperty2::SetValueAsString`は、次のタスクを実行します。  
   
-1.  値を生成する式を評価します。  
+1. 値を生成する式を評価します。  
   
-2.  関連付けられているバインド[IDebugField](../../extensibility/debugger/reference/idebugfield.md)メモリ位置にオブジェクトを生成、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。  
+2. 関連付けられているバインド[IDebugField](../../extensibility/debugger/reference/idebugfield.md)メモリ位置にオブジェクトを生成、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。  
   
-3.  一連のバイト値に変換します。  
+3. 一連のバイト値に変換します。  
   
-4.  呼び出し[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)メモリ内のバイトを格納します。  
+4. 呼び出し[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)メモリ内のバイトを格納します。  
   
 ## <a name="managed-code"></a>マネージド コード  
  これは、実装の`IDebugProperty2::SetValueAsString`マネージ コードでします。  

@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 54c93a07d7ac3754c5c57d2029fff9991221ae65
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818499"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>iOS を使用してビルドするためのツールのインストールおよび構成
 
@@ -34,7 +34,7 @@ iOS のコードを開発するためのリモート エージェントをイン
 
 - OS X Mavericks (バージョン 10.9) 以降を実行する Mac コンピューター
 
--  [Apple ID](https://appleid.apple.com/)
+- [Apple ID](https://appleid.apple.com/)
 
 - Apple のアクティブな [iOS Developer Program](https://developer.apple.com/programs/ios/) アカウント
 
@@ -66,13 +66,13 @@ iOS のコードを開発するためのリモート エージェントをイン
 
    `sudo npm install -g npm@latest`
 
-##  <a name="Install"></a> iOS 用リモート エージェントをインストールする
+## <a name="Install"></a> iOS 用リモート エージェントをインストールする
 
 Visual C++ for Cross-Platform Mobile Development をインストールすると、Visual Studio は、Mac 上で実行されているリモート エージェント [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)と通信して、ファイルを転送したり、iOS アプリをビルドして実行したり、デバッグ コマンドを送信したりできます。
 
-リモート エージェントをインストールする前に、[前提条件](#Prerequisites)を満たしていること、[Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools) をインストール済みであることを確認してください。
+リモート エージェントをインストールする前に、[前提条件](#prerequisites)を満たしていること、[Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools) をインストール済みであることを確認してください。
 
-###  <a name="DownloadInstall"></a> リモート エージェントをダウンロードしてインストールするには
+### <a name="DownloadInstall"></a> リモート エージェントをダウンロードしてインストールするには
 
 - Mac 上のターミナル アプリから、次のように入力します。
 
@@ -87,11 +87,11 @@ Visual C++ for Cross-Platform Mobile Development をインストールすると�
 
 Visual Studio を新しいバージョンに更新した場合は、リモート エージェントも現在のバージョンに更新する必要があります。 リモート エージェントを更新するには、リモート エージェントをダウンロードしてインストールする手順を繰り返します。
 
-##  <a name="Start"></a> リモート エージェントを起動する
+## <a name="Start"></a> リモート エージェントを起動する
 
 Visual Studio で iOS コードをビルドして実行するには、リモート エージェントが実行されている必要があります。 Visual Studio がリモート エージェントとペアリングされていないと、Visual Studio はリモート エージェントと通信できません。 既定では、リモート エージェントはセキュリティで保護された接続モードで実行されます。この場合、PIN を使用して Visual Studio とペアリングする必要があります。
 
-###  <a name="RemoteAgentStartServer"></a> リモート エージェントを起動するには
+### <a name="RemoteAgentStartServer"></a> リモート エージェントを起動するには
 
 - Mac 上のターミナル アプリから、次のように入力します。
 
@@ -127,7 +127,7 @@ Visual Studio で iOS コードをビルドして実行するには、リモー�
 
 - vcremote が実行されているターミナル ウィンドウで、**Control**+**C** キーを押します。
 
-##  <a name="ConfigureVS"></a> Visual Studio でリモート エージェントを構成する
+## <a name="ConfigureVS"></a> Visual Studio でリモート エージェントを構成する
 
 Visual Studio からリモート エージェントに接続するには、Visual Studio のオプションで、リモート構成を指定する必要があります。
 
@@ -164,7 +164,7 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
 リモート エージェントを使用するたびに、Visual Studio は、この同じ情報を使用して Mac 上のリモート エージェントに接続します。 Visual Studio を再度リモート エージェントにペアリングさせる必要はありません。それが必要になるのは、Mac 上で新しいセキュリティ証明書を生成した場合、あるいは Mac のホスト名または IP アドレスが変更された場合のみです。
 
-##  <a name="GeneratePIN"></a> Generate a new security PIN
+## <a name="GeneratePIN"></a> Generate a new security PIN
 
 初めてリモート エージェントを起動すると、生成された PIN が期間限定で有効になります (既定では 10 分)。 Visual Studio とリモート エージェントをペアリングする前に期限切れになった場合は、新しい PIN を生成する必要があります。
 
@@ -178,7 +178,7 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
    リモート エージェントが新しい一時 PIN を生成します。 新しい PIN を使用して Visual Studio をペアリングするには、「 [Visual Studio でリモート エージェントを構成する](#ConfigureVS)」の手順を繰り返します。
 
-##  <a name="GenerateCert"></a> 新しいサーバー証明書を生成する
+## <a name="GenerateCert"></a> 新しいサーバー証明書を生成する
 
 セキュリティ上の目的で、Visual Studio とリモート エージェントをペアリングするサーバー証明書は、Mac の IP アドレスまたはホスト名と関連付けられています。 これらの値が変更された場合、新しいサーバー証明書を生成し、新しい値で Visual Studio を再構成する必要があります。
 
@@ -200,7 +200,7 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
 1. 新しい PIN を使用して Visual Studio をペアリングするには、「 [Visual Studio でリモート エージェントを構成する](#ConfigureVS)」の手順を繰り返します。
 
-##  <a name="ConfigureMac"></a> Configure the remote agent on the Mac
+## <a name="ConfigureMac"></a> Configure the remote agent on the Mac
 
 さまざまなコマンド ライン オプションを使用して、リモート エージェントを構成することができます。 たとえば、ビルド要求をリッスンするポートを指定したり、ファイル システムに保持するビルドの最大数を指定したりできます。 既定では、10 個のビルドに制限されます。 最大数を超えたビルドは、リモート エージェントによってシャットダウン時に削除されます。
 

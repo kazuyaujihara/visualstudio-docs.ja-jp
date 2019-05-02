@@ -10,23 +10,23 @@ ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec5124144e93d37c0f288450b00865461091253f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0107befa502d13ada7f5fd9e6081dde5f7c1cdc2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973070"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100145"
 ---
 # <a name="document-position"></a>ドキュメントの位置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 、デバッグ、**位置を文書化**:  
   
--   IDE に既知のソース ファイル内の位置の抽象化を提供します。 ほとんどの言語の今日では、ドキュメントの位置は見なすことがソース ファイル内の位置。  
+- IDE に既知のソース ファイル内の位置の抽象化を提供します。 ほとんどの言語の今日では、ドキュメントの位置は見なすことがソース ファイル内の位置。  
   
--   デバッグ エンジンにソース ドキュメント内の位置をについて説明します。  
+- デバッグ エンジンにソース ドキュメント内の位置をについて説明します。  
   
--   によって実装される、 [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)インターフェイス。  
+- によって実装される、 [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)インターフェイス。  
   
 ## <a name="see-also"></a>関連項目  
  [コード コンテキスト](../../extensibility/debugger/code-context.md)   

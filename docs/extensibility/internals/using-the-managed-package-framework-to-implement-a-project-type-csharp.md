@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdefaf3dfbce124ecfee9ab6f5c0479fe12930f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8f233e2256fc4baef9ee6ca7f07d3d7b71b68b47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908428"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>マネージド パッケージ フレームワークを使用したプロジェクト タイプの実装 (C#)
 マネージ パッケージ フレームワーク (MPF) は、c# クラスを使用するか、独自のプロジェクトの種類を実装するために継承することができますを提供します。 MPF は取り込んだら、プロジェクトの種類の詳細の実装に専念する多くの Visual Studio に提供するため、プロジェクトの種類が必要ですが、インターフェイスを実装します。
@@ -27,9 +27,9 @@ ms.locfileid: "56627767"
 
  VSPackage ソリューションには、このプロジェクトを追加するには、次の操作を行います。
 
-1.  MPFProj ファイルをダウンロード*MPFProjectDir*します。
+1. MPFProj ファイルをダウンロード*MPFProjectDir*します。
 
-2.  *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file、次のブロックを変更します。
+2. *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file、次のブロックを変更します。
 
 ```
 <!-- Provide a default value for $(ProjectBasePath) -->
@@ -38,11 +38,11 @@ ms.locfileid: "56627767"
   </PropertyGroup>
 ```
 
-1.  VSPackage プロジェクトを作成します。
+1. VSPackage プロジェクトを作成します。
 
-2.  VSPackage プロジェクトをアンロードします。
+2. VSPackage プロジェクトをアンロードします。
 
-3.  VSPackage の .csproj ファイルを編集する前に、次のブロックを追加することで`<Import>`ブロック。
+3. VSPackage の .csproj ファイルを編集する前に、次のブロックを追加することで`<Import>`ブロック。
 
 ```
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />
@@ -54,20 +54,20 @@ ms.locfileid: "56627767"
   </PropertyGroup>
 ```
 
-1.  プロジェクトを保存します。
+1. プロジェクトを保存します。
 
-2.  VSPackage ソリューションを閉じてから。
+2. VSPackage ソリューションを閉じてから。
 
-3.  VSPackage プロジェクトを再度開きます。 ProjectBase をという名前の新しいディレクトリを表示する必要があります。
+3. VSPackage プロジェクトを再度開きます。 ProjectBase をという名前の新しいディレクトリを表示する必要があります。
 
-4.  VSPackage プロジェクトに次の参照を追加します。
+4. VSPackage プロジェクトに次の参照を追加します。
 
      Microsoft.Build.Tasks.4.0
 
-5.  プロジェクトをビルドします。
+5. プロジェクトをビルドします。
 
 ## <a name="hierarchy-classes"></a>クラスの階層
- 次の表では、プロジェクト階層をサポートしている、MPFProj でクラスを示します。 詳細については、[階層と選択](../../extensibility/internals/hierarchies-and-selection.md)を参照してください。
+ 次の表では、プロジェクト階層をサポートしている、MPFProj でクラスを示します。 詳細については、次を参照してください。[階層と選択](../../extensibility/internals/hierarchies-and-selection.md)します。
 
 |クラス名|
 |----------------|
@@ -84,7 +84,7 @@ ms.locfileid: "56627767"
 |`Microsoft.VisualStudio.Package.BuildDependency`|
 
 ## <a name="document-handling-classes"></a>ドキュメント処理クラス
- 次の表では、ドキュメントの処理をサポートしている MPF でクラスを示します。 詳細については、[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)を参照してください。
+ 次の表では、ドキュメントの処理をサポートしている MPF でクラスを示します。 詳細については、次を参照してください。[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)します。
 
 |クラス名|
 |----------------|
@@ -92,7 +92,7 @@ ms.locfileid: "56627767"
 |`Microsoft.VisualStudio.Package.FileDocumentManager`|
 
 ## <a name="configuration-and-output-classes"></a>構成と出力クラス
- 次の表では、プロジェクトの種類のデバッグとリリースでは、プロジェクト出力のコレクションなどの複数の構成をサポートできる MPF クラスを示します。 詳細については、[構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)を参照してください。
+ 次の表では、プロジェクトの種類のデバッグとリリースでは、プロジェクト出力のコレクションなどの複数の構成をサポートできる MPF クラスを示します。 詳細については、次を参照してください。[構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)します。
 
 |クラス名|
 |----------------|

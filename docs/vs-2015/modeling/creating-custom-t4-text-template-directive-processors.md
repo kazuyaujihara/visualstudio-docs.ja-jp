@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab39de049b1ab3ff8054070b863380b66fd35018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccf7c3565925eb3fe55fe500a127c666515fb41a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974479"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058611"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>カスタム T4 テキスト テンプレート ディレクティブ プロセッサの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58974479"
   
  カスタム ディレクティブ プロセッサの例をいくつか考えられます。  
   
--   ユーザー名とパスワードをパラメーターとして受け取るデータベースからデータを返すディレクティブ プロセッサ。  
+- ユーザー名とパスワードをパラメーターとして受け取るデータベースからデータを返すディレクティブ プロセッサ。  
   
--   開いて、ファイルを読み取るディレクティブ プロセッサは、パラメーターとして、ファイルの名前を受け取ります。  
+- 開いて、ファイルを読み取るディレクティブ プロセッサは、パラメーターとして、ファイルの名前を受け取ります。  
   
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>カスタム ディレクティブ プロセッサの主要な要素  
  ディレクティブ プロセッサを開発するには、いずれかから継承するクラスを作成する必要があります<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor>または<xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>します。  

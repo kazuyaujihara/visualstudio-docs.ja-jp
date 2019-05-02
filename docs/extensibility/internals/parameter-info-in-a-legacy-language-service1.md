@@ -14,20 +14,20 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba1c2c053a9e2c906e5ca9e530a5a46a2501a840
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 836788e0d9d44c7da5dda44ce80f76ab91642dda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423960"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>従来の言語サービスでのパラメーター ヒント
 言語構成要素でに関するヒントと IntelliSense のパラメーター ヒントを提供します。
 
- 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、[エディターと言語サービス拡張](../../extensibility/extending-the-editor-and-language-services.md)を参照してください。
+ 従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、次を参照してください。[エディターと言語サービス拡張](../../extensibility/extending-the-editor-and-language-services.md)します。
 
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
 
 ## <a name="how-parameter-info-tooltips-work"></a>パラメーター ヒントのツールヒントのしくみ
  エディターでステートメントを入力すると、VSPackage に型指定されているステートメントの定義を含む小さいツールヒント ウィンドウが表示されます。 たとえば、Microsoft Foundation Classes (MFC) ステートメントを入力する場合 (など`pMainFrame ->UpdateWindow`) とかっこが、パラメーターの定義を表示するメソッドのヒントが表示される一覧を作成するキーを押して、`UpdateWindow`メソッド。
@@ -43,31 +43,31 @@ ms.locfileid: "56606421"
 
  ときに、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>クラスが呼び出される、そのメソッドは、次の順序で呼び出されます。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
 
      現在のテキスト バッファーの位置と、関連するデータの長さを返します。 これには、IDE でツールヒント ウィンドウでそのデータが見えにくくならないように指示します。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
 
      最初に表示するメソッドの数 (0 から始まるインデックス) を返します。 たとえば、0 を返した場合、最初のオーバー ロードされたメソッドが最初に表示されます。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
 
      現在のコンテキストで適用されるオーバー ロードされたメソッドの数を返します。 値をこのメソッドの 1 より大きい返すし、テキスト ビューに上矢印と表示されます。 下矢印をクリックすると、IDE を呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A>メソッド。 上向きの矢印をクリックすると、IDE を呼び出す、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A>メソッド。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
 
      パラメーター ヒントのツールヒントのテキストは、いくつかの呼び出し時に構築された、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>と<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>メソッド。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
 
      メソッドで表示するパラメーターの数を返します。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
 
      表示するオーバー ロードに対応するメソッドの数を返す場合、このメソッドは呼び出されるへの呼び出し後に、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>メソッド。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
 
      メソッドのヒントが表示されたら、エディターを更新する、言語サービスに通知します。 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>メソッドでは、次の呼び出し。
 
@@ -75,6 +75,6 @@ ms.locfileid: "56606421"
     <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).
     ```
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
 
      呼び出しを受信する、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>メソッド メソッド ヒントのウィンドウを閉じるとき。

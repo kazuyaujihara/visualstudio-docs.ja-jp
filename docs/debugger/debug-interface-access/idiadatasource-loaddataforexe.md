@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f95e8a9321ff7ae518e72496289f8ad0c7b4682
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829847"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 開き、.exe/.dll ファイルに関連付けられたデバッグ データを準備します。
@@ -57,7 +57,7 @@ pCallback
 |E_INVALIDARG|無効なパラメーター。|
 |E_UNEXPECTED|データ ソースは既に準備されています。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 .Exe/.dll ファイルのデバッグ ヘッダー名を関連するデバッグ データの場所。
 
 このメソッドは、デバッグ ヘッダーを読み取りとし、検索し、デバッグ データを準備します。 検索の進行状況の報告されコールバックをとおして制御されます、必要に応じて、可能性があります。 たとえば、 [idialoadcallback::notifydebugdir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)が呼び出されたときに、`IDiaDataSource::loadDataForExe`を検索して、デバッグ ディレクトリを処理します。

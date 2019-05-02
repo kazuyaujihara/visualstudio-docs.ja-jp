@@ -1,5 +1,5 @@
 ﻿---
-title: サポートされるコードの変更 (c# および Visual Basic) |Microsoft Docs
+title: サポートされるコードの変更 (C#および Visual Basic) |Microsoft Docs
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,24 +16,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: f20f61ffc4a6e4105a96b58c3dc73e7154e7c9cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929731"
 ---
-# <a name="supported-code-changes-c-and-visual-basic"></a>サポートされているコード変更 (c# および Visual Basic)
+# <a name="supported-code-changes-c-and-visual-basic"></a>サポートされるコードの変更 (C#および Visual Basic)
 エディット コンティニュでは、メソッドの本体内で行ったほとんどの種類のコード変更を処理できます。 しかし、メソッドの本体外で行った変更の大部分やメソッドの本体内で行った一部の変更は、デバッグ時に適用できません。 このようなサポートされていない変更を適用するには、デバッグを停止し、新しいバージョンのコードを再起動する必要があります。
 
 ## <a name="supported-changes-to-code"></a>サポートされているコード変更
 
-次の表には、設定可能な c# および Visual Basic コードをデバッグ セッション中に、セッションを再起動しなくても変更が表示されます。
+次の表は、変更を行った可能性がありますC#およびセッションを再起動しなくてもデバッグ セッション中に Visual Basic コードです。
 
 |言語要素/機能|サポートされている編集操作|制限事項|
 |-|-|-|
 |種類|メソッド、フィールド、コンス トラクター、他を追加します。|はい(https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|Iterators|追加または変更します。|いいえ|
+|反復子|追加または変更します。|いいえ|
 |非同期/待機式|追加または変更します。|はい(https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |動的オブジェクト|追加または変更します。|いいえ|
 |ラムダ式|追加または変更します。|はい(https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
@@ -43,9 +43,9 @@ ms.locfileid: "57526180"
 > 文字列補間と null 条件演算子などの新しい言語機能は通常、エディット コンティニュでサポートします。 最新情報については、次を参照してください。、 [Enc サポートされている編集](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)ページ。
 
 ## <a name="unsupported-changes-to-code"></a>サポートされていないコードの変更
- デバッグ セッション中に c# および Visual Basic コードに、次の変更は適用できません。
+ 次の変更を適用できませんC#およびデバッグ セッション中に Visual Basic コード。
 
--   現在のステートメントまたはその他のアクティブ ステートメントに対する変更。
+- 現在のステートメントまたはその他のアクティブ ステートメントに対する変更。
 
      アクティブ ステートメントには、現在のステートメントを取得するために呼び出される、呼び出し履歴上の関数内に存在するすべてのステートメントが含まれます。
 
@@ -60,8 +60,8 @@ ms.locfileid: "57526180"
 |名前空間、型、メンバー|削除|
 |ジェネリック|追加または変更します。|
 |インターフェイス|変更|
-|種類|抽象または仮想メンバーを追加、上書きを追加 (を参照してください[詳細](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|種類|デストラクターを追加します。|
+|型|抽象または仮想メンバーを追加、上書きを追加 (を参照してください[詳細](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|型|デストラクターを追加します。|
 |メンバー|埋め込み相互運用機能型を参照するメンバーを変更します。|
 |メンバー (Visual Basic)|On Error または Resume ステートメントを持つメンバーを変更します。|
 |メンバー (Visual Basic)|集計、Group By、単純な結合、またはグループに参加 LINQ のクエリ句を含むメンバーを変更します。|
@@ -75,10 +75,10 @@ ms.locfileid: "57526180"
 |try – catch – finally ブロック|アクティブなステートメントが含まれている場合の変更します。|
 |using ステートメント|追加|
 |非同期のメソッドとラムダ|.NET Framework 4 をターゲットとするプロジェクトで async メソッドまたはラムダを変更し、削減 (を参照してください[詳細](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|Iterators|.NET Framework 4 をターゲットとするプロジェクトで、反復子を変更し、削減 (を参照してください[詳細](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|反復子|.NET Framework 4 をターゲットとするプロジェクトで、反復子を変更し、削減 (を参照してください[詳細](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>アンセーフ コード
- アンセーフ コードを変更する場合、セーフ コードを変更するときと同じ制限に加えて、もう 1 つ追加の制限が適用されます。エディット コンティニュでは、`stackalloc` 演算子を含むメソッド内に存在するアンセーフ コードへの変更はサポートしていません。
+ アンセーフ コードを変更する場合、セーフ コードを変更するときと同じ制限に加えて、もう 1 つ追加の制限が適用されます。エディット コンティニュを含むメソッド内に存在するアンセーフ コードへの変更をサポートしません、`stackalloc`演算子。
 
 ## <a name="unsupported-app-scenarios"></a>サポートされていないアプリのシナリオ
 
@@ -90,20 +90,20 @@ ms.locfileid: "57526180"
 ## <a name="unsupported-scenarios"></a>サポートされていないシナリオ
  次のデバッグ シナリオでは、エディット コンティニュを使用できません。
 
--   混合モードでの (ネイティブ/マネージ) デバッグ
+- 混合モードでの (ネイティブ/マネージ) デバッグ
 
--   SQL デバッグ
+- SQL デバッグ
 
--   ワトソン博士のダンプのデバッグ。
+- ワトソン博士のダンプのデバッグ。
 
--   埋め込まれたランタイム アプリケーションのデバッグ
+- 埋め込まれたランタイム アプリケーションのデバッグ
 
--   プロセスにアタッチを使用して、アプリケーションのデバッグ (**デバッグ > プロセスにアタッチ**) を選択して、アプリケーションを実行する代わりに**開始**から、**デバッグ**メニュー。
+- プロセスにアタッチを使用して、アプリケーションのデバッグ (**デバッグ > プロセスにアタッチ**) を選択して、アプリケーションを実行する代わりに**開始**から、**デバッグ**メニュー。
 
--   最適化されたコードのデバッグ
+- 最適化されたコードのデバッグ
 
--   ビルド エラーによって新しいバージョンのビルドが失敗した後の旧バージョンのデバッグ
+- ビルド エラーによって新しいバージョンのビルドが失敗した後の旧バージョンのデバッグ
 
 ## <a name="see-also"></a>関連項目
 - [エディット コンティニュ (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
-- [方法 : エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [方法: エディット コンティニュを使用する (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

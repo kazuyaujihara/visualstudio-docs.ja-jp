@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803fd69df06ae820e39d7edcfa54e56e59717a1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MT
+ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861766"
 ---
 # <a name="inside-the-editor"></a>エディター内で
 
@@ -98,7 +98,7 @@ Microsoft.VisualStudio.Text.UI.Wpf.dll に含まれている分類の視覚的�
 文字のシーケンス、または行のシーケンスとしては、テキストのスナップショットの内容を表示できます。 行の文字とは、0 から始まるインデックス両方が。 空のテキストのスナップショットには、ゼロの文字と 1 つの空の行が含まれています。 行は、有効な Unicode の改行文字シーケンス、または先頭またはバッファーの末尾で区切られます。 改行文字は、テキストのスナップショットに明示的に表現し、テキスト スナップショット内の改行はすべて同じであるがします。
 
 > [!NOTE]
-> Visual Studio エディターでの改行文字の詳細については、[エンコーディングと改行](../ide/encodings-and-line-breaks.md)を参照してください。
+> Visual Studio エディターでの改行文字の詳細については、次を参照してください。[エンコーディングと改行](../ide/encodings-and-line-breaks.md)します。
 
 によって表される行のテキスト、<xref:Microsoft.VisualStudio.Text.ITextSnapshotLine>オブジェクトで、特定の行番号または特定の文字位置のテキスト スナップショットから取得できます。
 
@@ -202,19 +202,19 @@ abXefYj
 
 エディターの機能では、フィーチャーの定義とは別の実装できるように設計されています。 エディターには、これらの機能が含まれています。
 
--   タグおよび分類子
+- タグおよび分類子
 
--   修飾
+- 修飾
 
--   射影
+- 射影
 
--   アウトライン
+- アウトライン
 
--   マウスとキー バインド
+- マウスとキー バインド
 
--   操作およびプリミティブ
+- 操作およびプリミティブ
 
--   IntelliSense
+- IntelliSense
 
 ### <a name="tags-and-classifiers"></a>タグおよび分類子
 
@@ -262,7 +262,7 @@ abXefYj
 
 ポップアップの表示要素は、ツールヒントなどのテキスト ビュー上の小さいウィンドウに表示されるグラフィックスです。
 
-###  <a name="projection"></a> 射影
+### <a name="projection"></a> 射影
 
 プロジェクションは、別の種類のテキストを実際には保存されませんが、他のテキスト バッファーからのテキストを代わりに組み合わされているテキスト バッファーを構築するための手法です。 たとえばを他の 2 つのバッファーからテキストを連結し、1 つのバッファー内にある場合、結果を表示、または 1 つのバッファー内のテキストの部分を非表示には、投影のバッファーを使用できます。 投影のバッファーは、ソース バッファーを別の投影バッファーとして機能できます。 さまざまな方法でテキストを並べ替えるには、プロジェクションによって関連付けられたバッファーのセットを構築できます。 (このようなセットとも呼ばれますが、*バッファー グラフ*)。Visual Studio のテキストのアウトライン機能は、折りたたまれたテキストを非表示にするプロジェクション バッファーを使用して実装され、ASP.NET ページの Visual Studio エディターでは、プロジェクションを使用して、Visual Basic や c# などの埋め込みの言語をサポートします。
 

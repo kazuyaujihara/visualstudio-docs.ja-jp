@@ -19,12 +19,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5a1174f96e34773aac524562d6f62514e92ba5e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 58e5f0e9154137097a94637799966ee94818fca4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "59002178"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047048"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>方法: ClickOnce 信頼プロンプトの動作を構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,19 +56,19 @@ ms.locfileid: "59002178"
   
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>レジストリ エディターを使用して、ClickOnce 信頼プロンプトを有効にするには  
   
-1.  レジストリ エディターを開きます。  
+1. レジストリ エディターを開きます。  
   
-    1.  **[スタート]** ボタンをクリックし、**[ファイル名を指定して実行]** をクリックします。  
+    1. **[スタート]** ボタンをクリックし、**[ファイル名を指定して実行]** をクリックします。  
   
-    2.  **オープン**ボックスに「 `regedit` (または`regedit32`32 ビット Windows で)、順にクリックします**OK**。  
+    2. **オープン**ボックスに「 `regedit` (または`regedit32`32 ビット Windows で)、順にクリックします**OK**。  
   
-2.  次のレジストリ キーを探します。  
+2. 次のレジストリ キーを探します。  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\します。NETFramework\Security\TrustManager\PromptingLevel  
   
      キーが存在しない場合は、それを作成します。  
   
-3.  次のサブキーとして追加**文字列値**がまだ存在しない、次の表に示すように関連付けられている値を持つ場合は、します。  
+3. 次のサブキーとして追加**文字列値**がまだ存在しない、次の表に示すように関連付けられている値を持つ場合は、します。  
   
     |文字列値のサブキー|[値]|  
     |-------------------------|-----------|  
@@ -82,9 +82,9 @@ ms.locfileid: "59002178"
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>ClickOnce 信頼プロンプト プログラムを有効にするには  
   
-1.  Visual Studio で Visual Basic または Visual c# コンソール アプリケーションを作成します。  
+1. Visual Studio で Visual Basic または Visual c# コンソール アプリケーションを作成します。  
   
-2.  Program.vb または Program.cs ファイルを開いて編集し、次のコードを追加します。  
+2. Program.vb または Program.cs ファイルを開いて編集し、次のコードを追加します。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -108,26 +108,26 @@ ms.locfileid: "59002178"
     key.Close();  
     ```  
   
-3.  アプリケーションをビルドして実行します。  
+3. アプリケーションをビルドして実行します。  
   
 ## <a name="restricting-the-clickonce-trust-prompt"></a>ClickOnce 信頼プロンプトの表示を制限します。  
  信頼プロンプトの表示を制限して、ソリューションは、ユーザーは、信頼の決定に求められる前に、既知の id が Authenticode 証明書で署名する必要があります。  
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>レジストリ エディターを使用して ClickOnce 信頼プロンプトの表示を制限するには  
   
-1.  レジストリ エディターを開きます。  
+1. レジストリ エディターを開きます。  
   
-    1.  **[スタート]** ボタンをクリックし、**[ファイル名を指定して実行]** をクリックします。  
+    1. **[スタート]** ボタンをクリックし、**[ファイル名を指定して実行]** をクリックします。  
   
-    2.  **オープン**ボックスに「 `regedit` (または`regedit32`32 ビット Windows で)、順にクリックします**OK**。  
+    2. **オープン**ボックスに「 `regedit` (または`regedit32`32 ビット Windows で)、順にクリックします**OK**。  
   
-2.  次のレジストリ キーを探します。  
+2. 次のレジストリ キーを探します。  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\します。NETFramework\Security\TrustManager\PromptingLevel  
   
      キーが存在しない場合は、それを作成します。  
   
-3.  次のサブキーとして追加**文字列値**がまだ存在しない、次の表に示すように関連付けられている値を持つ場合は、します。  
+3. 次のサブキーとして追加**文字列値**がまだ存在しない、次の表に示すように関連付けられている値を持つ場合は、します。  
   
     |文字列値のサブキー|[値]|  
     |-------------------------|-----------|  
@@ -139,9 +139,9 @@ ms.locfileid: "59002178"
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>プログラムで ClickOnce 信頼プロンプトの表示を制限するには  
   
-1.  Visual Studio で Visual Basic または Visual c# コンソール アプリケーションを作成します。  
+1. Visual Studio で Visual Basic または Visual c# コンソール アプリケーションを作成します。  
   
-2.  Program.vb または Program.cs ファイルを開いて編集し、次のコードを追加します。  
+2. Program.vb または Program.cs ファイルを開いて編集し、次のコードを追加します。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -165,26 +165,26 @@ ms.locfileid: "59002178"
     key.Close();  
     ```  
   
-3.  アプリケーションをビルドして実行します。  
+3. アプリケーションをビルドして実行します。  
   
 ## <a name="disabling-the-clickonce-trust-prompt"></a>ClickOnce 信頼プロンプトを無効にします。  
  信頼プロンプトを無効にするには、エンドユーザーは、セキュリティ ポリシーで既に信頼されていないソリューションをインストールするオプションを指定しないようにします。  
   
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>レジストリ エディターを使用して、ClickOnce 信頼プロンプトを無効にするには  
   
-1.  レジストリ エディターを開きます。  
+1. レジストリ エディターを開きます。  
   
-    1.  **[スタート]** ボタンをクリックし、**[ファイル名を指定して実行]** をクリックします。  
+    1. **[スタート]** ボタンをクリックし、**[ファイル名を指定して実行]** をクリックします。  
   
-    2.  **オープン**ボックスに「 `regedit` (または`regedit32`32 ビット Windows で)、順にクリックします**OK**。  
+    2. **オープン**ボックスに「 `regedit` (または`regedit32`32 ビット Windows で)、順にクリックします**OK**。  
   
-2.  次のレジストリ キーを探します。  
+2. 次のレジストリ キーを探します。  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\します。NETFramework\Security\TrustManager\PromptingLevel  
   
      キーが存在しない場合は、それを作成します。  
   
-3.  次のサブキーとして追加**文字列値**がまだ存在しない、次の表に示すように関連付けられている値を持つ場合は、します。  
+3. 次のサブキーとして追加**文字列値**がまだ存在しない、次の表に示すように関連付けられている値を持つ場合は、します。  
   
     |文字列値のサブキー|[値]|  
     |-------------------------|-----------|  
@@ -196,9 +196,9 @@ ms.locfileid: "59002178"
   
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>プログラムで、ClickOnce 信頼プロンプトを無効にするには  
   
-1.  Visual Studio で Visual Basic または Visual c# コンソール アプリケーションを作成します。  
+1. Visual Studio で Visual Basic または Visual c# コンソール アプリケーションを作成します。  
   
-2.  Program.vb または Program.cs ファイルを開いて編集し、次のコードを追加します。  
+2. Program.vb または Program.cs ファイルを開いて編集し、次のコードを追加します。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -223,7 +223,7 @@ ms.locfileid: "59002178"
   
     ```  
   
-3.  アプリケーションをビルドして実行します。  
+3. アプリケーションをビルドして実行します。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションのセキュリティ](../deployment/securing-clickonce-applications.md)   

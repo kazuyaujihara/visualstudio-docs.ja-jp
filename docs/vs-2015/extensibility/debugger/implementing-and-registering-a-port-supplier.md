@@ -1,27 +1,22 @@
 ---
 title: 実装して、ポートのサプライヤーの登録 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3844d6beca76781f741bfbe0c6bff71923075d36
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 377aa88df71fd0d3c42745fe2d3ce3b648191aa4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430257"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>ポート サプライヤーの実装および登録
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ RemoveMetric(metrictypePortSupplier,
 ```  
   
 > [!NOTE]
->  [デバッグ用の SDK ヘルパー](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric`と`RemoveMetric`は静的関数 dbgmetric.h で定義され、ad2de.lib にコンパイルします。 `metrictypePortSupplier`、 `metricCLSID`、および`metricName`ヘルパーも dbgmetric.h で定義されます。  
+> [デバッグ用の SDK ヘルパー](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric`と`RemoveMetric`は静的関数 dbgmetric.h で定義され、ad2de.lib にコンパイルします。 `metrictypePortSupplier`、 `metricCLSID`、および`metricName`ヘルパーも dbgmetric.h で定義されます。  
   
  ポート サプライヤーは、メソッドの名前と GUID を指定できます[GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)と[GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)、それぞれします。  
   
@@ -70,4 +65,3 @@ RemoveMetric(metrictypePortSupplier,
  [ポート サプライヤーの実装](../../extensibility/debugger/implementing-a-port-supplier.md)   
  [デバッグ用の SDK ヘルパー](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [ポート サプライヤー](../../extensibility/debugger/port-suppliers.md)
-

@@ -8,12 +8,12 @@ ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: b1ce9c317bb05e242f8bdc89d3e294858ba0ce21
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 0b95b34fe4c66590d3475368c837092f58aad05f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "59002407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429443"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Azure リソース グループのデプロイ プロジェクトを使用した Azure DevOps Services での継続的インテグレーション
 
@@ -172,6 +172,7 @@ Azure Pipelines で PowerShell スクリプトを呼び出すには、ビルド 
      ```
      -_artifactsLocation $(artifactsLocation) -_artifactsLocationSasToken (ConvertTo-SecureString -String "$(artifactsLocationSasToken)" -AsPlainText -Force)
      ```
+
      ![[Azure リソース グループの配置] タスクの構成](media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough18.png)
 7. 必要な項目をすべて追加したら、ビルド パイプラインを保存して、上部の **[新しいビルドをキューに配置]** を選択します。
 

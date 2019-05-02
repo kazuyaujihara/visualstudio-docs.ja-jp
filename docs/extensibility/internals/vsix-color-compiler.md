@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa425b945b2694ed11e77116611ba45cf21cf6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf5b32ce8088dbb020fdaf484013dd1a1889826
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908011"
 ---
 # <a name="vsix-color-compiler"></a>VSIX カラー コンパイラ
 Visual Studio 拡張機能カラー コンパイラ ツールは、その色は、Visual Studio で使用できるように、.pkgdef にファイルの変換は、コンソール アプリケーションを既存の Visual Studio のテーマの色を表す .xml ファイルを受け取るには。 .Xml ファイルの違いを比較しやすいため、このツールはソース管理でのカスタムの色の管理に役立ちます。 関連付けることができますビルド環境にビルドの出力は、有効な .pkgdef ファイルようにします。
@@ -111,7 +111,7 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
 |-|-|
 |**属性**|**定義**|
 |型|[必須]色の種類。 次のいずれかを指定できます。<br /><br /> *CT_INVALID:* 色は、無効であるか設定されていません。<br /><br /> *CT_RAW:* 生の ARGB 値。<br /><br /> *CT_COLORINDEX:* 使用しないでください。<br /><br /> *CT_SYSCOLOR:* SysColor から Windows のシステム カラーです。<br /><br /> *CT_VSCOLOR:*__VSSYSCOLOREX から Visual Studio の色。<br /><br /> *CT_AUTOMATIC:* 自動の色。<br /><br /> *CT_TRACK_FOREGROUND:* 使用しないでください。<br /><br /> *CT_TRACK_BACKGROUND:* 使用しないでください。|
-|ソース|[必須]16 進数で表される色の値|
+|Source|[必須]16 進数で表される色の値|
 
  型の属性のスキーマでは、__VSCOLORTYPE 列挙型によってサポートされているすべての値がサポートされています。 ただし、CT_RAW と CT_SYSCOLOR のみを使用することをお勧めします。
 
@@ -149,15 +149,15 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
 
  **例**
 
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
 
--   VsixColorCompiler D:\xml\colors.xml /noLogo
+- VsixColorCompiler D:\xml\colors.xml /noLogo
 
 ## <a name="notes"></a>メモ
 
--   このツールでは、vc ランタイムの最新バージョンをインストールすることが必要です。
+- このツールでは、vc ランタイムの最新バージョンをインストールすることが必要です。
 
--   1 つのファイルのみがサポートされています。 フォルダーのパスを使用して一括変換がサポートされていません。
+- 1 つのファイルのみがサポートされています。 フォルダーのパスを使用して一括変換がサポートされていません。
 
 ## <a name="sample-output"></a>出力例
  ツールによって生成された、.pkgdef ファイルのようになります、キーの下。

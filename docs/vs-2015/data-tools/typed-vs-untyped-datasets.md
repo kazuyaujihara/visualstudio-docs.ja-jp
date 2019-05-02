@@ -1,27 +1,24 @@
 ---
 title: 型指定されていないデータセットと型指定された |Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 71761826611c490a3fb43413acaa29eb6520138f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0d02f72a686d0f271e387e550122451db34c019a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283791"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668029"
 ---
 # <a name="typed-vs-untyped-datasets"></a>型指定されたデータセットと型指定されていないデータセットの比較
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 型指定されたデータセットはまず、ベースから派生したデータセット<xref:System.Data.DataSet>クラスし、からの情報を使用して、**データセット デザイナー**、厳密に型指定された dataset クラスを新しいを生成する、.xsd ファイルに格納されています。 (テーブル、列、およびなど) のスキーマから情報が生成され、最上位のオブジェクトとプロパティのセットとして、この新しい dataset クラスにコンパイルします。 型指定されたデータセットは、ベースから継承するため<xref:System.Data.DataSet>クラス、型指定されたクラスはすべての機能の<xref:System.Data.DataSet>クラスし、のインスタンスを取るメソッドで使用できる、<xref:System.Data.DataSet>クラスをパラメーターとして。  
   
  これに対し、型指定されていないデータセットには対応する組み込みのスキーマがありません。 型指定されたデータセットのように、データセットには、テーブルや列などが含まれています — はコレクションとしてのみ公開されるものが、します。 (ただし、データセットのテーブルとその他のデータ要素を手動で作成した後できます構造をエクスポートするデータセットのスキーマとして、データセットを使用して<xref:System.Data.DataSet.WriteXmlSchema%2A>メソッドです)。  
@@ -42,4 +39,3 @@ ms.locfileid: "49283791"
  型指定されたデータセットでは、多くの利点がある、でも、型指定されていないデータセットがさまざまな状況で役に立ちます。 最も明白なシナリオでは、データセットのスキーマがない場合です。 これが発生するなど、アプリケーションが、データセットを返すコンポーネントと対話する場合が、不明な事前にその構造とは何です。 同様に、静的で予測可能な構造がないデータを使用する場合もあります。 その場合は、ことはできません型指定されたデータセットを使用するは実用的データ構造のそれぞれの変更を使用して、型指定されたデータセット クラスを再生成する必要があります。  
   
  一般的が何度も使用可能なスキーマをしなくても、データセットを動的に作成する場合があります。 その場合は、データセットは、リレーショナルの方法でデータを表現できる限り、情報を保持している便利な構造です。 同時に、別のプロセスに渡す、または XML ファイルを記述する情報をシリアル化する機能などのデータセットの機能を活用を実行できます。
-

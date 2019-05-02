@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: e476876234c31009d219af30fbe3c9d1e55f3d96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443596"
 ---
 # <a name="msbuild-properties"></a>MSBuild プロパティ
 プロパティはビルドを設定するための名前と値のペアです。 プロパティを使用することで、タスクに値を渡したり、条件を評価したりできるだけでなく、プロジェクト ファイルで参照する値を格納しておくこともできます。
@@ -54,7 +54,7 @@ ms.locfileid: "58515208"
  起動されたツール内から環境変数の現在の値を取得するには、[プロパティ関数](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable を使用します。 ただし推奨される方法は、タスク パラメーター <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> を使用する方法です。 この文字列配列に設定されている環境プロパティは、起動されたツールに渡すことができます。このとき、システム環境変数は影響を受けません。
 
 > [!TIP]
->  すべての環境変数が読み取られて、初期プロパティになるわけではありません。 有効な MSBuild プロパティ名 ("386" など) を名前として持っていない環境変数は無視されます。
+> すべての環境変数が読み取られて、初期プロパティになるわけではありません。 有効な MSBuild プロパティ名 ("386" など) を名前として持っていない環境変数は無視されます。
 
  詳細については、「[方法 :ビルドで環境変数を使用する](../msbuild/how-to-use-environment-variables-in-a-build.md)」を参照してください。
 
@@ -108,11 +108,11 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ## <a name="create-properties-during-execution"></a>実行時にプロパティを作成する
  `Target` 要素の外側にあるプロパティには、ビルドの評価フェーズで値が割り当てられます。 その後の実行フェーズでプロパティを作成または変更するには、次のようにします。
 
--   プロパティはどのタスクでも生成できます。 プロパティを生成するには、[Task](../msbuild/task-element-msbuild.md) 要素の子要素として、`PropertyName` 属性を持つ [Output](../msbuild/output-element-msbuild.md) 要素を持つ必要があります。
+- プロパティはどのタスクでも生成できます。 プロパティを生成するには、[Task](../msbuild/task-element-msbuild.md) 要素の子要素として、`PropertyName` 属性を持つ [Output](../msbuild/output-element-msbuild.md) 要素を持つ必要があります。
 
--   プロパティは [CreateProperty](../msbuild/createproperty-task.md) タスクによって生成できます。 この使用法は非推奨とされます。
+- プロパティは [CreateProperty](../msbuild/createproperty-task.md) タスクによって生成できます。 この使用法は非推奨とされます。
 
--   .NET Framework 3.5 以降では、プロパティ宣言を格納できる `Target` 要素を  `PropertyGroup` 要素に含めることができます。
+- .NET Framework 3.5 以降では、プロパティ宣言を格納できる `Target` 要素を  `PropertyGroup` 要素に含めることができます。
 
 ## <a name="store-xml-in-properties"></a>プロパティに XML を格納する
  プロパティには、タスクに値を渡したり、ログ情報を表示したりするための任意の XML を格納できます。 次の例では、`ConfigTemplate` プロパティの値に、XML や他のプロパティ参照が使用されています。 このプロパティ参照は、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] により、対応するプロパティ値を使用して置き換えられます。 プロパティ値は表示される順に割り当てられます。 したがって、この例では、`$(MySupportedVersion)`、`$(MyRequiredVersion)`、および `$(MySafeMode)` は既に定義されています。

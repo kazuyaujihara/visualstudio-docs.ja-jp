@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 884b054503ef94c84ef267d562897c93cded9948
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 89d81ee2e860dead62352cc14cef95e21536c29d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965168"
 ---
 # <a name="walkthrough-display-signature-help"></a>チュートリアル: シグネチャ ヘルプを表示します。
 シグネチャ ヘルプ (とも呼ばれます*パラメーター ヒント*)、ユーザーがパラメーター リストの開始文字 (通常、開きかっこを入力) を入力すると、ツールヒントに、メソッドのシグネチャを表示します。 パラメーターとパラメーターの区切り記号 (コンマ) を入力すると、次のパラメーターを太字で表示するツールヒントが更新されます。 シグネチャ ヘルプを定義で、次の方法: 言語サービスのコンテキストで、独自のファイル名拡張子とコンテンツの種類を定義し、その型シグネチャ ヘルプを表示または既存のコンテンツ タイプ (たとえば、"text") のシグネチャ ヘルプを表示します。 このチュートリアルでは、「テキスト」コンテンツ タイプのシグネチャ ヘルプを表示する方法を示します。
@@ -31,13 +31,13 @@ ms.locfileid: "56684222"
 
 #### <a name="to-create-a-mef-project"></a>MEF プロジェクトを作成するには
 
-1.  C# VSIX プロジェクトを作成します。 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#/機能拡張**、し**VSIX プロジェクト**)。ソリューション `SignatureHelpTest`の名前を指定します。
+1. C# VSIX プロジェクトを作成します。 (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#/機能拡張**、し**VSIX プロジェクト**)。ソリューション `SignatureHelpTest`の名前を指定します。
 
-2.  エディター分類子の項目テンプレートをプロジェクトに追加します。 詳細については、[エディターの項目テンプレートを使用した拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)を参照してください。
+2. エディター分類子の項目テンプレートをプロジェクトに追加します。 詳細については、次を参照してください。[エディターの項目テンプレートを使用した拡張機能を作成する](../extensibility/creating-an-extension-with-an-editor-item-template.md)します。
 
-3.  既存のクラス ファイルを削除します。
+3. 既存のクラス ファイルを削除します。
 
-4.  プロジェクトに次の参照を追加し、確認**CopyLocal**に設定されている`false`:
+4. プロジェクトに次の参照を追加し、確認**CopyLocal**に設定されている`false`:
 
      Microsoft.VisualStudio.Editor
 
@@ -54,39 +54,39 @@ ms.locfileid: "56684222"
 
 #### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>シグネチャ ヘルプの署名とパラメーターを実装するには
 
-1.  クラス ファイルを追加し、その名前を `SignatureHelpSource`にします。
+1. クラス ファイルを追加し、その名前を `SignatureHelpSource`にします。
 
-2.  次の imports を追加します。
+2. 次の imports を追加します。
 
      [!code-vb[VSSDKSignatureHelpTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_1.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_1.cs)]
 
-3.  という名前のクラスを追加`TestParameter`を実装する<xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>します。
+3. という名前のクラスを追加`TestParameter`を実装する<xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>します。
 
      [!code-vb[VSSDKSignatureHelpTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_2.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_2.cs)]
 
-4.  すべてのプロパティを設定するコンス トラクターを追加します。
+4. すべてのプロパティを設定するコンス トラクターを追加します。
 
      [!code-vb[VSSDKSignatureHelpTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_3.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_3.cs)]
 
-5.  プロパティを追加<xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>します。
+5. プロパティを追加<xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>します。
 
      [!code-vb[VSSDKSignatureHelpTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_4.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_4.cs)]
 
-6.  という名前のクラスを追加`TestSignature`を実装する<xref:Microsoft.VisualStudio.Language.Intellisense.ISignature>します。
+6. という名前のクラスを追加`TestSignature`を実装する<xref:Microsoft.VisualStudio.Language.Intellisense.ISignature>します。
 
      [!code-vb[VSSDKSignatureHelpTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_5.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_5.cs)]
 
-7.  いくつかのプライベート フィールドを追加します。
+7. いくつかのプライベート フィールドを追加します。
 
      [!code-vb[VSSDKSignatureHelpTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_6.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_6.cs)]
 
-8.  フィールドを設定し、サブスクライブするコンス トラクターを追加、<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>イベント。
+8. フィールドを設定し、サブスクライブするコンス トラクターを追加、<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>イベント。
 
      [!code-vb[VSSDKSignatureHelpTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_7.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_7.cs)]
@@ -116,8 +116,7 @@ ms.locfileid: "56684222"
      [!code-vb[VSSDKSignatureHelpTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_12.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_12.cs)]
 
-14. 
-  <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.ApplicableToSpan%2A> プロパティを実装します。 このプロパティは保持、<xref:Microsoft.VisualStudio.Text.ITrackingSpan>署名を適用するバッファー内のテキストの範囲に対応します。
+14. <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.ApplicableToSpan%2A> プロパティを実装します。 このプロパティは保持、<xref:Microsoft.VisualStudio.Text.ITrackingSpan>署名を適用するバッファー内のテキストの範囲に対応します。
 
      [!code-vb[VSSDKSignatureHelpTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_13.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_13.cs)]
@@ -132,37 +131,37 @@ ms.locfileid: "56684222"
 
 #### <a name="to-implement-the-signature-help-source"></a>シグネチャ ヘルプ ソースを実装するには
 
-1.  という名前のクラスを追加`TestSignatureHelpSource`を実装する<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>します。
+1. という名前のクラスを追加`TestSignatureHelpSource`を実装する<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>します。
 
      [!code-vb[VSSDKSignatureHelpTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_15.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_15.cs)]
 
-2.  テキスト バッファーへの参照を追加します。
+2. テキスト バッファーへの参照を追加します。
 
      [!code-vb[VSSDKSignatureHelpTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_16.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_16.cs)]
 
-3.  テキスト バッファーとシグネチャ ヘルプ ソース プロバイダーを設定するコンス トラクターを追加します。
+3. テキスト バッファーとシグネチャ ヘルプ ソース プロバイダーを設定するコンス トラクターを追加します。
 
      [!code-vb[VSSDKSignatureHelpTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_17.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_17.cs)]
 
-4.  <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.AugmentSignatureHelpSession%2A> メソッドを実装します。 この例では、署名は、ハードコーディングしますが、完全な実装では、言語のドキュメントからこの情報を取得します。
+4. <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.AugmentSignatureHelpSession%2A> メソッドを実装します。 この例では、署名は、ハードコーディングしますが、完全な実装では、言語のドキュメントからこの情報を取得します。
 
      [!code-vb[VSSDKSignatureHelpTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_18.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_18.cs)]
 
-5.  ヘルパー メソッド`CreateSignature()`図のためだけに用意されています。
+5. ヘルパー メソッド`CreateSignature()`図のためだけに用意されています。
 
      [!code-vb[VSSDKSignatureHelpTest#19](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_19.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#19](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_19.cs)]
 
-6.  <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A> メソッドを実装します。 この例では、それぞれが 2 つのパラメーターを持つ 2 つの署名です。 そのため、このメソッドは必要ありません。 シグネチャ ヘルプは、複数のソースで使用可能な完全な実装では、このメソッドが最も高い優先順位のシグネチャ ヘルプ ソースが一致するシグネチャを指定できるかどうかを決定する使用されます。 できない場合は、メソッドは null を返し、[次へ] の最高優先順位のソースが一致するものを提供するよう要求します。
+6. <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A> メソッドを実装します。 この例では、それぞれが 2 つのパラメーターを持つ 2 つの署名です。 そのため、このメソッドは必要ありません。 シグネチャ ヘルプは、複数のソースで使用可能な完全な実装では、このメソッドが最も高い優先順位のシグネチャ ヘルプ ソースが一致するシグネチャを指定できるかどうかを決定する使用されます。 できない場合は、メソッドは null を返し、[次へ] の最高優先順位のソースが一致するものを提供するよう要求します。
 
      [!code-vb[VSSDKSignatureHelpTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_20.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_20.cs)]
 
-7.  実装、`Dispose()`メソッド。
+7. 実装、`Dispose()`メソッド。
 
      [!code-vb[VSSDKSignatureHelpTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_21.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_21.cs)]
@@ -172,12 +171,12 @@ ms.locfileid: "56684222"
 
 #### <a name="to-implement-the-signature-help-source-provider"></a>シグネチャ ヘルプのソース プロバイダーを実装するには
 
-1.  という名前のクラスを追加`TestSignatureHelpSourceProvider`を実装する<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>でエクスポート、 <xref:Microsoft.VisualStudio.Utilities.NameAttribute>、 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text"、および<xref:Microsoft.VisualStudio.Utilities.OrderAttribute>の Before ="default"。
+1. という名前のクラスを追加`TestSignatureHelpSourceProvider`を実装する<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>でエクスポート、 <xref:Microsoft.VisualStudio.Utilities.NameAttribute>、 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text"、および<xref:Microsoft.VisualStudio.Utilities.OrderAttribute>の Before ="default"。
 
      [!code-vb[VSSDKSignatureHelpTest#22](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_22.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#22](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_22.cs)]
 
-2.  実装<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider.TryCreateSignatureHelpSource%2A>をインスタンス化して、`TestSignatureHelpSource`します。
+2. 実装<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider.TryCreateSignatureHelpSource%2A>をインスタンス化して、`TestSignatureHelpSource`します。
 
      [!code-vb[VSSDKSignatureHelpTest#23](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_23.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#23](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_23.cs)]
@@ -187,27 +186,27 @@ ms.locfileid: "56684222"
 
 #### <a name="to-implement-the-command-handler"></a>コマンド ハンドラーを実装するには
 
-1.  という名前のクラスを追加`TestSignatureHelpCommand`を実装する<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>します。
+1. という名前のクラスを追加`TestSignatureHelpCommand`を実装する<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>します。
 
      [!code-vb[VSSDKSignatureHelpTest#24](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_24.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#24](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_24.cs)]
 
-2.  用のプライベート フィールドを追加、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> (アダプターがチェーンのコマンド ハンドラーにコマンド ハンドラーを追加することができます)、テキスト ビュー、ブローカーのシグネチャ ヘルプ、セッション、 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>、次へ<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>します。
+2. 用のプライベート フィールドを追加、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> (アダプターがチェーンのコマンド ハンドラーにコマンド ハンドラーを追加することができます)、テキスト ビュー、ブローカーのシグネチャ ヘルプ、セッション、 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>、次へ<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>します。
 
      [!code-vb[VSSDKSignatureHelpTest#25](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_25.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#25](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_25.cs)]
 
-3.  これらのフィールドを初期化するために、およびコマンド フィルター チェーンのコマンドのフィルターを追加するには、コンス トラクターを追加します。
+3. これらのフィールドを初期化するために、およびコマンド フィルター チェーンのコマンドのフィルターを追加するには、コンス トラクターを追加します。
 
      [!code-vb[VSSDKSignatureHelpTest#26](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_26.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#26](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_26.cs)]
 
-4.  実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>コマンド フィルターがかっこを受信するとシグネチャ ヘルプのセッションをトリガーする方法」(「文字、終わりかっこを受信すると、セッションを消去して、既知のメソッド名のいずれかの後に」)"の文字セッションがアクティブな状態です。 すべてのケースでは、コマンドは転送されます。
+4. 実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>コマンド フィルターがかっこを受信するとシグネチャ ヘルプのセッションをトリガーする方法」(「文字、終わりかっこを受信すると、セッションを消去して、既知のメソッド名のいずれかの後に」)"の文字セッションがアクティブな状態です。 すべてのケースでは、コマンドは転送されます。
 
      [!code-vb[VSSDKSignatureHelpTest#27](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_27.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#27](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_27.cs)]
 
-5.  実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>メソッドを常に、コマンドを転送します。
+5. 実装、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>メソッドを常に、コマンドを転送します。
 
      [!code-vb[VSSDKSignatureHelpTest#28](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_28.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#28](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_28.cs)]
@@ -217,17 +216,17 @@ ms.locfileid: "56684222"
 
 ### <a name="to-implement-the-signature-help-command-provider"></a>コマンドのシグネチャ ヘルプ プロバイダーを実装するには
 
-1.  という名前のクラスを追加`TestSignatureHelpController`を実装する<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>でエクスポートし、 <xref:Microsoft.VisualStudio.Utilities.NameAttribute>、 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>、および<xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>します。
+1. という名前のクラスを追加`TestSignatureHelpController`を実装する<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>でエクスポートし、 <xref:Microsoft.VisualStudio.Utilities.NameAttribute>、 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>、および<xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>します。
 
      [!code-vb[VSSDKSignatureHelpTest#29](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_29.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#29](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_29.cs)]
 
-2.  インポート、 <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> (を取得するために使用、<xref:Microsoft.VisualStudio.Text.Editor.ITextView>を指定、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>オブジェクト)、 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> (現在の単語の検索に使用)、および<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>(トリガーする、シグネチャ ヘルプのセッション)。
+2. インポート、 <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> (を取得するために使用、<xref:Microsoft.VisualStudio.Text.Editor.ITextView>を指定、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>オブジェクト)、 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> (現在の単語の検索に使用)、および<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>(トリガーする、シグネチャ ヘルプのセッション)。
 
      [!code-vb[VSSDKSignatureHelpTest#30](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_30.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#30](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_30.cs)]
 
-3.  実装、<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A>メソッドをインスタンス化して、`TestSignatureCommandHandler`します。
+3. 実装、<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A>メソッドをインスタンス化して、`TestSignatureCommandHandler`します。
 
      [!code-vb[VSSDKSignatureHelpTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_31.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#31](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_31.cs)]
@@ -237,13 +236,13 @@ ms.locfileid: "56684222"
 
 #### <a name="to-build-and-test-the-signaturehelptest-solution"></a>ビルドして SignatureHelpTest ソリューションをテストするには
 
-1.  ソリューションをビルドします。
+1. ソリューションをビルドします。
 
-2.  デバッガーでこのプロジェクトを実行する場合は、Visual Studio の 2 番目のインスタンスが開始します。
+2. デバッガーでこのプロジェクトを実行する場合は、Visual Studio の 2 番目のインスタンスが開始します。
 
-3.  テキスト ファイルと"add"という単語を含むいくつかのテキストの種類およびかっこを作成します。
+3. テキスト ファイルと"add"という単語を含むいくつかのテキストの種類およびかっこを作成します。
 
-4.  かっこを入力すると後の 2 つの署名の一覧を表示するツールヒントが表示されます、`add()`メソッド。
+4. かっこを入力すると後の 2 つの署名の一覧を表示するツールヒントが表示されます、`add()`メソッド。
 
 ## <a name="see-also"></a>関連項目
 - [チュートリアル: コンテンツの種類をファイル名拡張子にリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

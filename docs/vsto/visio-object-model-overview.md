@@ -17,21 +17,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 806a2a2165dc604969e2bd8f35a0eb9c1cf07556
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1ca692e85396b11647c507b18c95ca095b3f8072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438759"
 ---
 # <a name="visio-object-model-overview"></a>Visio オブジェクト モデルの概要
   Visio オブジェクト モデルと対話することにより、Microsoft Office Visio 用の Office ソリューションを開発できます。 このオブジェクト モデルは、Visio のプライマリ相互運用機能アセンブリで提供されるクラスとインターフェイスで構成されています。それらは `Microsoft.Office.Interop.Visio` 名前空間の中で定義されています。
 
  ここでは、Visio オブジェクト モデルの概要を簡単に説明します。 Office プロジェクトでタスクを実行するために Visio オブジェクト モデルを使用する方法については、次のトピックを参照してください。
 
--   [Visio 図面の操作します。](../vsto/working-with-visio-documents.md)
+- [Visio 図面の操作します。](../vsto/working-with-visio-documents.md)
 
--   [Visio 図形を操作します。](../vsto/working-with-visio-shapes.md)
+- [Visio 図形を操作します。](../vsto/working-with-visio-shapes.md)
 
 ## <a name="understand-the-visio-object-model"></a>Visio オブジェクト モデルを理解します。
  Visio では、多くのオブジェクトが操作対象になります。 これらのオブジェクトは、ユーザー インターフェイスとほぼ同様の階層形式で編成されています。 階層の最上位にあるのは、 [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) オブジェクトです。 このオブジェクトは、Visio の現在のインスタンスを表します。 `Microsoft.Office.Interop.Visio.Application`オブジェクトが含まれています、`Microsoft.Office.Interop.Visio.Document`と`Microsoft.Office.Interop.Visio.Page`オブジェクトだけでなく`Microsoft.Office.Interop.Visio.Documents`と`Microsoft.Office.Interop.Visio.Pages`コレクション。 これらのオブジェクトとコレクションにはそれぞれ数多くのメソッドとプロパティがあり、それらにアクセスしてオブジェクトを処理したり、オブジェクトと対話したりできます。
@@ -40,11 +40,11 @@ ms.locfileid: "56636711"
 
  この後のセクションでは、最上位レベルのオブジェクトとそれらの相互関係について、簡単に説明します。 このようなオブジェクトには次の 4 つがあります。
 
--   Application オブジェクト
+- Application オブジェクト
 
--   Document オブジェクト
+- Document オブジェクト
 
--   Page オブジェクト
+- Page オブジェクト
 
 ### <a name="application-object"></a>Application オブジェクト
  Microsoft.Office.Interop.Visio.Application オブジェクトは、Visio アプリケーションを表し、すべての他のオブジェクトの親であります。 そのメンバーは、通常、Visio 全体に適用されます。 プロパティと、Microsoft.Office.Interop.Visio.Application のメソッドを使用して、 `Microsoft.Office.Interop.Visio.ApplicationSettings` Visio の環境を制御するオブジェクト。
@@ -62,19 +62,19 @@ ms.locfileid: "56636711"
  図形を作成するには、`Microsoft.Office.Interop.Visio.Page.DrawSpline` メソッドや `Microsoft.Office.Interop.Visio.Page.DrawOval` メソッドなどのメソッドを使用できます。 さらに、ステンシルからマスターを取得し、`Microsoft.Office.Interop.Visio.Page.Drop` メソッドまたは `Microsoft.Office.Interop.Visio.Page.DropMany` メソッドを使用することにより図形をページに配置できます。
 
 ## <a name="use-the-visio-object-model-documentation"></a>Visio オブジェクト モデル ドキュメントを使用します。
- Visio オブジェクト モデルの詳細については、Visio の VBA オブジェクト モデルのリファレンスを参照してください。 VBA オブジェクト モデルのリファレンス ドキュメントでは、Visual Basic for Applications (VBA) コードに公開される Visio オブジェクト モデルについて説明しています。 詳細については、[Visio 2010 オブジェクト モデル リファレンス](http://go.microsoft.com/fwlink/?LinkId=199775)を参照してください。
+ Visio オブジェクト モデルの詳細については、Visio の VBA オブジェクト モデルのリファレンスを参照してください。 VBA オブジェクト モデルのリファレンス ドキュメントでは、Visual Basic for Applications (VBA) コードに公開される Visio オブジェクト モデルについて説明しています。 詳細については、次を参照してください。 [Visio 2010 オブジェクト モデル リファレンス](http://go.microsoft.com/fwlink/?LinkId=199775)します。
 
  VBA オブジェクト モデルのリファレンス内のオブジェクトとメンバーはすべて、Visio プライマリ相互運用機能アセンブリ (PIA) の型とメンバーに対応します。 たとえば、 `Document` VBA オブジェクト モデルのリファレンス内のオブジェクトが、Visio pia Microsoft.Office.Interop.Visio.Document 型に対応します。 VBA オブジェクト モデルのリファレンスでは、ほとんどのプロパティ、メソッド、およびイベントのコード例を紹介しています。ただし、Visual Studio を使用して作成した Visio VSTO アドイン プロジェクトでこのリファレンス内の VBA コードを使用するには、それらを Visual Basic または Visual C# に変換する必要があります。
 
 > [!NOTE]
->  現在のところ、Visio プライマリ相互運用機能アセンブリに関するリファレンス ドキュメントは提供されていません。
+> 現在のところ、Visio プライマリ相互運用機能アセンブリに関するリファレンス ドキュメントは提供されていません。
 
- Visio ソリューションを作成するための他のツールと関連するコード例は、[Visio 2010 ソフトウェア開発キット](http://go.microsoft.com/fwlink/?LinkId=196501)を参照してください。
+ Visio ソリューションを作成するための他のツールと関連するコード例は、次を参照してください。 [Visio 2010 ソフトウェア開発キット](http://go.microsoft.com/fwlink/?LinkId=196501)します。
 
 ### <a name="additional-types-in-primary-interop-assemblies"></a>プライマリ相互運用機能アセンブリの追加の型
  実装の違いにより VBA には表示されないプライマリ相互運用機能アセンブリの型があります。 VBA では、直接使用できるオブジェクトとメンバーだけを含む Visio オブジェクト モデルのビューが提供されます。 プライマリ相互運用機能アセンブリは同じオブジェクト モデルを公開しますが、それには、COM オブジェクト モデルのオブジェクトをマネージド コードに変換する、その他のインターフェイス、クラス、およびメンバーも含まれています。 これらの追加の項目は、コードで直接使用するためのものではありません。
 
- 詳細については、[Office プライマリ相互運用機能アセンブリのクラスおよびインターフェイスの概要](http://go.microsoft.com/fwlink/?LinkId=189592)と[Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)を参照してください。
+ 詳細については、次を参照してください。 [Office プライマリ相互運用機能アセンブリのクラスおよびインターフェイスの概要](http://go.microsoft.com/fwlink/?LinkId=189592)と[Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [Visio ソリューション](../vsto/visio-solutions.md)

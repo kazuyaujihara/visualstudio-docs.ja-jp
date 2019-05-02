@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1810: 参照型の静的フィールド インラインで初期化 |Microsoft Docs'
-ms.custom: ''
+title: CA1810:参照型の静的フィールドのインラインを初期化します |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - InitializeReferenceTypeStaticFieldsInline
 - CA1810
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4d7ffbe4fc821ffd70b0bb299b2a4738d63873b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538916"
 ---
-# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: 参照型の静的フィールドをインラインで初期化します
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810:参照型の静的フィールドをインラインで初期化します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -47,9 +42,9 @@ ms.locfileid: "49862685"
 
  静的コンストラクターのチェックによってパフォーマンスが低下することがあります。 多くの場合、静的コンス トラクターは、静的フィールドの最初のアクセスする前にする必要がありますのみを確認する静的な初期化ケースが発生する静的フィールドの初期化にのみ使用されます。 `beforefieldinit`な場合、これらおよびその他のほとんどの種類。 適切でないのみ静的な初期化がグローバルな状態に影響し、次のいずれかが当てはまるときです。
 
--   グローバル状態への影響は、コストが、型を使用しない場合は必要ありません。
+- グローバル状態への影響は、コストが、型を使用しない場合は必要ありません。
 
--   グローバル状態の結果は、型の静的フィールドにアクセスしなくてもアクセスできます。
+- グローバル状態の結果は、型の静的フィールドにアクセスしなくてもアクセスできます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、静的データが宣言されたとき、および静的コンストラクターを削除するときに、静的データをすべて初期化します。
@@ -72,7 +67,4 @@ ms.locfileid: "49862685"
  **{**
  **}/終了/NoStaticConstructor クラスの**
 ## <a name="related-rules"></a>関連規則
- [CA2207: 値型の静的フィールドのインラインを初期化します](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
-
-
-
+ [CA2207:値型の静的フィールドのインラインを初期化します](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

@@ -10,12 +10,12 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47dad5f6b508356bde7570996127007b25b287b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5311aa3ff390611942aa91cb1f2a53ca5a76258d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972942"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074309"
 ---
 # <a name="how-to-troubleshoot-services"></a>方法: サービスのトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ if (log == null) return;
   
 ### <a name="to-troubleshoot-a-service"></a>サービスをトラブルシューティングするには  
   
-1.  システム レジストリにサービスが正しく登録されているかどうかを確認します。 詳細については、次を参照してください。[サービス登録](../misc/registering-services.md)します。  
+1. システム レジストリにサービスが正しく登録されているかどうかを確認します。 詳細については、次を参照してください。[サービス登録](../misc/registering-services.md)します。  
   
      次の .reg ファイル フラグメントは、SVsTextManager サービスを登録する方法を示しています。  
   
@@ -52,17 +52,17 @@ if (log == null) return;
   
      上記の例では、バージョン番号は、バージョンの[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]12.0 または 14.0、キー {f5e7e71d-1401-11d1-883b-0000f87579d2} は、サービス、SVsTextManager および既定値の {のサービス識別子 (SID) など、F5E7E720-1401-11d1-883B-0000F87579D2} は、テキスト マネージャー サービスを提供する VSPackage のパッケージ GUID です。  
   
-2.  GetService を呼び出すときに、サービスの種類と、インターフェイス型ではなくを使用します。 サービスを要求するときに[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、<xref:Microsoft.VisualStudio.Shell.Package>型から GUID を抽出します。 次の条件が存在しない場合、サービスは見つかりませんされます。  
+2. GetService を呼び出すときに、サービスの種類と、インターフェイス型ではなくを使用します。 サービスを要求するときに[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、<xref:Microsoft.VisualStudio.Shell.Package>型から GUID を抽出します。 次の条件が存在しない場合、サービスは見つかりませんされます。  
   
-    1.  インターフェイス型は、サービスの種類ではなく、GetService に渡されます。  
+    1. インターフェイス型は、サービスの種類ではなく、GetService に渡されます。  
   
-    2.  GUID は、インターフェイスを明示的に割り当てられません。 そのため、システムは、必要に応じてオブジェクトの既定の GUID を作成します。  
+    2. GUID は、インターフェイスを明示的に割り当てられません。 そのため、システムは、必要に応じてオブジェクトの既定の GUID を作成します。  
   
-3.  サービスを要求する VSPackage が配置されていることを確認します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 呼び出す前に、構築した後は、VSPackage をサイト<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>します。  
+3. サービスを要求する VSPackage が配置されていることを確認します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 呼び出す前に、構築した後は、VSPackage をサイト<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>します。  
   
      サービスの必要がある VSPackage コンス トラクターでコードがある場合は、Initialize メソッドに移動します。  
   
-4.  適切なサービス プロバイダーを使用していることを確認します。  
+4. 適切なサービス プロバイダーを使用していることを確認します。  
   
      すべてのサービス プロバイダーは同じです。 サービス プロバイダーを[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ツール ウィンドウへのパスと、VSPackage に渡す 1 つは異なります。 ツール ウィンドウのサービス プロバイダーが知って<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>で認識されていないが、<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>します。 呼び出すことができます<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>ツール ウィンドウ内から VSPackage サービス プロバイダーを取得します。  
   

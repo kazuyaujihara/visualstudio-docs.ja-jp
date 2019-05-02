@@ -1,11 +1,8 @@
 ---
 title: 従来のワークフロー プロジェクトを作成する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflow projects, creating
@@ -15,13 +12,13 @@ ms.assetid: 572d5c32-59ef-49d8-a24c-e180fe9f7a11
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f7c8e8c65ce7a3c716c017bc83886d0ddb8e7292
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 73cc930e6ec21694cf6c5df8e68cbe17ca469291
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976969"
 ---
 # <a name="creating-legacy-workflow-projects"></a>従来のワークフロー プロジェクトの作成
 ここでは、vs2010 が備えている従来の [!INCLUDE[wfd1](../includes/wfd1-md.md)]を使用してワークフロー プロジェクトを作成する方法について説明します。 従来の[!INCLUDE[wfd2](../includes/wfd2-md.md)]は、[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] または [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] を対象とします。 次の一覧表に含まれるワークフロー プロジェクト テンプレートの使用法についても示します。  

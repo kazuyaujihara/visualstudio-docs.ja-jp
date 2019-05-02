@@ -1,4 +1,4 @@
-﻿---
+---
 title: カスタム ホストを使用したテキスト テンプレートの処理
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e72b279d55cbe11f6232ff1f91c8fee443d9c283
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969320"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>カスタム ホストを使用したテキスト テンプレートの処理
 
@@ -46,10 +46,10 @@ string output = engine.ProcessTemplate(templateString, host);
 
  `host` パラメーターでは、<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> を実装するクラスを指定する必要があります。 これはエンジンによってコールバックされます。
 
- ホストは、エラーのログの記録、アセンブリとインクルード ファイルへの参照の解決、テンプレートを実行できるアプリケーション ドメインの指定、各ディレクティブの適切なプロセッサの呼び出しを実行できる必要があります。
+ ホストは、エラーのログ記録、アセンブリとインクルード ファイルへの参照の解決、テンプレートを実行できるアプリケーション ドメインの指定、各ディレクティブの適切なプロセッサの呼び出しを実行できる必要があります。
 
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> は、**Microsoft.VisualStudio.TextTemplating.\*.0.dll** で定義され、<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> は、**Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0.dll** で定義されています。
- 
+
 ## <a name="in-this-section"></a>このセクションの内容
  [チュートリアル: カスタム テキスト テンプレート ホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)は、Visual Studio の外部テキスト テンプレートの機能を利用できるようにするカスタム テキスト テンプレート ホストを作成する方法を示します。
 

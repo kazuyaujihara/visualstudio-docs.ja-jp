@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c7cd8a48092c39048d52a7ebe9cd27163ba32110
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424788"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>チュートリアル: WPF アプリケーションで関連データの表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,19 +61,19 @@ ms.locfileid: "58964329"
   
 #### <a name="to-create-a-new-wpf-project"></a>新しい WPF プロジェクトを作成するには  
   
-1.  Visual Studio を起動します。  
+1. Visual Studio を起動します。  
   
-2.  **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
+2. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
   
-3.  展開**Visual c#** または**Visual Basic**、し、 **Windows**します。  
+3. 展開**Visual c#** または**Visual Basic**、し、 **Windows**します。  
   
-4.  確認します **.NET Framework 4**  ダイアログ ボックスの上部にあるコンボ ボックスで選択されています。 <xref:System.Windows.Controls.DataGrid>このチュートリアルで使用するコントロールは、.NET Framework 4 でのみ使用できます。  
+4. 確認します **.NET Framework 4**  ダイアログ ボックスの上部にあるコンボ ボックスで選択されています。 <xref:System.Windows.Controls.DataGrid>このチュートリアルで使用するコントロールは、.NET Framework 4 でのみ使用できます。  
   
-5.  **[WPF アプリケーション]** プロジェクト テンプレートを選択します。  
+5. **[WPF アプリケーション]** プロジェクト テンプレートを選択します。  
   
-6.  **[名前]** ボックスに「 `AdventureWorksOrdersViewer`」と入力します。  
+6. **[名前]** ボックスに「 `AdventureWorksOrdersViewer`」と入力します。  
   
-7.  **[OK]** をクリックします。  
+7. **[OK]** をクリックします。  
   
      Visual Studio によって作成、`AdventureWorksOrdersViewer`プロジェクト。  
   
@@ -102,9 +102,9 @@ ms.locfileid: "58964329"
   
 6. **データベース オブジェクトの選択** ページで、展開**テーブル**、次のテーブルを選択します。  
   
-   -   **SalesOrderDetail**  
+   - **SalesOrderDetail**  
   
-   -   **SalesOrderHeader**  
+   - **SalesOrderHeader**  
   
 7. **[完了]** をクリックします。  
   
@@ -167,7 +167,7 @@ ms.locfileid: "58964329"
 1. **データソース**ウィンドウで、検索、 **SalesOrderDetails**ノードの子である、 **[salesorderheaders]** ノード。  
   
    > [!NOTE]
-   >  **SalesOrderDetails**のピア ノード、 **[salesorderheaders]** ノード。 子ノードを選択することを確認、 **[salesorderheaders]** ノード。  
+   > **SalesOrderDetails**のピア ノード、 **[salesorderheaders]** ノード。 子ノードを選択することを確認、 **[salesorderheaders]** ノード。  
   
 2. 子展開**SalesOrderDetails**ノード。  
   
@@ -192,15 +192,15 @@ ms.locfileid: "58964329"
   
 #### <a name="to-test-the-application"></a>アプリケーションをテストするには  
   
-1.  **F5**キーを押します。  
+1. **F5**キーを押します。  
   
      アプリケーションがビルドされ、実行されます。 次のことを検証します。  
   
-    -   **Sales Order ID**コンボ ボックスが表示されます**71774**します。 これは、エンティティの最初の注文 ID です。  
+    - **Sales Order ID**コンボ ボックスが表示されます**71774**します。 これは、エンティティの最初の注文 ID です。  
   
-    -   選択した注文ごとに、 **Sales Order ID**コンボ ボックスで、詳細な注文情報に表示されます、<xref:System.Windows.Controls.DataGrid>します。  
+    - 選択した注文ごとに、 **Sales Order ID**コンボ ボックスで、詳細な注文情報に表示されます、<xref:System.Windows.Controls.DataGrid>します。  
   
-2.  アプリケーションを終了します。  
+2. アプリケーションを終了します。  
   
 ## <a name="next-steps"></a>次の手順  
  このチュートリアルを完了すると、使用する方法を説明します、**データ ソース**WPF のバインドを Visual Studio のウィンドウを他の種類のデータ ソースを制御します。 詳細については、次を参照してください。 [WCF data service にコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)と[データセットにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-dataset.md)します。  

@@ -10,29 +10,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81d91603d6c365946b1064cac3a7f1ca3c1e6ba8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a188116b09b846e81023c239d64d6386c7f2c6ae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861972"
 ---
 # <a name="inside-the-core-editor"></a>コア エディター
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]のコア エディターは変更し、テキスト情報のクエリを実行できるいくつかのコンポーネントのセットです。 従来の API を使用して、コア エディターをカスタマイズしている場合は、エディター アダプター経由でルーティングされますが、これらのカスタマイズを使用する続行することがあります。 お勧め、ただし、API の新しいエディターに、カスタマイズを調整することです。
 
  コア エディターのいくつかの重要な側面を次の領域には。
 
--   テキスト バッファー
+- テキスト バッファー
 
--   テキスト ビュー
+- テキスト ビュー
 
--   コード ウィンドウ
+- コード ウィンドウ
 
--   テキスト マーカー
+- テキスト マーカー
 
--   テキスト マネージャー
+- テキスト マネージャー
 
--   言語サービスとの統合
+- 言語サービスとの統合
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [従来の API を使用して、コア エディターをインスタンス化](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)手順を使用する方法について説明します<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>エディター、コアのインスタンスを作成します。

@@ -12,12 +12,12 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2392f77ef3b78176dd33defd012b828d7a918b5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6143b21884bc92ac79ae0fd7292a11780fec4478
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439759"
 ---
 # <a name="localizing-vsix-packages"></a>VSIX パッケージのローカライズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ VSIX パッケージは、各ターゲット言語 Extension.vsixlangpack ファ
  Extension.vsixlangpack  
   
 > [!NOTE]
->  VSIX でサポートされているプロジェクトのテンプレート、 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] VSIX マニフェストを生成し、source.extension.vsixmanifest という名前を付けます。 Visual Studio がプロジェクトをビルドするときにそのファイルの内容にコピー Extension.VsixManifest VSIX パッケージ内。  
+> VSIX でサポートされているプロジェクトのテンプレート、 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] VSIX マニフェストを生成し、source.extension.vsixmanifest という名前を付けます。 Visual Studio がプロジェクトをビルドするときにそのファイルの内容にコピー Extension.VsixManifest VSIX パッケージ内。  
   
 ## <a name="the-extensionvsixlangpack-file"></a>Extension.vsixlangpack ファイル  
  Extension.vsixlangpack ファイルは次の[VSIX 言語パックのスキーマ](../extensibility/vsx-language-pack-schema-reference.md)します。 このスキーマは、 [VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)ルート要素、およびこれらの 4 つの子要素。[LocalizedName](../extensibility/localizedname-element-vsix-language-pack-schema.md)、 [LocalizedDescription](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)、 [MoreInfoURL](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)、および[ライセンス](../extensibility/license-element-vsix-language-pack-schema.md)します。 これらの子要素に対応して、 `Name`、 `Description`、 `MoreInfoURL`、および`License`の子要素、 `Identifier` Extension.vsixmanifest ファイルの要素。  
@@ -53,9 +53,9 @@ VSIX パッケージは、各ターゲット言語 Extension.vsixlangpack ファ
   
 #### <a name="to-set-the-include-in-vsix-property"></a>Vsix のプロパティで、含めるを設定するには  
   
-1.  **ソリューション エクスプ ローラー**Extension.vsixlangpack ファイルを右クリックし、クリックして**プロパティ**します。  
+1. **ソリューション エクスプ ローラー**Extension.vsixlangpack ファイルを右クリックし、クリックして**プロパティ**します。  
   
-2.  プロパティ グリッドで、クリックして**Vsix に含める**、その値に設定し、`true`します。  
+2. プロパティ グリッドで、クリックして**Vsix に含める**、その値に設定し、`true`します。  
   
 ## <a name="example"></a>例  
   

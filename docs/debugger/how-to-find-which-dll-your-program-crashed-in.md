@@ -22,33 +22,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7006de0241b0e0c050670ccc14a835f11db1b260
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: b7a9421af9e0caf085feb1afb27b53befe837668
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894048"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>方法: プログラムでクラッシュしている DLL を検索 (C#、C++、Visual Basic、 F#)
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>方法: プログラムでクラッシュしている DLL を検索 (C#、 C++、Visual Basic、 F#)
 
  システム DLL または他の開発者が作成したコードを呼び出す部分でアプリケーションがクラッシュした場合、クラッシュが発生した DLL を確認する必要があります。 プログラム外の DLL でクラッシュが発生している場合は、**[モジュール]** ウィンドウを使用してその場所を確認できます。
 
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>[モジュール] ウィンドウを使ってクラッシュの発生場所を確認するには
 
-1.  クラッシュが発生したアドレスをメモします。
+1. クラッシュが発生したアドレスをメモします。
 
     アドレスが、エラー メッセージに表示されない場合は、別の方法を使用して DLL を特定する必要があります。 システム DLL を疑いがある場合は、[シンボルを読み込む](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)デバッグするときに、Microsoft シンボル サーバーからです。 それ以外の場合、する必要があります[ダンプ ファイル作成](../debugger/using-dump-files.md)で情報を代わりにヒープします。 さまざまな[ツール](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/)ダンプ ファイルを作成します。
 
-2.  **[デバッグ]** メニューの **[ウィンドウ]** をポイントし、**[モジュール]** をクリックします。
+2. **[デバッグ]** メニューの **[ウィンドウ]** をポイントし、**[モジュール]** をクリックします。
 
-3.  **[モジュール]** ウィンドウの **[アドレス]** 列に注目します。 必要に応じて、スクロール バーを使用します。
+3. **[モジュール]** ウィンドウの **[アドレス]** 列に注目します。 必要に応じて、スクロール バーを使用します。
 
-4.  列の上部にある **[アドレス]** ボタンをクリックして、DLL をアドレス順に並べ替えます。
+4. 列の上部にある **[アドレス]** ボタンをクリックして、DLL をアドレス順に並べ替えます。
 
-5.  並べ替えたリストを検索して、アドレス範囲内にクラッシュ場所がある DLL を探します。
+5. 並べ替えたリストを検索して、アドレス範囲内にクラッシュ場所がある DLL を探します。
 
-6.  **[名前]** 列と **[パス]** 列で、DLL の名前とパスを確認します。
+6. **[名前]** 列と **[パス]** 列で、DLL の名前とパスを確認します。
 
 ## <a name="see-also"></a>関連項目
 - [DLL プロジェクトのデバッグ](../debugger/debugging-dll-projects.md)
-- [方法 : [モジュール] ウィンドウを使用する](../debugger/how-to-use-the-modules-window.md)
+- [方法: [モジュール] ウィンドウを使用する](../debugger/how-to-use-the-modules-window.md)

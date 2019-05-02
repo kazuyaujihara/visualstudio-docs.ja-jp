@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 640936fbe0218bbb8e6d710547c39a4bfbf0bc9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36c49d3447a5f1fafcf4601057c66ebedcb193ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003385"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>DSL ライブラリによる DSL 間でのクラスの共有
 Visual Studio Visualization and Modeling SDK で別の DSL にインポートすることができます、不完全な DSL 定義を作成できます。 これにより、類似したモデルの共通部分を考慮することができます。
@@ -21,11 +21,11 @@ Visual Studio Visualization and Modeling SDK で別の DSL にインポートす
 
 #### <a name="to-create-a-dsl-library"></a>DSL ライブラリを作成するには
 
-1.  新しい DSL プロジェクトを作成し、DSL ライブラリのソリューション テンプレートを選択します。
+1. 新しい DSL プロジェクトを作成し、DSL ライブラリのソリューション テンプレートを選択します。
 
      1 つの DSL プロジェクトが空のモデルで作成されます。
 
-2.  ドメイン クラス、リレーションシップ、図形は、これに追加できます。
+2. ドメイン クラス、リレーションシップ、図形は、これに追加できます。
 
      ライブラリ内の要素は、1 つの埋め込みツリーを形成する必要はありません。
 
@@ -33,15 +33,15 @@ Visual Studio Visualization and Modeling SDK で別の DSL にインポートす
 
      設定を検討してください、**継承修飾子**ドメイン クラスの`Abstract`します。
 
-3.  接続ビルダーなどの DSL のエクスプ ローラーで定義する要素を追加することができます。
+3. 接続ビルダーなどの DSL のエクスプ ローラーで定義する要素を追加することができます。
 
-4.  検証制約など、追加のコードが必要なカスタマイズを追加できます。
+4. 検証制約など、追加のコードが必要なカスタマイズを追加できます。
 
-5.  クリックして**すべてのテンプレートの変換**します。
+5. クリックして**すべてのテンプレートの変換**します。
 
-6.  プロジェクトをビルドします。
+6. プロジェクトをビルドします。
 
-7.  使用するには、他のユーザーの DSL を配布するときに、コンパイル済みアセンブリ (DLL) とファイルの両方を提供する必要があります`DslDefinition.dsl`します。 下のフォルダーにコンパイルされたアセンブリを見つけることができます。 `Dsl\bin\*`
+7. 使用するには、他のユーザーの DSL を配布するときに、コンパイル済みアセンブリ (DLL) とファイルの両方を提供する必要があります`DslDefinition.dsl`します。 下のフォルダーにコンパイルされたアセンブリを見つけることができます。 `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>DSL ライブラリをインポートするには
 

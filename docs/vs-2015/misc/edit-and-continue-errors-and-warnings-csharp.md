@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 36d2665eef36e0e233cf02d241f550f3e701800f
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58973833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822959"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>エディット コンティニュのエラーと警告 (C#)
 Visual C# エディット コンティニュで許可されていないコードのセクションを編集しました。  
@@ -79,11 +79,11 @@ Visual C# エディット コンティニュで許可されていないコード
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-1.  **[デバッグ]** メニューの **[元に戻す]** をクリックし、変更を元に戻します。  
+1. **[デバッグ]** メニューの **[元に戻す]** をクリックし、変更を元に戻します。  
   
      - または -  
   
-2.  デバッグ セッションを停止し、編集を加えた後で新しいデバッグ セッションを開始します。  
+2. デバッグ セッションを停止し、編集を加えた後で新しいデバッグ セッションを開始します。  
   
 ## <a name="see-also"></a>関連項目  
  [エディット コンティニュ (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

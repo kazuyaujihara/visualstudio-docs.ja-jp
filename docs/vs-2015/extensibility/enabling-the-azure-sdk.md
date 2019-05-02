@@ -11,12 +11,12 @@ ms.assetid: 1c323afd-fb4e-449a-adaa-bb7a5d3b1468
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e47fa574d607f0fe56950b232991ad6e5ff2b351
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 1830e014a32129b8e63c78d179eed12f3375b035
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432155"
 ---
 # <a name="enabling-the-azure-sdk"></a>Azure SDK を有効にします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,16 +29,16 @@ ms.locfileid: "59002519"
   
 ### <a name="to-enable-the-azure-sdk"></a>Azure SDK を有効にするには  
   
-1.  **ファイル**] メニューの [新しいプロジェクトを作成します。 (クリックして**新規** をクリックし、**プロジェクト**)。  
+1. **ファイル**] メニューの [新しいプロジェクトを作成します。 (クリックして**新規** をクリックし、**プロジェクト**)。  
   
-2.  いずれかのノードを展開**Visual Basic**または**c#** し**クラウド**します。  
+2. いずれかのノードを展開**Visual Basic**または**c#** し**クラウド**します。  
   
-3.  中央のペインで選択**Azure SDK for .NET を入手**、順にクリックします**OK**します。  
+3. 中央のペインで選択**Azure SDK for .NET を入手**、順にクリックします**OK**します。  
   
      インストーラーに表示される指示に従います。  
   
     > [!NOTE]
-    >  Azure Tools をインストールするには、インターネット インフォメーション サービス 7.0 および ASP.NET アプリケーションを開発コンポーネントをインストールが必要です。 これらのコンポーネントがインストールされていない場合、Azure ツールのセットアップはインストールを求められます。  
+    > Azure Tools をインストールするには、インターネット インフォメーション サービス 7.0 および ASP.NET アプリケーションを開発コンポーネントをインストールが必要です。 これらのコンポーネントがインストールされていない場合、Azure ツールのセットアップはインストールを求められます。  
   
 ## <a name="see-also"></a>関連項目  
  [Azure](https://azure.microsoft.com/)   

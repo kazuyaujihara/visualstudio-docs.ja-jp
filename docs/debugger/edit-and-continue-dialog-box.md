@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fdf515e5ca4aeb20cd9fce0b2a2ea829ad3d2e10
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851320"
 ---
 # <a name="edit-and-continue-dialog-box"></a>[エディット コンティニュ] ダイアログ ボックス
 このダイアログ ボックスは、デバッグ中にコードを編集したときに、**エディット コンティニュ**でそのコード変更を適用できることが認識された場合に表示されます (ネイティブのみ)。 詳細については、「[エディット コンティニュ](../debugger/edit-and-continue.md)」を参照してください。

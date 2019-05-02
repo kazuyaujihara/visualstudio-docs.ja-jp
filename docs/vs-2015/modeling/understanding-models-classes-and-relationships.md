@@ -1,25 +1,22 @@
 ---
 title: 理解のモデル、クラスとリレーションシップ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
 ms.assetid: 2ecd569c-b369-41ea-b78e-a61b62e2e4e9
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d4381edb42e2aef53c00aea619eea34ee20060d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424331"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>モデル、クラス、およびリレーションシップについて
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +34,7 @@ ms.locfileid: "49271792"
   
  DSL 定義図では、モデル要素、およびモデル要素間のリンクを定義するリレーションシップを定義するドメイン クラスを示します。 シェイプとモデル要素をユーザーに表示に使用されるコネクタも示します。  
   
- ![スイムレーンを含む dsl デザイナー](../modeling/media/dsl-desinger.png "dsl_desinger")  
+ ![スイムレーンを含む DSL デザイナー](../modeling/media/dsl-desinger.png "dsl_desinger")  
   
  図または DSL エクスプ ローラーで、DSL 定義で項目を選択すると、[プロパティ] ウィンドウでに関する情報が表示されます。 追加の情報は、DSL の詳細ウィンドウに表示可能性があります。  
   
@@ -59,22 +56,22 @@ ms.locfileid: "49271792"
   
  ![埋め込みリレーションシップと参照リレーションシップ](../modeling/media/music-classes.png "Music_Classes")  
   
- 図 4 つのドメイン クラスを示しています: 音楽、アルバム、アーティスト、曲。 ドメイン クラスは、名前やタイトルなどのドメイン プロパティを定義します。 インスタンス モデルでは、これらのプロパティの一部の値は、ダイアグラムに表示されます。  
+ 図は、4 つのドメイン クラスを示しています。音楽、アルバム、アーティスト、曲。 ドメイン クラスは、名前やタイトルなどのドメイン プロパティを定義します。 インスタンス モデルでは、これらのプロパティの一部の値は、ダイアグラムに表示されます。  
   
- クラス間ではドメイン リレーションシップ: MusicHasAlbums、MusicHasArtists、AlbumbHasSongs、および artistappearedonalbums です。 リレーションシップがある 1..1 などの多重度 0.. *。 など、すべての曲を AlbumHasSongs リレーションシップにより 1 つだけのアルバムに関連する必要があります。 すべてのアルバムの曲の任意の数を持つことができます。  
+ クラス間ドメイン リレーションシップには。MusicHasAlbums、MusicHasArtists、AlbumbHasSongs、および artistappearedonalbums です。 リレーションシップがある 1..1 などの多重度 0.. *。 など、すべての曲を AlbumHasSongs リレーションシップにより 1 つだけのアルバムに関連する必要があります。 すべてのアルバムの曲の任意の数を持つことができます。  
   
 ### <a name="rearranging-the-dsl-definition-diagram"></a>DSL 定義図の並べ替え  
  この図で同様のアルバムは DSL 定義図に、ドメイン クラスが複数回を表示できることに注意してください。 常に 1 つの主なビューがあるし、いくつかあります*参照*ビュー。  
   
  DSL 定義図を並べ替えるには、次のことができます。  
   
--   メインのスワップし、ビューを使用して、参照、 **ツリーをここ**と**ツリーの分割**コマンド。 これらのコマンドを表示する 1 つのドメイン クラスを右クリックします。  
+- メインのスワップし、ビューを使用して、参照、 **ツリーをここ**と**ツリーの分割**コマンド。 これらのコマンドを表示する 1 つのドメイン クラスを右クリックします。  
   
--   再び ctrl キーを押しながら上と ctrl キーを押しながら下方向キーを押してでドメイン クラスとシェイプ クラスを並べ替えます。  
+- 再び ctrl キーを押しながら上と ctrl キーを押しながら下方向キーを押してでドメイン クラスとシェイプ クラスを並べ替えます。  
   
--   折りたたむか、各図形の右上にあるアイコンを使用してクラスを拡張します。  
+- 折りたたむか、各図形の右上にあるアイコンを使用してクラスを拡張します。  
   
--   ドメイン クラスの下部にあるマイナス記号 (-) をクリックして、ツリーの部分を折りたたみます。  
+- ドメイン クラスの下部にあるマイナス記号 (-) をクリックして、ツリーの部分を折りたたみます。  
   
 ## <a name="inheritance"></a>継承  
  ドメイン クラスは、継承を使用して定義することができます。 継承の派生を作成するには、継承ツールをクリックして、派生クラスをクリックしておよび基本クラスを順にクリックします。 モデル要素には、基本クラスから継承されたすべてのプロパティと共に、独自のドメイン クラスで定義されているすべてのプロパティがあります。 また、リレーションシップでは、そのロールを継承します。  
@@ -100,7 +97,7 @@ ms.locfileid: "49271792"
  モデルの保存時を XML 形式でファイルには、埋め込まれた要素は、入れ子、親、シリアル化をカスタマイズしている場合を除き、します。  
   
 > [!NOTE]
->  埋め込みは継承とは異なります。 埋め込みリレーションシップの子は、親のプロパティを継承しません。 埋め込みは、モデル要素間のリンクの種類です。 継承、クラス間の関係は、モデル要素間のリンクは作成されません。  
+> 埋め込みは継承とは異なります。 埋め込みリレーションシップの子は、親のプロパティを継承しません。 埋め込みは、モデル要素間のリンクの種類です。 継承、クラス間の関係は、モデル要素間のリンクは作成されません。  
   
 ### <a name="embedding-rules"></a>ルールの埋め込み  
  インスタンス モデル内のすべての要素は、モデルのルートを除く、1 つだけ埋め込みリンクのターゲットにする必要があります。  
@@ -157,7 +154,4 @@ ms.locfileid: "49271792"
   
 ## <a name="see-also"></a>関連項目  
  [生成済み API におけるドメイン リレーションシップ](../misc/domain-relationships-in-the-generated-api.md)   
- [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

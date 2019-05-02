@@ -8,39 +8,38 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 6fd8b0079556b05cf7ba79245bab787c3b3578dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b1b77dc7e01ae791379dda52b305ebcdbbf68447
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433910"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Visual Studio Emulator for Android は、Hyper-V 上で仮想マシンとして動作します。Hyper-V は Windows 8 以降のバージョンの仮想化テクノロジです。 エミュレーターを実行するには、このトピックで説明する Hyper-V の要件をコンピューターが満たしている必要があります。
 
  エミュレーターをインストールすると、その前提条件の構成がセットアップ プログラムで自動的に行われます。 前提条件の構成が正しく設定されると、エミュレーターは正常に動作します。 構成の設定が完了しなかった場合は、必要に応じて前提条件を手動で有効にします。 前提条件を手動で構成する必要がある場合、 [こちら](https://msdn.microsoft.com/library/windows/apps/jj863509\(v=vs.105\).aspx) で説明されている Windows Phone Emulator と同じ手順とツールを利用してください。
 
 > [!IMPORTANT]
->  エミュレーターのセットアップ プログラムでは、Visual Studio Emulator for Android を実行するための前提条件が確認されます。 前提条件が存在しない場合、警告が表示されますが、セットアップでは必要ありません。
+> エミュレーターのセットアップ プログラムでは、Visual Studio Emulator for Android を実行するための前提条件が確認されます。 前提条件が存在しない場合、警告が表示されますが、セットアップでは必要ありません。
 
  このトピックは、次のセクションで構成されています。
 
--   [クイック チェックリスト](#Checklist)
+- [クイック チェックリスト](#Checklist)
 
--   [システム要件](#System)
+- [システム要件](#System)
 
--   [ネットワーク要件](#Network)
+- [ネットワーク要件](#Network)
 
--   [Hyper-V の要件](#HyperV)
+- [Hyper-V の要件](#HyperV)
 
--   [起動可能な VHD からのエミュレーターの実行はサポートされていません](#BootableVHD)
+- [起動可能な VHD からのエミュレーターの実行はサポートされていません](#BootableVHD)
 
--   [Hyper-V に必要な圧縮と暗号化が行われていないファイル](#Files)
+- [Hyper-V に必要な圧縮と暗号化が行われていないファイル](#Files)
 
-##  <a name="Checklist"></a> クイック チェックリスト
+## <a name="Checklist"></a> クイック チェックリスト
  Visual Studio Emulator for Android を実行するための要件を簡単に確認できるチェックリストです。 詳細については、このトピックの以下のセクションを参照してください。
 
  システム要件
@@ -63,17 +62,17 @@ Visual Studio Emulator for Android は、Hyper-V 上で仮想マシンとして�
 
 - BIOS で、次の機能がサポートされている必要があります。
 
-  -   ハードウェア依存の仮想化
+  - ハードウェア依存の仮想化
 
-  -   第 2 レベルのアドレス変換 (SLAT)
+  - 第 2 レベルのアドレス変換 (SLAT)
 
-  -   ハードウェア ベースのデータ実行防止 (DEP)
+  - ハードウェア ベースのデータ実行防止 (DEP)
 
 - Windows で、Hyper-V を有効にして実行する必要があります。
 
 - ローカルの Hyper-V Administrators グループのメンバーである必要があります。
 
-##  <a name="System"></a> システム要件
+## <a name="System"></a> システム要件
  コンピューターは次の条件を満たしている必要があります。
 
 - Hyper-V のサポート (「 [Hyper-V の要件](#HyperV)」を参照してください)
@@ -86,7 +85,7 @@ Visual Studio Emulator for Android は、Hyper-V 上で仮想マシンとして�
 
   ![システム要件を確認する](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")
 
-##  <a name="Network"></a> ネットワーク要件
+## <a name="Network"></a> ネットワーク要件
  ネットワークは次の条件を満たしている必要があります。
 
 - DHCP
@@ -101,7 +100,7 @@ Visual Studio Emulator for Android は、Hyper-V 上で仮想マシンとして�
 
 - [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
 
-##  <a name="HyperV"></a> Hyper-V の要件
+## <a name="HyperV"></a> Hyper-V の要件
  BIOS での Hyper-V の要件
 
  コンピューターの BIOS は、次の要件をサポートする必要があります。また、次の要件を有効にする必要があります。
@@ -134,12 +133,12 @@ Visual Studio Emulator for Android は、Hyper-V 上で仮想マシンとして�
 
  手動で自分をグループに追加するには、[ローカル ユーザーとグループ] スナップインを開きます。
 
-##  <a name="BootableVHD"></a> 起動可能な VHD からのエミュレーターの実行はサポートされていません
+## <a name="BootableVHD"></a> 起動可能な VHD からのエミュレーターの実行はサポートされていません
  起動可能な VHD から Windows を実行しているときに Visual Studio Emulator for Android でアプリを実行しようとすると、一般的にエミュレーターの起動に数分かかるか、起動に失敗します。 エミュレーターの起動に失敗すると、"アプリの配置に失敗しました。 やり直してください。
 
  この構成はサポートされていません。" というメッセージが表示されます。 関連する問題については、「 [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)」を参照してください。
 
-##  <a name="Files"></a> Hyper-V に必要な圧縮と暗号化が行われていないファイル
+## <a name="Files"></a> Hyper-V に必要な圧縮と暗号化が行われていないファイル
  NTFS ファイル システムで構成したハード ドライブで、Hyper-V に使用する仮想ハード ディスク ファイルは、圧縮も暗号化もされていない状態である必要があります。 次のディレクトリが圧縮も暗号化もされていないことを確認してください。
 
 - %localappdata%\Microsoft\XDE

@@ -3,24 +3,24 @@ title: Azure Functions の概要
 description: Visual Studio for Mac での Azure Functions の使用。
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985008"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions の概要
 
 Azure Functions を利用すると、クラウドでイベント ドリブンのコード スニペットつまり関数を作成できます。インフラストラクチャを明示的にプロビジョニングまたは管理する必要はありません。 Azure Functions について詳しくは、[Azure Functions のドキュメント](/azure/azure-functions/)をご覧ください。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 
-Azure Function ツールは **Visual Studio for Mac 7.5** に付属しています。
+Azure Function ツールは **Visual Studio for Mac 7.5** 以降に付属しています。
 
 関数を作成して展開するには、Azure サブスクリプションも必要です。Azure サブスクリプションは [https://azure.com/free](https://azure.com/free) から無料で入手できます。
 
@@ -34,6 +34,10 @@ Azure Function ツールは **Visual Studio for Mac 7.5** に付属していま�
 3. 使用する最初の Azure Functions テンプレートを選択し、関数名を入力し、**[次へ]** をクリックします。
 
     ![Azure Functions のテンプレートが表示されている [新しいプロジェクト] ダイアログ](media/azure-functions-image2.png)
+
+    > [!TIP]
+    > バンドルされている Azure Functions のランタイムとテンプレート (CLI) は可能な限り最新であるようにしていますが、必ず古くなります。 新しい Functions プロジェクトを作成する場合、Visual Studio for Mac は CLI の更新プログラムを確認して、次の画像のとおり通知を行います。 更新されたテンプレートをダウンロードするには、単純にボタンをクリックします。
+    > ![Azure Functions の更新プログラムが入手可能であることを示す [新しいプロジェクト] ダイアログ](media/azure-functions-update.png)
 
     次のページでは、選択した関数の種類に応じて、次の図のようにアクセス権などの入力が求められます。
 
@@ -103,9 +107,6 @@ Visual Studio for Mac での Azure Functions のサポートを使うと、開�
     |**[リソース グループ](/azure/azure-resource-manager/resource-group-overview)**|関数アプリを作成するリソース グループの名前。 新しいリソース グループを作成するには、**+** を選択します。|
     |**[サービス プラン](/azure/azure-functions/functions-scale)**|既存のプランを選択するか、カスタム プランを作成します。 ご自分の近くのリージョン、またはご使用の関数がアクセスする他のサービスに近い場所を選択します。|
 
-    > [!CAUTION]
-    > Visual Studio for Mac のバージョン 7.6 には、**[価格]** を **[消費]** に設定してカスタム サービス プランを作成すると、プロビジョニング エラーで発行が失敗してしまうバグがあります。 これは次のサービス リリースで修正されます。
-
 5. **[次へ]** をクリックし、ストレージ アカウントを作成します。 Functions の共通言語ランタイムでは、Azure ストレージ アカウントが必要です。 **[カスタム]** をクリックし、汎用のストレージ アカウントを作成するか、既存のものを使用します。
 
     ![[Azure に発行する] メニュー オプション](media/azure-functions-image8.png)
@@ -115,9 +116,6 @@ Visual Studio for Mac での Azure Functions のサポートを使うと、開�
 7. 発行時に "Azure で関数のバージョンを更新する" ことを求めるダイアログが表示される場合があります。 **[はい]** をクリックします。
 
     ![[Azure に発行する] メニュー オプション](media/azure-functions-image12.png)
-
-> [!CAUTION]
-> Visual Studio for Mac のバージョン 7.6 には、`FUNCTIONS_EXTENSION_VERSION` が正しく "beta" に設定されず、関数が実行されないバグがあります。 これを修正するには、[[Function App の設定]](#function-app-settings) に進み、`FUNCTIONS_EXTENSION_VERSION` を "-1" から "beta" に変更します。
 
 ## <a name="function-app-settings"></a>Function App の設定
 
@@ -149,9 +147,7 @@ local.settings.json に追加したすべての設定は、Azure の関数アプ
     - Http POST CRUD
     - パラメーター付き HTTP トリガー
 
-
 - **タイマー**: 定義されているスケジュールに基づいて、クリーンアップまたは他のバッチ タスクを実行します。 このテンプレートは名前とスケジュールの 2 つのフィールドを受け取ります。6 フィールドの CRON 式です。 詳しくは、[タイマーについての Azure Functions の記事](/azure/azure-functions/functions-create-scheduled-function)をご覧ください。
-
 
 - **キュー トリガー** – これは、Azure Storage キューに届いたメッセージに応答する関数です。 このテンプレートは、関数名だけでなく、**パス** (メッセージが読み取られるキューの名前) とストレージ アカウント**接続** (ストレージ アカウント接続文字列を含むアプリ設定の名前) を受け取ります。 詳しくは、[Queue Storage についての Azure Functions の記事](/azure/azure-functions/functions-create-storage-queue-triggered-function)をご覧ください。
 

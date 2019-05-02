@@ -15,17 +15,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e6bbbd4fa2ad051407ece3e05c1806c1231ef2e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437127"
 ---
 # <a name="immediate-window"></a>イミディエイト ウィンドウ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **[イミディエイト]** ウィンドウは、式のデバックと評価、ステートメントの実行、変数値の出力などのために使用します。 このモードでは、デバッグ時に、開発言語で評価または実行される式を入力できます。 **[イミディエイト]** ウィンドウを表示するには、編集用にプロジェクトを開いて、**[デバッグ]** メニューの **[ウィンドウ]** をポイントし、**[イミディエイト]** をクリックするか、Ctrl キーと Alt キーを押しながら I キーを押します。  
   
  このウィンドウは、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] コマンドを個別に実行するために使用できます。 使用できるコマンドには、`EvaluateStatement` があります。このコマンドは、変数に値を割り当てるのに使用できます。 **[イミディエイト]** ウィンドウは、IntelliSense もサポートしています。  
@@ -46,7 +45,7 @@ ms.locfileid: "54802675"
  コマンドをどちらで入力した場合でも、変数 `varA` の現在の値が返されます。  
   
 > [!NOTE]
->  **[イミディエイト]** ウィンドウで [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] コマンドを実行するには、コマンドの先頭に不等号 (>) を付ける必要があります。 複数のコマンドを入力するには、**[コマンド]** ウィンドウに切り替えます。  
+> **[イミディエイト]** ウィンドウで [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] コマンドを実行するには、コマンドの先頭に不等号 (>) を付ける必要があります。 複数のコマンドを入力するには、**[コマンド]** ウィンドウに切り替えます。  
   
 ## <a name="design-time-expression-evaluation"></a>デザイン時の式の評価  
  **[イミディエイト]** ウィンドウを使用すると、デザイン時に関数またはサブルーチンを実行できます。  
@@ -75,7 +74,7 @@ ms.locfileid: "54802675"
   
     **[イミディエイト]** ウィンドウで `MyFunction` が実行され、`4` と表示されます。  
   
-   関数またはサブルーチンにブレークポイントが含まれているとき、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] は適切なポイントで実行を中断します。 デバッガー ウィンドウを使用して、プログラムの状態を確認できます。 詳細については、「[チュートリアル: デザイン時のデバッグ](../../debugger/walkthrough-debugging-at-design-time.md)」を参照してください。  
+   関数またはサブルーチンにブレークポイントが含まれているとき、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] は適切なポイントで実行を中断します。 デバッガー ウィンドウを使用して、プログラムの状態を確認できます。 詳細については、「[チュートリアル:デザイン時のデバッグ](../../debugger/walkthrough-debugging-at-design-time.md)」をご覧ください。  
   
    デザイン時の式の評価は、実行時環境の起動を必要とするプロジェクトの種類 ([!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] プロジェクト、Web プロジェクト、スマート デバイス プロジェクト、SQL プロジェクトなど) には使用できません。  
   
@@ -119,9 +118,9 @@ ms.locfileid: "54802675"
   
 #### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>[イミディエイト] ウィンドウで初回例外通知を切り替えるには  
   
-1.  **[表示]** メニューの **[その他のウィンドウ]** をポイントし、**[出力]** をクリックします。  
+1. **[表示]** メニューの **[その他のウィンドウ]** をポイントし、**[出力]** をクリックします。  
   
-2.  **[出力]** ウィンドウのテキスト領域で右クリックし、**[例外メッセージ]** をクリックして選択または選択解除します。  
+2. **[出力]** ウィンドウのテキスト領域で右クリックし、**[例外メッセージ]** をクリックして選択または選択解除します。  
   
 ## <a name="see-also"></a>関連項目
  [デバッガーでのコード間の移動](../../debugger/navigating-through-code-with-the-debugger.md)   

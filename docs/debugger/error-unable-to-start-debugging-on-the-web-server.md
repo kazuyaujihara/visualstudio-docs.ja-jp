@@ -1,5 +1,5 @@
 ---
-title: 'エラー: Web サーバーでデバッグを開始できません |。Microsoft Docs'
+title: エラー :Web サーバーでデバッグを開始できません |。Microsoft Docs
 ms.date: 05/23/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -26,14 +26,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 908500a333303857ac88d27c76b285464913ff1c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 53ffc893b63447ab75a439ea1e093ddaf4b75645
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850102"
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>エラー ： Web サーバーでデバッグを開始できません
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>エラー :Web サーバー上でデバッグを開始できません
 
 Web サーバーで実行されている ASP.NET アプリケーションをデバッグしようとすると、このエラー メッセージが表示可能性があります:`Unable to start debugging on the Web server`します。
 
@@ -51,7 +51,7 @@ Web サーバーで実行されている ASP.NET アプリケーションをデ�
 - [リモート サーバーがエラーを返しました](#server_error)
 - [ASP.NET のデバッグを開始できませんでした。](#aspnet)
 - [デバッガーがリモート コンピューターに接続できません。](#cannot_connect)
-- [ 一般的な構成エラーについてはヘルプを参照してください。デバッガーの外で web ページを実行している可能性があります詳細情報を提供します。](#see_help)
+- [表示については、一般的な構成エラー。デバッガーの外で web ページを実行している可能性があります詳細情報を提供します。](#see_help)
 
 ## <a name="IISlist"></a> IIS は、起動に一致する web サイトには示しません url
 
@@ -61,7 +61,7 @@ Web サーバーで実行されている ASP.NET アプリケーションをデ�
 
 ## <a name="web_server_config"></a> Web サーバーは正しく構成されていません
 
-- 参照してください[エラー: web サーバーが正しく構成されていない](../debugger/error-the-web-server-is-not-configured-correctly.md)します。
+- 参照してください[エラー。Web サーバーが正しく構成されていない](../debugger/error-the-web-server-is-not-configured-correctly.md)します。
 
 ## <a name="unabletoconnect"></a> Web サーバーに接続できません。
 
@@ -104,7 +104,7 @@ Web サーバーで実行されている ASP.NET アプリケーションをデ�
 
 - 手順を実行できない、またはリモートでデバッグしている、従います[の IIS 構成を確認](#vxtbshttpservererrorsthingstocheck)します。
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> IIS の構成を確認してください。
+## <a name="vxtbshttpservererrorsthingstocheck"></a> IIS の構成を確認してください。
 
 ここで説明するには、問題を解決する手順を実行した後と、デバッグをもう一度試す前に IIS をリセットする必要もあります。 管理者特権でコマンド プロンプトを開くと、入力して行うことができます`iisreset`します。
 
@@ -160,4 +160,4 @@ IIS 構成が、問題を引き起こしているしない場合は、次の手�
     デバッガーを使用するアプリを取得できない場合は、ローカル サーバーで、基本的な ASP.NET アプリケーションを作成してみてくださいし、基本的なアプリをデバッグしようとしてください。 (既定の ASP.NET MVC テンプレートを使用する可能性があります)。基本的なアプリをデバッグする場合、2 つの構成間で異なるを判断することに役立つ可能性があります。 URL 書き換えルールなどは、web.config ファイルで設定の相違を探します。
 
 ## <a name="see-also"></a>関連項目
-- [Web アプリケーションのデバッグ : エラーおよびトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+- [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -13,14 +13,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1059e4035e620d9feb0498bacf5516eed99b5ba3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096453"
 ---
-# <a name="how-to-create-multi-project-templates"></a>方法 : 複数プロジェクトのテンプレートを作成する
+# <a name="how-to-create-multi-project-templates"></a>方法: 複数プロジェクトのテンプレートを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 複数プロジェクトのテンプレートは、2 つ以上のプロジェクトのコンテナーとして機能します。 複数プロジェクトのテンプレートに基づくプロジェクトが **[新しいプロジェクト]** ダイアログ ボックスで作成されると、テンプレート内のすべてのプロジェクトがソリューションに追加されます。  
@@ -49,14 +49,14 @@ ms.locfileid: "54755340"
   
   複数プロジェクトのテンプレートのルート .vstemplate ファイルは、単一プロジェクトのテンプレートとは次の点が異なります。  
   
-- `VSTemplate` 要素の `Type` 属性には値 `ProjectGroup` が含まれます。 次に例を示します。  
+- `VSTemplate` 要素の `Type` 属性には値 `ProjectGroup` が含まれます。 例:  
   
   ```  
   <VSTemplate Version="2.0.0" Type="ProjectGroup"  
       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
   ```  
   
-- `TemplateContent` 要素には、含まれるプロジェクトの .vstemplate ファイルへのパスを定義する 1 つ以上の `ProjectTemplateLink` 要素を持つ `ProjectCollection` 要素が含まれます。 次に例を示します。  
+- `TemplateContent` 要素には、含まれるプロジェクトの .vstemplate ファイルへのパスを定義する 1 つ以上の `ProjectTemplateLink` 要素を持つ `ProjectCollection` 要素が含まれます。 例えば:  
   
   ```  
   <TemplateContent>  
@@ -79,15 +79,15 @@ ms.locfileid: "54755340"
   
 ### <a name="to-create-a-multi-project-template"></a>複数プロジェクトのテンプレートを作成するには  
   
-1.  複数プロジェクトのテンプレートに含めるプロジェクトを作成します。  
+1. 複数プロジェクトのテンプレートに含めるプロジェクトを作成します。  
   
-2.  すべてのプロジェクトの .vstemplate ファイルを作成します。 詳細については、「[方法 : プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)」を参照してください。  
+2. すべてのプロジェクトの .vstemplate ファイルを作成します。 詳細については、「[方法 :プロジェクト テンプレートを作成](../ide/how-to-create-project-templates.md)です。  
   
-3.  複数プロジェクトのテンプレート用のメタデータを含めるルート .vstemplate ファイルを作成します。 詳細については、次のセクションの最初の例を参照してください。  
+3. 複数プロジェクトのテンプレート用のメタデータを含めるルート .vstemplate ファイルを作成します。 詳細については、次のセクションの最初の例を参照してください。  
   
-4.  テンプレートに含めるファイルおよびフォルダーを選択して右クリックし、**[送る]** をクリックしてから **[圧縮 (zip 形式) フォルダー]** をクリックします。 ファイルとフォルダーが .zip ファイルに圧縮されます。  
+4. テンプレートに含めるファイルおよびフォルダーを選択して右クリックし、**[送る]** をクリックしてから **[圧縮 (zip 形式) フォルダー]** をクリックします。 ファイルとフォルダーが .zip ファイルに圧縮されます。  
   
-5.  .zip テンプレート ファイルを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクト テンプレートのディレクトリに配置します。 既定では、このディレクトリは \My Documents\Visual Studio *バージョン*\Templates\ProjectTemplates\\ です。  
+5. .zip テンプレート ファイルを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクト テンプレートのディレクトリに配置します。 既定では、このディレクトリは \My Documents\Visual Studio *バージョン*\Templates\ProjectTemplates\\ です。  
   
 ## <a name="example"></a>例  
  基本的なマルチプロジェクトのルート .vstemplate ファイルの例を以下に示します。 この例では、テンプレートには `My Windows Application` と `My Class Library` の 2 つのプロジェクトが含まれています。 `ProjectName` 要素の `ProjectTemplateLink` 属性は、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] がこのプロジェクトに割り当てる名前を設定します。 `ProjectName` 属性が存在しない場合、.vstemplate ファイルの名前がプロジェクト名として使用されます。  
@@ -152,7 +152,7 @@ ms.locfileid: "54755340"
 ## <a name="see-also"></a>関連項目
  [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
- [方法 : プロジェクト テンプレートを作成する](../ide/how-to-create-project-templates.md)   
+ [方法: プロジェクト テンプレートを作成します。](../ide/how-to-create-project-templates.md)   
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   
  [SolutionFolder 要素 (Visual Studio テンプレート)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
  [ProjectTemplateLink 要素 (Visual Studio テンプレート)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

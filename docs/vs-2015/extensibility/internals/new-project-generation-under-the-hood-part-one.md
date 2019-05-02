@@ -11,12 +11,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974726"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054239"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新しいプロジェクトの生成: 内部的な処理、パート 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ ms.locfileid: "58974726"
   
  Visual Studio を調整するいくつかのタスクがあります。  
   
--   すべての利用可能なプロジェクトの種類のツリーが表示されます。  
+- すべての利用可能なプロジェクトの種類のツリーが表示されます。  
   
--   各プロジェクトの種類のアプリケーション テンプレートの一覧を表示し、いずれかを選択することができます。  
+- 各プロジェクトの種類のアプリケーション テンプレートの一覧を表示し、いずれかを選択することができます。  
   
--   プロジェクトの名前とパスなど、アプリケーションのプロジェクト情報を収集します。  
+- プロジェクトの名前とパスなど、アプリケーションのプロジェクト情報を収集します。  
   
--   プロジェクト ファクトリにこの情報を渡します。  
+- プロジェクト ファクトリにこの情報を渡します。  
   
--   現在のソリューションにプロジェクト項目とフォルダーを生成します。  
+- 現在のソリューションにプロジェクト項目とフォルダーを生成します。  
   
 ## <a name="the-new-project-dialog-box"></a>新しいプロジェクト ダイアログ ボックス  
  すべては、新しいプロジェクトのプロジェクトの種類を選択すると開始します。 クリックして始めましょう**新しいプロジェクト**上、**ファイル**メニュー。 **新しいプロジェクト** ダイアログ ボックスが表示されたら、次のように見える。  
@@ -116,11 +116,11 @@ devenv /installvstemplates
   
  ときに、**新しいプロジェクト** ダイアログ ボックスが開き、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ProjectTemplates フォルダーを走査し、その構造を再作成、**プロジェクトの種類**ツリーにいくつかの変更。  
   
--   ルート ノード、**プロジェクトの種類**ツリーは、アプリケーション テンプレートによって決定されます。  
+- ルート ノード、**プロジェクトの種類**ツリーは、アプリケーション テンプレートによって決定されます。  
   
--   ノード名はローカライズできますが、特殊文字を含めることができます。  
+- ノード名はローカライズできますが、特殊文字を含めることができます。  
   
--   並べ替え順序を変更することができます。  
+- 並べ替え順序を変更することができます。  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>プロジェクトの種類のルート ノードの検索  
  Visual Studio では、ProjectTemplates フォルダーはスキャン、ときに、すべての .zip ファイルを開き、.vstemplate ファイルを抽出します。 .Vstemplate ファイルでは、XML を使用して、アプリケーション テンプレートについて説明します。 詳細については、次を参照してください。[新しいプロジェクトの生成。内部的には、2 つのパート](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)します。  

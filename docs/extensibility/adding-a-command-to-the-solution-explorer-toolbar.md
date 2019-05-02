@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fff1187793350b52484bcac99021be7fc2845607
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 50b782beeb0496d781bcb6e9bd15f70278c4db73
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410163"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>ソリューション エクスプ ローラーのツールバーにコマンドを追加します。
 このチュートリアルでは、ボタンを追加する方法、**ソリューション エクスプ ローラー**ツールバー。
@@ -27,24 +27,24 @@ ms.locfileid: "56717794"
  メニュー、ツールバーのコマンドの詳細については、 *.vsct*ファイルを参照してください[コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)します。
 
 > [!NOTE]
->  XML コマンド テーブルの使用 (*.vsct*) コマンド テーブル構成ではなくファイル (*.ctc*) ファイルを Vspackage でのメニューとコマンドの表示方法を定義します。 詳細については、[Visual Studio Command Table (を参照してください。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
+> XML コマンド テーブルの使用 (*.vsct*) コマンド テーブル構成ではなくファイル (*.ctc*) ファイルを Vspackage でのメニューとコマンドの表示方法を定義します。 詳細については、次を参照してください。 [Visual Studio Command Table (します。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。
 
 ## <a name="create-an-extension-with-a-menu-command"></a>メニュー コマンドを使用して拡張機能を作成します。
- という名前の VSIX プロジェクトを作成する`SolutionToolbar`します。 という名前のメニュー コマンド項目テンプレートを追加**ツールバー ・ ボタン**します。 これを行う方法については、[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。
+ という名前の VSIX プロジェクトを作成する`SolutionToolbar`します。 という名前のメニュー コマンド項目テンプレートを追加**ツールバー ・ ボタン**します。 これを行う方法については、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
 
 ## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>ソリューション エクスプ ローラーのツールバーにボタンを追加します。
  このチュートリアルのこのセクションでは、ボタンを追加する方法を示しています。、**ソリューション エクスプ ローラー**ツールバー。 このボタンをクリックすると、コールバック メソッドでコードが実行されます。
 
-1.  *ToolbarButtonPackage.vsct*に移動して、ファイル、`<Symbols>`セクション。 `<GuidSymbol>`ノードには、メニューのグループおよびパッケージ テンプレートによって生成されたコマンドが含まれています。 追加、`<IDSymbol>`要素は、コマンドを保持するグループを宣言するには、このノードにします。
+1. *ToolbarButtonPackage.vsct*に移動して、ファイル、`<Symbols>`セクション。 `<GuidSymbol>`ノードには、メニューのグループおよびパッケージ テンプレートによって生成されたコマンドが含まれています。 追加、`<IDSymbol>`要素は、コマンドを保持するグループを宣言するには、このノードにします。
 
     ```xml
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>
     ```
 
-2.  `<Groups>`セクションでは、の 既存のグループ エントリの後に前の手順で定義を宣言する新しいグループ。
+2. `<Groups>`セクションでは、の 既存のグループ エントリの後に前の手順で定義を宣言する新しいグループ。
 
     ```xml
     <Group guid="guidToolbarButtonPackageCmdSet"
@@ -55,7 +55,7 @@ ms.locfileid: "56717794"
 
      親 GUID:ID のペアを設定`guidSHLMainMenu`と`IDM_VS_TOOL_PROJWIN`にこのグループを設定、**ソリューション エクスプ ローラー**ツールバー、および優先度の高い値を設定するその他のコマンド グループの後に配置します。
 
-3.  `<Buttons>`セクションで、生成された親 ID を変更、`<Button>`前の手順で定義されているグループを反映するように入力します。 変更された`<Button>`要素は、次のようになります。
+3. `<Buttons>`セクションで、生成された親 ID を変更、`<Button>`前の手順で定義されているグループを反映するように入力します。 変更された`<Button>`要素は、次のようになります。
 
     ```xml
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">
@@ -67,11 +67,11 @@ ms.locfileid: "56717794"
     </Button>
     ```
 
-4.  プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
+4. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。
 
      **ソリューション エクスプ ローラー**既存のボタンの右側に新しいコマンド ボタンがツールバーに表示する必要があります。 ボタンのアイコンは、取り消し線です。
 
-5.  新しいボタンをクリックします。
+5. 新しいボタンをクリックします。
 
      ダイアログ ボックスに、メッセージ**ToolbarButtonPackage 内 SolutionToolbar.ToolbarButton.MenuItemCallback()** が表示されます。
 
@@ -114,7 +114,7 @@ ms.locfileid: "56717794"
 
 5. **ファイル** メニューのをクリックして**ソリューションを閉じる**します。 ツールバーのボタンが表示されなくなります。
 
-   ボタンの可視性がによって制御される[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSPackage が読み込まれるまでです。 VSPackage が読み込まれた後、ボタンの可視性は、VSPackage によって制御されます。  詳細については、[Menucommand とを参照してください。OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)します。
+   ボタンの可視性がによって制御される[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSPackage が読み込まれるまでです。 VSPackage が読み込まれた後、ボタンの可視性は、VSPackage によって制御されます。  詳細については、次を参照してください。 [Menucommand とします。OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)

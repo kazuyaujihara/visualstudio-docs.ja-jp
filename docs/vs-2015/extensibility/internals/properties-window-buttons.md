@@ -1,31 +1,26 @@
 ---
 title: プロパティ ウィンドウのボタン |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, buttons
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bb6a3802e135c02b4ccc7b27aca69b2afd2a9f70
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b66015ef2e2ab0c8105b6f84486fa890adbf8b1f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438397"
 ---
 # <a name="properties-window-buttons"></a>プロパティ ウィンドウのボタン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-開発言語、製品の種類に応じて、既定では、ツールバーの特定のボタンが表示されます、**プロパティ**ウィンドウ。 すべてのケースで、 **Categorized**、 **Alphabetized**、**プロパティ**、および**プロパティ ページ**ボタンが表示されます。 Visual c# および Visual Basic の場合、**イベント**ボタンも表示されます。 特定の Visual C プロジェクトで、 **VC + + メッセージ**と**VC オーバーライド**ボタンが表示されます。 その他のプロジェクトの種類の他のボタンが表示されます。 ボタンの詳細については、**プロパティ**ウィンドウを参照してください[プロパティ ウィンドウ](../../ide/reference/properties-window.md)します。  
+開発言語と製品の種類に応じて、**プロパティ** ウィンドウのツールバーに特定のボタンがデフォルトで表示されます。 すべての場合において、 **Categorized**、 **Alphabetized**、**プロパティ**、および **プロパティ ページ** ボタンが表示されます。 Visual C＃ および Visual Basic では、**イベント** ボタンも表示されます。 特定のVisual C ++プロジェクトでは、 **VC + + メッセージ** と **VC オーバーライド** ボタンが表示されます。 その他のプロジェクトの種類に対して追加のボタンが表示される場合があります。 **プロパティ** ウィンドウのボタンの詳細については、[プロパティ ウィンドウ](../../ide/reference/properties-window.md) を参照してください。  
   
 ## <a name="implementation-of-properties-window-buttons"></a>プロパティ ウィンドウのボタンの実装  
  クリックすると、 **Categorized**ボタン、Visual Studio の呼び出し、<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>をカテゴリにそのプロパティを並べ替えるにはフォーカスのあるオブジェクトのインターフェイス。 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> 実装されている、`IDispatch`に提示されるオブジェクト、**プロパティ**ウィンドウ。  
@@ -41,8 +36,7 @@ ms.locfileid: "51789851"
  **プロパティ ページ**ボタンが使用できない場合`ISpecifyPropertyPages`選択したオブジェクトが実装されていません。 プロパティ ページのソリューションやプロジェクトに通常関連付けられている表示構成に依存するプロパティがすることもできます (たとえば、Visual C) でプロジェクト項目に関連付けられます。  
   
 > [!NOTE]
->  ツール バー ボタンを追加することはできません、**プロパティ**アンマネージ コードを使用してウィンドウ。 ツール バー ボタンを追加するから派生したマネージ オブジェクトを作成する必要があります<xref:System.Windows.Forms.Design.PropertyTab>します。  
+> ツール バー ボタンを追加することはできません、**プロパティ**アンマネージ コードを使用してウィンドウ。 ツール バー ボタンを追加するから派生したマネージ オブジェクトを作成する必要があります<xref:System.Windows.Forms.Design.PropertyTab>します。  
   
 ## <a name="see-also"></a>関連項目  
  [プロパティの拡張](../../extensibility/internals/extending-properties.md)
-

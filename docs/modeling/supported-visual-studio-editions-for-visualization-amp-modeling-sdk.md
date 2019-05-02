@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f73ebb646c152509be9a7fbdd3287f2673ddadb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e5898a95f10875f0880e4b4799f17b78aa8e79b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003420"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Visualization and Modeling SDK に対してサポートされている Visual Studio のエディション
 
@@ -37,13 +37,13 @@ DSL を定義するには、以下のコンポーネントをインストール�
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] では、作成したドメイン固有言語を配置するために、以下の構成がサポートされています。
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Visual Studio Shell (統合モード) 再頒布可能パッケージの再頒布可能パッケージ
+- Visual Studio Shell (統合モード) 再頒布可能パッケージの再頒布可能パッケージ
 
--   Visual Studio Shell (分離モード) 再頒布可能パッケージ
+- Visual Studio Shell (分離モード) 再頒布可能パッケージ
 
 > [!NOTE]
 > DSL を Shell 製品上で実行可能にするには、設定する必要があります、**サポートされている VS エディション**フィールドに、拡張機能マニフェストします。 詳細については、[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)を参照してください。

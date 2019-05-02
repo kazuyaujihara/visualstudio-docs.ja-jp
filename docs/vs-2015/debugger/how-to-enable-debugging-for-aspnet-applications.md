@@ -1,14 +1,9 @@
 ---
 title: '方法: ASP.NET アプリケーションのデバッグを有効にする |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,15 +17,15 @@ ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c199e03af8a21b3134ae0e2afac7bd9b153be2f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059956"
 ---
-# <a name="how-to-enable-debugging-for-aspnet-applications"></a>方法:ASP.NET アプリケーションのデバッグを有効にする
+# <a name="how-to-enable-debugging-for-aspnet-applications"></a>方法: ASP.NET アプリケーションのデバッグを有効にします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 デバッグを有効にするには、 **プロジェクト プロパティ** ページとアプリケーションの web.config ファイルの両方で有効にする必要があります。  
@@ -40,32 +35,32 @@ ms.locfileid: "51749119"
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Visual Basic または C# のプロジェクト プロパティで ASP.NET デバッグを有効にするには  
   
-1.  **ソリューション エクスプローラー**で、Web プロジェクト名を右クリックし、 **[プロパティ]** をクリックします。  
+1. **ソリューション エクスプローラー**で、Web プロジェクト名を右クリックし、 **[プロパティ]** をクリックします。  
   
-2.  プロジェクトのプロパティ ページで、 **[Web]** タブをクリックします。  
+2. プロジェクトのプロパティ ページで、 **[Web]** タブをクリックします。  
   
-3.  **[デバッガー]** の下で、 **[ASP.NET]** チェック ボックスをオンにします。  
+3. **[デバッガー]** の下で、 **[ASP.NET]** チェック ボックスをオンにします。  
   
 ### <a name="to-enable-debugging-in-the-webconfig-file"></a>web.config ファイルでデバッグを有効にするには  
   
-1.  標準のテキスト エディターまたは XML パーサーで web.config ファイルを開きます。  
+1. 標準のテキスト エディターまたは XML パーサーで web.config ファイルを開きます。  
   
     > [!NOTE]  
     > ただし、Web ブラウザーを使用してファイルにリモート アクセスすることはできません。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] では、セキュリティ上の理由から、ブラウザーが直接 Web.config ファイルにアクセスできないように Microsoft IIS を設定しています。 ブラウザーで構成ファイルにアクセスしようとすると、HTTP アクセス エラー 403 (禁止) が表示されます。  
   
-2.  Web.config は XML ファイルなので、タグでマークされた入れ子のセクションが含まれます。 `configuration/system.web/compilation` 要素を探します。 compilation 要素が存在しない場合は、その要素を作成します。  
+2. Web.config は XML ファイルなので、タグでマークされた入れ子のセクションが含まれます。  `configuration/system.web/compilation` 要素を探します。 compilation 要素が存在しない場合は、その要素を作成します。  
   
 3.  `compilation` 要素内に `debug` 属性がない場合は、その属性を要素に追加します。  
   
-4.  `debug` 属性の値が `true` に設定されていることを確認します。  
+4. `debug` 属性の値が `true` に設定されていることを確認します。  
   
 web.config ファイルは次の例のようになります。 場合によって configuration 要素と system.web 要素との間には次のセクションがあることに注意してください。  
   
--   configuration 要素と system.web 要素との間の element セクション。  
+- configuration 要素と system.web 要素との間の element セクション。  
   
--   system.web 要素と compilation 要素との間の element セクション。  
+- system.web 要素と compilation 要素との間の element セクション。  
   
--   compilation 要素には他の属性と要素が含まれる場合があります。  
+- compilation 要素には他の属性と要素が含まれる場合があります。  
   
 ## <a name="example"></a>例  
   
@@ -94,8 +89,3 @@ Web サイトには、複数の仮想ディレクトリとサブディレクト�
   
 ## <a name="see-also"></a>関連項目  
 [ASP.NET アプリケーションおよび AJAX アプリケーションのデバッグ](../debugger/debugging-aspnet-and-ajax-applications.md)  
-  
-
-
-
-

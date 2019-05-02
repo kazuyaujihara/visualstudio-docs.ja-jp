@@ -1,14 +1,9 @@
 ---
 title: ロック動作に注釈を付ける |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Releases_nonreentrant_lock_
 - _Lock_kind_mutex_
@@ -37,13 +32,13 @@ ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: f09b38ceb4a6824ec38f0d9206cf37e0f056ce28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790761"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052390"
 ---
 # <a name="annotating-locking-behavior"></a>ロック動作に注釈を付ける
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,11 +58,11 @@ ms.locfileid: "51790761"
   
  いくつかスレッドの所有権ルールに注意してください。  
   
--   スピン ロックは、クリア スレッド所有権のあるカウントされないロックです。  
+- スピン ロックは、クリア スレッド所有権のあるカウントされないロックです。  
   
--   ミュー テックスとクリティカル セクションには、クリア スレッド所有権のロックがカウントされます。  
+- ミュー テックスとクリティカル セクションには、クリア スレッド所有権のロックがカウントされます。  
   
--   セマフォおよびイベントには、クリア スレッドの所有権がないロックがカウントされます。  
+- セマフォおよびイベントには、クリア スレッドの所有権がないロックがカウントされます。  
   
 ## <a name="locking-annotations"></a>ロックの注釈  
  次の表は、ロックの注釈を一覧表示します。  
@@ -123,6 +118,3 @@ ms.locfileid: "51790761"
  [組み込み関数](../code-quality/intrinsic-functions.md)   
  [ベスト プラクティスと例](../code-quality/best-practices-and-examples-sal.md)   
  [コード分析チームのブログ](http://go.microsoft.com/fwlink/p/?LinkId=251197)
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル : データセット デザイナーでの DataTable の作成'
+title: 'チュートリアル: データセット デザイナーでの DataTable の作成'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7a01a249df088d2a89e64f1c04c69e80d69b111c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 1126117cb1fc26c4f61bfb0f6ed0e19e86ce9323
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564923"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>チュートリアル: データセット デザイナーでの DataTable を作成します。
 
@@ -37,33 +37,33 @@ ms.locfileid: "55926750"
 
 ## <a name="add-a-new-dataset-to-the-application"></a>アプリケーションに新しいデータセットを追加します。
 
-1.  **[プロジェクト]** メニューで **[新しい項目の追加]** を選択します。
+1. **[プロジェクト]** メニューで **[新しい項目の追加]** を選択します。
 
      **[新しい項目の追加]** ダイアログ ボックスが表示されます。
 
-2.  左側のウィンドウで次のように選択します。**データ**を選択し、**データセット**中央のペインでします。
+2. 左側のウィンドウで次のように選択します。**データ**を選択し、**データセット**中央のペインでします。
 
-3.  **[追加]** をクリックします。
+3. **[追加]** をクリックします。
 
      Visual Studio がという名前のファイルを追加します**DataSet1.xsd**プロジェクトで開くと、**データセット デザイナー**。
 
 ## <a name="add-a-new-datatable-to-the-dataset"></a>データセットに新しい DataTable を追加します。
 
-1.  ドラッグ、 **DataTable**から、**データセット**のタブ、**ツールボックス**上に、**データセット デザイナー**します。
+1. ドラッグ、 **DataTable**から、**データセット**のタブ、**ツールボックス**上に、**データセット デザイナー**します。
 
      という名前のテーブル**DataTable1**データセットに追加されます。
 
-2.  タイトル バーをクリックします。 **DataTable1**名前を変更および`Music`します。
+2. タイトル バーをクリックします。 **DataTable1**名前を変更および`Music`します。
 
 ## <a name="add-columns-to-the-datatable"></a>列を DataTable に追加します。
 
-1.  右クリックし、**音楽**テーブル。 **[追加]** をポイントして、**[列]** をクリックします。
+1. 右クリックし、**音楽**テーブル。 **[追加]** をポイントして、**[列]** をクリックします。
 
-2.  列の名前を付けます`SongID`します。
+2. 列の名前を付けます`SongID`します。
 
-3.  **[プロパティ]** ウィンドウで、 <xref:System.Data.DataColumn.DataType%2A> プロパティを <xref:System.Int16?displayProperty=fullName>に設定します。
+3. **[プロパティ]** ウィンドウで、 <xref:System.Data.DataColumn.DataType%2A> プロパティを <xref:System.Int16?displayProperty=fullName>に設定します。
 
-4.  このプロセスを繰り返して、次の列を追加します。
+4. このプロセスを繰り返して、次の列を追加します。
 
      `SongTitle`: <xref:System.String?displayProperty=fullName>
 

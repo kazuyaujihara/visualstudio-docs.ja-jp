@@ -1,14 +1,9 @@
 ---
 title: '&lt;PackageFiles&gt;要素 (ブートス トラップ) |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: b4cddd6752872cf03ef5f5d55b0cbbb88aa1e66a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 382689dada13adce1ee530e66fef6ba78452efaa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302784"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58975583"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt;要素 (ブートス トラップ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ ms.locfileid: "49302784"
   
 |属性|説明|  
 |---------------|-----------------|  
-|`CopyAllPackageFiles`|任意。 場合設定`false`、インストーラーから参照されるファイルをダウンロードのみが、`Command`要素。 場合設定`true`、すべてのファイルがダウンロードされます。<br /><br /> 場合に設定`IfNotHomesite`、インストーラーには、同じ動作がまるで`False`場合`ComponentsLocation`に設定されている`HomeSite`、し、それ以外の場合は動作が同じ場合と`True`。 この設定をそれ自体がパッケージに HomeSite シナリオでは、独自の動作を実行するブートス トラップを許可することができます。<br /><br /> 既定値は `true` です。|  
+|`CopyAllPackageFiles`|省略可能です。 場合設定`false`、インストーラーから参照されるファイルをダウンロードのみが、`Command`要素。 場合設定`true`、すべてのファイルがダウンロードされます。<br /><br /> 場合に設定`IfNotHomesite`、インストーラーには、同じ動作がまるで`False`場合`ComponentsLocation`に設定されている`HomeSite`、し、それ以外の場合は動作が同じ場合と`True`。 この設定をそれ自体がパッケージに HomeSite シナリオでは、独自の動作を実行するブートス トラップを許可することができます。<br /><br /> 既定値は `true` です。|  
   
 ## <a name="packagefile"></a>PackageFile  
  `PackageFile`要素の子である、`PackageFiles`要素。 A`PackageFiles`要素が少なくとも 1 つあります`PackageFile`要素。  
@@ -64,10 +59,10 @@ ms.locfileid: "49302784"
 |属性|説明|  
 |---------------|-----------------|  
 |`Name`|必須。 パッケージ ファイルの名前。 これは、名前を`Command`パッケージをインストールするための条件を定義する場合に、要素を参照します。 この値はへのキーとしても使用、`Strings`などのツールをローカライズされた名前を取得するテーブル[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]が使用して、パッケージを記述します。|  
-|`HomeSite`|任意。 インストーラーに含まれてない場合は、リモート サーバー上のパッケージの場所。|  
-|`CopyOnBuild`|任意。 ブートス トラップがビルド時に、ディスク上にパッケージ ファイルをコピーする必要があるかどうかを指定します。 既定値は true です。|  
+|`HomeSite`|省略可能です。 インストーラーに含まれてない場合は、リモート サーバー上のパッケージの場所。|  
+|`CopyOnBuild`|省略可能です。 ブートス トラップがビルド時に、ディスク上にパッケージ ファイルをコピーする必要があるかどうかを指定します。 既定値は true です。|  
 |`PublicKey`|パッケージの証明書の署名者の公開暗号化キー。 場合に、必ず`HomeSite`は使用しない場合は省略可能です。|  
-|`Hash`|任意。 パッケージ ファイルの SHA1 ハッシュ。 これは、インストール時に、ファイルの整合性を検証に使用されます。 パッケージ ファイルからは、同一のハッシュを計算することはできません、パッケージはインストールされていません。|  
+|`Hash`|省略可能です。 パッケージ ファイルの SHA1 ハッシュ。 これは、インストール時に、ファイルの整合性を検証に使用されます。 パッケージ ファイルからは、同一のハッシュを計算することはできません、パッケージはインストールされていません。|  
   
 ## <a name="example"></a>例  
  次のコード例は、のパッケージを定義、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]再頒布可能パッケージとその依存関係、Windows インストーラーなど。  
@@ -85,6 +80,3 @@ ms.locfileid: "49302784"
  [\<製品 > 要素](../deployment/product-element-bootstrapper.md)   
  [\<パッケージ > 要素](../deployment/package-element-bootstrapper.md)   
  [製品およびパッケージ スキーマ リファレンス](../deployment/product-and-package-schema-reference.md)
-
-
-

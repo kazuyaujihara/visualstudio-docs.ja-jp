@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f6fdb4addace1b0bbabdd4303c3943b976763514
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993268"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionenterbyname"></a>IActiveScriptProfilerCallback2::OnFunctionEnterByName
 プロファイラー オブジェクトをドキュメント オブジェクト モデル (DOM) の関数呼び出しを実行しようとして、スクリプト エンジンに通知します。  
@@ -36,7 +36,7 @@ HRESULT OnFunctionEnterByName(
  [in]スクリプト エンジンが実行しようとする関数の名前。  
   
  `scriptType`  
- [in]関数の型。 有効な値の説明については、[PROFILER_SCRIPT_TYPE 列挙型](../../winscript/reference/profiler-script-type-enumeration.md)を参照してください。  
+ [in]関数の型。 有効な値の説明については、次を参照してください。 [PROFILER_SCRIPT_TYPE 列挙型](../../winscript/reference/profiler-script-type-enumeration.md)します。  
   
 ## <a name="return-value"></a>戻り値  
  このメソッドの戻り値は、スクリプト エンジンによって無視されます。  

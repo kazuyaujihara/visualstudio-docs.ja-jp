@@ -17,17 +17,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7ec3911496c5106d53f90a281452df2c8a128f6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 491d6c044b22a89e8ea61a78d5dd70e0a348b893
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441451"
 ---
 # <a name="command-window"></a>コマンド ウィンドウ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **[コマンド]** ウィンドウは、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] の統合開発環境 (IDE) でコマンドやエイリアスを実行するときに使用します。 メニュー コマンドと、メニューに表示されないコマンドの両方を実行できます。 **[コマンド]** ウィンドウを表示するには、**[表示]** メニューの **[その他のウィンドウ]** を選択し、**[コマンド ウィンドウ]** をクリックします。  
   
 ## <a name="displaying-the-values-of-variables"></a>変数の値の表示  
@@ -63,7 +62,7 @@ ms.locfileid: "54788348"
 |ウィンドウを下にスクロールする。|コマンド ウィンドウの内容|↓キーまたは Ctrl + ↓キー|  
   
 > [!TIP]
->  以前に入力したコマンドの全体または一部を入力行にコピーするには、そのコマンドまでスクロールし、その全体または一部を強調表示してから Enter キーを押します。  
+> 以前に入力したコマンドの全体または一部を入力行にコピーするには、そのコマンドまでスクロールし、その全体または一部を強調表示してから Enter キーを押します。  
   
 ## <a name="mark-mode"></a>マーク モード  
  **[コマンド]** ウィンドウで、既に出力されている任意の行をクリックすると、自動的にマーク モードに切り替わります。 これにより、テキスト エディターでの操作と同じように、既に入力されたコマンドのテキストを選択、編集、およびコピーし、現在の行に貼り付けることができます。  
@@ -105,7 +104,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` と `oldpar` はパラメーターです。  
   
   > [!NOTE]
-  >  コマンド、パラメーター、スイッチ、または値にスペースが含まれる場合は、二重引用符 (") で囲む必要があります。  
+  > コマンド、パラメーター、スイッチ、または値にスペースが含まれる場合は、二重引用符 (") で囲む必要があります。  
   
   スイッチとパラメーターの位置は、コマンド ライン上で自由に入れ替えることができます。例外として、[Shell](../../ide/reference/shell-command.md) コマンドの場合は、スイッチとパラメーターを特定の順序に指定する必要があります。  
   

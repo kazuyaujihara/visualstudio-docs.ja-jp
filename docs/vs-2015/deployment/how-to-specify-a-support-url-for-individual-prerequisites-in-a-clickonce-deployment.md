@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f272f1b7a8fc970ab616ba1c02e815cbb6ecb568
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973924"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059137"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>方法: ClickOnce 配置で個々 の前提条件のサポートの URL を指定します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]数のクライアント 
   
 ### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>個々 の前提条件に関するサポート URL を指定します。  
   
-1.  アプリケーション マニフェスト (.manifest ファイル) を開き、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]テキスト エディターでアプリケーション。  
+1. アプリケーション マニフェスト (.manifest ファイル) を開き、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]テキスト エディターでアプリケーション。  
   
-2.  オペレーティング システムの前提条件を追加、`supportUrl`属性を`dependentOS`要素。  
+2. オペレーティング システムの前提条件を追加、`supportUrl`属性を`dependentOS`要素。  
   
     ```  
      <dependency>  
@@ -48,7 +48,7 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]数のクライアント 
       </dependency>  
     ```  
   
-3.  共通言語ランタイムの特定のバージョンの前提条件を追加、`supportUrl`属性を`dependentAssembly`共通言語ランタイムの依存関係を示すエントリ。  
+3. 共通言語ランタイムの特定のバージョンの前提条件を追加、`supportUrl`属性を`dependentAssembly`共通言語ランタイムの依存関係を示すエントリ。  
   
     ```  
       <dependency>  
@@ -58,7 +58,7 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]数のクライアント 
       </dependency>  
     ```  
   
-4.  アセンブリをグローバル アセンブリ キャッシュにプレインストールする必要がありますの前提条件、設定、`supportUrl`の`dependentAssembly`必要なアセンブリを指定する要素。  
+4. アセンブリをグローバル アセンブリ キャッシュにプレインストールする必要がありますの前提条件、設定、`supportUrl`の`dependentAssembly`必要なアセンブリを指定する要素。  
   
     ```  
       <dependency>  
@@ -68,9 +68,9 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]数のクライアント 
       </dependency>  
     ```  
   
-5.  任意。 .NET Framework 4 を対象とするアプリケーションの配置マニフェスト (.application ファイル) を開いて、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]テキスト エディターでアプリケーション。  
+5. 任意。 .NET Framework 4 を対象とするアプリケーションの配置マニフェスト (.application ファイル) を開いて、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]テキスト エディターでアプリケーション。  
   
-6.  .NET Framework 4 の前提条件では、追加、`supportUrl`属性を`compatibleFrameworks`要素。  
+6. .NET Framework 4 の前提条件では、追加、`supportUrl`属性を`compatibleFrameworks`要素。  
   
     ```  
     <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
@@ -79,7 +79,7 @@ A[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]数のクライアント 
     </compatibleFrameworks>  
     ```  
   
-7.  アプリケーション マニフェストを手動で変更した後、デジタル証明書を使用してアプリケーション マニフェストに再署名更新にも、配置マニフェストに再署名をする必要があります。 Mage.exe を使用する必要がありますまたは MageUI.exe SDK ツールを使用してこれらのファイルを再生成すると、このタスクを実行する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]手動で変更を消去します。 Mage.exe を使用してマニフェストに再署名する詳細については、次を参照してください。[方法。アプリケーション マニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)します。  
+7. アプリケーション マニフェストを手動で変更した後、デジタル証明書を使用してアプリケーション マニフェストに再署名更新にも、配置マニフェストに再署名をする必要があります。 Mage.exe を使用する必要がありますまたは MageUI.exe SDK ツールを使用してこれらのファイルを再生成すると、このタスクを実行する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]手動で変更を消去します。 Mage.exe を使用してマニフェストに再署名する詳細については、次を参照してください。[方法。アプリケーション マニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)します。  
   
 ## <a name="net-framework-security"></a>.NET Framework セキュリティ  
  サポート URL は、部分信頼で実行するアプリケーションがマークされている場合、ダイアログ ボックスでは表示されません。  

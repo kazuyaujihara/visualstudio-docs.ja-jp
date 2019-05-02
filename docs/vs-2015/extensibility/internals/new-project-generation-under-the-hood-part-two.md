@@ -1,37 +1,32 @@
 ---
-title: '新しいプロジェクトの生成: 内部、パート 2 |Microsoft Docs'
-ms.custom: ''
+title: '新しいプロジェクトの生成: 内部的には、パート 2 |Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a5732db4ab36a7e198ee6ebdce185294d3b5bc31
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58972342"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>新しいプロジェクトの生成: 内部、パート 2
+# <a name="new-project-generation-under-the-hood-part-two"></a>新しいプロジェクトの生成: 内部的な処理、パート 2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[新しいプロジェクトの生成: [内部、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)を説明しましたが、どのように**新しいプロジェクト**] ダイアログ ボックスが表示されます。 選択したと仮定を**Visual c# Windows アプリケーション**、情報を入力した、**名前**と**場所**テキスト ボックス、および [ok] のクリックされました。  
+[新しいプロジェクトの生成。内部、パート 1 で](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)を説明しましたが、どのように**新しいプロジェクト**] ダイアログ ボックスが表示されます。 選択したと仮定を**Visual C# Windows アプリケーション**、情報を入力した、**名前**と**場所**テキスト ボックス、および [ok] のクリックされました。  
   
 ## <a name="generating-the-solution-files"></a>ソリューション ファイルを生成します。  
  アプリケーション テンプレートを選択するように指示[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]を解凍して、対応する .vstemplate ファイルを開くと、このファイル内の XML コマンドを解釈するためのテンプレートを起動します。 これらのコマンドは、新規または既存のソリューションでプロジェクトとプロジェクト項目を作成します。  
   
- テンプレートは、.vstemplate ファイルを保持する同じ .zip フォルダーから項目のテンプレートと呼ばれる、ソース ファイルをアンパックします。 テンプレートは、それに応じてカスタマイズして、新しいプロジェクトにこれらのファイルをコピーします。 プロジェクトと項目テンプレートの概要については、[NIB: Visual Studio テンプレート](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041)を参照してください。  
+ テンプレートは、.vstemplate ファイルを保持する同じ .zip フォルダーから項目のテンプレートと呼ばれる、ソース ファイルをアンパックします。 テンプレートは、それに応じてカスタマイズして、新しいプロジェクトにこれらのファイルをコピーします。 プロジェクトと項目テンプレートの概要については、次を参照してください[NIB:。Visual Studio テンプレート](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)します。  
   
 ### <a name="template-parameter-replacement"></a>テンプレート パラメーターの置換  
  テンプレートは、新しいプロジェクトに項目テンプレートをコピー、ファイルをカスタマイズする文字列を含むテンプレートのパラメーターが置き換えられます。 テンプレート パラメーターは特殊なトークンを前後にドル記号では、たとえばは、$date$ です。  
@@ -82,7 +77,7 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- これまで見てきた、 \<TemplateData > セクションで、[新しいプロジェクトの生成: 内部、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)します。 このセクションでは、タグの外観を制御するため、**新しいプロジェクト** ダイアログ ボックス。  
+ これまで見てきた、 \<TemplateData > セクションで、[新しいプロジェクトの生成。内部的には、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)します。 このセクションでは、タグの外観を制御するため、**新しいプロジェクト** ダイアログ ボックス。  
   
  内のタグ、 \<TemplateContent > コントロールに新しいプロジェクトとプロジェクト項目の生成をセクションします。 ここでは、 \<TemplateContent > \Program Files\Microsoft Visual Studio の 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip フォルダー cswindowsapplication.vstemplate ファイルからセクション。  
   
@@ -161,7 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [新しいプロジェクトの生成: 内部、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [新しいプロジェクトの生成:内部的には、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)
-
-

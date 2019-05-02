@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 039456c10993199ec2265042aabc0ed5c475ccd9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969294"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
@@ -41,7 +41,7 @@ devenv /Out FileName
 
   必須です。 実行可能ファイルのビルド時に出力を受け取るファイルのパスと名前です。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 指定したファイル名が存在しない場合は、ファイルが自動的に作成されます。 ファイルが既に存在する場合、結果はファイルの既存の内容に追加されます。
 

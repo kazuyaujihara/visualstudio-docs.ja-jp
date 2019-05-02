@@ -16,17 +16,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0aa325aa016b95a0dac0047f4b6fe9ae67f52ecc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a0ce02a76d32a967e2c7e5f06818b5838337f9b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433678"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 このダイアログ ボックスで、同時にビルドできる Visual C++ または Visual C# のプロジェクトの最大数、特定の既定のビルドの動作、およびいくつかのビルドのログ設定を指定することができます。 **[オプション]** ダイアログ ボックスを開くには、メニューバーで **[ツール]**、**[オプション]** を選択します。 この一連のオプションにアクセスするには、**[プロジェクトおよびソリューション]** を展開して、**[ビルド/実行]** を選択します。  
   
 ## <a name="uielement-list"></a>UIElement の一覧  
@@ -38,7 +37,7 @@ ms.locfileid: "54800863"
   
  **実行時に、プロジェクトが最新の状態でないとき**  
  > [!NOTE]
->  このリストは、[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] プロジェクトのみに適用されます。  
+> このリストは、[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] プロジェクトのみに適用されます。  
   
  既定では、F5 キーを選択するか、メニューバーで **[デバッグ]**、**[開始]** を選択したときに、プロジェクト構成が古い場合には、メッセージが表示されます。 それでもプロジェクトをビルドするかどうか、メッセージが表示されるかどうかを指定することができます。 メッセージを表示するかどうかを指定し、メッセージが表示されないときにビルドの動作をどうするかを指定するには、このオプションを使用します。  
   
@@ -55,7 +54,7 @@ ms.locfileid: "54800863"
  **[ビルド]** メニューからビルドを開始したときにビルド エラーが発生した場合、メッセージが表示されます。 アプリケーションを開始して続行するかどうか、およびビルド エラーが発生するたびにメッセージを表示するかどうかを指定できます。 メッセージを表示するかどうか、およびメッセージが表示されないときにビルドの動作をどうするかを指定するには、このオプションを使用します。  
   
 > [!NOTE]
->  このオプションは、[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] プロジェクトにのみ適用されます。  
+> このオプションは、[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] プロジェクトにのみ適用されます。  
   
  **起動するかどうかを確認する**  
  ビルド エラーが発生するたびに、メッセージ ボックスを表示します。  
@@ -74,7 +73,7 @@ ms.locfileid: "54800863"
   
  **MSBuild プロジェクト ビルド ログ ファイルの詳細**  
  > [!NOTE]
->  このオプションは、Visual C++ プロジェクトにのみ適用されます。  
+> このオプションは、Visual C++ プロジェクトにのみ適用されます。  
   
  ビルド ログ ファイルに書き込まれる情報量を決定します。ビルド ログ ファイルは、\\...\\*ProjectName*\Debug\\*ProjectName*.log にあります。  
   

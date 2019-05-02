@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be702dcd19506e6da8fb1e291aa5262dbf4399b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a904bfcf147d72dde16ffe0fbf9e754c2c356bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847796"
 ---
-# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>方法: 表示し、レジスタ グループを非表示 (C#、C++、Visual Basic、 F#)
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>方法: 表示し、レジスタ グループを非表示 (C#、 C++、Visual Basic、 F#)
 
 **[レジスタ]** ウィンドウは、**[オプション]** ダイアログ ボックスにある **[デバッグ]** ノードの **[全般]** カテゴリで、アドレスレベルのデバッグが有効な場合にのみ、使用できます。
 
@@ -37,9 +37,9 @@ ms.locfileid: "55018450"
 
 ## <a name="display-or-hide-register-groups"></a>登録グループを表示または非表示
 
-1.  **[レジスタ]** ウィンドウを右クリックします。
+1. **[レジスタ]** ウィンドウを右クリックします。
 
-2.  ショートカット メニューで、表示または非表示にするレジスタ グループをクリックします。
+2. ショートカット メニューで、表示または非表示にするレジスタ グループをクリックします。
 
      デバッグ中のハードウェアでサポートされていないレジスタ グループは、ショートカット メニューで無効になっているため選択できません。
 

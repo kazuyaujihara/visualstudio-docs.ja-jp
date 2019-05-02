@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 99ad13fd3c8c1c2efeeec28794e10a91d9dd0db1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948840"
 ---
-# <a name="how-to-create-xml-snippets"></a>方法: XML スニペットを作成します。
+# <a name="how-to-create-xml-snippets"></a>方法: XML スニペットを作成する
 
 新しい XML スニペットを作成するのには、XML エディターを使用できます。 エディターには、新しい XML スニペットを作成する際の定型スニペットである、"Snippet" という名前の XML スニペットが含まれています。
 
@@ -23,27 +23,27 @@ ms.locfileid: "57526621"
 
  新しい XML コードを作成するスニペットが新しい XML ファイルを作成し、使用、**スニペットの挿入**機能します。
 
-1.  **ファイル** メニューのをクリックして**新規** をクリックし、**ファイル**します。
+1. **ファイル** メニューのをクリックして**新規** をクリックし、**ファイル**します。
 
-2.  クリックして**XML ファイル**順にクリックします**オープン**します。
+2. クリックして**XML ファイル**順にクリックします**オープン**します。
 
-3.  エディター ウィンドウで右クリックして**スニペットの挿入**します。
+3. エディター ウィンドウで右クリックして**スニペットの挿入**します。
 
-4.  選択**スニペット**キーを押して、一覧から**Enter**します。
+4. 選択**スニペット**キーを押して、一覧から**Enter**します。
 
-5.  新しいスニペットに必要な変更を加えます。
+5. 新しいスニペットに必要な変更を加えます。
 
-6.  **ファイル**メニューの  **XMLFile.xml の保存**します。
+6. **ファイル**メニューの  **XMLFile.xml の保存**します。
 
      **ファイルに名前を付けて** ダイアログ ボックスが表示されます。
 
-7.  新しいスニペットの名前を入力し、選択**スニペット ファイル**から、**型として保存**ドロップダウン ウィンドウ。
+7. 新しいスニペットの名前を入力し、選択**スニペット ファイル**から、**型として保存**ドロップダウン ウィンドウ。
 
-8.  使用して、**で保存**ファイルの場所を変更するドロップダウン リスト、 *My documents \visual Studio 2005\Code \xml\my XML Snippets*フォルダーを押してから**保存**します。
+8. 使用して、**で保存**ファイルの場所を変更するドロップダウン リスト、 *My documents \visual Studio 2005\Code \xml\my XML Snippets*フォルダーを押してから**保存**します。
 
 ## <a name="snippet-description"></a>スニペットの説明
 
- このセクションでは、定型スニペットの主な要素について説明します。 XML スニペットで使用されるスキーマ要素の詳細については、[コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)を参照してください。
+ このセクションでは、定型スニペットの主な要素について説明します。 XML スニペットで使用されるスキーマ要素の詳細については、次を参照してください。[コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)します。
 
 ### <a name="snippettype-element"></a>SnippetType 要素
 
@@ -64,7 +64,6 @@ ms.locfileid: "57526621"
 
 > [!NOTE]
 > XML スニペットのテキストは、`<![CDATA[...]]>` セクションで囲む必要があります。
-
 
  定型スニペットによって作成される `Code` 要素を次に示します。
 

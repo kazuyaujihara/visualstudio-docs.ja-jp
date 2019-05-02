@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e1d181c67628db52aa8e4f135109f1446a34816
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f805153a35517c473e95beb871ae7d12a2776bd4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967609"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>方法: プログラムでドキュメントに画像およびワードアートを追加します。
   デザイン時または実行時に、画像および描画オブジェクトをドキュメントに追加できます。 ワードアートでは、Microsoft Office Word ドキュメントに装飾的なテキストを追加することができます。 これらの特別なテキスト効果は、ドキュメントに挿入できる、カスタマイズ可能な描画オブジェクトです。
@@ -33,13 +33,13 @@ ms.locfileid: "56617913"
 
 ### <a name="to-add-a-picture-to-a-word-document-at-design-time"></a>デザイン時に Word 文書に画像を追加するには
 
-1.  ドキュメント内の画像を挿入する場所にカーソルを置きます。
+1. ドキュメント内の画像を挿入する場所にカーソルを置きます。
 
-2.  をクリックして、**挿入**リボンのタブ。
+2. をクリックして、**挿入**リボンのタブ。
 
-3.  **図**グループで、**画像**します。
+3. **図**グループで、**画像**します。
 
-4.  **画像の挿入**ダイアログ ボックスは、挿入する画像に移動し、クリックして**挿入**します。
+4. **画像の挿入**ダイアログ ボックスは、挿入する画像に移動し、クリックして**挿入**します。
 
      画像が、ドキュメントの現在のカーソル位置に追加されます。
 
@@ -48,7 +48,7 @@ ms.locfileid: "56617913"
 
 ### <a name="to-add-a-picture-at-the-cursor-location"></a>カーソルの場所に画像を追加するには
 
-1.  <xref:Microsoft.Office.Interop.Word.InlineShapes> コレクションの <xref:Microsoft.Office.Interop.Word.InlineShapes.AddPicture%2A> メソッドを呼び出し、ファイル名を渡します。
+1. <xref:Microsoft.Office.Interop.Word.InlineShapes> コレクションの <xref:Microsoft.Office.Interop.Word.InlineShapes.AddPicture%2A> メソッドを呼び出し、ファイル名を渡します。
 
      [!code-vb[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#108)]
      [!code-csharp[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#108)]
@@ -58,13 +58,13 @@ ms.locfileid: "56617913"
 
 ### <a name="to-add-wordart-to-a-word-document-at-design-time"></a>デザイン時にワードアートを Word ドキュメントを追加するには
 
-1.  ドキュメント内のワードアートを挿入する場所にカーソルを置きます。
+1. ドキュメント内のワードアートを挿入する場所にカーソルを置きます。
 
-2.  をクリックして、**挿入**リボンのタブ。
+2. をクリックして、**挿入**リボンのタブ。
 
-3.  **テキスト**グループで、**ワードアート**、ワードアートのスタイルを選択します。
+3. **テキスト**グループで、**ワードアート**、ワードアートのスタイルを選択します。
 
-4.  ドキュメントに表示するテキストを追加する、**ワードアート テキストの編集** ダイアログ ボックスをクリックします**OK**します。
+4. ドキュメントに表示するテキストを追加する、**ワードアート テキストの編集** ダイアログ ボックスをクリックします**OK**します。
 
      選択したワードアート スタイルが適用されたテキストが、ドキュメントに追加されます。
 
@@ -73,31 +73,31 @@ ms.locfileid: "56617913"
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-document-level-customization"></a>ドキュメント レベルのカスタマイズで、カーソル位置にワードアートを追加するには
 
-1.  現在のカーソル位置の左と上の位置を取得します。
+1. 現在のカーソル位置の左と上の位置を取得します。
 
      [!code-vb[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#109)]
      [!code-csharp[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#109)]
 
-2.  ドキュメント内の <xref:Microsoft.Office.Interop.Word.Shapes> オブジェクトの <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> メソッドを呼び出します。
+2. ドキュメント内の <xref:Microsoft.Office.Interop.Word.Shapes> オブジェクトの <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> メソッドを呼び出します。
 
      [!code-vb[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#110)]
      [!code-csharp[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#110)]
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-vsto-add-in"></a>VSTO アドインでカーソル位置にワードアートを追加するには
 
-1.  現在のカーソル位置の左と上の位置を取得します。
+1. 現在のカーソル位置の左と上の位置を取得します。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#109)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#109)]
 
-2.  作業中のドキュメント (または指定した別のドキュメント) の <xref:Microsoft.Office.Interop.Word.Shapes> オブジェクトの <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> メソッドを呼び出します。
+2. 作業中のドキュメント (または指定した別のドキュメント) の <xref:Microsoft.Office.Interop.Word.Shapes> オブジェクトの <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> メソッドを呼び出します。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#110)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#110)]
 
 ## <a name="compile-the-code"></a>コードのコンパイル
 
--   という名前の画像*SamplePicture.jpg* C ドライブ上に存在する必要があります
+- という名前の画像*SamplePicture.jpg* C ドライブ上に存在する必要があります
 
 ## <a name="see-also"></a>関連項目
 - [方法: プログラムによって既存文書を開く](../vsto/how-to-programmatically-open-existing-documents.md)

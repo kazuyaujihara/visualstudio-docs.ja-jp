@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee1a66cee2d42c0ef23b4d4b8441a3c0cda125c4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908752"
 ---
 # <a name="solution-sln-file"></a>ソリューション (.sln) ファイル
 
@@ -27,13 +27,13 @@ ms.locfileid: "58157296"
 
 - .suo ファイル (バイナリ、ユーザー固有のソリューションのオプション)
 
-.Suo ファイルの詳細については、[ソリューション ユーザー オプション (を参照してください。Suo) ファイル](../../extensibility/internals/solution-user-options-dot-suo-file.md)します。
+.Suo ファイルの詳細については、次を参照してください。[ソリューション ユーザー オプション (します。Suo) ファイル](../../extensibility/internals/solution-user-options-dot-suo-file.md)します。
 
 .Sln ファイルで参照されている結果として、VSPackage が読み込まれる場合、環境を呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A>.sln ファイルを読み取るようにします。
 
 .Sln ファイルには、環境を検索して読み込む永続化されたデータおよびプロジェクトを参照して Vspackage の名前と値のパラメーターを使用して、テキスト ベースの情報が含まれています。 ユーザーがソリューションを開いたときは、環境が繰り返し、 `preSolution`、 `Project`、および`postSolution`については、ソリューションを読み込むには .sln ファイルでは、ソリューション内でプロジェクトし、ソリューションに接続されているすべての永続化された情報。
 
-各プロジェクトのファイルには、そのプロジェクトの項目を含む階層を設定する環境で読み取られた追加の情報が含まれています。 階層データの永続化は、プロジェクトによって制御されます。 データは通常格納されません、.sln ファイルで記述できますが意図的にプロジェクト情報 .sln ファイルをそのためには選択した場合。 永続化の詳細については、[プロジェクトの永続化](../../extensibility/internals/project-persistence.md)と[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)を参照してください。
+各プロジェクトのファイルには、そのプロジェクトの項目を含む階層を設定する環境で読み取られた追加の情報が含まれています。 階層データの永続化は、プロジェクトによって制御されます。 データは通常格納されません、.sln ファイルで記述できますが意図的にプロジェクト情報 .sln ファイルをそのためには選択した場合。 永続化の詳細については、次を参照してください。[プロジェクトの永続化](../../extensibility/internals/project-persistence.md)と[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)します。
 
 ## <a name="file-header"></a>ファイルのヘッダー
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81d1a256b4300510ed31c163d92cea89df884aac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832744"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 DIA プロパティ セットの永続的なプロパティを読み取ることができます。
@@ -42,7 +42,7 @@ IDiaPropertyStorage : IUnknown
 |[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|プロパティの識別子を指定する対応する文字列名を取得します。|
 |[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|読み取り`ULONGLONG`プロパティ セット内の値。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 プロパティ セット内の各プロパティがプロパティの識別子 (ID)、4 バイトで識別される`ULONG`そのセットに固有の値。 によって公開されるプロパティ、`IDiaPropertyStorage`インターフェイスは、親インターフェイスで使用可能なプロパティに対応します。 プロパティなど、 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)インターフェイスを介して名前でアクセスできる、`IDiaPropertyStorage`インターフェイス (ただし、ある場合でも、このプロパティは、アクセス可能性がありますとは限りませんプロパティが有効で、特定`IDiaSymbol`オブジェクト)。
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
@@ -119,8 +119,8 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 }
 ```
 
-## <a name="requirements"></a>要件
-ヘッダー: Dia2.h
+## <a name="requirements"></a>必要条件
+ヘッダー:Dia2.h
 
 ライブラリ: diaguids.lib
 

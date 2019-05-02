@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: baf26fb00a53e4680d44caf5fb8b2f2c5bd5f4c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8010ad1f8bbb1e49afe9e5e527e9639f2fb14601
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442820"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>コード化された UI テスト ログを使用したコード化された UI テストの分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,29 +22,19 @@ ms.locfileid: "54773377"
   
  **必要条件**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="why-should-i-do-this"></a>この操作を行う理由  
  問題をすばやくデバッグできるような形式で、ログが表示されます。  
   
 ## <a name="how-do-i-do-this"></a>操作方法  
   
-### <a name="step-1-enable-logging"></a>手順 1: ログ記録を有効にする  
+### <a name="step-1-enable-logging"></a>手順 1: ログの有効化  
  シナリオに応じて、以下のいずれかのメソッドを使用してログを有効にします。  
   
--   ターゲット .NET Framework バージョン 4 のテスト プロジェクトに、App.config ファイルが含まれていない  
+- ターゲット .NET Framework バージョン 4 のテスト プロジェクトに、App.config ファイルが含まれていない  
   
-    -   **QTAgent32_40.exe.config** ファイルを開きます。  
-  
-         既定では、このファイルは、**\<ドライブ名>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE** にあります。  
-  
-         EqtTraceLevel の値を、目的のログ レベルに変更します。  
-  
-         ファイルを保存します。  
-  
--   ターゲット .NET Framework バージョン 4.5 のテスト プロジェクトに、App.config ファイルが含まれていない  
-  
-    -   **QTAgent32.exe.config** ファイルを開きます。  
+    - **QTAgent32_40.exe.config** ファイルを開きます。  
   
          既定では、このファイルは、**\<ドライブ名>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE** にあります。  
   
@@ -52,33 +42,43 @@ ms.locfileid: "54773377"
   
          ファイルを保存します。  
   
--   テスト プロジェクトに App.config ファイルが含まれている  
+- ターゲット .NET Framework バージョン 4.5 のテスト プロジェクトに、App.config ファイルが含まれていない  
   
-    -   プロジェクトに含まれている App.config ファイルを開きます。  
+    - **QTAgent32.exe.config** ファイルを開きます。  
+  
+         既定では、このファイルは、**\<ドライブ名>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE** にあります。  
+  
+         EqtTraceLevel の値を、目的のログ レベルに変更します。  
+  
+         ファイルを保存します。  
+  
+- テスト プロジェクトに App.config ファイルが含まれている  
+  
+    - プロジェクトに含まれている App.config ファイルを開きます。  
   
          構成ノードの下に次のコードを追加します。  
   
          `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
   
--   テスト コード自体からログを有効にする  
+- テスト コード自体からログを有効にする  
   
-    -   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
+    - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
 ### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>手順 2: コード化された UI テストを実行してログを表示する  
  **QTAgent32.exe.config** ファイルに変更を加えてコード化された UI テストを実行すると、テスト エクスプローラーの結果に、出力リンクが表示されます。 トレース レベルが “verbose” に設定されていると、ログ ファイルはテストが失敗した場合だけでなく、テストが成功した場合にも生成されます。  
   
-1.  **[テスト]** メニューの **[ウィンドウ]** を選択し、**[テスト エクスプローラー]** を選択します。  
+1. **[テスト]** メニューの **[ウィンドウ]** を選択し、**[テスト エクスプローラー]** を選択します。  
   
-2.  **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
+2. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
-3.  テスト エクスプローラーで、実行するコード化された UI テストを選択し、ショートカット メニューを開いて **[選択したテストの実行]** を選択します。  
+3. テスト エクスプローラーで、実行するコード化された UI テストを選択し、ショートカット メニューを開いて **[選択したテストの実行]** を選択します。  
   
      自動テストが実行され、成功したか失敗したかが示されます。  
   
     > [!TIP]
-    >  **[テスト]** メニューからテスト エクスプローラーを表示するには、**[Windows]** をポイントし、**[テスト エクスプローラー]** をクリックします。  
+    > **[テスト]** メニューからテスト エクスプローラーを表示するには、**[Windows]** をポイントし、**[テスト エクスプローラー]** をクリックします。  
   
-4.  テスト エクスプローラーの結果で、**[出力]** リンクを選択します。  
+4. テスト エクスプローラーの結果で、**[出力]** リンクを選択します。  
   
      ![テスト エクスプローラーの出力リンク](../test/media/cuit-htmlactionlog1.png "CUIT_HTMLActionLog1")  
   
@@ -86,7 +86,7 @@ ms.locfileid: "54773377"
   
      ![コード化された UI テストからの結果と出力リンク](../test/media/cuit-htmlactionlog2.png "CUIT_HTMLActionLog2")  
   
-5.  UITestActionLog.html リンクを選択します。  
+5. UITestActionLog.html リンクを選択します。  
   
      Web ブラウザーにログが表示されます。  
   
@@ -94,7 +94,7 @@ ms.locfileid: "54773377"
   
 ## <a name="q--a"></a>Q & A  
   
-### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>Q: EnableHtmlLogger キーはどうなったのですか?  
+### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>Q:EnableHtmlLogger キーはどうなりましたか。  
  以前のバージョンの Visual Studio では、コード化された UI テストで HTML ロガーを有効にするための構成設定が他に 2 つありました。  
   
 ```  

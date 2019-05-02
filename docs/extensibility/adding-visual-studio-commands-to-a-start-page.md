@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7533d2217682b7be2b48c7aa3a5943c270de5a1a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 68bea9ff0d91819146cc5d89167373e0e8ed6f3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410109"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>スタート ページを Visual Studio のコマンドを追加します。
 
@@ -50,9 +50,9 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```
 
 > [!NOTE]
->  `x:` XAML スキーマを指すのエイリアスがすべてのコマンドの先頭に必要です。
+> `x:` XAML スキーマを指すのエイリアスがすべてのコマンドの先頭に必要です。
 
- 値を設定することができます、`Command`プロパティからアクセスできる任意のコマンドを**コマンド**ウィンドウ。 使用可能なコマンドの一覧は、[Visual Studio コマンドのエイリアス](../ide/reference/visual-studio-command-aliases.md)を参照してください。
+ 値を設定することができます、`Command`プロパティからアクセスできる任意のコマンドを**コマンド**ウィンドウ。 使用可能なコマンドの一覧は、次を参照してください。 [Visual Studio コマンドのエイリアス](../ide/reference/visual-studio-command-aliases.md)します。
 
  追加するコマンドには、追加のパラメーターが必要とする場合の値に追加できます、`CommandParameter`プロパティ。 次の例に示すように、スペースを使用して、コマンドから別のパラメーター。
 
@@ -66,22 +66,22 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
  その他の Visual Studio コマンドの呼び出しに使用する同じ構文を使用して、登録済みの Vspackage からコマンドを呼び出すことができます。 インストール済みの VSPackage に追加する場合など、**ホーム ページ**コマンドを**ビュー**  メニューを設定してそのコマンドを呼び出すことができます`CommandParameter`に`View.HomePage`します。
 
 > [!NOTE]
->  VSPackage に関連付けられているコマンドを呼び出す場合は、コマンドが呼び出されたときにパッケージを読み込む必要があります。
+> VSPackage に関連付けられているコマンドを呼び出す場合は、コマンドが呼び出されたときにパッケージを読み込む必要があります。
 
 ## <a name="add-commands-from-assemblies"></a>アセンブリからのコマンドを追加します。
  アセンブリの場合、またはメニュー コマンドに関連付けられていない VSPackage でのアクセス コードには、コマンドを呼び出す、アセンブリのエイリアスを作成し、エイリアスを呼び出してください。
 
 ### <a name="to-call-a-command-from-an-assembly"></a>アセンブリからコマンドを呼び出す
 
-1.  ソリューションでは、アセンブリへの参照を追加します。
+1. ソリューションでは、アセンブリへの参照を追加します。
 
-2.  上部にある、 *StartPage.xaml*ファイルをアセンブリの名前空間ディレクティブを追加する次の例に示すようにします。
+2. 上部にある、 *StartPage.xaml*ファイルをアセンブリの名前空間ディレクティブを追加する次の例に示すようにします。
 
     ```xml
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
     ```
 
-3.  設定してコマンドを呼び出す、`Command`次の例に示すように、XAML オブジェクトのプロパティ。
+3. 設定してコマンドを呼び出す、`Command`次の例に示すように、XAML オブジェクトのプロパティ。
 
      Xaml
 
@@ -90,7 +90,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```
 
 > [!NOTE]
->  アセンブリをコピーして貼り付けます *.\\{Visual Studio インストール フォルダー} \Common7\IDE\PrivateAssemblies\*それを呼び出す前に読み込まれるかどうかを確認します。
+> アセンブリをコピーして貼り付けます *.\\{Visual Studio インストール フォルダー} \Common7\IDE\PrivateAssemblies\*それを呼び出す前に読み込まれるかどうかを確認します。
 
 ## <a name="add-commands-with-the-dte-object"></a>DTE オブジェクトにコマンドを追加します。
  DTE オブジェクトは、スタート ページ、マークアップとコードの両方からアクセスできます。

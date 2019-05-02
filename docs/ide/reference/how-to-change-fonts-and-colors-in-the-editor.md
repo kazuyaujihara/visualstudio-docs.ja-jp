@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4fba419605dd332346885dbf93460c1a4e53c9d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789593"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>方法: Visual Studio でエディターのフォントと色を変更する
 
@@ -33,20 +33,20 @@ ms.locfileid: "57223183"
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>既定のフォント フェイス、サイズ、色を変更する
 
-1.  **[ツール]** メニューの **[オプション]** を選び、**[環境]** フォルダーで **[フォントおよび色]** を選びます。
+1. **[ツール]** メニューの **[オプション]** を選び、**[環境]** フォルダーで **[フォントおよび色]** を選びます。
 
      [[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) が開きます。
 
-2.  **[設定の表示]** の **[テキスト エディター]** を選びます。
+2. **[設定の表示]** の **[テキスト エディター]** を選びます。
 
-3.  **[フォント]** および **[サイズ]** オプションで、すべてのエディター内のすべてのテキスト要素のフォント フェイスとサイズを変更します。
+3. **[フォント]** および **[サイズ]** オプションで、すべてのエディター内のすべてのテキスト要素のフォント フェイスとサイズを変更します。
 
-4.  **[表示項目]** で適切な項目を選択し、**[前景色]** および **[背景色]** オプションを変更します。
+4. **[表示項目]** で適切な項目を選択し、**[前景色]** および **[背景色]** オプションを変更します。
 
     > [!TIP]
     > 既定の設定にリセットするには、**[既定値を使用]** をクリックします。
 
-5.  **[OK]** をクリックします。
+5. **[OK]** をクリックします。
 
 ## <a name="see-also"></a>関連項目
 

@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0798a23b4c8ad4e5859bec73ebfed47a56b322d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993104"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>IActiveScriptProfilerCallback3::SetWebWorkerId メソッド
 このプロファイル セッションに使用する worker ID をプロファイラーに通知します。 関数は、ページのコンテキストで実行されていない、このメソッドは呼び出されません。 値`webWorkerId`1 で始まるすべての worker の場合は 1 ずつインクリメントされます。 ID 値はのセッションの終了後に安定していますし、ワーカーが作成された順序にのみ対応のものではありません。  

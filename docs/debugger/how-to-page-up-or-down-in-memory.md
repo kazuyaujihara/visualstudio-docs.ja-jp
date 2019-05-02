@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b554a197afe2deef3619551af2d45d4a80708afe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 4b8452100eb744d019c0f4c8d5e62566ac761210
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894022"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>方法 : [メモリ] ウィンドウの上下スクロール
+# <a name="how-to-page-up-or-down-in-memory"></a>方法: メモリ内で 1 ページずつ上下に移動する
 
 **[メモリ]** ウィンドウまたは **[逆アセンブル]** ウィンドウでメモリの内容を表示するときに垂直スクロール バーを使用すると、メモリ空間内を上下に移動できます。
 
@@ -44,9 +44,9 @@ ms.locfileid: "56715363"
 
 #### <a name="to-move-up-or-down-one-instruction"></a>1 つ上または 1 つ下の命令に移動するには
 
--   垂直スクロール バーの上端または下端にある矢印をクリックします。
+- 垂直スクロール バーの上端または下端にある矢印をクリックします。
 
 ## <a name="see-also"></a>関連項目
 - [[メモリ] ウィンドウ](../debugger/memory-windows.md)
-- [方法 : [逆アセンブル] ウィンドウを使用する](../debugger/how-to-use-the-disassembly-window.md)
+- [方法: [逆アセンブル] ウィンドウを使用する](../debugger/how-to-use-the-disassembly-window.md)
 - [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)

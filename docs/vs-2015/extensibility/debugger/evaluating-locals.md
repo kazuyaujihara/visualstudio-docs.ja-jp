@@ -11,30 +11,30 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fcbf6c3908460ce9d0f34b31c9a815c652de8031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7e31aa560422c9f18ec30a6e203559ef3ed10c52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444763"
 ---
 # <a name="evaluating-locals"></a>ローカル変数の評価
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
   
  [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)を呼び出して、ローカルだけでなく、ローカルの名前と型の値を取得します。 ローカルの値は、プログラムの現在の状態に依存するので、メモリから、ローカルの値を取得する必要があります。 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)オブジェクトを使用してバインドする、 [IDebugField](../../extensibility/debugger/reference/idebugfield.md)値を含むメモリ内の適切な場所へのローカルを表すオブジェクト。 メモリ内のこの場所は、によって表される、 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)オブジェクト。  
   
  ローカルの値を取得するには、この機能は、次のタスクを実行するヘルパー関数にカプセル化します。  
   
-1.  バインド、`IDebugField`オブジェクトを取得するためのメモリを`IDebugObject`オブジェクト。  
+1. バインド、`IDebugField`オブジェクトを取得するためのメモリを`IDebugObject`オブジェクト。  
   
-2.  メモリから値を取得します。 この値は、一連のバイトとして表されます。  
+2. メモリから値を取得します。 この値は、一連のバイトとして表されます。  
   
-3.  ローカルの型に基づいた値の書式を設定します。  
+3. ローカルの型に基づいた値の書式を設定します。  
   
-4.  ローカルの値を含む汎用オブジェクトを返します。 これは、c# では、 `object`、C++ では、これは、`VARIANT`します。  
+4. ローカルの値を含む汎用オブジェクトを返します。 これは、c# では、 `object`、C++ では、これは、`VARIANT`します。  
   
 ## <a name="managed-code"></a>マネージド コード  
  これは、マネージ コードでローカルの値を取得する関数の実装です。  

@@ -18,20 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebd2b4dd65fbcb957e13207cc5550a10b7870219
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 7299139d05a47c079e1aeb29f3b61433cff33bb6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929187"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Win32 のエラー コードを調べるには
 WINERROR.H には、Win32 API 関数のエラー コード定義が含まれています。このファイルは、既定のインストールでは INCLUDE ディレクトリにあります。
 
- エラー コードを検索するには、**[ウォッチ]** ウィンドウまたは **[クイック ウォッチ]** ダイアログ ボックスに、検索対象のコードを入力します。 次に例を示します。
+ エラー コードを検索するには、**[ウォッチ]** ウィンドウまたは **[クイック ウォッチ]** ダイアログ ボックスに、検索対象のコードを入力します。 例:
 
 `0x80000004,hr`
-
 
 ## <a name="see-also"></a>関連項目
 - [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)

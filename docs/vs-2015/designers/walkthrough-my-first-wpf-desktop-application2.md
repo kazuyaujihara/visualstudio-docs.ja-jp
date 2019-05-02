@@ -9,55 +9,55 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3607bac8d8cd9808a54e4c8956b3c4d41df8aecb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bee99bc546eca3787db1f9cd082359afb6881d10
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421150"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>チュートリアル: 初めての WPF デスクトップ アプリケーション
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 name =「概要」></a>このチュートリアルは、Windows Presentation Foundation (WPF) 開発の概要を提供します。 ほとんどの WPF デスクトップ アプリケーションに共通する要素を含む基本的なアプリケーションを作成します。XAML マークアップ、分離コード、アプリケーション定義、コントロール、レイアウト、データ バインディング、およびスタイル。  
   
-##  <a name="Create_The_Application_Code_Files"></a> アプリケーション プロジェクトの作成  
+## <a name="Create_The_Application_Code_Files"></a> アプリケーション プロジェクトの作成  
  このセクションでは、プロジェクトとメイン ウィンドウまたはフォームを含むアプリケーション インフラストラクチャを作成します。  
   
 #### <a name="to-create-the-project"></a>プロジェクトを作成するには  
   
-1.  メニュー バーで、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
+1. メニュー バーで、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
   
-2.  **[新しいプロジェクト]** ダイアログで、 **[Visual C#]** ノードまたは **[Visual Basic]** ノードを展開し、 **[Windows]** ノードを選択して **[Windows]** ノードを展開してから **[従来の (クラシック) デスクトップ]** ノードを選択します。  
+2. **[新しいプロジェクト]** ダイアログで、 **[Visual C#]** ノードまたは **[Visual Basic]** ノードを展開し、 **[Windows]** ノードを選択して **[Windows]** ノードを展開してから **[従来の (クラシック) デスクトップ]** ノードを選択します。  
   
-3.  テンプレートの一覧で、 **[WPF アプリケーション]** テンプレートを選択します。  
+3. テンプレートの一覧で、 **[WPF アプリケーション]** テンプレートを選択します。  
   
-4.   **[名前]** ボックスに「 `ExpenseIt`」と入力して、 **[OK]** を選択します。  
+4.  **[名前]** ボックスに「 `ExpenseIt`」と入力して、 **[OK]** を選択します。  
   
      プロジェクトが作成され、プロジェクト ファイルが **ソリューション エクスプローラー**に追加され、 **MainWindow.xaml** という名前の既定のアプリケーション ウィンドウのデザイナーが表示されます。  
   
 #### <a name="to-modify-the-main-window"></a>メイン ウィンドウを変更するには  
   
-1.  デザイナーで **[MainWindow.xaml]** タブがアクティブでなければ、このタブを選択します。  
+1. デザイナーで **[MainWindow.xaml]** タブがアクティブでなければ、このタブを選択します。  
   
-2.  C# を使用する場合は、 `<Window x:Class="ExpenseIt.MainWindow"` という行を見つけ、その行を `<NavigationWindow x:Class="ExpenseIt.MainWindow"`に置き換えます。  
+2. C# を使用する場合は、 `<Window x:Class="ExpenseIt.MainWindow"` という行を見つけ、その行を `<NavigationWindow x:Class="ExpenseIt.MainWindow"`に置き換えます。  
   
      Visual Basic を使用する場合は、 `<Window x:Class=" MainWindow"` という行を見つけ、その行を `<NavigationWindow x:Class="MainWindow"`に置き換えます。  
   
      `<Window` タグを `<NavigationWindow`に変更すると、Intellisense によって終了タグも `</NavigationWindow>` に自動的に変更されます。  
   
     > [!NOTE]
-    >  タグを変更した後、 **[エラー一覧]** ウィンドウが開いていると、エラーがいくつか表示される場合があります。 心配しないでください。この後の手順で加える変更でそれらのエラーは解消されます。  
+    > タグを変更した後、 **[エラー一覧]** ウィンドウが開いていると、エラーがいくつか表示される場合があります。 心配しないでください。この後の手順で加える変更でそれらのエラーは解消されます。  
   
-3.  `<Grid>` と `</Grid>` のタグを選択して削除します。  
+3. `<Grid>` と `</Grid>` のタグを選択して削除します。  
   
      **NavigationWindow** に、 **グリッド**などの他の UI 要素を含めることはできません。  
   
-4.   **[プロパティ]** ウィンドウで **[共通]** カテゴリ ノードを展開し、 **[タイトル]** プロパティを選択しから、「 `ExpenseIt` 」と入力して **Enter** キーを押します。  
+4.  **[プロパティ]** ウィンドウで **[共通]** カテゴリ ノードを展開し、 **[タイトル]** プロパティを選択しから、「 `ExpenseIt` 」と入力して **Enter** キーを押します。  
   
      [XAML] ウィンドウの **[Title]** 要素がこの新しい値と一致していることに注目してください。 XAML のプロパティは、[XAML] ウィンドウまたは **[プロパティ]** ウィンドウのいずれかで変更でき、それらの変更は同期されます。  
   
-5.  [XAML] ウィンドウで **[Height]** 要素の値を `375`に設定し、 **[Width]** プロパティの値を `500`で行うことができます。  
+5. [XAML] ウィンドウで **[Height]** 要素の値を `375`に設定し、 **[Width]** プロパティの値を `500`で行うことができます。  
   
      これらの要素は、 **[プロパティ]** ウィンドウの **[レイアウト]** カテゴリにある **[高さ]** プロパティと **[幅]** プロパティに対応します。  
   
@@ -93,26 +93,26 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 #### <a name="to-modify-the-code-behind-file-c"></a>分離コード ファイルを変更するには (C#)  
   
-1.  **ソリューション エクスプローラー**で **[MainWindow.xaml]** ノードを展開し、 **MainWindow.xaml.cs** ファイルを開きます。  
+1. **ソリューション エクスプローラー**で **[MainWindow.xaml]** ノードを展開し、 **MainWindow.xaml.cs** ファイルを開きます。  
   
-2.  `public partial class MainWindow : Window` という行を見つけ、その行を `public partial class MainWindow : NavigationWindow`に置き換えます。  
+2. `public partial class MainWindow : Window` という行を見つけ、その行を `public partial class MainWindow : NavigationWindow`に置き換えます。  
   
      これにより、 `MainWindow` クラスが `NavigationWindow`から派生するように変更されます。 Visual Basic では、これは XAML でウィンドウを変更すると自動的に実行されます。そのため、コードを変更する必要はありません。  
   
-##  <a name="add_files_to_the_application"></a> ファイルのアプリケーションへの追加  
+## <a name="add_files_to_the_application"></a> ファイルのアプリケーションへの追加  
  このセクションでは、アプリケーションに 2 つのページと 1 つのイメージを追加します。  
   
 #### <a name="to-add-a-home-screen"></a>ホーム画面を追加するには  
   
-1.  **ソリューション エクスプローラー**で **[ExpenseIt]** ノードのショートカット メニューを開き、 **[追加]**、 **[ページ]** を選択します。  
+1. **ソリューション エクスプローラー**で **[ExpenseIt]** ノードのショートカット メニューを開き、 **[追加]**、 **[ページ]** を選択します。  
   
-2.   **[新しい項目の追加]** ダイアログで **[名前]** テキスト ボックスを選択して「 `ExpenseItHome`」と入力し、 **[追加]** ボタンを選択します。  
+2.  **[新しい項目の追加]** ダイアログで **[名前]** テキスト ボックスを選択して「 `ExpenseItHome`」と入力し、 **[追加]** ボタンを選択します。  
   
      このページが、アプリケーションの起動時に表示される最初のウィンドウになります。  
   
-3.  デザイナーで **[ExpenseItHome.xaml]** タブがアクティブでなければ、このタブを選択します。  
+3. デザイナーで **[ExpenseItHome.xaml]** タブがアクティブでなければ、このタブを選択します。  
   
-4.  `<Title>` 要素を選択し、タイトルを " **ExpenseIt – ホーム**" に変更します。  
+4. `<Title>` 要素を選択し、タイトルを " **ExpenseIt – ホーム**" に変更します。  
   
      **ExpenseItHome.xaml** ファイルは C# では次のようになります。  
   
@@ -151,9 +151,9 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
     </Page>  
     ```  
   
-5.  デザイナーで **MainWindow.xaml** タブを選択します。  
+5. デザイナーで **MainWindow.xaml** タブを選択します。  
   
-6.  行 `Title="ExpenseIt" Height="375" Width="500">` 要素を見つけ、 `Source="ExpenseItHome.xaml"` プロパティを追加します。  
+6. 行 `Title="ExpenseIt" Height="375" Width="500">` 要素を見つけ、 `Source="ExpenseItHome.xaml"` プロパティを追加します。  
   
      これにより、 **ExpenseItHome.xaml** が、アプリケーションの起動時に最初に開くページになります。 **MainWindow.xaml** ファイルは C# では次のようになります。  
   
@@ -189,15 +189,15 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 #### <a name="to-add-a-details-window"></a>詳細ウィンドウを追加するには  
   
-1.  **ソリューション エクスプローラー**で **[ExpenseIt]** ノードのショートカット メニューを開き、 **[追加]**、 **[ページ]** を選択します。  
+1. **ソリューション エクスプローラー**で **[ExpenseIt]** ノードのショートカット メニューを開き、 **[追加]**、 **[ページ]** を選択します。  
   
-2.   **[新しい項目の追加]** ダイアログで **[名前]** テキスト ボックスを選択して「 `ExpenseReportPage`」と入力し、 **[追加]** ボタンを選択します。  
+2.  **[新しい項目の追加]** ダイアログで **[名前]** テキスト ボックスを選択して「 `ExpenseReportPage`」と入力し、 **[追加]** ボタンを選択します。  
   
      このウィンドウには、個々の経費明細書が表示されます。  
   
-3.  デザイナーで **[ExpenseReportPage.xaml]** タブがアクティブでなければ、このタブを選択します。  
+3. デザイナーで **[ExpenseReportPage.xaml]** タブがアクティブでなければ、このタブを選択します。  
   
-4.  `<Title>` 要素を選択し、タイトルを " **ExpenseIt – 経費の表示**" に変更します。  
+4. `<Title>` 要素を選択し、タイトルを " **ExpenseIt – 経費の表示**" に変更します。  
   
      ExpenseReportPage.xaml ファイルは C# では次のようになります。  
   
@@ -236,26 +236,26 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
     </Page>  
     ```  
   
-5.  メニュー バーで、 **[デバッグ]**、 **[デバッグ開始]** の順に選択して (または F5 キーを押して) アプリケーションを実行します。  
+5. メニュー バーで、 **[デバッグ]**、 **[デバッグ開始]** の順に選択して (または F5 キーを押して) アプリケーションを実行します。  
   
      次の図は、ナビゲーション ウィンドウ ボタンが配置されたアプリケーションを示しています。  
   
      ![ExpenseIt のサンプルのスクリーン ショット](../designers/media/gettingstartedfigure1.png "GettingStartedFigure1")  
   
-6.  アプリケーションを閉じてデザイン モードに戻ります。  
+6. アプリケーションを閉じてデザイン モードに戻ります。  
   
-##  <a name="Add_Layout"></a> ユーザー インターフェイスの作成  
+## <a name="Add_Layout"></a> ユーザー インターフェイスの作成  
  レイアウトを使用すると、順序付けされた方法で要素を配置できます。また、フォームのサイズが変更された場合の要素のサイズと位置が管理されます。 このセクションでは、3 つの行を持つ単一列のグリッドを作成します。 2 つのページにコントロールを追加し、いくつかのコードを追加して、最後にコントロールの再利用可能なスタイルを定義します。  
   
 #### <a name="to-create-the-layout"></a>レイアウトを作成するには  
   
-1.  **ExpenseItHome.xaml** を開き、 `<Grid>` 要素を選択します。  
+1. **ExpenseItHome.xaml** を開き、 `<Grid>` 要素を選択します。  
   
-2.   **[プロパティ]** ウィンドウで **[高さ]** カテゴリ ノードを展開し、 **[余白]** の値を `10`、 `10`、 `0`、 and `10`、 which corresponds to left、 right、 top and bottom margins.  
+2.  **[プロパティ]** ウィンドウで **[高さ]** カテゴリ ノードを展開し、 **[余白]** の値を `10`、 `10`、 `0`、 and `10`、 which corresponds to left、 right、 top and bottom margins.  
   
      要素 `Margin="10,0,10,10"` は XAML 内の `<Grid>` 要素に追加されます。 繰り返しになりますが、 **[プロパティ]** ウィンドウの代わりに XAML コード内にこれらの値を直接入力しても同じ結果になります。  
   
-3.  次の XAML コードを `Grid` 要素に追加して、行と列の定義を作成します。  
+3. 次の XAML コードを `Grid` 要素に追加して、行と列の定義を作成します。  
   
     ```xaml  
     <Grid.ColumnDefinitions>  
@@ -270,9 +270,9 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 #### <a name="to-add-controls"></a>コントロールを追加するには  
   
-1.  **ExpenseItHome.xaml**を開きます。  
+1. **ExpenseItHome.xaml**を開きます。  
   
-2.  次の XAML コードを `</Grid>` タグのすぐ上に追加して、 `Border`、 `ListBox` 、および `Button` コントロールを作成します。  
+2. 次の XAML コードを `</Grid>` タグのすぐ上に追加して、 `Border`、 `ListBox` 、および `Button` コントロールを作成します。  
   
     ```xaml  
     <!-- People list -->  
@@ -294,29 +294,29 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
      これらのコントロールがデザイン ウィンドウに表示されたことを確認してください。 コントロールを **[ツールボックス]** ウィンドウからデザイン ウィンドウにドラッグし、 **[プロパティ]** ウィンドウでプロパティを設定することよって、コントロールを作成することもできます。  
   
-3.  アプリケーションをビルドして実行します。 次の図は、この手順によって XAML で作成されるコントロールの実行時の外観を示しています。  
+3. アプリケーションをビルドして実行します。 次の図は、この手順によって XAML で作成されるコントロールの実行時の外観を示しています。  
   
      ![ExpenseIt のサンプルのスクリーン ショット](../designers/media/gettingstartedfigure2.png "GettingStartedFigure2")  
   
-4.  アプリケーションを閉じてデザイン モードに戻ります。  
+4. アプリケーションを閉じてデザイン モードに戻ります。  
   
 #### <a name="to-add-a-background-image"></a>背景イメージを追加するには  
   
-1.  次のイメージを選択し、`watermark.png` として保存します。  
+1. 次のイメージを選択し、`watermark.png` として保存します。  
   
      ![チュートリアル ](../designers/media/wpf-watermark.png "WPF_watermark のウォーターマーク イメージ")  
   
     > [!NOTE]
-    >  または、独自のイメージを作成し、`watermark.png` として保存します。  
+    > または、独自のイメージを作成し、`watermark.png` として保存します。  
   
-2.  **ソリューション エクスプローラー**で **[ExpenseIt]** ノードのショートカット メニューを開き、 **[追加]**、 **[既存の項目]** を選択します。  
+2. **ソリューション エクスプローラー**で **[ExpenseIt]** ノードのショートカット メニューを開き、 **[追加]**、 **[既存の項目]** を選択します。  
   
-3.  **[既存項目の追加]** ダイアログで、追加したばかりの **watermark.png** イメージを探して選択し、 **[追加]** ボタンを選択します。  
+3. **[既存項目の追加]** ダイアログで、追加したばかりの **watermark.png** イメージを探して選択し、 **[追加]** ボタンを選択します。  
   
     > [!NOTE]
-    >  **[ファイルの種類]** リストを展開し、 **[イメージ ファイル]** を選択する必要がある場合があります。  
+    > **[ファイルの種類]** リストを展開し、 **[イメージ ファイル]** を選択する必要がある場合があります。  
   
-4.  **ExpenseItHome.xaml** ファイルを開き、次の XAML コードを `</Grid>` タグのすぐ上に追加し、背景イメージを作成します。  
+4. **ExpenseItHome.xaml** ファイルを開き、次の XAML コードを `</Grid>` タグのすぐ上に追加し、背景イメージを作成します。  
   
     ```xaml  
     <Grid.Background>  
@@ -327,9 +327,9 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 #### <a name="to-add-a-title"></a>タイトルを追加するには  
   
-1.  **ExpenseItHome.xaml**を開きます。  
+1. **ExpenseItHome.xaml**を開きます。  
   
-2.  行 `<Grid.ColumnDefinitions>` を見つけ、そのすぐ下に次を追加します。  
+2. 行 `<Grid.ColumnDefinitions>` を見つけ、そのすぐ下に次を追加します。  
   
     ```xaml  
     <ColumnDefinition Width="230" />  
@@ -338,7 +338,7 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
      これにより、他の列の左側に、追加の列が 230 ピクセルの固定幅で作成されます。  
   
-3.  行 `<Grid.RowDefinitions>` を見つけ、そのすぐ下に次を追加します。  
+3. 行 `<Grid.RowDefinitions>` を見つけ、そのすぐ下に次を追加します。  
   
     ```xaml  
     <RowDefinition />  
@@ -347,15 +347,15 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
      これにより、グリッドの上部に行が追加されます。  
   
-4.  `Grid.Column` の値を 1 に設定して、2 番目の列にコントロールを移動します。 それぞれの `Grid.Row` の値を 1 つずつ増やして、各コントロールを 1 行下に移動します。  
+4. `Grid.Column` の値を 1 に設定して、2 番目の列にコントロールを移動します。 それぞれの `Grid.Row` の値を 1 つずつ増やして、各コントロールを 1 行下に移動します。  
   
-    1.  行 `<Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">`を見つけます。 `Grid.Column="0"` を `Grid.Column="1"` に変更して、 `Grid.Row="0"` を `Grid.Row="1"`に変更します。  
+    1. 行 `<Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">`を見つけます。 `Grid.Column="0"` を `Grid.Column="1"` に変更して、 `Grid.Row="0"` を `Grid.Row="1"`に変更します。  
   
-    2.  行 `<ListBox Name="peopleListBox" Grid.Column="0" Grid.Row="1"`を見つけます。 `Grid.Column="0"` を `Grid.Column="1"` に変更して、 `Grid.Row="1"` を `Grid.Row="2"`に変更します。  
+    2. 行 `<ListBox Name="peopleListBox" Grid.Column="0" Grid.Row="1"`を見つけます。 `Grid.Column="0"` を `Grid.Column="1"` に変更して、 `Grid.Row="1"` を `Grid.Row="2"`に変更します。  
   
-    3.  行 `<Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"`を見つけます。 `Grid.Column="0"` を `Grid.Column="1"` に変更して、 `Grid.Row="2"` を `Grid.Row="3"`に変更します。  
+    3. 行 `<Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"`を見つけます。 `Grid.Column="0"` を `Grid.Column="1"` に変更して、 `Grid.Row="2"` を `Grid.Row="3"`に変更します。  
   
-5.  `<Border` 要素の直前に、次の XAML コードを追加してタイトルを表示します。  
+5. `<Border` 要素の直前に、次の XAML コードを追加してタイトルを表示します。  
   
     ```xaml  
     <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"   
@@ -461,15 +461,15 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
     </Page>  
     ```  
   
-6.  この時点でアプリケーションをビルドして実行すると、次の図のようになります。  
+6. この時点でアプリケーションをビルドして実行すると、次の図のようになります。  
   
      ![ExpenseIt のサンプルのスクリーン ショット](../designers/media/gettingstartedfigure3.png "GettingStartedFigure3")  
   
 #### <a name="to-add-code-to-the-button"></a>コードをボタンに追加するには  
   
-1.  **ExpenseItHome.xaml**を開きます。  
+1. **ExpenseItHome.xaml**を開きます。  
   
-2.  `<Button` 要素を選択し、次の XAML コード **を、** HorizontalAlignment="Right" `Click="Button_Click"`要素の直後に追加します。  
+2. `<Button` 要素を選択し、次の XAML コード **を、** HorizontalAlignment="Right" `Click="Button_Click"`要素の直後に追加します。  
   
      これにより、ボタンの `Click` イベントのイベント ハンドラーが追加されます。 **<Button** 要素のコードは、次のようになります。  
   
@@ -479,9 +479,9 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
     Height="25" HorizontalAlignment="Right" Click="Button_Click">View</Button>  
     ```  
   
-3.  **ExpenseItHome.xaml.cs** または **ExpenseItHome.xaml.vb** ファイルを開きます。  
+3. **ExpenseItHome.xaml.cs** または **ExpenseItHome.xaml.vb** ファイルを開きます。  
   
-4.  `ExpenseItHome` クラスに次のコードを追加します。  
+4. `ExpenseItHome` クラスに次のコードを追加します。  
   
     ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
@@ -505,11 +505,11 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 #### <a name="to-create-the-ui-for-the-report-page"></a>レポート ページの UI を作成するには  
   
-1.  **ExpenseReportPage.xaml**を開きます。  
+1. **ExpenseReportPage.xaml**を開きます。  
   
      このページには、ホーム ページで選択されたユーザーの経費明細書が表示されます。  
   
-2.  `<Grid>` と `</Grid>` のタグの間に次の XAML を追加します。  
+2. `<Grid>` と `</Grid>` のタグの間に次の XAML を追加します。  
   
     ```xaml  
     <Grid.Background>  
@@ -575,9 +575,9 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
      この UI はホーム ページで作成した UI と似ていますが、 **DataGrid** コントロールにレポート データが表示されます。  
   
-3.  アプリケーションをビルドして実行します。  
+3. アプリケーションをビルドして実行します。  
   
-4.  **[表示]** ボタンを選択します。  
+4. **[表示]** ボタンを選択します。  
   
      経費明細書ページが表示されます。  
   
@@ -587,9 +587,9 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 #### <a name="to-style-controls"></a>コントロールのスタイルを設定するには  
   
-1.  **App.xaml** ファイル (C#) または **Application.xaml** ファイル (Visual Basic) を開きます。  
+1. **App.xaml** ファイル (C#) または **Application.xaml** ファイル (Visual Basic) を開きます。  
   
-2.  `<Application.Resources>` と `</Application.Resources>` のタグの間に次の XAML を追加します。  
+2. `<Application.Resources>` と `</Application.Resources>` のタグの間に次の XAML を追加します。  
   
     ```xaml  
     <!-- Header text style -->  
@@ -642,19 +642,19 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
      この XAML は、次のスタイルを追加します。  
   
-    -   `headerTextStyle`: ページ タイトル `Label`の書式を設定します。  
+    - `headerTextStyle`:ページ タイトルの書式設定`Label`します。  
   
-    -   `labelStyle`: `Label` コントロールの書式を設定します。  
+    - `labelStyle`:書式設定、`Label`コントロール。  
   
-    -   `columnHeaderStyle`: `DataGridColumnHeader`の書式を設定します。  
+    - `columnHeaderStyle`:書式設定、`DataGridColumnHeader`します。  
   
-    -   `listHeaderStyle`: リスト ヘッダーの `Border` コントロールの書式を設定します。  
+    - `listHeaderStyle`:一覧のヘッダーを書式設定する`Border`コントロール。  
   
-    -   `listHeaderTextStyle`: リスト ヘッダー **Label**の書式を設定します。  
+    - `listHeaderTextStyle`:一覧のヘッダーを書式設定する**ラベル**します。  
   
-    -   `buttonStyle`: `Button` [ExpenseItHome.xaml] **ページの** の書式を設定します。  
+    - `buttonStyle`:書式設定、`Button`上、 **ExpenseItHome.xaml**設定します。  
   
-3.  **ExpenseItHome.xaml** を開き、 `<Grid>` と `</Grid>` の要素の間にあるすべてを次の XAML に置き換えます。  
+3. **ExpenseItHome.xaml** を開き、 `<Grid>` と `</Grid>` の要素の間にあるすべてを次の XAML に置き換えます。  
   
     ```xaml  
     <Grid.ColumnDefinitions>  
@@ -691,7 +691,7 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
      各コントロールの外観を定義する `VerticalAlignment` や `FontFamily` などのプロパティは、これらのスタイルを適用することで、削除されて置き換えられます。  
   
-4.  **ExpenseReportPage.xaml** を開き、 `<Grid>` と最後の `</Grid>` の要素の間にあるすべてを次の XAML に置き換えます。  
+4. **ExpenseReportPage.xaml** を開き、 `<Grid>` と最後の `</Grid>` の要素の間にあるすべてを次の XAML に置き換えます。  
   
     ```xaml  
     <Grid.Background>  
@@ -754,9 +754,9 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 #### <a name="to-bind-data-to-a-control"></a>データをコントロールにバインドするには  
   
-1.  **ExpenseItHome.xaml** を開き、 `<Grid>` 要素を選択します。  
+1. **ExpenseItHome.xaml** を開き、 `<Grid>` 要素を選択します。  
   
-2.  次の XAML コードを追加します。  
+2. 次の XAML コードを追加します。  
   
     ```xaml  
   
@@ -791,7 +791,7 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
      このコードにより、各ユーザーのデータを格納する `XmlDataProvider` クラスが作成されます。 通常、これはファイルとして読み込まれますが、説明を簡単にするため、データをインラインで追加します。  
   
-3.  `<Grid.Resources>` 要素内に、次の XAML コードを追加します。  
+3. `<Grid.Resources>` 要素内に、次の XAML コードを追加します。  
   
     ```xaml  
     <!-- Name item template -->  
@@ -802,7 +802,7 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
      これにより、 `Data Template` ListBox **にデータを表示する方法を定義する**が追加されます。  
   
-4.  既存の `<ListBox>` 要素を次の XAML に置き換えます。  
+4. 既存の `<ListBox>` 要素を次の XAML に置き換えます。  
   
     ```xaml  
     <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2"   
@@ -815,9 +815,9 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 #### <a name="to-connect-data-to-controls"></a>コントロールにデータを接続するには  
   
-1.  **ExpenseReportPage.xaml.vb** または **ExpenseReportPage.xaml.cs**を開きます。  
+1. **ExpenseReportPage.xaml.vb** または **ExpenseReportPage.xaml.cs**を開きます。  
   
-2.  C# では、次のコンストラクターを **ExpenseReportPage** クラスに追加します。また、Visual Basic では、既存のクラスを次に置き換えます。  
+2. C# では、次のコンストラクターを **ExpenseReportPage** クラスに追加します。また、Visual Basic では、既存のクラスを次に置き換えます。  
   
     ```csharp  
     // Custom constructor to pass expense report data  
@@ -847,9 +847,9 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
      このコンストラクターは、データ オブジェクトをパラメーターとして受け取ります。 この場合、データ オブジェクトには、選択したユーザーの名前が格納されます。  
   
-3.  **ExpenseItHome.xaml.vb** または **ExpenseItHome.xaml.cs**ファイルを開きます。  
+3. **ExpenseItHome.xaml.vb** または **ExpenseItHome.xaml.cs**ファイルを開きます。  
   
-4.  `Click` イベント ハンドラー コードを次に置き換えます。  
+4. `Click` イベント ハンドラー コードを次に置き換えます。  
   
     ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
@@ -873,9 +873,9 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
 #### <a name="to-update-the-ui-with-data-templates"></a>データ テンプレートを使用して UI を更新するには  
   
-1.  **ExpenseReportPage.xaml**を開きます。  
+1. **ExpenseReportPage.xaml**を開きます。  
   
-2.   **[名前]** と **Department**`<StackPanel` 要素の XAML コードを次に置き換えます。  
+2.  **[名前]** と **Department**`<StackPanel` 要素の XAML コードを次に置き換えます。  
   
     ```xaml  
     <!-- Name -->  
@@ -894,7 +894,7 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
      これにより、 **Label** コントロールを適切なデータ ソース プロパティにバインドします。  
   
-3.  `<Grid>` 要素内に、次の XAML コードを追加します。  
+3. `<Grid>` 要素内に、次の XAML コードを追加します。  
   
     ```xaml  
     <!--Templates to display expense report data-->  
@@ -913,7 +913,7 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
      これにより、経費明細書データを表示する方法が定義されます。  
   
-4.  `<DataGrid>` 要素を次に置き換えます。  
+4. `<DataGrid>` 要素を次に置き換えます。  
   
     ```xaml  
     <!-- Expense type and Amount table -->  
@@ -929,26 +929,26 @@ name =「概要」></a>このチュートリアルは、Windows Presentation Fou
   
      これにより、 **ItemSource** が追加され、経費品目のバインディングが定義されます。  
   
-5.  アプリケーションをビルドして実行します。  
+5. アプリケーションをビルドして実行します。  
   
-6.  ユーザーを選択し、 **[表示]** ボタンを選択します。  
+6. ユーザーを選択し、 **[表示]** ボタンを選択します。  
   
      次の図には、コントロール、レイアウト、スタイル、データ バインディング、データ テンプレートが適用された ExpenseIt アプリケーションの両方のページが示されています。  
   
      ![ExpenseIt のサンプルのスクリーン ショット](../designers/media/gettingstartedfigure5.png "GettingStartedFigure5")  
   
-##  <a name="Best_Practices"></a> ベスト プラクティス  
+## <a name="Best_Practices"></a> ベスト プラクティス  
  このサンプルは、WPF の基礎を説明するものであり、アプリケーション開発のベスト プラクティスには従っていません。 WPF と .NET Framework のアプリケーション開発のベスト プラクティスの包括的な情報については、必要に応じて次のトピックを参照してください。  
   
--   ユーザー補助 - [ユーザー補助のベスト プラクティス](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)  
+- ユーザー補助 - [ユーザー補助のベスト プラクティス](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)  
   
--   セキュリティ - [Windows Presentation Foundation のセキュリティ](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)  
+- セキュリティ - [Windows Presentation Foundation のセキュリティ](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)  
   
--   ローカリゼーション - [WPF のグローバリゼーションおよびローカリゼーションの概要](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx)  
+- ローカリゼーション - [WPF のグローバリゼーションおよびローカリゼーションの概要](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx)  
   
--   パフォーマンス - [WPF アプリケーションのパフォーマンスの最適化](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)  
+- パフォーマンス - [WPF アプリケーションのパフォーマンスの最適化](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)  
   
-##  <a name="Whats_Next"></a> 次の内容  
+## <a name="Whats_Next"></a> 次の内容  
  これで、WPF を使用してデスクトップ アプリケーションを作成するためのいくつかの手法を習得できました。 データ バインドされた WPF アプリケーションの構成要素についての基本を理解することもできました。 このトピックは決して網羅的なものではありませんが、このトピックの手法を基に、自分で学習を進められるようになったはずです。  
   
  WPF のアーキテクチャおよびプログラミング モデルの詳細については、次のトピックを参照してください。  

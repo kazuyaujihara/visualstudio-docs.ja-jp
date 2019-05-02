@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6b060f35abf79d76e17f847e6b4b296c253a4b30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 437e541fab1559c65c410d94a8911c158aa3592e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438931"
 ---
 # <a name="memory-usage"></a>メモリ使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,18 +34,18 @@ ms.locfileid: "54766112"
   さらに、デバッガーの外部のメモリ ツールも使用できます。 「 [Memory Usage without Debugging](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0)」を参照してください。  
   
 > [!NOTE]
->  **カスタム アロケーター サポート** ネイティブ メモリ プロファイラーは、実行時に生成された割り当て [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) イベント データを収集して機能します。  CRT および Windows SDK のアロケーターには、割り当てデータをキャプチャできるように、ソース レベルで注釈が付けられています。  独自のアロケーターを作成する場合、新しく割り当てられたヒープ メモリへのポインターを返すすべての関数は、 [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(アロケーター) で修飾できます。myMalloc での例を次に示します。  
+> **カスタム アロケーター サポート** ネイティブ メモリ プロファイラーは、実行時に生成された割り当て [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) イベント データを収集して機能します。  CRT および Windows SDK のアロケーターには、割り当てデータをキャプチャできるように、ソース レベルで注釈が付けられています。  独自のアロケーターを作成する場合、新しく割り当てられたヒープ メモリへのポインターを返すすべての関数は、 [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(アロケーター) で修飾できます。myMalloc での例を次に示します。  
 >   
->  `__declspec(allocator) void* myMalloc(size_t size)`  
+> `__declspec(allocator) void* myMalloc(size_t size)`  
   
 ## <a name="analyze-memory-use-with-the-debugger"></a>デバッガーのメモリ使用量の分析  
   
 > [!NOTE]
->  メモリ データの収集はネイティブ アプリや混在モードのアプリのパフォーマンスに影響する可能性があるため、既定でメモリのスナップショットは無効になっています。 ネイティブ アプリや混在モードのアプリのスナップショットを有効にするには、デバッグ セッションを開始します (ショートカット キー: **F5**)。 **[診断ツール]** ウィンドウが表示されたら、[メモリ使用量] タブを選択し、 **[スナップショットを有効にする]** を選択します。  
+> メモリ データの収集はネイティブ アプリや混在モードのアプリのパフォーマンスに影響する可能性があるため、既定でメモリのスナップショットは無効になっています。 スナップショットのネイティブ モードまたは混在モードのアプリを有効にするには、デバッグ セッションを開始 (ショートカット キー。**F5**)。 **[診断ツール]** ウィンドウが表示されたら、[メモリ使用量] タブを選択し、 **[スナップショットを有効にする]** を選択します。  
 >   
->  ![スナップショットを有効にする](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+> ![スナップショットを有効にする](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
->  デバッグを停止 (ショートカット キー: **Shift キーを押しながら f5 キーを押して**) し、デバッグを再開します。  
+> デバッグを停止 (ショートカット キー: **Shift キーを押しながら f5 キーを押して**) し、デバッグを再開します。  
   
  メモリの状態をキャプチャする場合は常に、 **[メモリ使用量]** 概要ツールバーで **[スナップショットの取得]** を選択します。  
   
@@ -53,7 +53,7 @@ ms.locfileid: "54766112"
   
 > [!TIP]
 > - メモリ比較のベースラインを作成するには、デバッグ セッションの開始時に、スナップショットを取得することを検討します。  
->   -   アプリがメモリの割り当てと割り当て解除を頻繁に行う場合、目的とする操作のメモリ プロファイルを取得するのは容易ではないため、操作の最初と最後にブレークポイントを設定するか、操作をステップ実行して、メモリが変更される正確なポイントを見つけます。  
+>   - アプリがメモリの割り当てと割り当て解除を頻繁に行う場合、目的とする操作のメモリ プロファイルを取得するのは容易ではないため、操作の最初と最後にブレークポイントを設定するか、操作をステップ実行して、メモリが変更される正確なポイントを見つけます。  
   
 ## <a name="viewing-memory-snapshot-details"></a>メモリのスナップショットの詳細表示  
  メモリ使用量の概要テーブルの行には、デバッグ セッション中に取得したスナップショットが一覧表示されます。  
@@ -81,8 +81,7 @@ ms.locfileid: "54766112"
 ### <a name="managed-types-reports"></a>マネージド型レポート  
  メモリ使用量の概要テーブルで、 **[マネージド オブジェクト]** または **[マネージド ヒープ サイズ]** セルの現在のリンクを選択します。  
   
- 
-  ![デバッガーのマネージド型のレポート &#45; ルートへのパス](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
+ ![デバッガーのマネージド型のレポート &amp;#45; ルートへのパス](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
  上のウィンドウには、型で参照されているすべてのオブジェクトのサイズ (**包括サイズ**) を含む、スナップショット内の型の総数およびサイズが表示されます。  
   
@@ -105,13 +104,13 @@ ms.locfileid: "54766112"
   
  **[型ビュー]** には、スナップショットの型の数およびサイズが表示されます。  
   
--   選択した型のインスタンス アイコン (![[オブジェクト型] 列の [インスタンス] アイコン](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) を選択し、スナップショットの選択した型のオブジェクトに関する情報を表示します。  
+- 選択した型のインスタンス アイコン (![[オブジェクト型] 列の [インスタンス] アイコン](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) を選択し、スナップショットの選択した型のオブジェクトに関する情報を表示します。  
   
      **[インスタンス]** ビューには、選択した型の各インスタンスが表示されます。 インスタンスを選択すると呼び出し履歴が表示され、その結果、 **[割り当て呼び出し履歴]** ウィンドウにそのインスタンスが作成されます。  
   
      ![インスタンス ビュー](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
   
--   **[表示モード]** の一覧で **[スタック ビュー]** を選択し、選択した型の割り当て履歴を表示します。  
+- **[表示モード]** の一覧で **[スタック ビュー]** を選択し、選択した型の割り当て履歴を表示します。  
   
      ![スタック ビュー](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   
@@ -132,7 +131,7 @@ ms.locfileid: "54766112"
 ## <a name="blogs-and-videos"></a>ブログとビデオ  
  [Visual Studio 2015 の診断ツール [デバッガー] ウィンドウ](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
- [ ブログ Visual Studio 2015 のデバッグ中のメモリ使用量ツール](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
+ [ブログ:Visual Studio 2015 のデバッグ中のメモリ使用量ツール](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
   
  [Visual C++ ブログ:VS2015 プレビューでのネイティブ メモリ診断](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
   

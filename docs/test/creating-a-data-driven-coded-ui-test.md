@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: d6202a8287232c0226104be59bdab6a15fd00d95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785453"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>データ ドリブンのコード化された UI テストの作成
 
@@ -98,11 +98,11 @@ ms.locfileid: "56796661"
 
 ### <a name="step-2---create-a-data-set"></a>ステップ 2 - データ セットを作成する
 
-1.  dataDrivenSample プロジェクトにテキスト ファイルを追加し、その名前を「*data.csv*」にします。
+1. dataDrivenSample プロジェクトにテキスト ファイルを追加し、その名前を「*data.csv*」にします。
 
      ![コンマ区切り値ファイルをプロジェクトに追加](../test/media/cuit_datadriven_addcsvfile.png)
 
-2.  この *.csv* ファイルに次のデータを設定します。
+2. この *.csv* ファイルに次のデータを設定します。
 
     |Num1|Num2|Sum|
     |-|-|-|
@@ -114,9 +114,9 @@ ms.locfileid: "56796661"
 
      ![.csv ファイルにデータを設定](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3.  正しいエンコーディングを使用して *.csv* ファイルを保存することが重要です。 **[ファイル]** メニューで、**[保存オプションの詳細設定]** を選択し、エンコード方式として **[Unicode (UTF-8 シグネチャなし) - コードページ 65001]** を選択します。
+3. 正しいエンコーディングを使用して *.csv* ファイルを保存することが重要です。 **[ファイル]** メニューで、**[保存オプションの詳細設定]** を選択し、エンコード方式として **[Unicode (UTF-8 シグネチャなし) - コードページ 65001]** を選択します。
 
-4.  *.csv* ファイルは出力ディレクトリにコピーする必要があり、そのようにしないとテストを実行できません。 これをコピーするには、**[プロパティ]** ウィンドウを使用します。
+4. *.csv* ファイルは出力ディレクトリにコピーする必要があり、そのようにしないとテストを実行できません。 これをコピーするには、**[プロパティ]** ウィンドウを使用します。
 
      ![.csv ファイルの配置](../test/media/cuit_datadriven_deploycsvfile.png)
 
@@ -124,7 +124,7 @@ ms.locfileid: "56796661"
 
 ### <a name="step-3---add-data-source-binding"></a>ステップ 3 - データ ソース バインドを追加する
 
-1.  データ ソースをバインドするには、テスト メソッドのすぐ上にある既存の `DataSource` 属性内に `[TestMethod]` 属性を追加します。
+1. データ ソースをバインドするには、テスト メソッドのすぐ上にある既存の `DataSource` 属性内に `[TestMethod]` 属性を追加します。
 
     ```csharp
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
@@ -140,7 +140,7 @@ ms.locfileid: "56796661"
     > [!TIP]
     > XML、SQL Express、Excel など他の種類のデータ ソースを使用するサンプルについては、Q & A のセクションにある[データ ソース属性のサンプル](#CreateDataDrivenCUIT_QA_DataSourceAttributes)を参照してください。
 
-2.  テストを実行します。
+2. テストを実行します。
 
      テストは、3 つのイテレーションを実行することに注意してください。 これは、バインドされたデータ ソースに 3 行のデータが含まれているためです。 ただし、テストでは定数パラメーター値が引き続き使用され、毎回 3 の合計に 1 + 2 が加算されます。
 
@@ -179,19 +179,19 @@ ms.locfileid: "56796661"
 
      どの検索プロパティにデータをコーディングするかを確認するには、コード化された UI テスト エディターを使用します。
 
-    -   *UIMap.uitest* ファイルを開きます。
+    - *UIMap.uitest* ファイルを開きます。
 
          ![コード化された UI テスト エディターを開く](../test/media/cuit_datadriven_opentesteditor.png)
 
-    -   UI アクションを選択し、対応する UI コントロールのマップを確認します。 マップがどのようにコードに対応するかに注意します (たとえば、`this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`)。
+    - UI アクションを選択し、対応する UI コントロールのマップを確認します。 マップがどのようにコードに対応するかに注意します (たとえば、`this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`)。
 
          ![コーディング補助のためのコード化された UI テスト エディターの使用](../test/media/cuit_datadriven_testeditor.png)
 
-    -   **[プロパティ]** ウィンドウで、**[検索プロパティ]** を開きます。 検索プロパティ **[名前]** の値は、データ ソースを使用してコードで操作される対象です。 たとえば、`SearchProperties` には各データ行の最初の列の値 (`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`) が割り当てられます。 3 つのイテレーションのために、このテストでは検索プロパティの **[名前]** の値を 3、5、6 の順に変更します。
+    - **[プロパティ]** ウィンドウで、**[検索プロパティ]** を開きます。 検索プロパティ **[名前]** の値は、データ ソースを使用してコードで操作される対象です。 たとえば、`SearchProperties` には各データ行の最初の列の値 (`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`) が割り当てられます。 3 つのイテレーションのために、このテストでは検索プロパティの **[名前]** の値を 3、5、6 の順に変更します。
 
          ![コーディング補助のためのプロパティ検索の使用](../test/media/cuit_datadriven_searchproperties.png)
 
-3.  ソリューションを保存します。
+3. ソリューションを保存します。
 
 ### <a name="step-5---run-the-data-driven-test"></a>ステップ 5 - データ ドリブン テストを実行する
 
@@ -207,23 +207,23 @@ ms.locfileid: "56796661"
 
 **データ ソースの型と属性**
 
--   CSV
+- CSV
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]`
 
--   Excel
+- Excel
 
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`
 
--   Team Foundation Server でのテスト ケース
+- Team Foundation Server でのテスト ケース
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`
 
--   XML
+- XML
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\data.xml", "Iterations", DataAccessMethod.Sequential), DeploymentItem("data.xml"), TestMethod]`
 
--   SQL Express
+- SQL Express
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 

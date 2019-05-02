@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6860a91067daa6da1d4223ae5060385087ad3433
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967332"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties 要素
   SharePoint に配置されるときに、機能に含まれているプロパティ値のコレクション。 フィーチャーが配置されると、プロパティ値をコードでアクセスできます。
@@ -49,7 +49,7 @@ ms.locfileid: "58323530"
 |[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint プロジェクト項目を表します。 この要素の必須のルート要素の`.spdata`ファイル。|
 
 ## <a name="remarks"></a>Remarks
- 機能プロパティの詳細については、[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)を参照してください。
+ 機能プロパティの詳細については、次を参照してください。[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)します。
 
 ## <a name="element-information"></a>要素情報
 

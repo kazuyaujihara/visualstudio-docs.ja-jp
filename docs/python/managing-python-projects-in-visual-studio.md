@@ -3,19 +3,19 @@ title: Python アプリケーション プロジェクトの管理
 description: Visual Studio のプロジェクトでは、ファイル間の依存関係とアプリケーションの関係の複雑さが管理されます。
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 61d37adfdc74a5b2a9c22ba9f3e5a92622cbbab6
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 2ee3b0d82251d01e8ede22be238dc1bca5a4e092
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536338"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio の Python プロジェクト
 

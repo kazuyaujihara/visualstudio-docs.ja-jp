@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36824d78b2a4da68586b4ff3b39046bff936ff7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d94058f1f14f1da644cff672d73cd77e0840c68
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006804"
 ---
 # <a name="item-element-msbuild"></a>Item 要素 (MSBuild)
 ユーザー定義のアイテムおよびそのメタデータが含まれます。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクトで使用されるすべてのアイテムが、`ItemGroup` 要素の子として指定されている必要があります。
@@ -107,6 +107,7 @@ MSBuild 15.1 以降では、現行の属性リストと競合しない名前の�
     </CSFile>
 </ItemGroup>
 ```
+
 次のコード サンプルは、`Update` 属性を利用し、glob 経由で追加された *somefile.cs* という名前のファイルのメタデータを修正する方法を示しています。 (Visual Studio 2017 以降の .NET Core プロジェクトでのみ利用できます。)
 
 ```xml

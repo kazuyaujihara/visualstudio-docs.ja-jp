@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a1be63ddbb7b040e7efe5ce5ee6876c4bf77cb36
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cfb85be224eadb25b2ec9b87ab480a15f235463f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538123"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>エラー :リモート コンピューターは DCOM 通信を初期化できませんでした
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ ms.locfileid: "58974681"
   
  Visual Studio を実行しているコンピューターです。 このエラーが発生する原因は複数あります。  
   
--   ローカル マシンのファイアウォールが有効になっていない。  
+- ローカル マシンのファイアウォールが有効になっていない。  
   
--   リモート マシンからローカル マシンへの Windows 認証が機能していない。  
+- リモート マシンからローカル マシンへの Windows 認証が機能していない。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-1.  ローカル コンピューターの Windows ファイアウォールが有効にされている場合は、次を参照してください。[設定 Up the Remote Tools のデバイスで](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)ローカル デバッグのファイアウォールを構成する方法についてはします。  
+1. ローカル コンピューターの Windows ファイアウォールが有効にされている場合は、次を参照してください。[設定 Up the Remote Tools のデバイスで](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)ローカル デバッグのファイアウォールを構成する方法についてはします。  
   
-2.  リモート サーバーからローカル コンピューターのファイル共有を開いてみて Windows 認証をテストします。  
+2. リモート サーバーからローカル コンピューターのファイル共有を開いてみて Windows 認証をテストします。  
   
-3.  Windows 認証を復元するために、両方のコンピューターを再起動してみます。 Kerberos エラーがないかどうかローカル コンピューターとリモート コンピューターのイベント ログを確認し、既知の問題がないかどうかドメイン管理者に問い合わせてください。  
+3. Windows 認証を復元するために、両方のコンピューターを再起動してみます。 Kerberos エラーがないかどうかローカル コンピューターとリモート コンピューターのイベント ログを確認し、既知の問題がないかどうかドメイン管理者に問い合わせてください。  
   
 ## <a name="see-also"></a>関連項目  
  [デバイスのリモート ツールのセットアップ](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

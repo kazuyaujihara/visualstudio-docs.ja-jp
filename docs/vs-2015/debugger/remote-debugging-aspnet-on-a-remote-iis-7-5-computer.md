@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c43f392cddfd5ea36180d9b2675db82469f86ce0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446080"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>ASP.NET のリモート IIS コンピューター上でリモート デバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ASP.NET アプリケーションのリモート デバッグを行うには、�
 1. ASP.NET プロジェクト ディレクトリを Visual Studio コンピューターから Windows Server コンピューター上のローカル ディレクトリ (ここでは、 **C:\Publish**と呼びます) にコピーします。 プロジェクトを手動でコピー、Xcopy、Web Deploy、Robocopy、Powershell、またはその他のオプションを使用できます。
 
     > [!CAUTION]
-    >  コードまたは再構築を変更する必要がある場合を再発行し、この手順を繰り返す必要があります。 リモート コンピューターにコピーした実行可能ファイルは、ローカルのソースとシンボルに正確に一致している必要があります。
+    > コードまたは再構築を変更する必要がある場合を再発行し、この手順を繰り返す必要があります。 リモート コンピューターにコピーした実行可能ファイルは、ローカルのソースとシンボルに正確に一致している必要があります。
 1. web.config ファイルに .NET Framework の正しいバージョンが示されていることを確認します。  たとえば、既定では Windows Server 2008 R2 にインストールされている .NET Framework バージョン 4.0.30319 が ASP.NET 4.5.2 を作成したバージョン。 ASP.NET 4.0 アプリケーションが Windows Server コンピューターで実行している場合は、バージョンを変更する必要があります。
   
     ```xml
@@ -74,6 +74,7 @@ ASP.NET アプリケーションのリモート デバッグを行うには、�
       </system.web>
   
     ```
+
 1. **インターネット インフォメーション サービス (IIS) マネージャー** を開き、 **[サイト]** に移動します。
 1. **[既定の Web サイト]** ノードを右クリックして、 **[アプリケーションの追加]** を選択します。
 1. 設定、**エイリアス**フィールドを**MyMVC**と、アプリケーション プール フィールドを**ASP.NET v4.0** (ASP.NET 4.5 は、アプリケーション プールのオプションではありません)。 **[物理パス]** を「 **C:\Publish** 」 (ASP.NET プロジェクト ディレクトリをコピーしたディレクトリ) に設定します。

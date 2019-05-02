@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d84dc8aed00cf037efc8b35efa13fa712092c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 58691d5c6a7f44361d40a50898395ed1200a06c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817637"
 ---
 # <a name="link-task"></a>Link タスク
 Visual C++ リンカー ツール (*link.exe*) をラップします。 リンカー ツールは、COFF (Common Object File Format) オブジェクト ファイルとライブラリをリンクし、実行可能ファイル (*.exe*) やダイナミック リンク ライブラリ (DLL) を生成します。 詳細については、「[リンカー オプション](/cpp/build/reference/linker-options)」を参照してください。
@@ -43,7 +43,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 ## <a name="parameters"></a>パラメーター
  次には、**Link** タスクのパラメーターを説明します。 タスク パラメーターの大部分とパラメーターのいくつかのセットは、コマンド ライン オプションに対応します。
 
--   **AdditionalDependencies**
+- **AdditionalDependencies**
 
      省略可能な **String[]** 型のパラメーターです。
 
@@ -51,7 +51,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[LINK 入力ファイル](/cpp/build/reference/link-input-files)」を参照してください。
 
--   **AdditionalLibraryDirectories**
+- **AdditionalLibraryDirectories**
 
      省略可能な **String[]** 型のパラメーターです。
 
@@ -59,7 +59,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/LIBPATH (追加ライブラリのパス)](/cpp/build/reference/libpath-additional-libpath)」を参照してください。
 
--   **AdditionalManifestDependencies**
+- **AdditionalManifestDependencies**
 
      省略可能な **String[]** 型のパラメーターです。
 
@@ -67,7 +67,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/MANIFESTDEPENDENCY (マニフェストの依存関係を指定する)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)」を参照してください。 「[Publisher configuration files](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files)」(パブリッシャー構成ファイル) も参照してください。
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -75,7 +75,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[リンカー オプション](/cpp/build/reference/linker-options)」を参照してください。
 
--   **AddModuleNamesToAssembly**
+- **AddModuleNamesToAssembly**
 
      省略可能な **String[]** 型のパラメーターです。
 
@@ -83,7 +83,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/ASSEMBLYMODULE (MSIL モジュールのアセンブリへの追加)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly)」を参照してください。
 
--   **AllowIsolation**
+- **AllowIsolation**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -91,7 +91,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/ALLOWISOLATION (マニフェスト検索)](/cpp/build/reference/allowisolation-manifest-lookup)」を参照してください。
 
--   **AssemblyDebug**
+- **AssemblyDebug**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -99,7 +99,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/ASSEMBLYDEBUG (DebuggableAttribute の追加)](/cpp/build/reference/assemblydebug-add-debuggableattribute)」を参照してください。
 
--   **AssemblyLinkResource**
+- **AssemblyLinkResource**
 
      省略可能な **String[]** 型のパラメーターです。
 
@@ -107,13 +107,13 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/ASSEMBLYLINKRESOURCE (.NET Framework リソースへのリンク)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource)」を参照してください。
 
--   **AttributeFileTracking**
+- **AttributeFileTracking**
 
      暗黙的な**ブール値**のパラメーターです。
 
      詳細なファイル追跡でリンク インクリメンタルの動作をキャプチャできるようにします。 常に `true` を返します。
 
--   **BaseAddress**
+- **BaseAddress**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -121,7 +121,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/BASE (ベース アドレス)](/cpp/build/reference/base-base-address)」を参照してください。
 
--   **BuildingInIDE**
+- **BuildingInIDE**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -129,7 +129,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      このパラメーターに相当するリンカー オプションはありません。
 
--   **CLRImageType**
+- **CLRImageType**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -137,17 +137,17 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      次のいずれかの値を指定します。各値はリンカー オプションに対応しています。
 
-    -   **Default** - *\<none>*
+    - **Default** - *\<none>*
 
-    -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
+    - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
 
-    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
+    - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
 
-    -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
+    - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
 
     詳細については、「[/CLRIMAGETYPE (CLR イメージのタイプの指定)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image)」を参照してください。
 
--   **CLRSupportLastError**
+- **CLRSupportLastError**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -155,15 +155,15 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      次のいずれかの値を指定します。各値はリンカー オプションに対応しています。
 
-    -   **Enabled** - **/CLRSupportLastError**
+    - **Enabled** - **/CLRSupportLastError**
 
-    -   **Disabled** - **/CLRSupportLastError:NO**
+    - **Disabled** - **/CLRSupportLastError:NO**
 
-    -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
+    - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
 
     詳細については、「[/CLRSUPPORTLASTERROR (PInvoke 呼び出しの最終エラー コードの保持)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls)」を参照してください。
 
--   **CLRThreadAttribute**
+- **CLRThreadAttribute**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -171,15 +171,15 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      次のいずれかの値を指定します。各値はリンカー オプションに対応しています。
 
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
+    - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
 
-    -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
+    - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
 
-    -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
+    - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
 
     詳細については、「[/CLRTHREADATTRIBUTE (CLR スレッド属性の設定)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute)」を参照してください。
 
--   **CLRUnmanagedCodeCheck**
+- **CLRUnmanagedCodeCheck**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -187,7 +187,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
     詳細については、「[/CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute の追加)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute)」を参照してください。
 
--   **CreateHotPatchableImage**
+- **CreateHotPatchableImage**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -195,17 +195,17 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      次のいずれかの値を指定します。値はリンカー オプションに対応しています。
 
-    -   **Enabled** - **/FUNCTIONPADMIN**
+    - **Enabled** - **/FUNCTIONPADMIN**
 
-    -   **X86Image** - **/FUNCTIONPADMIN:5**
+    - **X86Image** - **/FUNCTIONPADMIN:5**
 
-    -   **X64Image** - **/FUNCTIONPADMIN:6**
+    - **X64Image** - **/FUNCTIONPADMIN:6**
 
-    -   **ItaniumImage** - **/FUNCTIONPADMIN:16**
+    - **ItaniumImage** - **/FUNCTIONPADMIN:16**
 
     詳細については、「[/FUNCTIONPADMIN (ホットパッチ可能なイメージの作成)](/cpp/build/reference/functionpadmin-create-hotpatchable-image)」を参照してください。
 
--   **DataExecutionPrevention**
+- **DataExecutionPrevention**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -213,7 +213,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/NXCOMPAT (データ実行防止との互換性)](/cpp/build/reference/nxcompat-compatible-with-data-execution-prevention)」を参照してください。
 
--   **DelayLoadDLLs**
+- **DelayLoadDLLs**
 
      省略可能な **String[]** 型のパラメーターです。
 
@@ -221,7 +221,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/DELAYLOAD (遅延読み込みのインポート)](/cpp/build/reference/delayload-delay-load-import)」を参照してください。
 
--   **DelaySign**
+- **DelaySign**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -229,7 +229,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/DELAYSIGN (アセンブリの部分署名)](/cpp/build/reference/delaysign-partially-sign-an-assembly)」を参照してください。
 
--   **Driver**
+- **Driver**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -237,17 +237,17 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      次のいずれかの値を指定します。各値はリンカー オプションに対応しています。
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Driver** - **/Driver**
+    - **Driver** - **/Driver**
 
-    -   **UpOnly** - **/DRIVER:UPONLY**
+    - **UpOnly** - **/DRIVER:UPONLY**
 
-    -   **WDM** - **/DRIVER:WDM**
+    - **WDM** - **/DRIVER:WDM**
 
     詳細については、「[/DRIVER (Windows NT カーネル モード ドライバー)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver)」を参照してください。
 
--   **EmbedManagedResourceFile**
+- **EmbedManagedResourceFile**
 
      省略可能な **String[]** 型のパラメーターです。
 
@@ -255,7 +255,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/ASSEMBLYRESOURCE (マネージド リソースの埋め込み)](/cpp/build/reference/assemblyresource-embed-a-managed-resource)」を参照してください。
 
--   **EnableCOMDATFolding**
+- **EnableCOMDATFolding**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -263,7 +263,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/OPT (最適化)](/cpp/build/reference/opt-optimizations)」の `ICF[= iterations]` 引数を参照してください。
 
--   **EnableUAC**
+- **EnableUAC**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -271,7 +271,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/MANIFESTUAC (UAC 情報をマニフェストに組み込む)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest)」を参照してください。
 
--   **EntryPointSymbol**
+- **EntryPointSymbol**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -279,7 +279,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/ENTRY (エントリ ポイント シンボル)](/cpp/build/reference/entry-entry-point-symbol)」を参照してください。
 
--   **FixedBaseAddress**
+- **FixedBaseAddress**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -287,7 +287,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/FIXED (固定ベース アドレス)](/cpp/build/reference/fixed-fixed-base-address)」を参照してください。
 
--   **ForceFileOutput**
+- **ForceFileOutput**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -295,15 +295,15 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    -   **Enabled** - **/FORCE**
+    - **Enabled** - **/FORCE**
 
-    -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
+    - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
 
-    -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
+    - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
 
     詳細については、「[/FORCE (ファイルを強制的に出力)](/cpp/build/reference/force-force-file-output)」を参照してください。
 
--   **ForceSymbolReferences**
+- **ForceSymbolReferences**
 
      省略可能な **String[]** 型のパラメーターです。
 
@@ -311,7 +311,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/INCLUDE (シンボル参照の強制)](/cpp/build/reference/include-force-symbol-references)」を参照してください。
 
--   **FunctionOrder**
+- **FunctionOrder**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -319,7 +319,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/ORDER (関数の順序)](/cpp/build/reference/order-put-functions-in-order)」を参照してください。
 
--   **GenerateDebugInformation**
+- **GenerateDebugInformation**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -327,7 +327,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/DEBUG (デバッグ情報の生成)](/cpp/build/reference/debug-generate-debug-info)」を参照してください。
 
--   **GenerateManifest**
+- **GenerateManifest**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -335,7 +335,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/MANIFEST (side-by-side アセンブリ マニフェストを作成する)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest)」を参照してください。
 
--   **GenerateMapFile**
+- **GenerateMapFile**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -343,7 +343,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/MAP (マップ ファイルの生成)](/cpp/build/reference/map-generate-mapfile)」を参照してください。
 
--   **HeapCommitSize**
+- **HeapCommitSize**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -351,7 +351,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/HEAP (ヒープ サイズの設定)](/cpp/build/reference/heap-set-heap-size)」の `commit` 引数を参照してください。 **HeapReserveSize** パラメーターも参照してください。
 
--   **HeapReserveSize**
+- **HeapReserveSize**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -359,7 +359,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/HEAP (ヒープ サイズの設定)](/cpp/build/reference/heap-set-heap-size)」の `reserve` 引数を参照してください。 この表にある **HeapCommitSize** パラメーターも参照してください。
 
--   **IgnoreAllDefaultLibraries**
+- **IgnoreAllDefaultLibraries**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -367,7 +367,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/NODEFAULTLIB (ライブラリを無視する)](/cpp/build/reference/nodefaultlib-ignore-libraries)」を参照してください。
 
--   **IgnoreEmbeddedIDL**
+- **IgnoreEmbeddedIDL**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -375,7 +375,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/IGNOREIDL (属性を MIDL に挿入しない)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl)」を参照してください。
 
--   **IgnoreImportLibrary**
+- **IgnoreImportLibrary**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -383,7 +383,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      このパラメーターは、リンカー オプションに対応していません。
 
--   **IgnoreSpecificDefaultLibraries**
+- **IgnoreSpecificDefaultLibraries**
 
      省略可能な **String[]** 型のパラメーターです。
 
@@ -391,7 +391,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/NODEFAULTLIB (ライブラリを無視する)](/cpp/build/reference/nodefaultlib-ignore-libraries)」を参照してください。
 
--   **ImageHasSafeExceptionHandlers**
+- **ImageHasSafeExceptionHandlers**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -399,13 +399,13 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/SAFESEH (安全な例外ハンドラーがあるイメージ)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers)」を参照してください。
 
--   **ImportLibrary**
+- **ImportLibrary**
 
      既定のライブラリ名と置き換わるユーザー指定のインポート ライブラリの名前です。
 
      詳細については、「[/IMPLIB (インポート ライブラリ名の設定)](/cpp/build/reference/implib-name-import-library)」を参照してください。
 
--   **KeyContainer**
+- **KeyContainer**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -413,7 +413,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/KEYCONTAINER (アセンブリに署名するためのキー コンテナーの指定)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly)」を参照してください。 この表にある **KeyFile** パラメーターも参照してください。
 
--   **KeyFile**
+- **KeyFile**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -421,7 +421,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/KEYFILE (アセンブリに署名するためのキーまたはキー ペアの指定)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)」を参照してください。 **KeyContainer** パラメーターも参照してください。
 
--   **LargeAddressAware**
+- **LargeAddressAware**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -429,7 +429,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/LARGEADDRESSAWARE (大きいアドレスの処理)](/cpp/build/reference/largeaddressaware-handle-large-addresses)」を参照してください。
 
--   **LinkDLL**
+- **LinkDLL**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -437,7 +437,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/DLL (DLL のビルド)](/cpp/build/reference/dll-build-a-dll)」を参照してください。
 
--   **LinkErrorReporting**
+- **LinkErrorReporting**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -445,17 +445,17 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    -   **NoErrorReport** - **/ERRORREPORT:NONE**
+    - **NoErrorReport** - **/ERRORREPORT:NONE**
 
-    -   **PromptImmediately** - **/ERRORREPORT:PROMPT**
+    - **PromptImmediately** - **/ERRORREPORT:PROMPT**
 
-    -   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
+    - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
 
-    -   **SendErrorReport** - **/ERRORREPORT:SEND**
+    - **SendErrorReport** - **/ERRORREPORT:SEND**
 
     詳細については、「[/ERRORREPORT (内部リンカー エラーの報告)](/cpp/build/reference/errorreport-report-internal-linker-errors)」を参照してください。
 
--   **LinkIncremental**
+- **LinkIncremental**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -463,7 +463,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/INCREMENTAL (インクリメンタル リンクを行う)](/cpp/build/reference/incremental-link-incrementally)」を参照してください。
 
--   **LinkLibraryDependencies**
+- **LinkLibraryDependencies**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -471,7 +471,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      このパラメーターは、リンカー オプションに対応していません。
 
--   **LinkStatus**
+- **LinkStatus**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -479,7 +479,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/LTCG (リンク時のコード生成)](/cpp/build/reference/ltcg-link-time-code-generation)」の `STATUS` 引数を参照してください。
 
--   **LinkTimeCodeGeneration**
+- **LinkTimeCodeGeneration**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -487,21 +487,21 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    -   **Default** - *\<none>*
+    - **Default** - *\<none>*
 
-    -   **UseLinkTimeCodeGeneration** - **/LTCG**
+    - **UseLinkTimeCodeGeneration** - **/LTCG**
 
-    -   **PGInstrument** - **/LTCG:PGInstrument**
+    - **PGInstrument** - **/LTCG:PGInstrument**
 
-    -   **PGOptimization** - **/LTCG:PGOptimize**
+    - **PGOptimization** - **/LTCG:PGOptimize**
 
-    -   **PGUpdate**
+    - **PGUpdate**
 
          \- **/LTCG:PGUpdate**
 
     詳細については、「[/LTCG (リンク時のコード生成)](/cpp/build/reference/ltcg-link-time-code-generation)」を参照してください。
 
--   **ManifestFile**
+- **ManifestFile**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -509,7 +509,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/MANIFESTFILE (マニフェスト ファイルに名前を付ける)](/cpp/build/reference/manifestfile-name-manifest-file)」を参照してください。
 
--   **MapExports**
+- **MapExports**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -517,13 +517,13 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/MAPINFO (マップ ファイルに含める情報)](/cpp/build/reference/mapinfo-include-information-in-mapfile)」の `EXPORTS` 引数を参照してください。
 
--   **MapFileName**
+- **MapFileName**
 
      省略可能な **String** 型のパラメーターです。
 
      既定のマップ ファイル名を、指定されたファイル名に変更します。
 
--   **MergedIDLBaseFileName**
+- **MergedIDLBaseFileName**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -531,7 +531,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/IDLOUT (MIDL 出力ファイルの指定)](/cpp/build/reference/idlout-name-midl-output-files)」を参照してください。
 
--   **MergeSections**
+- **MergeSections**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -539,7 +539,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/MERGE (セクションの結合)](/cpp/build/reference/merge-combine-sections)」を参照してください。
 
--   **MidlCommandFile**
+- **MidlCommandFile**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -547,13 +547,13 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/MIDL (MIDL コマンド ライン オプションの指定)](/cpp/build/reference/midl-specify-midl-command-line-options)」を参照してください。
 
--   **MinimumRequiredVersion**
+- **MinimumRequiredVersion**
 
      省略可能な **String** 型のパラメーターです。
 
      サブシステムの最低限必要なバージョンを指定します。 引数には、0 から 65535 までの範囲の 10 進数を指定します。
 
--   **ModuleDefinitionFile**
+- **ModuleDefinitionFile**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -561,7 +561,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/DEF (モジュール定義ファイルの指定)](/cpp/build/reference/def-specify-module-definition-file)」を参照してください。
 
--   **MSDOSStubFileName**
+- **MSDOSStubFileName**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -569,7 +569,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/STUB (MS-DOS スタブ ファイル名)](/cpp/build/reference/stub-ms-dos-stub-file-name)」を参照してください。
 
--   **NoEntryPoint**
+- **NoEntryPoint**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -577,13 +577,13 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/NOENTRY (エントリ ポイントなし)](/cpp/build/reference/noentry-no-entry-point)」を参照してください。
 
--   **ObjectFiles**
+- **ObjectFiles**
 
      暗黙的な **String[]** 型のパラメーターです。
 
      リンクされるオブジェクト ファイルを指定します。
 
--   **OptimizeReferences**
+- **OptimizeReferences**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -591,7 +591,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/OPT (最適化)](/cpp/build/reference/opt-optimizations)」の `REF` 引数を参照してください。
 
--   **OutputFile**
+- **OutputFile**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -599,19 +599,19 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/OUT (出力ファイル名)](/cpp/build/reference/out-output-file-name)」を参照してください。
 
--   **PerUserRedirection**
+- **PerUserRedirection**
 
      省略可能な **Boolean** 型のパラメーターです。
 
      `true` の場合、出力の登録が有効になっていれば、**HKEY_CLASSES_ROOT** へのレジストリ書き込みは強制的に **HKEY_CURRENT_USER** にリダイレクトされます。
 
--   **PreprocessOutput**
+- **PreprocessOutput**
 
      省略可能な `ITaskItem[]` 型のパラメーターです。
 
      タスクで使用および生成できるプリプロセッサ出力項目の配列を定義します。
 
--   **PreventDllBinding**
+- **PreventDllBinding**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -619,7 +619,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/ALLOWBIND (DLL をバインドしない)](/cpp/build/reference/allowbind-prevent-dll-binding)」を参照してください。
 
--   **Profile**
+- **Profile**
 
      省略可能な**ブール値**のパラメーターです。
 
@@ -627,7 +627,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/PROFILE (パフォーマンス ツール プロファイラー)](/cpp/build/reference/profile-performance-tools-profiler)」を参照してください。
 
--   **ProfileGuidedDatabase**
+- **ProfileGuidedDatabase**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -635,7 +635,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/PGD (ガイド付き最適化のプロファイル用のデータベースの指定)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations)」を参照してください。
 
--   **ProgramDatabaseFile**
+- **ProgramDatabaseFile**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -643,7 +643,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/PDB (プログラム データベースの使用)](/cpp/build/reference/pdb-use-program-database)」を参照してください。
 
--   **RandomizedBaseAddress**
+- **RandomizedBaseAddress**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -651,13 +651,13 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/DYNAMICBASE (ASLR (Address Space Layout Randomization) の使用)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization)」を参照してください。
 
--   **RegisterOutput**
+- **RegisterOutput**
 
      省略可能な **Boolean** 型のパラメーターです。
 
      `true` の場合は、このビルドのプライマリ出力を登録します。
 
--   **SectionAlignment**
+- **SectionAlignment**
 
      省略可能な **Integer** 型のパラメーターです。
 
@@ -665,7 +665,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/ALIGN (セクションの配置)](/cpp/build/reference/align-section-alignment)」を参照してください。
 
--   **SetChecksum**
+- **SetChecksum**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -673,7 +673,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/RELEASE (チェックサムの設定)](/cpp/build/reference/release-set-the-checksum)」を参照してください。
 
--   **ShowProgress**
+- **ShowProgress**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -681,29 +681,29 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **LinkVerbose** - **/VERBOSE**
+    - **LinkVerbose** - **/VERBOSE**
 
-    -   **LinkVerboseLib** - **/VERBOSE:Lib**
+    - **LinkVerboseLib** - **/VERBOSE:Lib**
 
-    -   **LinkVerboseICF** - **/VERBOSE:ICF**
+    - **LinkVerboseICF** - **/VERBOSE:ICF**
 
-    -   **LinkVerboseREF** - **/VERBOSE:REF**
+    - **LinkVerboseREF** - **/VERBOSE:REF**
 
-    -   **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
+    - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
 
-    -   **LinkVerboseCLR** - **/VERBOSE:CLR**
+    - **LinkVerboseCLR** - **/VERBOSE:CLR**
 
     詳細については、「[/VERBOSE (進行状況メッセージの出力)](/cpp/build/reference/verbose-print-progress-messages)」を参照してください。
 
--   **Sources**
+- **Sources**
 
      必須の `ITaskItem[]` 型のパラメーターです。
 
      タスクで使用および生成できる MSBuild ソース ファイル アイテムの配列を定義します。
 
--   **SpecifySectionAttributes**
+- **SpecifySectionAttributes**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -711,7 +711,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/SECTION (セクション属性の指定)](/cpp/build/reference/section-specify-section-attributes)」を参照してください。
 
--   **StackCommitSize**
+- **StackCommitSize**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -719,7 +719,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/STACK (スタック割り当て)](/cpp/build/reference/stack-stack-allocations)」の `commit` 引数を参照してください。
 
--   **StackReserveSize**
+- **StackReserveSize**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -727,7 +727,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/STACK (スタック割り当て)](/cpp/build/reference/stack-stack-allocations)」の `reserve` 引数を参照してください。
 
--   **StripPrivateSymbols**
+- **StripPrivateSymbols**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -735,7 +735,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/PDBSTRIPPED (プライベート シンボルの除去)](/cpp/build/reference/pdbstripped-strip-private-symbols)」を参照してください。
 
--   **SubSystem**
+- **SubSystem**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -743,29 +743,29 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **コンソール** - **/SUBSYSTEM:CONSOLE**
+    - **コンソール** - **/SUBSYSTEM:CONSOLE**
 
-    -   **Windows** - **/SUBSYSTEM:WINDOWS**
+    - **Windows** - **/SUBSYSTEM:WINDOWS**
 
-    -   **ネイティブ** - **/SUBSYSTEM:NATIVE**
+    - **ネイティブ** - **/SUBSYSTEM:NATIVE**
 
-    -   **EFI アプリケーション** - **/SUBSYSTEM:EFI_APPLICATION**
+    - **EFI アプリケーション** - **/SUBSYSTEM:EFI_APPLICATION**
 
-    -   **EFI ブート サービス ドライバー** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+    - **EFI ブート サービス ドライバー** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
 
-    -   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
+    - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
 
-    -   **EFI ランタイム** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
+    - **EFI ランタイム** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
 
-    -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
+    - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
 
-    -   **POSIX** - **/SUBSYSTEM:POSIX**
+    - **POSIX** - **/SUBSYSTEM:POSIX**
 
     詳細については、「[/SUBSYSTEM (サブシステムの指定)](/cpp/build/reference/subsystem-specify-subsystem)」を参照してください。
 
--   **SupportNobindOfDelayLoadedDLL**
+- **SupportNobindOfDelayLoadedDLL**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -773,7 +773,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/DELAY (遅延読み込みのインポート設定)](/cpp/build/reference/delay-delay-load-import-settings)」の `NOBIND` 引数を参照してください。
 
--   **SupportUnloadOfDelayLoadedDLL**
+- **SupportUnloadOfDelayLoadedDLL**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -781,7 +781,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/DELAY (遅延読み込みのインポート設定)](/cpp/build/reference/delay-delay-load-import-settings)」の `UNLOAD` 引数を参照してください。
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -789,7 +789,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/NOLOGO (著作権情報の非表示) (リンカー)](/cpp/build/reference/nologo-suppress-startup-banner-linker)」を参照してください。
 
--   **SwapRunFromCD**
+- **SwapRunFromCD**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -797,7 +797,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/SWAPRUN (リンカー出力をスワップ ファイルに読み込む)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file)」の `CD` 引数を参照してください。 **SwapRunFromNET** パラメーターも参照してください。
 
--   **SwapRunFromNET**
+- **SwapRunFromNET**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -805,7 +805,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/SWAPRUN (リンカー出力をスワップ ファイルに読み込む)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file)」の `NET` 引数を参照してください。 この表にある **SwapRunFromCD** パラメーターも参照してください。
 
--   **TargetMachine**
+- **TargetMachine**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -813,33 +813,33 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **MachineARM** - **/MACHINE:ARM**
+    - **MachineARM** - **/MACHINE:ARM**
 
-    -   **MachineEBC** - **/MACHINE:EBC**
+    - **MachineEBC** - **/MACHINE:EBC**
 
-    -   **MachineIA64** - **/MACHINE:IA64**
+    - **MachineIA64** - **/MACHINE:IA64**
 
-    -   **MachineMIPS** - **/MACHINE:MIPS**
+    - **MachineMIPS** - **/MACHINE:MIPS**
 
-    -   **MachineMIPS16** - **/MACHINE:MIPS16**
+    - **MachineMIPS16** - **/MACHINE:MIPS16**
 
-    -   **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
+    - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
 
-    -   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
+    - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
 
-    -   **MachineSH4** - **/MACHINE:SH4**
+    - **MachineSH4** - **/MACHINE:SH4**
 
-    -   **MachineTHUMB** - **/MACHINE:THUMB**
+    - **MachineTHUMB** - **/MACHINE:THUMB**
 
-    -   **MachineX64** - **/MACHINE:X64**
+    - **MachineX64** - **/MACHINE:X64**
 
-    -   **MachineX86** - **/MACHINE:X86**
+    - **MachineX86** - **/MACHINE:X86**
 
     詳細については、「[/MACHINE (ターゲット プラットフォームの指定)](/cpp/build/reference/machine-specify-target-platform)」を参照してください。
 
--   **TerminalServerAware**
+- **TerminalServerAware**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -847,13 +847,13 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/TSAWARE (ターミナル サーバーに対応したアプリケーションの作成)](/cpp/build/reference/tsaware-create-terminal-server-aware-application)」を参照してください。
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      省略可能な **String** 型のパラメーターです。
 
      トラッカー ログのディレクトリを指定します。
 
--   **TreatLinkerWarningAsErrors**
+- **TreatLinkerWarningAsErrors**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -861,7 +861,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/WX (リンカー警告をエラーとして扱う)](/cpp/build/reference/wx-treat-linker-warnings-as-errors)」を参照してください。
 
--   **TurnOffAssemblyGeneration**
+- **TurnOffAssemblyGeneration**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -869,7 +869,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/NOASSEMBLY (MSIL モジュールの作成)](/cpp/build/reference/noassembly-create-a-msil-module)」を参照してください。
 
--   **TypeLibraryFile**
+- **TypeLibraryFile**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -877,7 +877,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/TLBOUT (.tlb ファイル名の指定)](/cpp/build/reference/tlbout-name-dot-tlb-file)」を参照してください。
 
--   **TypeLibraryResourceID**
+- **TypeLibraryResourceID**
 
      省略可能な **Integer** 型のパラメーターです。
 
@@ -885,7 +885,7 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/TLBID (TypeLib のリソース ID の指定)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib)」を参照してください。
 
--   **UACExecutionLevel**
+- **UACExecutionLevel**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -893,15 +893,15 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
-    -   **AsInvoker** - `level='asInvoker'`
+    - **AsInvoker** - `level='asInvoker'`
 
-    -   **HighestAvailable** - `level='highestAvailable'`
+    - **HighestAvailable** - `level='highestAvailable'`
 
-    -   **RequireAdministrator** - `level='requireAdministrator'`
+    - **RequireAdministrator** - `level='requireAdministrator'`
 
     詳細については、「[/MANIFESTUAC (UAC 情報をマニフェストに組み込む)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest)」の `level` 引数を参照してください。
 
--   **UACUIAccess**
+- **UACUIAccess**
 
      省略可能な **Boolean** 型のパラメーターです。
 
@@ -909,13 +909,13 @@ Visual C++ リンカー ツール (*link.exe*) をラップします。 リン�
 
      詳細については、「[/MANIFESTUAC (UAC 情報をマニフェストに組み込む)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest)」の `uiAccess` 引数を参照してください。
 
--   **UseLibraryDependencyInputs**
+- **UseLibraryDependencyInputs**
 
      省略可能な **Boolean** 型のパラメーターです。
 
      `true` の場合、プロジェクト依存関係のライブラリ出力にリンクされる時に、ライブラリ ファイル自体ではなく、ライブラリアン ツールへの入力が使用されます。
 
--   **Version**
+- **Version**
 
      省略可能な **String** 型のパラメーターです。
 

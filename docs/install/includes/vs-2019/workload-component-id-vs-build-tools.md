@@ -5,16 +5,16 @@ description: Visual Studio のワークロード ID とコンポーネント ID 
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/01/2019
+ms.date: 04/02/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: f74b014efff346993dbebb1b605e8f6f194f1502
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 333ecaa39fb0f3ea736b2b2a3efc6980b1ff8d87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968431"
 ---
 ## <a name="azure-development-build-tools"></a>Azure 開発ビルド ツール
 
@@ -76,7 +76,7 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開発ツール | 16.0.28516.191 | 推奨
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 推奨
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 推奨
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# および Visual Basic | 16.0.28625.61 | 推奨
 Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server Data Tools - ビルド ツール | 16.0.28315.86 | 推奨
 
@@ -94,7 +94,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必須
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 16.0.28517.75 | 必須
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | 必須
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet ターゲットとビルド タスク | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce ビルド ツール | 16.0.28625.61 | 推奨
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 Targeting Pack | 16.0.28517.75 | 推奨
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 Targeting Pack | 16.0.28517.75 | 推奨
@@ -131,7 +131,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# コンパイラ | 16.0.2852
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必須
 Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools のコア | 16.0.28315.86 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 
 ## <a name="net-core-build-tools"></a>.NET Core ビルド ツール
 
@@ -181,7 +181,7 @@ Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 Targeting Pack | 16.0
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開発ツール | 16.0.28516.191 | 必須
 Microsoft.VisualStudio.Component.NuGet | NuGet パッケージ マネージャー | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet ターゲットとビルド タスク | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Office/SharePoint 開発ビルド ツール | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.Workflow.BuildTools | Windows Workflow Foundation ビルド ツール | 16.0.28315.86 | 必須
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Windows Communication Foundation のビルド ツール | 16.0.28516.191 | 必須
@@ -216,7 +216,7 @@ Microsoft.Component.VC.Runtime.OSSupport | v142 ビルド ツールの C++ ユ�
 Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 16.0.28517.75 | 必須
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 開発ツール | 16.0.28621.142 | 必須
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet ターゲットとビルド タスク | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 – VS 2019 C++ ARM ビルド ツール (v14.20) | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x64/x86 ビルド ツール (v14.20) | 16.0.28625.61 | 必須
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | ユニバーサル Windows プラットフォーム ビルドの前提条件 | 16.0.28621.142 | 必須
@@ -245,7 +245,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 16.0.28625.61 | Optional
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 16.0.28517.75 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | Optional
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | Optional
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | Optional
 Microsoft.VisualStudio.Component.TextTemplating | テキスト テンプレート変換 | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ ビルド ツール (v14.00) | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.ATL | v142 ビルド ツールの C++ ATL (x86 & x64) | 16.0.28625.61 | Optional
@@ -274,7 +274,7 @@ Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 16.0.28517.75 | �
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.0.28517.75 | 必須
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開発ツール | 16.0.28516.191 | 必須
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet ターゲットとビルド タスク | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Microsoft.VisualStudio.Component.VSSDKBuildTools | Visual Studio SDK Build Tools のコア | 16.0.28315.86 | 必須
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Visual Studio 拡張機能の開発の前提条件 | 16.0.28528.71 | 必須
 Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 16.0.28528.71 | Optional
@@ -341,7 +341,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | 必須
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 16.0.28517.75 | 必須
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pack | 16.0.28517.75 | 必須
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet ターゲットとビルド タスク | 16.0.28625.61 | 必須
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28528.71 | 必須
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Roslyn コンパイラ | 16.0.28714.129 | 必須
 Component.Android.SDK27 | Android SDK セットアップ (API レベル 27) | 16.0.28517.75 | Optional
 Component.OpenJDK | OpenJDK (Microsoft ディストリビューション) | 16.0.28625.61 | Optional
 

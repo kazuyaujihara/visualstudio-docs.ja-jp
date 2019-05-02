@@ -10,18 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: c94b33fad50cb5e271615629641ea7307f669255
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788543"
 ---
 # <a name="property-functions"></a>プロパティ関数
 
 .NET Framework のバージョン 4 と 4.5 では、プロパティ関数を使用して MSBuild スクリプトを評価できます。 プロパティ関数は、プロパティが表示される場所ならどこでも使用できます。 タスクとは異なり、プロパティ関数はターゲットの外側でも使用でき、ターゲットが実行される前に評価されます。
 
  MSBuild タスクを使用しなくても、システム時刻の読み取り、文字列の比較、正規表現の照合、その他の処理をビルド スクリプト内で実行できます。 MSBuild は、文字列を数値に、数値を文字列に変換しようと試みます。また、必要に応じて他の変換も実行します。
+ 
+プロパティ関数から返される文字列値は、[特殊文字](msbuild-special-characters.md)がエスケープされます。 プロジェクト ファイルに直接配置した場合と同様に値を扱う場合は、`$([MSBuild]::Unescape())` を使用して特殊文字のエスケープを解除します。
 
 ## <a name="property-function-syntax"></a>プロパティ関数の構文
 
@@ -175,7 +177,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |string MakeRelative(string basePath, string path)|`path` を `basePath` に対して相対的にします。 `basePath` は絶対ディレクトリである必要があります。 `path` を相対にできない場合、verbatim が返されます。 `Uri.MakeRelativeUri` と似ています。|
 |string ValueOrDefault(string conditionValue, string defaultValue)|パラメーター 'conditionValue' が空の場合にのみ、パラメーター 'defaultValue' に文字列を返します。それ以外の場合は、値 conditionValue を返します。|
 
-##  <a name="nested-property-functions"></a>入れ子になったプロパティ関数
+## <a name="nested-property-functions"></a>入れ子になったプロパティ関数
 
 次の例が示すように、プロパティ関数を組み合わせてより複雑な関数を形成します。
 

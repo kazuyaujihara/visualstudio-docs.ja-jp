@@ -1,46 +1,41 @@
 ---
 title: コントロールのプログラム |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9a833c8ba19ef71d7bf09e304b49853dd0b90274
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8102bc488d5c74f751fb93584016aa6904fbe2d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438080"
 ---
 # <a name="program-control"></a>プログラムの制御
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Visual Studio でデバッグする場合に、次のステップ実行のすべてとルーチンの続行がプログラムのレベルで発生します。  
   
--   特定のフレームの環境で実行するには、次の命令をコンピューターの設定は、次のステートメントを設定するには、  
+- 特定のフレームの環境で実行するには、次の命令をコンピューターの設定は、次のステートメントを設定するには、  
   
--   ステップ実行モードを終了するは、継続を実行します。  
+- ステップ実行モードを終了するは、継続を実行します。  
   
--   次の命令をステップ実行  
+- 次の命令をステップ実行  
   
--   現在のステップ実行モードを続行  
+- 現在のステップ実行モードを続行  
   
--   プログラムに含まれるスレッドの中断  
+- プログラムに含まれるスレッドの中断  
   
--   プログラムに含まれるスレッドを再開します。  
+- プログラムに含まれるスレッドを再開します。  
   
 > [!NOTE]
->  コール スタックの表示は、スレッド レベルで実装されます。 スレッドの呼び出し履歴を表示するときに、フレームの情報を列挙するには、すべてのメソッドを実装する必要があります、 [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)インターフェイス。  
+> コール スタックの表示は、スレッド レベルで実装されます。 スレッドの呼び出し履歴を表示するときに、フレームの情報を列挙するには、すべてのメソッドを実装する必要があります、 [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)インターフェイス。  
   
 ## <a name="methods-of-program-control"></a>プログラム コントロールのメソッド  
  次の表は、メソッドの[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)最低限機能のデバッグ エンジン (DE) と実行の制御を実装する必要があります。  
@@ -55,4 +50,3 @@ Visual Studio でデバッグする場合に、次のステップ実行のすべ
   
 ## <a name="see-also"></a>関連項目  
  [実行の制御と状態の評価](../../extensibility/debugger/execution-control-and-state-evaluation.md)
-

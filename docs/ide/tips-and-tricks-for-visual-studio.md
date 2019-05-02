@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff50cf9b9f95b9ed7af48d20c0510cfad7fda79
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: b985d4609c40c36d15a5ba8dea0a57aff06b2941
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950342"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio のキーボード ショートカット
 
@@ -50,9 +50,9 @@ Visual Studio では、この記事のキーボード ショートカットを�
 |||
 |-|-|
 |ソリューション エクスプローラーの検索|**Ctrl** + **;**|
-|任意のツール ウィンドウの検索ボックスへのフォーカスの移動|ツール ウィンドウにフォーカスがあるときに **Alt** + **`**|
-|クイック起動|**Ctrl** + **Q**|
-|スコープ結果のクイック起動|-   @opt オプション<br />-   @cmd コマンド<br />-   @mru 直前に使用<br />-   @doc ドキュメントを開く|
+|任意のツール ウィンドウでの検索ボックスへのフォーカスの移動|ツール ウィンドウにフォーカスがあるときに **Alt** + **`**|
+|検索ボックス|**Ctrl** + **Q**|
+|検索ボックスのスコープの結果|-   @opt オプション<br />-   @cmd コマンド<br />-   @mru 直前に使用<br />-   @doc ドキュメントを開く|
 |ツール オプションの検索|**Ctrl** + **E**|
 
 ## <a name="editor-find"></a>エディター検索
@@ -70,7 +70,7 @@ Visual Studio では、この記事のキーボード ショートカットを�
 |[フォルダーを指定して検索]|**Ctrl** + **Shift** + **F**|
 |[フォルダーを指定して置換]|**Ctrl** + **Shift** + **H**|
 
-##  <a name="BKMK_CodeEditor"></a> コード エディター
+## <a name="BKMK_CodeEditor"></a> コード エディター
 
 |コマンド|ショートカット|導入時期|
 |-|-|-|

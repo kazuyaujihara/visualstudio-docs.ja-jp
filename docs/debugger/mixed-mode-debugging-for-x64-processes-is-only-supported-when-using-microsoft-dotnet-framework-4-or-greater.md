@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba8186114fd976ec7e4704d97acb91ee0c97824
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 821efec0beb26cea150fe0cfac20f0dc4c45d5f4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845706"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>x64 プロセスの混合モード デバッグは、4 より前の Microsoft .NET Framework バージョンを使用している場合にはサポートされません。
 バージョンが 4 より前の .NET Framework では、x64 プロセスの混合モード デバッグはサポートされません。 つまり、デバッグ中にマネージド コードからネイティブ コードにステップ インすることや、ネイティブ コードからマネージド コードにステップ インすることはできません。
 
 ### <a name="workarounds"></a>問題回避
 
--   Microsoft .NET Framework 4 以降を使用するようにプロジェクトを更新する。
+- Microsoft .NET Framework 4 以降を使用するようにプロジェクトを更新する。
 
      - または -
 
@@ -39,23 +39,23 @@ ms.locfileid: "56719536"
 
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>プラットフォームを 32 ビットに変更するには (Visual Basic または C#)
 
-1.  **ソリューション エクスプローラー**で、プロジェクトを右クリックして、**[プロパティ]** をクリックします。
+1. **ソリューション エクスプローラー**で、プロジェクトを右クリックして、**[プロパティ]** をクリックします。
 
-2.  プロパティ ページで、**[コンパイル]** タブまたは **[デバッグ]** タブをクリックします。
+2. プロパティ ページで、**[コンパイル]** タブまたは **[デバッグ]** タブをクリックします。
 
-3.  **[プラットフォーム]** をクリックし、プラットフォームの一覧から [x86] を選択します。
+3. **[プラットフォーム]** をクリックし、プラットフォームの一覧から [x86] を選択します。
 
      Visual Basic コンパイラおよび C# コンパイラの既定では、どの CPU 上でも実行されるコードが生成されます。 64 ビット コンピューター上では、これらのバイナリは 64 ビット プロセスとして実行されます。 32 ビット プロセスとして実行するには、**[Any CPU]** でなく **[Win32]** を選択する必要があります。
 
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>プラットフォームを 32 ビットに変更するには (C/C++)
 
-1.  **ソリューション エクスプローラー**で、プロジェクトを右クリックして、**[プロパティ]** をクリックします。
+1. **ソリューション エクスプローラー**で、プロジェクトを右クリックして、**[プロパティ]** をクリックします。
 
-2.  プロパティ ページで **[プラットフォーム]** をクリックし、プラットフォームの一覧の [Win32] をクリックします。
+2. プロパティ ページで **[プラットフォーム]** をクリックし、プラットフォームの一覧の [Win32] をクリックします。
 
 ### <a name="to-correct-this-error"></a>このエラーを解決するには
 
--   参照してください[SQL デバッグ セットアップ](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))します。
+- 参照してください[SQL デバッグ セットアップ](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))します。
 
 ## <a name="see-also"></a>関連項目
 - [64 ビット アプリケーションをデバッグする](../debugger/debug-64-bit-applications.md)

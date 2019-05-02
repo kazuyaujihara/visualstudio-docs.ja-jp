@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aefe5037120636c02b8d3fa73e4ec1fc4bc02a48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: da666f237824ccae349a023611f7e7b78fdaf684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402828"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>方法: 更新、挿入、および削除を実行するストアド プロシージャを割り当てる (O/R デザイナー)
 
@@ -23,7 +23,7 @@ ms.locfileid: "55920445"
 > ストアド プロシージャが、クライアントに送信する必要のある値 (たとえば、ストアド プロシージャで計算された値) を返す場合は、ストアド プロシージャに出力パラメーターを作成します。 出力パラメーターを使用できない場合は、O/R デザイナーによって生成されたオーバーライドを利用するのではなく、部分メソッドを実装します。 データベースによって生成される値にマップされるメンバーは、INSERT 操作または UPDATE 操作が正常に完了した後で、適切な値に設定する必要があります。 詳細については、次を参照してください。[開発者でオーバーライドする既定の動作の責任](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior)します。
 
 > [!NOTE]
-> LINQ to SQL では、identity (自動インクリメント)、rowguidcol 列 (データベースが生成した GUID)、およびタイムスタンプ列を自動的にデータベースによって生成された値を処理します。 その他の列型のデータベースが生成した値は、予想に反して null 値になります。 データベースによって生成された値を返す必要があります手動で設定する<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>に**true**と<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>、次のいずれか: [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)、 [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)、または[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)します。
+> LINQ to SQL では、identity (自動インクリメント)、rowguidcol 列 (データベースが生成した GUID)、およびタイムスタンプ列を自動的にデータベースによって生成された値を処理します。 その他の列型のデータベースが生成した値は、予想に反して null 値になります。 データベースによって生成された値を返す必要があります手動で設定する<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>に**true**と<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>次のいずれか。[AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)、 [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)、または[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)します。
 
 ## <a name="configure-the-update-behavior-of-an-entity-class"></a>エンティティ クラスの更新プログラムの動作を構成します。
 
@@ -33,23 +33,23 @@ ms.locfileid: "55920445"
 
 ### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>ストアド プロシージャを割り当てて、エンティティ クラスの既定の動作をオーバーライドするには
 
-1.  デザイナーで **LINQ to SQL** ファイルを開きます。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)
+1. デザイナーで **LINQ to SQL** ファイルを開きます。 (**ソリューション エクスプローラー**で **.dbml** ファイルをダブルクリックします。)
 
-2.  **サーバー エクスプローラー**または**データベース エクスプローラー**で、**[ストアド プロシージャ]** を展開し、エンティティ クラスの Insert、Update、Delete の各コマンドで使用するストアド プロシージャを探します。
+2. **サーバー エクスプローラー**または**データベース エクスプローラー**で、**[ストアド プロシージャ]** を展開し、エンティティ クラスの Insert、Update、Delete の各コマンドで使用するストアド プロシージャを探します。
 
-3.  ストアド プロシージャを **O/R デザイナー**にドラッグします。
+3. ストアド プロシージャを **O/R デザイナー**にドラッグします。
 
-     ストアド プロシージャが <xref:System.Data.Linq.DataContext> メソッドとしてメソッド ペインに追加されます。 詳細については、次を参照してください。 [DataContext メソッド (O/r デザイナー)](../data-tools/datacontext-methods-o-r-designer.md)します。
+     ストアド プロシージャが <xref:System.Data.Linq.DataContext> メソッドとしてメソッド ペインに追加されます。 詳細については [DataContext メソッド (O/R デザイナー)](../data-tools/datacontext-methods-o-r-designer.md) を参照してください。
 
-4.  更新の実行にストアド プロシージャを使用するエンティティ クラスを選択します。
+4. 更新の実行にストアド プロシージャを使用するエンティティ クラスを選択します。
 
-5.  **[プロパティ]** ウィンドウで、オーバーライドするコマンド (**[Insert]**、**[Update]**、または **[Delete]**) を選択します。
+5. **[プロパティ]** ウィンドウで、オーバーライドするコマンド (**[Insert]**、**[Update]**、または **[Delete]**) を選択します。
 
-6.  **[ランタイムを使用]** の横にある省略記号 ([...]) をクリックして、**[動作の構成]** ダイアログ ボックスを開きます。
+6. **[ランタイムを使用]** の横にある省略記号 ([...]) をクリックして、**[動作の構成]** ダイアログ ボックスを開きます。
 
-7.  **[カスタマイズ]** を選択します。
+7. **[カスタマイズ]** を選択します。
 
-8.  **[カスタマイズ]** リストで、目的のストアド プロシージャを選択します。
+8. **[カスタマイズ]** リストで、目的のストアド プロシージャを選択します。
 
 9. **[メソッドの引数]** および **[クラスのプロパティ]** のリストを調べて、**[メソッドの引数]** が適切な **[クラスのプロパティ]** にマップされていることを確認します。 マップ元のメソッド引数 (`Original_<ArgumentName>`) を元のプロパティ (`<PropertyName> (Original)`) の`Update`と`Delete`コマンド。
 
@@ -59,7 +59,7 @@ ms.locfileid: "55920445"
 10. **[OK]** または **[適用]** をクリックします。
 
     > [!NOTE]
-    >  クリックすると、クラスと動作の組み合わせごとの動作を構成を続行できます**適用**それぞれの変更を行った後。 クリックする前に、クラスまたは動作を変更するかどうかは**適用**、警告ダイアログ ボックスが表示され、変更を適用する機会を提供します。
+    > クリックすると、クラスと動作の組み合わせごとの動作を構成を続行できます**適用**それぞれの変更を行った後。 クリックする前に、クラスまたは動作を変更するかどうかは**適用**、警告ダイアログ ボックスが表示され、変更を適用する機会を提供します。
 
 更新時に既定のランタイム ロジックを使用するように戻すには、**[プロパティ]** ウィンドウで、**[Insert]**、**[Update]**、または **[Delete]** の各コマンドの横にある省略記号をクリックし、**[動作の構成]** ダイアログ ボックスで **[ランタイムを使用]** を選択します。
 

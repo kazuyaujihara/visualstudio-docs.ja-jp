@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bd8b861b6501fda2ed0739725a05225e31343e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780890"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098891"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>パフォーマンス データ ファイルを使ったシンボル情報の保存
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,9 +51,9 @@ ms.locfileid: "54780890"
   
 - Windows シンボル キャッシュのパスを設定したことを確認します。 シンボル キャッシュのパスを設定するには、次のいずれかを実行します。  
   
-  -   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE の [デバッガ―] -> [シンボル] のオプションで正しいパスを設定します。  
+  - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE の [デバッガ―] -> [シンボル] のオプションで正しいパスを設定します。  
   
-  -   VSPerfReport コマンド ラインに -symbolpath オプションを追加して、シンボルを含めます。  
+  - VSPerfReport コマンド ラインに -symbolpath オプションを追加して、シンボルを含めます。  
   
 - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] でシンボルを確認できない場合は、ASP サーバーにシンボル サーバーが正しくセットアップされていることを確認します。  
   
@@ -66,5 +66,5 @@ ms.locfileid: "54780890"
   
 ## <a name="see-also"></a>関連項目  
  [パフォーマンス ツール データの保存とエクスポート](../profiling/saving-and-exporting-performance-tools-data.md)   
- [方法: Windows シンボル情報を参照する](../profiling/how-to-reference-windows-symbol-information.md)   
+ [方法: Windows シンボル情報を参照](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

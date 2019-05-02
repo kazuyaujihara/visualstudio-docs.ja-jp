@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b984a404ed8a33f2b4f78bca8e5a85f4d11bd91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d27bd9be1b769215dd77d1e906a5698e17bd18b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009130"
 ---
 # <a name="send-activity-designer"></a>Send アクティビティ デザイナー
 
@@ -36,7 +36,6 @@ ms.locfileid: "55908518"
 ### <a name="the-send-activity-properties"></a>Send アクティビティのプロパティ
 
 次の表に、<xref:System.ServiceModel.Activities.Send> のプロパティと、デザイナーでのその使用方法を示します。 プロパティ グリッドで、またはワークフロー デザイナー画面で、これらのプロパティを編集できます。
-
 
 | プロパティ名 | 必須 | 使用方法 |
 |-|----------|-|

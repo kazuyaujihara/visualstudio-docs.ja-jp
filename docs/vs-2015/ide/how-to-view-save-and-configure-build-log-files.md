@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7bd8bae0213755b11c145c4bef9c312fe3990c4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432321"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>方法: ビルド ログ ファイルを表示、保存、および構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,23 +25,23 @@ Visual Studio IDE でプロジェクトをビルドしたら、**[出力]** ウ�
   
 ### <a name="to-view-the-build-log-file-for-a-c-project"></a>C++ プロジェクトのビルド ログ ファイルを表示するには  
   
-1.  **Windows エクスプローラー**または**エクスプローラー**で、次のファイルを開きます: \\...\Visual Studio *Version*\Projects\\*ProjectName*\\*ProjectName*\Debug\\*ProjectName*.txt  
+1. **Windows エクスプローラー**または**エクスプローラー**で、次のファイルを開きます: \\...\Visual Studio *Version*\Projects\\*ProjectName*\\*ProjectName*\Debug\\*ProjectName*.txt  
   
 ### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>マネージ コード プロジェクトのビルド ログ ファイルを作成するには  
   
-1.  メニュー バーの **[ビルド]**、 **[ソリューションのビルド]** の順にクリックします。  
+1. メニュー バーの **[ビルド]**、 **[ソリューションのビルド]** の順にクリックします。  
   
-2.  **[出力]** ウィンドウで、ビルドからの情報を強調表示し、クリップボードにコピーします。  
+2. **[出力]** ウィンドウで、ビルドからの情報を強調表示し、クリップボードにコピーします。  
   
-3.  メモ帳などのテキスト エディターを開き、ファイルに情報を貼り付けて、それを保存します。  
+3. メモ帳などのテキスト エディターを開き、ファイルに情報を貼り付けて、それを保存します。  
   
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>ビルド ログに含める情報の量を変更するには  
   
-1.  メニュー バーの **[ツール]**、 **[オプション]** の順にクリックします。  
+1. メニュー バーの **[ツール]**、 **[オプション]** の順にクリックします。  
   
-2.  **[プロジェクトおよびソリューション]** ページで、**[ビルド/実行]** ページを選択します。  
+2. **[プロジェクトおよびソリューション]** ページで、**[ビルド/実行]** ページを選択します。  
   
-3.  **[MSBuild プロジェクト ビルドの出力の詳細]** の一覧で、次の値のいずれかを選択し、**[OK]** ボタンを選択します。  
+3. **[MSBuild プロジェクト ビルドの出力の詳細]** の一覧で、次の値のいずれかを選択し、**[OK]** ボタンを選択します。  
   
     |詳細レベル|説明|  
     |---------------------|-----------------|  
@@ -54,7 +54,7 @@ Visual Studio IDE でプロジェクトをビルドしたら、**[出力]** ウ�
      詳細については、「[[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)」および「<xref:Microsoft.Build.Framework.LoggerVerbosity>」を参照してください。  
   
     > [!IMPORTANT]
-    >  **[出力]** ウィンドウ (すべてのプロジェクト) と *ProjectName*.txt ファイル (C++ プロジェクトのみ) に変更を反映するには、プロジェクトをリビルドする必要があります。  
+    > **[出力]** ウィンドウ (すべてのプロジェクト) と *ProjectName*.txt ファイル (C++ プロジェクトのみ) に変更を反映するには、プロジェクトをリビルドする必要があります。  
   
 ## <a name="see-also"></a>関連項目
  [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)   

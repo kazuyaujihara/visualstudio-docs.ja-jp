@@ -2,7 +2,7 @@
 title: Azure 仮想マシンでの Visual Studio の使用
 titleSuffix: ''
 description: Azure 仮想マシンで Visual Studio を使用する方法を説明します
-ms.date: 03/25/2019
+ms.date: 04/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3853d91d6bd473499f47ad47c9d72e708420a1f3
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 41619e780d02f20fc21bd2b51cc0b0a3eede90fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951498"
 ---
 # <a id="top"> </a> Azure 上の Visual Studio イメージ
 
@@ -32,12 +32,12 @@ ms.locfileid: "58476021"
 
 ## <a name="what-configurations-and-versions-are-available"></a>利用できる構成とバージョン
 
-最新のメジャー バージョンである Visual Studio 2017 および Visual Studio 2015 のイメージは、Azure Marketplace で見つけることができます。  次期メジャー バージョンである Visual Studio 2019 のプレビューのサポートが、最近追加されました。  リリースされたメジャー バージョンごとに、最初にリリースされた (RTW) バージョンと最新の更新バージョンを確認できます。  それぞれのバージョンに、Visual Studio Enterprise Edition と Visual Studio Community Edition があります。  これらのイメージは少なくとも毎月更新され、Visual Studio と Windows の最新の更新プログラムが組み込まれます。  イメージの名前は同じままですが、各イメージの説明には、インストールされる製品バージョンとイメージの "更新" 日が含まれます。
+最新のメジャー バージョンである Visual Studio 2019、Visual Studio 2017、Visual Studio 2015 のイメージは、Azure Marketplace で見つけることができます。  リリースされたメジャー バージョンごとに、最初に "Web にリリースされた" (RTW) バージョンと最新の更新バージョンを確認できます。  それぞれのバージョンに、Visual Studio Enterprise Edition と Visual Studio Community Edition があります。  これらのイメージは少なくとも毎月更新され、Visual Studio と Windows の最新の更新プログラムが組み込まれます。  イメージの名前は同じままですが、各イメージの説明には、インストールされる製品バージョンとイメージの "更新" 日が含まれます。
 
 | リリース バージョン                                              | エディション                     |     製品バージョン      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|       Visual Studio 2019:プレビュー (RC3)                      |           エンタープライズ         |    バージョン 16.0.0 RC3    |
-| Visual Studio 2017:最新 (バージョン 15.9)                    |    Enterprise、Community     |      バージョン 15.9.9      |
+|       Visual Studio 2019:RTW                                |    Enterprise、Community     |      バージョン 16.0.0      |
+| Visual Studio 2017:最新 (バージョン 15.9)                    |    Enterprise、Community     |      バージョン 15.9.10     |
 |         Visual Studio 2017:RTW                              |    Enterprise、Community     |      バージョン 15.0.22     |
 |   Visual Studio 2015:最新 (更新プログラム 3)                      |    Enterprise、Community     |  バージョン 14.0.25431.01   |
 |         Visual Studio 2015:RTW                              |             なし             | (サービス有効期限切れ)  |
@@ -77,13 +77,13 @@ ms.locfileid: "58476021"
 
 Azure では、全サイズの仮想マシンを提供しています。 Visual Studio は高性能のマルチスレッド アプリケーションであるため、少なくとも 2 つのプロセッサと 7 GB のメモリを含む VM サイズが必要です。 Visual Studio イメージでは、次の VM サイズをお勧めします。
 
-   * Standard_D2_v3
-   * Standard_D2s_v3
-   * Standard_D4_v3
-   * Standard_D4s_v3
-   * Standard_D2_v2
-   * Standard_D2S_v2
-   * Standard_D3_v2
+* Standard_D2_v3
+* Standard_D2s_v3
+* Standard_D4_v3
+* Standard_D4s_v3
+* Standard_D2_v2
+* Standard_D2S_v2
+* Standard_D3_v2
 
 最新のマシンのサイズについては、「[Azure の Windows 仮想マシンのサイズ](/azure/virtual-machines/windows/sizes)」を参照してください。
 

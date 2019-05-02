@@ -21,24 +21,23 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54754972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444743"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv コマンド ライン スイッチ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Devenv を使用すると、コマンド ラインから統合開発環境 (IDE: Integrated Development Environment) のさまざまなオプションを設定したり、プロジェクトをビルド、デバッグ、および配置できます。 これらのスイッチを使用して、スクリプトや .bat ファイル (夜間用のビルド スクリプトなど) から IDE を実行したり、特定の構成で IDE を起動したりします。  
   
 > [!NOTE]
->  ビルド関連のタスクでは、devenv の代わりに MSBuild を使用することをお勧めします。 詳細については、「[コマンド ライン リファレンス](../../msbuild/msbuild-command-line-reference.md)」を参照してください。  
+> ビルド関連のタスクでは、devenv の代わりに MSBuild を使用することをお勧めします。 詳細については、「[コマンド ライン リファレンス](../../msbuild/msbuild-command-line-reference.md)」を参照してください。  
   
 > [!NOTE]
->  [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) スイッチおよび [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) スイッチを使用するには、管理者として devenv を実行する必要があります。  
+> [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) スイッチおよび [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) スイッチを使用するには、管理者として devenv を実行する必要があります。  
   
 ## <a name="devenv-switch-syntax"></a>Devenv のスイッチの構文  
  既定では、devenv コマンドは、devenv.com ユーティリティにスイッチを渡します。  
@@ -47,24 +46,24 @@ Devenv を使用すると、コマンド ラインから統合開発環境 (IDE:
   
  `devenv` スイッチの構文規則は、他の DOS コマンド ライン ユーティリティのものとよく似ています。 すべての `devenv` スイッチと引数に適用される構文規則は以下のとおりです。  
   
--   `devenv` で始まるコマンド。  
+- `devenv` で始まるコマンド。  
   
--   スイッチは大文字と小文字を区別しません。  
+- スイッチは大文字と小文字を区別しません。  
   
--   ソリューションまたはプロジェクトを指定するとき、最初の引数はソリューション ファイルまたはプロジェクト ファイルの名前 (ファイル パスを含む) です。  
+- ソリューションまたはプロジェクトを指定するとき、最初の引数はソリューション ファイルまたはプロジェクト ファイルの名前 (ファイル パスを含む) です。  
   
--   最初の引数がソリューションでもプロジェクトでもないファイルの場合、そのファイルが IDE の新しいインスタンスで適切なエディターを使用して開かれます。  
+- 最初の引数がソリューションでもプロジェクトでもないファイルの場合、そのファイルが IDE の新しいインスタンスで適切なエディターを使用して開かれます。  
   
--   ソリューション ファイル名の代わりにプロジェクト ファイル名を入力すると、`devenv` コマンドは、プロジェクト フォルダーの親フォルダーで同じ名前が付いているソリューション ファイルを検索します。 たとえば、`devenv /build myproject1.vbproj` というコマンドは、親フォルダーで "myproject1.sln" という名前のついたソリューション ファイルを検索します。  
+- ソリューション ファイル名の代わりにプロジェクト ファイル名を入力すると、`devenv` コマンドは、プロジェクト フォルダーの親フォルダーで同じ名前が付いているソリューション ファイルを検索します。 たとえば、`devenv /build myproject1.vbproj` というコマンドは、親フォルダーで "myproject1.sln" という名前のついたソリューション ファイルを検索します。  
   
     > [!NOTE]
-    >  このプロジェクトを参照するソリューション ファイルは、親フォルダーの中に 1 つだけ置かれている必要があります。 親フォルダーにこのプロジェクトを参照するソリューション ファイルがない場合、また親フォルダーにこのソリューション ファイルが 2 つ以上ある場合は、一時ソリューション ファイルが作成されます。一時ソリューション ファイルは、プロジェクトにちなんだ名前となり、プロジェクトを参照します。  
+    > このプロジェクトを参照するソリューション ファイルは、親フォルダーの中に 1 つだけ置かれている必要があります。 親フォルダーにこのプロジェクトを参照するソリューション ファイルがない場合、また親フォルダーにこのソリューション ファイルが 2 つ以上ある場合は、一時ソリューション ファイルが作成されます。一時ソリューション ファイルは、プロジェクトにちなんだ名前となり、プロジェクトを参照します。  
   
--   ファイル パスやファイル名にスペースが含まれる場合は、二重引用符 ("") で囲む必要があります。 たとえば、"c:\project a\\" と指定します。  
+- ファイル パスやファイル名にスペースが含まれる場合は、二重引用符 ("") で囲む必要があります。 たとえば、"c:\project a\\" と指定します。  
   
--   1 行に複数のスイッチや引数を入力する場合は、空白文字 1 つで区切ります。 たとえば、**devenv /log output.txt** というコマンドは、IDE を開き、そのセッションのすべてのログ情報を output.txt に出力します。  
+- 1 行に複数のスイッチや引数を入力する場合は、空白文字 1 つで区切ります。 たとえば、**devenv /log output.txt** というコマンドは、IDE を開き、そのセッションのすべてのログ情報を output.txt に出力します。  
   
--   `devenv` コマンドではパターン一致構文を使用できません。  
+- `devenv` コマンドではパターン一致構文を使用できません。  
   
 ## <a name="devenv-switches"></a>Devenv のスイッチ  
  次の表のコマンド ライン スイッチを使用して、IDE を表示し、説明されているタスクを実行します。  

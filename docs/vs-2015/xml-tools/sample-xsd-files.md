@@ -9,21 +9,20 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a80f1aa49f214c43a772a48c88fdad6f0d0db7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cc492b17ce4ecf7c4c8bf229a6c43c665dc3c125
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435351"
 ---
 # <a name="sample-xsd-files"></a>サンプル XSD ファイル
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML スキーマ デザイナーのドキュメントでは、次のサンプル ファイルが使用されます。  
   
 > [!NOTE]
->  例として登場する企業、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、およびイベントはすべて架空のものです。 実在する企業、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、またはイベントとは一切関係ありません。  
+> 例として登場する企業、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、およびイベントはすべて架空のものです。 実在する企業、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、またはイベントとは一切関係ありません。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
   

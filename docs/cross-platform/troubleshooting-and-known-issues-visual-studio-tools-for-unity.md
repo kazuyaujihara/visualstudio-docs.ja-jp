@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815587"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>トラブルシューティングと既知の問題 (Visual Studio Tools for Unity)
 
@@ -62,7 +62,7 @@ FMOD の場合は回避策があります。`FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>余分な再読み込みが発生する、または Visual Studio で開いているウィンドウがすべて失われる
 
-アセット プロセッサなどのツールから直接プロジェクト ファイルに触れないようにしてください。 プロジェクト ファイルをどうしても操作する必要がある場合は、弊社でそのための API を公開します。 「[アセンブリ参照の問題](#Assembly-reference-issues)」セクションを確認してください。
+アセット プロセッサなどのツールから直接プロジェクト ファイルに触れないようにしてください。 プロジェクト ファイルをどうしても操作する必要がある場合は、弊社でそのための API を公開します。 「[アセンブリ参照の問題](#assembly-reference-issues)」セクションを確認してください。
 
 余分な再読み込みが発生する場合、または Visual Studio で再読み込み時に開いているウィンドウがすべて失われる場合は、適切な .NET Targeting Pack がインストールされていることを確認してください。 詳細については、フレームワークに関する以下のセクションを確認してください。
 

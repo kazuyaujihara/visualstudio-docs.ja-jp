@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 660915dd9222f4fd2f70e88665aef17dbab8e168
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 027181d16024964d5487be2b3eb0b4ca261f98e0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433605"
 ---
 # <a name="private-galleries"></a>プライベート ギャラリー
 コントロール、テンプレート、および投稿することで開発したツールを共有することができます、*プライベート ギャラリー*次のように、組織のイントラネット上。
 
--   イントラネット上で適切に構成されている中央の場所 (リポジトリ) にフィード Atom (RSS) を作成します。 詳細については、「[方法 :Atom プライベート ギャラリーのフィードを作成](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)です。
+- イントラネット上で適切に構成されている中央の場所 (リポジトリ) にフィード Atom (RSS) を作成します。 詳細については、「[方法 :Atom プライベート ギャラリーのフィードを作成](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)です。
 
--   配布、 *.pkgdef*ファイルをプライベート ギャラリーについて説明します。 プライベート ギャラリーを同時に多くのコンピューターに接続する管理者のためには、この構成をお勧めします。
+- 配布、 *.pkgdef*ファイルをプライベート ギャラリーについて説明します。 プライベート ギャラリーを同時に多くのコンピューターに接続する管理者のためには、この構成をお勧めします。
 
 ## <a name="add-a-private-gallery-to-extensions-and-updates-in-visual-studio"></a>拡張機能と Visual Studio での更新プログラムにプライベート ギャラリーを追加します。
  プライベート ギャラリーが利用できる場合を追加**拡張機能と更新**Visual Studio でします。
@@ -32,19 +32,19 @@ ms.locfileid: "56694960"
 
 ### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>拡張機能と更新プログラムにプライベート ギャラリーを追加するには
 
-1.  メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
+1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
 
-2.  **環境**ノードの **拡張機能と更新**します。
+2. **環境**ノードの **拡張機能と更新**します。
 
-3.  **[追加]** ボタンをクリックします。
+3. **[追加]** ボタンをクリックします。
 
-4.  **名前**フィールドに、たとえば、プライベート ギャラリーの名前を入力`My Gallery`します。
+4. **名前**フィールドに、たとえば、プライベート ギャラリーの名前を入力`My Gallery`します。
 
-5.  **URL**フィールドに、Atom フィードまたはプライベート ギャラリーをホストしている SharePoint サイトの URL を入力します。
+5. **URL**フィールドに、Atom フィードまたはプライベート ギャラリーをホストしている SharePoint サイトの URL を入力します。
 
-    1.  プライベート ギャラリーに接続するホストが Atom フィードの場合は、このいずれかの URL のようになります: http://www.mywebsite/mygallery/atom.xml します。  この URL は、ファイルまたはネットワーク パスを参照できます。
+    1. プライベート ギャラリーに接続するホストが Atom フィードの場合は、このいずれかの URL のようになります: http://www.mywebsite/mygallery/atom.xml します。  この URL は、ファイルまたはネットワーク パスを参照できます。
 
-    2.  ホストが SharePoint サイトの場合は、URL のようになりますこのいずれか:http://mysharepoint/sites/mygallery/forms/AllItems.aspxします。
+    2. ホストが SharePoint サイトの場合は、URL のようになりますこのいずれか:http://mysharepoint/sites/mygallery/forms/AllItems.aspxします。
 
 ### <a name="manage-private-galleries"></a>プライベート ギャラリーを管理します。
  行うことができますをプライベート ギャラリー使用可能な複数のコンピューターに同時に各コンピューター上のシステム レジストリを変更することで。 これを行うには、作成、 *.pkgdef*ファイルを新しいレジストリ キーとその値について説明します。  このファイルの形式は次のとおりです。
@@ -70,11 +70,11 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>検索してプライベート ギャラリーから拡張機能をインストールするには
 
-1.  メニュー バーで、**ツール** > **拡張機能と更新**します。
+1. メニュー バーで、**ツール** > **拡張機能と更新**します。
 
-2.  左側のウィンドウで次のように選択します。**拡張機能のオンライン**、し、**マイ ギャラリー**します。
+2. 左側のウィンドウで次のように選択します。**拡張機能のオンライン**、し、**マイ ギャラリー**します。
 
-3.  右側のウィンドウで、拡張機能を選択し、選択、**ダウンロード**ボタンをクリックします。
+3. 右側のウィンドウで、拡張機能を選択し、選択、**ダウンロード**ボタンをクリックします。
 
 ## <a name="update-extensions-from-a-private-gallery"></a>プライベート ギャラリーから拡張機能を更新します。
  プライベート ギャラリーでは、Visual Studio 拡張機能の新しいバージョンがポストされた、インストールされている拡張機能を更新することができます。 次の手順を使用して、という名前のプライベート ギャラリー`My Repository`します。
@@ -83,11 +83,11 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>プライベート ギャラリーからインストールされている拡張機能を更新するには
 
-1.  メニュー バーで、**ツール** > **拡張機能と更新**します。
+1. メニュー バーで、**ツール** > **拡張機能と更新**します。
 
-2.  左側のウィンドウで次のように選択します。**更新**、し、**マイ リポジトリ**します。
+2. 左側のウィンドウで次のように選択します。**更新**、し、**マイ リポジトリ**します。
 
-3.  右側のウィンドウで、拡張機能を選択し、選択、 **Update**ボタンをクリックします。
+3. 右側のウィンドウで、拡張機能を選択し、選択、 **Update**ボタンをクリックします。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)

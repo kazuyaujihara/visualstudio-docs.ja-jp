@@ -17,21 +17,20 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4260804760b4abe55f6a62efa4841ad08dead1b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 00c77675b1a2300468c7848facf498ac3816e136
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437197"
 ---
 # <a name="alias-command"></a>Alias コマンド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 完全なコマンド、完全なコマンドと引数、または他のエイリアスに対して新しいエイリアスを作成します。  
   
 > [!TIP]
->  引数を指定せずに「`>alias`」と入力すると、現在のエイリアスとその定義が一覧表示されます。  
+> 引数を指定せずに「`>alias`」と入力すると、現在のエイリアスとその定義が一覧表示されます。  
   
 ## <a name="syntax"></a>構文  
   

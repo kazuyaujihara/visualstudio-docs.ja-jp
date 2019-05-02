@@ -11,17 +11,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5f25f100a1d6eb31dbd03a26d927f81c4e564d3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445616"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 .NET Framework を対象とするプログラミング言語は、MSBuild プロジェクト ファイルを使用してアプリケーションのビルド プロセスを記述および制御します。 Visual Studio を使用して MSBuild プロジェクト ファイルを作成すると、適切な XML が自動的に追加されますが、 その XML がどのように構成されているかや、それに変更を加えてビルドを制御するにはどうすればよいかを知っておくことも有用です。  
   
  C++ プロジェクトのプロジェクト ファイルを作成する方法の詳細については、「[MSBuild (Visual C++)](http://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560)」をご覧ください。  
@@ -55,13 +54,13 @@ ms.locfileid: "54769433"
   
 #### <a name="to-create-the-minimal-application"></a>最低限の内容のみを含むアプリケーションを作成するには  
   
-1.  コマンド プロンプトで、アプリケーションを作成するフォルダーに移動します (\My Documents\、\Desktop\\ など)。  
+1. コマンド プロンプトで、アプリケーションを作成するフォルダーに移動します (\My Documents\、\Desktop\\ など)。  
   
-2.  「**md HelloWorld**」と入力して、\HelloWorld\\ というサブフォルダーを作成します。  
+2. 「**md HelloWorld**」と入力して、\HelloWorld\\ というサブフォルダーを作成します。  
   
-3.  「**cd HelloWorld**」と入力して、その新しいフォルダーに移動します。  
+3. 「**cd HelloWorld**」と入力して、その新しいフォルダーに移動します。  
   
-4.  メモ帳またはその他のテキスト エディターを起動して、次のコードを入力します。  
+4. メモ帳またはその他のテキスト エディターを起動して、次のコードを入力します。  
   
     ```  
     using System;  
@@ -79,28 +78,28 @@ ms.locfileid: "54769433"
     }  
     ```  
   
-5.  このソース コード ファイルを Helloworld.cs という名前で保存します。  
+5. このソース コード ファイルを Helloworld.cs という名前で保存します。  
   
-6.  コマンド プロンプトで「**csc helloworld.cs**」と入力して、アプリケーションをビルドします。  
+6. コマンド プロンプトで「**csc helloworld.cs**」と入力して、アプリケーションをビルドします。  
   
-7.  コマンド プロンプトで「**helloworld**」と入力して、アプリケーションをテストします。  
+7. コマンド プロンプトで「**helloworld**」と入力して、アプリケーションをテストします。  
   
      "**Hello, world!**"  というメッセージが表示されます。  
   
-8.  コマンド プロンプトで「**del helloworld.exe**」と入力して、アプリケーションを削除します。  
+8. コマンド プロンプトで「**del helloworld.exe**」と入力して、アプリケーションを削除します。  
   
 ## <a name="creating-a-minimal-msbuild-project-file"></a>最低限の内容のみを含む MSBuild プロジェクト ファイルを作成する  
  最低限の内容のみを含むアプリケーション ソース ファイルを作成できたので、次に、そのアプリケーションをビルドするための最低限の内容のみを含むプロジェクト ファイルを作成します。 このプロジェクト ファイルに含まれる要素は次のとおりです。  
   
--   必須のルート `Project` ノード  
+- 必須のルート `Project` ノード  
   
--   項目要素を格納する `ItemGroup` ノード  
+- 項目要素を格納する `ItemGroup` ノード  
   
--   アプリケーション ソース ファイルを参照する項目要素  
+- アプリケーション ソース ファイルを参照する項目要素  
   
--   アプリケーションをビルドするために必要なタスクを格納する `Target` ノード  
+- アプリケーションをビルドするために必要なタスクを格納する `Target` ノード  
   
--   アプリケーションをビルドするために Visual C# コンパイラを起動する `Task` 要素  
+- アプリケーションをビルドするために Visual C# コンパイラを起動する `Task` 要素  
   
 #### <a name="to-create-a-minimal-msbuild-project-file"></a>最低限の内容のみを含む MSBuild プロジェクト ファイルを作成するには  
   
@@ -152,18 +151,18 @@ ms.locfileid: "54769433"
  Build ターゲットのタスクは順番に実行されます。 ここでは、Visual C# コンパイラの `Csc` タスクが唯一のタスクです。 このタスクは、コンパイルするソース ファイルのリストを受け取ります。これは、`Compile` 項目の値によって渡されます。 `Compile` 項目は、Helloworld.cs という 1 つのソース ファイルのみを参照しています。  
   
 > [!NOTE]
->  項目要素でワイルドカード文字のアスタリスク (*) を使用して、拡張子 .cs を持つすべてのファイルを参照することもできます。次に例を示します。  
+> 項目要素でワイルドカード文字のアスタリスク (*) を使用して、拡張子 .cs を持つすべてのファイルを参照することもできます。次に例を示します。  
 >   
->  `<Compile Include="*.cs" />`  
+> `<Compile Include="*.cs" />`  
 >   
->  ただし、ワイルドカード文字を使用すると、ソース ファイルを追加または削除した場合にデバッグやターゲットの選択が困難になるため、できるだけ使用しないようにしてください。  
+> ただし、ワイルドカード文字を使用すると、ソース ファイルを追加または削除した場合にデバッグやターゲットの選択が困難になるため、できるだけ使用しないようにしてください。  
   
 ## <a name="extending-the-path-to-include-msbuild"></a>MSBuild が含まれるようにパスを拡張する  
  MSBuild を使用するには、.NET Framework フォルダーが含まれるように PATH 環境変数を拡張する必要があります。  
   
 #### <a name="to-add-msbuild-to-your-path"></a>MSBuild をパスに追加するには  
   
--   Visual Studio 2013 では、MSBuild フォルダー (32 ビット オペレーティング システムの場合は `%ProgramFiles%\MSBuild`、64 ビット オペレーティング システムの場合は `%ProgramFiles(x86)%\MSBuild`) 内に MSBuild.exe があります。  
+- Visual Studio 2013 では、MSBuild フォルダー (32 ビット オペレーティング システムの場合は `%ProgramFiles%\MSBuild`、64 ビット オペレーティング システムの場合は `%ProgramFiles(x86)%\MSBuild`) 内に MSBuild.exe があります。  
   
      コマンド プロンプトで、「**set PATH=%PATH%;%ProgramFiles%\MSBuild**」または「**set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**」と入力します。  
   
@@ -174,25 +173,25 @@ ms.locfileid: "54769433"
   
 #### <a name="to-build-the-application"></a>アプリケーションをビルドするには  
   
-1.  コマンド プロンプトで、「**msbuild helloworld.csproj/t:Build**」と入力します。  
+1. コマンド プロンプトで、「**msbuild helloworld.csproj/t:Build**」と入力します。  
   
      Visual C# コンパイラが呼び出され、Helloworld プロジェクト ファイルの Build ターゲットがビルドされて、Helloworld アプリケーションが作成されます。  
   
-2.  「**helloworld**」と入力してアプリケーションをテストします。  
+2. 「**helloworld**」と入力してアプリケーションをテストします。  
   
      "**Hello, world!**"  というメッセージが表示されます。  
   
 > [!NOTE]
->  詳細レベルを上げると、ビルドの詳細情報を表示できます。 詳細レベルを "detailed" に設定するには、コマンド プロンプトで次のいずれかのコマンドを入力します。  
+> 詳細レベルを上げると、ビルドの詳細情報を表示できます。 詳細レベルを "detailed" に設定するには、コマンド プロンプトで次のいずれかのコマンドを入力します。  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+> **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
   
 ## <a name="adding-build-properties"></a>ビルド プロパティを追加する  
  プロジェクト ファイルにビルド プロパティを追加すると、ビルドをさらに細かく制御できます。 ここでは、次のプロパティを追加します。  
   
--   アプリケーションの名前を指定する `AssemblyName` プロパティ  
+- アプリケーションの名前を指定する `AssemblyName` プロパティ  
   
--   アプリケーションを格納するフォルダーを指定する `OutputPath` プロパティ  
+- アプリケーションを格納するフォルダーを指定する `OutputPath` プロパティ  
   
 #### <a name="to-add-build-properties"></a>ビルド プロパティを追加するには  
   
@@ -244,30 +243,30 @@ ms.locfileid: "54769433"
 ```  
   
 > [!NOTE]
->  パス区切り記号の円記号 (\\) は、`Csc` タスクの `OutputAssembly` 属性に追加するのではなく、`OutputPath` 要素で指定するフォルダー名の末尾に追加することをお勧めします。 次に例を示します。  
+> パス区切り記号の円記号 (\\) は、`Csc` タスクの `OutputAssembly` 属性に追加するのではなく、`OutputPath` 要素で指定するフォルダー名の末尾に追加することをお勧めします。 次に例を示します。  
 >   
->  `<OutputPath>Bin\</OutputPath>`  
+> `<OutputPath>Bin\</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
 >   
->  この形式が次の形式より推奨されます。  
+> この形式が次の形式より推奨されます。  
 >   
->  `<OutputPath>Bin</OutputPath>`  
+> `<OutputPath>Bin</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
   
 ## <a name="testing-the-build-properties"></a>ビルド プロパティをテストする  
  次に、ビルド プロパティで出力フォルダーとアプリケーション名を指定したプロジェクト ファイルを使用してアプリケーションをビルドします。  
   
 #### <a name="to-test-the-build-properties"></a>ビルド プロパティをテストするには  
   
-1.  コマンド プロンプトで、「**msbuild helloworld.csproj/t:Build**」と入力します。  
+1. コマンド プロンプトで、「**msbuild helloworld.csproj/t:Build**」と入力します。  
   
      \Bin\ フォルダーが作成され、Visual C# コンパイラが呼び出されて、MSBuildSample アプリケーションが作成されて \Bin\ フォルダーに配置されます。  
   
-2.  「**dir Bin**」と入力して、\Bin\ フォルダーが作成されていることと、そこに MSBuildSample アプリケーションが含まれていることを確認します。  
+2. 「**dir Bin**」と入力して、\Bin\ フォルダーが作成されていることと、そこに MSBuildSample アプリケーションが含まれていることを確認します。  
   
-3.  「**Bin\MSBuildSample**」と入力してアプリケーションをテストします。  
+3. 「**Bin\MSBuildSample**」と入力してアプリケーションをテストします。  
   
      "**Hello, world!**"  というメッセージが表示されます。  
   
@@ -326,37 +325,37 @@ ms.locfileid: "54769433"
 ## <a name="testing-the-build-targets"></a>ビルド ターゲットをテストする  
  新しいビルド ターゲットを使用して、プロジェクト ファイルの以下の機能をテストします。  
   
--   既定のビルドをビルドする。  
+- 既定のビルドをビルドする。  
   
--   コマンド プロンプトでアプリケーション名を設定する。  
+- コマンド プロンプトでアプリケーション名を設定する。  
   
--   別のアプリケーションをビルドする前にアプリケーションを削除する。  
+- 別のアプリケーションをビルドする前にアプリケーションを削除する。  
   
--   別のアプリケーションをビルドせずにアプリケーションを削除する。  
+- 別のアプリケーションをビルドせずにアプリケーションを削除する。  
   
 #### <a name="to-test-the-build-targets"></a>ビルド ターゲットをテストするには  
   
-1.  コマンド プロンプトで、「**msbuild helloworld.csproj /p:AssemblyName=Greetings**」と入力します。  
+1. コマンド プロンプトで、「**msbuild helloworld.csproj /p:AssemblyName=Greetings**」と入力します。  
   
      **/t** スイッチを使用してターゲットを明示的に設定していないため、既定の Build ターゲットがビルドされます。 **/p** スイッチでは、`AssemblyName` プロパティをオーバーライドして新しい値 `Greetings` を割り当てています。 これにより、Greetings.exe という新しいアプリケーションが \Bin\ フォルダーに作成されます。  
   
-2.  「**dir Bin**」と入力して、\Bin\ フォルダーに MSBuildSample アプリケーションと新しい Greetings アプリケーションの両方が含まれていることを確認します。  
+2. 「**dir Bin**」と入力して、\Bin\ フォルダーに MSBuildSample アプリケーションと新しい Greetings アプリケーションの両方が含まれていることを確認します。  
   
-3.  「**Bin\Greetings**」と入力して、Greetings アプリケーションをテストします。  
+3. 「**Bin\Greetings**」と入力して、Greetings アプリケーションをテストします。  
   
      "**Hello, world!**"  というメッセージが表示されます。  
   
-4.  「**msbuild helloworld.csproj /t:clean**」を入力して、MSBuildSample アプリケーションを削除します。  
+4. 「**msbuild helloworld.csproj /t:clean**」を入力して、MSBuildSample アプリケーションを削除します。  
   
      Clean タスクが実行されて、`AssemblyName` プロパティの値が既定値の `MSBuildSample` になっているアプリケーションが削除されます。  
   
-5.  「**msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings**」を入力して、Greetings アプリケーションを削除します。  
+5. 「**msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings**」を入力して、Greetings アプリケーションを削除します。  
   
      Clean タスクが実行されて、**AssemblyName** プロパティの値が、指定した値 `Greetings` になっているアプリケーションが削除されます。  
   
-6.  「**dir Bin**」と入力して、\Bin\ フォルダーが空になったことを確認します。  
+6. 「**dir Bin**」と入力して、\Bin\ フォルダーが空になったことを確認します。  
   
-7.  「**msbuild**」と入力します。  
+7. 「**msbuild**」と入力します。  
   
      プロジェクト ファイルが指定されていませんが、現在のフォルダーにはプロジェクト ファイルが 1 つしかないため、helloworld.csproj ファイルがビルドされます。 その結果、\Bin\ フォルダーに MSBuildSample アプリケーションが作成されます。  
   
@@ -367,7 +366,7 @@ ms.locfileid: "54769433"
   
 #### <a name="to-build-incrementally"></a>インクリメンタル ビルドを実行するには  
   
-1.  プロジェクト ファイルで、開始 Build ターゲットに次の属性を追加します。  
+1. プロジェクト ファイルで、開始 Build ターゲットに次の属性を追加します。  
   
     ```  
     Inputs="@(Compile)" Outputs="$(OutputPath)$(AssemblyName).exe"  
@@ -384,7 +383,7 @@ ms.locfileid: "54769433"
     </Target>  
     ```  
   
-2.  コマンド プロンプトで「**msbuild /v:d**」と入力して、Build ターゲットをテストします。  
+2. コマンド プロンプトで「**msbuild /v:d**」と入力して、Build ターゲットをテストします。  
   
      helloworld.csproj が既定のプロジェクト ファイルであること、Build が既定のターゲットであることに注意してください。  
   

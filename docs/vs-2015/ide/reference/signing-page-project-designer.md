@@ -20,17 +20,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59f8cb15db6f93c76275fd1d8318ae04df998cf7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437990"
 ---
 # <a name="signing-page-project-designer"></a>[署名] ページ (プロジェクト デザイナー)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **プロジェクト デザイナー**の **[署名]** ページを使用して、アプリケーション マニフェストと配置マニフェストに署名し、アセンブリに署名します (厳密な名前の署名)。  
   
  アプリケーション マニフェストと配置マニフェストの署名は、アセンブリの署名と同じく **[署名]** ページで実行されますが、異なるプロセスであることに注意してください。  
@@ -41,7 +40,7 @@ ms.locfileid: "54788727"
   
 ## <a name="application-and-deployment-manifest-signing"></a>アプリケーション マニフェストと配置マニフェストの署名  
  **[ClickOnce マニフェストに署名する]** チェック ボックス  
- 公開キーと秘密キーのペアを使用して、アプリケーション マニフェストと配置マニフェストに署名するには、このチェック ボックスを選択します。 この方法の詳細については、「[方法: アプリケーション マニフェストおよび配置マニフェストに署名する](../../ide/how-to-sign-application-and-deployment-manifests.md)」を参照してください。  
+ 公開キーと秘密キーのペアを使用して、アプリケーション マニフェストと配置マニフェストに署名するには、このチェック ボックスを選択します。 この方法の詳細については、「[方法 : アプリケーション マニフェストおよび配置マニフェストに署名する](../../ide/how-to-sign-application-and-deployment-manifests.md)」を参照してください。  
   
  **[ストアから選択]** ボタン  
  現在のユーザーの個人証明書ストアから既存の証明書を選択できます。 アプリケーション マニフェストと配置マニフェストの署名にこれらの証明書のいずれかを選択することができます。  
@@ -69,7 +68,7 @@ ms.locfileid: "54788727"
  **[アセンブリの署名]** チェック ボックス  
  アセンブリに署名し、厳密な名前のキー ファイルを作成するには、このチェック ボックスをオンにします。 **プロジェクト デザイナー**を使用してアセンブリに署名する詳細については、「[方法: アセンブリに署名する (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)」を参照してください。  
   
- このオプションは、[!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] で提供される Al.exe ツールを使用して、アセンブリに署名します。 Al.exe の詳細については、「[方法 : 厳密な名前でアセンブリに署名する](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)」を参照してください。  
+ このオプションは、[!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] で提供される Al.exe ツールを使用して、アセンブリに署名します。 Al.exe の詳細については、「[方法: 厳密な名前でアセンブリに署名する](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)」を参照してください。  
   
  **[厳密な名前のキー ファイルを選択してください]** 一覧  
  アセンブリに署名するために使用する新規または既存の厳密な名前のキー ファイルを指定できます。 [**\<参照...>**] を選択して、既存のキー ファイルを選択します。  
@@ -87,13 +86,13 @@ ms.locfileid: "54788727"
  遅延署名されたプロジェクトは実行されず、デバッグできないことに注意してください。 ただし、[Sn.exe (厳密名ツール)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) と `-Vr` オプションを使用すると、開発時に検証をスキップできます。  
   
 > [!NOTE]
->  アセンブリに署名するときに、秘密キーへのアクセス権がない場合があります。 たとえば、組織には、開発者が日常的にアクセスしない厳重に保護されたキーのペアがある場合があります。 公開キーは使用可能ですが、秘密キーへのアクセスは少数のユーザーに限定されます。 このような場合は、*遅延*または*部分署名*を使用して公開キーを提供し、アセンブリが引き渡されるまで、秘密キーの追加を遅らせることができます。  
+> アセンブリに署名するときに、秘密キーへのアクセス権がない場合があります。 たとえば、組織には、開発者が日常的にアクセスしない厳重に保護されたキーのペアがある場合があります。 公開キーは使用可能ですが、秘密キーへのアクセスは少数のユーザーに限定されます。 このような場合は、*遅延*または*部分署名*を使用して公開キーを提供し、アセンブリが引き渡されるまで、秘密キーの追加を遅らせることができます。  
   
 ## <a name="see-also"></a>関連項目
  [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)   
  [アセンブリおよびマニフェストへの署名の管理](../../ide/managing-assembly-and-manifest-signing.md)   
  [マネージド アプリケーションの厳密な名前の署名](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
- [方法 : アプリケーション マニフェストおよび配置マニフェストに署名する](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [方法: アセンブリに署名する (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [方法 : 厳密な名前でアセンブリに署名する](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [方法: Sign アプリケーション マニフェストおよび配置マニフェスト](../../ide/how-to-sign-application-and-deployment-manifests.md)   
+ [方法: アセンブリに署名 (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [方法: 厳密な名前でアセンブリに署名します。](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
  [厳密な名前付きアセンブリ](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

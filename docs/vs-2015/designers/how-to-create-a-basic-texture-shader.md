@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dce20d3e1833659ebfec2e84e6bff7f86dff844e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438429"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>方法: 基本テクスチャ シェーダーを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ ms.locfileid: "54793435"
   
  このドキュメントでは、以下のアクティビティについて説明します。  
   
--   シェーダー グラフからのノードの削除  
+- シェーダー グラフからのノードの削除  
   
--   グラフへのノードの追加  
+- グラフへのノードの追加  
   
--   シェーダー パラメーターの設定  
+- シェーダー パラメーターの設定  
   
--   パラメーターの可視性の設定  
+- パラメーターの可視性の設定  
   
--   ノードの接続  
+- ノードの接続  
   
 ## <a name="creating-a-basic-texture-shader"></a>基本的なテクスチャ シェーダーの作成  
  テクスチャ サンプルのカラー値とアルファ値を直接最終的な出力色に記述することで、基本的な単一テクスチャ シェーダーを実装できます。  
@@ -59,7 +59,7 @@ ms.locfileid: "54793435"
    次の図は、完成したシェーダー グラフと、直方体に適用されるシェーダーのプレビューを示します。  
   
 > [!NOTE]
->  この図では、平面がプレビューの図形として使用され、テクスチャはシェーダーの効果がわかりやすくなるように指定されています。  
+> この図では、平面がプレビューの図形として使用され、テクスチャはシェーダーの効果がわかりやすくなるように指定されています。  
   
  ![シェーダー グラフとその効果のプレビュー](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")  
   

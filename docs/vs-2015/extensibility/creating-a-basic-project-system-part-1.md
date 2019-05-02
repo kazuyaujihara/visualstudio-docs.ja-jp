@@ -12,12 +12,12 @@ ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ed2f8975f24404c00f81d86d0d1d6a6933b3d8ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8304719a4b15b5f23957c99244796999d7b3f55c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439400"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>基本的なプロジェクト システムの作成、パート 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
  プロジェクトは、たとえば Visual c# プロジェクトの .csproj ファイルをプロジェクト ファイルで定義されます。 独自のプロジェクト ファイル名拡張子を持つ独自のプロジェクトの種類を作成することができます。 プロジェクトの種類の詳細については、次を参照してください。[プロジェクトの種類](../extensibility/internals/project-types.md)します。  
   
 > [!NOTE]
->  カスタムのプロジェクトの種類の Visual Studio を拡張する必要がある場合強くお勧めしますを活用すること、 [Visual Studio プロジェクト システム](https://github.com/Microsoft/VSProjectSystem)はさまざまなプロジェクト システムを一から構築に比べて利点があります。  
+> カスタムのプロジェクトの種類の Visual Studio を拡張する必要がある場合強くお勧めしますを活用すること、 [Visual Studio プロジェクト システム](https://github.com/Microsoft/VSProjectSystem)はさまざまなプロジェクト システムを一から構築に比べて利点があります。  
 > 
 > - 簡単にオンボードします。  基本的なプロジェクト システムではさらには、数万行のコードの必要があります。  前に、お客様のニーズに合わせてカスタマイズする準備が整ったら、ほんの数回のクリックにオンボード コストを削減する CPS を活用すること。  
->   -   メンテナンスを容易にします。  CPS を活用することによってのみ、独自のシナリオを維持する必要があります。  すべてのプロジェクト システム インフラストラクチャの保守管理を処理します。  
+>   - メンテナンスを容易にします。  CPS を活用することによってのみ、独自のシナリオを維持する必要があります。  すべてのプロジェクト システム インフラストラクチャの保守管理を処理します。  
 > 
 >   Visual Studio の Visual Studio 2013 より前のバージョンをターゲットする必要がある場合、Visual Studio 拡張機能で CPS を活用することができなきます。  場合は、このチュートリアルでは開始することをお勧めします。  
   
  このチュートリアルでは、プロジェクト ファイル名拡張子 .myproj を含むプロジェクトの種類を作成する方法を示します。 このチュートリアルでは既存の Visual c# プロジェクト システムを利用します。  
   
 > [!NOTE]
->  エンド ツー エンドのサンプルの完全な言語のプロジェクト システムで IronPython サンプルの詳細情報を参照してください。 [VSSDK のサンプル](../misc/vssdk-samples.md)します。  
+> エンド ツー エンドのサンプルの完全な言語のプロジェクト システムで IronPython サンプルの詳細情報を参照してください。 [VSSDK のサンプル](../misc/vssdk-samples.md)します。  
   
  このチュートリアルでは、これらのタスクを実行する方法について説明します。  
   
--   基本的なプロジェクトの種類を作成します。  
+- 基本的なプロジェクトの種類を作成します。  
   
--   基本的なプロジェクト テンプレートを作成します。  
+- 基本的なプロジェクト テンプレートを作成します。  
   
--   Visual Studio でプロジェクト テンプレートを登録します。  
+- Visual Studio でプロジェクト テンプレートを登録します。  
   
--   開いてプロジェクト インスタンスを作成、**新しいプロジェクト** ダイアログ ボックスとし、テンプレートを使用します。  
+- 開いてプロジェクト インスタンスを作成、**新しいプロジェクト** ダイアログ ボックスとし、テンプレートを使用します。  
   
--   プロジェクト システムのためのプロジェクト ファクトリを作成します。  
+- プロジェクト システムのためのプロジェクト ファクトリを作成します。  
   
--   プロジェクト システムのプロジェクト ノードを作成します。  
+- プロジェクト システムのプロジェクト ノードを作成します。  
   
--   プロジェクト システムのカスタム アイコンを追加します。  
+- プロジェクト システムのカスタム アイコンを追加します。  
   
--   基本的なテンプレート パラメーターの置換を実装します。  
+- 基本的なテンプレート パラメーターの置換を実装します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  
@@ -103,7 +103,7 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
    ```  
   
    > [!IMPORTANT]
-   >  これは、Program.cs のコードの最終形式ではありません。置換パラメーターの後の手順で処理します。 表示されるコンパイル エラーしますが、いる限り、ファイルの **"ビルド アクション"** は**コンテンツ**をビルドして、プロジェクトを通常どおり実行できる必要があります。  
+   > これは、Program.cs のコードの最終形式ではありません。置換パラメーターの後の手順で処理します。 表示されるコンパイル エラーしますが、いる限り、ファイルの **"ビルド アクション"** は**コンテンツ**をビルドして、プロジェクトを通常どおり実行できる必要があります。  
   
 7. ファイルを保存します。  
   
@@ -112,7 +112,7 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
 9. **Projects\SimpleProject**フォルダーという XML ファイルを追加する`SimpleProject.myproj`します。  
   
    > [!NOTE]
-   >  この種類のすべてのプロジェクトのファイル名拡張子は、.myproj です。 これを変更する場合をチュートリアルで説明したようにすべての場所に変更する必要があります。  
+   > この種類のすべてのプロジェクトのファイル名拡張子は、.myproj です。 これを変更する場合をチュートリアルで説明したようにすべての場所に変更する必要があります。  
   
 10. 既存のコンテンツを次の行に置き換えます。  
   
@@ -254,11 +254,11 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
 ## <a name="add-the-managed-package-framework-code"></a>Managed Package Framework のコードを追加します。  
  プロジェクト パッケージとプロジェクト ファクトリ間の接続を実装します。  
   
--   Managed Package Framework のソース コード ファイルをインポートします。  
+- Managed Package Framework のソース コード ファイルをインポートします。  
   
-    1.  SimpleProject プロジェクトのアンロード (で**ソリューション エクスプ ローラー**プロジェクト ノードを選択し、コンテキスト メニューで、**プロジェクトのアンロード**。) XML エディターでプロジェクト ファイルを開きます。  
+    1. SimpleProject プロジェクトのアンロード (で**ソリューション エクスプ ローラー**プロジェクト ノードを選択し、コンテキスト メニューで、**プロジェクトのアンロード**。) XML エディターでプロジェクト ファイルを開きます。  
   
-    2.  プロジェクト ファイルに、次の要素を追加 (すぐ上、\<インポート > ブロック)。 ProjectBasePath をダウンロードした Managed Package Framework コードで ProjectBase.files ファイルの場所に設定します。 パス名に円記号を追加する必要があります。 そうでない Managed Package Framework のコードを検索するプロジェクトが失敗する可能性があります。  
+    2. プロジェクト ファイルに、次の要素を追加 (すぐ上、\<インポート > ブロック)。 ProjectBasePath をダウンロードした Managed Package Framework コードで ProjectBase.files ファイルの場所に設定します。 パス名に円記号を追加する必要があります。 そうでない Managed Package Framework のコードを検索するプロジェクトが失敗する可能性があります。  
   
         ```  
         <PropertyGroup>  
@@ -269,40 +269,40 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
         ```  
   
         > [!IMPORTANT]
-        >  パスの最後に円記号を忘れないでください。  
+        > パスの最後に円記号を忘れないでください。  
   
-    3.  プロジェクトの再読み込みします。  
+    3. プロジェクトの再読み込みします。  
   
-    4.  次のアセンブリへの参照を追加します。  
+    4. 次のアセンブリへの参照を追加します。  
   
-        -   Microsoft.VisualStudio.Designer.Interfaces (in \<VSSDK install>\VisualStudioIntegration\Common\Assemblies\v2.0)  
+        - Microsoft.VisualStudio.Designer.Interfaces (in \<VSSDK install>\VisualStudioIntegration\Common\Assemblies\v2.0)  
   
-        -   WindowsBase  
+        - WindowsBase  
   
-        -   Microsoft.Build.Tasks.v4.0  
+        - Microsoft.Build.Tasks.v4.0  
   
 #### <a name="to-initialize-the-project-factory"></a>プロジェクト ファクトリを初期化するには  
   
-1.  SimpleProjectPackage.cs ファイルで次の追加`using`ステートメント。  
+1. SimpleProjectPackage.cs ファイルで次の追加`using`ステートメント。  
   
     ```  
     using Microsoft.VisualStudio.Project;  
     ```  
   
-2.  派生、`SimpleProjectPackage`クラス`Microsoft.VisualStudio.Package.ProjectPackage`します。  
+2. 派生、`SimpleProjectPackage`クラス`Microsoft.VisualStudio.Package.ProjectPackage`します。  
   
     ```  
     public sealed class SimpleProjectPackage : ProjectPackage  
     ```  
   
-3.  プロジェクト ファクトリを登録します。 次の行を追加、`SimpleProjectPackage.Initialize`メソッド直後`base.Initialize`します。  
+3. プロジェクト ファクトリを登録します。 次の行を追加、`SimpleProjectPackage.Initialize`メソッド直後`base.Initialize`します。  
   
     ```  
     base.Initialize();  
     this.RegisterProjectFactory(new SimpleProjectFactory(this));  
     ```  
   
-4.  抽象プロパティを実装して`ProductUserContext`:  
+4. 抽象プロパティを実装して`ProductUserContext`:  
   
     ```csharp  
     public override string ProductUserContext  
@@ -311,19 +311,19 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
     }  
     ```  
   
-5.  SimpleProjectFactory.cs で、次のコードを追加`using`後、既存のステートメント`using`ステートメント。  
+5. SimpleProjectFactory.cs で、次のコードを追加`using`後、既存のステートメント`using`ステートメント。  
   
     ```  
     using Microsoft.VisualStudio.Project;  
     ```  
   
-6.  派生、`SimpleProjectFactory`クラス`ProjectFactory`します。  
+6. 派生、`SimpleProjectFactory`クラス`ProjectFactory`します。  
   
     ```  
     class SimpleProjectFactory : ProjectFactory  
     ```  
   
-7.  次のダミー メソッドを追加、`SimpleProjectFactory`クラス。 後のセクションでは、このメソッドを実装します。  
+7. 次のダミー メソッドを追加、`SimpleProjectFactory`クラス。 後のセクションでは、このメソッドを実装します。  
   
     ```  
     protected override ProjectNode CreateProject()  
@@ -332,7 +332,7 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
     }  
     ```  
   
-8.  次のフィールドとコンス トラクターを追加、`SimpleProjectFactory`クラス。 これは、`SimpleProjectPackage`参照が、プライベート フィールドにキャッシュされるので、サービス プロバイダーのサイトの設定で使用できます。  
+8. 次のフィールドとコンス トラクターを追加、`SimpleProjectFactory`クラス。 これは、`SimpleProjectPackage`参照が、プライベート フィールドにキャッシュされるので、サービス プロバイダーのサイトの設定で使用できます。  
   
     ```  
     private SimpleProjectPackage package;  
@@ -351,17 +351,17 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
   
 #### <a name="to-test-the-project-factory-implementation"></a>プロジェクト ファクトリの実装をテストするには  
   
-1.  SimpleProjectFactory.cs ファイルでは、次の行にブレークポイントを設定、`SimpleProjectFactory`コンス トラクター。  
+1. SimpleProjectFactory.cs ファイルでは、次の行にブレークポイントを設定、`SimpleProjectFactory`コンス トラクター。  
   
     ```  
     this.package = package;  
     ```  
   
-2.  F5 キーを押して、Visual Studio の実験用インスタンスを起動します。  
+2. F5 キーを押して、Visual Studio の実験用インスタンスを起動します。  
   
-3.  実験用インスタンスでは、新しいプロジェクトを作成を開始します。**新しいプロジェクト**ダイアログ ボックスで、SimpleProject プロジェクトの種類をクリックして**OK**します。 ブレークポイントで実行が停止します。  
+3. 実験用インスタンスでは、新しいプロジェクトを作成を開始します。**新しいプロジェクト**ダイアログ ボックスで、SimpleProject プロジェクトの種類をクリックして**OK**します。 ブレークポイントで実行が停止します。  
   
-4.  ブレークポイントを解除し、デバッグを停止します。 まだ作成していないプロジェクト ノードため、プロジェクトの作成コードが例外をスローします。  
+4. ブレークポイントを解除し、デバッグを停止します。 まだ作成していないプロジェクト ノードため、プロジェクトの作成コードが例外をスローします。  
   
 ## <a name="extending-the-project-node-class"></a>プロジェクト ノードのクラスを拡張します。  
  実装することができますので、`SimpleProjectNode`から派生したクラス、`ProjectNode`クラス。 `ProjectNode`基底クラスは、プロジェクトの作成の次のタスクを処理します。  
@@ -432,13 +432,13 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
   
 #### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>プロジェクトのファクトリ クラスと、ノード クラスに接続するには  
   
-1.  SimpleProjectFactory.cs ファイルで次の追加`using`ステートメント。  
+1. SimpleProjectFactory.cs ファイルで次の追加`using`ステートメント。  
   
     ```  
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;  
     ```  
   
-2.  置換、`SimpleProjectFactory.CreateProject`メソッドを次のコードを使用します。  
+2. 置換、`SimpleProjectFactory.CreateProject`メソッドを次のコードを使用します。  
   
     ```  
     protected override ProjectNode CreateProject()  
@@ -450,18 +450,18 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
     }  
     ```  
   
-3.  ソリューションをリビルドし、エラーなしでビルドされることを確認します。  
+3. ソリューションをリビルドし、エラーなしでビルドされることを確認します。  
   
 ## <a name="testing-the-project-node-class"></a>プロジェクト ノードのクラスのテスト  
  プロジェクト階層を作成するかどうかを確認する、プロジェクト ファクトリをテストします。  
   
 #### <a name="to-test-the-project-node-class"></a>プロジェクト ノードのクラスをテストするには  
   
-1.  F5 キーを押してデバッグを開始します。 実験用のインスタンスでは、新しい SimpleProject を作成します。  
+1. F5 キーを押してデバッグを開始します。 実験用のインスタンスでは、新しい SimpleProject を作成します。  
   
-2.  Visual Studio では、プロジェクトを作成する、プロジェクト ファクトリを呼び出す必要があります。  
+2. Visual Studio では、プロジェクトを作成する、プロジェクト ファクトリを呼び出す必要があります。  
   
-3.  Visual Studio の実験用インスタンスを終了します。  
+3. Visual Studio の実験用インスタンスを終了します。  
   
 ## <a name="adding-a-custom-project-node-icon"></a>カスタム プロジェクト ノードのアイコンの追加  
  前のセクションでは、プロジェクト ノードのアイコンは、既定のアイコンです。 カスタム アイコンに変更することができます。  
@@ -543,13 +543,13 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
   
 #### <a name="to-test-the-custom-project-node-icon"></a>カスタム プロジェクト ノードのアイコンをテストするには  
   
-1.  デバッグを開始し、実験用インスタンスで新しい SimpleProject を作成します。  
+1. デバッグを開始し、実験用インスタンスで新しい SimpleProject を作成します。  
   
-2.  新しく作成されたプロジェクトで SimpleProjectNode.bmp がプロジェクト ノードのアイコンとして使用されることに注意してください。  
+2. 新しく作成されたプロジェクトで SimpleProjectNode.bmp がプロジェクト ノードのアイコンとして使用されることに注意してください。  
   
      ![新しいプロジェクト ノードを単純なプロジェクト](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
   
-3.  コード エディターで、Program.cs を開きます。 次のコードのようなソース コードが表示されます。  
+3. コード エディターで、Program.cs を開きます。 次のコードのようなソース コードが表示されます。  
   
     ```  
     using System;  
@@ -617,9 +617,9 @@ Visual Studio では、プロジェクトは、開発者は、ソース コー�
   
 3. 値を調べ、`nameSpace`と`className`パラメーター。  
   
-   -   `nameSpace` 値が指定されて、 \<RootNamespace > \Templates\Projects\SimpleProject\SimpleProject.myproj プロジェクトのテンプレート ファイル内の要素。 ここでは、値は、"MyRootNamespace"です。  
+   - `nameSpace` 値が指定されて、 \<RootNamespace > \Templates\Projects\SimpleProject\SimpleProject.myproj プロジェクトのテンプレート ファイル内の要素。 ここでは、値は、"MyRootNamespace"です。  
   
-   -   `className` ファイル名拡張子を除いた、クラスのソース ファイル名の値が指定されています。 この場合、最初のファイル変換先のフォルダーにコピーするのには、AssemblyInfo.cs;そのため、クラス名の値は、"AssemblyInfo"です。  
+   - `className` ファイル名拡張子を除いた、クラスのソース ファイル名の値が指定されています。 この場合、最初のファイル変換先のフォルダーにコピーするのには、AssemblyInfo.cs;そのため、クラス名の値は、"AssemblyInfo"です。  
   
 4. ブレークポイントを設定して、f5 キーを押して実行を続行します。  
   

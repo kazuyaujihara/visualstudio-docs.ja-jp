@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4359b863da56242bbe612fa0055690d9923a9ec4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 66f5510ae63507aebb97a7f8bdfd3e367f1afc85
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928507"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>方法: CD インストールの自動開始を有効にする
 デプロイするときに、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] CD-ROM または DVD-ROM などのリムーバブル メディアを使用して、アプリケーションを有効にできます`AutoStart`ように、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]メディアが挿入されると、アプリケーションが自動的に起動します。
@@ -30,17 +30,17 @@ ms.locfileid: "56600476"
 
 ### <a name="to-enable-autostart"></a>自動開始を有効にするには
 
-1.  **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
-2.  **[発行]** タブをクリックします。
+2. **発行**タブをクリックします。
 
-3.  **[オプション]** ボタンをクリックします。
+3. **[オプション]** ボタンをクリックします。
 
      **発行オプション** ダイアログ ボックスが表示されます。
 
-4.  クリックして**展開**します。
+4. クリックして**展開**します。
 
-5.  選択、**の CD のインストールは、CD が挿入されたときに自動的にセットアップを開始**チェック ボックスをオンします。
+5. 選択、**の CD のインストールは、CD が挿入されたときに自動的にセットアップを開始**チェック ボックスをオンします。
 
      *Autorun.inf*アプリケーションを発行するときにファイルを発行場所にコピーされます。
 

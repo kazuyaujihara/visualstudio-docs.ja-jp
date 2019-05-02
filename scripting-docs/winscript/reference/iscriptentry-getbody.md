@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a2cb9757c0a9683a00768d8947dfe33749e4bb9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7f8f1ad24660401d575af2724b788387fd546af8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787880"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
 本文に対応するテキストを返します、`IScriptEntry`スクリプト ブロック、関数のブロックまたはスクリプトレットします。  
@@ -39,11 +39,11 @@ HRESULT GetBody(
  `pbstr`  
  [out]このテキストは、次のいずれかの本文には:  
   
--   `IScriptEntry`スクリプト ブロック  
+- `IScriptEntry`スクリプト ブロック  
   
--   `IScriptEntry`関数ブロック内の関数  
+- `IScriptEntry`関数ブロック内の関数  
   
--   `IScriptEntry`スクリプトレットのイベント ハンドラー  
+- `IScriptEntry`スクリプトレットのイベント ハンドラー  
   
 ## <a name="return-value"></a>戻り値  
  `HRESULT`。 有効な値を次の表に示しますが、これ以外にもあります。  

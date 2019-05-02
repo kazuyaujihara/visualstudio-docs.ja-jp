@@ -1,14 +1,9 @@
 ---
 title: SccDirDiff 関数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccDirDiff
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7d2c45773a9d45c69cfed4f773bc5cdfcfa1c305
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81279e0fdb0df6600686adc57bb1c5489e8e7aab
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432457"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ SCCRTN SccDirDiff(
  [in]視覚的な違いを表示するか、ローカル ディレクトリへの完全修飾パス。  
   
  dwFlags  
- [in]コマンドのフラグ (「解説」を参照してください セクション)。  
+ [in]コマンドのフラグ (「解説」を参照してください] セクション)。  
   
  pvOptions  
  [in]ソース管理プラグインに固有のオプション。  
@@ -85,8 +80,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|プラグインでサポートされている、サイレント モードで、タイムスタンプを使用してディレクトリを比較します。 または、サポートされていない場合はフォールバック SCC_DIFF_QD_CHECKSUM または SCC_DIFF_QD_CONTENTS 場合。|  
   
 > [!NOTE]
->  この関数と同じコマンド フラグを使用して、 [SccDiff](../extensibility/sccdiff-function.md)します。 ただし、ソース管理プラグインは、ディレクトリの"クイック diff"操作をサポートしないように選択可能性があります。  
+> この関数と同じコマンド フラグを使用して、 [SccDiff](../extensibility/sccdiff-function.md)します。 ただし、ソース管理プラグインは、ディレクトリの"クイック diff"操作をサポートしないように選択可能性があります。  
   
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
-

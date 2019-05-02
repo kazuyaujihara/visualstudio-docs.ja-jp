@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cbf7582c5089d99a71b2354878b03c265755e65
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3bf5a994d173a11a8515e166c3b0bc3044bdc587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402897"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
 
@@ -34,7 +34,7 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
 
  Android プラットフォームごとに異なるデバイス プロファイル、画面の解像度、および Visual Studio Emulator for Android でサポートされるその他のハードウェア プロパティで、アプリをテストできます。
 
-##  <a name="Installing"></a> インストールとアンインストール
+## <a name="Installing"></a> インストールとアンインストール
  インストール
 
  Visual Studio Emulator for Android は、Visual Studio で使用できるクロスプラットフォーム ツールのコンポーネントであり、Visual Studio のカスタム セットアップで、[クロスプラットフォーム モバイル開発]、[共通ツールとソフトウェアの開発キット]、[Visual Studio Emulator for Android] を選択するとインストールされます。
@@ -44,11 +44,11 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
  コントロール パネルの [プログラムの追加と削除] を使用して、Android 用の Visual Studio エミュレーターをアンインストールできます。
 
 > [!NOTE]
->  Visual Studio をアンインストールしても、エミュレーターはアンインストールされません。 エミュレーターを別個にアンインストールする必要があります。
+> Visual Studio をアンインストールしても、エミュレーターはアンインストールされません。 エミュレーターを別個にアンインストールする必要があります。
 
  Visual Studio Emulator for Android をアンインストールしても、エミュレーター用に作成された Hyper-V 仮想イーサネット アダプターは自動的に削除されません。 HYPER-V マネージャーを開き、エミュレーターの VHD イメージの 1 つを選択後、[ネットワーク] タブを選び、このタブに表示される各スイッチで **[削除]** を選択して、これらの仮想アダプター (使用中でない場合) を手動で削除することができます。
 
-##  <a name="Requirements"></a> システム要件と下位互換性
+## <a name="Requirements"></a> システム要件と下位互換性
  Visual Studio Emulator for Android のハードウェア、ソフトウェア、構成の要件に関する重要な情報については、次のトピックをご覧ください。
 
 - [Visual Studio Emulator for Android のシステム要件](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
@@ -57,7 +57,7 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
 
   エミュレーターの新しいバージョンは古いバージョンの上にインストールされます (また、場合によっては、古いイメージが置き換えられて、イメージにインストールされている設定、アプリ、ファイルが破棄されることがあります)。
 
-##  <a name="Networking"></a> Visual Studio Emulator for Android でのネットワーク
+## <a name="Networking"></a> Visual Studio Emulator for Android でのネットワーク
  Visual Studio Emulator for Android のネットワーク接続は、次のような特性のデスクトップ コンピューターの接続と同じように動作します。
 
 - エミュレーターは、独自の IP アドレスを持つ独立したデバイスとしてネットワーク上に表示されます。
@@ -72,7 +72,7 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
 
   ネットワークの問題のトラブルシューティングについて詳しくは、「[Visual Studio Emulator for Android のトラブルシューティング](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)」をご覧ください。
 
-##  <a name="Configuring"></a> Visual Studio Emulator for Android の構成
+## <a name="Configuring"></a> Visual Studio Emulator for Android の構成
  Android アプリでさまざまな Android ハードウェアとの互換性をテストするのは、難しい場合があります。 市場に出回っている Android 携帯電話およびタブレットには、さまざまなバージョン、画面サイズ、ハードウェア構成 (RAM、CPU、アーキテクチャなど) があります Visual Studio Emulator for Android は、デバイス プロファイルを使用することによってこれを簡素化します。 付属のデバイス プロファイルでは、Samsung、Motorola、Sony、LG その他のデバイスを含む、市場で最も人気のあるハードウェアが含まれています。
 
  Visual Studio 2015 では、Emulator Manager を使用してデバイス プロファイルをインストール、アンインストール、開始できます。 Emulator Manager にアクセスするには、**[ツール]**、**[Visual Studio Emulator for Android]** の順に選択します。
@@ -83,26 +83,26 @@ Visual Studio Emulator for Android は、Android デバイスをエミュレー�
 
  対象にするプロファイルのセットをインストールした後は、緑色の **[プレイ]** ボタンをクリックすることで Manager から新しいプロファイルを直接開始できます。 Visual Studio クロス プラットフォーム モバイル プロジェクト タイプのデバッグ対象ドロップダウン メニューにも表示されます。
 
-##  <a name="FeaturesTest"></a> エミュレーターでテストできる機能
+## <a name="FeaturesTest"></a> エミュレーターでテストできる機能
  エミュレーターでテストできる機能については、こちらの[ブログ投稿](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/)をご覧ください。
 
-##  <a name="FeaturesNonTest"></a> エミュレーターでテストできない機能
+## <a name="FeaturesNonTest"></a> エミュレーターでテストできない機能
  次の一覧は、エミュレーターでテスト**できない** Android プラットフォームの機能です。 これらの機能は物理デバイスでテストする必要があります。
 
--   コンパス
+- コンパス
 
--   ジャイロスコープ
+- ジャイロスコープ
 
--   振動コントローラー
+- 振動コントローラー
 
--   明るさ。 エミュレーターの輝度レベルを変更しても、画面上のデバイスの表示方法は視覚的に変わりません。
+- 明るさ。 エミュレーターの輝度レベルを変更しても、画面上のデバイスの表示方法は視覚的に変わりません。
 
-##  <a name="Support"></a> サポート リソース
+## <a name="Support"></a> サポート リソース
  ホスト コンピューターがシステム要件を満たしていて、このトラブルシューティング ガイドに記載されていない問題が発生した場合は次のようにします。
 
--   [android エミュレーター](http://stackoverflow.com/questions/tagged/android-emulator)と visual-studio タグの試用について StackOverflow で質問を投稿します。
+- [android エミュレーター](http://stackoverflow.com/questions/tagged/android-emulator)と visual-studio タグの試用について StackOverflow で質問を投稿します。
 
--   Visual Studio またはエミュレーター マネージャーで、[気に入った機能の報告] を使用して、問題を報告します。
+- Visual Studio またはエミュレーター マネージャーで、[気に入った機能の報告] を使用して、問題を報告します。
 
 ## <a name="see-also"></a>関連項目
  [Visual Studio Emulator for Android のシステム要件](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) [Visual Studio Emulator for Android のトラブルシューティング](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

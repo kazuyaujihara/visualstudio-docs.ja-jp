@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 649db74d7bfc727868ee9d568aba811736a24cc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925907"
 ---
 # <a name="control-of-execution"></a>実行の制御
 デバッグ エンジン (DE) では、最後のスタートアップ イベントとして、次のイベントのいずれかの通常送信します。
@@ -24,7 +24,7 @@ ms.locfileid: "56681087"
 
 - 読み込み完了イベントを既に実行されているプログラムにアタッチする場合
 
-  これら両方のイベントは、イベント、つまり、DE が IDE を使用して、ユーザーからの応答を待機する停止しています。 詳細については、[操作モード](../../extensibility/debugger/operational-modes.md)を参照してください。
+  これら両方のイベントは、イベント、つまり、DE が IDE を使用して、ユーザーからの応答を待機する停止しています。 詳細については、次を参照してください。[操作モード](../../extensibility/debugger/operational-modes.md)します。
 
 ## <a name="stopping-event"></a>イベントを停止しています
  ときに、デバッグ セッションを停止イベントが送信されます。

@@ -36,7 +36,7 @@ ms.locfileid: "58974764"
   
  「ターゲット」は、コマンドを処理する方法には、MSBuild にインジケーターです。 キーのターゲットとは、ターゲットの「ビルド」と「発行」のターゲットです。 ビルド ターゲットがビルドを選択するのと同じ IDE でのコマンド (または f5 キーを押す) します。 プロジェクトをビルドする場合は、ことを実現する」と入力して`msbuild`します。 このコマンドは、ビルド ターゲットがによって生成されたすべてのプロジェクトの既定のターゲットであるため[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]します。 つまり、明示的にビルド ターゲットを指定する必要はありません。 したがって、`msbuild`入力と同じ操作は、`msbuild /target:build`します。  
   
- `/target:publish`コマンドは、発行ターゲットを呼び出すための MSBuild に指示します。 発行先は、ビルド ターゲットに依存します。 これは、発行操作は、ビルド操作のスーパー セットであることを意味します。 たとえば、Visual Basic または c# ソース ファイルのいずれかに変更を加えた場合、対応するアセンブリは自動的にして再構築、発行操作。  
+ `/target:publish`コマンドは、発行ターゲットを呼び出すための MSBuild に指示します。 発行先は、ビルド ターゲットに依存します。 これは、発行操作は、ビルド操作のスーパー セットであることを意味します。 たとえば、Visual Basic または C# ソース ファイルのいずれかに変更を加えた場合、対応するアセンブリは自動的にして再構築、発行操作。  
   
  完全なを生成する方法について[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]Mage.exe コマンド ライン ツールを使用して作成する展開、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]マニフェストは、「[チュートリアル。Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」(チュートリアル: ClickOnce アプリケーションを手動で配置する) を参照してください。  
   

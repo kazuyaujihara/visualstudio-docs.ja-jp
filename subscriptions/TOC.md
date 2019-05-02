@@ -22,6 +22,7 @@
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Azure クレジット](vs-azure.md)
 #### [Office 365 開発者サブスクリプション](vs-office-dev.md)
+#### [RStudio](vs-rstudio.md)
 #### [CAST の強調表示](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)

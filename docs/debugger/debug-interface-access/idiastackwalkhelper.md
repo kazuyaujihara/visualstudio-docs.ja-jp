@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0143945a266b9c76fefa10e1823a7c3ce01f85e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837837"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 プログラム デバッグ データベース (.pdb) ファイルを使用して、スタック ウォークが容易になります。
@@ -45,14 +45,14 @@ IDiaStackWalkHelper: IUnknown
 |[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|指定された仮想アドレスに関連付けられている PDATA データ ブロックを返します。|
 |[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|実行可能ファイルのメモリ領域で仮想アドレスをどこかが指定されて、実行可能ファイルの開始仮想アドレスを取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  このインターフェイスは、プログラムの実行中にスタック フレームのリストを構築する実行可能ファイルに関する情報を取得する DIA コードによって呼び出されます。
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
  クライアント アプリケーションでは、プログラムの実行中にスタックのウォークをサポートするためにこのインターフェイスを実装します。 このインターフェイスのインスタンスは、 [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)または[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)メソッド。
 
-## <a name="requirements"></a>要件
- ヘッダー: Dia2.h
+## <a name="requirements"></a>必要条件
+ ヘッダー:Dia2.h
 
  ライブラリ: diaguids.lib
 

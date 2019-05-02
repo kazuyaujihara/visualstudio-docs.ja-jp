@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 150621514f9153b1e9d67f8e9c85a00275c27b15
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 5519328ef69f98737a7744f0162bdc0951433a60
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994714"
 ---
 # <a name="extend-dependency-diagrams"></a>依存関係図の拡張
 
@@ -23,23 +23,23 @@ ms.locfileid: "58416111"
 
  依存関係図の詳細についてを参照してください。
 
--   [依存関係図:リファレンス](../modeling/layer-diagrams-reference.md)
+- [依存関係図:リファレンス](../modeling/layer-diagrams-reference.md)
 
--   [依存関係図:ガイドライン](../modeling/layer-diagrams-guidelines.md)
+- [依存関係図:ガイドライン](../modeling/layer-diagrams-guidelines.md)
 
--   [コードからの依存関係図の作成](../modeling/create-layer-diagrams-from-your-code.md)
+- [コードからの依存関係図の作成](../modeling/create-layer-diagrams-from-your-code.md)
 
--   [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)
+- [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)
 
-##  <a name="prereqs"></a> 要件
+## <a name="prereqs"></a> 要件
 
 レイヤー拡張機能を開発するコンピューターに以下の項目がインストールされている必要があります。
 
--   Visual Studio
+- Visual Studio
 
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
--   Modeling SDK for Visual Studio
+- Modeling SDK for Visual Studio
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

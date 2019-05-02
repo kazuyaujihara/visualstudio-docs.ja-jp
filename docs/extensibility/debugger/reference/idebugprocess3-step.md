@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 686e8dfbd94fc3fddbc5e696fc6e943184357c02
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 296c76a386b72c3435a90e207dd76f9eeca56422
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412951"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 1 つの命令またはステートメントにステップ イン プロセスをさせます。
 
 > [!NOTE]
->  このメソッドは、の代わりに使用する必要があります[手順](../../../extensibility/debugger/reference/idebugprogram2-step.md)します。
+> このメソッドは、の代わりに使用する必要があります[手順](../../../extensibility/debugger/reference/idebugprogram2-step.md)します。
 
 ## <a name="syntax"></a>構文
 

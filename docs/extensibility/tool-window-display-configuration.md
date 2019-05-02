@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce6345a07aa8476dd9d102e71bbfd8cdfd848d93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432162"
 ---
 # <a name="tool-window-display-configuration"></a>ツール ウィンドウの表示構成
 VSPackage でツール ウィンドウ、既定の位置、サイズ、ドッキング スタイル、およびその他の可視性の情報を登録する場合は、省略可能な値で指定されます。 ツール ウィンドウの登録の詳細については、次を参照してください[ツールの Windows レジストリで。](../extensibility/tool-windows-in-the-registry.md)
@@ -35,13 +35,12 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000
 ```
 
-
 | 名前 | 型 | データ | 説明 |
 |-----------------|-----------| - | - |
 | 名前 | REG_SZ | 「の短い名前をここに挿入」 | ツール ウィンドウを説明する短い名前。 レジストリ内の参照にのみ使用します。 |
 | Float | REG_SZ | "X1, Y1, X2, Y2" | 次の 4 つのコンマ区切りの値。 X1, Y1 はツール ウィンドウの左上隅の座標。 X2, Y2 は右下隅の座標。 すべての値は、画面座標でです。 |
 | スタイル | REG_SZ | "MDI"<br /><br /> "Float"<br /><br /> 「リンク先」<br /><br /> 「タブ」<br /><br /> "AlwaysFloat" | 最初に指定するキーワードは、ツール ウィンドウの状態を表示します。<br /><br /> "MDI"= MDI ウィンドウとドッキングします。<br /><br /> 「フローティング」浮動小数点を = です。<br /><br /> 「リンクされた」= (ウィンドウのエントリで指定された) 別のウィンドウにリンクされています。<br /><br /> 「タブ付き」= 別のツール ウィンドウと組み合わせます。<br /><br /> "AlwaysFloat"= ドッキングことはできません。<br /><br /> 詳細については、以下のコメント セクションを参照してください。 |
-| [Window] | REG_SZ | *\<GUID>* | これをツール ウィンドウのリンクやタブ付きウィンドウの GUID です。 GUID は、独自の windows のいずれかまたはで windows のいずれかに属している可能性があります、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。 |
+| ウィンドウ | REG_SZ | *\<GUID>* | これをツール ウィンドウのリンクやタブ付きウィンドウの GUID です。 GUID は、独自の windows のいずれかまたはで windows のいずれかに属している可能性があります、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。 |
 | [方向] | REG_SZ | "Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Bottom" | 以下のコメント セクションを参照してください。 |
 | DontForceCreate | REG_DWORD | 0 または 1 | このエントリが存在し、その値が 0 でない場合、ウィンドウが読み込まれましたが、すぐに表示されます。 |
 

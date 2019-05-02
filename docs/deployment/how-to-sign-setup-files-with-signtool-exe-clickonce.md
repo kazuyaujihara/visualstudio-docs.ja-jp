@@ -1,5 +1,5 @@
 ---
-title: '方法: SignTool.exe (ClickOnce) を持つファイルを使用してセットアップ |Microsoft Docs'
+title: '方法: セットアップ ファイルに SignTool.exe (ClickOnce) |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc6630bfe8dd5ee1fc48fe0d5abe189a63ab330
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928405"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>方法: SignTool.exe を使用してセットアップ ファイルに署名する (ClickOnce)
 *SignTool.exe* を使用して、セットアップ プログラム (*setup.exe*) に署名できます。 このプロセスによって、改ざんされたファイルがエンド ユーザーのコンピューターにインストールされないようにすることができます。
@@ -34,23 +34,23 @@ ms.locfileid: "56619967"
 
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>未署名のセットアップ プログラムを生成し、後で署名するには
 
-1.  マニフェストに署名する証明書を開発用コンピューターにインストールします。
+1. マニフェストに署名する証明書を開発用コンピューターにインストールします。
 
-2.  **ソリューション エクスプローラー**でプロジェクトを選択します。
+2. **ソリューション エクスプローラー**でプロジェクトを選択します。
 
-3.  **[プロジェクト]** メニューの *ProjectName* の **[プロパティ]** をクリックします。
+3. **[プロジェクト]** メニューの *ProjectName* の **[プロパティ]** をクリックします。
 
-4.  **[署名]** ページの **[ClickOnce マニフェストに署名する]** をオフにします。
+4. **[署名]** ページの **[ClickOnce マニフェストに署名する]** をオフにします。
 
-5.  **[発行]** ページで、**[必須コンポーネント]** をクリックします。
+5. **[発行]** ページで、**[必須コンポーネント]** をクリックします。
 
-6.  すべての必須コンポーネントが選択されていることを確認し、**[OK]** をクリックします。
+6. すべての必須コンポーネントが選択されていることを確認し、**[OK]** をクリックします。
 
-7.  **[発行]** ページで発行設定を確認して、**[今すぐ発行]** をクリックします。
+7. **[発行]** ページで発行設定を確認して、**[今すぐ発行]** をクリックします。
 
      ソリューションは、未署名のアプリケーション マニフェスト、未署名の配置マニフェスト、バージョン固有のファイル、および未署名のセットアップ プログラムを発行フォルダーに発行します。
 
-8.  **[発行]** ページで、**[必須コンポーネント]** をクリックします。
+8. **[発行]** ページで、**[必須コンポーネント]** をクリックします。
 
 9. **[必須コンポーネント]** ダイアログ ボックスで、**[必須コンポーネントをインストールするセットアップ プログラムを作成する]** をオフにします。
 
@@ -77,4 +77,4 @@ ms.locfileid: "56619967"
     ```
 
 ## <a name="see-also"></a>関連項目
-- [方法: アプリケーション マニフェストおよび配置マニフェストに再署名する](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+- [方法: アプリケーション マニフェストと配置マニフェストの再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

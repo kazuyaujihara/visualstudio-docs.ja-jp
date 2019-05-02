@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3074e019a0b18880cd2188868ef86b7ed2b1fb76
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 366416e4f18435bd01391657eb2fc4f65f8a4d62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441781"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>方法: コードを実行することがなく Office ソリューションを開く
   マネージ コード拡張機能で作成された Microsoft Office ソリューションでは、エンドユーザーの Office アプリケーションのセキュリティ設定が [高] に設定されている場合でも実行されます。 これは、.NET アセンブリのコードのセキュリティは、Microsoft Office ではなく、Microsoft .NET Framework によって管理されるためです。
@@ -36,16 +36,16 @@ ms.locfileid: "56616132"
 
 ## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Shift キーを使用して、アセンブリをバイパスするには
 
--   ドキュメントおよびからブックを開く、**ファイル**メニューを押しながら、 **Shift** Word および Excel のドキュメントを開くときに、初期化イベントを発生させるようにするキー。
+- ドキュメントおよびからブックを開く、**ファイル**メニューを押しながら、 **Shift** Word および Excel のドキュメントを開くときに、初期化イベントを発生させるようにするキー。
 
     > [!NOTE]
-    >  ドキュメントまたはブックを開いた場合、 **Getting Started**を押し、作業ウィンドウ**Shift**コードをバイパスしていません。 また、shift キーを押しができないイベントが、ドキュメントを開いた後に発生します。
+    > ドキュメントまたはブックを開いた場合、 **Getting Started**を押し、作業ウィンドウ**Shift**コードをバイパスしていません。 また、shift キーを押しができないイベントが、ドキュメントを開いた後に発生します。
 
      このメソッドは、変更を加えるコードを実行していると、文書の変更がないドキュメントを開きたい場合に便利です。
 
 ## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>アセンブリをバイパスするには、名前を変更または削除するのには
 
--   アセンブリが配置されているコンピューターで必要なアクセス許可があれば、名前を変更または文書またはブックが見つけられないため、アセンブリを削除できます。 Office ドキュメントが開かれるたびに発生するエラーが発生します。
+- アセンブリが配置されているコンピューターで必要なアクセス許可があれば、名前を変更または文書またはブックが見つけられないため、アセンブリを削除できます。 Office ドキュメントが開かれるたびに発生するエラーが発生します。
 
      複数の人が、ソリューションを使用する場合、このメソッドは、それらのすべての実行から、ソリューションを防ぎます。 これは、コードまたは参照先のサーバーで問題が見つかるし、実行のすべてのユーザーを停止する場合に役立ちます。
 

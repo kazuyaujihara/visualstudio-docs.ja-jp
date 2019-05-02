@@ -22,18 +22,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 16091b8743a30404560a1bf841710f65ad1343a3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929768"
 ---
 # <a name="select-code-type-dialog-box"></a>[コードの種類の選択] ダイアログ ボックス
 このダイアログ ボックスを開くには、**[プロセスにアタッチ]** ダイアログ ボックスを開き、**[選択]** をクリックします。
 
  **デバッグするコードの種類を自動的に決定**が実行されているコードの種類に基づいて適切なデバッガーが選択されます。
 
- **コードの種類:** 表示された一覧から、デバッグするコードの種類を選択します。
+ **次のコードの種類をデバッグする:** 表示される一覧から、デバッグするコードの種類を選択します。
 
 ## <a name="see-also"></a>関連項目
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)

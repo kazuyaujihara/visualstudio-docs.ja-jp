@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62425750"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>方法: Visual Studio 拡張機能のルール ベースの UI コンテキストを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,8 +137,6 @@ Visual Studio と特定の Vspackage の読み込みを許可するよく知ら�
 |ActiveProjectCapability:\<式 >|という用語は、アクティブなプロジェクトの機能が指定された式と一致する場合は true です。 式には、VB のようなものを指定できる&#124;CSharp|
 |SolutionHasProjectCapability:\<式 >|上記に似ていますが、用語はソリューションには、読み込まれているプロジェクトを式に一致する場合に当てはまります。|
 |SolutionHasProjectFlavor:\<projectTypeGuid >|ソリューション (集計) プロジェクト フレーバーがあり、特定のプロジェクト型 GUID と一致するフレーバーたびに、用語が true になります。|
-
-
 
 ## <a name="compatibility-with-cross-version-extension"></a>バージョン間の拡張機能との互換性
  ルール ベースの UI コンテキストは以前のバージョンに移植しないと、Visual Studio 2015 の新機能です。 これには、Visual Studio 2013 での自動読み込みと以前のバージョンをする必要がありますが、ルール ベースの UI コンテキストを自動で読み込まれる Visual Studio 2015 を防ぐために役立ちますが、Visual Studio の複数のバージョンを対象とする拡張機能/パッケージに問題が作成されます。

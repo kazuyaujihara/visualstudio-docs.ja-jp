@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36985ab7a0ee94cb735b1954a9e5ea9c2e0d2bbf
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825472"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET Compiler Platform アナライザーの概要
 
@@ -38,17 +38,27 @@ ms.locfileid: "57869097"
 
 有効になっている場合はスタティック コード分析と同様、Roslyn アナライザーでビルド時にコードが分析されますが、入力中もライブ状態になります。 [完全ソリューション解析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis)を有効にした場合、Roslyn アナライザーではエディターで開かれていないコード ファイルを設計時に解析することもできます。
 
-> [!NOTE]
+> [!TIP]
 > Roslyn アナライザーからのビルド時のエラーと警告が表示されるのは、アナライザーが NuGet パッケージとしてインストールされている場合のみです。
 
 Roslyn アナライザーでは、スタティック コード分析で報告されるものと同じ種類の問題が報告されるだけでなく、ファイルやプロジェクトで発生した違反の 1 つ、またはすべてを簡単に修正することができます。 これらのアクションを*コード修正*と呼びます。 コード修正は IDE に固有のものです。Visual Studio では、[クイック アクション](../ide/quick-actions.md)として実装されます。 すべてのアナライザー診断にコード修正が関連付けられているわけではありません。
 
 > [!NOTE]
-> メニュー オプションの **[分析]** > **[コード分析の実行]** は、スタティック コード分析にのみ適用されます。 さらに、プロジェクトの **[コード分析]** プロパティ ページでは、**[ビルドに対するコード分析の有効化]** および **[生成されたコードから結果を表示しない]** チェック ボックスはスタティック コード分析にのみ適用されます。 Roslyn アナライザーには影響しません。
+> 次の UI オプションは、静的コードの分析のみに適用されます。
+>
+> - **[分析]** > **[コード分析の実行]** メニュー オプション。
+> - プロジェクトのプロパティ ページの **[コード分析]** タブにある **[ビルドに対するコード分析の有効化]** および **[生成されたコードの結果を表示しない]** チェック ボックス (これらのオプションは、Roslyn アナライザー上では効果がありません)。
 
 **[エラー一覧]** で Roslyn アナライザーとスタティック コード分析からの違反を区別するには、**[ツール]** 列を確認します。 **ソリューション エクスプローラー**のアナライザー アセンブリのいずれかが [ツール] の値 (**Microsoft.CodeQuality.Analyzers** など) と一致する場合、違反は Roslyn アナライザーからのものです。 それ以外の場合、違反はスタティック コード分析からのものです。
 
 ![[エラー一覧] の [ツール] 列](media/code-analysis-tool-in-error-list.png)
+
+> [!TIP]
+> プロジェクト ファイルにある **RunCodeAnalysis** msbuild プロパティは、静的コード分析のみに適用されます。 アナライザーをインストールする場合は、プロジェクト ファイルにある **RunCodeAnalysis** を **false** に設定して、静的コード分析がビルド後に実行されないようにします。
+>
+> ```xml
+> <RunCodeAnalysis>false</RunCodeAnalysis>
+> ```
 
 ## <a name="nuget-package-versus-vsix-extension"></a>NuGet パッケージと VSIX 拡張機能
 

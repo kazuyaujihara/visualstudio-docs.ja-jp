@@ -1,14 +1,9 @@
 ---
-title: 'Ca 1065: 予期しない場所での例外を発生させないで |Microsoft Docs'
-ms.custom: ''
+title: CA1065:予期しない場所で例外を発生させないで |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1065
 - DoNotRaiseExceptionsInUnexpectedLocations
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c5a393c32d7f7182fc3226689e24d20a4cae1ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887608"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095354"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: 予期しない場所に例外を発生させません
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065:予期しない場所に例外を発生させません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -70,24 +65,24 @@ ms.locfileid: "49887608"
 
  プロパティの get メソッドからスローされることができるは、次の例外。
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> すべての派生物 (を含む<xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> すべての派生物 (を含む<xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> すべての派生
+- <xref:System.NotSupportedException?displayProperty=fullName> すべての派生
 
--   <xref:System.ArgumentException?displayProperty=fullName> (インデックスが付けられます) からのみ
+- <xref:System.ArgumentException?displayProperty=fullName> (インデックスが付けられます) からのみ
 
--   <xref:System.Collections.Generic.KeyNotFoundException> (インデックスが付けられます) からのみ
+- <xref:System.Collections.Generic.KeyNotFoundException> (インデックスが付けられます) からのみ
 
 ### <a name="event-accessor-methods"></a>イベントのアクセサー メソッド
  イベント アクセサーには、単純な操作例外をスローしない必要があります。 イベントは、追加、またはイベント ハンドラーを削除しようとするときに例外をスローしません。
 
  次の例外は、イベント アクセサーからスローされる使用できます。
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> すべての派生物 (を含む<xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> すべての派生物 (を含む<xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> すべての派生
+- <xref:System.NotSupportedException?displayProperty=fullName> すべての派生
 
--   <xref:System.ArgumentException> 派生
+- <xref:System.ArgumentException> 派生
 
 ### <a name="equals-methods"></a>Equals メソッド
  次**Equals**メソッドが例外をスローする必要があります。
@@ -138,10 +133,7 @@ ms.locfileid: "49887608"
  スローされた例外ではなく例外宣言、違反が発生した場合、この規則による警告を抑制する安全です。
 
 ## <a name="related-rules"></a>関連規則
- [CA2219: exception 句に例外を発生させないでください](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+ [CA2219:Exception 句に例外を発生させません](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
 ## <a name="see-also"></a>関連項目
  [デザインの警告](../code-quality/design-warnings.md)
-
-
-

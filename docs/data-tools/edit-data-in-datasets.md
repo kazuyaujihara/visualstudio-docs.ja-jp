@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5adc9574fa36fd77c1d30d6045795953c37349bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: eb6651d788979343752fac30c4570d955b53068c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402858"
 ---
 # <a name="edit-data-in-datasets"></a>データセットのデータの編集
 任意のデータベースのテーブルにデータを編集するのと同様に、データ テーブル内のデータを編集します。 プロセスには、挿入、更新、およびテーブル内のレコードの削除を含めることができます。 データ バインド フォームでは、どのフィールドがユーザーが編集可能なを指定できます。 その場合は、データ バインド インフラストラクチャは、すべての変更の追跡、変更を後で元のデータベースに送信できるようにを処理します。 データにプログラムで編集を行ってそれらの変更をデータベースに送信する場合は、オブジェクトや変更の追跡を行うメソッドを使用する必要があります。
@@ -53,12 +53,12 @@ ms.locfileid: "55928674"
 
 #### <a name="to-delete-records-from-a-data-table"></a>データ テーブルからレコードを削除するには
 
--   呼び出す、<xref:System.Data.DataRow.Delete%2A>のメソッド、<xref:System.Data.DataRow>します。
+- 呼び出す、<xref:System.Data.DataRow.Delete%2A>のメソッド、<xref:System.Data.DataRow>します。
 
      このメソッドは、レコードを物理的に削除されません。 代わりに、削除のレコードをマークします。
 
     > [!NOTE]
-    >  Count プロパティが表示された場合、 <xref:System.Data.DataRowCollection>、結果のカウントには、削除対象としてマークされているレコードが含まれています。 削除対象としてマークされないレコードの正確なカウントを取得する、見てコレクションをループ処理することができます、<xref:System.Data.DataRow.RowState%2A>各レコードのプロパティ。 (削除対象としてマークするレコードが、<xref:System.Data.DataRow.RowState%2A>の<xref:System.Data.DataRowState.Deleted>)。または、行の状態に基づくフィルターをデータセットのデータ ビューを作成し、そこから、count プロパティを取得することができます。
+    > Count プロパティが表示された場合、 <xref:System.Data.DataRowCollection>、結果のカウントには、削除対象としてマークされているレコードが含まれています。 削除対象としてマークされないレコードの正確なカウントを取得する、見てコレクションをループ処理することができます、<xref:System.Data.DataRow.RowState%2A>各レコードのプロパティ。 (削除対象としてマークするレコードが、<xref:System.Data.DataRow.RowState%2A>の<xref:System.Data.DataRowState.Deleted>)。または、行の状態に基づくフィルターをデータセットのデータ ビューを作成し、そこから、count プロパティを取得することができます。
 
 次の例を呼び出す方法を示しています、<xref:System.Data.DataRow.Delete%2A>の最初の行をマークするメソッド、`Customers`テーブルの削除済みとして。
 
@@ -70,15 +70,15 @@ ms.locfileid: "55928674"
 
 変更は、各データ行に 2 つの方法を追跡します。
 
--   各データ行には、関連する情報が含まれています。 その<xref:System.Data.DataRow.RowState%2A>(たとえば、 <xref:System.Data.DataRowState.Added>、 <xref:System.Data.DataRowState.Modified>、 <xref:System.Data.DataRowState.Deleted>、または<xref:System.Data.DataRowState.Unchanged>)。
+- 各データ行には、関連する情報が含まれています。 その<xref:System.Data.DataRow.RowState%2A>(たとえば、 <xref:System.Data.DataRowState.Added>、 <xref:System.Data.DataRowState.Modified>、 <xref:System.Data.DataRowState.Deleted>、または<xref:System.Data.DataRowState.Unchanged>)。
 
--   変更されたデータの各行には、その行の複数のバージョンが含まれています (<xref:System.Data.DataRowVersion>)、元のバージョン (変更前) に、と現在のバージョン (変更後)。 変更が保留中の期間中に (に応答するときに、<xref:System.Data.DataTable.RowChanging>イベント)、3 つ目のバージョン: 提案されたバージョン: も利用できます。
+- 変更されたデータの各行には、その行の複数のバージョンが含まれています (<xref:System.Data.DataRowVersion>)、元のバージョン (変更前) に、と現在のバージョン (変更後)。 変更が保留中の期間中に (に応答するときに、<xref:System.Data.DataTable.RowChanging>イベント)、3 つ目のバージョン: 提案されたバージョン: も利用できます。
 
 データセットが変更された場合、データセットの <xref:System.Data.DataSet.HasChanges%2A> メソッドでは、`true` が返されます。 変更された行が存在することを確認した後は、`GetChanges` または <xref:System.Data.DataSet> の <xref:System.Data.DataTable> メソッドを呼び出して、変更された一連の行を取得できます。
 
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>行に変更が加えられましたかどうかを判断するには
 
--   データセットの <xref:System.Data.DataSet.HasChanges%2A> メソッドを呼び出し、変更された行があるかどうかをチェックします。
+- データセットの <xref:System.Data.DataSet.HasChanges%2A> メソッドを呼び出し、変更された行があるかどうかをチェックします。
 
 <xref:System.Data.DataSet.HasChanges%2A> メソッドから返された値をチェックし、`NorthwindDataset1` という名前のデータセットが変更された行があるかどうかを確認する方法を次の例に示します。
 
@@ -90,7 +90,7 @@ ms.locfileid: "55928674"
 
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>行への変更の種類を確認するには
 
--   <xref:System.Data.DataRowState> 値を <xref:System.Data.DataSet.HasChanges%2A> メソッドに渡します。
+- <xref:System.Data.DataRowState> 値を <xref:System.Data.DataSet.HasChanges%2A> メソッドに渡します。
 
 次の例は、という名前のデータセットを確認する方法を示しています。`NorthwindDataset1`をそれには、新しい行が追加された場合を判断します。
 
@@ -100,9 +100,9 @@ ms.locfileid: "55928674"
 ## <a name="to-locate-rows-that-have-errors"></a>エラーが発生した行を探す
 個々 の列と行のデータを使用する場合は、エラーが発生する可能性があります。 チェックすることができます、`HasErrors`プロパティでエラーが存在するかどうかは確認を<xref:System.Data.DataSet>、 <xref:System.Data.DataTable>、または<xref:System.Data.DataRow>します。
 
-1.  チェック、`HasErrors`プロパティをデータセットのすべてのエラーがないかを参照してください。
+1. チェック、`HasErrors`プロパティをデータセットのすべてのエラーがないかを参照してください。
 
-2.  場合、`HasErrors`プロパティは`true`テーブルのコレクションを反復処理し、エラー行を検索する、行を介してします。
+2. 場合、`HasErrors`プロパティは`true`テーブルのコレクションを反復処理し、エラー行を検索する、行を介してします。
 
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]

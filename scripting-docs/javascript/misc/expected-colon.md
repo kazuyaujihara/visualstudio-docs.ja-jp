@@ -14,19 +14,19 @@ ms.assetid: cbb1bb65-59e4-47e0-834d-8f514cfda0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed7856641193503d50b39ebab7796414f9620a1f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MT
+ms.openlocfilehash: ec862ccee47772fc9fc5b4794b88212ff8781d44
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935290"
 ---
 # <a name="expected-"></a>':' が必要です。
 三項条件演算子を使用して式を作成しようとしましたが、2 番目と 3 番目のオペランドの間にコロンが含まれていません。 三項の (3 つのオペランド) 条件付き演算子には、2 番目 (true) と 3 番目 (false) の間にコロンが必要なオペランドです。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   2 番目と 3 番目のオペランドの間にコロンを挿入します。  
+- 2 番目と 3 番目のオペランドの間にコロンを挿入します。  
   
 ## <a name="see-also"></a>関連項目  
  [条件 (三項) 演算子 (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   

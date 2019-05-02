@@ -14,12 +14,12 @@ ms.assetid: 712315e1-4c68-4f66-84c2-41b83c42d85a
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d40497f9c67ba5fd34dafbdcc186ff966c8ec21e
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 67f8beaed8ba94d30c04df866805bc0c8268a093
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934874"
 ---
 # <a name="expected--javascript"></a>'(' が必要です。(JavaScript)
 かっこのセット内の式を囲みますしようとしましたが、始めかっこが含まれていません。 一部の式は、かっこと右かっこのセット内で囲む必要があります。 次の例では、かっこの使用に注意してください。  
@@ -32,4 +32,4 @@ statement;
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   評価式に左かっこを追加します。
+- 評価式に左かっこを追加します。

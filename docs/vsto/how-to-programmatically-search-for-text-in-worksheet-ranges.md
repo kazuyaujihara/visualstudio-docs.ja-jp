@@ -14,24 +14,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 800dcfaa7ae171d1bf3812bef3a8bedda3f2bd21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3e0befc61b39030bd7144cef10b54e70dc71e33a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419548"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>方法: プログラムによってワークシートの範囲内のテキストを検索します。
-  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>のメソッド、<xref:Microsoft.Office.Interop.Excel.Range>オブジェクトでは、範囲内でテキストを検索することができます。 このテキストのエラー文字列など、ワークシートのセルに表示されることができますを指定できますも`#NULL!`または`#VALUE!`します。 エラー文字列の詳細については、[エラー値をセル](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)を参照してください。
+  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>のメソッド、<xref:Microsoft.Office.Interop.Excel.Range>オブジェクトでは、範囲内でテキストを検索することができます。 このテキストのエラー文字列など、ワークシートのセルに表示されることができますを指定できますも`#NULL!`または`#VALUE!`します。 エラー文字列の詳細については、次を参照してください。[エラー値をセル](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)します。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
  次の例では、名前付き範囲を検索する`Fruits`"apples"という単語を含むセルのフォントを変更します。 このプロシージャで、<xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>メソッドは、事前に設定を使用して検索を繰り返すの設定を検索します。 検索するセルを指定して、<xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>メソッドがすべて引き受けてくれます。
 
 > [!NOTE]
->  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>範囲の末尾に達した後、検索範囲の先頭に戻ってメソッドの検索をラップします。 コードは必要があります、検索が無限ループに入るをラップしないことを確認します。 サンプル プロシージャを使用してこれを処理する 1 つの方法を示しています、<xref:Microsoft.Office.Interop.Excel.Range.Address%2A>プロパティ。
+> <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>範囲の末尾に達した後、検索範囲の先頭に戻ってメソッドの検索をラップします。 コードは必要があります、検索が無限ループに入るをラップしないことを確認します。 サンプル プロシージャを使用してこれを処理する 1 つの方法を示しています、<xref:Microsoft.Office.Interop.Excel.Range.Address%2A>プロパティ。
 
- ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:Excel アドインでは、Find メソッドを使用しますか](http://go.microsoft.com/fwlink/?LinkID=130294).
+ ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。Excel アドインでは、Find メソッドを使用しますか。](http://go.microsoft.com/fwlink/?LinkID=130294).
 
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>ワークシートの範囲内のテキストを検索するには
 

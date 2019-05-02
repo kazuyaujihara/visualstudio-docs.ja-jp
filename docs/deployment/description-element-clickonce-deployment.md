@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c359b188894c40f017e3d2a0e06d52de87e9c5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928799"
 ---
-# <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;説明&gt;要素 (ClickOnce 配置)
-シェル プレゼンスの作成に使用されるアプリケーション情報を識別、**プログラム追加と削除**コントロール パネルの項目。
+# <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;description&gt;要素 (ClickOnce 配置)
+シェル プレゼンスの作成とコントロール パネルの**プログラム追加と削除**の項目に使用されるアプリケーション情報を識別します。
 
 ## <a name="syntax"></a>構文
 
@@ -39,16 +39,16 @@ ms.locfileid: "56618563"
 ```
 
 ## <a name="elements-and-attributes"></a>要素と属性
- `description` 要素は必須です。この要素は `urn:schemas-microsoft-com:asm.v1` 名前空間に属します。 子要素が含まれていないと、次の属性があります。
+ `description` 要素は必須です。この要素は `urn:schemas-microsoft-com:asm.v1` 名前空間に属します。 これは、子要素を含まず、かつ、次の属性を持ちます。 
 
 |属性|説明|
 |---------------|-----------------|
-|`publisher`|必須です。 Windows でアイコンの配置に使用する会社名を識別する**開始**メニューおよび**プログラム追加と削除**インストールの展開が構成されている場合、コントロール パネルの。|
-|`product`|必須です。 完全な製品名を識別します。 Windows にインストールされているアイコンのタイトルとして使用される**開始**メニュー。|
+|`publisher`|必須。 Windows でアイコンの配置に使用する会社名を識別する**開始**メニューおよび**プログラム追加と削除**インストールの展開が構成されている場合、コントロール パネルの。|
+|`product`|必須。 完全な製品名を識別します。 Windows にインストールされているアイコンのタイトルとして使用される**開始**メニュー。|
 |`suiteName`|任意。 内のサブフォルダーを識別、`publisher`フォルダー、Windows で**開始**メニュー。|
 |`supportUrl`|任意。 表示されるサポート URL を指定します、**プログラム追加と削除**コントロール パネルの項目。 この URL へのショートカットは、Windows でのアプリケーションのサポートの作成も**開始**] メニューの [インストールの展開が構成されている場合。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  Description 要素は、すべての展開構成に必要です。
 
 ## <a name="example"></a>例

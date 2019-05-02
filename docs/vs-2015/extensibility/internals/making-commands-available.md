@@ -13,21 +13,21 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f709786d908d5bfe4ef4db04916801a5cd6a7366
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436247"
 ---
 # <a name="making-commands-available"></a>コマンドを使用可能にする
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Visual Studio には、複数の Vspackage を追加するときにユーザー インターフェイス (UI) をコマンドで overcrowded になる可能性があります。 次のように、この問題を軽減するためにパッケージをプログラムすることができます。  
   
--   パッケージをプログラムするときにのみが読み込まれるように必要があります。  
+- パッケージをプログラムするときにのみが読み込まれるように必要があります。  
   
--   統合開発環境 (IDE) の現在の状態のコンテキストで、必要な場合にのみ、そのコマンドが表示されるように、パッケージをプログラムします。  
+- 統合開発環境 (IDE) の現在の状態のコンテキストで、必要な場合にのみ、そのコマンドが表示されるように、パッケージをプログラムします。  
   
 ## <a name="delayed-loading"></a>遅延読み込み  
  有効にするには、一般的な方法としては、UI では、そのコマンドが表示されますが、パッケージ自体では、ユーザーが、コマンドのいずれかをクリックするまでは読み込まれませんように VSPackage を設計するには遅延読み込み。 .Vsct ファイルで、これを実現するには、コマンドのフラグが設定されていないコマンドを作成します。  
@@ -94,14 +94,14 @@ Visual Studio には、複数の Vspackage を追加するときにユーザー 
 ### <a name="custom-context-guids"></a>カスタム コンテキストの Guid  
  適切なコマンドは、GUID が定義されていないコンテキスト場合、VSPackage のいずれかを定義し、アクティブまたはコマンドの表示を制御する必要に応じて非アクティブにすることをプログラムできます。 使用して、<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>サービス。  
   
--   コンテキストの Guid を登録する (呼び出すことによって、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>メソッド)。  
+- コンテキストの Guid を登録する (呼び出すことによって、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>メソッド)。  
   
--   コンテキストの状態を取得する`GUID`(呼び出すことによって、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>メソッド)。  
+- コンテキストの状態を取得する`GUID`(呼び出すことによって、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>メソッド)。  
   
--   コンテキストを有効にする`GUID`s のオンとオフ (呼び出すことによって、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>メソッド)。  
+- コンテキストを有効にする`GUID`s のオンとオフ (呼び出すことによって、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>メソッド)。  
   
     > [!CAUTION]
-    >  確認して、VSPackage 影響を及ぼさないように既存のコンテキストの GUID の状態の他の Vspackage がそれらに依存している可能性があります。  
+    > 確認して、VSPackage 影響を及ぼさないように既存のコンテキストの GUID の状態の他の Vspackage がそれらに依存している可能性があります。  
   
 ## <a name="example"></a>例  
  VSPackage のコマンドの次の例では、VSPackage を読み込むことがなく、コマンドのコンテキストで管理されているコマンドの動的な可視性を示します。  

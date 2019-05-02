@@ -11,12 +11,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdc69441de852e16adc047465aeec30003fe5170
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 467554b8e50878bcdf1029e4792bbf168a09fa11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445242"
 ---
 # <a name="detecting-system-requirements"></a>システム要件の検出
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Visual Studio がインストールされていない場合、VSPackage は機�
    「高」のエディションがインストールされている場合、そのエディションを"lower"エディションの場合と同様のレジストリ キーが追加されます。 つまり、Enterprise edition がインストールされている場合は、インストール キーが 1 の Enterprise、および Professional および Community エディションに設定されます。 そのために、必要があります「最高」エディションのみを確認する必要があります。  
   
 > [!NOTE]
->  レジストリ エディターの 64 ビット バージョンで 32 ビットのキーは hkey_local_machine \software\wow6432node 下に表示されて\\します。 Visual Studio のキーは HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\します。  
+> レジストリ エディターの 64 ビット バージョンで 32 ビットのキーは hkey_local_machine \software\wow6432node 下に表示されて\\します。 Visual Studio のキーは HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\します。  
   
 |製品|キー|  
 |-------------|---------|  

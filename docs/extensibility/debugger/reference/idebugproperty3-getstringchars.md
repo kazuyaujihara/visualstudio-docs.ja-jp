@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 900238434f5671cd9a5ba1bd358304638551dbc5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01558ccf2d4f0e06231a9cbe152c47b1601bfdb2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916528"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 このプロパティに関連付けられている文字列を取得し、ユーザーが指定したバッファーに格納します。
@@ -49,8 +49,7 @@ int GetStringChars(
 
  [out]文字列を返します。
 
-
- [C++ のみ]、`rgString`を文字列の Unicode 文字を受け取るバッファーへのポインターです。 このバッファーは以上である必要があります`buflen`サイズの文字 (バイトではありません)。
+ [C++のみ]、`rgString`を文字列の Unicode 文字を受け取るバッファーへのポインターです。 このバッファーは以上である必要があります`buflen`サイズの文字 (バイトではありません)。
 
 `pceltFetched`
 

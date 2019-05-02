@@ -26,14 +26,14 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 49ee21943f63cee3fff35d2bb92817294169c61f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: 3bee60a54576ab816c63cf60f2226ebbbaf50c44
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388487"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>方法: 有効にして、エディット コンティニュを無効にする (C#、VB、C++)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>方法: 有効にして、エディット コンティニュを無効にする (C#、VB、 C++)
 
 無効にするか、有効にする**エディット コンティニュ**Visual Studio で**オプション**デザイン時にダイアログ ボックス。 **エディット コンティニュ**はデバッグ ビルドでのみ動作します。 詳細については、「[エディット コンティニュ](../debugger/edit-and-continue.md)」を参照してください。
 
@@ -41,14 +41,14 @@ ms.locfileid: "57223586"
 
 **有効または、エディット コンティニュを無効にします。**
 
-1.  デバッグ セッションの場合は、デバッグを停止 (**デバッグ** > **デバッグの停止**または**Shift**+**F5**).
+1. デバッグ セッションの場合は、デバッグを停止 (**デバッグ** > **デバッグの停止**または**Shift**+**F5**).
 
-1.  **ツール** > **オプション**> (または**デバッグ** > **オプション**) > **のデバッグ** > **全般**、**エディット コンティニュ**右側のウィンドウで。
+1. **ツール** > **オプション**> (または**デバッグ** > **オプション**) > **のデバッグ** > **全般**、**エディット コンティニュ**右側のウィンドウで。
 
     > [!NOTE]
-    >  IntelliTrace が有効になっている場合に、IntelliTrace イベントと呼び出し情報の両方を収集すると、エディット コンティニュが無効になります。 詳細については、次を参照してください。 [IntelliTrace](../debugger/intellitrace.md)します。
+    > IntelliTrace が有効になっている場合に、IntelliTrace イベントと呼び出し情報の両方を収集すると、エディット コンティニュが無効になります。 詳細については、次を参照してください。 [IntelliTrace](../debugger/intellitrace.md)します。
 
-1.  C++ コードのことを確認します**を有効にするネイティブ エディット コンティニュ**を選択すると、し、追加のオプションを設定します。
+1. C++ コードのことを確認します**を有効にするネイティブ エディット コンティニュ**を選択すると、し、追加のオプションを設定します。
     - **[コンティニュに変更を適用する (ネイティブのみ)]**
 
       選択した場合、Visual Studio は自動的にコンパイルし、中断状態からデバッグを続行する場合は、コードの変更を適用します。 それ以外の場合を使用して変更を適用できます**デバッグ** > **コード変更を適用**します。
@@ -57,4 +57,4 @@ ms.locfileid: "57223586"
 
       選択した場合、古いコードに関する警告を示します。
 
-1.  **[OK]** をクリックします。
+1. **[OK]** をクリックします。

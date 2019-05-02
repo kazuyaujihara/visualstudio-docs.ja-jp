@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2066e1c3ae3975536735290c34932f347c15693
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f44dcb010dd9c62d130913efd590a4c1b651de50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964150"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082002"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812:インスタンス化されていない内部クラスを使用しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,9 +59,9 @@ ms.locfileid: "58964150"
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  このルールの違反を修正するには、型を削除またはそれを使用するコードを追加します。 型に静的メソッドのみが含まれている場合は、コンパイラが既定のパブリック インスタンス コンス トラクターを生成するを防ぐために、型に、次のいずれかを追加します。
 
--   プライベート コンス トラクター型を対象とする[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]version 1.0 および 1.1。
+- プライベート コンス トラクター型を対象とする[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]version 1.0 および 1.1。
 
--   `static` (`Shared` Visual basic) 修飾子は型を対象とする[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]します。
+- `static` (`Shared` Visual basic) 修飾子は型を対象とする[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  このルールから警告を抑制しても安全です。 次の状況では、この警告を抑制することをお勧めします。

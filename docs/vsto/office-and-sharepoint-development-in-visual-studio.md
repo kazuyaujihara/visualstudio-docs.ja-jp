@@ -21,25 +21,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4eb2e58070a4be9d9dd5d70fdaddfd5eee997a41
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1af1b3ea3f8996d1d9aed2245514c51751f11bc2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970439"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio による Office および SharePoint 開発
   ユーザーが [Office ストア](https://store.office.com/) または組織のカタログからダウンロードする軽量なアプリやアドインを作成するか、ユーザーがコンピューターにインストールする .NET Framework ベースのソリューションを作成することによって、Microsoft Office および SharePoint を拡張できます。
 
  このトピックの内容:
 
--   [Office と SharePoint 用アドインの作成](#Apps)
+- [Office と SharePoint 用アドインの作成](#Apps)
 
--   [VSTO アドインの作成します。](#Add-ins)
+- [VSTO アドインの作成します。](#Add-ins)
 
--   [SharePoint ソリューションの作成](#Solutions)
+- [SharePoint ソリューションの作成](#Solutions)
 
-##  <a name="Apps"></a> Office と SharePoint 用アドインの作成
+## <a name="Apps"></a> Office と SharePoint 用アドインの作成
  Office 2013 と SharePoint 2013 では、Office と SharePoint を拡張するためのアドインを構築、配布、収益化するために役立つ新しいアドイン モデルが導入されます。  これらのアドインは、Office Online または SharePoint Online で実行でき、ユーザーは多くのデバイスからアプリと対話できます。
 
  ユーザーの Office エクスペリエンスを拡張する新しい[Office アドイン モデル](/office/dev/add-ins/overview/office-add-ins)を使用する方法を調べてください。
@@ -81,7 +81,7 @@ ms.locfileid: "56607058"
 |SharePoint アドインと従来の SharePoint ソリューションを比較する。|[SharePoint アドインと SharePoint ソリューションとの比較](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 |SharePoint ソリューションと SharePoint アドインのどちらを構築するかを選択する。|[SharePoint アドインと SharePoint ソリューションのどちらにするかを決定する。](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
-##  <a name="Add-ins"></a> VSTO アドインの作成します。
+## <a name="Add-ins"></a> VSTO アドインの作成します。
  Office 2007 または Office 2010 を対象とする、あるいは Office アドインでできることを超えて Office 2013 および Office 2016 を拡張する VSTO アドインを作成します。VSTO アドインはデスクトップ上でのみ動作します。 ユーザーはVSTO アドインをインストールする必要があるため、典型的にはデプロイおよびサポートがより困難になります。  ただし、VSTO アドインは、より密接に Office に統合できます。 たとえば、Office リボンにタブやコントロールを追加し、文書の結合やグラフの変更などの高度な自動化タスクを実行できます。 また、.NET Framework を活用し、C# および Visual Basic を使用して、Office オブジェクトと対話することもできます。
 
  どのような VSTO アドインを実行できるかの例を示します。 この VSTO アドインは、PowerPoint にリボン コントロール、カスタム作業ウィンドウ、およびダイアログ ボックスを追加します。
@@ -95,7 +95,7 @@ ms.locfileid: "56607058"
 |Office のさまざまな拡張方法を比較し、VSTO アドインと Office アドインのどちらを使用する必要があるかを判断する。|[Office アドイン、VSTO、および VBA のためのロードマップ](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
 |VSTO アドインを作成する。|[Visual Studio で作成した VSTO アドイン](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
-##  <a name="Solutions"></a> SharePoint ソリューションの作成
+## <a name="Solutions"></a> SharePoint ソリューションの作成
  SharePoint Foundation 2010 および SharePoint Server 2010 を対象とする、または SharePoint アドインでできることを超えて SharePoint 2013 と SharePoint 2016 を拡張する SharePoint ソリューションを作成します。
 
  SharePoint ソリューションには、内部設置型の SharePoint ファーム サーバーが必要です。 管理者はソリューションをインストールする必要があります。また、ソリューションは SharePoint 内で実行されるため、サーバーのパフォーマンスに影響を与える可能性があります。 ただし、ソリューションでは、より深いレベルの SharePoint オブジェクトへのアクセスが提供されます。 また、SharePoint ソリューションの構築時に、.NET Framework を活用し、C# および Visual Basic を使用して、SharePoint オブジェクトと対話できます。

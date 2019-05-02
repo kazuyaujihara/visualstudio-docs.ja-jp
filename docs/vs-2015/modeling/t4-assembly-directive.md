@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f81bdcad4f255585c2c554add59ed04dea5872d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 164f049b5ed1133acfd1f4e66f805b1510d29d5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411495"
 ---
 # <a name="t4-assembly-directive"></a>T4 アセンブリ ディレクティブ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58976947"
  テキスト テンプレートの作成方法の一般的な概要については、次を参照してください。 [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)  
   
 > [!NOTE]
->  実行時 (前処理された) テキスト テンプレートでは、`assembly` ディレクティブは不要です。 代わりに必要なアセンブリを追加、**参照**の[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト。  
+> 実行時 (前処理された) テキスト テンプレートでは、`assembly` ディレクティブは不要です。 代わりに必要なアセンブリを追加、**参照**の[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト。  
   
 ## <a name="using-the-assembly-directive"></a>assembly ディレクティブの使用  
  ディレクティブの構文は次のとおりです。  
@@ -66,7 +66,7 @@ ms.locfileid: "58976947"
   
 - DSL を含むアセンブリ  
   
-##  <a name="msbuild"></a> MSBuild および Visual Studio の両方でのプロジェクト プロパティの使用  
+## <a name="msbuild"></a> MSBuild および Visual Studio の両方でのプロジェクト プロパティの使用  
  $(SolutionDir) などの Visual Studio のマクロは、MSBuild では動作しません。 ビルド コンピューターでテンプレートを変換する場合、代わりにプロジェクトのプロパティを使用する必要があります。  
   
  .csproj ファイルまたは .vbproj ファイルを編集してプロジェクトのプロパティを定義します。 この例では、`myLibFolder` という名前のプロパティを定義します。  

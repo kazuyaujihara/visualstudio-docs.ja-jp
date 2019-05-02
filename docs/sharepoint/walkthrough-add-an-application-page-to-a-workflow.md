@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 930252a509466fa65a7cbdf2eabac35cfeb25081
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 032447051bc03b037abba2920d48473f0d73935f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409548"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>チュートリアル: ワークフローにアプリケーション ページを追加します。
   このチュートリアルでは、ワークフローから派生したワークフロー プロジェクトにデータを表示するアプリケーション ページを追加する方法を示します。 トピックで説明されているプロジェクトを基に、[チュートリアル。ワークフロー関連付けフォームと開始フォームを作成する](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)します。
@@ -38,22 +38,22 @@ ms.locfileid: "54865831"
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。
 
--   サポート対象エディションの[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]および SharePoint。
+- サポート対象エディションの[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]および SharePoint。
 
--   Visual Studio
+- Visual Studio
 
--   トピック内のプロジェクトを完了する必要もが[チュートリアル。ワークフロー関連付けフォームと開始フォームを作成する](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)します。
+- トピック内のプロジェクトを完了する必要もが[チュートリアル。ワークフロー関連付けフォームと開始フォームを作成する](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)します。
 
 ## <a name="ammend-the-workflow-code"></a>追記ワークフロー コード
  最初に、経費報告書の金額に結果列の値を設定するワークフローのコード行を追加します。 この値は、経費レポートの集計計算の後で使用されます。
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>ワークフローの結果列の値を設定するには
 
-1.  トピックから完成したプロジェクトを読み込む[チュートリアル。関連付けと開始フォームを持つワークフローを作成する](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)に[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。
+1. トピックから完成したプロジェクトを読み込む[チュートリアル。関連付けと開始フォームを持つワークフローを作成する](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)に[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。
 
-2.  コードを開きます*Workflow1.cs*または*Workflow1.vb* (使用するプログラミング言語) によって異なります。
+2. コードを開きます*Workflow1.cs*または*Workflow1.vb* (使用するプログラミング言語) によって異なります。
 
-3.  下部に、`createTask1_MethodInvoking`メソッドを次のコードを追加します。
+3. 下部に、`createTask1_MethodInvoking`メソッドを次のコードを追加します。
 
     ```vb
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =
@@ -70,11 +70,11 @@ ms.locfileid: "54865831"
 
 #### <a name="to-add-an-application-page-to-the-project"></a>アプリケーション ページのプロジェクトに追加するには
 
-1.  ExpenseReport プロジェクトを選択し、次に、メニュー バーで、次のように選択します。**プロジェクト** > **新しい項目の追加**します。
+1. ExpenseReport プロジェクトを選択し、次に、メニュー バーで、次のように選択します。**プロジェクト** > **新しい項目の追加**します。
 
-2.  **テンプレート**ウィンドウで、選択、**アプリケーション ページ**テンプレート、プロジェクト項目の既定の名前を使用して (**ApplicationPage1.aspx**)、選び、 **追加**ボタンをクリックします。
+2. **テンプレート**ウィンドウで、選択、**アプリケーション ページ**テンプレート、プロジェクト項目の既定の名前を使用して (**ApplicationPage1.aspx**)、選び、 **追加**ボタンをクリックします。
 
-3.  [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx の置換、`PlaceHolderMain`を次のセクション。
+3. [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx の置換、`PlaceHolderMain`を次のセクション。
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -88,7 +88,7 @@ ms.locfileid: "54865831"
 
      このコードでは、タイトルとページにテーブルを追加します。
 
-4.  置き換えることで、アプリケーションのページにタイトルを追加、`PlaceHolderPageTitleInTitleArea`を次のセクション。
+4. 置き換えることで、アプリケーションのページにタイトルを追加、`PlaceHolderPageTitleInTitleArea`を次のセクション。
 
     ```aspx-csharp
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >
@@ -101,9 +101,9 @@ ms.locfileid: "54865831"
 
 #### <a name="to-code-the-application-page"></a>アプリケーション ページをコーディングするには
 
-1.  選択、 **ApplicationPage1.aspx**ノードで、次に、メニュー バーで、次のように選択します。**ビュー** > **コード**アプリケーション ページの背後にあるコードを表示します。
+1. 選択、 **ApplicationPage1.aspx**ノードで、次に、メニュー バーで、次のように選択します。**ビュー** > **コード**アプリケーション ページの背後にあるコードを表示します。
 
-2.  置換、**を使用して**または**インポート**に次のクラスの上部にある (によって、プログラミング言語) ステートメント。
+2. 置換、**を使用して**または**インポート**に次のクラスの上部にある (によって、プログラミング言語) ステートメント。
 
     ```vb
     Imports System
@@ -131,7 +131,7 @@ ms.locfileid: "54865831"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3.  `Page_Load` メソッドに次のコードを追加します。
+3. `Page_Load` メソッドに次のコードを追加します。
 
     ```vb
     Try
@@ -295,7 +295,7 @@ ms.locfileid: "54865831"
     ```
 
     > [!WARNING]
-    >  必ず、"TestServer"をコードで SharePoint を実行している有効なサーバーの名前で置き換えます。
+    > 必ず、"TestServer"をコードで SharePoint を実行している有効なサーバーの名前で置き換えます。
 
 ## <a name="test-the-application-page"></a>アプリケーション ページをテストします。
  次に、アプリケーション ページが正しく支出データを表示するかどうかを決定します。
@@ -339,13 +339,13 @@ ms.locfileid: "54865831"
      経費レポートの概要 ページには、すべてを割り当てられている量を超えた経費報告書の値を超えている金額とすべてのレポートの合計金額が表示されます。
 
 ## <a name="next-steps"></a>次の手順
- SharePoint アプリケーション ページの詳細については、[用 SharePoint アプリケーション ページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)を参照してください。
+ SharePoint アプリケーション ページの詳細については、次を参照してください。[用 SharePoint アプリケーション ページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)です。
 
  これらのトピックから Visual Studio で Visual Web Designer を使用して、SharePoint ページの内容を設計する方法について詳細ことができます。
 
--   [SharePoint の web パーツを作成](../sharepoint/creating-web-parts-for-sharepoint.md)です。
+- [SharePoint の web パーツを作成](../sharepoint/creating-web-parts-for-sharepoint.md)です。
 
--   [Web パーツまたはアプリケーション ページの再利用可能なコントロール作成](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)です。
+- [Web パーツまたはアプリケーション ページの再利用可能なコントロール作成](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)です。
 
 ## <a name="see-also"></a>関連項目
 

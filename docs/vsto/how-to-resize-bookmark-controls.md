@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1769ed711c0334ef14a3567478cc5010ec4165ea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04eefc37162eaa90743982a0039e21d1d9edfb1a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961533"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>方法: ブックマーク コントロールをサイズ変更します。
   <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールのサイズは、Microsoft Office Word ドキュメントに追加するときに設定します。 サイズは後から変更することもできます。
@@ -47,15 +47,15 @@ ms.locfileid: "56644953"
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>デザイン時にドキュメント レベルのプロジェクト内のブックマークのサイズを変更するには
 
-1.  **[プロパティ]** ウィンドウでブックマークを選択します。
+1. **[プロパティ]** ウィンドウでブックマークを選択します。
 
-2.  <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> プロパティの値を増減させます。
+2. <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> プロパティの値を増減させます。
 
-3.  <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> プロパティの値を増減させます。
+3. <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> プロパティの値を増減させます。
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-runtime"></a>実行時にドキュメント レベル プロジェクト内のブックマークのサイズを変更するには
 
-1.  変更、<xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A>と<xref:Microsoft.Office.Tools.Word.Bookmark.End%2A>のプロパティを<xref:Microsoft.Office.Tools.Word.Bookmark>時またはデザイン時に作成しました。
+1. 変更、<xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A>と<xref:Microsoft.Office.Tools.Word.Bookmark.End%2A>のプロパティを<xref:Microsoft.Office.Tools.Word.Bookmark>時またはデザイン時に作成しました。
 
      次のコード例では、 `SampleBookmark`という名前のブックマークの先頭に 5 文字を追加します。 このコードでは、ブックマークの前に 5 文字以上のテキストがあることを前提としています。
 
@@ -69,7 +69,7 @@ ms.locfileid: "56644953"
 
 ### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-runtime"></a>実行時に VSTO アドイン プロジェクト内のブックマークのサイズを変更するには
 
-1.  変更、<xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A>と<xref:Microsoft.Office.Tools.Word.Bookmark.End%2A>のプロパティを<xref:Microsoft.Office.Tools.Word.Bookmark>実行時に作成しました。
+1. 変更、<xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A>と<xref:Microsoft.Office.Tools.Word.Bookmark.End%2A>のプロパティを<xref:Microsoft.Office.Tools.Word.Bookmark>実行時に作成しました。
 
      次のコード例では、アクティブなドキュメントの最初の段落のテキストを含む <xref:Microsoft.Office.Tools.Word.Bookmark> を作成した後、 <xref:Microsoft.Office.Tools.Word.Bookmark>の先頭と末尾から 5 文字を削除します。
 
@@ -81,11 +81,11 @@ ms.locfileid: "56644953"
 
 ### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>デザイン時にドキュメント レベルのプロジェクト内のブックマークを再作成するには
 
-1.  新しい <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールに含めるテキストを選択します。
+1. 新しい <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールに含めるテキストを選択します。
 
-2.  **[挿入]** メニューで **[ブックマーク]** をクリックします。
+2. **[挿入]** メニューで **[ブックマーク]** をクリックします。
 
-3.  **[ブックマーク]** ダイアログ ボックスで、サイズを変更するブックマークの名前を選択し、 **[追加]** をクリックします。
+3. **[ブックマーク]** ダイアログ ボックスで、サイズを変更するブックマークの名前を選択し、 **[追加]** をクリックします。
 
 ## <a name="see-also"></a>関連項目
 - [方法: Word 文書に Bookmark コントロールを追加します。](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

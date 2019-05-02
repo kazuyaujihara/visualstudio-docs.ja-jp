@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 提供されているサブスクリプションの種類、該当する規則、および MPN で提供しているサブスクリプション数の詳細について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945402"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) でパートナーに提供される Visual Studio サブスクリプション
 MPN でコンピテンシーを取得するか、Action Pack を購入したパートナーは、Visual Studio サブスクリプションを使用できます。 これらのサブスクリプションは、ユーザーごとにライセンスされ、パートナー企業で働く特定の名前付きユーザーに割り当てられている場合にのみ有効です。
@@ -43,7 +43,6 @@ MPN でコンピテンシーを取得するか、Action Pack を購入したパ�
 | Silver コンピテンシーのみを持つパートナー向けの最大の特典                   | 1 つ以上の Gold コンピテンシーを持つパートナー向けの最大の特典               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 国ごとに 25 Visual Studio Enterprise サブスクリプション、世界中で 75 個          | 国ごとに 50 Visual Studio Enterprise サブスクリプション、世界中で 150 個         |
-
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Action Pack を購入するパートナー向けのサブスクリプション
 コンピテンシーを持つパートナーは、Action Pack を購入する対象ではありません。 パートナーごとに Action Pack を 1 つだけ購入できます。

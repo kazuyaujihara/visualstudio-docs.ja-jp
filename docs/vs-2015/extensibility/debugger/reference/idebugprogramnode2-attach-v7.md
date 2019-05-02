@@ -13,12 +13,12 @@ ms.assetid: b5ffc736-efc7-4ca8-964d-5536ff891b0e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8c02973faf1d65ff8be79cd387666f35651db7bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 08028f2b03f3ea36cc72172ca8f9de31740b49f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417905"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ int Attach_V7 ( 
 ## <a name="remarks"></a>Remarks  
   
 > [!WARNING]
->  [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)]、このメソッドは使用されなくと常に返す必要があります`E_NOTIMPL`します。 参照してください、 [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)プログラム ノードにアタッチできないことを示す必要がある場合、または、[プログラム] ノードは、プログラムを設定するだけの場合、その他の方法のためのインターフェイス`GUID`します。 それ以外の場合、実装、[アタッチ](../../../extensibility/debugger/reference/idebugengine2-attach.md)メソッド。  
+> [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)]、このメソッドは使用されなくと常に返す必要があります`E_NOTIMPL`します。 参照してください、 [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)プログラム ノードにアタッチできないことを示す必要がある場合、または、[プログラム] ノードは、プログラムを設定するだけの場合、その他の方法のためのインターフェイス`GUID`します。 それ以外の場合、実装、[アタッチ](../../../extensibility/debugger/reference/idebugengine2-attach.md)メソッド。  
   
 ## <a name="prior-to-visual-studio-2005"></a>Visual Studio 2005 より前  
  このメソッドは、DE がデバッグ中のプログラムのアドレス空間で実行する場合にのみ実装する必要があります。 このメソッドが返す必要がありますそれ以外の場合、`S_FALSE`します。  

@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: f6f9f2ad3d9eb1e9aca68250c2d9e0702027f687
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 2ee368224eb4991a2f1f167d565bd2b07f85d4c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953076"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>チュートリアル: カスタム XAML をスタート ページに追加します。
 
@@ -25,11 +25,11 @@ ms.locfileid: "57867327"
 
 ## <a name="add-custom-xaml"></a>カスタム XAML を追加します。
 
-1.  スタート ページを次の手順で作成[カスタム スタート ページを作成する](../extensibility/creating-a-custom-start-page.md)します。
+1. スタート ページを次の手順で作成[カスタム スタート ページを作成する](../extensibility/creating-a-custom-start-page.md)します。
 
-2.  *MainWindow.xaml*ファイルで、検索、\<グリッド > セクション。
+2. *MainWindow.xaml*ファイルで、検索、\<グリッド > セクション。
 
-3.  追加、 \<TabControl > 要素と\<TabItem > 内で、\<グリッド > 要素は、次の例に示すようにします。
+3. 追加、 \<TabControl > 要素と\<TabItem > 内で、\<グリッド > 要素は、次の例に示すようにします。
 
     ```xml
     <Grid>
@@ -41,7 +41,7 @@ ms.locfileid: "57867327"
     </Grid>
     ```
 
-4.  1 秒あたりの追加\<TabItem > で、\<ボタン > 要素を新しいプロジェクトを開きます。
+4. 1 秒あたりの追加\<TabItem > で、\<ボタン > 要素を新しいプロジェクトを開きます。
 
     ```xml
     <Grid>
@@ -61,25 +61,25 @@ ms.locfileid: "57867327"
 
 ## <a name="test-the-custom-start-page"></a>カスタム スタート ページをテストします。
 
-1.  **F5**キーを押します。
+1. **F5**キーを押します。
 
      Visual Studio の実験用インスタンスのインストールが選択されていないカスタム スタート ページが表示されます。
 
-2.  Visual Studio の実験用インスタンスを開き、**ツール/Options/環境**ページ。
+2. Visual Studio の実験用インスタンスを開き、**ツール/Options/環境**ページ。
 
-3.  選択**スタートアップ**します。 **スタート ページのカスタマイズ**一覧で、、 *.xaml*ファイルを開き、をクリックして**OK**します。
+3. 選択**スタートアップ**します。 **スタート ページのカスタマイズ**一覧で、、 *.xaml*ファイルを開き、をクリックして**OK**します。
 
-4.  **[表示]** メニューの **[スタート ページ]** をクリックします。
+4. **[表示]** メニューの **[スタート ページ]** をクリックします。
 
-5.  をクリックして、 **Bing**タブ。
+5. をクリックして、 **Bing**タブ。
 
      Bing web ページが表示されます。
 
-6.  をクリックして、 **MyButton**タブ。
+6. をクリックして、 **MyButton**タブ。
 
      表示する必要があります、 **MyProject**ボタンを開きます、**新しいプロジェクト**ダイアログ。
 
-7.  実験用インスタンスを閉じます。
+7. 実験用インスタンスを閉じます。
 
 カスタム スタート ページを適用する**ツール** > **オプション** > **環境**、**スタートアップ**します。 **スタート ページのカスタマイズ**一覧で、、 *.xaml*ファイルを開き、をクリックして**OK**します。
 

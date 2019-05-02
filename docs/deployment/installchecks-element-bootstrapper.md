@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63c6b91ec4b93129014d1d7213d8426a4565c2c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927908"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;要素 (ブートス トラップ)
 `InstallChecks`要素のさまざまなアプリケーションの適切な前提条件のすべてがインストールされているかどうかを確認するローカル コンピューターに対するテストの開始をサポートしています。
@@ -74,10 +74,10 @@ ms.locfileid: "56645928"
 
 |属性|説明|
 |---------------|-----------------|
-|`Property`|必須です。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
-|`Name`|必須です。 チェック対象のアセンブリの完全修飾名。|
-|`PublicKeyToken`|必須です。 公開キーの省略形は、このアセンブリの厳密な名前に関連付けられています。 GAC に格納されているすべてのアセンブリは、名前、バージョン、および公開キーが必要です。|
-|`Version`|必須です。 アセンブリのバージョン。<br /><br /> バージョン番号が、形式\<*メジャー バージョン*>.\<*マイナー バージョン*>.\<*ビルド バージョン*>.\<*リビジョン バージョン*>。|
+|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
+|`Name`|必須。 チェック対象のアセンブリの完全修飾名。|
+|`PublicKeyToken`|必須。 公開キーの省略形は、このアセンブリの厳密な名前に関連付けられています。 GAC に格納されているすべてのアセンブリは、名前、バージョン、および公開キーが必要です。|
+|`Version`|必須。 アセンブリのバージョン。<br /><br /> バージョン番号が、形式\<*メジャー バージョン*>.\<*マイナー バージョン*>.\<*ビルド バージョン*>.\<*リビジョン バージョン*>。|
 |`Language`|任意。 ローカライズされたアセンブリの言語です。 既定値は `neutral` です。|
 |`ProcessorArchitecture`|任意。 このインストールの対象となるコンピューターのプロセッサ。 既定値は `msil` です。|
 
@@ -88,8 +88,8 @@ ms.locfileid: "56645928"
 
 |属性|説明|
 |---------------|-----------------|
-|`Property`|必須です。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
-|`PackageFile`|必須です。 実行する外部プログラムです。 プログラムは、セットアップの配布パッケージの一部である必要があります。|
+|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
+|`PackageFile`|必須。 実行する外部プログラムです。 プログラムは、セットアップの配布パッケージの一部である必要があります。|
 |`Arguments`|任意。 実行可能ファイルによってという名前のコマンドライン引数を提供`PackageFile`します。|
 
 ## <a name="filecheck"></a>チェックイン
@@ -97,12 +97,11 @@ ms.locfileid: "56645928"
 
  `FileCheck` 要素が含まれていない、次の属性です。
 
-
 | 属性 | 説明 |
 |-----------------| - |
-| `Property` | 必須です。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。 |
-| `FileName` | 必須です。 検索するファイルの名前。 |
-| `SearchPath` | 必須です。 ディスクまたはファイルを検索するフォルダー。 場合は、相対パスをあるこの必要があります`SpecialFolder`が割り当てられます。 それ以外の場合、その絶対パスである必要があります。 |
+| `Property` | 必須。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。 |
+| `FileName` | 必須。 検索するファイルの名前。 |
+| `SearchPath` | 必須。 ディスクまたはファイルを検索するフォルダー。 場合は、相対パスをあるこの必要があります`SpecialFolder`が割り当てられます。 それ以外の場合、その絶対パスである必要があります。 |
 | `SpecialFolder` | 任意。 Windows に、またはに特別な意味を持つフォルダー[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]します。 既定では解釈`SearchPath`に絶対パス。 以下の値が有効です。<br /><br /> `AppDataFolder`。 このアプリケーション データ フォルダー[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション; 現在のユーザーに特定します。<br /><br /> `CommonAppDataFolder`。 すべてのユーザーが使用するアプリケーション データ フォルダー。<br /><br /> `CommonFilesFolder`。 現在のユーザーの共通ファイル フォルダーです。<br /><br /> `LocalDataAppFolder`。 アプリケーションの非ローミングのデータ フォルダー。<br /><br /> `ProgramFilesFolder`。 32 ビット アプリケーションの標準の Program Files フォルダー。<br /><br /> `StartUpFolder`。 このフォルダーは、システムの起動時に起動されたすべてのアプリケーションが含まれています。<br /><br /> `SystemFolder`。 このフォルダーは、32 ビット システム Dll が含まれています。<br /><br /> `WindowsFolder`。 このフォルダーは、Windows システムのインストールが含まれています。<br /><br /> `WindowsVolume`。 ドライブまたはパーティションを Windows システムのインストールが含まれています。 |
 | `SearchDepth` | 任意。 名前付きのファイル用のサブフォルダーを検索する位置の深さ。 深さ優先検索では。 既定値は 0 であり、によって指定された最上位フォルダーの検索範囲を限定`SpecialFolder`と**SearchPath**します。 |
 
@@ -113,8 +112,8 @@ ms.locfileid: "56645928"
 
 |属性|説明|
 |---------------|-----------------|
-|`Property`|必須です。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
-|`Product`|必須です。 インストールされている製品の GUID です。|
+|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
+|`Product`|必須。 インストールされている製品の GUID です。|
 |`Feature`|任意。 インストールされているアプリケーションの特定の機能の GUID です。|
 
 ## <a name="registrycheck"></a>RegistryCheck
@@ -124,8 +123,8 @@ ms.locfileid: "56645928"
 
 |属性|説明|
 |---------------|-----------------|
-|`Property`|必須です。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
-|`Key`|必須です。 レジストリ キーの名前。|
+|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
+|`Key`|必須。 レジストリ キーの名前。|
 |`Value`|任意。 取得するレジストリ値の名前。 既定では、既定値のテキストを返します。 `Value` DWORD または文字列のいずれかである必要があります。|
 
 ## <a name="registryfilecheck"></a>RegistryFileCheck
@@ -135,13 +134,13 @@ ms.locfileid: "56645928"
 
 |属性|説明|
 |---------------|-----------------|
-|`Property`|必須です。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
-|`Key`|必須です。 レジストリ キーの名前。 しない限り、その値は、ファイルへのパスとして解釈されます、`File`属性を設定します。 このキーが存在しない場合`Property`が設定されていません。|
+|`Property`|必須。 結果を格納するプロパティの名前。 このプロパティは、下にテストから参照できる、`InstallConditions`子である要素の`Command`要素。 詳細については、次を参照してください。 [\<コマンド > 要素](../deployment/commands-element-bootstrapper.md)します。|
+|`Key`|必須。 レジストリ キーの名前。 しない限り、その値は、ファイルへのパスとして解釈されます、`File`属性を設定します。 このキーが存在しない場合`Property`が設定されていません。|
 |`Value`|任意。 取得するレジストリ値の名前。 既定では、既定値のテキストを返します。 `Value` 文字列である必要があります。|
 |`FileName`|任意。 ファイルの名前。 指定すると、レジストリ キーから取得した値と見なされます、ディレクトリ パスを指定して、この名前が追加されました。 指定しない場合、レジストリから返される値は、ファイルへの完全パスと見なされます。|
 |`SearchDepth`|任意。 名前付きのファイル用のサブフォルダーを検索する位置の深さ。 深さ優先検索では。 既定では 0 で、レジストリ キーの値によって指定された最上位のフォルダーに検索が制限されます。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  下にある要素の中に`InstallChecks`を実行するテストを定義して、それらが実行しないでください。 作成する必要があります、テストを実行する`Command`要素の下に、`Commands`要素。
 
 ## <a name="example"></a>例

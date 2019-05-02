@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f6fd87a9c666e3373515cf8df59d7cd9fd7c717
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966836"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>方法: MSBuild タスクを使用した SharePoint ソリューション パッケージの作成します。
   ビルド、クリーンアップ、および SharePoint のパッケージを検証することができます (*.wsp*) MSBuild タスクのコマンドラインを使用して、開発用コンピューター。 ビルド コンピューターで Team Foundation Server を使用して、ビルド プロセスを自動化するのにこれらのコマンドを使用することもできます。
@@ -26,11 +26,11 @@ ms.locfileid: "56624400"
 
 #### <a name="to-build-a-sharepoint-package"></a>SharePoint パッケージを作成するには
 
-1.  Windows で**開始**] メニューの [選択**すべてのプログラム** > **アクセサリ** > **コマンド プロンプト**します。
+1. Windows で**開始**] メニューの [選択**すべてのプログラム** > **アクセサリ** > **コマンド プロンプト**します。
 
-2.  SharePoint プロジェクトが配置されているディレクトリに変更します。
+2. SharePoint プロジェクトが配置されているディレクトリに変更します。
 
-3.  プロジェクトのパッケージを作成するには、次のコマンドを入力します。 置換*ProjectFileName*プロジェクトの名前に置き換えます。
+3. プロジェクトのパッケージを作成するには、次のコマンドを入力します。 置換*ProjectFileName*プロジェクトの名前に置き換えます。
 
     ```cmd
     msbuild /t:Package ProjectFileName
@@ -47,11 +47,11 @@ ms.locfileid: "56624400"
 
 #### <a name="to-clean-a-sharepoint-package"></a>SharePoint パッケージをクリーンアップするには
 
-1.  コマンド プロンプト ウィンドウを開きます。
+1. コマンド プロンプト ウィンドウを開きます。
 
-2.  SharePoint プロジェクトが配置されているディレクトリに変更します。
+2. SharePoint プロジェクトが配置されているディレクトリに変更します。
 
-3.  プロジェクトのパッケージをクリーンアップするには、次のコマンドを入力します。 置換*ProjectFileName*プロジェクトの名前に置き換えます。
+3. プロジェクトのパッケージをクリーンアップするには、次のコマンドを入力します。 置換*ProjectFileName*プロジェクトの名前に置き換えます。
 
     ```cmd
     msbuild /t:CleanPackage ProjectFileName
@@ -68,11 +68,11 @@ ms.locfileid: "56624400"
 
 #### <a name="to-validate-a-sharepoint-package"></a>SharePoint パッケージを検証するには
 
-1.  コマンド プロンプト ウィンドウを開きます。
+1. コマンド プロンプト ウィンドウを開きます。
 
-2.  SharePoint プロジェクトが配置されているディレクトリに変更します。
+2. SharePoint プロジェクトが配置されているディレクトリに変更します。
 
-3.  プロジェクトのパッケージを検証するには、次のコマンドを入力します。 置換*ProjectFileName*プロジェクトの名前に置き換えます。
+3. プロジェクトのパッケージを検証するには、次のコマンドを入力します。 置換*ProjectFileName*プロジェクトの名前に置き換えます。
 
     ```cmd
     msbuild /t:ValidatePackage ProjectFileName
@@ -89,11 +89,11 @@ ms.locfileid: "56624400"
 
 #### <a name="to-set-a-property-in-a-sharepoint-package"></a>SharePoint パッケージでプロパティを設定するには
 
-1.  コマンド プロンプト ウィンドウを開きます。
+1. コマンド プロンプト ウィンドウを開きます。
 
-2.  SharePoint プロジェクトが配置されているディレクトリに変更します。
+2. SharePoint プロジェクトが配置されているディレクトリに変更します。
 
-3.  プロジェクトのパッケージでプロパティを設定するには、次のコマンドを入力します。 置換*PropertyName*プロパティを設定するを使用します。
+3. プロジェクトのパッケージでプロパティを設定するには、次のコマンドを入力します。 置換*PropertyName*プロパティを設定するを使用します。
 
     ```cmd
     msbuild /property:PropertyName=Value

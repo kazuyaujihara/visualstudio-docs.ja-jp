@@ -1,12 +1,9 @@
 ---
 title: スクリプトを使用して SQL database の作成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,46 +13,45 @@ ms.assetid: 36f913c0-f5a7-4831-83a0-baba721ac95c
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 13816c499002f8eaf81067aba8d1854d06a41445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7c0dc7b406f7e04aaa9848e2f5dcb96f17430f6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436950"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>スクリプトを使用して SQL database を作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 このチュートリアルでのサンプル コードを含む小さなデータベースを作成する Visual Studio を使用する[ADO.NET を使用して単純なデータ アプリケーションを作成する](../data-tools/create-a-simple-data-application-by-using-adonet.md)します。  
   
  **このトピックの内容**  
   
--   [データベース スキーマを含むスクリプトを作成します。](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
+- [データベース スキーマを含むスクリプトを作成します。](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
   
--   [データベース プロジェクトを作成し、スキーマのインポート](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)  
+- [データベース プロジェクトを作成し、スキーマのインポート](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)  
   
--   [データベースをデプロイします。](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)  
+- [データベースをデプロイします。](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  このチュートリアルを完了するには、SQL Server Express LocalDB またはインストールされている別の SQL database が必要です。  
   
-##  <a name="CreateScript"></a> データベース スキーマを含むスクリプトを作成します。  
+## <a name="CreateScript"></a> データベース スキーマを含むスクリプトを作成します。  
   
 #### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>スキーマのインポートに使用するスクリプトを作成するには  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、メニュー バーで選択**ファイル** > **新規** > **ファイル**します。  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、メニュー バーで選択**ファイル** > **新規** > **ファイル**します。  
   
      **新しいファイル** ダイアログ ボックスが表示されます。  
   
-2.  **カテゴリ**一覧で、**全般**します。  
+2. **カテゴリ**一覧で、**全般**します。  
   
-3.  **テンプレート**一覧で、 **Sql ファイル**を選び、**オープン**ボタンをクリックします。  
+3. **テンプレート**一覧で、 **Sql ファイル**を選び、**オープン**ボタンをクリックします。  
   
      TRANSACT-SQL エディターが開きます。  
   
-4.  次の TRANSACT-SQL コードをコピーし、TRANSACT-SQL エディターに貼り付けます。  
+4. 次の TRANSACT-SQL コードをコピーし、TRANSACT-SQL エディターに貼り付けます。  
   
     ```  
     PRINT N'Creating Sales...';  
@@ -217,34 +213,34 @@ ms.locfileid: "49266592"
     GO  
     ```  
   
-5.  メニュー バーで選択**ファイル** > **付けて SqlQuery_1.sql を保存**します。  
+5. メニュー バーで選択**ファイル** > **付けて SqlQuery_1.sql を保存**します。  
   
      **ファイルに名前を付けて** ダイアログ ボックスが表示されます。  
   
-6.  **ファイル名**ボックスに、入力`SampleImportScript.sql`、ここでファイルを保存したり、選択の場所に注意してください、**保存**ボタンをクリックします。  
+6. **ファイル名**ボックスに、入力`SampleImportScript.sql`、ここでファイルを保存したり、選択の場所に注意してください、**保存**ボタンをクリックします。  
   
-7.  メニュー バーで選択**ファイル** > **ソリューションを閉じる**します。  
+7. メニュー バーで選択**ファイル** > **ソリューションを閉じる**します。  
   
      次に、データベース プロジェクトを作成し、作成したスクリプトからスキーマをインポートします。  
   
-##  <a name="CreateProject"></a> データベース プロジェクトを作成し、スキーマのインポート  
+## <a name="CreateProject"></a> データベース プロジェクトを作成し、スキーマのインポート  
   
 #### <a name="to-create-a-database-project"></a>データベース プロジェクトを作成するには  
   
-1.  メニュー バーで **[ファイル]** > **[新規作成]** > **[プロジェクト]** を選択します。  
+1. メニュー バーで **[ファイル]** > **[新規作成]** > **[プロジェクト]** を選択します。  
   
      **[新しいプロジェクト]** ダイアログ ボックスが表示されます。  
   
-2.  **インストール済み**、展開、**テンプレート**ノード、展開、**他の言語**ノードを選択、 **SQL Server**カテゴリ、し、選択、 **SQL Server データベース プロジェクト**テンプレート。  
+2. **インストール済み**、展開、**テンプレート**ノード、展開、**他の言語**ノードを選択、 **SQL Server**カテゴリ、し、選択、 **SQL Server データベース プロジェクト**テンプレート。  
   
     > [!NOTE]
-    >  **他の言語**ノードは、Visual Studio のすべてのインストールに表示されません。  
+    > **他の言語**ノードは、Visual Studio のすべてのインストールに表示されません。  
   
-3.  **名前**ボックスに、入力`Small Database`します。  
+3. **名前**ボックスに、入力`Small Database`します。  
   
-4.  選択、**ソリューションのディレクトリを作成**チェック ボックスが選択されていない場合。  
+4. 選択、**ソリューションのディレクトリを作成**チェック ボックスが選択されていない場合。  
   
-5.  クリア、**ソース管理に追加**でない場合、消去、および順に選択します チェック ボックス、 **OK**ボタンをクリックします。  
+5. クリア、**ソース管理に追加**でない場合、消去、および順に選択します チェック ボックス、 **OK**ボタンをクリックします。  
   
      データベース プロジェクトが作成され**ソリューション エクスプ ローラー**します。  
   
@@ -252,28 +248,27 @@ ms.locfileid: "49266592"
   
 #### <a name="to-import-a-database-schema-from-a-script"></a>スクリプトからデータベース スキーマをインポートするには  
   
-1.  メニュー バーで選択**プロジェクト** > **インポート** > **スクリプト**します。  
+1. メニュー バーで選択**プロジェクト** > **インポート** > **スクリプト**します。  
   
-2.  **ようこそ**ページで、テキストを確認し、選択、 **[次へ]** ボタンをクリックします。  
+2. **ようこそ**ページで、テキストを確認し、選択、 **[次へ]** ボタンをクリックします。  
   
-3.  選択、 **1 つのファイル**オプション ボタンを選び、**参照**ボタンをクリックします。  
+3. 選択、 **1 つのファイル**オプション ボタンを選び、**参照**ボタンをクリックします。  
   
      **SQL スクリプトのインポート** ダイアログ ボックスが表示されます。  
   
-4.  SampleImportScript.sql ファイルを保存したフォルダーを開き、ファイルを選択して選択し、、**オープン**ボタンをクリックします。  
+4. SampleImportScript.sql ファイルを保存したフォルダーを開き、ファイルを選択して選択し、、**オープン**ボタンをクリックします。  
   
-5.  選択、**完了**を閉じる ボタン、 **SQL スクリプトのインポート** ダイアログ ボックス。  
+5. 選択、**完了**を閉じる ボタン、 **SQL スクリプトのインポート** ダイアログ ボックス。  
   
      スクリプトがインポートされ、このスクリプトで定義したオブジェクトがデータベース プロジェクトに追加されます。  
   
-6.  概要を確認し、**完了**を閉じる ボタン、 **SQL スクリプト ファイルのインポート** ダイアログ ボックス。  
+6. 概要を確認し、**完了**を閉じる ボタン、 **SQL スクリプト ファイルのインポート** ダイアログ ボックス。  
   
-7.  **ソリューション エクスプ ローラー**Sales、Scripts、およびセキュリティを展開し、プロジェクトのフォルダーを .sql ファイルが含まれることを確認します。  
+7. **ソリューション エクスプ ローラー**Sales、Scripts、およびセキュリティを展開し、プロジェクトのフォルダーを .sql ファイルが含まれることを確認します。  
   
-8.  **SQL Server オブジェクト エクスプ ローラー**、下に、データベースが表示されることを確認、**プロジェクト**ノード。  
+8. **SQL Server オブジェクト エクスプ ローラー**、下に、データベースが表示されることを確認、**プロジェクト**ノード。  
   
      この時点で、データベースには、テーブル、ストアド プロシージャなどのシステム オブジェクトのみが格納されています。 データベースを配置した後に、スクリプトに定義されたユーザー テーブルとストアド プロシージャが含まれます。  
   
-##  <a name="DeployDatabase"></a> データベースをデプロイします。  
+## <a name="DeployDatabase"></a> データベースをデプロイします。  
  押したときに、 **F5**キー、配置 (または発行する) 既定の LocalDB データベースにデータベース。 データベースを別の場所に配置するには、プロジェクトのプロパティ ページを開いて選択すると、**デバッグ**タブをクリックし、接続文字列を変更します。
-

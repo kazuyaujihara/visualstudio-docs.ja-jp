@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0aebd0857ba847d5c5eba5e3a4a8a01da73ec159
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840032"
 ---
 # <a name="windows-script-interfaces"></a>Windows スクリプト インターフェイス
 
@@ -62,21 +62,21 @@ Windows スクリプトのデザインは、オーサリング環境でのみ必
 
 ホストとエンジン間の相互作用に必要な手順が次の一覧に示されています。
 
-1.  プロジェクトを作成します。 プロジェクトがプロジェクトまたはドキュメントを読み込みます。 (この手順は、Windows スクリプトに固有ではありませんが、完全を期すために含まれています)。
+1. プロジェクトを作成します。 プロジェクトがプロジェクトまたはドキュメントを読み込みます。 (この手順は、Windows スクリプトに固有ではありませんが、完全を期すために含まれています)。
 
-2.  Windows スクリプト エンジンを作成します。 ホストが `CoCreateInstance` を呼び出して新しい Windows スクリプト エンジンを作成し、使用する特定のスクリプト エンジンのクラス ID (CLSID) を指定します。 Internet Explorer の HTML ブラウザーが、HTML \<OBJECT> タグの CLSID= 属性を通じてスクリプト エンジンのクラス ID を受け取ります。
+2. Windows スクリプト エンジンを作成します。 ホストが `CoCreateInstance` を呼び出して新しい Windows スクリプト エンジンを作成し、使用する特定のスクリプト エンジンのクラス ID (CLSID) を指定します。 Internet Explorer の HTML ブラウザーが、HTML \<OBJECT> タグの CLSID= 属性を通じてスクリプト エンジンのクラス ID を受け取ります。
 
-3.  スクリプトを読み込みます。 スクリプトの内容が永続化されている場合、ホストは、スクリプト エンジンの `IPersist*::Load` メソッドを呼び出して、スクリプト ストレージ、ストリーム、またはプロパティ バッグにフィードします。 それ以外の場合、ホストは、`IPersist*::InitNew` または [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) メソッドを使用して、null スクリプトを作成します。 スクリプトをテキストとして保持するホストは、[IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) を使用して、`IActiveScriptParse::InitNew` を呼び出した後で、スクリプトのテキストをスクリプト エンジンにフィードすることができます。
+3. スクリプトを読み込みます。 スクリプトの内容が永続化されている場合、ホストは、スクリプト エンジンの `IPersist*::Load` メソッドを呼び出して、スクリプト ストレージ、ストリーム、またはプロパティ バッグにフィードします。 それ以外の場合、ホストは、`IPersist*::InitNew` または [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) メソッドを使用して、null スクリプトを作成します。 スクリプトをテキストとして保持するホストは、[IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) を使用して、`IActiveScriptParse::InitNew` を呼び出した後で、スクリプトのテキストをスクリプト エンジンにフィードすることができます。
 
-4.  名前付きの項目の追加 スクリプト エンジンの名前空間にインポートされる各最上位レベルの名前付き項目 (ページやフォームなど) について、ホストは、[IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) メソッドを呼び出して、エンジンの名前空間内にエントリを作成します。 最上位レベルの名前付き項目が、既に手順 3. で読み込まれたスクリプトの永続的な状態の一部になっている場合は、この手順は必要ではありません。 ホストが `IActiveScript::AddNamedItem` を使用してサブレベルの名前付き項目 (HTML ページ上のコントロールなど) を追加するのではなく、エンジンが、ホストの `ITypeInfo` および `IDispatch` インターフェイスを使用して最上位レベルの項目からサブレベルの項目を間接的に取得します。
+4. 名前付きの項目の追加 スクリプト エンジンの名前空間にインポートされる各最上位レベルの名前付き項目 (ページやフォームなど) について、ホストは、[IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) メソッドを呼び出して、エンジンの名前空間内にエントリを作成します。 最上位レベルの名前付き項目が、既に手順 3. で読み込まれたスクリプトの永続的な状態の一部になっている場合は、この手順は必要ではありません。 ホストが `IActiveScript::AddNamedItem` を使用してサブレベルの名前付き項目 (HTML ページ上のコントロールなど) を追加するのではなく、エンジンが、ホストの `ITypeInfo` および `IDispatch` インターフェイスを使用して最上位レベルの項目からサブレベルの項目を間接的に取得します。
 
-5.  スクリプトを実行します。 ホストは、[IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) メソッドで SCRIPTSTATE_CONNECTED フラグを設定することによってエンジンでスクリプトの実行を開始させます。 この呼び出しが、静的バインド、イベントのフック (以下参照)、コードの実行などのスクリプト エンジンの構築作業を行う場合があります。これはスクリプト化された `main()` 関数の方法と似ています。
+5. スクリプトを実行します。 ホストは、[IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) メソッドで SCRIPTSTATE_CONNECTED フラグを設定することによってエンジンでスクリプトの実行を開始させます。 この呼び出しが、静的バインド、イベントのフック (以下参照)、コードの実行などのスクリプト エンジンの構築作業を行う場合があります。これはスクリプト化された `main()` 関数の方法と似ています。
 
-6.  項目情報を取得します。 スクリプトエンジンは、シンボルと最上位レベルの項目を関連付ける必要があるたびに、[IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md) メソッドを呼び出し、このメソッドは指定された項目に関する情報を返します。
+6. 項目情報を取得します。 スクリプトエンジンは、シンボルと最上位レベルの項目を関連付ける必要があるたびに、[IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md) メソッドを呼び出し、このメソッドは指定された項目に関する情報を返します。
 
-7.  イベントをフックします。 実際のスクリプトを開始する前に、スクリプト エンジンは、`IConnectionPoint`インターフェイスを介してすべての関連するオブジェクトのイベントに接続します。
+7. イベントをフックします。 実際のスクリプトを開始する前に、スクリプト エンジンは、`IConnectionPoint`インターフェイスを介してすべての関連するオブジェクトのイベントに接続します。
 
-8.  プロパティとメソッドを呼び出します。 スクリプトが実行されるときには、スクリプト エンジンが `IDispatch::Invoke` またはその他の標準の OLE バインディング メカニズムを使用して、名前付きのオブジェクトのメソッドとプロパティへの接続を実現します。
+8. プロパティとメソッドを呼び出します。 スクリプトが実行されるときには、スクリプト エンジンが `IDispatch::Invoke` またはその他の標準の OLE バインディング メカニズムを使用して、名前付きのオブジェクトのメソッドとプロパティへの接続を実現します。
 
 ## <a name="windows-script-terms"></a>Windows スクリプトの用語
 
@@ -84,7 +84,7 @@ Windows スクリプトのデザインは、オーサリング環境でのみ必
 
 |用語|定義|
 |----------|----------------|
-|コード オブジェクト|Visual basic でのフォームの背後にあるモジュール、名前付きの項目に関連付けられている C++ クラスなどの、名前付きの項目に関連付けられているスクリプト エンジンによって作成されたインスタンス。 これは、ホストまたはその他のスクリプト以外のエンティティがコード オブジェクトを操作できるように、OLE オートメーションをサポートする OLE コンポーネント オブジェクト モデル (COM) オブジェクトであることが望ましいと言えます。|
+|コード オブジェクト|Visual Basic でのフォームの背後にあるモジュール、名前付きの項目に関連付けられている C++ クラスなどの、名前付きの項目に関連付けられているスクリプト エンジンによって作成されたインスタンス。 これは、ホストまたはその他のスクリプト以外のエンティティがコード オブジェクトを操作できるように、OLE オートメーションをサポートする OLE コンポーネント オブジェクト モデル (COM) オブジェクトであることが望ましいと言えます。|
 |名前付き項目|ホストがスクリプトに関連すると考える OLE COM オブジェクト (できれば OLE オートメーションをサポートするオブジェクト)。 たとえば、Web ブラウザーの HTML ページとブラウザー、Microsoft Word 文書の文書とダイアログ ボックスなどがあります。|
 |スクリプト|スクリプト エンジンが実行するプログラムを構成するデータ。 スクリプトは、任意の連続する実行可能なデータであり、テキストの集まり、`pcode` のブロック、コンピューター固有の実行可能バイト コードなどが含まれます。 ホストは、`IPersist*`インターフェイスまたは [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) インターフェイスのいずれかで、スクリプト エンジンにスクリプトを読み込みます。|
 |スクリプト エンジン|スクリプトを処理する OLE オブジェクト。 スクリプト エンジンは、[IActiveScript](../winscript/reference/iactivescript.md) を実装し、必要に応じて [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) インターフェイスを実装します。|

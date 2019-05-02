@@ -8,25 +8,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MT
+ms.openlocfilehash: 4678d79c7d2b1e19ab96502778ce51f8a3226010
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417177"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ:アドインを VSPackage 拡張機能に変換します。
 現在、アドインは非推奨とされます。 新しい Visual Studio 拡張機能をするためには、VSIX 拡張機能を作成する必要があります。 VSIX 拡張機能に Visual Studio アドインを変換する方法についてよく寄せられる質問に対する回答を示します。
 
 > [!WARNING]
->  以降、Visual Studio 2015 では c# および Visual Basic プロジェクトでは、VSIX プロジェクトを使用し、メニュー コマンド、ツール ウィンドウ、および Vspackage の項目テンプレートを追加できます。 詳細については、[新機能については、Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)を参照してください。
+> 以降、Visual Studio 2015 では c# および Visual Basic プロジェクトでは、VSIX プロジェクトを使用し、メニュー コマンド、ツール ウィンドウ、および Vspackage の項目テンプレートを追加できます。 詳細については、次を参照してください。[新機能については、Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)します。
 
 > [!IMPORTANT]
->  多くの場合は、VSPackage プロジェクト項目で VSIX プロジェクトに単に、アドインのコードを転送できます。 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> メソッドで <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> を呼び出すことで、DTE オートメーション オブジェクトを取得できます。
+> 多くの場合は、VSPackage プロジェクト項目で VSIX プロジェクトに単に、アドインのコードを転送できます。 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> メソッドで <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> を呼び出すことで、DTE オートメーション オブジェクトを取得できます。
 >
->  `DTE2 dte = (DTE2)GetService(typeof(DTE));`
+> ```csharp
+> DTE2 dte = (DTE2)GetService(typeof(DTE));
+> ```
 >
->  詳細については、次を参照してください。 [VSPackage でアドイン コードを実行する方法でしょうか。](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin)以下。
+> 詳細については、次を参照してください。 [VSPackage でアドイン コードを実行する方法でしょうか。](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin)以下。
 
 ## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>VSIX 拡張機能を開発する必要があるソフトウェアをでしょうか。
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 詳細については、"[Visual Studio SDK をインストール](../extensibility/installing-the-visual-studio-sdk.md)"を参照してください。
@@ -37,7 +39,7 @@ ms.locfileid: "58789531"
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>アドイン プロジェクトを VSIX プロジェクトは変換できますか。
  アドイン プロジェクトは、VSIX プロジェクトで使用されるメカニズムは、アドイン プロジェクトで使用されているのと同じではないために、VSIX プロジェクトに直接変換できません。 VSIX プロジェクト テンプレート、および適切なプロジェクト項目テンプレートに含まれる多く比較的簡単に起動して VSIX 拡張機能として実行されるコード。
 
-##  <a name="BKMK_StartDeveloping"></a> VSIX 拡張機能の開発を開始する方法
+## <a name="BKMK_StartDeveloping"></a> VSIX 拡張機能の開発を開始する方法
  メニュー コマンドを含む VSIX を作成する方法を次に示します。
 
 ### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>メニュー コマンドを含む VSIX 拡張機能を作成するには
@@ -52,7 +54,7 @@ ms.locfileid: "58789531"
 
    **ツール** メニュー (に実験用インスタンス) という名前のボタンを表示する必要があります**マイ コマンド名**します。 このボタンを選択すると、メッセージが表示されます。**TestVSPackagePackage.MenuItemCallback() 内**します。
 
-##  <a name="BKMK_RunAddin"></a> VSPackage でアドイン コードを実行する方法はありますか
+## <a name="BKMK_RunAddin"></a> VSPackage でアドイン コードを実行する方法はありますか
 
 通常、アドイン コードは次の 2 つの方法のどちらかで実行します。
 
@@ -103,7 +105,7 @@ VSPackage でも同じ操作を実行できます。 コールバック メソ�
 
 ### <a name="to-autoload-a-vspackage"></a>VSPackage を自動読み込みさせるには
 
-1. Visual Studio パッケージ プロジェクト項目には、VSIX プロジェクトを作成します。 (これを行う手順については、[VSIX 拡張機能の開発を開始する方法でしょうか。](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)を参照してください。 追加するだけで、 **Visual Studio パッケージ**プロジェクト項目の代わりにします)。VSIX プロジェクトに名前を**TestAutoload**します。
+1. Visual Studio パッケージ プロジェクト項目には、VSIX プロジェクトを作成します。 (これを行う手順については、次を参照してください。 [VSIX 拡張機能の開発を開始する方法でしょうか。](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)します。 追加するだけで、 **Visual Studio パッケージ**プロジェクト項目の代わりにします)。VSIX プロジェクトに名前を**TestAutoload**します。
 
 2. 開いている*TestAutoloadPackage.cs*します。 パッケージ クラスが宣言されている行を見つけます。
 
@@ -121,7 +123,7 @@ VSPackage でも同じ操作を実行できます。 コールバック メソ�
 
 5. この実験用インスタンスで、プロジェクトを開きます。 VSPackage が読み込まれ、ブレークポイントにヒットします。
 
-   <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> のフィールドを使用して、VSPackage を読み込む他のコンテキストを指定できます。 詳細については、[ロード Vspackage](../extensibility/loading-vspackages.md)を参照してください。
+   <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> のフィールドを使用して、VSPackage を読み込む他のコンテキストを指定できます。 詳細については、次を参照してください。[ロード Vspackage](../extensibility/loading-vspackages.md)します。
 
 ## <a name="how-can-i-get-the-dte-object"></a>DTE オブジェクトは入手するにはどうしたらよいですか?
  アドインが UI (メニュー コマンド、ツールバー ボタン、ツール ウィンドウなど) を表示しない場合、VSPackage から DTE オートメーション オブジェクトを入手できる限り、コードを変更せずにそのまま使用できます。 次の手順に従います。
@@ -146,36 +148,36 @@ VSPackage でも同じ操作を実行できます。 コールバック メソ�
    <xref:EnvDTE.DTE> オートメーション オブジェクトを取得したら、プロジェクトに残りのアドイン コードを追加できます。 <xref:EnvDTE80.DTE2> オブジェクトが必要な場合は、同じ操作を実行できます。
 
 ## <a name="how-do-i-change-menu-commands-and-toolbar-buttons-in-my-add-in-to-the-vspackage-style"></a>アドインのメニュー コマンドとツールバー ボタンを VSPackage スタイルで変更するにはどうしたらよいですか?
- VSPackage 拡張機能の使用、 *.vsct*ほとんどのメニュー コマンド、ツールバー、ツールバーのボタン、およびその他の UI を作成するファイル。 **カスタム コマンド**プロジェクト項目テンプレートを使用して、オプションのコマンドを作成する、**ツール**メニュー。 詳細については、[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。
+ VSPackage 拡張機能の使用、 *.vsct*ほとんどのメニュー コマンド、ツールバー、ツールバーのボタン、およびその他の UI を作成するファイル。 **カスタム コマンド**プロジェクト項目テンプレートを使用して、オプションのコマンドを作成する、**ツール**メニュー。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
 
  詳細については *.vsct*ファイルを参照してください[Vspackage ではどのように追加のユーザー インターフェイス要素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)します。 使用する方法について説明するチュートリアルについては、 *.vsct*メニュー項目、ツールバー、およびツールバーのボタンの参照を追加するファイル[メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)します。
 
 ## <a name="how-do-i-add-custom-tool-windows-in-the-vspackage-way"></a>VSPackage を使用してカスタム ツールウィンドウを追加するにはどうしたらよいですか?
- カスタム ツール ウィンドウのプロジェクト項目テンプレートでは、ツール ウィンドウを作成するオプションを提供します。 このプロジェクト項目テンプレートの詳細については、[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)を参照してください。 ツール ウィンドウについては、[拡張ツール ウィンドウをカスタマイズおよび](../extensibility/extending-and-customizing-tool-windows.md)と、その下にある情報の記事特に[ツール ウィンドウを追加](../extensibility/adding-a-tool-window.md)を参照してください。
+ カスタム ツール ウィンドウのプロジェクト項目テンプレートでは、ツール ウィンドウを作成するオプションを提供します。 このプロジェクト項目テンプレートの詳細については、次を参照してください。[ツール ウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)します。 ツール ウィンドウについては、次を参照してください。[拡張ツール ウィンドウをカスタマイズおよび](../extensibility/extending-and-customizing-tool-windows.md)と、その下にある情報の記事特に[ツール ウィンドウを追加](../extensibility/adding-a-tool-window.md)します。
 
 ## <a name="how-do-i-manage-visual-studio-windows-in-the-vspackage-way"></a>VSPackage を使用して Visual Studio ウィンドウを管理するにはどうしたらよいですか?
  Visual Studio ウィンドウを管理するアドインの場合、そのアドイン コードは VSPackage で機能します。 たとえば、この手順を管理するコードを追加する方法を示しています。、**タスク一覧**を、 `MenuItemCallback` 、VSPackage のメソッド。
 
 #### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>アドインのウィンドウ管理コードを VSPackage に挿入するには
 
-1.  メニュー コマンドを含む VSPackage を作成、 [VSIX 拡張機能の開発を開始する方法でしょうか。](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)セクション。
+1. メニュー コマンドを含む VSPackage を作成、 [VSIX 拡張機能の開発を開始する方法でしょうか。](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)セクション。
 
-2.  VSPackage の定義が含まれているファイルを開きます。 (C# プロジェクトである*\<プロジェクト名 > Package.cs*)。
+2. VSPackage の定義が含まれているファイルを開きます。 (C# プロジェクトである*\<プロジェクト名 > Package.cs*)。
 
-3.  次の `using` ステートメントを追加します。
+3. 次の `using` ステートメントを追加します。
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  `MenuItemCallback` メソッドを見つけます。 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> オブジェクトを取得するため、<xref:EnvDTE80.DTE2> の呼び出しを追加します。
+4. `MenuItemCallback` メソッドを見つけます。 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> オブジェクトを取得するため、<xref:EnvDTE80.DTE2> の呼び出しを追加します。
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  アドインのコードを追加します。 たとえば、新しいタスクを追加するコードをここでは、**タスク一覧**タスクの数を示しから 1 つのタスクを削除します。
+5. アドインのコードを追加します。 たとえば、新しいタスクを追加するコードをここでは、**タスク一覧**タスクの数を示しから 1 つのタスクを削除します。
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -206,24 +208,24 @@ VSPackage でも同じ操作を実行できます。 コールバック メソ�
 ## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>VSPackage でプロジェクトとソリューションを管理するにはどうしたらよいですか?
  プロジェクトとソリューションを管理するアドインの場合、そのアドイン コードは VSPackage で機能します。 たとえば、スタートアップ プロジェクトを取得するコードを追加する手順を次に示します。
 
-1.  メニュー コマンドを含む VSPackage を作成、 [VSIX 拡張機能の開発を開始する方法でしょうか。](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)セクション。
+1. メニュー コマンドを含む VSPackage を作成、 [VSIX 拡張機能の開発を開始する方法でしょうか。](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)セクション。
 
-2.  VSPackage の定義が含まれているファイルを開きます。 (C# プロジェクトである*\<プロジェクト名 > Package.cs*)。
+2. VSPackage の定義が含まれているファイルを開きます。 (C# プロジェクトである*\<プロジェクト名 > Package.cs*)。
 
-3.  次の `using` ステートメントを追加します。
+3. 次の `using` ステートメントを追加します。
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  `MenuItemCallback` メソッドを見つけます。 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> オブジェクトを取得するため、<xref:EnvDTE80.DTE2> の呼び出しを追加します。
+4. `MenuItemCallback` メソッドを見つけます。 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> オブジェクトを取得するため、<xref:EnvDTE80.DTE2> の呼び出しを追加します。
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  アドインのコードを追加します。 たとえば、次のコードはソリューション内のスタートアップ プロジェクトの名前を取得します。 (このパッケージを実行するときには、マルチプロジェクト ソリューションが開いている必要があります。)
+5. アドインのコードを追加します。 たとえば、次のコードはソリューション内のスタートアップ プロジェクトの名前を取得します。 (このパッケージを実行するときには、マルチプロジェクト ソリューションが開いている必要があります。)
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)

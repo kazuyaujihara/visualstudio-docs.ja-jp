@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fe97461800d6f6e6eb285dd7eddb610ab2f5b5ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420071"
 ---
 # <a name="graphics-state"></a>グラフィックスの状態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,16 +37,16 @@ Visual Studio のグラフィックス診断の [状態] ウィンドウでは�
   
 ##### <a name="to-change-the-state-view"></a>状態ビューを変更するには  
   
--   [状態] ウィンドウ左上のタイトル バーのすぐ下で、使用する状態ビューのスタイルに対応するボタンを選択します。  
+- [状態] ウィンドウ左上のタイトル バーのすぐ下で、使用する状態ビューのスタイルに対応するボタンを選択します。  
   
-    -   **API 入力状態ビューの表示**  
+    - **API 入力状態ビューの表示**  
   
-    -   **論理状態ビューの表示**  
+    - **論理状態ビューの表示**  
   
-    -   **固定状態ビューの表示**  
+    - **固定状態ビューの表示**  
   
 > [!IMPORTANT]
->  **[固定状態ビューの表示]** で状態を表示するには、**[API 入力状態ビューの表示]** または **[論理状態ビューの表示]** で状態を固定する必要があります。  
+> **[固定状態ビューの表示]** で状態を表示するには、**[API 入力状態ビューの表示]** または **[論理状態ビューの表示]** で状態を固定する必要があります。  
   
 ### <a name="state-table-format"></a>状態テーブルの形式  
  情報のいくつかの列を [状態] ウィンドウに表示します。  
@@ -67,8 +67,8 @@ Visual Studio のグラフィックス診断の [状態] ウィンドウでは�
   
 ##### <a name="to-pin-state-in-place"></a>状態を固定するには  
   
-1.  [状態] ウィンドウで該当する状態を見つけます。 該当する詳細の検索を見つけるために、上位レベルの状態を展開しなければならないことがあります。  
+1. [状態] ウィンドウで該当する状態を見つけます。 該当する詳細の検索を見つけるために、上位レベルの状態を展開しなければならないことがあります。  
   
-2.  該当する状態の上にカーソルを置きます。 状態の項目の左側に、[固定] アイコンが表示されます。  
+2. 該当する状態の上にカーソルを置きます。 状態の項目の左側に、[固定] アイコンが表示されます。  
   
-3.  [固定] アイコンをクリックして、状態の項目を固定します。
+3. [固定] アイコンをクリックして、状態の項目を固定します。

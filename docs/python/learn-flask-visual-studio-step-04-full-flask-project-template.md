@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Visual Studio プロジェクトのコンテキストにおける Flask の基本のチュートリアルです。具体的には、Flask Web プロジェクトと Flask/Jade Web プロジェクト テンプレートの機能について取り上げます。
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b17400aae5386a2d86cc13d0b81293bd2ef068fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957270"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>手順 4: 完全な Flask Web プロジェクト テンプレートを使用する
 
@@ -169,6 +169,7 @@ Jade を有効にするために、プロジェクト テンプレートは最�
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
+
 *templates* フォルダーには、*.html* テンプレートではなく *.jade* ファイルが表示されます。*views.py* のビューは、`flask.render_template` の呼び出しでこれらのファイルを参照します。 それ以外の点では、ビュー コードは同じです。
 
 *.jade* ファイルの 1 つを開くと、テンプレートがより簡潔に表現されていることがわかります。 たとえば、"Flask/Jade Web プロジェクト" テンプレートで作成された *templates/layout.jade* の内容は次のようになります。

@@ -1,12 +1,9 @@
 ---
-title: 'チュートリアル: テキスト テンプレートを使用してコードの生成 |Microsoft Docs'
-ms.custom: ''
+title: 'チュートリアル: テキスト テンプレートを使用してコードを生成する |Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -14,26 +11,26 @@ ms.assetid: 24602ade-baca-425e-a6ce-be09a2c7f7e1
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446702"
 ---
-# <a name="walkthrough-generating-code-by-using-text-templates"></a>チュートリアル: テキスト テンプレートを使用したコード生成
+# <a name="walkthrough-generating-code-by-using-text-templates"></a>チュートリアル: テキスト テンプレートを使用してコードを生成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 コード生成を使用すると、厳密に型指定され、ソース モデルが変わった場合でも簡単に変更できるプログラム コードを作成できます。 コード生成とは対照的に、構成ファイルを使用する完全に汎用的なプログラムを作成する他の手法もあります。構成ファイルを使用すると、柔軟ではありますが、読むのも変更するのも容易ではなく、パフォーマンスもそれほどよくありません。 このチュートリアルでは、コード生成の利点について説明します。  
   
-## <a name="typed-code-for-reading-xml"></a>XML 読み取り用の型指定されたコード  
+## <a name="typed-code-for-reading-xml"></a>XMLを読み取って型付きコードを生成する  
  System.Xml 名前空間は、XML ドキュメントを読み込み、メモリ内で自由に操作できる包括的なツールとして利用できます。 残念ながら、すべてのノードは XmlNode という同じ型です。 そのため、間違った子ノードの型を期待する、間違った属性を期待するなどのプログラミングのミスを犯しやすくなります。  
   
  このプロジェクト例では、テンプレートでサンプル XML ファイルを読み取り、ノードの各型に対応するクラスを生成します。 手入力のコードでは、これらのクラスを使用して XML ファイルを操作できます。 また、同じノード型を使用する他のファイルでも、アプリケーションを実行できます。 サンプル XML ファイルの目的は、アプリケーションで対応できるようにするすべてのノード型の例を提供することです。  
   
 > [!NOTE]
->  [に含まれるアプリケーション](http://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]では、XML ファイルから厳密に型指定されたクラスを生成できます。 ここで紹介するテンプレートは、例として提供されています。  
+> [に含まれるアプリケーション](http://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]では、XML ファイルから厳密に型指定されたクラスを生成できます。 ここで紹介するテンプレートは、例として提供されています。  
   
  サンプル ファイルは次のとおりです。  
   
@@ -89,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>プロジェクトを作成するには  
   
-1.  **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
+1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[プロジェクト]** をクリックします。  
   
-2.  **[Visual C#]** ノードをクリックし、 **[テンプレート]** ウィンドウで **[コンソール アプリケーション]** をクリックします。  
+2. **[Visual C#]** ノードをクリックし、 **[テンプレート]** ウィンドウで **[コンソール アプリケーション]** をクリックします。  
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>プロトタイプの XML ファイルをプロジェクトに追加する  
  このファイルの目的は、アプリケーションで読み取ることができるようにする XML ノード型のサンプルを提供することです。 このファイルは、アプリケーションのテストにも使用できます。 このテンプレートで、ファイル内の各ノード型について C# クラスが生成されます。  
@@ -145,7 +142,7 @@ namespace MyProject
 2. **[新しい項目の追加]** ダイアログ ボックスで、 **[テンプレート]** ウィンドウの **[テキスト テンプレート]** を選択します。  
   
    > [!NOTE]
-   >  [前処理されたテキスト テンプレート] ではなく、[テキスト テンプレート] を追加するようにしてください。  
+   > [ランタイム テキスト テンプレート] ではなく、[テキスト テンプレート] を追加するようにしてください。  
   
 3. ファイルの template ディレクティブで、 `hostspecific` 属性を `true`に変更します。  
   
@@ -215,7 +212,7 @@ class Song {}
   
  このテンプレートはコードを生成しますが、残念なことに、サンプル XML ファイル内のすべてのノードのクラス宣言が出力されます。したがって、 `<song>` ノードの複数のインスタンスが存在すると、song クラスの宣言も複数生成されることになります。  
   
-### <a name="read-the-model-file-then-generate-the-code"></a>モデル ファイルを読み取ってからコードを生成する  
+### <a name="read-the-model-file-then-generate-the-code"></a>モデル ファイルからコードを生成する  
  多くのテキスト テンプレートは、テンプレートの最初の部分でソース ファイルを読み取り、次の部分でテンプレートを生成するというパターンに従います。 ここでも、サンプル ファイルをすべて読み取り、その中に含まれているノード型をまとめてから、クラス宣言を生成する必要があります。 `Dictionary<>:` を使用できるようにするために、`<#@import#>` がもう 1 つ必要です。  
   
 ```  
@@ -418,7 +415,7 @@ namespace MyProject
   
 - テキスト テンプレートは、すばやく増分的に開発およびテストできます。  
   
-  このチュートリアルでは、実際にモデルのインスタンスからプログラム コードが生成されます。このモデルは、アプリケーションによって処理される XML ファイルの典型的な例です。 より本格的なアプローチでは、XML スキーマを .xsd ファイルまたはドメイン固有言語定義の形式でテンプレートへの入力として使用します。 このアプローチの方が、リレーションシップの多重度など、さまざまな特性をテンプレートで判断しやすくなります。  
+  このチュートリアルでは、実際にモデルのインスタンスからプログラム コードを生成しています。このモデルは、アプリケーションによって処理される XML ファイルの典型的な例です。 より本格的なアプローチでは、XML スキーマを .xsd ファイルまたはドメイン固有言語定義の形式でテンプレートへの入力として使用します。 このアプローチの方が、リレーションシップの多重度など、さまざまな特性をテンプレートで判断しやすくなります。  
   
 ## <a name="troubleshooting-the-text-template"></a>テキスト テンプレートのトラブルシューティング  
  テンプレートの変換エラーやコンパイル エラーが **[エラー一覧]** に表示された場合、または出力ファイルが正しく生成されなかった場合は、「[TextTransform ユーティリティを使用したファイルの生成](../modeling/generating-files-with-the-texttransform-utility.md)」で説明されている方法を使用してテキスト テンプレートをトラブルシューティングできます。  
@@ -426,6 +423,3 @@ namespace MyProject
 ## <a name="see-also"></a>関連項目  
  [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)
-
-
-

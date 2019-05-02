@@ -1,14 +1,9 @@
 ---
 title: Managed Package Framework を使用して、プロジェクトの種類 (c#) を実装する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating with MPF
 - MPF projects
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f248bdafaf0fdd632069e6cffe367cf0ed21135f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 86e250c5a5922df52acea7445c97862a00cdc826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741970"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066835"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>マネージド パッケージ フレームワークを使用したプロジェクト タイプの実装 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,9 +29,9 @@ ms.locfileid: "51741970"
   
  VSPackage ソリューションには、このプロジェクトを追加するには、次の操作を行います。  
   
-1.  MPFProj ファイルをダウンロード*MPFProjectDir*します。  
+1. MPFProj ファイルをダウンロード*MPFProjectDir*します。  
   
-2.  *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file、次のブロックを変更します。  
+2. *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file、次のブロックを変更します。  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -45,11 +40,11 @@ ms.locfileid: "51741970"
   </PropertyGroup>  
 ```  
   
-1.  VSPackage プロジェクトを作成します。  
+1. VSPackage プロジェクトを作成します。  
   
-2.  VSPackage プロジェクトをアンロードします。  
+2. VSPackage プロジェクトをアンロードします。  
   
-3.  VSPackage の .csproj ファイルを編集する前に、次のブロックを追加することで`<Import>`ブロック。  
+3. VSPackage の .csproj ファイルを編集する前に、次のブロックを追加することで`<Import>`ブロック。  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -61,20 +56,20 @@ ms.locfileid: "51741970"
   </PropertyGroup>  
 ```  
   
-1.  プロジェクトを保存します。  
+1. プロジェクトを保存します。  
   
-2.  VSPackage ソリューションを閉じてから。  
+2. VSPackage ソリューションを閉じてから。  
   
-3.  VSPackage プロジェクトを再度開きます。 ProjectBase をという名前の新しいディレクトリを表示する必要があります。  
+3. VSPackage プロジェクトを再度開きます。 ProjectBase をという名前の新しいディレクトリを表示する必要があります。  
   
-4.  VSPackage プロジェクトに次の参照を追加します。  
+4. VSPackage プロジェクトに次の参照を追加します。  
   
      Microsoft.Build.Tasks.4.0  
   
-5.  プロジェクトをビルドします。  
+5. プロジェクトをビルドします。  
   
 ## <a name="hierarchy-classes"></a>クラスの階層  
- 次の表では、プロジェクト階層をサポートしている、MPFProj でクラスを示します。 詳細については、[階層と選択](../../extensibility/internals/hierarchies-and-selection.md)を参照してください。  
+ 次の表では、プロジェクト階層をサポートしている、MPFProj でクラスを示します。 詳細については、次を参照してください。[階層と選択](../../extensibility/internals/hierarchies-and-selection.md)します。  
   
 |クラス名|  
 |----------------|  
@@ -91,7 +86,7 @@ ms.locfileid: "51741970"
 |`Microsoft.VisualStudio.Package.BuildDependency`|  
   
 ## <a name="document-handling-classes"></a>ドキュメント処理クラス  
- 次の表では、ドキュメントの処理をサポートしている MPF でクラスを示します。 詳細については、[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)を参照してください。  
+ 次の表では、ドキュメントの処理をサポートしている MPF でクラスを示します。 詳細については、次を参照してください。[とプロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)します。  
   
 |クラス名|  
 |----------------|  
@@ -99,7 +94,7 @@ ms.locfileid: "51741970"
 |`Microsoft.VisualStudio.Package.FileDocumentManager`|  
   
 ## <a name="configuration-and-output-classes"></a>構成と出力クラス  
- 次の表では、プロジェクトの種類のデバッグとリリースでは、プロジェクト出力のコレクションなどの複数の構成をサポートできる MPF クラスを示します。 詳細については、[構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)を参照してください。  
+ 次の表では、プロジェクトの種類のデバッグとリリースでは、プロジェクト出力のコレクションなどの複数の構成をサポートできる MPF クラスを示します。 詳細については、次を参照してください。[構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)します。  
   
 |クラス名|  
 |----------------|  
@@ -131,4 +126,3 @@ ms.locfileid: "51741970"
 |`Microsoft.VisualStudio.Package.ProjectNodeProperties`|  
 |`Microsoft.VisualStudio.Package.FolderNodeProperties`|  
 |`Microsoft.VisualStudio.Package.ReferenceNodeProperties`|
-

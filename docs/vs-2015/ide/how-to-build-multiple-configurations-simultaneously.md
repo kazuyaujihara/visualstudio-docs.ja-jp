@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 431978a10081ec50e9eaca7e88a37f1447f953e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6812395046222c3370e43bfbe75a0502d2cb9044
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439284"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>方法: 複数の構成を同時にビルドする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,16 +29,16 @@ ms.locfileid: "54785869"
   
 ### <a name="to-build-a-project-in-multiple-build-configurations"></a>複数のビルド構成でプロジェクトをビルドするには  
   
-1.  メニュー バーで、**[ビルド]**、**[バッチ ビルド]** の順に選択します。  
+1. メニュー バーで、**[ビルド]**、**[バッチ ビルド]** の順に選択します。  
   
-2.  **[ビルド]** 列で、プロジェクトをビルドする構成のチェック ボックスをオンにします。  
+2. **[ビルド]** 列で、プロジェクトをビルドする構成のチェック ボックスをオンにします。  
   
     > [!TIP]
-    >  ソリューションのビルド構成を編集または作成するには、メニュー バーで **[ビルド]**、**[構成マネージャー]** の順に選択し、**[構成マネージャー]** ダイアログ ボックスを開きます。 ソリューションのビルド構成の編集後に、ソリューションのプロジェクトのすべてのビルド構成を更新するには、**[バッチ ビルド]** ダイアログ ボックスで **[リビルド]** ボタンを選択します。  
+    > ソリューションのビルド構成を編集または作成するには、メニュー バーで **[ビルド]**、**[構成マネージャー]** の順に選択し、**[構成マネージャー]** ダイアログ ボックスを開きます。 ソリューションのビルド構成の編集後に、ソリューションのプロジェクトのすべてのビルド構成を更新するには、**[バッチ ビルド]** ダイアログ ボックスで **[リビルド]** ボタンを選択します。  
   
-3.  指定した構成でプロジェクトをビルドするには、**[ビルド]** または **[リビルド]** ボタンを選択します。  
+3. 指定した構成でプロジェクトをビルドするには、**[ビルド]** または **[リビルド]** ボタンを選択します。  
   
 ## <a name="see-also"></a>関連項目
- [方法 : 構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)   
+ [方法: 作成し、構成の編集](../ide/how-to-create-and-edit-configurations.md)   
  [ビルド構成について](../ide/understanding-build-configurations.md)   
  [MSBuild での複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

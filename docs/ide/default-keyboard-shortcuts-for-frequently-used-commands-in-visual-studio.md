@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e96f9f56c2b73b8f3c39635c81019cd01fa8a69a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946936"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio で頻繁に使用するコマンドに対応する既定のキーボード ショートカット
 
@@ -117,7 +117,7 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 |File.SaveSelectedItems|**Ctrl + S** [全体]|
 |File.ViewinBrowser|**Ctrl + Shift + W** [全体]|
 
-## <a name="project"></a>プロジェクト
+## <a name="project"></a>Project
 
 |コマンド|ショートカット キー [コンテキスト]|
 |--------------| - |

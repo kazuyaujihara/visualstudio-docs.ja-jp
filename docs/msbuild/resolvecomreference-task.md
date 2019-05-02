@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86155da1a14516992841aa5e19de2606eb09fbd8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 123aa52b5062d8ac083f054074df2c65ba77f80d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431294"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference タスク
 1 つ以上のタイプ ライブラリ名または *.tlb* ファイルから成る一覧を使用して、これらのタイプ ライブラリのディスク上の位置を解決します。
@@ -70,7 +70,7 @@ ms.locfileid: "56639064"
 |`WrapperTool`|省略可能な項目メタデータです。<br /><br /> このタイプ ライブラリのアセンブリ ラッパーを生成するために使用されるラッパー ツールを指定します。 この項目メタデータが指定されていないと、タスクは、"tlbimp" の既定のラッパー ツールを使用します。 使用可能な大文字と小文字を区別しない typelibs の選択肢は次のとおりです。<br /><br /> -   `Primary`:COM コンポーネントの既に生成されたプライマリ相互運用機能アセンブリを使用する場合には、このラッパー ツールを使用します。 このラッパー ツールを使用する場合は、ラッパーの出力ディレクトリを指定しないでください。指定すると、タスクが失敗します。<br />-   `TLBImp`:COM コンポーネントの相互運用機能アセンブリを作成する場合には、このラッパー ツールを使用します。<br />-   `AXImp`:ActiveX コントロールの相互運用機能アセンブリを作成する場合には、このラッパー ツールを使用します。|
 
 > [!NOTE]
->  タイプ ライブラリを一意に識別するために提供する情報が多いほど、タスクがディスク上の正しいファイルに解決される可能性が大きくなります。
+> タイプ ライブラリを一意に識別するために提供する情報が多いほど、タスクがディスク上の正しいファイルに解決される可能性が大きくなります。
 
 ## <a name="remarks"></a>解説
  上記のパラメーターに加えて、このタスクは <xref:Microsoft.Build.Utilities.Task> クラスからパラメーターを継承します。 これらの追加パラメーターのリストとその説明については、「[Task 基底クラス](../msbuild/task-base-class.md)」を参照してください。

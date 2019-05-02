@@ -22,42 +22,41 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 741200100e705777520ea585ce02439a3a3c26c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 62cbbd63f38e3317b03b203b3ca1cadc2a17e0c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386107"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>方法: サービスのデータに接続する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 アプリケーションを実行して、サービスから返されたデータを接続する、[データ ソース構成ウィザード](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)選択**サービス**上、 **のデータソースの種類を選択**ページ。  
   
  ウィザードの完了したら、サービス参照をプロジェクトに追加されですぐに使用できるは、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)します。  
   
 > [!NOTE]
->  **[データ ソース]** ウィンドウに表示される項目は、サービスから返される情報に応じて異なります。 サービスによっては、**データ ソース構成ウィザード**でバインドできるオブジェクトを作成するための十分な情報を提供しないものもあります。 たとえば、サービスには、データセットが返された場合その項目に表示できません、**データ ソース ウィンドウ**ウィザードを完了するとします。 これは、ウィザードには、データ ソースを作成するのに十分な情報がないため、型指定されていないデータセットがスキーマで提供されないためにです。  
+> **[データ ソース]** ウィンドウに表示される項目は、サービスから返される情報に応じて異なります。 サービスによっては、**データ ソース構成ウィザード**でバインドできるオブジェクトを作成するための十分な情報を提供しないものもあります。 たとえば、サービスには、データセットが返された場合その項目に表示できません、**データ ソース ウィンドウ**ウィザードを完了するとします。 これは、ウィザードには、データ ソースを作成するのに十分な情報がないため、型指定されていないデータセットがスキーマで提供されないためにです。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-connect-your-application-to-a-service"></a>アプリケーション サービスに接続するには  
   
-1.  **[データ]** メニューの **[新しいデータ ソースの追加]** をクリックします。  
+1. **[データ]** メニューの **[新しいデータ ソースの追加]** をクリックします。  
   
-2.  選択**サービス**上、**データ ソースの種類を選択**] ページの [クリックして **[次へ]**。  
+2. 選択**サービス**上、**データ ソースの種類を選択**] ページの [クリックして **[次へ]**。  
   
-3.  使用して、またはをクリックする、サービスのアドレスを入力**Discover**をクリックして、現在のソリューションでのサービスを探します**移動**します。  
+3. 使用して、またはをクリックする、サービスのアドレスを入力**Discover**をクリックして、現在のソリューションでのサービスを探します**移動**します。  
   
-4.  必要に応じて、新しい**Namespace**既定値の代わりに型指定することができます。  
+4. 必要に応じて、新しい**Namespace**既定値の代わりに型指定することができます。  
   
     > [!NOTE]
-    >  をクリックして**詳細**を開く、[サービス参照の構成 ダイアログ ボックス](../data-tools/configure-service-reference-dialog-box.md)します。  
+    > をクリックして**詳細**を開く、[サービス参照の構成 ダイアログ ボックス](../data-tools/configure-service-reference-dialog-box.md)します。  
   
-5.  をクリックして**OK**をプロジェクトにサービス参照を追加します。  
+5. をクリックして**OK**をプロジェクトにサービス参照を追加します。  
   
-6.  **[完了]** をクリックします。  
+6. **[完了]** をクリックします。  
   
      **[データ ソース]** ウィンドウに、データ ソースが追加されます。  
   
@@ -65,7 +64,7 @@ ms.locfileid: "58976184"
   
 #### <a name="to-add-functionality-to-your-application"></a>アプリケーションに機能を追加するには  
   
--   項目を選択、**データソース**ウィンドウ バインドされたコントロールを作成するためのフォームにドラッグします。 詳細については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。  
+- 項目を選択、**データソース**ウィンドウ バインドされたコントロールを作成するためのフォームにドラッグします。 詳細については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [WCF データ サービスへの WPF コントロールをバインドします。](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   

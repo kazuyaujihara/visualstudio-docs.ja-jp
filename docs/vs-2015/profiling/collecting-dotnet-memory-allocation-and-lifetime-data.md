@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 232707cd8fa51b8b69c67e1e66cb0790f4938031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 68decc73e14f8748d8434e05e50d6d3b48612d40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436769"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>.NET メモリの割り当ておよび有効期間データの収集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +33,16 @@ ms.locfileid: "54794216"
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
   
  データを収集するには、サンプリングまたはインストルメンテーション プロファイリング メソッドを使用します。  
   
--   サンプリング メソッドを使用すると、プロファイラーでは、開始またはアタッチされたプロセスで生成されたすべての .NET メモリ割り当てとオブジェクトが追跡されます。  
+- サンプリング メソッドを使用すると、プロファイラーでは、開始またはアタッチされたプロセスで生成されたすべての .NET メモリ割り当てとオブジェクトが追跡されます。  
   
--   インストルメンテーション メソッドを使用すると、プロファイラーでは、インストルメント化されたモジュールで生成された .NET メモリ割り当てとオブジェクトのみが追跡されます。  
+- インストルメンテーション メソッドを使用すると、プロファイラーでは、インストルメント化されたモジュールで生成された .NET メモリ割り当てとオブジェクトのみが追跡されます。  
   
 > [!IMPORTANT]
->  サンプリング メソッドを使用して .NET メモリ データ (割り当てかオブジェクトの有効期間、またはその両方) を収集している場合、ユーザーが指定したサンプリング イベントはすべて無視され、適切なメモリの割り当てイベントを使用してデータが収集されます。  
+> サンプリング メソッドを使用して .NET メモリ データ (割り当てかオブジェクトの有効期間、またはその両方) を収集している場合、ユーザーが指定したサンプリング イベントはすべて無視され、適切なメモリの割り当てイベントを使用してデータが収集されます。  
   
  .NET メモリ割り当てのプロファイリングを有効にすると、割り当てビューも有効になります。 .NET 有効期間データのプロファイリングを有効にすると、オブジェクトの有効期間ビューも有効になります。 詳細については、「[.NET メモリの割り当てビュー](../profiling/dotnet-memory-allocations-view.md)」と「[オブジェクトの有効期間ビュー](../profiling/object-lifetime-view.md)」を参照してください。  
   
@@ -50,13 +50,13 @@ ms.locfileid: "54794216"
   
 ### <a name="to-collect-net-memory-data"></a>.NET メモリ データを収集するには  
   
-1.  **パフォーマンス エクスプローラー**で、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。  
+1. **パフォーマンス エクスプローラー**で、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。  
   
-2.  _[パフォーマンス セッション]_**[プロパティ ページ]** ダイアログ ボックスで **[全般]** タブをクリックし、**[.NET オブジェクトの割り当て情報を収集]** チェック ボックスをオンにします。  
+2. _[パフォーマンス セッション]_**[プロパティ ページ]** ダイアログ ボックスで **[全般]** タブをクリックし、**[.NET オブジェクトの割り当て情報を収集]** チェック ボックスをオンにします。  
   
-3.  .NET オブジェクトの有効期間データを収集するには、**[.NET オブジェクトの有効期間情報も収集]** チェック ボックスをオンにします。  
+3. .NET オブジェクトの有効期間データを収集するには、**[.NET オブジェクトの有効期間情報も収集]** チェック ボックスをオンにします。  
   
-## <a name="common-tasks"></a>一般的なタスク  
+## <a name="common-tasks"></a>よく使う機能  
  追加のオプションを、パフォーマンス セッションの [ _パフォーマンス セッション]_**[プロパティ ページ]** ダイアログ ボックスで指定できます。 このダイアログ ボックスを開くには:  
   
 - **パフォーマンス エクスプローラー**で、パフォーマンス セッション名を右クリックして **[プロパティ]** をクリックします。  
@@ -69,20 +69,20 @@ ms.locfileid: "54794216"
 |コード ソリューション内に複数の .exe プロジェクトがある場合は、**[起動]** ページで、開始するアプリケーションを選択します。|-   [階層相互作用データの収集](../profiling/collecting-tier-interaction-data.md)|  
 |**[階層の相互作用]** ページで、プロファイリング実行に ADO.NET 呼び出しデータを追加します。|-   [階層相互作用データの収集](../profiling/collecting-tier-interaction-data.md)|  
 |**[Windows イベント]** ページで、サンプリング データと共に収集する 1 つ以上の ETW (Windows イベント トレーシング) イベントを指定します。|-   [方法: ETW (Event Tracing for Windows) データを収集する](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|  
-|**[Windows カウンター]** ページで、プロファイリング データをマークとして追加するオペレーティング システムのパフォーマンス カウンターを 1 つ以上指定します。|-   [方法 : Windows カウンター データを収集する](../profiling/how-to-collect-windows-counter-data.md)|  
-|アプリケーション モジュールで複数のバージョンを使用する場合は、**[詳細]** ページで、プロファイリングする .NET Framework ランタイムのバージョンを指定します。 既定では、最初に読み込まれたバージョンがプロファイリングされます。|-   [方法: side-by-side 実行でプロファイリングするように .NET Framework ランタイムを指定する](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|  
+|**[Windows カウンター]** ページで、プロファイリング データをマークとして追加するオペレーティング システムのパフォーマンス カウンターを 1 つ以上指定します。|-   [方法: Windows カウンター データを収集する](../profiling/how-to-collect-windows-counter-data.md)|  
+|アプリケーション モジュールで複数のバージョンを使用する場合は、**[詳細]** ページで、プロファイリングする .NET Framework ランタイムのバージョンを指定します。 既定では、最初に読み込まれたバージョンがプロファイリングされます。|-   [方法: .NET Framework ランタイムを指定する](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|  
   
 ## <a name="instrumentation-tasks"></a>インストルメンテーション タスク  
  次の表のタスクは、インストルメンテーション メソッドでのプロファイリングに固有の **[プロパティ ページ]** ダイアログ ボックスのオプションです。  
   
 |タスク|関連するコンテンツ|  
 |----------|---------------------|  
-|**[バイナリ]** ページで、モジュールのインストルメント化されたコピーの場所を指定します。 既定では、元のバイナリはバックアップ フォルダーに移動されます。|-   [方法 : インストルメント化されたバイナリを再配置する](../profiling/how-to-relocate-instrumented-binaries.md)|  
-|**[インストルメンテーション]** ページで、プロファイリングのオーバーヘッドを低減するために小規模関数を除外し、ASP.NET Web ページで JavaScript コードをプロファイルし、インストルメンテーション処理の前と後にコマンド プロンプトで実行するコマンドを指定します。|-   [方法 : インストルメンテーションで短い関数を除外または含める](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />-   [方法: Web ページ内の JavaScript コードをプロファイリングする](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [方法 : インストルメント化前のコマンドおよびインストルメント化後のコマンドを指定する](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|  
-|**[CPU カウンター]** ページで、プロファイリング データを追加するプロセッサのパフォーマンス カウンターを 1 つ以上指定します。|-   [方法 : CPU カウンター データを収集する](../profiling/how-to-collect-cpu-counter-data.md)|  
-|**[詳細]** ページで、追加する VSInstr.exe オプションをすべて指定します (特定の関数を含めるオプションや特定の関数を除外するオプションなど)。 VSInstr オプションの詳細については、「[VSInstr](../profiling/vsinstr.md)」を参照してください。|-   [方法 : 追加のインストルメンテーション オプションを指定する](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [方法 : インストルメンテーションを特定の関数に制限する](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|  
+|**[バイナリ]** ページで、モジュールのインストルメント化されたコピーの場所を指定します。 既定では、元のバイナリはバックアップ フォルダーに移動されます。|-   [方法: インストルメント化されたバイナリの再配置](../profiling/how-to-relocate-instrumented-binaries.md)|  
+|**[インストルメンテーション]** ページで、プロファイリングのオーバーヘッドを低減するために小規模関数を除外し、ASP.NET Web ページで JavaScript コードをプロファイルし、インストルメンテーション処理の前と後にコマンド プロンプトで実行するコマンドを指定します。|-   [方法: インストルメンテーションで短い関数を除外または含める](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />-   [方法: Web ページ内の JavaScript コードをプロファイリングする](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [方法: インストルメント前のコマンドおよびインストルメント後のコマンドを指定する](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|  
+|**[CPU カウンター]** ページで、プロファイリング データを追加するプロセッサのパフォーマンス カウンターを 1 つ以上指定します。|-   [方法: CPU カウンター データを収集する](../profiling/how-to-collect-cpu-counter-data.md)|  
+|**[詳細]** ページで、追加する VSInstr.exe オプションをすべて指定します (特定の関数を含めるオプションや特定の関数を除外するオプションなど)。 VSInstr オプションの詳細については、「[VSInstr](../profiling/vsinstr.md)」を参照してください。|-   [方法: 追加のインストルメンテーション オプションを指定する](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [方法: インストルメンテーションを特定の関数に制限する](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|  
   
 ## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
- [方法: 収集方法を選択する](../profiling/how-to-choose-collection-methods.md)   
+ [方法: 収集方法を選択します。](../profiling/how-to-choose-collection-methods.md)   
  [パフォーマンス セッションのプロパティ](../profiling/performance-session-properties.md)

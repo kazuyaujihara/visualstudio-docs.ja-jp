@@ -10,12 +10,12 @@ ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cbce5c13c51747a08b3832440ef91ace3d6a89c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0bb90723a72c10dbf6cfda5edd4aa68f71f1c6b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962618"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098131"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>エディターにレガシ コードを適合させる
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +75,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-create-an-adapter-for-ivstextview"></a>IVsTextView のアダプターを作成するには  
   
-1.  Microsoft.VisualStudio.Editor.dll への参照を追加します。 必ず`CopyLocal`に設定されている`false`します。  
+1. Microsoft.VisualStudio.Editor.dll への参照を追加します。 必ず`CopyLocal`に設定されている`false`します。  
   
-2.  インスタンスを作成、 <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>、次のようにします。  
+2. インスタンスを作成、 <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>、次のようにします。  
   
     ```  
     using Microsoft.VisualStudio.Editor;  
@@ -96,9 +96,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-get-an-ivxtextbuffer"></a>IVxTextBuffer を取得するには  
   
-1.  IVx* のインターフェイスの定義が VSEditor.h ファイルには.Visual Studio SDK のインストールの \VisualStudioIntegration\Common\Inc\ フォルダーです。  
+1. IVx* のインターフェイスの定義が VSEditor.h ファイルには.Visual Studio SDK のインストールの \VisualStudioIntegration\Common\Inc\ フォルダーです。  
   
-2.  次のコードを使用してテキスト バッファーをインスタンス化、`IVsUserData->GetData()`メソッド。 次のコードで`pData`へのポインター、`IVsUserData`オブジェクト。  
+2. 次のコードを使用してテキスト バッファーをインスタンス化、`IVsUserData->GetData()`メソッド。 次のコードで`pData`へのポインター、`IVsUserData`オブジェクト。  
   
     ```  
     #include <textmgr.h>  
@@ -125,9 +125,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>非 MEF コンポーネントから Visual Studio エディターのコンポーネントを使用するには  
   
-1.  Microsoft.VisualStudio.ComponentModelHost.dll アセンブリへの参照を追加します.Visual Studio のインストールの \Common7\IDE\ フォルダーにあります。 必ず`CopyLocal`に設定されている`false`します。  
+1. Microsoft.VisualStudio.ComponentModelHost.dll アセンブリへの参照を追加します.Visual Studio のインストールの \Common7\IDE\ フォルダーにあります。 必ず`CopyLocal`に設定されている`false`します。  
   
-2.  追加のプライベート`IComponentModel`を次のように、Visual Studio エディター サービスを使用するクラスのメンバー。  
+2. 追加のプライベート`IComponentModel`を次のように、Visual Studio エディター サービスを使用するクラスのメンバー。  
   
     ```  
     using Microsoft.VisualStudio.ComponentModelHost;  
@@ -135,14 +135,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     private IComponentModel componentModel;  
     ```  
   
-3.  コンポーネントの初期化メソッドでコンポーネント モデルのインスタンスを作成します。  
+3. コンポーネントの初期化メソッドでコンポーネント モデルのインスタンスを作成します。  
   
     ```  
     componentModel =  
      (IComponentModel)Package.GetGlobalService(typeof(SComponentModel));  
     ```  
   
-4.  その後、呼び出すことによって、Visual Studio エディターのサービスのいずれかを取得できます、`IComponentModel.GetService<T>()`サービスのメソッド。  
+4. その後、呼び出すことによって、Visual Studio エディターのサービスのいずれかを取得できます、`IComponentModel.GetService<T>()`サービスのメソッド。  
   
     ```  
     textBufferFactoryService =  

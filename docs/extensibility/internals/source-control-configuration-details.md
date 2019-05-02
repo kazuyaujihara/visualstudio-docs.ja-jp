@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c01c71673640814006fe6771aa841852c247fd54
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MT
+ms.openlocfilehash: 59aa3ac36e989b2e2e1af2e36e8360ef53cb8438
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428999"
 ---
 # <a name="source-control-configuration-details"></a>ソース管理構成の詳細
 ソース管理を実装するために、プロジェクト システムやには、次のエディターを適切に構成する必要があります。
 
--   変更された状態に遷移するアクセス許可を要求します。
+- 変更された状態に遷移するアクセス許可を要求します。
 
--   ファイルを保存するアクセス許可を要求します。
+- ファイルを保存するアクセス許可を要求します。
 
--   追加、削除、またはプロジェクト内のファイルの名前を変更する許可を要求します。
+- 追加、削除、またはプロジェクト内のファイルの名前を変更する許可を要求します。
 
 ## <a name="request-permission-to-transition-to-changed-state"></a>変更された状態に遷移するアクセス許可を要求します。
  プロジェクトまたはエディターを呼び出すことによって変更された (ダーティ) 状態に遷移するためのアクセス許可を要求する必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>します。 実装する各エディター<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>呼び出す必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>を返す前に、環境からドキュメントの変更の承認を得ると`True`の<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>します。 プロジェクトでは、プロジェクト ファイルは、エディターでは基本的をその結果、そのファイルはテキスト エディターのようにプロジェクト ファイルの変更状態の追跡を実装するための同じの責任を持ちます。 環境は、ソリューションの変更の状態を処理しますが、任意のオブジェクトを参照していては格納されません、プロジェクト ファイルやその項目のように、ソリューションの変更の状態を処理する必要があります。 一般に、プロジェクトまたはエディターがアイテムの永続化を管理する場合、られます変更状態の追跡を実装する責任を負います。
@@ -41,7 +41,7 @@ ms.locfileid: "54965316"
  プロジェクトまたはエディターは、ファイルを保存して、前に呼び出す必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>します。 プロジェクト ファイルのこれらの呼び出しは、プロジェクト ファイルを保存するタイミングを認識しているソリューションによって自動的に完了します。 しない限り、これらの呼び出しを行うためのエディターは、エディターの実装の`IVsPersistDocData2`ヘルパー関数を使用して<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>します。 エディターを実装する場合`IVsPersistDocData2`への呼び出し、この方法で`IVsQueryEditQuerySave2::QuerySaveFile`または`IVsQueryEditQuerySave2::QuerySaveFiles`が行われます。
 
 > [!NOTE]
->  必ずこれらの呼び出しを事前-これは、エディターが、[キャンセル] を受信できないときにします。
+> 必ずこれらの呼び出しを事前-これは、エディターが、[キャンセル] を受信できないときにします。
 
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>追加、削除、またはプロジェクト内のファイルの名前を変更する許可を要求します。
  プロジェクトを追加、名前の変更、またはファイルまたはディレクトリを削除、前に呼び出す必要があります、適切な`IVsTrackProjectDocuments2::OnQuery*`環境からの許可を要求するメソッド。 アクセス許可が付与されるかどうか、プロジェクトが、操作を完了する必要があります、呼び出して、適切な`IVsTrackProjectDocuments2::OnAfter*`操作が完了した環境に通知するメソッド。 プロジェクトでのメソッドを呼び出す必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>のすべてのファイル (たとえば、特別なファイル) と親のファイルだけでなくインターフェイスです。 ファイルの呼び出しが必須ですには、ディレクトリの呼び出しは省略可能です。 かどうかは、プロジェクトには、ディレクトリ情報が、適切なを呼び出す必要がある<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>メソッドが、この情報がないかどうかは、環境では、ディレクトリ情報を推論します。

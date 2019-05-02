@@ -11,12 +11,12 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9627170ad65906af1bc7930897c374504cae4552
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: abbcc1fc1048866ef790a4b6779ed15ef80a9be1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429523"
 ---
 # <a name="project-persistence"></a>プロジェクトの永続化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "59002930"
   
  プロジェクト項目には、ファイル ベースまたはファイル ベースを指定できます。  
   
--   ファイルベースのアイテムには、ローカルまたはリモートを指定できます。 、C# では、Web プロジェクトでなど、リモート システム上のファイルへの接続を永続化、ローカルでファイル自体がリモート システムに保持されますが、。  
+- ファイルベースのアイテムには、ローカルまたはリモートを指定できます。 、C# では、Web プロジェクトでなど、リモート システム上のファイルへの接続を永続化、ローカルでファイル自体がリモート システムに保持されますが、。  
   
--   ファイル ベース以外の項目は、データベースのリポジトリにアイテムを保存できます。  
+- ファイル ベース以外の項目は、データベースのリポジトリにアイテムを保存できます。  
   
 ## <a name="commit-models"></a>モデルをコミットします。  
  プロジェクト項目の場所を決定した後は、適切なコミット モデルを選択する必要があります。 たとえば、ローカル ファイルとファイル ベース モデルでの各プロジェクト保存できます自律的に。 リポジトリのモデルでは、1 つのトランザクションで複数の項目を保存できます。 詳細については、次を参照してください。[プロジェクトの種類の設計に関する決定事項](../../extensibility/internals/project-type-design-decisions.md)します。  

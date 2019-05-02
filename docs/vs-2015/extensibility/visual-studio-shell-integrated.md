@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
-ms.translationtype: MT
+ms.openlocfilehash: 736031f1de24144f7b5f68ed44710e0c894df41a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "59003146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445728"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (Integrated)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Visual Studio の統合シェルには、統合開発環境 (IDE)、デバッガ
  Visual Studio の統合シェルとは、実際には、Visual Studio 分離シェルと統合シェルの特定のコンポーネントを含む追加のインストールの組み合わせです。  統合シェル アプリケーションは、両方の分離シェル再頒布可能パッケージを含める必要があります[Microsoft Visual Studio Shell (Isolated) 再頒布可能パッケージ](http://go.microsoft.com/fwlink/?LinkId=616022)と統合シェルの再頒布可能パッケージ[Microsoft Visual Studio Shell (Integrated) 再頒布可能パッケージ](http://go.microsoft.com/fwlink/?LinkId=616021)します。  
   
 > [!NOTE]
->  分離と統合シェルの再頒布可能パッケージにアクセスする前にお客様の簡単なアンケートに記入してになります。  アンケートに記入した後は、するは再頒布可能パッケージのダウンロード リンクを含む Visual Studio の Connect ページに移動します。  Visual Studio の Connect サイトにアクセスする際に、ダウンロード リンクを見つけることができます、**プログラム&#124;VISUAL STUDIO 2015 統合と分離シェル**タブ。  
+> 分離と統合シェルの再頒布可能パッケージにアクセスする前にお客様の簡単なアンケートに記入してになります。  アンケートに記入した後は、するは再頒布可能パッケージのダウンロード リンクを含む Visual Studio の Connect ページに移動します。  Visual Studio の Connect サイトにアクセスする際に、ダウンロード リンクを見つけることができます、**プログラム&#124;VISUAL STUDIO 2015 統合と分離シェル**タブ。  
   
  完全なバージョンの Visual Studio と同じコンピューターに、統合シェル アプリケーションをインストールする場合、アプリケーションのコンポーネントを直接 Visual Studio に統合されます。  
   
@@ -68,15 +68,15 @@ Visual Studio の統合シェルには、統合開発環境 (IDE)、デバッガ
 ## <a name="features-not-included-in-the-integrated-shell"></a>Integrated Shell に含まれていない機能  
  統合シェルに含まれていない機能の一覧を次には。  
   
--   クラス デザイナー  
+- クラス デザイナー  
   
--   PreEmptive Protection - Dotfuscator  
+- PreEmptive Protection - Dotfuscator  
   
--   言語機能  
+- 言語機能  
   
--   VSHost  
+- VSHost  
   
--   言語の Visual Studio、または、関連付けられているプロジェクト テンプレートまたはプロジェクト項目テンプレートは、統合シェルに含まれます。 その他の機能の言語固有の実装が含まれる、Visual Basic コード スニペットの例ではありません。  
+- 言語の Visual Studio、または、関連付けられているプロジェクト テンプレートまたはプロジェクト項目テンプレートは、統合シェルに含まれます。 その他の機能の言語固有の実装が含まれる、Visual Basic コード スニペットの例ではありません。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio の拡張の概要](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

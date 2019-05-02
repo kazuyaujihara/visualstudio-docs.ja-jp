@@ -1,37 +1,32 @@
 ---
 title: ソース管理構成の詳細 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], configuration details
 ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 55e2364ca096b5329369e51ccdadf07f191720e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5faa0ce575647038ac5ac7839b6dc066b7b51ce6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432070"
 ---
 # <a name="source-control-configuration-details"></a>ソース管理構成の詳細
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 ソース管理を実装するために、プロジェクト システムやには、次のエディターを適切に構成する必要があります。  
   
--   変更された状態に遷移するアクセス許可を要求します。  
+- 変更された状態に遷移するアクセス許可を要求します。  
   
--   ファイルを保存するアクセス許可を要求します。  
+- ファイルを保存するアクセス許可を要求します。  
   
--   追加、削除、またはプロジェクト内のファイルの名前を変更する許可を要求します。  
+- 追加、削除、またはプロジェクト内のファイルの名前を変更する許可を要求します。  
   
 ## <a name="request-permission-to-transition-to-changed-state"></a>変更された状態に遷移するアクセス許可を要求します。  
  プロジェクトまたはエディターを呼び出すことによって変更された (ダーティ) 状態に遷移するためのアクセス許可を要求する必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>します。 実装する各エディター<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>呼び出す必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>を返す前に、環境からドキュメントの変更の承認を得ると`True`の`M:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty(System.Int32@)`します。 プロジェクトでは、プロジェクト ファイルは、エディターでは基本的をその結果、そのファイルはテキスト エディターのようにプロジェクト ファイルの変更状態の追跡を実装するための同じの責任を持ちます。 環境は、ソリューションの変更の状態を処理しますが、任意のオブジェクトを参照していては格納されません、プロジェクト ファイルやその項目のように、ソリューションの変更の状態を処理する必要があります。 一般に、プロジェクトまたはエディターがアイテムの永続化を管理する場合、られます変更状態の追跡を実装する責任を負います。  
@@ -48,7 +43,7 @@ ms.locfileid: "51753711"
  プロジェクトまたはエディターは、ファイルを保存して、前に呼び出す必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>します。 プロジェクト ファイルのこれらの呼び出しは、プロジェクト ファイルを保存するタイミングを認識しているソリューションによって自動的に完了します。 しない限り、これらの呼び出しを行うためのエディターは、エディターの実装の`IVsPersistDocData2`ヘルパー関数を使用して<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>します。 エディターを実装する場合`IVsPersistDocData2`への呼び出し、この方法で`IVsQueryEditQuerySave2::QuerySaveFile`または`IVsQueryEditQuerySave2::QuerySaveFiles`が行われます。  
   
 > [!NOTE]
->  必ずこれらの呼び出しを事前-これは、エディターが、[キャンセル] を受信できないときにします。  
+> 必ずこれらの呼び出しを事前-これは、エディターが、[キャンセル] を受信できないときにします。  
   
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>追加、削除、またはプロジェクト内のファイルの名前を変更する許可を要求します。  
  プロジェクトを追加、名前の変更、またはファイルまたはディレクトリを削除、前に呼び出す必要があります、適切な`IVsTrackProjectDocuments2::OnQuery*`環境からの許可を要求するメソッド。 アクセス許可が付与されるかどうか、プロジェクトが、操作を完了する必要があります、呼び出して、適切な`IVsTrackProjectDocuments2::OnAfter*`操作が完了した環境に通知するメソッド。 プロジェクトでのメソッドを呼び出す必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>のすべてのファイル (たとえば、特別なファイル) と親のファイルだけでなくインターフェイスです。 ファイルの呼び出しが必須ですには、ディレクトリの呼び出しは省略可能です。 かどうかは、プロジェクトには、ディレクトリ情報が、適切なを呼び出す必要がある<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>メソッドが、この情報がないかどうかは、環境では、ディレクトリ情報を推論します。  
@@ -65,4 +60,3 @@ ms.locfileid: "51753711"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>   
  [ソース管理のサポート](../../extensibility/internals/supporting-source-control.md)
-

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 複数の UI マップでの大規模アプリケーションのテスト | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -11,12 +11,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 459e7e00f1fc9602b4e003ec16394d9cdf06410a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 18180ee3277cdff60d11c0ae35e8aa3c990764de
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386044"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>複数の UI マップでの大規模アプリケーションのテスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "54775087"
 ## <a name="do-you-need-multiple-ui-maps"></a>複数の UI マップが必要な場合  
  次のような場合には、それぞれに複数の UI マップを作成してください。  
   
--   互いに関連して論理演算を実行する複雑な複合 UI コントロールのセットが複数ある場合 (Web サイトでの登録ページや、買い物カゴの購入ページなど)。  
+- 互いに関連して論理演算を実行する複雑な複合 UI コントロールのセットが複数ある場合 (Web サイトでの登録ページや、買い物カゴの購入ページなど)。  
   
--   アプリケーションのさまざまな時点でアクセスする、独立したコントロールのセットがある場合 （複数の操作ページからなるウィザードなど） ウィザードのそれぞれのページが非常に複雑な場合には、ページごとに個別の UI マップを作成することもできます。  
+- アプリケーションのさまざまな時点でアクセスする、独立したコントロールのセットがある場合 （複数の操作ページからなるウィザードなど） ウィザードのそれぞれのページが非常に複雑な場合には、ページごとに個別の UI マップを作成することもできます。  
   
 ## <a name="adding-multiple-ui-maps"></a>複数の UI マップの追加  
   
@@ -59,7 +59,7 @@ ms.locfileid: "54775087"
     **[新しい項目の追加]** ダイアログ ボックスが表示されます。  
   
    > [!NOTE]
-   >  新しいコード化された UI テスト マップを追加するには、コード化されたテスト プロジェクト内で操作する必要があります。  
+   > 新しいコード化された UI テスト マップを追加するには、コード化されたテスト プロジェクト内で操作する必要があります。  
   
 3. リストから **[コード化された UI テスト マップ]** を選択します。  
   
@@ -138,7 +138,7 @@ namespace ContosoProject
 }  
 ```  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>   
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   

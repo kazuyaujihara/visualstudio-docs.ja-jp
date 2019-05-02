@@ -8,16 +8,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 108ccd07c5e15a264fcd1dc5efe6f5052cd052f6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907044"
 ---
 # <a name="manage-universal-windows-projects"></a>ユニバーサル Windows プロジェクトを管理します。
 
-ユニバーサル Windows アプリは、Windows 8.1 と Windows Phone 8.1、両方のプラットフォームでコードとその他のアセットを使用する開発者の両方を対象とするアプリです。 共有コードとリソースは、プラットフォーム固有のコードとリソースは個別のプロジェクト、その他の Windows Phone および Windows のいずれかの保持中に、共有プロジェクトに保持されます。 ユニバーサル Windows アプリの詳細については、[ユニバーサル Windows アプリ](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx)を参照してください。 プロジェクトを管理する、visual Studio 拡張機能があります単一プラットフォームのアプリとは異なる構造をユニバーサル Windows アプリ プロジェクトがあることに注意してくださかった。 このチュートリアルでは、共有プロジェクトを移動し、共有のアイテムを管理する方法を示します。
+ユニバーサル Windows アプリは、Windows 8.1 と Windows Phone 8.1、両方のプラットフォームでコードとその他のアセットを使用する開発者の両方を対象とするアプリです。 共有コードとリソースは、プラットフォーム固有のコードとリソースは個別のプロジェクト、その他の Windows Phone および Windows のいずれかの保持中に、共有プロジェクトに保持されます。 ユニバーサル Windows アプリの詳細については、次を参照してください。[ユニバーサル Windows アプリ](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx)します。 プロジェクトを管理する、visual Studio 拡張機能があります単一プラットフォームのアプリとは異なる構造をユニバーサル Windows アプリ プロジェクトがあることに注意してくださかった。 このチュートリアルでは、共有プロジェクトを移動し、共有のアイテムを管理する方法を示します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
@@ -25,11 +25,11 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 
 ### <a name="navigate-the-shared-project"></a>共有プロジェクトを移動します。
 
-1.  という名前の c# VSIX プロジェクトを作成する**TestUniversalProject**します。 (**ファイル** > **新しい** > **プロジェクト**し**c#**  >  **機能拡張** > **Visual Studio パッケージ**)。 追加、**カスタム コマンド**プロジェクト項目テンプレート (上、**ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目**に移動し、**拡張**)。 ファイルに名前を**TestUniversalProject**します。
+1. という名前の c# VSIX プロジェクトを作成する**TestUniversalProject**します。 (**ファイル** > **新しい** > **プロジェクト**し**c#**  >  **機能拡張** > **Visual Studio パッケージ**)。 追加、**カスタム コマンド**プロジェクト項目テンプレート (上、**ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目**に移動し、**拡張**)。 ファイルに名前を**TestUniversalProject**します。
 
-2.  参照を追加*Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll*と*Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (で、 **拡張機能**セクション)。
+2. 参照を追加*Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll*と*Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (で、 **拡張機能**セクション)。
 
-3.  開いている*TestUniversalProject.cs*し、以下の追加`using`ステートメント。
+3. 開いている*TestUniversalProject.cs*し、以下の追加`using`ステートメント。
 
     ```csharp
     using EnvDTE;
@@ -42,7 +42,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     using System.Windows.Forms;
     ```
 
-4.  `TestUniversalProject`クラスがポイントするプライベート フィールドを追加、**出力**ウィンドウ。
+4. `TestUniversalProject`クラスがポイントするプライベート フィールドを追加、**出力**ウィンドウ。
 
     ```csharp
     public sealed class TestUniversalProject
@@ -52,7 +52,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     }
     ```
 
-5.  TestUniversalProject コンス トラクター内で出力ウィンドウへの参照を設定します。
+5. TestUniversalProject コンス トラクター内で出力ウィンドウへの参照を設定します。
 
     ```csharp
     private TestUniversalProject(Package package)
@@ -77,7 +77,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     }
     ```
 
-6.  既存のコードからの削除、`ShowMessageBox`メソッド。
+6. 既存のコードからの削除、`ShowMessageBox`メソッド。
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -85,7 +85,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     }
     ```
 
-7.  このチュートリアルでは、複数のさまざまな目的に使用する DTE オブジェクトを取得します。 また、メニュー ボタンがクリックされたときに、ソリューションが読み込まれていることを確認してください。
+7. このチュートリアルでは、複数のさまざまな目的に使用する DTE オブジェクトを取得します。 また、メニュー ボタンがクリックされたときに、ソリューションが読み込まれていることを確認してください。
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -103,7 +103,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     }
     ```
 
-8.  共有プロジェクトを検索します。 共有プロジェクトは、純粋なコンテナーです。出力を生成またはビルドにしません。 次のメソッドを探すことによって、ソリューションの最初の共有プロジェクトを検索します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>共有プロジェクトの機能を持つオブジェクト。
+8. 共有プロジェクトを検索します。 共有プロジェクトは、純粋なコンテナーです。出力を生成またはビルドにしません。 次のメソッドを探すことによって、ソリューションの最初の共有プロジェクトを検索します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>共有プロジェクトの機能を持つオブジェクト。
 
     ```csharp
     private IVsHierarchy FindSharedProject()
@@ -306,7 +306,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>共有プラットフォーム プロジェクト アイテムを管理します。
 
-1.  プラットフォームのプロジェクト共有項目を検索します。 共有プロジェクト内の項目が、プラットフォーム プロジェクトに共有項目として表示されます。 表示することはできません、**ソリューション エクスプ ローラー**を検索して、プロジェクト階層を移動することができますが、します。 次のメソッドは、階層について説明し、共有のすべての項目を収集します。 必要に応じて、各項目のキャプションを出力します。 共有アイテムは、新しいプロパティで識別される<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>します。
+1. プラットフォームのプロジェクト共有項目を検索します。 共有プロジェクト内の項目が、プラットフォーム プロジェクトに共有項目として表示されます。 表示することはできません、**ソリューション エクスプ ローラー**を検索して、プロジェクト階層を移動することができますが、します。 次のメソッドは、階層について説明し、共有のすべての項目を収集します。 必要に応じて、各項目のキャプションを出力します。 共有アイテムは、新しいプロパティで識別される<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>します。
 
     ```csharp
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)
@@ -338,7 +338,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     }
     ```
 
-2.  `ShowMessageBox`メソッドでは、次のコードをプラットフォームのプロジェクト階層アイテムの説明を追加します。 内で挿入、`foreach`ブロックします。
+2. `ShowMessageBox`メソッドでは、次のコードをプラットフォームのプロジェクト階層アイテムの説明を追加します。 内で挿入、`foreach`ブロックします。
 
     ```csharp
     output.OutputStringThreadSafe("Walk the active platform project:\n");
@@ -346,7 +346,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);
     ```
 
-3.  共有項目を読み取ります。 共有項目が非表示のリンクされたファイルとして、プラットフォーム プロジェクトに表示され、通常のリンクされたファイルとしてのすべてのプロパティを読み取ることができます。 次のコードでは、共有の最初の項目の完全なパスを読み取ります。
+3. 共有項目を読み取ります。 共有項目が非表示のリンクされたファイルとして、プラットフォーム プロジェクトに表示され、通常のリンクされたファイルとしてのすべてのプロパティを読み取ることができます。 次のコードでは、共有の最初の項目の完全なパスを読み取ります。
 
     ```csharp
     var sharedItemId = sharedItemIds[0];
@@ -355,7 +355,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4.  試してみましょう。キーを押して**F5**実験用インスタンスを起動します。 作成、C#実験用インスタンスで、ハブのユニバーサル アプリ プロジェクト (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual C#**   >  **Windows**  > **Windows 8** > **ユニバーサル** > **ハブ アプリ**) に移動して、**ツール**メニューをクリックします。**呼び出す TestUniversalProject**でテキストを確認し、**出力**ウィンドウ。 次のように表示されます。
+4. 試してみましょう。キーを押して**F5**実験用インスタンスを起動します。 作成、C#実験用インスタンスで、ハブのユニバーサル アプリ プロジェクト (で、**新しいプロジェクト**ダイアログ ボックスで、 **Visual C#**   >  **Windows**  > **Windows 8** > **ユニバーサル** > **ハブ アプリ**) に移動して、**ツール**メニューをクリックします。**呼び出す TestUniversalProject**でテキストを確認し、**出力**ウィンドウ。 次のように表示されます。
 
     ```
     Found shared project: HubApp.Shared

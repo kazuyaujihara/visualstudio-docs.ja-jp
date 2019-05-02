@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78fe110ee6abf70d091f9d7c1f67b56608f82c27
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777640"
 ---
 # <a name="xsd-task"></a>XSD タスク
 ソースからスキーマまたはクラス ファイルを生成する XML スキーマ定義ツール (*xsd.exe*) をラップします。
@@ -36,13 +36,13 @@ ms.locfileid: "57982988"
 ## <a name="parameters"></a>パラメーター
  **XSD** タスクのパラメーターの説明を次の表に示します。
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      省略可能な **String** 型のパラメーターです。
 
      コマンド ラインで指定するオプションのリストです。 例: /\<option1> /\<option2> /\<option#> 他の **XSD** タスク パラメーターでは表されないオプションを指定する場合は、このパラメーターを使用します。
 
--   **GenerateFromSchema**
+- **GenerateFromSchema**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -50,11 +50,11 @@ ms.locfileid: "57982988"
 
      次のいずれかの値を指定します。各値は XSD オプションに対応しています。
 
-    -   **classes** - **/classes**
+    - **classes** - **/classes**
 
-    -   **dataset** - **/dataset**
+    - **dataset** - **/dataset**
 
--   **Language**
+- **Language**
 
      省略可能な **String** 型のパラメーターです。
 
@@ -62,25 +62,25 @@ ms.locfileid: "57982988"
 
      **CS** (C#、既定)、**VB** (Visual Basic)、または **JS** (JScript) のいずれかを選択します。 `System.CodeDom.Compiler.CodeDomProvider Class` を実装するクラスの完全修飾名を指定することもできます。
 
--   **Namespace**
+- **Namespace**
 
      省略可能な **String** 型のパラメーターです。
 
      生成する型のランタイム名前空間を指定します。
 
--   **Sources**
+- **Sources**
 
      必須の `ITaskItem[]` 型のパラメーターです。
 
      タスクで使用および生成できる MSBuild ソース ファイル アイテムの配列を定義します。
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      省略可能な **Boolean** 型のパラメーターです。
 
      `true` の場合、タスクの開始時に著作権およびバージョン番号のメッセージが表示されないようにします。
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      省略可能な **String** 型のパラメーターです。
 

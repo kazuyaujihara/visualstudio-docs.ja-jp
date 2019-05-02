@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 610ee5e18054b6da35a3098b851d1585c70b6bc3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583777"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office ドキュメントに Windows フォーム コントロールの制限事項
 
@@ -83,7 +83,7 @@ Windows フォーム コントロール通常がある動作は同じ Office ド
 |コントロールのサイズ変更|8 つのサイズ変更ハンドルのいずれかを使用して、ドキュメント上のコントロールのサイズを変更する場合、新しいサイズには反映されません、**プロパティ**ウィンドウ コントロールが再度選択するまでです。|
 |コントロールの動作|Excel ワークシート上のコントロールは、ワークシート ウィンドウを分割すると、予期しない動作可能性があります。 アクセスなど、<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>ワークシートの可能性がありますのみ取得できる、windows のいずれか。|
 |コントロールの名前付け|コントロールの名前に予約語を使用することはできません。 追加する場合など、<xref:Microsoft.Office.Tools.Excel.Controls.Button>ワークシートに名を変更して、**システム**プロジェクトをビルドするときにエラーが発生します。|
-|プログラムでコントロールを追加します。|実行時にドキュメントにコントロールを追加するのにコントロールのコンス トラクターを使用しないでください。 代わりに、によって提供されるヘルパー メソッドを使用して、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]します。 たとえば、使用して、<xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A>ワークシートにボタンを追加するメソッド。 これらのヘルパー メソッドでサポートされていないコントロールを追加する場合は、使用、`AddControl`メソッド。 詳細については、[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)を参照してください。|
+|プログラムでコントロールを追加します。|実行時にドキュメントにコントロールを追加するのにコントロールのコンス トラクターを使用しないでください。 代わりに、によって提供されるヘルパー メソッドを使用して、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]します。 たとえば、使用して、<xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A>ワークシートにボタンを追加するメソッド。 これらのヘルパー メソッドでサポートされていないコントロールを追加する場合は、使用、`AddControl`メソッド。 詳細については、次を参照してください。[実行時に Office ドキュメントにコントロールを追加](../vsto/adding-controls-to-office-documents-at-run-time.md)します。|
 |コントロールのコピー|Windows フォーム コントロールをコピーして実行時のドキュメントに貼り付けることをドキュメントに空の ActiveX コントロール コンテナーが貼り付けられます。 Windows フォームのコントロールが新しい場所に表示されないと、元のコントロールの分離コードは ActiveX コントロール コンテナーにコピーされません。|
 
 ## <a name="limitations-in-document-level-projects"></a>ドキュメント レベルのプロジェクトでの制限事項
@@ -95,7 +95,7 @@ Windows フォーム コントロール通常がある動作は同じ Office ド
 特定の Windows フォーム コントロールから削除されます、**ツールボックス**は Excel のワークシートまたは Word 文書の Visual Studio デザイナーで開きます。 これは、技術的な制限により、機能は、既に Word または Excel 内で使用できるため、または。 Excel および Word プロジェクトでは、すべての Windows フォーム コントロールおよびその他のコンポーネントに表示されるサポート、**ツールボックス**ときに、ドキュメントにフォーカスがあり、ワークシートまたは文書にサードパーティ製のコントロールを追加することもできます。
 
 > [!NOTE]
-> すべてのコントロールから削除されます、**ツールボックス**ドキュメントが保護されている場合。 ドキュメントの保護については、[文書の保護をドキュメント レベルのソリューションで](../vsto/document-protection-in-document-level-solutions.md)を参照してください。
+> すべてのコントロールから削除されます、**ツールボックス**ドキュメントが保護されている場合。 ドキュメントの保護については、次を参照してください。[文書の保護をドキュメント レベルのソリューションで](../vsto/document-protection-in-document-level-solutions.md)します。
 
 > [!NOTE]
 > サードパーティ製のコントロールがあります、<xref:System.Runtime.InteropServices.ComVisibleAttribute>属性に設定**true** Office ソリューションで使用するためにします。

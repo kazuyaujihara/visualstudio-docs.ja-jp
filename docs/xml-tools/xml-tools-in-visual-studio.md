@@ -33,13 +33,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8854aee047fa961c4f0973397cfc2fe6ac6e6ad
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808172"
 ---
-# <a name="xml-tools-in-visual-studio"></a>Visual Studio での XML ツール
+# <a name="xml-tools-in-visual-studio"></a>Visual Studio の XML ツール
 
 *拡張マークアップ言語 (XML)* マークアップ言語であり、データを記述する形式を提供します。 XML データを分離して、Extensible Stylesheet Language (XSL) などのスタイル シートやカスケード スタイル シート (CSS) を使用して、プレゼンテーションが関連付けられています。 Visual Studio には、XML、XSLT、および XML スキーマの操作を容易にするツールと機能が含まれています。
 

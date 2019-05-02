@@ -14,7 +14,6 @@
 # [IDE のカスタマイズ](customizing-the-ide.md)
 ## [Visual Studio for Mac の拡張](extending-visual-studio-mac.md)
 
-
 # [プロジェクトおよびソリューション](projects-and-solutions.md)
 ## [プロジェクトの新規作成](create-new-projects.md)
 ## [プロジェクト項目の追加と削除](add-and-remove-project-items.md)
@@ -77,3 +76,5 @@
 # [トラブルシューティング](troubleshooting.md)
 ## [Visual Studio カスタマー エクスペリエンス向上プログラム](visual-studio-experience-improvement-program.md)
 ## [問題を報告する](report-a-problem.md)
+## [トラブルシューティング : すべてのテンプレートが表示されない](troubleshooting-no-templates.md)
+## [トラブルシューティング : アップデーターが情報の取得中にエラーを表示する](updater-troubleshooting.md)

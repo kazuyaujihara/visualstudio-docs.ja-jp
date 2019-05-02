@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e74de898bb9e7810729a0895834f7cdfe5ee5984
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: fad29d305d3657f9ed6372769a85d84260c1e77b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434654"
 ---
 # <a name="sccget-function"></a>SccGet 関数
 この関数は、表示して、コンパイルの編集ではなく、1 つまたは複数のファイルのコピーを取得します。 ほとんどのシステムでは、ファイルが読み取り専用としてタグ付けされます。
@@ -81,7 +81,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL`フラグと組み合わせることができます、`SCC_GET_RECURSIVE`フラグを指定したディレクトリ内のすべてのファイルとすべてのサブディレクトリも取得します。
 
 > [!NOTE]
->  `SCC_GET_RECURSIVE` せずに渡す必要がありますは決して`SCC_GET_ALL`します。 また、その場合に注意してくださいディレクトリ*C:\A*と*C:\A\B*を再帰的な get に渡された両方*C:\A\B*され、すべてのサブディレクトリが 2 回取得実際にします。 IDE の必要があります: プラグインのソースではなくを制御し、配列から重複ように格納されているかどうかを確認します。
+> `SCC_GET_RECURSIVE` せずに渡す必要がありますは決して`SCC_GET_ALL`します。 また、その場合に注意してくださいディレクトリ*C:\A*と*C:\A\B*を再帰的な get に渡された両方*C:\A\B*され、すべてのサブディレクトリが 2 回取得実際にします。 IDE の必要があります: プラグインのソースではなくを制御し、配列から重複ように格納されているかどうかを確認します。
 
  最後に、場合でも、ソース管理プラグインが指定された、`SCC_CAP_GET_NOUI`の初期化、Get コマンドのユーザー インターフェイスがないことは、この関数は、ファイルを取得する IDE によって呼び出される可能性もことを示すフラグ。 フラグは、単に、IDE で get-item メニューが表示されない、任意の UI を提供する予定のプラグインではないことを意味します。
 
@@ -90,21 +90,21 @@ SCCRTN SccGet(
 
  このソース コントロールのバージョンのローカル キャッシュに、ソース管理データベースと同期されなくなるような状況を解決するのには 2 つの方法はあります。
 
-1.  現在チェック アウトされているソース管理データベースにファイル名の変更を許可しません。
+1. 現在チェック アウトされているソース管理データベースにファイル名の変更を許可しません。
 
-2.  "削除の古い"後に「新規追加」と同等の操作を行います。 次のアルゴリズムは、これを実現する 1 つの方法です。
+2. "削除の古い"後に「新規追加」と同等の操作を行います。 次のアルゴリズムは、これを実現する 1 つの方法です。
 
-    1.  呼び出す、 [SccQueryChanges](../extensibility/sccquerychanges-function.md)関数の名前の変更の詳細について*a.txt*に*b.txt:* ソース管理データベースにします。
+    1. 呼び出す、 [SccQueryChanges](../extensibility/sccquerychanges-function.md)関数の名前の変更の詳細について*a.txt*に*b.txt:* ソース管理データベースにします。
 
-    2.  ローカルの名前を変更*a.txt*に*b.txt:* します。
+    2. ローカルの名前を変更*a.txt*に*b.txt:* します。
 
-    3.  呼び出す、`SccGet`両方の関数*a.txt*と*b.txt:* します。
+    3. 呼び出す、`SccGet`両方の関数*a.txt*と*b.txt:* します。
 
-    4.  *A.txt*が存在しない、不足しているのバージョンのローカル キャッシュを消去、ソース管理データベースに*a.txt*バージョン情報。
+    4. *A.txt*が存在しない、不足しているのバージョンのローカル キャッシュを消去、ソース管理データベースに*a.txt*バージョン情報。
 
-    5.  *B.txt:* チェック アウトされているファイルがローカルの内容とマージされる*b.txt:* ファイル。
+    5. *B.txt:* チェック アウトされているファイルがローカルの内容とマージされる*b.txt:* ファイル。
 
-    6.  更新された*b.txt:* ファイル チェックするようになりましたことができます。
+    6. 更新された*b.txt:* ファイル チェックするようになりましたことができます。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

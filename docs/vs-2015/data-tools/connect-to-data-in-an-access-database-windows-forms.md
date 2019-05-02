@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb94438a17fdc718b28503c8e258b959a16a90ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4a6909bade36dce15bfae725fbaab60f24236451
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437005"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Access データベース内のデータへの接続 (Windows フォーム)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,37 +40,37 @@ Visual Studio を使用して、Access データベース (.mdf ファイルま�
   
 #### <a name="to-create-the-dataset"></a>データセットを作成するには  
   
-1.  データの接続先となる Windows フォーム アプリケーションを開きます。  
+1. データの接続先となる Windows フォーム アプリケーションを開きます。  
   
-2.  **ビュー**メニューの **その他の Windows** > **データソース**します。  
+2. **ビュー**メニューの **その他の Windows** > **データソース**します。  
   
      ![その他の Windows のデータ ソースの表示](../data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックします。  
+3. **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックします。  
   
      ![新しいデータ ソースの追加](../data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
   
-4.  選択**データベース**上、**データ ソースの種類を選択**ページ、し、 **次へ**。  
+4. 選択**データベース**上、**データ ソースの種類を選択**ページ、し、 **次へ**。  
   
-5.  選択**データセット**上、**データベース モデルの選択**ページ、し、 **次へ**。  
+5. 選択**データセット**上、**データベース モデルの選択**ページ、し、 **次へ**。  
   
-6.  **[データ接続の選択]** ページで、**[新しい接続]** を選択して新しいデータ接続を構成します。  
+6. **[データ接続の選択]** ページで、**[新しい接続]** を選択して新しいデータ接続を構成します。  
   
-7.  変更、**データソース**に **.NET Framework Data Provider for OLE DB**します。  
+7. 変更、**データソース**に **.NET Framework Data Provider for OLE DB**します。  
   
      ![OLE DB にデータ プロバイダーを変更](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
-    >  データ ソースが**Microsoft Access データベース ファイル (OLE DB)** .mdb データベース ファイルにのみそのデータ ソースの種類を使用する最適な選択肢と思えるかもしれません。  
+    > データ ソースが**Microsoft Access データベース ファイル (OLE DB)** .mdb データベース ファイルにのみそのデータ ソースの種類を使用する最適な選択肢と思えるかもしれません。  
   
-8.  **OLE DB Provider**、 **Microsoft Office 12.0 Access Database Engine OLE DB Provider**します。  
+8. **OLE DB Provider**、 **Microsoft Office 12.0 Access Database Engine OLE DB Provider**します。  
   
      ![OLE DB プロバイダーの Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")  
   
 9. **サーバーまたはファイル名**、クリックして、接続する .accdb ファイルの名前とパスを指定**OK**します。  
   
     > [!NOTE]
-    >  データベース ファイルにユーザー名とパスワードがある場合を指定して選択する前に**OK**します。  
+    > データベース ファイルにユーザー名とパスワードがある場合を指定して選択する前に**OK**します。  
   
 10. 選択**次**で、**データ接続の選択**ページ。  
   
@@ -87,23 +87,23 @@ Visual Studio を使用して、Access データベース (.mdf ファイルま�
   
 #### <a name="to-create-the-dataset"></a>データセットを作成するには  
   
-1.  データの接続先となる Windows フォーム アプリケーションを開きます。  
+1. データの接続先となる Windows フォーム アプリケーションを開きます。  
   
-2.  **ビュー**メニューの **その他の Windows** > **データソース**します。  
+2. **ビュー**メニューの **その他の Windows** > **データソース**します。  
   
      ![その他の Windows のデータ ソースの表示](../data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックします。  
+3. **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックします。  
   
-4.  選択**データベース**上、**データ ソースの種類を選択**ページ、し、 **次へ**。  
+4. 選択**データベース**上、**データ ソースの種類を選択**ページ、し、 **次へ**。  
   
-5.  選択**データセット**上、**データベース モデルの選択**ページ、し、 **次へ**。  
+5. 選択**データセット**上、**データベース モデルの選択**ページ、し、 **次へ**。  
   
-6.  **[データ接続の選択]** ページで、**[新しい接続]** を選択して新しいデータ接続を構成します。  
+6. **[データ接続の選択]** ページで、**[新しい接続]** を選択して新しいデータ接続を構成します。  
   
-7.  データ ソースがない場合**Microsoft Access データベース ファイル (OLE DB)**、**変更**を開く、**データ ソースの変更**] ダイアログ ボックスを選択します**Microsoftデータベース ファイルにアクセス**、し、[ **OK**します。  
+7. データ ソースがない場合**Microsoft Access データベース ファイル (OLE DB)**、**変更**を開く、**データ ソースの変更**] ダイアログ ボックスを選択します**Microsoftデータベース ファイルにアクセス**、し、[ **OK**します。  
   
-8.  **データベース ファイル名**、クリックして、接続する .mdb ファイルの名前とパスを指定**OK**します。  
+8. **データベース ファイル名**、クリックして、接続する .mdb ファイルの名前とパスを指定**OK**します。  
   
      ![Access データベース ファイルの接続を追加](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")  
   
@@ -123,11 +123,11 @@ Visual Studio を使用して、Access データベース (.mdf ファイルま�
 ## <a name="next-steps"></a>次の手順  
  先ほど作成したデータセットで提供されて、**データソース**ウィンドウ。 これで、以下のタスクをどれでも実行できます。  
   
--   内の項目を選択して、**データ ソース**ウィンドウ、フォームにドラッグし、(を参照してください[Visual Studio でのデータにコントロールを Windows フォームのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md))。  
+- 内の項目を選択して、**データ ソース**ウィンドウ、フォームにドラッグし、(を参照してください[Visual Studio でのデータにコントロールを Windows フォームのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md))。  
   
--   データセットを構成するオブジェクトを追加または編集データセット デザイナーでデータ ソースを開きます。  
+- データセットを構成するオブジェクトを追加または編集データセット デザイナーでデータ ソースを開きます。  
   
--   検証ロジックを追加、<xref:System.Data.DataTable.ColumnChanging>または<xref:System.Data.DataTable.RowChanging>データセット内のデータ テーブルのイベント (を参照してください[データセットのデータの検証](../data-tools/validate-data-in-datasets.md))。  
+- 検証ロジックを追加、<xref:System.Data.DataTable.ColumnChanging>または<xref:System.Data.DataTable.RowChanging>データセット内のデータ テーブルのイベント (を参照してください[データセットのデータの検証](../data-tools/validate-data-in-datasets.md))。  
   
 ## <a name="see-also"></a>関連項目
 

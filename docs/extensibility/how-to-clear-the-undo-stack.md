@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb1b1c1d79bab15baa8e8afcab719b3081e7265b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d6e7c2536b7c5556139ce7a9b56756e20fd3648
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911922"
 ---
 # <a name="how-to-clear-the-undo-stack"></a>方法: 元に戻すスタックをクリアします。
 次の手順では、元に戻すスタックをクリアする方法について説明します。
 
 ## <a name="to-clear-the-undo-stack"></a>元に戻すスタックをクリアするには
 
-1.  元に戻すスタックの使用をオフにする、 [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom)メソッド。 この例を次に示します。
+1. 元に戻すスタックの使用をオフにする、 [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom)メソッド。 この例を次に示します。
 
     ```
     HRESULT CCmdWindow::ClearUndoStack()

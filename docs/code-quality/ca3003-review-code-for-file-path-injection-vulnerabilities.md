@@ -1,5 +1,5 @@
 ---
-title: CA3003:コード ファイルのパスのインジェクションに対する脆弱性を確認します。
+title: CA3003:ファイル パス インジェクションの脆弱性のコード レビュー
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c20d3efb9ea84a7e8bb22288303313ef44b2b795
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806564"
 ---
-# <a name="ca3003-review-code-for-file-path-injection-vulnerabilities"></a>CA3003:コード ファイルのパスのインジェクションに対する脆弱性を確認します。
+# <a name="ca3003-review-code-for-file-path-injection-vulnerabilities"></a>CA3003:ファイル パス インジェクションの脆弱性のコード レビュー
 
 |||
 |-|-|

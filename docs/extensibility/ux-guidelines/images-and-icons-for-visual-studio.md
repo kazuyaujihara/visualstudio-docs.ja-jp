@@ -8,32 +8,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 272d9bd9b1e54c6ff97b522375b773002e93dd49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d57c06cbc465537e0ac523c8133a718369b5ea69
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62802020"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio のイメージとアイコン
-##  <a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio でのイメージの使用
+## <a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio でのイメージの使用
  アートワークを作成する前に考慮で 1,000 個以上のイメージの使用、 [Visual Studio Image Library](http://www.microsoft.com/en-my/download/details.aspx?id=35825)します。
 
 ### <a name="types-of-images"></a>イメージの種類
 
--   **アイコン**します。 コマンド、階層、テンプレート、および具合に表示される小さいイメージ。 Visual Studio で使用される既定のアイコン サイズは、16 x 16 PNG です。 イメージのサービスによって自動的に生成されたアイコンの HDPI サポートを XAML 形式を生成します。
+- **アイコン**します。 コマンド、階層、テンプレート、および具合に表示される小さいイメージ。 Visual Studio で使用される既定のアイコン サイズは、16 x 16 PNG です。 イメージのサービスによって自動的に生成されたアイコンの HDPI サポートを XAML 形式を生成します。
 
      **注:** イメージは、メニューで使用されますが、すべてのコマンドのアイコンを作成しないでください。 参照してください[Visual Studio のメニューとコマンド](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)コマンドがアイコンを取得するかどうかを確認します。
 
--   **縮小表示します。** 新しいプロジェクト ダイアログなどのダイアログ ボックスの プレビュー 領域で使用されるイメージ。
+- **縮小表示します。** 新しいプロジェクト ダイアログなどのダイアログ ボックスの プレビュー 領域で使用されるイメージ。
 
--   **ダイアログの画像。** ダイアログ ボックスまたはウィザードでは、わかりやすいグラフィックスまたはメッセージ インジケーターとして表示される画像。 難しい概念を示しています。 または、ユーザーの注意 (アラート、警告) を確保するために必要な場合にのみ、頻繁に使用します。
+- **ダイアログの画像。** ダイアログ ボックスまたはウィザードでは、わかりやすいグラフィックスまたはメッセージ インジケーターとして表示される画像。 難しい概念を示しています。 または、ユーザーの注意 (アラート、警告) を確保するために必要な場合にのみ、頻繁に使用します。
 
--   **アニメーション化されたイメージ。** 進行状況の指標、ステータス バー、および操作のダイアログ ボックスで使用されます。
+- **アニメーション化されたイメージ。** 進行状況の指標、ステータス バー、および操作のダイアログ ボックスで使用されます。
 
--   **カーソル。** するオブジェクトが破棄される可能性があります、ため、マウスを使用して、操作を許可するかどうかを示すために使用します。
+- **カーソル。** するオブジェクトが破棄される可能性があります、ため、マウスを使用して、操作を許可するかどうかを示すために使用します。
 
-##  <a name="BKMK_IconDesign"></a> アイコンの設計
+## <a name="BKMK_IconDesign"></a> アイコンの設計
 
 ### <a name="overview"></a>概要
  Visual Studio では、クリーンのジオメトリと (淡色/濃色) の成功/失敗の 50/50 残高および理解できる、直接のメタファを使用して、モダン スタイル アイコンを使用します。 重要なアイコンの設計では、わかりやすくするため、単純化、およびコンテキストの中心を指します。
@@ -210,19 +210,19 @@ ms.locfileid: "56683143"
 
 #### <a name="file-types"></a>ファイルの種類
 
--   **32 ビット PNG:** アイコンの推奨される形式。 1 つ (ピクセル) をラスター イメージを格納できるロスレス データの圧縮ファイル形式。 32 ビット PNG ファイルは、アルファ チャネル透明度、ガンマ補正、およびインター レースをサポートします。
+- **32 ビット PNG:** アイコンの推奨される形式。 1 つ (ピクセル) をラスター イメージを格納できるロスレス データの圧縮ファイル形式。 32 ビット PNG ファイルは、アルファ チャネル透明度、ガンマ補正、およびインター レースをサポートします。
 
--   **32 ビット BMP:** 非 WPF コントロール。 XP または高の色とも呼ばれ、32 ビット BMP は、RGB のイメージ形式、アルファ チャネルの透明度 true 色の画像です。 アルファ チャネルは、レイヤーの透明度の追加 (4) として、ビットマップ内に保存しています Adobe の Photoshop で指定されているカラー チャネル。 黒の背景色の解像度についてのクイック ビジュアル キューを提供するすべての 32 ビット BMP ファイルにオブジェクトの実稼動中に追加されます。 この背景を黒には、ui にマスクされる領域を表します。
+- **32 ビット BMP:** 非 WPF コントロール。 XP または高の色とも呼ばれ、32 ビット BMP は、RGB のイメージ形式、アルファ チャネルの透明度 true 色の画像です。 アルファ チャネルは、レイヤーの透明度の追加 (4) として、ビットマップ内に保存しています Adobe の Photoshop で指定されているカラー チャネル。 黒の背景色の解像度についてのクイック ビジュアル キューを提供するすべての 32 ビット BMP ファイルにオブジェクトの実稼動中に追加されます。 この背景を黒には、ui にマスクされる領域を表します。
 
--   **32 ビット ICO:** プロジェクト アイコンと項目の追加。 すべての ICO ファイルは、32 ビットの場合は true。 カラー アルファ チャネル透明度 (RGB/A)。 ICO ファイルは、複数のサイズと色深度を格納するため Vista アイコンは 16 x 16、32 x 32、48 x 48, 256 x 256 の画像のサイズを含む ICO 形式で多くの場合は。 Windows エクスプ ローラーで正しく表示するには ICO ファイルする必要がある保存リスト イメージ サイズごとに 24 ビットと 8 ビットの色深度。
+- **32 ビット ICO:** プロジェクト アイコンと項目の追加。 すべての ICO ファイルは、32 ビットの場合は true。 カラー アルファ チャネル透明度 (RGB/A)。 ICO ファイルは、複数のサイズと色深度を格納するため Vista アイコンは 16 x 16、32 x 32、48 x 48, 256 x 256 の画像のサイズを含む ICO 形式で多くの場合は。 Windows エクスプ ローラーで正しく表示するには ICO ファイルする必要がある保存リスト イメージ サイズごとに 24 ビットと 8 ビットの色深度。
 
--   **XAML:** デザイン サーフェイスと Windows の装飾。 XAML のアイコンは、拡大縮小、回転、ファイリング、および透明度をサポートするベクター ベースのイメージ ファイルです。 これらは、今すぐ Visual Studio では一般的ではないが、柔軟性のため人気になっています。
+- **XAML:** デザイン サーフェイスと Windows の装飾。 XAML のアイコンは、拡大縮小、回転、ファイリング、および透明度をサポートするベクター ベースのイメージ ファイルです。 これらは、今すぐ Visual Studio では一般的ではないが、柔軟性のため人気になっています。
 
--   **SVG**
+- **SVG**
 
--   **24 ビット BMP:** Visual Studio のコマンド バーにします。 True-色の RGB イメージ形式、24 ビット BMP は、knock アウト透過性レイヤーの色キーとしてマゼンタ (R = 255, G = 0, B = 255) を使用してレイヤーの透明度を作成する、アイコン規約です。 24 ビット BMP、背景色を使用してすべてのマゼンタ サーフェスが表示されます。
+- **24 ビット BMP:** Visual Studio のコマンド バーにします。 True-色の RGB イメージ形式、24 ビット BMP は、knock アウト透過性レイヤーの色キーとしてマゼンタ (R = 255, G = 0, B = 255) を使用してレイヤーの透明度を作成する、アイコン規約です。 24 ビット BMP、背景色を使用してすべてのマゼンタ サーフェスが表示されます。
 
--   **24 ビット GIF:** Visual Studio のコマンド バーにします。 透明度をサポートする true 色の RGB イメージ形式。 GIF ファイルは、ウィザードのアートワークや GIF アニメーションでよく使用されます。
+- **24 ビット GIF:** Visual Studio のコマンド バーにします。 透明度をサポートする true 色の RGB イメージ形式。 GIF ファイルは、ウィザードのアートワークや GIF アニメーションでよく使用されます。
 
 ### <a name="icon-construction"></a>アイコンの構築
  Visual Studio で最も小さいアイコンのサイズは、16 x 16 です。 最大共通の使用は 32 x 32 です。 アイコンを設計するときに、全体の 16 x 16、24 x 24、または 32 x 32 のフレームがいっぱいにしないに留意してください。 読みやすい、統一されたアイコンの構築は、ユーザーの認識に不可欠です。 アイコンを構築するときに、次の点に準拠します。
@@ -242,20 +242,20 @@ ms.locfileid: "56683143"
 #### <a name="color-and-accessibility"></a>色とアクセシビリティ
  Visual Studio のコンプライアンス ガイドラインでは、製品のすべてのアイコンの色とコントラストのアクセシビリティ要件に合格する必要があります。 これはアイコンの反転によって実現しをデザインするときに注意する必要が製品のプログラムで反転されますある。
 
- Visual Studio のアイコンの色の使用に関する詳細については、[イメージの色を使用して](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages)を参照してください。
+ Visual Studio のアイコンの色の使用に関する詳細については、次を参照してください。[イメージの色を使用して](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages)します。
 
-##  <a name="BKMK_UsingColorInImages"></a> イメージの色を使用してください。
+## <a name="BKMK_UsingColorInImages"></a> イメージの色を使用してください。
 
 ### <a name="overview"></a>概要
  Visual Studio のアイコンは、主にモノクロです。 色は特定の情報を伝達するために予約されていて、装飾のことはありません。 色が使用されます。
 
--   アクションを示す
+- アクションを示す
 
--   状態の通知をユーザーに警告するには
+- 状態の通知をユーザーに警告するには
 
--   言語への関連付けを指定するには
+- 言語への関連付けを指定するには
 
--   IntelliSense 内の項目を区別するために
+- IntelliSense 内の項目を区別するために
 
 ### <a name="accessibility"></a>ユーザー補助
  Visual Studio のコンプライアンス ガイドラインでは、製品のパスにチェックインされたすべてのアイコンが、色およびコントラストのアクセシビリティ要件を使用することが必要です。 Visual 言語パレットの色は、テストされ、これらの要件を満たしています。
@@ -318,7 +318,7 @@ ms.locfileid: "56683143"
 
 ||||||
 |-|-|-|-|-|
-|![実行アイコン](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 03_ActionModifierRun")<br />実行|![停止アイコン](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 19_Stop")<br />停止|![削除アイコン](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 20_Delete")<br />削除|![[保存] アイコン](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />保存|![戻るアイコンを移動](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />最近参照しました。|
+|![実行アイコン](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 03_ActionModifierRun")<br />実行|![停止アイコン](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 19_Stop")<br />停止|![削除アイコン](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 20_Delete")<br />削除|![[保存] アイコン](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />保存|![戻るアイコンを移動](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />戻る|
 
 ### <a name="code-hierarchy-palette"></a>コード階層パレット
 

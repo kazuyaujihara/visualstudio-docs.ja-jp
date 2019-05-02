@@ -1,4 +1,4 @@
-﻿---
+---
 title: VS 拡張機能内でのテキスト変換の呼び出し
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 43f071d73bef7d7b67988ccffb00b7ae7518b916
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810568"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>VS 拡張機能内でのテキスト変換の呼び出し
 メニュー コマンドや[ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)などの Visual Studio 拡張機能を記述しているならば、テキスト テンプレートを変換するテキスト テンプレート サービスを使用することができます。 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> サービスを取得し、<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> にキャストします。
@@ -76,7 +76,7 @@ string result = t4.ProcessTemplate("",
 ## <a name="error-reporting-and-the-output-directive"></a>エラー報告と出力ディレクティブ
  処理中に発生するエラーは、Visual Studio のエラー ウィンドウに表示されます。 また、<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback> を実装したコールバックを指定することにより、エラーの通知を受けることもできます。
 
- 結果の文字列をファイルに書き込む場合は、テンプレートの `<#@output#>` ディレクティブで指定されているファイル拡張子とエンコードを確認できます。この情報は、コールバックにも渡されます。詳細については、「[T4 出力ディレクティブ](../modeling/t4-output-directive.md)」をご覧ください。
+ 結果の文字列をファイルに書き込む場合は、テンプレートの `<#@output#>` ディレクティブで指定されているファイル拡張子とエンコードを確認できます。 この情報は、コールバックにも渡されます。 詳細については、「[T4 出力ディレクティブ](../modeling/t4-output-directive.md)」をご覧ください。
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)
@@ -135,6 +135,6 @@ Sample text.
 ## <a name="related-topics"></a>関連トピック
  前処理されたテキスト テンプレートからテキストを生成するには生成されたクラスの `TransformText()` メソッドを呼び出します。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
- Visual Studio 拡張機能の範囲外でテキストを生成するには、カスタム ホストを定義します。詳細については、「[カスタム ホストを使用してテキスト テンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md)」をご覧ください。
+ Visual Studio 拡張機能の範囲外でテキストを生成するには、カスタム ホストを定義します。 詳細については、「[カスタム ホストを使用してテキスト テンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md)」をご覧ください。
 
- 後でコンパイルして実行できるソース コードを生成するには、<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> の `t4.PreprocessTemplate()` メソッドを呼び出します。
+ 後でコンパイルして実行できるソース コードを生成するには`t4.PreprocessTemplate()` の <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> メソッドを呼び出します。

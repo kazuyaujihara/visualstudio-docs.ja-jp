@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34771bd005b298f73bcc2ee13e2d4cf9a123f1a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf4066a9eee47d1ffad156768287bf036aaae3cf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912429"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Visual Studio の他の部分を拡張します。
 
@@ -29,9 +29,9 @@ Visual Studio 機能拡張の基本的な構成要素は、Vspackage です。  
 
 ツールボックスの機能を使用する方法と、ツールボックスに新しいコントロールおよびその他の項目を追加する方法について説明します。
 
--   [WPF ツールボックス コントロールを作成します。](../extensibility/creating-a-wpf-toolbox-control.md)
+- [WPF ツールボックス コントロールを作成します。](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [Windows フォーム ツールボックス コントロールを作成します。](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Windows フォーム ツールボックス コントロールを作成します。](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extend-the-status-bar"></a>ステータス バーを拡張します。
 

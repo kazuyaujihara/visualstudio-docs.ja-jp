@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901598"
 ---
-# <a name="using-the-tasks-window-c-visual-basic-c"></a>[タスク] ウィンドウを使用して (C#、Visual Basic、C++)
+# <a name="using-the-tasks-window-c-visual-basic-c"></a>[タスク] ウィンドウを使用して (C#、Visual Basic、 C++)
 
 **[タスク]** ウィンドウは **[スレッド]** ウィンドウに似ていますが、このウィンドウには、各スレッドではなく <xref:System.Threading.Tasks.Task?displayProperty=fullName>、[task_handle](/cpp/parallel/concrt/reference/task-group-class)、または [WinJS.Promise](/previous-versions/windows/apps/br211867(v=win.10)) オブジェクトに関する情報が表示されます。 スレッドと同様、タスクは、同時に実行できる非同期操作を表します。ただし、複数のタスクが同じスレッドで実行される場合もあります。
 
@@ -68,7 +68,7 @@ JavaScript では、promise を使用する場合、タスク ウィンドウを
  ![[タスク] ウィンドウのショートカット ビュー メニュー](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")
 
 ## <a name="sorting-tasks"></a>タスクの並べ替え
- 列を基準にタスクを並べ替えるには、列ヘッダーをクリックします。 たとえばをクリックして、 **ID**列ヘッダーをタスクをタスク ID を並べ替えることができます。その他。 並べ替え順序を逆にするには、もう一度列ヘッダーをクリックします。 現在の並べ替え列と並べ替え順序は、列に矢印で示されます。
+ 列を基準にタスクを並べ替えるには、列ヘッダーをクリックします。 たとえばをクリックして、 **ID**列ヘッダーをタスクをタスク ID を並べ替えることができます。1,2,3,4,5 という具合です。 並べ替え順序を逆にするには、もう一度列ヘッダーをクリックします。 現在の並べ替え列と並べ替え順序は、列に矢印で示されます。
 
 ## <a name="grouping-tasks"></a>タスクのグループ化
  リスト ビューの任意の列に基づいてタスクをグループ化することができます。 たとえば、**[状態]** 列の列ヘッダーを右クリックしてから、**[状態でグループ化]** > **[[*status*]]** の順にクリックすると、状態が同じであるすべてのタスクをグループ化できます。 たとえば、でしたをすばやく表示するブロックされている理由に集中することができるように、タスクを待機しています。 また、デバッグ セッションでは関係のないグループを折りたたむこともできます。 他の列を基準にしても、同じようにしてグループ化できます。 グループに対しては、グループ ヘッダーの横にあるボタンをクリックするだけで、まとめてフラグを設定したり解除したりすることができます。 次の図は、グループ化されたモードの **[タスク]** ウィンドウを示しています。

@@ -1,8 +1,8 @@
 ---
-title: Visual Studio を使用してアプリをデバッグする
+title: デバッガーでのはじめに
 description: Visual Studio デバッガーを使用してアプリケーションのデバッグを開始する
-ms.custom: mvc
-ms.date: 01/09/2019
+ms.custom: seoapril2019
+ms.date: 04/08/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853916"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>最初に Visual Studio デバッガーを見る
 
@@ -188,7 +188,7 @@ F10 キーを押すと、アプリ コード内の関数またはメソッドに
 例外ヘルパーは、エラーのデバッグに役立つ優れた機能です。 エラーの詳細を表示したり、例外ヘルパーからウォッチ式を追加したりすることもできます。 あるいは、必要であれば、特定の例外をスローするための条件を変更できます。 コード内で例外を処理する方法の詳細については、[デバッグのテクニックとツール](../debugger/write-better-code-with-visual-studio.md)に関するページを参照してください。
 
 > [!NOTE]
-> 例外ヘルパーは [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] の例外アシスタントに取って代わるものです。
+> [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 以降、例外アシスタントは例外ヘルパーに置き換わりました。
 
 **[例外設定]** ノードを展開すると、この種類の例外を処理する方法がいくつか表示されますが、今回のツアーでは何も変える必要はありません。
 

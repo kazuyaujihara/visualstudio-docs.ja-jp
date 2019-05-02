@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 11febf99dc411d50ee94e003515bfa6581591b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575651"
 ---
 # <a name="getting-started-with-python"></a>Python の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,7 @@ Python は、多くの大学、科学者、アプリのスクリプト作成者�
 詳細については、言語、するを起動[初心者向けの Python](https://www.python.org/about/gettingstarted/) python.org でします。
 
 Python 自体をインストールするを参照してください。 [ https://www.python.org/download/](https://www.python.org/download/)します。
- 
-  
+
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
 Python Tools for Visual Studio からインストールできます[visualstudio.com](https://www.visualstudio.com/explore/python-vs)、次の機能を提供します。  
@@ -63,7 +62,6 @@ Python Tools for Visual Studio からインストールできます[visualstudio
 - [概要および詳細情報の短いビデオ](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
 - インストールと機能のデモ (27 分)] (https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [ドキュメント](https://github.com/Microsoft/PTVS/wiki)  
-
 
 Visual Studio が提供しないこと現時点では、埋め込まれた Python インタープリターを使用してプログラムを実質的には、Python を使用してスタンドアロン実行可能ファイルを作成するための手段に注意してください。 ただし、[StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)で説明されているように、Python コミュニティでは、多様な実行方法が紹介されています。 また、CPython はネイティブ アプリケーション内への埋め込みをサポートしています。詳細については、ブログの投稿「[Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)」(CPython の埋め込み可能な Zip ファイルの使用方法) を参照してください。
   
@@ -93,9 +91,9 @@ IPython と科学技術計算のライブラリ (matplotlib、scipy、numpy な�
   
 ## <a name="see-also"></a>関連項目  
 
-[PTVS の概要: Visual Studio のセットアップ](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[PTVS の概要: コーディングの開始 (プロジェクト)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[PTVS の概要: コードの編集](../python/getting-started-with-ptvs-editing-code.md)
-[PTVS の概要: デバッグ](../python/getting-started-with-ptvs-debugging.md)
-[PTVS の概要: 対話型の Python](../python/getting-started-with-ptvs-interactive-python.md)
-[PTVS の概要: Azure での Web サイトの作成](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[PTVS の概要。Visual Studio のセットアップ](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[PTVS の概要。コーディングの開始 (プロジェクト)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[PTVS の概要。コードの編集](../python/getting-started-with-ptvs-editing-code.md)
+[PTVS の概要。デバッグ](../python/getting-started-with-ptvs-debugging.md)
+[PTVS の概要。対話型 Python](../python/getting-started-with-ptvs-interactive-python.md)
+[PTVS の概要。Azure で web サイトの作成](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

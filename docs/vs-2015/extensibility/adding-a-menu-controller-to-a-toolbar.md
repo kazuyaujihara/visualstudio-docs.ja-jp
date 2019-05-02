@@ -1,14 +1,9 @@
 ---
 title: ツールバーにメニュー コント ローラーの追加 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding menu controllers
 - menus, adding menu controllers to toolbars
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 13dec4b907b52e35b5b2377aafa511e50dc5cc48
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107802"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>メニュー コントローラーのツールバーへの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,7 +114,7 @@ ms.locfileid: "51771533"
   
 ## <a name="implementing-the-menu-controller-commands"></a>コント ローラーのメニュー コマンドを実装します。  
   
-1.  TWTestCommandPackageGuids.cs では、既存のコマンド Id の後に、次の 3 つのメニュー項目のコマンド Id を追加します。  
+1. TWTestCommandPackageGuids.cs では、既存のコマンド Id の後に、次の 3 つのメニュー項目のコマンド Id を追加します。  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -127,13 +122,13 @@ ms.locfileid: "51771533"
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  TWTestCommand.cs では、TWTestCommand クラスの上部にある次のコードを追加します。  
+2. TWTestCommand.cs では、TWTestCommand クラスの上部にある次のコードを追加します。  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  TWTestCommand コンス トラクターの最後の呼び出しの後で、`AddCommand`メソッドでは、コマンドごとに同じハンドラーを使用してイベントをルーティングするコードを追加します。  
+3. TWTestCommand コンス トラクターの最後の呼び出しの後で、`AddCommand`メソッドでは、コマンドごとに同じハンドラーを使用してイベントをルーティングするコードを追加します。  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -154,7 +149,7 @@ ms.locfileid: "51771533"
     }  
     ```  
   
-4.  チェックされているように選択したコマンドをマークする TWTestCommand クラスにイベント ハンドラーを追加します。  
+4. チェックされているように選択したコマンドをマークする TWTestCommand クラスにイベント ハンドラーを追加します。  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -167,7 +162,7 @@ ms.locfileid: "51771533"
     }  
     ```  
   
-5.  メニュー コント ローラー上のコマンドを選択すると、メッセージ ボックスを表示するイベント ハンドラーを追加します。  
+5. メニュー コント ローラー上のコマンドを選択すると、メッセージ ボックスを表示するイベント ハンドラーを追加します。  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -219,13 +214,13 @@ ms.locfileid: "51771533"
   
 ## <a name="testing-the-menu-controller"></a>メニュー コント ローラーのテスト  
   
-1.  プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。  
+1. プロジェクトをビルドし、デバッグを開始します。 実験用インスタンスが表示されます。  
   
-2.  開く、**テスト ToolWindow**上、**ビュー/その他の Windows**メニュー。  
+2. 開く、**テスト ToolWindow**上、**ビュー/その他の Windows**メニュー。  
   
      メニュー コント ローラーがツール ウィンドウのツールバーに表示され**MC アイテム 1**します。  
   
-3.  矢印の左側にあるメニュー コント ローラー ボタンをクリックします。  
+3. 矢印の左側にあるメニュー コント ローラー ボタンをクリックします。  
   
      選択されており、そのアイコンの周囲に強調表示ボックスの 3 つの項目が表示されます。 クリックして**MC 項目 3**します。  
   
@@ -234,4 +229,3 @@ ms.locfileid: "51771533"
 ## <a name="see-also"></a>関連項目  
  [ツール ウィンドウにツールバーを追加します。](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [ツール バーの追加](../extensibility/adding-a-toolbar.md)
-

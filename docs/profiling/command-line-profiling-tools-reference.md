@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3e5bdd0897d5b53a6949731a233909664d3fce7d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809614"
 ---
 # <a name="command-line-profiling-tools-reference"></a>コマンド ライン プロファイリング ツール リファレンス
 コマンド ライン パフォーマンス ツールを使うことで、プログラマーはコマンド プロンプトでアプリケーションのプロファイリングを行うことができます。 コマンド プロンプトでのコードのプロファイリングには、次のコマンド ライン プロファイリング ツールを使うことができます。

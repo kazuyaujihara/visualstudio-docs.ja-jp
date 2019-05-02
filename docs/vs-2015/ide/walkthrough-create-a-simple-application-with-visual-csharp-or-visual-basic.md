@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b278e05ec19bc550d8c8c8c1258514cf63cd5f9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436821"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>チュートリアル : Visual C# または Visual Basic による簡単なアプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "54802617"
  [アプリケーションのデバッグとテスト](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  このチュートリアルでは、Visual Studio Professional の WPF アプリケーション テンプレートに基づいて、チュートリアル用のプロジェクトを作成します。 このテンプレートは Visual Studio Express for Windows Desktop には用意されていますが、Visual Studio Express for Windows と Visual Studio Express for Web には用意されていません。 Visual Studio Express for Windows の使用方法の概要については、デベロッパー センターの「 [Windows ストア アプリの開発](http://msdn.microsoft.com/windows/apps/br229519)」を参照してください。 Visual Studio Express for Web の使用方法の概要については、「 [Get Started with ASP.NET](http://www.asp.net/get-started)」 (ASP.NET の概要) を参照してください。 さらに、使用する Visual Studio のエディションと設定によって、ユーザー インターフェイスの一部の要素の名前や場所は異なります。 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)を参照してください。  
+> このチュートリアルでは、Visual Studio Professional の WPF アプリケーション テンプレートに基づいて、チュートリアル用のプロジェクトを作成します。 このテンプレートは Visual Studio Express for Windows Desktop には用意されていますが、Visual Studio Express for Windows と Visual Studio Express for Web には用意されていません。 Visual Studio Express for Windows の使用方法の概要については、デベロッパー センターの「 [Windows ストア アプリの開発](http://msdn.microsoft.com/windows/apps/br229519)」を参照してください。 Visual Studio Express for Web の使用方法の概要については、「 [Get Started with ASP.NET](http://www.asp.net/get-started)」 (ASP.NET の概要) を参照してください。 さらに、使用する Visual Studio のエディションと設定によって、ユーザー インターフェイスの一部の要素の名前や場所は異なります。 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)を参照してください。  
   
-##  <a name="BKMK_ConfigureIDE"></a> IDE の構成  
+## <a name="BKMK_ConfigureIDE"></a> IDE の構成  
  Visual Studio を初めて起動すると、Visual Studio から、Microsoft サービス アカウント (MSA) でサインイン ( [Visual Studio にサインイン](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)) するように求められます。 サインインは必須ではなく、後で実行することもできます。  
   
  Visual Studio が起動すると、次に IDE に定義済みの一連のカスタマイズを適用する設定の組み合わせを選択する必要があります。 各設定の組み合わせは、アプリケーションを簡単に開発できるように設計されています。  
@@ -69,7 +69,7 @@ ms.locfileid: "54802617"
   
    このチュートリアルの残りの画像で使用する配色テーマは淡色テーマです。 IDE のカスタマイズの詳細については、「[Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
-##  <a name="BKMK_CreateApp"></a> 簡単なアプリケーションの作成  
+## <a name="BKMK_CreateApp"></a> 簡単なアプリケーションの作成  
   
 ### <a name="create-the-project"></a>プロジェクトの作成  
  Visual Studio でアプリケーションを作成するには、最初にプロジェクトおよびソリューションを作成します。 この例では、Windows Presentation Foundation (WPF) プロジェクトを作成します。  
@@ -109,7 +109,7 @@ ms.locfileid: "54802617"
     ファイルの名前が Greetings.xaml になったことが**ソリューション エクスプローラー** に示され、MainWindow.xaml ノードを展開する (ノードにフォーカスを設定し、右矢印キーを押す) と、MainWindow.xaml.vb または MainWindow.xaml.cs の名前が Greetings.xaml.vb または Greetings.xaml.cs になったことが示されます。 このコード ファイルは、.xaml ファイル ノードの下に入れ子になっており、相互に非常に密接に関連していることが示されます。  
   
    > [!WARNING]
-   >  この変更により、エラーが発生します。後の手順で、このエラーをデバッグして修正する方法を学習します。  
+   > この変更により、エラーが発生します。後の手順で、このエラーをデバッグして修正する方法を学習します。  
   
 2. **ソリューション エクスプローラー**で、Greetings.xaml をデザイナー ビューで開き (ノードにフォーカスがあるときに Enter キーを押す) 、マウスを使ってウィンドウのタイトル バーを選択します。  
   
@@ -199,7 +199,7 @@ ms.locfileid: "54802617"
   
 ##### <a name="add-code-to-display-message-boxes"></a>メッセージ ボックスを表示するコードの追加  
   
-1.  デザイン サーフェイスで、 **[Display]** ボタンをダブルクリックします。  
+1. デザイン サーフェイスで、 **[Display]** ボタンをダブルクリックします。  
   
      Greetings.xaml.vb または Greetings.xaml.cs が開き、Button_Click イベントにカーソルが表示されます。 また、次のようにクリック イベント ハンドラーを追加することもできます (貼り付けたコード内の名前の下に赤い波線がある場合、デザイン サーフェイス上で RadioButton コントロールを選択して名前を変更していない可能性があります)。  
   
@@ -220,7 +220,7 @@ ms.locfileid: "54802617"
     }  
     ```  
   
-2.  Visual Basic の場合は、次のコードを入力します。  
+2. Visual Basic の場合は、次のコードを入力します。  
   
     ```vb  
     If RadioButton1.IsChecked = True Then  
@@ -245,9 +245,9 @@ ms.locfileid: "54802617"
     }  
     ```  
   
-3.  アプリケーションを保存します。  
+3. アプリケーションを保存します。  
   
-##  <a name="BKMK_DebugTest"></a> アプリケーションのデバッグとテスト  
+## <a name="BKMK_DebugTest"></a> アプリケーションのデバッグとテスト  
  次に、アプリケーションをデバッグしてエラーを探し、両方のメッセージ ボックスが正しく表示されることをテストします。 以下の指示にデバッガーをビルドして起動する方法が示されていますが、詳細については、後で「[WPF アプリケーション (WPF) のビルド](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)」および「[Debugging WPF](../debugger/debugging-wpf.md)」(WPF のデバッグ) を参照することもできます。  
   
 ### <a name="find-and-fix-errors"></a>エラーの検出と修正  
@@ -280,29 +280,29 @@ ms.locfileid: "54802617"
   
 ##### <a name="to-add-breakpoints"></a>ブレークポイントを追加するには  
   
-1.  Greetings.xaml.vb または Greetings.xaml.cs を開き、`MessageBox.Show("Hello.")` という行を選択します。  
+1. Greetings.xaml.vb または Greetings.xaml.cs を開き、`MessageBox.Show("Hello.")` という行を選択します。  
   
-2.  **[デバッグ]**、 **[ブレークポイントの設定/解除]** の順に選択して、メニューからブレークポイントを追加します。  
+2. **[デバッグ]**、 **[ブレークポイントの設定/解除]** の順に選択して、メニューからブレークポイントを追加します。  
   
      ![[デバッグ] メニューの [ブレークポイントの設定/解除] コマンド](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
   
      コード行の横の、エディター ウィンドウの左端の余白部分に、赤い円が表示されます。  
   
-3.  `MessageBox.Show("Goodbye.")`という行を選択します。  
+3. `MessageBox.Show("Goodbye.")`という行を選択します。  
   
-4.  F9 キーを押して、ブレークポイントを追加し、F5 キーを押して、デバッグを開始します。  
+4. F9 キーを押して、ブレークポイントを追加し、F5 キーを押して、デバッグを開始します。  
   
-5.  **[Greetings]** ウィンドウで、 **[Hello]** オプション ボタンを選択してから、 **[Display]** ボタンを選択します。  
+5. **[Greetings]** ウィンドウで、 **[Hello]** オプション ボタンを選択してから、 **[Display]** ボタンを選択します。  
   
      `MessageBox.Show("Hello.")` という行が黄色で強調表示されます。 IDE の下部では、[自動変数]、[ローカル]、 [ウォッチ] の各ウィンドウが左側にまとめてドッキングされ、[呼び出し履歴]、[ブレークポイント]、[コマンド]、[イミディエイト]、 [出力] の各ウィンドウが右側にまとめてドッキングされます。  
   
-6.  メニュー バーで **[デバッグ]**、 **[ステップ アウト]** の順に選択します。  
+6. メニュー バーで **[デバッグ]**、 **[ステップ アウト]** の順に選択します。  
   
      アプリケーションの実行が再開され、メッセージ ボックスに "Hello" と表示されます。  
   
-7.  メッセージ ボックスの **[OK]** を選択して閉じます。  
+7. メッセージ ボックスの **[OK]** を選択して閉じます。  
   
-8.  **[Greetings]** ウィンドウで、 **[Goodbye]** オプション ボタンを選択し、 **[Display]** ボタンを選択します。  
+8. **[Greetings]** ウィンドウで、 **[Goodbye]** オプション ボタンを選択し、 **[Display]** ボタンを選択します。  
   
      `MessageBox.Show("Goodbye.")` という行が黄色で強調表示されます。  
   

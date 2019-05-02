@@ -3,14 +3,14 @@ title: Visual Studio for Mac Tools for Unity を使用する
 description: このガイドでは、Visual Studio for Mac Tools for Unity 拡張機能を使用する方法について説明します
 author: therealjohn
 ms.author: johmil
-ms.date: 07/17/2017
+ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 56050de063dcbc86bfa469ee9f466a8e87bba973
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966012"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity を使用する
 
@@ -103,6 +103,12 @@ Unity プロジェクトは Visual Studio for Mac でデバッグすることが
 
 3. Visual Studio に接続しながら Unity エディターでゲームを実行しているときに、ブレークポイントに達すると、ゲームの実行は一時停止し、ゲームがブレークポイントにヒットしたコード行が Visual Studio for Mac に表示されます。
 
+### <a name="start-debugging-in-a-single-step"></a>1 回の手順でデバッグを開始する
+
+Visual Studio for Mac から直接 **[Unity にアタッチして再生]** 構成を選択すると、デバッグの開始と Unity エディターでの再生を 1 回の手順でを完了できます。
+
+![[Unity にアタッチして再生] を選択する](media/using-vsmac-tools-unity-image8.png)
+
 ### <a name="stop-debugging"></a>デバッグの停止
 
 デバッグを停止するには:
@@ -110,5 +116,8 @@ Unity プロジェクトは Visual Studio for Mac でデバッグすることが
 1. Visual Studio for Mac で **[停止]** ボタンをクリックするか、**Shift + Command + Return** キーを押します。
 
    ![Visual Studio で [停止] をクリックする](media/using-vsmac-tools-unity-image7.png)
+
+> [!NOTE]
+> **[Unity にアタッチして再生]** 構成を使用してデバッグを開始した場合、**[停止]** ボタンでも Unity を停止できます。
 
 Visual Studio for Mac でのデバッグについて詳しくは、「[Using the debugger](debugging.md)」(デバッガーの使用) をご覧ください。

@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef6250e9e413d91c218634e90fe67a4f04b83bce
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ed9a9a349f2496343a9a9828cd436d8d4015aa9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898348"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>方法: Visual スタイルが有効になっている WPF アプリケーションを公開する
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>方法: Visual スタイルが有効になっている WPF アプリケーションの発行
 
 visual スタイルを使用すると、ユーザーが選択したテーマに基づいてコモン コントロールの外観を変更できます。 既定では、Visual スタイルは、Windows Presentation Foundation (WPF) アプリケーションで有効になっていないため、手動で有効にする必要があります。 ただし、WPF アプリケーションの Visual スタイルを有効にすると、ソリューションの発行によりエラーが発生します。 このトピックでは、このエラーを解決する方法と、Visual スタイルを有効にした WPF アプリケーションを発行するためのプロセスについて説明します。 Visual スタイルの詳細については、次を参照してください。 [Visual スタイルの概要](/windows/desktop/Controls/visual-styles-overview)します。 エラー メッセージの詳細については、次を参照してください。 [ClickOnce 配置で特定のエラーのトラブルシューティング](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)します。
 
- エラーを解決し、ソリューションを公開するには、次のタスクを実行します。
+ エラーを解決し、ソリューションを発行するには、次のタスクを実行します。
 
 - [Visual スタイルを有効にせずにソリューションを公開します](#publish-the-solution-without-visual-styles-enabled)。
 
@@ -31,7 +31,7 @@ visual スタイルを使用すると、ユーザーが選択したテーマに�
 
   その後、エンド ユーザーがアプリケーションをインストールする場所に、発行されたファイルを移動できます。
 
-##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Visual スタイルを有効にせずにソリューションを公開するには
+## <a name="publish-the-solution-without-visual-styles-enabled"></a>Visual スタイルを有効にせずにソリューションを公開するには
 
 1. プロジェクトに有効になった Visual スタイルがないことを確認します。 最初に、プロジェクトのマニフェスト ファイルに次の XML があるかチェックします。 その後、XML がある場合は、コメント タグで XML を囲みます。
 
@@ -72,7 +72,7 @@ visual スタイルを使用すると、ユーザーが選択したテーマに�
 
          このボタンは、除外された項目や通常は表示されない項目も含め、すべてのプロジェクト項目を表示します。 マニフェスト ファイルはプロジェクト項目として表示されます。
 
-2. ソリューションをビルドし、発行します。 ソリューションを発行する方法の詳細については、次を参照してください。[方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)します。
+2. ソリューションをビルドし、発行します。 ソリューションを発行する方法の詳細については、次を参照してください。[方法。発行ウィザードを使用して ClickOnce アプリケーションを発行する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)」を参照してください。
 
 ## <a name="create-a-manifest-file"></a>マニフェスト ファイルの作成
 
@@ -121,7 +121,7 @@ visual スタイルを使用すると、ユーザーが選択したテーマに�
    > - 次のディレクトリにソリューションを発行:`%UserProfile%\Documents\Visual Studio 2010\Projects\publish`します。
    > - 発行済みアプリケーション ファイルの最新バージョンについては、次のディレクトリにあります。 `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`
    >
-   > 上記の名前とディレクトリの場所は、いずれも使用する必要はありません。 前の名前と場所は、ソリューションの発行に必要な手順について説明するためにのみ使用されます。
+   > 上記の名前とディレクトリの場所は、いずれも使用する必要はありません。 前の名前と場所は、ソリューションの公開に必要な手順について説明するためにのみ使用されます。
 
 2. コマンド プロンプトで、発行済みのアプリケーション ファイルの最新バージョンが含まれるディレクトリへのパスを変更します。 この手順を次の例に示します。
 

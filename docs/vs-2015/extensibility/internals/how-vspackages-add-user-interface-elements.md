@@ -1,14 +1,9 @@
 ---
 title: Vspackage がユーザー インターフェイス要素を追加する方法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, adding elements
 - UI element design [Visual Studio SDK], VSPackages
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 88b1a71964ddae67241025dd32c1a1384c79765f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 553c502c100cbb6ed4ae249096af408af14423b4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436119"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage でユーザー インターフェイス要素を追加する方法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,11 +29,11 @@ VSPackage では、ユーザー インターフェイス (UI) 要素、たとえ
 ## <a name="the-visual-studio-command-table-architecture"></a>Visual Studio コマンド テーブルのアーキテクチャ  
  前述のように、コマンド テーブルのアーキテクチャは、上記のアーキテクチャの原則をサポートします。 抽象化、データ構造、およびツールのコマンド テーブルのアーキテクチャの背後にある原則は次のとおりです。  
   
--   項目の 3 つの基本的な種類があります: メニューのコマンド、およびグループ。 メニューは、メニューのサブメニュー、ツールバー、またはツール ウィンドウとして、UI で公開できます。 コマンドは、IDE では、ユーザーが実行できるし、メニューのボタン、リスト ボックス、または他のコントロールとして公開できるようするプロシージャです。 グループは、メニューとコマンドの両方のコンテナーです。  
+- 項目の 3 つの基本的な種類があります: メニューのコマンド、およびグループ。 メニューは、メニューのサブメニュー、ツールバー、またはツール ウィンドウとして、UI で公開できます。 コマンドは、IDE では、ユーザーが実行できるし、メニューのボタン、リスト ボックス、または他のコントロールとして公開できるようするプロシージャです。 グループは、メニューとコマンドの両方のコンテナーです。  
   
--   各項目は、アイテム、その優先順位の他の項目とその動作を変更するフラグを記述する定義によって指定されます。  
+- 各項目は、アイテム、その優先順位の他の項目とその動作を変更するフラグを記述する定義によって指定されます。  
   
--   各項目には、項目の親を表す配置します。 項目は、UI に複数の場所で表示できるようにする、複数の親を指定できます。  
+- 各項目には、項目の親を表す配置します。 項目は、UI に複数の場所で表示できるようにする、複数の親を指定できます。  
   
      すべてのコマンドは、そのグループ内の唯一の子である場合でも、その親グループが必要です。 すべての標準のメニューは、親グループも必要です。 ツールバーとツール ウィンドウは、独自の親として機能します。 グループは、その親のメインの Visual Studio のメニュー バー、または、メニューのツールバー、またはツール ウィンドウとして設定できます。  
   
@@ -70,26 +65,26 @@ VSPackage では、ユーザー インターフェイス (UI) 要素、たとえ
  最上位の要素、`Symbols`セクションは、 [GuidSymbol 要素](../../extensibility/guidsymbol-element.md)します。 `GuidSymbol` 要素は、パッケージとその構成要素を識別するために、IDE で使用される Guid に名をマップします。  
   
 > [!NOTE]
->  Guid は、Visual Studio パッケージ テンプレートによって自動的に生成されます。 クリックして、一意の GUID を作成することも**GUID の作成**上、**ツール**メニュー。  
+> Guid は、Visual Studio パッケージ テンプレートによって自動的に生成されます。 クリックして、一意の GUID を作成することも**GUID の作成**上、**ツール**メニュー。  
   
  最初の`GuidSymbol`要素"guid [PackageName] Pkg"、パッケージ自体の GUID です。 これは、Visual Studio によってパッケージの読み込みに使用される GUID です。 通常、子要素はありません。  
   
- 慣例により、メニューとコマンドでグループ化された 1 秒あたり`GuidSymbol`要素"guid [PackageName] CmdSet"、およびビットマップは、3 つ目では `GuidSymbol`要素では、"guidImages"。 この規則に準拠する必要はありませんが、各メニューのグループ、コマンド、およびビットマップの子である必要があります、`GuidSymbol`要素。  
+ 慣例により、メニューとコマンドでグループ化された 1 秒あたり`GuidSymbol`要素"guid [PackageName] CmdSet"、およびビットマップは、3 つ目では [`GuidSymbol`要素では、"guidImages"。 この規則に準拠する必要はありませんが、各メニューのグループ、コマンド、およびビットマップの子である必要があります、`GuidSymbol`要素。  
   
  2 番目の`GuidSymbol`パッケージ コマンドのセットを表し、要素は、いくつか`IDSymbol`要素。 各[IDSymbol 要素](../../extensibility/idsymbol-element.md)名前に数値の値をマップし、メニューのグループ、または、コマンド セットの一部であるコマンドを表す場合があります。 `IDSymbol` 、3 番目の要素`GuidSymbol`コマンドのアイコンとして使用できる要素の表すビットマップ。 GUID と ID のペアが同じ 2 つの子がありません、アプリケーション内で一意でなければならないため`GuidSymbol`要素には、同じ値を指定します。  
   
 ### <a name="menus-groups-and-commands"></a>メニューのグループ、およびコマンド  
  メニューのグループ、またはコマンドの GUID と ID を持つ、ときに、IDE に追加できます。 UI 要素はすべて、次のことがあります。  
   
--   A`guid`属性の名前に一致する、`GuidSymbol`で UI 要素が定義されている要素。  
+- A`guid`属性の名前に一致する、`GuidSymbol`で UI 要素が定義されている要素。  
   
--   `id` 、関連付けられている名前に一致する属性`IDSymbol`要素。  
+- `id` 、関連付けられている名前に一致する属性`IDSymbol`要素。  
   
      同時に、`guid`と`id`属性を作成、*署名*の UI 要素。  
   
--   A`priority`属性を親メニューまたはグループの UI 要素の位置を決定します。  
+- A`priority`属性を親メニューまたはグループの UI 要素の位置を決定します。  
   
--   A[親要素](../../extensibility/parent-element.md)を持つ`guid`と`id`親メニューまたはグループの署名を指定する属性。  
+- A[親要素](../../extensibility/parent-element.md)を持つ`guid`と`id`親メニューまたはグループの署名を指定する属性。  
   
 #### <a name="menus"></a>メニュー  
  各メニューとして定義されている、[メニュー要素](../../extensibility/menu-element.md)で、`Menus`セクション。 メニューがあります`guid`、 `id`、および`priority`属性、および`Parent`要素と次の追加属性も子。  
@@ -276,36 +271,35 @@ priority="0x0100" type="Menu">
 ##### <a name="general-requirements"></a>一般的な要件  
  コマンドは、表示および有効にする前に、次の一連のテストを渡す必要があります。  
   
--   コマンドが正しく配置されています。  
+- コマンドが正しく配置されています。  
   
--   `DefaultInvisible`フラグは設定されません。  
+- `DefaultInvisible`フラグは設定されません。  
   
--   親メニューやツールバーが表示されます。  
+- 親メニューやツールバーが表示されます。  
   
--   コンテキストのエントリのため、コマンドが非表示は、 [VisibilityConstraints 要素](../../extensibility/visibilityconstraints-element.md)セクション。  
+- コンテキストのエントリのため、コマンドが非表示は、 [VisibilityConstraints 要素](../../extensibility/visibilityconstraints-element.md)セクション。  
   
--   実装する VSPackage コード、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイスが表示され、コマンドを使用します。 インターセプトがし、その実施するインターフェイスのコードはありません。  
+- 実装する VSPackage コード、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>インターフェイスが表示され、コマンドを使用します。 インターセプトがし、その実施するインターフェイスのコードはありません。  
   
--   ユーザーは、コマンドをクリックするに記載されている手順に従ってなります[ルーティング アルゴリズム](../../extensibility/internals/command-routing-algorithm.md)します。  
+- ユーザーは、コマンドをクリックするに記載されている手順に従ってなります[ルーティング アルゴリズム](../../extensibility/internals/command-routing-algorithm.md)します。  
   
 ## <a name="calling-pre-defined-commands"></a>定義済みのコマンドを呼び出す  
- [UsedCommands 要素](../../extensibility/usedcommands-element.md)または IDE で他の Vspackage によって提供されるコマンドにアクセスする Vspackage を使用します。 これを行うには、作成、 [UsedCommand 要素](../../extensibility/usedcommand-element.md)GUID とコマンドの使用の ID を持ちます。 こう現在の Visual Studio の構成の一部ではない場合でも、Visual Studio によって、コマンドが読み込まれます。 詳細については、[UsedCommand 要素](../../extensibility/usedcommand-element.md)を参照してください。  
+ [UsedCommands 要素](../../extensibility/usedcommands-element.md)または IDE で他の Vspackage によって提供されるコマンドにアクセスする Vspackage を使用します。 これを行うには、作成、 [UsedCommand 要素](../../extensibility/usedcommand-element.md)GUID とコマンドの使用の ID を持ちます。 こう現在の Visual Studio の構成の一部ではない場合でも、Visual Studio によって、コマンドが読み込まれます。 詳細については、次を参照してください。 [UsedCommand 要素](../../extensibility/usedcommand-element.md)します。  
   
 ## <a name="interface-element-appearance"></a>インターフェイス要素の外観  
  選択して、コマンド要素の配置に関する考慮事項は次のとおりです。  
   
--   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 配置に応じて異なる方法で表示される多くの UI 要素を提供します。  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 配置に応じて異なる方法で表示される多くの UI 要素を提供します。  
   
--   使用して定義されている UI 要素、`DefaultInvisible`の VSPackage 実装によって表示されるいずれかである場合を除き、フラグを IDE に表示されませんが、<xref:EnvDTE.IDTCommandTarget.QueryStatus%2A>メソッドで特定の UI コンテキストに関連付けられているか、`VisibilityConstraints`セクション。  
+- 使用して定義されている UI 要素、`DefaultInvisible`の VSPackage 実装によって表示されるいずれかである場合を除き、フラグを IDE に表示されませんが、<xref:EnvDTE.IDTCommandTarget.QueryStatus%2A>メソッドで特定の UI コンテキストに関連付けられているか、`VisibilityConstraints`セクション。  
   
--   正常に配置されているコマンドでもは表示されません。 これは IDE が自動的に非表示にまたはインターフェイスを VSPackage が (またはされていない) に応じて、いくつかのコマンドが表示されますので、実装します。 たとえば、いくつかの VSPackage の実装は、自動的に表示されるビルドに関連するメニュー項目を原因インターフェイス ビルドします。  
+- 正常に配置されているコマンドでもは表示されません。 これは IDE が自動的に非表示にまたはインターフェイスを VSPackage が (またはされていない) に応じて、いくつかのコマンドが表示されますので、実装します。 たとえば、いくつかの VSPackage の実装は、自動的に表示されるビルドに関連するメニュー項目を原因インターフェイス ビルドします。  
   
--   適用、 `CommandWellOnly` UI 要素の定義でフラグはコマンドのカスタマイズによってのみ追加できることを意味します。  
+- 適用、 `CommandWellOnly` UI 要素の定義でフラグはコマンドのカスタマイズによってのみ追加できることを意味します。  
   
--   コマンドは、IDE がデザイン ビューである場合は、ダイアログが表示されます。 場合にのみ、UI、特定のコンテキストなどでのみ使用可能なことがあります。  
+- コマンドは、IDE がデザイン ビューである場合は、ダイアログが表示されます。 場合にのみ、UI、特定のコンテキストなどでのみ使用可能なことがあります。  
   
--   IDE に表示される特定の UI 要素には、1 つまたは複数のインターフェイスを実装またはコードを記述する必要があります。  
+- IDE に表示される特定の UI 要素には、1 つまたは複数のインターフェイスを実装またはコードを記述する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)
-

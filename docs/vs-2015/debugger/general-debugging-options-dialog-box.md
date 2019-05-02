@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7efd2c988791d0de4f414a48e5c47bc70b05b784
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446482"
 ---
 # <a name="general-debugging-options-dialog-box"></a>[全般] ([オプション] ダイアログ ボックス - [デバッグ])
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ ms.locfileid: "59000895"
  SRCSRV (`srcsrv.dll`) プロトコルを実装するソース サーバーからソース ファイルを取得するように Visual Studio デバッガーに指示します。 このプロトコルを実装する 2 つのソース サーバーは Team Foundation Server と Debugging Tools for Windows です。 SrcSrv のセットアップの詳細については、Debugging Tools for Windows のドキュメントを参照してください。 さらを参照してください[指定シンボル (.pdb) とソース ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)します。  
   
 > [!IMPORTANT]
->  .pdb ファイルを読み取ることでそのファイル内の任意のコードを実行できるため、サーバーが信頼されていることを確認してください。  
+> .pdb ファイルを読み取ることでそのファイル内の任意のコードを実行できるため、サーバーが信頼されていることを確認してください。  
   
  **ソース サーバー診断メッセージを出力ウィンドウに**  
  ソース サーバーのサポートが有効な場合に、診断表示をオンにします。  

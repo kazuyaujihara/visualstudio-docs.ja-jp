@@ -35,12 +35,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93aa6d9f6e821dba012009e90ba6f9be51641703
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963097"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048193"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>方法: セットのデバッグ構成とリリース構成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ Visual Studio プロジェクトでは、ご使用のプログラムに対応す
   
 ### <a name="to-change-the-build-configuration"></a>ビルド構成を変更するには  
   
-1.  [ビルド] メニュー: をクリックして**ビルド/Configuration Manager**を選択し、**デバッグ**または**リリース**します。  
+1. [ビルド] メニュー: をクリックして**ビルド/Configuration Manager**を選択し、**デバッグ**または**リリース**します。  
   
-2.  ツールバーで、いずれかを選択**デバッグ**または**リリース**から、**ソリューション構成**ボックスの一覧。  
+2. ツールバーで、いずれかを選択**デバッグ**または**リリース**から、**ソリューション構成**ボックスの一覧。  
   
      ![ツールバーのビルド構成](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   

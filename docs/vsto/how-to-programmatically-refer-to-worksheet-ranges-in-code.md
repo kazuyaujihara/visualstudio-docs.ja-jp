@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be71d18b7fa0b3cc9dba8a27c6c462d5ea1a2434
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e82b884965c5c7362951c7d94199f90c93fbfc3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955961"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>方法: コード内でワークシートの範囲をプログラムで参照してください。
   内容を参照する同様のプロセスを使用して、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールまたはネイティブな Excel 範囲オブジェクト。
@@ -32,7 +32,7 @@ ms.locfileid: "56608438"
 
 ### <a name="to-refer-to-a-namedrange-control"></a>NamedRange コントロールを参照するには
 
-1.  文字列を割り当てる、<xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>のプロパティ、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロール。 このコードは、 `ThisWorkbook` クラスではなく、シート クラスに配置する必要があります。
+1. 文字列を割り当てる、<xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>のプロパティ、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロール。 このコードは、 `ThisWorkbook` クラスではなく、シート クラスに配置する必要があります。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#46)]
      [!code-vb[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#46)]
@@ -42,7 +42,7 @@ ms.locfileid: "56608438"
 
 ### <a name="to-refer-to-a-native-range-object"></a>ネイティブな範囲オブジェクトを参照するには
 
-1.  文字列を割り当てる、<xref:Microsoft.Office.Interop.Excel.Range.Value2%2A>範囲のプロパティ。
+1. 文字列を割り当てる、<xref:Microsoft.Office.Interop.Excel.Range.Value2%2A>範囲のプロパティ。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]
      [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]

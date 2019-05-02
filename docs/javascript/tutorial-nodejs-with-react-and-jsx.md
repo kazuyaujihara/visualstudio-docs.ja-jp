@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f8fb7c864f484208eaa647131ac7a32c8da665f8
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: c67dfa80ec7b194f7014f77de1cdd589bf7130e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446344"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>チュートリアル: Visual Studio で Node.js と React のアプリを作成する
 
@@ -85,7 +85,7 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
 1. 新しいプロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Ctrl + Q** キーを押して検索ボックスを開き、「**Node.js**」と入力してから、**[空の Node.js Web アプリケーション]** (JavaScript) を選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**Node.js**」と入力してから、**[空の Node.js Web アプリケーション]** (JavaScript) を選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
     上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[JavaScript]** を展開して、**[Node.js]** を選択します。 中央のウィンドウで、**[空白の Node.js Web アプリケーション]** を選択し、名前に「**NodejsWebAppBlank**」と入力してから、**[OK]** を選択します。
@@ -324,7 +324,12 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
 
 1. 現在のデバッグ ターゲットとして Chrome を選びます。
 
+    ::: moniker range=">=vs-2019"
+    ![デバッグ ターゲットとして Chrome を選ぶ](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![デバッグ ターゲットとして Chrome を選ぶ](../javascript/media/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
 
     Chrome をコンピューターで使用できるのにオプションには表示されない場合は、デバッグ ターゲットのドロップダウン リストから **[Browse With]\(ブラウザー\)** を選択し、Chrome を既定のブラウザーに選択します (**[Set as Default]\(既定値として設定\)** を選択)。
 
@@ -369,6 +374,13 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
     `chrome.exe --remote-debugging-port=9222`
 
     デバッグが有効な状態で Chrome が起動します。
+
+    ::: moniker range=">=vs-2019"
+
+    > [!NOTE]
+    > ブラウザーの起動時に `--remote-debugging-port` フラグを設定することもできます。**[デバッグ]** ツールバーから **[ブラウザーの選択...]** を選択し、**[追加]** を選択した後、**[引数]** フィールドにフラグを設定します。 ブラウザーで **Chrome でのデバッグ**などの別のフレンドリ名を使用します。 詳細については、[リリース ノート](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support)を参照してください。
+
+    ::: moniker-end
 
 3. Visual Studio に切り替え、次の図に示すように、*app-bundle.js* のコードの `render()` 関数にブレークポイントを設定します。
 

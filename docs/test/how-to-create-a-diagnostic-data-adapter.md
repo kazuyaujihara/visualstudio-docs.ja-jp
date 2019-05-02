@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950736"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>方法: 診断データ アダプターを作成する
 
@@ -54,19 +54,19 @@ ms.locfileid: "58416328"
 
 2. アセンブリ **Microsoft.VisualStudio.QualityTools.ExecutionCommon** を追加します。
 
-   1.  **ソリューション エクスプローラー**で、**[参照]** を右クリックし、**[参照の追加]** コマンドを選択します。
+   1. **ソリューション エクスプローラー**で、**[参照]** を右クリックし、**[参照の追加]** コマンドを選択します。
 
-   2.  **[.NET]** を選択し、**Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll** を探します。
+   2. **[.NET]** を選択し、**Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll** を探します。
 
-   3.  **[OK]** をクリックします。
+   3. **[OK]** をクリックします。
 
 3. アセンブリ **Microsoft.VisualStudio.QualityTools.Common** を追加します。
 
-   1.  **ソリューション エクスプローラー**で、**[参照]** を右クリックし、**[参照の追加]** コマンドを選択します。
+   1. **ソリューション エクスプローラー**で、**[参照]** を右クリックし、**[参照の追加]** コマンドを選択します。
 
-   2.  **[/.NET]** を選択し、**Microsoft.VisualStudio.QualityTools.Common.dll** を探します。
+   2. **[/.NET]** を選択し、**Microsoft.VisualStudio.QualityTools.Common.dll** を探します。
 
-   3.  **[OK]** をクリックします。
+   3. **[OK]** をクリックします。
 
 4. クラス ファイルに次の `using` ステートメントを追加します。
 

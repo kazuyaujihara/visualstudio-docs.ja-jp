@@ -14,12 +14,12 @@ ms.assetid: 029e0790-ffd1-496d-8700-3b3dbac1b6fd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 792403a9a53f11431e87115d7a95345e316dc2ac
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8fd8add72d016bc3f2e815f41c29c735505c8817
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006222"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>デコードする URI は正しくエンコードされていません。
 不適切な形式の URI (Uniform Resource Identifier) をデコードしようとしました。 Uri がある特殊な構文です。URI で使用するには、ほとんどの英数字以外の文字をエンコードする必要があります。 使用することができます、`encodeURI`と`encodeURIComponent`メソッドから通常の URI を作成する[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]文字列。  
@@ -34,7 +34,7 @@ ms.locfileid: "56844296"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   有効な Uri のみをデコードしようとしていることを確認します。 通常をデコードすることはできません[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]文字列が無効な文字を含めることができます。  
+- 有効な Uri のみをデコードしようとしていることを確認します。 通常をデコードすることはできません[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]文字列が無効な文字を含めることができます。  
   
 ## <a name="see-also"></a>関連項目  
  [decodeURI 関数](../../javascript/reference/decodeuri-function-javascript.md)   

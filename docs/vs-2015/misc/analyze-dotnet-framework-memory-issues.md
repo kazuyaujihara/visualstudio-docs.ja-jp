@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6f2a0680c117aa5982fb0e44144e74c5fef76faa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444656"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>.NET Framework のメモリ分析の問題
 Visual Studio マネージド メモリ アナライザーを使用して、.NET Framework コードでのメモリ リークおよび非効率的なメモリの使用を検出します。 対象コードの最低限の .NET Framework バージョンは .NET Framework 4.5 です。  
@@ -28,7 +28,7 @@ Visual Studio マネージド メモリ アナライザーを使用して、.NET
   
   マネージ メモリ アナライザーのチュートリアルは、次を参照してください。 [Visual Studio 2013 に実稼働環境での .NET メモリ問題の診断を使用して](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)、Visual Studio ALM と Team Foundation Server のブログにします。  
   
-##  <a name="BKMK_Contents"></a> 目次  
+## <a name="BKMK_Contents"></a> 目次  
  [.NET Framework アプリでメモリの使用](#BKMK_Memory_use_in__NET_Framework_apps)  
   
  [アプリでメモリに関する問題を特定します。](#BKMK_Identify_a_memory_issue_in_an_app)  
@@ -37,7 +37,7 @@ Visual Studio マネージド メモリ アナライザーを使用して、.NET
   
  [メモリ使用量の分析します。](#BKMK_Analyze_memory_use)  
   
-##  <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> .NET Framework アプリでメモリの使用  
+## <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> .NET Framework アプリでメモリの使用  
  .NET Framework はガベージ コレクションが実行されるランタイムであるため、ほとんどのアプリでメモリの使用が問題になりません。 ただし、Web サービスや Web アプリケーションなどの長時間実行されるアプリケーションおよびメモリ量に制限があるデバイスでは、メモリ内にオブジェクトが蓄積されると、アプリのパフォーマンスや、そのアプリを実行するデバイスのパフォーマンスに影響することがあります。 メモリが過剰に使用されると、ガベージ コレクターの実行頻度が高すぎる場合や、オペレーティング システムが RAM とディスクとの間でメモリを移動せざるを得ない場合、アプリケーションやコンピューターのリソースが不足する可能性があります。 最悪の場合、"メモリ不足" 例外によってアプリがクラッシュすることもあります。  
   
  .NET*マネージ ヒープ*は、アプリによって作成された参照オブジェクトが格納されている仮想メモリの領域です。 オブジェクトの有効期間はガベージ コレクター (GC) によって管理されます。 ガベージ コレクターは参照を使用して、メモリ ブロックを占有するオブジェクトを追跡します。 参照は、オブジェクトが作成され変数に割り当てられると、作成されます。 単一のオブジェクトに対して、複数の参照を作成することもできます。 たとえば、クラス、コレクション、またはその他のデータ構造にオブジェクトを追加するか、2 つ目の変数にオブジェクトを割り当てると、オブジェクトへの追加の参照が作成されます。 明示的な方法ではありませんが、あるオブジェクトでイベント ハンドラーを別のオブジェクトのイベントに追加した場合も、参照が作成されます。 この場合、ハンドラーが明示的に削除されるか 2 つ目のオブジェクトが破棄されるまで、最初のオブジェクトへの参照が 2 つ目のオブジェクトに保持されます。  
@@ -46,7 +46,7 @@ Visual Studio マネージド メモリ アナライザーを使用して、.NET
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-##  <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> アプリでメモリに関する問題を特定します。  
+## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> アプリでメモリに関する問題を特定します。  
  メモリに関する問題の最も可視的な兆候は、アプリのパフォーマンスです (特に、時間の経過に伴ってパフォーマンスが低下する場合)。 特定のアプリの実行中に他のアプリのパフォーマンスが低下した場合も、メモリの問題を示している可能性があります。 メモリの問題を疑いがある場合は、タスク マネージャーなどのツールを使用してまたは[Windows パフォーマンス モニター](http://technet.microsoft.com/library/cc749249.aspx)調査を進めます。 たとえば、考えられるメモリ リークの原因として、説明が付かないような合計メモリ サイズの増加がないか確認します。  
   
  ![リソース モニターで一貫性のあるメモリの増加](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
@@ -55,11 +55,11 @@ Visual Studio マネージド メモリ アナライザーを使用して、.NET
   
  ![Resource Manager でのメモリ スパイク](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
-##  <a name="BKMK_Collect_memory_snapshots"></a> メモリのスナップショットを収集します。  
+## <a name="BKMK_Collect_memory_snapshots"></a> メモリのスナップショットを収集します。  
  メモリ分析ツールで情報を分析する*ダンプ ファイル*ヒープ情報が含まれています。 Visual Studio でダンプ ファイルを作成するかなどのツールを使用することができます[ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx)から[Windows Sysinternals](http://technet.microsoft.com/sysinternals)します。 参照してください[ダンプは、1 つ作成する方法でしょうか。](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) 、Visual Studio デバッガー チーム ブログ。  
   
 > [!NOTE]
->  ほとんどのツールでは、完全なヒープ メモリ データの有無に関係なくダンプ情報を収集できます。 Visual Studio メモリ アナライザーでは、完全なヒープ情報が求められます。  
+> ほとんどのツールでは、完全なヒープ メモリ データの有無に関係なくダンプ情報を収集できます。 Visual Studio メモリ アナライザーでは、完全なヒープ情報が求められます。  
   
  **Visual Studio からダンプを収集するには**  
   
@@ -75,7 +75,7 @@ Visual Studio マネージド メモリ アナライザーを使用して、.NET
   
    ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-##  <a name="BKMK_Analyze_memory_use"></a> メモリ使用量の分析します。  
+## <a name="BKMK_Analyze_memory_use"></a> メモリ使用量の分析します。  
  [オブジェクトの一覧をフィルター処理](#BKMK_Filter_the_list_of_objects) **&#124;** [単一スナップショットからのメモリ データを分析](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [2 つのメモリの比較スナップショット](#BKMK_Compare_two_memory_snapshots)  
   
  ダンプ ファイルでメモリ使用に関する問題を分析するには:  
@@ -90,7 +90,7 @@ Visual Studio マネージド メモリ アナライザーを使用して、.NET
   
    ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-###  <a name="BKMK_Filter_the_list_of_objects"></a> オブジェクトの一覧をフィルター処理します。  
+### <a name="BKMK_Filter_the_list_of_objects"></a> オブジェクトの一覧をフィルター処理します。  
  メモリ アナライザーの既定では、メモリ スナップショット内のオブジェクト一覧がフィルター処理されます。これにより、ユーザー コードの型とインスタンスのみを対象とし、合計ヒープ サイズのパーセンテージで表したしきい値を超える合計包括サイズの型のみが表示されます。 これらのオプションを変更することができます、**ビュー設定**一覧。  
   
 |||  
@@ -102,7 +102,7 @@ Visual Studio マネージド メモリ アナライザーを使用して、.NET
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-###  <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> 1 つのスナップショットからメモリ データを分析します。  
+### <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> 1 つのスナップショットからメモリ データを分析します。  
  Visual Studio による新しいデバッグ セッションが開始し、ファイルの分析が行われ、[ヒープの表示] ページにメモリ データが表示されます。  
   
  ![オブジェクトの種類一覧](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
@@ -137,9 +137,9 @@ Visual Studio マネージド メモリ アナライザーを使用して、.NET
   
 #### <a name="paths-to-root"></a>ルートのパス  
   
--   選択した型に対して、**オブジェクトの種類**、テーブル、**ルートのパス**への参照の数と共に、型のすべてのオブジェクトのルート オブジェクトに固有の型階層を表示するテーブル、階層の上にある型。  
+- 選択した型に対して、**オブジェクトの種類**、テーブル、**ルートのパス**への参照の数と共に、型のすべてのオブジェクトのルート オブジェクトに固有の型階層を表示するテーブル、階層の上にある型。  
   
--   型のインスタンスから選択したオブジェクトの**ルートのパス**インスタンスへの参照を保持する実際のオブジェクトのグラフを示しています。 オブジェクトの名前の上にポインターを合わせると、データヒントでそのデータ値を確認できます。  
+- 型のインスタンスから選択したオブジェクトの**ルートのパス**インスタンスへの参照を保持する実際のオブジェクトのグラフを示しています。 オブジェクトの名前の上にポインターを合わせると、データヒントでそのデータ値を確認できます。  
   
 #### <a name="referenced-types--referenced-objects"></a>参照される型/参照されるオブジェクト  
   
@@ -168,7 +168,7 @@ Visual Studio マネージド メモリ アナライザーを使用して、.NET
 |**SizedRef ハンドル**|ガベージ コレクション時に、すべてのオブジェクトおよびオブジェクト ルートの集合的なクロージャの概算サイズを保持する強力なハンドル。|  
 |**ピンされたローカル変数**|ピンされたローカル変数。|  
   
-###  <a name="BKMK_Compare_two_memory_snapshots"></a> 2 つのメモリ スナップショットを比較します。  
+### <a name="BKMK_Compare_two_memory_snapshots"></a> 2 つのメモリ スナップショットを比較します。  
  メモリ リークの原因である可能性のあるオブジェクトを見つけるために、プロセスに関する 2 つのダンプ ファイルを比較できます。 リークしているオブジェクトの数の増加をわかりやすくするために、1 つ目 (1 回目) と 2 つ目 (2 回目) のファイルを収集する時間間隔は十分長くする必要があります。 2 つのファイルを比較するには:  
   
 1. 2 つ目のダンプ ファイルを開いて**マネージ メモリのデバッグ**上、**ミニダンプ ファイルの概要**ページ。  

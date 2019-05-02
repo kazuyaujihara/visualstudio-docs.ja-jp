@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bf82bc6fce4e6bf429faebc6b6f24497cbe76b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b2ed12175e986178d43ffe5e3da8b85e2ab22e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994581"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Windows フォームにダイアグラムを埋め込む
 
@@ -20,15 +20,15 @@ DSL 図は、Visual Studio ウィンドウに表示される、Windows のコン
 
 ## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Windows コントロールに DSL ダイアグラムを埋め込む
 
-1.  新しい追加**ユーザー コントロール**ファイルを DslPackage プロジェクト。
+1. 新しい追加**ユーザー コントロール**ファイルを DslPackage プロジェクト。
 
-2.  ユーザー コントロールをパネル コントロールを追加します。 このパネルにはは DSL 図が含まれます。
+2. ユーザー コントロールをパネル コントロールを追加します。 このパネルにはは DSL 図が含まれます。
 
      必要なその他のコントロールを追加します。
 
      コントロールのアンカーのプロパティを設定します。
 
-3.  ソリューション エクスプ ローラーでユーザー コントロール ファイルを右クリックし、をクリックして**コードの表示**します。 コードには、このコンス トラクターと変数を追加します。
+3. ソリューション エクスプ ローラーでユーザー コントロール ファイルを右クリックし、をクリックして**コードの表示**します。 コードには、このコンス トラクターと変数を追加します。
 
     ```csharp
     internal UserControl1(MyDSLDocView docView, Control content)
@@ -40,7 +40,7 @@ DSL 図は、Visual Studio ウィンドウに表示される、Windows のコン
     private MyDSLDocView docView;
     ```
 
-4.  次の内容、DslPackage プロジェクトに新しいファイルを追加します。
+4. 次の内容、DslPackage プロジェクトに新しいファイルを追加します。
 
     ```csharp
     using System.Windows.Forms;
@@ -63,13 +63,13 @@ DSL 図は、Visual Studio ウィンドウに表示される、Windows のコン
     } } } }
     ```
 
-5.  DSL をテストするには、キーを押して**F5**サンプル モデル ファイルを開くとします。 コントロール内に、ダイアグラムが表示されます。 ツールボックスとその他の機能が通常動作します。
+5. DSL をテストするには、キーを押して**F5**サンプル モデル ファイルを開くとします。 コントロール内に、ダイアグラムが表示されます。 ツールボックスとその他の機能が通常動作します。
 
 ## <a name="update-the-form-using-store-events"></a>ストア イベントを使用してフォームを更新します。
 
-1.  フォーム デザイナーでは追加、 **ListBox**という`listBox1`します。 これにより、モデルに要素の一覧が表示されます。 使用して、モデルと同期されている*イベント格納*します。 詳細については、[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)を参照してください。
+1. フォーム デザイナーでは追加、 **ListBox**という`listBox1`します。 これにより、モデルに要素の一覧が表示されます。 使用して、モデルと同期されている*イベント格納*します。 詳細については、次を参照してください。[イベント ハンドラー反映されるまで変更 Outside the モデル](../modeling/event-handlers-propagate-changes-outside-the-model.md)します。
 
-2.  カスタム コード ファイルでさらにメソッドをオーバーライド DocView クラス。
+2. カスタム コード ファイルでさらにメソッドをオーバーライド DocView クラス。
 
     ```csharp
     partial class MyDSLDocView
@@ -110,7 +110,7 @@ DSL 図は、Visual Studio ウィンドウに表示される、Windows のコン
      }
     ```
 
-3.  ユーザー コントロールの背後にあるコードでは、要素を追加および削除をリッスンするメソッドを挿入します。
+3. ユーザー コントロールの背後にあるコードでは、要素を追加および削除をリッスンするメソッドを挿入します。
 
     ```csharp
     public partial class UserControl1 : UserControl { ...
@@ -137,7 +137,7 @@ DSL 図は、Visual Studio ウィンドウに表示される、Windows のコン
     }
     ```
 
-4.  DSL をテストするには、キーを押して**F5** Visual Studio の実験用インスタンスのサンプル モデル ファイルを開くとします。
+4. DSL をテストするには、キーを押して**F5** Visual Studio の実験用インスタンスのサンプル モデル ファイルを開くとします。
 
      モデルでは、要素の一覧をリスト ボックスが表示されるが正しいことおよび取り消しとやり直しの任意の追加または削除後に注意してください。
 

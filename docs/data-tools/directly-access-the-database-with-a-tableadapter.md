@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f120f29494b8c519253c98f889496189e7e2594f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 26bcab8d589c1fedcbbc4eb1f8b06bb1c04cac53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567023"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>TableAdapter で直接データベースにアクセスする
 
@@ -42,7 +42,7 @@ TableAdapter を呼び出す`DbDirect`実現しようとしているタスクを
 
 ### <a name="to-insert-new-records-directly-into-a-database"></a>データベースに直接新しいレコードを挿入するには
 
--   呼び出す TableAdapter の`Insert`メソッド、パラメーターとして各列の値で渡します。 次の手順を使用して、`Region`例として、Northwind データベースのテーブル。
+- 呼び出す TableAdapter の`Insert`メソッド、パラメーターとして各列の値で渡します。 次の手順を使用して、`Region`例として、Northwind データベースのテーブル。
 
     > [!NOTE]
     > 使用可能なインスタンスがいない場合は、TableAdapter を使用するをインスタンス化します。
@@ -52,7 +52,7 @@ TableAdapter を呼び出す`DbDirect`実現しようとしているタスクを
 
 ### <a name="to-update-records-directly-in-a-database"></a>データベースに直接レコードを更新するには
 
--   呼び出す TableAdapter の`Update`メソッド、パラメーターとして各列の新しいと、元の値を渡します。
+- 呼び出す TableAdapter の`Update`メソッド、パラメーターとして各列の新しいと、元の値を渡します。
 
     > [!NOTE]
     > 使用可能なインスタンスがいない場合は、TableAdapter を使用するをインスタンス化します。
@@ -62,7 +62,7 @@ TableAdapter を呼び出す`DbDirect`実現しようとしているタスクを
 
 ### <a name="to-delete-records-directly-from-a-database"></a>データベースから直接レコードを削除するには
 
--   呼び出す TableAdapter の`Delete`メソッドのパラメーターとして各列の値を渡す、`Delete`メソッド。 次の手順を使用して、`Region`例として、Northwind データベースのテーブル。
+- 呼び出す TableAdapter の`Delete`メソッドのパラメーターとして各列の値を渡す、`Delete`メソッド。 次の手順を使用して、`Region`例として、Northwind データベースのテーブル。
 
     > [!NOTE]
     > 使用可能なインスタンスがいない場合は、TableAdapter を使用するをインスタンス化します。

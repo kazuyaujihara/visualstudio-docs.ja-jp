@@ -1,4 +1,4 @@
-﻿---
+---
 title: T4 テンプレート ディレクティブ
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88690e57e1781e9fe43b3cf4108c62fab189a988
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 56332c58c48903a13a5b1538cf18986ba81e20a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856381"
 ---
 # <a name="t4-template-directive"></a>T4 テンプレート ディレクティブ
 
@@ -91,12 +91,12 @@ hostspecific="true"
 `false` (既定値)
 
 `trueFromBase`
- 
+
 この属性の値を `true` に設定した場合、テキスト テンプレートによって生成されたクラスに、`Host` というプロパティが追加されます。 このプロパティは変換エンジンのホストへの参照であり、<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> として宣言されます。 カスタム ホストを定義している場合は、そのカスタム ホストの型にキャストできます。
 
 このプロパティの型はホストの型に依存するため、特定のホストとのみ連携するテキスト テンプレートを作成している場合以外、利用価値はありません。 これは、[デザイン時テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)には適用されますが、[実行時テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)にはされません。
 
-`hostspecific`が`true`であり Visual Studio を使用しているときは、Visual Studio の機能にアクセスするために、`this.Host`を IServiceProvider にキャストできます。 また、`Host.ResolvePath(filename)` を使用して、プロジェクトのファイルの絶対パスを取得することもできます。 例:
+`hostspecific`が`true`であり Visual Studio を使用しているときは、Visual Studio の機能にアクセスするために、`this.Host`を IServiceProvider にキャストできます。 また、`Host.ResolvePath(filename)` を使用して、プロジェクトのファイルの絶対パスを取得することもできます。 例えば:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -134,7 +134,7 @@ Content of myFile is:
 
 `language`属性の言語を指定します ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]または[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) ステートメントと式ブロック内のソース コードを使用します。 出力の生成元である中間コード ファイルでこの言語が使用されます。 この言語はテンプレートで生成される言語とは無関係であり、どのような種類のテキストであってもかまいません。
 
-例:
+例えば:
 
 ```vb
 <#@ template language="VB" #>
@@ -154,7 +154,7 @@ Squares of numbers:
 
 テンプレートのプログラム コードを別のクラスから継承できることを指定できます。クラスは、テキスト テンプレートから生成することもできます。
 
-### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>ランタイム (前処理された) テキスト テンプレートでの継承
+### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>実行時 (前処理された) テキスト テンプレートでの継承
 
 実行時テキスト テンプレート間で継承を使用して、複数の派生バリアントを含む基本テンプレートを作成できます。 実行時テンプレートが指定されている、**カスタム ツール** プロパティに **TextTemplatingFilePreprocessor** を設定します。 実行時テンプレートでは、そのテンプレートに定義されているテキストを作成するために、アプリケーションで呼び出すことができるコードが生成されます。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
@@ -162,7 +162,7 @@ Squares of numbers:
 
 通常は、前処理された別のテンプレートを基底クラスとして指定します。 基本テンプレートでは、派生テンプレートのテキストとインタリーブできる共通のテキスト ブロックを提供します。 クラス機能ブロック (`<#+ ... #>`) を使用して、テキスト フラグメントを含むメソッドを定義できます。 たとえば、基本テンプレートに出力テキストのフレームワークを配置し、派生テンプレートでオーバーライドできる仮想メソッドを提供することができます。
 
-ランタイム (前処理された) テキスト テンプレートの BaseTemplate.tt:
+実行時 (前処理された) テキスト テンプレートの BaseTemplate.tt:
 
 ```scr
 This is the common header.
@@ -181,7 +181,7 @@ This is the common footer.
 #>
 ```
 
-ランタイム (前処理された) テキスト テンプレートの DerivedTemplate1.tt:
+実行時 (前処理された) テキスト テンプレートの DerivedTemplate1.tt:
 
 ```csharp
 <#@ template language="C#" inherits="BaseTemplate" #>
@@ -206,13 +206,15 @@ protected override void SpecificFragment2()
 #>
 ```
 
- DerivedTemplate1 を呼び出すアプリケーション コード:
- ```csharp
+DerivedTemplate1 を呼び出すアプリケーション コード:
+
+```csharp
 Console.WriteLine(new DerivedTemplate().TransformText());
 ```
 
- 結果の出力:
- ```
+結果の出力:
+
+```
 This is the common header.
    Fragment 1 for DerivedTemplate1
 A common central text.
@@ -247,7 +249,7 @@ This is the common footer.
 
 `false`
 
-この属性を `false` に設定すると、生成されたコード内で行番号を識別するタグが削除されます。 コンパイラは生成されたコードの行番号を使用してエラーを報告することを意味します。このため、デバッグ時の選択肢が増えて、テキスト テンプレートをデバッグするか、それとも生成されたコードをデバッグするかを選択できます。
+この属性を false に設定すると、生成されたコード内で行番号を識別するタグが削除されます。 コンパイラは生成されたコードの行番号を使用してエラーを報告することを意味します。このため、デバッグ時の選択肢が増えて、テキスト テンプレートをデバッグするか、それとも生成されたコードをデバッグするかを選択できます。
 
 この属性は ソース コード管理下にあるプラグマの絶対ファイル名が無駄なマージの原因となっている場合にも役立ちます。
 
@@ -263,4 +265,4 @@ This is the common footer.
 
 `internal`
 
-実行時テキスト テンプレートでは、これは生成されたクラスの可視性の属性を設定します。 既定では、クラスはコードのパブリック API の一部となりますが、`visibility="internal"` を設定すると、自分のコードだけがそのテキスト生成クラスを使用できるようになります。
+実行時テキスト テンプレートでは、これは生成されたクラスの可視性属性を設定します。 既定では、クラスはコードのパブリック API の一部ですが、`visibility="internal"` を設定すると、自分のコードだけがそのテキスト生成クラスを使用するようにできます。

@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 59c7e42e005e423a27adc7676a05ebc03cd068d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4752f9b04723934c0fe9a2cf8a74d4d07e474477
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963675"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116200"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>デバッグの準備:Visual C++ プロジェクトの種類
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58963675"
   
  出力として Dll を作成するプロジェクトの種類に分類された注[DLL プロジェクトのデバッグ](../debugger/debugging-dll-projects.md)共有している一般的な機能のため。  
   
-##  <a name="BKMK_In_this_topic"></a> このトピックの内容  
+## <a name="BKMK_In_this_topic"></a> このトピックの内容  
  [プロパティの推奨設定](#BKMK_Recommended_Property_Settings)  
   
  [Win32 プロジェクト](#BKMK_Win32_Projects)  
@@ -45,7 +45,7 @@ ms.locfileid: "58963675"
   
   [Windows フォーム アプリケーション (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
-##  <a name="BKMK_Recommended_Property_Settings"></a> プロパティの推奨設定  
+## <a name="BKMK_Recommended_Property_Settings"></a> プロパティの推奨設定  
  プロパティによっては、すべてのアンマネージ デバッグ シナリオで同じように設定する必要があります。 プロパティの推奨設定を以下に示します。 ここに記載されていない設定は、アンマネージ プロジェクトの種類によって異なる場合があります。 詳細については、次を参照してください[C++ デバッグ構成のプロジェクトの設定。](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
   
 ### <a name="configuration-properties-124-cc-124-optimization-node"></a>構成プロパティ&#124;C/C++&#124;最適化ノード  
@@ -62,22 +62,22 @@ ms.locfileid: "58963675"
   
  [このトピックの内容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Win32_Projects"></a> Win32 プロジェクト  
+## <a name="BKMK_Win32_Projects"></a> Win32 プロジェクト  
  Win32 アプリケーションは、C または C++ で記述される従来の Windows プログラムです。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、この種類のアプリケーションを簡単にデバッグできます。  
   
  Win32 アプリケーションには、MFC アプリケーションと ATL プロジェクトが含まれます。 これらは Windows API を使用します。MFC や ATL を使用することはありますが、共通言語ランタイム (CLR: Common Language Runtime) は使用しません。 ただし、CLR を使用するマネージド コードを呼び出すことはできます。  
   
  次の手順では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内から Win32 プロジェクトをデバッグする方法を説明します。 Win32 アプリケーションをデバッグするもう 1 つの方法では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の外部でアプリケーションを起動してアタッチします。 詳細については、次を参照してください。[実行中のプロセスにアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)します。  
   
-###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> C または C++ の Win32 アプリケーションをデバッグするには  
+### <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> C または C++ の Win32 アプリケーションをデバッグするには  
   
-1.  Visual Studio でプロジェクトを開きます。  
+1. Visual Studio でプロジェクトを開きます。  
   
-2.  **[デバッグ]** メニューの **[開始]** を選びます。  
+2. **[デバッグ]** メニューの **[開始]** を選びます。  
   
-3.  説明した手法を使用してデバッグ[デバッガーの基本事項](../debugger/debugger-basics.md)します。  
+3. 説明した手法を使用してデバッグ[デバッガーの基本事項](../debugger/debugger-basics.md)します。  
   
-###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> デバッグ構成を手動で設定するには  
+### <a name="BKMK_To_manually_set_a_Debug_configuration"></a> デバッグ構成を手動で設定するには  
   
 1. **[表示]** メニューの **[プロパティ ページ]** をクリックします。  
   
@@ -99,7 +99,7 @@ ms.locfileid: "58963675"
   
    [このトピックの内容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows フォーム アプリケーション (.NET)  
+## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows フォーム アプリケーション (.NET)  
  **Windows フォーム アプリケーション (.NET)** テンプレートを使用して [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Windows フォーム アプリケーションを作成できます。 詳細については、「[方法 :Windows アプリケーション プロジェクトを作成する](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)」を参照してください。  
   
  この種のアプリケーションを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でデバッグする作業は、マネージド Windows フォーム アプリケーションのデバッグ作業に似ています。  

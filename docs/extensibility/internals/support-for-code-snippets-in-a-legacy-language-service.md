@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10067cdf06035b08c56fbcc92440b460a9b7733b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 08c30f723c6dbdb7359b1fd1d7648a38e71ab161
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428814"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>従来の言語サービスでのコード スニペットのサポート
 コード スニペットは、ソース ファイルに挿入するコードの一部です。 スニペット自体とは、一連のフィールドの XML ベースのテンプレートです。 これらのフィールドには、スニペットが挿入され、スニペットを挿入するコンテキストに応じて異なる値を持つことができますが強調表示されます。 スニペットの挿入後にすぐに、言語サービスは、スニペットを書式設定できます。
@@ -27,7 +27,7 @@ ms.locfileid: "56612102"
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、次を参照してください。[チュートリアル。コード スニペットを実装する](../../extensibility/walkthrough-implementing-code-snippets.md)します。
 
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
 
 ## <a name="managed-package-framework-support-for-code-snippets"></a>Managed Package Framework のコード スニペットのサポート
  Managed package framework (MPF) は、スニペットを挿入するテンプレートの読み取りから、ほとんどのスニペット機能をサポートし、編集モードの特殊なを有効にするとします。 サポートを使って管理、<xref:Microsoft.VisualStudio.Package.ExpansionProvider>クラス。
@@ -39,11 +39,11 @@ ms.locfileid: "56612102"
 ## <a name="providing-support-for-code-snippets"></a>コード スニペットのサポートを提供します。
  コード スニペットのサポートを有効にするには、提供またはスニペットをインストールする必要があり、ユーザーをこれらのスニペットを挿入するための手段を提供する必要があります。 コード スニペットのサポートを有効にする 3 つの手順があります。
 
-1.  スニペット ファイルをインストールします。
+1. スニペット ファイルをインストールします。
 
-2.  言語サービスのコード スニペットを有効にします。
+2. 言語サービスのコード スニペットを有効にします。
 
-3.  呼び出す、<xref:Microsoft.VisualStudio.Package.ExpansionProvider>オブジェクト。
+3. 呼び出す、<xref:Microsoft.VisualStudio.Package.ExpansionProvider>オブジェクト。
 
 ### <a name="installing-the-snippet-files"></a>スニペット ファイルをインストールします。
  言語のすべてのスニペットは、ファイルごとに 1 つスニペット テンプレート通常、XML ファイルにテンプレートとして格納されます。 コード スニペットのテンプレートを使用する XML スキーマの詳細については、「[コード スニペット スキーマ リファレンス](../../ide/code-snippets-schema-reference.md)します。 各スニペット テンプレートは、言語 ID で識別されます。 この言語の ID レジストリで指定され、に、`Language`の属性、\<コード > テンプレートのタグ。
@@ -115,9 +115,9 @@ ms.locfileid: "56612102"
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>メニュー コマンドを使用してコード スニペットの挿入
  スニペットのブラウザーを表示するメニュー コマンドを使用するメニュー コマンドの追加を呼び出して、<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.ExpansionProvider>インターフェイス メニュー コマンドに応答します。
 
-1.  .Vsct ファイルにコマンドとボタンを追加します。 そのために行うための手順を確認できます[メニュー コマンドを使用して拡張機能の作成](../../extensibility/creating-an-extension-with-a-menu-command.md)です。
+1. .Vsct ファイルにコマンドとボタンを追加します。 そのために行うための手順を確認できます[メニュー コマンドを使用して拡張機能の作成](../../extensibility/creating-an-extension-with-a-menu-command.md)です。
 
-2.  派生クラスを<xref:Microsoft.VisualStudio.Package.ViewFilter>クラスし、オーバーライド、<xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A>新しいメニュー コマンドのサポートを示すためのメソッド。 この例では、メニュー コマンドが常に有効です。
+2. 派生クラスを<xref:Microsoft.VisualStudio.Package.ViewFilter>クラスし、オーバーライド、<xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A>新しいメニュー コマンドのサポートを示すためのメソッド。 この例では、メニュー コマンドが常に有効です。
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -153,7 +153,7 @@ ms.locfileid: "56612102"
     }
     ```
 
-3.  上書き、<xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.ViewFilter>を取得するクラス、<xref:Microsoft.VisualStudio.Package.ExpansionProvider>オブジェクトと呼び出し、<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>そのオブジェクトのメソッド。
+3. 上書き、<xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.ViewFilter>を取得するクラス、<xref:Microsoft.VisualStudio.Package.ExpansionProvider>オブジェクトと呼び出し、<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>そのオブジェクトのメソッド。
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -205,15 +205,15 @@ ms.locfileid: "56612102"
 
      次のメソッドは、<xref:Microsoft.VisualStudio.Package.ExpansionProvider>スニペットの挿入の処理中に特定の順序での Visual Studio によって、クラスが呼び出されます。
 
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
 
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
 
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
      後に、<xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>メソッドが呼び出されると、スニペットが挿入された、<xref:Microsoft.VisualStudio.Package.ExpansionProvider>オブジェクトが挿入されたスニペットを変更するために使用される特殊な編集モードにします。
 
@@ -392,4 +392,4 @@ namespace TestLanguagePackage
 - [従来の言語サービスの特徴](../../extensibility/internals/legacy-language-service-features1.md)
 - [従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)
 - [コード スニペット](../../ide/code-snippets.md)
-- [チュートリアル: インストールされているコード スニペット (従来の実装) の一覧を取得します。](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+- [チュートリアル: インストールされているコード スニペットの一覧の取得 (従来の実装)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

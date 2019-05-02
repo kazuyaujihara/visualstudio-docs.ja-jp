@@ -1,14 +1,9 @@
 ---
 title: コードの種類 ダイアログ ボックスを選択します |。Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.selectengines
 dev_langs:
@@ -29,28 +24,25 @@ ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d24f20741ee3934a5835aeac852a279ac6cb2e77
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 21e678df1fa3dc9ca237e9a8cb4e377fb27b0aaf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801811"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58976827"
 ---
 # <a name="select-code-type-dialog-box"></a>[コードの種類の選択] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このダイアログ ボックスを開くを開き、**プロセスにアタッチ** ダイアログ ボックスをクリック、**選択**ボタン。  
+このダイアログ ボックスを開くには、**[プロセスにアタッチ]** ダイアログ ボックスを開き、**[選択]** をクリックします。  
   
- **デバッグするコードの種類を自動的に決定します。**  
+ **[デバッグするコードの種類を自動的に判断する]**  
  実行中のコードの種類に基づいて、適切なデバッガーが選択されます。  
   
- **これらのコードの種類をデバッグするには。**  
+ **次のコードの種類をデバッグする:**   
  表示される一覧から、デバッグするコードの種類を選択します。  
   
 ## <a name="see-also"></a>関連項目  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [実行中のプロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-
-
-

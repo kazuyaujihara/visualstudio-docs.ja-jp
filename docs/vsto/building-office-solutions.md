@@ -26,18 +26,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 000a036b90d1fa44f24a8340770790ab216c1d85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: e103b07b82d587ac00e2ff53e9ed7ea344267a85
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440335"
 ---
 # <a name="build-office-solutions"></a>Office ソリューションを構築します。
-  一般に、Office プロジェクトのビルドとデバッグは、Visual Studio のその他の種類のプロジェクト (Windows フォームなど) のビルドおよびデバッグとほとんど同じです。 このセクションのトピックでは、いくつかある相違点について説明します。 アプリケーションを構築する方法については、[コンパイルし、Visual Studio でビルド](../ide/compiling-and-building-in-visual-studio.md)を参照してください。
+  一般に、Office プロジェクトのビルドとデバッグは、Visual Studio のその他の種類のプロジェクト (Windows フォームなど) のビルドおよびデバッグとほとんど同じです。 このセクションのトピックでは、いくつかある相違点について説明します。 アプリケーションを構築する方法については、次を参照してください。[コンパイルし、Visual Studio でビルド](../ide/compiling-and-building-in-visual-studio.md)します。
 
 > [!NOTE]
->  [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは VSTO アドインやソリューションと比較して、小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML などのほぼすべての web プログラミング テクノロジを使用して、ビルドすることができます。
+> [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは VSTO アドインやソリューションと比較して、小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML などのほぼすべての web プログラミング テクノロジを使用して、ビルドすることができます。
 
 ## <a name="project-output-for-office-projects"></a>Office プロジェクトのプロジェクトの出力
  Office プロジェクトは、 *プロジェクト名*\bin\release または *プロジェクト名*\bin\debug に出力されます。 配置ディレクトリにはビルドできません。
@@ -45,31 +45,31 @@ ms.locfileid: "55945418"
 ### <a name="document-level-projects"></a>ドキュメント レベルのプロジェクト
  ドキュメント レベルのプロジェクトをビルドすると、プロジェクト出力には次の項目が含まれるようになります。
 
--   プロジェクト ドキュメントのコピー。
+- プロジェクト ドキュメントのコピー。
 
--   プロジェクト アセンブリと、 **［ローカル コピー］** プロパティが **true**に設定されているすべての参照先アセンブリ。
+- プロジェクト アセンブリと、 **［ローカル コピー］** プロパティが **true**に設定されているすべての参照先アセンブリ。
 
--   アプリケーション マニフェストは、ファイル名拡張子を持つ *.manifest*します。 詳細については、[Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)を参照してください。
+- アプリケーション マニフェストは、ファイル名拡張子を持つ *.manifest*します。 詳細については、次を参照してください。 [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)します。
 
--   配置マニフェストは、ファイル名拡張子を持つ *.vsto*します。 詳細については、[Office ソリューション用配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)を参照してください。
+- 配置マニフェストは、ファイル名拡張子を持つ *.vsto*します。 詳細については、次を参照してください。 [Office ソリューション用配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)します。
 
--   プログラム データベース (*PDB*) ファイル。
+- プログラム データベース (*PDB*) ファイル。
 
 > [!NOTE]
->  ドキュメント レベルのソリューションを、ローカル コンピューターではなくリモートの場所に作成する場合は、アプリケーションのセキュリティ センターにある信頼できる場所のリストに完全修飾パスを追加します。 詳細については、ドキュメントへの信頼の付与と呼ばれるセクションを参照してください。[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)します。
+> ドキュメント レベルのソリューションを、ローカル コンピューターではなくリモートの場所に作成する場合は、アプリケーションのセキュリティ センターにある信頼できる場所のリストに完全修飾パスを追加します。 詳細については、ドキュメントへの信頼の付与と呼ばれるセクションを参照してください。[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)します。
 
 ### <a name="application-level-projects"></a>アプリケーション レベルのプロジェクト
  VSTO アドイン プロジェクトをビルドするときに、プロジェクト出力には、次のものが含まれています。
 
 - プロジェクト アセンブリと、 **［ローカル コピー］** プロパティが **true**に設定されているすべての参照先アセンブリ。
 
-- アプリケーション マニフェストは、ファイル名拡張子を持つ *.manifest*します。 詳細については、[Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)を参照してください。
+- アプリケーション マニフェストは、ファイル名拡張子を持つ *.manifest*します。 詳細については、次を参照してください。 [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)します。
 
-- 配置マニフェストは、ファイル名拡張子を持つ *.vsto*します。 詳細については、[Office ソリューション用配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)を参照してください。
+- 配置マニフェストは、ファイル名拡張子を持つ *.vsto*します。 詳細については、次を参照してください。 [Office ソリューション用配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)します。
 
 - プログラム データベース (*PDB*) プロジェクトのアセンブリのファイル。
 
-  VSTO アドイン プロジェクトのビルド処理により、開発用コンピューターには、VSTO アドインの読み込みに必要な一連のレジストリ エントリも作成されます。 詳細については、[VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)を参照してください。
+  VSTO アドイン プロジェクトのビルド処理により、開発用コンピューターには、VSTO アドインの読み込みに必要な一連のレジストリ エントリも作成されます。 詳細については、次を参照してください。 [VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)します。
 
   フォーム領域を含む Outlook VSTO アドイン プロジェクトをビルドすると、ビルド処理により、次に示す情報がレジストリに追加されます。
 
@@ -90,9 +90,9 @@ ms.locfileid: "55945418"
  詳細については、[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)を参照してください。
 
 ### <a name="network-projects"></a>ネットワーク プロジェクト
- アセンブリまたはドキュメントの場所がネットワーク共有上に存在している場合は、ローカル (User レベル) セキュリティ ポリシーを更新するだけでは、ソリューションを実行できるようになりません。 管理者は、ソリューションの実行前に、コンピューター (Machine) レベルで、ネットワーク共有上のアセンブリとドキュメントに完全な信頼を付与する必要があります。 セキュリティ ポリシーを設定する方法の詳細については、[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)を参照してください。
+ アセンブリまたはドキュメントの場所がネットワーク共有上に存在している場合は、ローカル (User レベル) セキュリティ ポリシーを更新するだけでは、ソリューションを実行できるようになりません。 管理者は、ソリューションの実行前に、コンピューター (Machine) レベルで、ネットワーク共有上のアセンブリとドキュメントに完全な信頼を付与する必要があります。 セキュリティ ポリシーを設定する方法の詳細については、次を参照してください。[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)します。
 
- ドキュメント レベルのプロジェクトでは、Office の信頼できるフォルダーのリストに、ドキュメントの完全修飾位置を追加する必要もあります。 詳細については、[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)を参照してください。
+ ドキュメント レベルのプロジェクトでは、Office の信頼できるフォルダーのリストに、ドキュメントの完全修飾位置を追加する必要もあります。 詳細については、次を参照してください。[ドキュメントに信頼を付与](../vsto/granting-trust-to-documents.md)します。
 
 ## <a name="change-the-platform-target"></a>プラットフォーム ターゲットを変更します。
  既定では、Office プロジェクトのプラットフォーム ターゲットは **Any CPU**です。 通常、この設定を変更する必要はありません。 **Any CPU** プラットフォーム ターゲット設定でビルドされた Officeソリューションは、32 ビット バージョンと 64 ビット バージョンの Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] または [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]で実行するようになります。
@@ -108,7 +108,7 @@ ms.locfileid: "55945418"
 
 |タイトル|説明|
 |-----------|-----------------|
-|[Office プロジェクトをデバッグします。](../vsto/debugging-office-projects.md)|Office プロジェクトのデバッグに関する問題について説明します。|
+|[Office プロジェクトのデバッグ](../vsto/debugging-office-projects.md)|Office プロジェクトのデバッグに関する問題について説明します。|
 |[チュートリアル: 最初の Excel 用ドキュメント レベルのカスタマイズを作成します。](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Excel 用の基本的なドキュメント レベルのカスタマイズを作成する方法を示します。|
 |[方法: 無効になっている VSTO アドインを再度有効にします。](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|ハードまたはソフト無効になっている VSTO アドインを再度有効にする方法について説明します。|
-|[設計および Office ソリューションの作成](../vsto/designing-and-creating-office-solutions.md)|Office ソリューションの作成に関する情報と、ソリューション内のアセンブリの役割に関する情報へのリンクが掲載されています。|
+|[Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)|Office ソリューションの作成に関する情報と、ソリューション内のアセンブリの役割に関する情報へのリンクが掲載されています。|

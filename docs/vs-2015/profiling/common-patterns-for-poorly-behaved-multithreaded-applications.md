@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc126d8283562f84cabfaae7df1001c832553568
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f2c1a799663d33e61977c5416ad199bce8bce545
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420447"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>適切に動作しないマルチスレッド アプリケーションの一般的なパターン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54778955"
   
  コンカレンシー ビジュアライザーを使用すると、次の図のように、[CPU 使用状況] ビューでこの現象を確認することもできます。[CPU 使用状況] ビューでは、複数のスレッドが存在する場合でも、1 つの論理コアのみが使用されます。  
   
- 詳細については、MSDN ブログ Web サイトの Hazim Shafi のブログ「[Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569)」(Windows 用並列パフォーマンス ツール) の「Performance Pattern 1: Identifying Lock Contention」(パフォーマンス パターン 1: ロック競合の特定) を参照してください。  
+ 詳細については、次を参照してください。"パフォーマンス パターン 1。識別するロックの競合"Hazim shafi の[並列パフォーマンス ツールの Windows](http://go.microsoft.com/fwlink/?LinkID=160569) MSDN ブログ Web サイトのブログ。  
   
  ![ロック競合](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -52,9 +52,9 @@ ms.locfileid: "54778955"
   
  この問題を評価する際は、次の点を考慮してください。  
   
--   システム全体でオーバーサブスクリプションが発生している可能性があります。 システム上の他のプロセスが対象のスレッドを優先している可能性を考慮してください。 スレッド ビューの優先セグメントにカーソルを合わせると、スレッドとそのスレッドを優先したプロセスを示すツールヒントが表示されます。 このプロセスは、自分のプロセスが優先された時間中ずっと実行されていたプロセスではない場合がありますが、自分のプロセスに対して優先の負荷をかけているプロセスのヒントとして考えます。  
+- システム全体でオーバーサブスクリプションが発生している可能性があります。 システム上の他のプロセスが対象のスレッドを優先している可能性を考慮してください。 スレッド ビューの優先セグメントにカーソルを合わせると、スレッドとそのスレッドを優先したプロセスを示すツールヒントが表示されます。 このプロセスは、自分のプロセスが優先された時間中ずっと実行されていたプロセスではない場合がありますが、自分のプロセスに対して優先の負荷をかけているプロセスのヒントとして考えます。  
   
--   この作業のフェーズでは、自分のプロセスが実行に使用できる適切なスレッド数を決定する方法を評価してください。 アクティブな並列スレッド数をプロセスが直接計算している場合は、システムの空き論理コア数をより適切に考慮するようにアルゴリズムを変更することをお勧めします。 コンカレンシー ランタイム、タスク並列ライブラリ、PLINQ を使用している場合、これらのライブラリがスレッド数の計算作業を実行します。  
+- この作業のフェーズでは、自分のプロセスが実行に使用できる適切なスレッド数を決定する方法を評価してください。 アクティブな並列スレッド数をプロセスが直接計算している場合は、システムの空き論理コア数をより適切に考慮するようにアルゴリズムを変更することをお勧めします。 コンカレンシー ランタイム、タスク並列ライブラリ、PLINQ を使用している場合、これらのライブラリがスレッド数の計算作業を実行します。  
   
 ## <a name="inefficient-io"></a>非効率的な I/O  
  ![非効率な I&#47;O](../profiling/media/inefficient-io.png "Inefficient_IO")  

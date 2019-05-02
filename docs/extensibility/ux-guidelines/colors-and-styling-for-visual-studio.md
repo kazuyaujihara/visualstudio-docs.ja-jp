@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0ba49e1ab3e25e3f22a9ca8642673aa0a62869f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432266"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio の色とスタイル
 
@@ -57,7 +57,7 @@ Visual Studio 機能の 3 つの異なる配色テーマ: 明色、暗色、青�
 
 ユーザーは、Visual Studio の最初の使用時にテーマを選択するように求められますに移動して、後でテーマを切り替えができるように**ツール&gt;オプション&gt;環境&gt;全般**から新しいテーマを選択して"配色テーマ ドロップダウン メニュー。
 
-ユーザーはコントロール パネルを使用してもいくつかのハイ コントラスト テーマの 1 つに、システム全体を切り替えます。 ユーザーは、ハイ コントラストのテーマを選択する場合 Visual Studio の色のテーマ セレクターに影響しません Visual Studio での色が、ハイ コントラスト モードを終了するときに、テーマの変更が保存されます。 ハイ コントラスト モードの詳細については、[ハイ コントラストの選択色](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors)を参照してください。
+ユーザーはコントロール パネルを使用してもいくつかのハイ コントラスト テーマの 1 つに、システム全体を切り替えます。 ユーザーは、ハイ コントラストのテーマを選択する場合 Visual Studio の色のテーマ セレクターに影響しません Visual Studio での色が、ハイ コントラスト モードを終了するときに、テーマの変更が保存されます。 ハイ コントラスト モードの詳細については、次を参照してください。[ハイ コントラストの選択色](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors)します。
 
 ### <a name="the-vscolor-service"></a>VSColor service
 
@@ -85,7 +85,7 @@ Visual Studio のソース コードには、トークンの名前と各テー�
 
 ![ツール&gt;オプション ダイアログ ボックス](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")<br />ツール&gt;オプション ダイアログ ボックス
 
-##  <a name="BKMK_TheVSColorService"></a> VSColor Service
+## <a name="BKMK_TheVSColorService"></a> VSColor Service
 
 Visual Studio では、VSColor service またはシェル カラー サービスとも呼ばれる環境の色サービスを提供します。 このサービスでは、各テーマの色を含む名前と値の色に、UI 要素の色の値をバインドできます。 すべての UI 要素の色は自動的に現在のユーザーが選択したテーマを反映するように変更し、UI は、環境の色のサービスにバインドされているようにと統合される新しいテーマ将来のバージョンの Visual Studio ように、VSColor サービスを使用する必要があります。
 
@@ -112,7 +112,6 @@ IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 ファイル VSShell80.idl、列挙体で`__VSSYSCOLOREX`がシェルの色の定数。 これを使用するとして渡すインデックス値から値のいずれかの`enum __VSSYSCOLOREX`で文書化されている MSDN または通常のインデックス番号を Windows システム API、 `GetSysColor`、受け入れます。 これが 2 番目のパラメーターに使用する必要がある色の RGB 値返されます。
 
 必要な場合は、ペンまたは新しい色のブラシを保存するには、 `AdviseBroadcastMessages` (から Visual Studio シェル) をリッスンし、`WM_SYSCOLORCHANGE`と`WM_THEMECHANGED`メッセージ。
-
 
 ネイティブ コードで、色のサービスにアクセスするには、次のように呼び出しを行います。
 
@@ -268,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> ハイ コントラストの色を選択します。
+## <a name="BKMK_ChoosingHighContrastColors"></a> ハイ コントラストの色を選択します。
 
 ### <a name="overview"></a>概要
 
@@ -331,7 +330,7 @@ Ui、色のセットを制限するこれを適用するときに *「標準」�
 | WindowFrame | -IDE の枠線 |
 | WindowText | 自動的に隠す タブの前景色<br />-選択したツール ウィンドウ タブの前景色<br />-フォーカスされていないドキュメント ウィンドウ タブ、フォーカスされていない、または未選択の一時的なタブの前景色<br />-既定の前景を表示し、マウス ポインターをツリー未選択のグリフの上<br />-ツール ウィンドウの選択されているタブ境界線<br />-スクロール バーのつまみの背景、境界線、およびグリフ |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> エンドユーザーの色を公開します。
+## <a name="BKMK_ExposingColorsForEndUsers"></a> エンドユーザーの色を公開します。
 
 ### <a name="overview"></a>概要
 
@@ -341,7 +340,7 @@ Ui、色のセットを制限するこれを適用するときに *「標準」�
 
 VSPackage では、フォントと色カスタム カテゴリを制御でき、[フォントおよび色のプロパティ] ページの項目を表示することができます。 このメカニズムを使用して、Vspackage を実装する必要があります、 [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider)インターフェイスとその関連するインターフェイス。
 
-原則として、既存のすべての表示項目およびそれらが含まれているカテゴリを変更するこのメカニズムを使用できます。 ただし、その使わないでテキスト エディターのカテゴリまたはその表示項目を変更します。 テキスト エディターのカテゴリの詳細については、[フォントと色の概要](../font-and-color-overview.md)を参照してください。
+原則として、既存のすべての表示項目およびそれらが含まれているカテゴリを変更するこのメカニズムを使用できます。 ただし、その使わないでテキスト エディターのカテゴリまたはその表示項目を変更します。 テキスト エディターのカテゴリの詳細については、次を参照してください。[フォントと色の概要](../font-and-color-overview.md)します。
 
 カスタム カテゴリを実装または項目を表示、VSPackage では次の必要があります。
 

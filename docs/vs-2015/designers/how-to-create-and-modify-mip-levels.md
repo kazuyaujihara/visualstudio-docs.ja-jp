@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6495f9271114be5fcd35e38d9ed210e07a8b6f66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1c1d0babfec4a2fd56e2ed40c5f2c75329ccb6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434460"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>方法: MIP レベルを作成および変更する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "54774063"
   
 #### <a name="to-generate-mip-levels"></a>MIPMAP レベルを生成するには  
   
-1.  「[方法: 基本テクスチャを作成する](../designers/how-to-create-a-basic-texture.md)」の説明に従って、基本テクスチャから始めます。 最適な結果を得るには、テクスチャの高さと幅のサイズは、2 の累乗 (256、512、1024 など) に指定します。  
+1. 「[方法: 基本的なテクスチャを作成](../designers/how-to-create-a-basic-texture.md)です。 最適な結果を得るには、テクスチャの高さと幅のサイズは、2 の累乗 (256、512、1024 など) に指定します。  
   
-2.  MIPMAP レベルを生成します。 **[イメージ エディターのモード]** ツール バーで、**[詳細設定]**、**[ツール]**、**[MIPS の生成]** の順にクリックします。  
+2. MIPMAP レベルを生成します。 **[イメージ エディターのモード]** ツール バーで、**[詳細設定]**、**[ツール]**、**[MIPS の生成]** の順にクリックします。  
   
      **[Go to Next MIP Level]** (次の MIPMAP レベルに移動) および **[Go to Previous MIP Level]** (前の MIPMAP レベルに移動) ボタンが **[イメージ エディターのモード]** ツール バーに表示されていることに注意してください。 **[プロパティ]** ウィンドウが表示されている場合は、読み取り専用プロパティである **[MIPMAP レベル]** と **[MIPMAP レベル数]** がイメージのプロパティに表示されていることにも注意してください。  
   
@@ -37,12 +37,12 @@ ms.locfileid: "54774063"
   
 #### <a name="to-modify-an-individual-mip-level"></a>MIPMAP レベルを個別に変更するには  
   
-1.  変更する MIPMAP レベルを選択します。 **[イメージ エディターのモード]** ツール バーで、**[Go to Next MIP Level]** (次の MIPMAP レベルに移動) および **[Go to Previous MIP Level]** (前の MIPMAP レベルに移動) を使用し、MIPMAP レベルの間で移動します。  
+1. 変更する MIPMAP レベルを選択します。 **[イメージ エディターのモード]** ツール バーで、**[Go to Next MIP Level]** (次の MIPMAP レベルに移動) および **[Go to Previous MIP Level]** (前の MIPMAP レベルに移動) を使用し、MIPMAP レベルの間で移動します。  
   
-2.  変更する MIPMAP レベルを選択した後、描画ツールを使用して、他の MIPMAP レベルの内容を変更せずに、その MIPMAP レベルの内容のみ変更できます。 描画ツールは**イメージ エディター**のツール バーで使用できます。 ツールを選択した後は、**[プロパティ]** ウィンドウでそのツールのプロパティを変更できます。 描画ツールとそれらのプロパティの詳細については、「[イメージ エディター](../designers/image-editor.md)」を参照してください。  
+2. 変更する MIPMAP レベルを選択した後、描画ツールを使用して、他の MIPMAP レベルの内容を変更せずに、その MIPMAP レベルの内容のみ変更できます。 描画ツールは**イメージ エディター**のツール バーで使用できます。 ツールを選択した後は、**[プロパティ]** ウィンドウでそのツールのプロパティを変更できます。 描画ツールとそれらのプロパティの詳細については、「[イメージ エディター](../designers/image-editor.md)」を参照してください。  
   
 > [!NOTE]
->  各 MIPMAP レベルの内容を変更する必要がない場合 (特定の効果を得るためになど)、ビルド時にソース テクスチャから MIPMAP を生成することをお勧めします。 これは、MIPMAP レベルがソース テクスチャと確実に同期するために役立ちます。1 つの MIPMAP レベルに対する変更がその他の MIPMAP レベルに自動的に反映されないためです。 ビルド時に mipmap を生成する方法については、「[方法: ミップマップを含むテクスチャをエクスポートする](../designers/how-to-export-a-texture-that-contains-mipmaps.md)」を参照してください。  
+> 各 MIPMAP レベルの内容を変更する必要がない場合 (特定の効果を得るためになど)、ビルド時にソース テクスチャから MIPMAP を生成することをお勧めします。 これは、MIPMAP レベルがソース テクスチャと確実に同期するために役立ちます。1 つの MIPMAP レベルに対する変更がその他の MIPMAP レベルに自動的に反映されないためです。 ビルド時に mipmap を生成する方法については、「[方法:Mipmap を含むテクスチャをエクスポート](../designers/how-to-export-a-texture-that-contains-mipmaps.md)します。  
   
 ## <a name="see-also"></a>関連項目
- [方法: 基本テクスチャを作成する](../designers/how-to-create-a-basic-texture.md)
+ [方法: 基本的なテクスチャを作成する](../designers/how-to-create-a-basic-texture.md)

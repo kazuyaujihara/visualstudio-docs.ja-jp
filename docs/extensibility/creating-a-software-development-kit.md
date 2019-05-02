@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891226"
 ---
 # <a name="create-a-software-development-kit"></a>ソフトウェア開発キットを作成します。
 ソフトウェア開発キット (SDK) は、Visual Studio での 1 つの項目として参照できる Api のコレクションです。 **参照マネージャー**  ダイアログ ボックスに、プロジェクトに関連するすべての Sdk が一覧表示されます。 SDK をプロジェクトに追加するときに、Api は Visual Studio で使用できます。
@@ -30,7 +30,7 @@ ms.locfileid: "58324069"
 
 - [拡張機能 Sdk](#ExtensionSDKs)
 
-##  <a name="PlatformSDKs"></a> プラットフォーム Sdk
+## <a name="PlatformSDKs"></a> プラットフォーム Sdk
  プラットフォーム Sdk は、プラットフォームのアプリを開発する必要があります。 たとえば、 [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK がアプリの開発に必要な[!INCLUDE[win81](../debugger/includes/win81_md.md)]します。
 
 ### <a name="installation"></a>インストール
@@ -50,7 +50,6 @@ ms.locfileid: "58324069"
                         \[arch]
 ```
 
-
 | ノード | 説明 |
 |------------------------| - |
 | *参照*フォルダー | に対してコーディングすることがある Api が含まれているバイナリが含まれています。 Windows メタデータ (WinMD) ファイルまたはアセンブリに含めることができます。 |
@@ -59,7 +58,7 @@ ms.locfileid: "58324069"
 | *アーキテクチャ*フォルダー | サポートされている任意*アーキテクチャ*フォルダーが存在することができます。 Visual Studio には、次のアーキテクチャがサポートされています。 x86、x64、ARM、および neutral です。 メモ:Win32 は、x86 にマップされ、AnyCPU がニュートラルにマップされます。<br /><br /> 次の MSBuild のみ*\CommonConfiguration\neutral*プラットフォーム Sdk の場合。 |
 | *SDKManifest.xml* | このファイルは、Visual Studio が SDK を使用する方法について説明します。 SDK のマニフェストを見て[!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** オブジェクト ブラウザーが、参照リストに表示される値。<br /><br /> **PlatformIdentity:** この属性の存在では、Visual Studio および MSBuild SDK、platform SDK、およびそこから追加された参照をコピーすることはできませんをローカルにように指示します。<br /><br /> **TargetFramework:** この属性は、これの値で指定されている同じフレームワークを対象のプロジェクトのみを確実に Visual Studio によって使用されます属性は、SDK を使用できます。<br /><br /> **MinVSVersion:** この属性は、それに適用する Sdk のみを使用する Visual Studio によって使用されます。<br /><br /> **参照:** この属性は、コントロールを含む参照のみを指定する必要があります。 参照がコントロールを格納するかどうかを指定する方法については、以下を参照してください。 |
 
-##  <a name="ExtensionSDKs"></a> 拡張機能 Sdk
+## <a name="ExtensionSDKs"></a> 拡張機能 Sdk
  次のセクションでは、拡張機能 SDK を展開するために必要がありますについて説明します。
 
 ### <a name="installation"></a>インストール
@@ -73,13 +72,13 @@ ms.locfileid: "58324069"
 
  別の場所を使用する場合は、次の 2 つのいずれかを行う必要があります。
 
-1.  レジストリ キーで指定します。
+1. レジストリ キーで指定します。
 
      **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number\>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
 
      値を持つ (既定値) のサブキーを追加および`<path to SDK><SDKName><SDKVersion>`します。
 
-2.  MSBuild プロパティを追加`SDKReferenceDirectoryRoot`をプロジェクト ファイル。 このプロパティの値を参照する、拡張 Sdk が存在するディレクトリのセミコロンで区切られたリストです。
+2. MSBuild プロパティを追加`SDKReferenceDirectoryRoot`をプロジェクト ファイル。 このプロパティの値を参照する、拡張 Sdk が存在するディレクトリのセミコロンで区切られたリストです。
 
 ### <a name="installation-layout"></a>インストール レイアウト
  拡張 Sdk には、次のインストールのレイアウトがあります。
@@ -174,7 +173,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
     WindowsAppContainer 識別用のプロジェクト[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]アプリ。
 
-8. SupportPrefer32Bit:サポートされる値は"True"および"False"。 既定では"True です"。 MSBuild エラーが返されます、値が"False"に設定されている場合[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]プロジェクト (またはデスクトップ プロジェクトの場合の警告)、SDK を参照するプロジェクトがある Prefer32Bit が有効になっている場合。 Prefer32Bit の詳細については、[ビルド ページで、プロジェクト デザイナー (c#)](../ide/reference/build-page-project-designer-csharp.md)または[コンパイル ページで、プロジェクト デザイナー (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)を参照してください。
+8. SupportPrefer32Bit:サポートされる値は"True"および"False"。 既定では"True です"。 MSBuild エラーが返されます、値が"False"に設定されている場合[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]プロジェクト (またはデスクトップ プロジェクトの場合の警告)、SDK を参照するプロジェクトがある Prefer32Bit が有効になっている場合。 Prefer32Bit の詳細については、次を参照してください。[ビルド ページで、プロジェクト デザイナー (c#)](../ide/reference/build-page-project-designer-csharp.md)または[コンパイル ページで、プロジェクト デザイナー (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)します。
 
 9. SupportedArchitectures:セミコロン区切りの SDK は、サポートされるアーキテクチャのリスト。 MSBuild では、使用中のプロジェクトで対象となる SDK のアーキテクチャがサポートされていない場合に警告が表示されます。 この属性が指定されていない場合 MSBuild にはこの種類の警告が表示されません。
 
@@ -192,10 +191,10 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 16. ファイル参照。または、コントロールを含む、ネイティブ Winmd を参照のみを指定します。 参照がコントロールを格納するかどうかを指定する方法については、次を参照してください。[ツールボックス アイテムの場所を指定](#ToolboxItems)以下。
 
-##  <a name="ToolboxItems"></a> ツールボックス アイテムの場所を指定します。
+## <a name="ToolboxItems"></a> ツールボックス アイテムの場所を指定します。
  ToolBoxItems 要素、 *SDKManifest.xml*スキーマの両方のプラットフォームと拡張機能 Sdk カテゴリとツールボックス項目の場所を指定します。 次の例では、別の場所を指定する方法を示します。 これは、WinMD または DLL のいずれかの参照に適用されます。
 
-1.  既定のツールボックス カテゴリのコントロールを配置します。
+1. 既定のツールボックス カテゴリのコントロールを配置します。
 
     ```
     <File Reference = "sample.winmd">
@@ -203,7 +202,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-2.  特定のカテゴリ名の下にあるコントロールを配置します。
+2. 特定のカテゴリ名の下にあるコントロールを配置します。
 
     ```
     <File Reference = "sample.winmd">
@@ -211,7 +210,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-3.  特定のカテゴリ名の下にあるコントロールを配置します。
+3. 特定のカテゴリ名の下にあるコントロールを配置します。
 
     ```
     <File Reference = "sample.winmd">
@@ -222,7 +221,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-4.  Blend と Visual Studio では、さまざまなカテゴリ名の下にあるコントロールを配置します。
+4. Blend と Visual Studio では、さまざまなカテゴリ名の下にあるコントロールを配置します。
 
     ```
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.
@@ -232,7 +231,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-5.  Blend と Visual Studio の異なる方法で特定の制御を列挙します。
+5. Blend と Visual Studio の異なる方法で特定の制御を列挙します。
 
     ```
     <File Reference = "sample.winmd">
@@ -243,7 +242,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-6.  特定のコントロールを列挙し、すべてのコントロール グループのみまたは Visual Studio の一般的なパスの下に配置します。
+6. 特定のコントロールを列挙し、すべてのコントロール グループのみまたは Visual Studio の一般的なパスの下に配置します。
 
     ```
     <File Reference = "sample.winmd">
@@ -254,7 +253,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-7.  特定のコントロールを列挙し、なくて ChooseItems で特定のセットのみを表示、ツールボックスにされています。
+7. 特定のコントロールを列挙し、なくて ChooseItems で特定のセットのみを表示、ツールボックスにされています。
 
     ```
     <File Reference = "sample.winmd">

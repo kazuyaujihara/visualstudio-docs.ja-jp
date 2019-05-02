@@ -25,25 +25,25 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f1f3b6f6ee2c5a815bfa4f3a9744b3ad2c8cc690
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b1ab0f4875dcafc14b4b9fb8d3922d26e394c22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972689"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116863"
 ---
 # <a name="debugging-options-dialog-box"></a>[デバッグ] ([オプション] ダイアログ ボックス)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **[ツール]** メニューの **[オプション]** ダイアログ ボックスの **[デバッグ]** フォルダーには、以下のページがあります。これらのページを使ってデバッガー ツールのオプションを指定できます。  
   
--   [[全般] ([オプション] ダイアログ ボックス - [デバッグ])](../debugger/general-debugging-options-dialog-box.md)  
+- [[全般] ([オプション] ダイアログ ボックス - [デバッグ])](../debugger/general-debugging-options-dialog-box.md)  
   
--   [[Just-In-Time] ([オプション] ダイアログ ボックス - [デバッグ])](../debugger/just-in-time-debugging-options-dialog-box.md)  
+- [[Just-In-Time] ([オプション] ダイアログ ボックス - [デバッグ])](../debugger/just-in-time-debugging-options-dialog-box.md)  
   
--   [出力ウィンドウ ([オプション] ダイアログ ボックス - [デバッグ])](../debugger/output-window-debugging-options-dialog-box.md)  
+- [出力ウィンドウ ([オプション] ダイアログ ボックス - [デバッグ])](../debugger/output-window-debugging-options-dialog-box.md)  
   
--   [[シンボル] ([オプション] ダイアログ ボックス - [デバッグ])](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+- [[シンボル] ([オプション] ダイアログ ボックス - [デバッグ])](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>関連項目  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   

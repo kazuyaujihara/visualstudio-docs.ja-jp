@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422725"
 ---
 # <a name="making-custom-projects-version-aware"></a>カスタム プロジェクトでのバージョンの認識
 カスタム プロジェクト システムでは、カスタム プロジェクトを Visual Studio の複数のバージョンに読み込むことができます。 また、そのタイプのプロジェクトが、以前のバージョンの Visual Studio に読み込まれないようにすることもできます。 そのプロジェクトの修復や変換や廃止が必要になった場合に備えて、今後のバージョンでそのプロジェクト自体が識別されるようにすることもできます。  
@@ -24,20 +24,20 @@ ms.locfileid: "58973199"
   
  プロジェクト システムの作成者として、プロジェクト システムのユーザーがアップグレードをチェックできるように `UpgradeProject_CheckOnly` を ( `IVsProjectUpgradeViaFactory4` インターフェイスから) 実装します。 ユーザーがプロジェクトを開くと、プロジェクトを読み込む前に、このメソッドが呼び出されて、プロジェクトを修復する必要があるかどうかが判別されます。 アップグレード要件の候補が `VSPUVF_REPAIRFLAGS`に列挙され、その中には次のようなものがあります。  
   
-1.  `SPUVF_PROJECT_NOREPAIR`:修復は不要です。  
+1. `SPUVF_PROJECT_NOREPAIR`:修復は不要です。  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`:により、プロジェクトは、以前のバージョンと互換性のあるせず、製品の以前のバージョンで生じる可能性のある問題が発生します。  
+2. `VSPUVF_PROJECT_SAFEREPAIR`:により、プロジェクトは、以前のバージョンと互換性のあるせず、製品の以前のバージョンで生じる可能性のある問題が発生します。  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`:により、プロジェクトは下位互換性は、製品の以前のバージョンとの遭遇した問題のいくつかリスクです。 たとえば、プロジェクトが別の SDK バージョンに依存している場合、プロジェクトには互換性がありません。  
+3. `VSPUVF_PROJECT_UNSAFEREPAIR`:により、プロジェクトは下位互換性は、製品の以前のバージョンとの遭遇した問題のいくつかリスクです。 たとえば、プロジェクトが別の SDK バージョンに依存している場合、プロジェクトには互換性がありません。  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`:により、プロジェクトは、以前のバージョンと互換性がありません。  
+4. `VSPUVF_PROJECT_ONEWAYUPGRADE`:により、プロジェクトは、以前のバージョンと互換性がありません。  
   
-5.  `VSPUVF_PROJECT_INCOMPATIBLE`:現在のバージョンがこのプロジェクトをサポートしないことを示します。  
+5. `VSPUVF_PROJECT_INCOMPATIBLE`:現在のバージョンがこのプロジェクトをサポートしないことを示します。  
   
-6.  `VSPUVF_PROJECT_DEPRECATED`:このプロジェクトのサポートが不要になったことを示します。  
+6. `VSPUVF_PROJECT_DEPRECATED`:このプロジェクトのサポートが不要になったことを示します。  
   
 > [!NOTE]
->  混乱を避けるため、これらを設定するときにアップグレード フラグを組み合わせないでください。 たとえば、 `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`のようなあいまいなアップグレード状態を作成しないでください。  
+> 混乱を避けるため、これらを設定するときにアップグレード フラグを組み合わせないでください。 たとえば、 `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`のようなあいまいなアップグレード状態を作成しないでください。  
   
  プロジェクト フレーバーによっては、 `UpgradeProjectFlavor_CheckOnly` インターフェイスから関数 `IVsProjectFlavorUpgradeViaFactory2` を実装することがあります。 この関数が機能するには、前述した `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly` 実装で呼び出す必要があります。 この呼び出しは、Visual Basic または C# 基本プロジェクト システムに既に実装されています。 この関数の機能により、プロジェクト フレーバーで、基本プロジェクト システムによって判別されることに加え、プロジェクトのアップグレード要件も判別できるようになります。 互換性のダイアログ ボックスには、2 つの要件のうち最も深刻なものが示されます。  
   
@@ -49,18 +49,18 @@ ms.locfileid: "58973199"
   
  次に、互換性ユーザー エクスペリエンスの概要の理解に役立つ例を示します。 以前のバージョンで作成されプロジェクトについて、アップグレードが必要であると現在のバージョンが判断した場合は、変更を許可するかどうかを確認するダイアログ ボックスが表示されます。 ユーザーが同意した場合は、プロジェクトが変更され、読み込まれます。 その後、このソリューションを閉じて以前のバージョンで再び開いた場合、この一方向のアップグレード プロジェクトは互換性がなくなり、読み込まれなくなります。 プロジェクトの (アップグレードではなく) 修復のみが必要な場合は、修復したプロジェクトが引き続き両方のバージョンで開きます。  
   
-##  <a name="BKMK_Incompat"></a> プロジェクトを互換性なしとマークします。  
+## <a name="BKMK_Incompat"></a> プロジェクトを互換性なしとマークします。  
  プロジェクトを以前のバージョンの Visual Studio との互換性なしとしてマークできます。  たとえば、.NET Framework 4.5 の機能を使用するプロジェクトを作成するとします。 このプロジェクトは [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]に組み込むことができないため、そのバージョンによって読み込まれないように、このプロジェクトを互換性なしとしてマークすることができます。  
   
  互換性のない機能を追加するコンポーネントには、プロジェクトを互換性なしとしてマークする責任があります。 コンポーネントは、対象となるプロジェクトを表す <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> インターフェイスにアクセスできる必要があります。  
   
 #### <a name="to-mark-a-project-as-incompatible"></a>プロジェクトを互換性なしとしてマークするには  
   
-1.  コンポーネントで、グローバル サービス SVsSolution から `IVsAppCompat` インターフェイスを取得します。  
+1. コンポーネントで、グローバル サービス SVsSolution から `IVsAppCompat` インターフェイスを取得します。  
   
-     詳細については、「<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>」を参照してください。  
+     詳細については、「 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> 」を参照してください。  
   
-2.  コンポーネントで、 `IVsAppCompat.AskForUserConsentToBreakAssetCompat`を呼び出して、対象のプロジェクトを表す `IVsHierarchy` インターフェイスの配列を渡します。  
+2. コンポーネントで、 `IVsAppCompat.AskForUserConsentToBreakAssetCompat`を呼び出して、対象のプロジェクトを表す `IVsHierarchy` インターフェイスの配列を渡します。  
   
      このメソッドのシグネチャは次のとおりです。  
   
@@ -72,11 +72,11 @@ ms.locfileid: "58973199"
      このコードを実装すると、プロジェクト互換性のダイアログ ボックスが表示されます。 指定したすべてのプロジェクトを互換性なしとしてマークしてよいかどうかを確認するように求められます。 ユーザーが同意した場合、 `AskForUserConsentToBreakAssetCompat` は `S_OK`を返します。それ以外の場合、 `AskForUserConsentToBreakAssetCompat` は `OLE_E_PROMPTSAVECANCELLED`を返します。  
   
     > [!WARNING]
-    >  最も一般的なシナリオの場合、 `IVsHierarchy` 配列には 1 つの項目のみが含まれます。  
+    > 最も一般的なシナリオの場合、 `IVsHierarchy` 配列には 1 つの項目のみが含まれます。  
   
-3.  `AskForUserConsentToBreakAssetCompat` が `S_OK`を返した場合、コンポーネントは互換性を破棄する変更を加えるか、受け入れます。  
+3. `AskForUserConsentToBreakAssetCompat` が `S_OK`を返した場合、コンポーネントは互換性を破棄する変更を加えるか、受け入れます。  
   
-4.  コンポーネントで、互換性なしとしてマークするプロジェクトごとに `IVsAppCompat.BreakAssetCompatibility` メソッドを呼び出します。 コンポーネントでは、Visual Studio がレジストリ内の現在のバージョン文字列を検索するようにするのではなく、パラメーター `lpszMinimumVersion` の値を特定の最小バージョンに設定できます。 この方法は、コンポーネントが今後値を設定するとき、その時点でのレジストリの内容に基づいて誤って値を大きく設定するリスクを最小化します。 そのように高い値を設定した場合、Visual Studio ではプロジェクトを開くことができません。  
+4. コンポーネントで、互換性なしとしてマークするプロジェクトごとに `IVsAppCompat.BreakAssetCompatibility` メソッドを呼び出します。 コンポーネントでは、Visual Studio がレジストリ内の現在のバージョン文字列を検索するようにするのではなく、パラメーター `lpszMinimumVersion` の値を特定の最小バージョンに設定できます。 この方法は、コンポーネントが今後値を設定するとき、その時点でのレジストリの内容に基づいて誤って値を大きく設定するリスクを最小化します。 そのように高い値を設定した場合、Visual Studio ではプロジェクトを開くことができません。  
   
      このメソッドのシグネチャは次のとおりです。  
   
@@ -95,10 +95,10 @@ ms.locfileid: "58973199"
   
      BreakAssetCompatibility メソッドは、その後 `IVsHierarchy.SetProperty` メソッドを呼び出して、ルート `VSHPROPID_MinimumDesignTimeCompatVersion` プロパティを前の手順で取得したバージョン文字列の値に設定します。  
   
-     詳細については、「<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>」を参照してください。  
+     詳細については、「 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A> 」を参照してください。  
   
 > [!IMPORTANT]
->  プロジェクトを互換性ありまたは互換性なしとしてマークするには、 `VSHPROPID_MinimumDesignTimeCompatVersion` プロパティを実装する必要があります。 たとえば、プロジェクト システムが MSBuild プロジェクト ファイルを使用している場合は、対応する `<MinimumVisualStudioVersion>` プロパティ値と等しい値を持つ `VSHPROPID_MinimumDesignTimeCompatVersion` ビルド プロパティをプロジェクト ファイルに追加します。  
+> プロジェクトを互換性ありまたは互換性なしとしてマークするには、 `VSHPROPID_MinimumDesignTimeCompatVersion` プロパティを実装する必要があります。 たとえば、プロジェクト システムが MSBuild プロジェクト ファイルを使用している場合は、対応する `<MinimumVisualStudioVersion>` プロパティ値と等しい値を持つ `VSHPROPID_MinimumDesignTimeCompatVersion` ビルド プロパティをプロジェクト ファイルに追加します。  
   
 ## <a name="detecting-whether-a-project-is-incompatible"></a>プロジェクトに互換性があるかどうかの検出  
  Visual Studio の現在のバージョンと互換性がないプロジェクトは、読み込まれないようにする必要があります。 さらに、互換性のないプロジェクトは、アップグレードしたり修復したりすることができません。 このため、プロジェクトの互換性は 2 回確認する必要があります。1 回目はプロジェクトのアップグレードや修復を検討するときで、2 回目はプロジェクトを読み込む前です。  
@@ -129,25 +129,25 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
    `IVsProjectUpgradeViaFactory4` と `IVsProjectFlavorUpgradeViaFactory2` の新しい実装により、移行の種類をより正確に指定できます。  
   
 > [!NOTE]
->  `UpgradeProject_CheckOnly` メソッドで互換性チェックの結果をキャッシュして、後で `CreateProject`を呼び出すことでもその結果を使用できるようにすることができます。  
+> `UpgradeProject_CheckOnly` メソッドで互換性チェックの結果をキャッシュして、後で `CreateProject`を呼び出すことでもその結果を使用できるようにすることができます。  
   
  たとえば、SP1 プロジェクト システムの `UpgradeProject_CheckOnly` 用に記述した `CreateProject` メソッドと [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] メソッドがプロジェクト ファイルを調べて、 `<MinimumVisualStudioVersion>` ビルド プロパティが "11.0" であることを検出した場合、Visual Studio 2010 SP1 はプロジェクトを読み込みません。 さらに、 **ソリューション ナビゲーター** は、プロジェクトに "互換性がなく"、読み込まれないことを示します。  
   
-##  <a name="BKMK_UpgradeLogger"></a> アップグレード ロガー  
+## <a name="BKMK_UpgradeLogger"></a> アップグレード ロガー  
  `IVsProjectUpgradeViaFactory::UpgradeProject` の呼び出しには `IVsUpgradeLogger` ロガーが含まれており、プロジェクト システムとフレーバーはそのロガーを使用してトラブルシューティング用に詳細なアップグレード トレースを提供します。 警告またはエラーが記録された場合は、アップグレード レポートが表示されます。  
   
  アップグレード ロガーを記述するときは、次のガイドラインを考慮してください。  
   
--   すべてのプロジェクトのアップグレードが完了した後で、Visual Studio が Flush を呼び出します。 プロジェクト システムでは呼び出さないでください。  
+- すべてのプロジェクトのアップグレードが完了した後で、Visual Studio が Flush を呼び出します。 プロジェクト システムでは呼び出さないでください。  
   
--   LogMessage 関数には、次のエラー レベルがあります。  
+- LogMessage 関数には、次のエラー レベルがあります。  
   
-    -   0 は、トレースする情報用です。  
+    - 0 は、トレースする情報用です。  
   
-    -   1 は警告用です。  
+    - 1 は警告用です。  
   
-    -   2 はエラー用です。  
+    - 2 はエラー用です。  
   
-    -   3 はレポート フォーマッタ用です。 プロジェクトをアップグレードすると、"Converted" という単語が 1 回記録されます。この単語はローカライズしないでください。  
+    - 3 はレポート フォーマッタ用です。 プロジェクトをアップグレードすると、"Converted" という単語が 1 回記録されます。この単語はローカライズしないでください。  
   
--   プロジェクトの修復やアップグレードが必要ない場合は、UpgradeProject_CheckOnly メソッドまたは UpgradeProjectFlavor_CheckOnly メソッドの実行時にプロジェクト システムが警告またはエラーを記録したときにのみ、ログ ファイルが生成されます。
+- プロジェクトの修復やアップグレードが必要ない場合は、UpgradeProject_CheckOnly メソッドまたは UpgradeProjectFlavor_CheckOnly メソッドの実行時にプロジェクト システムが警告またはエラーを記録したときにのみ、ログ ファイルが生成されます。

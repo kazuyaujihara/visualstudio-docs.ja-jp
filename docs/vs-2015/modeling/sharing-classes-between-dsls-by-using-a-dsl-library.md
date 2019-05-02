@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c3a14a254eb3b07a95687faaf377664dd6f747a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1f5b12dce533aa03cf12efd8a6f9fc26ce990e5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975125"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073827"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>DSL ライブラリによる DSL 間でのクラスの共有
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "58975125"
   
 #### <a name="to-create-a-dsl-library"></a>DSL ライブラリを作成するには  
   
-1.  新しい DSL プロジェクトを作成し、DSL ライブラリのソリューション テンプレートを選択します。  
+1. 新しい DSL プロジェクトを作成し、DSL ライブラリのソリューション テンプレートを選択します。  
   
      1 つの DSL プロジェクトが空のモデルで作成されます。  
   
-2.  ドメイン クラス、リレーションシップ、図形は、これに追加できます。  
+2. ドメイン クラス、リレーションシップ、図形は、これに追加できます。  
   
      ライブラリ内の要素は、1 つの埋め込みツリーを形成する必要はありません。  
   
@@ -37,15 +37,15 @@ ms.locfileid: "58975125"
   
      設定を検討してください、**継承修飾子**ドメイン クラスの`Abstract`します。  
   
-3.  接続ビルダーなどの DSL のエクスプ ローラーで定義する要素を追加することができます。  
+3. 接続ビルダーなどの DSL のエクスプ ローラーで定義する要素を追加することができます。  
   
-4.  検証制約など、追加のコードが必要なカスタマイズを追加できます。  
+4. 検証制約など、追加のコードが必要なカスタマイズを追加できます。  
   
-5.  クリックして**すべてのテンプレートの変換**します。  
+5. クリックして**すべてのテンプレートの変換**します。  
   
-6.  プロジェクトをビルドします。  
+6. プロジェクトをビルドします。  
   
-7.  使用するには、他のユーザーの DSL を配布するときに、コンパイル済みアセンブリ (DLL) とファイルの両方を提供する必要があります`DslDefinition.dsl`します。 下のフォルダーにコンパイルされたアセンブリを見つけることができます。 `Dsl\bin\*`  
+7. 使用するには、他のユーザーの DSL を配布するときに、コンパイル済みアセンブリ (DLL) とファイルの両方を提供する必要があります`DslDefinition.dsl`します。 下のフォルダーにコンパイルされたアセンブリを見つけることができます。 `Dsl\bin\*`  
   
 #### <a name="to-import-a-dsl-library"></a>DSL ライブラリをインポートするには  
   

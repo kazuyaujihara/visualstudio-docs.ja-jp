@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49eed907e38c79a98e5604a96380efa5d7281c1d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: fe8a05e193ffe621d28147389752ab56031cf499
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993485"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>方法: ドラッグ アンド ドロップ ハンドラーを追加する
 
 ユーザーは、他の図から、または Visual Studio の他の部分を図の項目をドラッグできるように、DSL にドラッグ アンド ドロップのイベントのハンドラーを追加できます。 ダブルクリックなどのイベントのハンドラーを追加することもできます。 ドラッグ アンド ドロップやダブルクリック ハンドラーと呼ばれる、*ジェスチャ ハンドラー*します。
 
-このトピックでは他の図で発生するドラッグ アンド ドロップ ジェスチャを説明します。 単一の図内の移動イベントとコピー イベントについては、`ElementOperations` のサブクラスを定義するという代替策を検討してください。 詳細については、[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)を参照してください。 DSL 定義をカスタマイズすることもできます。
+このトピックでは他の図で発生するドラッグ アンド ドロップ ジェスチャを説明します。 単一の図内の移動イベントとコピー イベントについては、`ElementOperations` のサブクラスを定義するという代替策を検討してください。 詳細については、次を参照してください。[コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)します。 DSL 定義をカスタマイズすることもできます。
 
 ## <a name="defining-gesture-handlers-by-overriding-shapeelement-methods"></a>ShapeElement メソッドのオーバーライドによるジェスチャ ハンドラーの定義
 
@@ -34,7 +34,7 @@ using System.Linq;
 
 新しいファイル内で、ドラッグ操作に応答する必要がある図形または図クラスの部分クラスを定義します。 次のメソッドをオーバーライドします。
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>- このメソッドは、ドラッグ操作時にマウス ポインターが図形の中に入ると呼び出されます。 メソッドはユーザーがドラッグしている項目を検査し、Effect プロパティを設定して、ユーザーがこの図形の上に項目をドロップできるかどうかを示す必要があります。 Effect プロパティは、カーソルがこの図形の上にある間の外観を決定するほか、ユーザーがマウス ボタンを離したときに `OnDragDrop()` が呼び出されるかどうかを決定します。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>- このメソッドは、ドラッグ操作時にマウス ポインターが図形の中に入ると呼び出されます。 メソッドはユーザーがドラッグしている項目を検査し、Effect プロパティを設定して、ユーザーがこの図形の上に項目をドロップできるかどうかを示す必要があります。 Effect プロパティは、カーソルがこの図形の上にある間の外観を決定するほか、ユーザーがマウス ボタンを離したときに `OnDragDrop()` が呼び出されるかどうかを決定します。
 
     ```csharp
     partial class MyShape // MyShape generated from DSL Definition.
@@ -50,7 +50,7 @@ using System.Linq;
         }
     ```
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> 、場合は、ユーザー、マウス ボタンを離したときに、マウス ポインターがこの図形または図では、上場合にこのメソッドが呼び出されます`OnDragOver(DiagramDragEventArgs e)`以前に設定された`e.Effect`以外の値を`None`します。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> 、場合は、ユーザー、マウス ボタンを離したときに、マウス ポインターがこの図形または図では、上場合にこのメソッドが呼び出されます`OnDragOver(DiagramDragEventArgs e)`以前に設定された`e.Effect`以外の値を`None`します。
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -66,11 +66,11 @@ using System.Linq;
     }
     ```
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -このメソッドは、図形または図に、ユーザーがダブルクリックしたときに呼び出されます。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -このメソッドは、図形または図に、ユーザーがダブルクリックしたときに呼び出されます。
 
      詳細については、「[方法 :シェイプまたはデコレーターに対するクリック](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)します。
 
-`IsAcceptableDropItem(e)` を定義してドラッグした項目が受け入れられるかどうかを決定し、ProcessDragDropItem(e) を定義して項目がドロップされたときにモデルを更新します。 これらのメソッドは、最初にイベント引数から項目を抽出する必要があります。 その方法については、[ドラッグした項目への参照を取得する方法](#to-send-an-object-from-a-source-dsl)を参照してください。
+`IsAcceptableDropItem(e)` を定義してドラッグした項目が受け入れられるかどうかを決定し、ProcessDragDropItem(e) を定義して項目がドロップされたときにモデルを更新します。 これらのメソッドは、最初にイベント引数から項目を抽出する必要があります。 その方法については、次を参照してください。[ドラッグした項目への参照を取得する方法](#to-send-an-object-from-a-source-dsl)します。
 
 ## <a name="define-gesture-handlers-by-using-mef"></a>MEF の使用によるジェスチャ ハンドラーを定義します。
 
@@ -80,9 +80,9 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 ### <a name="to-define-a-mef-gesture-handler"></a>MEF ジェスチャ ハンドラーを定義するには
 
-1.  追加、 **Dsl**と**DslPackage**プロジェクト、 **MefExtension**ファイルに記載されている[MEF による DSL の拡張](../modeling/extend-your-dsl-by-using-mef.md)します。
+1. 追加、 **Dsl**と**DslPackage**プロジェクト、 **MefExtension**ファイルに記載されている[MEF による DSL の拡張](../modeling/extend-your-dsl-by-using-mef.md)します。
 
-2.  次のようにジェスチャ ハンドラーを MEF コンポーネントとして定義できるようになります。
+2. 次のようにジェスチャ ハンドラーを MEF コンポーネントとして定義できるようになります。
 
     ```csharp
     // This attribute is defined in the generated file
@@ -114,7 +114,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
      ドラッグしたオブジェクトの種類が複数ある場合などは、複数のジェスチャ ハンドラー コンポーネントを作成できます。
 
-3.  ターゲットの図形、コネクタ、または図クラスに対して部分クラス定義を追加し、`IsAcceptableDropItem()` メソッドおよび `ProcessDragDropItem()` メソッドを定義します。 これらのメソッドでは、最初にイベント引数からドラッグした項目を抽出する必要があります。 詳細については、[ドラッグした項目への参照を取得する方法](#to-send-an-object-from-a-source-dsl)を参照してください。
+3. ターゲットの図形、コネクタ、または図クラスに対して部分クラス定義を追加し、`IsAcceptableDropItem()` メソッドおよび `ProcessDragDropItem()` メソッドを定義します。 これらのメソッドでは、最初にイベント引数からドラッグした項目を抽出する必要があります。 詳細については、次を参照してください。[ドラッグした項目への参照を取得する方法](#to-send-an-object-from-a-source-dsl)します。
 
 ## <a name="how-to-decode-the-dragged-item"></a>ドラッグした項目をデコードする方法
 
@@ -124,17 +124,17 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 ドラッグ ソース情報が使用可能な形式を見つけるには、コードをデバッグ モードで実行し、ブレークポイントを `OnDragOver()` または `CanDragDrop()` のエントリに設定します。 `DiagramDragEventArgs` パラメーターの値を確認します。 情報は次の 2 つの形式で提供されます。
 
--   <xref:System.Windows.Forms.IDataObject>  `Data` -このプロパティは、1 つ以上の形式では、通常、ソース オブジェクトのシリアル化されたバージョンを実行します。 最も有用な関数は次のとおりです。
+- <xref:System.Windows.Forms.IDataObject>  `Data` -このプロパティは、1 つ以上の形式では、通常、ソース オブジェクトのシリアル化されたバージョンを実行します。 最も有用な関数は次のとおりです。
 
-    -   diagramEventArgs.Data.GetDataFormats() - は、ドラッグされたオブジェクトをデコードする形式を示します。 たとえば、ユーザーがデスクトップからファイルをドラッグした場合、使用可能な形式にはファイル名 ("`FileNameW`") が含まれます。
+    - diagramEventArgs.Data.GetDataFormats() - は、ドラッグされたオブジェクトをデコードする形式を示します。 たとえば、ユーザーがデスクトップからファイルをドラッグした場合、使用可能な形式にはファイル名 ("`FileNameW`") が含まれます。
 
-    -   `diagramEventArgs.Data.GetData(format)` -指定された形式でドラッグされたオブジェクトをデコードします。 オブジェクトを適切な型にキャストします。 例:
+    - `diagramEventArgs.Data.GetData(format)` -指定された形式でドラッグされたオブジェクトをデコードします。 オブジェクトを適切な型にキャストします。 次に例を示します。
 
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         ソースからモデル バス参照などのオブジェクトを独自のカスタム形式で転送することもできます。 詳細については、[ドラッグ アンド ドロップでモデル バス参照を送信する方法](#to-send-an-object-from-a-source-dsl)を参照してください。
+         ソースからモデル バス参照などのオブジェクトを独自のカスタム形式で転送することもできます。 詳細については、次を参照してください。[ドラッグ アンド ドロップでモデル バス参照を送信する方法](#to-send-an-object-from-a-source-dsl)します。
 
--   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -ユーザーが DSL または UML モデルから項目をドラッグする場合は、このプロパティを使用します。 1 つの要素グループ プロトタイプには 1 つ以上のオブジェクト、リンク、およびそれらのプロパティ値が含まれます。 これは貼り付け操作やツールボックスから要素を追加する際にも使用されます。 プロトタイプ内のオブジェクトとそれらの種類は GUID により識別されます。 たとえば、次のコードを使用して、ユーザーはクラス要素を UML 図または UML モデル エクスプローラーからドラッグできます。
+- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -ユーザーが DSL または UML モデルから項目をドラッグする場合は、このプロパティを使用します。 1 つの要素グループ プロトタイプには 1 つ以上のオブジェクト、リンク、およびそれらのプロパティ値が含まれます。 これは貼り付け操作やツールボックスから要素を追加する際にも使用されます。 プロトタイプ内のオブジェクトとそれらの種類は GUID により識別されます。 たとえば、次のコードを使用して、ユーザーはクラス要素を UML 図または UML モデル エクスプローラーからドラッグできます。
 
     ```csharp
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)
@@ -168,7 +168,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>ソース DSL からオブジェクトを送信するには
 
-1.  ElementOperations サブクラスで、`Copy()` をオーバーライドし、モデル バス参照 (MBR) を IDataObject にエンコードします。 このメソッドは、ユーザーがソース図からドラッグを開始するときに呼び出されます。 エンコードされた MBR は、ユーザーがターゲット図でドロップしたときに、IDataObject で使用可能になります。
+1. ElementOperations サブクラスで、`Copy()` をオーバーライドし、モデル バス参照 (MBR) を IDataObject にエンコードします。 このメソッドは、ユーザーがソース図からドラッグを開始するときに呼び出されます。 エンコードされた MBR は、ユーザーがターゲット図でドロップしたときに、IDataObject で使用可能になります。
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -208,13 +208,13 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 ### <a name="to-receive-a-model-bus-reference-from-a-dsl-in-a-target-dsl-or-uml-project"></a>ターゲット DSL または UML プロジェクトで DSL からモデル バス参照を受信するには
 
-1.  ターゲット DSL プロジェクトで、次の場所にプロジェクト参照を追加します。
+1. ターゲット DSL プロジェクトで、次の場所にプロジェクト参照を追加します。
 
-    -   ソース Dsl プロジェクト。
+    - ソース Dsl プロジェクト。
 
-    -   ソース ModelBus プロジェクト。
+    - ソース ModelBus プロジェクト。
 
-2.  ジェスチャ ハンドラー コード ファイル内で、次の名前空間参照を追加します。
+2. ジェスチャ ハンドラー コード ファイル内で、次の名前空間参照を追加します。
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -226,7 +226,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
     using SourceDslNamespace.ModelBusAdapters;
     ```
 
-3.  次のサンプルはソース モデル要素へのアクセスを取得する方法を示しています。
+3. 次のサンプルはソース モデル要素へのアクセスを取得する方法を示しています。
 
     ```csharp
     partial class MyTargetShape // or diagram or connector
@@ -273,7 +273,7 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 ### <a name="to-accept-an-element-sourced-from-a-uml-model"></a>ソースが UML モデルである要素を受け入れるには
 
--   次のコード サンプルは UML 図からドロップされたオブジェクトを受け入れます。
+- 次のコード サンプルは UML 図からドロップされたオブジェクトを受け入れます。
 
     ```csharp
     using Microsoft.VisualStudio.ArchitectureTools.Extensibility;

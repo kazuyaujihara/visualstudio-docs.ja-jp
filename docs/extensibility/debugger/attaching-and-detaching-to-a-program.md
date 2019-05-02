@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b81ea271e1ab5d44337ce111e89d5624efd452d0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fe89c6106ab1b411974e44bb05128b2bfc99fc6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890781"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>アタッチとデタッチをプログラムする
 デバッガーをアタッチするには、メソッドおよび適切な属性を持つイベントの適切なシーケンスを送信する必要があります。
@@ -31,11 +31,11 @@ ms.locfileid: "56706016"
 
     場合`S_OK`が返されます、DE、SDM と同じプロセスに読み込まれます。 SDM は、次のタスクを実行します。
 
-   1.  呼び出し[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) DE のエンジンの情報を取得します。
+   1. 呼び出し[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) DE のエンジンの情報を取得します。
 
-   2.  併置デを作成します。
+   2. 併置デを作成します。
 
-   3.  呼び出し[アタッチ](../../extensibility/debugger/reference/idebugengine2-attach.md)します。
+   3. 呼び出し[アタッチ](../../extensibility/debugger/reference/idebugengine2-attach.md)します。
 
 2. DE 送信、 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)に SDM を`EVENT_SYNC`属性。
 

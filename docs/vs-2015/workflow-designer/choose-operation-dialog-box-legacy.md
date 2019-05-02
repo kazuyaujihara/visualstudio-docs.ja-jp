@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b9d40f3627cd24aa7758a0d599eb6e5d770c9f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b42ecd7ad38144786ff12d5cad20c9e8a1437646
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417556"
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>[操作の選択] ダイアログ ボックス (レガシ)
 このトピックで説明する方法を使用して、**操作の選択**  ダイアログ ボックスで、従来の[!INCLUDE[wfd1](../includes/wfd1-md.md)]します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。  
@@ -36,7 +36,7 @@ ms.locfileid: "58963093"
 |**アクセス許可**|その操作の呼び出しを許可されているユーザーの <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName%2A> プロパティおよび <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole%2A> プロパティが表示されるタブ。 たとえば、Administrators グループからユーザーがその操作の呼び出しが許可された場合のみはで記述する"Administrators"、**ロール**テキスト ボックス。<br /><br /> このタブで作成した両方の操作が有効になって、 **ChooseOperation**  ダイアログ ボックスと使用してインポートした操作、**インポート**ボタンをクリックします。|  
   
 > [!NOTE]
->  **選択操作** ダイアログ ボックスには、コントラクトまたはその他によって使用されている操作のみが表示されます。<xref:System.Workflow.Activities.SendActivity>ワークフロー内のアクティビティ。 同様に、**選択操作** ダイアログ ボックスの<xref:System.Workflow.Activities.ReceiveActivity>アクティビティは、コントラクトまたはその他によって使用されている操作のみを示しています。 **ReceiveActivity**ワークフロー内のアクティビティ。  
+> **選択操作** ダイアログ ボックスには、コントラクトまたはその他によって使用されている操作のみが表示されます。<xref:System.Workflow.Activities.SendActivity>ワークフロー内のアクティビティ。 同様に、**選択操作** ダイアログ ボックスの<xref:System.Workflow.Activities.ReceiveActivity>アクティビティは、コントラクトまたはその他によって使用されている操作のみを示しています。 **ReceiveActivity**ワークフロー内のアクティビティ。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: WCF コントラクト操作 (レガシ) 実装します。](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   

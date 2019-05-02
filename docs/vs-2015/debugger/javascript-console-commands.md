@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e30cee45bcb716e70e8b2e585079628b55daa8ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431429"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  JavaScript コンソール ウィンドウが閉じられた場合開けることを選択して、Visual Studio でデバッグ中**デバッグ** > **Windows** > **JavaScriptコンソール**します。  
   
 > [!NOTE]
->  デバッグ セッション中にウィンドウが使用できない場合、プロジェクトのデバッグのプロパティで、デバッガーの種類が **Script** であることを確認してください。  
+> デバッグ セッション中にウィンドウが使用できない場合、プロジェクトのデバッグのプロパティで、デバッガーの種類が **Script** であることを確認してください。  
   
 ## <a name="console-object-commands"></a>コンソール オブジェクト コマンド  
  次の表に、JavaScript コンソール ウィンドウで使用する、またはコードからコンソールにメッセージを送信するために使用する、 `console` オブジェクトのコマンドの構文を示します。 このオブジェクトには多数の形式があるので、必要に応じて情報メッセージとエラー メッセージを区別できます。  
@@ -43,7 +43,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  console という名前のローカル オブジェクトとの混同を避ける必要がある場合は、長いコマンド形式である `window.console.[command]` を使用できます。  
   
 > [!TIP]
->  古いバージョンの Visual Studio は、コマンドの完全なセットをサポートしていません。 サポートされているコマンドを簡単に確認するには、コンソール オブジェクトで IntelliSense を使用してください。  
+> 古いバージョンの Visual Studio は、コマンドの完全なセットをサポートしていません。 サポートされているコマンドを簡単に確認するには、コンソール オブジェクトで IntelliSense を使用してください。  
   
 |コマンド|説明|例|  
 |-------------|-----------------|-------------|  
@@ -93,7 +93,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>JavaScript コンソール ウィンドウを使ったオブジェクトの検査  
  JavaScript コンソール ウィンドウを使用すると、スコープ内のオブジェクトと対話できます。 コンソール ウィンドウでスコープ外のオブジェクトを検査するには、コードから `console.log` 、 `console.dir`、または他のコマンドを使用します。 または、コードでブレークポイントを設定 (**[ブレークポイント]** > **Insert [ブレークポイント]** の順にクリック) すると、コンソール ウィンドウからスコープ内のオブジェクトと対話できます。  
   
-##  <a name="ConsoleLog"></a> console.log 出力のフォーマット  
+## <a name="ConsoleLog"></a> console.log 出力のフォーマット  
  複数の引数を `console.log`に渡すと、コンソールはその引数を配列として処理し、出力を連結します。  
   
 ```javascript  

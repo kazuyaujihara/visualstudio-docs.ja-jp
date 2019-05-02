@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb5fb56a011355abb991d6e8da122461045af2b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562853"
 ---
 # <a name="marks-view"></a>マーク ビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54764925"
   
  レポートにあらかじめ設定されている既定のマークは、プログラムの開始と終了を示します。  
   
- 自動的に生成されるマークの Windows カウンター データもこのビューに表示されます。 詳細については、「[方法: Windows カウンター データを収集する](../profiling/how-to-collect-windows-counter-data.md)」を参照してください。  
+ 自動的に生成されるマークの Windows カウンター データもこのビューに表示されます。 詳細については、「[方法 :Windows カウンター データを収集](../profiling/how-to-collect-windows-counter-data.md)します。  
   
  2 つのマークに対してフィルターを作成するには、マークを選択し、右クリックして、**[マークにフィルターを追加]** または **[タイムスタンプにフィルターを追加]** をクリックします。  
   
@@ -50,5 +50,5 @@ ms.locfileid: "54764925"
  [パフォーマンス レポートの概要](../profiling/performance-report-overview.md)   
  [< PAVE_OVER > 方法。プロファイル マークを構成します。](http://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
  [< PAVE_OVER > 方法。Profiler のデータ ファイルにマークを挿入します。](http://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
- [方法: Windows カウンター データを収集する](../profiling/how-to-collect-windows-counter-data.md)   
+ [方法: Windows カウンター データの収集](../profiling/how-to-collect-windows-counter-data.md)   
  [&#91;NIB&#93; [データ収集コントロール] ウィンドウ](http://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

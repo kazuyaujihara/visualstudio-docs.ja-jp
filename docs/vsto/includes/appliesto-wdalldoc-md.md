@@ -1,11 +1,9 @@
 ---
-ms.openlocfilehash: 51c38a31b9d9e89cc32b0d252cdf5a725b451e37
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: HT
+ms.openlocfilehash: 9b659d0265c1f76df445a65c602d8a69c4f29aed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "38809302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810729"
 ---
-  **対象:** このトピックの情報は、Word のドキュメント レベルのプロジェクトに適用されます。 詳細については、[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../../vsto/features-available-by-office-application-and-project-type.md)を参照してください。
-
-  
+  **適用対象:** このトピックの情報は、ドキュメントに適用されます\-Word のレベルのプロジェクト。 詳細については、「[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。

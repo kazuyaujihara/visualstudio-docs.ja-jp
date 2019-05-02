@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4021d6413acbe895995ee25809deb250daf6872c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d8b4f47894f4aaf12c724153d45378dcb9e8510b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433429"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>サポートされていないデータベース プロバイダーのデータベース オブジェクトが選択されています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,15 +22,15 @@ ms.locfileid: "58972270"
 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) For SQL Server、.NET Framework Data Provider のみをサポートしています (<xref:System.Data.SqlClient>)。 **[OK]** をクリックし、サポートされないデータベース プロバイダーからオブジェクトの処理を続けることもできますが、実行時に予期しない動作が発生することがあります。  
   
 > [!NOTE]
->  .NET Framework Data Provider for SQL Server を使用するデータ接続のみがサポートされます。  
+> .NET Framework Data Provider for SQL Server を使用するデータ接続のみがサポートされます。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
--   **[OK]** をクリックして、サポートされないデータベース プロバイダーを使用する接続にマップされるエンティティ クラスのデザインを続行します。 サポートされないデータベース プロバイダーを使用すると、予期しない動作が発生することがあります。  
+- **[OK]** をクリックして、サポートされないデータベース プロバイダーを使用する接続にマップされるエンティティ クラスのデザインを続行します。 サポートされないデータベース プロバイダーを使用すると、予期しない動作が発生することがあります。  
   
      - または -  
   
--   **[キャンセル]** をクリックします。  
+- **[キャンセル]** をクリックします。  
   
      操作が停止されます。 .NET Framework Provider for SQL Server を使用するデータ接続を作成または使用してください。  
   

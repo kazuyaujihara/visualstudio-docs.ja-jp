@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f27e388c0b7670e8af7d6a97954485ef90d01f9e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 84a62fc796243172c9130c8113c4e6d289ed3092
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447016"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>[発行] ページ、プロジェクト デザイナー (Visual Studio での Office 開発)
   **プロジェクト デザイナー** の **[発行]** ページは、配置用のプロパティを構成する場合に使用します。
@@ -29,7 +29,7 @@ ms.locfileid: "54869672"
  このページにアクセスするでプロジェクトを選択します**ソリューション エクスプ ローラー**、し、**プロジェクト**] メニューの [選択*Projectname* **プロパティ**. **[発行]** ページが表示されない場合は、 **[発行]** タブをクリックします。
 
 > [!NOTE]
->  **[発行ウィザード]** で発行場所を設定することもできます。 詳細については、「[方法 :ClickOnce を使用して、Office ソリューションを発行する](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)します。
+> **[発行ウィザード]** で発行場所を設定することもできます。 詳細については、「[方法 :ClickOnce を使用して、Office ソリューションを発行する](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)します。
 
 ## <a name="uielement-list"></a>UIElement の一覧
  **発行フォルダーの場所 (web サイト、ftp サーバー、またはファイル パス)** 必要です。
@@ -84,9 +84,9 @@ ms.locfileid: "54869672"
 
 - [VSTO アドインの読み込み動作]
 
-  -   起動時に読み込む: Office アプリケーションの起動時に VSTO アドインを読み込むことを指定します。
+  - 起動時に読み込む: Office アプリケーションの起動時に VSTO アドインを読み込むことを指定します。
 
-  -   要求に応じて読み込む: VSTO アドインの機能を使用する UI 要素をユーザーがクリックしたときなど、アプリケーションで VSTO アドインが必要になったときにアドインを読み込むことを指定します。
+  - 要求に応じて読み込む: VSTO アドインの機能を使用する UI 要素をユーザーがクリックしたときなど、アプリケーションで VSTO アドインが必要になったときにアドインを読み込むことを指定します。
 
   **発行の言語**このオプションは、Microsoft ソフトウェア ライセンス条項の言語を設定し、前提条件の一覧で、言語パックが含まれています。 カスタマイズの言語には影響しません。 セットアップ プログラムの言語は、インストールされている Visual Studio の言語によって決まります。
 
@@ -100,6 +100,6 @@ ms.locfileid: "54869672"
 
 ## <a name="see-also"></a>関連項目
 
-- [Office ソリューションをデプロイします。](../vsto/deploying-an-office-solution.md)
+- [Office ソリューションのデプロイ](../vsto/deploying-an-office-solution.md)
 - [ClickOnce を使用して Office ソリューションを配置します。](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [展開の office ソリューションの前提条件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)

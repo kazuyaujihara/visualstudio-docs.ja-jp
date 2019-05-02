@@ -8,11 +8,11 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 82660ee772280563b91830aaf1a18da0bc742b28
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553329"
 ---
 # <a name="workspace-build"></a>ワークスペースのビルド
 
@@ -102,7 +102,7 @@ private static void OutputBuildMessage(IWorkspace workspace)
 
 ## <a name="tasksvsjson-and-launchvsjson"></a>tasks.vs.json と launch.vs.json
 
-Tasks.vs.json または launch.vs.json ファイルを作成する方法の詳細については、[ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)を参照してください。
+Tasks.vs.json または launch.vs.json ファイルを作成する方法の詳細については、次を参照してください。[ビルドのカスタマイズとタスクのデバッグ](../ide/customize-build-and-debug-tasks-in-visual-studio.md)します。
 
 ## <a name="next-steps"></a>次の手順
 

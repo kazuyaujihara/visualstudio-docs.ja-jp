@@ -22,17 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 136bc554abe6c231dfa80753b19dba89946830c3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e8666f990265a1fcf9947ac5c7c18c7489a6bdb8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756664"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653594"
 ---
 # <a name="cl-task"></a>CL タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパイラは、実行可能ファイル (.exe)、ダイナミック リンク ライブラリ (.dll) ファイル、またはコード モジュール (.netmodule) ファイルを生成します。 詳細については、「[コンパイラ オプション](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c)」を参照してください。  
   
 ## <a name="parameters"></a>パラメーター  
@@ -54,7 +53,7 @@ Visual C++ コンパイラ ツール (cl.exe) をラップします。 コンパ
   
    詳細については、「[コンパイラ オプション](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c)」を参照してください。  
   
-- **AdditionalUsingDirectories**省略可能な string[] 型のパラメーター。  
+- **AdditionalUsingDirectories** 省略可能な String[] 型のパラメーター。  
   
    **#using** ディレクティブに渡されたファイル参照を解決するために、コンパイラによって検索されるディレクトリを指定します。  
   

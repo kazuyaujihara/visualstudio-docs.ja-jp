@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4087e77fdd87aaa012e4d09013bb92ae5835bb0d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: fa831ff511ea507e03ca858b93383ff38ead9039
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446917"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
 ヘルプ ファイルのパスと可能な場合、エラーを説明するトピックのコンテキスト ID を返します。  
@@ -57,7 +57,7 @@ HRESULT GetHelpInfo(
  このメソッドは、ヘルプ ファイルのパスと可能な場合、エラーを説明するトピックのコンテキスト ID を返します。  
   
 > [!NOTE]
->  このメソッドは実装されていません。  
+> このメソッドは実装されていません。  
   
 ## <a name="see-also"></a>関連項目  
  [IDispError インターフェイス](../../winscript/reference/idisperror-interface.md)

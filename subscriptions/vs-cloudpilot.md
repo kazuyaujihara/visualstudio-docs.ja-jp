@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションで使用可能な CloudPilot 特典について説明します
 searchscope: VS Subscription
-ms.openlocfilehash: 5368bc386b7ee4ff1fa709fcc038ddb7a7a0c13d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948425"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CloudPilot 特典
 
@@ -44,18 +44,17 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
    > [!NOTE]
    > CloudPilot 特典のアクティブ化は、組織あたり 10 個に制限されており、Visual Studio Enterprise または Visual Studio Professional サブスクリプションの任意の組み合わせから使用されます。  組織で 10 個のアクティブ化を既に使用している場合は、CloudPilot 特典をアクティブ化することはできず、UnifyCloud から詳細情報を含む電子メールが届きます。
 
- 0. 次に、CloudPilot を習得するために設計された製品ページが表示されます。  右上隅の **[Navigate to CloudPilot]\(CloudPilot に移動\)** をクリックして、CloudPilot ポータルに移動します。
+0. 次に、CloudPilot を習得するために設計された製品ページが表示されます。  右上隅の **[Navigate to CloudPilot]\(CloudPilot に移動\)** をクリックして、CloudPilot ポータルに移動します。
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot の製品ページ](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0.  これで完了です。  CloudPilot ポータルが表示され、CloudPilot サブスクリプションを使用してアプリケーションを Microsoft Azure に移行を開始する準備ができます。
+0. これで完了です。  CloudPilot ポータルが表示され、CloudPilot サブスクリプションを使用してアプリケーションを Microsoft Azure に移行を開始する準備ができます。
 
-0.  アカウントが正常に作成されるとすぐに、アカウントが正常に作成されたことを確認する電子メールが UnifyCloud VSS Support から届きます。
+0. アカウントが正常に作成されるとすぐに、アカウントが正常に作成されたことを確認する電子メールが UnifyCloud VSS Support から届きます。
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot 確認メール](_img/vs-cloudpilot/vs-cloudpilot-email.png)
-
 
 ## <a name="eligibility"></a>特典を受ける条件
 
@@ -69,25 +68,21 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 
-
-
 <sup>1</sup>  *内容:Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine が含まれます。*
-
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
 
-
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
 ## <a name="support-resources"></a>サポート リソース
--  CloudPilot の使用に関するヘルプが必要ですか。  以下のリソースを確認してください。
+- CloudPilot の使用に関するヘルプが必要ですか。  以下のリソースを確認してください。
     - UnifyCloud 製品に関するご質問は、[UnifyCloud にお問い合わせください](https://www.unifycloud.com/contacts/)。
     - [CloudPilot ユーザー マニュアル](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
     - [サポート要求を送信する](https://support.datacamp.com/hc/requests/new)
 
--  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
--  Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="next-steps"></a>次の手順
 

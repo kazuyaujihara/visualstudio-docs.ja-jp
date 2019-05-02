@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c22583890d476f6ada0838877360c1405e911db
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d84de96181018858515bd74156f844ed6022f0a9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434613"
 ---
 # <a name="scchistory-function"></a>SccHistory 関数
 この関数は、指定されたファイルの履歴を表示します。
@@ -80,7 +80,7 @@ SCCRTN SccHistory(
  特定の状況ではこの呼び出しの実行中に検査するファイルが変更可能性がありますに注意してください。 たとえば、[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]履歴コマンドは、ファイルの古いバージョンを取得する機会をユーザーに提供します。 このような場合は、ソース管理プラグインを返します。`SCC_I_RELOAD`にファイルを再読み込みする必要があることを IDE に警告します。
 
 > [!NOTE]
->  ソース管理プラグインがファイルの配列をこの関数をサポートしない場合は、最初のファイルのファイル履歴のみを表示できます。
+> ソース管理プラグインがファイルの配列をこの関数をサポートしない場合は、最初のファイルのファイル履歴のみを表示できます。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

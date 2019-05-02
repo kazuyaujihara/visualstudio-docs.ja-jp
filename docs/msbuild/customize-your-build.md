@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc4515ad8f61d749c9fb7552911bfb15dcc3471a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778102"
 ---
-# <a name="customize-your-build-c-visual-basic"></a>ビルドのカスタマイズ (C#、Visual Basic)
+# <a name="customize-your-build"></a>ビルドのカスタマイズ
 
 標準のビルド プロセス (*Microsoft.Common.props* と *Microsoft.Common.targets* のインポート) を使用する MSBuild プロジェクトには、ビルド プロセスのカスタマイズに使用できる拡張フックがいくつかあります。
 
@@ -51,6 +51,7 @@ MSBuild バージョン 15 より前では、ソリューション内のプロ�
     </PropertyGroup>
    </Project>
    ```
+
 3. MSBuild を実行します。 プロジェクトの既存の *Microsoft.Common.props* と *Microsoft.Common.targets* のインポートで、ファイルが検索され、インポートされます。
 
 ### <a name="search-scope"></a>検索範囲

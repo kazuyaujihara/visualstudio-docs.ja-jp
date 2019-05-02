@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 174506e9ee88de385f5bbba6fe09276d9297f298
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: cce9dfe48e34d642b115c8391de73c0350ce515b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928499"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>方法: ClickOnce の発行バージョンを自動的にインクリメントする
 
@@ -35,11 +35,11 @@ ms.locfileid: "54937705"
 
 ## <a name="to-disable-automatically-incrementing-the-publish-version"></a>発行バージョンを自動的にインクリメントを無効にするには
 
-1.  **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプ ローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
-2.  **[発行]** タブをクリックします。
+2. **発行**タブをクリックします。
 
-3.  **発行バージョン** セクションで、クリア、**リリースごとにリビジョンを自動的に**チェック ボックスをオンします。
+3. **発行バージョン** セクションで、クリア、**リリースごとにリビジョンを自動的に**チェック ボックスをオンします。
 
 ## <a name="see-also"></a>関連項目
 

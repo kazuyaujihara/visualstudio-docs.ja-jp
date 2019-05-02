@@ -1,14 +1,9 @@
 ---
 title: ソースとしてのメタデータ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 4945a07f-b3be-4f05-a587-fc29058aa8fa
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8bcac8071d0cc76c29a5b9d0478727fea0b59901
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5883708d0ed32f636c5e229147676cf1545f8a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444597"
 ---
 # <a name="metadata-as-source"></a>ソースとしてのメタデータ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "49232948"
 ソースとしてのメタデータにより、読み取り専用のバッファーで C# ソース コードとして表示されるメタデータを見ることができます。 これにより、型とメンバー (実装を含まない) の宣言のビューが使用できるようになります。 プロジェクトまたはソリューションから利用できないソースコードを持つ型またはメンバーに対して **[定義へ移動]** コマンドを実行すると、ソースとしてのメタデータを表示することができます。  
   
 > [!NOTE]
->  内部としてマークされている型またはメンバーに対して **[定義へ移動]** コマンドを実行しようとすると、統合開発環境 (IDE) には、参照元のアセンブリがフレンドかどうかに関係なく、ソースとしてのメタデータは表示されません。  
+> 内部としてマークされている型またはメンバーに対して **[定義へ移動]** コマンドを実行しようとすると、統合開発環境 (IDE) には、参照元のアセンブリがフレンドかどうかに関係なく、ソースとしてのメタデータは表示されません。  
   
  コード エディターまたは **[コード定義]** ウィンドウで、メタデータをソースとして表示できます。  
   

@@ -6,11 +6,11 @@ ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
 ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945083"
 ---
 # <a name="team-explorer-reference"></a>チーム エクスプローラーのリファレンス
 
@@ -102,7 +102,7 @@ ms.locfileid: "57222975"
 
 **[設定]** ページでは、プロジェクトまたはプロジェクト コレクションの管理機能を構成できます。 次の記事をご覧ください。
 
-| プロジェクト | プロジェクト コレクション | その他 |
+| Project | プロジェクト コレクション | その他 |
 | - | - | - |
 | [セキュリティ、グループ メンバーシップ](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[セキュリティ、ソース管理 (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[作業項目の区分](/azure/devops/organizations/settings/set-area-paths)<br/>[作業項目のイテレーション](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[ポータルの設定](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[プロジェクト警告](/azure/devops/notifications/howto-manage-team-notifications) | [セキュリティ、グループ メンバーシップ](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[ソース管理 (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[プロセス テンプレート マネージャー](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Git グローバル設定](/azure/devops/repos/git/git-config)<br/>[Git リポジトリ設定](/azure/devops/repos/git/git-config) |
 

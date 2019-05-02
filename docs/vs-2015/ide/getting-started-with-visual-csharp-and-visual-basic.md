@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584697"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Visual C# と Visual Basic の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual C# または Microsoft Visual Basic を初めて使用する方は、こ�
  Visual C# について詳しくは、「[Visual C++ リソース](http://msdn.microsoft.com/vstudio/hh386302.aspx)」をご覧ください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [チュートリアル : 簡単なアプリケーションの作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+ [チュートリアル: シンプルなアプリケーションの作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
  Visual Studio IDE の基本的な画面を確認し、設定の構成により開発エクスペリエンスを最適化した後、簡単なプログラムを作成します。  
   
  [チュートリアル 1: ピクチャ ビューアーの作成](../ide/tutorial-1-create-a-picture-viewer.md)  

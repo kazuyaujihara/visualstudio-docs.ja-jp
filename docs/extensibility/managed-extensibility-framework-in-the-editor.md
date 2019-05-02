@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5a272c01f76787e60e7796173b52b563f8e8718
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 708d9c7e41a3be24f9eaf28d86da94d47b187a93
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907241"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>エディターでの managed Extensibility Framework
 エディターは、Managed Extensibility Framework (MEF) コンポーネントを使用して構築されます。 エディターを拡張する、独自の MEF コンポーネントをビルドして、コード エディターのコンポーネントもを使用できます。
@@ -25,7 +25,7 @@ ms.locfileid: "56702045"
 
  MEF が .NET Framework version 4 に含まれている*System.ComponentModel.Composition.dll*アセンブリ。
 
- MEF の詳細については、[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)を参照してください。
+ MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)します。
 
 ### <a name="component-parts-and-composition-containers"></a>コンポーネントの部分と合成コンテナー
  コンポーネントの一部は、クラス、または、次のいずれか (または両方) を実行できるクラスのメンバーには。
@@ -82,25 +82,25 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>MEF コンポーネント パーツからエディター機能を使用するには
 
-1.  参照を追加*System.Composition.ComponentModel.dll*は、エディターのアセンブリをグローバル アセンブリ キャッシュ (GAC) にします。
+1. 参照を追加*System.Composition.ComponentModel.dll*は、エディターのアセンブリをグローバル アセンブリ キャッシュ (GAC) にします。
 
-2.  関連する追加ステートメントを使用します。
+2. 関連する追加ステートメントを使用します。
 
     ```
     using System.ComponentModel.Composition;
     using Microsoft.VisualStudio.Text;
     ```
 
-3.  追加、`[Import]`属性、サービス インターフェイスを次のようにします。
+3. 追加、`[Import]`属性、サービス インターフェイスを次のようにします。
 
     ```
     [Import]
     ITextBufferFactoryService textBufferService;
     ```
 
-4.  サービスを入手した場合は、ときに、そのコンポーネントのいずれかを使用できます。
+4. サービスを入手した場合は、ときに、そのコンポーネントのいずれかを使用できます。
 
-5.  独自のアセンブリをコンパイルしたときに、*.\Common7\IDE\Components\* Visual Studio のインストールのフォルダー。
+5. 独自のアセンブリをコンパイルしたときに、*.\Common7\IDE\Components\* Visual Studio のインストールのフォルダー。
 
 ## <a name="see-also"></a>関連項目
 - [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)

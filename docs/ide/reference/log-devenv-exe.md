@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b2e11cb36176aec94528019cdd19bb5fa86c92b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946805"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 
@@ -39,7 +39,7 @@ devenv /Log NameOfLogFile
 
   必須です。 保存先のログ ファイルの完全なパスと名前。
 
-## <a name="remarks"></a>コメント
+## <a name="remarks"></a>解説
 
 このスイッチは、その他すべてのスイッチの後、コマンド ラインの末尾に指定する必要があります。
 

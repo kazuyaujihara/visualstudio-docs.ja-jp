@@ -1,12 +1,9 @@
 ---
 title: サービス参照のトラブルシューティング |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -19,13 +16,13 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cff1677ab9209ce2a51b7587c410731a71e27eb0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223965"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056720"
 ---
 # <a name="troubleshooting-service-references"></a>サービス参照のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,25 +33,25 @@ ms.locfileid: "49223965"
 
  このエラーを修復するには:
 
-1.  **ソリューション エクスプ ローラー**、app.config ファイルを開く をダブルクリックします。
+1. **ソリューション エクスプ ローラー**、app.config ファイルを開く をダブルクリックします。
 
-2.  検索、`MaxReceivedMessageSize`プロパティより大きい値に変更します。
+2. 検索、`MaxReceivedMessageSize`プロパティより大きい値に変更します。
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>ソリューションでサービスを検索することはできません。
  クリックすると、 **Discover**ボタン、**サービス参照の追加**ダイアログ ボックスで、サービスの一覧で、ソリューション内の 1 つまたは複数の WCF サービス ライブラリ プロジェクトは表示されません。 これは、サービス ライブラリは、ソリューションに追加されましたが、まだコンパイルされていない場合に発生することができます。
 
  このエラーを修復するには:
 
--   **ソリューション エクスプ ローラー**WCF サービス ライブラリ プロジェクトを右クリックし、クリックして、**ビルド**します。
+- **ソリューション エクスプ ローラー**WCF サービス ライブラリ プロジェクトを右クリックし、クリックして、**ビルド**します。
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>リモート デスクトップ経由でサービスへのアクセス エラー
- ユーザーがアクセスするときに、リモート デスクトップ接続と、ユーザーを Web でホストされる WCF サービスには、管理者のアクセス許可がありません、NTLM 認証が使用されます。 ユーザーが次のエラー メッセージを受け取ることがあります、ユーザーは、管理者のアクセス許可を持っていない場合:"HTTP 要求はクライアントの認証方式 'Anonymous' で承認されていません。 サーバーから受信した認証ヘッダーが 'NTLM'。"
+ ユーザーがアクセスするときに、リモート デスクトップ接続と、ユーザーを Web でホストされる WCF サービスには、管理者のアクセス許可がありません、NTLM 認証が使用されます。 ユーザーが管理者のアクセス許可を持たない場合、ユーザーは、次のエラー メッセージを受信可能性があります。"HTTP 要求はクライアントの認証方式 'Anonymous' で承認されていません。 サーバーから受信した認証ヘッダーが 'NTLM'。"
 
  このエラーを修復するには:
 
-1.  Web サイト プロジェクトで開き、**プロパティ**ページ。
+1. Web サイト プロジェクトで開き、**プロパティ**ページ。
 
-2.  **開始オプション**タブで、、 **NTLM 認証**チェック ボックスをオンします。
+2. **開始オプション**タブで、、 **NTLM 認証**チェック ボックスをオンします。
 
     > [!NOTE]
     > Web サイト専用の WCF サービスが含まれている場合、NTLM 認証をオフにする必要があります。 WCF サービスのセキュリティは、web.config ファイルの構成によって管理されます。 これにより、NTLM 認証が不要にします。
@@ -73,32 +70,32 @@ ms.locfileid: "49223965"
 
  このエラーを解決するには、手動でサービス プロジェクトを再構築が必要。
 
-1.  **[ツール]** メニューの **[オプション]** をクリックします。
+1. **[ツール]** メニューの **[オプション]** をクリックします。
 
-2.  **オプション**] ダイアログ ボックスで、展開**プロジェクトおよびソリューション**、し、[**全般**します。
+2. **オプション**] ダイアログ ボックスで、展開**プロジェクトおよびソリューション**、し、[**全般**します。
 
-3.  確認します、**ビルド構成の詳細を表示** チェック ボックスが選択されているし、クリックして**OK**。
+3. 確認します、**ビルド構成の詳細を表示** チェック ボックスが選択されているし、クリックして**OK**。
 
-4.  WCF サービス プロジェクトを読み込みます。 詳細については、[NIB How to: マルチ プロジェクト ソリューションの作成](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)を参照してください。
+4. WCF サービス プロジェクトを読み込みます。 詳細については、次を参照してください。[に NIB 方法。マルチ プロジェクト ソリューションを作成する](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)します。
 
-5.  **Configuration Manager**ダイアログ ボックスで、セット、**アクティブ ソリューション構成**に**デバッグ**します。 詳細については、「[How to: Create and Edit Configurations](../ide/how-to-create-and-edit-configurations.md)」(方法 : 構成を作成および編集する) を参照してください。
+5. **Configuration Manager**ダイアログ ボックスで、セット、**アクティブ ソリューション構成**に**デバッグ**します。 詳細については、「[方法 :構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)」を参照してください。
 
-6.  **ソリューション エクスプ ローラー**、WCF サービス プロジェクトを選択します。
+6. **ソリューション エクスプ ローラー**、WCF サービス プロジェクトを選択します。
 
-7.  **ビルド** メニューのをクリックして**リビルド**WCF サービス プロジェクトをリビルドします。
+7. **ビルド** メニューのをクリックして**リビルド**WCF サービス プロジェクトをリビルドします。
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services は、ブラウザーには表示しません。
  内のデータの XML 表現を表示しようとするときに、 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]、Internet Explorer に RSS フィードとしてデータが誤って解釈可能性があります。 RSS フィードを表示するオプションが無効になっていることを確認してください。
 
  このエラーを修正するのには、RSS フィードを無効にします。
 
-1.  Internet Explorer で、上、**ツール** メニューのをクリックして**インターネット オプション**します。
+1. Internet Explorer で、**[ツール]** メニューの **[インターネット オプション]** をクリックします。
 
-2.  **コンテンツ**] タブで、**フィード**セクションで、[**設定**します。
+2. **コンテンツ**] タブで、**フィード**セクションで、[**設定**します。
 
-3.  **フィードの設定**、ダイアログ ボックスをオフ、**フィードの読み取りビューで有効にする**チェック ボックスをオンにして**OK**。
+3. **フィードの設定**、ダイアログ ボックスをオフ、**フィードの読み取りビューで有効にする**チェック ボックスをオンにして**OK**。
 
-4.  をクリックして**OK**を閉じる、**インターネット オプション** ダイアログ ボックス。
+4. をクリックして**OK**を閉じる、**インターネット オプション** ダイアログ ボックス。
 
 ## <a name="see-also"></a>関連項目
 

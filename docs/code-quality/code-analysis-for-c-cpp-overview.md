@@ -22,13 +22,13 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540828"
 ---
-# <a name="code-analysis-for-cc-overview"></a>C と C++ の概要のコード分析
+# <a name="code-analysis-for-cc-overview"></a>C/C++ のコード分析の概要
 
 C/C++ コード分析ツールは、C/C++ ソース コードの障害に関する情報を提供します。 このツールで報告される一般的なコーディング エラーとして、バッファー オーバーラン、初期化されていないメモリ、Null ポインターの逆参照、メモリ リーク、リソース リークなどがあります。 ツールは、に対してチェックを実行できることも、 [C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)します。
 

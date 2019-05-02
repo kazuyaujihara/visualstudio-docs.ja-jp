@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 013571a948c6c3fdca5da3c5c9278ca21e1f3698
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806603"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233:操作はオーバーフローできません
 
@@ -102,11 +102,11 @@ Checked ブロックでサポートされていない[!INCLUDE[vbprvb](../code-q
 
 有効にするには、c# で算術演算のオーバーフローおよびアンダー フローをチェックしました。
 
-1.  **ソリューション エクスプ ローラー**プロジェクトを右クリックし、選択、**プロパティ**します。
+1. **ソリューション エクスプ ローラー**プロジェクトを右クリックし、選択、**プロパティ**します。
 
-2.  **[ビルド]** タブを選択してから **[詳細設定]** をクリックします。
+2. **[ビルド]** タブを選択してから **[詳細設定]** をクリックします。
 
-3.  選択**算術オーバーフローおよびアンダー フローの確認** をクリック**OK**。
+3. 選択**算術オーバーフローおよびアンダー フローの確認** をクリック**OK**。
 
 ## <a name="see-also"></a>関連項目
 

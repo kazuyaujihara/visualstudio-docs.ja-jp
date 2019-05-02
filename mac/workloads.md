@@ -3,14 +3,14 @@ title: Visual Studio for Mac ワークロード
 description: この記事では、Xamarin モバイル アプリ、ASP.NET Core、ゲーム用 Unity など、Visual Studio for Mac で使用できるさまざまなワークロードについて説明します。
 author: conceptdev
 ms.author: crdun
-ms.date: 12/05/2018
+ms.date: 04/02/2019
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 959af3acf8c6da1437ffc6efd66e984902e9e94a
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 609f96f959b59184016093cdf2ba7a69bc6c0292
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809371"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio for Mac ワークロード
 
@@ -24,9 +24,13 @@ Visual Studio for Mac には、次の種類のアプリを開発するために�
 
 ## <a name="mobile-applications-with-xamarin"></a>Xamarin を使用したモバイル アプリケーション
 
-Xamarin では、.NET を使用して、Android、iOS、tvOS、watchOS、および Mac のデスクトップ アプリ用のクロスプラット フォーム モバイル アプリを作成することができます。
+[Xamarin](xamarin.md) では、.NET を使用して、Android、iOS、tvOS、watchOS、および Mac のデスクトップ アプリ用のクロスプラット フォーム モバイル アプリを作成することができます。
 
 Visual Studio for Mac で Xamarin を使用する方法の詳細については、[Xamarin Developer Center](https://developer.xamarin.com/) を参照し、[ハンズオン ラボ](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started)をチェックアウトしてください。
+
+## <a name="mac-desktop-applications"></a>Mac デスクトップ アプリケーション
+
+[Xamarin.Mac](https://docs.microsoft.com/xamarin/mac/) により、Cocoa ユーザー インターフェイス フレームワークを使用して Mac アプリをビルドできます。[Mac 版の Xamarin.Forms](https://docs.microsoft.com/xamarin/xamarin-forms/platform/other/mac) により、コードや UI を他のプラットフォームと共有するアプリをビルドできます。
 
 ## <a name="net-core-applications"></a>.NET Core アプリケーション
 

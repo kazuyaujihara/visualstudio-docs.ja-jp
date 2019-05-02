@@ -1,14 +1,9 @@
 ---
 title: ソース内抑制の概要 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
@@ -17,24 +12,24 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426602"
 ---
 # <a name="in-source-suppression-overview"></a>ソース内抑制の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ソース内抑制は非表示または追加することでマネージ コードでコード分析の違反を無視する機能、 **SuppressMessage**属性を違反が発生するコードのセグメント。 **SuppressMessage** CODE_ANALYSIS コンパイルのシンボルがコンパイル時に定義されている場合にのみ、マネージ コード アセンブリの IL メタデータに含まれている条件付き属性です。  
   
- C++/cli、CLI、ヘッダー ファイルの属性を追加する CA_SUPPRESS_MESSAGE または CA_GLOBAL_SUPPRESS_MESSAGE マクロを使用します。  
+ C++/CLI、ヘッダー ファイルの属性を追加する CA_SUPPRESS_MESSAGE または CA_GLOBAL_SUPPRESS_MESSAGE マクロを使用します。  
   
  ソース内抑制のメタデータを誤って発送を防ぐために、リリース ビルドのソース内抑制を使用する必要がありますできません。 ソース内抑制の処理コスト、ために、ソース内抑制のメタデータを含めることによって、アプリケーションのパフォーマンスを低下する可能性もします。  
   
 > [!NOTE]
->  コードがない渡すためにこれらの属性自分でします。 詳細については、[方法: メニュー項目を使用して警告を抑制する](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)を参照してください。 メニュー項目は、C++ コードのご利用いただけません。  
+> コードがない渡すためにこれらの属性自分でします。 詳細については、「[方法 :メニュー項目を使用して警告を抑制する](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)します。 メニュー項目は、C++ コードのご利用いただけません。  
   
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 属性  
  コード分析警告を右クリックすると、**エラー一覧**順にクリックします**メッセージの抑制**、 **SuppressMessage**属性が、コード内、またはに追加しますプロジェクトのグローバル抑制ファイルです。  
@@ -59,27 +54,27 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  この場合、  
   
--   **ルール カテゴリ**-ルールが定義されているカテゴリ。 コード分析ルールのカテゴリの詳細については、[マネージ コードの警告のコード分析](../code-quality/code-analysis-for-managed-code-warnings.md)を参照してください。  
+- **ルール カテゴリ**-ルールが定義されているカテゴリ。 コード分析ルールのカテゴリの詳細については、次を参照してください。[マネージ コードの警告のコード分析](../code-quality/code-analysis-for-managed-code-warnings.md)します。  
   
--   **規則 Id** -ルールの識別子。 サポートには、短期および長期のルールの識別子名の両方が含まれます。 短い名前が CAXXXX;長い名前は、CAXXXX:FriendlyTypeName です。  
+- **規則 Id** -ルールの識別子。 サポートには、短期および長期のルールの識別子名の両方が含まれます。 短い名前が CAXXXX;長い名前は、CAXXXX:FriendlyTypeName です。  
   
--   **位置揃え**-メッセージの抑制の理由を文書化に使用されるテキスト。  
+- **位置揃え**-メッセージの抑制の理由を文書化に使用されるテキスト。  
   
--   **メッセージ Id** -各メッセージの問題の一意識別子。  
+- **メッセージ Id** -各メッセージの問題の一意識別子。  
   
--   **スコープ**-警告を抑制するターゲット。 ターゲットが指定されていない場合は、属性のターゲットに設定されます。 サポートされているスコープを以下に示します。  
+- **スコープ**-警告を抑制するターゲット。 ターゲットが指定されていない場合は、属性のターゲットに設定されます。 サポートされているスコープを以下に示します。  
   
-    -   Module  
+    - Module  
   
-    -   名前空間  
+    - 名前空間  
   
-    -   リソース  
+    - リソース  
   
-    -   型  
+    - 型  
   
-    -   メンバー  
+    - メンバー  
   
--   **ターゲット**- 警告を抑制するターゲットを指定するために使用する識別子。 項目の完全修飾名を含める必要があります。  
+- **ターゲット**- 警告を抑制するターゲットを指定するために使用する識別子。 項目の完全修飾名を含める必要があります。  
   
 ## <a name="suppressmessage-usage"></a>SuppressMessage 使用状況  
  先のレベルでコード分析の警告を抑制のインスタンス、 **SuppressMessage**属性を適用します。 この目的は、違反が発生する抑制については、コードに密に結合します。  
@@ -104,7 +99,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="generated-code"></a>生成されたコード  
  マネージ コード コンパイラと一部のサード パーティ製ツールは、迅速なコードの開発を促進するためのコードを生成します。 ソース ファイルに表示されるコンパイラによって生成されたコードがでマークされたは、通常、 **GeneratedCodeAttribute**属性。  
   
- コード分析の警告と生成されたコードのエラーを抑制するかどうかを選択できます。 このような警告とエラーを抑制する方法については、[方法: 生成されたコードの警告を抑制する](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)を参照してください。  
+ コード分析の警告と生成されたコードのエラーを抑制するかどうかを選択できます。 このような警告とエラーを抑制する方法については、次を参照してください。[方法。生成されたコードの警告を抑制する](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)します。  
   
  コード分析を無視する注**GeneratedCodeAttribute**アセンブリ全体または 1 つのパラメーターのいずれかに適用されます。 このような状況はほとんど発生しません。  
   
@@ -114,7 +109,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
   
 > [!NOTE]
->  名前空間スコープで警告を抑制すると、名前空間自体に対して警告を抑制します。 名前空間内の型に対する警告は抑制されません。  
+> 名前空間スコープで警告を抑制すると、名前空間自体に対して警告を抑制します。 名前空間内の型に対する警告は抑制されません。  
   
  任意の抑制は、明示的なスコープを指定することによって表現できます。 このような抑制は、グローバル レベルでライブする必要があります。 メンバー レベルの抑制は、型を修飾して指定できません。  
   
@@ -123,13 +118,10 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
   
 > [!NOTE]
->  常に、ターゲットには、項目の完全修飾名が含まれています。  
+> 常に、ターゲットには、項目の完全修飾名が含まれています。  
   
 ## <a name="global-suppression-file"></a>グローバル抑制ファイル  
- グローバル抑制はグローバル レベルの抑制またはターゲットが指定されていない抑制の抑制が保持されます。 たとえば、アセンブリ レベルの違反の抑制は、このファイルに格納されます。 さらに、いくつかの ASP.NET の抑制は、プロジェクト レベルの設定は、フォームのコードを利用できないために、このファイルに格納されます。 グローバル抑制は作成され、選択した初めてのプロジェクトに追加、**プロジェクト抑制ファイル内**のオプション、**メッセージの抑制**エラー一覧 ウィンドウでコマンド。 詳細については、[方法: メニュー項目を使用して警告を抑制する](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)を参照してください。  
+ グローバル抑制はグローバル レベルの抑制またはターゲットが指定されていない抑制の抑制が保持されます。 たとえば、アセンブリ レベルの違反の抑制は、このファイルに格納されます。 さらに、いくつかの ASP.NET の抑制は、プロジェクト レベルの設定は、フォームのコードを利用できないために、このファイルに格納されます。 グローバル抑制は作成され、選択した初めてのプロジェクトに追加、**プロジェクト抑制ファイル内**のオプション、**メッセージの抑制**エラー一覧 ウィンドウでコマンド。 詳細については、「[方法 :メニュー項目を使用して警告を抑制する](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  <xref:System.Diagnostics.CodeAnalysis>
-
-
-

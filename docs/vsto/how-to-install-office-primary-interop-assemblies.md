@@ -13,24 +13,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7ceba236859b61444546661c2b8395c75b8d792
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4b6f701e3962a25e7239c829d409a3ad69a1833a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419603"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>方法: Office プライマリ相互運用機能アセンブリをインストールする方法
   Microsoft Office のインストール時に、Office のプライマリ相互運用機能アセンブリ (PIA) をインストールします。
 
 ## <a name="to-install-the-pias-when-you-install-office"></a>Office のインストール時に PIA をインストールするには
 
-1.  .NET Framework のバージョンが 2.0 以降であることを確認します。
+1. .NET Framework のバージョンが 2.0 以降であることを確認します。
 
-2.  Microsoft Office をインストールし、アプリケーションを拡張するための **.NET プログラミング サポート**の機能(この機能は既定のインストールに含まれています)が選択されていることを確認します。
+2. Microsoft Office をインストールし、アプリケーションを拡張するための **.NET プログラミング サポート**の機能(この機能は既定のインストールに含まれています)が選択されていることを確認します。
 
     > [!警告]
-    >  既定では、PIA はビルドするときにソリューションに埋め込まれるので、VSTO アドインまたはカスタマイズを使用する前提条件として PIA をユーザーに配布する必要はありません。
+    > 既定では、PIA はビルドするときにソリューションに埋め込まれるので、VSTO アドインまたはカスタマイズを使用する前提条件として PIA をユーザーに配布する必要はありません。
 
 ## <a name="see-also"></a>関連項目
 - [Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)

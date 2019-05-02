@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b37fe476c7654cc21a3b81f4a68aa4abc0348bb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436560"
 ---
 # <a name="support-for-settings-categories"></a>設定カテゴリのサポート
 設定カテゴリは統合開発環境 (IDE) をカスタマイズするためのグループで構成されます。 たとえば設定により、メニューの [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のウィンドウとコンテンツのレイアウトを制御できます。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
@@ -25,15 +25,15 @@ ms.locfileid: "58972918"
  このページのナビゲーション ウィンドウには、ツリー コントロールにカテゴリが表示されます。 カテゴリは、"カスタム設定ポイント" という関連する設定 (チェック ボックス) のグループです。 これらのチェック ボックスを使用して、.vsettings ファイルに保持するカテゴリを選択します。 ウィザードでは、.vsettings ファイルに名前を付け、パスを指定することができます。  
   
 > [!NOTE]
->  設定はカテゴリとして保存または復元されます。また、個々の設定名はウィザードに表示されません。  
+> 設定はカテゴリとして保存または復元されます。また、個々の設定名はウィザードに表示されません。  
   
  Managed Package Framework (MPF) は、最小限の追加コードでの設定カテゴリの作成をサポートしています。  
   
--   <xref:Microsoft.VisualStudio.Shell.Package> クラスをサブクラス化して、カテゴリのコンテナーとして使用するには、VSPackage を作成します。  
+- <xref:Microsoft.VisualStudio.Shell.Package> クラスをサブクラス化して、カテゴリのコンテナーとして使用するには、VSPackage を作成します。  
   
--   カテゴリ自体を作成するには、<xref:Microsoft.VisualStudio.Shell.DialogPage> クラスから派生させます。  
+- カテゴリ自体を作成するには、<xref:Microsoft.VisualStudio.Shell.DialogPage> クラスから派生させます。  
   
--   これら 2 つは <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> で接続します。  
+- これら 2 つは <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> で接続します。  
   
 ## <a name="support-for-settings-categories"></a>設定カテゴリのサポート  
  <xref:Microsoft.VisualStudio.Shell.Package> クラスは、カテゴリの作成をサポートしています。 <xref:Microsoft.VisualStudio.Shell.DialogPage> クラスは、カテゴリを実装しています。 <xref:Microsoft.VisualStudio.Shell.DialogPage> の既定の実装では、カテゴリとしてパブリック プロパティがユーザーに提供されます。 詳細については、「 [Creating a Settings Category](../extensibility/creating-a-settings-category.md)」を参照してください。  
@@ -48,7 +48,7 @@ ms.locfileid: "58972918"
  設定カテゴリのレジストリ パスは、<xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>、単語、UserSettings、設定カテゴリ、カスタム設定ポイントの名前の組み合わせで決まります。 設定カテゴリとカスタム設定ポイントの名前は、アンダースコア区切りでレジストリに表示されるローカライズされない正規名の形式に結合されます。 たとえば、設定カテゴリが "My Category"、カスタム設定ポイント名が "My Settings"、ApplicationRegistryRoot が HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp の場合、設定カテゴリのレジストリ キーは HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My Category_My Settings になります。  
   
 > [!NOTE]
->  正規名はユーザー インターフェイス (UI) に表示されません。 正規名は、プログラム ID (ProgID) と同様に、判読できる名前を設定カテゴリに関連付けるために使用されます。  
+> 正規名はユーザー インターフェイス (UI) に表示されません。 正規名は、プログラム ID (ProgID) と同様に、判読できる名前を設定カテゴリに関連付けるために使用されます。  
   
 ### <a name="settings-category-attribute"></a>設定カテゴリの属性  
  <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>カテゴリ内のカスタム設定ポイントへのマッピングが決まります、**インポートおよびエクスポート設定ウィザード**提供する VSPackage とカテゴリを関連付けることによって。 次のコードがあるとします。  

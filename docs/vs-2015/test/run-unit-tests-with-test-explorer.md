@@ -1,4 +1,4 @@
-﻿---
+---
 title: テスト エクスプローラーを使用して単体テストを実行する | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,19 +10,19 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c8894239e1e1dd3979b9bb7c61e5aa1f294fe2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9541180ba8740cdc12a038f81c4ef74d47fcc1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446235"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 テスト エクスプローラーを使用して、Visual Studio またはサードパーティの単体テスト プロジェクトから単体テストを実行し、テストをカテゴリにグループ化し、テスト リストをフィルター処理し、テストのプレイリストを作成、保存、および実行します。 テストをデバッグし、テストのパフォーマンスとコード カバレッジを分析することもできます。  
   
-##  <a name="BKMK_Contents"></a> 目次  
+## <a name="BKMK_Contents"></a> 目次  
  [単体テスト フレームワークとテスト プロジェクト](#BKMK_Unit_test_frameworks_and_test_projects)  
   
  [テスト エクスプローラーでテストを実行する](#BKMK_Run_tests_in_Test_Explorer)  
@@ -37,14 +37,14 @@ ms.locfileid: "54805109"
   
  [外部リソース](#BKMK_External_resources)  
   
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> 単体テスト フレームワークとテスト プロジェクト  
+## <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> 単体テスト フレームワークとテスト プロジェクト  
  Visual Studio には、マネージド コードおよびネイティブ コード用の Microsoft 単体テスト フレームワークが含まれます。 ただし、テスト エクスプローラーでは、テスト エクスプローラーのアダプターを実装した単体テスト フレームワークも実行できます。 サードパーティの単体テスト フレームワークのインストールの詳細については、「[サードパーティ製の単体テスト フレームワークをインストールする](../test/install-third-party-unit-test-frameworks.md)」を参照してください。  
   
  テスト エクスプローラーは、ソリューション内の複数のテスト プロジェクト、および運用コード プロジェクトに含まれるテスト クラスからテストを実行できます。 テスト プロジェクトは別の単体テスト フレームワークを使用できます。 テスト対象のコードを .NET Framework 用に記述する場合、対象コードの言語にかかわらず、.NET Framework も対象とする言語でテスト プロジェクトを記述できます。 ネイティブ C/C++ コード プロジェクトは、C++ の単体テスト フレームワークを使用してテストする必要があります。  
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-##  <a name="BKMK_Run_tests_in_Test_Explorer"></a> テスト エクスプローラーでテストを実行する  
+## <a name="BKMK_Run_tests_in_Test_Explorer"></a> テスト エクスプローラーでテストを実行する  
  [テストを実行する](#BKMK_Run_tests) **&#124;** [各ビルドの後にテストを実行する](#BKMK_Run_tests_after_every_build)  
   
  テスト プロジェクトをビルドすると、テストはテスト エクスプローラーに表示されます。 テスト エクスプローラーが表示されない場合は、Visual Studio メニューの **[テスト]** をクリックし、 **[Windows]**、 **[テスト エクスプローラー]** の順に選択します。  
@@ -59,7 +59,7 @@ ms.locfileid: "54805109"
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-###  <a name="BKMK_Run_tests"></a> テストの実行  
+### <a name="BKMK_Run_tests"></a> テストの実行  
  ソリューション内のすべてのテスト、グループ内のすべてのテスト、または選択した一連のテストを実行できます。 次のいずれかの操作を行います。  
   
 - ソリューション内のすべてのテストを実行するには、 **[すべて実行]** をクリックします。  
@@ -74,10 +74,10 @@ ms.locfileid: "54805109"
   
   ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-###  <a name="BKMK_Run_tests_after_every_build"></a> 各ビルドの後にテストを実行する  
+### <a name="BKMK_Run_tests_after_every_build"></a> 各ビルドの後にテストを実行する  
   
 > [!WARNING]
->  各ビルドの後の単体テスト実行は、Visual Studio Enterprise でサポートされます。  
+> 各ビルドの後の単体テスト実行は、Visual Studio Enterprise でサポートされます。  
   
 |||  
 |-|-|  
@@ -85,12 +85,12 @@ ms.locfileid: "54805109"
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-##  <a name="BKMK_View_test_results"></a> テスト結果を表示する  
+## <a name="BKMK_View_test_results"></a> テスト結果を表示する  
  [テストの詳細を表示する](#BKMK_View_test_details) **&#124;** [テスト メソッドのソース コードを表示する](#BKMK_View_the_source_code_of_a_test_method)  
   
  テストを実行して、記述し、再実行すると、テスト エクスプローラーに **[失敗したテスト]**、 **[成功したテスト]**、 **[スキップされたテスト]** 、および **[テストを実行しない]** のグループの結果が表示されます。 テスト エクスプローラーの下部の詳細ペインに、テストの実行の概要が表示されます。  
   
-###  <a name="BKMK_View_test_details"></a> テストの詳細を表示する  
+### <a name="BKMK_View_test_details"></a> テストの詳細を表示する  
  個々のテストの詳細を表示するには、そのテストを選択します。  
   
  ![テスト実行の詳細](../test/media/ute-testdetails.png "UTE_TestDetails")  
@@ -111,17 +111,17 @@ ms.locfileid: "54805109"
   
   ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> テスト メソッドのソース コードを表示する  
+### <a name="BKMK_View_the_source_code_of_a_test_method"></a> テスト メソッドのソース コードを表示する  
  Visual Studio エディターでテスト メソッドのソース コードを表示するには、テストを選び、コンテキスト メニューの **[テストを開く]** を選択します (キーボード:F12 キー)。  
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-##  <a name="BKMK_Group_and_filter_the_test_list"></a> テスト リストをグループ化およびフィルター処理する  
+## <a name="BKMK_Group_and_filter_the_test_list"></a> テスト リストをグループ化およびフィルター処理する  
  [テスト リストをグループ化する](#BKMK_Grouping_the_test_list) **&#124;** [特徴でグループ化する](#BKMK_Group_by_traits) **&#124;** [テスト リストを検索およびフィルター処理する](#BKMK_Search_and_filter_the_test_list)  
   
  テスト エクスプローラーを使用すると、テストを定義済みのカテゴリにグループ化できます。 テスト エクスプローラーで実行されるほとんどの単体テスト フレームワークでは、独自のカテゴリおよびカテゴリ/値のペアを定義して、テストをグループ化することができます。 テストのプロパティに対して文字列を照合して、テストの一覧をフィルター処理することもできます。  
   
-###  <a name="BKMK_Grouping_the_test_list"></a> テスト リストをグループ化する  
+### <a name="BKMK_Grouping_the_test_list"></a> テスト リストをグループ化する  
  テストの編成方法を変更するには、**[グループ化]** ボタン ![テスト エクスプローラー グループ ボタン](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn") の横の下向き矢印をクリックし、新しいグループ化の条件を選択します。  
   
  ![テスト エクスプローラーでテストをカテゴリ別にグループ化する](../test/media/ute-groupbycategory.png "UTE_GroupByCategory")  
@@ -137,7 +137,7 @@ ms.locfileid: "54805109"
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-###  <a name="BKMK_Group_by_traits"></a> 特徴でグループ化する  
+### <a name="BKMK_Group_by_traits"></a> 特徴でグループ化する  
  通常、特徴はカテゴリ名/値のペアですが、1 つのカテゴリにすることもできます。 特徴は、単体テスト フレームワークによってテスト メソッドとして識別されるメソッドに割り当てることができます。 単体テスト フレームワークは、特徴のカテゴリを定義できます。 特徴のカテゴリに値を追加して、独自のカテゴリ名/値のペアを定義できます。 特徴のカテゴリと値を指定する構文は、単体テスト フレームワークによって定義されます。  
   
  **マネージド コード用の Microsoft 単体テスト フレームワークでの特徴の定義**  
@@ -185,7 +185,7 @@ TEST_METHOD(Method1)
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-###  <a name="BKMK_Search_and_filter_the_test_list"></a> テスト リストを検索およびフィルター処理する  
+### <a name="BKMK_Search_and_filter_the_test_list"></a> テスト リストを検索およびフィルター処理する  
  テスト エクスプローラーのフィルターを使用して、表示および実行するプロジェクトのテスト メソッドを制限できます。  
   
  テスト エクスプローラーの検索ボックスに文字列を入力して Enter キーを押すと、完全修飾名にその文字列が含まれるテストだけを表示するようにテスト リストがフィルター処理されます。  
@@ -201,7 +201,7 @@ TEST_METHOD(Method1)
    ![テスト エクスプローラーでテストをフィルター処理する](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
->  検索では大文字と小文字を区別せず、指定された文字列が条件の値の一部と一致するかどうかを照合します。  
+> 検索では大文字と小文字を区別せず、指定された文字列が条件の値の一部と一致するかどうかを照合します。  
   
 |修飾子|説明|  
 |---------------|-----------------|  
@@ -219,7 +219,7 @@ TEST_METHOD(Method1)
 FilterName:"Criteria" -FilterName:"SubsetCriteria"  
 ```  
   
- たとえば、オブジェクトに適用された  
+ 例えば以下のようにします。  
   
 ```  
 FullName:"MyClass" - FullName:"PerfTest"  
@@ -229,7 +229,7 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-##  <a name="BKMK_Create_custom_playlists"></a> カスタム プレイリストを作成する  
+## <a name="BKMK_Create_custom_playlists"></a> カスタム プレイリストを作成する  
  グループとして実行または表示するテストのリストを作成して保存できます。 プレイリストを選択すると、リスト内のテストがテスト エクスプローラーに表示されます。 テストを複数のプレイリストに追加することができ、既定の **[すべてのテスト]** プレイリストを選択すると、プロジェクトのすべてのテストを使用できます。  
   
  ![プレイリストの選択](../test/media/ute-playlist.png "UTE_Playlist")  
@@ -244,16 +244,16 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-##  <a name="BKMK_Debug_and_analyze_unit_tests"></a> 単体テストをデバッグおよび分析する  
+## <a name="BKMK_Debug_and_analyze_unit_tests"></a> 単体テストをデバッグおよび分析する  
  [単体テストをデバッグする](#BKMK_Debug_unit_tests) **&#124;** [テスト メソッドのパフォーマンスの問題を診断する](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [単体テストのコード カバレッジを分析する](#BKMK_Analyzeunit_test_code_coverage)  
   
-###  <a name="BKMK_Debug_unit_tests"></a> 単体テストをデバッグする  
+### <a name="BKMK_Debug_unit_tests"></a> 単体テストをデバッグする  
  テスト エクスプローラーを使用して、テストのデバッグ セッションを開始できます。 Visual Studio デバッガーを使用してコードをシームレスにステップ実行すると、テスト対象のプロジェクトと単体テストの間を切り替えることができます。 デバッグを開始するには:  
   
 1. Visual Studio エディターで、デバッグする 1 つ以上のテスト メソッドにブレークポイントを設定します。  
   
    > [!NOTE]
-   >  テスト メソッドを任意の順序で実行できるため、デバッグするすべてのテスト メソッドにブレークポイントを設定します。  
+   > テスト メソッドを任意の順序で実行できるため、デバッグするすべてのテスト メソッドにブレークポイントを設定します。  
   
 2. テスト エクスプローラーでテスト メソッドを選択し、コンテキスト メニューの **[選択したテストのデバッグ]** を選択します。  
   
@@ -261,13 +261,13 @@ FullName:"MyClass" - FullName:"PerfTest"
   
    ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> テスト メソッドのパフォーマンスの問題を診断する  
+### <a name="BKMK_Diagnose_test_method_performance_issues"></a> テスト メソッドのパフォーマンスの問題を診断する  
  テスト メソッドに時間がかかる原因を診断するには、エクスプローラーでメソッドを選択し、コンテキスト メニューの [プロファイル] を選択します。 「[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)」を参照してください。  
   
-###  <a name="BKMK_Analyzeunit_test_code_coverage"></a> 単体テストのコード カバレッジを分析する  
+### <a name="BKMK_Analyzeunit_test_code_coverage"></a> 単体テストのコード カバレッジを分析する  
   
 > [!NOTE]
->  単体テストのコード カバレッジは、Visual Studio Enterprise でのみ使用できます。  
+> 単体テストのコード カバレッジは、Visual Studio Enterprise でのみ使用できます。  
   
  Visual Studio のコード カバレッジ ツールを使用して、単体テストで実際にテスト中の製品コードの量を確認できます。 選択したテストまたはソリューションのすべてのテストのコード カバレッジを実行できます。  
   
@@ -277,9 +277,9 @@ FullName:"MyClass" - FullName:"PerfTest"
   
 2. サブメニューから次のいずれかのコマンドを選択します。  
   
-   -   **[選択されたテスト]** : テスト エクスプローラーで選択したテスト メソッドを実行します。  
+   - **[選択されたテスト]** : テスト エクスプローラーで選択したテスト メソッドを実行します。  
   
-   -   **[All tests (すべてのテスト)]** : ソリューション内のすべてのテスト メソッドを実行します。  
+   - **[All tests (すべてのテスト)]** : ソリューション内のすべてのテスト メソッドを実行します。  
   
    [コード カバレッジの結果] ウィンドウに、行、関数、クラス、名前空間、およびモジュールで実行された製品コードのブロックのパーセンテージが表示されます。  
   
@@ -287,11 +287,11 @@ FullName:"MyClass" - FullName:"PerfTest"
   
    ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
-##  <a name="BKMK_External_resources"></a> 外部リソース  
+## <a name="BKMK_External_resources"></a> 外部リソース  
   
-###  <a name="BKMK_Guidance"></a> ガイダンス  
- [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
+### <a name="BKMK_Guidance"></a> ガイダンス  
+ [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト:内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  [コードの単体テスト](../test/unit-test-your-code.md)   
  [64 ビット プロセスとして単体テストを実行する](../test/run-a-unit-test-as-a-64-bit-process.md)

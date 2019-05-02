@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0ab98719f13ed787947a5e1d8a06d2080718eb0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907558"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>どのような&#39;ソース新プラグイン API バージョン 1.2 の制御
 このセクションには、ソース管理プラグイン API バージョン 1.2 での高度なソース コード管理機能が強調表示されます。 バージョン 1.2 の新機能を次に示します。
@@ -33,4 +33,4 @@ ms.locfileid: "56614826"
 - [ソース管理情報の削除。Proj とします。Sln ファイル](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md)ソース管理プラグイン API バージョン 1.2 がプロジェクトとソリューションに関する情報を格納する方法について説明します。
 
 ## <a name="see-also"></a>関連項目
-- [はじめに](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
+- [作業の開始](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

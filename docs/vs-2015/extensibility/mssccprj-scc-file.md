@@ -1,27 +1,22 @@
 ---
 title: MSSCCPRJ します。SCC ファイル |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a04429bafb7da0b3d4922905bd712e82ba16a4ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736154"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117721"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC File
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +27,19 @@ IDE を使用してソース管理下にある Visual Studio ソリューショ�
   
  ソース管理プラグイン、MSSCCPRJ をサポートします。SCC ファイルは、次のガイドラインに従う必要があります。  
   
--   1 つ MSSCCPRJ のみできます。1 つのディレクトリのファイルを SCC です。  
+- 1 つ MSSCCPRJ のみできます。1 つのディレクトリのファイルを SCC です。  
   
--   MSSCCPRJ します。SCC ファイルでは、指定したディレクトリ内のソース管理下にある複数のファイルの"AuxPath"と"ProjName"を含めることができます。  
+- MSSCCPRJ します。SCC ファイルでは、指定したディレクトリ内のソース管理下にある複数のファイルの"AuxPath"と"ProjName"を含めることができます。  
   
--   "AuxPath"文字列は、引用符の内部に必要ありません。 区切り記号として引用符で囲むが許可されます (たとえば、二重引用符のペアを空の文字列を示すために使用できます)。 IDE、MSSCCPRJ から読み取られるときに"AuxPath"文字列からすべての引用符が削除されます。SCC ファイルです。  
+- "AuxPath"文字列は、引用符の内部に必要ありません。 区切り記号として引用符で囲むが許可されます (たとえば、二重引用符のペアを空の文字列を示すために使用できます)。 IDE、MSSCCPRJ から読み取られるときに"AuxPath"文字列からすべての引用符が削除されます。SCC ファイルです。  
   
--   MSSCCPRJ"ProjName"文字列。SCC ファイルはまったくから返される文字列と一致する必要があります、`SccGetProjPath`関数。 関数によって返される文字列に引用符で囲む、MSSCCPRJ 内の文字列がある場合。SCC ファイルが引用符で囲み、その逆です。  
+- MSSCCPRJ"ProjName"文字列。SCC ファイルはまったくから返される文字列と一致する必要があります、`SccGetProjPath`関数。 関数によって返される文字列に引用符で囲む、MSSCCPRJ 内の文字列がある場合。SCC ファイルが引用符で囲み、その逆です。  
   
--   MSSCCPRJ します。SCC ファイルが作成または、ファイルがソース管理下に配置されるたびに更新します。  
+- MSSCCPRJ します。SCC ファイルが作成または、ファイルがソース管理下に配置されるたびに更新します。  
   
--   MSSCCPRJ 場合。SCC ファイルが削除された、プロバイダーが再生成、次回そのディレクトリに関連のソース管理操作を実行します。  
+- MSSCCPRJ 場合。SCC ファイルが削除された、プロバイダーが再生成、次回そのディレクトリに関連のソース管理操作を実行します。  
   
--   MSSCCPRJ します。SCC ファイルには、定義済みの形式に厳密に従う必要があります。  
+- MSSCCPRJ します。SCC ファイルには、定義済みの形式に厳密に従う必要があります。  
   
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ を示しています。SCC ファイルの形式  
  MSSCCPRJ のサンプルを次に示します。SCC ファイルの形式 (行番号は、ガイドとしてのみ提供されているし、ファイルの本文に含まれない):  
@@ -77,9 +72,8 @@ IDE を使用してソース管理下にある Visual Studio ソリューショ�
   
  `SCC_Project_Name = "$/TestApp"`  
   
- このセクションに末尾の区切り記号はありません。 ファイルに表示されるすべてのリテラルと同様に、ファイルの名前は、scc.h ヘッダー ファイルで定義されます。 詳細については、[文字列は、ソース管理プラグインを検索するためのキーとして使用](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)を参照してください。  
+ このセクションに末尾の区切り記号はありません。 ファイルに表示されるすべてのリテラルと同様に、ファイルの名前は、scc.h ヘッダー ファイルで定義されます。 詳細については、次を参照してください。[文字列は、ソース管理プラグインを検索するためのキーとして使用](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)   
  [ソース管理プラグインを検索するためのキーとして使用される文字列](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)
-

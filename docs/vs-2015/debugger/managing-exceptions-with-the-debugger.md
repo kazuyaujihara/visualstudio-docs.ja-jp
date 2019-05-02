@@ -1,14 +1,9 @@
 ---
 title: デバッガーでの例外を管理する |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -37,13 +32,13 @@ ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bdb648e7a29b3ed5d9a444e203ddbdcd6b0e73dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439176"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>デバッガーでの例外の管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,17 +47,17 @@ ms.locfileid: "51769995"
   
  例外が発生すると、[出力] ウィンドウに例外メッセージが書き込まれます。 次のような場合、例外によって実行が中断される可能性があります。  
   
--   例外がスローされたが、処理されない場合。  
+- 例外がスローされたが、処理されない場合。  
   
--   例外がスローされた直後、ハンドラーが呼び出される前に実行を中断するようにデバッガーが設定されている場合。  
+- 例外がスローされた直後、ハンドラーが呼び出される前に実行を中断するようにデバッガーが設定されている場合。  
   
--   [ [Just My Code](../debugger/just-my-code.md)] を設定済みで、デバッガーが、ユーザー コードで処理されない例外に対して実行を中断するように設定されている場合。  
-  
-> [!NOTE]
->  ASP.NET は、エラー ページをブラウザーに表示する最上位の例外ハンドラーを持っています。 **マイ コードのみ** が有効ではない場合、実行は中断されません。 例については、以下の「 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 」をご覧ください。  
+- [ [Just My Code](../debugger/just-my-code.md)] を設定済みで、デバッガーが、ユーザー コードで処理されない例外に対して実行を中断するように設定されている場合。  
   
 > [!NOTE]
->  Visual Basic アプリケーションのデバッガーでは、すべてのエラーが例外として管理されます。On Error 形式のエラー ハンドラーを使用している場合でもそうです。  
+> ASP.NET は、エラー ページをブラウザーに表示する最上位の例外ハンドラーを持っています。 **マイ コードのみ** が有効ではない場合、実行は中断されません。 例については、以下の「 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 」をご覧ください。  
+  
+> [!NOTE]
+> Visual Basic アプリケーションのデバッガーでは、すべてのエラーが例外として管理されます。On Error 形式のエラー ハンドラーを使用している場合でもそうです。  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>[例外設定] ウィンドウで例外を管理する  
  **[例外設定]** ウィンドウを使用すれば、デバッガーに実行を中断させる例外 (または例外のセット)、およびデバッガーに実行を中断させるポイントを指定することができます。 例外を追加または削除したり、実行を中断する例外を指定したりすることができます。 ソリューションが開いているときに、このウィンドウを開くには、 **[デバッグ] / [Windows] / [例外設定]** の順にクリックします。  
@@ -146,7 +141,7 @@ ms.locfileid: "51769995"
   
    ![例外設定の既定値に戻す](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> ユーザーよって処理されない例外を続行するデバッガーを設定します。  
+### <a name="BKMK_UserUnhandled"></a> ユーザーよって処理されない例外を続行するデバッガーを設定します。  
  [ [Just My Code](../debugger/just-my-code.md)] を使用して .NET コードまたは JavaScript コードをデバッグする場合、ユーザー コードで処理されないが他の場所で処理される例外について、中断しないようにデバッガーを設定することができます。  
   
 1. **[例外設定]** ウィンドウでコンテキスト メニューを開くには、ウィンドウで右クリックし、 **[列の表示]** を選択します ( **[マイ コードのみ]** を選択していない場合、このコマンドは表示されません)。  
@@ -167,7 +162,7 @@ ms.locfileid: "51769995"
  GPU メモリ アクセス例外、JavaScript ランタイム例外、または Win32 例外というカテゴリに例外を追加する場合は、エラー コードと説明を含める必要があります。  
   
 > [!TIP]
->  スペルを確認してください。 **[例外設定]** ウィンドウでは、追加された例外の存在について確認が行われません。 したがって、「 **Sytem.UriTemplateMatchException**」と入力した場合は、その例外のエントリ ( **System.UriTemplateMatchException**のエントリではなく) が表示されます。  
+> スペルを確認してください。 **[例外設定]** ウィンドウでは、追加された例外の存在について確認が行われません。 したがって、「 **Sytem.UriTemplateMatchException**」と入力した場合は、その例外のエントリ ( **System.UriTemplateMatchException**のエントリではなく) が表示されます。  
   
  例外の設定はソリューションの .suo ファイルに保持され、特定のソリューションに適用されます。 複数のソリューションの間で、特定の例外設定を再利用することはできません。 この時点では、追加された例外だけが保存されます。削除された例外は保持されません。 すなわち、例外を追加してから、ソリューションをいったん閉じて、再度開いた場合、その例外は表示されたままです。 しかし、例外を削除してから、ソリューションをいったん閉じて、再度開いた場合、例外は再表示されます。  
   
@@ -189,12 +184,7 @@ public class GenericException<T> : Exception
 ## <a name="see-also"></a>関連項目  
  [例外後の実行の継続](../debugger/continuing-execution-after-an-exception.md)   
  [方法: 例外の後にシステム コードを調べる](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [方法: ネイティブ ランタイム チェックを使用](../debugger/how-to-use-native-run-time-checks.md)   
+ [方法: ネイティブ ランタイム チェックを使用する](../debugger/how-to-use-native-run-time-checks.md)   
  [C ランタイム ライブラリなしのチェックの実行時に使用します。](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
  [例外処理アシスタント](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [デバッガーの基本事項](../debugger/debugger-basics.md)
-
-
-
-
-

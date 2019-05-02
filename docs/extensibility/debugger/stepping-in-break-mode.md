@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e7e227daa0dd58bf24ae946cce667992e09f90
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: eb7b7e847c116f3aab38a12ec9801988bb8b3fc1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912845"
 ---
 # <a name="stepping-in-break-mode"></a>中断モードでのステップ実行
 次のセクションでは、デバッガーが中断モードとコードをステップ実行する必要があるときに発生するプロセスについて説明します。
 
 ## <a name="stepping-process"></a>プロセスをステップ実行
 
-1.  呼び出す[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)で[STEPKIND](../../extensibility/debugger/reference/stepkind.md)と[STEPUNIT](../../extensibility/debugger/reference/stepunit.md)ステップを実行する引数。
+1. 呼び出す[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)で[STEPKIND](../../extensibility/debugger/reference/stepkind.md)と[STEPUNIT](../../extensibility/debugger/reference/stepunit.md)ステップを実行する引数。
 
-2.  ステップが完了したら、送信、 [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) stopping イベントとして。
+2. ステップが完了したら、送信、 [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) stopping イベントとして。
 
 ## <a name="see-also"></a>関連項目
 - [デバッガー イベントの呼び出し](../../extensibility/debugger/calling-debugger-events.md)

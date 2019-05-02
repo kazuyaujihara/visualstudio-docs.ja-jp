@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 06ec985dc6709651be7bd2f12b024eda4ed03d5a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908439"
 ---
 # <a name="using-msbuild"></a>MSBuild の使用
 MSBuild では、ビルド、ビルド タスク、および構成をビルドするプロジェクト アイテムを完全に記述するプロジェクト ファイルを作成するために適切に定義された、拡張性の高い XML 形式を提供します。
@@ -31,7 +31,7 @@ MSBuild では、ビルド、ビルド タスク、および構成をビルド�
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>
 ```
 
- 条件付き属性の詳細については、[条件構造](../../msbuild/msbuild-conditional-constructs.md)を参照してください。
+ 条件付き属性の詳細については、次を参照してください。[条件構造](../../msbuild/msbuild-conditional-constructs.md)します。
 
 ### <a name="extending-msbuild-for-your-project-type"></a>種類のプロジェクトの MSBuild の拡張
  MSBuild のインターフェイスと Api は、の将来のバージョンで変更される可能性は[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 そのため、変更からシールドを提供するために、マネージ パッケージ フレームワーク (MPF) クラスを使用することをお勧めします。
@@ -51,7 +51,7 @@ MSBuild では、ビルド、ビルド タスク、および構成をビルド�
  `Microsoft.VisualStudio.Package.ProjectElement` クラスは、MSBuild 項目用のラッパーです。
 
 #### <a name="single-file-generators-vs-msbuild-tasks"></a>単一ファイル ジェネレーターの vs します。MSBuild タスク
- 単一ファイル ジェネレーターは、デザイン時のみにアクセスできるが、デザイン時およびビルド時に MSBuild タスクを使用できます。 最大限の柔軟性の変換し、コードを生成する MSBuild タスクを使用してそのため。 詳細については、[カスタム ツール](../../extensibility/internals/custom-tools.md)を参照してください。
+ 単一ファイル ジェネレーターは、デザイン時のみにアクセスできるが、デザイン時およびビルド時に MSBuild タスクを使用できます。 最大限の柔軟性の変換し、コードを生成する MSBuild タスクを使用してそのため。 詳細については、次を参照してください。[カスタム ツール](../../extensibility/internals/custom-tools.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [MSBuild リファレンス](../../msbuild/msbuild-reference.md)

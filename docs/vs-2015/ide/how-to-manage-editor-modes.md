@@ -25,47 +25,47 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fde858615894967dea83239388925851f342c3aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7db5f2869c1118a04f1aa734e5067ece4b268833
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430532"
 ---
-# <a name="how-to-manage-editor-modes"></a>方法 : エディター モードを管理する
+# <a name="how-to-manage-editor-modes"></a>方法: エディターのモードを管理します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio のコード エディターは、さまざまな表示モードで表示できます。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="enabling-full-screen-mode"></a>全画面表示モードを有効にする  
  **全画面表示**モードを有効にすると、すべてのツール ウィンドウを非表示にして、ドキュメント ウィンドウだけを表示することができます。  
   
 #### <a name="to-enable-full-screen-mode"></a>全画面表示モードを有効にするには  
   
--   **全画面表示**モードを開始または終了するには、Alt + Shift + Enter キーを押します。  
+- **全画面表示**モードを開始または終了するには、Alt + Shift + Enter キーを押します。  
   
      または  
   
--   **[コマンド]** ウィンドウで `View.Fullscreen` コマンドを実行します。  
+- **[コマンド]** ウィンドウで `View.Fullscreen` コマンドを実行します。  
   
 ## <a name="enabling-virtual-space-mode"></a>仮想空白モードを有効にする  
  **仮想空白**モードでは、各コード行の末尾に空白が挿入されます。 コードの横に一貫してコメントを入れる場合は、このチェック ボックスをオンにします。  
   
 #### <a name="to-enable-virtual-space-mode"></a>仮想空白モードを有効にするには  
   
-1.  **[ツール]** メニューの **[オプション]** を選択します。  
+1. **[ツール]** メニューの **[オプション]** を選択します。  
   
-2.  **[テキスト エディター]** フォルダーを展開し、**[すべての言語]** を選択してこのオプションをグローバルに設定するか、または特定の言語フォルダーを選択します  (たとえば、Visual Basic でのみ行番号を表示するには、[テキスト エディター] で [Basic] を選択します)。  
+2. **[テキスト エディター]** フォルダーを展開し、**[すべての言語]** を選択してこのオプションをグローバルに設定するか、または特定の言語フォルダーを選択します  (たとえば、Visual Basic でのみ行番号を表示するには、[テキスト エディター] で [Basic] を選択します)。  
   
-3.  **[全般]** オプションを選択し、**[設定]** で **[仮想空白文字を使用]** を選択します。  
+3. **[全般]** オプションを選択し、**[設定]** で **[仮想空白文字を使用]** を選択します。  
   
     > [!NOTE]
-    >  **列の選択**モードで**仮想空白文字**が有効になります。 **仮想空白**モードを有効にしないと、挿入ポイントは行の末尾から次の行の先頭文字に直接移動します。  
+    > **列の選択**モードで**仮想空白文字**が有効になります。 **仮想空白**モードを有効にしないと、挿入ポイントは行の末尾から次の行の先頭文字に直接移動します。  
   
 ## <a name="see-also"></a>関連項目
  [エディターのカスタマイズ](../ide/customizing-the-editor.md)   
- [方法 : ウィンドウを整列およびドッキングする](../misc/how-to-arrange-and-dock-windows.md)   
+ [方法: 整列し、固定 Windows](../misc/how-to-arrange-and-dock-windows.md)   
  [[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
