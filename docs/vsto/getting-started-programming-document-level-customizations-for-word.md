@@ -59,7 +59,7 @@ ms.locfileid: "62971798"
  コンテンツ コントロールと<xref:Microsoft.Office.Tools.Word.Bookmark> コントロールは、**データソース** ウィンドウからドラッグできるコントロールのリストにあります。 この方法でコンテンツ コントロールやブックマークを追加すると、それらはウィンドウを使用して設定したデータ ソースに自動的にバインドされます。 コードを記述しなくても、データベース、サービス、およびビジネス オブジェクトからデータを表示できます。 詳細については、「[Office ソリューションでのコントロールへのデータのバインド](../vsto/binding-data-to-controls-in-office-solutions.md)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
- Word 用ドキュメント レベルのカスタマイズを作成する方法についてを参照してください。[チュートリアル。最初の Word 用ドキュメント レベルのカスタマイズを作成する](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)します。 このチュートリアルでは、Visual Studio と Word のドキュメント レベルのカスタマイズのプログラミング モデルでの Office 開発ツールについて説明します。
+ Word 用ドキュメント レベルのカスタマイズを作成する方法についてを参照してください。[チュートリアル。最初の Word 用ドキュメント レベルのカスタマイズの作成](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md) このチュートリアルでは、Visual Studio と Word のドキュメント レベルのカスタマイズのプログラミング モデルでの Office 開発ツールについて説明します。
 
  Word プロジェクトで、一般的なタスクを解説しているトピックの一覧は、次を参照してください。 [Office プログラミングで一般的なタスク](../vsto/common-tasks-in-office-programming.md)します。
 
@@ -67,7 +67,7 @@ ms.locfileid: "62971798"
 - [方法: Visual Studio での Office プロジェクトを作成します。](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)
 - [Word ソリューション](../vsto/word-solutions.md)
-- [チュートリアル: 最初の Word 用ドキュメント レベルのカスタマイズを作成します。](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [チュートリアル: 最初の Word 用ドキュメント レベルのカスタマイズの作成](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 - [Word を使用したチュートリアル](../vsto/walkthroughs-using-word.md)
 - [Word オブジェクト モデルの概要](../vsto/word-object-model-overview.md)
 - [Office ソリューションにおけるコードの記述](../vsto/writing-code-in-office-solutions.md)
