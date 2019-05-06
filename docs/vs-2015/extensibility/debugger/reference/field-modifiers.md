@@ -14,7 +14,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd25a3cb5b2d074e989b47f33513e05538868759
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58975732"
@@ -168,7 +168,7 @@ public enum enum_FIELD_MODIFIERS {
  フィールドを持つオブジェクトで表すことを示す、`IUnknown`インターフェイス。  
   
  FIELD_MOD_SPECIAL_NAME  
- フィールドなど、特別な名前を持つことを示します`.ctor`コンス トラクター ([!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]のみ)。  
+ フィールドなど、特別な名前を持つことを示します`.ctor`コンストラクター ([!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]のみ)。  
   
  FIELD_MOD_HIDEBYSIG  
  フィールドがあることを示します、`Overloads`キーワードを適用 ([!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]のみ)。  

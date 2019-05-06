@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 56deef795d1b48dc1b49d8ab255fc7a4fbf7379e
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58973118"
@@ -28,7 +28,7 @@ ms.locfileid: "58973118"
 |アクセス修飾子|ドメイン リレーションシップのアクセスのレベル (`public`または`internal`)。|`public`|  
 |カスタム属性|ドメイン リレーションシップから生成されるソース コードのクラスに属性を追加するために使用します。|\<none>|  
 |Double 型を生成します派生。|場合`True`、基底クラスと (オーバーライドによってカスタマイズをサポート) する部分クラスの両方が生成されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|`False`|  
-|カスタム コンス トラクターがあります。|場合`True`、カスタム コンス トラクターがソース コードで提供されることを示します。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|`False`|  
+|カスタム コンストラクターがあります。|場合`True`、カスタム コンストラクターがソース コードで提供されることを示します。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|`False`|  
 |継承修飾子|ドメイン リレーションシップから生成されるソース コードのクラスの継承の種類について説明します (`none`、`abstract`または`sealed`)。|\<none>|  
 |重複を許可します。|場合`True`、同じ 2 つの要素間、ドメイン リレーションシップの重複リンクが作成されます。|`False`|  
 |基本リレーションシップ|ドメイン リレーションシップを派生の場合、ドメイン リレーションシップのベース リレーションシップ。|\<none>|  

@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 679c12eb99e3cad7486384999a2393e09dbd277f
 ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/26/2019
 ms.locfileid: "59002186"
@@ -44,7 +44,7 @@ ms.locfileid: "59002186"
 |[CA 2211:非定数フィールドを表示することはできません。](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|定数でも読み取り専用でもない静的フィールドは、スレッド セーフではありません。 このようなフィールドへのアクセスは、慎重に管理する必要があり、クラス オブジェクトへのアクセスを同期するための高度なプログラミング手法を必要とします。|  
 |[CA2212:サービス コンポーネントを webmethod に設定をマークしないでください。](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|System.EnterpriseServices.ServicedComponent から継承する型のメソッドは、System.Web.Services.WebMethodAttribute でマークされます。 WebMethodAttribute と ServicedComponent メソッドは、コンテキストおよびトランザクション フローの動作および要件が衝突するため、状況によっては正常に動作しません。|  
 |[CA2213: 破棄可能なフィールドは破棄されなければなりません](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|System.IDisposable を実装する型が、IDisposable も実装する型を持つフィールドを宣言しています。 このフィールドの Dispose メソッドは、宣言している型の Dispose メソッドから呼び出されていません。|  
-|[CA 2214:コンス トラクターのオーバーライド可能なメソッドを呼び出しません](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|コンス トラクターは、仮想メソッドを呼び出し、メソッドを呼び出すインスタンスのコンス トラクターが実行しないことになります。|  
+|[CA 2214:コンストラクターのオーバーライド可能なメソッドを呼び出しません](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|コンストラクターは、仮想メソッドを呼び出し、メソッドを呼び出すインスタンスのコンストラクターが実行しないことになります。|  
 |[CA2215:Dispose メソッドが基底クラス dispose を呼び出す必要があります。](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|型が、破棄できる型から継承している場合、使用している Dispose メソッド内から基本型の Dispose メソッドを呼び出す必要があります。|  
 |[CA 2216:破棄可能な型はファイナライザーを宣言する必要があります。](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Object.Finalize での説明に従って、アンマネージ リソースの使用を提案するフィールドであり、System.IDisposable を実装する型はファイナライザーを実装しません。|  
 |[CA2217:FlagsAttribute で列挙をマークしないでください。](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)|外部から参照できる列挙体が、FlagsAttribute でマークされたあり、2、または列挙型で定義されている他の値の組み合わせの累乗でない 1 つまたは複数の値。|  

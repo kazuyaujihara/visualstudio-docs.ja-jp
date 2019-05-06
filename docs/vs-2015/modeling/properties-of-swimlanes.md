@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 04dee7bad28b6176ffb9499bfcdb5ff2dddc3e8d
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58978279"
@@ -38,7 +38,7 @@ ms.locfileid: "58978279"
 |アクセス修飾子|クラスのアクセスのレベル (`public`または`internal`)。|Public|  
 |カスタム属性|このスイムレーンから生成されるコード クラスに属性を追加するために使用します。|\<none>|  
 |Double 型を生成します派生。|場合`True`、基底クラスと (オーバーライドによってカスタマイズをサポート) する部分クラスの両方が生成されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|False|  
-|カスタム コンス トラクターがあります。|場合`True`、カスタム コンス トラクターは、ソース コードで提供されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|False|  
+|カスタム コンストラクターがあります。|場合`True`、カスタム コンストラクターは、ソース コードで提供されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|False|  
 |継承修飾子|スイムレーンから生成されるソース コードのクラスの継承の種類について説明します (`none`、`abstract`または`sealed`)。|none|  
 |ベース スイムレーン|このスイムレーンの基本クラス。|(なし)|  
 |名前|このスイムレーンの名前。|現在の名前|  

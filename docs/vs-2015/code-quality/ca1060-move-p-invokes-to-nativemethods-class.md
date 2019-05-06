@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: f47fa4326da9914171e5014decbd6d6923c2f02e
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58975876"
@@ -44,7 +44,7 @@ ms.locfileid: "58975876"
 
 - **UnsafeNativeMethods** -このクラスがアンマネージ コード アクセス許可のスタック ウォークを抑制します。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>このクラスに適用されます)。このクラスは、危険なメソッドです。 これらのメソッドの呼び出し元は、スタック ウォークは実行しないため、使用量が安全であるかどうかを確認する完全なセキュリティ レビューを実行する必要があります。
 
-  としてこれらのクラスが宣言されている`internal`(`Friend`、Visual Basic で) し、新しいインスタンスが作成されないようにする、プライベート コンス トラクターを宣言します。 これらのクラスのメソッドにする必要があります`static`と`internal`(`Shared`と`Friend`Visual Basic で)。
+  としてこれらのクラスが宣言されている`internal`(`Friend`、Visual Basic で) し、新しいインスタンスが作成されないようにする、プライベート コンストラクターを宣言します。 これらのクラスのメソッドにする必要があります`static`と`internal`(`Shared`と`Friend`Visual Basic で)。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  このルールの違反を修正するには、適切なメソッドを移動**NativeMethods**クラス。 ほとんどのアプリケーションで P/invoke を移動という新しいクラスに**NativeMethods**十分です。
