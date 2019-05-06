@@ -163,12 +163,12 @@ DXCap.exe –e map
   
  上記のコマンドでは、"map" に一致する Windows ストア アプリが列挙されます。出力を次に示します。  
   
- **パッケージ "Microsoft.BingMaps":**  
- **検出:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **パッケージ "Microsoft.BingMaps":**   
+ **検出 :C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **FullName:Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **名:Microsoft.BingMaps**  
- **発行元:CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = u. s.**  
+ **発行元:CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = u. s.**   
  **バージョン          : 2.1.2914.1734**  
  **起動可能なアプリケーション:**   
  **Id:AppexMaps**  
