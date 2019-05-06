@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 58c5866e9aa78884aac89bbfab5894394116e79f
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58976462"
@@ -43,7 +43,7 @@ ms.locfileid: "58976462"
 |[CA 1009:イベント ハンドラーを正しく宣言します。](../code-quality/ca1009-declare-event-handlers-correctly.md)|イベント ハンドラー メソッドでは 2 つのパラメーターを使用します。 1 つ目は System.Object 型で、"sender" という名前です。 これは、イベントを発生させるオブジェクトです。 2 つ目は System.EventArgs 型で、"e" という名前です。 これは、イベントに関連付けられるデータです。 イベント ハンドラー メソッドでは値を返さないでください。C# プログラミング言語では、これは戻り値の型 void で示されます。|  
 |[CA 1010:コレクションは、ジェネリック インターフェイスを実装する必要があります。](../code-quality/ca1010-collections-should-implement-generic-interface.md)|コレクションの操作性を拡充するために、ジェネリック コレクション インターフェイスの 1 つを実装します。 これにより、コレクションを使用してジェネリック コレクション型を設定できます。|  
 |[CA 1011:基本型をパラメーターとして渡すことを検討してください。](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)|メソッドの宣言で基本型をパラメーターとして指定すると、その基本型から派生した型は、メソッドに対応する引数として渡すことができます。 派生パラメーター型で実現する追加機能が不要である場合、基本型を使用することでメソッドをより広範囲に利用できるようになります。|  
-|[CA 1012:抽象型には、コンス トラクターはありません。](../code-quality/ca1012-abstract-types-should-not-have-constructors.md)|抽象型上のコンストラクターは、派生型からのみ呼び出すことができます。 パブリック コンストラクターで型のインスタンスが作成され、抽象型のインスタンスは自分で作成できないため、パブリック コンストラクターが含まれる抽象型のデザインは不適切になります。|  
+|[CA 1012:抽象型には、コンストラクターはありません。](../code-quality/ca1012-abstract-types-should-not-have-constructors.md)|抽象型上のコンストラクターは、派生型からのみ呼び出すことができます。 パブリック コンストラクターで型のインスタンスが作成され、抽象型のインスタンスは自分で作成できないため、パブリック コンストラクターが含まれる抽象型のデザインは不適切になります。|  
 |[CA1013:オーバー ロードで、演算子 equals をオーバー ロードの加算および減算](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|パブリック型またはプロテクト型で、等値演算子を実装しないまま、加算演算子または減算演算子を実装しています。|  
 |[CA 1014:アセンブリに clscompliantattribute を設定します](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)|共通言語仕様 (CLS) には、名前付けの制約、データ型、および規則が定義されています。アセンブリを複数のプログラミング言語で使用する場合、この仕様に準拠する必要があります。 優れた設計では、すべてのアセンブリは、CLSCompliantAttribute を使用して、CLS 準拠を明示的に示すによって決まります。 この属性が使用されていないアセンブリは、CLS に準拠しません。|  
 |[CA 1016:アセンブリに assemblyversionattribute を設定します](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|.NET Framework は、アセンブリを一意に識別する厳密な名前付きアセンブリの型にバインドして、バージョン番号を使用します。 バージョン番号は、バージョンと発行者のポリシーと共に使用されます。 既定で、アプリケーションは、ビルドされたアセンブリのバージョンでのみ実行されます。|  
@@ -60,7 +60,7 @@ ms.locfileid: "58976462"
 |[CA 1028:列挙ストレージは Int32 でなければなりません](../code-quality/ca1028-enum-storage-should-be-int32.md)|列挙型は、関連する名前付き定数が複数定義された値型です。 既定で、System.Int32 データ型は、定数値を格納するために使用されます。 場合でも、この基になる型を変更できますが、必要なまたはされないほとんどのシナリオのことをお勧めします。|  
 |[CA 1030:適切な場所、イベントを使用します。](../code-quality/ca1030-use-events-where-appropriate.md)|この規則では、通常はイベントに使用される名前を持つメソッドを検出します。 明示的に定義された状態変化に応答してメソッドが呼び出される場合、メソッドはイベント ハンドラーから呼び出す必要があります。 メソッドを呼び出すオブジェクトは、メソッドを直接呼び出すのではなく、イベントを発生させる必要があります。|  
 |[CA 1031:一般的な例外の種類はキャッチしません](../code-quality/ca1031-do-not-catch-general-exception-types.md)|汎用的な例外はキャッチしないでください。 固有の例外をキャッチまたは catch ブロックの最後のステートメントとして一般的な例外を再スローします。|  
-|[CA 1032:標準例外コンス トラクターを実装します。](../code-quality/ca1032-implement-standard-exception-constructors.md)|コンストラクターを完全に宣言していないと、例外を正しく処理するのが困難になります。|  
+|[CA 1032:標準例外コンストラクターを実装します。](../code-quality/ca1032-implement-standard-exception-constructors.md)|コンストラクターを完全に宣言していないと、例外を正しく処理するのが困難になります。|  
 |[CA 1033:インターフェイス メソッドは、子型によって呼び出し可能でなければなりません](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|シールされていない外部から参照できる型によって、パブリック インターフェイスを持つメソッドを明示的に実装しています。また、同じ名前を持つ外部から参照できる代替のメソッドがありません。|  
 |[CA1034:入れ子にされた型を表示することはできません。](../code-quality/ca1034-nested-types-should-not-be-visible.md)|入れ子にされた型とは、別の型のスコープ内で宣言された型のことです。 入れ子にされた型は、包含型のプライベート実装の詳細をカプセル化するときに便利です。 このような用途なので、入れ子にされた型は外部から参照できないようにします。|  
 |[CA1035:ICollection の実装には、メンバーが厳密に型指定します。](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)|この規則では、ICollection で厳密に型指定されたメンバーを実装する必要があります。これは、ユーザーがインターフェイスに備わっている機能を使用するときに、必ずしも引数を Object 型にキャストするとは限らないためです。 この規則では、ICollection を実装する型でこの処理を行って、Object よりも厳密な型のインスタンス コレクションを管理すると想定しています。|  
@@ -79,7 +79,7 @@ ms.locfileid: "58976462"
 |[CA 1050:名前空間の型を宣言します。](../code-quality/ca1050-declare-types-in-namespaces.md)|型を名前空間内で宣言するのは、名前が衝突しないようにするためと、関連する型をオブジェクト階層形式で編成するためです。|  
 |[CA 1051:インスタンス フィールドを宣言しません](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)|フィールドの主な用途は、実装の詳細にする必要があります。 フィールドは private または internal にし、プロパティによって公開するようにします。|  
 |[CA 1052:スタティック ホルダー型をシールする必要があります。](../code-quality/ca1052-static-holder-types-should-be-sealed.md)|パブリックまたはプロテクト型では、静的メンバーのみが含まれていて、sealed (C#) または NotInheritable (Visual Basic) 修飾子を使用して宣言されていません。 継承を意図していない型は、sealed 修飾子を使用してマークし、基本型として使用できないようにします。|  
-|[CA 1053:スタティック ホルダー型には、コンス トラクターはありません。](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)|パブリック型または入れ子になったパブリック型で、静的なメンバーのみが宣言されています。また、パブリックまたはプロテクトの既定のコンストラクターが含まれます。 静的メンバーの呼び出しに型のインスタンスは必要ないため、コンストラクターは不要です。 安全性とセキュリティを確保するために、文字列引数を使用して文字列オーバーロードで URI (Uniform Resource Identifier) オーバーロードを呼び出してください。|  
+|[CA 1053:スタティック ホルダー型には、コンストラクターはありません。](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)|パブリック型または入れ子になったパブリック型で、静的なメンバーのみが宣言されています。また、パブリックまたはプロテクトの既定のコンストラクターが含まれます。 静的メンバーの呼び出しに型のインスタンスは必要ないため、コンストラクターは不要です。 安全性とセキュリティを確保するために、文字列引数を使用して文字列オーバーロードで URI (Uniform Resource Identifier) オーバーロードを呼び出してください。|  
 |[CA 1054:URI パラメーターは文字列をすることはできません。](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|メソッドで URI の文字列形式を使用する場合、対応するオーバーロードを宣言し、URI クラスのインスタンスを使用します。こうすることで、安全な方法でこのサービスを実現できます。|  
 |[CA 1055:URI 戻り値は文字列をすることはできません。](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|この規則では、メソッドは URI を返すと想定されます。 URI の文字列表現は解析エラーやエンコーディング エラーが発生しやすく、セキュリティ上の脆弱性の原因となる場合があります。 System.Uri クラスを使用すると、安全な方法でこのサービスを実現できます。|  
 |[CA 1056:URI のプロパティには、文字列がすることはできません。](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|このルールでは、URI を表すことを前提としています。 URI の文字列表現は解析エラーやエンコーディング エラーが発生しやすく、セキュリティ上の脆弱性の原因となる場合があります。 System.Uri クラスを使用すると、安全な方法でこのサービスを実現できます。|  

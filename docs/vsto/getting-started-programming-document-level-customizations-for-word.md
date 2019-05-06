@@ -30,10 +30,10 @@ ms.locfileid: "62971798"
 
  詳細については、「[ドキュメント レベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)」を参照してください。
 
-## <a name="create-document-level-projects-for-word"></a>Word 用ドキュメント レベルのプロジェクトを作成します。
- Word 用ドキュメント レベルのカスタマイズを作成する Word 文書または Word テンプレート プロジェクト テンプレートを使用して、**新しいプロジェクト** ダイアログ ボックス。 これらのテンプレートには必要なアセンブリ参照とプロジェクト ファイルが含まれています。
+## <a name="create-document-level-projects-for-word"></a>Word 用のドキュメント レベル プロジェクトの作成
+ Word 用のドキュメント レベルのカスタマイズを作成するには、**新しいプロジェクト** ダイアログ ボックスの中の Word 文書または Word テンプレート プロジェクト テンプレートを使用します。 これらのテンプレートには必要なアセンブリ参照とプロジェクト ファイルが含まれています。
 
- Word 用ドキュメント レベルのプロジェクトを作成する方法の詳細については、次を参照してください。[方法。Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。 プロジェクト テンプレートの詳細については、「[Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)」を参照してください。
+ Word 用のドキュメント レベルのプロジェクトを作成する方法の詳細については、「[Visual Studio で Office プロジェクトを作成する方法](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。 プロジェクト テンプレートの詳細については、「[Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)」を参照してください。
 
 ## <a name="program-word-documents-by-using-host-items-host-controls"></a>ホスト項目とホスト コントロールを使用した Word 文書のプログラミング
  *ホスト項目*と*ホスト コントロール*はドキュメント レベルのカスタマイズのプログラミング モデルを提供するクラスです。
@@ -59,12 +59,12 @@ ms.locfileid: "62971798"
  コンテンツ コントロールと<xref:Microsoft.Office.Tools.Word.Bookmark> コントロールは、**データソース** ウィンドウからドラッグできるコントロールのリストにあります。 この方法でコンテンツ コントロールやブックマークを追加すると、それらはウィンドウを使用して設定したデータ ソースに自動的にバインドされます。 コードを記述しなくても、データベース、サービス、およびビジネス オブジェクトからデータを表示できます。 詳細については、「[Office ソリューションでのコントロールへのデータのバインド](../vsto/binding-data-to-controls-in-office-solutions.md)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
- Word 用ドキュメント レベルのカスタマイズを作成する方法についてを参照してください。[チュートリアル。最初の Word 用ドキュメント レベルのカスタマイズの作成](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md) このチュートリアルでは、Visual Studio と Word のドキュメント レベルのカスタマイズのプログラミング モデルでの Office 開発ツールについて説明します。
+ Word 用のドキュメント レベルのカスタマイズを作成する方法については、「[チュートリアル:最初の Word 用ドキュメント レベルのカスタマイズの作成](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)」を参照してください。 このチュートリアルでは、Visual Studio と Word ドキュメント レベルのカスタマイズのプログラミング モデルでの Office 開発ツールについて説明します。
 
- Word プロジェクトで、一般的なタスクを解説しているトピックの一覧は、次を参照してください。 [Office プログラミングで一般的なタスク](../vsto/common-tasks-in-office-programming.md)します。
+ Word プロジェクトでの一般的なタスクを解説しているトピックの一覧については、「[Office プログラミングでの一般的なタスク](../vsto/common-tasks-in-office-programming.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [方法: Visual Studio での Office プロジェクトを作成します。](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [方法: Visual Studio での Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)
 - [Word ソリューション](../vsto/word-solutions.md)
 - [チュートリアル: 最初の Word 用ドキュメント レベルのカスタマイズの作成](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)

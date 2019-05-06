@@ -13,7 +13,7 @@ ms.workload:
 - vssdk
 ms.openlocfilehash: 86a41c0b548cc457853ecd1190c84f1ced846e58
 ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/22/2019
 ms.locfileid: "56694531"
@@ -61,7 +61,7 @@ ms.locfileid: "56694531"
 
 - [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)デバッグ サーバーと、デバッグ パッケージ間の通信に使用されるプロトコルを示す値。
 
-- [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)さまざまな種類のコンス トラクターを選択します。
+- [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)さまざまな種類のコンストラクターを選択します。
 
 - [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)メモリの 2 つのコンテキストを比較するための条件を指定します。
 

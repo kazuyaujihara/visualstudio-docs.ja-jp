@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 167d9be908cef7e597e568a1fa60b4285960ad80
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58974623"
@@ -45,7 +45,7 @@ ms.locfileid: "58974623"
 
 - コマンド文字列をビルドする前に、型とコンテンツの両方のユーザー入力を検証します。
 
-  次[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]型を実装、<xref:System.Data.IDbCommand.CommandText%2A>プロパティまたは文字列引数を使用して、プロパティを設定するコンス トラクターを提供します。
+  次[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]型を実装、<xref:System.Data.IDbCommand.CommandText%2A>プロパティまたは文字列引数を使用して、プロパティを設定するコンストラクターを提供します。
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> および <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 

@@ -14,7 +14,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b435507c84d697ef27a2b37d6153a53dbe13cb3c
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58975929"
@@ -22,7 +22,7 @@ ms.locfileid: "58975929"
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-さまざまな種類のコンス トラクターを選択します。  
+さまざまな種類のコンストラクターを選択します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -44,13 +44,13 @@ public enum ConstructorMatchOptions { 
   
 ## <a name="members"></a>メンバー  
  crAll  
- すべてのコンス トラクターを選択します。  
+ すべてのコンストラクターを選択します。  
   
  crNonStatic  
- 非静的コンス トラクターを選択します。  
+ 非静的コンストラクターを選択します。  
   
  crStatic  
- 静的コンス トラクターを選択します。  
+ 静的コンストラクターを選択します。  
   
 ## <a name="remarks"></a>Remarks  
  引数として渡される、 [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)メソッド。  

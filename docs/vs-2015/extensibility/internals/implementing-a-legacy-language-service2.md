@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a5f419b3b4c55538e8aa46d5aefb3f7e21369be
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58962881"
@@ -231,7 +231,7 @@ namespace TestLanguagePackage
  言語サービス全体で使用するアイコンの一覧を提供するには、オーバーライド、<xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.LanguageService>クラスを返す、<xref:System.Windows.Forms.ImageList>アイコンを格納しています。 基本<xref:Microsoft.VisualStudio.Package.LanguageService>クラスは、既定のアイコンのセットを読み込みます。 アイコンを必要としている場所の正確なイメージのインデックスを指定するため、独自のイメージ リストの配置方法を決めします。  
   
 ### <a name="images-used-in-intellisense-completion-lists"></a>IntelliSense のコンプリート リストで使用されるイメージ  
- 各項目に対して、IntelliSense のコンプリート リストのイメージのインデックスが指定された、<xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A>のメソッド、<xref:Microsoft.VisualStudio.Package.Declarations>クラスは、イメージのインデックスを指定する場合にオーバーライドする必要があります。 返される値、<xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A>メソッドは、インデックスに指定されたイメージの一覧に、<xref:Microsoft.VisualStudio.Package.CompletionSet>クラスのコンス トラクターとは、同じイメージのリストから返されます、<xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A>メソッドで、 <xref:Microsoft.VisualStudio.Package.LanguageService> (を変更するイメージ リスト クラス使用して、<xref:Microsoft.VisualStudio.Package.CompletionSet>をオーバーライドする場合、<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.Source>別のイメージの一覧を提供するクラス)。  
+ 各項目に対して、IntelliSense のコンプリート リストのイメージのインデックスが指定された、<xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A>のメソッド、<xref:Microsoft.VisualStudio.Package.Declarations>クラスは、イメージのインデックスを指定する場合にオーバーライドする必要があります。 返される値、<xref:Microsoft.VisualStudio.Package.Declarations.GetGlyph%2A>メソッドは、インデックスに指定されたイメージの一覧に、<xref:Microsoft.VisualStudio.Package.CompletionSet>クラスのコンストラクターとは、同じイメージのリストから返されます、<xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A>メソッドで、 <xref:Microsoft.VisualStudio.Package.LanguageService> (を変更するイメージ リスト クラス使用して、<xref:Microsoft.VisualStudio.Package.CompletionSet>をオーバーライドする場合、<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.Source>別のイメージの一覧を提供するクラス)。  
   
 ### <a name="images-used-in-the-navigation-bar"></a>ナビゲーション バーで使用されるイメージ  
  **ナビゲーション バー**型およびメンバーの一覧が表示され、使用の迅速なナビゲーション アイコンを表示することができます。 これらのアイコンがから取得した、<xref:Microsoft.VisualStudio.Package.LanguageService.GetImageList%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.LanguageService>クラスで、専用のオーバーライドすることはできません、**ナビゲーション バー**します。 コンボ ボックスを表すリストがいっぱいになるためのコンボ ボックス内の各項目のインデックスが指定されて、<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars>クラス (を参照してください[従来の言語サービスでのナビゲーションバーのサポート](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)). これらのイメージのインデックスは、のバージョンのでは通常、パーサーから何らかの方法で取得した、<xref:Microsoft.VisualStudio.Package.Declarations>クラス。 完全に依存するは、インデックスを取得する方法です。  
