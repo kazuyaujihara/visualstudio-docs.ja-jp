@@ -10,12 +10,12 @@ ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d17331c9a18132a882f02c3ecbdc66ca8111e1e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8cf3969dda783882f24d02a748f345cdb66fe413
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410071"
 ---
 # <a name="notifying-the-port"></a>ポートへの通知
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,12 +33,12 @@ ms.locfileid: "58972273"
    プログラムでは、ポートは、プログラムの新しいノードを最初に受信すると、作成、 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)をプログラムを表すインターフェイス。  
   
 > [!NOTE]
->  これと混同しないで、`IDebugProgram2`デバッグ エンジン (DE) によって後で作成されたインターフェイスです。  
+> これと混同しないで、`IDebugProgram2`デバッグ エンジン (DE) によって後で作成されたインターフェイスです。  
   
  ポートの送信、 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) COM を使用してセッション デバッグ マネージャー (SDM) にプログラムの作成イベント`IConnectionPoint`インターフェイス。  
   
 > [!NOTE]
->  これは、必要がありますと混同しない、`IDebugProgramCreateEvent2`インターフェイス、DE、後で送信されます。  
+> これは、必要がありますと混同しない、`IDebugProgramCreateEvent2`インターフェイス、DE、後で送信されます。  
   
  ポートの送信イベント インターフェイス自体と共に、 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)、 [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)、および[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)インターフェイス、ポートを表し、処理、およびプログラム、それぞれします。 SDM コール[IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)プログラムをデバッグできる DE の GUID を取得します。 GUID がから最初に取得された、 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)インターフェイス。  
   

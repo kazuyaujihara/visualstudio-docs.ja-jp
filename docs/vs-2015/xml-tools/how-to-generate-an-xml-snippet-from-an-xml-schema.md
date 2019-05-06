@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0e1ea270511a92df96fdb4cc38367074f224060
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431017"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>方法: XML スキーマから XML スニペットを生成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ XML エディターは、XML スキーマ定義言語 (XSD) スキーマから X
  このセクションでは、スキーマから XML スニペットを生成する XML エディターの機能を使用する手順を示します。  
   
 > [!NOTE]
->  この手順を開始する前に、スキーマ ファイルをローカル コンピューターに保存してください。  
+> この手順を開始する前に、スキーマ ファイルをローカル コンピューターに保存してください。  
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>新しい XML ファイルを作成して XML スキーマに関連付けるには  
   

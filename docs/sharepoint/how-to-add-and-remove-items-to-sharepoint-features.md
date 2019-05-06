@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f3454ca7c01b44dcae60156e93bffde351209cc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966901"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>方法: 項目を SharePoint の機能を追加および削除
   SharePoint ソリューションを作成するときに、Visual Studio は、機能に既定の SharePoint プロジェクト項目を追加します。 、展開前に追加し、SharePoint の機能を変更する SharePoint プロジェクト項目を削除することができます。

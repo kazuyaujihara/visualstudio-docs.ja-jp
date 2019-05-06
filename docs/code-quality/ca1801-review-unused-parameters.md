@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ee9500938feb893627069e9a83f3052fa84bc224
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545512"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801:使用されていないパラメーターの確認
 
@@ -38,11 +38,11 @@ ms.locfileid: "55949552"
 
 - イベント ハンドラーとして使用されるメソッド。
 
-- 宣言されたメソッド、 `abstract` (`MustOverride` Visual Basic) 修飾子。
+- 宣言されたメソッド、 `abstract` (`MustOverride` Visual basic) 修飾子。
 
-- 宣言されたメソッド、 `virtual` (`Overridable` Visual Basic) 修飾子。
+- 宣言されたメソッド、 `virtual` (`Overridable` Visual basic) 修飾子。
 
-- 宣言されたメソッド、 `override` (`Overrides` Visual Basic) 修飾子。
+- 宣言されたメソッド、 `override` (`Overrides` Visual basic) 修飾子。
 
 - 宣言されたメソッド、 `extern` (`Declare` Visual Basic でのステートメント) 修飾子。
 

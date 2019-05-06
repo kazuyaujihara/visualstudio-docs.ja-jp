@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 504c985bd276a891b76e8c9b2a7c0ef51c3a490a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576729"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720:識別子には型名を含めないでください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "58975781"
  外部から参照できるメンバーの名前には、言語固有のデータ型の名前が含まれています。
 
 ## <a name="rule-description"></a>規則の説明
- パラメーターおよびメンバーの名前は、その意味は、開発ツールが提供する予定されている、型を説明するよりもを通信に使用される向上します。 データ型の名前を使用する場合は、メンバーの名前は、言語固有ではなく、言語に依存しない名前を使用します。 など、C# の型名 'int' ではなく、言語に依存しないデータ型の名前、Int32 を使用します。
+ パラメーターおよびメンバーの名前は、その意味は、開発ツールが提供する予定されている、型を説明するよりもを通信に使用される向上します。 データ型の名前を使用する場合は、メンバーの名前は、言語固有ではなく、言語に依存しない名前を使用します。 など、c# の型名 'int' ではなく、言語に依存しないデータ型の名前、Int32 を使用します。
 
  各トークンのパラメーターまたはメンバーの名前は、大文字と小文字で、次の言語に固有のデータ型名に対してチェックされます。
 

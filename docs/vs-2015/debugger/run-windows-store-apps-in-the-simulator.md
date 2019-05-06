@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61c56636eec92f28468533b7c4d9a51e6f120363
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0588d887cc1ba36a1ebb71df933686f68be524fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426624"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>シミュレーターでの Windows ストア アプリの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Windows ストア アプリ用の Visual Studio シミュレーターは、Windo
  Windows Phone について詳しくは、「 [Run Windows Phone apps in the emulator](../debugger/run-windows-phone-apps-in-the-emulator.md) 」を参照してください。  
   
 > [!IMPORTANT]
->  Visual Studio 2015 シミュレーターには、位置情報ボタンがありません。 これは、Windows 10 シミュレーターに位置情報シミュレーションが含まれていないためです。 この種のシミュレーションを行う必要がある場合は、Windows 8.1 以前のオペレーティング システム上で Visual Studio 2013 シミュレーターを使用できます。  
+> Visual Studio 2015 シミュレーターには、位置情報ボタンがありません。 これは、Windows 10 シミュレーターに位置情報シミュレーションが含まれていないためです。 この種のシミュレーションを行う必要がある場合は、Windows 8.1 以前のオペレーティング システム上で Visual Studio 2013 シミュレーターを使用できます。  
   
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> シミュレーターをターゲットとして設定する  
  Windows ストア アプリをシミュレーターで実行するには、デバッガーの **標準** ツールバーの **[デバッグの開始]** ボタンの横にあるドロップダウン リストの **[シミュレーター]** をクリックします。  
@@ -86,10 +86,10 @@ Windows ストア アプリ用の Visual Studio シミュレーターは、Windo
  シミュレーターを任意の方向に 90 度回転させることで、デバイスの方向を縦長と横長の間で切り替えることができます。  
   
 > [!NOTE]
->  シミュレーターでは、プロジェクトのプロパティ [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) は考慮されません。 たとえば、プロジェクトで方向が `Landscape`に設定されている場合でも、シミュレーターの方向を回転させて縦向きにすると、シミュレーターに表示されるイメージも回転され、サイズが変更されます。 実際のデバイスでこれらの設定をテストしてください。  
+> シミュレーターでは、プロジェクトのプロパティ [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) は考慮されません。 たとえば、プロジェクトで方向が `Landscape`に設定されている場合でも、シミュレーターの方向を回転させて縦向きにすると、シミュレーターに表示されるイメージも回転され、サイズが変更されます。 実際のデバイスでこれらの設定をテストしてください。  
   
 > [!NOTE]
->  シミュレーターを回転させたときに、シミュレーターの 1 つの辺がシミュレーターを表示している画面よりも大きくなる場合、シミュレーターのサイズは画面に収まるように自動的に変更されます。 シミュレーターは、再度回転させた場合でも、元のサイズに戻ることはありません。  
+> シミュレーターを回転させたときに、シミュレーターの 1 つの辺がシミュレーターを表示している画面よりも大きくなる場合、シミュレーターのサイズは画面に収まるように自動的に変更されます。 シミュレーターは、再度回転させた場合でも、元のサイズに戻ることはありません。  
   
 ## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> シミュレートされる画面のサイズと解像度を変更する  
  シミュレートされる画面のサイズと解像度を変更するには、パレットの **[解像度の変更]** ボタンをクリックし、一覧から新しいサイズと解像度を選択します。  
@@ -97,13 +97,13 @@ Windows ストア アプリ用の Visual Studio シミュレーターは、Windo
  画面サイズと解像度は *画面の幅 (インチ)、ピクセル幅 X ピクセル高さ*で一覧表示されます。 画面のサイズと解像度の両方がシミュレートされます。 シミュレーター上の位置座標は、選択したデバイスのサイズと解像度の座標に変換されます。  
   
 > [!NOTE]
->  ビットマップ イメージのスケーリングされたバージョンをアプリに保存できます。Windows は、現在のスケールで正しいイメージを読み込みます。 詳細については、「 [レスポンシブ デザイン 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)」をご覧ください。 ただし、Windows によって解像度に合ったイメージが選択されるようにシミュレーターの解像度を変更した場合、新しいイメージを表示するにはデバッグ セッションを停止して再度開始する必要があります。  
+> ビットマップ イメージのスケーリングされたバージョンをアプリに保存できます。Windows は、現在のスケールで正しいイメージを読み込みます。 詳細については、「 [レスポンシブ デザイン 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)」をご覧ください。 ただし、Windows によって解像度に合ったイメージが選択されるようにシミュレーターの解像度を変更した場合、新しいイメージを表示するにはデバッグ セッションを停止して再度開始する必要があります。  
   
 ## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Windows ストアに送信するアプリのスクリーンショットをキャプチャする  
  Windows アプリ ストアにアプリを送信するときは、アプリのスクリーンショットを含める必要があります。  
   
 > [!NOTE]
->  スクリーンショットは、シミュレーターの現在の解像度で保存されます。 解像度を変更するには、 **[解像度の変更]** ボタンをクリックします。  
+> スクリーンショットは、シミュレーターの現在の解像度で保存されます。 解像度を変更するには、 **[解像度の変更]** ボタンをクリックします。  
   
 - シミュレーターからアプリのスクリーンショットを作成するには、 **[クリップボードにスクリーンショットをキャプチャします]** ボタンをクリックします。  
   

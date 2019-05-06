@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903647"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio デバッガーで擬似変数
 擬似変数は、変数ウィンドウまたは **[クイック ウォッチ]** ダイアログ ボックスに特定の情報を表示するときに使用される用語です。 通常の変数を入力するときと同様に、擬似変数を入力できます。 ただし、擬似変数は変数ではなく、プログラム内の変数名に対応しません。

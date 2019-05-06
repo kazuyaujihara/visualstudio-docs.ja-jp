@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2adf068fb1e0a668cb6382398601f6aca4743efa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897288"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace を使って配置後に問題を診断します (C#、Visual Basic)
 
@@ -329,7 +329,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 
   - **BuiltSolution**:ソリューション ファイルへのパスを検索して、対応するソリューションを開く Visual Studio を使用します。 これは、 **SolutionPath** MsBuild プロパティの内容です。
 
-    例えば:
+    例:
 
   - **TFS**
 

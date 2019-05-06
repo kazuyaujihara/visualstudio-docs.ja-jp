@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 825ccbf0750c1b8ac07fe02ea87ae6eddee4f455
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976751"
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>[テーマの構成] ダイアログ ボックス (レガシ)
 このトピックで説明する方法を使用して、**テーマの構成** ダイアログ ボックスで、従来の[!INCLUDE[wfd1](../includes/wfd1-md.md)]します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0e10c77fb7e4fd3e7a679e9954140760c282952b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917654"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 このメソッドは、プロセスでホストされる言語を設定します。 この言語は、適切な式エバリュエーターを読み込めません (DE) デバッグ エンジンで使用できます。

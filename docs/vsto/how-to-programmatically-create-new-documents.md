@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4940b5f5064fdb47439ad6b38b855785ae06c781
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575131"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>方法: プログラムで新しいドキュメントを作成します。
   プログラムによって作成される新しい文書は、ネイティブの <xref:Microsoft.Office.Interop.Word.Document> オブジェクトです。 このオブジェクトは、<xref:Microsoft.Office.Tools.Word.Document> ホスト項目のような付加的なイベントやデータ バインディング機能を備えていません。 詳細については、次を参照してください。[ホスト項目とホスト コントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)します。

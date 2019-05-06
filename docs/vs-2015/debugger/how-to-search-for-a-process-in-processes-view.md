@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0accb5165b1aded6318012ffb07755a63222283c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431726"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>方法: プロセス ビューでプロセスを検索する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58972721"
 4. 値を指定しないすべてのフィールドをオフにします。  
   
    > [!TIP]
-   >  モジュールによって所有されているすべてのプロセスを検索するには、オフ、**プロセス**ボックスに、モジュール名を入力し、**モジュール**ボックス。 使用して**次を検索**プロセスの検索を続行します。  
+   > モジュールによって所有されているすべてのプロセスを検索するには、オフ、**プロセス**ボックスに、モジュール名を入力し、**モジュール**ボックス。 使用して**次を検索**プロセスの検索を続行します。  
   
 5. 選択**を**または**ダウン**方向を検索します。  
   

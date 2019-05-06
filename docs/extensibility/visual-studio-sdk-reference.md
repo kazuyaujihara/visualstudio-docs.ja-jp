@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 62f5547da6e2181590b231175a409c505f3da7a0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824378"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK リファレンス
 このセクションには、Visual Studio SDK を使用する開発者向けの Visual Studio の名前空間、関連する名前空間、および関心のあるその他の領域に関する情報が含まれています。

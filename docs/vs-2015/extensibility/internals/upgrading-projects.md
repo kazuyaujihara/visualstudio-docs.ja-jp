@@ -12,12 +12,12 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e838cb02aa1a620356f96d9e77f1752797ac409
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441242"
 ---
 # <a name="upgrading-projects"></a>プロジェクトのアップグレード
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60100600"
  関連するすべてのグローバル ファイルを更新した後は、各プロジェクト ファクトリは、プロジェクトをインスタンス化を選択できます。 プロジェクトの実装をサポートする必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>します。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>すべての関連するプロジェクト項目のアップグレードにはメソッドが呼び出されます。  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>メソッドが SVsUpgradeLogger サービスを提供できません。 このサービスを呼び出すことによって取得できる<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>します。  
+> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>メソッドが SVsUpgradeLogger サービスを提供できません。 このサービスを呼び出すことによって取得できる<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>します。  
   
 ## <a name="best-practices"></a>ベスト プラクティス  
  使用して、<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>編集する前にファイルを編集することができ、保存する前に保存できるかどうかにチェックするサービス。 これにより、バックアップと、アップグレードの実装がソース管理下にあるプロジェクト ファイル、権限の不足などのファイルを処理します。  

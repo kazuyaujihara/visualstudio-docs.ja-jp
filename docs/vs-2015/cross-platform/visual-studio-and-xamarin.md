@@ -8,12 +8,12 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a38e711a8a0244992f9958b4d48920f3437a8329
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 098d94a1aed9020271db5010e278a4aa8fc68330
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442129"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio と Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Xamarin はネイティブの iOS、Android、および Windows のアプリを�
   [任意のエディションの Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community、Professional、および Enterprise) で、Xamarin のすべての機能を使用することができます。 2016 年 3 月 31日の時点で、Xamarin はすべてのエディションの Visual Studio 2015 に含まれており、個別のライセンスは不要になりました。 Visual Studio 2013 については、「[セットアップとインストール](../cross-platform/setup-and-install.md)」で説明されているように、Xamarin を個別にインストールすることができます。  
   
 > [!NOTE]
->  これらの手順では、Windows および Visual Studio を背景とした場合の最も簡単で単純なコンピューターの構成について説明します。 この構成を使用すると、Mac と対話するだけで iOS シミュレーターとテザリングされたデバイスを使用できるので、開発作業全体が簡略化されます。 Mac に慣れている場合には、Parallels/VMWare 内の Visual Studio を実行するか、Xamarin Studio Community を使用することをお勧めします。 詳細については、「[Setup, install, and verifications for Mac users](../cross-platform/setup-install-and-verifications-for-mac-users.md)」(Mac ユーザー向けのセットアップ、インストール、および 検証) をご覧ください。  
+> これらの手順では、Windows および Visual Studio を背景とした場合の最も簡単で単純なコンピューターの構成について説明します。 この構成を使用すると、Mac と対話するだけで iOS シミュレーターとテザリングされたデバイスを使用できるので、開発作業全体が簡略化されます。 Mac に慣れている場合には、Parallels/VMWare 内の Visual Studio を実行するか、Xamarin Studio Community を使用することをお勧めします。 詳細については、「[Setup, install, and verifications for Mac users](../cross-platform/setup-install-and-verifications-for-mac-users.md)」(Mac ユーザー向けのセットアップ、インストール、および 検証) をご覧ください。  
   
 > [!NOTE]
->  HTML および CSS ベースでのクロスプラットフォーム開発ソリューションをお探しの場合は、「[Cross-Platform Development in Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML)」(Visual Studio でのクロスプラットフォーム開発) に説明されている Visual Studio Tools for Apache Cordova をご確認ください。
+> HTML および CSS ベースでのクロスプラットフォーム開発ソリューションをお探しの場合は、「[Cross-Platform Development in Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML)」(Visual Studio でのクロスプラットフォーム開発) に説明されている Visual Studio Tools for Apache Cordova をご確認ください。

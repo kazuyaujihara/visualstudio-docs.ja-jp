@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc9b13ce1de0464db353fa5935d14ad8c8b328d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442836"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 静的コード分析によるストア アプリの C++ コード品質の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  問題を理解した後は、コード内で解決できます。 その後、コード分析に戻り、[コード分析] ウィンドウに警告が表示されなくなったことと、修正によって新たな警告が発生していないことを確認します。
 
 > [!TIP]
->  コード分析は、[コード分析] ウィンドウから再実行できます。 **[分析]** ボタンをクリックし、分析の範囲を選択します。 ソリューション全体または選択したプロジェクトの分析を再実行できます。
+> コード分析は、[コード分析] ウィンドウから再実行できます。 **[分析]** ボタンをクリックし、分析の範囲を選択します。 ソリューション全体または選択したプロジェクトの分析を再実行できます。
 
 ## <a name="BKMK_Suppress"></a> コード分析警告の抑制
  コード分析警告の修正を行わないことを決定する場合があります。 コードを実装したときの警告の発生確率と、警告を解決するためのコード変更の量を比較して、解決しないことを選択できます。 または、警告で使用された分析が特定のコンテキストでは不適切であると判断できます。 個々の警告を抑制して、[コード分析] ウィンドウに表示されないように設定できます。

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 05dc1643ecd05277baeba50bb00320d2f3a89abe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971265"
 ---
 # <a name="receive-activity-designer"></a>Receive アクティビティ デザイナー
 **受信**作成および構成するアクティビティ デザイナーが使用される、<xref:System.ServiceModel.Activities.Receive>アクティビティ。 <xref:System.ServiceModel.Activities.Receive> アクティビティは、メッセージ (<xref:System.ServiceModel.Channels.Message>、<xref:System.IO.Stream>、<xref:System.Xml.Linq.XElement> などの組み込みの型、アプリケーション定義のデータ コントラクト、メッセージ コントラクト、またはシリアル化可能な XML クラス) を受信するアクティビティです。  

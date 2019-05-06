@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f45b8c07cf03dc83969c3500c80b8ee215e3ad69
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898725"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;要素 (ブートス トラップ)
 `RelatedProducts`要素は、現在の製品に含まれるかに依存する他の製品を定義します。

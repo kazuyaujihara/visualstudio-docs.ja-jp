@@ -11,12 +11,12 @@ ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e210d8c03d3e99cf1e37608f5b65d5a4ab0656f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 24a4db907ec859c6075c06956f86939047379897
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409371"
 ---
 # <a name="custom-colorable-items"></a>カスタムの配色可能な項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "58973780"
  IDE の配色可能な項目のユーザー オーバーライドをによって処理されるため、**フォントおよび色** ダイアログ ボックスでのみ各カスタム装飾が可能な項目を名前を指定する必要があります。 この名前に表示されます、**表示項目**一覧。 装飾が可能な項目は、アルファベット順に表示されます。 言語サービスのカスタムの配色可能な項目をグループ化することができますを開始する各名、言語の名前、たとえば**NewLanguage - コメント**と**NewLanguage - キーワード**します。  
   
 > [!CAUTION]
->  既存の装飾が可能な項目名の競合を回避するために装飾が可能な項目名には、言語の名前を含める必要があります。 開発中に、装飾が可能な項目の 1 つの名前を変更する場合は、初めてアクセスされた装飾が可能な項目が作成されたキャッシュをリセットする必要があります。 通常は、ディレクトリで、Visual Studio SDK と共にインストールされる CreateExpInstance ツールを使用して実験的なキャッシュをリセットします。  
+> 既存の装飾が可能な項目名の競合を回避するために装飾が可能な項目名には、言語の名前を含める必要があります。 開発中に、装飾が可能な項目の 1 つの名前を変更する場合は、初めてアクセスされた装飾が可能な項目が作成されたキャッシュをリセットする必要があります。 通常は、ディレクトリで、Visual Studio SDK と共にインストールされる CreateExpInstance ツールを使用して実験的なキャッシュをリセットします。  
 >   
->  **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+> **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
->  キャッシュをリセットするには、呼び出す`CreateExpInstance /Reset`します。 CreateExpInstance の詳細については、次を参照してください。 [CreateExpInstance ユーティリティ](../../extensibility/internals/createexpinstance-utility.md)します。  
+> キャッシュをリセットするには、呼び出す`CreateExpInstance /Reset`します。 CreateExpInstance の詳細については、次を参照してください。 [CreateExpInstance ユーティリティ](../../extensibility/internals/createexpinstance-utility.md)します。  
   
  装飾が可能な項目の一覧の最初の項目が参照されていることはありません。 最初の項目は、0 の装飾が可能な項目のインデックスに対応し、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]は常に既定のテキストの色とその項目の属性に提供します。 この参照されていない項目の処理の最も簡単な方法では、最初の項目として一覧内のプレース ホルダーの装飾が可能な項目を指定します。  
   
@@ -71,4 +71,4 @@ ms.locfileid: "58973780"
  [構文のカスタム エディターで色分け表示](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [構文の色分け、従来の言語サービス](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [構文の色分けを実装します。](../../extensibility/internals/implementing-syntax-coloring.md)   
- [方法: 組み込みの配色可能な項目を使用して、](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+ [方法: ビルトインの配色可能な項目の使用](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

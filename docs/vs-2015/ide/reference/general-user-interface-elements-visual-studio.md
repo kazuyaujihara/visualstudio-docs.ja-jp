@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 39669408402a12ce8010865606e2a2ec3929569b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537603"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>一般的なユーザー インターフェイス要素 (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "54756393"
 
  [[オプション]-[テキスト エディター]、C/C++ の高度な](../../ide/reference/options-text-editor-c-cpp-advanced.md)C または C++ ファイルの高度なオプションを指定することができます。
 
- [オプション、テキスト エディターでは、C#、書式設定](../../ide/reference/options-text-editor-csharp-formatting.md)C# ファイルの書式設定オプションを指定することができます。
+ [オプション、テキスト エディターでは、c#、書式設定](../../ide/reference/options-text-editor-csharp-formatting.md)c# ファイルの書式設定オプションを指定することができます。
 
- [詳細オプション、テキスト エディターでは、C#](../../ide/reference/options-text-editor-csharp-advanced.md) C# ファイルの高度なオプションを指定することができます。
+ [詳細オプション、テキスト エディターでは、C#](../../ide/reference/options-text-editor-csharp-advanced.md) c# ファイルの高度なオプションを指定することができます。
 
- [[オプション]-[テキスト エディター]、C#、IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) C# ファイルの IntelliSense オプションを指定することができます。
+ [[オプション]-[テキスト エディター]、c#、IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) c# ファイルの IntelliSense オプションを指定することができます。
 
  [として、オプション、テキスト エディター、XAML、書式設定](../../ide/reference/options-text-editor-xaml-formatting.md)XAML ファイルの書式設定オプションを指定することができます。
 

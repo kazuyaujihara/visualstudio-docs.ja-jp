@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438884"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>[ルール セット エディター] ダイアログ ボックス (レガシ)
 このトピックで説明する方法を使用して、**ルール セット エディター**  ダイアログ ボックスで、従来の[!INCLUDE[wfd1](../includes/wfd1-md.md)]します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。  
@@ -26,12 +26,12 @@ ms.locfileid: "58977542"
  **ルール セット エディター**ダイアログ ボックスを使用して作成および変更を[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)ルール セットは .rules ファイルにシリアル化します。  
   
 > [!NOTE]
->  使って .rules ファイルを開きたい場合、**エンコード付き XML エディター**、ワークフローまたはアクティビティに関連付けられているデザイナー ウィンドウをまず閉じる必要があります。  
+> 使って .rules ファイルを開きたい場合、**エンコード付き XML エディター**、ワークフローまたはアクティビティに関連付けられているデザイナー ウィンドウをまず閉じる必要があります。  
   
  アクセスする方法については、**ルール セット エディター**ダイアログ ボックスを参照してください[方法。PolicyActivity ルール セット (レガシ) 作成](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)です。  
   
 > [!WARNING]
->  [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする場合に使用される、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]のルール エディターは、複数バージョン対応機能をサポートしていません。  
+> [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする場合に使用される、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]のルール エディターは、複数バージョン対応機能をサポートしていません。  
   
  次の表に、ユーザー インターフェイス (UI) 要素の**ルール セット エディター**  ダイアログ ボックス。  
   

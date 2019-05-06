@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3eca61e696fea82952e3efde5cea1f6164d5bab5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ace8b173eb20b6e628fbb7066ff9010624cca9e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441960"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Visual Studio でのカスタム ビルド イベントの指定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,35 +25,35 @@ ms.locfileid: "54775847"
 
  使用するプログラミング言語に関する具体的な情報については、次のトピックを参照してください。
 
--   Visual Basic-- [方法 : ビルド イベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
+- Visual Basic -- [方法: ビルド イベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)」を参照してください。
 
--   Visual C# および F# -- [方法: ビルド イベントの指定 (C#)](../ide/how-to-specify-build-events-csharp.md)
+- Visual C# および F# -- [方法:ビルド イベントを指定する (C#)](../ide/how-to-specify-build-events-csharp.md).
 
--   Visual C++ -- [ビルド イベントの指定](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc)
+- Visual C++ -- [ビルド イベントの指定](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc)
 
 ## <a name="syntax"></a>構文
  ビルド イベントは、DOS コマンドと同じ構文に従いますが、マクロを使用すると、ビルド イベントをより簡単に作成することができます。 使用可能なマクロの一覧については、「[[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)」を参照してください。
 
  最適な結果を得るには、次のような書式のヒントに従います。
 
--   .bat ファイルを実行するすべてのビルド イベントの前に `call` ステートメントを追加します。
+- .bat ファイルを実行するすべてのビルド イベントの前に `call` ステートメントを追加します。
 
      例 : `call C:\MyFile.bat`
 
      例 : `call C:\MyFile.bat call C:\MyFile2.bat`
 
--   ファイルのパスを引用符で囲みます。
+- ファイルのパスを引用符で囲みます。
 
      例 ([!INCLUDE[win8](../includes/win8-md.md)] の場合): "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
 
--   改行を使用して、複数のコマンドを区切ります。
+- 改行を使用して、複数のコマンドを区切ります。
 
--   必要に応じて、ワイルドカードを挿入します。
+- 必要に応じて、ワイルドカードを挿入します。
 
      例: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
     > [!NOTE]
-    >  上記のコードの `%I` は、バッチ スクリプトでは `%%I` になります。
+    > 上記のコードの `%I` は、バッチ スクリプトでは `%%I` になります。
 
 ## <a name="see-also"></a>関連項目
- [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)[ビルド前のコマンド ラインダイアログ ボックスのビルド後イベント](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild の特殊文字](../msbuild/msbuild-special-characters.md)[チュートリアル。アプリケーションをビルドするを参照してください](../ide/walkthrough-building-an-application.md)
+ [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)[ビルド前のコマンド ラインダイアログ ボックスのビルド後イベント](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild の特殊文字](../msbuild/msbuild-special-characters.md)[チュートリアル。アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)

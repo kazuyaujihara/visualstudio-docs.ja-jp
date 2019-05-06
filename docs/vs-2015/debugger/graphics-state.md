@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 485969b40fdcedd2ec8835de8d9c9a699aba9e79
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fe97461800d6f6e6eb285dd7eddb610ab2f5b5ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420071"
 ---
 # <a name="graphics-state"></a>グラフィックスの状態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Visual Studio のグラフィックス診断の [状態] ウィンドウでは�
     - **固定状態ビューの表示**  
   
 > [!IMPORTANT]
->  **[固定状態ビューの表示]** で状態を表示するには、**[API 入力状態ビューの表示]** または **[論理状態ビューの表示]** で状態を固定する必要があります。  
+> **[固定状態ビューの表示]** で状態を表示するには、**[API 入力状態ビューの表示]** または **[論理状態ビューの表示]** で状態を固定する必要があります。  
   
 ### <a name="state-table-format"></a>状態テーブルの形式  
  情報のいくつかの列を [状態] ウィンドウに表示します。  

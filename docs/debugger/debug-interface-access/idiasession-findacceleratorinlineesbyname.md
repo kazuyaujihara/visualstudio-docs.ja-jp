@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fb3caa5574605864a0dd16b59b6f451530b8e631
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827791"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 指定されたインライン関数の名前に対応するインライン フレームのシンボルの列挙を返します。
@@ -46,7 +46,7 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  この関数はインラインに起因アクセラレータ スタブ関数内でのみを検索します。 ネイティブ C++ プロシージャ レコードは無視されます。
 
 ## <a name="see-also"></a>関連項目

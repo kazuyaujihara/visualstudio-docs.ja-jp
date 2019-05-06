@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7fa5073fca476159aa756b7a5527dd1007ab66b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6159a7763176be236b925dce9fae66e5fc915682
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440401"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>実行時に Office ドキュメントにコントロールを追加します。
   コントロールは、Microsoft Office Word 文書と実行時に Microsoft Office Excel ブックを追加することができます。 実行時にも削除できます。 コントロールを追加または削除時に呼び出される*ダイナミック コントロール*します。
@@ -74,7 +74,7 @@ ms.locfileid: "60075806"
  実行時にスタティック コントロールを削除することはできません。 `Delete` メソッドまたは `Remove` メソッドを使用してスタティック コントロールを削除しようとすると、<xref:Microsoft.Office.Tools.CannotRemoveControlException> がスローされます。
 
 > [!NOTE]
->  ドキュメントの `Shutdown` イベント ハンドラーの中で、プログラムによってコントロールを削除しないでください。 `Shutdown` イベントが発生する時点では、ドキュメントの UI 要素は利用できなくなっています。 ドキュメントを閉じる前にコントロールを削除するには、Word では <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> や <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> 、Excel では <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>や <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> など、別のイベントのイベント ハンドラーにコードを追加してください。
+> ドキュメントの `Shutdown` イベント ハンドラーの中で、プログラムによってコントロールを削除しないでください。 `Shutdown` イベントが発生する時点では、ドキュメントの UI 要素は利用できなくなっています。 ドキュメントを閉じる前にコントロールを削除するには、Word では <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> や <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> 、Excel では <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>や <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> など、別のイベントのイベント ハンドラーにコードを追加してください。
 
 ## <a name="HostControls"></a> ホスト コントロールをドキュメントに追加します。
 
@@ -103,7 +103,7 @@ ms.locfileid: "60075806"
  ドキュメントを保存して閉じると、動的に作成されたすべての Windows フォーム コントロールはドキュメントから削除されます。 ソリューションにコードを追加すれば、ドキュメントが再び開かれる時点でコントロールを再作成するようにできます。 VSTO アドインを使用してダイナミック Windows フォーム コントロールを作成する場合は、コントロールの ActiveX ラッパーがドキュメントに残されます。 詳細については、次を参照してください。 [Office ドキュメントでのダイナミック コントロールを永続化](../vsto/persisting-dynamic-controls-in-office-documents.md)します。
 
 > [!NOTE]
->  Windows フォーム コントロールは、保護されているドキュメントにはプログラムで追加できません。 コントロールを追加するために、Word 文書または Excel ワークシートの保護をプログラムで解除する場合は、ドキュメントを閉じるときにコントロールの ActiveX ラッパーを削除するコードを追加で記述する必要があります。 コントロールの ActiveX ラッパーは、保護されたドキュメントから自動的には削除されません。
+> Windows フォーム コントロールは、保護されているドキュメントにはプログラムで追加できません。 コントロールを追加するために、Word 文書または Excel ワークシートの保護をプログラムで解除する場合は、ドキュメントを閉じるときにコントロールの ActiveX ラッパーを削除するコードを追加で記述する必要があります。 コントロールの ActiveX ラッパーは、保護されたドキュメントから自動的には削除されません。
 
 ### <a name="add-custom-controls"></a>カスタム コントロールの追加
  カスタム ユーザー コントロールなど、使用可能なヘルパー メソッドによってサポートされていない <xref:System.Windows.Forms.Control> を追加するには、次のメソッドを使用します。

@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951176"
 ---
 # <a name="custom-document-properties-overview"></a>カスタム ドキュメント プロパティの概要
 
-ドキュメント レベルのプロジェクトをビルドするときに Visual Studio には、プロジェクト内のドキュメントに 2 つのカスタム プロパティが追加されます。\_AssemblyLocation と\_AssemblyName。 文書を開くと、これらのカスタム ドキュメント プロパティを Microsoft Office アプリケーションによって確認されます。 ドキュメントに存在する場合、アプリケーションの読み込み、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]カスタマイズを開始します。 詳細については、[Visual Studio での Office のアーキテクチャ ソリューション](../vsto/architecture-of-office-solutions-in-visual-studio.md)を参照してください。
+ドキュメント レベルのプロジェクトをビルドするときに Visual Studio には、プロジェクト内のドキュメントに 2 つのカスタム プロパティが追加されます。\_AssemblyLocation と\_AssemblyName。 文書を開くと、これらのカスタム ドキュメント プロパティを Microsoft Office アプリケーションによって確認されます。 ドキュメントに存在する場合、アプリケーションの読み込み、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]カスタマイズを開始します。 詳細については、次を参照してください。 [Visual Studio での Office のアーキテクチャ ソリューション](../vsto/architecture-of-office-solutions-in-visual-studio.md)します。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "56614423"
 
 ## <a name="assemblylocation"></a>\_AssemblyLocation
 
-このプロパティには、カスタマイズの詳細については、配置マニフェストを提供する文字列が含まれています。 マニフェストの詳細については、[Office ソリューションでのアプリケーションと展開マニフェスト](../vsto/application-and-deployment-manifests-in-office-solutions.md)を参照してください。
+このプロパティには、カスタマイズの詳細については、配置マニフェストを提供する文字列が含まれています。 マニフェストの詳細については、次を参照してください。 [Office ソリューションでのアプリケーションと展開マニフェスト](../vsto/application-and-deployment-manifests-in-office-solutions.md)します。
 
  \_AssemblyLocation プロパティの値は、ソリューションの展開方法に応じて、異なる形式を持つことができます。
 

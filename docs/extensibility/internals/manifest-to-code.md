@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7fab8a42d5559c23ce6816d5a247561a4376a7fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909141"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 コード ツールに、マニフェストは、コンソール アプリケーションを Visual Studio イメージ サービスの .imagemanifest ファイルを受け取り、ラッパー ファイルまたはイメージ マニフェストの値では、C++、c#、VB、または Visual Studio 拡張機能の .vsct ファイルを参照するためのファイルを生成します。 このツールは、要求元のイメージから Visual Studio イメージ サービスを直接、またはコードがすべての UI とレンダリングを処理しない場合は、Api を使用してマニフェストの値を渡すために使用できるラッパー ファイルを生成します。

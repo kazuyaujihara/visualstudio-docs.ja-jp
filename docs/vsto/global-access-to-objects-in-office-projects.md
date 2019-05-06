@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e5b27eaff0b462e257d1d972c5b950cd1f5ab1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7266e7fa26574332bcb343b552eea2b707a8672b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427946"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Office プロジェクト内のオブジェクトへのグローバル アクセス
   Office プロジェクトを作成すると、Visual Studio は自動的に `Globals` という名前のクラスをプロジェクトに生成します。 `Globals` クラスを使用して、プロジェクト内の任意のコードから実行時に異なる複数のプロジェクト項目にアクセスすることができます。
@@ -74,7 +74,7 @@ ms.locfileid: "60066768"
  使用を試みるコード、`Globals`クラスのドキュメントまたは VSTO アドインが初期化される前に、実行時の例外をスロー可能性があります。 たとえば、クラス レベルの変数の宣言が `Globals` を使用することで失敗する場合があります。これは、宣言されたオブジェクトがインスタンス化される前に、 `Globals` クラスがすべてのホスト項目への参照を使用して初期化されない可能性があるためです。
 
 > [!NOTE]
->  `Globals` クラスは設計時に初期化されることはありませんが、コントロールのインスタンスがデザイナーによって作成されます。 つまりのプロパティを使用するユーザー コントロールを作成する場合、`Globals`クラスから、ユーザー コントロール クラス内でオンにしてください、プロパティが返すかどうか**null**返されたオブジェクトを使用する前にします。
+> `Globals` クラスは設計時に初期化されることはありませんが、コントロールのインスタンスがデザイナーによって作成されます。 つまりのプロパティを使用するユーザー コントロールを作成する場合、`Globals`クラスから、ユーザー コントロール クラス内でオンにしてください、プロパティが返すかどうか**null**返されたオブジェクトを使用する前にします。
 
 ## <a name="see-also"></a>関連項目
 - [実行時にリボンへのアクセスします。](../vsto/accessing-the-ribbon-at-run-time.md)

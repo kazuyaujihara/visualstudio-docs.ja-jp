@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ac0d81c9e42a5c3aa22a09d59f346e6127b1284f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961567"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>方法: ドキュメント プロパティの読み書き
   ドキュメント プロパティをドキュメントと共に保存できます。 Office アプリケーションには、作成者、タイトル、件名など、多数の組み込みプロパティが用意されています。 このトピックでは、Microsoft Office Excel および Microsoft Office Word でドキュメント プロパティを設定する方法について説明します。

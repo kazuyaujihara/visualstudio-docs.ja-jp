@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 55dfa9a360d33a73b6298f186d12810f8510b1fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: af03329a05501427f6d04d6cddbd637c3311b339
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434930"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>チュートリアル: チュートリアル : ClickOnce 配置 API を使用して必要に応じてアセンブリをダウンロードする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60063557"
 既定では、内のすべてのアセンブリに含まれる、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションが、アプリケーションを初めて実行したときにダウンロードされます。 ただし、少数のユーザーによって使用される、アプリケーションの部分があります。 その場合は、そのような型を作成するときにだけアセンブリをダウンロードすることができます。 以下のチュートリアルでは、アプリケーション内の特定のアセンブリに "オプション" マークを付ける方法、および共通言語ランタイム (CLR) でそのアセンブリが必要なときに <xref:System.Deployment.Application> 名前空間にあるクラスを使用してアセンブリをダウンロードする方法について説明します。  
   
 > [!NOTE]
->  これを行うには、アプリケーションが完全な信頼で実行する必要があります。  
+> これを行うには、アプリケーションが完全な信頼で実行する必要があります。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  このチュートリアルを完了するには、次のコンポーネントのいずれかが必要です。  

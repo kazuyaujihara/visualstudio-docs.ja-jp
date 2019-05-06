@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c4a4598b92096d968225f7420d46244aeca3dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a2354df7027f3aa73f13e830b9a85895e54c920
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419282"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>方法: プログラムによって格納および Excel の範囲内の日付値を取得
   格納して、値を取得、<xref:Microsoft.Office.Tools.Excel.NamedRange>コントロールまたはネイティブな Excel 範囲オブジェクト。
@@ -34,7 +34,7 @@ ms.locfileid: "60082907"
  Visual Studio での Office 開発ツールの使用範囲内には 1/1/1900 以降にある日付の値を格納する場合は、OLE オートメーション (OA) 形式で格納されます。 使用する必要があります、 <xref:System.DateTime.FromOADate%2A> OLE オートメーション (OA) 日付の値を取得します。 日付が 1/1/1900 より前の場合は、文字列として格納されます。
 
 > [!NOTE]
->  Excel の日付は 1900 年の最初の 2 か月間の OLE オートメーション日付によって異なります。 違いが場合、 **1904**オプションをオンにします。 次のコード例では、これらの違いは対応していません。
+> Excel の日付は 1900 年の最初の 2 か月間の OLE オートメーション日付によって異なります。 違いが場合、 **1904**オプションをオンにします。 次のコード例では、これらの違いは対応していません。
 
 ## <a name="use-a-namedrange-control"></a>NamedRange コントロールを使用します。
 

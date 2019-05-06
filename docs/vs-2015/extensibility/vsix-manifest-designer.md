@@ -14,12 +14,12 @@ ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 308259e7addcf41ae6e15191934a8c37ac3f57b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 450d306718906c3b76bf05982594045e7fd215f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387569"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX マニフェスト デザイナー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ VSIX パッケージ マニフェスト ファイルを Visual Studio 拡張機�
  開くには、 **VSIX マニフェスト デザイナー**で source.extension.vsixmanifest ファイルを見つけます**ソリューション エクスプ ローラー**、し、ファイルを開きます。 ファイルに有効な XML が含まれていない場合、マニフェスト デザイナーは開きません。  
   
 > [!NOTE]
->  パッケージのビルド時に、Source.extension.vsixmanifest は extension.vsixmanifest への出力を示します。  
+> パッケージのビルド時に、Source.extension.vsixmanifest は extension.vsixmanifest への出力を示します。  
   
 ## <a name="uielement-list"></a>UIElement の一覧  
  **VSIX マニフェスト デザイナー**これらスキーマの最上位の要素に対応する 4 つのセクションが含まれています。  

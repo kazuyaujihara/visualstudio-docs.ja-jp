@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824852"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF Data Service への WPF コントロールのバインド
 
@@ -66,7 +66,7 @@ ms.locfileid: "58069776"
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>サービスのエンティティ データ モデルを作成します。
 
-WCF Data Service を使用してアプリケーションにデータを公開するには、サービスのデータ モデルを定義する必要があります。 WCF データ サービスは、2 つの種類のデータ モデルをサポートしています。 エンティティのデータ モデル、およびカスタム データ モデルを実装する共通言語ランタイム (CLR) オブジェクトを使用して定義されている、<xref:System.Linq.IQueryable%601>インターフェイス。 このチュートリアルでは、データ モデルとして Entity Data Model を作成します。
+WCF Data Service を使用してアプリケーションにデータを公開するには、サービスのデータ モデルを定義する必要があります。 WCF データ サービスには、2 つの種類のデータ モデルがサポートされています。エンティティ データ モデルでは、およびカスタム データ モデルを実装する共通言語ランタイム (CLR) オブジェクトを使用して定義されている、<xref:System.Linq.IQueryable%601>インターフェイス。 このチュートリアルでは、データ モデルとして Entity Data Model を作成します。
 
 1. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
@@ -217,9 +217,9 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 サービスのプロキシ オブジェクトを使用して、サービスからの売上データを読み込みます。 データ ソースに返されるデータを割り当てる、 <xref:System.Windows.Data.CollectionViewSource> WPF ウィンドウ。
 
-1. 作成するため、デザイナーで、`Window_Loaded`イベント ハンドラーを読み取るテキストをダブルクリックします**MainWindow**。
+1. 作成するため、デザイナーで、`Window_Loaded`イベント ハンドラーを読み取るテキストをダブルクリックします。**MainWindow**します。
 
-2. イベント ハンドラーを次のコードで置き換えます。 このコードの *localhost* アドレスは、使用している開発コンピューターのローカル ホスト アドレスで置き換えてください。
+2.  イベント ハンドラーを次のコードで置き換えます。 このコードの *localhost* アドレスは、使用している開発コンピューターのローカル ホスト アドレスで置き換えてください。
 
      [!code-csharp[Data_WPFWCF#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_2.cs)]
      [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]
@@ -293,7 +293,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 - Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールをその他の種類のデータ ソースにバインドする方法について学習します。 詳細については、次を参照してください。[データセットにコントロールをバインドする WPF](../data-tools/bind-wpf-controls-to-a-dataset.md)します。
 
-- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 詳細については、次を参照してください。[チュートリアル: WPF アプリケーションで関連データの表示](../data-tools/display-related-data-in-wpf-applications.md)します。
+- Visual Studio の **[データ ソース]** ウィンドウを使用して、WPF コントロールでの関連するデータ (つまり、親子関係にあるデータ) を表示する方法について学習します。 詳細については、「[チュートリアル:WPF アプリケーションで関連データを表示する](../data-tools/display-related-data-in-wpf-applications.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb8bc9b9d3149112517d893cd3a704826b6d92d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421690"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>ドキュメント レベルのカスタマイズにおける XML スキーマとデータ
   **重要な**に関する Microsoft Word には、このトピックでまとめられている情報が提示の特典および個人や組織のユーザーは、米国およびその担当地域外部にあるまたはを使用しているユーザーの使用専用、または開発上で実行されるプログラム、Microsoft が特定の機能の実装を削除する場合、2010 年 1 月の前に、Microsoft によってライセンスされた Microsoft Word の製品に関連するカスタム XML から Microsoft Word です。 Microsoft Word に関するこの情報が読み取りまたは個人または組織、米国またはその区域を使用して、または、2010 年 1 月 10 日後に Microsoft によってライセンス供与された Microsoft Word の製品で実行されるプログラムの開発で使用しない可能性があります。;これらの製品では、その日付より前にライセンスまたは購入を米国外の使用ライセンスの製品と同じ動作はしません。
@@ -33,7 +33,7 @@ ms.locfileid: "60117930"
  Visual Studio の公開では、プログラミング モデル内のコントロールとしてドキュメント レベルのカスタマイズ内のスキーマ要素が割り当てられます。 For Excel では、Visual Studio は、データベース、Web サービス、およびオブジェクトのデータにコントロールをバインドするためのサポートを追加します。 Word および Excel の場合は、Visual Studio には、スキーマ マップ ドキュメントで、ソリューションの強化されたエンド ユーザー エクスペリエンスを作成するために使用する操作ウィンドウのサポートが追加されます。 詳細については、次を参照してください。[操作ウィンドウの概要](../vsto/actions-pane-overview.md)します。
 
 > [!NOTE]
->  Excel ソリューションでは、マルチパートの XML スキーマを使用できません。
+> Excel ソリューションでは、マルチパートの XML スキーマを使用できません。
 
 ## <a name="objects-created-when-schemas-are-attached-to-excel-workbooks"></a>スキーマは、Excel ブックに関連付けられているときに作成されたオブジェクト
  ブックにスキーマをアタッチするときに Visual Studio は自動的にいくつかのオブジェクトを作成し、プロジェクトに追加します。 これらのオブジェクトは削除できません Visual Studio のツールを使用して Excel で管理されているため。 それらを削除するには、ワークシートからマップされた要素を削除または Excel ツールを使用してスキーマを削除します。
@@ -52,13 +52,13 @@ ms.locfileid: "60117930"
 - BindingSource します。 作成するとき、<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>ワークシートを非繰り返しスキーマ要素をマップすることによって、<xref:System.Windows.Forms.BindingSource>が作成されると、<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>コントロールにバインドする、 <xref:System.Windows.Forms.BindingSource>。 バインドする必要があります、 <xref:System.Windows.Forms.BindingSource> 、型指定されたインスタンスなど、ドキュメントにマップするスキーマに一致するデータ ソースのインスタンスに<xref:System.Data.DataSet>作成されたクラスです。 設定して、バインドを作成、<xref:System.Windows.Forms.BindingSource.DataSource%2A>と<xref:System.Windows.Forms.BindingSource.DataMember%2A>プロパティで公開されている、**プロパティ**ウィンドウ。
 
     > [!NOTE]
-    >  <xref:System.Windows.Forms.BindingSource>は作成されません<xref:Microsoft.Office.Tools.Excel.ListObject>オブジェクト。 手動でバインドする必要があります、<xref:Microsoft.Office.Tools.Excel.ListObject>を設定して、データ ソースに、<xref:System.Windows.Forms.BindingSource.DataSource%2A>と<xref:System.Windows.Forms.BindingSource.DataMember%2A>プロパティで、**プロパティ**ウィンドウ。
+    > <xref:System.Windows.Forms.BindingSource>は作成されません<xref:Microsoft.Office.Tools.Excel.ListObject>オブジェクト。 手動でバインドする必要があります、<xref:Microsoft.Office.Tools.Excel.ListObject>を設定して、データ ソースに、<xref:System.Windows.Forms.BindingSource.DataSource%2A>と<xref:System.Windows.Forms.BindingSource.DataMember%2A>プロパティで、**プロパティ**ウィンドウ。
 
 ### <a name="office-mapped-schemas-and-the-visual-studio-data-sources-window"></a>Office はマッピング スキーマと、Visual Studio のデータ ソース ウィンドウ
  Office および Visual Studio の対応付けられたスキーマ機能**データソース**ウィンドウを使用して、レポート作成または編集するための Excel ワークシートにデータを表示できます。 どちらの場合は、Excel ワークシートにデータ要素をドラッグできます。 両方のメソッドを通じてバインドされたデータにあるコントロールの作成、<xref:System.Windows.Forms.BindingSource>などのデータ ソースに、<xref:System.Data.DataSet>または web サービス。
 
 > [!NOTE]
->  ワークシートに繰り返されるスキーマ要素をマップするときに Visual Studio が作成、<xref:Microsoft.Office.Tools.Excel.ListObject>します。 <xref:Microsoft.Office.Tools.Excel.ListObject>を使用してデータに自動的にバインドされていない、<xref:System.Windows.Forms.BindingSource>します。 手動でバインドする必要があります、<xref:Microsoft.Office.Tools.Excel.ListObject>を設定して、データ ソースに、<xref:System.Windows.Forms.BindingSource.DataSource%2A>と<xref:System.Windows.Forms.BindingSource.DataMember%2A>プロパティで、**プロパティ**ウィンドウ。
+> ワークシートに繰り返されるスキーマ要素をマップするときに Visual Studio が作成、<xref:Microsoft.Office.Tools.Excel.ListObject>します。 <xref:Microsoft.Office.Tools.Excel.ListObject>を使用してデータに自動的にバインドされていない、<xref:System.Windows.Forms.BindingSource>します。 手動でバインドする必要があります、<xref:Microsoft.Office.Tools.Excel.ListObject>を設定して、データ ソースに、<xref:System.Windows.Forms.BindingSource.DataSource%2A>と<xref:System.Windows.Forms.BindingSource.DataMember%2A>プロパティで、**プロパティ**ウィンドウ。
 
  次の表では、2 つのメソッド間の違いの一部を示します。
 

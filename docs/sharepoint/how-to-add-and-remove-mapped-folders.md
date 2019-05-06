@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d5d1acc40b23c979a5746c50be50a584d11112b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966914"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>方法: 追加して、マップされたフォルダーを削除します。
   イメージとレイアウトが深くファイル階層の埋め込まれたなどいくつかに、SharePoint では、フォルダーを使用します。 これらのフォルダーは、それらにより簡単にアクセスする SharePoint プロジェクトにマップできます。 マップされたフォルダーは、SharePoint サーバーのインストール内のファイルの物理的な場所に対応する SharePoint プロジェクトのフォルダーです。

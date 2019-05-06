@@ -12,12 +12,12 @@ ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5f27b58b4ef94f4b859b43c2321ddbd9b67327fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cc8bfff0903d2ed1554cfd8b3d5b1dcf5cf0fa8a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436653"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>従来の言語サービスのクイック ヒント
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ IntelliSense によるクイック ヒントでは、ユーザーが、識別子
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、次を参照してください。[チュートリアル。クイック ヒントの表示](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)します。  
   
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。  
   
  マネージ パッケージ フレームワーク (MPF) 言語のサービス クラスでは、IntelliSense によるクイック ヒントのツールヒントを表示するため完全なサポートを提供します。 行う必要があるすべてが、表示、クイック ヒント機能を有効にするテキストを指定します。  
   

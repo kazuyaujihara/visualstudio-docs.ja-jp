@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c475366c190e5ac008394f8642f64da022532a0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 20076e4f8cc05ad971a1cbe710c95f444b80938b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386890"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>ゲームまたはアプリケーションでの 3-D アセットの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60064740"
 3. **[構成プロパティ]** の **[全般]** をクリックし、プロパティ グリッドの **[全般]** で、**[項目の種類]** プロパティを適切なコンテンツ パイプラインの項目の種類に設定します。 たとえば、イメージまたはテクスチャのファイルの場合、**[Image Content Pipeline]\(イメージ コンテンツ パイプライン\)** を選びます。  
   
    > [!IMPORTANT]
-   >  既定では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] は、多くの種類のイメージ ファイルが、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] にビルドされている **[イメージ]** 項目の種類を使用して分類する必要があることを前提としています。 したがって、イメージ コンテンツ パイプラインにより処理する各イメージの **[項目の種類]** プロパティを変更する必要があります。 3-D モデルおよび視覚シェーダー グラフィックスのその他の種類のコンテンツ パイプラインのソース ファイルの既定は、正しい **[項目の種類]** になります。  
+   > 既定では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] は、多くの種類のイメージ ファイルが、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] にビルドされている **[イメージ]** 項目の種類を使用して分類する必要があることを前提としています。 したがって、イメージ コンテンツ パイプラインにより処理する各イメージの **[項目の種類]** プロパティを変更する必要があります。 3-D モデルおよび視覚シェーダー グラフィックスのその他の種類のコンテンツ パイプラインのソース ファイルの既定は、正しい **[項目の種類]** になります。  
   
 4. **[OK]** を選択します。  
   
@@ -202,8 +202,8 @@ cbuffer MiscVars : register(b3)
   
 |タイトル|説明|  
 |-----------|-----------------|  
-|[方法: Mipmap を含むテクスチャをエクスポートします。](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|イメージ コンテンツ パイプラインを使用して、前計算された MIPMAP を含むテクスチャをエクスポートする方法について説明します。|  
-|[方法: 前乗算されたアルファを持つテクスチャをエクスポートします。](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|イメージ コンテンツ パイプラインを使用して、前乗算されたアルファ値を含むテクスチャをエクスポートする方法について説明します。|  
-|[方法: Direct2D または Javascipt アプリで使用するためのテクスチャをエクスポートします。](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|イメージ コンテンツ パイプラインを使用して、Direct2D または JavaScript アプリで使用できるテクスチャをエクスポートする方法について説明します。|  
+|[方法: ミップマップを含むテクスチャをエクスポートする](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|イメージ コンテンツ パイプラインを使用して、前計算された MIPMAP を含むテクスチャをエクスポートする方法について説明します。|  
+|[方法: 前乗算されたアルファを持つテクスチャをエクスポートする](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|イメージ コンテンツ パイプラインを使用して、前乗算されたアルファ値を含むテクスチャをエクスポートする方法について説明します。|  
+|[方法: Direct2D または Javascipt アプリで使用するためのテクスチャをエクスポートする](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|イメージ コンテンツ パイプラインを使用して、Direct2D または JavaScript アプリで使用できるテクスチャをエクスポートする方法について説明します。|  
 |[ゲームとアプリケーション用の 3D アセットの操作](../designers/working-with-3-d-assets-for-games-and-apps.md)|テクスチャとイメージ、3-D モデル、シェーダーを含む 3-D アセットを作成および操作するために Visual Studio に用意されている編集ツールについて説明します。|  
 |[方法: シェーダーをエクスポートする](../designers/how-to-export-a-shader.md)|シェーダー デザイナーからシェーダーをエクスポートする方法について説明します。|

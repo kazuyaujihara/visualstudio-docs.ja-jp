@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 101b4ad50777f796a3de82127f6ce3253b26ccaa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62930555"
 ---
 # <a name="spy-toolbar"></a>Spy++ ツール バー
 Spy++ のメニュー バーで、ツールバーが表示されます。 ツールバーを非表示、**ビュー**  メニューのをクリックして**ツールバー**します。
@@ -30,13 +30,13 @@ Spy++ のメニュー バーで、ツールバーが表示されます。 ツー
 |![Spy&#43; &#43;ボタンの処理](../debugger/media/icon_spy--_processes.gif "Icon_Spy + _Processes")|システムのプロセスのツリー ビューを表示します。 詳細については、次を参照してください。[プロセス ビュー](../debugger/processes-view.md)します。|
 |![Spy&#43; &#43;スレッド ボタン](../debugger/media/icon_spy--_threads.gif "Icon_Spy + _Threads")|システム内のスレッドのツリー ビューを表示します。 詳細については、次を参照してください。[スレッド ビュー](../debugger/threads-view.md)します。|
 |![Spy&#43; &#43;メッセージ ボタン](../debugger/media/icon_spy--_messages.gif "Icon_Spy + メッセージ (_m)")|ウィンドウ メッセージを表示するウィンドウを作成し、開きます、**メッセージ オプション** ダイアログ ボックスのメッセージが含まれるが表示され、その他のオプションも選択ウィンドウを選択するようにします。 詳細については、次を参照してください。[メッセージ ビュー](../debugger/messages-view.md)します。|
-|![Spy&#43; &#43;ログ ボタンをスタート](../debugger/media/icon_spy--_startlog.gif "Icon_Spy + _StartLog")|メッセージのログ記録を開始し、メッセージ ストリームを表示します。 このコントロールは、使用可能な場合にのみ、**メッセージ**ウィンドウはアクティブなウィンドウです。 詳細については、次を参照してください。[方法: 開始とメッセージ ログの表示を停止](../debugger/how-to-start-and-stop-the-message-log-display.md)します。|
-|![Spy&#43; &#43;ログ ボタンを停止](../debugger/media/icon_spy--_stoplog.gif "Icon_Spy + _StopLog")|メッセージ ログ出力とメッセージ ストリームの表示の停止です。 このコントロールは、使用可能な場合にのみ、**メッセージ**ウィンドウはアクティブなウィンドウです。 詳細については、次を参照してください。[方法: 開始とメッセージ ログの表示を停止](../debugger/how-to-start-and-stop-the-message-log-display.md)します。|
+|![Spy&#43; &#43;ログ ボタンをスタート](../debugger/media/icon_spy--_startlog.gif "Icon_Spy + _StartLog")|メッセージのログ記録を開始し、メッセージ ストリームを表示します。 このコントロールは、使用可能な場合にのみ、**メッセージ**ウィンドウはアクティブなウィンドウです。 詳細については、「[方法 :メッセージ ログの表示を開始および終了する](../debugger/how-to-start-and-stop-the-message-log-display.md)」を参照してください。|
+|![Spy&#43; &#43;ログ ボタンを停止](../debugger/media/icon_spy--_stoplog.gif "Icon_Spy + _StopLog")|メッセージ ログ出力とメッセージ ストリームの表示の停止です。 このコントロールは、使用可能な場合にのみ、**メッセージ**ウィンドウはアクティブなウィンドウです。 詳細については、「[方法 :メッセージ ログの表示を開始および終了する](../debugger/how-to-start-and-stop-the-message-log-display.md)」を参照してください。|
 |![Spy&#43; &#43;ログ オプション ボタン](../debugger/media/icon_spy--_logoptions.gif "Icon_Spy + _LogOptions")|表示、[メッセージ オプション](../debugger/message-options-dialog-box.md) ダイアログ ボックス。 Windows を選択し、メッセージの種類を表示するには、このダイアログ ボックスを使用します。 このコントロールは、使用可能な場合にのみ、**メッセージ**ウィンドウはアクティブなウィンドウです。|
 |![Spy&#43; &#43;ログ ボタンをオフに](../debugger/media/spy--_clearlog.gif "スパイ + _ClearLog")|アクティブな内容を消去**メッセージ**ウィンドウ。 このコントロールは、使用可能な場合にのみ、**メッセージ**ウィンドウはアクティブなウィンドウです。|
-|![Spy&#43; &#43;ウィンドウ ボタン](../debugger/media/icon_spy--_findwindow.gif "Icon_Spy + _FindWindow")|開く、[ウィンドウ検索](../debugger/find-window-dialog-box.md) ダイアログ ボックスで、ウィンドウの検索条件を設定し、プロパティまたはメッセージを表示することができます。 詳細については、次を参照してください。[方法: ファインダー ツールを使用して、](../debugger/how-to-use-the-finder-tool.md)します。|
+|![Spy&#43; &#43;ウィンドウ ボタン](../debugger/media/icon_spy--_findwindow.gif "Icon_Spy + _FindWindow")|開く、[ウィンドウ検索](../debugger/find-window-dialog-box.md) ダイアログ ボックスで、ウィンドウの検索条件を設定し、プロパティまたはメッセージを表示することができます。 詳細については、「[方法 :ファインダー ツールを使用する](../debugger/how-to-use-the-finder-tool.md)」を参照してください。|
 |![Spy&#43; &#43;ウィンドウの最初のボタンを見つける](../debugger/media/icon_spy--_window.gif "Icon_Spy + _Window")|一致するウィンドウをプロセス、スレッド、またはメッセージの現在のビューを検索します。|
-|![Spy&#43; &#43;ウィンドウの [次へ] ボタンを見つける](../debugger/media/icon_spy--_nextwindow.gif "Icon_Spy + _NextWindow")|次の一致するウィンドウ、プロセス、スレッド、またはメッセージの現在のビューを検索します。 このコントロール (および関連メニュー コマンド) は一意でない有効な検索結果がある場合にのみ使用できます。 たとえば、ウィンドウ ハンドルを使用して、ウィンドウのツリーの検索条件としてが生成されます一意の結果をそのハンドルを持つウィンドウのツリーで 1 つのウィンドウがあるため、このインスタンスで**次を検索**は使用できません。|
+|![スパイ&#43;&#43;ウィンドウの [次へ] ボタンを見つける](../debugger/media/icon_spy--_nextwindow.gif "Icon_Spy:operator++ _NextWindow")|次の一致するウィンドウ、プロセス、スレッド、またはメッセージの現在のビューを検索します。 このコントロール (および関連メニュー コマンド) は一意でない有効な検索結果がある場合にのみ使用できます。 たとえば、ウィンドウ ハンドルを使用して、ウィンドウのツリーの検索条件としてが生成されます一意の結果をそのハンドルを持つウィンドウのツリーで 1 つのウィンドウがあるため、このインスタンスで**次を検索**は使用できません。|
 |![Spy&#43; &#43;前のウィンドウ ボタン](../debugger/media/icon_spy--_prevwindow.gif "Icon_Spy + _PrevWindow")|前の一致するウィンドウ、プロセス、スレッド、またはメッセージの現在のビューを検索します。 このコントロール (および関連メニュー コマンド) は一意でない有効な検索結果がある場合にのみ使用できます。 たとえば、ウィンドウ ハンドルを使用して、ウィンドウのツリーの検索条件としてが生成されます一意の結果をそのハンドルを持つウィンドウのツリーで 1 つのウィンドウがあるため、このインスタンスで**前を検索**は使用できません。|
 |![Spy&#43; &#43;プロパティ エクスプ ローラー ボタン](../debugger/media/icon_spy--_propexp.gif "Icon_Spy + _PropExp")|Windows のビューで選択されているウィンドウのプロパティを表示します。|
 |![Spy&#43; &#43;更新ボタン](../debugger/media/icon_spy--_refresh.gif "Icon_Spy + 更新 (_r)")|システム ビューを更新します。|

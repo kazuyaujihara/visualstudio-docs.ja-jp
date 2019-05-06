@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: deb5472776bc9c4a4d6bb0ccd8830cba5eea3d04
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859889"
 ---
 # <a name="persistence-and-the-running-document-table"></a>ドキュメント テーブルの保存と実行
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE、プロジェクトは、完全にサービスを使用して、行うには、そのプロジェクト項目の永続化を管理する責任を負います<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>します。 ドキュメントは、Visual Studio 環境での永続化の基本単位です。 プロジェクトでは、開いている、保存、および実行されているドキュメント テーブル (RDT) すべての開いているドキュメントの状態を追跡するリソースとドキュメントの名前に変更を調整します。

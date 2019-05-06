@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11374ca0a65a5b430b819a9ef1bdf57f7434e923
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8482f2704fe81482d95c2c8e73ae6e8c8ffd272d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417139"
 ---
 # <a name="how-to-open-project-specific-editors"></a>方法: 開いているプロジェクト固有のエディター
 プロジェクトで開かれている項目のファイルは本質的に、そのプロジェクトの特定のエディターにバインドする場合、プロジェクトは、プロジェクトに固有のエディターを使用してファイルを開く必要があります。 ファイルは、エディターを選択するため、IDE のメカニズムには委任できません。 たとえば、標準のビットマップ エディターを使用する代わりには、プロジェクトに一意のファイルの情報を認識する特定のビットマップ エディターを指定するのにこのプロジェクト固有のエディター オプションを使用できます。
@@ -29,7 +29,7 @@ ms.locfileid: "60053755"
 1. 呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>メソッド (`RDT_EditLock`) をファイル (ドキュメント データ オブジェクト) が既に開いているかどうかを判断します。
 
     > [!NOTE]
-    >  ドキュメント データとドキュメント ビュー オブジェクトの詳細については、次を参照してください。[ドキュメント カスタム エディターでのデータとドキュメント ビュー](../extensibility/document-data-and-document-view-in-custom-editors.md)します。
+    > ドキュメント データとドキュメント ビュー オブジェクトの詳細については、次を参照してください。[ドキュメント カスタム エディターでのデータとドキュメント ビュー](../extensibility/document-data-and-document-view-in-custom-editors.md)します。
 
 2. ファイルが既に開いている場合は、呼び出すことによって、ファイルを再び表面化、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>メソッドとの IDO_ActivateIfOpen の値を指定する、`grfIDO`パラメーター。
 

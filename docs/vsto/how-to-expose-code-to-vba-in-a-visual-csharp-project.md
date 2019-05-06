@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6da4d0642738fca2f35adbc2ec4e039e3edf11b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: ac41f4da29b95ba1fcd1601f98104956d584212a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419517"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>方法: Visual C# プロジェクトでのコードを VBA に公開します。
+# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>方法: Visual c# プロジェクトでのコードを VBA に公開します。
   相互作用するコードの 2 つの種類の場合は、Visual C# プロジェクトを Visual Basic for Applications (VBA) コード内のコードを公開できます。
 
  Visual C# プロセスは、Visual Basic のプロセスからは異なります。 詳細については、「[方法 :Visual Basic プロジェクトでのコードを VBA に公開](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)します。
@@ -33,16 +33,16 @@ ms.locfileid: "56604480"
 ## <a name="expose-code-in-a-visual-c-project"></a>Visual C# プロジェクトでコードが公開します。
  Visual C# プロジェクトのコードを呼び出す VBA コードを有効にするのには、COM から参照できるようにコードを変更し、設定、 **ReferenceAssemblyFromVbaProject**プロパティを**True**デザイナー。
 
- VBA から Visual C# プロジェクトでメソッドを呼び出す方法について説明するチュートリアルでは、次を参照してください。[チュートリアル。コードを Visual C での VBA から呼び出す&#35;プロジェクト](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)します。
+ VBA から Visual c# プロジェクトでメソッドを呼び出す方法について説明するチュートリアルでは、次を参照してください。[チュートリアル。コードを Visual C での VBA から呼び出す&#35;プロジェクト](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)します。
 
 ### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>VBA に Visual C# プロジェクト内のコードを公開するには
 
 1. 開くか、Word 文書、Excel ブックまたは Excel テンプレート、マクロをサポートして、VBA コードを既に含むに基づくドキュメント レベルのプロジェクトを作成します。
 
-    マクロをサポートするドキュメントのファイル形式の詳細については、[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)を参照してください。
+    マクロをサポートするドキュメントのファイル形式の詳細については、次を参照してください。[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)します。
 
    > [!NOTE]
-   >  この機能は、Word テンプレート プロジェクトでは使用できません。
+   > この機能は、Word テンプレート プロジェクトでは使用できません。
 
 2. ドキュメント内の VBA コードがマクロを有効にするユーザーを確認なしで実行を許可されていることを確認します。 Word または Excel のセキュリティ センター設定の信頼できる場所の一覧に Office プロジェクトの場所を追加することによって、VBA コードの実行を信頼することができます。
 
@@ -76,9 +76,9 @@ ms.locfileid: "56604480"
      }
      ```
 
-     ホスト項目の詳細については、[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)を参照してください。
+     ホスト項目の詳細については、次を参照してください。[ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)します。
 
-6. VBA に公開するクラスからインターフェイスを抽出します。 **インターフェイスの抽出** ダイアログ ボックスで、インターフェイス宣言で追加するパブリック メンバーを選択します。 詳細については、[抽出インターフェイス リファクタリング](../ide/reference/extract-interface.md)を参照してください。
+6. VBA に公開するクラスからインターフェイスを抽出します。 **インターフェイスの抽出** ダイアログ ボックスで、インターフェイス宣言で追加するパブリック メンバーを選択します。 詳細については、次を参照してください。[抽出インターフェイス リファクタリング](../ide/reference/extract-interface.md)します。
 
 7. 追加、**パブリック**キーワードをインターフェイスの宣言にします。
 
@@ -93,7 +93,7 @@ ms.locfileid: "56604480"
 10. **[プロパティ]** ウィンドウで、 **ReferenceAssemblyFromVbaProject** プロパティを選択し、値を **True**に変更します。
 
     > [!NOTE]
-    >  かどうか、ブックまたはドキュメントが含まれない VBA コードまたはドキュメント内の VBA コードが実行する信頼されていない場合は、設定すると、エラー メッセージが表示されるが、 **ReferenceAssemblyFromVbaProject**プロパティを**True**. これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
+    > かどうか、ブックまたはドキュメントが含まれない VBA コードまたはドキュメント内の VBA コードが実行する信頼されていない場合は、設定すると、エラー メッセージが表示されるが、 **ReferenceAssemblyFromVbaProject**プロパティを**True**. これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
 
 11. 表示されるメッセージで **[OK]** をクリックします。 このメッセージ通知することを追加する場合 VBA コードをブックまたはドキュメントからプロジェクトを実行するときに[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、VBA コードは失われます、次回、プロジェクトをビルドします。 これは、ビルドでドキュメントを出力フォルダーは、プロジェクトをビルドするたびに上書きされるためです。
 

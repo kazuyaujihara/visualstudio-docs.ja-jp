@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1b1cb65a2c1eec8df194136bb5a4bffb358696e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977268"
 ---
 # <a name="collection-activity-designers"></a>コレクション アクティビティ デザイナー
 Collection アクティビティ デザイナーは、コレクションの管理に使用するアクティビティを作成および構成するために使用します。次の表に示す、このセクションに含まれるトピックでは、[!INCLUDE[wfd2](../includes/wfd2-md.md)]のアクティビティ デザイナーおよびテンプレート デザイナーの使用方法についてのガイドラインを示します。  

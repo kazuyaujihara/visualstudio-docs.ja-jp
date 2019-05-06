@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ff7a0595da00aa6f575999499c9596ffc1424fc4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895626"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>ハーフ/クォーター テクスチャ ディメンション バリアント
 レンダー ターゲットではないテクスチャで、テクスチャのディメンションを小さくします。
@@ -27,7 +27,7 @@ ms.locfileid: "56691476"
 
  テクスチャが通常よりも多くの GUP メモリを占有している場合は、該当するテクスチャの圧縮を考慮した後で、テクスチャのサイズを小さくすることを考慮してください。 テクスチャを小さくした場合と同様に、圧縮したテクスチャは占有するメモリが少なくなり、システム メモリへページングされる必要が少なくなりますが、色の忠実性は低下します。 圧縮は、すべてのテクスチャに適しているわけではなく、テクスチャの内容によって決まります (たとえば、小さい領域に多数の色のバリエーションがある場合です)。ただし多くのテクスチャでは、サイズを小さくするよりも全体のイメージ品質は低下せずに保持されます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  ソース テクスチャを作成する `ID3D11Device::CreateTexture2D` への呼び出しがあるたびに、テクスチャのディメンションは減少します。 テクスチャのディメンションは、具体的には `pDesc` で渡される D3D11_TEXTURE2D_DESC オブジェクトが、レンダリングで使用されるテクスチャを記述するときに減少します。つまり、
 
 - BindFlags メンバーは D3D11_BIND_SHADER_RESOURCE フラグを設定するだけです。

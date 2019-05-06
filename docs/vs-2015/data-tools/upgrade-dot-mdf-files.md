@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424918"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf ファイルのアップグレード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ ms.locfileid: "60079909"
   また、ファイルのバージョンが SQL Server Express または現在インストールされている LocalDB のインスタンスとの互換性がない場合、以前のバージョンの SQL Server Express または LocalDB を通じて作成されたデータベース ファイルをアップグレードするように求め可能性があります。 この問題を解決するには、Visual Studio は、ファイルをアップグレードすることを求められます。  
   
 > [!IMPORTANT]
->  アップグレードする前に、データベース ファイルをバックアップすることをお勧めします。  
+> アップグレードする前に、データベース ファイルをバックアップすることをお勧めします。  
   
 > [!WARNING]
->  LocalDB 2016 (V13) を 32 ビットである LocalDB 2014 (V12) で作成された .mdf ファイルをアップグレードする場合、32 ビット バージョンの LocalDB でファイルを再度開くことができなきます。  更新プログラム 2 で LocalDB V13 は 64 ビットのみです。  
+> LocalDB 2016 (V13) を 32 ビットである LocalDB 2014 (V12) で作成された .mdf ファイルをアップグレードする場合、32 ビット バージョンの LocalDB でファイルを再度開くことができなきます。  更新プログラム 2 で LocalDB V13 は 64 ビットのみです。  
   
  データベースをアップグレードする前に、次の条件を考慮してください。  
   

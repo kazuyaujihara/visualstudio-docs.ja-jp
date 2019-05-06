@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba3ee5d8ee04b4a0f2cd360d6b213c69c6f8d1bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cb1747341de65a5f642790410c35eee35620575e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442716"
 ---
 # <a name="how-to-stop-code-changes"></a>方法: コード変更を停止する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58977887"
 エディット コンティニュがコード変更を適用するプロセスを実行している間、その操作は中断できます。  
   
 > [!CAUTION]
->  マネージド コードのコード変更を中断すると、予期しない結果が生じることがあります。 通常、マネージド コードの変更はすばやく適用されるため、マネージド コードのコード変更の中断が必要となることはほとんどありません。  
+> マネージド コードのコード変更を中断すると、予期しない結果が生じることがあります。 通常、マネージド コードの変更はすばやく適用されるため、マネージド コードのコード変更の中断が必要となることはほとんどありません。  
   
 ### <a name="to-stop-applying-code-changes"></a>コードの変更内容の適用を停止するには  
   

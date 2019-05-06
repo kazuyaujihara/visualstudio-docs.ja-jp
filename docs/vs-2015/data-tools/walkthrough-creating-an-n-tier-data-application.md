@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b1f585aaa3677955cef61a923061a62dcdc1e62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424743"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>チュートリアル: n 層データ アプリケーションを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +64,14 @@ N-レベル * データ アプリケーションは、データにアクセス�
  このチュートリアルでは、まず、1 つのソリューションと 2 つのクラス ライブラリ プロジェクトを作成します。 最初のクラス ライブラリは、データセット (生成した型指定された DataSet クラスと、アプリケーションのデータを保持する DataTable) を保持します。 このプロジェクトは、アプリケーションのデータ エンティティ層として使用され、通常は中間層に配置されます。 データセット デザイナーを使用して、初期データセットを作成し、2 つのクラス ライブラリに自動的にコードを分離します。  
   
 > [!NOTE]
->  **[OK]** をクリックする前に、必ずプロジェクトとソリューションに適切な名前を付けてください。 これにより、チュートリアルの完了が容易になります。  
+> **[OK]** をクリックする前に、必ずプロジェクトとソリューションに適切な名前を付けてください。 これにより、チュートリアルの完了が容易になります。  
   
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>n 層ソリューションと DataEntityTier クラス ライブラリを作成するには  
   
 1. **ファイル**] メニューの [新しいプロジェクトを作成します。  
   
     > [!NOTE]
-    >  **データセット デザイナー**ではサポートされて[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]と c# プロジェクト。 新しいプロジェクトはこれらの言語のどちらかで作成してください。  
+    > **データセット デザイナー**ではサポートされて[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]と c# プロジェクト。 新しいプロジェクトはこれらの言語のどちらかで作成してください。  
   
 2. **新しいプロジェクト** ダイアログ ボックスで、**プロジェクトの種類**ウィンドウで、をクリックして**Windows**します。  
   
@@ -125,7 +125,7 @@ N-レベル * データ アプリケーションは、データにアクセス�
 6. データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、 **[次へ]** をクリックします。  
   
     > [!NOTE]
-    >  SQL Server に接続するのではなく、ローカル データベース ファイルを選択した場合は、ファイルをプロジェクトに追加するかどうかをたずねるメッセージが表示されます。 クリックして**はい**データベース ファイルをプロジェクトに追加します。  
+    > SQL Server に接続するのではなく、ローカル データベース ファイルを選択した場合は、ファイルをプロジェクトに追加するかどうかをたずねるメッセージが表示されます。 クリックして**はい**データベース ファイルをプロジェクトに追加します。  
   
 7. をクリックして**次**で、**アプリケーション構成ファイルへの接続文字列を保存**ページ。  
   
@@ -153,7 +153,7 @@ N-レベル * データ アプリケーションは、データにアクセス�
    データセットと TableAdapter が、2 つのクラス ライブラリ プロジェクトに分離されます。 最初にデータセット全体 (DataAccessTier) を含んでいたプロジェクトには、現在は TableAdapter しか含まれません。 指定したプロジェクト、 **DataSet プロジェクト**プロパティ (DataEntityTier) に型指定されたデータセットが含まれています。NorthwindDataSet.Dataset.Designer.vb (または NorthwindDataSet.Dataset.Designer.cs)。  
   
 > [!NOTE]
->  **[DataSet プロジェクト]** プロパティを設定してデータセットと TableAdapter を分離する場合でも、プロジェクト内の既存のデータセット部分クラスは自動的には移動されません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。  
+> **[DataSet プロジェクト]** プロパティを設定してデータセットと TableAdapter を分離する場合でも、プロジェクト内の既存のデータセット部分クラスは自動的には移動されません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。  
   
 ## <a name="creating-a-new-service-application"></a>新しいサービス アプリケーションの作成  
  このチュートリアルでは WCF サービスを使用してデータ アクセス層にアクセスする方法を説明するので、新しい WCF サービス アプリケーションを作成します。  
@@ -220,7 +220,7 @@ N-レベル * データ アプリケーションは、データにアクセス�
  これで、データを返すメソッドをデータ アクセス層に含めることができました。次に、データ サービスにメソッドを作成して、データ アクセス層のメソッドを呼び出します。  
   
 > [!NOTE]
->  C# プロジェクトの場合は、次のコードをコンパイルするために `System.Data.DataSetExtensions` アセンブリへの参照を追加する必要があります。  
+> C# プロジェクトの場合は、次のコードをコンパイルするために `System.Data.DataSetExtensions` アセンブリへの参照を追加する必要があります。  
   
 #### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>データ サービスに GetCustomers 関数と GetOrders 関数を作成するには  
   
@@ -322,7 +322,7 @@ N-レベル * データ アプリケーションは、データにアクセス�
 3. 選択**Service1**  をクリック**OK**します。  
   
     > [!NOTE]
-    >  現在のコンピューターに複数のサービスがある場合は、このチュートリアルで以前に作成したサービス (GetCustomers メソッドおよび GetOrders メソッドを含むサービス) を選択します。  
+    > 現在のコンピューターに複数のサービスがある場合は、このチュートリアルで以前に作成したサービス (GetCustomers メソッドおよび GetOrders メソッドを含むサービス) を選択します。  
   
 ## <a name="adding-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>フォームへの DataGridView の追加とデータ サービスから返されたデータの表示  
  データ サービスへのサービス参照を追加すると、サービスによって返されたデータが **[データ ソース]** ウィンドウに自動的に読み込まれます。  
@@ -361,7 +361,7 @@ N-レベル * データ アプリケーションは、データにアクセス�
  サービスは Customers テーブルと Orders テーブルからデータを返すため、maxReceivedMessageSize の既定値ではデータを保持するのに十分ではなく、この値を大きくする必要があります。 このチュートリアルでは、値を 6553600 に変更します。 クライアントで値を変更すると、サービス参照が自動的に更新されます。  
   
 > [!NOTE]
->  既定のサイズが低く設定されているのは、サービス拒否 (DoS) 攻撃を受けるリスクを低減するためです。 詳細については、「<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>」を参照してください。  
+> 既定のサイズが低く設定されているのは、サービス拒否 (DoS) 攻撃を受けるリスクを低減するためです。 詳細については、「<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>」を参照してください。  
   
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>maxReceivedMessageSize 値を増やすには  
   

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cc24e259ac5aaa8526d5855a1662c146e1438ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c4655d251d9020c1b8b4474865126dc98fa982f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420676"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>ファイルを開くコマンドを使用してファイルを表示します。
 次の手順では、IDE を処理する方法について説明します、**ファイルを開く**コマンドで使用される、**ファイル**でメニュー [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 また、プロジェクトがこのコマンドから発信された通話に応答する方法も説明します。
@@ -31,7 +31,7 @@ ms.locfileid: "60112157"
     - ファイルが開いていない場合、IDE によって呼び出さ<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>プロジェクトは、ファイルを開くことを確認するには、各プロジェクトのクエリを実行します。
 
         > [!NOTE]
-        >  プロジェクトの実装で<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>、位置、プロジェクトが開き、ファイル レベルを示す優先順位値を指定します。 優先度の値がで提供される、<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列挙体。
+        > プロジェクトの実装で<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>、位置、プロジェクトが開き、ファイル レベルを示す優先順位値を指定します。 優先度の値がで提供される、<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列挙体。
 
 2. 各プロジェクトは、重要度を示す優先順位の応答ファイルを開くプロジェクトの中にかかります。
 

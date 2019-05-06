@@ -12,12 +12,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 370f6992fb044f5bd7f3593e63afeab46c82830b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 81f2766e5c382f8beaa4cb20472da6e0e6fc94e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432623"
 ---
 # <a name="model-editor"></a>モデル エディター
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ ms.locfileid: "60072293"
 2. **[プロパティ]** ウィンドウで、**[回転]**、**[拡大縮小]**、および **[平行移動]** の各プロパティの値を指定します。  
   
    > [!IMPORTANT]
-   >  **[回転]** プロパティでは、3 つの軸それぞれの回転角度を指定します。 回転は順番に適用されるため、必ず x 軸、y 軸、z 軸の順に回転を設定します。  
+   > **[回転]** プロパティでは、3 つの軸それぞれの回転角度を指定します。 回転は順番に適用されるため、必ず x 軸、y 軸、z 軸の順に回転を設定します。  
   
    モデリング ツールを使用すると、変換をすばやく作成できますが正確さを欠きます。 オブジェクトのプロパティを設定すると、変換を正確に指定できますが、時間がかかります。 モデリング ツールを使用して目的の変換に「十分に近似」させた後に、プロパティ値を微調整することをお勧めします。  
   

@@ -11,22 +11,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d98755912674670d614d4b063075500427c1d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2a0858a3f1f1e98f7f6d0bde87036126ec31320f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428829"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>プロジェクトおよび構成プロパティのサポート
 **プロパティ**ウィンドウで、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) は、プロジェクトと構成のプロパティを表示できます。 独自のプロジェクトの種類のプロパティ ページを指定するには、ユーザーがアプリケーションのプロパティを設定できるようにします。
 
- プロジェクト ノードを選択して**ソリューション エクスプ ローラー**  をクリックし、**プロパティ**上、**プロジェクト** メニューの プロジェクトと構成を含むダイアログ ボックスを開くことができますプロパティ。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]と[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]、プロジェクトの種類のタブ付きページとしてこのダイアログ ボックスが表示されます。 これらの言語から派生し、 [General, Environment, オプション ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)します。 詳細については、次を参照してください。[ビルド内にありません。チュートリアル: プロジェクトと構成のプロパティ (c#) を公開する](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)します。
+ プロジェクト ノードを選択して**ソリューション エクスプ ローラー**  をクリックし、**プロパティ**上、**プロジェクト** メニューの プロジェクトと構成を含むダイアログ ボックスを開くことができますプロパティ。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]と[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]、プロジェクトの種類のタブ付きページとしてこのダイアログ ボックスが表示されます。 これらの言語から派生し、 [General, Environment, オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)します。 詳細については、次を参照してください。[ビルド内にありません。チュートリアル: プロジェクトと構成のプロパティ (c#) を公開する](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)します。
 
  Managed Package Framework (MPFProj) プロジェクトを作成して、新しいプロジェクト システムを管理するためのヘルパー クラスを提供します。 コードとコンパイル」の手順に従って、ソースを検索できる[- Visual Studio 2013 のプロジェクトの MPF](https://github.com/tunnelvisionlabs/MPFProj10)します。
 
 ## <a name="persistence-of-project-and-configuration-properties"></a>プロジェクトと構成プロパティの永続化
- プロジェクトと構成のプロパティは、たとえば、プロジェクトの種類に関連付けられているファイル名拡張子、.csproj、.vbproj、および .myproj を含むプロジェクト ファイルに保存されます。 通常、言語のプロジェクトは、プロジェクト ファイルを生成するのにテンプレート ファイルを使用します。 ただし、テンプレート プロジェクトの種類を関連付けるために実際にいくつかの方法はあります。 詳細については、[テンプレート ディレクトリの説明 (を参照してください。Vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)します。
+ プロジェクトと構成のプロパティは、たとえば、プロジェクトの種類に関連付けられているファイル名拡張子、.csproj、.vbproj、および .myproj を含むプロジェクト ファイルに保存されます。 通常、言語のプロジェクトは、プロジェクト ファイルを生成するのにテンプレート ファイルを使用します。 ただし、テンプレート プロジェクトの種類を関連付けるために実際にいくつかの方法はあります。 詳細については、次を参照してください。[テンプレート ディレクトリの説明 (します。Vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)します。
 
  プロジェクトと構成のプロパティを作成するには、テンプレート ファイルに項目を追加します。 これらのプロパティはこのテンプレートを使用するプロジェクトの種類を使用して作成されたプロジェクトを利用できます。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] プロジェクトおよび MPFProj の両方を使用して、[ビルド内にありません。MSBuild の概要](/previous-versions/visualstudio/visual-studio-2008/ms171452(v=vs.90))テンプレート ファイルのスキーマ。 これらのファイルでは、各構成の PropertyGroup セクションがあります。 プロジェクトのプロパティは、null 文字列に設定の構成引数を持つ最初の PropertyGroup セクションで通常は保持されます。
 
@@ -51,7 +51,7 @@ ms.locfileid: "56604679"
  プロジェクト ファイルのプロジェクトと構成のプロパティを保持するプロジェクトの役目です。
 
 > [!NOTE]
->  プロジェクトでは、既定値とは異なるのみプロパティ値の永続化で永続化を最適化できます。
+> プロジェクトでは、既定値とは異なるのみプロパティ値の永続化で永続化を最適化できます。
 
 ## <a name="support-for-project-and-configuration-properties"></a>プロジェクトおよび構成プロパティのサポート
  `Microsoft.VisualStudio.Package.SettingsPage`クラスは、プロジェクトと構成のプロパティ ページを実装します。 既定の実装`SettingsPage`汎用プロパティ グリッド内のユーザーにパブリック プロパティを提供しています。 `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids`メソッドから派生したクラスを選択する`SettingsPage`プロパティ グリッドのプロジェクト。 `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids`メソッドから派生したクラスを選択する`SettingsPage`のプロパティ グリッドを構成します。 プロジェクトの種類には、適切なプロパティ ページを選択するこれらのメソッドをオーバーライドする必要があります。
@@ -63,7 +63,7 @@ ms.locfileid: "56604679"
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty`構成プロパティを保持します。
 
   > [!NOTE]
-  >  実装、`Microsoft.VisualStudio.Package.SettingsPage`と`Microsoft.VisualStudio.Package.ProjectNode`クラスの使用、 `Microsoft.Build.BuildEngine` (MSBuild) メソッドを取得し、プロジェクト ファイルからプロジェクトと構成のプロパティを設定します。
+  > 実装、`Microsoft.VisualStudio.Package.SettingsPage`と`Microsoft.VisualStudio.Package.ProjectNode`クラスの使用、 `Microsoft.Build.BuildEngine` (MSBuild) メソッドを取得し、プロジェクト ファイルからプロジェクトと構成のプロパティを設定します。
 
   派生したクラス`SettingsPage`実装する必要があります`Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges`と`Microsoft.VisualStudio.Package.SettingsPage.BindProperties`プロジェクト ファイルのプロジェクトまたは構成のプロパティを保持します。
 
@@ -81,7 +81,7 @@ ms.locfileid: "56604679"
  <xref:System.ComponentModel.CategoryAttribute>、 <xref:System.ComponentModel.DisplayNameAttribute>、および<xref:System.ComponentModel.DescriptionAttribute>属性は、レイアウト、ラベル付け、および汎用プロパティ ページで、プロジェクトと構成のプロパティの説明を決定します。 これらの属性は、カテゴリを確認、名、およびオプションの説明をそれぞれ表示します。
 
 > [!NOTE]
->  同等の属性、SRCategory、LocDisplayName、および SRDescription、ローカライズ文字列リソースを使用して、で定義されて[- Visual Studio 2013 のプロジェクトの MPF](https://github.com/tunnelvisionlabs/MPFProj10)します。
+> 同等の属性、SRCategory、LocDisplayName、および SRDescription、ローカライズ文字列リソースを使用して、で定義されて[- Visual Studio 2013 のプロジェクトの MPF](https://github.com/tunnelvisionlabs/MPFProj10)します。
 
  次のコードがあるとします。
 

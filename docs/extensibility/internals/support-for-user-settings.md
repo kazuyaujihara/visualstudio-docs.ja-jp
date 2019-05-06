@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7fbb6c8e6a6310b736ade599ad7854bc4255c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ece6ecc2d7a1a49d77643e18beced76403c13cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428781"
 ---
 # <a name="support-for-user-settings"></a>ユーザー設定のサポート
 VSPackage は、ユーザーが選択したときに永続化状態変数のグループが 1 つまたは複数の設定カテゴリを定義できます、**設定のインポート/エクスポート**コマンドを**ツール**メニュー。 この永続化を有効にするには、Api の設定を使用するには[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]します。
@@ -34,7 +34,7 @@ VSPackage は、ユーザーが選択したときに永続化状態変数のグ�
  次の場所にレジストリ エントリでは、カスタム設定ポイントが作成されます。Hklm \software\microsoft\visualstudio\\*\<バージョン >* \UserSettings\\`<CSPName>`ここで、 `<CSPName>` VSPackage がサポートをカスタム設定ポイントの名前には*\<バージョン >* のバージョンである[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]8.0 などの。
 
 > [!NOTE]
->  Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) です初期化されます。 詳細については、次を参照してください。[コマンド ライン スイッチ](../../extensibility/command-line-switches-visual-studio-sdk.md)します。
+> Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) です初期化されます。 詳細については、次を参照してください。[コマンド ライン スイッチ](../../extensibility/command-line-switches-visual-studio-sdk.md)します。
 
  レジストリ エントリの構造は、次に示します。
 

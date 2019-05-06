@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 832af0383d2ff00b4f2d415257abdfbe3ad4bf91
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430414"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>チュートリアル: SharePoint プロジェクト拡張機能を作成します。
   このチュートリアルでは、SharePoint プロジェクトの拡張機能を作成する方法について説明します。 プロジェクトの拡張機能を使用すると、プロジェクトを追加、削除、または名前を変更する場合など、プロジェクト レベルのイベントに応答します。 カスタム プロパティを追加またはプロパティ値を変更するときの応答もできます。 プロジェクト項目の拡張機能とは異なりプロジェクト拡張機能は、特定の SharePoint プロジェクトの種類に関連付けすることはできません。 任意の種類の SharePoint プロジェクトを開いたときに、拡張機能を読み込むプロジェクトの拡張機能を作成するときに[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。
@@ -65,7 +65,7 @@ ms.locfileid: "60062354"
 3. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual c#** または**Visual Basic**ノードを選択し、**機能拡張**ノード。
 
     > [!NOTE]
-    >  このノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
+    > このノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
 
 4. ダイアログ ボックスの上部にある次のように選択します。 **.NET Framework 4.5** 、.NET Framework のバージョンの一覧で選択し、 **VSIX プロジェクト**テンプレート。
 
@@ -143,7 +143,7 @@ ms.locfileid: "60062354"
 6. **型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `MEFComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    > この値は、extension.vsixmanifest ファイル内の `MEFComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
 
 7. **ソース**一覧で、選択、**現在のソリューションでプロジェクトを**オプション ボタンをクリックします。
 

@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c7ce5ab06eb641e94d6f972b888882ac1e53e2ee
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892224"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Visual Studio のメニュー バー メニューに追加します。
 
 このチュートリアルでは、Visual Studio 統合開発環境 (IDE) のメニュー バーにメニューを追加する方法を示します。 IDE のメニュー バーには、**ファイル**、**編集**、**ビュー**、**ウィンドウ**、および**ヘルプ**のようなメニュー項目が含まれています。
 
-Visual Studio のメニュー バーに新しいメニューを追加する前に、コマンドは、既存のメニュー内に配置する必要があるかどうかを検討してください。 コマンド配置の詳細については、[Visual Studio のメニューとコマンド](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)を参照してください。
+Visual Studio のメニュー バーに新しいメニューを追加する前に、コマンドは、既存のメニュー内に配置する必要があるかどうかを検討してください。 コマンド配置の詳細については、次を参照してください。 [Visual Studio のメニューとコマンド](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)します。
 
 メニューが宣言されている、 *.vsct*プロジェクトのファイル。 メニューの詳細については、 *.vsct*ファイルを参照してください[コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)します。
 
@@ -37,7 +37,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 
 ## <a name="create-a-vsix-project-that-has-a-custom-command-item-template"></a>カスタム コマンド項目テンプレートを持つ VSIX プロジェクトを作成します。
 
-1. という名前の VSIX プロジェクトを作成する`TopLevelMenu`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**ダイアログで"vsix"を検索します。  詳細については、[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。
+1. という名前の VSIX プロジェクトを作成する`TopLevelMenu`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**ダイアログで"vsix"を検索します。  詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
 
 2. という名前のカスタム コマンド項目テンプレートを追加、プロジェクトが開いたら、 **TestCommand**します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** >  **新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#/機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して*TestCommand.cs*します。
 

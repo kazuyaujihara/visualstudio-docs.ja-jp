@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: f8ef28b453ba6c754c337c5d42581bd658be5f04
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564415"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger"></a>カスタム ビューの作成C++デバッガー内のオブジェクト
 
@@ -663,7 +663,7 @@ Natvis 視覚化では、C++ 式を使用して、表示するデータ項目を
 
 - A `ServiceId`  -  `Id`属性のペアを識別、`UIVisualizer`します。 `ServiceId`ビジュアライザーは、サービスの GUID は、パッケージが公開されます。 `Id` 1 つ以上のサービスを提供する場合、ビジュアライザーを区別する一意の識別子です。 前の例では、同じビジュアライザー サービスは、2 つのビジュアライザーを提供します。
 
-- `MenuName`属性は、デバッガーで虫眼鏡アイコンの横にあるドロップダウン リストに表示するビジュアライザーの名前を定義します。 例えば:
+- `MenuName`属性は、デバッガーで虫眼鏡アイコンの横にあるドロップダウン リストに表示するビジュアライザーの名前を定義します。 例:
 
   ![UIVisualizer メニューのショートカット メニュー](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer メニューのショートカット メニュー")
 

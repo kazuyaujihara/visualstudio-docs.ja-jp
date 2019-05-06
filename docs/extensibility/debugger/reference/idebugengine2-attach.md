@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ab1ea05511369d36b881afcaf7c161f796fd4925
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62875312"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 デバッグ エンジン (DE) をプログラムまたはプログラムにアタッチします。 DE、SDM をインプロセスで実行されているときに、セッション デバッグ マネージャー (SDM) によって呼び出されます。
@@ -89,7 +89,7 @@ int Attach( 
 
    DE 取得 1 回、 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)オブジェクトのデバッグ中のプログラムに対応する、任意のプライベート インターフェイスのクエリを実行できます。
 
-   指定された配列で、[プログラム] ノードのメソッドを呼び出す前に`pProgram`または`rgpProgramNodes`、権限借用では、必要な場合、する必要がありますで有効にする、`IDebugProgram2`プログラム ノードを表すインターフェイスです。 通常、ただし、この手順は必要ではありません。 詳細については、[セキュリティの問題](../../../extensibility/debugger/security-issues.md)を参照してください。
+   指定された配列で、[プログラム] ノードのメソッドを呼び出す前に`pProgram`または`rgpProgramNodes`、権限借用では、必要な場合、する必要がありますで有効にする、`IDebugProgram2`プログラム ノードを表すインターフェイスです。 通常、ただし、この手順は必要ではありません。 詳細については、次を参照してください。[セキュリティの問題](../../../extensibility/debugger/security-issues.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9304f0bdcb414da37e70df66eca470999a685735
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433306"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 関数
 完全修飾ファイル名の一覧を指定するには、この関数はそれらローカル ドライブに。 コメントは、チェック アウトされているすべてのファイルに適用されます。コメントの引数を指定できます、`null`文字列。

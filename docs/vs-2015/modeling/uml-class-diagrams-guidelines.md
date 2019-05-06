@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a57e7e42e1cfc2690732881e6702315d1b0f4d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 363a9eda86a55da2dd773a2cef5a40fc53f0a81e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424498"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML クラス図:ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio で使用することができます、 *UML クラス図*デー�
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
 > [!NOTE]
->  このトピックでは、UML クラス図について説明します。 このほか、プログラム コードを作成して視覚化するために使用されるクラス図もあります。 参照してください[クラスと型デザインおよび表示](http://go.microsoft.com/fwlink/?LinkId=142231)します。  
+> このトピックでは、UML クラス図について説明します。 このほか、プログラム コードを作成して視覚化するために使用されるクラス図もあります。 参照してください[クラスと型デザインおよび表示](http://go.microsoft.com/fwlink/?LinkId=142231)します。  
   
 ## <a name="Using"></a> UML クラス図の使用  
  UML クラス図は、さまざまな用途に使用できます。  
@@ -82,7 +82,7 @@ Visual Studio で使用することができます、 *UML クラス図*デー�
  リファレンス UML クラス図の要素に関する情報については、次を参照してください。 [UML クラス図。Reference](../modeling/uml-class-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。  
   
 > [!NOTE]
->  いずれかのモデリング図を作成するための詳細な手順が記載されて[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
+> いずれかのモデリング図を作成するための詳細な手順が記載されて[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
   
 #### <a name="to-create-a-uml-class-diagram"></a>UML クラス図を生成するには  
   
@@ -185,7 +185,7 @@ Visual Studio で使用することができます、 *UML クラス図*デー�
   モデルでまだ定義していない型の名前を書くこともできます。 名前が表示されます**未指定の型**UML モデル エクスプ ローラー。  
   
 > [!NOTE]
->  その後、モデル内でその名前のクラス、またはインターフェイスを定義すると、以前の属性と操作は引き続き未指定型の要素を参照します。 新規クラスを参照するように変更するには、それぞれの属性や操作について、ドロップダウン メニューから新規クラスを選択し、型を 1 つずつリセットする必要があります。  
+> その後、モデル内でその名前のクラス、またはインターフェイスを定義すると、以前の属性と操作は引き続き未指定型の要素を参照します。 新規クラスを参照するように変更するには、それぞれの属性や操作について、ドロップダウン メニューから新規クラスを選択し、型を 1 つずつリセットする必要があります。  
   
 #### <a name="multiple-types"></a>複数の型  
  任意の属性、操作、またはパラメーター型の多重度を設定できます。  
@@ -273,9 +273,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  それぞれの型には、モデルで定義した型、Integer や String などの標準型、またはまだ定義していない新しい型の名前を使用できます。  
   
 > [!NOTE]
->  パラメーター リストに名前のみを記述して型を省略した場合、その名前は、パラメーターの型ではなく名前と見なされます。 この例では、MenuItem と Integer は、型が指定されていない 2 つのパラメーターの名前になります。  
+> パラメーター リストに名前のみを記述して型を省略した場合、その名前は、パラメーターの型ではなく名前と見なされます。 この例では、MenuItem と Integer は、型が指定されていない 2 つのパラメーターの名前になります。  
 >   
->  `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
+> `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
   
  シグニチャで型の多重度を設定するには、次の例に示すように、型の名前に続けて多重度を角かっこで囲んで指定します。  
   

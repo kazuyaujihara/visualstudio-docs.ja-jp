@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f65f6de7cfb336eb001de47fb6562b7200391419
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967985"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>方法: データに ListObject コントロールを塗りつぶす
   データ バインディングを使用すると、ドキュメントにデータをすばやく追加できます。 リスト オブジェクトにデータをバインドした後、リスト オブジェクトを切断すると、データは表示されますが、データ ソースとのバインドは解除されます。

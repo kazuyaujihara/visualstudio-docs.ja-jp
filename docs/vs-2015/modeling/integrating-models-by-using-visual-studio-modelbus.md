@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4530b12ff3c5fa05d63d845cf4d364d2c238ff77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9f0a185ce4f78a81d1ed806e38b102296093f48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441007"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus によるモデルの統合
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60041290"
  ModelBus により、モデルまたはモデル内の特定の要素への一意の参照を作成できます。 この参照は、たとえば、別のモデル内の要素など、モデルの外に保存できます。 後で何らかのツールにおいて要素へのアクセスを取得する必要が生じると、モデル バス インフラストラクチャは適切なモデルを読み込み、要素を返します。 必要があれば、モデルをユーザーに表示できます。 ファイルが以前の場所でアクセスできない場合、ModelBus はユーザーにファイルを見つけるように求めます。 ユーザーがファイルを見つけると、ModelBus はそのファイルへのすべての参照を解決します。
 
 > [!NOTE]
->  ModelBus の現在の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 実装では、リンクされたモデルは同じ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューション内の項目である必要があります。
+> ModelBus の現在の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 実装では、リンクされたモデルは同じ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューション内の項目である必要があります。
 
  追加情報とサンプル コードについては、以下を参照してください。
 
@@ -130,7 +130,7 @@ ms.locfileid: "60041290"
 5. をクリックして**OK**、順にクリックします**すべてのテンプレートの変換**ソリューション エクスプ ローラーのツールバー。
 
     > [!WARNING]
-    >  有効なモデルまたはエンティティを選択しなかった場合、[OK] ボタンが有効のように見えても効果はありません。
+    > 有効なモデルまたはエンティティを選択しなかった場合、[OK] ボタンが有効のように見えても効果はありません。
 
 6. Company.FamilyTree.Person などのターゲット型の一覧を指定した場合、DSL プロジェクトにアセンブリ参照を追加して、ターゲット DSL の DLL (たとえば、Company.FamilyTree.Dsl.dll) を参照する必要があります。
 
@@ -143,7 +143,7 @@ ms.locfileid: "60041290"
 3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験インスタンスのデバッグ プロジェクトで、各 DSL のインスタンスであるファイルを追加します。
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus は、同じ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューション内の項目である、モデルへの参照のみを解決できます。 たとえば、ファイル システムの別の部分にあるモデル ファイルへの参照は作成できません。
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus は、同じ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューション内の項目である、モデルへの参照のみを解決できます。 たとえば、ファイル システムの別の部分にあるモデル ファイルへの参照は作成できません。
 
 4. 公開される DSL のインスタンス内に要素とリンクを作成し、インスタンスを保存します。
 
@@ -163,7 +163,7 @@ ms.locfileid: "60041290"
  要素参照を作成するには、モデル ファイルと参照する要素のアダプターが必要です。
 
 > [!NOTE]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus を使用して、同じ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューション内の項目への参照のみを作成できます。
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus を使用して、同じ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューション内の項目への参照のみを作成できます。
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>公開されている DSL アセンブリのインポート
  利用するプロジェクトで、DSL へのプロジェクト参照と公開されている DSL の ModelBusAdapter アセンブリを追加します。
@@ -197,7 +197,7 @@ using System.Linq;
  AdapterManager から、Adapter を取得し、モデル内の個々の要素にアクセスできます。
 
 > [!NOTE]
->  操作を終了したら、Adapter を破棄する必要があります。 そのための最も便利な方法は、`using` ステートメントの使用です。 次に例を示します。
+> 操作を終了したら、Adapter を破棄する必要があります。 そのための最も便利な方法は、`using` ステートメントの使用です。 次に例を示します。
 
 ```
 // The file path of a model instance of the FamilyTree DSL:

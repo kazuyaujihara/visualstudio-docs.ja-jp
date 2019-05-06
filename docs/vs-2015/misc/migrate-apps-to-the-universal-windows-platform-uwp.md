@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001215"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>アプリを Universal Windows Platform (UWP) へ移行する
 Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows Phone 8.1 アプリ、またはユニバーサル Windows アプリ用の既存のプロジェクト ファイルに必要な変更を手動で加え、Visual Studio 2015 RTM で使用できるようにします。 (Windows アプリのプロジェクトと Windows Phone プロジェクトの両方を備えた Windows 8.1 ユニバーサル アプリがある場合、各プロジェクトを移行するための手順に従う必要があります。)  
@@ -390,7 +390,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
    ```  
   
-7. 追加、 **uap** 、次の名前空間\<機能 > 要素: documentsLibrary、picturesLibrary、videosLibrary、musicLibrary、enterpriseAuthentication、sharedUserCertificates、removableStorage、予定、および連絡先。 例えば:  
+7. 追加、 **uap** 、次の名前空間\<機能 > 要素: documentsLibrary、picturesLibrary、videosLibrary、musicLibrary、enterpriseAuthentication、sharedUserCertificates、removableStorage、予定、および連絡先。 例:  
   
    ```xml  
    <Capabilities>  
@@ -505,7 +505,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
      使用している実際のフレームワークのための適切な Publisher 値と MinVersion 値を使用します。 Windows 10 では、これらの名前が変更される可能性があることに注意してください。  
   
-13. gattCharacteristicNotification と rfcommConnection バック グラウンド タイプ タスクを Bluetooth タイプ タスクに置き換えます。 例:  
+13. gattCharacteristicNotification と rfcommConnection バック グラウンド タイプ タスクを Bluetooth タイプ タスクに置き換えます。 例えば:  
   
      **古い。**  
   
@@ -566,7 +566,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
        - \<ApplicationView > 要素  
   
-         例えば:  
+         例:  
   
        ```xml  
        <m2:VisualElements  

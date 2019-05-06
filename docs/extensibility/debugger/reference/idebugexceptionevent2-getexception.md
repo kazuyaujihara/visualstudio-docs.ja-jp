@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 79385348aa9290f26a34b99dbd2d6f68cb92dc8a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62920225"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 このイベントを発生させた例外の詳細な説明を取得します。
@@ -46,7 +46,7 @@ int GetException( 
 
 ## <a name="remarks"></a>Remarks
 
- [C++ のみ]呼び出し元が内の任意の文字列を解放する、 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)の解放と構造体、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)構造内のオブジェクト。
+ [C++のみ]呼び出し元が内の任意の文字列を解放する、 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)の解放と構造体、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)構造内のオブジェクト。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

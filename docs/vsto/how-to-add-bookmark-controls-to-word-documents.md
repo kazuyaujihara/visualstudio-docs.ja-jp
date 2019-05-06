@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f4a6a5de3ccd10c7444b03aca2faaa0ae17c4f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7948af3a6a77fd100a6965f9e50cda70ac7b868d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427781"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>方法: Word 文書に Bookmark コントロールを追加します。
   ドキュメント レベルのプロジェクトに追加することができます<xref:Microsoft.Office.Tools.Word.Bookmark>デザイン時または実行時に、プロジェクトのドキュメントにコントロール。 VSTO アドイン プロジェクトに追加することができます<xref:Microsoft.Office.Tools.Word.Bookmark>実行時に開いているドキュメントのコントロール。
@@ -94,7 +94,7 @@ ms.locfileid: "60104526"
      [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]
 
     > [!NOTE]
-    >  既存の <xref:Microsoft.Office.Tools.Word.Bookmark> から <xref:Microsoft.Office.Interop.Word.Bookmark>コントロールを作成する場合は、 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> メソッドを使用し、既存の <xref:Microsoft.Office.Interop.Word.Bookmark>を渡します。
+    > 既存の <xref:Microsoft.Office.Tools.Word.Bookmark> から <xref:Microsoft.Office.Interop.Word.Bookmark>コントロールを作成する場合は、 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> メソッドを使用し、既存の <xref:Microsoft.Office.Interop.Word.Bookmark>を渡します。
 
 ## <a name="runtimeaddin"></a> VSTO アドイン プロジェクトでの実行時に Bookmark コントロールを追加します。
  追加することができます<xref:Microsoft.Office.Tools.Word.Bookmark>VSTO アドインを使用して実行時に開いている文書をプログラムで制御します。 そのためには、開いている文書に基づいた <xref:Microsoft.Office.Tools.Word.Document> ホスト項目を生成し、このホスト項目の <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> プロパティのメソッドを使用します。 2 つのメソッド オーバーロードを使用して、次の方法で <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールを追加できます。

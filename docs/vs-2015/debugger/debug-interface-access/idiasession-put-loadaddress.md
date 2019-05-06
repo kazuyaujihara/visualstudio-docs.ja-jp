@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1be0bfd6d5a635dcff632e25421922697b3f0de6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f697384874726904960fc5ba04733c3acfe1cd06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438467"
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT put_loadAddress ( 
  シンボルの仮想アドレス (VA) プロパティは、このメソッドの値を使用して計算されます。 このプロパティは 0 以外設定されていない限り、仮想アドレスは計算されません。  
   
 > [!NOTE]
->  取得する場合は、このメソッドを呼び出す必要があります、 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)オブジェクトし、シンボルで任意の仮想プロパティを使用する必要がある場合、オブジェクトの使用を開始する前にします。  
+> 取得する場合は、このメソッドを呼び出す必要があります、 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)オブジェクトし、シンボルで任意の仮想プロパティを使用する必要がある場合、オブジェクトの使用を開始する前にします。  
   
 ## <a name="see-also"></a>関連項目  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

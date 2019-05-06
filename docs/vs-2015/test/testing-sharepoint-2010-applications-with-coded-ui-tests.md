@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 229893e13da06253398da32cfef4a85402a4787a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4929464f04ecb630f4c6898f7b2cc1ce132a79a9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445976"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>コード化された UI テストを使用した SharePoint 2010 アプリケーションのテスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,21 +39,21 @@ ms.locfileid: "60094555"
  ![SharePoint Web パーツ](../test/media/cuit-sharepoint.png "CUIT_SharePoint")  
   
 > [!NOTE]
->  操作を記録している場合は、コードを生成する前に操作を検証します。 マウス ホバーにはいくつかの動作が関連付けられているため、既定で有効になっています。 コード化された UI テストから冗長なホバーを削除するようにしてください。 そのためには、テスト用のコードを編集するか、 [コード化された UI テスト エディター](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)を使用します。  
+> 操作を記録している場合は、コードを生成する前に操作を検証します。 マウス ホバーにはいくつかの動作が関連付けられているため、既定で有効になっています。 コード化された UI テストから冗長なホバーを削除するようにしてください。 そのためには、テスト用のコードを編集するか、 [コード化された UI テスト エディター](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)を使用します。  
   
 ## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>SharePoint アプリ内に Office 2010 コントロールのテストを含める  
  SharePoint アプリでいくつかの Office 2010 Web パーツの自動化を有効にするには、コードを少し変更する必要があります。  
   
 > [!WARNING]
->  Visio および PowerPoint 2010 コントロールはサポートされていません。  
+> Visio および PowerPoint 2010 コントロールはサポートされていません。  
   
 ### <a name="excel-2010-cell-controls"></a>Excel 2010 のセル コントロール  
  Excel セル コントロールを含めるには、コード化された UI テストのコードを少し変更する必要があります。  
   
 > [!WARNING]
->  Excel のセルにテキストを入力してから方向キーを操作すると、正しく記録されません。 セルの選択にはマウスを使用してください。  
+> Excel のセルにテキストを入力してから方向キーを操作すると、正しく記録されません。 セルの選択にはマウスを使用してください。  
   
- 空のセルに対する操作を記録している場合は、セルをダブルクリックしてからテキスト設定操作を実行して、コードを変更する必要があります。 そうする必要があるのは、セルをクリックした後、キーボードを操作すると、セル内の `textarea` がアクティブになるためです。 単に空のセルで `setvalue` を記録すると、セルがクリックされるまでは存在しない `editbox` が検索されます。 例えば:  
+ 空のセルに対する操作を記録している場合は、セルをダブルクリックしてからテキスト設定操作を実行して、コードを変更する必要があります。 そうする必要があるのは、セルをクリックした後、キーボードを操作すると、セル内の `textarea` がアクティブになるためです。 単に空のセルで `setvalue` を記録すると、セルがクリックされるまでは存在しない `editbox` が検索されます。 例:  
   
 ```csharp  
 Mouse.DoubliClick(uiItemCell,new Point(31,14));  

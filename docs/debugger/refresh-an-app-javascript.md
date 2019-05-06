@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 1a0b90e5d863d41c46057e38c5f87bdad2481581
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ee4c97c4ecbf665bbaef39b658a4b96715acb23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408644"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Visual Studio で UWP アプリを更新します。
 
@@ -43,7 +43,7 @@ ms.locfileid: "60088029"
 - 選択したデバッグ デバイスの変更などのプロジェクトおよび項目プロパティの変更、またはファイルのパッケージ操作の変更 ([プロパティ] ウィンドウ内)。
 
 > [!IMPORTANT]
->  参照やパッケージ マニフェストの変更など、上記の項目の変更を行った場合、HTML、CSS、および JavaScript のソース ファイルを更新するには、デバッガーを停止して再起動する必要があります。
+> 参照やパッケージ マニフェストの変更など、上記の項目の変更を行った場合、HTML、CSS、および JavaScript のソース ファイルを更新するには、デバッガーを停止して再起動する必要があります。
 
 ### <a name="to-refresh-an-app"></a>アプリを更新するには
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6c9bf9dd71007e3a33a217a7ec30b357cd211b00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909350"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>展開の管理のためのプロジェクト構成
 展開は、デバッグ、およびインストールの予期される場所に、ビルド プロセスからの出力項目を物理的に移動するのです。 たとえば、Web アプリケーションをローカル コンピューター上に構築され、サーバー上に配置しする可能性があります。
@@ -35,7 +35,7 @@ ms.locfileid: "56629678"
 
   展開プロジェクトは、展開プロセスを管理するは、展開コマンドを有効にし、このコマンドが選択されているときに応答します。 配置プロジェクトの実装、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>配置を実行し、呼び出しを行うのためのインターフェイス、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback>レポートへのインターフェイスは、ステータス イベントを展開します。
 
-  構成は、ビルドまたは配置の動作に影響する依存関係を指定できます。 ビルドまたは配置する必要がありますか、ビルドまたは配置前に、または後、構成自体をビルドまたは配置されるプロジェクト依存関係とは。 プロジェクト間でのビルド依存関係と共に説明しています、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>インターフェイスし、依存関係をデプロイ、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>インターフェイス。 詳細については、[構築するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)を参照してください。
+  構成は、ビルドまたは配置の動作に影響する依存関係を指定できます。 ビルドまたは配置する必要がありますか、ビルドまたは配置前に、または後、構成自体をビルドまたは配置されるプロジェクト依存関係とは。 プロジェクト間でのビルド依存関係と共に説明しています、<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>インターフェイスし、依存関係をデプロイ、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>インターフェイス。 詳細については、次を参照してください。[構築するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)

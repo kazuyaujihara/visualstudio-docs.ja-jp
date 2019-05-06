@@ -20,24 +20,24 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fbbdba27b5ccc52e64575aad018af4ca20cf2e14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008798"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>SharePoint ビジネス データを統合します。
-  ビジネス データは、SharePoint に統合できます。 ビジネス データがなどのバック エンド サーバーのアプリケーションから取得できます[!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)]Siebel、および SAP、または Web サービス。 ユーザーは、表示、追加、更新、または外部リストまたは SharePoint のビジネス データ Web パーツを使用してビジネス データを削除できます。  ユーザーは、Microsoft Outlook などの Microsoft Office アプリケーションでこのデータをオフラインにもアクセスできます。 詳細については、[場所できますする外部データの表示](http://go.microsoft.com/fwlink/?LinkId=169295)を参照してください。
+  ビジネス データは、SharePoint に統合できます。 ビジネス データがなどのバック エンド サーバーのアプリケーションから取得できます[!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)]Siebel、および SAP、または Web サービス。 ユーザーは、表示、追加、更新、または外部リストまたは SharePoint のビジネス データ Web パーツを使用してビジネス データを削除できます。  ユーザーは、Microsoft Outlook などの Microsoft Office アプリケーションでこのデータをオフラインにもアクセスできます。 詳細については、次を参照してください。[場所できますする外部データの表示](http://go.microsoft.com/fwlink/?LinkId=169295)します。
 
- SharePoint にデータを統合するには、ビジネス データ接続 (BDC) サービスのモデルを作成します。 BDC サービスは、ビジネス アプリケーションでデータに関する情報を格納する SharePoint のアプリケーションです。 詳細については、[ビジネス データ接続 (BDC) サービス](http://go.microsoft.com/fwlink/?LinkID=169276)を参照してください。
+ SharePoint にデータを統合するには、ビジネス データ接続 (BDC) サービスのモデルを作成します。 BDC サービスは、ビジネス アプリケーションでデータに関する情報を格納する SharePoint のアプリケーションです。 詳細については、次を参照してください。[ビジネス データ接続 (BDC) サービス](http://go.microsoft.com/fwlink/?LinkID=169276)します。
 
 ## <a name="models-in-visual-studio"></a>Visual Studio でモデル
  Visual Studio でモデルを使用すると、取得およびバックエンド データ ソースからデータを更新するカスタム コードを記述できます。 複数のデータ ソースからデータを集計することもできます。 データを含む顧客の一覧を表示するなど、[!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)]データベースと Web サービス。
 
- SharePoint に既に配置されているモデルをインポートすることもできます。 モデルにインポートした後は、カスタム コードを追加またはだけパッケージ化し、複数の SharePoint サーバー ファームに、モデルをデプロイする Visual Studio を使用できます。 詳細については、[business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)を参照してください。
+ SharePoint に既に配置されているモデルをインポートすることもできます。 モデルにインポートした後は、カスタム コードを追加またはだけパッケージ化し、複数の SharePoint サーバー ファームに、モデルをデプロイする Visual Studio を使用できます。 詳細については、次を参照してください。 [business data connectivity モデルの作成](../sharepoint/creating-a-business-data-connectivity-model.md)です。
 
 ## <a name="design-a-model-in-visual-studio"></a>Visual Studio でモデルを設計します。
- デザイナーといくつかのツール ウィンドウを使用してモデルを設計することができます。 モデルを設計する際、Visual Studio には、モデルの XML が生成されます。 詳細については、[BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)を参照してください。
+ デザイナーといくつかのツール ウィンドウを使用してモデルを設計することができます。 モデルを設計する際、Visual Studio には、モデルの XML が生成されます。 詳細については、次を参照してください。 [BDC モデルのデザイン ツールの概要](../sharepoint/bdc-model-design-tools-overview.md)します。
 
  モデルには、エンティティとメソッドが含まれています。
 
@@ -47,7 +47,7 @@ ms.locfileid: "56612726"
 ### <a name="methods"></a>メソッド
  メソッドには、エンティティのフィールドの操作を実行する場合は、外部コンテンツ タイプのコンシューマーができます。 たとえば、Updater メソッドが、アドレスを変更するユーザーを有効にし、生年月日、顧客の可能性があります、`Address`と`BirthDate`のフィールドには、`Customer`エンティティ。
 
- Visual Studio では、モデル内の各エンティティ サービス コード ファイルを生成します。 モデルにメソッドを追加するときに Visual Studio は、サービス コード ファイルに対応するメソッドを生成します。 適切なタスクを実行するには、各メソッドにコードを追加します。 たとえば、Creator メソッドをモデルに追加する場合 Visual Studio は、サービス コード ファイルで Creator メソッドを生成します。 ユーザーがクリックしたときに、BDC サービスでこのメソッドが呼び出されます、**新しい項目の**モデルに基づいている一覧でボタンをクリックします。 そのため、データ ソースに新しいデータを追加する作成者メソッドにコードを追加します。 詳細については、[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)を参照してください。
+ Visual Studio では、モデル内の各エンティティ サービス コード ファイルを生成します。 モデルにメソッドを追加するときに Visual Studio は、サービス コード ファイルに対応するメソッドを生成します。 適切なタスクを実行するには、各メソッドにコードを追加します。 たとえば、Creator メソッドをモデルに追加する場合 Visual Studio は、サービス コード ファイルで Creator メソッドを生成します。 ユーザーがクリックしたときに、BDC サービスでこのメソッドが呼び出されます、**新しい項目の**モデルに基づいている一覧でボタンをクリックします。 そのため、データ ソースに新しいデータを追加する作成者メソッドにコードを追加します。 詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
 
 ## <a name="related-topics"></a>関連トピック
 

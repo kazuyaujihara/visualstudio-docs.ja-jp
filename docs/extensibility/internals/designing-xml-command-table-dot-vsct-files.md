@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910773"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>XML コマンド テーブル (.vsct) ファイルを設計します。
 XML コマンド テーブル (*.vsct*) ファイルは、VSPackage のコマンドの項目の外観とレイアウトについて説明します。 コマンドの項目には、ボタン、コンボ ボックス、メニューのツールバー、およびコマンドのアイテムのグループが含まれます。 この記事では、XML コマンド テーブルのファイル、コマンドの項目、メニューの影響、およびそれらを作成する方法について説明します。

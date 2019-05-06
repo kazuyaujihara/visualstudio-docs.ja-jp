@@ -27,11 +27,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e78d20fa0c7d4d0db6db50c2cbb5cde0b79023fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982330"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio のツール for Office runtime の概要
   Visual Studio で Microsoft Office developer tools を使用して作成されたソリューションを実行するには、するには、エンドユーザーのコンピューターに、Visual Studio 2010 Tools for Office ランタイムをインストールする必要があります。 詳細については、「[方法 :Visual Studio Tools for Office ランタイム再頒布可能パッケージをインストール](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)します。 Visual Studio 2010 Tools for Office ランタイムは、2 つの主要なコンポーネントで構成されます。

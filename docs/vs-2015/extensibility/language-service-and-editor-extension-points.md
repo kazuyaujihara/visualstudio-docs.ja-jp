@@ -10,12 +10,12 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 295ff3e48e2b0598a8cf33bfd4842e35b7469737
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bf0e34c76406b054ea2d27434f749b676b0b30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439799"
 ---
 # <a name="language-service-and-editor-extension-points"></a>言語サービスとエディターの拡張ポイント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  ファイル名拡張子とコンテンツの種類を関連付けるには使用<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>します。  
   
 > [!NOTE]
->  使用して Visual Studio で、ファイル名拡張子が登録されている、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>言語サービスのパッケージにします。 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF コンテンツの種類をこの方法で登録されているファイル名拡張子を関連付けます。  
+> 使用して Visual Studio で、ファイル名拡張子が登録されている、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>言語サービスのパッケージにします。 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF コンテンツの種類をこの方法で登録されているファイル名拡張子を関連付けます。  
   
  ファイル名拡張子をコンテンツ タイプの定義をエクスポートするには、次の属性を含める必要があります。  
   
@@ -278,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: 表示要素に関連付けられています。  
   
   > [!NOTE]
-  >  例については、 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>、HighlightWordTag 定義を参照してください。[チュートリアル。テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)します。  
+  > 例については、 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>、HighlightWordTag 定義を参照してください。[チュートリアル。テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)します。  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: に関連付けられたリージョン展開またはアウトラインで折りたたまれていることができます。  
   
@@ -324,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  タグには、この形式の定義を適用するには、クラス (表示名ではなく) の name 属性で設定した名前を参照します。  
   
 > [!NOTE]
->  例については、 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>、HighlightWordFormatDefinition クラスを参照してください。[チュートリアル。テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)します。  
+> 例については、 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>、HighlightWordFormatDefinition クラスを参照してください。[チュートリアル。テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)します。  
   
 ## <a name="extending-adornments"></a>表示要素の拡張  
  修飾は、テキスト ビューに表示されるテキストを追加できるかをテキスト自体を表示する視覚効果を定義します。 任意の型として、独自の表示要素を定義する<xref:System.Windows.UIElement>します。  
@@ -516,7 +516,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 非推奨の好評だった<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>します。  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 非推奨の好評だった<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>します。  
   
  さらに、同じ種類のプロバイダーを実装する必要があります。  
   
@@ -529,7 +529,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 非推奨の好評だった<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>します。  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 非推奨の好評だった<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>します。  
   
  次の属性とプロバイダーをエクスポートする必要があります。  
   
@@ -553,9 +553,9 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  [チュートリアル: クイック ヒントの表示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [チュートリアル: シグニチャ ヘルプの表示](../extensibility/walkthrough-displaying-signature-help.md)  
+ [チュートリアル: シグネチャ ヘルプの表示](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [チュートリアル: ステートメント入力候補を表示します。](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [チュートリアル: 入力候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)  
   
 ### <a name="implementing-an-intellisense-controller"></a>IntelliSense のコント ローラーの実装  
  コント ローラーをカスタマイズすることを実装する必要があります、<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController>インターフェイス。 さらに、次の属性と共にコント ローラー プロバイダーを実装する必要があります。  

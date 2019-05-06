@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f59a6007ca272c2bd0df0278605ff5d01807ce91
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 5df1a0a6c3500da646d499ffacc3bb9827408c24
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433658"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>[Web プロジェクト]\([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "59660142"
  既定では、(たとえば、F5 キーまたは Ctrl + F5 キーを使用して) Visual Studio で Web プロジェクトを実行すると、Visual Studio では Visual Studio 開発サーバーが使用されます。 詳細については、「 [ASP.NET Web プロジェクト用の Visual Studio の Web サーバー](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328)」を参照してください。  
   
 > [!NOTE]
->  使用している設定またはエディションによっては、ダイアログ ボックスで使用可能なオプションや、メニュー コマンドの名前や位置がヘルプに記載されている内容と異なる場合があります。 このヘルプ ページは、**Web 設定**を考慮して記述されています。 設定を表示または変更するには、**[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 使用している設定またはエディションによっては、ダイアログ ボックスで使用可能なオプションや、メニュー コマンドの名前や位置がヘルプに記載されている内容と異なる場合があります。 このヘルプ ページは、**Web 設定**を考慮して記述されています。 設定を表示または変更するには、**[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="settings"></a>設定  
  **Web サイトおよびプロジェクト用 IIS Express の 64 ビット バージョンを使用する**  

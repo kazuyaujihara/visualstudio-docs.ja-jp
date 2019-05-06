@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d4fca66296f4437d3c9af55142d9fdbc56f21b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431942"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters を使用してデータセットを入力する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "59656779"
 TableAdapter のコンポーネントでは、基に 1 つまたは複数のクエリまたは指定したストアド プロシージャ、データベースからデータを含むデータセットが表示されます。 Tableadapter を実行できますも追加、更新、およびデータセットに対して行った変更を保持するには、データベースを削除します。 特定のテーブルに関連のないグローバル コマンドを発行することもできます。  
   
 > [!NOTE]
->  Tableadapter は、Visual Studio のデザイナーによって生成されます。 データセットをプログラムで作成する場合は、.NET Framework クラス、DataAdapter を使用します。  
+> Tableadapter は、Visual Studio のデザイナーによって生成されます。 データセットをプログラムで作成する場合は、.NET Framework クラス、DataAdapter を使用します。  
   
  TableAdapter の操作の詳細については、次のトピックのいずれかに直接スキップできます。  
   
@@ -98,7 +98,7 @@ TableAdapter のコンポーネントでは、基に 1 つまたは複数のク�
  TableAdapter を使用すると、通常実行するコマンド操作を効果的に実行できます。 たとえば、アダプターを呼び出すと`Fill`メソッドでは、アダプターのデータでコマンドを実行その`SelectCommand`プロパティ データ リーダーを使用して (たとえば、 <xref:System.Data.SqlClient.SqlDataReader>) データ テーブルに結果セットを読み込めません。 同様に、アダプターを呼び出すと`Update`メソッドでは、適切なコマンド実行 (で、 `UpdateCommand`、 `InsertCommand`、および`DeleteCommand`プロパティ) の各データ テーブル内のレコードを変更します。  
   
 > [!NOTE]
->  メインのクエリに十分な情報がある場合、TableAdapter の生成時に既定で `InsertCommand`、`UpdateCommand`、および `DeleteCommand` の各コマンドが作成されます。 TableAdapter のメインのクエリが 1 つのテーブルの SELECT ステートメントを超える場合は、デザイナーは生成できませんは`InsertCommand`、 `UpdateCommand`、および`DeleteCommand`します。 実行するときにエラーが発生する場合、これらのコマンドは生成されません、`TableAdapter.Update`メソッド。  
+> メインのクエリに十分な情報がある場合、TableAdapter の生成時に既定で `InsertCommand`、`UpdateCommand`、および `DeleteCommand` の各コマンドが作成されます。 TableAdapter のメインのクエリが 1 つのテーブルの SELECT ステートメントを超える場合は、デザイナーは生成できませんは`InsertCommand`、 `UpdateCommand`、および`DeleteCommand`します。 実行するときにエラーが発生する場合、これらのコマンドは生成されません、`TableAdapter.Update`メソッド。  
   
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter の GenerateDbDirectMethods  
  ほかに`InsertCommand`、 `UpdateCommand`、および`DeleteCommand`Tableadapter は、データベースに対して直接実行できるメソッドで作成されます。 これらのメソッド (`TableAdapter.Insert`、`TableAdapter.Update`、および `TableAdapter.Delete`) は、データベース内でデータを直接操作するために呼び出すことができます。 つまり、これらの各メソッドを呼び出す代わりにコードから呼び出すことができます`TableAdapter.Update`挿入、更新、および保留になっている削除を処理するために関連付けられたデータ テーブルにします。  

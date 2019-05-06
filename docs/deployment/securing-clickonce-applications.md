@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab627b09c1544b69a8834711e51a3bbbdd63e5a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 2b23e10dfd00f4e1b9bde8520ef50aa60cd18b35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406763"
 ---
 # <a name="secure-clickonce-applications"></a>ClickOnce アプリケーションのセキュリティ保護
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションは、保護されているリソースや操作に対して、コードが持つアクセス権を制限できるようにするための .NET Framework のコード アクセス セキュリティ制約を前提としています。 このため、コード アクセス セキュリティの影響を理解し、それに応じて [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを作成することが重要です。 アプリケーションでは、完全な信頼ゾーンまたは部分信頼ゾーン (インターネット ゾーンとイントラネット ゾーンなど) を使用して、アクセスを制限できます。
@@ -71,7 +71,7 @@ ms.locfileid: "58866787"
  クエリ文字列を通じて取得された引数は、必ず安全であることを確認してからデータベースまたはコマンド ラインに渡してください。 安全でない引数とは、悪意のあるユーザーがアプリケーションを操作して任意のコマンドを実行できるようにするデータベースまたはコマンド ライン エスケープ文字が含まれた引数のことです。
 
 > [!NOTE]
->  クエリ文字列引数は、起動時に [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションに引数を渡す唯一の手段です。 コマンド ラインから [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションに引数を渡すことはできません。
+> クエリ文字列引数は、起動時に [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションに引数を渡す唯一の手段です。 コマンド ラインから [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションに引数を渡すことはできません。
 
 ## <a name="deploying-obfuscated-assemblies"></a>難読化されたアセンブリの配置
  Visual Studio には、無料の [PreEmptive Protection - Dotfuscator Community](../ide/dotfuscator/index.md) が含まれています。これを使うと、コードの難読化とアクティブな保護手段を使って ClickOnce アプリケーションを保護できます。  詳細については、[Dotfuscator Community ユーザー ガイドの ClickOnce セクション](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html)を参照してください。

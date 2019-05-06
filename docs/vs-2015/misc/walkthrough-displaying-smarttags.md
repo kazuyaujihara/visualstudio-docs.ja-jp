@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436513"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>チュートリアル: スマート タグの表示
 スマート タグは非推奨とされており、代わって電球が使用されるようになりました。 「[チュートリアル:Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)します。  
@@ -24,7 +24,7 @@ ms.locfileid: "60110441"
  スマート タグはエディターの IntelliSense 実装の一部ですが、<xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> をサブクラス化してから <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> インターフェイスおよび <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> インターフェイスを実装することで、スマート タグを実装できます。  
   
 > [!NOTE]
->  その他のタグも、同様の方法で実装できます。  
+> その他のタグも、同様の方法で実装できます。  
   
  次のチュートリアルが、現在の単語に表示され、2 つの推奨されるアクションが設定されているスマート タグを作成する方法を示します。**大文字に変換**と**小文字に変換**します。  
   
@@ -183,4 +183,4 @@ ms.locfileid: "60110441"
 5. ボタンをクリックすると、2 つの推奨されるアクションが表示されます。**大文字に変換**と**小文字に変換**します。 最初の操作をクリックすると、現在の単語内のすべてのテキストが大文字に変換されます。 2 つ目の操作をクリックすると、すべてのテキストが小文字に変換されます。  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: ファイル名拡張子へのコンテンツの種類のリンク](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [チュートリアル: コンテンツの種類とファイル名拡張子とをリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

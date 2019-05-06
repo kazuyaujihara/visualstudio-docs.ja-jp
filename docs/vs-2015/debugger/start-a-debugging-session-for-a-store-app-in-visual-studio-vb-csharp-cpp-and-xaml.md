@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc5dfaa203e3e915075ad819fa859be46b9e2b7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dd61ea128093735a69ad9b1f30cddc593b5856a4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440436"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Visual Studio でのストア アプリのデバッグ セッションの開始 (VB、C#、C++、および XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  このトピックでは、XAML および Visual C++、Visual C#、または Visual Basic で記述されたストア アプリのデバッグ セッションを開始する方法について説明します。 アプリのデバッグには、デバッグ セッションの構成と、アプリの起動方法の選択の両方が関係します。
 
 > [!NOTE]
->  JavaScript および HTML で記述されたアプリを参照してください[(JavaScript) デバッグ セッションを開始](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)します。
+> JavaScript および HTML で記述されたアプリを参照してください[(JavaScript) デバッグ セッションを開始](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)します。
 
 ## <a name="BKMK_In_this_topic"></a> このトピックの内容
  [デバッグを開始する簡単な方法](#BKMK_The_easy_way_to_start_debugging)
@@ -152,7 +152,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
     ![リモート デバッガー接続 ダイアログ ボックスをオン](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  **[リモート デバッガー接続の選択]** ダイアログ ボックスには、ローカル サブネット上にあるコンピューターとイーサネット ケーブルによって Visual Studio コンピューターに直接接続されているコンピューターが表示されます。 別のコンピューターを指定するには、 **[コンピューター名]** ボックスに名前を入力します。
+  > **[リモート デバッガー接続の選択]** ダイアログ ボックスには、ローカル サブネット上にあるコンピューターとイーサネット ケーブルによって Visual Studio コンピューターに直接接続されているコンピューターが表示されます。 別のコンピューターを指定するには、 **[コンピューター名]** ボックスに名前を入力します。
 
   ![Windows Phone にのみ適用されます](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -210,7 +210,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  既定では、リモート デバッガーを実行するために資格情報を指定する必要があります。
 
 > [!IMPORTANT]
->  リモート デバッガーを認証なしモードで実行することも選択できますが、このモードの使用は避けることを強く推奨します。 このモードで実行した場合、ネットワーク セキュリティはまったく提供されません。 認証なしモードは、ネットワークに悪意のあるコードや悪意のあるトラフィックのリスクがないことが確実である場合のみ選択してください。
+> リモート デバッガーを認証なしモードで実行することも選択できますが、このモードの使用は避けることを強く推奨します。 このモードで実行した場合、ネットワーク セキュリティはまったく提供されません。 認証なしモードは、ネットワークに悪意のあるコードや悪意のあるトラフィックのリスクがないことが確実である場合のみ選択してください。
 
  認証要件を削除するには:
 
@@ -250,7 +250,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  インストール済みのアプリがデバッグ モードで実行されるように設定するには、次の手順を実行します。
 
 > [!NOTE]
->  この手順は、アプリが実行されていないときに開始してください。
+> この手順は、アプリが実行されていないときに開始してください。
 
 1.  **[デバッグ]** メニューの **[デバッグ] Installed App Package**をクリックします。
 

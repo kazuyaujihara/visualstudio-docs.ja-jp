@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b4709a218f6586320e96f79ea8a9f423f537c7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839655"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
 読み取り`DWORD`プロパティ セット内の値。
@@ -43,7 +43,7 @@ HRESULT ReadDWORD ( 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。 返します`E_INVALIDARG`型のプロパティがない場合`DWORD`します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  A `DWORD` 32 ビット符号なし整数としての Windows によって定義されます。
 
 ## <a name="see-also"></a>関連項目

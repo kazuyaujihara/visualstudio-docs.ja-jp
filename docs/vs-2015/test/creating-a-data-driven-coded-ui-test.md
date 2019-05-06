@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffdd925b1fdddb6bddfb3704e561fac8efc84b57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25a52b4854dd957787100ba2bc742f199c4a9a81
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416535"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>データ ドリブンのコード化された UI テストの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ ms.locfileid: "60048984"
      データ ソースがこのテスト メソッドで使用できるようになりました。  
   
     > [!TIP]
-    >  XML、SQL Express、Excel など他の種類のデータ ソースを使用するサンプルについては、Q & A のセクションにある[データ ソース属性のサンプル](#CreateDataDrivenCUIT_QA_DataSourceAttributes)を参照してください。  
+    > XML、SQL Express、Excel など他の種類のデータ ソースを使用するサンプルについては、Q & A のセクションにある[データ ソース属性のサンプル](#CreateDataDrivenCUIT_QA_DataSourceAttributes)を参照してください。  
   
 2. テストを実行します。  
   

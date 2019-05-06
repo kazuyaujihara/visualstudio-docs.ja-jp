@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825823"
 ---
 # <a name="suppress-code-analysis-warnings"></a>コード分析の警告を抑制します。
 
@@ -27,7 +27,7 @@ ms.locfileid: "57223087"
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性は、条件付き属性、コンパイル時に CODE_ANALYSIS コンパイルのシンボルが定義されている場合にのみ、マネージ コード アセンブリの IL メタデータに含まれています。
 
-C++/cli CLI、マクロの CA を使用して\_抑制\_メッセージまたは CA\_GLOBAL\_属性を追加するヘッダー ファイルで SUPPRESS_MESSAGE。
+C++/CLI、マクロの CA を使用して\_抑制\_メッセージまたは CA\_GLOBAL\_属性を追加するヘッダー ファイルで SUPPRESS_MESSAGE します。
 
 > [!NOTE]
 > ソース内抑制をソース内抑制のメタデータを誤って発送を防ぐために、リリース ビルドで使用しないでください。 さらに、ソース内抑制の処理コスト、ため、アプリケーションのパフォーマンスが低下することができます。
@@ -57,7 +57,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 属性のプロパティは次のとおりです。
 
-- **カテゴリ**-ルールが定義されているカテゴリ。 コード分析ルールのカテゴリの詳細については、[マネージ コードの警告](../code-quality/code-analysis-for-managed-code-warnings.md)を参照してください。
+- **カテゴリ**-ルールが定義されているカテゴリ。 コード分析ルールのカテゴリの詳細については、次を参照してください。[マネージ コードの警告](../code-quality/code-analysis-for-managed-code-warnings.md)します。
 
 - **CheckId** -ルールの識別子。 サポートには、短期および長期のルールの識別子名の両方が含まれます。 短い名前が CAXXXX;長い名前は、CAXXXX:FriendlyTypeName です。
 

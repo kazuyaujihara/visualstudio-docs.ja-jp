@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964483"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でショートカット キーを使用します。
 エディター拡張機能で、ショートカット キーに応答することができます。 次のチュートリアルでは、テキスト ビューにショートカット キーを使用してビューの表示要素を追加する方法を示します。 このチュートリアルは、ビューポート adornment エディター テンプレートに基づいており、使用して、表示要素を追加することができます、+ 文字。

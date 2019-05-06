@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d8da1446682c36549440e9b9e38ce110e0b35ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e2683c3a2ea80aad341b7fab4fb35d13ea5379c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429052"
 ---
 # <a name="solution-configuration"></a>ソリューション構成
 ソリューション構成では、ソリューション レベルのプロパティを格納します。 動作を指示する、**開始**(F5) キーと**ビルド**コマンド。 既定では、これらのコマンドは、ビルドし、デバッグ構成を開始します。 どちらのコマンドは、ソリューション構成のコンテキストで実行します。 これは、ユーザーがどのようなアクティブなソリューションが、設定を使用して構成されているビルドの開始、f5 キーを予測できることを意味します。 環境は、ビルドおよび実行する際にプロジェクトではなく、ソリューションを最適化するために設計されています。
@@ -23,11 +23,11 @@ ms.locfileid: "56614827"
  標準の Visual Studio ツールバーには、[スタート] ボタンとソリューション構成ドロップダウンを [スタート] ボタンの右側が含まれています。 この一覧では、f5 キーが押されたときに開始する構成を選択して、独自のソリューション構成を作成または既存の構成を編集することができます。
 
 > [!NOTE]
->  機能拡張インターフェイスを作成またはソリューション構成を編集することはありません。 使用する必要があります`DTE.SolutionBuilder`します。 ただし、ソリューションのビルドを管理するの拡張性 Api があります。 詳細については、「 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2> 」を参照してください。
+> 機能拡張インターフェイスを作成またはソリューション構成を編集することはありません。 使用する必要があります`DTE.SolutionBuilder`します。 ただし、ソリューションのビルドを管理するの拡張性 Api があります。 詳細については、「 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2> 」を参照してください。
 
  次に、プロジェクトの種類でサポートされるソリューション構成を実装する方法を示します。
 
-- Project
+- プロジェクト
 
    現在のソリューションに存在するプロジェクトの名前が表示されます。
 

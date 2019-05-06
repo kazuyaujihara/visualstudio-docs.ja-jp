@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3e8e98a20fafc825af0cf9486c8a9939c02e3b5f
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891065"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>メニュー コマンドを使用して拡張機能を作成します。
 
@@ -32,11 +32,11 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 
 1. という名前の VSIX プロジェクトを作成する**FirstMenuCommand**します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**ダイアログで"vsix"を検索します。
 
-2. という名前のカスタム コマンド項目テンプレートを追加、プロジェクトが開いたら、 **FirstCommand**します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual C#** > **機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して*FirstCommand.cs*します。
+2. という名前のカスタム コマンド項目テンプレートを追加、プロジェクトが開いたら、 **FirstCommand**します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#** > **機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して*FirstCommand.cs*します。
 
 3. プロジェクトをビルドし、デバッグを開始します。
 
-    Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、[実験用インスタンス](../extensibility/the-experimental-instance.md)を参照してください。
+    Visual Studio の実験用インスタンスが表示されます。 実験用インスタンスの詳細については、次を参照してください。[実験用インスタンス](../extensibility/the-experimental-instance.md)します。
 
 ::: moniker range="vs-2017"
 

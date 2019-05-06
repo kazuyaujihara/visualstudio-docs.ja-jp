@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 84fef8d0f63f76c7810c94ade2e1eb58e55b94cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861307"
 ---
 # <a name="extend-properties"></a>拡張プロパティ
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **プロパティ**ウィンドウはすべてサポートしています、COM と COM + コンポーネントのユニバーサル プロパティ ブラウザーを[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]製品です。 **プロパティ**ウィンドウは`ITypeInfo`情報および COM + 統合開発環境 (IDE) でその他のウィンドウで現在選択されているオブジェクトのデザイン時プロパティの一覧にメタデータを入力します。

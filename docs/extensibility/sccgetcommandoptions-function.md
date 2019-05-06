@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f73eec788ee21c5e27514d373ad78b8dfc965fce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c9685d96c14f3519653025ab1554f1e9e7587e0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434641"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 関数
 この関数は、指定されたコマンドの詳細設定オプションのユーザーに求めます。
@@ -77,7 +77,7 @@ SCCRTN SccGetCommandOptions(
  最後に、ユーザーがクリックすると**OK** ide の**取得**ダイアログ ボックスで、IDE の呼び出し、 [SccGet](../extensibility/sccget-function.md)で返される構造体を渡すこと`ppvOptions`を格納している、高度なオプションです。
 
 > [!NOTE]
->  コマンドは、 `SCC_COMMAND_OPTIONS` IDE が表示されるときに使用する**オプション** ダイアログ ボックスをユーザー設定を行う場合、統合のしくみを制御します。 表示できる場合は、ソース管理プラグインは、独自の環境設定 ダイアログ ボックスを指定する必要がある、 **詳細設定** IDE の基本設定 ダイアログ ボックスでボタンをクリックします。 プラグインが責任を負うものを取得して、この情報を永続化IDE は、それを使用してまたは変更はありません。
+> コマンドは、 `SCC_COMMAND_OPTIONS` IDE が表示されるときに使用する**オプション** ダイアログ ボックスをユーザー設定を行う場合、統合のしくみを制御します。 表示できる場合は、ソース管理プラグインは、独自の環境設定 ダイアログ ボックスを指定する必要がある、 **詳細設定** IDE の基本設定 ダイアログ ボックスでボタンをクリックします。 プラグインが責任を負うものを取得して、この情報を永続化IDE は、それを使用してまたは変更はありません。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

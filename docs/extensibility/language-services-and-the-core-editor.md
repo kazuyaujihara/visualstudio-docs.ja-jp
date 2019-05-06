@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f01784cd21bbc0a29a6216525e626a8fa992e0ba
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856593"
 ---
 # <a name="language-services-and-the-core-editor"></a>言語サービスとコア エディター
 Visual Studio のエディターは、言語サービスに頻繁に関連付けられます。 その他のものは、言語サービスは、構文の色分け表示、ステートメント入力候補、IntelliSense、およびテキストの書式設定を提供します。
@@ -23,7 +23,7 @@ Visual Studio のエディターは、言語サービスに頻繁に関連付け
 ## <a name="core-editors-and-document-data-objects"></a>コア エディターやドキュメント データ オブジェクト
  コア エディターにアクセスする場合は、ドキュメント データとドキュメント ビュー オブジェクトは作成しません。 作成され、これら 2 つのオブジェクトを制御し、エディター ファクトリの実装で適切な呼び出しを作成してそれらへのハンドルを取得します。
 
- 詳細については、[エディターがプロジェクトでファイルを開きます決定](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)を参照してください。
+ 詳細については、次を参照してください。[エディターがプロジェクトでファイルを開きます決定](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)します。
 
 ## <a name="language-services-and-the-core-editor"></a>言語サービスとコア エディター
  言語サービスを実装すると、ドキュメント ビューでデータを表示する方法を制御できます。 言語サービスは、情報とは、Visual C などの特定の言語に固有の動作を提供します。 テキスト バッファーが、レジストリ キーからこのファイル名拡張子に関連付けられた言語サービスを決定するテキスト バッファーを作成して開いているドキュメントのファイル名拡張子を決定する**HKEY_LOCAL_MACHINEMicrosoft\Editors\\YourLanguageService {GUID} \Extensions**します。 プロシージャを読み込み、標準の VSPackage は、VSPackage を読み込むし、言語サービスのインスタンスが作成されます。

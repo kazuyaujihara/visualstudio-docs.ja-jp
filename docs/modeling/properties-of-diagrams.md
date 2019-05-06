@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05c348edfa4665b138ac0f6069b0afaf6735da7a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999256"
 ---
 # <a name="properties-of-diagrams"></a>図のプロパティ
 生成されたデザイナーでのダイアグラムの表示方法を指定するプロパティを設定することができます。 たとえば、図でテキストの既定の色を指定できます。
 
- 詳細については、[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)を参照してください。 これらのプロパティを使用する方法の詳細については、[カスタマイズし、ドメイン固有言語の拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)を参照してください。
+ 詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。 これらのプロパティを使用する方法の詳細については、次を参照してください。[カスタマイズし、ドメイン固有言語の拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)します。
 
  次の表は、図のプロパティを一覧表示します。
 
@@ -31,7 +31,7 @@ ms.locfileid: "55937361"
 |テキストの色|ダイアグラムで表示されるテキストの色。|黒|
 |アクセス修飾子|(パブリックまたは内部) クラスのアクセス修飾子。|Public|
 |カスタム属性|生成されたコード クラスに属性を追加するために使用します。|\<none>|
-|Double 型を生成します派生。|場合`True`、基底クラスと (オーバーライドによってカスタマイズをサポート) する部分クラスの両方が生成されます。 詳細については、[をオーバーライドし、生成されたクラスを拡張](../modeling/overriding-and-extending-the-generated-classes.md)を参照してください。|False|
+|Double 型を生成します派生。|場合`True`、基底クラスと (オーバーライドによってカスタマイズをサポート) する部分クラスの両方が生成されます。 詳細については、次を参照してください。[をオーバーライドし、生成されたクラスを拡張](../modeling/overriding-and-extending-the-generated-classes.md)します。|False|
 |カスタム コンス トラクターがあります。|場合`True`、カスタム コンス トラクターは、ソース コードで提供されます。 詳細については、次を参照してください[をオーバーライドし、生成されたクラスを拡張](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
 |継承修飾子|ダイアグラムから生成されるソース コードのクラスの継承の種類について説明します (`none`、 `abstract`、または`sealed`)。|なし|
 |基本ダイアグラム|この図の基本クラス。|(なし)|

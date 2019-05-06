@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 304b2afd734527b80a465fc5074077bf8b0661fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411333"
 ---
 # <a name="create-a-settings-category"></a>設定カテゴリを作成します。
 
@@ -46,7 +46,7 @@ ms.locfileid: "60100588"
      これにより、その名前は"My Category"のカテゴリや、オブジェクト"My Settings"、"OptionInteger と OptionFloat"カテゴリの説明、リソースを作成します。
 
     > [!NOTE]
-    >  これらの 3 つのカテゴリの名前だけがない、**インポートおよびエクスポート設定**ウィザード。
+    > これらの 3 つのカテゴリの名前だけがない、**インポートおよびエクスポート設定**ウィザード。
 
 3. *MyToolsOptionsPackage.cs*、追加、`float`という名前のプロパティ`OptionFloat`を`OptionPageGrid`クラスに、次の例に示すようにします。
 
@@ -76,7 +76,7 @@ ms.locfileid: "60100588"
     ```
 
     > [!NOTE]
-    >  `OptionPageGrid` "My Category"を今すぐという名前のカテゴリには 2 つのプロパティの`OptionInteger`と`OptionFloat`します。
+    > `OptionPageGrid` "My Category"を今すぐという名前のカテゴリには 2 つのプロパティの`OptionInteger`と`OptionFloat`します。
 
 4. 追加、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>を`MyToolsOptionsPackage`クラスし CategoryName"My Category"を付けます、ObjectName"My Settings"を付けますおよび isToolsOptionPage を true に設定します。 対応する文字列リソース Id が前に作成する categoryResourceID、objectNameResourceID、および DescriptionResourceID を設定します。
 

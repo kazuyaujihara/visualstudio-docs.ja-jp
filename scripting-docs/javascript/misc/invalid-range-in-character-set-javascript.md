@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1cbfa4de401c2a1dc0626f8f00dbb0bd1bf24408
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007049"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>文字セットの範囲が無効です (JavaScript)
 範囲の設定に無効な文字を正規表現を作成しようとしました。 文字セットの 1 つの文字のみが a ~ z、0 ~ 9; など範囲する必要があります。文字セットでは、\w などの文字クラスを含めることはできません。 範囲の最初の文字が 2 つ目の範囲の文字の前にもあります。 例えば:  

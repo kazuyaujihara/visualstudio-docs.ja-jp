@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad6fa498fe9b89854f7fe3c74af9636b5b59e47f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 56a11c24ad8a38cc837659ac063987573c0ba492
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444313"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>チュートリアル: Web フォームのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60053820"
 このチュートリアルでは、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーション (Web フォーム) をデバッグする方法について説明します。 実行の開始と終了の方法、ブレークポイントの設定方法、および**ウォッチ** ウィンドウでの変数の確認方法についても説明します。  
   
 > [!NOTE]
->  このチュートリアルを完了するには、サーバー コンピューターに対する管理者特権が必要です。 既定では、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] プロセス (aspnet_wp.exe または w3wp.exe) は、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] プロセスとして実行されます。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] をデバッグするには、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] が実行されているコンピューターに対する管理者特権が必要です。 詳細については、「 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)」をご覧ください。  
+> このチュートリアルを完了するには、サーバー コンピューターに対する管理者特権が必要です。 既定では、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] プロセス (aspnet_wp.exe または w3wp.exe) は、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] プロセスとして実行されます。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] をデバッグするには、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] が実行されているコンピューターに対する管理者特権が必要です。 詳細については、「 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)」をご覧ください。  
   
  使用している設定またはエディションによっては、ヘルプの記載と異なるダイアログ ボックスやメニュー コマンドが表示される場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   

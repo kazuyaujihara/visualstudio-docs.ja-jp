@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f07987a0c7debdb44c2da442ce6b598f8a78dea0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6a827e688e260adcb93e81b55520c747dd99ed0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421748"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>チュートリアル: オプション ボタンを使用してワークシートのグラフを更新する方法
   このチュートリアルでは、Microsoft Office Excel ワークシートでラジオ ボタンを使用して、オプションですばやく切り替える方法をユーザーに提供の基本を説明します。 この場合、オプションは、グラフのスタイルを変更します。
@@ -35,7 +35,7 @@ ms.locfileid: "60097220"
 - オプション選択時のグラフ スタイルの変更
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。

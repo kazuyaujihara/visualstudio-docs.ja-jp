@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bbcda5eef8ac6ac6aa20c6f487dfc94beb10866c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929660"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでブレークポイントをトラブルシューティングします。
 
@@ -53,7 +53,7 @@ ms.locfileid: "56714188"
 
 いくつかのことを確認します。
 1. コードの 1 つ以上のプロセスまたは複数のコンピューターで実行する場合は、適切なプロセスまたはコンピューターをデバッグしていることを確認します。
-2. コードが実行されていることを確認します。 コードが実行されていることをテストするには、呼び出しを追加`System.Diagnostics.Debugger.Break`(C #/vb) または`__debugbreak`(C++)、ブレークポイントを設定し、プロジェクトをリビルドする先のコードの行にします。
+2. コードが実行されていることを確認します。 コードが実行されていることをテストするには、呼び出しを追加`System.Diagnostics.Debugger.Break`(C#または VB) または`__debugbreak`(C++)、ブレークポイントを設定し、プロジェクトをリビルドする先のコードの行にします。
 3. 最適化されたコードをデバッグしている場合ことを確認、ブレークポイントが設定されている関数はありませんされている別の関数をインライン化します。 `Debugger.Break`もこの問題をテストする前のチェックで説明されているテストを操作できます。
 
 ## <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>ブレークポイントを削除したが、デバッグを再実行するとヒットし続ける

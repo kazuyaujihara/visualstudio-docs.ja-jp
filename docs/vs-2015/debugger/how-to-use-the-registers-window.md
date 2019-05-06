@@ -27,12 +27,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f622440c5bd0f0d09967eff56479459a4a3bfbb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 506425f4de218e258ca9a86bfad5154cbda5c223
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445036"
 ---
 # <a name="how-to-use-the-registers-window"></a>方法: [レジスタ] ウィンドウを使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60042876"
  レジスタおよびレジスタ ウィンドウの背後にある概念について大まかな概要については、次を参照してください。[デバッグの基礎。[レジスタ] ウィンドウ](../debugger/debugging-basics-registers-window.md)します。  
   
 > [!NOTE]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ### <a name="to-display-the-registers-window"></a>[レジスタ] ウィンドウを表示するには  
   
@@ -55,7 +55,7 @@ ms.locfileid: "60042876"
      デバッガーは動作中であるか、中断モードである必要があります。  
   
     > [!NOTE]
-    >  スクリプトまたは SQL アプリケーションのレジスタ情報は表示できません。  
+    > スクリプトまたは SQL アプリケーションのレジスタ情報は表示できません。  
   
 ## <a name="see-also"></a>関連項目  
  [デバッグの基礎:[レジスタ] ウィンドウ](../debugger/debugging-basics-registers-window.md)   

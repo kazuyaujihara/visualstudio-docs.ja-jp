@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0aa124d25e279b7e44292645d81d80829f5d3f8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420195"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>方法: SharePoint ソリューション パッケージをカスタマイズします。
   パッケージ デザイナーを使用して作成およびパッケージをカスタマイズすることができます (*.wsp*)。 たとえば、SharePoint プロジェクト項目と機能の追加、Web サーバーが、ソリューションを展開するときにリセットし、配置サーバーの種類を設定するかどうかを指定できます。
@@ -47,7 +47,7 @@ ms.locfileid: "60074922"
 2. パッケージを展開し、Package.package を展開し、開きます、 *Package.Template.xml*ファイル。
 
     > [!NOTE]
-    >  パッケージ テンプレートについてはマニフェスト XML ファイルを開くし、ファイルが自動的に検証、エラー一覧 ウィンドウに表示される警告を無視することができます。
+    > パッケージ テンプレートについてはマニフェスト XML ファイルを開くし、ファイルが自動的に検証、エラー一覧 ウィンドウに表示される警告を無視することができます。
 
 ## <a name="change-the-manifest-template"></a>マニフェスト テンプレートを変更します。
  Visual Studio XML エディターまたはマニフェスト テンプレート ペインで、パッケージのマニフェスト ファイルの XML コードを変更することができます。 XML コードに対する変更は、パッケージのパッケージのマニフェスト ファイルにマージされます。
@@ -68,7 +68,7 @@ ms.locfileid: "60074922"
  パッケージ デザイナーを無効にし、作成することができます、 *manifest.xml*ファイルを手動でします。 この手順を実行する最初に、パッケージ デザイナーの現在の設定は、パッケージのテンプレート XML ファイルに保存されます。 次に、変更したり、XML コードを上書きできます。
 
 > [!NOTE]
->  追加パッケージ デザイナーが無効になっているときに、XML ファイルの SharePoint プロジェクト項目と機能を削除するか、これらのプロジェクト項目と機能がパッケージ化されません。
+> 追加パッケージ デザイナーが無効になっているときに、XML ファイルの SharePoint プロジェクト項目と機能を削除するか、これらのプロジェクト項目と機能がパッケージ化されません。
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>デザイナーを無効にして、パッケージ マニフェスト ファイルを上書きするには
 

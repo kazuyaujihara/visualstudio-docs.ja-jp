@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d2a97f9c71a78a16d5763e26f09241ae916a79f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 410f8afdac24139791c19c3936049c855a51d4f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431794"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ HRESULT get_typeIds ( 
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
   
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
   
 ## <a name="see-also"></a>関連項目  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

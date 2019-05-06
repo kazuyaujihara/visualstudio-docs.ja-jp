@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70960cc92d60ebbffa34dda75557dfcb9a1a0d67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab220b8a21db60918462e4c060ce613171e3faad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442363"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>方法: ショートカット メニューにコマンドを追加する
 
@@ -118,7 +118,7 @@ Managed Extension Framework (MEF) には、図のメニューのメニュー コ
 5. `{000...000}` を、グループとメニュー項目を識別する GUID に置き換えます。 新しい GUID を取得するには、使用、 **GUID の作成**ツールを**ツール**メニュー。
 
     > [!NOTE]
-    >  さらにグループやメニュー項目を追加するときには、同じ GUID を使用できます。 ただし、`IDSymbols` に新しい値を使用する必要があります。
+    > さらにグループやメニュー項目を追加するときには、同じ GUID を使用できます。 ただし、`IDSymbols` に新しい値を使用する必要があります。
 
 6. この手順からコピーしたコード内の、次の文字列をすべて各自固有の文字列に置き換えます。
 
@@ -296,7 +296,7 @@ private const int cmdidMyContextMenuCommand = 1;
  同じ GUID 値を使用して、挿入した**Commands.vsct**します。
 
 > [!NOTE]
->  VSCT ファイルの Symbols セクションを変更する場合は、これらの宣言も一致するように変更する必要があります。 Package.tt でバージョン番号を増加する必要もあります。
+> VSCT ファイルの Symbols セクションを変更する場合は、これらの宣言も一致するように変更する必要があります。 Package.tt でバージョン番号を増加する必要もあります。
 
  メニュー コマンドをこのコマンド セットの一部として登録します。 図が初期化されると、`GetMenuCommands()` が 1 回呼び出されます。
 

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea782140405b55a6c5a90b01fb466586f66cc38
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444915"
 ---
 # <a name="writing-to-the-user-settings-store"></a>ユーザー設定ストアへの書き込み
 ユーザーの設定は、書き込み可能の設定で使用されているように、**ツール/オプション**ダイアログ、[プロパティ] ウィンドウ、およびその他の特定のダイアログ ボックス。 Visual Studio 拡張機能は、これらを使用少量のデータを格納するのにことがあります。 このチュートリアルでは、ユーザー設定ストアへの書き込みから読み取りによって、外部ツールとして Visual Studio をメモ帳を追加する方法を示します。
@@ -27,7 +27,7 @@ ms.locfileid: "60054106"
 3. HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External ツールに移動します\\します。
 
     > [!NOTE]
-    >  \14.0Exp\ といない \14.0 を含むキーを検索するかどうかを確認\\します。 Visual Studio の実験用インスタンスを実行すると、ユーザーの設定はレジストリ ハイブ"14.0Exp"では。
+    > \14.0Exp\ といない \14.0 を含むキーを検索するかどうかを確認\\します。 Visual Studio の実験用インスタンスを実行すると、ユーザーの設定はレジストリ ハイブ"14.0Exp"では。
 
 4. \External Tools\ のサブキーを右クリックし、をクリックし、**エクスポート**します。 必ず**選択されたブランチ**が選択されています。
 

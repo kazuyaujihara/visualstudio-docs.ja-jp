@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f039154265e9031713eb5511bb1c51a63e5b422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 23ea89b25ca1bd1e7aa48ab1782d23bd7db057f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437103"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>方法: Office ドキュメント内のデータ ソースをプログラムでキャッシュします。
   呼び出すことによって、データ オブジェクトをドキュメント内のデータ キャッシュをプログラムで追加することができます、`StartCaching`メソッドのホスト項目など、 <xref:Microsoft.Office.Tools.Word.Document>、 <xref:Microsoft.Office.Tools.Excel.Workbook>、または<xref:Microsoft.Office.Tools.Excel.Worksheet>します。 データ キャッシュから呼び出すことによって、データ オブジェクトを削除、`StopCaching`ホスト項目のメソッド。
@@ -52,7 +52,7 @@ ms.locfileid: "60109180"
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
 
     > [!NOTE]
-    >  呼び出さない`StopCaching`のイベント ハンドラーから、`Shutdown`文書またはワークシートのイベント。 時間によって、`Shutdown`イベントは、データ キャッシュを変更するには遅すぎます。 詳細については、`Shutdown`イベントを参照してください[Events in Office Projects](../vsto/events-in-office-projects.md)します。
+    > 呼び出さない`StopCaching`のイベント ハンドラーから、`Shutdown`文書またはワークシートのイベント。 時間によって、`Shutdown`イベントは、データ キャッシュを変更するには遅すぎます。 詳細については、`Shutdown`イベントを参照してください[Events in Office Projects](../vsto/events-in-office-projects.md)します。
 
 ## <a name="see-also"></a>関連項目
 

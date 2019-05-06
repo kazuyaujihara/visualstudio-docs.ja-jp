@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f199db93fa2ea0b3ee2633f9af8a02fff5a4fdf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828203"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 指定した実行可能ファイルから指定したオフセットから始まるバイト数を読み取ります。
@@ -50,7 +50,7 @@ HRESULT ReadExecutableAt ( 
 
 [入力、出力]ファイルから読み取られたバイトに設定している配列。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  このメソッドは、ファイルの絶対オフセットを使用する実行可能ファイルからバイトのデータを読み込む DIA サポート コードによって呼び出されます。 サポートにこのメソッドは、 [idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)メソッド。
 
 ## <a name="see-also"></a>関連項目

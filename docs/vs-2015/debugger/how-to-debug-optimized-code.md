@@ -23,23 +23,23 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 35a5fc722a0d7b2ececa4aaa198381cdd3390a7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435721"
 ---
 # <a name="how-to-debug-optimized-code"></a>方法: 最適化されたコードをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 注意]
->  実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 > [!NOTE]
->  Visual Studio 更新プログラム 3 で導入された [/Zo (最適化されたデバッグ機能の強化)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) コンパイラ オプションを使用すると、最適化されたコードについて豊富なデバッグ情報が生成されます (**/Od** コンパイラ オプションを使用しないでビルドされたプロジェクト)。 「[/O オプション (コードの最適化)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)」を参照してください)。 これにはローカル変数とインライン関数のデバッグのサポートの強化が含まれます。  
+> Visual Studio 更新プログラム 3 で導入された [/Zo (最適化されたデバッグ機能の強化)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) コンパイラ オプションを使用すると、最適化されたコードについて豊富なデバッグ情報が生成されます (**/Od** コンパイラ オプションを使用しないでビルドされたプロジェクト)。 「[/O オプション (コードの最適化)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)」を参照してください)。 これにはローカル変数とインライン関数のデバッグのサポートの強化が含まれます。  
 >   
->  [エディット コンティニュ](../debugger/edit-and-continue-visual-csharp.md)は、**/Zo** コンパイラ オプションを使用している場合は無効です。  
+> [エディット コンティニュ](../debugger/edit-and-continue-visual-csharp.md)は、**/Zo** コンパイラ オプションを使用している場合は無効です。  
   
  コンパイラは、ソース コードを最適化するときに命令を再配置したり再構成したりします。 これにより、コンパイル後のコードの実行効率が向上します。 しかし、この命令の整理が原因となり、一連の命令に対応するソース コードをデバッガーが識別できなくなる場合があります。  
   
@@ -80,7 +80,7 @@ ms.locfileid: "58976632"
 9. 構成プロパティ、C と C++ プロジェクト プロパティ ページのコマンドライン ノードを選択し、追加`(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)`を**追加オプション**テキスト ボックス。  
   
     > [!WARNING]
-    >  `/Zo` には、Visual Studio 2013 更新プログラム 3 以降のバージョンが必要です。  
+    > `/Zo` には、Visual Studio 2013 更新プログラム 3 以降のバージョンが必要です。  
     >   
     >  `/Zo` を追加すると、[エディット コンティニュ](../debugger/edit-and-continue-visual-csharp.md)が無効になります。  
   

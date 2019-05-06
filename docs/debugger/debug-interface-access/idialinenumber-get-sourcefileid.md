@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be0fffc1c52c6e15e4ac564cb3e53c60a3670c22
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839811"
 ---
 # <a name="idialinenumbergetsourcefileid"></a>IDiaLineNumber::get_sourceFileId
 この行の原因であるソース ファイルの一意のソース ファイルの識別子を取得します。

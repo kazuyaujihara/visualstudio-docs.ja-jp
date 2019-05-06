@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 31673205a7ca94783985e0249c5664b4bbca6147
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818125"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>配列の長さは、有限の正の整数でなければなりません。
 呼び出している、**配列**(0 と正の整数のセットの値は整数で構成されます) の整数でない引数を持つコンス トラクター。  

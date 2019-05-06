@@ -7,22 +7,22 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970353"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Visual Studio で C++ 用の Microsoft 単体テスト フレームワークを使用する
 
 **C++ ワークロードによるデスクトップ開発**には、既定では Microsoft 単体テスト フレームワークが含まれます。
 
-##  <a name="separate_project"></a>単体テストを個別のプロジェクトで作成するには
+## <a name="separate_project"></a>単体テストを個別のプロジェクトで作成するには
 
 通常、独自のプロジェクト内のコードもテストするコードと同じソリューションでテストします。 新しいテスト プロジェクトをセットアップして構成するには、[C/C++ 用の単体テストの作成](writing-unit-tests-for-c-cpp.md)に関するページを参照してください。
 
-##  <a name="same_project"></a> 同じプロジェクトで単体テストを作成するには
+## <a name="same_project"></a> 同じプロジェクトで単体テストを作成するには
 
 DLL でエクスポートされない関数をテストするときなど、場合によっては、テストするプログラムと同じプロジェクトでテストを作成することが必要になります。 同じプロジェクトで単体テストを作成するには:
 
@@ -32,16 +32,14 @@ DLL でエクスポートされない関数をテストするときなど、場�
 
    2. 次の行の下向きの矢印をクリックし、**[\<Edit>]** を選択します。
 
-
       | ディレクトリ | プロパティ |
       |-| - |
       | **インクルード ディレクトリ** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
       | **ライブラリ ディレクトリ** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-
 2. C++ 単体テスト ファイルを追加します。
 
-   -   新しいファイルを追加するには、**ソリューション エクスプローラー**でプロジェクト ノードを右クリックし、**[追加]** > **[新規アイテム]** > **[C++ 単体テスト]** を選択します。
+   - 新しいファイルを追加するには、**ソリューション エクスプローラー**でプロジェクト ノードを右クリックし、**[追加]** > **[新規アイテム]** > **[C++ 単体テスト]** を選択します。
 
 ## <a name="write-the-tests"></a>テストを作成
 

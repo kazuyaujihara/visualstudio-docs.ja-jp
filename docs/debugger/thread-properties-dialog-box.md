@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 371314bff934fdceeb301f61e976224034333559
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929711"
 ---
 # <a name="thread-properties-dialog-box"></a>[スレッド プロパティ] ダイアログ ボックス
 詳細については、特定のスレッドはこのダイアログ ボックスの検索を使用します。 このダイアログ ボックスを表示するには、フォーカスを移動、[スレッド ビュー](../debugger/threads-view.md)ウィンドウ、またはオープン[メッセージ ビュー](../debugger/messages-view.md)メッセージを展開します。 ツリーで、スレッドの任意のノードを選択し、**プロパティ**から、**ビュー**メニュー。

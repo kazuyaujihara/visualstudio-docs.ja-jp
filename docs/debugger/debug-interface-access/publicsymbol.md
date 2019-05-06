@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2c042d75ad74cc42d94596d60008dc43704e612
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854887"
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 (最小値、各グローバル関数とデータ シンボル) にある各パブリック シンボルが指定された .exe ファイルが作成されたときに、`SymTagPublicSymbol`タグ。

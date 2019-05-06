@@ -12,12 +12,12 @@ ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b780681ec94d347885cdc1134b4ef51776945dc8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 12102c297c34649c753cf1c811994f9e750b9605
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435694"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,13 +50,13 @@ public struct TYPE_INFO {
  値、 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)和集合を解釈する方法を決定する列挙型。  
   
  type.typeMeta  
- [C++ のみ]含まれています、 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)場合構造体`dwKind`は`TYPE_KIND_METADATA`します。  
+ [C++のみ]含まれています、 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)場合構造体`dwKind`は`TYPE_KIND_METADATA`します。  
   
  type.typePdb  
- [C++ のみ]含まれています、 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)場合構造体`dwKind`は`TYPE_KIND_PDB`します。  
+ [C++のみ]含まれています、 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)場合構造体`dwKind`は`TYPE_KIND_PDB`します。  
   
  type.typeBuilt  
- [C++ のみ]含まれています、 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)場合構造体`dwKind`は`TYPE_KIND_BUILT`します。  
+ [C++のみ]含まれています、 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)場合構造体`dwKind`は`TYPE_KIND_BUILT`します。  
   
  type.unused  
  未使用のパディングです。  
@@ -71,7 +71,7 @@ public struct TYPE_INFO {
  この構造体に渡される、 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)メソッドでいっぱいになった場所。 構造体の内容を解釈する方法がに基づいて、`dwKind`フィールド。  
   
 > [!NOTE]
->  [C++ のみ]場合`dwKind`equals `TYPE_KIND_BUILT`、基になるを解放する必要があるし、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトの破棄時に、`TYPE_INFO`構造体。 これは、`typeInfo.type.typeBuilt.pUnderlyingField->Release()` を呼び出すことによって行われます。  
+> [C++のみ]場合`dwKind`equals `TYPE_KIND_BUILT`、基になるを解放する必要があるし、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトの破棄時に、`TYPE_INFO`構造体。 これは、`typeInfo.type.typeBuilt.pUnderlyingField->Release()` を呼び出すことによって行われます。  
   
  [C#のみ]次の表を解釈する方法を示しています、`unionmember`型の各種類のメンバー。 この例では、型の 1 つの種類にこれを行う方法を示します。  
   

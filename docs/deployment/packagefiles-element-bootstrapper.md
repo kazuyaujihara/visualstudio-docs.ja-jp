@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898712"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt;要素 (ブートス トラップ)
 `PackageFiles`要素が含まれます`PackageFile`の結果として実行されるインストール パッケージを定義するには、要素、`Command`要素。
@@ -46,7 +46,7 @@ ms.locfileid: "59651839"
 
 |属性|説明|
 |---------------|-----------------|
-|`CopyAllPackageFiles`|任意。 場合設定`false`、インストーラーから参照されるファイルをダウンロードのみが、`Command`要素。 場合設定`true`、すべてのファイルがダウンロードされます。<br /><br /> 場合に設定`IfNotHomesite`、インストーラーには、同じ動作がまるで`False`場合`ComponentsLocation`に設定されている`HomeSite`、し、それ以外の場合は動作が同じ場合と`True`。 この設定をそれ自体がパッケージに HomeSite シナリオでは、独自の動作を実行するブートス トラップを許可することができます。<br /><br /> 既定値は `true` です。|
+|`CopyAllPackageFiles`|省略可能です。 場合設定`false`、インストーラーから参照されるファイルをダウンロードのみが、`Command`要素。 場合設定`true`、すべてのファイルがダウンロードされます。<br /><br /> 場合に設定`IfNotHomesite`、インストーラーには、同じ動作がまるで`False`場合`ComponentsLocation`に設定されている`HomeSite`、し、それ以外の場合は動作が同じ場合と`True`。 この設定をそれ自体がパッケージに HomeSite シナリオでは、独自の動作を実行するブートス トラップを許可することができます。<br /><br /> 既定値は `true` です。|
 
 ## <a name="packagefile"></a>PackageFile
  `PackageFile`要素の子である、`PackageFiles`要素。 A`PackageFiles`要素が少なくとも 1 つあります`PackageFile`要素。
@@ -56,10 +56,10 @@ ms.locfileid: "59651839"
 | 属性 | 説明 |
 |---------------| - |
 | `Name` | 必須。 パッケージ ファイルの名前。 これは、名前を`Command`パッケージをインストールするための条件を定義する場合に、要素を参照します。 この値はへのキーとしても使用、`Strings`などのツールをローカライズされた名前を取得するテーブル[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]が使用して、パッケージを記述します。 |
-| `HomeSite` | 任意。 インストーラーに含まれてない場合は、リモート サーバー上のパッケージの場所。 |
-| `CopyOnBuild` | 任意。 ブートス トラップがビルド時に、ディスク上にパッケージ ファイルをコピーする必要があるかどうかを指定します。 既定値は true です。 |
+| `HomeSite` | 省略可能です。 インストーラーに含まれてない場合は、リモート サーバー上のパッケージの場所。 |
+| `CopyOnBuild` | 省略可能です。 ブートス トラップがビルド時に、ディスク上にパッケージ ファイルをコピーする必要があるかどうかを指定します。 既定値は true です。 |
 | `PublicKey` | パッケージの証明書の署名者の公開暗号化キー。 場合に、必ず`HomeSite`は使用しない場合は省略可能です。 |
-| `Hash` | 任意。 パッケージ ファイルの SHA1 ハッシュ。 これは、インストール時に、ファイルの整合性を検証に使用されます。 パッケージ ファイルからは、同一のハッシュを計算することはできません、パッケージはインストールされていません。 |
+| `Hash` | 省略可能です。 パッケージ ファイルの SHA1 ハッシュ。 これは、インストール時に、ファイルの整合性を検証に使用されます。 パッケージ ファイルからは、同一のハッシュを計算することはできません、パッケージはインストールされていません。 |
 
 ## <a name="example"></a>例
  次のコード例は、のパッケージを定義、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]再頒布可能パッケージとその依存関係、Windows インストーラーなど。

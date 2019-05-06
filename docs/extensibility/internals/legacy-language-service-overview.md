@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2292c80c01bcc94b04842c1f77f92226705873eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860047"
 ---
 # <a name="legacy-language-service-overview"></a>従来の言語サービスの概要
 言語サービスは、特定の実装することができますエディターのサポートを提供します。[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]機能します。 マネージ パッケージ フレームワーク (MPF) 言語のサービス クラスは、頻繁に使用される機能とその他の機能の部分的なサポートについての完全なサポートを提供します。

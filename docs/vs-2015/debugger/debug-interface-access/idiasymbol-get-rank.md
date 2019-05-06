@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5574f0c2a5e6b5d1b75a85e74faceb18e99216e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cf7c39213ae2eb233509d720b7e7c2eab0a17560
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432196"
 ---
 # <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_rank ( 
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
   
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
   
 ## <a name="remarks"></a>Remarks  
  ランクとして、配列が宣言されている配列の次元数を指す`myarray[1,2,3]`します。 この例では、3、3 つのディメンションのランクがあります。 ランクは、各次元の配列の配列の概念を使用する C++ には適用されません (つまり、 `myarray[1][2][3]`)。  

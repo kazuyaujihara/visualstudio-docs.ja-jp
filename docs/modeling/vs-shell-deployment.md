@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70f39dd23851a2ebc0a48afd05da54b0d8deb24a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934301"
 ---
 # <a name="vs-shell-deployment"></a>VS Shell 配置
 
-分離のシェルでは、Visual Studio を確認できます。 機能、ドメイン固有言語およびそのソリューションを表示する方法と対話する必要があります。 Visual Studio 分離シェルの詳細については、[分離シェルのカスタマイズ](https://vspartner.com/pages/vsshells)を参照してください。
+分離のシェルでは、Visual Studio を確認できます。 機能、ドメイン固有言語およびそのソリューションを表示する方法と対話する必要があります。 Visual Studio 分離シェルの詳細については、次を参照してください。[分離シェルのカスタマイズ](https://vspartner.com/pages/vsshells)します。
 
 Visual Studio Shell は、デプロイ ターゲットとして設定します。
 

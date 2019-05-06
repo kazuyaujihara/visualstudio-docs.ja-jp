@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d4221cfdc0d741264aa4667892117ba0cc24f9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5b60f44dd1d32a9d19814b4d2194e7586d86865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426846"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild のマルチ ターゲットの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60108283"
 MSBuild を使用すると、.NET Framework のいずれかのバージョンやいずれかのシステム プラットフォームで動作するように、アプリケーションをコンパイルできます。 たとえば、あるアプリケーションを 32 ビット プラットフォーム上の .NET Framework 2.0 で動作するようにコンパイルしたり、これと同じアプリケーションを 64 ビット プラットフォーム上の .NET Framework 4.5 で動作するようにコンパイルしたりできます。  
   
 > [!IMPORTANT]
->  "マルチ ターゲット" という用語が使用されていますが、プロジェクトでは、一度に 1 つのフレームワークと 1 つのプラットフォームだけを対象にすることができます。  
+> "マルチ ターゲット" という用語が使用されていますが、プロジェクトでは、一度に 1 つのフレームワークと 1 つのプラットフォームだけを対象にすることができます。  
   
  MSBuild の機能の対象となるフレームワークやプラットフォームの一部を次に示します。  
   

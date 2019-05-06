@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06017a3feb3faa667b469c0075e561b2104785b5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895600"
 ---
 # <a name="mip-map-generation-variant"></a>ミップマップ生成バリアント
 レンダー ターゲットではないテクスチャで MIP マップを有効にします。
@@ -25,7 +25,7 @@ MIP マップは主に、テクスチャの小さいバージョンを事前に�
 
 このバリアントでパフォーマンスが大幅に向上する場合は、MIP マップを有効にしないでテクスチャを使用いるため、テクスチャのキャッシュを最大限に利用できていないことを示しています。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 MIP マップの生成は、ソース テクスチャを作成する `ID3D11Device::CreateTexture2D` への呼び出しがあるたびに強制的に行われます。 渡される D3D11_TEXTURE2D_DESC オブジェクトがあるときに mip マップ生成を強制する具体的には、`pDesc`不変のシェーダー リソースをについて説明します。
 
 - BindFlags メンバーは D3D11_BIND_SHADER_RESOURCE フラグを設定するだけです。

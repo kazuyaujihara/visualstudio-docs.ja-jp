@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a1b69dbd7e502340e7d563523288a095b733c2d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830260"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
 アドレスの順序で前のシンボルを取得します。
@@ -48,7 +48,7 @@ HRESULT Prev ( 
 ## <a name="return-value"></a>戻り値
  正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`前のシンボルがない場合。 それ以外の場合はエラー コードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  このメソッドは、フェッチされる要素の数によって、列挙子の位置を更新します。
 
 ## <a name="see-also"></a>関連項目

@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 74ac0a2c1ab50cf4c707f4fc9414fe4aa4f403b8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bab229a3246ac91eaa652be67e98a68aab40e820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439385"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets ファイル
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "59655063"
  `$(MSBuildToolsPath)` 値によって、これらの共通 .targets ファイルのパスが指定されます。 `ToolsVersion` が 4.0 の場合、ファイルは `WindowsInstallationPath\Microsoft.NET\Framework\v4.0.30319\` に格納されます。  
   
 > [!NOTE]
->  独自のターゲットを作成する方法については、[ターゲット](../msbuild/msbuild-targets.md)に関する記事を参照してください。 使用する方法については、`Import`プロジェクト ファイルを別のプロジェクト ファイルに挿入する要素を参照してください[Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)と[方法。複数のプロジェクト ファイルで同じターゲットを使用して](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)します。  
+> 独自のターゲットを作成する方法については、[ターゲット](../msbuild/msbuild-targets.md)に関する記事を参照してください。 使用する方法については、`Import`プロジェクト ファイルを別のプロジェクト ファイルに挿入する要素を参照してください[Import 要素 (MSBuild)](../msbuild/import-element-msbuild.md)と[方法。複数のプロジェクト ファイルで同じターゲットを使用して](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)します。  
   
 ## <a name="common-targets-files"></a>共通 .Targets ファイル  
   

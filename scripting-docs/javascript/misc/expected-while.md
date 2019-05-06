@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4ec06ea25a6a6486a444d430e3ef15b888760650
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433769"
 ---
 # <a name="expected-while"></a>'while' が必要です
 含めない、`while`で条件を`do...while`ループします。 A**は**ステートメントの対応する必要があります`while`コード ブロックの終わりをテストします。  

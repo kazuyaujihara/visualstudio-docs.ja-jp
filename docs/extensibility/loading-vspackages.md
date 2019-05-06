@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce0f09c1749621838729e1e4f64feb3ca8b07628
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 92d6605f85aff7cd99abd4046999f484332a2faa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431343"
 ---
 # <a name="load-vspackages"></a>Vspackage を読み込む
 Vspackage は、それらの機能が必要な場合にのみ、Visual Studio に読み込まれます。 たとえば、Visual Studio がプロジェクト ファクトリや VSPackage を実装するサービスを使用するときに VSPackage が読み込まれます。 この機能には、パフォーマンスを向上させるために可能な場合に使用される、遅延読み込みが呼び出されます。
 
 > [!NOTE]
->  Visual Studio では、VSPackage を読み込むことがなく、VSPackage を提供するコマンドなどの VSPackage の情報を確認できます。
+> Visual Studio では、VSPackage を読み込むことがなく、VSPackage を提供するコマンドなどの VSPackage の情報を確認できます。
 
  Vspackage に設定できます、特定のユーザー インターフェイス (UI) のコンテキストでの自動読み込みなど、ソリューションが開いているとき。 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>属性は、このコンテキストを設定します。
 

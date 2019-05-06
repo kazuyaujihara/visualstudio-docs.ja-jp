@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5cc00d56b0abf02f99c7ab320ab0353d1b4b2317
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447135"
 ---
 # <a name="office-development-samples"></a>Office 開発のサンプル
   Visual Studio には、Microsoft Office 開発者ツールを使用して Office ソリューションを作成する方法を示すサンプル アプリケーションが含まれています。 これらのサンプルのコードでは、Office ソリューションのビルドに使用される構文、構造体、および手法を示します。

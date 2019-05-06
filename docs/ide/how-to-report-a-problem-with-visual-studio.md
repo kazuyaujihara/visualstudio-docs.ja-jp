@@ -1,5 +1,5 @@
 ---
-title: Visual Studio に関する問題を報告する方法
+title: Visual Studio で問題を報告する方法
 description: Visual Studio に関する問題を報告する方法を確認します
 ms.date: 03/11/2018
 ms.topic: conceptual
@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947692"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio または Visual Studio Installer に関する問題を報告する方法
 
@@ -25,7 +25,7 @@ Visual Studio またはそのインストーラーで発生した問題は、そ
 
 1. **Visual Studio で**、右上隅にあるフィードバック アイコンを選択し、[問題の報告] を選択します。 フィードバック ツールには、**[ヘルプ]** メニュー > **[フィードバックの送信]** > **[問題の報告]** からアクセスすることもできます。
 ![Visual Studio Developer Community の [問題の報告] ポップアップ](media/vsfeedbackentry.png) Visual Studio をインストールできない場合、または Visual Studio 内のフィードバック ツールにアクセスできない場合は、**Visual Studio Installer** で問題を報告してください。  Installer で、右上隅にあるフィードバック アイコンを選択し、[問題の報告] を選択します。
-![Visual Studio Developer Community の [問題の報告] ポップアップ](media/installer.png)
+![Visual Studio Developer Community での問題の報告に関するポップアップ](media/installer.png)
 
 1. サインインしていない場合は、次のスクリーンショットに示されている **[サインイン]** を選択します。 画面に表示される手順に従ってサインインします。
 

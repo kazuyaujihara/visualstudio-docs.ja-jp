@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 31b41a9c18a9e055c9d144c7115d3673ee2e4443
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566582"
 ---
 # <a name="save-data-back-to-the-database"></a>データをデータベースに保存する
 
@@ -200,7 +200,7 @@ Tableadapter を使い慣れているの場合は、これらのトピックの�
 
 メソッドが呼び出されたオブジェクトに基づいて、コミットされる変更を次の表に示します。
 
-|方法|結果|
+|メソッド|結果|
 |------------|------------|
 |<xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>|変更は特定の行にだけコミットされます。|
 |<xref:System.Data.DataTable.AcceptChanges%2A?displayProperty=fullName>|変更は特定のテーブルのすべての行にコミットされます。|
@@ -279,4 +279,4 @@ UPDATE ステートメントでも、古い (そのレコードは、データ�
 - [TableAdapter を使用してデータを更新する](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [データを検証します。](validate-data-in-datasets.md)
-- [方法: エンティティを追加、変更、および削除する (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [方法: 追加、変更、およびエンティティ (WCF data services) の削除](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

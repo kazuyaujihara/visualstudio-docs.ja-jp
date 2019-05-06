@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f66613c5f5b8b6e48efda17330f66cdb87a06cf9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909912"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>グリフ管理 (ソース管理 VSPackage)
 ソース管理 Vspackage を使用できる高度な統合の一部をソース管理下にある項目の状態を示すために、独自のグリフを表示する機能があります。

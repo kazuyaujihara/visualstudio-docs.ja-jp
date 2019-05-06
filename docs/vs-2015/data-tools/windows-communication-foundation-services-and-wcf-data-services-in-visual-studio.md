@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443866"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio での Windows Communication Foundation サービスと WCF データ サービス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Visual Studio には、Windows Communication Foundation (WCF) を操作するた
     ```
 
     > [!NOTE]
-    >  置換*ServiceReference*サービス参照と置換の名前空間を持つ*Service1Client*サービスの名前に置き換えます。
+    > 置換*ServiceReference*サービス参照と置換の名前空間を持つ*Service1Client*サービスの名前に置き換えます。
 
 3. コンス トラクターのオーバー ロードでは、IntelliSense の一覧が表示されます。 選択、`endpointConfigurationName As String`オーバー ロードします。
 
 4. 次のオーバー ロードは、次のように入力します。 `=` *ConfigurationName*ここで、 *ConfigurationName*を使用するエンドポイントの名前を指定します。
 
     > [!NOTE]
-    >  使用可能なエンドポイントの名前がわからない場合は、app.config ファイルで見つけることができます。
+    > 使用可能なエンドポイントの名前がわからない場合は、app.config ファイルで見つけることができます。
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>WCF サービスの使用可能なエンドポイントが見つかりません
 
@@ -164,7 +164,7 @@ Visual Studio には、Windows Communication Foundation (WCF) を操作するた
  既定では、サービスの参照がプロジェクトに追加されたときに同期的にメソッドを呼び出す構成されます。 設定を変更する非同期メソッドを呼び出す動作を変更することができます、**サービス参照の構成** ダイアログ ボックス。
 
 > [!NOTE]
->  このオプションは、サービスごとに設定されます。 サービスのメソッドの 1 つは非同期的に呼び出されると、すべてのメソッドを非同期的に呼び出す必要があります。
+> このオプションは、サービスごとに設定されます。 サービスのメソッドの 1 つは非同期的に呼び出されると、すべてのメソッドを非同期的に呼び出す必要があります。
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 

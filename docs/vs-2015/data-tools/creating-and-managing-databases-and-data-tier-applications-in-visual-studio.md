@@ -14,18 +14,18 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b6ee9413a2394d0477cd1c7b1a0caf83dd6ad6d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d6cb4a3beb12d2b33b8b13441df66116fe449d09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431151"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>作成して、データベースと Visual Studio でのデータ層アプリケーションの管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 重要]
->  データベース プロジェクトの以前のバージョンに含まれていた[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で提供されるようになりました[!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)]ツール。 詳細については、次を参照してください。 [SQL Server 開発者ツール](http://go.microsoft.com/fwlink/?LinkId=228126)します。
+> データベース プロジェクトの以前のバージョンに含まれていた[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]で提供されるようになりました[!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)]ツール。 詳細については、次を参照してください。 [SQL Server 開発者ツール](http://go.microsoft.com/fwlink/?LinkId=228126)します。
 
  データベース プロジェクトを使用するには、新しいデータベースを作成する新しいデータ層アプリケーション (Dac) と、既存のデータベースとデータ層アプリケーションを更新します。 データベース プロジェクトと DAC プロジェクトの両方を使用すると、マネージまたはネイティブ コードには、これらの手法を適用することと同じように、データベース開発作業をバージョン管理やプロジェクト管理手法を適用できます。 作成してデータベースおよびデータベース サーバーへの変更を管理、開発チームが役立つことができます、 *DAC プロジェクト*、*データベース プロジェクト*、または*サーバー プロジェクト*し、バージョン管理します。 チームのメンバーが、構築、しに変更をテストするファイルを確認できますし、*分離開発環境*、またはそれらをチームと共有する前に、サンド ボックス。 コードの品質を確保するために、チームが完了し、運用環境に変更をデプロイする前に、データベースの特定のリリースのすべての変更をステージング環境でテストできます。
 

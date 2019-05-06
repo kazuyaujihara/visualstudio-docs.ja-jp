@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e95a2170bd90fbd2610cefb8ff986111ff0480a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 27d4b1ec935444009be1f85f4c1ad95f9da91f68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425497"
 ---
 # <a name="pass-data-between-forms"></a>フォーム間でデータを渡す
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60107074"
 このチュートリアルでは、フォーム間でデータを渡す手順について説明します。 顧客と Northwind の orders テーブルを使用して、1 つの形式は、ユーザーが顧客を選択して、2 番目の形式は、選択した顧客の注文を表示します。 このチュートリアルでは、最初のフォームからデータを受信する 2 番目の形式でメソッドを作成する方法を示します。  
   
 > [!NOTE]
->  このチュートリアルでは、フォーム間でデータを渡す 1 つの方法についてのみ説明します。 データを受信する 2 つ目のコンス トラクターの作成など、フォームにデータを渡すためには、その他のオプションがあるか、最初のフォームからデータをパブリック プロパティの作成を設定できます。  
+> このチュートリアルでは、フォーム間でデータを渡す 1 つの方法についてのみ説明します。 データを受信する 2 つ目のコンス トラクターの作成など、フォームにデータを渡すためには、その他のオプションがあるか、最初のフォームからデータをパブリック プロパティの作成を設定できます。  
   
  このチュートリアルでは、以下のタスクを行います。  
   
@@ -142,7 +142,7 @@ ms.locfileid: "60107074"
     ```  
   
     > [!NOTE]
-    >  データベースに対してパラメーターの構文が正しいことを確認します。 たとえば、Microsoft Access では、WHERE 句は `WHERE CustomerID = ?` のようになります。  
+    > データベースに対してパラメーターの構文が正しいことを確認します。 たとえば、Microsoft Access では、WHERE 句は `WHERE CustomerID = ?` のようになります。  
   
 6. **[次へ]** をクリックします。  
   

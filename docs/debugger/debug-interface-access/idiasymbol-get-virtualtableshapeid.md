@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc43d94cfe94e63dfb477429c2c81471e5c40af4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bd390cbd2982033d31ccf8e577196e2c360be655
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400122"
 ---
 # <a name="idiasymbolgetvirtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
 シンボルの仮想テーブル シェイプのシンボル id を取得します。
@@ -39,9 +39,9 @@ HRESULT get_virtualTableShapeId ( 
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
 
 > [!NOTE]
->  戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。
+> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  識別子は、一意としてすべてのシンボルをマークする DIA SDK によって作成された一意の値です。
 
 ## <a name="see-also"></a>関連項目

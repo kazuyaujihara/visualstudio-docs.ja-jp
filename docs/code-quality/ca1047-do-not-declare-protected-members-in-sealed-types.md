@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c138c05d755b05275755f96776764604997cbbcd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778786"
 ---
 # <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047:シールド型の保護されたメンバーを宣言しません
 
@@ -34,7 +34,7 @@ ms.locfileid: "55921550"
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- パブリック型が`sealed`(`NotInheritable` Visual Basic) とプロテクト メンバーまたはプロテクトの入れ子になった型を宣言します。 このルールの違反はレポートされません<xref:System.Object.Finalize%2A>メソッドで、このパターンに従う必要があります。
+ パブリック型が`sealed`(`NotInheritable` Visual basic) とプロテクト メンバーまたはプロテクトの入れ子になった型を宣言します。 このルールの違反はレポートされません<xref:System.Object.Finalize%2A>メソッドで、このパターンに従う必要があります。
 
 ## <a name="rule-description"></a>規則の説明
  型でプロテクト メンバーを宣言するのは、継承する型からメンバーにアクセスまたはオーバーライドできるようにするためです。 定義上、sealed 型でメソッドを保護されていることを意味を呼び出すことはできません、シールされた型から継承することはできません。

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 15d9b81bd342ccd8a5ee3377323e140ab1167c10
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899461"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションのファイルの関連付けを作成する
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] できるように、ユーザーがこれらの種類のファイルを開いたときに、アプリケーションを自動的に開始されます、アプリケーションが 1 つまたは複数のファイル名拡張子を関連付けることができます。 サポートするファイル名拡張子を[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションは簡単です。
@@ -35,13 +35,13 @@ ms.locfileid: "56633045"
 
 4. 子として、`assembly`要素を追加、`fileAssociation`要素。 `fileAssociation`要素には 4 つの属性。
 
-   - `extension`: アプリケーションに関連付けるファイル名拡張子。
+   - `extension`:アプリケーションに関連付けるファイル名拡張子。
 
-   - `description`: Windows シェルに表示されるファイルの種類の説明。
+   - `description`:Windows シェルに表示されるファイルの種類の説明。
 
-   - `progid`: レジストリ内でマークする、ファイルの種類を一意に識別する文字列。
+   - `progid`:レジストリ内でマークする、ファイルの種類を一意に識別する文字列。
 
-   - `defaultIcon`: このファイルの種類を使用するアイコン。 アイコンは、アプリケーション マニフェストでファイルのリソースとして追加する必要があります。 詳細については、「 [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。
+   - `defaultIcon`:このファイルの種類を使用するアイコン。 アイコンは、アプリケーション マニフェストでファイルのリソースとして追加する必要があります。 詳細については、「[方法 :ClickOnce アプリケーションにデータ ファイルを含める](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。
 
      例については、`file`と`fileAssociation`、要素を参照してください[ \<fileAssociation > 要素](../deployment/fileassociation-element-clickonce-application.md)します。
 

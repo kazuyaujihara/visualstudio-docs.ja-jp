@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 308832522b4badde661d4132410ca8366856d7b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910735"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Vspackage のセキュリティのためのベスト プラクティス
 インストールする、[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]する、コンピューターには、管理者の資格情報のコンテキストで実行する必要があります。 セキュリティおよび配置の基本単位、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]アプリケーションは、 [VSPackage](../../extensibility/internals/vspackages.md)します。 使用して VSPackage を登録する必要があります[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]、資格情報を管理する必要があります。
@@ -28,7 +28,7 @@ ms.locfileid: "56635658"
 
  ユーザーは、信頼できるソースからのみ Vspackage をインストールすることを確認してください。 VSPackages を開発する企業の名前を指定し、それらに署名する必要があります厳密に、ユーザーのため、その改ざんを防止します。 企業の VSPackages を開発するには、web サービスを評価し、セキュリティの問題の修正のリモート インストールなど、外部依存関係を調べる必要があります。
 
- 詳細については、[コーディングのガイドラインを .NET Framework のセキュリティで保護された](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90))を参照してください。
+ 詳細については、次を参照してください。[コーディングのガイドラインを .NET Framework のセキュリティで保護された](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90))します。
 
 ## <a name="see-also"></a>関連項目
 - [追加のセキュリティ](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)

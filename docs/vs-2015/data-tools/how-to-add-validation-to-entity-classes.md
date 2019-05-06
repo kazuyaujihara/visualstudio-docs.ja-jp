@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 722d318d05b37a7dc9c41c8e7078c9b486de6318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 5381c33790cbe9a7b5083f29d2602af39387bf61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386753"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>方法: エンティティ クラスに検証を追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "59668354"
  [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)挿入、更新、中に実行し、完全なエンティティとも中と後の個々 の列を削除します。 デザイナーで生成されたコードを拡張するユーザーを有効にする部分メソッドを提供します。変更します。  
   
 > [!NOTE]
->  このトピックでは、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]を使用してエンティティ クラスに検証を追加する基本的な手順を示します。 特定のエンティティ クラスを参照しないでこれらの汎用的な手順をたどるが難しい場合があります、ため、実際のデータを使用するチュートリアルが用意されています。  
+> このトピックでは、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]を使用してエンティティ クラスに検証を追加する基本的な手順を示します。 特定のエンティティ クラスを参照しないでこれらの汎用的な手順をたどるが難しい場合があります、ため、実際のデータを使用するチュートリアルが用意されています。  
   
 ## <a name="adding-validation-for-changes-to-the-value-in-a-specific-column"></a>特定の列の値の変更に対する検証の追加  
  この手順では、列の値の変更時にデータを検証する方法を示します。 検証はユーザー インターフェイスではなくクラス定義の内部で実行されるため、値によって検証が失敗する場合は例外がスローされます。 列の値を変更しようとするアプリケーションのコードには、エラー処理を実装してください。  
@@ -78,7 +78,7 @@ ms.locfileid: "59668354"
  変更時の値のチェックに加えて、エンティティ クラス全体の更新が試行されたときにデータを検証することもできます。 更新の試行時の検証では、ビジネス ルールにおける必要性に応じて複数の列の値を比較できます。 次の手順は、エンティティ クラス全体の更新が試行されたときに検証を行う方法を示しています。  
   
 > [!NOTE]
->  エンティティ クラス全体の更新に対する検証コードは、特定のエンティティ クラスの部分クラスではなく、部分 <xref:System.Data.Linq.DataContext> クラスで実行されます。  
+> エンティティ クラス全体の更新に対する検証コードは、特定のエンティティ クラスの部分クラスではなく、部分 <xref:System.Data.Linq.DataContext> クラスで実行されます。  
   
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>エンティティ クラスの更新時にデータを検証するには  
   

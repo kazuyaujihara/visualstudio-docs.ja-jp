@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1e46ada7a4e71c5d84cbb28d86f1712bbeca6dce
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892060"
 ---
 # <a name="address-dpi-issues"></a>アドレス DPI 問題
 「高解像度」画面には、デバイス数が増加が付属します。 通常、これらの画面には、200 を超えるピクセル/インチ (ppi) があります。 これらのコンピューター上のアプリケーションの操作は、コンテンツをデバイスの通常の表示までの距離にあるコンテンツを表示するためのニーズに合わせてスケール アップする必要があります。 2014 年の時点では、高密度ディスプレイの主なターゲットはモバイル コンピューティング デバイス (タブレットやクラムシェル ラップトップ、携帯電話です)。
@@ -82,7 +82,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
 ![DPI 問題 (スケーリング)](../extensibility/media/dpi-issues-scaling.png "DPI 問題 (スケーリング)")
 
 ## <a name="layout-issues"></a>レイアウトの問題
-絶対位置 (ピクセル単位) で具体的を使用してではなく、主に、スケール、UI には相互に関連したポイントを維持することによって、一般的なレイアウトの問題を回避できます。 例:
+絶対位置 (ピクセル単位) で具体的を使用してではなく、主に、スケール、UI には相互に関連したポイントを維持することによって、一般的なレイアウトの問題を回避できます。 例えば:
 
 - レイアウト]、[テキストの位置は、スケール アップしたイメージのアカウントに合わせて調整する必要があります。
 

@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428266"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Visual Studio での同期された設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60109011"
  Express エディションや Community エディションを含む Visual Studio 2015 の任意のエディション間で、設定を同期できます。 Blend などの Visual Studio ファミリ製品の間でも設定が同期されます。 ただし、各ファミリ製品には Visual Studio で共有されない独自の設定が含まれる場合があります。 たとえば、コンピューター A 上の Blend に固有の設定は、コンピューター B 上の Blend で共有されますが、コンピューター A または B 上の Visual Studio では共有されません。
 
 > [!WARNING]
->  Visual Studio 2013 と Visual Studio 2015 の間では、設定は同期されません。 Visual Studio 2015 を初めて開くと、Visual Studio 2013 の設定が移行されますが、その後で設定を Visual Studio 2013 に再度移行することはできません。
+> Visual Studio 2013 と Visual Studio 2015 の間では、設定は同期されません。 Visual Studio 2015 を初めて開くと、Visual Studio 2013 の設定が移行されますが、その後で設定を Visual Studio 2013 に再度移行することはできません。
 
 ## <a name="see-also"></a>関連項目
  [IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)

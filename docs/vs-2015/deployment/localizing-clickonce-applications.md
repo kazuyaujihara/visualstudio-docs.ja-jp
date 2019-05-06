@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b57f3de72272e8d1ecc567b150d073cd8d69611
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443779"
 ---
 # <a name="localizing-clickonce-applications"></a>ClickOnce アプリケーションのローカライズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60039865"
  この方法の利点は、単一の配置が作成されるので、配置のローカライズが簡素化されることです。 実行時に、ユーザーが使用する Windows オペレーティング システムの既定のカルチャに応じて、適切なサテライト アセンブリが使用されます。 この方法の欠点は、クライアント コンピューターでアプリケーションをインストールまたは更新するたびに、すべてのサテライト アセンブリがダウンロードされることです。 このため、アプリケーションに大量の文字列が含まれている場合や顧客が使用するネットワーク接続の速度が遅い場合は、このプロセスがアプリケーション更新時のパフォーマンスに影響を与える可能性があります。  
   
 > [!NOTE]
->  この方法では、それぞれのカルチャで異なるテキスト文字列のサイズに対応するために、コントロールの高さ、幅、および位置をアプリケーションが自動的に調整することを前提としています。 Windows フォームには、容易にローカライズできるフォームをデザインするためのさまざまなコントロールとテクノロジが用意されています。これには、<xref:System.Windows.Forms.FlowLayoutPanel> コントロールと <xref:System.Windows.Forms.TableLayoutPanel> コントロール、および <xref:System.Windows.Forms.Control.AutoSize%2A> プロパティが含まれます。  参照してください[方法。AutoSize と TableLayoutPanel コントロールを使用して Windows フォームのローカリゼーションをサポートする](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\))します。  
+> この方法では、それぞれのカルチャで異なるテキスト文字列のサイズに対応するために、コントロールの高さ、幅、および位置をアプリケーションが自動的に調整することを前提としています。 Windows フォームには、容易にローカライズできるフォームをデザインするためのさまざまなコントロールとテクノロジが用意されています。これには、<xref:System.Windows.Forms.FlowLayoutPanel> コントロールと <xref:System.Windows.Forms.TableLayoutPanel> コントロール、および <xref:System.Windows.Forms.Control.AutoSize%2A> プロパティが含まれます。  参照してください[方法。AutoSize と TableLayoutPanel コントロールを使用して Windows フォームのローカリゼーションをサポートする](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\))します。  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>カルチャごとに 1 つの配置を生成する  
  この配置ストラテジでは、複数の配置を生成します。 各配置には特定のカルチャに必要なサテライト アセンブリのみを含め、その配置をそのカルチャ固有としてマークします。  

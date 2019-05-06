@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 89f0fba2f5210cdcf4bb8f17443f948cb9ba1f4e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004861"
 ---
 # <a name="idebugthreadcall-interface"></a>IDebugThreadCall インターフェイス
 `IDebugThreadCall`インターフェイスは、通常のスレッド間の呼び出しを行うコンポーネントによって実装、`IDebugThread`プロセス デバッグ マネージャー (PDM) によって提供された実装をマーシャ リングします。  

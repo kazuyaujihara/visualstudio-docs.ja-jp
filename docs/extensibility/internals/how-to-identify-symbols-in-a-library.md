@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5eebe6382d2aec13996c57ef76aba2e04512463f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909956"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>方法: ライブラリ内のシンボルを識別します。
 シンボル参照ツールでは、シンボルの階層ビューを表示します。 シンボルは、名前空間、オブジェクト、クラス、クラスのメンバー、およびその他の言語要素を表します。

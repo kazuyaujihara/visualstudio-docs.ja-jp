@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ed19a280f791fa857ffbf00ba25aa18c490aa65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58a7d726d08b80600e3351b6324733d6ffdcf611
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444651"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>テキスト テンプレートでの Visual Studio ModelBus の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60069056"
 - テンプレートを継承する必要があります<xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>します。
 
 > [!NOTE]
->  ModelBus references を含まない DSL モデルを確認するには、DSL プロジェクトで生成されたディレクティブ プロセッサを使用することができます。 詳細については、[テキスト テンプレートからへのアクセス モデル](../modeling/accessing-models-from-text-templates.md)を参照してください。
+> ModelBus references を含まない DSL モデルを確認するには、DSL プロジェクトで生成されたディレクティブ プロセッサを使用することができます。 詳細については、[テキスト テンプレートからへのアクセス モデル](../modeling/accessing-models-from-text-templates.md)を参照してください。
 
  テキスト テンプレートの詳細については、次を参照してください。 [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)します。
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84a62fc796243172c9130c8113c4e6d289ed3092
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447016"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>[発行] ページ、プロジェクト デザイナー (Visual Studio での Office 開発)
   **プロジェクト デザイナー** の **[発行]** ページは、配置用のプロパティを構成する場合に使用します。
@@ -29,7 +29,7 @@ ms.locfileid: "60103531"
  このページにアクセスするでプロジェクトを選択します**ソリューション エクスプ ローラー**、し、**プロジェクト**] メニューの [選択*Projectname* **プロパティ**. **[発行]** ページが表示されない場合は、 **[発行]** タブをクリックします。
 
 > [!NOTE]
->  **[発行ウィザード]** で発行場所を設定することもできます。 詳細については、「[方法 :ClickOnce を使用して、Office ソリューションを発行する](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)します。
+> **[発行ウィザード]** で発行場所を設定することもできます。 詳細については、「[方法 :ClickOnce を使用して、Office ソリューションを発行する](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)します。
 
 ## <a name="uielement-list"></a>UIElement の一覧
  **発行フォルダーの場所 (web サイト、ftp サーバー、またはファイル パス)** 必要です。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2673b22bf502f019f0a10361c9d0cef9d5ac1b8c
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816838"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile 要素
   別のプロジェクトに含めるプロジェクト項目を SharePoint に配置されるときの出力を表します。
@@ -56,7 +56,7 @@ ms.locfileid: "58322533"
 |[ファイル](../sharepoint/files-element.md)|SharePoint に配置されるときに、SharePoint プロジェクト項目に含めるファイルを指定します。|
 
 ## <a name="remarks"></a>Remarks
- 使用して、 **ProjectOutputFile**プロジェクトの出力を SharePoint プロジェクト アイテムの展開に含める要素。 別のプロジェクトまたはプロジェクト項目が含まれる同じプロジェクトを指定することができます。 詳細については、[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)を参照してください。
+ 使用して、 **ProjectOutputFile**プロジェクトの出力を SharePoint プロジェクト アイテムの展開に含める要素。 別のプロジェクトまたはプロジェクト項目が含まれる同じプロジェクトを指定することができます。 詳細については、次を参照してください。[プロジェクト項目でパッケージ化と配置の情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)します。
 
 ## <a name="element-information"></a>要素情報
 

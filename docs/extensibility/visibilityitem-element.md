@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c999543306508bdba4a1b600e509ffadbe2ce4c9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945207"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 要素
 `VisibilityItem`コマンドとツールバーの静的な可視性を決定します。 すべてのエントリは、コマンドまたは メニューとも関連付けられているコマンドの UI コンテキストを識別します。 Visual Studio は、それらを定義する Vspackage を読み込むことがなく、コマンド、メニューとツールバー、およびその可視性を検出します。 IDE を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>コマンド UI コンテキストがアクティブかどうかを確認するメソッド。

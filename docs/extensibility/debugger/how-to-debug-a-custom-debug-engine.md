@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d07ba77739b4ff9749591405daf12fa66bae94e5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 255d752e09a14e784de276fbed0d86a587bc4512
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411238"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>方法: カスタム デバッグ エンジンをデバッグします。
 プロジェクトの種類からのデバッグ エンジン (DE) の起動、<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>メソッド。 つまりのインスタンスの管理下にある、DE を起動する[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]プロジェクトの種類を制御します。 ただし、そのインスタンスの[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]DE をデバッグすることはできません。 以下は、カスタム、DE をデバッグするための手順を示します。
 
 > [!NOTE]
->  :   "カスタム デバッグ エンジンを Debug"の手順では、添付する前に開始するを待つ必要があります。 メッセージ ボックス、DE の開始時に表示される、ドイツの先頭近くに配置する場合は、その時点でアタッチし、引き続きメッセージ ボックスをオフにし。 そうすることを検出できますすべて DE イベント。
+> :   "カスタム デバッグ エンジンを Debug"の手順では、添付する前に開始するを待つ必要があります。 メッセージ ボックス、DE の開始時に表示される、ドイツの先頭近くに配置する場合は、その時点でアタッチし、引き続きメッセージ ボックスをオフにし。 そうすることを検出できますすべて DE イベント。
 
 > [!WARNING]
->  次の手順を試行する前にインストールされているリモート デバッグが必要です。 参照してください[リモート デバッグ](../../debugger/remote-debugging.md)詳細についてはします。
+> 次の手順を試行する前にインストールされているリモート デバッグが必要です。 参照してください[リモート デバッグ](../../debugger/remote-debugging.md)詳細についてはします。
 
 ## <a name="debug-a-custom-debug-engine"></a>カスタム デバッグ エンジンをデバッグします。
 

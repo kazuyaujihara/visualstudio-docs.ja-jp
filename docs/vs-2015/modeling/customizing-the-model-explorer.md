@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51e79850e2958ce295ab4d98f3ea191a5222a8fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1eb0b8b58d133a26c7970071b422e0c20f42c063
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433239"
 ---
 # <a name="customizing-the-model-explorer"></a>モデル エクスプローラーのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60078916"
      エクスプ ローラーは、3 つを表示する必要があります**アクター**アイコンがあるノード。  
   
 > [!NOTE]
->  生成された、エクスプ ローラーに表示される任意の要素のノードのアイコンを設定すると、エクスプ ローラーのすべてのノードにアイコンが表示されます。 アイコンが設定されていない場合、ノードの既定のアイコンが表示されます。  
+> 生成された、エクスプ ローラーに表示される任意の要素のノードのアイコンを設定すると、エクスプ ローラーのすべてのノードにアイコンが表示されます。 アイコンが設定されていない場合、ノードの既定のアイコンが表示されます。  
   
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>エクスプ ローラーのノードに表示される名前を変更します。  
  エクスプ ローラーでモデル要素の名前を表示する方法を変更することができます。 名前を表示する方法は、次の手順、**タスク**によって参照される、**コメント**コメント ノードにします。  

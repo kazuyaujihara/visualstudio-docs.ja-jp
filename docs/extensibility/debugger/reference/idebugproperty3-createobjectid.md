@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a523dd7886e46cf1df7c6e70024a052f62ca4748
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: cf17196b4dae8642a81664dd339eaa78c2d2d8e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412748"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 その他のすべてのプロパティ間で一意であることを確認するこのプロパティの一意の ID を作成します。
@@ -43,7 +43,7 @@ int CreateObjectID();
  一意の ID が作成された`CreateObjectID`が破棄されるときに、 [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)メソッドが呼び出される; も、このプロパティを一意に識別するための必要性の終端を表すこれです。
 
 > [!NOTE]
->  一意の Id にして必要な DE を行うことができます、この一意の ID を取得するメソッドがないときに、`CreateObjectID`メソッドが呼び出されます。
+> 一意の Id にして必要な DE を行うことができます、この一意の ID を取得するメソッドがないときに、`CreateObjectID`メソッドが呼び出されます。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

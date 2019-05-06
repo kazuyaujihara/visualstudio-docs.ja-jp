@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4e9c190108cdbf1eb7be2d21927a95fe56fca75
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832471"
 ---
 # <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
 セクションに 16 ビットのコードが含まれているかどうかを示すフラグを取得します。
@@ -38,7 +38,7 @@ HRESULT get_code16bit(
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  このメソッドでは、コードは 16 ビットをのみを示します。 コードがない 16 ビットの場合は、32 ビットまたは 64 ビットのコードなどの他に何も可能性があります。
 
 ## <a name="see-also"></a>関連項目

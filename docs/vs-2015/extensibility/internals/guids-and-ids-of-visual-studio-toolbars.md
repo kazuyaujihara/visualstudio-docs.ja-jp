@@ -16,12 +16,12 @@ ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bafe0d76b86c73424614589c08095f096da9936
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6ec717707727b046ecd0d749179ea463ae3a4950
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436279"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio ツール バーの GUID および ID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58974273"
 このトピックでは、Visual Studio 統合開発環境 (IDE) に含まれているツールバーの GUID と ID の値を列挙し、含まれているグループのします。 これらの値は、Visual Studio SDK の一部としてインストールされている .vsct ファイルで定義されます。 詳細については、次を参照してください。 [IDE-Defined コマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)します。
 
 > [!NOTE]
->  Visual Studio を使用できるツールバーの多くが Visual Studio、およびその GUID によって定義されていないと、ID 値がパブリックではありません。 このトピックでは、Visual Studio SDK .vsct ファイルで定義されているツールバーだけを使用します。
+> Visual Studio を使用できるツールバーの多くが Visual Studio、およびその GUID によって定義されていないと、ID 値がパブリックではありません。 このトピックでは、Visual Studio SDK .vsct ファイルで定義されているツールバーだけを使用します。
 
  .Vsct ファイルで定義されている IDE オブジェクトを操作する方法の詳細については、次を参照してください。[拡張メニューとコマンド](../../extensibility/extending-menus-and-commands.md)します。
 
@@ -110,7 +110,7 @@ ms.locfileid: "58974273"
  ツールバー表示できるツール ウィンドウまたは IDE で直接など**ソリューション エクスプ ローラー**します。 ツール ウィンドウが .vsct ファイルで定義されていないため、ツール ウィンドウのツールバーには定義済みの親はありません。 代わりに、コード内に配置されます。 次の表は、IDE では、ツール ウィンドウに表示されるツールバーおよび含まれるコマンド グループを示します。
 
 > [!NOTE]
->  ツールバーとグループは、GUID を使用して`guidSHLMainMenu`GUID:ID の構文を使用して、それ以外の場合に指定されている場合を除きします。 ツールバーの GUID が指定されているそのツールバーから派生したグループにも適用されます。
+> ツールバーとグループは、GUID を使用して`guidSHLMainMenu`GUID:ID の構文を使用して、それ以外の場合に指定されている場合を除きします。 ツールバーの GUID が指定されているそのツールバーから派生したグループにも適用されます。
 
 |ツール ウィンドウ|ツール バー|グループ|
 |-----------------|-------------|------------|

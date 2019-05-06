@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3fc77e24a1a9ca72d6f689247f0de6a9e0bf26cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889995"
 ---
 # <a name="debugger-contexts"></a>デバッガー コンテキスト
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグ、デバッグ エンジン (DE) の動作を同時にいくつかの異なるコンテキスト内で。

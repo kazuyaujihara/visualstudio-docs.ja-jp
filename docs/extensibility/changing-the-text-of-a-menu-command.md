@@ -13,18 +13,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 92e06345164b9ad147c6ba204773efaa7180b943
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891614"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>メニュー コマンドのテキストを変更します。
 次の手順を使用してメニュー コマンドのテキスト ラベルを変更する方法を示して、<xref:System.ComponentModel.Design.IMenuCommandService>サービス。
 
 ## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>IMenuCommandService でメニュー コマンドのラベルを変更します。
 
-1. という名前の VSIX プロジェクトを作成する`MenuText`メニュー コマンドを使用して名前付き**ChangeMenuText**します。 詳細については、[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。
+1. という名前の VSIX プロジェクトを作成する`MenuText`メニュー コマンドを使用して名前付き**ChangeMenuText**します。 詳細については、次を参照してください。[メニュー コマンドを使用して拡張機能を作成する](../extensibility/creating-an-extension-with-a-menu-command.md)します。
 
 2. *.Vsct*ファイルを追加、`TextChanges`の次の例に示すように、メニュー コマンドにフラグを設定します。
 

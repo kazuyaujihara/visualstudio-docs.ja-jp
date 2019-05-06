@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29ee2b487299351b2d71a9b495257a939fb59f6c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 162f8df09b1f6ce9372a57728d653d5d3c20a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415726"
 ---
 # <a name="register-the-program"></a>プログラムを登録します。
 によって表されるデバッグ エンジンでは、ポート、取得された後、 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)インターフェイス、デバッグするプログラムを有効にするのには、次の手順は、ポートを使用して登録します。 登録されると、プログラムがでは、次のいずれかのデバッグに使用します。
@@ -38,7 +38,7 @@ ms.locfileid: "60070148"
      次の例では、プログラムを起動し、ポートに登録するデバッグ エンジンを示します。
 
     > [!NOTE]
-    >  このコード サンプルを起動し、プロセスを再開する唯一の方法ではありません。このコードは、主にポートとプログラムを登録する例です。
+    > このコード サンプルを起動し、プロセスを再開する唯一の方法ではありません。このコードは、主にポートとプログラムを登録する例です。
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.

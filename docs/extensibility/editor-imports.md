@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99619efa5181fbcf299e99cde60b8879731c0c74
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b11ef172cdd8fb4b1c72b72b43198ad7ad8f74e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417351"
 ---
 # <a name="editor-imports"></a>エディターのインポート
 エディター サービス、ファクトリ、およびコア エディターをさまざまな種類のアクセスの拡張機能を提供するブローカーの数値をインポートすることができます。 たとえば、インポート、<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>を提供するために、<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>の特定のコンテンツ タイプ。 (このナビゲーターは、テキスト バッファーにさまざまな検索を実行します。)
@@ -23,7 +23,7 @@ ms.locfileid: "56715636"
  エディター インポートを使用するには、フィールドまたは Managed Extensibility Framework コンポーネントの一部をエクスポートするクラスのプロパティとしてインポートします。
 
 > [!NOTE]
->  Managed Extensibility Framework の詳細については、[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)を参照してください。
+> Managed Extensibility Framework の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)します。
 
 ## <a name="import-syntax"></a>構文をインポートします。
  次の例では、オプションのファクトリ サービス、エディターにインポートする方法を示します。

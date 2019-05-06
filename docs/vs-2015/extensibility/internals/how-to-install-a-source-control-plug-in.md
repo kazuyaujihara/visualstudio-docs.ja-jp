@@ -11,12 +11,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fe03499200d3528a1aed286550191fd9dfcc1451
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 997e734f6d2ab6bcf70e3a4843ac66564683c79b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443310"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>方法: ソース管理プラグインのインストール
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60039843"
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerPath|c:\vss\win32\ssscc.dll|  
   
     > [!NOTE]
-    >  SCCServerPath は、SourceSafe プラグインへの完全パスです。 ソース管理プラグインでは、同じレジストリ エントリのパスが異なる会社と製品の名前を使用します。  
+    > SCCServerPath は、SourceSafe プラグインへの完全パスです。 ソース管理プラグインでは、同じレジストリ エントリのパスが異なる会社と製品の名前を使用します。  
   
 2. ソース管理プラグインの動作を変更するのには、次のオプションのレジストリ エントリを使用できます。 これらのエントリは、SccServerName と SccServerPath として同じサブキーに移動します。  
   
@@ -75,20 +75,20 @@ ms.locfileid: "60039843"
     |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey|SOFTWARE\Microsoft\SourceSafe|  
   
     > [!NOTE]
-    >  ソース管理プラグインは、同じサブキーとエントリの名前を使用してが異なる値になります。  
+    > ソース管理プラグインは、同じサブキーとエントリの名前を使用してが異なる値になります。  
   
 4. SourceCodeControlProvider サブキー InstalledSCCProviders をという名前のサブキーを作成し、そのサブキーの下の 1 つのエントリを配置します。  
   
      このエントリの名前が (同じ SCCServerName エントリに指定された値)、プロバイダーのユーザーが判読できる名前と値が、もう一度、手順 1. で作成されたサブキー。 パターンは、HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[表示名]* ソフトウェア =\\ *[会社名]* \\ *[製品名]* します。  
   
-     例:  
+     例えば:  
   
     |レジストリ エントリの例|サンプル値|  
     |---------------------------|------------------|  
     |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\Microsoft Visual SourceSafe|SOFTWARE\Microsoft\SourceSafe|  
   
     > [!NOTE]
-    >  複数ソース管理プラグインをこの方法で登録されていることができます。 これは、どのように[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]インストールされているすべてのソース管理プラグイン API ベースのプラグインを検索します。  
+    > 複数ソース管理プラグインをこの方法で登録されていることができます。 これは、どのように[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]インストールされているすべてのソース管理プラグイン API ベースのプラグインを検索します。  
   
 ## <a name="how-an-ide-locates-the-dll"></a>IDE が DLL を検索する方法  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE は、2 つのソースを見つける方法は、プラグインの DLL を制御します。  
@@ -100,14 +100,14 @@ ms.locfileid: "60039843"
   最初の方法で、DLL を検索するには、IDE はエントリ ProviderRegKey HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider サブキーの下で検索します。 このエントリの値は、別のサブキーを指します。 IDE は、その 2 つ目のサブキー HKEY_LOCAL_MACHINE の下で SccServerPath をという名前のエントリを検索します。 このエントリの値は、DLL を IDE を指します。  
   
 > [!NOTE]
->  IDE では、相対パス (たとえば、.\NewProvider.DLL) から Dll が読み込まれません。 DLL への完全なパスを指定する必要があります (たとえば、c:\Providers\NewProvider.DLL)。 これは、承認されていないか、権限を借用したプラグインの Dll の読み込みを防止することで、IDE のセキュリティを強化します。  
+> IDE では、相対パス (たとえば、.\NewProvider.DLL) から Dll が読み込まれません。 DLL への完全なパスを指定する必要があります (たとえば、c:\Providers\NewProvider.DLL)。 これは、承認されていないか、権限を借用したプラグインの Dll の読み込みを防止することで、IDE のセキュリティを強化します。  
   
  2 番目の方法で、DLL を検索する IDE ですべてのエントリの HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders サブキーの下で検索<em>します。</em> 各エントリは、名前と値があります。 IDE では、これらの名前の一覧を表示、ユーザーに<em>します。</em> ユーザーが 名前を IDE は、サブキーを指している選択した名前の値を検索します。 IDE は、そのサブキー hkey_local_machine SccServerPath をという名前のエントリを探します。 そのエントリの値は、適切な DLL を IDE を指します。  
   
  ソース管理プラグインは、DLL が見つからないのどちらの方法をサポートして、その結果、ProviderRegKey、過去の設定の上書きを設定する必要があります。 さらに、その必要があります自体の一覧に追加 InstalledSccProviders のため、ユーザーが使用するには、ソース管理プラグインの選択を持つことができます。  
   
 > [!NOTE]
->  指定されたコンピューターでプラグイン既定のソース管理として 1 つだけのソース管理プラグインを登録できます HKEY_LOCAL_MACHINE キーを使用しているため (ただし、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]どのソース管理プラグインの実際に使用するかを決定できる、特定のソリューションです。) インストール プロセス中にかどうか、ソース管理プラグインは既に設定; を確認します。そうである場合、ユーザーに求めます新しいソース コントロールの既定値としてインストールされているプラグインを設定するかどうか。 アンインストール-インストール中に削除しないでくださいすべてソース管理プラグインで HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider; に共通するその他のレジストリ サブキー特定の SCC サブキーのみを削除します。  
+> 指定されたコンピューターでプラグイン既定のソース管理として 1 つだけのソース管理プラグインを登録できます HKEY_LOCAL_MACHINE キーを使用しているため (ただし、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]どのソース管理プラグインの実際に使用するかを決定できる、特定のソリューションです。) インストール プロセス中にかどうか、ソース管理プラグインは既に設定; を確認します。そうである場合、ユーザーに求めます新しいソース コントロールの既定値としてインストールされているプラグインを設定するかどうか。 アンインストール-インストール中に削除しないでくださいすべてソース管理プラグインで HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider; に共通するその他のレジストリ サブキー特定の SCC サブキーのみを削除します。  
   
 ## <a name="how-the-ide-detects-version-1213-support"></a>IDE はバージョン 1.2 と 1.3 のサポートを検出する方法  
  方法は[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]プラグインがサポートのソース管理プラグイン API バージョン 1.2 と 1.3 機能かどうかを検出しますか? 高度な機能を宣言するには、ソース管理プラグインは対応する関数を実装する必要があります。  

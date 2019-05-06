@@ -9,11 +9,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7b4ba4e98b8b2d42485a7594d5bab658e1bd6ccb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422488"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>VSIXLanguagePack 要素 (VSIX 言語パックのスキーマ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "58975913"
 |-------------|-----------------|  
 |[LocalizedName 要素](../extensibility/localizedname-element-vsix-language-pack-schema.md)|必須。 拡張機能のインストールのローカライズされた名前。|  
 |[LocalizedDescription 要素](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)|必須。 拡張機能のインストールのローカライズされた説明。|  
-|[MoreInfoURL 要素](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)|任意。 拡張機能のローカライズされた情報へのリンク。|  
+|[MoreInfoURL 要素](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)|省略可能です。 拡張機能のローカライズされた情報へのリンク。|  
 |[License 要素](../extensibility/license-element-vsix-language-pack-schema.md)|省略可能です。 ローカライズされたバージョンの拡張機能のライセンス ファイルのパス。|  
   
 ### <a name="parent-elements"></a>親要素  

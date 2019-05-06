@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 000ce33b71c13f87f218a15c364fda21b99ccfe4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541836"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236:ISerializable 型で基底クラス メソッドを呼び出します
 
@@ -62,7 +62,7 @@ ms.locfileid: "55939724"
 
  [CA2238:シリアル化メソッドを正しく実装します。](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
- [CA2235:すべてのシリアル化不可能なフィールドをマークします。](../code-quality/ca2235-mark-all-non-serializable-fields.md)
+ [CA2235:すべてのシリアル化不可能なフィールドを設定します](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
  [CA2237:ISerializable 型を serializableattribute に設定します](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 

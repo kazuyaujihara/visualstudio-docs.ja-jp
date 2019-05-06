@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e934832f20ea7ab11484cdeb345f989aa842e06d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928354"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>方法: アプリケーション マニフェストと配置マニフェストの再署名
 Windows フォーム アプリケーション、Windows Presentation Foundation アプリケーション (xbap)、Office ソリューション用アプリケーション マニフェストの配置プロパティを変更したら、両方のアプリケーションを再署名する必要があり、配置マニフェストに、証明書。 このプロセスによって、改ざんされたファイルがエンド ユーザーのコンピューターにインストールされないようにすることができます。

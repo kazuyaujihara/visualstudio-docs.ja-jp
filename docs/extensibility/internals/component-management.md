@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910384"
 ---
 # <a name="component-management"></a>コンポーネントの管理
 Windows インストーラーのタスクの単位は、Windows インストーラーのコンポーネント (WICs または単なるコンポーネントとも呼ばれます) と呼ばれます。 各 WIC では、インストールと Windows インストーラーの使用設定に対する参照カウントの基本的な単位を識別する GUID。

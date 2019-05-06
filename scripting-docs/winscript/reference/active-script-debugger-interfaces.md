@@ -14,18 +14,18 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c63e20b802ff6c54ba17f8ddc55f390213e9043
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422462"
 ---
 # <a name="active-script-debugger-interfaces"></a>アクティブ スクリプト デバッガー インターフェイス
 activdbg.h および activdbg100.h ヘッダー ファイルは、このセクションに記載されているインターフェイス、列挙型、および構造体を提供します。 これらはデバッグ スクリプト用です。  
   
 > [!NOTE]
->  `IJSDebug*` インターフェイスおよび `IEnumJsStackFrames` インターフェイスは、スクリプトを含むネイティブ コードのデバッグ用に最初に Internet Explorer 11 でリリースされました。 これらのインターフェイスのヘッダー ファイルは jscript9diag.h です。  
+> `IJSDebug*` インターフェイスおよび `IEnumJsStackFrames` インターフェイスは、スクリプトを含むネイティブ コードのデバッグ用に最初に Internet Explorer 11 でリリースされました。 これらのインターフェイスのヘッダー ファイルは jscript9diag.h です。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  次のインターフェイスによって、言語およびホストに依存しないデバッグが可能になります。  

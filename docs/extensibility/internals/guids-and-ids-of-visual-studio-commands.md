@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860971"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>コマンドの Guid と Visual Studio の Id
 Visual Studio 統合開発環境 (IDE) で含まれているコマンドの GUID と ID の値は、Visual Studio SDK の一部としてインストールされている .vsct ファイルで定義されます。 詳細については、次を参照してください。 [IDE 定義コマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)します。

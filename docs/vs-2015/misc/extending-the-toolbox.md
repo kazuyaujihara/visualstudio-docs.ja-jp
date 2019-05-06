@@ -11,11 +11,11 @@ ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
 ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822550"
 ---
 # <a name="extending-the-toolbox"></a>ツールボックスの拡張
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ツールボックス** には、IDE のドラッグ アンド ドロップ メカニズムを利用してエディターとデザイナーに機能を提供するオブジェクトのコレクションが用意されています。  
@@ -37,7 +37,7 @@ ms.locfileid: "60088705"
  VSPackage で **ツールボックス**のコンテンツと外観を管理する方法を記述します。  
   
 ## <a name="related-sections"></a>関連項目  
- [方法: ツールボックス ウィンドウを管理します。](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+ [方法: [ツールボックス] ウィンドウを管理する](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
  **の統合開発環境 (IDE) で** ツールボックス [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用する方法を説明します。  
   
  [方法: ツールボックスを制御します。](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  

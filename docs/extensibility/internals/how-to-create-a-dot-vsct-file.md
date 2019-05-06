@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8dd2e677cae2e54a8dff716aef72f1d6abc6b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418469"
 ---
 # <a name="how-to-create-a-vsct-file"></a>方法: .Vsct ファイルを作成します。
 
@@ -80,7 +80,7 @@ XML ベースを作成する *.vsct*コマンドの既存のテーブルから�
     この操作は、新しい作成 *.vsct* XML コマンド テーブル ソース ファイル。 使用して、ファイルをコンパイルする*Vsct.exe*、するとき、VSCT コンパイラはその他の *.vsct*ファイル。
 
    > [!NOTE]
-   >  読みやすさを向上させることができます、 *.vsct* XML コメントのフォーマット ファイル。
+   > 読みやすさを向上させることができます、 *.vsct* XML コメントのフォーマット ファイル。
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
@@ -90,13 +90,13 @@ XML ベースを作成する *.vsct*既存のバイナリからファイル *.ct
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>.cto ファイルから .vsct ファイルを作成するには
 
-1.  コピーを取得、 *.cto*ファイルとそれに対応する *.ctsym*ファイル。
+1. コピーを取得、 *.cto*ファイルとそれに対応する *.ctsym*ファイル。
 
-2.  同じディレクトリにファイルを配置、 *vsct.exe*コンパイラ。
+2. 同じディレクトリにファイルを配置、 *vsct.exe*コンパイラ。
 
-3.  Visual Studio のコマンド プロンプトでを含むディレクトリに移動、 *.cto*と *.ctsym*ファイル。
+3. Visual Studio のコマンド プロンプトでを含むディレクトリに移動、 *.cto*と *.ctsym*ファイル。
 
-4.  型
+4. 型
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -111,9 +111,9 @@ XML ベースを作成する *.vsct*既存のバイナリからファイル *.ct
 
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>プロジェクトのコンパイルに .vsct ファイルを追加するには
 
-1.  エディターで、プロジェクト ファイルを開きます。 プロジェクトが読み込まれている場合最初にアンロードする必要があります。
+1. エディターで、プロジェクト ファイルを開きます。 プロジェクトが読み込まれている場合最初にアンロードする必要があります。
 
-2.  追加、 [ItemGroup 要素](../../msbuild/itemgroup-element-msbuild.md)を格納している、`VSCTCompile`要素は、次の例に示すようにします。
+2. 追加、 [ItemGroup 要素](../../msbuild/itemgroup-element-msbuild.md)を格納している、`VSCTCompile`要素は、次の例に示すようにします。
 
     ```xml
     <ItemGroup>
@@ -126,7 +126,7 @@ XML ベースを作成する *.vsct*既存のバイナリからファイル *.ct
 
      `ResourceName`要素は常に設定する必要があります`Menus.ctmenu`します。
 
-3.  プロジェクトが含まれている場合、 *.resx*ファイルを追加、`EmbeddedResource`要素を含む、`MergeWithCTO`要素は、次の例に示すように。
+3. プロジェクトが含まれている場合、 *.resx*ファイルを追加、`EmbeddedResource`要素を含む、`MergeWithCTO`要素は、次の例に示すように。
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -138,9 +138,9 @@ XML ベースを作成する *.vsct*既存のバイナリからファイル *.ct
 
      このマークアップは内で移動する必要があります、`ItemGroup`埋め込みリソースを含む要素。
 
-4.  という名前は、通常、パッケージ ファイルを開く *\<ProjectName\>Package.cs*または *\<ProjectName\>Package.vb*エディターでします。
+4. という名前は、通常、パッケージ ファイルを開く *\<ProjectName\>Package.cs*または *\<ProjectName\>Package.vb*エディターでします。
 
-5.  追加、`ProvideMenuResource`の次の例に示すように、パッケージのクラスに属性します。
+5. 追加、`ProvideMenuResource`の次の例に示すように、パッケージのクラスに属性します。
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]

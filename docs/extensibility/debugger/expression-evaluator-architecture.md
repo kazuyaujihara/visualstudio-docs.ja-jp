@@ -12,16 +12,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da2f32cde96d7be482d0283510bcc3f0c127db9f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d486234bd220fd1a7b2a93ca88fd89e5119b2dbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411304"
 ---
 # <a name="expression-evaluator-architecture"></a>式エバリュエーターのアーキテクチャ
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)を参照してください。
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細については、次を参照してください。 [CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。
 
  パッケージのデバッグは、Visual Studio に独自の言語を統合すると、必要な式エバリュエーター (EE) のインターフェイスを設定し、共通言語ランタイムのシンボル プロバイダー (SP) とバインダー インターフェイスを呼び出す必要があります。 現在の実行のアドレスと共に、SP とバインダー オブジェクトは、式が評価されるコンテキストです。 これらのインターフェイスの生成および消費する情報は、EE のアーキテクチャの主な概念を表します。
 

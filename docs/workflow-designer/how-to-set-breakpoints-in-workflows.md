@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7503d0b0bee201a9617e90966c9f75ac6333f228
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949522"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>方法: ワークフロー内のブレークポイントを設定する
 
-ワークフロー デザイナーを使用して、Visual Basic または C# コードでの操作と同様、グラフィカル ワークフローにブレークポイントを設定することができます。 設定したそれぞれのブレークポイントで、ワークフローの実行が停止します。
+ワークフロー デザイナーを使用して、Visual Basic または c# コードでの操作と同様、グラフィカル ワークフローにブレークポイントを設定することができます。 設定したそれぞれのブレークポイントで、ワークフローの実行が停止します。
 
 ブレークポイントでは、次の 3 つの状態があります。*保留中*、*バインド*、および*エラー*します。 ブレークポイントは、設定時には "保留" になり、穴のない赤いアイコンで表示されます。 特定の種類のワークフローがランタイムによって読み込まれると、ブレークポイントの状態は "バインド" になります。 不適切な形式のブレークポイントを指定した場合 (アクティビティ名が無効など) は、エラー ウィンドウが表示されます。 ブレークポイントはブレークポイント ウィンドウに追加されますが、小さな x 印が付きます。
 
@@ -41,4 +41,4 @@ ms.locfileid: "55908440"
 ## <a name="see-also"></a>関連項目
 
 - [ワークフロー デザイナーを使用したワークフローのデバッグ](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
-- [方法: ワークフロー デザイナーで XAML をデバッグします。](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+- [方法: ワークフロー デザイナーを使用して XAML をデバッグする](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

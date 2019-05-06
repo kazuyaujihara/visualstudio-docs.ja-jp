@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2a231818def210f7c88ab031059f8561c67b33d1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944236"
 ---
 # <a name="iremotedebugapplication-interface"></a>IRemoteDebugApplication インターフェイス
 実行中のアプリケーションを表します。 オペレーティング システムのプロセスに対応する必要はありません。 通常、デバッガーはデバッグ用のアプリケーションを対象とします。 プロセス デバッグ マネージャーは、通常、アプリケーション オブジェクトを実装します。  

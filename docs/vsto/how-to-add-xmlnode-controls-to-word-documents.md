@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79ae6aee44f720b868e30c831ee4d6aa61c9611d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f0f849088a2c3cc726adc6054aef1ff7a7c1c52f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427415"
 ---
 # <a name="how-to-add-xmlnode-controls-to-word-documents"></a>方法: Word 文書に XMLNode コントロールを追加します。
   **重要な**に関する Microsoft Word には、このトピックでまとめられている情報が提示の特典および個人や組織のユーザーは、米国およびその担当地域外部にあるまたはを使用しているユーザーの使用専用、または開発上で実行されるプログラム、Microsoft が特定の機能の実装を削除する場合、2010 年 1 月の前に、Microsoft によってライセンスされた Microsoft Word の製品に関連するカスタム XML から Microsoft Word です。 Microsoft Word に関するこの情報が読み取りまたは個人または組織、米国またはその区域を使用して、または、2010 年 1 月 10 日後に Microsoft によってライセンス供与された Microsoft Word の製品で実行されるプログラムの開発で使用しない可能性があります。;これらの製品では、その日付より前にライセンスまたは購入を米国外の使用ライセンスの製品と同じ動作はしません。
@@ -28,7 +28,7 @@ ms.locfileid: "60090408"
  Visual Studio が自動的に追加の非繰り返しの XML スキーマ要素を Microsoft Office Word 文書にマップするときに、<xref:Microsoft.Office.Tools.Word.XMLNode>コントロールをドキュメント。 XML スキーマ要素の繰り返しのマッピングについては、次を参照してください。[方法。Word 文書に XMLNodes コントロールを追加](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)します。
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Word.XMLNode>コントロールはから使用できません、**ツールボックス**または**データソース**ウィンドウをプログラムで作成することはできません。
+> <xref:Microsoft.Office.Tools.Word.XMLNode>コントロールはから使用できません、**ツールボックス**または**データソース**ウィンドウをプログラムで作成することはできません。
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "60090408"
 1. リボンで、Visual Studio デザイナーで文書のクリックして、**開発者**タブ。
 
     > [!NOTE]
-    >  **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
+    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
 
 2. **XML**グループで、**スキーマ**します。
 

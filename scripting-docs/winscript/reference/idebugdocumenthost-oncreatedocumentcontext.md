@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a3b614cdc6aad17ab3a4f6e83927b59390005ac2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971096"
 ---
 # <a name="idebugdocumenthostoncreatedocumentcontext"></a>IDebugDocumentHost::OnCreateDocumentContext
 新しいドキュメント コンテキストを作成中で、ホストで必要に応じて、新しいコンテキストの不明な制御を返すことをホストに通知します。  

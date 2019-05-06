@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041e33f04c3f9d376dbc82839e2256b4000147f6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d28c9456afdc60b1bddadf759ec3090ba37f2040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445482"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>機能拡張インターフェイスによる UI 機能をカスタマイズします。
   Visual Studio に含まれる Office 開発ツールは、VSTO アドインにおけるカスタム作業ウィンドウ、リボンのカスタマイズ、および Outlook フォーム領域の作成に使用可能な、多数の実装の詳細を処理するクラスとデザイナーを提供します。 ただし、特別な要件がある場合、各機能の *拡張インターフェイス* を自分で実装することもできます。
@@ -63,7 +63,7 @@ ms.locfileid: "56622931"
 - `TaskPaneUI` クラスは、作業ウィンドウの UI を提供します。 `TaskPaneUI` クラスの属性により、クラスが COM に対して可視化され、Microsoft Office アプリケーションがクラスを発見することができるようになります。 この例で、UI は空の <xref:System.Windows.Forms.UserControl>ですが、コードを修正してコントロールを追加できます。
 
   > [!NOTE]
-  >  `TaskPaneUI` クラスを COM に公開するには、プロジェクトの **[COM の相互運用機能の登録]** プロパティを設定する必要もあります。
+  > `TaskPaneUI` クラスを COM に公開するには、プロジェクトの **[COM の相互運用機能の登録]** プロパティを設定する必要もあります。
 
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]

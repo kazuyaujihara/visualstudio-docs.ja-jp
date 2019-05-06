@@ -14,22 +14,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85b9d20dd67ff11f5bded7060440f2e768a205a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411120"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX マニフェスト デザイナー
 VSIX パッケージ マニフェスト ファイルを Visual Studio 拡張機能のインストールの動作の設定を変更します。
 
- **VSIX マニフェスト デザイナー**基になる VSIX スキーマにマップされます。 スキーマ内のすべての要素は、デザイナーでの対応するコントロールを使用して設定できます。 スキーマの詳細については、[VSIX 拡張機能スキーマ 2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)を参照してください。
+ **VSIX マニフェスト デザイナー**基になる VSIX スキーマにマップされます。 スキーマ内のすべての要素は、デザイナーでの対応するコントロールを使用して設定できます。 スキーマの詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)します。
 
  開くには、 **VSIX マニフェスト デザイナー**、検索、 *source.extension.vsixmanifest*ファイル**ソリューション エクスプ ローラー**、し、ファイルを開きます。 ファイルに有効な XML が含まれていない場合、マニフェスト デザイナーは開けません。
 
 > [!NOTE]
->  *Source.extension.vsixmanifest*ファイルの出力を*extension.vsixmanifest*パッケージが作成されます。
+> *Source.extension.vsixmanifest*ファイルの出力を*extension.vsixmanifest*パッケージが作成されます。
 
 ## <a name="uielement-list"></a>UIElement の一覧
  **VSIX マニフェスト デザイナー**これらスキーマの最上位の要素に対応する 4 つのセクションが含まれています。

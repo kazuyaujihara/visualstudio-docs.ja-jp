@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5199be7307fdaa607f5aa6a5f554d9fcc82f452d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837824"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 シンボルの子を取得します。
@@ -53,7 +53,7 @@ HRESULT findChildren ( 
 ## <a name="return-value"></a>戻り値
  返します`S_OK`シンボルの少なくとも 1 つの子が検出されましたが、または返す`S_FALSE`場合は子が見つかりませんでした。 エラー コードを返しますそれ以外の場合。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  このメソッドを呼び出すことは、 [idiasession::findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)このシンボルを最初のパラメーターとしてメソッド。
 
 ## <a name="see-also"></a>関連項目

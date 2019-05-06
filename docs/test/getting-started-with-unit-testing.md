@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f3537a56b746c9104898d68e40038fcd545910
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a01f08d430e9812283c3f5179e08d20f98a687a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003223"
 ---
 # <a name="get-started-with-unit-testing"></a>単体テストの概要
 
@@ -24,10 +24,19 @@ Visual Studio を使用して、単体テストを定義および実行してコ
 
 このセクションでは、単体テスト プロジェクトの作成方法に関する概要を説明します。
 
-> [!TIP]
-> テスト対象のプロジェクト "HelloWorldCore" はプロジェクト例であり、コードを示すことは想定されていません。 テストする "Hello World" プロジェクトを作成する場合は、[初めての C# コンソール アプリの作成](../ide/quickstart-csharp-console.md)に関するページを参照してください。 完全なチュートリアルの記事については、「[マネージド コードの単体テストを作成し、実行する](walkthrough-creating-and-running-unit-tests-for-managed-code.md)」をご覧ください。
-
 1. Visual Studio でテストするプロジェクトを開きます。
+
+   単体テストの例をデモすることを目的として、この記事ではシンプルな "Hello World" プロジェクトをテストします。 そのようなプロジェクトのサンプル コードは、次のとおりです。
+
+   ```csharp
+   public class Program
+   {
+       public static void Main()
+       {
+           Console.WriteLine("Hello World!");
+       }
+   }
+   ```
 
 1. **ソリューション エクスプローラー**で、ソリューション ノードを選びます。 次に、上部のメニュー バーで **[ファイル]** > **[追加]** > **[新しいプロジェクト]** を選択します。
 
@@ -62,6 +71,9 @@ Visual Studio を使用して、単体テストを定義および実行してコ
 1. 単体テスト メソッドにコードを追加します。
 
    ![Visual Studio で単体テスト メソッドにコードを追加する](media/vs-2019/unit-test-method.png)
+
+> [!TIP]
+> 単体テストの作成を詳述するチュートリアルについては、[マネージド コードの単体テストの作成および実行](walkthrough-creating-and-running-unit-tests-for-managed-code.md)に関するページを参照してください。
 
 ## <a name="run-unit-tests"></a>単体テストを実行する
 

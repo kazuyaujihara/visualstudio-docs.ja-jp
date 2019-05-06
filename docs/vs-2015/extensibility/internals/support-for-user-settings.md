@@ -12,12 +12,12 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ab746bfd3e8854fddd83f3fdde49a5d0dda397ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d83c90d7e94471374f0c882f3868d16c963e4490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440083"
 ---
 # <a name="support-for-user-settings"></a>ユーザー設定のサポート
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ VSPackage は、ユーザーが選択したときに永続化状態変数のグ�
  次の場所にレジストリ エントリでは、カスタム設定ポイントが作成されます。Hklm \software\microsoft\visualstudio\\*\<バージョン >* \UserSettings\\`<CSPName>`ここで、 `<CSPName>` VSPackage がサポートをカスタム設定ポイントの名前には*\<バージョン >* のバージョンである[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]8.0 などの。  
   
 > [!NOTE]
->  Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) です初期化されます。 詳細については、次を参照してください。[コマンド ライン スイッチ](../../extensibility/command-line-switches-visual-studio-sdk.md)します。  
+> Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) です初期化されます。 詳細については、次を参照してください。[コマンド ライン スイッチ](../../extensibility/command-line-switches-visual-studio-sdk.md)します。  
   
  レジストリ エントリの構造は、次に示します。  
   

@@ -11,12 +11,12 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435238"
 ---
 # <a name="how-to-implement-nested-projects"></a>方法: 入れ子になったプロジェクトの実装
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58976848"
 1. 統合開発環境 (IDE) では、親プロジェクトのプロジェクトのファイルとスタートアップの情報を読み込みます呼び出すことによって、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>インターフェイス。 親プロジェクトが作成され、ソリューションに追加します。  
   
    > [!NOTE]
-   >  この時点では、子プロジェクトを作成する前に、親プロジェクトを作成する必要がありますので、入れ子になったプロジェクトを作成する親プロジェクトのプロセスには早すぎます。 このシーケンスでは、次の親プロジェクトは、子プロジェクトに設定を適用することができ、必要な場合、子プロジェクトは、親プロジェクトから情報を取得できます。 このシーケンスは、ソース コード管理 (SCC) やソリューション エクスプ ローラーなどのクライアントでの必要なかどうかです。  
+   > この時点では、子プロジェクトを作成する前に、親プロジェクトを作成する必要がありますので、入れ子になったプロジェクトを作成する親プロジェクトのプロセスには早すぎます。 このシーケンスでは、次の親プロジェクトは、子プロジェクトに設定を適用することができ、必要な場合、子プロジェクトは、親プロジェクトから情報を取得できます。 このシーケンスは、ソース コード管理 (SCC) やソリューション エクスプ ローラーなどのクライアントでの必要なかどうかです。  
   
     親プロジェクトに待つ必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A>プロジェクトまたはプロジェクトの入れ子になった (子) を作成できる前に、IDE によって呼び出されるメソッド。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "58976848"
     親プロジェクトが呼び出すことで入れ子になったプロジェクトごとの GUID を作成するファイルは既に存在しない場合`CoCreateGuid`します。  
   
    > [!NOTE]
-   >  `CoCreateGuid` GUID が作成されるときに、COM API が呼び出されます。 詳細については、次を参照してください。`CoCreateGuid`と MSDN ライブラリの Guid。  
+   > `CoCreateGuid` GUID が作成されるときに、COM API が呼び出されます。 詳細については、次を参照してください。`CoCreateGuid`と MSDN ライブラリの Guid。  
   
     親プロジェクトでは、この GUID は、次回の IDE で開かれたを取得するには、そのプロジェクト ファイルに格納します。 呼び出し元に関する詳細については、手順 4. を参照してください。`AddVirtualProjectEX`を取得する、`guidProjectID`子プロジェクト用。  
   
@@ -66,7 +66,7 @@ ms.locfileid: "58976848"
      親と子プロジェクトがプログラムによってインスタンス化されるため、この時点で入れ子になったプロジェクトのプロパティを設定できます。  
   
     > [!NOTE]
-    >  だけでなく、入れ子になったプロジェクトからコンテキスト情報を受け取ることは、親プロジェクトに、チェックしてその項目の任意のコンテキストが含まれるかどうかも要求できます<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>します。 この方法で、ダイナミック ヘルプの属性を追加し、固有のメニュー オプションを個別の入れ子になったプロジェクトに追加できます。  
+    > だけでなく、入れ子になったプロジェクトからコンテキスト情報を受け取ることは、親プロジェクトに、チェックしてその項目の任意のコンテキストが含まれるかどうかも要求できます<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>します。 この方法で、ダイナミック ヘルプの属性を追加し、固有のメニュー オプションを個別の入れ子になったプロジェクトに追加できます。  
   
 10. 呼び出しで、ソリューション エクスプ ローラーで表示するために、階層が構築された、<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>メソッド。  
   
@@ -91,6 +91,6 @@ ms.locfileid: "58976848"
 ## <a name="see-also"></a>関連項目  
  [項目を追加、新しい項目の追加 ダイアログ ボックス](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [プロジェクトと項目テンプレートを登録します。](../../extensibility/internals/registering-project-and-item-templates.md)   
- [チェックリスト:新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [チェックリスト: 新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [コンテキスト パラメーター](../../extensibility/internals/context-parameters.md)   
  [ウィザード (.Vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)

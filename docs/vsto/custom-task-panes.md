@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ab27c27873fc0addf1dbdbdbca81613d3015cc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445546"
 ---
 # <a name="custom-task-panes"></a>カスタム作業ウィンドウ
   作業ウィンドウは、通常、Microsoft Office アプリケーションのウィンドウの一辺にドッキングされているユーザー インターフェイス ウィンドウです。 カスタム作業ウィンドウは、独自の作業ウィンドウを作成し、ユーザーがソリューションの各機能にアクセスする際に使い慣れたインターフェイスを利用できるようにするものです。 たとえば、インターフェイスにはドキュメントを変更するコードや、データ ソースのデータを表示するコードを実行するコントロールが含まれます。
@@ -38,7 +38,7 @@ ms.locfileid: "60106203"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  カスタム作業ウィンドウは、操作ウィンドウとは異なります。 操作ウィンドウは、Microsoft Office Word および Microsoft Office Excel のドキュメント レベルのカスタマイズの一部です。 詳細については、次を参照してください。[操作ウィンドウの概要](../vsto/actions-pane-overview.md)します。
+> カスタム作業ウィンドウは、操作ウィンドウとは異なります。 操作ウィンドウは、Microsoft Office Word および Microsoft Office Excel のドキュメント レベルのカスタマイズの一部です。 詳細については、次を参照してください。[操作ウィンドウの概要](../vsto/actions-pane-overview.md)します。
 
 ## <a name="benefits-of-custom-task-panes"></a>カスタム作業ウィンドウの利点があります。
  カスタム作業ウィンドウでは、使用する機能を使い慣れたユーザー インターフェイスに取り込むことができます。 Visual Studio のツールを使用して、カスタム作業ウィンドウをすばやく作成できます。

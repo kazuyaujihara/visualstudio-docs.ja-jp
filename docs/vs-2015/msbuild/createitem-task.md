@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ce88cb875a008b806aa882dafe186af7d8f29f29
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 758491a068fe2c2c7318717f5481b41839c49a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419773"
 ---
 # <a name="createitem-task"></a>CreateItem タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "59649550"
 項目コレクションに入力項目を設定します。 これにより、リスト間で項目をコピーできるようになります。  
   
 > [!NOTE]
->  このタスクは非推奨とされます。 .NET Framework 3.5 以降、項目グループは [Target](../msbuild/target-element-msbuild.md) 要素内に配置できます。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。  
+> このタスクは非推奨とされます。 .NET Framework 3.5 以降、項目グループは [Target](../msbuild/target-element-msbuild.md) 要素内に配置できます。 詳細については、「[MSBuild 項目](../msbuild/msbuild-items.md)」をご覧ください。  
   
 ## <a name="attributes"></a>属性  
  `CreateItem` タスクのパラメーターの説明を次の表に示します。  

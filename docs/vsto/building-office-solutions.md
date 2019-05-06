@@ -26,18 +26,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e103b07b82d587ac00e2ff53e9ed7ea344267a85
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440335"
 ---
 # <a name="build-office-solutions"></a>Office ソリューションを構築します。
   一般に、Office プロジェクトのビルドとデバッグは、Visual Studio のその他の種類のプロジェクト (Windows フォームなど) のビルドおよびデバッグとほとんど同じです。 このセクションのトピックでは、いくつかある相違点について説明します。 アプリケーションを構築する方法については、次を参照してください。[コンパイルし、Visual Studio でビルド](../ide/compiling-and-building-in-visual-studio.md)します。
 
 > [!NOTE]
->  [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは VSTO アドインやソリューションと比較して、小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML などのほぼすべての web プログラミング テクノロジを使用して、ビルドすることができます。
+> [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは VSTO アドインやソリューションと比較して、小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML などのほぼすべての web プログラミング テクノロジを使用して、ビルドすることができます。
 
 ## <a name="project-output-for-office-projects"></a>Office プロジェクトのプロジェクトの出力
  Office プロジェクトは、 *プロジェクト名*\bin\release または *プロジェクト名*\bin\debug に出力されます。 配置ディレクトリにはビルドできません。
@@ -56,7 +56,7 @@ ms.locfileid: "60078929"
 - プログラム データベース (*PDB*) ファイル。
 
 > [!NOTE]
->  ドキュメント レベルのソリューションを、ローカル コンピューターではなくリモートの場所に作成する場合は、アプリケーションのセキュリティ センターにある信頼できる場所のリストに完全修飾パスを追加します。 詳細については、ドキュメントへの信頼の付与と呼ばれるセクションを参照してください。[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)します。
+> ドキュメント レベルのソリューションを、ローカル コンピューターではなくリモートの場所に作成する場合は、アプリケーションのセキュリティ センターにある信頼できる場所のリストに完全修飾パスを追加します。 詳細については、ドキュメントへの信頼の付与と呼ばれるセクションを参照してください。[セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)します。
 
 ### <a name="application-level-projects"></a>アプリケーション レベルのプロジェクト
  VSTO アドイン プロジェクトをビルドするときに、プロジェクト出力には、次のものが含まれています。

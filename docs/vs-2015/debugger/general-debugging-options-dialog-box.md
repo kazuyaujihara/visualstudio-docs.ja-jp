@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7efd2c988791d0de4f414a48e5c47bc70b05b784
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446482"
 ---
 # <a name="general-debugging-options-dialog-box"></a>[全般] ([オプション] ダイアログ ボックス - [デバッグ])
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,14 +84,14 @@ ms.locfileid: "59000895"
  **プロパティの評価とその他の暗黙的な関数呼び出しを有効にします。**  
  変数ウィンドウと **[クイック ウォッチ]** ダイアログ ボックスで、プロパティの自動評価と暗黙的な関数の呼び出しを有効にします。  
   
- **変数ウィンドウ (C# および JavaScript のみ) 内のオブジェクトに対して文字列変換関数を呼び出す**  
+ **変数ウィンドウ (c# および JavaScript のみ) 内のオブジェクトに対して文字列変換関数を呼び出す**  
  変数ウィンドウでオブジェクトを評価するときに文字列変換呼び出しを暗黙的に実行します。 したがって、結果は型名ではなく、文字列として表示されます。 C# コードのデバッグ時にのみ適用されます。 この設定は、DebuggerDisplay 属性によってオーバーライドできます (を参照してください[DebuggerDisplay 属性を使用して](../debugger/using-the-debuggerdisplay-attribute.md))。  
   
  **ソース サーバー サポートを有効にする**  
  SRCSRV (`srcsrv.dll`) プロトコルを実装するソース サーバーからソース ファイルを取得するように Visual Studio デバッガーに指示します。 このプロトコルを実装する 2 つのソース サーバーは Team Foundation Server と Debugging Tools for Windows です。 SrcSrv のセットアップの詳細については、Debugging Tools for Windows のドキュメントを参照してください。 さらを参照してください[指定シンボル (.pdb) とソース ファイル](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)します。  
   
 > [!IMPORTANT]
->  .pdb ファイルを読み取ることでそのファイル内の任意のコードを実行できるため、サーバーが信頼されていることを確認してください。  
+> .pdb ファイルを読み取ることでそのファイル内の任意のコードを実行できるため、サーバーが信頼されていることを確認してください。  
   
  **ソース サーバー診断メッセージを出力ウィンドウに**  
  ソース サーバーのサポートが有効な場合に、診断表示をオンにします。  
@@ -145,7 +145,7 @@ ms.locfileid: "59000895"
   
   新しいデバッグ エンジンは .NET C++ 式の評価をサポートしていないため、.NET C++ コードをデバッグするときにはこのオプションを使用する必要があります。 ただし、ネイティブ互換モードを有効にすると、現在のデバッガーの実装に依存している多くの機能が無効になります。 レガシ エンジンに多くのビジュアライザーがないなどの組み込み型など、`std::string`で Visual Studio 2015 のプロジェクト。   このような場合、デバッグ機能を最適にご利用いただくためには、Visual Studio 2013 プロジェクトをお使いください。  
   
-  **従来の C# および VB の式エバリュエーターを使用します。**  
+  **従来の c# および VB の式エバリュエーターを使用します。**  
   デバッガーは、Visual Studio 2015 の Roslyn ベースの式エバリュエーターの代わりに、Visual Studio 2013 の C#/VB の式エバリュエーターを使います。  
   
   **安全でない可能性のあるプロセス (マネージドのみ) に対してカスタム デバッガー ビジュアライザーを使用する場合に警告します。**  

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a316d2af6ecb76c573cfb43e1334df1933a2989b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856223"
 ---
 # <a name="manage-vspackages"></a>Vspackage を管理します。
 ほとんどの場合は、プロジェクトと項目テンプレートの登録し、パッケージを自動的に読み込むため、Vspackage の管理について心配する必要はありません。 ただし、状況によっては、パッケージを管理するためにさらに詳しくを学習する必要があります。
@@ -27,10 +27,10 @@ ms.locfileid: "56694713"
  実験用インスタンスの詳細についてを参照してください。[実験用インスタンス](../extensibility/the-experimental-instance.md)します。
 
 ## <a name="register-and-unregister-vspackages"></a>登録して、Vspackage の登録解除
- 登録し、Vspackage とその他の種類の拡張機能の登録を解除する方法については、[登録し、Vspackage の登録解除](../extensibility/registering-and-unregistering-vspackages.md)を参照してください。
+ 登録し、Vspackage とその他の種類の拡張機能の登録を解除する方法については、次を参照してください。[登録し、Vspackage の登録解除](../extensibility/registering-and-unregistering-vspackages.md)します。
 
 ## <a name="load-a-vspackage"></a>VSPackage を読み込む
- Vspackage は、autoload 特定 CMDUICONTEXT GUID の電源がオンに設定できます。 詳細については、[ロード Vspackage](../extensibility/loading-vspackages.md)を参照してください。
+ Vspackage は、autoload 特定 CMDUICONTEXT GUID の電源がオンに設定できます。 詳細については、次を参照してください。[ロード Vspackage](../extensibility/loading-vspackages.md)します。
 
 ## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>AsyncPackage を使用して、バック グラウンドで Vspackage を読み込む
  `AsyncPackage`クラスは、Visual Studio での UI の応答性の向上のバック グラウンド スレッドでのパッケージの読み込みを使用できます。 詳細については、「[方法 :AsyncPackage を使用して、バック グラウンドで Vspackage を読み込む](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)します。

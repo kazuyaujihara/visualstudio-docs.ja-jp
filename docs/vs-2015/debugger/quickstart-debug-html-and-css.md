@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1820b1c9838e5558ea6ee96f2abdbcf88a24e4b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446133"
 ---
 # <a name="quickstart-debug-html-and-css"></a>クイック スタート: HTML と CSS をデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  DOM Explorer ではレンダリングされるページのビューが示され、DOM Explorer を使用すると値を変更して結果をすぐに確認できます。 これにより、デバッガーを停止して再起動することなく変更をテストできます。 この方法でページと対話するときはプロジェクトのソース コードは変更されないので、必要なコード修正が見つかったら、ソース コードを変更します。  
   
 > [!TIP]
->  ソース コードを変更する際、デバッガーの停止や再起動を避けるために、[デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタンを使用して (または F4 キーを押して) アプリケーションを更新できます。 詳細については、次を参照してください。[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)します。  
+> ソース コードを変更する際、デバッガーの停止や再起動を避けるために、[デバッグ] ツール バーの **[Windows アプリケーションの更新]** ボタンを使用して (または F4 キーを押して) アプリケーションを更新できます。 詳細については、次を参照してください。[アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)します。  
   
  DOM Explorer を使用すると次のことができます。  
   
@@ -74,12 +74,12 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   アプリケーションをデバッグするときは、しばしば DOM Explorer で要素を選択する必要があります。 要素を選択すると、DOM Explorer の右側のタブに表示される値が、DOM Explorer での要素の選択を反映して自動的に更新されます。 これは、ようなタブ。**スタイル**、**計算**、**レイアウト**します。 Windows ストア アプリでは **[イベント]** タブと **[変更]** タブもサポートされています。 要素の選択の詳細については、「 [Selecting elements](#SelectingElements)」を参照してください。  
   
 > [!TIP]
->  閉じた DOM Explorer ウィンドウを再び開くには、 **[デバッグ]**>**[ウィンドウ]** > **[DOM Explorer]** の順に選びます。 このウィンドウは、スクリプトのデバッグ セッション中にのみ表示されます。  
+> 閉じた DOM Explorer ウィンドウを再び開くには、 **[デバッグ]**>**[ウィンドウ]** > **[DOM Explorer]** の順に選びます。 このウィンドウは、スクリプトのデバッグ セッション中にのみ表示されます。  
   
  次の手順では、DOM Explorer を使用してアプリを対話的にデバッグするプロセスを実行します。 `FlipView` コントロールを使用するアプリケーションを作成した後、それをデバッグします。 アプリケーションには複数のエラーが含まれています。  
   
 > [!WARNING]
->  次のサンプル アプリは Windows ストア アプリです。 Cordova でも同じ機能がサポートされていますが、アプリは異なります。  
+> 次のサンプル アプリは Windows ストア アプリです。 Cordova でも同じ機能がサポートされていますが、アプリは異なります。  
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>次の方法で、ライブ DOM を検査することによってデバッグします。  
   
@@ -183,14 +183,14 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 10. Visual Studio に切り替え、 **[DOM Explorer]** タブをクリックします。  
   
     > [!TIP]
-    >  Alt + Tab キーまたは F12 キーを押すと、Visual Studio と実行中のアプリを切り替えることができます。  
+    > Alt + Tab キーまたは F12 キーを押すと、Visual Studio と実行中のアプリを切り替えることができます。  
   
 11. DOM Explorer ウィンドウで、ID が `"fView"`であるセクションの DIV 要素を選択します。 方向キーを使用して、正しい DIV 要素を表示して選択します。 (右方向キーを使うと、要素の子を表示することができます。)  
   
      ![DOM Explorer](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  また、>> 入力プロンプトで `select(fView)` を入力して Enter キーを押すと、JavaScript コンソール ウィンドウの左下隅の DIV 要素を選べます。  
+    > また、>> 入力プロンプトで `select(fView)` を入力して Enter キーを押すと、JavaScript コンソール ウィンドウの左下隅の DIV 要素を選べます。  
   
      DOM Explorer ウィンドウの右側のタブに表示される値が、DOM Explorer での現在の要素選択を反映して自動的に更新されます。  
   
@@ -209,7 +209,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 15. `width: 100px;height: 100px;`を選択し、Del キー、Enter キーの順に押します。 デバッグ セッションを停止していなくても、Enter キーを押すとすぐに、新しい値がシミュレーターまたは Phone エミュレーターに反映されます。  
   
     > [!IMPORTANT]
-    >  DOM Explorer ウィンドウで属性を更新できるように、 **[スタイル]**、 **[計算済み]**、 **[レイアウト]** の各タブに表示される値も更新できます。 詳細については、次を参照してください。 [DOM Explorer を使用してデバッグの CSS スタイル](../debugger/debug-css-styles-using-dom-explorer.md)と[DOM Explorer を使用してデバッグ レイアウト](../debugger/debug-layout-using-dom-explorer.md)します。  
+    > DOM Explorer ウィンドウで属性を更新できるように、 **[スタイル]**、 **[計算済み]**、 **[レイアウト]** の各タブに表示される値も更新できます。 詳細については、次を参照してください。 [DOM Explorer を使用してデバッグの CSS スタイル](../debugger/debug-css-styles-using-dom-explorer.md)と[DOM Explorer を使用してデバッグ レイアウト](../debugger/debug-layout-using-dom-explorer.md)します。  
   
 16. シミュレーターまたは Phone エミュレーターを選択するか、または Alt + Tab キーを使って、アプリケーションに切り替えます。  
   
@@ -281,7 +281,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   強調表示する要素を選択する場合、シミュレーターでマウス ポインターを置く要素が強調表示されます。 強調表示された要素の色は、DOM Explorer の **[レイアウト]** タブに表示されるボックス モデルと一致します。  
   
 > [!NOTE]
->  Windows Phone エミュレーターは、マウス ポインターを置くことによる要素の強調表示を部分的にサポートします。  
+> Windows Phone エミュレーターは、マウス ポインターを置くことによる要素の強調表示を部分的にサポートします。  
   
  使用して要素を選択する方法を示す例については、 **Select 要素**ボタンをクリックしを参照してください[DOM Explorer を使用してデバッグの CSS スタイル](../debugger/debug-css-styles-using-dom-explorer.md)します。  
   

@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4695e5f866ce9161ca9f90a0f39be441f5d71a44
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421136"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>言語サービスとエディターの拡張機能の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60039215"
  エディターの拡張機能の記述を開始するするには、Visual Studio SDK の一部としてインストールされているエディターのプロジェクト テンプレートを使用します。 Visual Studio SDK は、ダウンロード可能な一連の Vspackage を使用するか、Managed Extensibility Framework (MEF) を使用して、Visual Studio 拡張機能を開発するより簡単にするツールです。  
   
 > [!NOTE]
->  Visual Studio SDK の詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
+> Visual Studio SDK の詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。  
   
  独自のエディター拡張機能を記述する前に、次の概念とテクノロジについて学習することをお勧めします。  
   
@@ -36,7 +36,7 @@ ms.locfileid: "60039215"
  Visual Studio エディターでは、そのコンポーネントおよび拡張機能を管理するのに Managed Extensibility Framework (MEF) を使用します。 MEF では、開発者の詳細について Visual Studio などのホスト アプリケーション用の拡張機能を簡単に作成することもできます。 このフレームワークは、MEF コントラクトに従って拡張機能を定義し、MEF コンポーネントの一部としてエクスポートします。 ホスト アプリケーションは、これらを検索するには、登録、それらが正しいコンテキストに適用されていることを確認して、コンポーネント部分を管理します。  
   
 > [!NOTE]
->  エディターで、MEF の詳細については、次を参照してください。[エディターでの Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)します。  
+> エディターで、MEF の詳細については、次を参照してください。[エディターでの Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)します。  
   
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Visual Studio エディターの拡張ポイントと拡張機能  
  エディターの拡張ポイントは、MEF コンポーネント パーツをカスタマイズして拡張することができます。 場合によっては、拡張機能ポイントを拡張するインターフェイスを実装し、適切なメタデータと共にエクスポートすること。 それ以外の場合だけ拡張機能を宣言し、特定の型としてエクスポートします。  
@@ -61,7 +61,7 @@ ms.locfileid: "60039215"
  コンピューターで拡張機能をインストールするときに、Visual Studio に認識されているフォルダーのサブフォルダーにバイナリと、マニフェストを含めます。  
   
 > [!WARNING]
->  Visual Studio に含まれているエディター拡張機能テンプレートのいずれかを使用する場合は、マニフェストと配置場所の詳細について心配する必要はありません。 テンプレートには、登録して、拡張機能をデプロイするために必要なすべてのものが含まれます。  
+> Visual Studio に含まれているエディター拡張機能テンプレートのいずれかを使用する場合は、マニフェストと配置場所の詳細について心配する必要はありません。 テンプレートには、登録して、拡張機能をデプロイするために必要なすべてのものが含まれます。  
   
 ## <a name="running-extensions-in-the-experimental-instance"></a>実験用インスタンスで拡張機能の実行  
  (Windows Vista および Windows 7) の次の実験的なフォルダーに展開し、拡張機能を開発する際に、Visual Studio の作業バージョンを隔離できます。  
@@ -84,9 +84,9 @@ ms.locfileid: "60039215"
   
  作成することもエディター MEF コンポーネント Visual Studio パッケージの拡張機能から。 詳細については、次のチュートリアルを参照してください。  
   
-- [チュートリアル: エディター拡張機能でシェル コマンドの使用](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+- [チュートリアル: エディター拡張機能でシェル コマンドを使用する](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
-- [チュートリアル: エディター拡張機能でショートカット キーの使用](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+- [チュートリアル: エディター拡張機能でショートカット キーを使用する](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>関連項目  
  [言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)

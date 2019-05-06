@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e06317aa91cf71d109a2e90bc955aa28cc4b4903
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37bba294dde27fad19122ee281057607f6abc6c8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445791"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>ツールおよびツールボックスのカスタマイズ
 
@@ -175,7 +175,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   これらのカスタマイズを実施するためにプログラム コードを準備する必要があります。 どのようなコードを準備する必要があるのかを知るためには、これらのボックスのいずれかをチェックし、[すべてのテンプレートの変換] をクリックして、ソリューションをビルドします。 エラー レポートが生成されます。 エラー レポートをダブルクリックし、追加する必要があるコードを説明しているコメントを確認します。
 
 > [!NOTE]
->  カスタム コードを追加するには、GeneratedCode フォルダー内のコード ファイルとは別のコード ファイルに部分クラス定義を作成します。 作業内容を失わないために、生成されたコード ファイルを編集しないでください。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。
+> カスタム コードを追加するには、GeneratedCode フォルダー内のコード ファイルとは別のコード ファイルに部分クラス定義を作成します。 作業内容を失わないために、生成されたコード ファイルを編集しないでください。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。
 
 #### <a name="creating-custom-connection-code"></a>カスタム接続コードの作成
  各リンク接続ディレクティブで、**ソース ロール ディレクティブ** タブの定義からな型をドラッグできます。 同様に、**ターゲット ロール ディレクティブ**へのタブを定義する型をドラッグできます。 種類ごとに、さらに指定できます (そのリンク接続ディレクティブです) の接続を許可するを設定するかどうか、**カスタム受け入れ**フラグを設定し、余分なコードを指定します。

@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a987b4be3430f2ed8b0562f41b51a94797f96dc4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009339"
 ---
 # <a name="iactivescriptparse"></a>IActiveScriptParse
 Windows スクリプト エンジンをスクリプトに追加する未加工のテキスト コード スクリプトレットを許可またはにより、実行時に評価される式のテキストでは、実装されているか、`IActiveScriptParse`インターフェイス。 これにより、解釈されたスクリプト言語 VBScript などの独立したオーサリング環境がないために別のメカニズム (以外の`IPersist*`)、スクリプト エンジンにスクリプト コードを取得して、さまざまなオブジェクトにスクリプトの断片をアタッチするにはイベント。  

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d9c0f634ce95814ba746325e8efd67228653775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008730"
 ---
 # <a name="work-with-calendar-items"></a>予定表項目を操作します。
   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> クラスには、予定表アイテム関連のタスクを実行するときに使用するメソッドとプロパティが含まれています。
@@ -35,7 +35,7 @@ ms.locfileid: "56612570"
 |予定表フォルダを作成して予定アイテムを追加します。|[方法: カスタムの予定表をプログラムで作成します。](../vsto/how-to-programmatically-create-a-custom-calendar.md)|
 |会議出席依頼を作成して送信します。|[方法: プログラムによって会議出席依頼を作成します。](../vsto/how-to-programmatically-create-a-meeting-request.md)|
 
- Outlook タスクと Outlook オブジェクト モデルの詳細については、[Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)を参照してください。
+ Outlook タスクと Outlook オブジェクト モデルの詳細については、次を参照してください。 [Outlook オブジェクト モデルの概要](../vsto/outlook-object-model-overview.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [連絡先項目を操作します。](../vsto/working-with-contact-items.md)

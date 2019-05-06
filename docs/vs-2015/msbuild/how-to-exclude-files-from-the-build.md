@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0cd59df3b6056040445ac8de79e064a939aff145
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440057"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>方法: ビルドからファイルを除外する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60052560"
     ```  
   
     > [!NOTE]
-    >  両方の属性にパスを指定する必要があります。 ファイルの場所を指定するのに `Include` 属性で絶対パスを使用する場合、`Exclude` 属性においても絶対パスを使用する必要があります。`Include` 属性で相対パスを使用する場合は、`Exclude` 属性においても相対パスを使用する必要があります。  
+    > 両方の属性にパスを指定する必要があります。 ファイルの場所を指定するのに `Include` 属性で絶対パスを使用する場合、`Exclude` 属性においても絶対パスを使用する必要があります。`Include` 属性で相対パスを使用する場合は、`Exclude` 属性においても相対パスを使用する必要があります。  
   
 ## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>条件を使ってビルドの入力からファイルまたはディレクトリを除外する  
  たとえば、デバッグ ビルドには含めるものの、リリース ビルドには含めない項目がある場合には、`Condition` 属性を使用して項目を含める条件を指定できます。  
@@ -127,4 +127,4 @@ ms.locfileid: "60052560"
   
 ## <a name="see-also"></a>関連項目
  [項目](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [方法。ビルドするファイルを選択します。](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](msbuild.md) [方法。ビルドするファイルを選択する](../msbuild/how-to-select-the-files-to-build.md)

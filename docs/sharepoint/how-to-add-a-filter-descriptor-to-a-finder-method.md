@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc6492b52cb739c49bdba9f231ebcda313a66105
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fceb6270aea9da5af1a53adf7560df7dd3702349
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418298"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>方法: Finder メソッドにフィルター記述子を追加します。
   フィルター記述子には、実行する前に、メソッドに値を渡すためのモデルのコンシューマーが有効にします。 詳細については、次を参照してください。[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)します。
@@ -62,7 +62,7 @@ ms.locfileid: "60068666"
      次の例では、指定した注文日の販売注文を返します。
 
     > [!NOTE]
-    >  値を置き換える、`ServerName`フィールドに、サーバーの名前。
+    > 値を置き換える、`ServerName`フィールドに、サーバーの名前。
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]

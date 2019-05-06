@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1bbcbc2411d261b4ddec9423896dc21acc3e0033
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939565"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Office ソリューションでのコントロールにデータをバインドします。
   Microsoft Office Word 文書または Microsoft Office Excel ワークシート上の Windows フォーム コントロールや *ホスト コントロール* を、データ ソースにバインドできます。この場合、コントロールには自動的にデータが表示されます。 アプリケーション レベルのプロジェクトとドキュメント レベルのプロジェクトの両方で、コントロールにデータをバインドできます。

@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b14a374214a605ec718ad60c6942752f3134edd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416725"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>方法: 配置して整理プロジェクト テンプレートと項目テンプレート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60091240"
  **[新しいプロジェクト]** ダイアログ ボックスおよび **[新しい項目の追加]** ダイアログ ボックスには、インストールされたテンプレートやカスタム テンプレートの場所のディレクトリ構造がカテゴリとして反映されます。 これらのディレクトリ構造を変更することにより、自分にとってわかりやすいようにテンプレートを整理できます。  
   
 > [!NOTE]
->  プログラミング言語のレベルでは、新しいカテゴリを作成できません。 新しいカテゴリは、各言語内でのみ作成できます。  
+> プログラミング言語のレベルでは、新しいカテゴリを作成できません。 新しいカテゴリは、各言語内でのみ作成できます。  
   
  特定言語について、インストールされたテンプレートとカスタム テンプレートのディレクトリ構造が異なる場合 (あるフォルダーについて、片方では下位にディレクトリがあり、もう片方ではディレクトリがない場合)、**[新しいプロジェクト]** ダイアログ ボックスでは、すべてのカテゴリをマージしたカテゴリのセットが表示されます。  
   

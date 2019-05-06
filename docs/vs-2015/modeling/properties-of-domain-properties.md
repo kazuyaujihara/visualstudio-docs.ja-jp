@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca7f4e44f1d40256e821091609752b48d8f204d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 372e19b9ebb1253bda28b4c7723a2366c90b7441
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412138"
 ---
 # <a name="properties-of-domain-properties"></a>ドメイン プロパティのプロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58963566"
 A*ドメイン プロパティ*値を保持できるモデル要素の機能です。 たとえば、`Person` ドメイン クラスに `Name` プロパティと `BirthDate` プロパティを指定することができます。 DSL 定義で、ドメイン プロパティは図のドメイン クラス ボックスと DSL エクスプローラーのドメイン クラスの下に一覧表示されます。 詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。  
   
 > [!NOTE]
->  "プロパティ" という用語には 2 つの使用法があります。 A*ドメイン プロパティ*はドメイン クラスで定義する機能です。 DSL の多くの要素がこれに対し、*プロパティ*にリストされています、**プロパティ**DSL 定義でのウィンドウ。 たとえば、すべてのドメイン プロパティは、このトピックで説明するプロパティのセットを持っています。  
+> "プロパティ" という用語には 2 つの使用法があります。 A*ドメイン プロパティ*はドメイン クラスで定義する機能です。 DSL の多くの要素がこれに対し、*プロパティ*にリストされています、**プロパティ**DSL 定義でのウィンドウ。 たとえば、すべてのドメイン プロパティは、このトピックで説明するプロパティのセットを持っています。  
   
  実行時、ユーザーがドメイン クラスのインスタンスを作成すると、ドメイン プロパティの値は [プロパティ] ウィンドウ内と図形上に表示されます。  
   

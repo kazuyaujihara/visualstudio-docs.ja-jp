@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4343515ad96c28c971a1cf2969a3ff9886965950
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800200"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 要素 (Visual Studio テンプレート)
 複数プロジェクトのテンプレートをグループ化します。
@@ -98,4 +98,4 @@ ms.locfileid: "56722994"
 ## <a name="see-also"></a>関連項目
 - [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
-- [方法: 複数プロジェクトのテンプレートを作成します。](../ide/how-to-create-multi-project-templates.md)
+- [方法: 複数プロジェクトのテンプレートを作成する](../ide/how-to-create-multi-project-templates.md)

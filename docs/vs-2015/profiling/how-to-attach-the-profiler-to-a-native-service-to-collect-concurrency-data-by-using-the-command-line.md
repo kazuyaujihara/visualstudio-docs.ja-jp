@@ -9,12 +9,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b9c46631fcd3ada0946748b515366b4f1b3362a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab6e56d6b2d9a953b5549d59ea85049be8cc0306
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432878"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>方法: コマンドラインを使用して同時実行データを収集するネイティブ サービスに、Profiler をアタッチします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,10 +22,10 @@ ms.locfileid: "60070564"
 ここでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールのコマンド ライン ツールを使用して、プロファイラーをネイティブ (C/C++) サービスにアタッチし、サンプリング メソッドによってプロセス データおよびスレッド コンカレンシー データを収集する方法について説明します。  
 
 > [!NOTE]
->  Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 ｢[Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール)」をご覧ください。  
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 ｢[Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール)」をご覧ください。  
 
 > [!NOTE]
->  プロファイリング ツールのコマンド ライン ツールは、Visual Studio インストール ディレクトリの \Team Tools\Performance Tools サブディレクトリにあります。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 コマンド プロンプトでプロファイラーを使用するには、**[コマンド プロンプト]** ウィンドウの PATH 環境変数またはコマンド自体にツールのパスを追加します。 詳細については、「[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)」をご覧ください。  
+> プロファイリング ツールのコマンド ライン ツールは、Visual Studio インストール ディレクトリの \Team Tools\Performance Tools サブディレクトリにあります。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 コマンド プロンプトでプロファイラーを使用するには、**[コマンド プロンプト]** ウィンドウの PATH 環境変数またはコマンド自体にツールのパスを追加します。 詳細については、「[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)」をご覧ください。  
 
  プロファイラーをサービスにアタッチしている間はデータ コレクションを一時停止し、完了後に再開できます。 プロファイル セッションを終了するには、サービスへのプロファイラーのアタッチを解除し、プロファイラーを明示的に終了する必要があります。  
 
@@ -45,7 +45,7 @@ ms.locfileid: "60070564"
      **/start** オプションには次の表の任意のオプションを指定できます。  
 
    > [!NOTE]
-   >  ほとんどのサービスで **/user** オプションおよび **/crosssession** オプションが必要です。  
+   > ほとんどのサービスで **/user** オプションおよび **/crosssession** オプションが必要です。  
 
    |                               オプション                               |                                                                     説明                                                                      |
    |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|

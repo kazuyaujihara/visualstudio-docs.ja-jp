@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824135"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>シナリオ:視覚化およびモデリングを使用して設計を変更する
 
@@ -95,7 +95,7 @@ Team Foundation Server の詳細については、次のトピックを参照し
 
 - [ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)
 
-- [方法: (クラス デザイナー) のプロジェクトにクラス ダイアグラムを追加します。](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [方法: プロジェクトにクラス ダイアグラムを追加する (クラス デザイナー)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 - [Modeling SDK for Visual Studio - ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -383,7 +383,7 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
 クラス デザイナーを使用すると、既存のクラスについての調査や議論の開始点としてコードからクラス図を生成できます。
 
-- [方法: (クラス デザイナー) のプロジェクトにクラス ダイアグラムを追加します。](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [方法: プロジェクトにクラス ダイアグラムを追加する (クラス デザイナー)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>概要:クラス図の長所
  クラス図を使用すると、以下の要素を定義できます。

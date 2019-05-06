@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 94a6f4b69648c94e6530cb28180193e5a74c1265
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432643"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 要素 (Visual Studio テンプレート)
 テンプレートをカテゴリに分類し、 **[新しいプロジェクト]** ダイアログ ボックス、または **[新しい項目の追加]** ダイアログ ボックスでどのように表示させるかを定義します。
@@ -60,7 +60,7 @@ ms.locfileid: "57870581"
 | [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | 省略可能な要素です。<br /><br /> 作成時に、Visual Studio プロジェクト システムがプロジェクトまたは項目の既定の名前を生成するかどうかを指定します。 |
 | [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | 省略可能な要素です。<br /><br /> 一時プロジェクト (Visual Studio 2017 のみ) として、プロジェクトを作成できるかどうかを指定します。 |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | 省略可能な要素です。<br /><br /> 指定するかどうか、**参照**ボタンが表示されます、**新しいプロジェクト**ダイアログ ボックスで新しいプロジェクトが保存されている既定のディレクトリを簡単に変更できるようにします。 |
-| [非表示](../extensibility/hidden-element-visual-studio-templates.md) | 省略可能な要素です。<br /><br /> いずれかで、テンプレートを表示するかどうかを指定します、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。 |
+| [[非表示]](../extensibility/hidden-element-visual-studio-templates.md) | 省略可能な要素です。<br /><br /> いずれかで、テンプレートを表示するかどうかを指定します、**新しいプロジェクト**または**新しい項目の追加** ダイアログ ボックス。 |
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | 省略可能な要素です。<br /><br /> 親カテゴリ内のテンプレートを表示する数を指定します、**新しいプロジェクト** ダイアログ ボックス。 |
 | [LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md) | 省略可能な要素です。 |
 | [LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md) | 省略可能な要素です。<br /><br /> 指定するかどうか、**場所**テキスト ボックスに、**新しいプロジェクト** ダイアログ ボックスが有効になっている、無効になっている、またはプロジェクトのテンプレートの非表示になります。 |

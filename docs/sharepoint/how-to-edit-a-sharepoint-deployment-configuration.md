@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cfaa260b32deb2cb91b27dfcaa910e950ee00752
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffa7923bbe7e8a7b44fec280a5528ab023feed37
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444706"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>方法: SharePoint の配置構成を編集します。
   配置構成を作成または既存の展開構成を変更できます。 たとえば、1 つの手順を実行したり、展開プロセスの手順の順序を変更します。 作成または組み込みおよびプログラムで追加の構成を変更できないために、展開の構成を変更することがあります。
@@ -39,7 +39,7 @@ ms.locfileid: "60093710"
 4. **使用可能な展開手順**ウィンドウで、展開の構成に追加するには、選択する手順を選択、(**>**) ボタンをクリックし、選択し、 **[ok]** ボタンをクリックします。
 
     > [!NOTE]
-    >  配置前コマンドまたは配置後コマンドを構成した場合、次の手順は、カスタマイズされた展開構成に追加する場合にのみを実行します。
+    > 配置前コマンドまたは配置後コマンドを構成した場合、次の手順は、カスタマイズされた展開構成に追加する場合にのみを実行します。
 
 ## <a name="change-the-active-deployment-configuration"></a>アクティブな配置構成を変更します。
 

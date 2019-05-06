@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 572b466907fdbe43c5b9f094b74837ca05d1b212
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966953"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>方法: SharePoint プロジェクトに項目を追加します。
   SharePoint ソリューションには、複数の SharePoint プロジェクト項目を含む 1 つまたは複数のプロジェクトが含まれます。 開くまたは SharePoint ソリューションを作成した後は、これらのプロジェクトを新規または既存の項目を追加できます。 たとえば、default.aspx という名前の既定のフォーム付属して新しいワークフロー プロジェクトが、新規または別のフォームそのフォームを置き換えるか、もう 1 つの ASPX のフォームを追加することができます。

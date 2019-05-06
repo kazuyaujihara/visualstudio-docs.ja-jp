@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1054fa7b884c23edb76248cba17bab41cc64246f
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779312"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030:適切な場所にイベントを使用します
 
@@ -63,4 +63,4 @@ ms.locfileid: "57867433"
 dotnet_code_quality.ca1030.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、[構成 FxCop アナライザー](configure-fxcop-analyzers.md)を参照してください。
+このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。

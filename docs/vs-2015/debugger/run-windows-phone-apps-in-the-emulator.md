@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d9b30dd50838eced1299e4aaae6999c8fb9f0e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442320"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>エミュレーターにおける Windows Phone アプリの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Windows Phone エミュレーターにより仮想化された環境が提供さ
    選択したエミュレーターをすでに実行している場合、アプリは実行中のエミュレーターに配置されて開始されます。 各エミュレーターで一度に実行できるのは、1 つのインスタンスだけです。  
   
 > [!TIP]
->  エミュレーターでアプリをテストしている場合、デバッグ セッションとデバッグ セッションの間もエミュレーターを開いたままにしておいてください。これはアプリを迅速に繰り返して実行できるようにするためです。  
+> エミュレーターでアプリをテストしている場合、デバッグ セッションとデバッグ セッションの間もエミュレーターを開いたままにしておいてください。これはアプリを迅速に繰り返して実行できるようにするためです。  
   
 ### <a name="BKMK_vs"></a> Visual Studio からアプリを実行します。  
   

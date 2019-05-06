@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 04c714576a0207d4168f20a241d6f0c7dd29298c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5c3aa55bfc521521e28686ebb248053350ae14a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438915"
 ---
 # <a name="modules-view---sampling-data"></a>モジュール ビュー - サンプリング データ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54784458"
 サンプリング データのモジュール ビューには、プロファイル データでサンプリングされたパフォーマンス データが、モジュールごとにグループ化されて表示されます。 各モジュールが、階層ツリーのルートです。 モジュールのサンプリングされた関数が、モジュール ノードの下に一覧表示されます。  
   
 > [!NOTE]
->  Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
   
  サンプルの収集時に関数が実行されていた場合 (つまり関数が呼び出し履歴の最上位にあった場合) は、実行されていたソース行および命令アドレスが関数ノードの下に一覧表示されます。 データは行や命令の実行時にソース行または命令ポインターについて収集されるため、行データと命令データの両方の包括値と排他値は常に同じです。  
   

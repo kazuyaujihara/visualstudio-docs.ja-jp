@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a326be363295ed1033d0e91e1675e326a51c9adf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a37ededab38cf27a002117f874d17d6a340000d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429166"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>方法: マネージド コード プロジェクトのコード分析を構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60104318"
 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]と[!INCLUDE[vsPro](../includes/vspro-md.md)]、コード分析の一覧から選択できる*ルール セット*マネージ コード プロジェクトに適用します。 既定の規則セットは Microsoft 最小推奨規則です。 ソリューション内の 1 つのプロジェクトまたはすべてのプロジェクトに別の規則セットを適用することもできます。  
   
 > [!NOTE]
->  ASP.NET Web アプリケーションのルール セットを構成する方法については、次を参照してください。[方法。ASP.NET Web アプリケーションのコード分析を構成する](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)します。  
+> ASP.NET Web アプリケーションのルール セットを構成する方法については、次を参照してください。[方法。ASP.NET Web アプリケーションのコード分析を構成する](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)します。  
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>.NET Framework プロジェクトの規則セットを構成するには  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60104318"
 5. 既定では、外部ツールによって自動的に生成されたコードからの警告はコード分析では報告されません。 生成されたコードからの警告を表示するには、オフ、**結果生成されたコードを表示しない**チェック ボックスをオンします。  
   
     > [!NOTE]
-    >  コード分析のエラーおよび警告がフォームやテンプレートで表示される場合、このオプションを使用しても、生成されたコードからこのエラーおよび警告の出力は抑制されません。 フォームまたはテンプレートのソース コードは表示することも保持することもできます。  
+    > コード分析のエラーおよび警告がフォームやテンプレートで表示される場合、このオプションを使用しても、生成されたコードからこのエラーおよび警告の出力は抑制されません。 フォームまたはテンプレートのソース コードは表示することも保持することもできます。  
   
 6. **この規則セットを実行**ボックスの一覧で、次のいずれかの操作を行います。  
   

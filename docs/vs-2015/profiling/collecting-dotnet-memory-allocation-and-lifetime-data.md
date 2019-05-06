@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c40c2f824518ed00dacc41094c1b567f5de248ae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 68decc73e14f8748d8434e05e50d6d3b48612d40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436769"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>.NET メモリの割り当ておよび有効期間データの収集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60112820"
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
   
  データを収集するには、サンプリングまたはインストルメンテーション プロファイリング メソッドを使用します。  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60112820"
 - インストルメンテーション メソッドを使用すると、プロファイラーでは、インストルメント化されたモジュールで生成された .NET メモリ割り当てとオブジェクトのみが追跡されます。  
   
 > [!IMPORTANT]
->  サンプリング メソッドを使用して .NET メモリ データ (割り当てかオブジェクトの有効期間、またはその両方) を収集している場合、ユーザーが指定したサンプリング イベントはすべて無視され、適切なメモリの割り当てイベントを使用してデータが収集されます。  
+> サンプリング メソッドを使用して .NET メモリ データ (割り当てかオブジェクトの有効期間、またはその両方) を収集している場合、ユーザーが指定したサンプリング イベントはすべて無視され、適切なメモリの割り当てイベントを使用してデータが収集されます。  
   
  .NET メモリ割り当てのプロファイリングを有効にすると、割り当てビューも有効になります。 .NET 有効期間データのプロファイリングを有効にすると、オブジェクトの有効期間ビューも有効になります。 詳細については、「[.NET メモリの割り当てビュー](../profiling/dotnet-memory-allocations-view.md)」と「[オブジェクトの有効期間ビュー](../profiling/object-lifetime-view.md)」を参照してください。  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437678"
 ---
 # <a name="view-dom-event-listeners"></a>DOM イベント リスナーの表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  リスト、**イベント** タブは動的です。 アプリの実行中にイベント リスナーを追加すると、新しいイベント リスナーが一覧に表示されます。 追加とイベント リスナーの削除については、次を参照してください。[をイベント リスナーで問題を解決するためのヒント](#Tips)このトピックの「します。
 
 > [!NOTE]
->  イベント リスナーなど、DOM 要素でないコード要素の`xhr`に表示されない、**イベント**タブ。
+> イベント リスナーなど、DOM 要素でないコード要素の`xhr`に表示されない、**イベント**タブ。
 
 ## <a name="view-event-listeners-for-dom-elements"></a>DOM 要素のイベント リスナーの表示
  この例は、Windows Phone ストア アプリを示します。 ここで説明する DOM Explorer の機能は、Windows ストア アプリでもサポートされます。

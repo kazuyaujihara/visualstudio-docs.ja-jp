@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee7fdc8e7145b1714acf2641eedaef5877abff18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9d113a32622c40c68a030fdbc670ec19c6038de2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432816"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>方法: Windows (ETW) のデータのトレース イベントを収集します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Event Tracing for Windows (ETW) は、プロファイラー ログ カーネル�
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
   
 ### <a name="to-enable-event-trace-providers"></a>イベント トレース プロバイダーを有効にするには  
   

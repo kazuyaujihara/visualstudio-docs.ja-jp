@@ -11,12 +11,12 @@ ms.assetid: 877756c9-4261-43d9-9f32-51bf06b4219f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1d84dd905c09b0bcc19833198b925f66dea245b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 32e4d34ec3d1fbe8753b4185cab76caa77038bd1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434832"
 ---
 # <a name="project-configuration-object"></a>プロジェクト構成オブジェクト
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58975004"
  プロジェクトの構成プロバイダーは、プロジェクト構成を管理します。 環境および他のパッケージをプロジェクトの構成に関する情報を取得、プロジェクトの構成プロバイダーのオブジェクトにアタッチされているインターフェイスの呼び出しにアクセスします。  
   
 > [!NOTE]
->  作成またはソリューションの構成ファイルをプログラムで編集できません。 使用する必要があります`DTE.SolutionBuilder`します。 参照してください[ソリューション構成](../../extensibility/internals/solution-configuration.md)詳細についてはします。  
+> 作成またはソリューションの構成ファイルをプログラムで編集できません。 使用する必要があります`DTE.SolutionBuilder`します。 参照してください[ソリューション構成](../../extensibility/internals/solution-configuration.md)詳細についてはします。  
   
  構成 UI で使用する表示名を発行するプロジェクトを実装する必要があります<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A>します。 環境は<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>の一覧が返されます`IVsCfg`環境の UI に一覧表示する構成とプラットフォームの情報の表示名を取得するのに使用できるポインター。 アクティブな構成とプラットフォームについては、アクティブなソリューション構成に格納されているプロジェクトの構成によって決まります。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A>アクティブ プロジェクトの構成を取得するメソッドを使用できます。  
   
@@ -38,7 +38,7 @@ ms.locfileid: "58975004"
  実装を提供するプロジェクトの環境および他のプロジェクトをプロジェクト構成にアクセスできるようにすることもできますが、`IVsCfgProvider2::GetCfgs`を 1 つまたは複数の構成オブジェクトを返すメソッド。 プロジェクトが実装することも<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>から継承される`IVsProjectCfg`とそれによって`IVsCfg`構成に固有の情報を提供します。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> 追加、削除、およびプロジェクト構成の名前を変更するのには、プラットフォーム、および機能をサポートしています。  
   
 > [!NOTE]
->  Visual Studio は、2 つの構成の種類に制限がなくなりました、多くの構成に関する前提条件の構成を処理するコードが書き込まれませんする必要がありますもことを想定して記述する必要がありますのでをいずれかのみを含むプロジェクト構成は、デバッグまたは製品版のいずれかとは限りません。 これにより、使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A>廃止されています。  
+> Visual Studio は、2 つの構成の種類に制限がなくなりました、多くの構成に関する前提条件の構成を処理するコードが書き込まれませんする必要がありますもことを想定して記述する必要がありますのでをいずれかのみを含むプロジェクト構成は、デバッグまたは製品版のいずれかとは限りません。 これにより、使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A>廃止されています。  
   
  呼び出す`QueryInterface`から返されるオブジェクトで`IVsGetCfgProvider::GetCfgProvider`取得`IVsCfgProvider2`します。 場合`IVsGetCfgProvider`呼び出してが見つからない`QueryInterface`上、`IVsProject3`プロジェクト オブジェクトを呼び出すことによって、構成プロバイダー オブジェクトをアクセスできます`QueryInterface`に対して返されるオブジェクトの階層のルート ブラウザー オブジェクトで`IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)`、または返される構成プロバイダーへのポインター`IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)`します。  
   

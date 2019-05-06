@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d486189b557c0c1146be68e6c0328cb49d5ed291
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6e8b7242fcd82db1a0cfb82cf6cd6df5a9f75084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435423"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232:Windows フォームのエントリ ポイントを STAThread に設定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58977635"
  <xref:System.STAThreadAttribute> COM アプリケーションのモデルのスレッドがシングル スレッド アパートメントであることを示します。 この属性は、Windows フォームを使用するすべてのアプリケーションのエントリ ポイントに指定する必要があります。省略すると、Windows コンポーネントが正常に機能しないことがあります。 属性が存在しない場合、アプリケーションは、Windows フォームのサポートされていないマルチ スレッド アパートメント モデルを使用します。
 
 > [!NOTE]
->  [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] アプリケーション フレームワークを使用するプロジェクトをマークする必要はありません、 **Main**メソッドを stathread に設定します。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]コンパイラが自動的にことができます。
+> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] アプリケーション フレームワークを使用するプロジェクトをマークする必要はありません、 **Main**メソッドを stathread に設定します。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]コンパイラが自動的にことができます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  このルールの違反を修正するには、追加、<xref:System.STAThreadAttribute>エントリ ポイントに属性します。 場合、<xref:System.MTAThreadAttribute?displayProperty=fullName>属性が存在する、それを削除します。

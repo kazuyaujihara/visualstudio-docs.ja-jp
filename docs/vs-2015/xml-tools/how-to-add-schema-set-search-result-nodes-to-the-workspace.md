@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f14fb52294fc06340f0e179a324d21ec3ecbbb5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4fc312d4120ef8d1d0f2deb5acd3ce581e878570
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447115"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>方法: スキーマ セットの検索結果のノードをワークスペースに追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60116822"
 このトピックでは、キーワード検索の結果、XML スキーマ エクスプローラーに強調表示されたノードをワークスペースに追加する方法について説明します。  
   
 > [!NOTE]
->  グローバル ノードだけを追加することができます、[ワークスペース](../xml-tools/xml-schema-designer-workspace.md)します。  
+> グローバル ノードだけを追加することができます、[ワークスペース](../xml-tools/xml-schema-designer-workspace.md)します。  
   
  この例は、サンプルを使用して[購買発注書スキーマ](../xml-tools/sample-xsd-file-purchase-order-schema.md)します。  
   

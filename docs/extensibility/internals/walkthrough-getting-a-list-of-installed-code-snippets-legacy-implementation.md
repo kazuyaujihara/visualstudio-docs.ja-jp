@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4635030dad4b43aa27294c8425a70d3f53e5715e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 910ee20cf08c1d5a42e6b6a430f7b51ccddf4925
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429374"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>チュートリアル: インストールされているコード スニペットの一覧の取得 (従来の実装)
 コード スニペットは、(これにより、インストールされているコード スニペットの一覧の中から選択) メニューのコマンドを使用して、または、元のバッファーに挿入できるコードの IntelliSense のコンプリート リストから、スニペット ショートカットを選択します。
@@ -106,7 +106,7 @@ ms.locfileid: "60056849"
 1. 次のメソッドを呼び出す方法を示しています、`GetSnippets`解析操作の完了時のメソッド。 <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>解析操作の理由で開始された後、メソッドが呼び出された<xref:Microsoft.VisualStudio.Package.ParseReason>します。
 
 > [!NOTE]
->  `expansionsList`配列リストでは、パフォーマンス上の理由がキャッシュされます。 一覧には、言語サービスを停止して再度読み込むまで、スニペットへの変更は反映されません (停止して再起動をなど[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)])。
+> `expansionsList`配列リストでは、パフォーマンス上の理由がキャッシュされます。 一覧には、言語サービスを停止して再度読み込むまで、スニペットへの変更は反映されません (停止して再起動をなど[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)])。
 
 ```csharp
 class TestLanguageService : LanguageService

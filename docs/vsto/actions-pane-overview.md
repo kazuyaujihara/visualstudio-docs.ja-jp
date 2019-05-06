@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7c088078ce594ab1333eb4ec2316e120cc153ced
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440382"
 ---
 # <a name="actions-pane-overview"></a>操作ウィンドウの概要
   操作ウィンドウは、カスタマイズ可能な**ドキュメント アクション**特定の Microsoft Office Word ドキュメントまたは Microsoft Office Excel ブックに関連付けられている作業ウィンドウ。 [操作] ウィンドウがなどの他の組み込み作業ウィンドウと Office 作業ウィンドウ内でホストされる、 **XML ソース**Excel での作業ウィンドウ、または**スタイルと書式**Word 作業ウィンドウ。 操作ウィンドウのユーザー インターフェイスは、Windows フォーム コントロールまたは WPF コントロールを使用してデザインできます。
@@ -30,7 +30,7 @@ ms.locfileid: "60099742"
  操作ウィンドウは、Word または Excel のドキュメント レベルのカスタマイズ内でのみ作成できます。 VSTO アドイン内に操作ウィンドウを作成することはできません。 詳細については、「[Office アプリケーションおよびプロジェクトの種類で使用できる機能](../vsto/features-available-by-office-application-and-project-type.md)」を参照してください。
 
 > [!NOTE]
->  カスタム作業ウィンドウは、操作ウィンドウとは異なります。 カスタム作業ウィンドウは、特定のドキュメントではなく、アプリケーションに関連付けられます。 カスタム作業ウィンドウは、一部の Microsoft Office アプリケーション向けの VSTO アドインで作成できます。 詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
+> カスタム作業ウィンドウは、操作ウィンドウとは異なります。 カスタム作業ウィンドウは、特定のドキュメントではなく、アプリケーションに関連付けられます。 カスタム作業ウィンドウは、一部の Microsoft Office アプリケーション向けの VSTO アドインで作成できます。 詳細については、次を参照してください。[カスタム作業ウィンドウ](../vsto/custom-task-panes.md)します。
 
  ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How do i:。Excel の操作ウィンドウ内での WPF コントロールを使用しますか](http://go.microsoft.com/fwlink/?LinkId=132763)。
 
@@ -50,7 +50,7 @@ ms.locfileid: "60099742"
 2. デザイナーを使用するか、またはコードを記述して、Windows フォーム コントロールを <xref:System.Windows.Forms.UserControl> に追加します。
 
    > [!NOTE]
-   >  また、WPF の <xref:System.Windows.Controls.UserControl> を Windows フォーム <xref:System.Windows.Forms.UserControl> に追加することにより、WPF コントロールを操作ウィンドウに追加することもできます。 詳細については、次を参照してください。 [Office ソリューションでコントロールを使用して WPF](../vsto/using-wpf-controls-in-office-solutions.md)します。
+   > また、WPF の <xref:System.Windows.Controls.UserControl> を Windows フォーム <xref:System.Windows.Forms.UserControl> に追加することにより、WPF コントロールを操作ウィンドウに追加することもできます。 詳細については、次を参照してください。 [Office ソリューションでコントロールを使用して WPF](../vsto/using-wpf-controls-in-office-solutions.md)します。
 
 3. カスタム ユーザー コントロールのインスタンスを、プロジェクトの `ThisWorkbook` クラス (Excel の場合) または `ThisDocument` クラス (Word の場合) の `ActionsPane` フィールドに含まれるコントロールに追加します。
 
@@ -141,7 +141,7 @@ ms.locfileid: "60099742"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
->  エンド ユーザーは、作業ウィンドウの位置を手動でいつでも変更できます。 プログラムで指定した位置に作業ウィンドウを常にドッキングしておくことはできません。 ただし、向きの変更を確認し、操作ウィンドウ上のコントロールが正しい方向で積み重ねられるようにすることは可能です。 詳細については、「[方法 :アクション ペイン上のコントロールのレイアウトを管理](../vsto/how-to-manage-control-layout-on-actions-panes.md)します。
+> エンド ユーザーは、作業ウィンドウの位置を手動でいつでも変更できます。 プログラムで指定した位置に作業ウィンドウを常にドッキングしておくことはできません。 ただし、向きの変更を確認し、操作ウィンドウ上のコントロールが正しい方向で積み重ねられるようにすることは可能です。 詳細については、「[方法 :アクション ペイン上のコントロールのレイアウトを管理](../vsto/how-to-manage-control-layout-on-actions-panes.md)します。
 
  設定、<xref:Microsoft.Office.Tools.ActionsPane.Top%2A>と<xref:Microsoft.Office.Tools.ActionsPane.Left%2A>のプロパティ、<xref:Microsoft.Office.Tools.ActionsPane>の位置を変更しないため、<xref:Microsoft.Office.Tools.ActionsPane>オブジェクトが作業ウィンドウに埋め込まれています。
 

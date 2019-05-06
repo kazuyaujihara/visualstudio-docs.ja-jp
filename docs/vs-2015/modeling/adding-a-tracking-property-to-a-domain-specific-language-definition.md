@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b2b3f87084d4bb1a64f2c43f860c7b8bcaae64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432386"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>ドメイン固有言語の定義への追跡プロパティの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ ms.locfileid: "60070486"
  実装、`GetCustomProperties`メソッドの型記述子の`ExampleModel`ドメイン クラス。  
   
 > [!NOTE]
->  カスタム型記述子の DSL Tools を生成するコード`ExampleModel`呼び出し`GetCustomProperties`。 ただし、DSL ツールは、メソッドを実装するコードを生成できません。  
+> カスタム型記述子の DSL Tools を生成するコード`ExampleModel`呼び出し`GetCustomProperties`。 ただし、DSL ツールは、メソッドを実装するコードを生成できません。  
   
  このメソッドを定義する、追跡の作成、Namespace プロパティの追跡のプロパティ記述子。 有効に、トラッキング プロパティの属性を提供する、**プロパティ**プロパティを正しく表示するウィンドウ。  
   
@@ -344,7 +344,7 @@ ms.locfileid: "60070486"
  実装、`GetCustomElementsValue`のメソッド、`ExampleModel`ドメイン クラス。  
   
 > [!NOTE]
->  DSL Tools を生成するコード`ExampleModel`呼び出し`GetCustomElementsValue`。 ただし、DSL ツールは、メソッドを実装するコードを生成できません。  
+> DSL Tools を生成するコード`ExampleModel`呼び出し`GetCustomElementsValue`。 ただし、DSL ツールは、メソッドを実装するコードを生成できません。  
   
  定義する、`GetCustomElementsValue`メソッドの計算 CustomElements プロパティのロジックを提供する`ExampleModel`します。 このメソッドの数をカウントする`ExampleElement`追跡プロパティを持つユーザーが更新された値では、モデル内の合計の要素の割合としてこの数を表す文字列を返します Namespace のドメイン クラス。  
   
@@ -425,7 +425,7 @@ ms.locfileid: "60070486"
  また、追加、記憶域とメソッドを取得および設定を Namespace カスタム ストレージ プロパティの`ExampleElement`ドメイン クラス。  
   
 > [!NOTE]
->  DSL Tools を生成するコード`ExampleModel`get を呼び出すメソッドと set メソッドです。 ただし、DSL ツールがメソッドを実装するコードを生成しません。  
+> DSL Tools を生成するコード`ExampleModel`get を呼び出すメソッドと set メソッドです。 ただし、DSL ツールがメソッドを実装するコードを生成しません。  
   
 #### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>カスタム型記述子のメソッドを追加するには  
   
@@ -591,7 +591,7 @@ ms.locfileid: "60070486"
  XML シリアル化のカスタムの読み込み後の動作をサポートするためにコードを追加します。  
   
 > [!NOTE]
->  DSL ツールが呼び出しを生成するコード、`OnPostLoadModel`と`OnPostLoadModelAndDiagram`メソッドです。 ただし、DSL ツールがこれらのメソッドを実装するコードを生成しません。  
+> DSL ツールが呼び出しを生成するコード、`OnPostLoadModel`と`OnPostLoadModelAndDiagram`メソッドです。 ただし、DSL ツールがこれらのメソッドを実装するコードを生成しません。  
   
 #### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>カスタムの読み込み後の動作をサポートするコードを追加するには  
   

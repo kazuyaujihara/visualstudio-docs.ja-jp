@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c92f5cd8f268b249e8f29ddd706860ff18b2f87c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03c039d0059e3e5768681ece9bb547b0f4eb7783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432759"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>方法: プロファイリング ツールのコール トレース レポートを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60117825"
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールの*コール トレース レポート*は、アプリケーションの関数に対する各エントリ ポイントと終了ポイント、および実行中の関数から他の関数に対する各呼び出しのタイミング情報を一覧表示します。 コール トレース レポートをデータのプロファイリングに使用できるのは、インストルメンテーション メソッドで収集された場合だけです。  
   
 > [!NOTE]
->  コール トレース レポートを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で表示することはできません。 コンマ区切り値 (.csv) ファイルまたは XML ファイルを生成するには、**VSPerfReport** のコマンド ライン ツールを使用する必要があります。 このツールの詳細については、「[VSPerfReport](../profiling/vsperfreport.md)」を参照してください。  
+> コール トレース レポートを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で表示することはできません。 コンマ区切り値 (.csv) ファイルまたは XML ファイルを生成するには、**VSPerfReport** のコマンド ライン ツールを使用する必要があります。 このツールの詳細については、「[VSPerfReport](../profiling/vsperfreport.md)」を参照してください。  
   
 ### <a name="to-create-a-call-trace-report"></a>コール トレース レポートを作成するには  
   

@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1a5f2b2fa8c2ff39b0a7ec3e982145567602ab10
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58973119"
@@ -28,7 +28,7 @@ ms.locfileid: "58973119"
 |アクセス修飾子|ドメイン クラスのアクセスのレベル (`public` または `internal`)。|`public`|  
 |カスタム属性|このドメイン クラスから生成されるソース コードのクラスに属性を追加するために使用します。|\<none>|  
 |Double 型を生成します派生。|場合`True`、基底クラスと (オーバーライドによってカスタマイズをサポート) する部分クラスの両方が生成されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|`False`|  
-|カスタム コンス トラクターがあります。|場合`True`、カスタム コンス トラクターは、ソース コードで提供されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|`False`|  
+|カスタム コンストラクターがあります。|場合`True`、カスタム コンストラクターは、ソース コードで提供されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|`False`|  
 |継承修飾子|ドメイン クラスから生成されるソース コードのクラスの継承の種類について説明します (`none`、`abstract`または`sealed`)。|`none`|  
 |基本クラス|このドメイン クラスが派生の場合、基底クラスの名前。|\<none>|  
 |名前|このドメイン クラスの名前。|現在の名前|  

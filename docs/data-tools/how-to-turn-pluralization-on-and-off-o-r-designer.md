@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 34b25be50cee681ee9c45e446d86a6054099926b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 769d1760692cad6a6b813ece16d69f4abd3d26b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402776"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>方法: 複数形化をオンおよびオフにする (O/R デザイナー)
 既定で s または ies からで終わる名前を持つデータベース オブジェクトをドラッグすると、**サーバー エクスプ ローラー**または**データベース エクスプ ローラー**上に、 [Visual Studio での LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)、生成されたエンティティ クラスの名前は、複数形から単数形に変更が。 この処理は、インスタンス化されたエンティティ クラスが単一のデータ レコードにマップされるという事実をより正確に表すために行われます。 などの追加、`Customers`テーブル、 **O/R デザイナー**という名前のエンティティ クラスに`Customer`クラスは、単一の顧客のみのデータを保持するためです。
 
 > [!NOTE]
->  複数形化は、英語バージョンの Visual Studio でのみ、既定でオンになります。
+> 複数形化は、英語バージョンの Visual Studio でのみ、既定でオンになります。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "60103746"
 2. **[オプション]** ダイアログ ボックスの **[データベース ツール]** を展開します。
 
     > [!NOTE]
-    >  **[データベース ツール]** ノードが表示されない場合は、**[すべての設定を表示]** を選択します。
+    > **[データベース ツール]** ノードが表示されない場合は、**[すべての設定を表示]** を選択します。
 
 3. **[O/R デザイナー]** をクリックします。
 

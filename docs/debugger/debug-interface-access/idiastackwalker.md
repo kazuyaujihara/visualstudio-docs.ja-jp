@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5ad74f92765ee449eab1e3089511a063e70d96a0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831934"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 .Pdb ファイルに情報を使用してスタックの操作を行う方法の説明を提供します。
@@ -36,7 +36,7 @@ IDiaStackWalker: IUnknown
 |[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|X86 スタック フレームの列挙子を取得します。 プラットフォーム。|
 |[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|特定のプラットフォームの種類のスタック フレームの列挙子を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 このインターフェイスは、読み込まれたモジュールのスタック フレームの一覧の取得に使用されます。 各メソッドに渡される、 [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) (クライアント アプリケーションによって実装される) のスタック フレームのリストを作成するために必要な情報を提供するオブジェクト。
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
@@ -59,8 +59,8 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="requirements"></a>要件
-ヘッダー: Dia2.h
+## <a name="requirements"></a>必要条件
+ヘッダー:Dia2.h
 
 ライブラリ: diaguids.lib
 

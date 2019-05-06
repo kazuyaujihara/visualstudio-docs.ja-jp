@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ebfffcfbb1798422e09833faf6f5074f8f93ea5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1d8f5251f61b8c513c58f5165fbaecbb9d5f00f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437294"
 ---
 # <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_objectPointerType ( 
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
   
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
   
 ## <a name="remarks"></a>Remarks  
  このプロパティを使用したシンボルにのみ適用されます、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)の入力`SymTagFunctionType`します。  

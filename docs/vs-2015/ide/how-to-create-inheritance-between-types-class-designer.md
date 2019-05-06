@@ -14,12 +14,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c0e8594014848bee103c65127b5edb7ad969284
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80d4ebe992a3406a4e8c54b033cd4f526335231b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416971"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>方法: 型の間の継承を作成する (クラス デザイナー) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60104698"
 4. 必要に応じて、ジェネリック型からの派生型がある場合に、継承線をクリックします。 **[プロパティ]** ウィンドウで、ジェネリック型に必要な型と一致するように **[型の引数]** プロパティを設定します。  
   
     > [!NOTE]
-    >  親抽象クラスに少なくとも 1 つの抽象メンバーが含まれている場合、すべての抽象メンバーは非抽象継承クラスとして実装されます。   
+    > 親抽象クラスに少なくとも 1 つの抽象メンバーが含まれている場合、すべての抽象メンバーは非抽象継承クラスとして実装されます。   
     >   
     >  既存のジェネリック型を視覚化できますが、新しいジェネリック型は作成できません。 また、既存のジェネリック型の型パラメーターは変更できません。  
   

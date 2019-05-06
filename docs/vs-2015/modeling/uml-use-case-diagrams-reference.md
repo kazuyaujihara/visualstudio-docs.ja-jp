@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 256489e41c769452f9505f95ec64ec9aee853c67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 45f8d742af1cd6a0ed73f3beda24e829b417e81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424312"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>UML ユース ケース図:参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Visual Studio で、*ユース ケース図*アプリケーションまたはシ
  この機能をサポートする Visual Studio のバージョンを確認するには、「 [アーキテクチャ ツールとモデリング ツールのバージョン サポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。  
   
 > [!NOTE]
->  このトピックでは、ユース ケース図で使用可能な要素について説明します。 ユース ケース図を描画する方法の詳細については、次を参照してください。 [UML ユース ケース図。ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)します。 作成し、モデリング図を描画する方法の詳細については、次を参照してください。[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
+> このトピックでは、ユース ケース図で使用可能な要素について説明します。 ユース ケース図を描画する方法の詳細については、次を参照してください。 [UML ユース ケース図。ガイドライン](../modeling/uml-use-case-diagrams-guidelines.md)します。 作成し、モデリング図を描画する方法の詳細については、次を参照してください。[編集 UML モデルと図](../modeling/edit-uml-models-and-diagrams.md)します。  
   
 ## <a name="reading-use-case-diagrams"></a>ユース ケース図の解説  
  次のセクションの表では、ユース ケース図で使用できる要素と、それらの主要なプロパティについて説明します。 プロパティの一覧については、次を参照してください。 [UML 要素のプロパティのユース ケース図](../modeling/properties-of-elements-on-uml-use-case-diagrams.md)します。  

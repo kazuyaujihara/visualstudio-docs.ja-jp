@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386001"
 ---
 # <a name="hierarchical-update"></a>階層更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60063401"
  更新プログラムを実行する順序を設定するデータセットのすべてのテーブルで変更されたすべてのデータを保存する個々 の注文を挿入、更新、および削除したセットが必要です。 階層更新が有効な場合、まず挿入が実行され、次に更新、削除の順で実行されます。 `TableAdapterManager` には、更新、挿入、削除の順に実行できる `UpdateOrder` プロパティも用意されています。  
   
 > [!NOTE]
->  更新順序は、すべてが含まれているかを理解しておく必要があります。 つまり、更新プログラムが実行されると、挿入、および削除の後は、データセット内のすべてのテーブルに対して実行されます。  
+> 更新順序は、すべてが含まれているかを理解しておく必要があります。 つまり、更新プログラムが実行されると、挿入、および削除の後は、データセット内のすべてのテーブルに対して実行されます。  
   
  設定する、`UpdateOrder`から項目をドラッグした後、プロパティ、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)、フォームに次のように選択します、`TableAdapterManager`コンポーネント トレイ、および設定して、`UpdateOrder`プロパティ、 **プロパティ。** ウィンドウ。 詳細については、「[方法 :階層更新を実行するときに、順序を設定](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)します。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60063401"
  ただし、バックアップ コピーからデータセットを復元することもできます。 この 1 つの例には、自動インクリメント値を使用している場合があります。 たとえば、保存操作が成功しなかった、自動インクリメント値は、データセットではリセットされませんおよび自動インクリメント値を作成するデータセットが続行されます。これには、アプリケーションで許容されることができない可能性がある番号付けギャップが残されます。 これが問題となる状況では、`TableAdapterManager` に備わっている `BackupDataSetBeforeUpdate` プロパティを使用して、トランザクションが失敗した場合に既存のデータセットをバックアップ コピーと置き換えることができます。  
   
 > [!NOTE]
->  バックアップ コピーは、中にメモリ内にのみ、`TableAdapterManager.UpdateAll`メソッドが実行されています。 そのためはこのバックアップ データセットにプログラムでアクセス元のデータセットを置き換えるかスコープから外れるのですぐ、`TableAdapterManager.UpdateAll`メソッドの実行が完了します。  
+> バックアップ コピーは、中にメモリ内にのみ、`TableAdapterManager.UpdateAll`メソッドが実行されています。 そのためはこのバックアップ データセットにプログラムでアクセス元のデータセットを置き換えるかスコープから外れるのですぐ、`TableAdapterManager.UpdateAll`メソッドの実行が完了します。  
   
 ## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>階層更新を実行するコードを保存、生成された変更します。  
  データセットでの関連データ テーブルへの変更をデータベースに保存するには、`TableAdapterManager.UpdateAll` メソッドを呼び出し、関連テーブルが含まれるデータセットの名前を渡します。 たとえば、NorthwindDataset 内のすべてのテーブルの更新をバックエンドのデータベースに送信するには、`TableAdapterManager.UpdateAll(NorthwindDataset)` メソッドを実行します。  
@@ -81,7 +81,7 @@ ms.locfileid: "60063401"
  生成された保存コードには、`CustomersBindingSource.EndEdit` メソッドを呼び出すコード行も含まれています。 具体的には、呼び出し、<xref:System.Windows.Forms.BindingSource.EndEdit%2A>最初のメソッド<xref:System.Windows.Forms.BindingSource>フォームに追加されています。 つまり、このコードはからドラッグされる最初のテーブルの生成のみ、**データソース**ウィンドウから、フォームにします。 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼び出しは、現在編集中のデータ バインド コントロールで実行されている変更をコミットします。 したがって、あるデータ バインド コントロールにフォーカスがある状態で **[保存]** ボタンをクリックすると、実際の保存 (`TableAdapterManager.UpdateAll` メソッド) が実行される前に、そのコントロール内のすべての保留中の編集がコミットされます。  
   
 > [!NOTE]
->  データセット デザイナーが追加されるだけ、`BindingSource.EndEdit`がフォームにドロップされる最初のテーブルのコード。 したがって、フォーム上の各関連テーブルに対して、`BindingSource.EndEdit` メソッドを呼び出すコード行を手動で追加する必要があります。 つまり、このチュートリアルでも、`OrdersBindingSource.EndEdit` メソッドの呼び出しを追加する必要があります。  
+> データセット デザイナーが追加されるだけ、`BindingSource.EndEdit`がフォームにドロップされる最初のテーブルのコード。 したがって、フォーム上の各関連テーブルに対して、`BindingSource.EndEdit` メソッドを呼び出すコード行を手動で追加する必要があります。 つまり、このチュートリアルでも、`OrdersBindingSource.EndEdit` メソッドの呼び出しを追加する必要があります。  
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>保存前に、関連テーブルへの変更をコミットするコードを更新するには  
   
@@ -95,7 +95,7 @@ ms.locfileid: "60063401"
    データベースにデータを保存する前に関連子テーブルに対する変更をコミットするだけでなく、新しい子レコードをデータセットに追加する前に、新しく作成された親レコードをコミットすることが必要な場合もあります。 つまり、外部キー制約により、新しい子レコード (Orders) をデータセットに追加する前に、データセットに新しい親レコード (Customer) を追加することが必要な場合もあります。 この操作を行うには、子 `BindingSource.AddingNew` イベントを使用します。  
   
 > [!NOTE]
->  新しい親レコードをコミットする必要があるかどうかは、データ ソースにバインドするために使用されるコントロールの種類によって異なります。 このチュートリアルでは、親テーブルにバインドする個々 のコントロールを使用します。 これには、新しい親レコードをコミットするコードを追加が必要です。 親レコードは、複雑なバインド コントロールに代わりに表示されていた場合と同様、<xref:System.Windows.Forms.DataGridView>この追加<xref:System.Windows.Forms.BindingSource.EndEdit%2A>呼び出しの親レコードは必要ありません。 これは、コントロールの基になるデータ バインディング機能によって、新しいレコードのコミットが行われるためです。  
+> 新しい親レコードをコミットする必要があるかどうかは、データ ソースにバインドするために使用されるコントロールの種類によって異なります。 このチュートリアルでは、親テーブルにバインドする個々 のコントロールを使用します。 これには、新しい親レコードをコミットするコードを追加が必要です。 親レコードは、複雑なバインド コントロールに代わりに表示されていた場合と同様、<xref:System.Windows.Forms.DataGridView>この追加<xref:System.Windows.Forms.BindingSource.EndEdit%2A>呼び出しの親レコードは必要ありません。 これは、コントロールの基になるデータ バインディング機能によって、新しいレコードのコミットが行われるためです。  
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>データセットで新しい子レコードを追加する前に親レコードをコミットするコードを追加するには  
   

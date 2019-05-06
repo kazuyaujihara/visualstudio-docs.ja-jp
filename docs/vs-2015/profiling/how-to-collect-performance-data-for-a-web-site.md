@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432798"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>方法: Web サイトのパフォーマンス データを収集します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60060555"
 **パフォーマンス ウィザード** を使用して、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションのパフォーマンス データを収集できます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で開かれた Web アプリケーションをプロファイリングすることも、ローカル コンピューターに置かれ、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE で開かれていない [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web サイトをプロファイリングすることもできます。  
   
 > [!NOTE]
->  **パフォーマンス ウィザード** を使用して、階層の相互作用(TIP) データ、JScript パフォーマンス データ、または両方を追加してプロファイル データを収集することができます。 TIP オプションは、サーバー側のプロセスからデータを収集します。 JScript プロファイリングは、ローカルまたはリモートの Web サイトで実行されているスクリプトからデータを収集します。 ほとんどの場合、1 つのオプションのみを選択する必要があります。  
+> **パフォーマンス ウィザード** を使用して、階層の相互作用(TIP) データ、JScript パフォーマンス データ、または両方を追加してプロファイル データを収集することができます。 TIP オプションは、サーバー側のプロセスからデータを収集します。 JScript プロファイリングは、ローカルまたはリモートの Web サイトで実行されているスクリプトからデータを収集します。 ほとんどの場合、1 つのオプションのみを選択する必要があります。  
   
  管理者が使用可能にしたユーザー アクセス許可の設定に応じて、個々のユーザーは、ASP.NET プロセスをホストしているコンピューター上でプロファイラー セッションを作成するためのセキュリティ アクセス許可を持っている場合もあれば持っていない場合もあります。 次の例では、考えられるユーザーごとの違いについて説明します。  
   

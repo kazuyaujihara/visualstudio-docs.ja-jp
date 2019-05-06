@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ae44f7d4631316fc1250a79b9a8424c3731f1329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431231"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>方法: 追加およびパッケージング エクスプ ローラーを使用して、フィーチャーおよびパッケージに項目を削除
   SharePoint プロジェクト項目およびフィーチャーを配置するパッケージを構成するには、パッケージング エクスプ ローラーを使用できます。 .Wsp ファイル内では、SharePoint プロジェクト項目と機能を調整できます。
@@ -51,7 +51,7 @@ ms.locfileid: "60104461"
     - 機能のショートカット メニューを開き、選択**切り取り**の機能 を選択しプロジェクトのショートカット メニューを開き**貼り付け**します。
 
     > [!NOTE]
-    >  ソリューションには、複数の SharePoint プロジェクトがある場合は、この手順を使用します。
+    > ソリューションには、複数の SharePoint プロジェクトがある場合は、この手順を使用します。
 
 ## <a name="validate-a-feature-or-package"></a>機能またはパッケージを検証します。
  ファイルを検証することで、SharePoint のフィーチャーおよびパッケージ内の潜在的な問題を特定できます。 出力ウィンドウおよびエラー一覧 ウィンドウには、警告とエラーが表示されます。

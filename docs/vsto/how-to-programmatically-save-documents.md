@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 965f8d9661d30d23365fe324f7102e15fafec77c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0e455df89a3dfece2c5d4c8cd36a26af816f720a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419471"
 ---
 # <a name="how-to-programmatically-save-documents"></a>方法: プログラムによってドキュメントを保存します。
   Microsoft Office Word 文書を保存するいくつかの方法はあります。 ドキュメントを保存するには、ドキュメントの名前を変更することがなく、または新しい名前を持つ文書を保存することができます。
@@ -54,14 +54,14 @@ ms.locfileid: "60056277"
  新しい名前を持つドキュメントを保存するのにには、SaveAs メソッドを使用します。 このメソッドを使用することができます、<xref:Microsoft.Office.Tools.Word.Document>またはネイティブのドキュメント レベルの Word プロジェクトでホスト項目<xref:Microsoft.Office.Interop.Word.Document>すべての Word プロジェクトでのオブジェクト。 このメソッドは、その他の引数は省略可能ですが、新しいファイル名を指定する必要があります。
 
 > [!NOTE]
->  表示する場合、 **SaveAs**  ダイアログ ボックスの内側、<xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>イベント ハンドラーの`ThisDocument`設定と、*キャンセル*パラメーターを**false**アプリケーションの可能性があります予期せず終了します。 設定した場合、*キャンセル*パラメーターを**true**、自動保存が無効になっていることを示すエラー メッセージが表示されます。
+> 表示する場合、 **SaveAs**  ダイアログ ボックスの内側、<xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave>イベント ハンドラーの`ThisDocument`設定と、*キャンセル*パラメーターを**false**アプリケーションの可能性があります予期せず終了します。 設定した場合、*キャンセル*パラメーターを**true**、自動保存が無効になっていることを示すエラー メッセージが表示されます。
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>新しい名前でドキュメント レベルのカスタマイズに関連付けられているドキュメントを保存するには
 
 1. 呼び出す、<xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A>のメソッド、`ThisDocument`完全修飾パスとファイル名を使用して、プロジェクト内のクラス。 指定した名前のファイルが既に対象のフォルダー内に存在する場合、そのファイルは警告なしで上書きされます。 このコード例を使用するには、 `ThisDocument` クラスからコードを実行します。
 
     > [!NOTE]
-    >  <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A>ターゲット ディレクトリが存在しない場合、またはファイルを保存する他の問題がある場合、メソッドが例外をスローします。 使用することをお勧め、 **try… catch**ブロックの周囲、<xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A>メソッドまたは呼び出し元のメソッド内で。
+    > <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A>ターゲット ディレクトリが存在しない場合、またはファイルを保存する他の問題がある場合、メソッドが例外をスローします。 使用することをお勧め、 **try… catch**ブロックの周囲、<xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A>メソッドまたは呼び出し元のメソッド内で。
 
      [!code-vb[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#10)]
@@ -73,7 +73,7 @@ ms.locfileid: "60056277"
      次のコード例では、新しい名前で、アクティブなドキュメントを保存します。 このコード例を使用するには、プロジェクトの `ThisDocument` クラスまたは `ThisAddIn` クラスからコードを実行します。
 
     > [!NOTE]
-    >  <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>ターゲット ディレクトリが存在しない場合、またはファイルを保存する他の問題がある場合、メソッドが例外をスローします。 使用することをお勧め、 **try… catch**ブロックの周囲、<xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>メソッドまたは呼び出し元のメソッド内で。
+    > <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>ターゲット ディレクトリが存在しない場合、またはファイルを保存する他の問題がある場合、メソッドが例外をスローします。 使用することをお勧め、 **try… catch**ブロックの周囲、<xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>メソッドまたは呼び出し元のメソッド内で。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#10)]

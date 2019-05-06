@@ -1,5 +1,5 @@
 ---
-title: '方法: Windows ビューでウィンドウの検索 |Microsoft Docs'
+title: '方法: Windows のビューでウィンドウの検索 |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b65b8fd0b3dd7289e0ca435d6729bf6c9ea7a9f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5ba5c8469885fd62c99a672e894cde82700c980d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389290"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>方法: ウィンドウ ビューでウィンドウを検索する
 Windows のビューで特定のウィンドウを検索するには、検索条件として、ハンドル、キャプション、クラス、またはキャプションとクラスの組み合わせを使用します。 検索の最初の方向を指定することもできます。 ダイアログ ボックスのフィールドは、ウィンドウのツリーで、選択したウィンドウの属性を紹介します。
@@ -31,7 +31,7 @@ Windows のビューで特定のウィンドウを検索するには、検索条
     [ウィンドウ検索 ダイアログ ボックス](../debugger/window-search-dialog-box.md)が開きます。
 
    > [!TIP]
-   >  画面の煩雑さを減らすためには、選択、 **Spy++ を非表示**オプション。 このオプションを選択し、メインの spy++ ウィンドウを非表示にのみが残ります、**ウィンドウ検索**ダイアログ ボックスで、他のアプリケーションの上に表示します。 クリックすると、spy++ のメイン ウィンドウが復元**OK**または**キャンセル**、またはオフにすると、 **spy++ を非表示にする**オプション。
+   > 画面の煩雑さを減らすためには、選択、 **Spy++ を非表示**オプション。 このオプションを選択し、メインの spy++ ウィンドウを非表示にのみが残ります、**ウィンドウ検索**ダイアログ ボックスで、他のアプリケーションの上に表示します。 クリックすると、spy++ のメイン ウィンドウが復元**OK**または**キャンセル**、またはオフにすると、 **spy++ を非表示にする**オプション。
 
 3. ドラッグ、**ファインダー ツール**ターゲット枠。 このツールをドラッグすると、**ウィンドウ検索** ダイアログ ボックスでは、選択したウィンドウの詳細が表示されます。
 

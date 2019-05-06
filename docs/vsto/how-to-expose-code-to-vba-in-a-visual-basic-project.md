@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12a5f19574974ce8d3928997a6b02bbf59062d89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0213df05e12ae69b4e24841971a518acc008599f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419411"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>方法: Visual Basic プロジェクトでのコードを VBA に公開します。
   内のコードを公開することができます、[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]相互作用するコードの 2 つの種類の場合、Visual basic for Applications (VBA) コード プロジェクトします。
@@ -50,7 +50,7 @@ ms.locfileid: "60101325"
      マクロをサポートするドキュメントのファイル形式の詳細については、次を参照してください。[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)します。
 
     > [!NOTE]
-    >  この機能は、Word テンプレート プロジェクトでは使用できません。
+    > この機能は、Word テンプレート プロジェクトでは使用できません。
 
 2. ドキュメント内の VBA コードがマクロを有効にするユーザーを確認なしで実行を許可されていることを確認します。 Word または Excel のセキュリティ センター設定の信頼できる場所の一覧に Office プロジェクトの場所を追加することによって、VBA コードの実行を信頼することができます。
 
@@ -65,7 +65,7 @@ ms.locfileid: "60101325"
      このプロパティを設定した後、Visual Studio は自動的に設定、 **ReferenceAssemblyFromVbaProject**プロパティを**True**します。
 
     > [!NOTE]
-    >  かどうかは、ブックまたはドキュメントが含まれない VBA コード、またはドキュメント内の VBA コードが実行する信頼されていない場合は、設定すると、エラー メッセージが表示されるが、 **EnableVbaCallers**プロパティを**True**します。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
+    > かどうかは、ブックまたはドキュメントが含まれない VBA コード、またはドキュメント内の VBA コードが実行する信頼されていない場合は、設定すると、エラー メッセージが表示されるが、 **EnableVbaCallers**プロパティを**True**します。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
 
 5. 表示されるメッセージで **[OK]** をクリックします。 このメッセージは、ブックまたはドキュメントに VBA コードを追加する場合からプロジェクトを実行しているを知らせる[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、VBA コードは失われます、次回プロジェクトをビルドします。 これは、プロジェクトをビルドするたびにビルド出力フォルダー内のドキュメントが上書きされるためです。
 
@@ -83,7 +83,7 @@ ms.locfileid: "60101325"
      マクロをサポートするドキュメントのファイル形式の詳細については、次を参照してください。[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)します。
 
     > [!NOTE]
-    >  この機能は、Word テンプレート プロジェクトでは使用できません。
+    > この機能は、Word テンプレート プロジェクトでは使用できません。
 
 2. ドキュメント内の VBA コードがマクロを有効にするユーザーを確認なしで実行を許可されていることを確認します。 Word または Excel のセキュリティ センター設定の信頼できる場所の一覧に Office プロジェクトの場所を追加することによって、VBA コードの実行を信頼することができます。
 
@@ -109,7 +109,7 @@ ms.locfileid: "60101325"
 7. **[プロパティ]** ウィンドウで、 **ReferenceAssemblyFromVbaProject** プロパティを選択し、値を **True**に変更します。
 
     > [!NOTE]
-    >  かどうかは、ブックまたはドキュメントが含まれない VBA コード、またはドキュメント内の VBA コードが実行する信頼されていない場合は、設定すると、エラー メッセージが表示されるが、 **ReferenceAssemblyFromVbaProject**プロパティを**は True**。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
+    > かどうかは、ブックまたはドキュメントが含まれない VBA コード、またはドキュメント内の VBA コードが実行する信頼されていない場合は、設定すると、エラー メッセージが表示されるが、 **ReferenceAssemblyFromVbaProject**プロパティを**は True**。 これは、このような状況では、Visual Studio がドキュメントのVBA プロジェクトを変更できないためです。
 
 8. 表示されるメッセージで **[OK]** をクリックします。 このメッセージは、ブックまたはドキュメントに VBA コードを追加する場合からプロジェクトを実行しているを知らせる[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、VBA コードは失われます、次回プロジェクトをビルドします。 これは、プロジェクトをビルドするたびにビルド出力フォルダー内のドキュメントが上書きされるためです。
 

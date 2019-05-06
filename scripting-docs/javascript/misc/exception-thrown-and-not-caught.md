@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bae4ed0a335a9c12d16cb46208f77c4b66f12547
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946330"
 ---
 # <a name="exception-thrown-and-not-caught"></a>例外がスローされ、キャッチされませんでした。
 含まれていること、`throw`内では、コード内のステートメントが囲まれていない、**お試しください**ブロック、または関連付けられていませんが**キャッチ**エラーをトラップするブロック。 内から例外がスローされた、**を再試行してください**ブロックを使用して、**スロー**ステートメントでは、外キャッチし、**お試しください**でブロック、**キャッチ**ステートメント。  

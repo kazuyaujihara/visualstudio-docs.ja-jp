@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900861"
 ---
 # <a name="windows-view"></a>ウィンドウ ビュー
 最初に開いたとき Spy++ は、Windows ビューには、システム内のすべての windows とコントロールのツリーが表示されます。 ウィンドウ ハンドルとクラス名が表示されます。 現在のデスクトップ ウィンドウでは、ツリーの最上部にします。 その他のすべての windows は、デスクトップの子であるし、標準的なウィンドウの階層構造に従って一覧表示されます。 展開できる一覧がその親の下にインデントに兄弟ウィンドウが表示されます。
@@ -33,9 +33,9 @@ ms.locfileid: "56689552"
 ## <a name="in-this-section"></a>このセクションの内容
  [方法: ファインダー ツールを使用して、](../debugger/how-to-use-the-finder-tool.md)このツールがウィンドウのプロパティまたはメッセージをスキャンする方法を示しています。
 
- [方法: Windows ビューでウィンドウの検索](../debugger/how-to-search-for-a-window-in-windows-view.md)Windows ビューで特定のウィンドウを検索する方法について説明します。
+ [方法: Windows のビューでウィンドウの検索](../debugger/how-to-search-for-a-window-in-windows-view.md)Windows ビューで特定のウィンドウを検索する方法について説明します。
 
- [方法: ウィンドウの表示プロパティ](../debugger/how-to-display-window-properties.md)ウィンドウ プロパティ ダイアログ ボックスを開くために m プロシージャ。
+ [方法: ウィンドウのプロパティを表示](../debugger/how-to-display-window-properties.md)ウィンドウ プロパティ ダイアログ ボックスを開くために m プロシージャ。
 
 ## <a name="related-sections"></a>関連項目
  [Spy++ ビュー](../debugger/spy-increment-views.md) spy++ ツリー ビュー ウィンドウやメッセージ、プロセス、スレッドのについて説明します。

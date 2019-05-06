@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b73a7f34c663661ae9cc2e2805e5fb6bd11480
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 83e54cf1b0e6f15b1a6c5dc0af379a8b88bd77f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434235"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 このコールバックが渡される、 [SccPopulateList](../extensibility/sccpopulatelist-function.md) IDE でファイルまたはディレクトリの一覧を更新するソース管理プラグインが使用されます (に渡されることも、`SccPopulateList`関数)。
@@ -56,7 +56,7 @@ typedef BOOL (*POPLISTFUNC) (
  ソース管理プラグインを追加したりファイルの一覧から削除しようとする各ファイルを渡して、この関数の呼び出しが、`lpFileName`します。 `fAddRemove`フラグは、一覧に追加する新しいファイルまたは古いファイルを削除することを示します。 `nStatus`パラメーターは、ファイルの状態。 SCC プラグインには、追加して、ファイルの削除が完了したら、それを返します、 [SccPopulateList](../extensibility/sccpopulatelist-function.md)呼び出します。
 
 > [!NOTE]
->  `SCC_CAP_POPULATELIST`機能ビットは Visual Studio に必要です。
+> `SCC_CAP_POPULATELIST`機能ビットは Visual Studio に必要です。
 
 ## <a name="see-also"></a>関連項目
 - [IDE によって実装されるコールバック関数](../extensibility/callback-functions-implemented-by-the-ide.md)

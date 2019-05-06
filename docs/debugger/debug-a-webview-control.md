@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 726a61ae6c515d80fae13c8bfbac6a13943be6ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 43d545a52cbe066e4bb5002b57e9539b9a1b303c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402641"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>UWP アプリの WebView コントロールをデバッグします。
 
@@ -42,7 +42,7 @@ ms.locfileid: "60081763"
 4. (オプション) Visual Studio の非 Express バージョンの場合、**[ツール]、[オプション]、[デバッグ]、[Just-In-Time]** の順にクリックして、スクリプトの JIT デバッグを無効にします。
 
     > [!NOTE]
-    >  JIT デバッグを無効にすると、一部の Web ページで生じる未処理の例外のダイアログ ボックスを非表示にできます。 Visual Studio Express では、JIT デバッグは常に無効となっています。
+    > JIT デバッグを無効にすると、一部の Web ページで生じる未処理の例外のダイアログ ボックスを非表示にできます。 Visual Studio Express では、JIT デバッグは常に無効となっています。
 
 5. F5 キーを押してデバッグを開始します。
 
@@ -79,7 +79,7 @@ ms.locfileid: "60081763"
      ![JavaScript コンソール ウィンドウでの選択の対象](../debugger/media/js_console_target.png "JS_Console_Target")
 
     > [!NOTE]
-    >  コンソールを使って、1 度に 1 つの `WebView`、`iFrame`、共有コントラクト、または Web ワーカーとやり取りできます。 各要素では、Web プラットフォーム ホストの個別のインスタンスが必要となります (WWAHost.exe)。 一度に 1 つのホストとやり取りできます。
+    > コンソールを使って、1 度に 1 つの `WebView`、`iFrame`、共有コントラクト、または Web ワーカーとやり取りできます。 各要素では、Web プラットフォーム ホストの個別のインスタンスが必要となります (WWAHost.exe)。 一度に 1 つのホストとやり取りできます。
 
 6. 表示し、アプリでの変数を変更または」の説明に従って、コンソールのコマンドを使用して[クイック スタート。JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)と[JavaScript Console commands](../debugger/javascript-console-commands.md)します。
 

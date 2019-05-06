@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 56ad09f2b158c7d23bf40bbafbdba3a9435926e4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909169"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>従来の言語サービスでのメンバー補完
 
-IntelliSense メンバー入力候補は、クラス、構造体、列挙型、または名前空間などの特定のスコープの可能なメンバーの一覧を表示するツールヒント。 たとえば、C# の場合は、ユーザーが"this"に続けて、ピリオドを入力クラスまたは現在のスコープでの構造体のすべてのメンバーの一覧が含まれる場合ユーザーが選択できる一覧。
+IntelliSense メンバー入力候補は、クラス、構造体、列挙型、または名前空間などの特定のスコープの可能なメンバーの一覧を表示するツールヒント。 たとえば、c# の場合は、ユーザーが"this"に続けて、ピリオドを入力クラスまたは現在のスコープでの構造体のすべてのメンバーの一覧が含まれる場合ユーザーが選択できる一覧。
 
 Managed package framework (MPF) ツール ヒントおよび; ツール ヒントの一覧を管理するためのサポートを提供しますために必要なすべてが、一覧に表示されるデータを提供するためにパーサーからの協力します。
 
-従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、[エディターと言語サービス拡張](../../extensibility/extending-the-editor-and-language-services.md)を参照してください。
+従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、次を参照してください。[エディターと言語サービス拡張](../../extensibility/extending-the-editor-and-language-services.md)します。
 
 > [!NOTE]
 > 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
@@ -38,13 +38,13 @@ MPF クラスを使用してメンバーの一覧が表示される 2 つの方�
 
 - <xref:Microsoft.VisualStudio.Package.IScanner>スキャナーは、メンバー入力候補の文字を検出し、トークンのトリガーを設定[TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>)その文字。
 
-メンバー入力候補の文字は、クラス、構造体、列挙体のメンバーが次のことを示します。 たとえば、C# または Visual Basic でメンバー入力候補の文字は、 `.`、C++ では、文字ではいずれかを`.`または`->`します。 メンバー選択文字がスキャンされたときに、トリガーの値が設定されます。
+メンバー入力候補の文字は、クラス、構造体、列挙体のメンバーが次のことを示します。 たとえば、c# または Visual Basic でメンバー入力候補の文字は、 `.`、C++ では、文字ではいずれかを`.`または`->`します。 メンバー選択文字がスキャンされたときに、トリガーの値が設定されます。
 
 ### <a name="the-intellisense-member-list-command"></a>IntelliSense のメンバーの一覧表示コマンド
 
 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>コマンドへの呼び出しを開始する、<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>メソッドを<xref:Microsoft.VisualStudio.Package.Source>クラスおよび<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>メソッドを呼び出す、<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>メソッド パーサーの解析の理由で[ParseReason.DisplayMemberList](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>).
 
-パーサーは、下、または現在の位置の直前に、トークンと同様に、現在の位置のコンテキストを指定します。 このトークンに基づき、宣言の一覧が表示されます。 たとえば、C# でクラスのメンバーと選択にキャレットを配置する場合**メンバーの一覧**クラスのすべてのメンバーの一覧を取得します。 オブジェクト変数に続くピリオドの後にキャレットを配置する場合は、オブジェクトが表すクラスのすべてのメンバーの一覧を取得します。 メンバーの一覧が表示されるときにメンバーのキャレットが置かれている場合は、キャレットの一覧でいずれかであるメンバーで置き換えるリストからメンバーを選択するに注意してください。
+パーサーは、下、または現在の位置の直前に、トークンと同様に、現在の位置のコンテキストを指定します。 このトークンに基づき、宣言の一覧が表示されます。 たとえば、c# でクラスのメンバーと選択にキャレットを配置する場合**メンバーの一覧**クラスのすべてのメンバーの一覧を取得します。 オブジェクト変数に続くピリオドの後にキャレットを配置する場合は、オブジェクトが表すクラスのすべてのメンバーの一覧を取得します。 メンバーの一覧が表示されるときにメンバーのキャレットが置かれている場合は、キャレットの一覧でいずれかであるメンバーで置き換えるリストからメンバーを選択するに注意してください。
 
 ### <a name="the-token-trigger"></a>トークンのトリガー
 
@@ -103,7 +103,7 @@ namespace TestLanguagePackage
 
 パーサーが呼び出された[ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>)または[ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>)メンバー選択文字は型指定されています。 指定された場所、<xref:Microsoft.VisualStudio.Package.ParseRequest>メンバーは、文字を選択した後すぐにオブジェクトをします。 パーサーは、特定の時点で、ソース コード、メンバー リストに含まれるすべてのメンバーの名前を収集する必要があります。 パーサーは、ユーザーがメンバー選択文字に関連付けられたスコープを決定するのには、現在の行を解析する必要があります。
 
-メンバーの文字を選択する前に、このスコープは、識別子の型に基づきます。 たとえば、C# の場合は、メンバー変数を指定`languageService`の型を持つ`LanguageService`入力、 **languageService します。** すべてのメンバーの一覧を作成、`LanguageService`クラス。 C# でも入力**これです。** 現在のスコープ内のクラスのすべてのメンバーの一覧を生成します。
+メンバーの文字を選択する前に、このスコープは、識別子の型に基づきます。 たとえば、c# の場合は、メンバー変数を指定`languageService`の型を持つ`LanguageService`入力、 **languageService します。** すべてのメンバーの一覧を作成、`LanguageService`クラス。 C# でも入力**これです。** 現在のスコープ内のクラスのすべてのメンバーの一覧を生成します。
 
 ### <a name="parser-example"></a>パーサーの使用例
 

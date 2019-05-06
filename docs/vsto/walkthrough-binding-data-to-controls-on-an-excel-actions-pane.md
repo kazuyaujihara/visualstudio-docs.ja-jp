@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3dc891c47042fe93ac6be8fa28c2967484c9d6c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5882f81eefb55bb0dc4451b8ffa43c2acfbf1df5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438687"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>チュートリアル: データを Excel の操作ウィンドウ上のコントロールにバインドします。
   このチュートリアルでは、Microsoft Office Excel で操作ウィンドウ上のコントロールへのデータ バインディングを示します。 このコントロールは、SQL Server データベースのテーブル間のマスター/詳細の関係を示します。
@@ -40,7 +40,7 @@ ms.locfileid: "60050154"
 - アプリケーションが開いたときに操作ウィンドウの表示。
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。

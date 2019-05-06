@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b29b95b9c53f18d6f97ac2455dd30aa6e26ccde4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415476"
 ---
 # <a name="how-to-implement-undo-management"></a>方法: 元に戻す管理を実装
 元に戻すの管理に使用される主要なインターフェイスは<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>、環境によって実装されます。 元に戻す管理をサポートするには、実装元に戻す単位 (つまり、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>、複数の個々 のステップを含むことができます。
@@ -75,7 +75,7 @@ ms.locfileid: "60068614"
    `OleUndoManager`クラスは、1 つの元に戻すスタックのインスタンスを表します。 したがって、undo または redo の追跡されているデータ エンティティごとに 1 つの元に戻すマネージャー オブジェクトがあります。
 
 > [!NOTE]
->  元に戻すマネージャー オブジェクトは、テキスト エディターに広範囲に使用される、中に、テキスト エディターの特定のサポートを持たない全般コンポーネントになります。 複数レベルの取り消しまたはやり直しをサポートする場合は、このオブジェクトを使用してこれを行うことができます。
+> 元に戻すマネージャー オブジェクトは、テキスト エディターに広範囲に使用される、中に、テキスト エディターの特定のサポートを持たない全般コンポーネントになります。 複数レベルの取り消しまたはやり直しをサポートする場合は、このオブジェクトを使用してこれを行うことができます。
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>

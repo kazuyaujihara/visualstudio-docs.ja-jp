@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 32b25eb43a756bb3c818cda047e68ac7e1f27d79
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 318a0867b256b4127e6ca16298dfed225cd27d57
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410225"
 ---
 # <a name="idiasymbolgetintrinsic"></a>IDiaSymbol::get_intrinsic
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_intrinsic( 
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
   
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
   
 ## <a name="remarks"></a>Remarks  
   

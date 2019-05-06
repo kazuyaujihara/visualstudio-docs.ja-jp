@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ab9388697b4f33b0c523a6239bda911e3ba47a52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: db5f46fdea66647131557b3d2cff2619e99aabc7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437328"
 ---
 # <a name="how-to-attach-to-script"></a>方法: スクリプトにアタッチする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "60118254"
    **[デバッグ]** メニューのすべての実行コマンドは、アクティブ プログラムに影響します。 プロセス ダイアログ ボックスから、デバッグ対象のプログラムを中断できます。参照してください[ブレークポイントを使用して](../debugger/using-breakpoints.md)します。  
   
 > [!NOTE]
->  信頼関係のないユーザー アカウントによって所有されているプロセスにアタッチしようとすると、セキュリティ警告の確認ダイアログ ボックスが表示されます。 詳細については、次を参照してください。[セキュリティ警告。信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。次の情報に関して疑わしい、または不明ながこのプロセスにアタッチしない](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)します。  
+> 信頼関係のないユーザー アカウントによって所有されているプロセスにアタッチしようとすると、セキュリティ警告の確認ダイアログ ボックスが表示されます。 詳細については、次を参照してください。[セキュリティ警告。信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。次の情報に関して疑わしい、または不明ながこのプロセスにアタッチしない](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)します。  
   
  ターミナル サービス (リモート デスクトップ) セッションでのデバッグ時には、[選択可能なプロセス] ボックスに、使用可能なプロセスのすべてが表示されない場合があります。 [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] 以降のバージョンでは、Visual Studio を制限付きユーザーとして実行している場合、[選択可能なプロセス] ボックスには、セッション 0 で実行しているプロセスは表示されません。セッション 0 は、サービスおよび w3wp.exe を含むその他のサーバー プロセス用に使用されます。 この問題を解決するには、管理者アカウントで Visual Studio を実行するか、ターミナル サービス セッションではなくサーバー コンソールから Visual Studio を実行します。 どちらの回避策も実行できない場合、3 つ目のオプションとして、Windows コマンド ラインで「vsjitdebugger.exe -p ProcessId」と入力することで、プロセスにアタッチできます。 プロセス ID は tlist.exe を使用して確認できます。 tlist.exe を入手するには、[Windows Hardware Developer Central](https://developer.microsoft.com/windows/hardware) で Windows 対応のデバッグ ツールをダウンロードし、インストールします。  
   

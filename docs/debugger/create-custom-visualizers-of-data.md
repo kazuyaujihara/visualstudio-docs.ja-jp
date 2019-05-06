@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564726"
 ---
 # <a name="create-custom-data-visualizers"></a>カスタム データ ビジュアライザーを作成します。
  A*ビジュアライザー*の一部である、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]デバッガー ユーザー インターフェイスのデータ型に適した方法で変数またはオブジェクトを表示します。 たとえば、HTML ビジュアライザーは、HTML 文字列を解釈し、ブラウザー ウィンドウに表示される結果を表示します。 ビットマップ ビジュアライザーは、ビットマップ構造を解釈し、表すグラフィックを表示します。 一部のビジュアライザーを使用して、変更も、データを表示できます。

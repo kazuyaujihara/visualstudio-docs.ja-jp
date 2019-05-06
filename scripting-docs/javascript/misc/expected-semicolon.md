@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9e5d0418f09d208d8919a2c431c818e236b62b29
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433722"
 ---
 # <a name="expected-"></a>';' が必要です。
 行に 1 つ以上のステートメントを配置しようとしましたが、でしたいないセミコロンで区切ります。 ステートメントを終了するには、セミコロンを使用します。 いくつかのステートメントは、1 行に配置できますが、それぞれをセミコロンで区切る必要があります。  

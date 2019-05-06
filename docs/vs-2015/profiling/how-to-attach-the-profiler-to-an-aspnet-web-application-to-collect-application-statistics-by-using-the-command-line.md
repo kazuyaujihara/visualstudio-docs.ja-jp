@@ -9,12 +9,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 619b64578c5fd626f9ffa8cfca8f777fdc1c93a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c60e63384ab6f391cee1151c8ee20d39ae2e1b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432856"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>方法: コマンドラインを使用してアプリケーションの統計情報を収集する ASP.NET Web アプリケーションに、Profiler をアタッチします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,11 +22,11 @@ ms.locfileid: "60105729"
 ここでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールのコマンド ライン ツールを使用して、プロファイラーを ASP.NET Web アプリケーションにアタッチし、サンプリング メソッドによってパフォーマンスに関する統計情報を収集する方法について説明します。  
 
 > [!NOTE]
->  Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 Windows ストア アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。  
 >   
->  プロファイリングの実行に階層の相互作用データを追加するには、コマンド ライン プロファイリング ツールによる特定の手順が必要です。 「[Visual Studio IDE を使用した階層相互作用データの収集](../profiling/adding-tier-interaction-data-from-the-command-line.md)」をご覧ください。  
+> プロファイリングの実行に階層の相互作用データを追加するには、コマンド ライン プロファイリング ツールによる特定の手順が必要です。 「[Visual Studio IDE を使用した階層相互作用データの収集](../profiling/adding-tier-interaction-data-from-the-command-line.md)」をご覧ください。  
 >   
->  プロファイリング ツールのコマンド ライン ツールは、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] インストール ディレクトリの \Team Tools\Performance Tools サブディレクトリにあります。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。 詳細については、「[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)」をご覧ください。  
+> プロファイリング ツールのコマンド ライン ツールは、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] インストール ディレクトリの \Team Tools\Performance Tools サブディレクトリにあります。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。 詳細については、「[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)」をご覧ください。  
 
  ASP.NET Web アプリケーションからパフォーマンス データを収集するには、該当する環境変数を初期化し、ASP.NET Web アプリケーションをホストするコンピューターを再起動してプロファイル用の Web サーバーを構成する必要があります。  
 
@@ -59,7 +59,7 @@ ms.locfileid: "60105729"
      **/start:sample** オプションを使用する場合は、次のうちいずれかのオプションを指定できます。  
 
    > [!NOTE]
-   >  **/user** オプションと **/crosssession** オプションは、通常、ASP.NET アプリケーションで必要です。  
+   > **/user** オプションと **/crosssession** オプションは、通常、ASP.NET アプリケーションで必要です。  
 
    |                                 オプション                                  |                                                                                                                                                        説明                                                                                                                                                        |
    |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -85,7 +85,7 @@ ms.locfileid: "60105729"
    |[/counter](../profiling/counter.md) **:** `Config`|サンプリング イベントと間隔を、プロセッサのパフォーマンス カウンターと、`Config` で指定した間隔に、それぞれ変更します。|  
    |[/targetclr](../profiling/targetclr.md) **:** `Version`|アプリケーションに複数バージョンのランタイムが読み込まれている場合に、プロファイリングを行う共通言語ランタイム (CLR: Common Language Runtime) のバージョンを指定します。|  
 
-   - **targetclr:** `Version` には、アプリケーションに複数バージョンのランタイムが読み込まれている場合に、プロファイリングを行う CLR のバージョンを指定します。 任意。  
+   - **targetclr:** `Version` には、アプリケーションに複数バージョンのランタイムが読み込まれている場合に、プロファイリングを行う CLR のバージョンを指定します。 省略可能です。  
 
 ## <a name="controlling-data-collection"></a>データ コレクションの制御  
  アプリケーションの実行中は、**VSPerfCmd.exe** のオプションを使用してファイルへのデータ書き込みを開始または停止することにより、データ収集を制御できます。 データ コレクションを制御することにより、アプリケーションの起動や終了など、プログラム実行の特定の部分についてのデータ コレクションを行うことができます。  

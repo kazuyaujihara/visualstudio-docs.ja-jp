@@ -8,16 +8,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f79796d186f5a365c37a8e24a3e523aba7ceb72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: f306e0a30dc8faa8f961cb7096a31a049547a70e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820407"
 ---
 # <a name="understanding-sal"></a>SAL について
 
-Microsoft ソース コード注釈言語 (SAL) では、関数がそのパラメーターや、それらについて行う想定を終了するときに行う保証を使用する方法について説明するために使用できる注釈のセットを提供します。 注釈はヘッダー ファイルで定義されている`<sal.h>`します。 C++ 用の visual Studio コード分析では、SAL 注釈を使用して、関数の分析を変更します。 Windows ドライバー開発の SAL 2.0 の詳細については、[Windows ドライバーの SAL 2.0 注釈](http://go.microsoft.com/fwlink/?LinkId=250979)を参照してください。
+Microsoft ソース コード注釈言語 (SAL) では、関数がそのパラメーターや、それらについて行う想定を終了するときに行う保証を使用する方法について説明するために使用できる注釈のセットを提供します。 注釈はヘッダー ファイルで定義されている`<sal.h>`します。 C++ 用の visual Studio コード分析では、SAL 注釈を使用して、関数の分析を変更します。 Windows ドライバー開発の SAL 2.0 の詳細については、次を参照してください。 [Windows ドライバーの SAL 2.0 注釈](http://go.microsoft.com/fwlink/?LinkId=250979)します。
 
 ネイティブ、C および C++ 開発者の意図と不変性が一貫して express の制限がありますのみを提供します。 SAL 注釈を使用すると、それらを使用する開発者は、その使用方法を理解できるようにより詳細で関数を記述できます。
 
@@ -110,9 +110,9 @@ wchar_t * wmemcpy(
 
 #### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Visual Studio のコード分析ツールと SAL を使用するには
 
-1.  Visual Studio での SAL 注釈を含む C++ プロジェクトを開きます。
+1. Visual Studio での SAL 注釈を含む C++ プロジェクトを開きます。
 
-2.  メニュー バーで、**ビルド**、**ソリューションでコード分析を実行**します。
+2. メニュー バーで、**ビルド**、**ソリューションでコード分析を実行**します。
 
      検討してください、\_で\_のこのセクションの例です。 これでコード分析を実行する場合は、この警告が表示されます。
 
@@ -122,15 +122,15 @@ wchar_t * wmemcpy(
 
 `_In_`注釈には、ことを示します。
 
--   パラメーターが有効にする必要がありは変更されません。
+- パラメーターが有効にする必要がありは変更されません。
 
--   関数は、1 つの要素のバッファーからのみ読み取ります。
+- 関数は、1 つの要素のバッファーからのみ読み取ります。
 
--   呼び出し元は、バッファーを提供し、初期化する必要があります。
+- 呼び出し元は、バッファーを提供し、初期化する必要があります。
 
--   `_In_` 「読み取り専用」を指定します。 よくある間違いは、適用する`_In_`が必要なパラメーターに、`_Inout_`注釈代わりにします。
+- `_In_` 「読み取り専用」を指定します。 よくある間違いは、適用する`_In_`が必要なパラメーターに、`_Inout_`注釈代わりにします。
 
--   `_In_` 非ポインター スカラーのアナライザーによって無視が許可されます。
+- `_In_` 非ポインター スカラーのアナライザーによって無視が許可されます。
 
 ```cpp
 void InCallee(_In_ int *pInt)
@@ -394,7 +394,7 @@ Microsoft はパブリック ヘッダーが既に注釈が付いています。
 
 - 注釈の値の範囲の注釈を設定して、コード分析は、バッファーとポインターの安全を確保できるようにします。
 
-- ルールのロックおよびロックの副作用の注釈を設定します。 詳細については、[ロック動作の注釈を付ける](../code-quality/annotating-locking-behavior.md)を参照してください。
+- ルールのロックおよびロックの副作用の注釈を設定します。 詳細については、次を参照してください。[ロック動作の注釈を付ける](../code-quality/annotating-locking-behavior.md)します。
 
 - ドライバーのプロパティとその他のドメイン固有のプロパティの注釈を設定します。
 

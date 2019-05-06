@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b4709cc5f011dd55445583c46dd96894b979647c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435550"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>基本的なプロジェクト システムの作成、パート 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60079605"
 - プロジェクトのプロパティ ページを作成します。  
   
 > [!NOTE]
->  このチュートリアルの手順は、c# プロジェクトに基づいています。 ただし、ファイル名拡張子とコードなどの詳細を除く、Visual Basic プロジェクトと同じ手順を使用できます。  
+> このチュートリアルの手順は、c# プロジェクトに基づいています。 ただし、ファイル名拡張子とコードなどの詳細を除く、Visual Basic プロジェクトと同じ手順を使用できます。  
   
 ## <a name="creating-a-visual-studio-template"></a>Visual Studio テンプレートを作成します。  
  [基本的なプロジェクト システムでは、第 1 部作成](../extensibility/creating-a-basic-project-system-part-1.md)基本的なプロジェクト テンプレートを作成し、プロジェクト システムに追加する方法を示します。 Visual Studio でこのテンプレートを使用して登録する方法も示します、<xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute>属性には、\Templates\Projects\SimpleProject\ フォルダーの完全なパスをシステム レジストリに書き込みます。  
@@ -100,7 +100,7 @@ ms.locfileid: "60079605"
 - \<ProjectType > 要素の名前でプロジェクトの種類、**新しいプロジェクト** ダイアログ ボックス。 この名前は、ProvideProjectFactory 属性のプロジェクトの name パラメーターを置き換えます。  
   
   > [!NOTE]
-  >  \<ProjectType > 要素に一致する必要があります、`LanguageVsTemplate`の引数、 `ProvideProjectFactory` SimpleProjectPackage.cs ファイル内の属性。  
+  > \<ProjectType > 要素に一致する必要があります、`LanguageVsTemplate`の引数、 `ProvideProjectFactory` SimpleProjectPackage.cs ファイル内の属性。  
   
   \<TemplateContent > セクションには、新しいプロジェクトが作成されるときに生成されるこれらのファイルがについて説明します。  
   
@@ -115,7 +115,7 @@ ms.locfileid: "60079605"
   Visual Studio テンプレート スキーマの要素の詳細については、次を参照してください。、 [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)します。  
   
 > [!NOTE]
->  プロジェクトには、複数の Visual Studio テンプレートがある場合は、すべてのテンプレートは、別のフォルダーには。 そのフォルダー内のすべてのファイルがあります、**ビルド アクション**設定**ZipProject**します。  
+> プロジェクトには、複数の Visual Studio テンプレートがある場合は、すべてのテンプレートは、別のフォルダーには。 そのフォルダー内のすべてのファイルがあります、**ビルド アクション**設定**ZipProject**します。  
   
 ## <a name="adding-a-minimal-vsct-file"></a>最小限の .vsct ファイルを追加します。  
  Visual Studio は、新しいまたは変更された Visual Studio のテンプレートを認識するセットアップ モードで実行する必要があります。 セットアップ モードでは、.vsct ファイルが存在する必要があります。 したがって、プロジェクトに最小限の .vsct ファイルを追加する必要があります。  

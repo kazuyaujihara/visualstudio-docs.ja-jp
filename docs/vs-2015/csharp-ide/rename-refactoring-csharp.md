@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439956"
 ---
 # <a name="rename-refactoring-c"></a>名前の変更リファクタリング (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60114732"
 **名前を変更**リファクタリング機能など、フィールド、ローカル変数、メソッド、名前空間、プロパティ、および種類のコード シンボルの識別子の名前を変更する簡単な方法を提供する Visual Studio 統合開発環境 (IDE) です。 **名前を変更**コメントと文字列の名前を変更して、宣言と識別子の呼び出しを変更するために使用できます。  
   
 > [!NOTE]
->  ソース管理 for Visual Studio を使用する場合は、名前の変更リファクタリングを実行する前に、ソースの最新バージョンを取得します。  
+> ソース管理 for Visual Studio を使用する場合は、名前の変更リファクタリングを実行する前に、ソースの最新バージョンを取得します。  
   
  名前の変更リファクタリングは、次の Visual Studio の機能から入手できます。  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60114732"
 2. 宣言で`MethodB`入力するか、backspace キーでメソッドの識別子。 スマート タグのプロンプトは、この識別子の下に表示されます。  
   
     > [!NOTE]
-    >  名前の変更リファクタリング スマート タグを使用した識別子の宣言でのみ起動できます。  
+    > 名前の変更リファクタリング スマート タグを使用した識別子の宣言でのみ起動できます。  
   
 3. SHIFT + ALT + F10 キーボード ショートカットを入力して、スマート タグ メニューを表示する下方向キーを押します。  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60114732"
  場合**オーバー ロードの名前を変更**リファクタリング エンジンの名前を変更、チェック`Derived.Method(int i)`オーバー ロードするため`Derived.Method()`、`Base.Method(int i)`によってオーバーライドされますので`Derived.Method(int i)`、および`Base.Method()`のオーバー ロードがあるためです`Base.Method(int i)`.  
   
 > [!NOTE]
->  参照されたアセンブリで定義されたメンバーの名前を変更すると、ダイアログ ボックスでは、名前を変更すると、ビルド エラーが発生するについて説明します。  
+> 参照されたアセンブリで定義されたメンバーの名前を変更すると、ダイアログ ボックスでは、名前を変更すると、ビルド エラーが発生するについて説明します。  
   
 ## <a name="renaming-properties-of-anonymous-types"></a>匿名型のプロパティの名前を変更します。  
  匿名型のプロパティの名前を変更するときに、名前の変更操作は、同じプロパティを持つ匿名型を他のプロパティに反映されます。 次の例では、この動作を示します。  

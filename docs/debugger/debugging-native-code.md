@@ -21,21 +21,21 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5a7cf0b150c45037941010bf7e611f4bc21252c7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851899"
 ---
 # <a name="debugging-native-code"></a>ネイティブ コードのデバッグ
 ここでは、ネイティブ アプリケーションのデバッグ時に発生する一般的な問題や共通のデバッグ技術について説明します。 ここでは高レベルの手法について説明します。 Visual Studio デバッガーの使用のしくみを参照してください。[デバッガーでのはじめ](../debugger/debugger-feature-tour.md))。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [方法: 最適化されたコードのデバッグ](../debugger/how-to-debug-optimized-code.md)デバッグとリリースの構成の既定の最適化の設定、プログラムの最適化されていないバージョンをデバッグするため、具体的には、最適化されたコードをデバッグするためのヒントを紹介し、バグの検索のヒント(デバッグ ビルド構成での最適化の有効化) 最適化されたコードにのみ表示されます。
+ [方法: 最適化コードのデバッグ](../debugger/how-to-debug-optimized-code.md)デバッグとリリースの構成の既定の最適化の設定、プログラムの最適化されていないバージョンをデバッグするため、具体的には、最適化されたコードをデバッグするためのヒントを紹介し、検索をバグのみのヒント(デバッグ ビルド構成での最適化の有効化) 最適化されたコードに表示されます。
 
  [DebugBreak と _ _debugbreak](../debugger/debugbreak-and-debugbreak.md) Win32 について説明します`DebugBreak`関数し、プラットフォーム SDK のリファレンス トピックへのリンクを提供します。 また、コンパイラの組み込み関数 `__debugbreak` についても説明します。
 
- [C/C++ アサーション](../debugger/c-cpp-assertions.md)アサート ステートメント、そのしくみ、(論理エラーのキャッチ、操作の結果を確認して、エラー条件のテスト)、それらを使用する利点について説明しますとの相互作用`_DEBUG`との種類サポートされるアサーション[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。
+ [C/C++アサーション](../debugger/c-cpp-assertions.md)アサート ステートメント、そのしくみ、(論理エラーのキャッチ、操作の結果を確認して、エラー条件のテスト)、それらを使用する利点について説明しますとの相互作用`_DEBUG`との種類サポートされるアサーション[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。
 
  [方法: インライン アセンブラー コードをデバッグ](../debugger/how-to-debug-inline-assembly-code.md)レジスタの内容を逆アセンブル ウィンドウを使用して表示するには、アセンブリ命令およびレジスタ ウィンドウを表示する簡単な指示を提供し、これらのウィンドウに関するトピックへのリンクを提供します。
 
@@ -43,16 +43,16 @@ ms.locfileid: "57870416"
 
  [CRT のデバッグ技術](../debugger/crt-debugging-techniques.md)CRT デバッグのライブラリ、レポート用マクロの使用を含む、C ランタイム ライブラリのデバッグ手法へのリンクと、malloc と _malloc_dbg、デバッグ用フック関数、および CRT デバッグ ヒープの作成の間の相違点します。
 
- [よく寄せられる質問がネイティブ コードをデバッグ](../debugger/debugging-native-code-faqs.md)Visual C プログラムのデバッグに関してよく寄せられる質問に対する回答を提供します。
+ [よく寄せられる質問がネイティブ コードをデバッグ](../debugger/debugging-native-code-faqs.md)ビジュアルのデバッグについてよく寄せられる質問に対する回答を提供しますC++プログラム。
 
  [COM および ActiveX のデバッグ](../debugger/com-and-activex-debugging.md)COM の使用できるツールなど、COM および ActiveX アプリケーションのデバッグと ActiveX のデバッグについて説明します。
 
  [方法: 挿入されたコードをデバッグ](../debugger/how-to-debug-injected-code.md)属性を使用するコードのデバッグに関するガイダンスを示します。 ソースの注釈を表示する方法、挿入されたコードを表示する方法、現在の実行ポイントにある逆アセンブリ コードを表示する方法などを説明します。
 
- [チュートリアル: 並行アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)を使用する方法について説明します、**並列タスク**と**並列スタック**ツール ウィンドウを並行アプリケーションをデバッグします。
+ [チュートリアル: 並列アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)を使用する方法について説明します、**並列タスク**と**並列スタック**ツール ウィンドウを並行アプリケーションをデバッグします。
 
 ## <a name="related-sections"></a>関連項目
- [C++ プロジェクトのビジュアルの種類](../debugger/debugging-preparation-visual-cpp-project-types.md)Visual C プロジェクト テンプレートで作成されたネイティブ プロジェクトをデバッグする方法を説明するトピックへのリンクを提供します。
+ [VisualC++プロジェクトの種類](../debugger/debugging-preparation-visual-cpp-project-types.md)ビジュアルで作成されたネイティブ プロジェクトをデバッグする方法を説明するトピックへのリンクを提供します。C++プロジェクト テンプレート。
 
  [DLL プロジェクトのデバッグ](../debugger/debugging-dll-projects.md)ネイティブおよびマネージ Dll をデバッグする方法について説明します。
 

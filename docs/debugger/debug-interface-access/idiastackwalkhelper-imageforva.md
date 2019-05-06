@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56f71364f28bec56c058a52f5a9e79c6bba298b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837954"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
 メモリの指定実行可能ファイルのメモリ領域で仮想アドレスをどこかで実行可能ファイルのイメージの開始を返します。

@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2969e5c6e8e3a5fd5612fa843309e36f0dbc4c9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850839"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>エラー :Windows 統合認証が無効になっているため、デバッグに失敗しました
 デバッグを要求したユーザーの認証が認証エラーで失敗しました。 このエラーは、Web アプリケーションまたは XML Web サービスにステップ インしようとするときに発生することがあります。 このエラーの原因の 1 つとして、統合 Windows 認証が有効ではないことが挙げられます。 その機能を有効にする場合は、「統合 Windows 認証を有効にするには」の手順を実行します。

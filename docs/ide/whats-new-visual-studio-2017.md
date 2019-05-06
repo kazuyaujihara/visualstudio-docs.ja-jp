@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583491"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 の新機能
 
@@ -32,7 +32,7 @@ ms.locfileid: "58857815"
 以前のバージョンの Visual Studio からのアップグレードを検討していますか。 Visual Studio 2017 でできること:すべての開発、すべてのアプリ、すべてのプラットフォームにおいて、他に類を見ない生産性を実現します。 Visual Studio 2017 を利用し、Android、iOS、Windows、Linux、Web、クラウド向けのアプリを開発します。 短期間でプログラミングできて、デバッグや診断も簡単に行えます。テストを頻繁に行うことで、自信をもってリリースできます。 独自の拡張機能を開発することで Visual Studio を拡張し、カスタマイズすることもできます。 今回のリリースでは、バージョン管理を使用した、迅速で、効率的な共同作業が可能になりました。
 
 >[!div class="button"]
->[Visual Studio をダウンロードする](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+>[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 以前のバージョンである Visual Studio 2015 以降に行われた主な変更点の要約を示します。
 
@@ -269,7 +269,7 @@ Visual Studio には、C++ Core ガイドラインの配信、C++11 および C+
 **15.5 の新機能**:Visual Studio 2017 バージョン 15.5 では、Windows 10 Fall Creators Update SDK (10.0.16299.0) の最適なサポートが提供されます。 また、Windows 10 Fall Creators Update により、UWP 開発者のための数多くの機能が強化されます。 最も大きな変更点をいくつか以下に示します。 
 
 * **.NET Standard 2.0 のサポート**<br/>Windows 10 Fall Creators Update は、アプリ配置を効率化するだけでなく、.NET Standard 2.0 サポートを提供する Windows 10 の最初のリリースとなります。 実際には、[.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) は、すべての .NET プラットフォームで実装できる基本クラス ライブラリの参照実装です。 .NET Standard の目的は、.NET 開発者が作業用に選択したすべての .NET プラットフォームでコードをできるだけ簡単に共有できるようにすることです。
-* **UWP と Win32 の両方に最適**<br/>[デスクトップ ブリッジ](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root)を使用して Windows 10 プラットフォームを改善しました。これにより、現在のフォーカスが UWP、WPF、Windows Forms、または Xamarin のいずれにあるかに関係なく、すべての .NET 開発者は Windows 10 を改善することができます。 Visual Studio 2017 バージョン 15.5 の新しいアプリ パッケージング プロジェクト タイプを使用することで、UWP プロジェクトの場合と同じように、WPF または Windows Forms プロジェクトの Windows アプリケーション パッケージを作成できます。 アプリをパッケージ化すると、Windows 10 アプリ配置のすべての利点が得られ、Microsoft Store (コンシューマー アプリケーションの場合) または Microsoft Store for Business と Education を通じて配布することができます。 パッケージ化されたアプリは完全な UWP API 画面とデスクトップ上の Win32 API の両方にアクセスできるため、WPF および Windows Forms アプリケーションを UWP API および Windows 10 の機能で段階的に最新化できるようになりました。 さらに、すべての Win32 機能を使用して、デスクトップ上で点灯する UWP アプリケーションに Win32 コンポーネントを含めることができます。
+* **UWP と Win32 の両方に長所**<br/>[デスクトップ ブリッジ](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root)を使用して Windows 10 プラットフォームを改善しました。これにより、現在のフォーカスが UWP、WPF、Windows Forms、または Xamarin のいずれにあるかに関係なく、すべての .NET 開発者は Windows 10 を改善することができます。 Visual Studio 2017 バージョン 15.5 の新しいアプリ パッケージング プロジェクト タイプを使用することで、UWP プロジェクトの場合と同じように、WPF または Windows Forms プロジェクトの Windows アプリケーション パッケージを作成できます。 アプリをパッケージ化すると、Windows 10 アプリ配置のすべての利点が得られ、Microsoft Store (コンシューマー アプリケーションの場合) または Microsoft Store for Business と Education を通じて配布することができます。 パッケージ化されたアプリは完全な UWP API 画面とデスクトップ上の Win32 API の両方にアクセスできるため、WPF および Windows Forms アプリケーションを UWP API および Windows 10 の機能で段階的に最新化できるようになりました。 さらに、すべての Win32 機能を使用して、デスクトップ上で点灯する UWP アプリケーションに Win32 コンポーネントを含めることができます。
 
 UWP の詳細については、「[ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)」を参照してください。
 
@@ -371,9 +371,11 @@ Visual Studio 2017 は、より優れた開発を可能にする新機能で頻�
 
 Visual Studio 2017 のその他の機能について知りたい場合は、 [Visual Studio のロードマップ](/visualstudio/productinfo/vs2018-roadmap)のページを参照してください。
 
+また、最新バージョンの [Visual Studio 2019](whats-new-visual-studio-2019.md) を忘れずにチェック アウトしてください。
+
 ## <a name="contact-us"></a>お問い合わせ
 
- Visual Studio チームにフィードバックを送ることにどんな意味があるのでしょうか? お客様からのフィードバックは、すべて真剣に考慮することにしています。 フィードバックによって今後の動向が左右されることになります。
+Visual Studio チームにフィードバックを送ることにどんな意味があるのでしょうか? お客様からのフィードバックは、すべて真剣に考慮することにしています。 フィードバックによって今後の動向が左右されることになります。
 
 Visual Studio を向上させることができるご提案がある場合、または製品のサポート オプションについてさらに知りたい場合は、「[ご意見](talk-to-us.md)」ページを参照してください。
 

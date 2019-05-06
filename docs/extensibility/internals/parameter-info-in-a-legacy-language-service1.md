@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 836788e0d9d44c7da5dda44ce80f76ab91642dda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423960"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>従来の言語サービスでのパラメーター ヒント
 言語構成要素でに関するヒントと IntelliSense のパラメーター ヒントを提供します。
@@ -27,7 +27,7 @@ ms.locfileid: "60086314"
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、次を参照してください。[エディターと言語サービス拡張](../../extensibility/extending-the-editor-and-language-services.md)します。
 
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
 
 ## <a name="how-parameter-info-tooltips-work"></a>パラメーター ヒントのツールヒントのしくみ
  エディターでステートメントを入力すると、VSPackage に型指定されているステートメントの定義を含む小さいツールヒント ウィンドウが表示されます。 たとえば、Microsoft Foundation Classes (MFC) ステートメントを入力する場合 (など`pMainFrame ->UpdateWindow`) とかっこが、パラメーターの定義を表示するメソッドのヒントが表示される一覧を作成するキーを押して、`UpdateWindow`メソッド。

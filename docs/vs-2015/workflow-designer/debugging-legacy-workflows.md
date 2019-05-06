@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b98c520dc96b6f3c6467bbcaf8e48d9cff8791d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80edcfb171e8e87c384a05b889a8fa11b1e7a723
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439192"
 ---
 # <a name="debugging-legacy-workflows"></a>従来のワークフローのデバッグ
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] の従来の [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)]を使用して、.NET Framework 3.0 または 3.5 を対象とする [!INCLUDE[wf](../includes/wf-md.md)] アプリケーションを作成する場合は、ブレークポイントの設定、プロセスへのアタッチ、スレッドと呼び出しスタックの検査を実行して、他のプログラムと同じようにワークフローをデバッグできます。 また、リモート デバッグを実行することもできます。  
   
 > [!NOTE]
->  コンピューターに複数のバージョンの Visual Studio をインストールしてアンインストールした場合、WF3 のデバッグは失敗し、次のいずれかが発生する可能性があります。  
+> コンピューターに複数のバージョンの Visual Studio をインストールしてアンインストールした場合、WF3 のデバッグは失敗し、次のいずれかが発生する可能性があります。  
 > 
 > - ブレークポイントがヒットしません。  
 >   - 次のメッセージが表示されます。  

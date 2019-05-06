@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425382"
 ---
 # <a name="edit-data-in-datasets"></a>データセットのデータの編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60105007"
      このメソッドは、レコードを物理的に削除されません。 代わりに、削除のレコードをマークします。  
   
     > [!NOTE]
-    >  Count プロパティが表示された場合、 <xref:System.Data.DataRowCollection>、結果のカウントには、削除対象としてマークされているレコードが含まれています。 削除対象としてマークされないレコードの正確なカウントを取得する、見てコレクションをループ処理することができます、<xref:System.Data.DataRow.RowState%2A>各レコードのプロパティ。 (削除対象としてマークするレコードが、<xref:System.Data.DataRow.RowState%2A>の<xref:System.Data.DataRowState>)。または、行の状態に基づくフィルターをデータセットのデータ ビューを作成し、そこから、count プロパティを取得することができます。  
+    > Count プロパティが表示された場合、 <xref:System.Data.DataRowCollection>、結果のカウントには、削除対象としてマークされているレコードが含まれています。 削除対象としてマークされないレコードの正確なカウントを取得する、見てコレクションをループ処理することができます、<xref:System.Data.DataRow.RowState%2A>各レコードのプロパティ。 (削除対象としてマークするレコードが、<xref:System.Data.DataRow.RowState%2A>の<xref:System.Data.DataRowState>)。または、行の状態に基づくフィルターをデータセットのデータ ビューを作成し、そこから、count プロパティを取得することができます。  
   
      次の例を呼び出す方法を示しています、<xref:System.Data.DataRow.Delete%2A>の最初の行をマークするメソッド、`Customers`テーブルの削除済みとして。  
   

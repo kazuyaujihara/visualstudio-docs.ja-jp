@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6e30fd7500c0f9dd216b630ea79ebfb79c964fab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0d8ba826e332141a3ee53a70185f0e8e18e465f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443216"
 ---
 # <a name="user-permissions-and-visual-studio"></a>ユーザー アクセス許可と Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60101887"
 セキュリティ上の理由により、Visual Studio はできる限り通常のユーザーとして実行してください。
 
 > [!WARNING]
->  また、信頼できる人または信頼できる場所以外から入手した Visual Studio ソリューションをコンパイル、起動、またはデバッグしないでください。
+> また、信頼できる人または信頼できる場所以外から入手した Visual Studio ソリューションをコンパイル、起動、またはデバッグしないでください。
 
  通常のユーザーでも Visual Studio IDE のほぼすべてのタスクを実行できますが、次のタスクを実行するには管理者のアクセス許可が必要です。
 

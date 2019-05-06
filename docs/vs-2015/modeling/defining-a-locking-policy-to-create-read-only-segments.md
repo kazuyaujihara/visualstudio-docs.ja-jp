@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6044e9c47a0dcbc95fd1503906cbd81ac8e44526
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422655"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>ロック ポリシーの定義と読み取り専用セグメントの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60062244"
  さらに、作成者は、DSL の定義、*ロック ポリシー。* ロックのポリシーは、どのロックが許可されている、許可されない、または必須を定義します。 たとえば、DSL を発行するときに、サード パーティの開発者に新しいコマンドでは拡張をお勧めすることができます。 モデルの指定した部分の読み取り専用の状態を変更することを防ぐためにロック ポリシーを使用することもできます。  
   
 > [!NOTE]
->  リフレクションを使用してロックのポリシーを回避することができます。 サードパーティの開発者は、明確な境界を提供しますが、強力なセキュリティは提供されません。  
+> リフレクションを使用してロックのポリシーを回避することができます。 サードパーティの開発者は、明確な境界を提供しますが、強力なセキュリティは提供されません。  
   
  詳細およびサンプルについてでご利用いただけますが、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkId=186128) Web サイト。  
   
@@ -115,7 +115,7 @@ public interface ILockingPolicy
   
  呼び出しが行われたときに、これらのメソッドが呼び出されますが`SetLocks()`ストア、パーティション、またはモデル要素にします。 各メソッドでロックの提案セットが提供されます。 提案のセットを返すことができます、または追加し、ロックを減算できます。  
   
- 例えば:  
+ 例:  
   
 ```  
 using Microsoft.VisualStudio.Modeling;  

@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3562b74939fe9207ddcf10e98bd0b4d0d7d1bead
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2b2d4ee5feb0bed25ad41931f151e81db6edd3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442594"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>手順 3: 各ラベルにランダムなアイコンを割り当てる
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60085988"
      [!code-vb[VbExpressTutorial4Step2_3_4#14](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#14)]  
   
     > [!NOTE]
-    >  "iconLabel" および "control" という名前が使用されているのは、わかりやすくするためです。 これらの名前を任意の名前に置き換えても、コードはまったく同じように動作します (ただしループ内の各ステートメントで名前を変更する必要はあります)。  
+    > "iconLabel" および "control" という名前が使用されているのは、わかりやすくするためです。 これらの名前を任意の名前に置き換えても、コードはまったく同じように動作します (ただしループ内の各ステートメントで名前を変更する必要はあります)。  
   
      `AssignIconsToSquares()` メソッドは、TableLayoutPanel の各ラベル コントロールを反復処理し、それぞれに対し同じステートメントを実行します。 これらのステートメントは、「[手順 2:Random オブジェクトおよびアイコンの一覧に追加](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)します。 (リストに各アイコンを 2 つずつ含め、ランダムなラベル コントロールにアイコンのペアが割り当てられるようにしたのはこのためです)。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60085988"
      アイコンは、まだ非表示に設定されていないため、表示されています。 アイコンをプレーヤーに非表示にするには、各ラベルの `Forecolor` プロパティをその `BackColor` プロパティと同じ色に設定できます。  
   
     > [!TIP]
-    >  ラベルのようなコントロールを非表示にする別の方法は、**Visible** プロパティを `False` に設定することです。  
+    > ラベルのようなコントロールを非表示にする別の方法は、**Visible** プロパティを `False` に設定することです。  
   
 6. アイコンを非表示にするには、プログラムを停止し、`For Each` ループ内のコードのコメント行からコメント記号を削除します。  
   

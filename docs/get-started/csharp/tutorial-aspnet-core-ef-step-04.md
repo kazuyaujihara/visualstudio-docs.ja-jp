@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553883"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>手順 4: ASP.NET Core アプリから Web API を公開する
 
@@ -226,7 +226,7 @@ Games の下のエンドポイント、`Try it out``Execute` の順にクリッ�
 
 次のビデオで、アプリを Azure にデプロイする方法を学習します。
 
-[手順 5: Azure に ASP.NET Core アプリをデプロイする](tutorial-aspnet-core-ef-step-05.md)
+[手順 5:Azure に ASP.NET Core アプリをデプロイする](tutorial-aspnet-core-ef-step-05.md)
 
 ## <a name="see-also"></a>関連項目
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5332b2e3b71df47fe2f39228c47bf4a1ec16de9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7766f83eef6205ce445ed892ffaf5861a0dcabbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387538"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>方法: 非表示のデバッガー コマンドを復元する
 Visual Studio をセット アップするときに、既定の IDE 設定で主要なプログラム言語を選択するように指示されます。 言語によっては、既定の IDE 設定で一部のデバッガー コマンドが非表示のことがあります。
@@ -47,7 +47,7 @@ Visual Studio をセット アップするときに、既定の IDE 設定で主
 7. メニューにコマンドを追加し終わったら、**[閉じる]** をクリックします。
 
     > [!WARNING]
-    >  メニュー項目によっては、デバッガーが特殊なモード (実行モードまたは中断モード) のときにのみ表示されます。 そのため、この手順でコマンドを追加しても、すぐに表示されないことがあります。
+    > メニュー項目によっては、デバッガーが特殊なモード (実行モードまたは中断モード) のときにのみ表示されます。 そのため、この手順でコマンドを追加しても、すぐに表示されないことがあります。
 
 ## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>[ユーザー設定] ダイアログ ボックスから使用できないコマンドを復元する
  コマンドによっては、特に階層メニューに含まれる場合、**[ユーザー設定]** ダイアログ ボックスから復元できないことがあります。 このようなコマンドを復元するには、IDE 設定の新しいコレクションをインポートする必要があります。

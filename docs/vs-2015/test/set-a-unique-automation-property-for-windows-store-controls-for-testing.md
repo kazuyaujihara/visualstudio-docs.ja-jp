@@ -8,12 +8,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ed707c1dfa2d756bdf3fa879051795c6ac05eed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a765896ef8b4eb645c04536105bc2284fc5c3d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446057"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>テスト用に Windows ストア コントロールの一意のオートメーション プロパティを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,19 +22,19 @@ XAML ベースの Windows ストア アプリケーション用のコード化�
   
  アプリケーションで XAML コントロールの種類に基づいて固有のオートメーション プロパティを割り当てることができます。 ここでは、次のような状況において、この一意のオートメーション プロパティを割り当てる方法について説明します。  
   
--   [コントロールの静的な XAML 定義](#UniquePropertyWindowsStoreControlsStaticXAML)  
+- [コントロールの静的な XAML 定義](#UniquePropertyWindowsStoreControlsStaticXAML)  
   
--   [Visual Studio または Blend for Visual Studio を使用して一意のオートメーション プロパティを割り当てる](#UniquePropertyWindowsStoreControlsExpressionBlend)  
+- [Visual Studio または Blend for Visual Studio を使用して一意のオートメーション プロパティを割り当てる](#UniquePropertyWindowsStoreControlsExpressionBlend)  
   
--   [データ テンプレートを使用する](#UniquePropertyWindowsStoreControlsDataTemplate)  
+- [データ テンプレートを使用する](#UniquePropertyWindowsStoreControlsDataTemplate)  
   
--   [コントロール テンプレートを使用する](#UniquePropertyWindowsStoreControlsControlTemplate)  
+- [コントロール テンプレートを使用する](#UniquePropertyWindowsStoreControlsControlTemplate)  
   
--   [ダイナミック コントロール](#UniquePropertyWindowsStoreControlsDynamicControls)  
+- [ダイナミック コントロール](#UniquePropertyWindowsStoreControlsDynamicControls)  
   
 ## <a name="use-methods-to-assign-a-unique-automation-property"></a>いくつかの方法で一意のオートメーション プロパティを割り当てる  
   
-###  <a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> 静的な XAML 定義  
+### <a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> 静的な XAML 定義  
  XAML ファイルで定義されたコントロールに一意のオートメーション プロパティを指定するには、AutomationProperties.AutomationId または AutomationProperties.Name を暗黙的または明示的に設定します。次に例を示します。 これらの値のいずれかを設定すると、コントロールに一意のオートメーション プロパティが割り当てられ、コード化された UI テストまたは操作の記録を作成するとき、コントロールを識別するために使用できます。  
   
  **プロパティを暗黙的に設定する**  
@@ -68,19 +68,19 @@ XAML ベースの Windows ストア アプリケーション用のコード化�
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />  
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Visual Studio または Blend for Visual Studio を使用して一意のオートメーション プロパティを割り当てる  
+### <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Visual Studio または Blend for Visual Studio を使用して一意のオートメーション プロパティを割り当てる  
  Visual Studio または Blend for Visual Studio を使用して、ボタン、リスト ボックス、コンボ ボックス、テキスト ボックスなどの対話型要素に一意の名前を割り当てることができます。 これにより、コントロールの AutomationProperties.Name に一意の値が割り当てられます。  
   
- **Visual Studio:** **[ツール]** メニューの **[オプション]** をポイントし、**[テキスト エディター]**、**[XAML]**、**[その他]** の順に選択します。  
+ **Visual Studio:**[ツール] メニューの **[オプション]** をポイントし、 **[テキスト エディター]**、 **[XAML]**、 **[その他]** の順に選択します。  
   
  **[対話要素の作成時に自動的に名前を付ける]** を選択し、**[OK]** をクリックします。  
   
  ![その他の XAML オプション](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")  
   
- **Blend for Visual Studio:** これを Blend for Visual Studio から実行するには、次のいずれかの方法を使用します。  
+ **Blend for Visual Studio:** Blend for Visual Studio からこれを行うには、次の方法のいずれかを使用します。  
   
 > [!NOTE]
->  この方法は、XAML を使用して静的に作成されたコントロールの場合のみ行うことができます。  
+> この方法は、XAML を使用して静的に作成されたコントロールの場合のみ行うことができます。  
   
  **既存のコントロールに一意の名前を付けるには**  
   
@@ -94,7 +94,7 @@ XAML ベースの Windows ストア アプリケーション用のコード化�
   
  ![対話型要素に名前を付けるためプロジェクトを設定](../test/media/cuit-windowsstoreproeprty-blend-2.png "CUIT_WindowsStoreProeprty_Blend_2")  
   
-###  <a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> データ テンプレートを使用する  
+### <a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> データ テンプレートを使用する  
  ItemTemplate を使用して簡単なテンプレートを定義すると、リスト ボックスの値を変数にバインドできます。次のような XAML を使用します。  
   
 ```xaml  
@@ -136,7 +136,7 @@ XAML ベースの Windows ストア アプリケーション用のコード化�
  どちらの例でも、次に示すコードのように ItemSource の ToString() メソッドをオーバーライドする必要があります。 バインディングによって各データ バインド リスト項目に一意のオートメーション プロパティを設定することはできないため、このコードを使用して、AutomationProperties.Name 値を設定し、その値が確実に一意になるようにします。 この場合、Automation Properties.Name に一意の値を設定するだけで十分です。  
   
 > [!NOTE]
->  この方法を使用すると、リスト項目の内部コンテンツをバインディングによって Employee クラスの文字列に設定することもできます。 この例に示されているように、各リスト項目内のボタン コントロールには、Employee ID を表す一意のオートメーション ID が割り当てられます。  
+> この方法を使用すると、リスト項目の内部コンテンツをバインディングによって Employee クラスの文字列に設定することもできます。 この例に示されているように、各リスト項目内のボタン コントロールには、Employee ID を表す一意のオートメーション ID が割り当てられます。  
   
 ```  
   
@@ -157,7 +157,7 @@ public override string ToString()
   
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> コントロール テンプレートを使用する  
+### <a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> コントロール テンプレートを使用する  
  コントロール テンプレートを使用すると、特定の型の各インスタンスがコードで定義されるときに、一意のオートメーション プロパティが与えられるようにすることができます。 AutomationProperty がコントロール インスタンスの一意の ID にバインドされるようにテンプレートを作成する必要があります。 次の XAML は、コントロール テンプレートを使用してこのバインディングを作成する方法を示しています。  
   
 ```xaml  
@@ -185,7 +185,7 @@ public override string ToString()
 <Button Content=”Button2” Style="{StaticResource MyButton}" Width="140"/>  
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> ダイナミック コントロール  
+### <a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> ダイナミック コントロール  
  コードから動的に作成され、静的に、または XAML ファイルのテンプレートから作成されていないコントロールがある場合は、コントロールの Content プロパティまたは Name プロパティを設定する必要があります。 これにより、各ダイナミック コントロールに確実に一意のオートメーション プロパティが与えられるようにします。 たとえば、リスト項目を選択したときに表示するチェック ボックスがある場合は、次に示すようにこれらのプロパティを設定できます。  
   
 ```csharp  

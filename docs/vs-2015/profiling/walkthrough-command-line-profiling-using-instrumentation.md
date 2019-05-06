@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439695"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>チュートリアル: コマンドラインのインストルメンテーションを使用したプロファイリング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60064694"
  インストルメンテーションとは、プローブ関数を含むプロファイルされたバイナリのバージョンを特別に構築するプロファイル方法です。プローブ関数はインストルメントされたモジュール内の関数に制御が渡されるときと、関数から制御が返されるときのタイミング情報を収集します。 このプロファイル方法は、サンプリングよりも深くプログラムに入り込むので、オーバーヘッドが大きくなります。 インストルメントされたバイナリはデバッグまたはリリース バイナリよりも大きく、配置向けではありません。  
   
 > [!NOTE]
->  インストルメントされたバイナリを顧客に送信しないでください。 インストルメントされたバイナリには、さまざまなリスクが存在します。 セキュリティ上のリスクはもちろん、バイナリにはアプリケーションのリバース エンジニアリングを容易に行うことができてしまう情報が含まれています。  
+> インストルメントされたバイナリを顧客に送信しないでください。 インストルメントされたバイナリには、さまざまなリスクが存在します。 セキュリティ上のリスクはもちろん、バイナリにはアプリケーションのリバース エンジニアリングを容易に行うことができてしまう情報が含まれています。  
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>インストルメンテーション メソッドを使用して PeopleTrax アプリケーションをプロファイルするには  
   

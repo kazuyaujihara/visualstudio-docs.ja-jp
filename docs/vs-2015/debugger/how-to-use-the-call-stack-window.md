@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f40f5f27d603b67e6a7403f5327ffd89b486fa10
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 65dafa09035e937e9ee48005c4f29c441d983c37
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430294"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>方法: 呼び出し履歴 ウィンドウを使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "60106458"
  ショートカット メニューを使用することにより、スレッド間の呼び出しを表示するかどうかを選択できます。  
   
 > [!NOTE]
->  使用している設定またはエディションによっては、ヘルプの記載と異なるダイアログ ボックスやメニュー コマンドが表示される場合があります。 設定を変更するには、**[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 使用している設定またはエディションによっては、ヘルプの記載と異なるダイアログ ボックスやメニュー コマンドが表示される場合があります。 設定を変更するには、**[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>[呼び出し履歴] ウィンドウを表示するには (中断モードまたは実行モードの場合)  
   

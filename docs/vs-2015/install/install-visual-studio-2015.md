@@ -19,12 +19,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8e6f39e420981615f391103c6cee431f930190bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 677a72f0378c62f2ca65515ec563069f22b9ff09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433019"
 ---
 # <a name="install-visual-studio-2015"></a>Visual Studio 2015 のインストール
 
@@ -53,7 +53,7 @@ ms.locfileid: "60118098"
  カスタム コンポーネントに含まれるのは、Visual C++、Visual F#、SQL Server Data Tools、クロス プラットフォームのモバイル ツールおよび SDK、サード パーティの SDK、拡張機能などです。 カスタム コンポーネントはいずれも、初期セットアップ時に選択しなくても後でインストールすることができます。
 
 > [!NOTE]
->  カスタム インストールには、既定のインストールに含まれるコンポーネントが自動的に組み込まれます。
+> カスタム インストールには、既定のインストールに含まれるコンポーネントが自動的に組み込まれます。
 
  カスタム コンポーネントの完全な一覧は、次のとおりです。
 
@@ -70,7 +70,7 @@ ms.locfileid: "60118098"
  インストール メディア (Dvd) を使用してから、Visual Studio サブスクリプションのサービスを使用して、Visual Studio をインストールすることができます、 [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)から web インストーラーをダウンロードすることによって、web サイト、 [Visual Studioダウンロード](http://go.microsoft.com/fwlink/?LinkId=517106)web サイト、またはオフライン インストール レイアウトを作成して (を参照してください、[の作成、オフライン インストールの Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)の詳細 ページ)。
 
 > [!IMPORTANT]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]をインストールするには、管理者の資格情報が必要です。 ただしインストール後、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の使用には不要です。
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]をインストールするには、管理者の資格情報が必要です。 ただしインストール後、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の使用には不要です。
 
  Visual Studio のすべてをインストールするには、ローカル管理者アカウントの次の特権が有効になっている必要があります。
 

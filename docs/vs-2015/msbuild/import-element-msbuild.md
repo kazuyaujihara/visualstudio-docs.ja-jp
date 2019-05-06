@@ -19,12 +19,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7e119eccb31774bc5b300bf9608cb2e23eb83d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 9f8edefc8e097f7ada67041b807231f594774548
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433549"
 ---
 # <a name="import-element-msbuild"></a>Import 要素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +75,9 @@ ms.locfileid: "59654296"
  インポートされるプロジェクトのスキーマは、標準プロジェクトのスキーマと同じです。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] で、インポートされるプロジェクトをビルドできる場合もありますが、インポートされるプロジェクトには、設定するプロパティやターゲットを実行する順序に関する情報が通常は含まれていないため、ビルドできる可能性は低くなります。 インポートされるプロジェクトのこれらの情報は、インポートするプロジェクトに依存します。  
   
 > [!NOTE]
->  条件付き import ステートメントがコマンド ライン MSBuilds で動作するときは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 統合開発環境 (IDE) の MSBuilds とは連携しません。 条件付きインポートは、プロジェクトを読み込むときに設定される構成およびプラットフォームの値を使用して評価されます。 その後、プロジェクト ファイルでの条件の再評価が必要となる変更 (プラットフォームの変更など) が加えられると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] はプロパティと項目の条件を再評価します。ただし、インポートの条件の再評価は行いません。 インポート条件は再評価されないため、インポートはスキップされます。  
+> 条件付き import ステートメントがコマンド ライン MSBuilds で動作するときは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 統合開発環境 (IDE) の MSBuilds とは連携しません。 条件付きインポートは、プロジェクトを読み込むときに設定される構成およびプラットフォームの値を使用して評価されます。 その後、プロジェクト ファイルでの条件の再評価が必要となる変更 (プラットフォームの変更など) が加えられると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] はプロパティと項目の条件を再評価します。ただし、インポートの条件の再評価は行いません。 インポート条件は再評価されないため、インポートはスキップされます。  
 >   
->  このような状況が発生することを回避するには、.targets ファイルに条件付き import ステートメントを配置するか、または [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) ブロックなどの条件付きブロックにコードを配置します。  
+> このような状況が発生することを回避するには、.targets ファイルに条件付き import ステートメントを配置するか、または [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) ブロックなどの条件付きブロックにコードを配置します。  
   
 ## <a name="wildcards"></a>ワイルドカード  
  .NET Framework 4 では、MSBuild で、Project 属性でのワイルドカードが許可されます。 ワイルドカードがある場合、見つかったすべての一致が並べ替えられ (再現可能性の確保のため)、順序が明示的に設定されていたかのように、その順序でインポートされます。  
@@ -116,4 +116,4 @@ ms.locfileid: "59654296"
   
 ## <a name="see-also"></a>関連項目
  [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)   
- [方法: 複数のプロジェクト ファイルで同じターゲットを使用します。](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [方法: 複数のプロジェクト ファイルで同じターゲットを使用する](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

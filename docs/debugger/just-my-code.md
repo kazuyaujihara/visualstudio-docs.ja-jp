@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: edb78ed49add85b35f3fb89b4ba424d44f52bf8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905792"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>マイ コードのみのユーザー コードのみのデバッグします。
 
@@ -188,8 +188,8 @@ A *.natstepfilter*ファイルは、この構文を使用して XML ファイル
 |要素|説明|
 |-------------|-----------------|
 |`Function`|必須。 1 つ以上の関数を非ユーザー関数として指定します。|
-|`Name`|必須。 一致を照合する完全な関数名を指定する ECMA-262 書式の正規表現。 例:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> は、`MyNS::MyClass` のすべてのメソッドが非ユーザー コードと見なされることをデバッガーに知らせます。 一致照合では、大文字と小文字が区別されます。|
-|`Module`|省略可能です。 関数を含むモジュールへの完全パスを指定する ECMA-262 書式の正規表現。 一致では、大文字と小文字を区別しません。|
+|`Name`|必須。 一致を照合する完全な関数名を指定する ECMA-262 書式の正規表現。 例えば:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> は、`MyNS::MyClass` のすべてのメソッドが非ユーザー コードと見なされることをデバッガーに知らせます。 一致照合では、大文字と小文字が区別されます。|
+|`Module`|任意。 関数を含むモジュールへの完全パスを指定する ECMA-262 書式の正規表現。 一致では、大文字と小文字を区別しません。|
 |`Action`|必須。 大文字と小文字が区別される以下のいずれかの値です。<br /><br /> `NoStepInto`  -関数をステップ オーバーするデバッガーに指示します。<br /> `StepInto`  -その他のオーバーライド、関数にステップ インをデバッガーに指示`NoStepInto`一致する関数。|
 
 ## <a name="BKMK_JavaScript_Just_My_Code"></a>JavaScript での "マイ コードのみ"

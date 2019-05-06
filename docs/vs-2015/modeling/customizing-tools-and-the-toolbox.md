@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 47b108cfbef8831f9650c7e1af29d528aa8abaa2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a91615fc711d98970c1aace57cbef814e6fc2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433211"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>ツールおよびツールボックスのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Editor
 - タブとツールを削除します。  
   
 > [!IMPORTANT]
->  DSL エクスプローラー内の項目を追加または貼り付けるには、新しいノードの親の親を右クリックします。 たとえば、ツールを追加する、タブを右クリックしないと、**ツール**ノード。 タブを追加するを右クリックし、**エディター**ノード。  
+> DSL エクスプローラー内の項目を追加または貼り付けるには、新しいノードの親の親を右クリックします。 たとえば、ツールを追加する、タブを右クリックしないと、**ツール**ノード。 タブを追加するを右クリックし、**エディター**ノード。  
   
  **ツールボックス アイコン**すべてのツールのプロパティは、16 x 16 ビットマップ ファイルを参照します。 これらのファイルは通常保持、 **dsl \resources**フォルダー。  
   
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   これらのカスタマイズを実施するためにプログラム コードを準備する必要があります。 どのようなコードを準備する必要があるのかを知るためには、これらのボックスのいずれかをチェックし、[すべてのテンプレートの変換] をクリックして、ソリューションをビルドします。 エラー レポートが生成されます。 エラー レポートをダブルクリックし、追加する必要があるコードを説明しているコメントを確認します。  
   
 > [!NOTE]
->  カスタム コードを追加するには、GeneratedCode フォルダー内のコード ファイルとは別のコード ファイルに部分クラス定義を作成します。 作業内容を失わないために、生成されたコード ファイルを編集しないでください。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。  
+> カスタム コードを追加するには、GeneratedCode フォルダー内のコード ファイルとは別のコード ファイルに部分クラス定義を作成します。 作業内容を失わないために、生成されたコード ファイルを編集しないでください。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。  
   
 #### <a name="creating-custom-connection-code"></a>カスタム接続コードの作成  
  各リンク接続ディレクティブで、**ソース ロール ディレクティブ** タブの定義からな型をドラッグできます。 同様に、**ターゲット ロール ディレクティブ**へのタブを定義する型をドラッグできます。 種類ごとに、さらに指定できます (そのリンク接続ディレクティブです) の接続を許可するを設定するかどうか、**カスタム受け入れ**フラグを設定し、余分なコードを指定します。  

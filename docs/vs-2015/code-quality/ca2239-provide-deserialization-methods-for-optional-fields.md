@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 5bfb682e3b2220a6eb68e7f225e147b8106c3e7c
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58962520"
@@ -63,4 +63,4 @@ ms.locfileid: "58962520"
 
  [CA2237:ISerializable 型を serializableattribute に設定します](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2120:セキュリティで保護されたシリアル化コンス トラクター](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120:セキュリティで保護されたシリアル化コンストラクター](../code-quality/ca2120-secure-serialization-constructors.md)

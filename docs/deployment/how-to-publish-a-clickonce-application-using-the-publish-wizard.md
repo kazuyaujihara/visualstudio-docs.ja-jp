@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5937a54c43cf972dcebb25c12cddf6b76b2cb4bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2eac5778320b45b841cdff2c8d95f6a591386712
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406734"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行する
 ユーザーが ClickOnce アプリケーションを利用できるようにするには、アプリケーションをファイル共有やパス、FTP サーバー、またはリムーバブル メディアに発行する必要があります。 アプリケーションの発行は、発行ウィザードを使用して実行できます。発行に関連する追加のプロパティは、**プロジェクト デザイナー**の **[発行]** ページで設定できます。 詳細については、「[ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)」を参照してください。
@@ -80,7 +80,7 @@ ms.locfileid: "60069864"
 4. **[ユーザーはアプリケーションをどのようにインストールするのですか?]** ページで、**[CD-ROM または DVD-ROM から]**、**[次へ]** の順にクリックします。
 
    > [!NOTE]
-   >  CD-ROM がドライブに挿入されたらインストールが自動的に実行されるようにする場合は、**プロジェクト デザイナー**の **[発行]** ページを開き、**[オプション]** ボタンをクリックします。次に **[発行オプション]** ウィザードで、**[CD からインストールする場合、CD が挿入されるときにセットアップを自動的に開始する]** を選択します。
+   > CD-ROM がドライブに挿入されたらインストールが自動的に実行されるようにする場合は、**プロジェクト デザイナー**の **[発行]** ページを開き、**[オプション]** ボタンをクリックします。次に **[発行オプション]** ウィザードで、**[CD からインストールする場合、CD が挿入されるときにセットアップを自動的に開始する]** を選択します。
 
 5. アプリケーションを CD-ROM で配布する場合は、Web サイトで更新プログラムを提供する必要が生じることがあります。 **[アプリケーションの更新プログラムはどこで確認するのですか?]** ページの更新オプションを 1 つ選択します。
 
@@ -95,7 +95,7 @@ ms.locfileid: "60069864"
     状態通知領域に発行ステータスが表示されます。
 
    > [!NOTE]
-   >  発行が完了したら、CD-Rewriter または DVD-Rewriter を使用して、手順 3. で指定した場所にあるファイルを CD-ROM メディアまたは DVD-ROM メディアにコピーする必要があります。
+   > 発行が完了したら、CD-Rewriter または DVD-Rewriter を使用して、手順 3. で指定した場所にあるファイルを CD-ROM メディアまたは DVD-ROM メディアにコピーする必要があります。
 
 ## <a name="see-also"></a>関連項目
 

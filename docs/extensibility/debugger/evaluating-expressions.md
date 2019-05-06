@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: de25fca07642414ec42f17c2e458b90ce94041cb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925792"
 ---
 # <a name="evaluate-expressions"></a>式を評価します。
 式は、から渡された文字列から作成された、 **[自動変数]**、**ウォッチ**、 **[クイック ウォッチ]**、または**イミディ エイト**windows。 式が評価され、変数または引数とその値の型と名前を含む印刷文字列が生成されます。 この文字列は、対応する IDE ウィンドウに表示されます。

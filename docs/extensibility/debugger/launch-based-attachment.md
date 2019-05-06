@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0cf41afa91ce1e77904b99f17ea0321e9bdb12d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889551"
 ---
 # <a name="launch-based-attachment"></a>起動ベースの添付ファイル
 プログラムを起動ベースの添付ファイルは自動です。 によって、SDM をプログラムをホストするプロセスを起動すると起動ベースの添付ファイルは手動の添付ファイルのメソッドのようなパスに従います。 詳しくは、次を参照してください。[プログラムにアタッチ](../../extensibility/debugger/attaching-to-the-program.md)します。

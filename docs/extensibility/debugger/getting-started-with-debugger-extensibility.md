@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6f3fe14cff05f37ef7ee6f10026fd727696a223f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925720"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>デバッガーの拡張性を概要します。
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]の作成し、カスタマイズのデバッガーのコンポーネント内からプログラムをデバッグするために使用する必要のある情報を提供します、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境。

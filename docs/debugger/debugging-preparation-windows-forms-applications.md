@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5cc06e33b3549bda9bdc9fe04073ca4cf0d9e9a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851784"
 ---
-# <a name="debugging-preparation-windows-forms-applications"></a>デバッグの準備 : Windows フォーム アプリケーション
+# <a name="debugging-preparation-windows-forms-applications"></a>デバッグの準備: Windows フォーム アプリケーション
 Windows フォーム プロジェクト テンプレートは、Windows フォーム アプリケーションを作成します。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、この種類のアプリケーションを簡単にデバッグできます。 詳細については、次を参照してください。 [Windows アプリケーション プロジェクトを作成する](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))します。
 
  プロジェクト テンプレートを使用して Windows フォーム プロジェクトを作成する場合、デバッグ構成とリリース構成に必要な設定は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によって自動的に作成されます。 この設定は必要に応じて変更できます。 設定の変更は、**[\<プロジェクト名> プロパティ ページ]** ダイアログ ボックス (Visual Basic の場合は **[My Project]**) で行います。
@@ -67,7 +67,7 @@ Windows フォーム プロジェクト テンプレートは、Windows フォ�
 ## <a name="see-also"></a>関連項目
 - [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)
 - [C#、F#、および Visual Basic のプロジェクト](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
-- [方法 : デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)
+- [方法: デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)
 - [C# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [実行中のプロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

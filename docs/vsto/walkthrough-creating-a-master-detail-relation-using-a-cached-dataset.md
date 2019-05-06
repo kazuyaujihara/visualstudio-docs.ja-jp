@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: abbc39bece090db962b35c61cb7e77fabaea6be9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3380b9c5302ed6e8a1bf6965f5fb1f259e3a6682
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438550"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>チュートリアル: キャッシュされたデータセットを使用したマスター/詳細関係を作成します。
   このチュートリアルでは、ワークシートで、マスター/詳細関係を作成して、ソリューションをオフラインで使用できるように、データのキャッシュを示します。
@@ -36,7 +36,7 @@ ms.locfileid: "60091500"
 - プロジェクトをテストします。
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。

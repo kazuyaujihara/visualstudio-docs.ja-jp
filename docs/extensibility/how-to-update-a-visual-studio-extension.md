@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04af0f7a24cc4fc50cb65ac75f085ebf3385eeca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4eb438db5fd911ed93f7072902281815633d06a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415457"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>方法: Visual Studio 拡張機能を更新します。
 使用して、システムに Visual Studio 拡張機能を更新する**拡張機能と更新**更新されたバージョンをインストールします。 VSIX マニフェストのバージョン番号をインクリメントして更新されるとは、拡張機能の更新バージョンを作成する場合を示すことができます。
@@ -43,7 +43,7 @@ ms.locfileid: "60042120"
 1. Visual Studio で、拡張機能を更新するためのソリューションを開きます。 変更を行います。
 
     > [!IMPORTANT]
-    >  未署名のすべてのユーザー拡張機能は自動的に更新されません。 常に、拡張機能に署名する必要があります。
+    > 未署名のすべてのユーザー拡張機能は自動的に更新されません。 常に、拡張機能に署名する必要があります。
 
 2. **ソリューション エクスプ ローラー**オープン*source.extension.manifest*します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "60042120"
      有効にまたはの下部にある更新プログラムの自動チェックを無効にすることができます、**更新**ウィンドウ (**使用可能な更新プログラムの自動検出を有効または無効に**)、変更、**の確認更新プログラム**設定**ツール** > **オプション** > **環境** >  **拡張機能と更新**します。
 
     > [!NOTE]
-    >  Visual Studio 2015 Update 2 以降を指定できます (で**ツール** > **オプション** > **環境** >  **拡張機能と更新**) ユーザー単位の拡張、すべてのユーザー拡張機能、または両方 (既定の設定) の自動更新をするかどうか。
+    > Visual Studio 2015 Update 2 以降を指定できます (で**ツール** > **オプション** > **環境** >  **拡張機能と更新**) ユーザー単位の拡張、すべてのユーザー拡張機能、または両方 (既定の設定) の自動更新をするかどうか。
 
 ## <a name="see-also"></a>関連項目
 - [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)

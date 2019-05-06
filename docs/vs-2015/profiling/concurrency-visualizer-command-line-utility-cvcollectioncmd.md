@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444056"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>コンカレンシー ビジュアライザー コマンドライン ユーティリティ (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54752914"
 コンカレンシー ビジュアライザーのコマンド ライン ユーティリティ (CVCollectionCmd.exe) を使用して、コマンド ラインからトレースを収集することで、Visual Studio 用のコンカレンシー ビジュアライザーでトレースを表示できます。 これらのツールは、Visual Studio がインストールされていないコンピューターで使用できます。  
   
 > [!NOTE]
->  Visual Studio 2013 以降、コンカレンシー ビジュアライザーは任意の拡張機能となっています。 (以前は、Visual Studio に含まれていました。)ダウンロード センターから [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) をダウンロードできます。  
+> Visual Studio 2013 以降、コンカレンシー ビジュアライザーは任意の拡張機能となっています。 (以前は、Visual Studio に含まれていました。)ダウンロード センターから [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) をダウンロードできます。  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>コンカレンシー ビジュアライザーのコマンド ライン ユーティリティのダウンロード  
  コマンド ライン ユーティリティをダウンロードしてインストールするには、[Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) に移動して指示に従います。 既定では、CVCollectionCmd.exe のインストール先は %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ on x64 computers) となっています。  
@@ -57,7 +57,7 @@ ms.locfileid: "54752914"
  CVCollectionCmd を使用してトレースを収集する際に、コレクション設定をカスタマイズする必要がある場合には、構成ファイルを使用してコレクション設定を指定します。  
   
 > [!NOTE]
->  Visual Studio を使用してトレースを収集する場合は、構成ファイルを直接変更しないでください。  代わりに、 [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを使用して設定を変更します。  
+> Visual Studio を使用してトレースを収集する場合は、構成ファイルを直接変更しないでください。  代わりに、 [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを使用して設定を変更します。  
   
  コレクション設定を変更するには、CVCollectionCmd ユーティリティを実行するコンピューター上に構成ファイルを作成します。 新しい構成ファイルを作成することも、Visual Studio がインストールされているコンピューター上の構成ファイルをコピーして、そのコピーを変更することもできます。 構成ファイルの名前は `UserConfig.xml` で、保管先は **[Local AppData]** フォルダーです。 ユーティリティを実行するときに、Launch、Attach、または Analyze コマンドと共に Config オプションを使用します。  Config オプションに関連付けられているパラメータに、構成ファイルのパスを指定します。  
   
@@ -75,8 +75,8 @@ ms.locfileid: "54752914"
 |Markers|マーカー プロバイダーのリストが格納されます。|0 個以上の MarkerProvider 要素を格納できます。|  
 |MarkerProvider|単一のマーカー プロバイダーを指定します。|以下の要素が含まれている必要があります。<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 以下の要素を含めることができます。<br /><br /> -   Categories<br />-   IsEnabled|  
 |レベル|MarkerProvider の重要度レベルを設定します。|-   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything|  
-|GUID|ETW マーカー プロバイダーのグローバル一意識別子。|GUID。|  
-|name|マーカー プロバイダーの説明を指定します。|文字列。|  
+|Guid|ETW マーカー プロバイダーのグローバル一意識別子。|GUID。|  
+|名前|マーカー プロバイダーの説明を指定します。|文字列。|  
 |カテゴリ|マーカー プロバイダーについて収集するカテゴリを指定します。|コンマ区切りの文字列または数値の範囲。|  
 |IsEnabled|マーカー プロバイダーをコレクションに有効にするかどうかを判別する値を設定します。|-   True<br />-   False|  
 |FilterConfig|コレクションからフィルター処理する ETW イベントの構成オプションのリストを指定します。|以下の要素を含めることができます。<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO|  

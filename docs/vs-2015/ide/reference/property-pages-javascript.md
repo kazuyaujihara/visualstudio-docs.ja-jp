@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f239da7816f72b9204364303113d32f5e06c4fd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436875"
 ---
 # <a name="property-pages-javascript"></a>プロパティ ページ、JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "59661907"
  次のオプションを使用して、プロジェクトの全般プロパティを設定します。  
   
 > [!NOTE]
->  一部のオプションは、Windows ストア アプリでのみ使用できます。  
+> 一部のオプションは、Windows ストア アプリでのみ使用できます。  
   
  **出力パス**  
  プロジェクト構成の出力ファイルの場所を指定します。 表示されているのは相対パスです。絶対パスを入力すると、その絶対パスがプロジェクトに保存されます。 既定の相対パスは bin\Debug です。  
@@ -62,7 +62,7 @@ ms.locfileid: "59661907"
  次のオプションを使用して、プロジェクト内のデバッグ動作のプロパティを設定します。  
   
 > [!NOTE]
->  一部のオプションは、Windows ストア アプリでのみ使用できます。  
+> 一部のオプションは、Windows ストア アプリでのみ使用できます。  
   
  **[起動するデバッガー]**  
  デバッガーの既定のホストを指定します。  

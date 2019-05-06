@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7bd8bae0213755b11c145c4bef9c312fe3990c4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432321"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>方法: ビルド ログ ファイルを表示、保存、および構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Visual Studio IDE でプロジェクトをビルドしたら、**[出力]** ウ�
      詳細については、「[[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)」および「<xref:Microsoft.Build.Framework.LoggerVerbosity>」を参照してください。  
   
     > [!IMPORTANT]
-    >  **[出力]** ウィンドウ (すべてのプロジェクト) と *ProjectName*.txt ファイル (C++ プロジェクトのみ) に変更を反映するには、プロジェクトをリビルドする必要があります。  
+    > **[出力]** ウィンドウ (すべてのプロジェクト) と *ProjectName*.txt ファイル (C++ プロジェクトのみ) に変更を反映するには、プロジェクトをリビルドする必要があります。  
   
 ## <a name="see-also"></a>関連項目
  [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)   

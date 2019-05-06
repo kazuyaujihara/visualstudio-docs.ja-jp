@@ -11,11 +11,11 @@ ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.openlocfilehash: 3790d370e969a913db31c3bab139b2c42ef97d22
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964758"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure クラウド サービスと仮想マシンに対する診断を設定する
 Azure クラウド サービスまたは Azure 仮想マシンのトラブルシューティングを行うときは、Visual Studio を使用して Azure Diagnostics を簡単に構成できます。 診断は、クラウド サービスを実行する仮想マシンと仮想マシン インスタンスのシステム データとログ データを取り込みます。 診断データは、選択したストレージ アカウントに転送されます。 Azure での診断ログの詳細については、「[Azure App Service の Web アプリの診断ログの有効化](/azure/app-service/web-sites-enable-diagnostic-log)」を参照してください。

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91ccf1637d6b8a1f612031c8d59deeef8e07efc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 575f17c641eb057dc01fb3302098bd9f8b47f9c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431604"
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>パフォーマンス ツールに関する問題のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ ms.locfileid: "60077356"
 - プロファイリング データ (.vsp) ファイルにシンボル情報を埋め込みます。 詳細については、「[パフォーマンス データ ファイルを使ったシンボル情報の保存](../profiling/saving-symbol-information-with-performance-data-files.md)」を参照してください。  
   
 > [!NOTE]
->  解析エンジンを使用する場合、.pdb ファイルと、コンパイル済みのアプリケーション ファイルを同じバージョンにする必要があります。 古いビルドまたは新しいビルドのアプリケーション ファイルの .pdb ファイルは機能しません。
+> 解析エンジンを使用する場合、.pdb ファイルと、コンパイル済みのアプリケーション ファイルを同じバージョンにする必要があります。 古いビルドまたは新しいビルドのアプリケーション ファイルの .pdb ファイルは機能しません。

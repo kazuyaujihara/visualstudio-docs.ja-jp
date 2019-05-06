@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 304e9f29d317a5258467e4ff45248d0dd2066d4f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966810"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>方法: SharePoint web パーツを作成します。
   作成して web パーツを追加することでカスタマイズを**Web パーツ**を SharePoint プロジェクト項目し、web パーツまたはデザイナーを使用してコード ファイルを編集します。 詳細については、「[方法 :デザイナーを使用して、SharePoint web パーツを作成する](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)します。

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15bb3c7bca9db7e268dde998e210629a8167497f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430360"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>チュートリアル: 作成し、SharePoint ワークフロー ソリューションのデバッグ
   このチュートリアルでは、基本的なシーケンシャル ワークフロー テンプレートを作成する方法を示します。 ワークフローは、ドキュメントが確認されたかどうかを判断する共有ドキュメント ライブラリのプロパティを確認します。 ドキュメントをレビューすると、ワークフローが終了します。
@@ -35,9 +35,9 @@ ms.locfileid: "60109557"
 - ワークフロー アクティビティのイベントを処理します。
 
 > [!NOTE]
->  このチュートリアルでは、シーケンシャル ワークフロー プロジェクトでは、プロセスはステート マシンのワークフロー プロジェクトに同じです。
+> このチュートリアルでは、シーケンシャル ワークフロー プロジェクトでは、プロセスはステート マシンのワークフロー プロジェクトに同じです。
 >
->  また、コンピューター可能性がありますさまざまな名前や場所が一部の Visual Studio のユーザー インターフェイス要素次の手順で。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> また、コンピューター可能性がありますさまざまな名前や場所が一部の Visual Studio のユーザー インターフェイス要素次の手順で。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。

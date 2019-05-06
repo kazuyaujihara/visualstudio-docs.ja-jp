@@ -10,12 +10,12 @@ ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e82c8b6268affc4fb473c799d973c66db69c111b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a0233873ba5d6ea2fca746f8e12f4bf693b79da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444060"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>カスタム エディターでの構文の色分け表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Visual Studio 環境の SDK エディターなどのコア エディターは、
 3. によって返される色づけの情報を使用して<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>を再描画し、そのテキストが表示されます。  
   
 > [!NOTE]
->  言語サービスの colorizer だけでなく、VSPackage は、汎用的な Visual Studio 環境の SDK のテキストの色指定メカニズムを使用してが選択できます。 このメカニズムの詳細については、次を参照してください。[を使用してフォントおよび色](../extensibility/using-fonts-and-colors.md)します。  
+> 言語サービスの colorizer だけでなく、VSPackage は、汎用的な Visual Studio 環境の SDK のテキストの色指定メカニズムを使用してが選択できます。 このメカニズムの詳細については、次を参照してください。[を使用してフォントおよび色](../extensibility/using-fonts-and-colors.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [構文の色分け、従来の言語サービス](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   

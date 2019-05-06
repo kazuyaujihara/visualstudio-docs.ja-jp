@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45e1ad3c89d811a0a2bd715c86d8fcd8006600b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7a123a42c1a46faf67fb5b63b1ab4ef300735f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443459"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>方法: Windows シンボル情報を参照
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60086703"
 Visual Studio プロファイリング ツールは、シンボル (.pdb) ファイルを使用して、プログラム バイナリの関数名などのシンボル名を解決します。 次の手順を使って、ローカル コンピューター上の Windows のバージョンに適切な .pdb ファイルを自動的にダウンロードし、更新することができます。  
   
 > [!NOTE]
->  この設定は、既存のレポートには影響しません。 シンボル サーバーを指定した後に作成されたレポートだけにシンボル情報が含まれます。  
+> この設定は、既存のレポートには影響しません。 シンボル サーバーを指定した後に作成されたレポートだけにシンボル情報が含まれます。  
   
  詳細については、[シンボル (.pdb) ファイルとソース ファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)に関する記事をご覧ください。  
   

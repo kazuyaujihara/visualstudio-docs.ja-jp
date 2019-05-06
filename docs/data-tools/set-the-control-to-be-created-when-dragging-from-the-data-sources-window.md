@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f43219cc5329b46cdaba052a9f46709ee0af406f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565985"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>[データ ソース] ウィンドウからドラッグしたときに作成されるコントロールを設定する
 
@@ -65,7 +65,7 @@ ms.locfileid: "55933887"
 
      利用できるコントロールのリストは、開いたデザイナー、プロジェクトのターゲットである .NET Framework のバージョン、および**ツールボックス**に追加したデータ バインディングをサポートするカスタム コントロールによって異なります。 作成するコントロールが利用できるコントロールのリストに含まれている場合、コントロールをリストに追加できます。 詳細については、次を参照してください。[データ ソース ウィンドウにカスタム コントロールを追加](../data-tools/add-custom-controls-to-the-data-sources-window.md)します。
 
-     データ列またはプロパティのコントロールのリストに追加できるカスタム コントロールを作成する方法については、**データソース**ウィンドウを参照してください[の単純データバインディングをサポートするWindowsフォームユーザーコントロールの作成](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
+     コントロールのデータ列またはプロパティの一覧に追加できるカスタム コントロールを作成する方法について、**データソース**ウィンドウを参照してください[の単純データバインディングをサポートするWindowsフォームユーザーコントロールを作成します](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)。
 
      列またはプロパティのコントロールを作成しない場合は、選択**None**ドロップダウン メニュー。 これは、親のテーブルまたはオブジェクトをデザイナーにドラッグする必要があり、かつ特定の列またはプロパティを含める必要がない場合に便利です。
 

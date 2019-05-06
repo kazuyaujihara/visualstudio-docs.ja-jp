@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6506fec976822ea4a4e675c9961395c952a7a35f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970306"
 ---
 # <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Word キーボード、Microsoft Office Keyboard 設定、オプション ダイアログ ボックス
   Microsoft Office Word と Visual Studio 両方のショートカット キーを処理します。 同じショートカット キーの組み合わせは、Word と Visual Studio のさまざまなコマンドのスタンバイことができます。 Word が Visual Studio でのドキュメント レベルのプロジェクトで開いているときは、一度に 1 つだけのアプリケーションは、ショートカット キーのコマンドを受け取ります。 既定では、Visual Studio がショートカット キー、すべてのコマンドを受け取りますが、Word ドキュメントにフォーカスがある場合は、選択して、受信を行うことができます**ダイナミック キーボード スキーム**します。

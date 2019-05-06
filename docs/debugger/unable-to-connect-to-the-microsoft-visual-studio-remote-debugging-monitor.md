@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5c5f6d73f3606813fd9a1954cdc10bb562baf34
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 56ce4766f2afb148bbbc495d151b052de3334a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407728"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio リモート デバッグ モニターに接続できません。
 このメッセージは、リモート デバッグ モニターが正しくリモート コンピューターで設定されていないか、リモートのコンピューターによってにアクセスできないネットワークの問題またはファイアウォールが存在するために発生する可能性があります。
 
 > [!IMPORTANT]
->  製品のバグによりこのメッセージを受信した場合は、次のようにしてください。[この問題を報告](../ide/how-to-report-a-problem-with-visual-studio.md)Visual Studio にします。 その他の支援が必要な場合は、Microsoft へのお問い合わせ方法について、「 [Talk to Us](../ide/talk-to-us.md) 」を参照してください。
+> 製品のバグによりこのメッセージを受信した場合は、次のようにしてください。[この問題を報告](../ide/how-to-report-a-problem-with-visual-studio.md)Visual Studio にします。 その他の支援が必要な場合は、Microsoft へのお問い合わせ方法について、「 [Talk to Us](../ide/talk-to-us.md) 」を参照してください。
 
 ## <a name="specificerrors"></a>詳細なエラー メッセージとは何ですか。
 

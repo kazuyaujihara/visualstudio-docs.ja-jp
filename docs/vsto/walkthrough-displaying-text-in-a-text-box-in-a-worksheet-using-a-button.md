@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f813c2f9affdfa6715655afba5954b664ead74ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f74eaa8618ce497a760754d084f390a4d1b8c1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436092"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>チュートリアル: ボタンを使用してワークシート内のテキスト ボックスにテキストを表示
   このチュートリアルでは、ボタンやテキスト ボックスを使用して、Microsoft Office Excel ワークシート、および Visual Studio での Office 開発ツールを使用して Excel プロジェクトを作成する方法の基本を説明します。 完成したサンプルとして結果を参照してくださいにある Excel コントロールのサンプルを参照してください。 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)します。
@@ -36,7 +36,7 @@ ms.locfileid: "60110403"
 - プロジェクトをテストします。
 
 > [!NOTE]
->  次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「[Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、次のコンポーネントが必要です。

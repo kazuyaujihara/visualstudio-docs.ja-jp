@@ -16,18 +16,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552f14885a95bf5c8461d6ca9db7ef2dbe204c73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4a9dc406665dc754f0c57c401f672cd4799183ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418452"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>ツールバーの Guid と Visual Studio の Id
-このトピックでは、Visual Studio 統合開発環境 (IDE) に含まれているツールバーの GUID と ID の値を列挙し、含まれているグループのします。 これらの値が定義されている *.vsct* Visual Studio SDK の一部としてインストールされているファイル。 詳細については、[IDE 定義コマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)を参照してください。
+このトピックでは、Visual Studio 統合開発環境 (IDE) に含まれているツールバーの GUID と ID の値を列挙し、含まれているグループのします。 これらの値が定義されている *.vsct* Visual Studio SDK の一部としてインストールされているファイル。 詳細については、次を参照してください。 [IDE 定義コマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)します。
 
 > [!NOTE]
->  Visual Studio を使用できるツールバーの多くが Visual Studio、およびその GUID によって定義されていないと、ID 値がパブリックではありません。 このトピックでは Visual Studio SDK で定義されているツールバーだけ *.vsct*ファイル。
+> Visual Studio を使用できるツールバーの多くが Visual Studio、およびその GUID によって定義されていないと、ID 値がパブリックではありません。 このトピックでは Visual Studio SDK で定義されているツールバーだけ *.vsct*ファイル。
 
  定義されている IDE オブジェクトを操作する方法の詳細についての *.vsct*ファイルを参照してください[メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)します。
 
@@ -108,7 +108,7 @@ ms.locfileid: "56643757"
  ツールバー表示できるツール ウィンドウまたは IDE で直接など**ソリューション エクスプ ローラー**します。 ツール ウィンドウで定義されていないため、 *.vsct*ファイル、ツール ウィンドウのツールバーには親が定義していません。 代わりに、コード内に配置されます。 次の表は、IDE では、ツール ウィンドウに表示されるツールバーおよび含まれるコマンド グループを示します。
 
 > [!NOTE]
->  ツールバーとグループは、GUID を使用して`guidSHLMainMenu`GUID:ID の構文を使用して、それ以外の場合に指定されている場合を除きします。 ツールバーの GUID が指定されているそのツールバーから派生したグループにも適用されます。
+> ツールバーとグループは、GUID を使用して`guidSHLMainMenu`GUID:ID の構文を使用して、それ以外の場合に指定されている場合を除きします。 ツールバーの GUID が指定されているそのツールバーから派生したグループにも適用されます。
 
 |ツール ウィンドウ|ツール バー|グループ|
 |-----------------|-------------|------------|

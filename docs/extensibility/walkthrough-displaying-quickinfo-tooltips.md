@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ef70f9a776163419819e2283a031261c6e84a159
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965207"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>チュートリアル: クイック ヒントを表示します。
 クイック ヒントはメソッド シグネチャを表示する IntelliSense 機能である説明と、ユーザーがポインターをメソッド名の上に移動します。 クイック ヒントの説明を提供する識別子を定義し、コンテンツを表示するツールヒントを作成し、クイック ヒントなど、言語ベースの機能を実装できます。 クイック ヒントを定義するには、言語サービスのコンテキストでまたは独自ファイル名拡張子とコンテンツ タイプを定義し、その型だけのクイック ヒントを表示できますか ("text") などの既存のコンテンツ タイプのクイック ヒントを表示することができます。 このチュートリアルでは、「テキスト」コンテンツ タイプのクイック ヒントを表示する方法を示します。

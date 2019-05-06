@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: fdf7417364d834b00369e211f584caa2ab4cbdf5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dde0cefabf0523484ad76ac56f7f2760de8c7acc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433073"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>方法: Visual Studio の特定のリリースをインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60054470"
 |Visual Studio Enterprise (更新プログラムのないオリジナルの RTM)|Visual Studio Enterprise RTM ( [MSDN サブスクリプションのダウンロード ページ](https://msdn.microsoft.com/subscriptions/downloads/)から入手可能)|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|Visual Studio セットアップでは、RTM のリリース時に利用可能だった feed.xml が使われます|
 
 > [!IMPORTANT]
->  使用する言語によって、"enu" (英語) を次の値のいずれかに置き換えてください。
+> 使用する言語によって、"enu" (英語) を次の値のいずれかに置き換えてください。
 >
 > - chs (簡体字中国語)
 >   - cht (繁体字中国語)

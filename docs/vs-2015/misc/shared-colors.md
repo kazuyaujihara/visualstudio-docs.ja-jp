@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
-ms.openlocfilehash: c09419d1294d51fe0b566acc649bc3f9612acfca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421ff85831bb611b655de2bc35f01423b61921a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436572"
 ---
 # <a name="shared-colors"></a>共有の色
 ここにイントロダクションを挿入します。  
@@ -31,7 +31,7 @@ ms.locfileid: "60117177"
 - **その場所に適したコントロールの色を使用します。** 特定の状態では、一部の Visual Studio コントロールに個別の境界線の色と背景色がありません。 代わりに、それらのコントロールにはその背後のサーフェイスから色が適用されます。 コントロールを配置する場所に適したトークン名を常に使用してください。  
   
 > [!IMPORTANT]
->  "スタート ページ" や "Cider" のカテゴリにあるトークンは使用しないでください。  
+> "スタート ページ" や "Cider" のカテゴリにあるトークンは使用しないでください。  
   
 ### <a name="command-structures"></a>コマンドの構造  
   
@@ -240,7 +240,7 @@ ms.locfileid: "60117177"
 ##### <a name="BKMK_CommandComboBox"></a> コンボ ボックス  
   
 > [!IMPORTANT]
->  コンボ ボックスはドロップダウンに似ていますが、編集可能なテキスト領域が含まれます。 ドロップダウンに編集可能なテキスト領域が含まれていない場合は、 [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)に記載した色トークンを使用します。  
+> コンボ ボックスはドロップダウンに似ていますが、編集可能なテキスト領域が含まれます。 ドロップダウンに編集可能なテキスト領域が含まれていない場合は、 [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)に記載した色トークンを使用します。  
   
  ![コンボ ボックスの赤線](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")  
   
@@ -318,7 +318,7 @@ ms.locfileid: "60117177"
 ##### <a name="BKMK_CommandDropDown"></a> ドロップダウン リスト  
   
 > [!IMPORTANT]
->  ドロップダウンはコンボ ボックスに似ていますが、編集可能なテキスト領域がありません。 ドロップダウンに編集可能なテキスト領域が含まれる場合は、 [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)に見つかる色トークンを使用します。  
+> ドロップダウンはコンボ ボックスに似ていますが、編集可能なテキスト領域がありません。 ドロップダウンに編集可能なテキスト領域が含まれる場合は、 [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)に見つかる色トークンを使用します。  
   
  ![Drop&#45;ダウンの赤線](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")  
   

@@ -8,18 +8,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c78ac8b3f6d25d601ae11bdcbb1aed4214cb8c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: da6c19341a1e1ab37b38ae4f5379ee5aaace5b87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954367"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>クイック スタート: Visual Studio IDE の表示の紹介
 
 この 5 - 10 分程度の Visual Studio 統合開発環境 (IDE) の紹介では、ウィンドウやメニューなどの UI 機能の一部を説明します。
 
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ページに移動し、無料試用版をインストールしてください。
+::: moniker range="vs-2017"
+
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ページに移動し、無料試用版をインストールしてください。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
+
+::: moniker-end
 
 ::: moniker range="vs-2017"
 

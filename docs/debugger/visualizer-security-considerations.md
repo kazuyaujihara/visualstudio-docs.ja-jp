@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a79abb14c6c5eaa47dfacc42f0b1d50b0dadd1c5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929437"
 ---
 # <a name="visualizer-security-considerations"></a>ビジュアライザーのセキュリティに関する考慮事項
 ビジュアライザーを作成すると、セキュリティ上の脅威が発生する可能性があります。 今のところ、この脅威が悪用された例はありませんが、開発者はこの脅威を認識し、以下に説明する適切なセキュリティ対策を講じることによって将来の攻略行為に対抗する必要があります。
@@ -39,6 +39,6 @@ ms.locfileid: "56684288"
 
 ## <a name="see-also"></a>関連項目
 - [ビジュアライザーのアーキテクチャ](../debugger/visualizer-architecture.md)
-- [方法 : ビジュアライザーを記述する](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [方法: ビジュアライザーを記述する](/visualstudio/debugger/create-custom-visualizers-of-data)
 - [カスタム ビジュアライザーを作成する](../debugger/create-custom-visualizers-of-data.md)
 - [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)

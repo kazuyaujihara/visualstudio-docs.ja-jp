@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 037c422befd9ba9103e6a80580bf814fb4b68333
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937330"
 ---
 # <a name="send-activity-designer"></a>Send アクティビティ デザイナー
 **送信**作成および構成するアクティビティ デザイナーが使用される、<xref:System.ServiceModel.Activities.Send>アクティビティ。  

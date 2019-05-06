@@ -12,12 +12,12 @@ ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 46f6b64fecfbbe3a57dad130ad0a65475fad56af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2439a07f63b8da854ca8dc331d26e30f49503257
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435940"
 ---
 # <a name="how-to-open-project-specific-editors"></a>方法: プロジェクト固有のエディターを開く
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60105397"
 1. 呼び出す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>ファイル (ドキュメント データ オブジェクト) が既に開いているかどうかを判断するメソッド (RDT_EditLock)。  
   
     > [!NOTE]
-    >  ドキュメント データとドキュメント ビュー オブジェクトの詳細については、次を参照してください。[ドキュメント データとカスタム エディターでドキュメント ビュー](../extensibility/document-data-and-document-view-in-custom-editors.md)します。  
+    > ドキュメント データとドキュメント ビュー オブジェクトの詳細については、次を参照してください。[ドキュメント データとカスタム エディターでドキュメント ビュー](../extensibility/document-data-and-document-view-in-custom-editors.md)します。  
   
 2. ファイルが既に開いている場合は、呼び出すことによって、ファイルを再び表面化、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>メソッドとの IDO_ActivateIfOpen の値を指定する、`grfIDO`パラメーター。  
   
@@ -56,4 +56,4 @@ ms.locfileid: "60105397"
 ## <a name="see-also"></a>関連項目  
  [開くと、プロジェクト項目の保存](../extensibility/internals/opening-and-saving-project-items.md)   
  [方法: 標準のエディターを開く](../extensibility/how-to-open-standard-editors.md)   
- [方法: 開いているエディターを開いているドキュメントの](../extensibility/how-to-open-editors-for-open-documents.md)
+ [方法: 開いているドキュメントのエディターを開く](../extensibility/how-to-open-editors-for-open-documents.md)

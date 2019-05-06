@@ -9,20 +9,20 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950055"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>方法: Web パフォーマンス テスト結果ビューアー用に Visual Studio アドインを作成する
 
 次の名前空間を使用して、**Web パフォーマンス テスト結果ビューアー**の UI を拡張できます。
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
--   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
+- <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
 また、*%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\Enterprise\Common7\IDE\PrivateAssemblies* フォルダーにある LoadTestPackage DLL に参照を追加する必要があります。
 
@@ -109,31 +109,31 @@ ms.locfileid: "58416358"
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>コントロールを作成して Web テスト結果ビューアーで使用するには
 
-1.  **ソリューション エクスプローラー**で、ソリューションを右クリックし、**[追加]** を選択して **[新しいプロジェクト]** を選択します。
+1. **ソリューション エクスプローラー**で、ソリューションを右クリックし、**[追加]** を選択して **[新しいプロジェクト]** を選択します。
 
 2. 新しい **Windows フォーム コントロール ライブラリ** プロジェクトを作成します。
 
-3.  **ツールボックス**から userControl1 のサーフェイスに <xref:System.Windows.Forms.DataGridView> をドラッグします。
+3. **ツールボックス**から userControl1 のサーフェイスに <xref:System.Windows.Forms.DataGridView> をドラッグします。
 
 4. <xref:System.Windows.Forms.DataGridView> の右上隅のアクション タグ グリフ (![スマート タグ グリフ](../test/media/vs_winformsmttagglyph.gif)) をクリックし、次の手順を実行します。
 
-    1.  **[親コンテナーにドッキングする]** を選択します。
+    1. **[親コンテナーにドッキングする]** を選択します。
 
-    2.  **[追加を有効にする]**、**[編集を有効にする]**、**[削除を有効にする]**、および **[列の並べ替えを有効にする]** の各チェック ボックスをオフにします。
+    2. **[追加を有効にする]**、**[編集を有効にする]**、**[削除を有効にする]**、および **[列の並べ替えを有効にする]** の各チェック ボックスをオフにします。
 
-    3.  **[列の追加]** を選択します。
+    3. **[列の追加]** を選択します。
 
          **[列の追加]** ダイアログ ボックスが表示されます。
 
-    4.  **[種類]** ドロップダウン リストの **[DataGridViewTextBoxColumn]** を選択します。
+    4. **[種類]** ドロップダウン リストの **[DataGridViewTextBoxColumn]** を選択します。
 
-    5.  **[ヘッダー テキスト]** の「Column1」というテキストを削除します。
+    5. **[ヘッダー テキスト]** の「Column1」というテキストを削除します。
 
-    6.  **[追加]** をクリックします。
+    6. **[追加]** をクリックします。
 
-    7.  **[閉じる]** を選択します。
+    7. **[閉じる]** を選択します。
 
-5.  **[プロパティ]** ウィンドウで、<xref:System.Windows.Forms.DataGridView> の **(Name)** プロパティを **resultControlDataGridView** に変更します。
+5. **[プロパティ]** ウィンドウで、<xref:System.Windows.Forms.DataGridView> の **(Name)** プロパティを **resultControlDataGridView** に変更します。
 
 6. デザイン サーフェイスを右クリックし、**[コードの表示]** を選択します。
 
@@ -158,21 +158,21 @@ ms.locfileid: "58416358"
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>WebPerfTestResultsViewerAddin へのコードの追加
 
-1.  **ソリューション エクスプローラー**で、WebPerfTestResultsViewerAddin プロジェクトの **[参照設定]** ノードを右クリックし、**[参照の追加]** を選択します。
+1. **ソリューション エクスプローラー**で、WebPerfTestResultsViewerAddin プロジェクトの **[参照設定]** ノードを右クリックし、**[参照の追加]** を選択します。
 
-2.  **[参照の追加]** ダイアログ ボックスの **[.NET]** タブを選びます。
+2. **[参照の追加]** ダイアログ ボックスの **[.NET]** タブを選びます。
 
-3.  下にスクロールして、**[Microsoft.VisualStudio.QualityTools.WebTestFramework]** を選択し、**[System.Windows.Forms]** を選択します。
+3. 下にスクロールして、**[Microsoft.VisualStudio.QualityTools.WebTestFramework]** を選択し、**[System.Windows.Forms]** を選択します。
 
-4.  **[OK]** をクリックします。
+4. **[OK]** をクリックします。
 
-5.  再度 **[参照設定]** ノードを右クリックして、**[参照の追加]** を選択します。
+5. 再度 **[参照設定]** ノードを右クリックして、**[参照の追加]** を選択します。
 
-6.  **[参照の追加]** ダイアログ ボックスの **[参照]** タブを選びます。
+6. **[参照の追加]** ダイアログ ボックスの **[参照]** タブを選びます。
 
-7.  **[検索対象]** のドロップダウンを選んで、*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* に移動し、*Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* ファイルを選択します。
+7. **[検索対象]** のドロップダウンを選んで、*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* に移動し、*Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* ファイルを選択します。
 
-8.  **[OK]** をクリックします。
+8. **[OK]** をクリックします。
 
 9. WebPerfTestResultsViewerAddin プロジェクト ノードを右クリックして、**[参照の追加]** を選択します。
 
@@ -254,28 +254,28 @@ ms.locfileid: "58416358"
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>WebPerfTestResultsViewerControl にコードを追加する
 
-1.  **ソリューション エクスプローラー**で、WebPerfTestResultsViewerControl プロジェクト ノードを右クリックし、**[プロパティ]** を選択します。
+1. **ソリューション エクスプローラー**で、WebPerfTestResultsViewerControl プロジェクト ノードを右クリックし、**[プロパティ]** を選択します。
 
-2.  **[アプリケーション]** タブを選択して **[ターゲット フレームワーク]** ドロップダウン リストを選びます。次に、**[.NET Framework 4]** を選択して、**[プロパティ]** を閉じます。
+2. **[アプリケーション]** タブを選択して **[ターゲット フレームワーク]** ドロップダウン リストを選びます。次に、**[.NET Framework 4]** を選択して、**[プロパティ]** を閉じます。
 
      これは、**Web パフォーマンス テスト結果ビューアー**の拡張に必要な DLL 参照をサポートするために必要です。
 
-3.  **ソリューション エクスプローラー**で、WebPerfTestResultsViewerControl プロジェクトの **[参照設定]** ノードを右クリックし、**[参照の追加]** を選択します。
+3. **ソリューション エクスプローラー**で、WebPerfTestResultsViewerControl プロジェクトの **[参照設定]** ノードを右クリックし、**[参照の追加]** を選択します。
 
-4.  **[参照の追加]** ダイアログ ボックスの **[.NET]** タブをクリックします。
+4. **[参照の追加]** ダイアログ ボックスの **[.NET]** タブをクリックします。
 
-5.  下にスクロールして、**[Microsoft.VisualStudio.QualityTools.WebTestFramework]** を選択します。
+5. 下にスクロールして、**[Microsoft.VisualStudio.QualityTools.WebTestFramework]** を選択します。
 
-6.  **[OK]** をクリックします。
+6. **[OK]** をクリックします。
 
-7.  *UserControl1.cs* ファイルに、次の Using ステートメントを追加します。
+7. *UserControl1.cs* ファイルに、次の Using ステートメントを追加します。
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     using Microsoft.VisualStudio.TestTools.WebTesting.Rules;
     ```
 
-8.  *Connect.cs* ファイルの WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged メソッドから呼び出されて WebTestRequestResult が渡される Update メソッドを追加します。 Update メソッドは、WebTestRequestResult のメソッドに渡されるさまざまなプロパティを使用して DataGridView を設定します。
+8. *Connect.cs* ファイルの WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged メソッドから呼び出されて WebTestRequestResult が渡される Update メソッドを追加します。 Update メソッドは、WebTestRequestResult のメソッドに渡されるさまざまなプロパティを使用して DataGridView を設定します。
 
     ```csharp
     public void Update(WebTestRequestResult WebTestResults)
@@ -304,27 +304,27 @@ ms.locfileid: "58416358"
 
 ### <a name="to-build-the-solution"></a>ソリューションをビルドするには
 
--   **[ビルド]** メニューの **[ソリューションのビルド]** を選択します。
+- **[ビルド]** メニューの **[ソリューションのビルド]** を選択します。
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>WebPerfTestResultsViewerAddin アドインの登録
 
 ### <a name="to-register-the-add-in-using-the-add-in-manager"></a>アドイン マネージャーを使用してアドインを登録するには
 
-1.  **[ツール]** メニューの **[アドイン マネージャー]** を選択します。
+1. **[ツール]** メニューの **[アドイン マネージャー]** を選択します。
 
-2.  **[アドイン マネージャー]** ダイアログ ボックスが表示されます。
+2. **[アドイン マネージャー]** ダイアログ ボックスが表示されます。
 
-3.  **[使用可能なアドイン]** 列の WebPerfTestResultsViewerAddin アドイン向けのチェック ボックスをオンにして、**[スタートアップ]** および **[コマンド ライン]** 列の下のチェック ボックスをオフにします。
+3. **[使用可能なアドイン]** 列の WebPerfTestResultsViewerAddin アドイン向けのチェック ボックスをオンにして、**[スタートアップ]** および **[コマンド ライン]** 列の下のチェック ボックスをオフにします。
 
-4.  **[OK]** をクリックします。
+4. **[OK]** をクリックします。
 
 ## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>WebPerfTestResultsViewerAddin アドインのビルドを使用した Web パフォーマンス テストの実行
 
 ### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Web テスト結果ビューアーのための新しい VS アドインを実行するには
 
-1.  Web パフォーマンス テストを実行すると、WebPerfTestResultsViewerAddin アドインの「サンプル」というタイトルの新しいタブが **Web パフォーマンス テスト結果ビューアー**に表示されます。
+1. Web パフォーマンス テストを実行すると、WebPerfTestResultsViewerAddin アドインの「サンプル」というタイトルの新しいタブが **Web パフォーマンス テスト結果ビューアー**に表示されます。
 
-2.  このタブをクリックして、DataGridView に示されているプロパティを確認します。
+2. このタブをクリックして、DataGridView に示されているプロパティを確認します。
 
 ## <a name="net-framework-security"></a>.NET Framework セキュリティ
 
@@ -336,9 +336,9 @@ ms.locfileid: "58416358"
 
  アドイン セキュリティのオプション ページにある設定は、次のとおりです。
 
--   **アドイン コンポーネントに読み込みを許可する。** 既定でオンになっています。 オンにすると、アドインを Visual Studio で読み込むことができます。 オフにすると、アドインを Visual Studio で読み込むことができなくなります。
+- **アドイン コンポーネントに読み込みを許可する。** 既定でオンになっています。 オンにすると、アドインを Visual Studio で読み込むことができます。 オフにすると、アドインを Visual Studio で読み込むことができなくなります。
 
--   **アドイン コンポーネントに URL からの読み込みを許可する。** 既定ではオンになっていません。 オンにすると、アドインは外部 Web サイトから読み込むことができます。 オフにすると、リモート アドインは Visual Studio で読み込むことができなくなります。 何らかの原因でアドインを読み込むことができない場合は、Web から読み込むこともできません。 この設定では、アドイン DLL の読み込みだけが制御されます。 *.Addin* 登録ファイルは、常にローカル システムに存在する必要があります。
+- **アドイン コンポーネントに URL からの読み込みを許可する。** 既定ではオンになっていません。 オンにすると、アドインは外部 Web サイトから読み込むことができます。 オフにすると、リモート アドインは Visual Studio で読み込むことができなくなります。 何らかの原因でアドインを読み込むことができない場合は、Web から読み込むこともできません。 この設定では、アドイン DLL の読み込みだけが制御されます。 *.Addin* 登録ファイルは、常にローカル システムに存在する必要があります。
 
 ## <a name="see-also"></a>関連項目
 

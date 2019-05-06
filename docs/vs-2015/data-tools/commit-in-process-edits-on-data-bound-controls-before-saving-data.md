@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae5d345da49ee33841a50622f3d1c59e2309890c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03fab773ed6842bc21552d060797b331d9f73770
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437030"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>データの保存前にデータ バインド コントロールで実行中の編集をコミットする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60106294"
  自動的に変更をコミットするアプリケーションを構成するには、ユーザーが、保存の一部として変更をコミットせずにデータを保存しようとしています。 場合でもプロセス。  
   
 > [!NOTE]
->  デザイナーに追加、`BindingSource.EndEdit`最初の項目に対してのみコードがフォームにドロップします。 呼び出すコード行を追加する必要があるため、<xref:System.Windows.Forms.BindingSource.EndEdit%2A>メソッドごとに<xref:System.Windows.Forms.BindingSource>形式にします。 呼び出すコード行を手動で追加することができます、<xref:System.Windows.Forms.BindingSource.EndEdit%2A>メソッドごとに<xref:System.Windows.Forms.BindingSource>します。 また、追加することができます、`EndEditOnAllBindingSources`をフォームにメソッドと保存を実行する前に付けます。  
+> デザイナーに追加、`BindingSource.EndEdit`最初の項目に対してのみコードがフォームにドロップします。 呼び出すコード行を追加する必要があるため、<xref:System.Windows.Forms.BindingSource.EndEdit%2A>メソッドごとに<xref:System.Windows.Forms.BindingSource>形式にします。 呼び出すコード行を手動で追加することができます、<xref:System.Windows.Forms.BindingSource.EndEdit%2A>メソッドごとに<xref:System.Windows.Forms.BindingSource>します。 また、追加することができます、`EndEditOnAllBindingSources`をフォームにメソッドと保存を実行する前に付けます。  
   
  次のコードでは、 [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)すべてを反復処理するクエリ<xref:System.Windows.Forms.BindingSource>コンポーネントと呼び出し、<xref:System.Windows.Forms.BindingSource.EndEdit%2A>メソッドごとに<xref:System.Windows.Forms.BindingSource>フォームで。  
   

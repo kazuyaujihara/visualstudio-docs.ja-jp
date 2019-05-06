@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 12cbeca740fd81292109183468a304fc2d3da30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439488"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Visual Studio でのオブジェクトのバインド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60053118"
 Visual Studio には、アプリケーションでデータ ソースとしてカスタム オブジェクトを操作するためのデザイン時ツールが用意されています。 UI コントロールにバインドするオブジェクトに、データベースからデータを格納する場合は、Entity Framework を使用して、クラスまたはクラスを生成することをお勧めします。 エンティティ Frameworkautogenerates すべて、定型コード変更の追跡は、コード、ローカルのオブジェクトに変更されるいずれかは、DbSet オブジェクトで AcceptChanges を呼び出すときに自動的にデータベースに保存されます。    詳細については、次を参照してください。 [Entity Framework ドキュメント](https://ef.readthedocs.org/en/latest/)します。
 
 > [!TIP]
->  アプリケーションは既にデータセットに基づいている場合にのみ、この記事では、オブジェクトのバインドするためのアプローチを検討してください。これらの方法は、データセット、理解しているし、処理するデータが表形式と複雑すぎるか大きすぎる場合にも使用できます。 DataReader によるデータ バインド、なし、UI を手動で更新してオブジェクトに直接データの読み込みに関連する、さらに簡単な例については、次を参照してください。 [ADO.NET を使用して単純なデータ アプリケーションを作成する](../data-tools/create-a-simple-data-application-by-using-adonet.md)します。
+> アプリケーションは既にデータセットに基づいている場合にのみ、この記事では、オブジェクトのバインドするためのアプローチを検討してください。これらの方法は、データセット、理解しているし、処理するデータが表形式と複雑すぎるか大きすぎる場合にも使用できます。 DataReader によるデータ バインド、なし、UI を手動で更新してオブジェクトに直接データの読み込みに関連する、さらに簡単な例については、次を参照してください。 [ADO.NET を使用して単純なデータ アプリケーションを作成する](../data-tools/create-a-simple-data-application-by-using-adonet.md)します。
 
 ## <a name="object-requirements"></a>オブジェクトの要件
  Visual Studio でデザイン ツールをデータを処理するカスタム オブジェクトの唯一の要件は、オブジェクトが少なくとも 1 つのパブリック プロパティを必要があることです。
@@ -55,7 +55,7 @@ Visual Studio には、アプリケーションでデータ ソースとして�
 - オブジェクトからデータベースにデータを保存しています。
 
 > [!NOTE]
->  理解、および、このページの例については、コンテキストを提供する、するには、次を完了することをお勧めします。[チュートリアル: データ オブジェクト (Windows フォーム) に接続する](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)します。 このチュートリアルでは、ここで説明したオブジェクトを作成します。
+> 理解、および、このページの例については、コンテキストを提供する、するには、次を完了することをお勧めします。[チュートリアル: データ オブジェクト (Windows フォーム) に接続する](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)します。 このチュートリアルでは、ここで説明したオブジェクトを作成します。
 
 ### <a name="loaddata-into-objects"></a>オブジェクトに Loaddata
  この例では、Tableadapter を使用して、オブジェクトにデータを読み込みます。 既定では、Tableadapter は、2 つの種類のデータベースからデータをフェッチし、データ テーブルを設定するメソッドで作成されます。
@@ -67,7 +67,7 @@ Visual Studio には、アプリケーションでデータ ソースとして�
   呼び出すことをカスタム オブジェクトにデータを読み込む最も簡単な方法です、`TableAdapter.GetData`メソッド、返されたデータ テーブル内の行のコレクションをループ処理し、各行の値では、各オブジェクトに設定します。 作成することができます、 `GetData` TableAdapter に追加された任意のクエリのデータが設定されたデータ テーブルを返すメソッド。
 
 > [!NOTE]
->  Visual Studio は、TableAdapter クエリを名前`Fill`と`GetData`既定では、これらの名前は任意の有効なメソッド名を変更することができます。
+> Visual Studio は、TableAdapter クエリを名前`Fill`と`GetData`既定では、これらの名前は任意の有効なメソッド名を変更することができます。
 
  次の例では、データ テーブルの行をループして、データを持つオブジェクトを設定する方法を示します。
 
@@ -82,7 +82,7 @@ Visual Studio には、アプリケーションでデータ ソースとして�
  自動的に生成されたコレクション、<xref:System.Windows.Forms.BindingSource>を使用して、<xref:System.ComponentModel.BindingList%601>の型指定されたコレクション。 アプリケーションには、追加の機能が必要としないかどうかは、内のコレクションを維持することができます、<xref:System.Windows.Forms.BindingSource>します。 詳細については、次を参照してください。、<xref:System.Windows.Forms.BindingSource.List%2A>のプロパティ、<xref:System.Windows.Forms.BindingSource>クラス。
 
 > [!NOTE]
->  コレクションの基本実装によって提供されない機能が必要とかどうか、 <xref:System.ComponentModel.BindingList%601>、必要に応じて、クラスに追加できるように、カスタム コレクションを作成する必要があります。
+> コレクションの基本実装によって提供されない機能が必要とかどうか、 <xref:System.ComponentModel.BindingList%601>、必要に応じて、クラスに追加できるように、カスタム コレクションを作成する必要があります。
 
  次のコードは、クラスの厳密に型指定されたコレクションを作成する方法を示しています。`Order`オブジェクト。
 
@@ -97,7 +97,7 @@ Visual Studio には、アプリケーションでデータ ソースとして�
  オブジェクトのカスタム コレクションに追加の例は、次を参照してください。、`LoadOrders`メソッド[チュートリアル。データ オブジェクト (Windows フォーム) に接続する](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)します。
 
 > [!NOTE]
->  `Add`メソッドはから継承する場合、自動的にカスタム コレクションの提供<xref:System.ComponentModel.BindingList%601>します。
+> `Add`メソッドはから継承する場合、自動的にカスタム コレクションの提供<xref:System.ComponentModel.BindingList%601>します。
 
  次のコードでは、型指定されたコレクションにオブジェクトを追加する方法を示しています、 <xref:System.Windows.Forms.BindingSource>:
 
@@ -107,7 +107,7 @@ Visual Studio には、アプリケーションでデータ ソースとして�
  次のコードは、オブジェクトから継承する型指定されたコレクションを追加する方法を示しています<xref:System.ComponentModel.BindingList%601>:。
 
 > [!NOTE]
->  この例では、`Orders`コレクションのプロパティである、`Customer`オブジェクト。
+> この例では、`Orders`コレクションのプロパティである、`Customer`オブジェクト。
 
  [!code-csharp[VbRaddataConnecting#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs#6)]
  [!code-vb[VbRaddataConnecting#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb#6)]
@@ -116,7 +116,7 @@ Visual Studio には、アプリケーションでデータ ソースとして�
  コレクションから呼び出すことによってオブジェクトを削除する、`Remove`または`RemoveAt`メソッドや、カスタム コレクション クラスの<xref:System.Windows.Forms.BindingSource>します。
 
 > [!NOTE]
->  `Remove`と`RemoveAt`から継承する場合、カスタム コレクション用のメソッドが自動的に提供<xref:System.ComponentModel.BindingList%601>します。
+> `Remove`と`RemoveAt`から継承する場合、カスタム コレクション用のメソッドが自動的に提供<xref:System.ComponentModel.BindingList%601>します。
 
  次のコードは、検索およびでは、型指定されたコレクションからオブジェクトを削除する方法を示しています、<xref:System.Windows.Forms.BindingSource>で、<xref:System.Windows.Forms.BindingSource.RemoveAt%2A>メソッド。
 

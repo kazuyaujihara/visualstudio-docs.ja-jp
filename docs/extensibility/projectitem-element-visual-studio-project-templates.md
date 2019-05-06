@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fae92cd0a2903753f5b02ca33308a83cdab67c7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 1bb7766d96e142fc9208b2e102c2dc57059212d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434810"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 要素 (Visual Studio プロジェクト テンプレート)
 プロジェクト テンプレートに含まれているファイルを指定します。
 
 > [!NOTE]
->  `ProjectItem`要素には、プロジェクトまたは項目テンプレートは、かどうかに応じてさまざまな属性が使用できます。 このトピックで説明します、`ProjectItem`プロジェクト テンプレートの要素。 詳細については、`ProjectItem`項目テンプレートの要素を参照してください[ProjectItem 要素 (Visual Studio 項目テンプレート)](../extensibility/projectitem-element-visual-studio-item-templates.md)します。
+> `ProjectItem`要素には、プロジェクトまたは項目テンプレートは、かどうかに応じてさまざまな属性が使用できます。 このトピックで説明します、`ProjectItem`プロジェクト テンプレートの要素。 詳細については、`ProjectItem`項目テンプレートの要素を参照してください[ProjectItem 要素 (Visual Studio 項目テンプレート)](../extensibility/projectitem-element-visual-studio-item-templates.md)します。
 
  \<VSTemplate> \<TemplateContent> \<Project> \<ProjectItem>
 
@@ -106,7 +106,7 @@ ms.locfileid: "56694908"
    <Compile Include="$safeprojectname$.vb">
    ```
 
-    ファイル名はで、ユーザーが入力した名前に基づいて、このテンプレートからプロジェクトが作成されると、**新しいプロジェクト** ダイアログ ボックスのすべての安全でない文字とスペースを削除します。 詳細については、[テンプレート パラメーター](../ide/template-parameters.md)を参照してください。
+    ファイル名はで、ユーザーが入力した名前に基づいて、このテンプレートからプロジェクトが作成されると、**新しいプロジェクト** ダイアログ ボックスのすべての安全でない文字とスペースを削除します。 詳細については、次を参照してください。[テンプレート パラメーター](../ide/template-parameters.md)します。
 
 ## <a name="example"></a>例
  [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] アプリケーションでのプロジェクト テンプレートのメタデータの例を次に示します。

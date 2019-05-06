@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3e942128cdf05f19ecf618cc78dcc1d401ea6ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 70036cd8add5c9c72262f29ba92fa6c7eaf8977d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401520"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 関数の使用が含まれるかどうかを指定するフラグを取得、 [longjmp](/cpp/c-runtime-library/reference/longjmp)コマンド (ペアになって、 [setjmp](/cpp/c-runtime-library/reference/setjmp)コマンド、例外処理の C スタイルのメソッドをフォームこれら)。
@@ -39,13 +39,13 @@ HRESULT get_hasLongJump
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
 
 > [!NOTE]
->  戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。
+> 戻り値`S_FALSE`プロパティがシンボルを使用できないことを意味します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 |必要条件|説明|
 |-----------------|-----------------|
-|ヘッダー:|dia2.h|
+|ヘッダー:|Dia2.h|
 |バージョン:|DIA SDK バージョン 8.0|
 
 ## <a name="see-also"></a>関連項目

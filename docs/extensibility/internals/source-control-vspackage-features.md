@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5d752626f56c63c5d21777288340c921ec755867
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908946"
 ---
 # <a name="source-control-vspackage-features"></a>ソース管理 VSPackage の特徴
 このセクションでは、ソース管理 VSPackage のさまざまな機能について説明します。 登録の概要を説明し、選択は、このような VSPackage の詳細し、3 つのメイン ソース コントロールに関連する機能について説明しますクエリ編集クエリの保存 (QEQS) イベント、グリフの置換、およびソース コントロールのカスタム ユーザー インターフェイス (UI) の処理。関数。

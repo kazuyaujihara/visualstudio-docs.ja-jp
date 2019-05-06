@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: cea5968e-e9f8-41a5-b068-622df542247c
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 7f6406936f293eea9c604b830f8eaab55a90a957
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 3d1d99bd49d7a5fd78b38262725b65c5d1b3aab9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58973866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978111"
 ---
 # <a name="renaming-project-hierarchy-nodes-c"></a>プロジェクト階層ノード (C++) の名前の変更
 プロジェクト フォルダーの階層ノードの名前を変更するには、アンマネージ c++ HierUtil7 プロジェクトのフレームワークを使用します。 詳細については、次を参照してください。 [HierUtil7 サンプル](http://msdn.microsoft.com/29c15184-a70c-4813-86c2-fb1d47442d11)します。  
@@ -24,7 +24,7 @@ ms.locfileid: "58973866"
   
 #### <a name="to-expand-the-hierarchy-node-and-rename-the-folder"></a>階層ノードを展開し、フォルダーの名前を変更するには  
   
-1.  次のメソッドを使用して、[階層] ノードを選択します。  
+1. 次のメソッドを使用して、[階層] ノードを選択します。  
   
     ```  
     IfFailGo(pNode->ExtExpand(EXPF_SelectItem, GUID_MacroExplorer));  
@@ -38,7 +38,7 @@ ms.locfileid: "58973866"
   
      フォルダーで、Hu_node.h ファイルを検索する\<インストール ルート > \Program Files\VSIP 8.0\EnvSDK\common\hierutil7:  
   
-2.  使用して名前の変更コマンドを送信することによって、フォルダーを名前します。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.PostExecCommand%2A>  
+2. 使用して名前の変更コマンドを送信することによって、フォルダーを名前します。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.PostExecCommand%2A>  
   
     ```  
     IfFailGo(srpVsUIShell->PostExecCommand(&guidVSStd97, cmdidRename, 0, NULL));  

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a3f8fea6457e6763fb5b4752d348a0ea906481a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908532"
 ---
 # <a name="source-control-vspackage-architecture"></a>ソース管理 VSPackage アーキテクチャ
 ソース管理パッケージとは、VSPackage を使用するサービスを[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE を提供します。 代わりに、ソース管理パッケージのソース管理のサービスとしての機能を提供します。 さらに、ソース管理パッケージには、ソース管理プラグインをソース管理を統合するためのより汎用性の高い代替[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
@@ -49,4 +49,4 @@ ms.locfileid: "56608741"
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>
-- [はじめに](../../extensibility/internals/getting-started-with-source-control-vspackages.md)
+- [作業の開始](../../extensibility/internals/getting-started-with-source-control-vspackages.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5b97247ebf16a588e8f28b4b4e6f7c512566226
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386773"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>方法: LINQ to SQL クラス (O/R デザイナー) 間の関連付け (リレーションシップ) を作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60056771"
  **[関連付けエディター]** ダイアログ ボックスを使用して関連付けを作成するときは、親クラスと子クラスを選択する必要があります。 親クラスは、主キーを含むエンティティ クラスであり、子クラスは、外部キーを含むエンティティ クラスです。 たとえば、Northwind の Customers テーブルと Orders テーブルにマップされるエンティティ クラスが作成された場合は、Customer クラスが親クラスであり、Order クラスが子クラスです。  
   
 > [!NOTE]
->  テーブルをドラッグすると**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**上に、 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)])、アソシエーションが既存のに基づいて自動的に作成データベース内の外部キー リレーションシップ。  
+> テーブルをドラッグすると**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**上に、 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)])、アソシエーションが既存のに基づいて自動的に作成データベース内の外部キー リレーションシップ。  
   
  O/R デザイナーでアソシエーションを選択すると、アソシエーションを作成すると後、は、いくつかの構成可能なプロパティ、**プロパティ**ウィンドウ。 関連付けは、関連クラス間の線で表されます。次の表は、関連付けのプロパティの説明を示しています。  
   

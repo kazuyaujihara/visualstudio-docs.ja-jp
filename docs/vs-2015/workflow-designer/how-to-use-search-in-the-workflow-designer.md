@@ -10,11 +10,11 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1d62f1936e4cf424bde526301210e61f38e5b767
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931150"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>方法: ワークフロー デザイナーで検索を使用する
 より大規模で複雑なワーク フローの作成を容易にするために、ワークフロー デザイナー内で検索を使用して、キーワードで項目を検索できます。 デザイナーでは、置換はサポートされないことに注意してください。 検索では、デザイナーで次の項目が検索されます。  

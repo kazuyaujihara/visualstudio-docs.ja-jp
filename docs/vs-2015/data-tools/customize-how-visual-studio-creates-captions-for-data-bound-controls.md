@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 960100db5a257ab30431c1edee2bce9ded21d46d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431178"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio がデータ バインド コントロールのキャプションを作成する方法をカスタマイズする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60079488"
 項目をドラッグすると、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)Windows フォーム デザイナーに、特別な配慮: キャプション ラベル内の列名は 2 つの読みやすい文字列に再設定、または複数の単語連結が見つかりました。 設定によって、これらのラベルを作成、方法をカスタマイズすることができます、 **SmartCaptionExpression**、 **SmartCaptionReplacement**、および**SmartCaptionSuffix**値**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data デザイナー**レジストリ キー。
 
 > [!NOTE]
->  このレジストリ キーは、作成するまでには存在しません。
+> このレジストリ キーは、作成するまでには存在しません。
 
  スマート キャプションは、正規表現の値に入力によって制御されます、 **SmartCaptionExpression**値。 追加、**データ デザイナー**レジストリ キーには、ラベルのキャプションを制御する既定の正規表現がよりも優先されます。 正規表現の詳細については、次を参照してください。 [Visual Studio で正規表現を使用して](../ide/using-regular-expressions-in-visual-studio.md)します。
 
@@ -54,9 +54,9 @@ ms.locfileid: "60079488"
 |**SmartCaptionSuffix**|:|返される文字列に追加する文字を表します。 たとえば、キャプションが`Company Name`サフィックスになります `Company Name:`|
 
 > [!CAUTION]
->  レジストリ エディターで操作する際は十分に注意する必要があります。 編集する前に、レジストリをバックアップします。 レジストリ エディターを正しく使用する場合、オペレーティング システムを再インストールする必要があります深刻な問題が発生することができます。 Microsoft では、レジストリ エディターの使用によって発生した問題を解決できることは保証されません。 レジストリ エディターは、ご自身の責任において使用してください。
+> レジストリ エディターで操作する際は十分に注意する必要があります。 編集する前に、レジストリをバックアップします。 レジストリ エディターを正しく使用する場合、オペレーティング システムを再インストールする必要があります深刻な問題が発生することができます。 Microsoft では、レジストリ エディターの使用によって発生した問題を解決できることは保証されません。 レジストリ エディターは、ご自身の責任において使用してください。
 >
->  次のサポート技術情報記事には、バックアップ、編集、およびレジストリを復元するための手順が含まれています。[Microsoft Windows レジストリの説明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; 英語-米国; 256986)
+> 次のサポート技術情報記事には、バックアップ、編集、およびレジストリを復元するための手順が含まれています。[Microsoft Windows レジストリの説明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; 英語-米国; 256986)
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>データ ソース ウィンドウのスマート キャプションの動作を変更するには
 

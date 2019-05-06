@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9228eaec55dc936d44eeccd55e6a05559aea27e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c90943f64166cfd5113032d14c2c66be1db858eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425098"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>データセットと TableAdapters を別々のプロジェクトに分離する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "59647465"
 1. データセット (.xsd ファイル) を含むソリューションを開きます。  
   
    > [!NOTE]
-   >  ソリューションに、データセット コードを分離するプロジェクトが含まれていない場合は、プロジェクトを作成または既存のプロジェクトをソリューションに追加します。  
+   > ソリューションに、データセット コードを分離するプロジェクトが含まれていない場合は、プロジェクトを作成または既存のプロジェクトをソリューションに追加します。  
   
 2. 型指定されたデータセット ファイル (.xsd ファイル) をダブルクリックして**ソリューション エクスプ ローラー**でデータセットを開きます、**データセット デザイナー**します。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "59647465"
     データセット コードを生成するプロジェクトを選択した後、**データセット ファイル**プロパティには、既定のファイル名が設定されます。 必要な場合は、この名前を変更できます。 さらに、データセット コードを特定のディレクトリに生成する場合は、**[プロジェクト フォルダー]** プロパティをフォルダーの名前に設定できます。  
   
    > [!NOTE]
-   >  データセットと Tableadapter を分離する場合 (設定して、 **DataSet プロジェクト**プロパティ)、プロジェクト内の既存のデータセット部分クラスが自動的に移動しません。 既存のデータセット部分クラスは、データセット プロジェクトに手動で移動する必要があります。  
+   > データセットと Tableadapter を分離する場合 (設定して、 **DataSet プロジェクト**プロパティ)、プロジェクト内の既存のデータセット部分クラスが自動的に移動しません。 既存のデータセット部分クラスは、データセット プロジェクトに手動で移動する必要があります。  
   
 6. データセットを保存します。  
   
@@ -63,7 +63,7 @@ ms.locfileid: "59647465"
    既定では、データセットと `TableAdapter` コードを分離すると、結果としてプロジェクトごとに別個のクラス ファイルが生成されます。 元のプロジェクトにという名前のファイルを含む DatasetName.Designer.vb (または DatasetName.Designer.cs)、`TableAdapter`コード。 指定されているプロジェクト、 **Dataset プロジェクト**プロパティ ファイルは、データセット コードを含む DatasetName.DataSet.Designer.vb (または DatasetName.DataSet.Designer.cs) という名前です。  
   
 > [!NOTE]
->  生成されたクラス ファイルを表示するには、データセットを選択します。 または`TableAdapter`プロジェクト。 次に、**ソリューション エクスプ ローラー**、 **すべてのファイル**します。  
+> 生成されたクラス ファイルを表示するには、データセットを選択します。 または`TableAdapter`プロジェクト。 次に、**ソリューション エクスプ ローラー**、 **すべてのファイル**します。  
   
 ## <a name="see-also"></a>関連項目  
  [N 層データ アプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)   

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba6d709dae3b2a20332b3122585ad2060628016e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7aa01918b8de718fc26c0dc0249615b327150020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422869"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>従来の言語サービスのアウトライン
 アウトライン表示できるようになります、概要やアウトラインに複雑なプログラムを折りたたみます。 たとえば、c# では、すべてのメソッドをメソッドのシグネチャのみを示す、1 行に折りたたむことが。 さらに、構造体とクラスは、構造体とクラス名のみを表示のために折りたたむことができます。 1 つのメソッド内で複雑なロジックをなどのステートメントの最初の行のみを表示することによって全体的な流れに折りたたむことができます`foreach`、 `if`、および`while`します。
@@ -25,7 +25,7 @@ ms.locfileid: "56601358"
  従来の言語サービスは、VSPackage の一部として実装されますが、言語サービスの機能を実装する新しい方法は MEF 拡張機能を使用します。 詳細については、次を参照してください。[チュートリアル。アウトライン](../../extensibility/walkthrough-outlining.md)」を参照してください。
 
 > [!NOTE]
->  新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
+> 新しいエディターの API をできるだけ早く使用を開始することをお勧めします。 言語サービスのパフォーマンスを向上させる、エディターの新機能を活用することができます。
 
 ## <a name="enabling-support-for-outlining"></a>アウトラインのサポートを有効にします。
  `AutoOutlining`レジストリ エントリが 1 に設定すると、自動的なアウトラインを有効にします。 ファイルが読み込まれたまたは非表示の領域を特定し、アウトラインのグリフを表示するために変更されたときに、全体のソースの解析を設定自動アウトライン表示します。 アウトライン表示制御することも手動でユーザーがいます。

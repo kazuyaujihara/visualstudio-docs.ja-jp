@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60862d631d93788f10c372310da9eb3d181943ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414540"
 ---
 # <a name="installing-an-isolated-shell-application"></a>分離シェル アプリケーションをインストールします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ ms.locfileid: "60062829"
 2. シェルとシェル アプリケーションを必要とする、次の例は、コンポーネントを特定します。  
   
     > [!NOTE]
-    >  いくつかの要素は、他のデコンパイルして .wxs ファイルで定義を参照できます。  
+    > いくつかの要素は、他のデコンパイルして .wxs ファイルで定義を参照できます。  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -159,7 +159,7 @@ ms.locfileid: "60062829"
         ```  
   
     > [!NOTE]
-    >  Shell (Isolated) アプリケーションに必要な依存関係は次のとおりです。DebuggerProxy、MasterPkgDef、リソース (特に .winprf ファイル)、アプリケーション、および PkgDefs します。  
+    > Shell (Isolated) アプリケーションに必要な依存関係は次のとおりです。DebuggerProxy、MasterPkgDef、リソース (特に .winprf ファイル)、アプリケーション、および PkgDefs します。  
   
 ### <a name="registry-entries"></a>レジストリ エントリ  
  Shell (Isolated) のプロジェクト テンプレートが含まれています、 *ProjectName*インストールでマージするレジストリ キーの .reg ファイル。 これらのレジストリ エントリは、インストールとクリーンアップのための両方の MSI の一部である必要があります。 ApplicationRegistry.wxs で一致するレジストリのブロックを作成することも必要があります。  
@@ -211,7 +211,7 @@ ms.locfileid: "60062829"
  Visual Studio Shell (Isolated) をインストールする必要があるかどうかを判断するには、まず HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install のレジストリ値をチェックして既にインストールされているかどうかを決定します。  
   
 > [!NOTE]
->  これらの値は、Product.wxs にシェル検出ブロックによっても読み込まれます。  
+> これらの値は、Product.wxs にシェル検出ブロックによっても読み込まれます。  
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder では、Visual Studio シェルがインストールされているファイルをチェックすることができますをする場所を指定します。  
   
@@ -369,4 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: 基本的な分離シェル アプリケーションを作成します。](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [チュートリアル: 基本的な分離シェル アプリケーションを作成する](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

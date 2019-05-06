@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5db7f060e630c0b4175ecf4708f14fc03869e431
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568939"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ IDebugCustomAttribute : IUnknown
 |[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|バイトの blob として属性情報を取得します。|  
   
 ## <a name="remarks"></a>Remarks  
- カスタム属性は、特定のクラスやメソッドに関連付けられているカスタム メタデータを提供する、C# の構造です。  
+ カスタム属性は、特定のクラスやメソッドに関連付けられているカスタム メタデータを提供する、c# の構造です。  
   
 ## <a name="requirements"></a>必要条件  
  ヘッダー: sh.h  

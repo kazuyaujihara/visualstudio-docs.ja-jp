@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f233e2256fc4baef9ee6ca7f07d3d7b71b68b47
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908428"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>マネージド パッケージ フレームワークを使用したプロジェクト タイプの実装 (C#)
 マネージ パッケージ フレームワーク (MPF) は、c# クラスを使用するか、独自のプロジェクトの種類を実装するために継承することができますを提供します。 MPF は取り込んだら、プロジェクトの種類の詳細の実装に専念する多くの Visual Studio に提供するため、プロジェクトの種類が必要ですが、インターフェイスを実装します。

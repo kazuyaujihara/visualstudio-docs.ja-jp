@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30ffd684eb6527ee73e54cc590dc3e4b1d3c51d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429353"
 ---
 # <a name="web-project-essentials"></a>Web プロジェクトの基本情報
 Web プロジェクトでは、Web アプリケーションを作成します。 Web プロジェクトを使用して、スマート Web ページを含む Web アプリケーションを作成することができます。 スマート Web ページには、オンデマンドの Web ページをレンダリングするサーバー側コードがあります。
@@ -35,7 +35,7 @@ Web プロジェクトでは、Web アプリケーションを作成します。
 - Web プロジェクトのソリューション ファイルは、Web サイト自体から個別に配置されています。 既定では、ソリューションのファイルは、\Documents and Settings\\*YourAccount*\My Documents\\*\<Visual Studio ### >* \Projects\\ *YourWebSite*します。
 
   > [!NOTE]
-  >  Web サイトとソリューション ファイルを保持する場合だけが移動をもう一度開きます。
+  > Web サイトとソリューション ファイルを保持する場合だけが移動をもう一度開きます。
 
 - Visual Studio でソリューション ファイルを持たない Web サイトを開くと、その新しいソリューション ファイルが自動的に生成します。
 

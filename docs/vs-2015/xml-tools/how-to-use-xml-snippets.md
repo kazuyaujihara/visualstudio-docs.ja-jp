@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba4d98a1d6a59a35bf4aa279831036eecec99989
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440578"
 ---
 # <a name="how-to-use-xml-snippets"></a>方法: XML スニペットを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ XML エディターのショートカット メニューにある次の 2 つの
  次の手順にアクセスする方法について説明、**スニペットの挿入**コマンド。  
   
 > [!NOTE]
->  **スニペットの挿入**コマンドも (CTRL + K、CTRL + X) のキーボード ショートカットを使用します。  
+> **スニペットの挿入**コマンドも (CTRL + K、CTRL + X) のキーボード ショートカットを使用します。  
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>ショートカット メニューからスニペットを挿入するには  
   
@@ -60,7 +60,7 @@ XML エディターのショートカット メニューにある次の 2 つの
 4. Tab キーを押して XML スニペットを呼び出します。  
   
 > [!NOTE]
->  XML スニペットが呼び出されない場合があります。 たとえば、`xs:complexType` ノード内に `xs:element` 要素を挿入しようとした場合、エディターは XML スニペットを生成しません。 `xs:complexType` ノード内で `xs:element` 要素が使用された場合、必須の属性やサブ要素がないため、エディターに挿入するデータが存在しないことになります。  
+> XML スニペットが呼び出されない場合があります。 たとえば、`xs:complexType` ノード内に `xs:element` 要素を挿入しようとした場合、エディターは XML スニペットを生成しません。 `xs:complexType` ノード内で `xs:element` 要素が使用された場合、必須の属性やサブ要素がないため、エディターに挿入するデータが存在しないことになります。  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>ショートカット名を使用してスニペットを挿入するには  
   
@@ -76,7 +76,7 @@ XML エディターのショートカット メニューにある次の 2 つの
  次の手順にアクセスする方法について説明、**ブロックの挿入**コマンド。  
   
 > [!NOTE]
->  **ブロックの挿入**コマンドも (CTRL + K、CTRL + S) のキーボード ショートカットを使用します。  
+> **ブロックの挿入**コマンドも (CTRL + K、CTRL + S) のキーボード ショートカットを使用します。  
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>コンテキスト メニューから [ブロックの挿入] を使用するには  
   

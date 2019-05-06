@@ -10,12 +10,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 00a2f5e4e405ff2cba7275cd4c1310db850632b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2af9e0765fb5bc73a35bebfc2f50f5d2a41122d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435964"
 ---
 # <a name="how-to-implement-error-markers"></a>方法: エラーのマーカーを実装します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60118033"
 1. フィルター選択されるビューでは、フィルターは、そのビューのデータに関連付けられているタスク プロバイダーへのポインターを取得します。  
   
     > [!NOTE]
-    >  メソッドのヒント、ステートメント入力候補、エラーのマーカーを同じコマンド フィルターを使用することができます。  
+    > メソッドのヒント、ステートメント入力候補、エラーのマーカーを同じコマンド フィルターを使用することができます。  
   
 2. フィルターは、別の行に移動したことを示すイベントを受信、エラーをチェックするタスクが作成されます。  
   
@@ -59,4 +59,4 @@ ms.locfileid: "60118033"
  [レガシ API を使用したテキスト マーカーの使用](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [方法: 標準のテキスト マーカーを追加します。](../extensibility/how-to-add-standard-text-markers.md)   
  [方法: カスタム テキスト マーカーを作成します。](../extensibility/how-to-create-custom-text-markers.md)   
- [方法: テキスト マーカーを使用します。](../extensibility/how-to-use-text-markers.md)
+ [方法: テキスト マーカーを使用する](../extensibility/how-to-use-text-markers.md)

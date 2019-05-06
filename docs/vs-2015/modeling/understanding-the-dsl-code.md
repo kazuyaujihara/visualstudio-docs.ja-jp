@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fef5d4ab83d22b31b64c6e6ec509cab47a426f9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426953"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL コードについて
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60068432"
  このトピックの例のほとんどのソースでは、ソリューションを作成するから DSL を作成、**コンポーネント モデル**ソリューション テンプレート。 これは、新しい DSL ソリューションを作成するときに表示される標準のテンプレートの 1 つです。  
   
 > [!NOTE]
->  コンポーネント図 DSL テンプレートは、Visual Studio で、[アーキテクチャ] メニューを使用して作成できる UML コンポーネント図には関係ありません。 **新しいプロジェクト** ダイアログ ボックスで、展開**その他のプロジェクトの種類 \extensibility**順にクリックします**ドメイン固有言語デザイナー**します。  
+> コンポーネント図 DSL テンプレートは、Visual Studio で、[アーキテクチャ] メニューを使用して作成できる UML コンポーネント図には関係ありません。 **新しいプロジェクト** ダイアログ ボックスで、展開**その他のプロジェクトの種類 \extensibility**順にクリックします**ドメイン固有言語デザイナー**します。  
   
  このソリューション テンプレートに習熟していない場合は、F5 キーを押して実験します。 コンポーネントにポート ツールをドラッグすることによりポートが作成されることと、ポートを接続できることに特に注意してください。  
   
@@ -133,7 +133,7 @@ ms.locfileid: "60068432"
   ドメイン モデルを表すクラス。 <xref:Microsoft.VisualStudio.Modeling.DomainModel> から派生します。  
   
 > [!NOTE]
->  これはモデルのルート クラスと同じではありません。  
+> これはモデルのルート クラスと同じではありません。  
   
  コピー クロージャと削除クロージャは、要素がコピーまたは削除されるときに含まれる必要のある他の要素を定義します。 設定してこの動作を制御することができます、**コピーの伝達**と**削除の伝達**すべてのリレーションシップの両端のロールのプロパティ。 値を動的に決定する場合は、コードを作成して、クロージャ クラスのメソッドをオーバーライドできます。 詳細については、「[方法: プログラムのコピーと貼り付け動作 - リダイレクト](../misc/how-to-program-copy-and-paste-behavior-redirect.md)します。  
   
@@ -344,7 +344,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  このファイルをカスタマイズするには、`.tt` ファイルを編集します。  
   
 > [!WARNING]
->  .tt ファイルを編集してアイコンまたは画像などのリソースを含める場合は、リソースが VSIX ビルドに含まれていることを確認してください。 ソリューション エクスプ ローラーでファイルを選択し、ことを確認、 **VSIX に含める**プロパティは`True`します。  
+> .tt ファイルを編集してアイコンまたは画像などのリソースを含める場合は、リソースが VSIX ビルドに含まれていることを確認してください。 ソリューション エクスプ ローラーでファイルを選択し、ことを確認、 **VSIX に含める**プロパティは`True`します。  
   
  このファイルは、DSL が Visual Studio Integration Extension (VSIX) にパッケージ化される方法を制御します。 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。  
   

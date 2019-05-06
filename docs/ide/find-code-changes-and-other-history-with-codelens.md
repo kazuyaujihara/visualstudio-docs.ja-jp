@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62980889"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens によるコード変更とその他の履歴の検索
 
@@ -296,7 +296,7 @@ Team Foundation バージョン管理 (TFVC) または Git で格納されてい
 
 ![CodeLens - 変更セット所有者にメールで連絡する](../ide/media/codelenscodesendmailchangesetnolync1.png)
 
-**どの Skype および Lync 構成がサポートされていますか。**
+**サポートされる Skype および Lync 構成**
 
 - Skype for Business (32 ビットまたは 64 ビット)
 

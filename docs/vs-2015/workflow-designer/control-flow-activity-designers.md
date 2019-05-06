@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 25f8db1f6d14692538fe7f61ed2f9dbd37e0bd29
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977309"
 ---
 # <a name="control-flow-activity-designers"></a>制御フロー アクティビティ デザイナー
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]には、システムによって提供されるさまざまなアクティビティが用意されており、これらを、ワークフローの構築時に使用できます。 このセクションでは、ワークフロー内のフローの制御を目的とした、システムによって提供されるアクティビティを紹介します。 次のトピックでは、これらのアクティビティについて説明し、その使用方法についてのガイドラインを示します。  

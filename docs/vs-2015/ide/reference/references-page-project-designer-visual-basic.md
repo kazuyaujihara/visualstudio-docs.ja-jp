@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd579e6bf434903ecc1e2fe60b1e62d54c165034
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a714c3b3b282d37e4f8c9e73a593c9a35298f151
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443845"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>[参照設定] ページ (プロジェクト デザイナー) (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60114367"
  このボタンをクリックすると、**[参照パス]** ダイアログ ボックスにアクセスします。  
   
 > [!NOTE]
->  プロジェクト システムでは、検出されたアセンブリ参照が解決されます。解決するとき、次の場所で次の順序で検索されます。  
+> プロジェクト システムでは、検出されたアセンブリ参照が解決されます。解決するとき、次の場所で次の順序で検索されます。  
 > 
 > 1. プロジェクト フォルダー。 **[すべてのファイルを表示]** が有効になっていないとき、**ソリューション エクスプローラー**にプロジェクト フォルダー ファイルが表示されます。  
 >    2. **[参照パス]** ダイアログ ボックスに指定されているフォルダー。  

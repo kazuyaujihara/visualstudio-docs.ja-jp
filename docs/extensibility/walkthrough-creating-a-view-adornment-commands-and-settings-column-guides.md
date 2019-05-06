@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dd5bfc24fcf1cd8a465bafe1e5bcf6c4df61308c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796450"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>チュートリアル: ビューの表示要素、コマンド、および設定 (ガイド) を作成します。
 コマンドとビューの効果を Visual Studio のテキストまたはコード エディターを拡張することができます。 この記事では、人気のある拡張機能、列ガイドを使用する方法を示します。 列ガイドは、特定の列の幅にコードを管理するために、テキスト エディターのビューに描画される視覚的にライトの線です。 具体的には、書式設定されたコードは、ドキュメント、ブログの投稿に含めるか、バグのレポートのサンプルについてがあります。
@@ -338,7 +338,7 @@ private const string _settingName = "Guides";
 
 最初のいくつかの関数は、設定を変更するエントリ ポイントです。 これらは、許可されているガイドの最大数などの高度な制約を確認します。  次にそれらを呼び出す`WriteSettings`、設定文字列を作成し、プロパティを設定する`GuideLinesConfiguration`します。 Visual Studio 設定ストアと起動設定値を保存しますこのプロパティを設定、`SettingsChanged`すべてを更新するイベント、`ColumnGuideAdornment`テキスト ビューに関連付けられている各オブジェクトします。
 
-など、いくつかのエントリ ポイント関数がある`CanAddGuideline`設定を変更するコマンドを実装するために使用されます。 Visual Studio には、メニューが表示されている場合は、かどうかのコマンドは、有効では、その名前が表示するコマンドの実装と具合を照会します。  次のコマンドの実装には、これらのエントリ ポイントをフックする方法について参照してください。 コマンドの詳細については、[メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)を参照してください。
+など、いくつかのエントリ ポイント関数がある`CanAddGuideline`設定を変更するコマンドを実装するために使用されます。 Visual Studio には、メニューが表示されている場合は、かどうかのコマンドは、有効では、その名前が表示するコマンドの実装と具合を照会します。  次のコマンドの実装には、これらのエントリ ポイントをフックする方法について参照してください。 コマンドの詳細については、次を参照してください。[メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)します。
 
 ## <a name="implement-the-columnguideadornment-class"></a>ColumnGuideAdornment クラスを実装します。
 `ColumnGuideAdornment`を修飾できるテキスト ビューごとにクラスをインスタンス化します。 このクラスは、ビューの変更や設定を変更すると、必要に応じて更新または再描画列ガイドに関するイベントをリッスンします。
@@ -501,7 +501,7 @@ namespace ColumnGuides
 
 これには、コマンドの実装に 3 つの部分があります。ColumnGuideCommandsPackage.cs、ColumnGuideCommandsPackage.vsct、および ColumnGuideCommands.cs です。 コマンドによって自動生成、テンプレートによって生成されるコード、**ツール**実装としてダイアログ ボックスが表示されるメニューです。 実装される方法を見て、 *.vsct*と*ColumnGuideCommands.cs*ファイルのため、これは簡単です。 これらのファイルは次のコードを置き換えるとします。
 
-パッケージのコードには、Visual Studio 拡張機能がコマンドを提供することを検出して、コマンドを配置する場所を検索するに必要な定型宣言が含まれています。 パッケージは、初期化時に、コマンドの実装クラスがインスタンス化します。 パッケージに関連するコマンドの詳細については、[メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)を参照してください。
+パッケージのコードには、Visual Studio 拡張機能がコマンドを提供することを検出して、コマンドを配置する場所を検索するに必要な定型宣言が含まれています。 パッケージは、初期化時に、コマンドの実装クラスがインスタンス化します。 パッケージに関連するコマンドの詳細については、次を参照してください。[メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)します。
 
 ### <a name="a-common-commands-pattern"></a>コマンドの一般的なパターン
 列ガイド拡張機能のコマンドは、Visual Studio での非常に一般的なパターンの例です。 グループに関連するコマンドを配置するされをそのグループ メイン メニューで、多くの場合と配置"`<CommandFlag>CommandWellOnly</CommandFlag>`"コマンドを非表示を設定します。  メイン メニューのコマンドを配置すること (など**編集**) ためには便利な名前 (など**Edit.AddColumnGuide**) は再でキー バインドを割り当てるときにコマンドを見つけるに役立ちます**ツールオプション**します。 コマンドを呼び出すときに、入力候補を取得するのに役立ちますも、**コマンド ウィンドウ**します。

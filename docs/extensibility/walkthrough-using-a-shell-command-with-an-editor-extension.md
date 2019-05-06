@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3011664cc2261b0213e7ce743167579b2b0786
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d0eade1bf17955bce52ea53b159f23102afb74b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444916"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でシェル コマンドを使用します。
 VSPackage からには、エディターにメニュー コマンドなどの機能を追加できます。 このチュートリアルでは、メニュー コマンドを呼び出すことによって、エディターでテキスト ビューに表示要素を追加する方法を示します。
@@ -52,7 +52,7 @@ VSPackage からには、エディターにメニュー コマンドなどの機
  VSPackage を MEF コンポーネントを追加するため、マニフェストで両方の種類のアセットを指定する必要があります。
 
 > [!NOTE]
->  MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)します。
+> MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)します。
 
 ### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>VSPackage プロジェクトを MEF コンポーネントを参照するには
 

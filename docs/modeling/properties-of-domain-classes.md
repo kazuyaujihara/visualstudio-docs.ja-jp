@@ -10,21 +10,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fb66a0d497c86091f689f119e57a5230f125e8de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999190"
 ---
 # <a name="properties-of-domain-classes"></a>ドメイン クラスのプロパティ
-ドメイン クラスでは、次の表に、プロパティがあります。 ドメイン クラスについては、[理解のモデル、クラスとリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)を参照してください。 これらのプロパティを使用する方法の詳細については、[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)を参照してください。
+ドメイン クラスでは、次の表に、プロパティがあります。 ドメイン クラスについては、次を参照してください。[理解のモデル、クラスとリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)します。 これらのプロパティを使用する方法の詳細については、次を参照してください。[をカスタマイズすると、ドメイン固有言語を拡張する](../modeling/customizing-and-extending-a-domain-specific-language.md)します。
 
 |プロパティ|説明|既定値|
 |-|-|-|
 |アクセス修飾子|ドメイン クラスのアクセスのレベル (`public` または `internal`)。|`public`|
 |カスタム属性|このドメイン クラスから生成されるソース コードのクラスに属性を追加するために使用します。|\<none>|
-|Double 型を生成します派生。|場合`True`、基底クラスと (オーバーライドによってカスタマイズをサポート) する部分クラスの両方が生成されます。 詳細については、[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)を参照してください。|`False`|
-|カスタム コンス トラクターがあります。|場合`True`、カスタム コンス トラクターは、ソース コードで提供されます。 詳細については、[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)を参照してください。|`False`|
+|Double 型を生成します派生。|場合`True`、基底クラスと (オーバーライドによってカスタマイズをサポート) する部分クラスの両方が生成されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|`False`|
+|カスタム コンス トラクターがあります。|場合`True`、カスタム コンス トラクターは、ソース コードで提供されます。 詳細については、次を参照してください。[をオーバーライドすると、生成されたクラスを拡張する](../modeling/overriding-and-extending-the-generated-classes.md)します。|`False`|
 |継承修飾子|ドメイン クラスから生成されるソース コードのクラスの継承の種類について説明します (`none`、`abstract`または`sealed`)。|`none`|
 |基本クラス|このドメイン クラスが派生の場合、基底クラスの名前。|\<none>|
 |名前|このドメイン クラスの名前。|現在の名前|

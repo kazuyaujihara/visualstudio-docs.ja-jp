@@ -26,12 +26,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: b0a10d720e911f80aa5ef7b4a42f521bfd9c31bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3bee60a54576ab816c63cf60f2226ebbbaf50c44
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388487"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>方法: 有効にして、エディット コンティニュを無効にする (C#、VB、 C++)
 
@@ -46,7 +46,7 @@ ms.locfileid: "60070411"
 1. **ツール** > **オプション**> (または**デバッグ** > **オプション**) > **のデバッグ** > **全般**、**エディット コンティニュ**右側のウィンドウで。
 
     > [!NOTE]
-    >  IntelliTrace が有効になっている場合に、IntelliTrace イベントと呼び出し情報の両方を収集すると、エディット コンティニュが無効になります。 詳細については、次を参照してください。 [IntelliTrace](../debugger/intellitrace.md)します。
+    > IntelliTrace が有効になっている場合に、IntelliTrace イベントと呼び出し情報の両方を収集すると、エディット コンティニュが無効になります。 詳細については、次を参照してください。 [IntelliTrace](../debugger/intellitrace.md)します。
 
 1. C++ コードのことを確認します**を有効にするネイティブ エディット コンティニュ**を選択すると、し、追加のオプションを設定します。
     - **[コンティニュに変更を適用する (ネイティブのみ)]**

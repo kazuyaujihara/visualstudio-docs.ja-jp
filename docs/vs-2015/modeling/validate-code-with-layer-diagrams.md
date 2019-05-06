@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 143daa7f54179867325206f62a852fd685852a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1a0ce9cfaa09a5332d0bce39b31f946b7b5a177
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437489"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>レイヤー図を使用したコードの検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "60051818"
   Visual Studio で開いているレイヤー図から、またはコマンド プロンプトから、コードを手動で検証できます。 ローカル ビルドまたは Team Foundation ビルドの実行時に、コードを自動的に検証することもできます。 参照してください[Channel 9 ビデオ。設計し、レイヤー図の使用によるアーキテクチャの検証](http://go.microsoft.com/fwlink/?LinkID=252073)です。  
   
 > [!IMPORTANT]
->  Team Foundation ビルドを使用してレイヤー検証を実行する場合は、ビルド サーバーに同じバージョンの Visual Studio をインストールすることも必要です。  
+> Team Foundation ビルドを使用してレイヤー検証を実行する場合は、ビルド サーバーに同じバージョンの Visual Studio をインストールすることも必要です。  
   
 - [項目が検証をサポートしているかを参照してください。](#SupportsValidation)  
   
@@ -92,14 +92,14 @@ ms.locfileid: "60051818"
 1. ダイアグラム サーフェイスを右クリックし、**アーキテクチャの検証**です。  
   
     > [!NOTE]
-    >  既定で、**ビルド アクション**、レイヤー図 (.layerdiagram) ファイルのプロパティに設定されて**検証**検証プロセスで、ダイアグラムが含まれるようにします。  
+    > 既定で、**ビルド アクション**、レイヤー図 (.layerdiagram) ファイルのプロパティに設定されて**検証**検証プロセスで、ダイアグラムが含まれるようにします。  
   
      **エラー一覧**ウィンドウが発生したエラーを報告します。 検証エラーに関する詳細については、次を参照してください。[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)します。  
   
 2. 各エラーのソースを表示するでエラーをダブルクリックして、**エラー一覧**ウィンドウ。  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、エラーのソースの代わりにコード マップが表示されることがあります。 これは、レイヤー図で指定されていないアセンブリ上にコードの依存関係があるか、レイヤー図で指定された依存関係がコードにない場合に起こります。 コード マップまたはコードをレビューし、依存関係が必要であるかどうかを検証してください。 コード マップの詳細については、次を参照してください。[ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)します。  
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、エラーのソースの代わりにコード マップが表示されることがあります。 これは、レイヤー図で指定されていないアセンブリ上にコードの依存関係があるか、レイヤー図で指定された依存関係がコードにない場合に起こります。 コード マップまたはコードをレビューし、依存関係が必要であるかどうかを検証してください。 コード マップの詳細については、次を参照してください。[ソリューション間の依存関係をマップする](../modeling/map-dependencies-across-your-solutions.md)します。  
   
 3. エラーを管理するには、次を参照してください。[検証エラーを管理](#ManageErrors)します。  
   
@@ -145,7 +145,7 @@ ms.locfileid: "60051818"
  開発プロセスの実行中は、検証時に報告される一部の競合を抑制できます。 たとえば、既に解決したエラーや特定のシナリオに関連しないエラーを抑制できます。 エラーを抑制した場合は、[!INCLUDE[esprfound](../includes/esprfound-md.md)] で作業項目をログに記録することをお勧めします。  
   
 > [!WARNING]
->  作業項目を作成またはそれにリンクするには、既に TFS ソース コード管理 (SCC) に接続されている必要があります。 別の TFS SCC への接続を開こうとすると、Visual Studio が現在のソリューションを自動的に閉じます。 作業項目を作成またはそれにリンクしようとする前に、適切な SCC に接続されていることを確認してください。 Visual Studio の今後のリリースでは、SCC に接続されていないとメニュー コマンドを使用できません。  
+> 作業項目を作成またはそれにリンクするには、既に TFS ソース コード管理 (SCC) に接続されている必要があります。 別の TFS SCC への接続を開こうとすると、Visual Studio が現在のソリューションを自動的に閉じます。 作業項目を作成またはそれにリンクしようとする前に、適切な SCC に接続されていることを確認してください。 Visual Studio の今後のリリースでは、SCC に接続されていないとメニュー コマンドを使用できません。  
   
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>検証エラーの作業項目を作成するには  
   

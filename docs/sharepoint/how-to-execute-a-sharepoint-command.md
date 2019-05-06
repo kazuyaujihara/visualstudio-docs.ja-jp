@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f5c285e71179c5dd59fad0357dbf71ee4b32f9d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813890"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>方法: SharePoint コマンドを実行します。
   SharePoint ツール拡張機能で、サーバー オブジェクト モデルを使用する場合は、カスタムを作成する必要があります*SharePoint コマンド*API を呼び出します。 コマンドを定義し、SharePoint ツール拡張機能で、デプロイ後、拡張機能は、SharePoint サーバー オブジェクト モデルを呼び出すコマンドを実行できます。 コマンドを実行するには、ExecuteCommand メソッドのいずれかの操作を使用して、<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>オブジェクト。

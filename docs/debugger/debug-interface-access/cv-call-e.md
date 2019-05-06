@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ec5fea99994b891250dad85cfc43320848df98f9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555105"
 ---
 # <a name="cvcalle"></a>CV_call_e
 関数の呼び出し規約を指定します。
@@ -51,10 +51,10 @@ CV_CALL_THISCALL 指定の関数呼び出し規約を使用して、`this`呼び
 
 CV_CALL_CLRCALL 共通言語ランタイム (CLR) (とも呼ばれる呼び出し規約マネージ コード) で使用される関数呼び出し規約を指定します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 この列挙体の値が呼び出しによって返される、 [idiasymbol::get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)メソッド。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: cvconst.h
 
 ## <a name="see-also"></a>関連項目

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bec1c878dce59ccb5444d74ba0255c9ceb705780
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402736"
 ---
 # <a name="query-datasets"></a>データセットのクエリ
 データセット内の特定のレコードを検索するには、使用、 `FindBy` DataTable には、メソッド テーブルの行のコレクションをループまたはを使用して、独自の foreach ステートメントを記述する[LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)します。
@@ -25,7 +25,7 @@ ms.locfileid: "60050674"
 データセット内にテーブルと列の名前は既定では大文字、つまり、"Customers"という名前のデータセット内のテーブルも参照できます"顧客"として。 これには、SQL Server を含む、多数のデータベース内の名前付け規則と一致します。 SQL Server で既定の動作は、大文字と小文字のデータ要素の名前を区別することはできません。
 
 > [!NOTE]
->  データセットとは異なりスキーマで定義されたデータ要素の名前は大文字小文字を区別するための XML ドキュメントが大文字小文字が区別されます。 たとえば、スキーマのプロトコルは"Customers"、"customers。"と呼ばれる別のテーブルと呼ばれるテーブルを定義するスキーマを使用できます。 これは、結果、大文字と小文字が異なるだけの要素を含むスキーマを使用して、dataset クラスを生成すると、名前が競合。
+> データセットとは異なりスキーマで定義されたデータ要素の名前は大文字小文字を区別するための XML ドキュメントが大文字小文字が区別されます。 たとえば、スキーマのプロトコルは"Customers"、"customers。"と呼ばれる別のテーブルと呼ばれるテーブルを定義するスキーマを使用できます。 これは、結果、大文字と小文字が異なるだけの要素を含むスキーマを使用して、dataset クラスを生成すると、名前が競合。
 
 大文字小文字の区別、ただし、データセット内のデータを解釈する方法の要因ができます。 たとえば、データセット テーブル内のデータをフィルター処理する検索条件は、比較では大文字小文字を区別するかどうかによって異なる結果を返す可能性があります。 フィルター処理、検索、およびデータセットの並べ替えの大文字小文字の区別を制御する<xref:System.Data.DataSet.CaseSensitive%2A>プロパティ。 データセット内のすべてのテーブルは、既定では、このプロパティの値を継承します。 (個別のテーブルに対してこのプロパティをオーバーライドするには、テーブルの設定によって<xref:System.Data.DataTable.CaseSensitive%2A>プロパティです)。
 
@@ -68,7 +68,7 @@ ms.locfileid: "60050674"
 このページは、型指定されたデータセットを使用した例を示します。 型指定されていないデータセットのリレーションシップを移動する方法の詳細については、次を参照してください。 [Datarelation の移動](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations)します。
 
 > [!NOTE]
->  Windows フォーム アプリケーションで作業しているし、データ バインド機能を使用してデータを表示する、デザイナーで生成されたフォームは、アプリケーションのための十分な機能を提供可能性があります。 詳細については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。 具体的を参照してください[データセットのリレーションシップ](relationships-in-datasets.md)します。
+> Windows フォーム アプリケーションで作業しているし、データ バインド機能を使用してデータを表示する、デザイナーで生成されたフォームは、アプリケーションのための十分な機能を提供可能性があります。 詳細については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。 具体的を参照してください[データセットのリレーションシップ](relationships-in-datasets.md)します。
 
 次のコード例では、型指定されたデータセットのリレーションシップを上下に移動する方法を示します。 型指定されたコードの例として使用<xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) と、生成された FindBy*PrimaryKey* (`FindByCustomerID`) を目的の行を見つけて、関連レコードを返すメソッド。 例では、正しくコンパイルして実行した場合にのみ。
 

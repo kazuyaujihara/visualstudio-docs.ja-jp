@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9ea40a2af8139895a49c993588555f06bfda7f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90e259d9d5e71ab5e6837cc4aa9cd22ebf43aaac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432364"
 ---
 # <a name="how-to-use-the-argument-designer"></a>方法: 引数デザイナーを使用する
 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] の以前のバージョンと比べ、引数デザイナーを使用した場合は、アクティビティとの間のデータの受け渡しを簡単に実行できます。 デザイナーにアクセスする をクリックして、**引数**デザイン キャンバスの左下隅のボタンをクリックします。 デザイナーには、表形式で表示され、以外の各列見出しで並べ替えることができますを引数のリストが含まれています、**既定値**列。 各引数には、名前、方向 (入力、出力、入力/出力、またはプロパティ)、型、および既定の式の値 (存在する場合) が含まれます。 名前および既定の式の値は編集可能なテキスト フィールドで、型および方向はドロップダウンです。 [!INCLUDE[crabout](../includes/crabout-md.md)] 引数を参照してください[変数と引数](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)します。  
@@ -31,7 +31,7 @@ ms.locfileid: "60090707"
 3. というラベルの付いた空の行をクリックします。**引数の作成**です。 これは、新しい行が次の既定値を使用して新しい引数を指定して追加されます: の argumentx、**名前**x は一意の引数の名前を作成する自動的にインクリメントされる 1 の初期値を持つ整数**で**の**方向**、および**文字列**の**引数の型**します。 値は追加されません**既定値**します。 これらの値は、ワークフローのデザイン プロセス中にいつでも変更できます。  
   
     > [!NOTE]
-    >  引数を削除するをクリックして、引数を選択し、キーを押します、**削除**キー。  
+    > 引数を削除するをクリックして、引数を選択し、キーを押します、**削除**キー。  
   
 ## <a name="see-also"></a>関連項目  
  [ワークフロー デザイナーの使用](../workflow-designer/using-the-workflow-designer.md)   

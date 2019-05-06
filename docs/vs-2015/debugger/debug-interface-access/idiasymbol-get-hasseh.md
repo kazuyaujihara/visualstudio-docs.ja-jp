@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33c3cabed451f7117a1d4914d0efe5fdcc5b64dc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 659bfc8d01183d58bf122118891fff70a44b77dc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410406"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-関数がいずれかを含めるかどうかを指定するフラグを取得します。[構造化例外処理 (c/c++)](http://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (例: _ _try/\__except ブロック)。  
+関数がいずれかを含めるかどうかを指定するフラグを取得します。[構造化例外処理 (C/C++)](http://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (例: _ _try/\__except ブロック)。  
   
 ## <a name="syntax"></a>構文  
   
@@ -41,7 +41,7 @@ HRESULT get_hasSEH(
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  
   
 > [!NOTE]
->  戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
+> 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。  
   
 ## <a name="requirements"></a>必要条件  
   

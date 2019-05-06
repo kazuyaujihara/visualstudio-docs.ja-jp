@@ -12,12 +12,12 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e370f48559638e8c68ea5ac8e04eca6960983475
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6143b21884bc92ac79ae0fd7292a11780fec4478
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439759"
 ---
 # <a name="localizing-vsix-packages"></a>VSIX パッケージのローカライズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ VSIX パッケージは、各ターゲット言語 Extension.vsixlangpack ファ
  Extension.vsixlangpack  
   
 > [!NOTE]
->  VSIX でサポートされているプロジェクトのテンプレート、 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] VSIX マニフェストを生成し、source.extension.vsixmanifest という名前を付けます。 Visual Studio がプロジェクトをビルドするときにそのファイルの内容にコピー Extension.VsixManifest VSIX パッケージ内。  
+> VSIX でサポートされているプロジェクトのテンプレート、 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] VSIX マニフェストを生成し、source.extension.vsixmanifest という名前を付けます。 Visual Studio がプロジェクトをビルドするときにそのファイルの内容にコピー Extension.VsixManifest VSIX パッケージ内。  
   
 ## <a name="the-extensionvsixlangpack-file"></a>Extension.vsixlangpack ファイル  
  Extension.vsixlangpack ファイルは次の[VSIX 言語パックのスキーマ](../extensibility/vsx-language-pack-schema-reference.md)します。 このスキーマは、 [VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)ルート要素、およびこれらの 4 つの子要素。[LocalizedName](../extensibility/localizedname-element-vsix-language-pack-schema.md)、 [LocalizedDescription](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)、 [MoreInfoURL](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)、および[ライセンス](../extensibility/license-element-vsix-language-pack-schema.md)します。 これらの子要素に対応して、 `Name`、 `Description`、 `MoreInfoURL`、および`License`の子要素、 `Identifier` Extension.vsixmanifest ファイルの要素。  

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df77c65d116bf0e44b700d15d0b810e9adf04c78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a753ac6691e419267fdca34ed5e78a9a5b3cfdd3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424800"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>チュートリアル: エンティティ クラスの挿入、更新、および削除の動作のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60112118"
 2. プロジェクトに名前を**UpdatingwithSProcsWalkthrough**します。  
   
     > [!NOTE]
-    >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]は [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクトと C# プロジェクトでサポートされています。 したがって、新しいプロジェクトはこれらの言語のどちらかで作成してください。  
+    > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]は [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクトと C# プロジェクトでサポートされています。 したがって、新しいプロジェクトはこれらの言語のどちらかで作成してください。  
   
 3. をクリックして、 **Windows フォーム アプリケーション**テンプレートとクリック**OK**。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
   
@@ -89,7 +89,7 @@ ms.locfileid: "60112118"
      **Customer** という名前のエンティティ クラスが作成されます。 これには、Customers テーブルの列に対応するプロパティが含まれています。 このエンティティ クラスは Customers テーブルの 1 人の顧客を表すため、**Customers** ではなく **Customer** という名前が付けられます。  
   
     > [!NOTE]
-    >  このような名前の変更動作を*複数形化*と呼びます。 オンまたはオフにすることができます、[オプション ダイアログ ボックス](../ide/reference/options-dialog-box-visual-studio.md)します。 詳細については、「[方法 :複数形化をオンおよびオフにする (O/R デザイナー)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)」を参照してください。  
+    > このような名前の変更動作を*複数形化*と呼びます。 オンまたはオフにすることができます、[オプション ダイアログ ボックス](../ide/reference/options-dialog-box-visual-studio.md)します。 詳細については、「[方法 :複数形化をオンおよびオフにする (O/R デザイナー)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)」を参照してください。  
   
 3. **[ビルド]** メニューの **[UpdatingwithSProcsWalkthrough のビルド]** をクリックして、プロジェクトをビルドします。  
   
@@ -102,7 +102,7 @@ ms.locfileid: "60112118"
 7. **[UpdatingwithSProcsWalkthrough]** ノードを展開し、**[Customer]** クラスを探して選択します。  
   
     > [!NOTE]
-    >  **Customer** クラスが使用可能でない場合は、ウィザードをキャンセルし、プロジェクトをビルドしてからウィザードを再実行します。  
+    > **Customer** クラスが使用可能でない場合は、ウィザードをキャンセルし、プロジェクトをビルドしてからウィザードを再実行します。  
   
 8. **[完了]** をクリックしてデータ ソースを作成し、**Customer** エンティティ クラスを **[データ ソース]** ウィンドウに追加します。  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60112118"
 2. **データソース**ウィンドウで、ドラッグ、**顧客**ノードを Form1 にします。  
   
     > [!NOTE]
-    >  **[データ ソース]** ウィンドウを表示するには、**[データ]** メニューの **[データ ソースの表示]** をクリックします。  
+    > **[データ ソース]** ウィンドウを表示するには、**[データ]** メニューの **[データ ソースの表示]** をクリックします。  
   
 3. コード エディターで Form1 を開きます。  
   
@@ -192,7 +192,7 @@ ms.locfileid: "60112118"
 9. **[適用]** をクリックして、選択したクラスと動作の構成を保存します。  
   
     > [!NOTE]
-    >  変更を行うたびに **[適用]** をクリックすると、各クラスと動作の組み合わせに対して動作の構成を続けることができます。 クリックする前に、クラスまたは動作を変更するかどうかは**適用**、警告ダイアログ ボックスを提供するすべての変更を適用する機会が表示されます。  
+    > 変更を行うたびに **[適用]** をクリックすると、各クラスと動作の組み合わせに対して動作の構成を続けることができます。 クリックする前に、クラスまたは動作を変更するかどうかは**適用**、警告ダイアログ ボックスを提供するすべての変更を適用する機会が表示されます。  
   
 10. **[動作]** リストの **[Update]** を選択します。  
   
@@ -205,7 +205,7 @@ ms.locfileid: "60112118"
 13. **Original_CustomerID** メソッド引数を **CustomerID (オリジナル)** クラス プロパティにマップします。  
   
     > [!NOTE]
-    >  既定では、メソッド引数は名前が一致した場合にクラス プロパティにマップされます。 プロパティ名が変更され、テーブルとエンティティ クラス間で一致しなくなったために、O/R デザイナーが正しいマッピングを判断できないときは、マップ先となる同等のクラス プロパティを選択することが必要になる場合があります。 また、メソッド引数のマップ先として有効なクラス プロパティがない場合は、**[クラスのプロパティ]** 値を **[(なし)]** に設定できます。  
+    > 既定では、メソッド引数は名前が一致した場合にクラス プロパティにマップされます。 プロパティ名が変更され、テーブルとエンティティ クラス間で一致しなくなったために、O/R デザイナーが正しいマッピングを判断できないときは、マップ先となる同等のクラス プロパティを選択することが必要になる場合があります。 また、メソッド引数のマップ先として有効なクラス プロパティがない場合は、**[クラスのプロパティ]** 値を **[(なし)]** に設定できます。  
   
 14. **[適用]** をクリックして、選択したクラスと動作の構成を保存します。  
   
@@ -220,7 +220,7 @@ ms.locfileid: "60112118"
 19. **[OK]** をクリックします。  
   
 > [!NOTE]
->  この特定のチュートリアルに限った問題ではありませんが、[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] は、ID 列 (自動インクリメント)、rowguidcol 列 (データベースが生成した GUID)、およびタイムスタンプ列であれば、データベースによって生成された値を、挿入時および更新時に自動的に処理します。 その他の列型のデータベースが生成した値は、予想に反して null 値になります。 データベースが生成した値を返すには、手動で <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> を `true` に設定し、<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> を <xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync>、または <xref:System.Data.Linq.Mapping.AutoSync> のいずれかに設定する必要があります。  
+> この特定のチュートリアルに限った問題ではありませんが、[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] は、ID 列 (自動インクリメント)、rowguidcol 列 (データベースが生成した GUID)、およびタイムスタンプ列であれば、データベースによって生成された値を、挿入時および更新時に自動的に処理します。 その他の列型のデータベースが生成した値は、予想に反して null 値になります。 データベースが生成した値を返すには、手動で <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> を `true` に設定し、<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> を <xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync>、または <xref:System.Data.Linq.Mapping.AutoSync> のいずれかに設定する必要があります。  
   
 ## <a name="testing-the-application"></a>アプリケーションのテスト  
  アプリケーションを再実行し、データベース内の顧客レコードが **UpdateCustomers** ストアド プロシージャによって正しく更新されることを確認します。  

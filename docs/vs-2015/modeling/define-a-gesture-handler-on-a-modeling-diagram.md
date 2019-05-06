@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 653c2760c369381162f519223b75ce8a7468c507
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433163"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>モデリング図にジェスチャ ハンドラーを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
 3. プロジェクトにクラス ファイルを追加し、その内容を次のコードに設定します。  
   
    > [!NOTE]
-   >  名前空間およびクラスの名前は必要に応じて変更してください。  
+   > 名前空間およびクラスの名前は必要に応じて変更してください。  
   
    ```  
    using System.ComponentModel.Composition;  

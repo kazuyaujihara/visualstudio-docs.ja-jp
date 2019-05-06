@@ -9,12 +9,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 75780cf846b2f328dbe79481244901ad7662ab7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 87c441271e72ef2aa67e0908e19473279f26ec53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441943"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>手順 10: その他のボタンとチェック ボックスのコードを記述する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60076597"
  ![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")このトピックのビデオ版について、次を参照してください。[チュートリアル 1。Visual basic - ビデオ 5 ピクチャ ビューアーの作成](http://go.microsoft.com/fwlink/?LinkId=205216)または[チュートリアル 1。C# - ビデオ 5 ピクチャ ビューアーの作成](http://go.microsoft.com/fwlink/?LinkId=205206)です。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。  
   
 > [!NOTE]
->  ベスト プラクティスとして、コードには常にコメントを付けることをお勧めします。 コメントは人が読むための情報であり、時間をかけてでも記述しておけばコードがわかりやすくなります。 コメント行の内容は、プログラムではすべて無視されます。 行をコメント行にするには、Visual C# の場合は先頭に 2 つのスラッシュ (//) を入力し、Visual Basic の場合は先頭に単一引用符 (') を入力します。  
+> ベスト プラクティスとして、コードには常にコメントを付けることをお勧めします。 コメントは人が読むための情報であり、時間をかけてでも記述しておけばコードがわかりやすくなります。 コメント行の内容は、プログラムではすべて無視されます。 行をコメント行にするには、Visual C# の場合は先頭に 2 つのスラッシュ (//) を入力し、Visual Basic の場合は先頭に単一引用符 (') を入力します。  
   
 ### <a name="to-write-code-for-additional-buttons-and-a-check-box"></a>その他のボタンとチェック ボックスのコードを記述するには  
   

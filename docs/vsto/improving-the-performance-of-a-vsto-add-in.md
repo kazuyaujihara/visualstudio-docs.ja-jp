@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df17245a398c71e7ae9ce0077352f47b0b70ab9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2add0dfced6a3b8e8263dafe133ee3a2f86637f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420934"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>VSTO アドインのパフォーマンスを向上させる
   Office アプリケーション用に作成した VSTO アドインを最適化して、そのアドインの開始、終了、また、項目を開くなどのタスクの実行を素早く行えるようにして、ユーザー エクスペリエンスを向上させることができます。 VSTO アドインが Outlook を対象にしている場合は、不十分なパフォーマンスが原因で VSTO アドインが無効にされる可能性を低くすることができます。 次の方針を導入すると、VSTO アドインのパフォーマンスを向上させることができます。
@@ -93,7 +93,7 @@ ms.locfileid: "60071822"
 - 配置マニフェストのデジタル署名の検証。
 
   > [!NOTE]
-  >  このアプローチは、ユーザーのコンピューター上のセキュリティで保護された場所に、VSTO アドインを展開する場合は必要ありません。
+  > このアプローチは、ユーザーのコンピューター上のセキュリティで保護された場所に、VSTO アドインを展開する場合は必要ありません。
 
   詳細については、次を参照してください。 [Windows インストーラーを使用して Office ソリューションを配置](../vsto/deploying-an-office-solution-by-using-windows-installer.md)します。
 
@@ -111,7 +111,7 @@ ms.locfileid: "60071822"
  時間を要するタスク (長時間実行されるタスク、データベース接続、または他の種類のネットワークの呼び出しなど) を単独のスレッドで実行することを検討してください。 詳細については、次を参照してください。[のスレッドの Office でサポート](../vsto/threading-support-in-office.md)します。
 
 > [!NOTE]
->  Office オブジェクト モデルを呼び出すすべてのコードは、メイン スレッドで実行する必要があります。
+> Office オブジェクト モデルを呼び出すすべてのコードは、メイン スレッドで実行する必要があります。
 
 ## <a name="see-also"></a>関連項目
 

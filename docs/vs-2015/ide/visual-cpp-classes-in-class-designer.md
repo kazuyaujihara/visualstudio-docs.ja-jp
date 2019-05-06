@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443175"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>クラス デザイナーの Visual C++ クラス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54787077"
 クラス デザイナーは、C++ クラスをサポートし、Visual Basic および Visual C# クラスの図形と同じ方法でネイティブの C++ クラスを視覚化します。ただし、C++ クラスは複数の継承関係を持つことができる点が異なります。 クラスの図形を展開して、表示されるクラスのフィールドとメソッドを増やしたり、図形を折りたたんでスペースを節約したりすることができます。  
   
 > [!NOTE]
->  クラス デザイナーは、共用体 (共用体の最大データ メンバーに必要な量のメモリしか割り当てられない特殊なタイプのクラス) をサポートしていません。  
+> クラス デザイナーは、共用体 (共用体の最大データ メンバーに必要な量のメモリしか割り当てられない特殊なタイプのクラス) をサポートしていません。  
   
 ## <a name="simple-inheritance"></a>単純な継承  
  クラス ダイアグラムに複数のクラスをドラッグした場合、これらのクラスにクラス継承関係があると、矢印によって各クラスが接続されます。 矢印は、基底クラスの方向を指し示します。 たとえば、クラス ダイアグラムに以下のクラスが表示される場合、矢印によって各クラスが接続され、B から A が指し示されます。  
@@ -52,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
  クラスの図形を右クリックして **[基底クラスの表示]** をクリックすると、選択したクラスの基底クラスが表示されます。  
   
 > [!NOTE]
->  **[派生クラスの表示]** コマンドは、C++ コードについてはサポートされていません。 派生クラスは、[クラス ビュー] を開き、型ノードを展開し、**[派生型]** サブフォルダーを展開してからこれらの型をクラス ダイアグラムにドラッグすると表示できます。  
+> **[派生クラスの表示]** コマンドは、C++ コードについてはサポートされていません。 派生クラスは、[クラス ビュー] を開き、型ノードを展開し、**[派生型]** サブフォルダーを展開してからこれらの型をクラス ダイアグラムにドラッグすると表示できます。  
   
  複数クラスの継承の詳細については、「[Multiple Inheritance](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)」((NOTINBUILD) 多重継承) と「[Multiple Base Classes](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)」(複数の基底クラス) を参照してください。  
   

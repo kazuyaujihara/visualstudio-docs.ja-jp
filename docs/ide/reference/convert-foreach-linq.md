@@ -1,5 +1,5 @@
 ---
-title: Foreach ループを LINQ に変換する
+title: foreach ループを LINQ に変換する
 ms.date: 02/20/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,43 +9,43 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18c5b01aed925bf458e1c8779a2f41ea1a2d98a4
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: f0b9685ce6d4cf8ee6d4253c79759508cf43915e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968487"
 ---
-# <a name="convert-foreach-loop-to-linq"></a>Foreach ループを LINQ に変換する
+# <a name="convert-a-foreach-loop-to-linq"></a>foreach ループを LINQ に変換する
 
 このリファクタリングは以下に適用されます。
 
 - C#
 
-**概要:** IEnumerables を使用する Foreach ループを LINQ クエリまたは LINQ 呼び出し形式 (別名 LINQ メソッド) に簡単に変換できます。
+**概要:** IEnumerables を使用する *foreach* ループを LINQ クエリまたは LINQ 呼び出し形式 (別名 LINQ メソッド) に簡単に変換できます。
 
-**条件:** LINQ クエリとして読み取る IEnumerable を使用する Foreach ループがあるとき。
+**条件:** IEnumerable を使用する foreach ループがあり、そのループで LINQ クエリとして読み取る。
 
-**理由:** Foreach ループではなく LINQ 構文の使用を好むユーザーもいます。 [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq) により、クエリは C# での高度な言語構成要素になります。 LINQ では、ファイルのコードの量が減り、読み取りが簡単になります。また、さまざまなデータ ソースで同様のクエリ式パターンを指定できます。
+**理由:** foreach ループよりも LINQ 構文を使用したい。 [LINQ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq) により、クエリは C# での高度な言語構成要素になります。 LINQ では、ファイルのコードの量が減り、コードが読みやすくなります。また、さまざまなデータ ソースで同様のクエリ式パターンを指定できます。
 
 > [!NOTE]
-> LINQ 構文は一般的に、Foreach ループに比べてパフォーマンスが低くなります。 LINQ でコードの読みやすさを改善するときはパフォーマンスが低下する可能性があることを考慮することをお勧めします。
+> 一般的に、LINQ 構文は foreach ループに比べて効率的ではありません。 LINQ を使用してコードの読みやすさを改善するときは、発生する可能性があるパフォーマンスのトレードオフを認識しておくことをお勧めします。
 
-## <a name="convert-foreach-loop-to-linq-refactoring"></a>Foreach ループを LINQ リファクタリングに変換する
+## <a name="convert-a-foreach-loop-to-linq-refactoring"></a>foreach ループを LINQ リファクタリングに変換する
 
 1. `foreach` キーワードにカーソルを置きます。
 
-    ![IEnumerable を使用する Foreach](media/convert-foreach-to-LINQ.png)
+    ![IEnumerable サンプルを使用する foreach](media/convert-foreach-to-LINQ.png)
 
 2. 行の任意の場所で **Ctrl**+**.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
 
-   ![LINQ に変換メニュー](media/convert-foreach-to-LINQ-codefix.png)
+   ![LINQ に変換メニューのサンプル](media/convert-foreach-to-LINQ-codefix.png)
 
 3. **[Convert to LINQ]\(LINQ に変換\)** または **[Convert to LINQ (call form)]\(LINQ に変換 (呼び出し形式)\)** を選択する
 
-   ![LINQ クエリの結果](media/convert-foreach-to-LINQ-result.png)
+   ![LINQ クエリの結果のサンプル](media/convert-foreach-to-LINQ-result.png)
    
-   ![LINQ 呼び出し形式の結果](media/convert-foreach-to-LINQ-callform-result.png)
+   ![LINQ 呼び出し形式の結果のサンプル](media/convert-foreach-to-LINQ-callform-result.png)
    
 ### <a name="sample-code"></a>サンプル コード
 
@@ -78,5 +78,5 @@ public class Class1
 ## <a name="see-also"></a>関連項目
 
 - [リファクタリング](../refactoring-in-visual-studio.md)
-- [変更のプレビュー](../../ide/preview-changes.md)
+- [[変更のプレビュー] ウィンドウ](../../ide/preview-changes.md)
 - [.NET 開発者向けのヒント](../../ide/visual-studio-2017-for-dotnet-developers.md)

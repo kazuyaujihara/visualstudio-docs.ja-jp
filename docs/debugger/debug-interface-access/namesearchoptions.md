@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7dbb82946d185e8e5ec81b171f5d9943751eee4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855147"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 シンボルとファイル名の検索オプションを指定します。
@@ -55,7 +55,7 @@ enum NameSearchOptions {
 
 `nsfUndecoratedName` 装飾されていないし、装飾名がシンボルにのみ適用されます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 この列挙の値は、次のメソッドに渡されます。
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
@@ -64,7 +64,7 @@ enum NameSearchOptions {
 
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: dia2.h
 
 ## <a name="see-also"></a>関連項目

@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 70bebfab781ceb1d608d13a8afad24ee06cb9c28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d2349c21d55c20bcb3bcd50ab96f383a9afcc00b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426111"
 ---
 # <a name="msbuild-task"></a>MSBuild タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "59656740"
  しかし、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 には、新しい予約済みのメタデータ項目が 2 つあります (Properties と AdditionalProperties)。これらのメタデータ項目は、[MSBuild タスク](../msbuild/msbuild-task.md)を使用してビルドされる別プロジェクトに異なるプロパティを渡すための柔軟な方法を提供します。  
   
 > [!NOTE]
->  これらの新しいメタデータ項目は、[MSBuild タスク](../msbuild/msbuild-task.md)の Projects 属性に渡される項目に対してのみ適用可能です。  
+> これらの新しいメタデータ項目は、[MSBuild タスク](../msbuild/msbuild-task.md)の Projects 属性に渡される項目に対してのみ適用可能です。  
   
 ## <a name="multi-processor-build-benefits"></a>マルチプロセッサ ビルドの利点  
  この新しいメタデータを使用する最大の利点の 1 つを享受できるのは、マルチプロセッサ システム上でプロジェクトを同時にビルドする場合です。 メタデータを使用することで、すべてのプロジェクトを単一の [MSBuild タスク](../msbuild/msbuild-task.md)呼び出しに統合することができます。バッチ処理や条件付き [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] タスクを実行する必要はありません。 単一の [MSBuild タスク](../msbuild/msbuild-task.md)を呼び出すだけで、Projects 属性に指定されているすべてのプロジェクトが同時にビルドされます。 (ただし、`BuildInParallel=true` 属性が [MSBuild タスク](../msbuild/msbuild-task.md)に指定されている場合に限定されます。)詳細については、「[複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)」を参照してください。  
@@ -77,7 +77,7 @@ ms.locfileid: "59656740"
  一般的なシナリオとして、[MSBuild タスク](../msbuild/msbuild-task.md)を使用し、ビルド構成だけは異なるものを使用して、複数のソリューション ファイルをビルドすることが挙げられます。 デバッグ構成を使用してソリューション a1 をビルドし、リリース構成を使用してソリューション a2 をビルドすることができます。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 では、このプロジェクト ファイルは次のようになります。  
   
 > [!NOTE]
->  次の例で、"…" はその他のソリューション ファイルを表します。  
+> 次の例で、"…" はその他のソリューション ファイルを表します。  
   
 ### <a name="aproj"></a>a.proj  
   

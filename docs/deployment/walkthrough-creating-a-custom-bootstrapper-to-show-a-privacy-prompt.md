@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1973d5d71308cc5fda6e48acfc60d256775ff2cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00c5266d57ae5633313465796c718d989f783ea6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406863"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>チュートリアル: プライバシー プロンプトを使用してカスタム ブートストラップを作成する
 新しいファイルのバージョンとアセンブリのバージョンのアセンブリが使用可能になると自動的に更新する ClickOnce アプリケーションを構成できます。 お客様がこの動作に同意することを確認するにプライバシー プロンプトを表示できます。 次に、アプリケーションが自動的に更新するアクセス許可を付与するかどうかを選択できます。 アプリケーションが自動的に更新する許可されていない場合はインストールされません。
@@ -125,7 +125,7 @@ ms.locfileid: "60089173"
     6. **スタートアップ オブジェクト**ドロップダウン メニューで、 **Module1**します。
 
        > [!NOTE]
-       >  アプリケーション フレームワークを無効にするには、Windows XP ビジュアル スタイルのアプリケーション イベント、スプラッシュ スクリーン、単一インスタンス アプリケーションなどの機能が無効にします。 詳細については、「[[アプリケーション] ページ (プロジェクト デザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)」を参照してください。
+       > アプリケーション フレームワークを無効にするには、Windows XP ビジュアル スタイルのアプリケーション イベント、スプラッシュ スクリーン、単一インスタンス アプリケーションなどの機能が無効にします。 詳細については、「[[アプリケーション] ページ (プロジェクト デザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)」を参照してください。
 
        Visual c# 開発者の場合のみ。
 
@@ -151,12 +151,12 @@ ms.locfileid: "60089173"
 1. という名前のディレクトリを作成する**UpdateConsentDialog**で、 *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*します。
 
     > [!NOTE]
-    >  このフォルダーを作成する管理者特権を必要があります。
+    > このフォルダーを作成する管理者特権を必要があります。
 
 2. *UpdateConsentDialog*ディレクトリ、サブディレクトリを作成*en*します。
 
     > [!NOTE]
-    >  ロケールごとに新しいディレクトリを作成します。 たとえば、フランス、ドイツのロケールのサブディレクトリを追加できます。 必要に応じて、フランス語、ドイツ語の文字列と言語パック、これらのディレクトリが含まれます。
+    > ロケールごとに新しいディレクトリを作成します。 たとえば、フランス、ドイツのロケールのサブディレクトリを追加できます。 必要に応じて、フランス語、ドイツ語の文字列と言語パック、これらのディレクトリが含まれます。
 
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>手順 2: Product.xml マニフェスト ファイルを作成するには
 
@@ -221,7 +221,7 @@ ms.locfileid: "60089173"
 4. という名前のドキュメントを作成する*eula.rtf*のソフトウェア使用許諾条件。
 
     > [!NOTE]
-    >  ソフトウェアのライセンス条項は、ライセンス、保証、負債、および現地の法律に関する情報を含める必要があります。 これらのファイルは、ロケール固有のもの、MBCS または UNICODE 文字をサポートする形式でファイルを保存するようにする必要があります。 ソフトウェアのライセンス条項のコンテンツについて、法務部門を参照してください。
+    > ソフトウェアのライセンス条項は、ライセンス、保証、負債、および現地の法律に関する情報を含める必要があります。 これらのファイルは、ロケール固有のもの、MBCS または UNICODE 文字をサポートする形式でファイルを保存するようにする必要があります。 ソフトウェアのライセンス条項のコンテンツについて、法務部門を参照してください。
 
 5. En のサブディレクトリにドキュメントを保存、 *UpdateConsentDialog*ブートス トラップ ディレクトリ。
 
@@ -241,7 +241,7 @@ ms.locfileid: "60089173"
 4. 選択**同意ダイアログを更新**します。
 
     > [!NOTE]
-    >  前提条件 ダイアログ ボックスで更新プログラムの同意ダイアログを表示する Visual Studio を閉じて再度開くことがあります。
+    > 前提条件 ダイアログ ボックスで更新プログラムの同意ダイアログを表示する Visual Studio を閉じて再度開くことがあります。
 
 5. **[OK]** をクリックします。
 

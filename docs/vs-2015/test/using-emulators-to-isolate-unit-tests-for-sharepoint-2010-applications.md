@@ -8,12 +8,12 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: badf8d53a73c86bac9422fd2bb7e1f073dd291eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 689ff79fb35f7b84c976fed85e4af10a8e252f3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445870"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Sharepoint 2010 アプリケーションの単体テストを分離するためのエミュレーターの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -154,7 +154,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 ### <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a> エミュレーションを使用してテスト メソッドを実行する  
  パッケージをインストールすると、必要なライブラリへの参照がプロジェクトに追加されます。 既存のテスト クラスでエミュレーターを使いやすくするには、名前空間 `Microsoft.SharePoint.Emulators` と `Microsoft.QualityTools.Testing.Emulators` を追加します。  
   
- テスト メソッドでエミュレーションを有効にするには、`using` オブジェクトを作成する `SharePointEmulationScope` ステートメントでメソッド本体をラップします。 例:  
+ テスト メソッドでエミュレーションを有効にするには、`using` オブジェクトを作成する `SharePointEmulationScope` ステートメントでメソッド本体をラップします。 例えば:  
   
 ```csharp  
   
@@ -340,7 +340,7 @@ public string GetAppointmentsForToday(string listName, SPWeb web)
  Fakes デリゲートを実装する既存のテスト メソッド `GetAppointmentsForTodayReturnsOnlyTodaysAppointments` を次のように変更します。 必要な変更については、コメントで説明が示されています。  
   
 > [!IMPORTANT]
->  テストが `ShimNotSupported` コンテキストで実行されると、Fake shim を明示的に作成するテスト メソッドにより `EmulationMode.Passthrough` 例外がスローされます。 この問題を回避するには、変数を使用して `EmulationMode` 値を設定し、値をテストする `if` ステートメントで Fakes コードをラップします。  
+> テストが `ShimNotSupported` コンテキストで実行されると、Fake shim を明示的に作成するテスト メソッドにより `EmulationMode.Passthrough` 例外がスローされます。 この問題を回避するには、変数を使用して `EmulationMode` 値を設定し、値をテストする `if` ステートメントで Fakes コードをラップします。  
   
 ```csharp  
 // class level field to set emulation mode  

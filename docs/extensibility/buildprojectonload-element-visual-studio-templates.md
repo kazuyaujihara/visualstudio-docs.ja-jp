@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 41baf6b8405e45600050e508b7fd7523e19533ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926594"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 要素 (Visual Studio テンプレート)
 作成して、ソリューションに追加するときは、新しいプロジェクトのみをビルドします。 ソリューション全体はビルドされません。
@@ -57,7 +57,7 @@ ms.locfileid: "55025723"
  `BuildProjectOnLoad` は、省略可能な要素です。 既定値は `false` です。
 
 ## <a name="example"></a>例
- 次の例では、Visual C# テンプレートのメタデータを示しています。
+ 次の例では、Visual c# テンプレートのメタデータを示しています。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

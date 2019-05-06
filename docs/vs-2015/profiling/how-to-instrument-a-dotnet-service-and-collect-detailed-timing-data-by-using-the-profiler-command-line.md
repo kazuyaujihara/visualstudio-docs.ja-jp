@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 36d9f2abceb7daf0d9e4be72958b2bbc1fe86204
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b438cac78aa863eab4f04e250ed768d54a2fbc4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432685"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>方法: Profiler のコマンドラインを使用して収集の詳細なタイミング データを .NET サービスをインストルメント化および
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,11 +22,11 @@ ms.locfileid: "60080541"
 ここでは、[!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] プロファイリング ツールのコマンド ライン ツールを使用して [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] サービスをインストルメントし、詳細なタイミング データを収集する方法について説明します。  
 
 > [!NOTE]
->  コンピューターの開始後にサービスを再開できない場合、インストルメンテーション メソッドを使用してサービスをプロファイルすることはできません。このようなサービスが開始されるのは、オペレーティング システムの開始時のみです。  
+> コンピューターの開始後にサービスを再開できない場合、インストルメンテーション メソッドを使用してサービスをプロファイルすることはできません。このようなサービスが開始されるのは、オペレーティング システムの開始時のみです。  
 >   
->  プロファイリング ツールのコマンド ライン ツールは、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] インストール ディレクトリの \Team Tools\Performance Tools サブディレクトリにあります。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。 詳細については、「[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)」をご覧ください。  
+> プロファイリング ツールのコマンド ライン ツールは、[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] インストール ディレクトリの \Team Tools\Performance Tools サブディレクトリにあります。 64 ビット コンピューター上では、64 ビット バージョンのツールと 32 ビット バージョンのツールの両方を使用できます。 プロファイラー コマンド ライン ツールを使用するには、コマンド プロンプト ウィンドウの PATH 環境変数にツールのパスを追加するか、コマンド自体にそれを追加します。 詳細については、「[コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)」をご覧ください。  
 >   
->  プロファイリングの実行に階層の相互作用データを追加するには、コマンド ライン プロファイリング ツールによる特定の手順が必要です。 「[Visual Studio IDE を使用した階層相互作用データの収集](../profiling/adding-tier-interaction-data-from-the-command-line.md)」をご覧ください。  
+> プロファイリングの実行に階層の相互作用データを追加するには、コマンド ライン プロファイリング ツールによる特定の手順が必要です。 「[Visual Studio IDE を使用した階層相互作用データの収集](../profiling/adding-tier-interaction-data-from-the-command-line.md)」をご覧ください。  
 
  インストルメンテーション メソッドを使用して [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] サービスから詳細なタイミング データを収集するには、[VSInstr.exe](../profiling/vsinstr.md) ツールを使用して、コンポーネントのインストルメントされたバージョンを生成します。 次に、サービスのインストルメントされていないバージョンをインストルメントされたバージョンに置き換え、サービスを手動で起動するように構成します。 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) ツールを使用してグローバル プロファイリング環境変数を初期化し、ホスト コンピューターを再起動します。 次に、プロファイラーを起動します。  
 
@@ -63,7 +63,7 @@ ms.locfileid: "60080541"
      **/start:trace** オプションでは、次のオプションのいずれかを使用できます。  
 
    > [!NOTE]
-   >  **/user** オプションと **/crosssession** オプションは、通常、プロファイリング サービスで必要になります。  
+   > **/user** オプションと **/crosssession** オプションは、通常、プロファイリング サービスで必要になります。  
 
    |                                 オプション                                  |                                                                                                                                            説明                                                                                                                                             |
    |-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

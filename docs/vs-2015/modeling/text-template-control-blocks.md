@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bdb818735a19be8dc6e8a96f677072d00aae6a46
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2e2b21f69d0688f3554aec8cf751cf674c2b5e30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411467"
 ---
 # <a name="text-template-control-blocks"></a>テキスト テンプレートのコントロール ブロック
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,11 +66,11 @@ Found another one!
 ```  
   
 > [!WARNING]
->  プレーン テキストの埋め込みを含む入れ子になったステートメントを区切るためには、 {...} を常に使用します。 次の例は正しく動作しません。  
+> プレーン テキストの埋め込みを含む入れ子になったステートメントを区切るためには、 {...} を常に使用します。 次の例は正しく動作しません。  
 >   
->  `<# if (ShouldPrint) #> Some text. -- WRONG`  
+> `<# if (ShouldPrint) #> Some text. -- WRONG`  
 >   
->  次のように、中かっこ ({ }) を含める必要があります。  
+> 次のように、中かっこ ({ }) を含める必要があります。  
   
 ```  
   
@@ -120,7 +120,7 @@ Some text.
 ```  
   
 > [!NOTE]
->  同じテンプレート ファイル内で、クラス機能コントロール ブロックの後に標準コントロール ブロックを配置することはできません。 ただし、この制限は、`<#@include#>` ディレクティブを使用した結果には適用されません。 各インクルード ファイルでは、標準ブロックの後にクラス機能ブロックが配置されます。  
+> 同じテンプレート ファイル内で、クラス機能コントロール ブロックの後に標準コントロール ブロックを配置することはできません。 ただし、この制限は、`<#@include#>` ディレクティブを使用した結果には適用されません。 各インクルード ファイルでは、標準ブロックの後にクラス機能ブロックが配置されます。  
   
  クラス機能コントロール ブロック内にテキスト ブロックと式ブロックを埋め込むことによって、出力を生成する関数を作成できます。 例:  
   

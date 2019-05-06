@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 660f1fd1d67490bde327533f9d030c7deba9f819
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 33c466d3c7a619de87baccd2713c9a595283d5ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422800"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>方法 : プロジェクトを構成して対象プラットフォームを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60084922"
    2. **[新しいプラットフォームを入力または選択してください]** ボックスの一覧で、**[x64]** を選びます。  
   
        > [!NOTE]
-       >  構成に新しい名前を指定する場合は、**[プロジェクト デザイナー]** で適切なプラットフォームを対象にするよう設定の変更が必要になることがあります。  
+       > 構成に新しい名前を指定する場合は、**[プロジェクト デザイナー]** で適切なプラットフォームを対象にするよう設定の変更が必要になることがあります。  
   
    3. 現在のプラットフォーム構成から設定をコピーする場合は、構成を選んでから **[OK]** を選びます。  
   

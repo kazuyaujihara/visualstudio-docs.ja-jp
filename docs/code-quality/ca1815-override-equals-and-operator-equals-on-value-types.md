@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c4cf84a292e11b20eb37bee562cd039096e56af
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545307"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815:equals および operator equals を値型でオーバーライドします
 
@@ -56,7 +56,7 @@ ms.locfileid: "57873426"
 dotnet_code_quality.ca1815.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (パフォーマンス) で構成できます。 詳細については、[構成 FxCop アナライザー](configure-fxcop-analyzers.md)を参照してください。
+このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (パフォーマンス) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
 
 ## <a name="example"></a>例
 

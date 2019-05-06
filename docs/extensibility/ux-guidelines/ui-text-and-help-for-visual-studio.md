@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 31fdc396d1dae372663abeb4c956bac0c9ef9b95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961363"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI テキストと Visual Studio のヘルプ
 ## <a name="BKMK_UITextAndTerminology"></a> UI テキストと用語

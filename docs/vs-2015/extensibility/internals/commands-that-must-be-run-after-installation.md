@@ -10,12 +10,12 @@ ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8448b00085ab7e7a151c935eee4d8a8b1423bd1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 158119759f8e90161e1f3b5267be498dfc1c9b38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441527"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>インストール後に実行する必要があるコマンド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "58977208"
 実行する必要があります、.msi ファイルから拡張機能をデプロイする場合`devenv /setup`Visual Studio 拡張機能を検出するために、インストールの一部として。  
   
 > [!NOTE]
->  このトピックの情報は、Visual Studio 2008 以前のバージョンと DevEnv の検索に適用されます。 以降のバージョンの Visual Studio を DevEnv を検出する方法については、次を参照してください。[システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)します。  
+> このトピックの情報は、Visual Studio 2008 以前のバージョンと DevEnv の検索に適用されます。 以降のバージョンの Visual Studio を DevEnv を検出する方法については、次を参照してください。[システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)します。  
   
 ## <a name="finding-devenvexe"></a>Devenv.exe の検索  
  各バージョンを見つけることができます値をレジストリから devenv.exe を[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]インストーラーの書き込み、RegLocator テーブルおよび AppSearch テーブルを使用して、レジストリ値をプロパティとして格納します。 詳細については、次を参照してください。[システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)します。  
@@ -69,7 +69,7 @@ ms.locfileid: "58977208"
  インストール中に実行をスケジュールして InstallExecuteSequence テーブルには、カスタム アクションを作成する必要があります。 カスタム動作をする場合に実行されるを防ぐために条件列の各列に対応するプロパティを使用してバージョンの[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]システムがインストールされていません。  
   
 > [!NOTE]
->  `Null` プロパティを評価する`False`条件で使用するとします。  
+> `Null` プロパティを評価する`False`条件で使用するとします。  
   
  各カスタム アクションのシーケンス列の値は、Windows インストーラー パッケージには、その他のシーケンス値によって異なります。 シーケンス値は、devenv.exe のカスタム アクションとして実行できるだけ近くに InstallFinalize の標準的な操作の前にすぐになるようになります。  
   

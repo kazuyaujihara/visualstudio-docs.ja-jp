@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0699e3a7ad4a56f7e102ca896359290cd7dbecb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d6aca6166486d0eda1a4a92167c0e8d6a8a2924
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415529"
 ---
 # <a name="how-to-use-the-activity-log"></a>方法: アクティビティ ログを使用します。
 Vspackage は、メッセージをアクティビティ ログに書き込むことができます。 この機能は、小売環境で Vspackage をデバッグするために特に便利です。
 
 > [!TIP]
->  アクティビティ ログは常にオンにします。 Visual Studio では、一般的な構成情報がある、最初の 10 個のエントリと同様に、最新の 100 個のエントリのローリング バッファーを保持します。
+> アクティビティ ログは常にオンにします。 Visual Studio では、一般的な構成情報がある、最初の 10 個のエントリと同様に、最新の 100 個のエントリのローリング バッファーを保持します。
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>アクティビティ ログにエントリを書き込む
 

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 366416e4f18435bd01391657eb2fc4f65f8a4d62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441781"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>方法: コードを実行することがなく Office ソリューションを開く
   マネージ コード拡張機能で作成された Microsoft Office ソリューションでは、エンドユーザーの Office アプリケーションのセキュリティ設定が [高] に設定されている場合でも実行されます。 これは、.NET アセンブリのコードのセキュリティは、Microsoft Office ではなく、Microsoft .NET Framework によって管理されるためです。
@@ -39,7 +39,7 @@ ms.locfileid: "60117201"
 - ドキュメントおよびからブックを開く、**ファイル**メニューを押しながら、 **Shift** Word および Excel のドキュメントを開くときに、初期化イベントを発生させるようにするキー。
 
     > [!NOTE]
-    >  ドキュメントまたはブックを開いた場合、 **Getting Started**を押し、作業ウィンドウ**Shift**コードをバイパスしていません。 また、shift キーを押しができないイベントが、ドキュメントを開いた後に発生します。
+    > ドキュメントまたはブックを開いた場合、 **Getting Started**を押し、作業ウィンドウ**Shift**コードをバイパスしていません。 また、shift キーを押しができないイベントが、ドキュメントを開いた後に発生します。
 
      このメソッドは、変更を加えるコードを実行していると、文書の変更がないドキュメントを開きたい場合に便利です。
 

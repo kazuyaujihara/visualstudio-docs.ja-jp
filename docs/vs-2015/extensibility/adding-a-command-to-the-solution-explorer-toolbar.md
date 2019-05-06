@@ -12,12 +12,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 234f8ffbb3fdde48ca844386d5e5a716f74e8969
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac07a2c6becd46a2536e6a9b3340d075d5f078f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403244"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>ソリューション エクスプローラーのツールバーへのコマンドの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60054731"
  メニューのツールバーのコマンドおよび .vsct ファイルの詳細については、次を参照してください。[コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)します。  
   
 > [!NOTE]
->  コマンド テーブル (.ctc) の構成ファイルではなく XML コマンド テーブル (.vsct) ファイルを使用して、Vspackage でのメニューとコマンドの表示方法を定義します。 詳細については、「 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)」を参照してください。  
+> コマンド テーブル (.ctc) の構成ファイルではなく XML コマンド テーブル (.vsct) ファイルを使用して、Vspackage でのメニューとコマンドの表示方法を定義します。 詳細については、「 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)」を参照してください。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35886ea0456426c30c44d5fd8e90399d4a2143ef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837941"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 特定のプラットフォームの種類のスタック フレームの列挙子を取得します。
@@ -49,7 +49,7 @@ ms.locfileid: "56642756"
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  X86 だけのスタック フレームの一覧を取得するプラットフォームを呼び出し、 [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)メソッド。
 
 ## <a name="see-also"></a>関連項目

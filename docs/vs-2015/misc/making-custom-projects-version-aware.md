@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 3118ce72cd75baaf15fc66eedc5f2cd48c6f43d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422725"
 ---
 # <a name="making-custom-projects-version-aware"></a>カスタム プロジェクトでのバージョンの認識
 カスタム プロジェクト システムでは、カスタム プロジェクトを Visual Studio の複数のバージョンに読み込むことができます。 また、そのタイプのプロジェクトが、以前のバージョンの Visual Studio に読み込まれないようにすることもできます。 そのプロジェクトの修復や変換や廃止が必要になった場合に備えて、今後のバージョンでそのプロジェクト自体が識別されるようにすることもできます。  
@@ -37,7 +37,7 @@ ms.locfileid: "60096596"
 6. `VSPUVF_PROJECT_DEPRECATED`:このプロジェクトのサポートが不要になったことを示します。  
   
 > [!NOTE]
->  混乱を避けるため、これらを設定するときにアップグレード フラグを組み合わせないでください。 たとえば、 `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`のようなあいまいなアップグレード状態を作成しないでください。  
+> 混乱を避けるため、これらを設定するときにアップグレード フラグを組み合わせないでください。 たとえば、 `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`のようなあいまいなアップグレード状態を作成しないでください。  
   
  プロジェクト フレーバーによっては、 `UpgradeProjectFlavor_CheckOnly` インターフェイスから関数 `IVsProjectFlavorUpgradeViaFactory2` を実装することがあります。 この関数が機能するには、前述した `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly` 実装で呼び出す必要があります。 この呼び出しは、Visual Basic または C# 基本プロジェクト システムに既に実装されています。 この関数の機能により、プロジェクト フレーバーで、基本プロジェクト システムによって判別されることに加え、プロジェクトのアップグレード要件も判別できるようになります。 互換性のダイアログ ボックスには、2 つの要件のうち最も深刻なものが示されます。  
   
@@ -72,7 +72,7 @@ ms.locfileid: "60096596"
      このコードを実装すると、プロジェクト互換性のダイアログ ボックスが表示されます。 指定したすべてのプロジェクトを互換性なしとしてマークしてよいかどうかを確認するように求められます。 ユーザーが同意した場合、 `AskForUserConsentToBreakAssetCompat` は `S_OK`を返します。それ以外の場合、 `AskForUserConsentToBreakAssetCompat` は `OLE_E_PROMPTSAVECANCELLED`を返します。  
   
     > [!WARNING]
-    >  最も一般的なシナリオの場合、 `IVsHierarchy` 配列には 1 つの項目のみが含まれます。  
+    > 最も一般的なシナリオの場合、 `IVsHierarchy` 配列には 1 つの項目のみが含まれます。  
   
 3. `AskForUserConsentToBreakAssetCompat` が `S_OK`を返した場合、コンポーネントは互換性を破棄する変更を加えるか、受け入れます。  
   
@@ -98,7 +98,7 @@ ms.locfileid: "60096596"
      詳細については、「 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A> 」を参照してください。  
   
 > [!IMPORTANT]
->  プロジェクトを互換性ありまたは互換性なしとしてマークするには、 `VSHPROPID_MinimumDesignTimeCompatVersion` プロパティを実装する必要があります。 たとえば、プロジェクト システムが MSBuild プロジェクト ファイルを使用している場合は、対応する `<MinimumVisualStudioVersion>` プロパティ値と等しい値を持つ `VSHPROPID_MinimumDesignTimeCompatVersion` ビルド プロパティをプロジェクト ファイルに追加します。  
+> プロジェクトを互換性ありまたは互換性なしとしてマークするには、 `VSHPROPID_MinimumDesignTimeCompatVersion` プロパティを実装する必要があります。 たとえば、プロジェクト システムが MSBuild プロジェクト ファイルを使用している場合は、対応する `<MinimumVisualStudioVersion>` プロパティ値と等しい値を持つ `VSHPROPID_MinimumDesignTimeCompatVersion` ビルド プロパティをプロジェクト ファイルに追加します。  
   
 ## <a name="detecting-whether-a-project-is-incompatible"></a>プロジェクトに互換性があるかどうかの検出  
  Visual Studio の現在のバージョンと互換性がないプロジェクトは、読み込まれないようにする必要があります。 さらに、互換性のないプロジェクトは、アップグレードしたり修復したりすることができません。 このため、プロジェクトの互換性は 2 回確認する必要があります。1 回目はプロジェクトのアップグレードや修復を検討するときで、2 回目はプロジェクトを読み込む前です。  
@@ -129,7 +129,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
    `IVsProjectUpgradeViaFactory4` と `IVsProjectFlavorUpgradeViaFactory2` の新しい実装により、移行の種類をより正確に指定できます。  
   
 > [!NOTE]
->  `UpgradeProject_CheckOnly` メソッドで互換性チェックの結果をキャッシュして、後で `CreateProject`を呼び出すことでもその結果を使用できるようにすることができます。  
+> `UpgradeProject_CheckOnly` メソッドで互換性チェックの結果をキャッシュして、後で `CreateProject`を呼び出すことでもその結果を使用できるようにすることができます。  
   
  たとえば、SP1 プロジェクト システムの `UpgradeProject_CheckOnly` 用に記述した `CreateProject` メソッドと [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] メソッドがプロジェクト ファイルを調べて、 `<MinimumVisualStudioVersion>` ビルド プロパティが "11.0" であることを検出した場合、Visual Studio 2010 SP1 はプロジェクトを読み込みません。 さらに、 **ソリューション ナビゲーター** は、プロジェクトに "互換性がなく"、読み込まれないことを示します。  
   

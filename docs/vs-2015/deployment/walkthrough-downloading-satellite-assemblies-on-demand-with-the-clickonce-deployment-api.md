@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2c619301d15654ec71c3867bb97622488aac329e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88a8d30b6eff7f4d7d2754ea383f7b544cc615ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417068"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>チュートリアル: ClickOnce 配置 API で必要に応じてサテライト アセンブリをダウンロード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60050687"
  このチュートリアルでは、サテライト アセンブリをオプションとしてマークする方法、および現在のカルチャ設定にクライアント コンピューターが必要とするアセンブリのみをダウンロードする方法について説明します。 次の手順では、[!INCLUDE[winsdklong](../includes/winsdklong-md.md)] から入手できるツールを使用します。 このタスクを、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を使用して実行することもできます。  参照してください[チュートリアル。ClickOnce 配置デザイナーを使用して API で必要に応じてサテライト アセンブリをダウンロード](http://msdn.microsoft.com/library/ms366788\(v=vs.110\))または[チュートリアル。ClickOnce 配置デザイナーを使用して API で必要に応じてサテライト アセンブリをダウンロード](http://msdn.microsoft.com/library/ms366788\(v=vs.120\))します。  
   
 > [!NOTE]
->  次のコード例は、テストを目的としているため、プログラム内でカルチャを `ja-JP`に設定しています。 このコードを運用環境用に調整する方法については、このトピックの「次の手順」セクションを参照してください。  
+> 次のコード例は、テストを目的としているため、プログラム内でカルチャを `ja-JP`に設定しています。 このコードを運用環境用に調整する方法については、このトピックの「次の手順」セクションを参照してください。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  このトピックでは、ローカライズされたリソースを、Visual Studio を使用してアプリケーションに追加する方法を理解していることを想定しています。 詳細については、次を参照してください。[チュートリアル。Windows フォームのローカリゼーション](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx)します。  

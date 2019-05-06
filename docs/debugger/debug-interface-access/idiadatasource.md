@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b8618cc3484584430bbe3ae3fde59b6e5d5fc78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838520"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
 デバッグ シンボルのソースへのアクセスを開始します。
@@ -40,7 +40,7 @@ IDiaDataSource : IUnknown
 |[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|メモリ内のデータ ストリームを使用してアクセス プログラム データベース (.pdb) ファイルに格納されているデバッグ データを準備します。|
 |[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|シンボルを照会するためのセッションを開きます。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 Load メソッドの 1 つの呼び出し、`IDiaDataSource`インターフェイスは、シンボル ファイルを開きます。 呼び出しは成功、 [idiadatasource::opensession](../../debugger/debug-interface-access/idiadatasource-opensession.md)メソッドが返す、 [IDiaSession](../../debugger/debug-interface-access/idiasession.md)データ ソースの照会をサポートするインターフェイス。 Load メソッドは、ファイルに関連するエラーを返す場合、 [idiadatasource::get_lasterror](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)メソッドを返す値には、エラーに関連付けられているファイル名が含まれています。
 
 ## <a name="notes-for-callers"></a>呼び出し元のノート
@@ -62,8 +62,8 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="requirements"></a>要件
-ヘッダー: Dia2.h
+## <a name="requirements"></a>必要条件
+ヘッダー:Dia2.h
 
 ライブラリ: diaguids.lib
 

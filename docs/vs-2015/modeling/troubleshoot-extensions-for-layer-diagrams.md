@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba45ba733f5447523b6793d4f5e2946c3507c82e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 38a459760dd66e1160bd8b197ee9883b617639b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439747"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>レイヤー図の拡張機能のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60098690"
 2. 次のフォルダーの削除: %LocalAppData%\Microsoft\VisualStudio\\[バージョン] \ComponentModelCache  
   
    > [!NOTE]
-   >  %Localappdata% は通常*DriveName*: \Users\\*UserName*\AppData\Local です。  
+   > %Localappdata% は通常*DriveName*: \Users\\*UserName*\AppData\Local です。  
   
    必要に応じて、次の手順に進みます。  
   

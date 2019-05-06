@@ -12,12 +12,12 @@ ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0737607a8905e96e02b7189761198a7e9e3915b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 661cf6833c292d5ff4015649d494ee3a7d04fdbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419885"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ int GetStringChars(
  `rgString`  
  [out]文字列を返します。  
   
- [C++ のみ]、`rgString`を文字列の Unicode 文字を受け取るバッファーへのポインターです。 このバッファーは以上である必要があります`buflen`サイズの文字 (バイトではありません)。  
+ [C++のみ]、`rgString`を文字列の Unicode 文字を受け取るバッファーへのポインターです。 このバッファーは以上である必要があります`buflen`サイズの文字 (バイトではありません)。  
   
  `pceltFetched`  
  [out]実際には、バッファーに格納されている文字数が返されます。 (できます`NULL`c++)。  
@@ -61,7 +61,7 @@ int GetStringChars(
  C++ では、注意が必要、バッファーが少なくともがあることを保証する`buflen`文字の Unicode 文字。 Unicode 文字は 2 バイト長であることに注意してください。  
   
 > [!NOTE]
->  C++ では、返される文字列に終端の null 文字は含まれません。 与えられた場合、`pceltFetched`文字列の文字数を指定します。  
+> C++ では、返される文字列に終端の null 文字は含まれません。 与えられた場合、`pceltFetched`文字列の文字数を指定します。  
   
 ## <a name="example"></a>例  
 <!-- TODO: review snippet reference  [!CODE [[cpp]]([cpp])]  -->  

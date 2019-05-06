@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29fcd40a2fc64a12ed7b29845b0a9f0ea3db5589
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430335"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>チュートリアル: Web パーツを表示するサーバー エクスプ ローラーを拡張します。
   Visual Studio で使用することができます、 **SharePoint 接続**のノード**サーバー エクスプ ローラー** SharePoint サイトにコンポーネントを表示します。 ただし、**サーバー エクスプ ローラー**一部のコンポーネントが既定では表示されません。 このチュートリアルで拡張します**サーバー エクスプ ローラー** SharePoint サイトが接続されている各 Web パーツ ギャラリーで表示するようです。
@@ -40,7 +40,7 @@ ms.locfileid: "60040573"
 - デバッグと、拡張機能をテストします。
 
 > [!NOTE]
->  For SharePoint サーバー オブジェクト モデルではなく、クライアント オブジェクト モデルを使用するこのチュートリアルの代替バージョンを参照してください。[チュートリアル。サーバー エクスプ ローラー拡張機能では、SharePoint クライアント オブジェクト モデルを呼び出す](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)します。
+> For SharePoint サーバー オブジェクト モデルではなく、クライアント オブジェクト モデルを使用するこのチュートリアルの代替バージョンを参照してください。[チュートリアル。サーバー エクスプ ローラー拡張機能では、SharePoint クライアント オブジェクト モデルを呼び出す](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルを実行するには、開発コンピューターに次のコンポーネントが必要です。
@@ -75,7 +75,7 @@ ms.locfileid: "60040573"
 3. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual c#** または**Visual Basic**ノードを選択し、**機能拡張**ノード。
 
     > [!NOTE]
-    >  **Extensibility**ノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
+    > **Extensibility**ノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
 
 4. ダイアログ ボックスの上部にある次のように選択します。 **.NET Framework 4.5**で .NET Framework のバージョンの一覧。
 
@@ -211,7 +211,7 @@ ms.locfileid: "60040573"
 1. WebPartNodeExtension プロジェクトで SiteNodeExtension コード ファイルを開くし、次のコードを貼り付けます。
 
     > [!NOTE]
-    >  後はこのコードを追加する、プロジェクトは、一部のコンパイル エラーになりますが、表示されなくなるときにコードを追加する後の手順でします。
+    > 後はこのコードを追加する、プロジェクトは、一部のコンパイル エラーになりますが、表示されなくなるときにコードを追加する後の手順でします。
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -266,7 +266,7 @@ ms.locfileid: "60040573"
 1. メニュー バーで、**[ビルド]** > **[ソリューションのビルド]** の順にクリックします。
 
     > [!WARNING]
-    >  この時点では、VSIX のマニフェスト ファイルでは、作成者の値がないために、WebPartNode プロジェクトはビルド エラーがあります。 後の手順で値を追加するときに、このエラーは表示されなく。
+    > この時点では、VSIX のマニフェスト ファイルでは、作成者の値がないために、WebPartNode プロジェクトはビルド エラーがあります。 後の手順で値を追加するときに、このエラーは表示されなく。
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>拡張機能をデプロイするため、VSIX パッケージを作成します。
  拡張機能を配置するには、ソリューションで VSIX プロジェクトを使用して VSIX パッケージを作成します。 最初に、VSIX プロジェクトの source.extension.vsixmanifest ファイルを変更することで、VSIX パッケージを構成します。 次に、ソリューションをビルドして VSIX パッケージを作成します。
@@ -290,7 +290,7 @@ ms.locfileid: "60040573"
 6. **型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    > この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
 
 7. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 
@@ -303,7 +303,7 @@ ms.locfileid: "60040573"
 10. **型**ボックスに、入力**SharePoint.Commands.v4**します。
 
     > [!NOTE]
-    >  この要素は、Visual Studio 拡張機能に含めるカスタム拡張機能を指定します。 詳細については、次を参照してください。[資産要素 (VSX Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)します。
+    > この要素は、Visual Studio 拡張機能に含めるカスタム拡張機能を指定します。 詳細については、次を参照してください。[資産要素 (VSX Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)します。
 
 11. **ソース**一覧で、選択、**現在のソリューションでプロジェクトを**リスト項目。
 

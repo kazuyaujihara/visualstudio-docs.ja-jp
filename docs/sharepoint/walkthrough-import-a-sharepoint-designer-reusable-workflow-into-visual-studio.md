@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 702c671922d8ea7a1552504be062b7b31de16a09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d1373339fac4768e2af1eda5770d5058ae8078
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446596"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>チュートリアル: SharePoint Designer の再利用可能なワークフローを Visual Studio にインポートします。
   SharePoint Designer 2010 で作成した再利用可能なワークフローをインポートする方法についても説明、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint ワークフロー プロジェクトです。
@@ -124,7 +124,7 @@ ms.locfileid: "60053937"
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]のみインポートできます *.wsp*ファイルとして再利用可能なワークフローを保存する必要があります、 *.wsp*ファイルにインポートする前に SharePoint にデプロイ[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。
 
 > [!IMPORTANT]
->  SharePoint サイトにアクセス権があるシステム上の手順を実行する必要が、次の手順を実行するランタイム エラーが発生した場合。
+> SharePoint サイトにアクセス権があるシステム上の手順を実行する必要が、次の手順を実行するランタイム エラーが発生した場合。
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>保存して再利用可能なワークフローをデプロイするには
 
@@ -170,7 +170,7 @@ ms.locfileid: "60053937"
 6. **新しいプロジェクトのソースを指定** ページで、以前に保存する場所、システム上の場所を参照、 *.wsp*ファイル、ファイルを開いて、および選択し、**次**ボタンをクリックします。
 
    > [!NOTE]
-   >  選択、**完了**で利用可能なすべての項目をインポートする ボタン、 *.wsp*ファイル。
+   > 選択、**完了**で利用可能なすべての項目をインポートする ボタン、 *.wsp*ファイル。
 
     これには、インポートするために使用できる、再利用可能なワークフローの一覧が表示されます。
 
@@ -256,7 +256,7 @@ ms.locfileid: "60053937"
 12. **新しいワークフローを開始**セクションで、リンクを選択**SPD ワークフロー テスト**、選択し、**開始**ワークフローを開始するボタンをクリックします。
 
     > [!NOTE]
-    >  またはを自動的に関連付けますワークフロー一覧がワークフロー設定ウィザードの実行を自動的に関連付けるワークフローを設定します。
+    > またはを自動的に関連付けますワークフロー一覧がワークフロー設定ウィザードの実行を自動的に関連付けるワークフローを設定します。
 
      2 つのアクションは、ワークフローによって実行されたことに注意してください: で、タスクの表示名**に割り当てられている**列とお知らせが表示されます、**お知らせ**一覧。
 

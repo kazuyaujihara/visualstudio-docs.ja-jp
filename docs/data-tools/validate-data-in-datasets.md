@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b7ef69d2bb7ac9390c82ffb4e17db27a49637aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1e9fd28a946911a019ee0a1e144e7565bac9e004
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402720"
 ---
 # <a name="validate-data-in-datasets"></a>データセットのデータの検証
 データの検証は、データ オブジェクトに入力される値は、データセットのスキーマ内の制約に準拠することを確認するプロセスです。 また、検証プロセスは、これらの値が、アプリケーションに対して設定した規則に従っていることを確認します。 基になるデータベースの更新を送信する前にデータを検証することをお勧めします。 これには、エラーに加え、潜在的なアプリケーションとデータベース間のラウンド トリップ数が削減されます。
@@ -54,7 +54,7 @@ ms.locfileid: "60041592"
 既定では、それぞれの列の変更はそのため 4 つのイベントを生成します。 1 つは、<xref:System.Data.DataTable.ColumnChanging>と<xref:System.Data.DataTable.ColumnChanged>が変更されている特定の列のイベント。 次に、<xref:System.Data.DataTable.RowChanging>と<xref:System.Data.DataTable.RowChanged>イベント。 行に複数の変更が行わ、イベントが各変更に対して発生します。
 
 > [!NOTE]
->  データ行の<xref:System.Data.DataRow.BeginEdit%2A>メソッドがオフ、<xref:System.Data.DataTable.RowChanging>と<xref:System.Data.DataTable.RowChanged>それぞれ個々 の列の変更後のイベント。 までイベントが発生しない場合、<xref:System.Data.DataRow.EndEdit%2A>メソッドが呼び出されて、ときに、<xref:System.Data.DataTable.RowChanging>と<xref:System.Data.DataTable.RowChanged>イベントは 1 回だけ発生します。 詳細については、次を参照してください。[データセットの読み込み中に制約を無効に](../data-tools/turn-off-constraints-while-filling-a-dataset.md)します。
+> データ行の<xref:System.Data.DataRow.BeginEdit%2A>メソッドがオフ、<xref:System.Data.DataTable.RowChanging>と<xref:System.Data.DataTable.RowChanged>それぞれ個々 の列の変更後のイベント。 までイベントが発生しない場合、<xref:System.Data.DataRow.EndEdit%2A>メソッドが呼び出されて、ときに、<xref:System.Data.DataTable.RowChanging>と<xref:System.Data.DataTable.RowChanged>イベントは 1 回だけ発生します。 詳細については、次を参照してください。[データセットの読み込み中に制約を無効に](../data-tools/turn-off-constraints-while-filling-a-dataset.md)します。
 
 選択したイベントを検証したい粒度によって異なります。 列が変更されたときすぐには、エラーをキャッチすることが重要である場合を使用して検証をビルド、<xref:System.Data.DataTable.ColumnChanging>イベント。 それ以外の場合、使用、<xref:System.Data.DataTable.RowChanging>イベントで、一度にいくつかのエラーをキャッチする可能性があります。 さらに、別の列の内容に基づく 1 つの列の値を検証できるように、データは構造化されている場合は、実行中に検証、<xref:System.Data.DataTable.RowChanging>イベント。
 
@@ -80,7 +80,7 @@ ms.locfileid: "60041592"
 ## <a name="validate-data-during-column-changes"></a>列の変更時にデータを検証します。
 
 > [!NOTE]
->  **データセット デザイナー**データセットに実行する検証のロジックを追加できます部分クラスを作成します。 デザイナーで生成されたデータセットは、削除または部分クラス内のコードを変更しません。
+> **データセット デザイナー**データセットに実行する検証のロジックを追加できます部分クラスを作成します。 デザイナーで生成されたデータセットは、削除または部分クラス内のコードを変更しません。
 
 データを検証するには、データ列の値が応答することで変更されたときに、<xref:System.Data.DataTable.ColumnChanging>イベント。 発生すると、このイベントはイベント引数を渡します (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>) は、現在の列の提示された値を格納します。 内容に基づく`e.ProposedValue`を実行できます。
 
@@ -102,7 +102,7 @@ ms.locfileid: "60041592"
 2. 検証するテーブルのタイトル バーをダブルクリックします。 この操作により、データセットの部分クラス ファイルに <xref:System.Data.DataTable.RowChanging> の <xref:System.Data.DataTable> イベント ハンドラーが自動的に作成されます。
 
     > [!TIP]
-    >  テーブル名の左側をダブルクリックして、行変更イベント ハンドラーを作成します。 テーブル名をダブルクリックすると、編集することができます。
+    > テーブル名の左側をダブルクリックして、行変更イベント ハンドラーを作成します。 テーブル名をダブルクリックすると、編集することができます。
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
@@ -113,7 +113,7 @@ ms.locfileid: "60041592"
 2. 検証するテーブルのタイトル バーをダブルクリックします。 この操作により、<xref:System.Data.DataTable> の部分クラス ファイルが作成されます。
 
     > [!NOTE]
-    >  **データセット デザイナー**では、<xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーが自動作成されません。 処理するメソッドを作成する必要がある、<xref:System.Data.DataTable.RowChanging>テーブルの初期化メソッドでイベントにフックするには、イベント、およびコードを実行します。
+    > **データセット デザイナー**では、<xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーが自動作成されません。 処理するメソッドを作成する必要がある、<xref:System.Data.DataTable.RowChanging>テーブルの初期化メソッドでイベントにフックするには、イベント、およびコードを実行します。
 
 3. 部分クラスに次のコードをコピーします。
 
@@ -141,7 +141,7 @@ ms.locfileid: "60041592"
 データ テーブルの各行が、<xref:System.Data.DataRow.RowState%2A>で値を使用してその行の現在の状態はの追跡プロパティ、<xref:System.Data.DataRowState>列挙体。 呼び出すことによって、データセットまたはデータ テーブルから変更された行を返すことができます、`GetChanges`のメソッド、<xref:System.Data.DataSet>または<xref:System.Data.DataTable>します。 変更を呼び出す前に存在することを確認できる`GetChanges`呼び出すことによって、<xref:System.Data.DataSet.HasChanges%2A>データセットのメソッド。
 
 > [!NOTE]
->  データセットまたはデータ テーブルに変更をコミットした後 (呼び出すことによって、<xref:System.Data.DataSet.AcceptChanges%2A>メソッド)、`GetChanges`メソッドにはデータは返されません。 を、アプリケーションが変更された行を処理する必要がある場合は、呼び出す前に変更を処理する必要があります、`AcceptChanges`メソッド。
+> データセットまたはデータ テーブルに変更をコミットした後 (呼び出すことによって、<xref:System.Data.DataSet.AcceptChanges%2A>メソッド)、`GetChanges`メソッドにはデータは返されません。 を、アプリケーションが変更された行を処理する必要がある場合は、呼び出す前に変更を処理する必要があります、`AcceptChanges`メソッド。
 
 呼び出す、<xref:System.Data.DataSet.GetChanges%2A>データセットまたはデータ テーブルのメソッドが変更されているレコードだけを含む新しいデータセットまたはデータ テーブルを返します。 特定のレコードを取得する場合: の例では、新しいレコードにのみ、または変更されたレコードのみ-から値を渡すことができます、<xref:System.Data.DataRowState>列挙体をパラメーターとして、`GetChanges`メソッド。
 
@@ -183,7 +183,7 @@ ms.locfileid: "60041592"
 データ行を変更すると、データセットにその行の元のバージョン (<xref:System.Data.DataRowVersion.Original>) と新しいバージョン (<xref:System.Data.DataRowVersion.Current>) が保存されます。 たとえば、`AcceptChanges` メソッドを呼び出す前にレコードの別のバージョン (<xref:System.Data.DataRowVersion> 列挙定数で定義) にアクセスし、そのバージョンに応じて変更を処理できます。
 
 > [!NOTE]
->  異なるバージョンの行の存在が編集後にのみ、その前に、`AcceptChanges`メソッドが呼び出されました。 `AcceptChanges` メソッドの呼び出し後は、現在のバージョンと元のバージョンが同じになります。
+> 異なるバージョンの行の存在が編集後にのみ、その前に、`AcceptChanges`メソッドが呼び出されました。 `AcceptChanges` メソッドの呼び出し後は、現在のバージョンと元のバージョンが同じになります。
 
 <xref:System.Data.DataRowVersion> 値を列インデックス (文字列である列名) と共に渡すと、その列の特定の行バージョンから値が返されます。 中に変更された列が識別される、<xref:System.Data.DataTable.ColumnChanging>と<xref:System.Data.DataTable.ColumnChanged>イベント。 これは、検証のための異なる行バージョンを検査するよい機会です。 ただし、制約を一時的に中断されますが、これらのイベントは発生しません、およびプログラムを使用する必要がある場合は、変更された列を識別します。 <xref:System.Data.DataTable.Columns%2A> コレクションを反復処理し、異なる <xref:System.Data.DataRowVersion> 値を比較することにより変更された列を識別できます。
 

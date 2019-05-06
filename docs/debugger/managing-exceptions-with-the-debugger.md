@@ -34,11 +34,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846584"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Visual Studio のデバッガーでの例外を管理します。
 
@@ -100,7 +100,7 @@ ms.locfileid: "57428701"
 
   表示されませんが、`here`行。
 
-- AC#コンソール アプリケーションは、2 つのメソッドを持つクラスを使用してクラス ライブラリを参照します。 1 つのメソッドは、例外をスローし、2 番目のメソッドが同じ例外をスローしますが、その処理を行いません、それを処理します。
+- C# コンソール アプリケーションでは、2 つのメソッドを持つクラスを使用してクラス ライブラリを参照します。 1 つのメソッドは、例外をスローし、2 番目のメソッドが同じ例外をスローしますが、その処理を行いません、それを処理します。
 
   ```csharp
   public class Class1
@@ -223,7 +223,7 @@ public class GenericException<T> : Exception
 ## <a name="see-also"></a>関連項目
 
 - [例外後の実行の継続](../debugger/continuing-execution-after-an-exception.md)<br/>
-- [方法 : 例外の後にシステム コードを調べる](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-- [方法 : ネイティブ ランタイム チェックを使用する](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [方法: 例外の後にシステム コードを調べる](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [方法: ネイティブ ランタイム チェックを使用する](../debugger/how-to-use-native-run-time-checks.md)<br/>
 - [C ランタイム ライブラリなしのランタイム チェックを使用する](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

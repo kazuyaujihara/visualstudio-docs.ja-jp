@@ -10,11 +10,11 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 37adb6cf6462887010b1c06c7d5af4a539203b15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974580"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>方法: ワークフロー デザイナーでアクティビティ デリゲートを定義および使用する
 [!INCLUDE[net_v45](../includes/net-v45-md.md)] には、すぐに使用できる <xref:System.Activities.Statements.InvokeDelegate> アクティビティの新しいデザイナーが用意されています。 このデザイナーを使用すると、<xref:System.Activities.ActivityDelegate> や <xref:System.Activities.ActivityAction> など、<xref:System.Activities.ActivityFunc%601> から派生するアクティビティにデリゲートを割り当てることができます。  

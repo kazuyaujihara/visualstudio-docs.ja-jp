@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd50f4c80e5e67f6fb7582dc2bc22963151b42fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433113"
 ---
 # <a name="define-a-work-item-link-handler"></a>作業項目リンク ハンドラーを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ namespace WorkItems
  テストを行う場合は、リンク ハンドラーをデバッグ モードで実行します。  
   
 > [!WARNING]
->  作業項目を作成またはそれにリンクするには、既に TFS ソース コード管理 (SCC) に接続されている必要があります。 別の TFS SCC への接続を開こうとすると、Visual Studio が現在のソリューションを自動的に閉じます。 作業項目を作成またはそれにリンクしようとする前に、適切な SCC に接続されていることを確認してください。 Visual Studio の今後のリリースでは、SCC に接続されていないとメニュー コマンドを使用できません。  
+> 作業項目を作成またはそれにリンクするには、既に TFS ソース コード管理 (SCC) に接続されている必要があります。 別の TFS SCC への接続を開こうとすると、Visual Studio が現在のソリューションを自動的に閉じます。 作業項目を作成またはそれにリンクしようとする前に、適切な SCC に接続されていることを確認してください。 Visual Studio の今後のリリースでは、SCC に接続されていないとメニュー コマンドを使用できません。  
   
 #### <a name="to-test-the-link-handler"></a>リンク ハンドラーをテストするには  
   
@@ -221,7 +221,7 @@ public void OnWorkItemLinked
 ```  
   
 > [!NOTE]
->  この例を動作させるには、`System.Drawing.dll` へのプロジェクト参照を追加し、名前空間 `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation` をインポートする必要があります。 ただし、この追加作業は、`OnWorkItemLinked` のその他の実装には必要ありません。  
+> この例を動作させるには、`System.Drawing.dll` へのプロジェクト参照を追加し、名前空間 `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation` をインポートする必要があります。 ただし、この追加作業は、`OnWorkItemLinked` のその他の実装には必要ありません。  
   
 ### <a name="listening-for-link-removal"></a>リンクの削除の待機  
  各作業項目のリンクが削除される直前に `OnWorkItemRemoved` が呼び出されます。 モデル要素が削除されると、そのすべてのリンクが削除されます。  

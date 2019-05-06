@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f03b23076b1eea203166bb0322f05927480a278
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417173"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>テキストの色づけのフォントと色の情報を取得します。
 レンダリングまたはユーザー インターフェイス (UI) 要素の色分けされたテキストを表示するプロセスは、プロジェクト、その技術、および開発者の環境設定の種類によって異なります。 **フォントおよび色**プロパティ ページには、設定が格納されます。
@@ -24,7 +24,7 @@ ms.locfileid: "60042408"
  色分けされたテキストを表示するほとんどの実装が必要な<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>表示設定の表示、取得、およびテキストを格納するは、インターフェイスを関連付けられているとします。
 
 > [!NOTE]
->  コア エディターをカスタマイズする際に (サポートする、**テキスト EditorCategory**)、言語サービスでの色分け表示テクノロジを使用することをお勧めします。 詳細については、次を参照してください。[フォントと色の概要](../extensibility/font-and-color-overview.md)します。
+> コア エディターをカスタマイズする際に (サポートする、**テキスト EditorCategory**)、言語サービスでの色分け表示テクノロジを使用することをお勧めします。 詳細については、次を参照してください。[フォントと色の概要](../extensibility/font-and-color-overview.md)します。
 
 ## <a name="get-default-font-and-color-information"></a>既定のフォントと色の情報を取得します。
  すべての**フォントおよび色**でテキストを表示するすべてのウィンドウの設定を指定する必要があります、**表示項目**いずれかの**カテゴリ**します。 詳細については、次を参照してください。[フォントと色、環境オプション ダイアログ ボックス、](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)します。

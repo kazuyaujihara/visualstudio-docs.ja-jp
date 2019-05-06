@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e87429c38d5b456eca08daa6675edcb0bd3f056
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88ace66b8a28061ea7e8fdc7fa64f419042edf11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410138"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>エディターの項目テンプレートを使用した拡張機能を作成します。
 エディターに分類子、表示要素、および余白を追加する基本的なエディター拡張機能を作成する Visual Studio SDK に含まれている項目テンプレートを使用することができます。 エディターの項目テンプレートは、Visual c# または Visual Basic の VSIX プロジェクトで使用可能です。
@@ -63,7 +63,7 @@ ms.locfileid: "60079812"
  エディターのビューポートの表示要素のテンプレートは、ビューポートの右上隅に赤色の枠のあるバイオレット ボックスを追加する相対ビューポート表示要素を作成します。
 
 > [!NOTE]
->  **ビューポート**は現在表示されているテキスト ビューの領域です。
+> **ビューポート**は現在表示されているテキスト ビューの領域です。
 
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>エディターのビューポートの表示要素のテンプレートを使用してビューポートの表示要素の拡張機能を作成するには
 

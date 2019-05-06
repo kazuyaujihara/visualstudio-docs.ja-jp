@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843827"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>最近使用した一覧のサブメニューへの追加します。
 このチュートリアルのデモに基づいて[メニューにサブメニューを追加](../extensibility/adding-a-submenu-to-a-menu.md)し、サブメニューに動的な一覧を追加する方法を示しています。 動的な一覧は、最近使用 (MRU) の一覧を作成するための基礎を形成します。
@@ -31,7 +31,7 @@ ms.locfileid: "56710085"
 メニューの詳細については、 *.vsct*ファイルを参照してください[コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
-このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、[Visual Studio SDK](../extensibility/visual-studio-sdk.md)を参照してください。
+このチュートリアルに従うには、Visual Studio SDK をインストールする必要があります。 詳細については、次を参照してください。 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)します。
 
 ## <a name="create-an-extension"></a>拡張機能を作成します。
 

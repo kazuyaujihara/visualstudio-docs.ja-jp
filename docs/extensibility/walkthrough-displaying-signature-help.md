@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 89d81ee2e860dead62352cc14cef95e21536c29d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965168"
 ---
 # <a name="walkthrough-display-signature-help"></a>チュートリアル: シグネチャ ヘルプを表示します。
 シグネチャ ヘルプ (とも呼ばれます*パラメーター ヒント*)、ユーザーがパラメーター リストの開始文字 (通常、開きかっこを入力) を入力すると、ツールヒントに、メソッドのシグネチャを表示します。 パラメーターとパラメーターの区切り記号 (コンマ) を入力すると、次のパラメーターを太字で表示するツールヒントが更新されます。 シグネチャ ヘルプを定義で、次の方法: 言語サービスのコンテキストで、独自のファイル名拡張子とコンテンツの種類を定義し、その型シグネチャ ヘルプを表示または既存のコンテンツ タイプ (たとえば、"text") のシグネチャ ヘルプを表示します。 このチュートリアルでは、「テキスト」コンテンツ タイプのシグネチャ ヘルプを表示する方法を示します。

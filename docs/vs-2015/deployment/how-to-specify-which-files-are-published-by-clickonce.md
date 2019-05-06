@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7576faf84b564e1ea10ef9def69819e5c77fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e0ef4264629e40380f12fb07623bb9274547713c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441586"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>方法: ClickOnce で発行されるファイルを指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ ms.locfileid: "60046956"
 4. **アプリケーション ファイル**ダイアログ ボックスで、**グループ**新しいグループに追加するファイルのフィールド。  
   
     > [!NOTE]
-    >  ファイルが必要、**ビルド アクション**プロパティに設定**コンテンツ**にファイル名が表示されるまで、**アプリケーション ファイル** ダイアログ ボックス。  
+    > ファイルが必要、**ビルド アクション**プロパティに設定**コンテンツ**にファイル名が表示されるまで、**アプリケーション ファイル** ダイアログ ボックス。  
   
 5. **ダウンロード グループ**フィールドで、 **\<新規作成 >** ドロップダウン リストから。  
   
@@ -114,7 +114,7 @@ ms.locfileid: "60046956"
 5. **ダウンロード グループ**フィールドに、ドロップダウン リストからグループを選択します。  
   
     > [!NOTE]
-    >  変更することはできません、**ダウンロード グループ**アプリケーションを実行するために必要なファイル。  
+    > 変更することはできません、**ダウンロード グループ**アプリケーションを実行するために必要なファイル。  
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c99d7d01009ef064056f0ca91688ad043880cffd
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: a24f887b5e8d12a757098eb94768ad110a5cb727
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809912"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Visual Studio で R プロジェクトを作成する
 
@@ -62,7 +62,6 @@ R プロジェクト (*.rxproj* ファイル) は、プロジェクトに関連�
 ## <a name="project-properties"></a>プロジェクト プロパティ
 
 プロジェクトのプロパティ ページを開くには、**ソリューション エクスプローラー**でプロジェクトを右クリックし、**[プロパティ]** を選択するか、**[プロジェクト]、[<プロジェクト名> のプロパティ]** メニュー項目の順に選択します。 開いているウィンドウには、次のようなプロジェクトのプロパティが表示されます。
-
 
 | タブ | プロパティ | 説明 |
 | --- | --- | --- |

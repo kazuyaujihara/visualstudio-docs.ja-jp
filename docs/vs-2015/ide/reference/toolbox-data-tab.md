@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c681a67b48baf89e1e601943c6cafd25e91ff332
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0b63060e82767f18bdda5a7df21972d23666f258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419790"
 ---
 # <a name="toolbox-data-tab"></a>ツールボックス、[データ] タブ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "59663915"
 フォームとコンポーネントに追加できるデータ オブジェクトを表示します。 作成しているプロジェクトに関連するデザイナーがあると、**ツールボックス**の **[データ]** タブが表示されます。 **ツールボックス**は、Visual Studio の統合開発環境 (IDE: Integrated Development Environment) に既定で表示されます。**ツールボックス**を表示する必要がある場合は、**[表示]** メニューの **[ツールボックス]** をクリックします。  
   
 > [!TIP]
->  データ ソース構成ウィザードを実行すると、ほとんどのデータ項目が自動的に作成され、構成されます。 詳細については、[Visual Studio を使ったデータ アプリケーションの作成](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293)に関するページをご覧ください。  
+> データ ソース構成ウィザードを実行すると、ほとんどのデータ項目が自動的に作成され、構成されます。 詳細については、[Visual Studio を使ったデータ アプリケーションの作成](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293)に関するページをご覧ください。  
   
 ## <a name="ui-element-list"></a>UI 要素の一覧  
  コンポーネントに対する .NET Framework の参照ページを直接表示するには、**ツールボックス**の項目で、またはデザイナーのトレイにあるコンポーネントの項目で、**F1** キーを押します。  

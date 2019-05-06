@@ -1,4 +1,4 @@
-﻿---
+---
 title: CA1021:out パラメーターを使用しません
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea570ff50ea48286bcb52b56acdd108516b02022
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779397"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021:out パラメーターを使用しません
 
@@ -86,7 +86,7 @@ Passing by return value:
 ## <a name="try-pattern-methods"></a>パターンのメソッドを実行してください。
 
 ### <a name="description"></a>説明
- <xref:System.Int32.TryParse%2A?displayProperty=fullName>のような**Try <Something>**パターンを実装するメソッドではこの違反を起こさないでください。 次の例は、<xref:System.Int32.TryParse%2A?displayProperty=fullName>メソッドを実装する構造体 (値型)を示します。
+ <xref:System.Int32.TryParse%2A?displayProperty=fullName>のような**Try \<Something>** パターンを実装するメソッドではこの違反を起こさないでください。 次の例は、<xref:System.Int32.TryParse%2A?displayProperty=fullName>メソッドを実装する構造体 (値型)を示します。
 
 ### <a name="code"></a>コード
  [!code-csharp[FxCop.Design.TryPattern#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_5.cs)]

@@ -12,18 +12,18 @@ ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 49fd700120e819bb0b38cb8d91401869a364714c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a7a19247b296d7e00a15051e75dd53536133c426
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436691"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>式の評価の実装のサンプル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
   
  **ウォッチ**ウィンドウ式、Visual Studio 呼び出し[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)生成するために、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)オブジェクト。 `IDebugExpressionContext2::ParseText` 式エバリュエーター (EE) および呼び出しをインスタンス化[解析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)を取得する、 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)オブジェクト。  
   
@@ -36,7 +36,7 @@ ms.locfileid: "60039454"
 3. 返します、`IDebugParsedExpression`からインターフェイス、`CParsedExpression`オブジェクト。  
   
 > [!NOTE]
->  以下の例と MyCEE サンプルでは、式エバリュエーターで分離されていない、評価を解析します。  
+> 以下の例と MyCEE サンプルでは、式エバリュエーターで分離されていない、評価を解析します。  
   
 ## <a name="managed-code"></a>マネージド コード  
  これは、実装の`IDebugExpressionEvaluator::Parse`マネージ コードでします。 このバージョンのメソッドは、解析を遅延に注意してください。 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)を解析するためのコードは、同時にも評価 (を参照してください[ウォッチ式の評価](../../extensibility/debugger/evaluating-a-watch-expression.md))。  

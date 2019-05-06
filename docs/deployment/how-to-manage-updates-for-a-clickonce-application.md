@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed5ae8486ebede9db2ab6b052c1fed789883ceaf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928557"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションの更新プログラムを管理する
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションは、プログラムによってまたは自動的に更新プログラムを確認できます。 開発者は、多くの更新チェックを実行するタイミングと方法、更新プログラムが必須かどうか、および更新プログラム、アプリケーションがどこで確認する必要がありますを指定するときに柔軟性があります。

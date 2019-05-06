@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88bfb7d117f646a74c4242cbf851711e9179196
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430354"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>チュートリアル: SharePoint プロジェクト項目の種類を拡張します。
   使用することができます、 **Business Data Connectivity モデル**sharepoint ビジネス データ接続 (BDC) サービスのモデルを作成するプロジェクト アイテム。 既定では、このプロジェクト項目を使用してモデルを作成しただけでは、モデル内のデータがユーザーに表示されません。 ユーザーがデータを閲覧できるようにするには、それに加えて、SharePoint に外部リストを作成する必要があります。
@@ -67,7 +67,7 @@ ms.locfileid: "60057863"
 3. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual c#** または**Visual Basic**ノードを選択し、**機能拡張**ノード。
 
     > [!NOTE]
-    >  **Extensibility**ノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
+    > **Extensibility**ノードは、Visual Studio SDK をインストールする場合にのみ使用できます。 詳細については、このトピックで前に説明した「前提条件」を参照してください。
 
 4. 上部にある一覧で、**新しいプロジェクト** ダイアログ ボックスで、選択 **.NET Framework 4.5**します。
 
@@ -132,7 +132,7 @@ ms.locfileid: "60057863"
 1. 次のコードを ProjectItemExtension コード ファイルに貼り付けます。
 
     > [!NOTE]
-    >  このコードを追加した直後は、いくつかのコンパイル エラーが発生します。 これらのエラーは、この後の手順でコードを追加すると解消されます。
+    > このコードを追加した直後は、いくつかのコンパイル エラーが発生します。 これらのエラーは、この後の手順でコードを追加すると解消されます。
 
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs#1)]
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]
@@ -176,7 +176,7 @@ ms.locfileid: "60057863"
 6. **型**一覧で、選択**Microsoft.VisualStudio.MefComponent**します。
 
     > [!NOTE]
-    >  この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
+    > この値は、extension.vsixmanifest ファイル内の `MefComponent` 要素に対応します。 この要素は、VSIX パッケージ内の拡張機能アセンブリの名前を指定します。 詳細については、次を参照してください。 [MEFComponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))します。
 
 7. **ソース**一覧で、選択**現在のソリューションでプロジェクトを**します。
 

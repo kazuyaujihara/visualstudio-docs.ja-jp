@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858118"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>従来の言語サービスでのナビゲーション バーのサポート
 エディター ビューの上部にあるナビゲーション バーでは、ファイル内の型とメンバーを表示します。 種類は左ドロップダウンで表示され、メンバーを表示する右のドロップダウン リスト。 ユーザーは、型を選択する型の最初の行にキャレットが配置されます。 ユーザーがメンバーと、メンバーの定義にカーソルが配置されます。 ドロップダウン ボックスのキャレットの現在の場所を反映するように更新されます。

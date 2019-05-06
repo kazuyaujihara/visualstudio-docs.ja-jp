@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0ef8bdb5f35ed727a207140dde6cf20f5645e5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 736031f1de24144f7b5f68ed44710e0c894df41a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445728"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (Integrated)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Visual Studio の統合シェルには、統合開発環境 (IDE)、デバッガ
  Visual Studio の統合シェルとは、実際には、Visual Studio 分離シェルと統合シェルの特定のコンポーネントを含む追加のインストールの組み合わせです。  統合シェル アプリケーションは、両方の分離シェル再頒布可能パッケージを含める必要があります[Microsoft Visual Studio Shell (Isolated) 再頒布可能パッケージ](http://go.microsoft.com/fwlink/?LinkId=616022)と統合シェルの再頒布可能パッケージ[Microsoft Visual Studio Shell (Integrated) 再頒布可能パッケージ](http://go.microsoft.com/fwlink/?LinkId=616021)します。  
   
 > [!NOTE]
->  分離と統合シェルの再頒布可能パッケージにアクセスする前にお客様の簡単なアンケートに記入してになります。  アンケートに記入した後は、するは再頒布可能パッケージのダウンロード リンクを含む Visual Studio の Connect ページに移動します。  Visual Studio の Connect サイトにアクセスする際に、ダウンロード リンクを見つけることができます、**プログラム&#124;VISUAL STUDIO 2015 統合と分離シェル**タブ。  
+> 分離と統合シェルの再頒布可能パッケージにアクセスする前にお客様の簡単なアンケートに記入してになります。  アンケートに記入した後は、するは再頒布可能パッケージのダウンロード リンクを含む Visual Studio の Connect ページに移動します。  Visual Studio の Connect サイトにアクセスする際に、ダウンロード リンクを見つけることができます、**プログラム&#124;VISUAL STUDIO 2015 統合と分離シェル**タブ。  
   
  完全なバージョンの Visual Studio と同じコンピューターに、統合シェル アプリケーションをインストールする場合、アプリケーションのコンポーネントを直接 Visual Studio に統合されます。  
   

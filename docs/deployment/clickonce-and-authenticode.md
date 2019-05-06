@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900549"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce と Authenticode
 *Authenticode* は、業界標準の暗号化を使用して、アプリケーションの発行元の信頼性を検証するデジタル証明書によってアプリケーション コードに署名する Microsoft テクノロジです。 アプリケーションの配置に Authenticode を使用し、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] はトロイの木馬のリスクを軽減します。 トロイの木馬は、悪意のある第三者が、確立された信頼できるソースからの正規のプログラムと偽って示すウイルスやその他の有害なプログラムです。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置のデジタル証明書による署名は、アセンブリとファイルが改ざんされていないことを確認するためのオプションの手順です。

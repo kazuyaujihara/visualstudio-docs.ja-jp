@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 98b441e52d3d24a5ccd738fe1ac65b268a30a2bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839317"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
 により、クライアントは、すべての指定された相対仮想アドレス (RVA) でのインライン フレームを反復処理する列挙体を取得します。

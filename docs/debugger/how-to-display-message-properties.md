@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fddccbd116f65cb22cd0e12b8435f8229298f504
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894314"
 ---
 # <a name="how-to-display-message-properties"></a>方法: メッセージのプロパティを表示する
 記載されているメッセージの詳細を確認する[メッセージ ビュー](../debugger/messages-view.md)を使用して、[メッセージのプロパティ ダイアログ ボックス](../debugger/message-properties-dialog-box.md)します。

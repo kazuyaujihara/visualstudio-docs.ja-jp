@@ -1,6 +1,6 @@
 ---
 title: アナライザーの規則セット
-ms.date: 07/20/2018
+ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57866998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387697"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Roslyn アナライザーの規則セットします。
 
@@ -25,7 +25,7 @@ Roslyn アナライザーを従来の"FxCop"静的コード分析から移行す
 
 ## <a name="use-analyzer-rule-sets"></a>アナライザーの規則セットを使用して、
 
-したら[NuGet アナライザー パッケージをインストール](install-roslyn-analyzers.md)、定義済みの規則で設定を探してその*ruleset*ディレクトリ、たとえば *%userprofile%\\.nuget\packages\microsoft.codequality.analyzers\<バージョン > \rulesets*します。 そこから、ドラッグし削除、またはコピーして貼り付けるには、1 つまたは複数の Visual Studio プロジェクトにルール セットの**ソリューション エクスプ ローラー**します。
+したら[NuGet アナライザー パッケージをインストール](install-roslyn-analyzers.md)、定義済みの規則で設定を探してその*ruleset*ディレクトリ。 たとえば、参照した場合、`Microsoft.CodeAnalysis.FxCopAnalyzers`アナライザー パッケージでは、そのルールセット ディレクトリを見つけることができますし、 *%userprofile%\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<バージョン\>\rulesets*します。 そこから、ドラッグし削除、またはコピーして貼り付けるには、1 つまたは複数の Visual Studio プロジェクトにルール セットの**ソリューション エクスプ ローラー**します。
 
 プロジェクトを右クリックしてルールの分析の設定のアクティブなルールを設定するために、**ソリューション エクスプ ローラー**選択**プロパティ**します。 プロジェクトのプロパティ ページで、選択、**コード分析**タブ。**この規則セットを実行**を選択します**参照**、プロジェクト ディレクトリにコピーした目的の規則セットを選択します。 選択したルール セットで有効になっているこれらの規則に規則違反のみ表示されます。
 
@@ -54,7 +54,7 @@ Roslyn アナライザーを従来の"FxCop"静的コード分析から移行す
 
 ## <a name="see-also"></a>関連項目
 
-- [アナライザーの FAQ](analyzers-faq.md)
+- [アナライザーに関する FAQ](analyzers-faq.md)
 - [.NET Compiler Platform アナライザーの概要](roslyn-analyzers-overview.md)
 - [アナライザーをインストールします。](install-roslyn-analyzers.md)
 - [アナライザーを使用して、](use-roslyn-analyzers.md)

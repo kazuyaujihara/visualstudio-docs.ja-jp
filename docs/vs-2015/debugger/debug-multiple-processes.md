@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb9ff8e31004a3b314102ad6b0e64cd72cab6467
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a2679825d41a6360dde05e7511d607f8be69dfa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434104"
 ---
 # <a name="debug-multiple-processes"></a>複数プロセスをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "60039699"
 - [Visual Studio ソリューションで複数のプロセスのデバッグを開始](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution)•[スタートアップ プロジェクトを変更](#BKMK_Change_the_startup_project)•[ソリューションで特定のプロジェクトを開始](#BKMK_Start_a_specific_project_in_a_solution)•[複数のプロジェクトを開始します。ソリューション](#BKMK_Start_multiple_projects_in_a_solution)•[プロセスにアタッチする](#BKMK_Attach_to_a_process)•[デバッガーでプロセスを自動的に開始](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
 > [!NOTE]
->  デバッガーは、子プロジェクトが同じソリューション内にある場合でも、デバッグ対象のプロセスによって開始された子プロセスに自動的にアタッチされません。 子プロセスをデバッグするには:   
+> デバッガーは、子プロジェクトが同じソリューション内にある場合でも、デバッグ対象のプロセスによって開始された子プロセスに自動的にアタッチされません。 子プロセスをデバッグするには:   
 > 
 > - 子プロセスが開始された後、そのプロセスにアタッチします。  
 > 
@@ -166,7 +166,7 @@ ms.locfileid: "60039699"
 ### <a name="BKMK_Break__step__and_continue_commands"></a> 中断、ステップ実行、続行のコマンド  
   
 > [!NOTE]
->  既定では、中断、続行、ステップ実行のコマンドはデバッグ中のすべてのプロセスに影響を与えます。 この動作を変更するを参照してください[複数のプロセスの実行動作を構成します。](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
+> 既定では、中断、続行、ステップ実行のコマンドはデバッグ中のすべてのプロセスに影響を与えます。 この動作を変更するを参照してください[複数のプロセスの実行動作を構成します。](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
   
 ||||  
 |-|-|-|  
@@ -197,7 +197,7 @@ ms.locfileid: "60039699"
   たとえば、Visual Studio ソリューションからのプロセスのデバッグを開始する場合、既に実行されている別のプロセスにアタッチし、[**デバッグの停止]**、デバッグ セッションが終了、Visual Studio で開始されたプロセス中に終了したアタッチしたプロセスが実行されたままです。 次の手順を使用してデバッグの停止方法を制御できます。  
   
 > [!NOTE]
->  **1 つのプロセスがブレークするときに、すべてのプロセスをブレーク**オプションでは、デバッグ、終了やプロセスからのデタッチを停止は影響しません。  
+> **1 つのプロセスがブレークするときに、すべてのプロセスをブレーク**オプションでは、デバッグ、終了やプロセスからのデタッチを停止は影響しません。  
   
  **デバッグの停止 と、個々 のプロセスにどのように影響する方法を変更するには**  
   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf68857aca2d94f8a929f8191fb32b8d67cbbb4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: fe73a4d66d57ae362d4b99d10aca9170971f17b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429637"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT コンパイラのコマンドライン フラグ
 Visual Studio コマンド テーブル (VSCT) コンパイラでは、.vsct ファイルのコンパイルが成功したことを確認するコマンド ライン スイッチを提供します。
@@ -50,7 +50,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```
 
 > [!NOTE]
->  -(ダッシュ) 文字および/(スラッシュ) はコマンド ライン パラメーターを示すための両方の受け入れられた表記します。
+> -(ダッシュ) 文字および/(スラッシュ) はコマンド ライン パラメーターを示すための両方の受け入れられた表記します。
 
  許容可能なフラグとその意味は次のとおりです。
 
@@ -59,7 +59,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|追加定義されたシンボルを指定します。|
 |-|追加のインクルード ファイルの参照を解決するときに使用されるパスを指定します。|
 |-L|指定、<xref:System.Globalization.CultureInfo>カルチャ名、たとえば"EN-US"です。|
-|-E|出力C#コマンドの項目の指定した名前空間内のオブジェクトが続く [C&#124;H&#124;N]:*filename*場所 C = C#、H C++ ヘッダー、N = = 名前空間。 名前空間は、c# に必要です。|
+|-E|出力C#コマンドの項目の指定した名前空間内のオブジェクトが続く [C&#124;H&#124;N]:*filename*場所 C = C#、H =C++ヘッダー、N = 名前空間。 名前空間は、c# に必要です。|
 |-v|詳細な出力。|
 
  -L スイッチに対応するバイナリ .cto ファイルを生成するために文字列のグループを選択するようにコンパイラに指示、指定された<xref:System.Globalization.CultureInfo>カルチャ名。 指定されたカルチャ名は 1 つまたは複数の Language 属性と一致する必要があります[文字列要素](../../extensibility/strings-element.md).vsct ファイルでします。 親から継承されている言語の属性の文字列要素がない場合は、 [CommandTable 要素](../../extensibility/commandtable-element.md)します。
@@ -70,7 +70,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 
  コマンド テーブルによって使用されているシンボルを格納する C スタイル ヘッダー ファイルを生成するコマンドのシンボルのオブジェクトを含む c# ファイルを生成するまたは-e スイッチを使用できます。
 
- -D、- はスイッチと同じ名前を持つ Cl.exe C プリプロセッサ フラグの構文になっています。 -D X = Y という形式になっている定義を XML ベースの拡張の使用\<定義 > 内にあるテスト`Condition`属性。 -I インクルード パスを解決するために使用\<Include >、 \<Extern > と\<ビットマップ > ファイル参照。 詳細については、、 [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)を参照してください。
+ -D、- はスイッチと同じ名前を持つ Cl.exe C プリプロセッサ フラグの構文になっています。 -D X = Y という形式になっている定義を XML ベースの拡張の使用\<定義 > 内にあるテスト`Condition`属性。 -I インクルード パスを解決するために使用\<Include >、 \<Extern > と\<ビットマップ > ファイル参照。 詳細については、次を参照してください。、 [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)します。
 
  VSCT コンパイラは、以前にビルドされたバイナリ ファイルを逆もできます。 これを行うには、指定のバイナリ ファイル、 \<infile >。   バイナリ ファイル VSCT コンパイラによって生成されますが場合、は、埋め込まれているそのシンボルがされシンボリック名に出力が生成されます、\<シンボル > の出力セクション。 バイナリは、CTC コンパイラによって生成されたが、出力には、実際の Guid と Id が含まれます。 Ctc.exe の現在のバージョンによって生成される *.ctsym ファイルは、バイナリの入力ファイルと同じフォルダーには、シンボルがそのファイルから読み込まれ、出力に使用されます。
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 581f9c0b9907fd59863f6a468a45ef67d9966475
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813153"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>方法: 配置手順の実行時にコードを実行します。
   SharePoint プロジェクトの配置手順の追加のタスクを実行する場合は、前に、SharePoint プロジェクト アイテムと Visual Studio が各デプロイの手順を実行後に発生するイベントを処理できます。 詳細については、次を参照してください。[拡張 SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md)します。

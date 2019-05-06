@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937705"
 ---
 # <a name="map-dependencies-with-code-maps"></a>コード マップで依存関係をマッピングします。
 
@@ -36,7 +36,7 @@ ms.locfileid: "57223703"
 
 これらの言語でコードの依存関係をマップすることができます。
 
-- Visual C# または Visual Basic では、ソリューションまたはアセンブリ (*.dll*または *.exe*)
+- Visual c# または Visual Basic では、ソリューションまたはアセンブリ (*.dll*または *.exe*)
 
 - Visual C プロジェクト、ヘッダー ファイルでネイティブまたはマネージ C または C++ コード (*.h*または`#include`)、またはバイナリ
 

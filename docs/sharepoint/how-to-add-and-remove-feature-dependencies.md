@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9373ed07ec49bd41dad343dc447b4b2026793492
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967007"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>方法: 追加および削除機能の依存関係
   SharePoint の機能は、機能またはデータのための他の機能によって異なります。 このような場合、機能の依存関係としてこれらの他の機能をマークできます。 これにより、SharePoint サーバーにより、機能をアクティブ化する前に、依存する機能がアクティブ化されます。

@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540695"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Visual Studio でマネージ コード用の静的コード分析の概要
 
-Visual Studio は 2 つの方法でマネージ コードのコード分析を実行することができます: で*FxCop*スタティック分析、マネージ アセンブリの詳細のモダン*Roslyn アナライザー*します。 このトピックでは、FxCop の静的コード分析について説明します。 コード アナライザーを使用してコードの分析の詳細については、[概要の Roslyn アナライザー](../code-quality/roslyn-analyzers-overview.md)を参照してください。
+Visual Studio は 2 つの方法でマネージ コードのコード分析を実行することができます: で*FxCop*スタティック分析、マネージ アセンブリの詳細のモダン*Roslyn アナライザー*します。 このトピックでは、FxCop の静的コード分析について説明します。 コード アナライザーを使用してコードの分析の詳細については、次を参照してください。[概要の Roslyn アナライザー](../code-quality/roslyn-analyzers-overview.md)します。
 
 マネージド コードのコード分析を使用すると、マネージド アセンブリを分析し、Microsoft .NET Framework デザイン ガイドラインに規定されたプログラミングやデザインに関する規則違反など、アセンブリに関する情報をレポートとして得ることができます。
 
@@ -56,7 +56,7 @@ Public class MyClass
 }
 ```
 
-詳細については、[警告を抑制する](../code-quality/in-source-suppression-overview.md)を参照してください。
+詳細については、次を参照してください。[警告を抑制する](../code-quality/in-source-suppression-overview.md)します。
 
 > [!NOTE]
 > Visual Studio 2017 または Visual Studio 2019 にプロジェクトを移行する場合にコード分析の警告の数が多いを突然直面する可能性があります。 場合は、警告を修正し、すぐに生産性を向上する準備ができて、*ベースライン*プロジェクトの分析の状態。 **分析**メニューの**コード分析を実行し、アクティブな懸案事項の抑制**です。
@@ -69,7 +69,7 @@ Public class MyClass
 
 - コード分析は、最新のビルドの一部として実行されます。
 
-これは、チェックイン ポリシーを指定することにより実現できます。 詳細については、[プロジェクトでは、チェックイン ポリシーによるコード品質の向上](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)を参照してください。
+これは、チェックイン ポリシーを指定することにより実現できます。 詳細については、次を参照してください。[プロジェクトでは、チェックイン ポリシーによるコード品質の向上](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)します。
 
 ## <a name="team-build-integration"></a>チーム ビルドの統合
 

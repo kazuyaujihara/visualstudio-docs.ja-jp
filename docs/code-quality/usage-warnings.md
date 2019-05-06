@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b8f2deaa728a2bcd71bcd2264fcd110aee7982e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825254"
 ---
 # <a name="usage-warnings"></a>使用法に関する警告
 使用状況の警告は、.NET Framework の適切な使用をサポートします。
@@ -40,7 +40,7 @@ ms.locfileid: "55945769"
 |[CA2208:引数の例外を正しくインスタンス化します。](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|ArgumentException またはそのクラスから派生した例外の種類の既定 (パラメーターなし) のコンストラクターに対して呼び出しが行われたか、ArgumentException またはそのクラスから派生した例外の種類のパラメーター付きのコンストラクターに不適切な文字列型の引数が渡されました。|
 |[CA 2211:非定数フィールドを表示することはできません。](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|定数でも読み取り専用でもない静的フィールドは、スレッド セーフではありません。 このようなフィールドへのアクセスは、慎重に管理する必要があり、クラス オブジェクトへのアクセスを同期するための高度なプログラミング手法を必要とします。|
 |[CA2212:サービス コンポーネントを webmethod に設定をマークしないでください。](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|System.EnterpriseServices.ServicedComponent から継承する型のメソッドは、System.Web.Services.WebMethodAttribute でマークされます。 WebMethodAttribute と ServicedComponent メソッドは、コンテキストおよびトランザクション フローの動作および要件が衝突するため、状況によっては正常に動作しません。|
-|[CA2213: 破棄可能なフィールドは破棄されなければなりません](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|System.IDisposable を実装する型が、IDisposable も実装する型を持つフィールドを宣言しています。 このフィールドの Dispose メソッドは、宣言する型の Dispose メソッドから呼び出されていません。|
+|[CA2213: 破棄可能なフィールドは破棄されなければなりません](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|System.IDisposable を実装する型が、IDisposable も実装する型を持つフィールドを宣言しています。 このフィールドの Dispose メソッドは、宣言している型の Dispose メソッドから呼び出されていません。|
 |[CA 2214:コンス トラクターのオーバーライド可能なメソッドを呼び出しません](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|コンス トラクターは、仮想メソッドを呼び出し、メソッドを呼び出すインスタンスのコンス トラクターが実行しないことになります。|
 |[CA2215:Dispose メソッドが基底クラス dispose を呼び出す必要があります。](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|型が、破棄できる型から継承している場合、使用している Dispose メソッド内から基本型の Dispose メソッドを呼び出す必要があります。|
 |[CA 2216:破棄可能な型はファイナライザーを宣言する必要があります。](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Object.Finalize での説明に従って、アンマネージ リソースの使用を提案するフィールドであり、System.IDisposable を実装する型はファイナライザーを実装しません。|
@@ -61,8 +61,8 @@ ms.locfileid: "55945769"
 |[CA2231: ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|値型は、Object.Equals をオーバーライドしていますが、等値演算子を実装していません。|
 |[CA2232:Mark の Windows フォームのエントリ ポイントを stathread に設定します](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|STAThreadAttribute は、アプリケーションの COM スレッド処理モデルがシングルスレッド アパートメントであることを示します。 この属性は、Windows フォームを使用するすべてのアプリケーションのエントリ ポイントに指定する必要があります。省略すると、Windows コンポーネントが正常に機能しないことがあります。|
 |[CA2233:操作はオーバーフローできません。](../code-quality/ca2233-operations-should-not-overflow.md)|最初に関連するデータ型に指定できる値の範囲外操作の結果がないことを確認する、オペランドを検証せず、算術演算を実行できません必要があります。|
-|[CA2234:文字列の代わりに System.Uri オブジェクトを渡します](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|"uri"、"URI"、"urn"、"URN"、"url"、または "URL" という名前を持つ文字列パラメーターが指定されているメソッドに対して、呼び出しが行われました。  そのメソッドの宣言する型に対応するメソッドのオーバーロードが存在し、それに対して System.Uri パラメーターが指定されています。|
-|[CA2235:すべてのシリアル化不可能なフィールドをマークします。](../code-quality/ca2235-mark-all-non-serializable-fields.md)|シリアル化できない型のインスタンス フィールドが、シリアル化できる型で宣言されています。|
+|[CA2234:文字列の代わりに System.Uri オブジェクトを渡します](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|"uri"、"URI"、"urn"、"URN"、"url"、または "URL" という名前を持つ文字列パラメーターが指定されているメソッドに対して、呼び出しが行われました。  そのメソッドの型宣言に対応するメソッドのオーバーロードが存在し、それに対して System.Uri パラメーターが指定されています。|
+|[CA2235:すべてのシリアル化不可能なフィールドを設定します](../code-quality/ca2235-mark-all-non-serializable-fields.md)|シリアル化できない型のインスタンス フィールドが、シリアル化できる型で宣言されています。|
 |[CA2236:ISerializable 型の基本クラス メソッドを呼び出す](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|この規則違反を修正するには、基本型の GetObjectData メソッドまたはシリアル化コンストラクターを、対応する派生型のメソッドまたはコンストラクターから呼び出します。|
 |[CA2237:ISerializable 型を serializableattribute に設定します](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|シリアル化可能として共通言語ランタイムによって認識されるは、型が ISerializable インターフェイスの実装を通じてカスタムのシリアル化ルーチンを使用する場合でもに型 SerializableAttribute 属性でマークする必要があります。|
 |[CA2238:シリアル化メソッドを正しく実装します。](../code-quality/ca2238-implement-serialization-methods-correctly.md)|シリアル化イベントを処理するメソッドに、適切なシグネチャ、戻り値の型、または参照範囲がありません。|

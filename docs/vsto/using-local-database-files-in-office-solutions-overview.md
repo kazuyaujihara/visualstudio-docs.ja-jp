@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ea260a6286c8a923d56ab7a5088b55de57004489
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982244"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>Office ソリューションの概要でのローカル データベース ファイルを使用します。
   SQL Server Express などのデータベース ファイルを含めることができます (*.mdf*) ファイルまたは Microsoft Office の Access (*.mdb*)、Office ソリューションでのファイル。 これにより、エンドユーザーを一元的なデータベースを保守する必要がない状況、1 台のコンピューターのみで使用されるローカル inventory ソリューションの例ではローカル データベースを維持するためにできます。
@@ -35,7 +35,7 @@ ms.locfileid: "56645538"
  ソリューションをサーバーに配置して、ドキュメントをエンドユーザーに配布も手動でデータベース ファイルを配布して、ドキュメントを基準と同じ位置にインストールする必要があります。 つまり、そのユーザーは、データベース ファイルを移動もしない限り、エンド ユーザーが自分のコンピューターで、新しい場所にドキュメントを移動できないことです。
 
 ## <a name="local-database-files-and-caching-the-dataset"></a>ローカル データベース ファイルと、データセットのキャッシュ
- Microsoft Office Excel および Microsoft Office Word のドキュメント レベルのソリューションでは、属性を持つデータセットのインスタンスをマークすることで、ドキュメント内のデータセットをキャッシュできます<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>します。 追加すると、データベース ファイル、プロジェクトを使用して、**データ ソース構成ウィザード**、型指定されたデータセットが自動的にプロジェクトに追加されます。 適用する必要はありません<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>、このデータセットにデータがローカル ユーザーのコンピューターに既にあるためです。 詳細については、[データ キャッシュ](../vsto/caching-data.md)を参照してください。
+ Microsoft Office Excel および Microsoft Office Word のドキュメント レベルのソリューションでは、属性を持つデータセットのインスタンスをマークすることで、ドキュメント内のデータセットをキャッシュできます<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>します。 追加すると、データベース ファイル、プロジェクトを使用して、**データ ソース構成ウィザード**、型指定されたデータセットが自動的にプロジェクトに追加されます。 適用する必要はありません<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>、このデータセットにデータがローカル ユーザーのコンピューターに既にあるためです。 詳細については、次を参照してください。[データ キャッシュ](../vsto/caching-data.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューションでのコントロールにデータをバインドします。](../vsto/binding-data-to-controls-in-office-solutions.md)

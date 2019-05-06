@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81020496c1e80718d1aa0995791762d55ef70a76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438526"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>チュートリアル: 最初の Excel 用ドキュメント レベルのカスタマイズを作成します。
   この入門編のチュートリアルでは、Microsoft Office Excel 用のドキュメント レベルのカスタマイズを作成する方法について説明します。 この種のソリューションで作成した機能は、特定のブックが開いている場合にのみ使用可能です。 ドキュメント レベルのカスタマイズでは、ブックが開いたときに新しいリボン タブを表示するなどの、アプリケーション全体の変更を行うことはできません。
@@ -106,7 +106,7 @@ ms.locfileid: "60104500"
      **このテキストは、デザイナーを使用して追加されました。**
 
 > [!WARNING]
->  この行のテキストをセルに追加する場合**A2**、この例では、他のコードは上書きされます。
+> この行のテキストをセルに追加する場合**A2**、この例では、他のコードは上書きされます。
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>プログラムによってワークシートにテキストを追加します。
  次に、Sheet1 コード ファイルにコードを追加します。 この新しいコードでは、Excel のオブジェクト モデルを使用して、ブックに 2 行目のテキストを追加します。 Sheet1 コード ファイルには、次の生成コードが既定で含まれています。

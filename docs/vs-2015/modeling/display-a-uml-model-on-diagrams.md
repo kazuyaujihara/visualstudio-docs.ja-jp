@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31181cd3dd70d3767bce65fe338d8dc152ec311c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 694b4dd1531dc196d06ba46eb8c5b77f66052bc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436224"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>図に UML モデルを表示する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,7 +102,7 @@ Visual Studio に対する拡張機能のプログラム コードでは、モ�
  `Context.CurrentDiagram as IClassDiagram;`  
   
 > [!NOTE]
->  `IDiagram` のインスタンス (および、`IClassDiagram` など、そのサブタイプ) は、処理中のコマンド内でのみ有効です。 ユーザーにコントロールが戻されている間は、持続する変数に `IDiagram` オブジェクトを保持することは推奨されません。  
+> `IDiagram` のインスタンス (および、`IClassDiagram` など、そのサブタイプ) は、処理中のコマンド内でのみ有効です。 ユーザーにコントロールが戻されている間は、持続する変数に `IDiagram` オブジェクトを保持することは推奨されません。  
   
  詳細については、次を参照してください。[モデリング図にメニュー コマンドを定義](../modeling/define-a-menu-command-on-a-modeling-diagram.md)します。  
   

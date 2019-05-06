@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b667a6c6322a925b49290ab3234788a4eee3544
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856789"
 ---
 # <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>新機能については、Visual Studio 2015 SDK のソース管理です。
 
@@ -31,7 +31,7 @@ VSPackage では、Visual Studio を機能のほとんどの種類を追加で�
 
 ソース管理 VSPackage の実装には、「全部かゼロか」の戦略が必要です。 ソース管理 VSPackage の作成者とインターフェイスでさまざまなソース コントロールのインターフェイスと (ダイアログ ボックス、メニューのおよびツールバー) 全体のソース管理機能をカバーする、新しい UI 要素を実装する作業量が大幅に投資する必要があります。Visual Studio と正常に統合するすべてのパッケージの必要です。
 
-次の手順では、ソース管理パッケージを実装するために必要なものの概要を提供します。 詳細については、[ソース管理 VSPackage を作成する](../../extensibility/internals/creating-a-source-control-vspackage.md)を参照してください。
+次の手順では、ソース管理パッケージを実装するために必要なものの概要を提供します。 詳細については、次を参照してください。[ソース管理 VSPackage を作成する](../../extensibility/internals/creating-a-source-control-vspackage.md)します。
 
 1. プライベート ソース管理サービスを proffers VSPackage を作成します。
 

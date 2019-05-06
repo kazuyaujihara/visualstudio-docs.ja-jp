@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 307e8e5285dd0023d30772c5eac7a4e351287aa5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909183"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild プロジェクト ファイルでのデータの保持
 プロジェクト サブタイプは、後で使用するためのプロジェクト ファイルにサブタイプ固有のデータを保持する必要があります。 プロジェクト サブタイプは、次の要件を満たすためにプロジェクト ファイルの永続化を使用します。
@@ -24,7 +24,7 @@ ms.locfileid: "60060932"
 
     1. 構成に依存しないデータ。 つまり、空白または不足している条件を持つ MSBuild 要素に格納されているデータ。
 
-    2. 構成に依存するデータ。 つまり、データが、特定のプロジェクト構成を規定する MSBuild 要素に格納されています。 例えば:
+    2. 構成に依存するデータ。 つまり、データが、特定のプロジェクト構成を規定する MSBuild 要素に格納されています。 例:
 
         ```
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

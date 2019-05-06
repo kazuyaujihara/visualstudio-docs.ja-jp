@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96b0343cd088a8d608cd3503162bf7fa737b79f4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 19372b341a0a8ba49caa0208a9a2fbbfd0a6b29b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418706"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef ユーティリティ
 パラメーターとして Visual Studio 拡張機能の .dll ファイルを受け取り、作成、 *.pkgdef*付随するファイル、 *.dll*ファイル。 *.Pkgdef*ファイルには、拡張機能がインストールされている場合、システム レジストリに書き込まそれ以外の場合は、すべての情報が含まれています。
 
 > [!NOTE]
->  自動的に Visual Studio SDK に含まれるプロジェクト テンプレートのほとんど作成 *.pkgdef*ビルド プロセスの一環としてファイル。 このドキュメントはパッケージを手動で作成または使用する既存のパッケージを変換する必要がある場合、 *.pkgdef*展開します。
+> 自動的に Visual Studio SDK に含まれるプロジェクト テンプレートのほとんど作成 *.pkgdef*ビルド プロセスの一環としてファイル。 このドキュメントはパッケージを手動で作成または使用する既存のパッケージを変換する必要がある場合、 *.pkgdef*展開します。
 
 ## <a name="syntax"></a>構文
 
@@ -55,7 +55,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   インストール フォルダーがある場合 *%vsinstalldir%\Common7\IDE\Extensions\\*、拡張機能が既定で有効にします。
 
 > [!NOTE]
->  **拡張機能と更新**ツールは VSIX パッケージの一部としてインストールされていない場合、拡張機能へのアクセスに使用できません。
+> **拡張機能と更新**ツールは VSIX パッケージの一部としてインストールされていない場合、拡張機能へのアクセスに使用できません。
 
 ## <a name="see-also"></a>関連項目
 - [CreateExpInstance ユーティリティ](../../extensibility/internals/createexpinstance-utility.md)

@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5df98f898c585d89c9bc493e606947f89b3206d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909395"
 ---
-# <a name="property-pages"></a>[プロパティ ページ]
+# <a name="property-pages"></a>プロパティ ページ
 ユーザーは、表示し、プロパティ ページを使用して、プロジェクトの構成に依存して、独立系のプロパティを変更できます。 A**プロパティ ページ**でボタンが有効になっている、**プロパティ**ウィンドウまたはソリューション エクスプ ローラー ツールバーの選択したオブジェクトのプロパティ ページのビューを提供するオブジェクト。 プロパティ ページでは、環境によって作成され、ソリューションとプロジェクトの利用します。 することができます、ただし、使用可能にするプロジェクト項目が構成依存のプロパティを使用します。 プロジェクト内のファイルを正しくビルドする別のコンパイラ スイッチの設定を必要とする場合は、この機能を使用する可能性があります。
 
 ## <a name="using-property-pages"></a>プロパティ ページの使用
  プロパティ ページがまだ表示されている (たとえば、プロジェクトをソリューション) から選択が変更された場合は、情報のページで、新しい選択範囲のプロパティを表示する変更表示されます。 プロパティ ページをサポートするオブジェクトのプロパティがない場合は、プロパティ ページが空です。
 
- 複数のオブジェクトが選択されている場合、プロパティ ページには、選択したすべてのアイテムのプロパティの積集合が表示されます。 選択した項目に構成に依存するプロパティが含まれていないかどうか、**プロパティ ページ**ソリューション エクスプ ローラー ツールバーのボタンがクリックされると、[プロパティ] ウィンドウにフォーカスが変更されます。 [プロパティ] ウィンドウと選択範囲に関連する詳細については、[拡張プロパティ](../../extensibility/internals/extending-properties.md)を参照してください。
+ 複数のオブジェクトが選択されている場合、プロパティ ページには、選択したすべてのアイテムのプロパティの積集合が表示されます。 選択した項目に構成に依存するプロパティが含まれていないかどうか、**プロパティ ページ**ソリューション エクスプ ローラー ツールバーのボタンがクリックされると、[プロパティ] ウィンドウにフォーカスが変更されます。 [プロパティ] ウィンドウと選択範囲に関連する詳細については、次を参照してください。[拡張プロパティ](../../extensibility/internals/extending-properties.md)します。
 
  複数のオブジェクトのプロパティが表示されますが、[プロパティ] ページの値を変更して場合、が最初に異なると、個々 のオブジェクトのプロパティが表示されていたときに、ページが空白場合でも、新しい値に設定のすべてのオブジェクトの値は。
 
@@ -67,11 +67,11 @@ ms.locfileid: "56614949"
 
    ユーザーは、f5 キーを押すか、ビルド メニューから実行を選択するときに開始されるソリューションのプロパティ ページからプロジェクトを指定できます。 これは、ソリューション エクスプ ローラーで太字のフォントでその名前が表示されることの意味では、古いアクティブなプロジェクトと同様の方法で機能します。
 
-   オートメーション モデルのプロパティとしてスタートアップ プロジェクトを取得するには呼び出すことによって`DTE.Solution.SolutionBuild.StartupProjects`します。 呼び出すことで、VSPackage、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>メソッド。 `IVsSolutionBuildManager` サービスとして利用できます`QueryService`SID_SVsSolutionBuildManager にします。 詳細については、[プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)と[ソリューション構成](../../extensibility/internals/solution-configuration.md)を参照してください。
+   オートメーション モデルのプロパティとしてスタートアップ プロジェクトを取得するには呼び出すことによって`DTE.Solution.SolutionBuild.StartupProjects`します。 呼び出すことで、VSPackage、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>または<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>メソッド。 `IVsSolutionBuildManager` サービスとして利用できます`QueryService`SID_SVsSolutionBuildManager にします。 詳細については、次を参照してください。[プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)と[ソリューション構成](../../extensibility/internals/solution-configuration.md)します。
 
 - アクティブなソリューションのビルド構成
 
-   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] アクティブ ソリューション構成を実装して、オートメーション モデルで使用できるは`DTE.Solution.SolutionBuild.ActiveConfiguration`します。 ソリューション構成では、(各プロジェクトは複数の構成を異なる名前で、複数のプラットフォーム上に持つことができます)、ソリューション内の各プロジェクトの 1 つのプロジェクト構成を含むコレクションです。 ソリューションのプロパティ ページに関連する詳細については、[ソリューション構成](../../extensibility/internals/solution-configuration.md)を参照してください。
+   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] アクティブ ソリューション構成を実装して、オートメーション モデルで使用できるは`DTE.Solution.SolutionBuild.ActiveConfiguration`します。 ソリューション構成では、(各プロジェクトは複数の構成を異なる名前で、複数のプラットフォーム上に持つことができます)、ソリューション内の各プロジェクトの 1 つのプロジェクト構成を含むコレクションです。 ソリューションのプロパティ ページに関連する詳細については、次を参照してください。[ソリューション構成](../../extensibility/internals/solution-configuration.md)します。
 
 - 現在選択されているプロジェクト
 

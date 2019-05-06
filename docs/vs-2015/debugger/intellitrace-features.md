@@ -22,12 +22,12 @@ caps.latest.revision: 73
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b1fc7da90eb4f263aaf3de19eb37cfa3272a249
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c5c775dc309c02ca24d27e8b8ac19d2c9d9d588
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440175"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace の機能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ IntelliTrace を使用すると、イベントとアプリケーションを呼�
  IntelliTrace がオンになっていることを確認するを開き、**ツール/オプション/IntelliTrace**オプション ページ。 **[IntelliTrace を有効にする]** は既定でオンになります。  
   
 > [!NOTE]
->  **[IntelliTrace]** オプション ページ上のすべての設定の適用範囲は、個々のプロジェクトまたはソリューションではなく、Visual Studio 全体となります。 これらの設定に加えた変更は、Visual Studio のすべてのインスタンス、すべてのデバッグ セッション、あるいはすべてのプロジェクトまたはソリューションに適用されます。  
+> **[IntelliTrace]** オプション ページ上のすべての設定の適用範囲は、個々のプロジェクトまたはソリューションではなく、Visual Studio 全体となります。 これらの設定に加えた変更は、Visual Studio のすべてのインスタンス、すべてのデバッグ セッション、あるいはすべてのプロジェクトまたはソリューションに適用されます。  
   
 ## <a name="ChooseEvents"></a> IntelliTrace で記録するイベントを選択します。  
  特定の IntelliTrace イベントの記録はオンまたはオフにすることができます。  
@@ -54,9 +54,9 @@ IntelliTrace を使用すると、イベントとアプリケーションを呼�
  これにより、呼び出し履歴が表示され、コード内で呼び出しの前後を移動できるようになります。 IntelliTrace は、メソッド名、メソッド エントリ、および終了ポイントなどのデータと、特定のパラメーター値および戻り値を記録します。  
   
 > [!TIP]
->  このオプションは既定では有効になっていません。かなりのオーバーヘッドが追加されるためです。 IntelliTrace はアプリケーションが行うすべてのメソッド呼び出しを先に取得する必要があるだけでなく、それを画面に表示したりディスクに保存したりする上で大量のデータ セットを処理する必要があります。  
+> このオプションは既定では有効になっていません。かなりのオーバーヘッドが追加されるためです。 IntelliTrace はアプリケーションが行うすべてのメソッド呼び出しを先に取得する必要があるだけでなく、それを画面に表示したりディスクに保存したりする上で大量のデータ セットを処理する必要があります。  
 >   
->  パフォーマンスのオーバーヘッドは、IntelliTrace で記録するイベントの一覧を制限することで、さらに収集するモジュール数を最小限に抑えることで、減らすことができます。 詳細については、「[IntelliTrace が呼び出し情報をどの程度記録するかの制御](../debugger/intellitrace-features.md#ControlCallData)」を参照してください。  
+> パフォーマンスのオーバーヘッドは、IntelliTrace で記録するイベントの一覧を制限することで、さらに収集するモジュール数を最小限に抑えることで、減らすことができます。 詳細については、「[IntelliTrace が呼び出し情報をどの程度記録するかの制御](../debugger/intellitrace-features.md#ControlCallData)」を参照してください。  
   
 ### <a name="using-the-navigation-gutter"></a>ナビゲーション余白を使用する  
  コード ウィンドウの左側に表示されるナビゲーション余白を使用することができます。 ナビゲーション余白が表示されない場合は、**ツール/オプション/IntelliTrace/高度な**、選択と**デバッグ モードでナビゲーション余白を表示**します。  
@@ -88,7 +88,7 @@ IntelliTrace を使用すると、イベントとアプリケーションを呼�
  移動してファイルに自動的に保存するように IntelliTrace を構成することができます**ツール/オプション/IntelliTrace、高度な**を選択して**ストア IntelliTrace 記録をこのディレクトリに**。 生成するファイルの設定サイズを構成することもできます。その場合、IntelliTrace は領域が足りなくなると古いデータから順に上書きしていきます。 Visual Studio では、ファイルが自動保存されるときと Visual Studio のホスティング プロセス (vshost.exe) をオンにしたときに、IntelliTrace セッションごとに 2 つのファイルが作成されます。  
   
 > [!TIP]
->  ファイルが必要なくなった場合は、ディスク領域を節約するためにファイルの保存を自動的にオフにします。 既存のファイルは削除されません。 いつでも必要に応じてコンテキスト メニューからファイルに保存することができます。  
+> ファイルが必要なくなった場合は、ディスク領域を節約するためにファイルの保存を自動的にオフにします。 既存のファイルは削除されません。 いつでも必要に応じてコンテキスト メニューからファイルに保存することができます。  
   
  IntelliTrace データをファイルに保存する場合は、IntelliTrace が収集対象としたプロセスごとに 1 つの .itrace ファイルが得られます。 移動して、Visual Studio で、.itrace ファイルを開くことができますし、 **/ファイルのファイル/を開く**ファイルを開くダイアログ ボックスから .itrace ファイルを選択します。 詳細については、「[保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)」を参照してください。  
   

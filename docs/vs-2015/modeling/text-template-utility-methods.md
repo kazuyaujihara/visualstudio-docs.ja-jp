@@ -11,12 +11,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84f5b5de8b28062023d851e38e26930718d599e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0da69de4a91ebabce4af99e26195b349ef5daa60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411411"
 ---
 # <a name="text-template-utility-methods"></a>テキスト テンプレートのユーティリティ メソッド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58976571"
 コードを記述するときに使用可能な常にいくつかのメソッドがある、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]テキスト テンプレート。 これらのメソッドは、 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> で定義されています。  
   
 > [!TIP]
->  通常の (前処理されていない) テキスト テンプレートにおいて、ホスト環境によって提供される他のメソッドとサービスを使用することもできます。 たとえば、ファイル パスを解決、エラーをログに記録してによって提供されるサービスを取得[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]といずれかのパッケージが読み込まれます。  詳細については、次を参照してください。[テキスト テンプレートから Visual Studio のへのアクセス](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)  
+> 通常の (前処理されていない) テキスト テンプレートにおいて、ホスト環境によって提供される他のメソッドとサービスを使用することもできます。 たとえば、ファイル パスを解決、エラーをログに記録してによって提供されるサービスを取得[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]といずれかのパッケージが読み込まれます。  詳細については、次を参照してください。[テキスト テンプレートから Visual Studio のへのアクセス](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)  
   
 ## <a name="write-methods"></a>メソッドを記述します。  
  式 コード ブロックを使用する代わりに、標準のコード ブロック内でテキストを追加する、`Write()`および`WriteLine()`メソッドを使うことができます。 次の 2 つのコード ブロックは、機能的に同等です。  

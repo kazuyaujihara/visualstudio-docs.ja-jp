@@ -29,11 +29,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f810761d088eaf6ec94524a7d76ec255c931686b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565778"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio デバッガーで実行中のプロセスへのアタッチ
 ローカルまたはリモート コンピューターで実行中のプロセスに、Visual Studio デバッガーをアタッチできます。 プロセスが実行されると、選択**デバッグ** > **プロセスにアタッチ**またはキーを押します**Ctrl**+**Alt** +**P**使用して、Visual Studio で、**プロセスにアタッチ**プロセスにデバッガーをアタッチするためのダイアログ。

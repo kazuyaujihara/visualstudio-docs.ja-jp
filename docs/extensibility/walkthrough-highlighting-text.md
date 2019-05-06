@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99dbc928834cddade1c434f9d5d5d8e68c40825b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 085d2aff138be1d6beecc5e0895437e92d88da87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445010"
 ---
 # <a name="walkthrough-highlight-text"></a>チュートリアル: テキストを強調表示します。
 エディターにさまざまな視覚効果を追加するには、Managed Extensibility Framework (MEF) コンポーネント パーツを作成します。 このチュートリアルでは、出現するすべてのテキスト ファイルの現在の単語を強調表示する方法を示します。 単語では、テキスト ファイルの 1 つ以上の時間が 1 つにキャレットを配置する場合は、出現するすべてが強調表示されます。
@@ -351,7 +351,7 @@ ms.locfileid: "60106034"
  実装する必要があります、タガーを作成する、<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>します。 このクラスを MEF コンポーネント パーツはため、この拡張機能が認識されるように、適切な属性を設定する必要があります。
 
 > [!NOTE]
->  MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)します。
+> MEF の詳細については、次を参照してください。 [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)します。
 
 ### <a name="to-create-a-tagger-provider"></a>タガー プロバイダーを作成するには
 

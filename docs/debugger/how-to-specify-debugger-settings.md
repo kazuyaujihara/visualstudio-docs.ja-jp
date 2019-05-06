@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b109fd995f54ede3aa2c8a6381cb9e6296a6970
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847511"
 ---
 # <a name="how-to-specify-debugger-settings"></a>方法: デバッガー設定を指定する
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、変数の表示方法、特定の警告を表示するかどうか、ブレークポイントの設定方法、実行中のプログラムを中断した場合の影響など、デバッガーの動作のさまざまな設定を指定できます。 デバッガーの設定は **[オプション]** ダイアログ ボックスで指定します。

@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c4876aedd12b2284982304b16049691ce6c9b0d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 92dac82de96323e1d057991e6570715371c9b272
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438043"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>[プロジェクトおよびソリューション] の [オプション] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "59652892"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] プロジェクト フォルダーの既定パスを設定し、プロジェクトの開発と構築に伴って、**[出力]** ウィンドウ、**[タスク一覧]**、および **[ソリューション エクスプローラー]** の既定動作を決定します。 このダイアログ ボックスにアクセスするには、**[ツール] メニューの [オプション]** をクリックして、**[プロジェクトおよびソリューション]** を展開し、**[全般]** をクリックします。  
   
 > [!NOTE]
->  使用している設定またはエディションによっては、ダイアログ ボックスで使用可能なオプションや、メニュー コマンドの名前や位置がヘルプに記載されている内容と異なる場合があります。 このヘルプ ページは、**全般的な開発設定**を考慮して記述されています。 設定を表示または変更するには、**[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 使用している設定またはエディションによっては、ダイアログ ボックスで使用可能なオプションや、メニュー コマンドの名前や位置がヘルプに記載されている内容と異なる場合があります。 このヘルプ ページは、**全般的な開発設定**を考慮して記述されています。 設定を表示または変更するには、**[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="settings"></a>設定  
  **プロジェクトの場所**  

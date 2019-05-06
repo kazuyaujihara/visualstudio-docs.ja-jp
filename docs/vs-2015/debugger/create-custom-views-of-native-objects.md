@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e44e8166fb4f03f28d96203dc7efc09d3913224c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: daa4eba0949262e0bfbfa67c9b0ab3ee814558e4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440846"
 ---
 # <a name="create-custom-views-of-native-objects"></a>ネイティブ オブジェクトのカスタム ビューを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio の Natvis フレームワークでは、 **[ウォッチ]**、 **
  Natvis は、以前のバージョンの Visual Studio で使用されていた **autoexp.dat** ファイルよりも優先され、XML 構文の使用、より高度な診断、バージョン管理、複数ファイルのサポートが可能になります。  
 
 > [!NOTE]
->  Natvis フレームワークは次の場合には視覚化に使用されません。  
+> Natvis フレームワークは次の場合には視覚化に使用されません。  
 > 
 > - [デバッガーのタイプ] を **[混合]** に設定して、C++  Windows のデスクトップ プロジェクトをデバッグしている。  
 >   - マネージド互換モード (**[ツール] / [オプション] / [デバッグ] / [一般] / [マネージド互換モードを使用する]**) を使用して、Windows デスクトップ アプリケーションで混合モードのデバッグを行っている。  
@@ -304,7 +304,7 @@ Visual Studio の Natvis フレームワークでは、 **[ウォッチ]**、 **
  `DisplayString` 式では、 `x` と `y`は `CPoint`のメンバーであり、中かっこ内にあるため、それらの値は評価されます。 この式では、二重中かっこ ( `{{` または `}}` ) を使用して中かっこをエスケープする方法も示しています。  
 
 > [!NOTE]
->  `DisplayString` 要素でのみ、任意の文字列と中かっこ構文を使用できます。 その他のすべての視覚化要素では、デバッガーによって評価される式しか使用できません。  
+> `DisplayString` 要素でのみ、任意の文字列と中かっこ構文を使用できます。 その他のすべての視覚化要素では、デバッガーによって評価される式しか使用できません。  
 
 ### <a name="BKMK_StringView"></a> StringView  
  `StringView` 要素は、値が組み込みテキスト ビジュアライザーに渡される式を定義します。 たとえば、 `ATL::CStringT` に次のような視覚化があるとします。  
@@ -336,7 +336,7 @@ Visual Studio の Natvis フレームワークでは、 **[ウォッチ]**、 **
  ![StringView ビジュアライザーを含む CStringT データ](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
 
 > [!NOTE]
->  `{m_pszData,su}` 式に、値を Unicode 文字列として表示する C++ 書式指定子 `su` が含まれていることに注意してください。 詳細については、「 [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) 」を参照してください。  
+> `{m_pszData,su}` 式に、値を Unicode 文字列として表示する C++ 書式指定子 `su` が含まれていることに注意してください。 詳細については、「 [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) 」を参照してください。  
 
 ### <a name="BKMK_Expand"></a> Expand  
  `Expand` ノードを使用すると、視覚化された型の子が変数ウィンドウでどのように展開されるかをカスタマイズできます。 このノードでは、子要素を定義する子ノードのリストを使用できます。  
@@ -368,7 +368,7 @@ Visual Studio の Natvis フレームワークでは、 **[ウォッチ]**、 **
  `Width` および `Height` 要素で指定した式が評価され、値の列に表示されています。 `[Raw View]` ノードは、カスタム展開が使用されるたびに、デバッガーによって自動的に作成されます。 前に示したスクリーンショットでこのノードは展開されています。オブジェクトの未加工のビューと視覚化がどのように異なるかがわかります。 Visual Studio の既定の展開では、基底クラスのサブツリーが作成され、基底クラスのすべてのデータ メンバーが子として一覧表示されます。  
 
 > [!NOTE]
->  Item 要素の展開により複合型が参照される場合は、 `Item` ノード自体が展開可能です。  
+> Item 要素の展開により複合型が参照される場合は、 `Item` ノード自体が展開可能です。  
 
 #### <a name="BKMK_ArrayItems_expansion"></a> Size  
  `ArrayItems` ノードを使用すると、Visual Studio デバッガーによって型が配列として解釈され、その個々の要素が表示されるようになります。 `std::vector` の視覚化は良い使用例です。  

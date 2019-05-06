@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26cd34583f28c19770675b185f986149b23fdf6d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b08853937be3f11913f88293633b02f3636898c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439727"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>コード化された UI テストでの HTML5 コントロールの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,10 +25,10 @@ ms.locfileid: "60100450"
 - Visual Studio Enterprise  
   
 > [!WARNING]
->  Internet Explorer 10 以前のバージョンでは、Internet Explorer プロセスより高い特権レベルでコード化された UI テストを実行できました。 Internet Explorer 10 でコード化された UI テストを実行するときは、コード化された UI テストと Internet Explorer のプロセスを同じ特権レベルで実行する必要があります。 これは、Internet Explorer 10 のよりセキュリティ レベルの高い AppContainer 機能によるものです。  
+> Internet Explorer 10 以前のバージョンでは、Internet Explorer プロセスより高い特権レベルでコード化された UI テストを実行できました。 Internet Explorer 10 でコード化された UI テストを実行するときは、コード化された UI テストと Internet Explorer のプロセスを同じ特権レベルで実行する必要があります。 これは、Internet Explorer 10 のよりセキュリティ レベルの高い AppContainer 機能によるものです。  
   
 > [!WARNING]
->  Internet Explorer 10 でコード化された UI テストを作成した場合、そのテストは Internet Explorer 9 または Internet Explorer 8 を使用して実行できないことがあります。 これは、Internet Explorer 10 には、オーディオ、ビデオ、ProgressBar、スライダーなどの HTML5 コントロールが含まれているためです。 これらの HTML5 コントロールは、Internet Explorer 9 または Internet Explorer 8 で認識されません。 同様に、Internet Explorer 9 を使用するコード化された UI テストには、Internet Explorer 8 で認識されない HTML5 コントロールが含まれる場合があります。  
+> Internet Explorer 10 でコード化された UI テストを作成した場合、そのテストは Internet Explorer 9 または Internet Explorer 8 を使用して実行できないことがあります。 これは、Internet Explorer 10 には、オーディオ、ビデオ、ProgressBar、スライダーなどの HTML5 コントロールが含まれているためです。 これらの HTML5 コントロールは、Internet Explorer 9 または Internet Explorer 8 で認識されません。 同様に、Internet Explorer 9 を使用するコード化された UI テストには、Internet Explorer 8 で認識されない HTML5 コントロールが含まれる場合があります。  
   
 ## <a name="supported-html5-controls"></a>サポートされている HTML5 コントロール  
  コード化された UI テストには、次の HTML5 コントロールの記録、再生、検証のサポートが含まれます。  
@@ -81,7 +81,7 @@ string Volume
  **フィルター プロパティ:**`HtmlAudio` のフィルター プロパティは、`Src`、`Class`、`ControlDefinition`、`TagInstance` です。  
   
 > [!NOTE]
->  Seek および Pause の時間は大きな意味を持つことがあります。 再生中、コード化された UI テストは、オーディオを一時停止する前に、`(TimeSpan)` に指定された時間まで待機します。 特殊な状況において、Pause コマンドが実行される前に指定された時間が経過したとき、例外がスローされます。  
+> Seek および Pause の時間は大きな意味を持つことがあります。 再生中、コード化された UI テストは、オーディオを一時停止する前に、`(TimeSpan)` に指定された時間まで待機します。 特殊な状況において、Pause コマンドが実行される前に指定された時間が経過したとき、例外がスローされます。  
   
 ### <a name="video-control"></a>ビデオ コントロール  
  **ビデオ コントロール:** HTML5 ビデオ コントロールに対するアクションが正しく記録され再生されます。  
@@ -111,7 +111,7 @@ string VideoWidth
  **フィルター プロパティ:**`HtmlVideo` のフィルター プロパティは、`Src`、`Poster`、`Class`、`ControlDefinition`、`TagInstance` です。  
   
 > [!NOTE]
->  -30s または +30s のラベルを使用してビデオを巻き戻したり早送りしたりする場合、集計後の適切なタイミングにシークされます。  
+> -30s または +30s のラベルを使用してビデオを巻き戻したり早送りしたりする場合、集計後の適切なタイミングにシークされます。  
   
 ### <a name="slider"></a>スライダー  
  **スライダー コントロール:** HTML5 スライダー コントロールに対するアクションを正しく記録および再生します。  

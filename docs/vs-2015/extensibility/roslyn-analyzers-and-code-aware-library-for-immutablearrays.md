@@ -10,7 +10,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c15b1f335129e7c749aadefaa78ee3f9c5862baa
 ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/26/2019
 ms.locfileid: "59002234"
@@ -52,7 +52,7 @@ Console.WriteLine("b2.Length = { 0}", b2.Length);
 
 ```
 
-最初のエラーは、ImmutableArray 実装の構造体を使用して、基になるデータ ストレージをラップするためです。 構造体は、パラメーターなしのコンス トラクターを持つ必要がありますように`default(T)`式は、すべての構造体を返すことができます 0 または null のメンバー。 コードにアクセスするときに`b1.Length`、ImmutableArray 構造体の基になる記憶域配列がないために、実行時の null がエラーを逆参照があります。 空の ImmutableArray を作成する正しい方法は、`ImmutableArray<int>.Empty`します。
+最初のエラーは、ImmutableArray 実装の構造体を使用して、基になるデータ ストレージをラップするためです。 構造体は、パラメーターなしのコンストラクターを持つ必要がありますように`default(T)`式は、すべての構造体を返すことができます 0 または null のメンバー。 コードにアクセスするときに`b1.Length`、ImmutableArray 構造体の基になる記憶域配列がないために、実行時の null がエラーを逆参照があります。 空の ImmutableArray を作成する正しい方法は、`ImmutableArray<int>.Empty`します。
 
  ImmutableArray.Add メソッドはこのメソッドを呼び出すたびに新しいインスタンスを返すために、コレクション初期化子を含むエラーが発生します。 ImmutableArrays 決して変更ので、新しい要素を追加するときに、オブジェクトを取得するバックアップ新しい ImmutableArray (これは以前から存在 ImmutableArray とパフォーマンス上の理由からストレージを共有する可能性があります)。 `b2`呼び出す前に、最初の ImmutableArray を指す`Add()`の 5 回`b2`既定 ImmutableArray が。 エラーを逆参照呼び出しの長さにも null でクラッシュします。 手動で追加の呼び出しは、使用することがなく、ImmutableArray を初期化する正しい方法`ImmutableArray.CreateRange(new int[] {1, 2, 3, 4, 5})`します。
 
@@ -254,7 +254,7 @@ var objectCreation = root.FindNode(context.Span)
                          .FirstAncestorOrSelf<ObjectCreationExpressionSyntax>();
 ```
 
- **電球の UI のコード修正を登録します。** コード修正を登録するときに Roslyn は自動的に Visual Studio 電球 UI に接続されます。 エンドユーザーが使用できる表示**CTRL + です。** アナライザー波線を表示する、無効な場合 (期間)`ImmutableArray<T>`コンス トラクターを使用します。 コード修正プロバイダーは、問題がある場合にのみ実行するため、探してオブジェクト作成式があると想定することができます。 末尾に次のコードを追加することで、新しいコード修正を登録するコンテキスト パラメーターから`RegisterCodeFixAsync`メソッド。
+ **電球の UI のコード修正を登録します。** コード修正を登録するときに Roslyn は自動的に Visual Studio 電球 UI に接続されます。 エンドユーザーが使用できる表示**CTRL + です。** アナライザー波線を表示する、無効な場合 (期間)`ImmutableArray<T>`コンストラクターを使用します。 コード修正プロバイダーは、問題がある場合にのみ実行するため、探してオブジェクト作成式があると想定することができます。 末尾に次のコードを追加することで、新しいコード修正を登録するコンテキスト パラメーターから`RegisterCodeFixAsync`メソッド。
 
 ```csharp
 

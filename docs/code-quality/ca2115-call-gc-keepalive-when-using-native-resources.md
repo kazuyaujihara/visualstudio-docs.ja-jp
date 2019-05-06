@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 9a74f6313f90a31d43cf39443b1c44d78f0628f8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545190"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115:ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します
 
@@ -42,7 +42,7 @@ ms.locfileid: "55930988"
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を解決するへの呼び出しを追加<xref:System.GC.KeepAlive%2A>メソッドに渡して、現在のインスタンス (`this` C# および C++ で)、引数として。 コードの最後の行の後にガベージ コレクションからオブジェクトを保護する必要がありますに呼び出しを配置します。 呼び出しの直後に<xref:System.GC.KeepAlive%2A>オブジェクトへの参照を管理対象がないと仮定ガベージ コレクションの準備完了と見なされますもう一度です。
+この規則違反を解決するへの呼び出しを追加<xref:System.GC.KeepAlive%2A>メソッドに渡して、現在のインスタンス (`this` c# および C++ で)、引数として。 コードの最後の行の後にガベージ コレクションからオブジェクトを保護する必要がありますに呼び出しを配置します。 呼び出しの直後に<xref:System.GC.KeepAlive%2A>オブジェクトへの参照を管理対象がないと仮定ガベージ コレクションの準備完了と見なされますもう一度です。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 

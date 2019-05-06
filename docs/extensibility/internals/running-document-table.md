@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859192"
 ---
 # <a name="running-document-table"></a>ドキュメント テーブルの実行
 IDE では、実行中のドキュメント テーブル (RDT) と呼ばれる内部構造内のすべての現在開いているドキュメントの一覧を保持します。 この一覧には、これらのドキュメントの現在編集されているかどうかに関係なく、メモリ内のすべての開いているドキュメントが含まれています。 ドキュメントでは、プロジェクトまたはメイン プロジェクト ファイル (.vcxproj ファイルなど) でファイルを含む、保存されている任意の項目です。

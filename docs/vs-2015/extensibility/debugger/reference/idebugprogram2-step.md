@@ -12,12 +12,12 @@ ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e2eec3fd22e41ce7fd49584bb65e2646428646a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0473cf7061cb18dad569910af5214742ba774a87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445777"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58975409"
 ステップを実行します。  
   
 > [!NOTE]
->  このメソッドは非推奨です。 使用して、[手順](../../../extensibility/debugger/reference/idebugprocess3-step.md)メソッド代わりにします。  
+> このメソッドは非推奨です。 使用して、[手順](../../../extensibility/debugger/reference/idebugprocess3-step.md)メソッド代わりにします。  
   
 ## <a name="syntax"></a>構文  
   
@@ -62,7 +62,7 @@ int Step( 
  任意のスレッドの同期またはスレッド間の通信が発生したとき、プログラム内の他のスレッドは、特定のスレッドがステップ実行時に実行する必要があります。  
   
 > [!WARNING]
->  停止イベントまたは直接 (同期) イベントを送信しない[イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md); この呼び出しを処理中にそれ以外の場合、デバッガーがハングします。  
+> 停止イベントまたは直接 (同期) イベントを送信しない[イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md); この呼び出しを処理中にそれ以外の場合、デバッガーがハングします。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

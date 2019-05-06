@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2e97aa60a983eef3034eab28f7835edc1abb6734
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951830"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials for Visual Studio
 
@@ -154,7 +154,7 @@ Visual Studio 内でのアンチ パターンは、UI を破棄する前に説�
 
    ![色のサービスを無視し、「詳細」のハイパーリンクを使用して、Visual Studio のアンチ パターンが。](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")<br />色のサービスを無視し、「詳細」のハイパーリンクを使用して、Visual Studio のアンチ パターンが。
 
-**優れた解決方法:** リンクをクリックして、ユーザーを求めるは質問をもたらします。 例えば:
+**優れた解決方法:** リンクをクリックして、ユーザーを求めるは質問をもたらします。 例:
 
 - Windows Azure サービスのしくみ
 

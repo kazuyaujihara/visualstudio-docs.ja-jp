@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07584f9e04be805ed699676c678b2147ec3679ff
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 3e1f82a58dac3b0a6f607d1de7f881c5de9e91aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973370"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>C# 開発者のための Visual Studio 生産性ガイド
 
@@ -154,10 +154,12 @@ Visual Studio には、コードの検索と[移動](../ide/navigating-code.md)�
 Visual Studio 2017 以降、テストの操作性に多数の機能強化が行われています。 MSTest v1、MSTest v2、NUnit、または XUnit テスト フレームワークでテストできます。
 
 - **テスト エクスプローラー**でのテスト検出は高速で実行されます。
-- **テスト エクスプローラー**で*階層的な並べ替え*を使用して、テストを整理します。
-- [Live Unit Testing](../test/live-unit-testing.md) は、コードの変更によって影響を受けたテストを継続的に実行して、テストの状態を通知するインライン エディターのアイコンを更新します。 ライブ テスト セットに特定のテストまたはテスト プロジェクトを含めるか除外します。
 
-![Visual Studio のテスト エクスプローラーの階層ビュー](../ide/media/VSGuide_Testing.png)
+- **テスト エクスプローラー**で*階層的な並べ替え*を使用して、テストを整理します。
+
+   ![Visual Studio のテスト エクスプローラーの階層ビュー](../ide/media/VSGuide_Testing.png)
+
+- [Live Unit Testing](../test/live-unit-testing.md) は、コードの変更によって影響を受けたテストを継続的に実行して、テストの状態を通知するインライン エディターのアイコンを更新します。 ライブ テスト セットに特定のテストまたはテスト プロジェクトを含めるか除外します。 (Visual Studio Enterprise エディションのみ。)
 
 ## <a name="debugging"></a>デバッグ
 
@@ -211,5 +213,5 @@ Git または TFVC を使用して Visual Studio でコードを格納して更�
 | 完全ソリューション解析を有効にする | **エラー一覧**にソリューション内のすべてのエラーを表示します | **[ツール]** > **[オプション]** > **[テキスト エディター]** > **[C#]** > **[詳細設定]** > **[完全ソリューション解析を有効にする]** |
 | 逆コンパイルされたソースへの移動を有効にする | 外部ソースからの型/メンバーの [定義に移動] が可能になり、ILSpy 逆コンパイラを使ってメソッド本体を表示できます | **[ツール]** > **[オプション]** > **[テキスト エディター]** > **[C#]** > **[詳細設定]** > **[逆コンパイルされたソースへのナビゲーションを有効にする]** |
 | 補完/提案モード | IntelliSense のテキスト補完の動作を変更します。 IntelliJ の知識がある開発者が、既定ではない動作を使用するのに役立ちます。 | **[メニュー]** > **[編集]** > **[IntelliSense]** > **[完了モードの切り替え]** |
-| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | コードの参照情報と変更履歴をエディターに表示します | **[ツール]** > **[オプション]** > **[テキスト エディター]** > **[すべての言語]** > **[CodeLens]** |
+| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | コードの参照情報と変更履歴をエディターに表示します (ソース管理の CodeLens インジケーターは、Visual Studio Community エディションでは使用できません。) | **[ツール]** > **[オプション]** > **[テキスト エディター]** > **[すべての言語]** > **[CodeLens]** |
 | [コード スニペット](../ide/visual-csharp-code-snippets.md) | 一般的な定型コードをスタブできるようにします | スニペットの名前を入力し、**Tab** キーを 2 回押します。 |

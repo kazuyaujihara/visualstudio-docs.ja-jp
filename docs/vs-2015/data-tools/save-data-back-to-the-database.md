@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425349"
 ---
 # <a name="save-data-back-to-the-database"></a>データをデータベースに保存する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ ms.locfileid: "60056810"
 |現在|Jim Wilson|James C. Wilson|  
   
 > [!CAUTION]
->  `preserveChanges = true`シナリオでは場合、<xref:System.Data.DataSet.RejectChanges%2A>メソッドは、ターゲット データセットのレコードにし、元のデータに戻ります、*ソース*データセット。 これは、ことをターゲット データセットによって元のデータ ソースを更新しようとすると、その可能性がありますできないことを意味を更新する元の行を検索します。 データ ソースからレコードの更新された別のデータセットを入力し、同時実行制御違反を防ぐために、マージを実行することによって、同時実行制御違反を防ぐことができます。 (コンカレンシー違反は、データセットにレコードが格納された後で別のユーザーがデータ ソース内のレコードを変更すると発生します。)  
+> `preserveChanges = true`シナリオでは場合、<xref:System.Data.DataSet.RejectChanges%2A>メソッドは、ターゲット データセットのレコードにし、元のデータに戻ります、*ソース*データセット。 これは、ことをターゲット データセットによって元のデータ ソースを更新しようとすると、その可能性がありますできないことを意味を更新する元の行を検索します。 データ ソースからレコードの更新された別のデータセットを入力し、同時実行制御違反を防ぐために、マージを実行することによって、同時実行制御違反を防ぐことができます。 (コンカレンシー違反は、データセットにレコードが格納された後で別のユーザーがデータ ソース内のレコードを変更すると発生します。)  
   
 ## <a name="update-constraints"></a>制約の更新  
  既存のデータ行を変更するには、追加または個々 の列のデータを更新します。 データセットに制約 (外部キー、null 非許容の制約など) が含まれている場合は、更新するとき、レコードはエラー状態にする一時的にあります。 1 つの列の更新の終了後、次のいずれかを取得する前に、エラー状態にする、ことができます。  
@@ -110,7 +110,7 @@ ms.locfileid: "60056810"
   更新プログラムを完了すると、有効にできます再制約チェックをする更新プログラムのイベントを再度有効にしが発生します。  
   
 > [!NOTE]
->  Windows フォームでのデータ グリッドに組み込まれているデータ バインディング アーキテクチャは、フォーカスが、行外に移動しを明示的に呼び出していないまで制約チェックを中断、 <xref:System.Data.DataRow.BeginEdit%2A>、 <xref:System.Data.DataRow.EndEdit%2A>、または<xref:System.Data.DataRow.CancelEdit%2A>メソッド。  
+> Windows フォームでのデータ グリッドに組み込まれているデータ バインディング アーキテクチャは、フォーカスが、行外に移動しを明示的に呼び出していないまで制約チェックを中断、 <xref:System.Data.DataRow.BeginEdit%2A>、 <xref:System.Data.DataRow.EndEdit%2A>、または<xref:System.Data.DataRow.CancelEdit%2A>メソッド。  
   
  データセットで <xref:System.Data.DataSet.Merge%2A> メソッドが呼び出されると、制約は自動的に無効になります。 マージが完了したら、有効にするデータセットに対するすべての制約がある場合、<xref:System.Data.ConstraintException>がスローされます。 この場合、<xref:System.Data.DataSet.EnforceConstraints%2A> プロパティが `false,` に設定されるので、すべての制約違反を解決してから <xref:System.Data.DataSet.EnforceConstraints%2A> プロパティを `true` に設定し直す必要があります。  
   
@@ -182,12 +182,12 @@ ms.locfileid: "60056810"
 - した後、データセットを読み込みます。 TableAdapter の `Fill` メソッドを呼び出すことによりデータセットを読み込んだ場合、TableAdapter により変更が自動的にコミットされます。 ただし、別のデータセットをマージすることによりデータセットを読み込む場合は、変更を手動でコミットする必要があります。  
   
   > [!NOTE]
-  >  アダプターが自動的に呼び出すときに、変更のコミット防止、`Fill`設定することによって、`AcceptChangesDuringFill`するアダプターのプロパティ`false`します。 設定されている場合`false`、<xref:System.Data.DataRow.RowState%2A>に設定されますが、読み込み中に挿入される行はごとの<xref:System.Data.DataRowState>します。  
+  > アダプターが自動的に呼び出すときに、変更のコミット防止、`Fill`設定することによって、`AcceptChangesDuringFill`するアダプターのプロパティ`false`します。 設定されている場合`false`、<xref:System.Data.DataRow.RowState%2A>に設定されますが、読み込み中に挿入される行はごとの<xref:System.Data.DataRowState>します。  
   
 - 後に、データセットの変更を XML Web サービスなどの別のプロセスに送信します。  
   
   > [!CAUTION]
-  >  この方法で変更をコミットすると、変更情報はすべて削除されます。 いない変更をコミットするまでした後は、データセットに加えられた変更内容を把握するアプリケーションを必要とする操作を実行する完了します。  
+  > この方法で変更をコミットすると、変更情報はすべて削除されます。 いない変更をコミットするまでした後は、データセットに加えられた変更内容を把握するアプリケーションを必要とする操作を実行する完了します。  
   
   この方法で実行できる処理は次のとおりです。  
   
@@ -208,7 +208,7 @@ ms.locfileid: "60056810"
 |<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|変更はデータセットのすべてのテーブルのすべての行にコミットされます。|  
   
 > [!NOTE]
->  TableAdapter を呼び出すことによってデータセットを読み込むかどうか`Fill`メソッドを明示的に変更を反映する必要はありません。 既定で、`Fill`メソッドの呼び出し、`AcceptChanges`データ テーブルの作成が完了した後のメソッド。  
+> TableAdapter を呼び出すことによってデータセットを読み込むかどうか`Fill`メソッドを明示的に変更を反映する必要はありません。 既定で、`Fill`メソッドの呼び出し、`AcceptChanges`データ テーブルの作成が完了した後のメソッド。  
   
  関連するメソッド、 `RejectChanges`、コピーすることで変更の効果を元に戻します、<xref:System.Data.DataRowVersion>バージョンに戻す、<xref:System.Data.DataRowVersion>レコードのバージョン。 また、設定、<xref:System.Data.DataRow.RowState%2A>各レコードの<xref:System.Data.DataRowState>します。  
   
@@ -224,7 +224,7 @@ ms.locfileid: "60056810"
 - データのバック エンドで、データをデータベースなどのデータ ソースに送信し、データの受け入れまたは拒否を行うことができるようにする。 データの検証やエラー情報を提供する洗練された機能を備えたデータベースを使用している場合、実用的なアプローチになります。データのソースが何であるかにかかわらずデータを検証できるからです。 ただし、このアプローチはアプリケーション固有の検証要件に対応しない可能性があります。 さらに、アプリケーションが、バック エンドによって発生した検証エラーの解決を容易にする方法に応じて、データ ソースにラウンド トリップが多数データ ソースでデータの検証が結果ことができます。  
   
   > [!IMPORTANT]
-  >  データ コマンドを使用する場合、<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>プロパティに設定されている<xref:System.Data.CommandType>、慎重に、データベースに渡す前に、クライアントから送信される情報を確認します。 悪意のあるユーザーが、承認なしでデータベースにアクセスしたり、データベースを破壊したりする目的で、変更した SQL ステートメントや追加の SQL ステートメントの送信 (挿入) を試みる場合があります。 ユーザーの入力をデータベースを転送する前に常に情報が有効なことを確認します。 常にパラメーター化クエリまたは可能であればストアド プロシージャを使用することをお勧めします。 詳細については、「[スクリプトによる攻略の概要](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)」を参照してください。  
+  > データ コマンドを使用する場合、<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>プロパティに設定されている<xref:System.Data.CommandType>、慎重に、データベースに渡す前に、クライアントから送信される情報を確認します。 悪意のあるユーザーが、承認なしでデータベースにアクセスしたり、データベースを破壊したりする目的で、変更した SQL ステートメントや追加の SQL ステートメントの送信 (挿入) を試みる場合があります。 ユーザーの入力をデータベースを転送する前に常に情報が有効なことを確認します。 常にパラメーター化クエリまたは可能であればストアド プロシージャを使用することをお勧めします。 詳細については、「[スクリプトによる攻略の概要](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)」を参照してください。  
   
   データセットを変更した後で、変更内容をデータ ソースに転送できます。 一般に、これは TableAdapter (またはデータ アダプター) の `Update` メソッドを呼び出すことによって行います。 データ テーブル内の各レコードのループのメソッドでは、必要な更新プログラムの種類を決定します (更新、挿入、または削除) があれば、適切なコマンドを実行します。  
   
@@ -256,7 +256,7 @@ ms.locfileid: "60056810"
 - 転送される SQL ステートメントには SET 句が含まれており、変更された列の新しい値を設定する。  
   
     > [!NOTE]
-    >  TableAdapter の `UpdateCommand` プロパティにストアド プロシージャの名前が設定されている場合、TableAdapter は SQL ステートメントを作成しません。 その代わりに、適切なパラメーターを渡してストアド プロシージャを呼び出します。  
+    > TableAdapter の `UpdateCommand` プロパティにストアド プロシージャの名前が設定されている場合、TableAdapter は SQL ステートメントを作成しません。 その代わりに、適切なパラメーターを渡してストアド プロシージャを呼び出します。  
   
 ## <a name="passing-parameters"></a>パラメーターを渡す  
  通常、データベースで更新しようとしているレコードの値を渡すパラメーターを使用します。  ときに、TableAdapter の`Update`メソッドには、UPDATE ステートメントが実行される、パラメーター値を入力する必要があります。 この値は、該当するデータ コマンドの `Parameters` コレクションから取得します。この場合は TableAdapter の `UpdateCommand` オブジェクトです。  
@@ -268,7 +268,7 @@ ms.locfileid: "60056810"
  UPDATE ステートメントでも、古い (そのレコードは、データベース内にあることができます) の値 (レコードに書き込まれるもの) 両方の新しい値を指定する必要があります。 したがって、それぞれの値に、SET 句のパラメーターと WHERE 句の 2 つのパラメーターがあります。 両方のパラメーターが更新されるレコードからデータを読み取りますが、パラメーターのに基づいて列の値のバージョンを取得[SqlParameter.SourceVersion プロパティ](https://msdn.microsoft.com/library/system.data.sqlclient.sqlparameter.sourceversion.aspx)します。 SET 句のパラメーターは現在のバージョンを取得し、WHERE 句のパラメーターは元のバージョンを取得します。  
   
 > [!NOTE]
->  `Parameters` コレクションの値はコードで設定することもできます。通常はデータ アダプターの <xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーで設定します。  
+> `Parameters` コレクションの値はコードで設定することもできます。通常はデータ アダプターの <xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーで設定します。  
   
 ## <a name="see-also"></a>関連項目  
  [TableAdapter を使用してデータを更新します。](../data-tools/update-data-by-using-a-tableadapter.md)   

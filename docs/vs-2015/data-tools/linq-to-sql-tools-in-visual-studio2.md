@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 44e12e616e453dcdc0390e8a6eb5b2065a51a6bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384056"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to Visual Studio での SQL ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ LINQ to SQL では、Microsoft によってリリースされた最初のオブ�
  ![LINQ to SQL デザイナー](../data-tools/media/raddata-linq-to-sql-designer.png "raddata LINQ to SQL デザイナー")
 
 > [!IMPORTANT]
->  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]簡単なオブジェクト リレーショナル マッパーは、1 対 1 のマッピング関係のみをサポートしているためです。 つまり、エンティティ クラスには、データベース テーブルまたはビューとの 1:1 のマッピング関係しか持たせることができません。 参加しているテーブルにエンティティ クラスのマッピングなどの複雑なマッピングはサポートされていません。複雑なマッピングの Entity Framework を使用します。 また、デザイナーは一方向のコード ジェネレーターです。 つまり、デザイナー サーフェイスに加えた変更だけがコード ファイルに反映されます。 コード ファイルに手動で加えた変更は、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]に反映されません。 コード ファイルに手動で加えた変更は、デザイナーを保存してコードを再生成するときに上書きされます。 ユーザー コードを追加し、によって生成されたクラスを拡張する方法については、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]を参照してください[方法。O/R デザイナーによって生成されたコードを拡張する](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)します。
+> [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]簡単なオブジェクト リレーショナル マッパーは、1 対 1 のマッピング関係のみをサポートしているためです。 つまり、エンティティ クラスには、データベース テーブルまたはビューとの 1:1 のマッピング関係しか持たせることができません。 参加しているテーブルにエンティティ クラスのマッピングなどの複雑なマッピングはサポートされていません。複雑なマッピングの Entity Framework を使用します。 また、デザイナーは一方向のコード ジェネレーターです。 つまり、デザイナー サーフェイスに加えた変更だけがコード ファイルに反映されます。 コード ファイルに手動で加えた変更は、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]に反映されません。 コード ファイルに手動で加えた変更は、デザイナーを保存してコードを再生成するときに上書きされます。 ユーザー コードを追加し、によって生成されたクラスを拡張する方法については、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]を参照してください[方法。O/R デザイナーによって生成されたコードを拡張する](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)します。
 
 ## <a name="creating-and-configuring-the-datacontext"></a>DataContext の作成と構成
  追加した後、 **LINQ to SQL クラス**項目プロジェクトを開き、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]、空のデザイン サーフェイスは、空を表します<xref:System.Data.Linq.DataContext>構成可能になります。 <xref:System.Data.Linq.DataContext>デザイン サーフェイスにドラッグされる最初の項目によって提供される接続情報で構成されます. したがって、<xref:System.Data.Linq.DataContext> は、デザイン サーフェイスにドロップされた最初の項目の接続情報によって構成されます。 詳細については、<xref:System.Data.Linq.DataContext>クラス」を参照して[DataContext メソッド (O/R デザイナー)](../data-tools/datacontext-methods-o-r-designer.md)します。
@@ -53,7 +53,7 @@ LINQ to SQL では、Microsoft によってリリースされた最初のオブ�
  作成することができます<xref:System.Data.Linq.DataContext>メソッドを呼び出す (にマップされる) ストアド プロシージャと関数をドラッグしてから**サーバー エクスプ ローラー**/**データベース エクスプ ローラー** に[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. ストアド プロシージャと関数は、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]に <xref:System.Data.Linq.DataContext> のメソッドとして追加されます。
 
 > [!NOTE]
->  ストアド プロシージャおよび関数からのドラッグと**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**上に、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]、戻り値の型を生成された<xref:System.Data.Linq.DataContext>メソッドとは異なる項目をドロップする場所によって異なります。 詳細については [DataContext メソッド (O/R デザイナー)](../data-tools/datacontext-methods-o-r-designer.md) を参照してください。
+> ストアド プロシージャおよび関数からのドラッグと**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**上に、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]、戻り値の型を生成された<xref:System.Data.Linq.DataContext>メソッドとは異なる項目をドロップする場所によって異なります。 詳細については [DataContext メソッド (O/R デザイナー)](../data-tools/datacontext-methods-o-r-designer.md) を参照してください。
 
 ## <a name="configuring-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>ストアド プロシージャを使用してエンティティ クラスとデータベース間でデータを保存するための DataContext の構成
  前に述べたように、ストアド プロシージャと関数を呼び出す <xref:System.Data.Linq.DataContext> のメソッドを作成できます。 また、挿入、更新、および削除を実行する既定の [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] ランタイムの動作の代わりに使用できる、ストアド プロシージャを割り当てることもできます。 詳細については、「[方法 :更新、挿入、および削除を実行するストアド プロシージャを割り当てる (O/R デザイナー)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)」を参照してください。

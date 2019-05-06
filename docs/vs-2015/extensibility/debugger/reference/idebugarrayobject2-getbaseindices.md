@@ -12,11 +12,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3c10fb65ec698bf9c5c9b7623b29e2f47851afe8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423614"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ int GetBaseIndices (
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
   
 ## <a name="remarks"></a>Remarks  
- 例として、この関数は、次の C# コードで作成された配列の「5」を返します。  
+ 例として、この関数は、次の c# コードで作成された配列の「5」を返します。  
   
 ```  
 int[] lengths = { 12 };  

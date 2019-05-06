@@ -10,12 +10,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd99d223d8071b4f0c10052b0b42c421d2360e2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a6598e2f1a178845b3ad2017716576439185379e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426447"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>ソリューションでのプロジェクトの読み込みの管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
  ソリューション読み込みのマネージャーは、一般に読み込みソリューションを管理するものでは場合、は、VSPackage の一部として実装することができます。 パッケージを追加することで autoload に設定する必要があります、<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>の値は、VSPackage に<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>します。 ソリューション ロードのマネージャーをアクティブにできるし、<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>メソッド。  
   
 > [!NOTE]
->  自動読み込みパッケージの詳細については、次を参照してください。 [Vspackage の読み込み](../extensibility/loading-vspackages.md)します。  
+> 自動読み込みパッケージの詳細については、次を参照してください。 [Vspackage の読み込み](../extensibility/loading-vspackages.md)します。  
   
  Visual Studio で認識、前回ソリューション ロード マネージャーのみを有効にするため負荷マネージャーの全般的なソリューションは自身のアクティブ化する前に既存のロード マネージャーがあるかどうか検出は常に。 ソリューションのサービスに対する GetProperty() を呼び出す場合<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>返します`null`、負荷マネージャーのアクティブなソリューションはありません。 これが null を返さない場合は、オブジェクトは、ソリューション ロードのマネージャーと同じかどうかを確認します。  
   
@@ -114,4 +114,4 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: このメソッドを呼び出すことで、プロジェクトを強制的`guidProjectID`メソッドが戻る前に読み込めません。  
   
 > [!NOTE]
->  . 既定では、必要に応じて、プロジェクトのみを読み込むし、場合は、バック グラウンド読み込みの優先順位が読み込まれて、<xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS>フラグ メソッドに渡されるを明示的に読み込むとマークされているもの以外のすべてのプロジェクトが読み込まれます。
+> . 既定では、必要に応じて、プロジェクトのみを読み込むし、場合は、バック グラウンド読み込みの優先順位が読み込まれて、<xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS>フラグ メソッドに渡されるを明示的に読み込むとマークされているもの以外のすべてのプロジェクトが読み込まれます。

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d629c0049966d0520e0e40d23b0fd41798ccf2b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386979"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>モデル、クラス、およびリレーションシップについて
 ドメイン固有言語 (DSL) は、作成した場合、カスタム プログラム コードと共に、DSL 定義ファイルによって定義されます。 DSL ソリューションのプログラム コードのほとんどは、このファイルから生成されます。
@@ -93,7 +93,7 @@ ms.locfileid: "60045032"
  モデルの保存時を XML 形式でファイルには、埋め込まれた要素は、入れ子、親、シリアル化をカスタマイズしている場合を除き、します。
 
 > [!NOTE]
->  埋め込みは継承とは異なります。 埋め込みリレーションシップの子は、親のプロパティを継承しません。 埋め込みは、モデル要素間のリンクの種類です。 継承、クラス間の関係は、モデル要素間のリンクは作成されません。
+> 埋め込みは継承とは異なります。 埋め込みリレーションシップの子は、親のプロパティを継承しません。 埋め込みは、モデル要素間のリンクの種類です。 継承、クラス間の関係は、モデル要素間のリンクは作成されません。
 
 ### <a name="embedding-rules"></a>ルールの埋め込み
  インスタンス モデル内のすべての要素は、モデルのルートを除く、1 つだけ埋め込みリンクのターゲットにする必要があります。

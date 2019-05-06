@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee9310ff6dff36e09b5d0db356659ada427dd3a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 3d790c7b278d36395c0df5575ed3bc7c381753fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412563"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 このインターフェイスは拡張[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)傍受した例外を処理します。
@@ -50,9 +50,9 @@ IDebugStackFrame3 : IDebugStackFrame2
  例外をインターセプトすることで、デバッガーはデバッグ中のプログラムの状態に変更を加えるし、例外がスローされた時点での実行を再開するユーザーを許可できます。
 
 > [!NOTE]
->  インターセプトの例外は、共通言語ランタイム (CLR) 下で実行しているプログラムでは、マネージ コードでのみ許可されます。
+> インターセプトの例外は、共通言語ランタイム (CLR) 下で実行しているプログラムでは、マネージ コードでのみ許可されます。
 
- デバッグ エンジンを示します"metricExceptions"を設定して例外をインターセプトをサポートしている値の 1 に実行時に使用して、`SetMetric`関数。 詳細については、[デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)を参照してください。
+ デバッグ エンジンを示します"metricExceptions"を設定して例外をインターセプトをサポートしている値の 1 に実行時に使用して、`SetMetric`関数。 詳細については、次を参照してください。[デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)します。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: msdbg.h

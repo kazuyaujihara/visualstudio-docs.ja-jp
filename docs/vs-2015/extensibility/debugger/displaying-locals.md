@@ -11,18 +11,18 @@ ms.assetid: 62264cec-845b-4233-aed7-0b038fa79250
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 29744e3e981c62b5c941cf9e59745913fb329803
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 9cdbba0cfa48792127accc71cba75f8542556d67
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409381"
 ---
 # <a name="displaying-locals"></a>ローカルの表示
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
+> Visual Studio 2015 での式エバリュエーターの実装には、この方法は非推奨とされます。 CLR 式エバリュエーターの実装方法の詳細についてを参照してください[CLR 式エバリュエーター](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)と[マネージ式エバリュエーターのサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)します。  
   
  常に実行では、それを含むメソッドとも呼ばれるメソッドまたは現在のメソッドのコンテキスト内で行われます。 実行が一時停止したときに、Visual Studio は、デバッグ エンジンのローカル変数の一覧を取得するには、(DE) と総称メソッドのローカル変数の引数を呼び出します。 Visual Studio は、これらのローカル変数とその値が表示されます、**ローカル**ウィンドウ。  
   
@@ -31,7 +31,7 @@ ms.locfileid: "59000889"
  DE 呼び出し[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)を取得する、 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)オブジェクトを唯一のローカル変数を返すフィルター処理されの一覧を生成するために列挙される[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)構造体。 各構造体には、名前、種類、およびローカルの値が含まれています。 型と値は、表示に適した、書式設定された文字列として格納されます。 名前、型、および値は通常一緒に表示の 1 つの行で、**ローカル**ウィンドウ。  
   
 > [!NOTE]
->  **[クイック ウォッチ]** と**ウォッチ**windows も同じ形式で表示名、値、および型の変数を表示します。 ただし、これらの値が呼び出すことによって取得[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)の代わりに`IDebugProperty2::EnumChildren`します。  
+> **[クイック ウォッチ]** と**ウォッチ**windows も同じ形式で表示名、値、および型の変数を表示します。 ただし、これらの値が呼び出すことによって取得[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)の代わりに`IDebugProperty2::EnumChildren`します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [ローカルの実装のサンプル](../../extensibility/debugger/sample-implementation-of-locals.md)  

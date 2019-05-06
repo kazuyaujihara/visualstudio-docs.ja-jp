@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 86f4fb8dea97930f717800a14a27740b76eb6c2e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993060"
 ---
 # <a name="iactivescriptprofilercontrol-interface"></a>IActiveScriptProfilerControl インターフェイス
 プロファイリングをサポートするスクリプト エンジンによって実装されます。 通常、実装するオブジェクト、`IActiveScriptProfilerControl`実装も、 [IActiveScript](../../winscript/reference/iactivescript.md)インターフェイス。 この場合を識別するハンドルを取得できます、`IActiveScriptProfilerControl`インターフェイスを呼び出すことによって、`IUnknown::QueryInterface`オブジェクトのメソッド。 インターフェイスは、停止とスクリプト エンジンのプロファイリングを開始するために必要なメソッドを提供します。  

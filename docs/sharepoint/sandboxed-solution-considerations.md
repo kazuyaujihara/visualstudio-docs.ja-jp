@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c31fe758d9c1a9a99fb71144f93c7145ea466ad0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435443"
 ---
 # <a name="sandboxed-solution-considerations"></a>サンド ボックス ソリューションの考慮事項
   *サンド ボックス ソリューション*は Microsoft SharePoint 2010 サイト コレクションのユーザーが独自のカスタム コード ソリューションをアップロードできるようにする機能です。 一般的なサンド ボックス ソリューションは、ユーザーが自分の Web パーツをアップロードします。
@@ -34,7 +34,7 @@ ms.locfileid: "56621696"
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] サポートする project のブール型プロパティを通じてサンド ボックス ソリューションと呼ばれる*サンド ボックス ソリューション*します。 このプロパティは、プロジェクトで、いつでも設定できますかでプロジェクトを作成するときに指定が、 **SharePoint カスタマイズ ウィザード**します。
 
 > [!NOTE]
->  変更、*サンド ボックス ソリューション*作成後、プロジェクトのプロパティの検証エラーが発生する可能性があります。
+> 変更、*サンド ボックス ソリューション*作成後、プロジェクトのプロパティの検証エラーが発生する可能性があります。
 
  場合、ソリューションはファーム スコープのソリューションと見なされます、*サンド ボックス ソリューション*プロパティに設定されて**false**ことも、**ファーム ソリューションとして配置**オプション。 ただし、ソリューションは扱いがファーム ソリューションの場合、*サンド ボックス ソリューション*プロパティに設定されて**true**ことも、**サンド ボックス ソリューションとして配置**ウィザードのオプション。
 

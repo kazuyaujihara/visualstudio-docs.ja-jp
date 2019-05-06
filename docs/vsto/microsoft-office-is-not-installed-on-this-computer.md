@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0f75ffccf8aa9e3c6252583ad1cfd87baa37ba94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970319"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>コンピューターに Microsoft Office がインストールされていません
   Visual Studio で、プロジェクトの種類に対応する Microsoft Office アプリケーションが見つかりません。 VSTO アドイン プロジェクトを開発している場合は、デバッグまたはプロジェクトを実行できないことを意味します。 ドキュメント レベルのプロジェクトを作成しようとしている場合、これはプロジェクトを作成できないことを表します。

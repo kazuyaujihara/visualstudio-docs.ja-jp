@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a1fc24d27d079576128cf437fb1ee05c2fc78404
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62f40ffaa4df57672238274ca3a459dd3204bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417083"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "60081555"
 このトピックには、Visual Studio Emulator for Android の使用時に発生する可能性のある問題の解決に役立つ情報が含まれています。
 
 > [!WARNING]
->  エミュレーターがインストールされている場合は、セットアップ プログラムがソフトウェア実行の前提条件をチェックします。 前提条件が存在しない場合、警告が表示されますが、インストールでは必要ありません。
+> エミュレーターがインストールされている場合は、セットアップ プログラムがソフトウェア実行の前提条件をチェックします。 前提条件が存在しない場合、警告が表示されますが、インストールでは必要ありません。
 
  このトピックは、次のセクションで構成されています。
 
@@ -70,7 +70,7 @@ ms.locfileid: "60081555"
  ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
->  このメッセージは、Visual Studio Emulator for Android と Windows Phone エミュレーターの両方に適用されます。 Windows 8.1 と Windows 10 はエミュレーターをサポートします。
+> このメッセージは、Visual Studio Emulator for Android と Windows Phone エミュレーターの両方に適用されます。 Windows 8.1 と Windows 10 はエミュレーターをサポートします。
 
  このメッセージが表示された場合は、 [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) を確認して、エミュレーターを実行できるかどうかを確認します。
 

@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 45f650283c850a9dce3ae71c7eefbff2ef378535
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 773af4469f8d72acb6768e62cd2091c396d36b45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439542"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>n 層データセットに検証を追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ n 層ソリューションに分離されたデータセットへの検証の追
 列と行をユーザー コードに追加することができます、部分クラスを作成する機能を提供するデータセット デザイナー、データセット内のデータ テーブルのイベントを変更します。 N 層ソリューション内のデータセットにコードを追加する方法の詳細については、次を参照してください。 [n 層アプリケーションでのデータセットにコードを追加](../data-tools/add-code-to-datasets-in-n-tier-applications.md)、および[n 層アプリケーションの TableAdapters にコードを追加](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)します。 部分クラスの詳細については、次を参照してください。[方法。クラスを部分クラス (クラス デザイナー) に分割](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)または[部分クラスとメソッド](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)します。  
   
 > [!NOTE]
->  データセットを Tableadapter から分離する場合 (設定して、 **DataSet プロジェクト**プロパティ)、プロジェクト内の既存のデータセット部分クラスが自動的に移動しません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。  
+> データセットを Tableadapter から分離する場合 (設定して、 **DataSet プロジェクト**プロパティ)、プロジェクト内の既存のデータセット部分クラスが自動的に移動しません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。  
   
 > [!NOTE]
->  C# では、<xref:System.Data.DataTable.ColumnChanging> イベントおよび <xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーはデータセット デザイナーにより自動作成されません。 手動でイベント ハンドラーを作成し、基になるイベントのイベント ハンドラーをフックする必要があります。 次の手順では、Visual Basic と c# の両方で必要なイベント ハンドラーを作成する方法について説明します。  
+> C# では、<xref:System.Data.DataTable.ColumnChanging> イベントおよび <xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーはデータセット デザイナーにより自動作成されません。 手動でイベント ハンドラーを作成し、基になるイベントのイベント ハンドラーをフックする必要があります。 次の手順では、Visual Basic と c# の両方で必要なイベント ハンドラーを作成する方法について説明します。  
   
 ## <a name="validatechanges-to-individual-columns"></a>個々 の列に Validatechanges  
  個々の列の値は、<xref:System.Data.DataTable.ColumnChanging> イベントを処理することにより検証します。 <xref:System.Data.DataTable.ColumnChanging>列の値が変更されたときにイベントが発生します。 イベント ハンドラーを作成、<xref:System.Data.DataTable.ColumnChanging>イベントをデータセットに必要な列をダブルクリックします。  
@@ -52,7 +52,7 @@ End Sub
 ```  
   
 > [!NOTE]
->  C# プロジェクトでは、データセットの部分クラスとデータセットの個々のテーブルのみがデータセット デザイナーにより作成されます。 C# では、Visual Basic と同様に <xref:System.Data.DataTable.ColumnChanging> イベントおよび <xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーはデータセット デザイナーにより自動作成されません。 C# プロジェクトでは、イベントを処理し、メソッドは、基になるイベントをフックする方法を手動で作成する必要があります。 次の手順では、必要なイベント ハンドラーを Visual Basic と C# の両方で作成する方法について説明します。  
+> C# プロジェクトでは、データセットの部分クラスとデータセットの個々のテーブルのみがデータセット デザイナーにより作成されます。 C# では、Visual Basic と同様に <xref:System.Data.DataTable.ColumnChanging> イベントおよび <xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーはデータセット デザイナーにより自動作成されません。 C# プロジェクトでは、イベントを処理し、メソッドは、基になるイベントをフックする方法を手動で作成する必要があります。 次の手順では、必要なイベント ハンドラーを Visual Basic と C# の両方で作成する方法について説明します。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -63,7 +63,7 @@ End Sub
 2. 検証する列をダブルクリックします。 この操作によって <xref:System.Data.DataTable.ColumnChanging> イベント ハンドラーが作成されます。  
   
     > [!NOTE]
-    >  データセット デザイナーでは、C# イベントのイベント ハンドラーは自動作成されません。 次のセクションでは、c# でイベントを処理するために必要なコードが含まれます。 `SampleColumnChangingEvent` 作成され、フックし、<xref:System.Data.DataTable.ColumnChanging>内のイベント、<xref:System.Data.DataTable.EndInit%2A>メソッド。  
+    > データセット デザイナーでは、C# イベントのイベント ハンドラーは自動作成されません。 次のセクションでは、c# でイベントを処理するために必要なコードが含まれます。 `SampleColumnChangingEvent` 作成され、フックし、<xref:System.Data.DataTable.ColumnChanging>内のイベント、<xref:System.Data.DataTable.EndInit%2A>メソッド。  
   
 3. アプリケーションの要件を満たすデータが `e.ProposedValue` に含まれていることを検証するコードを追加します。 指定された値が受け入れられない場合、エラーがあることを表すように該当する列を設定します。  
   
@@ -124,7 +124,7 @@ End Sub
      `RowChanging` イベント ハンドラーを使用して部分クラスが作成され、コード エディターが開きます。  
   
     > [!NOTE]
-    >  C# プロジェクトでは、<xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーはデータセット デザイナーにより自動作成されません。 処理するメソッドを作成する必要がある、<xref:System.Data.DataTable.RowChanging>イベントと、テーブルの初期化メソッドでイベントにフックするコードを実行します。  
+    > C# プロジェクトでは、<xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーはデータセット デザイナーにより自動作成されません。 処理するメソッドを作成する必要がある、<xref:System.Data.DataTable.RowChanging>イベントと、テーブルの初期化メソッドでイベントにフックするコードを実行します。  
   
 3. 部分クラスの宣言内にユーザー コードを追加します。  
   

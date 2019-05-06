@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 716e6141d9f5ae76773a47b81ae54f5d7b70a9ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4da615971004cb499fb6bab414517474c2bf6265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445962"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>ストア アプリ用の Visual C++ DLL の単体テスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,7 @@ ms.locfileid: "60104188"
     ```  
   
     > [!TIP]
-    >  合格したテスト内容を変更しないことをお勧めします。 代わりに、新しいテストを追加し、テストが合格するようにコードを更新してから別のテストを追加する、という過程を繰り返します。  
+    > 合格したテスト内容を変更しないことをお勧めします。 代わりに、新しいテストを追加し、テストが合格するようにコードを更新してから別のテストを追加する、という過程を繰り返します。  
     >   
     >  ユーザーが要件を変更したら、正しくなくなったテストを無効にします。 新しいテストを作成し、一度に 1 つずつ、同じ増分方式で処理するようにします。  
   
@@ -231,7 +231,7 @@ ms.locfileid: "60104188"
      ![RangeTest 失敗](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  各テストが記述した後すぐに失敗することを確認します。 これは、絶対に失敗しないテストを記述するという簡単なミスを避けることに役立ちます。  
+    > 各テストが記述した後すぐに失敗することを確認します。 これは、絶対に失敗しないテストを記述するという簡単なミスを避けることに役立ちます。  
   
 4. 新しいテストが成功するように、テスト対象のコードを増やします。 **RooterLib.cpp** に次のコードを追加します。  
   
@@ -259,7 +259,7 @@ ms.locfileid: "60104188"
      両方のテストが合格します。  
   
 > [!TIP]
->  一度に 1 つのテストを追加してコードを開発します。 各反復処理の後にすべてのテストが合格することを確認します。  
+> 一度に 1 つのテストを追加してコードを開発します。 各反復処理の後にすべてのテストが合格することを確認します。  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> 失敗したテストをデバッグする  
   
@@ -346,6 +346,6 @@ ms.locfileid: "60104188"
 2. **[すべて実行]** をクリックして、リファクタリングされたメソッドをテストし、回帰が生じていないことを確認します。  
   
     > [!TIP]
-    >  安定した一連の適切な単体テストを実行することで、コードを変更したときにバグが生じていないことを確信できます。  
+    > 安定した一連の適切な単体テストを実行することで、コードを変更したときにバグが生じていないことを確信できます。  
     >   
     >  常に他の変更とは別にリファクタリングしてください。

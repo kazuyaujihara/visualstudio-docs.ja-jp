@@ -10,12 +10,12 @@ ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7c7b3641a6c9fbc680f4a902b2f0e5d7bf331401
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b3208230b438eb52c68ef5709cbb0d6628b60ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430161"
 ---
 # <a name="web-project-essentials"></a>Web プロジェクトの基本情報
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Web プロジェクトでは、Web アプリケーションを作成します。
 - Web プロジェクトのソリューション ファイルは、Web サイト自体から個別に配置されています。 既定では、ソリューションのファイルは、\Documents and Settings\\*YourAccount*\My Documents\\*\<Visual Studio ### >* \Projects\\ *YourWebSite*します。  
   
     > [!NOTE]
-    >  Web サイトとソリューション ファイルを保持する場合だけが移動をもう一度開きます。  
+    > Web サイトとソリューション ファイルを保持する場合だけが移動をもう一度開きます。  
   
 - Visual Studio でソリューション ファイルを持たない Web サイトを開くと、その新しいソリューション ファイルが自動的に生成します。  
   

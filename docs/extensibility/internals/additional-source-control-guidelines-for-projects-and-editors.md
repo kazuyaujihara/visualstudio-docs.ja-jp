@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3566709819d2023dfd6e38e40f88a454de83e3e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861740"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>プロジェクトとエディターの追加のソース制御のガイドライン
 プロジェクトとエディター ソース管理をサポートするために従う必要があるガイドラインを数多くあります。
@@ -23,7 +23,7 @@ ms.locfileid: "56626103"
 ## <a name="guidelines"></a>ガイドライン
  プロジェクトまたはエディターでは、次をソース管理をサポートするためにもを実行する必要があります。
 
-|区分|Project|エディター|説明|
+|区分|プロジェクト|エディター|説明|
 |----------|-------------|------------|-------------|
 |ファイルのプライベート コピー|x||環境には、ファイルのプライベート コピーがサポートされています。 これは、プロジェクトに参加している各ユーザーにそのプロジェクト内のファイルの自分独自のプライベート コピーします。|
 |ANSI または Unicode の永続化|x|x|永続化コードを記述する場合は、ほとんどのソース管理プログラムは、Unicode を現在サポートしていないため、ANSI 形式でファイルを永続化します。|

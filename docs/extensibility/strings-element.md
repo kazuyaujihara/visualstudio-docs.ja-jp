@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: de2ed5d9c757d9082cd06c2aae5a8e51b0865714
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432383"
 ---
 # <a name="strings-element"></a>文字列要素
 文字列要素を含める必要がありますが、少なくとも**ButtonText**子要素。 その他のすべての子要素は省略可能です。 などの無効な XML 文字 '&' と '<' のエンティティとしてコーディングする必要があります ('&amp;'と'&lt;' など)。
@@ -39,7 +39,7 @@ ms.locfileid: "56699406"
 
 |属性|説明|
 |---------------|-----------------|
-|language|任意。 Language ="."です。|
+|language|省略可能です。 Language ="."です。|
 
 ### <a name="child-elements"></a>子要素
 

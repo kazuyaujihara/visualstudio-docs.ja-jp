@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 165ad365ea094a9f0b5771490e14e889160f3f96
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58973539"
@@ -39,7 +39,7 @@ ms.locfileid: "58973539"
  このルールでは、型が派生型でオーバーライド可能な機能を備えていないため、静的メンバーのみを含む型でを継承するように設計しないことを前提としています。 継承を意図していない型をマークする必要があります、`sealed`基本データ型としての使用を禁止する修飾子。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、マークの種類は`sealed`します。 対象としている場合[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]型としてマークする方は、2.0 またはそれ以前`static`します。 この方法でクラスが作成されていることを防ぐために、プライベート コンス トラクターを宣言する必要があります。
+ このルールの違反を修正するには、マークの種類は`sealed`します。 対象としている場合[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]型としてマークする方は、2.0 またはそれ以前`static`します。 この方法でクラスが作成されていることを防ぐために、プライベート コンストラクターを宣言する必要があります。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  型が継承するように設計する場合にのみ、このルールから警告を抑制します。 ない場合、`sealed`修飾子が型が基本データ型として便利なことを示します。
@@ -63,4 +63,4 @@ ms.locfileid: "58973539"
  [!code-csharp[FxCop.Design.StaticMembersFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.StaticMembersFixed/cs/FxCop.Design.StaticMembersFixed.cs#1)]
 
 ## <a name="related-rules"></a>関連規則
- [CA 1053:スタティック ホルダー型には、コンス トラクターはありません。](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+ [CA 1053:スタティック ホルダー型には、コンストラクターはありません。](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)

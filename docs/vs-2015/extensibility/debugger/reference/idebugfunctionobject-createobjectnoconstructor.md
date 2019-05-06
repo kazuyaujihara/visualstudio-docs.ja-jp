@@ -14,7 +14,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0ea00035eb220ccd08590ceaea6db98944f4657a
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58977007"
@@ -22,7 +22,7 @@ ms.locfileid: "58977007"
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-なしのコンス トラクターを持つオブジェクトを作成します。  
+なしのコンストラクターを持つオブジェクトを作成します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -51,9 +51,9 @@ int CreateObjectNoConstructor(
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。  
   
 ## <a name="remarks"></a>Remarks  
- ある複合型 (つまり、コンス トラクターは必要ありません)、関数のパラメーターによって表される、構造体のインスタンスを表すオブジェクトを作成するには、このメソッドを呼び出す、 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)インターフェイス。  
+ ある複合型 (つまり、コンストラクターは必要ありません)、関数のパラメーターによって表される、構造体のインスタンスを表すオブジェクトを作成するには、このメソッドを呼び出す、 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)インターフェイス。  
   
- オブジェクトのパラメーターは、コンス トラクターを必要とする場合、 [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)メソッド。  
+ オブジェクトのパラメーターは、コンストラクターを必要とする場合、 [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)メソッド。  
   
 ## <a name="see-also"></a>関連項目  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

@@ -8,12 +8,12 @@ ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1da992ebdb5c3d4e0381cdc388dcf6ad5d2af66c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88a6266a3f5910def0bf5041a37f89c2b3d67416
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414467"
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Visual Studio SDK をインストールします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
  Visual Studio のインストールに VSSDK を含める場合は、カスタム インストールを実行する必要があります。  
   
 > [!NOTE]
->  実行可能ファイルのインストールで、Visual Studio SDK と呼びます**Visual Studio Extensibility Tools**します。  
+> 実行可能ファイルのインストールで、Visual Studio SDK と呼びます**Visual Studio Extensibility Tools**します。  
   
 1. Visual Studio 2015 のインストールを開始します。 Visual Studio Express 以外の任意のエディションをインストールすることができます。  
   
