@@ -1,7 +1,0 @@
-# [Python](getting-started-with-python.md)
-## [PTVS の使用を開始する: Visual Studio の設定](getting-started-with-ptvs-setting-up-visual-studio.md)
-## [PTVS の使用を開始する: コーディングの開始 (プロジェクト)](getting-started-with-ptvs-start-coding-projects.md)
-## [PTVS の使用を開始する: コードの編集](getting-started-with-ptvs-editing-code.md)
-## [PTVS の使用を開始する: デバッグ](getting-started-with-ptvs-debugging.md)
-## [PTVS の使用を開始する: 対話型 Python](getting-started-with-ptvs-interactive-python.md)
-## [PTVS の使用を開始する: Azure での Web サイトの構築](getting-started-with-ptvs-building-a-website-in-azure.md)
