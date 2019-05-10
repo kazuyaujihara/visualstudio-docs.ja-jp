@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16d2b9ae9c446d4c8082a8c35c9e4d1810233b95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f3485aa2e5650345c0b14c6cb8093034043285a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913862"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461011"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 メッセージの種類と理由を指定します。
@@ -47,18 +50,24 @@ public enum enum_MESSAGETYPE { 
 };
 ```
 
-## <a name="members"></a>メンバー
- MT_OUTPUTSTRING では、出力ウィンドウにメッセージを送信することを示します。 これはから相互に排他的な`MT_MESSAGEBOX`します。
+## <a name="fields"></a>フィールド
+ `MT_OUTPUTSTRING`\
+ 出力ウィンドウにメッセージを送信する必要があることを示します。 これはから相互に排他的な`MT_MESSAGEBOX`します。
 
- MT_MESSAGEBOX では、メッセージをメッセージ ボックスに表示することを示します。 これはから相互に排他的な`MT_OUTPUTSTRING`します。
+ `MT_MESSAGEBOX`\
+ メッセージがメッセージ ボックスに表示することを示します。 これはから相互に排他的な`MT_OUTPUTSTRING`します。
 
- メッセージの送信先を分離する MT_TYPE_MASK するマスク値。
+ `MT_TYPE_MASK`\
+ メッセージの送信先を分離するマスク値。
 
- MT_REASON_EXCEPTION では、例外の結果として、メッセージ ボックスが表示されていることを示します。 これはから相互に排他的な`MT_REASON_TRACEPOINT`します。
+ `MT_REASON_EXCEPTION`\
+ 例外の結果として、メッセージ ボックスが表示されていることを示します。 これはから相互に排他的な`MT_REASON_TRACEPOINT`します。
 
- MT_REASON_TRACEPOINT では、トレース ポイントに達した結果として、メッセージ ボックスが表示されていることを示します。 これは、相互に排他的`MT_REASON_EXCEPTION`します。
+ `MT_REASON_TRACEPOINT`\
+ トレース ポイントに達した結果として、メッセージ ボックスが表示されていることを示します。 これは、相互に排他的`MT_REASON_EXCEPTION`します。
 
- 表示されているメッセージの原因を切り分ける MT_REASON_MASK するマスク値。
+ `MT_REASON_MASK`\
+ 表示されているメッセージの原因を分離するマスク値。
 
 ## <a name="remarks"></a>Remarks
  これらの値から返される、 [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)と[GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)メソッド。

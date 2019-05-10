@@ -3,8 +3,9 @@
   expanded: true
   items:
     - name: マネージド コードの品質の分析
-      href: analyzing-managed-code-quality-by-using-code-analysis.md
       items:
+        - name: マネージド コードの品質の分析
+          href: analyzing-managed-code-quality-by-using-code-analysis.md
         - name: マネージド コードに対するコード分析の概要
           href: code-analysis-for-managed-code-overview.md
         - name: '方法: 自動コード分析を有効/無効にする'
@@ -18,37 +19,41 @@
         - name: 'チュートリアル: マネージド コードの分析によるコード障害の検出'
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: SuppressMessage 属性を使用した警告の抑制
-          href: suppress-warnings-by-using-the-suppressmessage-attribute.md
           items:
+            - name: SuppressMessage 属性を使用した警告の抑制
+              href: suppress-warnings-by-using-the-suppressmessage-attribute.md
             - name: ソース内抑制の概要
               href: in-source-suppression-overview.md
             - name: '方法: メニュー項目を使用して警告を抑制する'
               href: how-to-suppress-warnings-by-using-the-menu-item.md
-        - name: '方法: 生成されたコードに対する警告を抑制する'
-          href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: '方法: コード分析辞書のカスタマイズ'
-          href: how-to-customize-the-code-analysis-dictionary.md
-        - name: 匿名メソッドとコード分析
-          href: anonymous-methods-and-code-analysis.md
-        - name: '方法: マネージド コードの障害を表示する'
-          href: how-to-view-managed-code-defects.md
-        - name: '方法: マネージド コードの障害に対する作業項目を作成する'
-          href: how-to-create-a-work-item-for-a-managed-code-defect.md
-        - name: マネージド コードの警告に対応するコードの解析
-          href: code-analysis-for-managed-code-warnings.md
-          items:
-            - name: 警告 (CheckId 別)
-              href: code-analysis-warnings-for-managed-code-by-checkid.md
-            - name: 暗号化警告
-              href: cryptography-warnings.md
+            - name: '方法: 生成されたコードに対する警告を抑制する'
+              href: how-to-suppress-code-analysis-warnings-for-generated-code.md
+            - name: '方法: コード分析辞書のカスタマイズ'
+              href: how-to-customize-the-code-analysis-dictionary.md
+            - name: 匿名メソッドとコード分析
+              href: anonymous-methods-and-code-analysis.md
+            - name: '方法: マネージド コードの障害を表示する'
+              href: how-to-view-managed-code-defects.md
+            - name: '方法: マネージド コードの障害に対する作業項目を作成する'
+              href: how-to-create-a-work-item-for-a-managed-code-defect.md
+            - name: マネージド コードの警告に対応するコードの解析
               items:
-                - name: 'CA5350:脆弱な暗号アルゴリズムを使用しないでください'
-                  href: ca5350-do-not-use-weak-cryptographic-algorithms.md
-                - name: CA5351 破られた暗号アルゴリズムを使用しないでください
-                  href: ca5351-do-not-use-broken-cryptographic-algorithms.md
+                - name: マネージド コードの警告に対応するコードの解析
+                  href: code-analysis-for-managed-code-warnings.md
+                - name: 警告 (CheckId 別)
+                  href: code-analysis-warnings-for-managed-code-by-checkid.md
+                - name: 暗号化警告
+                  items:
+                    - name: 暗号化警告
+                      href: cryptography-warnings.md
+                    - name: 'CA5350:脆弱な暗号アルゴリズムを使用しないでください'
+                      href: ca5350-do-not-use-weak-cryptographic-algorithms.md
+                    - name: CA5351 破られた暗号アルゴリズムを使用しないでください
+                      href: ca5351-do-not-use-broken-cryptographic-algorithms.md
             - name: デザイン上の警告
-              href: design-warnings.md
               items:
+                - name: デザイン上の警告
+                  href: design-warnings.md
                 - name: 'CA1000:ジェネリック型の静的メンバーを宣言しません'
                   href: ca1000-do-not-declare-static-members-on-generic-types.md
                 - name: 'CA1001:破棄可能なフィールドを所有する型は、破棄可能でなければなりません'
@@ -174,8 +179,9 @@
                 - name: 'CA2210:アセンブリには有効な厳密な名前が必要です'
                   href: ca2210-assemblies-should-have-valid-strong-names.md
             - name: グローバリゼーションの警告
-              href: globalization-warnings.md
               items:
+                - name: グローバリゼーションの警告
+                  href: globalization-warnings.md
                 - name: 'CA1300:MessageBoxOption を指定します'
                   href: ca1300-specify-messageboxoptions.md
                 - name: 'CA1301:重複するアクセラレータを使用しません'
@@ -199,8 +205,9 @@
                 - name: 'CA2101:P/Invoke 文字列引数に対してマーシャリングを指定します'
                   href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
             - name: 相互運用性に関する警告
-              href: interoperability-warnings.md
               items:
+                - name: 相互運用性に関する警告
+                  href: interoperability-warnings.md
                 - name: 'CA1400:P/Invoke エントリ ポイントは存在しなければなりません'
                   href: ca1400-p-invoke-entry-points-should-exist.md
                 - name: 'CA1401:P/Invoke は参照可能であることはできません'
@@ -233,368 +240,380 @@
                   href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
                 - name: 'CA1415:P/Invoke を正しく宣言します'
                   href: ca1415-declare-p-invokes-correctly.md
-            - name: 保守性に関する警告
-              href: maintainability-warnings.md
-              items:
-                - name: 'CA1500:変数名はフィールド名と同一にすることはできません'
-                  href: ca1500-variable-names-should-not-match-field-names.md
-                - name: 'CA1501:継承を使用しすぎないでください'
-                  href: ca1501-avoid-excessive-inheritance.md
-                - name: 'CA1502:メソッドの実装を複雑にしすぎないでください'
-                  href: ca1502-avoid-excessive-complexity.md
-                - name: 'CA1504:紛らわしいフィールド名を確認します'
-                  href: ca1504-review-misleading-field-names.md
-                - name: 'CA1505:メンテナンスできないコードを使用しないでください'
-                  href: ca1505-avoid-unmaintainable-code.md
-                - name: 'CA1506:クラス結合度を大きくしすぎないでください'
-                  href: ca1506-avoid-excessive-class-coupling.md
-            - name: モビリティに関する警告
-              href: mobility-warnings.md
-              items:
-                - name: 'CA1600:アイドル状態のプロセス優先度を使用しません'
-                  href: ca1600-do-not-use-idle-process-priority.md
-                - name: 'CA1601:電源の状態の変更を妨げるタイマーを使用しません'
-                  href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
-            - name: 名前付けに関する警告
-              href: naming-warnings.md
-              items:
-                - name: 'CA1700:列挙型値に ''Reserved'' という名前を指定しません'
-                  href: ca1700-do-not-name-enum-values-reserved.md
-                - name: 'CA1701:リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません'
-                  href: ca1701-resource-string-compound-words-should-be-cased-correctly.md
-                - name: 'CA1702:複合語では、大文字と小文字が正しく区別されなければなりません'
-                  href: ca1702-compound-words-should-be-cased-correctly.md
-                - name: 'CA1703:リソース文字列は正しく入力されなければなりません'
-                  href: ca1703-resource-strings-should-be-spelled-correctly.md
-                - name: 'CA1704:識別子は正しく入力されなければなりません'
-                  href: ca1704-identifiers-should-be-spelled-correctly.md
-                - name: 'CA1707:識別子はアンダースコアを含むことはできません'
-                  href: ca1707-identifiers-should-not-contain-underscores.md
-                - name: 'CA1708:識別子は、大文字と小文字の区別以外にも相違していなければなりません'
-                  href: ca1708-identifiers-should-differ-by-more-than-case.md
-                - name: 'CA1709:識別子では、大文字と小文字が正しく区別されなければなりません'
-                  href: ca1709-identifiers-should-be-cased-correctly.md
-                - name: 'CA1710:識別子は、正しいサフィックスを含んでいなければなりません'
-                  href: ca1710-identifiers-should-have-correct-suffix.md
-                - name: 'CA1711:識別子は、不適切なサフィックスを含むことはできません'
-                  href: ca1711-identifiers-should-not-have-incorrect-suffix.md
-                - name: 'CA1712:列挙型値を型名のプレフィックスにしません'
-                  href: ca1712-do-not-prefix-enum-values-with-type-name.md
-                - name: 'CA1713:イベントは、before または after プレフィックスを含むことはできません'
-                  href: ca1713-events-should-not-have-before-or-after-prefix.md
-                - name: 'CA1714:フラグ列挙型は、複数形の名前を含んでいなければなりません'
-                  href: ca1714-flags-enums-should-have-plural-names.md
-                - name: 'CA1715:識別子は正しいプレフィックスを含んでいなければなりません'
-                  href: ca1715-identifiers-should-have-correct-prefix.md
-                - name: 'CA1716:識別子はキーワードと同一にすることはできません'
-                  href: ca1716-identifiers-should-not-match-keywords.md
-                - name: 'CA1717:FlagsAttribute 列挙型のみが複数形の名前を含んでいなければなりません'
-                  href: ca1717-only-flagsattribute-enums-should-have-plural-names.md
-                - name: 'CA1719:パラメーター名はメンバー名と同一にすることはできません'
-                  href: ca1719-parameter-names-should-not-match-member-names.md
-                - name: 'CA1720:識別子には型名を含めないでください'
-                  href: ca1720-identifiers-should-not-contain-type-names.md
-                - name: 'CA1721:プロパティ名は get メソッドと同一にすることはできません'
-                  href: ca1721-property-names-should-not-match-get-methods.md
-                - name: 'CA1722:識別子は不適切なプレフィックスを含むことはできません'
-                  href: ca1722-identifiers-should-not-have-incorrect-prefix.md
-                - name: 'CA1725:パラメーター名は基本宣言と同一でなければなりません'
-                  href: ca1725-parameter-names-should-match-base-declaration.md
-                - name: 'CA1724:型名は名前空間と同一にすることはできません'
-                  href: ca1724-type-names-should-not-match-namespaces.md
-                - name: 'CA1726:適切な用語を使用します'
-                  href: ca1726-use-preferred-terms.md
-            - name: パフォーマンスに関する警告
-              href: performance-warnings.md
-              items:
-                - name: 'CA1800:不必要にキャストしません'
-                  href: ca1800-do-not-cast-unnecessarily.md
-                - name: 'CA1802:適切な場所にリテラルを使用します'
-                  href: ca1802-use-literals-where-appropriate.md
-                - name: 'CA1804:使用されていないローカルを削除します'
-                  href: ca1804-remove-unused-locals.md
-                - name: 'CA1809:ローカルを使用しすぎないでください'
-                  href: ca1809-avoid-excessive-locals.md
-                - name: 'CA1810:参照型の静的フィールドをインラインで初期化します'
-                  href: ca1810-initialize-reference-type-static-fields-inline.md
-                - name: 'CA1811:呼び出されていないプライベート コードを使用しません'
-                  href: ca1811-avoid-uncalled-private-code.md
-                - name: 'CA1812:インスタンス化されていない内部クラスを使用しません'
-                  href: ca1812-avoid-uninstantiated-internal-classes.md
-                - name: 'CA1813:アンシールド属性を使用しません'
-                  href: ca1813-avoid-unsealed-attributes.md
-                - name: 'CA1814:複数次元の配列ではなくジャグ配列を使用します'
-                  href: ca1814-prefer-jagged-arrays-over-multidimensional.md
-                - name: 'CA1815:equals および operator equals を値型でオーバーライドします'
-                  href: ca1815-override-equals-and-operator-equals-on-value-types.md
-                - name: 'CA1819:プロパティは、配列を返すことはできません'
-                  href: ca1819-properties-should-not-return-arrays.md
-                - name: 'CA1820:文字列の長さを使用して空の文字列をテストします'
-                  href: ca1820-test-for-empty-strings-using-string-length.md
-                - name: 'CA1821:空のファイナライザーを削除します'
-                  href: ca1821-remove-empty-finalizers.md
-                - name: 'CA1822:メンバーを static に設定します'
-                  href: ca1822-mark-members-as-static.md
-                - name: 'CA1823:使用されていないプライベート フィールドを使用しません'
-                  href: ca1823-avoid-unused-private-fields.md
-                - name: 'CA1824:アセンブリを NeutralResourcesLanguageAttribute に設定します'
-                  href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-            - name: 移植性に関する警告
-              href: portability-warnings.md
-              items:
-                - name: 'CA1900:値型フィールドはポータブルでなければなりません'
-                  href: ca1900-value-type-fields-should-be-portable.md
-                - name: 'CA1901:P/Invoke 宣言はポータブルでなければなりません'
-                  href: ca1901-p-invoke-declarations-should-be-portable.md
-                - name: 'CA1903:対象のフレームワークから API のみを使用します'
-                  href: ca1903-use-only-api-from-targeted-framework.md
-            - name: 信頼性に関する警告
-              href: reliability-warnings.md
-              items:
-                - name: 'CA2000:スコープを失う前にオブジェクトを破棄'
-                  href: ca2000-dispose-objects-before-losing-scope.md
-                - name: 'CA2001:問題が発生する可能性のあるメソッドは呼び出しません'
-                  href: ca2001-avoid-calling-problematic-methods.md
-                - name: 'CA2002:弱い ID を伴うオブジェクト上でロックしません'
-                  href: ca2002-do-not-lock-on-objects-with-weak-identity.md
-                - name: 'CA2003:ファイバーをスレッドとして扱いません'
-                  href: ca2003-do-not-treat-fibers-as-threads.md
-                - name: 'CA2004:GC.KeepAlive への呼び出しを削除します'
-                  href: ca2004-remove-calls-to-gc-keepalive.md
-                - name: 'CA2006:SafeHandle を使用して、ネイティブ リソースを要約します'
-                  href: ca2006-use-safehandle-to-encapsulate-native-resources.md
-            - name: セキュリティの警告
-              href: security-warnings.md
-              items:
-                - name: 'CA2100:SQL クエリのセキュリティ脆弱性を確認'
-                  href: ca2100-review-sql-queries-for-security-vulnerabilities.md
-                - name: 'CA2102:汎用ハンドラーの CLSCompliant でない例外をキャッチします'
-                  href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
-                - name: 'CA2103:命令型のセキュリティを確認します'
-                  href: ca2103-review-imperative-security.md
-                - name: 'CA2104:読み取り専用の変更可能な参照型を宣言しません'
-                  href: ca2104-do-not-declare-read-only-mutable-reference-types.md
-                - name: 'CA2105:配列フィールドを読み取り専用にすることはできません'
-                  href: ca2105-array-fields-should-not-be-read-only.md
-                - name: 'CA2106:アサートをセキュリティで保護します'
-                  href: ca2106-secure-asserts.md
-                - name: 'CA2107:拒否および許可のみの使用を確認します'
-                  href: ca2107-review-deny-and-permit-only-usage.md
-                - name: 'CA2108:値型での宣言セキュリティを確認します'
-                  href: ca2108-review-declarative-security-on-value-types.md
-                - name: 'CA2109:表示するイベント ハンドラーを確認します'
-                  href: ca2109-review-visible-event-handlers.md
-                - name: 'CA2111:ポインターは参照可能にすることはできません'
-                  href: ca2111-pointers-should-not-be-visible.md
-                - name: 'CA2112:セキュリティで保護された型はフィールドを公開してはなりません'
-                  href: ca2112-secured-types-should-not-expose-fields.md
-                - name: 'CA2114:メソッド セキュリティは型のスーパーセットでなければなりません'
-                  href: ca2114-method-security-should-be-a-superset-of-type.md
-                - name: 'CA2115:ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します'
-                  href: ca2115-call-gc-keepalive-when-using-native-resources.md
-                - name: 'CA2116:APTCA メソッドは APTCA メソッドのみを呼び出すことができます'
-                  href: ca2116-aptca-methods-should-only-call-aptca-methods.md
-                - name: 'CA2117:APTCA 型は APTCA 基本型のみを拡張することができます'
-                  href: ca2117-aptca-types-should-only-extend-aptca-base-types.md
-                - name: 'CA2118:SuppressUnmanagedCodeSecurityAttribute の使用法を確認してください'
-                  href: ca2118-review-suppressunmanagedcodesecurityattribute-usage.md
-                - name: 'CA2119:プライベート インターフェイスを満たすメソッドをシールします'
-                  href: ca2119-seal-methods-that-satisfy-private-interfaces.md
-                - name: 'CA2120:シリアル化コンストラクターをセキュリティで保護します'
-                  href: ca2120-secure-serialization-constructors.md
-                - name: 'CA2121:静的コンストラクターはプライベートでなければなりません'
-                  href: ca2121-static-constructors-should-be-private.md
-                - name: 'CA2122:リンク要求を含むメソッドを間接的に公開しません'
-                  href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
-                - name: 'CA2123:オーバーライドのリンク要求はベースと同一でなければなりません'
-                  href: ca2123-override-link-demands-should-be-identical-to-base.md
-                - name: 'CA2124:脆弱性のある finally 句を外側の try でラップします'
-                  href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
-                - name: 'CA2126:型のリンク要求には継承要求が必要です'
-                  href: ca2126-type-link-demands-require-inheritance-demands.md
-                - name: 'CA2130:セキュリティ上重要な定数は透過的である必要がある'
-                  href: ca2130-security-critical-constants-should-be-transparent.md
-                - name: 'CA2131:セキュリティ上重要な型は型等価性に参加してはならない'
-                  href: ca2131-security-critical-types-may-not-participate-in-type-equivalence.md
-                - name: 'CA2132:既定のコンストラクターは、基本型の既定コンストラクターと同程度以上、重要であることが必要'
-                  href: ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md
-                - name: 'CA2133:デリゲートは透過性の整合がとれたメソッドにバインドする必要がある'
-                  href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
-                - name: 'CA2134:メソッドは、基本メソッドをオーバーライドしている場合、透過性の整合性を保つ必要がある'
-                  href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
-                - name: 'CA2135:レベル 2 のアセンブリは LinkDemand を含んではならない'
-                  href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
-                - name: 'CA2136:メンバーには、透過性注釈の競合があってはならない'
-                  href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
-                - name: 'CA2137:透過的メソッドは、検証可能な IL のみを含まなければならない'
-                  href: ca2137-transparent-methods-must-contain-only-verifiable-il.md
-                - name: 'CA2138:透過的メソッドは、SuppressUnmanagedCodeSecurity 属性を持つメソッドを呼び出してはならない'
-                  href: ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md
-                - name: 'CA2139:透過的メソッドは、HandleProcessCorruptingExceptions 属性を使用してはならない'
-                  href: ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md
-                - name: 'CA2140:透過的コードは、セキュリティ上重要な項目を参照してはならない'
-                  href: ca2140-transparent-code-must-not-reference-security-critical-items.md
-                - name: 'CA2141: 透過的メソッドは、LinkDemand を満たしてはならない'
-                  href: ca2141-transparent-methods-must-not-satisfy-linkdemands.md
-                - name: 'CA2142:透過的コードは、LinkDemand を使用して保護されてはならない'
-                  href: ca2142-transparent-code-should-not-be-protected-with-linkdemands.md
-                - name: 'CA2143:透過的メソッドは、セキュリティ確認要求を使用してはならない'
-                  href: ca2143-transparent-methods-should-not-use-security-demands.md
-                - name: 'CA2144:透過的コードは、バイト配列からアセンブリを読み込んではならない'
-                  href: ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md
-                - name: 'CA2145:透過的メソッドを SuppressUnmanagedCodeSecurityAttribute で修飾してはならない'
-                  href: ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md
-                - name: 'CA2146:型は、基本型およびインターフェイスと同程度以上、重要でなければならない'
-                  href: ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md
-                - name: 'CA2147:透過コードは、セキュリティ アサートを使用してはならない'
-                  href: ca2147-transparent-methods-may-not-use-security-asserts.md
-                - name: 'CA2149:透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない'
-                  href: ca2149-transparent-methods-must-not-call-into-native-code.md
-                - name: 'CA2151:クリティカル型のフィールドはセキュリティ クリティカルである必要があります'
-                  href: ca2151-fields-with-critical-types-should-be-security-critical.md
-                - name: CA5122 P/Invoke 宣言をセーフ クリティカルにしないでください
-                  href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
-                - name: 'CA2153:破損状態例外の処理を回避する'
-                  href: ca2153-avoid-handling-corrupted-state-exceptions.md
-                - name: 'CA3075:安全ではない DTD の処理'
-                  href: ca3075-insecure-dtd-processing.md
-                - name: 'CA3076:安全ではない XSLT スクリプトの実行'
-                  href: ca3076-insecure-xslt-script-execution.md
-                - name: 'CA3077:API のデザイン、XML ドキュメント、および XML テキスト リーダーでの安全ではない処理'
-                  href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
-            - name: 使用法に関する警告
-              href: usage-warnings.md
-              items:
-                - name: 'CA1801:使用されていないパラメーターの確認'
-                  href: ca1801-review-unused-parameters.md
-                - name: 'CA1806:メソッドの結果を無視しない'
-                  href: ca1806-do-not-ignore-method-results.md
-                - name: 'CA1816:GC.SuppressFinalize を正しく呼び出します'
-                  href: ca1816-call-gc-suppressfinalize-correctly.md
-                - name: 'CA2200:スタック詳細を保持するために再度スローします'
-                  href: ca2200-rethrow-to-preserve-stack-details.md
-                - name: 'CA2201:予約された例外の種類を発生させません'
-                  href: ca2201-do-not-raise-reserved-exception-types.md
-                - name: 'CA2202:オブジェクトを複数回破棄しない'
-                  href: ca2202-do-not-dispose-objects-multiple-times.md
-                - name: 'CA2204:リテラルに正しいスペルを要求'
-                  href: ca2204-literals-should-be-spelled-correctly.md
-                - name: 'CA2205:Win32 API に相当するマネージド API を使用します'
-                  href: ca2205-use-managed-equivalents-of-win32-api.md
-                - name: 'CA2207:値型のスタティック フィールドのインラインを初期化します'
-                  href: ca2207-initialize-value-type-static-fields-inline.md
-                - name: 'CA2208:引数の例外を正しくインスタンス化します'
-                  href: ca2208-instantiate-argument-exceptions-correctly.md
-                - name: 'CA2211:非定数フィールドは表示されません'
-                  href: ca2211-non-constant-fields-should-not-be-visible.md
-                - name: 'CA2212:サービス コンポーネントを WebMethod に設定しません'
-                  href: ca2212-do-not-mark-serviced-components-with-webmethod.md
-                - name: 'CA2213:破棄可能なフィールドは破棄されなければなりません'
-                  href: ca2213-disposable-fields-should-be-disposed.md
-                - name: 'CA2214:コンストラクターのオーバーライド可能なメソッドを呼び出しません'
-                  href: ca2214-do-not-call-overridable-methods-in-constructors.md
-                - name: 'CA2215:Dispose メソッドが基底クラスの Dispose を呼び出す必要があります'
-                  href: ca2215-dispose-methods-should-call-base-class-dispose.md
-                - name: 'CA2216:破棄可能な型はファイナライザーを宣言しなければなりません'
-                  href: ca2216-disposable-types-should-declare-finalizer.md
-                - name: 'CA2217:列挙型を FlagsAttribute に設定しません'
-                  href: ca2217-do-not-mark-enums-with-flagsattribute.md
-                - name: 'CA2218:オーバーライドする Equals で GetHashCode をオーバーライドします'
-                  href: ca2218-override-gethashcode-on-overriding-equals.md
-                - name: 'CA2219:exception 句に例外を発生させないでください'
-                  href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
-                - name: 'CA2220:ファイナライザーは基底クラスのファイナライザーを呼び出さなければなりません'
-                  href: ca2220-finalizers-should-call-base-class-finalizer.md
-                - name: 'CA2221:ファイナライザーは保護されなければなりません'
-                  href: ca2221-finalizers-should-be-protected.md
-                - name: 'CA2222:継承されたメンバーの参照範囲を縮小しません'
-                  href: ca2222-do-not-decrease-inherited-member-visibility.md
-                - name: 'CA2223:メンバーは、戻り値の型以外にも異なる点がなければなりません'
-                  href: ca2223-members-should-differ-by-more-than-return-type.md
-                - name: 'CA2224:オーバーロードする演算子 equals で Equals をオーバーライドします'
-                  href: ca2224-override-equals-on-overloading-operator-equals.md
-                - name: 'CA2225:演算子オーバーロードには名前付けされた代替が存在します'
-                  href: ca2225-operator-overloads-have-named-alternates.md
-                - name: 'CA2226:演算子は対称型オーバーロードを含まなければなりません'
-                  href: ca2226-operators-should-have-symmetrical-overloads.md
-                - name: 'CA2227:Collection プロパティは読み取り専用でなければなりません'
-                  href: ca2227-collection-properties-should-be-read-only.md
-                - name: 'CA2228:未公開のリソース形式を出荷しません'
-                  href: ca2228-do-not-ship-unreleased-resource-formats.md
-                - name: 'CA2229:シリアル化コンストラクターを実装します'
-                  href: ca2229-implement-serialization-constructors.md
-                - name: 'CA2230:可変引数に対して param を使用します'
-                  href: ca2230-use-params-for-variable-arguments.md
-                - name: 'CA2231:ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします'
-                  href: ca2231-overload-operator-equals-on-overriding-valuetype-equals.md
-                - name: 'CA2232:Windows フォームのエントリ ポイントを STAThread に設定します'
-                  href: ca2232-mark-windows-forms-entry-points-with-stathread.md
-                - name: 'CA2233:操作はオーバーフローできません'
-                  href: ca2233-operations-should-not-overflow.md
-                - name: 'CA2234:文字列の代わりに System.Uri オブジェクトを渡します'
-                  href: ca2234-pass-system-uri-objects-instead-of-strings.md
-                - name: 'CA2235:すべてのシリアル化不可能なフィールドを設定します'
-                  href: ca2235-mark-all-non-serializable-fields.md
-                - name: 'CA2236:ISerializable 型で基底クラス メソッドを呼び出します'
-                  href: ca2236-call-base-class-methods-on-iserializable-types.md
-                - name: 'CA2237:ISerializable 型を SerializableAttribute に設定します'
-                  href: ca2237-mark-iserializable-types-with-serializableattribute.md
-                - name: 'CA2238:シリアル化メソッドを正しく実装します'
-                  href: ca2238-implement-serialization-methods-correctly.md
-                - name: 'CA2239:省略可能なフィールドに、逆シリアル化メソッドを指定します'
-                  href: ca2239-provide-deserialization-methods-for-optional-fields.md
-                - name: 'CA2240:ISerializable を正しく実装します'
-                  href: ca2240-implement-iserializable-correctly.md
-                - name: 'CA2241:書式設定メソッドに正しい引数を提供'
-                  href: ca2241-provide-correct-arguments-to-formatting-methods.md
-                - name: 'CA2242:NaN に対して正しくテストします'
-                  href: ca2242-test-for-nan-correctly.md
-                - name: 'CA2243:属性文字列リテラルは、正しく解析する必要があります'
-                  href: ca2243-attribute-string-literals-should-parse-correctly.md
-            - name: コード分析ポリシー エラー
-              href: code-analysis-policy-errors.md
+                - name: 保守性に関する警告
+                  items:
+                    - name: 保守性に関する警告
+                      href: maintainability-warnings.md
+                    - name: 'CA1500:変数名はフィールド名と同一にすることはできません'
+                      href: ca1500-variable-names-should-not-match-field-names.md
+                    - name: 'CA1501:継承を使用しすぎないでください'
+                      href: ca1501-avoid-excessive-inheritance.md
+                    - name: 'CA1502:メソッドの実装を複雑にしすぎないでください'
+                      href: ca1502-avoid-excessive-complexity.md
+                    - name: 'CA1504:紛らわしいフィールド名を確認します'
+                      href: ca1504-review-misleading-field-names.md
+                    - name: 'CA1505:メンテナンスできないコードを使用しないでください'
+                      href: ca1505-avoid-unmaintainable-code.md
+                    - name: 'CA1506:クラス結合度を大きくしすぎないでください'
+                      href: ca1506-avoid-excessive-class-coupling.md
+                    - name: モビリティに関する警告
+                      items:
+                        - name: モビリティに関する警告
+                          href: mobility-warnings.md
+                        - name: 'CA1600:アイドル状態のプロセス優先度を使用しません'
+                          href: ca1600-do-not-use-idle-process-priority.md
+                        - name: 'CA1601:電源の状態の変更を妨げるタイマーを使用しません'
+                          href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
+                    - name: 名前付けに関する警告
+                      items:
+                        - name: 名前付けに関する警告
+                          href: naming-warnings.md
+                        - name: 'CA1700:列挙型値に ''Reserved'' という名前を指定しません'
+                          href: ca1700-do-not-name-enum-values-reserved.md
+                        - name: 'CA1701:リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません'
+                          href: ca1701-resource-string-compound-words-should-be-cased-correctly.md
+                        - name: 'CA1702:複合語では、大文字と小文字が正しく区別されなければなりません'
+                          href: ca1702-compound-words-should-be-cased-correctly.md
+                        - name: 'CA1703:リソース文字列は正しく入力されなければなりません'
+                          href: ca1703-resource-strings-should-be-spelled-correctly.md
+                        - name: 'CA1704:識別子は正しく入力されなければなりません'
+                          href: ca1704-identifiers-should-be-spelled-correctly.md
+                        - name: 'CA1707:識別子はアンダースコアを含むことはできません'
+                          href: ca1707-identifiers-should-not-contain-underscores.md
+                        - name: 'CA1708:識別子は、大文字と小文字の区別以外にも相違していなければなりません'
+                          href: ca1708-identifiers-should-differ-by-more-than-case.md
+                        - name: 'CA1709:識別子では、大文字と小文字が正しく区別されなければなりません'
+                          href: ca1709-identifiers-should-be-cased-correctly.md
+                        - name: 'CA1710:識別子は、正しいサフィックスを含んでいなければなりません'
+                          href: ca1710-identifiers-should-have-correct-suffix.md
+                        - name: 'CA1711:識別子は、不適切なサフィックスを含むことはできません'
+                          href: ca1711-identifiers-should-not-have-incorrect-suffix.md
+                        - name: 'CA1712:列挙型値を型名のプレフィックスにしません'
+                          href: ca1712-do-not-prefix-enum-values-with-type-name.md
+                        - name: 'CA1713:イベントは、before または after プレフィックスを含むことはできません'
+                          href: ca1713-events-should-not-have-before-or-after-prefix.md
+                        - name: 'CA1714:フラグ列挙型は、複数形の名前を含んでいなければなりません'
+                          href: ca1714-flags-enums-should-have-plural-names.md
+                        - name: 'CA1715:識別子は正しいプレフィックスを含んでいなければなりません'
+                          href: ca1715-identifiers-should-have-correct-prefix.md
+                        - name: 'CA1716:識別子はキーワードと同一にすることはできません'
+                          href: ca1716-identifiers-should-not-match-keywords.md
+                        - name: 'CA1717:FlagsAttribute 列挙型のみが複数形の名前を含んでいなければなりません'
+                          href: ca1717-only-flagsattribute-enums-should-have-plural-names.md
+                        - name: 'CA1719:パラメーター名はメンバー名と同一にすることはできません'
+                          href: ca1719-parameter-names-should-not-match-member-names.md
+                        - name: 'CA1720:識別子には型名を含めないでください'
+                          href: ca1720-identifiers-should-not-contain-type-names.md
+                        - name: 'CA1721:プロパティ名は get メソッドと同一にすることはできません'
+                          href: ca1721-property-names-should-not-match-get-methods.md
+                        - name: 'CA1722:識別子は不適切なプレフィックスを含むことはできません'
+                          href: ca1722-identifiers-should-not-have-incorrect-prefix.md
+                        - name: 'CA1725:パラメーター名は基本宣言と同一でなければなりません'
+                          href: ca1725-parameter-names-should-match-base-declaration.md
+                        - name: 'CA1724:型名は名前空間と同一にすることはできません'
+                          href: ca1724-type-names-should-not-match-namespaces.md
+                        - name: 'CA1726:適切な用語を使用します'
+                          href: ca1726-use-preferred-terms.md
+                    - name: パフォーマンスに関する警告
+                      items:
+                        - name: パフォーマンスに関する警告
+                          href: performance-warnings.md
+                        - name: 'CA1800:不必要にキャストしません'
+                          href: ca1800-do-not-cast-unnecessarily.md
+                        - name: 'CA1802:適切な場所にリテラルを使用します'
+                          href: ca1802-use-literals-where-appropriate.md
+                        - name: 'CA1804:使用されていないローカルを削除します'
+                          href: ca1804-remove-unused-locals.md
+                        - name: 'CA1809:ローカルを使用しすぎないでください'
+                          href: ca1809-avoid-excessive-locals.md
+                        - name: 'CA1810:参照型の静的フィールドをインラインで初期化します'
+                          href: ca1810-initialize-reference-type-static-fields-inline.md
+                        - name: 'CA1811:呼び出されていないプライベート コードを使用しません'
+                          href: ca1811-avoid-uncalled-private-code.md
+                        - name: 'CA1812:インスタンス化されていない内部クラスを使用しません'
+                          href: ca1812-avoid-uninstantiated-internal-classes.md
+                        - name: 'CA1813:アンシールド属性を使用しません'
+                          href: ca1813-avoid-unsealed-attributes.md
+                        - name: 'CA1814:複数次元の配列ではなくジャグ配列を使用します'
+                          href: ca1814-prefer-jagged-arrays-over-multidimensional.md
+                        - name: 'CA1815:equals および operator equals を値型でオーバーライドします'
+                          href: ca1815-override-equals-and-operator-equals-on-value-types.md
+                        - name: 'CA1819:プロパティは、配列を返すことはできません'
+                          href: ca1819-properties-should-not-return-arrays.md
+                        - name: 'CA1820:文字列の長さを使用して空の文字列をテストします'
+                          href: ca1820-test-for-empty-strings-using-string-length.md
+                        - name: 'CA1821:空のファイナライザーを削除します'
+                          href: ca1821-remove-empty-finalizers.md
+                        - name: 'CA1822:メンバーを static に設定します'
+                          href: ca1822-mark-members-as-static.md
+                        - name: 'CA1823:使用されていないプライベート フィールドを使用しません'
+                          href: ca1823-avoid-unused-private-fields.md
+                        - name: 'CA1824:アセンブリを NeutralResourcesLanguageAttribute に設定します'
+                          href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                    - name: 移植性に関する警告
+                      items:
+                        - name: 移植性に関する警告
+                          href: portability-warnings.md
+                        - name: 'CA1900:値型フィールドはポータブルでなければなりません'
+                          href: ca1900-value-type-fields-should-be-portable.md
+                        - name: 'CA1901:P/Invoke 宣言はポータブルでなければなりません'
+                          href: ca1901-p-invoke-declarations-should-be-portable.md
+                        - name: 'CA1903:対象のフレームワークから API のみを使用します'
+                          href: ca1903-use-only-api-from-targeted-framework.md
+                    - name: 信頼性に関する警告
+                      items:
+                        - name: 信頼性に関する警告
+                          href: reliability-warnings.md
+                        - name: 'CA2000:スコープを失う前にオブジェクトを破棄'
+                          href: ca2000-dispose-objects-before-losing-scope.md
+                        - name: 'CA2001:問題が発生する可能性のあるメソッドは呼び出しません'
+                          href: ca2001-avoid-calling-problematic-methods.md
+                        - name: 'CA2002:弱い ID を伴うオブジェクト上でロックしません'
+                          href: ca2002-do-not-lock-on-objects-with-weak-identity.md
+                        - name: 'CA2003:ファイバーをスレッドとして扱いません'
+                          href: ca2003-do-not-treat-fibers-as-threads.md
+                        - name: 'CA2004:GC.KeepAlive への呼び出しを削除します'
+                          href: ca2004-remove-calls-to-gc-keepalive.md
+                        - name: 'CA2006:SafeHandle を使用して、ネイティブ リソースを要約します'
+                          href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+                    - name: セキュリティの警告
+                      items:
+                        - name: セキュリティの警告
+                          href: security-warnings.md
+                        - name: 'CA2100:SQL クエリのセキュリティ脆弱性を確認'
+                          href: ca2100-review-sql-queries-for-security-vulnerabilities.md
+                        - name: 'CA2102:汎用ハンドラーの CLSCompliant でない例外をキャッチします'
+                          href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
+                        - name: 'CA2103:命令型のセキュリティを確認します'
+                          href: ca2103-review-imperative-security.md
+                        - name: 'CA2104:読み取り専用の変更可能な参照型を宣言しません'
+                          href: ca2104-do-not-declare-read-only-mutable-reference-types.md
+                        - name: 'CA2105:配列フィールドを読み取り専用にすることはできません'
+                          href: ca2105-array-fields-should-not-be-read-only.md
+                        - name: 'CA2106:アサートをセキュリティで保護します'
+                          href: ca2106-secure-asserts.md
+                        - name: 'CA2107:拒否および許可のみの使用を確認します'
+                          href: ca2107-review-deny-and-permit-only-usage.md
+                        - name: 'CA2108:値型での宣言セキュリティを確認します'
+                          href: ca2108-review-declarative-security-on-value-types.md
+                        - name: 'CA2109:表示するイベント ハンドラーを確認します'
+                          href: ca2109-review-visible-event-handlers.md
+                        - name: 'CA2111:ポインターは参照可能にすることはできません'
+                          href: ca2111-pointers-should-not-be-visible.md
+                        - name: 'CA2112:セキュリティで保護された型はフィールドを公開してはなりません'
+                          href: ca2112-secured-types-should-not-expose-fields.md
+                        - name: 'CA2114:メソッド セキュリティは型のスーパーセットでなければなりません'
+                          href: ca2114-method-security-should-be-a-superset-of-type.md
+                        - name: 'CA2115:ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します'
+                          href: ca2115-call-gc-keepalive-when-using-native-resources.md
+                        - name: 'CA2116:APTCA メソッドは APTCA メソッドのみを呼び出すことができます'
+                          href: ca2116-aptca-methods-should-only-call-aptca-methods.md
+                        - name: 'CA2117:APTCA 型は APTCA 基本型のみを拡張することができます'
+                          href: ca2117-aptca-types-should-only-extend-aptca-base-types.md
+                        - name: 'CA2118:SuppressUnmanagedCodeSecurityAttribute の使用法を確認してください'
+                          href: ca2118-review-suppressunmanagedcodesecurityattribute-usage.md
+                        - name: 'CA2119:プライベート インターフェイスを満たすメソッドをシールします'
+                          href: ca2119-seal-methods-that-satisfy-private-interfaces.md
+                        - name: 'CA2120:シリアル化コンストラクターをセキュリティで保護します'
+                          href: ca2120-secure-serialization-constructors.md
+                        - name: 'CA2121:静的コンストラクターはプライベートでなければなりません'
+                          href: ca2121-static-constructors-should-be-private.md
+                        - name: 'CA2122:リンク要求を含むメソッドを間接的に公開しません'
+                          href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
+                        - name: 'CA2123:オーバーライドのリンク要求はベースと同一でなければなりません'
+                          href: ca2123-override-link-demands-should-be-identical-to-base.md
+                        - name: 'CA2124:脆弱性のある finally 句を外側の try でラップします'
+                          href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
+                        - name: 'CA2126:型のリンク要求には継承要求が必要です'
+                          href: ca2126-type-link-demands-require-inheritance-demands.md
+                        - name: 'CA2130:セキュリティ上重要な定数は透過的である必要がある'
+                          href: ca2130-security-critical-constants-should-be-transparent.md
+                        - name: 'CA2131:セキュリティ上重要な型は型等価性に参加してはならない'
+                          href: ca2131-security-critical-types-may-not-participate-in-type-equivalence.md
+                        - name: 'CA2132:既定のコンストラクターは、基本型の既定コンストラクターと同程度以上、重要であることが必要'
+                          href: ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md
+                        - name: 'CA2133:デリゲートは透過性の整合がとれたメソッドにバインドする必要がある'
+                          href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
+                        - name: 'CA2134:メソッドは、基本メソッドをオーバーライドしている場合、透過性の整合性を保つ必要がある'
+                          href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
+                        - name: 'CA2135:レベル 2 のアセンブリは LinkDemand を含んではならない'
+                          href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
+                        - name: 'CA2136:メンバーには、透過性注釈の競合があってはならない'
+                          href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
+                        - name: 'CA2137:透過的メソッドは、検証可能な IL のみを含まなければならない'
+                          href: ca2137-transparent-methods-must-contain-only-verifiable-il.md
+                        - name: 'CA2138:透過的メソッドは、SuppressUnmanagedCodeSecurity 属性を持つメソッドを呼び出してはならない'
+                          href: ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md
+                        - name: 'CA2139:透過的メソッドは、HandleProcessCorruptingExceptions 属性を使用してはならない'
+                          href: ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md
+                        - name: 'CA2140:透過的コードは、セキュリティ上重要な項目を参照してはならない'
+                          href: ca2140-transparent-code-must-not-reference-security-critical-items.md
+                        - name: 'CA2141: 透過的メソッドは、LinkDemand を満たしてはならない'
+                          href: ca2141-transparent-methods-must-not-satisfy-linkdemands.md
+                        - name: 'CA2142:透過的コードは、LinkDemand を使用して保護されてはならない'
+                          href: ca2142-transparent-code-should-not-be-protected-with-linkdemands.md
+                        - name: 'CA2143:透過的メソッドは、セキュリティ確認要求を使用してはならない'
+                          href: ca2143-transparent-methods-should-not-use-security-demands.md
+                        - name: 'CA2144:透過的コードは、バイト配列からアセンブリを読み込んではならない'
+                          href: ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md
+                        - name: 'CA2145:透過的メソッドを SuppressUnmanagedCodeSecurityAttribute で修飾してはならない'
+                          href: ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md
+                        - name: 'CA2146:型は、基本型およびインターフェイスと同程度以上、重要でなければならない'
+                          href: ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md
+                        - name: 'CA2147:透過コードは、セキュリティ アサートを使用してはならない'
+                          href: ca2147-transparent-methods-may-not-use-security-asserts.md
+                        - name: 'CA2149:透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない'
+                          href: ca2149-transparent-methods-must-not-call-into-native-code.md
+                        - name: 'CA2151:クリティカル型のフィールドはセキュリティ クリティカルである必要があります'
+                          href: ca2151-fields-with-critical-types-should-be-security-critical.md
+                        - name: CA5122 P/Invoke 宣言をセーフ クリティカルにしないでください
+                          href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
+                        - name: 'CA2153:破損状態例外の処理を回避する'
+                          href: ca2153-avoid-handling-corrupted-state-exceptions.md
+                        - name: 'CA3075:安全ではない DTD の処理'
+                          href: ca3075-insecure-dtd-processing.md
+                        - name: 'CA3076:安全ではない XSLT スクリプトの実行'
+                          href: ca3076-insecure-xslt-script-execution.md
+                        - name: 'CA3077:API のデザイン、XML ドキュメント、および XML テキスト リーダーでの安全ではない処理'
+                          href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
+                    - name: 使用法に関する警告
+                      items:
+                        - name: 使用法に関する警告
+                          href: usage-warnings.md
+                        - name: 'CA1801:使用されていないパラメーターの確認'
+                          href: ca1801-review-unused-parameters.md
+                        - name: 'CA1806:メソッドの結果を無視しない'
+                          href: ca1806-do-not-ignore-method-results.md
+                        - name: 'CA1816:GC.SuppressFinalize を正しく呼び出します'
+                          href: ca1816-call-gc-suppressfinalize-correctly.md
+                        - name: 'CA2200:スタック詳細を保持するために再度スローします'
+                          href: ca2200-rethrow-to-preserve-stack-details.md
+                        - name: 'CA2201:予約された例外の種類を発生させません'
+                          href: ca2201-do-not-raise-reserved-exception-types.md
+                        - name: 'CA2202:オブジェクトを複数回破棄しない'
+                          href: ca2202-do-not-dispose-objects-multiple-times.md
+                        - name: 'CA2204:リテラルに正しいスペルを要求'
+                          href: ca2204-literals-should-be-spelled-correctly.md
+                        - name: 'CA2205:Win32 API に相当するマネージド API を使用します'
+                          href: ca2205-use-managed-equivalents-of-win32-api.md
+                        - name: 'CA2207:値型のスタティック フィールドのインラインを初期化します'
+                          href: ca2207-initialize-value-type-static-fields-inline.md
+                        - name: 'CA2208:引数の例外を正しくインスタンス化します'
+                          href: ca2208-instantiate-argument-exceptions-correctly.md
+                        - name: 'CA2211:非定数フィールドは表示されません'
+                          href: ca2211-non-constant-fields-should-not-be-visible.md
+                        - name: 'CA2212:サービス コンポーネントを WebMethod に設定しません'
+                          href: ca2212-do-not-mark-serviced-components-with-webmethod.md
+                        - name: 'CA2213:破棄可能なフィールドは破棄されなければなりません'
+                          href: ca2213-disposable-fields-should-be-disposed.md
+                        - name: 'CA2214:コンストラクターのオーバーライド可能なメソッドを呼び出しません'
+                          href: ca2214-do-not-call-overridable-methods-in-constructors.md
+                        - name: 'CA2215:Dispose メソッドが基底クラスの Dispose を呼び出す必要があります'
+                          href: ca2215-dispose-methods-should-call-base-class-dispose.md
+                        - name: 'CA2216:破棄可能な型はファイナライザーを宣言しなければなりません'
+                          href: ca2216-disposable-types-should-declare-finalizer.md
+                        - name: 'CA2217:列挙型を FlagsAttribute に設定しません'
+                          href: ca2217-do-not-mark-enums-with-flagsattribute.md
+                        - name: 'CA2218:オーバーライドする Equals で GetHashCode をオーバーライドします'
+                          href: ca2218-override-gethashcode-on-overriding-equals.md
+                        - name: 'CA2219:exception 句に例外を発生させないでください'
+                          href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
+                        - name: 'CA2220:ファイナライザーは基底クラスのファイナライザーを呼び出さなければなりません'
+                          href: ca2220-finalizers-should-call-base-class-finalizer.md
+                        - name: 'CA2221:ファイナライザーは保護されなければなりません'
+                          href: ca2221-finalizers-should-be-protected.md
+                        - name: 'CA2222:継承されたメンバーの参照範囲を縮小しません'
+                          href: ca2222-do-not-decrease-inherited-member-visibility.md
+                        - name: 'CA2223:メンバーは、戻り値の型以外にも異なる点がなければなりません'
+                          href: ca2223-members-should-differ-by-more-than-return-type.md
+                        - name: 'CA2224:オーバーロードする演算子 equals で Equals をオーバーライドします'
+                          href: ca2224-override-equals-on-overloading-operator-equals.md
+                        - name: 'CA2225:演算子オーバーロードには名前付けされた代替が存在します'
+                          href: ca2225-operator-overloads-have-named-alternates.md
+                        - name: 'CA2226:演算子は対称型オーバーロードを含まなければなりません'
+                          href: ca2226-operators-should-have-symmetrical-overloads.md
+                        - name: 'CA2227:Collection プロパティは読み取り専用でなければなりません'
+                          href: ca2227-collection-properties-should-be-read-only.md
+                        - name: 'CA2228:未公開のリソース形式を出荷しません'
+                          href: ca2228-do-not-ship-unreleased-resource-formats.md
+                        - name: 'CA2229:シリアル化コンストラクターを実装します'
+                          href: ca2229-implement-serialization-constructors.md
+                        - name: 'CA2230:可変引数に対して param を使用します'
+                          href: ca2230-use-params-for-variable-arguments.md
+                        - name: 'CA2231:ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします'
+                          href: ca2231-overload-operator-equals-on-overriding-valuetype-equals.md
+                        - name: 'CA2232:Windows フォームのエントリ ポイントを STAThread に設定します'
+                          href: ca2232-mark-windows-forms-entry-points-with-stathread.md
+                        - name: 'CA2233:操作はオーバーフローできません'
+                          href: ca2233-operations-should-not-overflow.md
+                        - name: 'CA2234:文字列の代わりに System.Uri オブジェクトを渡します'
+                          href: ca2234-pass-system-uri-objects-instead-of-strings.md
+                        - name: 'CA2235:すべてのシリアル化不可能なフィールドを設定します'
+                          href: ca2235-mark-all-non-serializable-fields.md
+                        - name: 'CA2236:ISerializable 型で基底クラス メソッドを呼び出します'
+                          href: ca2236-call-base-class-methods-on-iserializable-types.md
+                        - name: 'CA2237:ISerializable 型を SerializableAttribute に設定します'
+                          href: ca2237-mark-iserializable-types-with-serializableattribute.md
+                        - name: 'CA2238:シリアル化メソッドを正しく実装します'
+                          href: ca2238-implement-serialization-methods-correctly.md
+                        - name: 'CA2239:省略可能なフィールドに、逆シリアル化メソッドを指定します'
+                          href: ca2239-provide-deserialization-methods-for-optional-fields.md
+                        - name: 'CA2240:ISerializable を正しく実装します'
+                          href: ca2240-implement-iserializable-correctly.md
+                        - name: 'CA2241:書式設定メソッドに正しい引数を提供'
+                          href: ca2241-provide-correct-arguments-to-formatting-methods.md
+                        - name: 'CA2242:NaN に対して正しくテストします'
+                          href: ca2242-test-for-nan-correctly.md
+                        - name: 'CA2243:属性文字列リテラルは、正しく解析する必要があります'
+                          href: ca2243-attribute-string-literals-should-parse-correctly.md
+                - name: コード分析ポリシー エラー
+                  href: code-analysis-policy-errors.md
+- name: C/C++ コードの品質の分析
+  items:
     - name: C/C++ コードの品質の分析
       href: analyzing-c-cpp-code-quality-by-using-code-analysis.md
+    - name: 'クイック スタート:C/C++ のコード分析'
+      href: quick-start-code-analysis-for-c-cpp.md
+    - name: 規則セットを使用した実行対象の C++ 規則の指定
+      href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
+    - name: C++ Core ガイドライン チェッカーの使用
+      href: using-the-cpp-core-guidelines-checkers.md
+    - name: C/C++ のコード分析の概要
+      href: code-analysis-for-c-cpp-overview.md
+    - name: '方法: C/C++ プロジェクトのコード分析プロパティを設定する'
+      href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
+    - name: 'チュートリアル: C/C++ コード分析による障害の検出'
       items:
-        - name: 'クイック スタート:C/C++ のコード分析'
-          href: quick-start-code-analysis-for-c-cpp.md
-        - name: 規則セットを使用した実行対象の C++ 規則の指定
-          href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
-        - name: C++ Core ガイドライン チェッカーの使用
-          href: using-the-cpp-core-guidelines-checkers.md
-        - name: C/C++ のコード分析の概要
-          href: code-analysis-for-c-cpp-overview.md
-        - name: '方法: C/C++ プロジェクトのコード分析プロパティを設定する'
-          href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
         - name: 'チュートリアル: C/C++ コード分析による障害の検出'
           href: walkthrough-analyzing-c-cpp-code-for-defects.md
-          items:
-            - name: デモのサンプル
-              href: demo-sample.md
+        - name: デモのサンプル
+          href: demo-sample.md
+    - name: SAL 注釈を使って C/C++ のコード障害を減らす方法
+      items:
         - name: SAL 注釈を使って C/C++ のコード障害を減らす方法
           href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
-          items:
-            - name: SAL について
-              href: understanding-sal.md
-            - name: 関数パラメーターおよび戻り値の注釈設定
-              href: annotating-function-parameters-and-return-values.md
-            - name: 関数の動作に注釈を付ける
-              href: annotating-function-behavior.md
-            - name: 構造体とクラスに注釈を付ける
-              href: annotating-structs-and-classes.md
-            - name: ロック動作に注釈を付ける
-              href: annotating-locking-behavior.md
-            - name: 注釈を適用するタイミングと場所の指定
-              href: specifying-when-and-where-an-annotation-applies.md
-            - name: 組み込み関数
-              href: intrinsic-functions.md
-            - name: ベスト プラクティスと例
-              href: best-practices-and-examples-sal.md
+        - name: SAL について
+          href: understanding-sal.md
+        - name: 関数パラメーターおよび戻り値の注釈設定
+          href: annotating-function-parameters-and-return-values.md
+        - name: 関数の動作に注釈を付ける
+          href: annotating-function-behavior.md
+        - name: 構造体とクラスに注釈を付ける
+          href: annotating-structs-and-classes.md
+        - name: ロック動作に注釈を付ける
+          href: annotating-locking-behavior.md
+        - name: 注釈を適用するタイミングと場所の指定
+          href: specifying-when-and-where-an-annotation-applies.md
+        - name: 組み込み関数
+          href: intrinsic-functions.md
+        - name: ベスト プラクティスと例
+          href: best-practices-and-examples-sal.md
         - name: '方法: __analysis_assume を使用して追加のコード情報を指定する'
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
         - name: C/C++ コードの警告に対応するコードの分析
-          href: code-analysis-for-c-cpp-warnings.md
           items:
+            - name: C/C++ コードの警告に対応するコードの分析
+              href: code-analysis-for-c-cpp-warnings.md
             - name: C1250
               href: c1250.md
             - name: C1251
@@ -1167,129 +1186,136 @@
               href: c28350.md
             - name: C28351
               href: c28351.md
-    - name: 規則セットを使用したコード分析規則のグループ化
-      href: using-rule-sets-to-group-code-analysis-rules.md
-      items:
-        - name: 'チュートリアル: カスタム規則セットの構成と使用'
-          href: walkthrough-configuring-and-using-a-custom-rule-set.md
-        - name: '方法: マネージド コード プロジェクトのコード分析を構成する'
-          href: how-to-configure-code-analysis-for-a-managed-code-project.md
-        - name: '方法: ASP.NET Web アプリケーション用にコード分析を構成する'
-          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-        - name: '方法: コード プロジェクト規則セットをチーム プロジェクトのチェックイン ポリシーと同期させる'
-          href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-        - name: '方法: ソリューション内の複数のプロジェクトに対して規則セットを指定する'
-          href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
-        - name: カスタム規則セットの作成
-          href: creating-custom-code-analysis-rule-sets.md
+        - name: 規則セットを使用したコード分析規則のグループ化
           items:
-            - name: '方法: カスタム規則セットの作成'
-              href: how-to-create-a-custom-rule-set.md
-            - name: 規則セット エディターでの作業
-              href: working-in-the-code-analysis-rule-set-editor.md
-        - name: コード分析規則セットの参照
-          href: code-analysis-rule-set-reference.md
+            - name: 規則セットを使用したコード分析規則のグループ化
+              href: using-rule-sets-to-group-code-analysis-rules.md
+            - name: 'チュートリアル: カスタム規則セットの構成と使用'
+              href: walkthrough-configuring-and-using-a-custom-rule-set.md
+            - name: '方法: マネージド コード プロジェクトのコード分析を構成する'
+              href: how-to-configure-code-analysis-for-a-managed-code-project.md
+            - name: '方法: ASP.NET Web アプリケーション用にコード分析を構成する'
+              href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
+            - name: '方法: コード プロジェクト規則セットをチーム プロジェクトのチェックイン ポリシーと同期させる'
+              href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
+            - name: '方法: ソリューション内の複数のプロジェクトに対して規則セットを指定する'
+              href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
+            - name: カスタム規則セットの作成
+              items:
+                - name: カスタム規則セットの作成
+                  href: creating-custom-code-analysis-rule-sets.md
+                - name: '方法: カスタム規則セットの作成'
+                  href: how-to-create-a-custom-rule-set.md
+                - name: 規則セット エディターでの作業
+                  href: working-in-the-code-analysis-rule-set-editor.md
+            - name: コード分析規則セットの参照
+              items:
+                - name: コード分析規則セットの参照
+                  href: code-analysis-rule-set-reference.md
+                - name: '"すべての規則" 規則セット'
+                  href: all-rules-rule-set.md
+                - name: マネージド コードの "基本正確性規則" 規則セット
+                  href: basic-correctness-rules-rule-set-for-managed-code.md
+                - name: マネージド コードの "基本デザイン ガイドライン規則" 規則セット
+                  href: basic-design-guideline-rules-rule-set-for-managed-code.md
+                - name: マネージド コードの "拡張正確性規則" 規則セット
+                  href: extended-correctness-rules-rule-set-for-managed-code.md
+                - name: マネージド コードの "拡張デザイン ガイドライン規則" 規則セット
+                  href: extended-design-guidelines-rules-rule-set-for-managed-code.md
+                - name: マネージド コードの "グローバリゼーション規則" 規則セット
+                  href: globalization-rules-rule-set-for-managed-code.md
+                - name: マネージド コードの "マネージ最小規則" 規則セット
+                  href: managed-minimun-rules-rule-set-for-managed-code.md
+                - name: マネージド コードの "マネージ推奨規則" 規則セット
+                  href: managed-recommended-rules-rule-set-for-managed-code.md
+                - name: '"混合最小規則" 規則セット'
+                  href: mixed-minimum-rules-rule-set.md
+                - name: '"混合推奨規則" 規則セット'
+                  href: mixed-recommended-rules-rule-set.md
+                - name: '"ネイティブ最小規則" 規則セット'
+                  href: native-minimum-rules-rule-set.md
+                - name: '"ネイティブ推奨規則" 規則セット'
+                  href: native-recommended-rules-rule-set.md
+                - name: マネージド コードの "セキュリティ規則" 規則セット
+                  href: security-rules-rule-set-for-managed-code.md
+        - name: コード分析のアプリケーション エラー
           items:
-            - name: '"すべての規則" 規則セット'
-              href: all-rules-rule-set.md
-            - name: マネージド コードの "基本正確性規則" 規則セット
-              href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: マネージド コードの "基本デザイン ガイドライン規則" 規則セット
-              href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: マネージド コードの "拡張正確性規則" 規則セット
-              href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: マネージド コードの "拡張デザイン ガイドライン規則" 規則セット
-              href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: マネージド コードの "グローバリゼーション規則" 規則セット
-              href: globalization-rules-rule-set-for-managed-code.md
-            - name: マネージド コードの "マネージ最小規則" 規則セット
-              href: managed-minimun-rules-rule-set-for-managed-code.md
-            - name: マネージド コードの "マネージ推奨規則" 規則セット
-              href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: '"混合最小規則" 規則セット'
-              href: mixed-minimum-rules-rule-set.md
-            - name: '"混合推奨規則" 規則セット'
-              href: mixed-recommended-rules-rule-set.md
-            - name: '"ネイティブ最小規則" 規則セット'
-              href: native-minimum-rules-rule-set.md
-            - name: '"ネイティブ推奨規則" 規則セット'
-              href: native-recommended-rules-rule-set.md
-            - name: マネージド コードの "セキュリティ規則" 規則セット
-              href: security-rules-rule-set-for-managed-code.md
-    - name: コード分析のアプリケーション エラー
-      href: code-analysis-application-errors.md
-      items:
-        - name: CA0001
-          href: ca0001.md
-        - name: CA0051
-          href: ca0051.md
-        - name: CA0052
-          href: ca0052.md
-        - name: CA0053
-          href: ca0053.md
-        - name: CA0054
-          href: ca0054.md
-        - name: CA0055
-          href: ca0055.md
-        - name: CA0056
-          href: ca0056.md
-        - name: CA0057
-          href: ca0057.md
-        - name: CA0058
-          href: ca0058.md
-        - name: CA0059
-          href: ca0059.md
-        - name: CA0060
-          href: ca0060.md
-        - name: CA0061
-          href: ca0061.md
-        - name: CA0062
-          href: ca0062.md
-        - name: CA0063
-          href: ca0063.md
-        - name: CA0064
-          href: ca0064.md
-        - name: CA0065
-          href: ca0065.md
-        - name: CA0066
-          href: ca0066.md
-        - name: CA0067
-          href: ca0067.md
-        - name: CA0068
-          href: ca0068.md
-        - name: CA0069
-          href: ca0069.md
-        - name: CA0070
-          href: ca0070.md
-        - name: CA0501
-          href: ca0501.md
-        - name: CA0502
-          href: ca0502.md
-        - name: CA0503
-          href: ca0503.md
-        - name: CA0504
-          href: ca0504.md
-        - name: CA0505
-          href: ca0505.md
-        - name: FxCopCmd エラー
-          href: fxcopcmd-errors.md
-    - name: チーム プロジェクト チェックイン ポリシーによるコード品質の向上
-      href: enhancing-code-quality-with-team-project-check-in-policies.md
-      items:
-        - name: コード分析を用いたチェックイン ポリシーの作成と使用
-          href: creating-and-using-code-analysis-check-in-policies.md
+            - name: コード分析のアプリケーション エラー
+              href: code-analysis-application-errors.md
+            - name: CA0001
+              href: ca0001.md
+            - name: CA0051
+              href: ca0051.md
+            - name: CA0052
+              href: ca0052.md
+            - name: CA0053
+              href: ca0053.md
+            - name: CA0054
+              href: ca0054.md
+            - name: CA0055
+              href: ca0055.md
+            - name: CA0056
+              href: ca0056.md
+            - name: CA0057
+              href: ca0057.md
+            - name: CA0058
+              href: ca0058.md
+            - name: CA0059
+              href: ca0059.md
+            - name: CA0060
+              href: ca0060.md
+            - name: CA0061
+              href: ca0061.md
+            - name: CA0062
+              href: ca0062.md
+            - name: CA0063
+              href: ca0063.md
+            - name: CA0064
+              href: ca0064.md
+            - name: CA0065
+              href: ca0065.md
+            - name: CA0066
+              href: ca0066.md
+            - name: CA0067
+              href: ca0067.md
+            - name: CA0068
+              href: ca0068.md
+            - name: CA0069
+              href: ca0069.md
+            - name: CA0070
+              href: ca0070.md
+            - name: CA0501
+              href: ca0501.md
+            - name: CA0502
+              href: ca0502.md
+            - name: CA0503
+              href: ca0503.md
+            - name: CA0504
+              href: ca0504.md
+            - name: CA0505
+              href: ca0505.md
+            - name: FxCopCmd エラー
+              href: fxcopcmd-errors.md
+        - name: チーム プロジェクト チェックイン ポリシーによるコード品質の向上
           items:
-            - name: '方法: 標準のコード分析チェックイン ポリシーを作成または更新する'
-              href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-            - name: マネージド コード用のカスタム チェックイン ポリシーの実装
-              href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-            - name: '方法: コード分析のチェックイン ポリシーを使用して保守が容易なコードを適用する'
-              href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-            - name: コード分析を用いたチェックイン ポリシーに関するバージョンの互換性
-              href: version-compatibility-for-code-analysis-check-in-policies.md
+            - name: チーム プロジェクト チェックイン ポリシーによるコード品質の向上
+              href: enhancing-code-quality-with-team-project-check-in-policies.md
+            - name: コード分析を用いたチェックイン ポリシーの作成と使用
+              items:
+                - name: コード分析を用いたチェックイン ポリシーの作成と使用
+                  href: creating-and-using-code-analysis-check-in-policies.md
+                - name: '方法: 標準のコード分析チェックイン ポリシーを作成または更新する'
+                  href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
+                - name: マネージド コード用のカスタム チェックイン ポリシーの実装
+                  href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
+                - name: '方法: コード分析のチェックイン ポリシーを使用して保守が容易なコードを適用する'
+                  href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
+                - name: コード分析を用いたチェックイン ポリシーに関するバージョンの互換性
+                  href: version-compatibility-for-code-analysis-check-in-policies.md
 - name: マネージド コードの複雑さと保守性の測定
-  href: measuring-complexity-and-maintainability-of-managed-code.md
   items:
+    - name: マネージド コードの複雑さと保守性の測定
+      href: measuring-complexity-and-maintainability-of-managed-code.md
     - name: コード メトリックス値
       href: code-metrics-values.md
     - name: '方法: コード メトリックス データの生成'
@@ -1297,8 +1323,9 @@
     - name: コード メトリックス データの操作
       href: working-with-code-metrics-data.md
 - name: 品質管理ツールのトラブルシューティング
-  href: troubleshooting-quality-tools.md
   items:
+    - name: 品質管理ツールのトラブルシューティング
+      href: troubleshooting-quality-tools.md
     - name: コード分析に関する問題のトラブルシューティング
       href: troubleshooting-code-analysis-issues.md
     - name: コード メトリックに関する問題のトラブルシューティング

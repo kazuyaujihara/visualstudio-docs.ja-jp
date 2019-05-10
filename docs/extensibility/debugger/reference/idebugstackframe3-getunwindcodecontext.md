@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb0fc6511def34c1f15f91fca22fa9903daa08a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0ee90dfdcb38c938d87ed35aadca07540af34539
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915947"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458272"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 コードのコンテキストの位置を表す場合は、スタックのアンワインド操作が発生したを返します。
@@ -36,8 +39,8 @@ int GetUnwindCodeContext(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ppCodeContext`
+## <a name="parameters"></a>パラメーター
+ `ppCodeContext`\
 
  [out]返します、 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)スタック アンワインドが発生した場合は、コード コンテキストの位置を表すオブジェクト。
 

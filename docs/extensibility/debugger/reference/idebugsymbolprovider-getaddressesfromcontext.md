@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7b28010f117b1bb6616250f1e188bd5acb38cda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 77306706c15be37a975742be917523095bec587f
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915861"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226442"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 このメソッドは、ドキュメントのコンテキストをデバッグ アドレスの配列にマップします。
@@ -42,20 +45,20 @@ int GetAddressesFromContext(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pDocContext`
+## <a name="parameters"></a>パラメーター
+ `pDocContext`\
 
  [in]ドキュメントのコンテキスト。
 
- `fStatmentOnly`
+ `fStatmentOnly`\
 
  [in]TRUE の場合は、1 つのステートメントにデバッグ アドレスを制限します。
 
- `ppEnumBegAddresses`
+ `ppEnumBegAddresses`\
 
  [out]このステートメントまたは行に関連付けられた開始デバッグ アドレスの列挙子を返します。
 
- `ppEnumEndAddresses`
+ `ppEnumEndAddresses`\
 
  [out]返します、 [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)このステートメントまたは行に関連付けられている終了のデバッグ アドレスの列挙子。
 

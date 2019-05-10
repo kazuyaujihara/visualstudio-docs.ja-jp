@@ -6,8 +6,9 @@
 - name: Visual Studio Tools for Apache Cordova
   href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Visual Studio Tools for Unity
-  href: visual-studio-tools-for-unity.md
   items:
+    - name: Visual Studio Tools for Unity
+      href: visual-studio-tools-for-unity.md
     - name: Visual Studio Tools for Unity の使用を開始する
       href: getting-started-with-visual-studio-tools-for-unity.md
     - name: Visual Studio Tools for Unity を使用する
@@ -15,8 +16,9 @@
     - name: Unity で .NET 4.x を使用する
       href: unity-scripting-upgrade.md
     - name: Visual Studio Tools for Unity をプログラミングする
-      href: programming-visual-studio-tools-for-unity.md
       items:
+        - name: Visual Studio Tools for Unity をプログラミングする
+          href: programming-visual-studio-tools-for-unity.md
         - name: VSTU によって作成されるプロジェクト ファイルのカスタマイズ
           href: customize-project-files-created-by-vstu.md
         - name: Unity のログ コールバックを VSTU と共有する
@@ -32,11 +34,13 @@
     - name: Unity アプリを使用した DevOps
       href: application-lifecycle-management-alm-with-unity-apps.md
 - name: Visual C++ for Cross-Platform Mobile Development
-  href: visual-cpp-for-cross-platform-mobile-development.md
   items:
+    - name: Visual C++ for Cross-Platform Mobile Development
+      href: visual-cpp-for-cross-platform-mobile-development.md
     - name: Visual C++ for Cross-Platform Mobile Development のインストール
-      href: install-visual-cpp-for-cross-platform-mobile-development.md
       items:
+        - name: Visual C++ for Cross-Platform Mobile Development のインストール
+          href: install-visual-cpp-for-cross-platform-mobile-development.md
         - name: Install and Configure Tools to Build using iOS
           href: install-and-configure-tools-to-build-using-ios.md
     - name: Android Native Activity アプリの作成
@@ -50,8 +54,9 @@
     - name: クロス プラットフォーム モバイル開発の例
       href: cross-platform-mobile-development-examples.md
     - name: クロスプラット フォームの C++ プロジェクトのプロパティ
-      href: cross-platform-prop-pages.md
       items:
+        - name: クロスプラット フォームの C++ プロジェクトのプロパティ
+          href: cross-platform-prop-pages.md
         - name: 一般的なプロジェクト プロパティ (Android C++)
           href: general-android-prop-page.md
         - name: Android のデバッガーのプロパティ
@@ -67,8 +72,9 @@
 - name: ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発
   href: develop-apps-for-the-universal-windows-platform-uwp.md
 - name: Visual Studio Emulator for Android
-  href: visual-studio-emulator-for-android.md
   items:
+    - name: Visual Studio Emulator for Android
+      href: visual-studio-emulator-for-android.md
     - name: System requirements for the Visual Studio Emulator for Android
       href: system-requirements-for-the-visual-studio-emulator-for-android.md
     - name: Visual Studio Emulator for Android のトラブルシューティング

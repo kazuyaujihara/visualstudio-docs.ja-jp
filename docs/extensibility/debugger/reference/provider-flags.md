@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803d9569c611e3c4cd70f2c82ecd525716d8ddb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f6fb974bd5affc89eeacbfccace5c1e89218db5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913528"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457922"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 プログラムのプロバイダーから取得される必要なプロパティを指定します。
@@ -49,20 +52,27 @@ public enum enum_PROVIDER_FLAGS {
 };
 ```
 
-## <a name="members"></a>メンバー
- PFLAG_NONE なしのフラグが指定されました。
+## <a name="fields"></a>フィールド
+ `PFLAG_NONE`\
+ 指定したフラグがありません。
 
- PFLAG_REMOTE_PORT 呼び出し元が異なるコンピューター上のプログラムの一覧が[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]します。
+ `PFLAG_REMOTE_PORT`\
+ 呼び出し元が異なるコンピューター上のプログラムの一覧[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]します。
 
- プロセスのこのインスタンスによって現在デバッグ中 PFLAG_DEBUGGEE[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]します。
+ `PFLAG_DEBUGGEE`\
+ プロセスのこのインスタンスによって現在デバッグ中[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]します。
 
- PFLAG_ATTACH_TODEBUGGEE[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]デバッグ中のプログラムにアタッチされていますが、起動しませんでした。
+ `PFLAG_ATTACH_TODEBUGGEE`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] デバッグ中のプログラムにアタッチされていますが、起動しませんでした。
 
- PFLAG_REASON_WATCH[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]イベントによって監視されています。
+ `PFLAG_REASON_WATCH`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] イベントを監視します。
 
- PFLAG_GET_PROGRAM_NODES 呼び出し元が、`ProgramNodes`のフィールド、 [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)構造体。
+ `PFLAG_GET_PROGRAM_NODES`\
+ 呼び出し元が、`ProgramNodes`のフィールド、 [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)構造体。
 
- PFLAG_GET_IS_DEBUGGER_PRESENT 呼び出し元が、`fIsTheDebuggerPresent`のフィールド、`PROVIDER_PROCESS_DATA`構造体。
+ `PFLAG_GET_IS_DEBUGGER_PRESENT`\
+ 呼び出し元が、`fIsTheDebuggerPresent`のフィールド、`PROVIDER_PROCESS_DATA`構造体。
 
 ## <a name="remarks"></a>Remarks
  これらのフラグは、次のメソッドに渡されます。

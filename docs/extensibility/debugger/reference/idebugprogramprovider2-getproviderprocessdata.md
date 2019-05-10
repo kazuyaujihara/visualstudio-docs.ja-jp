@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 385ef2aaaadc8d1f66eaf245f06dbfd299638fa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f63b43c1e7e8035320c6d4c7b527e069904191a5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916719"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459010"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 指定されたプロセスからプログラムを実行の一覧を取得します。
@@ -44,8 +47,8 @@ int GetProviderProcessData(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `Flags`
+## <a name="parameters"></a>パラメーター
+ `Flags`\
 
  [in]フラグの組み合わせ、 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列挙体。 次のフラグは、この呼び出しの一般的なものは。
 
@@ -56,19 +59,19 @@ int GetProviderProcessData(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|呼び出し元に接続されているが、デバッガーによって起動されません。|
 |`PFLAG_GET_PROGRAM_NODES`|呼び出し元が返される、プログラムのノードの一覧を求めています。|
 
- `pPort`
+ `pPort`\
 
  [in]呼び出し元のプロセス、ポートがで実行されています。
 
- `processId`
+ `processId`\
 
  [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)対象のプログラムを含むプロセスの ID を保持する構造体。
 
- `EngineFilter`
+ `EngineFilter`\
 
  [in] (これらが使用されますが実際に返されるすべてのプログラムが返されますエンジンが指定されていない場合、指定されたエンジンのサポート; に基づくプログラムをフィルター処理する)、このプロセスのデバッグに割り当てられているデバッグ エンジンの Guid の配列。
 
- `pProcess`
+ `pProcess`\
 
  [out]A [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)構造体に必要な情報が入力されます。
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56ba1933d1b63f9af863b115972f3ecf1dfc4346
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e5d298add846a7f3b7baf566f3c31e16c68b8dc5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913717"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460843"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 式を解析する方法を指定します。
@@ -41,12 +44,15 @@ public enum enum_PARSEFLAGS { 
 };
 ```
 
-## <a name="members"></a>メンバー
- PARSE_EXPRESSION では、式がステートメントではないことを示します。
+## <a name="fields"></a>フィールド
+ `PARSE_EXPRESSION`\
+ 式がステートメントではないことを示します。
 
- PARSE_FUNCTION_AS_ADDRESS では、式がアドレスとして解析 (および後で評価) はことを示します。
+ `PARSE_FUNCTION_AS_ADDRESS`\
+ 解析 (および後で評価) アドレスとして、式があることを示します。
 
- PARSE_DESIGN_TIME_EXPR_EVAL では、式はデザイン時に解析されていることを示します (つまり、デザイナーが開いているとき)。
+ `PARSE_DESIGN_TIME_EXPR_EVAL`\
+ 式はデザイン時に解析されていることを示します (つまり、デザイナーが開いているとき)。
 
 ## <a name="remarks"></a>Remarks
  パラメーターとして渡される、 [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)と[解析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)メソッド。

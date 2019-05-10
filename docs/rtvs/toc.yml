@@ -19,15 +19,17 @@
 - name: 使い方ガイド
   items:
     - name: R プロジェクト
-      href: r-projects-in-visual-studio.md
       items:
+        - name: R プロジェクト
+          href: r-projects-in-visual-studio.md
         - name: パッケージ マネージャー
           href: r-package-manager-in-visual-studio.md
         - name: SQL Server の統合
           href: integrating-sql-server-with-r.md
     - name: コードの編集
-      href: editing-r-code-in-visual-studio.md
       items:
+        - name: コードの編集
+          href: editing-r-code-in-visual-studio.md
         - name: IntelliSense
           href: r-intellisense.md
         - name: Lint
@@ -35,8 +37,9 @@
         - name: コード スニペット
           href: code-snippets-for-r.md
     - name: ワークスペース (ローカルおよびリモート)
-      href: r-workspaces-in-visual-studio.md
       items:
+        - name: ワークスペース (ローカルおよびリモート)
+          href: r-workspaces-in-visual-studio.md
         - name: リモート ワークスペースの設定
           href: setting-up-remote-r-workspaces.md
         - name: Linux 用のリモート R サービス

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d790c7b278d36395c0df5575ed3bc7c381753fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b54e6ee8321d58046ec0beb372a14495b614db0c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412563"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458513"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 このインターフェイスは拡張[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)傍受した例外を処理します。
@@ -45,7 +45,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 ## <a name="remarks"></a>Remarks
  傍受した例外は、通常の例外処理ルーチンは、ランタイムによって呼び出される前に、デバッガーが例外を処理できることを意味します。 基本的に、例外をインターセプトは、例外ハンドラーがない場合にも存在が見かけ上の実行時のようになります。
 
-- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)すべて通常の例外コールバック イベント中に呼び出されます (唯一の例外は、デバッグするかどうか (マネージし、アンマネージ コード)、混在モードのコード中に例外をインターセプトできない場合、最終のコールバックの場合)。 デが実装していない場合`IDebugStackFrame3`、または、DE IDebugStackFrame3 からエラーが返されます::`InterceptCurrentException` (など`E_NOTIMPL`)、デバッガーが通常、例外を処理し、します。
+- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)すべて通常の例外コールバック イベント中に呼び出されます (唯一の例外がかどうかをデバッグする (マネージし、アンマネージ コード)、混在モードのコード中に例外をインターセプトできない場合、最終のコールバックの場合)。 DE、実装していない場合`IDebugStackFrame3`、または、DE IDebugStackFrame3 からエラーが返されます::`InterceptCurrentException` (など`E_NOTIMPL`)、デバッガーが通常、例外を処理し、します。
 
  例外をインターセプトすることで、デバッガーはデバッグ中のプログラムの状態に変更を加えるし、例外がスローされた時点での実行を再開するユーザーを許可できます。
 

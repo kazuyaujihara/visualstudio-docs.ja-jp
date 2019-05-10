@@ -1,10 +1,9 @@
 - name: Visual Studio Tools for AI
-  href: index.yml
   items:
+    - name: Visual Studio Tools for AI
+      href: index.yml
     - name: 概要
-      items:
-        - name: Visual Studio Tools for AI について
-          href: about-ai-tools.md
+      href: about-ai-tools.md
     - name: インストール
       href: installation.md
     - name: クイックスタート
