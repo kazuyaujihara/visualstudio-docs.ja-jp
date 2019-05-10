@@ -5,13 +5,15 @@
 - name: Visual Studio のデバッグのサンプル
   href: visual-studio-debugging-samples.md
 - name: カスタム デバッグ エンジンの作成
-  href: creating-a-custom-debug-engine.md
   items:
+    - name: カスタム デバッグ エンジンの作成
+      href: creating-a-custom-debug-engine.md
     - name: カスタム デバッグ エンジンの登録
       href: registering-a-custom-debug-engine.md
     - name: デバッグするプログラムの有効化
-      href: enabling-a-program-to-be-debugged.md
       items:
+        - name: デバッグするプログラムの有効化
+          href: enabling-a-program-to-be-debugged.md
         - name: ポートの取得
           href: getting-a-port.md
         - name: プログラムの登録
@@ -23,8 +25,9 @@
         - name: 必要なイベントの送信
           href: sending-the-required-events.md
     - name: 実行の制御と状態の評価
-      href: execution-control-and-state-evaluation.md
       items:
+        - name: 実行の制御と状態の評価
+          href: execution-control-and-state-evaluation.md
         - name: プログラムの制御
           href: program-control.md
         - name: ブレークポイントに関連するメソッド
@@ -36,8 +39,9 @@
         - name: 管理イベント
           href: control-events.md
     - name: イベントの送信
-      href: sending-events.md
       items:
+        - name: イベントの送信
+          href: sending-events.md
         - name: イベント ソース (Visual Studio SDK)
           href: event-sources-visual-studio-sdk.md
         - name: サポートされているイベントの種類
@@ -47,8 +51,9 @@
     - name: 切り離しとデタッチ
       href: termination-and-detaching.md
     - name: デバッガーのイベントの呼び出し
-      href: calling-debugger-events.md
       items:
+        - name: デバッガーのイベントの呼び出し
+          href: calling-debugger-events.md
         - name: プロジェクトへのアタッチとデタッチ
           href: attaching-and-detaching-to-a-program.md
         - name: デバッガーの起動
@@ -76,13 +81,15 @@
     - name: '方法: カスタム デバッグ エンジンのデバッグ'
       href: how-to-debug-a-custom-debug-engine.md
 - name: デバッガーの機能拡張の開始
-  href: getting-started-with-debugger-extensibility.md
   items:
+    - name: デバッガーの機能拡張の開始
+      href: getting-started-with-debugger-extensibility.md
     - name: デバッガーを拡張するためのロードマップ
       href: roadmap-for-extending-the-debugger.md
     - name: デバッガーのコンポーネント
-      href: debugger-components.md
       items:
+        - name: デバッガーのコンポーネント
+          href: debugger-components.md
         - name: パッケージのデバッグ
           href: debug-package.md
         - name: プロセス デバッグ マネージャー
@@ -100,8 +107,9 @@
         - name: 型のビジュアライザーとカスタム ビューアー
           href: type-visualizer-and-custom-viewer.md
     - name: デバッガーの概念
-      href: debugger-concepts.md
       items:
+        - name: デバッガーの概念
+          href: debugger-concepts.md
         - name: デバッグ セッション
           href: debug-session.md
         - name: サーバー (Visual Studio SDK)
@@ -125,8 +133,9 @@
         - name: ブレークポイント (Visual Studio SDK)
           href: breakpoints-visual-studio-sdk.md
     - name: デバッガー コンテキスト
-      href: debugger-contexts.md
       items:
+        - name: デバッガー コンテキスト
+          href: debugger-contexts.md
         - name: コード コンテキスト
           href: code-context.md
         - name: ドキュメントの位置
@@ -136,13 +145,15 @@
         - name: 式の評価のコンテキスト
           href: expression-evaluation-context.md
     - name: タスクのデバッグ
-      href: debugging-tasks.md
       items:
+        - name: タスクのデバッグ
+          href: debugging-tasks.md
         - name: セキュリティ上の問題
           href: security-issues.md
         - name: プログラムの起動
-          href: launching-a-program.md
           items:
+            - name: プログラムの起動
+              href: launching-a-program.md
             - name: ポートへの通知
               href: notifying-the-port.md
             - name: 起動後のアタッチ
@@ -160,13 +171,15 @@
         - name: データの視覚化と表示
           href: visualizing-and-viewing-data.md
 - name: 共通言語ランタイム式エバリュエーターの書き込み
-  href: writing-a-common-language-runtime-expression-evaluator.md
   items:
+    - name: 共通言語ランタイム式エバリュエーターの書き込み
+      href: writing-a-common-language-runtime-expression-evaluator.md
     - name: 共通言語ランタイムおよび式の評価
       href: common-language-runtime-and-expression-evaluation.md
     - name: 式エバリュエーターのアーキテクチャ
-      href: expression-evaluator-architecture.md
       items:
+        - name: 式エバリュエーターのアーキテクチャ
+          href: expression-evaluator-architecture.md
         - name: 評価コンテキスト
           href: evaluation-context.md
         - name: 主要なエバリュエーター インターフェイス
@@ -174,16 +187,19 @@
     - name: 式エバリュエーターの登録
       href: registering-an-expression-evaluator.md
     - name: 式エバリュエーターの実装
-      href: implementing-an-expression-evaluator.md
       items:
+        - name: 式エバリュエーターの実装
+          href: implementing-an-expression-evaluator.md
         - name: 式エバリュエーターの実装方法
           href: expression-evaluator-implementation-strategy.md
     - name: ローカルの表示
-      href: displaying-locals.md
       items:
+        - name: ローカルの表示
+          href: displaying-locals.md
         - name: ローカルの実装のサンプル
-          href: sample-implementation-of-locals.md
           items:
+            - name: ローカルの実装のサンプル
+              href: sample-implementation-of-locals.md
             - name: GetMethodProperty の実装
               href: implementing-getmethodproperty.md
             - name: ローカルの列挙
@@ -195,32 +211,37 @@
             - name: ローカル変数の評価
               href: evaluating-locals.md
     - name: '[ウォッチ] ウィンドウの式の評価'
-      href: evaluating-a-watch-window-expression.md
       items:
+        - name: '[ウォッチ] ウィンドウの式の評価'
+          href: evaluating-a-watch-window-expression.md
         - name: 式の評価の実装のサンプル
           href: sample-implementation-of-expression-evaluation.md
         - name: ウォッチ式の評価
           href: evaluating-a-watch-expression.md
     - name: ローカルの値の変更
-      href: changing-the-value-of-a-local.md
       items:
+        - name: ローカルの値の変更
+          href: changing-the-value-of-a-local.md
         - name: 値の変更の実装のサンプル
           href: sample-implementation-of-changing-values.md
     - name: 型のビジュアライザーおよびカスタム ビューアーの実装
       href: implementing-type-visualizers-and-custom-viewers.md
 - name: ポートのサプライヤーの実装
-  href: implementing-a-port-supplier.md
   items:
+    - name: ポートのサプライヤーの実装
+      href: implementing-a-port-supplier.md
     - name: ポート サプライヤーの実装および登録
       href: implementing-and-registering-a-port-supplier.md
     - name: 必須のポート サプライヤー インターフェイス
       href: required-port-supplier-interfaces.md
 - name: .NET Framework の並列拡張機能の内部
-  href: parallel-extension-internals-for-the-dotnet-framework.md
   items:
+    - name: .NET Framework の並列拡張機能の内部
+      href: parallel-extension-internals-for-the-dotnet-framework.md
     - name: Task クラス - 内部メンバー
-      href: task-class-internal-members.md
       items:
+        - name: Task クラス - 内部メンバー
+          href: task-class-internal-members.md
         - name: m_action フィールド
           href: m-action-field.md
         - name: m_contingentProperties フィールド
@@ -250,34 +271,39 @@
         - name: NotifyDebuggerOfWaitCompletion メソッド
           href: notifydebuggerofwaitcompletion-method.md
     - name: TaskScheduler クラスの内部メンバー
-      href: taskscheduler-class-internal-members.md
       items:
+        - name: TaskScheduler クラスの内部メンバー
+          href: taskscheduler-class-internal-members.md
         - name: GetScheduledTasksForDebugger メソッド
           href: getscheduledtasksfordebugger-method.md
         - name: GetTaskSchedulersForDebugger メソッド
           href: gettaskschedulersfordebugger-method.md
     - name: ContingentProperties クラスの内部メンバー
-      href: contingentproperties-class-internal-members.md
       items:
+        - name: ContingentProperties クラスの内部メンバー
+          href: contingentproperties-class-internal-members.md
         - name: m_children フィールド
           href: m-children-field.md
     - name: AsyncTaskMethodBuilder 構造体の内部メンバー
-      href: asynctaskmethodbuilder-structure-internal-members.md
       items:
+        - name: AsyncTaskMethodBuilder 構造体の内部メンバー
+          href: asynctaskmethodbuilder-structure-internal-members.md
         - name: AsyncTaskMethodBuilder.ObjectIdForDebugger プロパティ
           href: asynctaskmethodbuilder-objectidfordebugger-property.md
         - name: AsyncTaskMethodBuilder.m_builder フィールド
           href: asynctaskmethodbuilder-m-builder-field.md
     - name: AsyncTaskMethodBuilder<TResult> 構造体の内部メンバー
-      href: asynctaskmethodbuilder-tresult-structure-internal-members.md
       items:
+        - name: AsyncTaskMethodBuilder<TResult> 構造体の内部メンバー
+          href: asynctaskmethodbuilder-tresult-structure-internal-members.md
         - name: AsyncTaskMethodBuilder<TResult>.ObjectIdForDebugger プロパティ
           href: asynctaskmethodbuilder-tresult-objectidfordebugger-property.md
         - name: AsyncTaskMethodBuilder<TResult>.m_task フィールド
           href: asynctaskmethodbuilder-tresult-m-task-field.md
     - name: AsyncVoidMethodBuilder 構造体の内部メンバー
-      href: asyncvoidmethodbuilder-structure-internal-members.md
       items:
+        - name: AsyncVoidMethodBuilder 構造体の内部メンバー
+          href: asyncvoidmethodbuilder-structure-internal-members.md
         - name: AsyncVoidMethodBuilder.ObjectIdForDebugger プロパティ
           href: asyncvoidmethodbuilder-objectidfordebugger-property.md
         - name: AsyncVoidMethodBuilder.m_objectIdForDebugger フィールド

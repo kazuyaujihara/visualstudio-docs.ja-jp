@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 584c7ba10ac9eb05268f50ecaffa8c47818f7977
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 466d50f81fe73e0d67e01142568d20cd757ebeea
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915546"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225975"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 このスレッドのスタック フレームの一覧を取得します。
@@ -40,16 +43,16 @@ int EnumFrameInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dwFieldSpec`
+## <a name="parameters"></a>パラメーター
+ `dwFieldSpec`\
 
  [in]フラグの組み合わせ、 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)のどのフィールドを指定する列挙体、 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)構造は、入力します。指定、`FIF_FUNCNAME_FORMAT`関数名を 1 つの文字列に書式設定フラグ。
 
- `nRadix`
+ `nRadix`\
 
  [in]列挙子の数値情報を書式設定に使用する基数。
 
- `ppEnum`
+ `ppEnum`\
 
  [out]返します、 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)オブジェクトの一覧を含む[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)スタック フレームを記述する構造体。
 

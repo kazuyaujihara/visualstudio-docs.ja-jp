@@ -63,8 +63,9 @@
 - name: 使い方ガイド
   items:
     - name: ClickOnce のセキュリティと配置
-      href: clickonce-security-and-deployment.md
       items:
+        - name: ClickOnce のセキュリティと配置
+          href: clickonce-security-and-deployment.md
         - name: ClickOnce 配置ストラテジの選択
           href: choosing-a-clickonce-deployment-strategy.md
         - name: ClickOnce キャッシュの概要
@@ -74,13 +75,15 @@
         - name: Windows Vista の ClickOnce 配置
           href: clickonce-deployment-on-windows-vista.md
         - name: ClickOnce アプリケーションのローカライズ
-          href: localizing-clickonce-applications.md
           items:
+            - name: ClickOnce アプリケーションのローカライズ
+              href: localizing-clickonce-applications.md
             - name: 特定のロケールを持つプロジェクトを発行する
               href: how-to-publish-a-project-that-has-a-specific-locale.md
         - name: ClickOnce アプリケーションのセキュリティ保護
-          href: securing-clickonce-applications.md
           items:
+            - name: ClickOnce アプリケーションのセキュリティ保護
+              href: securing-clickonce-applications.md
             - name: ClickOnce と Authenticode
               href: clickonce-and-authenticode.md
             - name: 信頼されたアプリケーションの配置の概要
@@ -104,8 +107,9 @@
             - name: SignTool.exe を使用してセットアップ ファイルに署名する (ClickOnce)
               href: how-to-sign-setup-files-with-signtool-exe-clickonce.md
         - name: ClickOnce アプリケーションの発行
-          href: publishing-clickonce-applications.md
           items:
+            - name: ClickOnce アプリケーションの発行
+              href: publishing-clickonce-applications.md
             - name: 発行ウィザードを使用して ClickOnce アプリケーションを発行する
               href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
             - name: 開発者以外が配置する ClickOnce アプリケーションの作成
@@ -129,8 +133,9 @@
             - name: ClickOnce の発行バージョンを自動的にインクリメントする
               href: how-to-automatically-increment-the-clickonce-publish-version.md
             - name: ClickOnce で発行されるファイルを指定する
-              href: how-to-specify-which-files-are-published-by-clickonce.md
               items:
+                - name: ClickOnce で発行されるファイルを指定する
+                  href: how-to-specify-which-files-are-published-by-clickonce.md
                 - name: ClickOnce アプリケーションにデータ ファイルを含める
                   href: how-to-include-a-data-file-in-a-clickonce-application.md
             - name: ClickOnce アプリケーションと共に必須コンポーネントをインストールする
@@ -144,13 +149,15 @@
             - name: ClickOnce アプリケーションのスタート メニューの名前を指定する
               href: how-to-specify-a-start-menu-name-for-a-clickonce-application.md
             - name: テクニカル サポートのリンクを指定する
-              href: how-to-specify-a-link-for-technical-support.md
               items:
+                - name: テクニカル サポートのリンクを指定する
+                  href: how-to-specify-a-link-for-technical-support.md
                 - name: 個々の必要条件にサポート URL を指定する
                   href: how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md
             - name: ClickOnce アプリケーションの発行ページを指定する
-              href: how-to-specify-a-publish-page-for-a-clickonce-application.md
               items:
+                - name: ClickOnce アプリケーションの発行ページを指定する
+                  href: how-to-specify-a-publish-page-for-a-clickonce-application.md
                 - name: ClickOnce アプリケーションの既定の Web ページをカスタマイズする
                   href: how-to-customize-the-default-web-page-for-a-clickonce-application.md
             - name: CD インストールの自動開始を有効にする
@@ -160,8 +167,9 @@
             - name: オンライン ClickOnce アプリケーションでクエリ文字列を取得する
               href: how-to-retrieve-query-string-information-in-an-online-clickonce-application.md
             - name: デザイナーを使用して ClickOnce アプリケーションの URL アクティベーションを無効にする
-              href: how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md
               items:
+                - name: デザイナーを使用して ClickOnce アプリケーションの URL アクティベーションを無効にする
+                  href: how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md
                 - name: ClickOnce アプリケーションの URL アクティべーションを無効にする
                   href: how-to-disable-url-activation-of-clickonce-applications.md
             - name: 複数のバージョンの .NET Framework で実行できるアプリケーションを配置する
@@ -169,15 +177,17 @@
             - name: Visual スタイルが有効になっている WPF アプリケーションを公開する
               href: how-to-publish-a-wpf-application-with-visual-styles-enabled.md
             - name: 'チュートリアル: デザイナーを使用して必要に応じてアセンブリをダウンロードする'
-              href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
               items:
+                - name: 'チュートリアル: デザイナーを使用して必要に応じてアセンブリをダウンロードする'
+                  href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
                 - name: 'チュートリアル: 必要に応じてアセンブリをダウンロードする'
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: 'チュートリアル: デザイナーを使用して必要に応じてサテライト アセンブリをダウンロードする'
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
             - name: 'チュートリアル: ClickOnce アプリケーションを手動で配置する'
-              href: walkthrough-manually-deploying-a-clickonce-application.md
               items:
+                - name: 'チュートリアル: ClickOnce アプリケーションを手動で配置する'
+                  href: walkthrough-manually-deploying-a-clickonce-application.md
                 - name: 'チュートリアル: 再署名が不要なアプリを手動で展開する'
                   href: walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md
             - name: 'チュートリアル: 必要に応じてサテライト アセンブリをダウンロードする'
@@ -185,8 +195,9 @@
             - name: 'チュートリアル: カスタム インストーラーを作成する'
               href: walkthrough-creating-a-custom-installer-for-a-clickonce-application.md
         - name: ClickOnce の更新方法の選択
-          href: choosing-a-clickonce-update-strategy.md
           items:
+            - name: ClickOnce の更新方法の選択
+              href: choosing-a-clickonce-update-strategy.md
             - name: ClickOnce がアプリケーションの更新を実行するしくみ
               href: how-clickonce-performs-application-updates.md
             - name: プログラムでアプリケーションの更新プログラムを確認する
@@ -196,8 +207,9 @@
         - name: ClickOnce 配置のサンプルとチュートリアル
           href: clickonce-deployment-samples-and-walkthroughs.md
         - name: ClickOnce 配置のトラブルシューティング
-          href: troubleshooting-clickonce-deployments.md
           items:
+            - name: ClickOnce 配置のトラブルシューティング
+              href: troubleshooting-clickonce-deployments.md
             - name: ClickOnce 配置エラー用にカスタム ログ ファイルの場所を設定する
               href: how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md
             - name: ClickOnce 配置用の詳細ログ ファイルを指定する
@@ -211,8 +223,9 @@
             - name: System.Deployment.Application を使用する ClickOnce アプリケーションのデバッグ
               href: debugging-clickonce-applications-that-use-system-deployment-application.md
     - name: アプリケーション配置の必要条件
-      href: application-deployment-prerequisites.md
       items:
+        - name: アプリケーション配置の必要条件
+          href: application-deployment-prerequisites.md
         - name: 64 ビット アプリケーションの配置のための必要条件
           href: deploying-prerequisites-for-64-bit-applications.md
         - name: ブートストラップ パッケージの作成
@@ -226,8 +239,9 @@
         - name: 'チュートリアル: プライバシー プロンプトを使用してカスタム ブートストラップを作成する'
           href: walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md
         - name: 製品およびパッケージ スキーマ リファレンス
-          href: product-and-package-schema-reference.md
           items:
+            - name: 製品およびパッケージ スキーマ リファレンス
+              href: product-and-package-schema-reference.md
             - name: <Product> 要素 (ブートストラップ)
               href: product-element-bootstrapper.md
             - name: <Package> 要素 (ブートストラップ)
@@ -247,11 +261,13 @@
 - name: 関連項目
   items:
     - name: ClickOnce に関するリファレンス
-      href: clickonce-reference.md
       items:
+        - name: ClickOnce に関するリファレンス
+          href: clickonce-reference.md
         - name: ClickOnce Application Manifest
-          href: clickonce-application-manifest.md
           items:
+            - name: ClickOnce Application Manifest
+              href: clickonce-application-manifest.md
             - name: <assembly> 要素 (ClickOnce アプリケーション)
               href: assembly-element-clickonce-application.md
             - name: <assemblyIdentity> 要素 (ClickOnce アプリケーション)
@@ -267,8 +283,9 @@
             - name: <fileAssociation> 要素 (ClickOnce アプリケーション)
               href: fileassociation-element-clickonce-application.md
         - name: ClickOnce 配置マニフェスト
-          href: clickonce-deployment-manifest.md
           items:
+            - name: ClickOnce 配置マニフェスト
+              href: clickonce-deployment-manifest.md
             - name: <assembly> 要素 (ClickOnce 配置)
               href: assembly-element-clickonce-deployment.md
             - name: <assemblyIdentity> 要素 (ClickOnce 配置)

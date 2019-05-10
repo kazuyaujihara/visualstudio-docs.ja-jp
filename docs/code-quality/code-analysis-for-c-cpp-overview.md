@@ -21,12 +21,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c4221783768f1e579ecad74fdfaf6e74214edfd
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540828"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226132"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ のコード分析の概要
 
@@ -50,11 +50,11 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>#pragma サポート
 
-使用することができます、`#pragma`ディレクティブは警告をエラーとして扱う; 有効または警告を無効にする個々 の行のコードの警告を非表示にします。 詳細については、「[方法 :C と C++ プロジェクトのコード分析プロパティを設定](how-to-set-code-analysis-properties-for-c-cpp-projects.md)します。
+使用することができます、`#pragma`ディレクティブは警告をエラーとして扱う; 有効または警告を無効にする個々 の行のコードの警告を非表示にします。 詳細については、「[プラグマ ディレクティブと __Pragma キーワード](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword)」を参照してください。
 
 ## <a name="annotation-support"></a>注釈のサポート
 
-注釈によってコード分析の精度が向上します。 注釈には、関数のパラメーターと戻り値の型について、事前および事後の状態に関する追加情報を指定します。 詳細については、「[方法 :__analysis_assume を使用して追加のコード情報を指定する](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)」を参照してください。
+注釈によってコード分析の精度が向上します。 注釈には、関数のパラメーターと戻り値の型について、事前および事後の状態に関する追加情報を指定します。 詳細については、次を参照してください[Reduce C に SAL 注釈を使って/C++コードの不具合。](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>チェックイン ポリシーの一部としての分析ツールの実行
 

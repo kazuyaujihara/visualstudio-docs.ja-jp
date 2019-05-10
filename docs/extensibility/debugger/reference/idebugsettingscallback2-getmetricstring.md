@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c92709afbc5341a7507c89dc948daeae1f798b4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d3fdfd604f28f6657b27ef0e81ca4ce5855d97df
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916220"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457292"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 指定した名前のメトリックの値の文字列を取得します。
@@ -41,20 +44,20 @@ private int GetMetricString(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pszType`
+## <a name="parameters"></a>パラメーター
+ `pszType`\
 
  [in]メトリックの種類です。
 
- `guidSection`
+ `guidSection`\
 
  [in]セクションの一意の識別子。
 
- `pszMetric`
+ `pszMetric`\
 
  [in]メトリックの名前。
 
- `pbstrValue`
+ `pbstrValue`\
 
  [out]メトリックの値の文字列を返します。
 

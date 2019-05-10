@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f0aafc5b41d9020c80cd2b86c9048db1d333bfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 08d50e3d3ddda55a7ff0f3fea333c5408b02878a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865441"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461037"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 式エバリュエーターからオブジェクトの種類を指定します。
@@ -65,36 +68,51 @@ public enum enum_OBJECT_TYPE { 
 };
 ```
 
-## <a name="members"></a>メンバー
- OBJECT_TYPE_BOOLEAN オブジェクトがブール値であることを示します。
+## <a name="fields"></a>フィールド
+ `OBJECT_TYPE_BOOLEAN`\
+ オブジェクトがブール値であることを示します。
 
- OBJECT_TYPE_CHAR オブジェクトが文字であることを示します。
+ `OBJECT_TYPE_CHAR`\
+ オブジェクトが文字であることを示します。
 
- OBJECT_TYPE_I1 オブジェクトが 1 バイトの符号付き整数であることを示します。
+ `OBJECT_TYPE_I1`\
+ オブジェクトが 1 バイトの符号付き整数であることを示します。
 
- OBJECT_TYPE_U1 オブジェクトが 1 バイトの符号なし整数であることを示します。
+ `OBJECT_TYPE_U1`\
+ オブジェクトが 1 バイトの符号なし整数であることを示します。
 
- OBJECT_TYPE_I2 オブジェクトが 2 バイト符号付き整数であることを示します。
+ `OBJECT_TYPE_I2`\
+ オブジェクトが 2 バイト符号付き整数であることを示します。
 
- OBJECT_TYPE_U2 オブジェクトが 2 バイト符号なし整数であることを示します。
+ `OBJECT_TYPE_U2`\
+ オブジェクトが 2 バイト符号なし整数であることを示します。
 
- OBJECT_TYPE_I4 オブジェクトが 4 バイト符号付き整数であることを示します。
+ `OBJECT_TYPE_I4`\
+ オブジェクトが 4 バイト符号付き整数であることを示します。
 
- OBJECT_TYPE_U4 オブジェクトが 4 バイト符号なし整数であることを示します。
+ `OBJECT_TYPE_U4`\
+ オブジェクトが 4 バイト符号なし整数であることを示します。
 
- OBJECT_TYPE_I8 オブジェクトが 8 バイト符号付き整数であることを示します。
+ `OBJECT_TYPE_I8`\
+ オブジェクトが 8 バイト符号付き整数であることを示します。
 
- OBJECT_TYPE_U8 オブジェクトが 8 バイト符号なし整数であることを示します。
+ `OBJECT_TYPE_U8`\
+ オブジェクトが 8 バイト符号なし整数であることを示します。
 
- OBJECT_TYPE_R4 オブジェクトが 4 バイト浮動小数点数であることを示します。
+ `OBJECT_TYPE_R4`\
+ オブジェクトが 4 バイト浮動小数点数であることを示します。
 
- OBJECT_TYPE_R8 オブジェクトが 8 バイトの浮動小数点数であることを示します。
+ `OBJECT_TYPE_R8`\
+ オブジェクトが 8 バイトの浮動小数点数であることを示します。
 
- OBJECT_TYPE_OBJECT オブジェクトがオブジェクトであることを示します。
+ `OBJECT_TYPE_OBJECT`\
+ オブジェクトがオブジェクトであることを示します。
 
- OBJECT_TYPE_NULL オブジェクトが NULL であることを示します。
+ `OBJECT_TYPE_NULL`\
+ オブジェクトが NULL であることを示します。
 
- OBJECT_TYPE_CLASS オブジェクトがクラスであることを示します。
+ `OBJECT_TYPE_CLASS`\
+ オブジェクトがクラスであることを示します。
 
 ## <a name="remarks"></a>Remarks
  引数として渡される、 [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)と[CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)メソッド。

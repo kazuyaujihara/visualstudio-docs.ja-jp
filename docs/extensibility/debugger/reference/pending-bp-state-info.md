@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4c19bed895a04e372f930d347a7caa761d34a56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d08e2ec34f153e984ea158eaca4ca282652e67e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865365"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460892"
 ---
 # <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
 コードの場所にバインドする準備が整っているブレークポイントの状態に関する情報が含まれています。
@@ -39,9 +42,11 @@ public struct PENDING_BP_STATE_INFO { 
 ```
 
 ## <a name="members"></a>メンバー
- 状態からの値、 [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)保留中のブレークポイントの状態を指定する列挙体。
+ `state`\
+ 値、 [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)保留中のブレークポイントの状態を指定する列挙体。
 
- フラグの組み合わせのフラグ、 [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md)ブレークポイントが仮想化されたかどうかを指定する列挙体。
+ `flags`\
+ フラグの組み合わせ、 [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md)ブレークポイントが仮想化されたかどうかを指定する列挙体。
 
 ## <a name="remarks"></a>Remarks
  この構造体に渡される、 [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)メソッドでいっぱいになった場所。

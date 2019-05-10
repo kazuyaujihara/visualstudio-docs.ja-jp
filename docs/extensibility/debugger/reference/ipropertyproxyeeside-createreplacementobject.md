@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03bfeeb30fad4f332a3a747dcf8468c4fb39ef56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c8a5c9a05525c55d35bb6e0033c5c2abcacbbc97
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914039"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458137"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 式エバリュエーター (EE) に固有のデータ オブジェクトのコピーを作成します。
@@ -38,12 +41,12 @@ int CreateReplacementObject(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dataIn`
+## <a name="parameters"></a>パラメーター
+ `dataIn`\
 
  [in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)データのコピーを保持しているオブジェクト。
 
- `dataOut`
+ `dataOut`\
 
  [out]新しいを返します`IEEDataStorage`オブジェクト。
 

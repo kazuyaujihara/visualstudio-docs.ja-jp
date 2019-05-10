@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c4ce1ce565ee2ca2fe4c6a26461ef283e7e76b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4c437d6b44777289abe6f079456ff2a8aba5e4a2
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916338"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458705"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 参照の選択された子の一覧を取得します。 将来使用するために予約されています。
@@ -46,28 +49,28 @@ int EnumChildren ( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dwFields`
+## <a name="parameters"></a>パラメーター
+ `dwFields`\
 
  [in]フラグの組み合わせ、 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 、列挙型のフィールドを指定する列挙体[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体入力します。
 
- `dwRadix`
+ `dwRadix`\
 
  [in]任意の数値情報を書式設定で使用する基数。
 
- `dwAttribFilter`
+ `dwAttribFilter`\
 
  [in]フラグの組み合わせ、 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)と組み合わせて、フィルターとして使用される列挙体、`pszNameFilter`パラメーターを列挙するな構造を選択します。
 
- `pszNameFilter`
+ `pszNameFilter`\
 
  [in]"MyX"と組み合わせて使用などのフィルターを指定する文字列、`dwAttribFilter`パラメーターを列挙する構造を選択します。
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in]このメソッドから戻る前に待機するミリ秒単位で最大時間。 使用`INFINITE`を無期限に待機します。
 
- `ppEnum`
+ `ppEnum`\
 
  [out]返します、 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)要求された子プロパティの一覧を格納しているオブジェクト。
 

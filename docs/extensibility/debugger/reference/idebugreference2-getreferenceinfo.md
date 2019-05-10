@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6db00c6c09b52e635e141d9e9a18ff3df6466
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 391f4bc6eb0480d26fd616afcea222db3b7be4b7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869058"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457381"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
 取得、 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)の参照を記述する構造体。 将来使用するために予約されています。
@@ -46,28 +49,28 @@ int GetReferenceInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dwFields`
+## <a name="parameters"></a>パラメーター
+ `dwFields`\
 
  [in]フラグの組み合わせ、 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)入力するフィールドを決定する列挙体、 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体。
 
- `nRadix`
+ `nRadix`\
 
  [in]任意の数値情報を書式設定で使用する基数。
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in]このメソッドから戻る前に待機するミリ秒単位で最大時間。 使用`INFINITE`を無期限に待機します。
 
- `rgpArgs`
+ `rgpArgs`\
 
  [in]配列の[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)オブジェクト。 今後使用するために予約されていますnull 値に設定します。
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in]参照引数の数、`rgpArgs`配列。 今後使用するために予約されています0 に設定します。
 
- `pReferenceInfo`
+ `pReferenceInfo`\
 
  [out]A [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造、プロパティの説明が入力されます。
 

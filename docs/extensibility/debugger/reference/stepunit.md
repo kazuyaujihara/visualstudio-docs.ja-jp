@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f1d6742b28badf39a5c9273d2891c2da9a9d5f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4115a1d7e01558f2991503200a76dabbf81993bc
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864868"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460996"
 ---
 # <a name="stepunit"></a>STEPUNIT
 ステップ実行するための増加単位を指定します。
@@ -41,12 +44,15 @@ enum enum_STEPUNIT { 
 };
 ```
 
-## <a name="members"></a>メンバー
- ステートメントによって STEP_STATEMENT 手順を実行します。
+## <a name="fields"></a>フィールド
+ `STEP_STATEMENT`\
+ ステートメントで手順を実行します。
 
- 行で STEP_LINE 手順を実行します。
+ `STEP_LINE`\
+ 行をステップ実行します。
 
- 命令によって STEP_INSTRUCTION 手順を実行します。
+ `STEP_INSTRUCTION`\
+ 命令で手順を実行します。
 
 ## <a name="remarks"></a>Remarks
  引数として渡される、[手順](../../../extensibility/debugger/reference/idebugprocess3-step.md)メソッド。

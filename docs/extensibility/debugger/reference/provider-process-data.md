@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d021efe197fcc15c99a1138d75e1343fc092efde
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d4013cabe43693e52498a3094aee10e4786da43a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865066"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460802"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
 この構造体は、コンピューターで実行されているプロセスに関する情報を提供します。
@@ -41,11 +44,14 @@ public struct PROVIDER_PROCESS_DATA {
 ```
 
 ## <a name="members"></a>メンバー
- フィールドからのフラグの組み合わせ、 [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)どのフィールドに入力を示す、列挙体。
+ `Fields`\
+ フラグの組み合わせ、 [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)どのフィールドに入力を示す、列挙体。
 
- ProgramNodes A [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)プログラム ノードの配列を含む構造体。
+ `ProgramNodes`\
+ A [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)プログラム ノードの配列を含む構造体。
 
- fIsDebuggerPresent 0 以外 (`TRUE`) 場合、[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]デバッガーが実行されている、ゼロ (`FALSE`) でない場合。
+ `fIsDebuggerPresent`\
+ 0 以外の場合 (`TRUE`) 場合、[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]デバッガーが実行されている、ゼロ (`FALSE`) でない場合。
 
 ## <a name="remarks"></a>Remarks
  この構造体に渡される、 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)メソッドでいっぱいになった場所。

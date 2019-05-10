@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9af633c49538a2b74163647d537526b35f2aa048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bbb64acfd71a6208fde3a5c3f84d6c5886ece72f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415792"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460732"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 この構造体には、さまざまな種類のフィールドの型に関する情報を指定します。
@@ -43,26 +46,29 @@ public struct TYPE_INFO {
 };
 ```
 
-#### <a name="parameters"></a>パラメーター
- dwKind A 値から、 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)和集合を解釈する方法を決定する列挙型。
+## <a name="members"></a>メンバー
+ `dwKind`\
+ 値、 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)和集合を解釈する方法を決定する列挙型。
 
- type.typeMeta
+ `type.typeMeta`\
 
  [C++のみ]含まれています、 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)場合構造体`dwKind`は`TYPE_KIND_METADATA`します。
 
- type.typePdb
+ `type.typePdb`\
 
  [C++のみ]含まれています、 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)場合構造体`dwKind`は`TYPE_KIND_PDB`します。
 
- type.typeBuilt
+ `type.typeBuilt`\
 
  [C++のみ]含まれています、 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)場合構造体`dwKind`は`TYPE_KIND_BUILT`します。
 
- type.unused 未使用のパディングです。
+ `type.unused`\
+ 未使用のパディングです。
 
- 共用体の名前を入力します。
+ `type`\
+ 共用体の名前。
 
- unionmember
+ `unionmember`\
 
  [C#のみ]マーシャ リングに基づく適切な構造体の型にこの`dwKind`します。
 

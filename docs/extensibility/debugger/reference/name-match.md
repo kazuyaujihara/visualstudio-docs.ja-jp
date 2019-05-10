@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50ae796a4662b51c186e6e9d69bf41771d040c8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 381219b592ad7ed676ff940dd594450123e5d037
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865691"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457993"
 ---
 # <a name="namematch"></a>NAME_MATCH
 一致する名前の大文字と小文字のオプションを選択します。
@@ -40,12 +43,15 @@ public enum NameMatchOptions { 
 }
 ```
 
-## <a name="members"></a>メンバー
- nmNone オプションが指定されていません。
+## <a name="fields"></a>フィールド
+ `nmNone`\
+ オプションは指定されていません。
 
- nmCaseSensitive 一致する名前が区別されることを示します。
+ `nmCaseSensitive`\
+ 一致する名前が区別されることを示します。
 
- nmCaseInsensitive 名を照合することを示します小文字は区別されません。
+ `nmCaseInsensitive`\
+ 一致する名前が大文字小文字を区別しないことを示します。
 
 ## <a name="remarks"></a>Remarks
  次のメソッドに引数として渡されます。

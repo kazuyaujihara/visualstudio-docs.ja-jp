@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d0f5c17fc0dd12cf8ecb184b667880462548877
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 87cdfcaa59fabb983d85d154bca48a381ebf8819
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868904"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457547"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 このスタック フレームに関連付けられている言語を取得します。
@@ -38,26 +41,26 @@ int GetLanguageInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pbstrLanguage`
+## <a name="parameters"></a>パラメーター
+ `pbstrLanguage`\
 
  [out]このスタック フレームに関連付けられているメソッドを実装する言語の名前を返します。
 
- `pguidLanguage`
+ `pguidLanguage`\
 
  [out]返します、`GUID`の言語。 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]言語、たとえば、次を返せること。
 
-- `guidVBScriptLang`
+-   `guidVBScriptLang`\
 
-- `guidJScriptLang`
+-   `guidJScriptLang`\
 
-- `guidCPPLang`
+-   `guidCPPLang`\
 
-- `guidVBLang`
+-   `guidVBLang`\
 
-- `guidSQLLang`
+-   `guidSQLLang`\
 
-- `guidScriptLang`
+-   `guidScriptLang`\
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

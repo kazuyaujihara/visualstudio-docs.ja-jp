@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8c447ce6b202fc3ccca65c6725e9eb3e5f13ecf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b0cd5939bf91a3f154cf28434f561ed93b1a597
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982253"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226673"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Office ソリューションで WPF コントロールを使用します。
 
@@ -55,7 +55,7 @@ Office ソリューションの UI 要素に WPF コントロールを直接追�
 
     - フォーム領域を追加、 **Outlook フォーム領域**プロジェクト項目。 詳細については、「[方法 :フォーム領域を Outlook アドイン プロジェクトに追加](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)します。
 
-    - 操作ウィンドウ、追加、**操作ウィンドウ コントロール**または**ユーザー コントロール**プロジェクト項目。 詳細については、「[方法 :Word 文書に操作ウィンドウを追加したり、Excel ブック](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)と[方法。Word 文書に操作ウィンドウを追加したり、Excel ブック](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)します。
+    - 操作ウィンドウ、追加、**操作ウィンドウ コントロール**または**ユーザー コントロール**プロジェクト項目。 詳細については、「[方法 :Word 文書に操作ウィンドウを追加したり、Excel ブック](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)します。
 
     - カスタム作業ウィンドウは、追加、**ユーザー コントロール**プロジェクト項目。 詳細については、「[方法 :カスタム作業ウィンドウをアプリケーションに追加](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)します。
 

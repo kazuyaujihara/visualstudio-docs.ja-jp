@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cdc06c8517442047778f2cc023478ede70b2a60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 05044241a1e5b708bffaa73fedd674cea7618715
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865929"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458164"
 ---
 # <a name="ienumdebugthreads2next"></a>IEnumDebugThreads2::Next
 列挙体から次の要素のセットを返します。
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `celt`
+## <a name="parameters"></a>パラメーター
+ `celt`\
 
  [in]取得する要素の数。 最大サイズを指定します、`rgelt`配列。
 
- `rgelt`
+ `rgelt`\
 
  [入力、出力]配列[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)情報を格納する要素。
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out]実際に返される要素の数を返します`rgelt`します。
 
