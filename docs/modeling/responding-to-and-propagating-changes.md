@@ -9,18 +9,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1d58ede1370976147b33cf1246f8b582adb3c5b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824008"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476601"
 ---
-# <a name="responding-to-and-propagating-changes"></a>変更内容への対応および変更内容の反映
+# <a name="respond-to-and-propagate-changes"></a>対応し、変更を反映
+
 要素は、作成または削除、更新、ときに、モデルの他の部分やファイル、データベース、またはその他のコンポーネントなどの外部のリソースへの変更を反映するコードを記述できます。
 
-## <a name="in-this-section"></a>このセクションの内容
- ガイドラインとしては、次の順序でこれらの手法を検討してください。
+## <a name="reference"></a>参照
+
+ガイドラインとしては、次の順序でこれらの手法を検討してください。
 
 |手法|シナリオ|詳細情報|
 |-|-|-|
@@ -34,12 +36,13 @@ ms.locfileid: "62824008"
 |選択ルール|選択ルールは、ユーザーが選択できる具体的に制限します。|[方法: 現在の選択項目を表示および制限する](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|シェイプおよびコネクタ シャドウ、線、色、線の幅、スタイルなどの機能を使用してモデル要素の状態を示します。|[シェイプおよびコネクタの更新とモデルへの反映](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
-## <a name="comparing-rules-and-store-events"></a>**ルールとストア イベントを比較します。**
- 変更通知、ルール、およびイベントは、モデルが変更された場合に実行されます。
+## <a name="compare-rules-and-store-events"></a>ルールを比較し、イベントの保存
 
- ルールは、通常、これで、変更が発生しました、エンド トランザクションで適用され、イベントが、トランザクションでの変更がコミットされた後に適用されます。
+変更通知、ルール、およびイベントは、モデルが変更された場合に実行されます。
 
- ストア イベントを使用して、ストア内の一貫性を維持するためには、ストア、および規則外のオブジェクトと、モデルを同期します。
+ルールは、通常、これで、変更が発生しました、エンド トランザクションで適用され、イベントが、トランザクションでの変更がコミットされた後に適用されます。
+
+ストア イベントを使用して、ストア内の一貫性を維持するためには、ストア、および規則外のオブジェクトと、モデルを同期します。
 
 - **カスタム ルールを作成する**抽象ルールからの派生クラスとしてカスタムの規則を作成します。 カスタム ルールに関する、フレームワークにも通知する必要があります。 詳細については、[ルール反映されるまで変更内で、モデル](../modeling/rules-propagate-changes-within-the-model.md)を参照してください。
 
