@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3b1feed9c32746c662131ba613fa19ca1aac0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a588a0e2438d1f95f8114e81c58330dd6f0ccd2b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864600"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458434"
 ---
 # <a name="unmanagedaddressphysical"></a>UNMANAGED_ADDRESS_PHYSICAL
 この構造体は、物理アドレスを表します。
@@ -36,8 +39,9 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
 }
 ```
 
-## <a name="terms"></a>用語
- 64 ビットの物理アドレス空間へのオフセットをオフセットします。
+## <a name="members"></a>メンバー
+ `offset`\
+ 物理アドレス空間に 64 ビット オフセット。
 
 ## <a name="remarks"></a>Remarks
  この構造体の共用体の一部は、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)ときに構造体、`dwKind`のフィールド、`DEBUG_ADDRESS_UNION`構造に設定されている`ADDRESS_KIND_UNMANAGED_PHYSICAL`(からの値、 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙型)。

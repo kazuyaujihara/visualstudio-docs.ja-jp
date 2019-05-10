@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3294c19455b5ddf36ebecff52dab4908be84afab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 87b72f7bf9d91f7e59bd5550149ed7cf09f8827d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865798"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458112"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 指定したマネージ アセンブリの参照の場所を決定します。
@@ -44,24 +47,24 @@ int ResolveAssemblyRef(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `assemName`
+## <a name="parameters"></a>パラメーター
+ `assemName`\
 
  [in]解決するのには、アセンブリの名前です。
 
- `assemBytes`
+ `assemBytes`\
 
  [out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)参照に関連付けられているアセンブリのバイト数を格納しているオブジェクト。
 
- `assemPdb`
+ `assemPdb`\
 
  [out]返します、`IEEDataStorage`シンボルを含むオブジェクトがこの参照に関連付けられているデータを格納します。
 
- `assemLocation`
+ `assemLocation`\
 
  [out]この参照のパスの場所を返します。
 
- `alr`
+ `alr`\
 
  [out]値を返します、 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)この参照のアセンブリの場所を示す列挙値。
 

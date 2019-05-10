@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c250cdfdef37a1c6eddfb266909deca1cc515f1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9f088bcfeebb570be911fbc8e37bed5995767ac9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869509"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457734"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 取得、 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)プロパティを記述する構造体。
@@ -46,28 +49,28 @@ int GetPropertyInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dwFields`
+## <a name="parameters"></a>パラメーター
+ `dwFields`\
 
  [in]値の組み合わせ、 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)で入力するフィールドを指定する列挙体、`pPropertyInfo`構造体。
 
- `nRadix`
+ `nRadix`\
 
  [in]任意の数値情報を書式設定で使用する基数。
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in]このメソッドから戻る前に待機するミリ秒単位で最大の時間を指定します。 使用`INFINITE`を無期限に待機します。
 
- `rgpArgs`
+ `rgpArgs`\
 
  [入力、出力]今後使用するために予約されていますnull 値に設定します。
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in]今後使用するために予約されています0 に設定します。
 
- `pPropertyInfo`
+ `pPropertyInfo`\
 
  [out]A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造、プロパティの説明が入力されます。
 

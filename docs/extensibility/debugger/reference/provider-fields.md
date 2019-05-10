@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c055c1cf9fffde227d4e52a9764b2559a2342b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 838a7dc0024e69335bf5c49c664bd491a6949d08
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864798"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460922"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 プログラムのプロバイダーに関連付けられたプロパティを指定します。
@@ -39,10 +42,12 @@ public enum enum_PROVIDER_FIELDS {
 };
 ```
 
-## <a name="members"></a>メンバー
- PFIELD_PROGRAM_NODES、`ProgramNodes`フィールドは有効です。
+## <a name="fields"></a>フィールド
+ `PFIELD_PROGRAM_NODES`\
+ `ProgramNodes`フィールドは有効です。
 
- PFIELD_IS_DEBUGGER_PRESENT、`fIsDebuggerPresent`フィールドは有効です。
+ `PFIELD_IS_DEBUGGER_PRESENT`\
+ `fIsDebuggerPresent`フィールドは有効です。
 
 ## <a name="remarks"></a>Remarks
  これらの値が返されます、`Fields`のメンバー、 [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)を構造体のどのフィールドが入力された明示的に示すために構造体。

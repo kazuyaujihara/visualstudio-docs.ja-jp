@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 017077717f5353fed941124d69d258beaab04e40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 920e74b547bba97a742b68ceb057a0719d6ef700
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823672"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459150"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>FxCop アナライザーを Visual Studio をインストールします。
 
@@ -53,9 +53,9 @@ Microsoft と呼ばれるアナライザーのセットを作成する[Microsoft
 
 ## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>VSIX として FxCop アナライザーをインストールするには
 
-Visual Studio 2017 バージョン 15.5 以降にインストールすることができます、 [Microsoft コード分析 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)拡張機能をすべてのマネージ プロジェクトの FxCop アナライザーが含まれています。
-
 ::: moniker range="vs-2017"
+
+Visual Studio 2017 バージョン 15.5 以降にインストールすることができます、 [Microsoft コード分析 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)拡張機能をすべてのマネージ プロジェクトの FxCop アナライザーが含まれています。
 
 1. Visual Studio で、次のように選択します。**ツール** > **拡張機能と更新**します。
 
@@ -64,40 +64,52 @@ Visual Studio 2017 バージョン 15.5 以降にインストールすること�
    > [!NOTE]
    > またはから直接、拡張機能をダウンロード[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)します。
 
+2. 展開**オンライン**選択し、左側のウィンドウで**Visual Studio Marketplace**します。
+
+3. 検索ボックスに「"コード分析"を探して、 **Microsoft コード分析 2017**拡張機能。
+
+   ![Microsoft コード分析 2017 の拡張機能](media/extensions-and-updates-code-analysis.png)
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+
+[Microsoft コード分析 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019)拡張機能には、すべてのマネージ プロジェクトの FxCop アナライザーが含まれています。 この拡張機能をインストールするには
 
 1. Visual Studio で、次のように選択します。**拡張** > **拡張機能の管理**します。
 
    **拡張機能の管理** ダイアログ ボックスが表示されます。
 
    > [!NOTE]
-   > またはから直接、拡張機能をダウンロード[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)します。
+   > またはから直接、拡張機能をダウンロード[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019)します。
+
+2. 展開**オンライン**選択し、左側のウィンドウで**Visual Studio Marketplace**します。
+
+3. 検索ボックスに「"コード分析"を探して、 **Microsoft コード分析 2019**拡張機能。
+
+   ![コード分析 2019 の Microsoft 拡張機能](media/manage-extensions-code-analysis.png)
 
 ::: moniker-end
 
-1. 展開**オンライン**選択し、左側のウィンドウで**Visual Studio Marketplace**します。
-
-1. 検索ボックスに「"コード分析"を探して、 **Microsoft コード分析 2017**拡張機能。
-
-   ![Microsoft コード分析の拡張機能](media/extensions-and-updates-code-analysis.png)
-
-1. 選択**ダウンロード**します。
+4. 選択**ダウンロード**します。
 
    拡張機能をダウンロードします。
 
-1. 選択**OK**に、ダイアログ ボックスを閉じ、起動する Visual Studio のすべてのインスタンスを閉じます、 **VSIX インストーラー**します。
+5. 選択**OK**に、ダイアログ ボックスを閉じ、起動する Visual Studio のすべてのインスタンスを閉じます、 **VSIX インストーラー**します。
 
    **VSIX インストーラー**  ダイアログ ボックスが表示されます。
 
+   ::: moniker range="vs-2017"
+
    ![Microsoft コード分析のための VSIX インストーラー](media/vsix-installer-code-analysis.png)
 
-1. 選択**変更**インストールを開始します。
+   ::: moniker-end
 
-1. しばらくすると、2 つのインストールを完了します。 **[閉じる]** を選択します。
+6. 選択**変更**インストールを開始します。
 
-1. Visual Studio を再度開きます。
+   しばらくすると、2 つのインストールを完了します。
+
+7. 選択**閉じる**、もう一度 Visual Studio を開きます。
 
 ::: moniker range="vs-2017"
 

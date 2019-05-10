@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fd27ee043e55b4dd43be956e41dd870be550562
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4fe0a804922296e26846b9b477091883c742253e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865879"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458098"
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
 この構造体は、モジュールの JustMyCode 情報の設定に使用されます。
@@ -39,9 +42,11 @@ public struct JMC_CODE_SPEC {
 ```
 
 ## <a name="members"></a>メンバー
-fIsUserCode 0 以外の値 (`TRUE`) モジュールは、ユーザー コードと見なす場合は、0 (`FALSE`) モジュールが外部コードとして扱うとデバッグする場合。
+`fIsUserCode`\
+0 以外の値 (`TRUE`) モジュールは、ユーザー コードと見なす場合は、0 (`FALSE`) モジュールが外部コードとして扱うとデバッグする場合。
 
-bstrModuleName 対象のモジュールの名前。
+`bstrModuleName`\
+対象のモジュールの名前。
 
 ## <a name="remarks"></a>Remarks
 このような構造の一覧としてこの構造体が渡される、 [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)メソッド。

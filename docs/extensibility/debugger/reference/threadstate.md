@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eb95d39c60952c48e62c0e2e61edefeaa59783
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3019671b98d3eb17c92d97c368f2f7338ee55a1d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913341"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460709"
 ---
 # <a name="threadstate"></a>THREADSTATE
 スレッドの状態を指定します。
@@ -45,16 +48,21 @@ public enum enum_THREADSTATE { 
 };
 ```
 
-## <a name="members"></a>メンバー
- THREADSTATE_RUNNING では、スレッドが実行されていることを示します。
+## <a name="fields"></a>フィールド
+ `THREADSTATE_RUNNING`\
+ スレッドが実行されていることを示します。
 
- THREADSTATE_STOPPED では、ブレークポイントのため、スレッドが停止していることを示します。
+ `THREADSTATE_STOPPED`\
+ ブレークポイントのため、スレッドが停止していることを示します。
 
- THREADSTATE_FRESH は、スレッドが、作成されましたが、コードがまだ実行されていないことを示します。
+ `THREADSTATE_FRESH`\
+ スレッドが作成されたらは、コードがまだ実行されていないことを示します。
 
- THREADSTATE_DEAD は、スレッドが実行されないことを示します。
+ `THREADSTATE_DEAD`\
+ スレッドが実行されないことを示します。
 
- THREADSTATE_FROZEN は、スレッドが固定されていることを示します (の実行を実行できません)。
+ `THREADSTATE_FROZEN`\
+ スレッドが固定されていることを示します (の実行を実行できません)。
 
 ## <a name="remarks"></a>Remarks
  使用、`dwThreadState`のフィールド、 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)構造体。

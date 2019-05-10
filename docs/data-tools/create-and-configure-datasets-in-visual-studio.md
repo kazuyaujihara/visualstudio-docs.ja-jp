@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b71d4b8ea58cbbe36e3fe48228789d4aee02af53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41a7a699506853d6891c7d7b66fef4082814c06a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567793"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460618"
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio でデータセットを作成および構成する
+# <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>方法: Visual Studio でデータセットを作成および構成する
 
 データセットは、一連のデータベースからデータをメモリに格納され、有効にする変更の追跡をサポートするオブジェクトを作成、読み取り、更新、および削除 (CRUD) 操作でそのデータを常に、データベースに接続する必要はありません。 データセットは、単純な用に設計された*フォーム オーバー データ*ビジネス アプリケーション。 新しいアプリケーションで、Entity Framework を使用して、保存してメモリ内のデータをモデル化を検討してください。 データセットを使用するには、データベースの概念の基本的な知識があります。
 

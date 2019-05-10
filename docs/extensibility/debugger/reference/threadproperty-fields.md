@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 641687dbcfa6bf50ba9e848de589662d282d0c7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1c908658662d96d5c1ad5f3b16e9dcce2e4f7235
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864574"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458483"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 取得するスレッドに関する情報を指定します。
@@ -49,20 +52,27 @@ public enum enum_THREADPROPERTY_FIELDS { 
 };
 ```
 
-## <a name="members"></a>メンバー
- TPF_ID 初期化/使用、`dwThreadId`のフィールド、 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)構造体。
+## <a name="fields"></a>フィールド
+ `TPF_ID`\
+ 初期化/使用、`dwThreadId`のフィールド、 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)構造体。
 
- TPF_SUSPENDCOUNT 初期化/使用、`dwSuspendCount`のフィールド、 `THREADPROPERTIE`S 構造体。
+ `TPF_SUSPENDCOUNT`\
+ 初期化/使用、`dwSuspendCount`のフィールド、 `THREADPROPERTIE`S 構造体。
 
- TPF_STATE 初期化/使用、`dwThreadState`のフィールド、 `THREADPROPERTIE`S 構造体。
+ `TPF_STATE`\
+ 初期化/使用、`dwThreadState`のフィールド、 `THREADPROPERTIE`S 構造体。
 
- TPF_PRIORITY 初期化/使用、`bstrPriority`のフィールド、 `THREADPROPERTIE`S 構造体。
+ `TPF_PRIORITY`\
+ 初期化/使用、`bstrPriority`のフィールド、 `THREADPROPERTIE`S 構造体。
 
- TPF_NAME 初期化/使用、`bstrName`のフィールド、 `THREADPROPERTIE`S 構造体。
+ `TPF_NAME`\
+ 初期化/使用、`bstrName`のフィールド、 `THREADPROPERTIE`S 構造体。
 
- TPF_LOCATION 初期化/使用、`bstrLocation`のフィールド、 `THREADPROPERTIE`S 構造体。
+ `TPF_LOCATION`\
+ 初期化/使用、`bstrLocation`のフィールド、 `THREADPROPERTIE`S 構造体。
 
- TPF_ALLFIELDS では、すべてのフィールドを指定します。
+ `TPF_ALLFIELDS`\
+ すべてのフィールドを指定します。
 
 ## <a name="remarks"></a>Remarks
  これらの値が引数として渡される、 [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)のどのフィールドを示すメソッド、 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)構造体が初期化されるは。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd92f8a93427264966bb44bbf44d5e519cb9459a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 09d86fb259cb4fe04b55211acbd60833e6362855
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914206"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458149"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 そのビューアーをインスタンス化するために、このプロパティの種類ビューアーに関する情報を取得します。
@@ -46,28 +49,28 @@ int GetManagedViewerCreationData(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `assemName`
+## <a name="parameters"></a>パラメーター
+ `assemName`\
 
  [out]このオブジェクトを保持しているアセンブリの名前を返します。
 
- `assemBytes`
+ `assemBytes`\
 
  [out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) (これは、null 値をバイトが使用できない場合)、このオブジェクトのアセンブリのバイト数を格納しているオブジェクト。
 
- `assemPdb`
+ `assemPdb`\
 
  [out]返します、`IEEDataStorage`シンボルを含むオブジェクトは、(これは、null 値をシンボル ストアが使用できない場合)、このオブジェクトの情報を格納します。
 
- `className`
+ `className`\
 
  [out]このオブジェクトを含むクラスの名前を返します。
 
- `alr`
+ `alr`\
 
  [out]値を返します、 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)アセンブリの場所を示す列挙値。
 
- `replacementOk`
+ `replacementOk`\
 
  [out]0 以外の値を返します (`TRUE`) このオブジェクトの値を変更できる場合は 0 (`FALSE`) オブジェクトが読み取り専用である場合。
 

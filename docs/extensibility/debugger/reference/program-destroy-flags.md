@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e232570edd4fcca95089324e30f3cbd725bdb9f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4958a1ee7b53fc975e126174fa6bd3f02daaa9ab
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865074"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460876"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
 有効な列挙値は、プログラムのフラグを破棄します。
@@ -37,7 +40,7 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 };
 ```
 
-## <a name="terms"></a>用語
+## <a name="fields"></a>フィールド
  PROGRAM_DESTROY_CONTINUE_DEBUGGING 破棄、プログラムしますが、デバッグを続行します。
 
 ## <a name="remarks"></a>Remarks

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdad468c788d475d32eddca160728b2c3ecf11d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 205308bbac53ac21b8b81c26b4f333c3be111dbd
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867433"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226659"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 指定された数の列挙体シーケンス内のカスタム属性を取得します。
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `celt`
+## <a name="parameters"></a>パラメーター
+ `celt`\
 
  [in]取得する要素の数。 最大サイズを指定します、`rgelt`配列。
 
- `rgelt`
+ `rgelt`\
 
  [out]配列の[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)情報を格納するオブジェクト。
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out]実際に返される要素の数を返します`rgelt`します。
 

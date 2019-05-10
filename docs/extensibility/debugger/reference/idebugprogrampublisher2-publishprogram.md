@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1553070f9afecf6ce60ac51b94ecb3f05d0eb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 04c63a2a18f04301e16dd0e8137ab8ba4b824c57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869721"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457857"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 この方法は、デバッグ エンジン (DEs) を利用プログラムおよびセッション デバッグ マネージャーになります。
@@ -40,16 +43,16 @@ int PublishProgram(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `Engines`
+## <a name="parameters"></a>パラメーター
+ `Engines`\
 
  [in]DEs を開始したり、このプログラムにアタッチされる Guid の配列。
 
- `szFriendlyName`
+ `szFriendlyName`\
 
  [in]プログラムのフレンドリーな名前（これはメニューまたはユーザーに表示されるダイアログに表示されます）。
 
- `pDebuggeeInterface`
+ `pDebuggeeInterface`\
 
  [in]`IUnknown`プログラム インターフェイス (この値は、プログラムを一意に識別するために cookie として使用されますこの同じの値は、プログラムを"非公開"に使用されます)。
 
