@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fb7ef710d117318d475e32f19b5ca2511b94f8bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dc75c7414e0fff18f76d14f8f9a4e0779a9e7a2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386932"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476534"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Visual Studio 2017 での設計向けの新機能
 
 ## <a name="live-dependency-validation"></a>ライブ依存関係の検証
 
-不要な依存関係を削除するとは、技術的負債の管理の重要な部分です。 依存関係のライブの検証に含まれる、問題の正確な情報を提供して、エラーの一覧と、エディターの新機能を完全に活用します。
+不要な依存関係を削除するとは、技術的負債の管理の重要な部分です。 Visual Studio は、配置されている場所などの問題に関する正確な情報を含む、依存関係のライブの検証を提供します。 ライブ依存関係の検証のメリットをエラー一覧と、エディターの新機能です。
 
 ![アクションでのリアルタイム依存関係の検証](media/dep-validation-whatsnew-01.png)
 
-オーサリング環境は、「依存関係図」には、「レイヤー図」からの用語を変更し、やすくよりアクセス可能で、依存関係の検証を行うに変更されました。
+オーサリング環境は、依存関係の検証のことを発見しやすく、身近に変更されました。 用語は、「レイヤー図」から「依存関係図」に変更されました。
 
 **アーキテクチャ**メニューが直接依存関係図を作成するコマンドを含むようになりました。
 
 ![[アーキテクチャ] メニュー項目をライブ依存関係](media/dep-validation-whatsnew-02.png)
 
-... わかりやすいように、依存関係図とその説明、レイヤーのプロパティの名前が変更されているとします。
+レイヤーのプロパティの名前と説明は、わかりやすいように変更されました。
 
 ![ライブ依存関係は、プロパティ名を更新します。](media/dep-validation-whatsnew-03.png)
 
-表示、ソリューションの現在のコード分析の結果ですぐに、変更の影響、ダイアグラムを保存するたびにします。 不要「依存関係の検証」コマンドの完了を待機する必要はありません。
+すぐにときに表示するソリューションの現在のコード分析の結果で、変更の影響、ダイアグラムを保存します。 完了を待機する必要はありません、**依存関係の検証**コマンド。
 
 詳細については、[このブログの投稿](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)を参照してください。
 
 ## <a name="uml-designers-have-been-removed"></a>UML デザイナー向けが削除されました
 
-UML デザイナーは、このバージョンの Visual Studio Enterprise から削除されました。
+UML デザイナー向け Visual Studio から削除されました。
 
 * UML 図が XML ファイルとして表示されるようになりました
 * UML モデル エクスプ ローラーが存在しません
@@ -57,7 +57,7 @@ UML デザイナーは、このバージョンの Visual Studio Enterprise か�
 * DSL またはレイヤーにから後方リンクはサポートされていません
 * Modeling SDK での UML 拡張機能はサポートされなくなりました
 
-ただし、サポートをご利用は、.NET および C++ コードのアーキテクチャを視覚化する[コード マップ](map-dependencies-across-your-solutions.md)、および上記で説明した依存関係検証、大幅に改善します。
+.NET のアーキテクチャを視覚化するためのサポートとC++コードを利用[コード マップ](map-dependencies-across-your-solutions.md)します。
 
 UML デザイナー向けの重要なユーザーの場合は、UML のニーズに代替のツールを決定するときに、Visual Studio 2015 またはそれ以前のバージョンを使用することもできます。
 

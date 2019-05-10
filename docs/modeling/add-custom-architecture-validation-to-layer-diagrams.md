@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d79c56cfeb2c1a5ef6f83ef64c005fd794c1f29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 743337777677b61661da53446f9717cad14ff9ed
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960451"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476670"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>カスタム アーキテクチャ検証を依存関係図に追加する
 
@@ -32,7 +32,7 @@ Visual Studio で、ソース コードが依存関係図に、依存関係に�
 
 ## <a name="requirements"></a>必要条件
 
-「 [要件](../modeling/extend-layer-diagrams.md#prereqs)」を参照してください。
+「 [要件](../modeling/extend-layer-diagrams.md#requirements)」を参照してください。
 
 ## <a name="defining-a-layer-validator-in-a-new-vsix"></a>新しい VSIX でレイヤー検証コントロールを定義する
 

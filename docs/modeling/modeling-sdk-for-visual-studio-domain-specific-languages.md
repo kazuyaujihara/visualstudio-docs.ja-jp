@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b028655c0654bc5332264c3bcc0fced01480b69f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b955dc6f79c689ca30d8d9876d0888b14127490
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815038"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476527"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modeling SDK for Visual Studio - ドメイン固有言語
 
@@ -41,38 +41,3 @@ MSDK では、ドメイン固有言語 (DSL) の形式でモデルを迅速に�
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 [関連するブログの投稿](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
-
-高度な技法とトラブルシューティングに関するガイダンスについては、[Visual Studio DSL & Modeling Tools 機能拡張フォーラム](http://go.microsoft.com/fwlink/?LinkID=186074)を参照してください。
-
-## <a name="in-this-section"></a>このセクションの内容
- [ドメイン固有言語の概要](../modeling/getting-started-with-domain-specific-languages.md)
-
- [モデル、クラス、およびリレーションシップについて](../modeling/understanding-models-classes-and-relationships.md)
-
- [方法: ドメイン固有言語を定義する](../modeling/how-to-define-a-domain-specific-language.md)
-
- [ドメイン固有言語のカスタマイズおよび拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
- [ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)
-
- [ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
- [ドメイン固有言語からのコード生成](../modeling/generating-code-from-a-domain-specific-language.md)
-
- [DSL コードについて](../modeling/understanding-the-dsl-code.md)
-
- [ファイル格納処理および XML シリアル化処理のカスタマイズ](../modeling/customizing-file-storage-and-xml-serialization.md)
-
- [ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)
-
- [Windows フォームに基づくドメイン固有言語の作成](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
-
- [WPF に基づくドメイン固有言語の作成](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
- [方法: ドメイン固有言語デザイナーを拡張する](../modeling/how-to-extend-the-domain-specific-language-designer.md)
-
- [Visualization and Modeling SDK に対してサポートされている Visual Studio のエディション](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
-
- [方法: ドメイン固有言語を新バージョンに移行する](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
-
- [Modeling SDK for Visual Studio の API リファレンス](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
