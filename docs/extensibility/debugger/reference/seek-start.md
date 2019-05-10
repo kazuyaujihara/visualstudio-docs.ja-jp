@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e003b74faeb7c6ed165c43380a7c4c6b0520ea0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 341b321b529bc1359ba576cc26ec20cc99e96cb3
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864822"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458391"
 ---
 # <a name="seekstart"></a>SEEK_START
 [逆アセンブル] ストリームのシークの開始元の位置を指定します。
@@ -45,16 +48,21 @@ public enum enum_SEEK_START { 
 };
 ```
 
-## <a name="members"></a>メンバー
- SEEK_START_BEGIN では、現在のドキュメントの先頭に検索を開始します。
+## <a name="fields"></a>フィールド
+ `SEEK_START_BEGIN`\
+ 現在のドキュメントの先頭に検索を開始します。
 
- SEEK_START_END では、現在のドキュメントの最後にシークが開始されます。
+ `SEEK_START_END`\
+ 現在のドキュメントの最後にシークが開始されます。
 
- 現在のドキュメントの現在の位置をシーク SEEK_START_CURRENT が起動します。
+ `SEEK_START_CURRENT`\
+ 現在のドキュメントの現在位置にある検索を開始します。
 
- 現在のドキュメントの指定したコードのコンテキストでシーク SEEK_START_CODECONTEXT が起動します。
+ `SEEK_START_CODECONTEXT`\
+ 現在のドキュメントの指定したコードのコンテキストではシークを開始します。
 
- 指定したコードの場所の識別子でシーク SEEK_START_CODELOCID が起動します。 コードの場所の識別子が呼び出すことによって取得した[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)します。
+ `SEEK_START_CODELOCID`\
+ 指定したコードの場所 id で検索を開始します。 コードの場所の識別子が呼び出すことによって取得した[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)します。
 
 ## <a name="remarks"></a>Remarks
  引数として渡される、[シーク](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)メソッド。

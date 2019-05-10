@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95dc42b0e65ad0f849dd95e0ffead122e4cd1ebf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1225729ceb6d1a874f4ca5bedef287ababbdb962
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915700"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457431"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 シンボルのグループ内のモジュールに関する情報を取得します。
@@ -43,24 +46,24 @@ int GetCurrentModulesInfo(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pCount`
+## <a name="parameters"></a>パラメーター
+ `pCount`\
 
  [in]内のモジュールの数、`ppGuids`配列。
 
- `ppGuids`
+ `ppGuids`\
 
  [in]モジュールの一意の識別子を含む配列。
 
- `pADIds`
+ `pADIds`\
 
  [in]アプリケーション ドメインの識別子です。
 
- `pCurrentState`
+ `pCurrentState`\
 
  [in]シンボルのグループの現在の状態。
 
- `ppCDModItfs`
+ `ppCDModItfs`\
 
  [out]シンボルのグループ内のモジュールを格納しているオブジェクトを返します。
 

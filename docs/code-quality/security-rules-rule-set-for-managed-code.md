@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72182607369094781050b94b1003398479dfe2cb
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825293"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459131"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>マネージド コードの "セキュリティ規則" 規則セット
 Microsoft のセキュリティ規則ルールが報告される潜在的なセキュリティの問題の数を最大化するセットを含める必要があります。
@@ -66,6 +66,13 @@ Microsoft のセキュリティ規則ルールが報告される潜在的なセ�
 |[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|安全ではないデシリアライザー BinaryFormatter を使用しないでください|
 |[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|最初に BinaryFormatter.Binder を設定しないで BinaryFormatter.Deserialize を呼び出さないでください|
 |[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|BinaryFormatter.Deserialize を呼び出す前に BinaryFormatter.Binder が設定されていることを確認します|
+|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|安全でないデシリアライザー LosFormatter を使用しないでください。|
+|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|NetDataContractSerializer の安全でないデシリアライザーを使用しないでください。|
+|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|最初の設定 NetDataContractSerializer.Binder せずシリアル化を解除できません。|
+|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|NetDataContractSerializer.Binder が逆シリアル化する前に設定してください。|
+|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|安全でないデシリアライザー ObjectStateFormatter を使用しないでください。|
+|[CA2321](ca2321.md)|JavaScriptSerializer を SimpleTypeResolver を使用してシリアル化を解除できません。|
+|[CA2322](ca2322.md)|JavaScriptSerializer が SimpleTypeResolver で逆シリアル化する前に初期化されていませんを確認します。|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|SQL インジェクションの脆弱性のコード レビュー|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|XSS の脆弱性のコード レビュー|
 |[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|ファイル パス インジェクションの脆弱性のコード レビュー|

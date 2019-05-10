@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f701415c011b304ac886669de5da8f813b26220
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 23c00147b0d42c848d01e0e2a08df80672750e71
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915815"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226427"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 このメソッドは、完全修飾クラス名を表すクラスのフィールドの型を取得します。
@@ -40,16 +43,16 @@ int GetClassTypeByName(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pszClassName`
+## <a name="parameters"></a>パラメーター
+ `pszClassName`\
 
  [in]クラス名。
 
- `nameMatch`
+ `nameMatch`\
 
  [in]たとえば、一致の大文字小文字を区別の種類を選択します。 値、 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体。
 
- `ppField`
+ `ppField`\
 
  [out]によって表されるクラス型を返します、 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)インターフェイス。
 

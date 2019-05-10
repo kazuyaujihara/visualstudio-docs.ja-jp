@@ -1,31 +1,32 @@
 ---
-title: n 層アプリケーションのデータセットにコードを追加する
+title: N 層アプリケーションでのデータセットにコードを追加します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
-- n-tier applications, extending datasets
+- n-tier applications, extending DataSets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a66250c9d376962bfef2db6b563070696fd33346
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b776e75df2830b89fd1ffe9aed197e9cd1019851
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402874"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458473"
 ---
-# <a name="add-code-to-datasets-in-n-tier-applications"></a>n 層アプリケーションのデータセットにコードを追加する
+# <a name="add-code-to-datasets-in-n-tier-applications"></a>N 層アプリケーションでのデータセットにコードを追加します。
+
 データセットの機能を拡張するには、データセットの部分クラス ファイルを作成し、コードを追加 (コードを追加するのではなく、 *DatasetName*します。Dataset.Designer ファイル)。 部分クラスには、特定のクラスを複数の物理ファイルに分割するためのコードが有効にします。 詳細については、次を参照してください。[部分](/dotnet/visual-basic/language-reference/modifiers/partial)または[部分クラスとメソッド](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)します。
 
 (型指定されたデータセット) のデータセット定義を変更するたびに、データセットを定義するコードが生成されます。 このコードは、データセットの構成を変更するウィザードの実行中に変更するときにも生成されます。 コードが、データセットの再生成中に削除されないようにするには、データセットの部分クラス ファイルにコードを追加します。
 
-既定では、データセットと TableAdapter コードを分離したら、結果はプロジェクトごとに別個のクラス ファイルが。 元のプロジェクトにという名前のファイル*DatasetName.Designer.vb* (または*DatasetName.Designer.cs*) TableAdapter コードを格納しています。 指定されているプロジェクト、 **Dataset プロジェクト**プロパティという名前のファイルは、 *DatasetName.DataSet.Designer.vb* (または*DatasetName.DataSet.Designer.cs*).このファイルには、データセット コードが含まれています。
+既定では、データセットと TableAdapter コードを分離したら、結果はプロジェクトごとに別個のクラス ファイルが。 元のプロジェクトにという名前のファイル*DatasetName.Designer.vb* (または*DatasetName.Designer.cs*) TableAdapter コードを格納しています。 指定されているプロジェクト、 **DataSet プロジェクト**プロパティという名前のファイルは、 *DatasetName.DataSet.Designer.vb* (または*DatasetName.DataSet.Designer.cs*).このファイルには、データセット コードが含まれています。
 
 > [!NOTE]
 > データセットと Tableadapter を分離する場合 (設定して、 **DataSet プロジェクト**プロパティ)、プロジェクト内の既存のデータセット部分クラスが自動的に移動しません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。
@@ -33,7 +34,7 @@ ms.locfileid: "63402874"
 > [!NOTE]
 > 検証コードを追加する必要があると、に型指定されたデータセットが生成するための機能を提供します<xref:System.Data.DataTable.ColumnChanging>と<xref:System.Data.DataTable.RowChanging>イベント ハンドラー。 詳細については、次を参照してください。 [n 層データセットに検証を追加](../data-tools/add-validation-to-an-n-tier-dataset.md)します。
 
-## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>N 層アプリケーションのデータセットにコードを追加するには
+## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>N 層アプリケーションでのデータセットにコードを追加するには
 
 1. 含むプロジェクトを見つけ、 *.xsd*ファイル。
 
@@ -68,4 +69,4 @@ ms.locfileid: "63402874"
 - [n 層アプリケーションの TableAdapters にコードを追加する](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Tableadapter の作成および構成](create-and-configure-tableadapters.md)
 - [階層更新の概要](hierarchical-update.md)
-- [Visual Studio のデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio でのデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)

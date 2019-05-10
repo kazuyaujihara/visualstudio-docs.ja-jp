@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3a11e368b6260d00f3f6ed0b19d94aa26bd31a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58531e64c88c89a92b5eee7f2eac7067cf42775f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865467"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458009"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 特定のモジュール (DLL、exe ファイルまたはアセンブリ) について説明します。
@@ -59,29 +62,41 @@ public struct MODULE_INFO { 
 ```
 
 ## <a name="members"></a>メンバー
- フラグの組み合わせを dwValidFields A、 [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)フィールドが記入を指定する列挙体。
+ `dwValidFields`\
+ フラグの組み合わせ、 [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)フィールドが記入を指定する列挙体。
 
- m_bstrName モジュール名。
+ `m_bstrName`\
+ モジュール名。
 
- m_bstrUrl モジュールの URL。
+ `m_bstrUrl`\
+ モジュールの URL。
 
- m_bstrVersion モジュールのバージョン。
+ `m_bstrVersion`\
+ モジュールのバージョン。
 
- m_bstrDebugMessage、省略可能なメッセージが、モジュールに関するなど「シンボルを読み込めません」
+ `m_bstrDebugMessage`\
+ オプションのメッセージ、モジュールに関するなど「シンボルを読み込めません」
 
- m_addrLoadAddress モジュールの読み込みアドレス。
+ `m_addrLoadAddress`\
+ モジュールの読み込みアドレス。
 
- m_addrPreferredLoadAddress モジュールの標準読み込みアドレス。
+ `m_addrPreferredLoadAddress`\
+ モジュールの標準読み込みアドレス。
 
- m_dwSize モジュールのサイズ。
+ `m_dwSize`\
+ モジュールのサイズ。
 
- m_dwLoadOrder モジュールの読み込み順序。
+ `m_dwLoadOrder`\
+ モジュールの読み込み順序。
 
- m_TimeStamp シンボル ファイルが最後に変更します。
+ `m_TimeStamp`\
+ シンボル ファイルの最終変更時刻。
 
- m_bstrUrlSymbolLocation シンボル ファイルの場所 (たとえば、".\\")、モジュールで指定します。 開始位置として、モジュールのシンボルを検索するために使用します。
+ `m_bstrUrlSymbolLocation`\
+ シンボル ファイルの場所 (たとえば、".\\")、モジュールで指定します。 開始位置として、モジュールのシンボルを検索するために使用します。
 
- フラグの組み合わせを m_dwModuleFlags A、 [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)モジュールを表す列挙体。
+ `m_dwModuleFlags`\
+ フラグの組み合わせ、 [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)モジュールを表す列挙体。
 
 ## <a name="remarks"></a>Remarks
  この構造体に渡される、 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)メソッドでいっぱいになった場所。

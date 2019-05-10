@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b518e9bcfd77f489dd38a96eb8e378610841feb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 947063690840dfb3c49e2c41e6178cbc67dc714b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913466"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457902"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
 参照の比較の種類を指定します。
@@ -41,12 +44,15 @@ public enum enum_REFERENCE_COMPARE { 
 };
 ```
 
-## <a name="members"></a>メンバー
- REF_COMPARE_EQUAL には、等しくない比較を指定します。
+## <a name="fields"></a>フィールド
+ `REF_COMPARE_EQUAL`\
+ 等しくない比較を指定します。
 
- REF_COMPARE_LESS_THAN 指定小-比較よりもします。
+ `REF_COMPARE_LESS_THAN`\
+ 小なりを指定の比較よりもします。
 
- REF_COMPARE_GREATER_THAN 指定、大きい-より。
+ `REF_COMPARE_GREATER_THAN`\
+ 大なりを指定します-比較よりもします。
 
 ## <a name="remarks"></a>Remarks
  引数として渡される、[比較](../../../extensibility/debugger/reference/idebugreference2-compare.md)メソッド。

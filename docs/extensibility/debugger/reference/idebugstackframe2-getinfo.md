@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0aeb888b2cc81dac6157ef0944703227799e61e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1db085059b93eac4afd9f03ed17b5e267411a373
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868755"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458533"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 スタック フレームの説明を取得します。
@@ -40,16 +43,16 @@ int GetInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dwFieldSpec`
+## <a name="parameters"></a>パラメーター
+ `dwFieldSpec`\
 
  [in]フラグの組み合わせ、 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)のどのフィールドを指定する列挙体、`pFrameInfo`パラメーター入力します。
 
- `nRadix`
+ `nRadix`\
 
  [in]任意の数値情報を書式設定で使用する基数。
 
- `pFrameInfo`
+ `pFrameInfo`\
 
  [out]A [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)構造体のスタック フレームの説明が入力されます。
 

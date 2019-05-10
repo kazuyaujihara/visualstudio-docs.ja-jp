@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55b3334c8bd28d3975f06aa39ca8c7fd719f1f9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59b0fd83202ea8a5514d1ed637404d4864bf6b57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913354"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460725"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 スレッドのプロパティについて説明します。
@@ -49,19 +52,26 @@ public struct THREADPROPERTIES { 
 ```
 
 ## <a name="members"></a>メンバー
- フラグの組み合わせを dwFields A、 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)有効ではこの構造体のフィールドを記述する列挙。
+ `dwFields`\
+ フラグの組み合わせ、 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)有効ではこの構造体のフィールドを記述する列挙。
 
- dwThreadId スレッドの id。
+ `dwThreadId`\
+ スレッドの id。
 
- dwSuspendCount スレッドは中断回数です。
+ `dwSuspendCount`\
+ スレッドは中断回数です。
 
- dwThreadState A 値から、 [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)動作のスレッドの状態を示す列挙値。
+ `dwThreadState`\
+ 値、 [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)動作のスレッドの状態を示す列挙値。
 
- bstrPriority スレッドの優先順位を指定する文字列たとえば、"上記 Normal"、"Normal"または「時間は重要な」。
+ `bstrPriority`\
+ スレッドの優先順位を指定する文字列たとえば、"上記 Normal"、"Normal"または「時間は重要な」。
 
- bstName スレッド名。
+ `bstName`\
+ スレッド名。
 
- bstrLocation 通常実行が中断されているメソッドの名前として表現されるスレッドの場所 (通常は最上位のスタック フレーム)。
+ `bstrLocation`\
+ 通常の実行が中断されているメソッドの名前として表現されるスレッドの場所 (通常は最上位のスタック フレーム)。
 
 ## <a name="remarks"></a>Remarks
  この構造体への呼び出しによって入力されます、 [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)メソッド。 そのために返される情報は通常設定で使用、**スレッド**ウィンドウ。

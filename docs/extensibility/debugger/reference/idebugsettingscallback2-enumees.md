@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d64a568f4df1e4e1705e90ba186287c0b96a85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12005f27e533d491451695925253137fb172ccd6
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916351"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457606"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 言語とベンダーの識別子を指定された使用可能な式エバリュエーターを列挙します。
@@ -40,20 +43,20 @@ public int EnumEEs(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `celtBuffer`
+## <a name="parameters"></a>パラメーター
+ `celtBuffer`\
 
  [in]要素の数、`pceltEEs`バッファー。
 
- `rgguidLang`
+ `rgguidLang`\
 
  [入力、出力]プログラミング言語の一意の識別子。
 
- `rgguidVendor`
+ `rgguidVendor`\
 
  [入力、出力]仕入先の一意識別子。
 
- `pceltEEs`
+ `pceltEEs`\
 
  [入力、出力]式エバリュエーターの配列。
 

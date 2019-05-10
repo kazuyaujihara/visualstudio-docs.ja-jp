@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2621b88622e99ac95533e388197e483f2925f897
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d6f416d284c1712f8e52b2655a74e08f6f9cfe1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420832"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458329"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 取得するシンボル情報の種類を指定します。
@@ -42,10 +45,12 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="members"></a>メンバー
- SSIF_NONE はフラグがないことを示します
+## <a name="fields"></a>フィールド
+ `SSIF_NONE`\
+ フラグがないことを示します。
 
- SSIF_VERBOSE_SEARCH_INFO 返しますのすべてのシンボルを検索するために使用されるパスの検索
+ `SSIF_VERBOSE_SEARCH_INFO`\
+ すべての検索シンボルを検索するために使用されるパスを返します。
 
 ## <a name="remarks"></a>Remarks
  これらのフラグは、パラメーターとして渡される、 [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)情報の量を判断するメソッドが返されます。
