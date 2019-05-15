@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c16a7a390da2e571ad0cc83041106b257048054
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1ba06a44f24a6cd33c42b82bdf39aa4e4dfd799a
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701733"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615310"
 ---
 # <a name="idebugactivatedocumentevent2getdocument"></a>IDebugActivateDocumentEvent2::GetDocument
 アクティブ化するためにドキュメントを取得します。
@@ -37,10 +40,9 @@ int GetDocument ( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ppDoc`
-
- [out]返します、 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)を有効にするドキュメントを表すオブジェクト。
+## <a name="parameters"></a>パラメーター
+`ppDoc`\
+[out]返します、 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)を有効にするドキュメントを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

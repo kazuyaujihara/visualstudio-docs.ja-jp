@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1d4622e1de76406568cda4761005c5482f3169d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 39c1c8b6d8294676df3527cafbdd035a9da84548
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877498"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615079"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 このメソッドは、オブジェクトの実行時の型を決定します。
@@ -38,14 +41,12 @@ int ResolveRuntimeType(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pObject`
+## <a name="parameters"></a>パラメーター
+`pObject`\
+[in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)を解決できます。
 
- [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)を解決できます。
-
- `ppResolved`
-
- [out]オブジェクトの型を返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)します。
+`ppResolved`\
+[out]オブジェクトの型を返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

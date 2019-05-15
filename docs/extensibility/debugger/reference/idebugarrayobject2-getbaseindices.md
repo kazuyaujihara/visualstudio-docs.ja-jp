@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5355e85007c04e523efa4030ca0603a01cf88c68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e9b445f8ec471774eaceb0d6dd06c44b7d167f79
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923768"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615184"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 配列の次元数を指定されたインデックスごとに、基本のインデックス (下限) を取得します。
@@ -37,14 +40,12 @@ int GetBaseIndices (
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dwRank`
+## <a name="parameters"></a>パラメーター
+`dwRank`\
+[in]配列の次元 (rank) の数。
 
- [in]配列の次元 (rank) の数。
-
- `dwIndices`
-
- [out]配列のベース インデックス (下限) です。
+`dwIndices`\
+[out]配列のベース インデックス (下限) です。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

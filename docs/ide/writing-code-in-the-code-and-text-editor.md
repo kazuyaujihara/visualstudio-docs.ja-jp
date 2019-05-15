@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581982"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531670"
 ---
 # <a name="features-of-the-code-editor"></a>コード エディターの機能
 
@@ -52,7 +52,7 @@ Visual Studio では、言語によって異なる機能がサポートされて
 
 |||
 |-|-|
-|[ドキュメントのフォーマット](code-styles-and-quick-actions.md#format-document-command)|ドキュメント内で、コード行に適切なインデントを設定し、中かっこを移動して行を区切ります。|
+|ドキュメントのフォーマット|ドキュメント内で、コード行に適切なインデントを設定し、中かっこを移動して行を区切ります。|
 |選択範囲のフォーマット|選択範囲内で、コード行に適切なインデントを設定し、中かっこを移動して行を区切ります。|
 |選択した行でのタブ化|適切な箇所で、先頭の空白をタブに変換します。|
 |選択した行でのタブ化解除|先頭のタブを空白に変換します。 ファイル内のすべての空白をタブに変換 (または、すべてのタブを空白に変換) する場合は、 `Edit.ConvertSpacesToTabs` 、 `Edit.ConvertTabsToSpaces` comm、s. これらのコマンドは、Visual Studio のメニューには表示されませんが、**クイック アクセス** ウィンドウまたはコマンド ウィンドウから呼び出すことができます。|
@@ -84,7 +84,7 @@ Visual Studio では、言語によって異なる機能がサポートされて
 
 新しいホット キーを定義する、または既存のホット キーを再定義するには、**[ツール]** > **[オプション]** > **[環境]** > **[キーボード]** の順に移動します。 ホット キーの詳細については、「[既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-in-visual-studio.md)」をご覧ください。
 
-エディターのカスタマイズの詳細については、「[エディターのカスタマイズ](../ide/customizing-the-editor.md)」を参照してください。 JavaScript 固有のエディター オプションについては、[JavaScript エディター オプション](../ide/reference/options-text-editor-javascript-formatting.md)に関するページをご覧ください。
+JavaScript 固有のエディター オプションについては、[JavaScript エディター オプション](../ide/reference/options-text-editor-javascript-formatting.md)に関するページをご覧ください。
 
 ## <a name="see-also"></a>関連項目
 

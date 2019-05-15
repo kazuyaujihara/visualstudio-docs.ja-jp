@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 261ddf457ad117812be9971b630c2fcd3b75b550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8890bac11a37d64c2ace4ea23b92a6ad20a6cbb0
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791237"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531689"
 ---
 # <a name="extract-an-interface-refactoring"></a>インターフェイスの抽出リファクタリング
 
@@ -83,4 +83,4 @@ ms.locfileid: "62791237"
 ## <a name="see-also"></a>関連項目
 
 - [リファクタリング](../refactoring-in-visual-studio.md)
-- [.NET 開発者向けのヒント](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET 開発者向けのヒント](../csharp-developer-productivity.md)

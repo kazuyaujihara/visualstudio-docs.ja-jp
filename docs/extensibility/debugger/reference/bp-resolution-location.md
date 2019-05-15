@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea1e70c40846b382364067eae473ec27777b5526
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662908"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615372"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 ブレークポイント解像度の位置の構造を指定します。
@@ -46,35 +49,29 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>メンバー
-`bpType` 値、 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)を解釈する方法を指定する列挙体、 `bpResLocation` union または`unionmemberX`メンバー。
+`bpType`\
+値、 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)を解釈する方法を指定する列挙体、 `bpResLocation` union または`unionmemberX`メンバー。
 
-`bpResLocation.bpresCode`
+`bpResLocation.bpresCode`\
+[C++のみ]含まれています、 [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)場合構造体`bpType`  = `BPT_CODE`します。
 
- [C++のみ]含まれています、 [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)場合構造体`bpType`  = `BPT_CODE`します。
+`bpResLocation.bpresData`\
+[C++のみ]含まれています、 [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)場合構造体`bpType`  = `BPT_DATA`します。
 
-`bpResLocation.bpresData`
+`bpResLocation.unused`\
+[C++のみ]プレース ホルダー。
 
- [C++のみ]含まれています、 [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)場合構造体`bpType`  = `BPT_DATA`します。
+`unionmember1`\
+[C#のみ]解釈する方法については、「解説」を参照してください。
 
-`bpResLocation.unused`
+`unionmember2`\
+[C#のみ]解釈する方法については、「解説」を参照してください。
 
- [C++のみ]プレース ホルダー。
+`unionmember3`\
+[C#のみ]解釈する方法については、「解説」を参照してください。
 
-`unionmember1`
-
- [C#のみ]解釈する方法については、「解説」を参照してください。
-
-`unionmember2`
-
- [C#のみ]解釈する方法については、「解説」を参照してください。
-
-`unionmember3`
-
- [C#のみ]解釈する方法については、「解説」を参照してください。
-
-`unionmember4`
-
- [C#のみ]解釈する方法については、「解説」を参照してください。
+`unionmember4`\
+[C#のみ]解釈する方法については、「解説」を参照してください。
 
 ## <a name="remarks"></a>Remarks
 この構造体のメンバーである、 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)と[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造体。

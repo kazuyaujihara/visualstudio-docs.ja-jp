@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45923ef6d219e7f7dd79581856d0875b792130d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0ac048a26036457345f652a8d23a55fae54d59f0
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720329"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615540"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 パッケージのデバッグを有効にするのには、ドキュメント内の位置を説明するドキュメント コンテキストを取得します。
@@ -37,10 +40,9 @@ int GetDocumentContext ( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ppDocContext`
-
- [out]返します、 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)ソース ファイルのドキュメント内の位置を表すオブジェクト。
+## <a name="parameters"></a>パラメーター
+`ppDocContext`\
+[out]返します、 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)ソース ファイルのドキュメント内の位置を表すオブジェクト。
 
 ## <a name="remarks"></a>Remarks
  この位置は、たとえば、カレットを表示する使用可能性があります。

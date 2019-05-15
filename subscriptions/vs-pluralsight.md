@@ -7,12 +7,12 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Pluralsight トレーニング サブスクリプションについて説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: f0028d8dffb70e38ef818a8de7945b22f9664328
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b4211fbba6a5f1602906a281869b40068f3d6f1
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947555"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225510"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Pluralsight トレーニング特典
 
@@ -41,7 +41,7 @@ ms.locfileid: "62947555"
    - チェック ボックスをオンにして、使用条件とプライバシー ポリシーに同意します
    - **[I agree, activate benefit]\(特典のアクティブ化に同意します\)** をクリックします。
      > [!div class="mx-imgBorder"]
-     > ![Pluralsight 特典アクティブ化](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > ![Pluralsight 特典アクティブ化](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
      > [!div class="mx-imgBorder"]
      > ![Pluralsight 特典の使用条件](_img/vs-pluralsight/vs-pluralsight-terms.png)
 

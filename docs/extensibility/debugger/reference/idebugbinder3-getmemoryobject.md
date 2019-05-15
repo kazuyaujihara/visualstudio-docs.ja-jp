@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01cb000519647c415f68b369f5d2147a30e705e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7741ad4f7b587cbd31888e643557c744ca4200e2
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923546"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614966"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 このメソッドは、このオブジェクトのバインド先のメモリを表すメモリ オブジェクトを取得します。
@@ -40,18 +43,15 @@ int GetMemoryObject(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pField`
+## <a name="parameters"></a>パラメーター
+`pField`\
+[in]メモリ オブジェクトを取得するには、どのフィールドを指定します。
 
- [in]メモリ オブジェクトを取得するには、どのフィールドを指定します。
+`uConstant`\
+[in]メモリ アドレス、または定数値の値を表します。
 
- `uConstant`
-
- [in]メモリ アドレス、または定数値の値を表します。
-
- `ppObject`
-
- [out][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)にこのオブジェクトがバインドされているメモリを表します。
+`ppObject`\
+[out][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)にこのオブジェクトがバインドされているメモリを表します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
