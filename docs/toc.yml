@@ -35,6 +35,8 @@
       href: install/install-visual-studio-versions-side-by-side.md
     - name: インストールの場所を選択する
       href: install/change-installation-locations.md
+    - name: インストール構成をインポートまたはエクスポートする
+      href: install/import-export-installation-configurations.md
     - name: インストールの問題をトラブルシューティングする
       href: install/troubleshooting-installation-issues.md
     - name: Visual Studio 2017 を更新する
@@ -63,8 +65,6 @@
               href: install/create-a-network-installation-of-visual-studio.md
             - name: Visual Studio のネットワーク ベース インストールを更新する
               href: install/update-a-network-installation-of-visual-studio.md
-            - name: インストール構成をインポートまたはエクスポートする
-              href: install/import-export-installation-configurations.md
             - name: ネットワークに関する考慮事項
               items:
                 - name: ファイアウォールまたはプロキシ サーバーの内側に Visual Studio をインストールして使用する
