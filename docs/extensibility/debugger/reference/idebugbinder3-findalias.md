@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58675b5f9e963ec416a2c8586375a94f9c06ae69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2b0185b0c3f7f26cfe9ffa8806c5049af323c517
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877524"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614951"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 このメソッドは、名前、別名を検索します。 これでは、すべてのエイリアスをプログラムで検索します。
@@ -38,14 +41,12 @@ int FindAlias(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pcstrName`
+## <a name="parameters"></a>パラメーター
+`pcstrName`\
+[in]検索するエイリアスの名前です。
 
- [in]検索するエイリアスの名前です。
-
- `ppAlias`
-
- [out]エイリアス (あれば) が見つかりましたがによって表される、 [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)インターフェイス。
+`ppAlias`\
+[out]エイリアス (あれば) が見つかりましたがによって表される、 [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)インターフェイス。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`(エイリアスが存在しない) 場合はエラー コード。
