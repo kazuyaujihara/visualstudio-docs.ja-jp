@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88fde36e2d7b0ef776849d7d3af7e36418dfff7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e173f1f448cba6ee3ed3ab7a6176089996e48e4a
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877396"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614745"
 ---
 # <a name="idebugboundbreakpoint2gethitcount"></a>IDebugBoundBreakpoint2::GetHitCount
 このバインドされたブレークポイントの現在のヒット カウントを取得します。
@@ -37,10 +40,9 @@ int GetHitCount( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pdwHitCount`
-
- [out]ヒット カウントを返します。
+## <a name="parameters"></a>パラメーター
+`pdwHitCount`\
+[out]ヒット カウントを返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_BP_DELETED`にバインドされたブレークポイント オブジェクトの状態が設定されてかどうか`BPS_DELETED`(の一部、 [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列挙型)。

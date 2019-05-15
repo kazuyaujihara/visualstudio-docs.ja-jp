@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4d2a6195fc2357eecc6f9e011a1a7a4c3fff789
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02ef55b44d57cecadb690637c17c0a35e9cb0659
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789485"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531612"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>方法: エディターのワード ラップを管理する
 
@@ -55,6 +55,5 @@ Notepad++、Sublime Text、Visual Studio Code での行の折り返しに慣れ�
 
 ## <a name="see-also"></a>関連項目
 
-- [エディターのカスタマイズ](../../ide/customizing-the-editor.md)
 - [[テキスト エディター] ([オプション] ダイアログ ボックス)](../../ide/reference/text-editor-options-dialog-box.md)
 - [コード エディターの機能](../../ide/writing-code-in-the-code-and-text-editor.md)

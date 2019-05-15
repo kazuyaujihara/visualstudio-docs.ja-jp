@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a799337c098a8ce04bbb5dff0eb3eb046b04f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bea23307c5d35e997f41e4ec9cbfd41fa41bdee
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810581"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455111"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>サンプル XSD ファイル:発注書スキーマ
 
@@ -86,3 +86,6 @@ ms.locfileid: "62810581"
   </xsd:complexType>
 </xsd:schema>
 ```
+
+> [!NOTE]
+> 例として登場する企業、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、およびイベントはすべて架空のものです。 実在する企業、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、またはイベントとは一切関係ありません。

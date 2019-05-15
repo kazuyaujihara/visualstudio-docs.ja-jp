@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 735b92bb649344c055f7a645b961925e3cbd4d6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5550a1f1e83b9343a031df39728675db07de3559
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924049"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615160"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 配列の要素を取得します。
@@ -38,14 +41,12 @@ int GetElement(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dwIndex`
+## <a name="parameters"></a>パラメーター
+`dwIndex`\
+[in]要素のインデックス。
 
- [in]要素のインデックス。
-
- `ppElement`
-
- [out]返します、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)要素を表すインターフェイス。
+`ppElement`\
+[out]返します、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)要素を表すインターフェイス。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。

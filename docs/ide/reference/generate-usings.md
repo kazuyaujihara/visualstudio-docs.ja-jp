@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790049"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531625"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Visual Studio で usings を生成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "62790049"
 
 1. 必要な `using` ステートメントを含めずに、ファイルからコードをコピーして新しいものに貼り付けます。 その結果として発生するエラーには、コードの修正が付随します。これにより足りない `using` ステートメントが追加されます。
 
-    > [!NOTE] 
+    > [!NOTE]
     > この提案は **[ツール] > [オプション] > [テキスト エディター] > [C#] > [詳細] > [ディレクティブを使用する]** で有効にする必要があります。
 
 2. Ctrl + . キーを選択します **[クイック アクションとリファクタリング]** メニューが開きます。
@@ -47,4 +47,4 @@ ms.locfileid: "62790049"
 
 - [コード生成](../code-generation-in-visual-studio.md)
 - [変更のプレビュー](../../ide/preview-changes.md)
-- [.NET 開発者向けのヒント](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET 開発者向けのヒント](../csharp-developer-productivity.md)

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2b4b30607d5d0c677f7ef5e2401bc55c2398eb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 630b9e56c0daa90fb257c7f941b35b07607ea678
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945582"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531864"
 ---
 # <a name="options-dialog-box-visual-studio"></a>[オプション] ダイアログ ボックス (Visual Studio)
 
@@ -45,4 +45,4 @@ IDE 機能のオプションは、この機能がメモリに読み込まれる�
 
 ## <a name="see-also"></a>関連項目
 
-- [エディターのカスタマイズ](../../ide/customizing-the-editor.md)
+- [エディターのカスタマイズ](../how-to-change-text-case-in-the-editor.md)

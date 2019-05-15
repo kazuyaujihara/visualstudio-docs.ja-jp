@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09f0438bed235729d390b784725b89abec201c7f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1a1ecf55b017319850f97c23d926a650c7e01680
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693527"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615338"
 ---
 # <a name="builttype"></a>BUILT_TYPE
 この構造体には、メタデータから取得したフィールドの種類に関する情報を指定します。
@@ -40,12 +43,15 @@ public struct BUILT_TYPE {
 };
 ```
 
-#### <a name="parameters"></a>パラメーター
-シンボルが元のアプリケーションの ulAppDomainID ID です。 これは、アプリケーションのインスタンスを一意に識別するに使用されます。
+## <a name="members"></a>メンバー
+`ulAppDomainID`\
+シンボルが元のアプリケーションの ID。 これは、アプリケーションのインスタンスを一意に識別するに使用されます。
 
-guidModule をこのフィールドを含むモジュールの GUID。
+`guidModule`\
+このフィールドが含まれるモジュールの GUID です。
 
-pUnderlyingField、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)この組み込みのフィールドに関連付けられている基になるフィールドを識別するオブジェクト。
+`pUnderlyingField`\
+[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)この組み込みのフィールドに関連付けられている基になるフィールドを識別するオブジェクト。
 
 ## <a name="remarks"></a>Remarks
 共用体の一部としてこの構造体が表示されます、 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)ときに構造体、`dwKind`のフィールド、`TYPE_INFO`構造に設定されている`TYPE_KIND_BUILT`(からの値、 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列挙型)。

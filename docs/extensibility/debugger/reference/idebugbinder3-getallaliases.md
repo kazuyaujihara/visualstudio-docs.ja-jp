@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8545431dc0cb643ba18d415285447f8a66f66e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f54ad96b3e6e1832e63e858609a0a1d6ecbcc93e
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923706"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614787"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 このメソッドは、プログラムからエイリアスの一覧を取得します。
@@ -40,18 +43,15 @@ int GetAllAliases(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `uRequest`
+## <a name="parameters"></a>パラメーター
+`uRequest`\
+[in]エイリアスを返すの最大数 (に渡された配列の長さを指定します`ppAliases`)。
 
- [in]エイリアスを返すの最大数 (に渡された配列の長さを指定します`ppAliases`)。
+`ppAliases`\
+[入力、出力]エイリアスをコピーする配列 (これが null 値の場合と`uRequest`が 0 の場合で返すことができるエイリアスの数が返される`puFetched`)。
 
- `ppAliases`
-
- [入力、出力]エイリアスをコピーする配列 (これが null 値の場合と`uRequest`が 0 の場合で返すことができるエイリアスの数が返される`puFetched`)。
-
- `puFetched`
-
- [out]取得したエイリアスの数を返します。
+`puFetched`\
+[out]取得したエイリアスの数を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
