@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccb2400b209fa7902e8fde8dd7ba601e465a840d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976202"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461462"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>チュートリアル: データ ソースを定義するための構成ファイルの使用
 
@@ -62,16 +62,16 @@ ms.locfileid: "62976202"
 
 2. **configSections** 要素内に **section** 要素を作成します。
 
-3. **section** 要素に、`name` という属性を追加し、その属性に `microsoft.visualstudio.testtools` の値を割り当てます。 `type` という別の属性を追加し、その属性に `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a` の値を割り当てます。
+3. **section** 要素に、`name` という属性を追加し、その属性に `microsoft.visualstudio.testtools` の値を割り当てます。 `type` という別の属性を追加し、その属性に `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions` の値を割り当てます。
 
 **section** 要素は次のようになります。
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> アセンブリ名は、使用している Microsoft Visual Studio .NET Framework のビルドと一致する必要があります。 Visual Studio .NET Framework 3.5 を使用している場合は、Version を 9.0.0.0 に設定します。 Visual Studio .NET Framework 2.0 を使用している場合は、Version を 8.0.0.0 に設定します。
+> アセンブリ名は、使用している Microsoft Visual Studio .NET Framework のビルドと一致する必要があります。
 
 ## <a name="define-connection-strings"></a>接続文字列を定義する
 

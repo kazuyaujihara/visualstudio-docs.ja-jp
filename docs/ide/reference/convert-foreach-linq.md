@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0b9685ce6d4cf8ee6d4253c79759508cf43915e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7893ed676372cce94d883353139de91ef639aeb0
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968487"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531847"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>foreach ループを LINQ に変換する
 
@@ -44,9 +44,9 @@ ms.locfileid: "62968487"
 3. **[Convert to LINQ]\(LINQ に変換\)** または **[Convert to LINQ (call form)]\(LINQ に変換 (呼び出し形式)\)** を選択する
 
    ![LINQ クエリの結果のサンプル](media/convert-foreach-to-LINQ-result.png)
-   
+
    ![LINQ 呼び出し形式の結果のサンプル](media/convert-foreach-to-LINQ-callform-result.png)
-   
+
 ### <a name="sample-code"></a>サンプル コード
 
 ```csharp
@@ -79,4 +79,4 @@ public class Class1
 
 - [リファクタリング](../refactoring-in-visual-studio.md)
 - [[変更のプレビュー] ウィンドウ](../../ide/preview-changes.md)
-- [.NET 開発者向けのヒント](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET 開発者向けのヒント](../csharp-developer-productivity.md)

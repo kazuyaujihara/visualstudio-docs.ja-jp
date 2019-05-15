@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d0875f9a298af24575cc05008713cbb6c3e2ead
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce2b0f1e0c0db45c478c3917306683b314da0564
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789752"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531876"
 ---
 # <a name="unused-value-assignments-variables-and-parameters"></a>未使用値の割り当て、変数、およびパラメーター
 
@@ -43,4 +43,4 @@ ms.locfileid: "62789752"
 ## <a name="see-also"></a>関連項目
 
 - [リファクタリング](../refactoring-in-visual-studio.md)
-- [.NET 開発者向けのヒント](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET 開発者向けのヒント](../csharp-developer-productivity.md)
