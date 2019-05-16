@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d54d69a9aeda76c79208c2685efde94eaaab1017
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559883"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693771"
 ---
 # <a name="n-tier-data-applications-overview"></a>n 層データ アプリケーションの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,14 @@ N-レベル * データ アプリケーションは複数に区切られたデ�
   
 - [LINQ to Visual Studio での SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)個別の名前空間に DataContext とデータ クラスを生成する設定を提供します。 これにより、データ アクセス層とデータ エンティティ層の論理的な分離が可能になります。  
   
-- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供、<xref:System.Data.Linq.Table%601.Attach%2A>メソッドすると、アプリケーションでさまざまな層から DataContext をまとめることができます。 詳細については、次を参照してください。 [N 層アプリケーションと linq to SQL のリモート アプリケーション](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)します。  
+- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供、<xref:System.Data.Linq.Table%601.Attach%2A>メソッドすると、アプリケーションでさまざまな層から DataContext をまとめることができます。 詳細については、次を参照してください。 [N 層アプリケーションと linq to SQL のリモート アプリケーション](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)します。  
   
 ## <a name="presentation-tier"></a>プレゼンテーション層  
  *プレゼンテーション層*は、ユーザーがアプリケーションとやりとりする層です。 多くの場合、追加のアプリケーション ロジックも含まれています。 一般的なプレゼンテーション層のコンポーネントには、次のようなものがあります。  
   
 - データ バインディング コンポーネント (<xref:System.Windows.Forms.BindingSource> や <xref:System.Windows.Forms.BindingNavigator> など)  
   
-- データの表現をオブジェクト[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)エンティティ クラス、プレゼンテーション層で使用します。  
+- データの表現をオブジェクト[LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)エンティティ クラス、プレゼンテーション層で使用します。  
   
   プレゼンテーション層、中間層にサービス参照を使用して通常アクセスする (たとえば、 [Windows Communication Foundation サービスと Visual Studio での WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)アプリケーション)。 プレゼンテーション層からデータ層に直接アクセスすることはありません。 プレゼンテーション層は、中間層のデータ アクセス コンポーネントを通してデータ層と通信します。  
   
@@ -57,9 +57,9 @@ N-レベル * データ アプリケーションは複数に区切られたデ�
   
 - 次のようなデータ アクセス コンポーネントおよびロジック  
   
-  - [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)と[Dataadapter と Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)します。  
+  - [Tableadapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)と[Dataadapter と Datareader](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)します。  
   
-  - データの表現をオブジェクト[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)エンティティ クラスです。  
+  - データの表現をオブジェクト[LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)エンティティ クラスです。  
   
   - 共通のアプリケーション サービス (認証、承認、パーソナル化など)  
   
@@ -87,9 +87,9 @@ N-レベル * データ アプリケーションは複数に区切られたデ�
   
  [チュートリアル: n 層データ アプリケーションの作成](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
- [チュートリアル: N 層データ アプリケーションへの検証の追加](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [チュートリアル: N 層データ アプリケーションへの検証の追加](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
- [LINQ to SQL を使用する n 層アプリケーションとリモート アプリケーション](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+ [LINQ to SQL を使用する n 層アプリケーションとリモート アプリケーション](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
   
 ## <a name="see-also"></a>関連項目  
  <xref:System.Data.Linq.ITable.Attach%2A>   

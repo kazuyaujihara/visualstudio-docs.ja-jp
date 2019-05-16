@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4ab38f4fc7e0269c1073e71fae9975b240da33f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445898"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695100"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Visual Studio 2010 からのコード化された UI テストのアップグレード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63445898"
 - Visual Studio Enterprise
 
 > [!NOTE]
-> Visual Studio には、テスト プロジェクトの種類が複数含まれています。 コード化された UI テストを新しく作成する場合は、コード化された UI テスト プロジェクトの種類で作成されます。 詳しくは、「 [旧バージョンの Visual Studio からのテストのアップグレード](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)」をご覧ください。
+> Visual Studio には、テスト プロジェクトの種類が複数含まれています。 コード化された UI テストを新しく作成する場合は、コード化された UI テスト プロジェクトの種類で作成されます。 詳しくは、「 [旧バージョンの Visual Studio からのテストのアップグレード](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)」をご覧ください。
 
 > [!WARNING]
 > コード化された UI テストを含む[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] テスト プロジェクトは、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] または [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] と [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]の side-by-side 実行で開くときにリビルドする必要があります。
@@ -64,4 +64,4 @@ ms.locfileid: "63445898"
 - **ロード テストします。** コンピューターで、ローカル エリア ネットワーク (LAN) プロファイル以外のネットワークの種類でロード テストを実行するを実行している Windows 8、ネットワーク エミュレーターのドライバーとオペレーティング システムがクラッシュします。 詳細については、「 [サポート技術情報記事 2736182](http://support.microsoft.com/kb/2736182)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
- [移植、移行、および Visual Studio プロジェクトのアップグレード](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[以前のバージョンの Visual Studio からテストのアップグレード](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [UI オートメーションを使用して、コードをテストする](../test/use-ui-automation-to-test-your-code.md)[を生成する、コード化された UI テストを既存の操作の記録から](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)[コード化された UI テストと操作の記録の構成とプラットフォームのサポート](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [移植、移行、および Visual Studio プロジェクトのアップグレード](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[以前のバージョンの Visual Studio からテストのアップグレード](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [UI オートメーションを使用して、コードをテストする](../test/use-ui-automation-to-test-your-code.md)[を生成する、コード化された UI テストを既存の操作の記録から](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)[コード化された UI テストと操作の記録の構成とプラットフォームのサポート](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

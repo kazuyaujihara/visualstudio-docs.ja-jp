@@ -11,18 +11,18 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66cd861fcf92c400e1499834ea6255df4d5cf0fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be2e6bde6c25c1bb515ec3f017f14506c03a3a71
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432349"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697067"
 ---
 # <a name="type-collection-editor-dialog-box"></a>[型コレクション エディター] ダイアログ ボックス
 **型コレクション エディター**既知の型に追加する ダイアログ ボックスを使用、**送信**と**受信**アクティビティ。 ジェネリック型引数に追加するこのダイアログ ボックスを使用しても、 **InvokeMethod**アクティビティ。 使用すると、**送信**と**受信**既知の型を追加するアクティビティ、**型コレクション エディター**  ダイアログ ボックスに追加すると、一意である型が必要です。 重複する型が追加され、クリックして、変更をコミット**OK**、エラー メッセージが返されます。 使用すると、 **InvokeMethod** 、ジェネリック型引数を追加するアクティビティ、**型コレクション エディター**ダイアログ ボックスでは重複する型を追加します。  
   
 > [!NOTE]
-> [!INCLUDE[crabout](../includes/crabout-md.md)] 、「 [Data Contract Known Types](http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337)サービスからエクスポートするときに、CLR 型を XSD にマッピングします。  
+> [!INCLUDE[crabout](../includes/crabout-md.md)] 、「 [Data Contract Known Types](https://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337)サービスからエクスポートするときに、CLR 型を XSD にマッピングします。  
   
  次の表に、ユーザー インターフェイス (UI) 要素の**型コレクション** ダイアログ ボックス。  
   

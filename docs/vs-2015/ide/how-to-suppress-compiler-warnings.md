@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27eeecc4330f772a2e1e8e065f927a8b17c03020
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 994b29fb4592d55a04389896ee9db8848dceda67
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064311"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695390"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>方法: コンパイラ警告の非表示
 
@@ -106,7 +106,7 @@ ms.locfileid: "60064311"
 
     指定した警告が、**[出力]** ウィンドウに表示されなくなります。
 
-   詳しくは、「[/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)」をご覧ください。
+   詳しくは、「[/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)」をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 
