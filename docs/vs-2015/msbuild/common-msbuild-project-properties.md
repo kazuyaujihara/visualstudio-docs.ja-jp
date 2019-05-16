@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650242"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698718"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ ms.locfileid: "59650242"
 |Satellite_Version|サテライト アセンブリのバージョン情報を指定します。|  
 |Satellite_Win32Icon|サテライト アセンブリに .ico アイコン ファイルを挿入します。|  
 |Satellite_Win32Resource|サテライト アセンブリに Win32 リソース (.res ファイル) を挿入します。|  
-|SubsystemVersion|生成された実行可能ファイルが使用できるサブシステムの最低限のバージョンを指定します。 このプロパティは、`/subsystemversion` コンパイラ スイッチに相当します。 このプロパティの既定値については、「[/subsystemversion (Visual Basic)](http://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54)」または「[/subsystemversion (C# コンパイラ オプション)](http://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445)」を参照してください。|  
+|SubsystemVersion|生成された実行可能ファイルが使用できるサブシステムの最低限のバージョンを指定します。 このプロパティは、`/subsystemversion` コンパイラ スイッチに相当します。 このプロパティの既定値については、「[/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54)」または「[/subsystemversion (C# コンパイラ オプション)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445)」を参照してください。|  
 |TargetCompactFramework|ビルドするアプリケーションの実行に必要な .NET Compact Framework のバージョンです。 このプロパティを指定すると、通常は参照できない .NET Framework アセンブリを参照できます。|  
 |TargetFrameworkVersion|ビルドするアプリケーションの実行に必要な [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のバージョンです。 このプロパティを指定すると、通常は参照できない .NET Framework アセンブリを参照できます。|  
 |TreatWarningsAsErrors|ブール値パラメーターであり、`true` に設定すると、すべての警告がエラーとして扱われます。 このパラメーターは、`/nowarn` コンパイラ スイッチに相当します。|  

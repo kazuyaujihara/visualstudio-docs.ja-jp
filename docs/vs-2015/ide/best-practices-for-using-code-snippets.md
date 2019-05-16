@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 60d41398a37870d8be7a55003259b7cb2b9e48db
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 48e37262c376d2c92e741152a0b3a5866e2718ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099625"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685665"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>コード スニペットを使用するためのベスト プラクティス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60099625"
 コード スニペットのコードは、最も基本的な処理方法のみを示しています。 ほとんどのアプリケーションでは、そのアプリケーションに合わせてコードを変更する必要があります。  
   
 ## <a name="handling-exceptions"></a>例外処理  
- 通常、コード スニペットの Try…Catch ブロックは、すべての例外をキャッチして再スローします。 これは、プロジェクトにより適していない場合があります。 例外ごとに、対応方法はいくつかあります。 たとえば、「[方法: try/catch を使用して例外を処理する (C# プログラミング ガイド)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818)」と「[Try...Catch...Finally Statement](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)」(Try...Catch...Finally ステートメント) を参照してください。  
+ 通常、コード スニペットの Try…Catch ブロックは、すべての例外をキャッチして再スローします。 これは、プロジェクトにより適していない場合があります。 例外ごとに、対応方法はいくつかあります。 たとえば、「[方法: try/catch を使用して例外を処理する (C# プログラミング ガイド)](https://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818)」と「[Try...Catch...Finally Statement](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)」(Try...Catch...Finally ステートメント) を参照してください。  
   
 ## <a name="file-locations"></a>ファイルの位置  
  ファイルの位置をアプリケーションに採用する場合、次の点を考慮する必要があります。  
@@ -67,6 +67,6 @@ ms.locfileid: "60099625"
     - スニペットには、プロジェクトに自動的に追加され、任意の場所からシステムに読み込まれる参照が含まれている可能性があります。 このような参照は、スニペットをダウンロードしたコンピューターにダウンロードされている可能性があります。 また、スニペットから、悪意のあるコードを実行する参照内のメソッドを呼び出す可能性があります。 このような攻撃から保護するには、スニペット ファイルのインポート ブロックと参照ブロックを確認します。  
   
 ## <a name="see-also"></a>関連項目  
- [Visual Basic の IntelliSense コード スニペット](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
+ [Visual Basic の IntelliSense コード スニペット](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [アプリケーションの保護](../ide/securing-applications.md)   
  [コード スニペット](../ide/code-snippets.md)

@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438380"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697626"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI の応答性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -324,7 +324,7 @@ if (performance.mark && performance.measure) {
   
 - **イメージ デコード中。** イメージの伸長とデコードに費やされた時間を示します。  
   
-  UI 応答性プロファイラーは、スクリプトおよびスタイルのカテゴリに対して、対処可能なデータをタイムラインの詳細グラフで提供する場合があります。 スクリプトの問題を問題として特定する場合、UI の応答性プロファイラーで CPU サンプリング プロファイラーを実行できます。 また、詳細データを得るために、Visual Studio の関数プロファイラーも使用できます。 詳細については、「[JavaScript 関数タイミング データの分析](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)」をご覧ください。  
+  UI 応答性プロファイラーは、スクリプトおよびスタイルのカテゴリに対して、対処可能なデータをタイムラインの詳細グラフで提供する場合があります。 スクリプトの問題を問題として特定する場合、UI の応答性プロファイラーで CPU サンプリング プロファイラーを実行できます。 また、詳細データを得るために、Visual Studio の関数プロファイラーも使用できます。 詳細については、「[JavaScript 関数タイミング データの分析](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)」をご覧ください。  
   
   他のイベント カテゴリについては、アプリに機能を追加したことによるプラットフォームの副作用を特定できる可能性がありますが、そのような場合、UI 応答性プロファイラーを使用して特定のパフォーマンスの問題を解決できないことがあります。  
   
@@ -358,9 +358,9 @@ if (performance.mark && performance.measure) {
   
 - UI 応答性プロファイラーについては、この Build 2013 カンファレンスの [ビデオ](http://channel9.msdn.com/Events/Build/2013/3-316) をご覧ください。  
   
-- JavaScript を使用して Windows 用にビルドされた Windows ストア アプリのパフォーマンスのヒントを参照します。 詳細については、「 [JavaScript を使った Windows ストア アプリのパフォーマンスのベスト プラクティス](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx)」を参照してください。  
+- JavaScript を使用して Windows 用にビルドされた Windows ストア アプリのパフォーマンスのヒントを参照します。 詳細については、「 [JavaScript を使った Windows ストア アプリのパフォーマンスのベスト プラクティス](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx)」を参照してください。  
   
-- シングル スレッドのコード実行モデルとパフォーマンスについては、「 [コードの実行](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)」を参照してください。  
+- シングル スレッドのコード実行モデルとパフォーマンスについては、「 [コードの実行](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx)」を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
- [アプリのパフォーマンスの分析](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [アプリのパフォーマンスの分析](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

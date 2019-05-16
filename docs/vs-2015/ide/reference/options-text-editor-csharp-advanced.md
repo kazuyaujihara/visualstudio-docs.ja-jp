@@ -20,12 +20,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c8b957517a7b539f74a9715b92b8a2945d3fe5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 73148f8c3f569f3d585f6127b7ec713c766b0f8b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441369"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674251"
 ---
 # <a name="options-text-editor-c-advanced"></a>[オプション]、[テキスト エディター]、[C#]、[詳細]
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63441369"
 このダイアログ ボックスを使用して、Visual C# のエディターの書式設定、コードのリファクタリング、および XML ドキュメントのコメントの設定を変更します。 このダイアログ ボックスを表示するには、**[ツール]** メニューの **[オプション]** をクリックし、**[テキスト エディター]** フォルダー、**[C#]** を順に展開し、**[詳細設定]** をクリックします。  
   
 > [!NOTE]
-> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="outlining"></a>アウトライン  
  ファイルが開かれたときにアウトライン モードを実行する  
@@ -68,7 +68,7 @@ ms.locfileid: "63441369"
   
 ## <a name="xml-documentation-comments"></a>XML ドキュメントのコメント  
  /// が入力されたとき、XML ドキュメントのコメントを生成する  
- 選択すると、/// コメント イントロダクションを入力した後に、\<summary> start タグと end タグが XML ドキュメント コメントに自動的に挿入されます。 XML ドキュメントの詳細については、「[XML ドキュメント コメント](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)」を参照してください。  
+ 選択すると、/// コメント イントロダクションを入力した後に、\<summary> start タグと end タグが XML ドキュメント コメントに自動的に挿入されます。 XML ドキュメントの詳細については、「[XML ドキュメント コメント](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)」を参照してください。  
   
 ## <a name="implement-interface"></a>インターフェイスの実装  
  生成されたコードを #region で囲む  
@@ -79,6 +79,6 @@ ms.locfileid: "63441369"
  選択すると、`System` using ディレクティブが他の using ディレクティブより前に表示されます。 詳細については、「[using の並べ替え](../../misc/sort-usings.md)」を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
- [XML ドキュメント コメント](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
+ [XML ドキュメント コメント](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [言語固有のエディター オプションの設定](../../ide/reference/setting-language-specific-editor-options.md)   
  [Visual C# の IntelliSense](../../ide/visual-csharp-intellisense.md)

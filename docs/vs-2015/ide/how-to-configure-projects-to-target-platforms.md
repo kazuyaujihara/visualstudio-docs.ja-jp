@@ -18,17 +18,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33c466d3c7a619de87baccd2713c9a595283d5ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4cba42203cb5d42e2518d2f1ead7fb998d9b6425
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422800"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680642"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>方法 : プロジェクトを構成して対象プラットフォームを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、64 ビット プラットフォームを含む、さまざまなプラットフォーム向けにアプリケーションを設定できます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] での 64 ビット プラットフォームのサポートについて詳しくは、「[64 ビット アプリケーション](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)」を参照してください。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、64 ビット プラットフォームを含む、さまざまなプラットフォーム向けにアプリケーションを設定できます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] での 64 ビット プラットフォームのサポートについて詳しくは、「[64 ビット アプリケーション](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)」を参照してください。  
   
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>構成マネージャーを使用した対象プラットフォームの指定  
  **構成マネージャー**を使うと、プロジェクトの対象となる新しいプラットフォームをすばやく追加できます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] に用意されているプラットフォームのいずれかを選択すると、プロジェクトのプロパティは、選択したプラットフォーム向けにプロジェクトをビルドするように変更されます。  
@@ -57,14 +57,14 @@ ms.locfileid: "63422800"
   
  このタスクの実行方法は、使用するプログラミング言語によって異なります。 詳細については、次のリンクを参照してください。  
   
-- [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクトについては、「[/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)」をご覧ください。  
+- [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクトについては、「[/platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)」をご覧ください。  
   
 - [!INCLUDE[csprcs](../includes/csprcs-md.md)] プロジェクトについては、「[[ビルド] ウィンドウ (プロジェクト デザイナー) (C#)](../ide/reference/build-page-project-designer-csharp.md)」をご覧ください。  
   
-- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] プロジェクトについては、「[/clr (共通言語ランタイムのコンパイル)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)」をご覧ください。  
+- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] プロジェクトについては、「[/clr (共通言語ランタイムのコンパイル)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)」をご覧ください。  
   
 ## <a name="see-also"></a>関連項目  
  [ビルド プラットフォームについて](../ide/understanding-build-platforms.md)   
- [/platform (C# コンパイラ オプション)](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
- [64 ビット アプリケーション](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [/platform (C# コンパイラ オプション)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
+ [64 ビット アプリケーション](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [Visual Studio IDE の 64 ビット サポート](../ide/visual-studio-ide-64-bit-support.md)

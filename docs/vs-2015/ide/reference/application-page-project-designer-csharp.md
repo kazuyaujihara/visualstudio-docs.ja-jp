@@ -15,12 +15,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43f3a1c388a7b29fe83654d89b63e3fd304ebfa0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2744dabdb79d777661c1ed73e8a85b05b5308624
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437253"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704775"
 ---
 # <a name="application-page-project-designer-c"></a>[アプリケーション] ページ (プロジェクト デザイナー) (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,12 +35,12 @@ ms.locfileid: "63437253"
  次のオプションでは、アプリケーションの全般設定を構成できます。  
   
  **アセンブリ名**  
- アセンブリ マニフェストを保持する出力ファイルの名前を指定します。 このプロパティを変更すると、**[出力名]** プロパティも変更されます。 コマンド ラインから [/out (C# コンパイラ オプション)](http://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5) を使用して、変更することもできます。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.AssemblyName%2A>」を参照してください。  
+ アセンブリ マニフェストを保持する出力ファイルの名前を指定します。 このプロパティを変更すると、**[出力名]** プロパティも変更されます。 コマンド ラインから [/out (C# コンパイラ オプション)](https://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5) を使用して、変更することもできます。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.AssemblyName%2A>」を参照してください。  
   
  **既定の名前空間**  
  プロジェクトに追加されるファイルの基本の名前空間を指定します。  
   
- コードでの名前空間の作成の詳細については、[namespace](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f) に関するページを参照してください。  
+ コードでの名前空間の作成の詳細については、[namespace](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f) に関するページを参照してください。  
   
  プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.RootNamespace%2A>」を参照してください。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "63437253"
 > [!NOTE]
 > Windows ランタイムでは、どの言語で使用される場合でも、ネイティブ オブジェクトとして表示されるように種類を射影できます。 たとえば、Windows ランタイムと対話する JavaScript アプリケーションでは JavaScript オブジェクト セットとして使用され、C# アプリケーションでは .NET オブジェクト コレクションとしてライブラリが使用されます。 WinMD ファイルとしてプロジェクトの出力をパッケージ化することで、Windows ランタイムで使用されるのと同じテクノロジを利用できます。  
   
- **[アプリケーションの種類]** プロパティの詳細については、「[/target (C# コンパイラ オプション)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f)」を参照してください。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.OutputType%2A>」を参照してください。  
+ **[アプリケーションの種類]** プロパティの詳細については、「[/target (C# コンパイラ オプション)](https://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f)」を参照してください。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.OutputType%2A>」を参照してください。  
   
  **アセンブリ情報**  
  このボタンをクリックすると、[[アセンブリ情報] ダイアログ ボックス](../../ide/reference/assembly-information-dialog-box.md)が表示されます。  
@@ -74,7 +74,7 @@ ms.locfileid: "63437253"
   
  WPF ブラウザー アプリケーション プロジェクトでは、このオプションは既定で **[(設定なし)]** となります。 その他のオプションは、*プロジェクト名*.App となります。 この種のプロジェクトでは、アプリケーションの起動時に UI リソースを読み込むようにスタートアップ UI を設定する必要があります。 これを行うには、プロジェクトで Application.xaml ファイルを開き、プロジェクトの .xaml ファイル (Window1.xaml など) に `StartupUri` プロパティを設定します。 指定できルート要素の一覧については、「<xref:System.Windows.Application.StartupUri%2A>」を参照してください。 プロジェクトのクラスに `public static void Main()` メソッドを定義する必要もあります。 このクラスは、**[スタートアップ オブジェクト]** 一覧に *ProjectName.ClassName* として表示されます。 その後、スタートアップ オブジェクトとしてクラスを選択できます。  
   
- 詳細については、「[/main (C# コンパイラ オプション)](http://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049)」を参照してください。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.StartupObject%2A>」を参照してください。  
+ 詳細については、「[/main (C# コンパイラ オプション)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049)」を参照してください。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.StartupObject%2A>」を参照してください。  
   
 ## <a name="resources"></a>リソース  
  次のオプションでは、アプリケーションの全般設定を構成できます。  
@@ -83,7 +83,7 @@ ms.locfileid: "63437253"
  既定では、このオプション ボタンが選択され、**[アイコン]** と **[マニフェスト]** オプションが有効になります。 したがって、独自のアイコンを選択することも、別のマニフェスト生成オプションを選択することもできます。 プロジェクトのリソース ファイルをプロビジョニングする場合を除き、このオプション ボタンは選択したままにしておいてください。  
   
  **アイコン**  
- プログラム アイコンとして使用する .ico ファイルを設定します。 省略記号ボタンをクリックして既存のグラフィックを参照するか、必要なファイルの名前を入力します。 詳細については、「[/win32icon (C# コンパイラ オプション)](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)」を参照してください。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>」を参照してください。  
+ プログラム アイコンとして使用する .ico ファイルを設定します。 省略記号ボタンをクリックして既存のグラフィックを参照するか、必要なファイルの名前を入力します。 詳細については、「[/win32icon (C# コンパイラ オプション)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)」を参照してください。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>」を参照してください。  
   
  **Manifest**  
  Windows Vista 上で、ユーザー アカウント制御 (UAC) 下でアプリケーションを実行する場合に、マニフェスト生成オプションを選択します。 このオプションには、次の値を指定できます。  
@@ -101,4 +101,4 @@ ms.locfileid: "63437253"
   
 ## <a name="see-also"></a>関連項目  
 [アプリケーション プロパティの管理](../../ide/application-properties.md)  
- [Writing Code in Office Solutions](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+ [Writing Code in Office Solutions](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

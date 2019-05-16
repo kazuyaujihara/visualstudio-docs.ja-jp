@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 816db8b2bc5d78541dc089d75ff155b98231ffd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5169f59ec12482fd35e09d4eb226277b7fb01455
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435647"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704536"
 ---
 # <a name="javascript-memory"></a>[JavaScript メモリ]
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -382,15 +382,15 @@ if (performance && performance.mark) {
   
 - ユーザーが新しいページに移動した後も誤ってメモリに保持されているオブジェクトを検索します。これは、一般的なメモリの問題の原因です。 次に例を示します。  
   
-    - [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) 関数の不適切な使用により、この問題が発生する場合があります。  
+    - [URL.CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) 関数の不適切な使用により、この問題が発生する場合があります。  
   
-    - 一部のオブジェクトは `dispose` メソッドおよび使用の推奨を提供する場合があります。 たとえば、一覧から `dispose` メソッドを呼び出して、ページから移動した場合には、 [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) で `createFiltered` を呼び出す必要があります。  
+    - 一部のオブジェクトは `dispose` メソッドおよび使用の推奨を提供する場合があります。 たとえば、一覧から `dispose` メソッドを呼び出して、ページから移動した場合には、 [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) で `createFiltered` を呼び出す必要があります。  
   
     - 1 つ以上のイベント リスナーを削除する必要が生じる場合があります。 詳細については、「 [View DOM event listeners](../debugger/view-dom-event-listeners.md)」を参照してください。  
   
 - JavaScript メモリ アナライザーについては、この Build 2013 カンファレンスの [ビデオ](http://channel9.msdn.com/Events/Build/2013/3-316) の後半部分をご覧ください。  
   
-- [Managing memory in Windows Store apps (Windows ストア アプリでメモリを管理する)](http://msdn.microsoft.com/magazine/jj651575.aspx)を参照してください。  
+- [Managing memory in Windows Store apps (Windows ストア アプリでメモリを管理する)](https://msdn.microsoft.com/magazine/jj651575.aspx)を参照してください。  
   
 - 問題を特定するためにコードを一時的に変更することを検討してください。 たとえば、次の操作を行います。  
   

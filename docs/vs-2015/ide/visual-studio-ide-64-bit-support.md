@@ -13,24 +13,24 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e424078580ff4a739046b2555c3fb94ee17dafa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c83c4623854fd8f7605096d218de69460fc8a919
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089665"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698163"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE の 64 ビット サポート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、64 ビット プラットフォームを含む、さまざまなプラットフォーム向けにアプリケーションを設定できます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] での 64 ビット プラットフォームのサポートについて詳しくは、「[64 ビット アプリケーション](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)」を参照してください。
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、64 ビット プラットフォームを含む、さまざまなプラットフォーム向けにアプリケーションを設定できます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] での 64 ビット プラットフォームのサポートについて詳しくは、「[64 ビット アプリケーション](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)」を参照してください。
 
 ## <a name="deploying-a-64-bit-application"></a>64 ビット アプリケーションの配置
  次のトピックでは、64 ビット アプリケーションの配置について説明しています。
 
 - [64 ビット アプリケーションの配置のための必要条件](../deployment/deploying-prerequisites-for-64-bit-applications.md)
 
-- [方法: 64 ビット プラットフォーム用の Windows インストーラーを作成する](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
+- [方法: 64 ビット プラットフォーム用の Windows インストーラーを作成する](https://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
 
 ## <a name="configuring-projects-as-64-bit-applications"></a>プロジェクトを 64 ビット アプリケーションとして構成
  次のトピックでは、64 ビット アプリケーションにビルドするプロジェクトの構成について説明しています。
@@ -40,7 +40,7 @@ ms.locfileid: "60089665"
 ## <a name="debugging-a-64-bit-application"></a>64 ビット アプリケーションのデバッグ
  [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] を 64 ビット Windows オペレーティング システムで実行している場合、エディット コンティニュは機能しません。 次のトピックでは、64 ビット アプリケーションのデバッグについて説明しています。
 
-- [方法: 64 ビット プラットフォームでデバッグする](http://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
+- [方法: 64 ビット プラットフォームでデバッグする](https://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
 
 - [64 ビット アプリケーションをデバッグする](../debugger/debug-64-bit-applications.md)
 

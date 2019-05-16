@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae373742c114129c99e7b3444393e12c6c4dd8dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b80faa2ceb48cfec933d2287b70d304564a8106a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62585115"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704445"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio 内の C++ の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "62585115"
 
      エラー メッセージは、 **[エラー一覧]** ウィンドウにも表示されます。 そのウィンドウを表示するには、メニュー バーで **[表示]**、 **[エラー一覧]** の順に選択します。
 
-     [cout](http://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) は \<iostream\> ヘッダー ファイルに含まれます。
+     [cout](https://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) は \<iostream\> ヘッダー ファイルに含まれます。
 
 2. iostream ヘッダーを組み込むには、 `#include "stdafx.h"`の次に、以下のコードを入力します。
 

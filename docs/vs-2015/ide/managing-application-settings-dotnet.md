@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a2449e9686f71cfd932a2bf6047ed0208da1d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d8e88bcf67c430bdd24c4338d92a30b6a7c10fef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114809"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675006"
 ---
 # <a name="managing-application-settings-net"></a>アプリケーションの設定の管理 (.NET)
 
@@ -59,7 +59,7 @@ ms.locfileid: "60114809"
 >
 > 接続文字列情報 (ユーザーが入力するユーザー ID やパスワードなど) を外部ソースから受け取った場合は、接続文字列の作成に使用する値に、接続の動作を変更してしまうような接続文字列パラメーターが含まれていないことを注意して確認する必要があります。
 >
-> 構成ファイル内の機密情報は、"保護された構成" 機能を使用して暗号化することを考慮してください。 詳細については、「[接続情報の保護](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4)」を参照してください。
+> 構成ファイル内の機密情報は、"保護された構成" 機能を使用して暗号化することを考慮してください。 詳細については、「[接続情報の保護](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4)」を参照してください。
 
 > [!NOTE]
 > クラス ライブラリには構成ファイル モデルが存在しないため、アプリケーション設定は、クラス ライブラリ プロジェクトでは使用できません。 ただし、Visual Studio Tools for Office DLL プロジェクトは例外で、構成ファイルを使用できます。
@@ -74,7 +74,7 @@ ms.locfileid: "60114809"
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>実行時におけるアプリケーション設定へのアクセスまたは変更 (Visual Basic)
 
-[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクトでは、 `My.Settings` オブジェクトを使用することで、実行時にアプリケーション設定にアクセスできます。 **[設定]** ページの **[コードの表示]** ボタンをクリックして、Settings.vb ファイルを表示します。 Settings.vb は `Settings` クラスを定義し、 <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>、 <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>、 <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>、 <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>の各イベントを Settings クラスで処理できるようにします。 Settings.vb の `Settings` クラスは部分クラスであり、生成されたクラス全体ではなくユーザー所有コードだけが表示されることに注意してください。 `My.Settings` オブジェクトを使用したアプリケーション設定へのアクセスの詳細については、「[アプリケーション設定へのアクセス](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)」を参照してください。
+[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクトでは、 `My.Settings` オブジェクトを使用することで、実行時にアプリケーション設定にアクセスできます。 **[設定]** ページの **[コードの表示]** ボタンをクリックして、Settings.vb ファイルを表示します。 Settings.vb は `Settings` クラスを定義し、 <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>、 <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>、 <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>、 <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>の各イベントを Settings クラスで処理できるようにします。 Settings.vb の `Settings` クラスは部分クラスであり、生成されたクラス全体ではなくユーザー所有コードだけが表示されることに注意してください。 `My.Settings` オブジェクトを使用したアプリケーション設定へのアクセスの詳細については、「[アプリケーション設定へのアクセス](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)」を参照してください。
 
 ユーザーが実行時に変更するユーザー スコープ設定の値 (フォームの位置など) は、user.config ファイルに保存されます。 既定値は引き続き app.config に保存されていることに注意してください。
 
@@ -98,8 +98,8 @@ Properties.Settings.Default.FirstUserSetting = "abc";
 Properties.Settings.Default.Save();
 ```
 
-`Settings` クラスを使用してアプリケーション設定にアクセスする方法の一般情報については、「[アプリケーション設定の概要](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)」を参照してください。 設定の反復処理については、この [フォーラム ポスト](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)を参照してください。
+`Settings` クラスを使用してアプリケーション設定にアクセスする方法の一般情報については、「[アプリケーション設定の概要](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)」を参照してください。 設定の反復処理については、この [フォーラム ポスト](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-- [アプリケーション設定へのアクセス](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [アプリケーション設定へのアクセス](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

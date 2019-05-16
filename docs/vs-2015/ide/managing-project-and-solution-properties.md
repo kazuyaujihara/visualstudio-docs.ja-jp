@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd20552a72775723c4ad006708ce1fb7f18d4181
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dc27bd0cb93ab142d2a82758c72b27d14032d04e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424632"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674973"
 ---
 # <a name="managing-project-and-solution-properties"></a>プロジェクトおよびソリューションのプロパティの管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "63424632"
   
  ![Visual C&#43;&#43; プロジェクトのプロパティ](../ide/media/vs2015-projprops-cpp.png "VS2015_ProjProps_cpp")  
   
- C++ プロジェクトのプロパティについては、「[プロジェクトのプロパティの操作](http://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd)」を参照してください。 JavaScript のプロパティの詳細については、「[プロパティ ページ、JavaScript](../ide/reference/property-pages-javascript.md)」を参照してください。  
+ C++ プロジェクトのプロパティについては、「[プロジェクトのプロパティの操作](https://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd)」を参照してください。 JavaScript のプロパティの詳細については、「[プロパティ ページ、JavaScript](../ide/reference/property-pages-javascript.md)」を参照してください。  
   
 ## <a name="solution-properties"></a>ソリューションのプロパティ  
  ソリューションのプロパティにアクセスするには、**ソリューション エクスプローラー**でソリューション ノードを右クリックし、**[プロパティ]** を選択します。 このダイアログでは、デバッグ ビルドまたはリリース ビルド用にプロジェクト構成を設定し、F5 キーを押した時点でのスタートアップ プロジェクトとなるプロジェクトを選択し、コード分析のオプションを設定します。  

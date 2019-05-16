@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 068475e24e77969886afbfc806cb2e85c1f368dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 461af4c3c8e811c989bc296b6f8f55f398bc5bd5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667938"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674505"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>[オプション]、[テキスト エディター]、[基本] (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "59667938"
 **[オプション]** (**[ツール]** メニュー) ダイアログ ボックスの **[テキスト エディター]** フォルダーにある **[Basic]** フォルダーの **[VB 固有]** プロパティ ページでは、次のプロパティを指定します。  
   
  **[End コンストラクトの自動挿入]**  
- たとえば、プロシージャ宣言の最初の行として `Sub Main—` を入力し、Enter キーを押すと、対応する `End Sub` 行がテキスト エディターに追加されます。 同様に、[For](http://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9) ループを追加すると、対応する `Next` ステートメントがテキスト エディターに追加されます。 このオプションをオンにすると、コード エディターで自動的に End 構造が追加されます。  
+ たとえば、プロシージャ宣言の最初の行として `Sub Main—` を入力し、Enter キーを押すと、対応する `End Sub` 行がテキスト エディターに追加されます。 同様に、[For](https://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9) ループを追加すると、対応する `Next` ステートメントがテキスト エディターに追加されます。 このオプションをオンにすると、コード エディターで自動的に End 構造が追加されます。  
   
  **[コードの再フォーマット]**  
  必要に応じてコードの書式が再設定されます。 このオプションをオンにすると、コード エディターによって次の処理が行われます。  
