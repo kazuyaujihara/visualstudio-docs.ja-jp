@@ -8,12 +8,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4977a6394a5732d92391c3405519345484a6629f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8186a5961aeb728e683f3ee011766e980e070eea
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056927"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686399"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,7 +134,7 @@ ms.locfileid: "60056927"
       PublicKey=<Test_assembly_public_key>)]  
   ```  
   
-  shim が適用されたアセンブリが厳密な名前を持つ場合、Fakes フレームワークは生成された Fakes アセンブリに自動的に厳密な名前で署名します。 テスト アセンブリに厳密な名前で署名する必要があります。 「[厳密な名前付きアセンブリの作成と使用](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9)」をご覧ください。  
+  shim が適用されたアセンブリが厳密な名前を持つ場合、Fakes フレームワークは生成された Fakes アセンブリに自動的に厳密な名前で署名します。 テスト アセンブリに厳密な名前で署名する必要があります。 「[厳密な名前付きアセンブリの作成と使用](https://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9)」をご覧ください。  
   
   Fakes フレームワークは、生成されるすべてのアセンブリに同じキーを使って署名するため、このスニペットを開始点として使って Fakes アセンブリの **InternalsVisibleTo** 属性を shim が適用されたアセンブリ コードに追加することができます。  
   

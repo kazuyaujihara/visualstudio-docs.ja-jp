@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 47f0567b07f12d17d721881c98c670ad74800190
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f7477017edc3c00a155064152f1d5df77bd35e63
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419746"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689366"
 ---
 # <a name="toolbox"></a>ツールボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,22 +33,22 @@ ms.locfileid: "63419746"
  **[ツールボックス]** には、作業中のファイルの種類に適した項目のみが表示されます。 [ツールボックス] 内で検索し、表示される項目をさらにフィルター処理できます。 プロジェクトに Client Profile でサポートされないコントロールが必要な場合、プロジェクト プロパティを編集することにより、プロジェクトに対象のフレームワーク全体を設定できます。  
   
 > [!NOTE]
-> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="help-on-toolbox-tabs"></a>[ツールボックス] のタブに関するヘルプ  
  次に示すドキュメントで、特定の **[ツールボックス]** タブに関する詳細を参照することができます。  
   
-- [ツールボックス、[データ] タブ](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+- [ツールボックス、[データ] タブ](https://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
-- [ツールボックス、[コンポーネント] タブ](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+- [ツールボックス、[コンポーネント] タブ](https://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
-- [ツールボックス、[HTML] タブ](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
+- [ツールボックス、[HTML] タブ](https://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
-- [ツールボックス、[データ] タブ](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+- [ツールボックス、[データ] タブ](https://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
-- [ツールボックス、[コンポーネント] タブ](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+- [ツールボックス、[コンポーネント] タブ](https://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
-- [ツールボックス、[HTML] タブ](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
+- [ツールボックス、[HTML] タブ](https://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
 ## <a name="see-also"></a>関連項目  
  [ツールボックスの使用](../../ide/using-the-toolbox.md)

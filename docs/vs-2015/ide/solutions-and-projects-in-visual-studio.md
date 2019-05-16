@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045330"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679876"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio のソリューションおよびプロジェクト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Visual Studio でアプリケーション、Web サイト、Web アプリ、ス�
  カスタム プロジェクトや項目テンプレートを作成することもできます。 詳細については、「[Creating Project and Item Templates](../ide/creating-project-and-item-templates.md)」 (プロジェクトと項目テンプレートの作成) をご覧ください。
 
 ## <a name="creating-new-projects"></a>プロジェクトの新規作成
- 新しいプロジェクトを作成する最も簡単な方法は、最初に定義済みのプロジェクト テンプレートを使用することです。これらのテンプレートは、特定のプログラミング言語で特定の種類のアプリケーションや Web サイトを作成し始めるのに必要な、生成済みのコード ファイル、構成ファイル、資産、および設定の基本セットで構成されます。 これらのテンプレートは、メイン メニューの **[ファイル &#124; 新規作成 &#124; プロジェクト]** または **[ファイル &#124; 新規作成 &#124; Web サイト]** を選択して **[新しいプロジェクト]** ダイアログに移動したときに表示されます。 詳しくは、「[Creating Solutions and Projects](../ide/creating-solutions-and-projects.md)」 (ソリューションとプロジェクトの作成) および「[NIB テンプレートからのプロジェクトの作成](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2)」をご覧ください。
+ 新しいプロジェクトを作成する最も簡単な方法は、最初に定義済みのプロジェクト テンプレートを使用することです。これらのテンプレートは、特定のプログラミング言語で特定の種類のアプリケーションや Web サイトを作成し始めるのに必要な、生成済みのコード ファイル、構成ファイル、資産、および設定の基本セットで構成されます。 これらのテンプレートは、メイン メニューの **[ファイル &#124; 新規作成 &#124; プロジェクト]** または **[ファイル &#124; 新規作成 &#124; Web サイト]** を選択して **[新しいプロジェクト]** ダイアログに移動したときに表示されます。 詳しくは、「[Creating Solutions and Projects](../ide/creating-solutions-and-projects.md)」 (ソリューションとプロジェクトの作成) および「[NIB テンプレートからのプロジェクトの作成](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2)」をご覧ください。
 
 ## <a name="managing-projects-in-solution-explorer"></a>ソリューション エクスプローラーでのプロジェクトの管理
  新しいプロジェクトを作成した後は、 **ソリューション エクスプローラー** を使用して、プロジェクト、ソリューション、およびそれらの関連項目を表示して管理します。 次の図に、2 つのプロジェクトを含む C# ソリューションが表示されたサーバー エクスプローラーを示します。

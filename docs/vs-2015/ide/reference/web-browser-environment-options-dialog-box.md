@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df33215bab20be8744ed2455ef87f1a037871f95
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 6cc3f5d49844509f5b0cb5fa7c439a6ce7c69e18
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419714"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698704"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>[Web ブラウザー]\([オプション] ダイアログ ボックス - [環境])
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "63419714"
 内部 Web ブラウザーと Internet Explorer のオプションを設定します。 このダイアログ ボックスにアクセスするには、**[ツール]** メニューの **[オプション]** をクリックし、**[環境]** フォルダーを展開して **[Web ブラウザー]** を選択します。  
   
 > [!NOTE]
-> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 > [!IMPORTANT]
 > Web の特定のファイルまたはコンポーネントを開いて、コンピューター上のコードを実行できます。  
@@ -53,7 +53,7 @@ ms.locfileid: "63419714"
   
 - **ソース エディター** 選択すると、[[コードの作成]](../../ide/writing-code-in-the-code-and-text-editor.md) にソースが表示されます。  
   
-- **HTML エディター** 選択すると、[HTML デザイナー](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)に表示されます。 この場合、デザイン ビューまたは標準のテキストベースのソース ビューで Web ページを編集します。  
+- **HTML エディター** 選択すると、[HTML デザイナー](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)に表示されます。 この場合、デザイン ビューまたは標準のテキストベースのソース ビューで Web ページを編集します。  
   
 - **外部エディター** 選択すると、別のエディターにソースが表示されます。 選択するエディター (Notepad.exe など) のパスを指定します。  
   
@@ -66,4 +66,4 @@ ms.locfileid: "63419714"
 ## <a name="see-also"></a>関連項目  
  [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)   
  [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)   
- [HTML デザイナー](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)
+ [HTML デザイナー](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)

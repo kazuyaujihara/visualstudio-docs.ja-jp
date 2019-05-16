@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 234b4252edc587ef52db57d3ec18eb98bb6b849b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fbf945459b0f0e2be041373da1db1cc419f776ed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778618"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674107"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>クラス デザイナーにおける Visual C++ の typedef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ typedef class coord
 };  
 ```  
   
- `typedef` 型の使用法の詳細については、「[(NOTINBUILD) typedef 指定子](http://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)」を参照してください。  
+ `typedef` 型の使用法の詳細については、「[(NOTINBUILD) typedef 指定子](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)」を参照してください。  
   
  C++ の typedef 図形には、typedef で指定された型の図形があります。 たとえば、ソースで `typedef class` が宣言されている場合、図形の角が丸くなり、**Class** のラベルが付きます。 `typedef struct` の場合、図形の角は四角で、**Struct** のラベルが付きます。  
   
@@ -202,4 +202,4 @@ class A {
   
 ## <a name="see-also"></a>関連項目  
  [Visual C++ コードの使用 (クラス デザイナー)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [(NOTINBUILD) typedef 指定子](http://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)
+ [(NOTINBUILD) typedef 指定子](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)

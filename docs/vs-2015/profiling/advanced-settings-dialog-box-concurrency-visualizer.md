@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1fcb0ae81a2f758f548f11bb9875b2275f6ebfe3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8710ed0a35b483601a166c4644112b1ba7e4feaf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782514"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705755"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>[詳細設定] ダイアログ ボックス (コンカレンシー ビジュアライザー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "54782514"
  CLR イベントは、通常はネイティブ プロセスに必要ないため、既定では、マネージド プロセスがプロファイリングされるときにのみ収集されます。  場合によっては (たとえば、ネイティブ プロセスが CLR をホストしている場合)、ネイティブ プロセス用に CLR イベントを収集する必要があります。  その場合は、**[ネイティブ プロセスを収集]** チェック ボックスをオンにします。  
   
 ### <a name="disable-rundown-events"></a>ランダウン イベントを無効化  
- CLR は、ランタイムとランダウンの 2 つのプロバイダーからイベントを生成します。  CLR ランタイム イベントのみを収集し、ランダウン イベントを収集しないようにする場合は、**[ランダウン イベントを無効化]** チェック ボックスをオンにします。  これにより、収集によって生成されるトレース ファイルのサイズが小さくなりますが、一部のスタックが解決されない場合があります。 詳しくは、「[CLR ETW プロバイダー](http://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)」をご覧ください。  
+ CLR は、ランタイムとランダウンの 2 つのプロバイダーからイベントを生成します。  CLR ランタイム イベントのみを収集し、ランダウン イベントを収集しないようにする場合は、**[ランダウン イベントを無効化]** チェック ボックスをオンにします。  これにより、収集によって生成されるトレース ファイルのサイズが小さくなりますが、一部のスタックが解決されない場合があります。 詳しくは、「[CLR ETW プロバイダー](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)」をご覧ください。  
   
 ### <a name="sample-events"></a>サンプル イベント  
  サンプル イベントを使って、スレッドの実行に関連付けられている呼び出し履歴を収集できます。 これらのイベントは、現在のプロセスで実行しているスレッドに対して、1 ミリ秒あたり約 1 回収集されます。 サンプル イベントの収集を無効にすると、収集されるトレースのサイズは小さくなりますが、スレッドの実行に関連付けられている呼び出し履歴を表示できなくなります。  

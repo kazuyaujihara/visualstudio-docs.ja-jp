@@ -14,17 +14,17 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a4bc73046ca32645ffcdc8c3f2978c9245aaec6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c9ac805ebea19604343d561bf553448fff2ca575
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668068"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701744"
 ---
 # <a name="quick-watch-command"></a>QuickWatch コマンド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-選択または指定したテキストが [[クイック ウォッチ] ダイアログ ボックス](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)の [式] フィールドに表示されます。 このダイアログ ボックスを利用し、デバッガーが認識する変数または式の現在値やレジスタのコンテンツの現在値を計算できます。 さらに、非定数の変数の値やレジストリのコンテンツの値を変更できます。  
+選択または指定したテキストが [[クイック ウォッチ] ダイアログ ボックス](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)の [式] フィールドに表示されます。 このダイアログ ボックスを利用し、デバッガーが認識する変数または式の現在値やレジスタのコンテンツの現在値を計算できます。 さらに、非定数の変数の値やレジストリのコンテンツの値を変更できます。  
   
 ## <a name="syntax"></a>構文  
   
@@ -46,7 +46,7 @@ Debug.QuickWatchq [text]
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [方法: [クイック ウォッチ] ダイアログ ボックスを使用する](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [方法: [クイック ウォッチ] ダイアログ ボックスを使用する](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)   
  [コマンド ウィンドウ](../../ide/reference/command-window.md)   
  [[検索/コマンド] ボックス](../../ide/find-command-box.md)   

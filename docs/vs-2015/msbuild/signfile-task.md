@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 081899efb202917f1ebeac97a58dd89cf5a04f53
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 08db6a5d22cacc348a9ef36fd9e9857d5b55642a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444383"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703733"
 ---
 # <a name="signfile-task"></a>SignFile タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "63444383"
 ```  
   
 > [!NOTE]
-> 証明書の拇印は、証明書の SHA-1 ハッシュです。 詳細については、「[Obtain the SHA-1 Hash of a Trusted Root CA Certificate](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87)」 (信頼されたルート CA 証明書の SHA-1 ハッシュの取得) を参照してください。  
+> 証明書の拇印は、証明書の SHA-1 ハッシュです。 詳細については、「[Obtain the SHA-1 Hash of a Trusted Root CA Certificate](https://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87)」 (信頼されたルート CA 証明書の SHA-1 ハッシュの取得) を参照してください。  
   
 ## <a name="example"></a>例  
  次に、`Exec` タスクを使用して、`FilesToSign` アイテム コレクションで指定したファイルに、`Certificate` プロパティで指定された証明書で署名する例を示します。 これを使用すると、ビルド処理中に Windows インストーラー ファイルに署名できます。  

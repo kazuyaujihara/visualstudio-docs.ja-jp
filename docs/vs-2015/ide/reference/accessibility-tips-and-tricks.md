@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c375a015576202ff8e5d0f9815d534a81aa7b185
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7e8de7cf7cbdc58e14cfc72c5317a765f46e67ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441104"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674807"
 ---
 # <a name="accessibility-tips-and-tricks"></a>アクセシビリティのヒントとテクニック
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,10 +24,10 @@ ms.locfileid: "63441104"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] にはアクセシビリティ機能が組み込まれているため、簡単にキーボードで作業したり、スクリーン リーダーやその他の支援技術デバイスを使用したりすることができます。 ここでは、便利なショートカット キーのいくつかの組み合わせのほか、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] のアクセシビリティを向上するために最適化する場合の推奨事項についてもいくつか示します。  
   
 > [!NOTE]
-> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="save-your-ide-settings"></a>IDE 設定を保存する  
- ウィンドウのレイアウト、キーボード マップ スキーム、およびその他の設定を保存することにより、IDE エクスペリエンスをカスタマイズできます。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+ ウィンドウのレイアウト、キーボード マップ スキーム、およびその他の設定を保存することにより、IDE エクスペリエンスをカスタマイズできます。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="common-windows-shortcut-key-combinations"></a>一般的な Windows のショートカット キーの組み合わせ  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] で作業を行う場合、標準的な Windows のショートカット キーの組み合わせの多くを使用することができます。 これらのショートカット キーの組み合わせのいくつかを以下に示します。  

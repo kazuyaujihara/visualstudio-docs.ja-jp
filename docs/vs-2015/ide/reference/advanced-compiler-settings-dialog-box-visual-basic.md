@@ -13,12 +13,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acf49209927d2d27d717c797d0abd729795a2c20
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4f98d2209ca3a2869e4be69a9c46faa5c4755a06
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441122"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699908"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>[ビルドの詳細設定] ダイアログ ボックス (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63441122"
   
 2. **[プロジェクト]** メニューの **[プロパティ]** をクリックします。 **プロジェクト デザイナー**が表示されたら、**[コンパイル]** タブをクリックします。  
   
-3. [[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) で、**[構成]** と **[プラットフォーム]** を選択します。 簡易ビルド構成では、**[構成]** と **[プラットフォーム]** の一覧は表示されません。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
+3. [[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) で、**[構成]** と **[プラットフォーム]** を選択します。 簡易ビルド構成では、**[構成]** と **[プラットフォーム]** の一覧は表示されません。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
   
 4. **[詳細コンパイル オプション]** をクリックします。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "63441122"
  リストから **[None]**、**[Full]**、または **[pdb-only]** を選択します。 **[None]** を指定すると、デバッグ情報が生成されません。 **[Full]** を指定すると、完全なデバッグ情報が生成され、**[pdb-only]** を指定すると、PDB デバッグ情報のみが生成されます。 既定では、このオプションは **[Full]** に設定されます。  
   
 ## <a name="compilation-constants"></a>コンパイル定数  
- 条件付きコンパイル定数は、ソース ファイルに [#Const](http://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386) のプリプロセッサ ディレクティブを使用する場合と同じような効果がありますが、定義された定数は public で、プロジェクトのすべてのファイルに適用されます。 条件付きコンパイル定数を [#If...Then...#Else](http://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) ディレクティブと共に使用することで、ソース ファイルを条件付きでコンパイルできます。 「[条件付きコンパイル](http://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848)」を参照してください。  
+ 条件付きコンパイル定数は、ソース ファイルに [#Const](https://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386) のプリプロセッサ ディレクティブを使用する場合と同じような効果がありますが、定義された定数は public で、プロジェクトのすべてのファイルに適用されます。 条件付きコンパイル定数を [#If...Then...#Else](https://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) ディレクティブと共に使用することで、ソース ファイルを条件付きでコンパイルできます。 「[条件付きコンパイル](https://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848)」を参照してください。  
   
  **定数 DEBUG の定義**  
  既定では、このチェック ボックスはオンになり、DEBUG 定数を設定するように指定されます。  
