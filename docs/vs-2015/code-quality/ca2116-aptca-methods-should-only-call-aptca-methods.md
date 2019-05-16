@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 916b30cf4cff357ba468faae524d6b0ca7806959
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ac5877ecf22ca8d0d8cc15095d354973ece29eaa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963709"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687356"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116:APTCA メソッドは APTCA メソッドのみを呼び出すことができます
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58963709"
  アセンブリのメソッド、<xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName>属性が属性がないアセンブリ内のメソッドを呼び出します。
 
 ## <a name="rule-description"></a>規則の説明
- 既定では、厳密な名前付きアセンブリで public または protected のメソッドは暗黙的にによって保護、[リンク確認要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)は完全な信頼ののみ完全に信頼された呼び出し元は、厳密な名前のアセンブリにアクセスできます。 アセンブリの厳密な名前が付いて、 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) 属性には、この保護はありません。 属性には、アセンブリにイントラネットまたはインターネットからのコード実行などの完全な信頼がない呼び出し元にアクセスできるように、リンク確認要求が無効にします。
+ 既定では、厳密な名前付きアセンブリで public または protected のメソッドは暗黙的にによって保護、[リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)は完全な信頼ののみ完全に信頼された呼び出し元は、厳密な名前のアセンブリにアクセスできます。 アセンブリの厳密な名前が付いて、 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) 属性には、この保護はありません。 属性には、アセンブリにイントラネットまたはインターネットからのコード実行などの完全な信頼がない呼び出し元にアクセスできるように、リンク確認要求が無効にします。
 
  APTCA 属性が完全に信頼されたアセンブリに存在すると、アセンブリが部分的に信頼された呼び出し元が許可されない別のアセンブリ内のコードの実行、セキュリティ上の弱点は可能性があります。 場合は 2 つのメソッド`M1`と`M2`次の条件を満たしている、悪意のある呼び出し元は、メソッドを使用できる`M1`を保護する暗黙の型の完全な信頼リンク確認要求をバイパスする`M2`:
 
@@ -49,7 +49,7 @@ ms.locfileid: "58963709"
   部分的に信頼された呼び出し元`X`メソッドを呼び出すことができます`M1`原因となる、`M1`を呼び出す`M2`します。 `M2` APTCA 属性、その直前の呼び出し元がありません (`M1`) は完全な信頼のリンク確認要求を満たす必要があります`M1`完全な信頼があり、したがってこのチェックに適合します。 セキュリティ リスクは`X`を保護するリンク確認要求を満たすに関与しません`M2`呼び出し元が信頼されていないからです。 そのため、APTCA 属性を持つメソッド属性を持たないメソッドを呼び出していません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- APCTA 属性が必要な場合は、完全信頼アセンブリを呼び出すメソッドを保護する要求を使用します。 正確なアクセス許可要求するには、メソッドによって公開される機能は異なります。 可能な場合は、完全な信頼の基盤となる機能は部分的に信頼された呼び出し元に公開されないことを確認する要求を持つメソッドを保護します。 それができない場合は、公開されている機能を効果的に保護するアクセス許可のセットを選択します。 要求の詳細については、次を参照してください。[要求](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48)します。
+ APCTA 属性が必要な場合は、完全信頼アセンブリを呼び出すメソッドを保護する要求を使用します。 正確なアクセス許可要求するには、メソッドによって公開される機能は異なります。 可能な場合は、完全な信頼の基盤となる機能は部分的に信頼された呼び出し元に公開されないことを確認する要求を持つメソッドを保護します。 それができない場合は、公開されている機能を効果的に保護するアクセス許可のセットを選択します。 要求の詳細については、次を参照してください。[要求](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48)します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告を安全に抑制するには、メソッドによって公開される機能が許可しないこと直接的または間接的に呼び出し元が機密情報、操作、または、破壊的な方法で使用できるリソースにアクセスすることを確認する必要があります。
@@ -77,4 +77,4 @@ ms.locfileid: "58963709"
  [CA2117:APTCA 型は APTCA 基本型のみを拡張する必要があります。](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>関連項目
- [安全なコーディングのガイドライン](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [.NET Framework アセンブリから呼び出すことで部分的に信頼されているコード](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d)[からライブラリを使用して部分的に信頼されているコード](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74)[要求](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48)[リンク確認要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)[データとモデリング](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [安全なコーディングのガイドライン](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [.NET Framework アセンブリから呼び出すことで部分的に信頼されているコード](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d)[からライブラリを使用して部分的に信頼されているコード](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74)[要求](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48)[リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)[データとモデリング](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
