@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445643"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683849"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio の統合 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] はこの目的のために、`PropertyGroup`、`ItemGroup`、`Import`、プロパティ、および項目要素の条件を確認します。  
   
 ## <a name="additional-build-actions"></a>その他のビルド アクション  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、[[ファイルのプロパティ]](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) ウィンドウの **[ビルド アクション]** プロパティを使用して、プロジェクト内のファイルの項目の種類名を変更できます。 `Compile`、 `EmbeddedResource`、 `Content`、および `None` の各項目の種類名は、プロジェクト内に既に存在する他の項目の種類名と共に、常にこのメニューに表示されます。 このメニューにカスタムの項目の種類名すべてが常に表示されるようにするには、 `AvailableItemName`という項目の種類に名前を追加します。 たとえば、プロジェクト ファイルに次の内容を追加すると、このファイルをインポートするすべてのプロジェクトの当該メニューに、カスタム型 `JScript` が追加されます。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、[[ファイルのプロパティ]](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) ウィンドウの **[ビルド アクション]** プロパティを使用して、プロジェクト内のファイルの項目の種類名を変更できます。 `Compile`、 `EmbeddedResource`、 `Content`、および `None` の各項目の種類名は、プロジェクト内に既に存在する他の項目の種類名と共に、常にこのメニューに表示されます。 このメニューにカスタムの項目の種類名すべてが常に表示されるようにするには、 `AvailableItemName`という項目の種類に名前を追加します。 たとえば、プロジェクト ファイルに次の内容を追加すると、このファイルをインポートするすべてのプロジェクトの当該メニューに、カスタム型 `JScript` が追加されます。  
   
 ```  
 <ItemGroup>  

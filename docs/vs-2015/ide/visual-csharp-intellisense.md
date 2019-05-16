@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b1af6a2900a579e7490f47f2e8ee4983310e19e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443163"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698204"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# の IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ Visual C# の IntelliSense は、エディターでコーディングする際�
   C# でのコンプリート リストは非常に高機能でもあるため、コンテキストに基づいて、無関係なトークンを除外したり、トークンを事前に選択したりします。 詳細については、「[C# でフィルター処理されたコンプリート リスト](../misc/filtered-completion-lists-in-csharp.md)」および「[C# で事前に選択されたコンプリート リスト項目](../misc/pre-selected-completion-list-items-in-csharp.md)」を参照してください。  
   
 ### <a name="CodeSnippets"></a> コンプリート リストのコード スニペット  
- Visual C# のコンプリート リストには、コード スニペットが含まれており、事前に定義されたコードの本体をプログラムに簡単に挿入できます。 コード スニペットは、スニペットの [Shortcut 要素 (IntelliSense コード スニペット)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) としてコンプリート リストに表示されます。  既定で Visual C# で利用できるコード スニペットの詳細については、「[Visual C# のコード スニペット](../ide/visual-csharp-code-snippets.md)」を参照してください。  
+ Visual C# のコンプリート リストには、コード スニペットが含まれており、事前に定義されたコードの本体をプログラムに簡単に挿入できます。 コード スニペットは、スニペットの [Shortcut 要素 (IntelliSense コード スニペット)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) としてコンプリート リストに表示されます。  既定で Visual C# で利用できるコード スニペットの詳細については、「[Visual C# のコード スニペット](../ide/visual-csharp-code-snippets.md)」を参照してください。  
   
 ### <a name="Keywords"></a> コンプリート リストの言語キーワード  
- Visual C# のコンプリート リストには、言語キーワードも含まれています。 C# の言語キーワードの詳細については、「[C# のキーワード](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)」を参照してください。  
+ Visual C# のコンプリート リストには、言語キーワードも含まれています。 C# の言語キーワードの詳細については、「[C# のキーワード](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)」を参照してください。  
   
 ### <a name="ExtensionMethods"></a> コンプリート リストでの拡張メソッド  
  Visual C# のコンプリート リストには、スコープ内にある拡張メソッドが含まれます。  
@@ -81,7 +81,7 @@ Visual C# の IntelliSense は、エディターでコーディングする際�
  IntelliSense は、オブジェクト名の自動補完のために、ポップアップ [メンバーの一覧](../ide/using-intellisense.md)ボックスで最近選択したメンバーを記憶します。 次回メンバーの一覧を使用するときに、最近使用したメンバーが上部に表示されます。 最近使用したメンバーの履歴は、IDE の各セッションの間に消去されます。  
   
 ## <a name="override"></a>override  
- [override](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) と入力してから Space キーを押すと、オーバーライドできる有効な基本クラス メンバーすべてが IntelliSense によりポップアップ リスト ボックスに表示されます。 `override` の後ろにメソッドの戻り値の型を入力すると、同じ型を返すメソッドのみが表示されます。 一致が見つからなかった場合はすべての基本クラスのメンバーが表示されます。  
+ [override](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) と入力してから Space キーを押すと、オーバーライドできる有効な基本クラス メンバーすべてが IntelliSense によりポップアップ リスト ボックスに表示されます。 `override` の後ろにメソッドの戻り値の型を入力すると、同じ型を返すメソッドのみが表示されます。 一致が見つからなかった場合はすべての基本クラスのメンバーが表示されます。  
   
 ## <a name="automatic-code-generation"></a>自動コード生成  
   
@@ -102,7 +102,7 @@ Visual C# の IntelliSense は、エディターでコーディングする際�
  Visual Studio IDE で使用可能なオプションを参照するには、**[編集]** メニューで、**[IntelliSense]** をポイントしてから、**[using の整理]** をポイントします。 IDE には、`usings` ディレクティブの並び替えや削除に関する以下のオプションがあります。  
   
 ### <a name="implement-interface"></a>インターフェイスの実装  
- IntelliSense を使用すると、コード エディターでの作業中に[インターフェイス](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba)を簡単に実装できます。 通常、インターフェイスを適切に実装するには、クラス内で、インターフェイスのすべてのメンバーについてメソッド宣言を作成する必要があります。 IntelliSense を使用した場合、クラス宣言でインターフェイスの名前を入力すると、スマート タグが表示されます。 スマート タグには、インターフェイスを自動的に実装する際のオプションが表示され、名前付けを明示的に行うか、暗黙的に行うかを選択できます。 明示的な名前付けを使用した場合、メソッド宣言にインターフェイス名が追加されます。逆に暗黙的な名前付けを使用した場合、メソッド宣言には所属するインターフェイスは明示されません。 明示的に名前付けされたインターフェイス メソッドには、インターフェイスのインスタンスからアクセスすることしかできず、クラスのインスタンスからアクセスすることはできません。 詳細については、「[明示的なインターフェイスの実装](http://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2)」を参照してください。  
+ IntelliSense を使用すると、コード エディターでの作業中に[インターフェイス](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba)を簡単に実装できます。 通常、インターフェイスを適切に実装するには、クラス内で、インターフェイスのすべてのメンバーについてメソッド宣言を作成する必要があります。 IntelliSense を使用した場合、クラス宣言でインターフェイスの名前を入力すると、スマート タグが表示されます。 スマート タグには、インターフェイスを自動的に実装する際のオプションが表示され、名前付けを明示的に行うか、暗黙的に行うかを選択できます。 明示的な名前付けを使用した場合、メソッド宣言にインターフェイス名が追加されます。逆に暗黙的な名前付けを使用した場合、メソッド宣言には所属するインターフェイスは明示されません。 明示的に名前付けされたインターフェイス メソッドには、インターフェイスのインスタンスからアクセスすることしかできず、クラスのインスタンスからアクセスすることはできません。 詳細については、「[明示的なインターフェイスの実装](https://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2)」を参照してください。  
   
  インターフェイスの実装機能では、そのインターフェイスに必要な最低限の数のメソッド スタブが生成されます。 基本クラスにインターフェイスの一部だけが実装されている場合、これらのスタブは再生成されません。  
   

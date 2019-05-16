@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5673ebf28cc652e3bcd973808db87b5bb058659c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442320"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683536"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>エミュレーターにおける Windows Phone アプリの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Phone エミュレーターにより仮想化された環境が提供されます。物理デバイスがなくても、そこでコンピューター上の Windows Phone アプリのデバッグとテストが行えます。 一般的なタッチと回転イベントのシミュレーションや、エミュレートしたい物理的な画面サイズと解像度の選択が可能です。 位置、ネットワーク、通知、センサー、加速度計、およびオプションの SD カードなど、一般的に使用される多数の機能をテストすることもできます。  
   
- エミュレーターでテストできる機能についての詳細については、次を参照してください。 [Windows Phone エミュレーターでアプリの機能をテスト](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1)します。  
+ エミュレーターでテストできる機能についての詳細については、次を参照してください。 [Windows Phone エミュレーターでアプリの機能をテスト](https://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1)します。  
   
  Visual Studio と連携して、エミュレーターは、Windows Phone アプリを設計、開発、デバッグ、およびテストできる完全な環境を提供します。  
   
@@ -103,7 +103,7 @@ Windows Phone エミュレーターにより仮想化された環境が提供さ
 ### <a name="BKMK_depltool"></a> アプリケーション配置ツールを使用するアプリを実行します。  
  Windows Phone アプリケーション配置ツールを使用することもできます (**AppDeploy.exe**)、エミュレーターでアプリを実行します。 このツールは、Windows Phone 開発ツールのインストール時にインストールされるスタンドアロンのアプリです。  
   
- 詳細については、次を参照してください。[アプリケーションの展開ツールでアプリを Windows Phone 8.1 の展開](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6)します。  
+ 詳細については、次を参照してください。[アプリケーションの展開ツールでアプリを Windows Phone 8.1 の展開](https://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6)します。  
   
 ## <a name="BKMK_toolbar"></a> エミュレーター ツールバーで、Windows Phone エミュレーターを構成します。  
  次の表で、エミュレーター ツールバーで使用できる構成ボタンを示します。  

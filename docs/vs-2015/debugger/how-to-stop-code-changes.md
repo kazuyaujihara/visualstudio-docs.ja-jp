@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb1747341de65a5f642790410c35eee35620575e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 739538d82a478f182c06de0e34b13f8a1bd2b2e0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442716"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690052"
 ---
 # <a name="how-to-stop-code-changes"></a>方法: コード変更を停止する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,4 +45,4 @@ ms.locfileid: "63442716"
   
 ## <a name="see-also"></a>関連項目  
  [エディット コンティニュ](../debugger/edit-and-continue.md)   
- [[エディット コンティニュ] ([オプション] ダイアログ ボックス - [デバッグ])](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
+ [[エディット コンティニュ] ([オプション] ダイアログ ボックス - [デバッグ])](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

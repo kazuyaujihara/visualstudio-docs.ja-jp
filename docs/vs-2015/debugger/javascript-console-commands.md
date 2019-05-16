@@ -18,19 +18,19 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431429"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690594"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows および Windows Phone に適用されます] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
- Visual Studio では、JavaScript コンソール ウィンドウでコマンドを使用して、メッセージを送信したり他のタスクを実行したりすることができます。 そのウィンドウを使用する方法を示す例については、次を参照してください。[クイック スタート。JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)します。 このトピックの情報は、Windows ストア アプリ、Windows Phone ストア アプリ、および Visual Studio Tools for Apache Cordova を使用して作成されたアプリに適用されます。 Cordova アプリでサポートされているコンソール コマンドについては、「 [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)」を参照してください。 Internet Explorer F12 ツールのコンソールの使用については、 [このトピック](http://msdn.microsoft.com/library/ie/dn255006.aspx)を参照してください。  
+ Visual Studio では、JavaScript コンソール ウィンドウでコマンドを使用して、メッセージを送信したり他のタスクを実行したりすることができます。 そのウィンドウを使用する方法を示す例については、次を参照してください。[クイック スタート。JavaScript のデバッグ](../debugger/quickstart-debug-javascript-using-the-console.md)します。 このトピックの情報は、Windows ストア アプリ、Windows Phone ストア アプリ、および Visual Studio Tools for Apache Cordova を使用して作成されたアプリに適用されます。 Cordova アプリでサポートされているコンソール コマンドについては、「 [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)」を参照してください。 Internet Explorer F12 ツールのコンソールの使用については、 [このトピック](https://msdn.microsoft.com/library/ie/dn255006.aspx)を参照してください。  
   
  JavaScript コンソール ウィンドウが閉じられた場合開けることを選択して、Visual Studio でデバッグ中**デバッグ** > **Windows** > **JavaScriptコンソール**します。  
   

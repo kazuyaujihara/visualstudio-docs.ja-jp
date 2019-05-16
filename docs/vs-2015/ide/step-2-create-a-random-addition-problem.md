@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b36897236b71617c6eb36949d307e6b3e1d0204b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442626"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693974"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>手順 2: ランダムな加算問題を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "63442626"
   
      `Random` はオブジェクトと呼ばれます。 この言葉は聞いたことがあるでしょう。次のチュートリアルでプログラミングでのその意味について説明していきます。 ここでは、ボタン、ラベル、パネル、OpenFileDialogs、ColorDialogs、SoundPlayers、Randoms、およびフォームの作成に `new` ステートメントを使用することができ、これらの項目はオブジェクトと呼ばれることを覚えておいてください。 プログラムを実行すると、フォームが開始され、その分離コードは `Random` オブジェクトを作成し、**randomizer** と名付けます。  
   
-     すぐにメソッドをビルドして解答を確認するため、クイズは変数を使用して各問題に生成する乱数を格納する必要があります。 [変数](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa)または[型](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad)に関するページを参照してください。 変数を適切に使用するためには、変数を宣言する必要があります。これは名前およびデータ型を一覧表示することを意味します。  
+     すぐにメソッドをビルドして解答を確認するため、クイズは変数を使用して各問題に生成する乱数を格納する必要があります。 [変数](https://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa)または[型](https://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad)に関するページを参照してください。 変数を適切に使用するためには、変数を宣言する必要があります。これは名前およびデータ型を一覧表示することを意味します。  
   
 4. 2 つの整数変数をフォームに追加し、**addend1** と **addend2** という名前を付けます。  
   

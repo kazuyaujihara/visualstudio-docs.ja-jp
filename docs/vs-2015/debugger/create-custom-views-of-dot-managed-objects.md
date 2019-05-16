@@ -24,12 +24,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbbfbe17fa5dfb9a10f530981643be7a0042d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb5b56404c7ddc99b7999b47cf3c2a899f915efd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440450"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702413"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>管理対象オブジェクトのカスタム ビューを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,10 +50,10 @@ Visual Studio でデバッガーの変数ウィンドウにデータ型を表示
 > [!CAUTION]
 > このファイルの構造と自動展開規則の構文は、Visual Studio のリリースごとに異なる可能性があります。  
   
- また、ネイティブ型の表示は、式エバリュエーター アドインを記述してカスタマイズできます。 詳細については、次を参照してください。 [EEAddIn サンプル。デバッグの式エバリュエーター アドイン](http://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)します。  
+ また、ネイティブ型の表示は、式エバリュエーター アドインを記述してカスタマイズできます。 詳細については、次を参照してください。 [EEAddIn サンプル。デバッグの式エバリュエーター アドイン](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)します。  
   
 ## <a name="see-also"></a>関連項目  
  [DebuggerTypeProxy 属性の使用](../debugger/using-debuggertypeproxy-attribute.md)   
  [DebuggerDisplay 属性の使用](../debugger/using-the-debuggerdisplay-attribute.md)   
  [ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)   
- [デバッガー表示属性によるデバッグ機能の拡張](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+ [デバッガー表示属性によるデバッグ機能の拡張](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

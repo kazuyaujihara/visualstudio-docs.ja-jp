@@ -16,19 +16,19 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eec821993ec1aef2f8b2ad6ad8f5109c07d1156
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584697"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674764"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Visual C# と Visual Basic の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual C# または Microsoft Visual Basic を初めて使用する方は、ここがスタート ラインです。 このチュートリアル入門のヘルプは、Visual C# と Visual Basic について説明する一連のレッスンで構成されています。 楽しみながら、高機能のソフトウェアを開発してください。  
   
- Visual C# について詳しくは、「[Visual C++ リソース](http://msdn.microsoft.com/vstudio/hh386302.aspx)」をご覧ください。  
+ Visual C# について詳しくは、「[Visual C++ リソース](https://msdn.microsoft.com/vstudio/hh386302.aspx)」をご覧ください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [チュートリアル: シンプルなアプリケーションの作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  

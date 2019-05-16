@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: jillfra
-ms.openlocfilehash: 53ff7b49414e3473c74a41008f381bb207e45fd0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f80b575656c2d8b1740f217f2e144f89f254078
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414668"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681632"
 ---
 # <a name="hresult-information-in-managed-code"></a>マネージ コードの HRESULT 情報
 マネージド コードと COM の相互作用によって、HRESULT 戻り値が検出されたときに問題が発生する可能性があります。  
@@ -64,7 +64,7 @@ ms.locfileid: "63414668"
   
 ## <a name="see-also"></a>関連項目  
  [マネージ Vspackage](../misc/managed-vspackages.md)   
- [アンマネージ コードとの相互運用](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)   
- [方法: Map HRESULTs and Exceptions](http://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9)   
- [相互運用のための COM コンポーネントの作成](http://msdn.microsoft.com/7a2c657a-cfef-40f0-bed3-7c2c0ac4abdf)   
+ [アンマネージ コードとの相互運用](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)   
+ [方法: Map HRESULTs and Exceptions](https://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9)   
+ [相互運用のための COM コンポーネントの作成](https://msdn.microsoft.com/7a2c657a-cfef-40f0-bed3-7c2c0ac4abdf)   
  [マネージド VSPackage](../misc/managed-vspackages.md)

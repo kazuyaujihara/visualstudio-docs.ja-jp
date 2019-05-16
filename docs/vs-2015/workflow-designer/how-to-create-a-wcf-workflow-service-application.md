@@ -9,19 +9,19 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40b1d2961fa0f0187d11bd87df54ff2ad3124275
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d0c258ea081e95179c507f76413ae2a5fc7d71a5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433518"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705848"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>方法: WCF ワークフロー サービス アプリケーションを作成する
 [!INCLUDE[indigo1](../includes/indigo1-md.md)] ワークフロー サービス アプリケーションは、そのクライアントとの間でプロセスの境界を越えてメッセージを受け渡しする分散型の通信サービスです。 サービス側でのサービス コントラクトの実装は、.NET Framework 3.5 の従来のワークフロー サービスと同様に、[!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] のワークフロー アクティビティを介して宣言形式で行います。  
   
 ### <a name="to-create-a-wcf-workflow-service-application"></a>WCF ワークフロー サービス アプリケーションを作成するには  
   
-1. [!INCLUDE[vs2010](../includes/vs2010-md.md)]を起動します。  
+1. [!INCLUDE[vs2010](../includes/vs2010-md.md)] を起動します。  
   
 2. **ファイル**メニューで、**新規**、し、**プロジェクト**.  
   
@@ -43,5 +43,5 @@ ms.locfileid: "63433518"
 8. プロジェクト テンプレートによって、サービス定義が XAML として作成されます。 [!INCLUDE[wfd1](../includes/wfd1-md.md)]のデザイン ビューが開かれ、<xref:System.Activities.Statements.Sequence> と <xref:System.ServiceModel.Activities.Receive> のアクティビティを含む <xref:System.ServiceModel.Activities.SendReply> アクティビティが表示されます。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: アクティビティを作成します。](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [方法: アクティビティを作成します。](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [ワークフロー プロジェクトの作成](../workflow-designer/creating-a-workflow-project.md)

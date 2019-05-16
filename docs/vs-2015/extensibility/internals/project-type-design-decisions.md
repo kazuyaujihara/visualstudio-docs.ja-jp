@@ -13,12 +13,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 323fbbc48953537dbcad4a13d2774fefec65dd52
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd26e08ab153e96fc601e89788008cb0e9ca38c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976838"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704079"
 ---
 # <a name="project-type-design-decisions"></a>プロジェクト タイプのデザインの方針
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58976838"
   
  プロジェクト内の項目は、ファイル、または、インターネット経由でデータベースのリポジトリまたはデータ接続内のオブジェクトより抽象的オブジェクトができます。 項目がファイルの場合は、プロジェクト参照に基づくまたはディレクトリ ベースのプロジェクトのいずれかにすることができます。  
   
- 参照ベースのプロジェクトでは、項目が 1 つ以上のプロジェクトに表示できます。 ただし、項目が表す実際のファイルは、1 つのディレクトリのみであります。 ディレクトリ ベースのプロジェクトでは、すべてのプロジェクト項目は、ディレクトリ構造に存在します。 詳細については、次を参照してください。[プロジェクトにおける NIB: 項目の管理](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)します。  
+ 参照ベースのプロジェクトでは、項目が 1 つ以上のプロジェクトに表示できます。 ただし、項目が表す実際のファイルは、1 つのディレクトリのみであります。 ディレクトリ ベースのプロジェクトでは、すべてのプロジェクト項目は、ディレクトリ構造に存在します。 詳細については、次を参照してください。[プロジェクトにおける NIB: 項目の管理](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)します。  
   
  ローカル項目は、アプリケーションがインストールされている同じコンピューターに格納されます。 リモートの項目は、ローカル ネットワークでは、別のサーバーまたは別の場所はインターネット上に格納できます。  
   
@@ -59,8 +59,8 @@ ms.locfileid: "58976838"
  トランザクション モードを使用してデータ オブジェクトが開かれると、変更はメモリに一時的な場所に保存され、ユーザーが手動でファイルの保存を選択するまではコミットされません。 その時点では、すべての変更はまとめて行う必要があります。 または変更は行われません。  
   
 ## <a name="see-also"></a>関連項目  
- [チェックリスト:新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [プロジェクトにおける NIB: 項目の管理](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
+ [チェックリスト: 新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [プロジェクトにおける NIB: 項目の管理](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [開くと、プロジェクト項目の保存](../../extensibility/internals/opening-and-saving-project-items.md)   
  [プロジェクトの永続化](../../extensibility/internals/project-persistence.md)   
  [プロジェクト モデルの要素](../../extensibility/internals/elements-of-a-project-model.md)   

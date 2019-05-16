@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e0f962440d722a881d7a8de4ed2e7c9a9c7755f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b912708e7cc2f811e9cd18a24096ef66e128c375
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795911"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690068"
 ---
 # <a name="working-with-shaders"></a>シェーダーの操作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "54795911"
 ## <a name="dgsl-documents"></a>DGSL ドキュメント  
  シェーダー デザイナーは Directed Graph Shader Language (DGSL) 形式でシェーダーを保存します。これは、Directed Graph Markup Language (DGML) を基盤とする XML 形式です。 モデル エディターで、3-D モデルに DGSL シェーダーを直接適用できます。 ただし、アプリで DGSL シェーダーを使用するには、DirectX が認識できる形式にシェーダーをエクスポートする必要があります。  
   
- DGSL と DGML には互換性があるため、DGML ドキュメントを解析するために設計されたツールを利用して DGSL シェーダーを解析できます。 DGML の詳細については、「[Directed Graph Markup Language (DGML) について](http://msdn.microsoft.com/library/ee842619.aspx)」を参照してください。  
+ DGSL と DGML には互換性があるため、DGML ドキュメントを解析するために設計されたツールを利用して DGSL シェーダーを解析できます。 DGML の詳細については、「[Directed Graph Markup Language (DGML) について](https://msdn.microsoft.com/library/ee842619.aspx)」を参照してください。  
   
 ## <a name="related-topics"></a>関連トピック  
   
-|Title|説明|  
+|タイトル|説明|  
 |-----------|-----------------|  
 |[シェーダー デザイナー](../designers/shader-designer.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] シェーダー デザイナーを使用してシェーダーを操作する方法について説明します。|  
 |[シェーダー デザイナー ノード](../designers/shader-designer-nodes.md)|グラフィックス効果を得るためのシェーダー デザイナー ノードについて説明します。|  

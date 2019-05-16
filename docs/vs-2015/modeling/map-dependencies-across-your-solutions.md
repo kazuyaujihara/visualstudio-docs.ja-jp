@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d74fc577044cd11ca161f099e2432fd03ecfad2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb62c82722cbfc76264e760e117c828a6dc3bef0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440946"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687156"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>ソリューション間の依存関係をマップする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -284,7 +284,7 @@ ms.locfileid: "63440946"
      ![フィルター ペインを使用して、表示を簡略化](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
 ## <a name="SeeSourceHeader"></a> C および C++ のソース ファイルとヘッダー ファイルの間の依存関係の表示  
- C++ プロジェクトのより完全なマップを作成する場合は、そのプロジェクトに対してブラウザー情報のコンパイラ オプション (**/FR**) を設定します。 「 [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)」を参照してください。 設定されていない場合は、メッセージが表示され、このオプションを設定することが求められます。 **[OK]** を選択した場合、このオプションは現在のマップに対してのみ設定されます。 以後のすべてのマップについて、メッセージを非表示にするように選択できます。 このメッセージを非表示にしても、再び表示されるようにできます。 次のレジストリ キーを `0` に設定するか、削除します。  
+ C++ プロジェクトのより完全なマップを作成する場合は、そのプロジェクトに対してブラウザー情報のコンパイラ オプション (**/FR**) を設定します。 「 [/FR, /Fr (Create .Sbr File)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)」を参照してください。 設定されていない場合は、メッセージが表示され、このオプションを設定することが求められます。 **[OK]** を選択した場合、このオプションは現在のマップに対してのみ設定されます。 以後のすべてのマップについて、メッセージを非表示にするように選択できます。 このメッセージを非表示にしても、再び表示されるようにできます。 次のレジストリ キーを `0` に設定するか、削除します。  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider :AutoEnableSbr**  
   
@@ -312,11 +312,11 @@ ms.locfileid: "63440946"
 |コード マップを生成できませんでした。|ソリューション内のプロジェクトが正常にビルドされませんでした。|発生したビルド エラーを修正してから、マップを再生成します。|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [アーキテクチャ] **メニューからコード マップを生成しようとすると、** が応答しなくなる。|プログラム データベース (.pdb) ファイルが壊れている可能性があります。<br /><br /> .pdb ファイルには、型、メソッド、ソース ファイル情報などのデバッグ情報が格納されます。|ソリューションをリビルドしてから、もう一度実行します。|  
 |IntelliSense 参照データベースの特定の設定が無効になる。|IntelliSense の特定の設定が、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**[オプション]** ダイアログ ボックスで無効になっている可能性があります。|設定をオンにして有効にします。<br /><br /> 参照してください[オプション、テキスト エディター]、[C/C++ の高度な](../ide/reference/options-text-editor-c-cpp-advanced.md)します。|  
-|" **不明なメソッド** " という内容のメッセージがメソッド ノードで表示される。<br /><br /> この問題は、メソッドの名前を解決できないために発生します。|バイナリ ファイルにベース再配置テーブルがない可能性があります。|リンカーで **/FIXED:NO** オプションをオンにします。<br /><br /> 「 [/FIXED (Fixed Base Address)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)」を参照してください。|  
-||プログラム データベース (.pdb) ファイルがビルドされていない可能性があります。<br /><br /> .pdb ファイルには、型、メソッド、ソース ファイル情報などのデバッグ情報が格納されます。|リンカーで **/DEBUG** オプションをオンにします。<br /><br /> 「 [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)」を参照してください。|  
+|" **不明なメソッド** " という内容のメッセージがメソッド ノードで表示される。<br /><br /> この問題は、メソッドの名前を解決できないために発生します。|バイナリ ファイルにベース再配置テーブルがない可能性があります。|リンカーで **/FIXED:NO** オプションをオンにします。<br /><br /> 「 [/FIXED (Fixed Base Address)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)」を参照してください。|  
+||プログラム データベース (.pdb) ファイルがビルドされていない可能性があります。<br /><br /> .pdb ファイルには、型、メソッド、ソース ファイル情報などのデバッグ情報が格納されます。|リンカーで **/DEBUG** オプションをオンにします。<br /><br /> 「 [/DEBUG (Generate Debug Info)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)」を参照してください。|  
 ||予想される場所で .pdb ファイルを開くことができないか、ファイルが見つかりません。|.pdb ファイルが予想される場所にあることを確認します。|  
-||デバッグ情報が .pdb ファイルから取り除かれています。|**/PDBSTRIPPED** オプションをリンカーで使用した場合は、代わりに完全な .pdb ファイルを使用します。<br /><br /> 「 [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)」を参照してください。|  
-||呼び出し元が関数ではなく、バイナリ ファイル内のサンクまたはデータ セクション内のポインターです。|呼び出し元がサンクの場合は、 `_declspec(dllimport)` を使用してサンクの回避を試みます。<br /><br /> 参照トピック<br /><br /> -   [一般的な規則と制限事項](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [使用して関数呼び出しのインポート](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
+||デバッグ情報が .pdb ファイルから取り除かれています。|**/PDBSTRIPPED** オプションをリンカーで使用した場合は、代わりに完全な .pdb ファイルを使用します。<br /><br /> 「 [/PDBSTRIPPED (Strip Private Symbols)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)」を参照してください。|  
+||呼び出し元が関数ではなく、バイナリ ファイル内のサンクまたはデータ セクション内のポインターです。|呼び出し元がサンクの場合は、 `_declspec(dllimport)` を使用してサンクの回避を試みます。<br /><br /> 参照トピック<br /><br /> -   [一般的な規則と制限事項](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [使用して関数呼び出しのインポート](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ## <a name="RenderMoreQuickly"></a> コード マップをよりすばやく表示する  
  マップを初めて生成したときに、Visual Studio は、見つかったすべての依存関係のインデックスを作成します。 このプロセスには、特に大規模なソリューションの場合に時間がかかることがありますが、以降のパフォーマンスは向上します。 コードを変更すると、Visual Studio は、更新されたコードのインデックスだけを再作成します。 マップの表示にかかる時間を最小限に抑えたい場合は、次の作業を検討してください。  

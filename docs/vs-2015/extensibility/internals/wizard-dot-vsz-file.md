@@ -12,12 +12,12 @@ ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: db58e5d4b747c71e4b1394e5fc38a48391bee71e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab1adde4c7018f136f47769e16a8ce2fedf72c93
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977310"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687661"
 ---
 # <a name="wizard-vsz-file"></a>ウィザード (.Vsz) ファイル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Param="WIZARDUI = FALSE"
 |ウィザード|このフィールドには、OLE の ProgID ウィザード、または、IDE によって一緒はウィザードの CLSID の GUID の文字列表現が含まれています。|  
 |Param|これらの部分は省略可能です。 必要な数だけ追加できます。|  
   
- パラメーターには、ウィザードに追加のカスタム パラメーターを渡す .vsz ファイルが有効にします。 各値は、variant の配列内の文字列要素としてウィザードに渡されます。 詳細については、次を参照してください。[カスタム パラメーター](../../extensibility/internals/custom-parameters.md)します。 開発のカスタム ウィザードの .vsz ファイルを使用する方法については、次を参照してください。[します。Vsz ファイル (プロジェクト コントロール)](http://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
+ パラメーターには、ウィザードに追加のカスタム パラメーターを渡す .vsz ファイルが有効にします。 各値は、variant の配列内の文字列要素としてウィザードに渡されます。 詳細については、次を参照してください。[カスタム パラメーター](../../extensibility/internals/custom-parameters.md)します。 開発のカスタム ウィザードの .vsz ファイルを使用する方法については、次を参照してください。[します。Vsz ファイル (プロジェクト コントロール)](https://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
   
  .Vsz ファイルには、既定のロケール ID を追加するには、指定`FALLBACK_LCID`= xxxx, ここで xxxx は、ロケール ID を英語の場合は 1033 など。 ときに`FALLBACK_LCID`パラメーターが定義されている場合、ウィザードは、現在の ID が見つからない場合に指定されたフォールバック ロケール ID を使用します。  
   

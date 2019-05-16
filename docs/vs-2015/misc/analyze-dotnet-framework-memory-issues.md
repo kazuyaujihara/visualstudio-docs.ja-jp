@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 885f96a4e1e43fe422c6fd9cfaa414fe5871bce1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444656"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688573"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>.NET Framework のメモリ分析の問題
 Visual Studio マネージド メモリ アナライザーを使用して、.NET Framework コードでのメモリ リークおよび非効率的なメモリの使用を検出します。 対象コードの最低限の .NET Framework バージョンは .NET Framework 4.5 です。  
@@ -47,7 +47,7 @@ Visual Studio マネージド メモリ アナライザーを使用して、.NET
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
 ## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> アプリでメモリに関する問題を特定します。  
- メモリに関する問題の最も可視的な兆候は、アプリのパフォーマンスです (特に、時間の経過に伴ってパフォーマンスが低下する場合)。 特定のアプリの実行中に他のアプリのパフォーマンスが低下した場合も、メモリの問題を示している可能性があります。 メモリの問題を疑いがある場合は、タスク マネージャーなどのツールを使用してまたは[Windows パフォーマンス モニター](http://technet.microsoft.com/library/cc749249.aspx)調査を進めます。 たとえば、考えられるメモリ リークの原因として、説明が付かないような合計メモリ サイズの増加がないか確認します。  
+ メモリに関する問題の最も可視的な兆候は、アプリのパフォーマンスです (特に、時間の経過に伴ってパフォーマンスが低下する場合)。 特定のアプリの実行中に他のアプリのパフォーマンスが低下した場合も、メモリの問題を示している可能性があります。 メモリの問題を疑いがある場合は、タスク マネージャーなどのツールを使用してまたは[Windows パフォーマンス モニター](https://technet.microsoft.com/library/cc749249.aspx)調査を進めます。 たとえば、考えられるメモリ リークの原因として、説明が付かないような合計メモリ サイズの増加がないか確認します。  
   
  ![リソース モニターで一貫性のあるメモリの増加](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
   
@@ -56,7 +56,7 @@ Visual Studio マネージド メモリ アナライザーを使用して、.NET
  ![Resource Manager でのメモリ スパイク](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
 ## <a name="BKMK_Collect_memory_snapshots"></a> メモリのスナップショットを収集します。  
- メモリ分析ツールで情報を分析する*ダンプ ファイル*ヒープ情報が含まれています。 Visual Studio でダンプ ファイルを作成するかなどのツールを使用することができます[ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx)から[Windows Sysinternals](http://technet.microsoft.com/sysinternals)します。 参照してください[ダンプは、1 つ作成する方法でしょうか。](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) 、Visual Studio デバッガー チーム ブログ。  
+ メモリ分析ツールで情報を分析する*ダンプ ファイル*ヒープ情報が含まれています。 Visual Studio でダンプ ファイルを作成するかなどのツールを使用することができます[ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx)から[Windows Sysinternals](https://technet.microsoft.com/sysinternals)します。 参照してください[ダンプは、1 つ作成する方法でしょうか。](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) 、Visual Studio デバッガー チーム ブログ。  
   
 > [!NOTE]
 > ほとんどのツールでは、完全なヒープ メモリ データの有無に関係なくダンプ情報を収集できます。 Visual Studio メモリ アナライザーでは、完全なヒープ情報が求められます。  

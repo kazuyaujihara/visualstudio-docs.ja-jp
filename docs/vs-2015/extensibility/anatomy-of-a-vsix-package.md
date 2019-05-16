@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 68ed49b2b22a8302fad0355dde3f937f6b67794b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86c2beeab5fba0224fbdfb104d01ee5c28bba158
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443937"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699144"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX パッケージの構造
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ VSIX パッケージは、分類、拡張機能をインストールして Visua
 > VSIX パッケージに含まれるファイルの名前は、スペースを含める必要がありますいないもとして Uniform Resource Identifier (URI) 内に予約されている文字の下で定義された[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)します。  
   
 ## <a name="the-vsix-manifest"></a>VSIX マニフェスト  
- VSIX マニフェストには、拡張機能のインストール、および次のように、VSX スキーマに関する情報が含まれています。 詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 1.0 リファレンス](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)します。 VSIX マニフェストの例を次を参照してください。 [PackageManifest Element (Root Element, VSX Schema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)します。  
+ VSIX マニフェストには、拡張機能のインストール、および次のように、VSX スキーマに関する情報が含まれています。 詳細については、次を参照してください。 [VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)します。 VSIX マニフェストの例を次を参照してください。 [PackageManifest Element (Root Element, VSX Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)します。  
   
  VSIX マニフェストを指定する必要があります`extension.vsixmanifest`.vsix ファイルに含まれています。  
   
@@ -45,7 +45,7 @@ VSIX パッケージは、分類、拡張機能をインストールして Visua
   
  ユーザーは、依存関係がある拡張機能をインストールしようとすると、インストーラーは、ユーザー システムで、必要なアセンブリがインストールされていることを確認します。 必要なアセンブリが見つからない場合**拡張機能と更新**不足しているアセンブリの一覧を表示します。  
   
- 1 つまたは複数の拡張機能マニフェストが含まれている場合[参照](http://msdn.microsoft.com/32c52934-e81e-4b53-8cb6-4df45ef7bfa8)要素、**拡張機能と更新**システムにインストールされている拡張機能への参照をそれぞれのマニフェストを比較し、インストール、インストールされていない場合は、拡張機能を参照します。 参照先の拡張機能の以前のバージョンがインストールされている場合、新しいバージョンに置き換わります。  
+ 1 つまたは複数の拡張機能マニフェストが含まれている場合[参照](https://msdn.microsoft.com/32c52934-e81e-4b53-8cb6-4df45ef7bfa8)要素、**拡張機能と更新**システムにインストールされている拡張機能への参照をそれぞれのマニフェストを比較し、インストール、インストールされていない場合は、拡張機能を参照します。 参照先の拡張機能の以前のバージョンがインストールされている場合、新しいバージョンに置き換わります。  
   
  マルチ プロジェクト ソリューション内のプロジェクトには、同じソリューションで別のプロジェクトへの参照が含まれている場合、VSIX パッケージには、そのプロジェクトの依存関係が含まれています。 この動作をオーバーライドするには、内部のプロジェクトをクリックでの参照 をクリックして、**プロパティ**ウィンドウで、設定、**出力の VSIX にグループが含まれる**プロパティを`BuiltProjectOutputGroup`。  
   
@@ -54,7 +54,7 @@ VSIX パッケージは、分類、拡張機能をインストールして Visua
 ## <a name="installation-location"></a>インストール場所  
  インストール中に、**拡張機能と更新**%localappdata%\microsoft\visualstudio\14.0\extensions 下のフォルダーに、VSIX パッケージの内容を検索します。  
   
- インストールは、既定では、%localappdata% がユーザー固有のディレクトリであるために、現在のユーザーにのみ適用されます。 ただし、設定した場合、 [AllUsers](http://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b)するマニフェストの要素`True`で、拡張機能がインストールされます.\\ *VisualStudioInstallationFolder*\Common7\IDE\Extensions コンピューターのすべてのユーザーに利用可能になります。  
+ インストールは、既定では、%localappdata% がユーザー固有のディレクトリであるために、現在のユーザーにのみ適用されます。 ただし、設定した場合、 [AllUsers](https://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b)するマニフェストの要素`True`で、拡張機能がインストールされます.\\ *VisualStudioInstallationFolder*\Common7\IDE\Extensions コンピューターのすべてのユーザーに利用可能になります。  
   
 ## <a name="contenttypesxml"></a>[Content_Types].xml  
  [Content_Types] .xml ファイルは .vsix 展開ファイルのファイルの種類を識別します。 Visual Studio は、パッケージのインストール中にこのファイルを使用しますが、ファイル自体ではインストールされません。 このファイルの詳細については、次を参照してください。 [、Content_types の構造\].xml ファイル](../extensibility/the-structure-of-the-content-types-dot-xml-file.md)します。  

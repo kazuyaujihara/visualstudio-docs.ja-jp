@@ -9,12 +9,12 @@ caps.latest.revision: 66
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 40af4a29d35e4bd060251d0db8b6cb13dbb44caf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6b8c9cbc856559e349851dd4c08b65883793a640
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081009"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675815"
 ---
 # <a name="diagnose-problems-after-deployment"></a>配置後の問題の診断
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
 #### <a name="TFS2013"></a> Team Foundation Server 2013  
  ビルド定義を設定して、ソース、ビルド、およびシンボルの場所をビルド マニフェスト (BuildInfo.config ファイル) に追加します。 Team Foundation ビルドは自動的にこのファイルを作成し、そのファイルをプロジェクトの出力フォルダーに配置します。  
   
-1. [ビルド定義を編集するか、新しいビルド定義を作成します。](http://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1. [ビルド定義を編集するか、新しいビルド定義を作成します。](https://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
   
     ![ビルド定義を TFS 2013 での表示](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
   
@@ -56,7 +56,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
     ![ビルド定義の TFS 2013 でのシンボル パスを設定](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-    シンボルの詳細については、「 [シンボル データを発行する](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)」を参照してください。  
+    シンボルの詳細については、「 [シンボル データを発行する](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)」を参照してください。  
   
 4. この MSBuild 引数を追加して、TFS とシンボルの場所をビルド マニフェスト ファイルに含めます。  
   
@@ -144,7 +144,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
  **/p:BuildSymbolStorePath=**\<*シンボルへのパス*>  
   
 ## <a name="DeployRelease"></a>手順 2: アプリをリリースします。  
- アプリを配置するためのビルド プロセスにより作成された [Web.Deploy パッケージ](http://msdn.microsoft.com/library/dd394698.aspx) を使用する場合、ビルド マニフェストの名前は "*ProjectName*.BuildInfo.config" から "BuildInfo.config" へ自動的に変更され、Web サーバー上にあるアプリの Web.config ファイルと同じフォルダーに配置されます。  
+ アプリを配置するためのビルド プロセスにより作成された [Web.Deploy パッケージ](https://msdn.microsoft.com/library/dd394698.aspx) を使用する場合、ビルド マニフェストの名前は "*ProjectName*.BuildInfo.config" から "BuildInfo.config" へ自動的に変更され、Web サーバー上にあるアプリの Web.config ファイルと同じフォルダーに配置されます。  
   
  他の方法を使用してアプリを配置する場合は、ビルド マニフェストの名前が "*ProjectName*.BuildInfo.config" から "BuildInfo.config" へ変更され、Web サーバー上にあるアプリの Web.config ファイルと同じフォルダーに配置されていることを確認します。  
   
@@ -248,7 +248,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
 - **ProjectName**  
   
-   Visual Studio 内のプロジェクトの名前。 例えば:  
+   Visual Studio 内のプロジェクトの名前。 例:  
   
   ```  
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
@@ -304,7 +304,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
   
    ビルド システムに関する情報 ( `"TeamBuild"` または `"MSBuild"`) と以下の必須プロパティ:  
   
-  - **BuildLabel** (teambuild の場合)。ビルドの名前と番号。 このラベルは配置イベントの名前としても使用されます。 ビルド番号について詳しくは、「 [完了したビルドにわかりやすい名前を付けるためにビルド番号を使用](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)」をご覧ください。  
+  - **BuildLabel** (teambuild の場合)。ビルドの名前と番号。 このラベルは配置イベントの名前としても使用されます。 ビルド番号について詳しくは、「 [完了したビルドにわかりやすい名前を付けるためにビルド番号を使用](https://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)」をご覧ください。  
   
   - **SymbolPath** (推奨)。セミコロンで区切ったシンボル (PDB ファイル) の場所の Uri の一覧です。 これらの URI は、URL または UNC のいずれかです。 これにより、Visual Studio は対応するシンボルを容易に検索でき、デバッグに役立ちます。  
   
@@ -364,7 +364,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
      ![ソース管理から開く &#45; 移行済み](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
 #### <a name="WhatWorkspace"></a> Q:ワークスペースとは何ですか。  
- **A:** ご利用の[ワークスペースにはソースのコピーが格納](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)されるので、ご自分の作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。  
+ **A:** ご利用の[ワークスペースにはソースのコピーが格納](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)されるので、ご自分の作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。  
   
 #### <a name="UntrustedSymbols"></a> Q:信頼されていないシンボルに関する次のメッセージが表示されるのはなぜですか。  
  ![信頼されていないシンボル パスでデバッグしますか。](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  

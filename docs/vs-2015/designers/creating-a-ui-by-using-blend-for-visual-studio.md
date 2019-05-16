@@ -11,17 +11,17 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436180"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695931"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Blend for Visual Studio を使用して UI を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Blend for Visual Studio は、XAML ベースの Windows デスクトップ アプリ、Web アプリ、[Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) アプリ、[Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) アプリの設計を支援します。 Visual Studio と同じ基本的な XAML デザイン環境を提供しているほか、アニメーションやビヘイビアーなどの高度なタスクを視覚的にデザインする機能が追加されています。
+Blend for Visual Studio は、XAML ベースの Windows デスクトップ アプリ、Web アプリ、[Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) アプリ、[Windows Store](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx) アプリの設計を支援します。 Visual Studio と同じ基本的な XAML デザイン環境を提供しているほか、アニメーションやビヘイビアーなどの高度なタスクを視覚的にデザインする機能が追加されています。
 
  Blend for Visual Studio は Visual Studio に含まれているので、ダウンロードする必要はありません。 ただし、Visual Studio インストーラーで選択し、システムにインストールする必要があります。
 

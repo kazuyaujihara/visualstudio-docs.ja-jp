@@ -10,23 +10,23 @@ ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4563cd912295cf447b8268c0b9f54e39d11e921f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 39d2ab449c3623a90dd76729b46a9f353900fc88
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051883"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704112"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild プロジェクト ファイルでのデータの保持
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 プロジェクト サブタイプは、後で使用するためのプロジェクト ファイルにサブタイプ固有のデータを保持する必要があります。 プロジェクト サブタイプは、次の要件を満たすためにプロジェクト ファイルの永続化を使用します。  
   
-1. プロジェクトのビルドの一部として使用されるデータを保持します。 (Microsoft Build Engine の詳細については、次を参照してください[MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)。)。ビルド関連の情報を実行できますか。  
+1. プロジェクトのビルドの一部として使用されるデータを保持します。 (Microsoft Build Engine の詳細については、次を参照してください[MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)。)。ビルド関連の情報を実行できますか。  
   
     1. 構成に依存しないデータ。 つまり、空白または不足している条件を持つ MSBuild 要素に格納されているデータ。  
   
-    2. 構成に依存するデータ。 つまり、データが、特定のプロジェクト構成を規定する MSBuild 要素に格納されています。 例えば:  
+    2. 構成に依存するデータ。 つまり、データが、特定のプロジェクト構成を規定する MSBuild 要素に格納されています。 例:  
   
         ```  
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">  

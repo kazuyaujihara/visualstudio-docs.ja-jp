@@ -13,12 +13,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a33e1d4f2ddecdb467929edaae9ba184bfae920
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3fb723097a3b61508d9f9023d3a2ea1dcdb5f8f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763234"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701415"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Visual Basic での警告の構成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,63 +67,63 @@ ms.locfileid: "54763234"
 ### <a name="implicit-conversion-warning"></a>暗黙的な変換の警告  
  暗黙的な変換のインスタンスに対して生成されます。 `&` 演算子を使ったときの組み込み数値型から文字列への暗黙的な変換は含まれません。 新しいプロジェクトでの既定値はオフです。  
   
- ID: 42016  
+ ID:42016  
   
 ### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>遅延バインド メソッドの呼び出しおよびオーバーロードの解決の警告  
  遅延バインドのインスタンスに対して生成されます。 新しいプロジェクトでの既定値はオフです。  
   
- ID: 42017  
+ ID:42017  
   
 ### <a name="operands-of-type-object-warnings"></a>Object 型のオペランドの警告  
  `Option Strict On` でエラーを作成する `Object` 型のオペランドが発生したときに生成されます。 新しいプロジェクトでの既定値はオンです。  
   
- ID: 42018、42019  
+ ID:42018 および 42019  
   
 ### <a name="declarations-require-as-clause-warnings"></a>"As" 句が必要な宣言の警告  
  変数、関数、またはプロパティの宣言に `As` 句が不足していて `Option Strict On` によりエラーが作成されるときに生成されます。 型が割り当てられていない変数は `Object` 型と見なされます。 新しいプロジェクトでの既定値はオンです。  
   
- ID: 42020 (変数宣言)、42021 (関数宣言)、42022 (プロパティ宣言)  
+ ID:42020 (変数宣言)、42021 (関数宣言)、42022 (プロパティ宣言)  
   
 ### <a name="possible-null-reference-exception-warnings"></a>Null 参照例外の可能性の警告  
  値が割り当てられる前に変数が使われると生成されます。 新しいプロジェクトでの既定値はオンです。  
   
- ID: 42104、42030  
+ ID:42104、42030  
   
 ### <a name="unused-local-variable-warning"></a>使われていないローカル変数の警告  
  宣言されたローカル変数が参照されていない場合に生成されます。 既定値はオンです。  
   
- ID: 42024  
+ ID:42024  
   
 ### <a name="access-of-shared-member-through-instance-variable-warning"></a>インスタンス変数による共有メンバーへのアクセスの警告  
  インスタンスによる共有メンバーへのアクセスに副作用がある場合、またはインスタンス変数による共有メンバーへのアクセスが式の右辺ではないか、パラメーターとして渡されている場合に、生成されます。 新しいプロジェクトでの既定値はオンです。  
   
- ID: 42025  
+ ID:42025  
   
 ### <a name="recursive-operator-or-property-access-warnings"></a>演算子またはプロパティの再帰的なアクセスの警告  
  ルーチンが定義されている演算子またはプロパティがルーチンの本体で使われている場合に、生成されます。 新しいプロジェクトでの既定値はオンです。  
   
- ID: 42004 (演算子)、42026 (プロパティ)  
+ ID:42004 (演算子)、42026 (プロパティ)  
   
 ### <a name="function-or-operator-without-return-value-warning"></a>戻り値のない関数または演算子の警告  
  関数または演算子で戻り値が指定されていない場合に、生成されます。 これには、関数と同じ名前を持つ暗黙のローカル変数に対する `Set` の省略も含まれます。 新しいプロジェクトでの既定値はオンです。  
   
- ID: 42105 (関数)、42016 (演算子)  
+ ID:42105 (関数)、42016 (演算子)  
   
 ### <a name="overloads-modifier-used-in-a-module-warning"></a>モジュールで使われている修飾子のオーバーロードの警告  
  `Overloads` が `Module` で使われている場合に、生成されます。 新しいプロジェクトでの既定値はオンです。  
   
- ID: 42028  
+ ID:42028  
   
 ### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>重複またはオーバーラップする Catch ブロックの警告  
  定義されている他の `Catch` ブロックとの関係のために絶対に到達しない `Catch` ブロックがある場合に、生成されます。 新しいプロジェクトでの既定値はオンです。  
   
- ID: 42029、42031  
+ ID:42029、42031  
   
 ## <a name="see-also"></a>関連項目  
  [例外処理アシスタント ダイアログ ボックス](../debugger/exception-assistant-dialog-box.md)   
- [エラーの種類](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
- [Try...Catch...Finally ステートメント](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
- [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)   
- [/warnaserror (Visual Basic)](http://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)   
+ [エラーの種類](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
+ [Try...Catch...Finally ステートメント](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
+ [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)   
+ [/warnaserror (Visual Basic)](https://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)   
  [[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
- [既定で無効になっているコンパイラ警告](http://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)
+ [既定で無効になっているコンパイラ警告](https://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)

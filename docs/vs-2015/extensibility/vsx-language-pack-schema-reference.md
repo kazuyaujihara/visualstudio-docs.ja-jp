@@ -13,12 +13,12 @@ ms.assetid: be48e639-340a-468a-9f5f-68911bfef93c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 982adbadf4a0e6099f8d98d9f81df1549d6f4d10
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56461b928741f299e9005e11292efb3669297b57
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974313"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690618"
 ---
 # <a name="vsx-language-pack-schema-reference"></a>VSX 言語パックのスキーマ リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,5 +36,5 @@ VSX 言語パックのスキーマは、VSIX パッケージのローカライ�
 |タイトル|説明|  
 |-----------|-----------------|  
 |[VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)|VSIX パッケージのローカライズされたインストールのサポートを提供する方法を示しています。|  
-|[VSIX 拡張機能スキーマ 1.0 リファレンス](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)|VSIX マニフェストは、これにより、Visual Studio 拡張機能のインストールを使用して .vsix 展開ファイルの内容を記述、**拡張機能と更新** ダイアログ ボックス。|  
+|[VSIX 拡張機能スキーマ 1.0 リファレンス](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)|VSIX マニフェストは、これにより、Visual Studio 拡張機能のインストールを使用して .vsix 展開ファイルの内容を記述、**拡張機能と更新** ダイアログ ボックス。|  
 |[Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)|使用する方法を示しています、**拡張機能と更新**をインストール、削除、アクティブ化、および拡張機能を非アクティブ化 ダイアログ ボックス。|

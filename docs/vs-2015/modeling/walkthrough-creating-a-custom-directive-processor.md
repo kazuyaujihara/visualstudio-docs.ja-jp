@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 438dd372cc2d70ecb8d1d41602751b6ce0cdf821
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 325a0c594c142ab62aba47e5c721da5ade6f179f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446754"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704061"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>チュートリアル: カスタム ディレクティブ プロセッサの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -678,7 +678,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 ## <a name="testing-the-directive-processor"></a>ディレクティブ プロセッサのテスト  
  ディレクティブ プロセッサをテストするには、それを呼び出すテキスト テンプレートを記述する必要があります。  
 
- この例のテキスト テンプレートでは、ディレクティブを呼び出し、クラス ファイルのドキュメントを含む XML ファイルの名前を渡します。 詳細については、次を参照してください。 [XML ドキュメント コメント](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)します。  
+ この例のテキスト テンプレートでは、ディレクティブを呼び出し、クラス ファイルのドキュメントを含む XML ファイルの名前を渡します。 詳細については、次を参照してください。 [XML ドキュメント コメント](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)します。  
 
  テキスト テンプレートでは、次に、ディレクティブによって作成された <xref:System.Xml.XmlDocument> プロパティを使用して XML をナビゲートし、ドキュメントのコメントを出力します。  
 

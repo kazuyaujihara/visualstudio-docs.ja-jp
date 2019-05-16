@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7173abd87a9e7345e7d7caee02d2bb333f507514
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438077"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696058"
 ---
 # <a name="output-window"></a>[出力] ウィンドウ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,14 +61,14 @@ ms.locfileid: "63438077"
   
  また、実行時に診断メッセージを **[出力]** ペインに書き出すことのできる、独自のアプリケーションをプログラムすることも可能です。 これを行うには、<xref:System.Diagnostics.Debug> クラスのメンバーまたは .NET Framework クラス ライブラリの <xref:System.Diagnostics.Trace> 名前空間にある <xref:System.Diagnostics> クラスを使用します。 <xref:System.Diagnostics.Debug> クラスのメンバーは、ソリューションまたはプロジェクトのデバッグ構成をビルドするときの出力結果を表示します。<xref:System.Diagnostics.Trace> クラスのメンバーは、デバッグ構成またはリリース構成のどちらかをビルドするときの出力結果を表示します。 詳細については、「[出力ウィンドウの診断メッセージ](../../debugger/diagnostic-messages-in-the-output-window.md)」を参照してください。  
   
- [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] では、警告とエラー メッセージ、およびその合計数を**出力**ペインで表示できる、カスタム ビルド ステップおよびビルド イベントを作成できます。 出力結果の任意の行で F1 キーを押すと、適切なヘルプ トピックが表示されます。 詳細については、「[カスタム ビルド ステップまたはビルド イベントの出力の書式設定](http://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da)」を参照してください。  
+ [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] では、警告とエラー メッセージ、およびその合計数を**出力**ペインで表示できる、カスタム ビルド ステップおよびビルド イベントを作成できます。 出力結果の任意の行で F1 キーを押すと、適切なヘルプ トピックが表示されます。 詳細については、「[カスタム ビルド ステップまたはビルド イベントの出力の書式設定](https://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da)」を参照してください。  
   
 ## <a name="scrolling-behavior"></a>スクロール動作  
  [出力] ウィンドウで自動スクロールを使用していて、マウスや方向キーを使用して移動すると、自動スクロールが停止します。 自動スクロールを再開するには、Ctrl キーを押しながら End キーを押します。  
   
 ## <a name="see-also"></a>関連項目  
  [出力ウィンドウの診断メッセージ](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [方法: 出力ウィンドウを制御します。](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [方法: 出力ウィンドウを制御します。](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [コードのコンパイルとビルド](../../ide/compiling-and-building-in-visual-studio.md)   
  [ビルド構成について](../../ide/understanding-build-configurations.md)   
- [.NET クラス ライブラリの概要](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
+ [.NET クラス ライブラリの概要](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

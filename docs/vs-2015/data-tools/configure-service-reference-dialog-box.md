@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b490b379df401f4eb0c680524be8bac91dee410
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 883cdd8f3d150c894ecfbe7ccd2fbc2906c9e79b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437020"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705187"
 ---
 # <a name="configure-service-reference-dialog-box"></a>[サービス参照の構成] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "63437020"
 **サービス参照の構成**ダイアログ ボックスでは、動作を構成できます。[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]サービス。  
   
 > [!NOTE]
-> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
  **[サービス参照の構成]** ダイアログ ボックスにアクセスするには、**ソリューション エクスプローラー**でサービス参照を右クリックし、**[サービス参照の構成]** を選択します。 **[サービス参照の追加] ダイアログ ボックス**で **[詳細]** ボタンをクリックしてダイアログ ボックスにアクセスすることもできます。  
   
@@ -63,10 +63,10 @@ ms.locfileid: "63437020"
  WCF サービス メソッドの呼び出しが同期 (既定) または非同期のどちらであるかを指定します。  
   
  **[タスク ベースの操作を生成する]**  
- 非同期コードを作成する場合、このオプションにより、.Net 4 で導入されたタスク並列ライブラリ (TPL) を利用できます。 参照してください[タスク並列ライブラリ (TPL)](http://msdn.microsoft.com/library/dd460717.aspx)します。  
+ 非同期コードを作成する場合、このオプションにより、.Net 4 で導入されたタスク並列ライブラリ (TPL) を利用できます。 参照してください[タスク並列ライブラリ (TPL)](https://msdn.microsoft.com/library/dd460717.aspx)します。  
   
  **[メッセージ コントラクトを常に生成]**  
- WCF クライアント向けにメッセージ コントラクト型が生成されるかどうかを指定します。 メッセージ コントラクトの詳細については、次を参照してください。 [Using Message Contracts](http://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249)します。  
+ WCF クライアント向けにメッセージ コントラクト型が生成されるかどうかを指定します。 メッセージ コントラクトの詳細については、次を参照してください。 [Using Message Contracts](https://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249)します。  
   
  **[コレクション型]**  
  WCF クライアントのリスト コレクション型を指定します。 既定の型は <xref:System.Array> です。  
@@ -87,7 +87,7 @@ ms.locfileid: "63437020"
  プロジェクトまたは Web サイトで参照されたアセンブリの一覧を含みます。 ときに**参照されたアセンブリを指定した型を再利用**が選択されている個々 のアセンブリを選択またはクリアできます。  
   
  **[Web 参照の追加]**  
- 表示、 [NIB:Web 参照 ダイアログ ボックスを追加](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)します。  
+ 表示、 [NIB:Web 参照 ダイアログ ボックスを追加](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)します。  
   
 > [!NOTE]
 > このオプションは、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のバージョン 2.0 を対象にするプロジェクトでのみ使用する必要があります。  
@@ -96,6 +96,6 @@ ms.locfileid: "63437020"
 > **Web 参照の追加**ボタンが使用可能な場合にのみ、**サービス参照の構成**からダイアログ ボックスが表示されます、**サービス参照の追加 ダイアログ ボックス**します。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: 追加、更新、またはサービス参照の削除](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
- [方法: Web サービスへの参照を追加します。](http://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
+ [方法: 追加、更新、またはサービス参照の削除](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
+ [方法: Web サービスへの参照を追加します。](https://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
  [Windows Communication Foundation サービスと WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

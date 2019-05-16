@@ -17,17 +17,17 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c3ddcb99163fe3548f020094647566c1779f5d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: aa406ab366c9bfb51f506c2dbba0a8408d7ba377
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444508"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688551"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>n 層アプリケーションの TableAdapters にコードを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-機能を拡張することができます、`TableAdapter`の部分クラス ファイルを作成して、`TableAdapter`コードを追加し、(コードを追加するのではなく、 *DatasetName*します。DataSet.Designer ファイル)。 部分クラスには、特定のクラスを複数の物理ファイルに分割するためのコードが有効にします。 詳細については、次を参照してください。[部分](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)または[partial (型)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)します。  
+機能を拡張することができます、`TableAdapter`の部分クラス ファイルを作成して、`TableAdapter`コードを追加し、(コードを追加するのではなく、 *DatasetName*します。DataSet.Designer ファイル)。 部分クラスには、特定のクラスを複数の物理ファイルに分割するためのコードが有効にします。 詳細については、次を参照してください。[部分](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)または[partial (型)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)します。  
   
  定義するコードを`TableAdapter`は変更されるたびに生成される、`TableAdapter`します。 構成を変更するウィザードの実行中に変更されたときに、このコードは生成も、`TableAdapter`します。 コードが再生成中に削除されないようにする、 `TableAdapter`、コードの部分クラス ファイルを追加、`TableAdapter`します。  
   
@@ -73,6 +73,6 @@ ms.locfileid: "63444508"
 ## <a name="see-also"></a>関連項目  
  [N 層データ アプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)   
  [N 層アプリケーションでのデータセットにコードを追加します。](../data-tools/add-code-to-datasets-in-n-tier-applications.md)   
- [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)   
- [TableAdapterManager の概要](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)   
- [階層更新の概要](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
+ [Tableadapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)   
+ [TableAdapterManager の概要](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)   
+ [階層更新の概要](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)

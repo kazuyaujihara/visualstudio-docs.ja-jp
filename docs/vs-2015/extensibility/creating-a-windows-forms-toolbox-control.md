@@ -12,12 +12,12 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 769a2243cd43eb085db081b7087731a8135f839b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 03fcc73c58baa1482c53e104a9946ffaa354f1a0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082218"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698964"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Windows フォーム ツールボックス コントロールの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,4 +214,4 @@ Visual Studio 機能拡張ツール (VS SDK) に含まれている Windows フ�
  [ツールボックスの拡張](../misc/extending-the-toolbox.md)   
  [WPF ツールボックス コントロールの作成](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Visual Studio の他の部分を拡張します。](../extensibility/extending-other-parts-of-visual-studio.md)   
- [Windows フォーム コントロール開発の基本概念](http://msdn.microsoft.com/library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)
+ [Windows フォーム コントロール開発の基本概念](https://msdn.microsoft.com/library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)

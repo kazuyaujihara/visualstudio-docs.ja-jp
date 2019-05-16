@@ -24,17 +24,17 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b617f0c154c14113370fff257c6837ce8314134a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 81135546ffa208a4efb96569cd7968dfe560cdf9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439937"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702519"
 ---
 # <a name="allocation-hook-functions"></a>割り当てフック関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用してインストール、割り当てフック関数[_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d)メモリを割り当て、再割り当て、または解放するたびに呼び出されます。 この種のフック関数はさまざまな目的に利用できます。 たとえば、メモリ不足の状態でアプリケーションの動作をテストしたり、割り当てパターンを調査したり、後から分析するために割り当て情報を記録したりなどの目的に利用できます。  
+使用してインストール、割り当てフック関数[_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d)メモリを割り当て、再割り当て、または解放するたびに呼び出されます。 この種のフック関数はさまざまな目的に利用できます。 たとえば、メモリ不足の状態でアプリケーションの動作をテストしたり、割り当てパターンを調査したり、後から分析するために割り当て情報を記録したりなどの目的に利用できます。  
   
 > [!NOTE]
 > 割り当てフック関数の中で C ランタイム ライブラリの関数を使用する場合は、「[割り当てフック関数と C ランタイムのメモリ割り当て](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)」で説明する制限事項があるので注意してください。  
@@ -47,7 +47,7 @@ int YourAllocHook(int nAllocType, void *pvData,
         const unsigned char * szFileName, int nLine )  
 ```  
   
- [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) に渡すポインターは **_CRT_ALLOC_HOOK** 型です。これらは、CRTDBG.H で次のように定義されています。  
+ [_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) に渡すポインターは **_CRT_ALLOC_HOOK** 型です。これらは、CRTDBG.H で次のように定義されています。  
   
 ```  
 typedef int (__cdecl * _CRT_ALLOC_HOOK)  
@@ -59,4 +59,4 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
 ## <a name="see-also"></a>関連項目  
  [割り当てフック関数と C ランタイムのメモリ割り当て](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
  [デバッグ用フック関数の作成](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 サンプル](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)
+ [crt_dbg2 サンプル](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

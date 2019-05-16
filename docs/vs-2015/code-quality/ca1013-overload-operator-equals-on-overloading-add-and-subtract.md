@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: da909b6c9917793ef958ec88f208054e6499577b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1b70085c83d842ccb5f8addc661af9109b5a5976
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975646"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695622"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013:オーバーロードする加算および減算で、演算子 equals をオーバーロードします
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,4 +82,4 @@ return left.Equals(right);
 **無効な型: {2,2} {9,9}が等しいか?いいえ**
 **適切な型: {3,3} {9,9}は、= = でしょうか。 違います**
 ## <a name="see-also"></a>関連項目
- [等値演算子](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
+ [等値演算子](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

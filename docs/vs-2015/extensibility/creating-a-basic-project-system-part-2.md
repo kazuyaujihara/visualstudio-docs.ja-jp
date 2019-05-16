@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b4709cc5f011dd55445583c46dd96894b979647c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b6d44e99b584ec347abd407753f965170658969b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435550"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685412"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>基本的なプロジェクト システムの作成、パート 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -281,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$ がユーザーによって指定された名前、**新しいプロジェクト** ダイアログ ボックスで、すべての安全でない文字とスペースを削除するように変更します。  
   
-  テンプレート パラメーターの完全な一覧については、「[テンプレート パラメーター](../ide/template-parameters.md)」をご覧ください。  独自のカスタム テンプレート パラメーターを作成する場合を参照してください[NIB:。方法: テンプレートにカスタム パラメーターを渡す](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)します。  
+  テンプレート パラメーターの完全な一覧については、「[テンプレート パラメーター](../ide/template-parameters.md)」をご覧ください。  独自のカスタム テンプレート パラメーターを作成する場合を参照してください[NIB:。方法: テンプレートにカスタム パラメーターを渡す](https://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)します。  
   
 #### <a name="to-substitute-project-template-parameters"></a>プロジェクト テンプレートのパラメーター値  
   

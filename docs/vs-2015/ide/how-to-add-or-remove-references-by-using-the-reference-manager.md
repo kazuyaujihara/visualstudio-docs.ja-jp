@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54d64fd59e71b582548aa5efade8d45a24ddb560
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445671"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701164"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>方法: 追加または参照マネージャーを使用して参照を削除します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "63445671"
   
 - [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] を使用するコンポーネントは、[!INCLUDE[net_v45](../includes/net-v45-md.md)] を対象とするプロジェクトと互換性がありません。  
   
-     新しいアプリケーションの作成時に、いくつかのプロジェクトが既定で [!INCLUDE[net_v45](../includes/net-v45-md.md)] を対象とするように設定されます。 詳細については、「[.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)」を参照してください。  
+     新しいアプリケーションの作成時に、いくつかのプロジェクトが既定で [!INCLUDE[net_v45](../includes/net-v45-md.md)] を対象とするように設定されます。 詳細については、「[.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)」を参照してください。  
   
 - コンパイル エラーが発生する可能性があるため、同じソリューション内の他のプロジェクトの出力に対するファイル参照は追加しないでください。 代わりに、**[参照の追加]** ダイアログ ボックスの **[プロジェクト]** タブを使ってプロジェクト間参照を作成します。 そうすることによってプロジェクトで作成するクラス ライブラリを管理する機能が向上し、チーム開発が簡単になります。 詳しくは、「[壊れた参照のトラブルシューティング](../ide/troubleshooting-broken-references.md)」をご覧ください。  
   
@@ -173,7 +173,7 @@ ms.locfileid: "63445671"
 </PropertyGroup>  
 ```  
   
- このサブグループの **[Windows]** チェック ボックスがオンになっていることを確認します。 その後は、Windows ランタイム要素を使用できます。 ただし、System.Runtime を追加する必要もあります。そこで、Windows ランタイム ライブラリ全体で使用される、IEnumerable などの標準のクラスおよびインターフェイスが Windows ランタイムによって定義されます。 System.Runtime を追加する方法については、「[マネージド デスクトップ アプリと Windows ランタイム](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types)」をご覧ください。  
+ このサブグループの **[Windows]** チェック ボックスがオンになっていることを確認します。 その後は、Windows ランタイム要素を使用できます。 ただし、System.Runtime を追加する必要もあります。そこで、Windows ランタイム ライブラリ全体で使用される、IEnumerable などの標準のクラスおよびインターフェイスが Windows ランタイムによって定義されます。 System.Runtime を追加する方法については、「[マネージド デスクトップ アプリと Windows ランタイム](https://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types)」をご覧ください。  
   
 ### <a name="extensions-subgroup"></a>[拡張機能] サブグループ  
  [拡張機能] で、対象の Windows プラットフォームを拡張するユーザー SDK が一覧表示されます。 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーション プロジェクトの場合のみ、このタブが表示されます。 デスクトップ プロジェクトで使用できるのは、ファースト パーティの .winmd ファイルのみであるため、このタブは表示されません。  
@@ -216,5 +216,5 @@ ms.locfileid: "63445671"
  **[参照マネージャー]** ダイアログ ボックス内の検索バーは、現在フォーカスが置かれているタブを対象として動作します。 たとえば、**[ソリューション]** タブにフォーカスがあるときにユーザーが検索バーに「System」と入力した場合は、"System" という文字列を含むプロジェクト名がソリューションを形成している状況以外では、検索結果が返されません。  
   
 ## <a name="see-also"></a>関連項目  
- [NIB 方法。追加または参照の追加 ダイアログ ボックスを使用して参照を削除します。](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB 方法。追加または参照の追加 ダイアログ ボックスを使用して参照を削除します。](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [プロジェクト内の参照の管理](../ide/managing-references-in-a-project.md)

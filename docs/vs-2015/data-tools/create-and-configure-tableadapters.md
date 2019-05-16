@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 759cf18033adb962a6ccb97a31802963e12ba5c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ab802e36a527952a0f0b789445bbdee8224af9d2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431201"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705020"
 ---
 # <a name="create-and-configure-tableadapters"></a>Tableadapter の作成および構成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ TableAdapter を使用すると、アプリケーションとデータベース�
   
  次の操作のいずれかを実行するときの Tableadapter が作成されます。  
   
-- 実行、[データ ソース構成ウィザード](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)いずれかを選択し、**データベース**または**Web サービス**データ ソースの種類。  
+- 実行、[データ ソース構成ウィザード](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)いずれかを選択し、**データベース**または**Web サービス**データ ソースの種類。  
   
-- データベース オブジェクトをドラッグ[サーバー エクスプ ローラー](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d)に、**データセット デザイナー**します。  
+- データベース オブジェクトをドラッグ[サーバー エクスプ ローラー](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d)に、**データセット デザイナー**します。  
   
   新しい TableAdapter を作成してで空の領域に TableAdapter をツールボックスからドラッグしてデータ ソースと構成、**データセット デザイナー**画面。  
   

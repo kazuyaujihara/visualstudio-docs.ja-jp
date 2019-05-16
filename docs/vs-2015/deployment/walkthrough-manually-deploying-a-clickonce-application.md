@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 239fdcea9b8b9613bcdaa2419aba211c2a2a98f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429125"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686325"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>チュートリアル: ClickOnce アプリケーションを手動で配置する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -206,8 +206,8 @@ Visual Studio を使用してデプロイすることはできませんがある
  アプリケーションの新しいバージョンを展開する必要がある場合は、新しいバージョンにちなんだ名前の新しいディレクトリを作成、1.0.0.1—and が、新しいディレクトリに新しいアプリケーション ファイルをコピーするなど。 次に、作成し新しいアプリケーション マニフェストに署名し、更新、および配置マニフェストに署名するには、前の手順に従う必要があります。 両方、Mage.exe で同じより高いバージョンを指定するように注意`-New`と`–Update`呼び出し、として[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]のみ以降のバージョンが最上位の左端の整数値で更新します。 MageUI.exe を使用した場合ことができますを更新する、配置マニフェストを開き、選択、**アプリケーション参照**] タブをクリックすると、 **[マニフェストの**ボタンをクリックし、選択し、更新されました。アプリケーション マニフェスト。  
   
 ## <a name="see-also"></a>関連項目  
- [Mage.exe (マニフェストの生成および編集ツール)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe (マニフェスト生成および編集ツールのグラフィカル クライアント)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
+ [Mage.exe (マニフェストの生成および編集ツール)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI.exe (マニフェスト生成および編集ツールのグラフィカル クライアント)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)

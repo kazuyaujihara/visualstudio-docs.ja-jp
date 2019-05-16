@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: f0dd471e156f7a76462ac093c9ca54684f7dbc68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7f13a97adbec1da1bd0f279e14cf510532b9c62f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444494"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688625"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio でのデータにアクセスします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Visual Studio では、事実上すべてのデータベース製品またはサ
  これらのテクノロジのいずれかを使用する必要はありません。 一部のシナリオでパフォーマンスが重要で、特にできる単にオブジェクトを使用する DataReader をデータベースから読み取ってリストなどのコレクション オブジェクトに必要な値をコピーする\<T >。
 
 ### <a name="native-c"></a>ネイティブ C++
- SQL Server に接続する C++ アプリケーションを使用する必要があります、 [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx)します。 使用して他のデータベースにアクセスできます[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) OLE DB ドライバーを直接またはします。 ODBC は、現在の標準的なデータベースのインターフェイスが、ほとんどのデータベース システムは、ODBC インターフェイス経由でアクセスできないカスタムの機能を提供します。  OLE DB は、レガシ COM データ アクセス テクノロジが引き続きサポートされますが、新しいアプリケーションをお勧めしません。  詳細については、次を参照してください。[データ アクセス](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)します。
+ SQL Server に接続する C++ アプリケーションを使用する必要があります、 [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx)します。 使用して他のデータベースにアクセスできます[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) OLE DB ドライバーを直接またはします。 ODBC は、現在の標準的なデータベースのインターフェイスが、ほとんどのデータベース システムは、ODBC インターフェイス経由でアクセスできないカスタムの機能を提供します。  OLE DB は、レガシ COM データ アクセス テクノロジが引き続きサポートされますが、新しいアプリケーションをお勧めしません。  詳細については、次を参照してください。[データ アクセス](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)します。
 
  REST サービスを使用する C++ プログラムで使用できる、 [C++ REST SDK](https://github.com/Microsoft/cpprestsdk)します。
 
@@ -107,7 +107,7 @@ Visual Studio では、事実上すべてのデータベース製品またはサ
 #### <a name="data-modeling"></a>データ モデリング
  Visual Studio では、c++、ORM レイヤーは提供されません。  [ODB](http://www.codesynthesis.com/products/odb/) C++ の人気のあるオープン ソースの ORM が。
 
- 従来の Visual C のデータ アクセス テクノロジの詳細については、次を参照してください[データ アクセス。](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
+ 従来の Visual C のデータ アクセス テクノロジの詳細については、次を参照してください[データ アクセス。](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
 
 ### <a name="javascript"></a>JavaScript
  [Visual Studio の JavaScript](https://msdn.microsoft.com/library/hh334522.aspx)クロス プラットフォーム アプリ、UWP アプリ、クラウド サービス、web サイト、および web アプリを構築するための第一級の言語です。 Bower、Grunt、Gulp、npm、および Visual Studio 内から NuGet を使用すると、データベース製品、好きな JavaScript ライブラリをインストールします。 Sdk をダウンロードすることによって Azure storage やサービスに接続、 [Azure web サイト](https://azure.microsoft.com/)します。  Edge.js は、サーバー側の JavaScript (Node.js) を ADO.NET データ ソースに接続するライブラリです。
@@ -118,7 +118,7 @@ Visual Studio では、事実上すべてのデータベース製品またはサ
 ## <a name="in-this-section"></a>このセクションの内容
  [データベース システム、ツール、およびサンプルをインストールする](../data-tools/installing-database-systems-tools-and-samples.md)の実証や学習のためにサンプル データベースの参照先のデータベース製品と Visual Studio 拡張機能またはそれらをサポートするドライバーを取得する方法について説明します。
 
- [.NET 用の visual Studio データ ツール](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1)Visual Studio のツール ウィンドウを使用して、データ ソースに接続し、データセットや Entity Framework モデルでは、作成、ユーザー インターフェイス コントロールにデータをバインドする方法について説明します。
+ [.NET 用の visual Studio データ ツール](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1)Visual Studio のツール ウィンドウを使用して、データ ソースに接続し、データセットや Entity Framework モデルでは、作成、ユーザー インターフェイス コントロールにデータをバインドする方法について説明します。
 
 ## <a name="related-topics"></a>関連トピック
  [データ、デバイス、および Analytics](https://msdn.microsoft.com/data-and-devices) Cortana Analytics Suite やモ ノのインターネットのサポートなど、Microsoft のインテリジェント クラウドの概要について説明します。
@@ -129,16 +129,16 @@ Visual Studio では、事実上すべてのデータベース製品またはサ
 
  [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx)をデザイン、探索、テスト、およびデータに接続されたアプリケーションとデータベースのデプロイを簡略化するツールについて説明します。
 
- [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca) ADO.NET のアーキテクチャと、ADO.NET のクラスを使用してアプリケーション データを管理し、データ ソースおよび XML と対話する方法について説明します。
+ [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca) ADO.NET のアーキテクチャと、ADO.NET のクラスを使用してアプリケーション データを管理し、データ ソースおよび XML と対話する方法について説明します。
 
  [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)開発者がリレーショナル データベースに対して直接の代わりに、概念モデルに対してプログラムを許可するデータ アプリケーションを作成する方法について説明します。
 
- [WCF Data Services 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)を使用する方法について説明します[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]を実装する web またはイントラネット上のデータ サービスを展開する、 [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)します。
+ [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)を使用する方法について説明します[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]を実装する web またはイントラネット上のデータ サービスを展開する、 [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)します。
 
- [Office ソリューションにおけるデータ](http://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a)Office ソリューションでデータを操作する方法を説明するトピックへのリンクが含まれています。 スキーマ指向プログラミング、データ キャッシュ、およびサーバー側データ アクセスに関する説明が含まれます。
+ [Office ソリューションにおけるデータ](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a)Office ソリューションでデータを操作する方法を説明するトピックへのリンクが含まれています。 スキーマ指向プログラミング、データ キャッシュ、およびサーバー側データ アクセスに関する説明が含まれます。
 
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)に組み込まれたクエリ機能について説明しますC#と Visual Basic、およびリレーショナル データベース、XML ドキュメント、データセット、およびインメモリ コレクションを照会するための一般的なモデルです。
+ [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)に組み込まれたクエリ機能について説明しますC#と Visual Basic、およびリレーショナル データベース、XML ドキュメント、データセット、およびインメモリ コレクションを照会するための一般的なモデルです。
 
  [Visual Studio での XML ツール](../xml-tools/xml-tools-in-visual-studio.md)、XML データ、XSLT のデバッグ、.NET Framework の XML 機能の使用と XML クエリのアーキテクチャについて説明します。
 
- [XML ドキュメントとデータ](http://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380)XML ドキュメントおよび .NET Framework でのデータを処理するクラスの包括的な統合セットを概要を説明します。
+ [XML ドキュメントとデータ](https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380)XML ドキュメントおよび .NET Framework でのデータを処理するクラスの包括的な統合セットを概要を説明します。

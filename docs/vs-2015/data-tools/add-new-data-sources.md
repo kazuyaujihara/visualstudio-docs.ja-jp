@@ -19,12 +19,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 77b962d9ab4594bba5be42100a46e67e1c861384
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9f6b7334c7032414bfd0fbf7ecf9ad48b414cb9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445773"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701045"
 ---
 # <a name="add-new-data-sources"></a>新しいデータ ソースの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Visual Studio での .NET データ ツールのコンテキストでは、用�
   
  次の種類のサービスからデータ ソースを作成できます。  
   
-- WCF Data Services。 詳細については、次を参照してください。[概要](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)します。  
+- WCF Data Services。 詳細については、次を参照してください。[概要](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)します。  
   
 - WCF data services。 詳細については、次を参照してください。 [Windows Communication Foundation サービスと Visual Studio での WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)します。  
   

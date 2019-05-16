@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 44d877f7ff6774e8e52428f4a44acab99816c480
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 98b08fc8ebf2fca207d41b644032d7abbcd97a24
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434423"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681742"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>方法: Direct2D または Javascipt アプリで使用するためのテクスチャをエクスポートする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "63434423"
   
 2. イメージ コンテンツ パイプラインによって処理されるようにテクスチャ ファイルを構成します。 **ソリューション エクスプローラー**で、先ほど作成したテクスチャ ファイルのショートカット メニューを開き、**[プロパティ]** をクリックします。 **[構成プロパティ]** の **[全般]** ページで、**[項目の種類]** を **[Image Content Pipeline]** (イメージ コンテンツ パイプライン) に設定します。 **[コンテンツ]** が **[はい]** に、**[ビルドから除外]** が **[いいえ]** に設定されていることを確認し、**[適用]** ボタンをクリックします。 **[イメージ コンテンツ パイプライン]** の構成プロパティ ページが表示されます。  
   
-3. 出力形式を、いずれかのブロック圧縮形式に設定します。 **[構成プロパティ]** で、**[イメージ コンテンツ パイプライン]**、**[全般]** ページの順にクリックし、**[圧縮]** を **[BC3_UNORM compression (/compress:BC3_UNORM)]** (BC3_UNORM 圧縮 (/compress:BC3_UNORM)) に設定します。 要件に応じて、他の BC1、BC2、または BC3 形式を選択することもできます。 Direct2D では現在、BC4、BC5、BC6、または BC7 テクスチャはサポートされていません。 各種の BC 形式の詳細については、「[ブロック圧縮 (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx)」を参照してください。  
+3. 出力形式を、いずれかのブロック圧縮形式に設定します。 **[構成プロパティ]** で、**[イメージ コンテンツ パイプライン]**、**[全般]** ページの順にクリックし、**[圧縮]** を **[BC3_UNORM compression (/compress:BC3_UNORM)]** (BC3_UNORM 圧縮 (/compress:BC3_UNORM)) に設定します。 要件に応じて、他の BC1、BC2、または BC3 形式を選択することもできます。 Direct2D では現在、BC4、BC5、BC6、または BC7 テクスチャはサポートされていません。 各種の BC 形式の詳細については、「[ブロック圧縮 (Direct3D 10)](https://msdn.microsoft.com/library/windows/desktop/bb694531.aspx)」を参照してください。  
   
    > [!NOTE]
    > 指定した圧縮形式により、イメージ コンテンツ パイプラインによって生成されるファイルの形式が決まります。 これは、イメージ エディターからソース イメージの **[形式]** で指定する形式とは異なります。[形式] で指定するのは、ソース イメージ ファイルがディスクに格納されるときのファイル形式 (*作業形式*) です。 通常、圧縮された作業形式は必要ありません。  

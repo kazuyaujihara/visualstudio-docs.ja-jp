@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7a80587062442688551d07128a2cec49a712adf6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092423"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691459"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>デバッグの準備:ASP.NET Web アプリケーション
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "60092423"
   
 1. 関数とイベント ハンドラーに 1 つ以上のブレークポイントを設定します。  
   
-     詳細については、「 [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)」を参照してください。  
+     詳細については、「 [Breakpoints and Tracepoints](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)」を参照してください。  
   
 2. ブレークポイントに達したら、関数内のコードをステップ実行します。 問題が特定されるまでコードの実行を確認します。  
   
-     詳細については、次を参照してください。[ステッピング](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)と[Web アプリケーションのデバッグとスクリプト](../debugger/debugging-web-applications-and-script.md)します。  
+     詳細については、次を参照してください。[ステッピング](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)と[Web アプリケーションのデバッグとスクリプト](../debugger/debugging-web-applications-and-script.md)します。  
   
 ## <a name="changing-default-configurations"></a>既定の構成の変更  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で作成された既定のデバッグ構成とリリース構成を変更する必要がある場合は、構成を変更できます。 詳細については、「[方法 :デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。  

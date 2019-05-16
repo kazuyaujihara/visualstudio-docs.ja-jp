@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76729bd44d196028fd88bd13718a34518b1fbde4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: df2fb0c6505bc5fa756443bd50fdb31ff151e7d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052325"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673673"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>方法: XSLT でブレークポイントを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XSLT スタイル シート内または XML ソース ドキュメント内でブレークポイントを設定することができます。 タグにブレークポイントを設定した場合は、実行の開始時に、ソース行情報を含む次のステートメントにブレークポイントが移動します。  
   
- 詳細については、次を参照してください。[デバッグの基礎。ブレークポイント](http://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e)します。  
+ 詳細については、次を参照してください。[デバッグの基礎。ブレークポイント](https://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e)します。  
   
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>スタイル シート内にブレークポイントを設定する  
  XSLT スタイル シートでは、開始タグ、終了タグ、およびテキスト ノードにブレークポイントを設定できます。 スクリプト ブロック内のコードにブレークポイントを設定することもできます。  

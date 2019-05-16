@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70fca5b1329dc9091e0672b41de0798d93aba01a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436973"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705178"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET を使用した単純なデータ アプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ ms.locfileid: "63436973"
 5. **値**列で、(任意の外部の引用符)、なし、接続文字列を入力し、変更を保存します。  
   
 > [!NOTE]
-> 実際のアプリケーションでは文字列を格納する接続」の説明に従って、安全に[接続文字列と構成ファイル](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)します。  
+> 実際のアプリケーションでは文字列を格納する接続」の説明に従って、安全に[接続文字列と構成ファイル](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)します。  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> 接続文字列を取得します。  
   
@@ -726,7 +726,7 @@ End Namespace
 |NC-12|使用して、`ExecuteNonQuery`メソッド`cmdNewCustomer`を実行する、`Sales.uspNewCustomer`ストアド プロシージャ。 これは、ストアド プロシージャを実行する`INSERT`ステートメントでは、クエリではありません。|  
 |NC-13|データベースから IDENTITY 値として `@CustomerID` の値が戻されます。 これは、整数、ために表示されることで文字列に変換する必要があります、**顧客 ID**テキスト ボックス。<br /><br /> -宣言して`parsedCustomerID`nc-2 でします。<br />-格納、`@CustomerID`値`parsedCustomerID`後で使用します。<br />-返される顧客 ID を文字列に変換し、それに挿入`txtCustomerID.Text`します。|  
 |NC-14|このサンプルでは、単純な (実稼働品質のない) の catch 句を追加します。|  
-|NC-15|使用の終了後必ず接続を閉じ、接続プールに解放できるようします。 参照してください[SQL Server の接続プール (ADO.NET)](http://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx)します。|  
+|NC-15|使用の終了後必ず接続を閉じ、接続プールに解放できるようします。 参照してください[SQL Server の接続プール (ADO.NET)](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx)します。|  
 |NC-16|顧客名が存在することを確認するメソッドを定義します。<br /><br /> -テキスト ボックスが空の場合、メッセージが表示され、返す`false`名前がアカウントを作成するために必要なためです。<br />-テキスト ボックスが空でない場合は、返す`true`します。|  
 |NC-17|`btnPlaceOrder` ボタンのクリック イベント ハンドラーのコードを追加します。|  
 |NC-18|必要な入力が存在しない場合に `isPlaceOrderReady` を実行しないように、`btnPlaceOrder_Click` イベント コードの `uspPlaceNewOrder` への呼び出しをラップします。|  

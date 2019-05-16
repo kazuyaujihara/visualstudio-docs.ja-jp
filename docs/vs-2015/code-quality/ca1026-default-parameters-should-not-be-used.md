@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 25e38f6db5caa6b797774463552cd17fd07bdf5d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7c20bfce7dd7fe3b2e116b982408afa813ebab25
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975644"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704182"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026:既定パラメーターを使用することはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58975644"
 ## <a name="rule-description"></a>規則の説明
  既定のパラメーターを使用するメソッドは下で、共通言語仕様 (CLS); を使用します。ただし、CLS では、これらのパラメーターに割り当てられている値を無視するコンパイラが使用できます。 既定のパラメーター値を無視するコンパイラ用に記述されたコードでは、既定の各パラメーターの引数を明示的に指定する必要があります。 プログラミング言語間で使用する動作を維持するためには、既定のパラメーターを提供するメソッドのオーバー ロードを持つ既定のパラメーターを使用するメソッドを置き換える必要があります。
 
- コンパイラは、マネージ コードにアクセスするときの既定のパラメーターの値を管理拡張機能の C++ の無視します。 Visual Basic コンパイラを使用する既定のパラメーターを持つメソッドをサポートしている、 [(省略可能)](http://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7)キーワード。
+ コンパイラは、マネージ コードにアクセスするときの既定のパラメーターの値を管理拡張機能の C++ の無視します。 Visual Basic コンパイラを使用する既定のパラメーターを持つメソッドをサポートしている、 [(省略可能)](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7)キーワード。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、既定パラメーターを指定するメソッドのオーバー ロードを持つ既定のパラメーターを使用するメソッドを置き換えます。
@@ -55,4 +55,4 @@ ms.locfileid: "58975644"
  [CA 1025:反復する引数を params 配列で置き換えます](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
 ## <a name="see-also"></a>関連項目
- [言語への非依存性、および言語非依存コンポーネント](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ [言語への非依存性、および言語非依存コンポーネント](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

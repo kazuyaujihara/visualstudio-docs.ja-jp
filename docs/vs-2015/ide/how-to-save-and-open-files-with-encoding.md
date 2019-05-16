@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb4e07f90f3a05f61957898c579b9a70da6e5ce1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 58c06c67daef727db91fa42c7ee8ce97ff183f38
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039228"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685451"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>方法: 保存し、エンコードでファイルを開く
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,5 +59,5 @@ ms.locfileid: "60039228"
 3. 前の手順の 2. と 3. を実行します。  
   
 ## <a name="see-also"></a>関連項目  
- [エンコード方式および Windows フォームのグローバリゼーション](http://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
+ [エンコード方式および Windows フォームのグローバリゼーション](https://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
  [アプリケーションのグローバライズとローカライズ](../ide/globalizing-and-localizing-applications.md)

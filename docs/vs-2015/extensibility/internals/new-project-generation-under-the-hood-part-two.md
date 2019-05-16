@@ -11,22 +11,22 @@ ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: 6643c52ff8e5801c562524e99c4e3f03c00f74b9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972342"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687477"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新しいプロジェクトの生成: 内部的な処理、パート 2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[新しいプロジェクトの生成。内部、パート 1 で](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)を説明しましたが、どのように**新しいプロジェクト**] ダイアログ ボックスが表示されます。 選択したと仮定を**Visual C# Windows アプリケーション**、情報を入力した、**名前**と**場所**テキスト ボックス、および [ok] のクリックされました。  
+[新規プロジェクトの生成：パート1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) で**新規プロジェク**トのダイアログボックスの表示方法について説明しました。 **Visual C# Windows アプリケーション** を選択し、**名前** と **場所** のテキストボックスに入力し、[OK]をクリックしたと仮定します。  
   
 ## <a name="generating-the-solution-files"></a>ソリューション ファイルを生成します。  
  アプリケーション テンプレートを選択するように指示[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]を解凍して、対応する .vstemplate ファイルを開くと、このファイル内の XML コマンドを解釈するためのテンプレートを起動します。 これらのコマンドは、新規または既存のソリューションでプロジェクトとプロジェクト項目を作成します。  
   
- テンプレートは、.vstemplate ファイルを保持する同じ .zip フォルダーから項目のテンプレートと呼ばれる、ソース ファイルをアンパックします。 テンプレートは、それに応じてカスタマイズして、新しいプロジェクトにこれらのファイルをコピーします。 プロジェクトと項目テンプレートの概要については、次を参照してください[NIB:。Visual Studio テンプレート](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)します。  
+ テンプレートは、.vstemplate ファイルを保持する同じ .zip フォルダーから項目のテンプレートと呼ばれる、ソース ファイルをアンパックします。 テンプレートは、それに応じてカスタマイズして、新しいプロジェクトにこれらのファイルをコピーします。 プロジェクトと項目テンプレートの概要については、次を参照してください[NIB:。Visual Studio テンプレート](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)します。  
   
 ### <a name="template-parameter-replacement"></a>テンプレート パラメーターの置換  
  テンプレートは、新しいプロジェクトに項目テンプレートをコピー、ファイルをカスタマイズする文字列を含むテンプレートのパラメーターが置き換えられます。 テンプレート パラメーターは特殊なトークンを前後にドル記号では、たとえばは、$date$ です。  
@@ -156,5 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [新しいプロジェクトの生成:内部的には、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [新しいプロジェクトの生成: 内部的な処理、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

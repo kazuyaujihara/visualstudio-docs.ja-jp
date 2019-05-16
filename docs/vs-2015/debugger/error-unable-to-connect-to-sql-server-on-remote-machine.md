@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2e5b19c26ff800b5edabd3bf21f57b21ed06bae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b148ad1abc4a74482f3ec5786b953c0a2c6ace36
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431824"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682610"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>エラー :リモート コンピューター上の SQL Server に接続できません。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,4 +34,4 @@ ms.locfileid: "62431824"
 - 「[リモート デバッグ](../debugger/remote-debugging.md)」をご覧ください。  
   
 ## <a name="see-also"></a>関連項目  
- [SQL のデバッグ](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)
+ [SQL のデバッグ](https://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)

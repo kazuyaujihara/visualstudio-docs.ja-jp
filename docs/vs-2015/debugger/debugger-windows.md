@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977259"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686769"
 ---
 # <a name="debugger-windows"></a>デバッガー ウィンドウ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ ms.locfileid: "58977259"
 |並列ウォッチ|Ctrl + Shift + D、(1、2、3、4)|[[並列スタック] ウィンドウの使用](../debugger/using-the-parallel-stacks-window.md)|  
 |Watch|Ctrl + Alt + W、(1、2、3、4)|[ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)|  
 |クイック ウォッチ|Shift + F9|[ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)|  
-|自動|Ctrl + Alt + V、A|[[変数] ウィンドウ](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|ローカル|Ctrl + Alt + V、L|[[変数] ウィンドウ](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|自動|Ctrl + Alt + V、A|[[変数] ウィンドウ](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|ローカル|Ctrl + Alt + V、L|[[変数] ウィンドウ](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |イミディエイト|Ctrl + Alt + I|[イミディエイト ウィンドウ](../ide/reference/immediate-window.md)|  
-|Python 対話形式デバッグ|Shift + Alt + I|[PTVS の概要。対話型の Python](../python/getting-started-with-ptvs-interactive-python.md)|  
+|Python 対話形式デバッグ|Shift + Alt + I|[PTVS の使用を開始する: 対話型 Python](../python/getting-started-with-ptvs-interactive-python.md)|  
 |JavaScript コンソール|Ctrl + Alt + V、C|[クイック スタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md)|  
 |DOM Explorer|Ctrl + Alt + V、D|[DOM Explorer を使用したレイアウトのデバッグ](../debugger/debug-layout-using-dom-explorer.md)|  
 |ライブ ビジュアル ツリー|-|[デバッグ中にXAML のプロパティを調べる](../debugger/inspect-xaml-properties-while-debugging.md)|  

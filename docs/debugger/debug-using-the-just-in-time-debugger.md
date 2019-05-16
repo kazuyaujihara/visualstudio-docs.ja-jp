@@ -79,7 +79,7 @@ Visual Studio がコンピューターからアンインストールされた後
 
 時間で Just 標準の Windows フォーム エラーを処理ではなくデバッグを有効にするには、これらの設定を追加します。
 
-- `system.windows.forms`のセクション、 *machine.config*または*\<アプリ名 >. exe.config*ファイル、設定、`jitDebugging`値を`true`:
+- `system.windows.forms`のセクション、 *machine.config* または *\<アプリ名>.exe.config* ファイル、設定、`jitDebugging`値を`true`:
 
     ```xml
     <configuration>

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 0b04692ed30e69e8904919748a6db0d0eff49f54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b72b2c3bd6b03d1d3f3e50135c2ddf4758a4bd9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002121"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683043"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>VSPackages およびマネージド パッケージ フレームワーク
 クラスを作成して、VSPackage、マネージ パッケージ フレームワーク (MPF) の代わりに COM 相互運用機能のクラスを使用して開発時間を短縮することができます。  
@@ -25,7 +25,7 @@ ms.locfileid: "63002121"
   
 - 使用して、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]パッケージ プロジェクト テンプレート  
   
-     詳細については、「[チュートリアル:Visual Studio パッケージ テンプレートを使用してメニュー コマンドを作成する](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)します。  
+     詳細については、「[チュートリアル:Visual Studio パッケージ テンプレートを使用してメニュー コマンドを作成する](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)します。  
   
 - なし、VSPackage をビルド、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]パッケージ プロジェクト テンプレート  
   
@@ -36,7 +36,7 @@ ms.locfileid: "63002121"
  について説明し、MPF クラスの名前空間および DLL ファイルを一覧表示されます。  
   
 ## <a name="related-sections"></a>関連項目  
- [チュートリアル: Visual Studio パッケージ テンプレートを使用してメニュー コマンドの作成](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
+ [チュートリアル: Visual Studio パッケージ テンプレートを使用してメニュー コマンドの作成](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
  マネージ VSPackage を作成する方法について説明します。  
   
  [マネージド VSPackage](../misc/managed-vspackages.md)  

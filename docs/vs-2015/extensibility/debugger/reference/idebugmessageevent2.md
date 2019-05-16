@@ -12,12 +12,12 @@ ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3c2b76d0972768bf4d77e7f6d9bd153920799970
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e7bb6b014ef8aa662abd42ab2989d47f703880a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963376"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685979"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugMessageEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>実装についてのメモ  
- デでは、ユーザーの応答を必要とする Visual Studio にメッセージを送信するには、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります。 SDM を使用して[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)にアクセスする、`IDebugEvent2`インターフェイス。  
+ デでは、ユーザーの応答を必要とする Visual Studio にメッセージを送信するには、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります。 SDM を使用して[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)にアクセスする、`IDebugEvent2`インターフェイス。  
   
  このインターフェイスの実装での Visual Studio の呼び出しを通信する必要があります[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md) DE にします。 DE のメッセージの処理スレッドに投稿されたメッセージを表示できますなど、このインターフェイスを実装するオブジェクトはでした、DE への参照を保持しに渡される応答と共に、DE にコールバック`IDebugMessageEvent2::SetResponse`します。  
   
@@ -49,7 +49,7 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="remarks"></a>Remarks  
  デは、特定のメッセージのユーザーから特定の応答が必要な場合に、このインターフェイスを使用します。 たとえば、プログラムをリモートで接続を試行した後、「アクセス拒否」メッセージを取得する、DE 場合、DE この特定のメッセージに送信で Visual Studio、`IDebugMessageEvent2`イベント、メッセージ ボックスのスタイルを`MB_RETRYCANCEL`します。 これにより、再試行またはアタッチ操作をキャンセルするユーザー。  
   
- デでは、このメッセージの Win32 関数の規則に従うによって処理される方法を指定します`MessageBox`(を参照してください[AfxMessageBox](http://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)詳細については)。  
+ デでは、このメッセージの Win32 関数の規則に従うによって処理される方法を指定します`MessageBox`(を参照してください[AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)詳細については)。  
   
  使用して、 [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)インターフェイス ユーザーからの応答を必要としない Visual Studio にメッセージを送信します。  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 039e6d5ae21059692aecc05de51bc2b311436334
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62580701"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695632"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio での XAML デザイナーを使用した UI の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
  **スナップ ガイドライン** スナップ ガイドラインは、コントロールの端が揃ったとき、またはテキストのベースラインが揃ったときに表示される赤色の破線 (*位置揃えライン* ) です。 位置揃えラインは、 **[スナップ ガイドラインへのスナップ]** が有効に設定されている場合にのみ表示されます。
 
- **グリッド レール** `Grid` レールを使用して、[グリッド](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) パネルの行と列を管理します。 行と列を作成/削除したり、行と列の相対的な幅と高さを調整したりできます。 アートボードの左側に表示される縦のグリッド レールは行のために使用し、上側に表示される横のグリッド レールは列のために使用します。
+ **グリッド レール** `Grid` レールを使用して、[グリッド](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) パネルの行と列を管理します。 行と列を作成/削除したり、行と列の相対的な幅と高さを調整したりできます。 アートボードの左側に表示される縦のグリッド レールは行のために使用し、上側に表示される横のグリッド レールは列のために使用します。
 
  **グリッド ガイド** `Grid` ガイドは、`Grid` レール上に、縦線または横線の付いた三角形として表示されます。 `Grid` ガイドをドラッグすると、マウスの移動に従って、隣接する列または行の幅または高さが更新されます。
 
@@ -50,7 +50,7 @@ Visual Studio の XAML デザイナーは、XAML ベースの Windows ストア�
 
  **サイズ変更ハンドル** サイズ変更ハンドルは、選択したコントロールに表示され、これを使用してコントロールのサイズを変更できます。 コントロールのサイズを変更するときは、通常、幅と高さの値が表示され、サイズを決める参考にできます。 デザイン ビューのコントロールを操作する方法の詳細については、「 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)」を参照してください。
 
- **余白** 余白は、コントロールの端からそれを含むコンテナーの端までの固定された間隔です。 コントロールの余白は、[プロパティ] ウィンドウの [[レイアウト]](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) の下にある **Margin** プロパティで設定できます。
+ **余白** 余白は、コントロールの端からそれを含むコンテナーの端までの固定された間隔です。 コントロールの余白は、[プロパティ] ウィンドウの [[レイアウト]](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) の下にある **Margin** プロパティで設定できます。
 
  **余白ガイド** 余白ガイドを使用すると、レイアウト コンテナーを基準として要素の余白を変更できます。 余白ガイドが開いている場合は、余白が設定されておらず、余白ガイドには切れたチェーンが表示されます。 余白が設定されていないと、実行時にレイアウト コンテナーのサイズを変更した場合に、要素の位置が変わりません。 余白ガイドが閉じている場合、余白ガイドには切れていないチェーンが表示され、実行時にレイアウト コンテナーのサイズを変更すると、要素が余白と共に移動します (余白は固定されたまま)。
 

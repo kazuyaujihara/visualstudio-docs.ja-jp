@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2920f73560e622c4336a1eedc23e5034fa8ff91
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f7ffc67bd1175a84bf5708c613661a169c093dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417436"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697022"
 ---
 # <a name="debugger-user-interface-xslt"></a>デバッガー ユーザー インターフェイス (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "63417436"
 |`position()`|コンテキスト サイズを基準としたコンテキスト ノードの位置、つまりインデックス番号です。|  
 |`self::node()`|コンテキスト ノードの値です。|  
   
- 詳細については、「[方法 :デバッガー コンテキストを変更](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)します。  
+ 詳細については、「[方法 :デバッガー コンテキストを変更](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)します。  
   
 ## <a name="output-window"></a>[出力] ウィンドウ  
  [出力] ウィンドウには、デバッグ中に発生したエラー メッセージやセキュリティ例外がすべて表示されます。  
@@ -101,4 +101,4 @@ ms.locfileid: "63417436"
 ## <a name="see-also"></a>関連項目  
  [XSLT のデバッグ](../xml-tools/debugging-xslt.md)   
  [デバッガーの基本事項](../debugger/debugger-basics.md)   
- [[変数] ウィンドウ](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [[変数] ウィンドウ](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

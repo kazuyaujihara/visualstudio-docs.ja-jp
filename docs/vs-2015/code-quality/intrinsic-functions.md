@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 1ebe75fae15069efc5e76ac59e6f16f9ca06d1ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e5284ae41f961d8e027590b4296037236e7108f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963367"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699431"
 ---
 # <a name="intrinsic-functions"></a>組み込み関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +46,8 @@ SAL の式は副作用がない式については、C と C++ の式を指定で
 |注釈|説明|  
 |----------------|-----------------|  
 |`_String_length_(param)`|`param` 最大文字列が null 終端文字を含まない内の要素の数です。 この注釈は、文字列から文字の種類の予約されています。|  
-|`strlen(param)`|`param` 最大文字列が null 終端文字を含まない内の要素の数です。 この注釈は、文字を使用する配列し、C ランタイム関数のように予約されていますが[strlen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2)します。|  
-|`wcslen(param)`|`param` 文字列を (が含まれません) 内の要素の数は、null 終端文字。 この注釈は、ワイド文字を使用して配列および C ランタイム関数のように予約されて[wcslen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2)します。|  
+|`strlen(param)`|`param` 最大文字列が null 終端文字を含まない内の要素の数です。 この注釈は、文字を使用する配列し、C ランタイム関数のように予約されていますが[strlen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2)します。|  
+|`wcslen(param)`|`param` 文字列を (が含まれません) 内の要素の数は、null 終端文字。 この注釈は、ワイド文字を使用して配列および C ランタイム関数のように予約されて[wcslen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2)します。|  
   
 ## <a name="see-also"></a>関連項目  
  [SAL 注釈を使用して C/C++ のコード障害を減らす](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

@@ -27,12 +27,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a55b78cfa962abe4a1eecf778be9cdc6de3aa6e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c795e978de3911b3c5e815583c32e878fd7b173
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384065"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696913"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC のデバッグ技術
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ MFC プログラムをデバッグする場合は、次のデバッグ技術が�
   - [選択したモジュールのデバッグ情報を持つ MFC アプリケーションのビルド](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ## <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- MFC には、ソース コードにハードコーディングされたブレークポイント用に [AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) 関数が用意されています。  
+ MFC には、ソース コードにハードコーディングされたブレークポイント用に [AfxDebugBreak](https://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) 関数が用意されています。  
   
 ```  
 AfxDebugBreak( );  
@@ -85,7 +85,7 @@ _asm int 3
  [このトピックの内容](#BKMK_In_this_topic)  
   
 ## <a name="BKMK_The_TRACE_macro"></a> TRACE マクロ  
- プログラムからのメッセージをデバッガーの [[出力] ウィンドウ](../ide/reference/output-window.md)に表示するには、 [ATLTRACE](http://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) マクロ、または MFC の [TRACE](http://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) マクロを使用します。 [アサーション](../debugger/c-cpp-assertions.md)と同様に、トレース マクロはプログラムのデバッグ バージョンでだけ有効です。リリース バージョンでコンパイルされた場合は無効になります。  
+ プログラムからのメッセージをデバッガーの [[出力] ウィンドウ](../ide/reference/output-window.md)に表示するには、 [ATLTRACE](https://msdn.microsoft.com/library/c796baa5-e2b9-4814-a27d-d800590b102e) マクロ、または MFC の [TRACE](https://msdn.microsoft.com/library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) マクロを使用します。 [アサーション](../debugger/c-cpp-assertions.md)と同様に、トレース マクロはプログラムのデバッグ バージョンでだけ有効です。リリース バージョンでコンパイルされた場合は無効になります。  
   
  **TRACE** マクロの使用例を次に示します。 `printf`と同様に、 **TRACE** マクロは多数の引数を処理できます。  
   
@@ -113,7 +113,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ```  
   
- **TRACE** マクロの詳細については、「 [診断サービス](http://msdn.microsoft.com/library/8d78454f-9fae-49c2-88c9-d3fabd5393e8)」を参照してください。  
+ **TRACE** マクロの詳細については、「 [診断サービス](https://msdn.microsoft.com/library/8d78454f-9fae-49c2-88c9-d3fabd5393e8)」を参照してください。  
   
  [このトピックの内容](#BKMK_In_this_topic)  
   
@@ -121,7 +121,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
  MFC には、割り当てられた後、解放されていないメモリを検出するためのクラスと関数が用意されています。  
   
 ### <a name="BKMK_Tracking_memory_allocations"></a> メモリ割り当ての追跡  
- MFC では、通常 [new](http://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) 演算子が使用される場所で **DEBUG_NEW** マクロを使用して、メモリ リークの位置を特定できます。 プログラムのデバッグ バージョンでは、 `DEBUG_NEW` はメモリを割り当てた各オブジェクトのファイル名と行番号を記録します。 プログラムのリリース バージョンをコンパイルするときは、 `DEBUG_NEW` は単に **new** 演算として機能し、ファイル名や行番号の情報を記録しません。 したがって、プログラムのリリース バージョンの実行速度が低下することはありません。  
+ MFC では、通常 [new](https://msdn.microsoft.com/library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) 演算子が使用される場所で **DEBUG_NEW** マクロを使用して、メモリ リークの位置を特定できます。 プログラムのデバッグ バージョンでは、 `DEBUG_NEW` はメモリを割り当てた各オブジェクトのファイル名と行番号を記録します。 プログラムのリリース バージョンをコンパイルするときは、 `DEBUG_NEW` は単に **new** 演算として機能し、ファイル名や行番号の情報を記録しません。 したがって、プログラムのリリース バージョンの実行速度が低下することはありません。  
   
  ソース ファイルで次のように `DEBUG_NEW` マクロを定義すると、プログラム全体を書き直さなくても、 **new**の代わりにこのマクロを使用できます。  
   
@@ -140,17 +140,17 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **メモリ診断を有効または無効にするには**  
   
-- グローバル関数 [AfxEnableMemoryTracking](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) を呼び出して、診断メモリ アロケーターを有効または無効にします。 デバッグ ライブラリでは既定でメモリの診断が行われるため、通常はメモリの診断を一時的にオフにするためにこの関数を使用します。診断をオフにすると、プログラムの実行速度が上がり、診断出力の量が少なくなります。  
+- グローバル関数 [AfxEnableMemoryTracking](https://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) を呼び出して、診断メモリ アロケーターを有効または無効にします。 デバッグ ライブラリでは既定でメモリの診断が行われるため、通常はメモリの診断を一時的にオフにするためにこの関数を使用します。診断をオフにすると、プログラムの実行速度が上がり、診断出力の量が少なくなります。  
   
   **afxMemDF を使用して特定のメモリ診断機能を選択するには**  
   
-- メモリ診断機能をより細かく制御するには、MFC のグローバル変数 [afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086)に値を設定することにより、個々のメモリ診断機能を個別にオン、オフします。 この変数には、 **afxMemDF**列挙型で指定される次の値を設定できます。  
+- メモリ診断機能をより細かく制御するには、MFC のグローバル変数 [afxMemDF](https://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086)に値を設定することにより、個々のメモリ診断機能を個別にオン、オフします。 この変数には、 **afxMemDF**列挙型で指定される次の値を設定できます。  
   
-  |[値]|説明|  
+  |値|説明|  
   |-----------|-----------------|  
   |**allocMemDF**|診断メモリ アロケーターをオンにします (既定)。|  
   |**delayFreeMemDF**|`delete` や `free` が呼び出された場合に、プログラムが終了するまでメモリの解放を遅らせます。 これにより、プログラムで必要とする最大量のメモリが割り当てられます。|  
-  |**checkAlwaysMemDF**|メモリが割り当てられるたび、または解放されるたびに、 [AfxCheckMemory](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) を呼び出します。|  
+  |**checkAlwaysMemDF**|メモリが割り当てられるたび、または解放されるたびに、 [AfxCheckMemory](https://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) を呼び出します。|  
   
    これらの値は、次のように論理 OR 演算を行うことにより、組み合わせて指定できます。  
   
@@ -162,11 +162,11 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ### <a name="BKMK_Taking_memory_snapshots"></a> メモリのスナップショットの取得  
   
-1. [CMemoryState](http://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) オブジェクトを作成し、 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) メンバー関数を呼び出します。 これにより、メモリの最初のスナップショットが作成されます。  
+1. [CMemoryState](https://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) オブジェクトを作成し、 [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) メンバー関数を呼び出します。 これにより、メモリの最初のスナップショットが作成されます。  
   
 2. プログラムでメモリの割り当てと解放が行われた後、別の `CMemoryState` オブジェクトを作成し、このオブジェクトの `Checkpoint` を呼び出します。 これにより、メモリ状態の 2 番目のスナップショットが取得されます。  
   
-3. 3 番目の `CMemoryState` オブジェクトを作成し、そのメンバー関数 [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) を呼び出します。このとき、前に作成した 2 つの `CMemoryState` オブジェクトを引数として渡します。 2 つのメモリ状態に違いがある場合、 `Difference` 関数は 0 以外の値を返します。 この値は、解放されていないメモリ ブロックがあることを示します。  
+3. 3 番目の `CMemoryState` オブジェクトを作成し、そのメンバー関数 [CMemoryState::Difference](https://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) を呼び出します。このとき、前に作成した 2 つの `CMemoryState` オブジェクトを引数として渡します。 2 つのメモリ状態に違いがある場合、 `Difference` 関数は 0 以外の値を返します。 この値は、解放されていないメモリ ブロックがあることを示します。  
   
     コードの例を次に示します。  
   
@@ -191,14 +191,14 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
    #endif  
    ```  
   
-    メモリ チェック用のステートメントが `#ifdef`[_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** ブロックで囲まれていることに注意してください。これによって、このコードはプログラムのデバッグ バージョンでのみコンパイルされます。  
+    メモリ チェック用のステートメントが `#ifdef`[_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** ブロックで囲まれていることに注意してください。これによって、このコードはプログラムのデバッグ バージョンでのみコンパイルされます。  
   
-    メモリ リークが発生していることを確認できたので、別のメンバー関数 [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) を使用してメモリ リークの位置を特定できます。  
+    メモリ リークが発生していることを確認できたので、別のメンバー関数 [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) を使用してメモリ リークの位置を特定できます。  
   
    [このトピックの内容](#BKMK_In_this_topic)  
   
 ### <a name="BKMK_Viewing_memory_statistics"></a> メモリ統計情報の表示  
- [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 関数は、2 つのメモリ状態オブジェクトを参照し、1 つ目の状態から 2 つ目の状態までの間にヒープから解放されなかったオブジェクトを検出します。 メモリのスナップショットを取得して、それらのメモリを `CMemoryState::Difference`を使用して比較した後、 [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) を呼び出すと、解放されなかったオブジェクトに関する情報を取得できます。  
+ [CMemoryState::Difference](https://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 関数は、2 つのメモリ状態オブジェクトを参照し、1 つ目の状態から 2 つ目の状態までの間にヒープから解放されなかったオブジェクトを検出します。 メモリのスナップショットを取得して、それらのメモリを `CMemoryState::Difference`を使用して比較した後、 [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) を呼び出すと、解放されなかったオブジェクトに関する情報を取得できます。  
   
  次に例を示します。  
   
@@ -233,7 +233,7 @@ Total allocations: 67 bytes
  [このトピックの内容](#BKMK_In_this_topic)  
   
 ### <a name="BKMK_Taking_object_dumps"></a> オブジェクト ダンプの取得  
- MFC プログラムで使用できます[cmemorystate::dumpallobjectssince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)解放されていないヒープ上のすべてのオブジェクトの説明をダンプします。 `DumpAllObjectsSince` は、前回の [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)を呼び出します。 `Checkpoint` が一度も呼び出されていない場合、 `DumpAllObjectsSince` はメモリ上に存在するオブジェクトと非オブジェクトをすべてダンプします。  
+ MFC プログラムで使用できます[cmemorystate::dumpallobjectssince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)解放されていないヒープ上のすべてのオブジェクトの説明をダンプします。 `DumpAllObjectsSince` は、前回の [CMemoryState::Checkpoint](https://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)を呼び出します。 `Checkpoint` が一度も呼び出されていない場合、 `DumpAllObjectsSince` はメモリ上に存在するオブジェクトと非オブジェクトをすべてダンプします。  
   
 > [!NOTE]
 > MFC のオブジェクト ダンプ機能を使用する場合は、あらかじめ [診断トレースを有効にしておく](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics)必要があります。  
@@ -274,7 +274,7 @@ Phone #: 581-0215
   
  特定のメモリ割り当てにブレークポイントを設定するには、グローバル変数 `_afxBreakAlloc` に中かっこ内の数字を設定します。 再びプログラムを実行すると、そのメモリ割り当てが行われる時点で停止します。 この時点で呼び出し履歴を調べると、問題の割り当てが行われた経緯がわかります。  
   
- C ランタイム ライブラリにも同様の関数 [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1)があり、C ランタイムでのメモリ割り当てに対して使用できます。  
+ C ランタイム ライブラリにも同様の関数 [_CrtSetBreakAlloc](https://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1)があり、C ランタイムでのメモリ割り当てに対して使用できます。  
   
  [このトピックの内容](#BKMK_In_this_topic)  
   
@@ -305,7 +305,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  `CPerson` コンストラクターは、引数として `char`への 3 つのポインターをとり、これらの引数を使用して `CString` メンバー変数を初期化します。 メモリ ダンプ情報を調べてみると、 `CPerson` オブジェクトと一緒に 3 つの非オブジェクト ブロック (non-object block) (3、4、5) が表示されています。 これらのブロックは `CString` メンバー変数の文字を格納しており、 `CPerson` オブジェクトのデストラクターが呼び出されても削除されないことがわかります。  
   
- 2 番目にメモリが割り当てられたブロックは `CPerson` オブジェクト自体です。 `$51A4` はブロックのアドレスを表し、その後にオブジェクトの内容が表示されています。この情報は、 `CPerson`DumpAllObjectsSince`Dump` によって呼び出された [::](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)が出力したものです。  
+ 2 番目にメモリが割り当てられたブロックは `CPerson` オブジェクト自体です。 `$51A4` はブロックのアドレスを表し、その後にオブジェクトの内容が表示されています。この情報は、 `CPerson`DumpAllObjectsSince`Dump` によって呼び出された [::](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)が出力したものです。  
   
  1 番目にメモリが割り当てられたブロックは、その割り当て番号とサイズから、 `CString` のフレーム変数に割り当てられていることがわかります。ブロック サイズは、 `CString` のフレーム変数の文字数と一致しています。 フレーム上に割り当てられた変数は、フレームがスコープ外に出ると自動的に解放されます。  
   
@@ -362,9 +362,9 @@ Phone #: 581-0215
  [このトピックの内容](#BKMK_In_this_topic)  
   
 #### <a name="BKMK_Customizing_object_dumps"></a> オブジェクト ダンプのカスタマイズ  
- [CObject](http://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a)から派生クラスを作成するときに `Dump` メンバー関数をオーバーライドすると、 [DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) を使用して [出力ウィンドウ](../ide/reference/output-window.md)にオブジェクトをダンプするときに、追加情報を提供できます。  
+ [CObject](https://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a)から派生クラスを作成するときに `Dump` メンバー関数をオーバーライドすると、 [DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) を使用して [出力ウィンドウ](../ide/reference/output-window.md)にオブジェクトをダンプするときに、追加情報を提供できます。  
   
- `Dump` 関数は、オブジェクトのメンバー変数の内容をテキスト形式でダンプ コンテキスト ([CDumpContext](http://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)) に書き込みます。 ダンプ コンテキストは、入出力ストリームに類似しています。 追加演算子 (**<<**) を使用して、 `CDumpContext`を呼び出します。  
+ `Dump` 関数は、オブジェクトのメンバー変数の内容をテキスト形式でダンプ コンテキスト ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)) に書き込みます。 ダンプ コンテキストは、入出力ストリームに類似しています。 追加演算子 (**<<**) を使用して、 `CDumpContext`を呼び出します。  
   
  `Dump` 関数をオーバーライドするときは、まず基底クラスの `Dump` を呼び出して、基底クラスのオブジェクトの内容をダンプします。 その後、派生クラスの各メンバー変数について、テキスト形式の説明と値を出力します。  
   
@@ -419,9 +419,9 @@ pMyPerson->Dump( afxDump );
 ## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> MFC デバッグ ビルドのサイズの縮小  
  大型の MFC アプリケーションでは、デバッグ情報でかなりのディスク容量が占有される場合があります。 次のいずれかの手順を使用して、サイズを縮小できます。  
   
-1. 使用して MFC ライブラリを再構築、 [/Z7、/Zi、/ZI (デバッグ情報の形式)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)オプションの代わりに **/Z7**します。 これらのオプションを指定すると、ライブラリ全体のデバッグ情報を格納する単一のプログラム データベース (PDB) ファイルがビルドされます。これによって、無駄をなくしてディスク容量を節約できます。  
+1. 使用して MFC ライブラリを再構築、 [/Z7、/Zi、/ZI (デバッグ情報の形式)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)オプションの代わりに **/Z7**します。 これらのオプションを指定すると、ライブラリ全体のデバッグ情報を格納する単一のプログラム データベース (PDB) ファイルがビルドされます。これによって、無駄をなくしてディスク容量を節約できます。  
   
-2. デバッグ情報なしの MFC ライブラリをリビルド (ありません[/Z7、/Zi、/ZI (デバッグ情報の形式)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)オプション)。 この場合、デバッグ情報がないため、MFC ライブラリのコード内で大半のデバッガー機能を使用できなくなります。しかし、MFC ライブラリは完全にデバッグ済みであるため、このことは問題にはなりません。  
+2. デバッグ情報なしの MFC ライブラリをリビルド (ありません[/Z7、/Zi、/ZI (デバッグ情報の形式)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)オプション)。 この場合、デバッグ情報がないため、MFC ライブラリのコード内で大半のデバッガー機能を使用できなくなります。しかし、MFC ライブラリは完全にデバッグ済みであるため、このことは問題にはなりません。  
   
 3. 次に示すように、選択したモジュールのデバッグ情報だけを追加してアプリケーションをビルドする。  
   
@@ -438,9 +438,9 @@ pMyPerson->Dump( afxDump );
   
    1. **\<[プロジェクト > プロパティ ページ]** ダイアログ ボックスで、**[構成マネージャー]** ボタンをクリックします。  
   
-   2. [[構成マネージャー] ダイアログ ボックス](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)のグリッド内でプロジェクトを見つけます。 **[構成]** 列の **[\<新規作成]** を選択します。  
+   2. [[構成マネージャー] ダイアログ ボックス](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)のグリッド内でプロジェクトを見つけます。 **[構成]** 列の **[\<新規作成]** を選択します。  
   
-   3. [[新規プロジェクト構成] ダイアログ ボックス](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)の **[Project Configuration Name]** ボックスに、新しいプロジェクト構成に付ける名前を "Partial Debug" のように入力します。  
+   3. [[新規プロジェクト構成] ダイアログ ボックス](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)の **[Project Configuration Name]** ボックスに、新しいプロジェクト構成に付ける名前を "Partial Debug" のように入力します。  
   
    4. **[設定のコピー元]** ボックスの **[Release]** をクリックします。  
   
@@ -482,7 +482,7 @@ pMyPerson->Dump( afxDump );
   
 7. **[ビルド]** メニューの **[ビルド]** をクリックし、最新ではないプロジェクト ファイルをリビルドします。  
   
-   このトピックで解説した方法の代わりに、外部メイクファイルを使用して、各ファイルに個別のオプションを定義することもできます。 その場合、MFC デバッグ ライブラリとリンクするには、モジュールごとに [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) フラグを定義する必要があります。 MFC リリース ライブラリを使用する場合は、NDEBUG を定義する必要があります。 外部メイクファイルの記述方法については、「 [NMAKE の実行](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c)」を参照してください。  
+   このトピックで解説した方法の代わりに、外部メイクファイルを使用して、各ファイルに個別のオプションを定義することもできます。 その場合、MFC デバッグ ライブラリとリンクするには、モジュールごとに [_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) フラグを定義する必要があります。 MFC リリース ライブラリを使用する場合は、NDEBUG を定義する必要があります。 外部メイクファイルの記述方法については、「 [NMAKE の実行](https://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c)」を参照してください。  
   
    [このトピックの内容](#BKMK_In_this_topic)  
   

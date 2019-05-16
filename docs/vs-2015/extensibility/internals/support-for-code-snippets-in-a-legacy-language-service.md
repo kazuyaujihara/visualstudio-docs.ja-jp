@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33218dd8fe7cee4a6700dcb289719ffae932bbe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408462"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691790"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>従来の言語サービスでのコード スニペットのサポート
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ ms.locfileid: "63408462"
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>メニュー コマンドを使用してコード スニペットの挿入  
  スニペットのブラウザーを表示するメニュー コマンドを使用するメニュー コマンドの追加を呼び出して、<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>メソッドで、<xref:Microsoft.VisualStudio.Package.ExpansionProvider>インターフェイス メニュー コマンドに応答します。  
   
-1. .Vsct ファイルにコマンドとボタンを追加します。 そのために行うための手順を確認できます[チュートリアル。Visual Studio パッケージ テンプレートを使用してメニュー コマンドを作成する](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)します。  
+1. .Vsct ファイルにコマンドとボタンを追加します。 そのために行うための手順を確認できます[チュートリアル。Visual Studio パッケージ テンプレートを使用してメニュー コマンドを作成する](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)します。  
   
 2. 派生クラスを<xref:Microsoft.VisualStudio.Package.ViewFilter>クラスし、オーバーライド、<xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A>新しいメニュー コマンドのサポートを示すためのメソッド。 この例では、メニュー コマンドが常に有効です。  
   

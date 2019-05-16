@@ -8,12 +8,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 036c0ced92fd4da85989883ab5725455ed172db4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8c0158370ceb101e8c6934f92e2dd3e8689254c5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416296"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686308"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>再生中に特定のイベントを待機するようにコード化された UIT テストを設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63416296"
  Visual Studio Enterprise  
   
 > [!TIP]
-> またコード化された UI テスト エディターで操作の前に遅延を追加することもできます。 詳細については、「[方法 :コード化された UI テスト エディターを使用して UI アクションの前に遅延を挿入](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)します。  
+> またコード化された UI テスト エディターで操作の前に遅延を追加することもできます。 詳細については、「[方法 :コード化された UI テスト エディターを使用して UI アクションの前に遅延を挿入](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)します。  
   
  **UITestControl.WaitForControlXXX() メソッド**  
   
@@ -117,4 +117,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  [チュートリアル: コード化された UI テストの作成、編集、および](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
  [コード化された UI テストの構造](../test/anatomy-of-a-coded-ui-test.md)   
  [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [方法: コード化された UI テスト エディターを使用して UI アクションの前に遅延を挿入します。](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+ [方法: コード化された UI テスト エディターを使用して UI アクションの前に遅延を挿入します。](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

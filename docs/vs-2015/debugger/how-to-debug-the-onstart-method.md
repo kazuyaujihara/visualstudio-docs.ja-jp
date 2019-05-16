@@ -20,17 +20,17 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a527a103b72d0026a7732a53b45d03793769058
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 391b906889dcbe422f7ec227b1d375be82e7ac91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078708"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700172"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>方法: OnStart メソッドをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows サービスをデバッグするには、サービスを起動し、デバッガーをサービス プロセスにアタッチします。 詳細については、「[方法 :Windows サービス アプリケーションをデバッグする](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2) ただし、Windows サービスの <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> メソッドをデバッグするには、メソッド内部からデバッガーを起動する必要があります。  
+Windows サービスをデバッグするには、サービスを起動し、デバッガーをサービス プロセスにアタッチします。 詳細については、「[方法 :Windows サービス アプリケーションをデバッグする](https://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2) ただし、Windows サービスの <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> メソッドをデバッグするには、メソッド内部からデバッガーを起動する必要があります。  
   
 1. <xref:System.Diagnostics.Debugger.Launch%2A> メソッドの始めに、呼び出しを `OnStart()`に追加します。  
   

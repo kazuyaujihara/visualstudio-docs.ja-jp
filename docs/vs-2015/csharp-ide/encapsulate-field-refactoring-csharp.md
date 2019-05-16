@@ -16,21 +16,21 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e2ad3b2d89db83d3b9fa38438abdbde61e72bfe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116603"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681384"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>フィールドのカプセル化リファクタリング (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **フィールドのカプセル化**リファクタリング操作を使用すると、既存のフィールドからプロパティをすばやく作成し、新規プロパティへの参照で、コードをシームレスに更新します。  
   
- ときに、[フィールド](http://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7)は[パブリック](http://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e)、他のオブジェクトがそのフィールドに直接アクセスおよび変更できますが、そのフィールドを所有するオブジェクトが検出されません。 使用して[プロパティ](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8)そのフィールドをカプセル化するには、フィールドに直接アクセスを禁止できます。  
+ ときに、[フィールド](https://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7)は[パブリック](https://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e)、他のオブジェクトがそのフィールドに直接アクセスおよび変更できますが、そのフィールドを所有するオブジェクトが検出されません。 使用して[プロパティ](https://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8)そのフィールドをカプセル化するには、フィールドに直接アクセスを禁止できます。  
   
- 新しいプロパティを作成する、**フィールドのカプセル化**操作をカプセル化するフィールドのアクセス修飾子を変更する[プライベート](http://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)、し、生成[取得](http://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)と[設定](http://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619)そのフィールドのアクセサー。 フィールドが読み取り専用で宣言されている場合など、`get` アクセサーだけが生成されることもあります。  
+ 新しいプロパティを作成する、**フィールドのカプセル化**操作をカプセル化するフィールドのアクセス修飾子を変更する[プライベート](https://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)、し、生成[取得](https://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)と[設定](https://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619)そのフィールドのアクセサー。 フィールドが読み取り専用で宣言されている場合など、`get` アクセサーだけが生成されることもあります。  
   
  リファクタリング エンジンで指定された領域で、新しいプロパティを参照しているコードが更新、**参照の更新**のセクション、**フィールドのカプセル化** ダイアログ ボックス。  
   

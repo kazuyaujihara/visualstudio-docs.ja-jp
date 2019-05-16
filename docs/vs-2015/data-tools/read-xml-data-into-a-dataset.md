@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dea8565810a904ff80a0790a9b219f3744b1e156
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425398"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692549"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML データのデータセットへの読み込み
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
 5. XML ファイルに基づく XML スキーマを表示するコードを追加する、<xref:System.Windows.Forms.TextBox>コントロール  
   
 > [!NOTE]
-> ダイアログ ボックスとメニュー コマンド、アクティブな設定またはエディションによって、ヘルプの記載を異なる場合がありますを表示するを使用しています。 設定を変更する、**ツール**メニューの **インポートおよびエクスポート設定**します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> ダイアログ ボックスとメニュー コマンド、アクティブな設定またはエディションによって、ヘルプの記載を異なる場合がありますを表示するを使用しています。 設定を変更する、**ツール**メニューの **インポートおよびエクスポート設定**します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="create-a-new-project"></a>新しいプロジェクトを作成する  
  この手順では、このチュートリアルを含む Visual Basic または Visual c# プロジェクトを作成します。  
@@ -59,7 +59,7 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
   
 2. プロジェクトに `ReadingXML` という名前を付けます。  
   
-3. 選択**Windows アプリケーション**、し、 **OK**します。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
+3. 選択**Windows アプリケーション**、し、 **OK**します。 詳細については、次を参照してください。[クライアント アプリケーション](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
   
      **ReadingXML**プロジェクトが作成されに追加**ソリューション エクスプ ローラー**します。  
   
@@ -246,7 +246,7 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
 - データセット内のデータを編集し、データベースに書き込みます。
   
 ## <a name="see-also"></a>関連項目  
- [データに関するチュートリアル](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [データに関するチュートリアル](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Visual Studio でのデータへのアクセス](../data-tools/accessing-data-in-visual-studio.md)   
- [アプリケーションでデータを受け取るための準備](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [アプリケーションでデータを受け取るための準備](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Visual Studio の XML ツール](../xml-tools/xml-tools-in-visual-studio.md)

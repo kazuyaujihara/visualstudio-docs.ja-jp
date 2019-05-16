@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 913594f47288715e0050643f365f9225810f6ded
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423245"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682347"
 ---
 # <a name="code-snippet-picker"></a>コード スニペット ピッカー
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,6 +56,6 @@ ms.locfileid: "62423245"
   
 ## <a name="see-also"></a>関連項目  
  [コード スニペットを使用するためのベスト プラクティス](../../ide/best-practices-for-using-code-snippets.md)   
- [Visual Basic の IntelliSense コード スニペット](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
+ [Visual Basic の IntelliSense コード スニペット](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [コードへのブックマークの設定](../../ide/setting-bookmarks-in-code.md)   
  [方法: surround-with コード スニペットを使用する](../../ide/how-to-use-surround-with-code-snippets.md)

@@ -11,12 +11,12 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a0f3380622f20e8518eed8ea2a8071518fe4a099
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85eed4abd07e63c2d997a6068744e91e6f1ac047
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537434"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690916"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK のリファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,10 +25,10 @@ ms.locfileid: "62537434"
   
 ## <a name="in-this-section"></a>このセクションの内容
 
- [セットアップの構成](http://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
+ [セットアップの構成](https://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
  Visual Studio 2017 のインスタンスを検出するための構成 API をセットアップします。
 
- [フォルダーを開く機能拡張](http://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
+ [フォルダーを開く機能拡張](https://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
  Visual Studio 2017 でフォルダーを開くためのワークスペース API です。
  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  

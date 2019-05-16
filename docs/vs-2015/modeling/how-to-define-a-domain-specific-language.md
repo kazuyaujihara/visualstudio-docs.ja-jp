@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 863daa41820b8a08f6cd9a6af26c6169fcda97db
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441063"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697262"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>方法: ドメイン固有言語を定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,7 +214,7 @@ ms.locfileid: "63441063"
   
 ##### <a name="to-test-the-new-domain-classes"></a>新しいドメイン クラスをテストするには  
   
-1. **すべてのテンプレートの変換をクリックします。** DSL デザイナー コードを生成する、ソリューション エクスプ ローラーのツールバー。 このステップは自動化できます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)します。  
+1. **すべてのテンプレートの変換をクリックします。** DSL デザイナー コードを生成する、ソリューション エクスプ ローラーのツールバー。 このステップは自動化できます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)します。  
   
 2. **ビルドして、DSL を実行します。** 新しいインスタンスを実行するには、f5 キーまたは ctrl キーを押しながら f5 キーを押して[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]実験モードでします。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の実験用インスタンスで、DSL のファイル名拡張子が付いているファイルを開くかまたは作成します。  
   

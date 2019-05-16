@@ -14,17 +14,17 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 078230c2b80d364b68fb127f18fc21a0b931cbce
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6c788e422ea8613b77d7d0c0460d7c026916baa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106671"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697153"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>n 層アプリケーションのデータセットにコードを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-データセットの機能を拡張するには、データセットの部分クラス ファイルを作成し、コードを追加 (コードを追加するのではなく、 *DatasetName*します。Dataset.Designer ファイル)。 部分クラスには、特定のクラスを複数の物理ファイルに分割するためのコードが有効にします。 詳細については、次を参照してください。[部分](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)または[部分クラスとメソッド](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)します。
+データセットの機能を拡張するには、データセットの部分クラス ファイルを作成し、コードを追加 (コードを追加するのではなく、 *DatasetName*します。Dataset.Designer ファイル)。 部分クラスには、特定のクラスを複数の物理ファイルに分割するためのコードが有効にします。 詳細については、次を参照してください。[部分](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)または[部分クラスとメソッド](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)します。
 
 データセット定義を変更するたびに、データセットを定義するコードが生成されます。 このコードは、データセットの構成を変更するウィザードの実行中に変更するときにも生成されます。 コードが、データセットの再生成中に削除されないようにするには、データセットの部分クラス ファイルにコードを追加します。
 
@@ -69,7 +69,7 @@ ms.locfileid: "60106671"
 
 - [n 層データ アプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)
 - [n 層アプリケーションの TableAdapters にコードを追加する](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
-- [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)
-- [TableAdapterManager の概要](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)
-- [階層更新の概要](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
+- [Tableadapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)
+- [TableAdapterManager の概要](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)
+- [階層更新の概要](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
 - [Visual Studio のデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)

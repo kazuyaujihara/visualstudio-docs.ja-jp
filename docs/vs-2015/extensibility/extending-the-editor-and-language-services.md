@@ -10,12 +10,12 @@ ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f828e6daff97f7c0ad8b3872691f5ad424cb2f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 085e1b5c1fbfbbaf5649966738f2864e0b72ed35
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962873"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674782"
 ---
 # <a name="extending-the-editor-and-language-services"></a>エディターと言語サービスの拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,24 +36,24 @@ ms.locfileid: "58962873"
 |[エディターの内部](../extensibility/inside-the-editor.md)|エディターの一般的な構造を説明し、その機能の一部を示します。|  
 |[エディター内の Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)|エディターでの Managed Extensibility Framework (MEF) を使用する方法について説明します。|  
 |[言語サービスとエディターの拡張ポイント](../extensibility/language-service-and-editor-extension-points.md)|エディターの拡張ポイントを一覧表示します。 拡張機能ポイントは、拡張可能なエディター機能を表します。|  
-|[チュートリアル: ビューの表示要素、コマンド、および設定 (ガイド) を作成します。](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|手順について説明し、コードを特定の表示幅を確保するための列 gudie 線を描画するビューの表示要素の構築について説明します。  読み取りと設定の書き込みだけでなくを宣言して、コマンド ウィンドウから呼び出すことができるコマンドの実装にも表示されます。|  
+|[チュートリアル: ビューの表示要素、コマンド、設定 (垂直グリッド ガイド) の作成](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|手順について説明し、コードを特定の表示幅を確保するための列 gudie 線を描画するビューの表示要素の構築について説明します。  読み取りと設定の書き込みだけでなくを宣言して、コマンド ウィンドウから呼び出すことができるコマンドの実装にも表示されます。|  
 |[エディターのインポート](../extensibility/editor-imports.md)|拡張機能をインポートするサービスの一覧を表示します。|  
 |[レガシ コードをエディターに適合させる](../extensibility/adapting-legacy-code-to-the-editor.md)|エディターを拡張する (事前に Visual Studio 2010) のレガシ コードを改変するさまざまな方法について説明します。|  
 |[従来の言語サービスの移行](../extensibility/internals/migrating-a-legacy-language-service.md)|基づく VSPackage での言語サービスを移行する方法について説明します。|  
-|[チュートリアル: ファイル名拡張子へのコンテンツの種類のリンク](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|コンテンツの種類をファイル名拡張子にリンクする方法を示しています。|  
+|[チュートリアル: コンテンツの種類とファイル名拡張子とをリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|コンテンツの種類をファイル名拡張子にリンクする方法を示しています。|  
 |[チュートリアル: 余白のグリフの作成](../extensibility/walkthrough-creating-a-margin-glyph.md)|余白にアイコンを追加する方法を示します。|  
 |[チュートリアル: テキストの強調表示](../extensibility/walkthrough-highlighting-text.md)|使用する方法を示します*タグ*テキストを強調表示します。|  
-|[チュートリアル: アウトライン表示](../extensibility/walkthrough-outlining.md)|特定の種類の中かっこのアウトラインを追加する方法を示します。|  
-|[チュートリアル: 中かっこの一致を表示します。](../extensibility/walkthrough-displaying-matching-braces.md)|対応する中かっこを強調表示する方法を示します。|  
+|[チュートリアル: アウトライン](../extensibility/walkthrough-outlining.md)|特定の種類の中かっこのアウトラインを追加する方法を示します。|  
+|[チュートリアル: 対応するかっこの表示](../extensibility/walkthrough-displaying-matching-braces.md)|対応する中かっこを強調表示する方法を示します。|  
 |[チュートリアル: クイック ヒントの表示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|プロパティ、メソッド、およびイベントなどのコードの要素について説明するクイック ヒント ポップアップを表示する方法を示します。|  
-|[チュートリアル: シグニチャ ヘルプの表示](../extensibility/walkthrough-displaying-signature-help.md)|シグネチャのパラメーターの型と数に関する情報を提供するポップアップを表示する方法を示します。|  
-|[チュートリアル: ステートメント入力候補を表示します。](../extensibility/walkthrough-displaying-statement-completion.md)|ステートメント入力候補を実装する方法を示します。|  
+|[チュートリアル: シグネチャ ヘルプの表示](../extensibility/walkthrough-displaying-signature-help.md)|シグネチャのパラメーターの型と数に関する情報を提供するポップアップを表示する方法を示します。|  
+|[チュートリアル: 入力候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)|ステートメント入力候補を実装する方法を示します。|  
 |[チュートリアル: コード スニペットの実装](../extensibility/walkthrough-implementing-code-snippets.md)|コード スニペットの展開を実装する方法を示します。|  
-|[チュートリアル: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|コード修正候補の電球を表示する方法を示します。|  
-|[チュートリアル: エディター拡張機能でシェル コマンドの使用](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|VSPackage にメニュー コマンドを MEF コンポーネントと関連付ける方法を示しています。|  
-|[チュートリアル: エディター拡張機能でショートカット キーの使用](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|VSPackage でのメニューのショートカットを MEF コンポーネントに関連付ける方法を示しています。|  
-|[MEF (Managed Extensibility Framework)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)|Managed Extensibility Framework (MEF) についての情報を提供します。|  
-|[Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)|Windows Presentation Foundation (WPF) についての情報を提供します。|  
+|[チュートリアル: 電球アイコンによる提案の表示](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|コード修正候補の電球を表示する方法を示します。|  
+|[チュートリアル: エディター拡張機能でシェル コマンドを使用する](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|VSPackage にメニュー コマンドを MEF コンポーネントと関連付ける方法を示しています。|  
+|[チュートリアル: エディター拡張機能でショートカット キーを使用する](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|VSPackage でのメニューのショートカットを MEF コンポーネントに関連付ける方法を示しています。|  
+|[MEF (Managed Extensibility Framework)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)|Managed Extensibility Framework (MEF) についての情報を提供します。|  
+|[Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)|Windows Presentation Foundation (WPF) についての情報を提供します。|  
   
 ## <a name="reference"></a>参照  
  Visual Studio エディターには、次の名前空間が含まれています。  

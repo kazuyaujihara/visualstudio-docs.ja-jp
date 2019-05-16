@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2a89344785f997f3b878df7d827db6e4732860b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5bbe12449849b656af2658c5bab667b0e611515e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384004"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685873"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>方法: ARM デバイスでグラフィックス診断を使用してください。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,12 +28,12 @@ ms.locfileid: "63384004"
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>ARM ベースのデバイス上でリモート デバッギングを有効にするには  
   
-1. インストール、 [ARM Kits Policy](http://msdn.microsoft.com/windows/desktop/dn469188) ARM ベースのデバイスにします。  
+1. インストール、 [ARM Kits Policy](https://msdn.microsoft.com/windows/desktop/dn469188) ARM ベースのデバイスにします。  
   
 2. インストール、 [Remote Debugging Tools](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) ARM ベースのデバイスにします。  
   
 > [!IMPORTANT]
-> Windows Phone 8.1 のデバイスの場合は、開発用にスマートフォンを登録しなければならないことがあります。 そのためには、自身が登録されている開発者であることが必要です。 詳細については、次を参照してください。[展開および Windows Phone 8 向けアプリを実行する方法](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)します。  
+> Windows Phone 8.1 のデバイスの場合は、開発用にスマートフォンを登録しなければならないことがあります。 そのためには、自身が登録されている開発者であることが必要です。 詳細については、次を参照してください。[展開および Windows Phone 8 向けアプリを実行する方法](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)します。  
   
  デバイス上でリモート デバッギングを有効にしたら、デバイスをデバッグ ターゲットにしてグラフィックス診断を開始します。  
   

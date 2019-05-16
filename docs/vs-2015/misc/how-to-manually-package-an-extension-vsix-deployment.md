@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e4d721fca8d429fe81de30306a8823e3d7fd9cab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442862"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681687"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>方法: 拡張機能 (VSIX 配置) を手動でパッケージ化します。
 VSIX パッケージを作成して、配置用の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 拡張機能をラップすることができます。 パッケージを作成するには、3 つの方法があります。  
@@ -26,7 +26,7 @@ VSIX パッケージを作成して、配置用の [!INCLUDE[vsprvs](../includes
   ここでは、3 つ目のオプションについて説明します。  
   
 ## <a name="creating-a-vsix-package"></a>VSIX パッケージの作成  
- 拡張機能を手動でパッケージ化するには、extension.manifest ファイルと [Content_Types].xml ファイルを拡張機能プロジェクトに追加し、ビルド出力と一緒に圧縮ファイルに含め、.vsix ファイル名拡張子を持つように圧縮ファイルの名前を変更します。 パッケージ化する拡張機能は、 [VSIX スキーマ](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)でサポートされている種類のものである必要があります。  
+ 拡張機能を手動でパッケージ化するには、extension.manifest ファイルと [Content_Types].xml ファイルを拡張機能プロジェクトに追加し、ビルド出力と一緒に圧縮ファイルに含め、.vsix ファイル名拡張子を持つように圧縮ファイルの名前を変更します。 パッケージ化する拡張機能は、 [VSIX スキーマ](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)でサポートされている種類のものである必要があります。  
   
 > [!NOTE]
 > VSIX パッケージ内のファイル名では、スペースを含める必要がありますいないもとして Uniform Resource Identifier (URI) 内に予約されている文字の下で定義された[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)します。  
@@ -37,7 +37,7 @@ VSIX パッケージを作成して、配置用の [!INCLUDE[vsprvs](../includes
   
 2. XML ファイルを作成し、 `extension.vsixmanifest`という名前を付けます。  
   
-3. VSIX スキーマに従って extension.vsixmanifest ファイルを入力します。 マニフェストの例については、「 [PackageManifest Element (Root Element, VSX Schema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)」を参照してください。  
+3. VSIX スキーマに従って extension.vsixmanifest ファイルを入力します。 マニフェストの例については、「 [PackageManifest Element (Root Element, VSX Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)」を参照してください。  
   
 4. 2 つ目の XML ファイルを作成し、 `[Content_Types].xml`という名前を付けます。  
   
@@ -56,4 +56,4 @@ VSIX パッケージを作成して、配置用の [!INCLUDE[vsprvs](../includes
 ## <a name="see-also"></a>関連項目  
  [Visual Studio 拡張機能を配布](../extensibility/shipping-visual-studio-extensions.md)   
  [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)   
- [PackageManifest Element (Root Element, VSX Schema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [PackageManifest Element (Root Element, VSX Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

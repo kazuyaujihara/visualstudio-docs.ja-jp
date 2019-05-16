@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 696e6bd46c17054494be2ea0e0f2a1af4fd703d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387697"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675483"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Roslyn アナライザーの規則セットします。
 
@@ -25,11 +25,28 @@ Roslyn アナライザーを従来の"FxCop"静的コード分析から移行す
 
 ## <a name="use-analyzer-rule-sets"></a>アナライザーの規則セットを使用して、
 
-したら[NuGet アナライザー パッケージをインストール](install-roslyn-analyzers.md)、定義済みの規則で設定を探してその*ruleset*ディレクトリ。 たとえば、参照した場合、`Microsoft.CodeAnalysis.FxCopAnalyzers`アナライザー パッケージでは、そのルールセット ディレクトリを見つけることができますし、 *%userprofile%\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<バージョン\>\rulesets*します。 そこから、ドラッグし削除、またはコピーして貼り付けるには、1 つまたは複数の Visual Studio プロジェクトにルール セットの**ソリューション エクスプ ローラー**します。
+したら[NuGet アナライザー パッケージをインストール](install-roslyn-analyzers.md)、定義済みの規則で設定を探してその*ruleset*ディレクトリ。 たとえば、参照した場合、`Microsoft.CodeAnalysis.FxCopAnalyzers`アナライザー パッケージを見つけることができます、 *ruleset*ディレクトリに *%userprofile%\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<バージョン\>\rulesets*します。 そこから、ruleset の 1 つ以上のコピーし、Visual Studio プロジェクトを含むディレクトリ、またはに直接貼り付ける**ソリューション エクスプ ローラー**します。
 
-プロジェクトを右クリックしてルールの分析の設定のアクティブなルールを設定するために、**ソリューション エクスプ ローラー**選択**プロパティ**します。 プロジェクトのプロパティ ページで、選択、**コード分析**タブ。**この規則セットを実行**を選択します**参照**、プロジェクト ディレクトリにコピーした目的の規則セットを選択します。 選択したルール セットで有効になっているこれらの規則に規則違反のみ表示されます。
+できます[定義済みの規則セットをカスタマイズする](how-to-create-a-custom-rule-set.md)をカスタマイズします。 違反がエラーまたは警告として表示されるように、1 つまたは複数のルールの重大度を変更するなど、**エラー一覧**します。
 
-できます[定義済みの規則セットをカスタマイズする](how-to-create-a-custom-rule-set.md#create-a-custom-rule-set)をカスタマイズします。 違反がエラーまたは警告として表示されるように、1 つまたは複数のルールの重大度を変更するなど、**エラー一覧**します。
+## <a name="set-the-active-rule-set"></a>アクティブなルール セットを設定します。
+
+アクティブなルール セットの設定のプロセスは、.NET CORE/.NET Standard プロジェクトまたは .NET Framework プロジェクトがあるかどうかによって若干異なります。
+
+### <a name="net-core"></a>.NET Core
+
+ルールの分析のために .NET Core または .NET Standard プロジェクトを設定するアクティブなルールを設定するために、手動で追加、 **CodeAnalysisRuleSet**プロパティをプロジェクト ファイル。 たとえば、次のコード スニペットのセット`HelloWorld.ruleset`アクティブなルールとして設定します。
+
+```xml
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  ...
+  <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+</PropertyGroup>
+```
+
+### <a name="net-framework"></a>.NET Framework
+
+プロジェクトを右クリックしてルールの分析のために .NET Framework プロジェクトを設定するアクティブなルールを設定するために、**ソリューション エクスプ ローラー**選択**プロパティ**します。 プロジェクトのプロパティ ページで、選択、**コード分析**タブ。**この規則セットを実行**を選択します**参照**、プロジェクト ディレクトリにコピーした目的の規則セットを選択します。 選択したルール セットで有効になっているこれらの規則に規則違反のみ表示されます。
 
 ## <a name="available-rule-sets"></a>使用可能なルール セット
 

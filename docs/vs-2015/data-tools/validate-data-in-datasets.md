@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00a5194abfcabac37e49a2e35ed025fd0f85dbe4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a6993d241f49261131ffad76dc50534ac8e1591
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424813"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694872"
 ---
 # <a name="validate-data-in-datasets"></a>データセットのデータの検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,24 +38,24 @@ ms.locfileid: "63424813"
   
  データセットに書き込まれたデータがデータセットに検証チェックを組み込むことで有効であるを確認できます。 データセットは、更新プログラムの実行方法に関係なく、データを確認できます: コントロール、コンポーネント内のフォームまたは他の方法で直接かどうか。 データセットが (データベースのバック エンド) とは異なり、アプリケーションの一部であるため、アプリケーション固有の検証をビルドする論理的な場所になります。  
   
- アプリケーションに検証を追加する最適な場所は、データセットの部分クラス ファイルです。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]または[!INCLUDE[csprcs](../includes/csprcs-md.md)]、オープン、**データセット デザイナー**検証の対象となる列またはテーブルをダブルクリックします。 この操作は自動的に作成、<xref:System.Data.DataTable.ColumnChanging>または<xref:System.Data.DataTable.RowChanging>イベント ハンドラー。 詳細については、「[方法 :列の変更時にデータを検証](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)または[方法。行の変更時にデータを検証](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)です。 完全な例を参照してください。[チュートリアル。データセットに検証を追加する](http://msdn.microsoft.com/library/09351fab-d670-45e3-b53a-a944eff717e7)します。  
+ アプリケーションに検証を追加する最適な場所は、データセットの部分クラス ファイルです。 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]または[!INCLUDE[csprcs](../includes/csprcs-md.md)]、オープン、**データセット デザイナー**検証の対象となる列またはテーブルをダブルクリックします。 この操作は自動的に作成、<xref:System.Data.DataTable.ColumnChanging>または<xref:System.Data.DataTable.RowChanging>イベント ハンドラー。 詳細については、「[方法 :列の変更時にデータを検証](https://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)または[方法。行の変更時にデータを検証](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)です。 完全な例を参照してください。[チュートリアル。データセットに検証を追加する](https://msdn.microsoft.com/library/09351fab-d670-45e3-b53a-a944eff717e7)します。  
   
 ## <a name="validate-data"></a>データを検証します。  
  次の方法では、データセット内での検証を実行できます。  
   
-- 変更時に個々 のデータ列の値をチェックできるアプリケーション固有の検証を作成します。  詳細については、「[方法 :列の変更時にデータを検証](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)です。  
+- 変更時に個々 のデータ列の値をチェックできるアプリケーション固有の検証を作成します。  詳細については、「[方法 :列の変更時にデータを検証](https://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)です。  
   
-- データ全体の中に値にデータをチェックできるアプリケーション固有の検証を作成して、行が変更されます。 詳細については、「[方法 :行の変更時にデータを検証](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)です。  
+- データ全体の中に値にデータをチェックできるアプリケーション固有の検証を作成して、行が変更されます。 詳細については、「[方法 :行の変更時にデータを検証](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)です。  
   
-- これに、データセットの実際のスキーマ定義の一部としてキー、一意の制約を作成します。 スキーマ定義に検証を組み込む方法についての詳細については、次を参照してください。[一意の値を含むに DataColumn を制約する](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)します。  
+- これに、データセットの実際のスキーマ定義の一部としてキー、一意の制約を作成します。 スキーマ定義に検証を組み込む方法についての詳細については、次を参照してください。[一意の値を含むに DataColumn を制約する](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)します。  
   
 - プロパティを設定して、<xref:System.Data.DataColumn>オブジェクトのなど<xref:System.Data.DataColumn.MaxLength%2A>、 <xref:System.Data.DataColumn.AllowDBNull%2A>、および<xref:System.Data.DataColumn.Unique%2A>します。  
   
   によって複数のイベントが発生する、<xref:System.Data.DataTable>オブジェクトのレコードの変更が発生している場合。  
   
-- <xref:System.Data.DataTable.ColumnChanging>と<xref:System.Data.DataTable.ColumnChanged>中およびそれぞれ個々 の列の変更後のイベントが発生します。 <xref:System.Data.DataTable.ColumnChanging>イベントは、特定の列で変更を検証する場合に便利です。 提案された変更については、イベントの引数として渡されます。 詳細については、「[方法 :列の変更時にデータを検証](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)です。  
+- <xref:System.Data.DataTable.ColumnChanging>と<xref:System.Data.DataTable.ColumnChanged>中およびそれぞれ個々 の列の変更後のイベントが発生します。 <xref:System.Data.DataTable.ColumnChanging>イベントは、特定の列で変更を検証する場合に便利です。 提案された変更については、イベントの引数として渡されます。 詳細については、「[方法 :列の変更時にデータを検証](https://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)です。  
   
-- <xref:System.Data.DataTable.RowChanging>と<xref:System.Data.DataTable.RowChanged>イベントが発生中と後に行の変更。 <xref:System.Data.DataTable.RowChanging>イベントは一般的な。 これは、変更が、行のどこかに発生しているが、どの列が変更されたがわからないことを示します。 詳細については、「[方法 :行の変更時にデータを検証](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)です。  
+- <xref:System.Data.DataTable.RowChanging>と<xref:System.Data.DataTable.RowChanged>イベントが発生中と後に行の変更。 <xref:System.Data.DataTable.RowChanging>イベントは一般的な。 これは、変更が、行のどこかに発生しているが、どの列が変更されたがわからないことを示します。 詳細については、「[方法 :行の変更時にデータを検証](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)です。  
   
   既定では、それぞれの列の変更はそのため 4 つのイベントを生成します。 1 つは、<xref:System.Data.DataTable.ColumnChanging>と<xref:System.Data.DataTable.ColumnChanged>が変更されている特定の列のイベント。 次に、<xref:System.Data.DataTable.RowChanging>と<xref:System.Data.DataTable.RowChanged>イベント。 行に複数の変更が行わ、イベントが各変更に対して発生します。  
   
@@ -94,16 +94,16 @@ ms.locfileid: "63424813"
   
 - 列のエラーを設定して指定された値を拒否する (<xref:System.Data.DataRow.SetColumnError%2A>) から列を変更するイベント ハンドラー内にします。  
   
-- オプションで <xref:System.Windows.Forms.ErrorProvider> コントロールを使用して、ユーザーにエラー メッセージを表示します。 詳細については、次を参照してください。 [ErrorProvider コンポーネント](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6)します。  
+- オプションで <xref:System.Windows.Forms.ErrorProvider> コントロールを使用して、ユーザーにエラー メッセージを表示します。 詳細については、次を参照してください。 [ErrorProvider コンポーネント](https://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6)します。  
   
-  中に検証を実行することも、<xref:System.Data.DataTable.RowChanging>イベント。 詳細については、「[方法 :行の変更時にデータを検証](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)です。  
+  中に検証を実行することも、<xref:System.Data.DataTable.RowChanging>イベント。 詳細については、「[方法 :行の変更時にデータを検証](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)です。  
   
 ## <a name="validate-data-during-row-changes"></a>行の変更時にデータを検証します。  
  検証する各列にアプリケーションの要件を満たすデータが格納されていることを検証するコードを記述できます。 そうで提案された値が許容されない場合、エラーが含まれているかを示す列を設定します。 `Quantity` 列が 0 以下の場合に列エラーを設定する例を次に示します。 行変更イベント ハンドラーは、次のように記述します。  
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>行の変更時にデータを検証するには (Visual Basic)  
   
-1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
+1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
   
 2. 検証するテーブルのタイトル バーをダブルクリックします。 この操作により、データセットの部分クラス ファイルに <xref:System.Data.DataTable.RowChanging> の <xref:System.Data.DataTable> イベント ハンドラーが自動的に作成されます。  
   
@@ -114,7 +114,7 @@ ms.locfileid: "63424813"
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>行の変更時にデータ検証するには (C#)  
   
-1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
+1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
   
 2. 検証するテーブルのタイトル バーをダブルクリックします。 この操作により、<xref:System.Data.DataTable> の部分クラス ファイルが作成されます。  
   
@@ -144,7 +144,7 @@ ms.locfileid: "63424813"
     ```  
   
 ## <a name="to-retrieve-changed-rows"></a>変更された行を取得するには  
- データ テーブルの各行が、<xref:System.Data.DataRow.RowState%2A>で値を使用してその行の現在の状態はの追跡プロパティ、<xref:System.Data.DataRowState>列挙体。 呼び出すことによって、データセットまたはデータ テーブルから変更された行を返すことができます、`GetChanges`のメソッド、<xref:System.Data.DataSet>または<xref:System.Data.DataTable>します。 変更を呼び出す前に存在することを確認できる`GetChanges`呼び出すことによって、<xref:System.Data.DataSet.HasChanges%2A>データセットのメソッド。 <xref:System.Data.DataSet.HasChanges%2A> の詳細については、「[方法:変更された行のチェック](http://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653)します。  
+ データ テーブルの各行が、<xref:System.Data.DataRow.RowState%2A>で値を使用してその行の現在の状態はの追跡プロパティ、<xref:System.Data.DataRowState>列挙体。 呼び出すことによって、データセットまたはデータ テーブルから変更された行を返すことができます、`GetChanges`のメソッド、<xref:System.Data.DataSet>または<xref:System.Data.DataTable>します。 変更を呼び出す前に存在することを確認できる`GetChanges`呼び出すことによって、<xref:System.Data.DataSet.HasChanges%2A>データセットのメソッド。 <xref:System.Data.DataSet.HasChanges%2A> の詳細については、「[方法:変更された行のチェック](https://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653)します。  
   
 > [!NOTE]
 > データセットまたはデータ テーブルに変更をコミットした後 (呼び出すことによって、<xref:System.Data.DataSet.AcceptChanges%2A>メソッド)、`GetChanges`メソッドにはデータは返されません。 を、アプリケーションが変更された行を処理する必要がある場合は、呼び出す前に変更を処理する必要があります、`AcceptChanges`メソッド。  
@@ -215,5 +215,5 @@ ms.locfileid: "63424813"
   
 ## <a name="see-also"></a>関連項目
 
-- [方法: Windows フォーム DataGridView コントロールでデータを検証します。](http://msdn.microsoft.com/library/d10aef35-701e-4a3c-a684-2a2ed1aeaca6)   
-- [方法: Windows フォーム ErrorProvider コンポーネントを使用してフォーム検証のエラー アイコンを表示します。](http://msdn.microsoft.com/library/3b681a32-9db4-497b-a34b-34980eabee46)
+- [方法: Windows フォーム DataGridView コントロールでデータを検証します。](https://msdn.microsoft.com/library/d10aef35-701e-4a3c-a684-2a2ed1aeaca6)   
+- [方法: Windows フォーム ErrorProvider コンポーネントを使用してフォーム検証のエラー アイコンを表示します。](https://msdn.microsoft.com/library/3b681a32-9db4-497b-a34b-34980eabee46)

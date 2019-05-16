@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d045957dde862d0552d8eeb4885f29957e420f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a17931b9d7ccb8ef60158d6ea6d22e8b2f27b031
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441406"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697161"
 ---
 # <a name="options-text-editor-cc-advanced"></a>[オプション]、[テキスト エディター]、[C/C++]、[詳細]
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63441406"
  このページにアクセスするには、左ウィンドウ枠の **[オプション]** ダイアログ ボックスで、**[テキスト エディター]**、**[C/C++]** の順に展開して、**[詳細]** を選択します。  
   
 > [!NOTE]
-> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 「[Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 「[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="browsingnavigation"></a>参照/ナビゲーション  
  ソリューションの規模が大きすぎるため、データベース アクティビティにより許容できない量のシステム リソースが消費されるというまれなケースを除いて、これらのオプションを選択しないでください。  
@@ -124,7 +124,7 @@ ms.locfileid: "63441406"
  **変換単位の最大キャッシュ**  
  IntelliSense 要求で同時に維持されるアクティブな変換単位の最大数です。 有効な値は 2 ～ 15 です。 この数値は、(Visual Studio の特定のインスタンスに対して) 実行される VCPkgSrv.exe プロセスの最大数に直接関連しています。 既定値は 2 ですが、使用可能なメモリがある場合は、この値を大きくすると、IntelliSense でパフォーマンスがわずかに向上する可能性があります。  
   
- 変換単位の詳細については、「[変換フェーズ](http://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db)」を参照してください。  
+ 変換単位の詳細については、「[変換フェーズ](https://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db)」を参照してください。  
   
  **アグレッシブ メンバー一覧を無効にする**  
  型または変数の名前を入力するときに、メンバー一覧が表示されません。 この一覧は、**[メンバー一覧のコミット文字]** オプションで定義されているコミット文字の 1 つを入力した後にのみ表示されます。  

@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38239bd431f3e66e1a694361f3727c843fbf29d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0459168da627b8e67ad669486b70eb7758118d92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558464"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688201"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>n 層アプリケーションでのデータセットの操作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ N 層データ アプリケーション * は複数の論理レイヤーに分�
  [チュートリアル: n 層データ アプリケーションの作成](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
  型指定されたデータセットを作成し、TableAdapter とデータセット コードを複数のプロジェクトに分離する手順について説明します。  
   
- [チュートリアル: N 層データ アプリケーションへの検証の追加](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [チュートリアル: N 層データ アプリケーションへの検証の追加](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
  N 層データ アプリケーションのチュートリアルで作成されたアプリケーションに検証を追加する手順について説明します。  
   
 ## <a name="reference"></a>参照  
@@ -71,4 +71,4 @@ N 層データ アプリケーション * は複数の論理レイヤーに分�
 - [階層更新](../data-tools/hierarchical-update.md)   
 - [Visual Studio のデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)   
 - [Visual Studio でのデータへのアクセス](../data-tools/accessing-data-in-visual-studio.md)   
-- [LINQ to SQL を使用する n 層アプリケーションとリモート アプリケーション](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+- [LINQ to SQL を使用する n 層アプリケーションとリモート アプリケーション](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

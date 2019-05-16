@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 57aa9011043ab30e465e03beffe54e6abcc706a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1aa81017f1a3d73e4ade1556ab141878e8a773f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444583"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698462"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Visual C++ for Cross-Platform Mobile Development のインストール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual C++ for Cross-Platform Mobile Development](http://go.microsoft.com/fwlink
   
   特定のデバイス プラットフォームのアプリをビルドするには、いくつかの追加要件があります。  
   
-- Windows Phone エミュレーターおよび Microsoft Visual Studio Emulator for Android には、Hyper-V を実行できるコンピューターが必要です。 エミュレーターをインストールして実行する前に、Windows の Hyper-V 機能を有効にする必要があります。 詳細については、エミュレーターの[システム要件](http://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)をご覧ください。  
+- Windows Phone エミュレーターおよび Microsoft Visual Studio Emulator for Android には、Hyper-V を実行できるコンピューターが必要です。 エミュレーターをインストールして実行する前に、Windows の Hyper-V 機能を有効にする必要があります。 詳細については、エミュレーターの[システム要件](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)をご覧ください。  
   
 - Android SDK に付属している x86 Android エミュレーターは、Intel HAXM ドライバーを実行できるコンピューター向けに最適化されています。 このドライバーには、VT-x および Execute Disable Bit をサポートしている Intel x64 プロセッサが必要です。 詳しくは、「 [Intel® Hardware Accelerated Execution Manager のインストール手順 - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385)」をご覧ください。  
   

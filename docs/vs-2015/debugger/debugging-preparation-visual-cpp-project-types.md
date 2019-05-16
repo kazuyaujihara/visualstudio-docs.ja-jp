@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4752f9b04723934c0fe9a2cf8a74d4d07e474477
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4f92b96d99889c88236df34b3f60c7fd71d5032d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116200"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691343"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>デバッグの準備:Visual C++ プロジェクトの種類
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ ms.locfileid: "60116200"
    [このトピックの内容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows フォーム アプリケーション (.NET)  
- **Windows フォーム アプリケーション (.NET)** テンプレートを使用して [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Windows フォーム アプリケーションを作成できます。 詳細については、「[方法 :Windows アプリケーション プロジェクトを作成する](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)」を参照してください。  
+ **Windows フォーム アプリケーション (.NET)** テンプレートを使用して [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Windows フォーム アプリケーションを作成できます。 詳細については、「[方法 :Windows アプリケーション プロジェクトを作成する](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)」を参照してください。  
   
  この種のアプリケーションを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でデバッグする作業は、マネージド Windows フォーム アプリケーションのデバッグ作業に似ています。  
   
@@ -117,4 +117,4 @@ ms.locfileid: "60116200"
  [C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [実行中のプログラムまたは複数のプログラムへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)   
- [方法: Windows アプリケーション プロジェクトを作成する](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)
+ [方法: Windows アプリケーション プロジェクトを作成する](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)

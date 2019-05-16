@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1576dfc54622f42e87ff2e9a951eed321300b1e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1da058cbbdda71758e9a158cfd6778a044797093
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039289"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703828"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>パラメーター付きの TableAdapter クエリを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60039289"
 > パラメーター化クエリを構築するときに、に対してコーディングをしているデータベースに固有のパラメーター表記を使用します。 たとえば、Access データ ソースと OleDb データ ソースは疑問符 "?" を使用してパラメーターを表すため、WHERE 句は `WHERE City = ?` のようになります。  
   
 > [!NOTE]
-> アクティブな設定または使用しているエディションによって、ヘルプの記載されているダイアログ ボックスとメニュー コマンドが表示が異なる場合があります。 設定を変更するには、**ツール**メニュー選択し、**インポートおよびエクスポート設定**します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> アクティブな設定または使用しているエディションによって、ヘルプの記載されているダイアログ ボックスとメニュー コマンドが表示が異なる場合があります。 設定を変更するには、**ツール**メニュー選択し、**インポートおよびエクスポート設定**します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="create-a-parameterized-tableadapter-query"></a>パラメーター化された TableAdapter クエリを作成します。 
   

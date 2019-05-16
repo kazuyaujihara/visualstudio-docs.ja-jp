@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bb7245e57dedf6f94ce7766fcfae24ac930f608
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f4487b168c3d405b2449bcfb9515e60f0ea67ed1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117552"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702691"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>方法: 高パフォーマンス クラスター上でデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60117552"
   
  高パフォーマンス クラスター上でデバッグするときは、リモート デバッグに使用できる [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のデバッグ ウィンドウとデバッグ手法をすべて使用できます。 ただし、リモートでデバッグするため、外部のコンソール ウィンドウは使用できません。  
   
- **[スレッド]** ウィンドウと **[プロセス]** ウィンドウは、並列アプリケーションをデバッグする際に特に役立ちます。 これらのウィンドウを使用する方法のヒントについては、次を参照してください。[方法。[プロセス] ウィンドウを使用して、](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)と[方法。[スレッド] ウィンドウを使用して、](../debugger/how-to-use-the-threads-window.md)します。  
+ **[スレッド]** ウィンドウと **[プロセス]** ウィンドウは、並列アプリケーションをデバッグする際に特に役立ちます。 これらのウィンドウを使用する方法のヒントについては、次を参照してください。[方法。[プロセス] ウィンドウを使用して、](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)と[方法。[スレッド] ウィンドウを使用して、](../debugger/how-to-use-the-threads-window.md)します。  
   
  以下の手順では、高パフォーマンス クラスター上でのデバッグに特に役立つ手法を示します。  
   
@@ -103,7 +103,7 @@ ms.locfileid: "60117552"
 ## <a name="see-also"></a>関連項目  
  [マルチスレッド アプリケーションのデバッグ](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [リモート デバッグ](../debugger/remote-debugging.md)   
- [方法: [プロセス] ウィンドウを使用します。](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [方法: [プロセス] ウィンドウを使用します。](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
  [方法: [スレッド] ウィンドウを使用します。](../debugger/how-to-use-the-threads-window.md)   
- [スレッドとプロセス](http://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [スレッドとプロセス](https://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [ブレークポイントの使用](../debugger/using-breakpoints.md)

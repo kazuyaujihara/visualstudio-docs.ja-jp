@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9eea79978b7b61de1e56d787b5a4cd9797be1aa6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977005"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704785"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>ワークフロー デザイナーを使用したアプリケーションの開発
-[!INCLUDE[wfd1](../includes/wfd1-md.md)]は、[!INCLUDE[wf](../includes/wf-md.md)] 開発環境内でホストされる [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] 内の [!INCLUDE[vs2010](../includes/vs2010-md.md)] アプリケーションをグラフィカルに作成してデバッグするためのビジュアルなデザイナーおよびデバッガーです。 テンプレートおよびアクティビティ デザイナーを使用して、複合ワークフロー アプリケーション、アクティビティ ライブラリ、または [!INCLUDE[indigo1](../includes/indigo1-md.md)] サービスを作成できます。 [!INCLUDE[crabout](../includes/crabout-md.md)] ワークフローを参照してください、 [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66)します。  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)]は、[!INCLUDE[wf](../includes/wf-md.md)] 開発環境内でホストされる [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] 内の [!INCLUDE[vs2010](../includes/vs2010-md.md)] アプリケーションをグラフィカルに作成してデバッグするためのビジュアルなデザイナーおよびデバッガーです。 テンプレートおよびアクティビティ デザイナーを使用して、複合ワークフロー アプリケーション、アクティビティ ライブラリ、または [!INCLUDE[indigo1](../includes/indigo1-md.md)] サービスを作成できます。 [!INCLUDE[crabout](../includes/crabout-md.md)] ワークフローを参照してください、 [Windows Workflow Foundation &#91;.NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66)します。  
   
  以前のバージョンの[!INCLUDE[wfd2](../includes/wfd2-md.md)]に追加された、この新バージョンの[!INCLUDE[wfd2](../includes/wfd2-md.md)]のデザイン機能を次に示します。  
   
@@ -65,8 +65,8 @@ ms.locfileid: "62977005"
  [.NET 3.0 または .NET 3.5 Framework を対象とするワークフロー アプリケーションの開発](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
  [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] または [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] を対象とする従来のデザイナーの使用方法に関するガイダンスを示します。  
   
- [デザイナーのホスト変更&#91;WF のサンプル&#93;](http://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
+ [デザイナーのホスト変更&#91;WF のサンプル&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
  このサンプルは、デザイナーを含む WPF レイアウトを作成する方法を示します。  
   
- [カスタム アクティビティ デザイナー](http://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
+ [カスタム アクティビティ デザイナー](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
  このセクションでは、ワークフロー デザイナーに表示するカスタム デザイナーを使用するアクティビティ サンプルを示します。

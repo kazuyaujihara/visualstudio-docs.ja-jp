@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ca90a90d476acc0bdbc1df426b981d98207bbd28
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427064"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687247"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>ドメイン固有言語の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ ms.locfileid: "63427064"
 1. クリックして**すべてのテンプレートの変換**ソリューション エクスプ ローラーのツールバー。 これには、DslDefinition.dsl からソース コードの大部分が再生成します。  
   
    > [!NOTE]
-   > クリックする必要があります DslDefinition.dsl を変更するたびに**すべてのテンプレートの変換**ソリューションを再構築する前にします。 このステップは自動化できます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)します。  
+   > クリックする必要があります DslDefinition.dsl を変更するたびに**すべてのテンプレートの変換**ソリューションを再構築する前にします。 このステップは自動化できます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)します。  
   
 2. F5 キーを押すか、または、**デバッグ** メニューのをクリックして**デバッグの開始**します。  
   

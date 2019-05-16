@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dfa2d0cb454dba07a036883a296d364cb3182afc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ea7378e72d970bf53470b4434222aa4a1a4d9a1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440148"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690520"
 ---
 # <a name="intellitrace"></a>[IntelliTrace]
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +48,8 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
 |||  
 |-|-|  
-|**IntelliTrace を使用してアプリケーションをデバッグする:** <br /><br /> -過去のイベント表示します。<br />-呼び出し情報過去のイベントを表示します。<br />-IntelliTrace セッションを保存します。<br />-IntelliTrace で収集されるデータを制御します。|-   [チュートリアル: IntelliTrace](../debugger/walkthrough-using-intellitrace.md) の使用<br />     [IntelliTrace の機能](../debugger/intellitrace-features.md)<br />-   [IntelliTrace を構成します。](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [デバッグ履歴](../debugger/historical-debugging.md)|  
-|**テスト マネージャーのテスト セッション中に IntelliTrace データを収集する**|-   [手動テストでの複数の診断データの収集](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
+|**IntelliTrace を使用してアプリケーションをデバッグする:** <br /><br /> -過去のイベント表示します。<br />-呼び出し情報過去のイベントを表示します。<br />-IntelliTrace セッションを保存します。<br />-IntelliTrace で収集されるデータを制御します。|-   [チュートリアル: IntelliTrace](../debugger/walkthrough-using-intellitrace.md) の使用<br />     [IntelliTrace の機能](../debugger/intellitrace-features.md)<br />-   [IntelliTrace を構成します。](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [デバッグ履歴](../debugger/historical-debugging.md)|  
+|**テスト マネージャーのテスト セッション中に IntelliTrace データを収集する**|-   [手動テストでの複数の診断データの収集](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
 |**展開されたアプリケーションから IntelliTrace データを収集する**|-   [IntelliTrace スタンドアロン コレクターを使用する](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**IntelliTrace ログ ファイル (.iTrace ファイル) からデバッグを開始する**|-   [保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -57,7 +57,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
 |||  
 |-|-|  
-|**サポート状況**|-.NET Framework 2.0 または以降のバージョンを使用する Visual Basic および Visual c# のアプリケーション。<br />     ASP.NET、Microsoft Azure、Windows フォーム、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013、および 64 ビットのアプリを含むほとんどのアプリケーションをデバッグできます。<br />     IntelliTrace を使用した SharePoint アプリケーションをデバッグするを参照してください。[チュートリアル。IntelliTrace を使用して SharePoint アプリケーションのデバッグ](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)します。<br />     IntelliTrace を使用した Microsoft Azure アプリをデバッグするを参照してください。 [IntelliTrace および Visual Studio で発行されたクラウド サービスのデバッグ](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)します。|  
+|**サポート状況**|-.NET Framework 2.0 または以降のバージョンを使用する Visual Basic および Visual c# のアプリケーション。<br />     ASP.NET、Microsoft Azure、Windows フォーム、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013、および 64 ビットのアプリを含むほとんどのアプリケーションをデバッグできます。<br />     IntelliTrace を使用した SharePoint アプリケーションをデバッグするを参照してください。[チュートリアル。IntelliTrace を使用して SharePoint アプリケーションのデバッグ](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)します。<br />     IntelliTrace を使用した Microsoft Azure アプリをデバッグするを参照してください。 [IntelliTrace および Visual Studio で発行されたクラウド サービスのデバッグ](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)します。|  
 |**限定されたサポート**|-F#実験的な単位でのアプリ<br />-イベントについてのみサポートされている Windows ストア アプリ|  
 |**サポートされていません**|C++、その他の言語、およびスクリプト<br />-Windows サービス、Silverlight、Xbox、または[!INCLUDE[winmobile](../includes/winmobile-md.md)]アプリ|  
   
@@ -77,7 +77,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
 - Microsoft Test Manager のテスト セッション  
   
-- Microsoft Monitoring Agent を単独、または System Center 2012 と連携して使用する場合の、IIS でホストされている ASP.NET Web アプリ、または配置されて実行中の SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーション。 参照してください[IntelliTrace スタンドアロン コレクターを使用して](../debugger/using-the-intellitrace-stand-alone-collector.md)と[Microsoft Monitoring Agent による監視](http://technet.microsoft.com/library/dn465153.aspx)します。  
+- Microsoft Monitoring Agent を単独、または System Center 2012 と連携して使用する場合の、IIS でホストされている ASP.NET Web アプリ、または配置されて実行中の SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーション。 参照してください[IntelliTrace スタンドアロン コレクターを使用して](../debugger/using-the-intellitrace-stand-alone-collector.md)と[Microsoft Monitoring Agent による監視](https://technet.microsoft.com/library/dn465153.aspx)します。  
   
   IntelliTrace を使用したデバッグがどのように役立つかの例を次に示します。  
   
@@ -91,7 +91,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
 - アプリケーションは、テスト コンピューターではクラッシュしますが、開発用コンピューターでは正常に実行されます。  
   
-   Microsoft Test Manager から IntelliTrace データを収集して、.iTrace ファイルにデータを保存し、後日確認できるようにこのファイルを Team Foundation Server の作業項目に添付することができます。 参照してください[手動テストでの複数の診断データの収集](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)と[保存された IntelliTrace データを使用して](../debugger/using-saved-intellitrace-data.md)します。  
+   Microsoft Test Manager から IntelliTrace データを収集して、.iTrace ファイルにデータを保存し、後日確認できるようにこのファイルを Team Foundation Server の作業項目に添付することができます。 参照してください[手動テストでの複数の診断データの収集](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)と[保存された IntelliTrace データを使用して](../debugger/using-saved-intellitrace-data.md)します。  
   
 - 展開されたアプリケーションでバグまたはクラッシュが発生しています。  
   
@@ -104,7 +104,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
 ## <a name="WhatData"></a> IntelliTrace が収集するデータ  
  **イベント情報の収集**  
   
- 既定では、IntelliTrace は、IntelliTrace イベント (デバッガー イベント、例外、.NET Framework イベント、およびデバッグに役立つその他のシステム イベント) のみを記録します。 常に収集されるデバッガー イベントと例外を除き、収集する IntelliTrace イベントの種類を選択できます。 参照してください[IntelliTrace 構成](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)します。  
+ 既定では、IntelliTrace は、IntelliTrace イベント (デバッガー イベント、例外、.NET Framework イベント、およびデバッグに役立つその他のシステム イベント) のみを記録します。 常に収集されるデバッガー イベントと例外を除き、収集する IntelliTrace イベントの種類を選択できます。 参照してください[IntelliTrace 構成](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)します。  
   
 - **デバッガー イベント**  
   
@@ -146,7 +146,7 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
   
   - [保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)  
   
-  - [チュートリアル: IntelliTrace を使用して SharePoint アプリケーションのデバッグ](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [チュートリアル: IntelliTrace を使用して SharePoint アプリケーションのデバッグ](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **関数呼び出し情報を収集**  
   
@@ -163,23 +163,23 @@ IntelliTrace を使用して実行履歴を記録およびトレースすると�
 > [!NOTE]
 > IntelliTrace は、配列の最初の 256 個のオブジェクトと文字列の最初の 256 文字のみを収集します。  
   
- 参照してください[IntelliTrace 構成](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)します。  
+ 参照してください[IntelliTrace 構成](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)します。  
   
  **モジュール情報の収集**  
   
- IntelliTrace で収集される呼び出し情報の量を制御するには、目的のモジュールのみを指定します。 これにより、収集時のアプリケーションのパフォーマンスを向上させることができます。 参照してください[IntelliTrace 構成](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)します。  
+ IntelliTrace で収集される呼び出し情報の量を制御するには、目的のモジュールのみを指定します。 これにより、収集時のアプリケーションのパフォーマンスを向上させることができます。 参照してください[IntelliTrace 構成](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)します。  
   
 ## <a name="AffectPerformance"></a>IntelliTrace はアプリケーションの速度を低下させるか  
  既定では、選択された IntelliTrace イベントについてのみ情報が収集されます。 これが原因でアプリケーションの速度が低下するかどうかは、コードの構造と構成によって決まります。 たとえば、IntelliTrace がイベントを頻繁に記録する場合、アプリケーションの速度が低下する可能性があります。 また、アプリケーションのリファクタリングを検討する必要に迫られる場合があります。  
   
- 呼び出し情報を収集すると、アプリケーションの速度が大幅に低下する可能性があります。 さらに、ディスクに保存される IntelliTrace ログ ファイル (.iTrace ファイル) のサイズが増加する可能性があります。 これらの影響を最小限に抑えるには、必要なモジュールのみから呼び出し情報を収集するようにします。  ご利用の .iTrace ファイルの最大サイズを変更するには、**[ツール]**、**[オプション]**、**[IntelliTrace]**、**[詳細設定]** の順に選択します。 参照してください[IntelliTrace 構成](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)します。  
+ 呼び出し情報を収集すると、アプリケーションの速度が大幅に低下する可能性があります。 さらに、ディスクに保存される IntelliTrace ログ ファイル (.iTrace ファイル) のサイズが増加する可能性があります。 これらの影響を最小限に抑えるには、必要なモジュールのみから呼び出し情報を収集するようにします。  ご利用の .iTrace ファイルの最大サイズを変更するには、**[ツール]**、**[オプション]**、**[IntelliTrace]**、**[詳細設定]** の順に選択します。 参照してください[IntelliTrace 構成](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [IntelliTrace の機能](../debugger/intellitrace-features.md)  
   
- [IntelliTrace を構成します。](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
+ [IntelliTrace を構成します。](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
   
- [再現が困難なバグの診断トレース データを含む](http://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
+ [再現が困難なバグの診断トレース データを含む](https://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
   
  [配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)  
   
