@@ -103,12 +103,10 @@
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: アナライザー パッケージの規則セット
           href: analyzer-rule-sets.md
-        - name: マネージド コードの規則セット
-          items:
-            - name: マネージド コードの規則セット
-              href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: ASP.NET Web アプリケーション用のコード分析を構成する
-              href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
+        - name: スタティック コード分析の規則セットを構成する
+          href: how-to-configure-code-analysis-for-a-managed-code-project.md
+        - name: ASP.NET Web アプリケーション用のコード分析を構成する
+          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: C++ コードの規則セット
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
         - name: カスタム規則セットの作成
