@@ -23,17 +23,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4574c5ec455f37813e4831cbf098ca4ba6c3c1ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b11855fbd19dc464f92b4339684ef8346556c21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977767"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691150"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>デバッグの準備:Windows フォーム アプリケーション
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows フォーム プロジェクト テンプレートは、Windows フォーム アプリケーションを作成します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、この種類のアプリケーションを簡単にデバッグできます。 詳細については、次を参照してください。 [Windows アプリケーション プロジェクトを作成する](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)します。  
+Windows フォーム プロジェクト テンプレートは、Windows フォーム アプリケーションを作成します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、この種類のアプリケーションを簡単にデバッグできます。 詳細については、次を参照してください。 [Windows アプリケーション プロジェクトを作成する](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)します。  
   
  プロジェクト テンプレートを使用して Windows フォーム プロジェクトを作成する場合、デバッグ構成とリリース構成に必要な設定は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって自動的に作成されます。 この設定は必要に応じて変更できます。 設定の変更は、**[\<プロジェクト名> プロパティ ページ]** ダイアログ ボックス (Visual Basic の場合は **[My Project]**) で行います。  
   
@@ -63,7 +63,7 @@ Windows フォーム プロジェクト テンプレートは、Windows フォ�
   
    3. フォーカス イベントと検証イベント。  
   
-      詳細については、「[Windows フォーム内でのイベント ハンドラーの作成](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701)」を参照してください。  
+      詳細については、「[Windows フォーム内でのイベント ハンドラーの作成](https://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701)」を参照してください。  
   
 3. **[デバッグ]** メニューの **[開始]** をクリックします。  
   
@@ -76,4 +76,4 @@ Windows フォーム プロジェクト テンプレートは、Windows フォ�
  [C# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [実行中のプロセスにアタッチする](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Windows フォーム](http://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)
+ [Windows フォーム](https://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab1e9345cf599c4336b202d32fb71a9097fe629
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7dd77065791d36e89c43b51dd8e1494d8e69a369
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913611"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458381"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 保留中のブレークポイント (バインドされていないブレークポイント) の状態を指定します。
@@ -43,14 +46,18 @@ public enum enum_PENDING_BP_STATE { 
 };
 ```
 
-## <a name="members"></a>メンバー
- ゼロの PBPS_NONE プレース ホルダーです。 この値は返されません。
+## <a name="fields"></a>フィールド
+ `PBPS_NONE`\
+ ゼロ プレース ホルダーです。 この値は返されません。
 
- PBPS_DELETED では、保留中のブレークポイントが削除されたことを示します。
+ `PBPS_DELETED`\
+ 保留中のブレークポイントが削除されたことを示します。
 
- PBPS_DISABLED では、保留中のブレークポイントが無効になっていることを示します。
+ `PBPS_DISABLED`\
+ 保留中のブレークポイントが無効になっていることを示します。
 
- PBPS_ENABLED では、保留中のブレークポイントが有効になっていることを示します。
+ `PBPS_ENABLED`\
+ 保留中のブレークポイントが有効になっていることを示します。
 
 ## <a name="remarks"></a>Remarks
  として使用して、`state`のメンバー、 [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)構造体。

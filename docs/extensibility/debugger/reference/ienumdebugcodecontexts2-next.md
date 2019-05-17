@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b65a148ece1bf93cf9924293695616713238462c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3fc2492b5962a71bf82d76b57d58eada9c6d3ee7
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223526"
 ---
 # <a name="ienumdebugcodecontexts2next"></a>IEnumDebugCodeContexts2::Next
 列挙体から次の要素のセットを返します。
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `celt`
+## <a name="parameters"></a>パラメーター
+ `celt`\
 
  [in]取得する要素の数。 最大サイズを指定します、`rgelt`配列。
 
- `rgelt`
+ `rgelt`\
 
  [入力、出力]配列[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)情報を格納する要素。
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out]実際に返される要素の数を返します`rgelt`します。
 

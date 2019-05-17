@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b20222db9b007fbeee6daf0df1921e4c56744818
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 071dac72e39a3cce5b0b17dc9e401b9072efda6a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915828"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224056"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 このメソッドは、デバッグ アドレスにコードをコンパイルするために使用された言語を取得します。
@@ -40,16 +43,16 @@ int GetLanguage(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pAddress`
+## <a name="parameters"></a>パラメーター
+ `pAddress`\
 
  [in]によって表されるアドレス オブジェクトを[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。
 
- `pguidLanguage`
+ `pguidLanguage`\
 
  [out]返します、`GUID`言語を指定します。
 
- `pguidLanguageVendor`
+ `pguidLanguageVendor`\
 
  [out]返します、`GUID`言語販売元を指定します。
 

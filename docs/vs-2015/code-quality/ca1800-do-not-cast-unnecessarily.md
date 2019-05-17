@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d31cc102aae54ef60b8c16742ffe7e4381df5325
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 49ffc66b1b7047c7b88664ac0c5198fbd51c51c6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962667"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682074"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800:不必要にキャストしません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58962667"
 ## <a name="rule-description"></a>規則の説明
  二重のキャストがあるとパフォーマンスが低下します。特に、小さな繰り返しステートメントでキャストが実行される場合はそうです。 、明示的な重複するキャスト操作のキャストの結果をローカル変数に格納し、重複するキャスト操作ではなくローカル変数を使用します。
 
- 場合、C#`is`演算子を使用して、実際のキャストを実行すると、前に、キャストが成功するかどうかをテストの結果をテストしてください、`as`演算子代わりにします。 これにより、暗黙のキャスト操作によって実行されることがなく、同じ機能、`is`演算子。
+ 場合、c#`is`演算子を使用して、実際のキャストを実行すると、前に、キャストが成功するかどうかをテストの結果をテストしてください、`as`演算子代わりにします。 これにより、暗黙のキャスト操作によって実行されることがなく、同じ機能、`is`演算子。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を修正するには、キャスト操作の数を最小限に抑えるメソッドの実装を変更します。
@@ -47,7 +47,7 @@ ms.locfileid: "58962667"
  パフォーマンスが問題ではない場合、この規則による警告を抑制するか、ルールを完全に無視するには安全です。
 
 ## <a name="example"></a>例
- 次の例は、C# を使用して、規則に違反するメソッドを示しています。`is`演算子。 2 番目のメソッドは、置き換えることで、ルールを満たす、`is`演算子と、テストの結果に対して、`as`演算子で、2 つのイテレーションあたりのキャスト操作の数を減らします。
+ 次の例は、c# を使用して、規則に違反するメソッドを示しています。`is`演算子。 2 番目のメソッドは、置き換えることで、ルールを満たす、`is`演算子と、テストの結果に対して、`as`演算子で、2 つのイテレーションあたりのキャスト操作の数を減らします。
 
  [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCastsAsIs/cs/FxCop.Performance.UnnecessaryCastsAsIs.cs#1)]
 
@@ -58,4 +58,4 @@ ms.locfileid: "58962667"
  [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/vb/FxCop.Performance.UnnecessaryCasts.vb#1)]
 
 ## <a name="see-also"></a>関連項目
- [as](http://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e) [is](http://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)
+ [as](https://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e) [is](https://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)

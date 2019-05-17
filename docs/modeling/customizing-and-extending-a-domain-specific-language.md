@@ -9,38 +9,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ebbb18e37356c1ef6ccc47f18afe4736a418c0c3
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414855"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476577"
 ---
-# <a name="customizing-and-extending-a-domain-specific-language"></a>ドメイン固有言語のカスタマイズおよび拡張
+# <a name="customize-and-extend-a-domain-specific-language"></a>カスタマイズおよびドメイン固有言語を拡張します。
+
 Visual Studio のモデリングと視覚エフェクト SDK (VMSDK) は、いくつかのレベルをモデリング ツールを定義することができますを提供します。
 
-1. DSL 定義図を使用して、ドメイン固有言語 (DSL) を定義します。 図の表記法、読み取り可能な XML 形式では、コードとその他の成果物を生成するために必要な基本的なツールと DSL をすばやく作成できます。
-
-     詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。
+1. DSL 定義図を使用して、ドメイン固有言語 (DSL) を定義します。 図の表記法、読み取り可能な XML 形式では、コードとその他の成果物を生成するために必要な基本的なツールと DSL をすばやく作成できます。 詳細については、次を参照してください。[ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)します。
 
 2. DSL 定義のより高度な機能を使用して DSL を細かく調整します。 たとえば、ユーザーが要素を作成するときに表示されるその他のリンクを行うことができます。 これらの手法は、DSL 定義で実現されるほとんどの場合と、数行プログラム コードの一部が必要です。
 
-3. プログラム コードを使用して、モデリング ツールを拡張します。 VMSDK は特に、DSL 定義から生成されるコードにより、拡張機能を容易に統合できるようにすることを目的としています。  詳細については、次を参照してください。[ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)します。
+3. プログラム コードを使用して、モデリング ツールを拡張します。 VMSDK は特に、DSL 定義から生成されるコードにより、拡張機能を容易に統合できるようにすることを目的としています。 詳細については、次を参照してください。[ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)します。
 
 > [!NOTE]
-> DSL 定義ファイルを更新したら、忘れずにクリックして**すべてのテンプレートの変換**ソリューションの再構築する前に、ソリューション エクスプ ローラーのツールバー。
+> DSL 定義ファイルを更新したら、をクリックすることを忘れないでください**すべてのテンプレートの変換**のツールバーで**ソリューション エクスプ ローラー**ソリューションの再構築する前にします。
 
-## <a name="customShapes"></a> このセクションでは
+## <a name="article-reference"></a>参照資料
 
 |この効果を実現するには|このトピックを参照してください。|
 |-|-|
-|図形の色とスタイルのプロパティを設定するユーザーを許可します。|シェイプまたはコネクタ クラスを右クリックし、**公開追加**項目をクリックします。<br /><br /> 参照してください[ダイアグラムの外観のカスタマイズ](../modeling/customizing-presentation-on-the-diagram.md)します。|
+|図形の色とスタイルのプロパティを設定するユーザーを許可します。|シェイプまたはコネクタ クラスを右クリックし、**公開追加**項目をクリックします。|
 |モデル要素の種類のクラス ダイアグラムで、初期の高さと幅、色、ツールヒントなどのプロパティを共有するようになります。|図形またはコネクタ クラス間の継承を使用します。 派生図形と派生ドメイン クラス間のマッピングは、親のマッピングの詳細を継承します。<br /><br /> または、同じ図形クラスに別のドメイン クラスをマップします。|
 |モデル要素のクラスは、さまざまな図形のコンテキストで表示されます。|同じドメイン クラスには、複数の図形クラスをマップします。 ソリューションをビルドするときに次のエラー レポートと使用するには、どのような形状を決定する、要求されたコードを指定します。|
 |図形の色やフォントなどの他の機能は、現在の状態を示します。|参照してください[モデルへの反映には、図形とコネクタの更新](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)します。<br /><br /> 公開されているプロパティを更新するルールを作成します。 参照してください[ルールには、モデル内の変更が反映されるまで](../modeling/rules-propagate-changes-within-the-model.md)します。<br /><br /> または、OnAssociatedPropertyChanged() を使用して、リンクの矢印やフォントなどに公開されている機能を更新します。|
 |図形の変更状態を示すためのアイコン。|[DSL 詳細] ウィンドウでマッピング デコレーターの可視性を設定します。 同じ位置にいくつかのイメージ デコレーターを見つけます。 参照してください[モデルへの反映には、図形とコネクタの更新](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)します。<br /><br /> または、オーバーライド`ImageField.GetDisplayImage()`します。 例を参照してください。<xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>します。|
-|任意の図形の背景イメージを設定します。|固定の ImageField を追加する InitializeInstanceResources() をオーバーライドします。 参照してください[ダイアグラムの外観のカスタマイズ](../modeling/customizing-presentation-on-the-diagram.md)します。|
-|任意の深さに入れ子になったシェイプ|再帰的なツリーの埋め込みを設定します。 図形を含む BoundsRules を定義します。 参照してください[ダイアグラムの外観のカスタマイズ](../modeling/customizing-presentation-on-the-diagram.md)します。|
+|任意の図形の背景イメージを設定します。|固定の ImageField を追加する InitializeInstanceResources() をオーバーライドします。|
+|任意の深さに入れ子になったシェイプ|再帰的なツリーの埋め込みを設定します。 図形を含む BoundsRules を定義します。|
 |要素の境界に固定のポイントにコネクタをアタッチします。|図上の小さなポートによって表される、埋め込みターミナル要素を定義します。 BoundsRules を使用して、場所に、ポートを修正します。 回路図のサンプルを参照してください。 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)します。|
 |テキスト フィールドには、その他の値から派生した値が表示されます。|テキスト デコレータを計算またはカスタム ストレージ ドメイン プロパティにマップします。 詳細については、[計算とストレージのカスタム プロパティ](../modeling/calculated-and-custom-storage-properties.md)を参照してください。|
 |モデル要素間、または図形間の変更を反映します。|参照してください[ドメイン固有言語における検証](../modeling/validation-in-a-domain-specific-language.md)です。|

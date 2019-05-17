@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4196916958de2df4f9c3a12f030b22d712e87502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a87b5d98d9f3b7453cf0337d529b9ef99815d92
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974238"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614510"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Visual Studio のインストールに使用するコマンド ライン パラメーターの例
 
@@ -67,7 +67,21 @@ ms.locfileid: "62974238"
 * Visual Studio インストーラーが完了するまで待ってから次のコマンドを実行するため、バッチ ファイルまたはスクリプトで使用します。 バッチ ファイルの場合は、`%ERRORLEVEL%` 環境変数にコマンドの戻り値が格納されます (「[コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)」ページを参照)。 一部のコマンド ユーティリティでは、完了を待ってインストーラーの戻り値を取得するには、追加のパラメーターが必要です。 PowerShell スクリプト コマンド "Start-Process" で使用される追加パラメーターの例を次に示します。
 
    ```cmd
-   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
+   start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
+   echo %errorlevel%
+   ```
+   ```PS
+   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
+   ```
+   または
+   ```PS
+    $startInfo = New-Object System.Diagnostics.ProcessStartInfo
+    $startInfo.FileName = "vs_enterprise.exe"
+    $startInfo.Arguments = "--all --quiet --wait" 
+    $process = New-Object System.Diagnostics.Process
+    $process.StartInfo = $startInfo
+    $process.Start() 
+    $process.WaitForExit()
    ```
 
 * 1 つ目の "--wait" は Visual Studio インストーラーによって使用され、2 つ目の "--wait" は完了を待つために "Start-Process" で使用されます。 "-PassThru" パラメーターは、戻り値としてインストーラーの終了コードを使用するために、"Start-Process" によって使用されます。

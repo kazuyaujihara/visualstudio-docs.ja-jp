@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b80e0e7daed1c426ea30c3da9a4e2324d33f48bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650301"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683013"
 ---
 # <a name="msbuild-reference"></a>MSBuild リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "59650301"
  正しく解釈するために "エスケープ" する必要のある文字を一覧表示します。 エスケープ シーケンスは、それに続く部分を別の方法で解釈することを示す一連の文字です。  
   
 ## <a name="related-sections"></a>関連項目  
- [MSBuild の概要](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] を紹介し、これのプロジェクトのビルドでの使用方法を説明するトピックへのリンクを示します。  
+ [MSBuild の概要](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] を紹介し、これのプロジェクトのビルドでの使用方法を説明するトピックへのリンクを示します。  
   
  <xref:Microsoft.Build.Conversion>  
  Conversion 名前空間のリファレンスです  

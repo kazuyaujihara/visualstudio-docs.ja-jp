@@ -12,12 +12,12 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d4e47712df1f76556ced8c69abb8bf5af085d01e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f3b07068939e34b5c9e9487761177c0e12f5654
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962886"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700113"
 ---
 # <a name="elements-of-a-project-model"></a>プロジェクト モデルの要素
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58962886"
   
 - 各プロジェクト テンプレート ファイルまたはユーザーが経由で、新しいプロジェクトを作成するときに、新しいプロジェクト ファイルを初期化するためにウィザードが適用される場合があります、 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] UI。 たとえば、[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]テンプレートは、最終的になるものの .vcproj ファイルを初期化します。  
   
-  次の図は、プライマリ インターフェイス、サービス、および一般的なプロジェクトの実装を構成するオブジェクトを示します。 アプリケーションの支援、HierUtil7 を使用すると、基になるオブジェクトとその他のプログラミングの定型コードを作成します。 HierUtil7 アプリケーション ヘルパーの詳細については、次を参照してください。[ビルド内にありません。HierUtil7 プロジェクト クラスを使用して、プロジェクトの種類 (C++) を実装する](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)します。  
+  次の図は、プライマリ インターフェイス、サービス、および一般的なプロジェクトの実装を構成するオブジェクトを示します。 アプリケーションの支援、HierUtil7 を使用すると、基になるオブジェクトとその他のプログラミングの定型コードを作成します。 HierUtil7 アプリケーション ヘルパーの詳細については、次を参照してください。[ビルド内にありません。HierUtil7 プロジェクト クラスを使用して、プロジェクトの種類 (C++) を実装する](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)します。  
   
   ![Visual Studio プロジェクト モデル グラフィック](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
   Project モデル  
@@ -44,8 +44,8 @@ ms.locfileid: "58962886"
   プロジェクトのコマンドをサポートし、したがってを実装する必要があります、<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>コマンド コンテキスト Guid によるコマンドのルーティングに参加するインターフェイス。  
   
 ## <a name="see-also"></a>関連項目  
- [チェックリスト:新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [: ビルドに存在しませんHierUtil7 プロジェクト クラスを使用して、プロジェクトの種類 (C++) を実装するには](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [チェックリスト: 新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [: ビルドに存在しませんHierUtil7 プロジェクト クラスを使用して、プロジェクトの種類 (C++) を実装するには](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [プロジェクト モデルのコア コンポーネント](../../extensibility/internals/project-model-core-components.md)   
  [プロジェクト ファクトリを使用してプロジェクト インスタンスを作成します。](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
  [方法: サービスを取得します。](../../extensibility/how-to-get-a-service.md)   

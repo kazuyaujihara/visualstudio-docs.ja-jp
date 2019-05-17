@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7f6aba4076f7532d5eab5d47515b734c4c312b99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425409"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692527"
 ---
 # <a name="relationships-in-datasets"></a>データセットのリレーションシップ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "63425409"
  作成するときに、<xref:System.Data.DataRelation>オブジェクトの制約を適用するだけの関係を使用するように指定するオプションがあります: つまり、これはも使用されません関連レコードにアクセスします。 このオプションを使用すると、若干効率的ですが、関連レコードの機能よりも少ないメソッドを含むデータセットを生成します。 ただし、関連するレコードにアクセスすることはできません。 たとえば、制約のみのリレーションシップと子レコードを保持している親レコードを削除するできなくなり、親を子レコードにアクセスすることはできません。  
   
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>データセット デザイナーで、データのリレーションシップを手動で作成します。  
- Visual Studio で、データ デザイン ツールを使用して、データ テーブルを作成するときにリレーションシップが自動的に作成、データのソースから情報を収集できます。 データ テーブルを手動で追加する場合、**データセット**のタブ、**ツールボックス**リレーションシップを手動で作成する必要があります。 詳細については<xref:System.Data.DataRelation>オブジェクトはプログラムを参照してください[Datarelation の追加](http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4)します。  
+ Visual Studio で、データ デザイン ツールを使用して、データ テーブルを作成するときにリレーションシップが自動的に作成、データのソースから情報を収集できます。 データ テーブルを手動で追加する場合、**データセット**のタブ、**ツールボックス**リレーションシップを手動で作成する必要があります。 詳細については<xref:System.Data.DataRelation>オブジェクトはプログラムを参照してください[Datarelation の追加](https://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4)します。  
   
  内の行として表示されるデータ テーブル間のリレーションシップ、**データセット デザイナー**リレーションシップの一対多の縦横比を表すキーと無限のグリフ。 既定で relationshipCommentEnd Id の名前 = '1c8c78e19b7fa441' は、デザイン サーフェイスに表示されません。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "63425409"
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>2 つのデータ テーブル間のリレーションシップを作成するには  
   
-1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
+1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
   
 2. ドラッグ、**関係**オブジェクトから、**データセット**ツールボックス リレーションシップの子のデータ テーブル。  
   
@@ -98,9 +98,9 @@ ms.locfileid: "63425409"
   
 6. 内のテーブルを結合する列を選択して、**キー列**と**外部キー列を**を一覧表示します。  
   
-7. リレーションシップ、制約、またはその両方を作成するかどうかを選択します。 詳しくは、次を参照してください。 [DataRelation オブジェクトの概要](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192)します。  
+7. リレーションシップ、制約、またはその両方を作成するかどうかを選択します。 詳しくは、次を参照してください。 [DataRelation オブジェクトの概要](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192)します。  
   
-8. オンまたはオフ、**入れ子になったリレーションシップ**ボックス。 このオプションの設定を選択すると、<xref:System.Data.DataRelation.Nested%2A>プロパティを`true`と、行が親列内で入れ子になったこれらの行の XML データとして書き込まれるまたはとの同期とのリレーションシップの子をその<xref:System.Xml.XmlDataDocument>します。 詳細については、次を参照してください。 [Datarelation の入れ子](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab)します。  
+8. オンまたはオフ、**入れ子になったリレーションシップ**ボックス。 このオプションの設定を選択すると、<xref:System.Data.DataRelation.Nested%2A>プロパティを`true`と、行が親列内で入れ子になったこれらの行の XML データとして書き込まれるまたはとの同期とのリレーションシップの子をその<xref:System.Xml.XmlDataDocument>します。 詳細については、次を参照してください。 [Datarelation の入れ子](https://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab)します。  
   
 9. これらのテーブル内のレコードに変更を加えていない場合に適用する規則を設定します。 詳細については、「 <xref:System.Data.Rule> 」を参照してください。  
   
@@ -108,6 +108,6 @@ ms.locfileid: "63425409"
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>データセット デザイナーでリレーションシップ名を表示するには  
   
-1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
+1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「[方法 :データセット デザイナーでデータセットを開く](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)します。  
   
 2. **データ**メニューの 、**リレーションシップ ラベルを表示する**リレーションシップ名を表示するコマンド。 リレーションシップ名を非表示にするには、そのコマンドをオフにします。

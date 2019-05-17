@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e01165f12bcf3b41e4ef1279d12ce99bf8f6598f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a1eae79e90a7d20419aaf25c1679aae885e3e92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442787"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686428"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>.runsettings ファイルを使用して単体テストを構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Visual Studio の単体テストは、*.runsettings ファイルを使用して�
 > [!NOTE]
 > **.runsettings と .testsettings**  
 >   
-> テストを構成するファイルには、次の 2 種類があります。 *.runsettings は、単体テストに使用されます。 \*.testsettings は、[ラボ環境テスト](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)、Web パフォーマンスおよびロード テストに使用されます。また、一部の種類の診断データ アダプター (Intellitrace など) およびイベント ログ アダプターをカスタマイズする場合にも使用されます。  
+> テストを構成するファイルには、次の 2 種類があります。 *.runsettings は、単体テストに使用されます。 \*.testsettings は、[ラボ環境テスト](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)、Web パフォーマンスおよびロード テストに使用されます。また、一部の種類の診断データ アダプター (Intellitrace など) およびイベント ログ アダプターをカスタマイズする場合にも使用されます。  
 >   
 > 2010 以前のエディションの Visual Studio では、単体テストをカスタマイズするためにも *.testsettings ファイルが使用されていました。 これは現在でも可能ですが、\*.runsettings ファイルで同等の構成を使用する場合より、テストの実行速度が遅くなります。  
   
@@ -141,7 +141,7 @@ Visual Studio の単体テストは、*.runsettings ファイルを使用して�
 #### <a name="other-diagnostic-data-adapters"></a>その他の診断データ アダプター  
  コード カバレッジ アダプターは、現在のところ、実行設定ファイルを使用してカスタマイズできる唯一のアダプターです。  
   
- 他の種類の診断データ アダプターをカスタマイズするには、テスト設定ファイルを使用する必要があります。 詳細については、「[Visual Studio のテストにおけるテスト設定の指定](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)」を参照してください。  
+ 他の種類の診断データ アダプターをカスタマイズするには、テスト設定ファイルを使用する必要があります。 詳細については、「[Visual Studio のテストにおけるテスト設定の指定](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)」を参照してください。  
   
 #### <a name="testrunparameters"></a>TestRunParameters  
  TestRunParameters は、実行時にテストで使用できる変数と値の定義方法を提供します。  
@@ -152,7 +152,7 @@ Visual Studio の単体テストは、*.runsettings ファイルを使用して�
 |構成|既定値|値|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|False|Visual Studio 2012 で、MSTest アダプターは処理速度と拡張性を高めるために最適化されました。 テストが実行される順序などの一部の動作は、Visual Studio の以前のエディションでの動作と完全に同じではない場合もあります。 以前のテスト アダプターを使用するには、この値を `true` に設定します。<br /><br /> たとえば、単体テスト用に指定された app.config ファイルがある場合は、これを使用することがあります。<br /><br /> より新しいアダプターを使用できるように、テストのリファクタリングを検討することをお勧めします。|  
-|IgnoreTestImpact|False|テストの影響機能は、MSTest で実行したとき、または Microsoft Test Manager から実行したときに最近の変更の影響を受けるテストの優先順位を付けます。 この設定は機能を非アクティブ化します。 詳細については、次を参照してください。[方法。テストをチェックするにデータを収集するコードの変更後に実行](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47)します。|  
+|IgnoreTestImpact|False|テストの影響機能は、MSTest で実行したとき、または Microsoft Test Manager から実行したときに最近の変更の影響を受けるテストの優先順位を付けます。 この設定は機能を非アクティブ化します。 詳細については、次を参照してください。[方法。テストをチェックするにデータを収集するコードの変更後に実行](https://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47)します。|  
 |SettingsFile||ここで、MSTest アダプターで使用するテスト設定ファイルを指定できます。 **[テスト]** メニューの **[テストの設定]**、 **[テスト設定ファイルの選択]** を使用してテスト設定ファイルを指定することもできます。<br /><br /> この値を指定する場合は、 **ForcedlegacyMode** も **true**に設定する必要があります。<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
 |KeepExecutorAliveAfterLegacyRun|False|テストの実行が完了した後、MSTest がシャットダウンされます。 テストの一部として起動されたプロセスは、現時点で中止されます。 テスト実行プログラムを中止しない場合は、この構成を true に切り替えます。<br /><br /> たとえば、コード化された UI テストの間にブラウザーの実行を維持するためにこれを使用できます。|  
 |DeploymentEnabled|true|これを false に設定すると、テスト メソッドで指定した配置項目が配置ディレクトリにコピーされません。|  
@@ -164,4 +164,4 @@ Visual Studio の単体テストは、*.runsettings ファイルを使用して�
   
 ## <a name="see-also"></a>関連項目  
  [コード カバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)   
- [Visual Studio のテストにおけるテスト設定の指定](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
+ [Visual Studio のテストにおけるテスト設定の指定](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

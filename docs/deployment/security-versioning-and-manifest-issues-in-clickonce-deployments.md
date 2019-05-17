@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c87fc29b24b3c5ab4bd59d9cca25113f82895ff4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8a7c0363ea774206cdf6f1db792ab5e7cbd2454
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928220"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226412"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 配置でのセキュリティ、バージョン管理、およびマニフェストの問題
 
@@ -97,5 +97,5 @@ ms.locfileid: "62928220"
 ## <a name="see-also"></a>関連項目
 
 [ClickOnce 配置のトラブルシューティングを行う](../deployment/troubleshooting-clickonce-deployments.md)
-[Securw ClickOnce アプリケーション](../deployment/securing-clickonce-applications.md)
+[ClickOnce のセキュリティで保護されたアプリケーション](../deployment/securing-clickonce-applications.md)
 [ClickOnce 配置ストラテジの選択](../deployment/choosing-a-clickonce-deployment-strategy.md)

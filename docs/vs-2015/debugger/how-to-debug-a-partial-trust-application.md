@@ -18,19 +18,19 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437316"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704485"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>方法: 部分信頼アプリケーションをデバッグします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows アプリケーションとコンソール アプリケーションに適用されます。  
   
- [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)を活用する部分信頼アプリケーションを展開しやすい[コード アクセス セキュリティ](http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127)コンピューター上のリソースへのアクセスを制限します。  
+ [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)を活用する部分信頼アプリケーションを展開しやすい[コード アクセス セキュリティ](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127)コンピューター上のリソースへのアクセスを制限します。  
   
  部分信頼アプリケーションのデバッグ作業は難しい場合があります。これは、部分的に信頼されたアプリケーションはインストール元によってセキュリティ アクセス許可が異なり、その結果として異なる動作をするためです。 インターネットからインストールした場合、部分信頼アプリケーションのアクセス許可は非常に制限されます。 また、ローカル イントラネットからインストールした場合はより多くのアクセス許可を持ち、ローカル コンピューターからインストールした場合はフル アクセス許可を持ちます  (カスタム アクセス許可を持つカスタム ゾーンを使用することもできます)。 場合によっては、これらのすべての条件または一部を満たして部分信頼アプリケーションをデバッグする必要があります。 Visual Studio では、これを簡単に行うことができます。  
   

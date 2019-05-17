@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: afc89dc2b70191524830926d108a5de81fbbb647
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9c1fabdb202d51b85eb2983360bdfd02757f7649
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963387"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699357"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ typedef enum CV_CFL_LANG { 
  アプリケーションは、CVTPGD ツールで生成された最適化 POGO モジュールです。  
   
  CV_CFL_CSHARP  
- アプリケーションの言語は C# です。  
+ アプリケーションの言語は c# です。  
   
  CV_CFL_VB  
  アプリケーションの言語とは、Visual Basic です。  
@@ -96,7 +96,7 @@ typedef enum CV_CFL_LANG { 
  アプリケーションの言語では、Jscript です。  
   
  CV_CFL_MSIL  
- アプリケーションの言語は、不明な Microsoft 中間言語 (MSIL)、結果を使用する可能性があります、 [/LTCG (リンク時コード生成)](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2)スイッチします。  
+ アプリケーションの言語は、不明な Microsoft 中間言語 (MSIL)、結果を使用する可能性があります、 [/LTCG (リンク時コード生成)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2)スイッチします。  
   
  CV_CFL_HLSL  
  アプリケーションの言語は、High Level Shader Language です。  

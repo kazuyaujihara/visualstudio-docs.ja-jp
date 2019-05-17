@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 79ce531d36b21ab26cf4c6e6dc76e8c4d98d8763
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58976224"
@@ -50,7 +50,7 @@ ms.locfileid: "58976224"
 3.  既存のクラス ファイルを削除します。  
   
 ## <a name="implementing-the-quickinfo-source"></a>QuickInfo ソースの実装  
- QuickInfo ソースは、識別子とその説明のセットを収集し、識別子のいずれかが発生したときに、ツールヒントのテキスト バッファーにコンテンツを追加します。 この例でソース コンス トラクターで、識別子とその説明はだけ追加します。  
+ QuickInfo ソースは、識別子とその説明のセットを収集し、識別子のいずれかが発生したときに、ツールヒントのテキスト バッファーにコンテンツを追加します。 この例でソース コンストラクターで、識別子とその説明はだけ追加します。  
   
 #### <a name="to-implement-the-quickinfo-source"></a>QuickInfo ソースを実装するには  
   
@@ -68,12 +68,12 @@ ms.locfileid: "58976224"
      [!code-csharp[VSSDKQuickInfoTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#2)]
      [!code-vb[VSSDKQuickInfoTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#2)]  
   
-5.  QuickInfo ソース プロバイダー、テキスト バッファーと、一連のメソッド名とメソッドのシグネチャのフィールドを追加します。 この例でメソッドの名前とシグネチャを初期化します。、`TestQuickInfoSource`コンス トラクター。  
+5.  QuickInfo ソース プロバイダー、テキスト バッファーと、一連のメソッド名とメソッドのシグネチャのフィールドを追加します。 この例でメソッドの名前とシグネチャを初期化します。、`TestQuickInfoSource`コンストラクター。  
   
      [!code-csharp[VSSDKQuickInfoTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#3)]
      [!code-vb[VSSDKQuickInfoTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#3)]  
   
-6.  クイック ヒントのソース プロバイダーと、テキスト バッファーを設定し、メソッド名、およびメソッド シグネチャと説明のセットを設定するコンス トラクターを追加します。  
+6.  クイック ヒントのソース プロバイダーと、テキスト バッファーを設定し、メソッド名、およびメソッド シグネチャと説明のセットを設定するコンストラクターを追加します。  
   
      [!code-csharp[VSSDKQuickInfoTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#4)]
      [!code-vb[VSSDKQuickInfoTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#4)]  
@@ -123,7 +123,7 @@ ms.locfileid: "58976224"
      [!code-csharp[VSSDKQuickInfoTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#11)]
      [!code-vb[VSSDKQuickInfoTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#11)]  
   
-3.  フィールドを設定し、マウス ホバー イベント ハンドラーを追加するコンス トラクターを追加します。  
+3.  フィールドを設定し、マウス ホバー イベント ハンドラーを追加するコンストラクターを追加します。  
   
      [!code-csharp[VSSDKQuickInfoTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#12)]
      [!code-vb[VSSDKQuickInfoTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#12)]  

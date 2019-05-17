@@ -14,13 +14,13 @@ ms.workload:
 - vssdk
 ms.openlocfilehash: bb880516d13085af594bb639a15d76fca8262279
 ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/22/2019
 ms.locfileid: "56680361"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
-さまざまな種類のコンス トラクターを選択します。
+さまざまな種類のコンストラクターを選択します。
 
 ## <a name="syntax"></a>構文
 
@@ -41,11 +41,11 @@ public enum ConstructorMatchOptions {
 ```
 
 ## <a name="members"></a>メンバー
-crAll は、すべてのコンス トラクターを選択します。
+crAll は、すべてのコンストラクターを選択します。
 
-crNonStatic は、非静的コンス トラクターを選択します。
+crNonStatic は、非静的コンストラクターを選択します。
 
-crStatic は、静的コンス トラクターを選択します。
+crStatic は、静的コンストラクターを選択します。
 
 ## <a name="remarks"></a>Remarks
 引数として渡される、 [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)メソッド。

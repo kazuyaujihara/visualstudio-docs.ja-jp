@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ecf43708b854ebee444d2117bc32df41907118a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d341f0550cfa3c978e94152fb792c5b73c68cc74
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442719"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685939"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Visual Studio で Windows ストア アプリの中断イベント、再開イベント、およびバックグラウンド イベントをトリガーする方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63442719"
 
  このトピックでは、 **バックグラウンド タスク**をデバッグする方法についても説明します。 バックグラウンド タスクは、アプリが実行されていない場合でもバックグラウンド プロセスで特定の操作を行うことを可能にします。 デバッガーを使用してアプリをデバッグ モードに変更した後、UI の起動なしでバックグラウンド タスクを開始してデバッグできます。
 
- プロセス継続時間管理とバックグラウンド タスクの詳細については、「 [Launching, resuming, and multitasking](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)」を参照してください。
+ プロセス継続時間管理とバックグラウンド タスクの詳細については、「 [Launching, resuming, and multitasking](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)」を参照してください。
 
 ## <a name="BKMK_In_this_topic"></a> このトピックの内容
  [プロセス継続時間管理イベントを発生させる](#BKMK_Trigger_Process_Lifecycle_Management_events)
@@ -63,7 +63,7 @@ ms.locfileid: "63442719"
      **[Suspend and terminate]** (中断して終了) は、アプリを閉じ、デバッグ セッションを終了します。
 
 ## <a name="BKMK_Trigger_background_tasks"></a> バックグラウンド タスクをトリガーする
- すべてのアプリは、アプリが実行されていない場合でも特定のシステム イベントに応答するためのバックグラウンド タスクを登録できます。 バックグラウンド タスクは、UI を直接更新するコードは実行できません。代わりに、タイルの更新、バッジの更新、およびトースト通知を使用して、ユーザーに情報を表示します。 詳細については、「 [Supporting your app with background tasks](http://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)」を参照してください。
+ すべてのアプリは、アプリが実行されていない場合でも特定のシステム イベントに応答するためのバックグラウンド タスクを登録できます。 バックグラウンド タスクは、UI を直接更新するコードは実行できません。代わりに、タイルの更新、バッジの更新、およびトースト通知を使用して、ユーザーに情報を表示します。 詳細については、「 [Supporting your app with background tasks](https://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)」を参照してください。
 
  アプリのバックグラウンド タスクを開始するイベントをデバッガーからトリガーできます。
 
@@ -125,4 +125,4 @@ ms.locfileid: "63442719"
 4. **診断** ログを選択します。
 
 ## <a name="see-also"></a>関連項目
- [Visual Studio でストア アプリのテスト](../test/testing-store-apps-with-visual-studio.md) [Visual Studio でアプリをデバッグ](../debugger/debug-store-apps-in-visual-studio.md)[アプリケーションのライフ サイクル](http://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching, resuming, とマルチタスク](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Visual Studio でストア アプリのテスト](../test/testing-store-apps-with-visual-studio.md) [Visual Studio でアプリをデバッグ](../debugger/debug-store-apps-in-visual-studio.md)[アプリケーションのライフ サイクル](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching, resuming, とマルチタスク](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)

@@ -3,13 +3,15 @@
 - name: Visual Studio Shell
   href: visual-studio-shell.md
 - name: コマンド、メニュー、およびツール バー
-  href: commands-menus-and-toolbars.md
   items:
+    - name: コマンド、メニュー、およびツール バー
+      href: commands-menus-and-toolbars.md
     - name: VSPackage でユーザー インターフェイス要素を追加する方法
       href: how-vspackages-add-user-interface-elements.md
     - name: Visual Studio Command Table (.Vsct) ファイル
-      href: visual-studio-command-table-dot-vsct-files.md
       items:
+        - name: Visual Studio Command Table (.Vsct) ファイル
+          href: visual-studio-command-table-dot-vsct-files.md
         - name: 作成者 .Vsct ファイル
           href: authoring-dot-vsct-files.md
         - name: XML コマンド テーブル (.Vsct) ファイルの設計
@@ -21,8 +23,9 @@
     - name: 既定のコマンド、グループ、およびツール バーの配置
       href: default-command-group-and-toolbar-placement.md
     - name: IDE 定義コマンド、メニュー、およびグループ
-      href: ide-defined-commands-menus-and-groups.md
       items:
+        - name: IDE 定義コマンド、メニュー、およびグループ
+          href: ide-defined-commands-menus-and-groups.md
         - name: Visual Studio メニューの GUID および ID
           href: guids-and-ids-of-visual-studio-menus.md
         - name: Visual Studio ツール バーの GUID および ID
@@ -30,8 +33,9 @@
         - name: Visual Studio コマンドの GUID および ID
           href: guids-and-ids-of-visual-studio-commands.md
     - name: コマンド デザイン
-      href: command-design.md
       items:
+        - name: コマンド デザイン
+          href: command-design.md
         - name: コマンドの実装
           href: command-implementation.md
         - name: コマンドの可用性
@@ -45,8 +49,9 @@
     - name: コマンドを使用可能にする
       href: making-commands-available.md
     - name: 相互運用機能アセンブリを使用するコマンドとメニュー
-      href: commands-and-menus-that-use-interop-assemblies.md
       items:
+        - name: 相互運用機能アセンブリを使用するコマンドとメニュー
+          href: commands-and-menus-that-use-interop-assemblies.md
         - name: 相互運用機能アセンブリを使用したコマンドのステータスの特定
           href: determining-command-status-by-using-interop-assemblies.md
         - name: 相互運用機能アセンブリでのコマンドのコントラクト
@@ -58,8 +63,9 @@
     - name: Vspackage のコマンド ルーティング
       href: command-routing-in-vspackages.md
 - name: VSPackages
-  href: vspackages.md
   items:
+    - name: VSPackages
+      href: vspackages.md
     - name: VSPackage ファイルの場所を VS Shell に指定する
       href: specifying-vspackage-file-location-to-the-vs-shell.md
     - name: VSPackage のリソース
@@ -69,11 +75,13 @@
     - name: VSPackage の登録
       href: registering-vspackages.md
 - name: ドキュメント ウィンドウ
-  href: document-windows.md
   items:
+    - name: ドキュメント ウィンドウ
+      href: document-windows.md
     - name: ドキュメント テーブルの実行
-      href: running-document-table.md
       items:
+        - name: ドキュメント テーブルの実行
+          href: running-document-table.md
         - name: RDT_ReadLock の使用法
           href: rdt-readlock-usage.md
         - name: ドキュメント テーブルの保存と実行
@@ -81,22 +89,25 @@
     - name: ドキュメントの読み込みの遅延
       href: delayed-document-loading.md
 - name: 従来の言語サービスの機能拡張
-  href: legacy-language-service-extensibility.md
   items:
+    - name: 従来の言語サービスの機能拡張
+      href: legacy-language-service-extensibility.md
     - name: 従来の言語サービスの移行
       href: migrating-a-legacy-language-service.md
     - name: 従来の言語サービスの基本情報
       href: legacy-language-service-essentials.md
     - name: 従来の言語サービスの開発
-      href: developing-a-legacy-language-service.md
       items:
+        - name: 従来の言語サービスの開発
+          href: developing-a-legacy-language-service.md
         - name: 従来の言語サービスのモデル
           href: model-of-a-legacy-language-service.md
         - name: 従来の言語サービスのインターフェイス
           href: legacy-language-service-interfaces.md
         - name: 従来の言語サービスのコマンドの受信
-          href: intercepting-legacy-language-service-commands.md
           items:
+            - name: 従来の言語サービスのコマンドの受信
+              href: intercepting-legacy-language-service-commands.md
             - name: 言語サービス フィルターの重要なコマンド
               href: important-commands-for-language-service-filters.md
         - name: 従来の言語サービスの登録 2
@@ -104,11 +115,13 @@
         - name: 'チェックリスト: 従来の言語サービスの作成'
           href: checklist-creating-a-legacy-language-service.md
         - name: 従来の言語サービスの特徴 2
-          href: legacy-language-service-features2.md
           items:
+            - name: 従来の言語サービスの特徴 2
+              href: legacy-language-service-features2.md
             - name: 従来の言語サービスでの構文の色分け表示
-              href: syntax-coloring-in-a-legacy-language-service.md
               items:
+                - name: 従来の言語サービスでの構文の色分け表示
+                  href: syntax-coloring-in-a-legacy-language-service.md
                 - name: 構文の色分け表示の実装
                   href: implementing-syntax-coloring.md
                 - name: ビルトインの配色可能な項目の使用
@@ -122,8 +135,9 @@
             - name: 従来の言語サービスでのステートメント入力補完
               href: statement-completion-in-a-legacy-language-service.md
             - name: 従来の言語サービスでのアウトラインと隠し文字
-              href: outlining-and-hidden-text-in-a-legacy-language-service.md
               items:
+                - name: 従来の言語サービスでのアウトラインと隠し文字
+                  href: outlining-and-hidden-text-in-a-legacy-language-service.md
                 - name: 従来の言語サービスでのアウトラインのサポート
                   href: how-to-support-outlining-in-a-legacy-language-service.md
                 - name: 従来の言語サービスでの隠し文字サポートの提供
@@ -133,8 +147,9 @@
             - name: デバッグのための言語サービスのサポート
               href: language-service-support-for-debugging.md
     - name: 従来の言語サービスの実装 1
-      href: implementing-a-legacy-language-service1.md
       items:
+        - name: 従来の言語サービスの実装 1
+          href: implementing-a-legacy-language-service1.md
         - name: 従来の言語サービスの概要
           href: legacy-language-service-overview.md
         - name: 従来の言語サービスの実装 2
@@ -148,8 +163,9 @@
         - name: 'チュートリアル: インストールされているコード スニペットの一覧の取得 (従来の実装)'
           href: walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md
         - name: 従来の言語サービスの特徴 1
-          href: legacy-language-service-features1.md
           items:
+            - name: 従来の言語サービスの特徴 1
+              href: legacy-language-service-features1.md
             - name: 従来の言語サービスでのかっこの一致
               href: brace-matching-in-a-legacy-language-service.md
             - name: 従来の言語サービスのコメント コード
@@ -179,8 +195,9 @@
             - name: 従来の言語サービスでのブレークポイントの検証
               href: validating-breakpoints-in-a-legacy-language-service.md
     - name: シンボル参照ツールのサポート
-      href: supporting-symbol-browsing-tools.md
       items:
+        - name: シンボル参照ツールのサポート
+          href: supporting-symbol-browsing-tools.md
         - name: オブジェクト マネージャーを使用したライブラリの登録
           href: how-to-register-a-library-with-the-object-manager.md
         - name: ライブラリによって提供されるシンボルのリストをオブジェクト マネージャーに公開する
@@ -188,20 +205,23 @@
         - name: ライブラリでのシンボルの識別
           href: how-to-identify-symbols-in-a-library.md
 - name: プロジェクト
-  href: projects.md
   items:
+    - name: プロジェクト
+      href: projects.md
     - name: '新しいプロジェクトの生成: 内部的な処理、パート 1'
       href: new-project-generation-under-the-hood-part-one.md
     - name: '新しいプロジェクトの生成: 内部的な処理、パート 2'
       href: new-project-generation-under-the-hood-part-two.md
     - name: プロジェクトの種類
-      href: project-types.md
       items:
+        - name: プロジェクトの種類
+          href: project-types.md
         - name: プロジェクト タイプの基本情報
           href: project-type-essentials.md
         - name: プロジェクト タイプの作成
-          href: creating-project-types.md
           items:
+            - name: プロジェクト タイプの作成
+              href: creating-project-types.md
             - name: プロジェクト タイプのデザインの方針
               href: project-type-design-decisions.md
             - name: 'チェックリスト: 新しいプロジェクト タイプの作成'
@@ -217,8 +237,9 @@
             - name: MSBuild の使用
               href: using-msbuild.md
         - name: プロジェクト テンプレートとプロジェクト項目テンプレートの追加
-          href: adding-project-and-project-item-templates.md
           items:
+            - name: プロジェクト テンプレートとプロジェクト項目テンプレートの追加
+              href: adding-project-and-project-item-templates.md
             - name: プロジェクトのコンテキスト
               href: project-context.md
             - name: プロジェクトの優先順位
@@ -238,8 +259,9 @@
             - name: プロジェクトの拡張に通常使用されるオブジェクトの CATID
               href: catids-for-objects-that-are-typically-used-to-extend-projects.md
         - name: プロジェクト項目のオープンと保存
-          href: opening-and-saving-project-items.md
           items:
+            - name: プロジェクト項目のオープンと保存
+              href: opening-and-saving-project-items.md
             - name: ファイルを開くコマンドを使用したファイルの表示
               href: displaying-files-by-using-the-open-file-command.md
             - name: プログラムから開くコマンドを使用したファイルの表示
@@ -251,8 +273,9 @@
             - name: プロジェクトでのファイルを開くエディターの決定
               href: determining-which-editor-opens-a-file-in-a-project.md
         - name: 構成オプションの管理
-          href: managing-configuration-options.md
           items:
+            - name: 構成オプションの管理
+              href: managing-configuration-options.md
             - name: 構成オプションの概要
               href: configuration-options-overview.md
             - name: '[プロパティ ページ]'
@@ -268,8 +291,9 @@
             - name: 出力のためのプロジェクト構成
               href: project-configuration-for-output.md
         - name: ソース管理のサポート
-          href: supporting-source-control.md
           items:
+            - name: ソース管理のサポート
+              href: supporting-source-control.md
             - name: ソース管理パッケージのモデル
               href: model-for-source-control-packages.md
             - name: ソース管理のデザインの方針
@@ -281,8 +305,9 @@
             - name: ソース管理ランタイムの詳細
               href: source-control-runtime-details.md
         - name: 入れ子になったプロジェクト
-          href: nesting-projects.md
           items:
+            - name: 入れ子になったプロジェクト
+              href: nesting-projects.md
             - name: 入れ子になったプロジェクトの実装
               href: how-to-implement-nested-projects.md
             - name: 入れ子になったプロジェクトのアンロードと再ロードに関する考慮事項
@@ -296,8 +321,9 @@
         - name: プロジェクトのアップグレード
           href: upgrading-projects.md
         - name: プロジェクト タイプのアーキテクチャ
-          href: project-types-architecture.md
           items:
+            - name: プロジェクト タイプのアーキテクチャ
+              href: project-types-architecture.md
             - name: プロジェクト モデルの要素
               href: elements-of-a-project-model.md
             - name: プロジェクト モデルのコア コンポーネント
@@ -305,8 +331,9 @@
             - name: プロジェクト タイプを作成する状況
               href: when-to-create-project-types.md
             - name: 階層と選択
-              href: hierarchies-and-selection.md
               items:
+                - name: 階層と選択
+                  href: hierarchies-and-selection.md
                 - name: Visual Studio での階層
                   href: hierarchies-in-visual-studio.md
                 - name: IDE での選択と通貨
@@ -316,8 +343,9 @@
                 - name: ユーザーへのフィードバック
                   href: feedback-to-the-user.md
     - name: プロジェクト サブタイプ
-      href: project-subtypes.md
       items:
+        - name: プロジェクト サブタイプ
+          href: project-subtypes.md
         - name: プロジェクト サブタイプのデザイン
           href: project-subtypes-design.md
         - name: プロジェクト サブタイプの初期化シーケンス
@@ -333,13 +361,15 @@
         - name: '[新しい項目の追加] ダイアログ ボックスへの投稿'
           href: contributing-to-the-add-new-item-dialog-box.md
     - name: Web プロジェクト
-      href: web-projects.md
       items:
+        - name: Web プロジェクト
+          href: web-projects.md
         - name: Web プロジェクトの基本情報
           href: web-project-essentials.md
         - name: Web サイト サポート
-          href: web-site-support.md
           items:
+            - name: Web サイト サポート
+              href: web-site-support.md
             - name: Web サイト サポートのテンプレート
               href: web-site-support-templates.md
             - name: Web サイト サポートの属性
@@ -347,8 +377,9 @@
     - name: 特別な展開の処理
       href: handling-specialized-deployment.md
     - name: オートメーション モデルへの投稿
-      href: contributing-to-the-automation-model.md
       items:
+        - name: オートメーション モデルへの投稿
+          href: contributing-to-the-automation-model.md
         - name: オートメーション モデルの概要
           href: automation-model-overview.md
         - name: VSPackage でのオートメーションの提供
@@ -370,15 +401,17 @@
         - name: 構成および SelectedItem オブジェクトのためのオートメーション
           href: automation-for-configuration-and-selecteditem-objects.md
 - name: 解決策
-  href: solutions-overview.md
   items:
+    - name: 解決策
+      href: solutions-overview.md
     - name: ソリューション (.Sln) ファイル
       href: solution-dot-sln-file.md
     - name: ソリューション ユーザー オプション (.Suo) ファイル
       href: solution-user-options-dot-suo-file.md
 - name: プロパティの拡張
-  href: extending-properties.md
   items:
+    - name: プロパティの拡張
+      href: extending-properties.md
     - name: プロパティ ウィンドウの概要
       href: properties-window-overview.md
     - name: テンプレート ポリシーとプロパティ ウィンドウ
@@ -394,42 +427,49 @@
     - name: プロジェクトおよび構成プロパティのサポート
       href: support-for-project-and-configuration-properties.md
 - name: オプションとオプション ページ
-  href: options-and-options-pages.md
   items:
+    - name: オプションとオプション ページ
+      href: options-and-options-pages.md
     - name: オプション ページの作成
       href: creating-options-pages.md
 - name: ユーザー設定のサポート
   href: support-for-user-settings.md
 - name: サービスの基本情報
-  href: service-essentials.md
   items:
+    - name: サービスの基本情報
+      href: service-essentials.md
     - name: 使用可能なサービスの一覧
       href: list-of-available-services.md
 - name: Visual Studio デバッガーの拡張性
   href: ../debugger/toc.yml
 - name: ソース管理
-  href: source-control.md
   items:
+    - name: ソース管理
+      href: source-control.md
     - name: ソース管理の統合の基本情報
       href: source-control-integration-essentials.md
     - name: ソース管理の統合の概要
-      href: source-control-integration-overview.md
       items:
+        - name: ソース管理の統合の概要
+          href: source-control-integration-overview.md
         - name: ソース管理の新機能
           href: what-s-new-in-source-control.md
     - name: ソース管理プラグインの作成
-      href: creating-a-source-control-plug-in.md
       items:
+        - name: ソース管理プラグインの作成
+          href: creating-a-source-control-plug-in.md
         - name: ソース管理プラグイン入門
-          href: getting-started-with-source-control-plug-ins.md
           items:
+            - name: ソース管理プラグイン入門
+              href: getting-started-with-source-control-plug-ins.md
             - name: ソース管理プラグインのインストール
               href: how-to-install-a-source-control-plug-in.md
             - name: ソース管理プラグイン API バージョン 1.3 の新機能
               href: what-s-new-in-the-source-control-plug-in-api-version-1-3.md
             - name: ソース管理プラグイン API バージョン 1.2 の新機能
-              href: what-s-new-in-the-source-control-plug-in-api-version-1-2.md
               items:
+                - name: ソース管理プラグイン API バージョン 1.2 の新機能
+                  href: what-s-new-in-the-source-control-plug-in-api-version-1-2.md
                 - name: ~SAK ファイルの削除
                   href: elimination-of-tilde-sak-files.md
                 - name: 複数のプロジェクト接続全体への設定の適用
@@ -443,8 +483,9 @@
         - name: アーキテクチャのソース管理プラグイン
           href: source-control-plug-in-architecture.md
         - name: ソース管理プラグイン向けのテスト ガイド
-          href: test-guide-for-source-control-plug-ins.md
           items:
+            - name: ソース管理プラグイン向けのテスト ガイド
+              href: test-guide-for-source-control-plug-ins.md
             - name: 'テスト領域 1: ソース管理への追加とオープン'
               href: test-area-1-add-to-open-from-source-control.md
             - name: 'テスト領域 2: ソース管理から取得'
@@ -462,18 +503,21 @@
             - name: 'テスト領域 8: プラグインの切り替え'
               href: test-area-8-plug-in-switching.md
     - name: ソース管理 VSPackage の作成
-      href: creating-a-source-control-vspackage.md
       items:
+        - name: ソース管理 VSPackage の作成
+          href: creating-a-source-control-vspackage.md
         - name: ソース管理 VSPackage 入門
-          href: getting-started-with-source-control-vspackages.md
           items:
+            - name: ソース管理 VSPackage 入門
+              href: getting-started-with-source-control-vspackages.md
             - name: ソース管理 VSPackage を実装するかどうかの決定
               href: determining-whether-to-implement-a-source-control-vspackage.md
         - name: ソース管理 VSPackage アーキテクチャ
           href: source-control-vspackage-architecture.md
         - name: ソース管理 VSPackage の特徴
-          href: source-control-vspackage-features.md
           items:
+            - name: ソース管理 VSPackage の特徴
+              href: source-control-vspackage-features.md
             - name: 登録と選択 (ソース管理 VSPackage)
               href: registration-and-selection-source-control-vspackage.md
             - name: クエリの編集とクエリの保存 (ソース管理 VSPackage)
@@ -483,8 +527,9 @@
             - name: カスタム ユーザー インターフェイス (ソース管理 VSPackage)
               href: custom-user-interface-source-control-vspackage.md
         - name: ソース管理 VSPackage のデザイン要素
-          href: source-control-vspackage-design-elements.md
           items:
+            - name: ソース管理 VSPackage のデザイン要素
+              href: source-control-vspackage-design-elements.md
             - name: VSPackage 構造 (ソース管理 VSPackage)
               href: vspackage-structure-source-control-vspackage.md
             - name: 関連サービスとインターフェイス (ソース管理 VSPackage)
@@ -492,8 +537,9 @@
             - name: 提供されるサービス (ソース管理 VSPackage)
               href: services-provided-source-control-vspackage.md
 - name: ウィザード
-  href: wizards.md
   items:
+    - name: ウィザード
+      href: wizards.md
     - name: テンプレート ディレクトリの説明 (.Vsdir) ファイル
       href: template-directory-description-dot-vsdir-files.md
     - name: ウィザード (.Vsz) ファイル
@@ -505,8 +551,9 @@
     - name: カスタム パラメーター
       href: custom-parameters.md
 - name: カスタム ツール
-  href: custom-tools.md
   items:
+    - name: カスタム ツール
+      href: custom-tools.md
     - name: 単一ファイル ジェネレーターの実装
       href: implementing-single-file-generators.md
     - name: 単一ファイル ジェネレーターの登録
@@ -514,11 +561,13 @@
     - name: ビジュアル デザイナーへのタイプの公開
       href: exposing-types-to-visual-designers.md
 - name: VSSDK ユーティリティ
-  href: vssdk-utilities.md
   items:
+    - name: VSSDK ユーティリティ
+      href: vssdk-utilities.md
     - name: RegPkg ユーティリティ
-      href: regpkg-utility.md
       items:
+        - name: RegPkg ユーティリティ
+          href: regpkg-utility.md
         - name: RegPkg パッケージ登録のトラブルシューティング
           href: troubleshooting-regpkg-package-registration.md
     - name: CreatePkgDef ユーティリティ
@@ -526,15 +575,17 @@
     - name: CreateExpInstance ユーティリティ
       href: createexpinstance-utility.md
     - name: カラー テーマのツール
-      href: color-theming-tools.md
       items:
+        - name: カラー テーマのツール
+          href: color-theming-tools.md
         - name: VSIX カラー エディター
           href: vsix-color-editor.md
         - name: VSIX カラー コンパイラ
           href: vsix-color-compiler.md
     - name: イメージ サービスのツール
-      href: image-service-tools.md
       items:
+        - name: イメージ サービスのツール
+          href: image-service-tools.md
         - name: リソースからのマニフェスト
           href: manifest-from-resources.md
         - name: Manifest to Code
@@ -542,8 +593,9 @@
         - name: イメージ ライブラリ ビューア
           href: image-library-viewer.md
 - name: Windows インストーラーによる VSPackage のインストール
-  href: installing-vspackages-with-windows-installer.md
   items:
+    - name: Windows インストーラーによる VSPackage のインストール
+      href: installing-vspackages-with-windows-installer.md
     - name: Windows インストーラーの基本事項
       href: windows-installer-basics.md
     - name: VSPackage のセットアップ シナリオ

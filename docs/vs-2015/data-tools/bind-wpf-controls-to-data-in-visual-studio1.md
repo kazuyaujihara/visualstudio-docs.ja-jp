@@ -22,19 +22,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16a3868f564f39d4908adf74a6b1a44ae83ebc9d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b9bfa51dae4ab9ab08abf3493c747a471b924de1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437055"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675911"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio でデータに WPF コントロールをバインドする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 データを [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] コントロールにバインドすることで、アプリケーションのユーザーに対してデータを表示できます。 これらのデータ バインド コントロールを作成するから項目をドラッグすることができます、**データソース**ウィンドウ、[!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)]で[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 このトピックでは、データ バインド [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] アプリケーションの作成に使用できる最も一般的なタスク、ツール、およびクラスについて説明します。
 
- データ バインド コントロールを作成する方法についての一般的な[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を参照してください[Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。 [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] データ バインディングの詳細については、「[データ バインディングの概要](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」を参照してください。
+ データ バインド コントロールを作成する方法についての一般的な[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]を参照してください[Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。 [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] データ バインディングの詳細については、「[データ バインディングの概要](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)」を参照してください。
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>データへの WPF コントロールのバインドに関連するタスク
  次の表に、**[データ ソース]** ウィンドウから [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)] に項目をドラッグすることで実行できるタスクを示します。
@@ -98,7 +98,7 @@ ms.locfileid: "63437055"
  オブジェクトまたはからプロパティをドラッグすると、**データ ソース**、デザイナーにウィンドウ[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]をデータ バインド コントロールを作成します (または、オブジェクトまたはプロパティに既存のコントロールをバインドします)。 ただし、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] はオブジェクトにデータを読み込むコードを生成しません。 このコードは、ユーザーが手動で記述する必要があります。
 
 > [!NOTE]
-> カスタム クラス パブリックであり、既定では、パラメーターなしのコンス トラクターを持ちます。 入れ子になったクラスをそれぞれの構文で「ドット」を持つことができません。 詳細については、次を参照してください。 [XAML とカスタム クラスの WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a)します。
+> カスタム クラス パブリックであり、既定では、パラメーターなしのコンス トラクターを持ちます。 入れ子になったクラスをそれぞれの構文で「ドット」を持つことができません。 詳細については、次を参照してください。 [XAML とカスタム クラスの WPF](https://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a)します。
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]は次を実行します。
 

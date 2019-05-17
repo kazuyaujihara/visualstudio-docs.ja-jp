@@ -11,12 +11,12 @@ ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 98b3892d10b003d6236ae9ccfbebb83a602a5877
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cde3b86e19788c41df6e8f1c79a6bf829f491170
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963420"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675245"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio Command Table (.Vsct) ファイル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "58963420"
  [XML コマンド テーブル (.Vsct) ファイルの設計](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
  .Vsct ファイルを設計する方法について説明します。  
   
- [方法: 作成します。Vsct ファイル](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
+ [方法: .Vsct ファイルを作成する](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
  .Vsct ファイルを作成する方法を比較します。 新しい .vsct ファイルを手動で作成するためのプロセスについて説明します。  
   
 ## <a name="related-sections"></a>関連項目  
  [VSCT XML スキーマ リファレンス](../../extensibility/vsct-xml-schema-reference.md)  
  コマンド テーブルの XML 構成ファイルの各セクションについてを説明します。  
   
- [コマンド テーブルの構成 (します。Ctc) ファイル](http://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ [コマンド テーブルの構成 (します。Ctc) ファイル](https://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
  非推奨の .ctc ファイル形式の概要を示します。  
   
  [VSPackage でユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  

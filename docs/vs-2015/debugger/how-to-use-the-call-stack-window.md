@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65dafa09035e937e9ee48005c4f29c441d983c37
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84c0bfead1633da13b4284cad04ace674045b057
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430294"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697483"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>方法: 呼び出し履歴 ウィンドウを使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "63430294"
  ショートカット メニューを使用することにより、スレッド間の呼び出しを表示するかどうかを選択できます。  
   
 > [!NOTE]
-> 使用している設定またはエディションによっては、ヘルプの記載と異なるダイアログ ボックスやメニュー コマンドが表示される場合があります。 設定を変更するには、**[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 使用している設定またはエディションによっては、ヘルプの記載と異なるダイアログ ボックスやメニュー コマンドが表示される場合があります。 設定を変更するには、**[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>[呼び出し履歴] ウィンドウを表示するには (中断モードまたは実行モードの場合)  
   
@@ -139,7 +139,7 @@ ms.locfileid: "63430294"
   
 ## <a name="see-also"></a>関連項目  
  [混合コードと不足情報、呼び出し履歴 ウィンドウ](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
- [方法: デバッガーの Windows の数値書式を変更します。](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
+ [方法: デバッガーの Windows の数値書式を変更します。](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
  [デバッガーでのデータ表示](../debugger/viewing-data-in-the-debugger.md)   
  [シンボル (.pdb) とソース ファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [ブレークポイントの使用](../debugger/using-breakpoints.md)

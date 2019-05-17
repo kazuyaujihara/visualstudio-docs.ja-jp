@@ -13,12 +13,12 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 538de61fed22f4bcfcb38022b41a81d1239f5f4e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 22cbe4fc34ae41f89709d5b20f2c1188edcd0de3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973053"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685297"
 ---
 # <a name="commandtable-element"></a>CommandTable 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,12 +58,12 @@ CommandTable は、.vsct ファイルのルート要素です。 これは、実
 |[Extern 要素](../extensibility/extern-element.md)|省略可能です。 コンパイラのプリプロセッサ ディレクティブが含まれています。|  
 |[Include 要素](../extensibility/include-element.md)|省略可能です。 コンパイルに含める任意のファイルへのパスが含まれています。|  
 |[Define 要素](../extensibility/define-element.md)|省略可能です。 その名前と値のシンボルを定義します。|  
-|[Commands 要素](../extensibility/commands-element.md)|任意。 すべての他の要素を含む VSPackage のすべてのコマンドを定義する親要素です。|  
-|[CommandPlacements 要素](../extensibility/commandplacements-element.md)|任意。 コマンド バーで、コマンドが配置されるかを定義します。|  
+|[Commands 要素](../extensibility/commands-element.md)|省略可能です。 すべての他の要素を含む VSPackage のすべてのコマンドを定義する親要素です。|  
+|[CommandPlacements 要素](../extensibility/commandplacements-element.md)|省略可能です。 コマンド バーで、コマンドが配置されるかを定義します。|  
 |[VisibilityConstraints 要素](../extensibility/visibilityconstraints-element.md)|省略可能です。 コマンドとツールバーの静的な可視性を判断します。|  
 |[KeyBindings 要素](../extensibility/keybindings-element.md)|省略可能です。 コマンドのショートカット キーの組み合わせを指定します。|  
 |[UsedCommands 要素](../extensibility/usedcommands-element.md)|省略可能です。 必要に応じてその他の Vspackage で最初にサポートされる機能の独自のバージョンを実装するために VSPackage を使用できます。|  
-|[Symbols 要素](http://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|省略可能です。 コンパイラのシンボル データ--Guid、Id、およびなど--が含まれています。|  
+|[Symbols 要素](https://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|省略可能です。 コンパイラのシンボル データ--Guid、Id、およびなど--が含まれています。|  
   
 ### <a name="parent-elements"></a>親要素  
   

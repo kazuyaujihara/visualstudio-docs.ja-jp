@@ -112,12 +112,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 87b8913a95203d082a76e8b18a92d2f509cace16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ca9ff0678ba2c7abafa0d988efa09437ccd27dca
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446168"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687557"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ デバッグ構成のプロジェクト設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -141,7 +141,7 @@ C または C++ デバッグ構成でのプロジェクトの設定を変更す�
 |**コマンド引数**(ローカル Windows デバッガーおよびリモート Windows デバッガー)|- 上で指定したコマンドの引数を指定します。<br /><br /> このボックスでは、次のリダイレクト演算子を使用できます。<br /><br /> < `file`<br /> 標準入力を file から読み取ります。<br /><br /> > `file`<br /> 標準出力を file に書き込みます。<br /><br /> >> `file`<br /> 標準出力を file に追加します。<br /><br /> 2> `file`<br /> 標準エラー出力を file に書き込みます。<br /><br /> 2>> `file`<br /> 標準エラー出力を file に追加します。<br /><br /> 2> &1<br /> 標準エラー出力 (2) を標準出力 (1) と同じ位置に出力します。<br /><br /> 1> &2<br /> 標準出力 (1) を標準エラー出力 (2) と同じ位置に出力します。<br /><br /> ほとんどの場合、これらの演算子はコンソール アプリケーションでのみ有効です。|  
 |**作業ディレクトリ**|デバッグするプログラムの作業ディレクトリを、EXE ファイルがあるプロジェクト ディレクトリを基準とした相対パスで指定します。 この設定を空白のままにした場合、作業ディレクトリはプロジェクト ディレクトリになります。 リモート デバッグの場合、プロジェクト ディレクトリはリモート サーバーにあります。|  
 |**[アタッチ]** (ローカル Windows デバッガーとリモート Windows デバッガー)|アプリケーションを起動するか、またはアプリケーションにアタッチするかを指定します。 既定の設定は [いいえ] です。|  
-|**[リモート サーバー名]** (リモート Windows デバッガー)|アプリケーションをデバッグするコンピューター (自分のコンピューター以外) の名前を指定します。<br /><br /> このプロパティの値に設定されている RemoteMachine ビルド マクロ詳細については、次を参照してください。[ビルドのコマンドとプロパティのマクロの](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)します。|  
+|**[リモート サーバー名]** (リモート Windows デバッガー)|アプリケーションをデバッグするコンピューター (自分のコンピューター以外) の名前を指定します。<br /><br /> このプロパティの値に設定されている RemoteMachine ビルド マクロ詳細については、次を参照してください。[ビルドのコマンドとプロパティのマクロの](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)します。|  
 |**[接続]** (リモート Windows デバッガー)|リモート デバッグ用の接続の種類を、標準の接続と認証を使用しない接続の間で切り替えます。 **[リモート サーバー名]** ボックスでリモート コンピューター名を指定します。 接続の種類には、次のようなものがあります。<br /><br /> -   **Windows 認証でリモート接続する**<br />-   **認証なし (ネイティブのみ) でリモート接続します。**<br /><br /> **メモ** 認証を使用しないリモート デバッグを行うと、セキュリティ違反に対してリモート コンピューターが脆弱になる可能性があります。 Windows 認証モードの方がより安全です。<br /><br /> 詳細については、次を参照してください。[リモート デバッグのセットアップ](../debugger/remote-debugging.md)します。|  
 |**[HTTP URL]** (Web Service デバッガーと Web ブラウザー デバッガー)|デバッグするプロジェクトが存在する URL を指定します。|  
 |**[デバッガーのタイプ]**|使用するデバッガーの種類を指定します。**ネイティブのみ**、**マネージのみ**、 **GPU のみ**、 **Mixed**、**自動**(既定)、または**スクリプト**.<br /><br /> -   **[ネイティブのみ]** は、アンマネージ C++ コードに使用します。<br />-   **[マネージドのみ]** は、共通言語ランタイムで実行されるコード (マネージド コード) に使用します。<br />-   **[混合]** を選択すると、マネージド コードとアンマネージド コードのデバッガーが起動します。<br />-   **[自動]** を選択すると、コンパイラと EXE の情報に基づいてデバッガーの種類が決まります。<br />-   **[スクリプト]** を選択すると、スクリプトのデバッガーが起動します。<br />-   **[GPU のみ]** は、GPU デバイスまたは DirectX リファレンス ラスターライザーで実行される C++ AMP コードに使用します。 参照してください[GPU コードのデバッグ](../debugger/debugging-gpu-code.md)します。|  
@@ -159,7 +159,7 @@ C または C++ デバッグ構成でのプロジェクトの設定を変更す�
   
 |設定|説明|  
 |-------------|-----------------|  
-|**[デバッグ情報の形式]** ([/Z7、/Zd、Zi、/ZI](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8))|プロジェクトに作成するデバッグ情報の種類を指定します。<br /><br /> 既定のオプション (/ZI) では、プログラム データベース (PDB) がエディット コンティニュ互換形式で作成されます。 詳細については、次を参照してください。 [/Z7、/Zd、/Zi、/ZI (デバッグ情報の形式)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)します。|  
+|**[デバッグ情報の形式]** ([/Z7、/Zd、Zi、/ZI](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8))|プロジェクトに作成するデバッグ情報の種類を指定します。<br /><br /> 既定のオプション (/ZI) では、プログラム データベース (PDB) がエディット コンティニュ互換形式で作成されます。 詳細については、次を参照してください。 [/Z7、/Zd、/Zi、/ZI (デバッグ情報の形式)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)します。|  
   
 ### <a name="cc-folder-optimization-category"></a>[C/C++] フォルダー ([最適化] カテゴリ)  
   
@@ -171,19 +171,19 @@ C または C++ デバッグ構成でのプロジェクトの設定を変更す�
   
 |設定|説明|  
 |-------------|-----------------|  
-|**[デバッグ情報を作成]** ([/DEBUG](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103))|デバッグ情報を含めるようにリンカーに指示します。デバッグ情報の形式は、/Z7、/Zd、Zi、または /ZI で指定されます。|  
-|**[プログラム データベース ファイルの生成]** ([/PDB:name](http://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d))|PDB ファイルの名前を指定します。 [デバッグ情報の形式] で ZI または /Zi を選択する必要があります。|  
-|**[プライベート シンボルの削除]** ([/PDBSTRIPPED:filename](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55))|PDB ファイルのプライベート シンボルを含めない場合は、このボックスに PDB ファイルの名前を指定します。 PDB ファイルを生成するいずれかのコンパイラ オプションまたはリンカー オプションを使ってプログラム イメージをビルドするときにこのオプションを指定すると、2 番目のプログラム データベース (PDB) ファイルが作成されます (コンパイラ オプションまたはリンカー オプションの例: /DEBUG、/Z7、/Zd、 /Zi など)。 2 番目の PDB ファイルでは、顧客に提供しないシンボルが省かれています。 詳細については、「[/PDBSTRIPPED (プライベート シンボルの除去)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)」を参照してください。|  
-|**[マップ ファイルの作成]** ([/MAP](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63))|リンク中にマップ ファイルを生成するようにリンカーに指示します。 既定の設定は [いいえ] です。 詳細については、「[/MAP (マップ ファイルの生成)](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)」を参照してください。|  
-|**マップ ファイル名**([/map:](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)*名前*)|[マップ ファイルの作成] を選択する場合は、このボックスにマップ ファイルを指定できます。 詳細については、「[/MAP (マップ ファイルの生成)](http://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)」を参照してください。|  
-|**[マップファイルのエクスポート]** ([/MAPINFO:EXPORTS](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|エクスポートされた関数をマップ ファイルに含めます。 既定の設定は [いいえ] です。 詳細については、次を参照してください。 [/MAPINFO (マップ ファイルに含める情報)](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b)します。|  
-|**[デバッグできるアセンブリ]** ([/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|リンカーの /ASSEMBLYDEBUG オプションの設定を指定します。 次の値を指定できます。<br /><br /> -   **[デバッグできる属性が作成されませんでした]**。<br />-   **[ランタイム トラッキングおよび最適化の無効 (/ASSEMBLYDEBUG)]**。 これが既定の設定です。<br />-   **[ランタイム トラッキングおよび最適化の有効を無効にする (/ASSEMBLYDEBUG:DISABLE)]**。<br />-   **[\<親またはプロジェクトの既定値から継承>]**。<br />詳細については、「[/ASSEMBLYDEBUG (DebuggableAttribute の追加)](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)」を参照してください。|  
+|**[デバッグ情報を作成]** ([/DEBUG](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103))|デバッグ情報を含めるようにリンカーに指示します。デバッグ情報の形式は、/Z7、/Zd、Zi、または /ZI で指定されます。|  
+|**[プログラム データベース ファイルの生成]** ([/PDB:name](https://msdn.microsoft.com/library/d23db0ce-10cb-427a-bc60-d6b2a852723d))|PDB ファイルの名前を指定します。 [デバッグ情報の形式] で ZI または /Zi を選択する必要があります。|  
+|**[プライベート シンボルの削除]** ([/PDBSTRIPPED:filename](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55))|PDB ファイルのプライベート シンボルを含めない場合は、このボックスに PDB ファイルの名前を指定します。 PDB ファイルを生成するいずれかのコンパイラ オプションまたはリンカー オプションを使ってプログラム イメージをビルドするときにこのオプションを指定すると、2 番目のプログラム データベース (PDB) ファイルが作成されます (コンパイラ オプションまたはリンカー オプションの例: /DEBUG、/Z7、/Zd、 /Zi など)。 2 番目の PDB ファイルでは、顧客に提供しないシンボルが省かれています。 詳細については、「[/PDBSTRIPPED (プライベート シンボルの除去)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)」を参照してください。|  
+|**[マップ ファイルの作成]** ([/MAP](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63))|リンク中にマップ ファイルを生成するようにリンカーに指示します。 既定の設定は [いいえ] です。 詳細については、「[/MAP (マップ ファイルの生成)](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)」を参照してください。|  
+|**マップ ファイル名**([/map:](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)*名前*)|[マップ ファイルの作成] を選択する場合は、このボックスにマップ ファイルを指定できます。 詳細については、「[/MAP (マップ ファイルの生成)](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63)」を参照してください。|  
+|**[マップファイルのエクスポート]** ([/MAPINFO:EXPORTS](https://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|エクスポートされた関数をマップ ファイルに含めます。 既定の設定は [いいえ] です。 詳細については、次を参照してください。 [/MAPINFO (マップ ファイルに含める情報)](https://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b)します。|  
+|**[デバッグできるアセンブリ]** ([/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|リンカーの /ASSEMBLYDEBUG オプションの設定を指定します。 次の値を指定できます。<br /><br /> -   **[デバッグできる属性が作成されませんでした]**。<br />-   **[ランタイム トラッキングおよび最適化の無効 (/ASSEMBLYDEBUG)]**。 これが既定の設定です。<br />-   **[ランタイム トラッキングおよび最適化の有効を無効にする (/ASSEMBLYDEBUG:DISABLE)]**。<br />-   **[\<親またはプロジェクトの既定値から継承>]**。<br />詳細については、「[/ASSEMBLYDEBUG (DebuggableAttribute の追加)](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)」を参照してください。|  
   
  [構成プロパティ] フォルダー ([デバッグ] カテゴリ) 内のこれらの設定は、Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings インターフェイスを使用してプログラムで変更できます。 詳細については、「 <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings> 」を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)   
  [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)   
- [Visual C++ プロジェクトの作成および管理](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)   
- [/ASSEMBLYDEBUG (DebuggableAttribute の追加)](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)   
- [ビルドのコマンドとプロパティの共通マクロ](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)
+ [Visual C++ プロジェクトの作成および管理](https://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)   
+ [/ASSEMBLYDEBUG (DebuggableAttribute の追加)](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)   
+ [ビルドのコマンドとプロパティの共通マクロ](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)

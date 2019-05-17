@@ -16,19 +16,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: deb2e446ff051b52e9c34d28abfa99436c064ad6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116746"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680907"
 ---
 # <a name="extract-interface-refactoring-c"></a>インターフェイスの抽出リファクタリング (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 インターフェイスの抽出は、既存のクラス、構造体、またはインターフェイスから発信されたメンバーを持つ新しいインターフェイスを作成する簡単な方法を提供するリファクタリング操作です。  
   
- いくつかのクライアントが同じクラス、構造体、またはインターフェイス メンバーのサブセットを使用する場合、または複数のクラス、構造体、またはインターフェイス メンバーのサブセットを共通のあるときに、インターフェイス内のメンバーのサブセットを具現化すると便利ですができます。 詳細については、インターフェイスを使用して、次を参照してください。[インターフェイス](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)します。  
+ いくつかのクライアントが同じクラス、構造体、またはインターフェイス メンバーのサブセットを使用する場合、または複数のクラス、構造体、またはインターフェイス メンバーのサブセットを共通のあるときに、インターフェイス内のメンバーのサブセットを具現化すると便利ですができます。 詳細については、インターフェイスを使用して、次を参照してください。[インターフェイス](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)します。  
   
  インターフェイスの抽出では、新しいファイルにインターフェイスが生成され、新しいファイルの先頭にカーソルを位置付けます。 新しいインターフェイスや、新しいインターフェイスでの名前を使用して、生成されたファイルの名前を抽出するメンバーを指定することができます、**インターフェイスの抽出** ダイアログ ボックス。  
   

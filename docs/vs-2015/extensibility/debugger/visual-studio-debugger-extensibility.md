@@ -11,23 +11,23 @@ ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 528716c4ea354ab63dc7fcab2b3f90fe2860b655
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e337e87d162ac59cc6bb45676c1411692dd1a3bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973776"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675264"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio デバッガーの拡張性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio には、プログラムでバグを追跡するための強力で使いやすいツールを提供する完全な対話型のソース コードのデバッガーが含まれています。 デバッガーでは、完全なサポート Visual Basic、C#、C と C++ および JavaScript が。 ただし、 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]、つまりから使用可能な[Microsoft ダウンロード センター](http://go.microsoft.com/fwlink/?LinkId=214453)、および他のプログラミング言語は同じ豊富な機能を使用してデバッガーでサポートされます。  
+Visual Studio には、プログラムでバグを追跡するための強力で使いやすいツールを提供する完全な対話型のソース コードのデバッガーが含まれています。 デバッガーでは、完全なサポート Visual Basic、c#、C と C++ および JavaScript が。 ただし、 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]、つまりから使用可能な[Microsoft ダウンロード センター](http://go.microsoft.com/fwlink/?LinkId=214453)、および他のプログラミング言語は同じ豊富な機能を使用してデバッガーでサポートされます。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]デバッガーは、一般的なフロント エンド (つまり、ユーザー インターフェイス)、デバッグ コンポーネントは、さらに、デバッグ中の言語に固有です。 によってサポートのために必要なすべての新しい言語は、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]デバッガーはデバッグ エンジン (DE) など、必要なバックエンド コンポーネントを作成します。 ような場合は、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]が用意されています。  
   
  [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]すべてに完全なリファレンスが含まれています[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]新しい DE の作成に必要な要素です。 さらに、あるサンプルとチュートリアルの作業を開始するのに役立つ。  
   
- デバッグのサポートと言語のプロジェクト システムのエンド ツー エンド サンプルでは、次を参照してください。、 [IronPython サンプル](http://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089)します。  
+ デバッグのサポートと言語のプロジェクト システムのエンド ツー エンド サンプルでは、次を参照してください。、 [IronPython サンプル](https://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089)します。  
   
  次のセクションを使用して、デバッガーを拡張する方法を説明します、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]します。  
   

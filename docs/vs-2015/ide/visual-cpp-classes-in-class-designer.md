@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5e772d5dddcdde2306212e8a8fc48b9e39ae47a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443175"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696398"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>クラス デザイナーの Visual C++ クラス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > **[派生クラスの表示]** コマンドは、C++ コードについてはサポートされていません。 派生クラスは、[クラス ビュー] を開き、型ノードを展開し、**[派生型]** サブフォルダーを展開してからこれらの型をクラス ダイアグラムにドラッグすると表示できます。  
   
- 複数クラスの継承の詳細については、「[Multiple Inheritance](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)」((NOTINBUILD) 多重継承) と「[Multiple Base Classes](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)」(複数の基底クラス) を参照してください。  
+ 複数クラスの継承の詳細については、「[Multiple Inheritance](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)」((NOTINBUILD) 多重継承) と「[Multiple Base Classes](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)」(複数の基底クラス) を参照してください。  
   
 ## <a name="abstract-classes"></a>抽象クラス  
  クラス デザイナーは、抽象クラス ("抽象基底クラス" とも呼ばれます) をサポートしています。 これらは、インスタンス化されることはありませんが、他のクラスを派生させることができるクラスです。 このドキュメントで既に説明した "多重継承" の例を使用すると、次のように、`Bird` クラスを個々のオブジェクトとしてインスタンス化できます。  
@@ -121,7 +121,7 @@ typedef struct
   
  構造体も匿名にできます。 クラス デザイナーは、匿名クラスと匿名構造体を、それぞれの型を表示するのと同じ方法で表示します。 匿名クラスと匿名構造体はユーザーが宣言および表示できますが、クラス デザイナーはユーザーが指定したタグ名を使用しません。 クラス ビューが生成する名前を使用します。 クラス ビューおよびクラス デザイナーでは、クラスまたは構造体は **__unnamed** という要素として表示されます。  
   
- 匿名クラスの詳細については、「[匿名クラス型](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)」を参照してください。  
+ 匿名クラスの詳細については、「[匿名クラス型](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)」を参照してください。  
   
 ## <a name="template-classes"></a>テンプレート クラス  
  クラス デザイナーは、テンプレート クラスの視覚化をサポートしています。 入れ子になった宣言がサポートされています。 次の表は、一般的な宣言を示しています。  
@@ -171,8 +171,8 @@ typedef struct
   
 ## <a name="see-also"></a>関連項目  
  [Visual C++ コードの使用 (クラス デザイナー)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [クラスと構造体](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
- [匿名クラス型](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) 多重継承](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
- [複数の基底クラス](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
- [テンプレート](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
+ [クラスと構造体](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
+ [匿名クラス型](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
+ [(NOTINBUILD) 多重継承](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [複数の基底クラス](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
+ [テンプレート](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

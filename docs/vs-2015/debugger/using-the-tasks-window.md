@@ -18,21 +18,21 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdf7c5fe724ff4b043ca304eee3e5e0f31b0dd85
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 267a04e0d717bde311423aae7f35fba07ca6f39b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437704"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684038"
 ---
 # <a name="using-the-tasks-window"></a>[タスク] ウィンドウの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**[タスク]** ウィンドウは **[スレッド]** ウィンドウに似ていますが、このウィンドウには、各スレッドではなく <xref:System.Threading.Tasks.Task?displayProperty=fullName>、[task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7)、または [WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) オブジェクトに関する情報が表示されます。 スレッドと同様、タスクは、同時に実行できる非同期操作を表します。ただし、複数のタスクが同じスレッドで実行される場合もあります。 参照してください[JavaScript (Windows ストア アプリ) での非同期プログラミング](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx)詳細についてはします。  
+**[タスク]** ウィンドウは **[スレッド]** ウィンドウに似ていますが、このウィンドウには、各スレッドではなく <xref:System.Threading.Tasks.Task?displayProperty=fullName>、[task_handle](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7)、または [WinJS.Promise](https://msdn.microsoft.com/library/windows/apps/br211867.aspx) オブジェクトに関する情報が表示されます。 スレッドと同様、タスクは、同時に実行できる非同期操作を表します。ただし、複数のタスクが同じスレッドで実行される場合もあります。 参照してください[JavaScript (Windows ストア アプリ) での非同期プログラミング](https://msdn.microsoft.com/library/windows/apps/hh700330.aspx)詳細についてはします。  
   
- マネージド コードでは、<xref:System.Threading.Tasks.Task?displayProperty=fullName> オブジェクトを操作するときや、**await** および **async** (VisualBasic では **Await** および **Async**) キーワードを操作するとき、**[タスク]** ウィンドウを使用できます。 マネージ コードでタスクの詳細については、次を参照してください。[並列プログラミング](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)します。  
+ マネージド コードでは、<xref:System.Threading.Tasks.Task?displayProperty=fullName> オブジェクトを操作するときや、**await** および **async** (VisualBasic では **Await** および **Async**) キーワードを操作するとき、**[タスク]** ウィンドウを使用できます。 マネージ コードでタスクの詳細については、次を参照してください。[並列プログラミング](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)します。  
   
- ネイティブ コードでは、[タスク グループ](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)、[並列アルゴリズム](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)、[非同期エージェント](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)、および[軽量タスク](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)を操作するときに **[タスク]** ウィンドウを使用できます。 ネイティブ コードのタスクの詳細については、「[コンカレンシー ランタイム](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)」を参照してください。  
+ ネイティブ コードでは、[タスク グループ](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)、[並列アルゴリズム](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)、[非同期エージェント](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)、および[軽量タスク](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)を操作するときに **[タスク]** ウィンドウを使用できます。 ネイティブ コードのタスクの詳細については、「[コンカレンシー ランタイム](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)」を参照してください。  
   
  JavaScript では、promise.then コードを操作するときに [タスク] ウィンドウを使用できます。  
   
@@ -51,7 +51,7 @@ ms.locfileid: "63437704"
 |**フラグ**|どのタスクにフラグが設定されているかを示します。タスクのフラグを設定または解除することができます。|  
 |**アイコン**|黄色の矢印は現在のタスクを示します。 現在のタスクは、現在のスレッドの最上位のタスクです。<br /><br /> 白い矢印は中断しているタスク、つまりデバッガーを呼び出したときに現在のタスクだったタスクを示します。<br /><br /> 一時停止アイコンはユーザーによって凍結されているタスクを示します。 一覧でタスクを右クリックして、タスクを凍結したり凍結解除したりすることができます。|  
 |**ID**|タスクに対してシステムで指定された番号です。 ネイティブ コードでは、タスクのアドレスになります。|  
-|**状態**|タスクの現在の状態 (スケジュール、アクティブ、デッドロック、待機中、または完了) です。 スケジュール状態のタスクは、まだ実行されていないため、まだ呼び出し履歴、割り当てられたスレッド、関連情報がないタスクです。<br /><br /> アクティブなタスクは、デバッガーを中断する前にコードを実行していたタスクです。<br /><br /> 待機中のタスクは、イベントがシグナル状態になるか、ロックが解放されるか、別のタスクが終了するのを待機しているためにブロックされているタスクです。<br /><br /> デッドロック状態のタスクは、スレッドが別のスレッドでデッドロックされた待機中のタスクです。<br /><br /> ポインターを合わせる、**状態**ブロックに関する詳細を表示、デッドロックや待機中タスクのセル。 **警告:****[タスク]** ウィンドウでは、待機チェーン トラバーサル (WCT) でサポートされる同期プリミティブを使用する、ブロックされているタスクに関してのみ、デッドロックが報告されます。 デッドロック状態の例では、<xref:System.Threading.Tasks.Task>オブジェクトで、デバッガーの報告、WCT を使用して**待機中デッドロック**します。 同時実行ランタイムによって管理されるデッドロック状態のタスクに対して、デバッガーからは **待機中** が報告されます。 WCT の詳細については、「[Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx)」 (待機チェーン トラバーサル) を参照してください。|  
+|**状態**|タスクの現在の状態 (スケジュール、アクティブ、デッドロック、待機中、または完了) です。 スケジュール状態のタスクは、まだ実行されていないため、まだ呼び出し履歴、割り当てられたスレッド、関連情報がないタスクです。<br /><br /> アクティブなタスクは、デバッガーを中断する前にコードを実行していたタスクです。<br /><br /> 待機中のタスクは、イベントがシグナル状態になるか、ロックが解放されるか、別のタスクが終了するのを待機しているためにブロックされているタスクです。<br /><br /> デッドロック状態のタスクは、スレッドが別のスレッドでデッドロックされた待機中のタスクです。<br /><br /> ポインターを合わせる、**状態**ブロックに関する詳細を表示、デッドロックや待機中タスクのセル。 **警告:****[タスク]** ウィンドウでは、待機チェーン トラバーサル (WCT) でサポートされる同期プリミティブを使用する、ブロックされているタスクに関してのみ、デッドロックが報告されます。 デッドロック状態の例では、<xref:System.Threading.Tasks.Task>オブジェクトで、デバッガーの報告、WCT を使用して**待機中デッドロック**します。 同時実行ランタイムによって管理されるデッドロック状態のタスクに対して、デバッガーからは **待機中** が報告されます。 WCT の詳細については、「[Wait Chain Traversal](https://msdn.microsoft.com/library/ms681622\(VS.85\).aspx)」 (待機チェーン トラバーサル) を参照してください。|  
 |**開始時刻**|タスクがアクティブになった時間です。|  
 |**期間**|タスクがアクティブになっている秒数です。|  
 |**完了時間**|タスクが完了した時間です。|  
@@ -61,7 +61,7 @@ ms.locfileid: "63437704"
 |**スレッドの割り当て**|タスクを実行しているスレッドの ID と名前です。|  
 |**戻り値の状態**|タスクが完了したときのステータスです。 状態の戻り値は**成功**、 **Cancelled**、および**エラー**します。|  
 |**AppDomain**|マネージド コード用の情報で、タスクを実行しているアプリケーション ドメインを示します。|  
-|**task_group**|ネイティブ コード用の情報で、タスクのスケジュールを設定した [task_group](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) オブジェクトのアドレスを示します。 非同期エージェントおよび軽量タスクでは、この列は 0 に設定されます。|  
+|**task_group**|ネイティブ コード用の情報で、タスクのスケジュールを設定した [task_group](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) オブジェクトのアドレスを示します。 非同期エージェントおよび軽量タスクでは、この列は 0 に設定されます。|  
 |プロセス|タスクが実行されているプロセスの ID です。|  
 |Async State (非同期状態)|タスクの状態です (マネージド コードの場合)。 既定では、この列は非表示になっています。 この列を表示するには、いずれかの列ヘッダーのコンテキスト メニューを開きます。 **[列]**、**[AsyncState]** の順にクリックします。|  
   
@@ -95,7 +95,7 @@ ms.locfileid: "63437704"
 ## <a name="see-also"></a>関連項目  
  [デバッガーの基本事項](../debugger/debugger-basics.md)   
  [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)   
- [並列プログラミング](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [コンカレンシー ランタイム](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [並列プログラミング](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [コンカレンシー ランタイム](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [[並列スタック] ウィンドウの使用](../debugger/using-the-parallel-stacks-window.md)   
  [チュートリアル: 並列アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)

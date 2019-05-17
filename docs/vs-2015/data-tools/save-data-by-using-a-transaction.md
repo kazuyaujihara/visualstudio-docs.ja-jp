@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 260396123f806e7c37b91ff4aca643a05853676f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b93c512bafd8b15682ed081c7778660ef52fd1f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425083"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692501"
 ---
 # <a name="save-data-by-using-a-transaction"></a>トランザクションを使用してデータを保存する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63425083"
 > [!NOTE]
 > <xref:System.Transactions> Windows 2000 またはそれ以降、名前空間がサポートされています。  
   
- トランザクションを実装する最も簡単な方法がインスタンス化するには、<xref:System.Transactions.TransactionScope>オブジェクト、`using`ステートメント。 (詳細については、次を参照してください[Using ステートメント](http://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1)、および[ステートメントを使用して](http://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3)。)。内で実行されるコード、`using`ステートメントがトランザクションに参加します。  
+ トランザクションを実装する最も簡単な方法がインスタンス化するには、<xref:System.Transactions.TransactionScope>オブジェクト、`using`ステートメント。 (詳細については、次を参照してください[Using ステートメント](https://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1)、および[ステートメントを使用して](https://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3)。)。内で実行されるコード、`using`ステートメントがトランザクションに参加します。  
   
  トランザクションをコミットするには、呼び出し、<xref:System.Transactions.TransactionScope.Complete%2A>メソッドを使用して、最後のステートメントをブロックします。  
   

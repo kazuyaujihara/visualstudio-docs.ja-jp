@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0c038a7aa2b398a2ee58101248d2968913ba3b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 452866f885bb438589474bbb82e88e10300d988d
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868422"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224167"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 アンマネージ コードのシンボル リーダーを取得します。
@@ -39,16 +42,16 @@ int GetSymUnmanagedReader (
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ulAppDomainID`
+## <a name="parameters"></a>パラメーター
+ `ulAppDomainID`\
 
  [in]アプリケーション ドメインの識別子。
 
- `guidModule`
+ `guidModule`\
 
  [in]モジュールの一意の識別子。
 
- `ppSymUnmanagedReader`
+ `ppSymUnmanagedReader`\
 
  [out]アンマネージ コードのシンボル リーダーを表すオブジェクトを返します。
 

@@ -23,21 +23,21 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68ce036d420293e8a75bec1b2cac9f9ee8f8fcd2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435721"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675610"
 ---
 # <a name="how-to-debug-optimized-code"></a>方法: 最適化されたコードをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 注意]
-> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 > [!NOTE]
-> Visual Studio 更新プログラム 3 で導入された [/Zo (最適化されたデバッグ機能の強化)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) コンパイラ オプションを使用すると、最適化されたコードについて豊富なデバッグ情報が生成されます (**/Od** コンパイラ オプションを使用しないでビルドされたプロジェクト)。 「[/O オプション (コードの最適化)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)」を参照してください)。 これにはローカル変数とインライン関数のデバッグのサポートの強化が含まれます。  
+> Visual Studio 更新プログラム 3 で導入された [/Zo (最適化されたデバッグ機能の強化)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) コンパイラ オプションを使用すると、最適化されたコードについて豊富なデバッグ情報が生成されます (**/Od** コンパイラ オプションを使用しないでビルドされたプロジェクト)。 「[/O オプション (コードの最適化)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)」を参照してください)。 これにはローカル変数とインライン関数のデバッグのサポートの強化が含まれます。  
 >   
 > [エディット コンティニュ](../debugger/edit-and-continue-visual-csharp.md)は、**/Zo** コンパイラ オプションを使用している場合は無効です。  
   
@@ -73,11 +73,11 @@ ms.locfileid: "63435721"
   
 6. **[C/C++]** フォルダーの下の [`Optimization`] を選択します。  
   
-7. 右側のプロパティ リストで、[`Optimization`] を探します。 その横の設定値は、`Disabled (`[/Od](http://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)` になっているはずです。 その他のオプション (`Minimum Size``(`[/O1](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`、`Maximum Speed``(`[/O2](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`、`Full Optimization``(`[/Ox](http://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760)`)`、`Custom`) から 1 つを選択します。  
+7. 右側のプロパティ リストで、[`Optimization`] を探します。 その横の設定値は、`Disabled (`[/Od](https://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)` になっているはずです。 その他のオプション (`Minimum Size``(`[/O1](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`、`Maximum Speed``(`[/O2](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`、`Full Optimization``(`[/Ox](https://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760)`)`、`Custom`) から 1 つを選択します。  
   
 8. [`Custom`] に対して [`Optimization`] オプションを選択すると、プロパティ リストに表示されているその他のプロパティについてオプションを設定できるようになります。  
   
-9. 構成プロパティ、C と C++ プロジェクト プロパティ ページのコマンドライン ノードを選択し、追加`(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)`を**追加オプション**テキスト ボックス。  
+9. 構成プロパティ、C と C++ プロジェクト プロパティ ページのコマンドライン ノードを選択し、追加`(` [/Zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)`を**追加オプション**テキスト ボックス。  
   
     > [!WARNING]
     > `/Zo` には、Visual Studio 2013 更新プログラム 3 以降のバージョンが必要です。  
@@ -90,7 +90,7 @@ ms.locfileid: "63435721"
 for (x=0; x<10; x++)  
 ```  
   
- この行にブレークポイントを設定したとします。 ブレークポイントは 10 回ヒットするように思われますが、このコードを最適化した場合、ブレークポイントは 1 回しかヒットしません。 これは、最初の命令によって `x` の値が 0 に設定されるためです。 コンパイラは、その最初の命令を 1 回だけ実行すると見なしてループの外に移動します。 このとき、ブレークポイントもこの命令と共に移動します。 `x` を比較してインクリメントする命令はループ内に残ったままになります。 **[逆アセンブリ]** ウィンドウを参照すると、コードの実行をより細かく制御できるように、[ステップ実行の単位](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)が自動的に命令に設定されています。この設定は、最適化されたコードをステップ実行するときに役立ちます。  
+ この行にブレークポイントを設定したとします。 ブレークポイントは 10 回ヒットするように思われますが、このコードを最適化した場合、ブレークポイントは 1 回しかヒットしません。 これは、最初の命令によって `x` の値が 0 に設定されるためです。 コンパイラは、その最初の命令を 1 回だけ実行すると見なしてループの外に移動します。 このとき、ブレークポイントもこの命令と共に移動します。 `x` を比較してインクリメントする命令はループ内に残ったままになります。 **[逆アセンブリ]** ウィンドウを参照すると、コードの実行をより細かく制御できるように、[ステップ実行の単位](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)が自動的に命令に設定されています。この設定は、最適化されたコードをステップ実行するときに役立ちます。  
   
 ## <a name="see-also"></a>関連項目  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   

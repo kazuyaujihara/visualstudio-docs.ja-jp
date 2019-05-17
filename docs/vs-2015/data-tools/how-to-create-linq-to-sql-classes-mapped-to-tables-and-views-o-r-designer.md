@@ -9,16 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5b6e661a79f190e5befdbcf5c28ec0f4bd29ebf4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: b9bff102fbf87149e3adc80029eea17132e9b1b7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386664"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697725"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>方法: テーブルとビューにマップされた LINQ to SQL クラスを作成する (O/R デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-LINQ to SQL クラス データベース テーブルおよびビューにマップされているといいます*エンティティ クラス*します。 エンティティ クラスはレコードにマップされますが、エンティティ クラスの個々のプロパティはレコードを構成する個々の列にマップされます。 テーブルまたはビューをドラッグしてデータベース テーブルまたはビューに基づくエンティティ クラスを作成**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**上に、 [LINQ to SQL ツールVisual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)します。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]クラスを生成し、特定の適用 [!SQL の属性に LINQ を有効にする [です。SQL 機能を LINQ (データ通信編集および編集の機能、 <xref:System.Data.Linq.DataContext>)。 詳細については [!LINQ to SQL クラスを参照してください[LINQ to SQL オブジェクト モデル](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)します。
+LINQ to SQL クラス データベース テーブルおよびビューにマップされているといいます*エンティティ クラス*します。 エンティティ クラスはレコードにマップされますが、エンティティ クラスの個々のプロパティはレコードを構成する個々の列にマップされます。 テーブルまたはビューをドラッグしてデータベース テーブルまたはビューに基づくエンティティ クラスを作成**サーバー エクスプ ローラー**/**データベース エクスプ ローラー**上に、 [LINQ to SQL ツールVisual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)します。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]クラスを生成し、特定の適用 [!SQL の属性に LINQ を有効にする [です。SQL 機能を LINQ (データ通信編集および編集の機能、 <xref:System.Data.Linq.DataContext>)。 詳細については [!LINQ to SQL クラスを参照してください[LINQ to SQL オブジェクト モデル](https://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)します。
 
 > [!NOTE]
 > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]簡単なオブジェクト リレーショナル マッパーは、1 対 1 のマッピング関係のみをサポートしているためです。 つまり、エンティティ クラスには、データベース テーブルまたはビューとの 1:1 のマッピング関係しか持たせることができません。 1 つのエンティティ クラスを複数のテーブルにマップするなど、複雑なマッピングはサポートされていません。 ただし、複数の関連テーブルを結合するビューにエンティティ クラスをマップすることはできます。
@@ -39,7 +39,7 @@ LINQ to SQL クラス データベース テーブルおよびビューにマッ
      エンティティ クラスが作成され、デザイン サーフェイスに表示されます。 このエンティティ クラスには、選択されたテーブルまたはビューの列にマップされるプロパティが含まれています。
 
 ## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>オブジェクト データ ソースの作成とフォームへのデータの表示
- 使用してエンティティ クラスを作成した後、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]、オブジェクト データ ソースを作成して設定できる、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)エンティティ クラスを使用します。
+ 使用してエンティティ クラスを作成した後、 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]、オブジェクト データ ソースを作成して設定できる、[データ ソース ウィンドウ](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)エンティティ クラスを使用します。
 
 #### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>LINQ to SQL エンティティ クラスに基づいてオブジェクト データ ソースを作成するには
 
@@ -63,10 +63,10 @@ LINQ to SQL クラス データベース テーブルおよびビューにマッ
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [チュートリアル: LINQ to SQL クラス (O/R デザイナー) を作成します。](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)
+- [チュートリアル: LINQ to SQL クラス (O/R デザイナー) を作成します。](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)
 - [DataContext メソッド (O/R デザイナー)](../data-tools/datacontext-methods-o-r-designer.md)
 - [方法: ストアド プロシージャや関数にマップされる DataContext メソッドを作成する (O/R デザイナー)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
-- [LINQ to SQL オブジェクト モデル](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)
+- [LINQ to SQL オブジェクト モデル](https://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)
 - [チュートリアル: エンティティ クラスの挿入、更新、および削除の動作のカスタマイズ](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
-- [チュートリアル: エンティティ クラスに検証を追加します。](http://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)
+- [チュートリアル: エンティティ クラスに検証を追加します。](https://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)
 - [方法: LINQ to SQL クラス間の関連付け (リレーションシップ) を作成する (O/R デザイナー)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

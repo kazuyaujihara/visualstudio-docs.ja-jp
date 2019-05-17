@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e643ab6566818df7cdfee2bc4e5b256ecf065b5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e5d335fb6f90e6e93d58013958e94f6d4555c39
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955567"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455095"
 ---
 # <a name="sample-xsd-file-relationships"></a>サンプル XSD ファイル:リレーションシップ
 
@@ -63,3 +63,6 @@ ms.locfileid: "62955567"
 
 </xs:schema>
 ```
+
+> [!NOTE]
+> 例として登場する企業、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、およびイベントはすべて架空のものです。 実在する企業、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、またはイベントとは一切関係ありません。

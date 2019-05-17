@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fd018c927981c4a067e4dd0d52ef699490caa3fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fc0803e4ad73b08e99a05fa62930e039e1b7534
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973049"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687426"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102:汎用ハンドラーの CLSCompliant でない例外をキャッチします
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "58973049"
  マークされていないアセンブリ内のメンバー、<xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute>またはマークされている`RuntimeCompatibility(WrapNonExceptionThrows = false)`を処理する catch ブロックが含まれています<xref:System.Exception?displayProperty=fullName>直後に汎用の catch ブロックを含んでいません。 この規則は無視されます[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]アセンブリ。
 
 ## <a name="rule-description"></a>規則の説明
- 処理する catch ブロック<xref:System.Exception>共通言語仕様 (CLS) 準拠のすべての例外をキャッチします。 ただし、CLS 非準拠の例外はキャッチしません。 非 CLS 準拠でネイティブ コードまたは Microsoft によって生成されたマネージ コードから、準拠しない例外をスローできます intermediate language (MSIL) アセンブラー。 注意して、C# と[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]コンパイラできないようにする CLS 非準拠の例外をスローし、 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] CLS 非準拠の例外をキャッチしません。 すべての例外を処理する catch ブロックの目的がある場合は、次の汎用の catch ブロックの構文を使用します。
+ 処理する catch ブロック<xref:System.Exception>共通言語仕様 (CLS) 準拠のすべての例外をキャッチします。 ただし、CLS 非準拠の例外はキャッチしません。 非 CLS 準拠でネイティブ コードまたは Microsoft によって生成されたマネージ コードから、準拠しない例外をスローできます intermediate language (MSIL) アセンブラー。 注意して、c# と[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]コンパイラできないようにする CLS 非準拠の例外をスローし、 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] CLS 非準拠の例外をキャッチしません。 すべての例外を処理する catch ブロックの目的がある場合は、次の汎用の catch ブロックの構文を使用します。
 
 - C#: `catch {}`
 
@@ -82,4 +82,4 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
  [CA 1031:一般的な例外の種類はキャッチしません](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
 ## <a name="see-also"></a>関連項目
- [例外と例外処理](http://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe (IL アセンブラー)](http://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [セキュリティ チェックをオーバーライドする](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [Language Independence and Language-independent Components](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ [例外と例外処理](https://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe (IL アセンブラー)](https://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [セキュリティ チェックをオーバーライドする](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [Language Independence and Language-independent Components](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

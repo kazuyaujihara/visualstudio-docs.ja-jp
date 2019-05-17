@@ -1,67 +1,67 @@
 ---
 title: IDebugProgramNode2::GetHostPid |Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::GetHostPid
 helpviewer_keywords:
 - IDebugProgramNode2::GetHostPid
 ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
-caps.latest.revision: 13
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 932691781398d4e7c7983248b26f4828975ad03c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 03ac1d4f979c6b6ce504160216d42f055820d69c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869865"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457812"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+プログラムをホストするプロセスのシステム プロセス識別子を取得します。
 
-プログラムをホストするプロセスのシステム プロセス識別子を取得します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp#  
-HRESULT GetHostPid (   
-   AD_PROCESS_ID * pdwHostPid  
-);  
-```  
-  
-```csharp  
-int GetHostPid (   
-   out AD_PROCESS_ID pdwHostPid  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- `pdwHostPid`  
- [out]ホスト プロセスのシステム プロセス識別子を返します。  
-  
-## <a name="return-value"></a>戻り値  
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  
-  
-## <a name="example"></a>例  
- 次の例は、単純なは、このメソッドを実装する方法を示しています。`CProgram`を実装するオブジェクト、 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)インターフェイス。  
-  
-```cpp#  
-HRESULT CProgram::GetHostPid(DWORD* pdwHostPid) {    
-    // Check for valid argument.    
-   if (pdwHostPid)    
-    {    
-        // Get the process identifier of the calling process.    
-      *pdwHostPid = GetCurrentProcessId();    
-  
-        return S_OK;    
-    }    
-  
-    return E_INVALIDARG;    
-}    
-```  
-  
-## <a name="see-also"></a>関連項目  
- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+## <a name="syntax"></a>構文
+
+```cpp
+HRESULT GetHostPid ( 
+   AD_PROCESS_ID * pdwHostPid
+);
+```
+
+```csharp
+int GetHostPid ( 
+   out AD_PROCESS_ID pdwHostPid
+);
+```
+
+## <a name="parameters"></a>パラメーター
+ `pdwHostPid`\
+
+ [out]ホスト プロセスのシステム プロセス識別子を返します。
+
+## <a name="return-value"></a>戻り値
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+
+## <a name="example"></a>例
+ 次の例は、単純なは、このメソッドを実装する方法を示しています。`CProgram`を実装するオブジェクト、 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)インターフェイス。
+
+```cpp
+HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {
+   // Check for valid argument.
+   if (pdwHostPid == NULL)
+     return E_INVALIDARG;
+
+   // Get the process identifier of the calling process.
+   pdwHostPid->ProcessIdType = AD_PROCESS_ID_SYSTEM;
+   pdwHostPid->ProcessId.dwProcessId = GetCurrentProcessId();
+   return S_OK;
+}
+```
+
+## <a name="see-also"></a>関連項目
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

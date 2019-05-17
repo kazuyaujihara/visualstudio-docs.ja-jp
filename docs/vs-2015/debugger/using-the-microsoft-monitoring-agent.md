@@ -9,24 +9,24 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06db94841a45f648461822c5f205cb68bbb2b1c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 48c020c978b593a94ecd4d60109245f6acb718b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437721"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684090"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio の最新ドキュメントについては、次を参照してください。 [Microsoft Monitoring Agent を使用して](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent)します。
 
-**Microsoft Monitoring Agent**を使用して、IIS によってホストされる ASP.NET Web アプリおよび SharePoint 2010 や SharePoint 2013 アプリケーションのエラー、パフォーマンスの問題、またはその他の問題をローカルで監視することができます。 エージェントからの診断イベントを IntelliTrace ログ (.iTrace) ファイルに保存できます。 すべての Visual Studio 診断ツールで問題をデバッグする Visual Studio Enterprise (ただしいない Professional または Community edition) で、ログ ファイルを開くことができます。 Agent を **トレース** モードで実行して、IntelliTrace 診断データとメソッド データを収集することもできます。 Microsoft Monitoring Agent は [Application Insights](/azure/azure-monitor/app/app-insights-overview) および [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx)と統合できます。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。  
+**Microsoft Monitoring Agent**を使用して、IIS によってホストされる ASP.NET Web アプリおよび SharePoint 2010 や SharePoint 2013 アプリケーションのエラー、パフォーマンスの問題、またはその他の問題をローカルで監視することができます。 エージェントからの診断イベントを IntelliTrace ログ (.iTrace) ファイルに保存できます。 すべての Visual Studio 診断ツールで問題をデバッグする Visual Studio Enterprise (ただしいない Professional または Community edition) で、ログ ファイルを開くことができます。 Agent を **トレース** モードで実行して、IntelliTrace 診断データとメソッド データを収集することもできます。 Microsoft Monitoring Agent は [Application Insights](/azure/azure-monitor/app/app-insights-overview) および [System Center Operation Manager](https://technet.microsoft.com/library/hh205987.aspx)と統合できます。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。  
   
 > [!NOTE]
 > **IntelliTrace スタンドアロン コレクター**を使用して、対象環境を変更することなく、リモート コンピューター上の Web、SharePoint、WPF、Windows フォーム アプリの IntelliTrace 診断データとメソッド データを収集することもできます。 スタンドアロン コレクターは、Microsoft Monitoring Agent を **モニター** モードで実行するよりも、パフォーマンスに大きな影響を及ぼします。 参照してください[IntelliTrace スタンドアロン コレクターを使用して](../debugger/using-the-intellitrace-stand-alone-collector.md)します。  
   
- System Center 2012 を使用する場合は、オペレーション マネージャーと連携する Microsoft Monitoring Agent を使用して、問題についてのアラートを取得し、保存された IntelliTrace ログへのリンクを含む Team Foundation Server の作業項目を作成します。 これで、さらにデバッグを行うためにこれらの作業項目をその他の項目に割り当てることができます。 「 [Operations Manager と開発プロセスの統合](http://technet.microsoft.com/library/jj614609.aspx) 」および「 [Microsoft Monitoring Agent による監視](http://technet.microsoft.com/library/dn465153.aspx)」をご覧ください。  
+ System Center 2012 を使用する場合は、オペレーション マネージャーと連携する Microsoft Monitoring Agent を使用して、問題についてのアラートを取得し、保存された IntelliTrace ログへのリンクを含む Team Foundation Server の作業項目を作成します。 これで、さらにデバッグを行うためにこれらの作業項目をその他の項目に割り当てることができます。 「 [Operations Manager と開発プロセスの統合](https://technet.microsoft.com/library/jj614609.aspx) 」および「 [Microsoft Monitoring Agent による監視](https://technet.microsoft.com/library/dn465153.aspx)」をご覧ください。  
   
  開始する前に、ビルドされ、配置されたコードに一致するソースとシンボルがあることを確認します。 これによって、デバッグと IntelliTrace ログの診断イベントの参照を開始するときに、アプリケーション コードに直接進むことができます。 Visual Studio が配置されたコードに一致するソースを自動的に検索して、開くことができるように[ビルドを設定](../debugger/diagnose-problems-after-deployment.md) します。  
   
@@ -37,13 +37,13 @@ Visual Studio の最新ドキュメントについては、次を参照してく
 3. [手順 3:記録されたイベントを保存します。](#SaveEvents)  
   
 ## <a name="SetUpMonitoring">手順 1:</a> Microsoft Monitoring Agent を設定する  
- Web サーバーでスタンドアロン エージェントを設定して、アプリケーションを変更せずにローカルでの監視を実行します。 System Center 2012 を使用している場合は、「 [Microsoft Monitoring Agent のインストール](http://technet.microsoft.com/library/dn465156.aspx)」をご覧ください。  
+ Web サーバーでスタンドアロン エージェントを設定して、アプリケーションを変更せずにローカルでの監視を実行します。 System Center 2012 を使用している場合は、「 [Microsoft Monitoring Agent のインストール](https://technet.microsoft.com/library/dn465156.aspx)」をご覧ください。  
   
 ### <a name="SetUpStandaloneMMA"></a> スタンドアロンのエージェントを設定する  
   
 1. 以下を確認します。  
   
-    - [サポートされているバージョンのインターネット インフォメーション サービス (IIS: Internet Information Services)](http://technet.microsoft.com/library/dn465154.aspx)が Web サーバーによって実行されている。  
+    - [サポートされているバージョンのインターネット インフォメーション サービス (IIS: Internet Information Services)](https://technet.microsoft.com/library/dn465154.aspx)が Web サーバーによって実行されている。  
   
     - Web サーバーに .NET Framework 3.5、4、または 4.5 がある。  
   
@@ -77,10 +77,10 @@ Visual Studio の最新ドキュメントについては、次を参照してく
   
      **PS C:>Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**  
   
-3. 最新のヘルプ コンテンツを入手するには、[TechNet にアクセスしてください](http://technet.microsoft.com/systemcenter/default) 。  
+3. 最新のヘルプ コンテンツを入手するには、[TechNet にアクセスしてください](https://technet.microsoft.com/systemcenter/default) 。  
   
 #### <a name="FullPermissionsITLog"></a> Q:アプリケーション プールへのアクセス許可の設定方法  
- **A:** Windows の **icacls** コマンドまたはエクスプローラー (またはファイル エクスプローラー) を使用します。 例:  
+ **A:** Windows の **icacls** コマンドまたはエクスプローラー (またはファイル エクスプローラー) を使用します。 例えば:  
   
 - Windows の **icacls** コマンドを使用してアクセス許可を設定するには:  
   
@@ -111,7 +111,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
   7. アプリケーション プールに**読み取りおよび実行**のアクセス許可があることを確認します。  
   
 ## <a name="MonitorEvents"></a>手順 2: アプリの監視を開始する  
- Windows PowerShell の [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) コマンドを使用してアプリの監視を開始します。 System Center 2012 を使用している場合は、「 [Microsoft Monitoring Agent による Web アプリケーションの監視](http://technet.microsoft.com/library/dn465157.aspx)」をご覧ください。  
+ Windows PowerShell の [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) コマンドを使用してアプリの監視を開始します。 System Center 2012 を使用している場合は、「 [Microsoft Monitoring Agent による Web アプリケーションの監視](https://technet.microsoft.com/library/dn465157.aspx)」をご覧ください。  
   
 1. Web サーバーで、管理者として **Windows PowerShell** または **Windows PowerShell ISE** のコマンド プロンプト ウィンドウを開きます。  
   
@@ -137,7 +137,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
   
     |||  
     |-|-|  
-    |*"\<appName>"*|Web サイトへのパスおよび IIS での Web アプリの名前を指定します。 また、IIS パスを含めることもできます。<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> - または -<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> IIS マネージャーでこのパスを検索できます。 例:<br /><br /> ![IIS web サイトおよび web アプリへのパス](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> また、 [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) コマンドおよび [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) コマンドを使用できます。|  
+    |*"\<appName>"*|Web サイトへのパスおよび IIS での Web アプリの名前を指定します。 また、IIS パスを含めることもできます。<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> - または -<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> IIS マネージャーでこのパスを検索できます。 例えば:<br /><br /> ![IIS web サイトおよび web アプリへのパス](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> また、 [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) コマンドおよび [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) コマンドを使用できます。|  
     |*\<monitoringMode>*|監視モードを指定します。<br /><br /> <ul><li>**監視**: 例外イベントとパフォーマンス イベントについての最小限の情報を記録します。 このモードは既定の収集計画を使用します。</li><li>**トレース**: 指定された収集計画を使用して、関数レベルの情報を記録したり、SharePoint 2010 および SharePoint 2013 アプリケーションを監視したりします。 このモードでは、アプリの実行が遅くなる可能性があります。<br /><br /> <ul><li>[Q: アプリケーション プールへのアクセス許可の設定方法](#FullPermissionsITLog)</li><li>[Q: アプリのパフォーマンスの低下なしにほとんどのデータを取得する方法](#Minimizing)</li></ul><br />     この例では、SharePoint サイトでホストされる SharePoint アプリのイベントを記録します。<br /><br />     **Start-webapplicationmonitoring"FabrikamSharePointSite\FabrikamSharePointApp""C:\Program files \microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml""C:\IntelliTraceLogs"のトレース**</li><li>**カスタム**: 指定したカスタム収集計画を使用してカスタムの情報を記録します。 監視を開始してから収集計画を編集するときは、監視を再起動する必要があります。</li></ul>|  
     |*"\<outputPath>"*|IntelliTrace ログを格納するディレクトリへの完全パスを指定します。 監視を開始する前にこのディレクトリの作成を確認します。|  
     |*\<UInt32 >*|IntelliTrace ログの最大サイズを指定します。 IntelliTrace ログの既定の最大サイズは 250 MB です。<br /><br /> ログがこの制限に達すると、エージェントは最も早いエントリを上書きして、さらに多くのエントリのための場所を確保します。 この制限を変更するには、 **-MaximumFileSizeInMegabytes** オプションを使用するか、収集計画の `MaximumLogFileSize` 属性を編集します。|  
@@ -162,7 +162,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
   
    `enabled` 属性がない場合、イベントが有効になります。  
   
-   例えば:  
+   例:  
   
   - Windows Workflow を使用しないアプリの Windows Workflow イベントを無効にします。  
   
@@ -231,7 +231,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
   エージェントは、 `id`メソッドから返された、 `Employee.Id`、 `Employee.Name` 、 `Employee` 、および `AlterEmployee` の各オブジェクトの値を記録します。 ただし、null であるかどうかの情報を除き、 `Address` オブジェクトについての情報は記録しません。 エージェントは、メソッド パラメーターとして記録される時点のパラメーターとしてそれらのローカル変数を他のメソッドが使用する場合を除き、 `AlterEmployee` メソッドのローカル変数に関するデータは記録しません。  
   
 ## <a name="SaveEvents"></a> 手順 3:記録されたイベントを保存します。  
- エラーやパフォーマンス上の問題を見つけた場合は、記録されたイベントを IntelliTrace ログに保存します。 エージェントでは、イベントが記録された場合にのみログが作成されます。 System Center 2012 を使用している場合は、「 [Microsoft Monitoring Agent による Web アプリケーションの監視](http://technet.microsoft.com/library/dn465157.aspx)」をご覧ください。  
+ エラーやパフォーマンス上の問題を見つけた場合は、記録されたイベントを IntelliTrace ログに保存します。 エージェントでは、イベントが記録された場合にのみログが作成されます。 System Center 2012 を使用している場合は、「 [Microsoft Monitoring Agent による Web アプリケーションの監視](https://technet.microsoft.com/library/dn465157.aspx)」をご覧ください。  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>記録されたイベントは保存するが、監視は続ける  
  IntelliTrace ログは作成するがアプリの再起動や監視の停止はしない場合は、次の手順に従います。 エージェントは、サーバーまたはアプリケーションが再起動しても監視を続けます。  
@@ -246,7 +246,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
   
     **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
   
-    例えば:  
+    例:  
   
     **PS c:\\> Checkpoint-webapplicationmonitoring"Fabrikam\FabrikamFiber.Web"**  
   
@@ -280,7 +280,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
   
     **Stop-webapplicationmonitoring - すべて**  
   
-    例えば:  
+    例:  
   
     **PS C:\\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   

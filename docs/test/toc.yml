@@ -1,10 +1,9 @@
-- name: Visual Studio テスト ツール
+- name: Visual Studio のテスト ツール
   href: improve-code-quality.md
-- name: テスト シナリオ
-  href: developer-testing-scenarios.md
 - name: 単体テスト
-  href: unit-test-your-code.md
   items:
+    - name: 単体テスト ツールの概要
+      href: unit-test-your-code.md
     - name: 作業開始
       href: getting-started-with-unit-testing.md
     - name: 単体テストの基本
@@ -14,8 +13,9 @@
     - name: 単体テスト コマンドの作成
       href: create-unit-tests-menu.md
     - name: IntelliTest
-      href: generate-unit-tests-for-your-code-with-intellitest.md
       items:
+        - name: '方法: IntelliTest で単体テストを生成する'
+          href: generate-unit-tests-for-your-code-with-intellitest.md
         - name: 概要
           href: intellitest-manual/introduction.md
         - name: 作業の開始
@@ -38,9 +38,10 @@
           href: intellitest-manual/warnings-and-errors.md
     - name: サードパーティ製の単体テスト フレームワークをインストールする
       href: install-third-party-unit-test-frameworks.md
-    - name: テスト エクスプローラーを使用して単体テストを実行する
-      href: run-unit-tests-with-test-explorer.md
+    - name: テスト エクスプローラー
       items:
+        - name: テスト エクスプローラーを使用して単体テストを実行する
+          href: run-unit-tests-with-test-explorer.md
         - name: テスト エクスプローラーに関する FAQ
           href: test-explorer-faq.md
     - name: コマンド ラインからテストを実行する
@@ -59,29 +60,30 @@
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: Assert クラスを使用する
           href: using-the-assert-classes.md
-        - name: Microsoft Fakes を使用したテストでコードを分離する
-          href: isolating-code-under-test-with-microsoft-fakes.md
+        - name: Microsoft Fakes
           items:
+            - name: Microsoft Fakes を使用したテストでコードを分離する
+              href: isolating-code-under-test-with-microsoft-fakes.md
             - name: スタブを使用して単体テストでアプリケーションの各部分を相互に分離する
               href: using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md
             - name: shim を使用して単体テストでアプリケーションを他のアセンブリから分離する
               href: using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md
             - name: Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則
               href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
-        - name: データ ドリブン単体テストを作成する
-          href: how-to-create-a-data-driven-unit-test.md
+        - name: データ ドリブン単体テスト
           items:
+            - name: データ ドリブン単体テストを作成する
+              href: how-to-create-a-data-driven-unit-test.md
             - name: 'チュートリアル: データ ソースを定義するための構成ファイルの使用'
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: ジェネリック メソッドの単体テスト
           href: unit-tests-for-generic-methods.md
         - name: .NET Framework の旧バージョンを対象とした単体テストを構成する
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
-        - name: 単体テスト作成用のサンプル プロジェクト
-          href: sample-project-for-creating-unit-tests.md
-    - name: C/C++ コード用の単体テストの記述
-      href: writing-unit-tests-for-c-cpp.md
+    - name: C/C++ コード用の単体テスト
       items:
+        - name: C/C++ コード用の単体テストの記述
+          href: writing-unit-tests-for-c-cpp.md
         - name: C++ 用の Microsoft 単体テスト フレームワークの使用
           href: how-to-use-microsoft-test-framework-for-cpp.md
         - name: Google C++ テスト フレームワークの使用
@@ -104,16 +106,19 @@
           href: unit-testing-visual-csharp-code-in-a-store-app.md
         - name: 'チュートリアル: UWP アプリ用の単体テストの作成および実行'
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
-    - name: コード カバレッジを使用した、テストされるコード割合の確認
-      href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+    - name: コード カバレッジ
       items:
+        - name: コード カバレッジを使用した、テストされるコード割合の確認
+          href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
         - name: コード カバレッジ分析のカスタマイズ
           href: customizing-code-coverage-analysis.md
         - name: コード カバレッジのトラブルシューティング
           href: troubleshooting-code-coverage.md
-- name: Live unit testing
-  href: live-unit-testing-intro.md
+- name: Live Unit Testing
   items:
+    - name: はじめに
+      displayName: Live Unit Testing introduction
+      href: live-unit-testing-intro.md
     - name: Live Unit Testing の新機能
       href: live-unit-testing-whats-new.md
     - name: Live Unit Testing の概要
@@ -126,19 +131,23 @@
   items:
     - name: 'クイック スタート: ロード テスト プロジェクトを作成する'
       href: quickstart-create-a-load-test-project.md
-    - name: ロード テストの構成
-      href: edit-load-tests.md
+    - name: ロード テスト構成
       items:
-        - name: シナリオの編集
-          href: edit-load-test-scenarios.md
+        - name: ロード テストの構成
+          href: edit-load-tests.md
+        - name: シナリオとテスト ミックス
           items:
+            - name: シナリオの編集
+              href: edit-load-test-scenarios.md
             - name: シナリオのプロパティ
               href: load-test-scenario-properties.md
             - name: テスト ミックス
               href: edit-the-test-mix-in-a-load-test-scenario.md
             - name: テスト ミックス モデル
-              href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
               items:
+                - name: 概要
+                  displayName: Test mix models
+                  href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
                 - name: テスト ミックス モデルの編集
                   href: edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md
             - name: ブラウザー ミックス
@@ -148,8 +157,9 @@
             - name: 待ち動作のプロファイル
               href: edit-think-times-in-load-test-scenarios.md
             - name: ロード パターン
-              href: edit-load-patterns-to-model-virtual-user-activities.md
               items:
+                - name: ロード パターン
+                  href: edit-load-patterns-to-model-virtual-user-activities.md
                 - name: ステップごとの傾斜増加時間のプロパティ
                   href: how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md
             - name: 開始遅延
@@ -160,9 +170,10 @@
               href: how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md
             - name: 遅延のペースの分布
               href: how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md
-        - name: カウンター セットの編集
-          href: specify-counter-sets-and-threshold-rules-for-load-testing.md
+        - name: カウンター セット
           items:
+            - name: カウンター セットの編集
+              href: specify-counter-sets-and-threshold-rules-for-load-testing.md
             - name: カウンターの追加
               href: how-to-add-counters-to-counter-sets-using-the-load-test-editor.md
             - name: カスタムのカウンター セット
@@ -171,9 +182,10 @@
               href: how-to-manage-counter-sets-using-the-load-test-editor.md
             - name: しきい値規則の追加
               href: how-to-add-a-threshold-rule-using-the-load-test-editor.md
-        - name: 実行設定の編集
-          href: configure-load-test-run-settings.md
+        - name: 実行設定
           items:
+            - name: 実行設定の編集
+              href: configure-load-test-run-settings.md
             - name: 実行設定のプロパティ
               href: load-test-run-settings-properties.md
             - name: 実行設定の追加
@@ -181,10 +193,9 @@
             - name: コンテキスト パラメーター
               href: how-to-add-context-parameters-to-a-load-test-run-setting.md
             - name: ログ設定
-              href: modify-load-test-logging-settings.md
               items:
-                - name: 最大ログ サイズ
-                  href: how-to-specify-the-maximum-size-for-the-log-file.md
+                - name: ログ設定を変更する
+                  href: modify-load-test-logging-settings.md
                 - name: 失敗したテスト
                   href: how-to-specify-if-test-failures-are-saved-to-test-logs.md
             - name: タイミングの詳細ストレージ
@@ -194,8 +205,9 @@
             - name: サンプル速度
               href: how-to-specify-the-sample-rate-for-a-load-test.md
             - name: 実行設定の選択
-              href: how-to-select-the-active-run-setting-for-a-load-test.md
               items:
+                - name: 実行設定の選択
+                  href: how-to-select-the-active-run-setting-for-a-load-test.md
                 - name: コマンド ライン
                   href: how-to-select-a-load-test-run-setting-from-the-command-line.md
     - name: 'チュートリアル: ロード テストの作成および実行'
@@ -211,8 +223,10 @@
         - name: 動的パラメーター
           href: fix-non-detectable-dynamic-parameters-in-a-web-performance-test.md
     - name: テスト コントローラーとテスト エージェント
-      href: configure-test-agents-and-controllers-for-load-tests.md
       items:
+        - name: 概要
+          displayName: Test controllers and test agents
+          href: configure-test-agents-and-controllers-for-load-tests.md
         - name: 要件
           href: test-controller-and-test-agent-requirements-for-load-testing.md
         - name: テスト コントローラーとテスト エージェントの管理
@@ -241,9 +255,10 @@
           href: code-a-custom-extraction-rule-for-a-web-performance-test.md
         - name: カスタム検証規則を作成する
           href: code-a-custom-validation-rule-for-a-web-performance-test.md
-        - name: カスタム コードおよびカスタム プラグインを作成する
-          href: create-custom-code-and-plug-ins-for-load-tests.md
+        - name: カスタム コードおよびプラグイン
           items:
+            - name: カスタム コードおよびカスタム プラグインを作成する
+              href: create-custom-code-and-plug-ins-for-load-tests.md
             - name: Web パフォーマンス テスト プラグインを作成する
               href: how-to-create-a-web-performance-test-plug-in.md
             - name: 要求レベルのプラグインを作成する
@@ -256,14 +271,16 @@
               href: how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md
     - name: ロード テストの診断
       items:
-        - name: 診断データ アダプターを作成する
-          href: create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md
+        - name: 診断データ アダプター
           items:
+            - name: 診断データ アダプターを作成する
+              href: create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md
             - name: 作成する方法
               href: how-to-create-a-diagnostic-data-adapter.md
-        - name: テスト設定を使用して診断を収集する
-          href: collect-diagnostic-information-using-test-settings.md
+        - name: 診断を収集する
           items:
+            - name: テスト設定を使用して診断を収集する
+              href: collect-diagnostic-information-using-test-settings.md
             - name: テストの設定を作成する
               href: how-to-create-a-test-setting-for-a-distributed-load-test.md
             - name: ASP.NET プロファイラーの構成
@@ -274,21 +291,24 @@
           href: how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md
         - name: 画面と音声の記録
           href: how-to-include-recordings-of-the-screen-and-voice-during-tests.md
-    - name: 分析結果
-      href: analyze-load-test-results-using-the-load-test-analyzer.md
+    - name: テスト結果
       items:
+        - name: 分析結果
+          href: analyze-load-test-results-using-the-load-test-analyzer.md
         - name: アクセス結果
           href: how-to-access-load-test-results-for-analysis.md
         - name: 概要
           href: load-test-results-summary-overview.md
         - name: テーブル ビュー
-          href: analyze-load-test-results-and-errors-in-the-tables-view.md
           items:
+            - name: テーブル ビュー
+              href: analyze-load-test-results-and-errors-in-the-tables-view.md
             - name: Web ページの応答時間
               href: how-to-view-web-page-response-time-in-a-load-test.md
         - name: グラフ ビュー
-          href: analyze-load-test-results-in-the-graphs-view.md
           items:
+            - name: グラフ ビュー
+              href: analyze-load-test-results-in-the-graphs-view.md
             - name: カウンターを追加および削除する
               href: how-to-add-and-delete-counters-on-graphs-in-load-test-results.md
             - name: カスタム グラフを作成する
@@ -298,8 +318,9 @@
             - name: ズーム インする方法
               href: how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md
         - name: 詳細ビュー
-          href: analyze-load-test-virtual-user-activity-in-the-details-view.md
           items:
+            - name: 詳細ビュー
+              href: analyze-load-test-virtual-user-activity-in-the-details-view.md
             - name: 仮想ユーザー アクティビティを分析する
               href: how-to-analyze-virtual-user-activity-during-a-load-test.md
             - name: 'チュートリアル: アクティビティ チャートを使用する'
@@ -313,8 +334,9 @@
         - name: Word でレポートを作成する
           href: how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md
         - name: 結果リポジトリ
-          href: manage-load-test-results-in-the-load-test-results-repository.md
           items:
+            - name: 結果リポジトリ
+              href: manage-load-test-results-in-the-load-test-results-repository.md
             - name: リポジトリを選択する
               href: how-to-select-a-load-test-results-repository.md
             - name: 結果のインポート
@@ -325,15 +347,18 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: 結果ビューアー用のアドインを作成する
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: UI テスト自動化
-  href: use-ui-automation-to-test-your-code.md
+- name: コード化された UI テストを使用した UI オートメーション
   items:
+    - name: 概要
+      displayName: Coded UI test
+      href: use-ui-automation-to-test-your-code.md
     - name: 'チュートリアル: コード化された UI テストの作成、編集、保守'
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
     - name: コード化された UI テストを使用して UWP アプリをテストする
       href: test-uwp-app-with-coded-ui-test.md
-    - name: UWP コントロールの一意のオートメーション プロパティを設定する
-      href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
+      items:
+        - name: UWP コントロールの一意のオートメーション プロパティを設定する
+          href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: コード化された UI テストで HTML5 コントロールを使用する
       href: using-html5-controls-in-coded-ui-tests.md
     - name: データ ドリブンのコード化された UI テストを作成する
@@ -359,8 +384,9 @@
     - name: コード化された UI テスト フレームワークを拡張する
       href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
 - name: ラボ管理のテスト
-  href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:
+    - name: ラボ環境を使う
+      href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
     - name: ビルドまたはリリース管理を使用したテストの自動化
       href: lab-management/use-build-or-rm-instead-of-lab-management.md
     - name: テスト エージェントとテスト コントローラーのインストール

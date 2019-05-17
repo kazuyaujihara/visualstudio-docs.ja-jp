@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 049d557959a53c00be461a2b0e44338216c7e3a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ff76fe46f07ef713cb3c0e529e8029730450f2a6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974697"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675599"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>開発者以外が配置する ClickOnce アプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ClickOnce 配置を作成しているすべての開発者は、アプリケー�
 ## <a name="creating-customer-deployments-by-using-application-manifest-for-trust"></a>信頼のアプリケーション マニフェストを使用して、顧客の展開を作成します。  
  .NET Framework 3.5 では、ClickOnce には、マニフェストの署名方法のシナリオに、新しいソリューションで開発者やお客様が提供する新しい機能が含まれています。 ClickOnce アプリケーション マニフェストは、という名前の新しい要素をサポートしている`<useManifestForTrust>`を示すアプリケーション マニフェストのデジタル署名は、どのような信頼の決定を行うために使用する必要がありますが、開発者ができるようにします。 開発者が ClickOnce パッケージ化ツールを使用 — Mage.exe、MageUI.exe、および Visual Studio など-アプリケーション マニフェストにこの要素を含めるだけでなく、マニフェストに、パブリッシャーの名前と、アプリケーションの名前の両方を埋め込む。  
   
- 使用する場合`<useManifestForTrust>`、配置マニフェストは、証明機関によって発行された、Authenticode 証明書で署名する必要はありません。 代わりに、自己署名証明書と呼ばれるものを署名することができます。 自己署名証明書では、標準の .NET Framework SDK ツールを使用してお客様、または開発者によって生成され、標準の ClickOnce 配置ツールを使用して、配置マニフェストに適用されます。 詳細については、次を参照してください。 [Makecert.exe (Certificate Creation Tool)](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)します。  
+ 使用する場合`<useManifestForTrust>`、配置マニフェストは、証明機関によって発行された、Authenticode 証明書で署名する必要はありません。 代わりに、自己署名証明書と呼ばれるものを署名することができます。 自己署名証明書では、標準の .NET Framework SDK ツールを使用してお客様、または開発者によって生成され、標準の ClickOnce 配置ツールを使用して、配置マニフェストに適用されます。 詳細については、次を参照してください。 [Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)します。  
   
  配置マニフェストに自己署名証明書を使用するには、いくつかの利点について説明します。 によって、顧客を取得または独自の Authenticode 証明書を作成する必要がなくなるため`<useManifestForTrust>`開発者は、アプリケーションで独自のブランド id を維持しながら、顧客の展開を簡略化します。 安全なは、一意のアプリケーション id が設定されている署名付きの展開の組み合わせになります。 これにより、複数の顧客に同じアプリケーションを配置からなる可能性がある潜在的な競合がなくなります。  
   

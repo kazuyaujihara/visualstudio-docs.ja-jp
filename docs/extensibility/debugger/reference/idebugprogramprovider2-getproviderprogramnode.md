@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c468745418c01b638cbc407342820b9127b460b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 594fef8a83c01b4bad4d47fdb206d64e445ad515
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869816"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459015"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 特定のプログラムの [プログラム] ノードを取得します。
@@ -46,8 +49,8 @@ int GetProviderProgramNode(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `Flags`
+## <a name="parameters"></a>パラメーター
+ `Flags`\
 
  [in]フラグの組み合わせ、 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列挙体。 次のフラグは、この呼び出しの一般的なものは。
 
@@ -57,23 +60,23 @@ int GetProviderProgramNode(
 |`PFLAG_DEBUGGEE`|現在デバッグ中の呼び出し元 (ノードごとにマーシャ リングに関する追加情報が返される)。|
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|呼び出し元に接続されているが、デバッガーによって起動されません。|
 
- `pPort`
+ `pPort`\
 
  [in]呼び出し元のプロセス、ポートがで実行されています。
 
- `processId`
+ `processId`\
 
  [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)対象のプログラムを含むプロセスの ID を保持する構造体。
 
- `guidEngine`
+ `guidEngine`\
 
  [in]プログラムは、(ある場合) に接続されているデバッグ エンジンの GUID です。
 
- `programId`
+ `programId`\
 
  [in]プログラム ノードを取得する対象のプログラムの ID。
 
- `ppProgramNode`
+ `ppProgramNode`\
 
  [out][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)要求されたプログラム ノードを表すオブジェクト。
 

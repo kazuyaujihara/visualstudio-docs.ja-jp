@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8b286a67b21d022b12f77ffff68a71da88256757
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f94183c6051ed0c2603bbfe35484fabb83a2160f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095777"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697987"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210:アセンブリには有効な厳密な名前が必要です
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "60095777"
 
 - [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] V1.0 または v1.1 を使用するか、<xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>または<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>属性。
 
-- [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]、いずれかを使用して、`/keyfile`または`/keycontainer`コンパイラ オプション[/KEYFILE (指定のキーまたはキー ペア アセンブリに署名する)](http://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06)または[/KEYCONTAINER (アセンブリに署名するキー コンテナーの指定)](http://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) C++ でリンカー オプション)。
+- [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]、いずれかを使用して、`/keyfile`または`/keycontainer`コンパイラ オプション[/KEYFILE (指定のキーまたはキー ペア アセンブリに署名する)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06)または[/KEYCONTAINER (アセンブリに署名するキー コンテナーの指定)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) C++ でリンカー オプション)。
 
   **Visual Studio での厳密な名前でアセンブリに署名するには**
 
@@ -89,11 +89,11 @@ ms.locfileid: "60095777"
 
    **Visual Studio の外部の厳密な名前でアセンブリに署名するには**
 
-- によって提供される厳密な名前ツール (Sn.exe) を使用して、 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK。 詳細については、「[Sn.exe (厳密名ツール)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)」を参照してください。
+- によって提供される厳密な名前ツール (Sn.exe) を使用して、 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK。 詳細については、「[Sn.exe (厳密名ツール)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)」を参照してください。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  アセンブリは、環境で使用する場合のみこの規則による警告を抑制する内容の改ざんが問題にならない場合。
 
 ## <a name="see-also"></a>関連項目
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [方法: 厳密な名前でアセンブリに署名](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (厳密名ツール)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
+ [方法: 厳密な名前でアセンブリに署名](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (厳密名ツール)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)

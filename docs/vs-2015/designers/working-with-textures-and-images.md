@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3211f72b867063e07e339ff803019cb9699e94a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 89c8fd489c29fc9b352c34011349ff447e48adb4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403472"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690076"
 ---
 # <a name="working-with-textures-and-images"></a>テクスチャおよびイメージの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63403472"
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のイメージ エディターを使用すると、テクスチャとイメージを作成したり、変更したりできます。 イメージ エディターは、DirectX アプリケーションの開発で使用されるものをはじめ、さまざまな形式のテクスチャとイメージをサポートしています。  
   
 > [!NOTE]
-> イメージ エディターでは、アイコンやカーソルなどのローカラー イメージはサポートされていません。 これらのイメージを作成または変更するには、 [Image Editor for Icons](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd)を使用します。  
+> イメージ エディターでは、アイコンやカーソルなどのローカラー イメージはサポートされていません。 これらのイメージを作成または変更するには、 [Image Editor for Icons](https://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd)を使用します。  
   
 ## <a name="textures-and-images"></a>テクスチャとイメージ  
  基本的なレベルのテクスチャとイメージは、グラフィックス アプリケーションで視覚的なディテールをもたらすために使用されるデータのテーブルにすぎません。 テクスチャとイメージによってもたらされるディテールの種類は、そのテクスチャやイメージの用途によって異なりますが、一般的な例としては、色のサンプル、アルファ (透明度) 値、表面法線、高さの値などが挙げられます。 テクスチャとイメージの主な違いは、テクスチャがオブジェクトまたはシーン全体を表現するために図形表現 (通常は 3-D モデル) と共に使用されるのに対し、イメージはオブジェクトまたはシーンを単独で表現する点です。  

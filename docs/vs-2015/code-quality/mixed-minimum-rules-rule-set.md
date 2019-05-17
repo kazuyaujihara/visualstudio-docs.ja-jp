@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fbc8239fc3472d5dd5e8a24ca2b0c125d57cca21
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7c690389b5abc3b6e37aed1629ae5a640a5d99a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653074"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682202"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>"混合最小規則" 規則セット
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Microsoft 混合最小規則は、潜在的なセキュリティ ホールやア
 |                              [C6504](../code-quality/c6504.md)                              |                                              非ポインターでの Null                                              |
 |                              [C6505](../code-quality/c6505.md)                              |                                               Void での MustCheck                                               |
 |                              [C6506](../code-quality/c6506.md)                              |                                      非ポインターまたは配列でのバッファー サイズ                                      |
-|        [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       逆参照ゼロでの Null 不一致                                       |
+|        [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       逆参照ゼロでの Null 不一致                                       |
 |                              [C6508](../code-quality/c6508.md)                              |                                           定数での書き込みアクセス                                            |
 |                              [C6509](../code-quality/c6509.md)                              |                                          前提条件で使用される Return                                          |
 |                              [C6510](../code-quality/c6510.md)                              |                                        非ポインターでの Null 終了                                         |
@@ -70,11 +70,11 @@ Microsoft 混合最小規則は、潜在的なセキュリティ ホールやア
 |                              [C6516](../code-quality/c6516.md)                              |                                          属性にプロパティがない                                           |
 |                              [C6517](../code-quality/c6517.md)                              |                                       読み取り可能でないバッファーでの有効なサイズ                                       |
 |                              [C6518](../code-quality/c6518.md)                              |                                     書き込み可能でないバッファーでの書き込み可能サイズ                                      |
-|        [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        無効なサイズの文字列の逆参照                                        |
+|        [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        無効なサイズの文字列の逆参照                                        |
 |                              [C6522](../code-quality/c6522.md)                              |                                           無効なサイズの文字列型                                            |
-|        [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         無効なサイズの文字列パラメーター                                         |
+|        [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         無効なサイズの文字列パラメーター                                         |
 |                              [C6525](../code-quality/c6525.md)                              |                                   無効なサイズの到達不能な場所の文字列                                    |
-|        [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        無効なサイズの文字列バッファー型                                        |
+|        [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        無効なサイズの文字列バッファー型                                        |
 |                              [C6527](../code-quality/c6527.md)                              |              無効な注釈。'NeedsRelease' プロパティを void 型の値に対して使用することはできません。               |
 |                              [C6530](../code-quality/c6530.md)                              |                                       認識されない書式指定文字列スタイル                                        |
 |                              [C6540](../code-quality/c6540.md)                              | この関数で属性注釈を使用すると、既存の __declspec 注釈がすべて無効となります  |

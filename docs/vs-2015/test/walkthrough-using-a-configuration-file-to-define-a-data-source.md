@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7dde910c5622a67ad002a085ace746ebc68e8857
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f078d8a15cbef4c2f17b154af13a997b77da8766
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439225"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695057"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>チュートリアル: データ ソースを定義するための構成ファイルの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -219,7 +219,7 @@ ms.locfileid: "63439225"
   
 1. 単体テストをテスト プロジェクトに追加します。  
   
-     詳細については、「[既存コードに対する単体テストの作成と実行](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)」を参照してください。  
+     詳細については、「[既存コードに対する単体テストの作成と実行](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)」を参照してください。  
   
 2. 自動生成された単体テストの内容を次のコードに置き換えます。  
   
@@ -270,6 +270,6 @@ ms.locfileid: "63439225"
   
 ## <a name="see-also"></a>関連項目  
  [コードの単体テスト](../test/unit-test-your-code.md)   
- [既存コードに対する単体テストの作成と実行](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
- [アプリケーションのテスト](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
+ [既存コードに対する単体テストの作成と実行](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [アプリケーションのテスト](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [方法: データ ドリブン単体テストを作成する](../test/how-to-create-a-data-driven-unit-test.md)

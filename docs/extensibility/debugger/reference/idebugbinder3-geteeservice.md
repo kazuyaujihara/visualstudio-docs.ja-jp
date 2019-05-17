@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d709124a392ffb6b6cbbb5a29576a985fe6d0f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eaaaf52a0a577d8b802540ca9b4ae11ab9aa1dbd
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877560"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614903"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 このメソッドは、要求されたサービスを返します。
@@ -42,22 +45,18 @@ Int GetEEService(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `vendor`
+## <a name="parameters"></a>パラメーター
+`vendor`\
+[in]`GUID` (null 値が許容される) のベンダー。
 
- [in]`GUID` (null 値が許容される) のベンダー。
+`language`\
+[in]`GUID` (null 値が許容可能な) 言語の。
 
- `language`
+`iid`\
+[in]`IID`のサービスを取得します。
 
- [in]`GUID` (null 値が許容可能な) 言語の。
-
- `iid`
-
- [in]`IID`のサービスを取得します。
-
- `ppService`
-
- [out]要求されたサービスへのインターフェイス。
+`ppService`\
+[out]要求されたサービスへのインターフェイス。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

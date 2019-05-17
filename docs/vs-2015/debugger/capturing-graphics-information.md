@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fbdaf845d780935b238bac2ba2c2e7cb0c53b59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1b78492ccd5c2666da5ffc503cdf126842431478
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437829"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702552"
 ---
 # <a name="capturing-graphics-information"></a>グラフィックス情報をキャプチャする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Visual Studio Graphics Analyzer を使用してレンダリングに関する問
 ## <a name="capturing-graphics-information-remotely"></a>グラフィックス情報をリモートでキャプチャする  
  グラフィックス情報は、ローカル コンピューターか、リモート コンピューターまたはリモート デバイスで実行されているアプリからキャプチャできます。 リモート キャプチャは、[!INCLUDE[winblue_client_2](../includes/winblue-client-2-md.md)] コンピューターと [!INCLUDE[winblue_winrt_2](../includes/winblue-winrt-2-md.md)] デバイスでサポートされています。 リモートで実行されているアプリからグラフィックス情報をキャプチャするには、リモート デバッグ用にプロジェクトを構成し、既に説明したように、グラフィックス診断の下でアプリを実行します。 アプリがリモート コンピューターで実行され、キャプチャされたグラフィックス情報が開発用コンピューターに記録されます。  
   
- プロジェクトをリモート デバッグ用に構成する方法は、開発中のアプリの種類と、使用しているプログラミング言語によって異なります。 Windows ストア アプリ用のリモート デバッグを構成する方法については、次を参照してください。 [Windows ストア アプリの実行をリモート コンピューターで](../debugger/run-windows-store-apps-on-a-remote-machine.md)します。 Windows デスクトップ アプリ用のリモート デバッグを構成する方法については、次を参照してください。 [Visual Studio プロジェクトには、リモートのデバッグの設定](http://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a)します。  
+ プロジェクトをリモート デバッグ用に構成する方法は、開発中のアプリの種類と、使用しているプログラミング言語によって異なります。 Windows ストア アプリ用のリモート デバッグを構成する方法については、次を参照してください。 [Windows ストア アプリの実行をリモート コンピューターで](../debugger/run-windows-store-apps-on-a-remote-machine.md)します。 Windows デスクトップ アプリ用のリモート デバッグを構成する方法については、次を参照してください。 [Visual Studio プロジェクトには、リモートのデバッグの設定](https://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a)します。  
   
  後で、情報をキャプチャした場所にかかわらず、リモート コンピューターまたはリモート デバイスを使用してグラフィックス情報を再生できます。 詳細については、「[方法 :グラフィックス診断再生マシンを変更する](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)」を参照してください。  
   

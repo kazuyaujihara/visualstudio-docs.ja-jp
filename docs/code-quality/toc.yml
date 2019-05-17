@@ -20,8 +20,9 @@
     - name: マネージド コード分析によるコード障害の検出
       href: walkthrough-analyzing-managed-code-for-code-defects.md
     - name: C/C++ コード分析による障害の検出
-      href: walkthrough-analyzing-c-cpp-code-for-defects.md
       items:
+        - name: C/C++ コード分析による障害の検出
+          href: walkthrough-analyzing-c-cpp-code-for-defects.md
         - name: デモのサンプル
           href: demo-sample.md
 - name: 使い方ガイド
@@ -35,8 +36,9 @@
             - name: インストール
               href: install-fxcop-analyzers.md
             - name: を構成する。
-              href: configure-fxcop-analyzers.md
               items:
+                - name: を構成する。
+                  href: configure-fxcop-analyzers.md
                 - name: 構成オプション
                   href: fxcop-analyzer-options.md
             - name: 静的コード分析からの移行
@@ -56,8 +58,9 @@
         - name: 手動でのコード分析の実行
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: 警告を表示しない
-          href: in-source-suppression-overview.md
           items:
+            - name: 警告を表示しない
+              href: in-source-suppression-overview.md
             - name: 生成されたコードに対するコード分析の警告を表示しない
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: コード分析辞書のカスタマイズ
@@ -73,8 +76,9 @@
         - name: コード分析プロパティの設定
           href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
         - name: SAL 注釈を使用してコード障害を減らす
-          href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
           items:
+            - name: SAL 注釈を使用してコード障害を減らす
+              href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
             - name: SAL について
               href: understanding-sal.md
             - name: 関数パラメーターおよび戻り値に注釈を付ける
@@ -94,15 +98,15 @@
         - name: _Analysis_assume を使用して追加のコード情報を指定する
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
     - name: 規則セット
-      href: using-rule-sets-to-group-code-analysis-rules.md
       items:
+        - name: 規則セット
+          href: using-rule-sets-to-group-code-analysis-rules.md
         - name: アナライザー パッケージの規則セット
           href: analyzer-rule-sets.md
-        - name: マネージド コードの規則セット
+        - name: スタティック コード分析の規則セットを構成する
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
-          items:
-            - name: ASP.NET Web アプリケーション用のコード分析を構成する
-              href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
+        - name: ASP.NET Web アプリケーション用のコード分析を構成する
+          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: C++ コードの規則セット
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
         - name: カスタム規則セットの作成
@@ -110,8 +114,9 @@
         - name: 規則セット エディターの使用
           href: working-in-the-code-analysis-rule-set-editor.md
     - name: チェックイン ポリシー
-      href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
       items:
+        - name: チェックイン ポリシー
+          href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
         - name: マネージド コード用のカスタム コード分析チェックイン ポリシーを実装する
           href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
         - name: 保守性の高いコードの適用
@@ -129,8 +134,9 @@
 - name: 関連項目
   items:
     - name: 規則セット
-      href: rule-set-reference.md
       items:
+        - name: 規則セット
+          href: rule-set-reference.md
         - name: '"すべての規則" 規則セット'
           href: all-rules-rule-set.md
         - name: マネージド コードの "基本正確性規則" 規則セット
@@ -158,20 +164,23 @@
         - name: マネージド コードの "セキュリティ規則" 規則セット
           href: security-rules-rule-set-for-managed-code.md
     - name: マネージド コードの警告に対応するコード分析
-      href: code-analysis-for-managed-code-warnings.md
       items:
+        - name: マネージド コードの警告に対応するコード分析
+          href: code-analysis-for-managed-code-warnings.md
         - name: マネージド コードのコード分析警告 (CheckId 別)
           href: code-analysis-warnings-for-managed-code-by-checkid.md
         - name: 暗号化警告
-          href: cryptography-warnings.md
           items:
+            - name: 暗号化警告
+              href: cryptography-warnings.md
             - name: 'CA5350:脆弱な暗号アルゴリズムを使用しないでください'
               href: ca5350-do-not-use-weak-cryptographic-algorithms.md
             - name: CA5351 破られた暗号アルゴリズムを使用しないでください
               href: ca5351-do-not-use-broken-cryptographic-algorithms.md
         - name: デザインの警告
-          href: design-warnings.md
           items:
+            - name: デザインの警告
+              href: design-warnings.md
             - name: 'CA1000:ジェネリック型の静的メンバーを宣言しません'
               href: ca1000-do-not-declare-static-members-on-generic-types.md
             - name: 'CA1001:破棄可能なフィールドを所有する型は、破棄可能でなければなりません'
@@ -297,8 +306,9 @@
             - name: 'CA2210:アセンブリには有効な厳密な名前が必要です'
               href: ca2210-assemblies-should-have-valid-strong-names.md
         - name: グローバリゼーションの警告
-          href: globalization-warnings.md
           items:
+            - name: グローバリゼーションの警告
+              href: globalization-warnings.md
             - name: 'CA1300:MessageBoxOption を指定します'
               href: ca1300-specify-messageboxoptions.md
             - name: 'CA1301:重複するアクセラレータを使用しません'
@@ -322,8 +332,9 @@
             - name: 'CA2101:P/Invoke 文字列引数に対してマーシャリングを指定します'
               href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
         - name: 相互運用性に関する警告
-          href: interoperability-warnings.md
           items:
+            - name: 相互運用性に関する警告
+              href: interoperability-warnings.md
             - name: 'CA1400:P/Invoke エントリ ポイントは存在しなければなりません'
               href: ca1400-p-invoke-entry-points-should-exist.md
             - name: 'CA1401:P/Invoke は参照可能になりません'
@@ -357,8 +368,9 @@
             - name: 'CA1415:P/Invoke を正しく宣言します'
               href: ca1415-declare-p-invokes-correctly.md
         - name: 保守性に関する警告
-          href: maintainability-warnings.md
           items:
+            - name: 保守性に関する警告
+              href: maintainability-warnings.md
             - name: 'CA1500:変数名はフィールド名と同一にすることはできません'
               href: ca1500-variable-names-should-not-match-field-names.md
             - name: 'CA1501:継承を使用しすぎないでください'
@@ -372,15 +384,17 @@
             - name: 'CA1506:クラス結合度を大きくしすぎないでください'
               href: ca1506-avoid-excessive-class-coupling.md
         - name: モビリティに関する警告
-          href: mobility-warnings.md
           items:
+            - name: モビリティに関する警告
+              href: mobility-warnings.md
             - name: 'CA1600:アイドル状態のプロセス優先度を使用しません'
               href: ca1600-do-not-use-idle-process-priority.md
             - name: 'CA1601:電源の状態の変更を妨げるタイマーを使用しません'
               href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
         - name: 名前付けに関する警告
-          href: naming-warnings.md
           items:
+            - name: 名前付けに関する警告
+              href: naming-warnings.md
             - name: 'CA1700:列挙型値に ''Reserved'' という名前を指定しません'
               href: ca1700-do-not-name-enum-values-reserved.md
             - name: 'CA1701:リソース文字列の複合語は、大文字と小文字を正しく区別しなければなりません'
@@ -428,8 +442,9 @@
             - name: 'CA1726:適切な用語を使用します'
               href: ca1726-use-preferred-terms.md
         - name: パフォーマンスに関する警告
-          href: performance-warnings.md
           items:
+            - name: パフォーマンスに関する警告
+              href: performance-warnings.md
             - name: 'CA1800:不必要にキャストしません'
               href: ca1800-do-not-cast-unnecessarily.md
             - name: 'CA1802:適切な場所にリテラルを使用します'
@@ -463,8 +478,9 @@
             - name: 'CA1824:アセンブリを NeutralResourcesLanguageAttribute に設定します'
               href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
         - name: 移植性に関する警告
-          href: portability-warnings.md
           items:
+            - name: 移植性に関する警告
+              href: portability-warnings.md
             - name: 'CA1900:値型フィールドはポータブルでなければなりません'
               href: ca1900-value-type-fields-should-be-portable.md
             - name: 'CA1901:P/Invoke 宣言はポータブルでなければなりません'
@@ -472,8 +488,9 @@
             - name: 'CA1903:対象のフレームワークから API のみを使用します'
               href: ca1903-use-only-api-from-targeted-framework.md
         - name: 信頼性に関する警告
-          href: reliability-warnings.md
           items:
+            - name: 信頼性に関する警告
+              href: reliability-warnings.md
             - name: 'CA2000:スコープを失う前にオブジェクトを破棄'
               href: ca2000-dispose-objects-before-losing-scope.md
             - name: 'CA2001:問題が発生する可能性のあるメソッドは呼び出しません'
@@ -489,8 +506,9 @@
             - name: 'CA2007:タスクを直接待機しないでください'
               href: ca2007-do-not-directly-await-task.md
         - name: セキュリティの警告
-          href: security-warnings.md
           items:
+            - name: セキュリティの警告
+              href: security-warnings.md
             - name: 'CA2100:SQL クエリのセキュリティ脆弱性を確認'
               href: ca2100-review-sql-queries-for-security-vulnerabilities.md
             - name: 'CA2102:汎用ハンドラーの CLSCompliant でない例外をキャッチします'
@@ -587,6 +605,20 @@
               href: ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md
             - name: 'CA2302:BinaryFormatter.Deserialize を呼び出す前に BinaryFormatter.Binder が設定されていることを確認します'
               href: ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md
+            - name: 'CA2305:安全ではないデシリアライザー LosFormatter を使用しないでください'
+              href: ca2305-do-not-use-insecure-deserializer-losformatter.md
+            - name: 'CA2310:安全ではないデシリアライザー NetDataContractSerializer を使用しないでください'
+              href: ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md
+            - name: 'CA2311:最初に NetDataContractSerializer.Binder を設定しないで逆シリアル化しないでください'
+              href: ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md
+            - name: 'CA2312:NetDataContractSerializer.Binder を設定してから逆シリアル化してください'
+              href: ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md
+            - name: 'CA2315:安全ではないデシリアライザー ObjectStateFormatter を使用しないでください'
+              href: ca2315-do-not-use-insecure-deserializer-objectstateformatter.md
+            - name: 'CA2321:SimpleTypeResolver を使って JavaScriptSerializer で逆シリアル化しないでください'
+              href: ca2321.md
+            - name: 'CA2322:逆シリアル化する前に JavaScriptSerializer が SimpleTypeResolver によって初期化されていないことを確認してください'
+              href: ca2322.md
             - name: 'CA3001:SQL インジェクションの脆弱性のコード レビュー'
               href: ca3001-review-code-for-sql-injection-vulnerabilities.md
             - name: 'CA3002:XSS の脆弱性のコード レビュー'
@@ -620,8 +652,9 @@
             - name: 'CA3147:ValidateAntiForgeryToken で動詞ハンドラーをマークします'
               href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
         - name: 使用法に関する警告
-          href: usage-warnings.md
           items:
+            - name: 使用法に関する警告
+              href: usage-warnings.md
             - name: 'CA1801:使用されていないパラメーターの確認'
               href: ca1801-review-unused-parameters.md
             - name: 'CA1806:メソッドの結果を無視しない'
@@ -711,8 +744,9 @@
         - name: コード分析ポリシー エラー
           href: code-analysis-policy-errors.md
     - name: C++ Core Guidelines チェッカーの警告
-      href: code-analysis-for-cpp-corecheck.md
       items:
+        - name: C++ Core Guidelines チェッカーの警告
+          href: code-analysis-for-cpp-corecheck.md
         - name: C26400
           href: C26400.md
         - name: C26401
@@ -868,8 +902,9 @@
         - name: C26498
           href: C26498.md
     - name: C/C++ のコード分析に関する警告
-      href: code-analysis-for-c-cpp-warnings.md
       items:
+        - name: C/C++ のコード分析に関する警告
+          href: code-analysis-for-c-cpp-warnings.md
         - name: C1250
           href: c1250.md
         - name: C1251
@@ -1451,8 +1486,9 @@
         - name: C28351
           href: c28351.md
     - name: コード分析のアプリケーション エラー
-      href: code-analysis-application-errors.md
       items:
+        - name: コード分析のアプリケーション エラー
+          href: code-analysis-application-errors.md
         - name: CA0001
           href: ca0001.md
         - name: CA0051

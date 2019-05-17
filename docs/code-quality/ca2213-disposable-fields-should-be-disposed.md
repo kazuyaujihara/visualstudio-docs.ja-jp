@@ -1,6 +1,6 @@
 ---
 title: CA2213:破棄可能なフィールドは破棄されなければなりません
-ms.date: 11/05/2018
+ms.date: 05/14/2019
 ms.topic: reference
 f1_keywords:
 - DisposableFieldsShouldBeDisposed
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fff209c9a432b78ce27e9c344c1afd29e93d57f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b38157fcc23561b47a919151aa78a71f98b3909b
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806681"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805007"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213:破棄可能なフィールドは破棄されなければなりません
 
@@ -36,10 +36,21 @@ ms.locfileid: "62806681"
 
 ## <a name="rule-description"></a>規則の説明
 
-型は、そのすべてのアンマネージ リソースを破棄します。 破棄可能な型かどうかを確認する ca 2213 チェックの規則 (つまり、1 つを実装する<xref:System.IDisposable>)`T`フィールドを宣言して`F`破棄可能な型のインスタンスである`FT`します。 各フィールドの`F`メソッドまたは包含する型の初期化子内でローカルで作成されたオブジェクトが割り当てられている`T`、ルールの呼び出しを検索しようとしました。`FT.Dispose`します。 このルールによって呼び出されるメソッドを検索する`T.Dispose`と 1 レベル下 (によって呼び出されるメソッドによって呼び出されるメソッドは、 `FT.Dispose`)。
+型は、そのすべてのアンマネージ リソースを破棄します。 破棄可能な型かどうかを確認する ca 2213 チェックの規則 (つまり、1 つを実装する<xref:System.IDisposable>)`T`フィールドを宣言して`F`破棄可能な型のインスタンスである`FT`します。 各フィールドの`F`メソッドまたは包含する型の初期化子内でローカルで作成されたオブジェクトが割り当てられている`T`、ルールの呼び出しを検索しようとしました。`FT.Dispose`します。 このルールによって呼び出されるメソッドを検索する`T.Dispose`と 1 レベル下 (によって呼び出されるメソッドによって呼び出されるメソッドは、 `T.Dispose`)。
 
 > [!NOTE]
-> Ca 2213 のルールは、含む型のメソッドと初期化子内でローカルで作成された破棄可能なオブジェクトに割り当てられているフィールドに対してのみが発生します。 オブジェクトが作成または型の外部で割り当てられたかどうか`T`ルールは発生しません。 これには、含んでいる型が、オブジェクトを破棄する責任を所有しない場合のノイズが削減されます。
+> 以外の[特殊なケース](#special-cases)、ルール、含む型のメソッドと初期化子内でローカルで作成された破棄可能なオブジェクトに割り当てられているフィールドに対してのみ ca 2213 が起動します。 オブジェクトが作成または型の外部で割り当てられたかどうか`T`ルールは発生しません。 これには、含んでいる型が、オブジェクトを破棄する責任を所有しない場合のノイズが削減されます。
+
+### <a name="special-cases"></a>特殊なケース
+
+ルール ca 2213 が割り当てられているオブジェクトがローカルで作成されていない場合でもも、次の種類のフィールドの起動できます。
+
+- <xref:System.IO.Stream?displayProperty=nameWithType>
+- <xref:System.IO.TextReader?displayProperty=nameWithType>
+- <xref:System.IO.TextWriter?displayProperty=nameWithType>
+- <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
+
+これらの型のいずれかのオブジェクトをコンス トラクターに渡すと、フィールドに割り当てることを示します、*所有権の譲渡を dispose*新しく構築された型にします。 つまり、新しく構築された型では、オブジェクトの破棄を担当ようになりました。 オブジェクトは破棄されません ca 2213 の違反が発生します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
@@ -47,7 +58,10 @@ ms.locfileid: "62806681"
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 
-慣れていない場合、フィールドによって保持されているリソースを解放するのか、この規則による警告を抑制するのには安全では、呼び出し<xref:System.IDisposable.Dispose%2A>ルール チェックよりも詳細な呼び出し元のレベルで発生します。
+場合、この規則による警告を抑制しても安全です。
+
+- フラグが設定された型のフィールドによって保持されているリソースを解放するの責任ではありません (つまり、型はありません*所有権を dispose*)
+- 呼び出し<xref:System.IDisposable.Dispose%2A>ルール チェックよりも深い呼び出しレベルで発生します。
 
 ## <a name="example"></a>例
 

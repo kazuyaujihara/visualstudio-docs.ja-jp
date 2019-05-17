@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59506af5ad48bd18c454f4c59367921eed1e679a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5068d687b80da5c75fdef305028c9b5c3d8e56ed
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924078"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615177"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 このエイリアスに関連付けられている値を表すマネージ コード インターフェイスを取得します。
@@ -36,10 +39,9 @@ int GetICorDebugValue(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ppUnk`
-
- [out]`IUnknown`このエイリアスに関連付けられている値を表すインターフェイスです。 このインターフェイスを照会できます、`ICorDebugValue`インターフェイス。
+## <a name="parameters"></a>パラメーター
+`ppUnk`\
+[out]`IUnknown`このエイリアスに関連付けられている値を表すインターフェイスです。 このインターフェイスを照会できます、`ICorDebugValue`インターフェイス。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。

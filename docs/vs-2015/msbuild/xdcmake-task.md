@@ -20,19 +20,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0d306ec78087ed53ceca44b15f2e184397217650
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c16c92b41aa0635ecb24d83e30e2c347620b2c75
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584024"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675531"
 ---
 # <a name="xdcmake-task"></a>XDCMake タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XML ドキュメント ツール (xdcmake.exe) をラップします。このツールは、XML ドキュメント コメント (.xdc) ファイルを .xml ファイルにマージします。  
   
- Visual C++ ソース コードにドキュメンテーション コメントを記入し、[/doc](http://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63) コンパイラ オプションでコンパイルすると、.xdc ファイルが作成されます。 詳細については、[XDCMake リファレンス](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)、[XML ドキュメント ジェネレーター プロパティ ページ](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)、xdcmake.exe のコマンドライン ヘルプ オプション (**/?**) をご覧ください。  
+ Visual C++ ソース コードにドキュメンテーション コメントを記入し、[/doc](https://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63) コンパイラ オプションでコンパイルすると、.xdc ファイルが作成されます。 詳細については、[XDCMake リファレンス](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)、[XML ドキュメント ジェネレーター プロパティ ページ](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)、xdcmake.exe のコマンドライン ヘルプ オプション (**/?**) をご覧ください。  
   
 ## <a name="remarks"></a>解説  
  既定では、xdcmake.exe ツールはいくつかのコマンドライン オプションをサポートしています。 **/old** コマンドライン オプションを指定すると、追加のオプションがサポートされます。  
@@ -42,14 +42,14 @@ XML ドキュメント ツール (xdcmake.exe) をラップします。このツ
   
 |パラメーター|説明|  
 |---------------|-----------------|  
-|**AdditionalDocumentFile**|省略可能な **String[]** 型のパラメーターです。<br /><br /> 結合する追加の .xdc ファイルを 1 つまたは複数指定します。<br /><br /> 詳細については、[XML ドキュメント ジェネレーター プロパティ ページ](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)の**追加のドキュメント ファイル**に関する説明をご覧ください。 xdcmake.exe については、コマンドライン オプションの **/old** と **/Fs** も参照してください。|  
-|**AdditionalOptions**|省略可能な **String** 型のパラメーターです。<br /><br /> コマンド ラインで指定するオプションのリストです。 たとえば、"*/option1 /option2 /option#*" のような形式です。 他の **XDCMake** タスク パラメーターでは表されないオプションを指定する場合は、このパラメーターを使用します。<br /><br /> 詳細については、[XDCMake リファレンス](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)、[XML ドキュメント ジェネレーター プロパティ ページ](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)、xdcmake.exe のコマンドライン ヘルプ (**/?**) をご覧ください。|  
-|**DocumentLibraryDependencies**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` と現在のプロジェクトがソリューションのスタティック ライブラリ (.lib) プロジェクトに依存している場合、そのライブラリ プロジェクトの .xdc ファイルが現在のプロジェクトの .xml ファイル出力に含まれます。<br /><br /> 詳細については、[XML ドキュメント ジェネレーター プロパティ ページ](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)の**ドキュメント ライブラリの依存関係**に関する説明をご覧ください。|  
-|**OutputFile**|省略可能な **String** 型のパラメーターです。<br /><br /> 既定の出力ファイル名をオーバーライドします。 既定の名前は、処理される最初の .xdc ファイルの名前から派生します。<br /><br /> 詳細については、「[XDCMake リファレンス](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)」の **/out:**`filename` オプションの説明を参照してください。 xdcmake.exe については、コマンドライン オプションの **/old** と **/Fo** も参照してください。|  
+|**AdditionalDocumentFile**|省略可能な **String[]** 型のパラメーターです。<br /><br /> 結合する追加の .xdc ファイルを 1 つまたは複数指定します。<br /><br /> 詳細については、[XML ドキュメント ジェネレーター プロパティ ページ](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)の**追加のドキュメント ファイル**に関する説明をご覧ください。 xdcmake.exe については、コマンドライン オプションの **/old** と **/Fs** も参照してください。|  
+|**AdditionalOptions**|省略可能な **String** 型のパラメーターです。<br /><br /> コマンド ラインで指定するオプションのリストです。 たとえば、"*/option1 /option2 /option#*" のような形式です。 他の **XDCMake** タスク パラメーターでは表されないオプションを指定する場合は、このパラメーターを使用します。<br /><br /> 詳細については、[XDCMake リファレンス](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)、[XML ドキュメント ジェネレーター プロパティ ページ](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)、xdcmake.exe のコマンドライン ヘルプ (**/?**) をご覧ください。|  
+|**DocumentLibraryDependencies**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` と現在のプロジェクトがソリューションのスタティック ライブラリ (.lib) プロジェクトに依存している場合、そのライブラリ プロジェクトの .xdc ファイルが現在のプロジェクトの .xml ファイル出力に含まれます。<br /><br /> 詳細については、[XML ドキュメント ジェネレーター プロパティ ページ](https://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)の**ドキュメント ライブラリの依存関係**に関する説明をご覧ください。|  
+|**OutputFile**|省略可能な **String** 型のパラメーターです。<br /><br /> 既定の出力ファイル名をオーバーライドします。 既定の名前は、処理される最初の .xdc ファイルの名前から派生します。<br /><br /> 詳細については、「[XDCMake リファレンス](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)」の **/out:**`filename` オプションの説明を参照してください。 xdcmake.exe については、コマンドライン オプションの **/old** と **/Fo** も参照してください。|  
 |**ProjectName**|省略可能な **String** 型のパラメーターです。<br /><br /> 現在のプロジェクトの名前。|  
 |**SlashOld**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、追加の xdcmake.exe オプションを有効にします。<br /><br /> 詳細については、xdcmake.exe の **/old** コマンド ライン オプションを参照してください。|  
 |**Sources**|必須の `ITaskItem[]` 型のパラメーターです。<br /><br /> タスクで使用および生成できる MSBuild ソース ファイル アイテムの配列を定義します。|  
-|**SuppressStartupBanner**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、タスクの開始時に著作権およびバージョン番号のメッセージが表示されないようにします。<br /><br /> 詳細については、「[XDCMake リファレンス](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)」の **/nologo** オプションの説明を参照してください。|  
+|**SuppressStartupBanner**|省略可能な **Boolean** 型のパラメーターです。<br /><br /> `true` の場合、タスクの開始時に著作権およびバージョン番号のメッセージが表示されないようにします。<br /><br /> 詳細については、「[XDCMake リファレンス](https://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)」の **/nologo** オプションの説明を参照してください。|  
 |**TrackerLogDirectory**|省略可能な **String** 型のパラメーターです。<br /><br /> トラッカー ログのディレクトリを指定します。|  
   
 ## <a name="see-also"></a>関連項目  

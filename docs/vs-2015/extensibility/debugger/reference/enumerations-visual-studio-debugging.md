@@ -13,7 +13,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a992e551a99ea1963f18e58cd00546e2f528915
 ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/24/2019
 ms.locfileid: "59000890"
@@ -84,7 +84,7 @@ ms.locfileid: "59000890"
  デバッグ サーバーと、デバッグ パッケージ間の通信に使用されるプロトコルを示す値。  
   
  [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)  
- さまざまな種類のコンス トラクターを選択します。  
+ さまざまな種類のコンストラクターを選択します。  
   
  [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)  
  メモリの 2 つのコンテキストを比較するための条件を指定します。  

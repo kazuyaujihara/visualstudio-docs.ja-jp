@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c0c2781038eae4f1a896b8d6627edb2969e35ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cb90dbb44b274e84c7cc22d09249b26b6ee491f1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868396"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458276"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
 デバッグ アドレスが指定されて、アプリケーション ドメインの識別子を取得します。
@@ -37,12 +40,12 @@ int GetAppIDFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pAddress`
+## <a name="parameters"></a>パラメーター
+ `pAddress`\
 
  [in]デバッグで表されるアドレス、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。
 
- `pAppID`
+ `pAppID`\
 
  [out]アプリケーション ドメインの識別子。
 

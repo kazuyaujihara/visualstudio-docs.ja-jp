@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92ffda1188ced40e5a174a0e033263dd2fa2e5a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 19fb88886d55e38427599a9385485eed8a1bfc07
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913963"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461054"
 ---
 # <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
 マシンの記述に使用します。
@@ -37,8 +40,9 @@ public enum enum_MACHINE_INFO_FLAGS { 
 };
 ```
 
-## <a name="members"></a>メンバー
- MCIFLAG_TERMINAL_SERVICES_AVAILABLE では、ターミナル サービスが使用できることを示します。
+## <a name="fields"></a>フィールド
+ `MCIFLAG_TERMINAL_SERVICES_AVAILABLE`\
+ ターミナル サービスが使用できることを示します。
 
 ## <a name="remarks"></a>Remarks
  として使用される、`Flags`のメンバー、 [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)構造体。

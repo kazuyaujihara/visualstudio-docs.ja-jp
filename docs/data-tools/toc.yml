@@ -20,9 +20,10 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Entity Framework のツール
       href: entity-data-model-tools-in-visual-studio.md
-    - name: データセットのツール
-      href: dataset-tools-in-visual-studio.md
+    - name: データセット
       items:
+        - name: データセットのツール
+          href: dataset-tools-in-visual-studio.md
         - name: 型指定されたデータセットと型指定されていないデータセットの比較
           href: typed-vs-untyped-datasets.md
         - name: TableAdapter の概要
@@ -37,18 +38,21 @@
   items:
     - name: データベースを作成する
       href: create-a-sql-database-by-using-a-designer.md
-    - name: 接続を追加する
-      href: add-new-connections.md
+    - name: 接続
       items:
+        - name: 接続を追加する
+          href: add-new-connections.md
         - name: 接続文字列を保存および編集する
           href: how-to-save-and-edit-connection-strings.md
         - name: Access データベース内のデータに接続する
           href: connect-to-data-in-an-access-database-windows-forms.md
     - name: .NET データ ソースを追加する
       href: add-new-data-sources.md
-    - name: LINQ to SQL ツールを使用する
-      href: linq-to-sql-tools-in-visual-studio2.md
+    - name: LINQ to SQL ツール
       items:
+        - name: 概要
+          displayName: LINQ to SQL tools
+          href: linq-to-sql-tools-in-visual-studio2.md
         - name: DataContext メソッドの戻り値の型を変更する
           href: how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md
         - name: ストアド プロシージャにマップされる DataContext メソッドを作成する
@@ -69,18 +73,19 @@
           href: how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md
         - name: 複数形化をオンまたはオフにする
           href: how-to-turn-pluralization-on-and-off-o-r-designer.md
-    - name: データセットのツールの使用
+    - name: データセットのツールを使う
       items:
-        - name: Visual Studio でデータセットを作成および構成する
-          href: create-and-configure-datasets-in-visual-studio.md
+        - name: データセットを作成する
           items:
+            - name: データセットを作成および構成する
+              href: create-and-configure-datasets-in-visual-studio.md
             - name: データセット間にリレーションシップを作成する
               href: relationships-in-datasets.md
-            - name: データセット デザイナーを使用してデータセットを作成する
+            - name: データセット デザイナーを使ってデータセットを作成する
               href: walkthrough-creating-a-dataset-with-the-dataset-designer.md
-            - name: データセット デザイナーを使用して DataTable を作成する
+            - name: データセット デザイナーを使って DataTable を作成する
               href: walkthrough-creating-a-datatable-in-the-dataset-designer.md
-        - name: TableAdapter
+        - name: TableAdapters を構成する
           items:
             - name: Tableadapter の作成および構成
               href: create-and-configure-tableadapters.md
@@ -88,19 +93,21 @@
               href: create-parameterized-tableadapter-queries.md
             - name: TableAdapter で直接データベースにアクセスする
               href: directly-access-the-database-with-a-tableadapter.md
-            - name: データセットの読み込み中に制約をオフにする
+            - name: データセットへの読み込み中に制約をオフにする
               href: turn-off-constraints-while-filling-a-dataset.md
             - name: TableAdapter の機能を拡張する
               href: extend-the-functionality-of-a-tableadapter.md
-        - name: XML データのデータセットへの読み込み
+        - name: データセットに XML データを読み込む
           href: read-xml-data-into-a-dataset.md
-        - name: データセットのデータの編集
+        - name: データセットのデータを編集する
           href: edit-data-in-datasets.md
-        - name: データセットのデータの検証
+        - name: データセットのデータを検証する
           href: validate-data-in-datasets.md
         - name: データをデータベースに保存する
-          href: save-data-back-to-the-database.md
           items:
+            - name: 概要
+              displayName: Save data to database
+              href: save-data-back-to-the-database.md
             - name: データベースに新しいレコードを挿入する
               href: insert-new-records-into-a-database.md
             - name: TableAdapter を使用してデータを更新する
@@ -109,9 +116,10 @@
               href: hierarchical-update.md
             - name: コンカレンシー例外を処理する
               href: handle-a-concurrency-exception.md
-            - name: トランザクションを使用してデータを保存する
-              href: save-data-by-using-a-transaction.md
+            - name: トランザクション
               items:
+                - name: トランザクションを使用してデータを保存する
+                  href: save-data-by-using-a-transaction.md
                 - name: 'チュートリアル: トランザクションにデータを保存する'
                   href: save-data-in-a-transaction.md
             - name: データベースへのデータの保存 (複数テーブル)
@@ -134,16 +142,18 @@
               href: add-code-to-tableadapters-in-n-tier-applications.md
             - name: データセットと TableAdapters を別々のプロジェクトに分離する
               href: separate-datasets-and-tableadapters-into-different-projects.md
-    - name: データ ソースにコントロールをバインドする
-      href: bind-controls-to-data-in-visual-studio.md
+    - name: コントロール
       items:
+        - name: データ ソースにコントロールをバインドする
+          href: bind-controls-to-data-in-visual-studio.md
         - name: '[データ ソース] ウィンドウからドラッグしたときに作成されるコントロールを設定する'
           href: set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md
         - name: '[データ ソース] ウィンドウにカスタム コントロールを追加する'
           href: add-custom-controls-to-the-data-sources-window.md
-        - name: データへの WPF コントロールのバインド
-          href: bind-wpf-controls-to-data-in-visual-studio.md
+        - name: WPF コントロール
           items:
+            - name: データへの WPF コントロールのバインド
+              href: bind-wpf-controls-to-data-in-visual-studio.md
             - name: データセットへの WPF コントロールのバインド
               href: bind-wpf-controls-to-a-dataset.md
             - name: WCF Data Service への WPF コントロールのバインド
@@ -154,9 +164,10 @@
               href: display-related-data-in-wpf-applications.md
             - name: データベースの画像にコントロールをバインドする
               href: bind-controls-to-pictures-from-a-database.md
-        - name: Windows フォーム コントロールをデータにバインドする
-          href: bind-windows-forms-controls-to-data-in-visual-studio.md
+        - name: Windows フォーム コントロール
           items:
+            - name: Windows フォーム コントロールをデータにバインドする
+              href: bind-windows-forms-controls-to-data-in-visual-studio.md
             - name: Windows フォーム アプリケーションのデータのフィルター処理および並べ替えを行う
               href: filter-and-sort-data-in-a-windows-forms-application.md
             - name: データの保存前にデータ バインド コントロールで実行中の編集をコミットする
@@ -178,8 +189,10 @@
         - name: Visual Studio がデータ バインド コントロールのキャプションを作成する方法をカスタマイズする
           href: customize-how-visual-studio-creates-captions-for-data-bound-controls.md
     - name: Windows Communication Foundation サービスと WCF Data Services
-      href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
       items:
+        - name: Visual Studio の WCF の概要
+          displayName: Windows Communication Foundation Services and WCF Data Services
+          href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
         - name: 概念モデルを使用する
           href: working-with-a-conceptual-model-wcf-data-services.md
         - name: サービスのデータに接続する
@@ -207,9 +220,9 @@
         - name: データ クラスの継承
           href: data-class-inheritance-o-r-designer.md
         - name: O/R デザイナーのメッセージ
-          href: o-r-designer-messages.md
           items:
             - name: 選択したクラスは、1 つ以上の DataContext メソッドで戻り値の型として使用されているため、削除できません
+              displayName: O/R Designer messages
               href: the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md
             - name: 接続文字列にはクリア テキスト パスワード付きの資格情報が含まれていて、統合セキュリティは使用されていません
               href: the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security.md

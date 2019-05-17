@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ca90a90d476acc0bdbc1df426b981d98207bbd28
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427064"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687247"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>ドメイン固有言語の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ ms.locfileid: "63427064"
 1. クリックして**すべてのテンプレートの変換**ソリューション エクスプ ローラーのツールバー。 これには、DslDefinition.dsl からソース コードの大部分が再生成します。  
   
    > [!NOTE]
-   > クリックする必要があります DslDefinition.dsl を変更するたびに**すべてのテンプレートの変換**ソリューションを再構築する前にします。 このステップは自動化できます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)します。  
+   > クリックする必要があります DslDefinition.dsl を変更するたびに**すべてのテンプレートの変換**ソリューションを再構築する前にします。 このステップは自動化できます。 詳細については、次を参照してください。[すべてのテンプレートの変換を自動化する方法](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)します。  
   
 2. F5 キーを押すか、または、**デバッグ** メニューのをクリックして**デバッグの開始**します。  
   
@@ -141,7 +141,7 @@ ms.locfileid: "63427064"
   
  ツリーとしてモデルを表示することができます、**エクスプ ローラー**モデルを編集しているときに表示します。 ダイアグラムに図形を追加すると、モデル要素は、エクスプ ローラーでも表示されます。 ダイアグラムが存在しない場合でも、エクスプ ローラーを使用できます。  
   
- デバッグ インスタンスで、エクスプ ローラーを表示できないかどうか[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の**ビュー**  メニューをポイント**その他の Windows**、 をクリックし、  *\<Your 言語 >***エクスプ ローラー**します。  
+ デバッグ インスタンスで、エクスプ ローラーを表示できないかどうか[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の**ビュー**  メニューをポイント**その他の Windows**、 をクリックし、 *\<Your 言語>* **エクスプ ローラー**します。  
   
 ### <a name="the-api-of-your-dsl"></a>DSL の API  
  DSL では、API を使用すると、読み取りし、更新は、DSL のインスタンスであるモデルを生成します。 API の 1 つのアプリケーションでは、モデルからテキスト ファイルを生成します。 詳細については、次を参照してください。 [T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md) テンプレートの構文の詳細については、次を参照してください。  

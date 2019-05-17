@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780845"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686243"
 ---
 # <a name="profiling-tools"></a>プロファイリング ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54780845"
 ## <a name="memory-usage"></a>メモリ使用量  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- **メモリ使用量** ツールを使用したデバッグ中に、メモリ リークおよび非効率的なメモリを見つけます。 このツールを使用すると、マネージド メモリ ヒープとネイティブ メモリ ヒープのスナップショットを取得できます。 このツールはデスクトップ アプリ、Windows ユニバーサル アプリ、ASP.NET アプリで使用できます。 **メモリ使用量** ツールは、デバッグ中に **[診断ツール]** ウィンドウから (**[デバッグ]、[Windows]、[診断ツールの表示]**)、またはデバッガーの外部で (**[デバッグ]、[パフォーマンス プロファイラー...]**) 実行できます。詳細については、「[メモリ使用量](../profiling/memory-usage.md)」および「[デバッグなしのメモリ使用量の分析](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0)」を参照してください。  
+ **メモリ使用量** ツールを使用したデバッグ中に、メモリ リークおよび非効率的なメモリを見つけます。 このツールを使用すると、マネージド メモリ ヒープとネイティブ メモリ ヒープのスナップショットを取得できます。 このツールはデスクトップ アプリ、Windows ユニバーサル アプリ、ASP.NET アプリで使用できます。 **メモリ使用量** ツールは、デバッグ中に **[診断ツール]** ウィンドウから (**[デバッグ]、[Windows]、[診断ツールの表示]**)、またはデバッガーの外部で (**[デバッグ]、[パフォーマンス プロファイラー...]**) 実行できます。詳細については、「[メモリ使用量](../profiling/memory-usage.md)」および「[デバッグなしのメモリ使用量の分析](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0)」を参照してください。  
   
 ## <a name="cpu-usage"></a>CPU 使用率  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  

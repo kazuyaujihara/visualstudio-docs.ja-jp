@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c4e034659298cfa4aa67023767bd4c90ac745c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9979283258611b38e894c08446352082bcc7134e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433770"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688094"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "63433770"
  次のオプションでは、アプリケーションの全般設定を構成できます。  
   
  **アセンブリ名**  
- アセンブリ マニフェストが含まれる出力ファイルの名前を指定します。 このプロパティを変更すると、**[出力名]** プロパティも変更されます。 コマンド プロンプトで [/out (Visual Basic)](http://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae) を使用して変更することもできます。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.AssemblyName%2A>」を参照してください。  
+ アセンブリ マニフェストが含まれる出力ファイルの名前を指定します。 このプロパティを変更すると、**[出力名]** プロパティも変更されます。 コマンド プロンプトで [/out (Visual Basic)](https://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae) を使用して変更することもできます。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.AssemblyName%2A>」を参照してください。  
   
  **ルート名前空間**  
  プロジェクト内のすべてのファイルで使用する基本の名前空間を指定します。 たとえば、**[ルート名前空間]** を `Project1` に設定し、コード内のいずれの名前空間にも存在しない `Class1` がある場合、その名前空間は `Project1.Class1` になります。 また、コード内の名前空間 `Order` に `Class2` がある場合、その名前空間は `Project1.Order.Class2` になります。  
@@ -43,11 +43,11 @@ ms.locfileid: "63433770"
  **[ルート名前空間]** をクリアした場合は、コードにプロジェクトの名前空間の構造を指定できます。  
   
 > [!NOTE]
-> [Namespace ステートメント](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)で Global グローバル キーワードを使用する場合は、プロジェクトのルート名前空間以外の名前空間を定義できます。 **[ルート名前空間]** をクリアすると、`Global` は最上位レベルの名前空間になり、`Namespace` ステートメントの `Global` キーワードは不要になります。 詳細については、「[Visual Basic における名前空間](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88)」の「名前空間のステートメントでの Global キーワード」を参照してください。  
+> [Namespace ステートメント](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)で Global グローバル キーワードを使用する場合は、プロジェクトのルート名前空間以外の名前空間を定義できます。 **[ルート名前空間]** をクリアすると、`Global` は最上位レベルの名前空間になり、`Namespace` ステートメントの `Global` キーワードは不要になります。 詳細については、「[Visual Basic における名前空間](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88)」の「名前空間のステートメントでの Global キーワード」を参照してください。  
   
- コードで名前空間を作成する方法については、「[Namespace ステートメント](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)」を参照してください。  
+ コードで名前空間を作成する方法については、「[Namespace ステートメント](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)」を参照してください。  
   
- ルート名前空間プロパティの詳細については、「[/rootnamespace](http://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783)」を参照してください。  
+ ルート名前空間プロパティの詳細については、「[/rootnamespace](https://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783)」を参照してください。  
   
  プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.RootNamespace%2A>」を参照してください。  
   
@@ -71,10 +71,10 @@ ms.locfileid: "63433770"
 > [!NOTE]
 > Windows ランタイムでは、どの言語で使用される場合でも、ネイティブ オブジェクトとして表示されるように種類を射影できます。 たとえば、Windows ランタイムと対話する JavaScript アプリケーションでは JavaScript オブジェクト セットとして使用され、C# アプリケーションでは .NET オブジェクト コレクションとしてライブラリが使用されます。 WinMD ファイルとしてプロジェクトの出力をパッケージ化することで、Windows ランタイムで使用されるのと同じテクノロジを利用できます。  
   
- **[アプリケーションの種類]** プロパティの詳細については、「[/target (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c)」を参照してください。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.OutputType%2A>」を参照してください。  
+ **[アプリケーションの種類]** プロパティの詳細については、「[/target (Visual Basic)](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c)」を参照してください。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.OutputType%2A>」を参照してください。  
   
  **アイコン**  
- プログラム アイコンとして使用する .ico ファイルを設定します。 **[\<参照...>]** を選択して、既存のグラフィックを参照します。 詳細については、「[/win32icon](http://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92)」 (または「[/win32icon (C# コンパイラ オプション)](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)」) を参照してください。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>」を参照してください。  
+ プログラム アイコンとして使用する .ico ファイルを設定します。 **[\<参照...>]** を選択して、既存のグラフィックを参照します。 詳細については、「[/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92)」 (または「[/win32icon (C# コンパイラ オプション)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)」) を参照してください。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>」を参照してください。  
   
  **スタートアップ フォーム / スタートアップ オブジェクト / スタートアップ URI**  
  アプリケーションのスタートアップ フォームまたはエントリ ポイントを指定します。  
@@ -85,7 +85,7 @@ ms.locfileid: "63433770"
   
  **[アプリケーション フレームワークを有効にする]** の選択を解除すると、この一覧は **[スタートアップ オブジェクト]** になり、フォームと、`Sub Main` を含むクラスまたはモジュールの両方が表示されます。  
   
- **[スタートアップ オブジェクト]** では、アプリケーションの読み込み時に呼び出されるようにエントリ ポイントを定義します。 通常、これは、アプリケーションのメイン フォーム、またはアプリケーションの起動時に実行する必要がある `Sub Main` プロシージャに設定されます。 クラス ライブラリにはエントリ ポイントがないため、このプロパティのオプションのみが **[(なし)]** になります。 詳細については、「[/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0)」を参照してください。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.StartupObject%2A>」を参照してください。  
+ **[スタートアップ オブジェクト]** では、アプリケーションの読み込み時に呼び出されるようにエントリ ポイントを定義します。 通常、これは、アプリケーションのメイン フォーム、またはアプリケーションの起動時に実行する必要がある `Sub Main` プロシージャに設定されます。 クラス ライブラリにはエントリ ポイントがないため、このプロパティのオプションのみが **[(なし)]** になります。 詳細については、「[/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0)」を参照してください。 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.StartupObject%2A>」を参照してください。  
   
  **アセンブリ情報**  
  このボタンをクリックすると、[[アセンブリ情報] ダイアログ ボックス](../../ide/reference/assembly-information-dialog-box.md)が表示されます。  
@@ -110,7 +110,7 @@ ms.locfileid: "63433770"
  次の設定は、**[Windows アプリケーション フレームワーク プロパティ]** セクションで使用できます。 これらのオプションは、**[アプリケーション フレームワークを有効にする]** チェック ボックスがオンになっている場合にのみ使用できます。 この後に続くセクションでは、Windows Presentation Foundation (WPF) アプリケーションの **Windows アプリケーション フレームワーク プロパティ**の設定について説明します。  
   
  **XP Visual スタイルを有効にする**  
- Windows XP Visual スタイル (*Windows XP テーマ*ともいう) を有効または無効にします。 Windows XP Visual スタイルを有効にすると、角が丸いコントロールや色が動的に切り替わるコントロールなどを使用できます。 既定ではオンです。 Windows XP Visual スタイルの詳細については、「[Windows XP の機能と Windows フォーム コントロール](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)」を参照してください。  
+ Windows XP Visual スタイル (*Windows XP テーマ*ともいう) を有効または無効にします。 Windows XP Visual スタイルを有効にすると、角が丸いコントロールや色が動的に切り替わるコントロールなどを使用できます。 既定ではオンです。 Windows XP Visual スタイルの詳細については、「[Windows XP の機能と Windows フォーム コントロール](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)」を参照してください。  
   
  **単一インスタンスのアプリケーションを作成する**  
  このチェック ボックスをオンにすると、ユーザーはアプリケーションの複数のインスタンスを実行できなくなります。 既定では、このチェック ボックスはオフになっています。 この設定により、アプリケーションの複数のインスタンスを実行できるようになります。  
@@ -159,4 +159,4 @@ ms.locfileid: "63433770"
  特定のアプリケーション状態が変化すると (アプリケーション スタートアップやシャットダウンなどで)、<xref:System.Windows.Application> オブジェクトでイベントが発生します。 このクラスで公開されるイベントの完全な一覧については、「<xref:System.Windows.Application>」を参照してください。 これらのイベントは、`Application` 部分クラスのユーザー コード セクションで処理されます。  
   
 ## <a name="see-also"></a>関連項目  
-[アプリケーション プロパティの管理](../../ide/application-properties.md) [Office ソリューションのコードの記述](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+[アプリケーション プロパティの管理](../../ide/application-properties.md) [Office ソリューションのコードの記述](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e949dd566a065b266bfdbf8eae36a099fa229ef7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 78f6a0490b13c4061194390fedbefebfba60860a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403414"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689889"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML による WPF のデータ バインディングの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "63403414"
 |バインド ソース|表示のために UI 要素に渡される 1 つ以上の値のソース オブジェクト。 WPF で自動的にサポートされるバインド ソースは、CLR オブジェクト、ADO.NET データ オブジェクト、XML データ (XPath または LINQ to XML のクエリからの XML データ)、および他の <xref:System.Windows.DependencyObject> です。|  
 |ソース パス|バインドされる値または値のセットに解決されるバインド ソースのプロパティ。|  
   
- 依存プロパティは WPF 固有の概念であり、UI 要素の動的に計算されるプロパティを表します。 たとえば、依存プロパティの既定値は多くの場合、親要素によって提供されます。 これらの特殊なプロパティは、<xref:System.Windows.DependencyProperty> クラスのインスタンスに基づいています (標準のプロパティはフィールドに基づいています)。 依存関係プロパティの詳細については、「[依存関係プロパティの概要](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)」を参照してください。  
+ 依存プロパティは WPF 固有の概念であり、UI 要素の動的に計算されるプロパティを表します。 たとえば、依存プロパティの既定値は多くの場合、親要素によって提供されます。 これらの特殊なプロパティは、<xref:System.Windows.DependencyProperty> クラスのインスタンスに基づいています (標準のプロパティはフィールドに基づいています)。 依存関係プロパティの詳細については、「[依存関係プロパティの概要](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)」を参照してください。  
   
 ### <a name="dynamic-data-binding-in-wpf"></a>WPF の動的データ バインディング  
  既定では、対象となる UI 要素が初期化されたときにだけデータ バインディングが行われます。 これを*ワンタイム* バインドと呼びます。 ほとんどの場合、このバインドは十分には役立ちません。一般に、データ バインディングのソリューションでは、次のいずれかの方法を使用して実行時に変更が動的に反映されるようにする必要があります。  
@@ -53,7 +53,7 @@ ms.locfileid: "63403414"
   
   一方向または双方向のバインドが行われるようにするには、変更通知のメカニズムをソースに実装する必要があります。たとえば、<xref:System.ComponentModel.INotifyPropertyChanged> インターフェイスを実装するか、サポートする各プロパティに対して *PropertyNameChanged* パターンを使用します。  
   
-  WPF のデータ バインディングの詳細については、「[データ バインディングの概要](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)」を参照してください。  
+  WPF のデータ バインディングの詳細については、「[データ バインディングの概要](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)」を参照してください。  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>LINQ to XML クラスの動的プロパティ  
  ほとんどの LINQ to XML クラスは、適切な WPF の動的なデータ ソースとは見なされません。メソッド (およびプロパティではなく) を通じてのみ使用できますが、最も役に立つ情報の一部と、これらのクラスのプロパティは変更通知を実装していません。 LINQ to XML では、WPF のデータ バインディングをサポートするために一連の*動的プロパティ*が公開されます。  
@@ -91,6 +91,6 @@ ms.locfileid: "63403414"
 ## <a name="see-also"></a>関連項目
  [LINQ to XML による WPF のデータ バインディング](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [LINQ to XML の動的プロパティ](../designers/linq-to-xml-dynamic-properties.md)   
- [WPF の XAML](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
- [データ バインド (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)   
+ [WPF の XAML](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
+ [データ バインド (WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)   
  [ワークフロー マークアップの使用](http://go.microsoft.com/fwlink/?LinkId=98685)

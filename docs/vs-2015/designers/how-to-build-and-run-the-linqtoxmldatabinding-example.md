@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 612ef2485b0ef8b666833470e980667da16c2a97
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bebaeba2cc6f74a3ddbf059ca802252ad0bab6cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099118"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696154"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>方法: LinqToXmlDataBinding という例をビルドして実行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このトピックでは、LinqToXmlDataBinding という Visual Studio プロジェクトを作成してビルドする方法、および結果として生成される LinqToXmlDataBinding という Windows Presentation Foundation (WPF) プログラムの例を実行する方法について説明します。  
   
- Visual Studio を使用したプロジェクトの作成の詳細については、[「Visual Studio でのアプリケーション開発」](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) を参照してください。  
+ Visual Studio を使用したプロジェクトの作成の詳細については、[「Visual Studio でのアプリケーション開発」](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) を参照してください。  
   
 ## <a name="creating-and-populating-the-project"></a>プロジェクトの作成とデータの取り込み  
   
@@ -79,4 +79,4 @@ ms.locfileid: "60099118"
 ## <a name="see-also"></a>関連項目
  [LINQ to XML を使用した WPF のデータ バインディングの例](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
  [チュートリアル: LinqToXmlDataBinding の例](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [Visual Studio でのアプリケーション開発](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)
+ [Visual Studio でのアプリケーション開発](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)

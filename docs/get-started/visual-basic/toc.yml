@@ -1,6 +1,7 @@
 - name: Visual Basic のチュートリアル
-  href: index.yml
   items:
+    - name: Visual Basic のチュートリアル
+      href: index.yml
     - name: 概要
       items:
         - name: Visual Studio について

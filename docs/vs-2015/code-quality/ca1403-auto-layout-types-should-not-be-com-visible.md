@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2bbb227f86d12f6e711b4535da6bfda25b557401
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2420582ab342948d7774e1bb9e4b5947f44f8d2b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973092"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695439"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403:Auto 配置の型を COM 参照可能にすることはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58973092"
  コンポーネント オブジェクト モデル (COM) 参照可能な値の型が付いて、<xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName>属性に設定<xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>します。
 
 ## <a name="rule-description"></a>規則の説明
- <xref:System.Runtime.InteropServices.LayoutKind> レイアウトの種類は、共通言語ランタイムによって管理されます。 これらの型のレイアウトは、COM クライアントが特定のレイアウトが予期される動作しなくなる .NET Framework のバージョン間で変更できます。 されている場合、<xref:System.Runtime.InteropServices.StructLayoutAttribute>属性が指定されていない、C#、 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]、C++ コンパイラを指定し、<xref:System.Runtime.InteropServices.LayoutKind>値型のレイアウト。
+ <xref:System.Runtime.InteropServices.LayoutKind> レイアウトの種類は、共通言語ランタイムによって管理されます。 これらの型のレイアウトは、COM クライアントが特定のレイアウトが予期される動作しなくなる .NET Framework のバージョン間で変更できます。 されている場合、<xref:System.Runtime.InteropServices.StructLayoutAttribute>属性が指定されていない、c#、 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]、C++ コンパイラを指定し、<xref:System.Runtime.InteropServices.LayoutKind>値型のレイアウト。
 
  それ以外の場合にマークされている場合は、すべてのパブリックの非ジェネリック型の COM; から参照できるものすべての非パブリックとジェネリック型が COM に表示されません。 ただし、偽陽性を減らすためには、このルールが必要です。 明示的に指定する対象の型の COM の参照範囲格納しているアセンブリをマークする必要があります、<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>に設定`false`で型をマークする必要があり、<xref:System.Runtime.InteropServices.ComVisibleAttribute>に設定`true`します。
 
@@ -56,4 +56,4 @@ ms.locfileid: "58973092"
  [CA 1408:AutoDual ClassInterfaceType を使用します。](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>関連項目
- [クラス インターフェイスの概要](http://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024)[相互運用のための .NET 型を修飾](http://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd)[アンマネージ コードと相互運用](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ [クラス インターフェイスの概要](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024)[相互運用のための .NET 型を修飾](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd)[アンマネージ コードと相互運用](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

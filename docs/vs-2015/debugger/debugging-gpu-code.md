@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bb5342dc2b5da3d1192aadbbea186b5b21f179f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434877"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691546"
 ---
 # <a name="debugging-gpu-code"></a>GPU コードのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "63434877"
 ## <a name="troubleshooting"></a>トラブルシューティング  
   
 ### <a name="specifying-an-accelerator"></a>アクセラレータの指定  
- GPU コード内のブレークポイントがヒットするのは、コードが [accelerator::direct3d_ref](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF) アクセラレータで実行されている場合のみです。 コード内でアクセラレータを指定していない場合は、REF アクセラレータがプロジェクトのプロパティの **[デバッグ アクセラレータの種類]** で自動的に選択されます。 コード内でアクセラレータを明示的に選択している場合、REF アクセラレータはデバッグ中に使用されません。GPU ハードウェアがデバッグをサポートしていない限り、ブレークポイントがヒットすることはありません。 この問題を解決するには、デバッグ中に REF アクセラレータを使用するようにコードを記述します。 詳細については、プロジェクトのプロパティを参照してくださいと[アクセラレータおよび accelerator_view オブジェクトを使用して](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1)と[のプロジェクト設定、C++デバッグ構成](../debugger/project-settings-for-a-cpp-debug-configuration.md)します。  
+ GPU コード内のブレークポイントがヒットするのは、コードが [accelerator::direct3d_ref](https://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF) アクセラレータで実行されている場合のみです。 コード内でアクセラレータを指定していない場合は、REF アクセラレータがプロジェクトのプロパティの **[デバッグ アクセラレータの種類]** で自動的に選択されます。 コード内でアクセラレータを明示的に選択している場合、REF アクセラレータはデバッグ中に使用されません。GPU ハードウェアがデバッグをサポートしていない限り、ブレークポイントがヒットすることはありません。 この問題を解決するには、デバッグ中に REF アクセラレータを使用するようにコードを記述します。 詳細については、プロジェクトのプロパティを参照してくださいと[アクセラレータおよび accelerator_view オブジェクトを使用して](https://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1)と[のプロジェクト設定、C++デバッグ構成](../debugger/project-settings-for-a-cpp-debug-configuration.md)します。  
   
 ### <a name="conditional-breakpoints"></a>条件付きブレークポイント  
  GPU コード内の条件付きブレークポイントはサポートされていますが、すべての式をデバイス上で評価できるとは限りません。 式はデバイスで評価できないと、デバッガーで評価されます。 デバッガーでの処理はデバイスでの処理よりも遅くなる可能性があります。  
@@ -83,6 +83,6 @@ ms.locfileid: "63434877"
  Windows のタイムアウト検出と復旧 (TDR) で設定されている既定の時間間隔より、C++ AMP の計算が長くかかっている可能性があります。 その場合、計算は取り消され、データは失われます。 詳細については、「[Handling TDRs in C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154)」 (C++ AMP での TDR の処理) を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: C++ AMP アプリケーションのデバッグ](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
+ [チュートリアル: C++ AMP アプリケーションのデバッグ](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Visual Studio で GPU デバッグを開始する](http://go.microsoft.com/fwlink/p/?LinkId=255381)

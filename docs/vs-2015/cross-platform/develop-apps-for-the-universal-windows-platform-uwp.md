@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8af5414b1c775a17421b87b9c18d58c34f544405
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666768"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698649"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "59666768"
   
  **ユニバーサル Windows プラットフォームとは何ですか。**  
   
- これはコントラクトとバージョンの単純なコレクションです。 これらにより、アプリを実行する対象となる場所を指定できます。 オペレーティング システムを対象とすることは、もはやありません。 今後は、1 つ以上のデバイス ファミリがアプリの対象になります。 詳しくは、この [プラットフォーム ガイド](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx)をご覧ください。  
+ これはコントラクトとバージョンの単純なコレクションです。 これらにより、アプリを実行する対象となる場所を指定できます。 オペレーティング システムを対象とすることは、もはやありません。 今後は、1 つ以上のデバイス ファミリがアプリの対象になります。 詳しくは、この [プラットフォーム ガイド](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx)をご覧ください。  
   
 ## <a name="requirements"></a>必要条件  
  ユニバーサル Windows アプリの開発ツールには、別のデバイス上のアプリの外観を確認する際に使用できるエミュレーターが付属しています。 これらのエミュレーターを使用する場合は、このソフトウェアを物理マシンにインストールする必要があります。 その物理マシンでは、Windows 8.1 (x64) Professional エディション以上が実行され、クライアント Hyper-V および第 2 レベルのアドレス変換 (SLAT) をサポートするプロセッサが搭載されている必要があります。 Visual Studio が仮想マシンにインストールされている場合は、エミュレーターを使用できません。  
@@ -55,8 +55,8 @@ ms.locfileid: "59666768"
   開発プラットフォームが Windows 10 の場合に使用できるのは、XAML デザイナーのみです。  
   
 ## <a name="universal-windows-apps"></a>ユニバーサル Windows アプリ  
- 希望する開発言語を C#、Visual Basic、C++ または JavaScript の中から選び、 [Windows 10 デバイスを対象とするユニバーサル Windows アプリを作成します](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10)。 あるいは [この入門用ビデオ](http://channel9.msdn.com/Series/ConnectOn-Demand/229)を再生します。  
+ 希望する開発言語を C#、Visual Basic、C++ または JavaScript の中から選び、 [Windows 10 デバイスを対象とするユニバーサル Windows アプリを作成します](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10)。 あるいは [この入門用ビデオ](http://channel9.msdn.com/Series/ConnectOn-Demand/229)を再生します。  
   
- 既存の Windows 8.1 のストア アプリ、Windows Phone 8.1 アプリ、または Visual Studio 2015 RC で作成されたユニバーサル Windows アプリがある場合、最新のユニバーサル Windows プラットフォームを使用するよう、 [これらの既存のアプリを移植します](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 。  
+ 既存の Windows 8.1 のストア アプリ、Windows Phone 8.1 アプリ、または Visual Studio 2015 RC で作成されたユニバーサル Windows アプリがある場合、最新のユニバーサル Windows プラットフォームを使用するよう、 [これらの既存のアプリを移植します](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 。  
   
  ユニバーサル Windows アプリを作成したら、 [アプリをパッケージ化して](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) 、それを Windows 10 デバイスにインストールするか Windows ストアに送信する必要があります。

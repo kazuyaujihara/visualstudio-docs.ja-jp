@@ -19,12 +19,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e0645cd28e6124e31e19b03489661c6828799cf4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116785"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686744"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>ASP.NET アプリケーションおよび AJAX アプリケーションのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60116785"
  [デバッガーでの例外の管理](../debugger/managing-exceptions-with-the-debugger.md)  
  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] の例外のデバッグ時に "マイ コードのみ" を有効にする必要がある理由について説明します。  
   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  AJAX コードをデバッグするのに役立つ方法とツールについて説明します。  
   
  [IntelliTrace](../debugger/intellitrace.md)  

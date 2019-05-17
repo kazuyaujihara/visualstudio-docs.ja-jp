@@ -13,19 +13,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 466178015c725242b6bc4a28da1da6ded19b421f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820862"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676288"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>方法: マネージド コード プロジェクトのコード分析を構成する
+# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>方法: マネージ コード用の静的コード分析を構成します。
 
-Visual Studio でコード分析の一覧から選択することができます[ルール セット](../code-quality/rule-set-reference.md)) マネージ コード プロジェクトに適用します。 既定で、 **Microsoft 最小推奨規則**規則セットを選択するが必要な場合は、設定、別の規則を適用できます。 規則セットは、ソリューション内の 1 つまたは複数のプロジェクトに適用できます。
+Visual Studio では、コード分析の一覧から選択できる[ルール セット](../code-quality/rule-set-reference.md)マネージ コード プロジェクトに適用します。 既定で、 **Microsoft 最小推奨規則**規則セットを選択するが必要な場合は、設定、別の規則を適用できます。 規則セットは、ソリューション内の 1 つまたは複数のプロジェクトに適用できます。
 
-> [!TIP]
-> ASP.NET web アプリケーションのルール セットを構成する方法については、次を参照してください。[方法。ASP.NET web アプリケーションのコード分析を構成する](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)します。
+ASP.NET web アプリケーションのルール セットを構成する方法については、次を参照してください。[方法。ASP.NET web アプリケーションのコード分析を構成する](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)します。
+
+> [!NOTE]
+> 静的コード分析をしないと、この記事が適用されます[Roslyn アナライザー](use-roslyn-analyzers.md)ビルドの後にコード分析の実行がありません。
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>.NET Framework プロジェクトの規則セットを構成するには
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4302a911e58a23bdcd58bb054c1fc90c389fed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dba231f173f3828243e284a7d68a877204df1bd0
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865454"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458016"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 モジュールのデバッグ情報のフラグを指定します。
@@ -61,32 +64,45 @@ public enum enum_MODULE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>メンバー
- MIF_NONE 初期化/使用の構造でフィールドがありません。
+## <a name="fields"></a>フィールド
+ `MIF_NONE`\
+ 構造体のフィールドの [なし] を初期化するか、/使用します。
 
- MIF_NAME 初期化/使用、`m_bstrName`フィールドに、 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)構造体。
+ `MIF_NAME`\
+ 初期化/使用、`m_bstrName`フィールドに、 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)構造体。
 
- MIF_URL 初期化/使用、`m_bstrUrl`フィールドに、`MODULE_INFO`構造体。
+ `MIF_URL`\
+ 初期化/使用、`m_bstrUrl`フィールドに、`MODULE_INFO`構造体。
 
- MIF_VERSION 初期化/使用、`m_bstrVersion`フィールドに、`MODULE_INFO`構造体。
+ `MIF_VERSION`\
+ 初期化/使用、`m_bstrVersion`フィールドに、`MODULE_INFO`構造体。
 
- MIF_DEBUGMESSAGE 初期化/使用、`m_bstrDebugMessage`フィールドに、`MODULE_INFO`構造体。
+ `MIF_DEBUGMESSAGE`\
+ 初期化/使用、`m_bstrDebugMessage`フィールドに、`MODULE_INFO`構造体。
 
- MIF_LOADADDRESS 初期化/使用、`m_addrLoadAddress`フィールドに、`MODULE_INFO`構造体。
+ `MIF_LOADADDRESS`\
+ 初期化/使用、`m_addrLoadAddress`フィールドに、`MODULE_INFO`構造体。
 
- MIF_PREFFEREDADDRESS 初期化/使用、`m_addrPreferredLoadAddress`フィールドに、`MODULE_INFO`構造体。
+ `MIF_PREFFEREDADDRESS`\
+ 初期化/使用、`m_addrPreferredLoadAddress`フィールドに、`MODULE_INFO`構造体。
 
- MIF_SIZE 初期化/使用、`m_dwSize`フィールドに、`MODULE_INFO`構造体。
+ `MIF_SIZE`\
+ 初期化/使用、`m_dwSize`フィールドに、`MODULE_INFO`構造体。
 
- MIF_LOADORDER 初期化/使用、`m_dwLoadOrder`フィールドに、`MODULE_INFO`構造体。
+ `MIF_LOADORDER`\
+ 初期化/使用、`m_dwLoadOrder`フィールドに、`MODULE_INFO`構造体。
 
- MIF_TIMESTAMP 初期化/使用、`m_TimeStamp`フィールドに、`MODULE_INFO`構造体。
+ `MIF_TIMESTAMP`\
+ 初期化/使用、`m_TimeStamp`フィールドに、`MODULE_INFO`構造体。
 
- MIF_URLSYMBOLLOCATION 初期化/使用、`m_bstrUrlSymbolLocation`フィールドに、`MODULE_INFO`構造体。
+ `MIF_URLSYMBOLLOCATION`\
+ 初期化/使用、`m_bstrUrlSymbolLocation`フィールドに、`MODULE_INFO`構造体。
 
- MIF_FLAGS 初期化/使用、`m_dwModuleFlags`フィールドに、`MODULE_INFO`構造体。
+ `MIF_FLAGS`\
+ 初期化/使用、`m_dwModuleFlags`フィールドに、`MODULE_INFO`構造体。
 
- MIF_ALLFIELDS 初期化/使用のすべてのフィールドで、`MODULE_INFO`構造体。
+ `MIF_ALLFIELDS`\
+ すべてのフィールドの初期化/使用、`MODULE_INFO`構造体。
 
 ## <a name="remarks"></a>Remarks
  これらの値が引数として渡される、 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)のどのフィールドを示すメソッド、 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)構造体が初期化されるは。

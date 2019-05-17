@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3ec96c5ba806e6eff735edc8093868b19ebaf5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b090fecf532ef862660b26432e930830cdb1d12b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913836"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460962"
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
 モジュールの記述に使用します。
@@ -47,18 +50,24 @@ public enum enum_MODULE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>メンバー
- MODULE_FLAG_NONE はモジュールを指定します。
+## <a name="fields"></a>フィールド
+ `MODULE_FLAG_NONE`\
+ モジュールは指定されません。
 
- MODULE_FLAG_SYSTEM では、システム モジュールを指定します。
+ `MODULE_FLAG_SYSTEM`\
+ システム モジュールを指定します。
 
- MODULE_FLAG_SYMBOLS は、シンボル モジュールを指定します。
+ `MODULE_FLAG_SYMBOLS`\
+ シンボルのモジュールを指定します。
 
- MODULE_FLAG_64BIT では、64 ビット モジュールを指定します。
+ `MODULE_FLAG_64BIT`\
+ 64 ビット モジュールを指定します。
 
- MODULE_FLAG_OPTIMIZED では、モジュールが最適化されているを指定します。 この状態が反映、**モジュール**ウィンドウ。
+ `MODULE_FLAG_OPTIMIZED`\
+ モジュールが最適化されているを指定します。 この状態が反映、**モジュール**ウィンドウ。
 
- MODULE_FLAG_UNOPTIMIZED では、モジュールが最適化されていないを指定します。 この状態が反映、**モジュール**ウィンドウ。 これは、既定の状態です。
+ `MODULE_FLAG_UNOPTIMIZED`\
+ モジュールが最適化されていないことを指定します。 この状態が反映、**モジュール**ウィンドウ。 これは、既定の状態です。
 
 ## <a name="remarks"></a>Remarks
  使用、`m_dwModuleFlags`のメンバー、 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)構造体。

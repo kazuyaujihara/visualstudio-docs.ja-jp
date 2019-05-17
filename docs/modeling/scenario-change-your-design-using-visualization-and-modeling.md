@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824135"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476590"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>シナリオ:視覚化およびモデリングを使用して設計を変更する
 
@@ -110,13 +110,13 @@ Team Foundation Server の詳細については、次のトピックを参照し
 - [依存関係図を使用したコードの検証](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> Visual Studio のバージョンによっては、依存関係の検証とコード マップの読み取り専用のバージョンを視覚化およびモデリングをサポートします。 この機能をサポートする Visual Studio のエディションを確認するを参照してください。 [Edition のサポート アーキテクチャとモデリング ツール](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)します。
+> Visual Studio のバージョンによっては、依存関係の検証とコード マップの読み取り専用のバージョンを視覚化およびモデリングをサポートします。 Visual C＃ および Visual Basic プロジェクトの依存関係図を作成することができます[アーキテクチャおよびモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport) を参照してください。
 
 ## <a name="understand-and-communicate-information-about-the-system"></a>理解し、システムに関する情報を通信
 
 Visual Studio のモデリング図は、使用する順番は特に決まっていません。したがって、それぞれのニーズや方法に合わせて使用できます。 モデルは通常、プロジェクト全体を通じて繰り返し頻繁に参照されます。 図にはそれぞれ長所があるため、さまざまな図を使用することにより、開発中のシステムのさまざまな側面を把握、記述、および伝達できます。
 
-Dinner Now と Lucerne は、プロジェクトに関するコミュニケーションのための共通の言語として図を使用しています。 たとえば、Dinner Now では次のような作業に図を使用しています。
+Dinner Now と Lucerne は、共通の言語として図を使用して相互およびプロジェクト利害関係者と通信します。 たとえば、Dinner Now では次のような作業に図を使用しています。
 
 - 既存のコードの視覚化。
 
@@ -172,11 +172,11 @@ Dinner Now では、新しい要求を満たすためのコストを見積もる
 
 |**図**|**記述する内容**|
 |-|-|
-|*依存関係図*<br /><br /> 参照トピック<br /><br /> - [コードから依存関係図を作成します。](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依存関係図:参照](../modeling/layer-diagrams-reference.md)<br />- [依存関係図:ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />- [依存関係図を使用したコードを検証します。](../modeling/validate-code-with-layer-diagrams.md)|コードの論理アーキテクチャ。<br /><br /> 依存関係図を整理し、マップと呼ばれるグループを抽象化するための Visual Studio ソリューションの成果物*レイヤー*します。 これらのレイヤーは、それらの成果物がシステムで実行するロール、タスク、または機能を識別します。<br /><br /> レイヤー図は、必要とされるシステムの設計を記述し、コードの変更をその設計に照らし合わせて検証するのに便利です。<br /><br /> レイヤーを作成するには、ソリューション エクスプローラー、コード マップ、クラス ビュー、およびオブジェクト ブラウザーから項目をドラッグします。 新しいレイヤーを描画するには、ツールボックスを使用するか、図の画面を右クリックします。<br /><br /> 既存の依存関係を表示するには、レイヤー図の画面を右クリックし、 **[依存関係の生成]** をクリックします。 必要とされる依存関係を指定するには、新しい依存関係を描画します。|
+|*依存関係図*<br /><br /> 参照トピック<br /><br /> - [コードから依存関係図を作成します。](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依存関係図:参照](../modeling/layer-diagrams-reference.md)<br />- [依存関係図:ガイドライン](../modeling/layer-diagrams-guidelines.md)<br />- [依存関係図を使用したコードを検証します。](../modeling/validate-code-with-layer-diagrams.md)|コードの論理アーキテクチャ。<br /><br /> 依存関係図を整理し、マップと呼ばれるグループを抽象化するための Visual Studio ソリューションの成果物*レイヤー*します。 これらのレイヤーは、それらの成果物がシステムで実行するロール、タスク、または機能を識別します。<br /><br /> 依存関係図は、システムの設計を記述して、そのデザインに対してコードの変更を検証する場合に便利です。<br /><br /> レイヤーを作成するには、ソリューション エクスプローラー、コード マップ、クラス ビュー、およびオブジェクト ブラウザーから項目をドラッグします。 新しいレイヤーを描画するには、ツールボックスを使用するか、図の画面を右クリックします。<br /><br /> 既存の依存関係を表示する依存関係図の画面を右クリックし、**依存関係の生成**します。 必要とされる依存関係を指定するには、新しい依存関係を描画します。|
 
- たとえば、次の依存関係図には、レイヤーと各レイヤーに関連付けられている成果物の数の間の依存関係について説明します。
+たとえば、次の依存関係図には、レイヤーと各レイヤーに関連付けられている成果物の数の間の依存関係について説明します。
 
- ![統合された支払いシステムの依存関係図](../modeling/media/layer_integrated_dnlucerne.png)
+![統合された支払いシステムの依存関係図](../modeling/media/layer_integrated_dnlucerne.png)
 
  **依存関係図**
 
@@ -194,7 +194,7 @@ Dinner Now では、新しい要求を満たすためのコストを見積もる
 
 - ほとんどの図は、線で接続された一連のノードで構成されています。 図の種類ごとに異なるノードと線がツールボックスに表示されます。
 
-     ツールボックスを開くには、 **[表示]** メニューの **[ツールボックス]** をクリックします。
+   ツールボックスを開くには、 **[表示]** メニューの **[ツールボックス]** をクリックします。
 
 - ノードを生成するには、ツールボックスから図にノードをドラッグします。 既存のノードにドラッグする必要がある種類のノードもあります。 たとえば、コンポーネント図では、新しいポートは既存のコンポーネントに追加する必要があります。
 
@@ -206,7 +206,7 @@ Visual Studio のモデリング図は Team Foundation Server と統合されて
 
 Dinner Now と Lucerne は、作業の進行に伴って、タスクに費やされた時間を反映して作業項目を更新できます。 また、Team Foundation Server の以下の機能を使用して、作業の状況を監視および報告できます。
 
-- 計画された作業を予定どおりに完了できるかどうかを示す日次 *バーンダウン レポート* 。 Team Foundation Server で他の同様のレポートを生成してバグの状況を追跡することもできます。
+- 毎日*バーン ダウン レポート*作業予定時刻を予定どおりに完了できるかどうかを示します。 Team Foundation Server で他の同様のレポートを生成してバグの状況を追跡することもできます。
 
 - Microsoft Excel を使用してチームのメンバーの作業負荷を監視および調整できる *イテレーション ワークシート* 。 このワークシートは Team Foundation Server にリンクされており、進行状況に関する定例会議で資料として使用できます。
 
@@ -329,7 +329,7 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
 |**図**|**記述する内容**|
 |-|-|
-|依存関係図|システムの論理アーキテクチャ。 依存関係の検証を使用して、コードが、設計と一致するかどうかを確認します。<br /><br /> 既存 dependencys または目的 dependencys を識別するために、コード マップを作成し、関連する項目をグループ化します。 依存関係図を作成するには、次を参照してください。<br /><br /> - [コードから依存関係図を作成します。](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依存関係図:ガイドライン](../modeling/layer-diagrams-guidelines.md)|
+|依存関係図|システムの論理アーキテクチャ。 依存関係の検証を使用して、コードが、設計と一致するかどうかを確認します。<br /><br /> 既存の依存関係または目的の依存関係を識別するために、コード マップを作成し、関連する項目をグループ化します。 依存関係図を作成するには、次を参照してください。<br /><br /> - [コードから依存関係図を作成します。](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依存関係図:ガイドライン](../modeling/layer-diagrams-guidelines.md)|
 |クラス図 (コード ベース)|特定のプロジェクトに対するコード内の既存のクラス。<br /><br /> コード内の既存のクラスを視覚化して変更するには、クラス デザイナーを使用します。<br /><br /> 「[方法:(クラス デザイナー) のプロジェクトにクラス ダイアグラムを追加する](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)します。|
 
 ### <a name="DefineClasses"></a> 型の用語集を定義します。クラス ダイアグラム

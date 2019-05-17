@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d598cc245421aafb05cbf91fe2b7a95e39564a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33ce391523a256bcb195deccf0c14868b5eae707
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444322"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683092"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>チュートリアル: マルチ スレッド アプリケーションのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "63444322"
   
      新しいコンソール プロジェクトが表示されます。 プロジェクトが作成されると、ソース ファイルが表示されます。 選択した言語に応じて、ソース ファイル名はそれぞれ Module1.vb、Program.cs、MyThreadWalkthroughApp.cpp などとなります。  
   
-6. ソース ファイルに表示されるコードを削除し、トピックのスレッドの作成」セクションに表示される例のコードに置き換えます[スレッドの作成と開始時にデータを渡す](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d)します。  
+6. ソース ファイルに表示されるコードを削除し、トピックのスレッドの作成」セクションに表示される例のコードに置き換えます[スレッドの作成と開始時にデータを渡す](https://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d)します。  
   
 7. **[ファイル]** メニューの **[すべてを保存]** をクリックします。  
   

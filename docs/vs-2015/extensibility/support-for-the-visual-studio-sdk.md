@@ -14,12 +14,12 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e71097bacd12e8e60690108a8dd62a370aed6f52
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 1bfb2a7e30542977906fd71e168652aa661fcc8d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002970"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688733"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK のサポート
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "59002970"
 ## <a name="included-support"></a>対象のサポート  
   
 ### <a name="visual-studio-product-support"></a>Visual Studio 製品のサポート  
- 一部のサポートがの購入時に含まれる[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]製品です。 詳細については、次を参照してください。 [Visual Studio サポート](http://msdn.microsoft.com/vstudio/cc136615.aspx)します。 Microsoft の管理に関する質問に回答する専用のサポート チーム[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]機能拡張。  
+ 一部のサポートがの購入時に含まれる[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]製品です。 詳細については、次を参照してください。 [Visual Studio サポート](https://msdn.microsoft.com/vstudio/cc136615.aspx)します。 Microsoft の管理に関する質問に回答する専用のサポート チーム[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]機能拡張。  
   
 ### <a name="msdn-subscription-support"></a>MSDN サブスクリプションのサポート  
  MSDN サブスクリプションのパッケージは、一部のサポートを含めることもできます。 詳細については、次を参照してください。 [MSDN サブスクリプション会員のサポート](https://msdn.microsoft.com/subscriptions/aa718661.aspx)します。  

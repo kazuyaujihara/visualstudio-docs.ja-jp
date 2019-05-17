@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 835509048e888e13b91c53d9e35bd03d7aebdfed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28af715c307ebede5fa264c46cd42b85e8868674
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913502"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457959"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
 プロセスを取得する情報の種類を指定します。
@@ -53,24 +56,33 @@ public enum enum_PROCESS_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>メンバー
- PIF_FILE_NAME 初期化/使用、`bstrFileName`のフィールド、 [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)構造体。
+## <a name="fields"></a>フィールド
+ `PIF_FILE_NAME`\
+ 初期化/使用、`bstrFileName`のフィールド、 [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)構造体。
 
- PIF_BASE_NAME 初期化/使用、`bstrBaseName`のフィールド、`PROCESS_INFO`構造体。
+ `PIF_BASE_NAME`\
+ 初期化/使用、`bstrBaseName`のフィールド、`PROCESS_INFO`構造体。
 
- PIF_TITLE 初期化/使用、`bstrTitle`のフィールド、`PROCESS_INFO`構造体。
+ `PIF_TITLE`\
+ 初期化/使用、`bstrTitle`のフィールド、`PROCESS_INFO`構造体。
 
- PIF_PROCESS_ID 初期化/使用、`ProcessId`のフィールド、`PROCESS_INFO`構造体。
+ `PIF_PROCESS_ID`\
+ 初期化/使用、`ProcessId`のフィールド、`PROCESS_INFO`構造体。
 
- PIF_SESSION_ID 初期化/使用、`dwSessionId`のフィールド、`PROCESS_INFO`構造体。
+ `PIF_SESSION_ID`\
+ 初期化/使用、`dwSessionId`のフィールド、`PROCESS_INFO`構造体。
 
- PIF_ATTACHED_SESSION_NAME 初期化/使用、`bstrAttachedSessionName`のフィールド、`PROCESS_INFO`構造体。
+ `PIF_ATTACHED_SESSION_NAME`\
+ 初期化/使用、`bstrAttachedSessionName`のフィールド、`PROCESS_INFO`構造体。
 
- PIF_CREATION_TIME 初期化/使用、`CreationTime`のフィールド、`PROCESS_INFO`構造体。
+ `PIF_CREATION_TIME`\
+ 初期化/使用、`CreationTime`のフィールド、`PROCESS_INFO`構造体。
 
- PIF_FLAGS 初期化/使用、`Flags`のフィールド、`PROCESS_INFO`構造体。
+ `PIF_FLAGS`\
+ 初期化/使用、`Flags`のフィールド、`PROCESS_INFO`構造体。
 
- PIF_ALL は、すべてのフィールドに設定します。
+ `PIF_ALL`\
+ すべてのフィールドに入力します。
 
 ## <a name="remarks"></a>Remarks
  渡される、 [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)のどのフィールドを示すメソッド、 [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)構造体が初期化されるは。

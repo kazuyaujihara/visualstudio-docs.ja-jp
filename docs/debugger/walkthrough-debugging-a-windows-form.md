@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 663adfbf1858a4da686330813c6fe3c5eed4d098
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d2f581582acfed38d55a2cfef351856cc0caa945
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407594"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678919"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>チュートリアル: Windows フォームのデバッグ
 Windows フォームは、最も一般的なマネージド アプリケーションの 1 つです。 Windows フォームは、標準 Windows アプリケーションを作成します。 このチュートリアルは、Visual Basic、C#、または C++ を使用して実行できます。
@@ -165,23 +165,24 @@ Windows フォームは、最も一般的なマネージド アプリケーシ�
 
     ```cpp
     textBox1->Text = "Button was clicked!";
+    ```
 
-2. On the **Debug** menu, select **Start Without Debugging**.
+2. **デバッグ**メニューの **デバッグなしで開始**します。
 
-     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
+     Windows フォームは、実行可能ファイルをダブルクリックしたときと同様に、Windows で実行を開始します。 デバッガーはアタッチされていません。
 
-3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. **デバッグ**メニューの **プロセスにアタッチ**します。 (このコマンドはできるも、**ツール**メニュー)。
 
-     The **Attach to Process** dialog box appears.
+     **[プロセスにアタッチ]** ダイアログ ボックスが表示されます。
 
-4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. **選択可能なプロセス** ウィンドウで、プロセス名 (Walkthrough_SimpleDebug.exe) 検索、**プロセス**列をクリックします。
 
-5. Click the **Attach** button.
+5. をクリックして、**アタッチ**ボタンをクリックします。
 
-6. In your Windows Form, click the one and only button.
+6. Windows フォームで、1 つだけあるボタンをクリックします。
 
-     The debugger breaks execution of the Windows Form at the breakpoint.
+     ブレークポイントの位置で、Windows フォームの実行が中断します。
 
-## See Also
-- [Debugging Managed Code](../debugger/debugging-managed-code.md)
-- [Debugger Security](../debugger/debugger-security.md)
+## <a name="see-also"></a>関連項目
+- [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)
+- [デバッガーのセキュリティ](../debugger/debugger-security.md)

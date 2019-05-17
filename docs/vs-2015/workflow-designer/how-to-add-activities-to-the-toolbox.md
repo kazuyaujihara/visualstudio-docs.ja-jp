@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af470bbbebbf10fdfcf906c905171e86b0c100ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0aa6a76555a18c142acb8759b1bc71d56e9d7dcd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433534"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690939"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>方法: ツール ボックスにアクティビティを追加する
 アクティビティに追加できる、**ツールボックス**でいくつかの方法でソリューション。 アクティビティを現在のプロジェクト内から追加したり、別のプロジェクトや別のアセンブリから参照したりできます。  
@@ -34,7 +34,7 @@ ms.locfileid: "63433534"
     > ツールボックスには指定された名前の 1 つのアクティビティのみが表示できます。 異なるアセンブリからの 2 つのアクティビティのクラス名が同じ場合、1 つのみが表示されます。  
   
     > [!NOTE]
-    > アプリケーション ドメインは、エディターのインスタンス間で共有されます。静的変数を使用する場合は、エディターのインスタンス間でも共有されます。 これが目的の動作でない場合には、変数インスタンスの追跡にサービスを使用する必要があります。 参照してください[ModelItem 編集コンテキストを使用して](http://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1)については、デザイナー内でサービスを使用します。  
+    > アプリケーション ドメインは、エディターのインスタンス間で共有されます。静的変数を使用する場合は、エディターのインスタンス間でも共有されます。 これが目的の動作でない場合には、変数インスタンスの追跡にサービスを使用する必要があります。 参照してください[ModelItem 編集コンテキストを使用して](https://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1)については、デザイナー内でサービスを使用します。  
   
 ### <a name="to-add-an-activity-from-within-a-different-project"></a>別のプロジェクト内からアクティビティを追加するには  
   

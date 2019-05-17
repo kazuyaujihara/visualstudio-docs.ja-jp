@@ -17,19 +17,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3073f79cc58296b6952d610384d06648aa6ce3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6864708d3e60898b32ba07b14939a5c3e31d897e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093476"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705122"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio でデータセットを作成および構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A*データセット*一連のデータベースからデータをメモリに格納され、有効にする変更の追跡をサポートするオブジェクトは、作成、読み取り、更新および削除 (CRUD) 操作でそのデータを常に、データベースに接続する必要はありません。 データセットは、単純な用に設計された*フォーム オーバー データ*ビジネス アプリケーション。 新しいアプリケーションで、Entity Framework を使用して、保存してメモリ内のデータをモデル化を検討してください。 データセットを使用するには、データベースの概念の基本的な知識があります。
 
- 型指定されたを作成する<xref:System.Data.DataSet>を使用してデザイン時に Visual Studio でクラス、**データ ソース構成ウィザード**します。 プログラムでデータセットを作成する方法の詳細については、次を参照してください。[データセットを作成する](http://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc)します。
+ 型指定されたを作成する<xref:System.Data.DataSet>を使用してデザイン時に Visual Studio でクラス、**データ ソース構成ウィザード**します。 プログラムでデータセットを作成する方法の詳細については、次を参照してください。[データセットを作成する](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc)します。
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>データ ソース構成ウィザードを使用して、新しいデータセットを作成します。
 
@@ -90,6 +90,6 @@ A*データセット*一連のデータベースからデータをメモリに�
 
 2. ドラッグ、<xref:System.Data.DataTable>クラスから、**データセット**のタブ、**ツールボックス**上に、**データセット デザイナー**します。
 
-3. 列を追加してデータ テーブルを定義します。 詳細については、「[方法 :列を DataTable に追加](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)します。
+3. 列を追加してデータ テーブルを定義します。 詳細については、「[方法 :列を DataTable に追加](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)します。
 
-4. スタンドアロン テーブルを実装する必要があります`Fill`ロジックを独立したテーブルにデータを入力するようにします。 スタンドアロンのデータ テーブルの入力方法の詳細については、次を参照してください。 [DataAdapter からの Dataset](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153)します。
+4. スタンドアロン テーブルを実装する必要があります`Fill`ロジックを独立したテーブルにデータを入力するようにします。 スタンドアロンのデータ テーブルの入力方法の詳細については、次を参照してください。 [DataAdapter からの Dataset](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153)します。

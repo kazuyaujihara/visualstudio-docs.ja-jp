@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6dbf712fc21338f8f5c4699ca2e11d5344dbad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915309"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224188"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 オブジェクトから指定したバイト数を取得します。
@@ -40,16 +43,16 @@ int GetData(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dataSize`
+## <a name="parameters"></a>パラメーター
+ `dataSize`\
 
  [in]取得するバイト数 (、`data`配列が、少なくともこのバイト数で保持する必要があります)。
 
- `sizeGotten`
+ `sizeGotten`\
 
  [out]実際に取得するバイト数を返します。
 
- `data`
+ `data`\
 
  [入力、出力]要求されたデータと共に格納する配列。
 

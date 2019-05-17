@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ac95c40b356c542da323a3ea3744827087f2d840
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436524"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686922"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio 相互運用機能アセンブリのパラメーター マーシャリング
-マネージ コードで記述されている Vspackage は、呼び出しまたはアンマネージ COM コードによって呼び出される必要があります。 通常、メソッドの引数が変換、または、マーシャ リングされる、自動的に相互運用マーシャラーによって。 ただし、場合によって引数は、変換できない簡単な方法でします。 その場合、相互運用機能アセンブリのメソッド プロトタイプのパラメーターは、COM 関数のパラメーターをできるだけ一致に使用されます。 詳細については、次を参照してください。[相互運用マーシャ リング](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)します。  
+マネージ コードで記述されている Vspackage は、呼び出しまたはアンマネージ COM コードによって呼び出される必要があります。 通常、メソッドの引数が変換、または、マーシャ リングされる、自動的に相互運用マーシャラーによって。 ただし、場合によって引数は、変換できない簡単な方法でします。 その場合、相互運用機能アセンブリのメソッド プロトタイプのパラメーターは、COM 関数のパラメーターをできるだけ一致に使用されます。 詳細については、次を参照してください。[相互運用マーシャ リング](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)します。  
   
 ## <a name="general-suggestions"></a>一般的な注意点  
   
@@ -123,7 +123,7 @@ else
  この型のインターフェイスを呼び出すマネージ メソッドには、[out] 配列から最初の要素をプルする必要があります。 この要素は、場合と同様に扱うことができます、`retval`対応する COM インターフェイスからの戻り値。  
   
 ## <a name="see-also"></a>関連項目  
- [相互運用マーシャリング](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
- [相互運用マーシャリング](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
- [相互運用性のトラブルシューティング](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
+ [相互運用マーシャリング](https://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [相互運用マーシャリング](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
+ [相互運用性のトラブルシューティング](https://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [マネージド VSPackage](../misc/managed-vspackages.md)

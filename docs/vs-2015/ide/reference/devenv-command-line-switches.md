@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 48632a08b3ed59d65b7a551244c295b012bef665
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444743"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690978"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv コマンド ライン スイッチ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Devenv を使用すると、コマンド ラインから統合開発環境 (IDE:
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] を起動し、ログ ファイルにすべてのアクティビティを記録します。|  
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) または `/r`|指定したソリューションをコンパイルして実行します。|  
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|指定したソリューションをコンパイルして実行します。ソリューションの実行時には IDE を最小化し、ソリューションの実行終了後に IDE を終了します。|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|IDE で [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] のコンパイルをする場合に、**[オプション]** ダイアログ ボックスの **[プロジェクト]** オプションの [VC++ ディレクトリ] セクションで指定した設定ではなく、PATH、INCLUDE、および LIB の各環境変数を使用します。 詳細については、「[コマンド ライン ビルドのパスと環境変数を設定する](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)」を参照してください。|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|IDE で [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] のコンパイルをする場合に、**[オプション]** ダイアログ ボックスの **[プロジェクト]** オプションの [VC++ ディレクトリ] セクションで指定した設定ではなく、PATH、INCLUDE、および LIB の各環境変数を使用します。 詳細については、「[コマンド ライン ビルドのパスと環境変数を設定する](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)」を参照してください。|  
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|指定したファイルを、このアプリケーションの実行中のインスタンスで開きます。 実行中のインスタンスがない場合は、簡略化されたウィンドウ レイアウトで新しいインスタンスを起動します。|  
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|指定されたアドインを読み込まずに Visual Studio IDE のインスタンスを起動します。|  
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] をセーフ モードで起動し、既定の環境とサービス、および出荷バージョンのサードパーティ パッケージだけを読み込みます。|  

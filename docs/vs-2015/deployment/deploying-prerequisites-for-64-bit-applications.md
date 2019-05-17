@@ -19,12 +19,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f416a22bc7cbdd374622c89a1826ebff8af9450
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92f30e8e059475c907da184aa59a8e4b7a2cf19f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974357"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675566"
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>64 ビット アプリケーションの配置のための必要条件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ClickOnce の配置では、 64 ビット プラットフォームのアプリ�
   
 |再頒布可能パッケージ|x64 サポート|IA64 サポート|  
 |---------------------|-----------------|------------------|  
-|[!INCLUDE[vsto_runtime](../includes/vsto-runtime-md.md)]|はい|いいえ|  
+|[!INCLUDE[vsto_runtime](../includes/vsto-runtime-md.md)]|[はい]|いいえ|  
 |Visual C++ 2010 ランタイム ライブラリ (IA64)|いいえ|[はい]|  
-|Visual C++ 2010 ランタイム ライブラリ (x64)|[はい]|いいえ|  
+|Visual C++ 2010 ランタイム ライブラリ (x64)|はい|いいえ|  
 |Microsoft .NET Framework 4 (x86 および x64)|はい||  
 |Microsoft .NET Framework 4 Client Profile (x86 および x64)|[はい]||  
   
 ## <a name="see-also"></a>関連項目  
  [アプリケーション、サービス、およびコンポーネントの配置](../deployment/deploying-applications-services-and-components.md)   
  [方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールします。](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [64 ビット アプリケーション](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
+ [64 ビット アプリケーション](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)

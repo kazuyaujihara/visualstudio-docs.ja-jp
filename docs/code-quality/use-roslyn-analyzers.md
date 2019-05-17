@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821417"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676695"
 ---
 # <a name="use-roslyn-analyzers"></a>Roslyn アナライザーを使用して、
 
@@ -56,7 +56,7 @@ A[ルール セット](../code-quality/using-rule-sets-to-group-code-analysis-ru
 プロジェクトの設定のアクティブなルールを変更するに移動、**コード分析**のプロジェクトのプロパティ タブ。 規則セットの下の一覧からを選択**この規則セットを実行**します。 規則セットを開くには、次のように選択します。**開く**します。
 
 > [!NOTE]
-> 規則のセットの .NET core と .NET Standard プロジェクトがメニュー コマンドをサポートして**ソリューション エクスプ ローラー**、たとえば、**オープンのアクティブなルール セット**します。 既定以外の規則が .NET Core または .NET Standard プロジェクトでは、手動で設定を指定する[追加、 **CodeAnalysisRuleSet**プロパティをプロジェクト ファイル](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project)します。 Visual Studio で設定するルールをルール セット エディター UI 内のルールを構成することができます。
+> 規則のセットの .NET core と .NET Standard プロジェクトがメニュー コマンドをサポートして**ソリューション エクスプ ローラー**、たとえば、**オープンのアクティブなルール セット**します。 既定以外の規則が .NET Core または .NET Standard プロジェクトでは、手動で設定を指定する[追加、 **CodeAnalysisRuleSet**プロパティ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project)プロジェクト ファイル。 Visual Studio で設定するルールをルール セット エディター UI 内のルールも構成できます。
 
 ## <a name="rule-severity"></a>ルールの重要度
 

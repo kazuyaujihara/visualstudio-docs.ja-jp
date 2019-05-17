@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cff1677ab9209ce2a51b7587c410731a71e27eb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f1c5886d4ac3efcb906a27f73af6a79fad95a5af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056720"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700235"
 ---
 # <a name="troubleshooting-service-references"></a>サービス参照のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60056720"
 
 3. 確認します、**ビルド構成の詳細を表示** チェック ボックスが選択されているし、クリックして**OK**。
 
-4. WCF サービス プロジェクトを読み込みます。 詳細については、次を参照してください。[に NIB 方法。マルチ プロジェクト ソリューションを作成する](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)します。
+4. WCF サービス プロジェクトを読み込みます。 詳細については、次を参照してください。[に NIB 方法。マルチ プロジェクト ソリューションを作成する](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)します。
 
 5. **Configuration Manager**ダイアログ ボックスで、セット、**アクティブ ソリューション構成**に**デバッグ**します。 詳細については、「[方法 :構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)」を参照してください。
 

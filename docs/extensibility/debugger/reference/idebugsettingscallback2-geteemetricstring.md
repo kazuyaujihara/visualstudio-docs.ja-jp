@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2091cd052923fe375bf9ba90ffdad50c993f5b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58132d73cd532acd0c89ad5258c6ba4a59b905fa
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868947"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458617"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 指定した名前、式エバリュエーターのメトリックの値の文字列を取得します。
@@ -40,20 +43,20 @@ private int GetEEMetricString(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `guidLang`
+## <a name="parameters"></a>パラメーター
+ `guidLang`\
 
  [in]プログラミング言語の一意の識別子。
 
- `guidVendor`
+ `guidVendor`\
 
  [in]ベンダーの一意の識別子。
 
- `pszMetric`
+ `pszMetric`\
 
  [in]メトリックの名前。
 
- `pbstrValue`
+ `pbstrValue`\
 
  [out]メトリック値の文字列を返します。
 

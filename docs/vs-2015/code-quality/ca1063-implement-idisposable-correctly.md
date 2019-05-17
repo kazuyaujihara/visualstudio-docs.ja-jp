@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 12a854c4e43385177730ceddf045b76e2e61d342
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081399"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686895"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:IDisposable を正しく実装します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60081399"
 
   この警告は、これらのパターンのいずれかの違反がトリガーされます。
 
-  すべて封印されていないルート IDisposable 型は、独自プロテクト仮想 void dispose (bool) メソッドを提供する必要があります。 Dispose() Dipose(true) を呼び出す必要があり、Finalize が dispose (false) を呼び出す必要があります。 封印されていないルートの IDisposable 型を作成する場合は、dispose (bool) の定義し、それを呼び出す必要があります。 詳細については、次を参照してください。[アンマネージ リソースのクリーンアップ](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)で、 [Framework デザイン ガイドライン](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b)、.NET Framework のドキュメントのセクション。
+  すべて封印されていないルート IDisposable 型は、独自プロテクト仮想 void dispose (bool) メソッドを提供する必要があります。 Dispose() Dipose(true) を呼び出す必要があり、Finalize が dispose (false) を呼び出す必要があります。 封印されていないルートの IDisposable 型を作成する場合は、dispose (bool) の定義し、それを呼び出す必要があります。 詳細については、次を参照してください。[アンマネージ リソースのクリーンアップ](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)で、 [Framework デザイン ガイドライン](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b)、.NET Framework のドキュメントのセクション。
 
 ## <a name="rule-description"></a>規則の説明
  すべての IDisposable 型は、Dispose パターンを適切に実装する必要があります。

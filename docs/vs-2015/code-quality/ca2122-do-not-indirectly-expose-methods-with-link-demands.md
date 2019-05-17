@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 637fa666dbaba539b39fb3537df49fbd12baef3a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e0b173378194c099b2014093104f814f3454843d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963211"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687257"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122:リンク要求を含むメソッドを間接的に公開しません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "58963211"
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- パブリックまたはプロテクト メンバーが、[リンク確認要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)と、セキュリティ チェックを実行しないメンバーによって呼び出されます。
+ パブリックまたはプロテクト メンバーが、[リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)と、セキュリティ チェックを実行しないメンバーによって呼び出されます。
 
 ## <a name="rule-description"></a>規則の説明
  リンク確認要求では、直接の呼び出し元のアクセス許可しかチェックされません。 場合、メンバー`X`セキュリティ要求呼び出しコード要求によって保護された、リンク、呼び出し元、必要な権限を使用せず、呼び出し元の責任も負わない`X`プロテクト メンバーにアクセスします。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- セキュリティ[データとモデリング](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)またはメンバーへのオンデマンドのリンクを不要になったリンク確認要求で保護されたメンバーをセキュリティ保護されていないアクセスを提供するようにします。
+ セキュリティ[データとモデリング](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)またはメンバーへのオンデマンドのリンクを不要になったリンク確認要求で保護されたメンバーをセキュリティ保護されていないアクセスを提供するようにします。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
  この規則による警告を安全に抑制するのには操作または破壊的な方法で使用できるリソースへのアクセスを呼び出し元に付与しないようにを確認する必要があります。
@@ -58,4 +58,4 @@ ms.locfileid: "58963211"
 
  **セキュリティ保護されていないメンバーからの値: seattle.corp.contoso.com**
 ## <a name="see-also"></a>関連項目
- [安全なコーディングのガイドライン](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[リンク確認要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)[データとモデリング](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [安全なコーディングのガイドライン](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)[データとモデリング](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db5b2df99a887511351e6b5bd120968edf7c53cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 72af15a510fffedf4986f292058377989bb20973
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080866"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695573"
 ---
 # <a name="display-data-in-blend"></a>Blend におけるデータの表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60080866"
  **短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [XML データ ソースの作成](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata)です。  
   
 ## <a name="LiveStore"></a> ストアまたは Phone アプリでライブ データを表示する  
- 「 [データとファイルの操作 (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)」を参照してください。  
+ 「 [データとファイルの操作 (XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)」を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [Blend for Visual Studio を使用して UI を作成する](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

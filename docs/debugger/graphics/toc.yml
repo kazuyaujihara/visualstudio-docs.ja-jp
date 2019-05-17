@@ -9,8 +9,9 @@
 - name: グラフィックス ログ ドキュメント
   href: graphics-log-document.md
 - name: グラフィックス フレーム分析
-  href: graphics-frame-analysis.md
   items:
+    - name: グラフィックス フレーム分析
+      href: graphics-frame-analysis.md
     - name: 1x1 ビューポイント サイズ バリアント
       href: 1x1-viewport-size-variant.md
     - name: 0x/2x/4x MSAA バリアント
@@ -46,8 +47,9 @@
 - name: コマンド ライン キャプチャ ツール
   href: command-line-capture-tool.md
 - name: グラフィックス診断例
-  href: graphics-diagnostics-examples.md
   items:
+    - name: グラフィックス診断例
+      href: graphics-diagnostics-examples.md
     - name: 'チュートリアル: グラフィックス情報をキャプチャする'
       href: walkthrough-capturing-graphics-information.md
     - name: 'チュートリアル: プログラムによるグラフィックス情報のキャプチャ'
@@ -65,11 +67,13 @@
     - name: '方法: グラフィックス診断再生マシンを変更する'
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: 参照 (プログラムによるキャプチャ)
-  href: reference-programmatic-capture.md
   items:
+    - name: 参照 (プログラムによるキャプチャ)
+      href: reference-programmatic-capture.md
     - name: VsgDbg クラス
-      href: vsgdbg-class.md
       items:
+        - name: VsgDbg クラス
+          href: vsgdbg-class.md
         - name: 'VsgDbg::VsgDbg (コンストラクター)'
           href: vsgdbg-vsgdbg-constructor.md
         - name: 'VsgDbg::~VsgDbg (デストラクター)'

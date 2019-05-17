@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d91d84b6a763dd3fecfac8a030f8514c91e5ac61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976985"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704725"
 ---
 # <a name="creating-a-workflow-project"></a>ワークフロー プロジェクトの作成
 ワークフロー、[!INCLUDE[indigo1](../includes/indigo1-md.md)] ワークフロー サービス、カスタム アクティビティ、およびカスタム アクティビティ デザイナーは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロジェクト テンプレートを利用して作成できます。 ここでは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] で使用できるプロジェクト テンプレートで、ライブラリおよびアプリケーションを作成する方法について説明します。  
@@ -44,7 +44,7 @@ ms.locfileid: "62976985"
  ワークフロー アクティビティ、ワークフロー デザイナー、およびコード アクティビティなどのその他の [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 項目を既存のプロジェクトに追加する方法について説明します。  
   
 ## <a name="related-sections"></a>関連項目  
- [ワークフローの設計](http://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
+ [ワークフローの設計](https://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
   
 ## <a name="see-also"></a>関連項目  
  [ワークフロー デザイナーの使用](../workflow-designer/using-the-workflow-designer.md)

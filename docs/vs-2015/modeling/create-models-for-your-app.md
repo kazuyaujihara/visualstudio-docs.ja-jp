@@ -37,12 +37,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: feb0c1a5f486654844c592b6b946dedc9e2e02c0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 03f525d3b996875097ddee433d0e9ad887ee728f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59002194"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679458"
 ---
 # <a name="create-models-for-your-app"></a>アプリのモデルを生成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ ms.locfileid: "59002194"
 |[UML モデリング プロジェクトおよびダイアグラムを作成する](../modeling/create-uml-modeling-projects-and-diagrams.md)|**モデルを作成する**してダイアグラムを追加します。|  
 |[UML モデルおよびダイアグラムの編集](../modeling/edit-uml-models-and-diagrams.md)|**図を描画する**してモデルを編集します。|  
 |[パッケージと名前空間の定義](../modeling/define-packages-and-namespaces.md)|**パッケージの作成**にモデルを別のチーム メンバーが作業できる単位に分割します。|  
-|[UML クラス図からコードを生成する](../modeling/generate-code-from-uml-class-diagrams.md)|**クラス ダイアグラムからの C# コードの生成**して実装を開始します。|  
+|[UML クラス図からコードを生成する](../modeling/generate-code-from-uml-class-diagrams.md)|**クラス ダイアグラムからの c# コードの生成**して実装を開始します。|  
 |[プロファイルとステレオタイプを使用したモデルのカスタマイズ](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**モデル要素をカスタマイズ**ステレオタイプを使用して、特定の目的で標準の UML モデル要素を拡張します。|  
 |[モデル要素と作業項目とのリンク](../modeling/link-model-elements-and-work-items.md)|**モデル要素と作業項目間のリンクを作成**タスク、テスト_ケース、バグ、要件を追跡するために次のように問題、または、モデルの特定の部分に関連付けられているその他の作業です。|  
 |[イメージとしてダイアグラムをエクスポートする](../modeling/export-diagrams-as-images.md)|**モデルとダイアグラムの保存**他のユーザーと共有することができます、つまりは使用しない方を含めて[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]します。|  
@@ -91,7 +91,7 @@ ms.locfileid: "59002194"
 |[ユーザー要件のモデリング](../modeling/model-user-requirements.md)|モデルを使用して、ユーザーのニーズを明確にして伝えます。|  
 |[アプリのアーキテクチャをモデル化する](../modeling/model-your-app-s-architecture.md)|モデルを使用して、システムの全体的な構造と動作を記述し、確実にユーザーのニーズを満たせるようにします。|  
 |[開発時のシステムの検証](../modeling/validate-your-system-during-development.md)|ソフトウェアがユーザーのニーズ、およびシステムのアーキテクチャ全体と一致していることを確認します。|  
-|[開発プロセス内でのモデルの使用](../modeling/use-models-in-your-development-process.md)<br /><br /> [アジャイル開発でのモデルを使用します。](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|モデルを使用すると、システムの開発中に効果的にシステムを理解して変更することができます。|  
+|[開発プロセス内でのモデルの使用](../modeling/use-models-in-your-development-process.md)<br /><br /> [アジャイル開発でのモデルを使用します。](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|モデルを使用すると、システムの開発中に効果的にシステムを理解して変更することができます。|  
 |[モデリング ソリューションの構築](../modeling/structure-your-modeling-solution.md)|大規模または中規模のプロジェクトでモデルを整理します。|  
   
 ## <a name="external-resources"></a>外部リソース  

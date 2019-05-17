@@ -35,12 +35,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4984355c12a92529a943fe6778740ac2d7f522f8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048193"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703652"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>方法: セットのデバッグ構成とリリース構成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,4 +71,4 @@ Visual Studio プロジェクトでは、ご使用のプログラムに対応す
  [C# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [方法: 作成し、構成の編集](../ide/how-to-create-and-edit-configurations.md)   
- [デバッグ プロジェクト構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)
+ [デバッグ プロジェクト構成およびリリース プロジェクト構成](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)

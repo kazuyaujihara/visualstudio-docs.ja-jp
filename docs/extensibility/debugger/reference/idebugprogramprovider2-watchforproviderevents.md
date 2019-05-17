@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e76baf1330ec63d1032b69fa6cfddce4776742a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9048dc633dd9cc74a9d27c54ff9b0fba16cc7ac1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869803"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458979"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 ポートのイベントの通知プロセスを許可します。
@@ -46,8 +49,8 @@ int WatchForProviderEvents(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `Flags`
+## <a name="parameters"></a>パラメーター
+ `Flags`\
 
  [in]フラグの組み合わせ、 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列挙体。 次のフラグは、この呼び出しの一般的なものは。
 
@@ -58,23 +61,23 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|呼び出し元に接続されているが、デバッガーによって起動されません。|
 |`PFLAG_REASON_WATCH`|呼び出し元がイベントをウォッチします。 このフラグが設定されていません。 場合、 コールバック イベントを削除し、呼び出し元が通知を受け取ることはなくなります。|
 
- `pPort`
+ `pPort`\
 
  [in]呼び出し元のプロセス、ポートがで実行されています。
 
- `processId`
+ `processId`\
 
  [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)対象のプログラムを含むプロセスの ID を保持する構造体。
 
- `EngineFilter`
+ `EngineFilter`\
 
  [in]関連付けられたプロセスのデバッグ エンジンの Guid の配列。
 
- `guidLaunchingEngine`
+ `guidLaunchingEngine`\
 
  [in]このプロセスを起動したデバッグエンジンのGUID（存在する場合）。
 
- `pEventCallback`
+ `pEventCallback`\
 
  [in][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)イベント通知を受け取るオブジェクト。
 

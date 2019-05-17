@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8e31682de4c625e40baaac6daff4687c713abda9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913888"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460970"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 この構造体は、メソッドまたは関数からの戻り値を表します。
@@ -42,14 +45,18 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="terms"></a>用語
- tokMethod この戻り値が、メソッドの ID。
+## <a name="members"></a>メンバー
+ `tokMethod`\
+ この戻り値が、メソッドの ID。
 
- dwCorType 戻り値の基本型。 これは、値から、`CorElementType`列挙で定義されている、 [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK corhdr.h ファイル。
+ `dwCorType`\
+ 戻り値の基本型。 これは、値から、`CorElementType`列挙で定義されている、 [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK corhdr.h ファイル。
 
- dwSigSize 戻り値の署名のサイズ (に格納されている`rgSig`)。
+ `dwSigSize`\
+ 戻り値の署名のサイズ (に格納されている`rgSig`)。
 
- rgSig 戻り値の署名を形成するバイト配列。
+ `rgSig`\
+ 戻り値の署名を形成するバイトの配列。
 
 ## <a name="remarks"></a>Remarks
  この構造体の共用体の一部は、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)ときに構造体、`dwKind`のフィールド、`DEBUG_ADDRESS_UNION`構造に設定されている`ADDRESS_KIND_RETVAL`(からの値、 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙型)。

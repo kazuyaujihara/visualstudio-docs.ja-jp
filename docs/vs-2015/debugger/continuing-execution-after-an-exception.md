@@ -29,17 +29,17 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6ae74c51f0f738bc596fbe5c789011630927707c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105475"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702267"
 ---
 # <a name="continuing-execution-after-an-exception"></a>例外後の実行の継続
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-例外が発生してデバッガーによる実行が中断されると、ダイアログ ボックスが表示されます。 Visual Basic または c#、について表示されます、[例外処理アシスタント](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) ダイアログ ボックスで、既定では。 C++ の場合、古いわかります**例外** ダイアログ ボックス。 Visual Basic または c# を使用しているが、無効にしているかどうか、**例外処理アシスタント**で、**オプション** ダイアログ ボックスが表示されます、**例外** ダイアログ ボックス。  
+例外が発生してデバッガーによる実行が中断されると、ダイアログ ボックスが表示されます。 Visual Basic または c#、について表示されます、[例外処理アシスタント](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) ダイアログ ボックスで、既定では。 C++ の場合、古いわかります**例外** ダイアログ ボックス。 Visual Basic または c# を使用しているが、無効にしているかどうか、**例外処理アシスタント**で、**オプション** ダイアログ ボックスが表示されます、**例外** ダイアログ ボックス。  
   
  ときに、**例外処理アシスタント**または**例外** ダイアログ ボックスが表示されたら、例外の原因となった問題を解決しようとすることができます。  
   

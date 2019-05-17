@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d2bf87a804295a5ea8f6750ee9cd93643c53bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a2ba039164c43ccc99b3305bb29bc4f1c98f68f7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913011"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460644"
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 この構造体が関連しているアドレスを表す、`this`ポインター (`Me` Visual Basic で)。
@@ -40,12 +43,15 @@ public struct UNMANAGED_THIS_RELATIVE {
 }
 ```
 
-## <a name="terms"></a>用語
- dwOffset (たとえば、クラスの vtable の開始) の基本の位置からのバイト オフセットします。
+## <a name="members"></a>メンバー
+ `dwOffset`\
+ (たとえば、クラスの vtable の開始) の基本の位置からのオフセットのバイト。
 
- 基本の位置からのビット単位のオフセットを dwBitOffset (常に 0 ビット フィールドを参照する場合を除き)。
+ `dwBitOffset`\
+ 基本の位置からのビット単位のオフセット (常に 0 ビット フィールドを参照する場合を除き)。
 
- dwBitLength アドレスを表すビット数 (常に 0 ビット フィールドを参照する場合を除き)。
+ `dwBitLength`\
+ アドレスを表すビット数 (常に 0 ビット フィールドを参照する場合を除き)。
 
 ## <a name="remarks"></a>Remarks
  この構造体の共用体の一部は、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)ときに構造体、`dwKind`のフィールド、`DEBUG_ADDRESS_UNION`構造に設定されている`ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`(からの値、 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列挙型)。

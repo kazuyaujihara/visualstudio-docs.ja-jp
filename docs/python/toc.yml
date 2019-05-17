@@ -9,8 +9,9 @@
     - name: データ サイエンスと分析のアプリケーション ワークロード
       href: data-science-and-analytical-applications-workload.md
 - name: インストール
-  href: installing-python-support-in-visual-studio.md
   items:
+    - name: インストール
+      href: installing-python-support-in-visual-studio.md
     - name: Python インタープリターのインストール
       href: installing-python-interpreters.md
 - name: クイックスタート
@@ -75,8 +76,9 @@
 - name: 概念
   items:
     - name: Python プロジェクト
-      href: managing-python-projects-in-visual-studio.md
       items:
+        - name: Python プロジェクト
+          href: managing-python-projects-in-visual-studio.md
         - name: Web プロジェクト テンプレート
           href: python-web-application-project-templates.md
         - name: Django Web プロジェクト テンプレート
@@ -88,8 +90,9 @@
 - name: 使い方ガイド
   items:
     - name: Python 環境を管理する
-      href: managing-python-environments-in-visual-studio.md
       items:
+        - name: Python 環境を管理する
+          href: managing-python-environments-in-visual-studio.md
         - name: プロジェクトのインタープリターの選択
           href: selecting-a-python-environment-for-a-project.md
         - name: 依存関係の requirements.txt の使用
@@ -101,8 +104,9 @@
         - name: IIS の Web アプリの構成
           href: configure-web-apps-for-iis-windows.md
     - name: Python コードの編集
-      href: editing-python-code-in-visual-studio.md
       items:
+        - name: Python コードの編集
+          href: editing-python-code-in-visual-studio.md
         - name: '[書式コード]'
           href: formatting-python-code.md
         - name: コードのリファクタリング
@@ -112,13 +116,15 @@
     - name: カスタム メニュー コマンドの定義
       href: defining-custom-python-project-commands.md
     - name: 対話型 Python (REPL)
-      href: python-interactive-repl-in-visual-studio.md
       items:
+        - name: 対話型 Python (REPL)
+          href: python-interactive-repl-in-visual-studio.md
         - name: IPython REPL の使用
           href: interactive-repl-ipython.md
     - name: デバッグ
-      href: debugging-python-in-visual-studio.md
       items:
+        - name: デバッグ
+          href: debugging-python-in-visual-studio.md
         - name: リモートの Linux コンピューターでのコードのデバッグ
           href: debugging-python-code-on-remote-linux-machines.md
     - name: Linux 上の Azure App Service への発行

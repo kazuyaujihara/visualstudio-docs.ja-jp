@@ -9,19 +9,19 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f41b6332aab272baed17e9955687c34803003d0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9463e46a7341a7da5c4aa79ae477d6aa0ff0c6cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444565"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686655"
 ---
 # <a name="how-to-create-an-activity-library"></a>方法: アクティビティ ライブラリを作成する
 カスタム アクティビティは、ワークフローで特定のビジネス プロセスをモデル化するために使用されます。 [!INCLUDE[vs2010](../includes/vs2010-md.md)] のアクティビティ ライブラリ テンプレートでは、[!INCLUDE[wfd1](../includes/wfd1-md.md)]を使用して、こうしたカスタム アクティビティを視覚的に作成できます。  
   
 ### <a name="to-create-a-workflow-activity-library"></a>ワークフロー アクティビティ ライブラリを作成するには  
   
-1. [!INCLUDE[vs2010](../includes/vs2010-md.md)]を起動します。  
+1. [!INCLUDE[vs2010](../includes/vs2010-md.md)] を起動します。  
   
 2. **ファイル**メニューで、**新規**、し、**プロジェクト**.  
   
@@ -48,5 +48,5 @@ ms.locfileid: "63444565"
     > カスタム アクティビティの本体に含めることができる子アクティビティは 1 つのみです。ただし、その子アクティビティは、<xref:System.Activities.Statements.Sequence> アクティビティや <xref:System.Activities.Statements.Flowchart> アクティビティなどの複合アクティビティにすることができます。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: アクティビティを作成します。](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [方法: アクティビティを作成します。](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [ワークフロー プロジェクトの作成](../workflow-designer/creating-a-workflow-project.md)

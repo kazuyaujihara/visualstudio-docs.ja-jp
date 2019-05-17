@@ -14,7 +14,7 @@ ms.workload:
 - vssdk
 ms.openlocfilehash: b22559af26a0a5f6c8af68726a5ba336e1bcfb4a
 ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/22/2019
 ms.locfileid: "56689630"
@@ -144,7 +144,7 @@ FIELD_MOD_HIDDEN は、フィールドを非表示または別のコンテキス
 
 FIELD_MOD_MARSHALASOBJECT では、フィールドを持つオブジェクトで表すことを示す、`IUnknown`インターフェイス。
 
-FIELD_MOD_SPECIAL_NAME では、フィールドなど、特別な名前を持つことを示します`.ctor`コンス トラクター ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]のみ)。
+FIELD_MOD_SPECIAL_NAME では、フィールドなど、特別な名前を持つことを示します`.ctor`コンストラクター ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]のみ)。
 
 FIELD_MOD_HIDEBYSIG では、フィールドがあることを示します、`Overloads`キーワードを適用 ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]のみ)。
 
