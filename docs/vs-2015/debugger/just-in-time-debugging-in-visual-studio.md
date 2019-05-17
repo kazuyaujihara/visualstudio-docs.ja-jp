@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e78e23d7e176dffef1531da1af28d318253d9d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad2814dffa75809a318dc7cebe7831b5ecec7d29
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431440"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690606"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Just-In-Time Debugging in Visual Studio (Visual Studio での Just-In-Time デバッグ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,7 +110,7 @@ ms.locfileid: "63431440"
     </configuration>
     ```
 
-3. さらに、C++ Windows フォーム アプリケーションでは、.config ファイルまたはコード内で `DebuggableAttribute` も設定する必要があります。 [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) を使用し、[/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435) は使用しないでコンパイルすると、コンパイラによってこの属性が設定されます。 ただし、最適化されていないリリース ビルドをデバッグする場合は、この属性を自分で設定する必要があります。 そのためには、アプリケーションの AssemblyInfo.cpp ファイルに次の行を追加します。
+3. さらに、C++ Windows フォーム アプリケーションでは、.config ファイルまたはコード内で `DebuggableAttribute` も設定する必要があります。 [/Zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) を使用し、[/Og](https://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435) は使用しないでコンパイルすると、コンパイラによってこの属性が設定されます。 ただし、最適化されていないリリース ビルドをデバッグする場合は、この属性を自分で設定する必要があります。 そのためには、アプリケーションの AssemblyInfo.cpp ファイルに次の行を追加します。
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -165,7 +165,7 @@ static void Main(string[] args)
 
  **利用可能なデバッガー**が表示される、 **Microsoft Visual Studio 2015 の新しいインスタンス**の行を選択します。 既に選択されていない場合は、ここで選択します。
 
- ウィンドウの下部にある [ **、選択したデバッガーを使用してデバッグするでしょうか。**、] をクリック**はい**。
+ ウィンドウの下部にある **、選択したデバッガーを使用してデバッグするでしょうか。**、 をクリック**はい**。
 
  ThrowsNullException プロジェクトは、実行例外をスローする行で停止するいると、Visual Studio の新しいインスタンスで開きます。
 
@@ -197,4 +197,4 @@ static void Main(string[] args)
      この問題を解決するには、セットアップ ディスクを使って Visual Studio を再インストールするか、既存のインストールを修復します。
 
 ## <a name="see-also"></a>関連項目
- [デバッガーのセキュリティ](../debugger/debugger-security.md)[デバッガーの基本事項](../debugger/debugger-basics.md) [- Just-in-time で、デバッグ オプション] ダイアログ ボックス](../debugger/just-in-time-debugging-options-dialog-box.md)[セキュリティ警告。信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。以下の情報に関して疑わしい点がある場合や、不明な場合は、このプロセスにアタッチしないでください。](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)
+ [デバッガーのセキュリティ](../debugger/debugger-security.md)[デバッガーの基本事項](../debugger/debugger-basics.md) [- Just-in-time で、デバッグ オプション ダイアログ ボックス](../debugger/just-in-time-debugging-options-dialog-box.md)[セキュリティ警告。信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。以下の情報に関して疑わしい点がある場合や、不明な場合は、このプロセスにアタッチしないでください。](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)

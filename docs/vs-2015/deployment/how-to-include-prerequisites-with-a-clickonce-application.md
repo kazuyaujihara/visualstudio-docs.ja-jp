@@ -34,10 +34,10 @@ ms.locfileid: "65697663"
   
 3. メモ帳で、**Package.xml** ファイルを開きます。  
   
-4. 検索、**名前**要素を含む**http://go.microsoft.com/fwlink**URL をコピーします。 **LinkID** 部分を含めます。  
+4. 検索、**名前**要素を含む **http://go.microsoft.com/fwlink** URL をコピーします。 **LinkID** 部分を含めます。  
   
     > [!NOTE]
-    > ない場合は**名前**要素が含まれます**http://go.microsoft.com/fwlink**、オープン、 **Product.xml**ファイル、前提条件のルート フォルダーを探し、 **fwlink**文字列。  
+    > ない場合は**名前**要素が含まれます **http://go.microsoft.com/fwlink** 、オープン、 **Product.xml**ファイル、前提条件のルート フォルダーを探し、 **fwlink**文字列。  
   
     > [!IMPORTANT]
     > 一部の必須コンポーネントには、複数のインストーラー パッケージ (たとえば、32 ビット システム用または 64 ビット システム用) があります。 複数の **Name** 要素に **fwlink** が含まれている場合、各要素で残りの手順を繰り返す必要があります。  
