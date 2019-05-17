@@ -41,12 +41,12 @@ caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa7f571a797df6ecd7a2967ba1cefa3d99a0463b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cadaf069bb53c9d212e6de5ebd6ea2cf9efe7bb1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064571"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684456"
 ---
 # <a name="using-breakpoints"></a>ブレークポイントの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ ms.locfileid: "60064571"
    条件には、デバッガーによって認識される有効な式を指定できます。 有効な式の詳細については、「 [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md)」を参照してください。  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>ブレークポイント条件 (C# および F#) でのオブジェクト ID の使用  
- 特定のオブジェクトの動作を確認することが必要になる場合があります。たとえば、オブジェクトがコレクションに複数回挿入された理由を確認することが必要になる場合があります。 C# と F# では、 [参照型](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) の特定のインスタンスのオブジェクト ID を作成し、それらの ID をブレークポイントの条件で使用できます。 オブジェクト ID は、共通言語ランタイム (CLR) のデバッグ サービスで生成されて、オブジェクトに関連付けられます。  オブジェクト ID を作成するには、次の手順を実行します。  
+ 特定のオブジェクトの動作を確認することが必要になる場合があります。たとえば、オブジェクトがコレクションに複数回挿入された理由を確認することが必要になる場合があります。 C# と F# では、 [参照型](https://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) の特定のインスタンスのオブジェクト ID を作成し、それらの ID をブレークポイントの条件で使用できます。 オブジェクト ID は、共通言語ランタイム (CLR) のデバッグ サービスで生成されて、オブジェクトに関連付けられます。  オブジェクト ID を作成するには、次の手順を実行します。  
   
 1. コードで、オブジェクトが作成されてからしばらく経った時点にブレークポイントを設定します。  
   
