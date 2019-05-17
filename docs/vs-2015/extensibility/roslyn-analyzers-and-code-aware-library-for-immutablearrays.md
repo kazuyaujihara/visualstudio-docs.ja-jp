@@ -8,17 +8,17 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c15b1f335129e7c749aadefaa78ee3f9c5862baa
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: HT
+ms.openlocfilehash: 44cb171594a6d595652b3c013505927bd82f947e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59002234"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685243"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn アナライザーと ImmutableArrays 用コード認識ライブラリ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[.NET コンパイラ プラットフォーム](https://github.com/dotnet/roslyn)("Roslyn") を使用して、コードに対応したライブラリを作成できます。 コードに対応したライブラリでは、またはエラーを回避する最善の方法で使用できる機能とライブラリを使用するためのツール (Roslyn アナライザー) を提供します。 このトピックでは、現実の世界を使用する場合は、一般的なエラーをキャッチする Roslyn アナライザーを構築する方法、 [NIB:変更できないコレクション](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca)NuGet パッケージ。 この例では、アナライザーが見つけたコードの問題のコード修正を提供する方法も示します。 ユーザーは、Visual Studio 電球 UI でのコード修正を参照してくださいし、コードの修正プログラムを自動的に適用できます。
+[.NET コンパイラ プラットフォーム](https://github.com/dotnet/roslyn)("Roslyn") を使用して、コードに対応したライブラリを作成できます。 コードに対応したライブラリでは、またはエラーを回避する最善の方法で使用できる機能とライブラリを使用するためのツール (Roslyn アナライザー) を提供します。 このトピックでは、現実の世界を使用する場合は、一般的なエラーをキャッチする Roslyn アナライザーを構築する方法、 [NIB:変更できないコレクション](https://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca)NuGet パッケージ。 この例では、アナライザーが見つけたコードの問題のコード修正を提供する方法も示します。 ユーザーは、Visual Studio 電球 UI でのコード修正を参照してくださいし、コードの修正プログラムを自動的に適用できます。
 
 ## <a name="getting-started"></a>作業の開始
 この例をビルドするには、次が必要です。
@@ -52,7 +52,7 @@ Console.WriteLine("b2.Length = { 0}", b2.Length);
 
 ```
 
-最初のエラーは、ImmutableArray 実装の構造体を使用して、基になるデータ ストレージをラップするためです。 構造体は、パラメーターなしのコンストラクターを持つ必要がありますように`default(T)`式は、すべての構造体を返すことができます 0 または null のメンバー。 コードにアクセスするときに`b1.Length`、ImmutableArray 構造体の基になる記憶域配列がないために、実行時の null がエラーを逆参照があります。 空の ImmutableArray を作成する正しい方法は、`ImmutableArray<int>.Empty`します。
+最初のエラーは、ImmutableArray 実装の構造体を使用して、基になるデータ ストレージをラップするためです。 構造体は、パラメーターなしのコンス トラクターを持つ必要がありますように`default(T)`式は、すべての構造体を返すことができます 0 または null のメンバー。 コードにアクセスするときに`b1.Length`、ImmutableArray 構造体の基になる記憶域配列がないために、実行時の null がエラーを逆参照があります。 空の ImmutableArray を作成する正しい方法は、`ImmutableArray<int>.Empty`します。
 
  ImmutableArray.Add メソッドはこのメソッドを呼び出すたびに新しいインスタンスを返すために、コレクション初期化子を含むエラーが発生します。 ImmutableArrays 決して変更ので、新しい要素を追加するときに、オブジェクトを取得するバックアップ新しい ImmutableArray (これは以前から存在 ImmutableArray とパフォーマンス上の理由からストレージを共有する可能性があります)。 `b2`呼び出す前に、最初の ImmutableArray を指す`Add()`の 5 回`b2`既定 ImmutableArray が。 エラーを逆参照呼び出しの長さにも null でクラッシュします。 手動で追加の呼び出しは、使用することがなく、ImmutableArray を初期化する正しい方法`ImmutableArray.CreateRange(new int[] {1, 2, 3, 4, 5})`します。
 
@@ -254,7 +254,7 @@ var objectCreation = root.FindNode(context.Span)
                          .FirstAncestorOrSelf<ObjectCreationExpressionSyntax>();
 ```
 
- **電球の UI のコード修正を登録します。** コード修正を登録するときに Roslyn は自動的に Visual Studio 電球 UI に接続されます。 エンドユーザーが使用できる表示**CTRL + です。** アナライザー波線を表示する、無効な場合 (期間)`ImmutableArray<T>`コンストラクターを使用します。 コード修正プロバイダーは、問題がある場合にのみ実行するため、探してオブジェクト作成式があると想定することができます。 末尾に次のコードを追加することで、新しいコード修正を登録するコンテキスト パラメーターから`RegisterCodeFixAsync`メソッド。
+ **電球の UI のコード修正を登録します。** コード修正を登録するときに Roslyn は自動的に Visual Studio 電球 UI に接続されます。 エンドユーザーが使用できる表示**CTRL + です。** アナライザー波線を表示する、無効な場合 (期間)`ImmutableArray<T>`コンス トラクターを使用します。 コード修正プロバイダーは、問題がある場合にのみ実行するため、探してオブジェクト作成式があると想定することができます。 末尾に次のコードを追加することで、新しいコード修正を登録するコンテキスト パラメーターから`RegisterCodeFixAsync`メソッド。
 
 ```csharp
 

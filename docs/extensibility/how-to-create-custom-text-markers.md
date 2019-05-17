@@ -41,9 +41,9 @@ ms.locfileid: "63415555"
     `<PackageGUID>` オートメーション オブジェクトを実装する VSPackage の GUID です。
 
    > [!NOTE]
-   > ルート パス**\software\microsoft\visualstudio\\\<バージョン >** 詳細詳細については、Visual Studio シェルが初期化されるときに、代替ルートで上書きすることができます[コマンド ライン スイッチ](../extensibility/command-line-switches-visual-studio-sdk.md)します。
+   > ルート パス **\software\microsoft\visualstudio\\ \<バージョン>** 詳細詳細については、Visual Studio シェルが初期化されるときに、代替ルートで上書きすることができます[コマンド ライン スイッチ](../extensibility/command-line-switches-visual-studio-sdk.md)します。
 
-2. 次の 4 つの値を作成する**\software\microsoft\visualstudio\\\<バージョン > \Text Editor\External マーカー\\\<MarkerGUID >**
+2. 次の 4 つの値を作成する **\software\microsoft\visualstudio\\ \<バージョン>\Text Editor\External マーカー\\\<MarkerGUID>**
 
    - (既定)
 
