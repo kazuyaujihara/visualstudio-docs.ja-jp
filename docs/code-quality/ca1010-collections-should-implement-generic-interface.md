@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c71912fdd70226e1b4be3c14be7c4e0bac26259d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a62120babe98ead6d78b568bc630f46a386edf02
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779847"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842657"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010:コレクションは、ジェネリック インターフェイスを実装しなければなりません
 
@@ -60,7 +60,7 @@ ms.locfileid: "62779847"
 
 この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
 
-```
+```ini
 dotnet_code_quality.ca1010.api_surface = private, internal
 ```
 

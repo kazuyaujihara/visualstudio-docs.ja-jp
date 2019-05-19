@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899168"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65846444"
 ---
 
 1. Visual Studio で ASP.NET プロジェクトを開いているコンピューターで、ソリューション エクスプローラーのプロジェクトを右クリックし、**[発行]** を選択します。

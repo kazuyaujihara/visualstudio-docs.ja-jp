@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 95e2a8892bb7b52122dd34afa3f300123149bb26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eee81a96e6841aa77e2056a95bd18979724b62e5
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779237"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842394"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028:列挙ストレージは Int32 でなければなりません
 
@@ -55,7 +55,7 @@ ms.locfileid: "62779237"
 
 この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
 
-```
+```ini
 dotnet_code_quality.ca1028.api_surface = private, internal
 ```
 

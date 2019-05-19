@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1054fa7b884c23edb76248cba17bab41cc64246f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee7e96009d689fec48d242f4db1790e6e0eacafa
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779312"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842365"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030:適切な場所にイベントを使用します
 
@@ -59,7 +59,7 @@ ms.locfileid: "62779312"
 
 この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
 
-```
+```ini
 dotnet_code_quality.ca1030.api_surface = private, internal
 ```
 

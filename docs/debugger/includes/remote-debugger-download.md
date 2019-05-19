@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 22db75783734a695ded937d8e6b93431568acd5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fec32bf187d629c5fd99ce27eb17a61db39d3873
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902880"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65839718"
 ---
 リモート デバイスまたは、デバッグするサーバーではなく、Visual Studio のコンピューターにダウンロードして、次の表にあるリンクから、リモート ツールの正しいバージョンをインストールします。
 
@@ -24,7 +24,7 @@ ms.locfileid: "62902880"
 
 |Version|リンク|メモ|
 |-|-|-|
-|Visual Studio 2019|[リモート ツール](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2019)|すべての Visual Studio 2019 バージョンと互換性があります。 (X 86、x64、または ARM64 など)、デバイスのオペレーティング システムに一致するバージョンをダウンロードします。 Windows Server で、次を参照してください。[ファイルのダウンロードのブロックを解除](../../debugger/remote-debugging-unblock-file-download.md)については、リモート ツールをダウンロードします。|
+|Visual Studio 2019|[リモート ツール](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019)|すべての Visual Studio 2019 バージョンと互換性があります。 (X 86、x64、または ARM64 など)、デバイスのオペレーティング システムに一致するバージョンをダウンロードします。 Windows Server で、次を参照してください。[ファイルのダウンロードのブロックを解除](../../debugger/remote-debugging-unblock-file-download.md)については、リモート ツールをダウンロードします。|
 |Visual Studio 2017|[リモート ツール](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|すべての Visual Studio 2017 バージョンと互換性があります。 (X 86、x64、または ARM64 など)、デバイスのオペレーティング システムに一致するバージョンをダウンロードします。 Windows Server で、次を参照してください。[ファイルのダウンロードのブロックを解除](../../debugger/remote-debugging-unblock-file-download.md)については、リモート ツールをダウンロードします。|
 |Visual Studio 2015|[リモート ツール](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Visual Studio 2015 用リモート ツール My.VisualStudio.com から利用できます。 メッセージが表示されたら、結合、無料[Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/)プログラム、または、Visual Studio のサブスクリプション ID でサインイン Windows Server で、次を参照してください。[ファイルのダウンロードのブロックを解除](../../debugger/remote-debugging-unblock-file-download.md)については、リモート ツールをダウンロードします。|
 |Visual Studio 2013|[リモート ツール](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Visual Studio 2013 のドキュメント内のページをダウンロードします。|

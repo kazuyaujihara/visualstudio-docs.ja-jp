@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 279bcf3aecc2a637a7a36c2041ed63a72017a800
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47bbb39cadb6a092f71ebd7b3907f34fcc2782ce
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545831"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842047"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716:識別子はキーワードと同一にすることはできません
 
@@ -60,7 +60,7 @@ Visual Basic のキーワードの大文字と小文字が使用され、その�
 
 この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
 
-```
+```ini
 dotnet_code_quality.ca1716.api_surface = private, internal
 ```
 

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 114b44ec566554c81f5caf3b8ac474f9c5a75c07
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b66e28804e85b04b1492a20828c42a9b5efd3cf8
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806458"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841037"
 ---
 # <a name="ca3012-review-code-for-regex-injection-vulnerabilities"></a>CA3012:RegEx インジェクションの脆弱性のコード レビュー
 
@@ -40,7 +40,7 @@ ms.locfileid: "62806458"
 > このルールは、アセンブリ間でデータを追跡することはできません。 たとえば、1 つのアセンブリが HTTP 要求の入力を読み取り、正規表現を作成する別のアセンブリに渡されます場合は、このルールは警告を生成しません。
 
 > [!NOTE]
-> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)で制限を構成する方法の`.editorconfig`ファイル。
+> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)の EditorConfig ファイルで制限を構成する方法。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
