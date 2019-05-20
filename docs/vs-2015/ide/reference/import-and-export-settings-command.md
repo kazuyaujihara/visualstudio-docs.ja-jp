@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db7ccd5a4b8266122c2d295cde3cdcca87dc0576
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 91b34183e36c86290c14e3da7d17687d45cfe180
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657835"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694660"
 ---
 # <a name="import-and-export-settings-command"></a>[設定のインポートとエクスポート] コマンド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
  任意。 現在の設定をリセットします。  
   
 ## <a name="remarks"></a>解説  
- スイッチを指定しないでこのコマンドを実行すると、**[設定のインポートとエクスポート]** ウィザードが開きます。 詳しくは、「[方法: コンピューター間または Visual Studio のバージョン間で設定を共有する](http://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882)」をご覧ください。  
+ スイッチを指定しないでこのコマンドを実行すると、**[設定のインポートとエクスポート]** ウィザードが開きます。 詳しくは、「[方法: コンピューター間または Visual Studio のバージョン間で設定を共有する](https://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882)」をご覧ください。  
   
 ## <a name="example"></a>例  
  次のコマンドは、現在の設定を `MyFile.vssettings` ファイルにエクスポートします。  
@@ -53,5 +53,5 @@ Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)

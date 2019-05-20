@@ -1,18 +1,19 @@
 ---
 title: C/C++ 用の単体テストの記述
-ms.date: 10/09/2018
+description: CTest、Boost.Test、Google Test など、さまざまなテスト フレームワークを使用し、Visual Studio で C++ 単体テストを記述します。
+ms.date: 05/06/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 308478bc47d62731494616a30ce320b3662de735
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945350"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461594"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio で C/C++ 用の単体テストを作成する
 
@@ -30,11 +31,11 @@ Visual Studio には次の C++ テスト フレームワークが含まれてお
 
 インストールされているフレームワークに加えて、Visual Studio 内で使いたいどのようなフレームワークについても、独自のテスト アダプターを作成できます。 テスト アダプターは、単体テストを **[テスト エクスプローラー]** ウィンドウと統合できます。 [Visual Studio Marketplace](https://marketplace.visualstudio.com) では複数のサードパーティ製アダプターを利用できます。 詳細については、「[サードパーティ製の単体テスト フレームワークをインストールする](install-third-party-unit-test-frameworks.md)」をご覧ください。
 
-**Visual Studio 2017 バージョン 15.7 以降 (Professional および Enterprise)**
+**Visual Studio 2017 以降 (Professional および Enterprise)**
 
 C++ 単体テスト プロジェクトでは [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) がサポートされています。
 
-**Visual Studio 2017 バージョン 15.5 以降**
+**Visual Studio 2017 以降 (すべてのエディション)**:
 
 - **Google Test アダプター**は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 このアダプターには、**ソリューション エクスプローラー**のソリューション ノードの **[新しいプロジェクトの追加]** 右クリック メニューでソリューションに追加できるプロジェクト テンプレートと、**[ツール]** > **[オプション]** で構成できるオプションがあります。 詳細については、「[How to: use Google Test in Visual Studio](how-to-use-google-test-for-cpp.md)」(Visual Studio で C++ 用の Google Test を使用する方法) をご覧ください。
 
@@ -50,17 +51,35 @@ Google Test アダプターと Boost.Test アダプターは、それぞれ、Vi
 
 以下のセクションでは、C++ の単体テストを始めるための基本的な手順を示します。 基本的な構成は、Microsoft と Google どちらのテスト フレームワークでもよく似ています。 Boost.Test では、テスト プロジェクトを手動で作成することが必要です。
 
-### <a name="create-a-test-project"></a>テスト プロジェクトを作成する
+::: moniker range="vs-2019"
+
+### <a name="create-a-test-project-in-visual-studio-2019"></a>Visual Studio 2019 でテスト プロジェクトを作成する
+
+テスト対象のコードと同じソリューション内にある 1 つまたは複数のテスト プロジェクトでテストを実行します。 既存のソリューションに新しいテスト プロジェクトを追加するには、**ソリューション エクスプローラー**でソリューション ノードを右クリックして、**[追加]** >  **[新しいプロジェクト]** の順に選びます。 **[言語]** を C++ に設定し、検索ボックスに "test" と入力します。 次の図は、**C++ によるデスクトップ開発**ワークロードと **UWP 開発**ワークロードがインストールされている場合に選ぶことができるテスト プロジェクトです。
+
+![Visual Studio 2019 の C++ テスト プロジェクト](media/vs-2019/cpp-new-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="create-a-test-project-in-visual-studio-2017"></a>Visual Studio 2017 でテスト プロジェクトを作成する
 
 テスト対象のコードと同じソリューション内にある 1 つまたは複数のテスト プロジェクトでテストを実行します。 既存のソリューションに新しいテスト プロジェクトを追加するには、**ソリューション エクスプローラー**でソリューション ノードを右クリックして、**[追加]** >  **[新しいプロジェクト]** の順に選びます。 次に、左側のウィンドウで **[Visual C++] > [テスト]** を選び、中央のウィンドウでプロジェクトの種類のいずれかを選びます。 次の図は、**C++ によるデスクトップ開発**ワークロードがインストールされている場合に選ぶことができるテスト プロジェクトです。
 
 ![C++ テスト プロジェクト](media/cpp-new-test-project.png)
+
+::: moniker-end
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>ソリューション内の他のプロジェクトへの参照を作成する
 
 テスト コードがテスト対象プロジェクト内の関数にアクセスできるようにするには、テスト プロジェクト内のプロジェクトへの参照を追加します。 **ソリューション エクスプローラー**でプロジェクト ノードを右クリックして、**[追加]** > **[参照]** を選びます。 ダイアログで、テストするプロジェクトを選びます。
 
 ![参照の追加](media/cpp-add-ref-test-project.png)
+
+### <a name="link-to-object-or-library-files"></a>オブジェクトまたはライブラリ ファイルのリンク
+
+テストする関数がテスト コードでエクスポートされない場合は、出力された .obj ファイルまたは .lib ファイルをテスト プロジェクトの依存関係に追加できます。 「[オブジェクト ファイルまたはライブラリ ファイルにテストをリンクするには](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer?view=vs-2015#objectRef)」を参照してください。
 
 ### <a name="add-include-directives-for-header-files"></a>ヘッダー ファイルの #include ディレクティブを追加する
 
@@ -117,7 +136,7 @@ TEST_METHOD(TestClassInit)
 
 ## <a name="use-codelens"></a>CodeLens を使用する
 
-**Visual Studio 2017 バージョン 15.7 以降 (Professional Edition および Enterprise Edition のみ)**
+**Visual Studio 2017 以降 (Professional および Enterprise エディション)**
 
 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) を使用すると、コード エディターを開いたままで単体テストの状態をすばやく確認できます。 次の中の任意の方法で、C++ 単体テスト プロジェクト用に CodeLens を初期化できます。
 

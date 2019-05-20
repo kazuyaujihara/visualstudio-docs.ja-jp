@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dc80bd821a85c475adba7fbbc264ab6b5a76a9b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df415b9ad56e8e9b740da57709d039737f1bd24a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431127"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697902"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio のデータセット ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "63431127"
 
  データセット オブジェクトは、ミニ データベースでは基本的には、メモリ内オブジェクトです。 DataTable と DataColumn の場合、DataRow オブジェクト格納し、開いている接続を管理することがなく 1 つまたは複数のデータベースからデータを変更にはが含まれています。 データセットは、更新プログラムを追跡し、アプリケーションが再接続されたときに、データベースに送信されるように、そのデータへの変更に関する情報を保持します。
 
- データセットと関連するクラスは、.NET Framework クラス ライブラリの System.Data 名前空間で定義されます。 作成してコードで動的にデータセットを変更します。 その方法の詳細については、ADO.NET を参照してください。 このセクションのドキュメントでは、Visual Studio のデザイナーを使用してデータセットを操作する方法を示します。 1 つです: プログラムによって行われたデータセットを使用して、DataAdapter オブジェクトは、デザイナーによって行われたデータセットが、データベースと対話する TableAdapter オブジェクトを使用します。 プログラムでデータセットを作成する方法の詳細については、次を参照してください。 [Dataadapter と Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)します。
+ データセットと関連するクラスは、.NET Framework クラス ライブラリの System.Data 名前空間で定義されます。 作成してコードで動的にデータセットを変更します。 その方法の詳細については、ADO.NET を参照してください。 このセクションのドキュメントでは、Visual Studio のデザイナーを使用してデータセットを操作する方法を示します。 1 つです: プログラムによって行われたデータセットを使用して、DataAdapter オブジェクトは、デザイナーによって行われたデータセットが、データベースと対話する TableAdapter オブジェクトを使用します。 プログラムでデータセットを作成する方法の詳細については、次を参照してください。 [Dataadapter と Datareader](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)します。
 
  場合は、アプリケーションは、追加すると、または削除するのみ、データベースからデータを読み取るし、しない更新プログラムを実行する必要があります、汎用の List オブジェクトまたは別のコレクション オブジェクトにデータを取得する DataReader オブジェクトを使用して、通常はパフォーマンスが向上を取得できます。 データを表示する場合はデータにバインドするユーザー インターフェイスをコレクションにします。
 
@@ -89,7 +89,7 @@ ms.locfileid: "63431127"
 
     - [データをデータベースに保存する](../data-tools/save-data-back-to-the-database.md)
 
-- クエリを実行し、データセットで、データを検索します。 詳細については、次を参照してください。[データセットを照会](../data-tools/query-datasets.md)します。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] により、 [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)内のデータを<xref:System.Data.DataSet>オブジェクト。 詳細については、「[LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)」を参照してください。
+- クエリを実行し、データセットで、データを検索します。 詳細については、次を参照してください。[データセットを照会](../data-tools/query-datasets.md)します。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] により、 [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)内のデータを<xref:System.Data.DataSet>オブジェクト。 詳細については、「[LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)」を参照してください。
 
 - 使用して、**データソース**ウィンドウ ユーザー インターフェイス コントロールをデータセットまたはその個々 の列にバインドして、ユーザーが編集可能な列を指定します。 詳細については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。
 

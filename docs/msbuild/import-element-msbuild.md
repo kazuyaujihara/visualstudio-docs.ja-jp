@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4e48bdd1a7f8701f46ed84296f7aad4490d08a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dce682aad7ab0d049488a6da9b8ab4f3b444d88
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977402"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531705"
 ---
 # <a name="import-element-msbuild"></a>Import 要素 (MSBuild)
 1 つのプロジェクト ファイルの内容を別のプロジェクト ファイルにインポートします。
@@ -46,6 +46,7 @@ ms.locfileid: "62977402"
 |---------------|-----------------|
 |`Project`|必須の属性です。<br /><br /> インポートするプロジェクト ファイルのパス。 パスにはワイルドカードを含めることができます。 一致するファイルは、並べ替えられた順にインポートされます。 この機能を使用すると、コード ファイルをディレクトリに追加するだけで、プロジェクトにコードを追加できます。|
 |`Condition`|省略可能な属性です。<br /><br /> 評価する条件です。 詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。|
+|`Sdk`| 省略可能な属性です。<br /><br /> プロジェクト SDK を参照します。|
 
 ### <a name="child-elements"></a>子要素
  なし

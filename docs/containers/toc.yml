@@ -12,9 +12,9 @@
     - name: チュートリアル
       expanded: true
       items:
-        - name: チュートリアル - Docker Compose を使用した複数コンテナーのアプリ
+        - name: Docker Compose を使用した複数コンテナーのアプリ
           href: tutorial-multicontainer.md
-        - name: チュートリアル - Visual Studio での Kubernetes
+        - name: Visual Studio での Kubernetes
           href: tutorial-kubernetes-tools.md
     - name: 方法
       items:
@@ -24,6 +24,8 @@
           href: hosting-web-apps-in-docker.md
         - name: Azure App Service に配置する
           href: deploy-app-service.md
+        - name: コンテナーを表示および診断する
+          href: view-and-diagnose-containers.md
         - name: コンテナー ツールを構成する
           href: container-tools-configure.md
     - name: トラブルシューティング

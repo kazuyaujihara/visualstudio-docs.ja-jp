@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 30fa3449acc209fdc89c0be8e85f82fa3795a365
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: 9e8deec8687e3ddb2b3d961aa9fc1e97a45c961d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974608"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685129"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221:ファイナライザーは保護されなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58974608"
  パブリック型では、ファミリ (保護された) アクセスを指定していないファイナライザーを実装します。
 
 ## <a name="rule-description"></a>規則の説明
- ファイナライザーは、ファミリ アクセス修飾子を使用する必要があります。 このルールは、C#、Visual Basic、および Visual C コンパイラによって強制されます。
+ ファイナライザーは、ファミリ アクセス修飾子を使用する必要があります。 このルールは、c#、Visual Basic、および Visual C コンパイラによって強制されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  この規則違反を解決するには、ファミリ アクセスできるように、ファイナライザーを変更します。
@@ -81,4 +81,4 @@ ms.locfileid: "58974608"
 ```
 
 ## <a name="see-also"></a>関連項目
- [Dispose パターン](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Dispose パターン](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

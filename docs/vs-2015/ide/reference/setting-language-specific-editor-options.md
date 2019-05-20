@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85fb8c1349590858391051b8df395c8e6a781a75
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c17bbb0989df9bf186652335cee6f77b047854fb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669793"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689486"
 ---
 # <a name="setting-language-specific-editor-options"></a>言語固有のフォルダー オプションの設定
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ ms.locfileid: "59669793"
  [[オプション]、[テキスト エディター]、[C#]、[IntelliSense]](../../ide/reference/options-text-editor-csharp-intellisense.md)  
  C# コードおよび J# コードでの作業における IntelliSense 入力候補一覧の動作を指定する設定について説明します。  
   
- [[検証] ([オプション] ダイアログ ボックス - [テキスト エディター] - [CSS])](http://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
+ [[検証] ([オプション] ダイアログ ボックス - [テキスト エディター] - [CSS])](https://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
  カスケード スタイル シート (CSS: Cascading Style Sheet) 用のステートメント入力候補およびエラー訂正の設定について説明します。  
   
- [[検証] ([オプション] ダイアログ ボックス - [テキスト エディター] - [HTML])](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
+ [[検証] ([オプション] ダイアログ ボックス - [テキスト エディター] - [HTML])](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
  選択したスキーマに基づく HTML 構文チェックの設定について説明します。  
   
  [[オプション]、[テキスト エディター]、[XAML]、[書式設定]](../../ide/reference/options-text-editor-xaml-formatting.md)  
@@ -57,5 +57,5 @@ ms.locfileid: "59669793"
  [エディターのカスタマイズ](../../ide/customizing-the-editor.md)  
  エディターのさまざまな設定可能な特徴について説明しているトピックへのリンクを提供します。  
   
- [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
  設定、キー バインド、およびその他の統合開発環境 (IDE: Integrated Development Environment) の機能をカスタマイズする方法を説明しているトピックへのリンクを提供します。

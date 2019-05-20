@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d5fbd50ec56173d0871aa1096825eabf87cf42e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 337341547891d87b577756350cbb71e13dd230ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972951"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691183"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>デバッグ エラーと警告関連のダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "58972951"
   
  [[現在の場所のソース コードを表示できません] ダイアログ ボックス](../debugger/no-source-available.md)  
   
- [[シンボル情報なし] ダイアログ ボックス](http://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [[シンボル情報なし] ダイアログ ボックス](https://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [[あいまいさの解決] ダイアログ ボックス](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -64,9 +64,9 @@ ms.locfileid: "58972951"
   
  [リモート デバッグ エラー](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [アタッチ エラー](http://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [アタッチ エラー](https://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
   
- [SQL デバッグ セットアップのトラブルシューティング](http://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [SQL デバッグ セットアップのトラブルシューティング](https://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
   
  [Visual C++ のデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)  
   

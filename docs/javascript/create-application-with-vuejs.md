@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960632"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226046"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Node.js Tools for Visual Studio を使用して Vue.js アプリケーションを作成する
 
@@ -71,10 +71,10 @@ Vue.js では、迅速にスキャフォールディングするプロジェク�
 1. Visual Studio を起動し、新しいプロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**asp.net**」と入力してから、**[新しい ASP.NET Core Web アプリケーションを作成する]** を選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**asp.net**」と入力してから、**[新しい ASP.NET Core Web アプリケーションを作成する]** を選択します。 ダイアログ ボックスが表示されたら、**client-app** という名前を入力し、**[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開した後、**[Web]** を選択します。 中央のウィンドウで、**[ASP.NET Core Web アプリケーション]** を選択してから **[OK]** を選択します。
+    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開した後、**[Web]** を選択します。 中央のウィンドウで、**[ASP.NET Core Web アプリケーション]** を選択し、**client-app** という名前を入力してから **[OK]** を選択します。
     ::: moniker-end
 
     **ASP.NET Core Web アプリケーション** プロジェクト テンプレートが表示されない場合は、**ASP.NET と Web 開発**ワークロードと **.NET Core 開発**ワークロードを最初にインストールする必要があります。 ワークロードをインストールするには、**[新しいプロジェクト]** ダイアログ ボックス (**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択) の左側のウィンドウで **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 必要なワークロードを選択します。
@@ -100,14 +100,14 @@ vue-cli npm モジュールをインストールするには、コマンド プ�
 
 1. コマンド プロンプトに移動し、現在のディレクトリをお使いのプロジェクト ルート フォルダーに変更します。
 
-1. 「`vue init webpack ClientApp`」と入力し、追加の質問に回答するように求められたら手順に従います。
+1. 「`vue init webpack client-app`」と入力し、追加の質問に回答するように求められたら手順に従います。
 
     > [!NOTE]
     > *.vue* ファイルについては、WebPac または類似のフレームワークをローダーと共に使って変換を行う必要があります。 TypeScript および Visual Studio では、*.vue* ファイルをコンパイルできません。 バンドルについても同様です。TypeScript では、ES2015 モジュール (つまり、`import` と `export` ステートメント) を、ブラウザーで読み込む最終的な 1 つの *.js* ファイルに変換できません。 ここでも WebPack が最善の選択肢となります。 MSBuild を使って Visual Studio 内からこのプロセスを進めるには、Visual Studio テンプレートから開始する必要があります。 現在のところ、すぐに使える Vue.js 開発用の ASP.NET テンプレートはありません。
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>ビルドされたファイルを wwwroot に出力するように webpack の構成を変更する
 
-* *./ClientApp/config/index.js* ファイルを開き、`build.index` および `build.assetsRoot` を wwwroot のパスに変更します。
+* *./client-app/config/index.js* ファイルを開き、`build.index` および `build.assetsRoot` を wwwroot のパスに変更します。
 
     ```js
     // Template for index.html
@@ -117,15 +117,15 @@ vue-cli npm モジュールをインストールするには、コマンド プ�
     assetsRoot: path.resolve(__dirname, '../../wwwroot'),
     ```
 
-#### <a name="indicate-the-project-to-build-the-clientapp-each-time-that-a-build-is-triggered"></a>ビルドがトリガーされるたびに ClientApp をビルドするようにプロジェクトを設定する
+#### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>ビルドがトリガーされるたびにクライアント アプリをビルドするようにプロジェクトを設定する
 
 1. Visual Studio で **[プロジェクト]** > **[プロパティ]** > **[ビルド イベント]** に移動します。
 
-1. **[ビルド前に実行するコマンド ライン]** に「`npm --prefix ./ClientApp run build`」と入力します。
+1. **[ビルド前に実行するコマンド ライン]** に「`npm --prefix ./client-app run build`」と入力します。
 
 #### <a name="configure-webpacks-output-module-names"></a>webpack の出力モジュール名を構成する
 
-* *./ClientApp/build/webpack.base.conf.js* ファイルを開き、出力のプロパティに次のプロパティを追加します。
+* *./client-app/build/webpack.base.conf.js* ファイルを開き、出力のプロパティに次のプロパティを追加します。
 
     ```js
     devtoolModuleFilenameTemplate: '[absolute-resource-path]',
@@ -138,7 +138,7 @@ vue-cli npm モジュールをインストールするには、コマンド プ�
 
 1. コマンド プロンプトに移動し、現在のディレクトリをプロジェクト ルート フォルダーに変更します。
 
-1. 「`vue create ClientApp`」と入力し、**[Manually select features]\(手動で機能を選択する\)** を選択します。
+1. 「`vue create client-app`」と入力し、**[Manually select features]\(手動で機能を選択する\)** を選択します。
 
 1. **[TypeScript]** を選択し、他の必要なオプションを選択します。
 
@@ -146,11 +146,11 @@ vue-cli npm モジュールをインストールするには、コマンド プ�
 
 #### <a name="configure-a-vuejs-project-for-typescript"></a>TypeScript の Vue.js プロジェクトを構成する
 
-1. *./ClientApp/tsconfig.json* ファイルを開き、コンパイラ オプションに `noEmit:true` を追加します。
+1. *./client-app/tsconfig.json* ファイルを開き、コンパイラ オプションに `noEmit:true` を追加します。
 
     このオプションを設定すると、Visual Studio でプロジェクトをビルドするたびにプロジェクトが繁雑にならなくなります。
 
-1. 次に、*./ClientApp/* に *vue.config.js* ファイルを作成し、次のコードを追加します。
+1. 次に、*./client-app/* に *vue.config.js* ファイルを作成し、次のコードを追加します。
 
     ```js
     module.exports = {
@@ -169,7 +169,7 @@ vue-cli npm モジュールをインストールするには、コマンド プ�
 
 #### <a name="build-with-vue-cli-30"></a>vue-cli 3.0 でビルドする
 
-vue-cli 3.0 の原因がわからない問題のため、ビルド プロセスを自動化できません。 wwwroot フォルダーを更新するたびに、ClientApp フォルダーで `npm run build` コマンドを実行する必要があります。
+vue-cli 3.0 の原因がわからない問題のため、ビルド プロセスを自動化できません。 wwwroot フォルダーを更新するたびに、client-app フォルダーで `npm run build` コマンドを実行する必要があります。
 
 ## <a name="limitations"></a>制限事項
 
@@ -179,7 +179,7 @@ vue-cli 3.0 の原因がわからない問題のため、ビルド プロセス�
 * TypeScript は *.vue* ファイルをモジュールとして認識しません。 *.vue* ファイルがどのようなものかを TypeScript に伝えるには、次のようなコードを含むファイルが必要です (vue-cli 3.0 のテンプレートにはこのファイルが既に含まれます)。
 
     ```js
-    // ./ClientApp/vue-shims.d.ts
+    // ./client-app/vue-shims.d.ts
     declare module "*.vue" {
         import Vue from "vue";
         export default Vue;

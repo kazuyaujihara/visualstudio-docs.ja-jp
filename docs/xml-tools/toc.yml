@@ -1,16 +1,21 @@
 - name: Visual Studio の XML ツール
-  href: xml-tools-in-visual-studio.md
   items:
+    - name: 概要
+      href: xml-tools-in-visual-studio.md
     - name: XML エディター
-      href: xml-editor.md
       items:
+        - name: 概要
+          displayName: XML editor
+          href: xml-editor.md
         - name: XML ドキュメントの検証
           href: xml-document-validation.md
         - name: XML エディターの IntelliSense 機能
           href: xml-editor-intellisense-features.md
         - name: XML スニペット
-          href: xml-snippets.md
           items:
+            - name: 概要
+              displayName: XML snippets overview
+              href: xml-snippets.md
             - name: XML スニペットを使用する
               href: how-to-use-xml-snippets.md
             - name: XML スキーマからスニペットを生成する
@@ -44,11 +49,14 @@
         - name: '[XML スキーマ] ダイアログ ボックス'
           href: xml-schemas-dialog-box.md
     - name: XML スキーマ デザイナー
-      href: xml-schema-designer.md
       items:
+        - name: 概要
+          displayName: XML Schema Designer overview
+          href: xml-schema-designer.md
         - name: XML スキーマ エクスプローラー
-          href: xml-schema-explorer.md
           items:
+            - name: XML スキーマ エクスプローラー
+              href: xml-schema-explorer.md
             - name: スキーマ セットを検索する
               href: searching-the-schema-set.md
             - name: 並べ替え、フィルター、およびグループ化
@@ -57,9 +65,10 @@
               href: context-menus-xml-schema-explorer.md
             - name: XML リテラルの統合
               href: integration-of-xml-literals-with-xml-schema-explorer.md
-        - name: XML スキーマ デザイナーのワークスペース
-          href: xml-schema-designer-workspace.md
+        - name: ワークスペース
           items:
+            - name: ビューの概要
+              href: xml-schema-designer-workspace.md
             - name: スタート ビュー
               href: start-view.md
             - name: コンテンツ モデル ビュー
@@ -91,17 +100,19 @@
             - name: ダイアグラムを印刷する
               href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
             - name: サンプル XSD ファイル
-              href: sample-xsd-files.md
               items:
                 - name: シンプル スキーマ
+                  displayName: Sample XSD files
                   href: sample-xsd-file-simple-schema.md
                 - name: 発注書スキーマ
                   href: sample-xsd-file-purchase-order-schema.md
                 - name: リレーションシップ
                   href: sample-xsd-file-relationships.md
     - name: XSLT のデバッグ
-      href: debugging-xslt.md
       items:
+        - name: 概要
+          displayName: XSLT debugging
+          href: debugging-xslt.md
         - name: 'チュートリアル: XSLT スタイル シートのデバッグ'
           href: walkthrough-debug-an-xslt-style-sheet.md
         - name: XPath 式を評価する

@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 196fc4bddba0cfa6addb786148cd3876e1ec8260
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 55ba291135b41d534d8f91cae5d6257a26d4e34c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430005"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686490"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio の複合パターン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -531,4 +531,4 @@ ms.locfileid: "63430005"
 |その他の注意事項|||カスタムのオンスクリーン キーボード|
 
 #### <a name="gestures"></a>ジェスチャ
- ジェスチャは、それ以外の場合より複雑な対話を必要とするコマンドのショートカットをユーザーに提供します。 Windows のガイドラインを参照[デスクトップ アプリケーションの一般的なタッチ ジェスチャ](http://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)、パンとズームなどの単純なジェスチャを含め、ほとんどのジェスチャには、このガイダンスに従います。
+ ジェスチャは、それ以外の場合より複雑な対話を必要とするコマンドのショートカットをユーザーに提供します。 Windows のガイドラインを参照[デスクトップ アプリケーションの一般的なタッチ ジェスチャ](https://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)、パンとズームなどの単純なジェスチャを含め、ほとんどのジェスチャには、このガイダンスに従います。

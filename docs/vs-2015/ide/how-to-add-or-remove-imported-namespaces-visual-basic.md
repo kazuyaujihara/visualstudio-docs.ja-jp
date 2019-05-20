@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f660a7b457f8ba70439321d3eb619389e50fe97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1eb88a5baa09256aa58d3c62b926047df01b32f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445716"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700989"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>方法: 追加またはインポートされた名前空間 (Visual Basic) を削除します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "63445716"
 3. **[インポートされた名前空間]** ボックスの一覧で、追加する名前空間のチェック ボックスをオンにします。  
   
     > [!NOTE]
-    > 名前空間をインポートするには、名前空間が参照されるコンポーネント内に存在する必要があります。 名前空間が一覧に表示されない場合は、名前空間を含むコンポーネントへの参照を追加する必要があります。 詳細については、次を参照してください。[に NIB 方法。追加または参照の追加 ダイアログ ボックスを使用して参照を削除する](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)します。  
+    > 名前空間をインポートするには、名前空間が参照されるコンポーネント内に存在する必要があります。 名前空間が一覧に表示されない場合は、名前空間を含むコンポーネントへの参照を追加する必要があります。 詳細については、次を参照してください。[に NIB 方法。追加または参照の追加 ダイアログ ボックスを使用して参照を削除する](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)します。  
   
 ### <a name="to-remove-an-imported-namespace"></a>インポートされた名前空間を削除するには  
   

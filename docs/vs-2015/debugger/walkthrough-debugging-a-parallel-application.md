@@ -22,17 +22,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad496bb55bae8d9e08035408059e454430ab4e39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092982"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705222"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>チュートリアル: 並列アプリケーションのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このチュートリアルでは、**[並列タスク]** ウィンドウと **[並列スタック]** ウィンドウを使用して並行アプリケーションをデバッグする方法について説明します。 これらのウィンドウでは、把握し、使用するコードの実行時の動作を検証できます。、[タスク並列ライブラリ (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)または[同時実行ランタイム](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)します。 このチュートリアルには、ブレークポイントが組み込まれたサンプル コードが用意されています。 ブレークポイントでコードの実行が中断されたら、**[並列タスク]** ウィンドウと **[並列スタック]** ウィンドウを使用してコードを調べます。  
+このチュートリアルでは、**[並列タスク]** ウィンドウと **[並列スタック]** ウィンドウを使用して並行アプリケーションをデバッグする方法について説明します。 これらのウィンドウでは、把握し、使用するコードの実行時の動作を検証できます。、[タスク並列ライブラリ (TPL)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)または[同時実行ランタイム](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)します。 このチュートリアルには、ブレークポイントが組み込まれたサンプル コードが用意されています。 ブレークポイントでコードの実行が中断されたら、**[並列タスク]** ウィンドウと **[並列スタック]** ウィンドウを使用してコードを調べます。  
   
  このチュートリアルでは、次のタスクについて説明します。  
   
@@ -308,7 +308,7 @@ ms.locfileid: "60092982"
  [マルチ スレッド アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [デバッガーの基本事項](../debugger/debugger-basics.md)   
  [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)   
- [並列プログラミング](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [コンカレンシー ランタイム](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [並列プログラミング](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [コンカレンシー ランタイム](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [[並列スタック] ウィンドウの使用](../debugger/using-the-parallel-stacks-window.md)   
  [[タスク] ウィンドウの使用](../debugger/using-the-tasks-window.md)

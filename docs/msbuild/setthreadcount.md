@@ -40,4 +40,4 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  スレッド カウントが更新された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。
 
 ## <a name="requirements"></a>要件
- **ヘッダー:***FileTracker.h*
+ **ヘッダー:**  *FileTracker.h*

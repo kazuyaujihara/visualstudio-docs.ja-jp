@@ -10,12 +10,12 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5b659560c7242fa691fe046b5e1628b1e47c2a2d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 407dda2f203b7be20b19c0e296caa9ce1c95b32c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111599"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696081"
 ---
 # <a name="service-essentials"></a>サービスの基本情報
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60111599"
   
 - サービス プロバイダーをオンデマンドの読み込みをサポートするには、グローバル サービスを登録します[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]します。 詳細については、次を参照してください。[サービス登録](../../misc/registering-services.md)します。  
   
-- サービスを取得した後を使用して、 [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (アンマネージ コード) やなどの目的のインターフェイスを取得するキャスト (マネージ コード)。  
+- サービスを取得した後を使用して、 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (アンマネージ コード) やなどの目的のインターフェイスを取得するキャスト (マネージ コード)。  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -62,5 +62,5 @@ ms.locfileid: "60111599"
 ## <a name="see-also"></a>関連項目  
  [利用可能なサービスの一覧](../../extensibility/internals/list-of-available-services.md)   
  [使用して、サービスを提供します。](../../extensibility/using-and-providing-services.md)   
- [キャストと型変換](http://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
- [キャスト](http://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)
+ [キャストと型変換](https://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
+ [キャスト](https://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)

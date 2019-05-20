@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c4278679cabb72e9d06f79c1668e7546f24194d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421136"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703757"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>言語サービスとエディターの拡張機能の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63421136"
  独自のエディター拡張機能を記述する前に、次の概念とテクノロジについて学習することをお勧めします。  
   
 ## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>Windows Presentation Foundation (WPF) とエディターの拡張機能  
- Visual Studio エディターのユーザー インターフェイス (UI) は、Windows Presentation Foundation (WPF) を使用して実装されます。 WPF では、豊富なビジュアル エクスペリエンスとビジネス ロジックからコードの視覚的な側面を分離する一貫したプログラミング モデルを提供します。 エディター拡張機能を作成するときに、多くの WPF 要素と機能を使用できます。 詳細については、次を参照してください。 [Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)します。  
+ Visual Studio エディターのユーザー インターフェイス (UI) は、Windows Presentation Foundation (WPF) を使用して実装されます。 WPF では、豊富なビジュアル エクスペリエンスとビジネス ロジックからコードの視覚的な側面を分離する一貫したプログラミング モデルを提供します。 エディター拡張機能を作成するときに、多くの WPF 要素と機能を使用できます。 詳細については、次を参照してください。 [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)します。  
   
 ## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Managed Extensibility Framework (MEF) とエディターの拡張機能  
  Visual Studio エディターでは、そのコンポーネントおよび拡張機能を管理するのに Managed Extensibility Framework (MEF) を使用します。 MEF では、開発者の詳細について Visual Studio などのホスト アプリケーション用の拡張機能を簡単に作成することもできます。 このフレームワークは、MEF コントラクトに従って拡張機能を定義し、MEF コンポーネントの一部としてエクスポートします。 ホスト アプリケーションは、これらを検索するには、登録、それらが正しいコンテキストに適用されていることを確認して、コンポーネント部分を管理します。  

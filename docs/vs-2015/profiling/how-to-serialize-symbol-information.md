@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b29ddb0e88a58fbfd924c40134305cf33a3e170b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c4ea056c48525014fffad0243dfeb4dd40a8daa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103798"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687009"
 ---
 # <a name="how-to-serialize-symbol-information"></a>方法: シンボル情報をシリアル化します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +39,4 @@ ms.locfileid: "60103798"
 ## <a name="see-also"></a>関連項目  
  [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)   
  [方法: Windows シンボル情報を参照](../profiling/how-to-reference-windows-symbol-information.md)   
- [方法: 分析されたレポート ファイルを保存します。](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [方法: 分析されたレポート ファイルを保存します。](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)

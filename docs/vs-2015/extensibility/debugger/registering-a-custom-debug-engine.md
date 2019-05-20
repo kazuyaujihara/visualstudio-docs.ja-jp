@@ -10,12 +10,12 @@ ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e7055d69ea387994ea8011ac779334e61b899abf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9cf06e881034b980b8e40e095779007b3c7fa6f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435702"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703599"
 ---
 # <a name="registering-a-custom-debug-engine"></a>カスタム デバッグ エンジンの登録
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "63435702"
 デバッグ エンジンする必要があります COM 規則に従うクラス ファクトリとして登録だけでなく、Visual Studio のレジストリ サブキーから Visual Studio で登録します。  
   
 > [!NOTE]
-> 一部として組み込まれている TextInterpreter サンプルでは、デバッグ エンジンを登録する方法の例があります、[チュートリアル。ATL COM を使用してデバッグ エンジンを構築する](http://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)します。  
+> 一部として組み込まれている TextInterpreter サンプルでは、デバッグ エンジンを登録する方法の例があります、[チュートリアル。ATL COM を使用してデバッグ エンジンを構築する](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)します。  
   
 ## <a name="dll-server-process"></a>DLL のサーバー プロセス  
  通常、デバッグ エンジンは、COM サーバーとして、独自の DLL に実装されます。 つまり Visual Studio がアクセスする前に、デバッグ エンジンする必要がありますを COM クラス ファクトリの CLSID を登録します。 デバッグ エンジンする必要がありますの登録に Visual Studio 自体のプロパティ (それ以外の場合のメトリックと呼ばれます) を確立するには、デバッグし、エンジンをサポートしています。 デバッグ エンジンの Visual Studio のレジストリ サブキーに書き込まれるメトリックの選択は、デバッグ エンジンをサポートする機能によって異なります。  
@@ -53,4 +53,4 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 ## <a name="see-also"></a>関連項目  
  [カスタム デバッグ エンジンを作成します。](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
  [デバッグ用の SDK ヘルパー](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [チュートリアル: ATL COM を使用してデバッグ エンジンを構築します。](http://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)
+ [チュートリアル: ATL COM を使用してデバッグ エンジンを構築します。](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)

@@ -12,10 +12,11 @@
 ### [ソフトウェアのダウンロード](subscriber-downloads.md)
 #### [使用可能なソフトウェアのダウンロードの一覧](software-download-list.md)
 ### [プロダクト キーの取得と管理](product-keys.md)
+### [Visual Studio と GitHub Enterprise](access-github.md)
+### [サブスクリプション会員の特典](subscriber-benefits.md)
 ### Visual Studio Dev Essentials
 #### [Visual Studio Dev Essentials に参加する](join-dev-essentials.md)
 #### [Visual Studio Dev Essentials を退会する](leave-vsde.md)
-### [サブスクリプション会員の特典](subscriber-benefits.md)
 ## サブスクリプション会員の特典を使用する
 ### ツール
 #### [Visual Studio IDE](vs-ide-benefit.md)
@@ -72,6 +73,7 @@
 #### [最大使用量](maximum-usage.md)
 #### [有効期限が切れたサブスクリプション](handle-expired-license.md)
 #### [個人用電子メール サインインを持つサブスクライバー](personal-email-sign-ins.md)
+### [GitHub Enterprise による Visual Studio の管理](assign-github.md)
 ## Visual Studio サブスクリプションを取得する
 ### [サブスクリプション オプションを比較する](https://visualstudio.microsoft.com/vs/pricing)
 ### クラウド サブスクリプションの購入

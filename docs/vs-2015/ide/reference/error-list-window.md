@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 924e4414d668f4cb3a12f5d27b915117da0a7119
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1d481bbc71019639588c793fee64acd34d5739e8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437225"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680149"
 ---
 # <a name="error-list-window"></a>[エラー一覧] ウィンドウ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "63437225"
   一覧を並べ替えるには、任意の列ヘッダーをクリックします。 並べ替えに使用する列を追加するには、Shift キーを押しながら、他の列ヘッダーをクリックします。 どの列を表示し、どの列を表示しないのかを指定するには、ショートカット メニューの **[列の表示]** を選びます。 列の表示順序を変更するには、任意の列を左右にドラッグします。  
   
 > [!NOTE]
-> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ここで説明する内容と異なる場合があります。 設定を変更するには、**[ツール] > [設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ここで説明する内容と異なる場合があります。 設定を変更するには、**[ツール] > [設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="error-list-filters"></a>エラー一覧のフィルター  
  2 つのドロップダウンボックス内には、ツールバーの左側とツールバーの右側に 2 種類のフィルターがあります。 ツールバーの左側にあるドロップダウン リストでは、使うコード ファイルのセットを指定します (**[ソリューション全体]**、**[開かれているドキュメント]**、**[現在のプロジェクト]**、**[現在のドキュメント]**)。  

@@ -10,12 +10,12 @@ ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 91deb6d2e3ec58533ac9339c8c94634db23ec996
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1a96504783de466551c6fb9d055b95ba38df760
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978379"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687690"
 ---
 # <a name="web-site-support"></a>Web サイト サポート
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Web サイトのプロジェクト システムでは、Web プロジェクト�
   
  Web サイト プロジェクト システムを作成するには、既存のプロジェクト システムへのテンプレートと登録属性を追加します。 これらの属性のいずれかの言語の IntelliSense のプロバイダーを選択します。 IntelliSense のプロバイダーの実装では、参照を処理し、キャッシュされていないスマート Web ページが要求されたときに、言語コンパイラを呼び出しています。  
   
- Web ページをコンパイルするために使用する言語コンパイラを登録する必要があります[!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]します。 使用することができます、 [\<コンパイラ > 要素](http://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823)次の例のように、コンパイラを登録する Web.config ファイルで。  
+ Web ページをコンパイルするために使用する言語コンパイラを登録する必要があります[!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]します。 使用することができます、 [\<コンパイラ > 要素](https://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823)次の例のように、コンパイラを登録する Web.config ファイルで。  
   
 ```  
 <system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  

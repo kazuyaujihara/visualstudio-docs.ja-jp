@@ -11,19 +11,19 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0a2042ef9a96eed99636ea0a2f5f09d99cd35ea2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429010"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699154"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Visual Studio コマンドのスタート ページへの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 カスタム スタート ページを作成するときに、Visual Studio コマンドを追加できます。 このドキュメントでは、Visual Studio のコマンドを [スタート] ページの XAML オブジェクトにバインドするさまざまな方法について説明します。  
   
- XAML でのコマンドの詳細については、次を参照してください[コマンド実行の概要。](http://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
+ XAML でのコマンドの詳細については、次を参照してください[コマンド実行の概要。](https://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
   
 ## <a name="adding-commands-from-the-command-well"></a>コマンドからコマンドを追加します。  
  スタート ページで作成[カスタム スタート ページを作成する](../extensibility/creating-a-custom-start-page.md)追加、<xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName>と<xref:Microsoft.VisualStudio.Shell?displayProperty=fullName>名前空間には、次のようにします。  
@@ -94,7 +94,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ## <a name="adding-commands-with-the-dte-object"></a>DTE オブジェクトにコマンドを追加します。  
  DTE オブジェクトは、スタート ページ、マークアップとコードの両方からアクセスできます。  
   
- マークアップでは、アクセスできるを使用して、[バインディング マークアップ拡張機能](http://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63)を呼び出す構文、<xref:EnvDTE.DTE>オブジェクト。 このアプローチを使用して単純なプロパティのコレクションを返すようにバインドすることができますが、メソッドやサービスにバインドすることはできません。 次の例は、<xref:System.Windows.Controls.TextBlock>コントロールにバインドする、<xref:EnvDTE._DTE.Name%2A>プロパティと<xref:System.Windows.Controls.ListBox>を列挙するコントロール、<xref:EnvDTE.Window.Caption%2A>によって返されるコレクションのプロパティ、<xref:EnvDTE._DTE.Windows%2A>プロパティ。  
+ マークアップでは、アクセスできるを使用して、[バインディング マークアップ拡張機能](https://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63)を呼び出す構文、<xref:EnvDTE.DTE>オブジェクト。 このアプローチを使用して単純なプロパティのコレクションを返すようにバインドすることができますが、メソッドやサービスにバインドすることはできません。 次の例は、<xref:System.Windows.Controls.TextBlock>コントロールにバインドする、<xref:EnvDTE._DTE.Name%2A>プロパティと<xref:System.Windows.Controls.ListBox>を列挙するコントロール、<xref:EnvDTE.Window.Caption%2A>によって返されるコレクションのプロパティ、<xref:EnvDTE._DTE.Windows%2A>プロパティ。  
   
 ```xml  
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>  

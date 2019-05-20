@@ -1,18 +1,18 @@
 ---
 title: C++ 用の Microsoft 単体テスト フレームワークの使用
-ms.date: 11/15/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970353"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461476"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Visual Studio で C++ 用の Microsoft 単体テスト フレームワークを使用する
 
@@ -52,10 +52,12 @@ DLL でエクスポートされない関数をテストするときなど、場�
 ## <a name="run-the-tests"></a>テストを実行
 
 1. **[テスト]** メニューで、**[Windows]**、**[テスト エクスプローラー]** の順に選択します。
-2. ウィンドウに一部のテストしか表示されない場合は、次の方法でテスト プロジェクトをビルドします。**ソリューション エクスプローラー**で、該当するノードを右クリックし、**[ビルド]** または **[リビルド]** を選択します。
 
-3. **テスト エクスプローラー**で、**[すべて実行]** を選択するか、または実行する特定のテストを選択します。 ブレークポイントを有効にした場合のデバッグ モードでのテストの実行など他のオプションについては、テストを右クリックします。
-4. **[出力ウィンドウ]** で、ドロップダウンから **[テスト]** を選択し、`Logger` クラスによって書き出されたメッセージを表示します。
+1. ウィンドウに一部のテストしか表示されない場合は、次の方法でテスト プロジェクトをビルドします。**ソリューション エクスプローラー**で、該当するノードを右クリックし、**[ビルド]** または **[リビルド]** を選択します。
+
+1. **テスト エクスプローラー**で、**[すべて実行]** を選択するか、または実行する特定のテストを選択します。 ブレークポイントを有効にした場合のデバッグ モードでのテストの実行など他のオプションについては、テストを右クリックします。
+
+1. **[出力ウィンドウ]** で、ドロップダウンから **[テスト]** を選択し、`Logger` クラスによって書き出されたメッセージを表示します。
 
    ![テスト メッセージを示す C++ 出力ウィンドウ](media/cpp-test-output-window.png)
 

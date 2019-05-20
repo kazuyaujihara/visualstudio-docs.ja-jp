@@ -12,12 +12,12 @@ ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b31882f89d8fbf723af8f2a7d52f39c3a1d6c4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1558aa8ca9cad93b00cf90f02f3af6d346b036b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962733"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698660"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugPropertyCreateEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>実装についてのメモ  
- デは、プロパティが作成されたことを報告するには、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります。 SDM を使用して[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)にアクセスする、`IDebugEvent2`インターフェイス。 デがロードまたは作成されたスクリプトに関連付けられたプロパティを作成し、そのスクリプトは、IDE に表示する必要がある場合、このインターフェイスが実装されます。  
+ デは、プロパティが作成されたことを報告するには、このインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります。 SDM を使用して[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)にアクセスする、`IDebugEvent2`インターフェイス。 デがロードまたは作成されたスクリプトに関連付けられたプロパティを作成し、そのスクリプトは、IDE に表示する必要がある場合、このインターフェイスが実装されます。  
   
 ## <a name="notes-for-callers"></a>呼び出し元のノート  
  デは作成し、プロパティが作成されたレポートにこのイベント オブジェクトを送信します。 使用して、イベントが送信される、 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ中のプログラムにアタッチされているときに、SDM によって指定されたコールバック関数。  
@@ -44,7 +44,7 @@ IDebugPropertyCreateEvent2 : IUnknown
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|新しいプロパティを取得します。|  
   
 ## <a name="remarks"></a>Remarks  
- デが、更新するにはこのイベントを SDM に送信できますプロパティに特定のドキュメントまたは関連付けられているスクリプトがある場合、**スクリプト ドキュメント**ウィンドウ、ドキュメントの名前に置き換えます。 SDM を呼び出します[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)引数で`guidDocument`を取得する、`VARIANT`を含む、 [IUnknown](http://msdn.microsoft.com/library/e6b85472-e54b-4b8c-b19f-4454d6c05a8f)ポインター。 SDM を呼び出します[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)を取得するには、このポインターを[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)を更新するために使用するインターフェイス、**スクリプト ドキュメント**ウィンドウ。  
+ デが、更新するにはこのイベントを SDM に送信できますプロパティに特定のドキュメントまたは関連付けられているスクリプトがある場合、**スクリプト ドキュメント**ウィンドウ、ドキュメントの名前に置き換えます。 SDM を呼び出します[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)引数で`guidDocument`を取得する、`VARIANT`を含む、 [IUnknown](https://msdn.microsoft.com/library/e6b85472-e54b-4b8c-b19f-4454d6c05a8f)ポインター。 SDM を呼び出します[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)を取得するには、このポインターを[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)を更新するために使用するインターフェイス、**スクリプト ドキュメント**ウィンドウ。  
   
 ## <a name="requirements"></a>必要条件  
  ヘッダー: msdbg.h  

@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f664b1bf2af89d8c3f6e06792039571f4211236
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444056"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692744"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>コンカレンシー ビジュアライザー コマンドライン ユーティリティ (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "63444056"
   
 |オプション|説明|パラメーター|戻り値|  
 |------------|-----------------|----------------|-------------------|  
-|クエリ|コレクションを開始できるかどうかを返します。|なし|コレクションを開始できる場合は 0。<br /><br /> コレクションが既に実行中の場合は 1。<br /><br /> コレクションは実行中ではないが、必要な [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) セッションの 1 つ以上が既に有効になっている場合は 2。|  
+|クエリ|コレクションを開始できるかどうかを返します。|なし|コレクションを開始できる場合は 0。<br /><br /> コレクションが既に実行中の場合は 1。<br /><br /> コレクションは実行中ではないが、必要な [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) セッションの 1 つ以上が既に有効になっている場合は 2。|  
 |Launch|コンカレンシー ビジュアライザーで、指定されたプロセスを実行します。|実行可能ファイルのパス。|実行が成功した場合は 0。<br /><br /> ターゲット アプリケーションを開始できなかったために実行が失敗した場合は 1。<br /><br /> CVCollectionCmd に、指定された出力ディレクトリへの書き込みアクセス許可がないために実行が失敗した場合は 13。|  
 |Attach|システム全体でのトレースのコレクションを開始します。プロセスが指定されている場合は、そのプロセスにアタッチします。|なし。|アタッチが成功した場合は 0。<br /><br /> 指定されたプロセスが無効であるか、指定があいまいなためにアタッチが失敗した場合は 1。<br /><br /> CVCollectionCmd に、指定された出力ディレクトリへの書き込みアクセス許可がないためにアタッチが失敗した場合は 13。|  
 |Detach|コレクションを停止します。|なし。|デタッチが成功した場合は 0。<br /><br /> コレクションが現在実行されていないためにデタッチが失敗した場合は 1。<br /><br /> コレクションを停止できなかったためにデタッチが失敗した場合は 2。|  
@@ -75,7 +75,7 @@ ms.locfileid: "63444056"
 |Markers|マーカー プロバイダーのリストが格納されます。|0 個以上の MarkerProvider 要素を格納できます。|  
 |MarkerProvider|単一のマーカー プロバイダーを指定します。|以下の要素が含まれている必要があります。<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 以下の要素を含めることができます。<br /><br /> -   Categories<br />-   IsEnabled|  
 |レベル|MarkerProvider の重要度レベルを設定します。|-   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything|  
-|Guid|ETW マーカー プロバイダーのグローバル一意識別子。|GUID。|  
+|GUID|ETW マーカー プロバイダーのグローバル一意識別子。|GUID。|  
 |名前|マーカー プロバイダーの説明を指定します。|文字列。|  
 |カテゴリ|マーカー プロバイダーについて収集するカテゴリを指定します。|コンマ区切りの文字列または数値の範囲。|  
 |IsEnabled|マーカー プロバイダーをコレクションに有効にするかどうかを判別する値を設定します。|-   True<br />-   False|  

@@ -75,12 +75,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e43175ace465abdece5ec1f06aeda10ecddb9a14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 158aff0f14886ea5d714c35456bf53d5768f57b8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057457"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697865"
 ---
 # <a name="crt-debug-heap-details"></a>CRT デバッグ ヒープ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ ms.locfileid: "60057457"
 ## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> デバッグ ヒープを使用してバッファー オーバーランを見つける  
  割り当てたバッファーの末尾を超えて書き込みをしてしまうこと、およびメモリ リーク (不要になったメモリ割り当てを解放し忘れること) は、プログラマが経験する問題の中で最も一般的でありながら、最もやっかいなものです。 デバッグ ヒープは、このようなメモリ割り当ての問題を解決するための強力なツールとなります。  
   
- デバッグ バージョンのヒープ関数は、リリース ビルドで使用される標準バージョン (基本バージョン) の関数を呼び出します。 メモリ ブロックの割り当てが要求されると、デバッグ ヒープ マネージャーは、要求されたサイズより少し大きめのメモリ ブロックをベース ヒープから割り当て、このブロック内のユーザー領域へのポインターを返します。 たとえば、アプリケーション中で `malloc( 10 )` という呼び出しをしたとします。 リリース ビルドで[malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0)は 10 バイトの割り当てを要求のベース ヒープ割り当てルーチンを呼び出します。 ただし、デバッグ ビルドで`malloc`呼び出して[_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)、10 バイトの割り当てと、追加のメモリの約 36 バイト加えた要求ベース ヒープ割り当てルーチンを呼び出します。 デバッグ ヒープに割り当てられたすべてのメモリ ブロックは、単一のリンク リストとして、割り当てられた順番で連結されます。  
+ デバッグ バージョンのヒープ関数は、リリース ビルドで使用される標準バージョン (基本バージョン) の関数を呼び出します。 メモリ ブロックの割り当てが要求されると、デバッグ ヒープ マネージャーは、要求されたサイズより少し大きめのメモリ ブロックをベース ヒープから割り当て、このブロック内のユーザー領域へのポインターを返します。 たとえば、アプリケーション中で `malloc( 10 )` という呼び出しをしたとします。 リリース ビルドで[malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0)は 10 バイトの割り当てを要求のベース ヒープ割り当てルーチンを呼び出します。 ただし、デバッグ ビルドで`malloc`呼び出して[_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)、10 バイトの割り当てと、追加のメモリの約 36 バイト加えた要求ベース ヒープ割り当てルーチンを呼び出します。 デバッグ ヒープに割り当てられたすべてのメモリ ブロックは、単一のリンク リストとして、割り当てられた順番で連結されます。  
   
  デバッグ ヒープ ルーチンによって余分に割り当てられたメモリは、ブックキーピング情報や、デバッグ用のメモリ ブロックを連結するためのポインター用に使用されます。また、割り当てられた領域を超えて行われた書き込みを検出するために割り当て領域の前後に確保される小さなバッファーとしても使用されます。  
   
@@ -150,23 +150,23 @@ typedef struct _CrtMemBlockHeader
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
 ## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a>デバッグ ヒープ上のメモリ ブロックの型  
- デバッグ ヒープ上のすべてのメモリ ブロックには、5 つの割り当て型のうちのいずれかの型が割り当てられます。 型によって、メモリ リークの検出やメモリ状態をレポートするときの追跡方法やレポート方法が異なります。 メモリ ブロックの型を指定するには、[_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) などのデバッグ ヒープ割り当て関数を直接呼び出してメモリ ブロックを割り当てます。 デバッグ ヒープ上のメモリ ブロックの 5 つの型を次に示します。これらの型は、**_CrtMemBlockHeader** 構造体の **nBlockUse** メンバーに設定されます。  
+ デバッグ ヒープ上のすべてのメモリ ブロックには、5 つの割り当て型のうちのいずれかの型が割り当てられます。 型によって、メモリ リークの検出やメモリ状態をレポートするときの追跡方法やレポート方法が異なります。 メモリ ブロックの型を指定するには、[_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) などのデバッグ ヒープ割り当て関数を直接呼び出してメモリ ブロックを割り当てます。 デバッグ ヒープ上のメモリ ブロックの 5 つの型を次に示します。これらの型は、**_CrtMemBlockHeader** 構造体の **nBlockUse** メンバーに設定されます。  
   
  **_NORMAL_BLOCK**  
- [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) または [calloc](http://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) を呼び出すと Normal ブロックが作成されます。 Client ブロックを使用せずに Normal ブロックだけを使用する場合は、[_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b) を定義することもできます。そうすると、デバッグ ビルドでは、すべてのヒープ割り当て関数の呼び出しが、対応するデバッグ バージョン関数の呼び出しに置き換えられます。 これによって、ヒープ割り当て関数の呼び出しに関連するファイル名と行番号情報を対応するブロック ヘッダーに格納できます。  
+ [malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) または [calloc](https://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) を呼び出すと Normal ブロックが作成されます。 Client ブロックを使用せずに Normal ブロックだけを使用する場合は、[_CRTDBG_MAP_ALLOC](https://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b) を定義することもできます。そうすると、デバッグ ビルドでは、すべてのヒープ割り当て関数の呼び出しが、対応するデバッグ バージョン関数の呼び出しに置き換えられます。 これによって、ヒープ割り当て関数の呼び出しに関連するファイル名と行番号情報を対応するブロック ヘッダーに格納できます。  
   
  `_CRT_BLOCK`  
  多数のランタイム ライブラリ関数は、内部的にメモリ ブロックを割り当てます。このように内部的に割り当てられたメモリ ブロックは CRT ブロックとして個別に扱われます。 そのため、メモリ リークの検出などの処理には、これらのブロックは影響しません。 CRT 型のブロックが、割り当て関数によって割り当てられたり、再割り当てされたり、解放されたりすることはありません。  
   
  `_CLIENT_BLOCK`  
- アプリケーションでは、デバッグ ヒープ関数を明示的に呼び出し、このメモリ ブロック型を割り当てることによって、特定の割り当て領域をデバッグの目的で特別に追跡できます。 たとえば、MFC はすべての **CObjects** が Client ブロックとして割り当てられます。ほかのアプリケーションでも、さまざまなメモリ オブジェクトが Client ブロックとして保持されている可能性があります。 より細かい追跡を実施するために、Client ブロック型を細分化することもできます。 Client ブロック型を細分化した型を指定するには、その型を表す数値を左に 16 ビットシフトし、`OR` との `_CLIENT_BLOCK` 演算を行います。 例えば:  
+ アプリケーションでは、デバッグ ヒープ関数を明示的に呼び出し、このメモリ ブロック型を割り当てることによって、特定の割り当て領域をデバッグの目的で特別に追跡できます。 たとえば、MFC はすべての **CObjects** が Client ブロックとして割り当てられます。ほかのアプリケーションでも、さまざまなメモリ オブジェクトが Client ブロックとして保持されている可能性があります。 より細かい追跡を実施するために、Client ブロック型を細分化することもできます。 Client ブロック型を細分化した型を指定するには、その型を表す数値を左に 16 ビットシフトし、`OR` との `_CLIENT_BLOCK` 演算を行います。 例:  
   
 ```  
 #define MYSUBTYPE 4  
 freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));  
 ```  
   
- Client ブロックに格納されているオブジェクトをダンプするためにクライアント側で定義したフック関数を [_CrtSetDumpClient](http://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033) を使用して組み込むこともできます。これにより、デバッグ関数が Client ブロックの内容をダンプするたびに、このフック関数が呼び出されるようになります。 また、[_CrtDoForAllClientObjects](http://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248) を使用して、デバッグ ヒープ上の各 Client ブロックに対して、アプリケーション側で用意した特定の関数を呼び出すこともできます。  
+ Client ブロックに格納されているオブジェクトをダンプするためにクライアント側で定義したフック関数を [_CrtSetDumpClient](https://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033) を使用して組み込むこともできます。これにより、デバッグ関数が Client ブロックの内容をダンプするたびに、このフック関数が呼び出されるようになります。 また、[_CrtDoForAllClientObjects](https://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248) を使用して、デバッグ ヒープ上の各 Client ブロックに対して、アプリケーション側で用意した特定の関数を呼び出すこともできます。  
   
  **_FREE_BLOCK**  
  通常は解放済みのブロックはリストから削除されます。 ただし、解放済みのメモリに書き込みが行われていないかどうかをチェックしたり、メモリ不足の状態をシミュレートしたりするために、解放されたブロックをリンク リストに残しておくこともできます。その場合は、解放されていることを示すために、既知のバイト値 (現在は 0xDD) が格納されます。  
@@ -174,7 +174,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  **_IGNORE_BLOCK**  
  デバッグ ヒープ処理を一定期間だけオフにできます。 この間は、メモリ ブロックはリスト中に保持されますが、Ignore ブロックとしてマークされます。  
   
- 特定のブロックの型や、その細分化された型を調べるには、[_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) 関数と、**_BLOCK_TYPE** マクロおよび **_BLOCK_SUBTYPE** マクロを使用します。 これらのマクロは、crtdbg.h で次のように定義されています。  
+ 特定のブロックの型や、その細分化された型を調べるには、[_CrtReportBlockType](https://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) 関数と、**_BLOCK_TYPE** マクロおよび **_BLOCK_SUBTYPE** マクロを使用します。 これらのマクロは、crtdbg.h で次のように定義されています。  
   
 ```  
 #define _BLOCK_TYPE(block)          (block & 0xFFFF)  
@@ -187,10 +187,10 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  デバッグ ヒープ用の機能の多くは、コードの中からアクセスする必要があります。 次のセクションでは、これらの機能のいくつかについて、使用方法を説明します。  
   
  `_CrtCheckMemory`  
- たとえば、[_CrtCheckMemory](http://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) を呼び出すと、どの場所からでもヒープが完全かどうかをチェックできます。 この関数は、ヒープ上の各メモリ ブロックを検査し、メモリ ブロックのヘッダー情報が有効かどうかを検証すると同時にバッファーが変更されていないかどうかを確認します。  
+ たとえば、[_CrtCheckMemory](https://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) を呼び出すと、どの場所からでもヒープが完全かどうかをチェックできます。 この関数は、ヒープ上の各メモリ ブロックを検査し、メモリ ブロックのヘッダー情報が有効かどうかを検証すると同時にバッファーが変更されていないかどうかを確認します。  
   
  `_CrtSetDbgFlag`  
- 内部フラグの [_crtDbgFlag](http://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973) を使用すると、デバッグ ヒープによる割り当て領域の追跡方法を制御できます。このフラグを参照および設定するには、[_CrtSetDbgFlag](http://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c) 関数を使用します。 このフラグを変更することによって、デバッグ ヒープを使用して、プログラムの終了時にメモリ リークをチェックし、検出されたメモリ リークをすべて出力できます。 同様に、解放されたメモリ ブロックをリンク リストから削除しないよう指定することによって、メモリ不足の状態をシミュレートすることもできます。 ヒープのチェック時には、解放されたメモリ ブロックがそのままの状態で維持されているかどうかを確認します。  
+ 内部フラグの [_crtDbgFlag](https://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973) を使用すると、デバッグ ヒープによる割り当て領域の追跡方法を制御できます。このフラグを参照および設定するには、[_CrtSetDbgFlag](https://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c) 関数を使用します。 このフラグを変更することによって、デバッグ ヒープを使用して、プログラムの終了時にメモリ リークをチェックし、検出されたメモリ リークをすべて出力できます。 同様に、解放されたメモリ ブロックをリンク リストから削除しないよう指定することによって、メモリ不足の状態をシミュレートすることもできます。 ヒープのチェック時には、解放されたメモリ ブロックがそのままの状態で維持されているかどうかを確認します。  
   
  **_crtDbgFlag** フラグには、次のビット フィールドがあります。  
   
@@ -306,11 +306,11 @@ typedef struct _CrtMemState
   
 |関数|説明|  
 |--------------|-----------------|  
-|[_CrtMemCheckpoint](http://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|ヒープのスナップショットをアプリケーション側で用意した **_CrtMemState** 構造体に保存します。|  
-|[_CrtMemDifference](http://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|メモリ状態を格納した 2 つの構造体を比較し、その相違点を別の構造体に保存します。2 つの状態が異なっている場合は TRUE を返します。|  
-|[_CrtMemDumpStatistics](http://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|指定された **_CrtMemState** 構造体の内容をダンプします。 この構造体には、ある時点でのデバッグ ヒープの状態のスナップショット、または 2 つのスナップショットの相違点が格納されています。|  
-|[_CrtMemDumpAllObjectsSince](http://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|指定されたスナップショットの取得以降、またはプログラムの実行開始以降に割り当てられたすべてのオブジェクトに関する情報をダンプします。 アプリケーション側で提供するフック関数が **_CrtSetDumpClient** を使用して組み込まれている場合は、**_CLIENT_BLOCK** ブロックをダンプするたびに、そのフック関数を呼び出します。|  
-|[_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|プログラムの実行開始以降にメモリ リークが発生したかどうかを調べます。メモリ リークが発生している場合は、割り当てられている全オブジェクトをダンプします。 アプリケーション側で提供するフック関数が **_CrtSetDumpClient** を使用して組み込まれている場合は、**_CrtDumpMemoryLeaks** によって **_CLIENT_BLOCK** ブロックがダンプされるたびに、そのフック関数が呼び出されます。|  
+|[_CrtMemCheckpoint](https://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|ヒープのスナップショットをアプリケーション側で用意した **_CrtMemState** 構造体に保存します。|  
+|[_CrtMemDifference](https://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|メモリ状態を格納した 2 つの構造体を比較し、その相違点を別の構造体に保存します。2 つの状態が異なっている場合は TRUE を返します。|  
+|[_CrtMemDumpStatistics](https://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|指定された **_CrtMemState** 構造体の内容をダンプします。 この構造体には、ある時点でのデバッグ ヒープの状態のスナップショット、または 2 つのスナップショットの相違点が格納されています。|  
+|[_CrtMemDumpAllObjectsSince](https://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|指定されたスナップショットの取得以降、またはプログラムの実行開始以降に割り当てられたすべてのオブジェクトに関する情報をダンプします。 アプリケーション側で提供するフック関数が **_CrtSetDumpClient** を使用して組み込まれている場合は、**_CLIENT_BLOCK** ブロックをダンプするたびに、そのフック関数を呼び出します。|  
+|[_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|プログラムの実行開始以降にメモリ リークが発生したかどうかを調べます。メモリ リークが発生している場合は、割り当てられている全オブジェクトをダンプします。 アプリケーション側で提供するフック関数が **_CrtSetDumpClient** を使用して組み込まれている場合は、**_CrtDumpMemoryLeaks** によって **_CLIENT_BLOCK** ブロックがダンプされるたびに、そのフック関数が呼び出されます。|  
   
  ![ページのトップへ](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [内容](#BKMK_Contents)  
   
@@ -321,7 +321,7 @@ typedef struct _CrtMemState
   
  不正となるヒープ割り当て呼び出しを特定するには、デバッグ ヒープ上の各ブロックに関連付けられている一意の割り当て要求番号を利用する方法が最も簡単です。 ダンプ関数を使用してブロックの情報を出力すると、この割り当て要求番号が中かっこで囲まれて表示されます ("{36}" など)。  
   
- 不正な割り当てブロックの割り当て要求番号が判明したら、この番号を [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) に渡してブレークポイントを作成できます。 このブロックが割り当てられる直前でプログラムの実行が停止するため、その時点からさかのぼって、不正な呼び出しの原因となっているルーチンを突き止めることができます。 再コンパイルせずに同じことをデバッガーで行うには、問題の割り当て要求番号を **_crtBreakAlloc** に設定します。  
+ 不正な割り当てブロックの割り当て要求番号が判明したら、この番号を [_CrtSetBreakAlloc](https://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) に渡してブレークポイントを作成できます。 このブロックが割り当てられる直前でプログラムの実行が停止するため、その時点からさかのぼって、不正な呼び出しの原因となっているルーチンを突き止めることができます。 再コンパイルせずに同じことをデバッガーで行うには、問題の割り当て要求番号を **_crtBreakAlloc** に設定します。  
   
  **デバッグ用の独自割り当てルーチンの作成**  
   

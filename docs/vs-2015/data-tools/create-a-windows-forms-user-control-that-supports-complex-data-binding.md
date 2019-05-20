@@ -18,19 +18,19 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b263dd4e00fcb7a519ab89ecc693bd6216e0eeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0c27ec5be48b37f95068a2be6c8605a97d122d21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097155"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705001"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>複合データ バインディングをサポートする Windows フォーム ユーザー コントロールの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows アプリケーションのフォームにデータを表示する場合は、**[ツールボックス]** から既存のコントロールを選択するか、またはアプリケーションが標準コントロールでは提供できない機能を必要とする場合は、カスタム コントロールを記述できます。 このチュートリアルでは、<xref:System.ComponentModel.ComplexBindingPropertiesAttribute> を実装するコントロールを作成する方法を示します。 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> を実装するコントロールには、データにバインドできる `DataSource` プロパティと `DataMember` プロパティが含まれます。 このようなコントロールは、<xref:System.Windows.Forms.DataGridView> や <xref:System.Windows.Forms.ListBox> に似ています。  
   
- コントロールの作成の詳細については、次を参照してください。[デザイン時に Windows フォーム コントロールの開発](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829)します。  
+ コントロールの作成の詳細については、次を参照してください。[デザイン時に Windows フォーム コントロールの開発](https://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829)します。  
   
  データ バインディングのシナリオで使用するためのコントロールを作成するときは、次のいずれかのデータ バインディング属性を実装する必要があります。  
   
@@ -52,9 +52,9 @@ Windows アプリケーションのフォームにデータを表示する場合
   
 - `ComplexBindingProperty` 属性を実装します。  
   
-- 使用してデータセットを作成、[データ ソース構成ウィザード](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)します。  
+- 使用してデータセットを作成、[データ ソース構成ウィザード](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)します。  
   
-- 設定、**顧客**テーブルに、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)新しい複雑なコントロールを使用します。  
+- 設定、**顧客**テーブルに、[データ ソース ウィンドウ](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)新しい複雑なコントロールを使用します。  
   
 - 新しいコントロールをドラッグしてから、追加、**データ ソース ウィンドウ**に**Form1**します。  
   
@@ -72,7 +72,7 @@ Windows アプリケーションのフォームにデータを表示する場合
   
 2. プロジェクトに **ComplexControlWalkthrough** という名前を付けます。  
   
-3. 選択**Windows アプリケーション**、 をクリック**OK**します。 詳細については、次を参照してください。[クライアント アプリケーション](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
+3. 選択**Windows アプリケーション**、 をクリック**OK**します。 詳細については、次を参照してください。[クライアント アプリケーション](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)します。  
   
      **ComplexControlWalkthrough** プロジェクトが作成されて**ソリューション エクスプローラー**に追加されます。  
   
@@ -173,4 +173,4 @@ Windows アプリケーションのフォームにデータを表示する場合
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でのデータへの Windows フォーム コントロールのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [データ ソース ウィンドウからドラッグするときに作成されるコントロールを設定します。](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
- [Windows フォーム コントロール](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)
+ [Windows フォーム コントロール](https://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)

@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e568286a5e17b13b5009eccf01988d458fc9cd47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445423"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686963"
 ---
 # <a name="managing-external-tools"></a>Visual Studio の外部ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Visual Studio から、外部ツールを呼び出すことができます。 �
   
 1. GUID の作成: GUID を生成します。  
   
-2. エラー検索: 入力された値からエラー メッセージを取得します。 詳細については、「[ERRLOOK リファレンス](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91)」を参照してください。  
+2. エラー検索: 入力された値からエラー メッセージを取得します。 詳細については、「[ERRLOOK リファレンス](https://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91)」を参照してください。  
   
 3. ATL/MFC トレース ツール: ATL および ATL のソースに含まれているデバッグ トレース メッセージを表示します。  
   
@@ -85,7 +85,7 @@ Visual Studio から、外部ツールを呼び出すことができます。 �
 6. WCF サービス構成エディター:作成および WCF サービスの構成設定を変更することができます。  
   
 > [!WARNING]
-> 表示される外部ツールの一覧は、インストールされている Visual Studio のエディションおよび適用されている設定プロファイルによって異なります。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 表示される外部ツールの一覧は、インストールされている Visual Studio のエディションおよび適用されている設定プロファイルによって異なります。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="adding-new-tools"></a>新しいツールの追加  
  **[ツール]** メニューに外部ツールを追加することができます。 **[外部ツール]** ダイアログ ボックスを開き、**[追加]** をクリックして、情報を入力します。 たとえば、次のエントリを指定すると、Visual Studio で現在開いているファイルのディレクトリでエクスプローラーが開きます。  
@@ -122,4 +122,4 @@ Visual Studio から、外部ツールを呼び出すことができます。 �
 |ソリューション ファイル名|$(SolutionFileName)|現在のソリューションのファイル名 (ドライブ + パス + ファイル名)。|  
   
 ## <a name="see-also"></a>関連項目
- [C/C++ のビルド ツール](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [C/C++ のビルド ツール](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

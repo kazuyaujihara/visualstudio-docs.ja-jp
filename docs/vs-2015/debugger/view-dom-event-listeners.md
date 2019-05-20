@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64d4892080aaf0cf04e4b208b1a0bdb7a7a4480d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437678"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693581"
 ---
 # <a name="view-dom-event-listeners"></a>DOM イベント リスナーの表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,9 +76,9 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
      **イベント** タブには、階層リストで選択した任意の要素のイベント リスナーが表示されます。
 
 ### <a name="Tips"></a> イベント リスナーで問題を解決するためのヒント
- 一部のアプリのシナリオでイベント リスナーする必要があります明示的に削除するを使用して[removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx)します。 使用して、**イベント**イベント リスナーは、コードの実行中に DOM 要素から削除されているかどうかをテストする DOM エクスプ ローラー タブ。 これらの問題の解決に役立つヒントを次に示します。
+ 一部のアプリのシナリオでイベント リスナーする必要があります明示的に削除するを使用して[removeEventListener](https://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx)します。 使用して、**イベント**イベント リスナーは、コードの実行中に DOM 要素から削除されているかどうかをテストする DOM エクスプ ローラー タブ。 これらの問題の解決に役立つヒントを次に示します。
 
-- Visual Studio で実装された単一ページ ナビゲーション モデルを使用するアプリの[プロジェクト テンプレート](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx)、通常、ページの一部である DOM 要素などのオブジェクトに登録されたイベント リスナーを削除する必要はありません。 このシナリオでは、DOM 要素およびその関連付けられたイベント リスナーの有効期間は同じであり、ガベージ コレクションが可能です。
+- Visual Studio で実装された単一ページ ナビゲーション モデルを使用するアプリの[プロジェクト テンプレート](https://msdn.microsoft.com/library/windows/apps/hh758331.aspx)、通常、ページの一部である DOM 要素などのオブジェクトに登録されたイベント リスナーを削除する必要はありません。 このシナリオでは、DOM 要素およびその関連付けられたイベント リスナーの有効期間は同じであり、ガベージ コレクションが可能です。
 
 - DOM 要素またはオブジェクトの有効期間が関連付けられたイベント リスナーと異なる場合には、`removeEventListener` メソッドを呼び出す必要があります。 たとえば、`window.onresize` イベントを使用する場合に、イベントを処理するページから離れるとイベント リスナーを削除しなければならない場合があります。
 

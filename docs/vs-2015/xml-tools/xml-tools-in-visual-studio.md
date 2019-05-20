@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07cb1a790640d01448b6331986519bf1bef619e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 906f08c0020eb288c1bcd318327be18dc8d08ca5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651722"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695315"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio の XML ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,21 +59,21 @@ ms.locfileid: "59651722"
 ## <a name="reference"></a>参照
  [Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699)公開、 [XML エディター](http://go.microsoft.com/fwlink/?LinkId=228249)解析ツリーを[System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250)の任意の XML ドキュメント。
 
- [XML 標準のリファレンス](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)XML、ドキュメント型定義 (DTD)、XML スキーマ定義言語 (XSD)、および XSLT などの XML テクノロジに関する情報を提供します。
+ [XML 標準のリファレンス](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)XML、ドキュメント型定義 (DTD)、XML スキーマ定義言語 (XSD)、および XSLT などの XML テクノロジに関する情報を提供します。
 
  <xref:System.Xml?displayProperty=fullName> クラスとその他の要素を構成するについて説明します、<xref:System.Xml>名前空間と、各項目をより詳細な情報へのリンクを提供します。
 
  <xref:System.Xml.Serialization?displayProperty=fullName> クラスとその他の要素を構成するについて説明します、<xref:System.Xml.Serialization>名前空間の各項目に関する詳細情報へのリンクを提供します。
 
 ## <a name="related-sections"></a>関連項目
- [XML ドキュメント オブジェクト モデル (DOM)](http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54)方法について説明しますが、どの<xref:System.Xml.XmlDocument>とその関連クラスは、W3C ドキュメント オブジェクト モデル (Core) Level 1 およびレベル 2 の名前空間サポート仕様に準拠します。
+ [XML ドキュメント オブジェクト モデル (DOM)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54)方法について説明しますが、どの<xref:System.Xml.XmlDocument>とその関連クラスは、W3C ドキュメント オブジェクト モデル (Core) Level 1 およびレベル 2 の名前空間サポート仕様に準拠します。
 
- [XmlReader による XML の読み取り](http://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182)方法について説明しますが、どのように<xref:System.Xml.XmlReader>XML ストリームを介した XML データに限定、前方参照専用、読み取り専用アクセスを提供します。
+ [XmlReader による XML の読み取り](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182)方法について説明しますが、どのように<xref:System.Xml.XmlReader>XML ストリームを介した XML データに限定、前方参照専用、読み取り専用アクセスを提供します。
 
- [XmlWriter による XML の書き込み](http://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86)方法について説明します、<xref:System.Xml.XmlWriter>限定で提供し、W3C 標準に準拠した XML ドキュメントを作成する XML ストリームを生成する方法を前方参照専用、します。
+ [XmlWriter による XML の書き込み](https://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86)方法について説明します、<xref:System.Xml.XmlWriter>限定で提供し、W3C 標準に準拠した XML ドキュメントを作成する XML ストリームを生成する方法を前方参照専用、します。
 
- [XSLT 変換](http://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03)方法について説明しますが、どの<xref:System.Xml.Xsl.XslCompiledTransform>クラスは、XSLT 1.0 勧告を実装します。
+ [XSLT 変換](https://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03)方法について説明しますが、どの<xref:System.Xml.Xsl.XslCompiledTransform>クラスは、XSLT 1.0 勧告を実装します。
 
- [XPath データ モデルを使用して XML データを処理](http://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081)方法について説明します、<xref:System.Xml.XPath.XPathNavigator>クラスに格納された XML データを処理できる、<xref:System.Xml.XPath.XPathDocument>または<xref:System.Xml.XmlDocument>オブジェクト。 <xref:System.Xml.XPath.XPathNavigator> クラスは XQuery 1.0 および XPath 2.0 のデータ モデルに基づいており、XML データの操作と編集に使用できます。
+ [XPath データ モデルを使用して XML データを処理](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081)方法について説明します、<xref:System.Xml.XPath.XPathNavigator>クラスに格納された XML データを処理できる、<xref:System.Xml.XPath.XPathDocument>または<xref:System.Xml.XmlDocument>オブジェクト。 <xref:System.Xml.XPath.XPathNavigator> クラスは XQuery 1.0 および XPath 2.0 のデータ モデルに基づいており、XML データの操作と編集に使用できます。
 
- [XML スキーマ オブジェクト モデル (SOM)](http://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd)作成および提供することで、XML スキーマを操作するために使用されるクラスについて説明します、<xref:System.Xml.Schema.XmlSchema>クラスを読み込み、スキーマを編集します。
+ [XML スキーマ オブジェクト モデル (SOM)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd)作成および提供することで、XML スキーマを操作するために使用されるクラスについて説明します、<xref:System.Xml.Schema.XmlSchema>クラスを読み込み、スキーマを編集します。

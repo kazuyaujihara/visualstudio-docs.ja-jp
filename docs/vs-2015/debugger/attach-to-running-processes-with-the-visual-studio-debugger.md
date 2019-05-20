@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 083c866b10fac257cacf954dfccbcb3875aec53a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436811"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702635"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>実行中のプロセスへのアタッチ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "63436811"
 ## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a>リモート コンピューター上のプロセスにアタッチする
  プロセスにアタッチするには、プロセスの名前を知る必要があります (を参照してください[デバッグ シナリオ共通](#BKMK_Scenarios)のいくつかの一般的なプロセス名)。 IIS に配置された ASP.NET アプリのより詳細なガイダンスについては、次を参照してください。[リモート IIS コンピューター上の Remote Debugging ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)します。 他のアプリについては、タスク マネージャーで、プロセスの名前を検索できる場合があります。
 
- **[プロセスにアタッチ]** ダイアログ ボックスでは、リモート デバッグ用にセットアップした他のコンピューターを選択できます。 詳細については、次を参照してください。[リモート デバッグ](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)します。 リモート コンピューターを選択すると、そのコンピューターで実行されている選択可能なプロセスの一覧を表示して、1 つ以上のプロセスにアタッチしてデバッグを実行できます。
+ **[プロセスにアタッチ]** ダイアログ ボックスでは、リモート デバッグ用にセットアップした他のコンピューターを選択できます。 詳細については、次を参照してください。[リモート デバッグ](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)します。 リモート コンピューターを選択すると、そのコンピューターで実行されている選択可能なプロセスの一覧を表示して、1 つ以上のプロセスにアタッチしてデバッグを実行できます。
 
  **リモート コンピューターを選択します。**
 
@@ -106,7 +106,7 @@ ms.locfileid: "63436811"
 
 ## <a name="additional-info"></a>追加情報
 
-デバッグ中には複数のプログラムにアタッチできますが、デバッガーでアクティブになっているプログラムは常に 1 つだけです。 アクティブなプログラムは、 **[デバッグの場所]** ツール バーまたは **[プロセス]** ウィンドウで設定できます。 詳細については、「[方法 :現在のプログラム設定](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)します。
+デバッグ中には複数のプログラムにアタッチできますが、デバッガーでアクティブになっているプログラムは常に 1 つだけです。 アクティブなプログラムは、 **[デバッグの場所]** ツール バーまたは **[プロセス]** ウィンドウで設定できます。 詳細については、「[方法 :現在のプログラム設定](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)します。
 
 信頼関係のないユーザー アカウントによって所有されているプロセスにアタッチしようとすると、セキュリティ警告の確認ダイアログ ボックスが表示されます。 詳細については、次を参照してください。[セキュリティ警告。信頼されていないユーザーが所有するプロセスにアタッチするには危険が伴います。次の情報に関して疑わしい、または不明ながこのプロセスにアタッチしない](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)します。
 
@@ -136,7 +136,7 @@ ms.locfileid: "63436811"
 > JavaScript で記述された Windows ユニバーサル アプリにアタッチするには、まずそのアプリに対してデバッグを有効にする必要があります。 Windows デベロッパー センター内の「 [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) 」をご覧ください。
 
 > [!NOTE]
-> C++ で記述されたコードにデバッガーをアタッチするには、コードが `DebuggableAttribute`を生成する必要があります。 [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) リンカー オプションを使ってリンクすると、これを自動的にコードに追加できます。
+> C++ で記述されたコードにデバッガーをアタッチするには、コードが `DebuggableAttribute`を生成する必要があります。 [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) リンカー オプションを使ってリンクすると、これを自動的にコードに追加できます。
 
 ## <a name="what-debugger-features-can-i-use"></a>どのようなデバッガー機能を使用できますか。
 

@@ -19,12 +19,12 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0352f98fe4d053f8c90d1b2c8f910e73cde23a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8d12603c10c238f74d8e9e7d79dad495d8840978
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441497"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680226"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,28 +39,28 @@ ms.locfileid: "63441497"
  次の設定を使用すると、表示または変更する構成およびプラットフォームを選択できます。  
   
 > [!NOTE]
-> 簡易ビルド構成を使用した場合、デバッグ バージョンとリリース バージョンのどちらをビルドするかの決定はプロジェクト システムによって行われます。 したがって、**構成**リストと**プラットフォーム** リストは表示されません。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
+> 簡易ビルド構成を使用した場合、デバッグ バージョンとリリース バージョンのどちらをビルドするかの決定はプロジェクト システムによって行われます。 したがって、**構成**リストと**プラットフォーム** リストは表示されません。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
   
  **構成**  
- 表示または変更する構成設定を指定します。 設定は、**[デバッグ]** (既定)、**[リリース]**、または **[すべての構成]** のいずれかになります。 詳細については、次を参照してください。[デバッグおよびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)と[方法。構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)」を参照してください。  
+ 表示または変更する構成設定を指定します。 設定は、**[デバッグ]** (既定)、**[リリース]**、または **[すべての構成]** のいずれかになります。 詳細については、次を参照してください。[デバッグおよびリリース プロジェクト構成](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)と[方法。構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)」を参照してください。  
   
  **プラットフォーム**  
- 表示または変更するプラットフォーム設定を指定します。 **[任意の CPU]** (既定)、**[x64]**、または **[x86]** を指定できます。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
+ 表示または変更するプラットフォーム設定を指定します。 **[任意の CPU]** (既定)、**[x64]**、または **[x86]** を指定できます。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
   
 ## <a name="compiler-configuration-options"></a>コンパイラの構成オプション  
  次の設定を使用すると、コンパイラの構成オプションを設定できます。  
   
  **ビルド出力パス**  
- このプロジェクト構成の出力ファイルの場所を指定します。 このボックスにビルド出力のパスを入力するか、**[参照]** ボタンをクリックしてパスを選択します。 このパスは、相対パスであることに注意してください。絶対パスを入力しても、相対パスとして保存されます。 既定のパスは bin\Debug\ または bin\Release\\ です。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
+ このプロジェクト構成の出力ファイルの場所を指定します。 このボックスにビルド出力のパスを入力するか、**[参照]** ボタンをクリックしてパスを選択します。 このパスは、相対パスであることに注意してください。絶対パスを入力しても、相対パスとして保存されます。 既定のパスは bin\Debug\ または bin\Release\\ です。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
   
- 簡易ビルド構成を使用した場合、デバッグ バージョンとリリース バージョンのどちらをビルドするかの決定はプロジェクト システムによって行われます。 **[デバッグ]** メニューの **[ビルド]** コマンド (F5) を使用すると、指定した **[出力パス]** に関係なく、デバッグ用の場所にビルドが配置されます。 ただし、**[ビルド]** メニューの **[ビルド]** コマンドでは、指定した場所にビルドが配置されます。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
+ 簡易ビルド構成を使用した場合、デバッグ バージョンとリリース バージョンのどちらをビルドするかの決定はプロジェクト システムによって行われます。 **[デバッグ]** メニューの **[ビルド]** コマンド (F5) を使用すると、指定した **[出力パス]** に関係なく、デバッグ用の場所にビルドが配置されます。 ただし、**[ビルド]** メニューの **[ビルド]** コマンドでは、指定した場所にビルドが配置されます。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
   
  **Option Explicit**  
  変数の暗黙的な宣言を許可するかどうかを指定します。 変数の明示的な宣言を要求する場合は **[オン]** を選択します。 これにより、変数が使用される前に宣言されていないと、コンパイラがエラーを報告します。 変数の暗黙的な宣言を許可するには、**[オフ]** を選択します。  
   
- この設定は、[/optionexplicit](http://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) コンパイラ オプションに相当します。  
+ この設定は、[/optionexplicit](https://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) コンパイラ オプションに相当します。  
   
- ソース コード ファイルに [Option Explicit ステートメント](http://msdn.microsoft.com/library/e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc)が含まれている場合、ステートメント内の `On` または `Off` の値が、**[コンパイル]** ページの **[Option Explicit]** 設定をオーバーライドします。  
+ ソース コード ファイルに [Option Explicit ステートメント](https://msdn.microsoft.com/library/e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc)が含まれている場合、ステートメント内の `On` または `Off` の値が、**[コンパイル]** ページの **[Option Explicit]** 設定をオーバーライドします。  
   
  新しいプロジェクトを作成するときに、**[コンパイル]** ページの **[Option Explicit]** 設定が **[オプション]** ダイアログ ボックスの **[Option Explicit]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、**[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、**[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Explicit]** の初期の既定値は **[オン]** です。  
   
@@ -75,15 +75,15 @@ ms.locfileid: "63441497"
   
 - 結果が `Object` 型となる暗黙の型指定  
   
-  縮小変換する暗黙的なデータ型変換がある場合は、暗黙的な縮小変換エラーが発生します。 詳細については、「[Option Strict ステートメント](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)」、「[暗黙の型変換と明示的な型変換](http://msdn.microsoft.com/library/77de1659-af8a-492c-967e-e7ef60ccce66)」、および「[拡大変換と縮小変換](http://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd)」を参照してください。  
+  縮小変換する暗黙的なデータ型変換がある場合は、暗黙的な縮小変換エラーが発生します。 詳細については、「[Option Strict ステートメント](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)」、「[暗黙の型変換と明示的な型変換](https://msdn.microsoft.com/library/77de1659-af8a-492c-967e-e7ef60ccce66)」、および「[拡大変換と縮小変換](https://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd)」を参照してください。  
   
-  `Object` 型として宣言された変数のプロパティまたはメソッドにオブジェクトを代入する場合は、そのオブジェクトは遅延バインディングされます。 詳細については、「[Option Strict ステートメント](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)」および「[事前バインディングと遅延バインディング](http://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724)」を参照してください。  
+  `Object` 型として宣言された変数のプロパティまたはメソッドにオブジェクトを代入する場合は、そのオブジェクトは遅延バインディングされます。 詳細については、「[Option Strict ステートメント](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)」および「[事前バインディングと遅延バインディング](https://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724)」を参照してください。  
   
-  適切な型が宣言された変数を推論できない場合は暗黙的なオブジェクトの型エラーが発生するため、`Object` の型が推論されます。 これは主に、`As` 句を使用せず、`Option Infer` をオフにして、`Dim` ステートメントを使用して変数を宣言した場合に発生します。 詳細については、「[Option Strict ステートメント](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)」、「[Option Infer ステートメント](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652)」、および「[Visual Basic Language Specification](http://msdn.microsoft.com/library/42c30017-19d0-442e-87a2-850b66ddc3df)」 (Visual Basic 言語仕様) を参照してください。  
+  適切な型が宣言された変数を推論できない場合は暗黙的なオブジェクトの型エラーが発生するため、`Object` の型が推論されます。 これは主に、`As` 句を使用せず、`Option Infer` をオフにして、`Dim` ステートメントを使用して変数を宣言した場合に発生します。 詳細については、「[Option Strict ステートメント](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)」、「[Option Infer ステートメント](https://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652)」、および「[Visual Basic Language Specification](https://msdn.microsoft.com/library/42c30017-19d0-442e-87a2-850b66ddc3df)」 (Visual Basic 言語仕様) を参照してください。  
   
-  **[Option Strict]** 設定は、[/optionstrict](http://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da) コンパイラ オプションに相当します。  
+  **[Option Strict]** 設定は、[/optionstrict](https://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da) コンパイラ オプションに相当します。  
   
-  ソース コード ファイルに [Option Strict ステートメント](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)が含まれている場合、ステートメント内の `On` または `Off` の値が、**[コンパイル]** ページの **[Option Strict]** 設定をオーバーライドします。  
+  ソース コード ファイルに [Option Strict ステートメント](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5)が含まれている場合、ステートメント内の `On` または `Off` の値が、**[コンパイル]** ページの **[Option Strict]** 設定をオーバーライドします。  
   
   プロジェクトを作成するときに、**[コンパイル]** ページの **[Option Strict]** 設定が **[オプション]** ダイアログ ボックスの **[Option Strict]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、**[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、**[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Strict]** の初期の既定値は **[オフ]** です。  
   
@@ -102,25 +102,25 @@ ms.locfileid: "63441497"
   **Option Compare**  
   使用する文字列比較の種類を指定します。 バイナリの大文字と小文字を区別する文字列比較を使用するようにコンパイラに指示するには、**[バイナリ]** を選択します。 ロケール固有の大文字と小文字を区別しないテキスト文字列比較を使用するには、**[テキスト]** を選択します。  
   
-  この設定は、[/optioncompare](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) コンパイラ オプションに相当します。  
+  この設定は、[/optioncompare](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) コンパイラ オプションに相当します。  
   
-  ソース コード ファイルに [Option Compare ステートメント](http://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e)が含まれている場合、ステートメント内の `Binary` または `Text` の値が、**[コンパイル]** ページの **[Option Compare]** 設定をオーバーライドします。  
+  ソース コード ファイルに [Option Compare ステートメント](https://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e)が含まれている場合、ステートメント内の `Binary` または `Text` の値が、**[コンパイル]** ページの **[Option Compare]** 設定をオーバーライドします。  
   
   プロジェクトを作成するときに、**[コンパイル]** ページの **[Option Compare]** 設定が **[オプション]** ダイアログ ボックスの **[Option Compare]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、**[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、**[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Compare]** の初期の既定値は **[バイナリ]** です。  
   
   **Option Infer**  
   変数宣言でローカル型推論を許可するかどうかを指定します。 ローカル型推論の使用を許可するには、**[オン]** を選択します。 ローカル型推論をブロックするには、**[オフ]** を選択します。  
   
-  この設定は、[/optioninfer](http://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed) コンパイラ オプションに相当します。  
+  この設定は、[/optioninfer](https://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed) コンパイラ オプションに相当します。  
   
-  ソース コード ファイルに [Option Infer ステートメント](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652)が含まれている場合、ステートメント内の `On` または `Off` の値が、**[コンパイル]** ページの **[Option Infer]** 設定をオーバーライドします。  
+  ソース コード ファイルに [Option Infer ステートメント](https://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652)が含まれている場合、ステートメント内の `On` または `Off` の値が、**[コンパイル]** ページの **[Option Infer]** 設定をオーバーライドします。  
   
   プロジェクトを作成するときに、**[コンパイル]** ページの **[Option Infer]** 設定が **[オプション]** ダイアログ ボックスの **[Option Infer]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、**[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、**[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Infer]** の初期の既定値は **[オン]** です。  
   
   **対象の CPU**  
   出力ファイルがターゲットとするプロセッサを指定します。 32 ビット Intel 互換プロセッサの場合は **[x86]** を、64 ビット Intel 互換プロセッサの場合は **[x64]** を、ARM プロセッサの場合は **[ARM]** をそれぞれ指定します。または、どのプロセッサでもかまわないことを指定する場合は、**[任意の CPU]** を選択します。 **[任意の CPU]** は、ほとんどのハードウェアの種類でアプリケーションの実行を許可しているため、これが新しいプロジェクトの既定値となります。  
   
-  詳細については、「[/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)」を参照してください。  
+  詳細については、「[/platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)」を参照してください。  
   
   **32 ビットを優先**  
   **[32 ビットの優先]** チェック ボックスがオンの場合、アプリケーションは、Windows の 32 ビット バージョンおよび 64 ビット バージョンで 32 ビット アプリケーションとして実行されます。 それ以外の場合は、アプリケーションは、Windows の 32 ビット バージョンでは 32 ビット アプリケーションとして、Windows の 64 ビット バージョンでは 64 ビット アプリケーションとして実行されます。  
@@ -143,7 +143,7 @@ ms.locfileid: "63441497"
   **すべての警告を表示しない**  
   このドキュメントで既に説明した、**条件と通知**テーブルで指定されているとおりにコンパイラに通知の発行を許可するかどうかを指定します。 既定では、このチェック ボックスはオフになっています。 警告またはエラーを発行しないようにコンパイラに指示するには、このチェック ボックスを選択します。  
   
-  この設定は、[/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) コンパイラ オプションに相当します。  
+  この設定は、[/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) コンパイラ オプションに相当します。  
   
   **すべての警告をエラーとして扱う**  
   警告の処理方法を指定します。 既定では、このチェック ボックスはオフになっているため、すべての警告通知が **[警告]** に設定されたままになっています。 すべての警告通知を **[エラー]** に変更するには、このチェック ボックスをオンにします。  
@@ -153,7 +153,7 @@ ms.locfileid: "63441497"
   **XML ドキュメント ファイルを生成する**  
   ドキュメント情報を生成するかどうかを指定します。 既定では、このチェック ボックスはオンになっており、ドキュメント情報を生成してそれを XML ファイルに含めるようにコンパイラに指示します。 ドキュメントを作成しないようにコンパイラに指示するには、このチェック ボックスをオフにします。  
   
-  この設定は、[/doc](http://msdn.microsoft.com/library/5fc32ec9-a149-4648-994c-a8d0cccd0a65) コンパイラ オプションに相当します。  
+  この設定は、[/doc](https://msdn.microsoft.com/library/5fc32ec9-a149-4648-994c-a8d0cccd0a65) コンパイラ オプションに相当します。  
   
   **COM の相互運用機能に登録**  
   マネージド アプリケーションで、COM オブジェクトがアプリケーションとやり取りできるようにする COM オブジェクト (COM 呼び出し可能ラッパー) を公開するかどうかを指定します。  
@@ -169,8 +169,8 @@ ms.locfileid: "63441497"
   このボタンをクリックして、**[コンパイラの詳細設定]** ダイアログ ボックスにアクセスします。 **[コンパイラの詳細設定]** ダイアログ ボックスを使用して、プロジェクトの詳細なビルド構成プロパティを指定します。 このダイアログ ボックスは、Visual Basic プロジェクトにのみ適用されます。 詳細については、「[[ビルドの詳細設定] ダイアログ ボックス (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)」を参照してください。  
   
 ## <a name="see-also"></a>関連項目
- [デバッグ プロジェクト構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
- [コンパイル プロパティの管理](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [デバッグ プロジェクト構成およびリリース プロジェクト構成](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
+ [コンパイル プロパティの管理](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [方法: ビルド イベント (Visual Basic) を指定します。](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Visual Basic のコマンド ライン コンパイラ](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
+ [Visual Basic のコマンド ライン コンパイラ](https://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [方法: 構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)

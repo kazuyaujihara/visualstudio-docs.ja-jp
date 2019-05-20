@@ -15,23 +15,23 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33c148b459e34da26f068fe041d90979c7244cde
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5401679f02141cac9fff32025edfff4dc76895b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429029"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678893"
 ---
 # <a name="supplying-xml-code-comments"></a>XML コード コメントの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ソース コード ファイル内のコメントを IntelliSense として使用可能にすることができます。 Visual Basic、C#、または C++ コンパイラのコマンドラインに /doc スイッチを追加すると、IntelliSense ドキュメントのベースとして機能する .xml ファイルが生成されます。  
   
- Visual Basic でコードを文書化する詳細については、「[方法: XML ドキュメントを作成する](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230)」を参照してください。  
+ Visual Basic でコードを文書化する詳細については、「[方法: XML ドキュメントを作成する](https://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230)」を参照してください。  
   
- C# でコードを文書化する詳細については、「[XML ドキュメント コメント](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)」を参照してください。  
+ C# でコードを文書化する詳細については、「[XML ドキュメント コメント](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)」を参照してください。  
   
- C++ でコードを文書化する詳細については、「[C++ コメント](http://msdn.microsoft.com/library/6fcb906c-c264-4083-84bc-373800b2e514)」と「[XML に関するドキュメント](http://msdn.microsoft.com/library/a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506)」を参照してください。  
+ C++ でコードを文書化する詳細については、「[C++ コメント](https://msdn.microsoft.com/library/6fcb906c-c264-4083-84bc-373800b2e514)」と「[XML に関するドキュメント](https://msdn.microsoft.com/library/a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506)」を参照してください。  
   
 ## <a name="see-also"></a>関連項目
  [IntelliSense の使用](../ide/using-intellisense.md)

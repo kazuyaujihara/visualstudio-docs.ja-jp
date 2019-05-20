@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbb123b952287de0b519bfdd40b0d9a851a0b81f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403572"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686888"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>シナリオ:視覚化およびモデリングを使用して設計を変更する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -297,11 +297,11 @@ ms.locfileid: "63403572"
   
  参照トピック  
   
-- [ビルド プロセスの定義](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [ビルド プロセスの定義](https://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
-- [変更内容を検証するためのゲート チェックイン ビルド プロセスの定義](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [変更内容を検証するためのゲート チェックイン ビルド プロセスの定義](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
-- [ビルド プロセス テンプレートのカスタマイズ](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [ビルド プロセス テンプレートのカスタマイズ](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
 ### <a name="GeneralTips"></a> General Tips for Creating and Using Models  
   
@@ -336,13 +336,13 @@ ms.locfileid: "63403572"
   
   参照トピック  
   
-- [Visual Studio Team Services または Team Foundation Server を使用した作業の追跡](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+- [Visual Studio Team Services または Team Foundation Server を使用した作業の追跡](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
 - [モデル要素と作業項目とのリンク](../modeling/link-model-elements-and-work-items.md)  
   
-- [Visual Studio ALM のグラフ、ダッシュボード、およびレポート](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+- [Visual Studio ALM のグラフ、ダッシュボード、およびレポート](https://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
-- [Project を使用したバックログとタスクの作成](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+- [Project を使用したバックログとタスクの作成](https://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ### <a name="TestValidateCheckInCode"></a> コードのテスト、検証、およびチェックイン  
  Dinner Now と Lucerne は、作業が完了するたびにコードを Team Foundation バージョン管理にチェックインします。その作業を忘れると、Team Foundation Server から通知されます。 Team Foundation Server でチェックインが受け入れられるためには、単体テストとレイヤー検証を実行して、コードをテスト ケースと設計に照らし合わせて検証する必要があります。 Dinner Now と Lucerne は、Team Foundation Server を使用して、ビルド、自動化された単体テスト、およびレイヤー検証を定期的に実行しています。 これにより、コードが以下の基準を満たしていることを確認できます。  
@@ -359,13 +359,13 @@ ms.locfileid: "63403572"
   
   参照トピック  
   
-- [アプリケーションのテスト](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
+- [アプリケーションのテスト](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
   
 - [開発時のシステムの検証](../modeling/validate-your-system-during-development.md)  
   
 - [バージョン管理の使用](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
-- [アプリケーションのビルド](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [アプリケーションのビルド](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
 ## <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne と Dinner Now は、支払いシステムを統合する必要があります。 以降では、この作業に役立つ Visual Studio のモデル図について説明します。  
@@ -888,6 +888,6 @@ ms.locfileid: "63403572"
  [コードを視覚化します。](../modeling/visualize-code.md)   
  [アプリのモデルを作成します。](../modeling/create-models-for-your-app.md)   
  [開発プロセスでモデルを使用します。](../modeling/use-models-in-your-development-process.md)   
- [アジャイル開発でのモデルの使用](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [アジャイル開発でのモデルの使用](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [開発中にシステムを検証します。](../modeling/validate-your-system-during-development.md)   
  [UML モデルと図の拡張](../modeling/extend-uml-models-and-diagrams.md)

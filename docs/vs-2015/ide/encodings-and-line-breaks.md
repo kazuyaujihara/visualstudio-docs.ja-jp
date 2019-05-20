@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6ceec5e44ade219f069e72f712129a137d70875f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0ae85397e0d9b5859ab39a8a580dd50d1ea7324c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437519"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701056"
 ---
 # <a name="encodings-and-line-breaks"></a>エンコーディングと改行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63437519"
 Visual Studio では、[ファイル] メニューの **[保存オプションの詳細設定]** を使用して、必要な改行の種類を決定できます。 また、同じ設定でファイルのエンコーディングを変更することもできます。  
   
 > [!NOTE]
-> 開発設定の種類によっては (Visual Basic、F#、Web 開発)、メニューに **[保存オプションの詳細設定]** が表示されない場合があります。 設定を (たとえば [全般] に) 変更するには、**[ツール] から [設定のインポートとエクスポート]** を開きます。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 開発設定の種類によっては (Visual Basic、F#、Web 開発)、メニューに **[保存オプションの詳細設定]** が表示されない場合があります。 設定を (たとえば [全般] に) 変更するには、**[ツール] から [設定のインポートとエクスポート]** を開きます。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
  Visual Studio では、次の文字が改行として解釈されます。  
   

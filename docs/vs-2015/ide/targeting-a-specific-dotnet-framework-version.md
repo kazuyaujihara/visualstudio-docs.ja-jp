@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a11658e8cfe96da9c56b7cc1a63839510ed3c829
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429237"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679149"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>対象となる特定の .NET Framework バージョンの指定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Visual Studio では、プロジェクトの対象となる .NET Framework の�
  特定の [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] を Visual Basic、Visual C#、または Visual F# プロジェクトに指定する方法の詳細について説明します。  
   
 ## <a name="related-sections"></a>関連項目  
- [ASP.NET Web プロジェクト用の .NET Framework Multi-Targeting](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
+ [ASP.NET Web プロジェクト用の .NET Framework Multi-Targeting](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
  このバージョンの Visual Studio を使用して、以前のバージョンの .NET Framework で動作する Web アプリケーションを開発する方法を説明します。  
   
  [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)  
@@ -45,5 +45,5 @@ Visual Studio では、プロジェクトの対象となる .NET Framework の�
  [[アプリケーション] ページ (プロジェクト デザイナー)](../ide/reference/application-page-project-designer-visual-basic.md)  
  [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクト用のプロジェクト デザイナーの **[対象のフレームワーク]** コントロールについて説明します。  
   
- [方法: ターゲット フレームワークおよびプラットフォームのツールセットを変更する](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
+ [方法: ターゲット フレームワークおよびプラットフォームのツールセットを変更する](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
  別のバージョンの .NET Framework を対象とし、別のプラットフォームのツールセットを使用するように Visual C++ プロジェクトの設定を変更する方法について説明します。

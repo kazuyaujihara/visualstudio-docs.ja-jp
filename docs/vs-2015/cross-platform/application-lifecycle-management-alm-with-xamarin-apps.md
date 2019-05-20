@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d524319eb31d3c51613894ad51470c718c9008e3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 258b9fcb8b36be1d179d9f907ef2da16ff1c3037
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652761"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696259"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Xamarin アプリを使用したアプリケーション ライフサイクル管理 (ALM)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Xamarin では、Android、iOS、および Windows を対象とするクロス�
  次の表は、Visual Studio ALM 機能のうち Xamarin プロジェクトで機能するはずの機能と、制限がある機能を示しています。 各機能そのものの詳細については、リンク先のドキュメントを参照してください。  
   
 ## <a name="agile-tools"></a>アジャイル ツール  
- 参照リンク:**[作業](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (Visual Studio Team Services または Team Explorer Everywhere など、TFS を使用)  
+ 参照リンク:**[作業](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (Visual Studio Team Services または Team Explorer Everywhere など、TFS を使用)  
   
  一般的なコメント: すべての計画機能と追跡機能は、プロジェクトの種類とコーディング言語には依存しません。  
   
@@ -38,8 +38,8 @@ Xamarin では、Android、iOS、および Windows を対象とするクロス�
 |バックログとスプリントの管理|はい||  
 |作業の追跡|[はい]||  
 |チーム ルーム コラボレーション|[はい]||  
-|かんばんボード|[はい]||  
-|進行状況のレポートと視覚化|はい||  
+|かんばんボード|はい||  
+|進行状況のレポートと視覚化|[はい]||  
   
 ## <a name="modeling"></a>モデリング  
  参照リンク:**[分析およびアーキテクチャのモデリング](../modeling/analyze-and-model-your-architecture.md)**  
@@ -48,11 +48,11 @@ Xamarin では、Android、iOS、および Windows を対象とするクロス�
   
 |機能|Xamarin でサポートされているかどうか|その他のコメント|  
 |-------------|----------------------------|-------------------------|  
-|シーケンス図|はい||  
-|依存関係グラフ|はい||  
-|呼び出し階層|はい||  
+|シーケンス図|[はい]||  
+|依存関係グラフ|[はい]||  
+|呼び出し階層|[はい]||  
 |クラス デザイナー|はい||  
-|アーキテクチャ エクスプローラー|はい||  
+|アーキテクチャ エクスプローラー|[はい]||  
 |UML 図 (ユース ケース、アクティビティ、クラス、コンポーネント、シーケンス、および DSL)|[はい]||  
 |レイヤー図|はい||  
 |レイヤー検証|[はい]||  
@@ -61,42 +61,42 @@ Xamarin では、Android、iOS、および Windows を対象とするクロス�
   
 |機能|Xamarin でサポートされているかどうか|その他のコメント|  
 |-------------|----------------------------|-------------------------|  
-|[Team Foundation バージョン管理](http://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) または Visual Studio Team Services を使用|はい||  
-|[Team Services で Git を使用した作業の開始](http://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|はい||  
-|[コードの分析/コードの品質向上 (参照、変更提案など)](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|はい||  
-|[コード変更およびその他の履歴の検索](../ide/find-code-changes-and-other-history-with-codelens.md)|はい|ただし、実行時まで実装が解決しない、プラットフォームに固有の境界をまたぐ場合を除きます。|  
-|[コード マップを使用してアプリケーションをデバッグする](../modeling/use-code-maps-to-debug-your-applications.md)|はい||  
+|[Team Foundation バージョン管理](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) または Visual Studio Team Services を使用|はい||  
+|[Team Services で Git を使用した作業の開始](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|はい||  
+|[コードの分析/コードの品質向上 (参照、変更提案など)](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|はい||  
+|[コード変更およびその他の履歴の検索](../ide/find-code-changes-and-other-history-with-codelens.md)|[はい]|ただし、実行時まで実装が解決しない、プラットフォームに固有の境界をまたぐ場合を除きます。|  
+|[コード マップを使用してアプリケーションをデバッグする](../modeling/use-code-maps-to-debug-your-applications.md)|[はい]||  
   
 ## <a name="build"></a>ビルド  
- 参照リンク:**[ビルド](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ 参照リンク:**[ビルド](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |機能|Xamarin でサポートされているかどうか|その他のコメント|  
 |-------------|----------------------------|-------------------------|  
-|オンプレミス TFS サーバー|はい|ビルド コンピューターに Xamarin がインストールされている必要があります。iOS 用にビルドするには、OSX コンピューターにリンクできる必要があります。 「 [Xamarin 用に TFS を構成する](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) 」(Xamarin web サイト) を参照してください。|  
-|Visual Studio Team Services にリンクされたオンプレミスのビルド サーバー|はい|手順については、[ビルド サーバー](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c)を参照してください。|  
-|Visual Studio Team Services のホスト コントローラー サービス|[はい]|「[Build your Xamarin app](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)」 (Xamarin アプリのビルド) を参照してください。|  
-|事前スクリプトと事後スクリプトによるビルド定義|[はい]||  
-|継続的な統合 (ゲート チェックインを含む)|はい|Git としての TFVC へのゲート チェックインのみ、チェックイン モデルではなく、プル要求モデルで機能します。|  
+|オンプレミス TFS サーバー|[はい]|ビルド コンピューターに Xamarin がインストールされている必要があります。iOS 用にビルドするには、OSX コンピューターにリンクできる必要があります。 「 [Xamarin 用に TFS を構成する](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) 」(Xamarin web サイト) を参照してください。|  
+|Visual Studio Team Services にリンクされたオンプレミスのビルド サーバー|はい|手順については、[ビルド サーバー](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c)を参照してください。|  
+|Visual Studio Team Services のホスト コントローラー サービス|はい|「[Build your Xamarin app](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)」 (Xamarin アプリのビルド) を参照してください。|  
+|事前スクリプトと事後スクリプトによるビルド定義|はい||  
+|継続的な統合 (ゲート チェックインを含む)|[はい]|Git としての TFVC へのゲート チェックインのみ、チェックイン モデルではなく、プル要求モデルで機能します。|  
   
 ## <a name="testing"></a>テスト  
- 参照リンク:**[アプリケーションのテスト](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ 参照リンク:**[アプリケーションのテスト](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |機能|Xamarin でサポートされているかどうか|その他のコメント|  
 |-------------|----------------------------|-------------------------|  
 |テストの計画、テスト ケースの作成、およびテスト スイートの編成|[はい]||  
-|手動テスト|はい||  
+|手動テスト|[はい]||  
 |テスト マネージャー (テストの記録と再生)|[はい]|Windows デバイスと Android エミュレーター (Visual Studio からのみ)。 [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder) を使用すると、すべてのデバイスの記録が可能です。|  
-|コード カバレッジ|適用なし||  
-|[コードの単体テスト](../test/unit-test-your-code.md)|はい|Windows と Android を対象にする場合は、組み込みの MSTest ツールを使用できます。 Windows、Android、および iOS で単体テストを実行するには、Xamarin では NUnit が推奨されています。 「 [Xamarin 用に TFS を構成する](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) 」(Xamarin web サイト) を参照してください。|  
+|コード カバレッジ|N/A||  
+|[コードの単体テスト](../test/unit-test-your-code.md)|[はい]|Windows と Android を対象にする場合は、組み込みの MSTest ツールを使用できます。 Windows、Android、および iOS で単体テストを実行するには、Xamarin では NUnit が推奨されています。 「 [Xamarin 用に TFS を構成する](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) 」(Xamarin web サイト) を参照してください。|  
 |[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)|Windows のみ|Visual Studio の UI テスト レコーダーは Windows のみです。 すべてのプラットフォームについては、[Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder) を参照してください。|  
   
 ## <a name="improve-code-quality"></a>コード品質の向上  
- 参照リンク:**[コード品質を向上します。](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ 参照リンク:**[コード品質を向上します。](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |機能|Xamarin でサポートされているかどうか|その他のコメント|  
 |-------------|----------------------------|-------------------------|  
 |[マネージド コードの品質の分析](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|[はい]||  
-|[コード クローン検出を使用した重複コードの検出](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|はい||  
+|[コード クローン検出を使用した重複コードの検出](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|[はい]||  
 |[マネージド コードの複雑さと保守性の測定](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|[はい]||  
 |[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|いいえ|代わりに、Xamarin Studio の [Xamarin プロファイラー](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) を使用します。 Xamarin プロファイラーは現在プレビュー期間中であり、Windows を対象にした場合はまだ動作しないことに注意してください。|  
 |[.NET Framework のメモリ分析の問題](../misc/analyze-dotnet-framework-memory-issues.md)|いいえ|Visual Studio ツールには、プロファイリング用の Mono フレームワークへのフックはありません。|  
@@ -106,8 +106,8 @@ Xamarin では、Android、iOS、および Windows を対象とするクロス�
   
 |機能|Xamarin でサポートされているかどうか|その他のコメント|  
 |-------------|----------------------------|-------------------------|  
-|リリース プロセスの管理|はい||  
-|スクリプトによるサイドローディング用のサーバーへの配置|はい||  
+|リリース プロセスの管理|[はい]||  
+|スクリプトによるサイドローディング用のサーバーへの配置|[はい]||  
 |アプリ ストアへのアップロード|Partial|一部のアプリ ストアに対して、このプロセスを自動化することができる拡張機能が使用できます。  たとえば、[Google Play の拡張機能](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)については、[Visual Studio Team Services の拡張機能](https://marketplace.visualstudio.com/VSTS)を参照してください。|  
   
 ## <a name="monitor-with-hockeyapp"></a>HockeyApp による監視  
@@ -115,4 +115,4 @@ Xamarin では、Android、iOS、および Windows を対象とするクロス�
   
 |機能|Xamarin でサポートされているかどうか|その他のコメント|  
 |-------------|----------------------------|-------------------------|  
-|クラッシュ分析、製品利用統計情報、およびベータ版の配布|[はい]||
+|クラッシュ分析、製品利用統計情報、およびベータ版の配布|はい||

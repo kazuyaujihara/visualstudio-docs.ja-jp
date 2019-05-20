@@ -7,13 +7,15 @@
 - name: '初めての拡張機能の作成:Hello World'
   href: extensibility-hello-world.md
 - name: Visual Studio 2019 SDK の新機能
-  href: whats-new-visual-studio-2019-sdk.md
   items:
+    - name: Visual Studio 2019 SDK の新機能
+      href: whats-new-visual-studio-2019-sdk.md
     - name: 同期的に自動的に読み込む拡張機能
       href: synchronously-autoloaded-extensions.md
 - name: Visual Studio 2017 SDK の新機能
-  href: what-s-new-in-the-visual-studio-2017-sdk.md
   items:
+    - name: Visual Studio 2017 SDK の新機能
+      href: what-s-new-in-the-visual-studio-2017-sdk.md
     - name: 機能拡張での互換性に影響する変更点
       href: breaking-changes-2017.md
     - name: VSIX v3 での Ngen のサポート
@@ -29,13 +31,15 @@
 - name: Visual Studio 向けのラウンドトリップ拡張機能
   href: how-to-roundtrip-VSIXs.md
 - name: 言語サーバー プロトコル
-  href: language-server-protocol.md
   items:
+    - name: 言語サーバー プロトコル
+      href: language-server-protocol.md
     - name: 言語サーバー プロトコルの拡張機能の追加
       href: adding-an-lsp-extension.md
 - name: フォルダーを開く
-  href: open-folder.md
   items:
+    - name: フォルダーを開く
+      href: open-folder.md
     - name: ワークスペース
       href: workspaces.md
     - name: ファイルのコンテキスト
@@ -47,8 +51,9 @@
     - name: ビルド
       href: workspace-build.md
 - name: メニューとコマンドを拡張する
-  href: extending-menus-and-commands.md
   items:
+    - name: メニューとコマンドを拡張する
+      href: extending-menus-and-commands.md
     - name: メニュー コマンドを使用した拡張機能の作成
       href: creating-an-extension-with-a-menu-command.md
     - name: Visual Studio のメニュー バーへのメニューの追加
@@ -72,8 +77,9 @@
     - name: メニュー コマンドのローカライズ
       href: localizing-menu-commands.md
 - name: ツールバーへのコマンドの追加
-  href: adding-commands-to-toolbars.md
   items:
+    - name: ツールバーへのコマンドの追加
+      href: adding-commands-to-toolbars.md
     - name: ツール バーの追加
       href: adding-a-toolbar.md
     - name: ツール ウィンドウへのツールバーの追加
@@ -85,8 +91,9 @@
     - name: メニュー項目の動的な追加
       href: dynamically-adding-menu-items.md
 - name: ツール ウィンドウの拡張とカスタマイズ
-  href: extending-and-customizing-tool-windows.md
   items:
+    - name: ツール ウィンドウの拡張とカスタマイズ
+      href: extending-and-customizing-tool-windows.md
     - name: ツール ウィンドウでの拡張機能の作成
       href: creating-an-extension-with-a-tool-window.md
     - name: ツール ウィンドウの追加
@@ -110,13 +117,15 @@
     - name: モーダル ダイアログ ボックスの作成と管理
       href: creating-and-managing-modal-dialog-boxes.md
 - name: エディターと言語サービスの拡張機能
-  href: editor-and-language-service-extensions.md
   items:
+    - name: エディターと言語サービスの拡張機能
+      href: editor-and-language-service-extensions.md
     - name: エディターの項目テンプレートを使用した拡張機能の作成
       href: creating-an-extension-with-an-editor-item-template.md
     - name: エディターと言語サービスを拡張する
-      href: extending-the-editor-and-language-services.md
       items:
+        - name: エディターと言語サービスを拡張する
+          href: extending-the-editor-and-language-services.md
         - name: 言語サービスとエディターの拡張機能の概要
           href: getting-started-with-language-service-and-editor-extensions.md
         - name: エディターの内部
@@ -160,8 +169,9 @@
         - name: 'チュートリアル: エディターの拡張機能から DTE オブジェクトにアクセスする'
           href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
     - name: カスタム エディターとデザイナーを作成する
-      href: creating-custom-editors-and-designers.md
       items:
+        - name: カスタム エディターとデザイナーを作成する
+          href: creating-custom-editors-and-designers.md
         - name: 'チュートリアル: カスタム エディターを作成する'
           href: walkthrough-creating-a-custom-editor.md
         - name: 'チュートリアル: カスタム エディターに機能を追加する'
@@ -173,8 +183,9 @@
         - name: カスタム エディターでの構文の色分け表示
           href: syntax-coloring-in-custom-editors.md
         - name: カスタム エディターでのドキュメント データとドキュメント ビュー
-          href: document-data-and-document-view-in-custom-editors.md
           items:
+            - name: カスタム エディターでのドキュメント データとドキュメント ビュー
+              href: document-data-and-document-view-in-custom-editors.md
             - name: 複数のドキュメント ビューのサポート
               href: supporting-multiple-document-views.md
             - name: 簡略化された埋め込み
@@ -194,8 +205,9 @@
         - name: XAML デザイナーの拡張性の移行に関するガイド
           href: xaml-designer-extensibility-migration.md
 - name: プロジェクトを拡張する
-  href: extending-projects.md
   items:
+    - name: プロジェクトを拡張する
+      href: extending-projects.md
     - name: 基本的なプロジェクト システムの作成、パート 1
       href: creating-a-basic-project-system-part-1.md
     - name: 基本的なプロジェクト システムの作成、パート 2
@@ -213,15 +225,17 @@
     - name: ユニバーサル Windows プロジェクトの管理
       href: managing-universal-windows-projects.md
 - name: ソリューションを拡張する
-  href: extending-solutions.md
   items:
+    - name: ソリューションを拡張する
+      href: extending-solutions.md
     - name: ソリューション エクスプローラーのフィルターを拡張する
       href: extending-the-solution-explorer-filter.md
     - name: ソリューションでのプロジェクトの読み込みの管理
       href: managing-project-loading-in-a-solution.md
 - name: カスタム プロジェクト テンプレートと項目テンプレートを作成する
-  href: creating-custom-project-and-item-templates.md
   items:
+    - name: カスタム プロジェクト テンプレートと項目テンプレートを作成する
+      href: creating-custom-project-and-item-templates.md
     - name: Visual Studio 2017 のカスタム プロジェクトと項目テンプレートの更新
       href: upgrading-custom-project-and-item-templates-for-visual-studio-2017.md
     - name: テンプレートの検出のトラブルシューティング
@@ -229,8 +243,9 @@
     - name: プロジェクト テンプレートでウィザードを使用する
       href: how-to-use-wizards-with-project-templates.md
     - name: Visual Studio テンプレート スキーマ参照
-      href: visual-studio-template-schema-reference.md
       items:
+        - name: Visual Studio テンプレート スキーマ参照
+          href: visual-studio-template-schema-reference.md
         - name: AppliesTo 要素 (Visual Studio テンプレート)
           href: appliesto-element-visual-studio-templates.md
         - name: Assembly 要素 (Visual Studio テンプレート)
@@ -338,8 +353,9 @@
     - name: Visual Studio テンプレート マニフェスト スキーマ参照
       href: visual-studio-template-manifest-schema-reference.md
 - name: ユーザー設定とオプションを拡張する
-  href: extending-user-settings-and-options.md
   items:
+    - name: ユーザー設定とオプションを拡張する
+      href: extending-user-settings-and-options.md
     - name: オプション ページの作成
       href: creating-an-options-page.md
     - name: 設定カテゴリの作成
@@ -351,15 +367,17 @@
     - name: ユーザー設定ストアへの書き込み
       href: writing-to-the-user-settings-store.md
 - name: プロパティとプロパティ ウィンドウを拡張する
-  href: extending-properties-and-the-property-window.md
   items:
+    - name: プロパティとプロパティ ウィンドウを拡張する
+      href: extending-properties-and-the-property-window.md
     - name: プロパティ ウィンドウへのプロパティの公開
       href: exposing-properties-to-the-properties-window.md
     - name: プロジェクト プロパティの取得
       href: getting-project-properties.md
 - name: Visual Studio の他の部分を拡張する
-  href: extending-other-parts-of-visual-studio.md
   items:
+    - name: Visual Studio の他の部分を拡張する
+      href: extending-other-parts-of-visual-studio.md
     - name: VSPackage を使用した拡張機能の作成
       href: creating-an-extension-with-a-vspackage.md
     - name: WPF ツールボックス コントロールの作成
@@ -369,8 +387,9 @@
     - name: ステータス バーを拡張する
       href: extending-the-status-bar.md
     - name: カスタム スタート ページの作成
-      href: creating-a-custom-start-page.md
       items:
+        - name: カスタム スタート ページの作成
+          href: creating-a-custom-start-page.md
         - name: 'チュートリアル: カスタム XAML をスタート ページに追加する'
           href: walkthrough-adding-custom-xaml-to-the-start-page.md
         - name: スタート ページへのユーザー コントロールの追加
@@ -386,29 +405,33 @@
 - name: Visual Studio C++ プロジェクト機能拡張
   href: visual-cpp-project-extensibility.md
 - name: Visual Studio ユーザー エクスペリエンス ガイドライン
-  href: ux-guidelines/visual-studio-user-experience-guidelines.md
   items:
+    - name: Visual Studio ユーザー エクスペリエンス ガイドライン
+      href: ux-guidelines/visual-studio-user-experience-guidelines.md
     - name: UX の基本情報
       href: ux-guidelines/ux-essentials-for-visual-studio.md
     - name: フォントと書式設定
       href: ux-guidelines/fonts-and-formatting-for-visual-studio.md
     - name: 色とスタイル設定
-      href: ux-guidelines/colors-and-styling-for-visual-studio.md
       items:
+        - name: 色とスタイル設定
+          href: ux-guidelines/colors-and-styling-for-visual-studio.md
         - name: 共有の色
           href: ux-guidelines/shared-colors-for-visual-studio.md
         - name: カラー値の参照
           href: ux-guidelines/color-value-reference-for-visual-studio.md
     - name: イメージとアイコン
-      href: ux-guidelines/images-and-icons-for-visual-studio.md
       items:
+        - name: イメージとアイコン
+          href: ux-guidelines/images-and-icons-for-visual-studio.md
         - name: Visual 言語辞書
           href: ux-guidelines/visual-language-dictionary-for-visual-studio.md
     - name: メニューとコマンド
       href: ux-guidelines/menus-and-commands-for-visual-studio.md
     - name: 対話パターン
-      href: ux-guidelines/interaction-patterns-for-visual-studio.md
       items:
+        - name: 対話パターン
+          href: ux-guidelines/interaction-patterns-for-visual-studio.md
         - name: アプリケーション パターン
           href: ux-guidelines/application-patterns-for-visual-studio.md
         - name: コモン コントロール パターン
@@ -432,8 +455,9 @@
 - name: イメージ サービスとカタログ
   href: image-service-and-catalog.md
 - name: サービスを使用および提供する
-  href: using-and-providing-services.md
   items:
+    - name: サービスを使用および提供する
+      href: using-and-providing-services.md
     - name: サービスを取得する
       href: how-to-get-a-service.md
     - name: サービスを提供する
@@ -443,8 +467,9 @@
     - name: サービスのトラブルシューティング
       href: how-to-troubleshoot-services.md
 - name: VSPackage を管理する
-  href: managing-vspackages.md
   items:
+    - name: VSPackage を管理する
+      href: managing-vspackages.md
     - name: 実験用インスタンス
       href: the-experimental-instance.md
     - name: VSPackage の登録と登録解除
@@ -466,8 +491,9 @@
 - name: シェル (統合または分離)
   href: 'https://vspartner.com/pages/vsshells'
 - name: Visual Studio 拡張機能を発送する
-  href: shipping-visual-studio-extensions.md
   items:
+    - name: Visual Studio 拡張機能を発送する
+      href: shipping-visual-studio-extensions.md
     - name: VSIX プロジェクト テンプレート
       href: vsix-project-template.md
     - name: VSIX プロジェクト テンプレートの概要
@@ -481,40 +507,45 @@
     - name: VSIX パッケージへの依存関係の追加
       href: how-to-add-a-dependency-to-a-vsix-package.md
     - name: VSIX パッケージの構造
-      href: anatomy-of-a-vsix-package.md
       items:
+        - name: VSIX パッケージの構造
+          href: anatomy-of-a-vsix-package.md
         - name: VSIX 拡張機能スキーマ 2.0 リファレンス
           href: vsix-extension-schema-2-0-reference.md
         - name: '[Content_types] .xml ファイルの構造'
           href: the-structure-of-the-content-types-dot-xml-file.md
         - name: VSIX マニフェスト デザイナー
           href: vsix-manifest-designer.md
-    - name: VSIX パッケージのローカライズ
-      href: localizing-vsix-packages.md
+    - name: VSIX パッケージをローカライズする
       items:
+        - name: VSIX パッケージをローカライズする
+          href: localizing-vsix-packages.md
         - name: VSIX 言語パック スキーマ 2.0 リファレンス
           href: vsix-language-pack-schema-2-0-reference.md
     - name: Visual Studio の拡張機能を更新する
       href: how-to-update-a-visual-studio-extension.md
     - name: Windows インストーラーの配置に関する拡張機能を準備する
       href: preparing-extensions-for-windows-installer-deployment.md
-    - name: VSIX パッケージの署名
+    - name: VSIX パッケージに署名する
       href: signing-vsix-packages.md
     - name: Private Galleries
-      href: private-galleries.md
       items:
+        - name: Private Galleries
+          href: private-galleries.md
         - name: プライベート ギャラリーの Atom フィード
           href: how-to-create-an-atom-feed-for-a-private-gallery.md
         - name: レジストリ設定を使用してプライベート ギャラリーを管理する
           href: how-to-manage-a-private-gallery-by-using-registry-settings.md
     - name: 複数バージョンの Visual Studio をサポートする
-      href: supporting-multiple-versions-of-visual-studio.md
       items:
+        - name: 複数バージョンの Visual Studio をサポートする
+          href: supporting-multiple-versions-of-visual-studio.md
         - name: 共有 VSPackage とバージョン管理 VSPackage の選択
           href: choosing-between-shared-and-versioned-vspackages.md
         - name: side-by-side 配置に対してファイル名拡張子を登録する
-          href: registering-file-name-extensions-for-side-by-side-deployments.md
           items:
+            - name: side-by-side 配置に対してファイル名拡張子を登録する
+              href: registering-file-name-extensions-for-side-by-side-deployments.md
             - name: ファイル名拡張子について
               href: about-file-name-extensions.md
             - name: ファイル名拡張子のファイル ハンドラーを指定する
@@ -523,20 +554,24 @@
               href: registering-verbs-for-file-name-extensions.md
             - name: side-by-side のファイルの関連付けを管理する
               href: managing-side-by-side-file-associations.md
-    - name: Visual Studio の検出
+    - name: Visual Studio を探す
       href: locating-visual-studio.md
+    - name: DTE を使って Visual Studio を起動する
+      href: launch-visual-studio-dte.md
 - name: Visual Studio SDK の内部
   href: internals/toc.yml
 - name: Visual Studio SDK のサポート
   href: support-for-the-visual-studio-sdk.md
 - name: Visual Studio SDK のリファレンス
-  href: visual-studio-sdk-reference.md
   items:
+    - name: Visual Studio SDK のリファレンス
+      href: visual-studio-sdk-reference.md
     - name: IntelliSenseHostFlags
       href: intellisensehostflags.md
     - name: VSCT XML スキーマ リファレンス
-      href: vsct-xml-schema-reference.md
       items:
+        - name: VSCT XML スキーマ リファレンス
+          href: vsct-xml-schema-reference.md
         - name: CommandTable 要素
           href: commandtable-element.md
         - name: Extern 要素
@@ -546,51 +581,61 @@
         - name: Define 要素
           href: define-element.md
         - name: Commands 要素
-          href: commands-element.md
           items:
+            - name: Commands 要素
+              href: commands-element.md
             - name: Menus 要素
-              href: menus-element.md
               items:
+                - name: Menus 要素
+                  href: menus-element.md
                 - name: Menu 要素
                   href: menu-element.md
             - name: Groups 要素
-              href: groups-element.md
               items:
+                - name: Groups 要素
+                  href: groups-element.md
                 - name: Group 要素
                   href: group-element.md
             - name: Buttons 要素
-              href: buttons-element.md
               items:
+                - name: Buttons 要素
+                  href: buttons-element.md
                 - name: Button 要素
                   href: button-element.md
             - name: Bitmaps 要素
-              href: bitmaps-element.md
               items:
+                - name: Bitmaps 要素
+                  href: bitmaps-element.md
                 - name: Bitmap 要素
                   href: bitmap-element.md
             - name: Combos 要素
-              href: combos-element.md
               items:
+                - name: Combos 要素
+                  href: combos-element.md
                 - name: Combo 要素
                   href: combo-element.md
         - name: CommandPlacements 要素
-          href: commandplacements-element.md
           items:
+            - name: CommandPlacements 要素
+              href: commandplacements-element.md
             - name: CommandPlacement 要素
               href: commandplacement-element.md
         - name: VisibilityConstraints 要素
-          href: visibilityconstraints-element.md
           items:
+            - name: VisibilityConstraints 要素
+              href: visibilityconstraints-element.md
             - name: VisibilityItem 要素
               href: visibilityitem-element.md
         - name: KeyBindings 要素
-          href: keybindings-element.md
           items:
+            - name: KeyBindings 要素
+              href: keybindings-element.md
             - name: KeyBinding 要素
               href: keybinding-element.md
         - name: UsedCommands 要素
-          href: usedcommands-element.md
           items:
+            - name: UsedCommands 要素
+              href: usedcommands-element.md
             - name: UsedCommand 要素
               href: usedcommand-element.md
         - name: Parent 要素
@@ -598,8 +643,9 @@
         - name: Icon 要素
           href: icon-element.md
         - name: 文字列要素
-          href: strings-element.md
           items:
+            - name: 文字列要素
+              href: strings-element.md
             - name: ButtonText 要素
               href: buttontext-element.md
             - name: CommandName 要素
@@ -607,18 +653,21 @@
         - name: Command Flag 要素
           href: command-flag-element.md
         - name: Symbols 要素
-          href: symbols-element.md
           items:
+            - name: Symbols 要素
+              href: symbols-element.md
             - name: GuidSymbol 要素
-              href: guidsymbol-element.md
               items:
+                - name: GuidSymbol 要素
+                  href: guidsymbol-element.md
                 - name: IDSymbol 要素
                   href: idsymbol-element.md
         - name: VSCT XML スキーマの条件付き属性
           href: vsct-xml-schema-conditional-attributes.md
     - name: Visual studio SDK の GUID と定数
-      href: guids-and-constants-in-the-visual-studio-sdk.md
       items:
+        - name: Visual studio SDK の GUID と定数
+          href: guids-and-constants-in-the-visual-studio-sdk.md
         - name: IDE GUIDs
           href: ide-guids.md
         - name: IDE 定数
@@ -626,11 +675,13 @@
     - name: マネージド コードの COM 定数
       href: com-constants-in-managed-code.md
     - name: ソース管理プラグイン
-      href: source-control-plug-ins.md
       items:
+        - name: ソース管理プラグイン
+          href: source-control-plug-ins.md
         - name: ソース管理プラグインの API 関数
-          href: source-control-plug-in-api-functions.md
           items:
+            - name: ソース管理プラグインの API 関数
+              href: source-control-plug-in-api-functions.md
             - name: SccAdd 関数
               href: sccadd-function.md
             - name: SccAddFilesFromSCC 関数
@@ -708,8 +759,9 @@
             - name: SccWillCreateSccFile 関数
               href: sccwillcreatesccfile-function.md
         - name: IDE で実装されるコールバック関数
-          href: callback-functions-implemented-by-the-ide.md
           items:
+            - name: IDE で実装されるコールバック関数
+              href: callback-functions-implemented-by-the-ide.md
             - name: LPTEXTOUTPROC
               href: lptextoutproc.md
             - name: POPLISTFUNC
@@ -721,8 +773,9 @@
             - name: OPTNAMECHANGEPFN
               href: optnamechangepfn.md
         - name: 列挙子
-          href: enumerators.md
           items:
+            - name: 列挙子
+              href: enumerators.md
             - name: コマンド コードの列挙子
               href: command-code-enumerator.md
             - name: メッセージの列挙子
@@ -750,8 +803,9 @@
         - name: ソース管理プラグインの互換性に関する警告をオフにする
           href: how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md
     - name: コマンド ライン スイッチ (Visual Studio SDK)
-      href: command-line-switches-visual-studio-sdk.md
       items:
+        - name: コマンド ライン スイッチ (Visual Studio SDK)
+          href: command-line-switches-visual-studio-sdk.md
         - name: VSPackage 開発の Devenv コマンド ライン スイッチ
           href: devenv-command-line-switches-for-vspackage-development.md
         - name: コマンド ライン スイッチを追加する
@@ -759,8 +813,9 @@
     - name: エラー処理と戻り値
       href: error-handling-and-return-values.md
     - name: オブジェクト
-      href: objects.md
       items:
+        - name: オブジェクト
+          href: objects.md
         - name: VSCodeWindow オブジェクト
           href: vscodewindow-object.md
         - name: VSCodeWindowManager オブジェクト
@@ -772,8 +827,9 @@
     - name: Visual Studio SDK の用語集
       href: visual-studio-sdk-glossary.md
 - name: ソフトウェア開発キットを作成する
-  href: creating-a-software-development-kit.md
   items:
+    - name: ソフトウェア開発キットを作成する
+      href: creating-a-software-development-kit.md
     - name: 'チュートリアル: C# または Visual Basic を使用して SDK を作成する'
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: 'チュートリアル: C++ を使用して SDK を作成する'
@@ -781,8 +837,9 @@
     - name: 'チュートリアル: JavaScript を使用して SDK を作成する'
       href: walkthrough-creating-an-sdk-using-javascript.md
 - name: .NET コンパイラ プラットフォーム ("Roslyn") の拡張機能
-  href: dotnet-compiler-platform-roslyn-extensibility.md
   items:
+    - name: .NET コンパイラ プラットフォーム ("Roslyn") の拡張機能
+      href: dotnet-compiler-platform-roslyn-extensibility.md
     - name: Roslyn アナライザーの概要
       href: getting-started-with-roslyn-analyzers.md
     - name: Roslyn アナライザーと ImmutableArrays 用コード認識ライブラリ

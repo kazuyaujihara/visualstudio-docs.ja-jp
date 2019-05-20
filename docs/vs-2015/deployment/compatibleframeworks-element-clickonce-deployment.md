@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc6446f30f9429811c5382e0a49eca16b63cd9b5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ef54062bd74c9395e187503dd12db1c0cd70d822
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422959"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675415"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt;要素 (ClickOnce 配置)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "63422959"
 このアプリケーションをインストールして実行できる .NET Framework のバージョンを指定します。  
   
 > [!NOTE]
-> [MageUI.exe](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)はサポートしていません、`compatibleFrameworks`アプリケーション マニフェストを保存するときに要素を使用して、証明書で署名済みの[MageUI.exe](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)します。 代わりに [Mage.exe](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) を使用する必要があります。  
+> [MageUI.exe](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)はサポートしていません、`compatibleFrameworks`アプリケーション マニフェストを保存するときに要素を使用して、証明書で署名済みの[MageUI.exe](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)します。 代わりに [Mage.exe](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) を使用する必要があります。  
   
 ## <a name="syntax"></a>構文  
   

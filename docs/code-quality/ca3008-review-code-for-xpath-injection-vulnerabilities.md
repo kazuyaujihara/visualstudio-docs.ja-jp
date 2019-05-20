@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e66b75160df0e8ecf9d33601ee383ec71cd62c4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806476"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841536"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008:XPath インジェクションの脆弱性のコード レビュー
 
@@ -32,7 +32,7 @@ ms.locfileid: "62806476"
 
 ## <a name="rule-description"></a>規則の説明
 
-信頼できない入力を使用する場合は、XPath インジェクション攻撃の考慮あります。 信頼されていない入力を使用した XPath クエリを作成して、攻撃者が悪意のある、意図しない結果を返すクエリを操作する可能性があります、クエリ XML の内容を開示可能性があります。 
+信頼できない入力を使用する場合は、XPath インジェクション攻撃の考慮あります。 信頼されていない入力を使用した XPath クエリを作成して、攻撃者が悪意のある、意図しない結果を返すクエリを操作する可能性があります、クエリ XML の内容を開示可能性があります。
 
 このルールは、XPath 式に到達する HTTP 要求からの入力を検索しようとします。
 
@@ -40,7 +40,7 @@ ms.locfileid: "62806476"
 > このルールは、アセンブリ間でデータを追跡することはできません。 たとえば場合は、1 つのアセンブリは、HTTP 要求の入力を読み取って、XPath クエリを実行する別のアセンブリに渡されます、このルールは警告を生成しません。
 
 > [!NOTE]
-> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)で制限を構成する方法の`.editorconfig`ファイル。
+> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)の EditorConfig ファイルで制限を構成する方法。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
@@ -92,7 +92,7 @@ Partial Public Class WebForm
 
     Protected Sub Page_Load(sender As Object, e As EventArgs)
         Dim operation As String = Me.Request.Form("operation")
-        
+
         ' If an attacker uses this for input:
         '     ' or 'a' = 'a
         ' Then the XPath query will be:

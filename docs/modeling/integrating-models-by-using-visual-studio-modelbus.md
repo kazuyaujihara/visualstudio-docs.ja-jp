@@ -488,7 +488,7 @@ DSL 定義図を右クリックするとクリックして**Modelbus の有効�
 
 - DSL 定義に、外部型参照 `Microsoft.VisualStudio.Modeling.Integration.ModelBusReference` が追加されます。
 
-   内の参照を確認できます**DSL エクスプ ローラー****ドメイン型**します。 外部型参照を手動で追加するには、ルート ノードを右クリックします。
+   内の参照を確認できます**DSL エクスプ ローラー** **ドメイン型**します。 外部型参照を手動で追加するには、ルート ノードを右クリックします。
 
 - 新しいテンプレート ファイルを追加すると、 **Dsl\GeneratedCode\ModelBusReferencesSerialization.tt**します。
 

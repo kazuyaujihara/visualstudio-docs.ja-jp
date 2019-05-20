@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 140aaa93272f6c10bb85a405cb2f875f2b6b464a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e32c50530a33d55f89db6f202eaffd92946c3cef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037526"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689576"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>ユーザー補助アプリケーションのデザイン リソース
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "60037526"
   
 ## <a name="technologies"></a>技術情報  
   
-- **Microsoft Active Accessibility** Microsoft Windows 上で実行するアプリケーションを開発する際に、ユーザー補助機能のサポートを向上できる COM ベースの技術です。 この技術では、ユーザー インターフェイス要素についての情報を公開するための信頼できるメソッドを提供する COM インターフェイスとアプリケーション プログラミング要素に加え、オペレーティング システムに組み込まれているダイナミック リンク ライブラリも用意されます。 詳細については、「[http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](http://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx)」を参照してください。  
+- **Microsoft Active Accessibility** Microsoft Windows 上で実行するアプリケーションを開発する際に、ユーザー補助機能のサポートを向上できる COM ベースの技術です。 この技術では、ユーザー インターフェイス要素についての情報を公開するための信頼できるメソッドを提供する COM インターフェイスとアプリケーション プログラミング要素に加え、オペレーティング システムに組み込まれているダイナミック リンク ライブラリも用意されます。 詳細については、「[https://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx)」を参照してください。  
   
-- **Microsoft .NET Speech 技術** Microsoft .NET Speech SDK は、Microsoft [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] コントロール、Microsoft Internet Explorer Speech アドイン、サンプル アプリケーション、およびドキュメントを 1 つにしたセットであり、Web 開発者はこの SDK を使って、音声対応の [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] アプリケーションを作成、デバッグ、および配置できます。 各ツールはシームレスに Microsoft Visual Studio と統合されるため、開発者は使い慣れた環境で開発を行うことができます。 詳細については、「[http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx)」を参照してください。  
+- **Microsoft .NET Speech 技術** Microsoft .NET Speech SDK は、Microsoft [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] コントロール、Microsoft Internet Explorer Speech アドイン、サンプル アプリケーション、およびドキュメントを 1 つにしたセットであり、Web 開発者はこの SDK を使って、音声対応の [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] アプリケーションを作成、デバッグ、および配置できます。 各ツールはシームレスに Microsoft Visual Studio と統合されるため、開発者は使い慣れた環境で開発を行うことができます。 詳細については、「[https://msdn.microsoft.com/library/ms950383.aspx](https://msdn.microsoft.com/library/ms950383.aspx)」を参照してください。  
   
-- **SAMI 1.0 の理解** Microsoft SAMI (Synchronized Accessible Media Interchange) テクノロジを利用すると、開発者は PC マルチメディアの音声コンテンツにキャプションを付けることができます。 詳細については、「[http://msdn.microsoft.com/library/ms971327.aspx](http://msdn.microsoft.com/library/ms971327.aspx)」を参照してください。  
+- **SAMI 1.0 の理解** Microsoft SAMI (Synchronized Accessible Media Interchange) テクノロジを利用すると、開発者は PC マルチメディアの音声コンテンツにキャプションを付けることができます。 詳細については、「[https://msdn.microsoft.com/library/ms971327.aspx](https://msdn.microsoft.com/library/ms971327.aspx)」を参照してください。  
   
 ## <a name="windows-applications"></a>Windows アプリケーション  
   
-- [チュートリアル: アクセス可能な Windows ベースのアプリケーションを作成する](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)このトピックでは、サンプル Windows アプリケーションでは、Certified for Windows ロゴの 5 つのアクセシビリティ要件を含む手順に沿って説明します。  
+- [チュートリアル: アクセス可能な Windows ベースのアプリケーションを作成する](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)このトピックでは、サンプル Windows アプリケーションでは、Certified for Windows ロゴの 5 つのアクセシビリティ要件を含む手順に沿って説明します。  
   
 - **キーボード ユーザー インターフェイス デザインのガイドライン** この技術情報では、ユーザーがキーボードから操作できる Windows アプリケーション ユーザー インターフェイスの設計方法について説明します。 詳細については、「[http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx)」を参照してください。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "60037526"
   
 ## <a name="web-sites"></a>Web サイト  
   
-- [チュートリアル: アクセシビリティのガイドラインを使用してイメージ コントロール、Menu コントロール、AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202)このトピックで、Web 用のユーザー補助設計のヒントと同様に、サンプル Web ページでアクセス可能なコントロールを含めるための手順について説明します。  
+- [チュートリアル: アクセシビリティのガイドラインを使用してイメージ コントロール、Menu コントロール、AutoPostBack](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202)このトピックで、Web 用のユーザー補助設計のヒントと同様に、サンプル Web ページでアクセス可能なコントロールを含めるための手順について説明します。  
   
 - **Web ページのユーザー補助機能の強化** この技術情報では、ユーザー補助機能を持つ HTML 3.2 の要素が一覧にしてあります。また、Web サイトの開発で使用してユーザー補助機能を強化するための要素も示しています。 詳細については、「[http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx)」を参照してください。  
   

@@ -12,12 +12,12 @@ ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ca5027acbc985ee9afcd8ecd4cf67d2adca40d66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a81668d5c45dd4b3363821972914e3f9dc10266a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963112"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692211"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugProviderProgramNode2 : IUnknown
  デバッグ エンジン (DE) を実装する同一のオブジェクトにこのインターフェイスを実装する[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)プロセスの境界を越えてマーシャ リングのインターフェイスをサポートするためにします。  
   
 ## <a name="notes-for-callers"></a>呼び出し元のノート  
- 呼び出す[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上、`IDebugProgramNode2`をこのインターフェイスを取得するインターフェイス。 このインターフェイスを取得できない場合、DE にはインターフェイスのマーシャ リングはサポートされません。  
+ 呼び出す[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上、`IDebugProgramNode2`をこのインターフェイスを取得するインターフェイス。 このインターフェイスを取得できない場合、DE にはインターフェイスのマーシャ リングはサポートされません。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序メソッド  
  このインターフェイスは、次のメソッドを実装します。  

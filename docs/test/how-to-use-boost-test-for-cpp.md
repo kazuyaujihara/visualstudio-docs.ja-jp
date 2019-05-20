@@ -1,26 +1,27 @@
 ---
 title: C++ 用の Boost.Test を使用する方法
-ms.date: 01/29/2018
+description: Boost.Test を使用し、Visual Studio で単体テストを作成します。
+ms.date: 05/06/2019
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed4d024b7d10f4432c6a2326f07bb068075971f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf962ec4ecade1bb88d9e301d62eb6ab8a5131cf
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970526"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226100"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Visual Studio で C++ 用の Boost.Test を使用する方法
 
-**Visual Studio 2017 バージョン 15.5** 以降では、Boost.Test テスト アダプターが **[C++ によるデスクトップ開発]** ワークロードのコンポーネントとして Visual Studio IDE に統合されています。
+Visual Studio 2017 以降では、Boost.Test テスト アダプターが **[C++ によるデスクトップ開発]** ワークロードのコンポーネントとして Visual Studio IDE に統合されています。
 
 ![Test Adapter for Boost.Test](media/cpp-boost-component.png)
 
-**[C++ によるデスクトップ開発]** ワークロードがインストールされていない場合は、**Visual Studio インストーラー**を開いて、**[変更]** を選択します。 **[C++ によるデスクトップ開発]** ワークロードを選んで、**[変更]** ボタンを選択します。
+**[C++ によるデスクトップ開発]** ワークロードがインストールされていない場合は、**Visual Studio インストーラー**を開きます。 **[C++ によるデスクトップ開発]** ワークロードを選んで、**[変更]** ボタンを選択します。
 
 ## <a name="install-boost"></a>Boost をインストールする
 
@@ -48,7 +49,7 @@ Boost.Test には [Boost](http://www.boost.org/) が必要です。 Boost がイ
 
 項目テンプレートは、Boost.Test の単一ヘッダー バリアントを使用しますが、スタンドアロン ライブラリ バリアントを使用するように #include パスを変更できます。 詳細については、「[インクルード ディレクティブを追加する](#add-include-directives)」を参照してください。
 
-## <a name="create-a-test-project-visual-studio-2017-version-155"></a>テスト プロジェクトを作成する (Visual Studio 2017 バージョン 15.5)
+## <a name="create-a-test-project"></a>テスト プロジェクトを作成する
 
 Visual Studio 2017 バージョン 15.5 には、Boost.Test に利用できる構成済みのテスト プロジェクトまたは項目テンプレートはありません。 したがって、テストを保持するコンソール アプリケーション プロジェクトを作成して構成する必要があります。
 

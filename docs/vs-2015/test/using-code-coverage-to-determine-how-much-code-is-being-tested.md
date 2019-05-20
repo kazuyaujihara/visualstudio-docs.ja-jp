@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f539fd0a20bf852b04b5a41aff829cdcf0e52cf3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d0aa4646bd9d3295aaa2a9da49cc4ed6f057d91a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445925"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695159"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ ms.locfileid: "63445925"
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>コード カバレッジの結果から要素を除外する  
  コードがテキスト テンプレートから生成された場合のように、コード内の特定の要素をカバレッジのスコアから除外する必要があることがあります。 その場合は、コード要素であるクラス、構造体、メソッド、プロパティ、プロパティ set または get アクセス操作子、およびイベントに、属性 `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` を追加します。 クラスを除外しても、派生クラスは除外されないことに注意してください。  
   
- 例:  
+ 例えば:  
   
 ```csharp  
   
@@ -248,7 +248,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  .runsettings ファイルを記述すると、コード カバレッジ分析の対象としてどのアセンブリと要素を選択するかをより詳細に制御できます。 たとえば、クラスに属性を追加せずに、特定の種類のアセンブリを除外できます。 詳細については、「[コード カバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)」を参照してください。  
   
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>ビルド サービスでコード カバレッジを分析する  
- コードをチェックインすると、テストがビルド サーバー上で、他のチーム メンバーによる他のすべてのテストと共に実行されます。 まだこの設定を行っていない場合は、「[ビルド プロセスでのテストの実行](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)」を参照してください。これによって、プロジェクト全体のカバレッジに関する最新の全体像が得られるため、ビルド サービスのコード カバレッジを分析する場合に便利です。 これには、自動化されたシステム テストと、通常は開発用コンピューターでは実行しない、その他のコード化されたテストも含まれます。  
+ コードをチェックインすると、テストがビルド サーバー上で、他のチーム メンバーによる他のすべてのテストと共に実行されます。 まだこの設定を行っていない場合は、「[ビルド プロセスでのテストの実行](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)」を参照してください。これによって、プロジェクト全体のカバレッジに関する最新の全体像が得られるため、ビルド サービスのコード カバレッジを分析する場合に便利です。 これには、自動化されたシステム テストと、通常は開発用コンピューターでは実行しない、その他のコード化されたテストも含まれます。  
   
 1. チーム エクスプローラーで、**[ビルド]** を開き、ビルド定義を追加または編集します。  
   
@@ -265,7 +265,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
    ビルドの実行後、コード カバレッジの結果はテスト実行にアタッチされ、ビルドの概要に表示されます。  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>コマンド ラインでコード カバレッジを分析する  
- コマンド ラインからテストを実行するには、vstest.console.exe を使用します。 コード カバレッジは、このユーティリティのオプションです。 詳細については、「[VSTest.Console.exe のコマンド ライン オプション](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11)」を参照してください。  
+ コマンド ラインからテストを実行するには、vstest.console.exe を使用します。 コード カバレッジは、このユーティリティのオプションです。 詳細については、「[VSTest.Console.exe のコマンド ライン オプション](https://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11)」を参照してください。  
   
 1. Visual Studio 開発者コマンド プロンプトを起動します。  
   

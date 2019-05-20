@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 91b8edcd371a5623d09334948e1db2889f60ae11
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437576"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701141"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63437576"
 プロジェクトは、アプリケーションをビルドするのに必要なものすべての論理的なコンテナーです。 メイン メニューから **[ファイル &#124; 新規作成 &#124; プロジェクト]** の順に選択してプロジェクトを作成すると、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によりプロジェクトを含むソリューションが作成されます。 その後、必要に応じて新規または既存のプロジェクトをソリューションにさらに追加できます。 既存のコード ファイルからプロジェクトを作成することができますし、作業が終った時に削除する一時プロジェクト (.NET のみ) を作成することもできます。  
   
 > [!NOTE]
-> このトピックの説明は、Visual Studio Community エディション に基づいています。 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、使用中の設定または Visual Studio のエディションによっては、この中の説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> このトピックの説明は、Visual Studio Community エディション に基づいています。 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、使用中の設定または Visual Studio のエディションによっては、この中の説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>インストールされたプロジェクト テンプレートからプロジェクトを作成する  
  メイン メニューから **[ファイル &#124; 新規 &#124; プロジェクト]** の順に選択し、[新しいプロジェクト] ダイアログを表示します。 **[インストール済み &#124; テンプレート]** の下の左側のウィンドウで、プログラミング言語とプラットフォームまたはテクノロジを選択します。それから、中央のウィンドウで、使用可能なテンプレートを選択します。  
@@ -95,4 +95,4 @@ ms.locfileid: "63437576"
   
 ## <a name="see-also"></a>関連項目
  [ソリューションおよびプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)   
- [NIB 方法: 複数のプロジェクトから成るソリューションを作成する](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
+ [NIB 方法: 複数のプロジェクトから成るソリューションを作成する](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

@@ -17,12 +17,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c401a59bb2b635a737788c0a587ef5097cc74c7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 978458e9aaca7ea0eae15350803c26246f0c9f1e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443193"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696450"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>型およびリレーションシップの表示 (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63443193"
 クラス デザイナーはクラス ダイアグラムを使用して、構成メンバー、共有している関係などの型の詳細情報を表示します。 実際のところ、これらのエンティティの視覚化はコードの動的ビューです。 つまり、デザイナーで型を編集し、エンティティのソース コードで、反映された編集内容を確認できます。 同様に、クラス ダイアグラムの同期が維持され、コード内のエンティティに加えられた変更が反映されます。  
   
 > [!NOTE]
-> プロジェクトにクラス ダイアグラムが含まれ、プロジェクトが別のプロジェクト内の型を参照している場合、その型のプロジェクトをビルドするまで、クラス ダイアグラムに参照された型は表示されません。 同様に、外部エンティティのコードに加えられた場合、そのエンティティのプロジェクトをリビルドするまで、変更内容はダイアグラムに表示されません。 参照されるアセンブリと読み取り専用ファイルの型の詳細については、「[読み取り専用情報の表示 (クラス デザイナー)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)」を参照してください。  
+> プロジェクトにクラス ダイアグラムが含まれ、プロジェクトが別のプロジェクト内の型を参照している場合、その型のプロジェクトをビルドするまで、クラス ダイアグラムに参照された型は表示されません。 同様に、外部エンティティのコードに加えられた場合、そのエンティティのプロジェクトをリビルドするまで、変更内容はダイアグラムに表示されません。 参照されるアセンブリと読み取り専用ファイルの型の詳細については、「[読み取り専用情報の表示 (クラス デザイナー)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)」を参照してください。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [方法: 既存の型を表示する (クラス デザイナー)](../ide/how-to-view-existing-types-class-designer.md)  

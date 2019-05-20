@@ -9,16 +9,16 @@ f1_keywords:
 manager: jillfra
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 7b4f78bb2249ef60121cfc1557bf06e696e585b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4779c9aa27f65a3295f3a234e4f46314d7fe3b69
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912051"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613577"
 ---
 # <a name="f1-help"></a>F1 キー ヘルプ
 
-検索対象が見つからなかったようです。申し訳ございません。 [品質向上にご協力ください](#help-us-improve-f1)。
+検索対象が見つからなかったようです。申し訳ございません。 このページの一番下にあるボタンでフィードバックを残すことで改善にご協力いただけます。
 
 ## <a name="cursor-position"></a>カーソルの位置
 
@@ -26,14 +26,11 @@ ms.locfileid: "55912051"
 
 ## <a name="useful-links"></a>役に立つリンク
 
-- Visual Studio の全般的な情報については、「[Visual Studio の概要](../../get-started/visual-studio-ide.md)」を参照してください。
-- Visual Studio テキスト エディターのヘルプについては、[コード エディターの使用](../../ide/writing-code-in-the-code-and-text-editor.md)に関するページを参照してください。
+- [.NET API ブラウザー](/dotnet/api/)で参照ドキュメントを検索します。
 - C# のヘルプについては、「[C# のガイド](/dotnet/csharp/index)」を参照してください。
 - Visual Basic のヘルプについては、「[Visual Basic のガイド](/dotnet/visual-basic/)」を参照してください。
 - F# のヘルプについては、「[F# のガイド](/dotnet/fsharp/)」を参照してください。
 - Python のヘルプについては、[Visual Studio での Python](../../python/overview-of-python-tools-for-visual-studio.md)に関するページを参照してください。
 - C++ のヘルプについては、[Visual Studio での C++](/cpp/visual-cpp-in-visual-studio)に関するページを参照してください。
-
-## <a name="help-us-improve-f1"></a>F1 向上への協力
-
-F1 ヘルプ エクスペリエンスの向上にご協力ください。 **[Give product feedback]\(製品のフィードバックの送信\)** ボタンをクリックして、製品のヘルプに関する問題を記録します。 **F1** キーを押したときに、ヘルプを検索した対象を含めます。たとえば、カーソルが置かれていた記号やウィンドウです。 ご協力に感謝いたします。
+- Visual Studio に関する情報については、「[Visual Studio の概要](../../get-started/visual-studio-ide.md)」を参照してください。
+- Visual Studio テキスト エディターのヘルプについては、[コード エディターの使用](../../ide/writing-code-in-the-code-and-text-editor.md)に関するページを参照してください。

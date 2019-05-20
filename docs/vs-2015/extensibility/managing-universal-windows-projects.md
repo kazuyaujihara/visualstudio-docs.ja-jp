@@ -8,17 +8,17 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 08d88ce08c6c91cbf46bcc6d15cbf098d61e604d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412332"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679927"
 ---
 # <a name="managing-universal-windows-projects"></a>ユニバーサル Windows プロジェクトの管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ユニバーサル Windows アプリは、Windows 8.1 と Windows Phone 8.1、両方のプラットフォームでコードとその他のアセットを使用する開発者の両方を対象とするアプリです。 共有コードとリソースは、プラットフォーム固有のコードとリソースは個別のプロジェクト、その他の Windows Phone および Windows のいずれかの保持中に、共有プロジェクトに保持されます。 ユニバーサル Windows アプリの詳細については、次を参照してください。[ユニバーサル Windows アプリ](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx)します。 プロジェクトを管理する、visual Studio 拡張機能があります単一プラットフォームのアプリとは異なる構造をユニバーサル Windows アプリ プロジェクトがあることに注意してくださかった。 このチュートリアルでは、共有プロジェクトを移動し、共有のアイテムを管理する方法を示します。  
+ユニバーサル Windows アプリは、Windows 8.1 と Windows Phone 8.1、両方のプラットフォームでコードとその他のアセットを使用する開発者の両方を対象とするアプリです。 共有コードとリソースは、プラットフォーム固有のコードとリソースは個別のプロジェクト、その他の Windows Phone および Windows のいずれかの保持中に、共有プロジェクトに保持されます。 ユニバーサル Windows アプリの詳細については、次を参照してください。[ユニバーサル Windows アプリ](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx)します。 プロジェクトを管理する、visual Studio 拡張機能があります単一プラットフォームのアプリとは異なる構造をユニバーサル Windows アプリ プロジェクトがあることに注意してくださかった。 このチュートリアルでは、共有プロジェクトを移動し、共有のアイテムを管理する方法を示します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。  

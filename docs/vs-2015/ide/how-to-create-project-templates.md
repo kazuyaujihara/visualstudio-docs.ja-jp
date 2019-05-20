@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a43fe714028b7211904a0bb993d2964bfe612ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 109810e3650ec4cf01d781026eddf09834fc3f18
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416922"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703113"
 ---
 # <a name="how-to-create-project-templates"></a>方法: プロジェクト テンプレートを作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "63416922"
 1. プロジェクトを作成します。  
   
     > [!NOTE]
-    > テンプレートのソースとなるプロジェクトに名前を付けるときは、有効な識別子文字のみを使ってください。 名前に無効な文字が含まれるプロジェクトからエクスポートされたテンプレートでは、後でそのテンプレートを基にしてプロジェクトを作成したときに、コンパイル エラーが発生する可能性があります。 有効な識別子文字について詳しくは、「[Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)」(宣言された要素の名前) をご覧ください。  
+    > テンプレートのソースとなるプロジェクトに名前を付けるときは、有効な識別子文字のみを使ってください。 名前に無効な文字が含まれるプロジェクトからエクスポートされたテンプレートでは、後でそのテンプレートを基にしてプロジェクトを作成したときに、コンパイル エラーが発生する可能性があります。 有効な識別子文字について詳しくは、「[Declared Element Names](https://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)」(宣言された要素の名前) をご覧ください。  
   
 2. プロジェクトを編集して、テンプレートとしてエクスポートできる状態にします。  
   

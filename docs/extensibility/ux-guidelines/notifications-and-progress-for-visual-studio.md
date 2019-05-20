@@ -478,7 +478,7 @@ public interface IVsInfoBarUIEvents
 
  ![フィールドの検証&#40;空白&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905 01_FieldValidation")
 
- フィールドが必要な場合があります透かしテキストを示す**\<必要 >** フィールドの背景が光を指定する必要があります黄色 (VSColor: `Environment.ControlEditRequiredBackground`) と、フォア グラウンドが灰色になります (VSColor: `Environment.ControlEditRequiredHintText`)。
+ フィールドが必要な場合があります透かしテキストを示す **\<必要>** フィールドの背景が光を指定する必要があります黄色 (VSColor: `Environment.ControlEditRequiredBackground`) と、フォア グラウンドが灰色になります (VSColor: `Environment.ControlEditRequiredHintText`)。
 
  ![フィールドのラベルが"Required"検証](../../extensibility/ux-guidelines/media/0905-02_fieldvalidationrequired.png "0905 02_FieldValidationRequired")
 

@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d5956ad23fe22c7c36b712fac61df268586142df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045784"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697557"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>方法: アプリケーション マニフェストと配置マニフェストの再署名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Windows フォーム アプリケーション、Windows Presentation Foundation 
  マニフェストを再署名が別のシナリオは、お客様が、アプリケーションに署名して、配置マニフェストに、独自の証明書です。  
   
 ## <a name="re-signing-the-application-and-deployment-manifests"></a>再署名、アプリケーションおよび配置マニフェストします。  
- この手順では、アプリケーションのマニフェスト ファイル (.manifest) に変更が既に行われたことを前提としています。 詳細については、「[方法 :展開のプロパティを変更する](http://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472)します。  
+ この手順では、アプリケーションのマニフェスト ファイル (.manifest) に変更が既に行われたことを前提としています。 詳細については、「[方法 :展開のプロパティを変更する](https://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472)します。  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Mage.exe を使用してマニフェストに、アプリケーションおよび配置を再署名するには  
   

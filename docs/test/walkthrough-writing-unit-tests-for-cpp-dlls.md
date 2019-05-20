@@ -1,18 +1,18 @@
 ---
 title: '方法: C++ DLL 用の単体テストの記述'
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 960eb242a8b03b863f1b4e38e0cb8cae53eed469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 427b481da6feca902fda0e3058974034c72fe6f4
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819800"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226280"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>方法: C++ DLL 用の単体テストの記述
 
@@ -38,13 +38,12 @@ ms.locfileid: "62819800"
 
 1. **[ファイル]** メニューで、**[新規]** > **[プロジェクト]** の順に選択します。
 
-     ダイアログ ボックスで、**[インストール済み]** > **[テンプレート]** > **[Visual C++]** > **[テスト]** の順に展開します。
+     **Visual Studio 2017 以前**:**[インストール済み]**、**[テンプレート]**、**[Visual C++]**、**[テスト]** の順に展開します。
+     **Visual Studio 2019**:**[言語]** を C++ に設定し、検索ボックスに "test" と入力します。
 
      **ネイティブ単体テスト プロジェクト** テンプレートまたはインストールされている他の好みのフレームワークを選びます。 Google Test や Boost.Test などの別のテンプレートを選んだ場合、基本的な原則は同じですが、いくつかの詳細は異なります。
 
      このチュートリアルでは、テスト プロジェクトの名前は `NativeRooterTest`です。
-
-     ![C++ 単体テスト プロジェクトの作成](../test/media/utecpp01.png)
 
 2. 新しいプロジェクトで、 **unittest1.cpp**を検査します。
 
@@ -85,11 +84,45 @@ ms.locfileid: "62819800"
 
 ## <a name="create_dll_project"></a> DLL プロジェクトを作成する
 
-1. **Win32 プロジェクト** テンプレートを使用して **Visual C++** プロジェクトを作成します。
+::: moniker range="vs-2019"
+
+次の手順は、Visual Studio 2019 で DLL プロジェクトを作成する方法を示しています。
+
+1. **Windows デスクトップ ウィザード**を使用し、C++ プロジェクトを作成します。**ソリューション エクスプローラー**でソリューションを右クリックし、**[追加]**、**[新しいプロジェクト]** の順に選択します。 **[言語]** を C++ に設定し、検索ボックスに "windows" と入力します。 結果の一覧から **[Windows デスクトップ ウィザード]** を選択します。 
 
      このチュートリアルでは、プロジェクトの名前を `RootFinder`とします。
 
-     ![C++ Win32 プロジェクトの作成](../test/media/utecpp05.png)
+2. **[作成]** を押します。 次のダイアログの **[アプリケーションの種類]** で **[ダイナミックリンク ライブラリ (dll)]** を選択し、**[シンボルのエクスポート]** にもチェックを入れます。
+
+     **[シンボルのエクスポート]** オプションは、エクスポートされたメソッドの宣言に使用できる便利なマクロを生成します。
+
+     ![[DLL] と [シンボルのエクスポート] が設定された C++ プロジェクト ウィザード](../test/media/vs-2019/windows-desktop-project-dll.png)
+
+3. プリンシパル *.h* ファイルでエクスポートされた関数を宣言します。
+
+     ![API マクロを使用した新しい DLL コード プロジェクトと .h ファイル](../test/media/utecpp07.png)
+
+     宣言子 `__declspec(dllexport)` は、クラスのパブリック メンバーと保護されるメンバーが DLL の外部で表示できるようにします。 詳細については、「 [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes)」を参照してください。
+
+4. プリンシパル *.cpp* ファイルでは、最小限の本体を関数に追加します。
+
+    ```cpp
+        // Find the square root of a number.
+        double CRootFinder::SquareRoot(double v)
+        {
+            return 0.0;
+        }
+    ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+次の手順では、Visual Studio 2017 で DLL プロジェクトを作成する方法を示します。
+
+1. **Win32 プロジェクト** テンプレートを使用して C++ プロジェクトを作成します。
+
+     このチュートリアルでは、プロジェクトの名前を `RootFinder`とします。
 
 2. [Win32 アプリケーション ウィザード] で **[DLL]** と **[シンボルのエクスポート]** を選択します。
 
@@ -112,6 +145,8 @@ ms.locfileid: "62819800"
             return 0.0;
         }
     ```
+
+::: moniker-end
 
 ## <a name="make_functions_visible"></a> DLL プロジェクトにテスト プロジェクトを結合する
 

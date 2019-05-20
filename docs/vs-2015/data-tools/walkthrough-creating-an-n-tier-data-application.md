@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 57a370dd8fd243deba8db9b9a928202d25c7836d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424743"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675624"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>チュートリアル: n 層データ アプリケーションを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ N-レベル * データ アプリケーションは、データにアクセス�
   
 - **データ ソース構成ウィザード**を実行して、型指定されたデータセットを作成する。  
   
-- 生成された分離[Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)と別々 のプロジェクトにデータセット コード。  
+- 生成された分離[Tableadapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)と別々 のプロジェクトにデータセット コード。  
   
 - データ アクセス層を呼び出す Windows Communication Foundation (WCF) サービスを作成する。  
   
@@ -381,7 +381,7 @@ N-レベル * データ アプリケーションは、データにアクセス�
 ## <a name="next-steps"></a>次の手順  
  Windows ベース アプリケーションに関連データを保存した後で、アプリケーションの要件によってはさらに操作を追加する必要があります。 たとえば、このアプリケーションに対して次のような拡張を行うことができます。  
   
-- データセットへの検証の追加。 詳しくは、次を参照してください。[チュートリアル。N 層データ アプリケーションへの検証の追加](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)します。  
+- データセットへの検証の追加。 詳しくは、次を参照してください。[チュートリアル。N 層データ アプリケーションへの検証の追加](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)します。  
   
 - サービスへの、データを更新してデータベースに戻す追加メソッドの追加。  
   

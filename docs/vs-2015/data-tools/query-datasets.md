@@ -9,17 +9,17 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f2081b302bfb288b08119913081154b970fadcda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425373"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692577"
 ---
 # <a name="query-datasets"></a>データセットのクエリ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-データセット内の特定のレコードを検索するに、DataTable の FindBy メソッドを使用して、テーブルの行のコレクションに対する独自の foreach ループを記述または使用[LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)します。 LINQ to DataSet。  
+データセット内の特定のレコードを検索するに、DataTable の FindBy メソッドを使用して、テーブルの行のコレクションに対する独自の foreach ループを記述または使用[LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)します。 LINQ to DataSet。  
   
 ## <a name="dataset-case-sensitivity"></a>データセットの大文字と小文字の区別  
  データセット内にテーブルと列の名前は既定では大文字、つまり、"Customers"という名前のデータセット内のテーブルも参照できます"顧客"として。 SQL サーバーの SQL Server を含む、多数のデータベース内の名前付け規則と一致するこの、既定の動作は、大文字と小文字のデータ要素の名前を区別することはできません。  
@@ -65,7 +65,7 @@ ms.locfileid: "63425373"
   
  使用することができます、<xref:System.Data.DataRelation>呼び出すことによって、関連レコードを検索するオブジェクト、<xref:System.Data.DataRow.GetChildRows%2A>のメソッド、<xref:System.Data.DataRow>親テーブルでします。このメソッドは、関連する子レコードの配列を返します。 呼び出すか、または、<xref:System.Data.DataRow.GetParentRow%2A>のメソッド、<xref:System.Data.DataRow>子テーブルにします。このメソッドは、1 つを返します<xref:System.Data.DataRow>親テーブルから。  
   
- このページは、型指定されたデータセットを使用した例を示します。 型指定されていないデータセットのリレーションシップを移動する方法の詳細については、次を参照してください。 [Datarelation の移動](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e)します。  
+ このページは、型指定されたデータセットを使用した例を示します。 型指定されていないデータセットのリレーションシップを移動する方法の詳細については、次を参照してください。 [Datarelation の移動](https://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e)します。  
   
 > [!NOTE]
 > Windows フォーム アプリケーションで作業しているし、データ バインド機能を使用してデータを表示する、デザイナーで生成されたフォームは、アプリケーションのための十分な機能を提供可能性があります。 詳細については、次を参照してください。 [Visual Studio でのデータ コントロールをバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)します。  

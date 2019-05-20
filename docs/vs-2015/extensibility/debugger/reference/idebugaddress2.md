@@ -12,12 +12,12 @@ ms.assetid: b150e0ed-4ac0-4f8c-9732-4b3e54b9d243
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 23fb27643a209e870165e521d63079a3b6c650eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca14e6236fc7e12ea259b97f7f2ddb69fe052f55
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972813"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692837"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugAddress2 : IDebugAddress
  シンボル プロバイダーを実装する同一のオブジェクトにこのインターフェイスを実装する、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。 このインターフェイスは、このアドレスに関連付けられているオブジェクトを所有するプロセスの ID へのアクセスを提供します。  
   
 ## <a name="notes-for-callers"></a>呼び出し元のノート  
- 使用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)からこのインターフェイスを取得する、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。  
+ 使用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)からこのインターフェイスを取得する、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
  継承されたメソッドだけでなく、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイスでは、このインターフェイスは、次のメソッドを実装します。  

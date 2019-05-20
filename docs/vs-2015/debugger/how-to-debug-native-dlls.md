@@ -23,18 +23,18 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ea2f40119425cc558b5486a9085b92b05ba81c97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 16a533b27e619526edab71374d922e68baf0a4b0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426524"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702679"
 ---
 # <a name="how-to-debug-native-dlls"></a>方法: ネイティブ Dll をデバッグします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
-> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、[ツール] メニューの [設定のインポートとエクスポート] をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
  DLL をデバッグするときには、次のプロジェクトからデバッグを開始できます。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "63426524"
   
 - DLL 自身を作成するのに使用したプロジェクト  
   
-  実行可能ファイルの作成に使用したプロジェクトがある場合は、そのプロジェクトからデバッグを開始します。 実行可能ファイルの作成に使用したプロジェクトに含まれていない DLL でも、そのソース ファイルを開いてブレークポイントを設定できます。 詳細については、[ブレークポイント](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)に関するページを参照してください。  
+  実行可能ファイルの作成に使用したプロジェクトがある場合は、そのプロジェクトからデバッグを開始します。 実行可能ファイルの作成に使用したプロジェクトに含まれていない DLL でも、そのソース ファイルを開いてブレークポイントを設定できます。 詳細については、[ブレークポイント](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)に関するページを参照してください。  
   
   DLL を作成したプロジェクトからデバッグを開始する場合は、DLL のデバッグに使用する実行可能ファイルを指定する必要があります。  
   

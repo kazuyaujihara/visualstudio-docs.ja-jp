@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67dd471808b938428d1c9e3f2d5b10c36f2bc914
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c2b25d0fa57659b3081b54c51b7493621423188f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435102"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697003"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>ストア アプリでのエネルギー使用の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,12 +55,12 @@ Visual Studio の **エネルギー消費** プロファイラーは、常時ま
   
  **C#、Visual Basic、C++ コードに対するマークの追加**  
   
- C#、Visual Basic、C++ コードにユーザー マークを追加するには、まず [Windows.Foundation.Diagnostics LoggingChannel](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) オブジェクトを作成します。 次に、マークするコードの位置に [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) メソッドの呼び出しを挿入します。 呼び出しでは [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) を使用します。  
+ C#、Visual Basic、C++ コードにユーザー マークを追加するには、まず [Windows.Foundation.Diagnostics LoggingChannel](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) オブジェクトを作成します。 次に、マークするコードの位置に [LoggingChannel.LogMessage](https://msdn.microsoft.com/library/windows/apps/dn264210.aspx) メソッドの呼び出しを挿入します。 呼び出しでは [LoggingLevel.Information](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) を使用します。  
   
  メソッドが実行されると、ユーザー マークがメッセージと共にプロファイル データに追加されます。  
   
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel は [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) インターフェイス (C# および VB で [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) として投影) を実装します。オペレーティング システム リソースのリークを防ぐには、ログ チャネルで終了するときに [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (C# および VB では Windows.Foundation.Diagnostics.LoggingChannel.Dispose()) を呼び出します。  
+> - Windows.Foundation.Diagnostics LoggingChannel は [Windows.Foundation.IClosable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) インターフェイス (C# および VB で [System.IDisposable](https://msdn.microsoft.com/library/System.IDisposable.aspx) として投影) を実装します。オペレーティング システム リソースのリークを防ぐには、ログ チャネルで終了するときに [LoggingChannel.Close](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (C# および VB では Windows.Foundation.Diagnostics.LoggingChannel.Dispose()) を呼び出します。  
 >   - 開いているログ記録チャネルそれぞれに一意の名前を付ける必要があります。 破棄されていないチャネルと同じ名前で新しくログ記録チャネルを作成しようとすると、例外が発生します。  
   
  例については、Windows SDK サンプル [LoggingSession Sample](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) を参照してください。  
@@ -148,7 +148,7 @@ if (performance && performance.mark) {
   
 ## <a name="BKMK_Other_resources"></a> その他のリソース  
   
-- Windows デベロッパー センターの **C#/VB/C++ と XAML** および [JavaScript と HTML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) の「 [接続状態とコストの管理](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) 」セクションでは、ネットワーク接続情報を提供する Windows API について説明しています。この情報を使って、アプリはネットワーク トラフィックのコストを最小限にすることができます。  
+- Windows デベロッパー センターの **C#/VB/C++ と XAML** および [JavaScript と HTML](https://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) の「 [接続状態とコストの管理](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) 」セクションでは、ネットワーク接続情報を提供する Windows API について説明しています。この情報を使って、アプリはネットワーク トラフィックのコストを最小限にすることができます。  
   
      Windows ストア アプリ用の Visual Studio シミュレーターでは、ネットワーク情報 API のデータ接続プロパティをシミュレートすることができます。 「 [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md)」を参照してください。  
   

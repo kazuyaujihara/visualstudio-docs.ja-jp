@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9b8bc5963ba9263d72800cc473cfa56324884ace
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443966"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699264"
 ---
 # <a name="addressing-dpi-issues"></a>DPI 問題への対応
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "63443966"
   
   Visual Studio オプトイン DPI スケーリングに対応して、そのため、「仮想化されません」  
   
-  Windows (と Visual Studio) スケール係数は、システムによって設定の処理のさまざまな方法がありますが、いくつかの UI テクノロジを活用します。 例えば:  
+  Windows (と Visual Studio) スケール係数は、システムによって設定の処理のさまざまな方法がありますが、いくつかの UI テクノロジを活用します。 例:  
   
 - WPF では、(ユニット、ピクセル単位ではありません) は、デバイスに依存しない方法でコントロールを測定します。 WPF の UI は、現在 DPI 用に自動的にスケーリングされます。  
   
@@ -120,7 +120,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  DPI のヘルパー関数は、Visual Studio 環境内で実行されるマネージ コードからアクセスします。  
   
-- 使用中のプロジェクトでは、シェル MPF の最新バージョンを参照する必要があります。 例:  
+- 使用中のプロジェクトでは、シェル MPF の最新バージョンを参照する必要があります。 例えば:  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
@@ -213,7 +213,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
-- 元のイメージのサイズが不明である場合は、スケール ダウンが最終的なイメージ オブジェクトに、LayoutTransform を使用できます。 例:  
+- 元のイメージのサイズが不明である場合は、スケール ダウンが最終的なイメージ オブジェクトに、LayoutTransform を使用できます。 例えば:  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  
@@ -228,7 +228,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>では、WebOC の HDPI サポートを有効にします。  
  既定では、WebOC コントロール (WPF、または IWebBrowser2 インターフェイスで WebBrowser コントロール) などは HDPI 検出とサポートを有効にしないでください。 結果は、高解像度のディスプレイに小さすぎる内容の表示と埋め込まれたコントロールになります。 次に、特定の web WebOC インスタンスで高 DPI のサポートを有効にする方法について説明します。  
   
- IDocHostUIHandler インターフェイスを実装 (上、MSDN の記事を参照してください、 [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx)インターフェイス)。  
+ IDocHostUIHandler インターフェイスを実装 (上、MSDN の記事を参照してください、 [IDocHostUIHandler](https://msdn.microsoft.com/library/aa753260.aspx)インターフェイス)。  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -307,7 +307,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- 必要に応じて、ICustomDoc インターフェイスを実装 (上、MSDN の記事を参照してください、 [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx)インターフェイス)。  
+ 必要に応じて、ICustomDoc インターフェイスを実装 (上、MSDN の記事を参照してください、 [ICustomDoc](https://msdn.microsoft.com/library/aa753272.aspx)インターフェイス)。  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

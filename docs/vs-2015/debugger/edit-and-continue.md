@@ -23,12 +23,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73865d68c191d1287c1cf8a33095259bd9d659ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d5b10d3e40d889ffa9e7743d65de487c2d823cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963582"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698728"
 ---
 # <a name="edit-and-continue"></a>エディット コンティニュ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "58963582"
   
  ここでは、次のトピックについて説明します。  
   
- [方法: コードの変更を明示的に適用します。](http://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
+ [方法: コードの変更を明示的に適用します。](https://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
   
  [方法: エディット コンティニュを有効および無効にする](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
  [方法: コード変更を停止する](../debugger/how-to-stop-code-changes.md)  
   
- [実行ポイント](http://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
+ [実行ポイント](https://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
   
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   
@@ -55,5 +55,5 @@ ms.locfileid: "58963582"
   
 ## <a name="see-also"></a>関連項目  
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
- [[エディット コンティニュ] ([オプション] ダイアログ ボックス - [デバッグ])](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [[エディット コンティニュ] ([オプション] ダイアログ ボックス - [デバッグ])](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [デバッガーの基本事項](../debugger/debugger-basics.md)

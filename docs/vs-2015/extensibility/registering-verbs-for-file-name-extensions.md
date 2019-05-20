@@ -10,19 +10,19 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbd97310163a4eb3ae5502c6341dc73322ca653d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432543"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685268"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>ファイル名拡張子の動詞を登録する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 アプリケーションとファイル名拡張子の関連付けは、通常、ユーザーがファイルをダブルクリックしたときに発生する推奨アクションを持っています。 これは、アクションは、動詞、たとえばオープン操作に対応するにリンクさせます (推奨)。  
   
- HKEY_CLASSES_ROOT にあるシェルのキーを使用して、拡張機能のプログラム識別子 (ProgID) に関連付けられている動詞を登録する\\*progid*\shell します。 詳細については、次を参照してください。[ファイルの種類](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx)します。  
+ HKEY_CLASSES_ROOT にあるシェルのキーを使用して、拡張機能のプログラム識別子 (ProgID) に関連付けられている動詞を登録する\\*progid*\shell します。 詳細については、次を参照してください。[ファイルの種類](https://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx)します。  
   
 ## <a name="registering-standard-verbs"></a>標準的な動詞を登録します。  
  オペレーティング システムでは、次の標準的な動詞を認識します。  

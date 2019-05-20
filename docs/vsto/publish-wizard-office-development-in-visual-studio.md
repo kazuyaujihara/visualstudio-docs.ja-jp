@@ -37,16 +37,16 @@ ms.locfileid: "63447072"
 
  ディスクのパス、ファイル共有、FTP サイト、または web サイトの URL として場所を入力するかクリックして、**参照**場所を参照するボタンをクリックします。 これらの形式でパスができます。
 
-- 標準の相対または絶対パス Windows 形式など*C:\Deploy\MyApplication*または*\MyApplication*します。
+- 標準の相対または絶対パス Windows 形式など *C:\Deploy\MyApplication* または *\MyApplication* します。
 
-- 汎用名前付け規則 (UNC) パスなど *\\\ServerName\MyApplication\\*します。
+- 汎用名前付け規則 (UNC) パスなど *\\\ServerName\MyApplication\\* します。
 
 - URL の web サイトなど http://www.microsoft.com/MyApplicationします。
 
   発行場所は、既定では、 *http://localhost/projectname/* かどうかがある、IIS をインストールまたは実行する場合は、publish \ ディレクトリが IIS インストールされていません。
 
 > [!NOTE]
-> 他の考慮事項があるターゲット コンピューターが Windows Vista を実行している場合。 ローカルな発行オプションを使用するには、Windows Vista コンピューターの管理者があります。 さらに、既定の場所は常には、*発行\\*ディレクトリにインストールされている IIS のあるかどうかに関係なく。
+> 他の考慮事項があるターゲット コンピューターが Windows Vista を実行している場合。 ローカルな発行オプションを使用するには、Windows Vista コンピューターの管理者があります。 さらに、既定の場所は常には、 *発行\\* ディレクトリにインストールされている IIS のあるかどうかに関係なく。
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>エンドユーザーのコンピューター上の既定のインストール パスとは何ですか。
  インストール パスは省略可能です。 たい場合は、後でインストール パスを設定できます。 詳細については、「[方法: Office ソリューションのインストール パスを変更して](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)します。

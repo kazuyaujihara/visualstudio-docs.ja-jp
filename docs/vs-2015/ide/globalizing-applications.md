@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3d938a3768193d758a467e833f006d4019ea5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2948910463bc6d520accce0256bd8e74315c46
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584651"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704328"
 ---
 # <a name="globalizing-applications"></a>アプリケーションのグローバル化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ ms.locfileid: "62584651"
  カルチャの設定に従って日付、時刻、数値、通貨、その他の情報の書式を設定するクラスについて説明します。  
   
 ## <a name="related-sections"></a>関連項目  
- [Windows フォームのグローバル化](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Windows フォームのグローバル化](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  Windows フォームのグローバリゼーションに関するヘルプ ページへのリンクを提供します。  
   
- [グローバライズとローカライズ](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [グローバライズとローカライズ](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  Web フォーム ページのグローバリゼーションに関するヘルプ ページへのリンクを提供します。  
   
  [.NET Framework ベースの国際対応アプリケーションの概要](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Visual Basic または Visual C# を使用した国際市場向けのソフトウェア開発についての基本概念を説明します。  
   
- [推奨される国際対応アプリケーション開発手順](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [推奨される国際対応アプリケーション開発手順](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  設計に関する問題や用語など、各国のユーザー向けのプログラミングについての情報を示します。

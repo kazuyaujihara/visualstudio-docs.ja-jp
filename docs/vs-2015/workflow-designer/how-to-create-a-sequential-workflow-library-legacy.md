@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d44d1b83776cdd69c659ebed0bc2a1caaa53e123
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6563c209dfd86a74c2d51fc9179948c63e7cf4b2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433513"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686687"
 ---
 # <a name="how-to-create-a-sequential-workflow-library-legacy"></a>方法: シーケンシャル ワークフロー ライブラリを作成する (レガシ)
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] が備えている従来の [!INCLUDE[vs2010](../includes/vs2010-md.md)]を使用してシーケンシャル ワークフロー ライブラリ プロジェクトを作成するには、次の手順を実行します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。  
@@ -51,4 +51,4 @@ ms.locfileid: "63433513"
   
 ## <a name="see-also"></a>関連項目  
  [従来のワークフロー プロジェクトを作成します。](../workflow-designer/creating-legacy-workflow-projects.md)   
- [ワークフロー作成スタイル](http://msdn.microsoft.com/aacf4ec6-da05-4974-958a-974769dda739)
+ [ワークフロー作成スタイル](https://msdn.microsoft.com/aacf4ec6-da05-4974-958a-974769dda739)

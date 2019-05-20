@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d238b5923c6f1377ec68717c8ed658bc74fe8e6a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437969"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695288"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>C++ 用の Microsoft 単体テスト フレームワークを使用した C++ 用単体テストの記述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Visual Studio では、C++ で記述されたアンマネージ コードの単�
   
     - `#include` DLL の外部アクセス可能な関数の宣言を含む `.h` ファイル。  
   
-         `.h` ファイルには、`_declspec(dllimport)` でマークされた関数の宣言が含まれる必要があります。 代わりに、DEF ファイルを使用してメソッドをエクスポートすることができます。 詳細については、「[インポートとエクスポート](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)」を参照してください。  
+         `.h` ファイルには、`_declspec(dllimport)` でマークされた関数の宣言が含まれる必要があります。 代わりに、DEF ファイルを使用してメソッドをエクスポートすることができます。 詳細については、「[インポートとエクスポート](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)」を参照してください。  
   
          単体テストでは、テスト対象の DLL からエクスポートされた関数のみにアクセスできます。  
   
@@ -168,7 +168,7 @@ Visual Studio では、C++ で記述されたアンマネージ コードの単�
   
      ![API マクロを使用した新しい DLL コード プロジェクトと .h ファイル](../test/media/utecpp07.png "UteCpp07")  
   
-     宣言子 `__declspec(dllexport)` は、クラスのパブリック メンバーと保護されるメンバーが DLL の外部で表示できるようにします。 詳細については、「 [Using dllimport and dllexport in C++ Classes](http://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9)」を参照してください。  
+     宣言子 `__declspec(dllexport)` は、クラスのパブリック メンバーと保護されるメンバーが DLL の外部で表示できるようにします。 詳細については、「 [Using dllimport and dllexport in C++ Classes](https://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9)」を参照してください。  
   
 4. プリンシパル .cpp ファイルでは、最小限の本体を関数に追加します。  
   
@@ -395,7 +395,7 @@ Visual Studio では、C++ で記述されたアンマネージ コードの単�
 ## <a name="see-also"></a>関連項目  
  [既存の C++ アプリケーションへの単体テストの追加](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [Microsoft.VisualStudio.TestTools.CppUnitTestFramework の使用](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
- [マネージ/アンマネージ コードの相互運用性の概要](http://msdn.microsoft.com/library/ms973872.aspx)   
+ [マネージ/アンマネージ コードの相互運用性の概要](https://msdn.microsoft.com/library/ms973872.aspx)   
  [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)   
- [チュートリアル: 作成と使用のダイナミック リンク ライブラリ (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
- [インポートとエクスポート](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+ [チュートリアル: 作成と使用のダイナミック リンク ライブラリ (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
+ [インポートとエクスポート](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

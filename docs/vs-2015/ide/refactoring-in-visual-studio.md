@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f98061cbc25bc4b4b7ef54a7027f40c9f780c6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a3db616ec23a8d6fdb1984ce27f8fec4909cc9e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540179"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680244"
 ---
 # <a name="refactoring-in-visual-studio"></a>Visual Studio でのリファクタリング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,10 +35,10 @@ ms.locfileid: "62540179"
  [リファクタリング (C#)](../csharp-ide/refactoring-csharp.md)
 
 ### <a name="refactoring-in-visual-basic"></a>Visual Studio でのリファクタリング
- [リファクタリングと [名前の変更] ダイアログ ボックス (Visual Basic)](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)
+ [リファクタリングと [名前の変更] ダイアログ ボックス (Visual Basic)](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)
 
 ### <a name="refactoring-in-c"></a>リファクタリング [C++]
- [コードの作成とリファクタリング (C++)](http://msdn.microsoft.com/library/56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6)
+ [コードの作成とリファクタリング (C++)](https://msdn.microsoft.com/library/56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6)
 
 ### <a name="refactoring-in-f"></a>F\# でのリファクタリング
  F# のリファクタリングのサポートは、サード パーティ製の Visual Studio 拡張機能の [Visual F# Power Tool](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff) で提供されます。

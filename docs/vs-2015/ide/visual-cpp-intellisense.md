@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2754a8ea663d888bb8ba2e2ff0276911976ff0af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802630"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696540"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# の IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Visual Studio 2015 では、単一コードのファイルおよびプロジェ�
   
  次の点に注意してください。  
   
-- # 8 行目の else 分岐は淡色表示で非アクティブ領域は、ため`__ANDROID__`Android プロジェクトに対して定義されます。  
+- # 8 行目の else 分岐が淡色表示、非アクティブな領域を示すため`__ANDROID__`Android プロジェクト用に定義されています。  
   
 - 11 行目のあいさつの変数は HELLO 識別子で初期化され、紫の波線で表示されています。 これは現在アクティブではない iOS プロジェクトに、HELLO 識別子が定義されていないためです。 Android プロジェクトでは、11 行目がコンパイルされますが、iOS ではコンパイルされません。 これは共有コードのため、現在アクティブな構成でコンパイルする場合でも、変更する必要があります。  
   
@@ -87,7 +87,7 @@ Visual Studio 2015 では、単一コードのファイルおよびプロジェ�
 - 12 行目の BYE 識別子は紫の波線で表示されており、現在非アクティブな Android.NativeActivity プロジェクトでは定義されていません。  
   
 ## <a name="single-file-intellisense"></a>単一ファイルの IntelliSense  
- プロジェクトの外部で 1 つのファイルを開いても、やはり IntelliSense を取得します。 **[テキスト エディター]、[C/C++]、[詳細]** にアクセスして IntelliSense 機能をオン/オフすることにより、特定の機能を有効または無効にすることができます。 プロジェクトの一部ではない 1 つのファイルに IntelliSense を構成するには、**[詳細設定]** のセクションで **IntelliSense and Browsing for Non-Project Files** (IntelliSense およびプロジェクト以外のファイルの参照) を検索します。 「[Visual C++ ガイド ツアー](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)」を参照してください。  
+ プロジェクトの外部で 1 つのファイルを開いても、やはり IntelliSense を取得します。 **[テキスト エディター]、[C/C++]、[詳細]** にアクセスして IntelliSense 機能をオン/オフすることにより、特定の機能を有効または無効にすることができます。 プロジェクトの一部ではない 1 つのファイルに IntelliSense を構成するには、**[詳細設定]** のセクションで **IntelliSense and Browsing for Non-Project Files** (IntelliSense およびプロジェクト以外のファイルの参照) を検索します。 「[Visual C++ ガイド ツアー](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)」を参照してください。  
   
  ![Visual C&#43;&#43; の単一ファイルの IntelliSense](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b159e448ae23e67cc2ed1c066cf4b7884ed83a6e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfb0cd2931c7e07644b62993811ea1aaf0a8e99e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54757659"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685700"
 ---
 # <a name="application-properties"></a>Application Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,10 +59,10 @@ Visual Basic、C#、および F# アプリケーションの全般的なアプ�
 ## <a name="see-also"></a>関連項目
  [[アプリケーション] ページ (プロジェクト デザイナー) (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)   
- [プロジェクト デザイナーの概要](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [プロジェクト デザイナーの概要](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce アプリケーションのセキュリティ](../deployment/securing-clickonce-applications.md)   
- [デバッグ プロパティの管理](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [コンパイル プロパティの管理](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [デバッグ プロパティの管理](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [コンパイル プロパティの管理](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [アプリケーション リソースの管理 (.NET)](../ide/managing-application-resources-dotnet.md)   
  [アプリケーションの設定の管理 (.NET)](../ide/managing-application-settings-dotnet.md)

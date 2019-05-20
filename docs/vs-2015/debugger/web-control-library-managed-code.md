@@ -17,17 +17,17 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 18f6e72d18154f11866671a3e448d88c91768c7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 031f894eb2e117a213f4f9fbbf08ac57a1512d61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047099"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688176"
 ---
 # <a name="web-control-library-managed-code"></a>Web コントロール ライブラリ (マネージド コード)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Web コントロール ライブラリ プロジェクト テンプレートは DLL を作成します。 クラス ライブラリは DLL であるため、直接実行することはできません。 コントロールを埋め込む [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ページを作成する必要があります。 詳細については、次を参照してください。 [Web コントロール ライブラリ テンプレート](http://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372)します。  
+Web コントロール ライブラリ プロジェクト テンプレートは DLL を作成します。 クラス ライブラリは DLL であるため、直接実行することはできません。 コントロールを埋め込む [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ページを作成する必要があります。 詳細については、次を参照してください。 [Web コントロール ライブラリ テンプレート](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372)します。  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Web コントロール ライブラリをデバッグするには (方法 1)  
   

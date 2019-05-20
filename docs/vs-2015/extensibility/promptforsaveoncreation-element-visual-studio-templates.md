@@ -12,12 +12,12 @@ ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e9e6ece0d683d08521a76286671c944e57206c6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a523190a9e5c143667355c222e0fbe9441cc231a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975044"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675372"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "58975044"
 ## <a name="remarks"></a>Remarks  
  `PromptForSaveOnCreation` は、省略可能な要素です。 既定値は `false` です。  
   
- 一時プロジェクトは、プロジェクトの内容を保存しないで作成および変更できるプロジェクトです。 詳細については、次を参照してください。 [NIB 一時プロジェクト](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)します。  
+ 一時プロジェクトは、プロジェクトの内容を保存しないで作成および変更できるプロジェクトです。 詳細については、次を参照してください。 [NIB 一時プロジェクト](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)します。  
   
 ## <a name="example"></a>例  
  `PromptForSaveOnCreation` の値を `false` に設定する方法を次に示します。この設定により、プロジェクトは一時プロジェクトとして作成されるようになります。  

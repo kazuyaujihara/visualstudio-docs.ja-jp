@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421248"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693551"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>チュートリアル: Azure モバイル サービスに接続された WPF デスクトップ アプリケーションの作成します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
 - アクティブな Microsoft Azure アカウント。  
   
-    - 無料試用版アカウントのサインアップを、 [ここ](http://azure.microsoft.com/pricing/free-trial/)で行うことができます。  
+    - 無料試用版アカウントのサインアップを、 [ここ](https://azure.microsoft.com/pricing/free-trial/)で行うことができます。  
   
     - [MSDN サブスクライバー特典](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)をアクティブにできます。 MSDN サブスクリプションでは、有料の Azure サービスに対して使用できるクレジットが毎月ユーザーに提供されます。  
   
@@ -566,7 +566,7 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
  ユーザー インターフェイスは、色、図形、グラフィックス、さらにアニメーションなどを追加することによって、視覚的により訴えかけるものにできます。 [Visual Studio および Blend for Visual Studio での XAML デザインに関する記事](../designers/designing-xaml-in-visual-studio.md)を参照してください。  
   
- Azure Mobile Services を使用して、既存の SQL データベースや他のデータ ソースに接続することができます。 「 [Mobile Services のドキュメント](http://azure.microsoft.com/services/app-service/mobile/)」を参照してください。  
+ Azure Mobile Services を使用して、既存の SQL データベースや他のデータ ソースに接続することができます。 「 [Mobile Services のドキュメント](https://azure.microsoft.com/services/app-service/mobile/)」を参照してください。  
   
 ## <a name="see-also"></a>関連項目
  [チュートリアル: 初めての WPF デスクトップ アプリケーション](../designers/walkthrough-my-first-wpf-desktop-application2.md)   

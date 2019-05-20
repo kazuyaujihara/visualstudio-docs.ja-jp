@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 35c81dd879866d6a707e58add4a4fa94a254a918
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a92d0ead091167437904c384b8f9afca2a3ab89c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433030"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696205"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>方法: 評価版の Visual Studio からアップグレードする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,4 +44,4 @@ Visual Studio のプレリリース版は、製品を登録しないでも 14 �
     > Visual Studio のいずれのエディションの登録やロック解除にも、インターネットへの接続が必要になります。 ただし、Visual Studio の登録後、インターネットへの接続は任意になります。
 
 ## <a name="see-also"></a>関連項目
- [Visual Studio のインストール](../install/install-visual-studio-2015.md) [Visual Studio へのサインイン](../ide/signing-in-to-visual-studio.md) [方法: Visual Studio プロダクト キーを検索する](../install/how-to-locate-the-visual-studio-product-key.md) [Team Foundation Server のプロダクト キーの検索または変更](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Visual Studio のインストール](../install/install-visual-studio-2015.md) [Visual Studio へのサインイン](../ide/signing-in-to-visual-studio.md) [方法: Visual Studio プロダクト キーを検索する](../install/how-to-locate-the-visual-studio-product-key.md) [Team Foundation Server のプロダクト キーの検索または変更](https://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

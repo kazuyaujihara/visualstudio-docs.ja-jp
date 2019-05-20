@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999762"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461489"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest の概要
 
@@ -78,7 +78,7 @@ public partial class HelloWorldTest {
 7. "Hello\0World!"
 8. "Hello World!"
 
-生成されたテストが保存される場所については、「[IntelliTest で単体テストを生成する](../../test/generate-unit-tests-for-your-code-with-intellitest.md)」を参照してください。 生成されたテスト コードには、次のコードのようなテストを含める必要があります。
+生成されたテストが保存される場所については、「[IntelliTest でのコードの単体テストの生成](../../test/generate-unit-tests-for-your-code-with-intellitest.md)」を参照してください。 生成されたテスト コードには、次のコードのようなテストを含める必要があります。
 
 ```csharp
 [TestMethod]
@@ -115,8 +115,7 @@ IntelliTest は、[パラメーター化した単体テスト](test-generation.m
 
 さらに、プログラムの再実行時に外部ソースからの値が変わる場合は、そのプログラムは非決定論的と見なされます。 このような場合、IntelliTest はプログラムの実行に対する制御を失い、検索が非効率的になります。
 
-これが発生しても、はっきりとわからない場合があります。
-次に例を示します。
+これが発生しても、はっきりとわからない場合があります。 次に例を示します。
 
 * **GetHashCode()** メソッドの結果は、アンマネージ コードによって提供され、予測できません。
 * **System.Random** クラスは、現在のシステム時刻を使用して正確にランダムな値を提供します。

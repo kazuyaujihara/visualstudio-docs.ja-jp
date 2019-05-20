@@ -9,12 +9,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 39669408402a12ce8010865606e2a2ec3929569b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a510ad25e741fc5924597d4b26841518c63f83a1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537603"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690971"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>一般的なユーザー インターフェイス要素 (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,6 +69,6 @@ ms.locfileid: "62537603"
 
  [ツールボックス、[HTML] タブ](../../ide/reference/toolbox-html-tab.md)デザイン サーフェイスに html タグを追加することができます。
 
- [一般に、CSS、テキスト エディターのオプション ダイアログ ボックス](http://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c)CSS ファイルのオプションを指定することができます。
+ [一般に、CSS、テキスト エディターのオプション ダイアログ ボックス](https://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c)CSS ファイルのオプションを指定することができます。
 
- [検証オプション ダイアログ ボックスの HTML をテキスト エディター、](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) HTML ページのオプションを指定することができます。
+ [検証オプション ダイアログ ボックスの HTML をテキスト エディター、](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) HTML ページのオプションを指定することができます。

@@ -13,17 +13,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b26a152567da3b6285653ba8e14a72bce664ce0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc5c8dbad4d2bb248a3183e2e73d7c2932e7bce4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434524"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681719"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>方法: C# プロジェクトに、アプリケーション構成ファイルを追加します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-アプリケーション構成ファイル (app.config ファイル) を C# プロジェクトに追加すると、共通言語ランタイムがアセンブリ ファイルを検索し読み込む方法をカスタマイズできます。 アプリケーション構成ファイルの詳細については、次を参照してください。[ランタイムがアセンブリを検索する方法](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34)します。  
+アプリケーション構成ファイル (app.config ファイル) を C# プロジェクトに追加すると、共通言語ランタイムがアセンブリ ファイルを検索し読み込む方法をカスタマイズできます。 アプリケーション構成ファイルの詳細については、次を参照してください。[ランタイムがアセンブリを検索する方法](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34)します。  
   
 > [!NOTE]
 > Windows ストアをサポートしていない<xref:System.Configuration>します。 その結果、ストア アプリには、app.config テンプレートが含まれていません。  
@@ -44,7 +44,7 @@ ms.locfileid: "63434524"
   
 ## <a name="see-also"></a>関連項目  
  [アプリケーションの設定の管理 (.NET)](../ide/managing-application-settings-dotnet.md)   
- [構成ファイル スキーマ](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
- [アプリの構成](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
- [方法: .NET Framework のバージョンを対象とするアプリを構成します。](http://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
+ [構成ファイル スキーマ](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
+ [アプリの構成](https://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
+ [方法: .NET Framework のバージョンを対象とするアプリを構成します。](https://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
  [Visual C# 開発環境の使用](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)

@@ -35,7 +35,7 @@ HRESULT WINAPI ResumeTracking();
  追跡が再開された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。 コンテキストが利用できず、追跡を再開できない場合、**E_FAIL** が返されます。
 
 ## <a name="requirements"></a>要件
- **ヘッダー:***FileTracker.h*
+ **ヘッダー:**  *FileTracker.h*
 
 ## <a name="see-also"></a>関連項目
 - [SuspendTracking](../msbuild/suspendtracking.md)

@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ca980b9f51b5c66b5ddfde18c0fb464c73faf99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416504"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686574"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>コード化された UI テスト エディターを使用したコード化された UI テストの編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ UI 操作のプロパティの編集
   
  UI 操作のプロパティを **[UI 操作]** ウィンドウで変更する場合は、プロパティを編集する対象の UI 操作を含むテスト メソッドを展開し、UI 操作を選択してから [プロパティ] ウィンドウを使用してプロパティを変更します。  
   
- たとえば、サーバーが使用できないときに **Web ページ ‘<http://Contoso1/default.aspx’> に移動**というメッセージを表示する UI 操作が Web ブラウザーに関連付けられている場合は、URL を `‘ http://Contoso2/default.aspx’` に変更できます。  
+ たとえば、サーバーが使用できないときに **Web ページ ‘<http://Contoso1/default.aspx’> に移動**というメッセージを表示する UI 操作が Web ブラウザーに関連付けられている場合は、URL を `‘http://Contoso2/default.aspx’` に変更できます。  
   
  ![コントロールのプロパティ](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 コントロールのプロパティの編集  
@@ -219,5 +219,5 @@ UI 操作のプロパティの編集
  [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)   
  [コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [データ ドリブンのコード化された UI テストの作成](../test/creating-a-data-driven-coded-ui-test.md)   
- [既存の操作の記録からのコード化された UI テストの生成](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
+ [既存の操作の記録からのコード化された UI テストの生成](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
