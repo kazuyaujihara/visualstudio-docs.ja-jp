@@ -1,18 +1,18 @@
 ---
 title: C++ DLL 用の単体テストの記述
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7606f9f9b521d4bc752b99ad70237ef4ac6bc30e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821050"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226080"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Visual Studio で C++ DLL 用の単体テストを作成する
 
@@ -56,7 +56,17 @@ ms.locfileid: "62821050"
 
   1. ネイティブ単体テスト プロジェクトを作成します。
 
-      1. **[ファイル]** メニューで、**[新規]** > **[プロジェクト]** > **[Visual C++]** > **[テスト]** > **[C++ 単体テスト プロジェクト]** の順に選びます。
+      ::: moniker range="vs-2019"
+
+      1. **[ファイル]** メニューで、**[新規]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクトの追加]** ダイアログで、**[言語]** を C++ に設定し、検索ボックスに "test" と入力します。 次に **[ネイティブ単体テスト プロジェクト]** を選択します。
+
+      ::: moniker-end
+
+      ::: moniker range="vs-2017"
+
+      1. **[ファイル]** メニューで、**[新規]**、**[プロジェクト]**、**[Visual C++]**、**[テスト]**、**[C++ 単体テスト プロジェクト]** の順に選択します。
+
+      ::: moniker-end
 
   2. **ソリューション エクスプローラー**で、テスト プロジェクトのショートカット メニューの **[参照]** を選びます。 プロジェクトの**プロパティ** ウィンドウが開きます。
 
@@ -80,7 +90,17 @@ ms.locfileid: "62821050"
 
   1. ネイティブ単体テスト プロジェクトを作成します。
 
-      1. **[ファイル]** メニューで、**[新規]** > **[プロジェクト]** > **[Visual C++]** > **[テスト]** > **[ネイティブ単体テスト プロジェクト]** の順に選びます。
+      ::: moniker range="vs-2019"
+
+      1. **[ファイル]** メニューで、**[新規]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクトの追加]** ダイアログで、**[言語]** を C++ に設定し、検索ボックスに "test" と入力します。 次に **[ネイティブ単体テスト プロジェクト]** を選択します。
+
+      ::: moniker-end
+      
+      ::: moniker range="vs-2017"
+
+      1. **[ファイル]** メニューで、**[新規]**、**[プロジェクト]**、**[Visual C++]**、**[テスト]**、**[C++ 単体テスト プロジェクト]** の順に選択します。
+
+      ::: moniker-end
 
   2. **ソリューション エクスプローラー**で、テスト プロジェクトのショートカット メニューの **[プロパティ]** を選びます。
 
@@ -158,4 +178,4 @@ ms.locfileid: "62821050"
 - [ネイティブ コードをデバッグする](../debugger/debugging-native-code.md)
 - [チュートリアル: ダイナミック リンク ライブラリの作成と使用 (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [インポートとエクスポート](/cpp/build/importing-and-exporting)
-- [クイック スタート: テスト エクスプローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [クイック スタート:テスト エクスプローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)

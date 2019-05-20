@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0116a8c4fa6326a1176c132aef59a789daabffca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979649"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461534"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio のソリューションおよびプロジェクト
 
@@ -67,6 +67,8 @@ Visual Studio では、ソリューションの設定を格納するために、
 新しいプロジェクトを作成する最も簡単な方法は、特定の種類のアプリケーションまたは Web サイトのプロジェクト テンプレートから始めることです。 プロジェクト テンプレートは、生成済みのコード ファイル、構成ファイル、資産、設定の基本セットで構成されます。 これらのテンプレートは、新しいプロジェクトを作成するダイアログ ボックスで利用できます (**[ファイル]** > **[新規作成]** > **[プロジェクト]**)。 詳細については、[ソリューションとプロジェクトの作成](../ide/creating-solutions-and-projects.md)に関するページを参照してください。
 
 カスタム プロジェクトや項目テンプレートを作成することもできます。 詳細については、[プロジェクト テンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)に関するページをご覧ください。
+
+作成した新しいプロジェクトは既定で *%USERPROFILE%\source\repos* に保存されます。 この場所は、**[プロジェクトの場所]** 設定で **[ツール]**、**[オプション]**、**[プロジェクトとソリューション]**、**[場所]** の順に選択し、カスタマイズできます。 詳細については、「[[プロジェクトおよびソリューション] ページの [オプション] ダイアログ ボックス](../ide/reference/projects-and-solutions-options-dialog-box.md)」を参照してください。
 
 ## <a name="manage-projects-in-solution-explorer"></a>ソリューション エクスプローラーでプロジェクトを管理する
 

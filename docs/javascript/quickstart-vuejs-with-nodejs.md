@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226497"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>クイック スタート: Visual Studio を使用して初めての Vue.js アプリを作成する
 
@@ -59,12 +59,12 @@ ms.locfileid: "62840622"
 1. 新しいプロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**Basic Vue.js**」と入力してから、**[基本的な Vue.js Web アプリケーション]** (JavaScript または TypeScript のいずれか) を選択します。 表示されたダイアログ ボックスで、**[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**Basic Vue.js**」と入力してから、**[基本的な Vue.js Web アプリケーション]** (JavaScript または TypeScript のいずれか) を選択します。 ダイアログ ボックスが表示されたら、**basic-vuejs** という名前を入力し、**[作成]** を選択します。
 
     ![Vue.js テンプレート](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[JavaScript]** または **[TypeScript]** を展開して、**[Node.js]** を選択します。 中央のウィンドウで、**[基本的な Vue.js Web アプリケーション]** を選択してから **[OK]** を選択します。
+    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[JavaScript]** または **[TypeScript]** を展開して、**[Node.js]** を選択します。 中央のウィンドウで、**[Basic Vue.js Web アプリケーション]** を選択し、名前に「**basic-vuejs**」と入力してから、**[OK]** を選択します。
 
     ![Vue.js テンプレート](../javascript/media/vuejs-template.png)
     ::: moniker-end
