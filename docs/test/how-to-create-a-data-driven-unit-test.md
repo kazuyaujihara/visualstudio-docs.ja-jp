@@ -1,6 +1,6 @@
 ---
 title: データ ドリブン単体テストを作成する
-ms.date: 11/04/2016
+ms.date: 05/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979241"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615437"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>方法: データ ドリブン単体テストを作成する
 
-マネージド コード用の Microsoft の単体テスト フレームワークを使用して、データ ソースからテスト メソッドで使用される値を取得するための単体テスト メソッドを設定できます。 メソッドはデータ ソース内の各行に対して連続して実行されるため、単一のメソッドを使用してさまざまな入力を簡単にテストできます。
+マネージド コード用の Microsoft 単体テスト フレームワークを使用し、データ ソースから値を取得する単体テスト メソッドを設定できます。 メソッドはデータ ソース内の各行に対して連続して実行されるため、単一のメソッドを使用してさまざまな入力を簡単にテストできます。
 
 データ ドリブン単体テストの作成には、次の手順が含まれます。
 
@@ -43,7 +43,7 @@ ms.locfileid: "62979241"
 
 2. 勘定のトランザクションを管理する `BankDb` という `MyBank` 内のプロジェクト。
 
-3. トランザクションが必ず銀行にとって有利になるように数値演算関数を実行する `DbBank` プロジェクト内の `Maths` というクラス。
+3. トランザクションが必ず銀行にとって有利になるように数値演算関数を実行する `BankDb` プロジェクト内の `Maths` というクラス。
 
 4. `BankDb` コンポーネントの動作をテストする `BankDbTests` という単体テスト プロジェクト。
 
@@ -87,6 +87,9 @@ public TestContext TestContext
 ```
 
 テスト メソッドでは、`TestContext` の `DataRow` インデクサー プロパティを使用してデータにアクセスします。
+
+> [!NOTE]
+> .NET Core では [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute) 属性がサポートされていません。 .NET Core または UWP 単体テスト プロジェクトでこの方法でテスト データにアクセスしようとすると、**"'TestContext' does not contain a definition for 'DataRow' and no accessible extension method 'DataRow' accepting a first argument of type 'TestContext' could be found (are you missing a using directive or an assembly reference?)"** ('TestContext' に 'DataRow' の定義が含まれておらず、型 'TestContext' の最初の引数を受け取るアクセス可能な拡張メソッド 'DataRow' が見つかりません (using ディレクティブかアセンブリ参照が不足していませんか?)) のようなエラーが表示されます。
 
 ## <a name="write-the-test-method"></a>テスト メソッドの記述
 
