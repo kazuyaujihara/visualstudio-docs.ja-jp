@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0bda55c42d384f9e7285b445e4cb3c19144289
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408428"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685713"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63408428"
 このトピックの手順を使用して、ソリューション内のプロジェクトまたはプロジェクト項目のすべてまたは一部をビルド、リビルド、またはクリーンを行うことができます。 ステップ バイ ステップ チュートリアルについては、「[チュートリアル: アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)」を参照してください。
 
 > [!NOTE]
-> ご使用の Visual Studio エディションの UI は、アクティブな設定によって、このトピックで説明する内容とは異なる場合があります。 設定を変更するには、**[ツール]** メニューを開き、**[設定のインポートとエクスポート]** を選択します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
+> ご使用の Visual Studio エディションの UI は、アクティブな設定によって、このトピックで説明する内容とは異なる場合があります。 設定を変更するには、**[ツール]** メニューを開き、**[設定のインポートとエクスポート]** を選択します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>ソリューション全体のビルド、リビルド、またはクリーン
 
@@ -110,4 +110,4 @@ ms.locfileid: "63408428"
     - Ctrl + Break キーを選択します。
 
 ## <a name="see-also"></a>関連項目
- [方法: ビルド ログ ファイルの構成を表示、保存、および](../ide/how-to-view-save-and-configure-build-log-files.md)[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)[のコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)[ビルド構成について](../ide/understanding-build-configurations.md) [デバッグおよびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ビルドのリファレンス](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv コマンド ライン スイッチ](../ide/reference/devenv-command-line-switches.md)[ソリューションとプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)
+ [方法: ビルド ログ ファイルの構成を表示、保存、および](../ide/how-to-view-save-and-configure-build-log-files.md)[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)[のコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)[ビルド構成について](../ide/understanding-build-configurations.md) [デバッグおよびリリース プロジェクト構成](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ビルドのリファレンス](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv コマンド ライン スイッチ](../ide/reference/devenv-command-line-switches.md)[ソリューションとプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)
