@@ -10,12 +10,12 @@ ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 515540eee455fcf22151e336897dd5f586867a82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b58314d64536ecf33cc5589609ee5524a9352629
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963938"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700822"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>プロパティ ウィンドウのフィールドとインターフェイス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "58963938"
   
 3. 呼び出す<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>で選択した階層アイテムを渡すと、`VSHPROPID_BrowseObject`パラメーターは設定します、<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>オブジェクト。  
   
-4. 派生したオブジェクト、 [IDispatch インターフェイス](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)に対して返される<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>、項目は、次の要求、および環境にラップします、 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (次の手順を参照してください)。 環境は、2 番目の呼び出しの呼び出しが失敗した場合、 `IVsHierarchy::GetProperty`、選択コンテナーを渡す<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>階層アイテムまたはアイテムを指定します。  
+4. 派生したオブジェクト、 [IDispatch インターフェイス](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)に対して返される<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>、項目は、次の要求、および環境にラップします、 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (次の手順を参照してください)。 環境は、2 番目の呼び出しの呼び出しが失敗した場合、 `IVsHierarchy::GetProperty`、選択コンテナーを渡す<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>階層アイテムまたはアイテムを指定します。  
   
     VSPackage を作成できませんが、プロジェクト<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>を実装する VSPackage に、環境が指定したウィンドウのため (たとえば、**ソリューション エクスプ ローラー**) を構築します<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>の代わりに。  
   

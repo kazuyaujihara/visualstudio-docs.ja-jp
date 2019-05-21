@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a412016f2e51415456ee1a86a1b65fccf4d70a9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3d735544e034c397a06ba50e04160323c536b3d4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800547"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674988"
 ---
 # <a name="localizing-applications"></a>アプリケーションのローカライズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "54800547"
  [.NET Framework ベースの国際対応アプリケーションの概要](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Visual Basic または Visual C# を使用した国際市場向けのソフトウェア開発についての概念を説明します。  
   
- [Windows フォームのグローバル化](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Windows フォームのグローバル化](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  複数のカルチャをサポートする Windows アプリケーションの作成について説明したページへのリンクを提供します。  
   
- [グローバライズとローカライズ](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [グローバライズとローカライズ](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  複数のカルチャをサポートする Web アプリケーションの作成について説明したページへのリンクを提供します。  
   
- [推奨される国際対応アプリケーション開発手順](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [推奨される国際対応アプリケーション開発手順](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  設計に関する問題や用語など、各国のユーザー向けのプログラミングについての情報を示します。

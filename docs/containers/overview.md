@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 4b03ccddadf954b8430b7ad9b5a4ed765fccc3f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbe363e8f78cba9fa46f3634e59beb22e523ddfa
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825011"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084047"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio のコンテナー ツール
 
@@ -25,7 +25,7 @@ Visual Studio に含まれるコンテナーを使った開発用のツールは
 
 ## <a name="docker-support-in-visual-studio"></a>Visual Studio での Docker サポート
 
-Docker サポートは、.NET のプロジェクトの種類の一部で利用できます。  これは、ASP.NET プロジェクト、ASP.NET Core プロジェクト、.NET Core と .NET Framework のコンソール プロジェクトで利用できます。
+Docker サポートは、ASP.NET プロジェクト、ASP.NET Core プロジェクト、.NET Core と .NET Framework のコンソール プロジェクトで利用できます。
 
 Visual Studio での Docker のサポートは、お客様のニーズに応じて、多数のリリースを経て変更されてきました。 プロジェクトに追加できる Docker サポートには 2 つのレベルがあり、サポートされるオプションはプロジェクトの種類と Visual Studio のバージョンによって異なります。 サポートされている一部のプロジェクトの種類では、オーケストレーションなしで 1 つのプロジェクト用に 1 つのコンテナーを使いたいだけの場合は、Docker サポートを追加することでこれを実行できます。  次のレベルは、コンテナー オーケストレーションのサポートです。これは、選択した特定のオーケストレーター用の適切なサポート ファイルを追加します。  
 
@@ -46,13 +46,9 @@ Visual Studio 2019 では、コンテナー オーケストレーション サ�
 > 完全な .NET Framework コンソール プロジェクト テンプレートを使う場合は、Docker サポートを追加するときに、Docker Compose を使うオーケストレーションのサポートが自動的に追加されます。
 ::: moniker-end
 
-**[追加] > [Docker のサポート]** と **[追加] > [コンテナー オーケストレーター サポート]** コマンドは、**ソリューション エクスプローラー**の ASP.NET Core プロジェクトのプロジェクト ノードの右クリック メニュー (またはコンテキスト メニュー) にあります。次のスクリーンショットを参照してください。
+### <a name="adding-docker-support"></a>Docker サポートの追加
 
-![Visual Studio の Docker サポートの追加メニュー オプション](./media/overview/add-docker-support-menu.png)
-
-### <a name="adding-docker-support-without-orchestration"></a>Docker サポートの追加 (オーケストレーションなし)
-
-既存のプロジェクトに Docker サポートを追加するには、**ソリューション エクスプローラー**で **[追加]** > **[Docker のサポート]** の順に選択します。 また、次のスクリーンショットに示すように、新しいプロジェクトを作成するときに **[Enable Docker Support]\(Docker サポートを有効にする\)** を選択することで、プロジェクトの作成中に Docker サポートを有効にすることもできます。
+次のスクリーンショットに示すように、新しいプロジェクトを作成するときに **[Enable Docker Support]\(Docker サポートを有効にする\)** を選択することで、プロジェクトの作成中に Docker サポートを有効にすることができます。
 
 ::: moniker range="vs-2017"
 ![Visual Studio で新しい ASP.NET Core Web アプリの Docker サポートを有効にする](./media/overview/enable-docker-support-visual-studio.png)
@@ -60,6 +56,13 @@ Visual Studio 2019 では、コンテナー オーケストレーション サ�
 ::: moniker range=">=vs-2019"
 ![Visual Studio で新しい ASP.NET Core Web アプリの Docker サポートを有効にする](./media/overview/vs-2019/enable-docker-support-visual-studio.png)
 ::: moniker-end
+
+> [!NOTE]
+> (.NET Core ではなく) .NET Framework プロジェクトの場合、Windows コンテナーのみを使用できます。
+
+既存のプロジェクトに Docker サポートを追加するには、**ソリューション エクスプローラー**で **[追加]** > **[Docker のサポート]** の順に選択します。 **[追加] > [Docker のサポート]** と **[追加] > [コンテナー オーケストレーター サポート]** コマンドは、**ソリューション エクスプローラー**の ASP.NET Core プロジェクトのプロジェクト ノードの右クリック メニュー (またはコンテキスト メニュー) にあります。次のスクリーンショットを参照してください。
+
+![Visual Studio の Docker サポートの追加メニュー オプション](./media/overview/add-docker-support-menu.png)
 
 Docker サポートを追加または有効にすると、Visual Studio により以下がプロジェクトに追加されます。
 
@@ -75,7 +78,7 @@ Docker サポートを追加すると、ソリューションは次のように�
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> 以下のスクリーンショットに示すように、ASP.NET プロジェクト (.NET Framework。.NET Core プロジェクトではありません) 用のプロジェクトの作成中に Docker のサポートを有効にすると、コンテナー オーケストレーションのサポートも追加されます。
+> 以下のスクリーンショットに示すように、ASP.NET プロジェクト (.NET Framework。 .NET Core プロジェクトではありません) 用のプロジェクトの作成中に Docker のサポートを有効にすると、コンテナー オーケストレーションのサポートも追加されます。
 
 ![ASP.NET プロジェクトで Docker 構成のサポートを有効にする](media/overview/enable-docker-compose-support.png)
 ::: moniker-end

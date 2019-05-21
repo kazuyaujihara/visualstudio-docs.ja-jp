@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4fdbf84cc981dfe9e7cee73fba06867250d2fc33
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059176"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687292"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118:SuppressUnmanagedCodeSecurityAttribute の使用法を確認してください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60059176"
  パブリックまたはプロテクト型またはメンバーが、<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>属性。
 
 ## <a name="rule-description"></a>規則の説明
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> COM 相互運用またはプラットフォーム呼び出しを使用してアンマネージ コードを実行するメンバーの既定のセキュリティ システムの動作を変更します。 一般的に、システムには、[データとモデリング](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)のアンマネージ コード アクセス許可。 この要求は、メンバーのすべての呼び出しの実行時に発生し、アクセス許可のコール スタック内のすべての呼び出し元をチェックします。 システムは、属性が存在するときに、[リンク確認要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)アクセス許可の: 呼び出し元が JIT コンパイルされたときに、直前の呼び出し元の権限が確認されます。
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> COM 相互運用またはプラットフォーム呼び出しを使用してアンマネージ コードを実行するメンバーの既定のセキュリティ システムの動作を変更します。 一般的に、システムには、[データとモデリング](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)のアンマネージ コード アクセス許可。 この要求は、メンバーのすべての呼び出しの実行時に発生し、アクセス許可のコール スタック内のすべての呼び出し元をチェックします。 システムは、属性が存在するときに、[リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)アクセス許可の: 呼び出し元が JIT コンパイルされたときに、直前の呼び出し元の権限が確認されます。
 
  この属性は、主にパフォーマンスを向上するために使用されますが、パフォーマンスが向上するとセキュリティ上のリスクも高くなります。 ネイティブ メソッドを呼び出すパブリック メンバーに属性を配置する場合、呼び出し履歴 (直前の呼び出し元) 以外での呼び出し元はアンマネージ コードのアクセス許可をアンマネージ コードを実行する必要はありません。 パブリック メンバーの操作や入力の処理によって呼び出し元が信頼できるコードに通常制限付きアクセス機能を信頼できないことが可能。
 
@@ -72,4 +72,4 @@ ms.locfileid: "60059176"
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress/cs/FxCop.Security.TypeInvokeAndSuppress.cs#1)]
 
 ## <a name="see-also"></a>関連項目
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [安全なコーディングのガイドライン](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[セキュリティの最適化](http://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0)[データとモデリング](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)[リンク確認要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [安全なコーディングのガイドライン](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[セキュリティの最適化](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0)[データとモデリング](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)[リンク確認要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

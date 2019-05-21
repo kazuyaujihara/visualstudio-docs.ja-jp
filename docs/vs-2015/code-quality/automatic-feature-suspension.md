@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d406d200864a3c79dcd568b3c9411a1635ce116
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045983"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704012"
 ---
 # <a name="automatic-feature-suspension"></a>自動機能の中断
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60045983"
 
 - Visual C# および Visual Basic の完全なソリューション分析は無効です。
 
-- [ガベージ コレクション](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9)Visual c# と Visual Basic (GC) の待機時間の短いモードが無効になっています。
+- [ガベージ コレクション](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9)Visual c# と Visual Basic (GC) の待機時間の短いモードが無効になっています。
 
 - Visual Studio のキャッシュがフラッシュされます。
 
@@ -62,5 +62,5 @@ Visual Studio のすべてのキャッシュは、すぐに空になりますが
 ## <a name="see-also"></a>関連項目
 
 - [方法: 有効にして、完全ソリューション解析を無効にします。](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
-- [ガベージ コレクションの基礎](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
+- [ガベージ コレクションの基礎](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [大規模なソリューションのパフォーマンスに関する考慮事項](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

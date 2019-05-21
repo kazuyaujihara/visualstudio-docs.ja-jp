@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e1a0ce9cfaa09a5332d0bce39b31f946b7b5a177
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42d7df6e4a4bddc2d3e9bf7ab84375a65a6d2c98
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437489"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700650"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>レイヤー図を使用したコードの検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,7 @@ ms.locfileid: "63437489"
 |すべての抑制されたエラーを非表示にする、**エラー一覧**ウィンドウ|任意の場所を右クリックし、**エラー一覧**ウィンドウで、 をポイント**検証エラーの管理**、順にクリックします**抑制されたエラーの非表示にする**します。|  
   
 ## <a name="ValidateAuto"></a> コードを自動的に検証します。  
- ローカル ビルドを実行するたびにレイヤー検証を実行できます。 チームで Team Foundation ビルドを使用する場合、ゲート チェックインを使用してレイヤー検証を実行できます。これは、カスタム MSBuild タスクを作成することで指定できます。また、ビルド レポートを使用して検証エラーを収集することもできます。 ゲート チェックイン ビルドを作成するを参照してください。[ゲート チェックイン ビルド プロセスを使用して変更を検証する](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)します。  
+ ローカル ビルドを実行するたびにレイヤー検証を実行できます。 チームで Team Foundation ビルドを使用する場合、ゲート チェックインを使用してレイヤー検証を実行できます。これは、カスタム MSBuild タスクを作成することで指定できます。また、ビルド レポートを使用して検証エラーを収集することもできます。 ゲート チェックイン ビルドを作成するを参照してください。[ゲート チェックイン ビルド プロセスを使用して変更を検証する](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)します。  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>ローカル ビルド時にコードを自動的に検証するには  
   
@@ -197,15 +197,15 @@ ms.locfileid: "63437489"
   
    検証エラーに関する詳細については、次を参照してください。[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)します。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] の詳細については、以下のトピックを参照してください。  
   
-- [アプリケーションのビルド](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [アプリケーションのビルド](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
-- [既定のテンプレートを使用して、自分のビルド プロセス](http://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
+- [既定のテンプレートを使用して、自分のビルド プロセス](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
   
-- [Upgradetemplate.xaml はレガシ ビルドの変更します。](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
+- [Upgradetemplate.xaml はレガシ ビルドの変更します。](https://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
   
-- [ビルド プロセス テンプレートのカスタマイズ](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [ビルド プロセス テンプレートのカスタマイズ](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
-- [実行中のビルドの進行状況の監視](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
+- [実行中のビルドの進行状況の監視](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
 ## <a name="TroubleshootingValidation"></a> レイヤー検証に関する問題をトラブルシューティングします。  
  レイヤー検証に関する問題とその解決方法について、次の表で説明します。 これらの問題は、コードと設計の間の競合によって発生するエラーとは異なります。 これらのエラーの詳細については、次を参照してください。[を把握して解決のレイヤー検証エラー](#UnderstandingValidationErrors)します。  

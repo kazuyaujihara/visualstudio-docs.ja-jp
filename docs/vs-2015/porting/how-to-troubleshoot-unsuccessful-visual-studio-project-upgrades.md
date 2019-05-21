@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096336"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696391"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>方法: 失敗した Visual Studio プロジェクトのアップグレードをトラブルシューティングします。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,4 +57,4 @@ Visual Studio が、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の旧バージ
    アップグレードされた [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] バージョンでプロジェクトを実行する場合は、そのプロジェクトの参照を更新し、参照を呼び出す `Imports` ステートメントまたは `Using` ステートメントも更新する必要があります。 プロジェクトが IDE で読み込まれる場合は、**ソリューション エクスプローラー**または **[参照マネージャー]** ダイアログ ボックスを使用して参照を更新できます。
 
 ## <a name="see-also"></a>関連項目
- [/Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [ASP.NET 4 に変換する](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [ASP.NET 4 に変換する](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

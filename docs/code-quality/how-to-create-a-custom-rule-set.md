@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a7ed11e7d3e093afaeaa19fd87ea68b7fecd266
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2f642ea8e41e4a9ccf2b35f432df528fc5e81d0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816571"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676559"
 ---
 # <a name="customize-a-rule-set"></a>ルール セットをカスタマイズします。
 
 コード分析のための特定のプロジェクトのニーズに合わせて設定、カスタム規則を作成することができます。
 
-## <a name="create-a-custom-rule-set"></a>カスタム規則セットの作成
+## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>カスタム規則セット既存のルール セットからを作成します。
 
 カスタム ルールを作成するには設定、組み込みの規則セットを開くことができます、**ルール セット エディター**します。 ルールに違反したときに発生するアクションを変更して、そこから追加または特定の規則を削除&mdash;など、警告またはエラーを表示します。
 
@@ -40,7 +40,12 @@ ms.locfileid: "62816571"
 
 4. 選択**オープン**ルール セット エディターで、ルールを表示します。
 
-新しい規則セット ファイルを作成することも、**新しいファイル**ダイアログ。
+> [!NOTE]
+> あるため、プロセスは若干異なります、.NET Core または .NET Standard プロジェクトがあれば、ない**コード分析**プロパティ タブ。手順に従って[をプロジェクトに設定し、アクティブなルール セットとして設定する定義済みの規則のコピー](analyzer-rule-sets.md)します。 ルール セットをコピーしたら、後に[ルール セット エディター、Visual Studio で編集](working-in-the-code-analysis-rule-set-editor.md)を開いてから**ソリューション エクスプ ローラー**します。
+
+## <a name="create-a-new-rule-set"></a>新しいルール セットを作成します。
+
+新しい規則セット ファイルを作成することができます、**新しいファイル**ダイアログ。
 
 1. 選択**ファイル** > **新規** > **ファイル**、またはキーを押します**Ctrl**+**N**.
 
@@ -50,9 +55,12 @@ ms.locfileid: "62816571"
 
    新しい *.ruleset*規則セット エディターでファイルが開きます。
 
-### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>カスタムの規則セットを複数の規則セットからの作成します。
+## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>カスタムの規則セットを複数の規則セットからの作成します。
 
-1. ソリューション エクスプ ローラーでプロジェクトを右クリックしを選択し、**プロパティ**します。
+> [!NOTE]
+> 次の手順は必要はありませんが、.NET Core プロジェクトには適用されませんを**コード分析**プロパティ タブ。
+
+1. **ソリューション エクスプ ローラー**、プロジェクトを右クリックし、**プロパティ**します。
 
 2. **プロパティ**ページで、**コード分析**タブ。
 
@@ -68,9 +76,9 @@ ms.locfileid: "62816571"
 
 6. 選択**開く**をルール セット エディターで設定する新しい規則を開きます。
 
-### <a name="rule-precedence"></a>ルールの優先順位
+## <a name="rule-precedence"></a>ルールの優先順位
 
-- 同じルールが一覧表示されている 2 つの場合または他にもさまざまな重大度レベルのルール セットで、コンパイラはエラーを生成します。 例:
+- 同じルールが一覧表示されている 2 つの場合または他にもさまざまな重大度レベルのルール セットで、コンパイラはエラーを生成します。 例えば:
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -85,7 +93,7 @@ ms.locfileid: "62816571"
 
    **CA0063:規則セット ファイルの読み込みに失敗しました '\[] .ruleset' またはその依存の規則のいずれかのファイルを設定します。ファイルは、ルール セットのスキーマに準拠していません。**
 
-- 規則セットには、子の規則使用して設定にはが含まれている場合、 **Include**タグ、および子と親規則セットの両方が同じルールを一覧表示が、別の重大度レベルの親規則セット内の重大度が優先されます。 例:
+- 規則セットには、子の規則使用して設定にはが含まれている場合、 **Include**タグ、および子と親規則セットの両方が同じルールを一覧表示が、別の重大度レベルの親規則セット内の重大度が優先されます。 例えば:
 
    ```xml
    <!-- Parent rule set -->
@@ -112,7 +120,7 @@ ms.locfileid: "62816571"
 
 ## <a name="next-steps"></a>次の手順
 
-これでルール セットがある場合は、次の手順が追加や、ルールを削除規則違反の重大度を変更することによって、規則をカスタマイズします。
+これでルール セットがある場合は、次の手順が追加やルールを削除する規則違反の重大度を変更することによって、規則をカスタマイズします。
 
 > [!div class="nextstepaction"]
 > [規則セット エディターで規則を変更します。](../code-quality/working-in-the-code-analysis-rule-set-editor.md)

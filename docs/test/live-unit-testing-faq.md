@@ -125,7 +125,7 @@ Live Unit Testing は、次の表に示されている 3 つの一般的な単�
 
 ## <a name="set-the-location-of-build-artifacts"></a>ビルド成果物の場所の設定
 
-**Live Unit Testing のビルド成果物を、*.vs* フォルダーの下の既定の場所ではない特定の場所に格納する必要があります。どうすれば変更できますか?**
+ **Live Unit Testing のビルド成果物を、 *.vs* フォルダーの下の既定の場所ではない特定の場所に格納する必要があります。どうすれば変更できますか?**
 
 `LiveUnitTesting_BuildRoot` ユーザー レベル環境変数を、Live Unit Testing のビルド成果物を格納するパスに設定します。 
 

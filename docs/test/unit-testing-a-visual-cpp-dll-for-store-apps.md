@@ -1,18 +1,18 @@
 ---
 title: UWP アプリ用の Visual C++ DLL をテストする方法
-ms.date: 02/15/2018
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 20749240e95d167d1b0268b2605ffeede8cf797a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01a7b6cfb6587baf5ae80b04178cbdc36e373b86
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562623"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226365"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Visual C++ DLL をテストする方法
 
@@ -24,15 +24,27 @@ ms.locfileid: "62562623"
 
 ## <a name="Create_the_solution_and_the_unit_test_project"></a> ソリューションと単体テスト プロジェクトを作成する
 
-1. **[ファイル]** メニューで、**[新規]** > **[新しいプロジェクト]** を選びます。
+::: moniker range="vs-2019"
 
-2. [新しいプロジェクト] ダイアログで **[インストール済み]** > **[Visual C++]** の順に展開し、**[Windows ユニバーサル]** を選びます。 プロジェクト テンプレートの一覧の **[単体テスト アプリ (ユニバーサル Windows)]** を選択します。
+まず、新しいテスト プロジェクトを作成します。 **[ファイル]** メニューで、**[新規]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクトの作成]** ダイアログで検索ボックスに "test" と入力し、**[言語]** を C++ に設定します。 プロジェクト テンプレートの一覧の **[単体テスト アプリ (ユニバーサル Windows)]** を選択します。
 
-3. プロジェクトに `RooterLibTests` という名前を付けます。場所を指定します。ソリューションに `RooterLib` という名前を付けます。**[ソリューションのディレクトリを作成]** チェックボックスがオンになっていることを確認します。
+   ![新しい UWP テスト プロジェクトを作成する](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+まず、新しいテスト プロジェクトを作成します。 **[ファイル]** メニューで、**[新規]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログで **[インストール済み]**、**[Visual C++]** の順に展開し、**[Windows ユニバーサル]** を選択します。 プロジェクト テンプレートの一覧の **[単体テスト アプリ (ユニバーサル Windows)]** を選択します。
+
+::: moniker-end
+
+1. [新しいプロジェクト] ダイアログで **[インストール済み]** > **[Visual C++]** の順に展開し、**[Windows ユニバーサル]** を選びます。 プロジェクト テンプレートの一覧の **[単体テスト アプリ (ユニバーサル Windows)]** を選択します。
+
+2. プロジェクトに `RooterLibTests` という名前を付けます。場所を指定します。ソリューションに `RooterLib` という名前を付けます。**[ソリューションのディレクトリを作成]** チェックボックスがオンになっていることを確認します。
 
      ![ソリューション、プロジェクト名、および場所の指定](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
-4. 新しいプロジェクトで、**unittest1.cpp** を開きます。
+3. 新しいプロジェクトで、**unittest1.cpp** を開きます。
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
@@ -67,13 +79,24 @@ ms.locfileid: "62562623"
 
 ## <a name="Add_the_DLL_project_to_the_solution"></a> DLL プロジェクトをソリューションに追加する
 
-1. **ソリューション エクスプローラー**でソリューション名を選択します。 ショートカット メニューの **[追加]** をポイントし、**[新しいプロジェクトの追加]** を選択します。
+::: moniker range="vs-2019"
 
-     ![RooterLib プロジェクトの作成](../test/media/ute_cpp_windows_rooterlib_create.png)
+**ソリューション エクスプローラー**でソリューション名を選択します。 ショートカット メニューの **[追加]** をポイントし、**[新しいプロジェクト]** を選択します。 **[新しいプロジェクトの追加]** ダイアログで、**[言語]** を C++ に設定し、検索ボックスに "DLL" と入力します。 結果の一覧から、**[単体テスト アプリ (ユニバーサル ウィンドウ - C++/CX)]** を選択します。
 
-2. **[新しいプロジェクトの追加]** ダイアログ ボックスの **[DLL (UWP アプリ)]** を選択します。
+![RooterLib プロジェクトの作成](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
-3. *RooterLib.h* ファイルに次のコードを追加します。
+::: moniker-end
+
+::: moniker range="vs-2017"
+**ソリューション エクスプローラー**でソリューション名を選択します。 ショートカット メニューの **[追加]** をポイントし、**[新しいプロジェクト]** を選択します。
+
+![RooterLib プロジェクトの作成](../test/media/ute_cpp_windows_rooterlib_create.png)
+
+::: moniker-end
+
+1. **[新しいプロジェクトの追加]** ダイアログ ボックスの **[DLL (UWP アプリ)]** を選択します。
+
+2. *RooterLib.h* ファイルに次のコードを追加します。
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -99,7 +122,7 @@ ms.locfileid: "62562623"
 
      `CRooterLib` クラスは、コンストラクターと `SqareRoot` エスティメーターのメソッドを宣言します。
 
-4. コマンド ラインに ROOTERLIB_EXPORTS のシンボルを追加します。
+3. コマンド ラインに ROOTERLIB_EXPORTS のシンボルを追加します。
 
     1. **ソリューション エクスプローラー**で **RooterLib** プロジェクトを選択し、ショートカット メニューの **[プロパティ]** を選択します。
 
@@ -109,7 +132,7 @@ ms.locfileid: "62562623"
 
     3. **[プリプロセッサの定義]** ボックスの一覧の **[\<編集...>]** を選択し、**[プリプロセッサの定義]** ダイアログ ボックスに `ROOTERLIB_EXPORTS` を追加します。
 
-5. 宣言された関数の最小限の実装を追加します。 *RooterLib.cpp* を開き、次のコードを追加します。
+4. 宣言された関数の最小限の実装を追加します。 *RooterLib.cpp* を開き、次のコードを追加します。
 
     ```cpp
     // constructor

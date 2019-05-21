@@ -1,12 +1,12 @@
 - name: アーキテクチャを分析およびモデルする
   items:
-    - name: アーキテクチャを分析およびモデルする
+    - name: 概要と記事のリファレンス
       href: analyze-and-model-your-architecture.md
     - name: Visual Studio 2017 での設計向けの新機能
       href: what-s-new-for-design-in-visual-studio.md
     - name: 視覚化およびモデリングを使用して設計を変更する
       href: scenario-change-your-design-using-visualization-and-modeling.md
-    - name: コードの視覚化
+    - name: コード マップと依存関係の図
       items:
         - name: コードの視覚化
           href: visualize-code.md
@@ -32,7 +32,7 @@
           href: directed-graph-markup-language-dgml-reference.md
         - name: コードからの依存関係図の作成
           href: create-layer-diagrams-from-your-code.md
-    - name: アプリのモデルを生成する
+    - name: モデルを作成して共有する
       items:
         - name: アプリのモデルを生成する
           href: create-models-for-your-app.md
@@ -40,7 +40,7 @@
           href: layer-diagrams-reference.md
         - name: '依存関係図: ガイドライン'
           href: layer-diagrams-guidelines.md
-        - name: モデルの共有およびダイアグラムのエクスポート
+        - name: モデルを共有する
           items:
             - name: モデルの共有およびダイアグラムのエクスポート
               href: share-models-and-exporting-diagrams.md
@@ -48,7 +48,7 @@
               href: read-models-and-diagrams-in-other-visual-studio-editions.md
             - name: イメージとしてダイアグラムをエクスポートする
               href: export-diagrams-as-images.md
-    - name: 開発プロセス内でのモデルの使用
+    - name: モデルを使う
       items:
         - name: 開発プロセス内でのモデルの使用
           href: use-models-in-your-development-process.md
@@ -64,7 +64,7 @@
           href: visual-studio-architecture-tooling-guidance.md
     - name: 開発時のシステムの検証
       items:
-        - name: 開発時のシステムの検証
+        - name: 検証タスクとリソース
           href: validate-your-system-during-development.md
         - name: モデルからテストを開発する
           href: develop-tests-from-a-model.md
@@ -72,7 +72,8 @@
           href: validate-code-with-layer-diagrams.md
     - name: 依存関係図の拡張
       items:
-        - name: 依存関係図の拡張
+        - name: 概要と要件
+          displayName: Extend dependency diagrams
           href: extend-layer-diagrams.md
         - name: 依存関係図にコマンドおよびジェスチャを追加する
           href: add-commands-and-gestures-to-layer-diagrams.md
@@ -82,7 +83,8 @@
           href: add-custom-properties-to-layer-diagrams.md
     - name: Modeling SDK for Visual Studio - ドメイン固有言語
       items:
-        - name: Modeling SDK for Visual Studio - ドメイン固有言語
+        - name: 概要
+          displayName: Modeling SDK for Visual Studio
           href: modeling-sdk-for-visual-studio-domain-specific-languages.md
         - name: ドメイン固有言語の概要
           href: getting-started-with-domain-specific-languages.md
@@ -92,13 +94,13 @@
           href: how-to-define-a-domain-specific-language.md
         - name: ドメイン固有言語のカスタマイズおよび拡張
           items:
-            - name: ドメイン固有言語のカスタマイズおよび拡張
+            - name: 概要と記事のリファレンス
+              displayName: Customize and Extend a Domain-Specific Language
               href: customizing-and-extending-a-domain-specific-language.md
             - name: 図の外観をカスタマイズする
               items:
-                - name: 図の外観をカスタマイズする
-                  href: customizing-presentation-on-the-diagram.md
                 - name: シェイプとコネクタを定義する
+                  displayName: Customize presentation on the diagram
                   href: defining-shapes-and-connectors.md
                 - name: 色、線のスタイル、およびその他のシェイプのプロパティを管理する
                   href: controlling-color-line-style-and-other-shape-properties.md
@@ -124,9 +126,8 @@
               href: domain-path-syntax.md
             - name: モデル要素のプロパティ
               items:
-                - name: モデル要素のプロパティ
-                  href: properties-of-model-elements.md
                 - name: DSL 定義のプロパティ
+                  displayName: Model element properties
                   href: properties-of-a-dsl-definition.md
                 - name: ドメイン クラスのプロパティ
                   href: properties-of-domain-classes.md
@@ -154,9 +155,10 @@
                   href: properties-of-connectors.md
             - name: DSL ライブラリを使用して DSL 間でクラスを共有する
               href: sharing-classes-between-dsls-by-using-a-dsl-library.md
-        - name: ドメイン固有言語をカスタマイズするコードを記述する
+        - name: ドメイン固有言語をカスタマイズする
           items:
-            - name: ドメイン固有言語をカスタマイズするコードを記述する
+            - name: DSL をカスタマイズするコードを記述する
+              displayName: Customize a Domain-Specific Language
               href: writing-code-to-customise-a-domain-specific-language.md
             - name: 生成済みクラスのオーバーライドおよび拡張
               href: overriding-and-extending-the-generated-classes.md
@@ -186,9 +188,8 @@
           href: validation-in-a-domain-specific-language.md
         - name: ユーザー コマンドおよびユーザー アクションを記述する
           items:
-            - name: ユーザー コマンドおよびユーザー アクションを記述する
-              href: writing-user-commands-and-actions.md
             - name: ドメイン固有言語における標準のメニュー コマンドを修正する
+              displayName: Write User Commands and Actions
               href: how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md
             - name: ショートカット メニューにコマンドを追加する
               href: how-to-add-a-command-to-the-shortcut-menu.md
@@ -200,7 +201,8 @@
               href: how-to-access-and-constrain-the-current-selection.md
         - name: 変更に対応し、変更を反映する
           items:
-            - name: 変更に対応し、変更を反映する
+            - name: 概要とリファレンス
+              displayName: Respond to and Propagate Changes
               href: responding-to-and-propagating-changes.md
             - name: 計算プロパティおよびカスタム格納プロパティ
               href: calculated-and-custom-storage-properties.md
@@ -214,7 +216,8 @@
               href: updating-shapes-and-connectors-to-reflect-the-model.md
         - name: ドメイン固有言語からコードを生成する
           items:
-            - name: ドメイン固有言語からコードを生成する
+            - name: 概要
+              displayName: Generate Code from a Domain-Specific Language
               href: generating-code-from-a-domain-specific-language.md
             - name: テキスト テンプレートからモデルにアクセスする
               href: accessing-models-from-text-templates.md
@@ -230,9 +233,8 @@
           href: customizing-file-storage-and-xml-serialization.md
         - name: ドメイン固有言語ソリューションを配置する
           items:
-            - name: ドメイン固有言語ソリューションを配置する
-              href: deploying-domain-specific-language-solutions.md
             - name: DSL の MSI および VSIX 配置
+              displayName: Deploy Domain-Specific Language Solutions
               href: msi-and-vsix-deployment-of-a-dsl.md
             - name: 1 つのソリューション内の複数の DSL
               href: multiple-dsls-in-one-solution.md
@@ -244,8 +246,6 @@
           href: creating-a-wpf-based-domain-specific-language.md
         - name: ドメイン固有言語ソリューションを使用する
           items:
-            - name: ドメイン固有言語ソリューションを使用する
-              href: working-with-domain-specific-language-solutions.md
             - name: ドメイン固有言語について
               href: about-domain-specific-languages.md
             - name: ドメイン固有言語ツールの概要
@@ -272,11 +272,12 @@
           href: api-reference-for-modeling-sdk-for-visual-studio.md
     - name: コード生成と T4 テキスト テンプレート
       items:
-        - name: コード生成と T4 テキスト テンプレート
+        - name: 概要
+          displayName: Code Generation and T4 Text Templates
           href: code-generation-and-t4-text-templates.md
         - name: T4 テキスト テンプレートを使用したデザイン時コード生成
           items:
-            - name: T4 テキスト テンプレートを使用したデザイン時コード生成
+            - name: 概要と方法
               href: design-time-code-generation-by-using-t4-text-templates.md
             - name: 'チュートリアル: テキスト テンプレートを使用してコードを生成する'
               href: walkthrough-generating-code-by-using-text-templates.md
@@ -290,11 +291,13 @@
           href: run-time-text-generation-with-t4-text-templates.md
         - name: T4 テキスト テンプレートを作成する
           items:
-            - name: T4 テキスト テンプレートを作成する
+            - name: 概要
+              displayName: Write a T4 Text Template
               href: writing-a-t4-text-template.md
             - name: T4 テキスト テンプレートのディレクティブ
               items:
-                - name: T4 テキスト テンプレートのディレクティブ
+                - name: ディレクティブの概要とリファレンス
+                  displayName: T4 Text Template Directives
                   href: t4-text-template-directives.md
                 - name: T4 テンプレート ディレクティブ
                   href: t4-template-directive.md
@@ -316,7 +319,7 @@
               href: text-template-utility-methods.md
             - name: テキスト テンプレートから Visual Studio またはその他のホストにアクセスする
               href: accessing-visual-studio-or-other-hosts-from-a-text-template.md
-            - name: テキスト テンプレートでエスケープ シーケンスを使用する
+            - name: エスケープ シーケンス
               items:
                 - name: テキスト テンプレートでエスケープ シーケンスを使用する
                   href: using-escape-sequences-in-text-templates.md
@@ -330,11 +333,12 @@
           href: how-to-dot-dot-dot-with-text-templates.md
         - name: T4 テキスト変換をカスタマイズする
           items:
-            - name: T4 テキスト変換をカスタマイズする
+            - name: 概要と記事のリファレンス
+              displayName: Customize T4 Text Transformation
               href: customizing-t4-text-transformation.md
             - name: テキスト テンプレート変換プロセス
               href: the-text-template-transformation-process.md
-            - name: カスタム T4 テキスト テンプレート ディレクティブ プロセッサを作成する
+            - name: カスタム ディレクティブ プロセッサ
               items:
                 - name: カスタム T4 テキスト テンプレート ディレクティブ プロセッサを作成する
                   href: creating-custom-t4-text-template-directive-processors.md
@@ -344,7 +348,7 @@
                   href: walkthrough-creating-a-custom-directive-processor.md
             - name: VS 拡張機能内でテキスト変換を呼び出す
               href: invoking-text-transformation-in-a-vs-extension.md
-            - name: カスタム ホストを使用してテキスト テンプレートを処理する
+            - name: カスタム ホスト
               items:
                 - name: カスタム ホストを使用してテキスト テンプレートを処理する
                   href: processing-text-templates-by-using-a-custom-host.md

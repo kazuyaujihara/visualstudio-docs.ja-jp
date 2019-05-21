@@ -24,19 +24,19 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 521f878c9d4fafa61f8c717f4c9752622ef339d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386001"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699810"
 ---
 # <a name="hierarchical-update"></a>階層更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 階層的な更新プログラム *、参照整合性を維持しながら、データベースに戻す (2 つ以上の関連テーブルを含むデータセット) から更新されたデータを保存するプロセスを指します。 *参照整合性*の挿入、更新、および関連レコードを削除する動作を制御するデータベース内の制約によって定義される一貫性規則を参照します。 たとえば、その顧客の注文を作成するを許可する前に、顧客レコードの作成を強制する参照の整合性を勧めします。  データセットのリレーションシップの詳細については、次を参照してください[データセットのリレーションシップ。](../data-tools/relationships-in-datasets.md)  
   
- 階層更新機能を使用して、`TableAdapterManager`を管理する、`TableAdapter`型指定された dataset の s。 `TableAdapterManager`コンポーネントは、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-は、クラスを生成の一部、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]します。 データ ソース ウィンドウから Windows フォームまたは WPF ページにテーブルをドラッグするとは、Visual Studio がフォームまたはページで、TableAdapterManager の型の変数を追加し、コンポーネント トレイにデザイナーで参照してください。 詳細については、`TableAdapterManager`クラスの TableAdapterManager リファレンスのセクションを参照してください[TableAdapterManager の概要](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)します。  
+ 階層更新機能を使用して、`TableAdapterManager`を管理する、`TableAdapter`型指定された dataset の s。 `TableAdapterManager`コンポーネントは、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-は、クラスを生成の一部、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]します。 データ ソース ウィンドウから Windows フォームまたは WPF ページにテーブルをドラッグするとは、Visual Studio がフォームまたはページで、TableAdapterManager の型の変数を追加し、コンポーネント トレイにデザイナーで参照してください。 詳細については、`TableAdapterManager`クラスの TableAdapterManager リファレンスのセクションを参照してください[TableAdapterManager の概要](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)します。  
   
  既定では、データセットは、外部キー制約を適用しないことを意味する「リレーションのみ、」として関連テーブルを処理します。 データセット デザイナーを使用して、デザイン時にその設定を変更できます。 2 つのテーブル間の関係の行を選択、**関係** ダイアログ ボックス。 TableAdapterManager 動作ときにここで加えた変更が決定が元のデータベースに関連するテーブルに、変更も送信します。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "63386001"
   
  既定では、データセットのデータ テーブルは、データベースでのリレーションシップと一致するリレーションシップ (<xref:System.Data.DataRelation>) が設定された状態で生成されます。 ただし、データセットでのリレーションシップは、外部キー制約としては生成されません。 <xref:System.Data.DataRelation>として構成されている**リレーションシップのみ**せず<xref:System.Data.ForeignKeyConstraint.UpdateRule%2A>または<xref:System.Data.ForeignKeyConstraint.DeleteRule%2A>有効にします。  
   
- 連鎖更新と連鎖削除は、データベースのリレーションシップで連鎖更新や連鎖削除が有効になっている場合でも、既定で無効になっています。 たとえば、新しい顧客と新しい注文を作成し、データを保存しようは、データベースで定義されている外部キー制約を持つの競合を発生することが。 詳細については、「[方法 :データセット内の Foreign Key 制約を構成する](http://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e)します。  
+ 連鎖更新と連鎖削除は、データベースのリレーションシップで連鎖更新や連鎖削除が有効になっている場合でも、既定で無効になっています。 たとえば、新しい顧客と新しい注文を作成し、データを保存しようは、データベースで定義されている外部キー制約を持つの競合を発生することが。 詳細については、「[方法 :データセット内の Foreign Key 制約を構成する](https://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e)します。  
   
 ## <a name="set-the-order-to-perform-updates"></a>更新プログラムを実行する順序を設定します。  
  更新プログラムを実行する順序を設定するデータセットのすべてのテーブルで変更されたすべてのデータを保存する個々 の注文を挿入、更新、および削除したセットが必要です。 階層更新が有効な場合、まず挿入が実行され、次に更新、削除の順で実行されます。 `TableAdapterManager` には、更新、挿入、削除の順に実行できる `UpdateOrder` プロパティも用意されています。  
@@ -63,7 +63,7 @@ ms.locfileid: "63386001"
 > [!NOTE]
 > 更新順序は、すべてが含まれているかを理解しておく必要があります。 つまり、更新プログラムが実行されると、挿入、および削除の後は、データセット内のすべてのテーブルに対して実行されます。  
   
- 設定する、`UpdateOrder`から項目をドラッグした後、プロパティ、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)、フォームに次のように選択します、`TableAdapterManager`コンポーネント トレイ、および設定して、`UpdateOrder`プロパティ、 **プロパティ。** ウィンドウ。 詳細については、「[方法 :階層更新を実行するときに、順序を設定](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)します。  
+ 設定する、`UpdateOrder`から項目をドラッグした後、プロパティ、[データ ソース ウィンドウ](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)、フォームに次のように選択します、`TableAdapterManager`コンポーネント トレイ、および設定して、`UpdateOrder`プロパティ、 **プロパティ。** ウィンドウ。 詳細については、「[方法 :階層更新を実行するときに、順序を設定](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)します。  
   
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>階層更新を実行する前に、データセットのバックアップ コピーを作成します。  
  データを保存すると (`TableAdapterManager.UpdateAll()` メソッドを呼び出すことにより)、`TableAdapterManager` は単一のトランザクションで各テーブルのデータの更新を試みます。 任意のテーブルの更新時に、なんらかが失敗した場合、トランザクション全体がロールバックされます。 ほとんどの場合は、ロールバックは、アプリケーションを元の状態を返します。  
@@ -120,7 +120,7 @@ ms.locfileid: "63386001"
 |`UpdateAll` メソッド|すべてのデータ テーブルからすべてのデータを保存します。|  
 |`BackUpDataSetBeforeUpdate` プロパティ|実行する前に、データセットのバックアップ コピーを作成するかどうか、`TableAdapterManager.UpdateAll`メソッド。ブール値。|  
 |*tableName* `TableAdapter`プロパティ|表す、`TableAdapter`します。 生成された`TableAdapterManager`の各プロパティを含む`TableAdapter`を管理します。 たとえば、Customers と Orders テーブルを含むデータセットが生成されます、`TableAdapterManager`を格納している`CustomersTableAdapter`と`OrdersTableAdapter`プロパティ。|  
-|`UpdateOrder` プロパティ|個々 の insert、update、および delete コマンドの順序を制御します。 この設定の値の 1 つに、`TableAdapterManager.UpdateOrderOption`列挙体。<br /><br /> 既定で、`UpdateOrder`に設定されている**InsertUpdateDelete**します。 つまり、挿入、し、更新、および削除は、データセット内のすべてのテーブルに対して実行されます。 詳細については、「[方法 :階層更新を実行するときに、順序を設定](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)します。|  
+|`UpdateOrder` プロパティ|個々 の insert、update、および delete コマンドの順序を制御します。 この設定の値の 1 つに、`TableAdapterManager.UpdateOrderOption`列挙体。<br /><br /> 既定で、`UpdateOrder`に設定されている**InsertUpdateDelete**します。 つまり、挿入、し、更新、および削除は、データセット内のすべてのテーブルに対して実行されます。 詳細については、「[方法 :階層更新を実行するときに、順序を設定](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)します。|  
   
 ## <a name="see-also"></a>関連項目  
  [データをデータベースに保存する](../data-tools/save-data-back-to-the-database.md)

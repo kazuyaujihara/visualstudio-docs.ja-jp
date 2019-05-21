@@ -18,17 +18,17 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df364440f544df663eff294dfd53dcd671dea049
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df764ac38f437be33b71e7a816709a46234f751e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977325"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684211"
 ---
 # <a name="using-the-parallel-stacks-window"></a>[並列スタック] ウィンドウの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**並列スタック**ウィンドウで、マルチ スレッド アプリケーションをデバッグする場合に便利です。 その**スレッド ビュー**アプリケーションのすべてのスレッドの呼び出し履歴情報が表示されます。 これを使用して、スレッドとそれらのスレッドのスタック フレームの間を移動できます。 マネージ コードで、**タスク ビュー**呼び出しの履歴が表示されます<xref:System.Threading.Tasks.Task?displayProperty=fullName>オブジェクト。 ネイティブ コードで、**タスク ビュー**呼び出しの履歴が表示されます[タスク グループ](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)、[並列アルゴリズム](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)、[非同期エージェント](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)、および[軽量タスク](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)します。  
+**並列スタック**ウィンドウで、マルチ スレッド アプリケーションをデバッグする場合に便利です。 その**スレッド ビュー**アプリケーションのすべてのスレッドの呼び出し履歴情報が表示されます。 これを使用して、スレッドとそれらのスレッドのスタック フレームの間を移動できます。 マネージ コードで、**タスク ビュー**呼び出しの履歴が表示されます<xref:System.Threading.Tasks.Task?displayProperty=fullName>オブジェクト。 ネイティブ コードで、**タスク ビュー**呼び出しの履歴が表示されます[タスク グループ](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)、[並列アルゴリズム](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)、[非同期エージェント](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)、および[軽量タスク](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)します。  
   
 ## <a name="threads-view"></a>スレッド ビュー  
  次の図は、Main から A、B の順に移行した後に外部コードに移った 1 つのスレッドと、 同じ外部コードから始まり A に移行した他の 2 つのスレッドを示しています。そのうちの 1 つは、その後 B を経て外部コードに移り、もう一方は C を経て AnonymousMethod に移っています。  
@@ -121,7 +121,7 @@ ms.locfileid: "58977325"
  [チュートリアル: 並列アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [デバッガーの基本事項](../debugger/debugger-basics.md)   
  [マネージド コードをデバッグする](../debugger/debugging-managed-code.md)   
- [並列プログラミング](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [並列プログラミング](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [タスク ウィンドウを使用します。](../debugger/using-the-tasks-window.md)   
  [チュートリアル: 並列アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Task クラス](../extensibility/debugger/task-class-internal-members.md)

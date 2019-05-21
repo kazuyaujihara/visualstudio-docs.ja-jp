@@ -11,23 +11,23 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cfb8b493190429f6f3a0a6295d65db2c151639c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d2822e9eef36806f5c251813925fb4244242519
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436609"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705813"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>相互運用機能アセンブリ コマンド ハンドラーの登録
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 VSPackage に登録する必要があります[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) は、そのコマンドを正しくルーティングされるようにします。  
   
- 手動で編集するか、Registrar (.rgs) ファイルを使用して、レジストリを更新できます。 詳細については、「 [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)」を参照してください。  
+ 手動で編集するか、Registrar (.rgs) ファイルを使用して、レジストリを更新できます。 詳細については、「 [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)」を参照してください。  
   
  管理パッケージ フレームワーク (MPF) は、この機能によって、<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>クラス。  
   
- [コマンドの表形式のリファレンス](http://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f)アンマネージ サテライト dll の UI ではリソースがあります。  
+ [コマンドの表形式のリファレンス](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f)アンマネージ サテライト dll の UI ではリソースがあります。  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage のコマンド ハンドラーの登録  
  ユーザー インターフェイス (UI) のハンドラーとして機能する VSPackage-ベースのコマンドは、VSPackage にちなんだ名前のレジストリ エントリを必要と`GUID`します。 このレジストリ エントリには、VSPackage の UI のリソース ファイルとそのファイル内でメニュー リソースの場所を指定します。 Hkey_local_machine \software\microsoft\visualstudio の下にレジストリ エントリ自体も\\*\<バージョン >* \Menus、場所*\<バージョン >* バージョンである[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]たとえば 9.0、します。  

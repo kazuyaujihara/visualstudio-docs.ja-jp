@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 638aba87698b32b18f41f8b389485893f880743f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8fc60ff83113193f854c3264b7384738dea64f03
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050167"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674391"
 ---
 # <a name="memory-usage-without-debugging"></a>デバッグなしのメモリ使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60050167"
   
 - スナップショットを比べて、メモリの問題の根本原因を見つけます。  
   
-  このトピックでは、メモリ使用量ツールを使って Windows Universal XAML アプリを分析する方法について説明します。 JavaScript と HTML を使用する Windows ユニバーサル アプリでのメモリ使用量を分析する場合、「[メモリ使用量の分析 (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx)」を参照してください。  
+  このトピックでは、メモリ使用量ツールを使って Windows Universal XAML アプリを分析する方法について説明します。 JavaScript と HTML を使用する Windows ユニバーサル アプリでのメモリ使用量を分析する場合、「[メモリ使用量の分析 (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx)」を参照してください。  
   
 ## <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> メモリ使用量診断セッションの開始  
   
@@ -204,7 +204,7 @@ ms.locfileid: "60050167"
   
 ## <a name="see-also"></a>関連項目  
  [JavaScript メモリ](../profiling/javascript-memory.md)   
- [アプリのパフォーマンスの分析](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
- [パフォーマンスと診断ツールの実行](http://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
- [C++、C#、または Visual Basic を使った Windows ストア アプリのパフォーマンスのベスト プラクティス](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [アプリのパフォーマンスの分析](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
+ [パフォーマンスと診断ツールの実行](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
+ [C++、C#、または Visual Basic を使った Windows ストア アプリのパフォーマンスのベスト プラクティス](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Visual Studio で新しいメモリ使用量ツールでメモリの問題を診断する](http://go.microsoft.com/fwlink/p/?LinkId=394706)

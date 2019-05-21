@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a27dac0c82b2784eac84b174f5cb67719093aace
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a51b4cdb67590b908bc406b78c04ddf0c5aa3e2f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444636"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694550"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>方法: アクティビティ デザイナー ライブラリを作成する
 カスタム アクティビティ デザイナーを使用して、標準アクティビティやカスタム アクティビティのためのユーザー インターフェイスを作成できます。 ユーザー インターフェイスが複雑にならないようにして、1 つのアクティビティに対応するアクティビティ デザイナーを複数作成することができます。 このシナリオでは、複数の対象に対応したデザイナーを作成できます。  
@@ -40,7 +40,7 @@ ms.locfileid: "63444636"
   
 8. プロジェクト テンプレートにより、アクティビティ デザイナー定義が XAML で作成され、ソース コード内に分離コード実装ファイルが作成されます。 [!INCLUDE[wfd1](../includes/wfd1-md.md)]で、アクティビティ デザイナー用のキャンバスが開かれて表示されます。  
   
-9. ドラッグ[!INCLUDE[avalon1](../includes/avalon1-md.md)]コントロールを**ツールボックス**カスタム アクティビティ デザイナーで使用するデザイン サーフェイスにします。  カスタム アクティビティ デザイナーを実装する方法の例は、次を参照してください。[方法。カスタム アクティビティ デザイナーを作成](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31)です。  
+9. ドラッグ[!INCLUDE[avalon1](../includes/avalon1-md.md)]コントロールを**ツールボックス**カスタム アクティビティ デザイナーで使用するデザイン サーフェイスにします。  カスタム アクティビティ デザイナーを実装する方法の例は、次を参照してください。[方法。カスタム アクティビティ デザイナーを作成](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31)です。  
   
     > [!WARNING]
     > カスタム アクティビティも既定のカスタム アクティビティ デザイナーを使用できる[!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]アクティビティ。  

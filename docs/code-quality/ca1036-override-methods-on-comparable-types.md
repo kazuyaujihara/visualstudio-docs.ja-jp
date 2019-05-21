@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12b00c202373310b04021a46e74af2af7e10d535
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d08644ede6b9b28496cff585624ea37858afd49
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778997"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842295"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036:比較可能な型でメソッドをオーバーライドします
 
@@ -66,7 +66,7 @@ Ca 1036 演算子と、プログラミング言語がないために、違反が
 
 この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
 
-```
+```ini
 dotnet_code_quality.ca1036.api_surface = private, internal
 ```
 

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
-ms.openlocfilehash: c07f8f62fb7ae84b5f3ee6140cccecf744c759e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb3619e187c7856cf03ee60c8a04cbe527bf0a69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434177"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698685"
 ---
 # <a name="upgrading-project-items"></a>プロジェクト項目のアップグレード
 追加またはを実装していないプロジェクト システム内の項目を管理する場合は、プロジェクトのアップグレード プロセスに参加する必要があります。 Crystal Reports は、プロジェクト システムに追加できる項目の例を示します。  
@@ -38,5 +38,5 @@ ms.locfileid: "62434177"
 2. プロジェクト項目がプロジェクトのアップグレードの通知を取得時に、 **Visual Studio 変換ウィザード**が引き続き表示されます。 そのためのメソッドを使用する必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger>ウィザードの UI にアップグレード メッセージを提供するインターフェイス。  
   
 ## <a name="see-also"></a>関連項目  
- [Visual Studio 変換ウィザード](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Visual Studio 変換ウィザード](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [カスタム プロジェクトのアップグレード](../misc/upgrading-custom-projects.md)

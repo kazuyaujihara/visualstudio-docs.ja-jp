@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc7c68fe767d2add0842e30f66c51a3dcc84905f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f8b122deab5dbdc30b129bce221a804f8c53aa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447291"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699322"
 ---
 # <a name="source-server-security-alert"></a>ソース サーバー のセキュリティ警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,4 +36,4 @@ ms.locfileid: "63447291"
 ## <a name="see-also"></a>関連項目  
  [シンボル (.pdb) とソース ファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
- [ソース サーバー](http://msdn.microsoft.com/library/windows/desktop/ms680641.aspx)
+ [ソース サーバー](https://msdn.microsoft.com/library/windows/desktop/ms680641.aspx)

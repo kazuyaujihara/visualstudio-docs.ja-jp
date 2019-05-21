@@ -9,17 +9,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bca0b07922d1b0b0d1a218fcccfa51e68a64e7e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 437c6cc7af2b0337b362e14db19deb9584a3d412
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114783"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695532"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Visual Studio で XAML をデザインする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio と Blend for Visual Studio の両方に、XAML ベースの Windows デスクトップ、Web、 [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)、および [Windows ストア](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) アプリ向けの、魅力的なユーザー インターフェイスとリッチ メディア体験を構築するためのビジュアルなツールが用意されています。 一般的なデザイン ウィンドウ と ツール ウィンドウ、および XAML エディターのセットはどちらにも共通のものですが、Blend for Visual Studio にはアニメーションやビヘイビアーなどのより高度なタスク向けに追加のデザイン ツールが用意されています。
+Visual Studio と Blend for Visual Studio の両方に、XAML ベースの Windows デスクトップ、Web、 [Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)、および [Windows ストア](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx) アプリ向けの、魅力的なユーザー インターフェイスとリッチ メディア体験を構築するためのビジュアルなツールが用意されています。 一般的なデザイン ウィンドウ と ツール ウィンドウ、および XAML エディターのセットはどちらにも共通のものですが、Blend for Visual Studio にはアニメーションやビヘイビアーなどのより高度なタスク向けに追加のデザイン ツールが用意されています。
 
 ## <a name="choosing-the-right-tool"></a>適切なツールの選択
  デザイン ツールの選択は、スキル セットに大きく依存します。 コード中心の場合は、Visual Studio で XAML コードを記述すれば高度なデザイン タスクを実行できます。 デザイン中心の場合は、Blend for Visual Studio を使用すると、コードを記述せずに高度なタスクを実行できます。
@@ -41,11 +41,11 @@ Visual Studio と Blend for Visual Studio の両方に、XAML ベースの Windo
 
      ![ファイルの再読み込み操作](../designers/media/blendfilereload.png "BlendFileReload")
 
-- **レイアウトの同期と設定:** カスタム レイアウトを使用して、ツール ウィンドウのレイアウト変更を保存および適用できます。 同じ Microsoft アカウントでサインインすると、Visual Studio は Visual Studio と Blend for Visual Studio 双方の変更や基本設定をコンピューター間で同期します。 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)を参照してください。
+- **レイアウトの同期と設定:** カスタム レイアウトを使用して、ツール ウィンドウのレイアウト変更を保存および適用できます。 同じ Microsoft アカウントでサインインすると、Visual Studio は Visual Studio と Blend for Visual Studio 双方の変更や基本設定をコンピューター間で同期します。 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)を参照してください。
 
 - **共通のソリューション エクスプローラー:** ソリューション エクスプローラーによって、プロジェクトやファイルが整理して表示されるだけでなく、プロジェクトやファイルに関連付けられているコマンドにすばやくアクセスできます。 ソリューション エクスプローラーを使用すると、大規模なエンタープライズ プロジェクトでの作業が容易になります。 「[ソリューションおよびプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)」をご覧ください。
 
-- **チーム エクスプローラー:** チーム エクスプローラーを使用すると、プロジェクトを GIT または TFS リポジトリを使用して管理でき、チームのコラボレーションが容易になります。 [チーム エクスプローラーでの作業](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)を参照してください。
+- **チーム エクスプローラー:** チーム エクスプローラーを使用すると、プロジェクトを GIT または TFS リポジトリを使用して管理でき、チームのコラボレーションが容易になります。 [チーム エクスプローラーでの作業](https://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)を参照してください。
 
 - **NuGet:** Visual Studio と Blend for Visual Studio の両方で NuGet パッケージを管理できます。 NuGet は、パッケージのインストールと、ソリューションからの削除を簡略化する .NET Framework 用のパッケージ マネージャーです。
 

@@ -12,12 +12,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 48f079d29fee5587617f95791bc6de7148741735
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1171197ba55c2fe3fa59ccc9ca918fa0c8f9e727
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069390"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699127"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>スタート ページへのユーザー コントロールの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,5 +187,5 @@ ms.locfileid: "60069390"
      カスタム スタート ページが表示されます。 ファイルを変更する場合は、する必要があります実験用インスタンスを閉じて、変更を行います、コピーし、変更されたファイルを貼り付けるして変更を表示する実験用インスタンスを再度開きます。  
   
 ## <a name="see-also"></a>関連項目  
- [コンテナーの WPF コントロール](http://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
- [チュートリアル: カスタム XAML をスタート ページに追加します。](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [コンテナーの WPF コントロール](https://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
+ [チュートリアル: カスタム XAML をスタート ページに追加する](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

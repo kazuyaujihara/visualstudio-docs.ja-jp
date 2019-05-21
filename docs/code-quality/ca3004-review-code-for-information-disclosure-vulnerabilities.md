@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 82f763d9a6b1ec27975aa80054456a6bbbaeaa2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e8c8c58a01b9527df472907c8b55a9d175dd91d
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541267"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841611"
 ---
 # <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004:情報漏えいの脆弱性のコード レビュー
 
@@ -40,7 +40,7 @@ ms.locfileid: "62541267"
 > このルールは、アセンブリ間でデータを追跡することはできません。 たとえば場合、1 つのアセンブリは、例外をキャッチし、例外を出力する別のアセンブリに渡されます、このルールは警告を生成しません。
 
 > [!NOTE]
-> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)で制限を構成する方法の`.editorconfig`ファイル。
+> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)の EditorConfig ファイルで制限を構成する方法。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
@@ -77,7 +77,7 @@ public partial class WebForm : System.Web.UI.Page
 ```vb
 Imports System
 
-Partial Public Class WebForm 
+Partial Public Class WebForm
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(sender As Object, eventArgs As EventArgs)
@@ -116,7 +116,7 @@ public partial class WebForm : System.Web.UI.Page
 ```vb
 Imports System
 
-Partial Public Class WebForm 
+Partial Public Class WebForm
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(sender As Object, eventArgs As EventArgs)

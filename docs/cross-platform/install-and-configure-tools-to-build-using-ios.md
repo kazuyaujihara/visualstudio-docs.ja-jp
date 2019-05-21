@@ -1,7 +1,7 @@
 ---
 title: iOS を使用してビルドするためのツールのインストールおよび構成 | Microsoft Docs
 ms.custom: ''
-ms.date: 05/21/2018
+ms.date: 05/13/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06449d299fdfd54bdb2526d16897e815900a9c1c
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818499"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614439"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>iOS を使用してビルドするためのツールのインストールおよび構成
 
@@ -32,13 +32,15 @@ iOS を使用してビルドするためのツールをインストールした�
 
 iOS のコードを開発するためのリモート エージェントをインストールして使用するには、まず、次の前提条件を満たす必要があります。
 
-- OS X Mavericks (バージョン 10.9) 以降を実行する Mac コンピューター
+- macOS Mojave バージョン 10.14 以降を実行する Mac コンピューター
 
 - [Apple ID](https://appleid.apple.com/)
 
-- Apple のアクティブな [iOS Developer Program](https://developer.apple.com/programs/ios/) アカウント
+- アクティブな [Apple Developer Program](https://developer.apple.com/programs/) アカウント
 
-- [Xcode](https://developer.apple.com/xcode/downloads/) バージョン 6 以降。
+   配布ではなくテスト目的でのみ iOS デバイスにアプリをサイドロードすることを可能にする無料アカウントを取得できます。
+
+- [Xcode](https://developer.apple.com/xcode/downloads/) バージョン 10.2.1 以降
 
    Xcode は、App Store からダウンロードできます。
 
@@ -48,23 +50,22 @@ iOS のコードを開発するためのリモート エージェントをイン
 
    `xcode-select --install`
 
-- Xcode で構成されている iOS 署名 ID
+- アプリに署名する他の署名 ID として Xcode で構成された Apple ID アカウント
 
-   iOS 署名 ID を取得する方法の詳細については、iOS Developer Library の「[Maintain your signing identities and certificates](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html)」(署名 ID と証明書の管理) を参照してください。 Xcode で署名 ID を表示または設定するには、 **[Xcode]** メニューを開き、 **[環境設定]** を選択します。 **[アカウント]** を選択し、自分の Apple ID を選択してから、 **[詳細の表示]** ボタンを選択します。
+   Xcode で署名 ID を表示または設定するには、 **[Xcode]** メニューを開き、 **[環境設定]** を選択します。 **[アカウント]** を選択し、自分の Apple ID を選択してから、 **[詳細の表示]** ボタンを選択します。 詳しい手順については、「[Add your Apple ID account](https://help.apple.com/xcode/mac/current/#/devaf282080a)」 (Apple ID アカウントを追加する) を参照してください。
+   
+   署名要件の詳細については、「[What is app signing](https://help.apple.com/xcode/mac/current/#/dev3a05256b8)」 (アプリの署名とは何か) を参照してください。 
 
 - 開発用の iOS デバイスを使用している場合、デバイスのプロビジョニング プロファイルを Xcode で構成します。
 
-   プロビジョニング プロファイルを作成する方法の詳細については、iOS Developer Library の「[Create provisioning profiles using Member Center](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24)」(メンバー センターを使用したプロビジョニング プロファイルの作成) を参照してください。
+   Xcode には自動署名機能があり、必要に応じて署名証明書が作成されます。 Xcode の自動署名に関する詳細については、「[automatic signing](https://help.apple.com/xcode/mac/current/#/dev80cc24546)」 (自動署名) を参照してください。
 
-- [Node.js](https://nodejs.org/)
+   手動で署名する場合、アプリのプロビジョニング プロファイルを作成する必要があります。 プロビジョニング プロファイルを作成する方法の詳細については、「[Create a development provisioning profile](https://help.apple.com/developer-account/#/devf2eb157f8)」 (プロビジョニング プロファイルの作成) を参照してください。 
 
-   Node.js の最新の Long Term Support (LTS) バージョン 8.x をお使いの Mac にインストールします。 他の最新リリース バージョンは vcremote で使われている一部のモジュールをサポートしていない場合があり、vcremote のインストールが失敗する可能性があることに注意してください。
+- [Node.js](https://nodejs.org/) バージョン 8.11.3 と npm バージョン 5.6.0
 
-- npm の更新バージョン
+   バージョン 8.11.3 の Node.js を Mac にインストールします。 Node.js パッケージをインストールする場合、それは npm バージョン 5.6.0 に付属しているはずです。 他のバージョンの Node.js と npm では、リモート エージェント vcremote で使用されている一部のモジュールに対応していないことがあり、その場合、vcremote のインストールが失敗する可能性があります。
 
-   Node.js に付属している npm のバージョンは、vcremote をインストールするには古い可能性があります。 npm を更新するには、Mac 上でターミナル アプリを開き、次のコマンドを入力します。
-
-   `sudo npm install -g npm@latest`
 
 ## <a name="Install"></a> iOS 用リモート エージェントをインストールする
 
@@ -131,7 +132,7 @@ Visual Studio で iOS コードをビルドして実行するには、リモー�
 
 Visual Studio からリモート エージェントに接続するには、Visual Studio のオプションで、リモート構成を指定する必要があります。
 
-#### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Visual Studio でリモート エージェントを構成するには
+### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Visual Studio でリモート エージェントを構成するには
 
 1. エージェントが Mac 上でまだ実行されていない場合は、「 [リモート エージェントを起動する](#Start)」の手順に従います。 Visual Studio をリモート エージェントと正常にペアリングして接続し、プロジェクトをビルドするためには、Mac が vcremote を実行している必要があります。
 
@@ -168,7 +169,7 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
 初めてリモート エージェントを起動すると、生成された PIN が期間限定で有効になります (既定では 10 分)。 Visual Studio とリモート エージェントをペアリングする前に期限切れになった場合は、新しい PIN を生成する必要があります。
 
-#### <a name="to-generate-a-new-pin"></a>新しい PIN を生成するには
+### <a name="to-generate-a-new-pin"></a>新しい PIN を生成するには
 
 1. エージェントを停止するか、Mac 上で 2 つ目のターミナル アプリ ウィンドウを開き、それを使用してコマンドを入力します。
 
@@ -182,7 +183,7 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
 セキュリティ上の目的で、Visual Studio とリモート エージェントをペアリングするサーバー証明書は、Mac の IP アドレスまたはホスト名と関連付けられています。 これらの値が変更された場合、新しいサーバー証明書を生成し、新しい値で Visual Studio を再構成する必要があります。
 
-#### <a name="to-generate-a-new-server-certificate"></a>新しいサーバー証明書を生成するには
+### <a name="to-generate-a-new-server-certificate"></a>新しいサーバー証明書を生成するには
 
 1. vcremote エージェントを停止します。
 
@@ -204,7 +205,7 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
 さまざまなコマンド ライン オプションを使用して、リモート エージェントを構成することができます。 たとえば、ビルド要求をリッスンするポートを指定したり、ファイル システムに保持するビルドの最大数を指定したりできます。 既定では、10 個のビルドに制限されます。 最大数を超えたビルドは、リモート エージェントによってシャットダウン時に削除されます。
 
-#### <a name="to-configure-the-remote-agent"></a>リモート エージェントを構成するには
+### <a name="to-configure-the-remote-agent"></a>リモート エージェントを構成するには
 
 - リモート エージェントの完全なコマンド一覧を表示するには、ターミナル アプリで次のように入力します。
 
@@ -233,6 +234,50 @@ Visual Studio からリモート エージェントに接続するには、Visua
    `vcremote --config config_file_path`
 
    ここで *config_file_path* は JSON 形式の構成ファイルのパスです。 スタートアップ オプションとその値にダッシュを含めることはできません。
+
+## <a name="troubleshoot-the-remote-agent"></a>リモート エージェントの問題を解決する
+
+### <a name="debugging-on-an-ios-device"></a>iOS デバイスでのデバッグ
+
+iOS デバイスでのデバッグがうまくいかない場合、[ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller) というツールに問題がある可能性があります。これは、iOS デバイスとの通信に使用されるツールです。 このツールは通常、vcremote のインストール中、Homebrew からインストールされます。 回避策としては以下の手順を行います。
+
+ターミナル アプリを開き、次を順番に実行することで ideviceinstaller とその依存関係を更新します。
+
+1. Homebrew が確実に更新されるようにする
+
+   `brew update`
+
+1. libimobiledevice と usbmuxd をアンインストールする
+
+   `brew uninstall --ignore-dependencies libimobiledevice`
+
+   `brew uninstall --ignore-dependencies usbmuxd`
+
+1. 最新版の libimobiledevice と usbmuxd をインストールする
+
+   `brew install --HEAD usbmuxd`
+
+   `brew unlink usbmuxd`
+
+   `brew link usbmuxd`
+
+   `brew install --HEAD libimobiledevice`
+
+1. ideviceinstaller をアンインストールし、再インストールする
+
+   `brew uninstall ideviceinstaller`
+
+   `brew install ideviceinstaller`
+
+デバイスにインストールされているアプリを一覧表示してみることで、ideviceinstaller でデバイスと通信できることを確認します。
+
+`ideviceinstaller -l`
+
+ideviceinstaller にエラーが出て、フォルダー `/var/db/lockdown` にアクセスできない場合、次を利用し、フォルダーの特権を変更してください。
+
+`sudo chmod 777 /var/db/lockdown`
+    
+ideviceinstaller でデバイスと通信できるかどうか、再度確認します。
 
 ## <a name="see-also"></a>関連項目
 

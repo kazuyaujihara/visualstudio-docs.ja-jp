@@ -22,19 +22,19 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62cbbd63f38e3317b03b203b3ca1cadc2a17e0c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 22a1a991a950ba8e1a7c4c39299616641797630c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386107"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684737"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>方法: サービスのデータに接続する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-アプリケーションを実行して、サービスから返されたデータを接続する、[データ ソース構成ウィザード](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)選択**サービス**上、 **のデータソースの種類を選択**ページ。  
+アプリケーションを実行して、サービスから返されたデータを接続する、[データ ソース構成ウィザード](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)選択**サービス**上、 **のデータソースの種類を選択**ページ。  
   
- ウィザードの完了したら、サービス参照をプロジェクトに追加されですぐに使用できるは、[データ ソース ウィンドウ](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)します。  
+ ウィザードの完了したら、サービス参照をプロジェクトに追加されですぐに使用できるは、[データ ソース ウィンドウ](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)します。  
   
 > [!NOTE]
 > **[データ ソース]** ウィンドウに表示される項目は、サービスから返される情報に応じて異なります。 サービスによっては、**データ ソース構成ウィザード**でバインドできるオブジェクトを作成するための十分な情報を提供しないものもあります。 たとえば、サービスには、データセットが返された場合その項目に表示できません、**データ ソース ウィンドウ**ウィザードを完了するとします。 これは、ウィザードには、データ ソースを作成するのに十分な情報がないため、型指定されていないデータセットがスキーマで提供されないためにです。  

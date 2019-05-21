@@ -17,12 +17,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 485f4810f748af707cebba5c50c34144f78371ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6e5b52e74eac3e9301ebb10d91c560929b1ef313
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102955"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688030"
 ---
 # <a name="using-the-visual-studio-development-environment-for-c"></a>C 用 Visual Studio 開発環境の使用\#
 
@@ -36,13 +36,13 @@ Visual Studio 統合開発環境 (IDE) は、共通のユーザー インター�
 |-----------|-----------------|
 |[チュートリアル: シンプルなアプリケーションの作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Visual Studio に含まれているアプリケーション開発の多くの機能およびツールについて紹介します。|
 |[ソリューションとプロジェクトの作成](../ide/creating-solutions-and-projects.md)|ソース コード ファイル、アイコンなどのリソース ファイル、外部ファイルへの参照、コンパイラの設定などの構成データをすべて含むプロジェクトの作成方法について説明します。|
-|[プロジェクト デザイナーの概要](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)|プロジェクトのプロパティ、設定、およびリソースを管理する中心の場所として機能する、プロジェクト デザイナーの概要について説明します。|
+|[プロジェクト デザイナーの概要](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)|プロジェクトのプロパティ、設定、およびリソースを管理する中心の場所として機能する、プロジェクト デザイナーの概要について説明します。|
 |[コードの作成](../ide/writing-code-in-the-code-and-text-editor.md)|テキスト、コード、およびマークアップの変更と操作、コントロールなどのオブジェクトや名前空間の挿入と構成、外部コンポーネントおよびリソースへの参照の追加などの作業を支援する Visual Studio のツールについて説明します。|
 |[Visual C# の IntelliSense](../ide/visual-csharp-intellisense.md)|自動コード生成や、最も頻繁に使用されるメンバーのための IntelliSense など、Visual C# 固有の機能について説明するリンクを示します。|
 |[Visual C# のコード スニペット](../ide/visual-csharp-code-snippets.md)|一般的なコード コンストラクターを自動的にアプリケーションに追加する、Visual C# のコード スニペットの概要について説明します。|
 |[コードの作成](../ide/writing-code-in-the-code-and-text-editor.md)|コードの行を特定するために、[検索と置換] ウィンドウ、ブックマーク、タスク一覧、およびエラー一覧を使用する手順へのリンクを示します。|
 |[コードの構造の表示](../ide/viewing-the-structure-of-code.md)|クラス、クラス メンバー、およびリソースの階層を参照する方法について説明します。|
-|[方法: C# プロジェクトに、アプリケーション構成ファイルを追加します。](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|C# プロジェクトに構成ファイル (app.config) を追加する方法について説明します。|
+|[方法: C# プロジェクトにアプリケーション構成ファイルを追加する](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|C# プロジェクトに構成ファイル (app.config) を追加する方法について説明します。|
 |[ソースとしてのメタデータ](../csharp-ide/metadata-as-source.md)|IDE でメタデータをソース コードとして表示する方法を説明します。|
 |[リファクタリング (C#)](../csharp-ide/refactoring-csharp.md)|アプリケーションの動作を変更することなくコードを変更できる、リファクタリング操作の一覧があります。|
 |[コードのコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)|Visual Studio ソリューションのデバッグ ビルド、リリース ビルド、および特別なビルドを構成する方法について説明します。|
@@ -51,6 +51,6 @@ Visual Studio 統合開発環境 (IDE) は、共通のユーザー インター�
 
 ## <a name="see-also"></a>関連項目
 
-- [C#](http://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
-- [C# の概要](http://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)
-- [C# リファレンス](http://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)
+- [C#](https://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
+- [C# の概要](https://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)
+- [C# リファレンス](https://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)

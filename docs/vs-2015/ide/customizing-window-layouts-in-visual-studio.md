@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb97c86176dd29278f64ab467557e663ee9e6d2e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84967c8aeb5319d748ff42d051f0f63dad1d9b12
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437553"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701267"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Visual Studio のウィンドウ レイアウトをカスタマイズする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Visual Studio では、さまざまな開発ワークフローに最も適した
   ツール ウィンドウとドキュメント ウィンドウは、ドラッグ、 **[ウィンドウ]** メニューのコマンドの使用、および配置するウィンドウのタイトル バーの右クリックによって配置できます。
 
 > [!NOTE]
-> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
+> 次の手順で参照している Visual Studio ユーザー インターフェイス要素の一部は、お使いのコンピューターでは名前や場所が異なる場合があります。 これらの要素は、使用している Visual Studio のエディションや独自の設定によって決まります。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
 
 ### <a name="docking-windows"></a>ウィンドウのドッキング
  ツール ウィンドウのタイトル バーまたはドキュメント ウィンドウのタブをクリックしてドラッグすると、ガイド用のひし形が表示されます。 ドラッグ操作中にマウス カーソルが、ひし形の矢印のいずれかの上にくると、網かけされた部分が表示されます。これは、この時にマウスのボタンを離すと、ウィンドウがドッキングされるを示しています。
@@ -182,4 +182,4 @@ Visual Studio では、さまざまな開発ワークフローに最も適した
 |[ウィンドウの種類](../misc/kinds-of-windows.md)|IDE の各種ツール ウィンドウおよびドキュメント ウィンドウの違いについて説明します。|
 |[方法: ウィンドウを整列およびドッキングする](../misc/how-to-arrange-and-dock-windows.md)|ウィンドウをドッキングする方法、自動的に非表示にする方法、並べて表示する方法、およびウィンドウ レイアウトをリセットする方法について説明します。|
 |[方法: IDE 内で移動する](../ide/how-to-move-around-in-the-visual-studio-ide.md)|IDE 内で開いているウィンドウ間を使用順に移動する方法について説明します。 特定のドキュメントに移動する方法についても説明します。|
-|[Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|設定の組み合わせの概要と、これらの設定が IDE のウィンドウ レイアウト、ショートカット キー、およびその他の要素に与える影響について説明します。|
+|[Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|設定の組み合わせの概要と、これらの設定が IDE のウィンドウ レイアウト、ショートカット キー、およびその他の要素に与える影響について説明します。|

@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7294a0a835b4797424d1f736405a0488db28587
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 610d371fe288a6582cdf9e6460c339347f60c81a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070187"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680845"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl ファイル
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -549,6 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  コネクタ マップにはデコレータ マップを含めることもできます。  
   
 ## <a name="see-also"></a>関連項目  
- [ドメイン固有言語ツールの用語集](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)   
  [モデル、クラス、およびリレーションシップについて](../modeling/understanding-models-classes-and-relationships.md)

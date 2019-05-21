@@ -33,17 +33,17 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68f2b400cc92673131dea2fc281b830df86019f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443866"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704380"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio での Windows Communication Foundation サービスと WCF データ サービス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio には、Windows Communication Foundation (WCF) を操作するためのツールが用意されていて、 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]、分散アプリケーションを作成するための Microsoft テクノロジです。 このトピックではサービスからの概要、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]パースペクティブ。 完全なドキュメントについては、次を参照してください。 [WCF データ サービスの 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)します。
+Visual Studio には、Windows Communication Foundation (WCF) を操作するためのツールが用意されていて、 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]、分散アプリケーションを作成するための Microsoft テクノロジです。 このトピックではサービスからの概要、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]パースペクティブ。 完全なドキュメントについては、次を参照してください。 [WCF データ サービスの 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)します。
 
 ## <a name="what-is-wcf"></a>WCF とは何ですか。
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] セキュリティで保護された、信頼性が高く、トランザクション、および相互運用可能な分散アプリケーションを作成するための統一されたフレームワークです。 ASMX Web サービス、.NET リモート処理、エンタープライズ サービス (DCOM)、および MSMQ などの以前のプロセス間通信テクノロジを置き換えます。 WCF は、統一されたプログラミング モデルでこれらすべてのテクノロジの機能です。 これは、分散アプリケーションの開発のエクスペリエンスを簡略化します。
@@ -92,21 +92,21 @@ Visual Studio には、Windows Communication Foundation (WCF) を操作するた
 
  テンプレートを選択すると、サービス コントラクト、サービス実装、およびサービス構成ファイルが追加されます。 必要なすべての属性が既に追加、サービスの単純な"Hello World"型を作成して、コードを記述するがありませんでした。 関数と実際のサービスのメソッドを提供するコードを追加することは、もちろんが、テンプレートは、基本的な基盤を提供します。
 
- WCF テンプレートの詳細については、次を参照してください。 [WCF Visual Studio テンプレート](http://msdn.microsoft.com/library/6a608575-3535-4190-89da-911e24c8374f)します。
+ WCF テンプレートの詳細については、次を参照してください。 [WCF Visual Studio テンプレート](https://msdn.microsoft.com/library/6a608575-3535-4190-89da-911e24c8374f)します。
 
 #### <a name="wcf-service-host"></a>WCF サービス ホスト
  開始すると、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (f5 キーを押して) デバッガーの WCF サービス プロジェクトでは、WCF サービス ホストをローカルでサービスをホストするツールが自動的に起動します。 WCF サービス ホストは、WCF サービス プロジェクト内のサービスを列挙、プロジェクトの構成をロードおよび、検出された各サービスのホストをインスタンス化します。
 
  WCF サービス ホストを使用すると、余分なコードを記述したり開発時に特定のホストにコミットすることがなく、WCF サービスをテストできます。
 
- WCF サービス ホストの詳細については、次を参照してください。 [WCF サービス ホスト (WcfSvcHost.exe)](http://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e)します。
+ WCF サービス ホストの詳細については、次を参照してください。 [WCF サービス ホスト (WcfSvcHost.exe)](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e)します。
 
 #### <a name="wcf-test-client"></a>WCF のテスト用クライアント
  WCF テスト クライアント ツールでは、テスト パラメーターを入力し、その WCF サービスに入力することができ、サービスが返送する応答を表示します。 WCF サービス ホストと組み合わせて使用すると、テストできる便利なサービスを提供します。 \Common7\IDE フォルダーは、Visual Studio 2015 は、ここでは、c: ドライブにインストールされているツールはあります。**C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\\**.
 
  WCF サービス プロジェクトをデバッグする f5 キーを押すと、WCF テスト クライアントが開き、構成ファイルで定義されているサービス エンドポイントの一覧を表示します。 パラメーターをテスト サービスを開始し、継続的にテストして、サービスを検証するには、このプロセスを繰り返します。
 
- WCF テスト クライアントの詳細については、次を参照してください。 [WCF テスト クライアント (WcfTestClient.exe)](http://msdn.microsoft.com/library/d4302855-677f-4640-aa90-c5d785d72fb7)します。
+ WCF テスト クライアントの詳細については、次を参照してください。 [WCF テスト クライアント (WcfTestClient.exe)](https://msdn.microsoft.com/library/d4302855-677f-4640-aa90-c5d785d72fb7)します。
 
 ### <a name="accessing-wcf-services-in-visual-studio"></a>Visual Studio での WCF サービスへのアクセス
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロキシとサービスを使用して、追加のエンドポイントを自動的に生成する、WCF クライアントを作成するタスクを簡略化、**サービス参照の追加** ダイアログ ボックス。 すべての必要な構成情報は、app.config ファイルに追加されます。 ほとんど、時間のそれを使用するためにサービスをインスタンス行う必要があることができます。
@@ -236,12 +236,12 @@ Visual Studio には、Windows Communication Foundation (WCF) を操作するた
 |-----------|-----------------|
 |[チュートリアル: Windows フォームでの簡単な WCF サービスの作成](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|ステップ バイ ステップの作成と使用の WCF サービスのデモンストレーションを行います[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。|
 |[チュートリアル: WPF と Entity Framework を使用した WCF データ サービスの作成](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|作成して使用する方法の詳細なデモンストレーションを行います[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]で[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。|
-|[WCF 開発ツールの使用](http://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|作成して WCF サービスをテストする方法について説明します[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。|
-|[方法: 追加、更新、またはサービス参照の削除](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|追加、更新、またはプロジェクトから WCF サービスを削除する方法について説明します。|
+|[WCF 開発ツールの使用](https://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|作成して WCF サービスをテストする方法について説明します[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。|
+|[方法: 追加、更新、またはサービス参照の削除](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|追加、更新、またはプロジェクトから WCF サービスを削除する方法について説明します。|
 |[方法: WCF データ サービス参照を追加、更新、または削除する](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|参照および使用する方法について説明します[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]で[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。|
 |[サービス参照のトラブルシューティング](../data-tools/troubleshooting-service-references.md)|サービス参照とその回避方法で発生することがいくつかの一般的なエラーを表示します。|
 |[WCF サービスのデバッグ](../debugger/debugging-wcf-services.md)|一般的な問題のデバッグと WCF サービスのデバッグ時に発生する手法について説明します。|
-|[Windows Communication Foundation 認証サービスの概要](http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|WCF を使用して Web サイトの役割サービスを提供する方法について説明します。|
+|[Windows Communication Foundation 認証サービスの概要](https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|WCF を使用して Web サイトの役割サービスを提供する方法について説明します。|
 |[チュートリアル: n 層データ アプリケーションの作成](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|型指定されたデータセットを作成し、TableAdapter とデータセット コードを複数のプロジェクトに分離する手順について説明します。|
 |[[サービス参照の構成] ダイアログ ボックス](../data-tools/configure-service-reference-dialog-box.md)|ユーザー インターフェイス要素について説明します、**サービス参照の構成** ダイアログ ボックス。|
 

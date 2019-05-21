@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1f74502472a72416d33bcf48e473977d694e545f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428210"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695118"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>チュートリアル: 作成して、Windows ストア アプリの単体テストの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Visual Studio には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-lo
     > [!NOTE]
     > 選択する機能には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] の単体テストが正しく機能するために必要な機能だけが含まれる必要があります。 機能は、テスト中の [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションの一部ではない機能を含む必要はなく、一般に、テスト対象の [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションに指定された機能のサブセットです。  
   
-     マニフェスト デザイナーの詳細については、「[マニフェスト デザイナーを使用した Windows 8.1 アプリ パッケージの構成](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d)」を参照してください。  
+     マニフェスト デザイナーの詳細については、「[マニフェスト デザイナーを使用した Windows 8.1 アプリ パッケージの構成](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d)」を参照してください。  
   
      ![単体テスト マニフェスト](../test/media/unit-test-win8.png "Unit_Test_Win8_")  
   
@@ -149,4 +149,4 @@ Visual Studio には、 [!INCLUDE[win8_appname_long](../includes/win8-appname-lo
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio でのストア アプリのテスト](../test/testing-store-apps-with-visual-studio.md)   
- [Team Foundation ビルドを使用した Windows ストア アプリのビルドとテスト](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
+ [Team Foundation ビルドを使用した Windows ストア アプリのビルドとテスト](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

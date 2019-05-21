@@ -14,12 +14,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25ffe4f9280dfbb0b3146ebf8b3dd7b62e908814
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 039b6722ca064c64c0e0b7f7757070852e908395
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441430"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703912"
 ---
 # <a name="debug-page-project-designer"></a>[デバッグ] ページ (プロジェクト デザイナー)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,10 +35,10 @@ ms.locfileid: "63441430"
  次のオプションを使用すると、表示または変更する構成およびプラットフォームを選択できます。  
   
  **構成**  
- 表示または変更する構成設定を指定します。 設定は、**[デバッグ]** (既定)、**[リリース]**、または **[すべての構成]** のいずれかになります。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
+ 表示または変更する構成設定を指定します。 設定は、**[デバッグ]** (既定)、**[リリース]**、または **[すべての構成]** のいずれかになります。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
   
  **プラットフォーム**  
- 表示または変更するプラットフォーム設定を指定します。 **[Any CPU]** (既定)、**[x64]**、および **[x86]** から選択できます。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
+ 表示または変更するプラットフォーム設定を指定します。 **[Any CPU]** (既定)、**[x64]**、および **[x86]** から選択できます。 詳細については、「[デバッグ構成およびリリース プロジェクト構成](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。  
   
 ## <a name="start-action"></a>[開始動作]  
  **[開始動作]** は、アプリケーションをデバッグするときに開始するアイテムを示します。プロジェクト、カスタム プログラム、URL のいずれかを指定できます。また、省略することもできます。 既定では、このオプションは **[プロジェクトの開始]** に設定されます。 **[デバッグ]** ページの **[開始動作]** 設定で、`StartAction` プロパティの値が決まります。  
@@ -78,6 +78,6 @@ ms.locfileid: "63441430"
  [Visual Studio でのデバッグ](../../debugger/debugging-in-visual-studio.md)   
  [C# デバッグ構成のプロジェクト設定](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic デバッグ構成のプロジェクト設定](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [デバッグ プロパティの管理](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [デバッグ プロパティの管理](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
  [方法: 制限されたアクセス許可を使用して ClickOnce アプリケーションをデバッグします。](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [方法: 構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)

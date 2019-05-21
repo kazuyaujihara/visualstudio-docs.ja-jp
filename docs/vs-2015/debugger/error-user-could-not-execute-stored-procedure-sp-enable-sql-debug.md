@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f463aca03cd0e869f4028f8e086c623295fd2f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 759386728283d3d39219133e53668afe3259714a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977879"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697673"
 ---
 # <a name="error-user-could-not-execute-stored-procedure-spenablesqldebug"></a>エラー :ユーザーがストアド プロシージャ sp_enable_sql_debug を実行できませんでした
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,8 +32,8 @@ ms.locfileid: "58977879"
   
 - サーバーで必要な権限の不足。 SQL Server 2005 でデバッグするには、Visual Studio を実行するアカウントと SQL Server に接続するために使用するアカウントの両方が sysadmin ロールのメンバーであることが必要です。 SQL Server に接続するために使用するアカウントは、使用している Windows ユーザー アカウント (Windows 認証を使用している場合) またはユーザー ID とパスワードが設定されたアカウント (SQL 認証を使用している場合) です。  
   
-  詳細については、「[方法 :デバッグ用の SQL Server のアクセス許可の設定](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)します。  
+  詳細については、「[方法 :デバッグ用の SQL Server のアクセス許可の設定](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)します。  
   
 ## <a name="see-also"></a>関連項目  
- [方法: デバッグ用の SQL Server のアクセス許可を設定します。](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
- [SQL デバッグの設定](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)
+ [方法: デバッグ用の SQL Server のアクセス許可を設定します。](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [SQL デバッグの設定](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)

@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7a3d731939f7497faa9c767e02e404c5ac75518
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: fb9ed333a5e7719b98a3030ba398ad06208781c6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405913"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682152"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>方法: キーボード主体で操作する
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63405913"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] で提供されているさまざまな既定のショートカット キーの組み合わせを使うと、統合開発環境 (IDE) 内で移動やコーディングを簡単に行うことができます。 Visual Studio で使われるすべてのショートカット キーの一覧については、「[既定のキーボード ショートカット](../../ide/default-keyboard-shortcuts-in-visual-studio.md)」をご覧ください。 他の Microsoft 製品で利用できるキーボード ショートカットについては、[http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400) をご覧ください。  
   
 > [!NOTE]
-> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
+> 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。  
   
 ## <a name="toolbox-controls"></a>ツールボックス コントロール  
  キーボードを使って、ツールボックスのコントロールをフォームまたはデザイナーに追加できます。  

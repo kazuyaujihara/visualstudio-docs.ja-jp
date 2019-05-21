@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f4dbafb4c6f7ad590244842ac3def0e26f8a14fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dfa50fc6007c2313191b430e9ed5445e7fd72a88
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797068"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841565"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802:適切な場所にリテラルを使用します
 
@@ -59,7 +59,7 @@ ms.locfileid: "62797068"
 
 この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
 
-```
+```ini
 dotnet_code_quality.ca1802.api_surface = private, internal
 ```
 

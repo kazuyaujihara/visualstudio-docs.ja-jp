@@ -48,7 +48,7 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
  追跡コンテキストが作成された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。
 
 ## <a name="requirements"></a>要件
- **ヘッダー:***FileTracker.h*
+ **ヘッダー:**  *FileTracker.h*
 
 ## <a name="see-also"></a>関連項目
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

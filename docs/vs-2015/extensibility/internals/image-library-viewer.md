@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 97d634f97eb7a13cfa54b2c0d326b19f31fb7d9d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062605"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685539"
 ---
 # <a name="image-library-viewer"></a>イメージ ライブラリ ビューア
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Visual Studio Image Library ビューアー ツールは、読み込みおよび
 |-|-|  
 |**サブ要素**|**定義**|  
 |インポート|現在のマニフェストで使用するための指定されたマニフェスト ファイルのシンボルをインポートします。|  
-|Guid|シンボルは、GUID を表し、GUID の書式設定と一致する必要があります。|  
+|GUID|シンボルは、GUID を表し、GUID の書式設定と一致する必要があります。|  
 |ID|シンボルは、ID を表し、負でない整数でなければなりません。|  
 |String|シンボルは、任意の文字列値を表します。|  
   
@@ -130,7 +130,7 @@ Visual Studio Image Library ビューアー ツールは、読み込みおよび
 |||  
 |-|-|  
 |**属性**|**定義**|  
-|URI|[必須]イメージを読み込むことを定義する URI。 次のいずれかを指定できます。<br /><br /> は、 [Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)アプリケーションを使用して:///オーソリティ<br /><br /> -絶対コンポーネント リソース参照<br /><br /> -ネイティブ リソースを含むファイルへのパス|  
+|URI|[必須]イメージを読み込むことを定義する URI。 次のいずれかを指定できます。<br /><br /> は、 [Pack URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx)アプリケーションを使用して:///オーソリティ<br /><br /> -絶対コンポーネント リソース参照<br /><br /> -ネイティブ リソースを含むファイルへのパス|  
 |背景|[省略可能]背景が使用するものでは、ソースの種類にどのようなことを示します。<br /><br /> 次のいずれかを指定できます。<br /><br /> - *Light*:ソースは、明るい背景で使用できます。<br /><br /> - *濃い*:ソースは、暗い背景で使用できます。<br /><br /> - *ハイコントラスト*:ソースは、ハイ コントラスト モードで、色の背景で使用できます。<br /><br /> - *HighContrastLight*:ソースは、ハイ コントラスト モードで明るい背景で使用できます。<br /><br /> -*HighContrastDark*:ソースは、ハイ コントラスト モードで暗い背景で使用できます。<br /><br /> 場合、**バック グラウンド**属性を省略すると、ソースは、任意の背景で使用できます。<br /><br /> 場合**バック グラウンド**は*Light*、*濃い*、 *HighContrastLight*、または*HighContrastDark*、ソースの色を反転ことはありません。 場合**バック グラウンド**を省略するかに設定*ハイコントラスト*、ソースの色の反転は、イメージのによって制御される**AllowColorInversion**属性。|  
   
  A\<ソース > 要素は省略可能な次のサブ要素の 1 つだけであることができます。  

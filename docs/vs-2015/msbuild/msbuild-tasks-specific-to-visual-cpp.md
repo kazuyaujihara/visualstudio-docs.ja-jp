@@ -16,17 +16,17 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f4de01af6535a33607e5263966492210f8ce4a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 452c3b408ab6471963124e61bc803e99eb6be80d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647960"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686904"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Visual C++ に固有の MSBuild タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-タスクでは、ビルド プロセスの間に実行するコードを指定します。 Visual C++ をインストールすると、次のタスクは [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] にインストールされたタスク以外に使用できます。 詳細については、「[MSBuild (Visual C++) の概要](http://msdn.microsoft.com/library/dd258f6f-ab51-48d9-b274-f7ba911d05ca)」を参照してください。  
+タスクでは、ビルド プロセスの間に実行するコードを指定します。 Visual C++ をインストールすると、次のタスクは [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] にインストールされたタスク以外に使用できます。 詳細については、「[MSBuild (Visual C++) の概要](https://msdn.microsoft.com/library/dd258f6f-ab51-48d9-b274-f7ba911d05ca)」を参照してください。  
   
  タスクごとのパラメーターのほか、すべてのタスクに以下のパラメーターがあります。  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb0fb1e1270e2e881b885873cf202cdf38106a05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bc934afd9289a6bce425084f3588a7e912baf9b9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974888"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681191"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215:Dispose メソッドが基底クラスの Dispose を呼び出す必要があります
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,4 +56,4 @@ ms.locfileid: "58974888"
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableBaseCalled/vb/FxCop.Usage.IDisposableBaseCalled.vb#1)]
 
 ## <a name="see-also"></a>関連項目
- <xref:System.IDisposable?displayProperty=fullName> [Dispose パターン](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ <xref:System.IDisposable?displayProperty=fullName> [Dispose パターン](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

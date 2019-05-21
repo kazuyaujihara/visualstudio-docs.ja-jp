@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff4cc9501552b0a482e93aa1917a175680d6d78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f0b7edf8ef2670b70dbee25b70cac7b0597490b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901759"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676372"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでのダンプ ファイル
 
@@ -74,7 +74,7 @@ Visual Studio でのプロセスをデバッグするときに、例外または
 1. パスを参照し、ダンプ ファイルの名前を選択し、**保存**します。
 
 >[!NOTE]
->Windows ミニダンプ形式をサポートする任意のプログラムでは、ダンプ ファイルを作成できます。 たとえば、[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) の **Procdump** コマンド ライン ユーティリティでは、トリガーまたは必要に応じてプロセスのクラッシュ ダンプ ファイルを作成できます。 参照してください[要件と制限事項](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)については、その他のツールを使用して、ダンプ ファイルを作成する方法。
+>Windows ミニダンプ形式をサポートする任意のプログラムでは、ダンプ ファイルを作成できます。 たとえば、[Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) の **Procdump** コマンド ライン ユーティリティでは、トリガーまたは必要に応じてプロセスのクラッシュ ダンプ ファイルを作成できます。 参照してください[要件と制限事項](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)については、その他のツールを使用して、ダンプ ファイルを作成する方法。
 
 ## <a name="BKMK_Open_a_dump_file"></a> ダンプ ファイルを開く
 

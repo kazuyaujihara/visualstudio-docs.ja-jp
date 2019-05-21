@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: facbbf5903d683ea3a13bdd875dfe2b6c63b6367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
+ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786406"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64850749"
 ---
 # <a name="import-or-export-installation-configurations"></a>インストール構成をインポートまたはエクスポートする
 
@@ -48,7 +48,7 @@ ms.locfileid: "62786406"
 
    ![Visual Studio インストーラーの製品カードから構成をエクスポートする](../install/media/vs-2019/vs-installer-export-config.png)
 
-1. .vconfig ファイルを保存する場所を参照するか入力して、**[詳細の確認]** を選択します。
+1. .vsconfig ファイルを保存する場所を参照するか入力して、**[詳細の確認]** を選択します。
 
    ![Visual Studio インストーラーから構成をエクスポートする](../install/media/vs-2019/export-configuration-confirmation.png)
 
@@ -62,7 +62,7 @@ ms.locfileid: "62786406"
 
 1. 製品カードで **[その他]** ボタンを選択し、**[構成のインポート]** を選択します。
 
-1. インポートする .vconfig ファイルを見つけて、**[詳細の確認]** を選択します。
+1. インポートする .vsconfig ファイルを見つけて、**[詳細の確認]** を選択します。
 
 1. 必要なワークロードとコンポーネントがあることを確認してから、**[閉じる]** を選択します。
 

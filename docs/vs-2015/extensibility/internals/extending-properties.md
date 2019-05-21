@@ -10,19 +10,19 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59afc6a95e327460602ece8db58f075b483d0e09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5d2e7d15f7b479941c3186d8cd694c92f762bbf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538299"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690988"
 ---
 # <a name="extending-properties"></a>プロパティの拡張
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **プロパティ**ウィンドウはすべてサポートしています、COM と COM + コンポーネントのユニバーサル プロパティ ブラウザーを[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]製品です。 **プロパティ**ウィンドウは`ITypeInfo`情報および COM + 統合開発環境 (IDE) でその他のウィンドウで現在選択されているオブジェクトのデザイン時プロパティの一覧にメタデータを入力します。  
   
- **プロパティ**ウィンドウでは、キーボード、f4 キーを押すか、選択して開くことができますが、**プロパティ ウィンドウ**上、**ビュー**を表示および編集 メニューを使用構成に依存しない、デザイン時のプロパティと選択したオブジェクトのイベント。 ソリューションやプロジェクトの関連付けの構成に依存するプロパティに表示される[プロパティ ページ](../../extensibility/internals/property-pages.md)します。 詳細については、次を参照してください。 [NIB: プロジェクト プロパティ](http://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)、[構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)、および[プロジェクトにおける NIB: 項目の管理](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)します。  
+ **プロパティ**ウィンドウでは、キーボード、f4 キーを押すか、選択して開くことができますが、**プロパティ ウィンドウ**上、**ビュー**を表示および編集 メニューを使用構成に依存しない、デザイン時のプロパティと選択したオブジェクトのイベント。 ソリューションやプロジェクトの関連付けの構成に依存するプロパティに表示される[プロパティ ページ](../../extensibility/internals/property-pages.md)します。 詳細については、次を参照してください。 [NIB: プロジェクト プロパティ](https://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)、[構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)、および[プロジェクトにおける NIB: 項目の管理](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)します。  
   
  ![プロパティ ウィンドウの概要](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 [プロパティ] ウィンドウ  
@@ -70,19 +70,19 @@ ms.locfileid: "62538299"
  [コードのコンパイルとビルド](../../ide/compiling-and-building-in-visual-studio.md)  
  使用する方法について説明します、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]継続的にテストし、アプリケーションを作成、アプリケーションをデバッグするためのプラットフォームです。  
   
- [HTML ドキュメントのプロパティと [プロパティ] ウィンドウ](http://msdn.microsoft.com/library/46e3d164-a1a7-42f9-87b0-344e10a37b62)  
+ [HTML ドキュメントのプロパティと [プロパティ] ウィンドウ](https://msdn.microsoft.com/library/46e3d164-a1a7-42f9-87b0-344e10a37b62)  
  [プロパティ] ウィンドウから直接 HTML ドキュメントを編集する方法について説明し、[プロパティ] ウィンドウで、HTML ドキュメント内のフィールドの一覧表を提供します。  
   
- [IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
+ [IDispatch](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
  について説明します、 `IDispatch` 、最初にアクセスして、メソッドとオブジェクトのプロパティに関する情報を取得する遅延バインディング メカニズムを提供するオートメーションをサポートするために設計されたインターフェイスです。  
   
- [NIB:動的プロパティ (Visual Studio) の概要](http://msdn.microsoft.com/f5102027-1431-4195-ae40-9b991de46d3a)  
+ [NIB:動的プロパティ (Visual Studio) の概要](https://msdn.microsoft.com/f5102027-1431-4195-ae40-9b991de46d3a)  
  アプリケーションのコンパイル済みコードではなく、外部構成ファイルでプロパティ値が格納されているように、アプリケーションを構成できる動的プロパティの概要を示します。  
   
- [NIB: プロジェクトのコンテナーとして](http://msdn.microsoft.com/87d40f63-f487-4767-8963-64beec27ba1b)  
+ [NIB: プロジェクトのコンテナーとして](https://msdn.microsoft.com/87d40f63-f487-4767-8963-64beec27ba1b)  
  プロジェクトをソリューションに論理的に管理し、ビルド、および、デバッグ、アプリケーションを構成する項目のコンテナーとしての役割について説明します。  
   
- [NIB: プロジェクトのプロパティ](http://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
+ [NIB: プロジェクトのプロパティ](https://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
  プロジェクトがプロジェクト全体に適用されるコントロールのプロパティとも、プロジェクトの特定のビルド構成に限定されているプロパティを使用する設定を管理する方法について説明します。  
   
  [ソリューションおよびプロジェクト](../../ide/solutions-and-projects-in-visual-studio.md)  

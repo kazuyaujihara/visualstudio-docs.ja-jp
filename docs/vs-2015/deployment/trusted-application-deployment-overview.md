@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 869a756b1995a1ae5de3736fcee4ccede6cb46e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a09f32f90ffca081fb8bf405f5d661160e8d4adf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427111"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686363"
 ---
 # <a name="trusted-application-deployment-overview"></a>信頼されたアプリケーションの配置の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "63427111"
   
 - <xref:System.Security.Cryptography?displayProperty=fullName> 名前空間。  
   
-- CertMgr.exe。これは、Internet Explorer のコンポーネントであるため、Windows 98 以降の全バージョンに含まれています。 詳細については、次を参照してください。 [Certmgr.exe (証明書マネージャー ツール)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb)します。  
+- CertMgr.exe。これは、Internet Explorer のコンポーネントであるため、Windows 98 以降の全バージョンに含まれています。 詳細については、次を参照してください。 [Certmgr.exe (証明書マネージャー ツール)](https://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb)します。  
   
 ### <a name="create-a-clickonce-application"></a>ClickOnce アプリケーションを作成する  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションは、マニフェスト ファイルと組み合わされた [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] クライアント アプリケーションです。マニフェスト ファイルでは、アプリケーションについての説明を記述し、インストール パラメーターを指定します。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] の **[発行]** コマンドを使用すると、開発したプログラムを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]アプリケーションに変換できます。 または、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] に含まれているツールを使用して、 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]配置に必要なすべてのファイルを生成することもできます。 詳しい手順について[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]展開を参照してください[チュートリアル。Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」(チュートリアル: ClickOnce アプリケーションを手動で配置する) を参照してください。  
@@ -88,12 +88,12 @@ ms.locfileid: "63427111"
  信頼されたアプリケーションの配置は [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]に特有の機能であり、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションに対してのみ使用できます。  
   
 ### <a name="sign-the-deployment"></a>配置に署名する  
- 使用する証明書を取得したら、この証明書を使用して配置に署名する必要があります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の発行ウィザードを使用してアプリケーションを配置する場合は、独自に証明書を指定しなければ、ウィザードが自動的にテスト証明書を生成します。 また、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の [プロジェクト デザイナー] ウィンドウを使用して、CA から取得した証明書を指定することもできます。  参照してください[方法。発行ウィザードを使用して ClickOnce アプリケーションを発行](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\))または[方法。発行ウィザードを使用して ClickOnce アプリケーションを発行する](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\))」を参照してください。  
+ 使用する証明書を取得したら、この証明書を使用して配置に署名する必要があります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の発行ウィザードを使用してアプリケーションを配置する場合は、独自に証明書を指定しなければ、ウィザードが自動的にテスト証明書を生成します。 また、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の [プロジェクト デザイナー] ウィンドウを使用して、CA から取得した証明書を指定することもできます。  参照してください[方法。発行ウィザードを使用して ClickOnce アプリケーションを発行](https://msdn.microsoft.com/library/31kztyey\(v=vs.110\))または[方法。発行ウィザードを使用して ClickOnce アプリケーションを発行する](https://msdn.microsoft.com/library/31kztyey\(v=vs.110\))」を参照してください。  
   
 > [!CAUTION]
 > テスト証明書を使用してアプリケーションを配置することはお勧めできません。  
   
- また、SDK の Mage.exe ツールまたは MageUI.exe ツールを使用してアプリケーションに署名することもできます。 詳細については、「[チュートリアル:Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」(チュートリアル: ClickOnce アプリケーションを手動で配置する) を参照してください。 配置への署名に関連するコマンド ライン オプションの完全な一覧は、次を参照してください。 [Mage.exe (マニフェスト生成および編集ツール)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)します。  
+ また、SDK の Mage.exe ツールまたは MageUI.exe ツールを使用してアプリケーションに署名することもできます。 詳細については、「[チュートリアル:Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」(チュートリアル: ClickOnce アプリケーションを手動で配置する) を参照してください。 配置への署名に関連するコマンド ライン オプションの完全な一覧は、次を参照してください。 [Mage.exe (マニフェスト生成および編集ツール)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)します。  
   
 ### <a name="publish-the-application"></a>アプリケーションを発行する  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] マニフェストに署名した後は、すぐにアプリケーションをインストール場所に発行できます。 インストール場所には、Web サーバー、ファイル共有、またはローカル ディスクを使用できます。 信頼マネージャーは、クライアントが配置マニフェストに初めてアクセスした時点で、インストール済みの信頼された発行元を参照して、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションの実行時に高いレベルの権限を与えるかどうかを判断する必要があります。 信頼マネージャーは、配置に署名する際に使用された証明書と、クライアントの信頼された発行元ストアに格納されている証明書とを比較することによって、この判断をします。 信頼マネージャーが一致する証明書を検出した場合は、アプリケーションの実行時に高い信頼が与えられます。  
@@ -105,5 +105,5 @@ ms.locfileid: "63427111"
  信頼されたアプリケーションの配置は、Web 経由または会社のファイル共有から配置される [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションに昇格された信頼を与えるために使用できます。 CD で配布される [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションには既定で完全信頼が付与されるため、信頼されたアプリケーションの配置を使用する必要はありません。  
   
 ## <a name="see-also"></a>関連項目  
- [Mage.exe (マニフェストの生成および編集ツール)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [Mage.exe (マニフェストの生成および編集ツール)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

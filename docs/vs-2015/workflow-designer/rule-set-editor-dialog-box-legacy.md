@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438884"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703192"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>[ルール セット エディター] ダイアログ ボックス (レガシ)
 このトピックで説明する方法を使用して、**ルール セット エディター**  ダイアログ ボックスで、従来の[!INCLUDE[wfd1](../includes/wfd1-md.md)]します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。  
@@ -76,7 +76,7 @@ ms.locfileid: "63438884"
   
   式演算子の優先順位は、C# 演算子の優先順位規則に従います。  
   
-  条件の詳細については、次を参照してください。[ワークフロー内の条件を使用して](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77)します。  
+  条件の詳細については、次を参照してください。[ワークフロー内の条件を使用して](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77)します。  
   
 ### <a name="halt-and-update-functions"></a>Halt 関数と Update 関数  
  **Then アクション:** と**Else アクション:** 式をサポートする**Halt**と**Update**関数。 使用する、 **Halt**関数、入力**Halt**に、 **Then アクション:** または**Else アクション:** テキスト ボックス。 **Halt**操作によって、ルール セットの実行をすぐに停止して、呼び出し元のコードに制御が戻ります。 使用する、 **Update**フォワード チェーンを持つ関数です。  

@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4985196feb8c2ddd5996c51210e39f9e503e953f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412303"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675165"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 </asp:ScriptManager>
 ```
 
- IntelliSense では、ASP.NET AJAX Web アプリケーションのアセンブリ内にリソースとして埋め込まれるスクリプト ファイルもサポートされます。 埋め込みスクリプト リソースの詳細については、「[Walkthrough: Embedding a JavaScript File as a Resource in an Assembly (チュートリアル: アセンブリ内のリソースとしての JavaScript ファイルの埋め込み)](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)」を参照してください。
+ IntelliSense では、ASP.NET AJAX Web アプリケーションのアセンブリ内にリソースとして埋め込まれるスクリプト ファイルもサポートされます。 埋め込みスクリプト リソースの詳細については、「[Walkthrough: Embedding a JavaScript File as a Resource in an Assembly (チュートリアル: アセンブリ内のリソースとしての JavaScript ファイルの埋め込み)](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)」を参照してください。
 
 #### <a name="ReferenceDirectives"></a> 参照ディレクティブ
  `reference` ディレクティブを使用すると、現在編集中のスクリプトとその他のスクリプトとの間の関係を [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] で確立できます。 `reference` ディレクティブにより、現在のスクリプト ファイル内のスクリプトのコンテキストにスクリプト ファイルを含めることができます。 これにより、コードの入力時に、外部で定義されている関数、型、およびフィールドを IntelliSense で参照できます。
@@ -284,5 +284,5 @@ IntelliSense ではコード入力中に情報が表示されるため、コー�
 - [識別子の入力候補](../ide/statement-completion-for-identifiers.md)
 - [XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)
 - [DHTML オブジェクト モデルについて](http://go.microsoft.com/fwlink/?LinkID=92344)
-- [リスト メンバー](http://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [リスト メンバー](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [SRC 属性 &#124; src プロパティ](http://go.microsoft.com/fwlink/?LinkId=92345)

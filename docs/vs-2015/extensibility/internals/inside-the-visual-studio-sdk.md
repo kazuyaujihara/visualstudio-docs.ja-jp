@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3c6c7bb6d149281048d281cb7af13fe51d75ffd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3bdc65a145b64071087d72fce9967c67cc2f8426
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443898"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687531"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK の内部
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Visual Studio のアーキテクチャの汎用化されたビュー
  テンプレートには、プロジェクトの構造および特定の種類のアプリケーション、コントロール、ライブラリ、またはクラスを構築するために必要な基本的なファイルが含まれます。 テンプレートのいずれかのようなソフトウェアを開発する場合は、テンプレートに基づいているプロジェクトを作成し、そのプロジェクト内のファイルを変更します。  
   
 > [!NOTE]
-> このテンプレートのアーキテクチャはサポートされていません[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]プロジェクト。 作成する方法については[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]プロジェクト テンプレートを参照してください[ウィザードのデザイン](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b)します。  
+> このテンプレートのアーキテクチャはサポートされていません[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]プロジェクト。 作成する方法については[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]プロジェクト テンプレートを参照してください[ウィザードのデザイン](https://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b)します。  
   
  詳細については、次を参照してください。[プロジェクトに追加するとプロジェクト項目テンプレート](../../extensibility/internals/adding-project-and-project-item-templates.md)します。  
   

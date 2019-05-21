@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e444519c5a6d6d1547b782006d063e90d4a3b976
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8df0404657b6740c27544292dc101a6030a6563f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977031"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691914"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414:ブール型の P/Invoke 引数を MarshalAs に設定します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58977031"
 ## <a name="rule-description"></a>規則の説明
  プラットフォームがメソッドへのアクセスのアンマネージ コードを呼び出すし、によって定義されている、`Declare`キーワード[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]または<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>します。 <xref:System.Runtime.InteropServices.MarshalAsAttribute> マネージ コードとアンマネージ コード間のデータ型の変換に使用されるマーシャ リング動作を指定します。 などの多くの単純なデータ型<xref:System.Byte?displayProperty=fullName>と<xref:System.Int32?displayProperty=fullName>、アンマネージ コードに 1 つの表現がある、マーシャ リング動作の仕様を必要としない、共通言語ランタイムが自動的に正しい動作を提供します。
 
- <xref:System.Boolean>データ型が、アンマネージ コードの複数の表現。 ときに、<xref:System.Runtime.InteropServices.MarshalAsAttribute>が指定されていない、既定のマーシャ リングの動作、<xref:System.Boolean>データ型は<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>します。 これは、すべての状況では、32 ビットの整数です。 アンマネージ メソッドで必要とされるブール型の表現を特定する必要がありますし、適切な一致<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>します。 UnmanagedType.Bool は、常に 4 バイトある Win32 BOOL 型です。 C++ の UnmanagedType.U1 を使用する必要があります`bool`またはその他の 1 バイトの種類。 詳細については、次を参照してください。[ブール型の既定のマーシャ リング](http://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)します。
+ <xref:System.Boolean>データ型が、アンマネージ コードの複数の表現。 ときに、<xref:System.Runtime.InteropServices.MarshalAsAttribute>が指定されていない、既定のマーシャ リングの動作、<xref:System.Boolean>データ型は<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>します。 これは、すべての状況では、32 ビットの整数です。 アンマネージ メソッドで必要とされるブール型の表現を特定する必要がありますし、適切な一致<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>します。 UnmanagedType.Bool は、常に 4 バイトある Win32 BOOL 型です。 C++ の UnmanagedType.U1 を使用する必要があります`bool`またはその他の 1 バイトの種類。 詳細については、次を参照してください。[ブール型の既定のマーシャ リング](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  このルールの違反を修正するには、次のように適用されます。<xref:System.Runtime.InteropServices.MarshalAsAttribute>を、<xref:System.Boolean>パラメーターまたは戻り値。 適切な属性の値を設定<xref:System.Runtime.InteropServices.UnmanagedType>します。
@@ -59,4 +59,4 @@ ms.locfileid: "58977031"
  [CA 2101:P/invoke 文字列引数に対してマーシャ リングを指定します。](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
 ## <a name="see-also"></a>関連項目
- <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [既定のブール型のマーシャ リング](http://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)[アンマネージ コードと相互運用](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [既定のブール型のマーシャ リング](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)[アンマネージ コードと相互運用](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

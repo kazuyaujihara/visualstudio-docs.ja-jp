@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15093cc6af6e61384c393b1c3e435df3840a2811
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416642"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686447"
 ---
 # <a name="customizing-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,7 +181,7 @@ ms.locfileid: "63416642"
  **[テスト]**、**[テストの設定]**、**[テスト設定ファイルの選択]** の順に選択し、.runsettings ファイルを選択します。 ファイルは、[テストの設定] メニューに表示され、選択したり取り消したりすることができます。 選択されている間、.runsettings ファイルは、**[コード カバレッジの分析]** を使用するたびに適用されます。  
   
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>コマンド ライン テストで実行設定をカスタマイズするには  
- コマンド ラインからテストを実行するには、vstest.console.exe を使用します。 設定ファイルは、このユーティリティのパラメーターです。 詳細については、「[コマンド ラインからの VSTest.console の使用](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a)」を参照してください。  
+ コマンド ラインからテストを実行するには、vstest.console.exe を使用します。 設定ファイルは、このユーティリティのパラメーターです。 詳細については、「[コマンド ラインからの VSTest.console の使用](https://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a)」を参照してください。  
   
 1. Visual Studio 開発者コマンド プロンプトを起動します。  
   
@@ -202,7 +202,7 @@ ms.locfileid: "63416642"
   
 3. **[プロセス]** ページで **[自動テスト]**、**[テスト ソース]**、**[実行設定]** の順に展開します。 **.runsettings** ファイルを選択します。  
   
-   - <em>しかし、**[テスト ソース]** の代わりに **[テスト アセンブリ]</em>* が表示されます。[実行設定]** フィールドを設定しようとすると、.testsettings ファイルしか選択できません。*  
+   - <em>しかし、**[テスト ソース]** の代わりに **[テスト アセンブリ]</em>* が表示されます。**[実行設定]** フィールドを設定しようとすると、.testsettings ファイルしか選択できません。*  
   
       **[自動テスト]** の下の **[テスト アセンブリ]** を選択し、行の末尾の **[...]** ボタンを選択します。 **[テストの実行の追加と編集]** ダイアログ ボックスで、**[テスト ランナー]** を **[Visual Studio テスト ランナー]** に設定します。  
   
@@ -237,7 +237,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--  
 About include/exclude lists:  
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.  
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.  
+Each element in the list is a regular expression (ECMAScript syntax). See https://msdn.microsoft.com/library/2k3te2cs.aspx.  
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->  

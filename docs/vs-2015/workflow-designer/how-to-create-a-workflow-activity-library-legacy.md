@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a94fbfd319489df0ac3bcbaf474c6a58cef66868
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9baa358c3728c6cbedc5f8768b29ba7efe64b399
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432372"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703287"
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>方法: ワークフロー アクティビティ ライブラリを作成する (レガシ)
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] が備えている従来の [!INCLUDE[vs2010](../includes/vs2010-md.md)]を使用してワークフロー アクティビティ ライブラリ プロジェクトを作成するには、次の手順を実行します。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] または [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] を対象とする必要がある場合は、従来の[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]を使用します。  
@@ -52,5 +52,5 @@ ms.locfileid: "63432372"
  [従来のワークフロー プロジェクトを作成します。](../workflow-designer/creating-legacy-workflow-projects.md)   
  [従来のアクティビティ デザイナーの使用](../workflow-designer/using-the-legacy-activity-designer.md)   
  [従来のワークフロー アクティビティ](../workflow-designer/legacy-workflow-activities.md)   
- [ワークフロー アクティビティの開発](http://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
- [Windows Workflow Foundation アクティビティ](http://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
+ [ワークフロー アクティビティの開発](https://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
+ [Windows Workflow Foundation アクティビティ](https://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)

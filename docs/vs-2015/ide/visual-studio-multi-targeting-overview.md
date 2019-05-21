@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb538360992a77dac66e4135647890e2a7732df4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 12018ef5e4c20e436cc250ca9630ccc4bd942a0f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443158"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698160"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio のマルチ ターゲットの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,16 +69,16 @@ ms.locfileid: "63443158"
  .NET Framework の特定のバージョンを対象にするには、最初に適切なアセンブリ参照をインストールする必要があります。 .NET Framework Version 2.0、3.0、および 3.5 に対応するアセンブリ参照は、.NET Framework 3.5 SP1 に含まれています。これは、[Microsoft ダウンロード センターの Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) Web サイトからダウンロードできます。 .NET Framework 3.5 Client Profile、.NET Framework 4、.NET Framework 4 Client Profile および Silverlight に対応するアセンブリ参照も、[Visual Studio のダウンロード](http://go.microsoft.com/fwlink/?LinkId=179687) Web サイトから入手できます。
 
 > [!NOTE]
-> .NET Framework クライアント プロファイルは、限定されたセットのライブラリと機能を備えた .NET Framework のサブセットです。 クライアント プロファイルの詳細については、「[.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)」を参照してください。
+> .NET Framework クライアント プロファイルは、限定されたセットのライブラリと機能を備えた .NET Framework のサブセットです。 クライアント プロファイルの詳細については、「[.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)」を参照してください。
 
- **[参照の追加]** ダイアログ ボックスでは、対象の [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のバージョンに関係しないシステム アセンブリが無効にされます。その結果、それらのアセンブリをプロジェクトに誤って追加することはありません  (システム アセンブリとは、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] バージョンの一部である .dll ファイルのことです)。対象より新しいバージョンのフレームワークに属する参照は解決されず、そのような参照に依存するコントロールを追加することはできません。 このような参照を有効にするには、プロジェクトの対象である [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] を、その参照を含むバージョンに再設定します。  詳細については、「[プロジェクト デザイナーの概要](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)」を参照してください。
+ **[参照の追加]** ダイアログ ボックスでは、対象の [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のバージョンに関係しないシステム アセンブリが無効にされます。その結果、それらのアセンブリをプロジェクトに誤って追加することはありません  (システム アセンブリとは、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] バージョンの一部である .dll ファイルのことです)。対象より新しいバージョンのフレームワークに属する参照は解決されず、そのような参照に依存するコントロールを追加することはできません。 このような参照を有効にするには、プロジェクトの対象である [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] を、その参照を含むバージョンに再設定します。  詳細については、「[プロジェクト デザイナーの概要](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)」を参照してください。
 
  アセンブリ参照の詳細については、「[Resolving Assemblies at Design Time](../msbuild/resolving-assemblies-at-design-time.md)」(デザイン時のアセンブリの解決) を参照してください。
 
 ## <a name="enabling-linq"></a>LINQ の有効化
- .NET Framework Version 3.5 以降を対象にする場合は、System.Core の参照と System.Linq のプロジェクトレベル インポート (Visual Basic のみ) が自動的に追加されます。 LINQ 機能を使用する場合は、[Option Infer] もオンにする必要があります (Visual Basic のみ)。 対象をそれより前のバージョンの .NET Framework に変更すると、この参照とインポートは自動的に削除されます。 詳細については、「[How to: Create a LINQ Project](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2)」(方法: LINQ プロジェクトを作成する) を参照してください。
+ .NET Framework Version 3.5 以降を対象にする場合は、System.Core の参照と System.Linq のプロジェクトレベル インポート (Visual Basic のみ) が自動的に追加されます。 LINQ 機能を使用する場合は、[Option Infer] もオンにする必要があります (Visual Basic のみ)。 対象をそれより前のバージョンの .NET Framework に変更すると、この参照とインポートは自動的に削除されます。 詳細については、「[How to: Create a LINQ Project](https://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2)」(方法: LINQ プロジェクトを作成する) を参照してください。
 
 ## <a name="see-also"></a>関連項目
 [マルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)
-[ASP.NET Web プロジェクト用の .NET Framework Multi-Targeting](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
+[ASP.NET Web プロジェクト用の .NET Framework Multi-Targeting](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
 [プラットフォームの互換性とシステム要件](/visualstudio/productinfo/vs2015-compatibility-vs)

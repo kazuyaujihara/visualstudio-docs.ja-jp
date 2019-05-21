@@ -19,12 +19,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ce5ad99abb356c1b047fb2507be9a08f688b993
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dd5a6edc2f89470b4aacf05ef0a416c060cf23df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651436"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703533"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,5 +125,5 @@ ms.locfileid: "59651436"
  [Task Reference (タスク リファレンス)](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild リファレンス](../msbuild/msbuild-reference.md)   
  [Task Reference (タスク リファレンス)](../msbuild/msbuild-task-reference.md)   
- [WPF アプリケーション (WPF) のビルド](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [WPF XAML ブラウザー アプリケーションの概要](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
+ [WPF アプリケーション (WPF) のビルド](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [WPF XAML ブラウザー アプリケーションの概要](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

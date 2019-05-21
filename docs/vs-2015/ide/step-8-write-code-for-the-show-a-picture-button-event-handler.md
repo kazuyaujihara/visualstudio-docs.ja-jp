@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ef4d1221b59e6f1e5ed3de94f91742bbea778462
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428605"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679327"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>手順 8: [Show a picture] ボタンのイベント ハンドラーのコードを記述する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Visual C# のコード
   
     2. **IntelliSense** ウィンドウが開き、**openFileDialog1** が表示されます。 Tab キーを押して選択します。 (Visual Basic の場合は、先頭文字が大文字のため、**OpenFileDialog1** が表示されます。 **OpenFileDialog1** が選択されていることを確認してください)。  
   
-         `OpenFileDialog` の詳細については、「[OpenFileDialog クラス](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx)」を参照してください。  
+         `OpenFileDialog` の詳細については、「[OpenFileDialog クラス](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx)」を参照してください。  
   
     3. ピリオド (`.`) を入力します (多くのプログラマはこれをドットと呼んでいます)。**openFileDialog1** のすぐ後にドットを入力したため、**IntelliSense** ウィンドウが開き、**OpenFileDialog** コンポーネントのプロパティとメソッドがすべて表示されます。 これらは、Windows フォーム デザイナーでクリックした場合に **[プロパティ]** ウィンドウに表示されるプロパティと同じです。 また、コンポーネントで実行する処理 (ダイアログ ボックスを開くなど) を指定するメソッドも選択できます。  
   
@@ -67,7 +67,7 @@ Visual C# のコード
   
     4. 「`ShowDialog`」の入力を開始します (IntelliSense では大文字と小文字の区別は重要ではありません)。 **[ファイルを開く]** ダイアログ ボックスを表示するメソッドは `ShowDialog()` です。 ウィンドウで "**ShowDialog**" が強調表示されたら、Tab キーを押します。 また、"ShowDialog" を強調表示し、F1 キーを押して、それに関するヘルプを表示することもできます。  
   
-         `ShowDialog()` メソッドの詳細については、「[ShowDialog メソッド](http://msdn.microsoft.com/library/c7ykbedk.aspx)」を参照してください。  
+         `ShowDialog()` メソッドの詳細については、「[ShowDialog メソッド](https://msdn.microsoft.com/library/c7ykbedk.aspx)」を参照してください。  
   
     5. コントロールまたはコンポーネントでメソッドを使用する ("*メソッドを呼び出す*" といいます) ときは、かっこを追加する必要があります。 そこで、`ShowDialog` で "g" の直後に左かっこと右かっこを入力します:`()`。つまり、"openFileDialog1.ShowDialog()" となります。  
   
@@ -83,7 +83,7 @@ Visual C# のコード
   
     8. ドットを入力します。DialogResult の値の **IntelliSense** ウィンドウが開きます。 「`O`」と入力し、Tab キーを押して **OK** を挿入します。  
   
-         `DialogResult` の詳細については、「[DialogResult 列挙体](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx)」を参照してください。  
+         `DialogResult` の詳細については、「[DialogResult 列挙体](https://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx)」を参照してください。  
   
         > [!NOTE]
         > コードの 1 行目はこれで完了です。 Visual C# の場合は、次のようになります。  

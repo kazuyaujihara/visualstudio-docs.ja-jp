@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 11209ec181e2c2b61c7767787ee99c2d69eabe8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2824be0ecc29965abb68519aaa8eb8a83af8e688
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545564"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841380"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819:プロパティは、配列を返すことはできません
 
@@ -59,7 +59,7 @@ ms.locfileid: "62545564"
 
 この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
 
-```
+```ini
 dotnet_code_quality.ca1819.api_surface = private, internal
 ```
 

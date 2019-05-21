@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431111"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690214"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>マーカーとしての EventSource イベントの視覚化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "63431111"
   
 ### <a name="marker-type"></a>マーカーの種類  
   
-1. [オペコード](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start または win:Stop を持つイベントは、それぞれスパンの開始と終了として扱われます。  入れ子になっているスパンまたは重複するスパンは表示できません。 あるスレッドで開始し、別のスレッドで終了するイベント ペアは表示できません。  
+1. [オペコード](https://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start または win:Stop を持つイベントは、それぞれスパンの開始と終了として扱われます。  入れ子になっているスパンまたは重複するスパンは表示できません。 あるスレッドで開始し、別のスレッドで終了するイベント ペアは表示できません。  
   
-2. オペコードが win:Start でも win:Stop でもないイベントは、その[レベル](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR のフィールド) が win:Verbose 以上でない限り、マーカー フラグとして扱われます。  
+2. オペコードが win:Start でも win:Stop でもないイベントは、その[レベル](https://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR のフィールド) が win:Verbose 以上でない限り、マーカー フラグとして扱われます。  
   
 3. それ以外の場合はすべて、イベントはメッセージとして扱われます。  
   

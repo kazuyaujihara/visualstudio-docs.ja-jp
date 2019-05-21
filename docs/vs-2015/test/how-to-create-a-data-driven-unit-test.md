@@ -15,12 +15,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdc38967a229424badac0cb6b887f44820b71284
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d82d2c283ac0266880d92139cb9003b3c401b81
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095764"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686293"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>方法: データ ドリブン単体テストを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,7 +187,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [方法: 作成し、単体テストを実行](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
+ [方法: 作成し、単体テストを実行](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
  [コードの単体テスト](../test/unit-test-your-code.md)   
  [テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md)   
  [マネージド コード用の Microsoft 単体テスト フレームワークを使用した .NET Framework 用単体テストの記述](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)

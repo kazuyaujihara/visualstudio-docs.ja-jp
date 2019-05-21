@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d4ebb383e7dfb18ed4e119e9b34111ac809e2a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3f0d674984d916cb59f5938903d1bf1ba7d687bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433688"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680326"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>[ツールボックス アイテムの選択]、[WPF コンポーネント]
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63433688"
 - コンポーネントの横にあるチェック ボックスをオンにすると、そのコンポーネントのアイコンが **[ツールボックス]** に表示されます。  
   
   > [!TIP]
-  > 編集用に開かれるプロジェクト ドキュメントに WPF コントロールのインスタンスを追加するには、その**ツールボックス** アイコンをデザイン ビュー サーフェイスにドラッグします。 コンポーネントの既定のマークアップとコードがプロジェクトに挿入されて、変更できるようになります。 詳しくは、「[方法: ツールボックス ウィンドウの管理](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)」および「[[ツールボックス] タブの操作方法](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)」をご覧ください。  
+  > 編集用に開かれるプロジェクト ドキュメントに WPF コントロールのインスタンスを追加するには、その**ツールボックス** アイコンをデザイン ビュー サーフェイスにドラッグします。 コンポーネントの既定のマークアップとコードがプロジェクトに挿入されて、変更できるようになります。 詳しくは、「[方法: ツールボックス ウィンドウの管理](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)」および「[[ツールボックス] タブの操作方法](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)」をご覧ください。  
   
 - コンポーネントの横にあるチェック ボックスをオフにすると、対応するアイコンが **[ツールボックス]** に表示されなくなります。  
   
@@ -42,13 +42,13 @@ ms.locfileid: "63433688"
   コンピューターのレジストリにエントリが存在する WPF コントロールの名前が一覧表示されます。  
   
   名前空間  
-  コンポーネントの構造を定義している [NIB: .NET Framework クラス ライブラリ](http://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29)名前空間の階層構造が表示されます。 コンピューターにインストールされている各 .NET Framework 名前空間内で使用可能なコンポーネントを一覧表示するには、この列で並べ替えます。  
+  コンポーネントの構造を定義している [NIB: .NET Framework クラス ライブラリ](https://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29)名前空間の階層構造が表示されます。 コンピューターにインストールされている各 .NET Framework 名前空間内で使用可能なコンポーネントを一覧表示するには、この列で並べ替えます。  
   
   アセンブリ名  
   各コンポーネントの名前空間を含む .NET Framework アセンブリの名前が表示されます。 コンピューターにインストールされている各 .NET Framework アセンブリに含まれる名前空間を一覧表示するには、この列で並べ替えます。  
   
   ディレクトリ  
-  .NET Framework アセンブリの場所が表示されます。 アセンブリはすべて、既定では、グローバル アセンブリ キャッシュにあります。 グローバル アセンブリ キャッシュについて詳しくは、「[アセンブリとグローバル アセンブリ キャッシュの使用](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433)」をご覧ください。  
+  .NET Framework アセンブリの場所が表示されます。 アセンブリはすべて、既定では、グローバル アセンブリ キャッシュにあります。 グローバル アセンブリ キャッシュについて詳しくは、「[アセンブリとグローバル アセンブリ キャッシュの使用](https://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433)」をご覧ください。  
   
 ## <a name="uielement-list"></a>UIElement の一覧  
  **フィルター**  
@@ -72,10 +72,10 @@ ms.locfileid: "63433688"
   
   さらに、デザイン時のメタデータがカスタム コントロールに適用されていて、<xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> が `false` に設定されていることがこのメタデータで指定されている場合、コントロールはツールボックスに表示されません。  
   
-  コントロールの名前空間とアセンブリをマッピングすることにより、XAML ビューでコントロールを直接参照できます。 詳しくは、「[方法 : 名前空間を XAML にインポートする](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c)」をご覧ください。  
+  コントロールの名前空間とアセンブリをマッピングすることにより、XAML ビューでコントロールを直接参照できます。 詳しくは、「[方法 : 名前空間を XAML にインポートする](https://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c)」をご覧ください。  
   
 ## <a name="see-also"></a>関連項目  
- [[ツールボックス アイテムの選択] ダイアログ ボックス (Visual Studio)](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
+ [[ツールボックス アイテムの選択] ダイアログ ボックス (Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
  [ツールボックス](../../ide/reference/toolbox.md)   
- [方法 : WPF アプリケーション内でサードパーティの WPF コントロールを使用する](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
- [WPF デザイナー](http://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)
+ [方法 : WPF アプリケーション内でサードパーティの WPF コントロールを使用する](https://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
+ [WPF デザイナー](https://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)

@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434861"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685320"
 ---
 # <a name="how-to-use-the-threads-window"></a>方法: [スレッド] ウィンドウを使用します。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ ms.locfileid: "63434861"
 ## <a name="freezing-and-thawing-threads"></a>スレッドの凍結と凍結解除  
  スレッドを凍結すると、利用できるリソースがあっても、そのスレッドの実行は開始されません。  
   
- ネイティブ コードで中断または Windows 関数を呼び出すことによってスレッドを再開して`SuspendThread`と`ResumeThread`または MFC 関数[CWinThread::SuspendThread](http://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28)と[cwinthread::resumethread](http://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). 呼び出す場合`SuspendThread`または`ResumeThread`、変更する、*中断カウント*に表示される、**スレッド**ウィンドウ。 ただし、ネイティブ スレッドを凍結または凍結解除しても、中断カウントは変わりません。 ネイティブ コードでは、凍結が解除され、中断カウントがゼロになるまで、スレッドは実行されません。  
+ ネイティブ コードで中断または Windows 関数を呼び出すことによってスレッドを再開して`SuspendThread`と`ResumeThread`または MFC 関数[CWinThread::SuspendThread](https://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28)と[cwinthread::resumethread](https://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). 呼び出す場合`SuspendThread`または`ResumeThread`、変更する、*中断カウント*に表示される、**スレッド**ウィンドウ。 ただし、ネイティブ スレッドを凍結または凍結解除しても、中断カウントは変わりません。 ネイティブ コードでは、凍結が解除され、中断カウントがゼロになるまで、スレッドは実行されません。  
   
  マネージド コードでは、スレッドの凍結または凍結解除によって中断カウントが変わります。 マネージド コードでは、凍結されたスレッドの中断カウントは 1 になります。 ネイティブ コードでは、スレッドが `SuspendThread` 呼び出しによって中断されている場合を除き、凍結されたスレッドの中断カウントは 0 です。  
   

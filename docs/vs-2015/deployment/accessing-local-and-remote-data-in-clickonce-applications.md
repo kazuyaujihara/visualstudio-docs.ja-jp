@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ce6b6ee633e926709b0c15c2234077055600a07
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427248"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688115"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>ClickOnce アプリケーションにおけるローカル データおよびリモート データへのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "63427248"
   
  分離ストレージは、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] のすべてのバージョンで動作します。 分離ストレージは、部分的に信頼されたアプリケーション内でも、アクセス許可を追加せずに動作します。 アプリケーションを部分的に信頼された状態で実行する必要がある場合に、アプリケーション固有のデータを保守する必要があるときは、分離ストレージを使用する必要があります。  
   
- 詳細については、「 [分離ストレージ](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e)」を参照してください。  
+ 詳細については、「 [分離ストレージ](https://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e)」を参照してください。  
   
 ### <a name="other-local-files"></a>その他のローカル ファイル  
  アプリケーションでレポート、画像、音楽などのエンド ユーザー データを処理し、保存する必要がある場合は、アプリケーションにおいて、 <xref:System.Security.Permissions.FileIOPermission> によりローカル ファイル システムに対するデータの読み込みと書き込みを実行することが必要になります。  
@@ -86,7 +86,7 @@ ms.locfileid: "63427248"
  アプリケーションでは、実行時に、顧客データや市場情報などの情報をリモートの Web サイトから取得する必要が生じることがあります。 このセクションでは、リモート データを取得するための最も一般的な手法について説明します。  
   
 ### <a name="accessing-files-by-using-http"></a>HTTP によるファイル アクセス  
- <xref:System.Net.WebClient> 名前空間にある <xref:System.Net.HttpWebRequest> クラスまたは <xref:System.Net> クラスを使用すると、Web サーバー上のデータにアクセスできます。 アクセスできるデータは、静的なファイルか、未加工のテキストまたは XML データを返す [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションのいずれかです。 データが XML 形式の場合には、 <xref:System.Xml.XmlDocument> クラスを使用してデータを取得すると、最も高速です。このクラスの <xref:System.Xml.XmlDocument.Load%2A> メソッドには引数として URL を渡します。 例については、「 [Reading an XML Document into the DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49)」を参照してください。  
+ <xref:System.Net.WebClient> 名前空間にある <xref:System.Net.HttpWebRequest> クラスまたは <xref:System.Net> クラスを使用すると、Web サーバー上のデータにアクセスできます。 アクセスできるデータは、静的なファイルか、未加工のテキストまたは XML データを返す [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] アプリケーションのいずれかです。 データが XML 形式の場合には、 <xref:System.Xml.XmlDocument> クラスを使用してデータを取得すると、最も高速です。このクラスの <xref:System.Xml.XmlDocument.Load%2A> メソッドには引数として URL を渡します。 例については、「 [Reading an XML Document into the DOM](https://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49)」を参照してください。  
   
  アプリケーションから HTTP 経由でリモート データにアクセスする場合は、セキュリティを考慮する必要があります。 既定では、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] アプリケーションによるネットワーク リソースへのアクセスは、アプリケーションが配置された方法に応じて制限される場合があります。 この制限は、悪意のあるプログラムが特権の必要なリモート データへのアクセスを取得したり、ユーザーのコンピューターを使用してネットワーク上の他のコンピューターを攻撃したりすることを防ぐ目的で適用されます。  
   

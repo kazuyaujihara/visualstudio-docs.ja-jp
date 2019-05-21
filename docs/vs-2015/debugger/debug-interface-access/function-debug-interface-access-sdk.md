@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b403f457cead70f113609e30cebdcf1c53c1341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fb1355dfebaad4230c349c0c7b30ae400ecdaa1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963474"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692171"
 ---
 # <a name="function-debug-interface-access-sdk"></a>関数 (Debug Interface Access SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,14 +42,14 @@ ms.locfileid: "58963474"
 |[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE` 場合は、関数には、C++ スタイルの例外処理 (DIA SDK バージョン 8.0 でのみまたはそれ以降) が含まれています。|  
 |[IDiaSymbol::get_hasEHa](../../debugger/debug-interface-access/idiasymbol-get-haseha.md)|`BOOL`|`TRUE` 場合は、関数には、非同期の例外処理 (DIA SDK バージョン 8.0 でのみまたはそれ以降) が含まれています。|  
 |[IDiaSymbol::get_hasInlAsm](../../debugger/debug-interface-access/idiasymbol-get-hasinlasm.md)|`BOOL`|`TRUE` 場合は、関数には、インライン アセンブリ (DIA SDK バージョン 8.0 でのみまたはそれ以降) が含まれています。|  
-|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` 関数が含まれている場合、 [longjmp](http://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f) (DIA SDK バージョン 8.0 でのみまたはそれ以降) を呼び出します。|  
+|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` 関数が含まれている場合、 [longjmp](https://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f) (DIA SDK バージョン 8.0 でのみまたはそれ以降) を呼び出します。|  
 |[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` 場合は、関数には、セキュリティ チェック (以降でのみ DIA SDK バージョン 8.0) が含まれています。|  
 |[IDiaSymbol::get_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|`BOOL`|`TRUE` 場合は、関数には、Win32 スタイルの構造化例外処理 (DIA SDK バージョン 8.0 でのみまたはそれ以降) にはが含まれています。|  
-|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` 関数が含まれている場合、 [setjmp](http://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2) (DIA SDK バージョン 8.0 でのみまたはそれ以降) を呼び出します。|  
+|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` 関数が含まれている場合、 [setjmp](https://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2) (DIA SDK バージョン 8.0 でのみまたはそれ以降) を呼び出します。|  
 |[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE` 場合は、関数では、割り込み (DIA SDK バージョン 8.0 でのみまたはそれ以降) からの戻り値があります。|  
 |[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|`TRUE` 場合は、関数は、仮想の概要です。|  
 |[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE` いずれかの関数が指定されている場合、 [inline、_ _inline、 \__forceinline](../../misc/inline-inline-forceinline.md)属性。|  
-|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` 関数が付いている場合、 [naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d)属性 (DIA SDK バージョン 8.0 でのみまたはそれ以降)。|  
+|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` 関数が付いている場合、 [naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d)属性 (DIA SDK バージョン 8.0 でのみまたはそれ以降)。|  
 |[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE` 関数が静的な場合 (DIA SDK バージョン 8.0 でのみまたはそれ以降)。|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|位置から開始して、関数コードのバイト数。|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|外側のコンパイル単位シンボル。|  

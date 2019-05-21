@@ -12,12 +12,12 @@ ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4858d5086baf65b9d3e1e7c28fbd0d1707403412
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 98e8c1b1669b3fdd1f442c6987e4e9d2b9fc4835
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972819"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675377"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugBreakEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>実装についてのメモ  
- デでは、プログラムでユーザーの中断をサポートするためにこのインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります (、SDM を使用して[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)にアクセスする、`IDebugEvent2`インターフェイス)。  
+ デでは、プログラムでユーザーの中断をサポートするためにこのインターフェイスを実装します。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)このインターフェイスと同じオブジェクトでインターフェイスを実装する必要があります (、SDM を使用して[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)にアクセスする、`IDebugEvent2`インターフェイス)。  
   
 ## <a name="notes-for-callers"></a>呼び出し元のノート  
  SDM コール[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)ユーザーが一時停止するデバッグ中のプログラムを要求された場合。 プログラムが正常に一時停止されて、DE 送信、`IDebugBreakEvent2`イベント。 このイベントを使用して、送信、 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ中のプログラムに添付するときに、SDM によって提供されるコールバック関数。  

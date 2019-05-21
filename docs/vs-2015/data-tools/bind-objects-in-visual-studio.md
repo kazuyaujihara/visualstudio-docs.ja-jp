@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 12cbeca740fd81292109183468a304fc2d3da30c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09afb67f0e9431ca8cd520635f243dca70880f09
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439488"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683151"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Visual Studio でのオブジェクトのバインド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Visual Studio には、アプリケーションでデータ ソースとして�
 - オブジェクトからデータベースにデータを保存しています。
 
 > [!NOTE]
-> 理解、および、このページの例については、コンテキストを提供する、するには、次を完了することをお勧めします。[チュートリアル: データ オブジェクト (Windows フォーム) に接続する](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)します。 このチュートリアルでは、ここで説明したオブジェクトを作成します。
+> 理解、および、このページの例については、コンテキストを提供する、するには、次を完了することをお勧めします。[チュートリアル: データ オブジェクト (Windows フォーム) に接続する](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)します。 このチュートリアルでは、ここで説明したオブジェクトを作成します。
 
 ### <a name="loaddata-into-objects"></a>オブジェクトに Loaddata
  この例では、Tableadapter を使用して、オブジェクトにデータを読み込みます。 既定では、Tableadapter は、2 つの種類のデータベースからデータをフェッチし、データ テーブルを設定するメソッドで作成されます。
@@ -75,7 +75,7 @@ Visual Studio には、アプリケーションでデータ ソースとして�
  [!code-vb[VbRaddataConnecting#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Form1.vb#4)]
 
 ### <a name="create-a-typed-collection-of-objects"></a>オブジェクトの型指定されたコレクションを作成します。
- オブジェクトのコレクション クラスを作成するか、によって自動的に提供される型指定されたコレクションを使用することができます、 [BindingSource コンポーネント](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)します。
+ オブジェクトのコレクション クラスを作成するか、によって自動的に提供される型指定されたコレクションを使用することができます、 [BindingSource コンポーネント](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)します。
 
  継承することをお勧めのオブジェクトのカスタム コレクション クラスを作成する場合は、<xref:System.ComponentModel.BindingList%601>します。 このジェネリック クラスは、Windows フォームでデータ バインド インフラストラクチャに通知を送信するイベントを発生させる機能と同様に、コレクションを管理する機能を提供します。
 
@@ -92,9 +92,9 @@ Visual Studio には、アプリケーションでデータ ソースとして�
 ### <a name="addobjects-to-a-collection"></a>コレクションに Addobjects
  呼び出すことによって、オブジェクトをコレクションに追加する、`Add`またはのカスタム コレクション クラスのメソッド、<xref:System.Windows.Forms.BindingSource>します。
 
- 使用してコレクションに追加する例については、<xref:System.Windows.Forms.BindingSource>を参照してください、`LoadCustomers`メソッド[チュートリアル。データ オブジェクト (Windows フォーム) に接続する](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)します。
+ 使用してコレクションに追加する例については、<xref:System.Windows.Forms.BindingSource>を参照してください、`LoadCustomers`メソッド[チュートリアル。データ オブジェクト (Windows フォーム) に接続する](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)します。
 
- オブジェクトのカスタム コレクションに追加の例は、次を参照してください。、`LoadOrders`メソッド[チュートリアル。データ オブジェクト (Windows フォーム) に接続する](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)します。
+ オブジェクトのカスタム コレクションに追加の例は、次を参照してください。、`LoadOrders`メソッド[チュートリアル。データ オブジェクト (Windows フォーム) に接続する](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)します。
 
 > [!NOTE]
 > `Add`メソッドはから継承する場合、自動的にカスタム コレクションの提供<xref:System.ComponentModel.BindingList%601>します。

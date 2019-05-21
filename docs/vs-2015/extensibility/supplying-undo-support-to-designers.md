@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6136caaec0cb8f0d79e3fb7b96245fc3fd070710
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049309"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675339"
 ---
 # <a name="supplying-undo-support-to-designers"></a>デザイナー向けの元に戻す操作のサポート提供
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60049309"
   
 - 実装によって永続化を指定し、CodeDOM のサポート、<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>と<xref:System.ComponentModel.Design.IComponentChangeService>クラス。  
   
-  デザイナーを使用して記述の詳細については[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]を参照してください[デザイン時サポートの拡張](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)します。  
+  デザイナーを使用して記述の詳細については[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]を参照してください[デザイン時サポートの拡張](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)します。  
   
   [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]によって既定の元に戻すインフラストラクチャを提供します。  
   
@@ -45,7 +45,7 @@ ms.locfileid: "60049309"
   
 - コードの生成と永続化は、標準の CodeDOM に基づくコードの生成と解析システムを採用しています。  
   
-     Visual Studio の CodeDOM のサポートの操作方法の詳細については、次を参照してください[動的ソース コードの生成とコンパイル。](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
+     Visual Studio の CodeDOM のサポートの操作方法の詳細については、次を参照してください[動的ソース コードの生成とコンパイル。](https://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
 ## <a name="when-to-use-explicit-designer-undo-support"></a>明示的なデザイナーの取り消しのサポートを使用する場合  
  以外から提供されたいずれかのビューのアダプターと呼ばれる、グラフィカル ユーザー インターフェイスを使用している場合、デザイナーは、独自の元に戻す管理を指定する必要があります<xref:System.Windows.Forms.Control>します。  
@@ -105,4 +105,4 @@ ms.locfileid: "60049309"
 ## <a name="see-also"></a>関連項目  
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
- [デザイン時サポートの拡張](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [デザイン時サポートの拡張](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

@@ -13,12 +13,12 @@ ms.assetid: 7cfa23e4-a05a-47a3-af6c-bd40c655014b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a52c47eeb55dc7120beb45e480e593696be410a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4bc592ff0198d4cc93d500c39167e214e63f032
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571860"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702590"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
  シンボル プロバイダーを実装する同一のオブジェクトにこのインターフェイスを実装する[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)カスタム属性をサポートするためにします。  
   
 ## <a name="notes-for-callers"></a>呼び出し元のノート  
- 使用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)からこのインターフェイスを取得する、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インターフェイス。  
+ 使用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)からこのインターフェイスを取得する、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インターフェイス。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド  
  次の表は、メソッドの**IDebugCustomAttributeQuery**インターフェイス。  

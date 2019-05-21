@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7cbc9519c86b2bf4967e567b29355eb6d8a176a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425382"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699765"
 ---
 # <a name="edit-data-in-datasets"></a>データセットのデータの編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "63425382"
  [!code-vb[VbRaddataEditing#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#5)]  
   
 ## <a name="to-insert-new-rows-into-a-dataset"></a>データセットに新しい行を挿入するには  
- 通常、データ バインド コントロールを使用するアプリケーションが使用して新しいレコードを追加、**新規追加**のボタンでは、 [BindingNavigator コントロール](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e)します。  
+ 通常、データ バインド コントロールを使用するアプリケーションが使用して新しいレコードを追加、**新規追加**のボタンでは、 [BindingNavigator コントロール](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e)します。  
   
  データセットに新しいレコードを手動で追加するには、データ テーブルに、メソッドを呼び出すことによって、新しいデータ行を作成します。 行を追加し、<xref:System.Data.DataRow>コレクション (<xref:System.Data.DataTable.Rows%2A>) の<xref:System.Data.DataTable>:  
   
@@ -79,7 +79,7 @@ ms.locfileid: "63425382"
   
 - 変更されたデータの各行には、その行の複数のバージョンが含まれています (<xref:System.Data.DataRowVersion>)、(前の変更) に、元のバージョンと現在のバージョン (変更後)。 変更が保留中の期間中に (に応答するときに、<xref:System.Data.DataTable.RowChanging>イベント)、3 つ目のバージョン: 提案されたバージョン: も利用できます。
   
-  データセットが変更された場合、データセットの <xref:System.Data.DataSet.HasChanges%2A> メソッドでは、`true` が返されます。 変更された行が存在することを確認した後は、`GetChanges` または <xref:System.Data.DataSet> の <xref:System.Data.DataTable> メソッドを呼び出して、変更された一連の行を取得できます。 詳細については、「[方法 :変更された行を取得](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)します。  
+  データセットが変更された場合、データセットの <xref:System.Data.DataSet.HasChanges%2A> メソッドでは、`true` が返されます。 変更された行が存在することを確認した後は、`GetChanges` または <xref:System.Data.DataSet> の <xref:System.Data.DataTable> メソッドを呼び出して、変更された一連の行を取得できます。 詳細については、「[方法 :変更された行を取得](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)します。  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>行に変更が加えられましたかどうかを判断するには  
   

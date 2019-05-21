@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6dbcc6f74d39353ae38b7298851cb1bab5fb0fe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435187"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685427"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>方法: Sign アプリケーション マニフェストおよび配置マニフェスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ClickOnce 配置を使用してアプリケーションを発行しようとす�
   
  .exe ベースのアプリケーションでは、ClickOnce マニフェストの署名を省略できます。 詳細については、このドキュメントの「未署名のマニフェストの生成」を参照してください。  
   
- キー ファイルの作成については、「[方法 : 公開キーと秘密キーのキー ペアを作成する](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)」を参照してください。  
+ キー ファイルの作成については、「[方法 : 公開キーと秘密キーのキー ペアを作成する](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)」を参照してください。  
   
 > [!NOTE]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、拡張子 .pfx を持つ Personal Information Exchange (PFX) キー ファイルだけがサポートされます。 ただし、プロジェクトのプロパティの **[署名]** ページにある **[ストアから選択]** をクリックすると、現在のユーザーの Windows 証明書ストアから、他の種類の証明書を選ぶことができます。  
@@ -109,7 +109,7 @@ ClickOnce 配置を使用してアプリケーションを発行しようとす�
 3. アプリケーションを発行します。  
   
 ## <a name="see-also"></a>関連項目
- [厳密な名前付きアセンブリ](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [方法: 公開/秘密キー ペアを作成します。](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [厳密な名前付きアセンブリ](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [方法: 公開/秘密キー ペアを作成します。](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [[署名] ページ (プロジェクト デザイナー)](../ide/reference/signing-page-project-designer.md)   
  [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)

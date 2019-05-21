@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a2a7dac47731626407b34e49a3e0085d1a91b4d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0292bf5b62bf150a598b4c750929ba6928216a50
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108569"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691269"
 ---
 # <a name="debugging-linq"></a>LINQ のデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60108569"
 ## <a name="BKMK_ViewingLINQResults"></a> LINQ の結果の表示  
  LINQ ステートメントの結果を表示するには、DataTip、[ウォッチ] ウィンドウ、および [クイック ウォッチ] ダイアログ ボックスを使用します。 ソース ウィンドウを使用すると、ソース ウィンドウ内のクエリ上でポインターを停止し、DataTip を表示することができます。 LINQ 変数をコピーし、[ウォッチ] ウィンドウや [クイック ウォッチ] ダイアログ ボックスに貼り付けることができます。  
   
- LINQ では、クエリは作成または宣言の時点では評価されず、実行時にのみ評価されます。 したがって、評価の時点までクエリには値がありません。 クエリを作成および評価の詳細については、次を参照してください。 [LINQ クエリ (c#) の概要](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)または[書き込みで初めて Your の LINQ クエリ](http://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe)します。  
+ LINQ では、クエリは作成または宣言の時点では評価されず、実行時にのみ評価されます。 したがって、評価の時点までクエリには値がありません。 クエリを作成および評価の詳細については、次を参照してください。 [LINQ クエリ (c#) の概要](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)または[書き込みで初めて Your の LINQ クエリ](https://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe)します。  
   
  クエリの結果を表示するためには、デバッガーがクエリを評価する必要があります。 そのため、LINQ クエリの結果をデバッガーで表示するときには、クエリが評価されることにより、次のような影響が生じます。  
   
@@ -50,7 +50,7 @@ ms.locfileid: "60108569"
  LINQ to SQL クエリでは、述語コードがデバッガーによる処理の対象外となります。 そのため、述語コードにステップ インすることはできません。 式ツリーにコンパイルされるクエリは、デバッガーによる処理の対象とならないコードを生成します。  
   
 ### <a name="stepping-in-visual-basic"></a>Visual Basic でのステップ実行  
- Visual Basic プログラムをステップ実行し、デバッガーがクエリ宣言を検出すると、デバッガーはその宣言にはステップ インせず、宣言全体を 1 つのステートメントとして強調表示します。 この動作が発生するのは、クエリが呼び出されるまで評価されないためです。 詳細については、次を参照してください。 [Visual Basic における LINQ の概要](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)します。  
+ Visual Basic プログラムをステップ実行し、デバッガーがクエリ宣言を検出すると、デバッガーはその宣言にはステップ インせず、宣言全体を 1 つのステートメントとして強調表示します。 この動作が発生するのは、クエリが呼び出されるまで評価されないためです。 詳細については、次を参照してください。 [Visual Basic における LINQ の概要](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)します。  
   
  次のようなコードをステップ実行すると、クエリを作成するクエリ宣言が 1 つのステートメントとして強調表示されます。  
   
@@ -117,8 +117,8 @@ End Function
  Visual Basic では、LINQ クエリを含むメソッドであっても、LINQ 以外のコードであればエディット コンティニュを使用できます。 LINQ ステートメントの前であれば、LINQ クエリの行番号が変わる場合でも、コードの追加や削除を行うことができます。 LINQ 以外のコードの Visual Basic デバッグは、LINQ が導入される前と同じように動作します。 ただし、デバッグを中止して変更を適用しない限り、LINQ クエリを変更、追加、または削除することはできません。  
   
 ## <a name="see-also"></a>関連項目  
- [SQL のデバッグ](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
- [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
+ [SQL のデバッグ](https://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
+ [Side Effects and Expressions](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
  [デバッガーでの例外の管理](../debugger/managing-exceptions-with-the-debugger.md)   
- [LINQ クエリの概要 (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
- [Visual Basic における LINQ の概要](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)
+ [LINQ クエリの概要 (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
+ [Visual Basic における LINQ の概要](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)

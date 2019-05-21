@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 313c189a05ae2a4e338c6f6bb9d7e9341e34284c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a2256dfde39c761258ffb63ec6bbd9473e1be385
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446117"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687590"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>クイック スタート:コンソールを使用した JavaScript のデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -283,4 +283,4 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
  [HTML、CSS、および JavaScript サンプル コードのデバッグ](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md)   
  [WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)   
- [製品のサポートとユーザー補助](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [製品のサポートとユーザー補助](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

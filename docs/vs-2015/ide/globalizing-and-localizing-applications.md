@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49702a40e081b4836e078a77368148451a29636d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fe8671142aeda4972f9ac218fe536b4a991649a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794371"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704365"
 ---
 # <a name="globalizing-and-localizing-applications"></a>アプリケーションのグローバライズとローカライズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ ms.locfileid: "54794371"
  [アプリのグローバル化 (C#/VB/C++ と XAML を使った Windows ストア アプリ)](http://go.microsoft.com/fwlink/?LinkId=258267)  
  XAML と Visual C#/Visual Basic/Visual C++ を使用して開発された [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリのグローバル化およびローカライズに役立つ「方法」トピックとガイドラインが含まれています。  
   
- [推奨される国際対応アプリケーション開発手順](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [推奨される国際対応アプリケーション開発手順](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  国際対応アプリケーションのプログラミングについての背景情報を提供します。  
   
- [クラス ライブラリの概要](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)  
+ [.NET クラス ライブラリの概要](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)  
  開発プロセスを高速化および最適化し、システム機能へのアクセスを提供する、クラス、インターフェイス、および値型について説明します。  
   
  <xref:System.Globalization>  

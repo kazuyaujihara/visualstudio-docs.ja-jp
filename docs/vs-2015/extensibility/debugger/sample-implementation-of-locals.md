@@ -11,12 +11,12 @@ ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7d4a500f2d66fdab239f5d10fb5d8b4ff4212a36
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6e943fd7ba27fe21029bab4d818803186147476e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446274"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704885"
 ---
 # <a name="sample-implementation-of-locals"></a>ローカルの実装のサンプル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "63446274"
  [評価コンテキスト](../../extensibility/debugger/evaluation-context.md)  
  DE、式エバリュエーター (EE) の呼び出し時に渡される引数を提供します。  
   
- [MyCEE サンプル](http://msdn.microsoft.com/624a018b-9179-402f-9d48-3aec87b48f4f)  
+ [MyCEE サンプル](https://msdn.microsoft.com/624a018b-9179-402f-9d48-3aec87b48f4f)  
  MyC 言語の式エバリュエーターを作成する 1 つの実装方法を示します。  
   
 ## <a name="see-also"></a>関連項目  

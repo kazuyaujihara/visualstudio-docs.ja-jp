@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65c802964a03fdfe99e4f2f51988de36a806dcbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f167b3e9d27145284defa2ff491bb9ce0085f2a3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090889"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684907"
 ---
 # <a name="supported-code-changes-c"></a>サポートされているコード変更 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Visual C++ のエディット コンティニュは、大半の種類のコー�
 ## <a name="BKMK_Unsupported_scenarios"></a> サポートされていないシナリオ  
  次のデバッグ シナリオでは、C/C++ のエディット コンティニュを使用できません。  
   
--  [(強化に最適化されたデータのデバッグ)/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)でコンパイルしたネイティブ アプリのデバッグ  
+-  [(強化に最適化されたデータのデバッグ)/Zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)でコンパイルしたネイティブ アプリのデバッグ  
   
 - Visual Studio 2015 の Update 1 より前の Visual Studio のバージョンにおける、Windows ストア アプリまたはコンポーネントのデバッグ。 Visual Studio 2015 の Update 1 以降、Windows ストア C++ アプリと DirectX アプリでは、 `/ZI` コンパイラ スイッチと  `/bigobj` スイッチがサポートされているので、エディット コンティニュを使用できます。  `/FASTLINK` スイッチがサポートされているので、エディット コンティニュを使用できます。  
   
@@ -141,7 +141,7 @@ Visual C++ のエディット コンティニュは、大半の種類のコー�
 3. **[プリコンパイルを許可する]** チェック ボックスをオフにします。  
   
 ## <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 属性に関する制限事項  
- エディット コンティニュでは、インターフェイス定義 (IDL) ファイルは再生成されません。 このため、デバッグ時に IDL 属性への変更は反映されません。 IDL 属性の変更結果を表示するには、デバッグを停止し、アプリをリビルドする必要があります。 エディット コンティニュでは、IDL 属性が変更されているとエラーや警告は生成されません。 詳細については、「 [IDL 属性](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6)」を参照してください。  
+ エディット コンティニュでは、インターフェイス定義 (IDL) ファイルは再生成されません。 このため、デバッグ時に IDL 属性への変更は反映されません。 IDL 属性の変更結果を表示するには、デバッグを停止し、アプリをリビルドする必要があります。 エディット コンティニュでは、IDL 属性が変更されているとエラーや警告は生成されません。 詳細については、「 [IDL 属性](https://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6)」を参照してください。  
   
 ## <a name="see-also"></a>関連項目  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

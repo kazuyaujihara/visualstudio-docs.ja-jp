@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b794eb7c7a258a843763b2c68902000031c17eb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca9c4681cc19917ef965a4c8577e9559d71dd4be
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807148"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841957"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715:識別子は正しいプレフィックスを含んでいなければなりません
 
@@ -62,7 +62,7 @@ ms.locfileid: "62807148"
 
 1 文字の型パラメーターをこの規則から除外するかどうかを構成することができます。 たとえば、ことを指定するこのルール*しないで*1 文字の型パラメーターを分析、次のキー/値ペアのいずれかをプロジェクト内の .editorconfig ファイルに追加。
 
-```
+```ini
 # Package version 2.9.0 and later
 dotnet_code_quality.CA1715.exclude_single_letter_type_parameters = true
 
@@ -77,7 +77,7 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 
 のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づいています。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
 
-```
+```ini
 dotnet_code_quality.ca1715.api_surface = private, internal
 ```
 

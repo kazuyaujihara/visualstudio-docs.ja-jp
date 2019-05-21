@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: adecc608309c0a61e38da3e77446795540c41e63
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041836"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691107"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 の新機能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
  ![Visual Studio 2015 のセットアップ ダイアログ](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>複数のアカウント間のサインイン
- Visual Studio 2015 では、サインインの仕組みがすっきりとしたものに更新されており、Visual Studio のアカウントが複数ある場合でもオンライン リソースへのアクセスが大幅に簡素化されるように設計されています。 Visual Studio にサインインすると、Visual Studio 2015 およびコンピューター上の Blend のすべてのインスタンスに自動的にサインインします。 サインインすると、自動的に設定のローミングが開始されます。 Visual Studio 2015 では、複数の機能で 1 つのアカウントを共通に使うことができるため、トークンが良好なものである限り、 **チーム エクスプローラー**から Visual Studio Team Services のアカウントにアクセスしたり、サーバー エクスプローラー内の自分の Microsoft Azure サブスクリプションからさまざまなリソースや Web サイトにアクセスしたりすることが可能です。 また、Application Insights のプロジェクトの [新しいプロジェクト] ダイアログに自分の Azure リソースが表示されます。さらに、新しい [[接続済みサービスの追加]](http://msdn.microsoft.com/office/aa905340.aspx) ダイアログには、Azure Mobile、Azure Storage、 [Microsoft Office 365](https://developer.salesforce.com/) 、および **Saleforce.com developer** のアカウントが表示されます。
+ Visual Studio 2015 では、サインインの仕組みがすっきりとしたものに更新されており、Visual Studio のアカウントが複数ある場合でもオンライン リソースへのアクセスが大幅に簡素化されるように設計されています。 Visual Studio にサインインすると、Visual Studio 2015 およびコンピューター上の Blend のすべてのインスタンスに自動的にサインインします。 サインインすると、自動的に設定のローミングが開始されます。 Visual Studio 2015 では、複数の機能で 1 つのアカウントを共通に使うことができるため、トークンが良好なものである限り、 **チーム エクスプローラー**から Visual Studio Team Services のアカウントにアクセスしたり、サーバー エクスプローラー内の自分の Microsoft Azure サブスクリプションからさまざまなリソースや Web サイトにアクセスしたりすることが可能です。 また、Application Insights のプロジェクトの [新しいプロジェクト] ダイアログに自分の Azure リソースが表示されます。さらに、新しい [[接続済みサービスの追加]](https://msdn.microsoft.com/office/aa905340.aspx) ダイアログには、Azure Mobile、Azure Storage、 [Microsoft Office 365](https://developer.salesforce.com/) 、および **Saleforce.com developer** のアカウントが表示されます。
 
  新しいアカウント マネージャーを実行する際に複数のユーザー アカウントを追加することによって、Visual Studio でそれらのユーザー アカウントの作業を実行できます。 そのようにすることによって、さまざまなサービスに接続したりオンライン リソースにアクセスしたりする際に、それら複数のアカウントを自在に切り替えることができます。 Visual Studio では追加されたアカウントが記憶されるため、Visual Studio または Blend のすべてのインスタンスからそれらを使用できます。 Visual Studio は、パーソナル化アカウントを使ってアカウントのリストもローミングし (重要な資格情報はローミングしません)、それらのアカウントの 1 つを使って別のデバイスですばやく操作できるようにします。 もちろん、[アカウント設定] ダイアログ ボックスでいつでもアカウントを削除できます。 開始するには、「 [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)」を参照してください。
 
@@ -53,7 +53,7 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
  Xamarin は、iOS および Android API にネイティブでバインドされるコードを C# で記述するためのモバイル フレームワークです。 Microsoft は、Xamarin for Visual Studio のリリースに伴い Xamarin と密接に働いてきました。Xamarin for Visual Studio は、単一のソリューションで共有コードを使用して Android、iOS、および Windows Phone 用に開発するための拡張機能です。 Xamarin では、プラットフォーム間の差分が最小限である 1 つの言語と 1 つのコード ベースを使用します。  Xamarin for Visual Studio は Visual Studio 2010 以降でサポートされています。 Xamarin のスタート エディションは、Visual Studio 2015 に含まれます。 最初に、次を参照してください。 [Visual Studio で Xamarin を使用してネイティブ UI とアプリを構築](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)します。
 
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>Apache Cordova を使った HTML/JavaScript のクロス プラットフォームのモバイル アプリ
- Visual Studio Tools for Apache Cordova は、Microsoft とオープン ソース Apache Cordova コミュニティとの密接な共同作業の成果物です。 これらのツールは、HTML、CSS、および JavaScript (または Typescript) を使用したクロス プラットフォームのモバイル開発を可能にします。 1 つのコード ベースを使用して Android、iOS、および Windows を対象とし、Visual Studio IDE に含まれる JavaScript IntelliSense、DOM Explorer、JavaScript コンソール、ブレークポイント、ウォッチ、ローカル、Just My Code などの豊富な機能を利用できます。  Visual Studio Tools for Apache Cordova では、一般的な JavaScript API を提供するプラグインによってすべてのプラットフォーム上のネイティブ デバイス機能にアプリがアクセスできるようになります。 最初に、次を参照してください。 [Visual Studio Tools for Apache Cordova の概要](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)します。
+ Visual Studio Tools for Apache Cordova は、Microsoft とオープン ソース Apache Cordova コミュニティとの密接な共同作業の成果物です。 これらのツールは、HTML、CSS、および JavaScript (または Typescript) を使用したクロス プラットフォームのモバイル開発を可能にします。 1 つのコード ベースを使用して Android、iOS、および Windows を対象とし、Visual Studio IDE に含まれる JavaScript IntelliSense、DOM Explorer、JavaScript コンソール、ブレークポイント、ウォッチ、ローカル、Just My Code などの豊富な機能を利用できます。  Visual Studio Tools for Apache Cordova では、一般的な JavaScript API を提供するプラグインによってすべてのプラットフォーム上のネイティブ デバイス機能にアプリがアクセスできるようになります。 最初に、次を参照してください。 [Visual Studio Tools for Apache Cordova の概要](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)します。
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Unity を使った C# のクロス プラットフォームのモバイル ゲーム
  Unity は、マルチプラットフォームの 2D および 3D ゲーム開発用に広く使用されているプラットフォームです。 ゲームを C# で作成し、Android、iOS、Windows Phone、その他の多くのプラットフォームでネイティブに実行できます。 Visual Studio Tools for Unity は、Unity と Visual Studio IDE を統合させる拡張機能です。 この拡張機能により、Unity 開発者用に設計された生産性機能に加えて、Visual Studio IDE のすべての機能とデバッガーが使用できるようになります。 Visual Studio Tools for Unity 2.0 Preview 2 には Visual Studio 2015 のためのサポートが追加されており、さらに [ローカル] ウィンドウや [ウォッチ] ウィンドウでのオブジェクト表示方法の改善など、数々の機能が新たに追加されています。 Microsoft は最近、Visual Studio Tools for Unity の作成元の SyntaxTree を買収しました。 Visual Studio Tools for Unity 2.0 Preview 2 のダウンロードおよび Visual Studio Tools for Unity の詳細については、「 [Visual Studio による Unity ゲームのビルド](https://aka.ms/vstu)」を参照してください。
@@ -70,7 +70,7 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 
  アプリを Windows 10 Phone、Windows 10 デスクトップ、または Xbox で実行します。 同じアプリケーション パッケージが使用されています。 Windows 10 の単一の統一されたコアの導入により、1 つのアプリケーション パッケージをすべてのプラットフォームで実行できます。 いくつかのプラットフォームには、プラットフォーム固有の動作を利用するためにアプリに追加できる拡張 SDK があります。 たとえば、モバイル用の拡張 SDK を使用すれば、Windows Phone で [戻る] ボタンを処理できます。 プロジェクトで拡張 SDK を参照する場合、単純にランタイム チェックを追加して、プラットフォームでその SDK を使用できるかどうかをテストします。 このようにして、それぞれのプラットフォームで同じアプリケーション パッケージを使用できます。
 
- これらの [ユニバーサル Windows アプリ](http://msdn.microsoft.com/library/dn975273.aspx)を作成するには、C#、Visual Basic、C++、または JavaScript を使用します。
+ これらの [ユニバーサル Windows アプリ](https://msdn.microsoft.com/library/dn975273.aspx)を作成するには、C#、Visual Basic、C++、または JavaScript を使用します。
 
 ### <a name="web"></a>Web
  ASP.NET 5 は、MVC、WebAPI、および SignalR へのメジャー アップデートであり、Windows、Mac、および Linux で実行されます。  ASP.NET 5 は、最新のクラウド ベースのアプリをビルドするための効率的で構成可能な .NET スタックを提供するために、まったく新たに設計されました。 Visual Studio 2015 ツーリングは、Bower や Grunt などの一般的な Web 開発ツールと、より緊密に統合されています。 開始するには、「  [NET Web Development and Tools Blog](http://blogs.msdn.com/b/webdev/)」にある多くのブログ投稿を参照してください。
@@ -87,12 +87,12 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 
  C# 言語と Visual Basic 言語には、両方ともコア言語と IDE サポートに多数の小さな改良が見られます。 それらの改良のすべてにより、.NET のコーディング作業がさらに便利かつ直感的になり、生産性が向上します。
 
- 詳細については、次を参照してください。[新](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)と[.NET ブログ](http://blogs.msdn.com/b/dotnet/)します。
+ 詳細については、次を参照してください。[新](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)と[.NET ブログ](http://blogs.msdn.com/b/dotnet/)します。
 
 #### <a name="c"></a>C++
  Visual C++ は、C++11/14 言語への準拠、クロス プラットフォーム モバイル デバイス用開発のサポート、再利用可能関数および await (現在 C++17 での標準化に向けて検討中) のサポート、C ランタイム ライブラリ (CRT) および C++ 標準ライブラリ (STL) の実装における数々の改良とバグ修正、MFC でのサイズ変更可能なダイアログ、コンパイラの新しい最適化機能、ビルド パフォーマンスの改善、新しい診断機能、コード エディターでの新たな生産性向上ツールの点で大きく前進しています。
 
- 詳細については、次を参照してください。 [Visual c の新](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)と[Visual c ブログ](http://blogs.msdn.com/b/vcblog/)します。
+ 詳細については、次を参照してください。 [Visual c の新](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)と[Visual c ブログ](http://blogs.msdn.com/b/vcblog/)します。
 
 ## <a name="device-preview-menu-bar"></a>[デバイスのプレビュー] メニュー バー
  ユニバーサル Windows プラットフォーム プロジェクトでは、[デバイスのプレビュー] メニュー バーを使用して、XAML ベースの UI がさまざまな画面サイズでどのように表示されるかを確認できます。
@@ -123,11 +123,11 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 ## <a name="cross-platform-debugging-support"></a>クロスプラットフォームのデバッグのサポート
  Visual Studio を使用して、Windows、iOS、Android の各デバイスで実行されるネイティブ モバイル アプリを作成、デバッグすることができます。 [Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)を使用するか、またはデバイスを接続し、Visual Studio で直接コードをデバッグします。
 
-- **JavaScript / Cordova**。 JavaScript で Windows、iOS、Android のネイティブ アプリを作成するには、 [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) を使用します。
+- **JavaScript / Cordova**。 JavaScript で Windows、iOS、Android のネイティブ アプリを作成するには、 [Visual Studio Tools for Apache Cordova](https://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) を使用します。
 
-     [アプリのデバッグ](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)MSDN ライブラリでは、Visual Studio の Cordova のサポートのデバッグについて詳しく説明します。
+     [アプリのデバッグ](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)MSDN ライブラリでは、Visual Studio の Cordova のサポートのデバッグについて詳しく説明します。
 
-- **C# / Xamarin**。 [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) を使用し、C# を使って Visual Studio で Windows、iOS、および Android のネイティブ アプリを作成します。
+- **C# / Xamarin**。 [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) を使用し、C# を使って Visual Studio で Windows、iOS、および Android のネイティブ アプリを作成します。
 
      デバッグ機能については、[Xamarin 開発者ガイド](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) の「 [Debugging](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) 」 (iOS) および「 [Debug on Device](http://developer.xamarin.com/guides) 」で説明されています。
 
@@ -262,11 +262,11 @@ Visual Studio 2015 へようこそ。これは開発者用の生産性ツール�
 ### <a name="report-crashes-hangs-and-performance-issues"></a>クラッシュ、ハング、パフォーマンスの問題についての報告
  気になる点のちょっとしたメモでは済ませられない問題が発生するかもしれません。 ハング、クラッシュ、あるいはパフォーマンスに関する問題が発生した場合は、問題点、改善点の報告をした後に表示されるダイアログを使用することによって、簡単な操作でその再現手順、クラッシュ ダンプ、トレース ファイルをお送りいただくことが可能です。
 
- まずは、前述の手順に従って問題点、改善点の報告をお送りください。 その後にポップアップ表示されるダイアログで、フィードバックに既定のタグを付けるか、または独自のタグを作成してタグ付けすることができます。 タグを付けるなら、フィードバックを該当する機能のチームに転送する際に助けになります。 **[カテゴリの選択]** ドロップダウン リストで、報告する問題に該当するオプションを選択した後、問題を再現する手順に従ってください。 Visual Studio を使用してフィードバックを報告する方法についての詳細な手順も利用できます。 詳細については、次を参照してください。[スマイルの指示を送信する Visual Studio](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)します。
+ まずは、前述の手順に従って問題点、改善点の報告をお送りください。 その後にポップアップ表示されるダイアログで、フィードバックに既定のタグを付けるか、または独自のタグを作成してタグ付けすることができます。 タグを付けるなら、フィードバックを該当する機能のチームに転送する際に助けになります。 **[カテゴリの選択]** ドロップダウン リストで、報告する問題に該当するオプションを選択した後、問題を再現する手順に従ってください。 Visual Studio を使用してフィードバックを報告する方法についての詳細な手順も利用できます。 詳細については、次を参照してください。[スマイルの指示を送信する Visual Studio](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)します。
 
 ## <a name="see-also"></a>関連項目
 
-* [Apache Cordova を使ったクロスプラットフォーム アプリをビルドする](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
+* [Apache Cordova を使ったクロスプラットフォーム アプリをビルドする](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Visual Studio で Xamarin を使用してネイティブ UI を備えたアプリを作成する](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [Visual C++ を使ったクロスプラットフォーム モバイル アプリをビルドする](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [IntelliTest でのコードの単体テストの生成](./test/generate-unit-tests-for-your-code-with-intellitest.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec0071cb8bf990974c700ce296ebeb86b5ad8c17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a7b3921d9ef11ba01cad6d25f69f3a484e27c929
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045474"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698345"
 ---
 # <a name="walkthrough-building-an-application"></a>チュートリアル: アプリケーションをビルドします。
 
@@ -78,7 +78,7 @@ ms.locfileid: "60045474"
 
 ## <a name="BKMK_CreateBuildConfig"></a> カスタム ビルド構成を作成する
 
-ソリューションを作成すると、デバッグ ビルド構成およびリリース ビルド構成と、これらの既定のプラットフォーム ターゲットがソリューションに対して自動的に定義されます。 これらの構成をカスタマイズすることも、独自に作成することもできます。 ビルド構成では、ビルドの種類を指定します。 ビルド プラットフォームでは、その構成でアプリケーションが対象とするオペレーティング システムを指定します。 詳細については、「[Understanding Build Configurations](../ide/understanding-build-configurations.md)」(ビルド構成の概要)、「[Understanding Build Platforms](../ide/understanding-build-platforms.md)」(ビルド プラットフォームの概要)、「[デバッグ構成およびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。
+ソリューションを作成すると、デバッグ ビルド構成およびリリース ビルド構成と、これらの既定のプラットフォーム ターゲットがソリューションに対して自動的に定義されます。 これらの構成をカスタマイズすることも、独自に作成することもできます。 ビルド構成では、ビルドの種類を指定します。 ビルド プラットフォームでは、その構成でアプリケーションが対象とするオペレーティング システムを指定します。 詳細については、「[Understanding Build Configurations](../ide/understanding-build-configurations.md)」(ビルド構成の概要)、「[Understanding Build Platforms](../ide/understanding-build-platforms.md)」(ビルド プラットフォームの概要)、「[デバッグ構成およびリリース プロジェクト構成](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)」を参照してください。
 
 **[構成マネージャー]** ダイアログ ボックスを使用すると、構成とプラットフォームの設定を変更または作成できます。 この手順では、テスト用のビルド構成を作成します。
 
@@ -197,9 +197,9 @@ ms.locfileid: "60045474"
 
     ビルド情報には、ビルドの開始時刻 (出力の先頭にあります)、ファイルが処理された順序、プロセスの完了までにかかった時間 (出力の末尾にあります) が含まれています。 この情報には、ビルド時に Visual Studio で実行される実際のコンパイラ構文も含まれています。
 
-    たとえば、Visual C# のビルドの場合、[/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) オプションには、このトピックで指定した警告コード 1762 が、他の 3 つの警告と共に示されます。
+    たとえば、Visual C# のビルドの場合、[/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) オプションには、このトピックで指定した警告コード 1762 が、他の 3 つの警告と共に示されます。
 
-    Visual Basic のビルドの場合、[/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) には除外する特定の警告が含まれていないため、警告は表示されません。
+    Visual Basic のビルドの場合、[/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) には除外する特定の警告が含まれていないため、警告は表示されません。
 
    > [!TIP]
    > Ctrl キーを押しながら F キーを押して **[検索]** ダイアログ ボックスを表示すると、**[出力]** ウィンドウの内容を検索できます。
@@ -264,6 +264,6 @@ ms.locfileid: "60045474"
 
 ## <a name="see-also"></a>関連項目
 
-- [チュートリアル: プロジェクトの構築 (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
-- [ASP.NET Web アプリケーション プロジェクト プリコンパイルの概要](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [チュートリアル: プロジェクトの構築 (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
+- [ASP.NET Web アプリケーション プロジェクト プリコンパイルの概要](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
 - [チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)

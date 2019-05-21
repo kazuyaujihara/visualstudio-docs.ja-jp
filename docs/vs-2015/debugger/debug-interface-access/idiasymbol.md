@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e190360b4441a937e9bfa9fb317f9d07de506040
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c9b267893bacef8c9126b1a17b4eb444af6a1dd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447234"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692886"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -102,7 +102,7 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|Longjmp コマンド (C スタイルの例外処理の一部) が関数に含まれるかどうかを示すフラグを取得します。|  
 |[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|マネージ コードが、モジュールに含まれるかどうかを示すフラグを取得します。|  
 |[IDiaSymbol::get_hasNestedTypes](../../debugger/debug-interface-access/idiasymbol-get-hasnestedtypes.md)|ユーザー定義データ型の種類の定義に入れ子になったかどうかを示すフラグを取得します。|  
-|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|関数またはコンパイル単位でコンパイルされたセキュリティ チェックがあるかどうかを示すフラグを取得します (を使用して、 [/GS (バッファー セキュリティ チェック)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)コンパイラ スイッチ)。|  
+|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|関数またはコンパイル単位でコンパイルされたセキュリティ チェックがあるかどうかを示すフラグを取得します (を使用して、 [/GS (バッファー セキュリティ チェック)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)コンパイラ スイッチ)。|  
 |[IDiaSymbol::get_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|関数では、Win32 スタイルの構造化例外処理があるかどうかを示すフラグを取得します。|  
 |[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|Setjmp コマンドが、関数に含まれるかどうかを示すフラグを取得します。|  
 |[IDiaSymbol::get_indirectVirtualBaseClass](../../debugger/debug-interface-access/idiasymbol-get-indirectvirtualbaseclass.md)|ユーザー定義データ型が間接仮想基底クラスであるかどうかを示すフラグを取得します。|  
@@ -117,12 +117,12 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|モジュールが共通中間言語 (CIL) からをネイティブ コードに変換されたかどうかを示すフラグを取得します。|  
 |[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|ユーザー定義データ型の要素を特定の境界に配置するかどうかを示すフラグを取得します。|  
 |[IDiaSymbol::get_isHLSLData](../../debugger/debug-interface-access/idiasymbol-get-ishlsldata.md)|このシンボルが上位レベル シェーダー言語 (HLSL) のデータを表すかどうかを指定します。|  
-|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|モジュールをコンパイルしたかどうかを示すフラグを取得、 [/hotpatch (ホットパッチ可能なイメージの作成)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798)コンパイラ スイッチ。|  
+|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|モジュールをコンパイルしたかどうかを示すフラグを取得、 [/hotpatch (ホットパッチ可能なイメージの作成)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798)コンパイラ スイッチ。|  
 |[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|リンカーの LTCG にマネージ コンパイル単位がリンクされているかどうかを示すフラグを取得します。|  
 |[IDiaSymbol::get_isMatrixRowMajor](../../debugger/debug-interface-access/idiasymbol-get-ismatrixrowmajor.md)|マトリックスが主要な行であるかどうかを指定します。|  
 |[IDiaSymbol::get_isMSILNetmodule](../../debugger/debug-interface-access/idiasymbol-get-ismsilnetmodule.md)|マネージ コンパイル単位が、.netmodule を (メタデータのみを含む) であるかどうかを示すフラグを取得します。|  
 |[IDiaSymbol::get_isMultipleInheritance](../../debugger/debug-interface-access/idiasymbol-get-ismultipleinheritance.md)|指定するかどうか、`this`多重継承を持つデータ メンバーを指すポインター。|  
-|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|関数があるかどうかを示すフラグを取得、 [naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d)属性。|  
+|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|関数があるかどうかを示すフラグを取得、 [naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d)属性。|  
 |[IDiaSymbol::get_isOptimizedAway](../../debugger/debug-interface-access/idiasymbol-get-isoptimizedaway.md)|変数が最適化に機能しているかどうかを指定します。|  
 |[IDiaSymbol::get_isPointerBasedOnSymbolValue](../../debugger/debug-interface-access/idiasymbol-get-ispointerbasedonsymbolvalue.md)|指定するかどうか、`this`ポインターがシンボル値に基づきます。|  
 |[IDiaSymbol::get_isPointerToDataMember](../../debugger/debug-interface-access/idiasymbol-get-ispointertodatamember.md)|このシンボルがデータ メンバーへのポインターであるかどうかを指定します。|  
@@ -152,8 +152,8 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_msil](../../debugger/debug-interface-access/idiasymbol-get-msil.md)|Microsoft Intermediate Language (MSIL) コードをシンボルが参照するかどうかを示すフラグを取得します。|  
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|シンボルの名前を取得します。|  
 |[IDiaSymbol::get_nested](../../debugger/debug-interface-access/idiasymbol-get-nested.md)|ユーザー定義データ型が入れ子になっているかどうかを示すフラグを取得します。|  
-|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|関数が付いているかどうかを示すフラグを取得、 [noinline](http://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42)属性。|  
-|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|関数が宣言されているかどうかを示すフラグを取得、 [noreturn](http://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d)属性。|  
+|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|関数が付いているかどうかを示すフラグを取得、 [noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42)属性。|  
+|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|関数が宣言されているかどうかを示すフラグを取得、 [noreturn](https://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d)属性。|  
 |[IDiaSymbol::get_noStackOrdering](../../debugger/debug-interface-access/idiasymbol-get-nostackordering.md)|スタックの順序付けでしたを実行できるかスタック バッファーのチェックの一部としてを示すフラグを取得しません。|  
 |[IDiaSymbol::get_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|関数またはラベルに達することはないかどうかを示すフラグを取得します。|  
 |[IDiaSymbol::get_numberOfAcceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-numberofacceleratorpointertags.md)|C++ AMP のスタブ関数では、アクセラレータのポインターのタグの数を返します。|  

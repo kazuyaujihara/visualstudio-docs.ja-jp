@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bfd585a3185d83981d24c8dc77e62193c1363d4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb77271c37b02104a0e1695d5495ff085518acad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442548"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675289"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,19 +60,19 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
   [リモート コンピューターでの Windows ストア アプリの実行](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
-  [アプリのパフォーマンスの分析](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
+  [アプリのパフォーマンスの分析](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
-- [JavaScript 関数タイミング](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
+- [JavaScript 関数タイミング](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
-- [リモート デバイスで JavaScript 関数タイミング](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [リモート デバイスで JavaScript 関数タイミング](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
-- [JavaScript 関数タイミング データの分析](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+- [JavaScript 関数タイミング データの分析](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
-- [ローカル コンピューターでの Windows ストア アプリの Visual C++、Visual C#、および Visual Basic コードのプロファイリング](http://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [ローカル コンピューターでの Windows ストア アプリの Visual C++、Visual C#、および Visual Basic コードのプロファイリング](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
-- [リモート デバイスでの Windows ストア アプリの Visual C++、Visual C#、および Visual Basic コードのプロファイリング](http://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [リモート デバイスでの Windows ストア アプリの Visual C++、Visual C#、および Visual Basic コードのプロファイリング](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
-- [Windows ストア アプリの Visual C++、Visual C#、および Visual Basic コードのパフォーマンス データの分析](http://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Windows ストア アプリの Visual C++、Visual C#、および Visual Basic コードのパフォーマンス データの分析](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
   [このトピックの内容](#BKMK_In_this_topic)  
   
@@ -136,7 +136,7 @@ Windows 8 および Windows Server 2012 の強化されたセキュリティ機�
   
    **リモート コンピューターでの TIP データの収集**  
   
-   リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** フォルダーから **vs\_profiler\_**_\<プラットフォーム>_**\_**_\<言語>_**.exe** ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [Visual Studio Remote Tools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。  
+   リモート コンピューターで階層相互作用データを収集するには、Visual Studio コンピューターの _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** フォルダーから **vs\_profiler\_**_\<プラットフォーム>_**\_**_\<言語>_**.exe** ファイルをリモート コンピューターにコピーしてインストールする必要があります。 [Visual Studio Remote Tools](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) のダウンロード パッケージにあるプロファイリング ツールを使用することはできません。  
   
    プロファイル データを収集するには、[VSPerfCmd](../profiling/vsperfcmd.md) または [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) を使用できます。  
   

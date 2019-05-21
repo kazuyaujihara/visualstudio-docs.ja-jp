@@ -12,12 +12,12 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d83c90d7e94471374f0c882f3868d16c963e4490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80734d9859df2e06bc51d40e1fffa40c7d97c7a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440083"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691806"
 ---
 # <a name="support-for-user-settings"></a>ユーザー設定のサポート
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ VSPackage は、ユーザーが選択したときに永続化状態変数のグ�
   
  カスタム設定ポイントと GUID として参照されるレジストリ エントリは、VSPackage のカテゴリの設定を定義します。 VSPackage が複数のカテゴリの設定をサポートできますが、カスタム設定ポイントによって定義されている各。  
   
-- 相互運用機能アセンブリに基づく設定の実装 (を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>インターフェイス)、レジストリを編集するか、レジストラー スクリプト (.rgs ファイル) を使用してカスタム設定ポイントを作成する必要があります。 詳細については、「 [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)」を参照してください。  
+- 相互運用機能アセンブリに基づく設定の実装 (を使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>インターフェイス)、レジストリを編集するか、レジストラー スクリプト (.rgs ファイル) を使用してカスタム設定ポイントを作成する必要があります。 詳細については、「 [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)」を参照してください。  
   
 - 管理パッケージ フレームワーク (MPF) を使用するコードは、アタッチすることでのカスタム設定ポイントを作成する必要があります、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>各カスタム設定ポイントの VSPackage にします。  
   
@@ -56,6 +56,6 @@ VSPackage は、ユーザーが選択したときに永続化状態変数のグ�
 |----------|----------|----------|-----------------|  
 |(既定)|REG_SZ|カスタム設定ポイントの名前|キーの名前、 `<CSPName`>、カスタム設定ポイントのローカライズされていない名前を指定します。<br /><br /> MPF に基づいた実装では、キーの名前を取得するのと組み合わせることで、`categoryName`と`objectName`の引数、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>コンス トラクターに`categoryName_objectName`します。<br /><br /> キーは、空にできます。 またはサテライト DLL にローカライズされた文字列への参照 ID を含めることができます。 この値は、`objectNameResourceID`への引数、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>コンス トラクター。|  
 |Package|REG_SZ|GUID|カスタム設定ポイントを実装する VSPackage の GUID です。<br /><br /> 実装で、MPF を使用してに基づいて、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>クラスを使用して、コンス トラクターの`objectType`引数を含む VSPackage の<xref:System.Type>とリフレクションはこの値を取得します。|  
-|カテゴリ|REG_SZ|GUID|設定カテゴリを識別する GUID。<br /><br /> 相互運用機能アセンブリに基づく実装では、この値は任意に選択したは、GUID を[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE に渡します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A>メソッド。 これら 2 つのメソッドのすべての実装では、その GUID 引数を確認してください。<br /><br /> MPF に基づいた実装では、この GUID を取得するので、<xref:System.Type>実装するクラスの[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]設定メカニズム。|  
+|Category|REG_SZ|GUID|設定カテゴリを識別する GUID。<br /><br /> 相互運用機能アセンブリに基づく実装では、この値は任意に選択したは、GUID を[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE に渡します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A>メソッド。 これら 2 つのメソッドのすべての実装では、その GUID 引数を確認してください。<br /><br /> MPF に基づいた実装では、この GUID を取得するので、<xref:System.Type>実装するクラスの[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]設定メカニズム。|  
 |ResourcePackage|REG_SZ|GUID|任意。<br /><br /> サテライト DLL を含むへのパスでは、実装する VSPackage がそれらを指定しない場合、文字列がローカライズされました。<br /><br /> MPF リフレクションを使用して、適切なリソース、VSPackage を取得するため、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>クラスは、この引数を設定しません。|  
 |AlternateParent|REG_SZ|このカスタム設定ポイントを格納しているツール オプション ページの下のフォルダーの名前です。|任意。<br /><br /> 設定の実装をサポートしている場合にのみ、この値を設定する必要があります**ツール オプション**で永続化メカニズムを使用するページ、[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]オートメーション モデルの状態を保存するメカニズムではなく。<br /><br /> AlternateParent キーの値は、このような場合、`topic`のセクション、`topic.sub-topic`特定を識別するために使用される文字列**制御**ページ。 たとえば、**制御**ページ`"TextEditor.Basic"`AlternateParent の値になります。`"TextEditor"`します。<br /><br /> ときに<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>カスタム設定ポイントを生成します。 これは、カテゴリ名と同じです。|

@@ -177,7 +177,7 @@ ms.locfileid: "63438550"
 
 5. データベースへの接続を無効にします。 データベースがサーバー上にある場合は、コンピューターからネットワーク ケーブルを外します。 またはデータベースが開発用コンピューター上にある場合は、SQL Server サービスを停止します。
 
-6. Excel を開き、開き**マイ マスター Detail.xlsx**から、 *\bin*ディレクトリ (*\My Master-Detail\bin* Visual basic または*\My Master-Detail\bin\デバッグ*(C#))。
+6. Excel を開き、開き**マイ マスター Detail.xlsx**から、 *\bin*ディレクトリ ( *\My Master-Detail\bin* Visual basic または *\My Master-Detail\bin\デバッグ* (C#))。
 
 7. 切断されている場合、ワークシートは通常どおりことを確認するレコードの一部をスクロールします。
 

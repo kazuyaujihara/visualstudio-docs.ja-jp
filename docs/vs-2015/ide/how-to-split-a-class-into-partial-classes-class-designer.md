@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9f42fd4b43ec9aaced9d47d0c5670e6f0b0d711
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 23d344d2f350b5b7a2e376e8856c916d9baa01f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435172"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702607"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>方法: 1 つのクラスを複数の部分クラスに分割する (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "63435172"
 > [!NOTE]
 > Visual Basic では、部分クラス定義を使用し、Visual Studio によって生成されたコードとユーザーが作成したコードを分離します。 コードは別個のソース ファイルに分割されます。 たとえば、**Windows フォーム デザイナー**では、`Form` などのコントロールに部分クラスを定義します。 これらのコントロールでは、生成されたコードを変更しないでください。  
   
- Visual Basic の部分型に関する詳細については、「[Partial](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)」 (部分型) を参照してください。  
+ Visual Basic の部分型に関する詳細については、「[Partial](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)」 (部分型) を参照してください。  
   
 ## <a name="example"></a>例  
  Visual Basic でクラス定義を分割するには、次の例のように、`Partial` キーワードを使用します。  
@@ -76,7 +76,7 @@ public partial class Employee
 ```  
   
 ## <a name="see-also"></a>関連項目
- [部分クラスと部分メソッド](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)   
- [partial (型)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)   
- [partial (メソッド) (C# リファレンス)](http://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137)   
- [Partial](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)
+ [部分クラスと部分メソッド](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)   
+ [partial (型)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)   
+ [partial (メソッド) (C# リファレンス)](https://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137)   
+ [Partial](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)

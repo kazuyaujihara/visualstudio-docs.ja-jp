@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f1c31d858fbe7a5183456bfc7fcc1e602d4e051
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439956"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686037"
 ---
 # <a name="rename-refactoring-c"></a>名前の変更リファクタリング (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "63439956"
 |-----------------|----------------------|  
 |フィールド|新しい名前を宣言し、フィールドの使用法を変更します。|  
 |ローカル変数|新しい名前に、宣言と変数の使用法を変更します。|  
-|メソッド|新しい名前に、メソッドとそのメソッドに対するすべての参照の名前を変更します。 **注:** 拡張メソッドの名前を変更するときに、名前の変更操作は、メソッドの拡張メソッドが静的メソッドまたはインスタンス メソッドとして使用されているかどうかに関係なく、スコープ内のすべてのインスタンスに伝達されます。 詳細については、「[拡張メソッド](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51)」を参照してください。|  
+|メソッド|新しい名前に、メソッドとそのメソッドに対するすべての参照の名前を変更します。 **注:** 拡張メソッドの名前を変更するときに、名前の変更操作は、メソッドの拡張メソッドが静的メソッドまたはインスタンス メソッドとして使用されているかどうかに関係なく、スコープ内のすべてのインスタンスに伝達されます。 詳細については、「[拡張メソッド](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51)」を参照してください。|  
 |名前空間|名前空間の名前を宣言で、新しい名前に変更すべて`using`ステートメント、および完全修飾名。 **注:** 名前空間の名前を変更するときに[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]も更新、**既定 Namespace**プロパティを**アプリケーション**のページ、**プロジェクト デザイナー**します。 このプロパティを選択してリセットすることはできません**を元に戻す**から、**編集**メニュー。 リセット、**既定 Namespace**プロパティの値でプロパティを変更する必要があります、**プロジェクト デザイナー**します。 詳細については、次を参照してください。[アプリケーション ページ](../ide/reference/application-page-project-designer-csharp.md)します。|  
 |プロパティ|新しい名前を宣言し、プロパティの使用法を変更します。|  
 |型|すべての宣言と型のすべての使用状況をコンス トラクターとデストラクターを含む、新しい名前に変更します。 部分の型の名前の変更操作は、すべての部分に反映されます。|  
@@ -170,4 +170,4 @@ var orderIDs =
   
 ## <a name="see-also"></a>関連項目  
  [リファクタリング (C#)](../csharp-ide/refactoring-csharp.md)   
- [匿名型](http://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)
+ [匿名型](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)

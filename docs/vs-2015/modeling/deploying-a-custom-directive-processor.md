@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c485209f47e2d119fe469a59fe379f7cabe03813
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 14bb73043a3c206f5b7397717a113e479a4163d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422592"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699686"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>カスタム ディレクティブ プロセッサの配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63422592"
   
  次の方法があります。  
   
-- [Visual Studio 拡張機能 (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832)します。 これを使用すると、ディレクティブ プロセッサを自分のコンピューターと他のコンピューターの両方でインストールおよびアンインストールできます。 通常は、他の機能も同じ VSIX にパッケージ化します。  
+- [Visual Studio 拡張機能 (VSIX)](https://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832)します。 これを使用すると、ディレクティブ プロセッサを自分のコンピューターと他のコンピューターの両方でインストールおよびアンインストールできます。 通常は、他の機能も同じ VSIX にパッケージ化します。  
   
 - [VSPackage](../extensibility/internals/vspackages.md)  ディレクティブ プロセッサ以外の機能も含む VSPackage を定義する場合は、ディレクティブ プロセッサの便利な登録方法を利用できます。  
   
@@ -34,7 +34,7 @@ ms.locfileid: "63422592"
   これらの方法のいずれかを使用する必要があるのは、テキスト テンプレートを [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] または [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] で変換する場合だけです。 独自のアプリケーションのカスタム ホストを使用する場合は、そのカスタム ホストを通じて各ディレクティブのディレクティブ プロセッサを探します。  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>VSIX でのディレクティブ プロセッサの配置  
- カスタム ディレクティブ プロセッサを、[Visual Studio 拡張機能 (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832) に追加することができます。  
+ カスタム ディレクティブ プロセッサを、[Visual Studio 拡張機能 (VSIX)](https://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832) に追加することができます。  
   
  .vsix ファイルに次の 2 つのアイテムが格納されていることを確認する必要があります。  
   

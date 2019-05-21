@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a78025bd11e56b001514f580acca18b7d21d5424
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1a6160fb42ab3648eae9a7ea416e244b5cfabc99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067054"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700910"
 ---
 # <a name="cpu-usage"></a>CPU 使用率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60067054"
   
  Windows ストア アプリのパフォーマンス分析に関するチュートリアルについては、「 [ストア アプリにおける CPU 使用率の分析](https://msdn.microsoft.com/library/windows/apps/dn641982.aspx)」を参照してください。  
   
- パフォーマンスと診断ハブでは、診断セッションの実行と管理のために他の多くのオプションを提供しています。 たとえば、 **CPU 使用率** ツールをローカルまたはリモートのコンピューターで、あるいはシミュレーターやエミュレーターで実行できます。 Visual Studio で開いているプロジェクトのパフォーマンスを分析したり、実行中のアプリにアタッチしたり、Windows ストアからインストールされたアプリを開始したりできます。 詳細については、次を参照してください[デバッグなしでプロファイリング ツールの実行。](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+ パフォーマンスと診断ハブでは、診断セッションの実行と管理のために他の多くのオプションを提供しています。 たとえば、 **CPU 使用率** ツールをローカルまたはリモートのコンピューターで、あるいはシミュレーターやエミュレーターで実行できます。 Visual Studio で開いているプロジェクトのパフォーマンスを分析したり、実行中のアプリにアタッチしたり、Windows ストアからインストールされたアプリを開始したりできます。 詳細については、次を参照してください[デバッグなしでプロファイリング ツールの実行。](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_CPU_usage_data"></a> CPU 使用率のデータの収集  
   

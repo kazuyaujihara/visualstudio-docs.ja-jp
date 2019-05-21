@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7e65f7e01971e6cf27bfad75e1536e83b833bd3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432435"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680786"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK のサポート
 さまざまなサポート オプション、Visual Studio 統合開発環境 (IDE) を拡張する方法についての質問をお持ちのお客様に利用できます。
@@ -45,7 +45,7 @@ GitHub の[Visual Studio のサンプル](https://github.com/Microsoft/VSSDK-Ext
 ## <a name="included-support"></a>対象のサポート
 
 ### <a name="visual-studio-product-support"></a>Visual Studio 製品のサポート
- 一部のサポートがの購入時に含まれる[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]製品です。 詳細については、次を参照してください。 [Visual Studio サポート](http://msdn.microsoft.com/vstudio/cc136615.aspx)します。 Microsoft の管理に関する質問に回答する専用のサポート チーム[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]機能拡張。
+ 一部のサポートがの購入時に含まれる[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]製品です。 詳細については、次を参照してください。 [Visual Studio サポート](https://msdn.microsoft.com/vstudio/cc136615.aspx)します。 Microsoft の管理に関する質問に回答する専用のサポート チーム[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]機能拡張。
 
 ### <a name="msdn-subscription-support"></a>MSDN サブスクリプションのサポート
  MSDN サブスクリプションのパッケージは、一部のサポートを含めることもできます。 詳細については、次を参照してください。 [MSDN サブスクリプション会員のサポート](https://msdn.microsoft.com/subscriptions/aa718661.aspx)します。
@@ -67,4 +67,4 @@ VSIP プログラムと組み合わせて Premier サポート プランに関�
 
 ## <a name="see-also"></a>関連項目
 
-- [ご意見](../ide/talk-to-us.md)
+- [ご意見](../ide/feedback-options.md)

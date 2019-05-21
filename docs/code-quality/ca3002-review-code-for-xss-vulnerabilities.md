@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a10f72297746a1e7bda3c69f8f7daf0efacd20bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 383011e53b14ec2cc7dd7474cd050f05295a2a73
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541268"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841468"
 ---
 # <a name="ca3002-review-code-for-xss-vulnerabilities"></a>CA3002:XSS の脆弱性のコード レビュー
 
@@ -40,7 +40,7 @@ Web 要求から信頼されていない入力を使用する場合はあるク�
 > このルールは、アセンブリ間でデータを追跡することはできません。 たとえば場合は、1 つのアセンブリは、HTTP 要求の入力を読み取って、生の HTML を出力する別のアセンブリに渡されます、このルールは警告を生成しません。
 
 > [!NOTE]
-> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)で制限を構成する方法の`.editorconfig`ファイル。
+> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)の EditorConfig ファイルで制限を構成する方法。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 

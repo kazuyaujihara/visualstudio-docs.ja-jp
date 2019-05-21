@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5b5bc2bacb53973bd552b983b742e4f9e68fe31b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061711"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687708"
 ---
 # <a name="when-to-create-project-types"></a>プロジェクト タイプを作成する状況
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "60061711"
 |タスク|説明|  
 |----------|-----------------|  
 |コマンドの処理|すべての VSPackage では、コマンドを処理できます。|  
-|エディターの構築|カスタム エディターを登録することができます。 詳細については、次を参照してください。[ドキュメント Windows およびエディター](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)します。|  
+|エディターの構築|カスタム エディターを登録することができます。 詳細については、次を参照してください。[ドキュメント Windows およびエディター](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)します。|  
 |Windows を所有しています。|新しいプロジェクトの種類を追加せず、両方のツールとドキュメント ウィンドウを作成できます。|  
 |[プロパティ] ウィンドウでプロパティを公開します。|すべてのオブジェクトには、プロパティを公開できます。|  
   
@@ -60,6 +60,6 @@ ms.locfileid: "60061711"
  プロジェクト サブタイプを使用して、新しいプロジェクトの種類を作成することがなく、マネージ プロジェクトの種類を拡張することができます。 プロジェクト サブタイプでは、COM の集計を使用して、Microsoft で記述されたマネージ プロジェクトを拡張する[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]または[!INCLUDE[csprcs](../../includes/csprcs-md.md)]します。 COM の集計を含むマネージ プロジェクト システムの実装の大部分を再利用し、集計と、インターフェイスのサポートの使用を特定のシナリオをカスタマイズできます。 プロジェクト サブタイプの詳細については、次を参照してください。[プロジェクト サブタイプ](../../extensibility/internals/project-subtypes.md)します。  
   
 ## <a name="see-also"></a>関連項目  
- [Windows のドキュメントおよびエディター](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
- [チェックリスト:新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Windows のドキュメントおよびエディター](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [チェックリスト: 新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Visual Studio での階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

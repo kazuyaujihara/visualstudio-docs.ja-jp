@@ -21,12 +21,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ba48e28d5ace9dc1c07d7ec302d070d5d5f15e6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: de804cb26eb9c51acc67445e1f1b1c0fdfabab91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58977664"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697533"
 ---
 # <a name="publishing-clickonce-applications"></a>ClickOnce アプリケーションの発行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,8 +98,8 @@ ms.locfileid: "58977664"
 |[チュートリアル: ClickOnce 配置 API を使用して必要に応じてサテライト アセンブリをダウンロードする](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|サテライト アセンブリをオプションとしてマークする方法、および現在のカルチャ設定にクライアント コンピューターが必要とするアセンブリのみをダウンロードする方法について説明します。|  
 |[チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework ユーティリティを使用して ClickOnce アプリケーションを配置する方法を説明します。|  
 |[チュートリアル: 再署名が不要で商標を保持する ClickOnce アプリケーションの手動配置](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)|.NET Framework ユーティリティを使用して、マニフェストに再署名せずに ClickOnce アプリケーションを配置する方法について説明します。|  
-|[NIB:方法: 特定の CPU の種類のアプリケーションを最適化します。](http://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|プロジェクトの **[対象の CPU]** プロパティまたは **[プラットフォーム ターゲット]** プロパティを変更して、64 ビット プロセッサ用に発行する方法について説明します。|  
-|[チュートリアル: ClickOnce アプリケーションの複数の .NET Framework のバージョンで実行を有効にします。](http://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|複数バージョンの .NET Framework で ClickOnce アプリケーションのインストールと実行を行う方法について説明します。|  
+|[NIB:方法: 特定の CPU の種類のアプリケーションを最適化します。](https://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|プロジェクトの **[対象の CPU]** プロパティまたは **[プラットフォーム ターゲット]** プロパティを変更して、64 ビット プロセッサ用に発行する方法について説明します。|  
+|[チュートリアル: ClickOnce アプリケーションの複数の .NET Framework のバージョンで実行を有効にします。](https://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|複数バージョンの .NET Framework で ClickOnce アプリケーションのインストールと実行を行う方法について説明します。|  
 |[チュートリアル: ClickOnce アプリケーションのカスタム インストーラーの作成](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|カスタム インストーラーを作成し、ClickOnce アプリケーションをインストールする方法について説明します。|  
 |[方法: Visual スタイルが有効になっている WPF アプリケーションを公開する](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Visual スタイルが有効になっている WPF アプリケーションを発行しようとしたときに表示されるエラーを解決する手順について説明します。|  
   

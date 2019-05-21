@@ -21,12 +21,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f28c6e0914bd37affab72e75e8bbf3f82299c4e
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 39076459f684aafce4e800ecad6341d120aac480
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002986"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691440"
 ---
 # <a name="debugging-managed-code"></a>マネージド コードのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,16 +68,16 @@ ms.locfileid: "59002986"
  [IntelliTrace](../debugger/intellitrace.md)  
  IntelliTrace でアプリの実行履歴を記録することにより、すばやく簡単にバグを検索します。 記録されたイベントと呼び出しを前後にステップ実行して重要な時点でのアプリの状態を調べます。 多くのブレークポイントを設定することも、アプリを頻繁に再起動することもなく、コードをデバッグします。 Visual Studio Ultimate が必要です。  
   
- [アプリケーションのトレースとインストルメント](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
+ [アプリケーションのトレースとインストルメント](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
  アプリケーションの実行を監視するトレース、およびコードの重要な位置にトレース ステートメントを挿入するインストルメントについて説明します。 ここでは、ステートメントのインストルメンテーションとトレース、トレース スイッチ、トレース リスナー、アプリケーション コードのトレース、アプリケーション コードへのトレース ステートメントの追加、<xref:System.Diagnostics.Debug> と <xref:System.Diagnostics.Trace> を使った条件付きコンパイルの説明へのリンクを提供します。  
   
- [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
+ [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
  C++ で作成されたコードに <xref:System.Diagnostics.DebuggableAttribute> を追加するリンカー オプションについて説明します。 この属性は、C++ によるアタッチなどのデバッグ機能を使用するときに必要です。  
   
- [Windows サービス アプリケーションのデバッグ](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
+ [Windows サービス アプリケーションのデバッグ](https://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
  Windows サービス アプリケーションのデバッグに関する注意事項を示します。セットアップ、プロセスとのアタッチ、サービスの `OnStart` メソッドと Main メソッドのコードのデバッグ、ブレークポイントの設定、サービス コントロール マネージャーを使用したサービスの開始、停止、一時中断、継続などが含まれます。  
   
- [アプリケーションのデバッグとプロファイリング](http://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
+ [アプリケーションのデバッグとプロファイリング](https://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
  .NET Framework アプリケーションのデバッグと構成要件について説明します。  
   
  [スクリプトと Web アプリケーションのデバッグ](../debugger/debugging-web-applications-and-script.md)  
@@ -88,6 +88,6 @@ ms.locfileid: "59002986"
  デバッグに関連するドキュメントのより広範囲なリンクを提供します。 これらのリンクでは、デバッガーの新機能、設定と準備、ブレークポイント、例外処理、エディット コンティニュ、マネージド コードのデバッグ、Visual C++ プロジェクトのデバッグ、COM および ActiveX のデバッグ、DLL のデバッグ、SQL のデバッグ、ユーザー インターフェイス リファレンスなどの情報が示されます。  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: デザイン時のフォーム コントロールのカスタムの Windows のデバッグ](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+ [チュートリアル: デザイン時のフォーム コントロールのカスタムの Windows のデバッグ](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [デバッガーのセキュリティ](../debugger/debugger-security.md)   
  [Visual Studio でのデバッグ](../debugger/debugging-in-visual-studio.md)

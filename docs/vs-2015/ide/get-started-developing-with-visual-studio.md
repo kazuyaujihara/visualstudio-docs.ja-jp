@@ -11,12 +11,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd65c41f49dc49b9302e721d889aeaad2dfc6bfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2aeacb6af2be2b81b639ce89820ee0584a19ac8c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071994"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701023"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Visual Studio を使用した開発の開始
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,6 +65,6 @@ Visual Studio へようこそ。 製品を [ダウンロード](http://www.visua
 
 |||
 |-|-|
-|[Visual C# と Visual Basic の概要](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[JavaScript コードの記述](http://msdn.microsoft.com/library/cte3c772\(v=vs.94\).aspx)|
-|[クロス プラットフォーム モバイル開発のための Visual C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)|[F# を使用した関数型プログラミングの概要](http://msdn.microsoft.com/library/vstudio/dd233147.aspx)|
+|[Visual C# と Visual Basic の概要](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[JavaScript コードの記述](https://msdn.microsoft.com/library/cte3c772\(v=vs.94\).aspx)|
+|[クロス プラットフォーム モバイル開発のための Visual C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)|[F# を使用した関数型プログラミングの概要](https://msdn.microsoft.com/library/vstudio/dd233147.aspx)|
 |[C++ の概要](../ide/getting-started-with-cpp-in-visual-studio.md)|[Visual Studio 2015 のデバッグの概要](../ide/getting-started-with-debugging-in-visual-studio-2015.md)|

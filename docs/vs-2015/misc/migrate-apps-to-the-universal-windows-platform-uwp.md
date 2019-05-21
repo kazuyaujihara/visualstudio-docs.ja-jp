@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86bc76b9b71c7b73a8d299aab41cb6e2eb37680d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001215"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686669"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>アプリを Universal Windows Platform (UWP) へ移行する
 Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows Phone 8.1 アプリ、またはユニバーサル Windows アプリ用の既存のプロジェクト ファイルに必要な変更を手動で加え、Visual Studio 2015 RTM で使用できるようにします。 (Windows アプリのプロジェクトと Windows Phone プロジェクトの両方を備えた Windows 8.1 ユニバーサル アプリがある場合、各プロジェクトを移行するための手順に従う必要があります。)  
@@ -29,7 +29,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
 - [Visual Studio 2015 RC で作成されたユニバーサル Windows アプリの既存の単体テスト プロジェクトに必要な変更](#MigrateUnitTest)。  
   
-  これらのすべての変更を加えない場合は、新しいユニバーサル Windows プロジェクトに [既存のアプリを移植する方法](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) を参照してください。  
+  これらのすべての変更を加えない場合は、新しいユニバーサル Windows プロジェクトに [既存のアプリを移植する方法](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) を参照してください。  
   
 ## <a name="MigrateCSharp"></a> 移行、C#または VB Windows ストア 8.1 または Windows Phone 8.1 アプリ、ユニバーサル Windows プラットフォームを使用するには  
   
@@ -110,7 +110,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
     6. 追加、 \<EnableDotNetNativeCompatibleProfile > 要素に値を設定および: **true**します。  
   
-    7. ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 追加する必要がありますが、プロジェクトには、200 で縮小しないアセットが含まれている場合、 \<UapDefaultAssetScale > この PropertyGroup に資産の小数点以下桁数の値を持つ要素。 詳細については、「 [資産とスケール](http://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。  
+    7. ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 追加する必要がありますが、プロジェクトには、200 で縮小しないアセットが含まれている場合、 \<UapDefaultAssetScale > この PropertyGroup に資産の小数点以下桁数の値を持つ要素。 詳細については、「 [資産とスケール](https://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。  
   
          これで、 \<PropertyGroup > 要素にこの例のようになります。  
   
@@ -272,7 +272,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
     4. 追加、 \<EnableDotNetNativeCompatibleProfile > 要素その値を設定する: true。  
   
-    5. ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 追加する必要がありますが、プロジェクトには、200 で縮小しないアセットが含まれている場合、 \<UapDefaultAssetScale > この PropertyGroup に資産の小数点以下桁数の値を持つ要素。 詳細については、「 [資産とスケール](http://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。  
+    5. ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 追加する必要がありますが、プロジェクトには、200 で縮小しないアセットが含まれている場合、 \<UapDefaultAssetScale > この PropertyGroup に資産の小数点以下桁数の値を持つ要素。 詳細については、「 [資産とスケール](https://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。  
   
     6. Windows Phone のプロジェクトのみの値を変更\<ApplicationType > Windows ストアへの Windows Phone から。  
   
@@ -400,7 +400,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
    ```  
   
-8. 追加、 **uap**名前空間を\<VisualElements > 要素とその子要素のいずれか。 例えば:  
+8. 追加、 **uap**名前空間を\<VisualElements > 要素とその子要素のいずれか。 例:  
   
    ```xml  
    <uap:VisualElements  
@@ -469,7 +469,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
     ```  
   
-11. **uap** 名前空間をタイプ chatMessageNotification のバックグラウンド タスクに追加します。 例:  
+11. **uap** 名前空間をタイプ chatMessageNotification のバックグラウンド タスクに追加します。 例えば:  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -505,7 +505,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
      使用している実際のフレームワークのための適切な Publisher 値と MinVersion 値を使用します。 Windows 10 では、これらの名前が変更される可能性があることに注意してください。  
   
-13. gattCharacteristicNotification と rfcommConnection バック グラウンド タイプ タスクを Bluetooth タイプ タスクに置き換えます。 例えば:  
+13. gattCharacteristicNotification と rfcommConnection バック グラウンド タイプ タスクを Bluetooth タイプ タスクに置き換えます。 例:  
   
      **古い。**  
   
@@ -528,7 +528,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
     </Extension>  
     ```  
   
-14. Bluetooth デバイス機能の bluetooth.rfcomm と bluetooth.genericAttributeProfile を汎用の Bluetooth 機能に置き換えます。 例えば:  
+14. Bluetooth デバイス機能の bluetooth.rfcomm と bluetooth.genericAttributeProfile を汎用の Bluetooth 機能に置き換えます。 例:  
   
      **古い。**  
   
@@ -566,7 +566,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
        - \<ApplicationView > 要素  
   
-         例:  
+         例えば:  
   
        ```xml  
        <m2:VisualElements  
@@ -651,7 +651,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
 4. 検索、 \<PropertyGroup > 要素を含む、 \<TargetPlatformVersion > と\<TargetPlatformMinVersion > 要素。 既存の値の変更、 \<TargetPlatformVersion > と\<TargetPlatformMinVersion > 要素がインストールされているユニバーサル Windows プラットフォームの同じバージョンであります。  
   
-    ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 Visual Studio 2015 RC が含まれる資産を 100 に拡大/縮小で作成したプロジェクトを追加する必要が、 \<UapDefaultAssetScale > この PropertyGroup に 100 の値を持つ要素。 詳細については、「 [資産とスケール](http://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。  
+    ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 Visual Studio 2015 RC が含まれる資産を 100 に拡大/縮小で作成したプロジェクトを追加する必要が、 \<UapDefaultAssetScale > この PropertyGroup に 100 の値を持つ要素。 詳細については、「 [資産とスケール](https://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。  
   
 5. UWP 拡張 SDK (例: Windows Mobile SDK) に参照を追加した場合、SDK のバージョンを更新する必要があります。 たとえばこの\<SDKReference > 要素。  
   
@@ -761,7 +761,7 @@ Visual Studio 2015 RC で作成された Windows Store 8.1 アプリ、Windows P
   
      追加、 \<EnableDotNetNativeCompatibleProfile > 要素とその値を要素が存在しない場合は true に設定します。  
   
-     ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 Visual Studio 2015 RC が含まれる資産を 100 に拡大/縮小で作成したプロジェクトを追加する必要が、 \<UapDefaultAssetScale > この PropertyGroup に 100 の値を持つ要素。 詳細については、「 [資産とスケール](http://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。  
+     ユニバーサル Windows アプリの既定のアセット スケールは 200 です。 Visual Studio 2015 RC が含まれる資産を 100 に拡大/縮小で作成したプロジェクトを追加する必要が、 \<UapDefaultAssetScale > この PropertyGroup に 100 の値を持つ要素。 詳細については、「 [資産とスケール](https://msdn.microsoft.com/library/jj679352.aspx)」を参照してください。  
   
      したがって、 \<PropertyGroup > 要素に次のようになります。  
   

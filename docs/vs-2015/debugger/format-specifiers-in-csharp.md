@@ -27,12 +27,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47287bdc5bf0081970f4077ee8749a1ed0d71dad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6085ba95d3880417e517530069734052741113e2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118241"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682478"
 ---
 # <a name="format-specifiers-in-c"></a>C# の書式指定子\#
 
@@ -64,7 +64,7 @@ ms.locfileid: "60118241"
 
 |指定子|形式|元の [ウォッチ] の値|表示|
 |---------------|------------|--------------------------|--------------|
-|ac|式を強制的に評価します。 これは、プロパティの暗黙の評価および暗黙の関数呼び出しがオフの場合に便利です。 「 [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)」を参照してください。|メッセージ "暗黙的な関数の評価はユーザーによってオフにされました"|\<value>|
+|ac|式を強制的に評価します。 これは、プロパティの暗黙の評価および暗黙の関数呼び出しがオフの場合に便利です。 「 [Side Effects and Expressions](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)」を参照してください。|メッセージ "暗黙的な関数の評価はユーザーによってオフにされました"|\<value>|
 |d|10 進整数|0x0065|101|
 |dynamic|動的ビューを使用して、指定されたオブジェクトを表示します。|動的ビューを含む、オブジェクトのすべてのメンバーを表示します。|動的ビューのみが表示されます。|
 |h|16 進整数|61541|0x0000F065|
@@ -76,4 +76,4 @@ ms.locfileid: "60118241"
 ## <a name="see-also"></a>関連項目
 
 - [ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)
-- [[変数] ウィンドウ](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+- [[変数] ウィンドウ](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

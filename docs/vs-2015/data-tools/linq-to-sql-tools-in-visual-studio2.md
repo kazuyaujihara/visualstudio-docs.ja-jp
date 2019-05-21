@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 24b874ab71cba23a3fe6cf4a6fb36293d6753935
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384056"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697769"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to Visual Studio での SQL ツール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ LINQ to SQL では、Microsoft によってリリースされた最初のオブ�
 
  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]デザイン サーフェイスに 2 つの領域を持つ: エンティティ ペインで、左側と右側のメソッド ペインです。 エンティティ ペインは、エンティティ クラス、関連付け、および継承階層を表示するメインのデザイン サーフェイスです。 メソッド ペインは、ストアド プロシージャと関数にマッピングされる <xref:System.Data.Linq.DataContext> のメソッドを表示するデザイン サーフェイスです。
 
- [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) を作成するためのビジュアル デ ザイン サーフェイスを提供します[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)エンティティ クラスと、データベース内のオブジェクトに基づく関連付け (リレーションシップ)。 つまり、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]は、データベース内のオブジェクトにマップされるオブジェクト モデルをアプリケーションに作成するために使用されます。 また、エンティティ クラスとデータベース間でデータを送受信するために使用する、厳密に型指定された <xref:System.Data.Linq.DataContext> も生成します。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]は、データを返し、エンティティ クラスを設定するために、ストアド プロシージャと関数を <xref:System.Data.Linq.DataContext> のメソッドにマップする機能も提供します。 最後に、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]では、エンティティ クラス間の継承関係をデザインすることもできます。
+ [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) を作成するためのビジュアル デ ザイン サーフェイスを提供します[LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)エンティティ クラスと、データベース内のオブジェクトに基づく関連付け (リレーションシップ)。 つまり、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]は、データベース内のオブジェクトにマップされるオブジェクト モデルをアプリケーションに作成するために使用されます。 また、エンティティ クラスとデータベース間でデータを送受信するために使用する、厳密に型指定された <xref:System.Data.Linq.DataContext> も生成します。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]は、データを返し、エンティティ クラスを設定するために、ストアド プロシージャと関数を <xref:System.Data.Linq.DataContext> のメソッドにマップする機能も提供します。 最後に、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]では、エンティティ クラス間の継承関係をデザインすることもできます。
 
 ## <a name="opening-the-or-designer"></a>O/R デザイナーを開く
  LINQ to SQL エンティティのモデルをプロジェクトを追加する選択**プロジェクト&#124;新しい項目の追加**選び、 **LINQ to SQL クラス**プロジェクト項目の一覧から。
@@ -62,7 +62,7 @@ LINQ to SQL では、Microsoft によってリリースされた最初のオブ�
  [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] クラスは、他のオブジェクトと同様に、継承を使用して他のクラスから派生できます。 データベースでは、継承関係が複数の方法で作成されます。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]では、多くのリレーショナル システムに実装されている単一テーブル継承の概念がサポートされています。 詳細については、「[方法 :O/R デザイナーを使用して継承を構成する](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)」を参照してください。
 
 ## <a name="linq-to-sql-queries"></a>LINQ to SQL クエリ
- によって作成されたエンティティ クラス、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]で使用できるように設計された[LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)します。 詳細については、「[方法 :情報の照会](http://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0)します。
+ によって作成されたエンティティ クラス、[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]で使用できるように設計された[LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)します。 詳細については、「[方法 :情報の照会](https://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0)します。
 
 ## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>生成された DataContext とエンティティ クラス コードの異なる名前空間への分離
  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]提供、**コンテキスト Namespace**と**Entity Namespace**プロパティを<xref:System.Data.Linq.DataContext>します。 これらのプロパティは、<xref:System.Data.Linq.DataContext> およびエンティティ クラスのコードが生成される名前空間を決定します。 既定では、これらのプロパティは空であり、<xref:System.Data.Linq.DataContext> およびエンティティ クラスはアプリケーションの名前空間に生成されます。 アプリケーションの名前空間以外の名前空間にコードを生成するには、**[Context Namespace]** プロパティ、**[Entity Namespace]** プロパティ、またはその両方に値を入力します。
@@ -100,4 +100,4 @@ LINQ to SQL では、Microsoft によってリリースされた最初のオブ�
  <xref:System.Data.Linq>
 
 ## <a name="see-also"></a>関連項目
- [.NET 用の visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)[よく寄せられる質問](http://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [Visual Studio でのデータにアクセスします。](../data-tools/accessing-data-in-visual-studio.md)
+ [.NET 用の visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)[よく寄せられる質問](https://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [Visual Studio でのデータにアクセスします。](../data-tools/accessing-data-in-visual-studio.md)

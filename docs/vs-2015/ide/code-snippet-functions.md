@@ -13,17 +13,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 95ee6a99a069f81a2e63c5bbe11186afaf773423
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5a7a7522d0c3ddab224e19150f47120b92b2dd32
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790008"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701524"
 ---
 # <a name="code-snippet-functions"></a>コード スニペットの関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[csprcs](../includes/csprcs-md.md)] コード スニペットで使用できる関数は 3 つあります。 関数は、コード スニペットの [Function](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) 要素で指定されています。 コード スニペットの作成については、「[コード スニペット](../ide/code-snippets.md)」を参照してください。  
+[!INCLUDE[csprcs](../includes/csprcs-md.md)] コード スニペットで使用できる関数は 3 つあります。 関数は、コード スニペットの [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) 要素で指定されています。 コード スニペットの作成については、「[コード スニペット](../ide/code-snippets.md)」を参照してください。  
   
 ## <a name="functions"></a>関数  
  次の表で、コード スニペットの `Function` 要素で使用できる関数について説明します。  
@@ -154,5 +154,5 @@ ms.locfileid: "54790008"
 ```  
   
 ## <a name="see-also"></a>関連項目
- [Function 要素 (IntelliSense コード スニペット)](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+ [Function 要素 (IntelliSense コード スニペット)](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [コード スニペット スキーマ リファレンス](../ide/code-snippets-schema-reference.md)

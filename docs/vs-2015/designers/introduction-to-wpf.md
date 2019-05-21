@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f02018ed9ddb6f91f965d28767cde55e4c3e524
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b4061a5bc253782e7ca28478259efb4027c61f9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437300"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674736"
 ---
 # <a name="introduction-to-wpf"></a>WPF の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ End Namespace
 ## <a name="Controls"></a> コントロール  
  アプリケーション モデルにより提供されるユーザー エクスペリエンスは、構築済みのコントロールです。 WPF において、「コントロール」とはウィンドウまたはページによりホストされ、ユーザー インターフェイスを持ち、何らかの動作を実装する WPF クラスのカテゴリに適用される総称です。  
   
- 詳しくは、「 [コントロール](http://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599)」をご覧ください。  
+ 詳しくは、「 [コントロール](https://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599)」をご覧ください。  
   
 ### <a name="wpf-controls-by-function"></a>WPF コントロールの機能別一覧  
  組み込まれた WPF コントロールを次に挙げます。  

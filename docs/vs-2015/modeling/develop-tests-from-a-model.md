@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042055"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692252"
 ---
 # <a name="develop-tests-from-a-model"></a>モデルからテストを開発する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60042055"
   
  サブシステムのテストでは、システムの主要コンポーネントに同じ原則が適用されます。 各コンポーネントは、他のコンポーネントとは別個にテストされます。 サブシステムのテストでは、コンポーネントのユーザー インターフェイスまたは API で確認できる動作を集中的にテストします。  
   
- テストを実行する方法の詳細については、次を参照してください。[アプリケーションのテスト](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)します。  
+ テストを実行する方法の詳細については、次を参照してください。[アプリケーションのテスト](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)します。  
   
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>要求モデルからシステム テストを派生させる  
  システム テストと要求モデル間の関係を作成して、それを維持することができます。 この関係を確立するには、要求モデルの主要な要素に対応するテストを作成します。 Visual Studio を使用すると、テストとモデルの部分間のリンクを作成することで、その関係を維持できます。 要件モデルの詳細については、次を参照してください。[ユーザー要件をモデル化](../modeling/model-user-requirements.md)します。  
@@ -63,9 +63,9 @@ ms.locfileid: "60042055"
   
 ###### <a name="to-link-tests-to-a-use-case"></a>テストをユース ケースにリンクするには  
   
-1. [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] で要求を作成し、その要求に対してテスト スイートを作成します。 参照してください、する方法について[アプリケーションのテスト](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)します。  
+1. [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] で要求を作成し、その要求に対してテスト スイートを作成します。 参照してください、する方法について[アプリケーションのテスト](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)します。  
   
-    作成した要求は、[!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] の作業項目になります。 これは、[!INCLUDE[esprfound](../includes/esprfound-md.md)] でプロジェクトが使用するプロセス テンプレートに応じて、ユーザー ストーリー、要求、ユース ケースの作業項目などになります。 詳細については、次を参照してください。 [Visual Studio Team Services または Team Foundation Server を使用して作業の追跡](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)します。  
+    作成した要求は、[!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] の作業項目になります。 これは、[!INCLUDE[esprfound](../includes/esprfound-md.md)] でプロジェクトが使用するプロセス テンプレートに応じて、ユーザー ストーリー、要求、ユース ケースの作業項目などになります。 詳細については、次を参照してください。 [Visual Studio Team Services または Team Foundation Server を使用して作業の追跡](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)します。  
   
 2. モデル内の 1 つまたは複数のユース ケースに対して、要求の作業項目をリンクします。  
   
@@ -106,7 +106,7 @@ Assert (countAfter == countBefore = 1);
   
  アクセサーとアップデーターの多くは、アプリケーションの通常の API を介して使用できる状態になります。 しかし、テストを有効にするには、追加機能を作成することが必要になる場合があります。 これらの追加のアクセサーとアップデーターは、「テスト インストルメンテーション」と呼ばれることもあります。 これらの機能はシステムの内部設計に依存しているため、それらを提供するのはシステム開発者の役割です。一方テスト担当者は、要求モデルに関するテスト コードを作成します。  
   
- 自動テストを作成する場合、汎用テストを使ってアクセサーとアップデーターをラップすることができます。 詳細については、次を参照してください。 [、自動テストを実行の実行可能ファイルを使用しての汎用テストを作成する](http://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52)します。  
+ 自動テストを作成する場合、汎用テストを使ってアクセサーとアップデーターをラップすることができます。 詳細については、次を参照してください。 [、自動テストを実行の実行可能ファイルを使用しての汎用テストを作成する](https://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52)します。  
   
 ### <a name="tests-for-business-rules"></a>ビジネス ルールのテスト  
  要求の中には、特定のユース ケースに直接は関連していないものがあります。 たとえば、DinnerNow では、お客様は多くのメニューから選択できますが、1 回の注文では、1 つのメニューからすべての項目を選択する必要があります。 このビジネス ルールは、要求クラス モデル内の Orders、Menus、Items 間の関連付けについてのインバリアントとして表現することができます。  
@@ -164,9 +164,9 @@ Assert (countAfter == countBefore = 1);
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>テストをモデル要素または関係にリンクするには  
   
-1. [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] で要求を作成し、その要求に対してテスト スイートを作成します。 参照してください、する方法について[アプリケーションのテスト](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)します。  
+1. [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] で要求を作成し、その要求に対してテスト スイートを作成します。 参照してください、する方法について[アプリケーションのテスト](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)します。  
   
-     作成した要求は、[!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] の作業項目になります。 これは、[!INCLUDE[esprfound](../includes/esprfound-md.md)] でプロジェクトが使用するプロセス テンプレートに応じて、ユーザー ストーリー、要求、ユース ケースの作業項目などになります。 詳細については、次を参照してください。 [Visual Studio Team Services または Team Foundation Server を使用して作業の追跡](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)します。  
+     作成した要求は、[!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] の作業項目になります。 これは、[!INCLUDE[esprfound](../includes/esprfound-md.md)] でプロジェクトが使用するプロセス テンプレートに応じて、ユーザー ストーリー、要求、ユース ケースの作業項目などになります。 詳細については、次を参照してください。 [Visual Studio Team Services または Team Foundation Server を使用して作業の追跡](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)します。  
   
 2. モデル内の 1 つまたは複数の要素に対して、要求の作業項目をリンクします。  
   

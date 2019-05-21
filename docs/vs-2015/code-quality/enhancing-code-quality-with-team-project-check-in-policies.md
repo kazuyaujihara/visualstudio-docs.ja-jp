@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 31859128aed64ec6a1182f085685b2e82e485f84
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86aac26819e86455c8ab5c3676c8198bbb482e43
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437076"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697192"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>チーム プロジェクト チェックイン ポリシーによるコード品質の向上
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Team Foundation バージョン コントロール (TFVC) を使用する場合�
   
 |タスク|関連する参照先|  
 |----------|------------------------|  
-|**作成し、チェックイン ポリシーを使用します。** チーム プロジェクトの設定を使用してチェックイン ポリシーを作成する[!INCLUDE[esprscc](../includes/esprscc-md.md)]します。|[品質ゲートの設定と適用](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**作成し、チェックイン ポリシーを使用します。** チーム プロジェクトの設定を使用してチェックイン ポリシーを作成する[!INCLUDE[esprscc](../includes/esprscc-md.md)]します。|[品質ゲートの設定と適用](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
 |**作成し、コード分析チェックイン ポリシーを使用します。** コード分析規則の標準セットから選択することができます、またはカスタムのセットを作成することができます。|[コード分析を用いたチェックイン ポリシーの作成と使用](../code-quality/creating-and-using-code-analysis-check-in-policies.md)|  
   
 ## <a name="related-tasks"></a>関連タスク  
   
 |タスク|関連する参照先|  
 |----------|------------------------|  
-|**開発環境を設定します。** 作成したり、コードを変更することが、前に、開発を設定し、適切なソース コードを使用して環境をテストする必要があります。 データベースを使用している場合は、そのデータベースのオフライン形式へのアクセス権も必要です。|[開発環境の設定](http://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
+|**開発環境を設定します。** 作成したり、コードを変更することが、前に、開発を設定し、適切なソース コードを使用して環境をテストする必要があります。 データベースを使用している場合は、そのデータベースのオフライン形式へのアクセス権も必要です。|[開発環境の設定](https://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
 |**開発プロセスにおけるコード分析を使用します。** チームのメンバーは、それぞれの開発コンピューターでコード分析を実行します。 Visual Studio では、開発者が個々のコード プロジェクトについてコード分析を構成および実行し、実行したコード分析で発見された問題を表示および分析して、警告用の作業項目を作成します。|[アプリケーション品質の分析](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|  
 |**作成し、単体テストを実行します。** 単体テストは、開発者およびテスト担当者にも c#、Visual Basic .NET、および C++ のプロジェクトでクラスのメソッドにロジック エラーを確認する簡単な方法を提供します。 単体テストは、1 回作成するだけでよく、バグが追加されていないことを確認するために、ソース コードが変更されるたびに実行できます。|[コードの単体テスト](../test/unit-test-your-code.md)|  
-|**作業項目と欠陥を追跡します。** 作業項目を使用して、追跡およびチーム プロジェクトに関する作業と情報の両方を管理することができます。 作業項目は [!INCLUDE[esprfound](../includes/esprfound-md.md)] が作業の割り当てと進行状況を追跡するために使用するデータベース レコードです。 さまざまな種類の作業項目を使用して、顧客要件、製品バグ、開発タスクなどの作業を追跡できます。|[作業の追跡し、ワークフローの管理&#91;リダイレクト&#93;](http://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
+|**作業項目と欠陥を追跡します。** 作業項目を使用して、追跡およびチーム プロジェクトに関する作業と情報の両方を管理することができます。 作業項目は [!INCLUDE[esprfound](../includes/esprfound-md.md)] が作業の割り当てと進行状況を追跡するために使用するデータベース レコードです。 さまざまな種類の作業項目を使用して、顧客要件、製品バグ、開発タスクなどの作業を追跡できます。|[作業の追跡し、ワークフローの管理&#91;リダイレクト&#93;](https://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
   
 ## <a name="external-resources"></a>外部リソース  
   

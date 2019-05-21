@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6df66c3a6f34e6137850c68785d0eaadbb13a26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088146"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685343"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>共有 VSPackage とバージョン管理 VSPackage の選択
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60088146"
   
     - プログラムのバージョンに適応するために VSPackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]が実行されています。 次に、新しいサービスのクエリが失敗した場合、VSPackage を提供できますの旧バージョンでサポートされている他のサービス[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
   
-- VSPackage を適切に登録します。 詳細については、次を参照してください。 [VSPackage の登録](../extensibility/internals/vspackage-registration.md)と[マネージ VSPackage の登録](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)します。  
+- VSPackage を適切に登録します。 詳細については、次を参照してください。 [VSPackage の登録](../extensibility/internals/vspackage-registration.md)と[マネージ VSPackage の登録](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)します。  
   
 - ファイルの拡張機能を適切に登録します。 詳細については、次を参照してください。[サイド バイ サイドで配置のファイル名拡張子を登録する](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)します。  
   

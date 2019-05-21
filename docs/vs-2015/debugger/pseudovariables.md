@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac9800025bd55237a4f1d19ca6f07c78c757b603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9ce72d69cb64b0421771324803a785546fa884f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962557"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693765"
 ---
 # <a name="pseudovariables"></a>擬似変数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ $handles
 |`$clk`|クロック周期の時間を表示します。|  
 |`$user`|アプリケーションを実行しているアカウントのアカウント情報と共に、構造体を表示します。 セキュリティ上の理由から、パスワード情報は表示されません。|  
 |`$exceptionstack`|現在の Windows ランタイムの例外のスタック トレースを表示します。 `$ exceptionstack` は、Windows 8.1 以降で実行されているストア アプリでのみ機能します。 `$ exceptionstack` は、C++ および SHE の例外ではサポートされません。|  
-|`$ReturnValue`|.NET Framework メソッドの戻り値を表示します。 参照してください[メソッド呼び出しの戻り値の調査](http://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
+|`$ReturnValue`|.NET Framework メソッドの戻り値を表示します。 参照してください[メソッド呼び出しの戻り値の調査](https://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
   
  C# と Visual Basic では、次の表に示す擬似変数を使用できます。  
   
@@ -68,8 +68,8 @@ $handles
 |`$delete` または `$$delete`|**[イミディエイト]** ウィンドウで作成された暗黙的な変数を削除します。 構文は`$delete,`*変数*または`$delete,`*変数*`.`|  
 |`$objectids` または `$listobjectids`|すべてのアクティブ オブジェクト ID を、指定された式の子として表示します。 構文は`$objectid,`*式*または`$listobjectids,`*式*`.`|  
 |`$` *N* `#`|*N* と等しいオブジェクト ID を持つオブジェクトを表示します。|  
-|`$dynamic`|`IDynamicMetaObjectProvider` を実装するオブジェクト用の特別な **[動的ビュー]** ノードを表示します。 インターフェイス。 構文は `$dynamic,` *オブジェクト*です。 この機能は、.NET Framework Version 4 を使用するコードにのみ適用されます。 参照してください[動的ビュー](http://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563)します。|  
+|`$dynamic`|`IDynamicMetaObjectProvider` を実装するオブジェクト用の特別な **[動的ビュー]** ノードを表示します。 インターフェイス。 構文は `$dynamic,` *オブジェクト*です。 この機能は、.NET Framework Version 4 を使用するコードにのみ適用されます。 参照してください[動的ビュー](https://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563)します。|  
   
 ## <a name="see-also"></a>関連項目  
  [ウォッチ ウィンドウと [クイック ウォッチ] ウィンドウ](../debugger/watch-and-quickwatch-windows.md)   
- [[変数] ウィンドウ](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [[変数] ウィンドウ](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76d0b61ba3eb8c0ff995aef4118fe21a83fc94c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42fc6e45e0e32e9b165251c7ec61d3d67b924e1c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442685"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697605"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>方法: 特定のロケールを持つプロジェクトを発行する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,6 +166,6 @@ ms.locfileid: "63442685"
   
 ## <a name="see-also"></a>関連項目  
  [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)   
- [開発環境のマクロ](http://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [マクロ エクスプ ローラー ウィンドウ](http://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [方法: 編集およびマクロをプログラムで作成](http://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [開発環境のマクロ](https://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
+ [マクロ エクスプ ローラー ウィンドウ](https://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
+ [方法: 編集およびマクロをプログラムで作成](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)

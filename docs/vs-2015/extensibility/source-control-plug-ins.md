@@ -10,12 +10,12 @@ ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ff124246c3dc80074432e40eebf6e00e8b90b3f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a5a99ebdf2366ce6a60a6a724afc7d742db7150f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975101"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705802"
 ---
 # <a name="source-control-plug-ins"></a>ソース管理プラグイン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,11 +56,11 @@ ms.locfileid: "58975101"
  [用語集](../extensibility/source-control-plug-in-glossary.md)  
  便利な用語と、ソース管理プラグインの SDK ドキュメントを読み取るためには、その定義を提供します。  
   
- [方法: ソース管理プラグインの互換性に関する警告をオフにします。](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [方法: ソース管理プラグインの互換性に関する警告をオフにする](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  警告を無効にする方法について説明します。  
   
 ## <a name="related-sections"></a>関連項目  
- [ソース管理プラグインのサンプル](http://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
+ [ソース管理プラグインのサンプル](https://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
  ソース管理プラグインの機能のサンプルを提供します。  
   
  [ソース管理プラグイン向けのテスト ガイド](../extensibility/internals/test-guide-for-source-control-plug-ins.md)  

@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1923b2c41675bfcf20ca1f9c0035dd1e500debe4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425434"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693410"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075:安全ではない DTD の処理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63425434"
  安全ではない <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> インスタンスを使用する場合、または外部エンティティ ソースを参照する場合、パーサーは信頼されていない入力を受け入れ、攻撃者に機密情報を漏えいしてしまう可能性があります。
 
 ## <a name="rule-description"></a>規則の説明
- [文書型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) は、  [World Wide Web コンソーシアム (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)で定義されているように、XML パーサーが文書の妥当性を判別する 2 つの方法のうちの 1 つです。 このルールは、信頼されていないデータを受け入れてしまうプロパティとインスタンスを検索し、 [サービス拒否 (DoS)](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 攻撃につながる可能性がある潜在的な [Information Disclosure](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) の脅威について開発者に警告します。 このルールは、次の場合にトリガーされます。
+ [文書型定義 (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) は、  [World Wide Web コンソーシアム (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)で定義されているように、XML パーサーが文書の妥当性を判別する 2 つの方法のうちの 1 つです。 このルールは、信頼されていないデータを受け入れてしまうプロパティとインスタンスを検索し、 [サービス拒否 (DoS)](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 攻撃につながる可能性がある潜在的な [Information Disclosure](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) の脅威について開発者に警告します。 このルールは、次の場合にトリガーされます。
 
 - <xref:System.Xml.XmlReader> を使用して外部 XML エンティティを解決する <xref:System.Xml.XmlUrlResolver>インスタンスで、DtdProcessing が有効になっている。
 
@@ -59,7 +59,7 @@ ms.locfileid: "63425434"
 
 - 設定によって信頼されていないソースを扱う場合は、DTD 処理を無効にする、 <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A>プロパティを **true**します。
 
-- XmlTextReader クラスには、完全信頼の継承確認要求があります。 参照してください [継承確認要求](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)詳細についてはします。
+- XmlTextReader クラスには、完全信頼の継承確認要求があります。 参照してください [継承確認要求](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)詳細についてはします。
 
   .NET 4 以降
 
