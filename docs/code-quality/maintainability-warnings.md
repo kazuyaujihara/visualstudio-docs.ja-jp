@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d5508e203b8ed5087f456c715c492d8f1ca7c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 752a637ef01c33aa4e93083e9578d01f00977960
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823557"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976163"
 ---
 # <a name="maintainability-warnings"></a>保守性に関する警告
 
@@ -35,7 +35,8 @@ ms.locfileid: "62823557"
 | [CA 1504:紛らわしいフィールド名を確認してください。](../code-quality/ca1504-review-misleading-field-names.md) | インスタンス フィールドの名前が「s _」、または静的な名前で始まります (内の共有[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) フィールドが「m _」で開始します。 |
 | [CA1505:メンテナンスできないコードを避ける](../code-quality/ca1505-avoid-unmaintainable-code.md) | 型またはメソッドの保守容易性指数が低い値です。 保守容易性指数の低い型またはメソッドは、保守が困難な可能性があるため、デザインの変更を検討することをお勧めします。 |
 | [CA1506:過剰なクラスの結合を避ける](../code-quality/ca1506-avoid-excessive-class-coupling.md) | この規則は、型またはメソッドに含まれる一意の型参照の数をカウントすることによって、クラス結合度を計測します。 |
+| [CA1507:文字列の代わりに nameof を使用して、](../code-quality/ca1507.md) | 文字列リテラルは、引数として使用される場所、`nameof`式を使用できます。 |
 
 ## <a name="see-also"></a>関連項目
 
-- [マネージド コードの複雑さと保守性の測定](../code-quality/code-metrics-values.md)
+- [メジャーの複雑さとマネージ コードの保守性](../code-quality/code-metrics-values.md)
