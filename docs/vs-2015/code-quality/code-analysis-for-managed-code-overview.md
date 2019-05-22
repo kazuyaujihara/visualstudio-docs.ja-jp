@@ -14,12 +14,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a38909eb0917b3ad5b02d5e953c17c950c7c819e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5076ea34b1bcbd66239722bc8fb1a3edc4763162
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539193"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680622"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>マネージド コードに対するコード分析の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "62539193"
   これは、チェックイン ポリシーを指定することにより実現できます。 詳細については、「[チーム プロジェクト チェックイン ポリシーによるコード品質の向上](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)」を参照してください。  
   
 ## <a name="team-build-integration"></a>チーム ビルドの統合  
- ビルド システムの統合機能を使用すると、分析ツールをビルド プロセスの一環として実行できます。 詳細については、「[アプリケーションのビルド](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)」をご覧ください。  
+ ビルド システムの統合機能を使用すると、分析ツールをビルド プロセスの一環として実行できます。 詳細については、「[アプリケーションのビルド](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)」をご覧ください。  
   
 ## <a name="see-also"></a>関連項目  
  [規則セットを使用したコード分析規則のグループ化](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Azure の特典をアクティブ化する方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948469"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685922"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
 
@@ -102,7 +102,7 @@ Microsoft アカウントに**異なる**サブスクリプション レベル�
 
 ご利用のサブスクリプションに使用制限があり、失効前に何の措置もとらない場合、Azure サブスクリプションは無効になります。 従量課金制プランに変更して使用を続けるには、支払い方法を追加して[使用制限を解除](/azure/billing/billing-spending-limit/)してください。
 
-この Visual Studio Azure サブスクリプションを続けない場合、仮想マシンやデータベースなどのリソースを別の Azure サブスクリプションに転送し、続けないサブスクリプションをいつでも[キャンセル](http://azure.microsoft.com/support/cancel-account/)できます。
+この Visual Studio Azure サブスクリプションを続けない場合、仮想マシンやデータベースなどのリソースを別の Azure サブスクリプションに転送し、続けないサブスクリプションをいつでも[キャンセル](https://azure.microsoft.com/support/cancel-account/)できます。
 
 このメールが間違いで配信された場合、[Azure カスタマー サポート](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)にお問い合わせください。
 

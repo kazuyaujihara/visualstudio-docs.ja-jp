@@ -9,12 +9,12 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: a2e4f990df5531b3b17b1cca2204aa10ae959db1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5422d8cb56a9df1fad40857f6802e55ebd11b2ed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550263"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675495"
 ---
 # <a name="optimizing-your-azure-code"></a>Azure コードの最適化
 Microsoft Azure を使用するアプリケーションをプログラミングする場合、クラウド環境でのアプリケーションのスケーラビリティ、動作、パフォーマンスに関する問題の回避に役立つコーディングの手法がいくつかあります。 Microsoft では、このような一般的に発生する問題の一部を認識および特定し、その解決を支援する Azure コード分析ツールを提供しています。 このツールは、NuGet を使用して Visual Studio でダウンロードできます。
@@ -71,7 +71,7 @@ public async Task RunAsync()
 
     HttpClient client = new HttpClient();
 
-    Task<string> urlString = client.GetStringAsync("http://msdn.microsoft.com");
+    Task<string> urlString = client.GetStringAsync("https://msdn.microsoft.com");
 
     while (true)
     {

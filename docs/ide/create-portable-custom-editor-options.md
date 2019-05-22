@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9426b2b7cd9467353f129e9376b0f83cf2f620a3
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794091"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65845991"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig で移植可能なカスタム エディター設定を作成する
 
@@ -20,7 +20,13 @@ ms.locfileid: "62794091"
 
 EditorConfig の設定は、Visual Studio など、多くのコード エディターと IDE でサポートされています。 この設定は、コードと共に移動する移植可能なコンポーネントであり、Visual Studio の外部であってもコーディング スタイルを適用できます。
 
-Visual Studio のプロジェクトに EditorConfig ファイルを追加するときに、ドキュメントの書式を設定しない限り、既存のコードの書式設定は変更されません (既定のプロファイルの場合は **[編集]** > **[詳細設定]** > **[ドキュメントのフォーマット]**、または **Ctrl**+**K**、**Ctrl**+**D**)。 ただし、新しいコード行はすべて、EditorConfig の設定に従って書式設定されます。 [**[書式設定]** オプション ページ](reference/options-text-editor-csharp-formatting.md#format-document-settings)で、**ドキュメントのフォーマット**で適用する EditorConfig 設定を定義することができます。
+Visual Studio のプロジェクトに EditorConfig ファイルを追加するときに、ドキュメントの書式を設定しない限り、既存のコードの書式設定は変更されません (既定のプロファイルの場合は **[編集]** > **[詳細設定]** > **[ドキュメントのフォーマット]**、または **Ctrl**+**K**、**Ctrl**+**D**)。 ただし、新しいコード行はすべて、EditorConfig の設定に従って書式設定されます。
+
+::: moniker range="vs-2017"
+
+[**[書式設定]** オプション ページ](reference/options-text-editor-csharp-formatting.md#format-document-settings)で、**ドキュメントのフォーマット**で適用する EditorConfig 設定を定義することができます。
+
+::: moniker-end
 
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、[Visual Studio for Mac の EditorConfig](/visualstudio/mac/editorconfig) に関するページを参照してください。
@@ -73,7 +79,7 @@ EditorConfig ファイルをプロジェクトまたはコードベースから�
 
 1. たとえば次のように、必要に応じてファイルを編集します。
 
-   ```EditorConfig
+   ```ini
    root = true
 
    [*.{cs,vb}]
@@ -104,7 +110,7 @@ EditorConfig ファイルをプロジェクトに追加する方法は、他に�
 
 すべての設定ではなく一部をオーバーライドする場合には、*.editorconfig* ファイルで該当する設定だけを指定します。 下位レベルのファイルで明示的に一覧表示したプロパティのみがオーバーライドされます。 上位レベルの *.editorconfig* ファイルからのその他の設定は、引き続き適用されます。 _すべての_上位レベルの *.editorconfig* ファイルからの設定がコードベースのこの部分に適用_されない_ようにするには、次のように ```root=true``` プロパティを下位レベルの *.editorconfig* ファイルに追加します。
 
-```EditorConfig
+```ini
 # top-most EditorConfig file
 root = true
 ```
@@ -135,7 +141,7 @@ EditorConfig ファイルを編集したら、コード ファイルを再度読
 
 *.editorconfig* という名前の新しいファイルを、次のコンテンツと共にプロジェクトに追加します。 `[*.cs]` の設定は、この変更がこのプロジェクトの C# コード ファイルにのみ適用されることを意味します。
 
-```EditorConfig
+```ini
 # Top-most EditorConfig file
 root = true
 
