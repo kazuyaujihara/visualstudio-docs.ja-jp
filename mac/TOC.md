@@ -1,20 +1,24 @@
 # [Visual Studio for Mac](index.yml)
 # [IDE ツアー](ide-tour.md)
 
-# [インストール](installation.md)
+# インストール
+## [Visual Studio for Mac 2019 のインストール](installation.md)
 ## [ファイアウォールまたはプロキシの内側にインストールして使用する](install-behind-a-firewall-or-proxy-server.md)
 ## [プレビュー リリースをインストールする](install-preview.md)
 ## [更新](update.md)
 ## [アンインストール](uninstall.md)
 
-# [ユーザー アカウント](user-accounts.md)
+# ユーザー アカウント
+## [概要](user-accounts.md)
 ## [サインイン](signing-in.md)
 ## [サブスクリプションの有効化](enable-subscription.md)
 
-# [IDE のカスタマイズ](customizing-the-ide.md)
+# IDE のカスタマイズ
+## [IDE の外観のカスタマイズ](customizing-the-ide.md)
 ## [Visual Studio for Mac の拡張](extending-visual-studio-mac.md)
 
-# [プロジェクトおよびソリューション](projects-and-solutions.md)
+# プロジェクトおよびソリューション
+## [概要](projects-and-solutions.md)
 ## [プロジェクトの新規作成](create-new-projects.md)
 ## [プロジェクト項目の追加と削除](add-and-remove-project-items.md)
 ## [ソリューションとプロジェクト プロパティの管理](managing-solutions-and-project-properties.md)
@@ -23,7 +27,8 @@
 ## [アプリ リソースの管理](managing-app-resources.md)
 ## [方法: 複数のソリューションまたはインスタンスを開く](open-multiple-solutions.md)
 
-# [ソース エディター](source-editor.md)
+# ソース エディター
+## [エディターの機能](source-editor.md)
 ## [リファクタリング](refactoring.md)
 ## [コメント](comments.md)
 ## [エディターの動作](editor-behavior.md)
@@ -34,10 +39,12 @@
 ## [EditorConfig](editorconfig.md)
 ## [既定のキーボード ショートカット](keyboard-shortcuts.md)
 
-# [デバッグ](debugging.md)
+# デバッグ
+## [概要](debugging.md)
 ## [データの視覚化](data-visualizations.md)
 
-# [コードのコンパイルとビルド](compiling-and-building.md)
+# コードのコンパイルとビルド
+## [概要](compiling-and-building.md)
 ## [プロジェクトとソリューションのビルドおよびクリーン](building-and-cleaning-projects-and-solutions.md)
 ## [ビルド アクション](build-actions.md)
 ## [方法: 複数のスタートアップ プロジェクトを設定する](set-startup-projects.md)
@@ -45,18 +52,21 @@
 ## [構成](configurations.md)
 ### [構成を作成および編集する](create-and-edit-configurations.md)
 
-# [バージョン管理](version-control.md)
+# バージョン コントロール
+## [概要](version-control.md)
 ## [TF バージョン管理](tf-version-control.md)
 ## [Git リポジトリのセットアップ](set-up-git-repository.md)
 ## [Git の使用](working-with-git.md)
 ## [Subversion リポジトリのセットアップ](set-up-subversion-repository.md)
 ## [Subversion の使用](working-with-subversion.md)
 
-# [Web アプリのデプロイ](web-app-deployment.md)
+# Web アプリのデプロイ
+## [概要](web-app-deployment.md)
 ## [Azure App Service に発行する](publish-app-svc.md)
 ## [フォルダーに発行する](publish-folder.md)
 
-# [ワークロード](workloads.md)
+# 作業負荷
+## [使用可能なワークロード](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript および TypeScript](javascript.md)
@@ -73,7 +83,8 @@
 
 # [ユーザー補助](accessibility.md)
 
-# [トラブルシューティング](troubleshooting.md)
+# トラブルシューティング
+## [ログと例外](troubleshooting.md)
 ## [Visual Studio カスタマー エクスペリエンス向上プログラム](visual-studio-experience-improvement-program.md)
 ## [問題を報告する](report-a-problem.md)
 ## [トラブルシューティング : すべてのテンプレートが表示されない](troubleshooting-no-templates.md)

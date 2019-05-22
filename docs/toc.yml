@@ -16,10 +16,10 @@
   items:
     - name: Visual Studio のインストール
       href: install/install-visual-studio.md
-    - name: アカウント
+    - name: 個人アカウント
       items:
         - name: Visual Studio にサインイン
-          displayName: peronalization accounts
+          displayName: personalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: 複数のユーザー アカウントを使って作業する
           href: ide/work-with-multiple-user-accounts.md
@@ -43,15 +43,13 @@
       href: install/update-visual-studio.md
     - name: Visual Studio 2017 の変更
       href: install/modify-visual-studio.md
-    - name: ヘルプ ビューアーのインストール
-      href: help-viewer/installation.md
     - name: Visual Studio を修復します
       href: install/repair-visual-studio.md
     - name: Visual Studio のアンインストール
       href: install/uninstall-visual-studio.md
     - name: Visual Studio 管理者ガイド
       items:
-        - name: 管理者ガイド
+        - name: 概要
           href: install/visual-studio-administrator-guide.md
         - name: コマンド ラインを使用する
           items:
@@ -138,6 +136,8 @@
           href: install/advanced-build-tools-container.md
         - name: コンテナーの既知の問題
           href: install/build-tools-container-issues.md
+    - name: ヘルプ ビューアーのインストール
+      href: help-viewer/installation.md
 - name: クイックスタート
   items:
     - name: Visual Studio のオリエンテーション
