@@ -6,11 +6,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 048edb85742e71e6236d1491565a007bf7da84b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553806"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65848865"
 ---
 このページの表には、コマンド ラインから Visual Studio をインストールする際に使用できる ID、または VSIX マニフェストで依存関係として指定できる ID を一覧表示しています。 Visual Studio の更新プログラムがリリースされる際には、さらにコンポーネントが追加される予定です。
 
