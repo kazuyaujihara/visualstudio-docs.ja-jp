@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ecc2e2fba9dbddc12a58866c7edcde51b148af1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bb31af11ae4ecc2618e577df6e3b1e2e45a0cbc7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922701"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203213"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 このクラスのコンス トラクターの列挙子を作成します。
@@ -38,14 +41,12 @@ int EnumConstructors(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `cMatch`
+## <a name="parameters"></a>パラメーター
+`cMatch`\
+[in]値、 [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)列挙体にコンス トラクターの型を指定する列挙体。
 
- [in]値、 [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)列挙体にコンス トラクターの型を指定する列挙体。
-
- `ppEnum`
-
- [out]返します、 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)コンス トラクターの一覧を表すオブジェクト。 コンス トラクターがない場合は、null 値を返します。
+`ppEnum`\
+[out]返します、 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)コンス トラクターの一覧を表すオブジェクト。 コンス トラクターがない場合は、null 値を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合は S_OK を返します。 またはコンス トラクターがない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。

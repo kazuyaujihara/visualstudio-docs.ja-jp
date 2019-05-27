@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0763a4191f011748c6c5145a250459c4b9b4cf8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e27d69f89ad29121dbafaca1787bdd870fa75634
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921719"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204880"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 [逆アセンブル] ストリームの指定した位置の基準とした命令数が特定の読み取りポインターを移動します。
@@ -42,22 +45,18 @@ int Seek( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dwSeekStart`
+## <a name="parameters"></a>パラメーター
+`dwSeekStart`\
+[in]値、 [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)シーク プロセスを開始する相対位置を指定する列挙体。
 
- [in]値、 [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)シーク プロセスを開始する相対位置を指定する列挙体。
+`pCodeContext`\
+[in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)シーク操作が関連してコードのコンテキストを表すオブジェクト。 場合にのみ、このパラメーターが使用される`dwSeekStart`  =  `SEEK_START_CODECONTEXT`。 そうしないと、このパラメーターは無視され、null 値を指定できます。
 
- `pCodeContext`
+`uCodeLocationId`\
+[in]シーク操作が関連してコードの場所の識別子です。 このパラメーターを使用`dwSeekStart`  =  `SEEK_START_CODELOCID`。 そうしないと、このパラメーターは無視され、0 に設定することができます。 「解説」を参照してください、 [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)メソッドについては、コードの場所の識別子。
 
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)シーク操作が関連してコードのコンテキストを表すオブジェクト。 場合にのみ、このパラメーターが使用される`dwSeekStart`  =  `SEEK_START_CODECONTEXT`。 そうしないと、このパラメーターは無視され、null 値を指定できます。
-
- `uCodeLocationId`
-
- [in]シーク操作が関連してコードの場所の識別子です。 このパラメーターを使用`dwSeekStart`  =  `SEEK_START_CODELOCID`。 そうしないと、このパラメーターは無視され、0 に設定することができます。 「解説」を参照してください、 [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)メソッドについては、コードの場所の識別子。
-
- `iInstructions`
-
- [in]指定された位置を基準に移動する命令数`dwSeekStart`します。 この値は、後方に移動する負の値であることができます。
+`iInstructions`\
+[in]指定された位置を基準に移動する命令数`dwSeekStart`します。 この値は、後方に移動する負の値であることができます。
 
 ## <a name="return-value"></a>戻り値
  正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`シーク位置が使用可能な命令の一覧より後ろにあった場合。 それ以外の場合はエラー コードを返します。

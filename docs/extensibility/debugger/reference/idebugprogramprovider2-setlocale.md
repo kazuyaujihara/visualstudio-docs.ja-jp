@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 460729bd2dd8f562888cf9c816343a4e2897124b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 50befd3758cbdda81bb6fa2b65f468088cfcade6
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457787"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203734"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
 任意のロケール固有のリソースに使用するロケールを確立します。
@@ -40,9 +40,8 @@ int SetLocale(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `wLangID`\
-
- [in]言語 ID を確立します。 たとえば、英語の場合は 1033 です。
+`wLangID`\
+[in]言語 ID を確立します。 たとえば、英語の場合は 1033 です。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

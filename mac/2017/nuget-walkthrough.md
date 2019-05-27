@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989153"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697592"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>プロジェクトに NuGet パッケージを含める
 
@@ -51,7 +51,7 @@ Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pa
 
 * **[参照]** ノードには、NuGet パッケージの一部であるすべてのアセンブリのリストが含まれます。
 * **[パッケージ]** ノードには、ダウンロードした各 NuGet パッケージが表示されます。 このリストのパッケージを更新したり、削除したりすることができます。
-* **packages.config** ファイルはプロジェクトに追加されます。 この XML ファイルは、このプロジェクトで参照されるパッケージ パージョンを追跡するために IDE で使用されます。 このファイルを手動で編集しないでください。ただし、バージョン管理で保持する必要があります。 project.json ファイルを packages.config ファイルの代わりに使用できることに注意してください。 project.json ファイルは、NuGet 3 で導入された新しいパッケージ ファイル形式であり、推移的な復元をサポートします。 project.json の詳細については、[NuGet のドキュメント](http://docs.microsoft.com/NuGet/Schema/Project-Json)を参照してください。 Visual Studio for Mac で project.json ファイルを使用する前に、project.json ファイルを手動で追加して、プロジェクトを閉じてから再度開く必要があります。
+* **packages.config** ファイルはプロジェクトに追加されます。 この XML ファイルは、このプロジェクトで参照されるパッケージ パージョンを追跡するために IDE で使用されます。 このファイルを手動で編集しないでください。ただし、バージョン管理で保持する必要があります。 project.json ファイルを packages.config ファイルの代わりに使用できることに注意してください。 project.json ファイルは、NuGet 3 で導入された新しいパッケージ ファイル形式であり、推移的な復元をサポートします。 project.json の詳細については、[NuGet のドキュメント](https://docs.microsoft.com/NuGet/Schema/Project-Json)を参照してください。 Visual Studio for Mac で project.json ファイルを使用する前に、project.json ファイルを手動で追加して、プロジェクトを閉じてから再度開く必要があります。
 
 ## <a name="using-nuget-packages"></a>NuGet パッケージの使用
 

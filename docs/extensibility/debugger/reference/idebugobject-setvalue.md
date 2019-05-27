@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfea65f7f24b3d48fc5ec5d68028c72b9b4eece
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fec036357fb92563eba81c919ab32fea2e58c3b3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872451"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211278"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 連続した一連のバイトから、オブジェクトの値を設定します。
@@ -38,14 +41,12 @@ int SetValue(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pValue`
+## <a name="parameters"></a>パラメーター
+`pValue`\
+[in]新しい値を表すバイトの配列。
 
- [in]新しい値を表すバイトの配列。
-
- `nSize`
-
- [in]値をバイト単位のサイズ。
+`nSize`\
+[in]値をバイト単位のサイズ。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。

@@ -1,7 +1,7 @@
 ---
 title: ネットワーク エラーまたはプロキシ エラーをトラブルシューティングする
 description: ファイアウォールまたはプロキシ サーバーの内側で Visual Studio をインストールし使用するときに発生する可能性があるネットワークまたはプロキシに関連するエラーの解決策を探します。
-ms.date: 03/30/2019
+ms.date: 05/22/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 719922f8cfcae78f5c082e838528a77bbd66d073
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968133"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976232"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio をインストールまたは使用するときのネットワーク関連のエラーのトラブルシューティング
 
@@ -36,19 +36,19 @@ ms.locfileid: "62968133"
 
 - Visual Studio を再起動します。 プロキシ認証のダイアログ ボックスが表示されます。 ダイアログ ボックスに入力を求めるメッセージが表示されたら、資格情報を入力します。
 
-- Visual Studio を再起動しても問題が解決しない場合は、考えられる原因は、プロキシ サーバーが http:&#47;&#47;go.microsoft.com のアドレスに対しては資格情報を要求せず、&#42;.visualStudio.com のアドレスに対しては資格情報を要求することです。 これらのサーバーの場合、次の URL をホワイトリストに設定し、Visual Studio におけるあらゆるサインイン シナリオのブロックを解除することを検討する必要があります。
+- Visual Studio を再起動しても問題が解決しない場合は、考えられる原因は、プロキシ サーバーが http:&#47;&#47;go.microsoft.com のアドレスに対しては資格情報を要求せず、&#42;.visualStudio.microsoft.com のアドレスに対しては資格情報を要求することです。 これらのサーバーの場合、次の URL を許可リストに追加し、Visual Studio におけるあらゆるサインイン シナリオのブロックを解除することを検討する必要があります。
 
     - &#42;.windows.net
 
     - &#42;.microsoftonline.com
 
-    - &#42;.visualstudio.com
+    - &#42;.visualstudio.microsoft.com
 
     - &#42;.microsoft.com
 
     - &#42;.live.com
 
-- http:&#47;&#47;go.microsoft.com をホワイトリストから削除すると、Visual Studio を再起動したとき、http:&#47;&#47;go.microsoft.com のアドレスとサーバー エンドポイントの両方にプロキシ認証ダイアログが表示されます。
+- http:&#47;&#47;go.microsoft.com を許可リストから削除すると、Visual Studio を再起動したとき、http:&#47;&#47;go.microsoft.com のアドレスとサーバー エンドポイントの両方にプロキシ認証ダイアログが表示されます。
 
   または
 
@@ -120,7 +120,7 @@ Visual Studio ではトランスポート層セキュリティ (TLS) 1.2 プロ�
 
 - &#42;.azurewebsites.net (Azure 接続の場合)
 
-- &#42;.visualstudio.com
+- &#42;.visualstudio.microsoft.com
 
 - cdn.vsassets.io (コンテンツ配信ネットワーク (CDN)、コンテンツをホスト)
 

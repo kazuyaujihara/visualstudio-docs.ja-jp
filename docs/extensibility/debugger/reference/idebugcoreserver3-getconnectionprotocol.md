@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 230712dddc3359ab69894bab15b919f997cf40a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea4926a62a86e2be48255c7e9a655772c3842b78
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921858"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205508"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
 サーバーとパッケージのデバッグの間の通信に使用されているプロトコルを示す値を返します。
@@ -36,10 +39,9 @@ int GetConnectionProtocol(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pProtocol`
-
- [out]値のいずれかを返します、 [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)列挙体。
+## <a name="parameters"></a>パラメーター
+`pProtocol`\
+[out]値のいずれかを返します、 [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)列挙体。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

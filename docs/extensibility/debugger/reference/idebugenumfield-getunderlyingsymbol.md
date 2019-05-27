@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b6b90f388f93bc7cfc2c246c529217bcdb00fa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: be45bf7ef78b00b5c0c381be54bf15ccea773144
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920276"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200154"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 このメソッドが戻る、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)列挙体の名前を表します。
@@ -36,10 +39,9 @@ int GetUnderlyingSymbol(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ppField`
-
- [out]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)この列挙体の名前を記述します。
+## <a name="parameters"></a>パラメーター
+`ppField`\
+[out]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)この列挙体の名前を記述します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

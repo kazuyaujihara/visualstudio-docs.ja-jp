@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2714a038c2cede4b351de92454bb74a5052805c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 5b78afc3ace3764856fd0a83899be2eae597239e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223582"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203678"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 このメソッドは、このサービスが知っている型のビジュアライザーのリストを返します。
@@ -46,21 +46,17 @@ int GetCustomViewerList(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `celtSkip`\
+`celtSkip`\
+[in]ビジュアライザーをスキップの数。
 
- [in]ビジュアライザーをスキップの数。
+`celRequested`\
+[in]取得するビジュアライザーの数 (ものサイズを指定します、`rgViewers`配列)。
 
- `celRequested`\
+`rgViewers`\
+[入力、出力]配列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)情報を格納する構造体。
 
- [in]取得するビジュアライザーの数 (ものサイズを指定します、`rgViewers`配列)。
-
- `rgViewers`\
-
- [入力、出力]配列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)情報を格納する構造体。
-
- `pceltFetched`\
-
- [out]ビジュアライザーの数を実際に取得します。
+`pceltFetched`\
+[out]ビジュアライザーの数を実際に取得します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

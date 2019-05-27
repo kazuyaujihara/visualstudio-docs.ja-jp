@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc04de6de270053e20e05a30312a298e9e6e2f0f
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891226"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177340"
 ---
 # <a name="create-a-software-development-kit"></a>ソフトウェア開発キットを作成します。
 ソフトウェア開発キット (SDK) は、Visual Studio での 1 つの項目として参照できる Api のコレクションです。 **参照マネージャー**  ダイアログ ボックスに、プロジェクトに関連するすべての Sdk が一覧表示されます。 SDK をプロジェクトに追加するときに、Api は Visual Studio で使用できます。
@@ -34,7 +34,7 @@ ms.locfileid: "62891226"
  プラットフォーム Sdk は、プラットフォームのアプリを開発する必要があります。 たとえば、 [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK がアプリの開発に必要な[!INCLUDE[win81](../debugger/includes/win81_md.md)]します。
 
 ### <a name="installation"></a>インストール
- すべてのプラットフォーム Sdk のインストールで*hklm \software\microsoft\microsoft Sdk\\[TPI] \v [TPV]\\ @InstallationFolder = [SDK ルート]*。 したがって、[!INCLUDE[win81](../debugger/includes/win81_md.md)]で SDK がインストールされている*hklm \software\microsoft\microsoft SDKs\Windows\v8.1*します。
+ すべてのプラットフォーム Sdk のインストールで*hklm \software\microsoft\microsoft Sdk\\[TPI] \v [TPV]\\ @InstallationFolder = [SDK ルート]* 。 したがって、[!INCLUDE[win81](../debugger/includes/win81_md.md)]で SDK がインストールされている*hklm \software\microsoft\microsoft SDKs\Windows\v8.1*します。
 
 ### <a name="layout"></a>レイアウト
  プラットフォーム Sdk は、次のレイアウトが完成します。
@@ -53,9 +53,9 @@ ms.locfileid: "62891226"
 | ノード | 説明 |
 |------------------------| - |
 | *参照*フォルダー | に対してコーディングすることがある Api が含まれているバイナリが含まれています。 Windows メタデータ (WinMD) ファイルまたはアセンブリに含めることができます。 |
-| *デザイン時*フォルダー | 事前実行/デバッグ時にのみ必要なファイルが含まれています。 XML ドキュメント、ライブラリ、ヘッダー、ツールボックスのデザイン時のバイナリ、MSBuild の成果物などが該当<br /><br /> XML ドキュメントを配置する場合は、理想的には、 *\DesignTime*フォルダーでは XML ドキュメントの参照では引き続き Visual Studio での参照ファイルと一緒に配置します。 XML ドキュメントなどの参照を<em>\References\\[config]\\[arch]\sample.dll</em>なります*\References\\[config]\\[arch]\sample.xml*、そのドキュメントのローカライズ版であり*\References\\[config]\\[arch]\\[locale]\sample.xml*します。 |
+| *デザイン時*フォルダー | 事前実行/デバッグ時にのみ必要なファイルが含まれています。 XML ドキュメント、ライブラリ、ヘッダー、ツールボックスのデザイン時のバイナリ、MSBuild の成果物などが該当<br /><br /> XML ドキュメントを配置する場合は、理想的には、 *\DesignTime*フォルダーでは XML ドキュメントの参照では引き続き Visual Studio での参照ファイルと一緒に配置します。 XML ドキュメントなどの参照を<em>\References\\[config]\\[arch]\sample.dll</em>なります *\References\\[config]\\[arch]\sample.xml*、そのドキュメントのローカライズ版であり *\References\\[config]\\[arch]\\[locale]\sample.xml*します。 |
 | *構成*フォルダー | のみの 3 つのフォルダーがあります。*デバッグ*、*小売*と*CommonConfiguration*します。 SDK の作成者は、の下にファイルを配置できる*CommonConfiguration*かどうか同じ SDK ファイルのセットが使用されることを SDK コンシューマーが対象とする構成に関係なく。 |
-| *アーキテクチャ*フォルダー | サポートされている任意*アーキテクチャ*フォルダーが存在することができます。 Visual Studio には、次のアーキテクチャがサポートされています。 x86、x64、ARM、および neutral です。 メモ:Win32 は、x86 にマップされ、AnyCPU がニュートラルにマップされます。<br /><br /> 次の MSBuild のみ*\CommonConfiguration\neutral*プラットフォーム Sdk の場合。 |
+| *アーキテクチャ*フォルダー | サポートされている任意*アーキテクチャ*フォルダーが存在することができます。 Visual Studio には、次のアーキテクチャがサポートされています。 x86、x64、ARM、および neutral です。 メモ:Win32 は、x86 にマップされ、AnyCPU がニュートラルにマップされます。<br /><br /> 次の MSBuild のみ *\CommonConfiguration\neutral*プラットフォーム Sdk の場合。 |
 | *SDKManifest.xml* | このファイルは、Visual Studio が SDK を使用する方法について説明します。 SDK のマニフェストを見て[!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** オブジェクト ブラウザーが、参照リストに表示される値。<br /><br /> **PlatformIdentity:** この属性の存在では、Visual Studio および MSBuild SDK、platform SDK、およびそこから追加された参照をコピーすることはできませんをローカルにように指示します。<br /><br /> **TargetFramework:** この属性は、これの値で指定されている同じフレームワークを対象のプロジェクトのみを確実に Visual Studio によって使用されます属性は、SDK を使用できます。<br /><br /> **MinVSVersion:** この属性は、それに適用する Sdk のみを使用する Visual Studio によって使用されます。<br /><br /> **参照:** この属性は、コントロールを含む参照のみを指定する必要があります。 参照がコントロールを格納するかどうかを指定する方法については、以下を参照してください。 |
 
 ## <a name="ExtensionSDKs"></a> 拡張機能 Sdk
@@ -74,7 +74,7 @@ ms.locfileid: "62891226"
 
 1. レジストリ キーで指定します。
 
-     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number\>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
+     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number\>\ExtensionSDKs\<SDKName>\<SDKVersion>** \
 
      値を持つ (既定値) のサブキーを追加および`<path to SDK><SDKName><SDKVersion>`します。
 
@@ -104,7 +104,7 @@ ms.locfileid: "62891226"
 
 2. *参照*フォルダー: Api が含まれているバイナリ。 Windows メタデータ (WinMD) ファイルまたはアセンブリを指定できます。
 
-3. *再頒布可能パッケージ*フォルダー: ファイルをランタイム/デバッグが必要であり、ユーザーのアプリケーションの一部としてパッケージ化する必要があります。 下にあるすべてのバイナリを配置する必要があります*\redist\\< config\>\\< arch\>*、バイナリ名に次の形式に一意性を確保する必要があります: *]* \<会社 >。\<製品 >。\<目的 >。\<拡張機能 ><em>します。たとえば、*Microsoft.Cpp.Build.dll</em>します。 下にあるその他の Sdk (たとえば、javascript、css、pri、xaml、png、jpg ファイル) からファイル名と名前が衝突したを持つすべてのファイルを配置する必要があります<em>\redist\\< config\>\\< arch\> \\< sdkname\> \* XAML に関連付けられているファイルを除くを制御します。これらのファイルを下に配置する必要があります * \redist\\< config\>\\< arch\>\\< componentname\>\\</em>します。
+3. *再頒布可能パッケージ*フォルダー: ファイルをランタイム/デバッグが必要であり、ユーザーのアプリケーションの一部としてパッケージ化する必要があります。 下にあるすべてのバイナリを配置する必要があります *\redist\\< config\>\\< arch\>* 、バイナリ名に次の形式に一意性を確保する必要があります: *]* \<会社 >。\<製品 >。\<目的 >。\<拡張機能 ><em>します。たとえば、*Microsoft.Cpp.Build.dll</em>します。 下にあるその他の Sdk (たとえば、javascript、css、pri、xaml、png、jpg ファイル) からファイル名と名前が衝突したを持つすべてのファイルを配置する必要があります<em>\redist\\< config\>\\< arch\> \\< sdkname\> \* XAML に関連付けられているファイルを除くを制御します。これらのファイルを下に配置する必要があります * \redist\\< config\>\\< arch\>\\< componentname\>\\</em>します。
 
 4. *デザイン時*フォルダー: 前の実行/デバッグのみで必要なファイルは、時間し、ユーザーのアプリケーションの一部としてパッケージ化することはできません。 XML ドキュメント、ライブラリ、ヘッダー、ツールボックスのデザイン時のバイナリ、MSBuild の成果物などを指定できます。 ネイティブ プロジェクトで消費する必要がありますを指定することが想定されている任意の SDK、 *SDKName.props*ファイル。 この種類のファイルのサンプルを次に示します。
 
@@ -124,7 +124,7 @@ ms.locfileid: "62891226"
 
    ```
 
-    XML のリファレンス ドキュメントは、参照ファイルの横に配置されます。 たとえば、XML の参照ドキュメント、 *\References\\< config\>\\< arch\>\sample.dll*アセンブリが*\References\\< config\>\\< arch\>\sample.xml*でそのドキュメントのローカライズされたバージョンは*\References\\< config\>\\<arch\>\\< ロケール\>\sample.xml*します。
+    XML のリファレンス ドキュメントは、参照ファイルの横に配置されます。 たとえば、XML の参照ドキュメント、 *\References\\< config\>\\< arch\>\sample.dll*アセンブリが *\References\\< config\>\\< arch\>\sample.xml*でそのドキュメントのローカライズされたバージョンは *\References\\< config\>\\<arch\>\\< ロケール\>\sample.xml*します。
 
 5. *構成*フォルダー: 3 つのサブフォルダー。*デバッグ*、*小売*、および*CommonConfiguration*します。 SDK の作成者は、の下にファイルを配置できる*CommonConfiguration*と SDK ファイルの同じセットが使用されることを SDK コンシューマーの対象となる構成に関係なく。
 
@@ -161,7 +161,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 2. ProductFamilyName:全体的な SDK の製品の名前。 たとえば、 [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] SDK の名前は"Microsoft.WinJS.1.0"と"Microsoft.WinJS.2.0"、"Microsoft.WinJS"SDK の製品ファミリの同じファミリに属しています。 この属性は、その接続を作成するには、Visual Studio および MSBuild を使用できます。 この属性が存在しない場合、SDK の名前は、製品ファミリ名として使用されます。
 
-3. 対応する FrameworkIdentity:使用のアプリのマニフェストにこの属性の値が挿入されて 1 つまたは複数の Windows コンポーネント ライブラリの依存関係を指定します。 この属性は、Windows コンポーネント ライブラリにのみ適用されます。
+3. 対応する FrameworkIdentity:1 つまたは複数の Windows コンポーネント ライブラリの依存関係を指定します。 この属性の値は、使用のアプリのマニフェストに配置されます。 この属性は、Windows コンポーネント ライブラリにのみ適用されます。
 
 4. TargetFramework:参照マネージャーと、ツールボックスで使用できる Sdk を指定します。 これは、ターゲット フレームワークのモニカーのセミコロン区切りのリストなど".NET Framework、バージョン = v2.0; .NET Framework、バージョン = v4.5.1"。 同じターゲット フレームワークのいくつかのバージョンが指定されている場合、参照マネージャーは、フィルタ リングするための指定された最低バージョンを使用します。 たとえば場合、".NET Framework、バージョン = v2.0; .NET Framework、バージョン = v4.5.1"参照マネージャーを使用して、指定".NET Framework、バージョン = v2.0"。 特定のターゲット フレームワーク プロファイルが指定されている場合のみそのプロファイルが使用されます参照マネージャーによってフィルタ リングするためです。 たとえば、"Silverlight、バージョン = v4.0、プロファイル WindowsPhone ="が指定されている参照マネージャーは、Windows Phone プロファイルのみに基づくフィルター処理完全な Silverlight 4.0 Framework をターゲットとするプロジェクトでは、SDK 参照マネージャーでは表示されません。
 
@@ -179,7 +179,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 10. SupportsMultipleVersions:この属性設定されている場合**エラー**または**警告**MSBuild では、同じプロジェクトが同じ SDK ファミリの複数のバージョンを参照できないことを示します。 この属性が存在しないかに設定されている場合**許可**MSBuild は、この種類のエラーまたは警告を表示しません。
 
-11. AppX:ディスク上の Windows コンポーネント ライブラリ用のアプリ パッケージへのパスを指定します。 この値は、ローカル デバッグ中に、Windows コンポーネント ライブラリの登録コンポーネントに渡されます。 ファイル名の名前付け規則は*\<会社 >.\<製品 >。\<アーキテクチャ >。\<Configuration >。\<バージョン > .appx*します。 Windows コンポーネント ライブラリには適用されない場合の構成とアーキテクチャには、属性名および属性値の省略可能です。 この値は、Windows コンポーネント ライブラリにのみ適用されます。
+11. AppX:ディスク上の Windows コンポーネント ライブラリ用のアプリ パッケージへのパスを指定します。 この値は、ローカル デバッグ中に、Windows コンポーネント ライブラリの登録コンポーネントに渡されます。 ファイル名の名前付け規則は *\<会社 >.\<製品 >。\<アーキテクチャ >。\<Configuration >。\<バージョン > .appx*します。 Windows コンポーネント ライブラリには適用されない場合の構成とアーキテクチャには、属性名および属性値の省略可能です。 この値は、Windows コンポーネント ライブラリにのみ適用されます。
 
 12. CopyRedistToSubDirectory:場所を指定します、ファイルの下、 *\redist*アプリ パッケージのルート フォルダーをコピーする必要があります (つまり、**パッケージの場所**でを選択して、**アプリ パッケージの作成**ウィザード) とランタイムのレイアウト ルート。 既定の場所は、アプリ パッケージのルートと**F5**レイアウト。
 

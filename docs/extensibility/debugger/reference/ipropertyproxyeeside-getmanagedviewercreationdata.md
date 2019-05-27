@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09d86fb259cb4fe04b55211acbd60833e6362855
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d8ae4a20735c02f564cbf5c749247ec16572c034
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458149"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198820"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 そのビューアーをインスタンス化するために、このプロパティの種類ビューアーに関する情報を取得します。
@@ -50,29 +50,23 @@ int GetManagedViewerCreationData(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `assemName`\
+`assemName`\
+[out]このオブジェクトを保持しているアセンブリの名前を返します。
 
- [out]このオブジェクトを保持しているアセンブリの名前を返します。
+`assemBytes`\
+[out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) (これは、null 値をバイトが使用できない場合)、このオブジェクトのアセンブリのバイト数を格納しているオブジェクト。
 
- `assemBytes`\
+`assemPdb`\
+[out]返します、`IEEDataStorage`シンボルを含むオブジェクトは、(これは、null 値をシンボル ストアが使用できない場合)、このオブジェクトの情報を格納します。
 
- [out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) (これは、null 値をバイトが使用できない場合)、このオブジェクトのアセンブリのバイト数を格納しているオブジェクト。
+`className`\
+[out]このオブジェクトを含むクラスの名前を返します。
 
- `assemPdb`\
+`alr`\
+[out]値を返します、 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)アセンブリの場所を示す列挙値。
 
- [out]返します、`IEEDataStorage`シンボルを含むオブジェクトは、(これは、null 値をシンボル ストアが使用できない場合)、このオブジェクトの情報を格納します。
-
- `className`\
-
- [out]このオブジェクトを含むクラスの名前を返します。
-
- `alr`\
-
- [out]値を返します、 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)アセンブリの場所を示す列挙値。
-
- `replacementOk`\
-
- [out]0 以外の値を返します (`TRUE`) このオブジェクトの値を変更できる場合は 0 (`FALSE`) オブジェクトが読み取り専用である場合。
+`replacementOk`\
+[out]0 以外の値を返します (`TRUE`) このオブジェクトの値を変更できる場合は 0 (`FALSE`) オブジェクトが読み取り専用である場合。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

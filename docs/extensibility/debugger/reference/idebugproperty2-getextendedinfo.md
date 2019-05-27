@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa66f61c7e72f1c629fe664baf2c2a5dcc9631e2
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7d9e2ff4b853baec5da19b4c62cffe4e86102736
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458892"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211599"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 拡張プロパティの情報を取得します。
@@ -42,13 +42,11 @@ int GetExtendedInfo ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `guidExtendedInfo`\
+`guidExtendedInfo`\
+[in]取得する拡張情報の種類を決定する GUID。 詳細については、「解説」を参照してください。
 
- [in]取得する拡張情報の種類を決定する GUID。 詳細については、「解説」を参照してください。
-
- `pExtendedInfo`\
-
- [out]返します、 `VARIANT` (C++) またはオブジェクト (C#) 拡張プロパティの情報を取得できます。 たとえば、このパラメーターを返す可能性があります、`IUnknown`インターフェイスのクエリを実行できる、 [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)インターフェイス。 詳細については、「解説」を参照してください。
+`pExtendedInfo`\
+[out]返します、 `VARIANT` (C++) またはオブジェクト (C#) 拡張プロパティの情報を取得できます。 たとえば、このパラメーターを返す可能性があります、`IUnknown`インターフェイスのクエリを実行できる、 [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)インターフェイス。 詳細については、「解説」を参照してください。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`; エラー コードを返します。 返します`S_GETEXTENDEDINFO_NO_EXTENDEDINFO`を取得する拡張情報がない場合。

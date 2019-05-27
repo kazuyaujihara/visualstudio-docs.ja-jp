@@ -59,7 +59,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>静的 (FxCop) とアナライザー パッケージ コード分析の違いについて説明します。</p>
+            html: <p>静的 (FxCop) とアナライザーのコード分析の違いについて説明します。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: さまざまな新機能ですか。
@@ -68,6 +68,11 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: FxCop アナライザーのインストール
+          - href: fxcop-rule-port-status.md
+            html: <p>FxCop アナライザーに移植された静的コード分析の FxCop ルールを一覧表示します。</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
+            title: インポートおよび unported ルール
           - href: 'use-roslyn-analyzers.md#command-line-usage'
             html: <p>通常、コマンドラインからコード分析を実行する場合は、コマンドラインからアナライザーを使用する方法を説明します。</p>
             image:

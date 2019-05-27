@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: abae34aad980d42018c217e150ea72b5896e436e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15c4ba33dda8e1e3220d8285e35000061fedd99f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816073"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676727"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity を使用する
 
@@ -202,7 +202,7 @@ Visual Studio の **[停止]** ボタンをクリックするかキーボード 
 
    PDB ファイルには DLL のデバッグのシンボルや、DLL コードからソース コード フォームへのマップが格納されているため、デバッグには PDB ファイルが必要です。 レガシ ランタイムをターゲットにしている場合、Visual Studio Tools for Unity は、DLL と PDB からの情報を使用して DLL.MDB ファイルを作成します。このファイルは、レガシ Unity スクリプト エンジンが使用するデバッグ シンボル形式になっています。 新しいランタイムをターゲットにしていて、Portable-PDB を使用している場合、新しい Unity ランタイムは Portable-PDB をネイティブで使用できるため、Visual Studio Tools for Unity ではシンボル変換が試行されません。
    
-   PDB 生成の詳細については、[ここ](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019)を参照してください。 新しいランタイムをターゲットにしている場合は、Portable-PDB を適切に生成するために、[Debugging Information]\(デバッグ情報\) が [移植可能] に設定されていることを確認します。 レガシ ランタイムをターゲットにしている場合は、[全体] を使用する必要があります。
+   PDB 生成の詳細については、[ここ](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations)を参照してください。 新しいランタイムをターゲットにしている場合は、Portable-PDB を適切に生成するために、[Debugging Information]\(デバッグ情報\) が [移植可能] に設定されていることを確認します。 レガシ ランタイムをターゲットにしている場合は、[全体] を使用する必要があります。
 
 4. コードをデバッグします。 これで、Unity プロジェクトのソース コードと DLL ソース コードを一緒にしてデバッグできるようになりました。ブレークポイントやコードのステップ実行など、いつも使用しているデバッグ機能をすべて使用できます。
 

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e66eb7fc2915514b91135e8c89843a0d979abf4a
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929007"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65845907"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio での配置の概要
 
@@ -40,7 +40,7 @@ ms.locfileid: "62929007"
 
 ローカル フォルダーへの配置は通常、テスト目的で使用されます。あるいは、最終的な配置に別のツールを使用する段階式配置を開始する目的で使用されます。
 
-- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python**、.**NET Core**:発行ツールを使用して、ローカル フォルダーに配置します。 利用できるオプションは厳密にはアプリの種類によって異なります。 ソリューション エクスプローラーで、プロジェクトを右クリックし、**[発行]** を選択します。 (発行プロファイルを以前に構成している場合、**[新しいプロファイルの作成]** をクリックする必要があります。)次に **[フォルダー]** を選択します。 詳細については、「[ローカル フォルダーに配置する](quickstart-deploy-to-local-folder.md)」を参照してください
+- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python**、.**NET Core**:発行ツールを使用して、ローカル フォルダーに配置します。 利用できるオプションは厳密にはアプリの種類によって異なります。 ソリューション エクスプローラーで、プロジェクトを右クリックし、**[発行]** を選択します。 (発行プロファイルを以前に構成していない場合、**[新しいプロファイルの作成]** をクリックする必要があります。)次に **[フォルダー]** を選択します。 詳細については、「[ローカル フォルダーに配置する](quickstart-deploy-to-local-folder.md)」を参照してください
 
     ![[発行] を選択する](../deployment/media/quickstart-publish.png)
 

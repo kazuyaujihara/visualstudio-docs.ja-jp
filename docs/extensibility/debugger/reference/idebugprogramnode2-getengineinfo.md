@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c31d3a858af2886a27a51e22e131cb89b2234d6e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7ef0ce265bc63ce9a00fd748c50a338d52294557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459075"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211697"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 プログラムを実行するデバッグ エンジン (DE) の識別子と名前を取得します。
@@ -42,13 +42,11 @@ int GetEngineInfo(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pbstrEngine`\
+`pbstrEngine`\
+[out]プログラムを実行するデバイスの名前を返します (C++-特定します。 これは、呼び出し元が、エンジンの名前に関心がないことを示す null ポインター)。
 
- [out]プログラムを実行するデバイスの名前を返します (C++-特定します。 これは、呼び出し元が、エンジンの名前に関心がないことを示す null ポインター)。
-
- `pguidEngine`\
-
- [out]プログラムを実行する DE のグローバルに一意の識別子を返します (C++-特定します。 これは、呼び出し元が、エンジンの GUID に興味がないことを示す null ポインター)。
+`pguidEngine`\
+[out]プログラムを実行する DE のグローバルに一意の識別子を返します (C++-特定します。 これは、呼び出し元が、エンジンの GUID に興味がないことを示す null ポインター)。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

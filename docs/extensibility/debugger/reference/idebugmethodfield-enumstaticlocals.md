@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fb50271801d895ca73dbbc915ff95320183d032
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6ad65d9300c45073aec049d9050a180d49bf5c17
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872912"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211961"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 メソッドの静的ローカル変数の列挙子を作成します。
@@ -36,10 +39,9 @@ int EnumStaticLocals(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ppLocals`
-
- [out]返します、 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)静的ローカル変数の一覧を表すオブジェクト。 静的ローカル変数がない場合は、null 値を返します。
+## <a name="parameters"></a>パラメーター
+`ppLocals`\
+[out]返します、 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)静的ローカル変数の一覧を表すオブジェクト。 静的ローカル変数がない場合は、null 値を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合は S_OK を返します。 または静的ローカル変数がない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。

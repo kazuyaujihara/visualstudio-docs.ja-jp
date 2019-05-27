@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad3831fb06d23f622f85a55f5efd0a5650ca5e47
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d23a19ad42f665f471274ee75f328056dd55b17d
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799037"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037102"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>同期的に自動的に読み込む拡張機能
 
@@ -29,7 +29,7 @@ ms.locfileid: "62799037"
 
 - をクリックして**次回からこのメッセージを表示しない**して通知を破棄します。 このオプションを選択すると、同期的に自動的に読み込む拡張機能からの今後のすべての通知も回避されます。 ユーザーは引き続き他の Visual Studio の機能について通知を取得します。
 
-### <a name="performance-manager-dialog"></a>パフォーマンス マネージャー ダイアログ ボックス
+## <a name="performance-manager-dialog"></a>パフォーマンス マネージャー ダイアログ ボックス
 
 ![パフォーマンス マネージャー ダイアログ ボックス](media/performance-manager.png)
 
@@ -39,3 +39,17 @@ ms.locfileid: "62799037"
 * ユーザーは、移行の進行状況のベンダー拡張機能を連絡することができます。
 
 拡張機能の作成者は、移行する手順を確認できますパッケージで非同期 autoload を[AsyncPackage への移行](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration)します。
+
+## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>グループ ポリシーを使用して同期 autoload 設定を指定します。
+
+既定では、Visual Studio のインストールのブロックの同期 autoload によって Visual Studio 2019 Update 1 を開始しています。 グループ ポリシーを有効にした場合は、個々 のコンピューターで同期の自動読み込みを許可する Visual Studio を構成できます。 これを行うには、次のキーでレジストリ ベースのポリシーを設定します。
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+
+エントリ =**許可**
+
+値 = (DWORD)
+* **0**は同期 autoload 許可されていません
+* **1**同期 autoload は許可されています。
+
+Visual Studio 2019 Update 1 での同期の自動読み込みの設定の詳細については、次を参照してください。、[同期 Autoload 動作](https://aka.ms/AA52xzw)ページ。

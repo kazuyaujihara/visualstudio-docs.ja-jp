@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: acaa43d4a9afe1084502c44f5221bc8518a9bd3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 371766c1aaffbbd82cd4a5da8876a65eccc96363
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917938"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202606"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 タイトル、フレンドリ名、またはプロセスのファイル名を取得します。
@@ -38,14 +41,12 @@ int GetName( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `gnType`
+## <a name="parameters"></a>パラメーター
+`gnType`\
+[in]値、 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列挙型名を返すは、どのような型を指定します。
 
- [in]値、 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)列挙型名を返すは、どのような型を指定します。
-
- `pbstrName`
-
- [out]プロセスの名前を返します。
+`pbstrName`\
+[out]プロセスの名前を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

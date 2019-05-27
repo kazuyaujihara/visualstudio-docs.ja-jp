@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9f088bcfeebb570be911fbc8e37bed5995767ac9
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: cefde77199f4348cb93fd387291f3a991bf4d50c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457734"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211473"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 取得、 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)プロパティを記述する構造体。
@@ -50,29 +50,23 @@ int GetPropertyInfo ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `dwFields`\
+`dwFields`\
+[in]値の組み合わせ、 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)で入力するフィールドを指定する列挙体、`pPropertyInfo`構造体。
 
- [in]値の組み合わせ、 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)で入力するフィールドを指定する列挙体、`pPropertyInfo`構造体。
+`nRadix`\
+[in]任意の数値情報を書式設定で使用する基数。
 
- `nRadix`\
+`dwTimeout`\
+[in]このメソッドから戻る前に待機するミリ秒単位で最大の時間を指定します。 使用`INFINITE`を無期限に待機します。
 
- [in]任意の数値情報を書式設定で使用する基数。
+`rgpArgs`\
+[入力、出力]今後使用するために予約されていますnull 値に設定します。
 
- `dwTimeout`\
+`dwArgCount`\
+[in]今後使用するために予約されています0 に設定します。
 
- [in]このメソッドから戻る前に待機するミリ秒単位で最大の時間を指定します。 使用`INFINITE`を無期限に待機します。
-
- `rgpArgs`\
-
- [入力、出力]今後使用するために予約されていますnull 値に設定します。
-
- `dwArgCount`\
-
- [in]今後使用するために予約されています0 に設定します。
-
- `pPropertyInfo`\
-
- [out]A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造、プロパティの説明が入力されます。
+`pPropertyInfo`\
+[out]A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造、プロパティの説明が入力されます。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`; エラー コードを返します。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44e801318a2a997e7c1ab2f863b737c4d6693e14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 578826eba2cd89ba045590ae110f57949e572064
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922268"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205647"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 特定のポートを取得します。
@@ -38,14 +41,12 @@ int GetPort( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `guidPort`
+## <a name="parameters"></a>パラメーター
+`guidPort`\
+[in]ポートの GUID を取得します。
 
- [in]ポートの GUID を取得します。
-
- `ppPort`
-
- [out]返します、 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)目的のポートを表すオブジェクト。
+`ppPort`\
+[out]返します、 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)目的のポートを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_PORTSUPPLIER_NO_PORT`指定の識別子を持つポートがない場合。

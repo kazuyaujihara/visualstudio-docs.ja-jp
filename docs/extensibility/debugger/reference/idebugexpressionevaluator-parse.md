@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a93d909fbc8882c5864097a2a36c36749327a2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3504ba7ec668e243b72536b940f0779a5c0b728d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843135"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200882"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 このメソッドは、式の文字列を解析された式に変換します。
@@ -46,30 +49,24 @@ int Parse(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `upstrExpression`
+## <a name="parameters"></a>パラメーター
+`upstrExpression`\
+[in]解析対象の式の文字列。
 
- [in]解析対象の式の文字列。
+`dwFlags`\
+[in]コレクション[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)式の解析方法を決定する定数。
 
- `dwFlags`
+`nRadix`\
+[in]任意の数値情報を解釈するための基数。
 
- [in]コレクション[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)式の解析方法を決定する定数。
+`pbstrError`\
+[out]人間が判読できるテキストとして、エラーを返します。
 
- `nRadix`
+`pichError`\
+[out]式の文字列で、エラーの開始文字位置を返します。
 
- [in]任意の数値情報を解釈するための基数。
-
- `pbstrError`
-
- [out]人間が判読できるテキストとして、エラーを返します。
-
- `pichError`
-
- [out]式の文字列で、エラーの開始文字位置を返します。
-
- `ppParsedExpression`
-
- [out]解析された式を返します、 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)オブジェクト。
+`ppParsedExpression`\
+[out]解析された式を返します、 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)オブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

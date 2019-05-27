@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df0504515d8ddacb4e21918cefffe76f8e96d6a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8fc140330330a278e29c84b8e146fda20eeed399
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875289"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203313"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
 テキストがドキュメントから削除されているパッケージのデバッグに通知します。
@@ -38,14 +41,12 @@ int onRemoveText( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pos`
+## <a name="parameters"></a>パラメーター
+`pos`\
+[in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造を示すテキストが削除されました。
 
- [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造を示すテキストが削除されました。
-
- `dwNumToRemove`
-
- [in]削除されたテキストの文字数を指定します。
+`dwNumToRemove`\
+[in]削除されたテキストの文字数を指定します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

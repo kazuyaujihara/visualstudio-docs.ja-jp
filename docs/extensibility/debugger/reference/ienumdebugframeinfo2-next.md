@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e369527afb3c229e1f34202850312f38b0512537
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 387ed48b4a9f7172aeda19db1d3f3756d257768b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226551"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207936"
 ---
 # <a name="ienumdebugframeinfo2next"></a>IEnumDebugFrameInfo2::Next
 列挙体から次の要素のセットを返します。
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `celt`\
+`celt`\
+[in]取得する要素の数。 最大サイズを指定します、`rgelt`配列。
 
- [in]取得する要素の数。 最大サイズを指定します、`rgelt`配列。
+`rgelt`\
+[入力、出力]配列[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)情報を格納する要素。
 
- `rgelt`\
-
- [入力、出力]配列[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)情報を格納する要素。
-
- `pceltFetched`\
-
- [out]実際に返される要素の数を返します`rgelt`します。
+`pceltFetched`\
+[out]実際に返される要素の数を返します`rgelt`します。
 
 ## <a name="return-value"></a>戻り値
  正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`返される可能性があります、要求された要素数よりも少ない場合、それ以外の場合、エラー コードを返します。

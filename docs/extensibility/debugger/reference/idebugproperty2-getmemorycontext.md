@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d806b5dc129e2d82c0b6a1aa49fc1f26a2dd393
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2549793df7799c86d610bb65871746516c6a66d4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457909"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211521"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
 プロパティの値のメモリのコンテキストを取得します。
@@ -40,9 +40,8 @@ int GetMemoryContext(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `ppMemory`\
-
- [out]返します、 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)このプロパティに関連付けられているメモリを表すオブジェクト。
+`ppMemory`\
+[out]返します、 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)このプロパティに関連付けられているメモリを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`; エラー コードを返します。 返します`S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT`を取得するメモリのコンテキストがない場合。

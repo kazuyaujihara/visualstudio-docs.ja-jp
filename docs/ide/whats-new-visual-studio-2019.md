@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 04/23/2019
+ms.date: 05/22/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432030"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976233"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
-**[16.0 リリースの更新](/visualstudio/releases/2019/release-notes/)**
+**[16.1 リリース](/visualstudio/releases/2019/release-notes/)の更新**
 
 >[!div class="button"]
 >[Visual Studio 2019 のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -63,7 +63,7 @@ C# には非常に便利な新しいリファクタリングが多数ありま�
 
 ### <a name="intellicode"></a>IntelliCode
 
-[Visual Studio IntelliCode](/visualstudio/intellicode/) は、人工知能 (AI) を使用したソフトウェア開発作業を強化するための拡張機能です。 IntelliCode は GitHub 上の 2,000 のオープン ソース プロジェクト (それぞれに 100 個以上の星が付いています) 全体をトレーニングして、レコメンデーションを生成します。
+[Visual Studio IntelliCode](/visualstudio/intellicode/) は、人工知能 (AI) を使用したソフトウェア開発作業を強化します。 IntelliCode は GitHub 上の 2,000 のオープン ソース プロジェクト (それぞれに 100 個以上の星が付いています) 全体をトレーニングして、レコメンデーションを生成します。
 
  ![Visual Studio 2019 の IntelliCode のアニメーション](media/vs-2019/IntelliCode.gif)
 
@@ -74,23 +74,33 @@ Visual Studio IntelliCode が生産性の強化に役立つ方法を次にいく
 * 見つけにくいコード問題を見つける
 * コード レビューの焦点を本当に重要な領域に向ける
 
-Visual Studio 向けの IntelliCode を初めてプレビューしたときには、C# しかサポートしていませんでした。 今回、Visual Studio で C++ のサポートに加え、XAML のサポートも追加されました。
+Visual Studio 向けの拡張機能として IntelliCode を初めてプレビューしたときには、C# しかサポートしていませんでした。 今回、**16.1 の新機能**として C# と XAML のサポートを追加しました。 (ただし、C++ と TypeScript/JavaScript のサポートはまだプレビュー段階です。)
 
 C# を使用している場合は、独自のコードでカスタム モデルをトレーニングする機能も追加されました。
 
-IntelliCode の詳細については、ブログの投稿「[Code more, scroll less with Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/)」(Visual Studio IntelliCode を使用して少ないスクロールで多くのコードを書く) を参照してください。
+IntelliCode に関する詳細については、ブログ投稿の「[Announcing the general availability of IntelliCode plus a sneak peek](https://devblogs.microsoft.com/visualstudio/announcing-the-general-availability-of-intellicode-plus-a-sneak-peek/)」 (IntelliCode の一般提供の告知とちら見せ) と「[Code more, scroll less with Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/)」 (Visual Studio IntelliCode でコードを増やし、スクロールを少なく) を参照してください。
 
 ### <a name="code-cleanup"></a>コードのクリーンアップ
 
 新しいドキュメントの正常性インジケーターと組み合わされたのが、新しいコード クリーンアップ コマンドです。 この新しいコマンドを使用して、警告と提案を特定し、ボタンをクリックして両方を修正することができます。
 
-クリーンアップにより、コードが書式設定され、[現在の設定](code-styles-and-quick-actions.md)および [.editorconfig ファイル](create-portable-custom-editor-options.md)のいずれかの提案に従って、任意のコード修正が適用されます。
+クリーンアップにより、コードが書式設定され、[現在の設定](code-styles-and-code-cleanup.md)および [.editorconfig ファイル](create-portable-custom-editor-options.md)のいずれかの提案に従って、任意のコード修正が適用されます。
 
    ![Visual Studio 2019 の新しいコード クリーンアップ コントロールのスクリーン ショット](media/vs-2019/code-cleanup-profile.png)
 
 修正機能のコレクションをプロファイルとして保存することもできます。 たとえば、コードを書いている間に頻繁に適用する小規模なターゲット修正機能があり、コード レビューの前に適用する完全な修正機能のセットがそれ以外にある場合は、それらの異なるタスクに対処するためのプロファイルを構成することができます。
 
    ![Visual Studio 2019 の新しいコード クリーンアップ コントロールのスクリーン ショット](media/vs-2019/code-cleanup-profile-configure.png)
+
+### <a name="per-monitor-aware-pma-rendering"></a>Per-monitor aware (PMA) レンダリング
+
+異なる表示倍率で構成されているモニターを使用する場合、またはご使用のメイン デバイスとは異なる表示倍率を持つマシンにリモートで接続する場合、Visual Studio がぼやけて見えたり、間違ったスケールでレンダリングされる場合があります。
+
+Visual Studio 2019 のリリースにより、Visual Studio を Per-monitor aware (PMA) アプリケーションにすることができます。 お使いのディスプレイ スケール要素に関係なく、Visual Studio で正しくレンダリングできるようになりました。
+
+   ![Visual Studio 2019 の Per-monitor aware (PMA) レンダリング](media/vs-2019/pma-dpi-scaling.png)
+
+詳細については、[Visual Studio 2019 を使ったマルチモニター エクスペリエンスの向上](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/)に関するブログ記事をご覧ください。
 
 ## <a name="collaborate"></a>共同作業
 
@@ -104,7 +114,7 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
    ![Visual Studio 2019 の新しいスタート ウィンドウのスクリーンショット](media/vs-2019/start-window-dark.png)
 
-スタート ウィンドウには、コードをすばやく書くためのいくつかのオプションが表示されています。 最初に、リポジトリからコードを複製したりチェックアウトしたりできるオプションを追加しました。  
+スタート ウィンドウには、コードをすばやく書くためのいくつかのオプションが表示されています。 最初に、リポジトリからコードを複製したりチェックアウトしたりできるオプションを追加しました。
 
    ![Visual Studio 2019 の 'Git ファースト' エクスペリエンスのアニメーション](media/vs-2019/git-first.gif)
 
@@ -128,7 +138,7 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
    ![Visual Studio 2019 の新しいスタート ウィンドウのスクリーンショット](media/vs-2019/pr-experience.png)
 
-今すぐ作業を開始するには、[Visual Studio 用のプル要求](https://aka.ms/pr4vs)拡張機能を Visual Studio Marketplace からダウンロードします。
+詳細については、ブログ投稿の「[Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/)」 (Visual Studio プル要求拡張を利用したコード レビュー) を参照してください。
 
 ## <a name="debug"></a>デバッグ
 
@@ -178,9 +188,9 @@ Visual Studio 2019 のその他の機能について詳細を知りたい場合�
 
 Visual Studio チームにフィードバックを送ることにどんな意味があるのでしょうか? お客様からのフィードバックは、すべて真剣に考慮することにしています。 フィードバックによって今後の動向が左右されることになります。
 
-* Visual Studio を向上させることができるご提案がある場合は、[[提案の送信]](talk-to-us.md#i-want-to-make-a-suggestion-about-visual-studio-features) ツールを使用して、ご提案を送信してください。
+* Visual Studio を向上させることができるご提案がある場合は、[[機能の提案]](suggest-a-feature.md) ツールを使用して、ご提案を送信してください。
 
-* ハング、クラッシュ、またはその他のパフォーマンスの問題が発生した場合、[[問題の報告]](talk-to-us.md#i-want-to-report-a-problem-with-visual-studio) ツールを使用すると、再現コードやサポート ファイルを簡単に Microsoft と共有することができます。
+* ハング、クラッシュ、またはその他のパフォーマンスの問題が発生した場合、[[問題の報告]](how-to-report-a-problem-with-visual-studio.md) ツールを使用すると、再現コードやサポート ファイルを簡単に Microsoft と共有することができます。
 
 ## <a name="see-also"></a>関連項目
 
@@ -188,4 +198,5 @@ Visual Studio チームにフィードバックを送ることにどんな意味
 * [Visual Studio 2019 リリース ノート](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 SDK の新機能](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Visual Studio 2019 for Mac が利用できるようになりました](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Microsoft Build 2019 カンファレンス](https://www.microsoft.com/build)
 * [Microsoft Connect(); 2018 カンファレンス](https://www.microsoft.com/connectevent)

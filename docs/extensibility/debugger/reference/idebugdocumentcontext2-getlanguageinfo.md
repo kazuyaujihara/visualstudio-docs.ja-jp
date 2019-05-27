@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eb1106bce363bcf1b817853cafc77d192adad86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3c1f4ae2284c1933e7cc3d63ce0079fe3db4f7d7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921837"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204664"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 このドキュメントのコンテキストに関連付けられた言語を取得します。
@@ -38,14 +41,12 @@ int GetLanguageInfo(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
-`pbstrLanguage`
+## <a name="parameters"></a>パラメーター
+`pbstrLanguage`\
+[out]このドキュメントのコンテキストでコードを実装する言語の名前を返します。
 
- [out]このドキュメントのコンテキストでコードを実装する言語の名前を返します。
-
-`pguidLanguage`
-
- [out]このドキュメントのコンテキストでコードを実装する言語の GUID を返します。 たとえば、`guidVBScriptLang` または `guidCPPLang` のようにします。 この GUID は、によって指定された言語に制限がない[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]します。
+`pguidLanguage`\
+[out]このドキュメントのコンテキストでコードを実装する言語の GUID を返します。 たとえば、`guidVBScriptLang` または `guidCPPLang` のようにします。 この GUID は、によって指定された言語に制限がない[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]します。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

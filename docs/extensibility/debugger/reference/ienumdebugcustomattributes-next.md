@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 205308bbac53ac21b8b81c26b4f333c3be111dbd
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 8a4ea136872181a9432efbd778738e22c47c6304
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226659"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208278"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 指定された数の列挙体シーケンス内のカスタム属性を取得します。
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `celt`\
+`celt`\
+[in]取得する要素の数。 最大サイズを指定します、`rgelt`配列。
 
- [in]取得する要素の数。 最大サイズを指定します、`rgelt`配列。
+`rgelt`\
+[out]配列の[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)情報を格納するオブジェクト。
 
- `rgelt`\
-
- [out]配列の[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)情報を格納するオブジェクト。
-
- `pceltFetched`\
-
- [out]実際に返される要素の数を返します`rgelt`します。
+`pceltFetched`\
+[out]実際に返される要素の数を返します`rgelt`します。
 
 ## <a name="return-value"></a>戻り値
  正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`返される可能性があります、要求された要素数よりも少ない場合、それ以外の場合、エラー コードを返します。

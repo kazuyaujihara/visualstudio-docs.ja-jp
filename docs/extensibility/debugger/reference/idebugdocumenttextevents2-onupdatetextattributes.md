@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b3e76c1eaf82763f461eb1a0b198a7653465970
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4991b637fbc6720580856c9120a1c1d68a9769df
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875204"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207857"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 テキスト属性をドキュメントで更新されていることをデバッグ パッケージに通知します。
@@ -38,14 +41,12 @@ int onUpdateTextAttributes( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pos`
+## <a name="parameters"></a>パラメーター
+`pos`\
+[in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造を示すテキスト属性が更新されました。
 
- [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造を示すテキスト属性が更新されました。
-
- `dwNumToUpdate`
-
- [in]更新されたテキストの文字数を指定します。
+`dwNumToUpdate`\
+[in]更新されたテキストの文字数を指定します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49f30f6b5bb1231f6bcbd77097454ae7a73a7a2c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 45dadc5d3292d989163df085e00f61207940d442
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458592"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212070"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 指定した名前のメトリックの一意の識別子を取得します。
@@ -44,21 +44,17 @@ private int GetMetricGuid(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pszType`\
+`pszType`\
+[in]メトリックの種類です。
 
- [in]メトリックの種類です。
+`guidSection`\
+[in]セクションの一意の識別子。
 
- `guidSection`\
+`pszMetric`\
+[in]メトリックの名前。
 
- [in]セクションの一意の識別子。
-
- `pszMetric`\
-
- [in]メトリックの名前。
-
- `pguidValue`\
-
- [out]メトリックの一意の識別子を返します。
+`pguidValue`\
+[out]メトリックの一意の識別子を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

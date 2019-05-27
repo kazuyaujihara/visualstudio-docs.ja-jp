@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e54a7f38eed85ffe2757b373de1af59e1aaa126b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5b574e28ac0b42f065bfbf056188c655797e542b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842718"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209339"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 一連の連続するバイトを指す値を設定します。
@@ -42,22 +45,18 @@ int SetBytes(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dwStart`
+## <a name="parameters"></a>パラメーター
+`dwStart`\
+[in]指すオブジェクトの先頭からのバイト単位のオフセット。
 
- [in]指すオブジェクトの先頭からのバイト単位のオフセット。
+`dwCount`\
+[in]設定するバイト数。
 
- `dwCount`
+`pBytes`\
+[in]新しい値を表すバイトの配列。 この値は、指定されたオフセットから始まる、オブジェクトに格納されます。
 
- [in]設定するバイト数。
-
- `pBytes`
-
- [in]新しい値を表すバイトの配列。 この値は、指定されたオフセットから始まる、オブジェクトに格納されます。
-
- `pdwBytes`
-
- [out]実際のバイト数の設定を返します。
+`pdwBytes`\
+[out]実際のバイト数の設定を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。

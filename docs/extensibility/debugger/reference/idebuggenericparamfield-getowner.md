@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31152aecb62a1491b58c33b73539426bc4e0464
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a31525ca7dbd89f4a6d1421eab0db11a38224cb9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919023"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212179"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 このジェネリック パラメーターの型またはメソッドの所有者を取得します。
@@ -34,10 +37,9 @@ int GetOwner(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
-`ppOwner`
-
- [out]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)このジェネリック パラメーターを所有するオブジェクト。
+## <a name="parameters"></a>パラメーター
+`ppOwner`\
+[out]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)このジェネリック パラメーターを所有するオブジェクト。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

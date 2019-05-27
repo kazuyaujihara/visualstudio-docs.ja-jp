@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dc3185b644a1045428ead9f2c9851916df3249c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d226650592881e9e7f87a5fbf5c700dfd7d817cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917033"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211145"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 すべての使用可能なデバッグ エンジン (DE) このプログラムをデバッグできるの Guid を返します。
@@ -40,18 +43,15 @@ int EnumPossibleEngines( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `celtBuffer`
+## <a name="parameters"></a>パラメーター
+`celtBuffer`\
+[in]返す DE Guid の数。 最大サイズを指定することも、`rgguidEngines`配列。
 
- [in]返す DE Guid の数。 最大サイズを指定することも、`rgguidEngines`配列。
+`rgguidEngines`\
+[入力、出力]情報を格納する DE Guid の配列。
 
- `rgguidEngines`
-
- [入力、出力]情報を格納する DE Guid の配列。
-
- `pceltEngines`
-
- [out]返される DE Guid の実際の数を返します。
+`pceltEngines`\
+[out]返される DE Guid の実際の数を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します [C++]`HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)`または [C#] 0x8007007A バッファーが十分な大きさでない場合。

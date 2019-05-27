@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b881c3b5946428bf829ca4d971bb73f814b6d45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 781c9a0e4365a454d45af957207099d6d5ae7d92
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919528"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212654"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 このメソッドは、シンボルまたは型の型に依存しない情報を取得します。
@@ -36,10 +39,9 @@ int GetTypeInfo(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pTypeInfo`
-
- [out]指定された型情報を返します[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)構造体。
+## <a name="parameters"></a>パラメーター
+`pTypeInfo`\
+[out]指定された型情報を返します[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)構造体。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

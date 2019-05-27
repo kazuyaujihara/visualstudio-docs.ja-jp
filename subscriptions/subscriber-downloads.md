@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれている Microsoft 製品を見つけてダウンロードする方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0808da563ca37b675bb5f79841db25c40ecf5f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953727"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697781"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでサブスクライバー ダウンロードを使用します。
 サブスクライバー特典の一環として、広い範囲のソフトウェアのダウンロードにアクセスできます。
@@ -31,7 +31,7 @@ ms.locfileid: "62953727"
 - **冗長なソフトウェア。** Office を含むサブスクリプションで、Select Office スイートおよびスタンドアロン Office ダウンロードおよびプロダクト キーは使用できなくなります。 同じバージョンの対応する最高の Office スイートのダウンロードとプロダクト キーを使用できます。  たとえば、PowerPoint 2010 を検索する場合、検索結果は生成されません。  しかし、Office 2010 (PowerPoint 2010 が含まれる Office スイート) を検索し、スイートをダウンロードすることはできます。
 
 ## <a name="what-do-i-get"></a>何を取得できますか。
-ダウンロードの種類と数は、サブスクリプション レベルとプログラムのメンバーシップによって異なります。  Visual Studio Enterprise Standard のサブスクリプションを持つサブスクライバーは、Microsoft Partner Network または BizSpark プログラム サブスクリプションを介してサブスクリプションを取得したサブスクライバーと使用できるダウンロードが異なる場合があります。  各サブスクリプション レベルで利用できるダウンロードの詳細については、「[Products By Benefit Level](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx)」(特典レベル別の製品) の一覧をダウンロードしてください。
+ダウンロードの種類と数は、サブスクリプション レベルとプログラムのメンバーシップによって異なります。  Visual Studio Enterprise Standard のサブスクリプションを持つサブスクライバーは、Microsoft Partner Network または BizSpark プログラム サブスクリプションを介してサブスクリプションを取得したサブスクライバーと使用できるダウンロードが異なる場合があります。  各サブスクリプション レベルで利用できるダウンロードの詳細については、「[Products By Benefit Level](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)」(特典レベル別の製品) の一覧をダウンロードしてください。
 
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 

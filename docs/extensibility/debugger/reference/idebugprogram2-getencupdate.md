@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2de204f3d95147d3250e570fa785ecccf68b4634
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 363018d13cfeee1691881f4d8b814cdd0b2dfa35
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412774"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212349"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 このメソッドは、このプログラムの編集と続行 (ENC) の更新プログラムを取得します。 カスタム デバッグ エンジンは常に返します`E_NOTIMPL`します。
@@ -36,10 +39,9 @@ int GetENCUpdate(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ppUpdate`
-
- [out]このプログラムを更新するために使用する内部インターフェイスを返します。
+## <a name="parameters"></a>パラメーター
+`ppUpdate`\
+[out]このプログラムを更新するために使用する内部インターフェイスを返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

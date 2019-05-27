@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: bc84b3f89aa819755a689a0798aea7fbb8147510
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fce0fb33f6c536386754b10b11e724a603f0a2a6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805638"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697997"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ のコード分析の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ C/C++ コード分析ツールは、C/C++ ソース コードの障害に関す�
  開発者が分析ツールを自然に使用できるように、分析ツールは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE に完全に統合されています。 ビルド プロセス中は、ソース コードに対して生成された警告がエラー一覧に表示されます。 警告の原因となったソース コードに移動して、問題の原因と考えられる解決策に関する追加情報を表示できます。  
   
 ## <a name="pragma-support"></a>#pragma のサポート  
- 開発者は `#pragma` ディレクティブを使用して、警告をエラーとして扱うか、警告を有効または無効にするか、個々のコード行の警告を非表示にすることができます。 詳細については、「[方法 :Enable and Disable Code Analysis for Specific C/C++ Warnings](http://msdn.microsoft.com/910b8518-71f1-4b2e-b012-70647795642a)」(特定の C/C++ の警告についてコード分析を有効または無効にする) を参照してください。  
+ 開発者は `#pragma` ディレクティブを使用して、警告をエラーとして扱うか、警告を有効または無効にするか、個々のコード行の警告を非表示にすることができます。 詳細については、「[方法 :Enable and Disable Code Analysis for Specific C/C++ Warnings](https://msdn.microsoft.com/910b8518-71f1-4b2e-b012-70647795642a)」(特定の C/C++ の警告についてコード分析を有効または無効にする) を参照してください。  
   
 ## <a name="annotation-support"></a>注釈のサポート  
  注釈によってコード分析の精度が向上します。 注釈には、関数のパラメーターと戻り値の型について、事前および事後の状態に関する追加情報を指定します。 詳細については、「[方法 :__analysis_assume を使用して追加のコード情報を指定する](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)」を参照してください。  
@@ -47,7 +47,7 @@ C/C++ コード分析ツールは、C/C++ ソース コードの障害に関す�
  チェックインされるすべてのソース コードが、特定のポリシーを満たしていることが必要な場合があります。 具体的には、最新のローカル ビルドのステップとして分析が実行されたことを確認する必要があります。 コード分析チェックイン ポリシーを有効にする方法の詳細については、「[コード分析を用いたチェックイン ポリシーの作成と使用](../code-quality/creating-and-using-code-analysis-check-in-policies.md)」を参照してください。  
   
 ## <a name="team-build-integration"></a>チーム ビルドの統合  
- ビルド システムの統合機能を使用すると、コード分析ツールを [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] ビルド プロセスのステップとして実行できます。 詳細については、「[アプリケーションのビルド](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)」をご覧ください。  
+ ビルド システムの統合機能を使用すると、コード分析ツールを [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] ビルド プロセスのステップとして実行できます。 詳細については、「[アプリケーションのビルド](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)」をご覧ください。  
   
 ## <a name="command-line-support"></a>コマンド ラインのサポート  
  開発環境内への完全な統合に加えて、次の例に示すように、開発者はコマンド ラインから分析ツールを使用することもできます。  

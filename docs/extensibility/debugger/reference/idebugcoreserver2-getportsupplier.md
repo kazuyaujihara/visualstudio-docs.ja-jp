@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c7219f3940eb101c652725b5d7a180206108b85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ec665e3da8961b801c7e95efaee8bff3994b6b4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875835"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205620"
 ---
 # <a name="idebugcoreserver2getportsupplier"></a>IDebugCoreServer2::GetPortSupplier
 特定のポート サプライヤーを取得します。
@@ -38,14 +41,12 @@ int GetPortSupplier( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `guidPortSupplier`
+## <a name="parameters"></a>パラメーター
+`guidPortSupplier`\
+[in]取得するポートのサプライヤーの GUID です。
 
- [in]取得するポートのサプライヤーの GUID です。
-
- `ppPortSupplier`
-
- [out]返します、 [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)目的のポート サプライヤーを表すオブジェクト。
+`ppPortSupplier`\
+[out]返します、 [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)目的のポート サプライヤーを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

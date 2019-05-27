@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b414983121454a7e3fb7c1e631815bc830f51be
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c0e03c0ba48bcab65b10c1f80ab48ebadd923ff2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458690"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211902"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
 参照の値のバイト単位のサイズを取得します。 将来使用するために予約されています。
@@ -40,9 +40,8 @@ int GetSize ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pdwSize`\
-
- [out]参照の値のバイト単位のサイズを返します。
+`pdwSize`\
+[out]参照の値のバイト単位のサイズを返します。
 
 ## <a name="return-value"></a>戻り値
  常に `E_NOTIMPL` を返します。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c646974a1d1303482785ffd0240b3374e2ed071f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2d37ec7c2a81b036c80e7fab30fc794d51f21703
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871550"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204280"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 このメソッドは、永続化されたポートの一覧を列挙するオブジェクトを取得します。
@@ -38,14 +41,12 @@ int EnumPersistedPorts(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `PortNames`
+## <a name="parameters"></a>パラメーター
+`PortNames`\
+[in]A [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)を検索して永続化されたポートで返すポート名の一覧を含む構造体。 これらの名前で保存されるポートだけが返されます。
 
- [in]A [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)を検索して永続化されたポートで返すポート名の一覧を含む構造体。 これらの名前で保存されるポートだけが返されます。
-
- `ppEnum`
-
- [out]実装するオブジェクト、 [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)インターフェイス。
+`ppEnum`\
+[out]実装するオブジェクト、 [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)インターフェイス。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

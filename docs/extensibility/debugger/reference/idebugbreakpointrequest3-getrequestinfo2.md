@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06458649d091be104c5509e37aa35029a119c84f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58c313ebc56035d40d4743b9411c476434c82123
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877001"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199756"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 このメソッドは、このブレークポイントの要求を記述するブレークポイント要求情報を取得します。
@@ -38,14 +41,12 @@ int GetRequestInfo2(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dwFields`
+## <a name="parameters"></a>パラメーター
+`dwFields`\
+[in]フラグの組み合わせ、 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)のフィールドを決定する列挙体`pBPRequestInfo`入力します。
 
- [in]フラグの組み合わせ、 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)のフィールドを決定する列挙体`pBPRequestInfo`入力します。
-
- `bBPRequestInfo`
-
- [out][BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)情報を格納する構造体。
+`bBPRequestInfo`\
+[out][BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)情報を格納する構造体。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

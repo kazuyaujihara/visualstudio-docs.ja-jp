@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 長期契約ではなく、月または年単位の一定期間だけ Visual Studio Professional または Visual Studio Enterprise をレンタルします。
 searchscope: VS Subscription
-ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5927078aaf4001f569af9aafbc57575cf92fc980
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978906"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679313"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional および Visual Studio Enterprise クラウド サブスクリプションの購入
 
@@ -113,10 +113,10 @@ A: お客様は、新しい Visual Studio クラウド サブスクリプショ�
 A: 既存のお客様には影響はありません。 新規のお客様は、Visual Studio 月間サブスクリプションを購入するか、ボリューム ライセンスなどの別のチャネルに移動して Visual Studio サブスクリプションを購入する必要があります。
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>Q:お客様のサブスクリプションの数を増やす場合はどうすればよいですか。
-A: 管理者は引き続き、サブスクリプションの数を増やすことができます。その場合、[https://manage.visualstudio.com](https://manage.visualstudio.com) にアクセスし、この記事の手順に従ってサブスクリプション数を増やします。
+A: 特定の月の間に購入した年間サブスクリプションについては、1 年分がすぐに請求され、1 年間有効になります。 そのため、管理者は購入した当月でのみライセンスの数を変更できます (1 年間有効となり、1 年分が請求されます)。 購入した月以外では、サブスクリプションの数を増やすことができなくなります。
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q:お客様のサブスクリプションの数を減らす場合はどうすればよいですか。
-A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、[https://manage.visualstudio.com](https://manage.visualstudio.com) にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。
+A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、[https://manage.visualstudio.com](https://manage.visualstudio.com) にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。 システムによってクレジットが日割りされることは**ありません**。 返金については、Azure 請求チームにお問い合わせいただく必要がございます。
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>Q:お客様がサブスクリプションをキャンセルした場合、後でクラウド サブスクリプション年間プランをさらに購入することはできますか。
 A: 別のクラウド サブスクリプション年間プランを購入することはできませんが、Visual Studio サブスクリプションを購入する多くのオプションがあります。  詳細については、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) をご覧ください。

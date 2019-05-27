@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3fdfd604f28f6657b27ef0e81ca4ce5855d97df
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: bc49529f5652475ad9f7528fd229e0354ee055d4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457292"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212045"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 指定した名前のメトリックの値の文字列を取得します。
@@ -45,21 +45,17 @@ private int GetMetricString(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pszType`\
+`pszType`\
+[in]メトリックの種類です。
 
- [in]メトリックの種類です。
+`guidSection`\
+[in]セクションの一意の識別子。
 
- `guidSection`\
+`pszMetric`\
+[in]メトリックの名前。
 
- [in]セクションの一意の識別子。
-
- `pszMetric`\
-
- [in]メトリックの名前。
-
- `pbstrValue`\
-
- [out]メトリックの値の文字列を返します。
+`pbstrValue`\
+[out]メトリックの値の文字列を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

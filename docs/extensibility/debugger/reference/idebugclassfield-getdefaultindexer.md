@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d884b8e066b539b925e50d4f49f65168ca6156c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eaaddbe6bb223e8e2987f8310f1d8e08d5602a01
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922818"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206832"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 既定のインデクサーの名前を取得します。
@@ -36,10 +39,8 @@ int GetDefaultIndexer(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pbstrIndexer`
-
- [out]既定のインデクサーの名前を含む文字列を返します。
+## <a name="parameters"></a>パラメーター
+`pbstrIndexer` [out]既定のインデクサーの名前を含む文字列を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。 または、既定のインデクサーが存在しない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。

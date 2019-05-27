@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d415c87c67c20880615d83c1201b4588a683719c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5f39d1d7243c887c131107a3abe2c103de163cc8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921647"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204924"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 この混合モードのストリームの手順では、サイズを取得します。
@@ -36,10 +39,9 @@ int GetSize( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pnSize`
-
- [out]手順で、サイズを返します。
+## <a name="parameters"></a>パラメーター
+`pnSize`\
+[out]手順で、サイズを返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

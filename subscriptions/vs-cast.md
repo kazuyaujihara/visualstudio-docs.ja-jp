@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションで使用可能な CAST Highlight 特典について説明します
 searchscope: VS Subscription
-ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947908"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805345"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CAST Highlight 特典
 
@@ -107,6 +107,6 @@ Visual Studio Enterprise サブスクライバーは、サブスクライバー�
 
 ## <a name="next-steps"></a>次の手順
 
-サブスクリプションに付属している Azure 特典をまだアクティブ化していない場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスして、[ツール] カテゴリで [Azure] タイルをクリックして、Azure サブスクリプションを設定し、無料の Azure クレジットを引き換えます。
+サブスクリプションに付属している Azure 特典をまだアクティブ化していない場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスして、[ツール] カテゴリで [Azure] タイルをクリックして、Azure サブスクリプションを設定し、Azure クレジットを引き換えます。
 
 また、Greg の電子メールに記載されている、デモ、ユーザー ガイド、チュートリアルのビデオをチェックすることを忘れないでください。

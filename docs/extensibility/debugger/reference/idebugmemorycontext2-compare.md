@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8f7f778e0dfd55e9db175c4e279c92b72e427e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f04000d3e2675f766ae343836320aa7433ade87d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873286"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211994"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 各コンテキストと一致する最初のコンテキストのインデックスを返す、比較フラグで示されるように指定した配列内にメモリのコンテキストを比較します。
@@ -43,22 +46,18 @@ int Compare(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `compare`
+## <a name="parameters"></a>パラメーター
+`compare`\
+[in]値、 [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)比較の種類を決定する列挙型。
 
- [in]値、 [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)比較の種類を決定する列挙型。
+`rgpMemoryContextSet`\
+[in]参照の配列、 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)と比較するオブジェクト。
 
- `rgpMemoryContextSet`
+`dwMemoryContextSetLen`\
+[in]内のコンテキストの数、`rgpMemoryContextSet`配列。
 
- [in]参照の配列、 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)と比較するオブジェクト。
-
- `dwMemoryContextSetLen`
-
- [in]内のコンテキストの数、`rgpMemoryContextSet`配列。
-
- `pdwMemoryContext`
-
- [out]比較で一致する最初のメモリ コンテキストのインデックスを返します。
+`pdwMemoryContext`\
+[out]比較で一致する最初のメモリ コンテキストのインデックスを返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 返します`E_COMPARE_CANNOT_COMPARE`場合は、2 つのコンテキストを比較することはできません。

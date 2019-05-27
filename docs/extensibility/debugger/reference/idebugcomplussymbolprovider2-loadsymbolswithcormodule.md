@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba458d72fe12ce402129f60059347cb28b102686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9835275df1f332e69b13d886ab79d68588699e9d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876383"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205829"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 読み込みのデバッグ シンボルの指定、 **ICorDebugModule**オブジェクト。
@@ -47,34 +50,27 @@ int LoadSymbolsWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
-`ulAppDomainID`
+## <a name="parameters"></a>パラメーター
+`ulAppDomainID`\
+[in]アプリケーション ドメインの識別子。
 
- [in]アプリケーション ドメインの識別子。
+`guidModule`\
+[in]モジュールの一意の識別子。
 
-`guidModule`
+`baseAddress`\
+[in]基本のメモリ アドレス。
 
- [in]モジュールの一意の識別子。
+`pUnkMetadataImport`\
+[in]デバッグ シンボルのメタデータを含むオブジェクト。
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in]実装するオブジェクト、 [ICorDebugModule インターフェイス](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)します。
 
- [in]基本のメモリ アドレス。
+`bstrModuleName`\
+[in]モジュールの名前。
 
-`pUnkMetadataImport`
-
- [in]デバッグ シンボルのメタデータを含むオブジェクト。
-
-`pUnkCorDebugModule`
-
- [in]実装するオブジェクト、 [ICorDebugModule インターフェイス](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)します。
-
-`bstrModuleName`
-
- [in]モジュールの名前。
-
-`bstrSymSearchPath`
-
- [in]シンボル ファイルを検索するパス。
+`bstrSymSearchPath`\
+[in]シンボル ファイルを検索するパス。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

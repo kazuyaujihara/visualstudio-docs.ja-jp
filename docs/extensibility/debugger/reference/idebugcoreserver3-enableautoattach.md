@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c1bf5f210d9b37b35d43a393a25b1c9df44a7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8a1b714856811ccd9b8e95d074cfc95740e27e5f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875886"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205517"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 指定されたデバッグ エンジンの自動アタッチを使用できます。
@@ -42,22 +45,18 @@ int EnableAutoAttach(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `rgguidSpecificEngines`
+## <a name="parameters"></a>パラメーター
+`rgguidSpecificEngines`\
+[in]各デバッグ エンジンと自動アタッチをマークするには、Guid の配列。
 
- [in]各デバッグ エンジンと自動アタッチをマークするには、Guid の配列。
+`celtSpecificEngines`\
+[in]指定されたエンジン数`rgguidSpecificEngines`します。
 
- `celtSpecificEngines`
+`pszStartPageUrl`\
+[in]自動アタッチするときに使用する開始 URL。
 
- [in]指定されたエンジン数`rgguidSpecificEngines`します。
-
- `pszStartPageUrl`
-
- [in]自動アタッチするときに使用する開始 URL。
-
- `pbstrSessionID`
-
- [out]自動アタッチがセッションの ID。
+`pbstrSessionID`\
+[out]自動アタッチがセッションの ID。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`; エラー コードを返します。 1 つのエラー コードは`E_AUTO_ATTACH_NOT_REGISTERED`、auto-attach クラス ファクトリが登録されていないことを示します。

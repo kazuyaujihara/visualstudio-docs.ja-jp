@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 43d8bd1a32328c47cd463fc6232466df5bdbd857
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d819f198c0eb3c298726ffb1c910b0a985406827
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461021"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212793"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 この構造体は、クラスのメソッドのアドレスを表します。
@@ -45,17 +45,14 @@ public struct METADATA_ADDRESS_METHOD {
 
 ## <a name="members"></a>メンバー
  `tokMethod`\
-
  メソッドの ID。
 
  [C++]`_mdToken`は、 `typedef` 32 ビット`int`します。
 
  `dwOffset`\
-
  クラスからのオフセットは、このメソッドが (vtable へのオフセットを表すことができます) を開始します。
 
  `dwVersion`\
-
  (この値は、シンボル プロバイダーに固有) メソッドのバージョン。
 
 ## <a name="remarks"></a>Remarks

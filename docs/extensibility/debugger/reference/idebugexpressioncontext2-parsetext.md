@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f0f11c3b1770ca32b34f7a5480d5d56acc2b2478
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919995"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201047"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 以降の評価のためのテキスト形式の式を解析します。
@@ -46,30 +49,24 @@ int ParseText(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
-`pszCode`
+## <a name="parameters"></a>パラメーター
+`pszCode`\
+[in]解析する式。
 
- [in]解析する式。
+`dwFlags`\
+[in]フラグの組み合わせ、 [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)解析を制御する列挙体。
 
-`dwFlags`
+`nRadix`\
+[in]内の数値情報を解析中に使用する基数`pszCode`します。
 
- [in]フラグの組み合わせ、 [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)解析を制御する列挙体。
+`ppExpr`\
+[out]返します、 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)バインドと評価の準備ができて、解析された式を表すオブジェクト。
 
-`nRadix`
+`pbstrError`\
+[out]式にエラーが含まれている場合は、エラー メッセージを返します。
 
- [in]内の数値情報を解析中に使用する基数`pszCode`します。
-
-`ppExpr`
-
- [out]返します、 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)バインドと評価の準備ができて、解析された式を表すオブジェクト。
-
-`pbstrError`
-
- [out]式にエラーが含まれている場合は、エラー メッセージを返します。
-
-`pichError`
-
- [out]内のエラーの文字インデックスを返します`pszCode`式にエラーが含まれている場合。
+`pichError`\
+[out]内のエラーの文字インデックスを返します`pszCode`式にエラーが含まれている場合。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
