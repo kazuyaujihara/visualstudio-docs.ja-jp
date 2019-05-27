@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 545c2cc9565d70ea40d6a38516eac4c03fc3497d
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 56954d1cf33974fc93aa966db6b5be0d03d1c979
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226257"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199341"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
 指定された種類とサイズの配列を作成します。
@@ -43,17 +43,14 @@ int CreateArrayOfType (
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pTypeField`\
+`pTypeField`\
+[in]配列を保持する要素の型。
 
- [in]配列を保持する要素の型。
+`rank`\
+[in]配列内の要素の数。
 
- `rank`\
-
- [in]配列内の要素の数。
-
- `pArrayOfTypeField`\
-
- [out]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)新しい配列を表すオブジェクト。
+`pArrayOfTypeField`\
+[out]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)新しい配列を表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

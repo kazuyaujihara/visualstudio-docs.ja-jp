@@ -19,14 +19,14 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e2c51174f14cbfd550bde32192f9db52b1744365
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2a49ae76d69f30691366f9b32cef2a6170284f8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779250"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688067"
 ---
-# <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio のプロジェクトの移行とアップグレードのリファレンス 
+# <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio のプロジェクトの移行とアップグレードのリファレンス
 
 ::: moniker range="vs-2017"
 
@@ -43,7 +43,7 @@ ms.locfileid: "62779250"
 
 次の一覧は、Visual Studio 2017 より前のバージョンで作成されたプロジェクトに対する Visual Studio 2017 でのサポートをまとめたものです。
 
-一覧表示されるべきプロジェクトやファイルの種類が見つからない場合は、[この記事の Visual Studio 2015 バージョン](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015)をご覧になり、このページの下の "ドキュメントのフィードバックを送る" オプションを使用して、プロジェクトの詳細をお知らせください。 (応答する場合は、匿名の [このページは役に立ちましたか] コントロールではなく、ドキュメントに関するフィードバックを使ってください )
+一覧表示されるべきプロジェクトやファイルの種類が見つからない場合は、[この記事の Visual Studio 2015 バージョン](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015)をご覧になり、このページの下にある **[Send feedback about]\(フィードバックの送信\)** の **[This page]\(このページ\)** ボタンを使用して、プロジェクトの詳細をお知らせください。 (匿名の "このページは役に立ちましたか。" コントロールを使用した場合、 フィードバックに応対できません。)
 
 | プロジェクトの種類 | サポート |
 | --- | --- |
@@ -54,7 +54,7 @@ ms.locfileid: "62779250"
 | F# | Visual Studio 2017 では、Visual Studio 2013 と 2015 で作成したプロジェクトを開くことができます。 ただし、これらのプロジェクトで Visual Studio 2017 機能を有効にするには、プロジェクトのプロパティを開き、ターゲットの fsharp.core を F# 4.1 に変更します。 .NET ワークロードの場合、Visual Studio インストーラーの **[F# 言語サポート]** オプションは既定では選択されないことにもご注意ください。ワークロードにこのオプションを選択するか、**[開発作業]** の **[個別のコンポーネント]** から選択する方法で追加する必要があります。 |
 | InstallShield<br/>MSI のセットアップ | Visual Studio 2010 で作成されたインストーラー プロジェクトは、[Visual Studio Installer Projects の拡張機能](https://marketplace.visualstudio.com/items?itemName=UnniRavindranathan-MSFT.MicrosoftVisualStudio2013InstallerProjects)を使って以降のバージョンで開くことができます。 「[WiX Toolset Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)」も参照してください。 InstallShield Limited Edition は、Visual Studio に付属しなくなりました。 Visual Studio 2017 で利用可能かどうかについては、[Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) にご確認ください。 |
 | LightSwitch | LightSwitch は Visual Studio 2017 ではサポートされていません。 Visual Studio 2012 以前のバージョンで作成されたプロジェクトを Visual Studio 2013 または Visual Studio 2015 で開くとアップグレードされ、以後、Visual Studio 2013 または Visual Studio 2015 のみで開けるようになります。 |
-| Microsoft Azure Tools for Visual Studio | これらの種類のプロジェクトを開くには、最初に [Azure SDK for .NET](http://azure.microsoft.com/downloads/)をインストールした後、プロジェクトを開きます。 必要に応じて、プロジェクトが更新されます。 |
+| Microsoft Azure Tools for Visual Studio | これらの種類のプロジェクトを開くには、最初に [Azure SDK for .NET](https://azure.microsoft.com/downloads/)をインストールした後、プロジェクトを開きます。 必要に応じて、プロジェクトが更新されます。 |
 | モデル ビュー コントローラー フレームワーク (ASP.NET MVC) | MVC バージョンと Visual Studio のサポート:<ul><li>Visual Studio 2010 SP1 は MVC 2 と MVC 3 をサポートしています。MVC 4 サポートは [ASP.NET 4 MVC 4 for Visual Studio 2010 SP1 をダウンロード](https://www.microsoft.com/download/details.aspx?id=30683)すると追加されます。</li><li>Visual Studio 2012 は MVC 3 と MVC 4 のみをサポートしています。</li><li>Visual Studio 2013 は MVC 4 と MVC 5 のみをサポートしています。</li><li>Visual Studio 2017 と Visual Studio 2015 では MVC 4 (既存のオブジェクトを開くことはできますが、新規作成はできません) と MVC 5 がサポートされています。</li></ul><br/>MVC バージョンをアップグレードする:<ul><li>MVC 2 から MVC 3 に自動的にアップグレードする方法については、「[ASP.NET MVC 3 Application Upgrader](http://go.microsoft.com/fwlink/?LinkID=238178)」 (ASP.NET MVC 3 アプリケーション アップグレード プログラム) を参照してください。</li><li>MVC 2 から MVC 3 に手動でアップグレードする方法については、「 [Upgrading an ASP.NET MVC 2 Project to ASP.NET MVC 3 Tools Update (ASP.NET MVC 2 プロジェクトから ASP.NET MVC 3 Tools Update へのアップグレード)](http://go.microsoft.com/fwlink/?linkid=238178)」を参照してください。</li><li>MVC 3 から MVC 4 に手動でアップグレードする方法については、「 [Upgrading an ASP.NET MVC 3 Project to ASP.NET MVC 4 (ASP.NET MVC 3 プロジェクトから ASP.NET MVC 4 へのアップグレード)](http://www.asp.net/whitepapers/mvc4-release-notes)」を参照してください。 .NET Framework 3.5 SP1 を対象とするプロジェクトの場合は、.NET Framework 4 を使用するようにプロジェクトの対象を変更する必要があります。</li><li>MVC 4 から MVC 5 に手動でアップグレードする方法については、「[How to Upgrade an ASP.NET MVC 4 and Web API Project to ASP.NET MVC 5 and Web API 2](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2) (ASP.NET MVC 4 と Web API プロジェクトを ASP.NET MVC 5 と Web API 2 にアップグレードする方法)」を参照してください。</li></ul> |
 | モデリング | Visual Studio でプロジェクトを自動的に更新することを許可した場合は、Visual Studio 2015、Visual Studio 2013、または Visual Studio 2012 で開くことができます。<br/><br/>モデリング プロジェクトの形式は Visual Studio 2015 と Visual Studio 2017 の間で変わっていません。プロジェクトはいずれのバージョンでも開き、変更できます。 ただし、Visual Studio 2017 では動作に違いがあります。<ul><li>メニューとテンプレートで、モデリング プロジェクトの名称が "依存関係の検証" になりました。</li><li>UML 図は Visual Studio 2017 ではサポートされていません。 UML ファイルは以前と同様にソリューション エクスプローラーに一覧表示されますが、XML ファイルが開きます。 UML 図を表示、作成、編集するには、Visual Studio 2015 を使用してください。</li><li>Visual Studio 2017 では、モデリング プロジェクトが構築されるとき、アーキテクチャの依存関係検証がなくなりました。 代わりに、コード プロジェクトが構築されるときに検証が実行されます。 この変更がモデリング プロジェクトに影響を与えることはありませんが、検証されるコード プロジェクトを変更する必要があります。 Visual Studio 2017 では、コード プロジェクトを必要に応じて自動的に変更できます ([詳細](http://go.microsoft.com/fwlink/?LinkId=827800))。</li></ul> |
 | MSI セットアップ (vdproj) | InstallShield プロジェクトをご覧ください。 |
@@ -125,7 +125,7 @@ Visual Studio の各新規バージョンでは、一般に、バージョンが
 
 次の一覧は、Visual Studio 2019 より前のバージョンで作成されたプロジェクトに対する Visual Studio 2019 でのサポートをまとめたものです。
 
-一覧表示されるべきプロジェクトやファイルの種類が見つからない場合は、[この記事の Visual Studio 2017 バージョン](port-migrate-and-upgrade-visual-studio-projects.md)をご覧になり、このページの下の "ドキュメントのフィードバックを送る" オプションを使用して、プロジェクトの詳細をお知らせください。 (応答する場合は、匿名の [このページは役に立ちましたか] コントロールではなく、ドキュメントに関するフィードバックを使ってください )
+一覧表示されるべきプロジェクトやファイルの種類が見つからない場合は、[この記事の Visual Studio 2017 バージョン](port-migrate-and-upgrade-visual-studio-projects.md)をご覧になり、このページの下にある **[Send feedback about]\(フィードバックの送信\)** の **[This page]\(このページ\)** ボタンを使用して、プロジェクトの詳細をお知らせください。 (匿名の "このページは役に立ちましたか。" コントロールを使用した場合、 フィードバックに応対できません。)
 
 | プロジェクトの種類 | サポート |
 | --- | --- |
@@ -138,7 +138,7 @@ Visual Studio の各新規バージョンでは、一般に、バージョンが
 | InstallShield<br/>MSI のセットアップ | Visual Studio 2010 で作成されたインストーラー プロジェクトは、[Visual Studio Installer Projects の拡張機能](https://marketplace.visualstudio.com/items?itemName=UnniRavindranathan-MSFT.MicrosoftVisualStudio2013InstallerProjects)を使って以降のバージョンで開くことができます。 「[WiX Toolset Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)」も参照してください。 InstallShield Limited Edition は、Visual Studio に付属しなくなりました。 Visual Studio 2019 で利用可能かどうかについては、[Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) にご確認ください。 |
 | LightSwitch | LightSwitch は Visual Studio 2019 または Visual Studio 2017 ではサポートされていません。 Visual Studio 2012 以前のバージョンで作成されたプロジェクトを Visual Studio 2013 または Visual Studio 2015 で開くとアップグレードされ、以後、Visual Studio 2013 または Visual Studio 2015 のみで開けるようになります。 |
 | ロード テスト | Visual Studio 2019 では、Web パフォーマンスとロード テストの機能は非推奨となっています。 <br/><br/>Visual Studio 2019 は、ロード テストの最後のリリースとなります。 Apache JMeter、Akamai CloudTest、Blazemeter など、代替のロード テスト ツールを使用してください。  |
-| Microsoft Azure Tools for Visual Studio | これらの種類のプロジェクトを開くには、最初に [Azure SDK for .NET](http://azure.microsoft.com/downloads/)をインストールした後、プロジェクトを開きます。 必要に応じて、プロジェクトが更新されます。 |
+| Microsoft Azure Tools for Visual Studio | これらの種類のプロジェクトを開くには、最初に [Azure SDK for .NET](https://azure.microsoft.com/downloads/)をインストールした後、プロジェクトを開きます。 必要に応じて、プロジェクトが更新されます。 |
 | Microsoft Test Manager | Visual Studio 2019 以降、Microsoft Test Manager と Feedback Client は Visual Studio に付属しません。 <br/><br/>手動テストまたは探索的テストの必要がある場合は、Azure Test Plans (Azure DevOps の一部) をご利用ください。 詳細については、Azure DevOps ドキュメントの「[Guidance on Microsoft Test Manager usage (Microsoft Test Manager の使用に関するガイダンス)](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops)」ページをご覧ください。 |
 | モデル ビュー コントローラー フレームワーク (ASP.NET MVC) | MVC バージョンと Visual Studio のサポート:<ul><li>Visual Studio 2010 SP1 は MVC 2 と MVC 3 をサポートしています。MVC 4 サポートは [ASP.NET 4 MVC 4 for Visual Studio 2010 SP1 をダウンロード](https://www.microsoft.com/download/details.aspx?id=30683)すると追加されます。</li><li>Visual Studio 2012 は MVC 3 と MVC 4 のみをサポートしています。</li><li>Visual Studio 2013 は MVC 4 と MVC 5 のみをサポートしています。</li><li>Visual Studio 2019、Visual Studio 2017、Visual Studio 2015 では MVC 4 (既存のオブジェクトを開くことはできますが、新規作成はできません) と MVC 5 がサポートされています。</li></ul><br/>MVC バージョンをアップグレードする:<ul><li>MVC 2 から MVC 3 に自動的にアップグレードする方法については、「[ASP.NET MVC 3 Application Upgrader](http://go.microsoft.com/fwlink/?LinkID=238178)」 (ASP.NET MVC 3 アプリケーション アップグレード プログラム) を参照してください。</li><li>MVC 2 から MVC 3 に手動でアップグレードする方法については、「 [Upgrading an ASP.NET MVC 2 Project to ASP.NET MVC 3 Tools Update (ASP.NET MVC 2 プロジェクトから ASP.NET MVC 3 Tools Update へのアップグレード)](http://go.microsoft.com/fwlink/?linkid=238178)」を参照してください。</li><li>MVC 3 から MVC 4 に手動でアップグレードする方法については、「 [Upgrading an ASP.NET MVC 3 Project to ASP.NET MVC 4 (ASP.NET MVC 3 プロジェクトから ASP.NET MVC 4 へのアップグレード)](http://www.asp.net/whitepapers/mvc4-release-notes)」を参照してください。 .NET Framework 3.5 SP1 を対象とするプロジェクトの場合は、.NET Framework 4 を使用するようにプロジェクトの対象を変更する必要があります。</li><li>MVC 4 から MVC 5 に手動でアップグレードする方法については、「[How to Upgrade an ASP.NET MVC 4 and Web API Project to ASP.NET MVC 5 and Web API 2](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2) (ASP.NET MVC 4 と Web API プロジェクトを ASP.NET MVC 5 と Web API 2 にアップグレードする方法)」を参照してください。</li></ul> |
 | モデリング | Visual Studio でプロジェクトを自動的に更新することを許可した場合は、Visual Studio 2015、Visual Studio 2013、または Visual Studio 2012 で開くことができます。<br/><br/>モデリング プロジェクトの形式は Visual Studio 2015 以来変わっていません。プロジェクトはこれらのバージョンで開いて変更することができます。 ただし、Visual Studio 2017 と Visual Studio 2019 では動作に違いがあります。<ul><li>メニューとテンプレートで、モデリング プロジェクトの名称が "依存関係の検証" になりました。</li><li>UML 図は Visual Studio 2017 と Visual Studio 2019 ではサポートされていません。 UML ファイルは以前と同様にソリューション エクスプローラーに一覧表示されますが、XML ファイルが開きます。 UML 図を表示、作成、編集するには、Visual Studio 2015 を使用してください。</li><li>Visual Studio 2019 では、モデリング プロジェクトが構築されるとき、アーキテクチャの依存関係検証がなくなりました。 代わりに、コード プロジェクトが構築されるときに検証が実行されます。 この変更がモデリング プロジェクトに影響を与えることはありませんが、検証されるコード プロジェクトを変更する必要があります。 Visual Studio 2019 では、コード プロジェクトを必要に応じて自動的に変更できます。</li></ul> |

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 226d584a2773a342b8247ff337e686be2da6bf9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b2463095269103bcc6d2387451b4474af70698d9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843036"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202369"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 一意の ID またはこのオブジェクトの別名を作成します。 または、既存のエイリアスを取得します。
@@ -36,10 +39,9 @@ int CreateAlias(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ppAlias`
-
- [out]新しい (または既存) のエイリアスです。
+## <a name="parameters"></a>パラメーター
+`ppAlias`\
+[out]新しい (または既存) のエイリアスです。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。

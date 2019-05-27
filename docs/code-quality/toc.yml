@@ -43,6 +43,8 @@
                   href: fxcop-analyzer-options.md
             - name: 静的コード分析からの移行
               href: fxcop-analyzers.yml
+            - name: 移植された規則
+              href: fxcop-rule-port-status.md
         - name: アナライザーに関する FAQ
           href: analyzers-faq.md
         - name: Roslyn アナライザーのインストール

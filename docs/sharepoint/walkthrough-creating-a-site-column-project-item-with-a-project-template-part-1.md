@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: プロジェクト テンプレートを使用して、サイト列プロジェクト項目を作成、パート 1 |Microsoft Docs'
+title: プロジェクトのテンプレート、第 1 部でのサイト列プロジェクト項目を作成します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 60e4f4e035b381b8bfda8e14ee705471b0fad2b8
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430405"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177546"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>チュートリアル: プロジェクト テンプレート、第 1 部でサイト列プロジェクト項目を作成します。
   SharePoint プロジェクトは、1 つ以上の SharePoint プロジェクト項目のコンテナーです。 独自の SharePoint プロジェクト項目の種類を作成し、それらをプロジェクト テンプレートと関連付けることで、Visual Studio で SharePoint プロジェクト システムを拡張できます。 このチュートリアルでは、サイト内の列を作成するためのプロジェクト項目の種類を定義し、サイト内の列プロジェクト項目が含まれる新しいプロジェクトの作成に使用できるプロジェクト テンプレートを作成します。
@@ -68,7 +68,7 @@ ms.locfileid: "63430405"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を起動します。
 
-2. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+2. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 3. 上部にある、**新しいプロジェクト** ダイアログ ボックスで、ことを確認します **.NET Framework 4.5** .NET Framework のバージョンの一覧でを選択します。
 
@@ -134,7 +134,7 @@ ms.locfileid: "63430405"
 
 1. ProjectItemTypeDefinition プロジェクトでは、というコード ファイルを追加**SiteColumnProjectItemTypeProvider**します。
 
-2. メニュー バーで、**[プロジェクト]** > **[参照の追加]** の順に選択します。
+2. メニュー バーで、 **[プロジェクト]**  >  **[参照の追加]** の順に選択します。
 
 3. **参照マネージャー - ProjectItemTypeDefinition**  ダイアログ ボックスで、展開、**アセンブリ**ノードを選択、 **Framework**ノード、および選択し、System.componentmodel.composition チェック ボックス。
 
@@ -170,7 +170,7 @@ ms.locfileid: "63430405"
 
 5. インスタンスで[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で SiteColumnProjectItem ソリューションを開いてを持つ**ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **SiteColumnProjectTemplate** でプロジェクトノード、**追加**を選び、**既存項目の**します。
 
-6. **既存項目の追加**ダイアログ ボックスで、ファイル拡張機能の一覧を表示し、**すべてのファイル (\*.\*)**.
+6. **既存項目の追加**ダイアログ ボックスで、ファイル拡張機能の一覧を表示し、**すべてのファイル (\*.\*)** .
 
 7. BaseSharePointProject プロジェクトが含まれる、ディレクトリで、key.snk ファイルを選択し、**追加**ボタンをクリックします。
 
@@ -197,7 +197,7 @@ ms.locfileid: "63430405"
 
 1. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **SiteColumnProjectTemplate**プロジェクト ノードを選び、**プロジェクトのアンロード**します。 すべてのファイルに対する変更を保存する場合は、選択、**はい**ボタンをクリックします。
 
-2. ショートカット メニューを開き、 **SiteColumnProjectTemplate**ノード、もう一度クリックして**sitecolumnprojecttemplate.csproj の編集**または**sitecolumnprojecttemplate.vbproj の編集**.
+2. ショートカット メニューを開き、 **SiteColumnProjectTemplate**ノード、もう一度クリックして**sitecolumnprojecttemplate.csproj の編集** または**sitecolumnprojecttemplate.vbproj の編集** .
 
 3. プロジェクト ファイル内で、次の `VSTemplate` 要素を見つけます。
 

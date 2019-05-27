@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ae0b2f606b4fe04ad390712f48ac1e06ff9bb86
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975660"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805326"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Visual Studio エディターの他の言語のサポートの追加
 
@@ -46,21 +46,21 @@ Visual Studio エディターでさまざまなコンピューター言語の読
 
 構文の色づけと基本的なステートメント入力候補に加え、Visual Studio には[移動](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/)という機能もあります。 この機能を使用すれば、コード ファイル、ファイル パスおよびコード シンボルをすばやく検索することができます。 Visual Studio では、次の言語の移動がサポートされます。
 
+- C#
+
+- C++
+
+- TypeScript
+
+- JavaScript
+
+- Visual Basic
+
 - 移動
 
 - Java
 
-- JavaScript
-
 - PHP
-
-- TypeScript
-
-- Visual Basic
-
-- Visual C++
-
-- C#
 
 特定の言語のサポートがまだインストールされていない場合でも、これらのファイルの種類にはすべて前述の機能があります。 一部の言語の特別なサポートをインストールすると、IntelliSense や電球などのようなその他の高度な言語機能など、追加の言語サポートが提供される場合があります。
 
@@ -89,5 +89,6 @@ TextMate 文法の作成方法の詳細については、「[TextMate - Introduc
 
 ## <a name="see-also"></a>関連項目
 
+- [言語サーバー プロトコルの拡張機能の追加](../extensibility/adding-an-lsp-extension.md)
 - [チュートリアル: コード スニペットを作成する](../ide/walkthrough-creating-a-code-snippet.md)
 - [チュートリアル: 入力候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)

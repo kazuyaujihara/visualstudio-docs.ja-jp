@@ -22,7 +22,8 @@
 ## [プロジェクトの新規作成](create-new-projects.md)
 ## [プロジェクト項目の追加と削除](add-and-remove-project-items.md)
 ## [ソリューションとプロジェクト プロパティの管理](managing-solutions-and-project-properties.md)
-## [プロジェクト内の参照の管理](managing-references-in-a-project.md)
+## プロジェクト内の参照の管理
+### [概要](managing-references-in-a-project.md)
 ### [チュートリアル - プロジェクトに NuGet パッケージを含める](nuget-walkthrough.md)
 ## [アプリ リソースの管理](managing-app-resources.md)
 ## [方法: 複数のソリューションまたはインスタンスを開く](open-multiple-solutions.md)
@@ -49,7 +50,8 @@
 ## [ビルド アクション](build-actions.md)
 ## [方法: 複数のスタートアップ プロジェクトを設定する](set-startup-projects.md)
 ## [ビルド システムのカスタマイズ](customizing-build-system.md)
-## [構成](configurations.md)
+## 構成
+### [ビルド構成について](configurations.md)
 ### [構成を作成および編集する](create-and-edit-configurations.md)
 
 # バージョン コントロール
@@ -67,14 +69,18 @@
 
 # 作業負荷
 ## [使用可能なワークロード](workloads.md)
-## [ASP.NET Core](asp-net-core.md)
+## ASP.NET Core
+### [.NET Core サポート](net-core-support.md)
+### [初めての ASP.NET Core アプリのビルド](asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript および TypeScript](javascript.md)
-## [Azure](azure-workload.md)
+## Azure
+### [概要](azure-workload.md)
 ### [Azure Functions の紹介](azure-functions.md)
 ### [チュートリアル: Azure Functions](azure-functions-lab.md)
 ### [接続済みサービス](connected-services.md)
-## [Unity によるゲーム開発](unity-tools.md)
+## Unity によるゲーム開発
+### [Unity によるゲーム開発](unity-tools.md)
 ### [セットアップ](setup-vsmac-tools-unity.md)
 ### [Unity ツールの使用](using-vsmac-tools-unity.md)
 ### [Unity で .NET 4.x を使用する](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)

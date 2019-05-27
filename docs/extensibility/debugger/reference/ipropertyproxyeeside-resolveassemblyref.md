@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87b72f7bf9d91f7e59bd5550149ed7cf09f8827d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 68efedbf9e8fa19025c7e7f1e47ed70cc1e9d1cc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458112"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198701"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 指定したマネージ アセンブリの参照の場所を決定します。
@@ -48,25 +48,20 @@ int ResolveAssemblyRef(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `assemName`\
+`assemName`\
+[in]解決するのには、アセンブリの名前です。
 
- [in]解決するのには、アセンブリの名前です。
+`assemBytes`\
+[out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)参照に関連付けられているアセンブリのバイト数を格納しているオブジェクト。
 
- `assemBytes`\
+`assemPdb`\
+[out]返します、`IEEDataStorage`シンボルを含むオブジェクトがこの参照に関連付けられているデータを格納します。
 
- [out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)参照に関連付けられているアセンブリのバイト数を格納しているオブジェクト。
+`assemLocation`\
+[out]この参照のパスの場所を返します。
 
- `assemPdb`\
-
- [out]返します、`IEEDataStorage`シンボルを含むオブジェクトがこの参照に関連付けられているデータを格納します。
-
- `assemLocation`\
-
- [out]この参照のパスの場所を返します。
-
- `alr`\
-
- [out]値を返します、 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)この参照のアセンブリの場所を示す列挙値。
+`alr`\
+[out]値を返します、 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)この参照のアセンブリの場所を示す列挙値。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

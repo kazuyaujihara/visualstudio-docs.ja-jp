@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df878cc59a47a8d3cc7079f8b919f87d9bb60f43
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e5d1f1f4b31317e79c497e1b13dcd7e218ecd16b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457477"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212992"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 別の 1 つの参照を比較します。 将来使用するために予約されています。
@@ -42,13 +42,11 @@ int Compare ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `dwCompare`\
+`dwCompare`\
+[in]値、 [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)列挙操作を指定する、比較、たとえば、同じか、以下よりも、またはより大きい。
 
- [in]値、 [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)列挙操作を指定する、比較、たとえば、同じか、以下よりも、またはより大きい。
-
- `pReference`\
-
- [in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)と比較する参照を表すオブジェクト。
+`pReference`\
+[in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)と比較する参照を表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  常に `E_NOTIMPL` を返します。

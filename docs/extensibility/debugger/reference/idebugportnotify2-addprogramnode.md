@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ca78b16947d706d9297fa3045f0f5067f8ef86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 225fb622507ea1ea6473a97c379bc1026cc9fcb6
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918253"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208946"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
 実行されているポートをデバッグできるプログラムを登録します。
@@ -36,10 +39,9 @@ int AddProgramNode( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pProgramNode`
-
- [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)を登録するプログラムを表すオブジェクト。
+## <a name="parameters"></a>パラメーター
+`pProgramNode`\
+[in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)を登録するプログラムを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

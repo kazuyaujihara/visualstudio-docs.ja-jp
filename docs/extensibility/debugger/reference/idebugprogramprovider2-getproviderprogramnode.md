@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 594fef8a83c01b4bad4d47fdb206d64e445ad515
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 641a3420dac230a62e7a6ba509547ba85efee372
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459015"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203752"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 特定のプログラムの [プログラム] ノードを取得します。
@@ -50,9 +50,8 @@ int GetProviderProgramNode(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `Flags`\
-
- [in]フラグの組み合わせ、 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列挙体。 次のフラグは、この呼び出しの一般的なものは。
+`Flags`\
+[in]フラグの組み合わせ、 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列挙体。 次のフラグは、この呼び出しの一般的なものは。
 
 |フラグ|説明|
 |----------|-----------------|
@@ -60,25 +59,20 @@ int GetProviderProgramNode(
 |`PFLAG_DEBUGGEE`|現在デバッグ中の呼び出し元 (ノードごとにマーシャ リングに関する追加情報が返される)。|
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|呼び出し元に接続されているが、デバッガーによって起動されません。|
 
- `pPort`\
+`pPort`\
+[in]呼び出し元のプロセス、ポートがで実行されています。
 
- [in]呼び出し元のプロセス、ポートがで実行されています。
+`processId`\
+[in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)対象のプログラムを含むプロセスの ID を保持する構造体。
 
- `processId`\
+`guidEngine`\
+[in]プログラムは、(ある場合) に接続されているデバッグ エンジンの GUID です。
 
- [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)対象のプログラムを含むプロセスの ID を保持する構造体。
+`programId`\
+[in]プログラム ノードを取得する対象のプログラムの ID。
 
- `guidEngine`\
-
- [in]プログラムは、(ある場合) に接続されているデバッグ エンジンの GUID です。
-
- `programId`\
-
- [in]プログラム ノードを取得する対象のプログラムの ID。
-
- `ppProgramNode`\
-
- [out][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)要求されたプログラム ノードを表すオブジェクト。
+`ppProgramNode`\
+[out][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)要求されたプログラム ノードを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

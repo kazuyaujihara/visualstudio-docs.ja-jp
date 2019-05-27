@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2a05a903578e49b1b8ffefe0b0bb13fb693c993c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 958b3571a5bfabbd609e3ca62bcdfe9b5a6171ca
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458089"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212853"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
 指定したプロキシの id プロパティのプロキシ インターフェイスを取得します。
@@ -42,13 +42,11 @@ int GetPropertyProxy(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `dwID`\
+`dwID`\
+[in]必要なプロパティのプロキシの ID。
 
- [in]必要なプロパティのプロキシの ID。
-
- `proxy`\
-
- [out]返します、 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)オブジェクト。
+`proxy`\
+[out]返します、 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)オブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

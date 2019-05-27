@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a5ecd42b0ddf0138e98e2159fae1236ca02b473
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9e6225099b3b88cbbbb73884cbd93be4f7976e50
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919452"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200838"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 なしのコンス トラクターを持つオブジェクトを作成します。
@@ -38,14 +41,12 @@ int CreateObjectNoConstructor(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pClassObject`
+## <a name="parameters"></a>パラメーター
+`pClassObject`\
+[in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)作成されるオブジェクトの型を表すオブジェクト。
 
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)作成されるオブジェクトの型を表すオブジェクト。
-
- `ppObject`
-
- [out]返します、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)新しく作成されたオブジェクトを表します。
+`ppObject`\
+[out]返します、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)新しく作成されたオブジェクトを表します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。

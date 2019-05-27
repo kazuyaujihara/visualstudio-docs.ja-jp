@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f9afe4bb5087c7589415a6ae7fc143f5fd01b21
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4b2870a50f4ab8bb0358e2e38529e996b143b7ae
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413217"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202389"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 このプロセスを停止状態から実行が続行されます。 (ステップ) など、以前の実行状態をクリアし、もう一度実行して、プロセスを開始します。
@@ -39,10 +42,9 @@ int Execute(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pThread`
-
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)スレッドの実行を表すオブジェクト。
+## <a name="parameters"></a>パラメーター
+`pThread`\
+[in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)スレッドの実行を表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

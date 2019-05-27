@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションで使用可能な CloudPilot 特典について説明します
 searchscope: VS Subscription
-ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78c72f68c8553e7e80b6f26846c19ffcb5f91184
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948425"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805365"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CloudPilot 特典
 
@@ -86,4 +86,4 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
 
 ## <a name="next-steps"></a>次の手順
 
-サブスクリプションに付属している Azure 特典をまだアクティブ化していない場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスして、[ツール] カテゴリで [Azure] タイルをクリックして、Azure サブスクリプションを設定し、無料の Azure クレジットを引き換えます。
+サブスクリプションに付属している Azure 特典をまだアクティブ化していない場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスして、[ツール] カテゴリで [Azure] タイルをクリックして、Azure サブスクリプションを設定し、Azure クレジットを引き換えます。

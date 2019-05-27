@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1416092661ee26bff773ea1a439c241a0f5c5fc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 037dc4232753bbae8e15a0a2cf4bd42781910cb9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921516"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204723"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 このドキュメントのコンテキスト ドキュメント コンテキストの指定した配列を比較します。
@@ -42,22 +45,18 @@ int Compare( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `compare`
+## <a name="parameters"></a>パラメーター
+`compare`\
+[in]値、 [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)比較の種類を指定する列挙体。
 
- [in]値、 [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)比較の種類を指定する列挙体。
+`rgpDocContextSet`\
+[in]配列の[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)比較対象のドキュメント コンテキストを表すオブジェクト。
 
- `rgpDocContextSet`
+`dwDocContextSetLen`\
+[in]比較するドキュメントのコンテキストの配列の長さ。
 
- [in]配列の[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)比較対象のドキュメント コンテキストを表すオブジェクト。
-
- `dwDocContextSetLen`
-
- [in]比較するドキュメントのコンテキストの配列の長さ。
-
- `pdwDocContext`
-
- [out]インデックスを返します、`rgpDocContextSet`比較で一致する最初のドキュメント コンテキストの配列。
+`pdwDocContext`\
+[out]インデックスを返します、`rgpDocContextSet`比較で一致する最初のドキュメント コンテキストの配列。
 
 ## <a name="return-value"></a>戻り値
  返します`S_OK`一致が見つかった場合します。 返します`S_FALSE`一致が検出されない場合。 それ以外の場合はエラー コードを返します。

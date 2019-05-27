@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ea45e3aa1f59353e0a395a61b0309144b413227
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: df6c1418b49745a089b55f7d66067a54360e88fd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223989"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207134"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 メソッドで指定されたデバッグ アドレスに続くデバッグ アドレスを取得します。
@@ -44,17 +44,14 @@ int GetNextAddress( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pAddress`\
+`pAddress`\
+[in]デバッグ アドレスが指定されています。
 
- [in]デバッグ アドレスが指定されています。
+`fStatementOnly`\
+[in]TRUE の場合は、1 つのステートメントにデバッグ アドレスを制限します。
 
- `fStatementOnly`\
-
- [in]TRUE の場合は、1 つのステートメントにデバッグ アドレスを制限します。
-
- `ppAddress`\
-
- [out][次へ] のデバッグ アドレスを返します。
+`ppAddress`\
+[out][次へ] のデバッグ アドレスを返します。
 
 ## <a name="return-value"></a>戻り値
  有効な返します`HRESULT`通常は、s_ok を返します。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc5651a85ccc89a8a084c608e3fc698aa326e07c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c2e12ecc097c2839bba43da04c88dec3fe3d7298
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918828"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203101"
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 互換性のために残されています。 使用しないでください。 このモジュールのシンボルを再読み込みします。
@@ -38,14 +41,12 @@ int ReloadSymbols( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pszUrlToSymbols`
+## <a name="parameters"></a>パラメーター
+`pszUrlToSymbols`\
+[in]シンボル ストアへのパス。
 
- [in]シンボル ストアへのパス。
-
- `pbstrDebugMessage`
-
- [out][モジュール] ウィンドウで、モジュール名の右側に表示されるステータスまたはエラー メッセージなどの情報メッセージを返します。
+`pbstrDebugMessage`\
+[out][モジュール] ウィンドウで、モジュール名の右側に表示されるステータスまたはエラー メッセージなどの情報メッセージを返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 デバッグ エンジンは常に返す必要があります`E_FAIL`します。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d946097d7a8f50cab65b41aaef73654dfbd18a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d554c4906867ca28cfab295ebea80cca15dcc879
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918313"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209014"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 実行可能ファイルを起動します。
@@ -50,38 +53,30 @@ int LaunchSuspended( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pszExe`
+## <a name="parameters"></a>パラメーター
+`pszExe`\
+[in]起動する実行可能ファイルの名前。 完全なパスまたは相対で指定された作業ディレクトリを指定できます、`pszDir`パラメーター。
 
- [in]起動する実行可能ファイルの名前。 完全なパスまたは相対で指定された作業ディレクトリを指定できます、`pszDir`パラメーター。
+`pszArgs`\
+[in]実行可能ファイルに渡す引数。 引数がない場合、null 値を指定できます。
 
- `pszArgs`
+`pszDir`\
+[in]実行可能ファイルで使用される作業ディレクトリの名前。 作業ディレクトリが必要ない場合、null 値があります。
 
- [in]実行可能ファイルに渡す引数。 引数がない場合、null 値を指定できます。
+`bstrEnv`\
+[in]追加の NULL 終端記号の後に、null で終わる文字列の環境ブロックします。
 
- `pszDir`
+`hStdInput`\
+[in]代替の入力ストリームへのハンドルします。 リダイレクトが必要でない場合は、0 を指定できます。
 
- [in]実行可能ファイルで使用される作業ディレクトリの名前。 作業ディレクトリが必要ない場合、null 値があります。
+`hStdOutput`\
+[in]代替の出力ストリームへのハンドルします。 リダイレクトが必要でない場合は、0 を指定できます。
 
- `bstrEnv`
+`hStdError`\
+[in]代替エラー出力ストリームへのハンドルします。 リダイレクトが必要でない場合は、0 を指定できます。
 
- [in]追加の NULL 終端記号の後に、null で終わる文字列の環境ブロックします。
-
- `hStdInput`
-
- [in]代替の入力ストリームへのハンドルします。 リダイレクトが必要でない場合は、0 を指定できます。
-
- `hStdOutput`
-
- [in]代替の出力ストリームへのハンドルします。 リダイレクトが必要でない場合は、0 を指定できます。
-
- `hStdError`
-
- [in]代替エラー出力ストリームへのハンドルします。 リダイレクトが必要でない場合は、0 を指定できます。
-
- `ppPortProcess`
-
- [out]返します、 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)実行中のプロセスを表すオブジェクト。
+`ppPortProcess`\
+[out]返します、 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)実行中のプロセスを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

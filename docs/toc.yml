@@ -231,6 +231,8 @@
               items:
                 - name: プロジェクト テンプレートと項目テンプレートを作成する
                   href: ide/creating-project-and-item-templates.md
+                - name: テンプレートにタグを追加する
+                  href: ide/template-tags.md
                 - name: プロジェクト テンプレートを作成する
                   href: ide/how-to-create-project-templates.md
                 - name: 複数プロジェクトのテンプレートを作成する

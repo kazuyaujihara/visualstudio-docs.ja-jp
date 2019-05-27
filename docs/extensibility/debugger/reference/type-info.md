@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bbb64acfd71a6208fde3a5c3f84d6c5886ece72f
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 9edb111c15c83fc6da8df2cea1eed96aed9252b0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460732"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212699"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 この構造体には、さまざまな種類のフィールドの型に関する情報を指定します。
@@ -51,15 +51,12 @@ public struct TYPE_INFO {
  値、 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)和集合を解釈する方法を決定する列挙型。
 
  `type.typeMeta`\
-
  [C++のみ]含まれています、 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)場合構造体`dwKind`は`TYPE_KIND_METADATA`します。
 
  `type.typePdb`\
-
  [C++のみ]含まれています、 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)場合構造体`dwKind`は`TYPE_KIND_PDB`します。
 
  `type.typeBuilt`\
-
  [C++のみ]含まれています、 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)場合構造体`dwKind`は`TYPE_KIND_BUILT`します。
 
  `type.unused`\
@@ -69,7 +66,6 @@ public struct TYPE_INFO {
  共用体の名前。
 
  `unionmember`\
-
  [C#のみ]マーシャ リングに基づく適切な構造体の型にこの`dwKind`します。
 
 ## <a name="remarks"></a>Remarks

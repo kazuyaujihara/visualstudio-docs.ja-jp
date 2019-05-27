@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 887002086b50198ba192bde3f19390d3267a5c9d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7e00147917a1f06d2f661098686bd85a854c0670
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457337"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212010"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 プロセスの境界を越えて、指定したインターフェイスを取得します。
@@ -42,13 +42,11 @@ int UnmarshalDebuggeeInterface(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `riid`\
+`riid`\
+[in]インターフェイスの GUID を取得します。
 
- [in]インターフェイスの GUID を取得します。
-
- `ppvObject`\
-
- [out]必要なインターフェイスを実装するオブジェクトを返します。 [C++] これは、必要なインターフェイスの型に直接キャストできます。 [C#] を使用して、<xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A>必要なインターフェイスを取得します。
+`ppvObject`\
+[out]必要なインターフェイスを実装するオブジェクトを返します。 [C++] これは、必要なインターフェイスの型に直接キャストできます。 [C#] を使用して、<xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A>必要なインターフェイスを取得します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

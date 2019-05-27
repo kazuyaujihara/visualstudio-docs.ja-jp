@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Office 365 Developer 特典について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947234"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934593"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Office 365 Developer サブスクリプション特典
 
-選択した Visual Studio Enterprise サブスクリプションのサブスクライバーは、Office 365 Developer サブスクリプション特典が受けられます。  Office 365 Developer サブスクリプションでは、Microsoft Office および Microsoft SharePoint のアドインの開発、テスト、および展開ができます。  この特典は、1 つのテナントと最大 25 ユーザーに適用できます。
+選択した Visual Studio サブスクリプションのサブスクライバーは、Office 365 Developer サブスクリプション特典が受けられます。  Office 365 Developer サブスクリプションでは、Microsoft Office および Microsoft SharePoint のアドインの開発、テスト、および展開ができます。  この特典は、1 つのテナントと最大 25 ユーザーに適用できます。
 
 ## <a name="activation-steps"></a>アクティブ化の手順
 
@@ -67,7 +67,7 @@ Office 365 Developer サブスクリプションの詳細については、「[O
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | Included      |  はい          |
-| Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用できません                                                            |N/A         |
+| Visual Studio Professional (Standard) | VL、Azure、リテール                                       | Included                                                            |はい         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                             |  N/A         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              | N/A         |
 | Visual Studio Dev Essentials | N/A  | 使用できません |N/A |

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb204ccb98d0c7f5a6f5eeac9ccbc5ea07dfae16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bd186a8e25d51fa4e9f728ac132a792412f667c8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875812"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204908"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 手順については、混合モードのストリームの現在位置から始まるを読み取ります。
@@ -42,22 +45,18 @@ int Read( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dwInstructions`
+## <a name="parameters"></a>パラメーター
+`dwInstructions`\
+[in]逆アセンブルする命令の数。 この値はの最大長でも、`prgDisassembly`配列。
 
- [in]逆アセンブルする命令の数。 この値はの最大長でも、`prgDisassembly`配列。
+`dwFields`\
+[in]フラグの組み合わせ、 [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)のどのフィールドを示す列挙`prgDisassembly`を記入します。
 
- `dwFields`
+`pdwInstructionsRead`\
+[out]実際に逆アセンブルされた命令の数を返します。
 
- [in]フラグの組み合わせ、 [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)のどのフィールドを示す列挙`prgDisassembly`を記入します。
-
- `pdwInstructionsRead`
-
- [out]実際に逆アセンブルされた命令の数を返します。
-
- `prgDisassembly`
-
- [out]配列の[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)構造体を逆アセンブルしたコード、逆アセンブルした命令ごとに 1 つの構造が入力されます。 この配列の長さはによって異なります、`dwInstructions`パラメーター。
+`prgDisassembly`\
+[out]配列の[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)構造体を逆アセンブルしたコード、逆アセンブルした命令ごとに 1 つの構造が入力されます。 この配列の長さはによって異なります、`dwInstructions`パラメーター。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
