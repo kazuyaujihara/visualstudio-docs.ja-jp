@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3799043b82a4e0d0993e7de255f69592c6b89534
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1f04fedb2fe5215e7ce2c80d12e2a3e2e58bb7e9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875268"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212505"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 デバッグ シンボルを検索するパスを設定します。
@@ -40,13 +43,16 @@ int SetSymbolPath(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
-|パラメーター|説明|
-|---------------|-----------------|
-|`szSymbolSearchPath`|[in]シンボルの検索パスまたはパスを含む文字列。 詳細については、「解説」を参照してください。 null にすることはできません。|
-|`szSymbolCachePath`|[in]シンボルをキャッシュできるローカル パスを含む文字列。 null にすることはできません。|
-|`Flags`|[in]使用されません。常に 0 に設定します。|
+`szSymbolSearchPath`\
+[in]シンボルの検索パスまたはパスを含む文字列。 詳細については、「解説」を参照してください。 null にすることはできません。
+
+`szSymbolCachePath`\
+[in]シンボルをキャッシュできるローカル パスを含む文字列。 null にすることはできません。
+
+`Flags`\
+[in]使用されません。常に 0 に設定します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合はエラー コードを返します。

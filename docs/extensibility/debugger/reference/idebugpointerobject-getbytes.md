@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a2c93e032175ce556d5504ed8b3f57dcf619a61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d108613c7a557c189a2c42880a5618b42e0bd3b8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842705"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209390"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 一連の連続するバイトとして指す値を取得します。
@@ -42,22 +45,18 @@ int GetBytes(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dwStart`
+## <a name="parameters"></a>パラメーター
+`dwStart`\
+[in]指すオブジェクトの先頭からのバイト単位のオフセット。
 
- [in]指すオブジェクトの先頭からのバイト単位のオフセット。
+`dwCount`\
+[in]取得するバイト数。
 
- `dwCount`
+`pBytes`\
+[入力、出力]一連の連続するバイトの値が入力する配列が指すオブジェクトから指定されたオフセットから開始します。
 
- [in]取得するバイト数。
-
- `pBytes`
-
- [入力、出力]一連の連続するバイトの値が入力する配列が指すオブジェクトから指定されたオフセットから開始します。
-
- `pdwBytes`
-
- [out]実際に取得するバイト数を返します。
+`pdwBytes`\
+[out]実際に取得するバイト数を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。

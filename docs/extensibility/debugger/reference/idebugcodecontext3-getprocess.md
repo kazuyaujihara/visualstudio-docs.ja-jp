@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81ee68246aa999c8ac610b9590f914388e6fbbf2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 598bb33739a31bd09c733dddb3279d043cd68c81
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876940"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206645"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 デバッグ プロセスのインターフェイスへの参照を取得します。
@@ -34,10 +37,9 @@ public int GetProcess(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
-`ppProcess`
-
- [out]デバッグ プロセスのインターフェイスへの参照。
+## <a name="parameters"></a>パラメーター
+`ppProcess`\
+[out]デバッグ プロセスのインターフェイスへの参照。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

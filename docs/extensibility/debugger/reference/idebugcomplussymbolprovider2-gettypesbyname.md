@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be32b39df6da618e38dc9e62264412fce8c29e20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 24cce091d1381d97d70ce9c42baecc38bcf92393
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922425"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205936"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 その名前を指定する型を取得します。
@@ -39,18 +42,15 @@ int GetTypesByName(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
-`pszClassName`
+## <a name="parameters"></a>パラメーター
+`pszClassName`\
+[in]型の名前。
 
- [in]型の名前。
+`nameMatch`\
+[in]たとえば、一致の大文字小文字を区別の種類を選択します。 値、 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体。
 
-`nameMatch`
-
- [in]たとえば、一致の大文字小文字を区別の種類を選択します。 値、 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体。
-
-`ppEnum`
-
- [out]指定した名前の種類を含む列挙子。
+`ppEnum`\
+[out]指定した名前の種類を含む列挙子。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

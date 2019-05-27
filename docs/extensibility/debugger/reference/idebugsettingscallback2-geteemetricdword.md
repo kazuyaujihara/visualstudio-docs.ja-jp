@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3c8349b8a7f7b823d4596f167889a227b166b7a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e3661186357e82170cc67f6e3744e8662ebae76c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457366"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212140"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 式エバリュエーターの指定したメトリックに対応する値を取得します。
@@ -44,21 +44,17 @@ private int GetEEMetricDword(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `guidLang`\
+`guidLang`\
+[in]プログラミング言語の一意の識別子。
 
- [in]プログラミング言語の一意の識別子。
+`guidVendor`\
+[in]ベンダーの一意の識別子。
 
- `guidVendor`\
+`pszMetric`\
+[in]メトリックの名前。
 
- [in]ベンダーの一意の識別子。
-
- `pszMetric`\
-
- [in]メトリックの名前。
-
- `pdwValue`\
-
- [out]メトリックの文字列に対応する値を返します。
+`pdwValue`\
+[out]メトリックの文字列に対応する値を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

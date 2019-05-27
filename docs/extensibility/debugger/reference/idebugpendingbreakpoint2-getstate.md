@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc5455424070d475d3c26f91a18ffebf0cc6747d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59f8f0d499b681b5ccda9e748af4b8ecac67daad
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872160"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209536"
 ---
 # <a name="idebugpendingbreakpoint2getstate"></a>IDebugPendingBreakpoint2::GetState
 保留中のブレークポイントの状態を取得します。
@@ -37,10 +40,9 @@ int GetState( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pState`
-
- [入力、出力]A [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)構造体の保留中のブレークポイントの説明が入力されます。
+## <a name="parameters"></a>パラメーター
+`pState`\
+[入力、出力]A [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)構造体の保留中のブレークポイントの説明が入力されます。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

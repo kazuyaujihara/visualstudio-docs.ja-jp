@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e736c14b1a87188f45658a51cff0c123553332e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58480e52e86fc4603648d9f534cb03e944a8dde8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917503"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212883"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 このメソッドは、セッションがプロセスのデバッグで不要になったをプロセスに通知します。
@@ -36,10 +39,9 @@ int Detach(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pSession`
-
- [in]このプロセスからデタッチするセッションを一意に識別する値。
+## <a name="parameters"></a>パラメーター
+`pSession`\
+[in]このプロセスからデタッチするセッションを一意に識別する値。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 23c00147b0d42c848d01e0e2a08df80672750e71
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 3a4672d0cb7548417ed2d1de923e52d43e6242ba
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226427"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207310"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 このメソッドは、完全修飾クラス名を表すクラスのフィールドの型を取得します。
@@ -44,17 +44,14 @@ int GetClassTypeByName(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pszClassName`\
+`pszClassName`\
+[in]クラス名。
 
- [in]クラス名。
+`nameMatch`\
+[in]たとえば、一致の大文字小文字を区別の種類を選択します。 値、 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体。
 
- `nameMatch`\
-
- [in]たとえば、一致の大文字小文字を区別の種類を選択します。 値、 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体。
-
- `ppField`\
-
- [out]によって表されるクラス型を返します、 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)インターフェイス。
+`ppField`\
+[out]によって表されるクラス型を返します、 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)インターフェイス。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfc50f104c5fc942794c2e421f5aee508662ea3b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3e708c75649f28654095e6906c4d86408d3f166e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921706"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204958"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 この入力ストリームに関連付けられているソース ドキュメントを取得します。
@@ -38,14 +41,12 @@ int GetDocument( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `bstrDocumentUrl`
+## <a name="parameters"></a>パラメーター
+`bstrDocumentUrl`\
+[in]ドキュメントの URL。
 
- [in]ドキュメントの URL。
-
- `ppDocument`
-
- [out]返します、 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)ドキュメントを表すオブジェクト。
+`ppDocument`\
+[out]返します、 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)ドキュメントを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

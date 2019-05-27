@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e800d8d57d34c0ed99cb3cfa9a3f6a7b871a034d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4a6b6a516e9827a05eb7eb2c36bee408ad3a5587
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458601"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212116"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 式エバリュエーター メトリック ファイルが指定された名前またはメトリックを取得します。
@@ -44,21 +44,17 @@ private int GetEEMetricFile(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `guidLang`\
+`guidLang`\
+[in]プログラミング言語の一意の識別子。
 
- [in]プログラミング言語の一意の識別子。
+`guidVendor`\
+[in]ベンダーの一意の識別子。
 
- `guidVendor`\
+`pszMetric`\
+[in]メトリックの名前。
 
- [in]ベンダーの一意の識別子。
-
- `pszMetric`\
-
- [in]メトリックの名前。
-
- `pbstrValue`\
-
- [out]メトリックのファイルの内容を文字列として返します。
+`pbstrValue`\
+[out]メトリックのファイルの内容を文字列として返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

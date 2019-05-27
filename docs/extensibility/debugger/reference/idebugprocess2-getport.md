@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753a384d4873aa6b78b06853213c57a1d540a5e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a7885f43d10f2644071e993697b04024fea2bc40
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917832"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202593"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 プロセスが実行されているポートを取得します。
@@ -36,10 +39,9 @@ int GetPort( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ppPort`
-
- [out]返します、 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)プロセスを起動したポートを表すオブジェクト。
+## <a name="parameters"></a>パラメーター
+`ppPort`\
+[out]返します、 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)プロセスを起動したポートを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

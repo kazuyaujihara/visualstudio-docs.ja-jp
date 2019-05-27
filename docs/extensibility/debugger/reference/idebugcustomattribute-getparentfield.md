@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 158887e9f2d7d7b250b435570d6780e460508816
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a6bdb5daee7fa0c2b8dc5228998a8ac0fd22fec0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921660"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205317"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 カスタム属性がアタッチされているフィールドを取得します。
@@ -36,10 +39,9 @@ int GetParentField(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ppField`
-
- [out]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)カスタム属性がアタッチされているフィールドを表すオブジェクト。
+## <a name="parameters"></a>パラメーター
+`ppField`\
+[out]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)カスタム属性がアタッチされているフィールドを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。

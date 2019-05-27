@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b82921c2d08ed74ba05bb2ccf8ecfb642fa9cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6c4a6c18f2203a1e03751423ce9bc972be9e4801
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923116"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203995"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 このブレークポイントを表すブレークポイント解像度の情報を取得します。
@@ -38,14 +41,12 @@ int GetResolutionInfo( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dwFields`
+## <a name="parameters"></a>パラメーター
+`dwFields`\
+[in]フラグの組み合わせ、 [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)のフィールドを決定する列挙体、`pBPResolutionInfo`パラメーター入力します。
 
- [in]フラグの組み合わせ、 [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)のフィールドを決定する列挙体、`pBPResolutionInfo`パラメーター入力します。
-
- `pBPResolutionInfo`
-
- [out][BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)このブレークポイントについての情報を格納する構造体。
+`pBPResolutionInfo`\
+[out][BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)このブレークポイントについての情報を格納する構造体。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。

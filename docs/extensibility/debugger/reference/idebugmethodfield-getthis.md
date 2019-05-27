@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fc3c4a37b30d2ce7d4f5228b60d6c411afb5c9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a3e88f209b506d8baf10a779d282a78122c274fb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872938"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211922"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 取得、 `this` (`Me`で[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]) メソッドを含むオブジェクトのポインター。
@@ -36,10 +39,9 @@ int GetThis(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ppClass`
-
- [out]返します、 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) "this"ポインターを表すオブジェクト。
+## <a name="parameters"></a>パラメーター
+`ppClass`\
+[out]返します、 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) "this"ポインターを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9967351e4b0654a21cab21c2f17eedcbcb471fff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7afcf34153c6910820068cfbea7e67b08568223a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919402"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212186"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 このメソッドは、フィールドの種類を取得します。
@@ -36,10 +39,9 @@ int GetKind(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pdwKind`
-
- [out]フィールドの種類を返しますの組み合わせとして[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)定数。
+## <a name="parameters"></a>パラメーター
+`pdwKind`\
+[out]フィールドの種類を返しますの組み合わせとして[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)定数。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

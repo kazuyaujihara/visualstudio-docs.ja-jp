@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04c63a2a18f04301e16dd0e8137ab8ba4b824c57
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: fb2fc0da42bf3895f6eefac96441dde2fa6eede9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457857"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203705"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 この方法は、デバッグ エンジン (DEs) を利用プログラムおよびセッション デバッグ マネージャーになります。
@@ -44,17 +44,14 @@ int PublishProgram(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `Engines`\
+`Engines`\
+[in]DEs を開始したり、このプログラムにアタッチされる Guid の配列。
 
- [in]DEs を開始したり、このプログラムにアタッチされる Guid の配列。
+`szFriendlyName`\
+[in]プログラムのフレンドリーな名前（これはメニューまたはユーザーに表示されるダイアログに表示されます）。
 
- `szFriendlyName`\
-
- [in]プログラムのフレンドリーな名前（これはメニューまたはユーザーに表示されるダイアログに表示されます）。
-
- `pDebuggeeInterface`\
-
- [in]`IUnknown`プログラム インターフェイス (この値は、プログラムを一意に識別するために cookie として使用されますこの同じの値は、プログラムを"非公開"に使用されます)。
+`pDebuggeeInterface`\
+[in]`IUnknown`プログラム インターフェイス (この値は、プログラムを一意に識別するために cookie として使用されますこの同じの値は、プログラムを"非公開"に使用されます)。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a990c0843d34a0458e8646bea18e9bcc056e40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4d8cb666478b870242a9fd9a7a5b0c8bd9ba60a1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915040"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203590"
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
 このメソッドは、列挙体から次の要素のセットを返します。
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `celt`
+## <a name="parameters"></a>パラメーター
+`celt`\
+[in]取得する要素の数。 最大サイズを指定します、`rgelt`配列。
 
- [in]取得する要素の数。 最大サイズを指定します、`rgelt`配列。
+`rgelt`\
+[入力、出力]配列[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)情報を格納する要素。
 
- `rgelt`
-
- [入力、出力]配列[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)情報を格納する要素。
-
- `pceltFetched`
-
- [out]実際に返される要素の数を返します`rgelt`します。
+`pceltFetched`\
+[out]実際に返される要素の数を返します`rgelt`します。
 
 ## <a name="return-value"></a>戻り値
  正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`返される可能性があります、要求された要素数よりも少ない場合、それ以外の場合、エラー コードを返します。

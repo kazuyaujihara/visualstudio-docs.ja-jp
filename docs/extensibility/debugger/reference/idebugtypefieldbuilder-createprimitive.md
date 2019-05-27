@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 06e88c22cb367be5bfb3d9328da24b049a743889
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 4b6958d52ee7fb20a5eb1839f2ed926ae14b888a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223978"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199393"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
 プリミティブ型を表すオブジェクトを作成します。
@@ -41,13 +41,11 @@ int CreatePrimitive (
 ```
 
 ## <a name="parameters"></a>パラメーター
- `dwElementType`\
+`dwElementType`\
+[in]値を[CorElementType 列挙型](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)プリミティブ型を表します。
 
- [in]値を[CorElementType 列挙型](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)プリミティブ型を表します。
-
- `pTypeField`\
-
- [out]新しい種類の IDebugField インターフェイスを返します。
+`pTypeField`\
+[out]新しい種類の IDebugField インターフェイスを返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

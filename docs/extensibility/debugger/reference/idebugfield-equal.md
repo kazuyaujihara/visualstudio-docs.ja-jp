@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed978355aa752730cfb43390b3e4b6f80d327f83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bfee65537512398cad2f4b86d51ebefac230fb1c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919469"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212223"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 このメソッドは、このフィールドに等しいかどうかを指定したフィールドを比較します。
@@ -36,10 +39,9 @@ int Equal(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pField`
-
- [in]この 1 と比較するフィールドです。
+## <a name="parameters"></a>パラメーター
+`pField`\
+[in]この 1 と比較するフィールドです。
 
 ## <a name="return-value"></a>戻り値
  フィールドが同じ場合は、返す`S_OK`します。 フィールドが異なる場合は、返す`S_FALSE.`それ以外の場合、エラー コードを返します。

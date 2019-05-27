@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbbc610dad6ab5915efe07718ad9a80592af4034
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 92467655a8f3baaf347a28a30fbeb40fc0b3731c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872991"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210343"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 コンパイラを使用して内部的に生成されたものも含め、メソッドのすべてのローカル変数の列挙子を作成します。
@@ -38,14 +41,12 @@ int EnumAllLocals(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pAddress`
+## <a name="parameters"></a>パラメーター
+`pAddress`\
+[in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)特定のスコープまたはコンテキストを指す、メソッド内でのデバッグ アドレスを表すオブジェクト。
 
- [in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)特定のスコープまたはコンテキストを指す、メソッド内でのデバッグ アドレスを表すオブジェクト。
-
- `ppLocals`
-
- [out]返します、 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)指定されたスコープ内のすべてのローカル変数の一覧を表すオブジェクト。 それ以外の場合、ローカル変数がないことを示します。 null 値を返します。
+`ppLocals`\
+[out]返します、 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)指定されたスコープ内のすべてのローカル変数の一覧を表すオブジェクト。 それ以外の場合、ローカル変数がないことを示します。 null 値を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合は S_OK を返します。 またはローカル変数がない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。

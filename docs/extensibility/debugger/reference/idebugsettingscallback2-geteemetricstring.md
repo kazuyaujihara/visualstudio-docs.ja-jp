@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58132d73cd532acd0c89ad5258c6ba4a59b905fa
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a3cad87c74a00f2feac4390921be032ed3f8b6cc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458617"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212098"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 指定した名前、式エバリュエーターのメトリックの値の文字列を取得します。
@@ -44,21 +44,17 @@ private int GetEEMetricString(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `guidLang`\
+`guidLang`\
+[in]プログラミング言語の一意の識別子。
 
- [in]プログラミング言語の一意の識別子。
+`guidVendor`\
+[in]ベンダーの一意の識別子。
 
- `guidVendor`\
+`pszMetric`\
+[in]メトリックの名前。
 
- [in]ベンダーの一意の識別子。
-
- `pszMetric`\
-
- [in]メトリックの名前。
-
- `pbstrValue`\
-
- [out]メトリック値の文字列を返します。
+`pbstrValue`\
+[out]メトリック値の文字列を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

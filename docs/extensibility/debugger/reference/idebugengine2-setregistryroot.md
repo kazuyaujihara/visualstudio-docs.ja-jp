@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2761a8509958c60746f7e5312fa5f5e13631acc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d469dff028b0139c225b89e256896e6815f5e4fc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875431"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207464"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 デバッグ エンジン (DE) のレジストリ ルートを設定します。
@@ -36,10 +39,9 @@ int SetRegistryRoot( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pszRegistryRoot`
-
- [in]使用するレジストリ ルート。
+## <a name="parameters"></a>パラメーター
+`pszRegistryRoot`\
+[in]使用するレジストリ ルート。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
