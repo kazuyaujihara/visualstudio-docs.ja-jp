@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02022a4276da39fb863ccfed8ed02aa9d20f9c5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4a8c6ab62707f3a6b90d520e3cc32a1e75821071
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916989"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199023"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 
@@ -42,19 +45,16 @@ int Attach_V7 (
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
+## <a name="parameters"></a>パラメーター
 
-`pMDMProgram`
+`pMDMProgram`\
+[in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)にアタッチするプログラムを表すインターフェイスです。
 
- [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)にアタッチするプログラムを表すインターフェイスです。
+`pCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM にデバッグ イベントを送信するためのインターフェイス。
 
- `pCallback`
-
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM にデバッグ イベントを送信するためのインターフェイス。
-
- `dwReason`
-
- [in]値、 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)アタッチの理由を指定する列挙体。
+`dwReason`\
+[in]値、 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)アタッチの理由を指定する列挙体。
 
 ## <a name="return-value"></a>戻り値
 

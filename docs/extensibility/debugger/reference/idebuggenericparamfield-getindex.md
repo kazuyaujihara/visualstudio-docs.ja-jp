@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77c5a2ccb8ff81cade0a110f8226f54a04ef65ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 53b671ad653ee9a4806f9090d4c192cb460f77d2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919089"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211837"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 このジェネリック パラメーターのインデックスを取得します。
@@ -34,10 +37,9 @@ int GetIndex(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
-`pIndex`
-
- [out]このジェネリック パラメーターのインデックス値。
+## <a name="parameters"></a>パラメーター
+`pIndex`\
+[out]このジェネリック パラメーターのインデックス値。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

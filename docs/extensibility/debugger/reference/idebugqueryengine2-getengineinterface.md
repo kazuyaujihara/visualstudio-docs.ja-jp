@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af67f4589682cc3c0ecf42653374521c011115c2
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: fbb4f5018972777e51fbaad8d06f833309f6390f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457530"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212927"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 カスタム デバッグ エンジン (DE) のインターフェイスを取得します。
@@ -40,9 +40,8 @@ int GetEngineInterface( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `ppUnk`\
-
- [out]返します、`IUnknown`オブジェクト デバッグ エンジン (DE)、および、DE に関連付けられているその他の有効なインターフェイスを照会できるを表します (たとえば[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)または[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md))。
+`ppUnk`\
+[out]返します、`IUnknown`オブジェクト デバッグ エンジン (DE)、および、DE に関連付けられているその他の有効なインターフェイスを照会できるを表します (たとえば[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)または[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md))。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

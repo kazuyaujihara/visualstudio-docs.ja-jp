@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 797a18b678e815411b7ea7860e44ea6159caa2b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 829ee652ce1d1d2ebb713d4b52e1ea255624f07d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872408"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209844"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 このオブジェクトの型を取得します。
@@ -36,10 +39,9 @@ int GetField(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ppField`
-
- [out]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) null 値でない場合にオブジェクト。
+## <a name="parameters"></a>パラメーター
+`ppField`\
+[out]返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) null 値でない場合にオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。

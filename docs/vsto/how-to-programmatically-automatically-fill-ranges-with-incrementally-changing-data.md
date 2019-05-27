@@ -1,5 +1,5 @@
 ---
-title: '方法: プログラムによって自動的に増分するデータ範囲を入力します。'
+title: 増分するデータ範囲をプログラムでオートコンプリート
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: edb3a1bfaad8d662fb51a8527da6bef183fd05c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a514f83d12cd00c4a7792ae0bf2483fdd916897a
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428182"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177691"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>方法: プログラムによって自動的に増分するデータ範囲を入力します。
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>のメソッド、<xref:Microsoft.Office.Interop.Excel.Range>オブジェクトでは、値を含むワークシートで範囲を自動的に入力することができます。 ほとんどの場合、<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>メソッドは、段階的増加または減少する範囲の値の格納に使用されます。 任意の定数を指定して、動作を指定することができます、<xref:Microsoft.Office.Interop.Excel.XlAutoFillType>列挙体。

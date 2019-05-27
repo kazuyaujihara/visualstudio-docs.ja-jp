@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8936ab07f4df7b2e2295fae4192bca79205429ac
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 3a0d128666d3836495dd3169720bc6e58f6ef11e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224148"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207257"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 このメソッドは、デバッグ アドレスが含まれるフィールドを取得します。
@@ -42,13 +42,11 @@ int GetContainerField(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pAddress`\
+`pAddress`\
+[in]によって表されるアドレス、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。
 
- [in]によって表されるアドレス、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)インターフェイス。
-
- `ppContainerField`\
-
- [out]によって表されるコンテナーのフィールドを返します、 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)インターフェイス。
+`ppContainerField`\
+[out]によって表されるコンテナーのフィールドを返します、 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)インターフェイス。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

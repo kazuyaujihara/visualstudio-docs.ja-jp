@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9248ad59a564207befb0b0a3ff1c229840ee336b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 6df09a360380952482fef62b725707cd6aa86e48
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457725"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211450"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 プロパティの値への参照を返します。
@@ -40,9 +40,8 @@ int GetReference(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `ppRererence`\
-
- [out]返します、 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)プロパティの値への参照を表すオブジェクト。
+`ppRererence`\
+[out]返します、 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)プロパティの値への参照を表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合を返します`S_OK`。 そうしないと、通常、エラー コードを返します`E_NOTIMPL`または`E_GETREFERENCE_NO_REFERENCE`します。

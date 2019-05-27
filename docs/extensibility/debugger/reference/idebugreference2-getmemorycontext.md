@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f439928d253aa5e8b500a489ca1a2d184ecbd507
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ec0c2b91162a88cfbc43525408fef2294ec32102
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457697"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207917"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 メモリ参照のコンテキストを取得します。 将来使用するために予約されています。
@@ -40,9 +40,8 @@ int GetMemoryContext ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `ppMemory`\
-
- [out]返します、 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)参照の値に関連付けられているメモリを表すオブジェクト。
+`ppMemory`\
+[out]返します、 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)参照の値に関連付けられているメモリを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  常に `E_NOTIMPL` を返します。

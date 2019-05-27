@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4958a1ee7b53fc975e126174fa6bd3f02daaa9ab
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4d29522b942fae7e5bb5190c72eb989445f222d9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460876"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212715"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
 有効な列挙値は、プログラムのフラグを破棄します。
@@ -41,7 +41,8 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 ```
 
 ## <a name="fields"></a>フィールド
- PROGRAM_DESTROY_CONTINUE_DEBUGGING 破棄、プログラムしますが、デバッグを続行します。
+ `PROGRAM_DESTROY_CONTINUE_DEBUGGING`\
+ プログラムの破棄が、デバッグを続行します。
 
 ## <a name="remarks"></a>Remarks
  列挙体は、によって返される、 [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)メソッド。

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e66f14ca1191a164236b78837297f20881ff0178
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a19bbe5a0d5529cdf2f48d48810390a333d68cf9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224080"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199203"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 このメソッドは、ビジュアライザーのデータ オブジェクトを表す更新できるかどうかを判断します。
@@ -40,9 +40,8 @@ int CanSetObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `b`\
-
- [out]0 以外の場合 (`TRUE`) ビジュアライザーは、上のオブジェクトを更新する場合は 0 (`FALSE`) できない場合。
+`b`\
+[out]0 以外の場合 (`TRUE`) ビジュアライザーは、上のオブジェクトを更新する場合は 0 (`FALSE`) できない場合。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

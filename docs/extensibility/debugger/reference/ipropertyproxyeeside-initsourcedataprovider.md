@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05f5987037e63c3c81585ba51deed72f06fd3278
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a6791c4a88ae0440dbc6cee12e0f5b5e353e0d69
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461081"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198785"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 このオブジェクトのソース データを初期化し、初期のデータを格納するオブジェクトを返します。
@@ -40,9 +40,8 @@ int InitSourceDataProvider(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `dataOut`\
-
- [out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)オブジェクト
+`dataOut`\
+[out]返します、 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)オブジェクト
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

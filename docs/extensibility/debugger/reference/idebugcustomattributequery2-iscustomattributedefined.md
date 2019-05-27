@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6695753fa1b071f8623b079dbe4e56e68e9dfad4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4ab36c26ea3a8ecbb55aaf9f55c1856ea8280494
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876025"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205179"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 名前でカスタム属性が存在するかどうかを判断します。
@@ -36,10 +39,9 @@ int IsCustomAttributeDefined(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pszCustomAttributeName`
-
- [in]検索するカスタム属性の名前を含む文字列。
+## <a name="parameters"></a>パラメーター
+`pszCustomAttributeName`\
+[in]検索するカスタム属性の名前を含む文字列。
 
 ## <a name="return-value"></a>戻り値
  S_OK をこのフィールドでカスタム属性が定義されている場合は、それ以外の場合は S_FALSE を返しますを返します。

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1276a1c1a076c624ffcfd78c3b7f9d09df2a6e01
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: b354c7c31f4633fd307f54954c5d5115436097d0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224016"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207345"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 このメソッドは、デバッグ アドレスの配列にドキュメントの位置をマップします。
@@ -46,21 +46,17 @@ int GetAddressesFromPosition( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pDocPos`\
+`pDocPos`\
+[in]ドキュメントの位置。
 
- [in]ドキュメントの位置。
+`fStatmentOnly`\
+[in]TRUE の場合は、1 つのステートメントにデバッグ アドレスを制限します。
 
- `fStatmentOnly`\
+`ppEnumBegAddresses`\
+[out]このステートメントまたは行に関連付けられた開始デバッグ アドレスの列挙子を返します。
 
- [in]TRUE の場合は、1 つのステートメントにデバッグ アドレスを制限します。
-
- `ppEnumBegAddresses`\
-
- [out]このステートメントまたは行に関連付けられた開始デバッグ アドレスの列挙子を返します。
-
- `ppEnumEndAddresses`\
-
- [out]返します、 [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)このステートメントまたは行に関連付けられている終了のデバッグ アドレスの列挙子。
+`ppEnumEndAddresses`\
+[out]返します、 [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)このステートメントまたは行に関連付けられている終了のデバッグ アドレスの列挙子。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

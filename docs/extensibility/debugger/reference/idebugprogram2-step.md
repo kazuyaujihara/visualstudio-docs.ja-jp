@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f841960eec9274139307f5fcc1bcaea9bb9fb8e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 37ff30958d0f8343c5dc77c441087334524d3cd1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412881"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212550"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 ステップを実行します。
@@ -43,18 +46,15 @@ int Step( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pThread`
+## <a name="parameters"></a>パラメーター
+`pThread`\
+[in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)ステップが実行されているスレッドを表すオブジェクト。
 
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)ステップが実行されているスレッドを表すオブジェクト。
+`sk`\
+[in]値、 [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)ステップの種類を指定する列挙体。
 
- `sk`
-
- [in]値、 [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)ステップの種類を指定する列挙体。
-
- `step`
-
- [in]値、 [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)ステップの単位を指定します (たとえば、ステートメントまたは命令) を列挙します。
+`step`\
+[in]値、 [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)ステップの単位を指定します (たとえば、ステートメントまたは命令) を列挙します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

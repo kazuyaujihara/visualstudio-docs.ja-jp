@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4c109906ca586d58753c6471f20ed05adc08de4
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2cbb9d993b5149400fbb974373193c59041cf969
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457744"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211619"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 プロパティの最派生プロパティを取得します。
@@ -40,9 +40,8 @@ int GetDerivedMostProperty ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `ppDerivedMost`\
-
- [out]返します、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)最派生プロパティを表すオブジェクト。
+`ppDerivedMost`\
+[out]返します、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)最派生プロパティを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`; エラー コードを返します。 返します`S_GETDERIVEDMOST_NO_DERIVED_MOST`を取得する最派生プロパティが存在しない場合。

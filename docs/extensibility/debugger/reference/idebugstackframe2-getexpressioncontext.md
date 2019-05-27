@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee4f7ec068b3daa77692d4ab64d327ebb8f61766
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e9a301bcba6e1fd98e1efbe2c051f2ea27801483
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457391"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210901"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 スタック フレームとスレッドの現在のコンテキストで式の評価の評価コンテキストを取得します。
@@ -40,9 +40,8 @@ int GetExpressionContext ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `ppExprCxt`\
-
- [out]返します、 [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)式の評価のコンテキストを表すオブジェクト。
+`ppExprCxt`\
+[out]返します、 [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)式の評価のコンテキストを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

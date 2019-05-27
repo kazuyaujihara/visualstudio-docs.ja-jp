@@ -1,5 +1,5 @@
 ---
-title: '方法: プログラムでドキュメントに画像およびワードアートを追加します。'
+title: プログラムによって文書に画像およびワードアートを追加します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f805153a35517c473e95beb871ae7d12a2776bd4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63b1a72a5b332f27b6bd38d25c16ff3a5981b4fa
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967609"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177754"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>方法: プログラムでドキュメントに画像およびワードアートを追加します。
   デザイン時または実行時に、画像および描画オブジェクトをドキュメントに追加できます。 ワードアートでは、Microsoft Office Word ドキュメントに装飾的なテキストを追加することができます。 これらの特別なテキスト効果は、ドキュメントに挿入できる、カスタマイズ可能な描画オブジェクトです。

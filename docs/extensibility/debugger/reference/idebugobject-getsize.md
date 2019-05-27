@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a44f7c20784ca7f253db1d44c4079603f363d616
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 90e1ef51da35868832c15dade78e9974b0d4614f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918493"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202896"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
 オブジェクトのサイズをバイト単位で取得します。
@@ -36,10 +39,9 @@ int GetSize(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pnSize`
-
- [out]サイズをバイト単位で返します。
+## <a name="parameters"></a>パラメーター
+`pnSize`\
+[out]サイズをバイト単位で返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。

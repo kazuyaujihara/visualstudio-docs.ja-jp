@@ -1,5 +1,5 @@
 ---
-title: ワークフロー デザイナーでパラメーターを追加し、追加の引数 ダイアログ ボックス
+title: ワークフロー デザイナー:パラメーターと引数の追加 ダイアログ ボックスを追加します。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f9ad4828eb3103ebbd014420e71c23f5411d9729
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acb273430ac2dea8bc1f95a5c9a6e5c1d45c6f5
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993372"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177735"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>[パラメーターの追加] ダイアログ ボックスと [引数の追加] ダイアログ ボックス
 

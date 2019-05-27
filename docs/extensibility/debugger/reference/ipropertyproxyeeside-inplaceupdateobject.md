@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a233a37f83ff3f75b5cf0ec103e59da91f1473bd
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a083b3d2eeb05a07837b826b5cb35ccedb0c1722
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458457"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198718"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 指定されたデータ オブジェクトとオブジェクトのデータを更新し、オブジェクトの新しいデータを表す新しいデータ オブジェクトを返します。
@@ -42,13 +42,11 @@ int InPlaceUpdateObject(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `dataIn`\
+`dataIn`\
+[in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)新しいデータを格納しているオブジェクト。
 
- [in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)新しいデータを格納しているオブジェクト。
-
- `dataOut`\
-
- [out]新しいを返します`IEEDataStorage`置換されたデータを格納しているオブジェクト。
+`dataOut`\
+[out]新しいを返します`IEEDataStorage`置換されたデータを格納しているオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

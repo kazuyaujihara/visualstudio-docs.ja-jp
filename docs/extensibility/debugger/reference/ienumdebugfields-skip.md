@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69438102635d2fe7846e49ff22658dd5b4f28ce5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a56dc0e07750a30644ccae54803172123c7753fd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226576"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208025"
 ---
 # <a name="ienumdebugfieldsskip"></a>IEnumDebugFields::Skip
 このメソッドは、指定した要素数をスキップします。
@@ -40,9 +40,8 @@ int Skip(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `celt`\
-
- [in]スキップする要素の数。
+`celt`\
+[in]スキップする要素の数。
 
 ## <a name="return-value"></a>戻り値
  正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合`celt`が残りの要素の数より大きい。 それ以外の場合、エラー コードを返します。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0321dfbdc719d8e155bb1ee035032e2862bb90e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc37cd9cff4956d000441a632f84a6155f9b9586
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873855"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212213"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 このメソッドは、フィールドに関する情報を拡張を取得します。
@@ -40,23 +43,20 @@ int GetExtendedInfo(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `guidExtendedInfo`
-
- [in]返される情報を選択します。 次の値を指定できます。
+## <a name="parameters"></a>パラメーター
+`guidExtendedInfo`\
+[in]返される情報を選択します。 次の値を指定できます。
 
 |[値]|説明|
 |-----------|-----------------|
 |`guidConstantValue`|バイトのシーケンスとしての値。|
 |`guidConstantType`|型の型シグネチャ。|
 
- `prgBuffer`
+`prgBuffer`\
+[out]拡張情報を返します。
 
- [out]拡張情報を返します。
-
- `pdwLen`
-
- [入力、出力]拡張された情報のサイズをバイト単位で返します。
+`pdwLen`\
+[入力、出力]拡張された情報のサイズをバイト単位で返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

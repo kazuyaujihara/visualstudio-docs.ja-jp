@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ac168ace54c5beb1ecaf4e664090c5cb61b332e7
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 47f7c1646a01bef53f1b7a1cd2c99e147cfa1986
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458783"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212352"
 ---
 # <a name="idebugpropertydestroyevent2getdebugproperty"></a>IDebugPropertyDestroyEvent2::GetDebugProperty
 破棄するプロパティを取得します。
@@ -40,9 +40,8 @@ int GetDebugProperty ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `ppProperty`\
-
- [out]返します、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)破棄するプロパティを表すオブジェクト。
+`ppProperty`\
+[out]返します、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)破棄するプロパティを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

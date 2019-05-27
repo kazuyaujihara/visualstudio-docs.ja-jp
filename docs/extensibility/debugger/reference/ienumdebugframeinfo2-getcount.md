@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4afb49a0e86d33489987a6a63313c1ecd97f279e
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: f4e38a4f89c9a9f7970b6c2ba7894b8a43992ab7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225747"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207953"
 ---
 # <a name="ienumdebugframeinfo2getcount"></a>IEnumDebugFrameInfo2::GetCount
 列挙体の要素の数を返します。
@@ -40,9 +40,8 @@ int GetCount(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pcelt`\
-
- [out]列挙体の要素の数を返します。
+`pcelt`\
+[out]列挙体の要素の数を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

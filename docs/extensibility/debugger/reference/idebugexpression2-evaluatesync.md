@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 158e24a57838d7f7a1c7221fc243455b5a4bd2bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa9294649cae2944ad085a43ac422470995a77b3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874236"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201089"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 このメソッドは、同期的に、式を評価します。
@@ -42,22 +45,18 @@ int EvaluateSync(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
-`dwFlags`
+## <a name="parameters"></a>パラメーター
+`dwFlags`\
+[in]フラグの組み合わせ、 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)式の評価を制御する列挙体。
 
- [in]フラグの組み合わせ、 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)式の評価を制御する列挙体。
+`dwTimeout`\
+[in]このメソッドから戻る前に待機するミリ秒単位で最大時間。 使用`INFINITE`を無期限に待機します。
 
-`dwTimeout`
+`pExprCallback`\
+[in]このパラメーターは、常に null 値です。
 
- [in]このメソッドから戻る前に待機するミリ秒単位で最大時間。 使用`INFINITE`を無期限に待機します。
-
-`pExprCallback`
-
- [in]このパラメーターは、常に null 値です。
-
-`ppResult`
-
- [out]返します、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)式の評価の結果を格納するオブジェクト。
+`ppResult`\
+[out]返します、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)式の評価の結果を格納するオブジェクト。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。 一部の一般的なエラー コードは次のとおりです。

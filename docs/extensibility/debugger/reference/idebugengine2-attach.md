@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1ea05511369d36b881afcaf7c161f796fd4925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 29f9b8ce9e235fc25a1c52930bbf31ec8d8cf557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875312"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207776"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 デバッグ エンジン (DE) をプログラムまたはプログラムにアタッチします。 DE、SDM をインプロセスで実行されているときに、セッション デバッグ マネージャー (SDM) によって呼び出されます。
@@ -44,26 +47,21 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pProgram`
+## <a name="parameters"></a>パラメーター
+`pProgram`\
+[in]配列の[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)に接続するプログラムを表すオブジェクト。 これらは、ポート プログラムです。
 
- [in]配列の[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)に接続するプログラムを表すオブジェクト。 これらは、ポート プログラムです。
+`rgpProgramNodes`\
+[in]配列の[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)プログラム ノードは、各プログラムのいずれかを表すオブジェクト。 この配列内のプログラムのノードで同じプログラムを表す`pProgram`します。 デにアタッチするプログラムを識別できるように、プログラムのノードが提供されます。
 
- `rgpProgramNodes`
+`celtPrograms`\
+[in]プログラムやプログラムのノードの数、`pProgram`と`rgpProgramNodes`配列。
 
- [in]配列の[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)プログラム ノードは、各プログラムのいずれかを表すオブジェクト。 この配列内のプログラムのノードで同じプログラムを表す`pProgram`します。 デにアタッチするプログラムを識別できるように、プログラムのノードが提供されます。
+`pCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM にデバッグ イベントを送信に使用するオブジェクト。
 
- `celtPrograms`
-
- [in]プログラムやプログラムのノードの数、`pProgram`と`rgpProgramNodes`配列。
-
- `pCallback`
-
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM にデバッグ イベントを送信に使用するオブジェクト。
-
- `dwReason`
-
- [in]値、 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)これらのプログラムをアタッチするための理由を指定する列挙体。 詳細については、「解説」を参照してください。
+`dwReason`\
+[in]値、 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)これらのプログラムをアタッチするための理由を指定する列挙体。 詳細については、「解説」を参照してください。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

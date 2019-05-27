@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f8a822932479cab7b62be52951c83c6d016fcc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d0faef6eb5e327f0f41b6e9091e8a4e0eed265c6
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870892"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208864"
 ---
 # <a name="idebugprocess2getphysicalprocessid"></a>IDebugProcess2::GetPhysicalProcessId
 システム プロセス識別子を取得します。
@@ -36,10 +39,9 @@ int GetPhysicalProcessId(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pdwProcessId`
-
- [out][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)構造をシステム プロセス識別子情報が入力されます。
+## <a name="parameters"></a>パラメーター
+`pdwProcessId`\
+[out][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)構造をシステム プロセス識別子情報が入力されます。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

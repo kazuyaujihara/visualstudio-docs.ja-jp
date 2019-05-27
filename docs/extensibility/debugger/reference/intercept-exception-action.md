@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d50ce2b695fa332057abd91ab54c5966c277ba45
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b73b021201a3fc11509c429eda3877c24d6be6e3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461259"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210115"
 ---
 # <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
 例外をインターセプトするときに実行するアクションを指定します。
@@ -45,7 +45,6 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 ## <a name="parameters"></a>パラメーター
 
 `IEA_INTERCEPT`\
-
 現在の例外をインターセプトできるようにします。 これは現時点ではサポートされている唯一の値であり、指定する必要があります。
 
 ## <a name="remarks"></a>Remarks

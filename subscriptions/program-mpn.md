@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 提供されているサブスクリプションの種類、該当する規則、および MPN で提供しているサブスクリプション数の詳細について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945402"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805307"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) でパートナーに提供される Visual Studio サブスクリプション
 MPN でコンピテンシーを取得するか、Action Pack を購入したパートナーは、Visual Studio サブスクリプションを使用できます。 これらのサブスクリプションは、ユーザーごとにライセンスされ、パートナー企業で働く特定の名前付きユーザーに割り当てられている場合にのみ有効です。
@@ -52,7 +52,7 @@ Action Pack では、パートナーは **Visual Studio Professional (MPN) サ�
 - Windows Enterprise -- 最新バージョンのみ、開発およびテスト用のみに使用
 - Windows Server -- 最新バージョンのみ、開発およびテスト用のみに使用
 
-また、Visual Studio Professional (MPN) サブスクライバーは、SQL Server Developer Edition など、開発用の無料ソフトウェアをダウンロードおよび使用することもできます。
+また、Visual Studio Professional (MPN) サブスクライバーは、SQL Server Developer Edition など、開発用のソフトウェアをダウンロードおよび使用することもできます。
 
 Visual Studio Professional (MPN) サブスクリプションには、商用に提供されている Visual Studio サブスクリプションで利用できる、Azure DevOps Services 特典、月単位の Azure クレジット、テクニカル サポート、トレーニング、またはその他のサブスクライバー特典は含まれません。
 

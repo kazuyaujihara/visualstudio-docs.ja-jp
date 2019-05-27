@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 310d2e3cd8c7f1caea4e245c7c591cd402afdaf4
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ba8a7ab97c9b2fc405e10eb70246a049b4083993
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458882"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200219"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 指定した文字列からプロパティの値を設定します。
@@ -44,22 +44,19 @@ int SetValueAsString ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pszValue`\
+`pszValue`\
+[in]設定する値を含む文字列。
 
- [in]設定する値を含む文字列。
+`nRadix`\
+[in]任意の数値情報を解釈するときに使用する基数。 これは、自動的に基数を判断しようとする場合は 0 です。
 
- `nRadix`\
-
- [in]任意の数値情報を解釈するときに使用する基数。 これは、自動的に基数を判断しようとする場合は 0 です。
-
- `dwTimeout`\
-
- [in]このメソッドから戻る前に待機するミリ秒単位で最大の時間を指定します。 使用`INFINITE`を無期限に待機します。
+`dwTimeout`\
+[in]このメソッドから戻る前に待機するミリ秒単位で最大の時間を指定します。 使用`INFINITE`を無期限に待機します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`; エラー コードを返します。 次の表では、使用可能なその他の値を示します。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|文字列をプロパティの値に変換できませんでしたまたはプロパティの値を設定できませんでした。|
 |`E_SETVALUE_VALUE_IS_READONLY`|プロパティは読み取り専用です。|

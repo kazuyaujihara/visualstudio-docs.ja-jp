@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b1bf9ac39628ff9615e158511a8a1afa0af46c3c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 0ec98b9c206975b122511648017f920a28905b09
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226381"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207109"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 このメソッドは、シンボル名を記号の型にマップします。
@@ -44,17 +44,14 @@ int GetTypeByName(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pszClassName`\
+`pszClassName`\
+[in]シンボルの名前。
 
- [in]シンボルの名前。
+`nameMatch`\
+[in]たとえば、一致の大文字小文字を区別の種類を選択します。 値、 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体。
 
- `nameMatch`\
-
- [in]たとえば、一致の大文字小文字を区別の種類を選択します。 値、 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列挙体。
-
- `ppField`\
-
- [out]シンボル型を返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクト。
+`ppField`\
+[out]シンボル型を返します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

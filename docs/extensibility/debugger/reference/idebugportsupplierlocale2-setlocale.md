@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07ba3b01d4e653e592ca4084b94eef9390f290ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2e366554858372f9e479f494d2bd419ebb9b2215
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871333"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202779"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
 ポート サプライヤーのロケールを設定します。
@@ -34,8 +37,9 @@ int SetLocale(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `wLangID` 設定するロケールの識別子。
+## <a name="parameters"></a>パラメーター
+`wLangID`\
+設定するロケールの識別子。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

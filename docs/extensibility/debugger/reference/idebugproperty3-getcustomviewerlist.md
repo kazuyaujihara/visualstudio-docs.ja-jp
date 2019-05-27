@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82b2e6da51b695bdc6fd2fd031a1f9decf484daa
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 78060933846d60d1e8721cda676ac837ea2bff06
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457658"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200191"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 このプロパティに関連付けられているカスタム ビューアーの一覧を取得します。
@@ -47,20 +47,16 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>パラメーター
 `celtSkip`\
-
- [in]閲覧者をスキップの数。
+[in]閲覧者をスキップの数。
 
 `celtRequested`\
-
- [in]取得する視聴するユーザー数 (ものサイズを指定します、`rgViewers`配列)。
+[in]取得する視聴するユーザー数 (ものサイズを指定します、`rgViewers`配列)。
 
 `rgViewers`\
-
- [入力、出力]配列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)情報を格納する構造体。
+[入力、出力]配列[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)情報を格納する構造体。
 
 `pceltFetched`\
-
- [out]ビューアーの実際の数が返されます。
+[out]ビューアーの実際の数が返されます。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

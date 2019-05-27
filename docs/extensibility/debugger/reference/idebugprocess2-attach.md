@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f700a6f6ff06fb37660419c46a394a0449d976bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: de41c3f611383afabfd6fe051edb8dbe83d266b4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871290"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202760"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 セッション デバッグ マネージャー (SDM) をプロセスにアタッチします。
@@ -42,27 +45,23 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pCallback`
+## <a name="parameters"></a>パラメーター
+`pCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ イベント通知のために使用されるオブジェクト。
 
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)デバッグ イベント通知のために使用されるオブジェクト。
+`rgguidSpecificEngines`\
+[in]プロセスで実行するプログラムのデバッグに使用するデバッグ エンジンの Guid の配列。 このパラメーターは、null 値を指定できます。 詳細については、「解説」を参照してください。
 
- `rgguidSpecificEngines`
+`celtSpecificEngines`\
+[in]エンジンでのデバッグの数、`rgguidSpecificEngines`配列とのサイズ、`rghrEngineAttach`配列。
 
- [in]プロセスで実行するプログラムのデバッグに使用するデバッグ エンジンの Guid の配列。 このパラメーターは、null 値を指定できます。 詳細については、「解説」を参照してください。
-
- `celtSpecificEngines`
-
- [in]エンジンでのデバッグの数、`rgguidSpecificEngines`配列とのサイズ、`rghrEngineAttach`配列。
-
- `rghrEngineAttach`
-
- [入力、出力]デバッグ エンジンによって返される HRESULT コードの配列。 この配列のサイズがで指定された、`celtSpecificEngines`パラメーター。 各コードは、いずれかで、通常`S_OK`または`S_ATTACH_DEFERRED`します。 後者の場合は、DE がプログラムに現在接続されていることを示しません。
+`rghrEngineAttach`\
+[入力、出力]デバッグ エンジンによって返される HRESULT コードの配列。 この配列のサイズがで指定された、`celtSpecificEngines`パラメーター。 各コードは、いずれかで、通常`S_OK`または`S_ATTACH_DEFERRED`します。 後者の場合は、DE がプログラムに現在接続されていることを示しません。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 次の表では、使用可能なその他の値を示します。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定されたプロセスがデバッガーに既に結び付けられています。|
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|アタッチ時にセキュリティ違反が発生しました。|

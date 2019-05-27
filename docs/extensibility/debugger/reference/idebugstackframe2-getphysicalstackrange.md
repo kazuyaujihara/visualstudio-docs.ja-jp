@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 341a4d2da740d2907172fb7761dc0c18d13d1456
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ac507c2eac00d025a36bed3e4c3461a6b3fab2f0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457282"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212861"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 スタック フレームに関連付けられている物理アドレスの範囲のマシンに依存する形式を取得します。
@@ -42,13 +42,11 @@ int GetPhysicalStackRange ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `paddrMin`\
+`paddrMin`\
+[out]このスタック フレームに関連付けられている最下位の物理アドレスを返します。
 
- [out]このスタック フレームに関連付けられている最下位の物理アドレスを返します。
-
- `paddrMax`\
-
- [out]このスタック フレームに関連付けられている最上位の物理アドレスを返します。
+`paddrMax`\
+[out]このスタック フレームに関連付けられている最上位の物理アドレスを返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

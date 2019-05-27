@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9af7c5a7c757546b7da8fef4320be6d6cc101738
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: fa649270ae9f837f84314776bbfb6b35e77b7d36
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224168"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199744"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 現在の命令ポインターが特定のスタック フレームに設定することができるかどうかを判断します。
@@ -42,12 +42,11 @@ int CanSetNextStatement ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pStackFrame`\
- 今後使用するために予約されていますnull 値に設定します。 Null 値の場合は、現在のスタック フレームを使用します。
+`pStackFrame`\
+今後使用するために予約されていますnull 値に設定します。 Null 値の場合は、現在のスタック フレームを使用します。
 
- `pCodeContext`\
-
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)実行されるコードの場所を記述するオブジェクトとそのコンテキスト。
+`pCodeContext`\
+[in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)実行されるコードの場所を記述するオブジェクトとそのコンテキスト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
