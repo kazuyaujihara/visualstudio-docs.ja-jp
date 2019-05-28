@@ -37,8 +37,8 @@ WCF Data Services は、 [Open Data Protocol](http://go.microsoft.com/fwlink/p/?
 | lt |より小さい |Price lt 20 |
 | le |以下 |Price le 100 |
 | ne |等しくない |City ne 'London' |
-| と、呼び出し |と |Price le 200 and Price gt 3.5 |
-| または |または |Price le 3.5 or Price gt 200 |
+| and |と |Price le 200 and Price gt 3.5 |
+| or |または |Price le 3.5 or Price gt 200 |
 | not |not |not isAvailable |
 
 フィルター文字列を作成するときに重要となる規則は次のとおりです。
