@@ -81,6 +81,8 @@
               href: install/disable-or-move-the-package-cache.md
             - name: Visual Studio 配置の更新プログラムを制御する
               href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: サービス ベースライン使用時の Visual Studio の更新
+              href: install/update-servicing-baseline.md
         - name: インストールを管理する
           items:
             - name: Visual Studio インスタンスの検出および管理用のツール
