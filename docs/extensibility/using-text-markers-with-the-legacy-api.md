@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b443c4530a71897d11731c023af57215eac8706a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b6f3662b5107d517f19b4803a37de4ebcf235bc9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434199"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353485"
 ---
-# <a name="using-text-markers-with-the-legacy-api"></a>レガシ API を使用したテキスト マーカーの使用
+# <a name="using-text-markers-with-the-legacy-api"></a>レガシ API でのテキスト マーカーの使用
 テキスト マーカーは、さまざまな浮動表示に影響を与えるバッファー内のテキストとテキストの範囲の動作です。 マーカーには、ブレークポイント、ブックマーク、波線の下線、および読み取り専用のリージョンが含まれます。 テキスト マーカーは、構文の色分け表示と基本的に異なります。 構文の色分けは、テキストの範囲に関連付けられている言語の構文を通信する簡単な方法を示します。 構文の色分け表示が要求されるの Windows の速度が重要な場合に、画面を再描画と一般にします。 構文の色分けは、テキストの色のみを変更します。 テキスト マーカーには、その他の多くのテキスト プロパティを変更できます。 テキスト マーカー「フローティング」して特別な動作を適用し、色分け表示します。
 
  テキスト マーカーに関連付けられているパフォーマンス オーバーヘッドのため、テキスト バッファーの多くのマーカーを作成できません。 各マーカーは、ユーザーが、バッファーの内容を編集するたびに更新されます。

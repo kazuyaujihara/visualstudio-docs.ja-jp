@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: コマンドラインを使用して、Visual Studio 拡張機能の発行 |Microsoft Docs'
+title: コマンドラインを使用して拡張機能を公開します。
 ms.date: 07/12/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: be9585158235dadb6e415e88e42e2d324ba8fcbe
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966267"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261665"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>チュートリアル: コマンドラインを使用して Visual Studio 拡張機能を公開
 
@@ -92,7 +92,7 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 |---------|---------|
 |(必須 personalAccessToken | 個人用アクセス トークンを発行元を認証するために使用します。 |
 |publisherName (必須) | パブリッシャー (たとえば、"識別子") の名前。 |
-|上書き | 新しい個人用アクセス トークンを使用して、既存のパブリッシャーが上書きされることを指定します。 |
+|overwrite | 新しい個人用アクセス トークンを使用して、既存のパブリッシャーが上書きされることを指定します。 |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -218,7 +218,7 @@ This is test extension.
 
 1. Visual Studio でデバッグを開始します。 Visual Studio の実験用インスタンスを開きます。
 
-2. 実験用のインスタンスに移動、**ツール**メニューをクリックします**拡張機能と更新しています.**.TestPublish 拡張機能では、中央のウィンドウに表示する必要があり、有効にします。
+2. 実験用のインスタンスに移動、**ツール**メニューをクリックします**拡張機能と更新しています.** .TestPublish 拡張機能では、中央のウィンドウに表示する必要があり、有効にします。
 
 3. **ツール** メニューの テスト コマンドを表示するかどうかを確認します。
 
@@ -262,7 +262,7 @@ This is test extension.
 
 これで、拡張機能を公開すると、Visual Studio にインストールし、テストします。
 
-1. Visual Studio での**ツール** メニューのをクリックして**拡張機能と更新しています.**.
+1. Visual Studio での**ツール** メニューのをクリックして**拡張機能と更新しています.** .
 
 2. クリックして**オンライン**TestPublish し検索します。
 
