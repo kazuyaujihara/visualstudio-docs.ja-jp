@@ -1,5 +1,5 @@
 ---
-title: ドメイン固有言語の定義への追跡プロパティの追加
+title: DSL 定義に追跡プロパティを追加します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46926113393542f590b78f3bfa2c4cc5f25e10a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 59fd8b72dec3405c29b352e20197f88cda9a5074
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960542"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263671"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>ドメイン固有言語の定義に追跡プロパティを追加する
 
@@ -716,7 +716,7 @@ XML シリアル化のカスタムの読み込み後の動作をサポートす�
 
 次の手順は、ビルドに実行する DSL デザイナーの新しいインスタンスは[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]追跡プロパティが正しく動作していることを確認できるようにします。
 
-1. **[ビルド]** メニューで、**[ソリューションのリビルド]** をクリックします。
+1. **[ビルド]** メニューで、 **[ソリューションのリビルド]** をクリックします。
 
 2. **[デバッグ]** メニューの **[デバッグの開始]** をクリックします。
 

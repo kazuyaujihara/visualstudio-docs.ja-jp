@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: 単一テーブル継承を使用した LINQ to SQL クラスの作成 (O/R デザイナー)'
+title: LINQ to SQL クラスの単一テーブル継承 (O/R デザイナー)
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7bb6562c0eb74f537efb25be031e9c9be46d64b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c99023f57cec8b920518ac702cf5c71988a163c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402693"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262880"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>チュートリアル: 単一テーブル継承 (O/R デザイナー) を使用して LINQ to SQL クラスを作成します。
 [Visual Studio での LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)リレーショナル システムに実装されている通常の単一テーブル継承をサポートしています。 このチュートリアルで提供される汎用的な手順、[方法。O/R デザイナーを使用して継承を構成する](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)トピックでの継承の使用を示すために、実際のデータを提供し、[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]します。
@@ -107,7 +107,7 @@ ms.locfileid: "63402693"
 
 1. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
-2. **LINQ to SQL クラス** テンプレートをクリックし、**[追加]** をクリックします。
+2. **LINQ to SQL クラス** テンプレートをクリックし、 **[追加]** をクリックします。
 
      *.Dbml*ファイルがプロジェクトに追加し、 **O/R デザイナー**が開きます。
 
@@ -175,7 +175,7 @@ ms.locfileid: "63402693"
     ```
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
- アプリケーションを実行し、リスト ボックスに表示されているレコードがすべて従業員 (**[Type]** 列の値が 2 のレコード) であることを確認します。
+ アプリケーションを実行し、リスト ボックスに表示されているレコードがすべて従業員 ( **[Type]** 列の値が 2 のレコード) であることを確認します。
 
 ### <a name="to-test-the-application"></a>アプリケーションをテストするには
 
@@ -183,7 +183,7 @@ ms.locfileid: "63402693"
 
 2. **[Type]** 列の値が 2 のレコードのみが表示されていることを確認します。
 
-3. フォームを閉じます  (**[デバッグ]** メニューの **[デバッグの停止]** をクリックします。)
+3. フォームを閉じます  ( **[デバッグ]** メニューの **[デバッグの停止]** をクリックします。)
 
 ## <a name="see-also"></a>関連項目
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - simple view embedding
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9252db6202754e534b1af8a284d768fcd70eb47
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c77c7f19ff677ddbe8339c88ef3ea46953e23b7d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434567"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332071"
 ---
 # <a name="simplified-embedding"></a>簡略化された埋め込み
 (つまりの子を作成する) のドキュメント ビュー オブジェクトの親がある場合、エディターで有効には、簡略化された埋め込み[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、および<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>インターフェイスは、そのウィンドウのコマンドを処理するために実装されます。 簡略化された埋め込みエディターには、アクティブなコントロールをホストできません。 簡略化された埋め込みエディターを作成するために使用するオブジェクトは、次の図に表示されます。
@@ -27,7 +27,7 @@ ms.locfileid: "63434567"
 
  含まれるすべてのインターフェイスを簡素化された埋め込みエディターを作成するために実装、`CYourEditorDocument`オブジェクト。 ただし、ドキュメント データの複数のビューをサポートするために分割データとビューのオブジェクトを個別にインターフェイス、次の表に記載されています。
 
-|Interface|インターフェイスの場所|用途|
+|Interface|インターフェイスの場所|使用|
 |---------------|---------------------------|---------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|表示|親ウィンドウへの接続を提供します。|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|表示|コマンドを処理します。|
