@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccAdd function
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a738a01df224051e3190d828f852fe1ccfa7e9da
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ee567dff65f184f604fb390ec19ebbf6d1e0208
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434726"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334009"
 ---
 # <a name="sccadd-function"></a>SccAdd 関数
 この関数では、ソース管理システムに新しいファイルを追加します。
@@ -89,7 +89,7 @@ SCCRTN SccAdd(
 
  使用されているフラグの一覧を次に示します、`pfOptions`配列。
 
-|オプション|[値]|説明|
+|オプション|値|説明|
 |------------|-----------|-------------|
 |SCC_FILETYPE_AUTO|0x00|ソース管理プラグインは、ファイルの種類を検出する必要があります。|
 |SCC_FILETYPE_TEXT|0x01|ASCII テキスト ファイルを示します。|

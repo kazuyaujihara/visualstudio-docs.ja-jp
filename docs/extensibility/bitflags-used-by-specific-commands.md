@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3adf4a26563560803f820d70ef6c6d5171e791d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47dd3b1c75ab7ff206714509a82449d744a02952
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891688"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333533"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>特定のコマンドで使用されるビットフラグ
 1 つの値で 1 つ以上のビットを設定して、さまざまなソース管理プラグイン API の関数の動作を変更できます。 これらの値は、ビットフラグと呼ばれます。 ソース管理プラグイン API によって使用されるビットフラグのさまざまな詳細についてはここでは、それらを使用する関数によってグループ化します。
@@ -23,14 +23,14 @@ ms.locfileid: "62891688"
 ## <a name="checked-out-flag"></a>チェック アウト フラグ
  いずれかのこのフラグを設定することができます、 [SccAdd](../extensibility/sccadd-function.md)または[SccCheckin](../extensibility/scccheckin-function.md)します。
 
-|フラグ|[値]|説明|
+|フラグ|値|説明|
 |----------|-----------|-----------------|
 |`SCC_KEEP_CHECKEDOUT`|0x1000|ファイルをチェック アウトしてください。|
 
 ## <a name="add-flags"></a>フラグを追加します。
  これらのフラグを使って、 [SccAdd](../extensibility/sccadd-function.md)します。
 
-|フラグ|[値]|説明|
+|フラグ|値|説明|
 |----------|-----------|-----------------|
 |`SCC_FILETYPE_AUTO`|0x00|ソース管理プラグインは、ファイルがテキストかバイナリかどうかを自動的に検出するために必要です。|
 |`SCC_FILETYPE_TEXT`|0x01|ファイルの種類は、テキストです。|
@@ -40,10 +40,10 @@ ms.locfileid: "62891688"
 ## <a name="diff-flags"></a>Diff フラグ
  [SccDiff](../extensibility/sccdiff-function.md)これらのフラグを使用して、diff 操作のスコープを定義します。 `SCC_DIFF_QD_xxx`フラグが相互に排他的です。 いずれかのファイルが指定されている場合、視覚的なフィードバックはありませんを指定します。 "クイック diff"で (QD) プラグインによって決定されないファイルが異なる場合のみです。 これらのフラグを指定されていない場合、"visual diff"が行われます。詳細なファイルの相違点が計算され、表示されます。 要求された QD がサポートされていない場合、[次へ] の最適なものには、プラグインのことが移動します。 たとえば、IDE、チェックサムを要求するプラグインがサポートしていない場合は、プラグインは完全な内容を確認 (まだより速く視覚的に表示) します。
 
-|フラグ|[値]|説明|
+|フラグ|値|説明|
 |----------|-----------|-----------------|
 |`SCC_DIFF_IGNORECASE`|0x0002|大文字小文字の違いを無視します。|
-|`SCC_DIFF_IGNORESPACE`|0x0004|空白の相違を無視します。 **注:**`SCC_DIFF_IGNORECASE`と`SCC_DIFF_IGNORESPACE`フラグは省略可能なビットフラグします。|
+|`SCC_DIFF_IGNORESPACE`|0x0004|空白の相違を無視します。 **注:** `SCC_DIFF_IGNORECASE`と`SCC_DIFF_IGNORESPACE`フラグは省略可能なビットフラグします。|
 |`SCC_DIFF_QD_CONTENTS`|0x0010|ファイルの内容全体を比較することによって QD します。|
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|チェックサムによって QD します。|
 |`SCC_DIFF_QD_TIME`|0x0040|ファイルの日付/時刻スタンプによって QD します。|
@@ -52,14 +52,14 @@ ms.locfileid: "62891688"
 ## <a name="populatelist-flag"></a>PopulateList フラグ
  このフラグを使用して、 [SccPopulateList](../extensibility/sccpopulatelist-function.md)で、`fOptions`パラメーター。
 
-|フラグ|[値]|説明|
+|フラグ|値|説明|
 |----------|-----------|-----------------|
 |`SCC_PL_DIR`|0x00000001L|IDE がファイルではなく、ディレクトリを渡すことです。|
 
 ## <a name="populatedirlist-flags"></a>PopulateDirList フラグ
  これらのフラグを使って、 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)で、`fOptions`パラメーター。
 
-|オプションの値|[値]|説明|
+|オプションの値|値|説明|
 |------------------|-----------|-----------------|
 |SCC_PDL_ONELEVEL|0x0000|(これは、既定値) のディレクトリのディレクトリの 1 つだけのレベルを確認します。|
 |SCC_PDL_RECURSIVE|0x0001|再帰的には、指定された各ディレクトリの下のすべてのディレクトリを確認します。|
@@ -68,7 +68,7 @@ ms.locfileid: "62891688"
 ## <a name="openproject-flags"></a>プロジェクトを開くフラグ
  これらのフラグを使って、 [SccOpenProject](../extensibility/sccopenproject-function.md)で、`dwFlags`パラメーター。
 
-|オプションの値|[値]|説明|
+|オプションの値|値|説明|
 |------------------|-----------|-----------------|
 |SCC_OP_CREATEIFNEW|0x00000001L|ソース管理にプロジェクトが存在しない場合は、それを作成します。 このフラグが設定されていない場合は、プロジェクトを作成するには、ユーザーを求める (しない限り、`SCC_OP_SILENTOPEN`フラグを指定)。|
 |SCC_OP_SILENTOPEN|0x00000002L|プロジェクトを作成するユーザーに確認しません。戻り値`SCC_E_UNKNOWNPROJECT`します。|
@@ -76,7 +76,7 @@ ms.locfileid: "62891688"
 ## <a name="get-flags"></a>フラグを取得します。
  これらのフラグを使って、 [SccGet](../extensibility/sccget-function.md)と[SccCheckout](../extensibility/scccheckout-function.md)します。
 
-|フラグ|[値]|説明|
+|フラグ|値|説明|
 |----------|-----------|-----------------|
 |`SCC_GET_ALL`|0x00000001L|IDE は、ディレクトリ、ファイルではなく渡すことは。これらのディレクトリ内のすべてのファイルを取得します。|
 |`SCC_GET_RECURSIVE`|0x00000002L|IDE では、ディレクトリを渡します。これらのディレクトリとそのすべてのサブディレクトリを取得します。|
@@ -84,7 +84,7 @@ ms.locfileid: "62891688"
 ## <a name="noption-values"></a>nOption 値
  これらのフラグを使って、 [SccSetOption](../extensibility/sccsetoption-function.md)で、`nOption`パラメーター。
 
-|フラグ|[値]|説明|
+|フラグ|値|説明|
 |----------|-----------|-----------------|
 |`SCC_OPT_EVENTQUEUE`|0x00000001L|イベント キューの状態を設定します。|
 |`SCC_OPT_USERDATA`|0x00000002L|ユーザーのデータを指定`SCC_OPT_NAMECHANGEPFN`します。|
@@ -96,7 +96,7 @@ ms.locfileid: "62891688"
 ## <a name="dwval-bitflags"></a>dwVal ビットフラグ
  これらのフラグを使って、 [SccSetOption](../extensibility/sccsetoption-function.md)で、`dwVal`パラメーター。
 
-|フラグ|[値]|説明|使用される`nOption`値|
+|フラグ|値|説明|使用される`nOption`値|
 |----------|-----------|-----------------|-----------------------------|
 |`SCC_OPT_EQ_DISABLE`|0x00L|イベント キューのアクティビティを中断します。|`SCC_OPT_EVENTQUEUE`|
 |`SCC_OPT_EQ_ENABLE`|0x01L|イベント キューのログ記録を有効にします。|`SCC_OPT_EVENTQUEUE`|

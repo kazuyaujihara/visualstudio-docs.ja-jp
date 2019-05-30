@@ -13,17 +13,17 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87612ebc9bbcaf14bdf25d91a4e5dbe018c22143
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 649ba0583a70d0d53d8b12f26573daf3c52cf5e9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428766"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331200"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>シンボル参照ツールのサポート
 **オブジェクト ブラウザー**、**クラス ビュー**、**呼び出しブラウザー**と**シンボルの検索結果**ツールは Visual Studio での機能を参照するシンボルを提供します。 これらのツールでは、シンボルの階層ツリー ビューを表示し、ツリー内のシンボルの関係を表示します。 シンボルは、名前空間、オブジェクト、クラス、クラスのメンバー、およびさまざまなコンポーネントに含まれるその他の言語要素を表すことがあります。 コンポーネントには、Visual Studio プロジェクトに外部[!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]コンポーネントとタイプ (.tlb) ライブラリ。 詳細については、「[コードの構造の表示](../../ide/viewing-the-structure-of-code.md)」を参照してください。

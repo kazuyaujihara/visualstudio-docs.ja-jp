@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3676a19b5b5b7a4050a7d48385e76954ad0bcc96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: def68627223ba082f5ec6a3ef571e314feae33f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432886"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332041"
 ---
 # <a name="single-and-multi-tab-views"></a>単一タブと複数タブのビュー
 エディターでは、さまざまな種類のビューを作成できます。 1 つの例は、コード エディター ウィンドウで、もう 1 つは、フォーム デザイナー。
@@ -114,5 +114,5 @@ Error:
 
 ## <a name="see-also"></a>関連項目
 - [複数のドキュメント ビューのサポート](../extensibility/supporting-multiple-document-views.md)
-- [方法: ドキュメント データをビューをアタッチします。](../extensibility/how-to-attach-views-to-document-data.md)
+- [方法: ビューをドキュメントデータに添付する](../extensibility/how-to-attach-views-to-document-data.md)
 - [カスタム エディターとデザイナーの作成](../extensibility/creating-custom-editors-and-designers.md)

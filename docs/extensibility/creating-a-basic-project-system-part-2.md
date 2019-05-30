@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6dfcae8855c2bdb821f61be65de39282db87dfd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926807"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336995"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>基本的なプロジェクト システム、第 2 部を作成します。
 このシリーズでは、最初のチュートリアル[基本的なプロジェクト システム、第 1 部作成](../extensibility/creating-a-basic-project-system-part-1.md)、基本的なプロジェクト システムを作成する方法を示しています。 このチュートリアルでは、Visual Studio テンプレート、プロパティ ページでは、その他の機能を追加して、基本的なプロジェクト システムに基づいています。 この 1 つを開始する前に、最初のチュートリアルを完了する必要があります。
@@ -40,9 +40,9 @@ ms.locfileid: "62926807"
 > このチュートリアルの手順は、c# プロジェクトに基づいています。 ただし、ファイル名拡張子とコードなどの詳細を除く、Visual Basic プロジェクトと同じ手順を使用できます。
 
 ## <a name="create-a-visual-studio-template"></a>Visual Studio テンプレートを作成します。
-- [基本的なプロジェクト システム、第 1 部作成](../extensibility/creating-a-basic-project-system-part-1.md)基本的なプロジェクト テンプレートを作成し、プロジェクト システムに追加する方法を示します。 Visual Studio でこのテンプレートを使用して登録する方法も示します、 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 、属性の完全なパスを書き込む、 *\\Templates\Projects\SimpleProject\\*システム内のフォルダーレジストリ。
+- [基本的なプロジェクト システム、第 1 部作成](../extensibility/creating-a-basic-project-system-part-1.md)基本的なプロジェクト テンプレートを作成し、プロジェクト システムに追加する方法を示します。 Visual Studio でこのテンプレートを使用して登録する方法も示します、 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 、属性の完全なパスを書き込む、 *\\Templates\Projects\SimpleProject\\* システム内のフォルダーレジストリ。
 
-Visual Studio テンプレートを使用して (*.vstemplate*ファイル)、基本的なプロジェクト テンプレートではなく、テンプレートでの表示方法を制御できます、**新しいプロジェクト** ダイアログ ボックスとテンプレートのパラメーターは代わりに使用します。 A *.vstemplate*ファイルはソース ファイルのプロジェクト システムのテンプレートを使用して、プロジェクトが作成されるときに含まれる方法を説明する XML ファイルです。 収集することで、プロジェクト システム自体が構築された、 *.vstemplate*ファイルとソース ファイルで、 *.zip*ファイルを開き、コピーすることによって展開されている、 *.zip*ファイルをある場所にVisual Studio に正常。 このプロセスは、このチュートリアルの後半で詳しく説明します。
+Visual Studio テンプレートを使用して ( *.vstemplate*ファイル)、基本的なプロジェクト テンプレートではなく、テンプレートでの表示方法を制御できます、**新しいプロジェクト** ダイアログ ボックスとテンプレートのパラメーターは代わりに使用します。 A *.vstemplate*ファイルはソース ファイルのプロジェクト システムのテンプレートを使用して、プロジェクトが作成されるときに含まれる方法を説明する XML ファイルです。 収集することで、プロジェクト システム自体が構築された、 *.vstemplate*ファイルとソース ファイルで、 *.zip*ファイルを開き、コピーすることによって展開されている、 *.zip*ファイルをある場所にVisual Studio に正常。 このプロセスは、このチュートリアルの後半で詳しく説明します。
 
 1. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、に従って作成した SimpleProject ソリューションを開きます[基本的なプロジェクト システム、第 1 部作成](../extensibility/creating-a-basic-project-system-part-1.md)です。
 
@@ -55,7 +55,7 @@ Visual Studio テンプレートを使用して (*.vstemplate*ファイル)、�
     LanguageVsTemplate = "SimpleProject")]
     ```
 
-3. という名前の XML ファイルを追加*SimpleProject.vstemplate*を*\\Templates\Projects\SimpleProject\\*フォルダー。
+3. という名前の XML ファイルを追加*SimpleProject.vstemplate*を *\\Templates\Projects\SimpleProject\\* フォルダー。
 
 4. 内容を置き換える*SimpleProject.vstemplate*を次のコード。
 
@@ -83,7 +83,7 @@ Visual Studio テンプレートを使用して (*.vstemplate*ファイル)、�
     </VSTemplate>
     ```
 
-5. **プロパティ**ウィンドウで、内のすべての 5 つのファイルを選択、 *\\Templates\Projects\SimpleProject\\*フォルダーと設定、**ビルド アクション****ZipProject**します。
+5. **プロパティ**ウィンドウで、内のすべての 5 つのファイルを選択、 *\\Templates\Projects\SimpleProject\\* フォルダーと設定、**ビルド アクション** **ZipProject**します。
 
     ![単純なプロジェクト フォルダー](../extensibility/media/simpproj2.png "SimpProj2")
 
@@ -207,9 +207,9 @@ Visual Studio テンプレートを使用して、プロジェクト階層を作
 
 このセクションでは、SimpleProject プロジェクトの種類のコンソールの子ノードを作成する方法を示します。
 
-1. 名前の変更、 *\\Templates\Projects\SimpleProject\\*フォルダー  *\\Templates\Projects\ConsoleApp\\*します。
+1. 名前の変更、 *\\Templates\Projects\SimpleProject\\* フォルダー  *\\Templates\Projects\ConsoleApp\\* します。
 
-2. **プロパティ**ウィンドウで、内のすべての 5 つのファイルを選択、 *\\Templates\Projects\ConsoleApp\\*フォルダーを確認、**ビルド アクション**に設定されている**ZipProject**します。
+2. **プロパティ**ウィンドウで、内のすべての 5 つのファイルを選択、 *\\Templates\Projects\ConsoleApp\\* フォルダーを確認、**ビルド アクション**に設定されている**ZipProject**します。
 
 3. SimpleProject.vstemplate ファイルの末尾に次の行を追加、 \<TemplateData > 終了タグの直前のセクション。
 

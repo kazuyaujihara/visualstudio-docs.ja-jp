@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_CUSTOM_VIEWER structure
 ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f50f46376e21694bebeb4f13ab8ed8e658838bf2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2ba4af7ef465a4d98f78eccc9f7dce7dd4fa43aa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680456"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346195"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
 カスタム ビューアーを識別する構造またはビジュアライザーを入力します。
@@ -47,17 +50,23 @@ public struct DEBUG_CUSTOM_VIEWER {
 ```
 
 ## <a name="members"></a>メンバー
-複数の閲覧者またはビジュアライザーで 1 つ実装を区別するために ID dwID`GUID`します。
+`dwID`\
+複数の閲覧者またはビジュアライザーで 1 つ実装を区別するために ID`GUID`します。
 
-bstrMenuName ドロップダウン メニューに表示されるテキスト。
+`bstrMenuName`\
+ドロップダウン メニューに表示されるテキスト。
 
-カスタム ビューアーまたは型のビジュアライザーが (あります null 値を使用しない場合) の bstrDescription A 説明です。
+`bstrDescription`\
+カスタム ビューアーまたは型のビジュアライザーが (あります null 値を使用しない場合) の説明。
 
-guidLang 提供する式エバリュエーターの言語。
+`guidLang`\
+提供する式エバリュエーターの言語です。
 
-guidVendor ベンダーの提供する式エバリュエーター。
+`guidVendor`\
+提供する式エバリュエーターのベンダー。
 
-bstrMetric メトリックをカスタム ビューアーまたは型のビジュアライザー`CLSID`格納されます。
+`bstrMetric`\
+メトリックをカスタム ビューアーまたは型のビジュアライザー`CLSID`格納されます。
 
 ## <a name="remarks"></a>Remarks
 この構造体のリストがへの呼び出しによって返される、 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)メソッド (と拡張機能によって、 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)メソッド)。
