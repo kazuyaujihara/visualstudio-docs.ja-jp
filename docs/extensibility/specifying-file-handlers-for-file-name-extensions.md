@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b56df6c315d0612d6139fcda8b94f5d1b33b12a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7a80c17fc6de0efe691b1c36e4421cb2b62cbd00
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434543"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331785"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>ファイル名拡張子のファイル ハンドラーを指定する
 特定のファイル拡張子を持つファイルを処理するアプリケーションを判断する方法を数多くあります。 OpenWithList と OpenWithProgids 動詞は、ファイル拡張子のレジストリ エントリのファイル ハンドラーを指定する 2 つの方法です。
@@ -47,7 +47,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|
 |.extension|ProductName します。 extension.versionMajor.versionMinor|
 
- バージョン管理された Progid を値として、HKEY_CLASSES_ROOT に追加する特定のファイル拡張子を開くことができる別のアプリケーションを登録できる\\*\<拡張機能 >* \OpenWithProgids キー。 このレジストリ キーには、ファイル拡張子に関連付けられている代替の Progid の一覧が含まれています。 表示されている Progid に関連付けられているアプリケーションに表示されます、**プログラムから開く**_製品名_サブメニューで開く。 両方で同じアプリケーションが指定されている場合、`OpenWithList`と`OpenWithProgids`キー、オペレーティング システムは、重複をマージします。
+ バージョン管理された Progid を値として、HKEY_CLASSES_ROOT に追加する特定のファイル拡張子を開くことができる別のアプリケーションを登録できる\\ *\<拡張機能 >* \OpenWithProgids キー。 このレジストリ キーには、ファイル拡張子に関連付けられている代替の Progid の一覧が含まれています。 表示されている Progid に関連付けられているアプリケーションに表示されます、**プログラムから開く**_製品名_サブメニューで開く。 両方で同じアプリケーションが指定されている場合、`OpenWithList`と`OpenWithProgids`キー、オペレーティング システムは、重複をマージします。
 
 > [!NOTE]
 > `OpenWithProgids`キーは Windows XP でのみサポートされます。 他のオペレーティング システムは、このキーを無視する、ためにをハンドラーのファイルののみ登録として使用しないでください。 このキーを使用すると、Windows XP の優れたユーザー エクスペリエンスを提供できます。

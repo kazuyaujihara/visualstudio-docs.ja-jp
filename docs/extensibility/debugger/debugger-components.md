@@ -7,22 +7,22 @@ helpviewer_keywords:
 - components [Visual Studio SDK], debugging
 - debugging [Debugging SDK], components
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04865145afc5df7edc21611511878263021d4e37
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28afdd7f12e7d83b042f5c705c85fa567fdbb979
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62890009"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345892"
 ---
 # <a name="debugger-components"></a>デバッガーのコンポーネント
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッガーは、VSPackage として実装され、全体のデバッグ セッションを管理します。 デバッグ セッションには、次の要素が構成されています。
 
-- **パッケージをデバッグするには。**[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッガーがデバッグ中に関係なく同じユーザー インターフェイスを提供します。
+- **パッケージをデバッグするには。** [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッガーがデバッグ中に関係なく同じユーザー インターフェイスを提供します。
 
 - **セッション デバッグ マネージャー (SDM):** 一貫性のあるプログラム インターフェイスを提供します、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]さまざまなデバッグ エンジンの管理用のデバッガーです。 によって実装されている[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
 

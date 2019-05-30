@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 245fb14b06b5deed5ee652ef394e241bd1191022
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 930908b66b5d2234b8c62585b10ddf751c96f61c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62890685"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324508"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>デバッグ エンジンの実装方法を選択します。
 デバッグ エンジン (DE) の実装戦略を決定するのにには、実行時のアーキテクチャを使用します。 デバッグ エンジンでのプロセスをデバッグするプログラムを作成できます。 プロセスを作成、デバッグ エンジンでの Visual Studio セッション デバッグ マネージャー (SDM)。 または、デバッグ エンジンのプロセス外にこれらの両方を作成します。 次のガイドラインではこれら 3 つの戦略の中から選択できます。

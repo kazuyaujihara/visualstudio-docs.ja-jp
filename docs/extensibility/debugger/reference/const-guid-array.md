@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONST_GUID_ARRAY structure
 ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bca2d50cc678efe3373aace28343ac3732dd00c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4eb1cf0a94a427363bc54b7b204f20d9447db0c0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696065"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346513"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
 構造体のリストを保持する`GUID`秒。
@@ -39,9 +42,11 @@ public struct CONST_GUID_ARRAY {
 ```
 
 ## <a name="members"></a>メンバー
-dwCount 数の`GUID`内、`Members`配列。
+`dwCount`\
+数`GUID`内、`Members`配列。
 
-メンバー配列`GUID`秒。
+`Members`\
+配列`GUID`秒。
 
 ## <a name="remarks"></a>Remarks
 この構造体に渡される、 [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)メソッドから返されると、 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)と[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)メソッド。

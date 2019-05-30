@@ -7,17 +7,17 @@ helpviewer_keywords:
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3c423361b860c5769d9555409b44973fdc25896
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3887a2d54f2744504f587b848bc1395090c3904c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891095"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345409"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Windows フォーム ツールボックス コントロールを作成します。
 
@@ -35,7 +35,7 @@ Windows フォーム ツールボックス コントロール テンプレート
 
 1. という名前の VSIX プロジェクトを作成する`MyWinFormsControl`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**ダイアログ ボックスで、"vsix"を検索します。
 
-2. プロジェクトが開いたら、追加、 **Windows フォーム ツールボックス コントロール**という名前の項目テンプレート`Counter`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#** > **拡張**選択**Windows フォーム ツールボックス コントロール**
+2. プロジェクトが開いたら、追加、 **Windows フォーム ツールボックス コントロール**という名前の項目テンプレート`Counter`します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#**  > **拡張**選択**Windows フォーム ツールボックス コントロール**
 
 3. ユーザー コントロールが追加されます、 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>にコントロールを配置する、**ツールボックス**、および**Microsoft.VisualStudio.ToolboxControl**展開用の VSIX マニフェストでアセット エントリ。
 

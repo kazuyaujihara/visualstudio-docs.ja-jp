@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, strings used for finding
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3233bfbfa379fac7be7214431e7a09844b7d65ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31c2b30fb41976cdbbab13fa22d438c63bddbbef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62800098"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331712"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>ソース管理プラグインを検索するためのキーとして使用される文字列
 次の文字列は、詳細を確認するソース管理プラグイン レジストリにアクセスするためのキーです。
@@ -26,7 +26,7 @@ ms.locfileid: "62800098"
 
 ## <a name="string-keys-and-values"></a>文字列キーと値
 
-|キー|[値]|
+|キー|値|
 |---------|-----------|
 |`STR_SCC_PROVIDER_REG_LOCATION`|Software\SourceCodeControlProvider|
 |`STR_PROVIDERREGKEY`|ProviderRegKey|
@@ -48,5 +48,5 @@ ms.locfileid: "62800098"
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)
-- [方法: ソース管理プラグインのインストールします。](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+- [方法: ソース管理プラグインのインストール](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [MSSCCPRJ.SCC File](../extensibility/mssccprj-scc-file.md)

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4eeb8af06ee4e3285e15afbb3571fb2845adef98
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418849"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321399"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>カスタム カテゴリを実装し、アイテムを表示
 VSPackage は、そのテキストの色とフォントの制御を提供できます、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) でカスタム カテゴリとアイテムを表示します。
@@ -45,7 +45,7 @@ VSPackage は、そのテキストの色とフォントの制御を提供でき�
 
 ## <a name="to-create-or-identify-categories"></a>作成またはカテゴリを識別するには
 
-- カテゴリのレジストリ エントリの特殊な型を構築 *[hklm \software\microsoft \Visual Studio\\*\<Visual Studio のバージョン >*\FontAndColors\\ `<Category>`]*
+- カテゴリのレジストリ エントリの特殊な型を構築 *[hklm \software\microsoft \Visual Studio\\* \<Visual Studio のバージョン > *\FontAndColors\\ `<Category>`]*
 
    *\<カテゴリ >* カテゴリのローカライズされていない名前を指定します。
 
@@ -60,7 +60,7 @@ VSPackage は、そのテキストの色とフォントの制御を提供でき�
 
 ## <a name="to-create-or-identify-groups"></a>グループを作成または識別するのには
 
-- カテゴリのレジストリ エントリの特殊な型を構築 *[hklm \software\microsoft \Visual Studio\\*\<Visual Studio のバージョン >*\FontAndColors\\* \<グループ >*]*
+- カテゴリのレジストリ エントリの特殊な型を構築 *[hklm \software\microsoft \Visual Studio\\* \<Visual Studio のバージョン > *\FontAndColors\\* \<グループ > *]*
 
    *\<グループ >* はローカライズされていないグループの名前です。
 
