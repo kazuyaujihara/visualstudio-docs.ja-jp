@@ -3,19 +3,19 @@ title: 言語サーバー プロトコルの拡張機能の追加 |Microsoft Doc
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b268c0c15ce468ca40a90583c5b7310364c189
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 7518a9086d5923c7b6ad71f07227b76517934b56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805113"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352331"
 ---
-# <a name="add-a-language-server-protocol-extension"></a>言語サーバー プロトコルの拡張機能を追加します。
+# <a name="add-a-language-server-protocol-extension"></a>言語サーバー プロトコルの拡張機能の追加
 
 言語サーバー プロトコル (LSP) は、JSON RPC v2.0 では、言語のさまざまなコード エディターにサービスの機能を提供するために使用の形式での一般的なプロトコルです。 IntelliSense、エラーの診断、すべての参照というように、お客様の LSP をサポートするさまざまなコード エディターの検索などの言語サービスを提供するサーバーを 1 つの言語の機能、プロトコルを使用して開発者を作成できます。 Visual Studio での言語サービスを追加できる構文の強調表示などの基本的な機能を提供する TextMate 文法ファイルを使用して、または提供する Visual Studio 機能拡張 Api の完全なセットを使用するカスタム言語サービスを記述することでこれまでは、高度なデータです。 LSP を Visual Studio サポート、3 番目のオプションがあります。
 
@@ -139,7 +139,7 @@ LSP に基づく言語サーバーを使用して、言語サービス拡張を�
 
 4. クリックし、ファイルを右クリックして**プロパティ**します。 変更、**ビルド**アクションを**コンテンツ**を変更して、 **VSIX に含める**プロパティを**true**します。
 
-前の手順が完了したら、*文法*フォルダー、パッケージのインストールに追加されますリポジトリ ソースとしてのディレクトリの名前 'MyLang' ('MyLang' 曖昧性除去の名ですし、一意の文字列を指定できます)。 すべての文法 (*.tmlanguage*ファイル) とテーマ ファイル (*.tmtheme*ファイル) この directory が電位として選択し、TextMate で提供される組み込みの文法によりも優先されます。 文法ファイルの宣言された拡張機能が開かれているファイルの拡張子に一致する場合は、TextMate は進みます。
+前の手順が完了したら、*文法*フォルダー、パッケージのインストールに追加されますリポジトリ ソースとしてのディレクトリの名前 'MyLang' ('MyLang' 曖昧性除去の名ですし、一意の文字列を指定できます)。 すべての文法 ( *.tmlanguage*ファイル) とテーマ ファイル ( *.tmtheme*ファイル) この directory が電位として選択し、TextMate で提供される組み込みの文法によりも優先されます。 文法ファイルの宣言された拡張機能が開かれているファイルの拡張子に一致する場合は、TextMate は進みます。
 
 ## <a name="create-a-simple-language-client"></a>単純な言語のクライアントを作成します。
 
@@ -342,7 +342,7 @@ LSP 言語サービス拡張機能への設定のサポートを追加する以�
 
 1. ユーザーは、サーバーを所有するファイルを含むワークスペースを開きます。
 2. ユーザーが内のファイルを追加、 *.vs*という名前のフォルダー *VSWorkspaceSettings.json*します。
-3. ユーザーは、線を追加、 *VSWorkspaceSettings.json*ファイルの設定、サーバーを提供します。 例えば:
+3. ユーザーは、線を追加、 *VSWorkspaceSettings.json*ファイルの設定、サーバーを提供します。 例:
 
     ```json
     {

@@ -3,18 +3,18 @@ title: '方法: Visual Studio 2017 の機能拡張プロジェクトの移行 |M
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3d55055734233a385f4a6d24f8925af2f0829fe3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863656"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319306"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>方法: 機能拡張プロジェクトを Visual Studio 2017 に移行します。
 
@@ -31,7 +31,7 @@ ms.locfileid: "62863656"
 
 すべての VSIX プロジェクトには、Visual Studio 2017 へのメジャー バージョンの一方向アップグレードが必要です。
 
-プロジェクト ファイル (たとえば **.csproj*) が更新されます。
+プロジェクト ファイル (たとえば * *.csproj*) が更新されます。
 
 * MinimumVisualStudioVersion - を 15.0 に設定するようになりました
 * OldToolsVersion (場合以前存在)-14.0 に設定されました
