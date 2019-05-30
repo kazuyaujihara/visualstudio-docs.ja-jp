@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc088ac5c534e77de2aae919019396ccf2c344e2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910773"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312113"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>XML コマンド テーブル (.vsct) ファイルを設計します。
-XML コマンド テーブル (*.vsct*) ファイルは、VSPackage のコマンドの項目の外観とレイアウトについて説明します。 コマンドの項目には、ボタン、コンボ ボックス、メニューのツールバー、およびコマンドのアイテムのグループが含まれます。 この記事では、XML コマンド テーブルのファイル、コマンドの項目、メニューの影響、およびそれらを作成する方法について説明します。
+XML コマンド テーブル ( *.vsct*) ファイルは、VSPackage のコマンドの項目の外観とレイアウトについて説明します。 コマンドの項目には、ボタン、コンボ ボックス、メニューのツールバー、およびコマンドのアイテムのグループが含まれます。 この記事では、XML コマンド テーブルのファイル、コマンドの項目、メニューの影響、およびそれらを作成する方法について説明します。
 
 ## <a name="commands-menus-groups-and-the-vsct-file"></a>コマンド、メニューのグループ、および、.vsct ファイル
  *.Vsct*コマンド、メニューのおよびコマンド グループに関連ファイルを編成します。 内に XML タグ、 *.vsct*ファイル コマンド ボタン、コマンドの配置、およびビットマップなどの他の関連項目と共に、これらの各項目を表します。
@@ -32,7 +32,7 @@ XML コマンド テーブル (*.vsct*) ファイルは、VSPackage のコマン
 
 - 新しい **\<extern >** タグは、その他を参照している *.h*などそれらのファイルをコンパイルするファイル、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ツールバー。
 
-- 中に *.vsct*ファイルのサポート、 **/include**ステートメントとして *.ctc*ファイルは、新しい機能も**\<インポート >** 要素。 相違点は、 **/include**は*すべて*、情報の中に**\<インポート >** 名のみが表示されます。
+- 中に *.vsct*ファイルのサポート、 **/include**ステートメントとして *.ctc*ファイルは、新しい機能も **\<インポート >** 要素。 相違点は、 **/include**は*すべて*、情報の中に **\<インポート >** 名のみが表示されます。
 
 - 中に *.ctc*ファイルには、プリプロセッサ ディレクティブを定義するヘッダー ファイルが必要な 1 つは必要ありません *.vsct*ファイル。 代わりにある、シンボル テーブルに、ディレクティブを配置、 **\<シンボル >** の下部にある要素、 *.vsct*ファイル。
 

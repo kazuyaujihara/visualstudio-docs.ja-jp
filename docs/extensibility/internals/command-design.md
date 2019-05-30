@@ -6,23 +6,23 @@ helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c176a558d7d5956c1d41593f5d0cc71184a9a820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1644cfa71296c4233cf17b6b225933aeeb3d477
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861694"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342175"
 ---
 # <a name="command-design"></a>コマンド デザイン
 VSPackage にコマンドを追加するときに表示されるが、可能な場合とが処理されるようにする方法を指定する必要があります。
 
 ## <a name="define-commands"></a>コマンドを定義します。
- 新しいコマンドを定義するには、Visual Studio コマンド テーブル (*.vsct*) で、VSPackage プロジェクト ファイル。 Visual Studio パッケージ テンプレートを使用して VSPackage を作成した場合、プロジェクトには、これらのファイルのいずれかが含まれます。 詳細については、次を参照してください。 [Visual Studio コマンド テーブル (.vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
+ 新しいコマンドを定義するには、Visual Studio コマンド テーブル ( *.vsct*) で、VSPackage プロジェクト ファイル。 Visual Studio パッケージ テンプレートを使用して VSPackage を作成した場合、プロジェクトには、これらのファイルのいずれかが含まれます。 詳細については、次を参照してください。 [Visual Studio コマンド テーブル (.vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
 
  Visual Studio では、すべてをマージ、 *.vsct*ファイル コマンドを表示できるようにを検索します。 これらのファイルはバイナリの VSPackage から個別であるために、Visual Studio は、コマンドを検索するパッケージを読み込むにはありません。 詳細については、次を参照してください。 [Vspackage ではどのように追加のユーザー インターフェイス要素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)します。
 
@@ -36,7 +36,7 @@ VSPackage にコマンドを追加するときに表示されるが、可能な�
 ## <a name="visual-studio-command-environment"></a>Visual Studio コマンドの環境
  Visual Studio には、Vspackage の任意の数をホストし、それぞれ独自のコマンド セットを投稿することができます。 環境では、現在のタスクに適切なコマンドのみが表示されます。 詳細については、次を参照してください。[コマンド可用性](../../extensibility/internals/command-availability.md)と[コンテキスト オブジェクトの選択](../../extensibility/internals/selection-context-objects.md)します。
 
- 新しいコマンド、メニューのツールバー、またはショートカット メニューを定義する VSPackage は、ネイティブまたはマネージ アセンブリにリソースを参照するレジストリ エントリでは、インストール時、Visual Studio にそのコマンドの情報を提供します。 各リソースはバイナリ データ リソースを参照します (*.cto*) ファイルで、Visual Studio コマンド テーブルをコンパイルするときに生成されます (*.vsct*) ファイル。 これにより、Visual Studio をすべてインストールされている VSPackage を読み込むことがなくマージされたコマンド セット、メニュー、ツールバーを提供することができます。
+ 新しいコマンド、メニューのツールバー、またはショートカット メニューを定義する VSPackage は、ネイティブまたはマネージ アセンブリにリソースを参照するレジストリ エントリでは、インストール時、Visual Studio にそのコマンドの情報を提供します。 各リソースはバイナリ データ リソースを参照します ( *.cto*) ファイルで、Visual Studio コマンド テーブルをコンパイルするときに生成されます ( *.vsct*) ファイル。 これにより、Visual Studio をすべてインストールされている VSPackage を読み込むことがなくマージされたコマンド セット、メニュー、ツールバーを提供することができます。
 
 ### <a name="command-organization"></a>コマンドの組織
  環境では、グループ、優先度、メニューでコマンドを配置します。

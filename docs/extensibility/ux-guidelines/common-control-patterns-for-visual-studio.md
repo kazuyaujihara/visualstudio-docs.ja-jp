@@ -3,17 +3,17 @@ title: Visual Studio のコモン コントロール パターン |Microsoft Doc
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89babf7dc9f90b4042d917bf5843a0703628883
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799482"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312299"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio のコモン コントロール パターン
 ## <a name="BKMK_CommonControls"></a> コモン コントロール
@@ -64,7 +64,7 @@ ms.locfileid: "62799482"
 
 - 読み取り専用フィールド (アクティブ) の既定の前景は灰色 (無効) バック グラウンドになります。
 
-- フィールドが必要に必要な**\<必要 >** 内にウォーターマークとして。 まれな状況では、以外の背景の色を変更する必要がありますできません。
+- フィールドが必要に必要な **\<必要>** 内にウォーターマークとして。 まれな状況では、以外の背景の色を変更する必要がありますできません。
 
 - エラーの検証:参照してください[通知と Visual Studio の進行状況](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
@@ -274,7 +274,7 @@ Visual Studio でのほとんどのボタンは、ユーティリティのダイ
 
 省略記号のみの短い ボタンを使用するとき。
 
-- 1 つ以上の時間を使用する必要がある場合 **[参照...]** など、いくつかのフィールドの参照を許可するときに、ダイアログにボタンをクリックします。 使用して、短い **[...]** 混乱にこのような状況によって作成されたアクセス キーを回避するために各ボタン (**& 参照**と**B (& r)** と同じダイアログ ボックスで)。
+- 1 つ以上の時間を使用する必要がある場合 **[参照...]** など、いくつかのフィールドの参照を許可するときに、ダイアログにボタンをクリックします。 使用して、短い **[...]** 混乱にこのような状況によって作成されたアクセス キーを回避するために各ボタン ( **& 参照**と**B (& r)** と同じダイアログ ボックスで)。
 
 - 密 ダイアログ ボックスで、または長い ボタンを配置する適切な場所がありません。
 

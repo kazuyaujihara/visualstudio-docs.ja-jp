@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a684002360f59d33e61c40261afc1bfd515511e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9fd0035ca0764f3673e07b4e3289b87773c8349b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408517"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261335"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>[Microsoft Visual Studio デバッガー (例外がスローされました)] ダイアログ ボックス
 プログラムに例外が発生しました。 このダイアログ ボックスには、スローされた例外の種類が報告されます。 コードでは、この例外を処理する必要があります。 この例外を処理するには、次のオプションから選択できます。
@@ -44,4 +44,4 @@ ms.locfileid: "63408517"
 ## <a name="see-also"></a>関連項目
 - [デバッガーでの例外の管理](../debugger/managing-exceptions-with-the-debugger.md)
 - [例外の推奨事項](/dotnet/standard/exceptions/best-practices-for-exceptions)
-- [例外処理](/cpp/windows/exception-handling-cpp-component-extensions)
+- [例外処理](/cpp/extensions/exception-handling-cpp-component-extensions)

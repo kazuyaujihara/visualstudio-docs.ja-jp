@@ -1,5 +1,5 @@
 ---
-title: セキュリティ、バージョン管理、および ClickOnce 配置マニフェストの問題 |Microsoft Docs
+title: ClickOnce 配置マニフェストのバージョン管理/セキュリティ/問題
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a7c0363ea774206cdf6f1db792ab5e7cbd2454
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a13e6ce35b798a79d3c8a283aa941b801ff03141
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226412"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263487"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 配置でのセキュリティ、バージョン管理、およびマニフェストの問題
 
