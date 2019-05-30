@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2683c3a2ea80aad341b7fab4fb35d13ea5379c7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be7d265db26c31bbec3527ad2bb60e127b1dc9c0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429052"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322632"
 ---
 # <a name="solution-configuration"></a>ソリューション構成
 ソリューション構成では、ソリューション レベルのプロパティを格納します。 動作を指示する、**開始**(F5) キーと**ビルド**コマンド。 既定では、これらのコマンドは、ビルドし、デバッグ構成を開始します。 どちらのコマンドは、ソリューション構成のコンテキストで実行します。 これは、ユーザーがどのようなアクティブなソリューションが、設定を使用して構成されているビルドの開始、f5 キーを予測できることを意味します。 環境は、ビルドおよび実行する際にプロジェクトではなく、ソリューションを最適化するために設計されています。
@@ -45,7 +45,7 @@ ms.locfileid: "63429052"
 
    プロジェクトがプラットフォームをサポートしていない場合、そのプロジェクトのプラットフォームの列は None が表示されは無効です。
 
-- ビルド
+- Build
 
    現在のソリューション構成でプロジェクトをビルドするかどうかを指定します。 プロジェクトの依存関係が含まれているにもかかわらず、ソリューション レベルのビルド コマンドを呼び出すときに、選択されていないプロジェクトはビルドされません。 プロジェクトをビルドするのには選択されていないはまだデバッグ、実行、パッケージ化、およびソリューションの展開に含まれます。
 

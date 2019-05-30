@@ -3,17 +3,17 @@ title: VSPackage を使用した拡張機能の作成 |Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d76e0055c4bae6df270a304364c80cd945f4a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b66aef72d9af1ef40a061d1a82d18161a416586
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891033"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345355"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>VSPackage を使用した拡張機能を作成します。
 
@@ -27,7 +27,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 
 1. という名前の VSIX プロジェクトを作成する**FirstPackage**します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**ダイアログで"vsix"を検索します。
 
-2. という名前の Visual Studio パッケージ項目テンプレートを追加、プロジェクトが開いたら、 **FirstPackage**します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#** > **拡張**選択と**Visual Studio パッケージ**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して*FirstPackage.cs*します。
+2. という名前の Visual Studio パッケージ項目テンプレートを追加、プロジェクトが開いたら、 **FirstPackage**します。 **ソリューション エクスプ ローラー**でプロジェクト ノードを右クリックし、選択**追加** > **新しい項目の**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#**  > **拡張**選択と**Visual Studio パッケージ**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して*FirstPackage.cs*します。
 
 3. プロジェクトをビルドし、デバッグを開始します。
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - property pages
 - property pages, changing configuration options
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5df98f898c585d89c9bc493e606947f89b3206d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48809f0e8dd65c5a6ecd47f2874498ebba694a2a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909395"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341522"
 ---
 # <a name="property-pages"></a>プロパティ ページ
 ユーザーは、表示し、プロパティ ページを使用して、プロジェクトの構成に依存して、独立系のプロパティを変更できます。 A**プロパティ ページ**でボタンが有効になっている、**プロパティ**ウィンドウまたはソリューション エクスプ ローラー ツールバーの選択したオブジェクトのプロパティ ページのビューを提供するオブジェクト。 プロパティ ページでは、環境によって作成され、ソリューションとプロジェクトの利用します。 することができます、ただし、使用可能にするプロジェクト項目が構成依存のプロパティを使用します。 プロジェクト内のファイルを正しくビルドする別のコンパイラ スイッチの設定を必要とする場合は、この機能を使用する可能性があります。

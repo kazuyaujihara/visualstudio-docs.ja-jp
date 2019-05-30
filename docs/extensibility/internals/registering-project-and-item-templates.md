@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84beaf97bda8d94872be22c6f5d247a746d1ecd3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859480"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319509"
 ---
 # <a name="registering-project-and-item-templates"></a>プロジェクトと項目テンプレートの登録
 プロジェクトの種類には、そのプロジェクトとプロジェクト項目テンプレートが配置されるディレクトリを登録する必要があります。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 表示するものを決定する、プロジェクトの種類に関連付けられている登録情報を使用して、**新しいプロジェクトの追加**と**新しい項目の追加** ダイアログ ボックス。
@@ -117,7 +117,8 @@ ms.locfileid: "62859480"
  \WizardFiles
 
 ## <a name="see-also"></a>関連項目
+
 - [プロジェクト テンプレートとプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [ウィザード](../../extensibility/internals/wizards.md)
-- [アプリケーションのローカライズ](../../ide/localizing-applications.md)
+- [アプリケーションのローカライズ](../../ide/globalizing-and-localizing-applications.md)
 - [プロジェクトの拡張に通常使用されるオブジェクトの CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

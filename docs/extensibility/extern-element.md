@@ -8,20 +8,20 @@ helpviewer_keywords:
 - VSCT XML schema elements, Extern
 - Extern element (VSCT XML schema)
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d62d52d490994889f7e9186fb74ea148cb52a06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34e38618a153aa74bdc2449895272fc9e399c82d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911896"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342800"
 ---
 # <a name="extern-element"></a>Extern 要素
-Extern 要素を参照して、外部のヘッダー (*.h*) とマージするファイル、 *.vsct*コンパイル時にファイル。 VSCT コンパイラに指定されたかによって参照されるインクルード パスにファイルをマージする必要があります、 [Include 要素](../extensibility/include-element.md)します。 その他のファイルがある *.vsct*ファイルまたは C++ ヘッダー ファイル。
+Extern 要素を参照して、外部のヘッダー ( *.h*) とマージするファイル、 *.vsct*コンパイル時にファイル。 VSCT コンパイラに指定されたかによって参照されるインクルード パスにファイルをマージする必要があります、 [Include 要素](../extensibility/include-element.md)します。 その他のファイルがある *.vsct*ファイルまたは C++ ヘッダー ファイル。
 
  フォームのヘッダー ファイル内の定義がある必要があります"# [Value] の [記号] define"値は、以前に定義されている場合、別のシンボル可能性があります。 コマンドの項目の条件付きステートメントでは、定義を使用することがあります。 実際に使用される任意のシンボルは破棄されます。
 
@@ -42,7 +42,7 @@ Extern 要素を参照して、外部のヘッダー (*.h*) とマージする�
 |---------------|-----------------|
 |href|必須。 ヘッダー ファイルへのパス:<br /><br /> href="stdidcmd.h"|
 |条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|
-|language|任意。 すべての既定の言語[\<文字列 >](../extensibility/strings-element.md)コマンド テーブル内の要素。<br /><br /> language="en-us"|
+|language|省略可能です。 すべての既定の言語[\<文字列 >](../extensibility/strings-element.md)コマンド テーブル内の要素。<br /><br /> language="en-us"|
 
 ### <a name="child-elements"></a>子要素
 
