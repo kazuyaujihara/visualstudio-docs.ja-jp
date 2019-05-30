@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RES_DATA_FLAGS enumeration
 ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfbf34af69accc3fa50e0648880b5f8633f1618a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7573d9bde08f69a7c7e7707d7631dc71e2d8d5e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714063"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350653"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
 データ ブレークポイントがエミュレートされるかどうか、またはに実装されているハードウェアを指定します。
@@ -37,8 +40,9 @@ public enum enum_BP_RES_DATA_FLAGS {
 };
 ```
 
-## <a name="members"></a>メンバー
-BP_RES_DATA_EMULATED では、データ ブレークポイントがエミュレートされることを指定します。
+## <a name="fields"></a>フィールド
+`BP_RES_DATA_EMULATED`\
+データ ブレークポイントがエミュレートされることを指定します。
 
 ## <a name="remarks"></a>Remarks
 使用、`dwFlags`のメンバー、 [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)構造体。

@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 62f40ffaa4df57672238274ca3a459dd3204bce3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4e9aa77848c3784b1df7a2c1f32651b8d00e5998
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417083"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263386"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android のトラブルシューティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,7 +143,7 @@ ms.locfileid: "63417083"
 
 - ハードウェアの最小要件を満たしていることと、BIOS 設定が正しいことを確認します。
 
-   エミュレーターと Windows 8 Hyper-V には、第 2 レベルのアドレス変換 (SLAT) をサポートする 64 ビット プロセッサが必要です。 Intel では、本質的に Core i3、i5 または i7 プロセッサが必要です (または多くの Xeon のいずれか)。 AMD のチップの一覧は [こちら](http://support.amd.com/en-us)です。
+   エミュレーターと Windows 8 Hyper-V には、第 2 レベルのアドレス変換 (SLAT) をサポートする 64 ビット プロセッサが必要です。 Intel では、本質的に Core i3、i5 または i7 プロセッサが必要です (または多くの Xeon のいずれか)。 AMD のチップの一覧は [こちら](https://www.amd.com/en/support)です。
 
   1. コンピューターが [システム要件](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)を満たしていることを確認します。
 
@@ -179,7 +179,7 @@ ms.locfileid: "63417083"
 
   6. Windows 8 Professional 以上を実行していることを確認します (Windows Server 2008 はサポートされていません)。 Windows Server 2012 はサポートされていますが、デスクトップ エクスペリエンスを有効にする必要があります。
 
-     イベント ビューアーを調べて、ハイパーバイザーのエラーがないかどうかを確認することができます。 これを行うには、イベント ビューアーを開き (スタート キーを押しながら R キーを押して、「 `eventvwr`」と入力)、 **[Windows ログ]**、 **[システム]** を選択します。 次に、ソースを **Hyper-V ハイパーバイザー**に設定して、イベント ソースでログをフィルタリングします。 エラー確認は、根本原因の特定に役立ちます。
+     イベント ビューアーを調べて、ハイパーバイザーのエラーがないかどうかを確認することができます。 これを行うには、イベント ビューアーを開き (スタート キーを押しながら R キーを押して、「 `eventvwr`」と入力)、 **[Windows ログ]** 、 **[システム]** を選択します。 次に、ソースを **Hyper-V ハイパーバイザー**に設定して、イベント ソースでログをフィルタリングします。 エラー確認は、根本原因の特定に役立ちます。
 
      プロセッサが最小要件を満たしているにもかかわらず、ハイパーバイザーでまだ障害が発生する場合は、コンピューターに使用可能な BIOS アップグレードがあるかどうかを確認してみてください。 アップグレードがあり、アップグレードすることを選択する場合は、BIOS のアップグレード時に製造元からの注意事項 (BIOS が完全に破損する可能性のある、停電により BIOS ファームウェアのアップグレードが中断されないようにするなど) をすべて確認してください。
 
@@ -283,15 +283,15 @@ ms.locfileid: "63417083"
 
 1. Hyper-V マネージャーを開き、使用しているエミュレーター プロファイルの VM を選択します。
 
-2. **[保存された状態の削除]**(右下) を選択します。
+2. **[保存された状態の削除]** (右下) を選択します。
 
 3. **[設定...]** を選択します。
 
-4. プロセッサ ノードを展開し、**[互換性]** を選択します。
+4. プロセッサ ノードを展開し、 **[互換性]** を選択します。
 
 5. **[プロセッサ バージョンが異なる物理コンピューターへ移行する]** を有効にします。
 
-6. サービスを (**[操作]** で) 再起動し、もう一度試します。
+6. サービスを ( **[操作]** で) 再起動し、もう一度試します。
 
 ## <a name="GooglePlay"></a> エミュレーターが Google Play サービスを使用するアプリを実行できません
  エミュレーターには Google Play サービスのライブラリは付属していません。 ただし、エミュレーターはフラッシュ可能な zip ファイルのドラッグ アンド ドロップ インストールをサポートします。

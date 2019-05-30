@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3c996b8b97217deb130d8e11a68b7efae01ee05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: e1d424b7af82a423b4d227b77cd77a63eba2559c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843762"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261313"
 ---
 # <a name="add-search-to-a-tool-window"></a>検索ツール ウィンドウを追加します。
 作成または拡張機能でツール ウィンドウを更新するときは、Visual Studio の他の場所に表示される同じ検索機能を追加できます。 この機能には、次の機能が含まれています。
@@ -106,7 +106,7 @@ ms.locfileid: "62843762"
      ツール ウィンドウの上部にある検索コントロールが表示されます、**検索**透かしと拡大ガラス アイコン。 ただし、検索では、検索のプロセスが実装されていないため、機能しませんまだ。
 
 ## <a name="to-add-the-search-implementation"></a>検索の実装を追加するには
- 検索を有効にすると、 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>、前の手順で、ツール ウィンドウが検索ホストを作成します。 このホストを設定し、バック グラウンド スレッドに常に発生する検索のプロセスを管理します。 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>クラスを検索の検索のホストと設定の作成を管理する、のみ検索タスクを作成し、検索メソッドを提供する必要があります。 検索プロセスがバック グラウンド スレッドで発生し、ツール ウィンドウのコントロールへの呼び出しが UI スレッドで発生します。 したがって、使用する必要があります、<xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A>メソッドを呼び出し、コントロールに対処することを管理します。
+ 検索を有効にすると、 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>、前の手順で、ツール ウィンドウが検索ホストを作成します。 このホストを設定し、バック グラウンド スレッドに常に発生する検索のプロセスを管理します。 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>クラスを検索の検索のホストと設定の作成を管理する、のみ検索タスクを作成し、検索メソッドを提供する必要があります。 検索プロセスがバック グラウンド スレッドで発生し、ツール ウィンドウのコントロールへの呼び出しが UI スレッドで発生します。 したがって、使用する必要があります、 [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85))メソッドを呼び出し、コントロールに対処することを管理します。
 
 1. *TestSearch.cs*ファイルで、次の追加`using`ステートメント。
 
@@ -127,7 +127,7 @@ ms.locfileid: "62843762"
 
     - 上書き、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A>検索タスクを作成します。
 
-    - 上書き、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A>テキスト ボックスの状態を復元する方法。 ユーザーが検索タスクと、ユーザーが設定または解除オプションやフィルターをキャンセルすると、このメソッドが呼び出されます。 両方<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A>は UI スレッドで呼び出されます。 そのためのテキスト ボックスにアクセスする必要はありません、<xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A>メソッド。
+    - 上書き、<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A>テキスト ボックスの状態を復元する方法。 ユーザーが検索タスクと、ユーザーが設定または解除オプションやフィルターをキャンセルすると、このメソッドが呼び出されます。 両方<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A>と<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A>は UI スレッドで呼び出されます。 そのためのテキスト ボックスにアクセスする必要はありません、 [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85))メソッド。
 
     - という名前のクラスを作成する`TestSearchTask`から継承する<xref:Microsoft.VisualStudio.Shell.VsSearchTask>の既定の実装を提供する<xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>します。
 
@@ -471,7 +471,7 @@ ms.locfileid: "62843762"
 
 6. フィルターを選択します。
 
-     検索ボックスには**行:「偶数」**、し、次の結果が表示されます。
+     検索ボックスには**行:「偶数」** 、し、次の結果が表示されます。
 
      優れた 2
 

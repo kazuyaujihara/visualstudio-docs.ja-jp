@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_DATA_STRING structure
 ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 056b7efc01b9536184c3e443156e27e328bdd2b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+ms.openlocfilehash: cf8e2958f55ca13ab050302a24ad9e5ae185d81a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689097"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353092"
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
 統合開発環境 (IDE) から、ユーザーが入力できる文字列に基づくデータ ブレークポイントを設定するために使用します。
@@ -34,13 +36,17 @@ typedef struct _BP_LOCATION_DATA_STRING {
 ```
 
 ## <a name="members"></a>メンバー
-`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)ブレークポイントが発生したスレッドを表すオブジェクト。
+`pThread`\
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)ブレークポイントが発生したスレッドを表すオブジェクト。
 
-`bstrContext` 通常は、コード内のブレークポイント、コール スタックで見られる同様のメソッドまたは関数名のコンテキスト。
+`bstrContext`\
+通常は、コード内のブレークポイント、コール スタックで見られる同様のメソッドまたは関数名のコンテキスト。
 
-`bstrDataExpr` データの文字列、ユーザーは、ブレークポイントを設定する入力します。
+`bstrDataExpr`\
+データの文字列、ユーザーは、ブレークポイントを設定する入力します。
 
-`dwNumElements` ブレークポイントが発生したデータの文字列内の要素の数。
+`dwNumElements`\
+ブレークポイントが発生したデータの文字列内の要素の数。
 
 ## <a name="remarks"></a>Remarks
 この構造体のメンバーである、 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)構造体、共用体の一部として。
