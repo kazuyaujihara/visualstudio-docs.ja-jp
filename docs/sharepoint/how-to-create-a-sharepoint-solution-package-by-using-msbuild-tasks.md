@@ -1,5 +1,5 @@
 ---
-title: '方法: MSBuild タスクを使用した SharePoint ソリューション パッケージの作成 |Microsoft Docs'
+title: MSBuild タスクを使用して SharePoint ソリューション パッケージを作成します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 432daff22616950e0a97164190a94082bf2db354
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966836"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401496"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>方法: MSBuild タスクを使用した SharePoint ソリューション パッケージの作成します。
-  ビルド、クリーンアップ、および SharePoint のパッケージを検証することができます (*.wsp*) MSBuild タスクのコマンドラインを使用して、開発用コンピューター。 ビルド コンピューターで Team Foundation Server を使用して、ビルド プロセスを自動化するのにこれらのコマンドを使用することもできます。
+  ビルド、クリーンアップ、および SharePoint のパッケージを検証することができます ( *.wsp*) MSBuild タスクのコマンドラインを使用して、開発用コンピューター。 ビルド コンピューターで Team Foundation Server を使用して、ビルド プロセスを自動化するのにこれらのコマンドを使用することもできます。
 
 ## <a name="build-a-sharepoint-package"></a>SharePoint パッケージを作成します。
 

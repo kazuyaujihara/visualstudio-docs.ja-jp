@@ -215,9 +215,9 @@ Visual Studio には、<xref:Microsoft.VisualStudio.TemplateWizard.IWizard> イ�
   
 5. ソリューションをリビルドします。  
   
-6. MyProjectWizard プロジェクト ディレクトリに key.snk ファイルを検索できます (**\<ディスクの場所 > \MyProjectTemplate\MyProjectWizard\key.snk**)。 Key.snk ファイルをコピーします。  
+6. MyProjectWizard プロジェクト ディレクトリに key.snk ファイルを検索できます ( **\<ディスクの場所 > \MyProjectTemplate\MyProjectWizard\key.snk**)。 Key.snk ファイルをコピーします。  
   
-7. 出力ディレクトリに移動し、アセンブリを検索 (**\<ディスクの場所 > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**)。 ここで、key.snk ファイルを貼り付けます。 (これは、どうしても必要はありませんは簡単に、次の手順)。  
+7. 出力ディレクトリに移動し、アセンブリを検索 ( **\<ディスクの場所 > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**)。 ここで、key.snk ファイルを貼り付けます。 (これは、どうしても必要はありませんは簡単に、次の手順)。  
   
 8. コマンド ウィンドウを開き、アセンブリが作成されたディレクトリに変更します。  
   

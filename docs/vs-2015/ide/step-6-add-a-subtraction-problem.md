@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e846bc8dc8d3087c58d58ee91752abc713c5f66e
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60064221"
@@ -55,7 +55,7 @@ ms.locfileid: "60064221"
      ![Intellisense ウィンドウのツールヒント](../ide/media/express-overloads.png "Express_Overloads")  
 IntelliSense ウィンドウのツールヒント  
   
-     ツールヒントには "**(+ 2 オーバーロード)**" と表示され、これは他の 2 つの方法で `Next()` メソッドを呼び出せることを意味します。 オーバーロードには、異なる数または型の引数が含まれていて、互いに動作が若干異なります。 たとえば、オーバーロードの 1 つは整数と文字列を受け取ることがありますが、メソッドは単一の整数引数を受け取ることがあります。 目的に基づいて適切なオーバーロードを選択します。 `StartTheQuiz()` メソッドにコードを追加すると、`randomizer.Next(` を入力するとすぐに、詳細情報が IntelliSense ウィンドウに表示されます。 上矢印キーおよび下矢印キーを押すと、次の図に示すように、別のオーバーロードに切り替わります。  
+     ツールヒントには " **(+ 2 オーバーロード)** " と表示され、これは他の 2 つの方法で `Next()` メソッドを呼び出せることを意味します。 オーバーロードには、異なる数または型の引数が含まれていて、互いに動作が若干異なります。 たとえば、オーバーロードの 1 つは整数と文字列を受け取ることがありますが、メソッドは単一の整数引数を受け取ることがあります。 目的に基づいて適切なオーバーロードを選択します。 `StartTheQuiz()` メソッドにコードを追加すると、`randomizer.Next(` を入力するとすぐに、詳細情報が IntelliSense ウィンドウに表示されます。 上矢印キーおよび下矢印キーを押すと、次の図に示すように、別のオーバーロードに切り替わります。  
   
      ![IntelliSense 内での Next&#40;&#41; メソッドのオーバーライド](../ide/media/express-nextoverload.png "Express_NextOverload")  
 IntelliSense 内での Next() メソッドのオーバーライド  

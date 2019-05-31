@@ -1,5 +1,5 @@
 ---
-title: '方法: 制限されたアクセス許可を持つドキュメントの背後で実行するコードを許可します。'
+title: 制限されたアクセス許可を持つドキュメントの背後で実行するコードを許可します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a5e65c086b69a712b2df5a1a12939b41828ad198
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 32e42954958fda71d54c3c0ac2685928644e7461
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445334"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402245"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>方法: 制限されたアクセス許可を持つドキュメントの背後で実行するコードを許可します。
   Microsoft Office の Information Rights Management (IRM) 機能を使用して、文書またはブックへのアクセス許可を制限することができます。 既定では、制限された Microsoft Office Word ドキュメントまたは Microsoft Office Excel ブックの背後にあるコードは実行できません。 既定値を変更するには、オブジェクト モデルにアクセスできる、マネージ コード拡張機能と、ソリューションが動作できるようにします。

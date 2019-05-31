@@ -33,14 +33,14 @@ VSPackage は、ユーザーが選択したときに永続化状態変数のグ�
      単一 VSPackage は、いくつかのカスタム設定ポイントをサポートしている場合は、各カスタム設定ポイントが別のクラスによって実装されるの一意のインスタンスで登録されますが、<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>クラス。 そのため、クラスの実装設定では、1 つ以上のカテゴリの設定をサポートできます。  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>カスタム設定ポイントのレジストリ エントリの詳細  
- 次の場所にレジストリ エントリでは、カスタム設定ポイントが作成されます。Hklm \software\microsoft\visualstudio\\*\<バージョン >* \UserSettings\\`<CSPName>`ここで、 `<CSPName>` VSPackage がサポートをカスタム設定ポイントの名前には*\<バージョン >* のバージョンである[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]8.0 などの。  
+ 次の場所にレジストリ エントリでは、カスタム設定ポイントが作成されます。Hklm \software\microsoft\visualstudio\\ *\<バージョン >* \UserSettings\\`<CSPName>`ここで、 `<CSPName>` VSPackage がサポートをカスタム設定ポイントの名前には *\<バージョン >* のバージョンである[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]8.0 などの。  
   
 > [!NOTE]
-> Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) です初期化されます。 詳細については、次を参照してください。[コマンド ライン スイッチ](../../extensibility/command-line-switches-visual-studio-sdk.md)します。  
+> Hkey_local_machine \software\microsoft\visualstudio のルート パス\\ *\<バージョン >* 代替で上書きすることができる場合にルート、[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]統合開発環境 (IDE) です初期化されます。 詳細については、次を参照してください。[コマンド ライン スイッチ](../../extensibility/command-line-switches-visual-studio-sdk.md)します。  
   
  レジストリ エントリの構造は、次に示します。  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\ *\<Version>* \UserSettings\  
   
  `<CSPName`>= s '#12345'  
   

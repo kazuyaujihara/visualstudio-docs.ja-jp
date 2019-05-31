@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3f062b48edfbe87fb97d94b3ea852486f66a19d1
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60041874"
@@ -32,7 +32,7 @@ ms.locfileid: "60041874"
   
      変数は、オブジェクトを追跡していない間は、特殊な予約値 `null` (Visual C# の場合) および `Nothing` (Visual Basic の場合) に設定されます。 そのため、プログラムが起動されると、`firstClicked` および `secondClicked` の両方が `null` または `Nothing` に設定されます。これは、変数が何も追跡していないことを意味しています。  
   
-2. 新しい `firstClicked` 参照変数を使用するように Click イベント ハンドラーを変更します。 `label_Click()` イベント ハンドラー メソッドの最後のステートメント (`clickedLabel.ForeColor = Color.Black;`) を削除し、次に示す `if` ステートメントに置き換えます  (必ずコメントと `if` ステートメント全体を含めてください)。  
+2. 新しい `firstClicked` 参照変数を使用するように Click イベント ハンドラーを変更します。 `label_Click()` イベント ハンドラー メソッドの最後のステートメント (`clickedLabel.ForeColor = Color.Black;`) を削除し、次に示す `if` ステートメントに置き換えます (必ずコメントと `if` ステートメント全体を含めてください)。  
   
      [!code-csharp[VbExpressTutorial4Step5#6](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step5/cs/form1.cs#6)]
      [!code-vb[VbExpressTutorial4Step5#6](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step5/vb/form1.vb#6)]  

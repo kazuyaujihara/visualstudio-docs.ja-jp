@@ -49,7 +49,7 @@ ms.locfileid: "63437649"
   
 1. .NET Framework コマンド プロンプトを開きます。  
   
-2. 次のコマンドを使用して更新プログラムの場所を設定します。 この例で**HelloWorld.exe.application**へのパス、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]は .application という拡張子を持つ常に、アプリケーション マニフェストと**http://adatum.com/Update/Path**そのをURLには[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]はアプリケーションの更新プログラムを確認します。  
+2. 次のコマンドを使用して更新プログラムの場所を設定します。 この例で**HelloWorld.exe.application**へのパス、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]は .application という拡張子を持つ常に、アプリケーション マニフェストと **http://adatum.com/Update/Path** そのをURLには[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]はアプリケーションの更新プログラムを確認します。  
   
      **Mage-HelloWorld.exe.application ProviderUrl の更新 http://adatum.com/Update/Path**  
   

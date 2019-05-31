@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: カスタム マスター ページをインポートし、サイトのページ イメージ |Microsoft Docs'
+title: カスタム マスター ページとイメージをサイト ページをインポートします。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bd2d9054571e52bc9fbb3906bc1880bb94e407a
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834388"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66400891"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>チュートリアル: カスタム マスター ページとサイトのページにイメージをインポートします。
   このチュートリアルの SharePoint カスタム マスター ページとサイトのページにイメージがインポートする方法、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint プロジェクト。
@@ -27,7 +27,7 @@ ms.locfileid: "62834388"
 
 - SharePoint Designer で、イメージを使用して、カスタム マスター ページとサイトのページを作成します。
 
-- SharePoint ソリューションにカスタム マスター ページ、画像、およびサイト ページをエクスポート (*.wsp*) ファイル。
+- SharePoint ソリューションにカスタム マスター ページ、画像、およびサイト ページをエクスポート ( *.wsp*) ファイル。
 
 - インポートおよび展開、 *.wsp*ファイルを[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint ソリューション パッケージのインポート プロジェクトを使用して SharePoint プロジェクト。
 
@@ -127,7 +127,7 @@ ms.locfileid: "62834388"
 6. 更新されたサイトのページを保存します。
 
 ## <a name="export-the-items-from-sharepoint"></a>SharePoint からのアイテムをエクスポートします。
- SharePoint ソリューションを SharePoint からアイテムをエクスポート (*.wsp*) ファイル。
+ SharePoint ソリューションを SharePoint からアイテムをエクスポート ( *.wsp*) ファイル。
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>SharePoint Designer からアイテムをエクスポートするには
 

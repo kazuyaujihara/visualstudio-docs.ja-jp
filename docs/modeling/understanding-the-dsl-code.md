@@ -39,7 +39,7 @@ ms.locfileid: "63386703"
 
  DSL を理解するために生成されたコードを調べてみることをお勧めします。 生成されたファイルを表示するには、ソリューション エクスプローラーで *.tt ファイルを展開します。
 
- \*.Tt ファイルには、非常に小さな生成コードが含まれています。 その代わりに、それらは `<#include>` ディレクティブを使用して共有テンプレート ファイルを含みます。 共有ファイルが見つかります**\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL DESIGNER Designer\11.0\TextTemplates**
+ \*.Tt ファイルには、非常に小さな生成コードが含まれています。 その代わりに、それらは `<#include>` ディレクティブを使用して共有テンプレート ファイルを含みます。 共有ファイルが見つかります **\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL DESIGNER Designer\11.0\TextTemplates**
 
  DSL ソリューションに独自のプログラム コードを追加する場合、生成されたコード フォルダーの外の別ファイルに追加します。 作成する、**カスタム コード**フォルダー。 (新しいコード ファイルをカスタム フォルダーに追加する場合、必ず初期コード スケルトン内の名前空間を修正してください)
 
@@ -60,7 +60,7 @@ ms.locfileid: "63386703"
 
  *YourDsl* `Schema.xsd`
 
- DSL のインスタンスを含むファイルのスキーマ。 このファイルは、コンパイル時にコピー (**bin**) ディレクトリ。 DSL をインストールするときにこのファイルをコピーできます**\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas**モデル ファイルを検証できるようにします。 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。
+ DSL のインスタンスを含むファイルのスキーマ。 このファイルは、コンパイル時にコピー (**bin**) ディレクトリ。 DSL をインストールするときにこのファイルをコピーできます **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas**モデル ファイルを検証できるようにします。 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。
 
  DSL エクスプローラーでオプションを設定することによりシリアル化をカスタマイズする場合、スキーマは適宜変更されます。 ただし、独自のシリアル化コードを作成する場合、このファイルは実際のスキーマを表さなくなる場合があります。 詳細については、次を参照してください。[ファイル記憶域のカスタマイズと XML シリアル化](../modeling/customizing-file-storage-and-xml-serialization.md)します。
 

@@ -14,7 +14,7 @@ ms.workload:
 - office
 ms.openlocfilehash: 80c29cab77cffcb46da8913ccd6e050ec4181c54
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62814018"
@@ -43,7 +43,7 @@ ms.locfileid: "62814018"
 
 3. プロジェクトを開きます、そのショートカット メニューを開きを選択し、**プロジェクトのアンロード**します。
 
-4. **ソリューション エクスプ ローラー**、プロジェクトのショートカット メニューを開き、選択し、**編集**  *\<ProjectName > .vbproj*または**の編集** *\<ProjectName > .csproj*します。
+4. **ソリューション エクスプ ローラー**、プロジェクトのショートカット メニューを開き、選択し、**編集** * \<ProjectName > .vbproj*または**の編集*** \<ProjectName > .csproj*します。
 
 5. 後に、`Import`プロジェクト ファイルの末尾付近の行に、次の行を追加します。
 

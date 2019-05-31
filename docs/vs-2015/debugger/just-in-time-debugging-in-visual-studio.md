@@ -102,7 +102,7 @@ ms.locfileid: "65690606"
 
      ジャスト イン タイムを有効にする Windows フォーム アプリケーションのデバッグには、次の手順を実行する必要があります。
 
-2. 設定、`jitDebugging`値を`true`で、 `system.windows.form` 、machine.config のセクションまたは*\<アプリケーション名 >*。 exe.config ファイル。
+2. 設定、`jitDebugging`値を`true`で、 `system.windows.form` 、machine.config のセクションまたは *\<アプリケーション名 >* 。 exe.config ファイル。
 
     ```
     <configuration>
@@ -165,7 +165,7 @@ static void Main(string[] args)
 
  **利用可能なデバッガー**が表示される、 **Microsoft Visual Studio 2015 の新しいインスタンス**の行を選択します。 既に選択されていない場合は、ここで選択します。
 
- ウィンドウの下部にある **、選択したデバッガーを使用してデバッグするでしょうか。**、 をクリック**はい**。
+ ウィンドウの下部にある **、選択したデバッガーを使用してデバッグするでしょうか。** 、 をクリック**はい**。
 
  ThrowsNullException プロジェクトは、実行例外をスローする行で停止するいると、Visual Studio の新しいインスタンスで開きます。
 

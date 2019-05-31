@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4f0c0b7b3e1edb367db6a49987a67e8a6dfdc17c
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60112053"
@@ -28,7 +28,7 @@ ms.locfileid: "60112053"
      [!code-csharp[VbExpressTutorial4Step7#9](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step7/cs/form1.cs#9)]
      [!code-vb[VbExpressTutorial4Step7#9](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step7/vb/form1.vb#9)]  
   
-     追加した `if` ステートメントの 1 行目は、プレーヤーがクリックした 1 つ目のラベルのアイコンが 2 つ目のラベルのアイコンと同じかどうかをチェックします。 アイコンが同じである場合、プログラムは、中かっこ内 (Visual C# の場合) または `if` ステートメント内 (Visual Basic の場合) の 3 つのステートメントを実行します。 最初の 2 つのステートメントは、`firstClicked` 参照変数および `secondClicked` 参照変数をリセットし、これらがラベルを追跡しないようにします  (これら 2 つのステートメントが、タイマーの Tick イベント ハンドラーからのものであることを認識できます)。3 つ目のステートメントは `return` ステートメントであり、メソッドの残りのステートメントを実行せずにスキップするようプログラムに指示します。  
+     追加した `if` ステートメントの 1 行目は、プレーヤーがクリックした 1 つ目のラベルのアイコンが 2 つ目のラベルのアイコンと同じかどうかをチェックします。 アイコンが同じである場合、プログラムは、中かっこ内 (Visual C# の場合) または `if` ステートメント内 (Visual Basic の場合) の 3 つのステートメントを実行します。 最初の 2 つのステートメントは、`firstClicked` 参照変数および `secondClicked` 参照変数をリセットし、これらがラベルを追跡しないようにします (これら 2 つのステートメントが、タイマーの Tick イベント ハンドラーからのものであることを認識できます)。3 つ目のステートメントは `return` ステートメントであり、メソッドの残りのステートメントを実行せずにスキップするようプログラムに指示します。  
   
      Visual C# でプログラミングしている場合、一部のコードでは 1 つの等号 (`=`) が使用されているのに対し、他のステートメントでは 2 つの等号 (`==`) が使用されているのに気付きます。 ある場所では `=` が使用されているのに対し、他の場所では `==` が使用されている理由について考えます。  
   

@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60038667"
@@ -35,7 +35,7 @@ ms.locfileid: "60038667"
   
     2. **[ファイル]** メニューの **[テンプレートのエクスポート]** をクリックします。 ウィザードの手順を実行します。  
   
-         %USERPROFILE%\My documents \visual Studio で .zip ファイルが作成された*\<バージョン >* \My Exported Templates\\します。  
+         %USERPROFILE%\My documents \visual Studio で .zip ファイルが作成された *\<バージョン >* \My Exported Templates\\します。  
   
 2. 空の VSIX プロジェクトを作成します。  
   

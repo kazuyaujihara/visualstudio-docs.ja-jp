@@ -77,13 +77,13 @@ ms.locfileid: "63431539"
 
  この例を実行すると、次の出力が生成されます。
 
- **値渡し Changing ポインター -:**
+ **値渡し Changing ポインター -:** 
 **12345**
 **12345**
 **Changing ポインター、参照によって渡される:** 
 **12345**
 **12345 ABCDE**
-**戻り値渡しで渡す:**
+**戻り値渡しで渡す:** 
 **12345 ABCDE**
 ## <a name="related-rules"></a>関連規則
  [CA1021:Out パラメーターを避ける](../code-quality/ca1021-avoid-out-parameters.md)

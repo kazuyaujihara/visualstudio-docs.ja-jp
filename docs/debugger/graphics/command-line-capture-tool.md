@@ -137,7 +137,7 @@ DXCap.exe -e map
 
  上記のコマンドは、"map"; に一致する UWP アプリを列挙します。出力を次に示します。
 
- **パッケージ "Microsoft.BingMaps":****検出:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName         :Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533** **名。Microsoft.BingMaps** **発行元。CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = 米国****バージョン。2.1.2914.1734** **起動可能なアプリケーション。****Id:AppexMaps** **Exe:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA:いいえ** **AppSpec (起動) します。DXCap.exe の-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**列挙された各アプリの出力の最後の行からグラフィックス情報をキャプチャする際のコマンドを表示します。
+ **パッケージ "Microsoft.BingMaps":** **検出:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName         :Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533** **名。Microsoft.BingMaps** **発行元。CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = 米国** **バージョン。2.1.2914.1734** **起動可能なアプリケーション。** **Id:AppexMaps** **Exe:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA:いいえ** **AppSpec (起動) します。DXCap.exe の-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**列挙された各アプリの出力の最後の行からグラフィックス情報をキャプチャする際のコマンドを表示します。
 
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>特定のフレームまたは特定の期間のフレームのキャプチャ
  使用`-frame`コンマおよび範囲を使用してキャプチャするフレームを指定します。
