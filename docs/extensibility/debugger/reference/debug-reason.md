@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03b2db1fd58af6a8b2f8a57846e7753cdbc82352
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0502ab10398d37bcafee5316ba7e7566dbab4e01
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707264"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346164"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 デバッグ プロセスを起動した理由を指定します。
@@ -45,16 +48,21 @@ public enum enum_DEBUG_REASON {
 };
 ```
 
-#### <a name="parameters"></a>パラメーター
-DEBUG_REASON_ERROR A 不特定のエラーが発生しました (このとして提供される既定の条件を合わせる上の理由から、もう一方のいずれの場合)。
+## <a name="fields"></a>フィールド
+`DEBUG_REASON_ERROR`\
+特定できないエラーが発生しました (このとして提供される既定の条件を合わせる上の理由から、もう一方のいずれの場合)。
 
-ユーザーの要求で DEBUG_REASON_USER_LAUNCHED プロセスが開始されました。
+`DEBUG_REASON_USER_LAUNCHED`\
+ユーザーの要求プロセスが開始されました。
 
-DEBUG_REASON_USER_ATTACHED、既に実行中のプロセスは、ユーザーに関連付けられました。
+`DEBUG_REASON_USER_ATTACHED`\
+既に実行中のプロセスは、ユーザーに関連付けられました。
 
-DEBUG_REASON_AUTO_ATTACHED プロセスに自動的に添付起動したとき。
+`DEBUG_REASON_AUTO_ATTACHED`\
+プロセスが起動したときに自動的にアタッチします。
 
-ために、プロセスを起動した DEBUG_REASON_CAUSALITY、*ジャスト イン タイム*(JIT) デバッグ イベント。
+`DEBUG_REASON_CAUSALITY`\
+プロセスを起動したために、*ジャスト イン タイム*(JIT) デバッグ イベント。
 
 ## <a name="remarks"></a>Remarks
 返される、 [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)メソッド。

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581640"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262939"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>チュートリアル: 複数のコンピューターを使用するビルド環境の作成
 
@@ -169,7 +169,7 @@ ms.locfileid: "62581640"
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. 「[デバッグの実行可能ファイルを実行するテスト用コンピューターの準備](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)」の説明に従って、*Debug_NonRedist\x86* フォルダーまたは *Debug_NonRedist\x64* フォルダーから次のファイルのみをビルド コンピューターにコピーします。 他のファイルはコピーしないでください。
+5. 「[デバッグの実行可能ファイルを実行するテスト用コンピューターの準備](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)」の説明に従って、*Debug_NonRedist\x86* フォルダーまたは *Debug_NonRedist\x64* フォルダーから次のファイルのみをビルド コンピューターにコピーします。 他のファイルはコピーしないでください。
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -407,5 +407,5 @@ Azure Pipelines を使用して Visual Studio プロジェクトとソリュー�
 
 ## <a name="see-also"></a>関連項目
 
-- [デバッグの実行可能ファイルを実行するテスト用コンピューターの準備](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [デバッグの実行可能ファイルを実行するテスト用コンピューターの準備](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)

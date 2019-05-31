@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5707e83545d2008f8e8ec042ea61208220887204
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964483"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318511"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でショートカット キーを使用します。
 エディター拡張機能で、ショートカット キーに応答することができます。 次のチュートリアルでは、テキスト ビューにショートカット キーを使用してビューの表示要素を追加する方法を示します。 このチュートリアルは、ビューポート adornment エディター テンプレートに基づいており、使用して、表示要素を追加することができます、+ 文字。
@@ -108,7 +108,7 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
     }
     ```
 
-7. 実装、`Exec()`ためプラス記号の場合、ビューに追加します紫色のボックスをその it メソッド (**+**) 文字を入力します。
+7. 実装、`Exec()`ためプラス記号の場合、ビューに追加します紫色のボックスをその it メソッド ( **+** ) 文字を入力します。
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -237,7 +237,7 @@ Visual Studio 2017 バージョン 15.6 のエディターの拡張機能での�
    }
    ```
 
-6. 実装、`ExecuteCommand()`ためプラス記号の場合、ビューに追加します紫色のボックスをその it メソッド (**+**) 文字を入力します。
+6. 実装、`ExecuteCommand()`ためプラス記号の場合、ビューに追加します紫色のボックスをその it メソッド ( **+** ) 文字を入力します。
 
    ```csharp
    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VS SDK (see Visual Studio SDK)
 - Visual Studio, SDK
 ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de690ea6b077ea0c0dc7c6b65f34c68c95e41081
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b713015bc2ee1f42fdf331521a990d89eb6adbcd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553667"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323091"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK は Visual Studio の機能を拡張することや、Visual Studio に新しい機能を追加するのに役立ちます。 Visual Studio Marketplace では、あなたが作成した拡張機能を他のユーザーへ配布することができます。 Visual Studio を拡張する方法の一部を次に示します。
@@ -76,7 +76,7 @@ Visual Studio SDK は Visual Studio の機能を拡張することや、Visual S
 ## <a name="see-also"></a>関連項目
 - [メニュー コマンドを使用して拡張機能を作成します。](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [方法: 機能拡張プロジェクトを Visual Studio 2017 に移行します。](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [FAQ：アドインを VSPackage 拡張機能に変換します。](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
+- [よくあるご質問: アドインを VSPackage 拡張機能に変換します。](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
 - [マネージ コード内の複数のスレッドを管理します。](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [メニューとコマンドを拡張します。](../extensibility/extending-menus-and-commands.md)
 - [ツールバーにコマンドを追加します。](../extensibility/adding-commands-to-toolbars.md)

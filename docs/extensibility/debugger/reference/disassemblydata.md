@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DisassemblyData structure
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48d9eb61a3f017f61ef717a27e89cb7426bad26
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: edc91cf8599a8591b70d14c49611ff64d5e957e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712477"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318238"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 表示する統合開発環境 (IDE) の 1 つの逆アセンブリ命令をについて説明します。
@@ -61,33 +64,45 @@ public struct DisassemblyData { 
 ```
 
 ## <a name="members"></a>メンバー
-`dwFields` [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)フィールドが記入を指定する定数。
+`dwFields`\
+[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)フィールドが記入を指定する定数。
 
-`bstrAddress` いくつかの開始ポイント (通常は、関連付けられている関数の先頭) からのオフセットとしてのアドレス。
+`bstrAddress`\
+いくつかの開始ポイント (通常は、関連付けられている関数の先頭) からのオフセットとしてのアドレス。
 
-`bstrCodeBytes` この命令コードのバイト数。
+`bstrCodeBytes`\
+この命令コードのバイト数。
 
-`bstrOpcode` この命令のオペコードです。
+`bstrOpcode`\
+この命令のオペコードです。
 
-`bstrOperands` この命令のオペランド。
+`bstrOperands`\
+この命令のオペランド。
 
-`bstrSymbol` シンボル名では、存在する場合に関連付けられているアドレス (パブリック シンボル、ラベル、およびなど)。
+`bstrSymbol`\
+シンボル名では、存在する場合に関連付けられているアドレス (パブリック シンボル、ラベル、およびなど)。
 
-`uCodeLocationId` この逆アセンブルした行のコードの場所の識別子。 1 行のコード コンテキストのアドレスが別のコード コンテキストのアドレスよりも大きい場合は、最初の逆アセンブルしたコードの場所の識別子が、2 つ目のコードの場所 id より大きくするもは。
+`uCodeLocationId`\
+この逆アセンブルした行のコードの場所の識別子。 1 行のコード コンテキストのアドレスが別のコード コンテキストのアドレスよりも大きい場合は、最初の逆アセンブルしたコードの場所の識別子が、2 つ目のコードの場所 id より大きくするもは。
 
-`posBeg` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)ドキュメントの逆アセンブリ データの開始位置に対応します。
+`posBeg`\
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)ドキュメントの逆アセンブリ データの開始位置に対応します。
 
-`posEnd` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)逆アセンブリ データの終了位置となるドキュメント内の位置に対応します。
+`posEnd`\
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)逆アセンブリ データの終了位置となるドキュメント内の位置に対応します。
 
-`bstrDocumentUrl` ファイル名として表すことができるテキスト ドキュメントの`bstrDocumentUrl`フィールドは、ソースの場所、ファイル名を使用して、形式を使用して`file://file name`します。
+`bstrDocumentUrl`\
+ファイル名として表すことができるテキスト ドキュメントの`bstrDocumentUrl`フィールドは、ソースの場所、ファイル名を使用して、形式を使用して`file://file name`します。
 
 ファイル名を表すことができないテキスト ドキュメントの`bstrDocumentUrl`、ドキュメントの一意の識別子であり、デバッグ エンジンを実装する必要があります、 [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)メソッド。
 
 このフィールドは、チェックサムに関する追加情報を含めることもできます。 詳細については、「解説」を参照してください。
 
-`dwByteOffset` コードの行の先頭からバイトの命令の数。
+`dwByteOffset`\
+コードの行の先頭からバイトの命令の数。
 
-`dwFlags` [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)有効などのフラグを指定する定数。
+`dwFlags`\
+[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)有効などのフラグを指定する定数。
 
 ## <a name="remarks"></a>Remarks
 各`DisassemblyData`構造体には、逆アセンブリの 1 つの命令がについて説明します。 これらの構造体の配列が返される、[読み取り](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)メソッド。

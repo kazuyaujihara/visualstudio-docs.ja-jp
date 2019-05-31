@@ -3,25 +3,25 @@ title: Visual Studio テンプレート マニフェスト スキーマ リフ�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 52a421986e076d2badc6dc7eb76247d243da155b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108855"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323021"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio テンプレート マニフェスト スキーマ リファレンス
-このスキーマは、Visual Studio テンプレート マニフェストの形式を示します (*.vstman*) Visual Studio プロジェクトや項目テンプレートに生成されるファイル。 スキーマには、場所と、テンプレートに関するその他の関連情報も説明します。
+このスキーマは、Visual Studio テンプレート マニフェストの形式を示します ( *.vstman*) Visual Studio プロジェクトや項目テンプレートに生成されるファイル。 スキーマには、場所と、テンプレートに関するその他の関連情報も説明します。
 
  :個別の項目とプロジェクト テンプレートのディレクトリがあるため、マニフェストは項目とプロジェクト テンプレートが混在していることはありません。
 
 > [!IMPORTANT]
->  このマニフェストは、Visual Studio 2017 以降使用できます。
+> このマニフェストは、Visual Studio 2017 以降使用できます。
 
 ## <a name="vstemplatemanifest-element"></a>VSTemplateManifest 要素
  マニフェストのルート要素。
@@ -30,7 +30,7 @@ ms.locfileid: "60108855"
 
 - **バージョン**:テンプレート マニフェストのバージョンを表す文字列。 必須。
 
-- **ロケール**:ロケールまたはテンプレート マニフェストのロケールを表す文字列。 ロケールの値は、すべてのテンプレートに適用されます。 ロケールごとに個別のマニフェストを使用する必要があります。 任意。
+- **ロケール**:ロケールまたはテンプレート マニフェストのロケールを表す文字列。 ロケールの値は、すべてのテンプレートに適用されます。 ロケールごとに個別のマニフェストを使用する必要があります。 省略可能です。
 
 ### <a name="child-elements"></a>子要素
 
@@ -84,7 +84,7 @@ ms.locfileid: "60108855"
 
 - **パッケージ**:パッケージを指定する文字列値。 省略可能です。
 
-- **ID**:ID を指定する文字列値 任意。
+- **ID**:ID を指定する文字列値 省略可能です。
 
 ### <a name="child-elements"></a>子要素
  なし。
@@ -122,7 +122,7 @@ ms.locfileid: "60108855"
  次のコードは、項目テンプレートの例 *.vstman*ファイル。
 
 ```xml
-VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
   <VSTemplateContainer TemplateType="Item">
     <RelativePathOnDisk>CSharp\1033\ItemTemplate1</RelativePathOnDisk>
     <TemplateFileName>ItemTemplate1.vstemplate</TemplateFileName>

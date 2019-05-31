@@ -6,17 +6,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], with Windows Installer
 - VSPackages, deploying
 ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cd5f25e1e87ba3db360b328b4f5a245697cba45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94dcb85e3cfef9c44cb8e88720f53c296f8bf997
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860282"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349852"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Windows インストーラーによる VSPackage のインストール
 VSPackage の統合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]だけで複数のユーザーのコンピューターにファイルをコピーする必要があります。 VSPackage とその依存ファイルをインストールして登録し、それらを統合する必要があります VSPackage のインストーラー[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。 VSPackage がのアイコンを表示するなどの統合機能の活用、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]スプラッシュ画面とダイアログ ボックスの詳細。
@@ -56,7 +56,7 @@ VSPackage の統合[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]�
 
  マネージ コード プロジェクトの種類の新しいプロジェクトの種類のアグリゲーターを使用する方法について説明します。
 
-- [方法: インストーラーのレジストリ情報を生成します。](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)
+- [方法: インストーラー向けの登録情報の生成](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)
 
  RegPkg.exe を使用して、マネージ VSPackage を登録するマニフェストを生成する方法について説明します。
 

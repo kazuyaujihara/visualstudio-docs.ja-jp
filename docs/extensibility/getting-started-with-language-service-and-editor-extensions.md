@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: acb18a6471a7d2debbb20107dc780f67857327ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7bd39ab8abde2fdbe337073e7cfaa7ea457b022f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415573"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342444"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>言語サービスとエディターの拡張機能を概要します。
 エディター拡張機能を使用して、独自のプログラミング言語または任意のコンテンツ タイプをアウトライン表示、かっこの照合、IntelliSense、および電球などの言語サービスの機能を追加することができます。 テキストの色指定、余白、表示要素、および他のビジュアル要素など、Visual Studio エディターの動作と外観をカスタマイズすることもできます。 また、独自の種類のコンテンツを定義して、コンテンツが表示されるテキスト ビューの動作と外観を指定できます。

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - language services, registry information
 - registry, language services
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77a7138e436002a0fda4e9ab72222821d2c9809e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6747695c92d44b87ed4acc34f234b8ff06fd307e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909028"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353365"
 ---
 # <a name="registering-a-legacy-language-service"></a>従来の言語サービスを登録します。
 次のセクションでは、オプションを提供レジストリ エントリの一覧のさまざまな言語サービスで使用できる[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]します。
@@ -31,7 +31,7 @@ ms.locfileid: "62909028"
 |----------|----------|-----------|-----------------|
 |(既定)|REG_SZ|*\<GUID>*|言語サービスの GUID です。|
 |LangResID|REG_DWORD|0x0-0 xffff|言語のローカライズされたテキストの名前のリソース識別子 (ResID) の文字列を指定します。|
-|Package|REG_SZ|*\<GUID>*|VSPackage の GUID です。|
+|パッケージ|REG_SZ|*\<GUID>*|VSPackage の GUID です。|
 |ShowCompletion|REG_DWORD|0-1|指定するかどうか、**ステートメント入力候補**オプション、**オプション** ダイアログ ボックスが有効にします。|
 |ShowSmartIndent|REG_DWORD|0-1|指定するかどうかを選択するオプション**スマート**でインデント、**オプション** ダイアログ ボックスが有効にします。|
 |RequestStockColors|REG_DWORD|0-1|指定しますカスタムかどうか、またはキーワードに色を既定の色を使用します。|
@@ -86,7 +86,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |名前|型|範囲|説明|
 |----------|----------|-----------|-----------------|
 |(既定)|REG_SZ|resID|このオプション ページのローカライズされた表示名。 名前はリテラル テキスト、または # できます`nnn`ここで、`nnn`はサテライト DLL を指定した VSPackage の文字列リソース ID です。|
-|Package|REG_SZ|*GUID*|このオプション ページを実装する VSPackage の GUID です。|
+|パッケージ|REG_SZ|*GUID*|このオプション ページを実装する VSPackage の GUID です。|
 |ページ|REG_SZ|*GUID*|呼び出すことによって、VSPackage から要求するプロパティ ページの GUID、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>メソッド。 このレジストリ エントリが存在しない場合、レジストリ キーは、ページではなく、ノードを示します。|
 
 ### <a name="example"></a>例
@@ -141,7 +141,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DisplayName|REG_SZ|resID|表示される名前、**プログラムから開く** ダイアログ ボックス。 名前は、標準形式で文字列リソース ID または名前。|
 |ExcludeDefTextEditor|REG_DWORD|0-1|使用、**プログラムから開く**メニュー コマンド。 特定のファイルの種類に対して使用可能なエディターの一覧で、既定のテキスト エディターを一覧表示したくない場合は、この値を 1 に設定します。|
 |LinkedEditorGUID|REG_SZ|*\<GUID>*|コード ページのサポート ファイルを開くことができる任意の言語サービスに使用されます。 たとえば、ファイルを開くと、.txt を使用して、**ファイルを開く**コマンド、オプションが、エンコードなしでは、ソース コード エディターを使用するために用意されています。 します。<br /><br /> サブキーの名前を指定の GUID がコード ページ エディター ファクトリです。この特定のレジストリ エントリで指定されたリンクの GUID は、正規表現エディター ファクトリです。 このエントリの目的は、IDE で、既定のエディターを使用して、ファイルが表示されない場合、IDE は、一覧で、[次へ] エディターを使用してください。 このエディターのファクトリは基本的に失敗したエディター ファクトリと同じであるために、この次のエディターはコード ページ エディターのファクトリをしないでください。|
-|Package|REG_SZ|*\<GUID>*|表示名の ResID の VSPackage の GUID です。|
+|パッケージ|REG_SZ|*\<GUID>*|表示名の ResID の VSPackage の GUID です。|
 
 ### <a name="example"></a>例
 

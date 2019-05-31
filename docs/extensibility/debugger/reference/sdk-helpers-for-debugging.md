@@ -9,17 +9,17 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d57e764158531456bfcdba6d4915eef42aebd3d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 74b9047ef6df1e6bf20a5b5a95e40e27ed1b1926
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460906"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329208"
 ---
 # <a name="sdk-helpers-for-debugging"></a>デバッグ用の SDK ヘルパー
 これらの関数と宣言は、C++ でのデバッグ エンジン、式エバリュエーターでは、およびシンボル プロバイダーを実装するためのグローバルなヘルパー関数です。
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
 > [!NOTE]
 > ほとんどの場合、メトリックは、HKEY_LOCAL_MACHINE キーに書き込まれます。 ただし、場合によって HKEY_CURRENT_USER キーになります、変換先。 Dbgmetric.lib では、両方のキーを処理します。 メトリックを取得するには、HKEY_CURRENT_USER が検索してから、HKEY_LOCAL_MACHINE。 メトリックを設定していることは、パラメーターは、最上位レベルを使用するキーを指定します。
 
- *[レジストリ キー]*\
+ *[レジストリ キー]* \
 
  `Software`\
 
@@ -247,11 +247,11 @@ HRESULT EnumMetricSections(
 
  `VisualStudio`\
 
- *[バージョン root]*\
+ *[バージョン root]* \
 
- *[メトリックの root]*\
+ *[メトリックの root]* \
 
- *[メトリックの種類]*\
+ *[メトリックの種類]* \
 
  *[メトリック] = [メトリックの値]*
 
@@ -276,9 +276,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- *[エンジン guid]*\
+ *[エンジン guid]* \
 
- `CLSID` = *[クラス guid]*
+ `CLSID` =  *[クラス guid]*
 
  *[メトリック] = [メトリックの値]*
 
@@ -288,9 +288,9 @@ HRESULT EnumMetricSections(
 
  `PortSupplier`\
 
- `0` = *[ポートのサプライヤーの guid]*
+ `0` =  *[ポートのサプライヤーの guid]*
 
- `1` = *[ポートのサプライヤーの guid]*
+ `1` =  *[ポートのサプライヤーの guid]*
 
 |プレースホルダー|説明|
 |-----------------|-----------------|
@@ -303,9 +303,9 @@ HRESULT EnumMetricSections(
 
  `PortSupplier`\
 
- *[ポートのサプライヤーの guid]*\
+ *[ポートのサプライヤーの guid]* \
 
- `CLSID` = *[クラス guid]*
+ `CLSID` =  *[クラス guid]*
 
  *[メトリック] = [メトリックの値]*
 
@@ -321,11 +321,11 @@ HRESULT EnumMetricSections(
 
  `SymbolProvider`\
 
- *[シンボル プロバイダー guid]*\
+ *[シンボル プロバイダー guid]* \
 
  `file`\
 
- `CLSID` = *[クラス guid]*
+ `CLSID` =  *[クラス guid]*
 
  *[メトリック] = [メトリックの値]*
 
@@ -333,7 +333,7 @@ HRESULT EnumMetricSections(
 
  `metadata`\
 
- `CLSID` = *[クラス guid]*
+ `CLSID` =  *[クラス guid]*
 
  *[メトリック] = [メトリックの値]*
 
@@ -352,11 +352,11 @@ HRESULT EnumMetricSections(
 
  `ExpressionEvaluator`\
 
- *[言語の guid]*\
+ *[言語の guid]* \
 
- *[ベンダー guid]*\
+ *[ベンダー guid]* \
 
- `CLSID` = *[クラス guid]*
+ `CLSID` =  *[クラス guid]*
 
  *[メトリック] = [メトリックの値]*
 
@@ -364,9 +364,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- `0` = *[デバッグ エンジンの guid]*
+ `0` =  *[デバッグ エンジンの guid]*
 
- `1` = *[デバッグ エンジンの guid]*
+ `1` =  *[デバッグ エンジンの guid]*
 
 |プレースホルダー|説明|
 |-----------------|-----------------|
@@ -380,7 +380,7 @@ HRESULT EnumMetricSections(
 
  `EEExtensions`\
 
- *[拡張機能の guid]*\
+ *[拡張機能の guid]* \
 
  *[メトリック] = [メトリックの値]*
 
@@ -395,17 +395,17 @@ HRESULT EnumMetricSections(
 
  `Exception`\
 
- *[デバッグ エンジンの guid]*\
+ *[デバッグ エンジンの guid]* \
 
- *[例外の種類]*\
+ *[例外の種類]* \
 
- *[exception]*\
-
- *[メトリック] = [メトリックの値]*
+ *[exception]* \
 
  *[メトリック] = [メトリックの値]*
 
- *[exception]*\
+ *[メトリック] = [メトリックの値]*
+
+ *[exception]* \
 
  *[メトリック] = [メトリックの値]*
 

@@ -3,17 +3,17 @@ title: 通知と進行状況 for Visual Studio |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a783d19136998bbc9a18daa975c1db87bda19779
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c5ca3f02c37a76e31ad76f6875110487dffefd49
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428735"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310885"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>通知と Visual Studio の進行状況
 ## <a name="BKMK_NotificationSystems"></a> 通知システム
@@ -38,7 +38,7 @@ ms.locfileid: "63428735"
 ### <a name="choosing-the-right-method"></a>適切な方法の選択
  メッセージのユーザーに通知するのに適切な方法の選択を支援するために、このテーブルを使用します。
 
-|メソッド|用途|使用しない|
+|メソッド|使用|使用しない|
 |------------|---------|----------------|
 |[モーダル エラー メッセージ ダイアログ ボックス](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|続行する前にユーザーの応答が必要なときに使用します。|ユーザーをブロックし、そのフローを中断する必要がない場合は使用しないでください。 もう 1 つでない方法でメッセージを表示する可能性がある場合は、モーダル ダイアログ ボックスを使用しないでください。|
 |[IDE のステータス バー](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|プロセスの状態に関するアンビエント テキスト情報がある場合に使用します。|単独で使用しません。 最適な別のフィードバック メカニズムと組み合わせて使用。|
@@ -482,7 +482,7 @@ public interface IVsInfoBarUIEvents
 
  ![フィールドのラベルが"Required"検証](../../extensibility/ux-guidelines/media/0905-02_fieldvalidationrequired.png "0905 02_FieldValidationRequired")
 
- コントロールの状態が判断できる*に入力された無効なコンテンツ*別のコントロールにフォーカスを移動するときか、または、ユーザーが [OK] のコミット] ボタンをクリックしたときまたはユーザーがドキュメントまたはフォームを保存するときにします。
+ コントロールの状態が判断できる*に入力された無効なコンテンツ*別のコントロールにフォーカスを移動するときか、または、ユーザーが [OK] のコミット ボタンをクリックしたときまたはユーザーがドキュメントまたはフォームを保存するときにします。
 
  無効なコンテンツの状態が確認された場合、コントロールの内部または同様の横にアイコンが表示されます。 アイコンまたはコントロールのいずれかのポインターを合わせると、エラーを説明するツールヒントが表示されます。 さらに、1 ピクセルの枠線が無効な状態を作成しているコントロールの周囲に表示されます。
 

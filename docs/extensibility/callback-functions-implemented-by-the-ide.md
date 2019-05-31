@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc3b4423b54975c773de743b093f882f1fd9c42c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dff6ee0a81472ea556aaca478a2ff33db93fe871
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926937"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321182"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE によって実装されるコールバック関数
 統合することとして可能な限りと統合されたエクスペリエンスを提供するシームレスな統合開発環境 (IDE) ソース管理プラグイン使用できます、IDE によって実装されるコールバック関数。 プラグインできるこれらの関数、IDE に情報を渡すのソース管理操作中に適切なタイミングでIDE は、ネイティブ UI に埋め込まれた要素としてこの情報を表示できます。 ユーザーは、場合、プラグインの使用、独自の UI よりもこのシナリオで断片化の経験を持ちます。

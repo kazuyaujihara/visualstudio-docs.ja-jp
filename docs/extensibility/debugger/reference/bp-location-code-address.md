@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_ADDRESS structure
 ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cce96e2edfcbc0dcb6dc4c6ff0e58617ad792ad8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+ms.openlocfilehash: 51137b5a5a69c80ecd7129d4c645f63b5805d27d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698002"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319131"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
 コード内のアドレスのブレークポイントの場所について説明します。
@@ -34,13 +36,17 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 ```
 
 ## <a name="members"></a>メンバー
-`bstrContext` ブレークポイントのコンテキスト、通常は呼び出し履歴で見られる同様のメソッドまたは関数の名前。
+`bstrContext`\
+ブレークポイントのコンテキスト、通常は呼び出し履歴で見られる同様のメソッドまたは関数の名前。
 
-`bstrModuleUrl` ブレークポイントを含むモジュールの URL。
+`bstrModuleUrl`\
+ブレークポイントを含むモジュールの URL。
 
-`bstrFunction` ブレークポイントを含む関数の名前。
+`bstrFunction`\
+ブレークポイントを含む関数の名前。
 
-`bstrAddress` バインドする式エバリュエーターによって解析のブレークポイントのアドレス、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)オブジェクト。
+`bstrAddress`\
+バインドする式エバリュエーターによって解析のブレークポイントのアドレス、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)オブジェクト。
 
 ## <a name="remarks"></a>Remarks
 この構造体のメンバーである、 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)構造体、共用体の一部として。

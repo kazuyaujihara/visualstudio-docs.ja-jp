@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c86dd5090d2cee6c49bd97f0895bba397e10c1ae
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553379"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263049"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 の JavaScript
 
@@ -247,7 +247,7 @@ IntelliSense のしくみの詳細については、「[JavaScript IntelliSense]
 ### <a name="vsdoc"></a>VSDoc
 
 これまでは、XML ドキュメント コメント (VSDoc ともいう) を使用して、IntelliSense のより適切な結果を得るために使用される追加データでソース コードを修飾できました。
-この VSDoc はサポートされなくなり、代わりに作成しやすく、JavaScript の承認済み標準である [JSDoc](http://usejsdoc.org/about-getting-started.html) が使用されます。
+この VSDoc はサポートされなくなり、代わりに作成しやすく、JavaScript の承認済み標準である [JSDoc](https://jsdoc.app/about-getting-started.html) が使用されます。
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js` 拡張子
 

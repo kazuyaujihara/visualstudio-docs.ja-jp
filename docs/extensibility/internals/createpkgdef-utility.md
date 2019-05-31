@@ -8,17 +8,17 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f5e7db4b31607c05da32a09e5d691a85ef4173
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 6ab5866949d6ccfa9f3b1037abf7801ce40ace3d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614824"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332282"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef ユーティリティ
 パラメーターとして Visual Studio 拡張機能の .dll ファイルを受け取り、作成、 *.pkgdef*付随するファイル、 *.dll*ファイル。 *.Pkgdef*ファイルには、拡張機能がインストールされている場合、システム レジストリに書き込まそれ以外の場合は、すべての情報が含まれています。
@@ -33,7 +33,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
 ## <a name="arguments"></a>引数
-**/out=&lt;FileName&gt;**\
+**/out=&lt;FileName&gt;** \
 必須。 名前を設定、 *.pkgdef*の出力ファイルを&lt;FileName&gt;します。
 
 **/codebase**\
@@ -42,7 +42,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 **/assembly**\
 登録を強制的に、**アセンブリ**ユーティリティ。
 
-**&lt;AssemblyPath&gt;**\
+**&lt;AssemblyPath&gt;** \
 パス、 *.dll*ファイルを生成する、 *.pkgdef*します。
 
 ## <a name="remarks"></a>Remarks
@@ -56,9 +56,9 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-インストール フォルダーがある場合 *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\*、拡張機能は Visual Studio によって認識されますが、既定で無効にします。 ユーザーを使用して、拡張機能を有効にできます**拡張機能の管理**します。
+インストール フォルダーがある場合 *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\* 、拡張機能は Visual Studio によって認識されますが、既定で無効にします。 ユーザーを使用して、拡張機能を有効にできます**拡張機能の管理**します。
 
-インストール フォルダーがある場合 *%vsinstalldir%\Common7\IDE\Extensions\\*、拡張機能が既定で有効にします。
+インストール フォルダーがある場合 *%vsinstalldir%\Common7\IDE\Extensions\\* 、拡張機能が既定で有効にします。
 
 > [!NOTE]
 > **拡張機能の管理**ツールは VSIX パッケージの一部としてインストールされていない場合、拡張機能へのアクセスに使用できません。
@@ -73,9 +73,9 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-インストール フォルダーがある場合 *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\*、拡張機能は Visual Studio によって認識されますが、既定で無効にします。 ユーザーを使用して、拡張機能を有効にできます**拡張機能と更新**します。
+インストール フォルダーがある場合 *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\* 、拡張機能は Visual Studio によって認識されますが、既定で無効にします。 ユーザーを使用して、拡張機能を有効にできます**拡張機能と更新**します。
 
-インストール フォルダーがある場合 *%vsinstalldir%\Common7\IDE\Extensions\\*、拡張機能が既定で有効にします。
+インストール フォルダーがある場合 *%vsinstalldir%\Common7\IDE\Extensions\\* 、拡張機能が既定で有効にします。
 
 > [!NOTE]
 > **拡張機能と更新**ツールは VSIX パッケージの一部としてインストールされていない場合、拡張機能へのアクセスに使用できません。

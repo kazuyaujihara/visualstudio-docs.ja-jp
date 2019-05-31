@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EncUnavailableReason enumeration
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea1bbf8fe96abbf1e7bd9a92396d0dcfa4306445
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7db94a181d87791edb242d69b461f90c42a5e080
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717040"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318158"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` 理由を表すを**エディット コンティニュ**は使用できません。
@@ -49,20 +52,27 @@ public enum EncUnavailableReason {
 };
 ```
 
-#### <a name="parameters"></a>パラメーター
-エディット コンティニュを使用できない原因理由を特定 ENCUN_NONE なしです。
+## <a name="fields"></a>フィールド
+`ENCUN_NONE`\
+特定の理由がエディット コンティニュを使用できない原因です。
 
-ENCUN_INTEROP エディット コンティニュは相互運用機能の呼び出し中には使用できません。
+`ENCUN_INTEROP`\
+エディット コンティニュは相互運用機能の呼び出し中には使用できません。
 
-ENCUN_SQLCLR エディット コンティニュは共通言語ランタイム (CLR) を使用する SQL プロシージャの呼び出し中には使用できません。
+`ENCUN_SQLCLR`\
+エディット コンティニュは共通言語ランタイム (CLR) を使用する SQL プロシージャの呼び出し中には使用できません。
 
-ENCUN_MINIDUMP エディット コンティニュはミニ ダンプの処理中には使用できません。
+`ENCUN_MINIDUMP`\
+エディット コンティニュはミニ ダンプの処理中には使用できません。
 
-ENCUN_EMBEDDED エディット コンティニュは埋め込みコードを処理するときに、使用できません。
+`ENCUN_EMBEDDED`\
+エディット コンティニュは埋め込みコードを処理するときに、使用できません。
 
-ENCUN_ATTACH エディット コンティニュは使用できません、セッションに接続されていたため、デバッガーによって起動されません。
+`ENCUN_ATTACH`\
+エディット コンティニュを使用できないために、セッションが接続されていた、起動しないデバッガーによって。
 
-ENCUN_WIN64 エディット コンティニュは 64 ビット Windows コードの処理中には使用できません。
+`ENCUN_WIN64`\
+エディット コンティニュは 64 ビット Windows コードの処理中には使用できません。
 
 ## <a name="remarks"></a>Remarks
 この列挙体は内部使用のみで[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]します。 [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)と[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)カスタム ポートのサプライヤーによって実装されるメソッドは常に返す必要があります`E_NOTIMPL`します。

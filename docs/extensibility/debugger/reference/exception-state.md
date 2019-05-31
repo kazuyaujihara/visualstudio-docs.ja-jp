@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_STATE enumeration
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9c0c5ed3f4432deeb26e97ff21f6d89de9ee109
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8f05596b12151b3a40b87c6fc2f15659a38e3431
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720316"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337687"
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 例外の状態を指定します。
@@ -73,36 +76,51 @@ public enum enum_EXCEPTION_STATE {
 };
 ```
 
-## <a name="members"></a>メンバー
-EXCEPTION_NONE 例外で停止されません。
+## <a name="fields"></a>フィールド
+`EXCEPTION_NONE`\
+例外は停止されません。
 
-EXCEPTION_STOP_FIRST_CHANCE は、例外の最初の起動で停止します。 例外イベントを記述する場合、このフラグは、例外イベントでは、初回の例外イベントを示します。
+`EXCEPTION_STOP_FIRST_CHANCE`\
+例外の最初の実行を停止します。 例外イベントを記述する場合、このフラグは、例外イベントでは、初回の例外イベントを示します。
 
-EXCEPTION_STOP_SECOND_CHANCE は、例外の 2 つ目の起動で停止します。 例外イベントを記述する場合は、例外イベントでは、次の例外イベントを示します。
+`EXCEPTION_STOP_SECOND_CHANCE`\
+例外の 2 つ目の実行を停止します。 例外イベントを記述する場合は、例外イベントでは、次の例外イベントを示します。
 
-EXCEPTION_STOP_USER_FIRST_CHANCE は、ユーザー モード例外の最初の起動で停止します。 例外イベントを記述する場合は、例外イベントのユーザーの初回の例外イベントであることを示します。
+`EXCEPTION_STOP_USER_FIRST_CHANCE`\
+ユーザー モードの例外の最初の実行を停止します。 例外イベントを記述する場合は、例外イベントのユーザーの初回の例外イベントであることを示します。
 
-ユーザー モードの例外がキャッチされない場合、EXCEPTION_STOP_USER_UNCAUGHT が停止します。 例外イベントを記述する場合は、例外イベントのキャッチされないユーザー モード例外イベントであることを示します。
+`EXCEPTION_STOP_USER_UNCAUGHT`\
+ユーザー モードの例外がキャッチされない場合は停止します。 例外イベントを記述する場合は、例外イベントのキャッチされないユーザー モード例外イベントであることを示します。
 
-EXCEPTION_STOP_ALL は、すべての例外で停止します。 例外イベントを記述する場合は使用されません。
+`EXCEPTION_STOP_ALL`\
+すべての例外で停止します。 例外イベントを記述する場合は使用されません。
 
-EXCEPTION_CANNOT_BE_CONTINUED 例外イベントを記述する場合から例外を続行することはできませんを示します。
+`EXCEPTION_CANNOT_BE_CONTINUED`\
+例外イベントを記述する場合から例外を続行することはできませんを示します。
 
-EXCEPTION_CODE_SUPPORTED では、例外があることをサポートするコードを示します。 例外を表示するために使用
+`EXCEPTION_CODE_SUPPORTED`\
+例外にそれをサポートするコードがあることを示します。 例外を表示するために使用
 
-EXCEPTION_CODE_DISPLAY_IN_HEX では、例外コードを 16 進数で表示することを示します。 例外を表示するために使用されます。
+`EXCEPTION_CODE_DISPLAY_IN_HEX`\
+例外コードを 16 進数で表示することを示します。 例外を表示するために使用されます。
 
-EXCEPTION_JUST_MY_CODE_SUPPORTED では、例外コード JustMyCode をサポートしていることを示します。 例外を表示するために使用されます。
+`EXCEPTION_JUST_MY_CODE_SUPPORTED`\
+例外コード JustMyCode をサポートしていることを示します。 例外を表示するために使用されます。
 
-EXCEPTION_MANAGED_DEBUG_ASSISTANT では、マネージ コードのデバッガーが例外を処理することを示します。 指定しない場合、セット、既定のデバッガー、例外を処理します。 渡されます、 [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)メソッドで使用されていないと、 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)構造体。
+`EXCEPTION_MANAGED_DEBUG_ASSISTANT`\
+マネージ コードのデバッガーが例外を処理することを示します。 指定しない場合、セット、既定のデバッガー、例外を処理します。 渡されます、 [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)メソッドで使用されていないと、 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)構造体。
 
-EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT は廃止されたため、使用しないでください。
+`EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT`\
+廃止された、使用しないでください。
 
-EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT OBSOLETE, DO NOT USE.
+`EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT`\
+廃止された、使用しないでください。
 
-EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT は廃止されたため、使用しないでください。
+`EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT`\
+廃止された、使用しないでください。
 
-EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT OBSOLETE, DO NOT USE.
+`EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT`\
+廃止された、使用しないでください。
 
 ## <a name="remarks"></a>Remarks
 として使用される、`dwState`のメンバー、 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)構造については、何ができると、例外の状態を示します。

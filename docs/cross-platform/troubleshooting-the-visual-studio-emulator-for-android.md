@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 55b863d1bff16fb0170e749d00ebb212588b2dd3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ebbbd2eb0cf47763868a6c23ef2637bdd4009b2e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403039"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261051"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android のトラブルシューティング
 このトピックには、Visual Studio Emulator for Android の使用時に発生する可能性のある問題の解決に役立つ情報が含まれています。
@@ -143,7 +143,7 @@ ms.locfileid: "63403039"
 
 - ハードウェアの最小要件を満たしていることと、BIOS 設定が正しいことを確認します。
 
-   エミュレーターと Windows 8 Hyper-V には、第 2 レベルのアドレス変換 (SLAT) をサポートする 64 ビット プロセッサが必要です。 Intel では、本質的に Core i3、i5 または i7 プロセッサが必要です (または多くの Xeon のいずれか)。 AMD のチップの一覧は [こちら](http://support.amd.com/en-us)です。
+   エミュレーターと Windows 8 Hyper-V には、第 2 レベルのアドレス変換 (SLAT) をサポートする 64 ビット プロセッサが必要です。 Intel では、本質的に Core i3、i5 または i7 プロセッサが必要です (または多くの Xeon のいずれか)。 AMD のチップの一覧は [こちら](https://www.amd.com/en/support)です。
 
   1. コンピューターが [システム要件](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)を満たしていることを確認します。
 

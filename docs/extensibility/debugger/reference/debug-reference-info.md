@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REFERENCE_INFO structure
 ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c82e1d3894b9fa3ffbdffb5ab69c134ff73e0df7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c22ab1a7d0cb03f66455f76c1d9878a9df76604e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720290"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346143"
 ---
 # <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
 参照を記述します。
@@ -49,19 +52,26 @@ public struct DEBUG_REFERENCE_INFO {
 ```
 
 ## <a name="members"></a>メンバー
-フラグの組み合わせを dwFields A、 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)フィールドが記入を指定する列挙体。
+`dwFields`\
+フラグの組み合わせ、 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)フィールドが記入を指定する列挙体。
 
-bstrName ユーザーが指定した名前の[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)オブジェクト。
+`bstrName`\
+ユーザーが指定した名前、 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)オブジェクト。
 
-bstrType 参照は、書式設定された文字列として入力します。
+`bstrType`\
+書式設定された文字列として参照型。
 
-bstrValue 書式設定された文字列として参照値
+`bstrValue`\
+書式設定された文字列として参照値
 
-フラグの組み合わせを dwAttrib A、 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)デバッグ プロパティの属性のフラグを指定する列挙体。
+`dwAttrib`\
+フラグの組み合わせ、 [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)デバッグ プロパティの属性のフラグを指定する列挙体。
 
-dwRefType A 値から、 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)参照型が強いか弱いかどうかを指定する列挙体。
+`dwRefType`\
+値、 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)参照型が強いか弱いかどうかを指定する列挙体。
 
-m_pReference、 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)参照情報を指定するオブジェクト。
+`m_pReference`\
+[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)参照情報を指定するオブジェクト。
 
 ## <a name="remarks"></a>Remarks
 この構造体がへの呼び出しに渡される、 [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)情報を格納するメソッド。 リストの一部としてこの構造体が返されることも、 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)インターフェイスをさらへの呼び出しから返される、 [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)メソッド。

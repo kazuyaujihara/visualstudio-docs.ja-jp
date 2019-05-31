@@ -7,17 +7,17 @@ helpviewer_keywords:
 - buttons [Visual Studio], adding to Solution Explorer
 - Solution Explorer, adding buttons
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50b782beeb0496d781bcb6e9bd15f70278c4db73
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2cb5c0a8aac049b7d5ff0e79843724b87e4999e4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410163"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313540"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>ソリューション エクスプ ローラーのツールバーにコマンドを追加します。
 このチュートリアルでは、ボタンを追加する方法、**ソリューション エクスプ ローラー**ツールバー。
@@ -27,7 +27,7 @@ ms.locfileid: "63410163"
  メニュー、ツールバーのコマンドの詳細については、 *.vsct*ファイルを参照してください[コマンド、メニューのおよびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)します。
 
 > [!NOTE]
-> XML コマンド テーブルの使用 (*.vsct*) コマンド テーブル構成ではなくファイル (*.ctc*) ファイルを Vspackage でのメニューとコマンドの表示方法を定義します。 詳細については、次を参照してください。 [Visual Studio Command Table (します。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
+> XML コマンド テーブルの使用 ( *.vsct*) コマンド テーブル構成ではなくファイル ( *.ctc*) ファイルを Vspackage でのメニューとコマンドの表示方法を定義します。 詳細については、次を参照してください。 [Visual Studio Command Table (します。Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  Visual Studio 2015 以降、ダウンロード センターから Visual Studio SDK をインストールすることはできません。 これは Visual Studio のセットアップにオプション機能として含まれるようになりました。 また、後から VS SDK をインストールすることもできます。 より詳細な情報については 、[Visual Studio SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md) に関する記事を参照してください。

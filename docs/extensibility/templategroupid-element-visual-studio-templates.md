@@ -9,17 +9,17 @@ helpviewer_keywords:
 - TemplateGroupID element [Visual Studio Templates]
 - <TemplateGroupID> element [Visual Studio Templates]
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9219b764125727509807cc6f2b9fdf6400e97f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b4e0ccae38b79cf8efb4b7b426fb65ae909c5d5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432149"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316591"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 要素 (Visual Studio テンプレート)
 項目テンプレートを表示するプロジェクトの種類を指定します。 この要素は、重要な場合に[ShowByDefault (Visual Studio テンプレート)](../extensibility/showbydefault-visual-studio-templates.md)に設定されている`false`します。 ときに[ShowByDefault (Visual Studio テンプレート)](../extensibility/showbydefault-visual-studio-templates.md)に設定されている`true`、項目テンプレートはすべてのプロジェクト タイプで使用できます。
@@ -55,7 +55,7 @@ ms.locfileid: "62432149"
 ## <a name="remarks"></a>Remarks
  `TemplateGroupID` は要素です。
 
- 値、`TemplateGroupID`要素は、プロジェクト システムの登録と使用 (hkey_local_machine \software\microsoft\visualstudio\\*\<バージョン番号 >* \Projects\\)フィルター テンプレートに表示される、**新しい項目の追加** ダイアログ ボックス。
+ 値、`TemplateGroupID`要素は、プロジェクト システムの登録と使用 (hkey_local_machine \software\microsoft\visualstudio\\ *\<バージョン番号 >* \Projects\\)フィルター テンプレートに表示される、**新しい項目の追加** ダイアログ ボックス。
 
 |Visual C++ の値|説明|
 |------------------------|-------------|

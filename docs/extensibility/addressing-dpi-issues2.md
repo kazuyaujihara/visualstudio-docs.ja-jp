@@ -3,17 +3,17 @@ title: DPI Issues2 をアドレス指定 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e46ada7a4e71c5d84cbb28d86f1712bbeca6dce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2b440ff34a5c1f2c60b8874ba56266b636afde3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892060"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352261"
 ---
 # <a name="address-dpi-issues"></a>アドレス DPI 問題
 「高解像度」画面には、デバイス数が増加が付属します。 通常、これらの画面には、200 を超えるピクセル/インチ (ppi) があります。 これらのコンピューター上のアプリケーションの操作は、コンテンツをデバイスの通常の表示までの距離にあるコンテンツを表示するためのニーズに合わせてスケール アップする必要があります。 2014 年の時点では、高密度ディスプレイの主なターゲットはモバイル コンピューティング デバイス (タブレットやクラムシェル ラップトップ、携帯電話です)。
@@ -120,7 +120,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 
 DPI のヘルパー関数は、Visual Studio 環境内で実行されるマネージ コードからアクセスします。
 
-- 使用中のプロジェクトでは、シェル MPF の最新バージョンを参照する必要があります。 例:
+- 使用中のプロジェクトでは、シェル MPF の最新バージョンを参照する必要があります。 例えば:
 
     ```csharp
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />
@@ -175,7 +175,7 @@ Visual Studio shell は、既に最上位ウィンドウとダイアログ ボ�
 
 手順 1: 200%、300%、NearestNeighbor を使用するようにイメージを prescale します。
 
-バインディング、または XAML マークアップ拡張機能の適用にコンバーターを使用してイメージを prescale します。 例:
+バインディング、または XAML マークアップ拡張機能の適用にコンバーターを使用してイメージを prescale します。 例えば:
 
 ```xaml
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08c30f723c6dbdb7359b1fd1d7648a38e71ab161
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dfa3bfa86d39bcd430d96c3d71f192e9a69a9400
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428814"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322424"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>従来の言語サービスでのコード スニペットのサポート
 コード スニペットは、ソース ファイルに挿入するコードの一部です。 スニペット自体とは、一連のフィールドの XML ベースのテンプレートです。 これらのフィールドには、スニペットが挿入され、スニペットを挿入するコンテキストに応じて異なる値を持つことができますが強調表示されます。 スニペットの挿入後にすぐに、言語サービスは、スニペットを書式設定できます。
@@ -50,7 +50,7 @@ ms.locfileid: "63428814"
 
  通常は、スニペット テンプレート ファイルが格納される 2 つの場所があります。お使いの言語がインストールされている 1) および 2) のユーザーのフォルダー。 これらの場所はレジストリに追加、これを Visual Studio**コード スニペット マネージャー**スニペットを見つけることができます。 ユーザーのフォルダーには、ユーザーによって作成されたスニペットを格納します。
 
- 次のようなインストールされているスニペット テンプレート ファイルの一般的なフォルダー レイアウト: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets します。
+ 次のようなインストールされているスニペット テンプレート ファイルの一般的なフォルダー レイアウト: *[InstallRoot]* \\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets します。
 
  *[InstallRoot]* でお使いの言語がインストールされているフォルダーです。
 
@@ -58,7 +58,7 @@ ms.locfileid: "63428814"
 
  *[LCID]* はロケール ID です。 これは、スニペットのどのローカライズ版格納されます。 たとえば、1033 の場合は、英語のロケール ID のため *[LCID]* 1033 は置き換えられます。
 
- 1 つのファイルを指定する必要があり、SnippetsIndex.xml または ExpansionsIndex.xml (任意の有効なファイル名 .xml で終わるを使用することができます) と通常呼ばれる、インデックス ファイルです。 このファイルは通常に格納されている、 *[InstallRoot]*\\ *[TestLanguage]* フォルダー スニペットのフォルダーだけでなく、言語 ID の正確な場所と言語の GUID を指定しますスニペットを使用するサービスです。 インデックス ファイルの正確なパスは、「のレジストリ エントリをインストールする」で後述するようレジストリに配置されます。 SnippetsIndex.xml ファイルの例を次に示します。
+ 1 つのファイルを指定する必要があり、SnippetsIndex.xml または ExpansionsIndex.xml (任意の有効なファイル名 .xml で終わるを使用することができます) と通常呼ばれる、インデックス ファイルです。 このファイルは通常に格納されている、 *[InstallRoot]* \\ *[TestLanguage]* フォルダー スニペットのフォルダーだけでなく、言語 ID の正確な場所と言語の GUID を指定しますスニペットを使用するサービスです。 インデックス ファイルの正確なパスは、「のレジストリ エントリをインストールする」で後述するようレジストリに配置されます。 SnippetsIndex.xml ファイルの例を次に示します。
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>

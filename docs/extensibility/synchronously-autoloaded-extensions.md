@@ -3,17 +3,17 @@ title: 同期的に自動的に読み込む拡張機能
 ms.date: 02/16/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23a19ad42f665f471274ee75f328056dd55b17d
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 8b18642269326c516c2af0baef57cb306f60ae6a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037102"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316713"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>同期的に自動的に読み込む拡張機能
 

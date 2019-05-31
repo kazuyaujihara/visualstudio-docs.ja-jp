@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3d983da91fadbb0eb78eab6d0fa5bb02cca193
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 005765cb66a23f2efcf0c8defb323120d79bef60
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910008"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314558"
 ---
 # <a name="create-project-types"></a>プロジェクトの種類を作成します。
 拡張する[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]を新しいプロジェクトの種類を作成します。 新しいプロジェクトの種類を作成するには、いくつかの概念を理解し、いくつかの手順を完了する必要があります。 次のトピックでは、プロジェクトの種類を作成する方法の概要を説明します。
@@ -26,7 +26,7 @@ ms.locfileid: "62910008"
 
  項目、プロジェクト ファイルの永続化、および新しいプロジェクトの種類を作成する前に作成する必要があるコミットメント メカニック設計上の決定について説明します。
 
-- [チェックリスト:新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [チェックリスト: 新しいプロジェクトの種類を作成します。](../../extensibility/internals/checklist-creating-new-project-types.md)
 
  コードの編集しコンパイル、ビルド、デバッグ、およびプロジェクト内のアプリケーションの配置などのプログラミング タスクをサポートする新しいプロジェクトの種類を作成する場合の手順の概要を示します。
 

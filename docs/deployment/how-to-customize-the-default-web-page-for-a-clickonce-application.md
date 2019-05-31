@@ -1,5 +1,5 @@
 ---
-title: '方法: ClickOnce アプリケーションの既定の Web ページをカスタマイズする |Microsoft Docs'
+title: ClickOnce アプリケーションの既定の web ページをカスタマイズします。
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e132ea3592f18aad9b7b96bb32e8d7b6dac712cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 66d304be4e2435b6ec1ecafe8aeb473b83fa1033
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406975"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263331"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションの既定の Web ページをカスタマイズする
 ClickOnce アプリケーションの Web を発行するときに、Web ページが自動的に生成され、アプリケーションと共に発行します。 既定のページには、アプリケーションとアプリケーションのインストール、インストールの前提条件、または MSDN のヘルプにアクセスするリンクの名前が含まれています。
@@ -45,7 +45,7 @@ ClickOnce アプリケーションの Web を発行するときに、Web ペー�
 
 3. 必要に応じて、ページをカスタマイズし、保存します。
 
-4. 任意。 Visual Studio の発行のカスタマイズされた Web ページの上書きを防ぐためにオフにします。**後に配置 Web ページを自動的に生成すべて発行**で、**発行オプション** ダイアログ ボックス。
+4. 省略可能です。 Visual Studio の発行のカスタマイズされた Web ページの上書きを防ぐためにオフにします。**後に配置 Web ページを自動的に生成すべて発行**で、**発行オプション** ダイアログ ボックス。
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)

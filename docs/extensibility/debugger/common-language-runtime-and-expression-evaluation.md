@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6fdbdcdf292d90fc63758c2b7d183225e63a850
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 803dbb75a5cc9ad2b4fc81310c3b564994fea734
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411314"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351293"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>共通言語ランタイムよぶ式の評価
 > [!IMPORTANT]
@@ -29,7 +29,7 @@ ms.locfileid: "63411314"
 
  式が解析されている各データ オブジェクトを評価するシンボル プロバイダー (SP) が呼び出されます。 たとえば、"A"は定義の両方で、質問の 1 つ以上のメソッド"A するでしょうか"。 A の値を確認できる前に応答する必要があります。 SP によって返される応答は「5 番目のスタック フレーム上の 3 番目の項目」のようなまたは「静的メモリの先頭を越える 50 バイトである A は、このメソッドに割り当てられた」。
 
- MSIL を生成して、プログラム自体、だけでなく CLR コンパイラもプログラム データベースに書き込まれる非常にわかりやすいのデバッグ情報を生成 (*.pdb*) ファイル。 独自の言語コンパイラでは、CLR コンパイラと同じ形式でのデバッグ情報を生成、としては、CLR の SP をという名前のデータ オブジェクトの言語のことを識別するためにできます。 名前付きのデータ オブジェクトを特定したら、EE は、そのオブジェクトの値を保持するメモリ領域にへデータ オブジェクトを関連付ける (またはバインド) にバインダー オブジェクトを使用します。 デは、取得、またはデータ オブジェクトの新しい値を設定します。
+ MSIL を生成して、プログラム自体、だけでなく CLR コンパイラもプログラム データベースに書き込まれる非常にわかりやすいのデバッグ情報を生成 ( *.pdb*) ファイル。 独自の言語コンパイラでは、CLR コンパイラと同じ形式でのデバッグ情報を生成、としては、CLR の SP をという名前のデータ オブジェクトの言語のことを識別するためにできます。 名前付きのデータ オブジェクトを特定したら、EE は、そのオブジェクトの値を保持するメモリ領域にへデータ オブジェクトを関連付ける (またはバインド) にバインダー オブジェクトを使用します。 デは、取得、またはデータ オブジェクトの新しい値を設定します。
 
  独自のコンパイラは、CLR が呼び出すことによってデバッグ情報を提供できます、`ISymbolWriter`インターフェイス (.NET Framework 名前空間で定義されている`System.Diagnostics.SymbolStore`)。 独自のコンパイラが MSIL にコンパイルして、これらのインターフェイスを使用してデバッグ情報を書き込み、によって CLR DE と SP 使用できます。 これには、独自の言語での Visual Studio IDE に統合が大幅に簡略化します。
 

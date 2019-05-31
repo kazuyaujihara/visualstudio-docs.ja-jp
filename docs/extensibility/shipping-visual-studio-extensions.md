@@ -7,17 +7,17 @@ helpviewer_keywords:
 - deployment, VSIX
 - satellite DLLs, in VSIX packages
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55c85a11d8bfba90f142a82efcd6d78fb0122f22
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433020"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338380"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Visual Studio 拡張機能の配布
 拡張機能の開発が完了したらは、他のコンピューターにインストールして、友人や同僚と共有または Visual Studio Marketplace に発行できます。 このセクションで発行し、拡張機能を維持するために行う必要があるすべての事項を説明します。 .vsix ファイル、公開、ローカライズ、および更新を使用します。
@@ -53,8 +53,8 @@ ms.locfileid: "62433020"
 |[VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)|VSIX パッケージのコンポーネントについて説明します。|
 |[VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)|パッケージ化し、拡張機能を公開する方法についての詳細な手順について説明します。|
 |[VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)|Extension.vsixlangpack ファイルを使用して、インストール プロセスのローカライズされたテキストを提供する方法について説明します。|
-|[方法: 拡張機能を更新します。](../extensibility/how-to-update-a-visual-studio-extension.md)|システムに拡張機能を更新する方法と更新プログラムを既存の Visual Studio 拡張機能をデプロイする方法について説明します。|
-|[方法: VSIX パッケージへの依存関係を追加します。](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|VSIX 展開パッケージへの参照を追加する方法について説明します。|
+|[方法: 拡張機能を更新する](../extensibility/how-to-update-a-visual-studio-extension.md)|システムに拡張機能を更新する方法と更新プログラムを既存の Visual Studio 拡張機能をデプロイする方法について説明します。|
+|[方法: VSIX パッケージへの依存関係の追加](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|VSIX 展開パッケージへの参照を追加する方法について説明します。|
 |[Windows インストーラーの配置に関する拡張機能を準備する](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Windows インストーラーで、拡張機能をデプロイする方法について説明します。|
 |[VSIX パッケージの署名](../extensibility/signing-vsix-packages.md)|VSIX パッケージに署名する方法をについて説明します。|
 |[プライベート ギャラリー](../extensibility/private-galleries.md)|拡張機能のプライベート ギャラリーを作成する方法について説明します。|

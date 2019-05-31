@@ -1,5 +1,5 @@
 ---
-title: '[データ ソース] ウィンドウからドラッグしたときに作成されるコントロールを設定する'
+title: データ ソース ウィンドウからドラッグするときに作成するコントロールを設定します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f43219cc5329b46cdaba052a9f46709ee0af406f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79ed1bd03e90a92d8246c5f51a6ad64d52758167
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565985"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260954"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>[データ ソース] ウィンドウからドラッグしたときに作成されるコントロールを設定する
 
@@ -41,7 +41,7 @@ ms.locfileid: "62565985"
 
 3. 項目のドロップダウン メニューをクリックし、メニューの次の項目のいずれかをクリックします。
 
-    - 各データ フィールドを個別のコントロールに表示するには、**[詳細]** をクリックします。 データ項目をデザイナーにドラッグすると、このアクションにより、親のデータ テーブルまたはオブジェクトの列またはプロパティごとに異なるデータ バインド コントロールが作成され、各コントロールのラベルが作成されます。
+    - 各データ フィールドを個別のコントロールに表示するには、 **[詳細]** をクリックします。 データ項目をデザイナーにドラッグすると、このアクションにより、親のデータ テーブルまたはオブジェクトの列またはプロパティごとに異なるデータ バインド コントロールが作成され、各コントロールのラベルが作成されます。
 
     - すべてのデータを単一のコントロールに表示するには、リストで別のコントロールを選択します。たとえば、WPF アプリケーションでは **[DataGrid]** または **[List]** を選択し、Windows フォーム アプリケーションでは **[DataGridView]** を選択します。
 

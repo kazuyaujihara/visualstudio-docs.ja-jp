@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_INFO structure
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c5863c9ebb790ebcbc267f62cc2a0a1fd14603c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5c4fc29aee8d14e9c73dcf5665eff3ea611985d1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686263"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337792"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
 例外またはデバッグ中のプログラムによってスローされた実行時エラーについて説明します。
@@ -47,17 +50,23 @@ public struct EXCEPTION_INFO {
 ```
 
 ## <a name="members"></a>メンバー
-pProgram、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)例外が発生したプログラムを表すオブジェクト。
+`pProgram`\
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)例外が発生したプログラムを表すオブジェクト。
 
-bstrProgramName プログラムの名前で、例外が発生しました。
+`bstrProgramName`\
+例外が発生したプログラムの名前。
 
-bstrExceptionName 例外の名前。
+`bstrExceptionName`\
+例外の名前。
 
-dwCode 例外または実行時エラーの識別コード。
+`dwCode`\
+例外または実行時エラーの識別コード。
 
-dwState A 値から、 [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)例外の状態を定義する列挙です。
+`dwState`\
+値、 [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)例外の状態を定義する列挙です。
 
-guidType GUID 言語識別子か、`guidLang`または`guidEng`します。
+`guidType`\
+GUID の言語識別子か、`guidLang`または`guidEng`します。
 
 ## <a name="remarks"></a>Remarks
 この構造体がパラメーターとして渡される、 [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)と[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)メソッド。 この構造体に渡されることも、 [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)情報を格納するメソッド。

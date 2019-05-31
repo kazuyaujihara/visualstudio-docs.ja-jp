@@ -1,5 +1,5 @@
 ---
-title: '方法: コード分析のチェックイン ポリシーを使用して保守が容易なコードを適用する'
+title: コード分析チェックイン ポリシーを使用して、
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7139c952b40957a564fcd4074b1c931817dfb851
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0924d3c7b6f39e4ec026a77ee8e0418361e311ba
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815830"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260921"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>方法: コード分析チェックイン ポリシーを保守しやすいコードを適用します。
 

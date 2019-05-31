@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - ASSEMBLYLOCRESOLUTION enumeration
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06eb23c14636b72004e1089f8681adc37d68ae11
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0a229fc7f0a59f8b5ca5d2d71a6d8bf0a01f76b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710254"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327381"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 アセンブリがある場所を指定します。
@@ -43,14 +46,18 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 };
 ```
 
-## <a name="members"></a>メンバー
-ALR_NAME アセンブリは、現在の名前空間にあります。
+## <a name="fields"></a>フィールド
+`ALR_NAME`\
+アセンブリは、現在の名前空間にあります。
 
-ALR_USERDIR アセンブリについては、ユーザーのディレクトリにあります。
+`ALR_USERDIR`\
+アセンブリは、ユーザー ディレクトリ内にあります。
 
-ALR_SHAREDDIR アセンブリは共有ディレクトリにあります。
+`ALR_SHAREDDIR`\
+アセンブリは共有ディレクトリにあります。
 
-ALR_REMOTEDIR アセンブリは、リモート ディレクトリ内にあります。
+`ALR_REMOTEDIR`\
+アセンブリは、リモート ディレクトリ内にあります。
 
 ## <a name="remarks"></a>Remarks
 これらの値がによって返される、 [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)と[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)メソッド。

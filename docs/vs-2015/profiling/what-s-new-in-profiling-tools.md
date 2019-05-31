@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ef76180bef1b643bb1f3ba3255b5b46dafdca272
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 46eb6585bffb96397d73a03f142bd7b6b4779f15
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694997"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261636"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>プロファイル ツールの新機能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Visual Studio 2015 Update 1 のデバッグと診断の新機能については�
 ## <a name="whats-new-in-update-1"></a>Update 1 の新機能  
  Visual Studio 2015 Update 1 以降、デバッガーを終了することなく CPU 使用率の関数ごとの内訳を確認できます。 詳細については、「 [Profile Your CPU in the Debugger in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx)」を参照してください。  
   
- **[診断ツール]** ウィンドウの **[イベント]** タブに検索とフィルターのオプションを追加しました。詳細については、「[デバッガーに統合されたプロファイリング](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859)」と「[診断ツール ウィンドウの イベント タブの検索とフィルター処理](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)」を参照してください。  
+ **[診断ツール]** ウィンドウの **[イベント]** タブに検索とフィルターのオプションを追加しました。詳細については、「[デバッガーに統合されたプロファイリング](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger)」と「[診断ツール ウィンドウの イベント タブの検索とフィルター処理](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)」を参照してください。  
   
 ## <a name="diagnostics-with-debugging-ui-and-hotkey-changes"></a>デバッグ UI およびホット キーの変更を使用した診断  
  新しい **[診断ツール]** ウィンドウでのデバッグ中に診断ツールを実行できます。 このウィンドウは自動的に表示されますが、新しいメニュー項目 **[診断ツールの表示]** (キーボード ショートカット **Ctrl+Alt+F2**) で開くこともできます。  
   
 ## <a name="diagnostics-without-debugging-ui-and-hotkey-changes"></a>デバッグ UI およびホット キーの変更を使用しない診断  
- デバッグなしで診断を実行するには、**[デバッグ]、[デバッグなしで診断ツールを開始]** または **[デバッグ]、[プロファイラー]、[パフォーマンス プロファイラー]...** を使用します。Visual Studio 2013 では、これは、 **[分析]、[パフォーマンスと診断]** または **[デバッグ]、[パフォーマンスと診断]** にありました。  
+ デバッグなしで診断を実行するには、 **[デバッグ]、[デバッグなしで診断ツールを開始]** または **[デバッグ]、[プロファイラー]、[パフォーマンス プロファイラー]...** を使用します。Visual Studio 2013 では、これは、 **[分析]、[パフォーマンスと診断]** または **[デバッグ]、[パフォーマンスと診断]** にありました。  
   
  **パフォーマンス エクスプローラー** は今では **[デバッグ]、[プロファイラー]、[パフォーマンス エクスプローラー]** にあります。 Visual Studio 2013 では、 **[分析]、[プロファイラー]** にありました。  
   

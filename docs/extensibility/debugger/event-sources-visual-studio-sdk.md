@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dca1ce2504d557050adc1cb015eb7c6da056c70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 96ab4fc69cab50bc5554d626d9c2ac86d49283f4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925695"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315311"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>イベント ソース (Visual Studio SDK)
 イベントの 2 つのソースがあります。 デバッグ エンジン (DE) とセッション デバッグ マネージャー (SDM)。 ドイツから送信されるイベント NULL 以外のエンジンを持ち、SDM から送信されるイベントが NULL のエンジンを持ちます。

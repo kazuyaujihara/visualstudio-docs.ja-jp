@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_SCOPE enumeration
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 446b0eec7593457ed2cd384eb9a6bca383094e62
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 724e32f83cfec31c2bacdab661407983af87efe6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684495"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318242"
 ---
 # <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
 [逆アセンブル] ストリームのスコープを指定します。
@@ -43,14 +46,18 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 };
 ```
 
-## <a name="members"></a>メンバー
-DSS_HUGE 指定、コードのコンテキストを逆アセンブル クライアントよりも多い出力を生成する通常ならば 1 回の呼び出しで取得します。
+## <a name="fields"></a>フィールド
+`DSS_HUGE`\
+コードのコンテキストを逆アセンブルする生成クライアントは、1 回の呼び出しで取得するが通常よりも多くの出力を指定します。
 
-DSS_FUNCTION では、コードのコンテキストに含まれる関数を逆アセンブルすることを指定します。 によって返されるときに混合モードのストリームが、関数を表すことを指定、 [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)メソッド。
+`DSS_FUNCTION`\
+コードのコンテキストに含まれる関数を逆アセンブルすることを指定します。 によって返されるときに混合モードのストリームが、関数を表すことを指定、 [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)メソッド。
 
-によって返される DSS_MODULE とき、`IDebugDisassemblyStream2::GetScope`メソッドでは、混合モードのストリームがモジュールを表すことを指定します。
+`DSS_MODULE`\
+によって返されるときに、`IDebugDisassemblyStream2::GetScope`メソッドでは、混合モードのストリームがモジュールを表すことを指定します。
 
-アドレス空間全体の DSS_ALL 指定逆アセンブリ
+`DSS_ALL`\
+アドレス空間全体の逆アセンブリを指定します。
 
 ## <a name="remarks"></a>Remarks
 引数として渡される、 [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)メソッドによって返されると、 [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)メソッド。

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BPREQI_FIELDS enumeration
 ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25b95e2934de9d09ef9541162b05920a04f645bd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 757b8bfeeed2a7d75f3a0b4203b80b464e5b39fa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723046"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350508"
 ---
 # <a name="bpreqifields"></a>BPREQI_FIELDS
 ブレークポイントの要求について取得する情報を指定します。
@@ -63,34 +66,48 @@ public enum enum_BPREQI_FIELDS {
 };
 ```
 
-## <a name="members"></a>メンバー
-BPREQI_BPLOCATION 初期化/使用、 `bpLocation` (ブレークポイントの位置) フィールドの[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)または[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体。
+## <a name="fields"></a>フィールド
+`BPREQI_BPLOCATION`\
+初期化/使用、 `bpLocation` (ブレークポイントの位置) フィールドの[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)または[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体。
 
-BPREQI_LANGUAGE 初期化/使用、`guidLanguage`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI_LANGUAGE`\
+初期化/使用、`guidLanguage`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI_PROGRAM 初期化/使用、`pProgram`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI_PROGRAM`\
+初期化/使用、`pProgram`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI_PROGRAMNAME 初期化/使用、`bstrProgramName`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI_PROGRAMNAME`\
+初期化/使用、`bstrProgramName`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI_THREAD 初期化/使用、`pThread`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI_THREAD`\
+初期化/使用、`pThread`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI_THREADNAME 初期化/使用、`bstrThreadName`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI_THREADNAME`\
+初期化/使用、`bstrThreadName`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI_PASSCOUNT 初期化/使用、`bpPassCount`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI_PASSCOUNT`\
+初期化/使用、`bpPassCount`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI_CONDITION 初期化/使用、 `bpCondition` (ブレークポイント条件) フィールドの`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI_CONDITION`\
+初期化/使用、 `bpCondition` (ブレークポイント条件) フィールドの`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI_FLAGS 初期化/使用、`dwFlags`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI_FLAGS`\
+初期化/使用、`dwFlags`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI_ALLOLDFIELDS 初期化/使用すべてのフィールドの`BP_REQUEST_INFO`構造体。
+`BPREQI_ALLOLDFIELDS`\
+すべてのフィールドの初期化/使用しての`BP_REQUEST_INFO`構造体。
 
-BPREQI_VENDOR 初期化/使用、`guidVendor`フィールド`BP_REQUEST_INFO2`構造体。
+`BPREQI_VENDOR`\
+初期化/使用、`guidVendor`フィールド`BP_REQUEST_INFO2`構造体。
 
-BPREQI_CONSTRAINT 初期化/使用、`bstrConstraint`フィールド`BP_REQUEST_INFO2`構造体。
+`BPREQI_CONSTRAINT`\
+初期化/使用、`bstrConstraint`フィールド`BP_REQUEST_INFO2`構造体。
 
-BPREQI_TRACEPOINT 初期化/使用、`bstrTracepoint`フィールド`BP_REQUEST_INFO2`構造体。
+`BPREQI_TRACEPOINT`\
+初期化/使用、`bstrTracepoint`フィールド`BP_REQUEST_INFO2`構造体。
 
-フィールドの BPREQI_ALLFIELDS がすべてを指定します、`BP_REQUEST_INFO2`構造体。
+`BPREQI_ALLFIELDS`\
+すべてのフィールドを指定します、`BP_REQUEST_INFO2`構造体。
 
 ## <a name="remarks"></a>Remarks
 引数として渡される、 [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)と[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)のどのフィールドを指定する方法、 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)と[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体が初期化されるは。

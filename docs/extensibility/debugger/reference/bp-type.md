@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2fab9a97ef944b153287a58671193324aecf52c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 69774df555c4258ef36a65a3a18e6ce3fccbe555
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711476"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350576"
 ---
 # <a name="bptype"></a>BP_TYPE
 ブレークポイントにコードの場所にし、データの場所ですか、別の種類のブレークポイントは、かどうかを指定します。
@@ -43,14 +46,18 @@ public enum enum_BP_TYPE {
 };
 ```
 
-## <a name="members"></a>メンバー
-BPT_NONE はブレークポイントの種類を指定しません。
+## <a name="fields"></a>フィールド
+`BPT_NONE`\
+ブレークポイントの種類を指定しません。
 
-BPT_CODE には、コードのブレークポイントを指定します。
+`BPT_CODE`\
+コードのブレークポイントを指定します。
 
-BPT_DATA では、データ ブレークポイントを指定します。
+`BPT_DATA`\
+データ ブレークポイントを指定します。
 
-コードでもデータ ブレークポイントは入力 BPT_SPECIAL を指定します。 この型は非推奨し、は使用できません。
+`BPT_SPECIAL`\
+ブレークポイントは、コードでもデータ型を指定します。 この型は非推奨し、は使用できません。
 
 ## <a name="remarks"></a>Remarks
 パラメーターとして渡される、 [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)と[GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)メソッド。

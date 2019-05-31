@@ -10,17 +10,17 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 648bf8baebc8a0a2f42c69bc698d9f2edd729615
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62c6011d1a04b60d1bd0cc538e9560d8977f9799
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907353"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344668"
 ---
 # <a name="localize-menu-commands"></a>メニュー コマンドをローカライズします。
 ローカライズされたを作成してメニューやツールバーのローカライズされたテキストを行うことができます *.vsct*ファイルし、ローカライズ *.resx*に組み込むこと、VSPackage とし、プロジェクト ファイルの更新ファイル、変更します。
@@ -74,7 +74,7 @@ ms.locfileid: "62907353"
    ```
 
 ## <a name="localize-other-text-resources"></a>その他のテキストのリソースをローカライズします。
- コマンド名以外の文字列リソースがリソースで定義されている (*.resx*) ファイル。
+ コマンド名以外の文字列リソースがリソースで定義されている ( *.resx*) ファイル。
 
 1. 名前を変更*VSPackage.resx*に*VSPackage.en US.resx*します。
 

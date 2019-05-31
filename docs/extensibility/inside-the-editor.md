@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 155d760ee546b1e35b733a00ac9a67722742f9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861766"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340801"
 ---
 # <a name="inside-the-editor"></a>エディター内で
 
@@ -108,7 +108,7 @@ A<xref:Microsoft.VisualStudio.Text.SnapshotPoint>スナップショット内の�
 
 #### <a name="spans-and-normalizedspancollections"></a>スパンと NormalizedSpanCollections
 
-A<xref:Microsoft.VisualStudio.Text.Span>テキスト スナップショット内のテキストの範囲に適用できる間隔を表します。 スナップショットの位置は、範囲は 0 を含む任意の位置に起動できるように、0 から始まる。 `End`範囲のプロパティは、の合計に等しい、`Start`プロパティとその`Length`プロパティ。 A`Span`によってインデックスが設定された文字を含まない、`End`プロパティ。 開始のあるスパンなど = 5 と長さ = 3 はエンド = 8、5、6、および 7 の位置にある文字が含まれています。 このスパンの表記法は 5..8) です。
+A<xref:Microsoft.VisualStudio.Text.Span>テキスト スナップショット内のテキストの範囲に適用できる間隔を表します。 スナップショットの位置は、範囲は 0 を含む任意の位置に起動できるように、0 から始まる。 `End`範囲のプロパティは、の合計に等しい、`Start`プロパティとその`Length`プロパティ。 A`Span`によってインデックスが設定された文字を含まない、`End`プロパティ。 開始のあるスパンなど = 5 と長さ = 3 はエンド = 8、5、6、および 7 の位置にある文字が含まれています。 このスパンの表記法が [5..8) します。
 
 位置がある、共通の終了位置を含む場合、2 つの範囲が交差します。 交差部分ではそのため、[3, 5) と [2, 7) は [3, 5) との交差部分 [3, 5) と [5, 7) は [5, 5)。 (注意 [5, 5) は空の範囲)。
 

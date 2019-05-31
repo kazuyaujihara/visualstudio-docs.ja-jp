@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web site projects
 ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff59be63ef1d6e7120842c936dd64dbb77d7ed70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9f6e287a2cd91b0a5eb0d04130627faa787ccac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907906"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323177"
 ---
 # <a name="web-site-support"></a>Web サイト サポート
 Web サイトのプロジェクト システムでは、Web プロジェクトを作成するプロジェクト システムです。 Web プロジェクトは、Web アプリケーションを作成します。 Web サイト プロジェクトでは、コードに関連付けられている各 Web ページの 1 つの実行可能ファイルを生成します。 場合は/App_Code フォルダー内のソース コード ファイルから追加の実行可能ファイルが生成されます。

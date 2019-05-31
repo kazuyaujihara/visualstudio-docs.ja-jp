@@ -3,17 +3,17 @@ title: Visual Studio の色の共有 |Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e873250488bff50519cc12060841110325a48e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8b36b7c123f4da9ca3ab7a6f33a972345cdf70e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430231"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310775"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio の共有の色
 共通の Visual Studio シェル要素を使用する UI を設計するか、インターフェイス要素に同様の機能と一致するかは、パッケージ定義ファイルで既存のトークン名を使用して、選択し、色を割り当てます。 これにより、UI が Visual Studio 環境全体で一貫性を保ち、テーマが追加された場合や更新された場合に自動的に更新されるようになります。
@@ -582,7 +582,7 @@ ms.locfileid: "63430231"
 | スクロール バー | `Environment.ScrollBarBackground` |
 | 前景 (つまみ) | `Environment.ScrollBarThumbMouseOverBackground` |
 
-*スクロール バー: 状態の押されました。**
+*スクロール バー: 状態の押されました。* *
 
 ![押されたスクロール バー](../../extensibility/ux-guidelines/media/0303-145_scrollbarpressed.png "0303 145_ScrollbarPressed")<br />スクロール バーを押す
 

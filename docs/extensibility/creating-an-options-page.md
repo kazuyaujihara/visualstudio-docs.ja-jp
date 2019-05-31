@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0b8108470d5f9f14c76e422591a536648b5485e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891020"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350988"
 ---
 # <a name="create-an-options-page"></a>オプション ページを作成します。
 
@@ -247,7 +247,7 @@ ms.locfileid: "62891020"
 
      このコードは呼び出して<xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A>を作成または取得、`OptionPageGrid`インスタンス。 `OptionPageGrid` 呼び出し<xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A>オプションでは、パブリック プロパティを読み込めません。
 
-2. という名前のカスタム コマンド項目テンプレートを追加するようになりました**MyToolsOptionsCommand**値を表示します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#** > **機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して*MyToolsOptionsCommand.cs*します。
+2. という名前のカスタム コマンド項目テンプレートを追加するようになりました**MyToolsOptionsCommand**値を表示します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#**  > **機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して*MyToolsOptionsCommand.cs*します。
 
 3. *MyToolsOptionsCommand*ファイルで、コマンドの本文を置換`ShowMessageBox`を次のメソッド。
 

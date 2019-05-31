@@ -1,20 +1,21 @@
 ---
-title: カスタム プロジェクトと項目テンプレートの Visual Studio 2017 のアップグレード |Microsoft Docs
+title: Visual Studio 2017 用のカスタム プロジェクトと項目テンプレートをアップグレードします。
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9302ae3119bceb466e3d681036753bd8237cbeae
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434215"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316331"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>カスタム プロジェクトと項目テンプレートの Visual Studio 2017 をアップグレードします。
 
@@ -26,7 +27,7 @@ VSIX 拡張機能の一部としてプロジェクトや項目テンプレート
 
 ## <a name="template-scanning"></a>テンプレートのスキャン
 
-Visual Studio の以前のバージョンで**devenv/setup**または**devenv/installvstemplates**プロジェクトと項目テンプレートを検索するローカル ディスクをスキャンします。 Visual Studio 2017 以降はスキャン ユーザー レベルの場所に対してのみ実行されます。 ユーザー レベルの既定の場所は **%USERPROFILE%\Documents\\< Visual Studio バージョン\>\Templates\\**します。 この場所はによって生成されたテンプレートの使用、**プロジェクト** > **テンプレートをエクスポートしています.** コマンドの場合、**自動的に Visual Studio にテンプレートをインポート**ウィザードでオプションを選択します。
+Visual Studio の以前のバージョンで**devenv/setup**または**devenv/installvstemplates**プロジェクトと項目テンプレートを検索するローカル ディスクをスキャンします。 Visual Studio 2017 以降はスキャン ユーザー レベルの場所に対してのみ実行されます。 ユーザー レベルの既定の場所は **%USERPROFILE%\Documents\\< Visual Studio バージョン\>\Templates\\** します。 この場所はによって生成されたテンプレートの使用、**プロジェクト** > **テンプレートをエクスポートしています.** コマンドの場合、**自動的に Visual Studio にテンプレートをインポート**ウィザードでオプションを選択します。
 
 その他 (非ユーザー) の場所、場所と、テンプレートの他の特性を指定する manifest(.vstman) ファイルを含める必要があります。 テンプレートを使用している .vstemplate ファイルと共に .vstman ファイルが生成されます。 .Vsix を使用して、拡張機能をインストールする場合は、Visual Studio 2017 で拡張機能を再コンパイルしてこれを実行できます。 .Msi を使用する場合、変更を手動で行う必要があります。 これらの変更を行う必要があるものの一覧は、次を参照してください。**と共に拡張機能のインストールのアップグレードをします。MSI**後でこのページ。
 
@@ -34,7 +35,7 @@ Visual Studio の以前のバージョンで**devenv/setup**または**devenv/in
 
 1. Visual Studio 2017 では、ソリューションを開きます。 コードのアップグレードになります。 **[OK]** をクリックします。
 
-2. アップグレードの完了したら、インストール先のバージョンを変更する必要があります。 VSIX プロジェクトの source.extension.vsixmanifest ファイルを開き、選択、**インストールの対象**タブ。場合、**バージョン範囲**フィールドは **[14.0]**、 をクリックして**編集**し、Visual Studio 2017 を含むように変更します。 たとえば設定することができます **[14.0,15.0]** または Visual Studio 2015 または Visual Studio 2017 では、いずれかに、拡張機能をインストールする **[15.0]** だけの Visual Studio 2017 をインストールします。
+2. アップグレードの完了したら、インストール先のバージョンを変更する必要があります。 VSIX プロジェクトの source.extension.vsixmanifest ファイルを開き、選択、**インストールの対象**タブ。場合、**バージョン範囲**フィールドは **[14.0]** 、 をクリックして**編集**し、Visual Studio 2017 を含むように変更します。 たとえば設定することができます **[14.0,15.0]** または Visual Studio 2015 または Visual Studio 2017 では、いずれかに、拡張機能をインストールする **[15.0]** だけの Visual Studio 2017 をインストールします。
 
 3. コードを再コンパイルします。
 

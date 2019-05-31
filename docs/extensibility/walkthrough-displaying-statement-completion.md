@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4529fa9cd52c1e9e54049386d39e85ea8efcbe5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f117209c8e1d57c64ab53df608fe55ae27f0cff0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965194"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312408"
 ---
 # <a name="walkthrough-display-statement-completion"></a>チュートリアル: 入力候補の表示
 入力候補を提供する識別子を定義し、補完セッションをトリガーし、言語ベースのステートメント入力候補を実装できます。 言語サービスのコンテキストでステートメント入力候補を定義、ファイル名拡張子とコンテンツの種類を定義し、補完機能をその型だけを表示できます。 または、既存のコンテンツ タイプの完了をトリガーする — たとえば、「プレーン テキスト」。 このチュートリアルでは、「プレーン テキスト」コンテンツ タイプ、テキスト ファイルのコンテンツの種類の入力候補をトリガーする方法を示します。 「テキスト」コンテンツの種類は、すべての他のコンテンツの種類のコードと XML ファイルを含む先祖です。

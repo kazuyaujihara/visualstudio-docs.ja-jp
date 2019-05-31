@@ -6,17 +6,17 @@ helpviewer_keywords:
 - IVsLanguageInfo interface
 - language services, objects
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5c907885e91cc3b7765ff94528a30a84b17ee46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a626111fc1f2eb8790cdfe2a146f63eba7fbab3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909566"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333487"
 ---
 # <a name="legacy-language-service-interfaces"></a>従来の言語サービスのインターフェイス
 特定のプログラミング言語がありますの言語サービスのインスタンスを 1 つだけで。 ただし、1 つの言語サービスでは、1 つ以上のエディターを使用できます。
@@ -52,4 +52,4 @@ ms.locfileid: "62909566"
 
 ## <a name="see-also"></a>関連項目
 - [従来の言語サービスの開発](../../extensibility/internals/developing-a-legacy-language-service.md)
-- [チェックリスト:従来の言語サービスを作成します。](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+- [チェックリスト: 従来の言語サービスの作成](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

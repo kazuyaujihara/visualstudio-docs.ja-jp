@@ -3,17 +3,17 @@ title: FAQ:アドインを VSPackage 拡張機能に変換する |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4678d79c7d2b1e19ab96502778ce51f8a3226010
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e40d9b7ca3d942a78ef9045bc7aaa5d0f7ea74d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417177"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342651"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ:アドインを VSPackage 拡張機能に変換します。
 現在、アドインは非推奨とされます。 新しい Visual Studio 拡張機能をするためには、VSIX 拡張機能を作成する必要があります。 VSIX 拡張機能に Visual Studio アドインを変換する方法についてよく寄せられる質問に対する回答を示します。
@@ -68,7 +68,7 @@ VSPackage でも同じ操作を実行できます。 コールバック メソ�
 
 1. メニュー コマンドを含む VSPackage を作成します。 (詳細については、次を参照してください[メニュー コマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)。)。
 
-2. VSPackage の定義が含まれているファイルを開きます。 (C# プロジェクトである*\<プロジェクト名 > Package.cs*)。
+2. VSPackage の定義が含まれているファイルを開きます。 (C# プロジェクトである *\<プロジェクト名 > Package.cs*)。
 
 3. ファイルに次の `using` ステートメントを追加します。
 
@@ -162,7 +162,7 @@ VSPackage でも同じ操作を実行できます。 コールバック メソ�
 
 1. メニュー コマンドを含む VSPackage を作成、 [VSIX 拡張機能の開発を開始する方法でしょうか。](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)セクション。
 
-2. VSPackage の定義が含まれているファイルを開きます。 (C# プロジェクトである*\<プロジェクト名 > Package.cs*)。
+2. VSPackage の定義が含まれているファイルを開きます。 (C# プロジェクトである *\<プロジェクト名 > Package.cs*)。
 
 3. 次の `using` ステートメントを追加します。
 
@@ -210,7 +210,7 @@ VSPackage でも同じ操作を実行できます。 コールバック メソ�
 
 1. メニュー コマンドを含む VSPackage を作成、 [VSIX 拡張機能の開発を開始する方法でしょうか。](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)セクション。
 
-2. VSPackage の定義が含まれているファイルを開きます。 (C# プロジェクトである*\<プロジェクト名 > Package.cs*)。
+2. VSPackage の定義が含まれているファイルを開きます。 (C# プロジェクトである *\<プロジェクト名 > Package.cs*)。
 
 3. 次の `using` ステートメントを追加します。
 

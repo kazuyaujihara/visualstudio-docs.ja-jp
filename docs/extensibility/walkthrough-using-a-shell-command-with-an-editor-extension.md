@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0eade1bf17955bce52ea53b159f23102afb74b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b89d4d4356245929bbd8ada7790729e78da3d15d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444916"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328146"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でシェル コマンドを使用します。
 VSPackage からには、エディターにメニュー コマンドなどの機能を追加できます。 このチュートリアルでは、メニュー コマンドを呼び出すことによって、エディターでテキスト ビューに表示要素を追加する方法を示します。
@@ -38,7 +38,7 @@ VSPackage からには、エディターにメニュー コマンドなどの機
 
 ## <a name="add-a-mef-extension-to-the-command-extension"></a>コマンド拡張機能に MEF 拡張機能を追加します。
 
-1. **ソリューション エクスプ ローラー**は、ソリューション ノードを右クリックし、[**追加**、] をクリックし、**新しいプロジェクト**します。 **新しいプロジェクトの追加**ダイアログ ボックスで、をクリックして**拡張** **Visual c#**、し**VSIX プロジェクト**。 プロジェクトに `CommentAdornmentTest` という名前を付けます。
+1. **ソリューション エクスプ ローラー**は、ソリューション ノードを右クリックし、[**追加**、] をクリックし、**新しいプロジェクト**します。 **新しいプロジェクトの追加**ダイアログ ボックスで、をクリックして**拡張** **Visual c#** 、し**VSIX プロジェクト**。 プロジェクトに `CommentAdornmentTest` という名前を付けます。
 
 2. このプロジェクトは、VSPackage の厳密な名前付きアセンブリと対話は、ため、アセンブリに署名する必要があります。 既に作成されて、VSPackage アセンブリのキー ファイルを再利用することができます。
 

@@ -3,17 +3,17 @@ title: ビューの表示要素、コマンドおよび設定の作成 |Microsof
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd5bfc24fcf1cd8a465bafe1e5bcf6c4df61308c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8e69801797ed40c206f828499efb234a97791cb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796450"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312662"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>チュートリアル: ビューの表示要素、コマンド、および設定 (ガイド) を作成します。
 コマンドとビューの効果を Visual Studio のテキストまたはコード エディターを拡張することができます。 この記事では、人気のある拡張機能、列ガイドを使用する方法を示します。 列ガイドは、特定の列の幅にコードを管理するために、テキスト エディターのビューに描画される視覚的にライトの線です。 具体的には、書式設定されたコードは、ドキュメント、ブログの投稿に含めるか、バグのレポートのサンプルについてがあります。

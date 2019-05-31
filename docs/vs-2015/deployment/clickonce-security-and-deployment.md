@@ -18,17 +18,17 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 17b906f721bea6e4183575eced962e9ed830cda1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 592bf358c24bee146290e8b3a00e28a0870f452d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675460"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263799"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce のセキュリティと配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 展開テクノロジをインストールして最小限のユーザーとのやり取りを実行できる自己更新型の Windows ベースのアプリケーションを作成することができます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 発行および Visual Basic および Visual c# でプロジェクトを開発する場合は、ClickOnce テクノロジで配置されたアプリケーションを更新するためには、完全にサポートを提供します。 Visual C アプリケーションを展開する方法の詳細については、次を参照してください。 [Visual c アプリケーションの ClickOnce 配置](https://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157)します。  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 展開テクノロジをインストールして最小限のユーザーとのやり取りを実行できる自己更新型の Windows ベースのアプリケーションを作成することができます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 発行および Visual Basic および Visual c# でプロジェクトを開発する場合は、ClickOnce テクノロジで配置されたアプリケーションを更新するためには、完全にサポートを提供します。 Visual C アプリケーションを展開する方法の詳細については、次を参照してください。 [Visual c アプリケーションの ClickOnce 配置](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)します。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 展開は、展開における 3 つの主な問題を克服します。  
   
@@ -86,7 +86,7 @@ ms.locfileid: "65675460"
 > [!NOTE]
 > **発行ウィザード**Visual Studio では、次の手順を使用できます。  
   
- 配置マニフェストには、配置場所だけでなく、アプリケーションで最新バージョンをチェックする更新場所 (Web ページまたはネットワーク ファイル共有) も含まれます。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **発行**プロパティを使用して、アプリケーションの更新プログラムを確認するタイミングと頻度を指定します。 配置マニフェストで更新プログラムの動作を指定するかをして、アプリケーションのユーザー インターフェイスにユーザーの選択肢として提示する、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Api。 さらに、**[発行]** プロパティを使用して、更新を必須にしたり、以前のバージョンにロールバックしたりすることもできます。 詳細については、「[ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)」を参照してください。  
+ 配置マニフェストには、配置場所だけでなく、アプリケーションで最新バージョンをチェックする更新場所 (Web ページまたはネットワーク ファイル共有) も含まれます。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **発行**プロパティを使用して、アプリケーションの更新プログラムを確認するタイミングと頻度を指定します。 配置マニフェストで更新プログラムの動作を指定するかをして、アプリケーションのユーザー インターフェイスにユーザーの選択肢として提示する、 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Api。 さらに、 **[発行]** プロパティを使用して、更新を必須にしたり、以前のバージョンにロールバックしたりすることもできます。 詳細については、「[ClickOnce の更新方法の選択](../deployment/choosing-a-clickonce-update-strategy.md)」を参照してください。  
   
 ### <a name="third-party-installers"></a>サード パーティ製のインストーラー  
  アプリケーションとサード パーティ製のコンポーネントをインストールする、ClickOnce インストーラーをカスタマイズできます。 再頒布可能パッケージ (.exe または .msi ファイル) があるし、言語に依存しない製品マニフェスト、言語固有のパッケージ マニフェストとパッケージを記述する必要があります。 詳細については、次を参照してください。[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)します。  

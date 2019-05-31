@@ -3,17 +3,17 @@ title: 'チュートリアル: JavaScript を使用して SDK の作成 |Microso
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15dc7ef3c5ab06857307081511f1c9aa2285566
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 61f18d2d7412b84827aaa9b6a229c80019716df4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796344"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312551"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>チュートリアル: JavaScript を使用して、SDK を作成します。
 このチュートリアルでは、JavaScript を使用して単純な算術 SDK と Visual Studio Extension (VSIX) を作成する方法について説明します。  このチュートリアルは、これらの部分に分かれています。
@@ -29,7 +29,7 @@ ms.locfileid: "62796344"
 
 ## <a name="createSimpleMathVSIX"></a> SimpleMathVSIX 拡張機能 SDK のプロジェクトを作成するには
 
-1. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 2. テンプレートのカテゴリの一覧で  **Visual c#** を選択します**拡張**を選び、 **VSIX プロジェクト**テンプレート。
 
@@ -132,7 +132,7 @@ ms.locfileid: "62796344"
 
 18. **ソリューション エクスプ ローラー**のショートカット メニューで、 **SimpleMathVSIX**プロジェクトで、選択**ビルド**します。
 
-19. プロジェクトのショートカット メニューで、ビルドが正常に完了した後は、選択**ファイル エクスプ ローラーでフォルダーを開く**します。 移動します**\bin\debug\\**、および実行`SimpleMathVSIX.vsix`をインストールします。
+19. プロジェクトのショートカット メニューで、ビルドが正常に完了した後は、選択**ファイル エクスプ ローラーでフォルダーを開く**します。 移動します **\bin\debug\\** 、および実行`SimpleMathVSIX.vsix`をインストールします。
 
 20. 選択、**インストール**ボタンをクリックし、インストールが完了しました。
 
@@ -140,7 +140,7 @@ ms.locfileid: "62796344"
 
 ## <a name="createSampleApp"></a> SDK を使用するサンプル アプリを作成するには
 
-1. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 2. テンプレートのカテゴリの一覧で  **JavaScript**を選択します**Windows ストア**を選び、**空のアプリ**テンプレート。
 
@@ -152,7 +152,7 @@ ms.locfileid: "62796344"
 
 6. 選択、**単純な算術**チェック ボックスをオンにして、 **OK**ボタン。
 
-7. **ソリューション エクスプ ローラー****参照**、注意、**単純な算術**参照が表示されます。 あることに注意してください。 を展開し、 **\js\\** を含むフォルダー **arithmetic.js**します。 開くことができます**arithmetic.js**をソース コードがインストールされていることを確認します。
+7. **ソリューション エクスプ ローラー** **参照**、注意、**単純な算術**参照が表示されます。 あることに注意してください。 を展開し、 **\js\\** を含むフォルダー **arithmetic.js**します。 開くことができます**arithmetic.js**をソース コードがインストールされていることを確認します。
 
 8. 次のコードを使用して、内容を置き換える*default.htm*します。
 
@@ -192,7 +192,7 @@ ms.locfileid: "62796344"
    </html>
    ```
 
-9. 次のコードを使用して、内容を置き換える*\js\default.js*します。
+9. 次のコードを使用して、内容を置き換える *\js\default.js*します。
 
     ```csharp
     (function () {
@@ -250,7 +250,7 @@ ms.locfileid: "62796344"
     })();
     ```
 
-10. 内容を置き換える*\css\default.css*次のコードで。
+10. 内容を置き換える *\css\default.css*次のコードで。
 
     ```xml
     form {

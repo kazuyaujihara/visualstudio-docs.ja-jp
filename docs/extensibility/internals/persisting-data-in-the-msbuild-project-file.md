@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 307e8e5285dd0023d30772c5eac7a4e351287aa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2f09d84d61464b22b9bbe01478f35410bdd0904
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909183"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328510"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>MSBuild プロジェクト ファイルでのデータの保持
 プロジェクト サブタイプは、後で使用するためのプロジェクト ファイルにサブタイプ固有のデータを保持する必要があります。 プロジェクト サブタイプは、次の要件を満たすためにプロジェクト ファイルの永続化を使用します。
@@ -24,7 +24,7 @@ ms.locfileid: "62909183"
 
     1. 構成に依存しないデータ。 つまり、空白または不足している条件を持つ MSBuild 要素に格納されているデータ。
 
-    2. 構成に依存するデータ。 つまり、データが、特定のプロジェクト構成を規定する MSBuild 要素に格納されています。 例:
+    2. 構成に依存するデータ。 つまり、データが、特定のプロジェクト構成を規定する MSBuild 要素に格納されています。 例えば:
 
         ```
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

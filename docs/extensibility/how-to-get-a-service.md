@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027057ff5c6f8d33038329a8e6029dcb4eeac477
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3da08f41566e5b6d2a501a9e020d589b85988016
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911870"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351932"
 ---
 # <a name="how-to-get-a-service"></a>方法: サービスを取得します。
 
@@ -29,7 +29,7 @@ Visual Studio が読み込まれたら、 <xref:Microsoft.VisualStudio.Shell.Pac
 
 1. すべての Visual Studio 拡張機能は、拡張機能資産が含まれる VSIX 配置プロジェクトで開始します。 作成、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクト`GetServiceExtension`します。 VSIX プロジェクト テンプレートを見つけることができます、**新しいプロジェクト**ダイアログで"vsix"を検索します。
 
-2. という名前のカスタム コマンド項目テンプレートを追加するようになりました**GetServiceCommand**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#** > **機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して*GetServiceCommand.cs*します。 詳細については、カスタム コマンドを作成する方法についての[メニュー コマンドを使用して拡張機能を作成します。](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. という名前のカスタム コマンド項目テンプレートを追加するようになりました**GetServiceCommand**します。 **新しい項目の追加**ダイアログ ボックスに移動して**Visual c#**  > **機能拡張**選択と**カスタム コマンド**。 **名前**ウィンドウの下部にあるフィールドに、コマンド ファイル名を変更して*GetServiceCommand.cs*します。 詳細については、カスタム コマンドを作成する方法についての[メニュー コマンドを使用して拡張機能を作成します。](../extensibility/creating-an-extension-with-a-menu-command.md)
 
 3. *GetServiceCommand.cs*、本体を削除、`MenuItemCommand`メソッドし、次のコードを追加します。
 

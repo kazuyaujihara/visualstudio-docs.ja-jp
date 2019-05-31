@@ -9,17 +9,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911382"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352039"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>方法: プロジェクト テンプレートにウィザードの使用
 
@@ -218,9 +218,9 @@ Visual Studio SDK の一部では、プロジェクト テンプレート プロ
 
 5. ソリューションをリビルドします。
 
-6. MyProjectWizard プロジェクト ディレクトリに key.snk ファイルを検索できます (*\<ディスクの場所 > \MyProjectTemplate\MyProjectWizard\key.snk*)。 コピー、 *key.snk*ファイル。
+6. MyProjectWizard プロジェクト ディレクトリに key.snk ファイルを検索できます ( *\<ディスクの場所 > \MyProjectTemplate\MyProjectWizard\key.snk*)。 コピー、 *key.snk*ファイル。
 
-7. 出力ディレクトリに移動し、アセンブリを検索 (*\<ディスクの場所 > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*)。 貼り付け、 *key.snk*ここファイルします。 (これは、どうしても必要はありませんは簡単に、次の手順)。
+7. 出力ディレクトリに移動し、アセンブリを検索 ( *\<ディスクの場所 > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*)。 貼り付け、 *key.snk*ここファイルします。 (これは、どうしても必要はありませんは簡単に、次の手順)。
 
 8. コマンド ウィンドウを開き、アセンブリが作成されたディレクトリに変更します。
 

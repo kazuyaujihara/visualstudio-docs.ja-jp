@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: 手動で再署名が要求されるされないブランド情報を保持する ClickOnce アプリケーションの展開 |Microsoft Docs'
+title: ClickOnce を手動で展開するアプリのブランド化の維持
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405836"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263423"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>チュートリアル: 手動で再署名が不要な ClickOnce アプリケーションをデプロイして、商標を保持
 作成するときに、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションと、それを発行する顧客に渡すを展開し、顧客は、配置マニフェストを更新して再署名に従来しました。 ほとんどの場合に推奨される方法ですが、.NET Framework 3.5 を使用すると、作成[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]新しい配置マニフェストを再生成することがなく、顧客によって展開できる展開します。 詳細については、次を参照してください。[再署名なしのテストと実稼働サーバーの展開の ClickOnce アプリケーション](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)します。
@@ -127,7 +127,7 @@ ms.locfileid: "63405836"
 
 13. 選択**ファイル**、**保存**メニューのおよびアプリケーション マニフェストを保存します。 保存すると、アプリケーション マニフェストに署名するように促されます。
 
-14. 場合は、ファイル システム上のファイルとして格納されている証明書がある場合を使用して、**証明書ファイルと符号**し、省略記号を使用して、ファイル システムから証明書を選択します (**...**) ボタンをクリックします。
+14. 場合は、ファイル システム上のファイルとして格納されている証明書がある場合を使用して、**証明書ファイルと符号**し、省略記号を使用して、ファイル システムから証明書を選択します ( **...** ) ボタンをクリックします。
 
      - または -
 
