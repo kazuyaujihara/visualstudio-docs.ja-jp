@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 47db517bfb75d81785e910d1dd166ac83ddb2fcb
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704674"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261657"
 ---
 # <a name="general-debugging-options-dialog-box"></a>[全般] ([オプション] ダイアログ ボックス - [デバッグ])
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "65704674"
  2) および 3) の場合、スローされる例外は、共通言語ランタイムではなく、`mscorlib` のマネージド コードによりキャッチされることがあります。 このオプションを選択しても、`mscorlib` でキャッチされる例外の処理は中断されません。  
   
  **アドレス レベルのデバッグを有効にします。**  
- アドレス レベルでデバッグを行うための高度な機能 (**[逆アセンブル]** ウィンドウ、**[レジスタ]** ウィンドウ、およびアドレス ブレークポイント) を有効にします。  
+ アドレス レベルでデバッグを行うための高度な機能 ( **[逆アセンブル]** ウィンドウ、 **[レジスタ]** ウィンドウ、およびアドレス ブレークポイント) を有効にします。  
   
  **ソースがないかどうかは逆アセンブリの表示します。**  
  自動的に表示されます、**逆アセンブル**ソース コードをデバッグしようとすると、ウィンドウは使用できません。  
@@ -164,7 +164,7 @@ ms.locfileid: "65704674"
   表示、 **Live Visual Tree**ツールバーのデバッグ中に XAML アプリケーションのメイン ウィンドウでコマンド。 このオプションは、Visual Studio 2015 Update 2 で導入されました。  
   
   **デバッグ中に診断ツールを有効にします。**  
-  デバッグ中に **[診断ツール]** ウィンドウが表示されます。 詳細については、次を参照してください。[デバッガーに統合されたプロファイリング](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859)します。  
+  デバッグ中に **[診断ツール]** ウィンドウが表示されます。 詳細については、次を参照してください。[デバッガーに統合されたプロファイリング](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger)します。  
   
   **デバッグ中に経過時間の PerfTip を表示します。**  
   デバッグ中に、特定のメソッド呼び出しの経過時間がコード ウィンドウに表示されます。  

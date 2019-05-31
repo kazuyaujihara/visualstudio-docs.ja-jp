@@ -1,5 +1,5 @@
 ---
-title: '方法: クライアント コンピューターに ClickOnce アプリケーション用の信頼された発行元の追加 |Microsoft Docs'
+title: ClickOnce アプリ用のクライアント コンピューターを信頼された発行元を追加します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42fdbcb3da2e2b3c335b55ca66449d6264c2cf16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 426096670df1099568cadc2af68ae0ff50ca71e5
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407608"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263157"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>方法: ClickOnce アプリケーション用の信頼された発行者をクライアント コンピューターに追加する
 信頼されたアプリケーションの配置を使用すると、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションをユーザーに確認することなく高いレベルの信頼で実行できるように、クライアント コンピューターを構成できます。 以下の手順では、コマンド ライン ツールの CertMgr.exe を使用して、クライアント コンピューターの信頼された発行者ストアに発行者の証明書を追加する方法について説明します。
@@ -38,7 +38,7 @@ ms.locfileid: "63407608"
 
 1. CA からデジタル証明書を取得します。
 
-2. 証明書を Base64 X.509 (*.cer*) 形式でエクスポートします。 証明書の形式の詳細については、「[Export a certificate](http://go.microsoft.com/fwlink/?LinkId=164793)」 (証明書をエクスポートする) を参照してください。
+2. 証明書を Base64 X.509 ( *.cer*) 形式でエクスポートします。 証明書の形式の詳細については、「[Export a certificate](http://go.microsoft.com/fwlink/?LinkId=164793)」 (証明書をエクスポートする) を参照してください。
 
 3. クライアント コンピューターのコマンド プロンプトで、次のコマンドを実行します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "63407608"
 
 1. CA からデジタル証明書を取得します。
 
-2. 証明書を Base64 X.509 (*.cer*) 形式でエクスポートします。 証明書の形式の詳細については、「 [証明書をエクスポートする](http://go.microsoft.com/fwlink/?LinkId=164793)」を参照してください。
+2. 証明書を Base64 X.509 ( *.cer*) 形式でエクスポートします。 証明書の形式の詳細については、「 [証明書をエクスポートする](http://go.microsoft.com/fwlink/?LinkId=164793)」を参照してください。
 
 3. クライアント コンピューターのコマンド プロンプトで、次のコマンドを実行します。
 

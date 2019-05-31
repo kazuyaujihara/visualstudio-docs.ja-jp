@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], viewing data
 - debugging [Debugging SDK], visualizing data
 ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 852616ac77096a5b31078d64051f67f6cbb3ecb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b29d1135df370232324edec9d1bd4a23397b17e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912830"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348350"
 ---
 # <a name="visualizing-and-viewing-data"></a>視覚化とデータを表示します。
 型のビジュアライザーおよびカスタム ビューアーが開発者にすぐにわかりやすい方法でデータを表示します。 式エバリュエーター (EE) できますサード パーティ製の型のビジュアライザーのサポートだけでなく、独自のカスタム ビューアーを指定します。

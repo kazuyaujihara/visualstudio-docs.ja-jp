@@ -11,17 +11,17 @@ helpviewer_keywords:
 - IDE, constants
 - physical views
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbe90c182ada4d7e69313ff570b2f7d26087170c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d16b758a34eb1b9f48e912f75c4eec144a07ce4a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861933"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311326"
 ---
 # <a name="ide-constants"></a>IDE 定数
 
@@ -29,7 +29,7 @@ ms.locfileid: "62861933"
 
 ## <a name="logical-and-physical-views"></a>論理および物理ビュー
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` ハンドラーは、この値を渡す必要があります、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>を取得するメソッド、**プログラムから開く**ダイアログ ボックスで、この例では、コード ビュー。|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` ハンドラーは、この値を渡す、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>を取得するメソッド、**プログラムから開く**ダイアログ ボックスで、ここで設定可能な限り<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>デバッグ ビューと同じビューにマップされる<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>。|
@@ -40,7 +40,7 @@ ms.locfileid: "62861933"
 
 ## <a name="editor-factory-flags"></a>エディター ファクトリ フラグ
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |[CEF.CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|最初のパラメーターとしてには、ビットごとに、古いフラグが結合、<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>メソッド。|
 |[CEF します。OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|最初のパラメーターのビットごとに結合、<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>メソッド、エディター ファクトリが必要な修正プログラムを実行する必要がありますこれを示します。|
@@ -49,7 +49,7 @@ ms.locfileid: "62861933"
 
 ## <a name="visual-studio-errors"></a>Visual Studio のエラー
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|非同期動作をインターフェイスによって返される定数と対象のオブジェクト ビジーです|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|エラーの「互換性のないドキュメント データ」の Visual Studio に固有である hresult 値。|
@@ -65,7 +65,7 @@ ms.locfileid: "62861933"
 
 ## <a name="visual-studio-constants"></a>Visual Studio の定数
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|エラーの Visual Studio に固有である hresult 値が「プロジェクトが転送された」ことを示します|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|「ツールボックス マーカー」for Visual Studio に固有である定数|
@@ -80,7 +80,7 @@ ms.locfileid: "62861933"
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  IDE のコンポーネントだけが選択されているでについて説明します、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>を呼び出します。
 
-|定数|[値]|
+|定数|値|
 |--------------|-----------|
 |[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
 |[SelectionElement.PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
@@ -92,7 +92,7 @@ ms.locfileid: "62861933"
 ## <a name="vsselelemid"></a>VSSELELEMID
  新しい選択状態を示すために使用される定数。
 
-|定数|[値]|
+|定数|値|
 |--------------|-----------|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|2|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|7|
@@ -105,7 +105,7 @@ ms.locfileid: "62861933"
 
 ## <a name="component-selector-dialog-constants"></a>コンポーネント セレクター ダイアログ定数
 
-|定数|[値]|
+|定数|値|
 |--------------|-----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELCHANGED>|WM_USER + 1280|
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELDBLCLICK>|WM_USER + 1281|

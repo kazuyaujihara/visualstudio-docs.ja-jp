@@ -1,5 +1,5 @@
 ---
-title: '方法: コード プロジェクト規則セットをチーム プロジェクトのチェックイン ポリシーと同期させる'
+title: プロジェクトの同期規則の設定では、チェックイン ポリシー
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd92cbb5dfee83a4a2b92729a8fde3846a5e5475
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 80d13afe27eab28c88d2513b6c8be986ab1c960a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815836"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260843"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>方法: Azure DevOps プロジェクトでは、チェックイン ポリシーを使用してコード プロジェクト規則セットを同期させる
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONNECTION_PROTOCOL enumeration
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a7d8d056fb816a428d78a8e13455cf6ccdd8a90
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f52ef7e723b583d593f6f0d4fc18f5f6909b131
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705834"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346532"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 デバッグ サーバーとパッケージのデバッグ (DE) 間の通信に使用されるプロトコルを示します。
@@ -48,20 +51,27 @@ public enum CONNECTION_PROTOCOL {
 };
 ```
 
-#### <a name="parameters"></a>パラメーター
-サーバーへの CONNECTION_NONE なしの接続が確立されています。
+## <a name="fields"></a>フィールド
+`CONNECTION_NONE`\
+サーバーに接続が確立されていません。
 
-CONNECTION_UNKNOWN の接続が行われたが、不明な型のです。
+`CONNECTION_UNKNOWN`\
+接続が確立されていますが、不明な型のです。
 
-ローカル サーバーへの CONNECTION_LOCAL 接続です。
+`CONNECTION_LOCAL`\
+ローカル サーバーへの接続です。
 
-名前付きパイプは CONNECTION_PIPE 接続します。
+`CONNECTION_PIPE`\
+接続では、名前付きパイプ経由です。
 
-CONNECTION_TCPIP 接続では、TCP/IP を使用します。
+`CONNECTION_TCPIP`\
+接続は、TCP/IP を使用します。
 
-CONNECTION_HTTP 接続は、(Web サーバー) 経由の HTTP を使用します。
+`CONNECTION_HTTP`\
+接続は、(Web サーバー) 経由の HTTP を使用します。
 
-他の種類の接続が確立された CONNECTION_OTHER (この値は現在使用されません)。
+`CONNECTION_OTHER`\
+他の種類の接続が確立されています (この値は現在使用されません)。
 
 ## <a name="remarks"></a>Remarks
 これらの値から返される、 [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)メソッド。

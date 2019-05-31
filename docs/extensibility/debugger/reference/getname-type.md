@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - GETNAME_TYPE enumeration
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae68c77e2d6a41adfff6b49e55bbc6df4393fec7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1bdcbc4171c8a481ee0c45456ef5600f5150c6d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701720"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317581"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 取得するファイルの名前の種類を指定します。
@@ -49,20 +52,27 @@ public enum enum_GETNAME_TYPE {
 };
 ```
 
-## <a name="members"></a>メンバー
-GN_NAME では、ドキュメントまたはコンテキストのフレンドリ名を指定します。
+## <a name="fields"></a>フィールド
+`GN_NAME`\
+ドキュメントまたはコンテキストのフレンドリ名を指定します。
 
-GN_FILENAME では、ドキュメントまたはコンテキストの完全なパスを指定します。
+`GN_FILENAME`\
+ドキュメントまたはコンテキストの完全なパスを指定します。
 
-GN_BASENAME では、ドキュメントまたはコンテキストの完全なパスではなく基本ファイル名を指定します。
+`GN_BASENAME`\
+ドキュメントまたはコンテキストの完全なパスではなく基本ファイル名を指定します。
 
-GN_MONIKERNAME は、モニカーの形式でドキュメントまたはコンテキストの一意の名前を指定します。
+`GN_MONIKERNAME`\
+モニカーの形式でドキュメントまたはコンテキストの一意の名前を指定します。
 
-GN_URL では、ドキュメントまたはコンテキストの URL 名を指定します。
+`GN_URL`\
+ドキュメントまたはコンテキストの URL 名を指定します。
 
-GN_TITLE は、1 つが存在する場合に、ドキュメントのタイトルを指定します。
+`GN_TITLE`\
+存在する場合は、ドキュメントのタイトルを指定します。
 
-処理 GN_STARTPAGEURL がページの URL の開始を取得します。
+`GN_STARTPAGEURL`\
+プロセスの開始ページの URL を取得します。
 
 ## <a name="remarks"></a>Remarks
 これらの値をパラメーターとして渡される、 [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)、 [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)、および[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)メソッド名を返しますの種類を指定します。

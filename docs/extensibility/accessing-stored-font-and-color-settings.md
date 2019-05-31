@@ -7,17 +7,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], persistence
 - colors, accessing stored settings
 ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c270c67d21c023310df5b25c015afa754787a33f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fcc0d8ad5b195b15652e8af3a2f1400827f8c628
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843879"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313695"
 ---
 # <a name="access-stored-font-and-color-settings"></a>アクセスには、フォントおよび色の設定が格納されています。
 
@@ -25,7 +25,7 @@ ms.locfileid: "62843879"
 
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>フォントおよび色の状態の永続化を開始するには
 
-次のレジストリの場所にカテゴリ別のフォントと色の情報が格納されます [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio のバージョン >* \FontAndColors\\ 。*\<CategoryGUID >*] ここで、  *\<CategoryGUID >* カテゴリの GUID です。
+次のレジストリの場所にカテゴリ別のフォントと色の情報が格納されます [HKCU\SOFTWARE\Microsoft \Visual Studio\\ *\<Visual Studio のバージョン >* \FontAndColors\\ 。 *\<CategoryGUID >* ] ここで、  *\<CategoryGUID >* カテゴリの GUID です。
 
 そのため、永続化を開始するには、VSPackage が必要です。
 

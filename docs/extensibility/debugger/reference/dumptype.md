@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DUMPTYPE enumeration
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07525b118d2a9ee27c52c87e68dd078d0a67054c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7edb3129733aec29bb5eda64d388024bec4d5ece
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697131"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318188"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 指定します (実行中のスレッド、スタック フレームでは、現在の命令ポインター アドレスなど)、プログラムの状態の量をダンプします。
@@ -39,10 +42,12 @@ public enum enum_DUMPTYPE {
 };
 ```
 
-## <a name="members"></a>メンバー
-DUMP_MINIDUMP では、小規模かつコンパクトなダンプを指定します。
+## <a name="fields"></a>フィールド
+`DUMP_MINIDUMP`\
+小規模かつコンパクトなダンプを指定します。
 
-DUMP_FULLDUMP では、大規模な完全なダンプを指定します。
+`DUMP_FULLDUMP`\
+大規模な完全なダンプを指定します。
 
 ## <a name="remarks"></a>Remarks
 引数として渡される、 [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)メソッド。

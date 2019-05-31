@@ -5,24 +5,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5a1567cc7f5d3f6072b47fda1aacd32f69cb672
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7267011c61a3b43c76db80a758a86f1af1dd228b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62889721"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315361"
 ---
 # <a name="event-descriptions"></a>イベントの説明
 各イベントの種類には、特定の目的があります。
 
 ## <a name="events-and-the-reasons-for-their-use"></a>イベントとその使用する理由
 
-|event|説明|
+|イベント|説明|
 |-----------|-----------------|
 |ドキュメントのイベントをアクティブ化します。|デバッグ エンジン (DE) が、IDE を開くか、フォア グラウンドにドキュメントを表示するときに発生します。|
 |ブレークポイントがバインドされているか、ブレークポイントのエラー イベント|ブレークポイントがバインドされている場合またはブレークポイントがバインドできないし、エラーが返されますと送信されます。|

@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - BPREQI_FIELDS90 enumeration
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be07e034b4059ae7ade40a5a248c01bc4a8237b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f4d6df181ac15746202ae9f67e7b8874848e8f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695935"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350542"
 ---
 # <a name="bpreqifields90"></a>BPREQI_FIELDS90
 取得するブレークポイントの要求についての情報を指定する有効な値を列挙します。 この列挙体を拡張、 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列挙体。
@@ -73,36 +76,51 @@ public enum enum_BPREQI_FIELDS90
 };
 ```
 
-#### <a name="parameters"></a>パラメーター
-BPREQI90_BPLOCATION 初期化または使用して、 `bpLocation` (ブレークポイントの位置) フィールドの[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)または[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体。
+## <a name="fields"></a>フィールド
+`BPREQI90_BPLOCATION`\
+初期化または使用して、 `bpLocation` (ブレークポイントの位置) フィールドの[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)または[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体。
 
-BPREQI90_LANGUAGE 初期化または使用して、`guidLanguage`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI90_LANGUAGE`\
+初期化または使用して、`guidLanguage`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI90_PROGRAM 初期化または使用して、`pProgram`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI90_PROGRAM`\
+初期化または使用して、`pProgram`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI90_PROGRAMNAME 初期化または使用して、`bstrProgramName`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI90_PROGRAMNAME`\
+初期化または使用して、`bstrProgramName`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI90_THREAD 初期化または使用して、`pThread`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI90_THREAD`\
+初期化または使用して、`pThread`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI90_THREADNAME 初期化または使用して、`bstrThreadName`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI90_THREADNAME`\
+初期化または使用して、`bstrThreadName`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI90_PASSCOUNT 初期化または使用して、`bpPassCount`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI90_PASSCOUNT`\
+初期化または使用して、`bpPassCount`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI90_CONDITION 初期化または使用して、 `bpCondition` (ブレークポイント条件) フィールドの`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI90_CONDITION`\
+初期化または使用して、 `bpCondition` (ブレークポイント条件) フィールドの`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI90_FLAGS 初期化または使用して、`dwFlags`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
+`BPREQI90_FLAGS`\
+初期化または使用して、`dwFlags`のフィールド、`BP_REQUEST_INFO`または`BP_REQUEST_INFO2`構造体。
 
-BPREQI90_ALLOLDFIELDS 初期化またはすべてのフィールドを使用しての`BP_REQUEST_INFO`構造体。
+`BPREQI90_ALLOLDFIELDS`\
+初期化またはすべてのフィールドを使用して、、`BP_REQUEST_INFO`構造体。
 
-BPREQI90_VENDOR 初期化または使用して、`guidVendor`フィールド`BP_REQUEST_INFO2`構造体。
+`BPREQI90_VENDOR`\
+初期化または使用して、`guidVendor`フィールド`BP_REQUEST_INFO2`構造体。
 
-BPREQI90_CONSTRAINT 初期化または使用して、`bstrConstraint`フィールド`BP_REQUEST_INFO2`構造体。
+`BPREQI90_CONSTRAINT`\
+初期化または使用して、`bstrConstraint`フィールド`BP_REQUEST_INFO2`構造体。
 
-BPREQI90_TRACEPOINT 初期化または使用して、`bstrTracepoint`フィールド`BP_REQUEST_INFO2`構造体。
+`BPREQI90_TRACEPOINT`\
+初期化または使用して、`bstrTracepoint`フィールド`BP_REQUEST_INFO2`構造体。
 
-BPREQI90_MACROTRACEPOINT 初期化または使用して、`bstrMacroTracepoint`フィールド`BP_REQUEST_INFO2`構造体。 BPREQI_ALLFIELDS では、このフィールドは含まれません。
+`BPREQI90_MACROTRACEPOINT`\
+初期化または使用して、`bstrMacroTracepoint`フィールド`BP_REQUEST_INFO2`構造体。 BPREQI_ALLFIELDS では、このフィールドは含まれません。
 
-フィールドの BPREQI90_ALLFIELDS がすべてを指定します、`BP_REQUEST_INFO2`構造体。
+`BPREQI90_ALLFIELDS`\
+すべてのフィールドを指定します、`BP_REQUEST_INFO2`構造体。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー:Msdbg90.h

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab4cd40393efcf0e3b5f037d2f0818319b60c890
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: edbb7f2dca6bc0bc28a328276680dd9e273f4176
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429905"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331133"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>従来の言語サービスでの構文の配色変更
 構文の色表示機能は、さまざまな色とスタイルのソース ファイルに表示されるプログラミング言語のさまざまな要素を原因となる機能です。 この機能をサポートするには、パーサーや構文の要素またはファイル内のトークンの種類を識別できるスキャナーを指定する必要があります。 多くの言語は、さまざまな方法でそれらを色分けして、キーワード、区切り記号 (丸かっこまたは中かっこを使用)、およびコメントを区別します。
@@ -34,7 +34,7 @@ ms.locfileid: "63429905"
  エディターに返されるカラー情報は、装飾が可能な項目の一覧にインデックスです。 各装飾が可能な項目は、太字など、色の値とフォントの属性のセットを指定しますまたは取り消し線。 エディターでは、言語サービスが使用できる既定の配色可能な項目のセットが用意されています。 行う必要があるすべては、適切な色のトークンの種類ごとのインデックスを指定します。 ただし、トークンの場合、カスタムの配色可能な項目と指定したインデックスのセットを提供し、既定の一覧ではなくの配色可能な項目の一覧を参照できます。 設定する必要があります、`RequestStockColors`を 0 にレジストリ エントリ (を指定しないか、`RequestStockColors`エントリすべてに) カスタム カラーをサポートするためにします。 名前付きパラメーターを使用には、このレジストリ エントリを設定することができます、<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>ユーザー定義の属性。 言語サービスを登録して、そのオプションの設定の詳細については、次を参照してください。[従来の言語サービスを登録する](../../extensibility/internals/registering-a-legacy-language-service1.md)します。
 
 ## <a name="custom-colorable-items"></a>カスタムの配色可能な項目
- オーバーライドする必要があります、独自のカスタムの配色可能な項目を指定する、<xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A>と<xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A>メソッドを<xref:Microsoft.VisualStudio.Package.LanguageService>クラス。 最初のメソッドは、言語サービスをサポートするカスタムの配色可能な項目の数を返し、2 つ目は、インデックスを使用してカスタムの装飾が可能な項目を取得します。 カスタムの配色可能な項目の既定の一覧を作成します。 言語サービスのコンス トラクター、行う必要があるすべてが各装飾が可能な項目を名前を指定します。 Visual Studio では、ユーザーがさまざまな配色可能な項目を選択する場合に自動的に処理します。 この名前に表示されます、**フォントおよび色**プロパティ ページで、**オプション** ダイアログ ボックス (Visual Studio から使用可能な**ツール**メニュー) し、この名前を決定します。ユーザーがオーバーライドされる色。 ユーザーの選択肢では、レジストリ内のキャッシュに格納され、色の名前でアクセスします。 **フォントおよび色**プロパティ ページではすべての色の名前をアルファベット順が表示される前に各色の名前、言語名で追加して、カスタム カラーをグループ化することができますので、"**TestLanguage-コメント**「と」**TestLanguage-キーワード**"。 または、配色可能な項目の種類によってグループ化することができます"**コメント (TestLanguage)**「と」**キーワード (TestLanguage)**"。 言語名でグループ化をお勧めします。
+ オーバーライドする必要があります、独自のカスタムの配色可能な項目を指定する、<xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A>と<xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A>メソッドを<xref:Microsoft.VisualStudio.Package.LanguageService>クラス。 最初のメソッドは、言語サービスをサポートするカスタムの配色可能な項目の数を返し、2 つ目は、インデックスを使用してカスタムの装飾が可能な項目を取得します。 カスタムの配色可能な項目の既定の一覧を作成します。 言語サービスのコンス トラクター、行う必要があるすべてが各装飾が可能な項目を名前を指定します。 Visual Studio では、ユーザーがさまざまな配色可能な項目を選択する場合に自動的に処理します。 この名前に表示されます、**フォントおよび色**プロパティ ページで、**オプション** ダイアログ ボックス (Visual Studio から使用可能な**ツール**メニュー) し、この名前を決定します。ユーザーがオーバーライドされる色。 ユーザーの選択肢では、レジストリ内のキャッシュに格納され、色の名前でアクセスします。 **フォントおよび色**プロパティ ページではすべての色の名前をアルファベット順が表示される前に各色の名前、言語名で追加して、カスタム カラーをグループ化することができますので、"**TestLanguage-コメント**「と」**TestLanguage-キーワード**"。 または、配色可能な項目の種類によってグループ化することができます"**コメント (TestLanguage)** 「と」**キーワード (TestLanguage)** "。 言語名でグループ化をお勧めします。
 
 > [!CAUTION]
 > 既存の装飾が可能な項目の名前の競合を回避する装飾が可能な項目の名前に言語名を含めることを強くお勧めします。

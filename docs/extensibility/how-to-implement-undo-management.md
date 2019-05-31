@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
 ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b29b95b9c53f18d6f97ac2455dd30aa6e26ccde4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e7da8867b7d9fb13c598dc49076e6ae92c8e2826
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415476"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351910"
 ---
 # <a name="how-to-implement-undo-management"></a>方法: 元に戻す管理を実装
 元に戻すの管理に使用される主要なインターフェイスは<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>、環境によって実装されます。 元に戻す管理をサポートするには、実装元に戻す単位 (つまり、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>、複数の個々 のステップを含むことができます。
@@ -68,7 +68,8 @@ ms.locfileid: "63415476"
 
 7. ドキュメントが閉じられたときに呼び出す`QueryInterface`で元に戻すマネージャー`IID_IVsLifetimeControlledObject`します。
 
-8. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A> を呼び出す。
+8. 
+  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A> を呼び出す。
 
 9. 変更されたドキュメントをときに呼び出す<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>のマネージャーで、`OleUndoUnit`クラス。 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>メソッドは、オブジェクトへの参照を解放する通常直後に、<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>します。
 

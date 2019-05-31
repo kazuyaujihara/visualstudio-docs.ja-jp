@@ -3,17 +3,17 @@ title: イメージ ライブラリ ビューアー |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 749441e960363fe208e3ad67288180c1935db35f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1fbef0686671a504cd1a141b6f582d30043809af
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860607"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315693"
 ---
 # <a name="image-library-viewer"></a>イメージ ライブラリ ビューア
 Visual Studio Image Library ビューアー ツールは、読み込みおよびユーザーが Visual Studio と同じ方法で操作できるように、イメージのマニフェストを検索できます。 ユーザーは、バック グラウンド、サイズ、DPI、ハイ コントラスト、およびその他の設定を変更できます。 このツールは、各イメージ マニフェストの読み込み情報を表示し、イメージ マニフェスト内の各イメージのソース情報を表示します。 このツールは、場合に便利です。
@@ -72,7 +72,7 @@ Visual Studio Image Library ビューアー ツールは、読み込みおよび
 |-|-|
 |**サブ要素**|**定義**|
 |インポート|現在のマニフェストで使用するための指定されたマニフェスト ファイルのシンボルをインポートします。|
-|Guid|シンボルは、GUID を表し、GUID の書式設定と一致する必要があります。|
+|GUID|シンボルは、GUID を表し、GUID の書式設定と一致する必要があります。|
 |ID|シンボルは、ID を表し、負でない整数でなければなりません。|
 |String|シンボルは、任意の文字列値を表します。|
 

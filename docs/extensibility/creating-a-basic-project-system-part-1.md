@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19c73e47e8c07ebcf7c1124e6e59d80f76101458
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409986"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341652"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>基本的なプロジェクト システム、第 1 部を作成します。
 Visual Studio では、プロジェクトは、開発者は、ソース コード ファイルおよびその他の資産の分類に使用するコンテナーです。 プロジェクトがソリューション内の子として表示されます、**ソリューション エクスプ ローラー**します。 プロジェクトでは、整理、ビルド、デバッグ、およびソース コードをデプロイおよび Web サービス、データベース、およびその他のリソースへの参照を作成できます。
@@ -224,7 +224,7 @@ Templates
 
     再構築するには、プロジェクト テンプレートが登録します。
 
-   パラメーター`defaultProjectExtension`と`possibleProjectExtensions`プロジェクトのファイル名拡張子に設定されます (*.myproj*)。 `projectTemplatesDirectory`パラメーターの相対パスに設定されて、*テンプレート*フォルダー。 ビルド中には、このパスをフル ビルドに変換され、プロジェクト システムに登録するレジストリに追加するされます。
+   パラメーター`defaultProjectExtension`と`possibleProjectExtensions`プロジェクトのファイル名拡張子に設定されます ( *.myproj*)。 `projectTemplatesDirectory`パラメーターの相対パスに設定されて、*テンプレート*フォルダー。 ビルド中には、このパスをフル ビルドに変換され、プロジェクト システムに登録するレジストリに追加するされます。
 
 ## <a name="test-the-template-registration"></a>テンプレート登録をテストします。
  テンプレート登録は Visual Studio プロジェクト テンプレート フォルダーの場所 Visual Studio は、テンプレートの名前とアイコンを表示できるように、**新しいプロジェクト** ダイアログ ボックス。

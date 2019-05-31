@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_MODIFIERS enumeration
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b22559af26a0a5f6c8af68726a5ba336e1bcfb4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 10538f3728647a716a9f3f964a3deedf2a5ae5c9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689630"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324492"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 フィールドの型の修飾子を指定します。
@@ -101,58 +104,84 @@ public enum enum_FIELD_MODIFIERS {
 };
 ```
 
-## <a name="members"></a>メンバー
-FIELD_MOD_ACCESS_TYPE では、フィールドにアクセスできないことを示します。
+## <a name="fields"></a>フィールド
+`FIELD_MOD_ACCESS_TYPE`\
+フィールドにアクセスできないことを示します。
 
-FIELD_MOD_ACCESS_PUBLIC では、フィールドがパブリック アクセスを持つことを示します。
+`FIELD_MOD_ACCESS_PUBLIC`\
+フィールドがパブリック アクセスを持つことを示します。
 
-FIELD_MOD_ACCESS_PROTECTED では、フィールドにアクセスが保護されていることを示します。
+`FIELD_MOD_ACCESS_PROTECTED`\
+フィールドにアクセスが保護されていることを示します。
 
-FIELD_MOD_ACCESS_PRIVATE では、フィールドがプライベート アクセスを持つことを示します。
+`FIELD_MOD_ACCESS_PRIVATE`\
+フィールドがプライベート アクセスを持つことを示します。
 
-FIELD_MOD_NOMODIFIERS は、フィールドの修飾子がないことを示します。
+`FIELD_MOD_NOMODIFIERS`\
+フィールドに修飾子がないことを示します。
 
-FIELD_MOD_STATIC は、フィールドが静的であることを示します。
+`FIELD_MOD_STATIC`\
+フィールドが静的であることを示します。
 
-FIELD_MOD_CONSTANT フィールドが定数であることを示します。
+`FIELD_MOD_CONSTANT`\
+フィールドが定数であることを示します。
 
-FIELD_MOD_TRANSIENT は、フィールドが一時的であることを示します。
+`FIELD_MOD_TRANSIENT`\
+フィールドが一時的であることを示します。
 
-FIELD_MOD_VOLATILE は、フィールドが揮発性であることを示します。
+`FIELD_MOD_VOLATILE`\
+フィールドが揮発性であることを示します。
 
-FIELD_MOD_ABSTRACT は、フィールドが抽象であることを示します。
+`FIELD_MOD_ABSTRACT`\
+フィールドが抽象であることを示します。
 
-FIELD_MOD_NATIVE は、フィールドがネイティブであることを示します。
+`FIELD_MOD_NATIVE`\
+フィールドがネイティブであることを示します。
 
-FIELD_MOD_SYNCHRONIZED では、フィールドが同期されていることを示します。
+`FIELD_MOD_SYNCHRONIZED`\
+フィールドが同期されていることを示します。
 
-FIELD_MOD_VIRTUAL は、フィールドが仮想であることを示します。
+`FIELD_MOD_VIRTUAL`\
+フィールドが仮想であることを示します。
 
-FIELD_MOD_INTERFACE フィールドがインターフェイスであることを示します。
+`FIELD_MOD_INTERFACE`\
+フィールドがインターフェイスであることを示します。
 
-FIELD_MOD_FINAL は、フィールドが最終的なであることを示します。
+`FIELD_MOD_FINAL`\
+フィールドが最終的なであることを示します。
 
-FIELD_MOD_SENTINEL フィールドが sentinel であることを示します。
+`FIELD_MOD_SENTINEL`\
+フィールドが sentinel であることを示します。
 
-FIELD_MOD_INNERCLASS フィールドが内部クラスであることを示します。
+`FIELD_MOD_INNERCLASS`\
+フィールドが内部クラスであることを示します。
 
-FIELD_TYPE_OPTIONAL は、フィールドが省略可能であることを示します。
+`FIELD_TYPE_OPTIONAL`\
+フィールドが省略可能であることを示します。
 
-FIELD_MOD_BYREF フィールドが参照の引数であることを示します。 これは、専用のメソッドの引数。
+`FIELD_MOD_BYREF`\
+フィールドが参照の引数であることを示します。 これは、専用のメソッドの引数。
 
-FIELD_MOD_HIDDEN は、フィールドを非表示または別のコンテキストで表示する必要があることを示します。たとえば、[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]静的ローカル変数。
+`FIELD_MOD_HIDDEN`\
+フィールドを非表示または別のコンテキストで表示する必要があることを示しますたとえば、[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]静的ローカル変数。
 
-FIELD_MOD_MARSHALASOBJECT では、フィールドを持つオブジェクトで表すことを示す、`IUnknown`インターフェイス。
+`FIELD_MOD_MARSHALASOBJECT`\
+フィールドを持つオブジェクトで表すことを示す、`IUnknown`インターフェイス。
 
-FIELD_MOD_SPECIAL_NAME では、フィールドなど、特別な名前を持つことを示します`.ctor`コンストラクター ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]のみ)。
+`FIELD_MOD_SPECIAL_NAME`\
+フィールドなど、特別な名前を持つことを示します`.ctor`コンス トラクター ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]のみ)。
 
-FIELD_MOD_HIDEBYSIG では、フィールドがあることを示します、`Overloads`キーワードを適用 ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]のみ)。
+`FIELD_MOD_HIDEBYSIG`\
+フィールドがあることを示します、`Overloads`キーワードを適用 ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]のみ)。
 
-FIELD_MOD_WRITEONLY は、フィールドが書き込み専用であることを示します。 この値が記載されていない`FIELD_MOD_ALL`関数の評価は、このような書き込み専用のフィールドのみを使用します。 ユーザーを明示的に問い合わせる必要があります`FIELD_MOD_WRITEONLY`フィールド。
+`FIELD_MOD_WRITEONLY`\
+フィールドが書き込み専用であることを示します。 この値が記載されていない`FIELD_MOD_ALL`関数の評価は、このような書き込み専用のフィールドのみを使用します。 ユーザーを明示的に問い合わせる必要があります`FIELD_MOD_WRITEONLY`フィールド。
 
-FIELD_MOD_ACCESS_MASK は、フィールドへのアクセスをマスクすることを示します。
+`FIELD_MOD_ACCESS_MASK`\
+フィールドへのアクセスのマスクを示します。
 
-FIELD_MOD_MASK では、フィールド修飾子のマスクを示します。
+`FIELD_MOD_MASK`\
+フィールド修飾子のマスクを示します。
 
 ## <a name="remarks"></a>Remarks
 使用、`dwModifiers`のメンバー、 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)構造体。

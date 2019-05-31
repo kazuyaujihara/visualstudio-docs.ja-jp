@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae1b0f45d119b759d6618630a65353eff4415c78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bbea179eb2140706ee868a8a48215e7f490f57d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62795996"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312518"
 ---
 # <a name="walkthrough-display-matching-braces"></a>チュートリアル: 対応するかっこの表示
 かっこの一致を一致する中かっこを定義し、キャレットの中かっこのいずれかである場合は、対応する中かっこをテキスト マーカー タグを追加するなど、言語ベースの機能を実装します。 言語のコンテキストで中かっこを定義する、ファイル名拡張子とコンテンツの種類を定義、および入力するか、既存のコンテンツの種類 ("text") などに、タグを適用するだけにタグを適用できます。 次のチュートリアルでは、かっこの一致の「テキスト」コンテンツ タイプにタグを適用する方法を示します。

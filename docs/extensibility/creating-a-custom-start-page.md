@@ -3,18 +3,18 @@ title: スタート ページのカスタムの作成 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 4fc12744dbf979a338cbc551a715284dffdf7385
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b0b8c6fde31f4f4d9573381e511465e60086add
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926381"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336677"
 ---
 # <a name="creating-a-custom-start-page"></a>カスタム スタート ページを作成します。
 
@@ -24,7 +24,7 @@ ms.locfileid: "62926381"
 
 空白のスタート ページを作成して最初に、作成、 *.xaml* Visual Studio で認識するタグ構造を持つファイル。 次に、マークアップと分離コードを生成する機能と外観を追加します。
 
-1. 型の新しいプロジェクトを作成する**WPF アプリケーション**(**Visual c#** > **Windows デスクトップ**)。
+1. 型の新しいプロジェクトを作成する**WPF アプリケーション**(**Visual c#**  > **Windows デスクトップ**)。
 
 2. `Microsoft.VisualStudio.Shell.14.0` への参照を追加します。
 

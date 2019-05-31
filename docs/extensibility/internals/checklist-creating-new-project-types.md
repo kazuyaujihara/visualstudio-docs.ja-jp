@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
 - project types, checklist for creating
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 807a44d88d2799c8390547a5ab576bdbca3c074a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64e00c452f01c95046b4dc669dbd3bdd1517d287
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861753"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309196"
 ---
 # <a name="checklist-create-new-project-types"></a>チェックリスト: 新しいプロジェクトの種類を作成します。
 新しいプロジェクトの種類を作成するいくつかのタスクを完了する必要があります。 次のチェックリストでは、これらのタスクのガイドを提供します。
@@ -49,13 +49,13 @@ ms.locfileid: "62861753"
 
     - 派生したクラスのオブジェクト、または`IDispatch`自動化のために使用できます。
 
-    - XML コマンド テーブル (*.vsct*) ファイル。 詳細については、次を参照してください。 [Visual Studio コマンド テーブル (.vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
+    - XML コマンド テーブル ( *.vsct*) ファイル。 詳細については、次を参照してください。 [Visual Studio コマンド テーブル (.vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)します。
 
 6. テスト、デバッグ、およびプロジェクトの種類を開始します。
 
 7. プロジェクトを表示、**プロジェクト**のタブ、**参照の追加** ダイアログ ボックスを設定して`VARIANT_TRUE`の値として`VSHPROPID_ShowProjInSolutionPage`します。 詳細については、次のトピックを参照してください。 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> および <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>
 
-8. Microsoft インストーラーの作成 (*.msi*)、Vspackage のインストール用のファイル。 詳細については、次を参照してください。 [Windows インストーラーによる Vspackage のインストール](../../extensibility/internals/installing-vspackages-with-windows-installer.md)、[プロジェクトの種類を登録](../../extensibility/internals/registering-a-project-type.md)、および[Vspackage](../../extensibility/internals/vspackages.md)します。
+8. Microsoft インストーラーの作成 ( *.msi*)、Vspackage のインストール用のファイル。 詳細については、次を参照してください。 [Windows インストーラーによる Vspackage のインストール](../../extensibility/internals/installing-vspackages-with-windows-installer.md)、[プロジェクトの種類を登録](../../extensibility/internals/registering-a-project-type.md)、および[Vspackage](../../extensibility/internals/vspackages.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio での階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

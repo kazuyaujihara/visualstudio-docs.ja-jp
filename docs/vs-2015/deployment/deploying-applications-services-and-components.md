@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b573c85a6a19e2f84bcb2a6cae8b0c55768255
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8ed493089ed215faaddc1009328ec6f8b906534f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675589"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260681"
 ---
 # <a name="deploying-applications-services-and-components"></a>アプリケーション、サービス、およびコンポーネントの配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,6 +52,6 @@ ms.locfileid: "65675589"
 |**デスクトップ アプリケーションをデプロイするには。** ClickOnce 配置を使用すると、web サーバーまたはネットワーク ファイル共有をデスクトップ アプリケーションを発行できます。 その後、ユーザーはシングル クリックでアプリケーションをインストールできます。|[ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)|  
 |**セットアップ プログラムを作成します。** これは無料の InstallShield Limited Edition を使用して、セットアップ プログラムを作成できます。|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
 |**既存のセットアップ プログラムを管理するには。** Visual Studio Installer Projects Extension をインストールすることで、Visual Studio の以前のバージョンで作成されたセットアップ プログラムを使用して続行します。|[Visual Studio Installer Projects Extension](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> インストーラー プロジェクトについては、ここで入手できます。[Visual Studio インストーラーの配置](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Visual C アプリケーションをデプロイします。** 集中配置、ローカル配置、または静的リンクを使用して、アプリケーションと共に Visual C ランタイムをデプロイできます。|[ネイティブ デスクトップ アプリケーションの配置 (Visual C++)](https://msdn.microsoft.com/library/zebw5zk9.aspx)|  
+|**Visual C アプリケーションをデプロイします。** 集中配置、ローカル配置、または静的リンクを使用して、アプリケーションと共に Visual C ランタイムをデプロイできます。|[ネイティブ デスクトップ アプリケーションの配置 (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
 |**テスト対象のアプリケーションをデプロイします。** アプリケーションを仮想環境に配置することで、より高度な開発と試験が可能になります。|[ラボ環境でのテスト](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
 |**前提条件をインストールします。** ブートストラップと呼ばれる一般的なインストーラーを構成すると、デスクトップ アプリケーションの必須コンポーネントをインストールできます。|[アプリケーション配置の必要条件](../deployment/application-deployment-prerequisites.md)|

@@ -6,22 +6,22 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 477079cdb0349b2299b5cb829770800a4930958d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910384"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310012"
 ---
 # <a name="component-management"></a>コンポーネントの管理
 Windows インストーラーのタスクの単位は、Windows インストーラーのコンポーネント (WICs または単なるコンポーネントとも呼ばれます) と呼ばれます。 各 WIC では、インストールと Windows インストーラーの使用設定に対する参照カウントの基本的な単位を識別する GUID。
 
- VSPackage、インストーラーを作成するいくつかの製品を使用できますが、この説明が Windows インストーラーの使用を前提としています (*.msi*) ファイル。 インストーラーを作成するときに、正しい参照カウントが常に発生するため、ファイルの配置正しく管理する必要があります。 その結果、製品の異なるバージョンに影響またはインストールの組み合わせで互いを中断してシナリオをアンインストールします。
+ VSPackage、インストーラーを作成するいくつかの製品を使用できますが、この説明が Windows インストーラーの使用を前提としています ( *.msi*) ファイル。 インストーラーを作成するときに、正しい参照カウントが常に発生するため、ファイルの配置正しく管理する必要があります。 その結果、製品の異なるバージョンに影響またはインストールの組み合わせで互いを中断してシナリオをアンインストールします。
 
  Windows インストーラー、参照カウントは、コンポーネント レベルで発生します。 リソースの整理を慎重にする必要があります: ファイルやレジストリ エントリ、— コンポーネントにします。 組織の他のレベルがある-モジュール、機能、および製品など、さまざまなシナリオで役立つことができます。 詳細については、次を参照してください。 [Windows インストーラーの基本事項](../../extensibility/internals/windows-installer-basics.md)します。
 

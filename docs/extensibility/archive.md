@@ -3,17 +3,17 @@ title: アーカイブ |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: eb92f40d-c0f0-42a9-8388-97ba0476efdf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05911005a0ad64687b4381684609c0aecb9005f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e5fc176c4d1c497e0d82964e734b17ad9333576
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843619"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352232"
 ---
 # <a name="archive"></a>アーカイブ
 このセクションには、Visual Studio 機能拡張テクノロジもサポートされている、新しい代替テクノロジのディスカッションが含まれています。

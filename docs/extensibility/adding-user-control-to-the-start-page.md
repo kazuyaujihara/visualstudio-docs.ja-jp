@@ -7,18 +7,18 @@ helpviewer_keywords:
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5a5e8d752122432e27d7b6845f6d144856746387
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c662374b8ed0abc7e1c178fb4ff07d5033de8a54
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891816"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352302"
 ---
 # <a name="add-user-control-to-the-start-page"></a>スタート ページにユーザー コントロールを追加します。
 
@@ -179,7 +179,7 @@ WPF ユーザー コントロールを実装するには、XAML でユーザー 
 
 1. コピーは、XAML ファイルとサポート テキスト ファイルまたはマークアップをファイルに、 *%USERPROFILE%\My documents \visual Studio 2015 \startpages\\* フォルダー。
 
-2. スタート ページは、すべてのコントロールまたは Visual Studio がインストールされていないアセンブリで型を参照する場合、アセンブリをコピーし、貼り付けることで_Visual Studio インストール フォルダー_**\Common7\IDE\PrivateAssemblies\\**します。
+2. スタート ページは、すべてのコントロールまたは Visual Studio がインストールされていないアセンブリで型を参照する場合、アセンブリをコピーし、貼り付けることで_Visual Studio インストール フォルダー_ **\Common7\IDE\PrivateAssemblies\\** します。
 
 3. Visual Studio コマンド プロンプトで「 **devenv/rootsuffix Exp**を Visual Studio の実験用インスタンスを開きます。
 

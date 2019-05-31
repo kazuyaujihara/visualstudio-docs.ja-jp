@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1695c61a829cf1439ed773e48088430f36f8c653
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 930c3a51173f18ccdad236e285f374bd885c880c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715662"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353047"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 ブレークポイント要求のブレークポイントの場所の種類を指定します。
@@ -65,36 +68,51 @@ public enum enum_BP_LOCATION_TYPE {
 };
 ```
 
-## <a name="members"></a>メンバー
-BPLT_NONE はブレークポイントの位置を指定しません。
+## <a name="fields"></a>フィールド
+`BPLT_NONE`\
+ブレークポイントの位置を指定しません。
 
-BPLT_FILE_LINE では、ファイルの行として、ブレークポイントの場所の種類を指定します。
+`BPLT_FILE_LINE`\
+ファイルの行として、ブレークポイントの場所の種類を指定します。
 
-BPLT_FUNC_OFFSET では、関数のオフセットとして、ブレークポイントの場所の種類を指定します。
+`BPLT_FUNC_OFFSET`\
+関数のオフセットとして、ブレークポイントの場所の種類を指定します。
 
-BPLT_CONTEXT では、コンテキストとして、ブレークポイントの場所の種類を指定します。
+`BPLT_CONTEXT`\
+コンテキストとしては、ブレークポイントの場所の種類を指定します。
 
-BPLT_STRING では、文字列として、ブレークポイントの場所の種類を指定します。
+`BPLT_STRING`\
+ブレークポイントの場所の種類を文字列として指定します。
 
-BPLT_ADDRESS では、アドレスとして、ブレークポイントの場所の種類を指定します。
+`BPLT_ADDRESS`\
+アドレス ブレークポイントの場所の種類を指定します。
 
-BPLT_RESOLUTION では、解決方法として、ブレークポイントの場所の種類を指定します。
+`BPLT_RESOLUTION`\
+解決方法としては、ブレークポイントの場所の種類を指定します。
 
-BPLT_CODE_FILE_LINE では、ソース コードの行として、ブレークポイントの場所の種類を指定します。
+`BPLT_CODE_FILE_LINE`\
+ソース コードの行として、ブレークポイントの場所の種類を指定します。
 
-BPLT_CODE_FUNC_OFFSET では、コードの関数のオフセットとして、ブレークポイントの場所の種類を指定します。
+`BPLT_CODE_FUNC_OFFSET`\
+コードの関数のオフセットとして、ブレークポイントの場所の種類を指定します。
 
-BPLT_CODE_CONTEXT では、コードのコンテキストとして、ブレークポイントの場所の種類を指定します。
+`BPLT_CODE_CONTEXT`\
+コードのコンテキストとしては、ブレークポイントの場所の種類を指定します。
 
-BPLT_CODE_STRING では、コードの文字列として、ブレークポイントの場所の種類を指定します。
+`BPLT_CODE_STRING`\
+コード文字列としては、ブレークポイントの場所の種類を指定します。
 
-BPLT_CODE_ADDRESS は、コード アドレスとして、ブレークポイントの場所の種類を指定します。
+`BPLT_CODE_ADDRESS`\
+コードのアドレスとして、ブレークポイントの場所の種類を指定します。
 
-BPLT_DATA_STRING では、データの文字列として、ブレークポイントの場所の種類を指定します。
+`BPLT_DATA_STRING`\
+データの文字列としては、ブレークポイントの場所の種類を指定します。
 
-BPLT_TYPE_MASK を示すビット マスク、ブレークポイントの種類は、値から抽出できるようにします。
+`BPLT_TYPE_MASK`\
+ブレークポイントの種類は、値から抽出できるように、ビット マスクを指定します。
 
-BPLT_LOCATION_TYPE_MASK を示すビット マスク、ブレークポイントの場所の種類は、値から抽出できるようにします。
+`BPLT_LOCATION_TYPE_MASK`\
+ブレークポイントの場所の種類は、値から抽出できるように、ビット マスクを指定します。
 
 ## <a name="remarks"></a>Remarks
 パラメーターとして渡される、 [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)メソッド。

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, initialization sequence
 ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0e42f80485aab478e3739aedb42130699a963ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f8b256e25bc9a63093d14eab50d7628c76558b9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909693"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349838"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>プロジェクト サブタイプの初期化シーケンス
 環境の基本プロジェクト ファクトリの実装を呼び出すことでプロジェクトを構築する<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>します。 環境では、プロジェクト ファイルの拡張子のプロジェクト型 GUID の一覧が空でないことが判断した場合、プロジェクトのサブタイプの構築が開始されます。 プロジェクト ファイルの拡張子とプロジェクト GUID を指定するかどうか、プロジェクトを[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]または[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]プロジェクトの種類。 拡張子 .vbproj などと {F184B08F-C81C-45F6-A57F-5ABD9991F28F} 識別、[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]プロジェクト。

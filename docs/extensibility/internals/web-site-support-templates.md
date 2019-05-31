@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc5370db9c090fe5a7dcd9852d3df94e05f08e1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e9229a2614d2d797a5a2159df5b18a92850edbd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856855"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323266"
 ---
 # <a name="web-site-support-templates"></a>Web サイト サポートのテンプレート
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Web サイト プロジェクトと項目テンプレートは、新しい Web サイト プロジェクトと項目を最初から作成する必要はありませんが、開発プロセスを加速する再利用可能かつカスタマイズ可能な Web サイト プロジェクトと項目スタブを提供します。 詳細については[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]テンプレートを参照してください[を作成するプロジェクトと項目テンプレート](../../ide/creating-project-and-item-templates.md)します。

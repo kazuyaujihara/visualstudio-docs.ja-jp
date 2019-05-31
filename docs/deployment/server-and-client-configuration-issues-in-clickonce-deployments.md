@@ -1,5 +1,5 @@
 ---
-title: サーバーと ClickOnce 配置でのクライアント構成の問題 |Microsoft Docs
+title: ClickOnce 配置でサーバー/クライアント構成の問題
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406785"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263475"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 配置でのサーバーおよびクライアント構成の問題
 Windows Server で、インターネット インフォメーション サービス (IIS) を使用する、展開には、Windows で認識されない種類のファイルが含まれている場合は、Microsoft Word ファイルなど、そのファイルを送信する IIS は拒否し、配置は失敗します。
@@ -128,7 +128,7 @@ Windows Server で、インターネット インフォメーション サービ
 ## <a name="http-compression-issues"></a>HTTP 圧縮の問題
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]、HTTP 圧縮を使用するダウンロード、クライアントにストリームを送信する前にデータ ストリームを圧縮する、GZIP アルゴリズムを使用する Web サーバー テクノロジを行うことができます。 クライアント: この場合、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-ファイルを読み取る前に、ストリームの圧縮を解除します。
 
- IIS を使用している場合、HTTP 圧縮を簡単に実現できます。 ただし、HTTP 圧縮を有効にした場合にのみなっての特定のファイルの種類、つまり、HTML やテキスト ファイル。 アセンブリの圧縮を有効にする (*.dll*)、XML (*.xml*)、配置マニフェスト (*.application*)、およびアプリケーション マニフェスト (*.manifest*)、これらのファイルを圧縮する IIS の種類の一覧に種類を追加する必要があります。 配置にファイルの種類を追加するまで、テキストや HTML ファイルのみが圧縮されます。
+ IIS を使用している場合、HTTP 圧縮を簡単に実現できます。 ただし、HTTP 圧縮を有効にした場合にのみなっての特定のファイルの種類、つまり、HTML やテキスト ファイル。 アセンブリの圧縮を有効にする ( *.dll*)、XML ( *.xml*)、配置マニフェスト ( *.application*)、およびアプリケーション マニフェスト ( *.manifest*)、これらのファイルを圧縮する IIS の種類の一覧に種類を追加する必要があります。 配置にファイルの種類を追加するまで、テキストや HTML ファイルのみが圧縮されます。
 
  IIS の詳細な手順については、次を参照してください。 [HTTP 圧縮のドキュメントの種類を指定する方法](http://go.microsoft.com/fwlink/?LinkId=178459)します。
 

@@ -3,17 +3,17 @@ title: Hello World の拡張機能のチュートリアル |Microsoft Docs
 ms.date: 03/14/2019
 ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4c3bbafcf138c60b65940bcee73c74f56cf6e2fd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912311"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342859"
 ---
 # <a name="create-your-first-extension-hello-world"></a>初めての拡張機能を作成します。Hello World
 
@@ -44,7 +44,7 @@ ms.locfileid: "62912311"
 
 ::: moniker range="vs-2017"
 
-手順 1. **[ファイル]** メニューで、**[新規作成]**、 > **[プロジェクト]** の順に作成します。
+手順 1. **[ファイル]** メニューで、 **[新規作成]** 、 >  **[プロジェクト]** の順に作成します。
 
 手順 2. 右上にある検索ボックスに "vsix"を入力し、ビジュアルを選択C# **VSIX プロジェクト**します。 "HelloWorld"を入力、**名前**クリックし、ダイアログの下部にある**OK**します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "62912311"
 
 ::: moniker range=">=vs-2019"
 
-手順 1. **[ファイル]** メニューで、**[新規作成]**、 > **[プロジェクト]** の順に作成します。 "Vsix"を検索し、ビジュアルを選択します。 C# **VSIX プロジェクト**し**次**します。
+手順 1. **[ファイル]** メニューで、 **[新規作成]** 、 >  **[プロジェクト]** の順に作成します。 "Vsix"を検索し、ビジュアルを選択します。 C# **VSIX プロジェクト**し**次**します。
 
 手順 2. "HelloWorld"を入力、**プロジェクト名**選択**作成**します。
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df269c3018d850ed2d5ae7435b82eb4f3aee4e1a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965055"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320624"
 ---
 # <a name="walkthrough-outlining"></a>チュートリアル: アウトライン
 アウトラインの展開または折りたたみをするテキスト領域の種類を定義することでなどの言語ベースの機能を設定します。 言語サービスのコンテキストで領域を定義して独自ファイル名拡張子とコンテンツ タイプを定義し、または領域の定義をその型だけに適用するか、または領域の定義を ("text") などの既存のコンテンツ タイプに適用できます。 このチュートリアルでは、定義のアウトライン領域を表示する方法を示します。
@@ -34,9 +34,9 @@ ms.locfileid: "62965055"
 3. 既存のクラス ファイルを削除します。
 
 ## <a name="implement-an-outlining-tagger"></a>アウトラインのタガーを実装します。
- アウトライン領域がある種のタグでマークされている (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>)。 このタグは、標準の動作のアウトラインを提供します。 アウトライン表示の領域を展開または折りたたむことができます。 アウトライン表示の領域がプラス記号でマークされている (**+**) またはマイナス記号 a が折りたたまれている場合 (**-**) が展開されていて、展開された領域が縦線で区分されています。
+ アウトライン領域がある種のタグでマークされている (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>)。 このタグは、標準の動作のアウトラインを提供します。 アウトライン表示の領域を展開または折りたたむことができます。 アウトライン表示の領域がプラス記号でマークされている ( **+** ) またはマイナス記号 a が折りたたまれている場合 ( **-** ) が展開されていて、展開された領域が縦線で区分されています。
 
- 次の手順は、角かっこで区切られたすべての領域のアウトライン領域を作成するタガーを定義する方法を示します (**[**、**]**)。
+ 次の手順は、角かっこで区切られたすべての領域のアウトライン領域を作成するタガーを定義する方法を示します ( **[** 、 **]** )。
 
 ### <a name="to-implement-an-outlining-tagger"></a>アウトラインのタガーを実装するには
 
@@ -129,7 +129,7 @@ ms.locfileid: "62965055"
     ]
     ```
 
-4. 両方の角かっこを含むアウトライン領域が必要です。 始めかっこの左側にアウトライン領域を折りたたむにマイナス記号をクリックする必要があります。 ときに領域が折りたたまれている、省略記号 (*.*) 折りたたまれた領域とテキストを含むポップアップの左に表示する**ホバー テキスト**省略記号上にポインターを移動するときに表示する必要があります。
+4. 両方の角かっこを含むアウトライン領域が必要です。 始めかっこの左側にアウトライン領域を折りたたむにマイナス記号をクリックする必要があります。 ときに領域が折りたたまれている、省略記号 ( *.* ) 折りたたまれた領域とテキストを含むポップアップの左に表示する**ホバー テキスト**省略記号上にポインターを移動するときに表示する必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [チュートリアル: コンテンツの種類をファイル名拡張子にリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 95b085975a86db248517751fde7bd88c8bc2e35e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418469"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328762"
 ---
 # <a name="how-to-create-a-vsct-file"></a>方法: .Vsct ファイルを作成します。
 
-XML ベースの Visual Studio コマンド テーブル構成を作成するいくつかの方法があります (*.vsct*) ファイル。
+XML ベースの Visual Studio コマンド テーブル構成を作成するいくつかの方法があります ( *.vsct*) ファイル。
 
 - 新しい VSPackage を作成することができます、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]パッケージ テンプレート。
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - files [Visual Studio], opening and saving
 - editors [Visual Studio SDK], file persistence
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ca83cb6d2913e0c0a91f4a6e874640ae57c7708
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77a3417bc15bc9c4c6149b4e77dc4fdcebe5cd6e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860008"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314932"
 ---
 # <a name="opening-and-saving-project-items"></a>プロジェクト項目のオープンと保存
 新しいプロジェクトの種類を追加するときに開始タグとでプロジェクト ファイルの保存を管理する必要があります、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) です。 次のトピックでは、オープンとファイルを保存する別の方法について説明します。
@@ -31,7 +31,7 @@ ms.locfileid: "62860008"
 
  IDE を処理する方法の詳細な手順を説明します、**プログラムから開く**コマンド、標準のエディターのいくつかの選択肢を含むファイルを開くを確認します。
 
-- [方法: 開いているプロジェクト固有のエディター](../../extensibility/how-to-open-project-specific-editors.md)
+- [方法: プロジェクト固有のエディターを開く](../../extensibility/how-to-open-project-specific-editors.md)
 
  プロジェクトに固有のエディターを使用して、プロジェクト内の特定の種類のファイルが開かれることを指定するための手順について説明します。
 
@@ -39,7 +39,7 @@ ms.locfileid: "62860008"
 
  プロジェクトの種類のファイルの標準のエディターを開く IDE を有効にする方法を指定するための手順について説明します。
 
-- [方法: 開いているエディターを開いているドキュメントの](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [方法: 開いているドキュメントのエディターを開く](../../extensibility/how-to-open-editors-for-open-documents.md)
 
  開いているファイルのプロジェクトに固有のエディターを開く手順について説明します。
 

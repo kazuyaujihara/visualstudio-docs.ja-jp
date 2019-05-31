@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4532b7e566bbd315d9acbdef43198e0f91f5f195
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443055"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263551"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity の使用を開始する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "63443055"
   
  それ以外の場合で Unity を初めて使用するときには、基本的なチュートリアルを使用して小規模なものから始めます。 Unity の学習ページを参照して、手始めに作業できるサンプル プロジェクトのチュートリアルや、Unity を使用した独自のゲームの作成方法を学ぶためのレッスンを見つけます。 Unity の学習ページには、異なるいくつかのゲームのわかりやすいチュートリアルがあります。  
   
- [チュートリアル – Unity の学習ページ](http://unity3d.com/learn/tutorials/modules)  
+ [チュートリアル – Unity の学習ページ](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - Visual Studio Tools for Unity を使用するための Unity エディターの構成  
  プロジェクトで Visual Studio Tools for Unity を使用できるようにするには、Visual Studio を外部スクリプト エディターとして設定するだけです。 Unity エディターのメイン メニューで **[Edit]、[Preferences]** を選び、次に **[Unity Preferences]** ダイアログで **[External Tools]** を選びます。 次に、使用する Visual Studio のバージョンを **[External Script Editor]** プロパティに設定し (この Visual Studio バージョンに対応した Visual Studio Tools for Unity がインストールされている必要があります)、 **[Editor Attaching]** プロパティが設定されていることを確認します。  
@@ -90,7 +90,7 @@ ms.locfileid: "63443055"
   
  それ以外の場合で Unity を初めて使用するときには、基本的なチュートリアルを使用して小規模なものから始めます。 Unity の学習ページを参照して、手始めに作業できるサンプル プロジェクトのチュートリアルや、Unity を使用した独自のゲームの作成方法を学ぶためのレッスンを見つけます。 Unity の学習ページには、異なるいくつかのゲームのわかりやすいチュートリアルがあります。  
   
- [チュートリアル – Unity の学習ページ](http://unity3d.com/learn/tutorials/modules)  
+ [チュートリアル – Unity の学習ページ](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - Visual Studio Tools for Unity を使用するための Unity エディターの構成  
  既存の Unity プロジェクトを使って開始する場合、あるいはプロジェクトの作成時に Visual Studio Tools unitypackage をインポートしなかった場合は、この時点で unitypackage をインポートしなければなりません。 Unity エディターのメイン メニューで、 **[Assets]、[Import Package]、[Visual Studio 2015 Tools]** (インストールされているバージョンの Visual Studio 用オプションが表示されます) を選びます。  

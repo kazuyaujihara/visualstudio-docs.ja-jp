@@ -8,17 +8,17 @@ helpviewer_keywords:
 - selection, Visual Studio IDE
 - IDE, currency
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612549e9aceb7a9bad6da2a5388dedd277469bad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 23ce55a85fd6f1408c623a49fc16b8766c535dfc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908787"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318696"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE での選択と通貨
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]選択を使用してユーザーの情報がオブジェクトに現在選択されている統合開発環境 (IDE) の保持*コンテキスト*します。 選択範囲のコンテキストで Vspackage を活用する通貨の 2 つの方法で追跡。

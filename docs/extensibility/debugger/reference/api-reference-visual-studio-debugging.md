@@ -5,24 +5,24 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d415644897d7dd481f47c93a3b951db23fda843
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7f880596854eb376d386bc6a96d789c54767f39d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686354"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351860"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 参照 (Visual Studio のデバッグ)
 リファレンス セクションには、API、構文と、API のすべての要素の使用法を示すガイドの概念の概要とコード例のアソートメントが含まれています。 すべての参照は、カテゴリでアルファベット順に一覧表示されます。
 
  次の表は、一般的な`HRESULT`メソッドによって返される値。
 
-|名前|説明|[値]|
+|名前|説明|値|
 |----------|-----------------|-----------|
 |S_OK|成功。|0x00000000|
 |E_UNEXPECTED|予期しないエラー。|0x8000FFFF|
@@ -37,10 +37,10 @@ ms.locfileid: "56686354"
 |E_ACCESSDENIED|一般的なアクセス拒否エラーが発生します。|0x80070005|
 
 > [!NOTE]
->  ときに、[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]返しますメソッドをデバッグ`S_OK`、パラメーターのポインターが有効なすべては、検証が実施予定がないで out パラメーター ポインターと見なされますと`S_OK`が返されます。
+> ときに、[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]返しますメソッドをデバッグ`S_OK`、パラメーターのポインターが有効なすべては、検証が実施予定がないで out パラメーター ポインターと見なされますと`S_OK`が返されます。
 >
 > [!NOTE]
->  無効なまたは`NULL`[out] パラメーターは IDE のクラッシュを発生可能性があります。
+> 無効なまたは`NULL`[out] パラメーターは IDE のクラッシュを発生可能性があります。
 
 ## <a name="see-also"></a>関連項目
 - [インターフェイス](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)

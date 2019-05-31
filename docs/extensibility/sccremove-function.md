@@ -1,81 +1,86 @@
 ---
 title: SccRemove 関数 |Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 f1_keywords:
 - SccRemove
 helpviewer_keywords:
 - SccRemove function
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
-caps.latest.revision: 14
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
-ms.openlocfilehash: 2183a73536e7e4251958680b25a8909ea2bb714e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+ms.openlocfilehash: 70413c2e446f8ed226a58eb8ddfe62ede4a1d61f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62800316"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338618"
 ---
 # <a name="sccremove-function"></a>SccRemove 関数
-[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+この関数は、ソース管理システムからファイルを削除します。
 
-この関数は、ソース管理システムからファイルを削除します。  
-  
-## <a name="syntax"></a>構文  
-  
-```cpp#  
-SCCRTN SccRemove(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LPCSTR    lpComment,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
-);  
-```  
-  
-#### <a name="parameters"></a>パラメーター  
- pvContext  
- [in]ソース管理プラグイン コンテキスト構造体。  
-  
- hWnd  
- [in]ソース管理プラグインが提供される任意のダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。  
-  
- nFiles  
- [in]指定されたファイルの数、`lpFileNames`配列。  
-  
- lpFileNames  
- [in]削除するファイルの完全修飾のローカル パス名の配列。  
-  
- lpComment  
- [in]削除される各ファイルに適用されるコメントです。  
-  
- 方法は限られて  
- [in]コマンドのフラグ (未使用)。  
-  
- pvOptions  
- [in]ソース管理プラグインに固有のオプション。  
-  
-## <a name="return-value"></a>戻り値  
- この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。  
-  
-|[値]|説明|  
-|-----------|-----------------|  
-|SCC_OK|アンインストールが正常に完了しました。|  
-|SCC_E_FILENOTCONTROLLED|選択したファイルはソース管理下ではありません。|  
-|SCC_E_OPNOTSUPPORTED|ソース管理システムでは、この操作はサポートしません。|  
-|SCC_E_ISCHECKEDOUT|ユーザーが現在チェック アウトを持つために、ファイルを削除できません。|  
-|SCC_E_ACCESSFAILURE|ソース管理システムのネットワークまたは競合の問題の可能性へのアクセスに問題が発生しました。|  
-|SCC_E_NOTAUTHORIZED|この操作を実行できません。|  
-|SCC_E_NONSPECIFICERROR|不特定のエラーです。ファイルは削除されませんでした。|  
-|SCC_I_OPERATIONCANCELED|操作が完了する前に取り消されました。|  
-  
-## <a name="remarks"></a>Remarks  
- この関数は、ソース管理システムからファイルを削除しますが、ユーザーのローカル ハード ドライブからは削除されません。  
-  
-## <a name="see-also"></a>関連項目  
- [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="syntax"></a>構文
+
+```cpp
+SCCRTN SccRemove(
+   LPVOID    pvContext,
+   HWND      hWnd,
+   LONG      nFiles,
+   LPCSTR*   lpFileNames,
+   LPCSTR    lpComment,
+   LONG      fOptions,
+   LPCMDOPTS pvOptions
+);
+```
+
+#### <a name="parameters"></a>パラメーター
+ pvContext
+
+[in]ソース管理プラグイン コンテキスト構造体。
+
+ hWnd
+
+[in]ソース管理プラグインが提供される任意のダイアログ ボックスの親として使用できる IDE ウィンドウへのハンドル。
+
+ nFiles
+
+[in]指定されたファイルの数、`lpFileNames`配列。
+
+ lpFileNames
+
+[in]削除するファイルの完全修飾のローカル パス名の配列。
+
+ lpComment
+
+[in]削除される各ファイルに適用されるコメントです。
+
+ 方法は限られて
+
+[in]コマンドのフラグ (未使用)。
+
+ pvOptions
+
+[in]ソース管理プラグインに固有のオプション。
+
+## <a name="return-value"></a>戻り値
+ この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
+
+|[値]|説明|
+|-----------|-----------------|
+|SCC_OK|アンインストールが正常に完了しました。|
+|SCC_E_FILENOTCONTROLLED|選択したファイルはソース管理下ではありません。|
+|SCC_E_OPNOTSUPPORTED|ソース管理システムでは、この操作はサポートしません。|
+|SCC_E_ISCHECKEDOUT|ユーザーが現在チェック アウトを持つために、ファイルを削除できません。|
+|SCC_E_ACCESSFAILURE|ソース管理システムのネットワークまたは競合の問題の可能性へのアクセスに問題が発生しました。|
+|SCC_E_NOTAUTHORIZED|この操作を実行できません。|
+|SCC_E_NONSPECIFICERROR|不特定のエラーです。ファイルは削除されませんでした。|
+|SCC_I_OPERATIONCANCELED|操作が完了する前に取り消されました。|
+
+## <a name="remarks"></a>Remarks
+ この関数は、ソース管理システムからファイルを削除しますが、ユーザーのローカル ハード ドライブからは削除されません。
+
+## <a name="see-also"></a>関連項目
+- [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

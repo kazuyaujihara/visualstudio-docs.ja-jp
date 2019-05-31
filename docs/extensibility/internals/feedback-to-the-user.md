@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IDE, context
 - IDE, user feedback
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4503639e65650b70871c9bf23a26eac1d4892a5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2255a972dd7a889713e77fa686b348500c03ea7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909990"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328979"
 ---
 # <a name="feedback-to-the-user"></a>ユーザーへのフィードバック
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE)、視覚的なフィードバック関連の使用可能な機能は、ユーザーの現在の選択と選択のグローバル コンテキストに基づきます。 次の表では、別の選択のコンテキストで使用できる機能を示します。

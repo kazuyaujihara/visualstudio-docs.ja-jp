@@ -7,20 +7,20 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de25fca07642414ec42f17c2e458b90ce94041cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39b2af1cdf299b3e3f2c714fa569fa295a4e1d4e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925792"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315426"
 ---
 # <a name="evaluate-expressions"></a>式を評価します。
-式は、から渡された文字列から作成された、 **[自動変数]**、**ウォッチ**、 **[クイック ウォッチ]**、または**イミディ エイト**windows。 式が評価され、変数または引数とその値の型と名前を含む印刷文字列が生成されます。 この文字列は、対応する IDE ウィンドウに表示されます。
+式は、から渡された文字列から作成された、 **[自動変数]** 、**ウォッチ**、 **[クイック ウォッチ]** 、または**イミディ エイト**windows。 式が評価され、変数または引数とその値の型と名前を含む印刷文字列が生成されます。 この文字列は、対応する IDE ウィンドウに表示されます。
 
 ## <a name="implementation"></a>実装
  プログラムがブレークポイントで停止した場合、式が評価されます。 式自体はによって表される、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイスでは、解析された式をバインドし、指定された式の評価のコンテキスト内で評価できるように準備を表します。 スタック フレーム (DE) デバッグ エンジンを実装することで提供する式の評価コンテキストの決定、 [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイス。
