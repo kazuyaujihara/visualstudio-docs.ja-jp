@@ -3,17 +3,17 @@ title: Visual Studio 用の UX Essentials |Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e97aa60a983eef3034eab28f7835edc1abb6734
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45e4f1389317c67665d1b03e936a33380cb7ecf2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951830"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310804"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials for Visual Studio
 
@@ -31,7 +31,7 @@ ms.locfileid: "62951830"
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2.フォントと色の環境のサービスを使用します。
 
-- UI は現在を尊重する必要があります[環境フォント](fonts-and-formatting-for-visual-studio.md)オプション] ダイアログ ボックスで [フォントおよび色] ページでカスタマイズには、公開される場合を除きを設定します。
+- UI は現在を尊重する必要があります[環境フォント](fonts-and-formatting-for-visual-studio.md)オプション ダイアログ ボックスで [フォントおよび色] ページでカスタマイズには、公開される場合を除きを設定します。
 
 - UI 要素を使用する必要があります、 [VSColor Service](colors-and-styling-for-visual-studio.md)環境のトークンまたは機能固有のトークンを使用して共有します。
 
@@ -134,10 +134,10 @@ Visual Studio 内でのアンチ パターンは、UI を破棄する前に説�
 #### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>下線がハイパーリンクではないグループのラベルとして使用
  ハイパーリンクのみのテキストに下線を使用する必要があります。
 
- **正しくありません。**\
+ **正しくありません。** \
  ![ハイパーリンクが下線付きのテキストは、Visual Studio のアンチ パターンです。](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102 g_GroupLabelIncorrect")<br />ハイパーリンクが下線付きのテキストは、Visual Studio のアンチ パターンです。
 
- **よし：**\
+ **よし：** \
  ![スタイルが正しく、ハイパーリンク以外のテキストの表示非環境フォント。](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102 h_GroupLabelCorrect")<br />スタイルが正しく、ハイパーリンク以外のテキストの表示非環境フォント。
 
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>クリックすると、ポップアップ ダイアログでチェック ボックスの結果
@@ -165,4 +165,4 @@ Visual Studio 内でのアンチ パターンは、UI を破棄する前に説�
 
  **正しくありません。** ここをクリックして新しいプロジェクトを作成する方法についてはします。
 
- **よし：**「は作成方法は、新しいプロジェクトをでしょうか。」
+ **よし：** 「は作成方法は、新しいプロジェクトをでしょうか。」
