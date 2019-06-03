@@ -24,7 +24,7 @@ Visual Studio には、.NET コンパイラ プラットフォームのコア �
 
 ## <a name="to-install-nuget-analyzer-packages"></a>NuGet アナライザー パッケージをインストールするには
 
-1.  www.nuget.org をインストールするアナライザー パッケージを検索します。
+1. www.nuget.org をインストールするアナライザー パッケージを検索します。
 
    たとえば、したい場合があります[Microsoft FxCop アナライザーをインストール](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)コードの他のユーザーの間でのセキュリティとパフォーマンスの問題を確認します。 または、インストール[StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)コードベースでスタイルの問題を検索します。
 

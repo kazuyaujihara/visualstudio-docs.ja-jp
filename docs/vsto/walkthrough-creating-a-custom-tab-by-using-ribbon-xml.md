@@ -107,7 +107,7 @@ ms.locfileid: "63438572"
 
 1. **ソリューション エクスプ ローラー**を右クリックして**MyRibbon.cs**または**MyRibbon.vb**、 をクリックし、**オープン**します。
 
-2. 先頭に次のコードを追加、 **MyRibbon.cs**または**MyRibbon.vb**ファイル。  このコードによって、<xref:Microsoft.Office.Interop.Word> 名前空間のエイリアスが作成されます。
+2. 先頭に次のコードを追加、 **MyRibbon.cs**または**MyRibbon.vb**ファイル。 このコードによって、<xref:Microsoft.Office.Interop.Word> 名前空間のエイリアスが作成されます。
 
      [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]
      [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]
