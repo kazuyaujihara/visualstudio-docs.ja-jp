@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: デザイナーを使用して、SharePoint の Web パーツの作成 |Microsoft Docs'
+title: デザイナーを使用して、SharePoint の web パーツを作成します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a22d814ce50dea1ee67ed3bf1f071839e60a797
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9963c2f7e829e9d295ca254aa651e37e3ad08efd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965298"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401145"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>チュートリアル: デザイナーを使用して、SharePoint の web パーツを作成します。
 
@@ -49,7 +49,7 @@ SharePoint サイトの Web パーツを作成すれば、ユーザーはブラ�
 
 1. 開始[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を使用して、**管理者として実行**オプション。
 
-2. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+2. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
      **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
@@ -69,7 +69,7 @@ SharePoint サイトの Web パーツを作成すれば、ユーザーはブラ�
 
 1. Visual Web Developer デザイナーで、選択、**デザイン** タブのデザイン ビューに切り替えます。
 
-2. メニュー バーで **[表示]**、**[ツールボックス]** の順にクリックします。
+2. メニュー バーで **[表示]** 、 **[ツールボックス]** の順にクリックします。
 
 3. **標準**のノード、**ツールボックス**、選択、 **CheckBoxList**を制御して、次の手順のいずれかを実行します。
 
