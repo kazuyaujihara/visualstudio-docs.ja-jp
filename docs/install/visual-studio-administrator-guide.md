@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b89f8415d34a4facaca694db8507c911d279bf8f
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 61b3a2dfae667bac7c3a6a62682cdbd5b1a5feb4
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976128"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037507"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 管理者ガイド
 
@@ -165,3 +165,4 @@ ms.locfileid: "65976128"
 * [インストール構成をインポートまたはエクスポートする](import-export-installation-configurations.md)
 * [Visual Studio セットアップ アーカイブ](https://devblogs.microsoft.com/setup/tag/vs2017/)
 * [Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing/)
+* [同期自動読み込みの設定](../extensibility/synchronously-autoloaded-extensions.md)

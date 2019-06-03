@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 8e75f5a584dd0522240f8b4d45cb28107bca38e3
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60113411"
@@ -43,6 +43,6 @@ ms.locfileid: "60113411"
   
     - 使用する規則セットを選択します。  
   
-    - 選択**\<参照 >** を既存のカスタム規則セットを指定されていないリスト。  
+    - 選択 **\<参照 >** を既存のカスタム規則セットを指定されていないリスト。  
   
     - カスタム規則セットを定義します。 詳細については、次を参照してください。[カスタム規則セットの作成](../code-quality/creating-custom-code-analysis-rule-sets.md)です。

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: 使用法から生成機能のテスト ファースト開発'
+title: 使用法から生成機能を使ったテスト ファースト開発
 ms.date: 10/09/2017
 dev_langs:
 - VB
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3085e2f9b27d587f26fd93db06bc837527a78ff1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 186713daa3d4c913926779f79ffc61ff488578d5
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432036"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262849"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>チュートリアル: 使用法から生成機能のテスト ファースト開発
 
@@ -36,7 +36,7 @@ ms.locfileid: "63432036"
 
 1. C# または Visual Basic で、新しい **Windows クラス ライブラリ** プロジェクトを作成します。 使用している言語に応じて `GFUDemo_VB` または `GFUDemo_CS`という名前を付けます。
 
-2. **ソリューション エクスプローラー**の上部にあるソリューション アイコンを右クリックし、**[追加]** > **[新しいプロジェクト]** の順に選択します。
+2. **ソリューション エクスプローラー**の上部にあるソリューション アイコンを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。
 
 3. 新しい**単体テスト プロジェクト (.NET Framework)** プロジェクトを作成します。
 
@@ -50,9 +50,9 @@ ms.locfileid: "63432036"
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>クラス ライブラリ プロジェクトに参照を追加する
 
-1. **ソリューション エクスプローラー**で、単体クラス プロジェクトの **[参照]** エントリを右クリックし、**[参照の追加]** を選択します。
+1. **ソリューション エクスプローラー**で、単体クラス プロジェクトの **[参照]** エントリを右クリックし、 **[参照の追加]** を選択します。
 
-2. **[参照マネージャー]** ダイアログ ボックスで、**[プロジェクト]** を選択してからクラス ライブラリ プロジェクトを選択します。
+2. **[参照マネージャー]** ダイアログ ボックスで、 **[プロジェクト]** を選択してからクラス ライブラリ プロジェクトを選択します。
 
 3. **[OK]** を選択して **[参照マネージャー]** ダイアログ ボックスを閉じます。
 
@@ -75,9 +75,9 @@ ms.locfileid: "63432036"
 
 4. **クイック アクション** (電球) を選択するかクリックします。 `Automobile` 型が定義されていないことを示すエラー メッセージが表示されます。 ソリューションもいくつか表示されます。
 
-5. **[新しい型の生成]** をクリックして、**[型の生成]** ダイアログ ボックスを開きます。 このダイアログ ボックスでは、別のプロジェクトでの型の生成を含むオプションが提供されます。
+5. **[新しい型の生成]** をクリックして、 **[型の生成]** ダイアログ ボックスを開きます。 このダイアログ ボックスでは、別のプロジェクトでの型の生成を含むオプションが提供されます。
 
-6. **[プロジェクト]** の一覧で、**[GFUDemo\_VB]** または **[GFUDemo_CS]** をクリックして、テスト プロジェクトではなくクラス ライブラリ プロジェクトにファイルを追加するように Visual Studio に指示します。 **[新しいファイルの作成]** がまだ選択されていない場合は選択し、*Automobile.cs* または *Automobile.vb* という名前を付けます。
+6. **[プロジェクト]** の一覧で、 **[GFUDemo\_VB]** または **[GFUDemo_CS]** をクリックして、テスト プロジェクトではなくクラス ライブラリ プロジェクトにファイルを追加するように Visual Studio に指示します。 **[新しいファイルの作成]** がまだ選択されていない場合は選択し、*Automobile.cs* または *Automobile.vb* という名前を付けます。
 
      ![[新しい型の生成] ダイアログ ボックス](../ide/media/genotherdialog.png)
 
@@ -93,7 +93,7 @@ ms.locfileid: "63432036"
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. コードは `Automobile` の 2 つの未定義プロパティを参照するため、`Model` と `TopSpeed` の下に波下線が表示されます。 `Model` にカーソルを移動し、**クイック アクション**のエラー電球を選択してから、**[プロパティ 'Automobile.Model' を生成します]** を選択します。
+2. コードは `Automobile` の 2 つの未定義プロパティを参照するため、`Model` と `TopSpeed` の下に波下線が表示されます。 `Model` にカーソルを移動し、**クイック アクション**のエラー電球を選択してから、 **[プロパティ 'Automobile.Model' を生成します]** を選択します。
 
 3. `TopSpeed` プロパティのプロパティ スタブも同様に生成します。
 
@@ -107,11 +107,11 @@ ms.locfileid: "63432036"
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2. 赤い波線の下にある**クイック アクション**のエラー電球をクリックしてから、**['Automobile' にコンストラクターを生成します]** をクリックします。
+2. 赤い波線の下にある**クイック アクション**のエラー電球をクリックしてから、 **['Automobile' にコンストラクターを生成します]** をクリックします。
 
      `Automobile` クラス ファイルで、新しいコンストラクターがコンストラクター呼び出しで使用されているローカル変数の名前を調べ、 `Automobile` クラスで同じ名前のプロパティを見つけ、 `Model` および `TopSpeed` プロパティに引数値を格納するためのコードをコンストラクター本体に指定に指定したことがわかります
 
-3. 新しいコンストラクターを生成すると、 `DefaultAutomobileIsInitializedCorrectly`の既定のコンストラクター呼び出しの下に波線が表示されます。 `Automobile` クラスには、0 個の引数を受け取るコンストラクターがないことを示すエラー メッセージが表示されます。 パラメーターを持たない明示的な既定のコンストラクターを生成するには、**クイック アクション**のエラー電球をクリックし、**['Automobile' にコンストラクターを生成します]** をクリックします。
+3. 新しいコンストラクターを生成すると、 `DefaultAutomobileIsInitializedCorrectly`の既定のコンストラクター呼び出しの下に波線が表示されます。 `Automobile` クラスには、0 個の引数を受け取るコンストラクターがないことを示すエラー メッセージが表示されます。 パラメーターを持たない明示的な既定のコンストラクターを生成するには、**クイック アクション**のエラー電球をクリックし、 **['Automobile' にコンストラクターを生成します]** をクリックします。
 
 ### <a name="generate-a-stub-for-a-method"></a>メソッドのスタブを生成する
 仕様で、`Model` および `TopSpeed` プロパティが既定値以外に設定されている場合は、新しい `Automobile` を `IsRunning` 状態にできることが示されているとします。
@@ -121,17 +121,17 @@ ms.locfileid: "63432036"
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2. `myAuto.Start` メソッド呼び出しの**クイック アクション**のエラー電球をクリックしてから、**[メソッド 'Automobile.Start' を生成します]** をクリックします。
+2. `myAuto.Start` メソッド呼び出しの**クイック アクション**のエラー電球をクリックしてから、 **[メソッド 'Automobile.Start' を生成します]** をクリックします。
 
-3. `IsRunning` プロパティの**クイック アクション** (電球) をクリックしてから、**[プロパティ 'Automobile.IsRunning' を生成します]** をクリックします。
+3. `IsRunning` プロパティの**クイック アクション** (電球) をクリックしてから、 **[プロパティ 'Automobile.IsRunning' を生成します]** をクリックします。
 
      これで、`Automobile` クラスに `Start()` という名前のメソッドと `IsRunning` という名前のプロパティが含まれるようになりました。
 
 ### <a name="run-the-tests"></a>テストを実行
 
-1. **[テスト]** メニューで **[実行]** > **[すべてのテスト]** を選びます。
+1. **[テスト]** メニューで **[実行]**  >  **[すべてのテスト]** を選びます。
 
-     **[実行]** > **[すべてのテスト]** コマンドは、現在のソリューション用に作成されたテスト フレームワークですべてのテストを実行します。 この場合、2 つのテストがありますが、どちらも失敗することが予想されます。 `DefaultAutomobileIsInitializedCorrectly` テストは、 `Assert.IsTrue` 条件が `False`を返すため失敗します。 `AutomobileWithModelNameCanStart` テストは、 `Start` クラスの `Automobile` メソッドが例外をスローするため失敗します。
+     **[実行]**  >  **[すべてのテスト]** コマンドは、現在のソリューション用に作成されたテスト フレームワークですべてのテストを実行します。 この場合、2 つのテストがありますが、どちらも失敗することが予想されます。 `DefaultAutomobileIsInitializedCorrectly` テストは、 `Assert.IsTrue` 条件が `False`を返すため失敗します。 `AutomobileWithModelNameCanStart` テストは、 `Start` クラスの `Automobile` メソッドが例外をスローするため失敗します。
 
      次の図に **[テスト結果]** ウィンドウを示します。
 
@@ -153,7 +153,7 @@ ms.locfileid: "63432036"
 
 ### <a name="run-the-tests-again"></a>テストをもう一度実行する
 
-- **[テスト]** メニューの **[実行]** をポイントし、**[すべてのテスト]** をクリックします。
+- **[テスト]** メニューの **[実行]** をポイントし、 **[すべてのテスト]** をクリックします。
 
      今回はテストに合格します。 次の図に **[テスト結果]** ウィンドウを示します。
 

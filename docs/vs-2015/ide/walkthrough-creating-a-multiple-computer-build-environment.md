@@ -113,7 +113,7 @@ ms.locfileid: "66263013"
   
    - %ProgramFiles%\Windows Kits\8.0\References\  
   
-     次に示す他の Windows 8 キットもインストールされている場合:   
+     次に示す他の Windows 8 キットもインストールされている場合:  
   
    - Microsoft Windows アセスメント & デプロイメント キット  
   

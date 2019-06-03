@@ -7,26 +7,26 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Office 365 特典について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 9f3df6923101bf5b8b4a2592460e96b57416c1c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41f30d01dab1adf98d50789c4ebd418a7f002fb8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947729"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263124"
 ---
-# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Office 365 Pro Plus
+# <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Visual Studio Subscription の Office 365 ProPlus
 
-最高の作品を作りましょう。 常に最新のアプリでどこでも作業できます。 Office 365 Pro Plus は、Word、Excel、PowerPoint、OneNote、Outlook、Publisher、Access (Publisher と Access は PC 上でのみ使用できます) などの Premium アプリに付属するサブスクリプションです。 これらのアプリは、PC、Mac、iPad、iPhone、Android タブレット、Android フォンなどの複数のデバイスにインストールできます。 Office 365 には、1 TB の OneDrive ストレージ、60 分間/月の Skype、Microsoft のチャットと電話のサポートなどのサービスも付属しています。 サブスクリプションがある場合、最新バージョンのアプリを入手し、更新プログラムがリリースされたときに自動的に受け取ることができます。
+最高の作品を作りましょう。 常に最新のアプリでどこでも作業できます。 Office 365 ProPlus は、Word、Excel、PowerPoint、OneNote、Outlook、Publisher、Access (Publisher と Access は PC 上でのみ使用できます) などの Premium アプリに付属するサブスクリプションです。 これらのアプリは、PC、Mac、iPad、iPhone、Android タブレット、Android フォンなどの複数のデバイスにインストールできます。 Office 365 には、1 TB の OneDrive ストレージ、60 分間/月の Skype、Microsoft のチャットと電話のサポートなどのサービスも付属しています。 サブスクリプションがある場合、最新バージョンのアプリを入手し、更新プログラムがリリースされたときに自動的に受け取ることができます。
 
-## <a name="getting-started-with-office-365-pro-plus"></a>Office 365 Pro Plus の概要
+## <a name="getting-started-with-office-365-proplus"></a>Office 365 ProPlus の概要
 
-次の手順で Office 365 Pro Plus をダウンロードし、アクティブ化します。
+次の手順で Office 365 ProPlus をダウンロードし、アクティブにします。
 1. Visual Studio Enterprise サブスクリプションにサインインします。
 2. **[ダウンロード]** タブをクリックします。
 3. おすすめダウンロード リストが表示されます。 Office リストから **[Office 365]** を選択します。
    > [!div class="mx-imgBorder"]
    > ![Office 365 のダウンロード](_img/vs-office365/vs-office365-downloads.png)
-0. Office 365 をインストールするには、プロダクト キーが必要です。  Office 365 リストにある **[キーの取得]** をクリックします。
+0. Office 365 ProPlus をインストールするには、プロダクト キーが必要です。  Office 365 リストにある **[キーの取得]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![Office 365 のプロダクト キーの入手](_img/vs-office365/vs-office365-get-key.png)
 0. フライ アウト ウィンドウに、既に要求しているすべてのキーと、利用可能なキーが表示されます。  新しいキーを入手するには、**Office Professional Plus 2019** リストにある **[キーの要求]** をクリックします。
@@ -38,7 +38,7 @@ ms.locfileid: "62947729"
    > [!div class="mx-imgBorder"]
    > ![Office 365 のダウンロードの開始](_img/vs-office365/vs-office365-download-button.png)
 0. Microsoft アカウントでサインインします (既にサインインしている場合は **[次へ]** をクリックします)。
-0. プロダクト キー、国または地域、言語を入力し、**[次へ]** をクリックします。
+0. プロダクト キー、国または地域、言語を入力し、 **[次へ]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![Office 365 のプロダクト キーの入力](_img/vs-office365/vs-office365-enter-key.png)
 0. もう一度 **[次へ]** をクリックします。

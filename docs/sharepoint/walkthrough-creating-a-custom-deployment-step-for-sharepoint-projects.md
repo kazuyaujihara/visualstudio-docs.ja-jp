@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: SharePoint プロジェクトに対するカスタムの配置手順の作成 |Microsoft Docs'
+title: SharePoint プロジェクトのカスタム配置手順を作成します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430433"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401091"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>チュートリアル: SharePoint プロジェクトのカスタム配置手順を作成します。
   SharePoint プロジェクトを展開するときに、Visual Studio は、特定の順序で一連の展開の手順を実行します。 Visual Studio には、多くの組み込みの配置手順が含まれていますが、独自に作成することもできます。
@@ -69,7 +69,7 @@ ms.locfileid: "63430433"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を起動します。
 
-2. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+2. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 3. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual c#** または**Visual Basic**ノードを選択し、**機能拡張**ノード。
 

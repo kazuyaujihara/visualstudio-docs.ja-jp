@@ -1,5 +1,5 @@
 ---
-title: プロファイラーのコマンド ラインを使用したスタンドアロン アプリケーションの詳細なタイミング データの収集 | Microsoft Docs
+title: プロファイラーのコマンド ライン:スタンドアロン アプリのタイミング データの詳細
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bae9bbdff28312c36af91af57368d6b87028d44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13bc632d70b3d477b70f6e947e55d5c82c6ab064
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581341"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262888"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>プロファイラーのコマンド ラインを使用したスタンドアロン アプリケーションの詳細なタイミング データの収集
 このセクションでは、コマンド ラインからインストルメンテーション メソッドを使用して、クライアント (スタンドアロン) コンポーネントの詳細なパフォーマンス データを収集する手順とオプションについて説明します。

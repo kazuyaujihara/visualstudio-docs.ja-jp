@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 735874abd1f62ecf121713a18ab05b58d20d908e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: cf1c226fceff6ea17a7f83d750a93d6406a31c7d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686097"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263731"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>既存のアプリケーションを MSBuild 15 用に更新する
 
@@ -71,15 +71,17 @@ Microsoft.Build.Locator パッケージを参照すると、アプリケーシ�
 
 プロジェクトをビルドし、出力ディレクトリを調べて、出力ディレクトリに *Microsoft.Build.\*.dll* アセンブリ (次の手順で追加される *Microsoft.Build.Locator.dll* 以外) が含まれないことを確認します。
 
-### <a name="add-package-reference"></a>パッケージ参照を追加する
+### <a name="add-package-reference-for-microsoftbuildlocator"></a>Microsoft.Build.Locator のパッケージ参照を追加する
 
-NuGet パッケージの参照を [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/) に追加します。
+[Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/) の NuGet パッケージ参照を追加します。
 
 ```xml
     <PackageReference Include="Microsoft.Build.Locator">
       <Version>1.1.2</Version>
     </PackageReference>
 ```
+
+Microsoft.Build.Locator パッケージに対して `ExcludeAssets=runtime` を指定しないでください。
 
 ### <a name="register-instance-before-calling-msbuild"></a>MSBuild を呼び出す前にインスタンスを登録する
 

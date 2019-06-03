@@ -23,7 +23,7 @@ ms.locfileid: "62565161"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf ファイルのアップグレード
 
-このトピックでは、データベース ファイルをアップグレードするためのオプションを説明します (*.mdf*)、新しいバージョンの Visual Studio をインストールした後。 手順についてには、次のタスクが含まれています。
+このトピックでは、データベース ファイルをアップグレードするためのオプションを説明します ( *.mdf*)、新しいバージョンの Visual Studio をインストールした後。 手順についてには、次のタスクが含まれています。
 
 - 新しいバージョンの SQL Server Express LocalDB を使用するデータベース ファイルをアップグレードします。
 
@@ -33,7 +33,7 @@ ms.locfileid: "62565161"
 
 - 既定のデータベース エンジンを SQL Server Express を行う
 
-Visual Studio を使用してデータベース ファイルを含むプロジェクトを開くことができます (*.mdf*) 以前のバージョンの SQL Server Express または LocalDB を使用して作成されました。 ただしを Visual Studio でプロジェクトの開発を続行するには、そのバージョンの SQL Server Express または Visual Studio と同じコンピューターにインストールされている LocalDB であるか、データベース ファイルをアップグレードする必要があります。 データベース ファイルをアップグレードする場合は、以前のバージョンの SQL Server Express または LocalDB を使用してアクセスできません。
+Visual Studio を使用してデータベース ファイルを含むプロジェクトを開くことができます ( *.mdf*) 以前のバージョンの SQL Server Express または LocalDB を使用して作成されました。 ただしを Visual Studio でプロジェクトの開発を続行するには、そのバージョンの SQL Server Express または Visual Studio と同じコンピューターにインストールされている LocalDB であるか、データベース ファイルをアップグレードする必要があります。 データベース ファイルをアップグレードする場合は、以前のバージョンの SQL Server Express または LocalDB を使用してアクセスできません。
 
 また、ファイルのバージョンが SQL Server Express または現在インストールされている LocalDB のインスタンスとの互換性がない場合、以前のバージョンの SQL Server Express または LocalDB を通じて作成されたデータベース ファイルをアップグレードするように求め可能性があります。 この問題を解決するには、Visual Studio は、ファイルをアップグレードすることを求められます。
 
@@ -63,7 +63,7 @@ Visual Studio を使用してデータベース ファイルを含むプロジ�
 
     - **データ ソース**: `Microsoft SQL Server (SqlClient)`
 
-    - **サーバー名**: 
+    - **サーバー名**:
 
         - 既定のバージョンを使用する:`(localdb)\MSSQLLocalDB`します。  これを指定 ProjectV12 または ProjectV13 のいずれかによっては、Visual Studio のバージョンがインストールされているし、最初の LocalDB インスタンスの作成時にします。 **MSSQLLocalDB**ノード**SQL Server オブジェクト エクスプ ローラー**ポイントにバージョンを示しています。
 

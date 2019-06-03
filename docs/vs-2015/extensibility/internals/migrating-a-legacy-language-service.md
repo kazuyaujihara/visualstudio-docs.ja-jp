@@ -61,7 +61,7 @@ ms.locfileid: "63434373"
   
     - **デバッグ** タブで、**外部プログラムの開始**ボックスに「  **\<Visual Studio インストール パス > \Common7\IDE\devenv.exe。** します。  
   
-         **コマンドライン引数**ボックスに、入力/**/rootsuffix Exp**します。  
+         **コマンドライン引数**ボックスに、入力/ **/rootsuffix Exp**します。  
   
 7. 次の参照を更新します。  
   
@@ -105,7 +105,7 @@ ms.locfileid: "63434373"
   
     - ファイルを保存して閉じます。  
   
-11. ソリューションをビルドします。 ビルドされたファイルに配置されます **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**します。  
+11. ソリューションをビルドします。 ビルドされたファイルに配置されます **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** します。  
   
 12. デバッグを開始します。 Visual Studio の 2 番目のインスタンスが開かれます。  
   

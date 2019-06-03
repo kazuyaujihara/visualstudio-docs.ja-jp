@@ -120,7 +120,7 @@ Visual Studio 2015 と Visual Studio 2017 のバージョンのテンプレー�
 
 ```
 
- によって提供される情報、 [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)要素は変わりません。  **\<VSTemplateContainer >** 要素は、関連付けられたテンプレートの .vstemplate ファイルを指します。
+ によって提供される情報、 [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)要素は変わりません。 **\<VSTemplateContainer >** 要素は、関連付けられたテンプレートの .vstemplate ファイルを指します。
 
  Visual Studio 2015 によって作成された既定の項目 .vstemplate ファイルを次に示します。
 
@@ -172,7 +172,7 @@ Visual Studio 2015 と Visual Studio 2017 のバージョンのテンプレー�
 </VSTemplateManifest>
 ```
 
- によって提供される情報、  **\<TemplateData >** 要素は変わりません。  **\<VSTemplateContainer >** 要素は、関連付けられたテンプレートの .vstemplate ファイルを指します
+ によって提供される情報、  **\<TemplateData >** 要素は変わりません。 **\<VSTemplateContainer >** 要素は、関連付けられたテンプレートの .vstemplate ファイルを指します
 
  .Vstman ファイルのさまざまな要素の詳細については、次を参照してください。 [Visual Studio テンプレート マニフェスト スキーマ参照](../extensibility/visual-studio-template-manifest-schema-reference.md)します。
 

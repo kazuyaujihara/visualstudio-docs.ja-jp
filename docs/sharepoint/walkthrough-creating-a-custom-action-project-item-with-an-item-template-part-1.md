@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: 項目テンプレートを使用したカスタム動作プロジェクト項目の作成、パート 1 |Microsoft Docs'
+title: 項目テンプレート、第 1 部でのカスタム動作プロジェクト項目を作成します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9417c2116dde909bda948e7d9140d7f52b090d68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3e00d87079fe4986dc378540c1456508c2afa0b7
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430477"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401113"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>チュートリアル: 項目テンプレート、第 1 部でのカスタム動作プロジェクト項目を作成します。
   Visual Studio の SharePoint プロジェクト システムは、プロジェクト項目の種類を独自に作成することによって拡張することができます。 このチュートリアルでは、SharePoint サイトのカスタム アクションを作成する SharePoint プロジェクトに追加できるプロジェクト項目を作成します。 カスタム アクションにメニュー項目の追加、**サイトの操作**SharePoint サイトのメニュー。
@@ -74,7 +74,7 @@ ms.locfileid: "63430477"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を起動します。
 
-2. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+2. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 3. 上部にある一覧で、**新しいプロジェクト** ダイアログ ボックスに、必ず **.NET Framework 4.5**が選択されています。
 
@@ -159,7 +159,7 @@ ms.locfileid: "63430477"
 
 #### <a name="to-create-a-custom-icon-for-the-project-item"></a>プロジェクト項目のカスタム アイコンを作成するには
 
-1. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **ProjectItemDefinition**プロジェクトで、選択**追加**を選び、**新しい項目.**.
+1. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **ProjectItemDefinition**プロジェクトで、選択**追加**を選び、**新しい項目.** .
 
 2. プロジェクト項目の一覧で選択、**アイコン ファイル**項目。
 

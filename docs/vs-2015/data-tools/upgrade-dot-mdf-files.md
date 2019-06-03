@@ -72,7 +72,7 @@ ms.locfileid: "63424918"
   
    - **データ ソース**: `Microsoft SQL Server (SqlClient)`  
   
-   - **サーバー名**:   
+   - **サーバー名**:  
   
        - 既定のバージョンを使用する:`(localdb)\MSSQLLocalDB`します。  これを指定 ProjectV12 または ProjectV13 のいずれかによっては、Visual Studio のバージョンがインストールされているし、最初の LocalDB インスタンスの作成時にします。 **MSSQLLocalDB**ノード**SQL Server オブジェクト エクスプ ローラー**ポイントにバージョンを示しています。  
   

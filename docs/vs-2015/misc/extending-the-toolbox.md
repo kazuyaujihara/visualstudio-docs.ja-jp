@@ -18,7 +18,7 @@ ms.lasthandoff: 05/15/2019
 ms.locfileid: "65686932"
 ---
 # <a name="extending-the-toolbox"></a>ツールボックスの拡張
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ツールボックス** には、IDE のドラッグ アンド ドロップ メカニズムを利用してエディターとデザイナーに機能を提供するオブジェクトのコレクションが用意されています。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ツールボックス** には、IDE のドラッグ アンド ドロップ メカニズムを利用してエディターとデザイナーに機能を提供するオブジェクトのコレクションが用意されています。  
   
  VSPackage が [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ツールボックス**と連携して動作する方法には、次の 2 つの基本的な方法があります。  
   

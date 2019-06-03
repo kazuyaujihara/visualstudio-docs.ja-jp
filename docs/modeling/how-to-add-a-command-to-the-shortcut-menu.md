@@ -147,7 +147,7 @@ Managed Extension Framework (MEF) には、図のメニューのメニュー コ
 
 ## <a name="CommandSet"></a> コマンドの動作を定義します。
 
-DSL には、DslPackage\GeneratedCode\CommandSet.cs で宣言される一部のクラスで実装されているコマンドが既に存在しています。 新しいコマンドを追加するには、同じクラスの部分的な宣言を含む新しいファイルを作成して、このクラスを拡張する必要があります。 通常、クラスの名前は *\<YourDslName >*`CommandSet`します。 クラスの名前を確認してその内容を調べることによって開始すると便利です。
+DSL には、DslPackage\GeneratedCode\CommandSet.cs で宣言される一部のクラスで実装されているコマンドが既に存在しています。 新しいコマンドを追加するには、同じクラスの部分的な宣言を含む新しいファイルを作成して、このクラスを拡張する必要があります。 通常、クラスの名前は *\<YourDslName >* `CommandSet`します。 クラスの名前を確認してその内容を調べることによって開始すると便利です。
 
 コマンド セット クラスは、<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> から派生しています。
 

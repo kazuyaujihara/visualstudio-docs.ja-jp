@@ -52,16 +52,16 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="invalid-options"></a>無効なオプション  
  以下のオプションは、**PF** と同じコマンド ラインでは指定できません。  
   
- **Timer**[**:**`Cycles`]  
+ **Timer**[ **:** `Cycles`]  
  サンプリング イベントをプロセッサのクロック サイクルに設定し、必要に応じてサンプリング間隔を `Cycles` に設定します。 既定の Timer 間隔は 10,000,000 です。  
   
- **Sys**[**:**`Events`]  
+ **Sys**[ **:** `Events`]  
  サンプリング イベントを、プロファイリングされたアプリケーションからオペレーティング システムのカーネル (syscalls) への呼び出しに設定し、必要に応じて、サンプリング間隔を `Events` に設定します。 既定の Sys 間隔は 10 です。  
   
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]]  
  サンプリング イベントを、`Name` で指定された CPU パフォーマンス カウンターに設定し、サプリング間隔を `Reload` に設定します。  
   
- **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
  .NET メモリ データを収集します。 既定 (**Allocation**) では、データはメモリの割り当てイベントごとに収集されます。 **Lifetime** パラメーターが指定されている場合、ガベージ コレクション イベントごとのデータも収集されます。  
   
 ## <a name="example"></a>例  

@@ -482,11 +482,11 @@ public interface IVsInfoBarUIEvents
 
  ![フィールドの検証&#40;空白&#41;](../../extensibility/ux-guidelines/media/0905-01-fieldvalidation.png "0905 01_FieldValidation")
 
- フィールドが必要な場合があります透かしテキストを示す**\<必要 >** フィールドの背景が光を指定する必要があります黄色 (VSColor: `Environment.ControlEditRequiredBackground`) と、フォア グラウンドが灰色になります (VSColor: `Environment.ControlEditRequiredHintText`)。
+ フィールドが必要な場合があります透かしテキストを示す **\<必要 >** フィールドの背景が光を指定する必要があります黄色 (VSColor: `Environment.ControlEditRequiredBackground`) と、フォア グラウンドが灰色になります (VSColor: `Environment.ControlEditRequiredHintText`)。
 
  ![フィールドのラベルが"Required"検証](../../extensibility/ux-guidelines/media/0905-02-fieldvalidationrequired.png "0905 02_FieldValidationRequired")
 
- コントロールの状態が判断できる*に入力された無効なコンテンツ*別のコントロールにフォーカスを移動するときか、または、ユーザーが [OK] のコミット] ボタンをクリックしたときまたはユーザーがドキュメントまたはフォームを保存するときにします。
+ コントロールの状態が判断できる*に入力された無効なコンテンツ*別のコントロールにフォーカスを移動するときか、または、ユーザーが [OK] のコミット ボタンをクリックしたときまたはユーザーがドキュメントまたはフォームを保存するときにします。
 
  無効なコンテンツの状態が確認された場合、コントロールの内部または同様の横にアイコンが表示されます。 アイコンまたはコントロールのいずれかのポインターを合わせると、エラーを説明するツールヒントが表示されます。 さらに、1 ピクセルの枠線が無効な状態を作成しているコントロールの周囲に表示されます。
 

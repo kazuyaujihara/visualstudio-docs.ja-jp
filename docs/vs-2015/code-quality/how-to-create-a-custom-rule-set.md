@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045656"
@@ -59,7 +59,7 @@ ms.locfileid: "60045656"
   
 2. **プロパティ**] タブで [**コード分析**します。  
   
-3. 選択**\<複数ルールの設定... を選択 >** から**この規則セットを実行**します。  
+3. 選択 **\<複数ルールの設定... を選択 >** から**この規則セットを実行**します。  
   
 4. **の追加と削除規則セット**ダイアログ ボックスで、規則セットをクリックして、新しい規則セットを基にしておく**OK**。  
   

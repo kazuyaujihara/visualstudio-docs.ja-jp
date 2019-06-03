@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: Entity Framework および Visual Studio 2019 を使用して ASP.NET Core Web アプリを作成する'
+title: Entity Framework と Visual Studio 2019 を使った ASP.NET Core Web アプリ
 titleSuffix: ''
 description: ASP.NET Core Web アプリを作成する前に、まず、このビデオ チュートリアルとステップ バイ ステップの手順に従って Visual Studio 2019 をインストールする方法を学びます。
 ms.custom: get-started
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 711082c70c6174bdf3363ddb12d233ceb3f78f0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6668648668ab71e033d1341d71ecf5c7c2a47554
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838977"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261720"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>チュートリアル: Entity Framework と Visual Studio 2019 を使用して、最初の ASP.NET Core アプリを作成する
 
@@ -48,7 +48,7 @@ _Visual Studio をインストールして、最初の ASP.NET Core アプリを
 
 ## <a name="start-the-installer"></a>インストーラーを起動する
 
-ダウンロードが完了したら、**[実行]** をクリックして、インストーラーを起動します。
+ダウンロードが完了したら、 **[実行]** をクリックして、インストーラーを起動します。
 
 ![Visual Studio 2019 のインストーラー](media/vs-2019/vs2019-installer.png)
 
@@ -64,13 +64,13 @@ Visual Studio は、さまざまなタイプの開発に使用できます。ま
 
 ## <a name="run-visual-studio-for-the-first-time"></a>Visual Studio を初めて実行する
 
-Visual Studio は、インストーラーの処理が完了すると自動的に起動します。 サインインを要求される場合がありますが (サインインを行うと、便利な機能を利用できます)、ここでは、後でサインインすることを選択します。 次に、テーマと開発の設定を選択します。 これらの設定を選択すると、最初のプロジェクトを開始する準備が整います。 **[新しいプロジェクトの作成]** をクリックしてから、**[ASP.NET Core Web アプリケーション]** を選択します。
+Visual Studio は、インストーラーの処理が完了すると自動的に起動します。 サインインを要求される場合がありますが (サインインを行うと、便利な機能を利用できます)、ここでは、後でサインインすることを選択します。 次に、テーマと開発の設定を選択します。 これらの設定を選択すると、最初のプロジェクトを開始する準備が整います。 **[新しいプロジェクトの作成]** をクリックしてから、 **[ASP.NET Core Web アプリケーション]** を選択します。
 
 ![Visual Studio 2019 の ASP.NET Core Web アプリケーション プロジェクトの新規作成](media/vs-2019/vs2019-create-new-project.png)
 
 ## <a name="explore-aspnet-core-project-types"></a>ASP.NET Core プロジェクト タイプを探索する
 
-プロジェクトの名前と場所を選択したら、**[作成]** を選択します。 ASP.NET Core アプリケーションに使用するテンプレートを選択します。 次のオプションから選択できます。
+プロジェクトの名前と場所を選択したら、 **[作成]** を選択します。 ASP.NET Core アプリケーションに使用するテンプレートを選択します。 次のオプションから選択できます。
 
 - [空]。 ゼロから開始できる空のプロジェクト テンプレートです。
 - [API]。 Web API に最適です。
@@ -88,7 +88,7 @@ Visual Studio は、インストーラーの処理が完了すると自動的に
 - [職場または学校アカウント]。 このオプションでは、認証用に Active Directory、Azure AD、または Office 365 が使用されます。
 - [Windows 認証]。 イントラネット アプリケーションに適しています。
 
-認証なしの標準の Web アプリケーション テンプレートを選択して、**[OK]** をクリックします。
+認証なしの標準の Web アプリケーション テンプレートを選択して、 **[OK]** をクリックします。
 
 ![Visual Studio 2019 の ASP.NET Core プロジェクトのオプションの選択](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 

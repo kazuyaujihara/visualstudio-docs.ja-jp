@@ -85,7 +85,7 @@ ms.locfileid: "66262939"
 
    - %ProgramFiles%\Windows Kits\8.0\References\
 
-   次に示す他の Windows 8 キットもインストールされている場合: 
+   次に示す他の Windows 8 キットもインストールされている場合:
 
    - Microsoft Windows アセスメント & デプロイメント キット
 
@@ -254,7 +254,7 @@ MSBuild 用の設定を構成するには、レジストリ エントリを作�
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>vcvarsall.bat を使用して環境変数を設定する
 
-ビルド コンピューターで**コマンド プロンプト** ウィンドウを開き、*%Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat* を実行します。 使用するツールセット (x86、ネイティブ x64、x64 クロス コンパイラ) を指定するには、コマンド ライン引数を使用します。 コマンド ライン引数を指定しなかった場合は、x86 のツールセットが使用されます。
+ビルド コンピューターで**コマンド プロンプト** ウィンドウを開き、 *%Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat* を実行します。 使用するツールセット (x86、ネイティブ x64、x64 クロス コンパイラ) を指定するには、コマンド ライン引数を使用します。 コマンド ライン引数を指定しなかった場合は、x86 のツールセットが使用されます。
 
 次の表では、*vcvarsall.bat* でサポートされている引数を説明しています。
 
@@ -330,7 +330,7 @@ Azure Pipelines を使用して Visual Studio プロジェクトとソリュー�
 
      ここに示す手順では、このディレクトリを %Depot% と示します。
 
-2. このチュートリアルの「[ホスト コンピューターからビルド コンピューターにファイルをコピーする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)」の説明に従って、ディレクトリとファイルをコピーします。ただし、コピー先は、先ほど作成した *%Depot%* ディレクトリ内とします。 たとえば、*%ProgramFiles%\Windows Kits\8.0\bin* からのコピー先は *%Depot%\Windows Kits\8.0\bin* になります。
+2. このチュートリアルの「[ホスト コンピューターからビルド コンピューターにファイルをコピーする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)」の説明に従って、ディレクトリとファイルをコピーします。ただし、コピー先は、先ほど作成した *%Depot%* ディレクトリ内とします。 たとえば、 *%ProgramFiles%\Windows Kits\8.0\bin* からのコピー先は *%Depot%\Windows Kits\8.0\bin* になります。
 
 3. *%Depot%* にファイルを貼り付けたら、次の変更を行います。
 

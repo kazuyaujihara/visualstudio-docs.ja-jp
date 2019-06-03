@@ -148,7 +148,7 @@ ms.locfileid: "63426942"
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
 ## <a name="CommandSet"></a> コマンドの動作を定義します。  
- DSL には、DslPackage\GeneratedCode\CommandSet.cs で宣言される一部のクラスで実装されているコマンドが既に存在しています。 新しいコマンドを追加するには、同じクラスの部分的な宣言を含む新しいファイルを作成して、このクラスを拡張する必要があります。 通常、クラスの名前は *\<YourDslName >*`CommandSet`します。 最初にクラスの名前を検証し、クラスの内容を調べておくと便利です。  
+ DSL には、DslPackage\GeneratedCode\CommandSet.cs で宣言される一部のクラスで実装されているコマンドが既に存在しています。 新しいコマンドを追加するには、同じクラスの部分的な宣言を含む新しいファイルを作成して、このクラスを拡張する必要があります。 通常、クラスの名前は *\<YourDslName >* `CommandSet`します。 最初にクラスの名前を検証し、クラスの内容を調べておくと便利です。  
   
  コマンド セット クラスは、<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> から派生しています。  
   

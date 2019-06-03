@@ -10,7 +10,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1312d61b2d287a5dd8cb757b73e818a9e9cb2241
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60110038"
@@ -31,7 +31,7 @@ ms.locfileid: "60110038"
   
 ## <a name="createClassLibrary"></a> ネイティブと Windows ランタイム ライブラリを作成するには  
   
-1. メニュー バーで、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
+1. メニュー バーで、 **[ファイル]** 、 **[新規作成]** 、 **[プロジェクト]** の順にクリックします。  
   
 2. テンプレートの一覧で展開**Visual C**、 **Windows ストア**、クリックして、 **DLL (Windows ストア アプリ)** テンプレート。 **名前**ボックスで、指定`NativeMath`、選択し、 **OK**ボタン。  
   
@@ -55,13 +55,13 @@ ms.locfileid: "60110038"
   
      [!code-cpp[CreatingAnSDKUsingCpp#4](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathwrt/class1.cpp#4)]  
   
-9. メニュー バーの **[ビルド]**、 **[ソリューションのビルド]** の順にクリックします。  
+9. メニュー バーの **[ビルド]** 、 **[ソリューションのビルド]** の順にクリックします。  
   
 ## <a name="createVSIX"></a> NativeMathVSIX 拡張機能プロジェクトを作成するには  
   
 1. **ソリューション エクスプ ローラー**、ショートカット メニューを開き**ソリューション 'NativeMath'** を選び、**追加**、**新しいプロジェクト**します。  
   
-2. テンプレートの一覧で  **Visual c#**、**拡張**、し、 **VSIX パッケージ**します。 **名前**ボックスで、指定**NativeMathVSIX**、選択し、 **OK**ボタン。  
+2. テンプレートの一覧で  **Visual c#** 、**拡張**、し、 **VSIX パッケージ**します。 **名前**ボックスで、指定**NativeMathVSIX**、選択し、 **OK**ボタン。  
   
 3. VSIX マニフェスト デザイナーが表示されたら、それを閉じます。  
   
@@ -133,7 +133,7 @@ ms.locfileid: "60110038"
   
      この手順を繰り返します、 **SDKManifest.xml**ファイル。  
   
-16. メニュー バーの **[ビルド]**、 **[ソリューションのビルド]** の順にクリックします。  
+16. メニュー バーの **[ビルド]** 、 **[ソリューションのビルド]** の順にクリックします。  
   
 17. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **NativeMathVSIX**プロジェクトを選び、**ファイル エクスプ ローラーでフォルダーを開く**します。  
   
@@ -143,7 +143,7 @@ ms.locfileid: "60110038"
   
 ## <a name="createSample"></a> クラス ライブラリを使用するサンプル アプリを作成するには  
   
-1. メニュー バーで、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
+1. メニュー バーで、 **[ファイル]** 、 **[新規作成]** 、 **[プロジェクト]** の順にクリックします。  
   
 2. テンプレートの一覧で  **Visual C**、 **Windows ストア**、し、**空のアプリ**します。 **名前**ボックスで、指定**NativeMathSDKSample**、選択し、 **OK**ボタン。  
   

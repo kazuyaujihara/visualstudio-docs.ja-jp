@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: ビジネス データを使用して SharePoint に外部リストの作成 |Microsoft Docs'
+title: ビジネス データを使用して、SharePoint に外部リストを作成します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf9c7d13e6aaac85d3bac4254247a3c07b39b5c3
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965220"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401067"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>チュートリアル: ビジネス データを使用して SharePoint に外部リストを作成します。
 
@@ -66,11 +66,11 @@ ms.locfileid: "62965220"
 
 6. **ソリューション エクスプ ローラー**、SharePoint プロジェクト ノードを選択します。
 
-7. メニュー バーで **[プロジェクト]** > **[新しい項目の追加]** の順に選択します。
+7. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
      **[新しい項目の追加]** ダイアログ ボックスが開きます。
 
-8. **テンプレート**ウィンドウで、選択**ビジネス データ接続モデル (ファーム ソリューションのみ)**、プロジェクトに名前を**AdventureWorksContacts**、を選択し**追加**ボタンをクリックします。
+8. **テンプレート**ウィンドウで、選択**ビジネス データ接続モデル (ファーム ソリューションのみ)** 、プロジェクトに名前を**AdventureWorksContacts**、を選択し**追加**ボタンをクリックします。
 
 ## <a name="add-data-access-classes-to-the-project"></a>データ アクセス クラスをプロジェクトに追加します。
 
@@ -84,7 +84,7 @@ ms.locfileid: "62965220"
 
 3. **ソリューション エクスプローラー**で、プロジェクト ノードを選択します。
 
-4. メニュー バーで **[プロジェクト]** > **[新しい項目の追加]** の順に選択します。
+4. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
 5. **インストールされたテンプレート**ウィンドウで、選択、**データ**ノード。
 
@@ -120,7 +120,7 @@ ms.locfileid: "62965220"
 
 モデルにエンティティを追加します。 エンティティを追加するには、Visual Studio から**ツールボックス**BDC デザイナーにします。
 
-1. メニュー バーで **[表示]**、**[ツールボックス]** の順にクリックします。
+1. メニュー バーで **[表示]** 、 **[ツールボックス]** の順にクリックします。
 
 2. **BusinessDataConnectivity**のタブ、**ツールボックス**、追加、**エンティティ**BDC デザイナーにします。
 

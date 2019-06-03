@@ -1,5 +1,5 @@
 ---
-title: 各種のプロファイル方法を使用したコマンド ラインからのパフォーマンス データの収集 | Microsoft Docs
+title: コマンド ラインのプロファイル方法を使ってパフォーマンス データを取得する
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831444"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263824"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>各種のプロファイル方法を使用したコマンド ラインからのパフォーマンス データの収集
 使用する [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのコマンド ライン ツールおよびオプションは、プロファイル対象のアプリケーションの種類、使用するプロファイル方法、ターゲット アプリケーションが、ネイティブ コードと [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] コードのどちらで記述されているかなどの要因によって決まります。
