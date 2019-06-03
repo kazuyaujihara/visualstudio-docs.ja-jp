@@ -1,5 +1,5 @@
 ---
-title: Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行 | Microsoft Docs
+title: 開発およびテスト環境に発行する PowerShell スクリプト
 description: Visual Studio から Windows PowerShell スクリプトを使用して、開発環境とテスト環境に発行する方法について説明します。
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 2198aac794362237e3b2b6321d9c9bda86108b79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f598ddd3175353103d478dca9828536346e247cd
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427097"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177270"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行
 
@@ -156,7 +156,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
 
    詳細については、「[方法 :Visual Studio で Web 配置パッケージを作成する](https://msdn.microsoft.com/library/dd465323.aspx)」を参照してください。 「[Customizing and extending the publish scripts](#customizing-and-extending-the-publish-scripts)」 (発行スクリプトのカスタマイズと拡張) で説明するように、Web 配置パッケージの作成を自動化することもできます。
 
-1. **ソリューション エクスプローラー**でスクリプトのコンテキスト メニューを開き、**[PowerShell ISE で開く]** をクリックします。
+1. **ソリューション エクスプローラー**でスクリプトのコンテキスト メニューを開き、 **[PowerShell ISE で開く]** をクリックします。
 1. このコンピューターで Windows PowerShell スクリプトを初めて実行した場合は、管理特権でコマンド プロンプト ウィンドウを開き、次のコマンドを入力します。
 
     ```powershell
@@ -173,7 +173,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
 
     スクリプトを自動化すると、この方法で Azure 資格情報を提供できなくなります。 代わりに、`.publishsettings` ファイルを使用して、資格情報を提供する必要があります。 1 回だけ、**Get-AzurePublishSettingsFile** コマンドを使用してこのファイルを Azure からダウンロードしたら、それ以降は **Import-AzurePublishSettingsFile** を使用してファイルをインポートします。 詳しい手順については、「 [Azure PowerShell のインストールおよび構成方法](/powershell/azure/overview)」をご覧ください。
 
-1. (省略可能) Web アプリケーションを発行せずに、仮想マシン、データベース、Web サイトなどの Azure リソースを作成する場合は、**-Configuration** 引数を JSON 構成ファイルに設定した **Publish-WebApplication.ps1** コマンドを使用します。 このコマンド ラインでは、JSON 構成ファイルを使用して作成するリソースを指定します。 他のコマンド ライン引数には既定の設定を使用するため、リソースは作成されますが、Web アプリケーションは発行されません。 –Verbose オプションを使用すると、進行状況の詳細情報が得られます。
+1. (省略可能) Web アプリケーションを発行せずに、仮想マシン、データベース、Web サイトなどの Azure リソースを作成する場合は、 **-Configuration** 引数を JSON 構成ファイルに設定した **Publish-WebApplication.ps1** コマンドを使用します。 このコマンド ラインでは、JSON 構成ファイルを使用して作成するリソースを指定します。 他のコマンド ライン引数には既定の設定を使用するため、リソースは作成されますが、Web アプリケーションは発行されません。 –Verbose オプションを使用すると、進行状況の詳細情報が得られます。
 
     ```powershell
     Publish-WebApplication.ps1 -Verbose –Configuration C:\Path\WebProject-WAWS-dev.json

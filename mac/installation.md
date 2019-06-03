@@ -7,16 +7,19 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 92b8fdceb1f4cfcfc54f9e37aea3a93f765976a3
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: f989ccba45a034d90562b69eabf871e0e2a545b4
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615461"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037532"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Visual Studio 2019 for Mac をインストールする
 
 macOS でネイティブのクロスプラット フォーム対応の .NET アプリの開発を開始するには、以下の手順に従って Visual Studio 2019 for Mac をインストールします。
+
+ > [!div class="button"]
+ > [Visual Studio for Mac をダウンロードする](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
 
 ## <a name="requirements"></a>要件
 
@@ -30,7 +33,7 @@ iOS または macOS 向けに Xamarin アプリをビルドするには、以下
 ## <a name="installation-instructions"></a>インストール手順
 
 1. [Visual Studio for Mac のダウンロード ページ](https://aka.ms/vsmac)から、インストーラーをダウンロードします。
-2. ダウンロードが完了したら、**[VisualStudioforMacInstaller.dmg]** をクリックしてインストーラーをマウントし、矢印のロゴをダブルクリックして実行します。
+2. ダウンロードが完了したら、 **[VisualStudioforMacInstaller.dmg]** をクリックしてインストーラーをマウントし、矢印のロゴをダブルクリックして実行します。
 
     [![大きい矢印をクリックしてインストールを開始する](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
@@ -47,7 +50,7 @@ iOS または macOS 向けに Xamarin アプリをビルドするには、以下
 
     [![インストールしたいオプションのワークロード機能を選択する](media/install-selection-sml.png)](media/install-selection.png#lightbox)
 
-7. 選択を行ったら、**[インストール]** ボタンを押します。
+7. 選択を行ったら、 **[インストール]** ボタンを押します。
 8. インストーラーではダウンロードの進行状況が表示され、Visual Studio for Mac と選択したワークロードがインストールされます。 インストールに必要な権限を付与するため、パスワードの入力が求められる場合があります。
 
 企業環境でのインストール中にネットワークに問題が発生した場合は、[ファイアウォールまたはプロキシの背後へのインストール](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server)の指示を確認してください。

@@ -1,5 +1,5 @@
 ---
-title: トラブルシューティングと既知の問題 (Visual Studio Tools for Unity) | Microsoft Docs
+title: トラブルシューティングと既知の問題 (VS Tools for Unity)
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815587"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261114"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>トラブルシューティングと既知の問題 (Visual Studio Tools for Unity)
 
@@ -25,7 +25,7 @@ ms.locfileid: "62815587"
 
 ### <a name="confirm-editor-attaching-is-enabled"></a>[Editor Attaching] が有効になっていることを確認する
 
-Unity のメニューで **[Edit] > [Preferences]** を選択し、**[External Tools]** タブを選択します。**[Editor Attaching]** チェック ボックスがオンになっていることを確認します。 詳しくは、[Unity Preferences のドキュメント](https://docs.unity3d.com/Manual/Preferences.html)をご覧ください。
+Unity のメニューで **[Edit] > [Preferences]** を選択し、 **[External Tools]** タブを選択します。 **[Editor Attaching]** チェック ボックスがオンになっていることを確認します。 詳しくは、[Unity Preferences のドキュメント](https://docs.unity3d.com/Manual/Preferences.html)をご覧ください。
 
 ### <a name="unable-to-attach"></a>アタッチできない
 
@@ -54,7 +54,7 @@ Unity のメニューで **[Edit] > [Preferences]** を選択し、**[External T
 
 Parse、FMOD、UMP (Universal Media Player)、ZFBrowser、Embedded Browser などの複数の Unity プラグインは、ネイティブ スレッドを使っています。 これは、プラグインがランタイムへのネイティブ スレッドのアタッチを終了した後で OS への呼び出しをブロックしている問題です。 つまり、Unity はデバッガー (またはドメインの再読み込み) のためにスレッドを中断できずにハングします。
 
-FMOD の場合は回避策があります。`FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` 初期化[フラグ](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html)を渡して非同期処理を無効にし、メイン スレッドですべての処理を実行します。
+FMOD の場合は回避策があります。`FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` 初期化[フラグ](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags)を渡して非同期処理を無効にし、メイン スレッドですべての処理を実行します。
 
 ## <a name="incompatible-project-in-visual-studio"></a>Visual Studio での互換性のないプロジェクト
 
@@ -128,11 +128,11 @@ Visual Studio 2015 の Update 3 へのアップグレードを試してくださ
 
 1. Visual Studio の新しいインスタンスを開きます。
 
-1. [プロセスにアタッチ] ダイアログ ボックスを開きます。 Visual Studio の新しいインスタンスのメイン メニューで、**[デバッグ]**、**[プロセスにアタッチ]** を選択します。
+1. [プロセスにアタッチ] ダイアログ ボックスを開きます。 Visual Studio の新しいインスタンスのメイン メニューで、 **[デバッグ]** 、 **[プロセスにアタッチ]** を選択します。
 
-1. Visual Studio のフリーズしたインスタンスに、デバッガーをアタッチします。 **[プロセスにアタッチ]** ダイアログ ボックスで、**[選択可能なプロセス]** テーブルからフリーズした Visual Studio インスタンスを選択し、**[アタッチ]** ボタンを選択します。
+1. Visual Studio のフリーズしたインスタンスに、デバッガーをアタッチします。 **[プロセスにアタッチ]** ダイアログ ボックスで、 **[選択可能なプロセス]** テーブルからフリーズした Visual Studio インスタンスを選択し、 **[アタッチ]** ボタンを選択します。
 
-1. デバッガーを一時停止します。 Visual Studio の新しいインスタンスのメイン メニューで **[デバッグ]**、**[すべて中断]** を選ぶか、単に **Ctrl + Alt + Break** キーを押します。
+1. デバッガーを一時停止します。 Visual Studio の新しいインスタンスのメイン メニューで **[デバッグ]** 、 **[すべて中断]** を選ぶか、単に **Ctrl + Alt + Break** キーを押します。
 
 1. スレッド ダンプを作成します。 コマンド ウィンドウで、次のコマンドを入力して **Enter** キーを押します。
 
@@ -140,7 +140,7 @@ Visual Studio 2015 の Update 3 へのアップグレードを試してくださ
     Debug.ListCallStack /AllThreads /ShowExternalCode
     ```
 
-    最初に **[コマンド]** ウィンドウを表示しなければならない場合もあります。 Visual Studio のメイン メニューで、**[ビュー]**、**[その他のウィンドウ]**、**[コマンド ウィンドウ]** の順に選択します。
+    最初に **[コマンド]** ウィンドウを表示しなければならない場合もあります。 Visual Studio のメイン メニューで、 **[ビュー]** 、 **[その他のウィンドウ]** 、 **[コマンド ウィンドウ]** の順に選択します。
 
 *Mac の場合:*
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4385ad73b29f1266bb368a781da11279f887942b
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 68840957a0c152add06804eac58f3d24afa1e846
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847360"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261962"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig での .NET の名前付け規則
 
@@ -209,6 +209,6 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 
 ## <a name="see-also"></a>関連項目
 
+- [Roslyn 名前付け規則](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
 - [.NET 言語と書式の規則](../ide/editorconfig-code-style-settings-reference.md)
 - [移植可能なカスタム エディター オプションを作成する](../ide/create-portable-custom-editor-options.md)
-- [.NET コンパイラ プラットフォームの .editorconfig ファイル](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
