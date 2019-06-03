@@ -1,5 +1,5 @@
 ---
-title: 配置、発行、および SharePoint ソリューション パッケージのアップグレード |Microsoft Docs
+title: デプロイ、発行、および SharePoint ソリューション パッケージをアップグレード
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c41b36766e112dc86bd15c7a2bec48633c35b57
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436730"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402038"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>配置、発行、および SharePoint ソリューション パッケージのアップグレード
   Visual Studio で SharePoint ソリューションを開発した後か、そのパッケージ (.wsp) ファイルをローカル SharePoint サーバーにデプロイしたりリモートまたはローカルの SharePoint サーバーにパブリッシュできます。 ファイルを展開する場合は、パッケージ ファイル (.wsp) を展開する方法をカスタマイズできます。

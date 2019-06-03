@@ -1,5 +1,5 @@
 ---
-title: Emulator Express を使用したローカル コンピューターでの Azure クラウド サービスの実行とデバッグ | Microsoft Docs
+title: ローカル コンピューター上で Azure クラウド サービスを実行およびデバッグする Emulator Express
 description: Emulator Express を使用したローカル コンピューターでのクラウド サービス実行とデバッグ
 author: mikejo5000
 manager: jillfra
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: f2d055cf7bb5294095baeef6591ac88389a2fe2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86ec00f5fdd80f4c42fdaf1d7c5c44e6008983de
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560762"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260670"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Emulator Express を使用したローカル コンピューターでの Azure クラウド サービスの実行とデバッグ
 Emulator Express を使用することにより、管理者として Visual Studio を実行せずに、クラウド サービスをテストおよびデバッグできます。 クラウド サービスの要件に応じて、Emulator Express または完全なエミュレーターのどちらを使用するかをプロジェクト設定で指定できます。 完全なエミュレーターの詳細については、「[コンピューティング エミュレーターでの Azure アプリケーションの実行](/azure/storage/common/storage-use-emulator)」を参照してください。
@@ -25,13 +25,13 @@ Azure SDK 2.3 以降で Azure プロジェクトを作成すると、Emulator Ex
 
 1. **ソリューション エクスプローラー**でそのプロジェクトを右クリックし、コンテキスト メニューから **[プロパティ]** を選択します。
 
-1. プロジェクト プロパティのページで、**[Web]** タブを選択します。
+1. プロジェクト プロパティのページで、 **[Web]** タブを選択します。
 
     ![Azure クラウド サービス プロジェクトのプロパティ](./media/vs-azure-tools-emulator-express-debug-run/web-properties.png)
 
-1. **[ローカル開発サーバー]** で、**[IIS Express を使用する]** オプションを選択します。
+1. **[ローカル開発サーバー]** で、 **[IIS Express を使用する]** オプションを選択します。
 
-1. **[エミュレーター]** で、**[Emulator Express を使用する]** を選択します。
+1. **[エミュレーター]** で、 **[Emulator Express を使用する]** を選択します。
 
 1. Emulator Express を起動するには、コマンド プロンプトで次のコマンドを実行します。
 

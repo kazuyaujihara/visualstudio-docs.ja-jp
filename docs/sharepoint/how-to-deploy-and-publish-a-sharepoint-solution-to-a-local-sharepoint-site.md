@@ -1,5 +1,5 @@
 ---
-title: '方法: 展開し、SharePoint ソリューションをローカル SharePoint サイトにパブリッシュ |Microsoft Docs'
+title: SharePoint ソリューションをローカル SharePoint サイトに発行およびデプロイ
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9537b3eef0d5da445d9456b414c89bbaac08ae87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3e68fc4e49311535169ab37a2332b443ba632fb5
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813973"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401461"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>方法: 配置し、SharePoint ソリューションをローカル SharePoint サイトに発行します。
   展開するか、開発用コンピューターにローカル SharePoint サーバーに SharePoint ソリューションを発行します。 展開プロセスのコピー、 *.wsp* SharePoint サーバーにファイルが、ソリューションをインストールして、機能をアクティブにします。 コピーのみを処理する、発行、 *.wsp*ファイルを SharePoint サーバーにし、そのインストールします。 SharePoint で有効にすることがアクティブ化する必要があります手動でします。
@@ -39,7 +39,7 @@ ms.locfileid: "62813973"
 
 3. **ターゲットの場所**テキスト ボックスに、ローカル パスを入力し、、**発行**ボタンをクリックします。
 
-     Visual Studio で発行の進行状況が表示されます。**出力**ウィンドウ。 プロセスが終了すると、ソリューション (*.wsp*) ファイルがローカルの SharePoint サーバーにインストールされています。 ただし、まだがアクティブ化があります SharePoint で使用します。 ソリューション ファイルが既に存在する場合、エラーが発生し、既存のファイルを上書きするかどうかを確認します。 パッケージのアップグレード方法の詳細についてでリモート パッケージのアップグレードに関するセクションをご覧ください。[方法。配置、発行、およびリモート サーバー上で SharePoint ソリューションのアップグレード](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)します。
+     Visual Studio で発行の進行状況が表示されます。**出力**ウィンドウ。 プロセスが終了すると、ソリューション ( *.wsp*) ファイルがローカルの SharePoint サーバーにインストールされています。 ただし、まだがアクティブ化があります SharePoint で使用します。 ソリューション ファイルが既に存在する場合、エラーが発生し、既存のファイルを上書きするかどうかを確認します。 パッケージのアップグレード方法の詳細についてでリモート パッケージのアップグレードに関するセクションをご覧ください。[方法。配置、発行、およびリモート サーバー上で SharePoint ソリューションのアップグレード](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)します。
 
 ## <a name="see-also"></a>関連項目
 - [方法: 配置、発行、およびリモート サーバー上で SharePoint ソリューションのアップグレード](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)

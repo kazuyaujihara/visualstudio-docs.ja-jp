@@ -103,7 +103,7 @@ private void MyMethod()
 
 ### <a name="remove-unnecessary-cast"></a>不要なキャストを削除する
 
-ある型をキャストが不要な別の型にキャストしている場合、**[不要なキャストの削除]** クイック アクション項目によって不要なキャストが削除されます。
+ある型をキャストが不要な別の型にキャストしている場合、 **[不要なキャストの削除]** クイック アクション項目によって不要なキャストが削除されます。
 
 ```csharp
 // before
@@ -448,7 +448,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>挿入文字列に変換する
 
-[挿入文字列](/dotnet/csharp/language-reference/keywords/interpolated-strings)は、埋め込み変数を含む文字列を表現する簡単な方法であり、**[String.Format](/dotnet/api/system.string.format#overloads)** メソッドに似ています。  このクイック アクションは、文字列が連結されている場合、または **String.Format** が使われている場合を認識し、それを挿入文字列に変更します。
+[挿入文字列](/dotnet/csharp/language-reference/keywords/interpolated-strings)は、埋め込み変数を含む文字列を表現する簡単な方法であり、 **[String.Format](/dotnet/api/system.string.format#overloads)** メソッドに似ています。  このクイック アクションは、文字列が連結されている場合、または **String.Format** が使われている場合を認識し、それを挿入文字列に変更します。
 
 ```csharp
 // Before

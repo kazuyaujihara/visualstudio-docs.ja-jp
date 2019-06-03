@@ -49,7 +49,7 @@ ms.locfileid: "65690562"
   
 10. Visual Studio 実験用インスタンスをリセットします。  
   
-    1. 削除**\Users\\**_{名}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
+    1. 削除 **\Users\\** _{名}_ **\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
   
     2. Windows で**開始**] メニューの [選択**すべてのプログラム**、 **Microsoft Visual Studio 2010 SDK**、**ツール**、**リセット、実験用インスタンス**します。  
   

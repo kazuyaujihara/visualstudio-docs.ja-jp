@@ -1,5 +1,5 @@
 ---
-title: プロファイラーを .NET Framework スタンドアロン アプリにアタッチし、アプリの統計情報を収集する
+title: プロファイラーを NET Framework のスタンドアロン アプリにアタッチし、アプリの統計を取得する
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a667c259c6cd924c0ff698a47858c08d0f7cf42
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c23fe867c3825958f1e2f1c3b7fedc3dd15d840e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431560"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261602"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>方法: コマンド ラインを使用して .NET Framework のスタンドアロン アプリケーションにプロファイラーをアタッチし、アプリケーションの統計情報を収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、実行中の .NET Framework スタンドアロン (クライアント) アプリケーションにプロファイラーをアタッチし、サンプリング メソッドを使用してパフォーマンスに関する統計情報を収集する方法について説明します。
@@ -46,16 +46,16 @@ ms.locfileid: "63431560"
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
-   - [/start](../profiling/start.md)**:sample** オプションによってプロファイラーが初期化されます。
+   - [/start](../profiling/start.md) **:sample** オプションによってプロファイラーが初期化されます。
 
-   - **/start** を使用するには、[/output](../profiling/output.md)**:**`OutputFile` オプションを指定する必要があります。 `OutputFile` には、プロファイル データ (.vsp) ファイルの名前と場所を指定します。
+   - **/start** を使用するには、[/output](../profiling/output.md) **:** `OutputFile` オプションを指定する必要があります。 `OutputFile` には、プロファイル データ (.vsp) ファイルの名前と場所を指定します。
 
      **/start:sample** オプションを使用する場合は、次のうちいずれかのオプションを指定できます。
 
    | オプション | 説明 |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | プロファイリングされるプロセスを所有するアカウントのドメインおよびユーザー名を指定します (省略可能)。 このオプションは、ログオンしているユーザーとは別のユーザーとしてアプリケーションが開始された場合にのみ指定する必要があります。 |
-   | [/crosssession](../profiling/crosssession.md) | 他のログオン セッションにおけるプロセスのプロファイリングを有効にします。 **/crosssession** の省略形として、**/CS** を指定することができます。 このオプションは、アプリケーションが別のセッションで実行されている場合に必要です。 |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | プロファイリングされるプロセスを所有するアカウントのドメインおよびユーザー名を指定します (省略可能)。 このオプションは、ログオンしているユーザーとは別のユーザーとしてアプリケーションが開始された場合にのみ指定する必要があります。 |
+   | [/crosssession](../profiling/crosssession.md) | 他のログオン セッションにおけるプロセスのプロファイリングを有効にします。 **/crosssession** の省略形として、 **/CS** を指定することができます。 このオプションは、アプリケーションが別のセッションで実行されている場合に必要です。 |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | プロファイリング実行中に収集する Windows パフォーマンス カウンターを指定します。 |
    | [/automark](../profiling/automark.md) **:** `Interval` | **/wincounter** との組み合わせでのみ使用します。 Windows パフォーマンス カウンター コレクション イベントの間隔をミリ秒単位で指定します。 既定値は 500 ミリ秒です。 |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | プロファイリング実行中に収集する ETW (Event Tracing for Windows) イベントを指定します。 ETW イベントは独立した (.*etl*) ファイルに収集されます。 |
@@ -64,20 +64,20 @@ ms.locfileid: "63431560"
 
 5. プロファイラーを対象のアプリケーションにアタッチします。 型:
 
-    **VSPerfCmd /attach:**{`PID`&#124;`ProcessName`} [`Sample Event`] [**/targetclr:**`Version`]
+    **VSPerfCmd /attach:** {`PID`&#124;`ProcessName`} [`Sample Event`] [ **/targetclr:** `Version`]
 
    - `PID` には、対象アプリケーションのプロセス ID を指定します。 `ProcessName` には、プロセスの名前を指定します。 `ProcessName` を指定して、同じ名前の複数のプロセスが実行中である場合、結果は予測できません。 Windows タスク マネージャーで、実行中のすべてのプロセスのプロセス ID を参照できます。
 
    - [/targetclr](../profiling/targetclr.md) **:** `Version` には、アプリケーションに複数のバージョンのランタイムが読み込まれている場合に、プロファイリングを行う共通言語ランタイム (CLR: Common Language Runtime) のバージョンを指定します。 任意。
 
-   - 既定では、パフォーマンス データはプロセッサのクロック サイクル数 10,000,000 (停止なし) ごとにサンプリングされます。 このため、1 GHz のプロセッサでは 10 ミリ秒ごとに約 1 回です。 次のオプションのいずれかを指定すると、クロック サイクルの間隔の変更や、別のサンプリング イベントの指定ができます。[/targetclr](../profiling/targetclr.md)**:**`Version` には、アプリケーションに複数バージョンのランタイムが読み込まれている場合に、プロファイリングを行う CLR のバージョンを指定します。 任意。
+   - 既定では、パフォーマンス データはプロセッサのクロック サイクル数 10,000,000 (停止なし) ごとにサンプリングされます。 このため、1 GHz のプロセッサでは 10 ミリ秒ごとに約 1 回です。 次のオプションのいずれかを指定すると、クロック サイクルの間隔の変更や、別のサンプリング イベントの指定ができます。[/targetclr](../profiling/targetclr.md) **:** `Version` には、アプリケーションに複数バージョンのランタイムが読み込まれている場合に、プロファイリングを行う CLR のバージョンを指定します。 任意。
 
    |||
    |-|-|
    |サンプリング イベント|説明|
    |[/timer](../profiling/timer.md) **:** `Interval`|サンプリングの間隔を、`Interval` で指定された停止なしのクロック サイクル数に変更します。|
-   |[/pf](../profiling/pf.md) [**:**`Interval`]|サンプリング イベントをページ フォールトに変更します。 `Interval` を指定した場合は、サンプル間のページ フォールト数が設定されます。 既定値は 10 です。|
-   |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|サンプリング イベントを、プロセスからオペレーティング システムのカーネルへのシステム コール (syscall) に変更します。 `Interval` を指定した場合は、サンプル間の呼び出し回数が設定されます。 既定値は 10 です。|
+   |[/pf](../profiling/pf.md) [ **:** `Interval`]|サンプリング イベントをページ フォールトに変更します。 `Interval` を指定した場合は、サンプル間のページ フォールト数が設定されます。 既定値は 10 です。|
+   |[/sys](../profiling/sys-vsperfcmd.md) [ **:** `Interval`]|サンプリング イベントを、プロセスからオペレーティング システムのカーネルへのシステム コール (syscall) に変更します。 `Interval` を指定した場合は、サンプル間の呼び出し回数が設定されます。 既定値は 10 です。|
    |[/counter](../profiling/counter.md) **:** `Config`|サンプリング イベントと間隔を、プロセッサのパフォーマンス カウンターと、`Config` で指定した間隔に、それぞれ変更します。|
 
 ## <a name="control-data-collection"></a>データ収集の制御
@@ -89,9 +89,9 @@ ms.locfileid: "63431560"
 
     |オプション|説明|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|すべてのプロセスのデータ収集を開始 (**/globalon**) または停止 (**/globaloff**) します。|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|`PID` で指定されたプロセスのデータ収集を開始 (**/processon**) または停止 (**/processoff**) します。|
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** は、`PID` またはプロセス名 (ProcName) で指定したプロセスのデータ収集を開始します。 **/detach** は、指定されたプロセスのデータ収集を停止します。特定のプロセスが指定されていない場合は、すべてのプロセスのデータ収集を停止します。|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|すべてのプロセスのデータ収集を開始 ( **/globalon**) または停止 ( **/globaloff**) します。|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|`PID` で指定されたプロセスのデータ収集を開始 ( **/processon**) または停止 ( **/processoff**) します。|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** は、`PID` またはプロセス名 (ProcName) で指定したプロセスのデータ収集を開始します。 **/detach** は、指定されたプロセスのデータ収集を停止します。特定のプロセスが指定されていない場合は、すべてのプロセスのデータ収集を停止します。|
 
 ## <a name="end-the-profiling-session"></a>プロファイル セッションの終了
  プロファイル セッションを終了するには、プロファイラーをプロファイリング対象のすべてのプロセスからデタッチし、プロファイラーを明示的に終了する必要があります。 サンプリング メソッドを使用してプロファイリングを実行したアプリケーションからプロファイラーをデタッチするには、アプリケーションを終了するか、**VSPerfCmd /detach** オプションを呼び出します。 次に、**VSPerfCmd /shutdown** オプションを呼び出して、プロファイラーをオフにし、プロファイル データ ファイルを閉じます。 **VSPerfClrEnv /off** コマンドは、プロファイル環境変数を消去します。

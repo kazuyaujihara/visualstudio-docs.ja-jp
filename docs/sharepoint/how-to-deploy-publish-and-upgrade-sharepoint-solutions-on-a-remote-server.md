@@ -1,5 +1,5 @@
 ---
-title: '方法: 配置、発行、およびリモート サーバー上で SharePoint ソリューションのアップグレード |Microsoft Docs'
+title: デプロイ、発行とリモートで SharePoint ソリューションのアップグレード
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813944"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401446"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>方法: 配置、発行、およびリモート サーバー上で SharePoint ソリューションのアップグレード
   SharePoint ソリューションをローカル システムを展開だけでなくリモート サイトまたはローカルの SharePoint サイトに SharePoint のサンド ボックス ソリューションを発行できます。 リモートの公開プロセスのコピー、 *.wsp* SharePoint サーバーにファイルが、ソリューションをインストールして、ソリューションをアクティブ化することができます。 変更された後は、リモート SharePoint ソリューションのインストールをアップグレードすることもできます。
@@ -35,9 +35,9 @@ ms.locfileid: "62813944"
 
 4. 選択、**発行**ボタンをクリックします。
 
-5. ユーザー認証が必要な場合、リモート サーバーにログオンします。
+5. ユーザー認証が必要な場合、リモート サーバーにサインインします。
 
-     Visual Studio で発行の進行状況が表示されます。**出力**ウィンドウ。 プロセスが終了すると、ソリューション (*.wsp*) ファイル、リモートの SharePoint サーバーにインストールされます。 ただし、その必要がありますもアクティブ化する前に、SharePoint で使用できます。
+     Visual Studio で発行の進行状況が表示されます。**出力**ウィンドウ。 プロセスが終了すると、ソリューション ( *.wsp*) ファイル、リモートの SharePoint サーバーにインストールされます。 ただし、その必要がありますもアクティブ化する前に、SharePoint で使用できます。
 
 6. **ソリューション ギャラリー**ページで、SharePoint アプリケーションを選択し、リボンで、次のように選択します。、 **Activate**ボタンをクリックします。
 
@@ -62,7 +62,7 @@ ms.locfileid: "62813944"
 
 7. 選択、**発行**ボタンをクリックします。
 
-8. ユーザー認証が必要な場合、リモート サーバーにログオンします。
+8. ユーザー認証が必要な場合、リモート サーバーにサインインします。
 
      ログインして場合、リモート サーバーに最近、認証は必要ありません。
 

@@ -24,11 +24,11 @@ ms.locfileid: "62988134"
   ビルドと SharePoint ソリューションのデバッグはビルドと他の種類のプロジェクトのデバッグと同じ一般に、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。 このセクションのトピックでは、いくつかある相違点について説明します。
 
 ## <a name="project-output-for-sharepoint-solutions"></a>SharePoint ソリューションのプロジェクトの出力
- アセンブリと、ソリューション パッケージを作成する SharePoint ソリューションの構築 (*.wsp*) ファイル。 次の表では、ビルド時にこれらのファイルの場所を示します。
+ アセンブリと、ソリューション パッケージを作成する SharePoint ソリューションの構築 ( *.wsp*) ファイル。 次の表では、ビルド時にこれらのファイルの場所を示します。
 
 |ビルド項目|出力フォルダー|
 |----------------|-------------------|
-|アセンブリ、プログラム データベース (*.pdb*)、および *.wsp*ファイル。|*\<ProjectName > \bin\debug*または *\<ProjectName > \bin\release*|
+|アセンブリ、プログラム データベース ( *.pdb*)、および *.wsp*ファイル。|*\<ProjectName > \bin\debug*または *\<ProjectName > \bin\release*|
 |SharePoint プロジェクト アイテム ファイル。|*\<プロジェクト名 > \pkg\debug*または *\<ProjectName > \pkg\release*|
 |中間ファイルをビルドします。|*\<プロジェクト名 > \obj\debug*または *\<ProjectName > \obj\release*|
 |パッケージの中間ファイル。|*\<プロジェクト名 > \pkgobj\debug*または *\<ProjectName > \pkgobj\release*|

@@ -1,5 +1,5 @@
 ---
-title: 検索式の論理演算子と高度な演算子 (ヘルプ ビューア)
+title: 検索式の論理/高度な演算子 (ヘルプ ビューア)
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc27a5206b7939cd55fc95878d2cc8968ae8bf39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0005198cc20c31d1819399193350dc9dda191ab4
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974398"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261254"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>検索式の論理演算子と高度な演算子
 

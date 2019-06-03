@@ -43,7 +43,7 @@ ms.locfileid: "62967397"
 ## <a name="identifiers-for-sharepoint-project-items"></a>SharePoint プロジェクト アイテムの識別子
  各 SharePoint プロジェクト アイテムには、対応する文字列識別子があります。 次のタスクを実行する場合は、プロジェクト項目の識別子をおく必要があります。
 
-- プロジェクト項目の拡張機能を作成します。 この場合は、コンス トラクターに拡張するプロジェクト項目の識別子を渡す必要があります、<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>します。 プロジェクト項目の種類のすべての拡張機能を作成するには、渡す、 **\\*** 文字列値。
+- プロジェクト項目の拡張機能を作成します。 この場合は、コンス トラクターに拡張するプロジェクト項目の識別子を渡す必要があります、<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>します。 プロジェクト項目の種類のすべての拡張機能を作成するには、渡す、 **\\** * 文字列値。
 
 - プログラムで、プロジェクト項目をプロジェクトに追加します。 この場合、プロジェクト項目の識別子を渡す必要があります、<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A>メソッド。
 

@@ -1,5 +1,5 @@
 ---
-title: SharePoint ツールの拡張機能の概念と機能のプログラミング |Microsoft Docs
+title: プログラミングの概念と機能の SharePoint ツール拡張機能
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fc538b8a13458d82d23fe6039eb9c1e9406be52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 215beaf21d704927792ae316df9b4c0ef3f98c44
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562482"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401738"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>プログラミングの概念と機能の SharePoint ツール拡張機能
   いくつかの重要なプログラミング概念と Visual Studio の SharePoint ツールに関連する機能があります。 これらの概念と機能は、ほとんどの SharePoint ツール拡張機能で重要な役割を果たします。

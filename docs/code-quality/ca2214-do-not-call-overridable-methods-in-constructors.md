@@ -1,6 +1,6 @@
 ---
 title: CA2214:コンストラクターのオーバーライド可能なメソッドを呼び出しません
-ms.date: 11/04/2016
+ms.date: 05/29/2016
 ms.topic: reference
 f1_keywords:
 - DoNotCallOverridableMethodsInConstructors
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2a5631247f882a70ae94877da02f576ff04a5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e05e6925085b27de3001c8ff62d8a3c6e69a88f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796706"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401310"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214:コンストラクターのオーバーライド可能なメソッドを呼び出しません
 
@@ -41,6 +41,9 @@ ms.locfileid: "62796706"
 
 仮想メソッドが呼び出されると、実行時までは、メソッドを実行する実際の型が選択されていません。 コンス トラクターは、仮想メソッドを呼び出し、メソッドを呼び出すインスタンスのコンス トラクターが実行しないことになります。
 
+> [!NOTE]
+> このルールのバイナリ分析の実装が、別の診断メッセージの" **\[コンス トラクターの名前]、クラスで定義されている仮想メソッドの呼び出しになる呼び出しチェーンが含まれます。予期しない結果の次の呼び出し履歴を確認して**"。 [FxCop アナライザー](install-fxcop-analyzers.md)この規則の実装が、診断メッセージの"**コンス トラクターのオーバーライド可能なメソッドを呼び出しません**"。
+
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
 この規則違反を修正するには、型のコンス トラクター内からに型の仮想メソッドを呼び出す操作を行います。
@@ -51,7 +54,7 @@ ms.locfileid: "62796706"
 
 ## <a name="example"></a>例
 
-次の例では、この規則違反の効果を示します。 テスト アプリケーションのインスタンスを作成する`DerivedType`、それが原因で、基底クラス (`BadlyConstructedType`) コンス トラクターが実行されます。 `BadlyConstructedType`コンス トラクターが仮想メソッドを正しく呼び出します`DoSomething`します。 出力を`DerivedType.DoSomething()`を実行して、前に`DerivedType`のコンス トラクターを実行します。
+次の例では、この規則違反の効果を示します。 テスト アプリケーションのインスタンスを作成する`DerivedType`、それが原因で、基底クラス (`BadlyConstructedType`) コンス トラクターが実行されます。 `BadlyConstructedType`コンス トラクターが仮想メソッドを正しく呼び出します`DoSomething`します。 出力を`DerivedType.DoSomething()`前に実行される`DerivedType`のコンス トラクターを実行します。
 
 [!code-csharp[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/CSharp/ca2214-do-not-call-overridable-methods-in-constructors_1.cs)]
 [!code-vb[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/VisualBasic/ca2214-do-not-call-overridable-methods-in-constructors_1.vb)]

@@ -59,7 +59,7 @@ ms.locfileid: "63438906"
   
  **vsperfaspnetcmd /memory:lifetime** *websiteUrl*  
   
- また、**/Trace** オプションを使用して .NET メモリ データと共に詳細なタイミング情報を収集することもできます。  
+ また、 **/Trace** オプションを使用して .NET メモリ データと共に詳細なタイミング情報を収集することもできます。  
   
  **vsperfaspnetcmd /memory** **[:lifetime]** **/trace**`websiteUrl`  
   
@@ -68,7 +68,7 @@ ms.locfileid: "63438906"
 > [!WARNING]
 > 階層相互作用プロファイリング (TIP) のデータは、[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、または [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] を使用して収集できます。 ただし、階層相互作用プロファイル データを表示できるのは、 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] および [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]のみです。  
 >   
-> Windows 8 や Windows Server 2012 の TIP データを収集するには、インストルメンテーション (**/trace**) オプションを使用する必要があります。  
+> Windows 8 や Windows Server 2012 の TIP データを収集するには、インストルメンテーション ( **/trace**) オプションを使用する必要があります。  
   
  サンプリング データと共に階層相互作用データを収集するには、コマンド ラインに次のように入力します。  
   
@@ -80,14 +80,14 @@ ms.locfileid: "63438906"
   
  .NET メモリ データと共に階層相互作用データを収集するには、コマンド ラインに次のように入力します。  
   
- **vsperfaspnetcmd /memory****[:lifetime]** **/tip**_websiteUrl_  
+ **vsperfaspnetcmd /memory** **[:lifetime]** **/tip**_websiteUrl_  
   
 ## <a name="UsingNoWait"></a> /NoWait オプションの使用  
  既定では、**vsperfaspnetcmd** コマンドの後にコマンド プロンプトは戻りません。 次の構文オプションを使用すると、コマンド プロンプトを強制的に戻すことができます。 その後、コマンド プロンプト ウィンドウで他の操作を実行できます。 プロファイリングを終了するには、別の **vsperfaspnetcmd** コマンドで **/shutdown** オプションを使用します。  
   
  プロファイリングを開始するには、次のように入力します。  
   
- **vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_  
+ **vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_  
   
  プロファイリングを終了するには、次のように入力します。  
   

@@ -104,7 +104,7 @@ DLL を作成するテンプレートは次のとおりです。
   
 - DLL プロジェクトからデバッグできます。 詳細については、「[方法 :DLL プロジェクトからデバッグ](../debugger/how-to-debug-from-a-dll-project.md)します。  
   
--  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **イミディエイト** ウィンドウを開いて、プログラムが読み込んだ DLL を確認できます。 この場合、 **イミディエイト** ウィンドウは、アプリケーションの役割をします。  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **イミディエイト** ウィンドウを開いて、プログラムが読み込んだ DLL を確認できます。 この場合、 **イミディエイト** ウィンドウは、アプリケーションの役割をします。  
   
   呼び出し元のアプリケーションのデバッグを始める前に、通常はクラス ライブラリ内にブレークポイントを設定します。 詳細については、「 [Breakpoints and Tracepoints](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)」を参照してください。 ブレークポイントにヒットした場合は、コードのステップ実行により、1 行ずつアクションを確認して問題を特定できます。 詳細については、「 [Code Stepping Overview](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)」を参照してください。  
   

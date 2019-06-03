@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. アプリケーションによって、次のレジストリ キーにあるエントリが検索され、VSTO アドインが検出されます。
 
-    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<アプリケーション名 >* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<アプリケーション名 >* \Addins\\**
 
     このレジストリ キーにある各エントリは、VSTO アドインの一意な ID です。 通常、これは VSTO アドイン アセンブリの名前です。
 
 2. アプリケーションによって、各 VSTO アドイン エントリにある `Manifest` エントリが検索されます。
 
-    マネージ VSTO アドインのマニフェストの完全なパスを格納できる、`Manifest`エントリ**HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<アプリケーション名 >_ \Addins\\_\<アドイン ID >_** します。 マニフェストは、VSTO アドインの読み込みに使用される情報を提供するファイル (通常は XML ファイル) です。
+    マネージ VSTO アドインのマニフェストの完全なパスを格納できる、`Manifest`エントリ**HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<アプリケーション名 >_ \Addins\\ _\<アドイン ID >_ **します。 マニフェストは、VSTO アドインの読み込みに使用される情報を提供するファイル (通常は XML ファイル) です。
 
 3. アプリケーションによって `Manifest` エントリが検出されると、そのアプリケーションはマネージド VSTO アドイン ローダー コンポーネントの読み込みを試みます。 アプリケーションは、IManagedAddin インターフェイスを実装する COM オブジェクトを作成しようとしています。
 
@@ -70,7 +70,7 @@ interface IManagedAddin : IUnknown
 
 4. アプリケーションによって [IManagedAddin::Load](../vsto/imanagedaddin-load.md) メソッドが呼び出され、 `Manifest` エントリの値に渡されます。
 
-5.  [IManagedAddin::Load](../vsto/imanagedaddin-load.md) メソッドによって、読み込む VSTO アドイン用のアプリケーション ドメインやセキュリティ ポリシーの構成など、VSTO アドイン読み込みに必要なタスクが実行されます。
+5. [IManagedAddin::Load](../vsto/imanagedaddin-load.md) メソッドによって、読み込む VSTO アドイン用のアプリケーション ドメインやセキュリティ ポリシーの構成など、VSTO アドイン読み込みに必要なタスクが実行されます。
 
    Microsoft Office アプリケーションを検出して読み込むに使用するキーが VSTO アドインを管理対象レジストリの詳細についてを参照してください[VSTO アドインのレジストリ エントリ](../vsto/registry-entries-for-vsto-add-ins.md)します。
 

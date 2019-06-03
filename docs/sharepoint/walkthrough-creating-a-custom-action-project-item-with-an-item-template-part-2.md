@@ -1,5 +1,5 @@
 ﻿---
-title: 'チュートリアル: 項目テンプレートを使用したカスタム動作プロジェクト項目の作成、パート 2 |Microsoft Docs'
+title: 項目テンプレート、第 2 部でのカスタム動作プロジェクト項目を作成します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6fa4915b9621789c68ed994440de3a1ef544c40c
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430465"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401174"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>チュートリアル: 項目テンプレート、第 2 部でのカスタム動作プロジェクト項目を作成します。
   カスタム SharePoint プロジェクト項目の種類を定義し、Visual Studio で項目テンプレートに関連付ける、テンプレートのウィザードを提供する可能性がありますもします。 ウィザードを使用すると、プロジェクトにプロジェクト項目の新しいインスタンスを追加するのにテンプレートを使用するときに、ユーザーから情報を収集します。 収集した情報を使用して、プロジェクト項目を初期化できます。
@@ -158,7 +158,7 @@ ms.locfileid: "63430465"
 
 #### <a name="to-build-your-project"></a>プロジェクトをビルドするには
 
-1. メニュー バーで、**[ビルド]** > **[ソリューションのビルド]** の順にクリックします。
+1. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
 ## <a name="associate-the-wizard-with-the-item-template"></a>項目テンプレートを使用して、ウィザードを関連付ける
  ウィザードの実装をそれを関連付ける必要があります、**カスタム アクション**3 つの主な手順を完了して項目テンプレート。
@@ -175,11 +175,11 @@ ms.locfileid: "63430465"
 
 2. **署名**] タブで、[、**アセンブリに署名**チェック ボックスをオンします。
 
-3. **厳密な名前キー ファイルを選択して**一覧で、選択**\<新規作成 >** します。
+3. **厳密な名前キー ファイルを選択して**一覧で、選択 **\<新規作成 >** します。
 
 4. **厳密な名前キーの作成** ダイアログ ボックスに、オフ、名前を入力、**キーファイルをパスワードで保護する**チェック ボックスをオンにして、 **ok**ボタンをクリックします。
 
-5. メニュー バーで、**[ビルド]** > **[ソリューションのビルド]** の順にクリックします。
+5. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>ウィザード アセンブリの公開キー トークンを取得するには
 
@@ -303,7 +303,7 @@ ms.locfileid: "63430465"
 
 13. **説明**ボックスに、入力**SharePoint デベロッパー センター web サイトが開きます**します。
 
-14. **URL**ボックスに、入力**https://docs.microsoft.com/sharepoint/dev/**、選択し、**完了**ボタンをクリックします。
+14. **URL**ボックスに、入力 **https://docs.microsoft.com/sharepoint/dev/** 、選択し、**完了**ボタンをクリックします。
 
      Visual Studio がという名前の項目を追加します**CustomAction1**開きますをプロジェクトに、 *Elements.xml*ファイルがエディターでします。 いることを確認*Elements.xml*ウィザードで指定した値が含まれています。
 

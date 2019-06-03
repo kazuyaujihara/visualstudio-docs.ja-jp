@@ -1,5 +1,5 @@
 ---
-title: '方法: メンバー表記と関連付け表記の間で変更する (クラス デザイナー)'
+title: メンバーおよび関連付け表記の間で変更する (クラス デザイナー)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff63e6cca9deebbfcfa5960b41d85f9425f7a73
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17bda235f0fb5781b19a3b1384b86ae58543edf3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975508"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261213"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>方法: クラス デザイナーでメンバー表記と関連付け表記の間で変更する
 
@@ -31,7 +31,7 @@ ms.locfileid: "62975508"
 
 1. ソリューション エクスプローラーのプロジェクト ノードから、クラス ダイアグラム (.cd) ファイルを開きます。
 
-2. クラス ダイアグラムの型の図形で、メンバー プロパティまたは関連付けを表すフィールドを右クリックして、**[関連として表示]** を選びます。
+2. クラス ダイアグラムの型の図形で、メンバー プロパティまたは関連付けを表すフィールドを右クリックして、 **[関連として表示]** を選びます。
 
     > [!TIP]
     > 型の図形にプロパティまたはフィールドが表示されていない場合は、図形のコンパートメントが折りたたまれている可能性があります。 型の図形を展開するには、コンパートメントの名前をダブルクリックするか、または型の図形を右クリックして **[展開]** を選びます。
@@ -40,7 +40,7 @@ ms.locfileid: "62975508"
 
 ## <a name="to-change-association-notation-to-member-notation"></a>関連付け表記をメンバー表記に変更するには
 
-クラス ダイアグラムで関連行を右クリックし、**[プロパティとして表示]** または **[フィールドとして表示]** を選びます。 関連行が表示されなくなり、ダイアグラムの型の図形内の適切なコンパートメントにプロパティが表示されます。
+クラス ダイアグラムで関連行を右クリックし、 **[プロパティとして表示]** または **[フィールドとして表示]** を選びます。 関連行が表示されなくなり、ダイアグラムの型の図形内の適切なコンパートメントにプロパティが表示されます。
 
 ## <a name="see-also"></a>関連項目
 

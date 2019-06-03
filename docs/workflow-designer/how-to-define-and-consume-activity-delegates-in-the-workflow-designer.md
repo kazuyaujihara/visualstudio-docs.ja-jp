@@ -1,5 +1,5 @@
 ---
-title: ワークフロー デザイナー - 方法。定義およびアクティビティ デリゲートの使用
+title: ワークフロー デザイナー:定義およびアクティビティ デリゲートの使用
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 34cb06bbc5c9575f5a10507a8015c9819e7b533b
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949521"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431791"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>方法: ワークフロー デザイナーでアクティビティ デリゲートを定義および使用する
 

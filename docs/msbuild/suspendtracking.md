@@ -35,7 +35,7 @@ HRESULT WINAPI SuspendTracking(void);
  追跡が一時停止された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。
 
 ## <a name="requirements"></a>要件
- **ヘッダー:***FileTracker.h*
+ **ヘッダー:** *FileTracker.h*
 
 ## <a name="see-also"></a>関連項目
 - [ResumeTracking](../msbuild/resumetracking.md)

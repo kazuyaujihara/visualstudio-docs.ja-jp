@@ -24,12 +24,12 @@ ms.locfileid: "62973956"
 
  比較レポートを作成するには、次の構文を使用します。
 
- **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [**/**`Options`]
+ **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [ **/** `Options`]
 
  次の表のオプションを **VSPerfReport /diff** コマンド ラインに追加できます。
 
 |オプション|説明|
 |------------|-----------------|
-|**DiffThreshold:**[*Value*]|このパーセンテージしきい値を下回る場合、差異を無視します。 また、このしきい値を下回る新しいデータは表示されません。|
-|**DiffTable:***TableName*|このテーブルを使用してファイルを比較します。 既定では、関数テーブルが使用されます。 **VSPerfReport /querydifftables** の一覧にある識別子を指定します。|
-|**DiffColumn:***ColumnName*|この列を使用して値を比較します。 既定では、排他サンプルのパーセント列が使用されます。 **VSPerfReport /querydifftables** の一覧にある識別子を指定します。|
+|**DiffThreshold:** [*Value*]|このパーセンテージしきい値を下回る場合、差異を無視します。 また、このしきい値を下回る新しいデータは表示されません。|
+|**DiffTable:**  *TableName*|このテーブルを使用してファイルを比較します。 既定では、関数テーブルが使用されます。 **VSPerfReport /querydifftables** の一覧にある識別子を指定します。|
+|**DiffColumn:** *ColumnName*|この列を使用して値を比較します。 既定では、排他サンプルのパーセント列が使用されます。 **VSPerfReport /querydifftables** の一覧にある識別子を指定します。|

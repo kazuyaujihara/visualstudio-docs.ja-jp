@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53dce8b6b468dd5754b5708afccdcbe6cb908d1d
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854174"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432216"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用して Azure の仮想マシンでのライブ ASP.NET アプリの記録と再生
 
@@ -37,14 +37,14 @@ TTD 記録をキャプチャしても、アプリケーションは停止され�
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* Visual Studio 2019 Enterprise の使用可能な以上でのみ、タイム トラベル デバッグ Azure Virtual Machines (VM) の**Azure 開発ワークロード**します。 (**[個別のコンポーネント]** タブの **[デバッグとテスト]** > **[スナップショット デバッガー]** にあります)。
+* Visual Studio 2019 Enterprise の使用可能な以上でのみ、タイム トラベル デバッグ Azure Virtual Machines (VM) の**Azure 開発ワークロード**します。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
 
     インストールされていない場合は、インストール[Visual Studioenterprise 2019](https://visualstudio.microsoft.com/vs/)します。
 
 * タイム トラベルのデバッグは、次の Azure VM の web アプリを入手できます。
   * ASP.NET アプリケーション (AMD64) .NET Framework 4.8 以降を実行します。
 
-## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>プロジェクトを開き、タイム トラベルのデバッグを有効にスナップショット デバッガーを開始
+## <a name="start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>タイム トラベルのデバッグを有効にスナップショット デバッガーを開始します。
 
 1. プロジェクトを開くをするには、時間の収集の記録を移動します。
 
@@ -89,7 +89,7 @@ TTD 記録をキャプチャしても、アプリケーションは停止され�
 
 ## <a name="start-debugging-a-time-travel-recording"></a>時刻のデバッグを開始旅行の記録
 
-1. スナップポイントにヒットすると、[診断ツール] ウィンドウにスナップショットが表示されます。 このウィンドウを開くには、**[デバッグ] > [Windows] > [診断ツールの表示]** の順に選択します。
+1. スナップポイントにヒットすると、[診断ツール] ウィンドウにスナップショットが表示されます。 このウィンドウを開くには、 **[デバッグ] > [Windows] > [診断ツールの表示]** の順に選択します。
 
    ![スナップポイントを開く](../debugger/media/snapshot-diagsession-window.png)
 
@@ -99,11 +99,11 @@ TTD 記録をキャプチャしても、アプリケーションは停止され�
 
    ![デバッグの開始](../debugger/media/time-travel-debugging-step-commands.png)
 
-   使用することもできます、 **[ローカル]**、**ウォッチ**と**呼び出し履歴**windows、およびも式を評価します。
+   使用することもできます、 **[ローカル]** 、**ウォッチ**と**呼び出し履歴**windows、およびも式を評価します。
 
    ![スナップショット データを調べる](../debugger/media/time-travel-debugging-start-debugging.png)
 
-    Web サイト自体はまだ存在していると、エンドユーザーを受けない TTD の後続のアクティビティ。 既定では、スナップポイントごとに 1 つのスナップショットのみがキャプチャされます。スナップショットがキャプチャされると、スナップポイントは無効になります。 そのスナップポイントで別のスナップショットをキャプチャする場合は、**[コレクションの更新]** をクリックしてスナップポイントを元に戻すことができます。
+    Web サイト自体はまだ存在していると、エンドユーザーを受けない TTD の後続のアクティビティ。 既定では、スナップポイントごとに 1 つのスナップショットのみがキャプチャされます。スナップショットがキャプチャされると、スナップポイントは無効になります。 そのスナップポイントで別のスナップショットをキャプチャする場合は、 **[コレクションの更新]** をクリックしてスナップポイントを元に戻すことができます。
 
 **ヘルプが必要ですか?** [トラブルシューティングと既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)と[スナップショットのデバッグに関する FAQ](../debugger/debug-live-azure-apps-faq.md) のページを参照してください。
 

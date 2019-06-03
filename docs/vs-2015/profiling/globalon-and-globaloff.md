@@ -60,10 +60,10 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
  **Attach:** `PID`  
  指定されたプロセスのプロファイリングを開始します。  
   
- {**ProcessOff**&#124;**ProcessOn**}**:**`PID`  
+ {**ProcessOff**&#124;**ProcessOn**} **:** `PID`  
  指定されたプロセスのプロファイリングを停止または開始します。  
   
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
  指定されたプロセスのプロファイリングを停止または開始します (インストルメンテーション メソッドのみ)。  
   
 ## <a name="example"></a>例  
