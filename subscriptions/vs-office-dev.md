@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Office 365 Developer 特典について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 100b9992f13a419b9207adb9ba976b8f6417617f
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934593"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501184"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Office 365 Developer サブスクリプション特典
 
@@ -22,7 +22,7 @@ ms.locfileid: "65934593"
 
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスしてサブスクライバー ポータルにサインインします。
 
-2. お使いのアカウントに応じて、組織のサインイン ページ、または Microsoft アカウントのサインイン ページのいずれかにリダイレクトされます。   いずれの場合も、ユーザー名とパスワードを入力して、**[次へ]** をクリックします。
+2. お使いのアカウントに応じて、組織のサインイン ページ、または Microsoft アカウントのサインイン ページのいずれかにリダイレクトされます。   いずれの場合も、ユーザー名とパスワードを入力して、 **[次へ]** をクリックします。
 
 3. サインイン プロセスが完了したら、サブスクリプション特典のページが表示されます。  複数のサブスクリプションがある場合は、右上隅の黒のリボンの下にあるドロップダウン矢印をクリックして、サブスクリプション間で切り替えることができます。  Office 365 Developer サブスクリプション特典タイルは、[ツール] カテゴリにあります。  タイル行の右側にある矢印を使用して、Office タイルが表示されるまでスクロールします。
 
@@ -38,7 +38,7 @@ ms.locfileid: "65934593"
    > [!div class="mx-imgBorder"]
    > ![Office 365 Developer サインアップ](_img/vs-office-dev/vs-office-dev-signup.png)
 
-10. ユーザー設定と関心のある領域を指定し、**[サブスクリプションのアクティブ化]** をクリックします。
+10. ユーザー設定と関心のある領域を指定し、 **[サブスクリプションのアクティブ化]** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![Office 365 Developer ユーザー設定](_img/vs-office-dev/vs-office-dev-preferences.png)
 
@@ -46,11 +46,11 @@ ms.locfileid: "65934593"
     > [!div class="mx-imgBorder"]
     > ![Office 365 Developer ユーザー名とドメイン](_img/vs-office-dev/vs-office-dev-domain.png)
 
-12. 電話番号を入力し、**[コードの送信]** をクリックします。  これはアカウントが実在する人によって作成されていることを確認するのに役立ちます。
+12. 電話番号を入力し、 **[コードの送信]** をクリックします。  これはアカウントが実在する人によって作成されていることを確認するのに役立ちます。
     > [!div class="mx-imgBorder"]
     > ![Office 365 Developer 電話検証](_img/vs-office-dev/vs-office-dev-send-code.png)
 
-13. 受け取ったコードを入力し、**[設定]** をクリックします。
+13. 受け取ったコードを入力し、 **[設定]** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![Office 365 Developer コードの検証](_img/vs-office-dev/vs-office-dev-setup.png)
 
@@ -82,6 +82,6 @@ Office 365 Developer サブスクリプションの詳細については、「[O
 
 ## <a name="support-resources"></a>サポート リソース
 
-- Office Developer サブスクリプションのヘルプが必要ですか。 [Office Developer センター](https://developer.microsoft.com/office)で [サポート](https://developer.microsoft.com/office/support) リソースを確認してください。
+- Office Developer サブスクリプションのヘルプが必要ですか。 [Office Developer センター](https://developer.microsoft.com/office)で [サポート](https://developer.microsoft.com/office/docs#officecommunity) リソースを確認してください。
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
