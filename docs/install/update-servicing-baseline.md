@@ -13,18 +13,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8928feffed77f8bfbb3787bd9a20737b9c7b3f9e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 36bbec66e822d7e1daebcadbeeba30e166747368
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66213783"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501127"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>サービス ベースライン使用時の Visual Studio の更新
 
-Visual Studio 2019 は、その[製品ライフサイクル](/visualstudio/productinfo/release-rhythm.md#release-channel-updates)中に頻繁に更新されます。 これらには、次の両方が含まれます: マイナー リリースの更新 (例:16.0 から 16.1) (新機能やコンポーネントが含まれることがあります) と、サービス更新 (例:16.0.4 から 16.0.5) (重要な問題のターゲット修正プログラムのみが含まれます) です。 
+Visual Studio 2019 は、その[製品ライフサイクル](/visualstudio/productinfo/release-rhythm#release-channel-updates)中に頻繁に更新されます。 これらには、次の両方が含まれます: マイナー リリースの更新 (例:16.0 から 16.1) (新機能やコンポーネントが含まれることがあります) と、サービス更新 (例:16.0.4 から 16.0.5) (重要な問題のターゲット修正プログラムのみが含まれます) です。 
 
-エンタープライズ管理者は、各自のクライアントがサービス ベースラインを使い続けるようにすることを選択できます。これにより、次のサービス ベースラインのリリースから 1 年間のサービス更新がサポートされます。 これによって、開発者と管理者が、新機能、バグの修正、または新しいマイナー更新に含まれるコンポーネントを、より柔軟に採用できるようになります。 最初のサービス ベースラインは 16.0.x です。 詳細については、「[Enterprise および Professional のお客様向けのサポート オプション](/visualstudio/releases/2019/servicing.md#support-options-for-enterprise-and-professional-customers)」をご覧ください。
+エンタープライズ管理者は、各自のクライアントがサービス ベースラインを使い続けるようにすることを選択できます。これにより、次のサービス ベースラインのリリースから 1 年間のサービス更新がサポートされます。 これによって、開発者と管理者が、新機能、バグの修正、または新しいマイナー更新に含まれるコンポーネントを、より柔軟に採用できるようになります。 最初のサービス ベースラインは 16.0.x です。 詳細については、「[Enterprise および Professional のお客様向けのサポート オプション](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)」をご覧ください。
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>サービス ベースラインの使用を始める方法
 

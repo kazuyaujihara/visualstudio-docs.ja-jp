@@ -7,12 +7,12 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93159487d4d00b70a801e235f9a22eb35d6183c0
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998087"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500982"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Visual Studio 2017 for Mac をインストールする
 
@@ -41,7 +41,7 @@ Visual Studio で iOS を使用するには、以下が必要です。
 
    ![インストーラー ダイアログ](media/installer-image1.png)
 
-3. 次の図のようなアラート ダイアログが表示されることがあります。 この場合は、**[開く]** をクリックします。
+3. 次の図のようなアラート ダイアログが表示されることがあります。 この場合は、 **[開く]** をクリックします。
 
    ![アラート ダイアログ](media/installer-image2.png)
 
@@ -67,13 +67,13 @@ Visual Studio で iOS を使用するには、以下が必要です。
       - 完全なクロスプラットフォームの Xamarin アプリ – **Android**、**iOS**、および**macOS** プラットフォームを選択します。
    * **.NET Core アプリケーション** – **.NET Core** プラットフォームを選択します。
    * **ASP.NET Core Web アプリケーション** – **.NET Core** プラットフォームを選択します。
-   * **クロスプラットフォームの Unity ゲーム開発** – Visual Studio for Mac 以外の追加のプラットフォームをインストールする必要はありません。 Unity 拡張機能のインストールの詳細については、[Unity セットアップ ガイド](/visualstudio/macm/setup-vsmac-tools-unity)に関するページをご覧ください。
+   * **クロスプラットフォームの Unity ゲーム開発** – Visual Studio for Mac 以外の追加のプラットフォームをインストールする必要はありません。 Unity 拡張機能のインストールの詳細については、[Unity セットアップ ガイド](/visualstudio/mac/setup-vsmac-tools-unity)に関するページをご覧ください。
 
    このインストール画面には、各コンポーネントのサイズとバージョンが表示されます。 各コンポーネントをクリックすると、そのコンポーネントの依存ファイルの一覧 (Android の場合)、ダウンロードする追加パッケージ (.NET Core の場合)、必要な追加アプリケーション (iOS と macOS の場合) が表示されます。
 
    ![Android の追加の依存ファイル](media/installer-image6.png)
 
-7. 選択を完了したら、**[インストールと更新]** ボタンを選択してインストール プロセスを開始します。
+7. 選択を完了したら、 **[インストールと更新]** ボタンを選択してインストール プロセスを開始します。
 
 8. 選択した項目のダウンロードおよびインストール処理が始まります。
 
@@ -87,7 +87,7 @@ Visual Studio で iOS を使用するには、以下が必要です。
 
    ![アクセス許可を入力してインストーラーの処理を続行する](media/installer-image10.png)
 
-10. インストールが成功したら、**[スタート]** を押して Visual Studio でアプリ開発を始めることができます。
+10. インストールが成功したら、 **[スタート]** を押して Visual Studio でアプリ開発を始めることができます。
 
     ![Visual Studio を開く](media/installer-image11.png)
 

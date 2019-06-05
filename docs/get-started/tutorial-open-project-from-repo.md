@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1796ca10226e4aa5d0242bea89cc01f8452cf9e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944139"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402087"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>チュートリアル: リポジトリからプロジェクトを開く
 
@@ -43,13 +43,13 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio 2017 を開きます。
 
-1. 上部のメニュー バーで、**[ファイル]** > **[開く]** > **[ソース管理から開く]** の順に選択します。
+1. 上部のメニュー バーで、 **[ファイル]** > **[開く]** > **[ソース管理から開く]** の順に選択します。
 
    **[チーム エクスプローラー - 接続]** ページが開きます。
 
     ![Visual Studio IDE 内の [チーム エクスプローラー] ウィンドウ](./media/open-proj-repo-team-explorer.png)
 
-1. **[ローカル Git リポジトリ]** セクションで、**[複製]** を選択します。
+1. **[ローカル Git リポジトリ]** セクションで、 **[複製]** を選択します。
 
     ![[ローカル Git リポジトリ] セクションから [複製] を選択する](./media/open-proj-repo-local-git-repo-clone.png)
 
@@ -77,11 +77,11 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio 2019 を開きます。
 
-1. スタート ウィンドウで、**[コードを複製またはチェックアウトする]** を選択します。
+1. スタート ウィンドウで、 **[コードを複製またはチェックアウトする]** を選択します。
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
-1. リポジトリの場所を入力し、**[複製]** を選択します。
+1. リポジトリの場所を入力し、 **[複製]** を選択します。
 
    ![[コードを複製またはチェックアウトする] ウィンドウを表示する](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
@@ -101,7 +101,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio 2017 を開きます。
 
-1. 上部のメニュー バーで、**[ファイル]** > **[開く]** > **[ソース管理から開く]** の順に選択します。
+1. 上部のメニュー バーで、 **[ファイル]** > **[開く]** > **[ソース管理から開く]** の順に選択します。
 
    **[チーム エクスプローラー - 接続]** ページが開きます。
 
@@ -109,15 +109,15 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Azure DevOps リポジトリに接続するには、次の 2 つの方法があります。
 
-      - **[ホストされるサービスのプロバイダー]** セクションで、**[接続...]** を選択します。
+      - **[ホストされるサービスのプロバイダー]** セクションで、 **[接続...]** を選択します。
 
         ![Visual Studio IDE 内のチーム エクスプローラー ウィンドウの [ホストされるサービスのプロバイダー] セクション](./media/open-proj-repo-azure-devops.png)
 
-      - **[接続の管理]** ドロップダウン リストで、**[プロジェクトに接続...]** を選択します。
+      - **[接続の管理]** ドロップダウン リストで、 **[プロジェクトに接続...]** を選択します。
 
         ![Visual Studio IDE 内のチーム エクスプローラー ウィンドウの [接続の管理] セクション](./media/open-proj-repo-azuredevops-manage-connections.png)
 
-1. **[プロジェクトに接続]** ダイアログ ボックスで、接続するリポジトリを選択してから、**[複製]** を選択します。
+1. **[プロジェクトに接続]** ダイアログ ボックスで、接続するリポジトリを選択してから、 **[複製]** を選択します。
 
       ![Visual Studio から生成される "プロジェクトに接続" ダイアログ ボックス](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
@@ -138,17 +138,17 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio 2019 を開きます。
 
-1. スタート ウィンドウで、**[コードを複製またはチェックアウトする]** を選択します。
+1. スタート ウィンドウで、 **[コードを複製またはチェックアウトする]** を選択します。
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
-1. **[リポジトリを参照する]** セクションで、**[Azure DevOps]** を選択します。
+1. **[リポジトリを参照する]** セクションで、 **[Azure DevOps]** を選択します。
 
    ![[コードを複製またはチェックアウトする] ウィンドウを表示する](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
    サインイン ウィンドウが表示される場合は、アカウントにサインインします。
 
-1. **[プロジェクトに接続]** ダイアログ ボックスで、接続するリポジトリを選択してから、**[複製]** を選択します。
+1. **[プロジェクトに接続]** ダイアログ ボックスで、接続するリポジトリを選択してから、 **[複製]** を選択します。
 
       ![Visual Studio から生成される "プロジェクトに接続" ダイアログ ボックス](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
@@ -159,7 +159,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
      ![複製が完了した後の Visual Studio の [チーム エクスプローラー] ウィンドウ](./media/vs-2019/clone-complete-azure-devops.png)
 
-1. フォルダーやファイルを表示するには、**[フォルダー ビューの表示]** リンクを選択します。
+1. フォルダーやファイルを表示するには、 **[フォルダー ビューの表示]** リンクを選択します。
 
      ![複製が完了した後の Visual Studio の [チーム エクスプローラー] ウィンドウの [ソリューション] セクション](./media/vs-2019/show-folder-view-azure-devops.png)
 
@@ -177,9 +177,9 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 Visual Studio を使ってコードを書く準備が整ったら、次の言語固有のチュートリアルのいずれかを開始します。
 
-- [Visual Studio のチュートリアル | **C#**](./csharp/index.yml)
+- [Visual Studio のチュートリアル | **C#** ](./csharp/index.yml)
 - [Visual Studio のチュートリアル | **Visual Basic**](./visual-basic/index.yml)
-- [Visual Studio のチュートリアル | **C++**](/cpp/get-started/)
+- [Visual Studio のチュートリアル | **C++** ](/cpp/get-started/tutorial-console-cpp)
 - [Visual Studio のチュートリアル | **Python**](/visualstudio/python/)
 - [Visual Studio のチュートリアル | **JavaScript**、**TypeScript**、**Node.js**](/visualstudio/javascript/)
 
