@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f3c8fbde60e247ca9ec5fe82c9a16f28aded2abc
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676288"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715062"
 ---
 # <a name="how-to-configure-static-code-analysis-for-managed-code"></a>方法: マネージ コード用の静的コード分析を構成します。
 
@@ -29,7 +29,7 @@ ASP.NET web アプリケーションのルール セットを構成する方法�
 > [!NOTE]
 > 静的コード分析をしないと、この記事が適用されます[Roslyn アナライザー](use-roslyn-analyzers.md)ビルドの後にコード分析の実行がありません。
 
-## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>.NET Framework プロジェクトの規則セットを構成するには
+## <a name="configure-a-rule-set-for-a-net-framework-project"></a>.NET Framework プロジェクトに対して規則セットを構成します。
 
 1. 開く、**コード分析**プロジェクトのプロパティ ページのタブ。 これは、次の方法のいずれかで行います。
 

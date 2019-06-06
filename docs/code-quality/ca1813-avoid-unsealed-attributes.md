@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d7236b77a7dd0a81f8a7846c0eba28e3b520cdd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a17c5bdc9e21bdf877206b1dc28596c251049455
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545590"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714752"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813:アンシールド属性を使用しません
 
@@ -39,7 +39,7 @@ ms.locfileid: "62545590"
 
 ## <a name="rule-description"></a>規則の説明
 
-.NET Framework クラス ライブラリでは、カスタム属性を取得するメソッドを提供します。 既定では、これらのメソッドで属性の継承階層が検索されます。 たとえば、<xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName>指定された属性型または指定された属性型を拡張する属性の型を検索します。 属性をシールする継承階層全体が検索を排除し、パフォーマンスを向上させることができます。
+.NET では、カスタム属性を取得するメソッドを提供します。 既定では、これらのメソッドで属性の継承階層が検索されます。 たとえば、<xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName>指定された属性型または指定された属性型を拡張する属性の型を検索します。 属性をシールする継承階層全体が検索を排除し、パフォーマンスを向上させることができます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 

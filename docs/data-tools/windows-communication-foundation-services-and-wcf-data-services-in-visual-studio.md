@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3032c73d92f69e6380427bfc675ee263a3eb013f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564830"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714467"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio での Windows Communication Foundation サービスと WCF データ サービス
 
@@ -56,7 +56,7 @@ WCF Data Services は、標準の Open Data (OData) プロトコルの実装で�
 
 ### <a name="wcf-programming-model"></a>WCF プログラミング モデル
 
-WCF プログラミング モデルは 2 つのエンティティ間の通信に基づいて: WCF サービスと WCF クライアントです。 プログラミング モデルにカプセル化、 <xref:System.ServiceModel> .NET Framework の名前空間。
+WCF プログラミング モデルは 2 つのエンティティ間の通信に基づいて: WCF サービスと WCF クライアントです。 プログラミング モデルにカプセル化、 <xref:System.ServiceModel> .net 名前空間。
 
 ### <a name="wcf-service"></a>WCF サービス
 
@@ -228,7 +228,7 @@ Windows Communication Foundation (WCF) サービスのほとんどのメソッ�
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>方法: 既存の型を再利用のサービスを構成します。
 
-サービス参照がプロジェクトに追加されると、サービスで定義された任意の型は、ローカル プロジェクトで生成されます。 多くの場合、これを作成します重複する型、サービスは、一般的な .NET Framework の型を使用する場合、または共有ライブラリの型が定義されている場合。
+サービス参照がプロジェクトに追加されると、サービスで定義された任意の型は、ローカル プロジェクトで生成されます。 多くの場合、これを作成します重複する型、サービスは、一般的な .NET 型を使用する場合、または共有ライブラリの型が定義されている場合。
 
 この問題を避けるためには、参照先アセンブリの型は既定で共有されます。 型の 1 つまたは複数のアセンブリの共有を無効にする場合は、行うことができますよう、**サービス参照の構成** ダイアログ ボックス。
 

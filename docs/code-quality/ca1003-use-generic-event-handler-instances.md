@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f666dc71aaf9683d9a7c936cc4985e97146d9454
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842525"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714377"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003:汎用イベント ハンドラーのインスタンスを使用します
 
@@ -41,7 +41,7 @@ ms.locfileid: "65842525"
 
 ## <a name="rule-description"></a>規則の説明
 
-.NET では、前に、イベント ハンドラーにカスタム情報を渡すために、新しいデリゲートする必要があるから派生したクラスが指定されている宣言、<xref:System.EventArgs?displayProperty=fullName>クラス。 これは、.NET ではなくなりました。 導入された .NET Framework、<xref:System.EventHandler%601?displayProperty=fullName>デリゲートから派生した任意のクラスを許可するジェネリック デリゲート<xref:System.EventArgs>イベント ハンドラーと共に使用します。
+.NET では、前に、イベント ハンドラーにカスタム情報を渡すために、新しいデリゲートする必要があるから派生したクラスが指定されている宣言、<xref:System.EventArgs?displayProperty=fullName>クラス。 .Net では、ジェネリック<xref:System.EventHandler%601?displayProperty=fullName>デリゲートにより、任意のクラスから派生した<xref:System.EventArgs>イベント ハンドラーと共に使用します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
