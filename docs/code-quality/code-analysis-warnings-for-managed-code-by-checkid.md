@@ -260,12 +260,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fabb7a7d0e13218532da40ce15d0f2661875b15e
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 87461cfe06ac1c038176c3b9d4dcd513733e8d43
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976173"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714512"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Checkid 別のマネージ コードに対するコード分析の警告
 
@@ -288,7 +288,7 @@ ms.locfileid: "65976173"
 | CA1012 | [CA 1012:抽象型には、コンス トラクターはありません。](../code-quality/ca1012-abstract-types-should-not-have-constructors.md) | 抽象型上のコンストラクターは、派生型からのみ呼び出すことができます。 パブリック コンストラクターで型のインスタンスが作成され、抽象型のインスタンスは自分で作成できないため、パブリック コンストラクターが含まれる抽象型のデザインは不適切になります。 |
 | CA1013 | [CA1013:オーバー ロードで、演算子 equals をオーバー ロードの加算および減算](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md) | パブリック型またはプロテクト型で、等値演算子を実装しないまま、加算演算子または減算演算子を実装しています。 |
 | CA1014 | [CA 1014:アセンブリに clscompliantattribute を設定します](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md) | 共通言語仕様 (CLS) には、名前付けの制約、データ型、および規則が定義されています。アセンブリを複数のプログラミング言語で使用する場合、この仕様に準拠する必要があります。 すべてのアセンブリに <xref:System.CLSCompliantAttribute> を使用して、CLS への準拠を明示することをお勧めします。 この属性が使用されていないアセンブリは、CLS に準拠しません。 |
-| CA1016 | [CA 1016:アセンブリに assemblyversionattribute を設定します](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md) | .NET Framework は、アセンブリを一意に識別する厳密な名前付きアセンブリの型にバインドして、バージョン番号を使用します。 バージョン番号は、バージョンと発行者のポリシーと共に使用されます。 既定で、アプリケーションは、ビルドされたアセンブリのバージョンでのみ実行されます。 |
+| CA1016 | [CA 1016:アセンブリに assemblyversionattribute を設定します](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md) | .NET は、アセンブリを一意に識別するために、厳密な名前付きアセンブリの型にバインドして、バージョン番号を使用します。 バージョン番号は、バージョンと発行者のポリシーと共に使用されます。 既定で、アプリケーションは、ビルドされたアセンブリのバージョンでのみ実行されます。 |
 | CA1017 | [CA 1017:アセンブリに comvisibleattribute を設定します](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md) |ComVisibleAttribute 属性によって、COM クライアントからマネージド コードにアクセスする方法が決まります。 アセンブリで COM の参照範囲を明示することをお勧めします。 COM の参照範囲は、アセンブリ全体に設定し、個々の型と型のメンバー用にオーバーライドできます。 この属性がない場合、アセンブリのコンテンツは COM クライアントから参照できます。 |
 | CA1018 | [CA 1018:属性を attributeusageattribute に設定します](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md) | カスタム属性を定義する場合、AttributeUsageAttribute を使用してマークし、カスタム属性を適用できるソース コードの位置を示します。 属性の意味と用途によって、コード内の有効な位置が決まります。 |
 | CA1019 | [CA 1019:属性引数にアクセサーを定義します](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) | 属性では、対象に適用するときに必ず指定する必須の引数を定義できます。 この引数は、コンストラクターに位置指定パラメーターで属性を指定できるようになるため、位置指定引数とも呼ばれます。 必須のすべての引数について、対応する読み取り専用のプロパティも属性で規定する必要があります。これは、引数値を実行時に取得できるようにするためです。 また、属性ではオプションの引数も定義できます。これは名前付き引数とも呼ばれます。 この引数は、名前でコンストラクターに属性を指定するときに使用されます。また、対応する読み取り/書き込みプロパティが必要です。 |
@@ -337,7 +337,7 @@ ms.locfileid: "65976173"
 | CA1300 | [CA 1300:Messageboxoption を指定します](../code-quality/ca1300-specify-messageboxoptions.md) | テキストを右から左へ読むカルチャでメッセージ ボックスを正しく表示するには、MessageBoxOptions 列挙体の RightAlign メンバーと RtlReading メンバーを、Show メソッドに渡す必要があります。 |
 | CA1301 | [CA 1301:アクセラレータが重複の回避します。](../code-quality/ca1301-avoid-duplicate-accelerators.md) | Alt キーを使用するアクセス キー (アクセラレータとも呼ばれます) によって、キーボードからコントロールにアクセスできます。 複数のコントロールには、重複するアクセス キーがある、アクセス キーの動作は明確に定義されません。 |
 | CA1302 | [CA 1302:ロケール特有の文字列をハードコードしません](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md) | System.Environment.SpecialFolder 列挙体には、特殊なシステム フォルダーを参照するメンバーが含まれます。 このフォルダーの位置は、オペレーティング システムによって異なる場合、ユーザーが位置を変更する場合、および位置がローカライズされる場合があります。 Environment.GetFolderPath メソッドは、Environment.SpecialFolder 列挙体に関連付けられ、ローカライズされ、現在実行されているコンピューターに適切な位置を返します。 |
-| CA1303 | [CA 1303:ローカライズされたパラメーターとしてリテラルを渡さないでください。](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md) | 外部から参照できるメソッドに渡し文字列リテラルをパラメーターとしてコンストラクターまたはメソッドは、.NET Framework クラス ライブラリで、その文字列はローカライズ可能にする必要があります。 |
+| CA1303 | [CA 1303:ローカライズされたパラメーターとしてリテラルを渡さないでください。](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md) | 外部から参照できるメソッド文字列リテラルをパラメーターとして渡し、.NET のコンス トラクターまたはメソッドをおよび、その文字列はローカライズ可能にする必要があります。 |
 | CA1304 | [CA1304:CultureInfo を指定します](../code-quality/ca1304-specify-cultureinfo.md) | System.Globalization.CultureInfo パラメーターを受け入れるオーバーロードを持つメンバーを呼び出しているメソッドまたはコンストラクターが、CultureInfo パラメーターを使用するオーバーロードを呼び出していません。 CultureInfo オブジェクトまたは System.IFormatProvider オブジェクトが指定されない場合、オーバーロードされたメンバーから提示された既定値は、すべてのロケールに効果が及ばない可能性があります。 |
 | CA1305 | [CA1305:IFormatProvider を指定します](../code-quality/ca1305-specify-iformatprovider.md) | System.IFormatProvider パラメーターを受け入れるオーバーロードを持つメンバーを 1 つ以上呼び出しているメソッドまたはコンストラクターが、IFormatProvider パラメーターを使用するオーバーロードを呼び出していません。 System.Globalization.CultureInfo オブジェクトまたは IFormatProvider オブジェクトが指定されない場合、オーバーロードされたメンバーから提示された既定値は、すべてのロケールに効果が及ばない可能性があります。 |
 | CA1306 | [CA 1306:データ型のロケールを設定します。](../code-quality/ca1306-set-locale-for-data-types.md) | ロケールによって、データに関するカルチャ固有の表示要素が決まります。たとえば、数値、通貨記号、並べ替え順序に使用する形式などです。 DataTable または DataSet を作成するときは、ロケールを明示的に設定する必要があります。 |
@@ -347,7 +347,7 @@ ms.locfileid: "65976173"
 | CA1400 | [CA1400:P/invoke エントリ ポイントが存在する必要があります。](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) |パブリック メソッドまたはプロテクト メソッドが System.Runtime.InteropServices.DllImportAttribute 属性を使用してマークされています。 アンマネージ ライブラリの位置を特定できないか、メソッドがライブラリ内の関数と一致しません。 |
 | CA1401 | [CA1401:P/invoke を表示することはできません。](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | パブリック型のパブリック メソッドまたはプロテクト メソッドに、System.Runtime.InteropServices.DllImportAttribute 属性があります ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] では Declare キーワードでも実装されます)。 このようなメソッドは公開しないでください。 |
 | CA1402 |[CA 1402:COM 参照可能インターフェイスでのオーバー ロードを避ける](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md) | オーバーロードされたメソッドが COM クライアントに公開されると、最初のメソッド オーバーロードだけが名前を保持します。 後続のオーバーロードは、名前にアンダースコア文字 (_) およびオーバーロードの宣言の順序に対応する整数が付加され、一意の名前に変更されます。 |
-| CA1403 | [CA 1403:Auto 配置の型が COM に表示することはできません。](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | COM 参照可能な値型が、LayoutKind.Auto に設定された System.Runtime.InteropServices.StructLayoutAttribute 属性を使用してマークされています。これらの型のレイアウトは、COM クライアントが特定のレイアウトが予期される動作しなくなる .NET Framework のバージョン間で変更できます。 |
+| CA1403 | [CA 1403:Auto 配置の型が COM に表示することはできません。](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | COM 参照可能な値型が、LayoutKind.Auto に設定された System.Runtime.InteropServices.StructLayoutAttribute 属性を使用してマークされています。これらの型のレイアウトは、特定のレイアウトを期待する COM クライアントが中断される .NET のバージョン間で変更できます。 |
 | CA1404 | [CA 1404:P/invoke の直後に GetLastError を呼び出します](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md) | Marshal.GetLastWin32Error メソッドまたは同等に呼び出し[!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)]GetLastError 関数が、直前の呼び出しでないオペレーティング システムにメソッドを呼び出します。 |
 | CA1405 | [CA 1405:COM から参照できる型の基本型が COM 参照可能にする必要があります。](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md) | COM 参照可能な型が、COM 参照不可能な型から派生しています。 |
 | CA1406 |[CA1406:Visual Basic 6 クライアントに対しては Int64 引数を避ける](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md) | Visual Basic 6 COM クライアントは、64 ビット整数値にアクセスできません。 |
@@ -388,7 +388,7 @@ ms.locfileid: "65976173"
 | CA1720 |[CA 1720:識別子は型名を含めることはできません。](../code-quality/ca1720-identifiers-should-not-contain-type-names.md) | 外部から参照できるメンバーのパラメーター名にデータ型の名前が含まれているか、外部から参照できるメンバーの名前に言語固有のデータ型の名前が含まれています。 |
 | CA1721 | [CA1721:プロパティ名は、get メソッドと一致する必要があります。](../code-quality/ca1721-property-names-should-not-match-get-methods.md) |パブリック メンバーまたはプロテクト メンバーの名前が、"Get" から始まっているか、パブリック プロパティまたはプロテクト プロパティの名前と一致します。 "Get" メソッドとプロパティには、それぞれの機能を明確に区別する名前を指定しなければなりません。 |
 | CA1722 | [CA1722:識別子には、不適切なプレフィックスはありません。](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md) | 規則では、特定のプログラミング要素にのみ、固有のプレフィックスで始まる名前を付けることができます。 |
-| CA1724 | [CA1724:型名が名前空間と一致する必要があります。](../code-quality/ca1724-type-names-should-not-match-namespaces.md) | 型名は、.NET Framework クラス ライブラリで定義されている名前空間の名前と一致する必要があります。 この規則に違反すると、ライブラリが使いづらくなります。 |
+| CA1724 | [CA1724:型名が名前空間と一致する必要があります。](../code-quality/ca1724-type-names-should-not-match-namespaces.md) | 型名は、.NET 名前空間の名前と一致する必要があります。 この規則に違反すると、ライブラリが使いづらくなります。 |
 | CA1725 | [CA1725:パラメーター名は基本宣言と一致する必要があります。](../code-quality/ca1725-parameter-names-should-match-base-declaration.md) | オーバーライド階層のパラメーターに対する一貫性のある名前付けによって、メソッド オーバーライドの有用性が高まります。 派生メソッドのパラメーター名が基本宣言のパラメーター名と異なる場合、メソッドが基本メソッドのオーバーライドであるか、またはメソッドの新しいオーバーライドであるかについて混乱が生じる可能性があります。 |
 | CA1726 | [CA 1726: 適切な。用語を使用します](../code-quality/ca1726-use-preferred-terms.md) | 外部から参照可能な識別子の名前に含まれている用語に対応する、別の推奨される用語があります。 あるいは、名前に "Flag" または "Flags" という語が含まれています。 |
 | CA1800 | [CA 1800:不必要にキャストしません](../code-quality/ca1800-do-not-cast-unnecessarily.md) | 二重のキャストがあるとパフォーマンスが低下します。特に、小さな繰り返しステートメントでキャストが実行される場合はそうです。 |
@@ -400,7 +400,7 @@ ms.locfileid: "65976173"
 | CA1810 | [CA 1810:参照型の静的フィールドのインラインを初期化します](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md) | 型で明示的な静的コンストラクターを宣言すると、Just-In-Time (JIT) コンパイラが、静的コンストラクターが呼び出されたことを確認するために、型の静的メソッドと静的インスタンス コンストラクターに個別にチェックを追加します。 静的コンストラクターのチェックによってパフォーマンスが低下することがあります。 |
 | CA1811 | [CA1811:呼び出されていないプライベート コードを避ける](../code-quality/ca1811-avoid-uncalled-private-code.md) | プライベート メンバーまたは内部 (アセンブリ レベル) メンバーが、アセンブリ内において、また共通言語ランタイムおよびデリゲートのいずれからも呼び出されていません。 |
 | CA1812 | [CA1812:インスタンス化されていない内部クラスを回避します。](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | アセンブリ レベルの型のインスタンスが、アセンブリ内のコードから作成されません。 |
-| CA1813 | [CA1813:シールされていない属性します。](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET Framework クラス ライブラリでは、カスタム属性を取得するメソッドを提供します。 既定では、これらのメソッドで属性の継承階層が検索されます。 属性をシールすると、継承階層の全体が検索されなくなるため、パフォーマンスが向上します。 |
+| CA1813 | [CA1813:シールされていない属性します。](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET では、カスタム属性を取得するメソッドを提供します。 既定では、これらのメソッドで属性の継承階層が検索されます。 属性をシールすると、継承階層の全体が検索されなくなるため、パフォーマンスが向上します。 |
 | CA1814 | [CA1814:多次元よりジャグ配列を優先します。](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md) | ジャグ配列とは、その要素も配列である配列です。 要素を構成する配列のサイズは異なってもよいため、データ セットによっては無駄な空間が少なくなります。 |
 | CA1815 | [CA1815:equals および operator equals を値型でオーバーライドします](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)」を参照してください。 | 値型の場合、Equals を継承した実装が Reflection ライブラリを使用して、すべてのフィールドの内容を比較します。 Reflection は計算コストが高いため、場合によってはすべてのフィールドで等値性を比較する必要はありません。 ユーザーがインスタンスの比較または並べ替えを行うことや、ハッシュ テーブル キーとしてインスタンスを使用することが予想される場合には、値型に Equals を実装する必要があります。 |
 | CA1816 | [CA 1816:GC を呼び出します。SuppressFinalize 正しく](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md) | Dispose の実装であるメソッドでは、GC は呼び出されません。SuppressFinalize;または、Dispose の実装ではないメソッドは、GC を呼び出します。SuppressFinalize;または、GC のメソッド呼び出し。SuppressFinalize およびこの (Visual Basic で Me) 以外は何かのパス。 |
@@ -427,7 +427,7 @@ ms.locfileid: "65976173"
 | CA2104 |[CA 2104:読み取りのみ変更可能な参照型を宣言しません](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md) | 外部から参照できる型に、変更可能な参照型である、外部から参照可能な読み取り専用のフィールドがあります。 変更可能な型とは、インスタンス データを変更できる型です。 |
 | CA2105 | [CA 2105:配列フィールドいない読み取り専用にします。](../code-quality/ca2105-array-fields-should-not-be-read-only.md) |配列を含むフィールドに read-only ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] では ReadOnly) 修飾子を適用すると、そのフィールドで参照先の配列を変更できません。 ただし、読み取り専用フィールドに格納された配列の要素は変更できます。 |
 | CA2106 | [CA 2106:セキュリティで保護されたアサートします。](../code-quality/ca2106-secure-asserts.md) | メソッドによってアクセス許可がアサートされますが、呼び出し元に対してセキュリティ チェックが実行されていません。 セキュリティ チェックを実行せずにセキュリティ アクセス許可をアサートすると、悪用される可能性があるセキュリティの弱点がコード内に残る場合があります。 |
-| CA2107 | [CA2107:Deny し、permitonly の用法](../code-quality/ca2107-review-deny-and-permit-only-usage.md) |PermitOnly メソッドと CodeAccessPermission.Deny セキュリティ アクションは、.NET Framework のセキュリティの高度な知識を持つユーザーだけが使用する必要があります。 コードにこのセキュリティ アクションを使用する場合、セキュリティを再確認する必要があります。 |
+| CA2107 | [CA2107:Deny し、permitonly の用法](../code-quality/ca2107-review-deny-and-permit-only-usage.md) |PermitOnly メソッドと CodeAccessPermission.Deny セキュリティ アクションは、.NET セキュリティの高度な知識を持つユーザーだけが使用する必要があります。 コードにこのセキュリティ アクションを使用する場合、セキュリティを再確認する必要があります。 |
 | CA2108 | [CA 2108:値型で宣言型セキュリティを確認してください。](../code-quality/ca2108-review-declarative-security-on-value-types.md) | パブリックまたはプロテクトの値型が、データ アクセスまたはリンク確認要求で保護されています。 |
 | CA2109 | [CA 2109:表示するイベント ハンドラーをレビューします](../code-quality/ca2109-review-visible-event-handlers.md) | パブリックまたはプロテクトのイベント ハンドラー メソッドが検出されました。 イベント ハンドラー メソッドは、絶対に必要な場合を除き公開しないでください。 |
 | CA2111 |[CA2111:ポインターを表示することはできません。](../code-quality/ca2111-pointers-should-not-be-visible.md) | ポインターがプライベート、内部、読み取り専用のいずれでもありません。 悪意のあるコードで、ポインターの値が変更される可能性があります。結果的に、メモリの任意の位置にアクセスされたり、アプリケーション エラーやシステム障害の原因になります。 |
@@ -471,7 +471,7 @@ ms.locfileid: "65976173"
 | CA2201 | [CA2201:予約された例外の種類を発生させません](../code-quality/ca2201-do-not-raise-reserved-exception-types.md) | これにより、元のエラーの検出およびデバッグが困難になります。 |
 | CA2202 | [CA 2202:オブジェクトを複数回破棄しません](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md) |メソッドの実装に、同じオブジェクトに対して System.IDisposable.Dispose または Dispose と同等の操作 (たとえば、一部の型に対する Close() メソッドなど) を複数回呼び出すコード パスが含まれています。 |
 | CA2204 | [CA2204:リテラルは正しく入力されなければなりません](../code-quality/ca2204-literals-should-be-spelled-correctly.md) | メソッド本体に含まれるリテラル文字列内に Microsoft スペル チェック ライブラリで認識されない語が 1 つ以上あります。 |
-| CA2205 | [CA2205:Win32 API に相当するマネージドの使用します。](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md) | オペレーティング システム呼び出しメソッドが定義されているし、同等の機能を持つメソッドですが、.NET Framework クラス ライブラリに記載されています。 |
+| CA2205 | [CA2205:Win32 API に相当するマネージドの使用します。](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md) | オペレーティング システム呼び出しメソッドが定義されているし、同等の機能を備えた .NET メソッドは使用できます。 |
 | CA2207 | [CA2207:値型の静的フィールドのインラインを初期化します](../code-quality/ca2207-initialize-value-type-static-fields-inline.md) | 値型で明示的な静的コンストラクターを宣言しています。 この規則違反を修正するには、静的データが宣言されたとき、および静的コンストラクターを削除するときに、静的データをすべて初期化します。 |
 | CA2208 |[CA2208:引数の例外を正しくインスタンス化します。](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md) | ArgumentException またはそのクラスから派生した例外の種類の既定 (パラメーターなし) のコンストラクターに対して呼び出しが行われたか、ArgumentException またはそのクラスから派生した例外の種類のパラメーター付きのコンストラクターに不適切な文字列型の引数が渡されました。 |
 | CA2210 |[CA 2210:アセンブリが有効な厳密な名前](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md) | 厳密な名前によって、改ざんされたアセンブリを、クライアントが無意識のうちに読み込む問題を防ぐことができます。 厳密な名前のないアセンブリが配置される状況は、限定されます。 適切に署名されていないアセンブリを共有または配布すると、アセンブリが改ざんされる場合、共通言語ランタイムでアセンブリを読み込むことができない場合、またはユーザーのコンピューターで検証を無効にする必要がある場合などの問題が考えられます。 |

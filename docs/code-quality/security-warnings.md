@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c52db730e471d845989b8fdfbadd259b5d166e8f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825280"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715229"
 ---
 # <a name="security-warnings"></a>セキュリティの警告
 
@@ -36,7 +36,7 @@ ms.locfileid: "62825280"
 |[CA 2104:読み取りのみ変更可能な参照型を宣言しません](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|外部から参照できる型に、変更可能な参照型である、外部から参照可能な読み取り専用のフィールドがあります。 変更可能な型とは、インスタンス データを変更できる型です。|
 |[CA 2105:配列フィールドいない読み取り専用にします。](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|配列を含むフィールドに読み取り専用 (Visual Basic では ReadOnly) 修飾子を適用すると、そのフィールドで参照先の配列を変更できません。 ただし、読み取り専用フィールドに格納された配列の要素は変更できます。|
 |[CA 2106:セキュリティで保護されたアサートします。](../code-quality/ca2106-secure-asserts.md)|メソッドによってアクセス許可がアサートされますが、呼び出し元に対してセキュリティ チェックが実行されていません。 セキュリティ チェックを実行せずにセキュリティ アクセス許可をアサートすると、悪用される可能性があるセキュリティの弱点がコード内に残る場合があります。|
-|[CA2107:Deny し、permitonly の用法](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|PermitOnly メソッドと CodeAccessPermission.Deny セキュリティ アクションは、.NET Framework のセキュリティについて高度な知識を持っている場合にのみ使用してください。 コードにこのセキュリティ アクションを使用する場合、セキュリティを再確認する必要があります。|
+|[CA2107:Deny し、permitonly の用法](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|Permitonly メソッドと CodeAccessPermission.Deny セキュリティ アクションが使ってのみ .NET セキュリティの高度な知識を持つ。 コードにこのセキュリティ アクションを使用する場合、セキュリティを再確認する必要があります。|
 |[CA 2108:値型で宣言型セキュリティを確認してください。](../code-quality/ca2108-review-declarative-security-on-value-types.md)|パブリックまたはプロテクトの値型が、データ アクセスまたはリンク確認要求で保護されています。|
 |[CA 2109:表示するイベント ハンドラーをレビューします](../code-quality/ca2109-review-visible-event-handlers.md)|パブリックまたはプロテクトのイベント ハンドラー メソッドが検出されました。 イベント ハンドラー メソッドは、絶対に必要な場合を除き公開しないでください。|
 |[CA2111:ポインターを表示することはできません。](../code-quality/ca2111-pointers-should-not-be-visible.md)|ポインターがプライベート、内部、読み取り専用のいずれでもありません。 悪意のあるコードで、ポインターの値が変更される可能性があります。結果的に、メモリの任意の位置にアクセスされたり、アプリケーション エラーやシステム障害の原因になります。|

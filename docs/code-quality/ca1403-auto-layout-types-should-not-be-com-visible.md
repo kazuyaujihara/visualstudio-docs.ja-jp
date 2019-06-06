@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fa965caf63dad6e81e2aeabbc93e97c7aa4b7a80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef7b693a881aaa1457004c84968ebc80936fc2b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546200"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714851"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403:Auto 配置の型を COM 参照可能にすることはできません
 
@@ -39,7 +39,7 @@ ms.locfileid: "62546200"
 
 ## <a name="rule-description"></a>規則の説明
 
-<xref:System.Runtime.InteropServices.LayoutKind> レイアウトの種類は、共通言語ランタイムによって管理されます。 これらの型のレイアウトは、特定のレイアウトを期待する COM クライアントを中断する .NET Framework のバージョン間で変更できます。 場合、 <xref:System.Runtime.InteropServices.StructLayoutAttribute> 、c#、Visual Basic、および C++ コンパイラの指定の属性が指定されていない[参照](<xref:System.Runtime.InteropServices.LayoutKind.Auto>)値の型。
+<xref:System.Runtime.InteropServices.LayoutKind> レイアウトの種類は、共通言語ランタイムによって管理されます。 これらの型のレイアウトは、.NET は、特定のレイアウトを期待する COM クライアントの中断のバージョン間で変更できます。 場合、 <xref:System.Runtime.InteropServices.StructLayoutAttribute> 、c#、Visual Basic、および C++ コンパイラの指定の属性が指定されていない[参照](<xref:System.Runtime.InteropServices.LayoutKind.Auto>)値の型。
 
 すべてのパブリックな非ジェネリックの型が、COM から参照できる他のマークがない限り、すべてのパブリックでないとジェネリック型が COM に表示されません。 ただし、偽陽性を減らすためには、この規則を明示的に指定する型の COM の参照範囲が必要です。 格納しているアセンブリをマークする必要があります、<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>に設定`false`で型をマークする必要があり、<xref:System.Runtime.InteropServices.ComVisibleAttribute>に設定`true`します。
 

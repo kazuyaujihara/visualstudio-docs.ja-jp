@@ -12,18 +12,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81c4d6ba7cc4ae870c74733a4e78733c023e3f58
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540695"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713967"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Visual Studio でマネージ コード用の静的コード分析の概要
 
 Visual Studio は 2 つの方法でマネージ コードのコード分析を実行することができます: で*FxCop*スタティック分析、マネージ アセンブリの詳細のモダン*Roslyn アナライザー*します。 このトピックでは、FxCop の静的コード分析について説明します。 コード アナライザーを使用してコードの分析の詳細については、次を参照してください。[概要の Roslyn アナライザー](../code-quality/roslyn-analyzers-overview.md)します。
 
-マネージド コードのコード分析を使用すると、マネージド アセンブリを分析し、Microsoft .NET Framework デザイン ガイドラインに規定されたプログラミングやデザインに関する規則違反など、アセンブリに関する情報をレポートとして得ることができます。
+マネージ コードのコード分析は、マネージ アセンブリを分析しに規定のプログラミングやデザイン規則違反など、アセンブリに関する情報が報告、 [.NET デザイン ガイドライン](/dotnet/standard/design-guidelines/)します。
 
 分析ツールは、分析中に実行するチェック項目を警告メッセージとして表示します。 警告メッセージは、プログラミングやデザイン上の問題を識別し、可能であれば問題の解決方法を提供します。
 
