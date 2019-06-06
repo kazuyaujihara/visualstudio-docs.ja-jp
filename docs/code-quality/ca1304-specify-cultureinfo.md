@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fe4ebce3a49c4aa626515e22eacd1c8e263847
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6d4776f6bcbf89e95301bd2c7ef4f6f6b5680d9
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797496"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714361"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304:CultureInfo を指定します
 
@@ -40,7 +40,7 @@ ms.locfileid: "62797496"
 
 ## <a name="rule-description"></a>規則の説明
 
-ときに、<xref:System.Globalization.CultureInfo>または<xref:System.IFormatProvider?displayProperty=nameWithType>オブジェクトが指定されていない、オーバー ロードされたメンバーによって提供される既定値はすべてのロケールに効果がありません。 また、.NET Framework のメンバーが既定のカルチャを選択し、コードの適切なことができない可能性がある前提条件に基づく書式設定します。 コードのシナリオでは、予想どおりに機能させるには、次のガイドラインに従って、カルチャに固有の情報を指定する必要があります。
+ときに、<xref:System.Globalization.CultureInfo>または<xref:System.IFormatProvider?displayProperty=nameWithType>オブジェクトが指定されていない、オーバー ロードされたメンバーによって提供される既定値はすべてのロケールに効果がありません。 また、.NET メンバーが既定のカルチャを選択し、コードの適切なことができない可能性がある前提条件に基づく書式設定します。 コードのシナリオでは、予想どおりに機能させるには、次のガイドラインに従って、カルチャに固有の情報を指定する必要があります。
 
 - 場合は、値は、ユーザーに表示されますが、現在のカルチャを使用します。 以下を参照してください。<xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>
 

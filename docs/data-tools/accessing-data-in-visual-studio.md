@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16cbdb0a673f503dcee49b7a323d1453ee93532a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5403803a4da0821978a8c6bbfc31e45c31104640
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818229"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715262"
 ---
 # <a name="access-data-in-visual-studio"></a>Visual Studio でのデータへのアクセス
 
@@ -152,6 +152,6 @@ C++ アプリからデータベースへの接続に関する詳細について�
 
 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;c# と Visual Basic、およびリレーショナル データベース、XML ドキュメント、データセット、およびインメモリ コレクションを照会するための一般的なモデルに組み込まれたクエリ機能について説明します。
 
-[Visual Studio での XML ツール](../xml-tools/xml-tools-in-visual-studio.md)&mdash;、XML データ、XSLT のデバッグ、.NET Framework の XML 機能の使用と XML クエリのアーキテクチャについて説明します。
+[Visual Studio での XML ツール](../xml-tools/xml-tools-in-visual-studio.md)&mdash;、XML データ、XSLT のデバッグ、.NET の XML 機能の使用と XML クエリのアーキテクチャについて説明します。
 
-[XML ドキュメントとデータ](/dotnet/standard/data/xml/index)&mdash;XML ドキュメントおよび .NET Framework でのデータを処理するクラスの包括的な統合セットを概要を説明します。
+[XML ドキュメントとデータ](/dotnet/standard/data/xml/index)&mdash;XML ドキュメントおよび .NET でのデータを処理するクラスの包括的な統合セットを概要を説明します。

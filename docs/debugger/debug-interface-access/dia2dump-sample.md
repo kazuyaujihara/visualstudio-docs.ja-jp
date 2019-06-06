@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c8b92ae2f607ae449b7b4392fc3638fcdcb6a80
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554871"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715343"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump サンプル
 
@@ -42,9 +42,9 @@ Dia2dump サンプルでは、Visual Studio と共にインストールされ、
 
 1. **ソリューション エクスプ ローラー**、Dia2Dump プロジェクト (ソリューションではなく) を選択します。
 
-1. プロジェクトの **[プロパティ ページ]** ダイアログ ボックスを開きます。 詳細については、「[プロジェクトのプロパティの操作](/cpp/ide/working-with-project-properties)」を参照してください。
+1. プロジェクトの **[プロパティ ページ]** ダイアログ ボックスを開きます。 詳細については、「[プロジェクトのプロパティの操作](/cpp/build/working-with-project-properties)」を参照してください。
 
-1. 開く、**構成プロパティ** > **C/C++** > **全般**プロパティ ページ。
+1. 開く、**構成プロパティ** > **C/C++**  > **全般**プロパティ ページ。
 
 1. **追加のインクルード ディレクトリ**プロパティは、ドロップダウン コントロールを選択しを選択**編集**します。
 

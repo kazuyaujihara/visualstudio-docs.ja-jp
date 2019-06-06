@@ -1,6 +1,6 @@
 ---
 title: データ ソリューションを開発する
-description: .NET Framework ツール、SQL Server Data Tools、Azure Data Lake、Azure HDInsight、Azure Stream Analytics などの、Visual Studio でデータ ソリューションを開発するためのさまざまなツールについて説明します。
+description: .NET ツール、SQL Server Data Tools、Azure Data Lake、Azure HDInsight、Azure Stream Analytics などの、Visual Studio でデータ ソリューションを開発するためのさまざまなツールについて説明します。
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
@@ -8,12 +8,12 @@ ms.author: gewarren
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: a31d151b22e65449c15537b0f9a29c268b5e9787
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 768d3d1f130c3ef7b81da9706559e9d6b5f159ee
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569213"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715044"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Visual Studio でデータ ツールを使用してデータ ソリューションを開発する
 
@@ -29,11 +29,11 @@ Visual Studio でデータ ツールを使用して、SQL Server、Azure Data La
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET framework tooling to develop your data applications" />
+                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET tooling to develop your data applications" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>データ アプリケーションを開発するための Visual Studio と .NET Framework のツールおよび API のサポートについて学習する</h3>
+                        <h3>データ アプリケーションを開発するための Visual Studio と .NET のツールおよび API のサポートについて学習する</h3>
                     </div>
                 </div>
             </div>
