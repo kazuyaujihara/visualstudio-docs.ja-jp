@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f20e706dcc94e823446ea0e185881f034fcd7dd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898751"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745761"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;パッケージ&gt;要素 (ブートス トラップ)
 `Package`要素は、パッケージ ファイル内の最上位の XML 要素。
@@ -147,10 +147,10 @@ ms.locfileid: "62898751"
 |--------------------| - |
 | `Culture` | 必須。 このパッケージには、使用する言語を決定するカルチャを定義します。 この属性がキーに、`Strings`要素で、インストール時に製品名とエラー メッセージのカルチャに固有の文字列の一覧を表示します。 |
 | `Name` | 必須。 などのツールで開発者に表示されるパッケージの名前[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。 この属性がキーに、`Strings`要素が含まれている、`String`を持つ要素、`Name`と`Culture`プロパティが一致するように設定、`Name`と`Culture`プロパティの`Package`します。 |
-| `LicenseAgreement` | 省略可能です。 ライセンス契約 (EULA) を含む配布パッケージでは、ファイルの名前を指定します。  このファイルは、プレーン テキストを指定できます (*.txt*) またはリッチ テキスト形式。 (*.rtf*) |
+| `LicenseAgreement` | 省略可能です。 ライセンス契約 (EULA) を含む配布パッケージでは、ファイルの名前を指定します。  このファイルは、プレーン テキストを指定できます ( *.txt*) またはリッチ テキスト形式。 ( *.rtf*) |
 
 ## <a name="example"></a>例
- 次のコード例は、再配布するための完全なパッケージ ファイルを示しています、[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]します。
+ 次のコード例では、.NET Framework 2.0 再配布するための完全なパッケージ ファイルを示します。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

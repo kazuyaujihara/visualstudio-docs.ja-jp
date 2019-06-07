@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cf2939f0484c6defb76b88fb072fcd4b51849b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce4f72ba56b27d87d785ca561bad0de6e59dfdc2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779717"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744764"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007:適切な場所にジェネリックを使用します
 
@@ -34,7 +34,7 @@ ms.locfileid: "62779717"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 外部から見えるメソッドには、型の参照パラメーターが含まれています。 <xref:System.Object?displayProperty=fullName>、および含んでいるアセンブリのターゲット[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]します。
+ 外部から見えるメソッドには、型の参照パラメーターが含まれています。<xref:System.Object?displayProperty=fullName>を格納しているアセンブリが .NET Framework 2.0 を対象とします。
 
 ## <a name="rule-description"></a>規則の説明
  参照パラメーターはパラメーターを使用して変更を`ref`(`ByRef`で[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) キーワード。 参照パラメーターに指定する引数の型は参照パラメーターの型と正確に一致する必要があります。 参照パラメーターの型から派生した型を使用するには、種類あり必要がありますまずキャスト参照パラメーターの型の変数に代入されます。 ジェネリック メソッドの使用には、最初に参照パラメーターの型に型をキャストしていない場合、メソッドに渡される、制約の対象のすべての種類ができます。

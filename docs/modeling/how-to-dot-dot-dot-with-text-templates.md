@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3bbcbb078925f36204c472c27821e6ba94fa4e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993548"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747546"
 ---
 # <a name="how-to--with-text-templates"></a>テキスト テンプレートでどうやって ... をする
 Visual Studio のテキスト テンプレートは、あらゆる種類のテキストを生成するのに便利な方法を提供します。 テキスト テンプレートを使用すると、アプリケーションの一部として実行時にテキストを生成したり、デザイン時にプロジェクト コードの一部を生成することができます。 このトピックでは、「どうやって ... をするか？」として最も頻繁に寄せられる質問をまとめています。 質問します。
@@ -45,13 +45,14 @@ Visual Studio のテキスト テンプレートは、あらゆる種類のテ�
      コードで、ファイルの完全なパスを取得するために、`this.Host.ResolvePath(filename)` を使用します。
 
 ### <a name="invoke-methods-from-a-template"></a>テンプレートからメソッドを呼び出す
- 標準[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .NET Framework クラスなど、既に存在するメソッドの場合:
+
+メソッド、既に存在する場合など、.NET クラスで。
 
 - \<#@assembly ディレクティブを使用して、アセンブリをロードし、\<#@import#> を使用して名前空間のコンテキストを設定します。 詳細については、次を参照してください。 [T4 インポート ディレクティブ](../modeling/t4-import-directive.md)
 
    頻繁に同じアセンブリのセットを使用し、ディレクティブをインポートする場合には、ディレクティブ プロセッサの作成を検討してください。 各テンプレートでは、アセンブリとモデル ファイルを読み込み、名前空間のコンテキストを設定できるディレクティブ プロセッサを呼び出すことができます。 詳細については、次を参照してください。[カスタム T4 テキスト テンプレート ディレクティブ プロセッサの作成](../modeling/creating-custom-t4-text-template-directive-processors.md)
 
-  自分で作成したメソッドの場合:
+自分で作成したメソッドの場合:
 
 - ランタイム テキスト テンプレートを作成する場合、ランタイム テキスト テンプレートと同じ名前を持つ部分クラス定義を記述します。 このクラスに、追加するメソッドを追加します。
 
@@ -93,7 +94,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ### <a name="execute-text-templates-in-the-build-process"></a>ビルド プロセスでのテキスト テンプレートの実行
 
-- 詳細については、次を参照してください。[ビルド プロセスでのコード生成](../modeling/code-generation-in-a-build-process.md) 
+- 詳細については、次を参照してください。[ビルド プロセスでのコード生成](../modeling/code-generation-in-a-build-process.md)
 
 ## <a name="more-general-questions"></a>一般的な質問
 

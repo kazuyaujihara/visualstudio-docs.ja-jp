@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d44c9a4a5c59907c527c47523c6c758adaf7ee51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dd2945ec12ac398f2887d20d3d0cb6156f4ed3c
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825495"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745208"
 ---
 # <a name="performance-warnings"></a>パフォーマンスに関する警告
 パフォーマンスの警告は、高パフォーマンスのライブラリとアプリケーションをサポートします。
@@ -38,7 +38,7 @@ ms.locfileid: "62825495"
 | [CA 1810:参照型の静的フィールドのインラインを初期化します](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md) | 型で明示的な静的コンストラクターを宣言すると、Just-In-Time (JIT) コンパイラが、静的コンストラクターが呼び出されたことを確認するために、型の静的メソッドと静的インスタンス コンストラクターに個別にチェックを追加します。 静的コンストラクターのチェックによってパフォーマンスが低下することがあります。 |
 | [CA1811:呼び出されていないプライベート コードを避ける](../code-quality/ca1811-avoid-uncalled-private-code.md) | プライベートまたは内部 (アセンブリ レベル) のメンバーでは、アセンブリには、呼び出し元はありません、共通言語ランタイムによっては呼び出されませんおよびによってデリゲートは呼び出されません。 |
 | [CA1812:インスタンス化されていない内部クラスを回避します。](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | アセンブリ レベルの型のインスタンスが、アセンブリ内のコードから作成されません。 |
-| [CA1813:シールされていない属性します。](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET Framework クラス ライブラリでは、カスタム属性を取得するメソッドを提供します。 既定では、これらのメソッドで属性の継承階層が検索されます。 属性をシールすると、継承階層の全体が検索されなくなるため、パフォーマンスが向上します。 |
+| [CA1813:シールされていない属性します。](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET では、カスタム属性を取得するメソッドを提供します。 既定では、これらのメソッドで属性の継承階層が検索されます。 属性をシールすると、継承階層の全体が検索されなくなるため、パフォーマンスが向上します。 |
 | [CA1814:多次元よりジャグ配列を優先します。](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md) | ジャグ配列とは、その要素も配列である配列です。 配列の要素を構成するには、さまざまなサイズは、いくつかのデータに対して無駄な小さい領域で発生することができますを指定できます。 |
 | [CA1815:equals および operator equals を値型でオーバーライドします](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)」を参照してください。 | 値型の場合、Equals を継承した実装が Reflection ライブラリを使用して、すべてのフィールドの内容を比較します。 Reflection は計算コストが高いため、場合によってはすべてのフィールドで等値性を比較する必要はありません。 ユーザーがインスタンスの比較または並べ替えを行うことや、ハッシュ テーブル キーとしてインスタンスを使用することが予想される場合には、値型に Equals を実装する必要があります。 |
 | [CA 1816:GC を呼び出します。SuppressFinalize 正しく](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md) | Dispose の実装であるメソッドでは、GC は呼び出されません。SuppressFinalize、または Dispose の実装ではないメソッドは、GC を呼び出します。SuppressFinalize、またはメソッドは、GC を呼び出します。SuppressFinalize し、これ以外の何かを渡します (Me [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。 |

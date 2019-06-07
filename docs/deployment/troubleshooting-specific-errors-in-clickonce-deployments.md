@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c7a915301dabc0afcfae450c87a435d12e10d15
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927458"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745662"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 配置の固有のエラーのトラブルシューティング
 この記事では、展開するときに発生する可能性がある次の一般的なエラーを示します、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションでは、各問題を解決する手順を示します。
@@ -36,7 +36,7 @@ ms.locfileid: "62927458"
 
  まずに関連付けるサーバーが構成されていることを確認、 *.application*コンテンツを含む拡張機能の種類「/x ms-アプリケーションです」。
 
- 場合は、サーバーが正しく構成されていることを確認、[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]がコンピューターにインストールされています。 場合、[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]がインストールされているアンインストールと再インストールしてみてください、この問題が引き続き発生して、[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]クライアントでコンテンツの種類を再登録します。
+ サーバーが正しく構成されている場合は、.NET Framework 2.0 がコンピューターにインストールされていることを確認します。 .NET Framework 2.0 がインストールされているこの問題が引き続き発生する場合は、クライアントをアンインストールして、コンテンツを再登録する .NET Framework 2.0 を再インストールを入力します。
 
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>エラー メッセージでは、"アプリケーションを取得できません。 ファイルの展開が見つかりません"または「アプリケーションのダウンロードが中断された、ネットワーク エラーを確認し、後でもう一度お試しください」
  このメッセージを示すによって参照される 1 つまたは複数のファイル、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]マニフェストをダウンロードすることはできません。 このエラーをデバッグする最も簡単な方法は、URL をダウンロードしようとするする[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]をダウンロードできないことを示します。 考えられる原因を次に示します。

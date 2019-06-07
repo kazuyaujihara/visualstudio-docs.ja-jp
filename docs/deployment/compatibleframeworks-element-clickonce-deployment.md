@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b96327205369d0280a865b632801edbf199745
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 99db3d51414197df469aaa2eabe97e0967c31b05
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407861"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746041"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt;要素 (ClickOnce 配置)
 このアプリケーションをインストールして実行できる .NET Framework のバージョンを指定します。
@@ -41,7 +41,7 @@ ms.locfileid: "63407861"
 ```
 
 ## <a name="elements-and-attributes"></a>要素と属性
- `compatibleFrameworks`配置マニフェストを対象とする要素が必要、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]ランタイムによって提供される[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]またはそれ以降。 `compatibleFrameworks`要素は、1 つ以上含まれています。`framework`このアプリケーションが実行できる .NET Framework のバージョンを指定する要素。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]ランタイムは、最初に、アプリケーションを実行する使用可能な`framework`この一覧にします。
+ `compatibleFrameworks`配置マニフェストを対象とする要素が必要、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]ランタイムが .NET Framework 4 以降を指定します。 `compatibleFrameworks`要素は、1 つ以上含まれています。`framework`このアプリケーションが実行できる .NET Framework のバージョンを指定する要素。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]ランタイムは、最初に、アプリケーションを実行する使用可能な`framework`この一覧にします。
 
  次の表に、属性を`compatibleFrameworks`要素をサポートしています。
 
@@ -61,7 +61,7 @@ ms.locfileid: "63407861"
 ## <a name="remarks"></a>Remarks
 
 ## <a name="example"></a>例
- 次のコード例は、`compatibleFrameworks`内の要素を[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]配置マニフェスト。 この配置を実行できる、[!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]します。 も実行でき、[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]のスーパー セットである、[!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]します。
+ 次のコード例は、`compatibleFrameworks`内の要素を[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]配置マニフェスト。 この配置を実行できる、[!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]します。 スーパー セットである、.NET Framework 4 で実行できることも、[!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]します。
 
 ```xml
 <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">

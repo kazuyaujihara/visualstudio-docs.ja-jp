@@ -8,18 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83c9b1158319b580bc860982b6c51c9c28edf5af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d8a2ad847ef1b9aaad02b2739e8154b3148425
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433878"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747267"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>ワークフロー デザイナーでサポートされていないデバッグ シナリオ
 
-.NET Framework 4 では、ワークフロー デザイナーは、多くの新機能を追加しますが、まだがサポートされていないいくつかのデバッグ シナリオがあります。
-
-次に、サポートされていないワークフロー デザイナーのデバッグ シナリオを示します。
+ワークフロー デザイナーでは、次のデバッグ シナリオをサポートしません。
 
 - コードを編集した後では実行を続行できません。
 
@@ -29,7 +27,7 @@ ms.locfileid: "62433878"
 
 - デザイナーを使用せずにコード内に作成されたワークフローをデバッグするためにワークフロー デザイナーを使用することはできません。
 
-- .NET Framework 4 のデザイナーでは、以前のバージョンの Windows Workflow Foundation (WF) で作成されたワークフローをデバッグできません。
+- .NET Framework 4 またはそれ以降は、以前のバージョンの Windows Workflow Foundation (WF) で作成されたワークフローをデバッグできません。
 
 - アクティビティまたは <xref:System.Activities.Statements.Flowchart> ノード間のリンクにブレークポイントを定義することはできません。
 
@@ -47,7 +45,7 @@ ms.locfileid: "62433878"
 
     - ヒット カウント
 
-    - ヒット時 
+    - ヒット時
 
     - 関数
 

@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e6e5bf2152fffb06acfb8b5e1f3283da75a19a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900359"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745949"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;依存関係&gt;要素 (ClickOnce アプリケーション)
 アプリケーションに必要なプラットフォームやアセンブリ依存関係を識別します。
@@ -92,7 +92,7 @@ ms.locfileid: "62900359"
  `dependency`要素、属性を持っていないと、次の子要素が含まれています。
 
 ### <a name="dependentos"></a>dependentOS
- 任意。 `osVersionInfo`要素を含んでいます。 `dependentOS`と`dependentAssembly`要素は相互に排他的: のいずれか 1 つが存在する必要があります、`dependency`両方ではなく、要素。
+ 省略可能です。 `osVersionInfo`要素を含んでいます。 `dependentOS`と`dependentAssembly`要素は相互に排他的: のいずれか 1 つが存在する必要があります、`dependency`両方ではなく、要素。
 
  `dependentOS` 次の属性をサポートしています。
 
@@ -115,7 +115,7 @@ ms.locfileid: "62900359"
 |`servicePackMajor`|必須。 OS のサービス パックのメジャー番号を指定します。|
 |`servicePackMinor`|省略可能です。 OS のサービス パックのマイナー番号を指定します。|
 |`productType`|省略可能です。 製品の種類の値を識別します。 有効な値は `server`、`workstation`、`domainController` です。 たとえば、Windows 2000 professional では、この属性値は`workstation`します。|
-|`suiteType`|任意。 システムまたはシステムの構成の種類で使用可能な製品スイートを識別します。 有効な値は、`backoffice`、`blade`、`datacenter`、`enterprise`、`home`、`professional`、`smallbusiness`、`smallbusinessRestricted`、および `terminal` です。 たとえば、Windows 2000 professional では、この属性値は`professional`します。|
+|`suiteType`|省略可能です。 システムまたはシステムの構成の種類で使用可能な製品スイートを識別します。 有効な値は、`backoffice`、`blade`、`datacenter`、`enterprise`、`home`、`professional`、`smallbusiness`、`smallbusinessRestricted`、および `terminal` です。 たとえば、Windows 2000 professional では、この属性値は`professional`します。|
 
 ### <a name="dependentassembly"></a>dependentAssembly
  省略可能です。 `assemblyIdentity`要素を含んでいます。 `dependentOS`と`dependentAssembly`要素は相互に排他的: のいずれか 1 つが存在する必要があります、`dependency`両方ではなく、要素。
@@ -126,7 +126,7 @@ ms.locfileid: "62900359"
 |-----------------------| - |
 | `dependencyType` | 必須。 依存関係の種類を指定します。 有効値は `preprequisite` または `install` です。 `install`アセンブリがの一部としてインストールされている、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション。 A`prerequisite`アセンブリは、前にグローバル アセンブリ キャッシュ (GAC) に存在する必要があります、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションをインストールできます。 |
 | `allowDelayedBinding` | 必須。 実行時にプログラムによって読み込むアセンブリことができるかどうかを指定します。 |
-| `group` | 任意。 場合、`dependencyType`属性に設定されて`install`オンデマンドでインストールするのみのアセンブリの名前付きグループを指定します。 詳細については、「[チュートリアル:デザイナーを使用して必要に応じて ClickOnce 配置 API でアセンブリをダウンロードする](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)」を参照してください。<br /><br /> 場合に設定`framework`と`dependencyType`属性に設定されて`prerequisite`、.NET Framework の一部として、アセンブリを指定します。 インストールする場合、このアセンブリをグローバル アセンブリ キャッシュ (GAC) がチェックされません[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]以降のバージョン。 |
+| `group` | 省略可能です。 場合、`dependencyType`属性に設定されて`install`オンデマンドでインストールするのみのアセンブリの名前付きグループを指定します。 詳細については、「[チュートリアル:デザイナーを使用して必要に応じて ClickOnce 配置 API でアセンブリをダウンロードする](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)」を参照してください。<br /><br /> 場合に設定`framework`と`dependencyType`属性に設定されて`prerequisite`、.NET Framework の一部として、アセンブリを指定します。 .NET Framework 4 およびそれ以降のバージョンをインストールする場合は、このアセンブリのグローバル アセンブリ キャッシュ (GAC) がチェックされません。 |
 | `codeBase` | 必要なときに、`dependencyType`属性に設定されて`install`します。 依存アセンブリへのパス。 可能性があります絶対パス、または、マニフェストのコードからの相対パスのいずれかベース。 このパスは有効であるアセンブリ マニフェストの順序で、有効な URI である必要があります。 |
 | `size` | 必要なときに、`dependencyType`属性に設定されて`install`します。 (バイト単位) の依存アセンブリのサイズ。 |
 
@@ -137,7 +137,7 @@ ms.locfileid: "62900359"
 |---------------|-----------------|
 |`name`|必須。 アプリケーションの名前を識別します。|
 |`version`|必須。 次の形式で、アプリケーションのバージョン番号を指定します。 `major.minor.build.revision`|
-|`publicKeyToken`|任意。 最後の 8 バイトを表す 16 文字の 16 進文字列を指定します、`SHA-1`アプリケーションまたはアセンブリに署名するとき、公開キーのハッシュ値。 カタログに署名するために使用する公開キーは、2048 ビット以上である必要があります。|
+|`publicKeyToken`|省略可能です。 最後の 8 バイトを表す 16 文字の 16 進文字列を指定します、`SHA-1`アプリケーションまたはアセンブリに署名するとき、公開キーのハッシュ値。 カタログに署名するために使用する公開キーは、2048 ビット以上である必要があります。|
 |`processorArchitecture`|省略可能です。 プロセッサを指定します。 有効な値は`x86`32 ビット Windows 用と`I64`の 64 ビット Windows です。|
 |`language`|省略可能です。 アセンブリの EN-US など、2 部構成の言語コードを識別します。|
 

@@ -10,15 +10,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a223d23cb792f13f1df9f869a540ffa61f50f9b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a8a93b4fd12cd9a0bd2e5a5f3c70486e370545a9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340645"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747642"
 ---
 # <a name="manage-undo-and-redo-by-using-the-legacy-api"></a>元に戻すを管理し、従来の API を使用して再実行
-エディターでは、ユーザーがコードを変更するときに、最近の変更内容を反転できるように元に戻す操作をサポートする必要があります。 ほとんどのエディターでは実装[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]統合開発環境 (IDE) によって自動的に提供元に戻す機能を持つことができます。
+エディターでは、ユーザーがコードを変更するときに、最近の変更内容を反転できるように元に戻す操作をサポートする必要があります。 ほとんどのエディターでは実装[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]と .NET Framework は、統合開発環境 (IDE) によって自動的に提供元に戻す機能を持つことができます。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [方法: 元に戻す管理を実装](../extensibility/how-to-implement-undo-management.md)エディターの 1 つまたは複数のビューを元に戻す機能を提供します。

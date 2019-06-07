@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f567fa1d1f793395532efac5991b01c5087b638a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c94f1b2709f3541692a0dfcd2a92559135639c2a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545755"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744586"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804:使用されていないローカルを削除します
 
@@ -40,7 +40,11 @@ ms.locfileid: "62545755"
  使用されていないローカル変数や不要な引数があると、アセンブリのサイズが大きくなり、パフォーマンスが低下します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、削除するか、ローカル変数を使用します。 C# コンパイラに含まれるに注意してください。[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]未使用のローカル変数を削除します。 ときに、`optimize`オプションを有効にします。
+
+この規則違反を修正するには、削除するか、ローカル変数を使用します。
+
+> [!NOTE]
+> C#コンパイラは、未使用のローカル変数を削除します。 ときに、`optimize`オプションを有効にします。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
  変数がコンパイラで生成された場合は、この規則による警告を抑制します。 パフォーマンスとコードのメンテナンスが主な懸念事項ではない場合にも、この規則による警告を抑制するか、ルールを無効にするには安全です。

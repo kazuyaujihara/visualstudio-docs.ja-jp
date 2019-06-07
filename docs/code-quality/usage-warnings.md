@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 132f5c91b12ac0b7ada4d4987ca0298e47310436
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 53e7c0232406462a4c5938fd3f971189c9b2daca
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715162"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745072"
 ---
 # <a name="usage-warnings"></a>使用法に関する警告
 
@@ -56,7 +56,7 @@ ms.locfileid: "66715162"
 |[CA2225:演算子のオーバー ロード名前付けされた代替](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|演算子のオーバーロードが検出され、予想される名前の代替メソッドが検出されませんでした。 名前付きの代替メンバーは、演算子と同じ機能にアクセスできるようにおり、オーバー ロードされた演算子をサポートしない言語でプログラミングする開発者向け提供されます。|
 |[CA2226:演算子は対称型オーバー ロードである必要があります。](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|型は、等値演算子または非等値演算子の場合を実装し、反対側の演算子を実装していません。|
 |[CA2227:コレクションのプロパティは読み取り専用にします。](../code-quality/ca2227-collection-properties-should-be-read-only.md)|書き込み可能なコレクション プロパティにより、ユーザーはコレクションを異なるコレクションで置換できます。 読み取り専用プロパティは、コレクションを置換できないようにしますが、個別のメンバーが設定されることは回避できません。|
-|[CA2228:未公開のリソース形式を出荷しません](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|.NET Framework のプレリリース バージョンを使用してビルドされたリソース ファイルは、サポートされているバージョンの .NET Framework で使用できるしない場合があります。|
+|[CA2228:未公開のリソース形式を出荷しません](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|プレリリース バージョンの .NET を使用して構築されたリソース ファイルは、サポートされているバージョンの .NET で使用できるしない場合があります。|
 |[CA2229: シリアル化コンストラクターを実装します](../code-quality/ca2229-implement-serialization-constructors.md)|この規則違反を修正するには、シリアル化コンストラクターを実装します。 シールされたクラスの場合、コンストラクターをプライベートにするか、プロテクトにします。|
 |[CA2230:可変個の引数に対して param を使用します。](../code-quality/ca2230-use-params-for-variable-arguments.md)|パブリック型またはプロテクト型に、params キーワードではなく VarArgs 呼び出し規則を使用するパブリック メソッドまたはプロテクト メソッドが含まれています。|
 |[CA2231: ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|値型のオーバーライド`Object.Equals`しますが、等値演算子は実装されません。|

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.openlocfilehash: 2f2343d71d2ed0745f9c5a2a799c3018a2e64945
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045343"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746249"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio デバッガーでシンボル (.pdb) ファイルとソース ファイルの指定 (C#、C++、Visual Basic、 F#)
 
@@ -76,7 +76,7 @@ Visual Studio IDE でプロジェクトをデバッグするときに、デバ�
 
      使用するシンボル サーバーは次のとおりです。
 
-     **パブリックの Microsoft シンボル サーバー**:システム DLL やサードパーティ製ライブラリの呼び出し中に発生するクラッシュをデバッグするには、多くの場合、システムが必要な *.pdb*ファイル。 システム *.pdb*ファイルは、Windows の Dll のシンボルを含めることが *.exe*ファイル、およびデバイス ドライバー。 Windows オペレーティング システムでは、MDAC、IIS、ISA、シンボルを取得できる、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]パブリックの Microsoft シンボル サーバーからです。
+     **パブリックの Microsoft シンボル サーバー**:システム DLL やサードパーティ製ライブラリの呼び出し中に発生するクラッシュをデバッグするには、多くの場合、システムが必要な *.pdb*ファイル。 システム *.pdb*ファイルは、Windows の Dll のシンボルを含めることが *.exe*ファイル、およびデバイス ドライバー。 Windows オペレーティング システム、MDAC、IIS、ISA、および .NET Framework のシンボルは、パブリックの Microsoft シンボル サーバーから入手できます。
 
      **内部ネットワーク上またはローカル コンピューター上のシンボル サーバー**:チームや会社で独自の製品用にシンボル サーバーを作成して、外部ソースのシンボルのキャッシュとして使用できます。 自分のコンピューター上にシンボル サーバーを作成することもできます。
 

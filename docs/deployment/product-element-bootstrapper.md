@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc32ed6c4e696b18e89822baff461da0873a7ed5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898108"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747453"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;製品&gt;要素 (ブートス トラップ)
 `Product`要素は、製品ファイル内の最上位の XML 要素。
@@ -145,7 +145,7 @@ ProductCode
 |`ProductCode`|製品の一意の識別子。|
 
 ## <a name="example"></a>例
- 次のコード例は、インストールするための完全な製品ファイルを示しています、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]します。
+ 次のコード例では、.NET Framework をインストールするための完全な製品ファイルを示します。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf115ad6ce8fb589e9b1c617f40053cf95af2b9c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 78ba7398694e097f324695b6357abc0b35f8d3ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263216"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745579"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>方法: ClickOnce 配置で個々の必要条件にサポート URL を指定する
-A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]数のクライアント コンピューターで使用する必要がある前提条件の展開をテストできます、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションを実行します。 これらの依存関係の必要な最小バージョンは含まれて、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]のバージョン、オペレーティング システムとすべてのアセンブリをグローバル アセンブリ キャッシュ (GAC) にプレインストールする必要があります。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]、ただし、インストールできませんこれらの前提条件のいずれか。前提条件が存在しない場合、インストールを中止し、インストールが失敗した理由を説明するダイアログ ボックスが表示されます。
+A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]数のクライアント コンピューターで使用する必要がある前提条件の展開をテストできます、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションを実行します。 これらの依存関係には、.NET Framework、オペレーティング システムでは、およびグローバル アセンブリ キャッシュ (GAC) にプレインストールする必要があるすべてのアセンブリのバージョンの必要な最小バージョンが含まれます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]、ただし、インストールできませんこれらの前提条件のいずれか。前提条件が存在しない場合、インストールを中止し、インストールが失敗した理由を説明するダイアログ ボックスが表示されます。
 
  前提条件をインストールするための 2 つの方法はあります。 ブートス トラップ アプリケーションを使用してインストールすることができます。 また、前提条件が存在しない場合、ダイアログ ボックスでユーザーに表示される個別の前提条件のサポート URL を指定できます。 この URL で参照されているページは、必須の前提条件をインストールするための手順へのリンクを含めることができます。 アプリケーションが、個別の前提条件に関するサポート URL を指定しない場合[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]定義されている場合、全体として、アプリケーションの配置マニフェストで指定されたサポート URL を表示します。
 

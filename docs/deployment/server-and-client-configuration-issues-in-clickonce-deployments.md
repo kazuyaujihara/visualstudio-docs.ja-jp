@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 71b9df9a8422d1b24a3e5476005942113356c353
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263475"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747425"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 配置でのサーバーおよびクライアント構成の問題
 Windows Server で、インターネット インフォメーション サービス (IIS) を使用する、展開には、Windows で認識されない種類のファイルが含まれている場合は、Microsoft Word ファイルなど、そのファイルを送信する IIS は拒否し、配置は失敗します。
@@ -41,7 +41,7 @@ Windows Server で、インターネット インフォメーション サービ
 
   オフにすると、このオプションを無効にするただし、 **".deploy"ファイル拡張子を使用して、** オプションを[Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))、その場合、すべてのファイル拡張子のブロックを解除する Web サーバーを構成する必要がありますアプリケーションで使用されます。
 
-  構成する必要があります *.manifest*、 *.application*、および *.deploy*、たとえば、IIS をインストールしていないを使用しているかどうか、 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]、または場合別の Web サーバー (Apache など) を使用します。
+  構成する必要があります *.manifest*、 *.application*、および *.deploy*、たとえば、IIS をインストールしていない場合、.NET Framework を使用している場合、または使用する場合別の Web サーバー (Apache など) を使用します。
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce と Secure Sockets Layer (SSL)
  A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション、SSL 経由で Internet Explorer で SSL 証明書に関するプロンプトを生成するとき以外は問題なく動作します。 プロンプトは、有効期限が切れたときに、サイト名が一致しないなど、証明書または証明書に何らかの問題がある場合に発生することができます。 させる[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]SSL 接続経由で動作、証明書が、最新の状態であり、証明書のデータがサイト データと一致するかどうかを確認します。
@@ -121,7 +121,7 @@ Windows Server で、インターネット インフォメーション サービ
   Windows Server の MIME の種類を構成する方法については、マイクロソフト サポート技術情報記事 KB326965 を参照してください、「IIS 6.0 は処理しません不明な MIME の種類」で[ http://support.microsoft.com/default.aspx?scid=kb; en-私たち; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965)します。
 
 ## <a name="content-type-mappings"></a>コンテンツの種類のマッピング
- コンテンツの種類 (MIME の種類とも呼ばれます)、HTTP 経由で発行するときに、 *.application*ファイルが「/x ms-アプリケーションです」にする必要があります。 あれば[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]サーバーにインストール、設定されます。 が自動的にします。 これがインストールされていないかどうかは、MIME の種類の関連付けを作成する必要がある、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション vroot (またはサーバー全体)。
+ コンテンツの種類 (MIME の種類とも呼ばれます)、HTTP 経由で発行するときに、 *.application*ファイルが「/x ms-アプリケーションです」にする必要があります。 サーバーにインストールされている .NET Framework 2.0 があれば、これは設定されますが自動的に。 これがインストールされていないかどうかは、MIME の種類の関連付けを作成する必要がある、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション vroot (またはサーバー全体)。
 
  IIS サーバーを使用してを展開する場合は、実行<em>inetmgr</em> 。exe の「application/x-ms-アプリケーション」の新しいコンテンツの種類を追加し、 *.application*拡張機能。
 

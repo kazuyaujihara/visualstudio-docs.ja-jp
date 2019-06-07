@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0d55af3c5522c6bb9aa3ad8a023f070c187ca6f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714269"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744699"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812:インスタンス化されていない内部クラスを使用しません
 
@@ -58,7 +58,7 @@ ms.locfileid: "66714269"
 
 この規則違反を修正するには、型を削除するか、それを使用するコードを追加します。 型にのみ含まれる場合`static`をコンパイラが既定のパブリック インスタンス コンス トラクターを生成するを防ぐために型に、次のいずれかのメソッドを追加します。
 
-- `static`の修飾子C#型を対象とする[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]またはそれ以降。
+- `static`の修飾子C#を .NET Framework 2.0 以降を対象とする型。
 
 - .NET Framework version 1.0 および 1.1 を対象とする型のプライベート コンス トラクターです。
 

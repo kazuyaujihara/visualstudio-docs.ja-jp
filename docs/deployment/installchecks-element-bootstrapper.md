@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79bbb413c31c77e59ec39b706d4937421096168f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927908"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747526"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;要素 (ブートス トラップ)
 `InstallChecks`要素のさまざまなアプリケーションの適切な前提条件のすべてがインストールされているかどうかを確認するローカル コンピューターに対するテストの開始をサポートしています。
@@ -144,7 +144,7 @@ ms.locfileid: "62927908"
  下にある要素の中に`InstallChecks`を実行するテストを定義して、それらが実行しないでください。 作成する必要があります、テストを実行する`Command`要素の下に、`Commands`要素。
 
 ## <a name="example"></a>例
- 次のコード例に示します、`InstallChecks`ほど要素は、製品ファイルの使用、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]します。
+ 次のコード例に示します、`InstallChecks`ほど要素は、.NET Framework の製品のファイルに使用されます。
 
 ```xml
 <InstallChecks>
