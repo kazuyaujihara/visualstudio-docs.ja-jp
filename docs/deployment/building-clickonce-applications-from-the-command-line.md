@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc3cdf49746340c76855e9afb000c754464d6223
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929166"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746081"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>ClickOnce アプリケーションのコマンド ラインからのビルド
-[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]、統合開発環境 (IDE) で作成される場合でも、コマンドラインからプロジェクトをビルドできます。 実際で作成されたプロジェクトを再構築する[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]のみを持つ別のコンピューターで、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]をインストールします。 自動化されたプロセスを使用してビルドを再現することができます、たとえば、中央のビルド ラボまたはを使用して高度なスクリプティング プロジェクト自体のビルドの範囲外の手法です。
+[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]、統合開発環境 (IDE) で作成される場合でも、コマンドラインからプロジェクトをビルドできます。 実際で作成されたプロジェクトを再構築する[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]が .NET Framework のみがインストールされている別のコンピューターにします。 自動化されたプロセスを使用してビルドを再現することができます、たとえば、中央のビルド ラボまたはを使用して高度なスクリプティング プロジェクト自体のビルドの範囲外の手法です。
 
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>MSBuild を使用して ClickOnce アプリケーションの展開を再現します
  プロジェクトをビルドし、作成するには、MSBuild システムに指示がコマンドラインで msbuild/target:publish を呼び出すと、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] publish フォルダーにアプリケーション。 選択するのと同じ、**発行**IDE でコマンド。
@@ -73,7 +73,7 @@ ms.locfileid: "62929166"
 
 5. 「`msbuild /target:publish`」と入力します。
 
-   上記の手順は、完全な[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]という名前のプロジェクトのサブフォルダーに、アプリケーションの展開**発行**します。 *CmdLineDemo.application*は、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]配置マニフェスト。 フォルダー *CmdLineDemo_1.0.0.0*ファイルを含む*CmdLineDemo.exe*と*CmdLineDemo.exe.manifest*、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション マニフェスト。 *Setup.exe*ブートス トラップ、既定でインストールするように構成するには、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]します。 DotNetFX フォルダーには再頒布可能パッケージが含まれています、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]します。 これは、Web 上または UNC パスまたは CD または DVD を使用して、アプリケーションをデプロイする必要があるファイルのセット全体です。
+   上記の手順は、完全な[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]という名前のプロジェクトのサブフォルダーに、アプリケーションの展開**発行**します。 *CmdLineDemo.application*は、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]配置マニフェスト。 フォルダー *CmdLineDemo_1.0.0.0*ファイルを含む*CmdLineDemo.exe*と*CmdLineDemo.exe.manifest*、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション マニフェスト。 *Setup.exe*は既定では、.NET Framework をインストールするように構成するブートス トラップします。 DotNetFX フォルダーには、.NET Framework 用の再頒布可能パッケージが含まれています。 これは、Web 上または UNC パスまたは CD または DVD を使用して、アプリケーションをデプロイする必要があるファイルのセット全体です。
 
 ## <a name="publish-properties"></a>[発行] プロパティ
  上記の手順で、アプリケーションを発行するとき、次のプロパティは、発行ウィザードによって、プロジェクト ファイルに挿入されます。 これらのプロパティに直接影響を与える方法、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションが生成されます。

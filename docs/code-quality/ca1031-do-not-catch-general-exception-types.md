@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e285ead27b8d3d7c674a138d5f06c69a7e88d1fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9746119c746679817076c86e3d5a9080cec30d9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779289"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744685"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031:一般的な例外の種類はキャッチしません
 
@@ -47,7 +47,7 @@ ms.locfileid: "62779289"
  この規則による警告は抑制しないでください。 一般的な例外の種類をキャッチして、ライブラリ ユーザーから、実行時の問題を非表示にすることができます、指定するとデバッグはより難しくなります。
 
 > [!NOTE]
-> 以降では、 [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]、共通言語ランタイム (CLR) は、オペレーティング システムとでアクセス違反などのマネージ コードで発生する破損状態例外を提供できなく[!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]、マネージ コードで処理されます。 アプリケーションをコンパイルする場合、[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]以降のバージョンの管理と適用できる破損状態例外の処理、<xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>属性を破損状態例外を処理するメソッド。
+> 以降、.NET Framework 4 では、共通言語ランタイム (CLR) は破損状態例外なくなりましたオペレーティング システムとでアクセス違反などのマネージ コードで発生する[!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]、マネージ コードで処理されます。 適用することができる場合、.NET Framework 4 でのアプリケーションのコンパイルまたは以降のバージョンにして、破損状態例外の処理の管理、<xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>属性を破損状態例外を処理するメソッド。
 
 ## <a name="example"></a>例
  次の例は、この規則に違反する型と正しく実装する型、`catch`ブロックします。

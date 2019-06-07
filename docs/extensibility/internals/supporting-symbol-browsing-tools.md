@@ -18,15 +18,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 649ba0583a70d0d53d8b12f26573daf3c52cf5e9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a5e79969c3b4be22a3c9bb01f06297f54b0734ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331200"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746007"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>シンボル参照ツールのサポート
-**オブジェクト ブラウザー**、**クラス ビュー**、**呼び出しブラウザー**と**シンボルの検索結果**ツールは Visual Studio での機能を参照するシンボルを提供します。 これらのツールでは、シンボルの階層ツリー ビューを表示し、ツリー内のシンボルの関係を表示します。 シンボルは、名前空間、オブジェクト、クラス、クラスのメンバー、およびさまざまなコンポーネントに含まれるその他の言語要素を表すことがあります。 コンポーネントには、Visual Studio プロジェクトに外部[!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]コンポーネントとタイプ (.tlb) ライブラリ。 詳細については、「[コードの構造の表示](../../ide/viewing-the-structure-of-code.md)」を参照してください。
+**オブジェクト ブラウザー**、**クラス ビュー**、**呼び出しブラウザー**と**シンボルの検索結果**ツールは Visual Studio での機能を参照するシンボルを提供します。 これらのツールでは、シンボルの階層ツリー ビューを表示し、ツリー内のシンボルの関係を表示します。 シンボルは、名前空間、オブジェクト、クラス、クラスのメンバー、およびさまざまなコンポーネントに含まれるその他の言語要素を表すことがあります。 コンポーネントには、Visual Studio プロジェクト、.NET Framework の外部コンポーネントとタイプ (.tlb) ライブラリが含まれます。 詳細については、「[コードの構造の表示](../../ide/viewing-the-structure-of-code.md)」を参照してください。
 
 ## <a name="symbol-browsing-libraries"></a>シンボル参照のライブラリ
  言語実装者は、コンポーネント内のシンボルを追跡し、一連のインターフェイスを通じて、Visual Studio オブジェクト マネージャーにシンボルのリストを提供するライブラリを作成して、Visual Studio のシンボル参照の機能を拡張できます。 ライブラリは、<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2>インターフェイス。 Visual Studio のオブジェクト マネージャーでは、ライブラリからデータを取得し、整理することによって、シンボル参照ツールから新しいデータの要求に応答します。 後で、設定します。 または、要求されたデータでツールを更新します。 Visual Studio オブジェクト マネージャーへの参照を取得する<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>、渡す、<xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager>サービス ID に、`GetService`メソッド。

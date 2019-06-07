@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2fb4d0dfaeb944700757c9ceec222dbd62dab9dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fd30fb1b181224b61b96670553ef5aa6ff0f721
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850683"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745278"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>エラー :混合モード デバッグは、Microsoft .NET Framework 2.0 以上を使用している場合にのみサポートされます
-ネイティブ コードとマネージド コードの混合をデバックするには、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Version 2.0、3.0、 3.5、または 4 が必要です。 以前のバージョンの [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] を使用した混合モード デバッグはサポートされていません。
+ネイティブおよびマネージの混合コードをデバッグするには、.NET Framework version 2.0、3.0 が必要です。 3.5、または 4 が必要です。 混合モードの .NET Framework の旧バージョンとデバッグがサポートされていません。
 
 ### <a name="to-correct-this-error"></a>このエラーを解決するには
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] を Version 2.0、3.0、3.5、または 4 にアップグレードします。
+- .NET Framework をバージョン 2.0、3.0、3.5、または 4.0 にアップグレードします。
 
 ## <a name="see-also"></a>関連項目
 - [Remote Debugging](../debugger/remote-debugging.md)

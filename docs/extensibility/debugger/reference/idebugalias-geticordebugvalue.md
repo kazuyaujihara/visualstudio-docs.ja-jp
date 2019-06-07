@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50fb7800c4446e7d13334957ee9f5f6534f254bf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f8ef27f9af5626b716339281c010c62c2515fb8b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338225"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746842"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 このエイリアスに関連付けられている値を表すマネージ コード インターフェイスを取得します。
@@ -47,7 +47,7 @@ int GetICorDebugValue(
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。
 
 ## <a name="remarks"></a>Remarks
- このメソッドは、管理対象の値のみに適用されます (、`ICorDebugValue`インターフェイスでは、[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]で定義されていると、 [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK では cordebug.idl ファイル)。
+ このメソッドは、管理対象の値のみに適用されます (、`ICorDebugValue`はインターフェイスを .NET Framework で使用でき、cordebug.idl ファイルに .NET Framework SDK で定義されている)。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

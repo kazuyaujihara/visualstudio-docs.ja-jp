@@ -25,15 +25,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898134"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745614"
 ---
 # <a name="product-and-package-schema-reference"></a>製品およびパッケージ スキーマ リファレンス
-A*製品ファイル*で必要な外部の依存関係のすべてを記述する XML マニフェストには、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション。 外部の依存関係の例、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]および Microsoft Data Access Components (MDAC)。 パッケージ ファイルは、製品ファイルに似ていますが、ローカライズ済みのアセンブリ、ライセンスの契約ドキュメントなどの依存関係のカルチャに依存するコンポーネントをインストールするために使用します。
+A*製品ファイル*で必要な外部の依存関係のすべてを記述する XML マニフェストには、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション。 外部の依存関係の例には、.NET Framework および Microsoft Data Access Components (MDAC) が含まれます。 パッケージ ファイルは、製品ファイルに似ていますが、ローカライズ済みのアセンブリ、ライセンスの契約ドキュメントなどの依存関係のカルチャに依存するコンポーネントをインストールするために使用します。
 
  製品およびパッケージ ファイルには、いずれかの最上位`Product`または`Package`要素は、それぞれに、次の要素が含まれています。
 
@@ -53,7 +53,7 @@ A*製品ファイル*で必要な外部の依存関係のすべてを記述す�
  `InstallChecks` テストの特定のパッケージが存在するその setup.exe を実行する必要があります。 `PackageFiles` すべてのパッケージが指定されたテストの失敗をインストールする必要があるセットアップ プロセスの一覧を表示します。 [コマンド] で各コマンドの入力がで説明するテストの 1 つを実行`InstallChecks`を指定して`PackageFile`を実行する必要があります、テストは失敗します。 使用することができます、`Strings`任意の数の言語のアプリケーションをインストールするバイナリの 1 つ 1 つのインストールを使用できるように、製品名と、エラー メッセージをローカライズする要素。
 
 ## <a name="example"></a>例
- 次のコード例は、インストールするための完全な製品ファイルを示します、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]します。
+ 次のコード例では、.NET Framework をインストールするための完全な製品ファイルを示します。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

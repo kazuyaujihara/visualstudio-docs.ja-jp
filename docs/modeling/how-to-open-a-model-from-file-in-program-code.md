@@ -7,34 +7,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 092af518cc6c6fb1d98025cda54a6a1d491940c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a5bd7a55e94b3b9d8ca9e68a91de8512f30eb500
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445127"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747503"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>方法: プログラム コード内のファイルからモデルを開く
+
 任意のアプリケーションで DSL モデルを開くことができます。
 
- Visual Studio 拡張機能では、この目的の ModelBus を使用できます。 ModelBus はモデルまたはモデルでは、要素を参照して、移動された場合、モデルを検索するための標準的なメカニズムを提供します。 詳細については、次を参照してください。 [Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)します。
+Visual Studio 拡張機能では、この目的の ModelBus を使用できます。 ModelBus はモデルまたはモデルでは、要素を参照して、移動された場合、モデルを検索するための標準的なメカニズムを提供します。 詳細については、次を参照してください。 [Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)します。
 
 ## <a name="target-framework"></a>[対象とする Framework]
- 設定、**ターゲット フレームワーク**をアプリケーション プロジェクトの **.NET Framework 4**します。
 
-#### <a name="to-set-the-target-framework"></a>ターゲット フレームワークを設定するには
+設定、**ターゲット フレームワーク**アプリケーション プロジェクトを .NET Framework 4 またはそれ以降の。
 
 1. DSL モデルを読み取るアプリケーションの Visual Studio プロジェクトを開きます。
 
 2. **ソリューション エクスプ ローラー**プロジェクトを右クリックし、クリックして**プロパティ**します。
 
-3. プロジェクトのプロパティ ウィンドウでの**アプリケーション**タブで、設定、**ターゲット フレームワーク**フィールドを **.NET Framework 4**します。
+3. プロジェクトのプロパティ ウィンドウでの**アプリケーション**タブで、設定、**ターゲット フレームワーク**フィールドを **.NET Framework 4** (またはそれ以降)。
 
 > [!NOTE]
-> 選択した場合でもこれを実行する必要があります **.NET Framework 4**プロジェクトの作成 ダイアログ ボックス。 ターゲット フレームワークがすることはできません **.NET Framework 4 Client Profile**します。
+> ターゲット フレームワークがすることはできません **.NET Framework 4 Client Profile**します。
 
 ## <a name="references"></a>参照
- Visual Studio アプリケーション プロジェクトにこれらの参照を追加する必要があります。
+
+Visual Studio アプリケーション プロジェクトにこれらの参照を追加します。
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
@@ -43,9 +44,10 @@ ms.locfileid: "63445127"
 - DSL アセンブリ、DSL プロジェクト bin フォルダーの下で検索されます。 その名前の形式では通常です。*Yourcompany ' と*.*プロジェクト*`.Dsl.dll`します。
 
 ## <a name="important-classes-in-the-dsl"></a>DSL で重要なクラス
- DSL を読み取るコードを記述する前に、一部の DSL によって生成されたクラスの名前を知っておくべきです。 DSL ソリューションで開く、 **Dsl**プロジェクトし、ファイルの場所、 **GeneratedCode**フォルダー。 または、プロジェクトで DSL のアセンブリをダブルクリック**参照**、DSL の名前空間を開くと**オブジェクト ブラウザー**します。
 
- これらは、クラスを識別する必要があります。
+DSL を読み取るコードを記述する前に、一部の DSL によって生成されたクラスの名前を知っておくべきです。 DSL ソリューションで開く、 **Dsl**プロジェクトし、ファイルの場所、 **GeneratedCode**フォルダー。 または、プロジェクトで DSL のアセンブリをダブルクリック**参照**、DSL の名前空間を開くと**オブジェクト ブラウザー**します。
+
+これらは、クラスを識別する必要があります。
 
 - *YourDslRootClass* -これは、内のルート クラスの名前、`DslDefinition.dsl`します。
 
@@ -53,8 +55,9 @@ ms.locfileid: "63445127"
 
 - *YourDslName* `DomainModel` -でこのクラスが定義されている`DomainModel.cs`DSL プロジェクト。
 
-## <a name="reading-from-a-file"></a>ファイルからの読み取り
- 次の例は、重要なクラスの次のように DSL を読み取るために設計されました。
+## <a name="read-from-a-file"></a>ファイルのデータを読み取ります。
+
+次の例は、重要なクラスの次のように DSL を読み取るために設計されました。
 
 - FamilyTreeModel
 
@@ -62,7 +65,7 @@ ms.locfileid: "63445127"
 
 - FamilyTreeDomainModel
 
-  この DSL で他のドメイン クラスには、ユーザーです。
+この DSL で他のドメイン クラスには、ユーザーです。
 
 ```csharp
 using System;
@@ -100,8 +103,9 @@ namespace StandaloneReadDslConsole
 } } } }
 ```
 
-## <a name="saving-to-a-file"></a>ファイルに保存しています
- 前のコードを次の追加は、モデルに変更を加えるし、ファイルに保存されます。
+## <a name="save-to-a-file"></a>ファイルに保存します。
+
+前のコードを次の追加は、モデルに変更を加えるし、ファイルに保存されます。
 
 ```csharp
 using (Transaction t =

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1feb0dc2282dff39b3895ed0e63a0fdefeb65872
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c2a4f2e9fe66ab049113111f13338cdced4e39e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406615"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746070"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>ClickOnce アプリケーションにおけるローカル データおよびリモート データへのアクセス
 ほとんどのアプリケーションはデータを使用または作成します。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] には、データをローカルとリモートの両方で読み書きするための各種のオプションがあります。
@@ -37,7 +37,7 @@ ms.locfileid: "63406615"
 ### <a name="clickonce-data-directory"></a>ClickOnce データ ディレクトリ
  ローカル コンピューターにインストールされている各 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションには、データ ディレクトリがあります。このデータ ディレクトリは、ユーザーの "Documents and Settings" フォルダーにあります。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションに含まれていて、"データ" ファイルとしてマークされているすべてのファイルは、アプリケーションのインストール時にこのディレクトリにコピーされます。 どのような種類のファイルでもデータ ファイルとして指定できます。最もよく使用されるのは、テキスト ファイルや XML ファイル、データベース ファイル (Microsoft Access の .mdb ファイルなど) です。
 
- データ ディレクトリは、アプリケーションで管理するデータ、つまり、アプリケーションによって明示的に格納および保守されるデータ用のディレクトリです。 アプリケーション マニフェストで "データ" のマークが付けられていない静的で非依存のすべてのファイルは、アプリケーション ディレクトリに格納されます。 このディレクトリには、アプリケーションの実行可能ファイル (*.exe*) とアセンブリがあります。
+ データ ディレクトリは、アプリケーションで管理するデータ、つまり、アプリケーションによって明示的に格納および保守されるデータ用のディレクトリです。 アプリケーション マニフェストで "データ" のマークが付けられていない静的で非依存のすべてのファイルは、アプリケーション ディレクトリに格納されます。 このディレクトリには、アプリケーションの実行可能ファイル ( *.exe*) とアセンブリがあります。
 
 > [!NOTE]
 > [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションをアンインストールすると、そのアプリケーションのデータ ディレクトリも削除されます。 文書ファイルなど、エンド ユーザーが管理するデータを格納するためには、データ ディレクトリを使用しないでください。
@@ -60,7 +60,7 @@ ms.locfileid: "63406615"
 
  <xref:System.Windows.Forms.Application> クラスにある <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>など、関連する変数を使用してデータ ディレクトリのパスを取得することもできます。
 
- 他の種類のファイルを扱うには、アクセス許可の追加が必要になる場合があります。 たとえば、Access データベースを使用する場合 (*.mdb*) ファイル、アプリケーションにする必要があります完全信頼をアサート、関連する使用するには\<xref:System.Data > クラス。
+ 他の種類のファイルを扱うには、アクセス許可の追加が必要になる場合があります。 たとえば、Access データベースを使用する場合 ( *.mdb*) ファイル、アプリケーションにする必要があります完全信頼をアサート、関連する使用するには\<xref:System.Data > クラス。
 
 #### <a name="data-directory-and-application-versions"></a>データ ディレクトリとアプリケーションのバージョン
  アプリケーションの各バージョンのデータはそれぞれ別のデータ ディレクトリに格納され、バージョンごとに分離されます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] では、配置にデータ ファイルが含まれていてもいなくても、アプリケーションが実行時にデータ ファイルを新規作成する場所として使用できるように、このデータ ディレクトリが作成されます。 アプリケーションの新しいバージョンをインストールすると、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] により、前のバージョンのデータ ディレクトリから新しいバージョンのデータ ディレクトリに、既存のデータ ファイルがすべてコピーされます。このとき、そのデータ ファイルが元の配置に含まれていたデータ ファイルであるか、アプリケーションによって作成されたデータ ファイルであるかは区別されません。
@@ -72,7 +72,7 @@ ms.locfileid: "63406615"
 ### <a name="isolated-storage"></a>分離ストレージ
  分離ストレージには、簡単な操作でファイルを作成したりアクセスしたりできる API が用意されています。 格納したファイルの実際の場所は、開発者からもユーザーからも隠されます。
 
- 分離ストレージは、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] のすべてのバージョンで動作します。 分離ストレージは、部分的に信頼されたアプリケーション内でも、アクセス許可を追加せずに動作します。 アプリケーションを部分的に信頼された状態で実行する必要がある場合に、アプリケーション固有のデータを保守する必要があるときは、分離ストレージを使用する必要があります。
+ 分離ストレージは、.NET Framework のすべてのバージョンで動作します。 分離ストレージは、部分的に信頼されたアプリケーション内でも、アクセス許可を追加せずに動作します。 アプリケーションを部分的に信頼された状態で実行する必要がある場合に、アプリケーション固有のデータを保守する必要があるときは、分離ストレージを使用する必要があります。
 
  詳細については、「 [分離ストレージ](/dotnet/standard/io/isolated-storage)」を参照してください。
 
@@ -98,7 +98,7 @@ ms.locfileid: "63406615"
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションがセキュリティ上の制限のために Web サーバーにアクセスできない場合は、アプリケーションから対象の Web サイトに <xref:System.Net.WebPermission> をアサートする必要があります。 セキュリティ アクセス許可を増やすことの詳細については、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションを参照してください[ClickOnce のセキュリティで保護されたアプリケーション](../deployment/securing-clickonce-applications.md)します。
 
 ### <a name="access-data-through-an-xml-web-service"></a>XML Web サービスからデータにアクセス
- データを XML Web サービスとして公開する場合は、XML Web サービス プロキシを使用してデータにアクセスできます。 このプロキシは、どちらかの [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を使用して作成した [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] クラスです。 顧客の検索、注文の発注など、XML Web サービスを使用して実行する操作は、このプロキシのメソッドとして公開されます。 このため、Web サービスは未加工のテキスト ファイルや XML ファイルより簡単に使用できます。
+ データを XML Web サービスとして公開する場合は、XML Web サービス プロキシを使用してデータにアクセスできます。 いずれかを使用して作成する .NET Framework クラスにプロキシが[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。 顧客の検索、注文の発注など、XML Web サービスを使用して実行する操作は、このプロキシのメソッドとして公開されます。 このため、Web サービスは未加工のテキスト ファイルや XML ファイルより簡単に使用できます。
 
  HTTP 経由で動作する XML Web サービスには、 <xref:System.Net.WebClient> および <xref:System.Net.HttpWebRequest> クラスと同じセキュリティ制限が課されます。
 

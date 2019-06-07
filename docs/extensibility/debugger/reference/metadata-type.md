@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5aa21d4bfccd50e31c2fd7e76bb8808bba19bc58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3d608e4e9bf9987eb1dd430a9e22660c1da6a90a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333749"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746696"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 この構造体には、メタデータから取得したフィールドの種類に関する情報を指定します。
@@ -58,7 +58,7 @@ public struct METADATA_TYPE {
 ## <a name="remarks"></a>Remarks
  共用体の一部としてこの構造体が表示されます、 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)ときに構造体、`dwKind`のフィールド、`TYPE_INFO`構造に設定されている`TYPE_KIND_METADATA`(からの値、 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列挙型)。
 
- `tokClass`値が型を一意に識別するメタデータ トークン。 メタデータ トークン ID の上位ビットを解釈する方法の詳細については、次を参照してください。、`CorTokenType`で corhdr.h ファイルで列挙、 [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK。
+ `tokClass`値が型を一意に識別するメタデータ トークン。 メタデータ トークン ID の上位ビットを解釈する方法の詳細については、次を参照してください。、 `CorTokenType` 、.NET Framework sdk corhdr.h ファイルで列挙します。
 
 ## <a name="requirements"></a>必要条件
  ヘッダー: sh.h

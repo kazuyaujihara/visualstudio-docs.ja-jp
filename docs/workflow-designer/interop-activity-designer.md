@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 688ef92fae5bd0cbaa5ddc653bbaab5692f4827f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536426"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747132"
 ---
 # <a name="interop-activity-designer"></a>Interop アクティビティ デザイナー
 
@@ -29,11 +29,7 @@ ms.locfileid: "62536426"
 
 **相互運用機能**アクティビティ デザイナーが記載されて、**移行**のカテゴリ、**ツールボックス**をクリックしてアクセスする、**ツールボックス**タブ。または、選択**ツールボックス**から、**ビュー**メニューのまたはキーを押して**Ctrl**+**Alt** + **X**します。
 
-[移行](../workflow-designer/migration-activity-designers.md)格納しているカテゴリ、<xref:System.Activities.Statements.Interop>アクティビティにのみ表示**ツールボックス**場合は、プロジェクトが完全な .NET Framework 4 を対象とします。
-
-C# プロジェクトの場合は、プロジェクトでプロジェクトを右クリックして、完全な .NET Framework 4 を使用する再ターゲットできます**ソリューション エクスプ ローラー**選択**プロパティ**します。 **アプリケーション**] タブで、[、 **NET Framework 4**オプション、**ターゲット フレームワーク**します。 選択**はい**この変更を確認します。
-
-Visual Basic プロジェクトの場合は、プロジェクトでプロジェクトを右クリックして、完全な .NET Framework 4 を使用する再ターゲットできます**ソリューション エクスプ ローラー**選択**プロパティ**します。 **コンパイル**タブをクリックし、**詳細コンパイル オプション**ボタン。 選択 **.Net Framework 4**から、**ターゲット フレームワーク リスト**、順にクリックします**OK**。 選択**はい**この変更を確認します。
+[移行](../workflow-designer/migration-activity-designers.md)格納しているカテゴリ、<xref:System.Activities.Statements.Interop>でアクティビティにのみ表示されます**ツールボックス**場合、プロジェクトのターゲットが .NET Framework 4 (完全) またはそれ以降。 かどうか、必要に応じて変更できますフレームワークのバージョンをプロジェクトのターゲット。
 
 **相互運用機能**からアクティビティ デザイナーをドラッグできる**ツールボックス**どこにも、アクティビティを通常配置など内に、ワークフロー デザイナー画面にドロップし、<xref:System.Activities.Statements.Sequence>します。 削除、**相互運用機能**アクティビティ デザイナーを作成、 <xref:System.Activities.Statements.Interop> 、既定値は、アクティビティ**DisplayName**相互運用機能の。 編集することができます、<xref:System.Activities.Activity.DisplayName%2A>のヘッダーに、**相互運用機能**アクティビティ デザイナー、または、 **DisplayName**プロパティ グリッドのボックスです。
 

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: f0047ee38a6fda4738c773c36a85e14cba1e37fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715185"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745538"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters を使用してデータセットを入力する
 
@@ -85,7 +85,7 @@ Tableadapter では、標準のデータ アダプターの機能を拡張、構
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter のメソッドとプロパティ
 
-TableAdapter クラスはの一部、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]します。 つまり、ドキュメントを検索できない、または**オブジェクト ブラウザー**します。 前に説明したウィザードの 1 つを使用すると、デザイン時に作成されます。 作成するときに、TableAdapter に割り当てられている名前は、使用しているテーブルの名前に基づきます。 たとえば、という名前のデータベース内のテーブルに基づいて TableAdapter を作成する`Orders`、TableAdapter の名前は`OrdersTableAdapter`します。 TableAdapter のクラス名は、**データセット デザイナー**の **Name** プロパティを使用して変更できます。
+TableAdapter クラスは、.NET 型ではありません。 つまり、ドキュメントを検索できない、または**オブジェクト ブラウザー**します。 前に説明したウィザードの 1 つを使用すると、デザイン時に作成されます。 作成するときに、TableAdapter に割り当てられている名前は、使用しているテーブルの名前に基づきます。 たとえば、という名前のデータベース内のテーブルに基づいて TableAdapter を作成する`Orders`、TableAdapter の名前は`OrdersTableAdapter`します。 TableAdapter のクラス名は、**データセット デザイナー**の **Name** プロパティを使用して変更できます。
 
 一般的に使用されるメソッドと Tableadapter のプロパティを次に示します。
 
@@ -122,7 +122,7 @@ Null 許容型をサポートする Tableadapter`Nullable(Of T)`と`T?`します
 
 既定では、TableAdapterManager クラスは、関連テーブルを含むデータセットを作成するときに生成します。 値を変更するクラスが生成されていることを防ぐために、`Hierarchical Update`を false に、データセットのプロパティ。 Windows フォームまたは WPF ページのデザイン サーフェイスに関係のあるテーブルをドラッグすると、Visual Studio は、クラスのメンバー変数を宣言します。 データ バインドを使用しない場合は、手動で変数を宣言する必要があります。
 
-TableAdapterManager クラスの一部、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]します。 そのため、ドキュメントを検索することはできません。 デザイン時にデータセットの作成プロセスの一環として作成されます。
+TableAdapterManager クラスは、.NET 型ではありません。 そのため、ドキュメントを検索することはできません。 デザイン時にデータセットの作成プロセスの一環として作成されます。
 
 よく使用されるメソッドとプロパティの次のとおり、`TableAdapterManager`クラス。
 

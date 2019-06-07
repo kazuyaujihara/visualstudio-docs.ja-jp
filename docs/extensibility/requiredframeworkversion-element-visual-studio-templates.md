@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77bc25ec831241a87782fc6628fba2ab8e7fa0e7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0550fc1d286c04c61a1c0b2503326a002fde729e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334201"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744750"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 要素 (Visual Studio テンプレート)
 
@@ -86,4 +86,4 @@ ms.locfileid: "66334201"
 
 - [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)
-- [特定の .NET Framework バージョンをターゲットします。](../ide/visual-studio-multi-targeting-overview.md)
+- [フレームワークの概要を対象とします。](../ide/visual-studio-multi-targeting-overview.md)

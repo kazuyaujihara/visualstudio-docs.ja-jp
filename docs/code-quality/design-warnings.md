@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2f2437f09286b1b6ff0aa856eec845ecb83c1d
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: bd8b7c990ff0a56acd22cf4b7ddb16bc2e6c1618
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715002"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745165"
 ---
 # <a name="design-warnings"></a>デザインの警告
 
@@ -32,7 +32,7 @@ ms.locfileid: "66715002"
 | [CA 1000:ジェネリック型で静的メンバーを宣言しません](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md) | ジェネリック型の静的メンバーを呼び出すときには、その型の型引数も指定する必要があります。 推論をサポートしないジェネリック インスタンス メンバーを呼び出すときには、そのメンバーに型引数を指定する必要があります。 この 2 つの場合、型引数を指定するときに使用される構文は異なりますが、混同される可能性があります。 |
 | [CA1001: 破棄可能なフィールドを所有する型は、破棄可能でなければなりません](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md) | クラスの宣言およびインスタンス フィールドは、System.IDisposable 型を実装し、クラスが IDisposable を実装していません。 IDisposable フィールドを宣言するクラスは間接的にアンマネージ リソースを所有しているため、IDisposable インターフェイスを実装する必要があります。 |
 | [CA 1002:ジェネリック リストを公開しません](../code-quality/ca1002-do-not-expose-generic-lists.md) | System.Collections.Generic.List < (の\<(T >) >) はパフォーマンスを継承しないように設計された汎用コレクションです。 このため、List には仮想メンバーは含まれません。 代わりに、継承を目的としたジェネリック コレクションを公開する必要があります。 |
-| [CA 1003:汎用イベント ハンドラーのインスタンスを使用して、](../code-quality/ca1003-use-generic-event-handler-instances.md) | 型が void を返す、2 つのパラメーター (1 つはオブジェクトと、2 つ目は EventArgs に割り当て可能な型) と包含アセンブリの対象を含むシグネチャを持つデリゲートを含む[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]します。 |
+| [CA 1003:汎用イベント ハンドラーのインスタンスを使用して、](../code-quality/ca1003-use-generic-event-handler-instances.md) | 型は void を返す、2 つのパラメーター (1 つはオブジェクトと、2 つ目は EventArgs に割り当て可能な型) を含むシグネチャを持つデリゲートを含み、格納しているアセンブリが .NET Framework 2.0 を対象とします。 |
 | [CA 1004:ジェネリック メソッドは、型パラメーターを指定する必要があります。](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md) | 型引数を明示的に指定するのではなく、メソッドに渡す引数の型によってジェネリック メソッドの型引数を決定する方法が推論されます。 推論を有効にするには、ジェネリック メソッドのパラメーター シグネチャに、そのメソッドの型パラメーターと同じ型のパラメーターが含まれている必要があります。 この場合、型引数を指定する必要がなくなります。 ジェネリックと非ジェネリック インスタンス メソッドの呼び出しの構文は同じです。 すべての型パラメーターの推論を使用する場合これには、ジェネリック メソッドの使いやすさが簡略化します。 |
 | [CA1005:ジェネリック型で過剰なパラメーターを回避します。](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md) | ジェネリック型に含まれる型パラメーターが増えれば増えるほど、それぞれの型パラメーターが表す意味を調べることや覚えることが難しくなります。 リストのように、1 つの型パラメーターを使用して、通常は明確では\<T >、および場合によっては辞書のように、2 つの型パラメーターを持つ\<TKey, TValue > です。 しかし、型パラメーターが 3 つ以上になると、ほとんどのユーザーには意味を把握することが困難になります。 |
 | [CA 1006:ジェネリック型メンバー シグネチャ内で入れ子にしません](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md) | 入れ子にされた型引数は、ジェネリック型の型引数でもあります。 入れ子にされた型引数を含むシグネチャを持つメンバーを呼び出すには、ユーザーが 1 つのジェネリック型をインスタンス化し、別のジェネリック型のコンストラクターにこの型を渡す必要があります。 複雑な手順と構文が必要となるため、これは避けるようにしてください。 |

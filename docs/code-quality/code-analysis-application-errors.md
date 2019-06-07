@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2350a495bf0540f77ff6f0d4222b18431e1586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf1985e63fef0f567cb3a765915f5c6f73cdc59
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540873"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745195"
 ---
 # <a name="code-analysis-application-errors"></a>コード分析のアプリケーション エラー
 
@@ -47,7 +47,7 @@ ms.locfileid: "62540873"
 |[CA0066](ca0066.md)|値 '*VersionID*' に提供される、 **/targetframeworkversion**認識されているバージョンではありません。|
 |[CA0067](ca0067.md)|ディレクトリが見つかりません。|
 |[CA0068](ca0068.md)|デバッグ ターゲット アセンブリの情報が見つかりませんでした *'AssemblyName'* します。|
-|[CA0069](ca0069.md)|別のプラットフォームを使用します。 *FrameworkVersion1*は見つかりませんでした。 使用して*FrameworkVersion2*代わりにします。 最良の分析結果の適切な .NET Framework がインストールされていることを確認します。|
+|[CA0069](ca0069.md)|別のプラットフォームを使用します。 *FrameworkVersion1*は見つかりませんでした。 使用して*FrameworkVersion2*代わりにします。 最良の分析結果、正しい framework のバージョンがインストールされていることを確認します。|
 |[CA0070](ca0070.md)|アセンブリまたはセキュリティのアクセス許可のための型を読み込むことができません。|
 |[CA0501](ca0501.md)|レポート出力を読み取ることができません。|
 |[CA0502](ca0502.md)|サポートされていない言語です。|
