@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: マイクロソフト製品/サービス契約 (MPSA) の Visual Studio サブスクリプション
 searchscope: VS Subscription
-ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ac051650c26dc2dbb7c6ee6d9405963536dd98c9
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002325"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402173"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>マイクロソフト製品/サービス契約 (MPSA) の Visual Studio サブスクリプション
 
@@ -41,7 +41,7 @@ MPSA をご利用のお客様には、MPSA で購入した資産を管理でき�
 
 上記の 5 つの手順の条件を満たしたら、以下の手順に従って購入アカウントをテナントに関連付けることができます。
 1. [ビジネス センター](https://businessaccount.microsoft.com/)にログインします。
-2. **[アカウント]** タブをクリックし、**[Associate Domains]\(ドメインの関連付け\)** を選択します。
+2. **[アカウント]** タブをクリックし、 **[Associate Domains]\(ドメインの関連付け\)** を選択します。
 3. (購入アカウントを複数持っている場合は) **[Purchasing Account]\(購入アカウント\)** を選択します。
 4. **テナント** (つまり contoso.onmicrosoft.com) を選択します。
 5. **[Associate Domain]\(ドメインの関連付け\)** をクリックします。
@@ -64,4 +64,4 @@ MPSA をご利用のお客様には、MPSA で購入した資産を管理でき�
 
 MPSA サポート: **1-866-200-9611 (米国)** (受付時間は月曜日から金曜日の午前 5:30 から午後 5:30 (太平洋標準時) です)
 
-電子メール: ngvlsup@microsoft.com
+オンライン: https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f?sl=enampsc=US

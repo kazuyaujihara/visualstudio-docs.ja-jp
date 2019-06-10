@@ -1,5 +1,5 @@
 ---
-title: スタブを使用して単体テストのためにアプリケーションを分離する
+title: テストを目的として、スタブを使用してアプリケーションの各部分を分離する
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 08631af916947021f37bfb3c73b821ba37e3b462
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b88905df0c99eb66c64e529610d6713801fceece
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961972"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401710"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>スタブを使用して単体テストでアプリケーションの各部分を相互に分離する
 
@@ -149,11 +149,11 @@ analyzer = new StockAnalyzer(new StockFeed());
 
 1. **ソリューション エクスプローラー**で、単体テスト プロジェクトの **[参照設定]** を展開します。
 
-   Visual Basic で作業している場合、**[参照設定]** ノードを表示するには、**ソリューション エクスプローラー** ツール バーの **[すべてのファイルを表示]** を選択する必要があります。
+   Visual Basic で作業している場合、 **[参照設定]** ノードを表示するには、**ソリューション エクスプローラー** ツール バーの **[すべてのファイルを表示]** を選択する必要があります。
 
 2. 作成するスタブに対応するインターフェイス定義が含まれているアセンブリを選択します。
 
-3. ショートカット メニューで、**[Fakes アセンブリに追加]** を選択します。
+3. ショートカット メニューで、 **[Fakes アセンブリに追加]** を選択します。
 
 ### <a name="write-your-test-with-stubs"></a>スタブを使用してテストを作成する
 
@@ -228,9 +228,9 @@ class TestMyComponent
     public void TestVariableContosoPrice()
     {
         // Arrange:
-        int priceToReturn;
-        string companyCodeUsed;
-        var componentUnderTest = new StockAnalyzer(new StubIStockFeed()
+        int priceToReturn = 345;
+        string companyCodeUsed = "";
+        var componentUnderTest = new StockAnalyzer(new StockAnalysis.Fakes.StubIStockFeed()
             {
                GetSharePriceString = (company) =>
                   {
@@ -240,8 +240,6 @@ class TestMyComponent
                      return priceToReturn;
                   };
             };
-        // Set the value that will be returned by the stub:
-        priceToReturn = 345;
 
         // Act:
         int actualResult = componentUnderTest.GetContosoPrice();
@@ -263,7 +261,7 @@ Class TestMyComponent
     <TestMethod()> _
     Public Sub TestVariableContosoPrice()
         ' Arrange:
-        Dim priceToReturn As Integer
+        Dim priceToReturn As Integer = 345
         Dim companyCodeUsed As String = ""
         Dim stockFeed As New StockAnalysis.Fakes.StubIStockFeed()
         With stockFeed
@@ -278,8 +276,6 @@ Class TestMyComponent
         End With
         ' Create an object to test:
         Dim componentUnderTest As New StockAnalyzer(stockFeed)
-        ' Set the value that will be returned by the stub:
-        priceToReturn = 345
 
         ' Act:
         Dim actualResult As Integer = componentUnderTest.GetContosoPrice()
@@ -408,7 +404,7 @@ public void TestGetValue()
     }
 ```
 
-このクラスから生成されたスタブでは、DoAbstract() と DoVirtual() のデリゲート メソッドを設定できますが、DoConcrete() のデリゲート メソッドは設定できません。
+このクラスから生成されたスタブでは、`DoConcrete()`ではなく、`DoAbstract()` と `DoVirtual()` のデリゲート メソッドを設定できます。
 
 ```csharp
 // unit test
@@ -437,9 +433,9 @@ Assert.AreEqual(43,stub.DoVirtual(1));
 
 ## <a name="stub-limitations"></a>スタブの制限事項
 
-1. ポインターを含むメソッド シグネチャはサポートされていません。
+- ポインターを含むメソッド シグネチャはサポートされていません。
 
-2. スタブ型は仮想メソッド ディスパッチに依存しているため、シール クラスまたは静的メソッドはスタブできません。 そのような場合、「[shim を使用して単体テストでアプリケーションを他のアセンブリから分離する](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)」の説明にある shim 型を利用してください。
+- スタブ型は仮想メソッド ディスパッチに依存しているため、シール クラスまたは静的メソッドはスタブできません。 そのような場合、「[shim を使用して単体テストでアプリケーションを他のアセンブリから分離する](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)」の説明にある shim 型を利用してください。
 
 ## <a name="change-the-default-behavior-of-stubs"></a>スタブの既定の動作を変更する
 

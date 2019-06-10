@@ -1,5 +1,5 @@
 ---
-title: Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則
+title: Microsoft Fakes:コードの生成とコンパイル、名前付け規則
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 554fe9c8d8f30c13f667566a76349e237f5ddb0f
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822762"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432291"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則
 
@@ -30,7 +30,7 @@ ms.locfileid: "62822762"
 
 ### <a name="configure-code-generation-of-stubs"></a>スタブのコード生成を構成する
 
-スタブ型の生成は、*.fakes* ファイル拡張子を持つ XML ファイルで構成されます。 Fakes フレームワークは、カスタム MSBuild タスクによってビルド処理で統合され、ビルド時にそれらのファイルを検出します。 Fakes コード ジェネレーターは、スタブ型をアセンブリにコンパイルし、参照をプロジェクトに追加します。
+スタブ型の生成は、 *.fakes* ファイル拡張子を持つ XML ファイルで構成されます。 Fakes フレームワークは、カスタム MSBuild タスクによってビルド処理で統合され、ビルド時にそれらのファイルを検出します。 Fakes コード ジェネレーターは、スタブ型をアセンブリにコンパイルし、参照をプロジェクトに追加します。
 
 次の例に、*FileSystem.dll* で定義されたスタブ型を示します。
 
@@ -179,7 +179,7 @@ Fakes アセンブリのコンパイルで、ビルド時間が非常に長く�
 
 チーム ビルド環境では、すべてのビルド出力が 1 つのディレクトリにマージされます。 複数のプロジェクトが Fakes を使用している場合は、異なるバージョンの Fakes アセンブリが互いにオーバーライドすることがあります。 たとえば、.NET Framework 2.0 からの TestProject1 による *mscorlib.dll* の Fakes 処理と .NET Framework 4 の TestProject2 による *mscorlib.dll* の Fakes 処理は、いずれも *mscorlib.Fakes.dll* Fakes アセンブリを生成します。
 
- この問題を回避するには、*.fakes* ファイルを追加するとき、Fakes 処理で非プロジェクト参照用にバージョンで修飾された Fakes アセンブリ名を自動的に作成する必要があります。 バージョンで修飾された Fakes アセンブリ名の場合は、Fakes アセンブリ名を作成するときにバージョン番号が埋め込まれます。
+ この問題を回避するには、 *.fakes* ファイルを追加するとき、Fakes 処理で非プロジェクト参照用にバージョンで修飾された Fakes アセンブリ名を自動的に作成する必要があります。 バージョンで修飾された Fakes アセンブリ名の場合は、Fakes アセンブリ名を作成するときにバージョン番号が埋め込まれます。
 
  アセンブリ MyAssembly とバージョン 1.2.3.4 の場合、Fakes アセンブリ名は MyAssembly.1.2.3.4.Fakes です。
 

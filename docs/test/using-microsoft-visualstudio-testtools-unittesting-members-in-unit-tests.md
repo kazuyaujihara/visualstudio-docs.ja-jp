@@ -1,5 +1,5 @@
 ---
-title: 単体テストでの Microsoft.VisualStudio.TestTools.UnitTesting のメンバーの使用
+title: 単体テストで Microsoft.VisualStudio.TestTools.UnitTesting を使用する
 ms.date: 03/02/2018
 ms.topic: reference
 ms.author: gewarren
@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 12c1b35288ac5857ac2971ffc6cbdddd40aa5c40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3f488d021be59538eac36a19a66970b9fc01463
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62776679"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432231"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>単体テストでの MSTest フレームワークの使用
 
@@ -95,7 +95,7 @@ ClassInitialize がクラスの読み込みの直後に、ClassCleanup がクラ
 
 ## <a name="the-testcontext-class"></a>TestContext クラス
 
-次の属性とそれらに割り当てられた値は、Visual Studio Properties で特定のテスト メソッドの [プロパティ] ウィンドウに表示されます。 これらの属性は、単体テストのコードからアクセスするためのものではありません。 代わりに、Visual Studio の IDE、または Visual Studio テスト エンジンのいずれかによる単体テストの使用法または実行方法に影響します。 たとえば、これらの属性には、**[テスト マネージャー]** ウィンドウや **[テスト結果]** ウィンドウの列として表示されるものがあり、それらを使用してテストやテスト結果をグループ化したり並べ替えたりできます。 このような属性の 1 つに <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> があります。この属性を使用して、任意のメタデータを単体テストに追加できます。 たとえば、これを使用し、単体テストを `[TestProperty("TestPass", "Accessibility")]` とマークして、このテストの対象となるテスト パスの名前を格納できます。 または、`[TestProperty("TestKind", "Localization")]` を使用して、テストの種類のインジケーターを格納できます。 この属性を使用して作成するプロパティ、および割り当てるプロパティ値は、どちらも Visual Studio の **[プロパティ]** ウィンドウの **[各テストで特有]** という見出しの下に表示されます。
+次の属性とそれらに割り当てられた値は、Visual Studio Properties で特定のテスト メソッドの [プロパティ] ウィンドウに表示されます。 これらの属性は、単体テストのコードからアクセスするためのものではありません。 代わりに、Visual Studio の IDE、または Visual Studio テスト エンジンのいずれかによる単体テストの使用法または実行方法に影響します。 たとえば、これらの属性には、 **[テスト マネージャー]** ウィンドウや **[テスト結果]** ウィンドウの列として表示されるものがあり、それらを使用してテストやテスト結果をグループ化したり並べ替えたりできます。 このような属性の 1 つに <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> があります。この属性を使用して、任意のメタデータを単体テストに追加できます。 たとえば、これを使用し、単体テストを `[TestProperty("TestPass", "Accessibility")]` とマークして、このテストの対象となるテスト パスの名前を格納できます。 または、`[TestProperty("TestKind", "Localization")]` を使用して、テストの種類のインジケーターを格納できます。 この属性を使用して作成するプロパティ、および割り当てるプロパティ値は、どちらも Visual Studio の **[プロパティ]** ウィンドウの **[各テストで特有]** という見出しの下に表示されます。
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>
 
