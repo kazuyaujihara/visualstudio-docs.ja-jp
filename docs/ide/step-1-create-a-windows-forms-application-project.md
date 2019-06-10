@@ -1,6 +1,6 @@
 ---
 title: '手順 1: Windows フォーム アプリケーション プロジェクトの作成'
-ms.date: 03/23/2019
+ms.date: 06/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f529d737816406b3a4f6aa9921a8dc6b902d2fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b28b69f2a5f2b02c483c5d6813943297b13f173
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979865"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501053"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>手順 1: Windows フォーム アプリケーション プロジェクトの作成
 
@@ -28,14 +28,13 @@ ms.locfileid: "62979865"
 
 ## <a name="open-visual-studio-2017"></a>Visual Studio 2017 を開きます
 
-1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。 ダイアログ ボックスは次のようになります。
+1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。 ダイアログ ボックスは次のスクリーンショットのように表示されます。
 
-     ![[新しいプロジェクト] ダイアログ ボックス](../ide/media/newprojectdialogcallouts.png)<br/>
-* **[新しいプロジェクト]** ダイアログ ボックス*
+     ![[新しいプロジェクト] ダイアログ ボックス](../ide/media/newprojectdialogcallouts.png)<br/>***[新しいプロジェクト]*** *ダイアログ ボックス*
 
-2. **[新しいプロジェクト]** ダイアログ ボックスの左側で、 **[Visual C#]** または **[Visual Basic]** のいずれかを選択します。
+2. **[新しいプロジェクト]** ダイアログ ボックスの左側で、 **[Visual C#]** または **[Visual Basic]** のいずれかを選択し、 **[Windows Desktop]** を選択します。
 
-3. テンプレート リストで、 **[Windows フォーム アプリケーション (.NET Framework)]** を選択します。 新しいフォームに「**PictureViewer**」という名前を付け、 **[OK]** をクリックします。
+3. テンプレート リストで、 **[Windows フォーム アプリケーション (.NET Framework)]** を選択します。 新しいフォームに「*PictureViewer*」という名前を付け、 **[OK]** をクリックします。
 
     >[!NOTE]
     >**[Windows フォーム アプリケーション (.NET Framework)]** テンプレートが表示されない場合は、Visual Studio インストーラーを使用して **[.NET デスクトップ開発]** ワークロードをインストールします。<br/><br/>![Visual Studio インストーラーでの [.NET デスクトップ開発] ワークロード](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> 詳細については、「[Visual Studio のインストール](../install/install-visual-studio.md)」を参照してください。
@@ -50,7 +49,7 @@ ms.locfileid: "62979865"
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*Windows フォーム*」と入力またはタイプします。 次に、言語のリストから **[Visual Basic]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
+1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*Windows フォーム*」と入力またはタイプします。 次に、言語のリストから **[Visual Basic]** を選択して、プラットフォームのリストから **[Windows]** を選択します。
 
    言語とプラットフォームのフィルターを適用してから、 **[Windows フォーム アプリ (.NET Framework)]** テンプレートを選択し、 **[次へ]** を選択します。
 
@@ -59,13 +58,13 @@ ms.locfileid: "62979865"
    > [!NOTE]
    > **[Windows フォーム アプリ (.NET Framework)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
    >
-   > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > 次に、Visual Studio インストーラーで、 **[.NET デスクトップの開発]** ワークロードを選択します。
-   > 
+   >
    > ![Visual Studio インストーラーの .NET Core ワークロード](../ide/media/install-dot-net-desktop-env.png)
    >
-   > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、 **[続行]** を選択してワークロードをインストールします。 
+   > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、 **[続行]** を選択してワークロードをインストールします。
 
 1. **[新しいプロジェクトの構成]** ウィンドウで、 **[プロジェクト名]** ボックスに「*PictureViewer*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
 

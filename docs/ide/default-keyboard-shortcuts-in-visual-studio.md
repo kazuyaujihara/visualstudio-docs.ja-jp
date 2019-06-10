@@ -13,22 +13,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 55e035ab0c3702c571b69b555d99adbf7cb0b7e9
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261317"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501171"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio の既定のキーボード ショートカット
 
 キーボードのアクセシビリティの詳細については、「[アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)」と「[方法:キーボード主体で操作する](../ide/reference/how-to-use-the-keyboard-exclusively.md)」を参照してください。
 
-Visual Studio のさまざまなコマンドやウィンドウには、該当するショートカット キーを押すことでアクセスできます。 このトピックでは、Visual Studio のインストール時に選択できる [全般的な開発設定] プロファイルの既定のショートカット キーを一覧します。 選択したプロファイルにかかわらず、 **[オプション]** ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、コマンドのショートカット キーを確認できます。 また、別のショートカット キーを任意のコマンドに割り当てることで、ショートカット キーをカスタマイズすることもできます。
+Visual Studio のさまざまなコマンドやウィンドウには、該当するショートカット キーを押すことでアクセスできます。 このページでは、Visual Studio のインストール時に選択できる **[全般]** プロファイルの既定のショートカットを一覧表示します。 選択したプロファイルにかかわらず、 **[オプション]** ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、コマンドのショートカット キーを確認できます。 また、別のショートカット キーを任意のコマンドに割り当てることで、ショートカット キーをカスタマイズすることもできます。
 
-一般的なショートカット キーの一覧、およびその他の生産性向上に関する情報については、「[Visual Studio で頻繁に使用するコマンドに対応する既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)」、[キーボードに関するヒント](../ide/tips-and-tricks-for-visual-studio.md)、[生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)の各記事をご覧ください。
-
-次の表の各セクションでは、ショートカット キーを使用して Visual Studio の任意の場所から [全体] コンテキストでアクセスできるコマンドを示しています。
+一般的なキーボード ショートカットの一覧、およびその他の生産性向上に関する情報については、「[Visual Studio で頻繁に使用するコマンドに対応する既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)」、[キーボードに関するヒント](../ide/tips-and-tricks-for-visual-studio.md)、[生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)をご覧ください。
 
 |||||
 |-|-|-|-|
@@ -40,7 +38,9 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |[デバッガー コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[その他のコンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[診断ハブ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-## <a name="bkmk_global"></a> グローバル
+## <a name="global-shortcuts"></a>グローバル ショートカット
+
+以下のキーボード ショートカットは*グローバル*です。つまり、Visual Studio ウィンドウにフォーカスがある場合にそれらを使用できます。
 
 ### <a name="bkmk_analyze"></a> 解析
 
@@ -161,6 +161,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Edit.Cut|**Ctrl + X**<br /><br /> or<br /><br /> **Shift + Delete**|
 |Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> or<br /><br /> **Ctrl + Shift + Ins**|
 |Edit.Delete|**削除**|
+|Edit.Duplicate|**Ctrl + D**|
 |Edit.Find|**Ctrl + F**|
 |Edit.FindAllReferences|**Shift+F12**|
 |Edit.FindinFiles|**Ctrl + Shift + F**|
@@ -170,11 +171,12 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Edit.FindPreviousSelected|**Ctrl + Shift + F3**|
 |Edit.GenerateMethod|**Ctrl + K、Ctrl + M**|
 |Edit.GoTo|**Ctrl + G**|
+|Edit.GoToAll|**Ctrl +、** または **Ctrl + T**|
 |Edit.GoToDeclaration|**Ctrl + F12**|
 |Edit.GoToDefinition|**F12**|
-|Edit.GoToFindCombo|**Ctrl + D**|
-|Edit.GoToNextLocation|**F8**|
-|Edit.GoToPrevLocation|**Shift + F8**|
+|Edit.GoToMember|**Ctrl + 1、Ctrl + M** または **Ctrl + 1、M** または **Alt +\\**|
+|Edit.GoToNextLocation|**F8** ([エラー一覧] または [出力] ウィンドウ内の次のエラー)|
+|Edit.GoToPrevLocation|**Shift + F8** ([エラー一覧] または [出力] ウィンドウ内の前のエラー)|
 |Edit.InsertSnippet|**Ctrl + K、Ctrl + X**|
 |Edit.MoveControlDown|**Ctrl + ↓**|
 |Edit.MoveControlDownGrid|**↓ キー**|
@@ -184,10 +186,9 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Edit.MoveControlRightGrid|**→ キー**|
 |Edit.MoveControlUp|**Ctrl + ↑**|
 |Edit.MoveControlUpGrid|**↑ キー**|
-|Edit.NavigateTo|**Ctrl + ,**|
 |Edit.NextBookmark|**Ctrl + K、Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K、Ctrl + Shift + N**|
-|Edit.OpenFile|**Ctrl + Shift + G**|
+|Edit.OpenFile|**Ctrl + Shift + G** (カーソルの下のファイル名が開きます)|
 |Edit.Paste|**Ctrl + V**<br /><br /> or<br /><br /> **Shift + Ins**|
 |Edit.PreviousBookmark|**Ctrl + K、Ctrl + P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl + Shift + K、Ctrl + Shift + P**|
@@ -346,7 +347,6 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Tools.AttachtoProcess|**Ctrl + Alt + P**|
 |Tools.CodeSnippetsManager|**Ctrl + K、Ctrl + B**|
 |Tools.ForceGC|**Ctrl + Shift + Alt + F12、Ctrl + Shift + Alt + F12**|
-|Tools.GoToCommandLine|**Ctrl + /**|
 
 ### <a name="bkmk_view"></a> 表示
 
@@ -354,7 +354,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |--------------| - |
 |View.AllWindows|**Shift + Alt + M**|
 |View.ArchitectureExplorer|**Ctrl + \\、Ctrl + R**|
-|View.Backward|**Alt + ←**|
+|View.Backward|**Alt + 左矢印** (テキスト エディターでの View.NavigateBackward の機能とは異なる)|
 |View.BookmarkWindow|**Ctrl + K、Ctrl + W**|
 |View.BrowseNext|**Ctrl + Shift + 数字 1**|
 |View.BrowsePrevious|**Ctrl + Shift + 数字 2**|
@@ -369,7 +369,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |View.ErrorList|**Ctrl + \\、E**<br /><br /> or<br /><br /> **Ctrl + \\、Ctrl + E**|
 |View.F#Interactive|**Ctrl + Alt + F**|
 |View.FindSymbolResults|**Ctrl + Alt + F12**|
-|View.Forward|**Alt + →**|
+|View.Forward|**Alt + 右矢印** (テキスト エディターでの View.NavigateForward の機能とは異なる)|
 |View.ForwardBrowseContext|**Ctrl + Shift + 7**|
 |View.FullScreen|**Shift + Alt + Enter**|
 |View.NavigateBackward|**Ctrl + -**|
@@ -379,7 +379,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |View.ObjectBrowser|**Ctrl + Alt + J**|
 |View.ObjectBrowserGoToSearchCombo|**Ctrl + K、Ctrl + R**|
 |View.Output|**Ctrl + Alt + O** (文字 'O')|
-|View.PopBrowseContex|**Ctrl + Shift + 8**|
+|View.PopBrowseContext|**Ctrl + Shift + 8** (C++ のみ)|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**Shift + F4**|
 |View.ResourceView|**Ctrl + Shift + E**|
@@ -779,7 +779,6 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 | Edit.CharRight | **→ キー** |
 | Edit.CharRightExtend | **Shift + →** |
 | Edit.CharRightExtendColumn | **Shift + Alt + →** |
-| Edit.CharTranspose | **Ctrl + T** |
 | Edit.ClearBookmarks | **Ctrl + K、Ctrl + L** |
 | Edit.CollapseAllOutlining | **Ctrl + M、Ctrl + A** |
 | Edit.CollapseCurrentRegion | **Ctrl + M、Ctrl + S** |
