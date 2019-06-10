@@ -3,7 +3,7 @@ title: 'チュートリアル: C# と ASP.NET Core の概要'
 titleSuffix: ''
 description: Visual Studio を使用して C# で ASP.NET Core Web アプリを作成する方法について段階的に説明します。
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 05/29/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 191be9ea5433351f6f89366cc2240d8b0801e54b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00423f3affa5c882137ee19c355252acbf23c976
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972096"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402113"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>チュートリアル: Visual Studio での C# および ASP.NET Core の概要
 
@@ -59,9 +59,9 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
 1. Visual Studio 2017 を開きます。
 
-2. 上部のメニュー バーから、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+2. 上部のメニュー バーから、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual C#]**、**[Web]** の順に展開し、**[.NET Core]** を選択します。 中央のウィンドウで、**[ASP.NET Core Web アプリケーション]** を選択ます。 次に、ファイルに *MyCoreApp* という名前を付け、**[OK]** を選択します。
+3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[Visual C#]** 、 **[Web]** の順に展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[ASP.NET Core Web アプリケーション]** を選択ます。 次に、ファイルに *MyCoreApp* という名前を付け、 **[OK]** を選択します。
 
    ![Visual Studio IDE の [新しいプロジェクト] ダイアログ ボックスに示されている ASP.NET Core Web アプリケーション プロジェクト テンプレート](media/csharp-aspnet-choose-template-name-razor-mycoreapp-file.png)
 
@@ -71,7 +71,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>オプション 1:[新しいプロジェクト] ダイアログ ボックスを使用する
 
-1. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual Studio インストーラーを開く]** リンクを選択します。 (ディスプレイの設定によっては、表示するためにスクロールする必要があります。)
+1. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[Visual Studio インストーラーを開く]** リンクを選択します。 (ディスプレイの設定によっては、表示するためにスクロールする必要があります。)
 
    ![[新しいプロジェクト] ダイアログ ボックスで [Visual Studio インストーラーを開く] リンクを選択する](../media/open-visual-studio-installer-mycoreapp.png)
 
@@ -83,7 +83,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>オプション 2:[ツール] メニュー バーを使用する
 
-1. **[新しいプロジェクト]** ダイアログ ボックスを取り消します。 次に、上部のメニュー バーで、**[ツール]** > **[ツールと機能を取得]** の順に選択します。
+1. **[新しいプロジェクト]** ダイアログ ボックスを取り消します。 次に、上部のメニュー バーで、 **[ツール]**  >  **[ツールと機能を取得]** の順に選択します。
 
 1. Visual Studio インストーラーが起動します。 **[ASP.NET と Web 開発]** ワークロードを選択してから **[変更]** を選択します。
 
@@ -91,45 +91,45 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
 ### <a name="add-a-project-template"></a>プロジェクト テンプレートを追加する
 
-1. **[新しい ASP.NET Core Web アプリケーション]** ダイアログ ボックスで、**[Web アプリケーション]** プロジェクト テンプレートを選択します。
+1. **[新しい ASP.NET Core Web アプリケーション]** ダイアログ ボックスで、 **[Web アプリケーション]** プロジェクト テンプレートを選択します。
 
-1. 上部のドロップダウン メニューに **[ASP.NET Core 2.1]** が表示されていることを確認します。 次に、**[OK]** を選択します。
+1. 上部のドロップダウン メニューに **[ASP.NET Core 2.1]** が表示されていることを確認します。 次に、 **[OK]** を選択します。
 
    ![[新しい ASP.NET Core Web アプリケーション] ダイアログ ボックス](media/new-project-csharp-aspnet-razor-web-app.png)
 
    > [!NOTE]
-   > 上部のドロップダウン メニューで **[ASP.NET Core 2.1]** 以降が表示されない場合は、最新リリースの Visual Studio を実行していることを確認します。 インストールを更新する方法の詳細については、「[Visual Studio を最新リリースに更新する](../../install/update-visual-studio.md)」ページを参照してください。
+   > 上部のドロップダウン メニューで **[ASP.NET Core 2.1]** が表示されない場合は、最新リリースの Visual Studio を実行していることを確認します。 インストールを更新する方法の詳細については、「[Visual Studio を最新リリースに更新する](../../install/update-visual-studio.md)」ページを参照してください。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+1. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*ASP.NET*」と入力またはタイプします。 次に、言語のリストから **[C#]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
+1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*ASP.NET*」と入力またはタイプします。 次に、言語のリストから **[C#]** を選択して、プラットフォームのリストから **[Windows]** を選択します。
 
-   言語およびプラットフォームのフィルターを適用してから、**[ASP.NET Core Web アプリケーション]** テンプレートを選択して、**[次へ]** を選択します。
+   言語およびプラットフォームのフィルターを適用してから、 **[ASP.NET Core Web アプリケーション]** テンプレートを選択して、 **[次へ]** を選択します。
 
    ![ASP.NET Core Web アプリケーション用の C# テンプレートを選択する](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
 
    > [!NOTE]
-   > **[ASP.NET Core Web アプリケーション]** テンプレートが表示されない場合は、**[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、**[さらにツールと機能をインストールする]** リンクを選択します。
+   > **[ASP.NET Core Web アプリケーション]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
    >
-   > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
-   > 次に、Visual Studio インストーラーで、**[ASP.NET と Web 開発]** ワークロードを選択します。
+   > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
+   > 次に、Visual Studio インストーラーで、 **[ASP.NET と Web 開発]** ワークロードを選択します。
    >
    > ![Visual Studio インストーラーの [.NET Core クロスプラットフォームの開発] ワークロード](../../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、**[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
+   > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められたら、そのようにします。 次に、 **[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
 
-1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*MyCoreApp*」とタイプまたは入力します。 次に、**[作成]** を選択します。
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*MyCoreApp*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
 
    ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'MyCoreApp' という名前を付けます。](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
 
-1. **[新しい ASP.NET Core Web アプリケーションの作成]** ダイアログ ボックスで、上部のドロップダウン メニューに **ASP.NET Core 2.1** 以降が表示されていることを確認します。 次に、Razor Pages の例が含まれている **Web アプリケーション** を選択します。 次に、**[作成]** を選択します。
+1. **[新しい ASP.NET Core Web アプリケーションの作成]** ウィンドウで、上部のドロップダウン メニューに **ASP.NET Core 2.1** が表示されていることを確認します。 次に、Razor Pages の例が含まれている **Web アプリケーション** を選択します。 次に、 **[作成]** を選択します。
 
    ![[新しい ASP.NET Core Web アプリケーションの作成] ウィンドウ](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
 
@@ -147,7 +147,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
     ![MyCoreApp という名前の Visual Studio の Razor Pages ソリューション用 ASP.NET ソリューション エクスプローラー](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
 
- 1. **Page** フォルダーを展開した後、*[About.cshtml]* を展開します。
+ 1. **Page** フォルダーを展開した後、 *[About.cshtml]* を展開します。
 
      ![Visual Studio のソリューション エクスプローラーの About.cshtml ファイル](media/csharp-aspnet-razor-solution-explorer-aboutcshtml.png)
 
@@ -175,21 +175,18 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
 ## <a name="run-debug-and-make-changes"></a>実行、デバッグ、および変更
 
-1. IDE の **[IIS Express]** ボタンを選択して、デバッグ モードでアプリをビルドして実行します  (または、**F5** キーを押すか、メニュー バーから **[デバッグ]** > **[デバッグの開始]** の順に選択します)。
+1. IDE の **[IIS Express]** ボタンを選択して、デバッグ モードでアプリをビルドして実行します (または、**F5** キーを押すか、メニュー バーから **[デバッグ]**  >  **[デバッグの開始]** の順に選択します)。
 
      ![Visual Studio の [IIS Express] ボタンを選択する](media/csharp-aspnet-razor-iisexpress.png)
 
      > [!NOTE]
      > "**Web サーバー 'IIS Express' に接続できませんでした**" というエラー メッセージが表示された場合は、Visual Studio を閉じて、右クリックまたはコンテキスト メニューから **[管理者として実行]** オプションを使用して Visual Studio を開きます。 その後、アプリケーションをもう一度実行します。
      >
-     > IIS SSL Express の証明書を受け入れるかどうかをたずねるメッセージが表示される場合もあります。 Web ブラウザーでコードを表示するには、**[はい]** を選択し、フォロー アップ セキュリティ警告メッセージを受信する場合はさらに **[はい]** を選択します。 
+     > IIS SSL Express の証明書を受け入れるかどうかをたずねるメッセージが表示される場合もあります。 Web ブラウザーでコードを表示するには、 **[はい]** を選択し、フォロー アップ セキュリティ警告メッセージを受信する場合はさらに **[はい]** を選択します。
 
 1. Visual Studio でブラウザー ウィンドウが起動します。 そうすると、メニュー バーに **Home**、**About**、**Contact** ページが表示されます。 (表示されない場合は、"ハンバーガー" メニュー項目を選択して表示させます。)
 
     ![Web アプリのメニュー バーから "ハンバーガー" メニュー項目を選択する](media/csharp-aspnet-razor-browser-page.png)
-
-     > [!TIP]
-     > ブラウザー ウィンドウでプロジェクトが開いている場合、Visual Studio コード エディターでコードを編集することはできません。 
 
 1. メニュー バーから **[About]** を選択します。
 
@@ -199,7 +196,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
    ![[バージョン情報] ページでテキストを表示する](media/csharp-aspnet-razor-browser-page-about.png)
 
-1. ブラウザー ウィンドウを開いたまま、Visual Studio に戻ります。
+1. Visual Studio に戻り、**Shift + F5** を押してデバッグ モードを停止します。 これにより、ブラウザー ウィンドウ内のプロジェクトも閉じられます。
 
 1. Visual Studio で **About.cshtml** を選択します。 次に、「_additional_」という単語を削除して、その代わりに「_file and directory_」という文字列を追加します。
 
@@ -207,7 +204,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
 1. **About.cshtml.cs** を選択します。 次に、次のショートカットを使用して、ファイルの上部にある `using` ディレクティブをクリーンアップします。
 
-   灰色表示の `using` ディレクティブのいずれかを選択すると、キャレットのすぐ下、または左余白に[クイック アクション](../../ide/quick-actions.md) (電球) が表示されます。 電球を選択してから、**[不要な using の削除]** を選択します。
+   灰色表示の `using` ディレクティブのいずれかを選択すると、キャレットのすぐ下、または左余白に[クイック アクション](../../ide/quick-actions.md) (電球) が表示されます。 電球を選択してから、 **[不要な using の削除]** を選択します。
 
    ![About.cshtml.cs の不要な using を削除する](media/csharp-aspnet-razor-remove-unnecessary-usings.png)
 
@@ -227,15 +224,15 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
    ![OnGet メソッドで波形の下線でマークされたエラー](media/csharp-aspnet-razor-add-new-on-get-method.png)
 
-    **[エラー一覧]** ツール バーを開くと、そこに同じエラーが一覧表示されます  (**[エラー一覧]** ツール バーが表示されない場合は、上部のメニュー バーで **[表示]** > **[エラー一覧]** の順に選択します)。
+    **[エラー一覧]** ツール バーを開くと、そこに同じエラーが一覧表示されます ( **[エラー一覧]** ツール バーが表示されない場合は、上部のメニュー バーで **[表示]**  >  **[エラー一覧]** の順に選択します)。
 
    ![Visual Studio の [エラー一覧]](media/csharp-aspnet-razor-error-list.png)
 
-1. これを修正しましょう。 コードエディターで、エラーを含むいずれかの行にカーソルを置いた後、左余白のクイック アクション (電球) を選択します。 次に、ドロップダウン メニューから、**[using System;]** を選択してファイルの先頭にこのディレクティブを追加し、エラーを解決します。
+1. これを修正しましょう。 コードエディターで、エラーを含むいずれかの行にカーソルを置いた後、左余白のクイック アクション (電球) を選択します。 次に、ドロップダウン メニューから、 **[using System;]** を選択してファイルの先頭にこのディレクティブを追加し、エラーを解決します。
 
    !["using System;" ディレクティブを追加する](media/csharp-aspnet-razor-add-usings.png)
 
-1. **Ctrl**+**S** キーを押して変更を保存し、Web ブラウザーでアプリを更新します。
+1. **Ctrl**+**S** を押して変更を保存し、**F5** を押して Web ブラウザーでプロジェクトを開きます。
 
 1. Web サイトの上部で **[About]** を選択し、変更を確認します。
 
