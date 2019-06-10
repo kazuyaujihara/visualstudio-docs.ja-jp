@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811539"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402030"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化して使用する
 
@@ -64,19 +64,19 @@ Visual Studio サブスクリプションのテクニカル サポート特典�
 
 #### <a name="submitting-an-incident-online"></a>オンラインでのインシデントの送信
 
-インシデントをオンラインで送信するときに、まずサインインが求められます。 ドロップダウン リストを使用して、ヘルプが必要な製品を選択します。 たとえば、Visual Studio Enterprise 2017 のインシデントを送信するには、**[開発者ツール]** ファミリを選択してから、**[Visual Studio 2017]** を製品として選び、**[Visual Studio Enterprise 2017]** をバージョンとして選びます。
+インシデントをオンラインで送信するときに、まずサインインが求められます。 ドロップダウン リストを使用して、ヘルプが必要な製品を選択します。 たとえば、Visual Studio Enterprise 2017 のインシデントを送信するには、 **[開発者ツール]** ファミリを選択してから、 **[Visual Studio 2017]** を製品として選び、 **[Visual Studio Enterprise 2017]** をバージョンとして選びます。
 
-1. サポートが必要な製品を選択したら、**[次へ]** をクリックします。
+1. サポートが必要な製品を選択したら、 **[次へ]** をクリックします。
 
    > [!div class="mx-imgBorder"]
    > ![テクニカル サポート特典のインシデント送信手順 1 - 製品](_img/vs-tech-support/vs-tech-support-step1.png)
 
-2. 問題点を説明し、**[次へ]** をクリックします。
+2. 問題点を説明し、 **[次へ]** をクリックします。
 
    > [!div class="mx-imgBorder"]
    > ![テクニカル サポート特典のインシデント送信手順 2 - 問題](_img/vs-tech-support/vs-tech-support-step2.png)
 
-3. [サポート プラン] ページで、**[Add or purchase a support plan]\(サポート プランの追加または購入\)** まで下にスクロールして、右側にある矢印を使用して展開し、**[コントラクトの追加]** をクリックします。
+3. [サポート プラン] ページで、 **[Add or purchase a support plan]\(サポート プランの追加または購入\)** まで下にスクロールして、右側にある矢印を使用して展開し、 **[コントラクトの追加]** をクリックします。
 
    > [!div class="mx-imgBorder"]
    > ![テクニカル サポート特典のインシデント送信 - コントラクトの追加](_img/vs-tech-support/vs-tech-support-add-contract.png)
@@ -91,6 +91,9 @@ Visual Studio サブスクリプションのテクニカル サポート特典�
    > [!div class="mx-imgBorder"]
    > ![テクニカル サポート特典のインシデント送信 - プランの選択](_img/vs-tech-support/vs-tech-support-choose-plan.png)
 
+   > [!NOTE]
+   > サポート プランが表示されない場合は、前のページに戻り、 **[次へ]** を再度クリックします。  それでもサポート プランを表示できない場合は、サポート問題のテキストをクリップボードにコピーし、ページを更新して、サポート問題を再作成します。
+
 6. 残りの手順 (重要度、連絡先情報、確認) を完了します。   インシデントを送信すると、インシデントが正常に送信されたことを示す確認メッセージが表示され、ケースにファイルをアップロードすることができます。 サポート担当者がインシデントに割り当てられます。担当者はユーザーが選択した連絡方法でユーザーに連絡し、問題の解決に当たります。
 
 #### <a name="submit-an-incident-by-phone"></a>電話でインシデントを送信する
@@ -103,7 +106,7 @@ Azure に関連する問題がある場合に Visual Studio サブスクリプ�
 
 1. [https://portal.azure.com](https://portal.azure.com) にアクセスしてサインインします。
 2. 左側のナビゲーションで **[ヘルプとサポート]** をクリックします。
-3. [サポート] で、**[新しいサポート要求]** をクリックします。
+3. [サポート] で、 **[新しいサポート要求]** をクリックします。
 
 ## <a name="eligibility"></a>特典を受ける条件
 
