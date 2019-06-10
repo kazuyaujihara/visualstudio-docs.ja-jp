@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704654"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401734"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>チュートリアル: マネージド コードの単体テストを作成し、実行する
 
@@ -365,9 +365,9 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 
 ### <a name="continue-the-analysis"></a>分析を継続する
 
-一方で、最後の 2 つのテスト メソッドには問題もあります。 いずれかのテストが実行されたときに、テスト対象のメソッドのどの条件が例外をスローするかを特定することはできません。 負の引き落とし金額または残高よりも大きい金額の 2 つの条件を区別するいくつかの方法を利用すると、テストの信頼が高くなります。
+テスト対象のメソッドは、さらに改善できます。 現在の実装では、テスト中にスローされた例外を招いた条件 (`amount > m_balance` または `amount < 0`) を把握する方法はありません。 メソッドのどこかで `ArgumentOutOfRangeException` がスローされたことしかわかりません。 メソッドでその引数が正しくサニティ チェックされていることを確信できるように、`BankAccount.Debit` 内の例外をスローさせた条件 (`amount > m_balance` または `amount < 0`) がわかる方がよいと考えます。
 
-テスト対象のメソッドをもう一度確認すると、引数の名前をパラメーターとして使用する `ArgumentOutOfRangeException` コンストラクターが両方の条件ステートメントで使用されていることがわかります。
+テスト対象のメソッド (`BankAccount.Debit`) をもう一度確認すると、引数の名前をパラメーターとして使用する `ArgumentOutOfRangeException` コンストラクターが両方の条件ステートメントで使用されていることがわかります。
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");

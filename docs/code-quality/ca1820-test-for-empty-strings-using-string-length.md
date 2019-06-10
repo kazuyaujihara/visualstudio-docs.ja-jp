@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae65ad9c1ad740b3ea39dd97d7430804292df057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb5160ef663375ee3dd4b45797e8f4536acdf793
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796758"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66744649"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820:文字列の長さを使用して空の文字列をテストします
 
@@ -38,11 +38,11 @@ ms.locfileid: "62796758"
 
 使用して文字列を比較する、<xref:System.String.Length%2A?displayProperty=nameWithType>プロパティまたは<xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType>メソッドが使用するよりも高速<xref:System.Object.Equals%2A>します。 これは、ため<xref:System.Object.Equals%2A>いずれかのよりもはるかに多くの MSIL 命令を実行<xref:System.String.IsNullOrEmpty%2A>または取得するために実行する命令の数、<xref:System.String.Length%2A>プロパティ値し、比較して 0。
 
-Null 文字列は、<xref:System.Object.Equals%2A>と<xref:System.String.Length%2A>= = 0 の動作が異なる。 値を取得しようとする場合、<xref:System.String.Length%2A>プロパティは、null 文字列を共通言語ランタイムがスローされます、<xref:System.NullReferenceException?displayProperty=fullName>します。 Null 文字列と空の文字列の比較を実行する場合、共通言語ランタイムは、例外はスローされませんし、返します`false`します。 Null をテストする 2 つの方法の相対的なパフォーマンスが大幅に影響しません。 .NET Framework 2.0 以降を対象とするときに使用して、<xref:System.String.IsNullOrEmpty%2A>メソッド。 それ以外の場合、使用、 <xref:System.String.Length%2A> 0 比較可能な限り = =。
+Null 文字列は、<xref:System.Object.Equals%2A>と`<string>.Length == 0`動作が異なる。 値を取得しようとする場合、<xref:System.String.Length%2A>プロパティは、null 文字列を共通言語ランタイムがスローされます、<xref:System.NullReferenceException?displayProperty=fullName>します。 Null 文字列と空の文字列の比較を実行する場合、共通言語ランタイムは、例外はスローされませんし、返します`false`します。 Null をテストする 2 つの方法の相対的なパフォーマンスが大幅に影響しません。 .NET Framework 2.0 以降を対象とするときに使用して、<xref:System.String.IsNullOrEmpty%2A>メソッド。 それ以外の場合、使用、 <xref:System.String.Length%2A> 0 比較可能な限り = =。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を解決するには、使用する比較を変更、<xref:System.String.Length%2A>プロパティ、null 文字列をテストします。 .NET Framework 2.0 以降を対象とする場合は、使用、<xref:System.String.IsNullOrEmpty%2A>メソッド。
+この規則違反を解決するには、使用する比較を変更、<xref:System.String.IsNullOrEmpty%2A>メソッド。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 
