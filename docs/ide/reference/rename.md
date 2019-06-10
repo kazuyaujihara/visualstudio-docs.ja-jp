@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48e45373c41358ba3e9c2d70222ace07cdf1b59e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b18f5763d68487e7642f5632c05516d2f1bd9e2
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812105"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500936"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>コード シンボルの名前の変更のリファクタリング
 
@@ -37,11 +37,11 @@ ms.locfileid: "62812105"
 
 1. 名前を変更する項目を強調表示するか、項目の内側にテキスト カーソルを置きます。
 
-   - C#: 
+   - C#:
 
        ![強調表示されたコード - C#](media/rename-highlight-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
        ![強調表示されたコード - Visual Basic](media/rename-highlight-vb.png)
 
@@ -55,23 +55,26 @@ ms.locfileid: "62812105"
 
 3. 新しい名前を入力して、項目の名前を変更します。
 
-   - C#: 
+   - C#:
 
       ![名前の変更のアニメーション - C#](media/rename-animated-cs.gif)
 
-   - Visual Basic: 
+   - Visual Basic:
 
       ![名前の変更 - VB](media/rename-rename-vb.png)
 
    > [!TIP]
    > この新しい名前を使うように、コメントや他の文字列も更新できます。また、エディターの右上に表示される **[名前の変更]** ボックスのチェック ボックスを使って、保存前に[変更をプレビューする](../../ide/preview-changes.md)こともできます。
 
-4. 変更を確認した後は、**[適用]** ボタンを選ぶか、**Enter** キーを押すと、変更がコミットされます。
+4. 変更を確認した後は、 **[適用]** ボタンを選ぶか、**Enter** キーを押すと、変更がコミットされます。
 
-> [!NOTE]
-> 競合が発生する可能性がある既存の名前を使うと、**[名前の変更]** ボックスに警告が表示されます。
->
-> ![名前変更の競合](media/rename-conflict-cs.png)
+## <a name="remarks"></a>解説
+
+- 競合が発生する可能性がある既存の名前を使うと、 **[名前の変更]** ボックスに警告が表示されます。
+
+   ![名前変更の競合](media/rename-conflict-cs.png)
+
+- シンボルの名前を変更する別の方法は、エディターでその名前を変更することです。 次に、シンボル名にカーソルを置き、**Ctrl**+ **を押します。** または、表示された電球アイコン メニューを展開して、 **[\<古い名前> を \<新しい名前> に変更]** を選択します。
 
 ## <a name="see-also"></a>関連項目
 
