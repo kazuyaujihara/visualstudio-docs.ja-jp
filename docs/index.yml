@@ -8,6 +8,12 @@ metadata:
   description: Visual Studio を使って、アプリケーション、サービス、ツールを、任意の言語で、任意のプラットフォームやデバイス向けに開発する方法について説明します。
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
+  ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
+  ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 06/07/2019
+  ms.locfileid: "66462864"
 highlightedContent:
   items:
   - title: セットアップとインストール
@@ -173,9 +179,3 @@ additionalContent:
 
         [.NET Core クロスプラットフォームの開発](/dotnet/core/)
   footer: '[ブログ](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [問題の報告](ide/talk-to-us.md) - [開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/8/index.html)'
-ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66462864"
