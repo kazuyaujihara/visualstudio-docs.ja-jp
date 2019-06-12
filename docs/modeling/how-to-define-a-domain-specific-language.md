@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6c4c55461960e48a7ecce74dd9f88e371853e705
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445191"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820987"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>方法: ドメイン固有言語を定義する
 ドメイン固有言語 (DSL) を定義するには、テンプレートから Visual Studio ソリューションを作成します。 ソリューションの主要な機能は DSL 定義図です。これは DslDefinition.dsl に保存されています。 DSL 定義は、DSL のクラスとシェイプを定義します。 これらの要素を変更および追加した後で、プログラム コードを追加して DSL を詳細にカスタマイズできます。
@@ -99,7 +99,7 @@ DSL を定義するには、以下のコンポーネントをインストール�
 
  作成したソリューションを実行する場合、**最小言語**テンプレート、Visual Studio の実験的な例を次のようになります。
 
- ![](../modeling/media/dsl_min.png)
+ ![Visual Studio でのドメイン固有言語サンプル ツリー](../modeling/media/dsl_min.png)
 
  ツールを試してみます。 要素を作成して接続します。
 

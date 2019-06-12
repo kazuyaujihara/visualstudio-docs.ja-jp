@@ -583,88 +583,13 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: XML ファイルと XSLT ファイルの操作
           href: xml-tools/xml-tools-in-visual-studio.md
-        - name: 国際対応のアプリの開発
-          displayName: Globalization localization world-ready
-          href: ide/globalizing-and-localizing-applications.md
-        - name: 双方向言語
-          href: ide/creating-applications-in-bi-directional-languages.md
-        - name: 追加のチュートリアル
+        - name: インクルーシブなアプリの開発
           items:
-            - name: 'C# または Visual Basic を使用した WPF アプリの作成'
-              href: /visualstudio/get-started/csharp/tutorial-wpf
-            - name: Windows フォーム アプリケーションのチュートリアル
-              items:
-                - name: 'チュートリアル 1: ピクチャ ビューアーの作成 (C#)'
-                  items:
-                    - name: 概要
-                      displayName: Tutorial 1 Picture viewer
-                      href: ide/tutorial-1-create-a-picture-viewer.md
-                    - name: '手順 1: Windows フォーム アプリケーション プロジェクトを作成する'
-                      href: ide/step-1-create-a-windows-forms-application-project.md
-                    - name: '手順 2: プログラムを実行する'
-                      href: ide/step-2-run-your-program.md
-                    - name: '手順 3: フォームのプロパティを設定する'
-                      href: ide/step-3-set-your-form-properties.md
-                    - name: '手順 4: TableLayoutPanel コントロールを使用してフォームのレイアウトを設定する'
-                      href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-                    - name: '手順 5: フォームにコントロールを追加する'
-                      href: ide/step-5-add-controls-to-your-form.md
-                    - name: '手順 6: ボタン コントロールの名前を設定する'
-                      href: ide/step-6-name-your-button-controls.md
-                    - name: '手順 7: フォームにダイアログ コンポーネントを追加する'
-                      href: ide/step-7-add-dialog-components-to-your-form.md
-                    - name: '手順 8: [Show a picture] ボタンのイベント ハンドラーのコードを記述する'
-                      href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-                    - name: '手順 9: コードのレビュー、コメント追加、およびテスト'
-                      href: ide/step-9-review-comment-and-test-your-code.md
-                    - name: '手順 10: その他のボタンとチェック ボックスのコードを記述する'
-                      href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-                    - name: '手順 11: プログラムを実行し、その他の機能を試す'
-                      href: ide/step-11-run-your-program-and-try-other-features.md
-                - name: 'チュートリアル 2: 制限時間ありの計算クイズの作成 (C#)'
-                  items:
-                    - name: 概要
-                      displayName: Tutorial 2 Timed math quiz
-                      href: ide/tutorial-2-create-a-timed-math-quiz.md
-                    - name: '手順 1: プロジェクトを作成し、フォームにラベルを追加する'
-                      href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-                    - name: '手順 2: ランダムな加算問題を作成する'
-                      href: ide/step-2-create-a-random-addition-problem.md
-                    - name: '手順 3: カウントダウン タイマーを追加する'
-                      href: ide/step-3-add-a-countdown-timer.md
-                    - name: '手順 4: CheckTheAnswer() メソッドを追加する'
-                      href: ide/step-4-add-the-checktheanswer-parens-method.md
-                    - name: '手順 5: NumericUpDown コントロールの Enter イベント ハンドラーを追加する'
-                      href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-                    - name: '手順 6: 減算問題を追加する'
-                      href: ide/step-6-add-a-subtraction-problem.md
-                    - name: '手順 7: 乗算問題と除算問題を追加する'
-                      href: ide/step-7-add-multiplication-and-division-problems.md
-                    - name: '手順 8: クイズをカスタマイズする'
-                      href: ide/step-8-customize-the-quiz.md
-                - name: 'チュートリアル 3: 絵合わせゲームの作成 (C#)'
-                  items:
-                    - name: 概要
-                      displayName: Tutorial 3 Matching game
-                      href: ide/tutorial-3-create-a-matching-game.md
-                    - name: '手順 1: プロジェクトを作成し、フォームにテーブルを追加する'
-                      href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-                    - name: '手順 2: Random オブジェクトおよびアイコンのリストを追加する'
-                      href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-                    - name: '手順 3: 各ラベルにランダムなアイコンを割り当てる'
-                      href: ide/step-3-assign-a-random-icon-to-each-label.md
-                    - name: '手順 4: 各ラベルに Click イベント ハンドラーを追加する'
-                      href: ide/step-4-add-a-click-event-handler-to-each-label.md
-                    - name: '手順 5: ラベルの参照を追加する'
-                      href: ide/step-5-add-label-references.md
-                    - name: '手順 6: タイマーを追加する'
-                      href: ide/step-6-add-a-timer.md
-                    - name: '手順 7: ペアの表示を維持する'
-                      href: ide/step-7-keep-pairs-visible.md
-                    - name: '手順 8: プレーヤーが勝利したかどうかを確認するメソッドを追加する'
-                      href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-                    - name: '手順 9: その他の機能を試す'
-                      href: ide/step-9-try-other-features.md
+            - name: アクセシビリティ対応アプリの設計
+              href: ide/reference/resources-for-designing-accessible-applications.md
+            - name: 国際対応のアプリの設計
+              displayName: Globalization localization world-ready
+              href: ide/globalizing-and-localizing-applications.md
     - name: データへのアクセス...
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
@@ -799,8 +724,6 @@
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: マイクロソフトのアクセシビリティ製品とサービス
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
-        - name: アクセシビリティ対応アプリのデザイン リソース
-          href: ide/reference/resources-for-designing-accessible-applications.md
 - name: 関連項目
   items:
     - name: 一般的なユーザー インターフェイス要素
@@ -1170,6 +1093,8 @@
           href: ide/user-permissions-and-visual-studio.md
         - name: Windows 情報保護 (WIP)
           href: ide/exempt-visual-studio-from-wip.md
+    - name: 双方向言語の入力
+      href: ide/use-bidirectional-languages.md
     - name: Microsoft ヘルプ ビューアー
       items:
         - name: 概要

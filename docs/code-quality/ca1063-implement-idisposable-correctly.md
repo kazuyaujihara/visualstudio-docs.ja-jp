@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842009"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820623"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:IDisposable を正しく実装します
 
@@ -52,7 +52,7 @@ ms.locfileid: "65842009"
 
 これらのパターンのいずれかの違反が警告 CA1063 をトリガーします。
 
-宣言および実装しているすべての封印されていない型、<xref:System.IDisposable>インターフェイスを提供する必要があります独自`protected virtual void Dispose(bool)`メソッド。 `Dispose()` 呼び出す必要があります`Dipose(true)`、ファイナライザーを呼び出す必要がありますと`Dispose(false)`します。 封印されていない型宣言および実装を作成するかどうか、<xref:System.IDisposable>インターフェイスが定義する必要があります`Dispose(bool)`呼び出すようにします。 詳細については、次を参照してください。 [(.NET ガイド) のアンマネージ リソースをクリーンアップする](/dotnet/standard/garbage-collection/unmanaged)と[Dispose パターン](/dotnet/standard/design-guidelines/dispose-pattern)します。
+宣言および実装しているすべての封印されていない型、<xref:System.IDisposable>インターフェイスを提供する必要があります独自`protected virtual void Dispose(bool)`メソッド。 `Dispose()` 呼び出す必要があります`Dispose(true)`、ファイナライザーを呼び出す必要がありますと`Dispose(false)`します。 封印されていない型宣言および実装を作成するかどうか、<xref:System.IDisposable>インターフェイスが定義する必要があります`Dispose(bool)`呼び出すようにします。 詳細については、次を参照してください。 [(.NET ガイド) のアンマネージ リソースをクリーンアップする](/dotnet/standard/garbage-collection/unmanaged)と[Dispose パターン](/dotnet/standard/design-guidelines/dispose-pattern)します。
 
 既定では、このルールのみが検索に、外部から参照の種類が、これは[構成可能な](#configurability)します。
 
