@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fef5f63d8c3fd843ed6f92a313102a9c9879003f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582606"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715373"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense の C++ プロジェクトを構成する
 
@@ -34,19 +34,17 @@ IntelliSense では、最大 1000 個のエラーが生成されます。 ソー
 
 ### <a name="msbuild-projects"></a>MSBuild プロジェクト
 
-Visual Studio IDE の外部でビルドを実行し、ビルドは成功したが IntelliSense が正しくない場合、コマンドラインが 1 つまたは複数の構成のプロジェクト設定と同期していない可能性があります。 **ソリューション エクスプローラー**でプロジェクト ノードを右クリックして、現在の構成とプラットフォームに対してすべての **#include** パスが正しいことを確認します。 すべての構成とプラットフォームでパスが同一の場合は、**[すべての構成]** と **[すべてのプラットフォーム]** を選択し、パスが正しいことを確認します。
+Visual Studio IDE の外部でビルドを実行し、ビルドは成功したが IntelliSense が正しくない場合、コマンドラインが 1 つまたは複数の構成のプロジェクト設定と同期していない可能性があります。 **ソリューション エクスプローラー**でプロジェクト ノードを右クリックして、現在の構成とプラットフォームに対してすべての **#include** パスが正しいことを確認します。 すべての構成とプラットフォームでパスが同一の場合は、 **[すべての構成]** と **[すべてのプラットフォーム]** を選択し、パスが正しいことを確認します。
 
 ![VC++ インクルード ディレクトリ](media/vcpp-intellisense-include-paths.png)
 
- **VC_IncludePath** などのビルド マクロの現在の値を表示するには、[インクルード ディレクトリ] 行を選択し、右側のドロップダウンをクリックします。 次に、**[\<編集>]** を選択し、**[マクロ]** ボタンをクリックします。
+ **VC_IncludePath** などのビルド マクロの現在の値を表示するには、[インクルード ディレクトリ] 行を選択し、右側のドロップダウンをクリックします。 次に、 **[\<編集>]** を選択し、 **[マクロ]** ボタンをクリックします。
 
 ### <a name="makefile-projects"></a>メイクファイル プロジェクト
 
-NMake プロジェクト テンプレートに基づくメイクファイル プロジェクトの場合は、左側のウィンドウで **[NMake]** を選択してから、**[IntelliSense]** カテゴリの下で **[インクルードの検索パス]** を選択します。
+NMake プロジェクト テンプレートに基づくメイクファイル プロジェクトの場合は、左側のウィンドウで **[NMake]** を選択してから、 **[IntelliSense]** カテゴリの下で **[インクルードの検索パス]** を選択します。
 
 ![メイクファイル プロジェクトのインクルード パス](media/vcpp-intellisense-makefile-include-paths.png)
-
-詳細については、「[方法 :メイクファイル プロジェクトで IntelliSense を使用可能にする](/cpp/ide/how-to-enable-intellisense-for-makefile-projects)」を参照してください。
 
 ### <a name="open-folder-projects"></a>"フォルダーを開く" プロジェクト
 
@@ -72,11 +70,11 @@ Visual Studio では、この問題を明示する 2 つの一般的な方法が
 
 この種の問題を解決するには、**cpp.hint** という名前のファイルをソリューション ディレクトリのルートに追加します。 詳細については、「[ヒント ファイル](/cpp/build/reference/hint-files)」を参照してください。
 
-タグ パーサーのエラーは、**[エラー一覧]** ウィンドウに表示されます。
+タグ パーサーのエラーは、 **[エラー一覧]** ウィンドウに表示されます。
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>診断ログでプロジェクト設定を検証する
 
-IntelliSense コンパイラが、インクルード パスとプリプロセッサ マクロを含む正しいコンパイラ オプションを使用しているかどうかを確認するには、IntelliSense コマンド ラインの診断ログ (**[ツール] > [オプション] > [テキスト エディター] > [C/C++] > [詳細設定]> [診断ログ]**) をオンにします。 **[ログの有効化]** を True、**[ログ レベル]** を 5 (最も詳細)、**[ログ フィルター]** を 8 (IntelliSense ログ) に設定します。
+IntelliSense コンパイラが、インクルード パスとプリプロセッサ マクロを含む正しいコンパイラ オプションを使用しているかどうかを確認するには、IntelliSense コマンド ラインの診断ログ ( **[ツール] > [オプション] > [テキスト エディター] > [C/C++] > [詳細設定]> [診断ログ]** ) をオンにします。 **[ログの有効化]** を True、 **[ログ レベル]** を 5 (最も詳細)、 **[ログ フィルター]** を 8 (IntelliSense ログ) に設定します。
 
 出力ウィンドウに、IntelliSense コンパイラに渡されるコマンドラインが表示されます。 次に出力例を示します。
 
@@ -95,7 +93,7 @@ IntelliSense コンパイラが、インクルード パスとプリプロセッ
  /Yustdafx.h
 ```
 
-この情報は、IntelliSense が不正確な情報を提供している理由を理解するのに役立ちます。 たとえば、プロジェクトのインクルード ディレクトリに **$(MyVariable)\Include** が含まれていて、診断ログにインクルード パスとして **/I\Include** が表示される場合、**$(MyVariable)** は評価されず、最終的なインクルード パスから削除されたことを意味します。
+この情報は、IntelliSense が不正確な情報を提供している理由を理解するのに役立ちます。 たとえば、プロジェクトのインクルード ディレクトリに **$(MyVariable)\Include** が含まれていて、診断ログにインクルード パスとして **/I\Include** が表示される場合、 **$(MyVariable)** は評価されず、最終的なインクルード パスから削除されたことを意味します。
 
 ## <a name="about-the-intellisense-build"></a>IntelliSense のビルドについて
 
@@ -105,7 +103,7 @@ Visual Studio では、専用の C++ コンパイラを使用して、すべて�
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>IntelliSense のビルド エラーのトラブルシューティング
 
-IntelliSense のビルドでは、バイナリは作成されませんが、それでもエラーが発生する可能性があります。 エラーの考えられる原因の 1 つは、.props や .targets のカスタム ファイルです。 Visual Studio 2017 バージョン 15.6 以降では、IntelliSense 専用のビルド エラーが出力ウィンドウに記録されます。 これらを表示するには、**[出力元の表示]** を **[ソリューション]** に設定します。
+IntelliSense のビルドでは、バイナリは作成されませんが、それでもエラーが発生する可能性があります。 エラーの考えられる原因の 1 つは、.props や .targets のカスタム ファイルです。 Visual Studio 2017 バージョン 15.6 以降では、IntelliSense 専用のビルド エラーが出力ウィンドウに記録されます。 これらを表示するには、 **[出力元の表示]** を **[ソリューション]** に設定します。
 
 ![ソリューション エラーの出力ウィンドウ](media/vcpp-intellisense-output-window.png)
 

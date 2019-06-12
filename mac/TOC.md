@@ -71,7 +71,8 @@
 ## [使用可能なワークロード](workloads.md)
 ## ASP.NET Core
 ### [.NET Core サポート](net-core-support.md)
-### [初めての ASP.NET Core アプリのビルド](asp-net-core.md)
+### [ASP.NET Core の概要](asp-net-core.md)
+### [Visual Studio for Mac での ASP.NET Core アプリケーションのビルド](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript および TypeScript](javascript.md)
 ## Azure
@@ -82,6 +83,7 @@
 ## Unity によるゲーム開発
 ### [Unity によるゲーム開発](unity-tools.md)
 ### [セットアップ](setup-vsmac-tools-unity.md)
+### [Unity の概要](unity-walkthrough.md)
 ### [Unity ツールの使用](using-vsmac-tools-unity.md)
 ### [Unity で .NET 4.x を使用する](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [変更ログ](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)

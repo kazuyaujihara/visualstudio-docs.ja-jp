@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0fda2363ec63572f29c6687cc10ee9a7ee06c76
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: f9dce876b477dfb802b9cf64214af2ca1cec6a4e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805049"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715358"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>方法: ビルド出力ディレクトリを変更する
 
@@ -24,13 +24,13 @@ ms.locfileid: "65805049"
 
 ## <a name="change-the-build-output-directory"></a>ビルド出力ディレクトリを変更する
 
-1. プロジェクトのプロパティ ページを開くには、**ソリューション エクスプローラー**でプロジェクト ノードを右クリックし、**[プロパティ]** を選択します。
+1. プロジェクトのプロパティ ページを開くには、**ソリューション エクスプローラー**でプロジェクト ノードを右クリックし、 **[プロパティ]** を選択します。
 
 2. プロジェクトの種類に基づいてタブを選択します。
 
-   - C# の場合、**[ビルド]** タブを選択します。
-   - Visual Basic の場合、**[コンパイル]** タブを選択します。
-   - C++ または JavaScript の場合、**[全般]** タブを選択します。
+   - C# の場合、 **[ビルド]** タブを選択します。
+   - Visual Basic の場合、 **[コンパイル]** タブを選択します。
+   - C++ または JavaScript の場合、 **[全般]** タブを選択します。
 
 3. 上部にある構成のドロップダウンで、出力ファイルの場所を変更する構成を選択します (**デバッグ**、**リリース**、または**すべての構成**)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "65805049"
    - Visual Basic プロジェクトの**ビルド出力パス**
    - Visual C++ プロジェクトの**出力ディレクトリ**
 
-   出力の生成先とするパスを入力するか (ルート プロジェクト ディレクトリの絶対パスまたは相対パス)、**[参照]** を選択し、そのフォルダーを代わりに参照します。
+   出力の生成先とするパスを入力するか (ルート プロジェクト ディレクトリの絶対パスまたは相対パス)、 **[参照]** を選択し、そのフォルダーを代わりに参照します。
 
    ![Visual Studio C# プロジェクトの出力パス プロパティ](media/output-path.png)
 
@@ -52,5 +52,5 @@ ms.locfileid: "65805049"
 ## <a name="see-also"></a>関連項目
 
 - [[ビルド] ページ (プロジェクト デザイナー) (C#)](../ide/reference/build-page-project-designer-csharp.md)
-- [[全般] プロパティ ページ (プロジェクト)](/cpp/ide/general-property-page-project)
+- [[全般] プロパティ ページ (プロジェクト)](/cpp/build/reference/general-property-page-project)
 - [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

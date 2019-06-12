@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 085e2fe029daf246f6883e6856ddff6a9bacccdc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b258b456aa614c851be138c017b3378cc13984cc
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790108"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715377"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>方法:ドキュメント生成のための XML コメントを挿入する
 
@@ -24,7 +24,7 @@ Visual Studio では、クラスやメソッドなどのコード要素を文書
 コンパイラによって生成された XML ファイルは、.NET アセンブリと共に配布できます。これにより、Visual Studio や他の IDE で、IntelliSense を使って型やメンバーに関する概要情報を表示できます。 さらに、[DocFX](https://dotnet.github.io/docfx/) や [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) のようなツールを使用して XML ファイルを実行し、API リファレンスの Web サイトを生成することができます。
 
 > [!NOTE]
-> XML ドキュメントのコメントを自動的に挿入する **[コメントの挿入]** コマンドは、[C#](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) と [Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation) で使うことができます。 ただし、[C++ ファイルに XML ドキュメントのコメント](/cpp/ide/xml-documentation-visual-cpp)を手動で挿入し、コンパイル時に XML ドキュメント ファイルを生成することもできます。
+> XML ドキュメントのコメントを自動的に挿入する **[コメントの挿入]** コマンドは、[C#](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) と [Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation) で使うことができます。 ただし、[C++ ファイルに XML ドキュメントのコメント](/cpp/build/reference/xml-documentation-visual-cpp)を手動で挿入し、コンパイル時に XML ドキュメント ファイルを生成することもできます。
 
 ## <a name="to-insert-xml-comments-for-a-code-element"></a>コード要素の XML コメントを挿入するには
 
@@ -34,11 +34,11 @@ Visual Studio では、クラスやメソッドなどのコード要素を文書
 
    - C# では「`///`」と入力し、Visual Basic では「`'''`」と入力します
 
-   - **[編集]** メニューから、**[IntelliSense]** > **[コメントの挿入]** の順に選択します
+   - **[編集]** メニューから、 **[IntelliSense]**  >  **[コメントの挿入]** の順に選択します
 
-   - コード要素の前面またはすぐ上に表示される右クリック メニューまたはコンテキスト メニューから、**[スニペット]** > **[コメントの挿入]** の順に選択します
+   - コード要素の前面またはすぐ上に表示される右クリック メニューまたはコンテキスト メニューから、 **[スニペット]**  >  **[コメントの挿入]** の順に選択します
 
-   すぐに、XML テンプレートがコード要素の上に生成されます。 たとえば、メソッドのコメントを生成すると、**\<summary\>** 要素、各パラメーターの **\<param\>** 要素、および戻り値を文書化するための **\<returns\>** 要素が生成されます。
+   すぐに、XML テンプレートがコード要素の上に生成されます。 たとえば、メソッドのコメントを生成すると、 **\<summary\>** 要素、各パラメーターの **\<param\>** 要素、および戻り値を文書化するための **\<returns\>** 要素が生成されます。
 
    ![XML コメント テンプレート - C#](media/doc-preview-cs.png)
 
@@ -49,7 +49,7 @@ Visual Studio では、クラスやメソッドなどのコード要素を文書
    ![完了したコメント](media/doc-result-cs.png)
 
 > [!NOTE]
-> `///` (C#) または `'''` (Visual Basic) を入力した後で XML ドキュメントのコメントを切り替えるための[オプション](../../ide/reference/options-text-editor-csharp-advanced.md)があります。 メニュー バーから **[ツール]** > **[オプション]** の順に選択して、**[オプション]** ダイアログ ボックスを開きます。 次に、**[テキスト エディター]** > **[C#]** または **[Basic]** > **[詳細]** の順に移動します。 **[エディターのヘルプ]** セクションで、**[XML ドキュメントを生成する]** オプションを探します。
+> `///` (C#) または `'''` (Visual Basic) を入力した後で XML ドキュメントのコメントを切り替えるための[オプション](../../ide/reference/options-text-editor-csharp-advanced.md)があります。 メニュー バーから **[ツール]**  >  **[オプション]** の順に選択して、 **[オプション]** ダイアログ ボックスを開きます。 次に、 **[テキスト エディター]**  >  **[C#]** または **[Basic]**  >  **[詳細]** の順に移動します。 **[エディターのヘルプ]** セクションで、 **[XML ドキュメントを生成する]** オプションを探します。
 
 ## <a name="see-also"></a>関連項目
 
@@ -57,5 +57,5 @@ Visual Studio では、クラスやメソッドなどのコード要素を文書
 - [XML コメントによるコードの文書化 (C# ガイド)](/dotnet/csharp/codedoc)
 - [方法: XML ドキュメントを作成する (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [C++ のコメント](/cpp/cpp/comments-cpp)
-- [XML ドキュメント (C++)](/cpp/ide/xml-documentation-visual-cpp)
+- [XML ドキュメント (C++)](/cpp/build/reference/xml-documentation-visual-cpp)
 - [コード生成](../code-generation-in-visual-studio.md)

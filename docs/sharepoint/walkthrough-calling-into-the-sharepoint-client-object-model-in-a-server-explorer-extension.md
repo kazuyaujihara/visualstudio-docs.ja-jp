@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: サーバー エクスプ ローラー拡張機能での SharePoint クライアント オブジェクト モデルを呼び出す |Microsoft Docs'
+title: サーバー エクスプ ローラー:SharePoint 接続 ノードの拡張
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430458"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835942"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>チュートリアル: サーバー エクスプ ローラー拡張機能では、SharePoint クライアント オブジェクト モデルへの呼び出し
   このチュートリアルの拡張機能から SharePoint クライアント オブジェクト モデルを呼び出す方法、 **SharePoint 接続**ノード**サーバー エクスプ ローラー**します。 SharePoint クライアント オブジェクト モデルを使用する方法の詳細については、次を参照してください。[の SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)します。
@@ -64,7 +64,7 @@ ms.locfileid: "63430458"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を起動します。
 
-2. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+2. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 3. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual c#** または**Visual Basic**ノードを選び、**拡張**。
 
@@ -240,7 +240,7 @@ ms.locfileid: "63430458"
 
     2. **SharePoint 接続の追加** ダイアログ ボックスで、接続、および選択する SharePoint サイトの URL を入力、 **OK**ボタン。
 
-         開発用コンピューターに SharePoint サイトを指定する入力 **http://localhost**します。
+         開発用コンピューターに SharePoint サイトを指定する入力 **http://localhost** します。
 
 3. (これは、サイトの URL が表示されます) のサイト接続ノードを展開し、子サイトのノードを展開 (たとえば、**チーム サイト**)。
 

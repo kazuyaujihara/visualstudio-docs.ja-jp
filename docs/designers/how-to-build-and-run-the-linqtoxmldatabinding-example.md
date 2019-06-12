@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d53f8d08222eb35660f7a4454164d6b821a976d9
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897560"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714841"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>方法: LinqToXmlDataBinding という例をビルドして実行する
 
@@ -22,7 +22,9 @@ Visual Studio の詳細については、「[Visual Studio IDE の概要](../get
 
 ## <a name="create-the-project"></a>プロジェクトの作成
 
-1. Visual Studio を開き、**LinqToXmlDataBinding** という名前の C# **WPF アプリ**を作成します。 プロジェクトの対象は、.NET Framework 3.5 (またはそれ以降) にする必要があります。
+1. Visual Studio を開き、**LinqToXmlDataBinding** という名前の C# **WPF アプリ**を作成します。
+
+   プロジェクトの対象は、.NET Framework 3.5 (またはそれ以降) にする必要があります。
 
 1. 次の .NET アセンブリ用のプロジェクト参照がない場合は追加します。
 
@@ -54,7 +56,7 @@ LinqToXmlDataBinding プログラムを使用すると、ユーザーは、組�
 
 ### <a name="to-run-the-program-and-view-the-book-list"></a>プログラムを実行して書籍一覧を表示するには
 
-**F5** キー (**[デバッグ開始]**) または **Ctrl** キーを押しながら **F5** キー (**[デバッグなしで開始]**) を押して、LinqToXmlDataBinding を実行します。 **[WPF Data Binding using LINQ to XML]** というタイトルのプログラム ウィンドウが表示されます。
+**F5** キー ( **[デバッグ開始]** ) または **Ctrl** キーを押しながら **F5** キー ( **[デバッグなしで開始]** ) を押して、LinqToXmlDataBinding を実行します。 **[WPF Data Binding using LINQ to XML]** というタイトルのプログラム ウィンドウが表示されます。
 
 - UI の最上部に、書籍一覧を表す生の **XML** が表示されます。 この部分は WPF の <xref:System.Windows.Controls.TextBlock> コントロールを使って表示されており、マウスやキーボードで操作できません。
 
@@ -62,9 +64,9 @@ LinqToXmlDataBinding プログラムを使用すると、ユーザーは、組�
 
 ### <a name="to-add-and-delete-books-from-the-list"></a>一覧に対して書籍を追加および削除するには
 
-- 一覧に新しい書籍を追加するには、最後のセクションである **[Add New Book]** にある **[ID]** および **[Value]** の <xref:System.Windows.Controls.TextBox> コントロールに値を入力し、**[Add Book]** ボタンをクリックします。 書籍一覧と XML の両方に書籍が追加されます。 このプログラムでは入力値が検証されません。
+- 一覧に新しい書籍を追加するには、最後のセクションである **[Add New Book]** にある **[ID]** および **[Value]** の <xref:System.Windows.Controls.TextBox> コントロールに値を入力し、 **[Add Book]** ボタンをクリックします。 書籍一覧と XML の両方に書籍が追加されます。 このプログラムでは入力値が検証されません。
 
-- 一覧から既存の書籍を削除するには、**[Book List]** セクションで書籍を選択し、**[Remove Selected Book]** ボタンをクリックします。 書籍一覧および生の XML ソースの両方で書籍のエントリが削除されます。
+- 一覧から既存の書籍を削除するには、 **[Book List]** セクションで書籍を選択し、 **[Remove Selected Book]** ボタンをクリックします。 書籍一覧および生の XML ソースの両方で書籍のエントリが削除されます。
 
 ### <a name="to-edit-an-existing-book-entry"></a>既存の書籍エントリを編集するには
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9279257f238adf92ad560d2f2e1aa7f769905305
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3d5b1150c67eeb5d47741ed9331dcdc11a82582
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537399"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714949"
 ---
 # <a name="manage-project-and-solution-properties"></a>プロジェクトおよびソリューションのプロパティの管理
 
@@ -48,11 +48,11 @@ C++ プロジェクトおよび JavaScript プロジェクトには、プロジ�
 
 ![Visual C&#43;&#43; プロジェクトのプロパティ](../ide/media/vs2015_projprops_cpp.png)
 
-C++ プロジェクトのプロパティについては、[C++ プロジェクトのプロパティの操作](/cpp/ide/working-with-project-properties)に関するページを参照してください。 JavaScript のプロパティの詳細については、「[プロパティ ページ、JavaScript](../ide/reference/property-pages-javascript.md)」を参照してください。
+C++ プロジェクトのプロパティについては、[C++ プロジェクトのプロパティの操作](/cpp/build/working-with-project-properties)に関するページを参照してください。 JavaScript のプロパティの詳細については、「[プロパティ ページ、JavaScript](../ide/reference/property-pages-javascript.md)」を参照してください。
 
 ## <a name="solution-properties"></a>ソリューションのプロパティ
 
-ソリューションのプロパティにアクセスするには、**ソリューション エクスプローラー**でソリューション ノードを右クリックし、**[プロパティ]** を選択します。 このダイアログでは、**デバッグ** ビルドまたは**リリース** ビルド用にプロジェクト構成を設定し、**F5** キーを押した時点でのスタートアップ プロジェクトとなるプロジェクトを選択し、コード分析のオプションを設定します。
+ソリューションのプロパティにアクセスするには、**ソリューション エクスプローラー**でソリューション ノードを右クリックし、 **[プロパティ]** を選択します。 このダイアログでは、**デバッグ** ビルドまたは**リリース** ビルド用にプロジェクト構成を設定し、**F5** キーを押した時点でのスタートアップ プロジェクトとなるプロジェクトを選択し、コード分析のオプションを設定します。
 
 ## <a name="see-also"></a>関連項目
 
