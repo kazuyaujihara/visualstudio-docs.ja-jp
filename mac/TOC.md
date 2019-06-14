@@ -97,3 +97,6 @@
 ## [問題を報告する](report-a-problem.md)
 ## [トラブルシューティング : すべてのテンプレートが表示されない](troubleshooting-no-templates.md)
 ## [トラブルシューティング : アップデーターが情報の取得中にエラーを表示する](updater-troubleshooting.md)
+
+# [リリース ノート](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [リリース ノートのプレビュー](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
