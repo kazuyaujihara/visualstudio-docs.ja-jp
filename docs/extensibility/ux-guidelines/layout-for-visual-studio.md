@@ -3,17 +3,17 @@ title: Visual Studio のレイアウト |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e35cb321772354de29b7b8466b6136c96cabf98d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef763f3142f41e63effa1f76bb6bebdc95f0ee3a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798529"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335342"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio のレイアウト
 Visual Studio のダイアログ ボックスの大半は[ユーティリティ ダイアログのレイアウト](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)、そのに従って標準のダイアログ ボックスは、unthemed [Windows デスクトップ ダイアログのレイアウトの原則](/windows/desktop/uxguide/win-dialog-box)します。 Visual Studio の UI の更新を移動するとき、目立つのダイアログ ボックスの一部に製品を定義するとエクスペリエンスを確立する新しい設計になっています。 これら[テーマが適用されたダイアログのレイアウト](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)テーマの外観を与えます。
@@ -103,9 +103,9 @@ Visual Studio のダイアログ ボックスの大半は[ユーティリティ 
 #### <a name="BKMK_InteriorCommandButtons"></a> 内部コマンド ボタン
  複雑なダイアログは、内部のコントロールは独自関連なボタンは、ダイアログのコミット ボタンがある場所に影響する可能性があります。
 
-- 内部の垂直方向の配置 (列) ボタンを使用して **[ok]**/**キャンセル**は右下隅で水平方向に並びます。
+- 内部の垂直方向の配置 (列) ボタンを使用して **[ok]** /**キャンセル**は右下隅で水平方向に並びます。
 
-- 内部の水平方向の配置 (行) ボタンを使用して **[ok]**/**キャンセル**は右上隅にある垂直方向に並びます。 このような状況はまれです。
+- 内部の水平方向の配置 (行) ボタンを使用して **[ok]** /**キャンセル**は右上隅にある垂直方向に並びます。 このような状況はまれです。
 
 - 内部のボタンのサイズのサイズと一致する 75 x 23 ピクセルの標準ボタンのサイズをターゲットする必要があります**OK**/**キャンセル**ボタンの可能な場合。 ボタンのラベル、ボタンの標準ボタンのサイズを超える場合は、そのセット内の他のボタンはその幅のサイズと一致します。
 
@@ -135,7 +135,7 @@ Visual Studio のダイアログ ボックスの大半は[ユーティリティ 
 
 6. 既定のリンクには、アンダー スコアはあるありません。 ホバーと押された状態の色の変更とアンダー スコアがあります。
 
-7. コミット ボタン (など **[ok]**/**キャンセル**) 部分の右下隅に配置します。
+7. コミット ボタン (など **[ok]** /**キャンセル**) 部分の右下隅に配置します。
 
 ### <a name="themed-dialog-layout-examples"></a>テーマが適用されたダイアログのレイアウトの例
  ![テーマが適用されたダイアログのレイアウト](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 h_ThemedDialog")

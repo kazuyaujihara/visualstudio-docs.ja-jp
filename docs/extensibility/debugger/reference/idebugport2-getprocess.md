@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortSupplier
 ms.assetid: 3e2431b0-0e19-450d-8e1d-d7c314c8f872
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64d165fedf791e26cf291ed4b6255de81873953a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00579205a2e97d69f3a4305e09fac2146bb78d37
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871817"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326790"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 指定されたポートで実行されているプロセスを取得します。
@@ -38,14 +41,12 @@ int GetProcess( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ProcessId`
+## <a name="parameters"></a>パラメーター
+`ProcessId`\
+[in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)プロセス識別子を指定する構造体。
 
- [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)プロセス識別子を指定する構造体。
-
- `ppProcess`
-
- [out]返します、 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)プロセスを表すオブジェクト。
+`ppProcess`\
+[out]返します、 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)プロセスを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

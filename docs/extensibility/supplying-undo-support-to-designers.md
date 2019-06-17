@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87ddc0e21a3945ed522014b86174a578c04faa2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e243ccfc92c5e17dd25e6d77dede439daac08761
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62800115"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747728"
 ---
 # <a name="supply-undo-support-to-designers"></a>デザイナーに供給元に戻す機能
 
@@ -29,7 +29,7 @@ Visual Studio で実装されたほとんどのデザイナーがある「取り
 
 - 実装によって永続化を指定し、CodeDOM のサポート、<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>と<xref:System.ComponentModel.Design.IComponentChangeService>クラス。
 
-デザイナーを使用して記述の詳細については[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]を参照してください[デザイン時サポートの拡張](/previous-versions/37899azc(v=vs.140))します。
+.NET Framework を使用してデザイナーを記述の詳細については、次を参照してください。[デザイン時サポートの拡張](/previous-versions/37899azc(v=vs.140))します。
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]によって既定の元に戻すインフラストラクチャを提供します。
 
@@ -50,7 +50,7 @@ Visual Studio で作成されたすべてのデザイナーが自動および完
 ## <a name="when-to-use-explicit-designer-undo-support"></a>明示的なデザイナーの取り消しのサポートを使用する場合
  以外から提供されたいずれかのビューのアダプターと呼ばれる、グラフィカル ユーザー インターフェイスを使用している場合、デザイナーは、独自の元に戻す管理を指定する必要があります<xref:System.Windows.Forms.Control>します。
 
- この例は、web ベースのグラフィカル デザイン インターフェイスを備えた製品を作成可能性がありますがなく[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-ベースのグラフィカル インターフェイスです。
+ この例が、.NET Framework ベースのグラフィカル インターフェイスではなく、web ベースのグラフィカル デザイン インターフェイスで製品を作成する場合します。
 
  このような場合を使用して Visual Studio でこのビューのアダプターを登録する必要が 1 つは<xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>、元に戻すの明示的な管理を提供します。
 
@@ -59,7 +59,7 @@ Visual Studio で作成されたすべてのデザイナーが自動および完
 ## <a name="undo-support-features-of-the-designer"></a>デザイナーのサポート機能を元に戻す
  環境の SDK には、提供するために必要なインターフェイスの既定の実装を使用していないデザイナーで使用できるサポートを元に戻す<xref:System.Windows.Forms.Control>ベースのユーザー インターフェイスや標準の CodeDOM と永続化モデルのクラス。
 
- <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>クラスから派生、 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] <xref:System.ComponentModel.Design.UndoEngine>クラスの実装を使用して、<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>元に戻す操作を管理するクラス。
+ <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>クラスは、.NET Framework から派生<xref:System.ComponentModel.Design.UndoEngine>クラスの実装を使用して、<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>元に戻す操作を管理するクラス。
 
  Visual Studio には、デザイナーの元に戻すには、次の機能が用意されています。
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e596f2e970df487a31628ab0bd29051172b950e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89edba30a95d61268aebb26de8d973f6201c0fcf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796680"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714753"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210:アセンブリには有効な厳密な名前が必要です
 
@@ -64,11 +64,11 @@ ms.locfileid: "62796680"
 
 次の手順のいずれかを使用します。
 
-- .NET Framework SDK によって提供される、アセンブリ リンカー ツール (Al.exe) を使用します。
+- 使用して、[アセンブリ リンカー ツール (Al.exe)](/dotnet/framework/tools/al-exe-assembly-linker)します。
+
+- いずれも、.NET Framework 2.0 では、使用、`/keyfile`または`/keycontainer`コンパイラ オプション[/KEYFILE (指定のキーまたはキー ペア アセンブリに署名する)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)または[/KEYCONTAINER (アセンブリに署名するキー コンテナーの指定)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly)でリンカー オプションC++)。
 
 - .NET Framework v1.0 または v1.1 では、いずれかの操作を使用して、<xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>または<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>属性。
-
-- [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]、いずれかを使用して、`/keyfile`または`/keycontainer`コンパイラ オプション[/KEYFILE (指定のキーまたはキー ペア アセンブリに署名する)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)または[/KEYCONTAINER (アセンブリに署名するキー コンテナーの指定)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) C++ でリンカー オプション)。
 
 ### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>Visual Studio での厳密な名前でアセンブリに署名します。
 
@@ -90,7 +90,7 @@ ms.locfileid: "62796680"
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Visual Studio の外部の厳密な名前でアセンブリに署名します。
 
-.NET Framework SDK によって提供される厳密な名前ツール (Sn.exe) を使用します。 詳細については、「[Sn.exe (厳密名ツール)](/dotnet/framework/tools/sn-exe-strong-name-tool)」を参照してください。
+使用して、[厳密名ツール (Sn.exe)](/dotnet/framework/tools/sn-exe-strong-name-tool)します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 

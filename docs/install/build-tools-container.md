@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cd2294d3018aba3d2e7ff8a0c0737b32a05214c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce2fe1d40c0aeddf12a898919150a32c0c77d72e
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974255"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177631"
 ---
 # <a name="install-build-tools-into-a-container"></a>Build Tools をコンテナーにインストールする
 
@@ -58,18 +58,18 @@ Visual Studio Build Tools さらには Visual Studio 全体では、すべての
 
 **Windows 10 の場合**:
 
-1. システム トレイの [Docker for Windows アイコンを右クリック](https://docs.docker.com/docker-for-windows/#docker-settings)して、**[設定]** をクリックします。
+1. システム トレイの [Docker for Windows アイコンを右クリック](https://docs.docker.com/docker-for-windows/#docker-settings)して、 **[設定]** をクリックします。
 
 1. [[Daemon]\(デーモン\) セクションをクリック](https://docs.docker.com/docker-for-windows/#docker-daemon)します。
 
-1. [**[Basic]\(基本\)** ボタンを **[Advanced]\(詳細\)** に切り替え](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file)ます。
+1. [ **[Basic]\(基本\)** ボタンを **[Advanced]\(詳細\)** に切り替え](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file)ます。
 
-1. 次の JSON 配列プロパティを追加して、ディスク容量を 120 GB に増やします(Build Tools の拡大を見込んで十分に余裕がある量)。
+1. 次の JSON 配列プロパティを追加して、ディスク容量を 127 GB に増やします (Build Tools の拡大を見込んで十分に余裕がある量)。
 
    ```json
    {
      "storage-opts": [
-       "size=120GB"
+       "size=127G"
      ]
    }
    ```
@@ -83,10 +83,12 @@ Visual Studio Build Tools さらには Visual Studio 全体では、すべての
      "debug": true,
      "experimental": true,
      "storage-opts": [
-       "size=120GB"
+       "size=127G"
      ]
    }
    ```
+
+   構成オプションとヒントについて詳しくは、「[Docker Engine on Windows (Windows での Docker エンジン)](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon)」をご覧ください。
 
 1. **[適用]** をクリックします。
 
@@ -100,17 +102,17 @@ Visual Studio Build Tools さらには Visual Studio 全体では、すべての
 
 1. 管理者特権でのコマンド プロンプトで、"%ProgramData%\Docker\config\daemon.json" (または `dockerd --config-file` に対して指定したファイル) を編集します。
 
-1. 次の JSON 配列プロパティを追加して、ディスク容量を 120 GB に増やします(Build Tools の拡大を見込んで十分に余裕がある量)。
+1. 次の JSON 配列プロパティを追加して、ディスク容量を 127 GB に増やします (Build Tools の拡大を見込んで十分に余裕がある量)。
 
    ```json
    {
      "storage-opts": [
-       "size=120GB"
+       "size=120G"
      ]
    }
    ```
 
-   このプロパティは、既にあるプロパティに追加されます。
+   このプロパティは、既にあるプロパティに追加されます。 構成オプションとヒントについて詳しくは、「[Docker Engine on Windows (Windows での Docker エンジン)](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon)」をご覧ください。
  
 1. ファイルを保存して閉じます。
 
@@ -148,8 +150,8 @@ Visual Studio Build Tools さらには Visual Studio 全体では、すべての
    ```dockerfile
    # escape=`
 
-   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
-   FROM microsoft/dotnet-framework:4.7.1
+   # Use the latest Windows Server Core image with .NET Framework 4.7.2.
+   FROM mcr.microsoft.com/dotnet/framework/sdk:4.7.2-windowsservercore-ltsc2019
 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
@@ -175,11 +177,11 @@ Visual Studio Build Tools さらには Visual Studio 全体では、すべての
    ```
 
    > [!WARNING]
-   > microsoft/windowsservercore に直接基づくイメージの場合は、.NET Framework が正しくインストールされない可能性があり、インストール エラーは示されていません。 インストールが完了した後、マネージド コードが実行しない可能性があります。 代わりに、イメージを [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 以降に基づくようにします。 また、バージョン 4.7.1 以降のタグが付いたイメージでは、既定の `SHELL` として PowerShell が使用されている可能性があり、その場合 `RUN` および `ENTRYPOINT` 命令は失敗することに注意してください。
+   > 自分のイメージを microsoft/windowsservercore または mcr.microsoft.com/windows/servercore に直接基づくようにする場合 ([Microsoft によるコンテナー カタログのシンジケート](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/)に関するページを参照)、.NET Framework が正しくインストールされない可能性があり、インストール エラーは示されません。 インストールが完了した後、マネージド コードが実行しない可能性があります。 代わりに、イメージを [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 以降に基づくようにします。 また、バージョン 4.7.1 以降のタグが付いたイメージでは、既定の `SHELL` として PowerShell が使用されている可能性があり、その場合 `RUN` および `ENTRYPOINT` 命令は失敗することに注意してください。
    >
    > Visual Studio 2017 バージョン 15.8 以前 (すべての製品) は、mcr\.microsoft\.com\/windows\/servercore:1809 以降には適切にインストールされません。 エラーは表示されません。
    >
-   > 詳しくは、「[コンテナーの既知の問題](build-tools-container-issues.md)」をご覧ください。
+   > どのコンテナー OS バージョンがどのホスト OS バージョン上でサポートされているかについては「[Windows コンテナーのバージョンの互換性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)」を、既知の問題については「[コンテナーの既知の問題](build-tools-container-issues.md)」をご覧ください。
 
    ::: moniker-end
 
@@ -188,8 +190,8 @@ Visual Studio Build Tools さらには Visual Studio 全体では、すべての
    ```dockerfile
    # escape=`
 
-   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
-   FROM microsoft/dotnet-framework:4.7.1
+   # Use the latest Windows Server Core image with .NET Framework 4.8.
+   FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
@@ -217,7 +219,7 @@ Visual Studio Build Tools さらには Visual Studio 全体では、すべての
    > [!WARNING]
    > microsoft/windowsservercore に直接基づくイメージの場合は、.NET Framework が正しくインストールされない可能性があり、インストール エラーは示されていません。 インストールが完了した後、マネージド コードが実行しない可能性があります。 代わりに、イメージを [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 以降に基づくようにします。 また、バージョン 4.7.1 以降のタグが付いたイメージでは、既定の `SHELL` として PowerShell が使用されている可能性があり、その場合 `RUN` および `ENTRYPOINT` 命令は失敗することに注意してください。
    >
-   > 詳しくは、「[コンテナーの既知の問題](build-tools-container-issues.md)」をご覧ください。
+   > どのコンテナー OS バージョンがどのホスト OS バージョン上でサポートされているかについては「[Windows コンテナーのバージョンの互換性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)」を、既知の問題については「[コンテナーの既知の問題](build-tools-container-issues.md)」をご覧ください。
 
    ::: moniker-end
 

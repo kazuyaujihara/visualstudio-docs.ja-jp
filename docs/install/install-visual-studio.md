@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974943"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263721"
 ---
 # <a name="install-visual-studio"></a>Visual Studio のインストール
 
@@ -88,7 +88,7 @@ Visual Studio のインストールを開始する前に
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 と以前のバージョンの Visual Studio を共存させて実行することについて疑問点があれば、[Visual Studio の互換性の詳細](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases/)に関する記事をご覧ください。
+Visual Studio 2017 と以前のバージョンの Visual Studio を共存させて実行することについて疑問点があれば、[Visual Studio の互換性の詳細](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases)に関する記事をご覧ください。
 
 ::: moniker-end
 
@@ -203,7 +203,7 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
 
 コマンド ラインからインストーラーを実行して、既定の言語を変更することもできます。 たとえば、`vs_installer.exe --locale en-US` コマンドを実行して、インストーラーを英語で実行するように指定することができます。 この設定は、次回インストーラーを実行したときにも保持されています。 インストーラーでは次の言語トークンがサポートされます。zh-cn、zh-tw、cs-cz、en-us、es-es、fr-fr、de-de、it-it、ja-jp、ko-kr、pl-pl、pt-br、ru-ru、tr-tr。
 
-## <a name="step-7---change-the-installation-location-optional"></a>手順 7 - インストール場所の変更 (省略可能)
+## <a name="step-7---select-the-installation-location-optional"></a>手順 7 - インストールの場所を選択する (省略可能)
 
 ::: moniker range="vs-2017"
 
@@ -217,7 +217,7 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
 
 システム ドライブ上の Visual Studio のインストール占有領域を小さくすることができます。 ダウンロード キャッシュ、共有コンポーネント、SDK、およびツールを別のドライブに移動して、Visual Studio を最速で実行できるドライブで維持できます。
 
-  ![Visual Studio 2019 - インストール場所を変更する](media/vs-2019/vs-installer-installation-locations.png "インストール場所を変更する")
+  ![Visual Studio 2019 - インストールの場所を選択する](media/vs-2019/vs-installer-installation-locations.png "インストールの場所を選択する")
 
 ::: moniker-end
 

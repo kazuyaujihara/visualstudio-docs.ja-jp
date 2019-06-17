@@ -7,8 +7,10 @@
     - name: クイック スタート
       expanded: true
       items:
-        - name: Visual Studio のコンテナー ツール
+        - name: コンテナー内の ASP.NET Core アプリ
           href: container-tools.md
+        - name: コンテナー内の React.js シングル ページ アプリ
+          href: container-tools-react.md
     - name: チュートリアル
       expanded: true
       items:

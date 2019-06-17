@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricGuid
 ms.assetid: 91092763-3362-4857-adf0-231bc1254206
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49f30f6b5bb1231f6bcbd77097454ae7a73a7a2c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b46037619bf7e43b647d4e3bc557c8ae9290cbd1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458592"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322001"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 指定した名前のメトリックの一意の識別子を取得します。
@@ -44,21 +44,17 @@ private int GetMetricGuid(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pszType`\
+`pszType`\
+[in]メトリックの種類です。
 
- [in]メトリックの種類です。
+`guidSection`\
+[in]セクションの一意の識別子。
 
- `guidSection`\
+`pszMetric`\
+[in]メトリックの名前。
 
- [in]セクションの一意の識別子。
-
- `pszMetric`\
-
- [in]メトリックの名前。
-
- `pguidValue`\
-
- [out]メトリックの一意の識別子を返します。
+`pguidValue`\
+[out]メトリックの一意の識別子を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

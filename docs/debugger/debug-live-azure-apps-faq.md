@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea593ad5f88ba29f6b1c0d7c64a129b8f71c7f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 43b76ad81a2c075a11ff55dcbd7fbc5e8a4b3fe7
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62853312"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431841"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio でのスナップショットのデバッグについてよく寄せられる質問
 
@@ -49,18 +49,156 @@ ms.locfileid: "62853312"
 
 App Service からスナップショット デバッガー サイト拡張機能をアンインストールするには、次の手順を実行します。
 
-1. Visual Studio の Cloud Explorer または Azure portal のいずれかを使用して App Service を無効にします。
-1. App Service の Kudu サイト (つまり yourappservice.**scm**.azurewebsites.net) にアクセスし、**[サイト拡張機能]** に移動します。
+1. Visual Studio で Cloud Explorer または Azure portal を通じて、App Service をオフにします。
+1. App Service の Kudu サイト (つまり yourappservice.**scm**.azurewebsites.net) にアクセスし、 **[サイト拡張機能]** に移動します。
 1. スナップショット デバッガー サイト拡張機能の [X] をクリックして削除します。
 
 #### <a name="why-are-ports-opened-during-a-snapshot-debugger-session"></a>スナップショット デバッガー セッション中にポートが開かれるのはなぜですか?
 
 Azure で取得されたスナップショットをデバッグするために、スナップショット デバッガーでは一連のポートを開く必要があります。これらは、リモート デバッグに必要なポートと同じです。 [ポートの一覧については、こちらを参照してください](../debugger/remote-debugger-port-assignments.md)。
 
+#### <a name="how-do-i-disable-the-remote-debugger-extension"></a>リモート デバッガーの拡張機能を無効にする方法は?
+
+App services:
+1. App Service の Azure portal を使用してリモート デバッガーの拡張機能を無効にします。
+2. Azure portal >、アプリケーション サービスのリソース ブレード >*アプリケーションの設定*
+3. 移動し、*デバッグ*セクションし、をクリックして、*オフ*ボタン*リモート デバッグ*。
+
+For AKS:
+1. 更新に対応するセクションを削除する、Dockerfile、 [Docker イメージでの Visual Studio Snapshot Debugger](https://github.com/Microsoft/vssnapshotdebugger-docker)します。
+2. リビルドして変更された Docker イメージを再デプロイします。
+
+仮想マシン/仮想マシン スケール セットを削除、リモート デバッガーの拡張機能、証明書、KeyVaults と受信 NAT プールには、次のようにします。
+
+1. リモート デバッガーの拡張機能を削除します。  
+
+   仮想マシンと仮想マシン スケール セット用のリモート デバッガーを無効にするいくつかの方法はあります。  
+
+      - クラウド エクスプ ローラーからリモート デバッガーを無効にします。  
+
+         - クラウド エクスプ ローラー > 仮想マシン リソース > デバッグを無効にする (デバッグを無効にするが存在しない仮想マシン スケール セットで Cloud Explorer の)。  
+
+
+      - リモート デバッガーでは、PowerShell スクリプト/コマンドレットを無効にします。  
+
+         仮想マシン。  
+
+         ```
+         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
+         ```
+
+         仮想マシン スケール セット。  
+         ```
+         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName  
+         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name  
+         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension  
+         ```
+
+      - Azure ポータルでリモート デバッガーを無効にします。
+         - Azure portal >、仮想マシン/仮想マシン スケール セットのリソース ブレード > 拡張機能  
+         - Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger 拡張機能をアンインストールします。  
+
+
+         > [!NOTE]
+         > 仮想マシン スケール セットでは、ポータルは許可されません DebuggerListener ポートを削除します。 Azure PowerShell を使用する必要があります。 詳細については、以下を参照してください。
+  
+2. 証明書を削除し、Azure key Vault
+
+   仮想マシンまたは仮想マシン スケール セットのリモート デバッガーの拡張機能をインストールするときに、Azure の仮想マシンで VS クライアントを認証するクライアントとサーバーの両方の証明書の作成/仮想マシン スケール セット リソース。  
+
+   - クライアント証明書  
+
+      この証明書が証明書にある自己署名証明書:/CurrentUser/マイ/  
+
+      ```
+      Thumbprint                                Subject  
+      ----------                                -------  
+
+      1234123412341234123412341234123412341234  CN=ResourceName  
+      ```
+
+      PowerShell を使用して、コンピューターからこの証明書を削除する方法の 1 つは、します。
+
+      ```
+      $ResourceName = 'ResourceName' # from above  
+      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item  
+      ```
+
+   - サーバー証明書
+      - 対応するサーバー証明書の拇印は、Azure key Vault にシークレットとしてデプロイされます。 VS が検索または MSVSAZ * は、仮想マシンに対応するリージョンでのプレフィックスを key Vault を作成することも仮想マシン スケール セット リソース。 すべての仮想マシンまたは仮想マシン スケール セットのリージョンにデプロイされたリソースはそのため、同じ key Vault が共有されます。  
+      - サーバー証明書の拇印のシークレットを削除するには、Azure portal に移動し、リソースをホストしているのと同じリージョンに MSVSAZ * KeyVault を検索します。 ラベルを付ける必要がありますシークレットを削除します。 `remotedebugcert<<ResourceName>>`  
+      - PowerShell を使用して、リソースからサーバー シークレットを削除する必要があります。  
+
+      仮想マシン。  
+
+      ```
+      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()  
+      Update-AzVM -ResourceGroupName $rgName -VM $vm  
+      ```
+                        
+      仮想マシン スケール セット。  
+
+      ```
+      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()  
+      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss  
+      ```
+                        
+3. DebuggerListener 受信 NAT プール (仮想マシン スケール セットのみ) をすべて削除します。  
+
+   リモート デバッガーには、スケール セットのロード バランサーに適用される DebuggerListener 着信 NAT プールが導入されています。  
+
+   ```
+   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools  
+   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
+                
+   if ($LoadBalancerName)  
+   {
+      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName  
+      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
+      Set-AzLoadBalancer -LoadBalancer $lb  
+   }
+   ```
+
+#### <a name="how-do-i-disable-snapshot-debugger"></a>スナップショット デバッガーを無効にする方法は?
+
+App service:
+1. App Service の Azure portal を使用してスナップショット デバッガーを無効にします。
+2. Azure portal >、アプリケーション サービスのリソース ブレード >*アプリケーションの設定*
+3. Azure portal で次のアプリ設定を削除し、変更を保存します。 
+    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
+    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+
+    > [!WARNING]
+    > アプリケーション設定への変更では、アプリの再起動を開始します。 アプリケーション設定の詳細が見つかります[ここ](https://docs.microsoft.com/azure/app-service/web-sites-configure#app-settings)します。 
+
+For AKS:
+1. 更新に対応するセクションを削除する、Dockerfile、 [Docker イメージでの Visual Studio Snapshot Debugger](https://github.com/Microsoft/vssnapshotdebugger-docker)します。
+2. リビルドして変更された Docker イメージを再デプロイします。
+
+仮想マシン/仮想マシン スケール セット。
+
+スナップショット デバッガーを無効にするいくつかの方法はあります。
+- クラウド エクスプ ローラー >、仮想マシン/仮想マシン スケール セット リソース > 診断を無効にします。
+
+- Azure portal >、仮想マシン/仮想マシン スケール セットのリソース ブレード > 拡張機能 > Microsoft.Insights.VMDiagnosticsSettings のアンインストールの拡張機能
+
+- PowerShell コマンドレットから[Az PowerShell](https://docs.microsoft.com/powershell/azure/overview)
+
+    仮想マシンの場合:
+    ```
+        Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings 
+    ```
+    
+    仮想マシン スケールを設定します。
+    ```
+        $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+        Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
+    ```
+
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio でのデバッグ](../debugger/index.md)
 - [スナップショット デバッガーを使用して、ライブ ASP.NET アプリをデバッグします。](../debugger/debug-live-azure-applications.md)
-- [ライブ ASP.NET Azure 仮想 Machines\Virtual マシン スケール セットのスナップショット デバッガーを使用したデバッグします。](../debugger/debug-live-azure-virtual-machines.md)
+- [スナップショット デバッガーを使用して、ライブの ASP.NET Azure の仮想 Machines\Virtual マシン スケール セットをデバッグします。](../debugger/debug-live-azure-virtual-machines.md)
 - [スナップショット デバッガーを使用して、ライブの ASP.NET Azure Kubernetes デバッグします。](../debugger/debug-live-azure-kubernetes.md)
 - [スナップショットのデバッグのトラブルシューティングと既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage::GetData
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: f8859b019559f21797e23fa9a568b0ad7d649454
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224188"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319646"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 オブジェクトから指定したバイト数を取得します。
@@ -44,17 +44,14 @@ int GetData(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `dataSize`\
+`dataSize`\
+[in]取得するバイト数 (、`data`配列が、少なくともこのバイト数で保持する必要があります)。
 
- [in]取得するバイト数 (、`data`配列が、少なくともこのバイト数で保持する必要があります)。
+`sizeGotten`\
+[out]実際に取得するバイト数を返します。
 
- `sizeGotten`\
-
- [out]実際に取得するバイト数を返します。
-
- `data`\
-
- [入力、出力]要求されたデータと共に格納する配列。
+`data`\
+[入力、出力]要求されたデータと共に格納する配列。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

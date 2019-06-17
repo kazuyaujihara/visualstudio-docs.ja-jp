@@ -1,5 +1,5 @@
 ---
-title: .NET Framework 4 または .NET Framework 4.5 に移行する Office プロジェクトの実行に必要な変更
+title: Office プロジェクトの必要な変更は、.NET Framework 4、4.5 に移行
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a83207633d60348d664e3c9337b48288bb6c1baf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 82ae3f8a43b65e6ff617192dc38149691d229455
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447040"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836059"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 または .NET Framework 4.5 に移行する Office プロジェクトの実行に必要な変更
   Office プロジェクトのターゲット フレームワークを変更するかどうか、[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]または後で、.NET Framework の以前のバージョンから行う必要があります、開発用コンピューターとエンドユーザーのコンピューターにソリューションを実行できるようにするには、次のタスク。

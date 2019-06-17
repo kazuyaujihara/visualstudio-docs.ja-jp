@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateArrayObject method
 ms.assetid: a380e53c-15f1-401f-927f-f366eea789e6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7ee5d4a59442238b461361522b06087650547b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f8d5f6ea8b33605c51fa88464b091ccd3714730d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873960"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352162"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 配列オブジェクトを作成します。 この配列は、いずれかのプリミティブ型を含めることがまたはオブジェクトのインスタンスの値。
@@ -46,30 +49,24 @@ int CreateArrayObject(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `ot`
+## <a name="parameters"></a>パラメーター
+`ot`\
+[in]値を指定します、 [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md)新しい配列のオブジェクトの種類を示す列挙値。
 
- [in]値を指定します、 [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md)新しい配列のオブジェクトの種類を示す列挙値。
+`pClassField`\
+[in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インスタンスの値オブジェクトの配列を作成する場合に、オブジェクトのクラスを表すオブジェクト。 プリミティブ オブジェクトの配列を作成するには、このパラメーターは null 値を使用します。
 
- `pClassField`
+`dwRank`\
+[in]ランクまたは配列の次元数。
 
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インスタンスの値オブジェクトの配列を作成する場合に、オブジェクトのクラスを表すオブジェクト。 プリミティブ オブジェクトの配列を作成するには、このパラメーターは null 値を使用します。
+`dwDims`\
+[in]配列の各次元のサイズ。
 
- `dwRank`
+`dwLowBounds`\
+[in]各次元の配信元 (通常は 0 または 1)。
 
- [in]ランクまたは配列の次元数。
-
- `dwDims`
-
- [in]配列の各次元のサイズ。
-
- `dwLowBounds`
-
- [in]各次元の配信元 (通常は 0 または 1)。
-
- `ppObject`
-
- [out]返します、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)新しく作成された配列を表すオブジェクト。 これは、実際には、 [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)オブジェクト。
+`ppObject`\
+[out]返します、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)新しく作成された配列を表すオブジェクト。 これは、実際には、 [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)オブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。

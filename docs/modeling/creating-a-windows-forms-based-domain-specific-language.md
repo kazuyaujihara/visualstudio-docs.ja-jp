@@ -7,22 +7,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b82af5d19b45092f649b22503cfbdf1001433c30
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438180"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746803"
 ---
-# <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows フォームに基づくドメイン固有言語の作成
-DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの状態を表示するのに Windows フォームを使用することができます。 ここでは、Visual Studio Visualization and Modeling SDK を使用して、DSL への Windows フォームのバインドを示します。
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>Windows フォームに基づくドメイン固有言語を作成します。
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)する DSL のインスタンス、Windows フォームの UI とモデル エクスプ ローラーを表示します。
+DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの状態を表示するのに Windows フォームを使用することができます。 このトピックでは、Visual Studio Visualization and Modeling SDK を使用して Windows フォームを DSL にバインディングを介してについてを説明します。
 
-## <a name="creating-a-windows-forms-dsl"></a>Windows フォームの DSL を作成します。
- **最小 WinForm デザイナー** DSL テンプレートは、独自の要件に合わせて変更できる最小限の DSL を作成します。
+次の図は、Windows フォームの UI と DSL のインスタンスの モデル エクスプ ローラーを示しています。
 
-#### <a name="to-create-a-minimal-winforms-dsl"></a>最小限の WinForms DSL を作成するには
+![Visual Studio での DSL のインスタンス](../modeling/media/dsl-wpf-2.png)
+
+## <a name="create-a-windows-forms-dsl"></a>Windows フォームの DSL を作成します。
+
+**最小 WinForm デザイナー** DSL テンプレートは、独自の要件に合わせて変更できる最小限の DSL を作成します。
 
 1. DSL を作成、**最小 WinForm デザイナー**テンプレート。
 
@@ -37,7 +39,7 @@ DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの
 
    1. すべてのテンプレートを変換します。
 
-   2. サンプルのビルドおよび実行 (**CTRL + F5**)。
+   2. サンプルのビルドおよび実行 (**Ctrl**+**F5**)。
 
    3. Visual Studio の実験用インスタンスを開き、`Sample`デバッグ プロジェクト ファイル。
 
@@ -62,14 +64,14 @@ DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの
     - という名前のファイル`DataBinding.cs`の他の部分定義を格納している`ModelViewControl`します。 そのコンテンツを表示する**ソリューション エクスプ ローラー**ファイルのショートカット メニューを開き、選択**コードの表示**します。
 
 ### <a name="about-the-ui-project"></a>UI プロジェクトについて
- 内のコントロールを更新する必要があります、独自の DSL を定義する DSL 定義ファイルを更新するときに、 `UI` DSL を表示するプロジェクト。 異なり、`Dsl`と`DslPackage`プロジェクトは、サンプル`UI`からプロジェクトが生成されない`DslDefinitionl.dsl`します。 このチュートリアルでは説明しませんが、する場合は、コードを生成する .tt ファイルを追加することができます。
 
-## <a name="updating-the-dsl-definition"></a>DSL 定義の更新
- このチュートリアルでは、DSL 定義を使用してください。 以下。
+内のコントロールを更新する必要があります、独自の DSL を定義する DSL 定義ファイルを更新するときに、 `UI` DSL を表示するプロジェクト。 異なり、`Dsl`と`DslPackage`プロジェクトは、サンプル`UI`からプロジェクトが生成されない`DslDefinitionl.dsl`します。 このチュートリアルでは説明しませんが、する場合は、コードを生成する .tt ファイルを追加することができます。
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
+## <a name="update-the-dsl-definition"></a>DSL 定義を更新します。
 
-#### <a name="to-update-the-dsl-definition"></a>DSL 定義を更新するには
+このチュートリアルでは、DSL 定義を使用してください。 以下。
+
+![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 1. DSL デザイナーで DslDefinition.dsl を開きます。
 
@@ -107,10 +109,11 @@ DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの
     > [!NOTE]
     > この段階で、エラーのない他のプロジェクトがビルドされません。 ただし、そのアセンブリをデータ ソース ウィザードを使用できるように、Dsl プロジェクトをビルドします。
 
-## <a name="updating-the-ui-project"></a>UI プロジェクトの更新
- これで、DSL のモデルに格納されている情報を表示する新しいユーザー コントロールを作成できます。 ユーザー コントロールをモデルに接続する最も簡単な方法では、データ バインドを使用します。 データ バインディングという名前のアダプター型**ModelingBindingSource**非 VMSDK インターフェイスへの Dsl の接続には具体的には設計されています。
+## <a name="update-the-ui-project"></a>UI プロジェクトを更新します。
 
-#### <a name="to-define-your-dsl-model-as-a-data-source"></a>データ ソースとして、DSL モデルを定義するには
+これで、DSL のモデルに格納されている情報を表示する新しいユーザー コントロールを作成できます。 ユーザー コントロールをモデルに接続する最も簡単な方法では、データ バインドを使用します。 データ バインディングという名前のアダプター型**ModelingBindingSource**非 VMSDK インターフェイスへの Dsl の接続には具体的には設計されています。
+
+### <a name="define-your-dsl-model-as-a-data-source"></a>データ ソースとして、DSL モデルを定義します。
 
 1. **データ** メニューの 選択**データ ソースの**します。
 
@@ -128,7 +131,7 @@ DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの
 
      ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
-#### <a name="to-connect-your-model-to-a-form"></a>フォームに、モデルを接続するには
+### <a name="connect-your-model-to-a-form"></a>フォームに、モデルを接続します。
 
 1. **UI**プロジェクトで、既存のすべての .cs ファイルを削除します。
 
@@ -151,7 +154,7 @@ DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの
    > [!NOTE]
    > 代替の手順は、コントロールにデータ ソース ウィンドウから動物とフィールドの項目をドラッグすることです。 このアクションは、データ グリッドとグリッド ビューとデータ ソース間のバインドに自動的に作成します。 ただし、このバインディングは、Dsl は正しく機能しません。 データ グリッドとバインドを作成することをお勧めそのため手動でします。
 
-7. ツールボックスが含まれていない場合、 **ModelingBindingSource**ツールで追加します。 ショートカット メニューで、**データ** タブで、選択**アイテムの選択**します。 **ツールボックス アイテムの選択**ダイアログ ボックスで、 **ModelingBindingSource**から、 **.NET Framework タブ**します。
+7. ツールボックスが含まれていない場合、 **ModelingBindingSource**ツールで追加します。 ショートカット メニューで、**データ** タブで、選択**アイテムの選択**します。 **ツールボックス アイテムの選択**ダイアログ ボックスで、 **ModelingBindingSource**から、 **.NET Framework**タブ。
 
 8. 2 つのインスタンスを作成して、ツールボックスを使用して**ModelingBindingSource**、という名前を付けます`AnimalBinding`と`FieldBinding`します。
 
@@ -173,7 +176,7 @@ DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの
 
   ![DslWpf4](../modeling/media/dslwpf4.png)データ ソースとビュー間のリンクのスキーマ。
 
-#### <a name="to-complete-the-bindings-to-the-dsl"></a>DSL へのバインドを完了するには
+### <a name="complete-the-bindings-to-the-dsl"></a>DSL へのバインドを完了します。
 
 1. 内の別のコード ファイルで次のコードを追加、 **UI**プロジェクト。
 
@@ -207,10 +210,9 @@ DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの
     string viewControlTypeName = "FarmControl";
     ```
 
-## <a name="testing-the-dsl"></a>DSL をテストします。
- DSL ソリューションは、ビルドして、機能強化の後で追加したい場合がありますが、実行することができますようになりました。
+## <a name="test-the-dsl"></a>DSL をテストします
 
-#### <a name="to-test-the-dsl"></a>DSL をテストするには
+DSL ソリューションは、ビルドして、機能強化の後で追加したい場合がありますが、実行することができますようになりました。
 
 1. ソリューションをビルドして実行します。
 
@@ -229,13 +231,13 @@ DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの
 
      [プロパティ] ウィンドウで、対応するプロパティの変更、フォーム内の各フィールドから移動する場合。
 
-## <a name="enhancing-the-dsl"></a>DSL の強化
+## <a name="enhance-the-dsl"></a>DSL を強化します。
 
-#### <a name="to-make-the-properties-update-immediately"></a>プロパティをすぐに更新するには
+### <a name="make-the-properties-update-immediately"></a>プロパティをすぐに更新
 
 1. FarmControl.cs のデザイン ビューでは、名前、サイズまたは IsOrganic などの単純なフィールドを選択します。
 
-2. プロパティ ウィンドウで  **DataBindings**開き **(詳細)**。
+2. プロパティ ウィンドウで  **DataBindings**開き **(詳細)** 。
 
      **フォーマットと詳細バインド**ダイアログで、**データ ソース更新モード**、選択**OnPropertyChanged**します。
 
@@ -243,7 +245,7 @@ DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの
 
      ファーム モデルの変更をすぐに対応するプロパティ、フィールドの内容を変更すると、ことを確認します。
 
-#### <a name="to-provide-add-buttons"></a>追加ボタンを提供するには
+### <a name="provide-add-buttons"></a>追加ボタンします。
 
 1. FarmControl.cs のデザイン ビューで、ツールボックスを使用して、フォームにボタンを作成します。
 
@@ -301,7 +303,8 @@ DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの
    ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>要素を追加するコードについて
- 新しい要素のボタンは、次の代替コードが少し簡単です。
+
+新しい要素のボタンは、次の代替コードが少し簡単です。
 
 ```csharp
 private void NewSheepButton_Click(object sender, EventArgs e)
@@ -314,12 +317,12 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 }
 ```
 
- ただし、このコードは、新しい項目の既定の名前を設定できません。 定義した任意のカスタマイズされたマージは実行されません、**要素マージ ディレクティブ**DSL の定義されているコードのカスタムのマージは実行されません。
+ただし、このコードは、新しい項目の既定の名前を設定できません。 定義した任意のカスタマイズされたマージは実行されません、**要素マージ ディレクティブ**DSL の定義されているコードのカスタムのマージは実行されません。
 
- 使用すること勧めそのため<xref:Microsoft.VisualStudio.Modeling.ElementOperations>新しい要素を作成します。 詳細については、次を参照してください。[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)します。
+使用すること勧めそのため<xref:Microsoft.VisualStudio.Modeling.ElementOperations>新しい要素を作成します。 詳細については、次を参照してください。[をカスタマイズする要素の作成と移動](../modeling/customizing-element-creation-and-movement.md)します。
 
 ## <a name="see-also"></a>関連項目
 
-- [方法: ドメイン固有言語を定義する](../modeling/how-to-define-a-domain-specific-language.md)
-- [ドメイン固有言語をカスタマイズするコードの記述](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)
+- [ドメイン固有言語をカスタマイズするコードを記述します。](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Modeling SDK for Visual Studio - ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

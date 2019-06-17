@@ -21,18 +21,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a15daaf5ac98bc2efc4ce83bb2370b94e9f59123
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566804"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745458"
 ---
 # <a name="hierarchical-update"></a>階層更新
 
 *階層更新*参照整合性を維持しながら、データベースに (2 つ以上の関連テーブルを含むデータセット) から更新されたデータの保存の処理を指します。 *参照整合性*の挿入、更新、および関連レコードを削除する動作を制御するデータベース内の制約によって定義される一貫性規則を参照します。 たとえば、その顧客の注文を作成するを許可する前に、顧客レコードの作成を強制する参照の整合性を勧めします。  データセットのリレーションシップの詳細については、次を参照してください。[データセットのリレーションシップ](../data-tools/relationships-in-datasets.md)します。
 
-階層更新機能を使用して、`TableAdapterManager`を管理する、`TableAdapter`型指定された dataset の s。 `TableAdapterManager`でないために、コンポーネントは、Visual Studio によって生成されたクラスの一部、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]します。 テーブルをドラッグすると、**データソース**Windows フォームまたは WPF ページで、Visual Studio のウィンドウがフォームまたはページで、TableAdapterManager の型の変数を追加し、コンポーネント トレイにデザイナーで参照してください。 詳細については、`TableAdapterManager`クラスの TableAdapterManager リファレンスのセクションを参照してください[Tableadapter](../data-tools/create-and-configure-tableadapters.md)します。
+階層更新機能を使用して、`TableAdapterManager`を管理する、`TableAdapter`型指定された dataset の s。 `TableAdapterManager`コンポーネントは、.NET 型ではなく、Visual Studio によって生成されたクラスです。 テーブルをドラッグすると、**データソース**Windows フォームまたは WPF ページで、Visual Studio のウィンドウがフォームまたはページで、TableAdapterManager の型の変数を追加し、コンポーネント トレイにデザイナーで参照してください。 詳細については、`TableAdapterManager`クラスの TableAdapterManager リファレンスのセクションを参照してください[Tableadapter](../data-tools/create-and-configure-tableadapters.md)します。
 
 既定では、データセットは、外部キー制約を適用しないことを意味する「リレーションのみ、」として関連テーブルを処理します。 使用して、デザイン時にその設定を変更することができます、**データセット デザイナー**します。 2 つのテーブル間の関係の行を選択、**関係** ダイアログ ボックス。 ここで加えた変更が決定される方法、`TableAdapterManager`動作するときに元のデータベースに関連するテーブルに、変更も送信します。
 
@@ -114,7 +114,7 @@ ms.locfileid: "62566804"
 
 既定で、`TableAdapterManager`関連テーブルを含むデータセットを作成するときにクラスが生成されます。 値を変更するクラスが生成されていることを防ぐために、`Hierarchical Update`を false に、データセットのプロパティ。 Windows フォームまたは WPF ページのデザイン サーフェイスに関係のあるテーブルをドラッグすると、Visual Studio は、クラスのメンバー変数を宣言します。 データ バインドを使用しない場合は、手動で変数を宣言する必要があります。
 
-`TableAdapterManager`クラスの一部、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]します。 そのため、ドキュメントを検索することはできません。 デザイン時にデータセットの作成プロセスの一環として作成されます。
+`TableAdapterManager`クラスは、.NET 型ではありません。 そのため、ドキュメントを検索することはできません。 デザイン時にデータセットの作成プロセスの一環として作成されます。
 
 よく使用されるメソッドとプロパティの次のとおり、`TableAdapterManager`クラス。
 

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399364"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037385"
 ---
 # <a name="general-debugging-options"></a>全般的なデバッグ オプション
 
@@ -136,7 +136,7 @@ DLL のエクスポート テーブル内で使用できるシンボルを確認
 
 - **アプリケーションでランタイム ツールを表示**: 表示、 **Live Visual Tree**ツールバーのデバッグ中に XAML アプリケーションのメイン ウィンドウでコマンド。 このオプションは、Visual Studio 2015 Update 2 で導入されました。
 
-- **XAML のエディット コンティニュを有効にする**:  編集を使用し、XAML コードの機能を続行することができます。
+- **XAML のホットな再読み込みを有効にする**:アプリが実行中に、XAML コードで XAML ホットの再読み込み機能を使用することができます。 (この機能は既に呼び出されました"XAML エディット コンティニュ)
 
 **デバッグ中に診断ツールを有効にする**: デバッグ中に **[診断ツール]** ウィンドウが表示されます。
 

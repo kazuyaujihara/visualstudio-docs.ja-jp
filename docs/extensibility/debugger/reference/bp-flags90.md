@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - BP_FLAGS90 enumeration
 ms.assetid: 3e5a06c5-fb30-4b8a-b2d5-4a0570fc80bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef0844e4bf2c10128ee9c1a62669711e36eb401f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5c423b8ecf0e4591913be5ef875057a947f42614
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682441"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319156"
 ---
 # <a name="bpflags90"></a>BP_FLAGS90
 オプションのフラグの有効な値を列挙します。 ブレークポイントを設定するときに、追加情報を指定する省略可能なフラグを使用できます。 この列挙体を拡張、 [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)列挙体。
@@ -49,14 +52,18 @@ public enum enum_BP_FLAGS90
 };
 ```
 
-#### <a name="parameters"></a>パラメーター
-BP90_FLAG_NONE はブレークポイント フラグを指定します。
+## <a name="fields"></a>フィールド
+`BP90_FLAG_NONE`\
+ブレークポイントのフラグを指定しません。
 
-BP90_FLAG_MAP_DOCPOSITION では、デバッグ エンジン (DE) がドキュメントの位置を使用して、ブレークポイントをマップする必要がありますを指定します。 これは、機能は、Active Server Pages (ASP) などのスクリプトを使用したソース ファイルに設定されたブレークポイントにのみ適用されます。
+`BP90_FLAG_MAP_DOCPOSITION`\
+デバッグ エンジン (DE) がドキュメントの位置を使用して、ブレークポイントをマップする必要がありますを指定します。 これは、機能は、Active Server Pages (ASP) などのスクリプトを使用したソース ファイルに設定されたブレークポイントにのみ適用されます。
 
-BP90_FLAG_DONT_STOP は、ブレークポイント、デバッグ エンジンで処理する必要がありますが最終的には、デバッグ エンジンがあります。 に停止する必要がありますを指定します。つまり、 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)イベント オブジェクトを送信しない必要があります。 このフラグは、トレース ポイントで主に使用する設計されています。
+`BP90_FLAG_DONT_STOP`\
+ブレークポイントが、デバッグ エンジンによって処理されることことデバッグ エンジン最終的にはとどまりません。 を指定しますつまり、 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)イベント オブジェクトを送信しない必要があります。 このフラグは、トレース ポイントで主に使用する設計されています。
 
-BP90_FLAG_TRACEPOINT_CONTINUE は、ステップ実行の状態をクリアするかどうかを判断する、ネイティブのデバッグ エンジンで使用します。 トレース ポイントは、マクロを実行する場合、BP90_FLAG_DONT_STOP が設定されていないため BP90_FLAG_DONT_STOP とは異なります。
+`BP90_FLAG_TRACEPOINT_CONTINUE`\
+ネイティブ デバッグ エンジンによってステップ実行の状態をクリアするかどうかを判断するために使用します。 トレース ポイントは、マクロを実行する場合、BP90_FLAG_DONT_STOP が設定されていないため BP90_FLAG_DONT_STOP とは異なります。
 
 ## <a name="requirements"></a>必要条件
 ヘッダー:Msdbg90.h

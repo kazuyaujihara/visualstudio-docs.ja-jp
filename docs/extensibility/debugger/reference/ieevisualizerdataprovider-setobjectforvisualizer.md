@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::SetObjectForVisualizer method
 ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd7bd4bfd113da8cfd311d1022967d8c99f915b5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 34fb0e8c4ae8b2b4371234e9cf09d9c21727dfdf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223947"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350192"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 このメソッドは、ビジュアライザーを表すオブジェクトを変更します。
@@ -44,17 +44,14 @@ int SetObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pNewObject`\
+`pNewObject`\
+[in]設定するオブジェクト。
 
- [in]設定するオブジェクト。
+`error`\
+[out]オブジェクトを設定中にエラーがあった場合、この文字列は、エラー メッセージを保持します。
 
- `error`\
-
- [out]オブジェクトを設定中にエラーがあった場合、この文字列は、エラー メッセージを保持します。
-
- `pException`\
-
- [out]エラーがあった場合、このオブジェクトは、例外情報を保持します。
+`pException`\
+[out]エラーがあった場合、このオブジェクトは、例外情報を保持します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

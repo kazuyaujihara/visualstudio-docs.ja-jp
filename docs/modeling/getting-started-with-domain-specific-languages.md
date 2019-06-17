@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4242fabe943dd27624e44a9900981343ec180fcd
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442368"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820905"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>ドメイン固有言語の概要
 
@@ -21,7 +21,7 @@ ms.locfileid: "63442368"
 > [!NOTE]
 > Visual Studio の特定の機能をインストールするときに、テキスト テンプレート変換の SDK および Visual Studio Modeling SDK が自動的にインストールします。 詳細については、[このブログの投稿](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)を参照してください。
 
-作業することをお勧めの Dsl に慣れていない場合、 **DSL ツール ラボ**、このサイトで入手できます。[Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+作業することをお勧めの Dsl に慣れていない場合、 **DSL ツール ラボ**、このサイトで入手できます。[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>ドメイン固有言語では、何をことができますか。
 
@@ -137,7 +137,7 @@ DSL ソリューションを作成するとすぐに実行できます。 後で
 
 Visual Studio の実験的なは、次の例では、ようになります。
 
-![](../modeling/media/dsl_min.png)
+![Visual Studio でのドメイン固有言語サンプル ツリー](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>モデルのコンテンツ
 
@@ -147,7 +147,7 @@ DSL 定義では、モデルのダイアグラムの表示方法を指定でき�
 
 ツリーとしてモデルを表示することができます、**エクスプ ローラー**モデルを編集しているときに表示します。 ダイアグラムに図形を追加すると、モデル要素は、エクスプ ローラーでも表示されます。 ダイアグラムが存在しない場合でも、エクスプ ローラーを使用できます。
 
-エクスプ ローラーで、Visual Studio のデバッグ インスタンスが表示されない場合、**ビュー**  メニューをポイント**その他の Windows**、 をクリックし、  *\<Your 言語 >***エクスプ ローラー**します。
+エクスプ ローラーで、Visual Studio のデバッグ インスタンスが表示されない場合、**ビュー**  メニューをポイント**その他の Windows**、 をクリックし、  *\<Your 言語 >* **エクスプ ローラー**します。
 
 ### <a name="the-api-of-your-dsl"></a>DSL の API
 
@@ -209,7 +209,7 @@ DSL 定義では、保存、変更のたびに次のようにクリックしま�
 
     2. プロパティ ウィンドウを開き、配置と同時に、DSL エクスプ ローラーとプロパティを参照することができます。
 
-    3. DSL エクスプ ローラーで、**エディター**、**ツールボックス タブ**、  *\<DSL >*、し**ツール**します。
+    3. DSL エクスプ ローラーで、**エディター**、**ツールボックス タブ**、  *\<DSL >* 、し**ツール**します。
 
     4. クリックして**ExampleElement**します。 これは、要素を作成するために使用するツールボックス項目です。
 
@@ -392,7 +392,7 @@ DSL 定義では、保存、変更のたびに次のようにクリックしま�
 
  Visual Studio の実験用インスタンスを使用する必要はありませんので、自分のコンピューターに、DSL をインストールするには、同じ手順に従います。
 
- 詳細については、「[ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)」を参照してください。
+ 詳細については、「[ドメイン固有言語ソリューションの配置](msi-and-vsix-deployment-of-a-dsl.md)」を参照してください。
 
 ## <a name="Reset"></a> 以前の実験的な Dsl を削除します。
  不要な実験用の Dsl を作成した場合は、Visual Studio 実験用インスタンスをリセットすることで、コンピューターから削除にできます。

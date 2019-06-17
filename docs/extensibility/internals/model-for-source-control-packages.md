@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], model
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ad60503c9f7b15bd4665fb8f9552864debc381d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 65f212496d152236579e63ba037fe351a4dd3370
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909229"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349218"
 ---
 # <a name="model-for-source-control-packages"></a>ソース管理パッケージのモデル
 次のようなモデルでは、ソース コントロールの実装の例を表します。 モデルでは、インターフェイスを実装する必要があり、呼び出す必要のある環境のサービスを参照してください。 すべてのサービスと同様に実際には、サービスを使用して取得する特定のインターフェイスのメソッドを呼び出します。 クラスの名前は、ソース管理の実行方法を確認するが容易に識別されます。
@@ -25,7 +25,7 @@ ms.locfileid: "62909229"
 ## <a name="interfaces"></a>インターフェイス
  ソース管理は、次の表で示されるインターフェイスのリストを使用して Visual Studio で、新しいプロジェクトの種類を実装できます。
 
-|Interface|用途|
+|Interface|使用|
 |---------------|---------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|プロジェクトと保存、または変更 (ダーティ) ファイルの前にエディターによって呼び出されます。 使用してこのインターフェイスをアクセス、<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>サービス。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|追加、削除、またはファイルまたはディレクトリの名前を変更する許可を要求するプロジェクトによって呼び出されます。 このインターフェイスは、プロジェクトが完了すると、承認済みの追加、削除、またはアクションの名前を変更するときに、環境を通知するためとも呼ばれます。 使用してアクセス、<xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>サービス。|

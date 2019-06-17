@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::GetProgram
 ms.assetid: cd83a111-bfd5-4eae-b576-526466c6b6ec
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1fd56bf6705cb6e47e94422ab06261645d0d512
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 505823a6399cc605d8784a4dba88f2fa27ad6d72
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871843"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311198"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
 プログラム ノードに関連付けられているプログラムを取得します。
@@ -38,14 +41,10 @@ int GetProgram( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pProgramNode`
+## <a name="parameters"></a>パラメーター
+`pProgramNode` [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)プログラム ノードを表すオブジェクト。
 
- [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)プログラム ノードを表すオブジェクト。
-
- `ppProgram`
-
- [out]返します、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)プログラム ノードに関連付けられているプログラムを表すオブジェクト。
+`ppProgram` [out]返します、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)プログラム ノードに関連付けられているプログラムを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

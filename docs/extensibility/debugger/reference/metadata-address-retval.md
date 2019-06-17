@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_RETVAL structure
 ms.assetid: 5b0ec0fb-84b3-4ce7-8e24-becf3d881d7d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8e31682de4c625e40baaac6daff4687c713abda9
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2ff96d5ca9d292d9e2952b9a2e5e1f628b54d43b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460970"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746346"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 この構造体は、メソッドまたは関数からの戻り値を表します。
@@ -50,7 +50,7 @@ public struct METADATA_ADDRESS_RETVAL {
  この戻り値が、メソッドの ID。
 
  `dwCorType`\
- 戻り値の基本型。 これは、値から、`CorElementType`列挙で定義されている、 [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK corhdr.h ファイル。
+ 戻り値の基本型。 これは、値から、 `CorElementType` .NET Framework SDK corhdr.h ファイルで定義される列挙体。
 
  `dwSigSize`\
  戻り値の署名のサイズ (に格納されている`rgSig`)。

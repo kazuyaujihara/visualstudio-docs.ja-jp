@@ -1,6 +1,6 @@
 ---
-title: マネージド コードの単体テストを作成し、実行する
-ms.date: 11/04/2016
+title: C# 単体テスト チュートリアル
+ms.date: 05/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -13,25 +13,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: d951c6171abd0e8cad42554c49a40cb42542fb62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976227"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401734"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>チュートリアル: マネージド コードの単体テストを作成し、実行する
 
 この記事では、マネージド コード用の Microsoft 単体テスト フレームワークと Visual Studio **テスト エクスプローラー**を使用して一連の単体テストを作成、実行、およびカスタマイズする手順について説明します。 開発中の C# プロジェクトで作業を開始し、そのコードを実行するテストを作成し、テストを実行し、結果を調べます。 次に、プロジェクト コードを変更し、テストを再実行します。
-
-> [!NOTE]
-> このチュートリアルでは、マネージド コード用の Microsoft 単体テスト フレームワークを使用します。 また、**テスト エクスプローラー**用のアダプターを備えたサード パーティの単体テスト フレームワークから**テスト エクスプローラー**を実行することもできます。 詳細については、「[サードパーティ製の単体テスト フレームワークをインストールする](../test/install-third-party-unit-test-frameworks.md)」をご覧ください。
-
-コマンド ラインからテストを実行する方法については、「[VSTest.Console.exe のコマンド ライン オプション](vstest-console-options.md)」を参照してください。
-
-## <a name="prerequisites"></a>必須コンポーネント
-
-- Bank プロジェクト。 「[単体テストを作成するサンプル プロジェクト](../test/sample-project-for-creating-unit-tests.md)」をご覧ください。
 
 ## <a name="create-a-project-to-test"></a>テストするプロジェクトを作成する
 
@@ -39,18 +30,18 @@ ms.locfileid: "62976227"
 
 1. Visual Studio を開きます。
 
-2. **[ファイル]** メニューで、**[新規作成]** > **[プロジェクト]** の順に選択します。
+2. **[ファイル]** メニューで、 **[新規作成]** > **[プロジェクト]** の順に選択します。
 
    **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
-3. C# **クラス ライブラリ** プロジェクト テンプレートを選択します。
+3. **[Visual C#]** の **[.NET Core]** カテゴリで、 **[Console App (.NET Core)]\(コンソール アプリ (.NET Core)\)** プロジェクト テンプレートを選択します。
 
-4. プロジェクトに「**Bank**」という名前を設定してから、**[OK]** をクリックします。
+4. プロジェクトに「**Bank**」という名前を設定してから、 **[OK]** をクリックします。
 
-   Bank プロジェクトが作成され、コード エディターに *Class1.cs* ファイルが開いた状態で**ソリューション エクスプローラー**が表示されます。
+   Bank プロジェクトが作成され、コード エディターに *Program.cs* ファイルが開いた状態で**ソリューション エクスプローラー**が表示されます。
 
    > [!NOTE]
-   > コード エディターで *Class1.cs* が開いていない場合は、**ソリューション エクスプローラー**のファイル *Class1.cs* をダブルクリックして開きます。
+   > エディターで *Program.cs* が開いていない場合は、**ソリューション エクスプローラー**のファイル *Program.cs* をダブルクリックして開きます。
 
 ::: moniker-end
 
@@ -58,59 +49,109 @@ ms.locfileid: "62976227"
 
 1. Visual Studio を開きます。
 
-2. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+2. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
 
-3. C# **クラス ライブラリ** プロジェクト テンプレートを検索して選択し、**[次へ]** をクリックします。
+3. C# **[Console App (.NET Core)]\(コンソール アプリ (.NET Core)\)** プロジェクト テンプレートを検索して選択し、 **[次へ]** をクリックします。
 
-4. プロジェクトに「**Bank**」という名前を設定して、**[作成]** をクリックします。
+4. プロジェクトに「**Bank**」という名前を設定して、 **[作成]** をクリックします。
 
-   Bank プロジェクトが作成され、コード エディターに *Class1.cs* ファイルが開いた状態で**ソリューション エクスプローラー**が表示されます。
+   Bank プロジェクトが作成され、コード エディターに *Program.cs* ファイルが開いた状態で**ソリューション エクスプローラー**が表示されます。
 
    > [!NOTE]
-   > コード エディターで *Class1.cs* が開いていない場合は、**ソリューション エクスプローラー**のファイル *Class1.cs* をダブルクリックして開きます。
+   > エディターで *Program.cs* が開いていない場合は、**ソリューション エクスプローラー**のファイル *Program.cs* をダブルクリックして開きます。
 
 ::: moniker-end
 
-5. 「[単体テストを作成するサンプル プロジェクト](../test/sample-project-for-creating-unit-tests.md)」からソース コードをコピーし、*Class1.cs* の元の内容をコピーしたコードに置き換えます。
+5. *Program.cs* のコンテンツを *BankAccount* クラスを定義する次の C# コードで置換します。
 
-6. ファイルを *BankAccount.cs* という名前で保存します。
+   ```csharp
+   using System;
+
+   namespace BankAccountNS
+   {
+       /// <summary>
+       /// Bank account demo class.
+       /// </summary>
+       public class BankAccount
+       {
+           private readonly string m_customerName;
+           private double m_balance;
+
+           private BankAccount() { }
+
+           public BankAccount(string customerName, double balance)
+           {
+               m_customerName = customerName;
+               m_balance = balance;
+           }
+
+           public string CustomerName
+           {
+               get { return m_customerName; }
+           }
+
+           public double Balance
+           {
+               get { return m_balance; }
+           }
+
+           public void Debit(double amount)
+           {
+               if (amount > m_balance)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               if (amount < 0)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               m_balance += amount; // intentionally incorrect code
+           }
+
+           public void Credit(double amount)
+           {
+               if (amount < 0)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               m_balance += amount;
+           }
+
+           public static void Main()
+           {
+               BankAccount ba = new BankAccount("Mr. Bryan Walton", 11.99);
+
+               ba.Credit(5.77);
+               ba.Debit(11.22);
+               Console.WriteLine("Current balance is ${0}", ba.Balance);
+           }
+       }
+   }
+   ```
+
+6. **ソリューション エクスプローラー**で右クリックして **[名前の変更]** を選択し、ファイルの名前を *BankAccount.cs* に変更します。
 
 7. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
-Bank という名前のプロジェクトができます。 これには、テストするソース コードとテストに使用するツールが含まれています。 Bank の BankAccountNS 名前空間には、パブリック クラス BankAccount が含まれます。そのメソッドを次の手順でテストします。
-
-この記事のテストは Debit メソッドに焦点を当てています。 Debit メソッドは、口座から現金が引き出されるときに呼び出されます。 メソッド定義は次のとおりです。
-
-```csharp
-// Method to be tested.
-public void Debit(double amount)
-{
-    if(amount > m_balance)
-    {
-        throw new ArgumentOutOfRangeException("amount");
-    }
-    if (amount < 0)
-    {
-        throw new ArgumentOutOfRangeException("amount");
-    }
-    m_balance += amount;
-}
-```
+これでテストできるプロジェクトとメソッドが用意されました。 この記事のテストは `Debit` メソッドに焦点を当てています。 `Debit` メソッドは、口座から現金が引き出されるときに呼び出されます。
 
 ## <a name="create-a-unit-test-project"></a>単体テスト プロジェクトを作成する
 
-1. **[ファイル]** メニューで **[追加]** > **[新しいプロジェクト]** の順に選択します。
+1. **[ファイル]** メニューで **[追加]**  >  **[新しいプロジェクト]** の順に選択します。
 
    > [!TIP]
-   > **ソリューション エクスプローラー**でソリューションを右クリックし、**[追加]** > **[新しいプロジェクト]** の順に選択することもできます。
+   > **ソリューション エクスプローラー**でソリューションを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択することもできます。
 
 ::: moniker range="vs-2017"
 
-2. **[新しいプロジェクト]** ダイアログ ボックスで、**[インストール済み]**、**[Visual C#]** の順に展開し、**[テスト]** を選択します。
+2. **[新しいプロジェクト]** ダイアログ ボックスで、 **[インストール済み]** 、 **[Visual C#]** の順に展開し、 **[テスト]** を選択します。
 
-3. テンプレートの一覧から、 **[単体テスト プロジェクト]** を選択します。
+3. テンプレートの一覧から、 **[MSTest テスト プロジェクト (.NET Core)]** を選択します。
 
-4. **[名前]** ボックスに「`BankTests`」と入力して、**[OK]** を選択します。
+4. **[名前]** ボックスに「`BankTests`」と入力して、 **[OK]** を選択します。
 
    **BankTests** プロジェクトが **Bank** ソリューションに追加されます。
 
@@ -118,9 +159,9 @@ public void Debit(double amount)
 
 ::: moniker range=">=vs-2019"
 
-2. C# **単体テスト プロジェクト** プロジェクト テンプレートを検索して選択し、**[次へ]** をクリックします。
+2. C# **MSTest テスト プロジェクト (.NET Core)** プロジェクト テンプレートを検索して選択し、 **[次へ]** をクリックします。
 
-3. プロジェクトに `BankTests` という名前を付けます。
+3. プロジェクトに **BankTests** という名前を付けます。
 
 4. **[作成]** をクリックします。
 
@@ -130,22 +171,31 @@ public void Debit(double amount)
 
 5. **BankTests** プロジェクトで、**Bank** プロジェクトへの参照を追加します。
 
-   **ソリューション エクスプローラー**で、**BankTests** プロジェクトの **[参照設定]** を選択し、右クリック メニューの **[参照の追加]** を選択します。
+   **ソリューション エクスプローラー**で、**BankTests** プロジェクトの **[依存関係]** を選択し、右クリック メニューの **[参照の追加]** を選択します。
 
-6. **[参照マネージャー]** ダイアログ ボックスで、**[ソリューション]** を展開し、**[Bank]** チェックボックスをオンにします。
+6. **[参照マネージャー]** ダイアログ ボックスで、 **[プロジェクト]** を展開し、 **[ソリューション]** を選択し、 **[Bank]** チェックボックスをオンにします。
+
+7. **[OK]** をクリックします。
 
 ## <a name="create-the-test-class"></a>テスト クラスを作成する
 
 `BankAccount` クラスを検証するテスト クラスを作成します。 プロジェクト テンプレートによって生成された *UnitTest1.cs* ファイルを使用できますが、ファイルとクラスにはよりわかりやすい名前を付けます。 **ソリューション エクスプローラー**でファイルの名前変更機能を使用すると、この処理を 1 つの手順で実行できます。
 
-### <a name="rename-a-class-file"></a>クラス ファイルの名前を変更する
+### <a name="rename-a-file-and-class"></a>ファイルとクラスの名前を変更する
 
-**ソリューション エクスプローラー**で、BankTests プロジェクトの *UnitTest1.cs* ファイルを選択します。 右クリック メニューの **[名前の変更]** をクリックし、ファイルの名前を *BankAccountTests.cs* に変更します。 プロジェクト内のコード要素 `UnitTest1` に対するすべての参照を名前変更するかどうかを確認するダイアログで、**[はい]** をクリックします。
+1. ファイルの名前を変更するには、**ソリューション エクスプローラー**で、BankTests プロジェクトの *UnitTest1.cs* ファイルを選択します。 右クリック メニューの **[名前の変更]** をクリックし、ファイルの名前を *BankAccountTests.cs* に変更します。
 
-この手順により、クラスの名前が `BankAccountTests`に変更されます。 *BankAccountTests.cs* ファイルには次のコードが含まれるようになりました。
+   ::: moniker range="vs-2017"
+
+   ダイアログ ボックスが表示されたら、 **[いいえ]** を選択します。
+
+   ::: moniker-end
+
+2. クラスの名前を変更するには、コード エディターで `UnitTest1` にカーソルを合わせ、**F2** を押します (あるいは、右クリックして **[名前の変更]** を選択します)。 「**BankAccountTests**」と入力し、**Enter** を押します。
+
+*BankAccountTests.cs* ファイルには次のコードが含まれるようになりました。
 
 ```csharp
-using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BankTests
@@ -161,9 +211,9 @@ namespace BankTests
 }
 ```
 
-### <a name="add-a-using-statement-to-the-project-under-test"></a>テスト対象のプロジェクトに using ステートメントを追加する
+### <a name="add-a-using-statement"></a>using ステートメントを追加する
 
-`using` ステートメントをクラスに追加して、完全修飾名を使用せずにテスト対象のプロジェクトに呼び出すことができるようにすることもできます。 クラス ファイルの先頭に次のように追加します。
+[`using` ステートメント](/dotnet/csharp/language-reference/keywords/using-statement)をクラスに追加し、完全修飾名を使用せずにテスト対象のプロジェクトに呼び出すことができるようにします。 クラス ファイルの先頭に次のように追加します。
 
 ```csharp
 using BankAccountNS;
@@ -173,15 +223,15 @@ using BankAccountNS;
 
 テスト クラスの最小要件は次のとおりです。
 
-- マネージド コード用の Microsoft 単体テスト フレームワークでは、テスト エクスプローラーで実行する単体テスト メソッドを含むすべてのクラスについて、 `[TestClass]` 属性が必要です。
+- テスト エクスプローラーで実行する単体テスト メソッドを含むすべてのクラスについて、`[TestClass]` 属性が必要です。
 
-- テスト エクスプローラーで実行する各テスト メソッドには、`[TestMethod]` 属性が必要です。
+- テスト エクスプローラーで認識する各テスト メソッドには、`[TestMethod]` 属性が必要です。
 
-単体テスト プロジェクトで `[TestClass]` 属性がない別のクラスを使用することができます。また、テスト クラスで `[TestMethod]` 属性がない別のメソッドを使用することもできます。 こうした別のクラスやメソッドをテスト メソッドで使用できます。
+単体テスト プロジェクトで `[TestClass]` 属性がない別のクラスを使用することができます。また、テスト クラスで `[TestMethod]` 属性がない別のメソッドを使用することもできます。 こうした別のクラスやメソッドをテスト メソッドから呼び出すことができます。
 
 ## <a name="create-the-first-test-method"></a>最初のテスト メソッドを作成する
 
-この手順では、`BankAccount` クラスの `Debit` メソッドの動作を検証する単体テスト メソッドを記述します。 `Debit` メソッドについては、この記事で前述されています。
+この手順では、`BankAccount` クラスの `Debit` メソッドの動作を検証する単体テスト メソッドを記述します。
 
 確認する必要がある動作は少なくとも 3 つあります。
 
@@ -217,7 +267,7 @@ public void Debit_WithValidAmount_UpdatesBalance()
 }
 ```
 
-このメソッドは単純です。期首残高を含む新しい `BankAccount` オブジェクトを設定し、有効な金額を引き出します。 期末残高が予想どおりであることを確認するには、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> メソッドを使用します。
+このメソッドは単純です。期首残高を含む新しい `BankAccount` オブジェクトを設定し、有効な金額を引き出します。 期末残高が予想どおりであることを確認するには、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=nameWithType> メソッドを使用します。
 
 ### <a name="test-method-requirements"></a>テスト メソッドの要件
 
@@ -233,26 +283,25 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
 1. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
-   エラーがない場合は、**テスト エクスプローラー**が表示され、**[テストを実行しない]** グループに **[Debit_WithValidAmount_UpdatesBalance]** が表示されます。
+2. **テスト エクスプローラー**が開いていない場合、上部のメニュー バーで **[テスト]** 、 **[Windows]** 、 **[テスト エクスプローラー]** の順に選択します。
 
-   > [!TIP]
-   > ビルドの成功後に**テスト エクスプローラー**が表示されない場合は、メニューの **[テスト]** をクリックし、**[ウィンドウ]**、**[テスト エクスプローラー]** の順に選択します。
+3. **[すべて実行]** をクリックしてテストを実行します。
 
-2. **[すべて実行]** をクリックしてテストを実行します。 テストの実行中は、ウィンドウの上部にあるステータス バーがアニメーション化されます。 テストの実行の終了時に、すべてのテスト メソッドが成功した場合はステータス バーが緑色に変わり、いずれかのテストが失敗した場合は赤色に変わります。
+   テストの実行中は、 **[テスト エクスプローラー]** ウィンドウの上部にあるステータス バーがアニメーション化されます。 テストの実行の終了時に、すべてのテスト メソッドが成功した場合はステータス バーが緑色に変わり、いずれかのテストが失敗した場合は赤色に変わります。
 
-3. この場合は、テストが失敗します。 このテスト メソッドは、**[失敗したテスト]** グループに移動します。 **テスト エクスプローラー**でメソッドを選択すると、ウィンドウの下部に詳細が表示されます。
+   この場合は、テストが失敗します。
+
+4. **テスト エクスプローラー**でメソッドを選択すると、ウィンドウの下部に詳細が表示されます。
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>コードを修正してテストを再実行する
 
-### <a name="analyze-the-test-results"></a>テスト結果を分析する
-
-テスト結果には失敗を示すメッセージが含まれています。 `AreEqual` メソッドについて、メッセージには、想定された事項 (**Expected\<*value*>** パラメーター) および実際に受け取られた事項 (**Actual\<*value*>** パラメーター) が示されます。 残高が減少することを予想していましたが、代わりに引き出し額の分だけ増加していました。
+テスト結果には失敗を示すメッセージが含まれています。 `AreEqual` メソッドの場合、メッセージには、予想された内容と実際に受け取られた内容が表示されます。 残高が減少することを予想していましたが、代わりに引き出し額の分だけ増加していました。
 
 単体テストにより、引き出し額は、*減算*する必要があるときに口座残高に*追加*されます。単体テストではバグがわかりました。
 
 ### <a name="correct-the-bug"></a>バグを修正する
 
-エラーを修正するには、行を置き換えます。
+エラーを修正するには、*BankAccount.cs* ファイルで次の行を
 
 ```csharp
 m_balance += amount;
@@ -266,7 +315,9 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>テストを再実行する
 
-**テスト エクスプローラー**で、**[すべて実行]** を選択してテストを再実行します。 赤色/緑色のステータス バーはテストが成功したことを示す緑色になり、テストは **[成功したテスト]** グループに移動されます。
+**テスト エクスプローラー**で、 **[すべて実行]** を選択してテストを再実行します。 赤/緑のバーが緑に変わり、テストに合格したことを示します。
+
+![テストに合格したことを示す Visual Studio 2019 のテスト エクスプローラー](media/test-explorer-banktests-passed.png)
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>単体テストを使用してコードを改良する
 
@@ -279,7 +330,7 @@ m_balance -= amount;
 - 残高よりも大きい、または
 - 0 未満。
 
-### <a name="create-the-test-methods"></a>テスト メソッドを作成する
+### <a name="create-and-run-new-test-methods"></a>新しいテスト メソッドを作成し、実行する
 
 引き落とし金額が 0 未満の場合の正しい動作を検証するテスト メソッドを作成します。
 
@@ -310,15 +361,13 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 
 3. `debitAmount` を、残高を上回る数値に設定します。
 
-### <a name="run-the-tests"></a>テストを実行
-
 2 つのテスト メソッドを実行すると、テストが正しく機能することがわかります。
 
 ### <a name="continue-the-analysis"></a>分析を継続する
 
-一方で、最後の 2 つのテスト メソッドには問題もあります。 いずれかのテストが実行されたときに、テスト対象のメソッドのどの条件が例外をスローするかを特定することはできません。 負の引き落とし金額または残高よりも大きい金額の 2 つの条件を区別するいくつかの方法を利用すると、テストの信頼が高くなります。
+テスト対象のメソッドは、さらに改善できます。 現在の実装では、テスト中にスローされた例外を招いた条件 (`amount > m_balance` または `amount < 0`) を把握する方法はありません。 メソッドのどこかで `ArgumentOutOfRangeException` がスローされたことしかわかりません。 メソッドでその引数が正しくサニティ チェックされていることを確信できるように、`BankAccount.Debit` 内の例外をスローさせた条件 (`amount > m_balance` または `amount < 0`) がわかる方がよいと考えます。
 
-テスト対象のメソッドをもう一度確認すると、引数の名前をパラメーターとして使用する `ArgumentOutOfRangeException` コンストラクターが両方の条件ステートメントで使用されていることがわかります。
+テスト対象のメソッド (`BankAccount.Debit`) をもう一度確認すると、引数の名前をパラメーターとして使用する `ArgumentOutOfRangeException` コンストラクターが両方の条件ステートメントで使用されていることがわかります。
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");
@@ -328,7 +377,7 @@ throw new ArgumentOutOfRangeException("amount");
 
 ### <a name="refactor-the-code-under-test"></a>テスト対象のコードをリファクタリングする
 
-最初に、エラー メッセージの 2 つの定数をクラス スコープで定義します。 これらをテスト対象のクラスに入れます (BankAccount)。
+最初に、エラー メッセージの 2 つの定数をクラス スコープで定義します。 これらを `BankAccount` テスト対象のクラスに入れます。
 
 ```csharp
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
@@ -383,7 +432,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 これはテスト メソッドのバグです。 この問題を解決するには、テスト メソッドの最後に <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> アサートを追加して、例外がスローされないケースを処理するようにします。
 
-ただし、テストを再実行すると、正しい例外がキャッチされた場合にテストが*失敗*したことが示されます。 `catch` ブロックは例外をキャッチしますが、メソッドは引き続き実行され、新しい <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> アサート時に失敗します。 この問題を解決するには、`catch` ブロックの `StringAssert` の後に `return` ステートメントを追加します。 テストを再実行して、この問題が解決したことを確認します。 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` の最終バージョンは、次のようになります。
+テストを再実行すると、正しい例外がキャッチされた場合にテストが*失敗*したことが示されます。 `catch` ブロックは例外をキャッチしますが、メソッドは引き続き実行され、新しい <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> アサート時に失敗します。 この問題を解決するには、`catch` ブロックの `StringAssert` の後に `return` ステートメントを追加します。 テストを再実行して、この問題が解決したことを確認します。 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` の最終バージョンは、次のようになります。
 
 ```csharp
 [TestMethod]
@@ -410,4 +459,13 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
+### <a name="conclusion"></a>まとめ
+
 テスト コードを改善することで、より堅牢で有益なテスト方法になりました。 ただし、もっと重要な点は、テスト対象のコードも改善されたことです。
+
+> [!TIP]
+> このチュートリアルでは、マネージド コード用の Microsoft 単体テスト フレームワークを使用します。 また、**テスト エクスプローラー**用のアダプターを備えたサード パーティの単体テスト フレームワークから**テスト エクスプローラー**を実行することもできます。 詳細については、「[サードパーティ製の単体テスト フレームワークをインストールする](../test/install-third-party-unit-test-frameworks.md)」をご覧ください。
+
+## <a name="see-also"></a>関連項目
+
+コマンド ラインからテストを実行する方法については、「[VSTest.Console.exe のコマンド ライン オプション](vstest-console-options.md)」を参照してください。

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: eff7b4b880526909c293e16aa32ae7045bcdf297
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62780035"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714377"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003:汎用イベント ハンドラーのインスタンスを使用します
 
@@ -41,7 +41,7 @@ ms.locfileid: "62780035"
 
 ## <a name="rule-description"></a>規則の説明
 
-.NET では、前に、イベント ハンドラーにカスタム情報を渡すために、新しいデリゲートする必要があるから派生したクラスが指定されている宣言、<xref:System.EventArgs?displayProperty=fullName>クラス。 これは、.NET ではなくなりました。 導入された .NET Framework、<xref:System.EventHandler%601?displayProperty=fullName>デリゲートから派生した任意のクラスを許可するジェネリック デリゲート<xref:System.EventArgs>イベント ハンドラーと共に使用します。
+.NET では、前に、イベント ハンドラーにカスタム情報を渡すために、新しいデリゲートする必要があるから派生したクラスが指定されている宣言、<xref:System.EventArgs?displayProperty=fullName>クラス。 .Net では、ジェネリック<xref:System.EventHandler%601?displayProperty=fullName>デリゲートにより、任意のクラスから派生した<xref:System.EventArgs>イベント ハンドラーと共に使用します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
@@ -57,7 +57,7 @@ ms.locfileid: "62780035"
 
 この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
 
-```
+```ini
 dotnet_code_quality.ca1003.api_surface = private, internal
 ```
 

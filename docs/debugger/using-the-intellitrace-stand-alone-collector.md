@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407626"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746106"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>IntelliTrace スタンドアロン コレクターを使用して (C#、Visual Basic)
 
@@ -111,7 +111,7 @@ ms.locfileid: "63407626"
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > ピリオド (**.**) を指定することにより、ローカライズされた収集計画を含むサブフォルダーが保持されます。
+       > ピリオド ( **.** ) を指定することにより、ローカライズされた収集計画を含むサブフォルダーが保持されます。
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> コレクター ディレクトリのアクセス許可を設定する
 
@@ -151,7 +151,7 @@ ms.locfileid: "63407626"
 
     1. 管理者として PowerShell コマンド ウィンドウを開きます。
 
-        1. **[スタート]**、 **[すべてのプログラム]**、 **[アクセサリ]**、 **[Windows PowerShell]** の順に選択します。
+        1. **[スタート]** 、 **[すべてのプログラム]** 、 **[アクセサリ]** 、 **[Windows PowerShell]** の順に選択します。
 
         2. 次のいずれかの操作を実行します。
 
@@ -197,11 +197,11 @@ ms.locfileid: "63407626"
 
      1. .iTrace ファイル ディレクトリの **[プロパティ]** を開きます。
 
-     2. **[セキュリティ]** タブで、 **[編集]**、 **[追加]** を順に選択します。
+     2. **[セキュリティ]** タブで、 **[編集]** 、 **[追加]** を順に選択します。
 
-     3. **[オブジェクトの種類を選択してください]** ボックスに **[ビルトイン セキュリティ プリンシパル]** が表示されることを確認します。 表示されない場合は、**[オブジェクトの種類]** を選択してこれを追加します。
+     3. **[オブジェクトの種類を選択してください]** ボックスに **[ビルトイン セキュリティ プリンシパル]** が表示されることを確認します。 表示されない場合は、 **[オブジェクトの種類]** を選択してこれを追加します。
 
-     4. ローカル コンピューターが **[場所の指定]** ボックスに表示されることを確認します。 表示されない場合は、**[場所]** を選択してこれを追加します。
+     4. ローカル コンピューターが **[場所の指定]** ボックスに表示されることを確認します。 表示されない場合は、 **[場所]** を選択してこれを追加します。
 
      5. **[選択するオブジェクト名を入力してください]** ボックスに、Web アプリまたは SharePoint アプリケーションのアプリケーション プールを追加します。
 
@@ -377,9 +377,7 @@ ms.locfileid: "63407626"
 
 ## <a name="WhereElse"></a> IntelliTrace データを取得できるその他の場所
 
-- IntelliTrace デバッグ セッションを Visual Studio Enterprise から次を参照してください。 [IntelliTrace 機能](../debugger/intellitrace-features.md)します。
-
-- Microsoft Test Manager でのテスト セッションから次を参照してください。[方法。困難な問題をデバッグに役立つ IntelliTrace データを収集](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)します。
+デバッグ セッションを Visual Studio Enterprise で、IntelliTrace から、IntelliTrace データを取得することができます。 参照してください[IntelliTrace 機能](../debugger/intellitrace-features.md)します。
 
 ## <a name="where-can-i-get-more-information"></a>情報の入手方法
  [保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)

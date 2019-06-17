@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_METHOD structure
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 43d8bd1a32328c47cd463fc6232466df5bdbd857
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 03a8e4850a2a18ec55655934618ba42a694b412d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461021"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347363"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 この構造体は、クラスのメソッドのアドレスを表します。
@@ -45,17 +45,14 @@ public struct METADATA_ADDRESS_METHOD {
 
 ## <a name="members"></a>メンバー
  `tokMethod`\
-
  メソッドの ID。
 
  [C++]`_mdToken`は、 `typedef` 32 ビット`int`します。
 
  `dwOffset`\
-
  クラスからのオフセットは、このメソッドが (vtable へのオフセットを表すことができます) を開始します。
 
  `dwVersion`\
-
  (この値は、シンボル プロバイダーに固有) メソッドのバージョン。
 
 ## <a name="remarks"></a>Remarks

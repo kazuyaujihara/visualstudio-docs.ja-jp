@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricDword
 ms.assetid: 831a5a1a-c4af-4520-9fdf-3a731aeff85c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f52205cd530e638146abe423890d6477fe62b45d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: fc685d043b405fbd78a446722e41df4ca584b8e3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457332"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322034"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 指定した名前のメトリックの値を取得します。
@@ -44,21 +44,17 @@ private int GetMetricDword(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pszType`\
+`pszType`\
+[in]メトリックの種類です。
 
- [in]メトリックの種類です。
+`guidSection`\
+[in]セクションの一意の識別子。
 
- `guidSection`\
+`pszMetric`\
+[in]メトリックの名前。
 
- [in]セクションの一意の識別子。
-
- `pszMetric`\
-
- [in]メトリックの名前。
-
- `pdwValue`\
-
- [out]メトリックの値を返します。
+`pdwValue`\
+[out]メトリックの値を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

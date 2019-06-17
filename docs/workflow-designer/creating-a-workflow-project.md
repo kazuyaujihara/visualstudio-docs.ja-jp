@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c02312d5c257f13b9c0394790bc8a2611d7972
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e19ec88a4dec7a13ecc3d77e5d4fc1f04bb114bd
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949800"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747798"
 ---
 # <a name="workflow-project-templates"></a>ワークフロー プロジェクト テンプレート
 
@@ -67,7 +67,7 @@ Visual Studio には、4 つの異なるワークフロー プロジェクト �
 カスタム アクティビティ デザイナーを実装する方法の例は、次を参照してください。[方法。カスタム アクティビティ デザイナーを作成](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer)です。
 
 > [!NOTE]
-> カスタム アクティビティと .NET Framework の既定の活動は、カスタム アクティビティ デザイナーを使用できます。
+> カスタム アクティビティと .NET アクティビティの既定のカスタム アクティビティ デザイナーを使用できます。
 
 ## <a name="see-also"></a>関連項目
 

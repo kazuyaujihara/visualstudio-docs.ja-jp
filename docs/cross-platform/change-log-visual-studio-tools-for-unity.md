@@ -1,7 +1,7 @@
 ---
 title: 変更ログ (Visual Studio Tools for Unity、Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 05/28/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,75 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f6523f958d334108eb6a3fbe9e5c44e416ff8df7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: acf80d1c700c0ac6c889ecd786a53cccda8604f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403195"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327353"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>変更ログ (Visual Studio Tools for Unity、Windows)
 Visual Studio Tools for Unity の変更ログです。
+
+## <a name="4110"></a>4.1.1.0
+ リリース日: 2019 年 5 月 24 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+    - MonoBehaviour API を 2019.1 に更新しました。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+    - ライトウェイト ビルドが有効な場合に、警告とエラーが出力に報告されることを修正しました。
+    
+    - ライトウェイト ビルドのパフォーマンスを修正しました。
+
+## <a name="4100"></a>4.1.0.0
+ リリース日: 2019 年 5 月 21 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+    - プロジェクトの再読み込みを高速化する新しいバッチ API のサポートを追加しました。
+    
+    - IntelliSense エラーと警告の使用を優先して、Unity プロジェクトのフル ビルドを無効にしました。 Indeed Unity では、Unity が内部で実行していることを表すクラス ライブラリ プロジェクトによって Visual Studio ソリューションが作成されます。 ただし、Visual Studio でのビルドの結果は、Unity によって使用されたり、選択されたりすることはありません。それらのコンパイル パイプラインが閉じているためです。 Visual Studio でのビルドによって、何もしなくてもリソースが消費されます。 フル ビルドに依存するツールまたは設定があるため、フル ビルドを必要とする場合は、この最適化を無効にできます ([ツール]/[オプション]/[Tools for Unity]/[プロジェクトのフル ビルドを無効にする])。 
+
+    - Unity プロジェクトが読み込まれると、Unity プロジェクト エクスプローラー (UPE) が自動的に表示されます。 UPE はソリューション エクスプローラーの横にドッキングされます。
+    
+    - Unity 2019.x によるプロジェクト名抽出メカニズムを更新しました。
+
+    - UPE での Unity パッケージのサポートを追加しました。 参照されているパッケージ (```Packages``` フォルダー内の manifest.json を使用して) とローカル パッケージ (```Packages``` フォルダーに埋め込まれた) のみが表示されます。
+    
+- **プロジェクトの生成:**
+
+    - ソリューション ファイルを処理するときに、外部のプロパティを保持します。
+
+- **評価:**
+
+    - 別名で修飾された名前 (現在のところグローバル名前空間のみ) のサポートを追加しました。 そのため、式エバリュエーターで形式 global::namespace.type を使用した型を受け付けるようになりました。
+    
+    - ```pointer[index]``` 形式のサポートを追加しました。これはポインター逆参照 ```*(pointer+index)``` 形式と同じ意味です。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+    - Microsoft.VisualStudio.MPF の依存関係の問題を修正しました。
+    
+    - プロジェクトが読み込まれていない状態での UWP プレーヤーのアタッチを修正しました。
+    
+    - Visual Studio がまだ接続されていない場合の、資産データベースの自動更新を修正しました。
+    
+    - ラベルとチェック ボックスのテーマの問題を修正しました。
+    
+- **デバッガー:**
+
+    - 静的コンストラクターによるステップ実行を修正しました。
 
 ## <a name="4005"></a>4.0.0.5
  リリース日: 2019 年 2 月 27 日

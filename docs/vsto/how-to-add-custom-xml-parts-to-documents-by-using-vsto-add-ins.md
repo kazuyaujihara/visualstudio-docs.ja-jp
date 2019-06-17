@@ -1,5 +1,5 @@
 ---
-title: '方法: VSTO アドインを使用して、カスタム XML 部分をドキュメントに追加します。'
+title: VSTO アドインを使用してドキュメントにカスタム XML 部分を追加します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efc580df2a0469a44eeeff8f3c2543c072fe65ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a22620fc112dab49942340175860303f50f9c39e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826661"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210783"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>方法: VSTO アドインを使用して、カスタム XML 部分をドキュメントに追加します。
   VSTO アドインでカスタム XML 部分を作成することにより、次のタイプのドキュメントに XML データを格納できます。

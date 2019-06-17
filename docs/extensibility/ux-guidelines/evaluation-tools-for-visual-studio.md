@@ -3,17 +3,17 @@ title: Visual Studio の評価ツール |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11856141a6c3f5ca186428d67edf10fdbd35787b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77e6dca01f728ae4a5a3f0a5f12f50ab581948c6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798381"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335383"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Visual Studio の評価ツール
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Visual Studio の職人気質のチェックリスト
@@ -47,7 +47,7 @@ ms.locfileid: "62798381"
 
 - グループ ヘッダーと、ボタンを除く、すべてのラベルが最後にコロンとが組み合わされるコントロールの前にことを確認します。
 
-- 省略記号ボタン、コマンド、およびユーザー入力をキャプチャする UI を起動するコマンド リンクが終了することを確認 **[...]**.
+- 省略記号ボタン、コマンド、およびユーザー入力をキャプチャする UI を起動するコマンド リンクが終了することを確認 **[...]** .
 
      次に例を示します。 
 
@@ -99,7 +99,7 @@ ms.locfileid: "62798381"
 
 #### <a name="dialog-operation-buttons-vs-client-only"></a>ダイアログの操作ボタン (VS クライアントのみ)
 
-- 操作ボタンがこの順序であることを確認します。**[Ok]**、**キャンセル**、**適用**します。
+- 操作ボタンがこの順序であることを確認します。 **[Ok]** 、**キャンセル**、**適用**します。
 
 - いることを確認**OK**と**キャンセル**ボタンは標準のサイズ。75 x 23 ピクセルです。
 
@@ -157,11 +157,11 @@ ms.locfileid: "62798381"
 
 - 省略記号のみを含む小さな正方形のボタンを使用することができます **[...]** の代わりに、 **[参照...]** ボタン (または同様の機能)。 使用する場合は、ボタンが 23 x 23 のサイズを確認します。
 
-- 1 つ以上を使用する必要がある場合 **[参照...]** 、ダイアログにボタンをクリックし、いることを確認短縮バージョン (省略記号のみ **[...]**) すべてに使用されます。
+- 1 つ以上を使用する必要がある場合 **[参照...]** 、ダイアログにボタンをクリックし、いることを確認短縮バージョン (省略記号のみ **[...]** ) すべてに使用されます。
 
 - その省略記号を確認します **[...]。** ボタンのニーモニックはありません。 横にある入力コントロールにフォーカスがある場合、1 つのタブは、省略記号ボタンにフォーカスを移動する必要があります。
 
-- 確認ボタン、コマンド、および複数のユーザー入力をキャプチャするセカンダリ UI を起動するコマンド リンクは、省略記号で終了する必要があります **[...]**.
+- 確認ボタン、コマンド、および複数のユーザー入力をキャプチャするセカンダリ UI を起動するコマンド リンクは、省略記号で終了する必要があります **[...]** .
 
 #### <a name="hyperlinks"></a>ハイパーリンク
 

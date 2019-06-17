@@ -13,18 +13,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: d89dbc0b752c2b8c538ec53769c166b6edbd802f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902879"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043461"
 ---
 1. リモート コンピューターでは、検索および開始、**リモート デバッガー**から、**開始**メニュー。 
    
    リモート コンピューターの管理アクセス許可を持ちを右クリックし、**リモート デバッガー**アプリと選択**管理者として実行**します。 それ以外の場合だけ、正常に起動します。
 
-   さまざまなバージョンである可能性があります*msvsmon.exe*で*x64*、 *x32*、またはその他のフォルダー。 アプリのデバッグに必要なバージョンを開始してください。 
+   (IIS) などのアカウントが、管理者として実行されているか、別のユーザーで実行されているプロセスにアタッチしようとしている場合を右クリックし、**リモート デバッガー**アプリと選択**を管理者として実行**. 詳細については、次を参照してください。[リモート デバッガーを管理者として実行](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator)します。
    
 1. 最初に、リモート デバッガーを起動する (または構成する前に)、**リモート デバッグの構成** ダイアログ ボックスが表示されます。  
   

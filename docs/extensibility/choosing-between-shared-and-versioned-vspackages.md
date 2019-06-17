@@ -7,22 +7,22 @@ helpviewer_keywords:
 - side-by-side installation
 - installation [Visual Studio SDK], side-by-side
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 705fe42cf158992bb041ac9b75348f7b25945631
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de7bb2ee0335322e0b089fd2af81026b1f6bd1ca
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892272"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747790"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>共有およびバージョン管理 Vspackage を選択します。
 異なるバージョンの Visual Studio は、同じコンピューターに共存できます。 Vspackage が任意の組み合わせをサポートできる[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]バージョン。
 
- Vspackage の 2 つの方法、共有戦略またはバージョン管理戦略のいずれかでのサイド バイ サイドでインストールを有効にすることができます。 複数のバージョンの存在を合わせて両方[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]のバージョンに関連付けられていると、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]します。
+ Vspackage の 2 つの方法、共有戦略またはバージョン管理戦略のいずれかでのサイド バイ サイドでインストールを有効にすることができます。 複数のバージョンのプレゼンスを合わせて両方[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]および関連する .NET Framework のバージョン。
 
  複数のバージョンで使用するため共有戦略の 1 つの VSPackage が登録されている[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]します。 バージョン管理戦略の VSPackage の複数の Dll がインストールされている、1 つのバージョンごとに[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]サポートしています。
 

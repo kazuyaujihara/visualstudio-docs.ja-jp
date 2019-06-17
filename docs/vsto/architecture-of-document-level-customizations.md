@@ -84,18 +84,18 @@ ms.locfileid: "63440369"
 
 |Excel|Word|
 |-----------|----------|
-|Excel ブック (*.xlsx*)<br /><br /> Excel マクロ有効ブック (*.xlsm*)<br /><br /> Excel バイナリ ブック (*.xlsb*)<br /><br /> Excel 97-2003 ブック (*.xls*)<br /><br /> Excel テンプレート (*.xltx*)<br /><br /> Excel マクロ有効テンプレート (*.xltm*)<br /><br /> Excel 97-2003 テンプレート (*.xlt*)|Word 文書 (*.docx*)<br /><br /> Word マクロ有効文書 (*.docm*)<br /><br /> Word 97-2003 文書 (*.doc*)<br /><br /> Word テンプレート (*.dotx*)<br /><br /> Word マクロ有効テンプレート (*.dotm*)<br /><br /> Word 97-2003 テンプレート (*.dot*)|
+|Excel ブック ( *.xlsx*)<br /><br /> Excel マクロ有効ブック ( *.xlsm*)<br /><br /> Excel バイナリ ブック ( *.xlsb*)<br /><br /> Excel 97-2003 ブック ( *.xls*)<br /><br /> Excel テンプレート ( *.xltx*)<br /><br /> Excel マクロ有効テンプレート ( *.xltm*)<br /><br /> Excel 97-2003 テンプレート ( *.xlt*)|Word 文書 ( *.docx*)<br /><br /> Word マクロ有効文書 ( *.docm*)<br /><br /> Word 97-2003 文書 ( *.doc*)<br /><br /> Word テンプレート ( *.dotx*)<br /><br /> Word マクロ有効テンプレート ( *.dotm*)<br /><br /> Word 97-2003 テンプレート ( *.dot*)|
 
- サポートされている形式のドキュメントに対してだけ、マネージド コード拡張機能を設計する必要があります。 そうしないと、アプリケーションでドキュメントを開くときに、特定のイベントが発生しない可能性があります。 たとえば、 <xref:Microsoft.Office.Tools.Excel.Workbook.Open> Excel XML スプレッドシート形式または web ページに保存するブックでマネージ コード拡張機能を使用すると、イベントは発生しません (*.htm*;*.html*) 形式。
+ サポートされている形式のドキュメントに対してだけ、マネージド コード拡張機能を設計する必要があります。 そうしないと、アプリケーションでドキュメントを開くときに、特定のイベントが発生しない可能性があります。 たとえば、 <xref:Microsoft.Office.Tools.Excel.Workbook.Open> Excel XML スプレッドシート形式または web ページに保存するブックでマネージ コード拡張機能を使用すると、イベントは発生しません ( *.htm*; *.html*) 形式。
 
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>.Xml ファイル名拡張子を持つ Word 文書のサポート
  ドキュメント レベルのプロジェクト テンプレートを使用して、次のファイル形式に基づくプロジェクトを作成することはできません。
 
-- Word XML 文書 (*\*xml*)。
+- Word XML 文書 ( *\*xml*)。
 
-- Word 2003 XML 文書 (*\*xml*)。
+- Word 2003 XML 文書 ( *\*xml*)。
 
-  エンド ユーザーがこれらのファイル形式でカスタマイズを使用できるようにするには、前の表に示した、サポートされているいずれかのファイル形式に基づくカスタマイズを作成して配置します。 カスタマイズをインストールすると、エンドユーザーは、Word XML ドキュメントのドキュメントを保存できます (*\*xml*) 形式または Word 2003 XML 文書 (*\*xml*) 形式、およびカスタマイズは引き続き期待どおりに動作します。
+  エンド ユーザーがこれらのファイル形式でカスタマイズを使用できるようにするには、前の表に示した、サポートされているいずれかのファイル形式に基づくカスタマイズを作成して配置します。 カスタマイズをインストールすると、エンドユーザーは、Word XML ドキュメントのドキュメントを保存できます ( *\*xml*) 形式または Word 2003 XML 文書 ( *\*xml*) 形式、およびカスタマイズは引き続き期待どおりに動作します。
 
 ## <a name="Components"></a> カスタマイズのコンポーネント
  カスタマイズの主要なコンポーネントは、ドキュメントとアセンブリです。 これらのコンポーネントに加えて、Microsoft Office アプリケーションがカスタマイズを検出して読み込むときに重要な役割を果たすものがあります。
@@ -139,7 +139,7 @@ ms.locfileid: "63440369"
 
 8. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は、カスタマイズ アセンブリをアプリケーション ドメインに読み込みます。
 
-9.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は、カスタマイズ アセンブリ内の **Startup** イベント ハンドラーを呼び出します。 詳細については、次を参照してください[Office プロジェクト内のイベント。](../vsto/events-in-office-projects.md)
+9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は、カスタマイズ アセンブリ内の **Startup** イベント ハンドラーを呼び出します。 詳細については、次を参照してください[Office プロジェクト内のイベント。](../vsto/events-in-office-projects.md)
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio での Office ソリューションのアーキテクチャ](../vsto/architecture-of-office-solutions-in-visual-studio.md)

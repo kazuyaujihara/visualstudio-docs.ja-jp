@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83156630aee0727502894b286f8c6823e25a5fe9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eef0507ccb7036748f5c9d36c9de521a17860a39
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399262"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032709"
 ---
 # <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
 ターゲット CPU の種類を取得します。
@@ -33,7 +33,7 @@ HRESULT get_machineType ( 
 #### <a name="parameters"></a>パラメーター
  `pRetVal`
 
-[out]値を返します、 [CV_CPU_TYPE_e 列挙型](../../debugger/debug-interface-access/cv-cpu-type-e.md)ターゲット CPU の種類を指定する列挙体。
+[out]値を返します、 [IMAGE_FILE_MACHINE_ 定数](/windows/desktop/SysInfo/image-file-machine-constants)ターゲット CPU の種類を指定します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。
@@ -42,5 +42,5 @@ HRESULT get_machineType ( 
 > 戻り値`S_FALSE`プロパティが、シンボルの使用可能なことを意味します。
 
 ## <a name="see-also"></a>関連項目
-- [CV_CPU_TYPE_e 列挙型](../../debugger/debug-interface-access/cv-cpu-type-e.md)
+- [IMAGE_FILE_MACHINE_ 定数](/windows/desktop/SysInfo/image-file-machine-constants) 
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

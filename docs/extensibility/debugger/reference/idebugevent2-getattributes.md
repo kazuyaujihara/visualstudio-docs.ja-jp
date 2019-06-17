@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEvent2::GetAttributes
 ms.assetid: 2ac5b5fb-da17-43f7-811a-313f677e60d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 140b47af958e8f4623dd5921aa6046926737cf38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f85cccb01a31232cccc39e44fae7accbfa4f954
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920078"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327588"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 このデバッグ イベントの属性を取得します。
@@ -36,10 +39,9 @@ int GetAttribute( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pdwAttrib`
-
- [out]フラグの組み合わせ、[複数](../../../extensibility/debugger/reference/eventattributes.md)列挙体。
+## <a name="parameters"></a>パラメーター
+`pdwAttrib`\
+[out]フラグの組み合わせ、[複数](../../../extensibility/debugger/reference/eventattributes.md)列挙体。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

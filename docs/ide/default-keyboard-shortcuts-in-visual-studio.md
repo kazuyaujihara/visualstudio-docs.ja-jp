@@ -13,22 +13,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55e035ab0c3702c571b69b555d99adbf7cb0b7e9
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962042"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501171"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio の既定のキーボード ショートカット
 
 キーボードのアクセシビリティの詳細については、「[アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)」と「[方法:キーボード主体で操作する](../ide/reference/how-to-use-the-keyboard-exclusively.md)」を参照してください。
 
-Visual Studio のさまざまなコマンドやウィンドウには、該当するショートカット キーを押すことでアクセスできます。 このトピックでは、Visual Studio のインストール時に選択できる [全般的な開発設定] プロファイルの既定のショートカット キーを一覧します。 選択したプロファイルにかかわらず、**[オプション]** ダイアログ ボックスを開き、**[環境]** ノードを展開して、**[キーボード]** を選択することで、コマンドのショートカット キーを確認できます。 また、別のショートカット キーを任意のコマンドに割り当てることで、ショートカット キーをカスタマイズすることもできます。
+Visual Studio のさまざまなコマンドやウィンドウには、該当するショートカット キーを押すことでアクセスできます。 このページでは、Visual Studio のインストール時に選択できる **[全般]** プロファイルの既定のショートカットを一覧表示します。 選択したプロファイルにかかわらず、 **[オプション]** ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、コマンドのショートカット キーを確認できます。 また、別のショートカット キーを任意のコマンドに割り当てることで、ショートカット キーをカスタマイズすることもできます。
 
-一般的なショートカット キーの一覧、およびその他の生産性向上に関する情報については、「[Visual Studio で頻繁に使用するコマンドに対応する既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)」、[キーボードに関するヒント](../ide/tips-and-tricks-for-visual-studio.md)、[生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)の各記事をご覧ください。
-
-次の表の各セクションでは、ショートカット キーを使用して Visual Studio の任意の場所から [全体] コンテキストでアクセスできるコマンドを示しています。
+一般的なキーボード ショートカットの一覧、およびその他の生産性向上に関する情報については、「[Visual Studio で頻繁に使用するコマンドに対応する既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)」、[キーボードに関するヒント](../ide/tips-and-tricks-for-visual-studio.md)、[生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)をご覧ください。
 
 |||||
 |-|-|-|-|
@@ -40,7 +38,9 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |[デバッガー コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[その他のコンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[診断ハブ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-## <a name="bkmk_global"></a> グローバル
+## <a name="global-shortcuts"></a>グローバル ショートカット
+
+以下のキーボード ショートカットは*グローバル*です。つまり、Visual Studio ウィンドウにフォーカスがある場合にそれらを使用できます。
 
 ### <a name="bkmk_analyze"></a> 解析
 
@@ -109,7 +109,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Debug.ParallelWatch3|**Ctrl + Shift + D、3**|
 |Debug.ParallelWatch4|**Ctrl + Shift + D、4**|
 |Debug.Processes|**Ctrl + Alt + Z**|
-|Debug.QuickWatch|**Shift + F9**<br /><br /> または<br /><br /> **Ctrl + Alt + Q**|
+|Debug.QuickWatch|**Shift + F9**<br /><br /> or<br /><br /> **Ctrl + Alt + Q**|
 |Debug.RefreshWindowsapp|**Ctrl + Shift + R**|
 |Debug.Registers|**Ctrl + Alt + G**|
 |Debug.Restart|**Ctrl + Shift + F5**|
@@ -125,7 +125,8 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Debug.StepIntoSpecific|**Shift + Alt + F11**|
 |Debug.StepOut|**Shift + F11**|
 |Debug.StepOutCurrentProcess|**Ctrl + Shift + Alt + F11**|
-|Debug.StepOver|**F10**|
+|Debug.StepOver|**F10** (デバッグ時:ステップ オーバー操作を実行する)|
+|Debug.StepOver|**F10** (デバッグ以外:デバッグを開始し、ユーザー コードの最初の行で停止する)|
 |Debug.StepOverCurrentProcess|**Ctrl + Alt + F10**|
 |Debug.StopDebugging|**Shift + F5**|
 |Debug.StopPerformanceAnalysis|**Shift + Alt + F2**|
@@ -156,10 +157,11 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 
 |コマンド|キーボード ショートカット|
 |--------------|-|
-|Edit.Copy|**Ctrl + C**<br /><br /> または<br /><br /> **Ctrl + Ins**|
-|Edit.Cut|**Ctrl + X**<br /><br /> または<br /><br /> **Shift + Delete**|
-|Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> または<br /><br /> **Ctrl + Shift + Ins**|
+|Edit.Copy|**Ctrl + C**<br /><br /> or<br /><br /> **Ctrl + Ins**|
+|Edit.Cut|**Ctrl + X**<br /><br /> or<br /><br /> **Shift + Delete**|
+|Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> or<br /><br /> **Ctrl + Shift + Ins**|
 |Edit.Delete|**削除**|
+|Edit.Duplicate|**Ctrl + D**|
 |Edit.Find|**Ctrl + F**|
 |Edit.FindAllReferences|**Shift+F12**|
 |Edit.FindinFiles|**Ctrl + Shift + F**|
@@ -169,11 +171,12 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Edit.FindPreviousSelected|**Ctrl + Shift + F3**|
 |Edit.GenerateMethod|**Ctrl + K、Ctrl + M**|
 |Edit.GoTo|**Ctrl + G**|
+|Edit.GoToAll|**Ctrl +、** または **Ctrl + T**|
 |Edit.GoToDeclaration|**Ctrl + F12**|
 |Edit.GoToDefinition|**F12**|
-|Edit.GoToFindCombo|**Ctrl + D**|
-|Edit.GoToNextLocation|**F8**|
-|Edit.GoToPrevLocation|**Shift + F8**|
+|Edit.GoToMember|**Ctrl + 1、Ctrl + M** または **Ctrl + 1、M** または **Alt +\\**|
+|Edit.GoToNextLocation|**F8** ([エラー一覧] または [出力] ウィンドウ内の次のエラー)|
+|Edit.GoToPrevLocation|**Shift + F8** ([エラー一覧] または [出力] ウィンドウ内の前のエラー)|
 |Edit.InsertSnippet|**Ctrl + K、Ctrl + X**|
 |Edit.MoveControlDown|**Ctrl + ↓**|
 |Edit.MoveControlDownGrid|**↓ キー**|
@@ -183,15 +186,14 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Edit.MoveControlRightGrid|**→ キー**|
 |Edit.MoveControlUp|**Ctrl + ↑**|
 |Edit.MoveControlUpGrid|**↑ キー**|
-|Edit.NavigateTo|**Ctrl + ,**|
 |Edit.NextBookmark|**Ctrl + K、Ctrl + N**|
 |Edit.NextBookmarkInFolder|**Ctrl + Shift + K、Ctrl + Shift + N**|
-|Edit.OpenFile|**Ctrl + Shift + G**|
-|Edit.Paste|**Ctrl + V**<br /><br /> または<br /><br /> **Shift + Ins**|
+|Edit.OpenFile|**Ctrl + Shift + G** (カーソルの下のファイル名が開きます)|
+|Edit.Paste|**Ctrl + V**<br /><br /> or<br /><br /> **Shift + Ins**|
 |Edit.PreviousBookmark|**Ctrl + K、Ctrl + P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl + Shift + K、Ctrl + Shift + P**|
 |Edit.QuickFindSymbol|**Shift + Alt + F12**|
-|Edit.Redo|**Ctrl + Y**<br /><br /> または<br /><br /> **Ctrl + Shift + Z**<br /><br /> または<br /><br /> **Shift + Alt + Backspace**|
+|Edit.Redo|**Ctrl + Y**<br /><br /> or<br /><br /> **Ctrl + Shift + Z**<br /><br /> or<br /><br /> **Shift + Alt + Backspace**|
 |Edit.RefreshRemoteReferences|**Ctrl + Shift + J**|
 |Edit.Replace|**Ctrl + H**|
 |Edit.ReplaceinFiles|**Ctrl + Shift + H**|
@@ -209,7 +211,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Edit.SizeControlUpGrid|**Shift + ↑**|
 |Edit.StopSearch|**Alt + F3、S**|
 |Edit.SurroundWith|**Ctrl + K、Ctrl + S**|
-|Edit.Undo|**Ctrl + Z**<br /><br /> または<br /><br /> **Alt + Backspace**|
+|Edit.Undo|**Ctrl + Z**<br /><br /> or<br /><br /> **Alt + Backspace**|
 
 ### <a name="bkmk_editorContext"></a> エディター コンテキスト メニュー
 
@@ -220,7 +222,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |EditorContextMenus.CodeWindow.Execute|**Ctrl + Alt + F5**|
 |EditorContextMenus.CodeWindow.GoToView|**Ctrl + M、Ctrl + G**|
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Ctrl + K、Ctrl + O** (文字 'O')|
-|EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl + K、Ctrl + T**<br /><br /> または<br /><br /> **Ctrl + K、T**|
+|EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl + K、Ctrl + T**<br /><br /> or<br /><br /> **Ctrl + K、T**|
 
 ### <a name="bkmk_file"></a> ファイル
 
@@ -293,33 +295,33 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**Ctrl + [**、**O** (文字 'O')<br /><br /> または<br /><br /> **Ctrl + [**、**Ctrl + O** (文字 'O')|
-|SolutionExplorer.PendingChangesFilter|**Ctrl + [**、**P**<br /><br /> または<br /><br /> **Ctrl + [**、**Ctrl + P**|
-|SolutionExplorer.SyncWithActiveDocument|**Ctrl + [**、**S**<br /><br /> または<br /><br /> **Ctrl + [**、**Ctrl + S**|
+|SolutionExplorer.OpenFilesFilter|**Ctrl + [** 、**O** (文字 'O')<br /><br /> or<br /><br /> **Ctrl + [** 、**Ctrl + O** (文字 'O')|
+|SolutionExplorer.PendingChangesFilter|**Ctrl + [** 、**P**<br /><br /> or<br /><br /> **Ctrl + [** 、**Ctrl + P**|
+|SolutionExplorer.SyncWithActiveDocument|**Ctrl + [** 、**S**<br /><br /> or<br /><br /> **Ctrl + [** 、**Ctrl + S**|
 
 ### <a name="bkmk_team"></a> チーム
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
-|Team.Git.GoToGitBranches|**Ctrl + 0** (ゼロ)、**Ctrl + N**<br /><br /> または<br /><br /> **Ctrl + 0、N**|
-|Team.Git.GoToGitChanges|**Ctrl + 0** (ゼロ)、**Ctrl + G**<br /><br /> または<br /><br /> **Ctrl + 0、G**|
-|Team.Git.GoToGitCommits|**Ctrl + 0** (ゼロ)、**Ctrl + O** (文字 'O')<br /><br /> または<br /><br /> **Ctrl + 0、O**|
+|Team.Git.GoToGitBranches|**Ctrl + 0** (ゼロ)、**Ctrl + N**<br /><br /> or<br /><br /> **Ctrl + 0、N**|
+|Team.Git.GoToGitChanges|**Ctrl + 0** (ゼロ)、**Ctrl + G**<br /><br /> or<br /><br /> **Ctrl + 0、G**|
+|Team.Git.GoToGitCommits|**Ctrl + 0** (ゼロ)、**Ctrl + O** (文字 'O')<br /><br /> or<br /><br /> **Ctrl + 0、O**|
 |Team.TeamExplorerSearch|**Ctrl + '**|
 
 ### <a name="bkmk_TFcontext"></a> Team Foundation コンテキスト メニュー
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
-|TeamFoundationContextMenus.Commands.GoToBuilds|**Ctrl + 0** (ゼロ)、**Ctrl + B**<br /><br /> または<br /><br /> **Ctrl + 0、B**|
-|TeamFoundationContextMenus.Commands.GoToConnect|**Ctrl + 0** (ゼロ)、**Ctrl + C**<br /><br /> または<br /><br /> **Ctrl + 0、C**|
-|TeamFoundationContextMenus.Commands.GoToDocuments|**Ctrl + 0** (ゼロ)、**Ctrl + D**<br /><br /> または<br /><br /> **Ctrl + 0、D**|
-|TeamFoundationContextMenus.Commands.GoToHome|**Ctrl + 0** (ゼロ)、**Ctrl + H**<br /><br /> または<br /><br /> **Ctrl + 0、H**|
-|TeamFoundationContextMenus.Commands.GoToMyWork|**Ctrl + 0** (ゼロ)、**Ctrl + M**<br /><br /> または<br /><br /> **Ctrl + 0、M**|
-|TeamFoundationContextMenus.Commands.GoToPendingChanges|**Ctrl + 0** (ゼロ)、**Ctrl + P**<br /><br /> または<br /><br /> **Ctrl + 0、P**|
-|TeamFoundationContextMenus.Commands.GoToReports|**Ctrl + 0** (ゼロ)、**Ctrl + R**<br /><br /> または<br /><br /> **Ctrl + 0、R**|
-|TeamFoundationContextMenus.Commands.GoToSettings|**Ctrl + 0** (ゼロ)、**Ctrl + S**<br /><br /> または<br /><br /> **Ctrl + 0、S**|
-|TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl + 0** (ゼロ)、**Ctrl + A**<br /><br /> または<br /><br /> **Ctrl + 0、A**|
-|TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl + 0** (ゼロ)、**Ctrl + W**<br /><br /> または<br /><br /> **Ctrl + 0、W**|
+|TeamFoundationContextMenus.Commands.GoToBuilds|**Ctrl + 0** (ゼロ)、**Ctrl + B**<br /><br /> or<br /><br /> **Ctrl + 0、B**|
+|TeamFoundationContextMenus.Commands.GoToConnect|**Ctrl + 0** (ゼロ)、**Ctrl + C**<br /><br /> or<br /><br /> **Ctrl + 0、C**|
+|TeamFoundationContextMenus.Commands.GoToDocuments|**Ctrl + 0** (ゼロ)、**Ctrl + D**<br /><br /> or<br /><br /> **Ctrl + 0、D**|
+|TeamFoundationContextMenus.Commands.GoToHome|**Ctrl + 0** (ゼロ)、**Ctrl + H**<br /><br /> or<br /><br /> **Ctrl + 0、H**|
+|TeamFoundationContextMenus.Commands.GoToMyWork|**Ctrl + 0** (ゼロ)、**Ctrl + M**<br /><br /> or<br /><br /> **Ctrl + 0、M**|
+|TeamFoundationContextMenus.Commands.GoToPendingChanges|**Ctrl + 0** (ゼロ)、**Ctrl + P**<br /><br /> or<br /><br /> **Ctrl + 0、P**|
+|TeamFoundationContextMenus.Commands.GoToReports|**Ctrl + 0** (ゼロ)、**Ctrl + R**<br /><br /> or<br /><br /> **Ctrl + 0、R**|
+|TeamFoundationContextMenus.Commands.GoToSettings|**Ctrl + 0** (ゼロ)、**Ctrl + S**<br /><br /> or<br /><br /> **Ctrl + 0、S**|
+|TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl + 0** (ゼロ)、**Ctrl + A**<br /><br /> or<br /><br /> **Ctrl + 0、A**|
+|TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl + 0** (ゼロ)、**Ctrl + W**<br /><br /> or<br /><br /> **Ctrl + 0、W**|
 
 ### <a name="bkmk_test"></a> テスト
 
@@ -345,7 +347,6 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Tools.AttachtoProcess|**Ctrl + Alt + P**|
 |Tools.CodeSnippetsManager|**Ctrl + K、Ctrl + B**|
 |Tools.ForceGC|**Ctrl + Shift + Alt + F12、Ctrl + Shift + Alt + F12**|
-|Tools.GoToCommandLine|**Ctrl + /**|
 
 ### <a name="bkmk_view"></a> 表示
 
@@ -353,40 +354,40 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |--------------| - |
 |View.AllWindows|**Shift + Alt + M**|
 |View.ArchitectureExplorer|**Ctrl + \\、Ctrl + R**|
-|View.Backward|**Alt + ←**|
+|View.Backward|**Alt + 左矢印** (テキスト エディターでの View.NavigateBackward の機能とは異なる)|
 |View.BookmarkWindow|**Ctrl + K、Ctrl + W**|
 |View.BrowseNext|**Ctrl + Shift + 数字 1**|
 |View.BrowsePrevious|**Ctrl + Shift + 数字 2**|
 |View.CallHierarchy|**Ctrl + Alt + K**|
 |View.ClassView|**Ctrl + Shift + C**|
 |View.ClassViewGoToSearchCombo|**Ctrl + K、Ctrl + V**|
-|View.CodeDefinitionWindow|**Ctrl + \\、D**<br /><br /> または<br /><br /> **Ctrl + \\、Ctrl + D**|
+|View.CodeDefinitionWindow|**Ctrl + \\、D**<br /><br /> or<br /><br /> **Ctrl + \\、Ctrl + D**|
 |View.CommandWindow|**Ctrl + Alt + A**|
 |View.DataSources|**Shift + Alt + D**|
 |View.DocumentOutline|**Ctrl + Alt + T**|
 |View.EditLabel|**F2**|
-|View.ErrorList|**Ctrl + \\、E**<br /><br /> または<br /><br /> **Ctrl + \\、Ctrl + E**|
+|View.ErrorList|**Ctrl + \\、E**<br /><br /> or<br /><br /> **Ctrl + \\、Ctrl + E**|
 |View.F#Interactive|**Ctrl + Alt + F**|
 |View.FindSymbolResults|**Ctrl + Alt + F12**|
-|View.Forward|**Alt + →**|
+|View.Forward|**Alt + 右矢印** (テキスト エディターでの View.NavigateForward の機能とは異なる)|
 |View.ForwardBrowseContext|**Ctrl + Shift + 7**|
 |View.FullScreen|**Shift + Alt + Enter**|
 |View.NavigateBackward|**Ctrl + -**|
 |View.NavigateForward|**Ctrl + Shift + -**|
 |View.NextError|**Ctrl + Shift + F12**|
-|View.Notifications|**Ctrl + W、N**<br /><br /> または<br /><br /> **Ctrl + W、Ctrl + N**|
+|View.Notifications|**Ctrl + W、N**<br /><br /> or<br /><br /> **Ctrl + W、Ctrl + N**|
 |View.ObjectBrowser|**Ctrl + Alt + J**|
 |View.ObjectBrowserGoToSearchCombo|**Ctrl + K、Ctrl + R**|
 |View.Output|**Ctrl + Alt + O** (文字 'O')|
-|View.PopBrowseContex|**Ctrl + Shift + 8**|
+|View.PopBrowseContext|**Ctrl + Shift + 8** (C++ のみ)|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**Shift + F4**|
 |View.ResourceView|**Ctrl + Shift + E**|
 |View.ServerExplorer|**Ctrl + Alt + S**|
-|View.ShowSmartTag|**Shift + Alt + F10**<br /><br /> または<br /><br /> **Ctrl + .**|
+|View.ShowSmartTag|**Shift + Alt + F10**<br /><br /> or<br /><br /> **Ctrl + .**|
 |View.SolutionExplorer|**Ctrl + Alt + L**|
 |View.SQLServerObjectExplorer|**Ctrl + \\、Ctrl + S**|
-|View.TaskList|**Ctrl + \\、T**<br /><br /> または<br /><br /> **Ctrl + \\、Ctrl + T**|
+|View.TaskList|**Ctrl + \\、T**<br /><br /> or<br /><br /> **Ctrl + \\、Ctrl + T**|
 |View.TfsTeamExplorer|**Ctrl + \\、Ctrl + M**|
 |View.Toolbox|**Ctrl + Alt + X**|
 |View.UMLModelExplorer|**Ctrl + \\、Ctrl + U**|
@@ -410,14 +411,14 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Window.NextDocumentWindowNav|**Ctrl + Tab**|
 |Window.NextPane|**Alt + F6**|
 |Window.NextSplitPane|**F6**|
-|Window.NextTab|**Ctrl + Alt + PgDn**<br /><br /> または<br /><br /> **Ctrl + PgDn**|
+|Window.NextTab|**Ctrl + Alt + PgDn**<br /><br /> or<br /><br /> **Ctrl + PgDn**|
 |Window.NextTabandAddtoSelection|**Ctrl + Shift + Alt + PgDn**|
 |Window.NextToolWindowNav|**Alt + F7**|
 |Window.PreviousDocumentWindow|**Ctrl + Shift + F6**|
 |Window.PreviousDocumentWindowNav|**Ctrl + Shift + Tab**|
 |Window.PreviousPane|**Shift + Alt + F6**|
 |Window.PreviousSplitPane|**Shift + F6**|
-|Window.PreviousTab|**Ctrl + Alt + PgUp**<br /><br /> または<br /><br /> **Ctrl + PgUp**|
+|Window.PreviousTab|**Ctrl + Alt + PgUp**<br /><br /> or<br /><br /> **Ctrl + PgUp**|
 |Window.PreviousTabandAddtoSelection|**Ctrl + Shift + Alt + PgUp**|
 |Window.PreviousToolWindowNav|**Shift + Alt + F7**|
 |Window.QuickLaunch|**Ctrl + Q**|
@@ -517,7 +518,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl + Shift + K**<br /><br /> または<br /><br /> **Ctrl + E、C**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl + Shift + K**<br /><br /> or<br /><br /> **Ctrl + E、C**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**削除**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
@@ -525,7 +526,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|なし|
+|Debug.Graphics.CaptureFrame|None|
 |Graphics.MovePixelSelectionDown|**Shift + Alt + ↓**|
 |Graphics.MovePixelSelectionLeft|**Shift + Alt + ←**|
 |Graphics.MovePixelSelectionRight|**Shift + Alt + →**|
@@ -619,10 +620,10 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |コマンド|キーボード ショートカット|
 |--------------| - |
 |CommitAllEdits|**Shift + Alt + U**|
-|SQL.ExpandWildcards|**Ctrl + R、E**<br /><br /> または<br /><br /> **Ctrl + R、Ctrl + E**|
-|SQL.FullyqualifyNames|**Ctrl + R、Q**<br /><br /> または<br /><br /> **Ctrl + R、Ctrl + Q**|
-|SQL.MovetoSchema|**Ctrl + R、M**<br /><br /> または<br /><br /> **Ctrl + R、Ctrl + M**|
-|SQL 名前の変更|**F2**<br /><br /> または<br /><br /> **Ctrl + R、R**<br /><br /> または<br /><br /> **Ctrl + R、Ctrl + R**|
+|SQL.ExpandWildcards|**Ctrl + R、E**<br /><br /> or<br /><br /> **Ctrl + R、Ctrl + E**|
+|SQL.FullyqualifyNames|**Ctrl + R、Q**<br /><br /> or<br /><br /> **Ctrl + R、Ctrl + Q**|
+|SQL.MovetoSchema|**Ctrl + R、M**<br /><br /> or<br /><br /> **Ctrl + R、Ctrl + M**|
+|SQL 名前の変更|**F2**<br /><br /> or<br /><br /> **Ctrl + R、R**<br /><br /> or<br /><br /> **Ctrl + R、Ctrl + R**|
 |ViewFileInScriptPanel|**Shift + Alt + PgDn**|
 
 ## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools、T-SQL エディター
@@ -631,10 +632,10 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |--------------| - |
 |CommitAllEdits|**Shift + Alt + U**|
 |SQL.ExecuteWithDebugger|**Alt + F5**|
-|SQL.ExpandWildcards|**Ctrl + R、E**<br /><br /> または<br /><br /> **Ctrl + R、Ctrl + E**|
-|SQL.FullyqualifyNames|**Ctrl + R、Q**<br /><br /> または<br /><br /> **Ctrl + R、Ctrl + Q**|
-|SQL.MovetoSchema|**Ctrl + R、M**<br /><br /> または<br /><br /> **Ctrl + R、Ctrl + M**|
-|SQL 名前の変更|**F2**<br /><br /> または<br /><br /> **Ctrl + R、R**<br /><br /> または<br /><br /> **Ctrl + R、Ctrl + R**|
+|SQL.ExpandWildcards|**Ctrl + R、E**<br /><br /> or<br /><br /> **Ctrl + R、Ctrl + E**|
+|SQL.FullyqualifyNames|**Ctrl + R、Q**<br /><br /> or<br /><br /> **Ctrl + R、Ctrl + Q**|
+|SQL.MovetoSchema|**Ctrl + R、M**<br /><br /> or<br /><br /> **Ctrl + R、Ctrl + M**|
+|SQL 名前の変更|**F2**<br /><br /> or<br /><br /> **Ctrl + R、R**<br /><br /> or<br /><br /> **Ctrl + R、Ctrl + R**|
 |SQL.TSqlEditorCancelQuery|**Alt + Break**|
 |SQL.TSqlEditorExecuteQuery|**Ctrl + Shift + E**|
 |SQL.TSqlEditorResultsAsFile|**Ctrl + D、F**|
@@ -771,24 +772,23 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 
 | コマンド | キーボード ショートカット |
 | - | - |
-| Edit.BreakLine | **Enter**<br /><br /> または<br /><br /> **Shift + Enter** |
+| Edit.BreakLine | **Enter**<br /><br /> or<br /><br /> **Shift + Enter** |
 | Edit.CharLeft | **← キー** |
 | Edit.CharLeftExtend | **Shift + ←** |
 | Edit.CharLeftExtendColumn | **Shift + Alt + ←** |
 | Edit.CharRight | **→ キー** |
 | Edit.CharRightExtend | **Shift + →** |
 | Edit.CharRightExtendColumn | **Shift + Alt + →** |
-| Edit.CharTranspose | **Ctrl + T** |
 | Edit.ClearBookmarks | **Ctrl + K、Ctrl + L** |
 | Edit.CollapseAllOutlining | **Ctrl + M、Ctrl + A** |
 | Edit.CollapseCurrentRegion | **Ctrl + M、Ctrl + S** |
 | Edit.CollapseTag | **Ctrl + M、Ctrl + T** |
 | Edit.CollapseToDefinitions | **Ctrl + M、Ctrl + O** (文字 'O') |
 | Edit.CommentSelection | **Ctrl + K、Ctrl + C** |
-| Edit.CompleteWord | **Ctrl + Space**<br /><br /> または<br /><br /> **Alt + →** |
+| Edit.CompleteWord | **Ctrl + Space**<br /><br /> or<br /><br /> **Alt + →** |
 | Edit.CopyParameterTip | **Ctrl + Shift + Alt + C** |
 | Edit.DecreaseFilterLevel | **Alt + ,** |
-| Edit.DeleteBackwards | **バックスペース**<br /><br /> または<br /><br /> **Shift + Bkspce** |
+| Edit.DeleteBackwards | **バックスペース**<br /><br /> or<br /><br /> **Shift + Bkspce** |
 | Edit.DeleteHorizontalWhiteSpace | **Ctrl + K、Ctrl + \\** |
 | Edit.DocumentEnd | **Ctrl + End** |
 | Edit.DocumentEndExtend | **Ctrl + Shift + End** |
@@ -798,12 +798,12 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 | Edit.ExpandCurrentRegion | **Ctrl + M、Ctrl + E** |
 | Edit.FormatDocument | **Ctrl + K、Ctrl + D** |
 | Edit.FormatSelection | **Ctrl + K、Ctrl + F** |
-| Edit.GotoAll | **Ctrl + T**<br /><br /> または<br /><br /> **Ctrl + ,** |
+| Edit.GotoAll | **Ctrl + T**<br /><br /> or<br /><br /> **Ctrl + ,** |
 | Edit.GotoBrace | **Ctrl + ]** |
 | Edit.GotoBraceExtend | **Ctrl + Shift + ]** |
 | Edit.GotoRecent | **Ctrl+T、R** |
 | Edit.GotoNextIssueinFile | **Alt + PgDn** |
-| Edit.GotoPreviousIssueinFile  **Alt + PgUp** |
+| Edit.GotoPreviousIssueinFile | **Alt + PgUp** |
 | Edit.HideSelection | **Ctrl + M、Ctrl + H** |
 | Edit.IncreaseFilterLevel | **Alt + .** |
 | Edit.IncrementalSearch | **Ctrl + I** |
@@ -943,8 +943,8 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Format.CenterVertical|**Ctrl + F9**|
 |Format.CheckMnemonics|**Ctrl + M**|
 |Format.SizetoContent|**Shift + F7**|
-|Format.SpaceAcross|**Alt + →**<br /><br /> または<br /><br /> **Alt + ←**|
-|Format.SpaceDown|**Alt + ↑**<br /><br /> または<br /><br /> **Alt + ↓**|
+|Format.SpaceAcross|**Alt + →**<br /><br /> or<br /><br /> **Alt + ←**|
+|Format.SpaceDown|**Alt + ↑**<br /><br /> or<br /><br /> **Alt + ↓**|
 |Format.TabOrder|**Ctrl + D**|
 |Format.TestDialog|**Ctrl + T**|
 |Format.ToggleGuides|**Ctrl + G**|
@@ -970,14 +970,14 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Image.MagnificationTool|**Ctrl + M**|
 |Image.Magnify|**Ctrl + Shift + M**|
 |Image.NewImageType|**[挿入]**|
-|Image.NextColor|**Ctrl + ]**<br /><br /> または<br /><br /> **Ctrl + →**|
-|Image.NextRightColor|**Ctrl + Shift + ]**<br /><br /> または<br /><br /> **Ctrl + Shift + →**|
+|Image.NextColor|**Ctrl + ]**<br /><br /> or<br /><br /> **Ctrl + →**|
+|Image.NextRightColor|**Ctrl + Shift + ]**<br /><br /> or<br /><br /> **Ctrl + Shift + →**|
 |Image.OutlinedEllipseTool|**Shift + Alt + P**|
 |Image.OutlinedRectangleTool|**Shift + Alt + R**|
 |Image.OutlinedRoundedRectangleTool|**Shift + Alt + W**|
 |Image.PencilTool|**Ctrl + I**|
-|Image.PreviousColor|**Ctrl + [**<br /><br /> または<br /><br /> **Ctrl + ←**|
-|Image.PreviousRightColor|**Ctrl + Shift + [**<br /><br /> または<br /><br /> **Ctrl + Shift + ←**|
+|Image.PreviousColor|**Ctrl + [**<br /><br /> or<br /><br /> **Ctrl + ←**|
+|Image.PreviousRightColor|**Ctrl + Shift + [**<br /><br /> or<br /><br /> **Ctrl + Shift + ←**|
 |Image.RectangleSelectionTool|**Shift + Alt + S**|
 |Image.RectangleTool|**Alt + R**|
 |Image.Rotate90Degrees|**Ctrl + Shift + H**|
@@ -988,8 +988,8 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Image.SmallerBrush|**Ctrl + -**|
 |Image.TextTool|**Ctrl + T**|
 |Image.UseSelectionasBrush|**Ctrl + U**|
-|Image.ZoomIn|**Ctrl + Shift + .**<br /><br /> または<br /><br /> **Ctrl + ↑**|
-|Image.ZoomOut|**Ctrl + Shift + ,**<br /><br /> または<br /><br /> **Ctrl + ↓**|
+|Image.ZoomIn|**Ctrl + Shift + .**<br /><br /> or<br /><br /> **Ctrl + ↑**|
+|Image.ZoomOut|**Ctrl + Shift + ,**<br /><br /> or<br /><br /> **Ctrl + ↓**|
 
 ## <a name="vc-string-editor"></a>VC ストリング エディター
 
@@ -1081,27 +1081,27 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
-|Edit.CompleteWord|**Ctrl + K、W**<br /><br /> または<br /><br /> **Ctrl + K、Ctrl + W**<br /><br /> または<br /><br /> **Ctrl + Space**<br /><br /> または<br /><br /> **Alt + →**|
+|Edit.CompleteWord|**Ctrl + K、W**<br /><br /> or<br /><br /> **Ctrl + K、Ctrl + W**<br /><br /> or<br /><br /> **Ctrl + Space**<br /><br /> or<br /><br /> **Alt + →**|
 |Edit.DecreaseFilterLevel|**Alt + ,**|
 |Edit.IncreaseFilterLevel|**Alt + .**|
-|Edit.ListMembers|**Ctrl + K、L**<br /><br /> または<br /><br /> **Ctrl + K、Ctrl + L**<br /><br /> または<br /><br /> **Ctrl + J**|
-|Edit.ParameterInfo|**Ctrl + K、P**<br /><br /> または<br /><br /> **Ctrl + K、Ctrl + P**<br /><br /> または<br /><br /> **Ctrl + Shift + Spacebar**|
-|Edit.QuickInfo|**Ctrl + K、I**<br /><br /> または<br /><br /> **Ctrl + K、Ctrl + I**|
-|WorkflowDesigner.Collapse|**Ctrl + E、Ctrl + C**<br /><br /> または<br /><br /> **Ctrl + E、C**|
-|WorkflowDesigner.CollapseAll|または|
-|WorkflowDesigner.ConnectNodes|**Ctrl + E、Ctrl + F**<br /><br /> または<br /><br /> **Ctrl + E、F**|
-|WorkflowDesigner.CreateVariable|**Ctrl + E、Ctrl + N**<br /><br /> または<br /><br /> **Ctrl + E、N**|
-|WorkflowDesigner.ExpandAll|**Ctrl + E、Ctrl + X**<br /><br /> または<br /><br /> **Ctrl + E、X**|
-|WorkflowDesigner.ExpandInPlace|**Ctrl + E、Ctrl + E**<br /><br /> または<br /><br /> **Ctrl + E、E**|
-|WorkflowDesigner.GoToParent|**Ctrl + E、Ctrl + P**<br /><br /> または<br /><br /> **Ctrl + E、P**|
-|WorkflowDesigner.MoveFocus|**Ctrl + E、Ctrl + M**<br /><br /> または<br /><br /> **Ctrl + E、M**|
+|Edit.ListMembers|**Ctrl + K、L**<br /><br /> or<br /><br /> **Ctrl + K、Ctrl + L**<br /><br /> or<br /><br /> **Ctrl + J**|
+|Edit.ParameterInfo|**Ctrl + K、P**<br /><br /> or<br /><br /> **Ctrl + K、Ctrl + P**<br /><br /> or<br /><br /> **Ctrl + Shift + Spacebar**|
+|Edit.QuickInfo|**Ctrl + K、I**<br /><br /> or<br /><br /> **Ctrl + K、Ctrl + I**|
+|WorkflowDesigner.Collapse|**Ctrl + E、Ctrl + C**<br /><br /> or<br /><br /> **Ctrl + E、C**|
+|WorkflowDesigner.CollapseAll|or|
+|WorkflowDesigner.ConnectNodes|**Ctrl + E、Ctrl + F**<br /><br /> or<br /><br /> **Ctrl + E、F**|
+|WorkflowDesigner.CreateVariable|**Ctrl + E、Ctrl + N**<br /><br /> or<br /><br /> **Ctrl + E、N**|
+|WorkflowDesigner.ExpandAll|**Ctrl + E、Ctrl + X**<br /><br /> or<br /><br /> **Ctrl + E、X**|
+|WorkflowDesigner.ExpandInPlace|**Ctrl + E、Ctrl + E**<br /><br /> or<br /><br /> **Ctrl + E、E**|
+|WorkflowDesigner.GoToParent|**Ctrl + E、Ctrl + P**<br /><br /> or<br /><br /> **Ctrl + E、P**|
+|WorkflowDesigner.MoveFocus|**Ctrl + E、Ctrl + M**<br /><br /> or<br /><br /> **Ctrl + E、M**|
 |WorkflowDesigner.NavigateThroughDesigner|**Ctrl + Alt + F6**|
-|WorkflowDesigner.Restore|**Ctrl + E、Ctrl + R**<br /><br /> または<br /><br /> **Ctrl + E、R**|
-|WorkflowDesigner.ShowHideArgumentDesigner|**Ctrl + E、Ctrl + A**<br /><br /> または<br /><br /> **Ctrl + E、A**|
-|WorkflowDesigner.ShowHideImportsDesigner|**Ctrl + E、Ctrl + I**<br /><br /> または<br /><br /> **Ctrl + E、I**|
-|WorkflowDesigner.ShowHideOverviewMap|**CTRL + E、CTRL + O** (文字 'O')<br /><br /> または<br /><br /> **Ctrl + E、O**|
-|WorkflowDesigner.ShowHideVariableDesigner|**Ctrl + E、Ctrl + V**<br /><br /> または<br /><br /> **Ctrl + E、V**|
-|WorkflowDesigner.ToggleSelection|**Ctrl + E、Ctrl + S**<br /><br /> または<br /><br /> **Ctrl + E、S**|
+|WorkflowDesigner.Restore|**Ctrl + E、Ctrl + R**<br /><br /> or<br /><br /> **Ctrl + E、R**|
+|WorkflowDesigner.ShowHideArgumentDesigner|**Ctrl + E、Ctrl + A**<br /><br /> or<br /><br /> **Ctrl + E、A**|
+|WorkflowDesigner.ShowHideImportsDesigner|**Ctrl + E、Ctrl + I**<br /><br /> or<br /><br /> **Ctrl + E、I**|
+|WorkflowDesigner.ShowHideOverviewMap|**CTRL + E、CTRL + O** (文字 'O')<br /><br /> or<br /><br /> **Ctrl + E、O**|
+|WorkflowDesigner.ShowHideVariableDesigner|**Ctrl + E、Ctrl + V**<br /><br /> or<br /><br /> **Ctrl + E、V**|
+|WorkflowDesigner.ToggleSelection|**Ctrl + E、Ctrl + S**<br /><br /> or<br /><br /> **Ctrl + E、S**|
 |WorkflowDesigner.ZoomIn|**Ctrl を押しながらテンキーの +**|
 |WorkflowDesigner.ZoomOut|**Ctrl を押しながらテンキーの -**|
 

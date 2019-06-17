@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PDB_TYPE structure
 ms.assetid: 1c1bb772-77d6-4870-90b2-fd9247d0004e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f14537a7543528be7ab026e7d24b9a1e9d964d0b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 3121106b84111d20bf2915c0f9398fa92807cfd9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460854"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349912"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
 
@@ -47,15 +47,12 @@ public struct PDB_TYPE {
 ## <a name="members"></a>メンバー
 
 `ulAppDomainID`\
-
 シンボルが元のアプリケーションの ID。 これは、アプリケーションのインスタンスを一意に識別するに使用されます。
 
 `guidModule`\
-
 このフィールドが含まれるモジュールの GUID です。
 
 `symid`\
-
 このフィールドに対応するシンボルの ID。
 
 ## <a name="remarks"></a>Remarks

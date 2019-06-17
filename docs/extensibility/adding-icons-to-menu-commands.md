@@ -7,17 +7,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding icons to commands
 - commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d6a6cfeb3cb222d2ef58233b072f80e50c8d9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1c54ee6b448e5830b478f10029a0d2d958e7699
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891892"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352359"
 ---
 # <a name="add-icons-to-menu-commands"></a>メニュー コマンドにアイコンを追加します。
 コマンドは、メニューおよびツールバーの両方に表示できます。 ツールバーでは、通常、アイコンとテキストの両方で、コマンドが表示されますだけをアイコンで (スペースを節約) 中にメニューに表示されるコマンドの一般的です。

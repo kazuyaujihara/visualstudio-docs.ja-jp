@@ -9,14 +9,14 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d66b7f15bd1fb988c82cea934973e15cb4c6fe2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 277c2ad8ffa6ebad55de3957f3d98917a4765ee1
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970706"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431977"
 ---
-# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>方法:ロード テストの実行設定にテスト イテレーションの数を指定する
+# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>方法: ロード テストの実行設定にテスト イテレーションの数を指定する
 
 **新しいロード テスト** ウィザードでロード テストを作成した後で、**ロード テスト エディター**を使用して、テストのニーズや目標に合わせてシナリオのプロパティを変更できます。 詳細については、[ロード テストの作成および実行のチュートリアル](../test/walkthrough-create-and-run-a-load-test.md)を参照してください。
 
@@ -35,13 +35,13 @@ ms.locfileid: "62970706"
 
 2. ロード テスト ツリーの **[実行設定]** フォルダーで、実行設定を選択します。
 
-3. **[表示]** メニューで、**[プロパティ ウィンドウ]** を選択し、ロードの実行設定のカテゴリとプロパティを表示します。
+3. **[表示]** メニューで、 **[プロパティ ウィンドウ]** を選択し、ロードの実行設定のカテゴリとプロパティを表示します。
 
 4. **[テスト イテレーションの使用]** プロパティを **[True]** に設定します。
 
 5. **[テスト イテレーション]** プロパティで、ロード テスト中に実行するテスト イテレーションの回数を入力します。
 
-6. プロパティを変更したら、**[ファイル]** メニューの **[保存]** を選択します。 次に、新しい **[テスト イテレーション]** の値を使用して、ロード テストを実行します。
+6. プロパティを変更したら、 **[ファイル]** メニューの **[保存]** を選択します。 次に、新しい **[テスト イテレーション]** の値を使用して、ロード テストを実行します。
 
 ## <a name="see-also"></a>関連項目
 

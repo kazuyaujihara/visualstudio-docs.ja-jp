@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 - LoadSymbolsWithCorModule
 ms.assetid: b6abf3a4-ce60-4e66-9637-82ce911148de
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba458d72fe12ce402129f60059347cb28b102686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2c8265ce0d09b592418082d159fd82d2afaf9fad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876383"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334627"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 読み込みのデバッグ シンボルの指定、 **ICorDebugModule**オブジェクト。
@@ -47,34 +50,27 @@ int LoadSymbolsWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
-`ulAppDomainID`
+## <a name="parameters"></a>パラメーター
+`ulAppDomainID`\
+[in]アプリケーション ドメインの識別子。
 
- [in]アプリケーション ドメインの識別子。
+`guidModule`\
+[in]モジュールの一意の識別子。
 
-`guidModule`
+`baseAddress`\
+[in]基本のメモリ アドレス。
 
- [in]モジュールの一意の識別子。
+`pUnkMetadataImport`\
+[in]デバッグ シンボルのメタデータを含むオブジェクト。
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in]実装するオブジェクト、 [ICorDebugModule インターフェイス](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)します。
 
- [in]基本のメモリ アドレス。
+`bstrModuleName`\
+[in]モジュールの名前。
 
-`pUnkMetadataImport`
-
- [in]デバッグ シンボルのメタデータを含むオブジェクト。
-
-`pUnkCorDebugModule`
-
- [in]実装するオブジェクト、 [ICorDebugModule インターフェイス](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)します。
-
-`bstrModuleName`
-
- [in]モジュールの名前。
-
-`bstrSymSearchPath`
-
- [in]シンボル ファイルを検索するパス。
+`bstrSymSearchPath`\
+[in]シンボル ファイルを検索するパス。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

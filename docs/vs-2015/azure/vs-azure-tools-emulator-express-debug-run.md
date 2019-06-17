@@ -10,12 +10,12 @@ ms.date: 03/06/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 8ce7337350ac80e1992e850eb10d0ac7297f9502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7e1d5e63a93f8fe1f67de920a1ccf7966d97ed6
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963568"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263767"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Emulator Express を使用したローカル コンピューターでの Azure クラウド サービスの実行とデバッグ
 Emulator Express を使用することにより、管理者として Visual Studio を実行せずに、クラウド サービスをテストおよびデバッグできます。 クラウド サービスの要件に応じて、Emulator Express または完全なエミュレーターのどちらを使用するかをプロジェクト設定で指定できます。 完全なエミュレーターの詳細については、「[コンピューティング エミュレーターでの Azure アプリケーションの実行](/azure/storage/common/storage-use-emulator)」を参照してください。
@@ -27,13 +27,13 @@ Azure SDK 2.3 以降で Azure プロジェクトを作成すると、Emulator Ex
 
 1. **ソリューション エクスプローラー**でそのプロジェクトを右クリックし、コンテキスト メニューから **[プロパティ]** を選択します。
 
-1. プロジェクト プロパティのページで、**[Web]** タブを選択します。
+1. プロジェクト プロパティのページで、 **[Web]** タブを選択します。
 
     ![Azure クラウド サービス プロジェクトのプロパティ](./media/vs-azure-tools-emulator-express-debug-run/web-properties.png)
 
-1. **[ローカル開発サーバー]** で、**[IIS Express を使用する]** オプションを選択します。
+1. **[ローカル開発サーバー]** で、 **[IIS Express を使用する]** オプションを選択します。
 
-1. **[エミュレーター]** で、**[Emulator Express を使用する]** を選択します。
+1. **[エミュレーター]** で、 **[Emulator Express を使用する]** を選択します。
    
 1. Emulator Express を起動するには、コマンド プロンプトで次のコマンドを実行します。 
 
@@ -50,4 +50,4 @@ Emulator Express には、次のような制限事項があることがわかっ
 - Azure コンピューティング エミュレーターに適用されるすべての制限は、Emulator Express にも適用されます。 たとえば、デプロイあたり 50 を超えるロール インスタンスを保持できません。 Azure コンピューティング エミュレーターの詳細については、「[クラウド サービスのパフォーマンスのテスト](http://go.microsoft.com/fwlink/p/?LinkId=623050)」をご覧ください。
 
 ## <a name="next-steps"></a>次の手順
-[Azure Cloud Services のデバッグ](https://msdn.microsoft.com/library/azure/ee405479.aspx)
+[Azure Cloud Services のデバッグ](vs-azure-tools-debugging-cloud-services-overview.md)

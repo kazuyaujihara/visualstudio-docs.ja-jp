@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_ARRAYELEM structure
 ms.assetid: 24321be5-7c17-4038-82a1-c20a2b68ff3c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb0ad7c73d2e4233ad919ffe48515bbade031fd8
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a0b5e24447c1f55242af6a6b549c5317f37818b2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461144"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339167"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 
@@ -45,13 +45,11 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 ## <a name="members"></a>メンバー
 
 `tokMethod`\
-
 ID の配列のこの要素はの一部です。
 
 [C++]`_mdToken`は、 `typedef` 32 ビット`int`します。
 
 `dwIndex`\
-
 この要素の配列内のインデックス。
 
 ## <a name="remarks"></a>Remarks

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onInsertText
 ms.assetid: 6040181f-7288-4a42-953c-d23f74200431
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8eee7a9225a54bb5ca965845b66aaa9adcdbe05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e0185e4f6c3accc4225dbfb9be4ce9311f8d7115
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875302"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330522"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
 デバッグ パッケージをドキュメントにテキストが挿入されたことを通知します。
@@ -38,14 +41,12 @@ int onInsert( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pos`
+## <a name="parameters"></a>パラメーター
+`pos`\
+[in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)テキストの挿入位置を示す構造体。
 
- [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)テキストの挿入位置を示す構造体。
-
- `dwNumToInsert`
-
- [in]挿入されたテキストの文字数を指定します。
+`dwNumToInsert`\
+[in]挿入されたテキストの文字数を指定します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

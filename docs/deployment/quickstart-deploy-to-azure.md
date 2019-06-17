@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 114c6aca7ec7ed05858868b22f7547b0a071420f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1703fb5386c7b29446b621d2e83f9486e93dd3d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927721"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679260"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Visual Studio を使用して Azure App Service に Web アプリを発行する
 
@@ -31,13 +31,13 @@ ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリの場合、次�
 
 ## <a name="publish-to-azure-app-service"></a>Azure App Service に発行する
 
-1. ソリューション エクスプローラーで、プロジェクトを右クリックして、**[発行]** を選択します (または **[ビルド]** > **[発行]** メニュー項目を使用します)。
+1. ソリューション エクスプローラーで、プロジェクトを右クリックして、 **[発行]** を選択します (または **[ビルド]**  >  **[発行]** メニュー項目を使用します)。
 
     ![ソリューション エクスプローラーのプロジェクト コンテキスト メニューにある [発行] コマンド](../deployment/media/quickstart-publish.png "[発行] を選択する")
 
-1. 以前に発行プロファイルを構成した場合、**[発行]** ウィンドウが表示されます。その場合は、**[新しいプロファイルの作成]** を選択します。
+1. 以前に発行プロファイルを構成した場合、 **[発行]** ウィンドウが表示されます。その場合は、 **[新しいプロファイルの作成]** を選択します。
 
-1. **[発行先を選択]** ダイアログ ボックスで、**[App Service]** を選びます。
+1. **[発行先を選択]** ダイアログ ボックスで、 **[App Service]** を選びます。
 
     ![Azure App Service を選択する](../deployment/media/quickstart-publish-azure.png "Azure App Service を選択する")
 
@@ -52,9 +52,9 @@ ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリの場合、次�
 ## <a name="clean-up-resources"></a>リソースをクリーンアップする
 
 上記の手順では、リソース グループに Azure リソースを作成しました。 今後、これらのリソースを必要としない場合は、リソース グループを削除することでリソースを削除できます。
-Azure portal の左側のメニューから、**[リソース グループ]**、**[myResourceGroup]** の順に選択します。
+Azure portal の左側のメニューから、 **[リソース グループ]** 、 **[myResourceGroup]** の順に選択します。
 リソース グループ ページで、リストされたリソースが削除対象であることを確認します。
-**[削除]** を選択し、テキスト ボックスに「**myResourceGroup**」と入力してから、**[削除]** を選びます。
+**[削除]** を選択し、テキスト ボックスに「**myResourceGroup**」と入力してから、 **[削除]** を選びます。
 
 ## <a name="next-steps"></a>次の手順
 

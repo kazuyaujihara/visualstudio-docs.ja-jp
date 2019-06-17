@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_LOCAL structure
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10e94460dfd65294536fcb116099ba10c357d845
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: f8500d7ad1e03e08fa852afe9b8b77e49562f355
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461123"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345636"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 
@@ -47,17 +47,14 @@ public struct METADATA_ADDRESS_LOCAL {
 ## <a name="members"></a>メンバー
 
 `tokMethod`\
-
 メソッドまたは関数の ID、ローカル変数は一部です。
 
 [C++]`_mdToken`は、 `typedef` 32 ビット`int`します。
 
 `pLocal`\
-
 この構造体を表すアドレスを持つトークン。
 
 `dwIndex`\
-
 このローカル変数、メソッドまたは関数、またはその他の値 (言語固有) でのインデックスを指定できます。
 
 ## <a name="remarks"></a>Remarks

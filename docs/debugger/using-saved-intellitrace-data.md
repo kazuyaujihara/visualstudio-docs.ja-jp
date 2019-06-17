@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408631"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746152"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>保存された IntelliTrace データを使用して (C#、Visual Basic、 C++)
 
@@ -37,7 +37,6 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
     |**ソース**|**「**|
     |----------------|-------------|
     |Visual Studio Enterprise Edition (ただし、Professional または Community Edition を除く) での IntelliTrace セッション|[IntelliTrace の機能](../debugger/intellitrace-features.md)|
-    |Microsoft Test Manager のテスト セッション。 これにより、.iTrace ファイルが Team Foundation Server の作業項目にアタッチされます。|[手動テストでの複数の診断データの収集](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
     |配置で実行されている ASP.NET Web アプリおよび SharePoint アプリケーションのための、単独で、または System Center 2012 R2 Operations Manager と連携して動作する Microsoft Monitoring Agent|-   [配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager の新機能](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ## <a name="GetStarted"></a> 実行する操作
@@ -64,10 +63,10 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
     - **[ステップの再現]** の **[IntelliTrace]** リンクを選択します。
 
 > [!TIP]
-> デバッグ中に IntelliTrace ファイルを閉じた場合、ファイルを簡単に開き直すことができます。 **[デバッグ]** メニューで **[IntelliTrace]**、 **[ログの概要の表示]** の順に選択します。 また **[IntelliTrace]** ウィンドウの **[ログの概要の表示]** を選択することもできます。 これは、IntelliTrace を使用したデバッグ中にのみ使用できます。
+> デバッグ中に IntelliTrace ファイルを閉じた場合、ファイルを簡単に開き直すことができます。 **[デバッグ]** メニューで **[IntelliTrace]** 、 **[ログの概要の表示]** の順に選択します。 また **[IntelliTrace]** ウィンドウの **[ログの概要の表示]** を選択することもできます。 これは、IntelliTrace を使用したデバッグ中にのみ使用できます。
 
 ## <a name="Understand"></a> IntelliTrace ログを理解する
- .iTrace ファイルの次のセクションの一部は、特定のソース (たとえば、Test Manager、SharePoint アプリケーション) からデータを収集した場合にのみ表示されます。
+ .ITrace ファイルに次のセクションの一部は、特定のソースからデータを SharePoint アプリケーションから収集した場合にのみ表示されます。
 
 |**セクション**|**内容**|**コレクションのソース**|
 |-----------------|------------------|---------------------------|
@@ -76,7 +75,6 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
 |[分析](#Analysis)|SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーションのみ。 Microsoft Monitoring Agent によって記録されたデバッガー イベント、ULS イベント、ハンドルされない例外、その他のデータなど、IntelliTrace と SharePoint のイベントを診断します。|Microsoft Monitoring Agent、いずれかのスタンドアロン コレクターまたは System Center 2012 R2 Operations Manager|
 |[システム情報](#SystemInfo)|ホスト システムの設定および仕様|すべてのソース|
 |[スレッド一覧](#ThreadsList)|コレクション中に実行されたスレッド|すべてのソース|
-|[テスト データ](#TestData)|テスト セッションのテスト ステップと結果|テスト マネージャー|
 |[モジュール](#Modules)|読み込まれた順序でターゲット プロセスが読み込まれたモジュール。|すべてのソース|
 |[Web 要求](#Modules)|Web 要求のデータを実稼働 IIS web アプリケーションと SharePoint 2010 および SharePoint 2013|Microsoft Monitoring Agent とスタンドアロン コレクター|
 
@@ -84,7 +82,7 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
 
 - 列ヘッダーを選択してデータを並べ替えます。
 
-- 検索ボックスを使用して、データをフィルター処理します。 プレーンテキストの検索は、時間の列を除くすべての列で機能します。 また、列ごとに 1 つのフィルターで特定の列をフィルター検索できます。 空白、コロン (**:**)、および検索値のない列名を入力します。 この後にセミコロン (**;**) を置いて、別の列を追加し、値を検索します。
+- 検索ボックスを使用して、データをフィルター処理します。 プレーンテキストの検索は、時間の列を除くすべての列で機能します。 また、列ごとに 1 つのフィルターで特定の列をフィルター検索できます。 空白、コロン ( **:** )、および検索値のない列名を入力します。 この後にセミコロン ( **;** ) を置いて、別の列を追加し、値を検索します。
 
      たとえば、 **[説明]** の列に "slow" という単語があるパフォーマンス イベントを検索するには、次のように入力します。
 
@@ -143,9 +141,9 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
     |**列**|**内容**|
     |----------------|-------------------|
     |**型**|.NET 型の例外|
-    |グループ化された例外の **[最新メッセージ]** またはグループ化されていない例外の **[メッセージ]** |例外によって提供されるメッセージ|
-    |グループ化された例外の **[カウント]** |例外がスローされた回数|
-    |グループ化されていない例外の **[スレッド ID]** |例外をスローしたスレッドの ID|
+    |グループ化された例外の **[最新メッセージ]** またはグループ化されていない例外の **[メッセージ]**|例外によって提供されるメッセージ|
+    |グループ化された例外の **[カウント]**|例外がスローされた回数|
+    |グループ化されていない例外の **[スレッド ID]**|例外をスローしたスレッドの ID|
     |**[最新イベント時間]** または **[イベント時間]**|例外がスローされたときに記録されたタイム スタンプ|
     |**呼び出し履歴**|例外の呼び出し履歴。<br /><br /> 呼び出し履歴を表示するには、一覧で例外を選択します。 呼び出し履歴は例外の一覧の下に表示されます。|
 
@@ -227,9 +225,6 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
 |**Name**|スレッド名。 名前のないスレッドは "\<No Name>" として表示されます。|
 |**開始時刻**|スレッドが作成された時刻|
 |**終了時刻**|スレッドが完了した時刻|
-
-### <a name="TestData"></a> テスト データ
- アプリのテスト中に Test Manager によって記録された IntelliTrace データを確認します。
 
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>特定のテスト ステップからデバッグを開始するには
 

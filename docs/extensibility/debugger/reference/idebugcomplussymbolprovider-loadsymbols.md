@@ -6,17 +6,20 @@ helpviewer_keywords:
 - LoadSymbols
 - IDebugComPlusSymbolProvider::LoadSymbols
 ms.assetid: 3499680d-0b9a-4f20-8432-c89a41b29b87
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c19070dce95a1f88398fe57d03e9d578086e9ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5194b13a1e92b6d6f8ed4b688ea7956cb3ed876e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922449"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309000"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 メモリ内の指定されたデバッグ シンボルを読み込みます。
@@ -45,30 +48,24 @@ int LoadSymbols(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
-`ulAppDomainID`
+## <a name="parameters"></a>パラメーター
+`ulAppDomainID`\
+[in]アプリケーション ドメインの識別子。
 
- [in]アプリケーション ドメインの識別子。
+`guidModule`\
+[in]Mondule の一意の識別子。
 
-`guidModule`
+`baseAddress`\
+[in]基本のメモリ アドレス。
 
- [in]Mondule の一意の識別子。
+`pUnkMetadataImport`\
+[in]シンボルのメタデータを含むオブジェクト。
 
-`baseAddress`
+`bstrModuleName`\
+[in]モジュールの名前。
 
- [in]基本のメモリ アドレス。
-
-`pUnkMetadataImport`
-
- [in]シンボルのメタデータを含むオブジェクト。
-
-`bstrModuleName`
-
- [in]モジュールの名前。
-
-`bstrSymSearchPath`
-
- [in]シンボル ファイルを検索するパス。
+`bstrSymSearchPath`\
+[in]シンボル ファイルを検索するパス。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

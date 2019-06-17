@@ -1,8 +1,8 @@
 ---
 title: インストール構成をインポートまたはエクスポートする
 titleSuffix: ''
-description: Visual Studio の構成のインポート/エクスポート機能を使用する方法について説明します
-ms.date: 04/19/2019
+description: インストール構成を .vsconfig ファイルにエクスポートし、他のユーザーと共有する方法とそれをインポートして複製する方法について説明します。
+ms.date: 05/18/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -18,16 +18,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: facbbf5903d683ea3a13bdd875dfe2b6c63b6367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8150aa3369eb385ebad865d261f9e8c2d71d7dbe
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786406"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65849035"
 ---
 # <a name="import-or-export-installation-configurations"></a>インストール構成をインポートまたはエクスポートする
 
-インストール構成ファイルを使用して、組織全体で Visual Studio を構成できます。 これを行うには、Visual Studio インストーラーを使用して、ワークロードとコンポーネントの情報を .vsconfig ファイルにエクスポートします。 それから、新規または既存のインストールに構成をインポートできます。
+インストール構成ファイルを使用し、組織全体で Visual Studio を構成できます。 これを行うには、Visual Studio インストーラーを使用して、ワークロードとコンポーネントの情報を .vsconfig ファイルにエクスポートします。 その後、新規または既存のインストールに構成をインポートしたり、他のユーザーと共有したりすることもできます。
 
 ここではその方法を説明します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "62786406"
 
    ![Visual Studio インストーラーの製品カードから構成をエクスポートする](../install/media/vs-2019/vs-installer-export-config.png)
 
-1. .vconfig ファイルを保存する場所を参照するか入力して、**[詳細の確認]** を選択します。
+1. .vsconfig ファイルを保存する場所を参照するか入力して、**[詳細の確認]** を選択します。
 
    ![Visual Studio インストーラーから構成をエクスポートする](../install/media/vs-2019/export-configuration-confirmation.png)
 
@@ -62,7 +62,7 @@ ms.locfileid: "62786406"
 
 1. 製品カードで **[その他]** ボタンを選択し、**[構成のインポート]** を選択します。
 
-1. インポートする .vconfig ファイルを見つけて、**[詳細の確認]** を選択します。
+1. インポートする .vsconfig ファイルを見つけて、**[詳細の確認]** を選択します。
 
 1. 必要なワークロードとコンポーネントがあることを確認してから、**[閉じる]** を選択します。
 

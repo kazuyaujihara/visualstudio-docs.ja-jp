@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessSecurity::GetUserName
 ms.assetid: c73c60ac-da6e-45ae-8f04-95353a24ca3e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8340e9fd9e5f38963a9de78e2974404f600deef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a42b67eb3fd308011bf725f8dd7e24a4d9ddca6f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917454"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311522"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
 ポート サプライヤーからユーザー名を取得します。
@@ -34,10 +37,9 @@ int GetUserName (
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pbstrUserName`
-
- [out]ユーザー名を表す文字列。
+## <a name="parameters"></a>パラメーター
+`pbstrUserName`\
+[out]ユーザー名を表す文字列。
 
 ## <a name="return-value"></a>戻り値
  返します、メソッドが成功したかどうかは`S_OK`します。 それ以外の場合、エラー コードを返します。

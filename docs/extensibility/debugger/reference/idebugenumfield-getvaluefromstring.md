@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetValueFromString method
 ms.assetid: 1ef8ac5e-a3e0-4078-b876-7f5615aedcbb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e714e6b2028605eb9c820f904cedf9ed4c23eab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 81b74ecc780e2fd9df3cad5516c25f8a1fa657ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920399"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345118"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 このメソッドは、列挙定数の名前に関連付けられている値を返します。
@@ -38,14 +41,12 @@ int GetValueFromString(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pszValue`
+## <a name="parameters"></a>パラメーター
+`pszValue`\
+[in]値を取得する対象の名前を指定する文字列。 C++、ワイド文字の文字列は、このことに注意してください。
 
- [in]値を取得する対象の名前を指定する文字列。 C++、ワイド文字の文字列は、このことに注意してください。
-
- `pValue`
-
- [out]関連付けられている数値を返します。
+`pValue`\
+[out]関連付けられている数値を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`名前列挙型、またはエラー コードの一部でない場合は、します。

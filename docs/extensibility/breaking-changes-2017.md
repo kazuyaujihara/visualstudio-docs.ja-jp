@@ -4,18 +4,17 @@ titleSuffix: ''
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-monikerRange: vs-2017
-ms.openlocfilehash: e7363a0779721e4fb36106d6ee77324c341517ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 589f5eddb2b1e2a8fd61eea2a205f12d2d9c0742
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926836"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321356"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 の機能拡張の変更
 
@@ -106,8 +105,8 @@ Visual Studio プロセス内で実行されているコードは、Visual Studi
 
 * Visual Studio が、システムに多くのレジストリ キーをインストールする以前は、 **HKEY_LOCAL_MACHINE**と**HKEY_CURRENT_USER**ハイブ Visual Studio に固有のキーの下。
 
-  * **Hklm \software\microsoft\visualstudio\{バージョン}**:MSI インストーラーとコンピューター単位の拡張機能によって作成されたレジストリ キー。
-  * **Hkcu \software\microsoft\visualstudio\{バージョン}**:ユーザーに固有の設定を格納する Visual Studio によって作成されたレジストリ キーです。
+  * **Hklm \software\microsoft\visualstudio\{バージョン}** :MSI インストーラーとコンピューター単位の拡張機能によって作成されたレジストリ キー。
+  * **Hkcu \software\microsoft\visualstudio\{バージョン}** :ユーザーに固有の設定を格納する Visual Studio によって作成されたレジストリ キーです。
   * **Hkcu \software\microsoft\visualstudio\{バージョン} _Config**:上の Visual Studio HKLM キーとレジストリ キーのコピーにマージされた *.pkgdef*拡張機能によってファイル。
 
 * レジストリへの影響を減らすためには、Visual Studio を今すぐ使用して、 [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya)プライベート バイナリ ファイルの下にレジストリ キーを格納する関数 *[VSAPPDATA]\privateregistry.bin*します。 Visual Studio 固有のキーの数が非常に小さいだけは、システム レジストリに残ります。

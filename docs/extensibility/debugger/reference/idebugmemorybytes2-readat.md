@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::ReadAt method
 - ReadAt method
 ms.assetid: b413684d-4155-4bd4-ae30-ffa512243b5f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f787ad06b4e7d612007b6448287b5062ae1b0efd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a1083239dbb00e5b953fe7a72c27a350ffe34cc2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873312"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314302"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 指定した位置から始まるバイト シーケンスを読み取ります。
@@ -45,26 +48,21 @@ int ReadAt(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pStartContext`
+## <a name="parameters"></a>パラメーター
+`pStartContext`\
+[in][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)バイトの読み取りを開始する場所を指定するオブジェクト。
 
- [in][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)バイトの読み取りを開始する場所を指定するオブジェクト。
+`dwCount`\
+[in]読み取るバイト数。 長さを指定します、`rgbMemory`配列。
 
- `dwCount`
+`rgbMemory`\
+[入力、出力]入力バイト配列が実際に読み取られました。
 
- [in]読み取るバイト数。 長さを指定します、`rgbMemory`配列。
+`pdwRead`\
+[out]実際に読み取られる連続するバイト数を返します。
 
- `rgbMemory`
-
- [入力、出力]入力バイト配列が実際に読み取られました。
-
- `pdwRead`
-
- [out]実際に読み取られる連続するバイト数を返します。
-
- `pdwUnreadable`
-
- [入力、出力]読み取り不可能なバイト数を返します。 クライアントは、読み取り不可能なバイト数に興味がない場合、null 値を指定できます。
+`pdwUnreadable`\
+[入力、出力]読み取り不可能なバイト数を返します。 クライアントは、読み取り不可能なバイト数に興味がない場合、null 値を指定できます。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。

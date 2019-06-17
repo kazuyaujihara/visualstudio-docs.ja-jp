@@ -3,17 +3,17 @@ title: リソースからマニフェスト |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffab5f43bf026bd410c72694716148d4d368c69a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 917397003d0e14bc9b5ff707926adf5f04f73baa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859945"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328631"
 ---
 # <a name="manifest-from-resources"></a>リソースからのマニフェスト
 リソースのツールから、マニフェストとは、イメージ リソース (.png または .xaml ファイル) の一覧を受け取り、Visual Studio イメージのサービスで使用するそれらのイメージを許可する .imagemanifest ファイルを生成するコンソール アプリケーションです。 さらに、このツールを使用して、既存の .imagemanifest にイメージを追加することができます。 このツールは、イメージを Visual Studio 拡張機能の高 DPI とテーマのサポートを追加するのに役立ちます。 生成された .imagemanifest ファイルに含まれ、Visual Studio 拡張機能 (.vsix) の一部として配置する必要があります。

@@ -34,7 +34,7 @@ ms.locfileid: "63435979"
   
 1. レジストリ エントリを作成します。  
   
-    Hkey_local_machine \software\microsoft\visualstudio\\*\<バージョン >* \Text Editor\External マーカー\\*\<MarkerGUID >*  
+    Hkey_local_machine \software\microsoft\visualstudio\\ *\<バージョン >* \Text Editor\External マーカー\\ *\<MarkerGUID >*  
   
     <em>\<MarkerGUID ></em>は、`GUID`追加される、マーカーを識別するために使用  
   
@@ -43,9 +43,9 @@ ms.locfileid: "63435979"
     *\<PackageGUID >* オートメーション オブジェクトを実装する VSPackage の GUID です。  
   
    > [!NOTE]
-   > Hkey_local_machine \software\microsoft\visualstudio のルート パス\\*\<バージョン >* 詳細詳細については、Visual Studio シェルが初期化されるときに、代替ルートで上書きすることができます[コマンド ライン スイッチ](../extensibility/command-line-switches-visual-studio-sdk.md)します。  
+   > Hkey_local_machine \software\microsoft\visualstudio のルート パス\\ *\<バージョン >* 詳細詳細については、Visual Studio シェルが初期化されるときに、代替ルートで上書きすることができます[コマンド ライン スイッチ](../extensibility/command-line-switches-visual-studio-sdk.md)します。  
   
-2. Hkey_local_machine \software\microsoft\visualstudio で 4 つの値を作成する\\*\<バージョン >* \Text Editor\External マーカー\\*\<MarkerGUID>*  
+2. Hkey_local_machine \software\microsoft\visualstudio で 4 つの値を作成する\\ *\<バージョン >* \Text Editor\External マーカー\\ *\<MarkerGUID>*  
   
    - (既定)  
   

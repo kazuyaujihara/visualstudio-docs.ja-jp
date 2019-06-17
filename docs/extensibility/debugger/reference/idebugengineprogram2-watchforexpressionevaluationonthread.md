@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c0572bfa8ebe1b70548483b17c58d08c8a0f9ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e72292f403b28c66cddbcee623f27ddfcbe5c3aa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920374"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345177"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 プログラムが停止された場合でも、特定のスレッドで発生する式の評価を許可 (または許可されていません)。
@@ -44,26 +47,21 @@ int WatchForExpressionEvaluationOnThread( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pOriginatingProgram`
+## <a name="parameters"></a>パラメーター
+`pOriginatingProgram`\
+[in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)式の評価プログラムを表すオブジェクト。
 
- [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)式の評価プログラムを表すオブジェクト。
+`dwTid`\
+[in]スレッドの識別子を指定します。
 
- `dwTid`
+`dwEvalFlags`\
+[in]フラグの組み合わせ、 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)評価を実行する方法を指定する列挙体。
 
- [in]スレッドの識別子を指定します。
+`pExprCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)式の評価中に発生するデバッグ イベントの送信に使用するオブジェクト。
 
- `dwEvalFlags`
-
- [in]フラグの組み合わせ、 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)評価を実行する方法を指定する列挙体。
-
- `pExprCallback`
-
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)式の評価中に発生するデバッグ イベントの送信に使用するオブジェクト。
-
- `fWatch`
-
- [in]0 以外の場合 (`TRUE`)、式の評価で識別されるスレッドで使用できるように`dwTid`、それ以外の 0 (`FALSE`) そのスレッドで式の評価を許可されていません。
+`fWatch`\
+[in]0 以外の場合 (`TRUE`)、式の評価で識別されるスレッドで使用できるように`dwTid`、それ以外の 0 (`FALSE`) そのスレッドで式の評価を許可されていません。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

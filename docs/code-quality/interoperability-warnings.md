@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b68ea8c66b26ee2463969ca71b8f0e5ac78b3f0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a4e8f7bc60704842a8a0e940b336b4bb79093b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823596"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745140"
 ---
 # <a name="interoperability-warnings"></a>相互運用性に関する警告
 
@@ -32,7 +32,7 @@ ms.locfileid: "62823596"
 | [CA1400:P/invoke エントリ ポイントが存在する必要があります。](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) | パブリック メソッドまたはプロテクト メソッドが System.Runtime.InteropServices.DllImportAttribute 属性を使用してマークされています。 アンマネージ ライブラリの位置を特定できないか、メソッドがライブラリ内の関数と一致しません。 |
 | [CA1401:P/invoke を表示することはできません。](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | パブリック型の public または protected のメソッドには、(Visual Basic で Declare キーワードを使用して実装も) System.Runtime.InteropServices.DllImportAttribute 属性があります。 このようなメソッドは公開しないでください。 |
 | [CA 1402:COM 参照可能インターフェイスでのオーバー ロードを避ける](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md) | オーバーロードされたメソッドが COM クライアントに公開されると、最初のメソッド オーバーロードだけが名前を保持します。 後続のオーバーロードは、名前にアンダースコア文字 (_) およびオーバーロードの宣言の順序に対応する整数が付加され、一意の名前に変更されます。 |
-| [CA 1403:Auto 配置の型が COM に表示することはできません。](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | COM 参照可能な値型が、LayoutKind.Auto に設定された System.Runtime.InteropServices.StructLayoutAttribute 属性を使用してマークされています。これらの型のレイアウトは、COM クライアントが特定のレイアウトが予期される動作しなくなる .NET Framework のバージョン間で変更できます。 |
+| [CA 1403:Auto 配置の型が COM に表示することはできません。](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | COM 参照可能な値型が、LayoutKind.Auto に設定された System.Runtime.InteropServices.StructLayoutAttribute 属性を使用してマークされています。これらの型のレイアウトは、.NET のバージョンは、特定のレイアウトを期待する COM クライアントが中断の間で変更できます。 |
 | [CA 1404:P/invoke の直後に GetLastError を呼び出します](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md) | Marshal.GetLastWin32Error メソッドまたは同等に呼び出し[!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)]GetLastError 関数が、直前の呼び出しでないプラットフォームにメソッドを呼び出します。 |
 | [CA 1405:COM から参照できる型の基本型が COM 参照可能にする必要があります。](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md) | COM 参照可能な型が、COM 参照不可能な型から派生しています。 |
 | [CA1406:Visual Basic 6 クライアントに対しては Int64 引数を避ける](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md) | Visual Basic 6 COM クライアントは、64 ビット整数値にアクセスできません。 |

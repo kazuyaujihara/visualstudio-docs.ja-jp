@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5766beb87626efd11ba50422d5f811d1ae1d91e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898699"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747407"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;文字列&gt;要素 (ブートス トラップ)
 製品名、パッケージ名、およびインストールのエラー メッセージのローカライズされた文字列を定義します。
@@ -52,7 +52,7 @@ ms.locfileid: "62898699"
 |`Name`|必須。 文字列の名前。|
 
 ## <a name="example"></a>例
- 次のコード例では、すべての英語文字列を指定します、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]インストーラー。
+ 次のコード例では、.NET Framework インストーラーのすべての英語文字列を指定します。
 
 ```xml
 <Strings>

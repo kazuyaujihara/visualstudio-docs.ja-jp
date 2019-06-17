@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetInfo
 ms.assetid: 19c6870b-b94e-453c-bf19-82ce95b79d26
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1db085059b93eac4afd9f03ed17b5e267411a373
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ad560386991a0545510e1b74a140d17cc35fcbe3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458533"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352120"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 スタック フレームの説明を取得します。
@@ -44,17 +44,14 @@ int GetInfo ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `dwFieldSpec`\
+`dwFieldSpec`\
+[in]フラグの組み合わせ、 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)のどのフィールドを指定する列挙体、`pFrameInfo`パラメーター入力します。
 
- [in]フラグの組み合わせ、 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)のどのフィールドを指定する列挙体、`pFrameInfo`パラメーター入力します。
+`nRadix`\
+[in]任意の数値情報を書式設定で使用する基数。
 
- `nRadix`\
-
- [in]任意の数値情報を書式設定で使用する基数。
-
- `pFrameInfo`\
-
- [out]A [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)構造体のスタック フレームの説明が入力されます。
+`pFrameInfo`\
+[out]A [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)構造体のスタック フレームの説明が入力されます。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

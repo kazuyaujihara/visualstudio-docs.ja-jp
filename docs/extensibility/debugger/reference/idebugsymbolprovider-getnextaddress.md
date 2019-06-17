@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNextAddress method
 ms.assetid: 704eeb94-cb13-49d1-82b6-7d83ed0f19c0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ea45e3aa1f59353e0a395a61b0309144b413227
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: f358abe84987b9c7c1a5a1df36fdf480f62ee64b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223989"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347529"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 メソッドで指定されたデバッグ アドレスに続くデバッグ アドレスを取得します。
@@ -44,17 +44,14 @@ int GetNextAddress( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pAddress`\
+`pAddress`\
+[in]デバッグ アドレスが指定されています。
 
- [in]デバッグ アドレスが指定されています。
+`fStatementOnly`\
+[in]TRUE の場合は、1 つのステートメントにデバッグ アドレスを制限します。
 
- `fStatementOnly`\
-
- [in]TRUE の場合は、1 つのステートメントにデバッグ アドレスを制限します。
-
- `ppAddress`\
-
- [out][次へ] のデバッグ アドレスを返します。
+`ppAddress`\
+[out][次へ] のデバッグ アドレスを返します。
 
 ## <a name="return-value"></a>戻り値
  有効な返します`HRESULT`通常は、s_ok を返します。

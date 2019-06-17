@@ -1,43 +1,22 @@
 ---
 title: ユーザー設定ストアへの書き込み |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 05/23/2019
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 44380a03b87318be0fdf746c75eff8988ac68267
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444915"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318481"
 ---
 # <a name="writing-to-the-user-settings-store"></a>ユーザー設定ストアへの書き込み
 ユーザーの設定は、書き込み可能の設定で使用されているように、**ツール/オプション**ダイアログ、[プロパティ] ウィンドウ、およびその他の特定のダイアログ ボックス。 Visual Studio 拡張機能は、これらを使用少量のデータを格納するのにことがあります。 このチュートリアルでは、ユーザー設定ストアへの書き込みから読み取りによって、外部ツールとして Visual Studio をメモ帳を追加する方法を示します。
-
-### <a name="backing-up-your-user-settings"></a>お客様のユーザー設定のバックアップ
-
-1. デバッグし、手順を使用できるように、外部ツールの設定をリセットする必要があります。 これを行うには、必要に応じてに復元できるように、元の設定を保存する必要があります。
-
-2. Regedit.exe を開きます。
-
-3. HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External ツールに移動します\\します。
-
-    > [!NOTE]
-    > \14.0Exp\ といない \14.0 を含むキーを検索するかどうかを確認\\します。 Visual Studio の実験用インスタンスを実行すると、ユーザーの設定はレジストリ ハイブ"14.0Exp"では。
-
-4. \External Tools\ のサブキーを右クリックし、をクリックし、**エクスポート**します。 必ず**選択されたブランチ**が選択されています。
-
-5. 結果として得られる外部 Tools.reg ファイルを保存します。
-
-6. その後、外部ツールの設定をリセットするには、HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External tools \ のレジストリ キーを選択し、をクリックして**削除**コンテキスト メニュー。
-
-7. ときに、**キーの削除の確認** ダイアログ ボックスが表示されたら、をクリックして**はい**します。
-
-8. 以前に保存する外部 Tools.reg ファイルを右クリックし、をクリックして**プログラムから開く**、 をクリックし、**レジストリ エディター**します。
 
 ## <a name="writing-to-the-user-settings-store"></a>ユーザー設定ストアへの書き込み
 

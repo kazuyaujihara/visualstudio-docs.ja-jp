@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 249efe70cdcc2cf8ef600ca4d9e009e094e1b105
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862050"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309120"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>VSPackage のインストール ディレクトリを選択します。
 VSPackage とそのサポート ファイルは、ユーザーのファイル システム上にある必要があります。 場所は、VSPackage の管理または非管理対象、サイド バイ サイド バージョン管理スキームとユーザーの選択かどうかによって異なります。
@@ -55,7 +55,7 @@ VSPackage とそのサポート ファイルは、ユーザーのファイル �
 
 4. 既定のサブ言語とシステムの既定の LCID。
 
-5. 米国英語 (*. \1033*または *. \0x409*)。
+5. 米国英語 ( *. \1033*または *. \0x409*)。
 
 VSPackage DLL にリソースが含まれている場合、 **SatelliteDll\DllName**レジストリ エントリが指す、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]それらを上記の順序で読み込みを試みます。
 

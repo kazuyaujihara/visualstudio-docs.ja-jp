@@ -28,16 +28,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f2343d71d2ed0745f9c5a2a799c3018a2e64945
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045343"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746249"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio デバッガーでシンボル (.pdb) ファイルとソース ファイルの指定 (C#、C++、Visual Basic、 F#)
 
-プログラム データベース (*.pdb*) ファイル、シンボルのファイルとも呼ばれます。 識別子をマップすると、対応する識別子を、プロジェクトのソース コード内のステートメントと」の手順には、アプリをコンパイルします。
+プログラム データベース ( *.pdb*) ファイル、シンボルのファイルとも呼ばれます。 識別子をマップすると、対応する識別子を、プロジェクトのソース コード内のステートメントと」の手順には、アプリをコンパイルします。
 
 デバッグ ビルド構成の標準の Visual Studio IDE からプロジェクトをビルドする場合、コンパイラは適切なシンボル ファイルを作成します。 できます[コードでシンボル オプションを設定](#compiler-symbol-options)します。
 
@@ -62,7 +62,7 @@ Visual Studio IDE でプロジェクトをデバッグするときに、デバ�
 
 デバッガーは、次の場所でシンボル ファイルを検索します。
 
-1. DLL または実行可能ファイル内で指定されている場所 (*.exe*) ファイル。
+1. DLL または実行可能ファイル内で指定されている場所 ( *.exe*) ファイル。
 
    既定では、DLL をビルドした場合または *.exe* 、リンカー、コンピューター上のファイルは、完全なパスとファイル名、関連付けられている *.pdb* DLL 内のファイルまたは *.exe*ファイル。 デバッガーは、その場所にシンボル ファイルが存在するかどうかを確認します。
 
@@ -76,7 +76,7 @@ Visual Studio IDE でプロジェクトをデバッグするときに、デバ�
 
      使用するシンボル サーバーは次のとおりです。
 
-     **パブリックの Microsoft シンボル サーバー**:システム DLL やサードパーティ製ライブラリの呼び出し中に発生するクラッシュをデバッグするには、多くの場合、システムが必要な *.pdb*ファイル。 システム *.pdb*ファイルは、Windows の Dll のシンボルを含めることが *.exe*ファイル、およびデバイス ドライバー。 Windows オペレーティング システムでは、MDAC、IIS、ISA、シンボルを取得できる、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]パブリックの Microsoft シンボル サーバーからです。
+     **パブリックの Microsoft シンボル サーバー**:システム DLL やサードパーティ製ライブラリの呼び出し中に発生するクラッシュをデバッグするには、多くの場合、システムが必要な *.pdb*ファイル。 システム *.pdb*ファイルは、Windows の Dll のシンボルを含めることが *.exe*ファイル、およびデバイス ドライバー。 Windows オペレーティング システム、MDAC、IIS、ISA、および .NET Framework のシンボルは、パブリックの Microsoft シンボル サーバーから入手できます。
 
      **内部ネットワーク上またはローカル コンピューター上のシンボル サーバー**:チームや会社で独自の製品用にシンボル サーバーを作成して、外部ソースのシンボルのキャッシュとして使用できます。 自分のコンピューター上にシンボル サーバーを作成することもできます。
 
@@ -136,7 +136,7 @@ Visual Studio IDE でプロジェクトをデバッグするときに、デバ�
 
 ## <a name="other-symbol-options-for-debugging"></a>デバッグ用の他のシンボル オプション
 
-その他のシンボルのオプションを選択する**ツール** > **オプション** > **デバッグ** > **[全般]**(または**デバッグ** > **オプション** > **全般**)。
+その他のシンボルのオプションを選択する**ツール** > **オプション** > **デバッグ** >  **[全般]** (または**デバッグ** > **オプション** > **全般**)。
 
 - **dll エクスポートの読み込み (ネイティブのみ)**
 
@@ -169,21 +169,21 @@ Visual Studio IDE でプロジェクトをデバッグするときに、デバ�
 
 ### <a name="cc-options"></a>C/C++ オプション
 
-- *VC\<x > .pdb*と*\<プロジェクト > .pdb*ファイル
+- *VC\<x > .pdb*と *\<プロジェクト > .pdb*ファイル
 
-  A *.pdb*ファイルでビルドすると、C または C++ が作成されたの[/ZI または/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format)します。 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]、 [/Fd](/cpp/build/reference/fd-program-database-file-name)オプション名、 *.pdb*ファイルは、コンパイラによって作成されます。 プロジェクトを作成するときに[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE を使用して、 **/Fd**を作成するオプションを設定、 *.pdb*という名前のファイル*\<プロジェクト > .pdb*します。
+  A *.pdb*ファイルでビルドすると、C または C++ が作成されたの[/ZI または/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format)します。 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]、 [/Fd](/cpp/build/reference/fd-program-database-file-name)オプション名、 *.pdb*ファイルは、コンパイラによって作成されます。 プロジェクトを作成するときに[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE を使用して、 **/Fd**を作成するオプションを設定、 *.pdb*という名前のファイル *\<プロジェクト > .pdb*します。
 
   メイクファイルを使って C/C++ アプリケーションをビルドすると、指定すると **/ZI**または **/Zi**を使用せず **/Fd**、コンパイラでは、2 つ作成されます *.pdb*ファイル。
 
-  - *VC\<x>.pdb*。*\<x>* は Visual C++ のバージョン (*VC11.pdb* など) を表します。
+  - *VC\<x>.pdb*。 *\<x>* は Visual C++ のバージョン (*VC11.pdb* など) を表します。
 
-    *VC\<x > .pdb*個々 のオブジェクト ファイルのすべてのデバッグ情報を格納し、プロジェクトのメイクファイルと同じディレクトリに存在するファイル。 オブジェクト ファイルが作成されるたびに、C/C++ コンパイラにデバッグ情報をマージする*VC\<x > .pdb*します。 などすべてのソース ファイルに共通のヘッダー ファイルが含まれている場合でもその *\<windows.h >*、これらのヘッダーの typedef はすべてのオブジェクト ファイルではなく、1 回だけ格納されます。 挿入される情報には、型情報が含まれますが、関数定義などのシンボル情報は含まれません。
+    *VC\<x > .pdb*個々 のオブジェクト ファイルのすべてのデバッグ情報を格納し、プロジェクトのメイクファイルと同じディレクトリに存在するファイル。 オブジェクト ファイルが作成されるたびに、C/C++ コンパイラにデバッグ情報をマージする*VC\<x > .pdb*します。 などすべてのソース ファイルに共通のヘッダー ファイルが含まれている場合でもその *\<windows.h >* 、これらのヘッダーの typedef はすべてのオブジェクト ファイルではなく、1 回だけ格納されます。 挿入される情報には、型情報が含まれますが、関数定義などのシンボル情報は含まれません。
 
   - *\<プロジェクト>.pdb*
 
     *\<プロジェクト > .pdb*ファイル、プロジェクトのすべてのデバッグ情報を格納する *.exe*ファイルを開きにある、 *\debug*サブディレクトリ。 *\<プロジェクト>.pdb* ファイルには、*VC\<x>.pdb* に含まれる型情報だけでなく、関数プロトタイプなどのあらゆるデバッグ情報が含まれます。
 
-  両方の*VC\<x > .pdb*と*\<プロジェクト > .pdb*ファイルは、増分更新を許可します。 リンカーへのパスを埋め込むことも、 *.pdb*内のファイル、 *.exe*または *.dll*ファイルを作成します。
+  両方の*VC\<x > .pdb*と *\<プロジェクト > .pdb*ファイルは、増分更新を許可します。 リンカーへのパスを埋め込むことも、 *.pdb*内のファイル、 *.exe*または *.dll*ファイルを作成します。
 
 - <a name="use-dumpbin-exports"></a>DLL エクスポート テーブル
 
@@ -193,7 +193,7 @@ Visual Studio IDE でプロジェクトをデバッグするときに、デバ�
 
 ### <a name="net-framework-options"></a>.NET Framework のオプション
 
-ビルド **/debug**を作成する、 *.pdb*ファイル。 **/debug:full** または **/debug:pdbonly**でアプリケーションをビルドできます。 **/debug:full** でビルドすると、デバッグできるコードが生成されます。 **/debug:pdbonly** でビルドすると *.pdb* ファイルは生成されますが、JIT コンパイラにデバッグ情報が使用できることを示す `DebuggableAttribute` は生成されません。 デバッグが必要ないリリース ビルドで *.pdb* ファイルを生成する場合は、**/debug:pdbonly** を使用します。 詳細については、「[/debug (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)」または「[/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)」を参照してください。
+ビルド **/debug**を作成する、 *.pdb*ファイル。 **/debug:full** または **/debug:pdbonly**でアプリケーションをビルドできます。 **/debug:full** でビルドすると、デバッグできるコードが生成されます。 **/debug:pdbonly** でビルドすると *.pdb* ファイルは生成されますが、JIT コンパイラにデバッグ情報が使用できることを示す `DebuggableAttribute` は生成されません。 デバッグが必要ないリリース ビルドで *.pdb* ファイルを生成する場合は、 **/debug:pdbonly** を使用します。 詳細については、「[/debug (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)」または「[/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)」を参照してください。
 
 ### <a name="web-applications"></a>Web アプリケーション
 
@@ -201,7 +201,7 @@ Visual Studio IDE でプロジェクトをデバッグするときに、デバ�
 
 ## <a name="manage-symbols-while-debugging"></a>デバッグ中にシンボルを管理します。
 
-使用することができます、**モジュール**、**呼び出し履歴**、**ローカル**、 **[自動変数]**、または any**ウォッチ**を読み込むウィンドウシンボルまたはデバッグ中にシンボルのオプションを変更します。 詳細については、次を参照してください。[をアプリにデバッガーのアタッチをより理解を深める](../debugger/debugger-tips-and-tricks.md#modules_window)します。
+使用することができます、**モジュール**、**呼び出し履歴**、**ローカル**、 **[自動変数]** 、または any**ウォッチ**を読み込むウィンドウシンボルまたはデバッグ中にシンボルのオプションを変更します。 詳細については、次を参照してください。[をアプリにデバッガーのアタッチをより理解を深める](../debugger/debugger-tips-and-tricks.md#modules_window)します。
 
 ### <a name="use-the-modules-window"></a>[モジュール] ウィンドウを使用する
 
@@ -247,7 +247,7 @@ Visual Studio IDE でプロジェクトをデバッグするときに、デバ�
 
 デバッガーがソース ファイルの検索場所を指定し、特定のファイルを検索から除外できます。
 
-1. ソリューションを選択します**ソリューション エクスプ ローラー**、を選び、**プロパティ**アイコン、キーを押して**Alt**+**」と入力**、または。右クリックして**プロパティ**します。
+1. ソリューションを選択します**ソリューション エクスプ ローラー**、を選び、**プロパティ**アイコン、キーを押して**Alt**+ **」と入力**、または。右クリックして**プロパティ**します。
 
 1. 選択**デバッグ ソース ファイル**します。
 

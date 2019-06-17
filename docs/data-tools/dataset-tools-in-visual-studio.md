@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00873cd84b5a6d89469de26ed982b98d2dffa27c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567109"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715212"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio のデータセット ツール
 
@@ -61,7 +61,7 @@ ms.locfileid: "62567109"
 
 A`DataSet`オブジェクトは基本的にミニ データベースであるメモリ内オブジェクトです。 含まれている`DataTable`、 `DataColumn`、および`DataRow`オブジェクトを格納し、開いている接続を管理することがなく 1 つまたは複数のデータベースからデータを変更します。 データセットは、更新プログラムを追跡し、アプリケーションが再接続されたときに、データベースに送信されるように、そのデータへの変更に関する情報を保持します。
 
-データセットと関連するクラスがで定義されている、 <xref:System.Data?displayProperty=fullName> .NET Framework クラス ライブラリで名前空間。 作成して ADO.NET を使用してコードで動的にデータセットを変更します。 このセクションのドキュメントでは、Visual Studio のデザイナーを使用してデータセットを操作する方法を示します。 デザイナーを使用して作成されたデータセットで**TableAdapter**データベースと対話するオブジェクト。 プログラムで作成されたデータセットを使用して、 **DataAdapter**オブジェクト。 プログラムでデータセットを作成する方法の詳細については、次を参照してください。 [Dataadapter と Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)します。
+データセットと関連するクラスがで定義されている、 <xref:System.Data?displayProperty=fullName> .NET API では名前空間。 作成して ADO.NET を使用してコードで動的にデータセットを変更します。 このセクションのドキュメントでは、Visual Studio のデザイナーを使用してデータセットを操作する方法を示します。 デザイナーを使用して作成されたデータセットで**TableAdapter**データベースと対話するオブジェクト。 プログラムで作成されたデータセットを使用して、 **DataAdapter**オブジェクト。 プログラムでデータセットを作成する方法の詳細については、次を参照してください。 [Dataadapter と Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)します。
 
 使用してパフォーマンスを向上させるを通常取得場合は、アプリケーションは、追加すると、または削除するのみ、データベースからデータを読み取るし、しない更新プログラムを実行する必要があります、`DataReader`ジェネリックにデータを取得するオブジェクト`List`オブジェクトまたは別のコレクション オブジェクト。 データを表示する場合はデータにバインドするユーザー インターフェイスをコレクションにします。
 

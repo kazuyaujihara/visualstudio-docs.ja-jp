@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7969ca0a5900ae08d1aac6634f961d45bbfac564
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a33911ffe8c28dd84166e3e16ac6b7f0f48f583c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674156"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263013"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>チュートリアル: 複数のコンピューターを使用するビルド環境の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ ms.locfileid: "65674156"
   
    - %ProgramFiles%\Windows Kits\8.0\References\  
   
-     次に示す他の Windows 8 キットもインストールされている場合:   
+     次に示す他の Windows 8 キットもインストールされている場合:  
   
    - Microsoft Windows アセスメント & デプロイメント キット  
   
@@ -197,7 +197,7 @@ ms.locfileid: "65674156"
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. 「[デバッグ バージョンのアプリケーションを実行するテスト用コンピューターの準備](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)」の説明に従って、\Debug_NonRedist\x86\ フォルダーまたは \Debug_NonRedist\x64\ フォルダーから次のファイルのみをビルド コンピューターにコピーします。 他のファイルはコピーしないでください。  
+5. 「[デバッグ バージョンのアプリケーションを実行するテスト用コンピューターの準備](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)」の説明に従って、\Debug_NonRedist\x86\ フォルダーまたは \Debug_NonRedist\x64\ フォルダーから次のファイルのみをビルド コンピューターにコピーします。 他のファイルはコピーしないでください。  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -424,5 +424,5 @@ ms.locfileid: "65674156"
          ネイティブ 64 ビットのビルドの場合は、64 ビットの MSBuild が指定されるように調整します。  
   
 ## <a name="see-also"></a>関連項目  
- [デバッグ バージョンのアプリケーションを実行するテスト用コンピューターの準備](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [デバッグ バージョンのアプリケーションを実行するテスト用コンピューターの準備](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)   
  [Command-Line Reference (コマンド ライン リファレンス)](../msbuild/msbuild-command-line-reference.md)

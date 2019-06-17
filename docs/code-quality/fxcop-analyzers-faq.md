@@ -1,7 +1,7 @@
 ---
 title: FxCop コード分析および FxCop アナライザー
 ms.date: 09/06/2018
-ms.topic: overview
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis FAQ
 author: gewarren
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816424"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037260"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop および FxCop アナライザーに関してよく寄せられる質問
 
@@ -48,6 +48,10 @@ FxCop アナライザーをインストールしても、"**"コード分析の�
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
+
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>どのルールが FxCop アナライザーに移植されていますか。
+
+移植された静的コード分析ルールに関する情報の[FxCop アナライザー](install-fxcop-analyzers.md)を参照してください[Fxcop ルールのポートの状態](fxcop-rule-port-status.md)します。
 
 ## <a name="see-also"></a>関連項目
 

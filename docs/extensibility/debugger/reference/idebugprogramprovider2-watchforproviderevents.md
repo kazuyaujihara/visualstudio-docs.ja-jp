@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::WatchForProviderEvents
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9048dc633dd9cc74a9d27c54ff9b0fba16cc7ac1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: eb0968f96300ab62e4b4ee4b34b3e7f574f4b0fc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458979"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343429"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 ポートのイベントの通知プロセスを許可します。
@@ -50,9 +50,8 @@ int WatchForProviderEvents(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `Flags`\
-
- [in]フラグの組み合わせ、 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列挙体。 次のフラグは、この呼び出しの一般的なものは。
+`Flags`\
+[in]フラグの組み合わせ、 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列挙体。 次のフラグは、この呼び出しの一般的なものは。
 
 |フラグ|説明|
 |----------|-----------------|
@@ -61,25 +60,20 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|呼び出し元に接続されているが、デバッガーによって起動されません。|
 |`PFLAG_REASON_WATCH`|呼び出し元がイベントをウォッチします。 このフラグが設定されていません。 場合、 コールバック イベントを削除し、呼び出し元が通知を受け取ることはなくなります。|
 
- `pPort`\
+`pPort`\
+[in]呼び出し元のプロセス、ポートがで実行されています。
 
- [in]呼び出し元のプロセス、ポートがで実行されています。
+`processId`\
+[in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)対象のプログラムを含むプロセスの ID を保持する構造体。
 
- `processId`\
+`EngineFilter`\
+[in]関連付けられたプロセスのデバッグ エンジンの Guid の配列。
 
- [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)対象のプログラムを含むプロセスの ID を保持する構造体。
+`guidLaunchingEngine`\
+[in]このプロセスを起動したデバッグエンジンのGUID（存在する場合）。
 
- `EngineFilter`\
-
- [in]関連付けられたプロセスのデバッグ エンジンの Guid の配列。
-
- `guidLaunchingEngine`\
-
- [in]このプロセスを起動したデバッグエンジンのGUID（存在する場合）。
-
- `pEventCallback`\
-
- [in][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)イベント通知を受け取るオブジェクト。
+`pEventCallback`\
+[in][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)イベント通知を受け取るオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

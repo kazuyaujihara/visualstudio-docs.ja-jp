@@ -6,17 +6,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2835ab64d5665c00c404294ec12019d2b981654
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9de10f1aebd47093a3cc3f41343e73cefdde473a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420526"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334925"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>方法: ソース管理プラグインのインストールします。
 ソース管理プラグインを作成するには、3 つの手順が含まれます。
@@ -64,7 +64,7 @@ ms.locfileid: "63420526"
 
 3. サブキーを追加**SourceCodeControlProvider**下で、 **HKEY_LOCAL_MACHINE**キー、**ソフトウェア**サブキー。
 
-    このサブキーのレジストリ エントリの下**ProviderRegKey**手順 1. でレジストリに配置したサブキーを表す文字列に設定されます。 パターンは、 **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *ソフトウェア\\< 会社名\>\\< 製品名\>*.
+    このサブキーのレジストリ エントリの下**ProviderRegKey**手順 1. でレジストリに配置したサブキーを表す文字列に設定されます。 パターンは、 **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *ソフトウェア\\< 会社名\>\\< 製品名\>* .
 
     このサブキーのサンプルの内容を次に示します。
 
@@ -77,9 +77,9 @@ ms.locfileid: "63420526"
 
 4. という名前のサブキーを作成**InstalledSCCProviders**下、 **SourceCodeControlProvider**サブキー、およびそのサブキーの下の 1 つのエントリを配置します。
 
-    このエントリの名前が (同じ SCCServerName エントリに指定された値)、プロバイダーのユーザーが判読できる名前と値が、もう一度、手順 1. で作成されたサブキー。 パターンは、 **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< 表示名\>** = *ソフトウェア\\< 会社名前\>\\< 製品名\>* します。
+    このエントリの名前が (同じ SCCServerName エントリに指定された値)、プロバイダーのユーザーが判読できる名前と値が、もう一度、手順 1. で作成されたサブキー。 パターンは、 **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< 表示名\>**  = *ソフトウェア\\< 会社名前\>\\< 製品名\>* します。
 
-    例えば:
+    例:
 
    |レジストリ エントリの例|サンプル値|
    |---------------------------|------------------|

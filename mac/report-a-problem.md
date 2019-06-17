@@ -6,12 +6,12 @@ author: jmatthiesen
 ms.author: jomatthi
 ms.date: 11/16/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 510bdac23b29289687441b8a82620a1cede7542b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3513f4e120db3bab61348f0ee1f0f452d09ded15
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937281"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501099"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Visual Studio for Mac に関する問題を報告する方法
 
@@ -52,13 +52,13 @@ Visual Studio for Mac での問題を報告するには、メニュー バーか
 
    ![新しい問題を報告する](media/report-problem-image5.png)
 
-1. **[次へ]** を選択し、**[添付ファイルを含める]** タブに移動します。ここで、Microsoft に送信する現在の画面を取り込むことができます。 ログ ファイルを添付するには、![[ログの添付]](media/report-problem-attach-logs.png) アイコンをクリックします。あるいは、追加のスクリーンショットやその他のファイルを添付するには、![[ファイルの添付]](media/report-problem-attach-file.png) アイコンをクリックします。
+1. **[次へ]** を選択し、 **[添付ファイルを含める]** タブに移動します。ここで、Microsoft に送信する現在の画面を取り込むことができます。 ログ ファイルを添付するには、![[ログの添付]](media/report-problem-attach-logs.png) アイコンをクリックします。あるいは、追加のスクリーンショットやその他のファイルを添付するには、![[ファイルの添付]](media/report-problem-attach-file.png) アイコンをクリックします。
 
    ![Visual Studio for Mac の問題レポートにスクリーンショットを添付する](media/report-problem-image6.png)
 
 1. **[送信]** を選択し、イメージ ファイルやトレース ファイルと共にレポートを送信します。
 
-   収集されるデータについては、「[Data we collect](/visualstudio/ide/developer-community-privacy.md#data-we-collect)」(収集するデータ) を参照してください。
+   収集されるデータについては、「[Data we collect](/visualstudio/ide/developer-community-privacy#data-we-collect)」(収集するデータ) を参照してください。
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>解決策を検索するかフィードバックを提供する
 

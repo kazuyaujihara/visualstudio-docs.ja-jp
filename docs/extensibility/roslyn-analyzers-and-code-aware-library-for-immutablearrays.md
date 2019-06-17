@@ -3,17 +3,17 @@ title: Roslyn アナライザーと ImmutableArrays 用コード認識ライブ�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0c2eed45ce27fb108b0cdd0c84f64e4e253c9c1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433332"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334167"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn アナライザーと ImmutableArrays 用コード認識ライブラリ
 
@@ -25,7 +25,7 @@ ms.locfileid: "62433332"
 
 * Visual Studio 2015 (Express Edition されません) またはそれ以降のバージョン。 無料で使用できます[Visual Studio Community エディション](https://visualstudio.microsoft.com/vs/community/)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 確認することも、Visual Studio をインストールするときに**Visual Studio Extensibility Tools** **一般的なツール**と同時に、SDK をインストールします。 既に Visual Studio をインストールする場合、メイン メニューに移動してこの SDK をインストールすることができますもする**ファイル** > **新規** > **プロジェクト**、選択**c#** で、左側のナビゲーション ウィンドウで、選択して、 **Extensibility**します。 選択した場合、"**Visual Studio 機能拡張ツールをインストール**"階層リンクのプロジェクト テンプレートを求められますをダウンロードして、SDK をインストールします。
-* [.NET コンパイラ プラットフォーム ("Roslyn") SDK](https://aka.ms/roslynsdktemplates)します。 メイン メニューに移動して、この SDK をインストールすることも**ファイル** > **新規** > **プロジェクト**選択、 **c#** 左側のナビゲーション ウィンドウで、選択して、 **Extensibility**します。 選択した場合"**.NET コンパイラ プラットフォーム SDK をダウンロードして**"階層リンクのプロジェクト テンプレートを求められますをダウンロードして、SDK をインストールします。 この SDK には、 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)します。 この便利なツールでは、どのようなコード モデルの種類を把握する必要があります内で検索アナライザーです。 特定のコード モデルの種類のコードは、のみ必要な場合に実行し、関連するコードを分析のみに集中できますので、コードにアナライザーのインフラストラクチャは呼び出し。
+* [.NET コンパイラ プラットフォーム ("Roslyn") SDK](https://aka.ms/roslynsdktemplates)します。 メイン メニューに移動して、この SDK をインストールすることも**ファイル** > **新規** > **プロジェクト**選択、 **c#** 左側のナビゲーション ウィンドウで、選択して、 **Extensibility**します。 選択した場合" **.NET コンパイラ プラットフォーム SDK をダウンロードして**"階層リンクのプロジェクト テンプレートを求められますをダウンロードして、SDK をインストールします。 この SDK には、 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)します。 この便利なツールでは、どのようなコード モデルの種類を把握する必要があります内で検索アナライザーです。 特定のコード モデルの種類のコードは、のみ必要な場合に実行し、関連するコードを分析のみに集中できますので、コードにアナライザーのインフラストラクチャは呼び出し。
 
 ## <a name="whats-the-problem"></a>何がそんなに問題ですか。
 
@@ -264,7 +264,7 @@ context.RegisterCodeFix(
 
 Id に、エディターのキャレットを配置する必要がある`CodeAction`を使用して**Ctrl**+**します。** 適切なを追加するには、(ピリオド)`using`この種類のステートメント。
 
-内のエディターのキャレットを配置し、`ChangeToImmutableArrayEmpty`識別子と使用**Ctrl**+**。** するには、このメソッド スタブを生成します。
+内のエディターのキャレットを配置し、`ChangeToImmutableArrayEmpty`識別子と使用**Ctrl**+ **。** するには、このメソッド スタブを生成します。
 
 この最後のコード スニペットを追加したコードの修正プログラムを登録しますを渡すことによって、`CodeAction`と検出された問題の種類の診断の ID。 この例では、1 つしかない診断 ID をこのコードは、修正ため、診断の Id の配列の最初の要素を単に渡すことができます。 作成するときに、 `CodeAction`、電球 UI がコード修正の説明として使用するテキストを渡します。 CancellationToken を受け取り、新しいドキュメントを返す関数も渡します。 新しいドキュメントが呼び出すパッチが適用されたコードを含む新しい構文ツリー`ImmutableArray.Empty`します。 このコード スニペットでは、ラムダを使用するので、オブジェクト作成ノードとコンテキストのドキュメントに閉じることができます。
 
@@ -298,7 +298,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 これでキーを押して**f5 キーを押して**を Visual Studio の 2 番目のインスタンスでアナライザーを実行します。 前に使用したコンソール プロジェクトを開きます。 場所は、新しいオブジェクトの作成式を表示する電球を表示する必要があります`ImmutableArray<int>`します。 キーを押す場合**Ctrl**+**します。** (ピリオド)、修正、コードが表示され、light bulb UI で、自動的に生成されたコードの違いにプレビューが表示されます。 Roslyn はこれを作成します。
 
-**Pro ヒントは:** Visual Studio の 2 番目のインスタンスを起動するコード修正に電球が表示されない場合は、Visual Studio コンポーネント キャッシュをクリアする必要があります。 キャッシュをクリアする Visual Studio で Visual Studio は、最新コンポーネントを選択し、必要がありますので、コンポーネントを再度確認を強制します。 最初に、Visual Studio の 2 番目のインスタンスをシャット ダウンします。 次に、 **Windows エクスプ ローラー**に移動します *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*します。 (「16.0」に、Visual Studio であるバージョンが変わります)。サブディレクトリを削除*ComponentModelCache*します。
+**Pro ヒントは:** Visual Studio の 2 番目のインスタンスを起動するコード修正に電球が表示されない場合は、Visual Studio コンポーネント キャッシュをクリアする必要があります。 キャッシュをクリアする Visual Studio で Visual Studio は、最新コンポーネントを選択し、必要がありますので、コンポーネントを再度確認を強制します。 最初に、Visual Studio の 2 番目のインスタンスをシャット ダウンします。 次に、 **Windows エクスプ ローラー**に移動します *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\* します。 (「16.0」に、Visual Studio であるバージョンが変わります)。サブディレクトリを削除*ComponentModelCache*します。
 
 ## <a name="talk-video-and-finish-code-project"></a>ビデオの説明し、コード プロジェクトの完了
 

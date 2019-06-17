@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a8c9a4e22c7a54a4b2b68f95bb2b81f3a0888e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4886a11d7d207523785b9d568226ae98a9e97b28
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778594"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744583"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052:スタティック ホルダー型はシールドされていなければなりません
 
@@ -46,7 +46,7 @@ Ca 1052 のルールでは、型が派生型でオーバーライド可能な機
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、マークの種類は`sealed`または`NotInheritable`します。 .NET Framework 2.0 を対象としているまたは型としてマークする方は、後で、`static`または`Shared`します。 この方法では、クラスが作成されていることを防ぐために、プライベート コンス トラクターを宣言する必要はありません。
+このルールの違反を修正するには、マークの種類は`sealed`または`NotInheritable`します。 場合は、プロジェクトが .NET Framework 2.0 をターゲットまたは型としてマークする方は、後で、`static`または`Shared`します。 この方法では、クラスが作成されていることを防ぐために、プライベート コンス トラクターを宣言する必要はありません。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 
@@ -56,7 +56,7 @@ Ca 1052 のルールでは、型が派生型でオーバーライド可能な機
 
 この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
 
-```
+```ini
 dotnet_code_quality.ca1052.api_surface = private, internal
 ```
 

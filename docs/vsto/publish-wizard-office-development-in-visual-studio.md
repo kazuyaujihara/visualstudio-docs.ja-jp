@@ -41,7 +41,7 @@ ms.locfileid: "63447072"
 
 - 汎用名前付け規則 (UNC) パスなど *\\\ServerName\MyApplication\\* します。
 
-- URL の web サイトなど http://www.microsoft.com/MyApplicationします。
+- URL の web サイトなど http://www.microsoft.com/MyApplication します。
 
   発行場所は、既定では、 *http://localhost/projectname/* かどうかがある、IIS をインストールまたは実行する場合は、publish \ ディレクトリが IIS インストールされていません。
 

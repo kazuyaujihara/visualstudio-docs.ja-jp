@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: For SharePoint の OData を表示する Silverlight Web パーツの作成 |Microsoft Docs'
+title: SharePoint の OData を表示する Silverlight web パーツを作成します。
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c58762c1060475a85de643ed52fffcc9f311bd96
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f248ce4403e771d9ab8b6d13fe55fd5ca1c960d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430386"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401126"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>チュートリアル: SharePoint の OData を表示する Silverlight web パーツを作成します。
   SharePoint 2010 では、OData を使用してそのリストのデータを公開します。 SharePoint では、OData サービスは、RESTful サービス ListData.svc によって実装されます。 このチュートリアルでは、Silverlight アプリケーションをホストする SharePoint web パーツを作成する方法を示します。 Silverlight アプリケーションでは、ListData.svc を使用して SharePoint のお知らせリストの情報が表示されます。 詳細については、次を参照してください。 [SharePoint Foundation REST インターフェイス](http://go.microsoft.com/fwlink/?LinkId=225999)と[Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000)します。
@@ -57,7 +57,7 @@ ms.locfileid: "63430386"
 
 7. **Silverlight Web パーツを関連付ける方法**のセクション、 **Silverlight 構成情報の指定**ページで、選択、**新しい Silverlight プロジェクトを作成し、web パーツに関連付ける**オプション ボタンをクリックします。
 
-8. 変更、**名前**に**SLApplication**設定**言語**いずれかに**Visual Basic**または**Visual c#**、設定**Silverlight バージョン**に**Silverlight 4.0**します。
+8. 変更、**名前**に**SLApplication**設定**言語**いずれかに**Visual Basic**または**Visual c#** 、設定**Silverlight バージョン**に**Silverlight 4.0**します。
 
 9. 選択、**完了**ボタンをクリックします。 プロジェクトが表示される**ソリューション エクスプ ローラー**します。
 
@@ -75,13 +75,13 @@ ms.locfileid: "63430386"
     > [!NOTE]
     > 選択する必要がある Visual Basic を使用している場合、 **すべてのファイル**の上部にあるアイコン**ソリューション エクスプ ローラー**を表示する、**参照**ノード。
 
-3. アドレス ボックスで、**サービス参照の追加** ダイアログ ボックスで、SharePoint サイトの URL を入力します。 **http://MySPSite**、選択し、**移動**ボタン。
+3. アドレス ボックスで、**サービス参照の追加** ダイアログ ボックスで、SharePoint サイトの URL を入力します。 **http://MySPSite** 、選択し、**移動**ボタン。
 
      Silverlight では、SharePoint の OData サービス ListData.svc を検索、フルテキスト サービスの URL を使用して、アドレスが置き換えられます。 この例では、 http://myserver なります http://myserver/_vti_bin/ListData.svc します。
 
 4. 選択、 **OK**サービス参照をプロジェクトに追加するボタンをクリックし、既定のサービス名、[servicereference1] を使用します。
 
-5. メニュー バーで、**[ビルド]** > **[ソリューションのビルド]** の順にクリックします。
+5. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
 6. SharePoint サービスに基づくプロジェクトに新しいデータ ソースを追加します。 メニュー バーで、次のように選択します。**ビュー** > **その他の Windows** > **データソース**します。
 

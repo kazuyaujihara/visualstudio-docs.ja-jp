@@ -1,5 +1,5 @@
 ---
-title: サーバーと ClickOnce 配置でのクライアント構成の問題 |Microsoft Docs
+title: ClickOnce 配置でサーバー/クライアント構成の問題
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 71b9df9a8422d1b24a3e5476005942113356c353
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406785"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747425"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 配置でのサーバーおよびクライアント構成の問題
 Windows Server で、インターネット インフォメーション サービス (IIS) を使用する、展開には、Windows で認識されない種類のファイルが含まれている場合は、Microsoft Word ファイルなど、そのファイルを送信する IIS は拒否し、配置は失敗します。
@@ -41,7 +41,7 @@ Windows Server で、インターネット インフォメーション サービ
 
   オフにすると、このオプションを無効にするただし、 **".deploy"ファイル拡張子を使用して、** オプションを[Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))、その場合、すべてのファイル拡張子のブロックを解除する Web サーバーを構成する必要がありますアプリケーションで使用されます。
 
-  構成する必要があります *.manifest*、 *.application*、および *.deploy*、たとえば、IIS をインストールしていないを使用しているかどうか、 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]、または場合別の Web サーバー (Apache など) を使用します。
+  構成する必要があります *.manifest*、 *.application*、および *.deploy*、たとえば、IIS をインストールしていない場合、.NET Framework を使用している場合、または使用する場合別の Web サーバー (Apache など) を使用します。
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce と Secure Sockets Layer (SSL)
  A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション、SSL 経由で Internet Explorer で SSL 証明書に関するプロンプトを生成するとき以外は問題なく動作します。 プロンプトは、有効期限が切れたときに、サイト名が一致しないなど、証明書または証明書に何らかの問題がある場合に発生することができます。 させる[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]SSL 接続経由で動作、証明書が、最新の状態であり、証明書のデータがサイト データと一致するかどうかを確認します。
@@ -121,14 +121,14 @@ Windows Server で、インターネット インフォメーション サービ
   Windows Server の MIME の種類を構成する方法については、マイクロソフト サポート技術情報記事 KB326965 を参照してください、「IIS 6.0 は処理しません不明な MIME の種類」で[ http://support.microsoft.com/default.aspx?scid=kb; en-私たち; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965)します。
 
 ## <a name="content-type-mappings"></a>コンテンツの種類のマッピング
- コンテンツの種類 (MIME の種類とも呼ばれます)、HTTP 経由で発行するときに、 *.application*ファイルが「/x ms-アプリケーションです」にする必要があります。 あれば[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]サーバーにインストール、設定されます。 が自動的にします。 これがインストールされていないかどうかは、MIME の種類の関連付けを作成する必要がある、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション vroot (またはサーバー全体)。
+ コンテンツの種類 (MIME の種類とも呼ばれます)、HTTP 経由で発行するときに、 *.application*ファイルが「/x ms-アプリケーションです」にする必要があります。 サーバーにインストールされている .NET Framework 2.0 があれば、これは設定されますが自動的に。 これがインストールされていないかどうかは、MIME の種類の関連付けを作成する必要がある、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーション vroot (またはサーバー全体)。
 
  IIS サーバーを使用してを展開する場合は、実行<em>inetmgr</em> 。exe の「application/x-ms-アプリケーション」の新しいコンテンツの種類を追加し、 *.application*拡張機能。
 
 ## <a name="http-compression-issues"></a>HTTP 圧縮の問題
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]、HTTP 圧縮を使用するダウンロード、クライアントにストリームを送信する前にデータ ストリームを圧縮する、GZIP アルゴリズムを使用する Web サーバー テクノロジを行うことができます。 クライアント: この場合、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-ファイルを読み取る前に、ストリームの圧縮を解除します。
 
- IIS を使用している場合、HTTP 圧縮を簡単に実現できます。 ただし、HTTP 圧縮を有効にした場合にのみなっての特定のファイルの種類、つまり、HTML やテキスト ファイル。 アセンブリの圧縮を有効にする (*.dll*)、XML (*.xml*)、配置マニフェスト (*.application*)、およびアプリケーション マニフェスト (*.manifest*)、これらのファイルを圧縮する IIS の種類の一覧に種類を追加する必要があります。 配置にファイルの種類を追加するまで、テキストや HTML ファイルのみが圧縮されます。
+ IIS を使用している場合、HTTP 圧縮を簡単に実現できます。 ただし、HTTP 圧縮を有効にした場合にのみなっての特定のファイルの種類、つまり、HTML やテキスト ファイル。 アセンブリの圧縮を有効にする ( *.dll*)、XML ( *.xml*)、配置マニフェスト ( *.application*)、およびアプリケーション マニフェスト ( *.manifest*)、これらのファイルを圧縮する IIS の種類の一覧に種類を追加する必要があります。 配置にファイルの種類を追加するまで、テキストや HTML ファイルのみが圧縮されます。
 
  IIS の詳細な手順については、次を参照してください。 [HTTP 圧縮のドキュメントの種類を指定する方法](http://go.microsoft.com/fwlink/?LinkId=178459)します。
 

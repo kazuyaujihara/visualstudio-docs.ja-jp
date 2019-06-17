@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c4602fa1b8d30e9119bb39e925cf7768ae1cbcf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0160a14a4ad20e7144e48f767fad88951ca1e473
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682428"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318387"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 逆アセンブリのフラグを指定します。
@@ -47,18 +50,24 @@ public enum enum_DISASSEMBLY_FLAGS {
 };
 ```
 
-## <a name="members"></a>メンバー
-DF_DOCUMENTCHANGE では、この命令は、別のドキュメントは、前のことを示します。
+## <a name="fields"></a>フィールド
+`DF_DOCUMENTCHANGE`\
+この命令が別のドキュメントは、前のことを示します。
 
-DF_DISABLED では、この命令は実行されないことを示します。
+`DF_DISABLED`\
+この命令は実行されないことを示します。
 
-DF_INSTRUCTION_ACTIVE では、この命令は、次の手順を実行するのいずれかのことを示します (あります 1 つ以上)。
+`DF_INSTRUCTION_ACTIVE`\
+この命令が実行される次の手順のいずれかであることを示します (あります 1 つ以上)。
 
-DF_DATA では、この命令は、データ (コードではなく) で、実際にあることを示します。
+`DF_DATA`\
+この命令は、データ (コードではなく) で、実際にあることを示します。
 
-DF_HASSOURCE では、この命令がソースのことを示します。 プロファイルまたはガベージ コレクションのコードなどのいくつかの手順では、対応するソースがあるありません。
+`DF_HASSOURCE`\
+この命令にソースがあることを示します。 プロファイルまたはガベージ コレクションのコードなどのいくつかの手順では、対応するソースがあるありません。
 
-示す DF_DOCUMENT_CHECKSUM`bstrDocumentUrl`フィールドには、ドキュメントの URL の後のチェックサム データが含まれています。 「解説」を参照してください、 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)チェックサム データを格納する方法の構造体。
+`DF_DOCUMENT_CHECKSUM`\
+示します`bstrDocumentUrl`フィールドには、ドキュメントの URL の後のチェックサム データが含まれています。 「解説」を参照してください、 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)チェックサム データを格納する方法の構造体。
 
 ## <a name="remarks"></a>Remarks
 として使用される、`dwFlags`のメンバー、 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)構造体。

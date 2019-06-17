@@ -1,5 +1,5 @@
 ---
-title: パッケージとプロジェクト項目で展開情報の提供 |Microsoft Docs
+title: プロジェクト項目の情報をパッケージ化とデプロイ
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b2bf1fc1b011b79fdd8123218a78ac91a14579b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9af945ff377b30925a51875db205bcd882f4585
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550502"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177714"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>プロジェクト項目でパッケージ化と配置の情報を提供します。
   すべての SharePoint プロジェクト アイテム[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]プロジェクトが SharePoint に配置されるときに、追加のデータを提供するのに使用できるプロパティがあります。 選択できるプロパティは次のとおりです。
@@ -57,7 +57,7 @@ ms.locfileid: "62550502"
 
  すべてのプロジェクト項目からプロパティ値を同一の機能は、機能マニフェストで一緒にマージされます。 ただし、2 つの別のプロジェクト項目では、一致しない値を持つ同じの機能プロパティのキーを指定する場合は、検証エラーが発生します。
 
- 機能ファイルに直接機能のプロパティを追加する (*.feature*) を呼び出し、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint オブジェクト モデルのメソッド<xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>します。 このメソッドを使用する場合は、同じルール機能のプロパティでプロパティの値を同一の機能を追加する方法については、機能ファイルに直接追加プロパティにも適用されます。
+ 機能ファイルに直接機能のプロパティを追加する ( *.feature*) を呼び出し、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint オブジェクト モデルのメソッド<xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>します。 このメソッドを使用する場合は、同じルール機能のプロパティでプロパティの値を同一の機能を追加する方法については、機能ファイルに直接追加プロパティにも適用されます。
 
 ## <a name="feature-receiver"></a>フィーチャー レシーバー
  フィーチャー レシーバーは、プロジェクト項目に特定のイベントが発生したときに実行されるコードには、機能が含まれているのです。 たとえば、機能がインストールされている、アクティブ化、またはアップグレード時に実行されるフィーチャー レシーバーを定義できます。 」の説明に従って、機能に直接追加するフィーチャー レシーバーを追加する方法の 1 つ[チュートリアル。フィーチャー イベント レシーバーの追加](../sharepoint/walkthrough-add-feature-event-receivers.md)します。 別の方法は、フィーチャー レシーバー クラス名とアセンブリを参照する、**フィーチャー レシーバー**プロパティ。
@@ -68,7 +68,7 @@ ms.locfileid: "62550502"
 ### <a name="reference-method"></a>Reference メソッド
  フィーチャー レシーバーを追加する別の方法を使用して、**フィーチャー レシーバー**フィーチャー レシーバー アセンブリを参照するプロジェクト項目のプロパティ。 フィーチャー レシーバーのプロパティの値は、2 つのサブプロパティを含みます。**アセンブリ**と**クラス名**します。 アセンブリが完全修飾を使用する必要があります、「強力な」名とクラス名は完全な型名にする必要があります。 詳細については、「[厳密な名前付きアセンブリ](http://go.microsoft.com/fwlink/?LinkID=169573)」を参照してください。 を SharePoint にソリューションをデプロイした後、この機能は、機能のイベントを処理するために参照されるフィーチャー レシーバーを使用します。
 
- ソリューションのビルド時、機能、機能の受信側プロパティの値とそのプロジェクトが SharePoint ソリューションのフィーチャー マニフェストに、Feature 要素の ReceiverAssembly と ReceiverClass 属性を設定するマージ (*.wsp*) ファイル。 したがって、プロジェクト項目と機能のアセンブリとクラス名のプロパティ値を両方指定する場合、プロジェクト項目とフィーチャー プロパティの値が一致する必要があります。 値が一致しない場合、検証エラーが表示されます。 プロジェクト項目を使用する場合は、その機能が使用するには、1 つ以外のフィーチャー レシーバー アセンブリを参照、別の機能に移動します。
+ ソリューションのビルド時、機能、機能の受信側プロパティの値とそのプロジェクトが SharePoint ソリューションのフィーチャー マニフェストに、Feature 要素の ReceiverAssembly と ReceiverClass 属性を設定するマージ ( *.wsp*) ファイル。 したがって、プロジェクト項目と機能のアセンブリとクラス名のプロパティ値を両方指定する場合、プロジェクト項目とフィーチャー プロパティの値が一致する必要があります。 値が一致しない場合、検証エラーが表示されます。 プロジェクト項目を使用する場合は、その機能が使用するには、1 つ以外のフィーチャー レシーバー アセンブリを参照、別の機能に移動します。
 
  パッケージにアセンブリ ファイル自体を含める必要がありますも既にサーバーではないにフィーチャー レシーバー アセンブリを参照する場合[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]するには追加できません。 システムのアセンブリ ファイルをコピー、機能を展開するときに[!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)]または SharePoint の物理ディレクトリの Bin フォルダー。 詳細については、次を参照してください。 方法。[方法: 追加およびその他のアセンブリを削除](../sharepoint/how-to-add-and-remove-additional-assemblies.md)します。
 

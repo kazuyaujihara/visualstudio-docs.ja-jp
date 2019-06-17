@@ -6,17 +6,20 @@ helpviewer_keywords:
 - ReplaceSymbols
 - IDebugComPlusSymbolProvider::ReplaceSymbols
 ms.assetid: 82fbc8db-c4b1-432f-bec9-1a9dc09570be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e863d6af1ed78fc0fe3c4d683386826708c39708
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 15af82459df5b2c8406280287115fbe345a63788
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922461"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352818"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 指定したデータ ストリームの現在のデバッグ シンボルを置き換えます。
@@ -39,18 +42,15 @@ int ReplaceSymbols(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
-`ulAppDomainID`
+## <a name="parameters"></a>パラメーター
+`ulAppDomainID`\
+[in]アプリケーション ドメインの識別子。
 
- [in]アプリケーション ドメインの識別子。
+`guidModule`\
+[in]モジュールの一意の識別子。
 
-`guidModule`
-
- [in]モジュールの一意の識別子。
-
-`pStream`
-
- [in]新しいシンボルを格納するデータ ストリーム。
+`pStream`\
+[in]新しいシンボルを格納するデータ ストリーム。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Skip method
 ms.assetid: b3bc51c4-21ae-4913-800c-c2ca9dc18443
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69438102635d2fe7846e49ff22658dd5b4f28ce5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 4d33910f3b0ed81d5d861323da170dc72d2fa248
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226576"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350389"
 ---
 # <a name="ienumdebugfieldsskip"></a>IEnumDebugFields::Skip
 このメソッドは、指定した要素数をスキップします。
@@ -40,9 +40,8 @@ int Skip(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `celt`\
-
- [in]スキップする要素の数。
+`celt`\
+[in]スキップする要素の数。
 
 ## <a name="return-value"></a>戻り値
  正常に終了した場合は、`S_OK` を返します。 返します`S_FALSE`場合`celt`が残りの要素の数より大きい。 それ以外の場合、エラー コードを返します。

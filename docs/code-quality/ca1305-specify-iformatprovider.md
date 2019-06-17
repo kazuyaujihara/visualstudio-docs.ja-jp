@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797543"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714679"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305:IFormatProvider を指定します
 
@@ -36,7 +36,7 @@ ms.locfileid: "62797543"
 
 メソッドまたはコンス トラクターの呼び出しを受け入れるオーバー ロードを持つ 1 つまたは複数のメンバー、<xref:System.IFormatProvider?displayProperty=fullName>パラメーター、およびメソッドまたはコンス トラクターは使用するオーバー ロードを呼び出しません、<xref:System.IFormatProvider>パラメーター。
 
-このルールを無視してとして説明されている .NET Framework のメソッドの呼び出しは無視されます、<xref:System.IFormatProvider>パラメーター。 ルールには、次のメソッドも無視されます。
+この規則を無視してとして説明されている .NET メソッドを呼び出し、<xref:System.IFormatProvider>パラメーター。 ルールには、次のメソッドも無視されます。
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,7 +44,7 @@ ms.locfileid: "62797543"
 
 ## <a name="rule-description"></a>規則の説明
 
-ときに、<xref:System.Globalization.CultureInfo?displayProperty=nameWithType>または<xref:System.IFormatProvider>オブジェクトが指定されていない、オーバー ロードされたメンバーによって提供される既定値はすべてのロケールに効果がありません。 また、.NET Framework のメンバーが既定のカルチャを選択し、コードの適切なことができない可能性がある前提条件に基づく書式設定します。 コードが、シナリオのために期待どおりに動作することを確認するには、次のガイドラインに従って、カルチャに固有の情報を指定する必要があります。
+ときに、<xref:System.Globalization.CultureInfo?displayProperty=nameWithType>または<xref:System.IFormatProvider>オブジェクトが指定されていない、オーバー ロードされたメンバーによって提供される既定値はすべてのロケールに効果がありません。 また、.NET メンバーが既定のカルチャを選択し、コードの適切なことができない可能性がある前提条件に基づく書式設定します。 コードが、シナリオのために期待どおりに動作することを確認するには、次のガイドラインに従って、カルチャに固有の情報を指定する必要があります。
 
 - 場合は、値は、ユーザーに表示されますが、現在のカルチャを使用します。 以下を参照してください。<xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>
 

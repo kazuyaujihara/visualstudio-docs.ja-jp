@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetProgram
 ms.assetid: 8c9c5ea1-2031-472e-bc8f-30e22e754566
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 44f673690341c6a20b250f401265fe2db9fd5727
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: bc803d08e26780712dbec6318a928022c3ce862e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224099"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320258"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 スレッドが実行されているプログラムを取得します。
@@ -40,9 +40,8 @@ int GetProgram ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `ppProgram`\
-
- [out]返します、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)でこのスレッドが実行されているプログラムを表すオブジェクト。
+`ppProgram`\
+[out]返します、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)でこのスレッドが実行されているプログラムを表すオブジェクト。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

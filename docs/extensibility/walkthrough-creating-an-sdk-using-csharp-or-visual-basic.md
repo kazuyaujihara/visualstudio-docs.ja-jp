@@ -3,20 +3,20 @@ title: 'チュートリアル: C# または Visual Basic を使用して SDK の
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 007da4e5e534ce6f9d8563011c0284432e4d9c19
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 6bb9ae53dfb2e849c35c05fe5187cddcf301622c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226112"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312636"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>チュートリアル: C# または Visual Basic を使用して、SDK を作成します。
 このチュートリアルでは、Visual c# を使用して単純な数値演算ライブラリの SDK を作成し、SDK と Visual Studio Extension (VSIX) パッケージ化する方法を学習します。 次の手順を完了します。
@@ -31,7 +31,7 @@ ms.locfileid: "65226112"
 
 ## <a name="createClassLibrary"></a> SimpleMath Windows ランタイム コンポーネントを作成するには
 
-1. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 2. テンプレートの一覧で  **Visual c#** または**Visual Basic**、選択、 **Windows ストア**ノードを選択し、 **Windows ランタイム コンポーネント**テンプレート。
 
@@ -67,7 +67,7 @@ ms.locfileid: "65226112"
 
 4. **ソリューション エクスプ ローラー**、選択、 **source.extension.vsixmanifest**項目。
 
-5. メニュー バーで **[表示]** > **[コード]** の順に選択します。
+5. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
 
 6. 既存の XML を次の XML に置き換えます。
 
@@ -75,7 +75,7 @@ ms.locfileid: "65226112"
 
 7. **ソリューション エクスプ ローラー**、選択、 **SimpleMathVSIX**プロジェクト。
 
-8. メニュー バーで **[プロジェクト]** > **[新しい項目の追加]** の順に選択します。
+8. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
 9. 一覧で**一般的な項目**、展開**データ**を選び、 **XML ファイル**します。
 
@@ -150,13 +150,13 @@ ms.locfileid: "65226112"
 
 28. **ソリューション エクスプ ローラー**、ショートカット メニューを開き、 **SimpleMathVSIX**プロジェクトを選び、**ファイル エクスプ ローラーでフォルダーを開く**します。
 
-29. **ファイル エクスプ ローラー**に移動します*\bin\Release*フォルダー、および実行し*SimpleMathVSIX.vsix*をインストールします。
+29. **ファイル エクスプ ローラー**に移動します *\bin\Release*フォルダー、および実行し*SimpleMathVSIX.vsix*をインストールします。
 
 30. 選択、**インストール**ボタンをクリックし、インストールを完了するまで待機し、Visual Studio を再起動します。
 
 ## <a name="createSample"></a> クラス ライブラリを使用するサンプル アプリを作成するには
 
-1. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 2. テンプレートの一覧で  **Visual c#** または**Visual Basic**を選択し、 **Windows ストア**ノード。
 

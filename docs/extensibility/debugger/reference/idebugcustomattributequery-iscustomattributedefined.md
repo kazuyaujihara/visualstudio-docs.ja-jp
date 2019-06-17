@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugCustomAttributeQuery::IsCustomAttributeDefined
 - IsCustomAttributeDefined
 ms.assetid: c7425db6-4347-4f69-8f88-337ddaa34fa6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a907d6460a9bf31e501ed4c2239cb31112a39f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5f4359d2360f1186404229397bbb00f916fbcea8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876038"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346071"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
 指定されたカスタム属性が定義されているかどうかを決定します。
@@ -35,10 +38,9 @@ int IsCustomAttributeDefined(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
-`pszCustomAttributeName`
-
- [in]カスタム属性の名前。
+## <a name="parameters"></a>パラメーター
+`pszCustomAttributeName`\
+[in]カスタム属性の名前。
 
 ## <a name="return-value"></a>戻り値
 カスタム属性が定義されている場合を返します`S_OK`。 それ以外を返します`S_FALSE`します。

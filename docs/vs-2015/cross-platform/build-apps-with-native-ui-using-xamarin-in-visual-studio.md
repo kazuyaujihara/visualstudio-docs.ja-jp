@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8a719a1420d4d2e64438865a41cc24da114fbc2d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 90517c46d8fa92d58e73e976f593a1bcfbfac9b1
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443065"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263571"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio で Xamarin を使用してネイティブ UI を備えたアプリを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "63443065"
 > [!TIP]
 > このプロジェクトの完全なソース コードは [GitHub の mobile-samples リポジトリ](https://github.com/xamarin/mobile-samples/tree/master/Weather)にあります。
 >
-> 問題やエラーが発生した場合は、[forums.xamarin.com](http://forums.xamarin.com) に質問を投稿してください。 Xamarin に必要な最新の SDK に更新することで多くのエラーを解決できます。エラーについては、[Xamarin リリース ノート](https://developer.xamarin.com/releases/)でプラットフォームごとの説明を参照してください。
+> 問題やエラーが発生した場合は、[forums.xamarin.com](http://forums.xamarin.com) に質問を投稿してください。 Xamarin に必要な最新の SDK に更新することで多くのエラーを解決できます。エラーについては、[Xamarin リリース ノート](https://developer.xamarin.com/)でプラットフォームごとの説明を参照してください。
 >
 > [!NOTE]
 > Xamarin の開発者向けドキュメントには、以下の一覧に示すクイック スタートと詳細情報の両方のセクションで、いくつかのチュートリアルも用意されています。 これらのすべてのページで Visual Studio 固有のチュートリアルを表示するには、必ずページの右上で "Visual Studio" を選びます。
@@ -63,19 +63,19 @@ ms.locfileid: "63443065"
 
 2. ソリューションを作成するために [OK] をクリックすると、いくつかの個別のプロジェクトが表示されます。
 
-   - **WeatherApp (ポータブル)**: Xamarin.Forms を使用している共通のビジネス ロジックと UI コードを含む、プラットフォームで共有されるコードの記述先である PCL。
+   - **WeatherApp (ポータブル)** : Xamarin.Forms を使用している共通のビジネス ロジックと UI コードを含む、プラットフォームで共有されるコードの記述先である PCL。
 
    - **WeatherApp.Droid**: ネイティブの Android コードを含むプロジェクト。 これは、既定のスタートアップ プロジェクトとして設定されます。
 
    - **WeatherApp.iOS**: ネイティブの iOS コードを含むプロジェクト。
 
-   - **WeatherApp.WinPhone (Windows Phone 8.1)**: ネイティブの Windows Phone コードを含むプロジェクト。
+   - **WeatherApp.WinPhone (Windows Phone 8.1)** : ネイティブの Windows Phone コードを含むプロジェクト。
 
      各ネイティブ プロジェクト内では、対応するプラットフォームのネイティブ デザイナーにアクセスでき、プラットフォーム固有の画面を実装できます。
 
 3. 気象データ サービスから取得した情報を処理するのに使用する **Newtonsoft.Json** と NuGet パッケージを PCL プロジェクトに追加します:
 
-   - ソリューション エクスプローラーで **[ソリューション 'WeatherApp']** を右クリックし、**[ソリューションの NuGet パッケージの管理]** を選択します。
+   - ソリューション エクスプローラーで **[ソリューション 'WeatherApp']** を右クリックし、 **[ソリューションの NuGet パッケージの管理]** を選択します。
 
         NuGet のウィンドウで **[参照]** タブを選択し、**Newtonsoft** を検索します。
 
@@ -100,7 +100,7 @@ ms.locfileid: "63443065"
 
 1. このサンプルを実行するには、最初に [http://openweathermap.org/appid](http://openweathermap.org/appid) で新規登録し、無料の API キーを申し込む必要があります。
 
-2. **WeatherApp** プロジェクトを右クリックし、**[追加]、[クラス]** の順にクリックします。 **[新しい項目の追加]** ダイアログで、ファイルに **Weather.cs**という名前を指定します。 このクラスは、気象データ サービスからのデータを保存するときに使用します。
+2. **WeatherApp** プロジェクトを右クリックし、 **[追加]、[クラス]** の順にクリックします。 **[新しい項目の追加]** ダイアログで、ファイルに **Weather.cs**という名前を指定します。 このクラスは、気象データ サービスからのデータを保存するときに使用します。
 
 3. **Weather.cs** の内容全体を次のコードで置き換えます。
 
@@ -227,7 +227,7 @@ ms.locfileid: "63443065"
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>アプリの外観を設計する
 
-1. **ソリューション エクスプ ローラー**で、**[WeatherApp.Droid]**>**[リソース]**>**[レイアウト]** フォルダーを開き、**Main.axml** を開きます。 ビジュアル デザイナーでファイルが開きます。 (Java 関連のエラーが表示された場合は、この[ブログの投稿](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9)を参照してください。)
+1. **ソリューション エクスプ ローラー**で、 **[WeatherApp.Droid]** > **[リソース]** > **[レイアウト]** フォルダーを開き、**Main.axml** を開きます。 ビジュアル デザイナーでファイルが開きます。 (Java 関連のエラーが表示された場合は、この[ブログの投稿](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9)を参照してください。)
 
     > [!TIP]
     > このプロジェクトには、他にも多くのファイルがあります。 それらの説明はこのトピックの範囲を超えていますが、Android プロジェクトの構造を詳細に知りたい場合は、xamarin.com で Hello Android のトピックにある「[Part 2 Deep Dive](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/)」を参照してください。
@@ -239,7 +239,7 @@ ms.locfileid: "63443065"
 4. **[ツールボックス]** から、 **[相対レイアウト]** コントロールをデザイナーにドラッグします。 このコントロールは、他のコントロールの親コンテナーとして使用します。
 
     > [!TIP]
-    > レイアウトが正しく表示されない場合は、ファイルを保存し、**[デザイン]** タブと **[ソース]** タブを切り替えて表示を更新します。
+    > レイアウトが正しく表示されない場合は、ファイルを保存し、 **[デザイン]** タブと **[ソース]** タブを切り替えて表示を更新します。
 
 5. **[プロパティ]** ウィンドウで、**background** プロパティ (スタイルのグループ) を `#545454` に設定します。
 
@@ -247,7 +247,7 @@ ms.locfileid: "63443065"
 
 7. **[プロパティ]** ウィンドウで、次のプロパティを設定します (注: [プロパティ] ウィンドウのツール バーにある並べ替えボタンを使用して、一覧をアルファベット順に並べ替えるとわかりやすくなります)。
 
-    |プロパティ|[値]|
+    |プロパティ|値|
     |--------------|-----------|
     |**text**|**Search by Zip Code**|
     |**ID**|`@+id/ZipCodeSearchLabel`|
@@ -260,7 +260,7 @@ ms.locfileid: "63443065"
     >
     >  また、クイック Web 検索を実行すると、他のユーザーが同じプロパティを使った、[http://stackoverflow.com/](http://stackoverflow.com/) のページが表示されることもよくあります。
 
-     参考として、**[ソース]** ビューに切り替えると、この要素のコードが次のように表示されます。
+     参考として、 **[ソース]** ビューに切り替えると、この要素のコードが次のように表示されます。
 
     ```xml
     <TextView
@@ -275,11 +275,11 @@ ms.locfileid: "63443065"
 
     ```
 
-8. **[ツールボックス]** から、**[TextView]** コントロールを **[RelativeLayout]** コントロールにドラッグして、ZipCodeSearchLabel コントロールの下に配置します。 このとき、新しいコントロールを既存のコントロールの端に合わせてドロップします。デザイナーを拡大表示すると操作しやすくなります。
+8. **[ツールボックス]** から、 **[TextView]** コントロールを **[RelativeLayout]** コントロールにドラッグして、ZipCodeSearchLabel コントロールの下に配置します。 このとき、新しいコントロールを既存のコントロールの端に合わせてドロップします。デザイナーを拡大表示すると操作しやすくなります。
 
 9. **[プロパティ]** ウィンドウで、次のプロパティを設定します。
 
-    |プロパティ|[値]|
+    |プロパティ|値|
     |--------------|-----------|
     |**テキスト**|**[郵便番号]**|
     |**ID**|`@+id/ZipCodeLabel`|
@@ -299,9 +299,9 @@ ms.locfileid: "63443065"
         android:layout_marginLeft="10dp" />
     ```
 
-10. **[ツールボックス]** から **[Number]** コントロールを **[RelativeLayout]** にドラッグし、**[Zip Code]** ラベルの下に配置します。 その後、次のプロパティを設定します。
+10. **[ツールボックス]** から **[Number]** コントロールを **[RelativeLayout]** にドラッグし、 **[Zip Code]** ラベルの下に配置します。 その後、次のプロパティを設定します。
 
-    |プロパティ|[値]|
+    |プロパティ|値|
     |--------------|-----------|
     |**ID**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
@@ -322,9 +322,9 @@ ms.locfileid: "63443065"
         android:width="165dp" />
     ```
 
-11. **[ツールボックス]** から、**[Button]** を **[RelativeLayout]** コントロールにドラッグして、[zipCodeEntry] コントロールの右に配置します。 次に、以下のプロパティを設定します。
+11. **[ツールボックス]** から、 **[Button]** を **[RelativeLayout]** コントロールにドラッグして、[zipCodeEntry] コントロールの右に配置します。 次に、以下のプロパティを設定します。
 
-    |プロパティ|[値]|
+    |プロパティ|値|
     |--------------|-----------|
     |**ID**|`@+id/weatherBtn`|
     |**テキスト**|**Get Weather**|
@@ -448,7 +448,7 @@ ms.locfileid: "63443065"
 
     ```
 
-13. ファイルを保存し、**[デザイン]** ビューに切り替えます。 次のような UI が表示されます。
+13. ファイルを保存し、 **[デザイン]** ビューに切り替えます。 次のような UI が表示されます。
 
      ![Android アプリ用 UI](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
 

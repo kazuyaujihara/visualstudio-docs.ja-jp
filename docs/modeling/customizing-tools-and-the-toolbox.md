@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37bba294dde27fad19122ee281057607f6abc6c8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da472f443f52a6478ac5e1e34fd4d4a5beb0721b
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445791"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820819"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>ツールおよびツールボックスのカスタマイズ
 
@@ -77,7 +77,7 @@ DSL エクスプローラーのこの部分で、次の操作を実行できま�
 
 5. DSL をテストするには、f5 キーまたは CTRL + F5 キーを押して、Visual Studio の実験用インスタンスのサンプル モデル ファイルを開きます。 ツールボックスに新しいツールが表示されます。 それを図の上にドラッグし、新しい要素が作成されることを確認します。
 
-     ツールが表示されない場合は、実験用の Visual Studio を停止します。 Windows で**開始**] メニューの [実行 **、Microsoft Visual Studio 2010 実験用インスタンスをリセット**します。 **[ビルド]** メニューで、**[ソリューションのリビルド]** をクリックします。 再度 DSL をテストします。
+     ツールが表示されない場合は、実験用の Visual Studio を停止します。 Windows で**開始**] メニューの [実行 **、Microsoft Visual Studio 2010 実験用インスタンスをリセット**します。 **[ビルド]** メニューで、 **[ソリューションのリビルド]** をクリックします。 再度 DSL をテストします。
 
 ## <a name="customizing"></a> 要素ツールのカスタマイズ
  既定では、ツールは指定されたクラスの単一インスタンスを作成しますが、次の 2 つの方法で変更できます。
@@ -196,7 +196,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **DSL 詳細ウィンドウにおけるリンク接続ディレクティブ**
 
- ![](../modeling/media/connectionbuilder_4b.png)
+ ![DSL 詳細ウィンドウにおけるリンク接続ディレクティブ](../modeling/media/connectionbuilder_4b.png)
 
  次に、ConnectionBuilder クラスにメソッドを入力する必要があります。
 

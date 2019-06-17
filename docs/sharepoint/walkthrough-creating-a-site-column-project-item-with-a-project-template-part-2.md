@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 ﻿---
 title: 'チュートリアル: プロジェクト テンプレートを使用して、サイト列プロジェクト項目を作成、パート 2 |Microsoft Docs'
+||||||| merged common ancestors
+---
+title: 'チュートリアル: プロジェクト テンプレートを使用して、サイト列プロジェクト項目を作成、パート 2 |Microsoft Docs'
+=======
+---
+title: プロジェクトのテンプレート、第 2 部でのサイト列プロジェクト項目を作成します。
+>>>>>>> ae0bb728cd44302ad34be4f41978a33231cc5cb5
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 821638c09b64d9cf7045f8985a54cb5e4223d019
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436722"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401102"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>チュートリアル: プロジェクト テンプレート、第 2 部でサイト列プロジェクト項目を作成します。
   SharePoint プロジェクト項目のカスタム種類を定義し、Visual Studio でその種類をプロジェクト テンプレートと関連付けてから、テンプレート用のウィザードを用意することもできます。 ウィザードを使用すると、ユーザーがテンプレートを使用してプロジェクト項目を含む新しいプロジェクトを作成するときに、ユーザーから情報を収集できます。 収集した情報を使用して、プロジェクト項目を初期化できます。
@@ -317,7 +325,7 @@ ms.locfileid: "63436722"
 
 #### <a name="to-build-your-project"></a>プロジェクトをビルドするには
 
-1. メニュー バーで、**[ビルド]** > **[ソリューションのビルド]** の順にクリックします。
+1. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>プロジェクト テンプレートから key.snk ファイルを削除します。
  [チュートリアル。プロジェクト テンプレート、第 1 部でサイト列プロジェクト項目を作成する](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)、作成したプロジェクト テンプレートには、各 Site Column プロジェクト インスタンスに署名するために使用される key.snk ファイルが含まれています。 ウィザードでプロジェクトごとに新しい key.snk ファイルが生成されるようになったため、この key.snk ファイルはもう必要ありません。 プロジェクト テンプレートから key.snk ファイルを削除し、このファイルへの参照を削除します。
@@ -368,7 +376,7 @@ ms.locfileid: "63436722"
 
 2. **署名**] タブで、[、**アセンブリに署名**チェック ボックスをオンします。
 
-3. **厳密な名前キー ファイルを選択して**一覧で、選択**\<新規作成 >** します。
+3. **厳密な名前キー ファイルを選択して**一覧で、選択 **\<新規作成 >** します。
 
 4. **厳密な名前キーの作成** ダイアログ ボックスで、チェック ボックスをオフに、新しいキー ファイルの名前を入力、**キーファイルをパスワードで保護する**チェック ボックスをオンにして、 **ok**ボタン。
 

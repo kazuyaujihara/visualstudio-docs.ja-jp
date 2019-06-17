@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898712"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747513"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt;要素 (ブートス トラップ)
 `PackageFiles`要素が含まれます`PackageFile`の結果として実行されるインストール パッケージを定義するには、要素、`Command`要素。
@@ -62,7 +62,7 @@ ms.locfileid: "62898712"
 | `Hash` | 省略可能です。 パッケージ ファイルの SHA1 ハッシュ。 これは、インストール時に、ファイルの整合性を検証に使用されます。 パッケージ ファイルからは、同一のハッシュを計算することはできません、パッケージはインストールされていません。 |
 
 ## <a name="example"></a>例
- 次のコード例は、のパッケージを定義、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]再頒布可能パッケージとその依存関係、Windows インストーラーなど。
+ 次のコード例では、.NET Framework 再頒布可能パッケージ、および Windows インストーラーなど、その依存関係パッケージを定義します。
 
 ```xml
 <PackageFiles>

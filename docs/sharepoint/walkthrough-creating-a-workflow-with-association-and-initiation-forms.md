@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: 関連付けと開始フォームを持つワークフローを作成する |Microsoft Docs'
+title: ワークフロー関連付けフォームと開始フォームを作成します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b64d1c9fbbd81a21ab268dfa29287895bd355197
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430373"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401163"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>チュートリアル: ワークフロー関連付けフォームと開始フォームを作成します。
   このチュートリアルでは、アソシエーションと開始フォームの使用方法が組み込まれている基本的なシーケンシャル ワークフローを作成する方法を示します。 これらは、まず、SharePoint 管理者 (関連付けフォーム) が関連付けられているとき、およびユーザー (開始フォーム) が、ワークフローを開始、ワークフローに追加するパラメーターを有効にする ASPX フォームです。
@@ -82,7 +82,7 @@ ms.locfileid: "63430373"
 
 6. **ソリューション エクスプローラー**で、プロジェクト ノードを選択します。
 
-7. メニュー バーで **[プロジェクト]** > **[新しい項目の追加]** の順に選択します。
+7. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
 8. いずれかで**Visual c#** または**Visual Basic**、展開、 **SharePoint**ノードを選択し、 **2010**ノード。
 

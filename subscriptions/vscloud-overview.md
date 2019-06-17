@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 長期契約ではなく、月または年単位の一定期間だけ Visual Studio Professional または Visual Studio Enterprise をレンタルします。
 searchscope: VS Subscription
-ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b704b6180937d3a1b937b702fad4a2e564d93c6
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978906"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177567"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional および Visual Studio Enterprise クラウド サブスクリプションの購入
 
-[Visual Studio Professional と Visual Studio Enterprise のサブスクリプション](https://visualstudio.microsoft.com/subscriptions/)は、[Visual Studio Marketplace](https://marketplace.visualstudio.com) から購入できます。 これらは、**"クラウド サブスクリプション"** と呼ばれます。
+[Visual Studio Professional と Visual Studio Enterprise のサブスクリプション](https://visualstudio.microsoft.com/subscriptions/)は、[Visual Studio Marketplace](https://marketplace.visualstudio.com) から購入できます。 これらは、 **"クラウド サブスクリプション"** と呼ばれます。
 
 [クラウド サブスクリプションの特典と価格を比較する](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -44,7 +44,7 @@ Azure サブスクリプションに対する[所有者や共同作業者アク�
     > [!div class="mx-imgBorder"]
     > ![サブスクリプションの数を選択する](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
 
-    サブスクリプションを自分に割り当てない場合は、**[自分にこのサブスクリプションを割り当てる]** をオフにします。
+    サブスクリプションを自分に割り当てない場合は、 **[自分にこのサブスクリプションを割り当てる]** をオフにします。
 
 5. 確認して購入を完了します。 自分にサブスクリプションを割り当てる場合は、[Visual Studio サブスクライバー ポータル](https://my.visualstudio.com)にアクセスして、ソフトウェアをダウンロードし、その他のサブスクライバー特典を利用開始します。
 
@@ -96,11 +96,14 @@ A: この変更による既存のサブスクライバーへの影響はあり�
 #### <a name="q--do-i-need-to-do-anything-as-a-result-of-these-changes"></a>Q:これらの変更の結果として何か行う必要がありますか。
 A: いいえ。  サブスクリプションはそのまま維持され、現在と同様に管理できます。
 
-#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-my-company-owns"></a>Q:自分の会社が所有するサブスクリプションの数を増やす場合はどうすればよいですか。
-A: 管理者は引き続き、サブスクリプションの数を増やすことができます。その場合、[https://manage.visualstudio.com](https://manage.visualstudio.com) にアクセスし、この記事の手順に従ってサブスクリプション数を増やします。
+#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>Q:お客様のサブスクリプションの数を増やす場合はどうすればよいですか。
 
-#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-my-company-owns"></a>Q:自分の会社が所有するサブスクリプションの数を減らす場合はどうすればよいですか。
-A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、[https://manage.visualstudio.com](https://manage.visualstudio.com) にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。
+A: 特定の月の間に購入した年間サブスクリプションについては、1 年分がすぐに請求され、1 年間有効になります。 そのため、管理者は購入した当月でのみライセンスの数を変更できます (1 年間有効となり、1 年分が請求されます)。 購入した月以外では、サブスクリプションの数を増やすことができなくなります。
+
+#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q:お客様のサブスクリプションの数を減らす場合はどうすればよいですか。
+
+A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、 https://manage.visualstudio.com にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。 システムによってクレジットが日割りされることは*ありません*。 返金については、Azure 請求チームにお問い合わせいただく必要がございます。
+
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>Q:サブスクリプションをキャンセルした場合、後で別のクラウド サブスクリプション年間プランを購入することはできますか。
 A: 別のクラウド サブスクリプション年間プランを購入することはできませんが、Visual Studio サブスクリプションを購入する多くのオプションがあります。  詳細については、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) をご覧ください。
@@ -113,10 +116,10 @@ A: お客様は、新しい Visual Studio クラウド サブスクリプショ�
 A: 既存のお客様には影響はありません。 新規のお客様は、Visual Studio 月間サブスクリプションを購入するか、ボリューム ライセンスなどの別のチャネルに移動して Visual Studio サブスクリプションを購入する必要があります。
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>Q:お客様のサブスクリプションの数を増やす場合はどうすればよいですか。
-A: 管理者は引き続き、サブスクリプションの数を増やすことができます。その場合、[https://manage.visualstudio.com](https://manage.visualstudio.com) にアクセスし、この記事の手順に従ってサブスクリプション数を増やします。
+A: 特定の月の間に購入した年間サブスクリプションについては、1 年分がすぐに請求され、1 年間有効になります。 そのため、管理者は購入した当月でのみライセンスの数を変更できます (1 年間有効となり、1 年分が請求されます)。 購入した月以外では、サブスクリプションの数を増やすことができなくなります。
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q:お客様のサブスクリプションの数を減らす場合はどうすればよいですか。
-A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、[https://manage.visualstudio.com](https://manage.visualstudio.com) にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。
+A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、[https://manage.visualstudio.com](https://manage.visualstudio.com) にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。 システムによってクレジットが日割りされることは**ありません**。 返金については、Azure 請求チームにお問い合わせいただく必要がございます。
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>Q:お客様がサブスクリプションをキャンセルした場合、後でクラウド サブスクリプション年間プランをさらに購入することはできますか。
 A: 別のクラウド サブスクリプション年間プランを購入することはできませんが、Visual Studio サブスクリプションを購入する多くのオプションがあります。  詳細については、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) をご覧ください。

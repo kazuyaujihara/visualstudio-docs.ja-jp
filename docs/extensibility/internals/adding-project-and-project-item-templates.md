@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], adding
 - project items [Visual Studio], adding
 ms.assetid: 8c59217f-56e5-4540-a73b-cd10de189373
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee61f388da8098c20c65be8859b336c1ab86bebd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38ab7a0a14c5a4e832aec330852546b64a41fd0c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910749"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315860"
 ---
 # <a name="add-project-and-project-item-templates"></a>プロジェクトとプロジェクト項目テンプレートを追加します。
 独自のプロジェクトの種類を作成するときに標準を使用して新しいプロジェクトとプロジェクト アイテムを追加するためのサポートを提供する必要があります[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) ダイアログ ボックス。 次のトピックでは、プロジェクトとプロジェクト アイテムを追加するためのさまざまな手法について説明します。

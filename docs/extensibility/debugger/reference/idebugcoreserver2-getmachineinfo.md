@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetInfo
 ms.assetid: 8fa1a1d3-9fcb-4fb3-bf4e-e7172ac08d77
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c23e399a2debac06df239fe69ced6589d00f7774
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a80ee7bfa6e9e17135683fede9de24f110b7ca6c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876348"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317895"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 コア サーバー上で実行するマシンの説明を取得します。
@@ -38,12 +41,11 @@ int GetMachineInfo( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `Fields`
+## <a name="parameters"></a>パラメーター
+`Fields`\
+[in]フラグの組み合わせ、 [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)のどのフィールドを指定する列挙体`pMachineInfo`を記入します。
 
- [in]フラグの組み合わせ、 [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)のどのフィールドを指定する列挙体`pMachineInfo`を記入します。
-
- `pMachineInfo`
+ `pMachineInfo`\
 
  [入力、出力]A [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)構造をマシンの説明が入力されます。
 

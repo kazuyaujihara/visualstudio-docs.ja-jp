@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetStringChars
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21ae1d4c16ce422d2baed2bd71ab5d0aa8b92e0c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 16d352ae5397d786c5d77f56a513e9ae2db2d7b3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457668"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348823"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 このプロパティに関連付けられている文字列を取得し、ユーザーが指定したバッファーに格納します。
@@ -45,18 +45,15 @@ int GetStringChars(
 
 ## <a name="parameters"></a>パラメーター
 `buflen`\
-
- [in]ユーザーが指定したバッファーが保持できる最大文字数。
+[in]ユーザーが指定したバッファーが保持できる最大文字数。
 
 `rgString`\
-
- [out]文字列を返します。
+[out]文字列を返します。
 
  [C++のみ]、`rgString`を文字列の Unicode 文字を受け取るバッファーへのポインターです。 このバッファーは以上である必要があります`buflen`サイズの文字 (バイトではありません)。
 
 `pceltFetched`\
-
- [out]実際には、バッファーに格納されている文字数が返されます。 (できます`NULL`c++)。
+[out]実際には、バッファーに格納されている文字数が返されます。 (できます`NULL`c++)。
 
 ## <a name="return-value"></a>戻り値
 成功した場合、返します`S_OK`。 それ以外の場合はエラー コードを返します。

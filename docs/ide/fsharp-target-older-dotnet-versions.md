@@ -8,12 +8,13 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3572e48328317634f036e8c1301d81c38314a21c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+monikerRange: vs-2017
+ms.openlocfilehash: 2e0d580ac18142010a306d3fb4de19eb69b0b91b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547885"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746715"
 ---
 # <a name="target-older-versions-of-net-f"></a>以前のバージョンの .NET をターゲットにする (F#)
 
@@ -43,11 +44,11 @@ Visual Studio のインストール時に、インストールされている .N
 
 1. **[スタート]** 画面で、「**コントロール パネル**」と入力します。
 
-   入力すると、**[アプリ]** 見出しの下に **[コントロール パネル]** アイコンが表示されます。
+   入力すると、 **[アプリ]** 見出しの下に **[コントロール パネル]** アイコンが表示されます。
 
-2. **[コントロール パネル]** アイコン、**[プログラム]** アイコン、**[Windows の機能の有効化または無効化]** リンクの順に選択します。
+2. **[コントロール パネル]** アイコン、 **[プログラム]** アイコン、 **[Windows の機能の有効化または無効化]** リンクの順に選択します。
 
-3. **[.NET Framework 3.5 (.NET 2.0 と 3.0 を含む)]** チェック ボックスがオンになっていることを確認してから、**[OK]** ボタンを選択します。 .NET Framework のオプション コンポーネントに対するすべての子ノードのチェック ボックスをオンにする必要はありません。
+3. **[.NET Framework 3.5 (.NET 2.0 と 3.0 を含む)]** チェック ボックスがオンになっていることを確認してから、 **[OK]** ボタンを選択します。 .NET Framework のオプション コンポーネントに対するすべての子ノードのチェック ボックスをオンにする必要はありません。
 
    .NET Framework 3.5 が有効になります (まだ有効になっていない場合)。
 

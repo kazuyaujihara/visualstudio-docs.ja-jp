@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fc446207d2f8c2800135154ca435b821a0afd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90bdc70a2de900d43831994aff72e25031241cc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825443"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715306"
 ---
 # <a name="naming-warnings"></a>名前付けに関する警告
-名前付けの警告は、.NET Framework デザイン ガイドラインの名前付け規則への準拠をサポートします。
+
+名前付けの警告は、.NET デザイン ガイドラインの名前付け規則への準拠をサポートします。
 
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -42,7 +43,7 @@ ms.locfileid: "62825443"
 |[CA1719:パラメーター名は、メンバー名と一致する必要があります。](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|パラメーター名、パラメーターの意味を伝えるし、メンバー名は、メンバーの意味を伝える必要があります。 この 2 つの名前が一致するデザインは、まれにしか見られません。 パラメーターにメンバーと同じ名前を付けるとわかりづらくなり、ライブラリの操作が難しくなります。|
 |[CA1701:リソース文字列の複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|リソース文字列内の各単語は、大文字と小文字に基づいてトークンに分割されます。 Microsoft スペル チェック ライブラリは、隣接する 2 つのトークンの組み合わせを個別にチェックします。 それらが認識されると、その語はこの規則への違反となります。|
 |[CA 1703:リソース文字列を正しく入力されなければなりません](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|リソース文字列に Microsoft スペル チェック ライブラリで認識されない語が 1 つ以上含まれています。|
-|[CA1724:型名が名前空間と一致する必要があります。](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|型名は、.NET Framework クラス ライブラリで定義されている名前空間の名前と一致する必要があります。 この規則違反は、ライブラリの使いやすさを減らすことができます。|
+|[CA1724:型名が名前空間と一致する必要があります。](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|型名は、.NET 名前空間の名前と一致する必要があります。 この規則違反は、ライブラリの使いやすさを減らすことができます。|
 |[CA 1707:識別子はアンダー スコアを含めることはできません。](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|名前付け規則では、識別子名にアンダースコア (_) 文字を含めることができません。 この規則により、名前空間、型、メンバー、およびパラメーターがチェックされます。|
 |[CA1721:プロパティ名は、get メソッドと一致する必要があります。](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|パブリック メンバーまたはプロテクト メンバーの名前が、"Get" から始まっているか、パブリック プロパティまたはプロテクト プロパティの名前と一致します。 "Get" メソッドとプロパティには、それぞれの機能を明確に区別する名前を指定しなければなりません。|
 |[CA1716:識別子は、キーワードと一致する必要があります。](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|名前空間の名前または型の名前が、プログラミング言語で、予約済みのキーワードと一致します。 名前空間と型の識別子は、共通言語ランタイムを対象にする言語で定義されているキーワードと一致しないようにします。|

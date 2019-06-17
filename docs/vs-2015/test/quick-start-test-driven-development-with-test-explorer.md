@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e1ac0eb389a6f1747ef713cd99f9bb3006ff6b9
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446201"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261646"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>クイック スタート:テスト エクスプローラーによるテスト駆動開発
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "63446201"
   
    1. テスト プロジェクトを作成します。  
   
-        **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual Basic]**、 **[Visual C#]**、または **[Visual C++]** を展開し、 **[テスト]** をクリックします。  
+        **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual Basic]** 、 **[Visual C#]** 、または **[Visual C++]** を展開し、 **[テスト]** をクリックします。  
   
         **[単体テスト プロジェクト]** を選択します。  
   
@@ -47,7 +47,7 @@ ms.locfileid: "63446201"
   
 2. 個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。  
   
-3. メニュー バーで、 **[テスト]**、 **[単体テストの実行]**、 **[すべてのテスト]** の順にクリックします。  
+3. メニュー バーで、 **[テスト]** 、 **[単体テストの実行]** 、 **[すべてのテスト]** の順にクリックします。  
   
     ソリューションがビルドされ、テストが実行されます。  
   
@@ -65,10 +65,10 @@ ms.locfileid: "63446201"
 > 最新のテスト実行の結果が表示されます。 色分けされた結果バーに表示されるのは、実行されたテストの結果のみです。 たとえば、複数のテストを実行してそのいくつかに失敗し、次に成功したテストのみを実行した場合は、結果バーには緑色のみが表示されます。  
   
 > [!NOTE]
-> テストが表示されない場合は、使用するテスト フレームワークにテスト エクスプローラーを接続するためのアダプターがインストールされていることを確認してください。 詳細については、次を参照してください。[別のテスト フレームワークを使用して](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework)します。  
+> テストが表示されない場合は、使用するテスト フレームワークにテスト エクスプローラーを接続するためのアダプターがインストールされていることを確認してください。 詳細については、次を参照してください。[別のテスト フレームワークを使用して](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework)します。  
   
 ## <a name="walkthrough"></a> チュートリアル:単体テストを使用してメソッドを開発するには  
- このチュートリアルでは、Microsoft 単体テスト フレームワークを使用して、テスト済みメソッドを C# で開発する方法を示します。 他の言語に適合させることも、NUnit など他のテスト フレームワークを使用することも、容易です。 詳細については、次を参照してください。 [(米国) の別のテスト フレームワーク](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework)します。  
+ このチュートリアルでは、Microsoft 単体テスト フレームワークを使用して、テスト済みメソッドを C# で開発する方法を示します。 他の言語に適合させることも、NUnit など他のテスト フレームワークを使用することも、容易です。 詳細については、次を参照してください。[別のテスト フレームワークを使用して](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework)します。  
   
 #### <a name="creating-the-test-and-method"></a>テストとメソッドを作成する  
   
@@ -76,7 +76,7 @@ ms.locfileid: "63446201"
   
 2. テスト プロジェクトを作成します。  
   
-   - **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual C#]**、 **[テスト]** 、 **[単体テスト プロジェクト]** の順にクリックします。  
+   - **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual C#]** 、 **[テスト]** 、 **[単体テスト プロジェクト]** の順にクリックします。  
   
         ![新しいコードとテスト プロジェクト](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
@@ -102,15 +102,15 @@ ms.locfileid: "63446201"
   
 4. テストからメソッドを生成します。  
   
-   1. `Rooter`にカーソルを置き、ショートカット メニューで **[生成]**、 **[新しい型]** の順にクリックします。  
+   1. `Rooter`にカーソルを置き、ショートカット メニューで **[生成]** 、 **[新しい型]** の順にクリックします。  
   
    2. **[新しい型の生成]** ダイアログ ボックスで、 **[プロジェクト]** をクラス ライブラリ プロジェクトに設定します。 この例では、 `MyMath`です。  
   
-   3. `SquareRoot`にカーソルを置き、ショートカット メニューで **[生成]**、 **[メソッド スタブ]** の順にクリックします。  
+   3. `SquareRoot`にカーソルを置き、ショートカット メニューで **[生成]** 、 **[メソッド スタブ]** の順にクリックします。  
   
 5. 単体テストを実行します。  
   
-   1. **[テスト]** メニューで、 **[単体テストの実行]**、 **[すべてのテスト]** の順にクリックします。  
+   1. **[テスト]** メニューで、 **[単体テストの実行]** 、 **[すべてのテスト]** の順にクリックします。  
   
         ソリューションがビルドされ、実行されます。  
   

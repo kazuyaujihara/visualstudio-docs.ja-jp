@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetAddressesFromContext method
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77306706c15be37a975742be917523095bec587f
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: ff38d2bd286c0a1ff82aafc3526936447be69056
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226442"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335215"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 このメソッドは、ドキュメントのコンテキストをデバッグ アドレスの配列にマップします。
@@ -46,21 +46,17 @@ int GetAddressesFromContext(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pDocContext`\
+`pDocContext`\
+[in]ドキュメントのコンテキスト。
 
- [in]ドキュメントのコンテキスト。
+`fStatmentOnly`\
+[in]TRUE の場合は、1 つのステートメントにデバッグ アドレスを制限します。
 
- `fStatmentOnly`\
+`ppEnumBegAddresses`\
+[out]このステートメントまたは行に関連付けられた開始デバッグ アドレスの列挙子を返します。
 
- [in]TRUE の場合は、1 つのステートメントにデバッグ アドレスを制限します。
-
- `ppEnumBegAddresses`\
-
- [out]このステートメントまたは行に関連付けられた開始デバッグ アドレスの列挙子を返します。
-
- `ppEnumEndAddresses`\
-
- [out]返します、 [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)このステートメントまたは行に関連付けられている終了のデバッグ アドレスの列挙子。
+`ppEnumEndAddresses`\
+[out]返します、 [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)このステートメントまたは行に関連付けられている終了のデバッグ アドレスの列挙子。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

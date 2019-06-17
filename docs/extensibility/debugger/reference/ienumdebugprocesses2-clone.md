@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2::Clone
 ms.assetid: 3d4196d3-5a80-4f76-b8b2-f72e80c8d406
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 79dcf0316905911bf60aa0f634bcd7fd245ed761
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 005044e6fee9db30e5317636f86099e73bd0d890
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225809"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326298"
 ---
 # <a name="ienumdebugprocesses2clone"></a>IEnumDebugProcesses2::Clone
 個別のオブジェクトとして現在の列挙体のコピーを返します。
@@ -40,9 +40,8 @@ int Clone(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `ppEnum`\
-
- [out]個別のオブジェクトとして、この列挙体のコピーを返します。
+`ppEnum`\
+[out]個別のオブジェクトとして、この列挙体のコピーを返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetProjPath function
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abc7ecf0bb35f61785041d03f871409bbe499854
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b31a17e89003967aef6a423dda87572b4a07c387
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434604"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353680"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 関数
 この関数は、ソース管理プラグインにのみ意味のある文字列であるプロジェクトのパスをユーザーに求めます。 これには、ユーザーの場合は呼び出されます。
@@ -79,12 +79,12 @@ SCCRTN SccGetProjPath (
 |着信|解釈|
 |--------------|--------------------|
 |true|ユーザーは、新しいプロジェクトを作成可能性があります。|
-|false|ユーザーは、新しいプロジェクトを作成できません。|
+|FALSE|ユーザーは、新しいプロジェクトを作成できません。|
 
 |発信|解釈|
 |--------------|--------------------|
 |true|新しいプロジェクトが作成されました。|
-|false|既存のプロジェクトが選択されました。|
+|FALSE|既存のプロジェクトが選択されました。|
 
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。
@@ -111,7 +111,7 @@ SCCRTN SccGetProjPath (
 
  ユーザーは、ソース管理下に新しいプロジェクトを作成する場合、ソース管理プラグイン可能性があります実際に作成されませんが、ソース管理システムで時に`SccGetProjPath`が呼び出されます。 と共に、0 以外の値の文字列を渡しますが代わりに、 `pbNew`、ソース管理システムで、プロジェクトが作成されることを示します。
 
- たとえば、ユーザーの場合、**新しいプロジェクト**Visual Studio でウィザードでは、自分のプロジェクトをソース管理に追加、Visual Studio は、この関数を呼び出して、およびソース管理システムで新しいプロジェクトを作成できるかどうかは、プラグインを決定しますVisual Studio プロジェクトが含まれます。 ユーザーがクリックした場合**キャンセル**ウィザードが完了する前に、プロジェクトは作成されません。 ユーザーがクリックした場合 **[ok]**、Visual Studio は呼び出して`SccOpenProject`で渡し`SCC_OPT_CREATEIFNEW`、され、その時点でソース管理プロジェクトを作成します。
+ たとえば、ユーザーの場合、**新しいプロジェクト**Visual Studio でウィザードでは、自分のプロジェクトをソース管理に追加、Visual Studio は、この関数を呼び出して、およびソース管理システムで新しいプロジェクトを作成できるかどうかは、プラグインを決定しますVisual Studio プロジェクトが含まれます。 ユーザーがクリックした場合**キャンセル**ウィザードが完了する前に、プロジェクトは作成されません。 ユーザーがクリックした場合 **[ok]** 、Visual Studio は呼び出して`SccOpenProject`で渡し`SCC_OPT_CREATEIFNEW`、され、その時点でソース管理プロジェクトを作成します。
 
 ## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

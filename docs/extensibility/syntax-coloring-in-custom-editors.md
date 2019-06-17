@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - syntax coloring
 ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5e627d758a1249a1e9b5e877255a67cfb255cf9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff717c8586e22d82a79344dd3c134c604f868d10
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799067"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316647"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>カスタム エディターでの構文の色分け表示
 Visual Studio 環境の SDK エディターなどのコア エディターは、構文の特定の項目を識別し、特定のドキュメント ビューの指定した色で表示する言語サービスを使用します。
@@ -58,5 +58,5 @@ Visual Studio 環境の SDK エディターなどのコア エディターは、
 
 - [従来の言語サービスでの構文の色分け表示](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [構文の色分け表示の実装](../extensibility/internals/implementing-syntax-coloring.md)
-- [方法: 組み込みの配色可能な項目を使用して、](../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [方法: ビルトインの配色可能な項目の使用](../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [カスタムの配色可能な項目](../extensibility/internals/custom-colorable-items.md)

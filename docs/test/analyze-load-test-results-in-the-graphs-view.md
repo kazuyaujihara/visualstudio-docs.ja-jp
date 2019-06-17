@@ -1,5 +1,5 @@
 ---
-title: ロード テスト アナライザーのグラフ ビューでのテスト結果の分析
+title: ロード テスト アナライザーのグラフ ビューでのロード テスト結果の分析
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c48fe67c8d52f962589c9f8628ff49f12f7770c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31bf74aba289e98e76fdd5b9a35d486d207bcc05
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823003"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432017"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>ロード テスト アナライザーのグラフ ビューでのテスト結果の分析
 
@@ -83,7 +83,7 @@ ms.locfileid: "62823003"
 |**グラフにズーム インする:** ロード テストを完了したら、ズーム バーを使用して、グラフの領域にズーム インしてスクロールできます。 ズーム インすると、ロード テストの実行中に生成されたデータをより詳細に確認できます。|-   [方法: グラフの領域にズーム インする](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**グラフを並べて表示する:** ロード テストの結果グラフは、複数のパターンで配置できます。 最大で 4 つのグラフを並べて表示できます。||
 |**カスタム グラフを作成する:** ロード テストの結果に関する特定の情報を表示するグラフをデザインできます。 カスタム グラフをデザインするには、グラフで表示するロード テストのカウンターを指定します。|-   [方法: カスタム グラフを作成する](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**グラフのパフォーマンス カウンター データをエクスポートする:****グラフ** ビューが表示された状態で、**ロード テスト アナライザー** ツール バーの **[グラフ データを Excel にエクスポート]** ボタンを使用すると、グラフのデータを Microsoft Excel にエクスポートできます。||
+|**グラフのパフォーマンス カウンター データをエクスポートする:** **グラフ** ビューが表示された状態で、**ロード テスト アナライザー** ツール バーの **[グラフ データを Excel にエクスポート]** ボタンを使用すると、グラフのデータを Microsoft Excel にエクスポートできます。||
 
 ## <a name="related-tasks"></a>関連するタスク
 

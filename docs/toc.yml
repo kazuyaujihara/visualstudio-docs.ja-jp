@@ -16,10 +16,10 @@
   items:
     - name: Visual Studio のインストール
       href: install/install-visual-studio.md
-    - name: アカウント
+    - name: 個人アカウント
       items:
         - name: Visual Studio にサインイン
-          displayName: peronalization accounts
+          displayName: personalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: 複数のユーザー アカウントを使って作業する
           href: ide/work-with-multiple-user-accounts.md
@@ -43,15 +43,13 @@
       href: install/update-visual-studio.md
     - name: Visual Studio 2017 の変更
       href: install/modify-visual-studio.md
-    - name: ヘルプ ビューアーのインストール
-      href: help-viewer/installation.md
     - name: Visual Studio を修復します
       href: install/repair-visual-studio.md
     - name: Visual Studio のアンインストール
       href: install/uninstall-visual-studio.md
     - name: Visual Studio 管理者ガイド
       items:
-        - name: 管理者ガイド
+        - name: 概要
           href: install/visual-studio-administrator-guide.md
         - name: コマンド ラインを使用する
           items:
@@ -83,6 +81,8 @@
               href: install/disable-or-move-the-package-cache.md
             - name: Visual Studio 配置の更新プログラムを制御する
               href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: サービス ベースライン使用時の Visual Studio の更新
+              href: install/update-servicing-baseline.md
         - name: インストールを管理する
           items:
             - name: Visual Studio インスタンスの検出および管理用のツール
@@ -126,6 +126,8 @@
                   href: install/workload-component-id-vs-test-professional.md
                 - name: Visual Studio Feedback Client
                   href: install/workload-component-id-vs-feedback-client.md
+            - name: パッケージ ペイロードの変更
+              href: install/changed-payloads.md
             - name: Visual Studio のビルド番号とリリース日
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Azure 仮想マシンから Visual Studio を使用する
@@ -138,6 +140,8 @@
           href: install/advanced-build-tools-container.md
         - name: コンテナーの既知の問題
           href: install/build-tools-container-issues.md
+    - name: ヘルプ ビューアーのインストール
+      href: help-viewer/installation.md
 - name: クイックスタート
   items:
     - name: Visual Studio のオリエンテーション
@@ -166,7 +170,7 @@
     - name: Visual Basic
       href: get-started/visual-basic/
     - name: C++
-      href: /cpp/get-started/
+      href: /cpp/get-started/tutorial-console-cpp
     - name: Python
       href: python/
     - name: Node.js
@@ -231,6 +235,8 @@
               items:
                 - name: プロジェクト テンプレートと項目テンプレートを作成する
                   href: ide/creating-project-and-item-templates.md
+                - name: テンプレートにタグを追加する
+                  href: ide/template-tags.md
                 - name: プロジェクト テンプレートを作成する
                   href: ide/how-to-create-project-templates.md
                 - name: 複数プロジェクトのテンプレートを作成する
@@ -393,6 +399,8 @@
                       href: ide/reference/move-type-to-matching-file.md
                     - name: メンバーを取り出す
                       href: ide/reference/pull-members-up.md
+                    - name: IntelliSense を使用した正規表現の入力
+                      href: ide/reference/regex-completion-through-intellisense.md
                     - name: 到達できないコードの削除
                       href: ide/reference/remove-unreachable-code.md
                     - name: 名前の変更
@@ -409,23 +417,6 @@
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'チュートリアル: 使用法からのコードの生成'
                   href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-            - name: ヒントとテクニック
-              items:
-                - name: 生産性に関するヒント
-                  href: ide/productivity-tips-for-visual-studio.md
-                - name: キーボード ショートカット
-                  items:
-                    - name: キーボード ショートカット
-                      href: ide/tips-and-tricks-for-visual-studio.md
-                    - name: キーボード ショートカットの識別とカスタマイズ
-                      href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
-                    - name: 頻繁に使用するコマンドに対応するショートカット
-                      href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
-                    - name: すべてのキーボード ショートカット
-                      href: ide/default-keyboard-shortcuts-in-visual-studio.md
-                - name: 'C# 開発者向けのヒント'
-                  displayName: ReSharper
-                  href: ide/csharp-developer-productivity.md
             - name: IntelliSense
               items:
                 - name: IntelliSense を使用する
@@ -577,88 +568,13 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: XML ファイルと XSLT ファイルの操作
           href: xml-tools/xml-tools-in-visual-studio.md
-        - name: 国際対応のアプリの開発
-          displayName: Globalization localization world-ready
-          href: ide/globalizing-and-localizing-applications.md
-        - name: 双方向言語
-          href: ide/creating-applications-in-bi-directional-languages.md
-        - name: 追加のチュートリアル
+        - name: インクルーシブなアプリの開発
           items:
-            - name: 'C# または Visual Basic を使用した WPF アプリの作成'
-              href: /visualstudio/get-started/csharp/tutorial-wpf
-            - name: Windows フォーム アプリケーションのチュートリアル
-              items:
-                - name: 'チュートリアル 1: ピクチャ ビューアーの作成 (C#)'
-                  items:
-                    - name: 概要
-                      displayName: Tutorial 1 Picture viewer
-                      href: ide/tutorial-1-create-a-picture-viewer.md
-                    - name: '手順 1: Windows フォーム アプリケーション プロジェクトを作成する'
-                      href: ide/step-1-create-a-windows-forms-application-project.md
-                    - name: '手順 2: プログラムを実行する'
-                      href: ide/step-2-run-your-program.md
-                    - name: '手順 3: フォームのプロパティを設定する'
-                      href: ide/step-3-set-your-form-properties.md
-                    - name: '手順 4: TableLayoutPanel コントロールを使用してフォームのレイアウトを設定する'
-                      href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-                    - name: '手順 5: フォームにコントロールを追加する'
-                      href: ide/step-5-add-controls-to-your-form.md
-                    - name: '手順 6: ボタン コントロールの名前を設定する'
-                      href: ide/step-6-name-your-button-controls.md
-                    - name: '手順 7: フォームにダイアログ コンポーネントを追加する'
-                      href: ide/step-7-add-dialog-components-to-your-form.md
-                    - name: '手順 8: [Show a picture] ボタンのイベント ハンドラーのコードを記述する'
-                      href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-                    - name: '手順 9: コードのレビュー、コメント追加、およびテスト'
-                      href: ide/step-9-review-comment-and-test-your-code.md
-                    - name: '手順 10: その他のボタンとチェック ボックスのコードを記述する'
-                      href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-                    - name: '手順 11: プログラムを実行し、その他の機能を試す'
-                      href: ide/step-11-run-your-program-and-try-other-features.md
-                - name: 'チュートリアル 2: 制限時間ありの計算クイズの作成 (C#)'
-                  items:
-                    - name: 概要
-                      displayName: Tutorial 2 Timed math quiz
-                      href: ide/tutorial-2-create-a-timed-math-quiz.md
-                    - name: '手順 1: プロジェクトを作成し、フォームにラベルを追加する'
-                      href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-                    - name: '手順 2: ランダムな加算問題を作成する'
-                      href: ide/step-2-create-a-random-addition-problem.md
-                    - name: '手順 3: カウントダウン タイマーを追加する'
-                      href: ide/step-3-add-a-countdown-timer.md
-                    - name: '手順 4: CheckTheAnswer() メソッドを追加する'
-                      href: ide/step-4-add-the-checktheanswer-parens-method.md
-                    - name: '手順 5: NumericUpDown コントロールの Enter イベント ハンドラーを追加する'
-                      href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-                    - name: '手順 6: 減算問題を追加する'
-                      href: ide/step-6-add-a-subtraction-problem.md
-                    - name: '手順 7: 乗算問題と除算問題を追加する'
-                      href: ide/step-7-add-multiplication-and-division-problems.md
-                    - name: '手順 8: クイズをカスタマイズする'
-                      href: ide/step-8-customize-the-quiz.md
-                - name: 'チュートリアル 3: 絵合わせゲームの作成 (C#)'
-                  items:
-                    - name: 概要
-                      displayName: Tutorial 3 Matching game
-                      href: ide/tutorial-3-create-a-matching-game.md
-                    - name: '手順 1: プロジェクトを作成し、フォームにテーブルを追加する'
-                      href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-                    - name: '手順 2: Random オブジェクトおよびアイコンのリストを追加する'
-                      href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-                    - name: '手順 3: 各ラベルにランダムなアイコンを割り当てる'
-                      href: ide/step-3-assign-a-random-icon-to-each-label.md
-                    - name: '手順 4: 各ラベルに Click イベント ハンドラーを追加する'
-                      href: ide/step-4-add-a-click-event-handler-to-each-label.md
-                    - name: '手順 5: ラベルの参照を追加する'
-                      href: ide/step-5-add-label-references.md
-                    - name: '手順 6: タイマーを追加する'
-                      href: ide/step-6-add-a-timer.md
-                    - name: '手順 7: ペアの表示を維持する'
-                      href: ide/step-7-keep-pairs-visible.md
-                    - name: '手順 8: プレーヤーが勝利したかどうかを確認するメソッドを追加する'
-                      href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-                    - name: '手順 9: その他の機能を試す'
-                      href: ide/step-9-try-other-features.md
+            - name: アクセシビリティ対応アプリの設計
+              href: ide/reference/resources-for-designing-accessible-applications.md
+            - name: 国際対応のアプリの設計
+              displayName: Globalization localization world-ready
+              href: ide/globalizing-and-localizing-applications.md
     - name: データへのアクセス...
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
@@ -744,6 +660,20 @@
       href: extensibility/visual-studio-sdk.md
     - name: アーキテクチャの分析とモデル化...
       href: modeling/analyze-and-model-your-architecture.md
+    - name: ヒントとテクニック
+      items:
+        - name: 生産性機能
+          href: ide/productivity-features.md
+        - name: 生産性のショートカット
+          href: ide/productivity-shortcuts.md
+        - name: 'C# 開発者向けのヒント'
+          displayName: ReSharper
+          href: ide/csharp-developer-productivity.md
+        - name: キーボード ショートカットをカスタマイズする
+          href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
+        - name: キーボード主体で操作する
+          displayName: accessibility
+          href: ide/reference/how-to-use-the-keyboard-exclusively.md
     - name: パーソナライズ
       items:
         - name: IDE をカスタマイズする
@@ -752,6 +682,7 @@
         - name: 'クイック スタート: テーマとテキストの色のカスタマイズ'
           href: ide/quickstart-personalize-the-ide.md
         - name: 環境設定
+          displayName: profiles
           href: ide/environment-settings.md
         - name: 同期された設定
           href: ide/synchronized-settings-in-visual-studio.md
@@ -771,7 +702,7 @@
           displayName: 'marketplace, gallery, vsix'
         - name: 外部ツールの管理
           href: ide/managing-external-tools.md
-    - name: パフォーマンス
+    - name: Visual Studio のパフォーマンス
       items:
         - name: パフォーマンスの最適化
           href: ide/optimize-visual-studio-performance.md
@@ -787,16 +718,95 @@
           href: ide/reference/accessibility-features-of-visual-studio.md
         - name: IDE アクセシビリティ オプションを設定する
           href: ide/reference/how-to-set-ide-accessibility-options.md
-        - name: キーボード主体で操作する
-          href: ide/reference/how-to-use-the-keyboard-exclusively.md
         - name: アクセシビリティのヒントとテクニック
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: マイクロソフトのアクセシビリティ製品とサービス
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
-        - name: アクセシビリティ対応アプリのデザイン リソース
-          href: ide/reference/resources-for-designing-accessible-applications.md
 - name: 関連項目
   items:
+    - name: キーボード ショートカット
+      items:
+        - name: よく使うコマンド
+          displayName: keyboard shortcuts
+          href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
+        - name: すべてのコマンド
+          displayName: keyboard commands
+          href: ide/default-keyboard-shortcuts-in-visual-studio.md
+    - name: Visual Studio のコマンド
+      items:
+        - name: 関連項目
+          displayName: Visual Studio commands
+          href: ide/reference/visual-studio-commands.md
+        - name: コマンドの別名
+          href: ide/reference/visual-studio-command-aliases.md
+        - name: 既存項目を追加するコマンド
+          href: ide/reference/add-existing-item-command.md
+        - name: 既存プロジェクトを追加するコマンド
+          href: ide/reference/add-existing-project-command.md
+        - name: 新しい項目を追加するコマンド
+          href: ide/reference/add-new-item-command.md
+        - name: 別名コマンド
+          href: ide/reference/alias-command.md
+        - name: Evaluate Statement コマンド
+          href: ide/reference/evaluate-statement-command.md
+        - name: 検索コマンド
+          href: ide/reference/find-command.md
+        - name: ファイル内を検索するコマンド
+          href: ide/reference/find-in-files-command.md
+        - name: 移動コマンド
+          href: ide/reference/go-to-command.md
+        - name: '[設定のインポートとエクスポート] コマンド'
+          href: ide/reference/import-and-export-settings-command.md
+        - name: 呼び出し履歴を一覧表示するコマンド
+          href: ide/reference/list-call-stack-command.md
+        - name: 逆アセンブリを一覧表示するコマンド
+          href: ide/reference/list-disassembly-command.md
+        - name: メモリを一覧表示するコマンド
+          href: ide/reference/list-memory-command.md
+        - name: モジュールを一覧表示するコマンド
+          href: ide/reference/list-modules-command.md
+        - name: レジスタを一覧表示するコマンド
+          href: ide/reference/list-registers-command.md
+        - name: ソースを一覧表示するコマンド
+          href: ide/reference/list-source-command.md
+        - name: スレッドを一覧表示するコマンド
+          href: ide/reference/list-threads-command.md
+        - name: コマンド ウィンドウ出力のログを記録するコマンド
+          href: ide/reference/log-command-window-output-command.md
+        - name: 新しいファイルのコマンド
+          href: ide/reference/new-file-command.md
+        - name: ファイルを開くコマンド
+          href: ide/reference/open-file-command.md
+        - name: プロジェクトを開くコマンド
+          href: ide/reference/open-project-command.md
+        - name: Print コマンド
+          href: ide/reference/print-command.md
+        - name: クイック ウォッチ コマンド
+          href: ide/reference/quick-watch-command.md
+        - name: 置換コマンド
+          href: ide/reference/replace-command.md
+        - name: ファイル内で置換するコマンド
+          href: ide/reference/replace-in-files-command.md
+        - name: SetCurrentProcess
+          href: ide/reference/set-current-process.md
+        - name: 現在のスタック フレームを設定するコマンド
+          href: ide/reference/set-current-stack-frame-command.md
+        - name: 現在のスレッドを設定するコマンド
+          href: ide/reference/set-current-thread-command.md
+        - name: 基数を設定するコマンド
+          href: ide/reference/set-radix-command.md
+        - name: シェル コマンド
+          href: ide/reference/shell-command.md
+        - name: Web ブラウザーを表示するコマンド
+          href: ide/reference/showwebbrowser-command.md
+        - name: 開始コマンド
+          href: ide/reference/start-command.md
+        - name: シンボル パス コマンド
+          href: ide/reference/symbol-path-command.md
+        - name: ブレークポイントの設定/解除コマンド
+          href: ide/reference/toggle-breakpoint-command.md
+        - name: ウォッチ コマンド
+          href: ide/reference/watch-command.md
     - name: 一般的なユーザー インターフェイス要素
       displayName: Windows and dialogs
       items:
@@ -1032,7 +1042,7 @@
               href: ide/reference/toolbox-data-tab.md
             - name: 'ツールボックス、[HTML] タブ'
               href: ide/reference/toolbox-html-tab.md
-    - name: Devenv コマンド ライン スイッチ
+    - name: Devenv コマンドライン スイッチ
       items:
         - name: 関連項目
           displayName: devenv command-line switches
@@ -1081,81 +1091,6 @@
           href: ide/reference/upgrade-devenv-exe.md
         - name: '-UseEnv (devenv.exe)'
           href: ide/reference/useenv-devenv-exe.md
-    - name: Visual Studio コマンド
-      items:
-        - name: 関連項目
-          displayName: Visual Studio commands
-          href: ide/reference/visual-studio-commands.md
-        - name: Visual Studio Command Aliases
-          href: ide/reference/visual-studio-command-aliases.md
-        - name: AddExistingSolutionItem コマンド
-          href: ide/reference/add-existing-item-command.md
-        - name: AddExistingProject コマンド
-          href: ide/reference/add-existing-project-command.md
-        - name: AddNewSolutionItem コマンド
-          href: ide/reference/add-new-item-command.md
-        - name: Alias コマンド
-          href: ide/reference/alias-command.md
-        - name: Evaluate Statement コマンド
-          href: ide/reference/evaluate-statement-command.md
-        - name: Find コマンド
-          href: ide/reference/find-command.md
-        - name: FindinFiles コマンド
-          href: ide/reference/find-in-files-command.md
-        - name: GoTo コマンド
-          href: ide/reference/go-to-command.md
-        - name: '[設定のインポートとエクスポート] コマンド'
-          href: ide/reference/import-and-export-settings-command.md
-        - name: ListCallStack コマンド
-          href: ide/reference/list-call-stack-command.md
-        - name: ListDisassembly コマンド
-          href: ide/reference/list-disassembly-command.md
-        - name: ListMemory コマンド
-          href: ide/reference/list-memory-command.md
-        - name: List Modules コマンド
-          href: ide/reference/list-modules-command.md
-        - name: List Registers コマンド
-          href: ide/reference/list-registers-command.md
-        - name: List Source コマンド
-          href: ide/reference/list-source-command.md
-        - name: ListThreads コマンド
-          href: ide/reference/list-threads-command.md
-        - name: LogCommandWindowOutput コマンド
-          href: ide/reference/log-command-window-output-command.md
-        - name: NewFile コマンド
-          href: ide/reference/new-file-command.md
-        - name: OpenFile コマンド
-          href: ide/reference/open-file-command.md
-        - name: OpenProject コマンド
-          href: ide/reference/open-project-command.md
-        - name: Print コマンド
-          href: ide/reference/print-command.md
-        - name: QuickWatch コマンド
-          href: ide/reference/quick-watch-command.md
-        - name: Replace コマンド
-          href: ide/reference/replace-command.md
-        - name: ReplaceinFiles コマンド
-          href: ide/reference/replace-in-files-command.md
-        - name: SetCurrentProcess
-          href: ide/reference/set-current-process.md
-        - name: SetCurrentStackFrame コマンド
-          href: ide/reference/set-current-stack-frame-command.md
-        - name: SetCurrentThread コマンド
-          href: ide/reference/set-current-thread-command.md
-        - name: SetRadix コマンド
-          href: ide/reference/set-radix-command.md
-        - name: Shell コマンド
-          href: ide/reference/shell-command.md
-        - name: ShowWebBrowser コマンド
-          href: ide/reference/showwebbrowser-command.md
-        - name: Start コマンド
-          href: ide/reference/start-command.md
-        - name: Symbol Path コマンド
-          href: ide/reference/symbol-path-command.md
-        - name: ToggleBreakpoint コマンド
-          href: ide/reference/toggle-breakpoint-command.md
-        - name: Watch コマンド
-          href: ide/reference/watch-command.md
     - name: セキュリティ
       items:
         - name: セキュリティで保護されたアプリケーションの開発
@@ -1164,6 +1099,8 @@
           href: ide/user-permissions-and-visual-studio.md
         - name: Windows 情報保護 (WIP)
           href: ide/exempt-visual-studio-from-wip.md
+    - name: 双方向言語の入力
+      href: ide/use-bidirectional-languages.md
     - name: Microsoft ヘルプ ビューアー
       items:
         - name: 概要

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugObjects::Clone method
 ms.assetid: cb7df109-d29a-4218-b900-6809091459dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76ae819deecaa76d37054235b6bed295278ca37d
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 11724f9d384993acde411aa650fa42df38166a5b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223446"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339630"
 ---
 # <a name="ienumdebugobjectsclone"></a>IEnumDebugObjects::Clone
 このメソッドは、個別のオブジェクトとして現在の列挙型のコピーを返します。
@@ -40,9 +40,8 @@ int Clone(
 ```
 
 ## <a name="parameters"></a>パラメーター
- `ppEnum`\
-
- [out]個別のオブジェクトとして、この列挙体のコピーを返します。
+`ppEnum`\
+[out]個別のオブジェクトとして、この列挙体のコピーを返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

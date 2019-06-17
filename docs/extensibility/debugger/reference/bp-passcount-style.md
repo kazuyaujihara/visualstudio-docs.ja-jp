@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT_STYLE structure
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 809c63fe536166efe0779cd4e4dc0149b219390a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4ea44ef70ba086a58454891987711ce7cca643e8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686055"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353049"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 ブレークポイントを発生させる原因となるブレークポイント パスの数に関連付けられている条件を指定します。
@@ -43,14 +46,18 @@ public enum enum_BP_PASSCOUNT_STYLE {
 };
 ```
 
-## <a name="members"></a>メンバー
-BP_PASSCOUNT_NONE は、ブレークポイント パスの数のスタイルを指定しません。
+## <a name="fields"></a>フィールド
+`BP_PASSCOUNT_NONE`\
+ブレークポイントのパスの数のスタイルを指定しません。
 
-BP_PASSCOUNT_EQUAL と同じにブレークポイントのパス数スタイルを設定します。 ブレークポイントは、ブレークポイントにヒットした回数がパスの数と等しい場合に発生します。
+`BP_PASSCOUNT_EQUAL`\
+等しいブレークポイント パス数のスタイルを設定します。 ブレークポイントは、ブレークポイントにヒットした回数がパスの数と等しい場合に発生します。
 
-BP_PASSCOUNT_EQUAL_OR_GREATER 以上ブレークポイント パスの数のスタイルに設定します。 ブレークポイントは、ブレークポイントのヒット カウント数がパスの数以上である場合に発生します。
+`BP_PASSCOUNT_EQUAL_OR_GREATER`\
+ブレークポイント パスの数のスタイルを以上に設定します。 ブレークポイントは、ブレークポイントのヒット カウント数がパスの数以上である場合に発生します。
 
-BP_PASSCOUNT_MOD を指定します、剰余数を渡します。 たとえば、パスの数が、型の場合`BP_PASSCOUNT_MOD`パスの数の値が 4、ヒット カウントが 4 の倍数たびに、ブレークポイントが起動します。
+`BP_PASSCOUNT_MOD`\
+指定します、剰余数を渡します。 たとえば、パスの数が、型の場合`BP_PASSCOUNT_MOD`パスの数の値が 4、ヒット カウントが 4 の倍数たびに、ブレークポイントが起動します。
 
 ## <a name="remarks"></a>Remarks
 使用、`stylePassCount`のメンバー、 [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)構造体のメンバーではさらに、 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)と[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体。

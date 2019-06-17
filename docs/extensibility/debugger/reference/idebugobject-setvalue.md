@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetValue method
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfea65f7f24b3d48fc5ec5d68028c72b9b4eece
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a9c6590c45027eb3dce28e2dbac182a967e87d59
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872451"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318946"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 連続した一連のバイトから、オブジェクトの値を設定します。
@@ -38,14 +41,12 @@ int SetValue(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pValue`
+## <a name="parameters"></a>パラメーター
+`pValue`\
+[in]新しい値を表すバイトの配列。
 
- [in]新しい値を表すバイトの配列。
-
- `nSize`
-
- [in]値をバイト単位のサイズ。
+`nSize`\
+[in]値をバイト単位のサイズ。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、S_OK を返します。それ以外の場合、エラー コードを返します。

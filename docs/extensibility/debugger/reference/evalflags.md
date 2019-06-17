@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EVALFLAGS enumeration
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9d59262349891a5c0483297039578c5de4a7b72
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2a56f7d5fe4741fa887814691eddcf8df93030cd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696273"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337877"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 式の評価を制御するフラグを指定します。
@@ -49,20 +52,27 @@ public enum enum_EVALFLAGS {
 }
 ```
 
-## <a name="members"></a>メンバー
-EVAL_RETURNVALUE では、存在する場合は、戻り値に評価することを指定します。
+## <a name="fields"></a>フィールド
+`EVAL_RETURNVALUE`\
+存在する場合は、戻り値に評価することを指定します。
 
-EVAL_NOSIDEEFFECTS では、副作用を許可しないことを指定します。
+`EVAL_NOSIDEEFFECTS`\
+副作用を許可しないことを指定します。
 
-EVAL_ALLOWBPS では、ブレークポイントで停止を指定します。
+`EVAL_ALLOWBPS`\
+ブレークポイントの停止を指定します。
 
-EVAL_ALLOWERRORREPORT を指定しますエラーが許可するホストに報告します。 主に、Internet Explorer でスクリプトに式の評価に使用します。
+`EVAL_ALLOWERRORREPORT`\
+エラー報告を許可するホストを指定します。 主に、Internet Explorer でスクリプトに式の評価に使用します。
 
-関数を呼び出す代わりに、アドレスとして評価される EVAL_FUNCTION_AS_ADDRESS 強制的に機能します。
+`EVAL_FUNCTION_AS_ADDRESS`\
+関数を呼び出す代わりに、アドレスとして評価される関数を強制的にします。
 
-評価対象から EVAL_NOFUNCEVAL により関数。 たとえば、`int`式トークン`myExpression(int) + 10`します。 この関数は、アドレスとしてではない値を正しく評価できます。
+`EVAL_NOFUNCEVAL`\
+関数が評価するを防ぎます。 たとえば、`int`式トークン`myExpression(int) + 10`します。 この関数は、アドレスとしてではない値を正しく評価できます。
 
-EVAL_NOEVENTS セッション デバッグ マネージャー (SDM) または、IDE には式の評価中に発生するイベントを送信しないかを示すフラグ。
+`EVAL_NOEVENTS`\
+セッション デバッグ マネージャー (SDM) または、IDE には式の評価中に発生するイベントを送信しないかを示すフラグです。
 
 ## <a name="remarks"></a>Remarks
 これらのフラグは、引数として渡される、 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)と[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)メソッド。

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - guid
 - menus
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16871ba1115407e2665886d84b72594470f91287
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 26171ae9f4464c3b8b63762d92e9a91d5a4b8420
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420622"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329111"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>メニューの Guid と Visual Studio の Id
 この記事では、メニューおよび Visual Studio のメニュー バーでのグループの GUID と ID の値を列挙します。 これらの値が定義されている *.vsct* Visual Studio SDK の一部としてインストールされているファイル。 詳細については、次を参照してください。 [IDE 定義コマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)します。
@@ -56,6 +56,7 @@ ms.locfileid: "63420622"
 |ビルド|IDM_VS_MENU_BUILD|
 |形式|IDM_VS_MENU_FORMAT|
 |ツール|IDM_VS_MENU_TOOLS|
+|拡張機能|IDM_VS_MENU_EXTENSIONS|
 |[Window]|IDM_VS_MENU_WINDOW|
 |Addins|IDM_VS_MENU_ADDINS|
 |コミュニティ|IDM_VS_MENU_COMMUNITY|

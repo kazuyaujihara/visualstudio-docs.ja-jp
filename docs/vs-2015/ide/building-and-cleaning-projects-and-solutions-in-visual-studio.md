@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0bda55c42d384f9e7285b445e4cb3c19144289
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408428"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685713"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,18 +36,18 @@ ms.locfileid: "63408428"
 このトピックの手順を使用して、ソリューション内のプロジェクトまたはプロジェクト項目のすべてまたは一部をビルド、リビルド、またはクリーンを行うことができます。 ステップ バイ ステップ チュートリアルについては、「[チュートリアル: アプリケーションをビルドする](../ide/walkthrough-building-an-application.md)」を参照してください。
 
 > [!NOTE]
-> ご使用の Visual Studio エディションの UI は、アクティブな設定によって、このトピックで説明する内容とは異なる場合があります。 設定を変更するには、**[ツール]** メニューを開き、**[設定のインポートとエクスポート]** を選択します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
+> ご使用の Visual Studio エディションの UI は、アクティブな設定によって、このトピックで説明する内容とは異なる場合があります。 設定を変更するには、 **[ツール]** メニューを開き、 **[設定のインポートとエクスポート]** を選択します。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>ソリューション全体のビルド、リビルド、またはクリーン
 
 1. **ソリューション エクスプローラー**で、ソリューションを選択するか開きます。
 
-2. メニュー バーで、**[ビルド]** を選択し、次のコマンドのいずれかを選択します。
+2. メニュー バーで、 **[ビルド]** を選択し、次のコマンドのいずれかを選択します。
 
     - **[ビルド]** または **[ソリューションのビルド]** を選択すると、最新のビルド以降に変更されたプロジェクト ファイルとコンポーネントのみがコンパイルされます。
 
         > [!NOTE]
-        > ソリューションに複数のプロジェクトが含まれている場合は、**[ビルド]** コマンドが **[ソリューションのビルド]** になります。
+        > ソリューションに複数のプロジェクトが含まれている場合は、 **[ビルド]** コマンドが **[ソリューションのビルド]** になります。
 
     - **[ソリューションのビルド]** を選択すると、ソリューションが "クリーン" されてから、すべてのプロジェクト ファイルとコンポーネントがビルドされます。
 
@@ -57,7 +57,7 @@ ms.locfileid: "63408428"
 
 1. **ソリューション エクスプローラー**で、プロジェクトを選択するか開きます。
 
-2. メニュー バーで、**[ビルド]** を選択してから、**[<プロジェクト名> のビルド]** または **[<プロジェクト名> のリビルド]** を選択します。
+2. メニュー バーで、 **[ビルド]** を選択してから、 **[<プロジェクト名> のビルド]** または **[<プロジェクト名> のリビルド]** を選択します。
 
     - **[<プロジェクト名> のビルド]** を選択すると、最新のビルド以降に変更されたプロジェクト コンポーネントのみがビルドされます。
 
@@ -65,11 +65,11 @@ ms.locfileid: "63408428"
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>スタートアップ プロジェクトとその依存関係のみをビルドするには
 
-1. メニュー バーの **[ツール]**、 **[オプション]** の順にクリックします。
+1. メニュー バーの **[ツール]** 、 **[オプション]** の順にクリックします。
 
-2. **[オプション]** ダイアログ ボックスで、**[プロジェクトおよびソリューション]** ノードを展開してから、**[ビルド/実行]** ページを選択します。
+2. **[オプション]** ダイアログ ボックスで、 **[プロジェクトおよびソリューション]** ノードを展開してから、 **[ビルド/実行]** ページを選択します。
 
-    **[ビルド/実行] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション]**) が開きます。
+    **[ビルド/実行] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション]** ) が開きます。
 
 3. **[実行時に、スタートアップ プロジェクトおよび依存関係のみをビルドする]** チェック ボックスをオンにします。
 
@@ -83,7 +83,7 @@ ms.locfileid: "63408428"
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>選択した Visual C++ プロジェクトのみをビルドするには
 
-1. [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] プロジェクトを選択してから、メニュー バーで **[ビルド]**、**[プロジェクトのみ]** の順に選択し、以下のコマンドのいずれかを選択します。
+1. [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] プロジェクトを選択してから、メニュー バーで **[ビルド]** 、 **[プロジェクトのみ]** の順に選択し、以下のコマンドのいずれかを選択します。
 
    - *プロジェクト名***のみをビルド**
 
@@ -93,7 +93,7 @@ ms.locfileid: "63408428"
 
    - *プロジェクト名***へのみリンク**
 
-     これらのコマンドは、選択されている [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] プロジェクトにのみ適用されます。プロジェクトの依存関係やソリューション ファイルのビルド、リビルド、クリーン、リンクは行われません。 使用している [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のバージョンに応じて、**[プロジェクトのみ]** のサブメニューに他のコマンドが含まれる場合があります。
+     これらのコマンドは、選択されている [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] プロジェクトにのみ適用されます。プロジェクトの依存関係やソリューション ファイルのビルド、リビルド、クリーン、リンクは行われません。 使用している [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のバージョンに応じて、 **[プロジェクトのみ]** のサブメニューに他のコマンドが含まれる場合があります。
 
 ## <a name="to-compile-multiple-c-project-items"></a>複数の C++ プロジェクト項目をコンパイルするには
 
@@ -105,9 +105,9 @@ ms.locfileid: "63408428"
 
 1. 次のいずれかの操作を実行します。
 
-    - メニュー バーで、**[ビルド]**、**[キャンセル]** の順に選択します。
+    - メニュー バーで、 **[ビルド]** 、 **[キャンセル]** の順に選択します。
 
     - Ctrl + Break キーを選択します。
 
 ## <a name="see-also"></a>関連項目
- [方法: ビルド ログ ファイルの構成を表示、保存、および](../ide/how-to-view-save-and-configure-build-log-files.md)[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)[のコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)[ビルド構成について](../ide/understanding-build-configurations.md) [デバッグおよびリリース プロジェクト構成](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ビルドのリファレンス](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv コマンド ライン スイッチ](../ide/reference/devenv-command-line-switches.md)[ソリューションとプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)
+ [方法: ビルド ログ ファイルの構成を表示、保存、および](../ide/how-to-view-save-and-configure-build-log-files.md)[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)[のコンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)[ビルド構成について](../ide/understanding-build-configurations.md) [デバッグおよびリリース プロジェクト構成](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ビルドのリファレンス](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv コマンド ライン スイッチ](../ide/reference/devenv-command-line-switches.md)[ソリューションとプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)

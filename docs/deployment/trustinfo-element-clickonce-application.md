@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d6ac13c6eb76bff5ffc07043fd20063700237fc
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927300"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745594"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; 要素 (ClickOnce アプリケーション)
 アプリケーションをクライアント コンピューター上で実行するのに必要な最低限のセキュリティ権限について説明します。
@@ -87,7 +87,7 @@ ms.locfileid: "62927300"
      必須。 アクセス許可のバージョンを識別します。 通常、この値は `1`です。
 
 ## <a name="ipermission"></a>IPermission
- 任意。 この要素は `PermissionSet` 要素の子です。 `IPermission` 要素には、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 内のアクセス許可クラスを正しく指定します。 `IPermission` 要素には次の属性がありますが、アクセス許可クラスのプロパティに対応する追加の属性を持つことができます。 アクセス許可の具体的な構文については、Security.config ファイル内の例を参照してください。
+ 任意。 この要素は `PermissionSet` 要素の子です。 `IPermission`要素は、.NET Framework でのアクセス許可クラスを完全に識別します。 `IPermission` 要素には次の属性がありますが、アクセス許可クラスのプロパティに対応する追加の属性を持つことができます。 アクセス許可の具体的な構文については、Security.config ファイル内の例を参照してください。
 
 - `class`
 

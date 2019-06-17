@@ -11,21 +11,19 @@ helpviewer_keywords:
 - IntelliTrace, debugging applications
 - debugger, (See also IntelliTrace [Visual Studio ALM])
 - debugging, (See also IntelliTrace [Visual Studio ALM])
-- IntelliTrace, collecting data from Test Manager
 - IntelliTrace
-- Test Manager, debugging with IntelliTrace
 - IntelliTrace, debugging after a crash
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf491eae46c22d0804c66ab51071740e42de631c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d297b883c4d5217a0175c739bf460872d464503f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678811"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746672"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise の IntelliTrace (C#、Visual Basic、 C++)
 
@@ -43,8 +41,7 @@ IntelliTrace は Visual Studio Enterprise Edition で使用できます (Profess
 
 |||
 |-|-|
-|**IntelliTrace を使用してアプリケーションをデバッグする:** <br /><br /> - 過去のイベントを表示する。<br />- 過去のイベントの呼び出し情報を表示する。<br />- IntelliTrace セッションを保存する。<br />- IntelliTrace により収集されたデータを制御する。|- [IntelliTrace を使用して前のアプリ状態を調べる](../debugger/view-historical-application-state.md)<br />- [チュートリアル: IntelliTrace](../debugger/walkthrough-using-intellitrace.md) の使用<br />- [IntelliTrace の機能](../debugger/intellitrace-features.md)<br />- [デバッグ履歴](../debugger/historical-debugging.md)|
-|**テスト マネージャーのテスト セッション中に IntelliTrace データを収集する**|- [手動テストでの複数の診断データの収集](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
+|**IntelliTrace を使用してアプリケーションをデバッグする:**<br /><br /> - 過去のイベントを表示する。<br />- 過去のイベントの呼び出し情報を表示する。<br />- IntelliTrace セッションを保存する。<br />- IntelliTrace により収集されたデータを制御する。|- [IntelliTrace を使用して前のアプリ状態を調べる](../debugger/view-historical-application-state.md)<br />- [チュートリアル: IntelliTrace](../debugger/walkthrough-using-intellitrace.md) の使用<br />- [IntelliTrace の機能](../debugger/intellitrace-features.md)<br />- [デバッグ履歴](../debugger/historical-debugging.md)|
 |**展開されたアプリケーションから IntelliTrace データを収集する**|- [IntelliTrace スタンドアロン コレクターを使用する](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**IntelliTrace ログ ファイル (.iTrace ファイル) からデバッグを開始する**|- [保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)|
 
@@ -71,8 +68,6 @@ IntelliTrace は、これらの時点で特定のイベントやデータを記�
 
 - Visual Studio 2015 Enterprise または以降のバージョンまたは以前のバージョンの Visual Studio Ultimate の IntelliTrace セッション。
 
-- Microsoft Test Manager のテスト セッション
-
 - Microsoft Monitoring Agent を単独、または System Center 2012 と連携して使用する場合の、IIS でホストされている ASP.NET Web アプリ、または配置されて実行中の SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーション。 参照してください[IntelliTrace スタンドアロン コレクターを使用して、](../debugger/using-the-intellitrace-stand-alone-collector.md)と[Microsoft Monitoring Agent による監視](https://technet.microsoft.com/library/dn465153.aspx)します。
 
 IntelliTrace を使用したデバッグがどのように役立つかの例を次に示します。
@@ -84,10 +79,6 @@ IntelliTrace を使用したデバッグがどのように役立つかの例を�
 - 例外が発生します。
 
      IntelliTrace がない場合、例外に関するメッセージが表示されますが、例外の原因となったイベントに関する詳細な情報はわかりません。 呼び出し履歴を調べて、例外の原因となった一連の呼び出しを確認することはできますが、それらの呼び出し中に発生したイベントのシーケンスを確認することはできません。 IntelliTrace を使用すると、例外の前に発生したイベントを確認できます。
-
-- アプリケーションは、テスト コンピューターではクラッシュしますが、開発用コンピューターでは正常に実行されます。
-
-     Microsoft Test Manager から IntelliTrace データを収集して、.iTrace ファイルにデータを保存し、後日確認できるようにこのファイルを Team Foundation Server の作業項目に添付することができます。 参照してください[手動テストでの複数の診断データの収集](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)と[保存された IntelliTrace データを使用して](../debugger/using-saved-intellitrace-data.md)します。
 
 - 展開されたアプリケーションでバグまたはクラッシュが発生しています。
 
@@ -105,7 +96,7 @@ IntelliTrace を使用したデバッグがどのように役立つかの例を�
 
 - **デバッガー イベント**
 
-     IntelliTrace は、Visual Studio デバッガーに発生するイベントを常に記録します。 たとえば、アプリケーションの起動はデバッガー イベントです。 その他のデバッガー イベントは、アプリケーションの実行を中断する停止イベントです。 たとえば、ご利用のプログラムはブレークポイントをヒットしたり、トレースポイントをヒットしたり、**[ステップ]** コマンドを実行したりします。
+     IntelliTrace は、Visual Studio デバッガーに発生するイベントを常に記録します。 たとえば、アプリケーションの起動はデバッガー イベントです。 その他のデバッガー イベントは、アプリケーションの実行を中断する停止イベントです。 たとえば、ご利用のプログラムはブレークポイントをヒットしたり、トレースポイントをヒットしたり、 **[ステップ]** コマンドを実行したりします。
 
      、パフォーマンスを向上させるは既定では、IntelliTrace が、デバッガー イベントのすべての値を記録しません。 代わりに、次の値を記録します。
 
@@ -115,7 +106,7 @@ IntelliTrace を使用したデバッグがどのように役立つかの例を�
 
   - 値を表示するためにソース ウィンドウの変数の上にマウス ポインターを移動すると表示されるデータヒントの値。 IntelliTrace は、固定されたデータヒントの値は収集しません。
 
-    IntelliTrace が各デバッガーでアプリケーションのプロセスのスナップショットを取得、IntelliTrace イベントとスナップショット モードを有効にすると、**ブレークポイント**と**手順**イベント。 これで値が記録されます、**ローカル**、 **[自動変数]**、および**ウォッチ**かどうか、開いているウィンドウかどうかに関係なく、windows。 任意のピン留めされたデータ ヒントでの値も収集されます。
+    IntelliTrace が各デバッガーでアプリケーションのプロセスのスナップショットを取得、IntelliTrace イベントとスナップショット モードを有効にすると、**ブレークポイント**と**手順**イベント。 これで値が記録されます、**ローカル**、 **[自動変数]** 、および**ウォッチ**かどうか、開いているウィンドウかどうかに関係なく、windows。 任意のピン留めされたデータ ヒントでの値も収集されます。
 
 - **例外**
 
@@ -174,7 +165,7 @@ IntelliTrace で収集される呼び出し情報の量を制御するには、�
 
 既定では、選択された IntelliTrace イベントについてのみ情報が収集されます。 これが原因でアプリケーションの速度が低下するかどうかは、コードの構造と構成によって決まります。 たとえば、IntelliTrace がイベントを頻繁に記録する場合、アプリケーションの速度が低下する可能性があります。 また、アプリケーションのリファクタリングを検討する必要に迫られる場合があります。
 
-呼び出し情報を収集すると、アプリケーションの速度が大幅に低下する可能性があります。 さらに、ディスクに保存される IntelliTrace ログ ファイル (.iTrace ファイル) のサイズが増加する可能性があります。 これらの影響を最小限に抑えるには、必要なモジュールのみから呼び出し情報を収集するようにします。  ご利用の .iTrace ファイルの最大サイズを変更するには、**[ツール]**、**[オプション]**、**[IntelliTrace]**、**[詳細設定]** の順に選択します。
+呼び出し情報を収集すると、アプリケーションの速度が大幅に低下する可能性があります。 さらに、ディスクに保存される IntelliTrace ログ ファイル (.iTrace ファイル) のサイズが増加する可能性があります。 これらの影響を最小限に抑えるには、必要なモジュールのみから呼び出し情報を収集するようにします。  ご利用の .iTrace ファイルの最大サイズを変更するには、 **[ツール]** 、 **[オプション]** 、 **[IntelliTrace]** 、 **[詳細設定]** の順に選択します。
 
 ### <a name="blogs"></a>ブログ
 

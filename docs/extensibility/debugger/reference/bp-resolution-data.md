@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_DATA structure
 ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70c1bb00fc8648cfe19f4bcecffdd0592e5f8deb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b8fcf2443cdc013e6f81968336101b78ea220784
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711450"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346543"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
 データ ブレークポイントのバインドの結果について説明します。
@@ -43,13 +46,17 @@ public struct BP_RESOLUTION_DATA {
 ```
 
 ## <a name="members"></a>メンバー
-`bstrDataExpr` バインドされたデータ式。
+`bstrDataExpr`\
+バインドされたデータ式。
 
-`bstrFunc` 関数の名前 (ある場合) でバインド データ ブレークポイントは。
+`bstrFunc`\
+関数の名前 (ある場合) でバインド データ ブレークポイントは。
 
-`bstrImage` データ ブレークポイントがバインドされているモジュール (たとえば MyModule.dll) の名前。
+`bstrImage`\
+データ ブレークポイントがバインドされているモジュール (たとえば MyModule.dll) の名前。
 
-`dwFlags` 値、 [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)データ ブレークポイントを実装する方法を説明する列挙。
+`dwFlags`\
+値、 [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)データ ブレークポイントを実装する方法を説明する列挙。
 
 ## <a name="remarks"></a>Remarks
 この構造体のメンバーである、 [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)がで有効にするのメンバーの構造、 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)によって返される構造体、 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)メソッド。

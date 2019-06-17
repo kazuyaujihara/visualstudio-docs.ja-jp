@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::GetConnectionProtocol
 ms.assetid: 368ced5b-c5d9-4090-a5b4-26ff400d1a55
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 230712dddc3359ab69894bab15b919f997cf40a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a5e3832d167282bf399ffaea82630cdf87dbac06
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921858"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327055"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
 サーバーとパッケージのデバッグの間の通信に使用されているプロトコルを示す値を返します。
@@ -36,10 +39,9 @@ int GetConnectionProtocol(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `pProtocol`
-
- [out]値のいずれかを返します、 [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)列挙体。
+## <a name="parameters"></a>パラメーター
+`pProtocol`\
+[out]値のいずれかを返します、 [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)列挙体。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

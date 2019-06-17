@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15093cc6af6e61384c393b1c3e435df3840a2811
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416642"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686447"
 ---
 # <a name="customizing-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63416642"
   
    これらのアセンブリの .pdb ファイルを取得し、アセンブリ .dll ファイルと同じフォルダーにコピーします。  
   
-  コード カバレッジの動作をカスタマイズするには、[このトピックの最後にあるサンプル](#sample)をコピーし、ファイル拡張子を .runsettings にしてソリューションに追加します。 ニーズに合わせて編集し、**[テスト]** メニューで **[テストの設定]**、**[テスト設定ファイルの選択]** の順に選択します。 このトピックの残りの部分では、この手順を詳しく説明します。  
+  コード カバレッジの動作をカスタマイズするには、[このトピックの最後にあるサンプル](#sample)をコピーし、ファイル拡張子を .runsettings にしてソリューションに追加します。 ニーズに合わせて編集し、 **[テスト]** メニューで **[テストの設定]** 、 **[テスト設定ファイルの選択]** の順に選択します。 このトピックの残りの部分では、この手順を詳しく説明します。  
   
 ## <a name="the-runsettings-file"></a>.runsettings ファイル  
  高度なコード カバレッジの設定は、.runsettings ファイルで指定されます。 これは、単体テスト ツールによって使用される構成ファイルです。 [このトピックの最後にあるサンプル](#sample)をコピーし、ニーズに合わせて編集することをお勧めします。  
@@ -43,15 +43,15 @@ ms.locfileid: "63416642"
   
 1. `.runsettings` という拡張子で、ソリューション項目として .xml ファイルを追加します。  
   
-    ソリューション エクスプローラーでソリューションのショートカット メニューを開き、**[追加]**、**[新しい項目]**、**[XML ファイル]** の順にクリックします。 末尾が `CodeCoverage.runsettings` などになる名前でファイルを保存します。  
+    ソリューション エクスプローラーでソリューションのショートカット メニューを開き、 **[追加]** 、 **[新しい項目]** 、 **[XML ファイル]** の順にクリックします。 末尾が `CodeCoverage.runsettings` などになる名前でファイルを保存します。  
   
 2. このトピックの最後にあるサンプルの内容を追加し、以下の各セクションの説明に従って、ニーズに合わせてカスタマイズします。  
   
-3. **[テスト]** メニューで **[テストの設定]**、**[テスト設定ファイルの選択]** の順に選択し、ファイルを選択します。  
+3. **[テスト]** メニューで **[テストの設定]** 、 **[テスト設定ファイルの選択]** の順に選択し、ファイルを選択します。  
   
-4. これで、**[コード カバレッジの分析]** を実行すると、この `.runsettings` ファイルが動作を制御するようになります。 コード カバレッジを再度実行する必要があることに注意してください。前のカバレッジの結果とコードの色分けは、テストを実行したりコードを更新したりしても、自動的に非表示にはなりません。  
+4. これで、 **[コード カバレッジの分析]** を実行すると、この `.runsettings` ファイルが動作を制御するようになります。 コード カバレッジを再度実行する必要があることに注意してください。前のカバレッジの結果とコードの色分けは、テストを実行したりコードを更新したりしても、自動的に非表示にはなりません。  
   
-5. カスタム設定のオンとオフを切り替えるには、**[テストの設定]** メニューの **[テスト]** でファイルを選択したり選択解除したりします。  
+5. カスタム設定のオンとオフを切り替えるには、 **[テストの設定]** メニューの **[テスト]** でファイルを選択したり選択解除したりします。  
   
    ![カスタム設定ファイルを持つ [テストの設定] メニュー](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")  
   
@@ -101,7 +101,7 @@ ms.locfileid: "63416642"
 ### <a name="regular-expressions"></a>正規表現  
  Include ノードと Exclude ノードでは、正規表現を使用できます。 詳細については、「[Visual Studio での正規表現の使用](../ide/using-regular-expressions-in-visual-studio.md)」を参照してください。 正規表現は、ワイルドカードと同じではありません。 特に次の点に注意してください。  
   
-1. **\.\\*** は任意の文字の文字列と一致します  
+1. **\.\\** * は任意の文字の文字列と一致します  
   
 2. **\\.** はピリオド "." と一致します  
   
@@ -178,14 +178,14 @@ ms.locfileid: "63416642"
 ## <a name="how-to-specify-runsettings-files-while-running-tests"></a>テストの実行中に .runsettings ファイルを指定する方法  
   
 ### <a name="to-customize-runsettings-in-visual-studio-tests"></a>Visual Studio テストで runsettings をカスタマイズするには  
- **[テスト]**、**[テストの設定]**、**[テスト設定ファイルの選択]** の順に選択し、.runsettings ファイルを選択します。 ファイルは、[テストの設定] メニューに表示され、選択したり取り消したりすることができます。 選択されている間、.runsettings ファイルは、**[コード カバレッジの分析]** を使用するたびに適用されます。  
+ **[テスト]** 、 **[テストの設定]** 、 **[テスト設定ファイルの選択]** の順に選択し、.runsettings ファイルを選択します。 ファイルは、[テストの設定] メニューに表示され、選択したり取り消したりすることができます。 選択されている間、.runsettings ファイルは、 **[コード カバレッジの分析]** を使用するたびに適用されます。  
   
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>コマンド ライン テストで実行設定をカスタマイズするには  
- コマンド ラインからテストを実行するには、vstest.console.exe を使用します。 設定ファイルは、このユーティリティのパラメーターです。 詳細については、「[コマンド ラインからの VSTest.console の使用](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a)」を参照してください。  
+ コマンド ラインからテストを実行するには、vstest.console.exe を使用します。 設定ファイルは、このユーティリティのパラメーターです。 詳細については、「[コマンド ラインからの VSTest.console の使用](https://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a)」を参照してください。  
   
 1. Visual Studio 開発者コマンド プロンプトを起動します。  
   
-     Windows の **[スタート]** メニューで **[すべてのプログラム]**、**[Microsoft Visual Studio]**、**[Visual Studio Tools]**、**[開発者コマンド プロンプト]** の順に選択します。  
+     Windows の **[スタート]** メニューで **[すべてのプログラム]** 、 **[Microsoft Visual Studio]** 、 **[Visual Studio Tools]** 、 **[開発者コマンド プロンプト]** の順に選択します。  
   
 2. 実行します。  
   
@@ -198,13 +198,13 @@ ms.locfileid: "63416642"
   
 1. .runsettings ファイルがチェックインされていることを確認します。  
   
-2. チーム エクスプローラーで、**[ビルド]** を開き、ビルド定義を追加または編集します。  
+2. チーム エクスプローラーで、 **[ビルド]** を開き、ビルド定義を追加または編集します。  
   
-3. **[プロセス]** ページで **[自動テスト]**、**[テスト ソース]**、**[実行設定]** の順に展開します。 **.runsettings** ファイルを選択します。  
+3. **[プロセス]** ページで **[自動テスト]** 、 **[テスト ソース]** 、 **[実行設定]** の順に展開します。 **.runsettings** ファイルを選択します。  
   
-   - <em>しかし、**[テスト ソース]** の代わりに **[テスト アセンブリ]</em>* が表示されます。[実行設定]** フィールドを設定しようとすると、.testsettings ファイルしか選択できません。*  
+   - <em>しかし、 **[テスト ソース]** の代わりに * *[テスト アセンブリ]</em>* が表示されます。 **[実行設定]** フィールドを設定しようとすると、.testsettings ファイルしか選択できません。*  
   
-      **[自動テスト]** の下の **[テスト アセンブリ]** を選択し、行の末尾の **[...]** ボタンを選択します。 **[テストの実行の追加と編集]** ダイアログ ボックスで、**[テスト ランナー]** を **[Visual Studio テスト ランナー]** に設定します。  
+      **[自動テスト]** の下の **[テスト アセンブリ]** を選択し、行の末尾の **[...]** ボタンを選択します。 **[テストの実行の追加と編集]** ダイアログ ボックスで、 **[テスト ランナー]** を **[Visual Studio テスト ランナー]** に設定します。  
   
    結果は、ビルド レポートの概要セクションに表示されます。  
   
@@ -237,7 +237,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--  
 About include/exclude lists:  
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.  
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.  
+Each element in the list is a regular expression (ECMAScript syntax). See https://msdn.microsoft.com/library/2k3te2cs.aspx.  
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->  

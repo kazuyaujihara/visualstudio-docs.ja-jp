@@ -1,5 +1,5 @@
 ---
-title: XML スキーマ デザイナーで、コンテンツ モデル ビューを使用してノードのコンテンツ モデルを調べる
+title: XML スキーマ デザイナーのコンテンツ モデル ビューを使用してノードを調べる
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfefc7d6aaa40d628cc0ee9d582fddf65adb411e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63e337162dc8499bf9ac2acb5606fbf75292574f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001899"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820455"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>方法: コンテンツ モデル ビューを使用してノードのコンテンツ モデルを調べる
 
@@ -41,4 +41,4 @@ ms.locfileid: "63001899"
 
 8. をクリックして、**ドキュメントを表示**ドキュメントを切り替えるには、XSD ツールバーのボタンをクリックします。 デザイン サーフェイスを右クリックして、ドキュメントを切り替えることもできます。
 
-9. 右クリックして、`purchaseOrder`ノード**サンプル XML の生成**に XML インスタンス ドキュメントを参照してください。
+9. 右クリックし、`purchaseOrder`ノード**サンプル XML の生成**に XML インスタンス ドキュメントを参照してください。

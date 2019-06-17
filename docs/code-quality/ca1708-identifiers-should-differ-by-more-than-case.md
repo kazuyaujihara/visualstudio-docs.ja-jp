@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac2e430abdc068070457dcf362e39dcbc0b398
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 059770b28b9e885608769f3844f91097a16d66cf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797554"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714248"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708:識別子は、大文字と小文字の区別以外にも相違していなければなりません
 
@@ -48,13 +48,13 @@ ms.locfileid: "62797554"
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制します。
 
-この規則による警告は抑制しないでください。 ライブラリは、.NET Framework で使用可能なすべての言語で使用できるしない場合があります。
+この規則による警告は抑制しないでください。 ライブラリは、.NET で使用可能なすべての言語で使用できるしない場合があります。
 
 ## <a name="configurability"></a>構成機能
 
 この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
 
-```
+```ini
 dotnet_code_quality.ca1708.api_surface = private, internal
 ```
 

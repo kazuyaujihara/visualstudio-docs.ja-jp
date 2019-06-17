@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Suspend
 ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd1987be34cf0f07ce5f37f074cd298a8135a4fa
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: dc3abcc00d99e82a4af2e3886310772e47127274
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226398"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320008"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 スレッドを中断します。
@@ -40,9 +40,8 @@ HRESULT Suspend ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pdwSuspendCount`\
-
- [out]中断操作の後に、中断カウントを返します。
+`pdwSuspendCount`\
+[out]中断操作の後に、中断カウントを返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

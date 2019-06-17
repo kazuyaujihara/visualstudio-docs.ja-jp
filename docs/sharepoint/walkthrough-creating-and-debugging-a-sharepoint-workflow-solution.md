@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: 作成して、SharePoint ワークフロー ソリューションのデバッグ |Microsoft Docs'
+title: 作成して SharePoint ワークフロー ソリューションをデバッグする.
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51682ba54d6a6ae0698ade6bb52d5972cd63111f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430360"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401056"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>チュートリアル: 作成し、SharePoint ワークフロー ソリューションのデバッグ
   このチュートリアルでは、基本的なシーケンシャル ワークフロー テンプレートを作成する方法を示します。 ワークフローは、ドキュメントが確認されたかどうかを判断する共有ドキュメント ライブラリのプロパティを確認します。 ドキュメントをレビューすると、ワークフローが終了します。
@@ -57,7 +57,7 @@ ms.locfileid: "63430360"
 
 3. 選択**ライブラリ**上、**ライブラリ ツール**リボンをクリックして、**列の作成**新しい列を作成するには、リボン ボタンをクリックします。
 
-4. 列の名前**Document Status**、その型に設定**選択肢 (メニューから選択する)**、次の 3 つの選択肢を指定し、選択、 **OK**ボタン。
+4. 列の名前**Document Status**、その型に設定**選択肢 (メニューから選択する)** 、次の 3 つの選択肢を指定し、選択、 **OK**ボタン。
 
     - **確認が必要な**
 

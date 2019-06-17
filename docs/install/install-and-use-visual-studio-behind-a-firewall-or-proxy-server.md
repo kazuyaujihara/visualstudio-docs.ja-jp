@@ -1,7 +1,7 @@
 ---
 title: ファイアウォールまたはプロキシ サーバーの内側にインストールして使用する
-description: ファイアウォールまたはプロキシ サーバーを使用する場合に、ホワイトリストに登録したり開いたりすることがあるドメイン URL、ポート、プロトコルを確認します
-ms.date: 03/30/2019
+description: ファイアウォールまたはプロキシ サーバーを使用する場合に、許可リストに追加したり、開いたりすることがあるドメイン URL、ポート、プロトコルを確認します
+ms.date: 05/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,29 +17,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974710"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976213"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
-ユーザーまたはユーザーの組織でファイアウォールやプロキシ サーバーなどのセキュリティ対策を取っている場合は、Visual Studio および Azure Services をインストールして使用するときに最適なエクスペリエンスを得るために、"ホワイトリスト" への登録をお勧めするドメイン URL および開くことをお勧めするポートおよびプロトコルがあります。
+ユーザーまたはユーザーの組織でファイアウォールやプロキシ サーバーなどのセキュリティ対策を取っている場合は、Visual Studio および Azure Services をインストールして使用するときに最適なエクスペリエンスを得るために、"許可リスト" への追加をお勧めするドメイン URL および開くことをお勧めするポートおよびプロトコルがあります。
 
-* **[Visual Studio のインストール](#install-visual-studio)**:これらの表には、目的とするすべてのコンポーネントおよびワークロードにアクセスできるようにするために、ホワイトリストに登録すべきドメイン URL を示します。
+* **[Visual Studio のインストール](#install-visual-studio)**:これらの表には、目的とするすべてのコンポーネントおよびワークロードにアクセスできるようにするために、許可リストに追加すべきドメイン URL を示します。
 
-* **[Visual Studio および Azure Services の使用](#use-visual-studio-and-azure-services)**:この表には、目的とするすべての機能とサービスにアクセスできるようにするために、ホワイトリストに登録すべきドメイン URL と、開くべきポートおよびプロトコルを示します。
+* **[Visual Studio および Azure Services の使用](#use-visual-studio-and-azure-services)**:この表には、目的とするすべての機能とサービスにアクセスできるようにするために、許可リストに追加すべきドメイン URL と、開くべきポートおよびプロトコルを示します。
 
 > [!NOTE]
 > この記事は Windows 上の Visual Studio 向けに書かれていますが、一部の情報はファイアウォールやプロキシ サーバーの背後に [Visual Studio for Mac をインストール](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)する場合にも適用されます。
 
 ## <a name="install-visual-studio"></a>Visual Studio のインストール
 
-### <a name="urls-to-whitelist"></a>ホワイトリストに登録すべき URL
+### <a name="urls-to-add-to-an-allow-list"></a>許可リストに追加する URL
 
-Visual Studio インストーラーによって、さまざまなドメインやダウンロード サーバーからファイルがダウンロードされます。このため、UI または配置スクリプトで信頼されているものとしてホワイトリストに登録することをお勧めするドメイン URL を次に示します。
+Visual Studio インストーラーによって、さまざまなドメインやダウンロード サーバーからファイルがダウンロードされます。このため、UI または配置スクリプトで信頼されているものとして許可リストに追加することをお勧めするドメイン URL を次に示します。
 
 #### <a name="microsoft-domains"></a>Microsoft ドメイン
 
@@ -79,9 +79,9 @@ Visual Studio インストーラーによって、さまざまなドメインや
 
 ## <a name="use-visual-studio-and-azure-services"></a>Visual Studio および Azure Services の使用
 
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>ホワイトリストに登録すべき URL と開くべきポートおよびプロトコル
+### <a name="urls-to-add-to-an-allow-list-and-ports-and-protocols-to-open"></a>許可リストに追加すべき URL と開くべきポートおよびプロトコル
 
-ここでは、ファイアウォールまたはプロキシ サーバーの内側で Visual Studio または Azure Services を使用するときに必要なすべてのものに確実にアクセスできるようにするために、ホワイトリストに登録すべき URL と、開くことをお勧めするポートおよびプロトコルを示します。
+ここでは、ファイアウォールまたはプロキシ サーバーの内側で Visual Studio または Azure Services を使用するときに必要なすべてのものに確実にアクセスできるようにするために、許可リストに追加すべき URL と、開くことをお勧めするポートおよびプロトコルを示します。
 
 | サービスまたはシナリオ | DNS エンドポイント | プロトコル | ポート | 説明 |
 | - | - | - | - | - |

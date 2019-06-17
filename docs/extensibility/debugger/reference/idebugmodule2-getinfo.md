@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetInfo method
 - IDebugModule2::GetInfo method
 ms.assetid: de337e66-294f-4ac9-b21e-71fac7418e36
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0a5ad3d7651e89c2ef864a184155e8b0a430d79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1fe5060f66c56a033fb0bdcc8ae7dee368d2824e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872732"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323977"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 このモジュールに関する情報を取得します。
@@ -39,14 +42,12 @@ int GetInfo( 
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
- `dwFields`
+## <a name="parameters"></a>パラメーター
+`dwFields`\
+[in]フラグの組み合わせ、 [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)のどのフィールドを指定する列挙体`pInfo`を記入します。
 
- [in]フラグの組み合わせ、 [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)のどのフィールドを指定する列挙体`pInfo`を記入します。
-
- `pInfo`
-
- [入力、出力]A [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)構造体、モジュールの説明が入力されます。
+`pInfo`\
+[入力、出力]A [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)構造体、モジュールの説明が入力されます。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

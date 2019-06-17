@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetReferenceType
 ms.assetid: 5854a172-ea82-481c-97d9-c7fc16923d44
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1fe88127bbd07a71b7bb8e459f12abb983a1938e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: add8a7c8243cd9754c30e38b5fac8fcf715a63da
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457300"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339833"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 参照型を設定します。 将来使用するために予約されています。
@@ -40,9 +40,8 @@ int SetReferenceType ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `dwRefType`\
-
- [in]値、 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)参照型を指定する列挙体。
+`dwRefType`\
+[in]値、 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)参照型を指定する列挙体。
 
 ## <a name="return-value"></a>戻り値
  常に `E_NOTIMPL` を返します。

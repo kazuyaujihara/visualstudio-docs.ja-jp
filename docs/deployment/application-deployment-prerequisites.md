@@ -19,20 +19,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4bf5545deecccb647b5113c4335539c6acb488
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8206e199acc3ccb76cf89603d48bed0173129218
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408585"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746060"
 ---
 # <a name="application-deployment-prerequisites"></a>アプリケーション配置の必要条件
 
-アプリケーションをインストールし、正常に実行するには、まず、アプリケーションが対象のコンピュータに依存するすべてのコンポーネントをインストールします。 ほとんどのアプリケーションなどを使用して作成[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]依存関係を持つ、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]します。 この場合は、共通言語ランタイムの正しいバージョンを対象のコンピューター上に存在するアプリケーションをインストールする前にあります。
+アプリケーションをインストールし、正常に実行するには、まず、アプリケーションが対象のコンピュータに依存するすべてのコンポーネントをインストールします。 ほとんどのアプリケーションなどを使用して作成[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].NET Framework の依存関係にあります。 この場合は、共通言語ランタイムの正しいバージョンを対象のコンピューター上に存在するアプリケーションをインストールする前にあります。
 
  これらの前提条件を選択することができます、 **Prerequisites Dialog Box**し、インストールの一部として、.NET Framework およびその他の再頒布可能パッケージをインストールします。 この方法は*ブートストラップ*と呼ばれます。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] という名前の Windows 実行可能プログラムが生成されます*Setup.exe*とも呼ばれる、*ブートス トラップ*します。 ブートストラップは、アプリケーションが実行される前にこれらの必須コンポーネントをインストールします。 これらの前提条件を選択する方法についての詳細については、次を参照してください。[の前提条件 ダイアログ ボックス](../ide/reference/prerequisites-dialog-box.md)します。
 
- 各必須コンポーネントはブートストラップ パッケージです。 ブートス トラップ パッケージは、ディレクトリと、前提条件をインストールする方法について説明するマニフェスト ファイルを含むファイルのグループです。 アプリケーションの必須コンポーネントが **[必須コンポーネント]** ダイアログ ボックスに表示されない場合は、カスタム ブートストラップ パッケージを作成して Visual Studio に追加できます。 それにより、**[必須コンポーネント]** ダイアログ ボックスで必須コンポーネントを選択できるようになります。 詳細については、次を参照してください。[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)します。
+ 各必須コンポーネントはブートストラップ パッケージです。 ブートス トラップ パッケージは、ディレクトリと、前提条件をインストールする方法について説明するマニフェスト ファイルを含むファイルのグループです。 アプリケーションの必須コンポーネントが **[必須コンポーネント]** ダイアログ ボックスに表示されない場合は、カスタム ブートストラップ パッケージを作成して Visual Studio に追加できます。 それにより、 **[必須コンポーネント]** ダイアログ ボックスで必須コンポーネントを選択できるようになります。 詳細については、次を参照してください。[ブートス トラップ パッケージを作成する](../deployment/creating-bootstrapper-packages.md)します。
 
  既定では、ブートストラップは ClickOnce の配置で有効です。 ClickOnce の配置に生成されるブートストラップは署名付きです。 コンポーネントは、ブートス トラップを無効にできますが、すべてのターゲット コンピューターで、コンポーネントの正しいバージョンが既にインストールされていることが確実場合にのみ。
 
@@ -50,7 +50,7 @@ ms.locfileid: "63408585"
 > [!NOTE]
 > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] や *MageUI.exe* などのツールによって生成されたマニフェスト内の値を変更するには、アプリケーション マニフェストをテキスト エディターで編集した後に、アプリケーション マニフェストと配置マニフェストの両方に再署名する必要があります。 詳細については、「[方法 :アプリケーション マニフェストと配置マニフェストの再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)」を参照してください。
 
- Visual Studio と ClickOnce を使用してアプリケーションを配置する場合、既定で選択されるブートストラップ パッケージは、ソリューション内の .NET Framework のバージョンによって異なります。 ただし、対象の .NET Framework のバージョンを変更する場合は、**[必須コンポーネント]** ダイアログ ボックスのオプションを手動で更新する必要があります。
+ Visual Studio と ClickOnce を使用してアプリケーションを配置する場合、既定で選択されるブートストラップ パッケージは、ソリューション内の .NET Framework のバージョンによって異なります。 ただし、対象の .NET Framework のバージョンを変更する場合は、 **[必須コンポーネント]** ダイアログ ボックスのオプションを手動で更新する必要があります。
 
 |対象の .NET Framework|選択されるブートストラップ パッケージ|
 |---------------------------|------------------------------------|
@@ -76,8 +76,8 @@ ms.locfileid: "63408585"
 | **-?, -h, -help** | [ヘルプ] ダイアログ ボックスを表示します。 |
 | **-url, -componentsurl** | このセットアップ用に保存されている URL とコンポーネントの URL を表示します。 |
 | **-url=** `location` | *Setup.exe* が [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを検索する URL を設定します。 |
-| **-componentsurl=** `location` | *Setup.exe* が [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] などの依存関係を検索する URL を設定します。 |
-| **-homesite=** `true` **&#124;** `false` | `true`の場合、ベンダーサイトの適切な場所から依存関係がダウンロードされます。 この設定をオーバーライド、 **- 用**設定します。 `false` の場合は、**-componentsurl** で指定された URL から依存関係がダウンロードされます。 |
+| **-componentsurl=** `location` | URL を設定、 *Setup.exe*は .NET Framework などの依存関係を検索します。 |
+| **-homesite=** `true` **&#124;** `false` | `true`の場合、ベンダーサイトの適切な場所から依存関係がダウンロードされます。 この設定をオーバーライド、 **- 用**設定します。 `false` の場合は、 **-componentsurl** で指定された URL から依存関係がダウンロードされます。 |
 
 ## <a name="operating-system-support"></a>オペレーティング システムのサポート
  Visual Studio ブートス トラップは、低いメンテナンス サーバー環境を提供する機能が制限された Windows Server 2008 の Server Core または Windows Server 2008 R2 Server Core でサポートされていません。 たとえば、Server Core インストール オプションは、完全な .NET Framework に依存する Visual Studio の機能を実行することはできませんが、.NET Framework 3.5 Server Core プロファイルのみをサポートします。

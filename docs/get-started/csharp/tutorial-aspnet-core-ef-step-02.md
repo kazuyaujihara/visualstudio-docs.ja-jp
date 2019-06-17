@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 5e9cc4f579b5913d5be3030828cad1a799efcd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 740d6336ab4258d3111dd6708de859108e22365e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840453"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402065"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>手順 2: 最初の ASP.NET Core Web アプリを作成する
 
@@ -33,7 +33,7 @@ _ASP.NET Core アプリを初めて作成するときは、このビデオをご
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Visual Studio 2019 を起動して新しいプロジェクトを作成する
 
-Visual Studio 2019 を起動し、**[新しいプロジェクトの作成]** をクリックします。 **[ASP.NET Core Web アプリケーション]** を選択します。 **[Web アプリケーション]** テンプレートを選択し、既定のプロジェクト名と場所をそのまま使用します。 **[作成]** をクリックします。 詳細な手順については、[このチュートリアル シリーズの前のビデオ](tutorial-aspnet-core-ef-step-01.md)をご覧ください。
+Visual Studio 2019 を起動し、 **[新しいプロジェクトの作成]** をクリックします。 **[ASP.NET Core Web アプリケーション]** を選択します。 **[Web アプリケーション]** テンプレートを選択し、既定のプロジェクト名と場所をそのまま使用します。 **[作成]** をクリックします。 詳細な手順については、[このチュートリアル シリーズの前のビデオ](tutorial-aspnet-core-ef-step-01.md)をご覧ください。
 
 ![Visual Studio 2019 の ASP.NET Core プロジェクトのオプションの選択](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -69,7 +69,7 @@ Visual Studio 2019 を起動し、**[新しいプロジェクトの作成]** を
 
 ## <a name="run-the-application"></a>アプリケーションの実行
 
-それでは、アプリケーションを実行し、ブラウザーで表示します。 アプリケーションは、**Ctrl** + **F5** キーを押すか、Visual Studio のメニューから **[デバッグ]** > **[デバッグなしで開始]** を選択して、実行できます。
+それでは、アプリケーションを実行し、ブラウザーで表示します。 アプリケーションは、**Ctrl** + **F5** キーを押すか、Visual Studio のメニューから **[デバッグ]**  >  **[デバッグなしで開始]** を選択して、実行できます。
 
 ## <a name="customize-the-application"></a>アプリケーションをカスタマイズする
 
@@ -111,6 +111,9 @@ public void OnGet()
 ```
 
 アプリに移動すると、今度はブラウザーにサーバーの実際の時刻が表示されます。
+
+> [!NOTE]
+> ToShortDateTimeString の出力形式は、現在のカルチャ設定によって異なるため、出力がこのイメージと異なる場合があります。 以下を参照してください。<xref:System.DateTime.ToShortTimeString>
 
 ![ブラウザーでの Visual Studio 2019 ASP.NET Core プロジェクト](media/vs-2019/vs2019-app-fixed-in-browser.png)
 

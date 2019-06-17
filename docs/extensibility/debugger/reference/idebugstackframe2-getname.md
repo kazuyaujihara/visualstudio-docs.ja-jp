@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetName
 ms.assetid: 069d4f96-363f-404e-9c89-5318c4c9821b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee4c292bdd80a8209d9136bac0cbc6775a2c33ac
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 3d50fc1b711c673d8582be0d1208bc1d56e0f38b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458525"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352105"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
 スタック フレームの名前を取得します。
@@ -40,9 +40,8 @@ int GetName ( 
 ```
 
 ## <a name="parameters"></a>パラメーター
- `pbstrName`\
-
- [out]スタック フレームの名前を返します。
+`pbstrName`\
+[out]スタック フレームの名前を返します。
 
 ## <a name="return-value"></a>戻り値
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。

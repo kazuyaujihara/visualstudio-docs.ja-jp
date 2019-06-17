@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetSymbolInfo method
 - IDebugModule3::GetSymbolInfo method
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5fedebe6a8e411e09b527841bd0ded3854749ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bd952242db8b7394fa8915319686ac431b84947d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918848"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323949"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 各パスの検索の結果と同様にシンボルを検索するパスの一覧を取得します。
@@ -39,14 +42,12 @@ int GetSymbolInfo(
 );
 ```
 
-#### <a name="parameters"></a>パラメーター
-`dwFields`
+## <a name="parameters"></a>パラメーター
+`dwFields`\
+[in]フラグの組み合わせ、 [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)のどのフィールドを指定する列挙体`pInfo`入力します。
 
- [in]フラグの組み合わせ、 [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)のどのフィールドを指定する列挙体`pInfo`入力します。
-
-`pInfo`
-
- [out]A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)構造体のメンバーは、指定した情報が入力されます。 このメソッドが戻るかどうかは、null 値と、`E_INVALIDARG`します。
+`pInfo`\
+[out]A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)構造体のメンバーは、指定した情報が入力されます。 このメソッドが戻るかどうかは、null 値と、`E_INVALIDARG`します。
 
 ## <a name="return-value"></a>戻り値
 返します、メソッドが成功したかどうかは`S_OK`、それ以外のエラー コードを返します。
@@ -83,9 +84,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\symbols\user32.pdb...ファイルが見つかりませんでした。**
-**c:\winnt\symbols\user32.pdb.バージョンが一致しません。**
-**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb.シンボルが読み込まれます。**
+**c:\symbols\user32.pdb...ファイルが見つかりませんでした。** 
+**c:\winnt\symbols\user32.pdb.バージョンが一致しません。** 
+ **\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb.シンボルが読み込まれます。**
 
 ## <a name="see-also"></a>関連項目
 

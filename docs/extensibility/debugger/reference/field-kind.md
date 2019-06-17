@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b965def820771b0bab883c1bdd9bf90d18414e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9ff49f0723153880e88a21376aadec26b250a62b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680375"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344471"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 内のフィールドの種類を指定します、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクト。
@@ -121,72 +124,105 @@ public enum enum_FIELD_KIND {
 };
 ```
 
-## <a name="members"></a>メンバー
-FIELD_KIND_TYPE フィールドが、種類のみであることを示します。
+## <a name="fields"></a>フィールド
+`FIELD_KIND_TYPE`\
+フィールドが、種類のみであることを示します。
 
-FIELD_KIND_SYMBOL では、フィールドの型、名、およびその他の情報を持つ、シンボルであることを示します。
+`FIELD_KIND_SYMBOL`\
+フィールドが、型、名、およびその他の情報を持つシンボルであることを示します。
 
-FIELD_TYPE_PRIMITIVE フィールドがプリミティブ データ型であることを示します。
+`FIELD_TYPE_PRIMITIVE`\
+フィールドがプリミティブ データ型であることを示します。
 
-FIELD_TYPE_STRUCT フィールドが構造体であることを示します。
+`FIELD_TYPE_STRUCT`\
+フィールドは構造体であることを示します。
 
-FIELD_TYPE_CLASS フィールドがクラスであることを示します。
+`FIELD_TYPE_CLASS`\
+フィールドがクラスであることを示します。
 
-FIELD_TYPE_INTERFACE フィールドがインターフェイスであることを示します。
+`FIELD_TYPE_INTERFACE`\
+フィールドがインターフェイスであることを示します。
 
-FIELD_TYPE_UNION フィールドが共用体であることを示します。
+`FIELD_TYPE_UNION`\
+フィールドが共用体であることを示します。
 
-FIELD_TYPE_ARRAY フィールドが配列であることを示します。
+`FIELD_TYPE_ARRAY`\
+フィールドが配列であることを示します。
 
-FIELD_TYPE_METHOD フィールドがメソッドであることを示します。
+`FIELD_TYPE_METHOD`\
+フィールドがメソッドであることを示します。
 
-FIELD_TYPE_BLOCK フィールドが、ブロックであることを示します。
+`FIELD_TYPE_BLOCK`\
+フィールドが、ブロックであることを示します。
 
-FIELD_TYPE_POINTER では、フィールドがポインターであることを示します。
+`FIELD_TYPE_POINTER`\
+フィールドがポインターであることを示します。
 
-FIELD_TYPE_ENUM フィールドが列挙型であることを示します。
+`FIELD_TYPE_ENUM`\
+フィールドが列挙型であることを示します。
 
-FIELD_TYPE_LABEL では、フィールドのラベルであることを示します。
+`FIELD_TYPE_LABEL`\
+フィールドがラベルであることを示します。
 
-FIELD_TYPE_TYPEDEF フィールドが、typedef であることを示します。
+`FIELD_TYPE_TYPEDEF`\
+フィールドが、typedef であることを示します。
 
-FIELD_TYPE_BITFIELD フィールドがビット フィールドであることを示します。
+`FIELD_TYPE_BITFIELD`\
+フィールドがビット フィールドであることを示します。
 
-FIELD_TYPE_NAMESPACE では、フィールドの名前空間であることを示します。
+`FIELD_TYPE_NAMESPACE`\
+フィールドが、名前空間であることを示します。
 
-FIELD_TYPE_MODULE フィールドが、モジュールであることを示します。
+`FIELD_TYPE_MODULE`\
+フィールドが、モジュールであることを示します。
 
-FIELD_TYPE_DYNAMIC は、フィールドが動的であることを示します。
+`FIELD_TYPE_DYNAMIC`\
+フィールドが動的であることを示します。
 
-FIELD_TYPE_PROP では、フィールドのプロパティであることを示します。
+`FIELD_TYPE_PROP`\
+フィールドがプロパティであることを示します。
 
-FIELD_TYPE_INNERCLASS フィールドが内部クラスであることを示します。
+`FIELD_TYPE_INNERCLASS`\
+フィールドが内部クラスであることを示します。
 
-FIELD_TYPE_REFERENCE では、フィールドが参照であることを示します。
+`FIELD_TYPE_REFERENCE`\
+フィールドが参照であることを示します。
 
-FIELD_TYPE_EXTENDED 予約将来使用するためです。
+`FIELD_TYPE_EXTENDED`\
+将来使用するために予約されています。
 
-FIELD_SYM_MEMBER では、フィールドのメンバーであることを示します。
+`FIELD_SYM_MEMBER`\
+フィールドがメンバーであることを示します。
 
-FIELD_SYM_LOCAL は、フィールドがローカルであることを示します。
+`FIELD_SYM_LOCAL`\
+フィールドがローカルであることを示します。
 
-FIELD_SYM_PARAMETER フィールドが、パラメーターであることを示します。
+`FIELD_SYM_PARAMETER`\
+フィールドが、パラメーターであることを示します。
 
-FIELD_SYM_THIS フィールドが"this"ポインターであることを示します。
+`FIELD_SYM_THIS`\
+フィールドが"this"ポインターであることを示します。
 
-FIELD_SYM_GLOBAL は、フィールドがグローバルであることを示します。
+`FIELD_SYM_GLOBAL`\
+フィールドがグローバルであることを示します。
 
-FIELD_SYM_PROP_GETTER では、フィールドをプロパティを取得することを示します。
+`FIELD_SYM_PROP_GETTER`\
+フィールドをプロパティを取得することを示します。
 
-FIELD_SYM_PROP_SETTER では、フィールドのプロパティを設定することを示します。
+`FIELD_SYM_PROP_SETTER`\
+フィールドがプロパティを設定することを示します。
 
-FIELD_SYM_EXTENDED 予約将来使用するためです。
+`FIELD_SYM_EXTENDED`\
+将来使用するために予約されています。
 
-FIELD_KIND_MASK では、フィールドの種類のマスクを示します。
+`FIELD_KIND_MASK`\
+フィールドの種類のマスクを示します。
 
-FIELD_TYPE_MASK では、フィールドの種類のマスクを示します。
+`FIELD_TYPE_MASK`\
+フィールドの種類のマスクを示します。
 
-FIELD_SYM_MASK では、シンボル情報をマスクを示します。
+`FIELD_SYM_MASK`\
+シンボル情報をマスクを示します。
 
 ## <a name="remarks"></a>Remarks
 呼び出しから返される、 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)メソッド。

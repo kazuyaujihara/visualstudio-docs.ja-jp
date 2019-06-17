@@ -1,5 +1,5 @@
 ---
-title: セキュリティ、バージョン管理、および ClickOnce 配置マニフェストの問題 |Microsoft Docs
+title: ClickOnce 配置マニフェストのバージョン管理/セキュリティ/問題
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a7c0363ea774206cdf6f1db792ab5e7cbd2454
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226412"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745604"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 配置でのセキュリティ、バージョン管理、およびマニフェストの問題
 
@@ -59,7 +59,7 @@ ms.locfileid: "65226412"
 
 ## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>マニフェストで個々 の .NET Framework アセンブリを指定します。
 
-アプリケーションの手動で編集した場合の読み込みに失敗、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]の以前のバージョンを参照する展開を[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]アセンブリ。 バージョンの System.Net アセンブリへの参照を追加した場合など、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]マニフェストで指定されたバージョンを前に、エラーが発生します。 個人への参照を指定しないで一般に、する[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]のバージョンと、アセンブリ、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]に対してアプリケーションを実行するアプリケーション マニフェストで依存関係として指定されます。
+アプリケーションの手動で編集した場合の読み込みに失敗、[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]以前のバージョンの .NET Framework アセンブリを参照する展開。 たとえば、マニフェストで指定されたバージョンの前に .NET Framework のバージョンの System.Net アセンブリへの参照を追加した場合、エラーが発生します。 一般に、するしようとしないでください個々 の .NET Framework アセンブリへの参照を指定する、アプリケーションの実行対象となる .NET Framework のバージョンは、アプリケーション マニフェストで依存関係として指定されます。
 
 ## <a name="manifest-parsing-issues"></a>マニフェストの解析の問題
 

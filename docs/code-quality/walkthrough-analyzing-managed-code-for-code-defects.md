@@ -10,24 +10,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825044"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715275"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>チュートリアル: コードの欠陥のマネージ コードの分析
 
 このチュートリアルでは、コード分析ツールを使用してマネージ プロジェクトのコードの不具合を分析します。
 
-このチュートリアルでは、コード分析を使用して、Microsoft .NET Framework デザイン ガイドラインに準拠するため、.NET マネージ コード アセンブリを分析するプロセスを手順します。
+このチュートリアルでは、.NET のデザイン ガイドラインに準拠するため、.NET マネージ コード アセンブリを分析するコード分析を使用するプロセスを手順します。
 
 ## <a name="create-a-class-library"></a>クラス ライブラリを作成します。
 
 ### <a name="to-create-a-class-library"></a>クラス ライブラリを作成するには
 
-1. **[ファイル]** メニューで、**[新規]** > **[プロジェクト]** の順に選択します。
+1. **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順に選択します。
 
 1. **新しいプロジェクト** ダイアログ ボックスで、展開**インストール済み** > **Visual c#** を選び、 **Windows デスクトップ**します。
 
@@ -85,7 +85,7 @@ ms.locfileid: "62825044"
 
     選択した開発者のプロファイルによってをポイントする必要があります**その他の Windows**で、**ビュー** ] メニューの [選び、**エラー一覧**。
 
-1. **ソリューション エクスプローラー**で、**[すべてのファイルを表示]** をクリックします。
+1. **ソリューション エクスプローラー**で、 **[すべてのファイルを表示]** をクリックします。
 
 1. [プロパティ] ノードを展開し、開きます、 *AssemblyInfo.cs*ファイル。
 
