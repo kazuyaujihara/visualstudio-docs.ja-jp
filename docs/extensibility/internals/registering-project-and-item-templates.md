@@ -27,7 +27,6 @@ ms.locfileid: "66319509"
  テンプレートの詳細については、次を参照してください。[プロジェクトに追加するとプロジェクト項目テンプレート](../../extensibility/internals/adding-project-and-project-item-templates.md)します。
 
 ## <a name="registry-entries-for-projects"></a>プロジェクトのレジストリ エントリ
- 次の例では、HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\<*バージョン*> 下のレジストリ エントリを示しています。 付随するテーブルでは、例で使用される要素について説明します。
 
 ```
 [Projects\{ProjectGUID}]
@@ -65,7 +64,6 @@ ms.locfileid: "66319509"
 ### <a name="registering-file-filters"></a>ファイル フィルターを登録します。
  必要に応じて、フィルターを登録することができますを[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ファイル名を要求するときに使用します。 たとえば、[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]のフィルター処理、**ファイルを開く** ダイアログ ボックスは。
 
- **Visual C# ファイル (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**
 
  独自のサブキー hkey_local_machine \software\microsoft\visualstudio 下で複数のフィルターの登録をサポートする各フィルターが登録されている\\<*バージョン*> \Projects\\{\< *ProjectGUID*>} \Filters\\<*サブキー*>。 サブキーの名前は任意です。[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]サブキーの名前を無視し、その値だけを使用します。
 

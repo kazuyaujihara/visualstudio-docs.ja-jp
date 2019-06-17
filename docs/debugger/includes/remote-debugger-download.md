@@ -8,16 +8,16 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: fec32bf187d629c5fd99ce27eb17a61db39d3873
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 1e90a1d9e03892cf81bd2257d3dcc6e25ab36246
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65839718"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032883"
 ---
 リモート デバイスまたは、デバッグするサーバーではなく、Visual Studio のコンピューターにダウンロードして、次の表にあるリンクから、リモート ツールの正しいバージョンをインストールします。
 
-- 最新 remote tools for Visual Studio のバージョンをダウンロードします。 リモート ツールの最新のバージョンは Visual Studio の以前のバージョンと互換性のあるが、以降の Visual Studio バージョンと互換性のないリモート ツールの以前のバージョン。
+- 最新 remote tools for Visual Studio のバージョンをダウンロードします。 リモート ツールの最新のバージョンは Visual Studio の以前のバージョンと互換性のあるが、以降の Visual Studio バージョンと互換性のないリモート ツールの以前のバージョン。 (たとえば、Visual Studio 2017 を使用している場合ダウンロード for Visual Studio 2017 remote tools の最新の更新。 このシナリオでダウンロードしない remote tools for Visual Studio 2019。)
 - それらをインストールしているコンピューターと同じアーキテクチャを使用して、リモート ツールをダウンロードします。 たとえば、64 ビットのオペレーティング システムを実行しているリモート コンピューター上の 32 ビット アプリケーションをデバッグする場合は、64 ビットのリモート ツールをインストールします。
 
 ::: moniker range=">=vs-2019"

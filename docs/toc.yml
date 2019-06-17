@@ -399,6 +399,8 @@
                       href: ide/reference/move-type-to-matching-file.md
                     - name: メンバーを取り出す
                       href: ide/reference/pull-members-up.md
+                    - name: IntelliSense を使用した正規表現の入力
+                      href: ide/reference/regex-completion-through-intellisense.md
                     - name: 到達できないコードの削除
                       href: ide/reference/remove-unreachable-code.md
                     - name: 名前の変更
@@ -415,23 +417,6 @@
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'チュートリアル: 使用法からのコードの生成'
                   href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-            - name: ヒントとテクニック
-              items:
-                - name: 生産性に関するヒント
-                  href: ide/productivity-tips-for-visual-studio.md
-                - name: キーボード ショートカット
-                  items:
-                    - name: キーボード ショートカット
-                      href: ide/tips-and-tricks-for-visual-studio.md
-                    - name: キーボード ショートカットの識別とカスタマイズ
-                      href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
-                    - name: 頻繁に使用するコマンドに対応するショートカット
-                      href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
-                    - name: すべてのキーボード ショートカット
-                      href: ide/default-keyboard-shortcuts-in-visual-studio.md
-                - name: 'C# 開発者向けのヒント'
-                  displayName: ReSharper
-                  href: ide/csharp-developer-productivity.md
             - name: IntelliSense
               items:
                 - name: IntelliSense を使用する
@@ -675,6 +660,20 @@
       href: extensibility/visual-studio-sdk.md
     - name: アーキテクチャの分析とモデル化...
       href: modeling/analyze-and-model-your-architecture.md
+    - name: ヒントとテクニック
+      items:
+        - name: 生産性機能
+          href: ide/productivity-features.md
+        - name: 生産性のショートカット
+          href: ide/productivity-shortcuts.md
+        - name: 'C# 開発者向けのヒント'
+          displayName: ReSharper
+          href: ide/csharp-developer-productivity.md
+        - name: キーボード ショートカットをカスタマイズする
+          href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
+        - name: キーボード主体で操作する
+          displayName: accessibility
+          href: ide/reference/how-to-use-the-keyboard-exclusively.md
     - name: パーソナライズ
       items:
         - name: IDE をカスタマイズする
@@ -683,6 +682,7 @@
         - name: 'クイック スタート: テーマとテキストの色のカスタマイズ'
           href: ide/quickstart-personalize-the-ide.md
         - name: 環境設定
+          displayName: profiles
           href: ide/environment-settings.md
         - name: 同期された設定
           href: ide/synchronized-settings-in-visual-studio.md
@@ -702,7 +702,7 @@
           displayName: 'marketplace, gallery, vsix'
         - name: 外部ツールの管理
           href: ide/managing-external-tools.md
-    - name: パフォーマンス
+    - name: Visual Studio のパフォーマンス
       items:
         - name: パフォーマンスの最適化
           href: ide/optimize-visual-studio-performance.md
@@ -718,14 +718,95 @@
           href: ide/reference/accessibility-features-of-visual-studio.md
         - name: IDE アクセシビリティ オプションを設定する
           href: ide/reference/how-to-set-ide-accessibility-options.md
-        - name: キーボード主体で操作する
-          href: ide/reference/how-to-use-the-keyboard-exclusively.md
         - name: アクセシビリティのヒントとテクニック
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: マイクロソフトのアクセシビリティ製品とサービス
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
 - name: 関連項目
   items:
+    - name: キーボード ショートカット
+      items:
+        - name: よく使うコマンド
+          displayName: keyboard shortcuts
+          href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
+        - name: すべてのコマンド
+          displayName: keyboard commands
+          href: ide/default-keyboard-shortcuts-in-visual-studio.md
+    - name: Visual Studio のコマンド
+      items:
+        - name: 関連項目
+          displayName: Visual Studio commands
+          href: ide/reference/visual-studio-commands.md
+        - name: コマンドの別名
+          href: ide/reference/visual-studio-command-aliases.md
+        - name: 既存項目を追加するコマンド
+          href: ide/reference/add-existing-item-command.md
+        - name: 既存プロジェクトを追加するコマンド
+          href: ide/reference/add-existing-project-command.md
+        - name: 新しい項目を追加するコマンド
+          href: ide/reference/add-new-item-command.md
+        - name: 別名コマンド
+          href: ide/reference/alias-command.md
+        - name: Evaluate Statement コマンド
+          href: ide/reference/evaluate-statement-command.md
+        - name: 検索コマンド
+          href: ide/reference/find-command.md
+        - name: ファイル内を検索するコマンド
+          href: ide/reference/find-in-files-command.md
+        - name: 移動コマンド
+          href: ide/reference/go-to-command.md
+        - name: '[設定のインポートとエクスポート] コマンド'
+          href: ide/reference/import-and-export-settings-command.md
+        - name: 呼び出し履歴を一覧表示するコマンド
+          href: ide/reference/list-call-stack-command.md
+        - name: 逆アセンブリを一覧表示するコマンド
+          href: ide/reference/list-disassembly-command.md
+        - name: メモリを一覧表示するコマンド
+          href: ide/reference/list-memory-command.md
+        - name: モジュールを一覧表示するコマンド
+          href: ide/reference/list-modules-command.md
+        - name: レジスタを一覧表示するコマンド
+          href: ide/reference/list-registers-command.md
+        - name: ソースを一覧表示するコマンド
+          href: ide/reference/list-source-command.md
+        - name: スレッドを一覧表示するコマンド
+          href: ide/reference/list-threads-command.md
+        - name: コマンド ウィンドウ出力のログを記録するコマンド
+          href: ide/reference/log-command-window-output-command.md
+        - name: 新しいファイルのコマンド
+          href: ide/reference/new-file-command.md
+        - name: ファイルを開くコマンド
+          href: ide/reference/open-file-command.md
+        - name: プロジェクトを開くコマンド
+          href: ide/reference/open-project-command.md
+        - name: Print コマンド
+          href: ide/reference/print-command.md
+        - name: クイック ウォッチ コマンド
+          href: ide/reference/quick-watch-command.md
+        - name: 置換コマンド
+          href: ide/reference/replace-command.md
+        - name: ファイル内で置換するコマンド
+          href: ide/reference/replace-in-files-command.md
+        - name: SetCurrentProcess
+          href: ide/reference/set-current-process.md
+        - name: 現在のスタック フレームを設定するコマンド
+          href: ide/reference/set-current-stack-frame-command.md
+        - name: 現在のスレッドを設定するコマンド
+          href: ide/reference/set-current-thread-command.md
+        - name: 基数を設定するコマンド
+          href: ide/reference/set-radix-command.md
+        - name: シェル コマンド
+          href: ide/reference/shell-command.md
+        - name: Web ブラウザーを表示するコマンド
+          href: ide/reference/showwebbrowser-command.md
+        - name: 開始コマンド
+          href: ide/reference/start-command.md
+        - name: シンボル パス コマンド
+          href: ide/reference/symbol-path-command.md
+        - name: ブレークポイントの設定/解除コマンド
+          href: ide/reference/toggle-breakpoint-command.md
+        - name: ウォッチ コマンド
+          href: ide/reference/watch-command.md
     - name: 一般的なユーザー インターフェイス要素
       displayName: Windows and dialogs
       items:
@@ -961,7 +1042,7 @@
               href: ide/reference/toolbox-data-tab.md
             - name: 'ツールボックス、[HTML] タブ'
               href: ide/reference/toolbox-html-tab.md
-    - name: Devenv コマンド ライン スイッチ
+    - name: Devenv コマンドライン スイッチ
       items:
         - name: 関連項目
           displayName: devenv command-line switches
@@ -1010,81 +1091,6 @@
           href: ide/reference/upgrade-devenv-exe.md
         - name: '-UseEnv (devenv.exe)'
           href: ide/reference/useenv-devenv-exe.md
-    - name: Visual Studio コマンド
-      items:
-        - name: 関連項目
-          displayName: Visual Studio commands
-          href: ide/reference/visual-studio-commands.md
-        - name: Visual Studio Command Aliases
-          href: ide/reference/visual-studio-command-aliases.md
-        - name: AddExistingSolutionItem コマンド
-          href: ide/reference/add-existing-item-command.md
-        - name: AddExistingProject コマンド
-          href: ide/reference/add-existing-project-command.md
-        - name: AddNewSolutionItem コマンド
-          href: ide/reference/add-new-item-command.md
-        - name: Alias コマンド
-          href: ide/reference/alias-command.md
-        - name: Evaluate Statement コマンド
-          href: ide/reference/evaluate-statement-command.md
-        - name: Find コマンド
-          href: ide/reference/find-command.md
-        - name: FindinFiles コマンド
-          href: ide/reference/find-in-files-command.md
-        - name: GoTo コマンド
-          href: ide/reference/go-to-command.md
-        - name: '[設定のインポートとエクスポート] コマンド'
-          href: ide/reference/import-and-export-settings-command.md
-        - name: ListCallStack コマンド
-          href: ide/reference/list-call-stack-command.md
-        - name: ListDisassembly コマンド
-          href: ide/reference/list-disassembly-command.md
-        - name: ListMemory コマンド
-          href: ide/reference/list-memory-command.md
-        - name: List Modules コマンド
-          href: ide/reference/list-modules-command.md
-        - name: List Registers コマンド
-          href: ide/reference/list-registers-command.md
-        - name: List Source コマンド
-          href: ide/reference/list-source-command.md
-        - name: ListThreads コマンド
-          href: ide/reference/list-threads-command.md
-        - name: LogCommandWindowOutput コマンド
-          href: ide/reference/log-command-window-output-command.md
-        - name: NewFile コマンド
-          href: ide/reference/new-file-command.md
-        - name: OpenFile コマンド
-          href: ide/reference/open-file-command.md
-        - name: OpenProject コマンド
-          href: ide/reference/open-project-command.md
-        - name: Print コマンド
-          href: ide/reference/print-command.md
-        - name: QuickWatch コマンド
-          href: ide/reference/quick-watch-command.md
-        - name: Replace コマンド
-          href: ide/reference/replace-command.md
-        - name: ReplaceinFiles コマンド
-          href: ide/reference/replace-in-files-command.md
-        - name: SetCurrentProcess
-          href: ide/reference/set-current-process.md
-        - name: SetCurrentStackFrame コマンド
-          href: ide/reference/set-current-stack-frame-command.md
-        - name: SetCurrentThread コマンド
-          href: ide/reference/set-current-thread-command.md
-        - name: SetRadix コマンド
-          href: ide/reference/set-radix-command.md
-        - name: Shell コマンド
-          href: ide/reference/shell-command.md
-        - name: ShowWebBrowser コマンド
-          href: ide/reference/showwebbrowser-command.md
-        - name: Start コマンド
-          href: ide/reference/start-command.md
-        - name: Symbol Path コマンド
-          href: ide/reference/symbol-path-command.md
-        - name: ToggleBreakpoint コマンド
-          href: ide/reference/toggle-breakpoint-command.md
-        - name: Watch コマンド
-          href: ide/reference/watch-command.md
     - name: セキュリティ
       items:
         - name: セキュリティで保護されたアプリケーションの開発
