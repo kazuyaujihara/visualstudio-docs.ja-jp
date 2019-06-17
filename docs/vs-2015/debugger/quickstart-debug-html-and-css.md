@@ -74,7 +74,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   アプリケーションをデバッグするときは、しばしば DOM Explorer で要素を選択する必要があります。 要素を選択すると、DOM Explorer の右側のタブに表示される値が、DOM Explorer での要素の選択を反映して自動的に更新されます。 これは、ようなタブ。**スタイル**、**計算**、**レイアウト**します。 Windows ストア アプリでは **[イベント]** タブと **[変更]** タブもサポートされています。 要素の選択の詳細については、「 [Selecting elements](#SelectingElements)」を参照してください。  
   
 > [!TIP]
-> 閉じた DOM Explorer ウィンドウを再び開くには、 **[デバッグ]**>**[ウィンドウ]** > **[DOM Explorer]** の順に選びます。 このウィンドウは、スクリプトのデバッグ セッション中にのみ表示されます。  
+> 閉じた DOM Explorer ウィンドウを再び開くには、 **[デバッグ]** > **[ウィンドウ]**  >  **[DOM Explorer]** の順に選びます。 このウィンドウは、スクリプトのデバッグ セッション中にのみ表示されます。  
   
  次の手順では、DOM Explorer を使用してアプリを対話的にデバッグするプロセスを実行します。 `FlipView` コントロールを使用するアプリケーションを作成した後、それをデバッグします。 アプリケーションには複数のエラーが含まれています。  
   
@@ -83,7 +83,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>次の方法で、ライブ DOM を検査することによってデバッグします。  
   
-1. Visual Studio で **[ファイル]** > **[新しいプロジェクト]**」を参照してください。  
+1. Visual Studio で **[ファイル]**  >  **[新しいプロジェクト]** 」を参照してください。  
   
 2. 選択**JavaScript** > **ストア**、いずれかを選択**Windows アプリ**または**Windows Phone アプリ**を選択し、**空のアプリ**します。  
   
@@ -174,7 +174,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
     ![デバッグ ターゲット リスト](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-8.  **[デバッグ]** > **Start [デバッグ]ging**の順にクリックするか、F5 キーを押して、デバッグ モードでアプリを実行します。  
+8. **[デバッグ]**  > **Start [デバッグ]ging**の順にクリックするか、F5 キーを押して、デバッグ モードでアプリを実行します。  
   
     これによりアプリはシミュレーターまたは Phone エミュレーターで実行されますが、スタイリングにはいくつかバグがあるため、画面にはほとんど何も表示されません。 最初の `FlipView` のイメージが、画面の中央の小さい四角形に表示されます。  
   
@@ -209,7 +209,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 15. `width: 100px;height: 100px;`を選択し、Del キー、Enter キーの順に押します。 デバッグ セッションを停止していなくても、Enter キーを押すとすぐに、新しい値がシミュレーターまたは Phone エミュレーターに反映されます。  
   
     > [!IMPORTANT]
-    > DOM Explorer ウィンドウで属性を更新できるように、 **[スタイル]**、 **[計算済み]**、 **[レイアウト]** の各タブに表示される値も更新できます。 詳細については、次を参照してください。 [DOM Explorer を使用してデバッグの CSS スタイル](../debugger/debug-css-styles-using-dom-explorer.md)と[DOM Explorer を使用してデバッグ レイアウト](../debugger/debug-layout-using-dom-explorer.md)します。  
+    > DOM Explorer ウィンドウで属性を更新できるように、 **[スタイル]** 、 **[計算済み]** 、 **[レイアウト]** の各タブに表示される値も更新できます。 詳細については、次を参照してください。 [DOM Explorer を使用してデバッグの CSS スタイル](../debugger/debug-css-styles-using-dom-explorer.md)と[DOM Explorer を使用してデバッグ レイアウト](../debugger/debug-layout-using-dom-explorer.md)します。  
   
 16. シミュレーターまたは Phone エミュレーターを選択するか、または Alt + Tab キーを使って、アプリケーションに切り替えます。  
   
@@ -292,7 +292,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
   
 - [!INCLUDE[win81](../includes/win81-md.md)] で実行されている Internet Explorer 11  
   
--  [!INCLUDE[win8](../includes/win8-md.md)]  
+- [!INCLUDE[win8](../includes/win8-md.md)]  
   
   [と Visual Studio をダウンロードするには、](https://developer.microsoft.com/windows/downloads/sdk-archive) ここ [!INCLUDE[win8](../includes/win8-md.md)] にアクセスしてください。  
   

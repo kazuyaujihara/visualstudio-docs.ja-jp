@@ -399,6 +399,8 @@
                       href: ide/reference/move-type-to-matching-file.md
                     - name: メンバーを取り出す
                       href: ide/reference/pull-members-up.md
+                    - name: IntelliSense を使用した正規表現の入力
+                      href: ide/reference/regex-completion-through-intellisense.md
                     - name: 到達できないコードの削除
                       href: ide/reference/remove-unreachable-code.md
                     - name: 名前の変更

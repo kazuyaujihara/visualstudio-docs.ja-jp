@@ -14,9 +14,7 @@
 ### [プロダクト キーの取得と管理](product-keys.md)
 ### [Visual Studio と GitHub Enterprise](access-github.md)
 ### [サブスクリプション会員の特典](subscriber-benefits.md)
-### Visual Studio Dev Essentials
-#### [Visual Studio Dev Essentials に参加する](join-dev-essentials.md)
-#### [Visual Studio Dev Essentials を退会する](leave-vsde.md)
+### [Visual Studio Dev Essentials](join-dev-essentials.md)
 ## サブスクリプション会員の特典を使用する
 ### ツール
 #### [Visual Studio IDE](vs-ide-benefit.md)
@@ -33,7 +31,6 @@
 #### [Windows 開発者アカウント](vs-windows-dev.md)
 #### [Office 365 サブスクリプション](vs-office365.md)
 #### [Power BI Pro](vs-pbi.md)
-#### [最新の Requirements4TFS](vs-modernreq.md)
 #### [Azure 重量課金](vs-azure-payg.md)
 ### [プロフェッショナルな開発](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
