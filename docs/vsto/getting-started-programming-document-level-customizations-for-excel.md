@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 ﻿---
-title: Excel 用ドキュメント レベル カスタマイズのプログラミングのスタート ガイド
-||||||| merged common ancestors
----
-title: Excel 用ドキュメント レベル カスタマイズのプログラミングのスタート ガイド
-=======
----
 title: Excel:ドキュメント レベルのカスタマイズのプログラミングを開始します。
->>>>>>> ae0bb728cd44302ad34be4f41978a33231cc5cb5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:

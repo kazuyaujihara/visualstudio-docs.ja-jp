@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 ﻿---
-title: .NET Framework をターゲットとする Office プロジェクトのデザインの変更
-||||||| merged common ancestors
----
-title: .NET Framework をターゲットとする Office プロジェクトのデザインの変更
-=======
----
 title: .NET Framework を対象とする Office プロジェクトを設計の変更
->>>>>>> ae0bb728cd44302ad34be4f41978a33231cc5cb5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:

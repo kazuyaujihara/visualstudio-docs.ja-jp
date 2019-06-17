@@ -1,4 +1,4 @@
----
+﻿---
 title: テーブル デザイナーのフィルター文字列の作成 | Microsoft Docs
 description: テーブル デザイナー用のフィルター文字列の作成
 author: ghogen
@@ -34,7 +34,7 @@ WCF Data Services は、 [Open Data Protocol](http://go.microsoft.com/fwlink/p/?
 | le |以下 |Price le 100 |
 | ne |等しくない |City ne 'London' |
 | and |と |Price le 200 and Price gt 3.5 |
-| or |or |Price le 3.5 or Price gt 200 |
+| or |または |Price le 3.5 or Price gt 200 |
 | not |not |not isAvailable |
 
 フィルター文字列を作成するときに重要となる規則は次のとおりです。
@@ -90,3 +90,4 @@ DateTime 値を条件としてフィルター処理を行うには、**datetime*
 次の例は、CustomerSince プロパティが 2008 年 7 月 10 日と等しいエンティティを返します。
 
     CustomerSince eq datetime'2008-07-10T00:00:00Z'
+

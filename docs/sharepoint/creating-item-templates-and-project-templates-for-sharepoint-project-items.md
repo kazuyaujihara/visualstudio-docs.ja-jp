@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 ﻿---
-title: テンプレートとプロジェクト テンプレートの SharePoint プロジェクト項目項目作成 |Microsoft Docs
-||||||| merged common ancestors
----
-title: テンプレートとプロジェクト テンプレートの SharePoint プロジェクト項目項目作成 |Microsoft Docs
-=======
----
 title: SharePoint 用のテンプレートとプロジェクト テンプレート プロジェクト項目の項目
->>>>>>> ae0bb728cd44302ad34be4f41978a33231cc5cb5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:

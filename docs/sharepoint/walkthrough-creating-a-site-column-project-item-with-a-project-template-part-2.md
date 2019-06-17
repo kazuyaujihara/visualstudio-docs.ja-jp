@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 ﻿---
-title: 'チュートリアル: プロジェクト テンプレートを使用して、サイト列プロジェクト項目を作成、パート 2 |Microsoft Docs'
-||||||| merged common ancestors
----
-title: 'チュートリアル: プロジェクト テンプレートを使用して、サイト列プロジェクト項目を作成、パート 2 |Microsoft Docs'
-=======
----
 title: プロジェクトのテンプレート、第 2 部でのサイト列プロジェクト項目を作成します。
->>>>>>> ae0bb728cd44302ad34be4f41978a33231cc5cb5
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
