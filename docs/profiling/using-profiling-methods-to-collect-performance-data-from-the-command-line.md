@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5b5f2c1d350f487b6490d0c2b4ce4fe0b83bb38f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263824"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746779"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>各種のプロファイル方法を使用したコマンド ラインからのパフォーマンス データの収集
-使用する [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのコマンド ライン ツールおよびオプションは、プロファイル対象のアプリケーションの種類、使用するプロファイル方法、ターゲット アプリケーションが、ネイティブ コードと [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] コードのどちらで記述されているかなどの要因によって決まります。
+使用する [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールおよびオプションは、プロファイル対象のアプリケーションの種類、使用するプロファイル方法、ターゲット アプリケーションが、ネイティブ コードと .NET Framework コードのどちらで記述されているかなどの要因によって決まります。
 
  このトピックでは、コマンド ラインの手順について、使用するプロファイル方法ごとに説明します。
 
@@ -50,9 +50,9 @@ ms.locfileid: "66263824"
 - [ネイティブ サービス](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>.NET メモリ メソッドを使用してメモリの割り当てとオブジェクトの有効期間のデータを収集する
- プロファイリング ツールの .NET メモリ メソッドを使用すると、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] メモリの割り当てデータおよび [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] のオブジェクトの有効期間に関する情報を収集できます。
+ プロファイル ツールの .NET メモリ メソッドを使用すると、.NET Framework メモリの割り当てデータおよび .NET Framework のオブジェクトの有効期間に関する情報を収集できます。
 
- プロファイラーを使用してターゲット アプリケーションを開始できるほか、実行中のアプリケーションのインスタンスにプロファイラーをアタッチすることもできます。また、[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] メモリ データと共に詳しいタイミング情報を収集するためのインストルメント化されたバージョンのアプリケーションを作成することもできます。
+ プロファイラーを使用してターゲット アプリケーションを開始できるほか、実行中のアプリケーションのインスタンスにプロファイラーをアタッチすることもできます。また、.NET Framework メモリ データと共に詳しいタイミング情報を収集するためのインストルメント化されたバージョンのアプリケーションを作成することもできます。
 
 |タスク|ターゲット アプリケーションの種類|
 |----------|-----------------------------|

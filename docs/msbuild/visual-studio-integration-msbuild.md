@@ -20,22 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a160d28a3953196a53673b64ae7d9ef9974a731
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445382"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747434"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio の統合 (MSBuild)
 Visual Studio は、マネージド プロジェクトの読み込みとビルドを行う [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] をホストしています。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] はプロジェクトに対応しているため、そのプロジェクトが他のツールで作成されていたり、ビルド処理がカスタマイズされていたりしても、 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 形式のほとんどすべてのプロジェクトを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]で問題なく使用できます。
 
  この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] に読み込んでビルドするプロジェクトおよび *.targets* ファイルをカスタマイズする際に考慮が必要な、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] による [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] のホストに固有な事項について説明します。 これらの事項は、IntelliSense やデバッグなどの [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の機能をカスタム プロジェクトに対して有効にするうえで役立ちます。
 
- C++ プロジェクトの詳細については、「[プロジェクト ファイル](/cpp/ide/project-files)」を参照してください。
+ C++ プロジェクトの詳細については、「[プロジェクト ファイル](/cpp/build/reference/project-files)」を参照してください。
 
 ## <a name="project-file-name-extensions"></a>プロジェクト ファイル名の拡張子
- *MSBuild.exe* は、*.\*proj* のパターンに一致するすべてのプロジェクト ファイル拡張子を認識します。 ただし、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] は、プロジェクトを読み込む言語固有のプロジェクト システムを決定する、これらのプロジェクト ファイル拡張子のサブセットしか認識しません。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] には、言語に依存しない [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ベースのプロジェクト システムが備わっていないためです。
+ *MSBuild.exe* は、 *.\*proj* のパターンに一致するすべてのプロジェクト ファイル拡張子を認識します。 ただし、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] は、プロジェクトを読み込む言語固有のプロジェクト システムを決定する、これらのプロジェクト ファイル拡張子のサブセットしか認識しません。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] には、言語に依存しない [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ベースのプロジェクト システムが備わっていないためです。
 
  たとえば、[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] のプロジェクト システムは *.csproj* ファイルを読み込みますが、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では *.xxproj* ファイルを読み込むことができません。 任意の言語のソース ファイル用のプロジェクト ファイルには、 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] に読み込む [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] または [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]プロジェクト ファイルと同じ拡張子を使用する必要があります。
 
@@ -54,7 +54,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] はこの目的のために、 `PropertyGroup`、 `ItemGroup`、 `Import`、プロパティ、および項目要素の条件を確認します。
 
 ## <a name="additional-build-actions"></a>その他のビルド アクション
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、**[ファイルのプロパティ]** ウィンドウの **[ビルド アクション]** プロパティを使って、プロジェクト内のファイルの項目の種類名を変更できます。 **Compile**、**EmbeddedResource**、**Content**、**None** の各項目の種類名は、プロジェクト内に既に存在する他の項目の種類名と共に、常にこのメニューに表示されます。 このメニューにカスタムの項目の種類名すべてが常に表示されるようにするには、 `AvailableItemName`という項目の種類に名前を追加します。 たとえば、プロジェクト ファイルに次の内容を追加すると、このファイルをインポートするすべてのプロジェクトの当該メニューに、カスタム型 **JScript** が追加されます。
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、 **[ファイルのプロパティ]** ウィンドウの **[ビルド アクション]** プロパティを使って、プロジェクト内のファイルの項目の種類名を変更できます。 **Compile**、**EmbeddedResource**、**Content**、**None** の各項目の種類名は、プロジェクト内に既に存在する他の項目の種類名と共に、常にこのメニューに表示されます。 このメニューにカスタムの項目の種類名すべてが常に表示されるようにするには、 `AvailableItemName`という項目の種類に名前を追加します。 たとえば、プロジェクト ファイルに次の内容を追加すると、このファイルをインポートするすべてのプロジェクトの当該メニューに、カスタム型 **JScript** が追加されます。
 
 ```xml
 <ItemGroup>
@@ -135,7 +135,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
      プロジェクトに **(利用不可)** のマークが付きます。
 
-2. **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、**[\<プロジェクト ファイル> の編集]** をクリックします。
+2. **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、 **[\<プロジェクト ファイル> の編集]** をクリックします。
 
      Visual Studio XML エディターでプロジェクト ファイルが開きます。
 
@@ -144,7 +144,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4. **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、 **[プロジェクトの再読み込み]** をクリックします。
 
 ## <a name="intellisense-and-validation"></a>IntelliSense と検証
- XML エディターを使用してプロジェクト ファイルを編集する際、 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] のスキーマ ファイルによって IntelliSense と検証が実行されます。 これらは、*\<Visual Studio のインストール ディレクトリ>\Xml\Schemas\1033\MSBuild* にあるスキーマ キャッシュにインストールされます。
+ XML エディターを使用してプロジェクト ファイルを編集する際、 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] のスキーマ ファイルによって IntelliSense と検証が実行されます。 これらは、 *\<Visual Studio のインストール ディレクトリ>\Xml\Schemas\1033\MSBuild* にあるスキーマ キャッシュにインストールされます。
 
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] の中心となる型は *Microsoft.Build.Core.xsd* で定義され、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] が使用する共通の型は *Microsoft.Build.CommonTypes.xsd* で定義されます。 カスタムの項目の種類名、プロパティ、およびタスク用に IntelliSense と検証を使用できるようにスキーマをカスタマイズするには、*Microsoft.Build.xsd* を編集するか、CommonTypes スキーマまたは Core スキーマを含む独自のスキーマを作成します。 独自のスキーマを作成する場合は、 **[プロパティ]** ウィンドウを使用してこのスキーマを見つけるように XML エディターに指示する必要があります。
 
@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - 参照の元の項目規定を格納している`OriginalItemSpec`。
 
-  - `ResolvedFrom`ディレクトリから解決された場合に "{TargetFrameworkDirectory}" に設定される [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 。
+  - .NET Framework ディレクトリから解決された場合に "{TargetFrameworkDirectory}" に設定される `ResolvedFrom`。
 
 - COM 参照
 
@@ -176,7 +176,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    プロジェクト システムは、 `ResolveNativeReferences`という既知の名前を持つターゲットを呼び出します。 このターゲットは、 `NativeReferenceFile`という項目の種類名を持つ項目を生成します。 これらの項目には、参照の元の項目規定を格納する `OriginalItemSpec`という名前の新しいメタデータに加え、入力項目のすべてのメタデータも渡されます。
 
 ## <a name="performance-shortcuts"></a>パフォーマンスに関するヒント
- Visual Studio の UI でデバッグを開始する (F5 キーを押すか、メニュー バーの **[デバッグ]** > **[デバッグの開始]** を選択する) と、パフォーマンスを向上させるために、ビルド処理で高速更新チェックを使用します。 カスタマイズされたビルドで、順次ビルドするファイルを作成した場合、高速更新チェックでは変更されたファイルが正しく識別されません。 徹底した更新プログラムのチェックを必要とするプロジェクトでは、 `DISABLEFASTUPTODATECHECK=1`環境変数を設定することで高速チェックを無効にできます。 また、プロジェクトまたはプロジェクトでインポートしたファイルで、MSBuild プロパティとしてこれを設定することもできます。
+ Visual Studio の UI でデバッグを開始する (F5 キーを押すか、メニュー バーの **[デバッグ]**  >  **[デバッグの開始]** を選択する) と、パフォーマンスを向上させるために、ビルド処理で高速更新チェックを使用します。 カスタマイズされたビルドで、順次ビルドするファイルを作成した場合、高速更新チェックでは変更されたファイルが正しく識別されません。 徹底した更新プログラムのチェックを必要とするプロジェクトでは、 `DISABLEFASTUPTODATECHECK=1`環境変数を設定することで高速チェックを無効にできます。 また、プロジェクトまたはプロジェクトでインポートしたファイルで、MSBuild プロパティとしてこれを設定することもできます。
 
  Visual Studio の通常のビルドでは、高速更新チェックは適用されず、コマンド プロンプトでビルドを開始する場合と同じ方法でプロジェクトがビルドされます。
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b83a3851c74d97992fa75e9ce533ca707e2115c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 925f36f2ed82f65afcc0eef9622cab1a8c9542b5
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969144"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746486"
 ---
 # <a name="prerequisites-dialog-box"></a>[必須コンポーネント] ダイアログ ボックス
 
@@ -24,17 +24,17 @@ ms.locfileid: "62969144"
 
 ![Visual Studio の [必須コンポーネント] ダイアログ ボックス](media/prerequisites-dialog-box.png)
 
-このダイアログ ボックスにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、**[プロジェクト]** > **[プロパティ]** の順に選択します。 **プロジェクト デザイナー**が表示されたら、**[発行]** タブを選択し、**[必須コンポーネント]** を選択します。 セットアップ プロジェクトで、**[プロジェクト]** メニューの **[プロパティ]** をクリックします。 **[プロパティ ページ]** ダイアログ ボックスが表示されたら、**[必須コンポーネント]** をクリックします。
+このダイアログ ボックスにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、 **[プロジェクト]**  >  **[プロパティ]** の順に選択します。 **プロジェクト デザイナー**が表示されたら、 **[発行]** タブを選択し、 **[必須コンポーネント]** を選択します。 セットアップ プロジェクトで、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。 **[プロパティ ページ]** ダイアログ ボックスが表示されたら、 **[必須コンポーネント]** をクリックします。
 
 ## <a name="uielement-list"></a>UIElement の一覧
 
 |要素|説明|
 |-------------|-----------------|
 |**必須コンポーネントをインストールするセットアップ プログラムを作成する**|必須コンポーネントをアプリケーションのセットアップ プログラム (*Setup.exe*) に含め、依存関係の順序に従って、それらのコンポーネントがアプリケーションより先にインストールされるようにします。 既定では、このチェック ボックスはオンになっています。 オフにした場合、*Setup.exe* は作成されません。|
-|**インストールする必須コンポーネントを選択する**|.NET Framework や C++ ランタイム ライブラリなどのコンポーネントをインストールするかどうかを指定します。<br /><br />たとえば、**[SQL Server 2012 Express]** の横のチェック ボックスをオンにした場合、セットアップ プログラムは、ターゲット コンピューターにこのコンポーネントがインストールされているかどうかを確認し、インストールされていなければインストールします。<br /><br />各必須パッケージの詳細については、「[必須コンポーネント情報](#prerequisites-information)」を参照してください。|
+|**インストールする必須コンポーネントを選択する**|.NET Framework や C++ ランタイム ライブラリなどのコンポーネントをインストールするかどうかを指定します。<br /><br />たとえば、 **[SQL Server 2012 Express]** の横のチェック ボックスをオンにした場合、セットアップ プログラムは、ターゲット コンピューターにこのコンポーネントがインストールされているかどうかを確認し、インストールされていなければインストールします。<br /><br />各必須パッケージの詳細については、「[必須コンポーネント情報](#prerequisites-information)」を参照してください。|
 |**必須コンポーネントをコンポーネントの開発元の Web サイトからダウンロードする**|販売元の Web サイトから必須コンポーネントをインストールするように指定します。 これは、既定の設定です。|
 |**アプリケーションと同じ場所から必須コンポーネントをダウンロードする**|アプリケーションと同じ場所から必須コンポーネントをインストールするように指定します。 これにより、すべての必須パッケージが発行場所にコピーされます。 このオプションを使用するには、必須パッケージが開発用コンピューターに存在する必要があります。|
-|**次の場所から必須コンポーネントをダウンロード**|入力した場所から必須コンポーネントをインストールするように指定します。 場所は、**[参照]** ボタンを使って指定できます。|
+|**次の場所から必須コンポーネントをダウンロード**|入力した場所から必須コンポーネントをインストールするように指定します。 場所は、 **[参照]** ボタンを使って指定できます。|
 
 ## <a name="prerequisites-information"></a>必須コンポーネント情報
 
@@ -42,7 +42,7 @@ ms.locfileid: "62969144"
 
 |要素|説明|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|このパッケージは、次のコンポーネントをインストールします。<br /><br /> -  .NET Framework バージョン 2.0、3.0、および 3.5。<br />-   32 ビット (x86) オペレーティング システムおよび 64 ビット (x64) オペレーティング システム上の .NET Framework のすべてのバージョンに対するサポート。<br />-   パッケージと共にインストールされる各 .NET Framework バージョン用の Language Pack。<br />-   .NET Framework 2.0 および 3.0 用の Service Pack。<br /><br /> .NET Framework 3.0 は Windows Vista に含まれており、.NET Framework 3.5 は Visual Studio に含まれています。 .NET Framework 3.5 は、32 ビット オペレーティング システム用にコンパイルされる、ターゲット フレームワークが **.NET Framework 3.5** に設定された、すべての Visual Basic プロジェクトおよび C# プロジェクト、および、64 ビット オペレーティング システム用にコンパイルされる Visual Basic プロジェクトおよび C# プロジェクトに必要です。 IA64 はサポートされません。Visual Basic プロジェクトおよび C# プロジェクトは、既定ではどの CPU アーキテクチャにも対応するようにコンパイルされます。 詳細については、「[Visual Studio のマルチ ターゲットの概要](../../ide/visual-studio-multi-targeting-overview.md)」、および「[Deploy prerequisites for 64-bit apps](../../deployment/deploying-prerequisites-for-64-bit-applications.md)」 (64 ビット アプリのデプロイのための必要条件) を参照してください。|
+|**.NET Framework 3.5 SP1**|このパッケージは、次のコンポーネントをインストールします。<br /><br /> -  .NET Framework バージョン 2.0、3.0、および 3.5。<br />-   32 ビット (x86) オペレーティング システムおよび 64 ビット (x64) オペレーティング システム上の .NET Framework のすべてのバージョンに対するサポート。<br />-   パッケージと共にインストールされる各 .NET Framework バージョン用の Language Pack。<br />-   .NET Framework 2.0 および 3.0 用の Service Pack。<br /><br /> .NET Framework 3.0 は Windows Vista に含まれており、.NET Framework 3.5 は Visual Studio に含まれています。 .NET Framework 3.5 は、32 ビット オペレーティング システム用にコンパイルされる、ターゲット フレームワークが **.NET Framework 3.5** に設定された、すべての Visual Basic プロジェクトおよび C# プロジェクト、および、64 ビット オペレーティング システム用にコンパイルされる Visual Basic プロジェクトおよび C# プロジェクトに必要です。 IA64 はサポートされません。Visual Basic プロジェクトおよび C# プロジェクトは、既定ではどの CPU アーキテクチャにも対応するようにコンパイルされます。 詳細については、「[フレームワーク対象設定機能の概要](../../ide/visual-studio-multi-targeting-overview.md)」と「[Deploy prerequisites for 64-bit apps](../../deployment/deploying-prerequisites-for-64-bit-applications.md)」 (64 ビット アプリのデプロイのための必要条件) を参照してください。|
 |**Microsoft .NET Framework 4.x**|このパッケージは、.NET Framework 4.x (x86 プラットフォームおよび x64 プラットフォーム用) をインストールします。|
 |**Microsoft System CLR Types for SQL Server 2014 (x64 および x86)**|このパッケージは、Microsoft System CLR Types for SQL Server 2014 (x64 または x86 用) をインストールします。|
 |**SQL Server 2008 R2 Express**|このパッケージは、Microsoft SQL Server 2008 R2 Express をインストールします。Microsoft SQL Server 2008 R2 Express は、Microsoft SQL Server 2008 R2 の無償のエディションであり、小規模な Web アプリケーション、サーバー アプリケーション、またはデスクトップ アプリケーションに最適なデータベースです。 Microsoft SQL Server 2008 Express は、開発環境および運用環境で無償で使用できます。|
@@ -57,4 +57,4 @@ ms.locfileid: "62969144"
 - [[発行] ページ (プロジェクト デザイナー)](../../ide/reference/publish-page-project-designer.md)
 - [アプリケーション配置の必要条件](../../deployment/application-deployment-prerequisites.md)
 - [64 ビット アプリケーションの配置のための必要条件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
-- [Visual Studio のマルチ ターゲットの概要](../../ide/visual-studio-multi-targeting-overview.md)
+- [フレームワーク対象設定機能の概要](../../ide/visual-studio-multi-targeting-overview.md)

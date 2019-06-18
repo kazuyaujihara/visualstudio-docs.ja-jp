@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2ec8e3e51036749030036eee6ff1d268a44f69
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 685915d963e506d86c81a6bc4f7fc62998a0f7d9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263065"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747709"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>さまざまなツール ウィンドウを使用してコードの構造を表示する
 
-**クラス ビュー**、**呼び出し階層**、**オブジェクト ブラウザー**、**コード定義** (C++ のみ) など、Visual Studio のさまざまなツール ウィンドウを使って、クラスとそのメンバーを調べることができます。 これらのツール ウィンドウでは、Visual Studio プロジェクトのコード、.NET Framework コンポーネント、COM コンポーネント、ダイナミック リンク ライブラリ (DLL)、およびタイプ ライブラリ (TLB) を調査できます。
+**クラス ビュー**、**呼び出し階層**、**オブジェクト ブラウザー**、**コード定義** (C++ のみ) など、Visual Studio のさまざまなツール ウィンドウを使って、クラスとそのメンバーを調べることができます。 これらのツール ウィンドウでは、Visual Studio プロジェクトのコード、.NET コンポーネント、COM コンポーネント、ダイナミック リンク ライブラリ (DLL)、タイプ ライブラリ (TLB) を調査できます。
 
 プロジェクトの型とメンバーの参照、シンボルの検索、メソッドの呼び出し階層の表示、シンボル参照の検索などを行うために、**ソリューション エクスプローラー**を使用することもできます。この場合、複数のツール ウィンドウを切り替える必要がなくなります。
 

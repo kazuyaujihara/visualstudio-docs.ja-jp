@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7eb72f104560991f1bb191e62641041879df071
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aba0edbabdac6eb0e0c391371b51151a5be1ecba
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965476"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745793"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>[単体テストの作成] コマンドを使用した単体テスト メソッド スタブの作成
 
@@ -27,7 +27,7 @@ ms.locfileid: "62965476"
 
 ## <a name="get-started"></a>作業開始
 
-作業を始めるには、テストするプロジェクトのコード エディターでメソッド、型、または名前空間を選択し、右クリックして、**[単体テストの作成]** を選択します。 **[単体テストの作成]** ダイアログが開き、テストの作成方法を構成することができます。
+作業を始めるには、テストするプロジェクトのコード エディターでメソッド、型、または名前空間を選択し、右クリックして、 **[単体テストの作成]** を選択します。 **[単体テストの作成]** ダイアログが開き、テストの作成方法を構成することができます。
 
 ![[単体テストの作成] コマンドの使用](media/createunittestcommand.png)
 

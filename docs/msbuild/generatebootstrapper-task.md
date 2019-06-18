@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 277463ad717331980988f87cb070815e644a71ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f18b01a6db0068b44ad9c25037e544efa8df35a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003653"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746598"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper タスク
 アプリケーションとその前提条件を検出、ダウンロード、インストールする自動化方法を提供します。 これは、アプリケーションを構成するすべてのコンポーネントの別々のインストーラーを統合する単一のインストーラーとして機能します。
@@ -152,7 +152,7 @@ ms.locfileid: "63003653"
 上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
 ## <a name="example"></a>例
-次の例では、前提条件として [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] がインストールされていなければならないアプリケーションをインストールするために `GenerateBootstrapper` タスクが使用されています。
+次の例では、前提条件として .NET Framework 2.0 がインストールされていなければならないアプリケーションをインストールするために `GenerateBootstrapper` タスクが使用されています。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

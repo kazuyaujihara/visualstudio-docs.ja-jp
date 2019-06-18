@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934523"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745886"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
 次の表は、Visual Studio プロジェクト ファイルで定義される、または MSBuild に用意されている *.targets* ファイルに含まれている、使用頻度の高いプロパティを示しています。
 
- Visual Studio のプロジェクト ファイル (*.csproj*、*.vbproj*、*.vcxproj* など) には、IDE を使用してプロジェクトをビルドするときに実行される MSBuild XML コードが含まれています。 通常、プロジェクトでは、ビルド プロセスを定義するために、1 つ以上の *.targets* ファイルをインポートします。 詳しくは、「[MSBuild .Targets ファイル](../msbuild/msbuild-dot-targets-files.md)」をご覧ください。
+ Visual Studio のプロジェクト ファイル ( *.csproj*、 *.vbproj*、 *.vcxproj* など) には、IDE を使用してプロジェクトをビルドするときに実行される MSBuild XML コードが含まれています。 通常、プロジェクトでは、ビルド プロセスを定義するために、1 つ以上の *.targets* ファイルをインポートします。 詳しくは、「[MSBuild .Targets ファイル](../msbuild/msbuild-dot-targets-files.md)」をご覧ください。
 
 ## <a name="list-of-common-properties-and-parameters"></a>共通のプロパティおよびパラメーター一覧
 
@@ -39,7 +39,7 @@ ms.locfileid: "65934523"
 | ALToolPath | *AL.exe* の保存先のパスです。 このプロパティによって、*AL.exe* の現在のバージョンをオーバーライドし、別のバージョンを使用できます。 |
 | ApplicationIcon | Win32 アイコンとして埋め込むためにコンパイラに渡す *.ico* アイコン ファイルです。 このプロパティは、`/win32icon` コンパイラ スイッチに相当します。 |
 | ApplicationManifest | 外部のユーザー アカウント制御 (UAC: User Account Control) マニフェスト情報を生成するのに使用するファイルのパスを指定します。 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] を対象とする Visual Studio プロジェクトにのみ適用されます。<br /><br /> ほとんどの場合、マニフェストは埋め込まれます。 ただし、登録を必要としない COM 配置または [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置を使用する場合は、アプリケーション アセンブリと共にインストールされる外部ファイルをマニフェストとして使用できます。 詳細については、このトピックの NoWin32Manifest プロパティを参照してください。 |
-| AssemblyOriginatorKeyFile | アセンブリ (*.snk* または *.pfx*) に署名するために使用されるファイルを指定します。また、このファイルは [ResolveKeySource タスク](../msbuild/resolvekeysource-task.md)に渡され、アセンブリの署名に使用される実際のキーが生成されます。 |
+| AssemblyOriginatorKeyFile | アセンブリ ( *.snk* または *.pfx*) に署名するために使用されるファイルを指定します。また、このファイルは [ResolveKeySource タスク](../msbuild/resolvekeysource-task.md)に渡され、アセンブリの署名に使用される実際のキーが生成されます。 |
 | AssemblySearchPaths | ビルド時に参照アセンブリを解決するときに検索する場所のリストです。 このリストでは、先頭から順に優先度が低くなるため、パスを指定する順序が意味を持ちます。 |
 | AssemblyName | プロジェクトのビルド後に生成される最終的な出力アセンブリの名前です。 |
 | BaseAddress | メイン出力アセンブリのベース アドレスを指定します。‎ このプロパティは、`/baseaddress` コンパイラ スイッチに相当します。 |
@@ -53,7 +53,7 @@ ms.locfileid: "65934523"
 | 構成 | ビルドする構成です。"Debug" と "Release" のいずれかを指定します。 |
 | CscToolPath | [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] コンパイラ *csc.exe* のパスです。 |
 | CustomBeforeMicrosoftCommonTargets | 共通ターゲットのインポートの前に自動的にインポートされるプロジェクト ファイルまたは targets ファイルの名前です。 |
-| DebugSymbols | ビルド時にシンボルを生成するかどうかを示すブール値です。<br /><br /> コマンド ラインで **-p:DebugSymbols=false** と設定すると、プログラム データベース (*.pdb*) シンボル ファイルの生成が無効になります。 |
+| DebugSymbols | ビルド時にシンボルを生成するかどうかを示すブール値です。<br /><br /> コマンド ラインで **-p:DebugSymbols=false** と設定すると、プログラム データベース ( *.pdb*) シンボル ファイルの生成が無効になります。 |
 | DebugType | 生成するデバッグ情報のレベルを定義します。 有効な値は "full"、"pdbonly"、"portable"、"embedded、"および "none" です。 |
 | DefineConstants | 条件付きコンパイル定数を定義します。 次の構文に従い、シンボルと値のペアをセミコロン (;) で区切って指定します。<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> このプロパティは、`/define` コンパイラ スイッチに相当します。 |
 | DefineDebug | 定数 DEBUG を定義するかどうかを示すブール値です。 |
@@ -69,7 +69,7 @@ ms.locfileid: "65934523"
 | FrameworkPathOverride | *mscorlib.dll* および *microsoft.visualbasic.dll* の位置を指定します。 このパラメーターは、*vbc.exe* コンパイラの `/sdkpath` スイッチに相当します。 |
 | GenerateDocumentation | (Visual Basic のみ) ビルドによってドキュメントを生成するかどうかを示すブール値パラメーターです。 `true` に設定すると、ビルドによってドキュメント情報が生成され、ビルド タスクが作成した実行可能ファイルまたはライブラリの名前と共に *.xml* ファイルに格納されます。 |
 | GenerateSerializationAssemblies | XML シリアル化アセンブリを *SGen.exe* で生成するかどうかを示します。これはオン、自動、オフに設定できます。 このプロパティは、.NET Framework のみを対象とするアセンブリに使用されます。 .NET Standard アセンブリまたは .NET Core アセンブリに XML シリアル化アセンブリを生成するには、*Microsoft.XmlSerializer.Generator* パッケージを参照します。 |
-| IntermediateOutputPath | 中間出力ファイルの完全パスであり、パスが指定されていない場合に `BaseIntermediateOutputPath` を基に生成されます。 たとえば、*\obj\debug\\* のようなパスが生成されます。 |
+| IntermediateOutputPath | 中間出力ファイルの完全パスであり、パスが指定されていない場合に `BaseIntermediateOutputPath` を基に生成されます。 たとえば、 *\obj\debug\\* のようなパスが生成されます。 |
 | KeyContainerName | 厳密名キーのコンテナー名です。 |
 | KeyOriginatorFile | 厳密名キー ファイルの名前です。 |
 | MSBuildProjectExtensionsPath | プロジェクト拡張機能が配置されるパスを指定します。 既定では、`BaseIntermediateOutputPath` と同じ値が使用されます。 |
@@ -77,7 +77,7 @@ ms.locfileid: "65934523"
 | NoLogo | コンパイラ ロゴをオフにするかどうかを示すブール値です。 このプロパティは、`/nologo` コンパイラ スイッチに相当します。 |
 | NoStdLib | 標準ライブラリ (*mscorlib.dll*) の参照を回避するかどうかを示すブール値です。 既定値は `false` です。 |
 | NoVBRuntimeReference | [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ランタイム (*Microsoft.VisualBasic.dll*) を参照としてプロジェクトに含めるかどうかを示すブール値です。 |
-| NoWin32Manifest | ユーザー アカウント制御 (UAC) マニフェスト情報をアプリケーションの実行可能ファイルに埋め込むかどうかを示すブール値です。 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] を対象とする Visual Studio プロジェクトにのみ適用されます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] および登録を必要としない COM を使用して配置されたプロジェクトでは、この要素無視されます。 `False` (既定値) は、ユーザー アカウント制御 (UAC: User Account Control) マニフェスト情報をアプリケーションの実行可能ファイルに埋め込むことを指定します。 `True`を指定すると、UAC マニフェスト情報は埋め込まれません。<br /><br /> このプロパティは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を対象とする [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] プロジェクトにのみ適用されます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] および登録を必要としない COM を使用して配置されたプロジェクトでは、このプロパティは無視されます。<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でマニフェスト情報をアプリケーションの実行可能ファイルに埋め込まない場合に限り、NoWin32Manifest を追加してください。このプロセスは "*仮想化*" と呼ばれます。 仮想化を使用するには、次のように `<ApplicationManifest>` と共に `<NoWin32Manifest>` を設定します。<br /><br /> -   [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] プロジェクトの場合は、`<ApplicationManifest>` ノードを削除します  ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] プロジェクトでは、`<ApplicationManifest>` ノードが存在すると、`<NoWin32Manifest>` は無視されます)。<br />-   [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトの場合は、`<ApplicationManifest>` を `False` に設定し、`<NoWin32Manifest>` を `True` に設定します  ([!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトでは、`<ApplicationManifest>` は `<NoWin32Manifest>` によりオーバーライドされます)。<br /> このプロパティは、*vbc.exe* コンパイラの `/nowin32manifest` スイッチに相当します。 |
+| NoWin32Manifest | ユーザー アカウント制御 (UAC) マニフェスト情報をアプリケーションの実行可能ファイルに埋め込むかどうかを示すブール値です。 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] を対象とする Visual Studio プロジェクトにのみ適用されます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] および登録を必要としない COM を使用して配置されたプロジェクトでは、この要素無視されます。 `False` (既定値) は、ユーザー アカウント制御 (UAC: User Account Control) マニフェスト情報をアプリケーションの実行可能ファイルに埋め込むことを指定します。 `True`を指定すると、UAC マニフェスト情報は埋め込まれません。<br /><br /> このプロパティは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を対象とする [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] プロジェクトにのみ適用されます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] および登録を必要としない COM を使用して配置されたプロジェクトでは、このプロパティは無視されます。<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でマニフェスト情報をアプリケーションの実行可能ファイルに埋め込まない場合に限り、NoWin32Manifest を追加してください。このプロセスは "*仮想化*" と呼ばれます。 仮想化を使用するには、次のように `<ApplicationManifest>` と共に `<NoWin32Manifest>` を設定します。<br /><br /> -   [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] プロジェクトの場合は、`<ApplicationManifest>` ノードを削除します ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] プロジェクトでは、`<ApplicationManifest>` ノードが存在すると、`<NoWin32Manifest>` は無視されます)。<br />-   [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトの場合は、`<ApplicationManifest>` を `False` に設定し、`<NoWin32Manifest>` を `True` に設定します ([!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトでは、`<ApplicationManifest>` は `<NoWin32Manifest>` によりオーバーライドされます)。<br /> このプロパティは、*vbc.exe* コンパイラの `/nowin32manifest` スイッチに相当します。 |
 | Optimize | `true` に設定された場合にコンパイラの最適化を有効にするブール値です。 このプロパティは、`/optimize` コンパイラ スイッチに相当します。 |
 | OptionCompare | 文字列比較の方法を指定します。 有効な値は "binary" または "text" です。 このプロパティは、*vbc.exe* コンパイラの `/optioncompare` スイッチに相当します。 |
 | OptionExplicit | `true` に設定された場合にソース コードで変数が明示的に宣言されていることを要求するブール値です。 このプロパティは、`/optionexplicit` コンパイラ スイッチに相当します。 |
@@ -115,10 +115,10 @@ ms.locfileid: "65934523"
 | Satellite_Trademark | サテライト アセンブリの Trademark フィールドに挿入する文字列を指定します。 |
 | Satellite_Version | サテライト アセンブリのバージョン情報を指定します。 |
 | Satellite_Win32Icon | サテライト アセンブリに *.ico* アイコン ファイルを挿入します。 |
-| Satellite_Win32Resource | サテライト アセンブリに Win32 リソース (*.res* ファイル) を挿入します。 |
+| Satellite_Win32Resource | サテライト アセンブリに Win32 リソース ( *.res* ファイル) を挿入します。 |
 | SubsystemVersion | 生成された実行可能ファイルが使用できるサブシステムの最低限のバージョンを指定します。 このプロパティは、`/subsystemversion` コンパイラ スイッチに相当します。 このプロパティの既定値については、「[/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion)」または「[/subsystemversion (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option)」を参照してください。 |
 | TargetCompactFramework | ビルドするアプリケーションの実行に必要な .NET Compact Framework のバージョンです。 このプロパティを指定すると、通常は参照できない .NET Framework アセンブリを参照できます。 |
-| TargetFrameworkVersion | ビルドするアプリケーションの実行に必要な [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] のバージョンです。 このプロパティを指定すると、通常は参照できない .NET Framework アセンブリを参照できます。 |
+| TargetFrameworkVersion | ビルドするアプリケーションの実行に必要な .NET Framework のバージョンです。 このプロパティを指定すると、通常は参照できない .NET Framework アセンブリを参照できます。 |
 | TreatWarningsAsErrors | ブール値パラメーターであり、`true` に設定すると、すべての警告がエラーとして扱われます。 このパラメーターは、`/nowarn` コンパイラ スイッチに相当します。 |
 | UseHostCompilerIfAvailable | ブール値パラメーターであり、`true` に設定すると、ビルド タスクはインプロセス コンパイラを使用します (インプロセス コンパイラが用意されている場合)。 このパラメーターは [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でのみ使用されます。 |
 | Utf8Output | ブール値パラメーターであり、`true` に設定すると、コンパイラ出力が UTF-8 エンコーディングでログに記録されます。 このパラメーターは、`/utf8Output` コンパイラ スイッチに相当します。 |

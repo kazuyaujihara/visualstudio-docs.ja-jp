@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793553"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746868"
 ---
 # <a name="create-solutions-and-projects"></a>ソリューションとプロジェクトを作成する
 
@@ -61,7 +61,7 @@ ms.locfileid: "62793553"
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>.NET Framework の特定のバージョンを対象とする .NET プロジェクトの作成
 
-プロジェクトを作成するとき、そのプロジェクトで使用する .NET Framework のバージョンを指定できます。
+.NET Framework プロジェクトを作成するとき、そのプロジェクトで使用する .NET Framework のバージョンを指定できます。 (.NET Core プロジェクトを作成するとき、フレームワークのバージョンは指定しません。)
 
 ::: moniker range="vs-2017"
 

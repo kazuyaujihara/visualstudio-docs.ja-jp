@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: d15f0e8e5c5cbdac5a130804977adf90385adfe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69ef227bb30703a41fe9519114a2bc9904e902f2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893924"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714814"
 ---
 # <a name="wpf-overview"></a>WPF の概要
 
@@ -24,13 +24,13 @@ Windows Presentation Foundation (WPF) を使用して、視覚的に美しいユ
 
 ![Contoso Healthcare UI のサンプル](../designers/media/wpfintrofigure24.png)
 
-WPF の中核を成すのは、解像度に依存しない、ベクター ベースのレンダリング エンジンであり、これは最新のグラフィックス ハードウェアを活用できるように構築されています。 この中核を拡張するため、WPF では、Extensible Application Markup Language (XAML)、コントロール、データ バインディング、レイアウト、2D および 3D グラフィックス、アニメーション、スタイル、テンプレート、ドキュメント、メディア、テキスト、タイポグラフィなどの、アプリケーション開発機能の包括的なセットを使用します。 WPF は .NET Framework に含まれるので、.NET Framework クラス ライブラリの他の要素を組み込んだアプリケーションを構築できます。
+WPF の中核を成すのは、解像度に依存しない、ベクター ベースのレンダリング エンジンであり、これは最新のグラフィックス ハードウェアを活用できるように構築されています。 この中核を拡張するため、WPF では、Extensible Application Markup Language (XAML)、コントロール、データ バインディング、レイアウト、2D および 3D グラフィックス、アニメーション、スタイル、テンプレート、ドキュメント、メディア、テキスト、タイポグラフィなどの、アプリケーション開発機能の包括的なセットを使用します。 WPF は .NET の一部です。そのため、.NET API の他の要素を組み込むアプリケーションを構築できます。
 
 この概要は初めての方を対象としており、WPF の主要な機能と概念を説明します。
 
 ## <a name="program-with-wpf"></a>WPF でのプログラミング
 
-WPF は、ほとんどの部分が <xref:System.Windows> 名前空間に格納されている .NET Framework 型のサブセットとして存在します。 ASP.NET や Windows フォームのようなマネージド テクノロジを使用して .NET Framework で以前にアプリケーションを構築したことがあるユーザーは、基本的な WPF のプログラミングの経験には慣れているはずです。クラスのインスタンス化、プロパティの設定、メソッドの呼び出し、イベントの処理など、すべての操作は C# または Visual Basic などの使い慣れた .NET プログラミング言語を使用して行うことができます。
+WPF は、ほとんどの部分が <xref:System.Windows> 名前空間に格納されている .NET 型のサブセットとして存在します。 ASP.NET や Windows フォームのようなマネージド テクノロジを使用して .NET で以前にアプリケーションを構築したことがあるユーザーは、基本的な WPF のプログラミングの経験には慣れているはずです。クラスのインスタンス化、プロパティの設定、メソッドの呼び出し、イベントの処理は C# または Visual Basic などの使い慣れた .NET プログラミング言語を使用して行うことができます。
 
 WPF には、プロパティとイベントを拡張する追加のプログラミング構成要素である、 [依存関係プロパティ](/dotnet/framework/wpf/advanced/dependency-properties-overview) と [ルーティング イベント](/dotnet/framework/wpf/advanced/routed-events-overview)が含まれています。
 

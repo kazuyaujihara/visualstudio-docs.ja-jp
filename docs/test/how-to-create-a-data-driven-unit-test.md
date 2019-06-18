@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615437"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745867"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>方法: データ ドリブン単体テストを作成する
 
@@ -89,7 +89,7 @@ public TestContext TestContext
 テスト メソッドでは、`TestContext` の `DataRow` インデクサー プロパティを使用してデータにアクセスします。
 
 > [!NOTE]
-> .NET Core では [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute) 属性がサポートされていません。 .NET Core または UWP 単体テスト プロジェクトでこの方法でテスト データにアクセスしようとすると、**"'TestContext' does not contain a definition for 'DataRow' and no accessible extension method 'DataRow' accepting a first argument of type 'TestContext' could be found (are you missing a using directive or an assembly reference?)"** ('TestContext' に 'DataRow' の定義が含まれておらず、型 'TestContext' の最初の引数を受け取るアクセス可能な拡張メソッド 'DataRow' が見つかりません (using ディレクティブかアセンブリ参照が不足していませんか?)) のようなエラーが表示されます。
+> .NET Core では [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute) 属性がサポートされていません。 .NET Core または UWP 単体テスト プロジェクトでこの方法でテスト データにアクセスしようとすると、 **"'TestContext' does not contain a definition for 'DataRow' and no accessible extension method 'DataRow' accepting a first argument of type 'TestContext' could be found (are you missing a using directive or an assembly reference?)"** ('TestContext' に 'DataRow' の定義が含まれておらず、型 'TestContext' の最初の引数を受け取るアクセス可能な拡張メソッド 'DataRow' が見つかりません (using ディレクティブかアセンブリ参照が不足していませんか?)) のようなエラーが表示されます。
 
 ## <a name="write-the-test-method"></a>テスト メソッドの記述
 
@@ -160,7 +160,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ## <a name="run-the-test-and-view-results"></a>テストを実行して結果を表示する
 
-テスト メソッドの記述が完了したら、テスト プロジェクトを構築します。 **[テストを実行しない]** グループの**テスト エクスプローラー**に、テスト メソッドが表示されます。 テストを実行して、記述し、再実行すると、**テスト エクスプローラー**に **[失敗したテスト]**、**[成功したテスト]**、**[テストを実行しない]** のグループの結果が表示されます。 **[すべて実行]** を選択してテストをすべて実行することも、 **[実行]** を選択してテストのサブセットを実行することもできます。
+テスト メソッドの記述が完了したら、テスト プロジェクトを構築します。 **[テストを実行しない]** グループの**テスト エクスプローラー**に、テスト メソッドが表示されます。 テストを実行して、記述し、再実行すると、**テスト エクスプローラー**に **[失敗したテスト]** 、 **[成功したテスト]** 、 **[テストを実行しない]** のグループの結果が表示されます。 **[すべて実行]** を選択してテストをすべて実行することも、 **[実行]** を選択してテストのサブセットを実行することもできます。
 
 テストの実行中は、**テスト エクスプローラー**の上部にあるテスト結果バーがアニメーションで表示されます。 テストの実行の終了時に、すべてのテストが成功した場合はバーが緑色になり、いずれかのテストが失敗した場合は赤色になります。 **テスト エクスプローラー** ウィンドウの下部の詳細ウィンドウに、テストの実行の概要が表示されます。 テストを選択すると、そのテストの詳細が下部のペインに表示されます。
 
@@ -179,4 +179,4 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [コードの単体テスト](../test/unit-test-your-code.md)
 - [テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md)
-- [マネージド コード用の Microsoft 単体テスト フレームワークを使用した .NET Framework 用単体テストの記述](../test/unit-test-your-code.md)
+- [Microsoft 単体テスト フレームワークを使用した .NET 用単体テストの記述](../test/unit-test-your-code.md)
