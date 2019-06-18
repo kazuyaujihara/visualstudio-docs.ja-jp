@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e035ab0c3702c571b69b555d99adbf7cb0b7e9
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501171"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820915"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio の既定のキーボード ショートカット
 
 キーボードのアクセシビリティの詳細については、「[アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)」と「[方法:キーボード主体で操作する](../ide/reference/how-to-use-the-keyboard-exclusively.md)」を参照してください。
 
-Visual Studio のさまざまなコマンドやウィンドウには、該当するショートカット キーを押すことでアクセスできます。 このページでは、Visual Studio のインストール時に選択できる **[全般]** プロファイルの既定のショートカットを一覧表示します。 選択したプロファイルにかかわらず、 **[オプション]** ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、コマンドのショートカット キーを確認できます。 また、別のショートカット キーを任意のコマンドに割り当てることで、ショートカット キーをカスタマイズすることもできます。
+Visual Studio のさまざまなコマンドやウィンドウには、該当するショートカット キーを押すことでアクセスできます。 このページでは、Visual Studio のインストール時に選択できる **[全般]** プロファイルの既定のショートカットを一覧表示します。 選択したプロファイルにかかわらず、**[オプション]** ダイアログ ボックスを開き、**[環境]** ノードを展開して、**[キーボード]** を選択することで、コマンドのショートカット キーを確認できます。 また、別のショートカット キーを任意のコマンドに割り当てることで、ショートカット キーをカスタマイズすることもできます。
 
 一般的なキーボード ショートカットの一覧、およびその他の生産性向上に関する情報については、「[Visual Studio で頻繁に使用するコマンドに対応する既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)」、[キーボードに関するヒント](../ide/tips-and-tricks-for-visual-studio.md)、[生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)をご覧ください。
 
@@ -59,6 +59,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
+|Build.BuildSelection|**Ctrl + B** (Visual Studio 2019)|
 |Build.BuildSolution|**Ctrl + Shift + B**|
 |Build.Cancel|**Ctrl + Break**|
 |Build.Compile|**Ctrl + F7**|
@@ -77,7 +78,6 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Debug.ApplyCodeChanges|**Alt + F10**|
 |Debug.Autos|**Ctrl + Alt + V、A**|
 |Debug.BreakAll|**Ctrl + Alt + Break**|
-|Debug.BreakatFunction|**Ctrl + B**|
 |Debug.Breakpoints|**Ctrl + Alt + B**|
 |Debug.CallStack|**Ctrl + Alt + C**|
 |Debug.DeleteAllBreakpoints|**Ctrl + Shift + F9**|
@@ -86,6 +86,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Debug.DOMExplorer|**Ctrl + Alt + V、D**|
 |Debug.EnableBreakpoint|**Ctrl + F9**|
 |Debug.Exceptions|**Ctrl + Alt + E**|
+|Debug.FunctionBreakpoint|**Ctrl + K、B** (Visual Studio 2019)<br />**Ctrl **+** B** (Visual Studio 2017)|
 |Debug.GoToPreviousCallorIntelliTraceEvent|**Ctrl + Shift + F11**|
 |Debug.Graphics.StartDiagnostics|**Alt + F5**|
 |Debug.Immediate|**Ctrl + Alt + I**|
@@ -109,7 +110,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Debug.ParallelWatch3|**Ctrl + Shift + D、3**|
 |Debug.ParallelWatch4|**Ctrl + Shift + D、4**|
 |Debug.Processes|**Ctrl + Alt + Z**|
-|Debug.QuickWatch|**Shift + F9**<br /><br /> or<br /><br /> **Ctrl + Alt + Q**|
+|Debug.QuickWatch|**Shift + F9** または **Ctrl + Alt + Q**|
 |Debug.RefreshWindowsapp|**Ctrl + Shift + R**|
 |Debug.Registers|**Ctrl + Alt + G**|
 |Debug.Restart|**Ctrl + Shift + F5**|
@@ -295,9 +296,9 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**Ctrl + [** 、**O** (文字 'O')<br /><br /> or<br /><br /> **Ctrl + [** 、**Ctrl + O** (文字 'O')|
-|SolutionExplorer.PendingChangesFilter|**Ctrl + [** 、**P**<br /><br /> or<br /><br /> **Ctrl + [** 、**Ctrl + P**|
-|SolutionExplorer.SyncWithActiveDocument|**Ctrl + [** 、**S**<br /><br /> or<br /><br /> **Ctrl + [** 、**Ctrl + S**|
+|SolutionExplorer.OpenFilesFilter|**Ctrl + [**、**O** (文字 'O')<br /><br /> or<br /><br /> **Ctrl + [**、**Ctrl + O** (文字 'O')|
+|SolutionExplorer.PendingChangesFilter|**Ctrl + [**、**P**<br /><br /> or<br /><br /> **Ctrl + [**、**Ctrl + P**|
+|SolutionExplorer.SyncWithActiveDocument|**Ctrl + [**、**S**<br /><br /> or<br /><br /> **Ctrl + [**、**Ctrl + S**|
 
 ### <a name="bkmk_team"></a> チーム
 

@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950055"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747245"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>方法: Web パフォーマンス テスト結果ビューアー用に Visual Studio アドインを作成する
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>方法: Web パフォーマンス テスト結果ビューアー用のアドインを作成する
 
 次の名前空間を使用して、**Web パフォーマンス テスト結果ビューアー**の UI を拡張できます。
 
@@ -256,9 +256,9 @@ ms.locfileid: "62950055"
 
 1. **ソリューション エクスプローラー**で、WebPerfTestResultsViewerControl プロジェクト ノードを右クリックし、**[プロパティ]** を選択します。
 
-2. **[アプリケーション]** タブを選択して **[ターゲット フレームワーク]** ドロップダウン リストを選びます。次に、**[.NET Framework 4]** を選択して、**[プロパティ]** を閉じます。
+2. **[アプリケーション]** タブを選択して **[ターゲット フレームワーク]** ドロップダウン リストを選びます。次に、**.NET Framework 4** 以降を選択します。 **[プロパティ]** ウィンドウを閉じます。
 
-     これは、**Web パフォーマンス テスト結果ビューアー**の拡張に必要な DLL 参照をサポートするために必要です。
+   これは、**Web パフォーマンス テスト結果ビューアー**の拡張に必要な DLL 参照をサポートするために必要です。
 
 3. **ソリューション エクスプローラー**で、WebPerfTestResultsViewerControl プロジェクトの **[参照設定]** ノードを右クリックし、**[参照の追加]** を選択します。
 
@@ -300,15 +300,11 @@ ms.locfileid: "62950055"
             }
     ```
 
-## <a name="build-the-webperftestresultsvieweraddin-solution"></a>WebPerfTestResultsViewerAddin ソリューションのビルド
-
-### <a name="to-build-the-solution"></a>ソリューションをビルドするには
+## <a name="build-the-solution"></a>ソリューションをビルドする
 
 - **[ビルド]** メニューの **[ソリューションのビルド]** を選択します。
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>WebPerfTestResultsViewerAddin アドインの登録
-
-### <a name="to-register-the-add-in-using-the-add-in-manager"></a>アドイン マネージャーを使用してアドインを登録するには
 
 1. **[ツール]** メニューの **[アドイン マネージャー]** を選択します。
 
@@ -318,15 +314,13 @@ ms.locfileid: "62950055"
 
 4. **[OK]** をクリックします。
 
-## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>WebPerfTestResultsViewerAddin アドインのビルドを使用した Web パフォーマンス テストの実行
-
-### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Web テスト結果ビューアーのための新しい VS アドインを実行するには
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Web テスト結果ビューアーを使用し、Web パフォーマンス テストを実行する
 
 1. Web パフォーマンス テストを実行すると、WebPerfTestResultsViewerAddin アドインの「サンプル」というタイトルの新しいタブが **Web パフォーマンス テスト結果ビューアー**に表示されます。
 
 2. このタブをクリックして、DataGridView に示されているプロパティを確認します。
 
-## <a name="net-framework-security"></a>.NET Framework セキュリティ
+## <a name="net-security"></a>.NET セキュリティ
 
 悪質なアドインが自動的にアクティブにならないようにしてセキュリティを強化するために、Visual Studio の **[ツール] メニューの [オプション]** ページには、**[アドイン/マクロ セキュリティ]** という名前の設定が用意されています。
 

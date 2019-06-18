@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa57582a241400cbdfc9115d16326fda8019a5ae
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432244"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746762"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>チュートリアル: データ ソースを定義するための構成ファイルの使用
 
@@ -46,11 +46,11 @@ ms.locfileid: "66432244"
 
 1. テスト プロジェクトに既に *app.config* ファイルが存在する場合は、「[カスタム構成セクションを定義する](#define-a-custom-configuration-section)」に進みます。
 
-2. **ソリューション エクスプローラー**で、テスト プロジェクトを右クリックし、 **[追加]**  >  **[新しい項目]** の順に選択します。
+2. **ソリューション エクスプローラー**で、テスト プロジェクトを右クリックし、**[追加]** > **[新しい項目]** の順に選択します。
 
      **[新しい項目の追加]** ウィンドウが開きます。
 
-3. **[アプリケーション構成ファイル]** テンプレートを選択し、 **[追加]** をクリックします。
+3. **[アプリケーション構成ファイル]** テンプレートを選択し、**[追加]** をクリックします。
 
 ## <a name="define-a-custom-configuration-section"></a>カスタム構成セクションを定義する
 
@@ -71,7 +71,7 @@ ms.locfileid: "66432244"
 ```
 
 > [!NOTE]
-> アセンブリ名は、使用している Microsoft Visual Studio .NET Framework のビルドと一致する必要があります。
+> アセンブリ名は、使用しているバージョンと一致する必要があります。
 
 ## <a name="define-connection-strings"></a>接続文字列を定義する
 

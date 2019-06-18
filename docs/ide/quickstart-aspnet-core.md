@@ -2,7 +2,7 @@
 title: C# に ASP.NET Core Web アプリを作成する
 description: Visual Studio で C# および ASP.NET Core を使用して Hello World の Web アプリを作成する方法について、段階的に説明します。
 ms.custom: mvc,seodec18
-ms.date: 03/23/2019
+ms.date: 06/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ea01ff2671212c8dfeb023d145cfd224a5feb2f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e701fd45230295222ffc6e17c05052e01b47189
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954756"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745048"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>クイック スタート: Visual Studio を使用して初めての ASP.NET Core Web アプリを作成する
 
@@ -53,9 +53,9 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio 2017 を開きます。
 
-1. 上部のメニュー バーから、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+1. 上部のメニュー バーから、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-1. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開し、**[.NET Core]** を選択します。 中央のウィンドウで、**[ASP.NET Core Web アプリケーション]** を選択ます。 <br/><br/>次に、ファイル名を「`HelloWorld`」にして、**[OK]** を選択します。
+1. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[ASP.NET Core Web アプリケーション]** を選択ます。 <br/><br/>次に、ファイル名を「`HelloWorld`」にして、 **[OK]** を選択します。
 
    ![C# 用の新しい ASP.NET Core Web アプリケーション プロジェクトを作成する](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
@@ -70,12 +70,12 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
    >
    > (新しいワークロードのインストールを続ける前に、Visual Studio を終了することが必要な場合があります。)
 
-1. **[新しい ASP.NET Core Web アプリケーション]** ダイアログ ボックスで、上部のドロップダウン メニューから **[ASP.NET Core 2.1]** を選択します。 次に、**[Web アプリケーション]** を選択し、**[OK]** を選択します。
+1. **[新しい ASP.NET Core Web アプリケーション]** ダイアログ ボックスで、上部のドロップダウン メニューから **[ASP.NET Core 2.1]** を選択します。 次に、 **[Web アプリケーション]** を選択し、 **[OK]** を選択します。
 
    ![[新しい ASP.NET Core Web アプリケーション] ダイアログ ボックス](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > **[ASP.NET Core 2.1]** 以降が表示されない場合は、最新リリースの Visual Studio を実行していることを確認します。 インストールを更新する方法の詳細については、「[Visual Studio を最新リリースに更新する](../install/update-visual-studio.md)」ページを参照してください。
+   > **[ASP.NET Core 2.1]** が表示されない場合は、最新リリースの Visual Studio を実行していることを確認します。 インストールを更新する方法の詳細については、「[Visual Studio を最新リリースに更新する](../install/update-visual-studio.md)」ページを参照してください。
 
 すぐに、Visual Studio でプロジェクト ファイルが開きます。
 
@@ -85,32 +85,32 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio を開きます。
 
-1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+1. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*ASP.NET*」と入力またはタイプします。 次に、言語のリストから **[C#]** を選択して、プラットフォームのリストから **[Windows]** を選択します。
 
-   言語およびプラットフォームのフィルターを適用してから、**[ASP.NET Core Web アプリケーション]** テンプレートを選択して、**[次へ]** を選択します。
+   言語およびプラットフォームのフィルターを適用してから、 **[ASP.NET Core Web アプリケーション]** テンプレートを選択して、 **[次へ]** を選択します。
 
    ![ASP.NET Core Web アプリケーション用の C# テンプレートを選択する](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
 
    > [!NOTE]
-   > **[ASP.NET Core Web アプリケーション]** テンプレートが表示されない場合は、**[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、**[さらにツールと機能をインストールする]** リンクを選択します。
+   > **[ASP.NET Core Web アプリケーション]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
    >
    > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > 次に、Visual Studio インストーラーで、**[ASP.NET と Web 開発]** ワークロードを選択します。
+   > 次に、Visual Studio インストーラーで、 **[ASP.NET と Web 開発]** ワークロードを選択します。
    >
    > ![Visual Studio インストーラーの ASP.NET Core Web アプリケーション ワークロード](../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、**[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
+   > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、 **[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
 
-1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*HelloWorld*」とタイプまたは入力します。 次に、**[作成]** を選択します。
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*HelloWorld*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
 
    ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'HelloWorld' という名前を付けます。](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
-1. **[新しい ASP.NET Core Web アプリケーションの作成]** ダイアログ ボックスで、上部のドロップダウン メニューに **ASP.NET Core 2.1** 以降が表示されていることを確認します。 次に、Razor Pages の例が含まれている **Web アプリケーション** を選択します。 次に、**[作成]** を選択します。
+1. **[新しい ASP.NET Core Web アプリケーションの作成]** ウィンドウで、上部のドロップダウン メニューに **ASP.NET Core 2.1** が表示されていることを確認します。 次に、Razor Pages の例が含まれている **Web アプリケーション** を選択します。 次に、 **[作成]** を選択します。
 
    ![[新しい ASP.NET Core Web アプリケーションの作成] ウィンドウ](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
 
@@ -132,7 +132,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![Visual Studio エディターに表示された "additional information" 領域の HTML コード](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. "additional information" というテキストを「**Hello World!**」に変更します。
+1. "additional information" というテキストを「**Hello World!** 」に変更します。
 
    ![Visual Studio エディターに表示される既定の "additional information" 領域の HTML コードを変更する](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
@@ -144,7 +144,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![Visual Studio エディターに表示されたアプリケーション説明領域の C# コード](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
 
-1. "application description" というメッセージ テキストを「**What's my message?**」に変更します。
+1. "application description" というメッセージ テキストを「**What's my message?** 」に変更します。
 
    ![Visual Studio エディターでアプリケーション説明領域の既定のメッセージ テキストを変更する](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 

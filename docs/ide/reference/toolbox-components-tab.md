@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f5e486d49dca8290c9063625132f673bf79c3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f040b9bb64c2192bc6b376f5d0397ee5438071
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944943"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747751"
 ---
 # <a name="toolbox-components-tab"></a>ツールボックス、[コンポーネント] タブ
 
-Visual Basic と C# の Windows フォーム デザイナーに追加できるコンポーネントを表示します。 <xref:System.Messaging.MessageQueue> コンポーネントや <xref:System.Diagnostics.EventLog> コンポーネントなど、Visual Studio に含まれている .NET Framework コンポーネントに加え、独自のコンポーネントまたはサード パーティ製のコンポーネントをこのタブに追加できます。
+Visual Basic と C# の Windows フォーム デザイナーに追加できるコンポーネントを表示します。 <xref:System.Messaging.MessageQueue> コンポーネントや <xref:System.Diagnostics.EventLog> コンポーネントなど、Visual Studio に含まれている .NET コンポーネントに加え、独自のコンポーネントまたはサード パーティ製のコンポーネントをこのタブに追加できます。
 
-このタブを表示するには、Windows フォーム デザイナーを開きます。 **[表示]**、**[ツールボックス]** の順に選択します。 **ツールボックス**で、**[コンポーネント]** タブを選択します。
+このタブを表示するには、Windows フォーム デザイナーを開きます。 **[表示]** 、 **[ツールボックス]** の順に選択します。 **ツールボックス**で、 **[コンポーネント]** タブを選択します。
 
 ## <a name="components"></a>コンポーネント
 

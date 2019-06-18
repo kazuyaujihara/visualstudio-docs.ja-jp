@@ -12,17 +12,17 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b79d1b0a4b59246c9497c0594047c6457c1b685
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c5420839d97fb62797d0f739ce62da4d14b340b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791474"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744883"
 ---
 # <a name="assembly-information-dialog-box"></a>[アセンブリ情報] ダイアログ ボックス
-**[アセンブリ情報]** ダイアログ ボックスは、[!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] グローバル アセンブリ属性の値を指定するために使用します。この値は、プロジェクトで自動的に作成される AssemblyInfo ファイルに格納されます。 **ソリューション エクスプローラー**では、[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] の **[マイ プロジェクト]** ノードにこのファイルがあります (**[すべてのファイルを表示]** をクリックして表示します)。これは [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] の **[プロパティ]** にあります。 アセンブリ属性の詳細については、「[属性](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)」を参照してください。
+**[アセンブリ情報]** ダイアログ ボックスは、.NET Framework グローバル アセンブリ属性の値を指定するために使用します。この値は、プロジェクトで自動的に作成される AssemblyInfo ファイルに格納されます。 **ソリューション エクスプローラー**では、[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] の **[マイ プロジェクト]** ノードにこのファイルがあります ( **[すべてのファイルを表示]** をクリックして表示します)。これは [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] の **[プロパティ]** にあります。 アセンブリ属性の詳細については、「[属性](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)」を参照してください。
 
- このダイアログ ボックスを表示するには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、**[プロジェクト]** メニューの **[プロパティ]** をクリックします。 **プロジェクト デザイナー**が表示されたら、**[アプリケーション]** タブをクリックします。**[アプリケーション]** ページで、**[アセンブリ情報]** ボタンをクリックします。
+ このダイアログ ボックスを表示するには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。 **プロジェクト デザイナー**が表示されたら、 **[アプリケーション]** タブをクリックします。 **[アプリケーション]** ページで、 **[アセンブリ情報]** ボタンをクリックします。
 
 ## <a name="uielement-list"></a>UIElement の一覧
  **タイトル** アセンブリ マニフェストのタイトルを指定します。 <xref:System.Reflection.AssemblyTitleAttribute> に相当します。

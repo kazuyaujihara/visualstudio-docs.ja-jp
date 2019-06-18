@@ -1,7 +1,7 @@
 ---
 title: Python インタープリターの選択とインストール
 description: Visual Studio でサポートされている Python インタープリターの詳細な一覧です。インストーラーを入手できる場所についても簡単に説明します。
-ms.date: 03/13/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3cfe5e54e4893ffa0bed6e3be1bf142fdda60be
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957416"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747154"
 ---
 # <a name="install-python-interpreters"></a>Python インタープリターのインストール
 
@@ -26,6 +26,11 @@ ms.locfileid: "62957416"
 ::: moniker-end
 
 以下の表のインタープリターは、Visual Studio インストーラーを使用せずに手動でインストールすることもできます。 たとえば、Visual Studio をインストールする前に Anaconda 3 がインストールされている場合、Visual Studio インストーラーでそれを再度インストールする必要はありません。 また、たとえば Visual Studio インストーラーに利用可能な新しいバージョンがまだ表示されていない場合なども、手動でインタープリターをインストールできます。
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio では、[Python Software Foundation](https://devguide.python.org/#status-of-python-branches) が指定する、公式にサポートされているあらゆるバージョンの Python がサポートされています。 具体的には、バージョン 2.7、3.5、3.6、3.7 です。
+::: moniker-end
 
 **Visual Studio 2015 以前**では、いずれかのインタープリターを手動でインストールする必要があります。
 

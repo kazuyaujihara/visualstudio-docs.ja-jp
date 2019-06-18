@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5030498702808dc9d41a5daa12520893c3de2627
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: f7d4da645c464e51bd331bca64066209b52132fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531987"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746558"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
-Visual Studio の単体テストは、*.runsettings* ファイルを使用して構成できます。 たとえば、テストが実行される .NET Framework のバージョン、テスト結果のディレクトリ、テストの実行中に収集されるデータを変更できます。
+Visual Studio の単体テストは、*.runsettings* ファイルを使用して構成できます。 たとえば、テストが実行される .NET のバージョン、テスト結果のディレクトリ、テストの実行中に収集されるデータを変更できます。
 
 実行設定ファイルは省略可能です。 特殊な構成を行う必要がない場合、*.runsettings* ファイルは不要です。 *.runsettings* ファイルを最もよく使うのは、[コード カバレッジ分析](../test/customizing-code-coverage-analysis.md)をカスタマイズする場合です。
 

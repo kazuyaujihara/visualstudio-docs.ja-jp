@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2651a5fc2c32de5018e8fa07f42c5067d469758c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847326"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820567"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend for Visual Studio 概要
 
@@ -60,7 +60,7 @@ Blend for Visual Studio の **[ツール]** パネルは、アプリケーショ
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**[検索] ボックス** **[検索]** ボックスに入力することにより、アセットの一覧を絞り込みます。|
+|![[アセット] 検索ボックス](../designers/media/b1_1.png)|**[検索] ボックス** **[検索]** ボックスに入力することにより、アセットの一覧を絞り込みます。|
 |![グリッド モードとリスト モード](../designers/media/b1_2.png)|**グリッド モードとリスト モード** アセットの表示モードを、**グリッド モード**または**リスト モード**に切り替えます。|
 |![アセットのカテゴリ](../designers/media/b1_3.png)|**アセットのカテゴリ** カテゴリまたはサブカテゴリをクリックすると、そのカテゴリに属するアセットが表示されます。|
 |![スタイル](../designers/media/b1_4.png)|**スタイル** リソース ディクショナリに含まれるすべてのスタイルを表示します。|
@@ -115,7 +115,7 @@ Blend for Visual Studio の **[ツール]** パネルは、アプリケーショ
 |![RGB 色空間](../designers/media/b1_12.png)|**RGB 色空間** **[R]**、**[G]**、または **[B]** (赤、緑、青) の各数値エディターの値を調整して色を変更します。|
 |![アルファ チャネル](../designers/media/b1_13.png)|**アルファ チャネル** **[A]** の横にある数値エディターを使用してアルファ値を変更します。|
 |![色をリソースに変換](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**色をリソースに変換** 選択した色を色リソースに変換します。 色リソースは、[色リソース] タブをクリックした場合に使用できます。|
-|![](../designers/media/b1_15.png)|**16 進数値** 表示されている色を表す 16 進数値が表示されます。|
+|![色の 16 進数値](../designers/media/b1_15.png)|**16 進数値** 表示されている色を表す 16 進数値が表示されます。|
 |![吹き出し 16](../designers/media/b5_label_16.png)|**グラデーション スライダー** グラデーション ブラシが選択されている場合にのみ表示されます。|
 |![詳細設定プロパティの表示](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**詳細設定プロパティの表示** 使用頻度が低いプロパティのカテゴリを表示します。|
 

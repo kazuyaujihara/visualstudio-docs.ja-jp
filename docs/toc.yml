@@ -226,11 +226,7 @@
             - name: 'アプリケーション アイコンを指定する (Visual Basic、C#)'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
             - name: フレームワークをターゲットにする
-              items:
-                - name: マルチ ターゲットの概要
-                  href: ide/visual-studio-multi-targeting-overview.md
-                - name: .NET Framework のバージョンをターゲットにする
-                  href: ide/how-to-target-a-version-of-the-dotnet-framework.md
+              href: ide/visual-studio-multi-targeting-overview.md
             - name: テンプレートを作成する
               items:
                 - name: プロジェクト テンプレートと項目テンプレートを作成する
@@ -405,6 +401,10 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: 名前の変更
                       href: ide/reference/rename.md
+                    - name: if ステートメントの分割または結合
+                      href: ide/reference/split-or-merge-if-statement.md
+                    - name: 名前空間とフォルダー名を同期する
+                      href: ide/reference/sync-namespace-and-folder-name.md
                     - name: 型とファイル名の同期
                       href: ide/reference/sync-type-and-file.md
                     - name: 明示的な型の使用

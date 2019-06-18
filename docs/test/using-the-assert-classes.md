@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d9d02ee375a5b9e6069a94cd7b534b871792088a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d145734dc89faafcedbca6730f0a90da174376c4
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962013"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820310"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>単体テストに Assert クラスを使用する
 
@@ -45,7 +45,7 @@ ms.locfileid: "62962013"
 
 新しい Assert 例外クラスを記述する場合には、そのクラスに基本クラス <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> から継承させると、例外が発生した場合に、その例外がテストや運用コードからスローされた予期しない例外なのか、アサーションによる失敗なのかを識別しやすくなります。
 
-テスト メソッドを <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> 属性で修飾して、アプリケーション コード内のメソッドによって例外がスローされることが予期される場合に、例外がスローされたことを確認します。
+アプリケーション コード内のあるメソッドによりスローされることが予想される例外が実際にスローされることを確認するには、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> メソッドを使用します。
 
 ## <a name="see-also"></a>関連項目
 
