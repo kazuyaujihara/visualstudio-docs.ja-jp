@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Office 365 特典について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 41f30d01dab1adf98d50789c4ebd418a7f002fb8
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 33e70c6208505df175161b248a60e0527f7b2a6b
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263124"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032830"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Visual Studio Subscription の Office 365 ProPlus
 
-最高の作品を作りましょう。 常に最新のアプリでどこでも作業できます。 Office 365 ProPlus は、Word、Excel、PowerPoint、OneNote、Outlook、Publisher、Access (Publisher と Access は PC 上でのみ使用できます) などの Premium アプリに付属するサブスクリプションです。 これらのアプリは、PC、Mac、iPad、iPhone、Android タブレット、Android フォンなどの複数のデバイスにインストールできます。 Office 365 には、1 TB の OneDrive ストレージ、60 分間/月の Skype、Microsoft のチャットと電話のサポートなどのサービスも付属しています。 サブスクリプションがある場合、最新バージョンのアプリを入手し、更新プログラムがリリースされたときに自動的に受け取ることができます。
+最高の作品を作りましょう。 常に最新のアプリでどこでも作業できます。 Office 365 ProPlus は、Word、Excel、PowerPoint、OneNote、Outlook、Publisher、Access (Publisher と Access は PC 上でのみ使用できます) などの Premium アプリに付属するサブスクリプションです。 これらのアプリは、PC、Mac、iPad、iPhone、Android タブレット、Android フォンなどの複数のデバイスにインストールできます。 サブスクリプションがある場合、最新バージョンのアプリを入手し、更新プログラムがリリースされたときに自動的に受け取ることができます。
 
 ## <a name="getting-started-with-office-365-proplus"></a>Office 365 ProPlus の概要
 
@@ -58,7 +58,7 @@ Office 用アプリケーションを開発する予定がある場合は、[Off
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                             |  N/A          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
-| Visual Studio Dev Essentials | N/A  | 使用できません |N/A |
+|  |
 
 <sup>1</sup>  *内容:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services、Imagine、Microsoft Partner Network が含まれます。*
 

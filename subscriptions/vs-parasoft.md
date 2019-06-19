@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Parasoft Virtualize/SOA Test Professional サブスクリプションをアクティブ化する方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce0c1e3d00e73bfdfee5e2fbe2bea8adddc2d305
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947325"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032750"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -26,11 +26,11 @@ ms.locfileid: "62947325"
    > [!div class="mx-imgBorder"]
    > ![Parasoft 特典タイル](_img/vs-parasoft/vs-parasoft-tile.png)
 
-3. Parasoft の Web サイトにリダイレクトされるので、アカウントを作成します。  連絡先情報を入力して、**[Submit]\(送信\)** をクリックするだけです。
+3. Parasoft の Web サイトにリダイレクトされるので、アカウントを作成します。  連絡先情報を入力して、 **[Submit]\(送信\)** をクリックするだけです。
    > [!div class="mx-imgBorder"]
    > ![Parasoft 特典アカウント作成](_img/vs-parasoft/vs-parasoft-account-cropped.png)
 
-4. アカウントを作成すると、ダウンロード方法が記載されたメールが送信されたことの通知が表示されます   (受信トレイにメールが表示されない場合は、スパムまたは迷惑メール フォルダーを確認してください)。
+4. アカウントを作成すると、ダウンロード方法が記載されたメールが送信されたことの通知が表示されます  (受信トレイにメールが表示されない場合は、スパムまたは迷惑メール フォルダーを確認してください)。
 
 5. メールを開き、**アクティブ化コード**をクリップボードにコピーします。
 
@@ -40,33 +40,33 @@ ms.locfileid: "62947325"
 
 7. 使っているブラウザーによっては、インストーラーを実行できる別のダイアログ ボックスが表示されることがあります。  たとえば、Internet Explorer では、parasoft_soavirt_9.10.2_win32_x86_64.exe の最近のダウンロードのリストが上部に表示されます。 **[Run]\(実行\)** をクリックしてインストーラーを開始します。
 
-8. [ユーザー アカウント制御] ダイアログが開いたら、**[はい]** をクリックします。
+8. [ユーザー アカウント制御] ダイアログが開いたら、 **[はい]** をクリックします。
 
-9. 使う言語を選び、**[OK]** をクリックします。
+9. 使う言語を選び、 **[OK]** をクリックします。
 
 10. Parasoft SOAtest & Virtualize セットアップ ウィザードが開始します。  **[次へ]** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![Parasoft 特典インストール開始](_img/vs-parasoft/vs-parasoft-start-install.png)
 
-11. **[同意する]** をクリックし、**[次へ]** をクリックします。
+11. **[同意する]** をクリックし、 **[次へ]** をクリックします。
 
-12. ファイルをインストールする場所を選び、**[次へ]** をクリックします。
+12. ファイルをインストールする場所を選び、 **[次へ]** をクリックします。
 
 13. 次に、インストールするコンポーネントを選ぶか、すべてをインストールします (既定値)。  選んだら **[次へ]** をクリックします。
 
-14. インストールされたアプリケーションへのショートカットの場所を指定し、**[次へ]** をクリックします。
+14. インストールされたアプリケーションへのショートカットの場所を指定し、 **[次へ]** をクリックします。
 
-15. HTTPS サイトでの特定の機能テストには、SOAtest Web Root Certificate Authority 証明書が必要です。  ルート CA 証明書をインストールするかどうかを選び、**[次へ]** をクリックします。
+15. HTTPS サイトでの特定の機能テストには、SOAtest Web Root Certificate Authority 証明書が必要です。  ルート CA 証明書をインストールするかどうかを選び、 **[次へ]** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![Parasoft 特典ルート CA 証明書](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
 
-16. インストール中にデスクトップ アイコンとクイック起動アイコンを作成するかどうかを選び、**[次へ]** をクリックします。
+16. インストール中にデスクトップ アイコンとクイック起動アイコンを作成するかどうかを選び、 **[次へ]** をクリックします。
 
-17. 選んだオプションを確認し、**[インストール]** をクリックしてソフトウェアのインストールを始めます。
+17. 選んだオプションを確認し、 **[インストール]** をクリックしてソフトウェアのインストールを始めます。
     > [!div class="mx-imgBorder"]
     > ![Parasoft 特典インストール準備完了](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
-18. セットアップが終わったら、**[完了]** をクリックします。 Parasoft Virtualize/SOAtest Professional Desktop 特典を使う準備ができました。
+18. セットアップが終わったら、 **[完了]** をクリックします。 Parasoft Virtualize/SOAtest Professional Desktop 特典を使う準備ができました。
 
 ## <a name="eligibility"></a>特典を受ける条件
 
@@ -76,8 +76,8 @@ ms.locfileid: "62947325"
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用できません                                                           |N/A         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                                           |N/A         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                                           |N/A         |
-| Visual Studio Dev Essentials | N/A  | 使用できません|N/A |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
+||
 
 <sup>1</sup>  *Microsoft Partner Network (Enterprise) が含まれます除外:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
 

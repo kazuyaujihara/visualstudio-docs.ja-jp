@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio に含まれる Azure Advisory Chat 特典を活用する方法について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 03e55b29cea867d438ef0536a2db7ee9c4f47e36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5d547062fa820ff868fe12f8cb899d9d1e508b8
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809104"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033180"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -22,7 +22,7 @@ Azure を開始するためのヘルプがリアルタイムで得られます�
 
 Azure Advisory Chat の使用は簡単です。
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
-2. [サポート] セクションで、Azure Advisory Chat タイルを見つけ、**[今すぐチャットを開始]** をクリックします。
+2. [サポート] セクションで、Azure Advisory Chat タイルを見つけ、 **[今すぐチャットを開始]** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![Azure Advisory Chat タイル](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
 
@@ -42,7 +42,7 @@ Azure Advisory Chat の使用は簡単です。
 | Visual Studio Professional (Standard、月間クラウド)、Visual Studio Enterprise (月間クラウド、NFR<sup>1</sup>) |        すべて        | 使用できません |     いいえ     |
 |                                          Visual Studio Test Professional (標準)                                          |        すべて        | 使用できません |     いいえ     |
 |                                                  MSDN Platforms (標準)                                                   |        すべて        | 使用できません |     いいえ     |
-|                                                 Visual Studio Dev Essentials                                                 |        N/A        | 使用できません |     いいえ     |
+
 
 <sup>1</sup>  *内容:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、MCT が含まれます。*
 
