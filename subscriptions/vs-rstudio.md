@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: conceptual
 description: Visual Studio Enterprise サブスクリプションに含まれる RStudio Desktop 特典について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 59d0e3de91417969e904221e05b5fcd74d8ba44a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b52d22cce30a668065e148494bb84568535eab7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947145"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031950"
 ---
 # <a name="the-rstudio-desktop-benefit-included-in-visual-studio-enterprise-subscriptions"></a>Visual Studio Enterprise サブスクリプションに含まれる RStudio Desktop 特典
 
@@ -38,14 +38,14 @@ R コードの管理が可能です。  RStudio は、R 用の統合開発環境
     > [!div class="mx-imgBorder"]
     > ![RStudio のランディング ページ](_img/vs-rstudio/vs-rstudio-landing-page.png)
 
-4. 特典のクーポン コードは、ページに自動的に設定されます。  コードが自動的に適用されない場合は、**[コードの適用]** ボタンをクリックします。 コードを適用すると、ページ右上隅の [プランの概要] に割引が反映され、**[Today's Total]\(本日の総額\)** が $0.00 として表示されます。
+4. 特典のクーポン コードは、ページに自動的に設定されます。  コードが自動的に適用されない場合は、 **[コードの適用]** ボタンをクリックします。 コードを適用すると、ページ右上隅の [プランの概要] に割引が反映され、 **[Today's Total]\(本日の総額\)** が $0.00 として表示されます。
 
 5. ページの [ユーザー情報]、[Shipping Information]\(出荷情報\)、[請求先情報]、[請求先住所]、および [追加情報] の各セクションに入力します。
 
     > [!IMPORTANT]
     > RStudio Desktop 特典にサインアップすると、定期的な年間サブスクリプションに新規登録されます。  更新日までにサブスクリプションをキャンセルしない場合は、年間サブスクリプションの購入価格がクレジット カードに請求されます。
 
-6. チェックボックスをクリックして、**[Terms and Conditions]\(使用条件\)** を受け入れます。
+6. チェックボックスをクリックして、 **[Terms and Conditions]\(使用条件\)** を受け入れます。
 
 7. **[Place My Order]\(注文\)** をクリックします。
 
@@ -67,15 +67,15 @@ R コードの管理が可能です。  RStudio は、R 用の統合開発環境
     > [!div class="mx-imgBorder"]
     > ![RStudio セットアップ ウィザード](_img/vs-rstudio/vs-rstudio-wizard.png)
 
-10. 宛先フォルダーを選択するか、またはウィザードで提案された既定値を受け入れて、**[次へ]** をクリックします。
+10. 宛先フォルダーを選択するか、またはウィザードで提案された既定値を受け入れて、 **[次へ]** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![RStudio 宛先フォルダー](_img/vs-rstudio/vs-rstudio-destination.png)
 
-11. スタート メニュー フォルダーを選択するか、または既定値を受け入れて、**[インストール]** をクリックします。
+11. スタート メニュー フォルダーを選択するか、または既定値を受け入れて、 **[インストール]** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![RStudio のスタート メニュー フォルダー](_img/vs-rstudio/vs-rstudio-start-folder.png)
 
-12. セットアップが完了したら、**[完了]** をクリックして、インストーラーを終了します。
+12. セットアップが完了したら、 **[完了]** をクリックして、インストーラーを終了します。
     > [!div class="mx-imgBorder"]
     > ![RStudio のインストールの完了](_img/vs-rstudio/vs-rstudio-complete.png)
 
@@ -91,9 +91,9 @@ R コードの管理が可能です。  RStudio は、R 用の統合開発環境
 |         Visual Studio Professional (Standard)          | VL、リテール |   使用できません    | N/A |
 |              Visual Studio Test Professional (標準)              |    VL、リテール     |   使用できません    | N/A |
 |                      MSDN Platforms (標準)                       |    VL、リテール     |   使用できません   | N/A |
-|                     Visual Studio Dev Essentials                     |        N/A         |   使用できません    |       N/A       |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) |       Azure       | 使用できません |       N/A       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      プログラム      | 使用できません |       N/A       |
+||
 
 <sup>1</sup>  *NFR には、Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、FTE、Imagine が含まれます。*
 
@@ -116,7 +116,7 @@ RStudio のサインアップを完了すると、BillingPortal.com 上で RStud
 
 ### <a name="q--if-i-dont-have-r-installed-where-can-i-get-it"></a>Q:"R" がインストールされてない場合は、どこで入手できますか?
 
-A: "R" がインストールされていないというエラーが表示された場合は、エラー メッセージに "Comprehensive R Archive Network (CRAN)" (https://cran.rstudio.com/) へのリンクが含まれています。  インターネット検索を実行して、他のダウンロード場所を探すこともできます。
+A: "R" がインストールされていないというエラーが表示された場合は、エラー メッセージに "Comprehensive R Archive Network (CRAN)" (https://cran.rstudio.com/ ) へのリンクが含まれています。  インターネット検索を実行して、他のダウンロード場所を探すこともできます。
 
 ## <a name="support-resources"></a>サポート リソース
 

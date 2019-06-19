@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8866b4a2518c8c4d58f26b625e45a0188498021
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 4503066cab8e7ca324e7c81317999b737c750dd6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746527"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159941"
 ---
 # <a name="output-window"></a>[出力] ウィンドウ
 
@@ -67,7 +67,7 @@ ms.locfileid: "66746527"
 
 また、実行時に診断メッセージを **[出力]** ペインに書き出すことのできる、独自のアプリケーションをプログラムすることも可能です。 これを行うには、<xref:System.Diagnostics.Debug> クラスのメンバーまたは .NET API の <xref:System.Diagnostics> 名前空間にある <xref:System.Diagnostics.Trace> クラスを使用します。 <xref:System.Diagnostics.Debug> クラスのメンバーは、ソリューションまたはプロジェクトのデバッグ構成をビルドするときの出力結果を表示します。<xref:System.Diagnostics.Trace> クラスのメンバーは、デバッグ構成またはリリース構成のどちらかをビルドするときの出力結果を表示します。 詳細については、[出力ウィンドウの診断メッセージ](../../debugger/diagnostic-messages-in-the-output-window.md)に関するページを参照してください。
 
-C++ では、警告とエラー メッセージ、およびその合計数を**出力**ウィンドウで表示できる、カスタム ビルド ステップおよびビルド イベントを作成できます。 出力結果の任意の行で **F1** キーを押すと、適切なヘルプ トピックが表示されます。 詳細については、[カスタム ビルド ステップの出力の書式設定](/cpp/build/reference/formatting-the-output-of-a-custom-build-step-or-build-event)に関する記事を参照してください。
+C++ では、警告とエラー メッセージ、およびその合計数を**出力**ウィンドウで表示できる、カスタム ビルド ステップおよびビルド イベントを作成できます。 出力結果の任意の行で **F1** キーを押すと、適切なヘルプ トピックが表示されます。 詳細については、[カスタム ビルド ステップの出力の書式設定](/cpp/build/formatting-the-output-of-a-custom-build-step-or-build-event)に関する記事を参照してください。
 
 ## <a name="scroll-behavior"></a>スクロールの動作
 

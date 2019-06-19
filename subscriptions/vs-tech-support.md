@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 238fd0b4c79e5fb99c629d82386676ec175a2a17
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402030"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032804"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化して使用する
 
@@ -104,7 +104,7 @@ Visual Studio サブスクリプションのテクニカル サポート特典�
 
 Azure に関連する問題がある場合に Visual Studio サブスクリプションのテクニカル サポート特典を使用するには、契約 ID とアクセス ID を Azure サブスクリプションにリンクする必要があります。
 
-1. [https://portal.azure.com](https://portal.azure.com) にアクセスしてサインインします。
+1. [https://portal.azure.com](https://portal.azure.com ) にアクセスしてサインインします。
 2. 左側のナビゲーションで **[ヘルプとサポート]** をクリックします。
 3. [サポート] で、 **[新しいサポート要求]** をクリックします。
 
@@ -116,8 +116,8 @@ Azure に関連する問題がある場合に Visual Studio サブスクリプ�
 | Visual Studio Professional (Standard) | VL、Azure、リテール、一部の NFR<sup>2</sup>                                        | 2 つのインシデント                                                          |はい         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 2 つのインシデント                                             |  はい         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 2 つのインシデント                                               | はい         |
-| Visual Studio Dev Essentials | N/A | 使用できません |N/A|
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
+||
 
 <sup>1</sup> *Imagine Premium、BizSpark。除外:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、Imagine Standard、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services。*
 

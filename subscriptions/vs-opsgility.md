@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 選択した Visual Studio サブスクリプションに含まれている Opsgility トレーニング特典を利用した Skill Me Up について説明します。
 searchscope: VS Subscriptions
-ms.openlocfilehash: 110ae0871e907a33dce20b059188919f645b4401
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c986eac1c98d2ba7b511cc01f03a823ced496d63
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947003"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032813"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Skill Me Up - Visual Studio サブスクリプションの Opsgility トレーニング特典の利用
 
@@ -25,7 +25,7 @@ ms.locfileid: "62947003"
    > [!div class="mx-imgBorder"]
    > ![Opsgility 特典タイル](_img/vs-opsgility/vs-opsgility-tile.png)
 
-3. サブスクリプションに合わせて適切な Skype Me UP のランディング ページにリダイレクトされます。  (サポート担当者とのチャット セッションを開始する機会を提供されることがあります。  チャットを始めない場合は、ウィンドウを最小化できます)。要求された連絡先情報を入力し、ご契約条件に同意する場合はチェック ボックスをオンにして、**[登録]** をクリックします。
+3. サブスクリプションに合わせて適切な Skype Me UP のランディング ページにリダイレクトされます。  (サポート担当者とのチャット セッションを開始する機会を提供されることがあります。  チャットを始めない場合は、ウィンドウを最小化できます)。要求された連絡先情報を入力し、ご契約条件に同意する場合はチェック ボックスをオンにして、 **[登録]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![Opsgility 特典のランディング ページ](_img/vs-opsgility/vs-vse-landing-page.png)
 
@@ -39,8 +39,8 @@ ms.locfileid: "62947003"
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 3 か月                                                            |いいえ。  新しいサブスクライバーのみが使用できます         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 3 か月                                             |  いいえ。  新しいサブスクライバーのみが使用できます         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 3 か月                                              | いいえ。  新しいサブスクライバーのみが使用できます         |
-| Visual Studio Dev Essentials | N/A  | 使用できません | N/A  |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
+||
 
 *Microsoft Partner Network (MPN)、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Certified Trainer、BizSpark、Imagine、NFR、FTE は含まれません。*
 

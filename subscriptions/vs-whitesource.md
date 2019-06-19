@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる WhiteSource Bolt サブスクリプションをアクティブ化する方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: ab373a21924aaac1a2a5660ed3032c69f04260e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 773284a163004958dbf89aea871414105792b338
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811005"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031937"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの WhiteSource Bolt
 
@@ -26,11 +26,11 @@ ms.locfileid: "62811005"
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 特典タイル](_img/vs-whitesource/vs-whitesource-tile.png)
 
-3. アクティブ化コードを表示する通知を受け取ります。  **コードをクリップボードにコピーし**、**[アクティブ化]** をクリックします。
+3. アクティブ化コードを表示する通知を受け取ります。  **コードをクリップボードにコピーし**、 **[アクティブ化]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 特典コード](_img/vs-whitesource/vs-whitesource-code.png)
 
-4. WhiteSource の Web ページで、**[Activate]\(アクティブ化\)** ボタンをクリックするか、ページの **[Activate your account]\(アカウントのアクティブ化\)** セクションまで下にスクロールします。
+4. WhiteSource の Web ページで、 **[Activate]\(アクティブ化\)** ボタンをクリックするか、ページの **[Activate your account]\(アカウントのアクティブ化\)** セクションまで下にスクロールします。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 特典のアクティブ化](_img/vs-whitesource/vs-whitesource-activate-page-cropped.png)
 
@@ -42,7 +42,7 @@ Azure DevOps Services を使っている場合は緑の **[インストール]**
 > [!div class="mx-imgBorder"]
 > ![WhiteSource 特典拡張機能のインストール](_img/vs-whitesource/vs-whitesource-download-install.png)
 
-- 次に、使用する Azure DevOps 組織を選択して、**[確認]** をクリックします。  (まだ Azure DevOps Services を設定していない場合は、[特典](https://my.visualstudio.com/benefits)ページに移動して Azure DevOps Services 特典をアクティブ化します。)
+- 次に、使用する Azure DevOps 組織を選択して、 **[確認]** をクリックします。  (まだ Azure DevOps Services を設定していない場合は、[特典](https://my.visualstudio.com/benefits)ページに移動して Azure DevOps Services 特典をアクティブ化します。)
 
 > [!div class="mx-imgBorder"]
 > ![WhiteSource 特典アカウントの確認](_img/vs-whitesource/vs-whitesource-confirm-account.png)
@@ -55,7 +55,7 @@ Azure DevOps Services を使っている場合は緑の **[インストール]**
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 特典拡張機能の追加](_img/vs-whitesource/vs-whitesource-installed-cropped.png)
 
-6. WhiteSource Bolt 特典タイルからアクティブ化コードを貼り付けて、**[アクティブ化]** をクリックします。 各アクティブ化コードでアクティブ化できるプロジェクトは 1 つだけです。
+6. WhiteSource Bolt 特典タイルからアクティブ化コードを貼り付けて、 **[アクティブ化]** をクリックします。 各アクティブ化コードでアクティブ化できるプロジェクトは 1 つだけです。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 特典アクティブ化コード](_img/vs-whitesource/vs-whitesource-activate-code-cropped.png)
 
@@ -78,8 +78,8 @@ Azure DevOps Services を使っている場合は緑の **[インストール]**
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用できません。                                                           |N/A         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                             |  N/A         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              | N/A         |
-| Visual Studio Dev Essentials | N/A  | 使用できません |N/A |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
+||
 
 <sup>1</sup>  *Microsoft Partner Network (Enterprise) が含まれます除外:その他の Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services、Microsoft Partner Network (Professional) は含まれません。*
 
@@ -90,6 +90,6 @@ Azure DevOps Services を使っている場合は緑の **[インストール]**
 
 ## <a name="support-resources"></a>サポート リソース
 
-- WhiteSource Bolt のヘルプが必要ですか。  [https://www.whitesourcesoftware.com/vse_whitesource_bolt/](https://www.whitesourcesoftware.com/vse_whitesource_bolt/) で WhiteSource Bolt の担当者とオンライン チャットしてください。
+- WhiteSource Bolt のヘルプが必要ですか。  [https://www.whitesourcesoftware.com/vse_whitesource_bolt/](https://www.whitesourcesoftware.com/vse_whitesource_bolt/ ) で WhiteSource Bolt の担当者とオンライン チャットしてください。
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

@@ -1,18 +1,18 @@
 ---
 title: C++ 用の Microsoft 単体テスト フレームワークの使用
-ms.date: 05/20/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: bcd75724e5124c280d5c3e54bfe870041c432790
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934492"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132127"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Visual Studio で C++ 用の Microsoft 単体テスト フレームワークを使用する
 
@@ -28,9 +28,9 @@ DLL でエクスポートされない関数をテストするときなど、場�
 
 1. 単体テストに必要なヘッダーおよびライブラリ ファイルが含まれるように、プロジェクトのプロパティを変更します。
 
-   1. **ソリューション エクスプローラー**で、テストするプログラムのプロジェクト ノードを右クリックして、**[プロパティ]** > **[構成プロパティ]** > **[VC++ ディレクトリ]** の順に選択します。
+   1. **ソリューション エクスプローラー**で、テストするプログラムのプロジェクト ノードを右クリックして、 **[プロパティ]**  >  **[構成プロパティ]**  >  **[VC++ ディレクトリ]** の順に選択します。
 
-   2. 次の行の下向きの矢印をクリックし、**[\<編集>]** を選択します。 次のパスを追加します。
+   2. 次の行の下向きの矢印をクリックし、 **[\<編集>]** を選択します。 次のパスを追加します。
 
       | ディレクトリ | プロパティ |
       |-| - |
@@ -39,7 +39,7 @@ DLL でエクスポートされない関数をテストするときなど、場�
 
 2. C++ 単体テスト ファイルを追加します。
 
-   - **ソリューション エクスプローラー**でプロジェクト ノードを右クリックし、**[追加]**、**[新しい項目]**、**[C++ ファイル (.cpp)]** の順に選択します。
+   - **ソリューション エクスプローラー**でプロジェクト ノードを右クリックし、 **[追加]** 、 **[新しい項目]** 、 **[C++ ファイル (.cpp)]** の順に選択します。
 
 ## <a name="write-the-tests"></a>テストを作成
 
@@ -47,15 +47,15 @@ DLL でエクスポートされない関数をテストするときなど、場�
 
 テスト モジュール、クラス、およびメソッドを初期化するため、およびテストが完了したときにリソースをクリーンアップするために、特殊なマクロが定義されます。 これらのマクロは、クラスまたはメソッドに最初にアクセスする前に実行されるコードと、最後のテストを実行した後に実行されるコードを生成します。 詳細については、[初期化とクリーンアップ](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup)に関するページを参照してください。
 
-[Assert](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) クラスに静的メソッドを使用して、テスト条件を定義します。 [Logger](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) クラスを使用して、**[出力ウィンドウ]** にメッセージを書き込みます。 テスト メソッドに属性を追加する
+[Assert](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) クラスに静的メソッドを使用して、テスト条件を定義します。 [Logger](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) クラスを使用して、 **[出力ウィンドウ]** にメッセージを書き込みます。 テスト メソッドに属性を追加する
 
 ## <a name="run-the-tests"></a>テストを実行
 
-1. **[テスト]** メニューで、**[Windows]**、**[テスト エクスプローラー]** の順に選択します。
+1. **[テスト]** メニューで、 **[Windows]** 、 **[テスト エクスプローラー]** の順に選択します。
 
-1. ウィンドウに一部のテストしか表示されない場合は、次の方法でテスト プロジェクトをビルドします。**ソリューション エクスプローラー**で、該当するノードを右クリックし、**[ビルド]** または **[リビルド]** を選択します。
+1. ウィンドウに一部のテストしか表示されない場合は、次の方法でテスト プロジェクトをビルドします。**ソリューション エクスプローラー**で、該当するノードを右クリックし、 **[ビルド]** または **[リビルド]** を選択します。
 
-1. **テスト エクスプローラー**で、**[すべて実行]** を選択するか、または実行する特定のテストを選択します。 ブレークポイントを有効にした場合のデバッグ モードでのテストの実行など他のオプションについては、テストを右クリックします。
+1. **テスト エクスプローラー**で、 **[すべて実行]** を選択するか、または実行する特定のテストを選択します。 ブレークポイントを有効にした場合のデバッグ モードでのテストの実行など他のオプションについては、テストを右クリックします。
 
 1. **[出力ウィンドウ]** で、ドロップダウンから **[テスト]** を選択し、`Logger` クラスによって書き出されたメッセージを表示します。
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションで使用可能な CloudPilot 特典について説明します
 searchscope: VS Subscription
-ms.openlocfilehash: 78c72f68c8553e7e80b6f26846c19ffcb5f91184
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 38b857ee9ba385f3b7be12be725712f338b248f7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805365"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032580"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CloudPilot 特典
 
@@ -24,19 +24,19 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
 
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
 
-2. [ツール] カテゴリ内で、CloudPilot 特典タイルを見つけ、**[コードを取得]** をクリックします。
+2. [ツール] カテゴリ内で、CloudPilot 特典タイルを見つけ、 **[コードを取得]** をクリックします。
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot 特典タイル](_img/vs-cloudpilot/vs-cloudpilot-tile-ent.png)
 
 0. コードが正常に取得されたことを知らせるメッセージが表示されます。  **[アクティブ化]** をクリックすると、CloudPilot ページにリダイレクトされます。このページでアクティブ化プロセスを続行できます。  (今すぐアクティブ化しない場合は、サブスクリプション ポータルで CloudPilot タイルにいつでも戻ることができます。  [コードを取得] リンクが [アクティブ化] に変わり、それをクリックすると、アクティブ化プロセスの次のステップに進みます。)
 
-0. ご自分の開発作業の CloudPilot の特典を確認します。  準備ができたら、**[アクティブ化]** ボタンをクリックします。
+0. ご自分の開発作業の CloudPilot の特典を確認します。  準備ができたら、 **[アクティブ化]** ボタンをクリックします。
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot のランディング ページ](_img/vs-cloudpilot/vs-cloudpilot-landing.png)
 
-0. アカウントを作成し、CloudPilot サブスクリプションをアクティブ化するには、Web フォームで、ご自分の連絡先情報を入力し、**[サインアップ]** をクリックします。
+0. アカウントを作成し、CloudPilot サブスクリプションをアクティブ化するには、Web フォームで、ご自分の連絡先情報を入力し、 **[サインアップ]** をクリックします。
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot の登録ページ](_img/vs-cloudpilot/vs-cloudpilot-register.png)
@@ -64,7 +64,6 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 1 つのライセンス、30 日間、1 つのスキャン                                                            |  いいえ。  新しいサブスクライバーのみが使用できます           |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                             |  N/A           |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
-| Visual Studio Dev Essentials | N/A  | 使用できません | N/A |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 
