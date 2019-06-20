@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b76ad81a2c075a11ff55dcbd7fbc5e8a4b3fe7
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431841"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255983"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio でのスナップショットのデバッグについてよく寄せられる質問
 
@@ -169,7 +169,7 @@ App service:
     - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
     > [!WARNING]
-    > アプリケーション設定への変更では、アプリの再起動を開始します。 アプリケーション設定の詳細が見つかります[ここ](https://docs.microsoft.com/azure/app-service/web-sites-configure#app-settings)します。 
+    > アプリケーション設定への変更では、アプリの再起動を開始します。 アプリケーション設定の詳細については、次を参照してください。 [、Azure portal で App Service アプリを構成する](/azure/app-service/web-sites-configure)します。
 
 For AKS:
 1. 更新に対応するセクションを削除する、Dockerfile、 [Docker イメージでの Visual Studio Snapshot Debugger](https://github.com/Microsoft/vssnapshotdebugger-docker)します。
