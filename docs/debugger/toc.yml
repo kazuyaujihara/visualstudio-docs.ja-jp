@@ -38,25 +38,25 @@
   items:
     - name: デバッガーでのコード間の移動
       href: navigating-through-code-with-the-debugger.md
-    - name: ブレークポイントの使用
+    - name: コードを一時停止する
       items:
         - name: ブレークポイントの使用
           href: using-breakpoints.md
         - name: ブレークポイントのトラブルシューティング
           href: troubleshooting-breakpoints.md
-    - name: データの検査
+    - name: データ検査
       items:
-        - name: データの検査
+        - name: デバッガー ウィンドウでデータを検査する
           href: debugger-windows.md
         - name: 変数の検査
           href: autos-and-locals-windows.md
-        - name: ウォッチ変数を設定する
+        - name: ウォッチ変数
           items:
             - name: ウォッチ変数を設定する
               href: watch-and-quickwatch-windows.md
             - name: デバッガー内の式
               items:
-                - name: デバッガー内の式
+                - name: デバッガーの式を使用する
                   href: expressions-in-the-debugger.md
                 - name: 'C# の書式指定子'
                   href: format-specifiers-in-cpp.md
@@ -70,13 +70,13 @@
           href: view-data-values-in-data-tips-in-the-code-editor.md
         - name: ビジュアライザーでの文字列値の表示
           href: view-strings-visualizer.md
-        - name: 逆アセンブリ コードの表示
+        - name: 逆アセンブリ コード
           items:
             - name: 逆アセンブリ コードの表示
               href: how-to-use-the-disassembly-window.md
             - name: メモリ内で 1 ページずつ上下に移動する
               href: how-to-page-up-or-down-in-memory.md
-        - name: レジスタ値の表示
+        - name: レジスタ値
           items:
             - name: レジスタ値の表示
               href: how-to-use-the-registers-window.md
@@ -90,7 +90,7 @@
           href: memory-windows.md
         - name: デバッグ中に XAML のプロパティを調べます。
           href: inspect-xaml-properties-while-debugging.md
-    - name: 呼び出し履歴の表示
+    - name: '[呼び出し履歴]'
       items:
         - name: 呼び出し履歴の表示
           href: how-to-use-the-call-stack-window.md
@@ -98,7 +98,7 @@
           href: map-methods-on-the-call-stack-while-debugging-in-visual-studio.md
         - name: '[呼び出し履歴] ウィンドウの混合コードと不足情報'
           href: mixed-code-and-missing-information-in-the-call-stack-window.md
-    - name: コードを編集してデバッグを続行する
+    - name: コードを一時停止して続行する
       items:
         - name: コードを編集してデバッグを続行する
           href: edit-and-continue.md
@@ -108,13 +108,13 @@
           href: how-to-stop-code-changes.md
         - name: エディット コンティニュ (Visual C++)
           items:
-            - name: エディット コンティニュ (Visual C++)
+            - name: Visual C++ のエディット コンティニュ
               href: edit-and-continue-visual-cpp.md
             - name: サポートされているコード変更 (C++)
               href: supported-code-changes-cpp.md
         - name: 'エディット コンティニュ (Visual C#)'
           items:
-            - name: 'エディット コンティニュ (Visual C#)'
+            - name: 'C# のエディット コンティニュ'
               href: edit-and-continue-visual-csharp.md
             - name: 'エディット コンティニュを使用する (C#)'
               href: how-to-use-edit-and-continue-csharp.md
@@ -122,7 +122,7 @@
               href: supported-code-changes-csharp.md
         - name: エディット コンティニュ (Visual Basic)
           items:
-            - name: エディット コンティニュ (Visual Basic)
+            - name: Visual Basic のエディット コンティニュ
               href: edit-and-continue-visual-basic.md
             - name: エディット コンティニュの中断モード時に編集を適用する
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
@@ -132,7 +132,7 @@
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: デバッガー データの表示
       items:
-        - name: モジュールの表示
+        - name: モジュール
           items:
             - name: モジュールの表示
               href: how-to-use-the-modules-window.md
@@ -140,7 +140,7 @@
               href: how-to-find-which-dll-your-program-crashed-in.md
         - name: スクリプト ドキュメントを表示する
           href: how-to-view-script-documents.md
-    - name: デバッガーのヒントと秘訣
+    - name: ヒントとテクニック
       items:
         - name: デバッガーのヒントと秘訣
           href: debugger-tips-and-tricks.md
@@ -148,7 +148,7 @@
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
         - name: デザイン時にデバッグする
           href: walkthrough-debugging-at-design-time.md
-        - name: Just-In-Time デバッガーを使用してデバッグする
+        - name: Just-In-Time デバッガー
           items:
             - name: Just-In-Time デバッガーを使用してデバッグする
               href: debug-using-the-just-in-time-debugger.md
@@ -156,7 +156,7 @@
               href: just-in-time-debugging-in-visual-studio.md
     - name: デバッグを構成する
       items:
-        - name: デバッガーでの例外の管理
+        - name: 例外
           items:
             - name: デバッガーでの例外の管理
               href: managing-exceptions-with-the-debugger.md
@@ -164,7 +164,7 @@
               href: continuing-execution-after-an-exception.md
             - name: 例外の後にシステム コードを調べる
               href: how-to-examine-system-code-after-an-exception.md
-            - name: ネイティブ ランタイム チェックを使用する
+            - name: ネイティブ ランタイム チェック
               items:
                 - name: ネイティブ ランタイム チェックを使用する
                   href: how-to-use-native-run-time-checks.md
@@ -178,19 +178,19 @@
           href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
         - name: ユーザー コードをデバッグする
           href: just-my-code.md
-        - name: デバッガーの設定と準備
+        - name: デバッガーの設定
           items:
             - name: デバッガーの設定と準備
               href: debugger-settings-and-preparation.md
             - name: デバッガーに関連するプロジェクト設定
               items:
-                - name: デバッガーに関連するプロジェクト設定
+                - name: プロジェクト設定
                   href: debugger-project-settings.md
                 - name: デバッガー設定を指定する
                   href: how-to-specify-debugger-settings.md
                 - name: デバッグ構成とリリース構成を設定する
                   href: how-to-set-debug-and-release-configurations.md
-                - name: C++ デバッグ構成のプロジェクト設定
+                - name: プロジェクト設定 (C++)
                   items:
                     - name: C++ デバッグ構成のプロジェクト設定
                       href: project-settings-for-a-cpp-debug-configuration.md
@@ -202,7 +202,7 @@
                   href: project-settings-for-csharp-debug-configurations.md
                 - name: Visual Basic デバッグ構成のプロジェクト設定
                   href: project-settings-for-a-visual-basic-debug-configuration.md
-            - name: DLL プロジェクトをデバッグする
+            - name: DLL プロジェクト
               items:
                 - name: DLL プロジェクトをデバッグする
                   href: debugging-dll-projects.md
@@ -218,17 +218,17 @@
               href: debugging-and-the-hosting-process.md
             - name: デバッグ用の .NET Framework のバージョンを指定する
               href: how-to-specify-a-dotnet-framework-version-for-debugging.md
-        - name: データのカスタム ビューの作成
+        - name: カスタム ビュー
           items:
             - name: データのカスタム ビューの作成
               href: viewing-data-in-the-debugger.md
-            - name: C++ オブジェクトのカスタム ビューを作成する
+            - name: カスタム ビュー (C++)
               items:
                 - name: C++ オブジェクトのカスタム ビューを作成する
                   href: create-custom-views-of-native-objects.md
                 - name: Visual C++ カスタム ビジュアライザーの互換性
                   href: visual-cpp-custom-visualizer-compatibility.md
-            - name: .managed オブジェクトのカスタム ビューの作成
+            - name: カスタム ビュー (マネージド)
               items:
                 - name: .managed オブジェクトのカスタム ビューの作成
                   href: create-custom-views-of-dot-managed-objects.md
@@ -236,7 +236,7 @@
                   href: using-the-debuggerdisplay-attribute.md
                 - name: 表示する種類をデバッガーに通知する
                   href: using-debuggertypeproxy-attribute.md
-            - name: データのカスタム ビジュアライザーを作成する
+            - name: カスタム ビジュアライザー
               items:
                 - name: データのカスタム ビジュアライザーを作成する
                   href: create-custom-visualizers-of-data.md
@@ -276,7 +276,7 @@
           href: configure-the-windows-firewall-for-remote-debugging.md
         - name: Windows Server 上でのダウンロードをブロック解除する
           href: remote-debugging-unblock-file-download.md
-        - name: リモート デバッグ エラーとトラブルシューティング
+        - name: リモート デバッグ エラーのリファレンス
           items:
             - name: リモート デバッグ エラーとトラブルシューティング
               href: remote-debugging-errors-and-troubleshooting.md
@@ -332,7 +332,7 @@
           href: get-started-debugging-multithreaded-apps.md
         - name: スレッドとプロセスをデバッグするためのツール
           items:
-            - name: スレッドとプロセスをデバッグするためのツール
+            - name: スレッドとプロセスをデバッグする
               href: debug-threads-and-processes.md
             - name: '[並列スタック] ウィンドウを使用する'
               href: using-the-parallel-stacks-window.md
@@ -364,7 +364,7 @@
           href: how-to-set-a-thread-name-in-managed-code.md
     - name: '[IntelliTrace]'
       items:
-        - name: '[IntelliTrace]'
+        - name: IntelliTrace の概要
           href: intellitrace.md
         - name: IntelliTrace でスナップショットを表示する
           href: view-snapshots-with-intellitrace.md
@@ -376,7 +376,7 @@
           href: historical-debugging.md
         - name: 履歴デバッグを使用してアプリを検査する
           href: historical-debugging-inspect-app.md
-        - name: 配置後の問題の診断
+        - name: 配置後
           items:
             - name: 配置後の問題の診断
               href: diagnose-problems-after-deployment.md
@@ -388,7 +388,7 @@
           href: using-saved-intellitrace-data.md
         - name: IntelliTrace 機能拡張の API リファレンス
           href: api-reference-for-intellitrace-extensibility.md
-    - name: Azure サービスをデバッグする
+    - name: Azure サービス
       items:
         - name: Azure サービスをデバッグする
           href: debug-azure-apps.md
@@ -404,17 +404,17 @@
           href: debug-live-azure-apps-troubleshooting.md
         - name: ライブ Azure 仮想マシン アプリの Time Travel Debugging
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
-    - name: 特定のアプリケーションの種類をデバッグする
+    - name: アプリケーションの種類
       items:
         - name: 特定のアプリケーションの種類をデバッグする
           href: debugging-applications.md
         - name: 64 ビット アプリケーションをデバッグする
           href: debug-64-bit-applications.md
-        - name: UWP アプリをデバッグする
+        - name: UWP アプリ
           items:
             - name: UWP アプリをデバッグする
               href: debugging-windows-store-and-windows-universal-apps.md
-            - name: UWP アプリのデバッグ セッションを開始する
+            - name: デバッグ セッションを開始する (UWP)
               items:
                 - name: UWP アプリのデバッグ セッションを開始する
                   href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
@@ -428,7 +428,7 @@
               href: debug-installed-app-package.md
             - name: Blend での XAML のデバッグ
               href: debug-xaml-in-blend.md
-            - name: HTML と CSS をデバッグする
+            - name: HTML と CSS
               items:
                 - name: HTML と CSS をデバッグする
                   href: quickstart-debug-html-and-css.md
@@ -444,11 +444,11 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: Microsoft Store アプリ用コンテンツのプリフェッチ
               href: prefetch-content-for-windows-store-apps.md
-        - name: マネージド コードをデバッグする
+        - name: マネージド コード
           items:
             - name: マネージド コードをデバッグする
               href: debugging-managed-code.md
-            - name: 'デバッグの準備:C#、F#、Visual Basic プロジェクト タイプ'
+            - name: デバッグの準備
               items:
                 - name: 'デバッグの準備:C#、F#、Visual Basic プロジェクト タイプ'
                   href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
@@ -478,7 +478,7 @@
               href: error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md
             - name: .NET Framework ソースをデバッグする
               href: how-to-debug-dotnet-framework-source.md
-            - name: WPF のデバッグ
+            - name: WPF
               items:
                 - name: WPF のデバッグ
                   href: debugging-wpf.md
@@ -488,7 +488,7 @@
                   href: how-to-display-wpf-trace-information.md
             - name: 'F# のデバッグ'
               href: debugging-f-hash.md
-        - name: ネイティブ コードをデバッグする
+        - name: '[ネイティブ コード]'
           items:
             - name: ネイティブ コードをデバッグする
               href: debugging-native-code.md
@@ -504,7 +504,7 @@
               href: how-to-debug-inline-assembly-code.md
             - name: MFC のデバッグ技術
               href: mfc-debugging-techniques.md
-            - name: CRT のデバッグ技術
+            - name: CRT のデバッグ
               items:
                 - name: CRT のデバッグ技術
                   href: crt-debugging-techniques.md
@@ -516,7 +516,7 @@
                   href: debug-versions-of-heap-allocation-functions.md
                 - name: CRT デバッグ ヒープの詳細
                   href: crt-debug-heap-details.md
-                - name: デバッグ用フック関数の作成
+                - name: フック関数
                   items:
                     - name: デバッグ用フック関数の作成
                       href: debug-hook-function-writing.md
@@ -524,7 +524,7 @@
                       href: client-block-hook-functions.md
                     - name: 割り当てフック関数
                       items:
-                        - name: 割り当てフック関数
+                        - name: 割り当てフック関数をデバッグする
                           href: allocation-hook-functions.md
                         - name: 割り当てフック関数と C ランタイムのメモリ割り当て
                           href: allocation-hooks-and-c-run-time-memory-allocations.md
@@ -556,17 +556,17 @@
                   href: how-can-i-debug-windows-api-functions-q.md
                 - name: 停止した場合に MFC を呼び出した関数に戻る
                   href: how-to-get-back-to-the-function-that-called-mfc-if-halted.md
-            - name: COM および ActiveX のデバッグ
+            - name: COM および ActiveX
               items:
                 - name: COM および ActiveX のデバッグ
                   href: com-and-activex-debugging.md
-                - name: COM サーバーおよび COM コンテナーのデバッグ
+                - name: COM サーバーおよび COM コンテナー
                   items:
                     - name: COM サーバーおよび COM コンテナーのデバッグ
                       href: com-server-and-container-debugging.md
                     - name: RPC デバッグを使用して COM クライアントおよびサーバーをデバッグする
                       href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
-                - name: ActiveX コントロールをデバッグする
+                - name: ActiveX コントロール
                   items:
                     - name: ActiveX コントロールをデバッグする
                       href: how-to-debug-an-activex-control.md
@@ -580,7 +580,7 @@
           href: debugging-gpu-code.md
         - name: グラフィックス診断
           href: graphics/toc.yml
-        - name: ASP.NET アプリケーションをデバッグする
+        - name: ASP.NET
           items:
             - name: ASP.NET アプリケーションをデバッグする
               href: how-to-enable-debugging-for-aspnet-applications.md
@@ -596,11 +596,11 @@
               href: walkthrough-debugging-a-web-form.md
             - name: ASP.NET の例外をデバッグする
               href: how-to-debug-aspnet-exceptions.md
-            - name: 'Web アプリケーションをデバッグする:エラーとトラブルシューティング'
+            - name: 'Web アプリ: エラーとトラブルシューティング'
               items:
                 - name: 'Web アプリケーションをデバッグする:エラーとトラブルシューティング'
                   href: debugging-web-applications-errors-and-troubleshooting.md
-                - name: 'Web アプリケーションをデバッグする:トラブルシューティング'
+                - name: 'Web アプリ: トラブルシューティング'
                   items:
                     - name: 'Web アプリケーションをデバッグする:トラブルシューティング'
                       href: debugging-web-applications-troubleshooting.md
@@ -618,7 +618,7 @@
                   href: error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md
                 - name: Web サービスのデバッグ中にタイムアウトになりました。
                   href: error-timeout-while-debugging-web-services.md
-                - name: Web サーバーでデバッグを開始できません。
+                - name: デバッグを開始できない
                   items:
                     - name: Web サーバーでデバッグを開始できません。
                       href: error-unable-to-start-debugging-on-the-web-server.md
@@ -626,7 +626,7 @@
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: Web サーバーは正しく構成されていません。
                       href: error-the-web-server-is-not-configured-correctly.md
-        - name: Web アプリケーションをデバッグする
+        - name: Web アプリ
           items:
             - name: Web アプリケーションをデバッグする
               href: debugging-web-applications.md
@@ -634,19 +634,19 @@
               href: javascript-console-commands.md
             - name: ショートカット キー (HTML および JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
-            - name: クライアント側スクリプトのデバッグ
+            - name: クライアント側スクリプト
               items:
                 - name: クライアント側スクリプトのデバッグ
                   href: client-side-script-debugging.md
                 - name: スクリプト デバッグの制約
                   href: limitations-on-script-debugging.md
-                - name: スクリプトにアタッチする
+                - name: アタッチ (スクリプト)
                   items:
                     - name: スクリプトにアタッチする
                       href: how-to-attach-to-script.md
                     - name: '警告 :スクリプト デバッグが無効'
                       href: warning-script-debugging-disabled.md
-        - name: WCF サービスをデバッグする
+        - name: WCF サービス
           items:
             - name: WCF サービスをデバッグする
               href: debugging-wcf-services.md
@@ -656,7 +656,7 @@
               href: how-to-step-into-wcf-services.md
             - name: セルフホストされている WCF サービスをデバッグする
               href: how-to-debug-a-self-hosted-wcf-service.md
-    - name: ダンプ ファイルの使用
+    - name: ダンプ ファイル
       items:
         - name: ダンプ ファイルの使用
           href: using-dump-files.md
@@ -674,7 +674,7 @@
           href: choose-breakpoints-dialog-box.md
         - name: '[リモート デバッグのファイアウォールの構成] ダイアログ ボックス'
           href: configure-firewall-for-remote-debugging-dialog-box.md
-        - name: '[デバッグ] ([オプション] ダイアログ ボックス)'
+        - name: 'デバッグ, オプション'
           items:
             - name: '[デバッグ] ([オプション] ダイアログ ボックス)'
               href: debugging-options-dialog-box.md
@@ -700,7 +700,7 @@
           href: symbol-load-information-dialog-box.md
         - name: '[ブレークポイントのヒット時] ダイアログ ボックス'
           href: when-breakpoint-is-hit-dialog-box.md
-        - name: デバッグ エラーと警告関連のダイアログ ボックス
+        - name: デバッグ エラーと警告
           items:
             - name: デバッグ エラーと警告関連のダイアログ ボックス
               href: debugging-errors-and-warning-dialog-boxes.md
@@ -756,11 +756,11 @@
               href: mixed-mode-debugging-is-only-supported-when-using-microsoft-dotnet-framework-2-0-or-3-0.md
     - name: Debug Interface Access SDK
       href: debug-interface-access/debug-interface-access-sdk.md
-    - name: Spy++ ヘルプ
+    - name: Spy++
       items:
         - name: Spy++ ヘルプ
           href: spy-increment-help.md
-        - name: Spy++ の使用
+        - name: Spy++ ガイド
           items:
             - name: Spy++ の使用
               href: using-spy-increment.md
@@ -778,11 +778,11 @@
               href: how-to-change-fonts.md
             - name: Spy++ ツリーの展開と折りたたみを行う
               href: how-to-expand-and-collapse-spy-increment-trees.md
-        - name: Spy++ ビュー
+        - name: Spy++ のビュー
           items:
             - name: Spy++ ビュー
               href: spy-increment-views.md
-            - name: ウィンドウ ビュー
+            - name: Windows
               items:
                 - name: ウィンドウ ビュー
                   href: windows-view.md
@@ -792,7 +792,7 @@
                   href: how-to-search-for-a-window-in-windows-view.md
                 - name: ウィンドウのプロパティを表示する
                   href: how-to-display-window-properties.md
-            - name: メッセージ ビュー
+            - name: '[メッセージ]'
               items:
                 - name: メッセージ ビュー
                   href: messages-view.md
@@ -808,7 +808,7 @@
                   href: message-codes.md
                 - name: メッセージのプロパティを表示する
                   href: how-to-display-message-properties.md
-            - name: プロセス ビュー
+            - name: プロセス
               items:
                 - name: プロセス ビュー
                   href: processes-view.md
@@ -816,7 +816,7 @@
                   href: how-to-search-for-a-process-in-processes-view.md
                 - name: プロセスのプロパティを表示する
                   href: how-to-display-process-properties.md
-            - name: スレッド ビュー
+            - name: スレッド
               items:
                 - name: スレッド ビュー
                   href: threads-view.md
@@ -826,11 +826,11 @@
                   href: how-to-display-thread-properties.md
         - name: Spy++ リファレンス
           items:
-            - name: Spy++ リファレンス
+            - name: Spy++ リファレンスの概要
               href: spy-increment-reference.md
             - name: メニュー コマンド
               items:
-                - name: メニュー コマンド
+                - name: メニュー コマンドの概要
                   href: menu-commands.md
                 - name: '[スパイ] メニューのコマンド'
                   href: spy-menu-commands.md
@@ -850,7 +850,7 @@
               href: font-dialog-box-microsoft-spy-increment-help.md
             - name: Spy++ ビュー用の検索ツール
               items:
-                - name: Spy++ ビュー用の検索ツール
+                - name: Spy++ ビュー用の検索ツールの概要
                   href: search-tools-for-spy-increment-views.md
                 - name: '[ウィンドウ検索] ダイアログ ボックス'
                   href: find-window-dialog-box.md
@@ -862,7 +862,7 @@
                   href: process-search-dialog-box.md
                 - name: '[スレッド検索] ダイアログ ボックス'
                   href: thread-search-dialog-box.md
-            - name: '[ウィンドウ プロパティ] ダイアログ ボックス'
+            - name: ウィンドウ プロパティ
               items:
                 - name: '[ウィンドウ プロパティ] ダイアログ ボックス'
                   href: window-properties-dialog-box.md
@@ -876,7 +876,7 @@
                   href: class-tab-window-properties-dialog-box.md
                 - name: '[プロセス] タブ ([ウィンドウ プロパティ] ダイアログ ボックス)'
                   href: process-tab-window-properties-dialog-box.md
-            - name: '[メッセージ オプション] ダイアログ ボックス'
+            - name: メッセージ オプション
               items:
                 - name: '[メッセージ オプション] ダイアログ ボックス'
                   href: message-options-dialog-box.md
@@ -888,7 +888,7 @@
                   href: output-tab-message-options-dialog-box.md
             - name: '[メッセージ プロパティ] ダイアログ ボックス'
               href: message-properties-dialog-box.md
-            - name: '[プロセス プロパティ] ダイアログ ボックス'
+            - name: プロセス プロパティ
               items:
                 - name: '[プロセス プロパティ] ダイアログ ボックス'
                   href: process-properties-dialog-box.md
@@ -900,7 +900,7 @@
                   href: page-file-tab-process-properties-dialog-box.md
                 - name: '[スペース] タブ ([プロセス プロパティ] ダイアログ ボックス)'
                   href: space-tab-process-properties-dialog-box.md
-            - name: '[スレッド プロパティ] ダイアログ ボックス'
+            - name: スレッド プロパティ
               items:
                 - name: '[スレッド プロパティ] ダイアログ ボックス'
                   href: thread-properties-dialog-box.md
@@ -908,7 +908,7 @@
                   href: general-tab-thread-properties-dialog-box.md
             - name: その他のダイアログ ボックス
               items:
-                - name: その他のダイアログ ボックス
+                - name: 追加のダイアログ ボックス
                   href: other-dialog-boxes.md
                 - name: '[Microsoft Spy++ のバージョン情報]'
                   href: about-microsoft-spy-increment.md
