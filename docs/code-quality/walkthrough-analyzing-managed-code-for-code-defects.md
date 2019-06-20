@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
-author: gewarren
-ms.author: gewarren
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 3a2ce9b719f77377abf5b2bebd81b03a2606258b
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715275"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195304"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>チュートリアル: コードの欠陥のマネージ コードの分析
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>チュートリアル: コードの欠陥を検索する静的コード分析の使用
 
 このチュートリアルでは、コード分析ツールを使用してマネージ プロジェクトのコードの不具合を分析します。
 
-このチュートリアルでは、.NET のデザイン ガイドラインに準拠するため、.NET マネージ コード アセンブリを分析するコード分析を使用するプロセスを手順します。
+このチュートリアルでは、静的コード分析を使用して、.NET デザイン ガイドラインへの適合性、.NET マネージ コード アセンブリを分析するプロセスを手順します。
 
 ## <a name="create-a-class-library"></a>クラス ライブラリを作成します。
 
