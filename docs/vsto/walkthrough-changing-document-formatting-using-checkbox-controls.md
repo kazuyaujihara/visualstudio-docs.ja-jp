@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: CheckBox コントロールを使用したドキュメント書式を変更します。'
+title: CheckBox コントロールを使用したドキュメント書式を変更します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 284b7f501d729a89ff31ab9fee187d3f3e19d4b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24c3cb8d76551bb477f9c13cc56c313519f3b617
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982093"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328725"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>チュートリアル: CheckBox コントロールを使用したドキュメント書式を変更します。
   このチュートリアルでは、Microsoft Office Word のドキュメント レベルのカスタマイズでの Windows フォーム コントロールを使用して、テキストの書式設定を変更する方法を示します。

@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: キャッシュされたデータセットを使用したマスター/詳細関係を作成します。'
+title: キャッシュされたデータセットを使用したマスター/詳細関係を作成します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3380b9c5302ed6e8a1bf6965f5fb1f259e3a6682
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0acf84dd983a8c10f2af526ae0bb904eaa90a360
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438550"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328365"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>チュートリアル: キャッシュされたデータセットを使用したマスター/詳細関係を作成します。
   このチュートリアルでは、ワークシートで、マスター/詳細関係を作成して、ソリューションをオフラインで使用できるように、データのキャッシュを示します。

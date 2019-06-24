@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: 最初の Excel 用ドキュメント レベルのカスタマイズを作成します。'
+title: 最初の Excel 用ドキュメント レベルのカスタマイズを作成します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b3f9763fd670495de9ae4ef8b35a282d644ffe4d
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438526"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328388"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>チュートリアル: 最初の Excel 用ドキュメント レベルのカスタマイズを作成します。
   この入門編のチュートリアルでは、Microsoft Office Excel 用のドキュメント レベルのカスタマイズを作成する方法について説明します。 この種のソリューションで作成した機能は、特定のブックが開いている場合にのみ使用可能です。 ドキュメント レベルのカスタマイズでは、ブックが開いたときに新しいリボン タブを表示するなどの、アプリケーション全体の変更を行うことはできません。
@@ -73,13 +73,13 @@ ms.locfileid: "63438526"
 
    - *FirstWorkbookCustomization*.xlsx は、プロジェクト内の Excel ブックを表します。 すべてのワークシートとグラフが含まれます。
 
-   - Sheet1 (*.vb* Visual basic のファイルまたは *.cs* Visual c# ファイル) のブック内の最初のワークシートのデザイン画面とコードを提供します。 詳細については、次を参照してください。 [Worksheet ホスト項目](../vsto/worksheet-host-item.md)します。
+   - Sheet1 ( *.vb* Visual basic のファイルまたは *.cs* Visual c# ファイル) のブック内の最初のワークシートのデザイン画面とコードを提供します。 詳細については、次を参照してください。 [Worksheet ホスト項目](../vsto/worksheet-host-item.md)します。
 
-   - Sheet2 (*.vb* Visual basic のファイルまたは *.cs* Visual c# ファイル)-ブックの 2 番目のワークシートのデザイン画面とコードを提供します。
+   - Sheet2 ( *.vb* Visual basic のファイルまたは *.cs* Visual c# ファイル)-ブックの 2 番目のワークシートのデザイン画面とコードを提供します。
 
-   - Sheet3 (*.vb* Visual basic のファイルまたは *.cs* Visual c# ファイル) の 3 番目のワークシートをブック内のデザイン画面とコードを提供します。
+   - Sheet3 ( *.vb* Visual basic のファイルまたは *.cs* Visual c# ファイル) の 3 番目のワークシートをブック内のデザイン画面とコードを提供します。
 
-   - ThisWorkbook (*.vb* Visual basic のファイルまたは *.cs* Visual c# ファイル) のデザイン画面とブック レベルのカスタマイズのコードが含まれています。 詳細については、次を参照してください。 [Workbook ホスト項目](../vsto/workbook-host-item.md)します。
+   - ThisWorkbook ( *.vb* Visual basic のファイルまたは *.cs* Visual c# ファイル) のデザイン画面とブック レベルのカスタマイズのコードが含まれています。 詳細については、次を参照してください。 [Workbook ホスト項目](../vsto/workbook-host-item.md)します。
 
      デザイナーで、Sheet1 コード ファイルが自動的に開かれます。
 

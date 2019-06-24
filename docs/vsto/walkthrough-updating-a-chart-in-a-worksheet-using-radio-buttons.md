@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: オプション ボタンを使用してワークシートのグラフを更新する方法'
+title: ラジオ ボタンを使用してワークシートでグラフを更新します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a827e688e260adcb93e81b55520c747dd99ed0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86e289ad8a316f7026d6fda46bb3e424164437fb
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421748"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67329007"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>チュートリアル: オプション ボタンを使用してワークシートのグラフを更新する方法
   このチュートリアルでは、Microsoft Office Excel ワークシートでラジオ ボタンを使用して、オプションですばやく切り替える方法をユーザーに提供の基本を説明します。 この場合、オプションは、グラフのスタイルを変更します。
