@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: VSTO アドインにおける実行時のドキュメントにコントロールを追加します。'
+title: VSTO アドインで実行時にドキュメントにコントロールを追加します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ac01f32a14589837d0cb7707cb3d2f8946bd0a
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982418"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328397"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>チュートリアル: VSTO アドインにおける実行時のドキュメントにコントロールを追加します。
   VSTO アドインを使用して、開いている Microsoft Office Word 文書にコントロールを追加できます。 このチュートリアルは、リボンを使用してユーザーを追加できるようにする方法を示します、<xref:Microsoft.Office.Tools.Word.Controls.Button>または<xref:Microsoft.Office.Tools.Word.RichTextContentControl>ドキュメントにします。

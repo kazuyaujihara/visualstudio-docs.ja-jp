@@ -1,5 +1,5 @@
 ---
-title: '方法: 範囲の先頭と末尾の文字をプログラムで取得します。'
+title: 作業を開始 (&) 文字の範囲をプログラムで終了
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041693d5d81fb13e812b260171ec95a2bd183a6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e0f04d5f70c99ea3404a95b04a7ea668a37e0f2
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955668"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328950"
 ---
 # <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>方法: 範囲の先頭と末尾の文字をプログラムで取得します。
   この例では、範囲の開始位置と終了位置の文字位置を取得する方法を示します。

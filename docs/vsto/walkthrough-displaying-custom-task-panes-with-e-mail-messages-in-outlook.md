@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: Outlook で電子メール メッセージと共にカスタム作業ウィンドウを表示します。'
+title: Outlook で電子メール メッセージと共にカスタム作業ウィンドウを表示します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fa86c07ba964ca918c7ad225d5152b31a2e1d9ae
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440883"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328341"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>チュートリアル: Outlook で電子メール メッセージと共にカスタム作業ウィンドウを表示します。
   このチュートリアルでは、一意のインスタンスが作成または開かれた各電子メール メッセージと共にカスタム作業ウィンドウの表示方法を示します。 ユーザーは、各電子メール メッセージのリボンにあるボタンを使用して、カスタム作業ウィンドウを表示または非表示にすることができます。
