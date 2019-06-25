@@ -4,9 +4,7 @@ description: Visual Studio を使用し、Azure クラウド サービスのロ�
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
@@ -50,8 +48,6 @@ Visual Studio で Azure クラウド サービスを作成すると、2 つの�
 
     > [!IMPORTANT]
     > 設定の対象が "すべての構成" に限定されるプロパティが一部存在します。特定のサービス構成を選択した場合、それらのプロパティは無効になります。 これらのプロパティを編集するには、**[すべての構成]** を選択する必要があります。
-    >
-    >
 
     ![Azure クラウド サービスのサービス構成の一覧](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 

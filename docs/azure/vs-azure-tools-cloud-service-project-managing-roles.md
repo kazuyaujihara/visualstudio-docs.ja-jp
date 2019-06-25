@@ -4,9 +4,7 @@ description: Visual Studio で Azure クラウド サービスのロールを追
 author: ghogen
 manager: jillfra
 assetId: 5ec9ae2e-8579-4e5d-999e-8ae05b629bd1
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
@@ -30,7 +28,7 @@ Visual Studio で Azure クラウド サービス プロジェクトに Web ロ�
 
 1. **[ロール]** ノードを右クリックして、コンテキスト メニューを表示します。 コンテキスト メニューの **[追加]** を選択し、現在のソリューションから既存の Web ロールまたは worker ロールを選択するか、Web ロール プロジェクトまたは worker ロール プロジェクトを作成します。 ASP.NET Web アプリケーション プロジェクトなどの適切なプロジェクトを選択し、ロール プロジェクトに関連付けることもできます。
 
-    ![Azure クラウド サービス プロジェクトにロールを追加するメニュー オプション](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
+   ![Azure クラウド サービス プロジェクトにロールを追加するメニュー オプション](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
 
 ## <a name="removing-a-role-from-an-azure-cloud-service"></a>Azure クラウド サービスからロールを削除する
 Visual Studio で Azure クラウド サービス プロジェクトから Web ロールまたは worker ロールを削除するには、次の手順に従います。
@@ -43,7 +41,7 @@ Visual Studio で Azure クラウド サービス プロジェクトから Web �
 
 1. 削除するノードを右クリックし、コンテキスト メニューの **[削除]** を選択します。
 
-    ![Azure クラウド サービスにロールを追加するメニュー オプション](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
+   ![Azure クラウド サービスにロールを追加するメニュー オプション](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
 
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Azure クラウド サービス プロジェクトにロールを再度追加する
 クラウド サービス プロジェクトからロールを削除し、後からそのロールをプロジェクトに戻す場合は、エンドポイントや診断情報など、ロールの宣言と基本属性のみが追加されます。 `ServiceDefinition.csdef` ファイルまたは `ServiceConfiguration.cscfg` ファイルにリソースや参照は追加されません。 この情報を追加する場合は、これらのファイルに手動で情報を追加し直す必要があります。

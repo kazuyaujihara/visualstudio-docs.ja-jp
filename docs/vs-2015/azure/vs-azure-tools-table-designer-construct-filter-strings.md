@@ -1,18 +1,16 @@
 ---
 title: テーブル デザイナーのフィルター文字列の作成 | Microsoft Docs
 description: テーブル デザイナー用のフィルター文字列の作成
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 11/18/2016
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 11/18/2016
+ms.author: ghogen
 ms.openlocfilehash: ab38ffd1f94e6c8c432d25d8408a0209e4f96e30
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
@@ -43,9 +41,9 @@ WCF Data Services は、 [Open Data Protocol](http://go.microsoft.com/fwlink/p/?
 
 フィルター文字列を作成するときに重要となる規則は次のとおりです。
 
-- プロパティを値と比較するには、論理演算子を使用します。 プロパティを動的な値と比較することはできません。式の 1 つの辺は定数である必要があります。
-- フィルター文字列のすべての要素は大文字と小文字が区別されます。
-- フィルターで有効な結果を得るためには、定数値をプロパティと同じデータ型にする必要があります。 サポートされているプロパティ型の詳細については、 [Table サービス データ モデル](http://go.microsoft.com/fwlink/p/?LinkId=400448)に関するページを参照してください。
+* プロパティを値と比較するには、論理演算子を使用します。 プロパティを動的な値と比較することはできません。式の 1 つの辺は定数である必要があります。
+* フィルター文字列のすべての要素は大文字と小文字が区別されます。
+* フィルターで有効な結果を得るためには、定数値をプロパティと同じデータ型にする必要があります。 サポートされているプロパティ型の詳細については、 [Table サービス データ モデル](http://go.microsoft.com/fwlink/p/?LinkId=400448)に関するページを参照してください。
 
 ## <a name="filtering-on-string-properties"></a>文字列プロパティのフィルター処理
 文字列のプロパティを条件としてフィルター処理を行うには、文字列定数を単一引用符で囲みます。
@@ -94,5 +92,3 @@ DateTime 値を条件としてフィルター処理を行うには、**datetime*
 次の例は、CustomerSince プロパティが 2008 年 7 月 10 日と等しいエンティティを返します。
 
     CustomerSince eq datetime'2008-07-10T00:00:00Z'
-
-<!-- Update_Description: update metedata properties -->
