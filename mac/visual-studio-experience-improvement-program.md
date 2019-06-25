@@ -30,7 +30,7 @@ VSCEIP は既定で有効になっています。 次の手順で、オフにし
 
     ![参加の設定を反映するようにラジオ ボタンを選択します。](media/visual-studio-experience-improvement-program-image1.png)
 
-[!INCLUDE [GDPR-related guidance](../../docs/misc/includes/gdpr-hybrid-note.md)]
+[!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="see-also"></a>関連項目
 
