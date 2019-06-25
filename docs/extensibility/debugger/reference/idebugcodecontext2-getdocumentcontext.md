@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6465724fe14d43781730abc25b050ae0bcd2d2b5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a12838db0687fd7ebe20a5c576db0e06ece49107
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317478"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342410"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 このコードのコンテキストに対応するドキュメントのコンテキストを取得します。 ドキュメントのコンテキストでは、この命令を生成したソース コードに対応するソース ファイル内の位置を表します。
@@ -41,10 +41,10 @@ int GetDocumentContext( 
 
 ## <a name="parameters"></a>パラメーター
 `ppSrcCxt`\
-[out]返します、 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)コードのコンテキストに対応するオブジェクト。
+[out]返します、 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)コードのコンテキストに対応するオブジェクト。 場合`S_OK`返されるか、この必要があります以外`null`します。
 
 ## <a name="return-value"></a>戻り値
- 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。
+ 成功した場合、返します`S_OK`、それ以外のエラー コードを返します。 デバッグ エンジンなどでエラー コードを返す必要があります`E_FAIL`ときに、`out`パラメーターが`null`コード コンテキスト関連付けられている送信元の位置がない場合などです。
 
 ## <a name="remarks"></a>Remarks
  一般に、ドキュメント コンテキスト見なすことができますのソース ファイル内の位置として、コードのコンテキストはコード命令の実行、ストリーム内の位置。
