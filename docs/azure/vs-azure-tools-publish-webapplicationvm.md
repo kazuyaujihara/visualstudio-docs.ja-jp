@@ -1,18 +1,14 @@
 ---
 title: Publish-WebApplicationVM | Microsoft Docs
 description: 仮想マシンに Web アプリケーションをデプロイする方法を学習します。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
-ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 11/11/2016
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 11/11/2016
+ms.author: ghogen
 ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
@@ -25,7 +21,7 @@ ms.locfileid: "62572286"
 
 ```
 Publish-WebApplicationVM
--Configuration <configuration>
+–Configuration <configuration>
 -SubscriptionName <subscriptionName>
 -WebDeployPackage <packageName>
 -VMPassword @{Name = "name"; Password = "password")
@@ -122,7 +118,7 @@ JSON 構成ファイルではデプロイ対象の詳細が指定されます。
         "cloudService": {
             "name": "myvmname",
             "affinityGroup": "",
-            "location": "China North",
+            "location": "West US",
             "virtualNetwork": "",
             "subnet": "",
             "availabilitySet": "",
@@ -184,6 +180,3 @@ JSON 構成ファイルではデプロイ対象の詳細が指定されます。
 ```
 
 プロビジョニング対象が変更されるように JSON 構成ファイルを編集できます。 仮想マシンとクラウド サービスは必須ですが、データベースのセクションは省略可能です。
-
-
-<!-- Update_Description: update metedata properties -->
