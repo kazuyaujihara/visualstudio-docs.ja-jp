@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3831cbc484fde7c61dbe1baf5ecd9ab07556a7f5
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352039"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342411"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>方法: プロジェクト テンプレートにウィザードの使用
 
@@ -68,7 +68,7 @@ Visual Studio SDK の一部では、プロジェクト テンプレート プロ
 
 3. VSIX プロジェクトにアセットとしてのアセンブリを追加します。 開く、 *source.extension.vsixmanifest*選択ファイルを開き、**資産**タブ。**新しい資産の追加** ウィンドウの**型**選択**microsoft.visualstudio.assembly**の**ソース**選択**A現在のソリューションでプロジェクト**、および**プロジェクト**選択**MyProjectWizard**します。
 
-4. VSIX プロジェクトに次の参照を追加します。 (で**ソリューション エクスプ ローラー**、[VSIX プロジェクト ノードで、次のように選択します**参照**、右クリックし、**参照の追加**。)。**参照の追加**ダイアログで、 **Framework** ] タブで、検索、 **System.Windows フォーム**アセンブリを選択します。 ここで選択、**拡張**タブ。検索、 **EnvDTE**アセンブリを選択します。 また、 **Microsoft.VisualStudio.TemplateWizardInterface**アセンブリを選択します。 **[OK]** をクリックします。
+4. VSIX プロジェクトに次の参照を追加します。 (で**ソリューション エクスプ ローラー**、[VSIX プロジェクト ノードで、次のように選択します**参照**、右クリックし、**参照の追加**。)。**参照の追加**ダイアログで、 **Framework** ] タブで、検索、 **System.Windows フォーム**アセンブリを選択します。 検索および選択、**システム**と**System.Drawing**アセンブリ。 ここで選択、**拡張**タブ。検索、 **EnvDTE**アセンブリを選択します。 また、 **Microsoft.VisualStudio.TemplateWizardInterface**アセンブリを選択します。 **[OK]** をクリックします。
 
 5. VSIX プロジェクトに、ウィザード実装するためのクラスを追加します。 (で**ソリューション エクスプ ローラー**で VSIX プロジェクト ノードを右クリックし、選択**追加**、し**新しい項目の**、し**クラス**)。クラスの名前**WizardImplementation**します。
 
@@ -157,7 +157,7 @@ Visual Studio SDK の一部では、プロジェクト テンプレート プロ
 
    - <xref:System.Object>パラメーターのセットを含む配列が Visual Studio によってウィザードに渡されます。
 
-     この例では、ユーザー入力フォームから <xref:System.Collections.Generic.Dictionary%602> パラメーターにパラメーター値を追加します。 プロジェクト内の `$custommessage$` パラメーターのすべてのインスタンスは、ユーザーが入力したテキストと置き換えられます。 次のアセンブリをプロジェクトに追加します。**システム**と**System.Drawing**します。
+     この例では、ユーザー入力フォームから <xref:System.Collections.Generic.Dictionary%602> パラメーターにパラメーター値を追加します。 プロジェクト内の `$custommessage$` パラメーターのすべてのインスタンスは、ユーザーが入力したテキストと置き換えられます。
 
 7. ここで作成、**されている UserInputForm**します。 *WizardImplementation.cs*ファイルを終了した後、次のコードを追加、`WizardImplementation`クラス。
 
