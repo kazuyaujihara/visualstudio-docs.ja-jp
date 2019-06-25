@@ -1,18 +1,14 @@
 ---
 title: Publish-WebApplicationWebSite (Windows PowerShell スクリプト) | Microsoft Docs
 description: Web プロジェクトを Azure Web サイトに発行する方法について説明します。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
-ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 11/11/2016
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 11/11/2016
+ms.author: ghogen
 ms.openlocfilehash: 2e5bd615e83c56a257e093c42fca2a98c5a3efd8
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
@@ -25,13 +21,12 @@ ms.locfileid: "62427443"
 Web プロジェクトを Azure Web サイトに発行します。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
 
     Publish-WebApplicationWebSite
-    -Configuration <configuration>
+    –Configuration <configuration>
     -SubscriptionName <subscriptionName>
     -WebDeployPackage <packageName>
     -DatabaseServerPassword @{Name = "name"; Password = "password"}
     -SendHostMessagesToOutput
     -Verbose
-
 
 ## <a name="configuration"></a>構成
 デプロイの詳細が記述されている JSON 構成ファイルへのパス。
@@ -102,7 +97,7 @@ JSON 構成ファイルではデプロイ対象の詳細が指定されます。
         "environmentSettings": {
             "webSite": {
                 "name": "WebApplication10554",
-                "location": "China North"
+                "location": "West US"
             },
             "databases": [
                 {
@@ -114,7 +109,7 @@ JSON 構成ファイルではデプロイ対象の詳細が指定されます。
                     "edition": "",
                     "size": "",
                     "collation": "",
-                    "location": "China North"
+                    "location": "West US"
                 }
             ]
         }
@@ -124,6 +119,3 @@ JSON 構成ファイルは、デプロイ対象を変更するように編集で
 
 ## <a name="next-steps"></a>次の手順
 詳細については、「 [Publish-WebApplicationVM (Windows PowerShell スクリプト)](vs-azure-tools-publish-webapplicationvm.md)
-
-
-<!-- Update_Description: update metedata properties -->
