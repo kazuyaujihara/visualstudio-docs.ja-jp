@@ -4,8 +4,6 @@ description: Visual Studio から Azure にアプリケーションを発行し�
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -40,6 +38,6 @@ Visual Studio から Azure にアプリケーションを発行したり、既�
 ## <a name="next-steps"></a>次の手順
 
 - [Web Apps の概要](https://docs.microsoft.com/azure/app-service/)
-- [Azure App Service へのアプリのデプロイ](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
+- [Azure App Service へのアプリのデプロイ](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
 - [Visual Studio を使用した Web ジョブの展開](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [クラウド サービスの作成とデプロイ](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
