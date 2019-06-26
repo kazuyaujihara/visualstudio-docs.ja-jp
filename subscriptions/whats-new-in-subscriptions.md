@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: dc243e057e3e0d4eec6ea314b0e7aa0778d6c0dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 647009d7e01cc821bdf4fa6a573e6caa73cb7794
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969404"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259489"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの新機能
 
@@ -35,7 +35,7 @@ ms.locfileid: "62969404"
 
    ![[エクスポート] ボタンを使用して、サブスクライバー リストを Excel にエクスポート](media/export-subscriber-list-to-csv.png)
 
-* [**一括編集**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit): 複数のサブスクライバーのサブスクリプション情報を一括で編集します。
+* [**一括編集**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-using-bulk-edit): 複数のサブスクライバーのサブスクリプション情報を一括で編集します。
 
   ![[一括編集] ボタンを使用して複数のユーザーを編集](media/bulk-edit-multiple-subscribers.png)
 
