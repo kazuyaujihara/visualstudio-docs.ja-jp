@@ -10,11 +10,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 703d1595373f29926984c5380ba3167083a4318c
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848984"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259733"
 ---
 ## <a name="azure-development-build-tools"></a>Azure 開発ビルド ツール
 
@@ -141,7 +141,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C# および Visual Basic Ros
 
 **ID:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
 
-**説明:**.NET Core、ASP.NET Core、HTML/JavaScript、コンテナーを使用してアプリケーションをビルドするためのツール。
+**説明:** .NET Core、ASP.NET Core、HTML/JavaScript、コンテナーを使用してアプリケーションをビルドするためのツール。
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 

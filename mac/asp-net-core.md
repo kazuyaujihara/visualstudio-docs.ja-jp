@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 257d60d87a743d5c5e1099ee443c7bdb38055cca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53fd740d8a32954de566ab7d383004e4f503ca2c
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985625"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258901"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core の概要
 
@@ -23,7 +23,7 @@ ms.locfileid: "62985625"
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Visual Studio for Mac で ASP.NET Core を作成する
 
-Visual Studio for Mac を開きます。 スタート画面で、**[新しいプロジェクト]** を選択します。
+Visual Studio for Mac を開きます。 スタート画面で、 **[新しいプロジェクト]** を選択します。
 
 ![[新しいプロジェクト] ダイアログ](media/asp-net-core-2019-new-asp-core.png)
 
@@ -38,7 +38,7 @@ ASP.NET Core アプリケーションの作成を開始するためのテンプ�
 
 ![ASP.NET プロジェクト オプション](media/asp-net-core-2019-new-asp-core.png)
 
-**[ASP.NET Core Empty Web Application]\(ASP.NET Core 空の Web アプリケーション\)** を選択し、**[次へ]** を押します。 プロジェクトに名前を付け、**[作成]** を押します。 これで新しい ASP.NET Core アプリが作成されます。下の画像のようになります。
+**[ASP.NET Core Empty Web Application]\(ASP.NET Core 空の Web アプリケーション\)** を選択し、 **[次へ]** を押します。 プロジェクトに名前を付け、 **[作成]** を押します。 これで新しい ASP.NET Core アプリが作成されます。下の画像のようになります。
 
 ![新しい ASP.NET Core の空のプロジェクト](media/asp-net-core-2019-empty-project.png)
 
@@ -142,7 +142,7 @@ MVC の使用方法については、「[Overview of ASP.NET Core MVC](/aspnet/c
 
 コントローラーは次のように追加します。
 
-1. プロジェクト名を右クリックし、**[追加]、[新しいファイル]** の順に選択します。 **[全般]、[空のクラス]** を選択し、コントローラー名を入力します。
+1. プロジェクト名を右クリックし、 **[追加]、[新しいファイル]** の順に選択します。 **[全般]、[空のクラス]** を選択し、コントローラー名を入力します。
 
     ![[新しいファイル] ダイアログ](media/asp-net-core-image8.png)
 
@@ -169,9 +169,9 @@ MVC の使用方法については、「[Overview of ASP.NET Core MVC](/aspnet/c
     }
     ```
 
-3. **[依存関係]** フォルダーを右クリックし、**[パッケージの追加...]** を選択して `Microsoft.AspNetCore.Mvc` 依存関係をプロジェクトに追加します。
+3. **[依存関係]** フォルダーを右クリックし、 **[パッケージの追加...]** を選択して `Microsoft.AspNetCore.Mvc` 依存関係をプロジェクトに追加します。
 
-4. 検索ボックスを利用し、`Microsoft.AspNetCore.Mvc` の NuGet ライブラリを参照し、**[パッケージの追加]** を選択します。 インストールには数分かかることがあります。必要な依存関係のためにさまざまなライセンスに同意するように求められることがあります。
+4. 検索ボックスを利用し、`Microsoft.AspNetCore.Mvc` の NuGet ライブラリを参照し、 **[パッケージの追加]** を選択します。 インストールには数分かかることがあります。必要な依存関係のためにさまざまなライセンスに同意するように求められることがあります。
 
     ![Nuget を追加する](media/asp-net-core-image9.png)
 
@@ -236,7 +236,7 @@ Mac OS 10.12 (Sierra) 以降に .NET Core を手動インストールする場�
 
 このガイドでは、ASP.NET Core の概要を説明しました。 ASP.NET Core とは何か、それを利用する状況、Visual Studio for Mac で使用する場合について説明しました。
 ここから先の手順については、次のガイドを参照してください。
-- [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) ドキュメント。
+- [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-apis-and-web-ui-using-aspnet-core-mvc) ドキュメント。
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (ネイティブ モバイル アプリケーションのバックエンド サービスを作成する)。ここでは、Xamarin.Forms アプリのために ASP.NET Core を利用して REST サービスをビルドする方法について解説しています。
 - [ASP.NET Core 実践ラボ](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
 
