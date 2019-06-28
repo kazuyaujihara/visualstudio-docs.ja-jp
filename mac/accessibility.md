@@ -55,9 +55,9 @@ Visual Studio for Mac の macOS 支援技術のサポートは、既定ではオ
 
 ## <a name="how-to-enable-and-use-voiceover"></a>方法: VoiceOver を有効にして使用する
 
-VoiceOver を有効または無効にするには、**&#8984; + F5** キーを押します。
+VoiceOver を有効または無効にするには、 **&#8984; + F5** キーを押します。
 
-VoiceOver コマンドは、このガイドでは **VO+*キー*** と表示されています。**VO** は **VoiceOver Utility** アプリケーションで設定されている修飾子を表します。 既定の修飾子は **Ctrl + Alt** です。たとえば、VoiceOver 修飾子によっては、**VO + M** は **Ctrl + Alt + M** を意味します。簡潔にするために、カーソルキーは**左**や**右**などと示されます。
+VoiceOver コマンドは、このガイドでは **VO+ *キー*** と表示されています。**VO** は **VoiceOver Utility** アプリケーションで設定されている修飾子を表します。 既定の修飾子は **Ctrl + Alt** です。たとえば、VoiceOver 修飾子によっては、**VO + M** は **Ctrl + Alt + M** を意味します。簡潔にするために、カーソルキーは**左**や**右**などと示されます。
 
 Visual Studio for Mac のユーザー インターフェイスを操作するには、次のキーの組み合わせを使用します。
 
