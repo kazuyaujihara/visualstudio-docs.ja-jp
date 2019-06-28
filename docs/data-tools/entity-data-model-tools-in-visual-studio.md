@@ -8,18 +8,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d6f14dbe79e9ba0f2a8642c61a0682b25aa703f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eace6e7f3d970de5aa0ab0e74530d3182af0e177
+ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567194"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67412297"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio での entity Framework ツール
 
 Entity Framework とは、.NET 開発者は、ドメイン固有オブジェクトを使用してリレーショナル データを操作できるオブジェクト リレーショナル マッピング テクノロジです。 開発者が通常記述しなければならないデータアクセス コードの多くが不要になります。 Entity Framework は、.NET アプリケーションの新しいテクノロジをモデリング推奨オブジェクト リレーショナル マッピング (ORM です)。
 
-Entity Framework ツールは、Entity Framework (EF) アプリケーションを構築するために設計されています。 Entity Framework の完全なドキュメントは、ここでは。[EF Core と EF 6](/ef/)します。
+Entity Framework ツールは、Entity Framework (EF) アプリケーションを構築するために設計されています。 Entity Framework の完全なドキュメントは、ここでは。[概要 - EF 6](/ef/ef6/)します。
+
+  > [!NOTE]
+  > このページで説明されているエンティティ フレームワーク ツールを使用すると、生成 *.edmx*ファイルで、EF Core でサポートされていません。 既存のデータベースから EF Core モデルを生成するを参照してください。[リバース エンジニア リング - EF Core](/ef/core/managing-schemas/scaffolding)します。 EF 6 と EF Core の違いの詳細については、次を参照してください。[比較 EF 6 と EF Core](/ef/efcore-and-ef6/)します。
 
 Entity Framework のツールで作成できます、*概念モデル*既存のデータベースのグラフィカルに視覚化し、概念モデルを編集します。 また、グラフィカルな概念モデルを作成し、そのモデルをサポートするデータベースを生成することもできます。 いずれの場合も、基になるデータベースの変更時には、モデルを自動的に更新できるだけではなく、アプリケーションのオブジェクトレイヤー コードも自動生成できます。 データベースの生成とオブジェクトレイヤー コードの生成はカスタマイズ可能です。
 
