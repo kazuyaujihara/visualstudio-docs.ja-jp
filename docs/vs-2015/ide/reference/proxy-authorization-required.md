@@ -37,7 +37,7 @@ ms.locfileid: "65847030"
 
     - *.live.com
 
-- 削除することができます、 http://go.microsoft.comアドレスを許可一覧から、プロキシ認証ダイアログ ボックスが両方に表示されるように、 http://go.microsoft.comアドレスと Visual Studio を再起動すると、サーバー エンドポイント。
+- 削除することができます、[http://go.microsoft.com](http://go.microsoft.com ) アドレスを許可一覧から、プロキシ認証ダイアログ ボックスが両方に表示されるように、[http://go.microsoft.com](http://go.microsoft.com ) アドレスと Visual Studio を再起動すると、サーバー エンドポイント。
 
 - プロキシで既定の資格情報を使用する場合は、次の操作を行います。
 
