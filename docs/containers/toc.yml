@@ -30,5 +30,15 @@
           href: view-and-diagnose-containers.md
         - name: コンテナー ツールを構成する
           href: container-tools-configure.md
+        - name: 単体テストを実行する
+          href: container-unit-testing.md
+    - name: 概念
+      items:
+        - name: コンテナー化されたアプリをビルドする
+          href: container-build.md
     - name: トラブルシューティング
       href: troubleshooting-docker-errors.md
+    - name: 関連項目
+      items:
+        - name: コンテナーのプロジェクトの MSBuild プロパティ
+          href: container-msbuild-properties.md
