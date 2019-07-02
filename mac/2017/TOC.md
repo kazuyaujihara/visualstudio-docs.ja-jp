@@ -5,6 +5,7 @@
 ## [ファイアウォールまたはプロキシの内側にインストールして使用する](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 ## [プレビュー リリースをインストールする](/visualstudio/mac/install-preview)
 ## [更新](/visualstudio/mac/update)
+## [Visual Studio 2019 for Mac の更新](/visualstudio/mac/update-vsmac-8.0)
 ## [アンインストール](/visualstudio/mac/uninstall)
 
 # [ユーザー アカウント](/visualstudio/mac/user-accounts)
