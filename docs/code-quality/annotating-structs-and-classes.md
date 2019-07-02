@@ -1,6 +1,6 @@
 ---
 title: 構造体とクラスに注釈を付ける
-ms.date: 11/04/2016
+ms.date: 06/28/2019
 ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
@@ -24,14 +24,15 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: fa459e3461ef5e58eb1e5b0c675c7e1b408d6f88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571421"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493636"
 ---
 # <a name="annotating-structs-and-classes"></a>構造体とクラスに注釈を付ける
+
 インバリアントのように動作する注釈を使用して構造体とクラスのメンバーに注釈を付けることができます: これらは true に、関数呼び出し、または関数の開始/終了パラメーターまたは結果の値として外側の構造体を含むと見なされます。
 
 ## <a name="struct-and-class-annotations"></a>構造体とクラスの注釈
@@ -58,7 +59,7 @@ ms.locfileid: "62571421"
 
 - `_Struct_size_bytes_(size)`
 
-     構造体またはクラスの宣言に適用されます。  指定されているバイト数でその型の有効なオブジェクトを宣言された型よりも大きいでことがあることを示します`size`します。  例えば:
+     構造体またはクラスの宣言に適用されます。  指定されているバイト数でその型の有効なオブジェクトを宣言された型よりも大きいでことがあることを示します`size`します。  例:
 
     ```cpp
 
@@ -75,6 +76,39 @@ ms.locfileid: "62571421"
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
     ```
+
+## <a name="example"></a>例
+
+```cpp
+#include <sal.h>
+// For FIELD_OFFSET macro
+#include <windows.h>
+
+// This _Struct_size_bytes_ is equivalent to what below _Field_size_ means.
+_Struct_size_bytes_(FIELD_OFFSET(MyBuffer, buffer) + bufferSize * sizeof(int))
+struct MyBuffer
+{
+    static int MaxBufferSize;
+    
+    _Field_z_
+    const char* name;
+    
+    int firstField;
+
+    // ... other fields
+
+    _Field_range_(1, MaxBufferSize)
+    int bufferSize;
+    _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
+    int buffer[0];
+};
+```
+
+この例のノート:
+
+- `_Field_z_` は `_Null_terminated_` と同じです。  `_Field_z_` 名前フィールドでは、[名前] フィールドが null で終わる文字列を指定します。
+- `_Field_range_` `bufferSize`ことを指定の値`bufferSize`1 内にする必要がありますと`MaxBufferSize`(両端の値)。
+- 最終結果、`_Struct_size_bytes_`と`_Field_size_`注釈は同等です。 構造体またはクラスを持つ同様のレイアウトの`_Field_size_`は、以下の参照と相当するものよりも計算があるため、読みやすさと保守、`_Struct_size_bytes_`注釈。 `_Field_size_` サイズのバイトへの変換は必要ありません。 場合、バイト サイズは、唯一のオプションでは、たとえば、void ポインター フィールドの`_Field_size_bytes_`ことができます。 両方`_Struct_size_bytes_`と`_Field_size_`存在は、両方のツールを使用できます。 ツール、2 つの注釈に一致しない場合の対処方法。
 
 ## <a name="see-also"></a>関連項目
 
