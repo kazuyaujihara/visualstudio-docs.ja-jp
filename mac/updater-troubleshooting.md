@@ -6,12 +6,12 @@ ms.author: amburns
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: 2b89ea7155b27f9c5b54dae38d4e823895fad705
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 554633b2fc5d47d9cc4824ff9d8bf2febfbcd1f8
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783306"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309623"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>トラブルシューティング:アップデーターが情報の取得中にエラーを表示する
 
@@ -23,3 +23,4 @@ ms.locfileid: "62783306"
 - このエラー メッセージが表示され続ける場合は、マシン上にまだ **.dmg** があるなら、インストーラーを使って更新してみることもできます。または、[visualstudio.com](https://visualstudio.microsoft.com/vs/mac/) からこれをダウンロードできます。
     - インストーラーにより、マシン上にあるインストール済みのコンポーネントがすべて更新されます。
     - インストーラーを再実行することで、以前にインストールしていなかった足りないコンポーネントをインストールすることもできます。
+- `~/Library/Caches/VisualStudio/7.0/TempDownload/index.xml` にあるファイルを削除することによって、キャッシュされたダウンロードをクリアすることもできます。

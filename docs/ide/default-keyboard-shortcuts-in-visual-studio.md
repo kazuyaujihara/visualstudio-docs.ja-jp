@@ -13,20 +13,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820915"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160051"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio の既定のキーボード ショートカット
 
-キーボードのアクセシビリティの詳細については、「[アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)」と「[方法:キーボード主体で操作する](../ide/reference/how-to-use-the-keyboard-exclusively.md)」を参照してください。
+Visual Studio のさまざまな[コマンド](reference/visual-studio-commands.md)やウィンドウには、該当するキーボード ショートカットを選択することでアクセスできます。 このページでは、Visual Studio のインストール時に選択できる**全般**プロファイルの既定のコマンド ショートカットの一覧を示します。 選択したプロファイルにかかわらず、 **[オプション]** ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、コマンドの[ショートカットを確認する](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)ことができます。 また、別のショートカット キーを任意のコマンドに割り当てることで、ショートカット キーをカスタマイズすることもできます。
 
-Visual Studio のさまざまなコマンドやウィンドウには、該当するショートカット キーを押すことでアクセスできます。 このページでは、Visual Studio のインストール時に選択できる **[全般]** プロファイルの既定のショートカットを一覧表示します。 選択したプロファイルにかかわらず、**[オプション]** ダイアログ ボックスを開き、**[環境]** ノードを展開して、**[キーボード]** を選択することで、コマンドのショートカット キーを確認できます。 また、別のショートカット キーを任意のコマンドに割り当てることで、ショートカット キーをカスタマイズすることもできます。
+一般的なキーボード ショートカットの一覧、およびその他の生産性向上情報については、以下をご覧ください。
 
-一般的なキーボード ショートカットの一覧、およびその他の生産性向上に関する情報については、「[Visual Studio で頻繁に使用するコマンドに対応する既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)」、[キーボードに関するヒント](../ide/tips-and-tricks-for-visual-studio.md)、[生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)をご覧ください。
+- [よく使われるコマンドのキーボード ショートカット](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [キーボードのヒント](../ide/productivity-shortcuts.md)
+- [生産性に関するヒント](../ide/productivity-features.md)。
+
+Visual Studio でのアクセシビリティについて詳しくは、「[アクセシビリティのヒントとテクニック](../ide/reference/accessibility-tips-and-tricks.md)」および「[方法: キーボード主体で操作する](../ide/reference/how-to-use-the-keyboard-exclusively.md)」を参照してください。
 
 |||||
 |-|-|-|-|
@@ -86,7 +90,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 |Debug.DOMExplorer|**Ctrl + Alt + V、D**|
 |Debug.EnableBreakpoint|**Ctrl + F9**|
 |Debug.Exceptions|**Ctrl + Alt + E**|
-|Debug.FunctionBreakpoint|**Ctrl + K、B** (Visual Studio 2019)<br />**Ctrl **+** B** (Visual Studio 2017)|
+|Debug.FunctionBreakpoint|**Ctrl + K、B** (Visual Studio 2019)<br />**Ctrl** + **B** (Visual Studio 2017)|
 |Debug.GoToPreviousCallorIntelliTraceEvent|**Ctrl + Shift + F11**|
 |Debug.Graphics.StartDiagnostics|**Alt + F5**|
 |Debug.Immediate|**Ctrl + Alt + I**|
@@ -296,9 +300,9 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**Ctrl + [**、**O** (文字 'O')<br /><br /> or<br /><br /> **Ctrl + [**、**Ctrl + O** (文字 'O')|
-|SolutionExplorer.PendingChangesFilter|**Ctrl + [**、**P**<br /><br /> or<br /><br /> **Ctrl + [**、**Ctrl + P**|
-|SolutionExplorer.SyncWithActiveDocument|**Ctrl + [**、**S**<br /><br /> or<br /><br /> **Ctrl + [**、**Ctrl + S**|
+|SolutionExplorer.OpenFilesFilter|**Ctrl + [** 、**O** (文字 'O')<br /><br /> or<br /><br /> **Ctrl + [** 、**Ctrl + O** (文字 'O')|
+|SolutionExplorer.PendingChangesFilter|**Ctrl + [** 、**P**<br /><br /> or<br /><br /> **Ctrl + [** 、**Ctrl + P**|
+|SolutionExplorer.SyncWithActiveDocument|**Ctrl + [** 、**S**<br /><br /> or<br /><br /> **Ctrl + [** 、**Ctrl + S**|
 
 ### <a name="bkmk_team"></a> チーム
 
@@ -527,7 +531,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|None|
+|Debug.Graphics.CaptureFrame|なし|
 |Graphics.MovePixelSelectionDown|**Shift + Alt + ↓**|
 |Graphics.MovePixelSelectionLeft|**Shift + Alt + ←**|
 |Graphics.MovePixelSelectionRight|**Shift + Alt + →**|
@@ -785,6 +789,7 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 | Edit.CollapseCurrentRegion | **Ctrl + M、Ctrl + S** |
 | Edit.CollapseTag | **Ctrl + M、Ctrl + T** |
 | Edit.CollapseToDefinitions | **Ctrl + M、Ctrl + O** (文字 'O') |
+| Edit.ContractSelection | **Shift + Alt + -** (C++ 以外のみ) |
 | Edit.CommentSelection | **Ctrl + K、Ctrl + C** |
 | Edit.CompleteWord | **Ctrl + Space**<br /><br /> or<br /><br /> **Alt + →** |
 | Edit.CopyParameterTip | **Ctrl + Shift + Alt + C** |
@@ -797,6 +802,8 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 | Edit.DocumentStartExtend | **Ctrl + Shift + Home** |
 | Edit.ExpandAllOutlining | **Ctrl + M、Ctrl + X** |
 | Edit.ExpandCurrentRegion | **Ctrl + M、Ctrl + E** |
+| Edit.ExpandSelection | **Shift + Alt + =** (C++ 以外のみ) |
+| Edit.ExpandSelectiontoContainingBlock | **Shift + Alt + ]** |
 | Edit.FormatDocument | **Ctrl + K、Ctrl + D** |
 | Edit.FormatSelection | **Ctrl + K、Ctrl + F** |
 | Edit.GotoAll | **Ctrl + T**<br /><br /> or<br /><br /> **Ctrl + ,** |
@@ -1150,5 +1157,4 @@ Visual Studio のさまざまなコマンドやウィンドウには、該当す
 
 ## <a name="see-also"></a>関連項目
 
-- [アイコン用イメージ エディター](/cpp/windows/image-editor-for-icons)
-- [IntelliSense の使用](../ide/using-intellisense.md)
+- [Visual Studio コマンド](reference/visual-studio-commands.md)

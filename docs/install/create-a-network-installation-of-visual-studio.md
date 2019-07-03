@@ -1,7 +1,7 @@
 ---
 title: ネットワーク ベース インストールを作成する
 description: 企業内に Visual Studio を展開するためのネットワーク インストール ポイントを作成する方法について説明します。
-ms.date: 03/30/2019
+ms.date: 04/26/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c727b31f353015ca6f43157c4b6afc67339526f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974099"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365338"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio のネットワーク インストールを作成する
 
-通常、企業の管理者はクライアント ワークステーションに展開するためのネットワーク インストール ポイントを作成します。 Visual Studio は、初期インストールのファイルとすべての製品の更新プログラムが単一のファイルにキャッシュされるように設計されています。 (このプロセスは_レイアウトの作成_とも呼ばれています。) 
+通常、企業の管理者はクライアント ワークステーションに展開するためのネットワーク インストール ポイントを作成します。 Visual Studio は、初期インストールのファイルとすべての製品の更新プログラムが単一のファイルにキャッシュされるように設計されています。 (このプロセスは_レイアウトの作成_とも呼ばれています。)
 
 これは、最新のサービスの更新プログラムに更新されていない場合でも、クライアント ワークステーションが同じネットワークの場所を使用してインストールを管理できるようにするためです。
 
@@ -33,7 +33,7 @@ ms.locfileid: "62974099"
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Visual Studio ブートストラップをダウンロードする
 
-必要な Visual Studio のエディションをダウンロードします。 必ず **[保存]** をクリックし、**[フォルダーを開く]** をクリックします。
+必要な Visual Studio のエディションをダウンロードします。 必ず **[保存]** をクリックし、 **[フォルダーを開く]** をクリックします。
 
 セットアップ実行可能ファイル&mdash;具体的にはブートストラップ ファイル&mdash;は、次のいずれかになります。
 
@@ -142,16 +142,16 @@ xcopy /e c:\vsoffline \\server\products\VS2019
     vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
     ```
 
-* 2 つのワークロードとその推奨コンポーネントのすべてをダウンロードするには: 
+* 2 つのワークロードとその推奨コンポーネントのすべてをダウンロードするには:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
     ```
 
 * 2 つのワークロードとそのすべての推奨コンポーネントと任意コンポーネントをダウンロードするには、次を実行します。
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
 
 ::: moniker range="vs-2017"
@@ -225,11 +225,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 `--wait` パラメーターを使用した場合、操作の結果に応じて、`%ERRORLEVEL%` 環境変数は次のいずれかの値に設定されます。
 
-  | **[値]** | **結果** |
-  | --------- | ---------- |
-  | 0 | 操作は正常に終了しました |
-  | 3010 | 操作は正常に完了しましたが、インストールした製品を使用する前に再起動が必要です |
-  | その他 | 失敗の状態が発生しました。詳細については、ログを参照してください |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 ## <a name="update-a-network-install-layout"></a>ネットワーク インストール レイアウトを更新する
 
@@ -241,9 +237,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 > [!NOTE]
 > [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) で入手可能な Visual Studio ブートストラップを使用すると、それを実行したときに利用できる最新の Visual Studio リリースをダウンロードしてインストールできます。
-> 
+>
 > そのため、Visual Studio *ブートストラップ*を今日ダウンロードし、今日から 6 か月後に実行すると、そのブートストラップの実行時点での最新の Visual Studio リリースがインストールされます。
-> 
+>
 > しかし、*レイアウト*を作成し、そのレイアウトからインストールする場合、レイアウト内に存在する特定のバージョンの Visual Studio がインストールされます。 新しいバージョンがオンラインに存在するとしても、レイアウトに存在するバージョンの Visual Studio が取得されます。
 
 ::: moniker-end
@@ -252,9 +248,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 > [!NOTE]
 > [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) で入手可能な Visual Studio ブートストラップを使用すると、それを実行したときに利用できる最新の Visual Studio リリースをダウンロードしてインストールできます。
-> 
+>
 > そのため、Visual Studio *ブートストラップ*を今日ダウンロードし、今日から 6 か月後に実行すると、そのブートストラップの実行時点での最新の Visual Studio リリースがインストールされます。
-> 
+>
 > しかし、*レイアウト*を作成し、そのレイアウトからインストールする場合、レイアウト内に存在する特定のバージョンの Visual Studio がインストールされます。 新しいバージョンがオンラインに存在するとしても、レイアウトに存在するバージョンの Visual Studio が取得されます。
 
 ::: moniker-end
@@ -267,13 +263,14 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 インストール関連の問題については、[**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションも用意されています。
 
-他にも利用可能なサポート オプションがあります。 一覧については、[[ご意見]](../ide/talk-to-us.md) ページをご覧ください。
+他にも利用可能なサポート オプションがあります。 一覧については、[フィードバック](../ide/feedback-options.md)に関するページをご覧ください。
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio のネットワーク ベース インストールを更新する](update-a-network-installation-of-visual-studio.md)
-* [ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)
-* [Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing/)
-* [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)
-* [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio のワークロードとコンポーネント ID](workload-and-component-ids.md)
+- [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)
+- [Visual Studio のネットワーク ベース インストールを更新する](update-a-network-installation-of-visual-studio.md)
+- [ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)
+- [Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing/)
+- [サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)
+- [コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)
+- [Visual Studio のワークロードとコンポーネント ID](workload-and-component-ids.md)

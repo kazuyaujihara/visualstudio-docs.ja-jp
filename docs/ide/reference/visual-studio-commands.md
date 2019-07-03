@@ -1,4 +1,4 @@
----
+﻿---
 title: コマンド
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,20 +12,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 294ca45123faf1625b6f09a638ddc089a31d85cc
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789371"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043583"
 ---
-# <a name="visual-studio-commands"></a>Visual Studio コマンド
+# <a name="visual-studio-commands"></a>Visual Studio のコマンド
 
-Visual Studio のコマンドを使用すると、 **[コマンド]** ウィンドウ、 **[イミディエイト]** ウィンドウ、または **[検索]** ボックスからコマンドを呼び出すことができます。 どちらに入力する場合でも、後続の操作が検索またはデバッグではなく、コマンドであることを示す不等号 (`>`) を使用します。
+Visual Studio のコマンドは、 **[コマンド]** ウィンドウ、 **[イミディエイト]** ウィンドウ、または **[検索/コマンド]** ボックスで入力できます。 どの場合でも、不等号 (`>`) は後続の操作が検索またはデバッグではなくコマンドであることを示します。
 
-コマンドの一覧とその構文は、 **[オプション]** ダイアログ ボックスの [環境] の下の [キーボード] で確認できます。
+コマンドの完全な一覧とその構文は、 **[ツール]**  >  **[オプション]**  >  **[環境]** の **[キーボード]** ページで確認できます。
 
-Visual Studio のコマンドのエスケープ文字はキャレット (^) 文字です。これは、その直後の文字が制御文字としてではなくリテラル文字として解釈されることを意味します。 したがって、引用符 (")、スペース、先頭のスラッシュ、カレット、その他の任意のリテラル文字をパラメーターまたはスイッチの値に直接埋め込むことができます。ただし、スイッチ名には埋め込むことができません。 たとえば、オブジェクトに適用された
+IDE のローカライズ版では、IDE のネイティブ言語または英語のどちらでもコマンド名を入力できます。 たとえば、フランス語版 IDE では、「 `File.NewFile` 」または「 `Fichier.NouveauFichier` 」と入力して同じコマンドを実行できます。
+
+多くのコマンドにエイリアスがあります。 コマンド エイリアスの一覧については、[コマンド エイリアス](../../ide/reference/visual-studio-command-aliases.md)に関する記事をご覧ください。 コマンドのキーボード ショートカットについては、「[Visual Studio の既定のキーボード ショートカット](../default-keyboard-shortcuts-in-visual-studio.md)」をご覧ください。
+
+## <a name="escape-character"></a>エスケープ文字
+
+Visual Studio のコマンドのエスケープ文字は、キャレット (^) です。 エスケープ文字は、その直後の文字を制御文字ではなくリテラル文字として解釈することを意味します。 したがって、引用符 (")、スペース、先頭のスラッシュ、カレット、その他の任意のリテラル文字をパラメーターまたはスイッチの値に直接埋め込むことができます。ただし、スイッチ名には埋め込むことができません。 次に例を示します。
 
 ```
 >Edit.Find ^^t /regex
@@ -33,9 +39,7 @@ Visual Studio のコマンドのエスケープ文字はキャレット (^) 文�
 
 カレットは、引用符の前後のどちらに置かれた場合でも同じ働きをします。 行の最後の文字がカレットの場合は無視されます。
 
-IDE のローカライズ版では、IDE のネイティブ言語または英語のどちらでもコマンド名を入力できます。 たとえば、フランス語版 IDE では、「 `File.NewFile` 」または「 `Fichier.NouveauFichier` 」と入力して同じコマンドを実行できます。
-
-多くのコマンドにエイリアスがあります。 コマンド エイリアスの一覧については、「 [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)」を参照してください。
+## <a name="commands-with-arguments"></a>引数を持つコマンド
 
 次のコマンドは、引数またはスイッチを受け取ります。
 
@@ -77,5 +81,5 @@ IDE のローカライズ版では、IDE のネイティブ言語または英語
 ## <a name="see-also"></a>関連項目
 
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)
-- [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [[検索/コマンド] ボックス](../../ide/find-command-box.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

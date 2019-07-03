@@ -2,7 +2,7 @@
 title: Visual Studio 管理者ガイド
 titleSuffix: ''
 description: エンタープライズ環境で Visual Studio を展開する方法について説明します。
-ms.date: 05/22/2019
+ms.date: 06/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 61b3a2dfae667bac7c3a6a62682cdbd5b1a5feb4
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 9a586a0ab0d6b7a3ab34ef581e2ba6f5348232c2
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037507"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328795"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 管理者ガイド
 
@@ -40,7 +40,7 @@ ms.locfileid: "66037507"
 
 * サービス ニーズについて決定します。
 
-  会社がある機能セットを長く使用する必要があるが、定期的なサービス更新を取得する場合、サービス ベースラインの使用を計画します。 詳細については、[[Visual Studio の製品ライフサイクルとサービス]](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) ページの「***Enterprise および Professional のお客様向けのサポート オプション***」セクションを参照してください。
+  会社がある機能セットを長く使用する必要があるが、定期的なサービス更新を取得する場合、サービス ベースラインの使用を計画します。 詳細については、「[Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)」ページの「***Enterprise および Professional のお客様向けのサポート オプショ***」セクション、および「[サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)」ページをご覧ください。
 
   累積された機能更新と共にサービス更新を適用する予定の場合、最新の更新プログラムを選択できます。
 
@@ -62,7 +62,7 @@ ms.locfileid: "66037507"
 
 * サービス ニーズについて決定します。
 
-  会社がある機能セットを長く使用する必要があるが、定期的なサービス更新を取得する場合、サービス ベースラインの使用を計画します。 詳細については、[[Visual Studio の製品ライフサイクルとサービス]](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) ページの「***旧バージョンの Visual Studio のサポート***」セクションを参照してください。
+  会社がある機能セットを長く使用する必要があるが、定期的なサービス更新を取得する場合、サービス ベースラインの使用を計画します。 詳細については、「[Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)」ページの「***旧バージョンの Visual Studio のサポート***」セクション、および「[サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)」ページをご覧ください。
 
   累積された機能更新と共にサービス更新を適用する予定の場合、最新の更新プログラムを選択できます。
 

@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f27e2585d082f61021fbc736b394612095f56684
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715252"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160180"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio で C/C++ 用の単体テストを作成する
 
@@ -37,11 +37,11 @@ C++ 単体テスト プロジェクトでは [CodeLens](../ide/find-code-changes
 
 **Visual Studio 2017 以降 (すべてのエディション)** :
 
-- **Google Test アダプター**は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 このアダプターには、**ソリューション エクスプローラー**のソリューション ノードの **[新しいプロジェクトの追加]** 右クリック メニューでソリューションに追加できるプロジェクト テンプレートと、 **[ツール]**  >  **[オプション]** で構成できるオプションがあります。 詳細については、「[How to: use Google Test in Visual Studio](how-to-use-google-test-for-cpp.md)」(Visual Studio で C++ 用の Google Test を使用する方法) をご覧ください。
+- **Google Test アダプター**は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 このアダプターには、**ソリューション エクスプローラー**のソリューション ノードの **[新しいプロジェクトの追加]** 右クリック メニューでソリューションに追加できるプロジェクト テンプレートと、 **[ツール]**  >  **[オプション]** で構成できるオプションがあります。 詳細については、「[方法 :Visual Studio での Google Test の使用](how-to-use-google-test-for-cpp.md)に関する記事をご覧ください。
 
-- **Boost.Test** は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 **テスト エクスプローラー**とは統合されていますが、現時点ではプロジェクト テンプレートがないので、手動で構成する必要があります。 詳細については、「[How to: use Boost.Test in Visual Studio](how-to-use-boost-test-for-cpp.md)」(Visual Studio で C++ 用の Boost.Test を使用する方法) をご覧ください。
+- **Boost.Test** は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして含まれます。 **テスト エクスプローラー**とは統合されていますが、現時点ではプロジェクト テンプレートがないので、手動で構成する必要があります。 詳細については、「[方法 :Visual Studio での Boost.Test の使用](how-to-use-boost-test-for-cpp.md)に関する記事をご覧ください。
 
-- **CTest** のサポートは、**C++ によるデスクトップ開発**ワークロードの一部である [CMake Tools for Visual Studio](/cpp/build/cmake-tools-for-visual-cpp) コンポーネントによって組み込まれています。 ただし、CTest と**テスト エクスプローラー**の統合はまだ完全ではありません。 詳細については、「[How to: use CTest in Visual Studio](how-to-use-ctest-for-cpp.md)」(Visual Studio で C++ 用の CTest を使用する方法) をご覧ください。
+- **CTest** のサポートは、**C++ によるデスクトップ開発**ワークロードの一部である **C++ CMake ツール** コンポーネントで組み込まれます。 ただし、CTest と**テスト エクスプローラー**の統合はまだ完全ではありません。 詳細については、「[方法 :Visual Studio での CTest の使用](how-to-use-ctest-for-cpp.md)に関する記事をご覧ください。
 
 **Visual Studio 2015 以前**
 

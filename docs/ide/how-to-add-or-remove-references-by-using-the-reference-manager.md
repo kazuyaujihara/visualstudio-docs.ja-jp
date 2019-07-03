@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745809"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160162"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>方法: 参照マネージャーを使用して参照を追加または削除する
 
@@ -92,7 +92,7 @@ EnvDTE 名前空間 (<xref:EnvDTE>、<xref:EnvDTE80>、<xref:EnvDTE90>、<xref:E
 
 - 最新のフレームワーク バージョンを使用するコンポーネントは、旧バージョンを対象とするプロジェクトとは互換性がありません。
 
-   プロジェクトの対象フレームワーク バージョンを変更する方法の詳細については、「[方法:特定の .NET バージョンをターゲットにする](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。
+   プロジェクトのターゲット フレームワークのバージョンを変更する方法について詳しくは、「[フレームワーク対象設定機能の概要](visual-studio-multi-targeting-overview.md)」をご覧ください。
 
 - .NET Framework 4 を使用するコンポーネントは、.NET Framework 4.5 を対象とするプロジェクトと互換性がありません。
 

@@ -11,46 +11,39 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ee5bb8d69cf3482105150f4ec62cb6ad167d7a
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 750af5101dfdf9d040457873be9d40d4a9da55e1
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531553"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328982"
 ---
-# <a name="setting-language-specific-editor-options"></a>言語固有のエディター オプションの設定
+# <a name="set-language-specific-editor-options"></a>言語固有のエディター オプションの設定
 
-Visual Studio には、特定のプログラミング言語に適用するためのテキスト エディター オプションが数多くあります。 オプションは、**[オプション]** ダイアログ ボックスで構成できます。このダイアログ ボックスには **[ツール]** メニューからアクセスできます。 また、EditorConfig ファイルを作成することで、プロジェクト単位または codebase 単位でいくつかのエディター設定を構成することができます。 「[EditorConfig で移植可能なカスタム エディター設定を作成する](../../ide/create-portable-custom-editor-options.md)」を参照してください。
+Visual Studio には、特定のプログラミング言語に適用するためのテキスト エディター オプションが数多くあります。 オプションは、 **[オプション]** ダイアログ ボックスで構成できます。このダイアログ ボックスには **[ツール]** メニューからアクセスできます。 また、[EditorConfig ファイルを作成する](../../ide/create-portable-custom-editor-options.md)ことで、プロジェクト単位または codebase 単位でいくつかのエディター設定を構成することができます。
 
 ## <a name="settings-available-in-the-options-dialog-box"></a>[オプション] ダイアログ ボックスで使用可能な設定
 
- [[オプション]、[テキスト エディター]、[基本] (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)
+[[オプション]、[テキスト エディター]、[基本] (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)\
+End 構造、コードの再フォーマット、アウトライン、エラー訂正の提案、およびその他の Visual Basic コード用の設定について説明します。
 
- End 構造、コードの再フォーマット、アウトライン、エラー訂正の提案、およびその他の [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] コード用の設定について説明します。
+[[オプション]、[テキスト エディター]、[C/C++]、[書式設定]](../../ide/reference/options-text-editor-c-cpp-formatting.md)\
+アウトライン、インデント、クイック ヒント、およびその他の C コードと C++ コード用の設定について説明します。
 
- [[オプション]、[テキスト エディター]、[C/C++]、[書式設定]](../../ide/reference/options-text-editor-c-cpp-formatting.md)
+[[オプション]、[テキスト エディター]、[C/C++]、[詳細]](../../ide/reference/options-text-editor-c-cpp-advanced.md)\
+C および C++ を使用する際の IntelliSense およびデータベース ファイルの設定について説明します。
 
- アウトライン、インデント、クイック ヒント、およびその他の C コードと C++ コード用の設定について説明します。
+[[オプション]、[テキスト エディター]、[C#]、[書式設定]](../../ide/reference/options-text-editor-csharp-formatting.md)\
+インデント、改行時の書式、テキストの折り返し、およびその他の C# 用の設定について説明します。
 
- [[オプション]、[テキスト エディター]、[C/C++]、[詳細]](../../ide/reference/options-text-editor-c-cpp-advanced.md)
+[[オプション]、[テキスト エディター]、[C#]、[詳細]](../../ide/reference/options-text-editor-csharp-advanced.md)\
+C# 用のアウトライン、エラー認識、および XML ドキュメント コメントの設定について説明します。
 
- C および C++ を使用する際の IntelliSense およびデータベース ファイルの設定について説明します。
+[[オプション]、[テキスト エディター]、[C#]、[IntelliSense]](../../ide/reference/options-text-editor-csharp-intellisense.md)\
+C# コードでの作業における IntelliSense 入力候補一覧の動作を指定する設定について説明します。
 
- [[オプション]、[テキスト エディター]、[C#]、[書式設定]](../../ide/reference/options-text-editor-csharp-formatting.md)
-
- インデント、改行時の書式、テキストの折り返し、およびその他の C# 用の設定について説明します。
-
- [[オプション]、[テキスト エディター]、[C#]、[詳細]](../../ide/reference/options-text-editor-csharp-advanced.md)
-
- C# 用のアウトライン、エラー認識、および XML ドキュメント コメントの設定について説明します。
-
- [[オプション]、[テキスト エディター]、[C#]、[IntelliSense]](../../ide/reference/options-text-editor-csharp-intellisense.md)
-
- C# コードでの作業における IntelliSense 入力候補一覧の動作を指定する設定について説明します。
-
- [[オプション]、[テキスト エディター]、[XAML]、[書式設定]](../../ide/reference/options-text-editor-xaml-formatting.md)
-
- XAML ドキュメントに含まれる要素および属性の配置設定について説明します。
+[[オプション]、[テキスト エディター]、[XAML]、[書式設定]](../../ide/reference/options-text-editor-xaml-formatting.md)\
+XAML ドキュメントに含まれる要素および属性の配置設定について説明します。
 
 ## <a name="see-also"></a>関連項目
 
