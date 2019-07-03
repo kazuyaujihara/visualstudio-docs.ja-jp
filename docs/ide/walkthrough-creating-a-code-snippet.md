@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f58581a601da59e7ff66a3bae5ddcb7432bf8e3
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 130f4a5d39c756587dcf479abe4461f64e9461cb
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836102"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259813"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>チュートリアル: コード スニペットを作成する
 
@@ -76,6 +76,9 @@ ms.locfileid: "66836102"
        <![CDATA[Dim root = Math.Sqrt(16)]]>
    </Code>
    ```
+   
+   > [!NOTE]
+   > コード スニペットの **CDATA** セクション内のコード行をインデントまたは書式設定する方法を指定することはできません。 挿入時に、言語サービスによって挿入されるコードの書式が自動的に設定されます。 
 
 5. スニペットを *SquareRoot.snippet* として保存します (任意の場所に保存できます)。
 

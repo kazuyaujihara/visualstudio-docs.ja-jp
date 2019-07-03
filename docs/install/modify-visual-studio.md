@@ -3,7 +3,7 @@ title: Visual Studio 2017 の変更
 titleSuffix: ''
 description: Visual Studio を変更する方法について、ステップ バイ ステップで説明します。
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 03/30/2018
+ms.date: 06/25/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a08a14d8d07248efdcac759852a38777745e9a51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 287ad470a94689b92cacb443c2b5f88eb30f5a70
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951577"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365411"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>ワークロードやコンポーネントを追加または削除することで Visual Studio を変更する
 
@@ -48,22 +48,25 @@ ms.locfileid: "62951577"
 >[!IMPORTANT]
 >Visual Studio をインストール、更新、または変更するには、管理アクセス許可を持つアカウントでログオンする必要があります。 詳細については、「[ユーザー アクセス許可と Visual Studio](../ide/user-permissions-and-visual-studio.md)」を参照してください。
 
+>[!TIP]
+> 次の手順では、インターネットに接続しているものとします。 前に作成した Visual Studio の[オフライン インストール](create-an-offline-installation-of-visual-studio.md)を変更する方法について詳しくは、「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」ページをご覧ください。
+
 ::: moniker range="vs-2017"
 
 1. コンピューター上で Visual Studio インストーラーを見つけます。
 
-     たとえば、Windows 10 を実行しているコンピューター上で、**[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
+     たとえば、Windows 10 を実行しているコンピューター上で、 **[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
 
      ![Visual Studio インストーラー](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio インストーラーの検索")
 
      >[!NOTE]
      >一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー**として **"M"** の項に表示される場合があります。<br/><br/> Visual Studio インストーラーは `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe` にもあります。
 
-1. インストーラーをクリックまたはタップして起動し、**[変更]** を選択します。
+1. インストーラーをクリックまたはタップして起動し、 **[変更]** を選択します。
 
      ![Visual Studio の起動または変更](media/modify-visual-studio.png "Visual Studio 2017 の変更")
 
-     保留中の更新プログラムがある場合、[変更] ボタンは別の場所にあります。 この方法で、更新せずに Visual Studio を変更するならそれができます。 **[詳細]** をクリックして、**[変更]** を選択します。
+     保留中の更新プログラムがある場合、[変更] ボタンは別の場所にあります。 この方法で、更新せずに Visual Studio を変更するならそれができます。 **[詳細]** をクリックして、 **[変更]** を選択します。
 
      ![Visual Studio の更新または変更](media/modify-or-update-visual-studio.png "Visual Studio 2017 の更新または変更")
 
@@ -73,7 +76,7 @@ ms.locfileid: "62951577"
 
 1. もう一度 **[変更]** を選択します。
 
-1. 新しいワークロードとコンポーネントがインストールされたら、**[起動]** を選択します。
+1. 新しいワークロードとコンポーネントがインストールされたら、 **[起動]** を選択します。
 
 ::: moniker-end
 
@@ -81,7 +84,7 @@ ms.locfileid: "62951577"
 
 1. コンピューター上で Visual Studio インストーラーを見つけます。
 
-     たとえば、Windows 10 を実行しているコンピューター上で、**[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
+     たとえば、Windows 10 を実行しているコンピューター上で、 **[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
 
      ![Visual Studio インストーラーを開く](media/vs2019-visual-studio-installer.png "Visual Studio インストーラーを開く")
 
@@ -92,7 +95,7 @@ ms.locfileid: "62951577"
 
     続行する前に、インストーラーの更新が必要な場合があります。 その場合は、画面の指示に従います。
 
-1. インストーラーで、インストールした Visual Studio のエディションを探し、**[変更]** を選択します。
+1. インストーラーで、インストールした Visual Studio のエディションを探し、 **[変更]** を選択します。
 
      ![Visual Studio の更新または変更](media/vs-2019/vs-installer-modify.png "Visual Studio 2017 の更新または変更")
 
@@ -122,4 +125,6 @@ ms.locfileid: "62951577"
 
 * [Visual Studio の更新](update-visual-studio.md)
 * [Visual Studio のネットワーク ベース インストールを更新する](update-a-network-installation-of-visual-studio.md)
+* [サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)
+* [ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)
 * [Visual Studio のアンインストール](uninstall-visual-studio.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432263"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309796"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>ソリューション エクスプローラーでのファイルの入れ子
 
@@ -86,19 +86,42 @@ ms.locfileid: "66432263"
 
 ### <a name="the-addedextension-provider"></a>addedExtension プロバイダー
 
-このプロバイダーは、追加の拡張子があるファイルを、追加の拡張子がないファイルの下に入れ子にします。 追加の拡張子は、完全なファイル名の末尾にのみ使用できます。 次に例を示します。
+このプロバイダーは、追加の拡張子があるファイルを、追加の拡張子がないファイルの下に入れ子にします。 追加の拡張子は、完全なファイル名の末尾にのみ使用できます。
+
+次に例を示します。
 
 ![addedExtension ルールの例](media/filenesting_addedextension.png) ![addedExtension の効果の例](media/filenesting_addedextension_effect.png)
 
 * **addedExtension** ルールのため、*file.html.css* は *file.html* の下の入れ子になります。
 
+> [!NOTE]
+> `addedExtension` ルールに対してファイル拡張子は何も指定しません。すべてのファイル拡張子に自動的に適用されます。 つまり、別のファイルと同じ名前と拡張子を持ち、その最後に拡張子が追加されているすべてのファイルは、他のファイルの下に入れ子にされます。 このプロバイダーの効果を特定のファイル拡張子だけに制限することはできません。
+
 ### <a name="the-pathsegment-provider"></a>pathSegment プロバイダー
 
-このプロバイダーは、追加の拡張子があるファイルを、追加の拡張子がないファイルの下に入れ子にします。 追加の拡張子は、完全なファイル名の中間にのみ使用できます。 次に例を示します。
+このプロバイダーは、追加の拡張子があるファイルを、追加の拡張子がないファイルの下に入れ子にします。 追加の拡張子は、完全なファイル名の中間にのみ使用できます。
+
+次に例を示します。
 
 ![pathSegment ルールの例](media/filenesting_pathsegment.png) ![pathSegment の効果の例](media/filenesting_pathsegment_effect.png)
 
 * **pathSegment** ルールのため、*jquery.min.js* は *jquery.js* の下の入れ子になります。
+
+> [!NOTE]
+> - `pathSegment` ルールに対して特定のファイル拡張子を指定しないと、すべてのファイル拡張子に適用されます。 つまり、別のファイルと同じ名前と拡張子を持ち、その途中に拡張子が追加されているすべてのファイルは、他のファイルの下に入れ子にされます。
+> - 次の方法で指定することにより、`pathSegment` ルールの効果を特定のファイル拡張子に制限することができます。
+>    ```
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>allExtensions プロバイダー
 

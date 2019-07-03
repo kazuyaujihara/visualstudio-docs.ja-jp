@@ -7,12 +7,12 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典について説明します
 searchscope: VS Subscription
-ms.openlocfilehash: 50b6245be908bffc0d2abb9db7f74ed14f878224
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94c8ac818fbdee17c75c508f509e93b50c3871ec
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427482"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033113"
 ---
 # <a name="technical-support-benefits-included-with-visual-studio-subscriptions"></a>Visual Studio サブスクリプションに含まれるテクニカル サポート特典
 
@@ -29,6 +29,6 @@ ms.locfileid: "62427482"
 
 - [テクニカル サポート](vs-tech-support.md): 非運用環境における障害対応の問題を解決するために、専門家によるサポートを利用できます。
 
-- [優先サポート](vs-priority-support.md): フォーラムの選ばれたリスト内で質問を投稿します。 2 日以内に開発者コミュニティから回答を得られない場合は、Microsoft が対応します。 (サポートは Microsoft アカウントを使用している場合のみ。)
+- [開発者コミュニティ フォーラム](vs-priority-support.md):開発者ネットワーク フォーラムのすべてにアクセスします。 
 
 - [コンシェルジェ チャット](vs-concierge-chat.md): 技術文書や製品情報をお探しの場合、またはサブスクリプションの特典を使用する方法についてご質問がある場合は、チャットでお問い合わせいただけます。

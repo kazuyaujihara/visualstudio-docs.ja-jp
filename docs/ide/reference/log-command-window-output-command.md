@@ -13,14 +13,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c72b0c5aeb510186728d66e51935c337547adf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ab2dfea4c51ee33407088c208aea351732b8a4a
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946844"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043523"
 ---
-# <a name="log-command-window-output-command"></a>LogCommandWindowOutput コマンド
+# <a name="log-command-window-output-command"></a>コマンド ウィンドウ出力のログを記録するコマンド
+
 **[コマンド]** ウィンドウの入出力をすべてファイルにコピーします。
 
 ## <a name="syntax"></a>構文
@@ -30,43 +31,43 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ```
 
 ## <a name="arguments"></a>引数
- `filename`
 
- 任意。 ログ ファイルの名前。 既定では、ユーザーのプロファイル フォルダーにファイルが作成されます。 ファイル名が既に存在する場合、ログは、既存のファイルの末尾に追加されます。 ファイルが指定されていない場合は、指定された最後のファイルが使用されます。 以前のファイルが存在しない場合、cmdline.log と呼ばれる既定のログ ファイルが作成されます。
+`filename`\
+任意。 ログ ファイルの名前。 既定では、ユーザーのプロファイル フォルダーにファイルが作成されます。 ファイル名が既に存在する場合、ログは、既存のファイルの末尾に追加されます。 ファイルが指定されていない場合は、指定された最後のファイルが使用されます。 以前のファイルが存在しない場合、cmdline.log と呼ばれる既定のログ ファイルが作成されます。
 
 > [!TIP]
 > ログ ファイルの保存先を変更するには、ファイルの完全パスを入力します。パスに空白が含まれる場合は、パスを引用符で囲みます。
 
 ## <a name="switches"></a>スイッチ
- /on
 
- 任意。 指定したファイルで **[コマンド]** ウィンドウのログの作成を開始し、ファイルに新しい情報を追加します。
+/on\
+任意。 指定したファイルで **[コマンド]** ウィンドウのログの作成を開始し、ファイルに新しい情報を追加します。
 
- /off
+/off\
+任意。 **[コマンド]** ウィンドウのログの作成を停止します。
 
- 任意。 **[コマンド]** ウィンドウのログの作成を停止します。
-
- /overwrite
-
- 任意。 `filename` 引数に指定したファイル名が既存のファイルと同じ場合は、既存のファイルが上書きされます。
+/overwrite\
+任意。 `filename` 引数に指定したファイル名が既存のファイルと同じ場合は、既存のファイルが上書きされます。
 
 ## <a name="remarks"></a>解説
- ファイルを指定しない場合、既定では、ファイル cmdline.log が作成されます。 既定では、このコマンドのエイリアスは Log です。
+
+ファイルを指定しない場合、既定では、ファイル cmdline.log が作成されます。 既定では、このコマンドのエイリアスは Log です。
 
 ## <a name="examples"></a>使用例
- 次の例では、新規のログ ファイル cmdlog を作成して、コマンドのログを開始します。
+
+次の例では、新規のログ ファイル cmdlog を作成して、コマンドのログを開始します。
 
 ```cmd
 >Tools.LogCommandWindowOutput cmdlog
 ```
 
- 次の例では、コマンドのログを停止します。
+次の例では、コマンドのログを停止します。
 
 ```cmd
 >Tools.LogCommandWindowOutput /off
 ```
 
- 次の例では、以前のログ ファイルを使用してコマンドのログを再開します。
+次の例では、以前のログ ファイルを使用してコマンドのログを再開します。
 
 ```cmd
 >Tools.LogCommandWindowOutput /on
@@ -74,7 +75,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio コマンド](../../ide/reference/visual-studio-commands.md)
 - [コマンド ウィンドウ](../../ide/reference/command-window.md)
-- [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [[検索/コマンド] ボックス](../../ide/find-command-box.md)
+- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)

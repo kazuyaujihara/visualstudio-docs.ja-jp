@@ -1,5 +1,5 @@
 ---
-title: '方法: プロファイラーのコマンド ラインを使用して .NET Framework サービスをインストルメントし、メモリ データを収集する | Microsoft Docs'
+title: プロファイラーのコマンド ライン:.NET サービスのインストルメント化、メモリデータの取得
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1afaf9f3513848ca089d1f3e98ea99c460959947
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 2b4e74b6f4e26b3ed797e8df3cbe3f6e33d74d06
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747842"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032040"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>方法: プロファイラーのコマンド ラインを使用して .NET Framework サービスをインストルメントし、メモリ データを収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して .NET Framework サービスをインストルメント化し、メモリ使用量データを収集する方法について説明します。 メモリ割り当てデータを収集することも、メモリ割り当てデータとオブジェクト有効期間データの両方を収集することもできます。

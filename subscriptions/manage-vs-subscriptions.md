@@ -1,18 +1,18 @@
 ---
 title: Visual Studio サブスクリプションを管理する
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 06/24/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを最大限に活用する方法を説明します
 searchscope: VS Subscription
-ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d03dbd24b6fd8f00248e0c0d653359f9995da0d
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833978"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365431"
 ---
 # <a name="managing-subscriptions"></a>サブスクリプションを管理する
 
@@ -30,11 +30,11 @@ Visual Studio サブスクリプションへようこそ。  サブスクリプ�
 
 Microsoft ストアで Visual Studio サブスクリプションを購入した場合は、支払いの**確認ページ**または**確認メール**からライセンス認証手順を始めることができます。
 
-1. "確認ページ" または "確認メール" で、**[Click here to sign in]\(サインインするにはここをクリックしてください\)** をクリックします。 リダイレクトする https://my.visualstudio.com/subscriptions/activateします。
-2. サブスクライバー ポータルへのサインインに使うメール アドレスを入力して、**[続行]** をクリックします。
+1. "確認ページ" または "確認メール" で、 **[Click here to sign in]\(サインインするにはここをクリックしてください\)** をクリックします。 リダイレクトする https://my.visualstudio.com/subscriptions/activate します。
+2. サブスクライバー ポータルへのサインインに使うメール アドレスを入力して、 **[続行]** をクリックします。
 3. メール アドレスによっては、Microsoft アカウント サインイン ページまたは職場/学校のサインイン ページにリダイレクトされる場合があります。
 4. パスワードを入力するか、サインインに必要な情報を入力します。
-5. 確認ページまたはウェルカム メールで提供されたプロダクト キーを入力して、**[ライセンス認証]** をクリックします。
+5. 確認ページまたはウェルカム メールで提供されたプロダクト キーを入力して、 **[ライセンス認証]** をクリックします。
 
 #### <a name="workschool-accounts"></a>職場/学校アカウント
 
@@ -58,7 +58,7 @@ Microsoft ストアで Visual Studio サブスクリプションを購入した�
 1. [サブスクライバー ポータル](https://my.visualstudio.com)にアクセスします
 2. 新しい Visual Studio サブスクリプションを割り当てたメール アドレスを入力します。 このアドレスは、サブスクライバー宛ての**ウェルカム レター**でも示されています。 (ウェルカム メールが送られてこない場合は、迷惑メール フォルダーを確認してください)
 3. **[続行]** をクリックします。
-4. **決定ページ**にリダイレクトされます。  Azure Active Directory (AAD) テナントに関連付けられた**職場または学校**アカウントにサブスクリプションが割り当てられている場合は、**[Work or school account]\(職場または学校アカウント\)** を選びます。 サブスクリプションが**会社**のメール アドレスに関連付けられている場合でも、**個人**の Microsoft アカウント (MSA) にも変換されている場合は、**[Personal]\(個人\)** を選択します。
+4. **決定ページ**にリダイレクトされます。  Azure Active Directory (AAD) テナントに関連付けられた**職場または学校**アカウントにサブスクリプションが割り当てられている場合は、 **[Work or school account]\(職場または学校アカウント\)** を選びます。 サブスクリプションが**会社**のメール アドレスに関連付けられている場合でも、**個人**の Microsoft アカウント (MSA) にも変換されている場合は、 **[Personal]\(個人\)** を選択します。
 5. パスワードを入力します
 6. **[サインイン]** をクリックします
 
@@ -119,12 +119,18 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 1. サブスクライバー ポータルの右上隅の名前をクリックします。
 2. **[プロファイルの編集]** ボタンをクリックします。
 3. **[詳細情報]** タブでは、名前、メール アドレス、国/地域、プロファイルの画像、連絡先の設定を変更することができます。 **[ユーザー設定]** タブでは、優先する言語、日付と時間のパターン、タイム ゾーン、ユーザー インターフェイスのテーマを選択することができます。
-4. 変更が終わったら、**[保存]** をクリックします。
+4. 変更が終わったら、 **[保存]** をクリックします。
 5. ブラウザーの **[戻る]** ボタンをクリックして特典ページに戻ります。
 
    > [!div class="mx-imgBorder"]
    > ![プロファイルの情報を編集する](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
+### <a name="setting-communications-preferences"></a>通信のユーザー設定
+毎月の Visual Studio サブスクリプション ニュースレターなど、サブスクリプションとベネフィットに関する更新を定期的に受け取りたい場合は、Visual Studio プロファイルで Visual Studio サブスクリプションのボックスをオンにして、[ユーザー設定を更新](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit)します。 いつでもこれらのユーザー設定を変更したり、サブスクライブを解除したりできます。 
+
+   > [!div class="mx-imgBorder"]
+   > ![ユーザー設定](_img/manage-vs-subscriptions/change-prefs.png)
+   
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>既存の Azure DevOps Services または Azure サブスクリプションにサブスクリプションをリンクする
 
 個人の Microsoft アカウント (MSA) を使ってサブスクリプションにサインインしていて、Azure によって管理される職場または学校アカウントを使う Azure DevOps Services または Microsoft Azure を含むサブスクリプションがある場合は、2 つのサブスクリプションをリンクできます。 これは "代替アカウント" と呼ばれ、サブスクリプションへのサインインに MSA を使い続けることができるだけでなく、職場または学校アカウントに関連付けられている既存の Azure、Azure DevOps Services、IDE リソースにアクセスすることもできます。
@@ -136,16 +142,16 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 1. Microsoft アカウント (MSA) で[サブスクライバー ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)にサインインします。
 2. **[サブスクリプション]** タブをクリックします。
 3. **[Related Links]** の下にある **[代替アカウントを追加する]** を選びます。
-4. 職場/学校アカウントのメール アドレスを入力して、**[追加]** をクリックします。
+4. 職場/学校アカウントのメール アドレスを入力して、 **[追加]** をクリックします。
 
    > [!div class="mx-imgBorder"]
    > ![代替アカウント](_img/manage-vs-subscriptions/alternate-account-resized.png)
 
-代替アカウントを追加した後は、**[サブスクリプション]** タブをクリックして **[Related Links]** セクションで適切なオプションを選ぶことにより、いつでも更新または削除できます。
+代替アカウントを追加した後は、 **[サブスクリプション]** タブをクリックして **[Related Links]** セクションで適切なオプションを選ぶことにより、いつでも更新または削除できます。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Q:サブスクリプションを更新しない場合、Microsoft ではどのくらいデータは保持されますか? 
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Q:サブスクリプションを更新しない場合、Microsoft ではどのくらいデータは保持されますか?
 
 A: これは購入されたチャネルによって異なります。Microsoft の顧客データの維持期間はさまざまです。
 

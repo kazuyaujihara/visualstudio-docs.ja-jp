@@ -8,18 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-- vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3ef6eff6da9040fc7e438d8f3271c60897a5ec
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820300"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291036"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>"フォルダーを開く" の開発のためにビルド タスクとデバッグ タスクをカスタマイズする
 
@@ -33,7 +32,6 @@ Visual Studio は多くのさまざまな言語やコードベースを実行す
 |-|-|
 |*tasks.vs.json*|カスタム ビルド コマンドとコンパイラ スイッチ、および任意の (ビルドに関連しない) タスクを指定します。<br>指定するには、**ソリューション エクスプローラー**の右クリック メニュー項目 **[タスクの構成]** を使用します。|
 |*launch.vs.json*|デバッグ用のコマンドライン引数を指定します。<br>指定するには、**ソリューション エクスプローラー**の右クリック メニュー項目 **[デバッグ設定と起動設定]** を使用します。|
-|*VSWorkspaceSettings.json*|タスクや起動に影響する可能性のある一般的な設定。 たとえば、コマンドを外部で実行するために *VSWorkspaceSettings.json* で `envVars` を定義すると、指定された環境変数が追加されます。<br>このファイルは手動で作成します。|
 
 これらの *.json* ファイルは、コードベースのルート フォルダーの *.vs* という非表示のフォルダーにあります。 **ソリューション エクスプローラー**でファイルまたはフォルダーに対して **[タスクの構成]** または **[デバッグ設定と起動設定]** を選択すると、必要に応じて *tasks.vs.json* および *launch.vs.json* ファイルが作成されます。 これらの *.json* ファイルは、一般的にソース管理にチェックインする必要がないため、非表示になっています。 ただし、ソース管理にチェックインできるようにするには、ファイルをコードベースのルートにドラッグして表示します。
 
@@ -193,7 +191,7 @@ bin:
 - 現在のディレクトリの親ディレクトリ (ルート ディレクトリまでのすべてのディレクトリ) です。
 - ルート ディレクトリの設定ファイル。
 
-これらの集計ルールは、*tasks.vs.json* および *VSWorkspaceSettings.json* ファイルに適用されます。 他のファイルの設定を集計する方法については、この記事の該当するファイルのセクションを参照してください。
+これらの集計ルールは、*tasks.vs.json* に適用されます。 他のファイルの設定を集計する方法については、この記事の該当するファイルのセクションを参照してください。
 
 ### <a name="properties-for-tasksvsjson"></a>tasks.vs.json のプロパティ
 
@@ -289,10 +287,6 @@ bin:
 
 > [!NOTE]
 > *launch.vs.json* の `configurations` 配列プロパティは、コードベースのルート ディレクトリと *.vs* ディレクトリという 2 つのディレクトリから読み取られます。 競合がある場合は、 *.vs\launch.vs.json* の値が優先されます。
-
-## <a name="define-workspace-settings-in-vsworkspacesettingsjson"></a>VSWorkspaceSettings.json でワークスペース設定を定義する
-
-タスクに影響する可能性のある一般的な設定を *VSWorkspaceSettings.json* ファイルに指定し、起動することができます。 たとえば、*VSWorkspaceSettings.json* に `envVars` を定義する場合、Visual Studio では、外部で実行されるコマンドに指定された環境変数が追加されます。 このファイルを使用するには、手動で作成する必要があります。
 
 ## <a name="additional-settings-files"></a>その他の設定ファイル
 

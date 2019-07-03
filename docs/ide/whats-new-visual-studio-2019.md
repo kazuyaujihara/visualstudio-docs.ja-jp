@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976233"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328829"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
@@ -33,9 +33,9 @@ Visual Studio 2019 では、あらゆる開発者、アプリ、プラットフ�
 
 新機能の大まかな要約を示します。
 
-* **[開発](#develop)**:パフォーマンスの向上、迅速なコードのクリーンアップ、優れた検索結果による生産性向上に引き続き注力しています。
-* **[共同作業](#collaborate)**:Git ファーストのワークフロー、リアルタイムでの編集とデバッグ、Visual Studio でのコード レビューによる自然な共同作業を体験してください。
-* **[デバッグ](#debug)**:特定の値を強調表示してそこに移動したり、メモリの使用を最適化したり、アプリケーションの実行のスナップショットを自動的に取得したりできます。
+* **[開発](#develop)** :パフォーマンスの向上、迅速なコードのクリーンアップ、優れた検索結果による生産性向上に引き続き注力しています。
+* **[共同作業](#collaborate)** :Git ファーストのワークフロー、リアルタイムでの編集とデバッグ、Visual Studio でのコード レビューによる自然な共同作業を体験してください。
+* **[デバッグ](#debug)** :特定の値を強調表示してそこに移動したり、メモリの使用を最適化したり、アプリケーションの実行のスナップショットを自動的に取得したりできます。
 
 このバージョンのすべての新機能の一覧は、[リリース ノート](/visualstudio/releases/2019/release-notes/)を参照してください。
 
@@ -90,7 +90,7 @@ IntelliCode に関する詳細については、ブログ投稿の「[Announcing
 
 修正機能のコレクションをプロファイルとして保存することもできます。 たとえば、コードを書いている間に頻繁に適用する小規模なターゲット修正機能があり、コード レビューの前に適用する完全な修正機能のセットがそれ以外にある場合は、それらの異なるタスクに対処するためのプロファイルを構成することができます。
 
-   ![Visual Studio 2019 の新しいコード クリーンアップ コントロールのスクリーン ショット](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Visual Studio 2019 の構成コード クリーンアップ コントロールのスクリーンショット](media/vs-2019/code-cleanup-profile-configure.png)
 
 ### <a name="per-monitor-aware-pma-rendering"></a>Per-monitor aware (PMA) レンダリング
 

@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb7af190ac7fc5d4d5ce547029689f6c902a6e4f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b652c603cd98f9c9ec9366a225971485def187b6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747614"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160147"
 ---
 # <a name="framework-targeting-overview"></a>フレームワーク対象設定機能の概要
 
-Visual Studio では、プロジェクトの対象となる .NET のバージョンを指定できます。 別のコンピューター上で実行する .NET Framework アプリについては、アプリケーションが対象とする .NET Framework バージョンが、コンピューターにインストールされている .NET Framework バージョンとの互換性を持っている必要があります。
+Visual Studio では、プロジェクトの対象となる .NET のバージョンを指定できます。 フレームワークを対象にする機能は、指定したフレームワーク バージョンで利用できる機能のみをアプリケーションで使用することを保証するのに役立ちます。 別のコンピューター上で実行する .NET Framework アプリについては、アプリケーションが対象とする .NET Framework バージョンが、コンピューターにインストールされている .NET Framework バージョンとの互換性を持っている必要があります。
+
+Visual Studio のソリューションには、異なるバージョンの .NET を対象とするプロジェクトを含めることができます。
 
 ターゲット フレームワークの詳細については、「[ターゲット フレームワーク](/dotnet/standard/frameworks)」を参照してください。
-
-異なるバージョンの .NET を対象とする複数のプロジェクトを含むソリューションを作成することもできます。 フレームワークを対象にする機能は、指定したフレームワーク バージョンで利用できる機能のみをアプリケーションで使用することを保証するのに役立ちます。
 
 > [!TIP]
 > 異なるプラットフォームに対応する複数のアプリケーションを対象にすることもできます。 詳細については、[MSBuild のマルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)に関する記事をご覧ください。
@@ -79,13 +79,40 @@ Visual Studio では、プロジェクトの対象となる .NET のバージョ
 
 ::: moniker-end
 
-既存のプロジェクトでは、プロジェクトのプロパティ ダイアログ ボックス内で、対象となる .NET のバージョンを変更できます。 詳細については、「[方法 :特定の .NET バージョンをターゲットにする](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。
+## <a name="change-the-target-framework"></a>ターゲット フレームワークを変更する
+
+Visual Basic、C#、または F# の既存のプロジェクトでは、プロジェクトのプロパティ ダイアログ ボックスで、.NET のターゲット バージョンを変更します。 C++ プロジェクトのターゲット バージョンを変更する方法については、代わりに「[How to: Modify the Target Framework and Platform Toolset (方法: ターゲット フレームワークおよびプラットフォームのツールセットを変更する)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)」をご覧ください。
+
+1. **ソリューション エクスプローラー**で、変更するプロジェクトの右クリック メニューを開き、 **[プロパティ]** を選択します。
+
+1. **[プロパティ]** ウィンドウの左側の列で、 **[アプリケーション]** タブを選択します。
+
+   ![プロジェクトのプロパティの [アプリケーション] タブ](../ide/media/vs_slnexplorer_properties_applicationtab.png)
+
+   > [!NOTE]
+   > UWP アプリを作成した後は、Windows または .NET のターゲット バージョンを変更することはできません。
+
+1. **[ターゲット フレームワーク]** 一覧で、目的のバージョンを選択します。
+
+1. 表示される検証ダイアログ ボックスで **[はい]** ボタンを選択します。
+
+   プロジェクトがアンロードされます。 プロジェクトを再読み込みすると、上で選択した .NET のバージョンが対象になります。
+
+> [!NOTE]
+> 対象とするバージョンとは別の .NET のバージョンへの参照がコードに含まれている場合、コードをコンパイルまたは実行するとエラー メッセージが表示されることがあります。 これらのエラーを解決するには、参照を変更します。 「[.NET を対象とするエラーのトラブルシューティング](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)」を参照してください。
+
+> [!TIP]
+> ターゲット フレームワークによっては、プロジェクト ファイル内で次のように表現されている場合があります。
+>
+> - .NET Core アプリの場合: `<TargetFramework>netcoreapp2.1</TargetFramework>`
+> - .NET Standard アプリの場合: `<TargetFramework>netstandard2.0</TargetFramework>`
+> - .NET Framework アプリの場合: `<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>`
 
 ## <a name="resolve-system-and-user-assembly-references"></a>システム参照およびユーザー アセンブリ参照の解決
 
 .NET の特定のバージョンを対象にするには、最初に適切なアセンブリ参照をインストールする必要があります。 [.NET ダウンロード](https://www.microsoft.com/net/download/windows) ページでさまざまなバージョンの .NET の開発者向けパックをダウンロードすることができます。
 
-.NET Framework プロジェクトの場合、 **[参照の追加]** ダイアログ ボックスでは、対象の .NET Framework のバージョンに関係しないシステム アセンブリが無効にされます。その結果、それらのアセンブリをプロジェクトに誤って追加することはありません。 (システム アセンブリとは、.NET Framework バージョンの一部である *.dll* ファイルのことです)。対象より新しいバージョンのフレームワークに属する参照は解決されず、そのような参照に依存するコントロールを追加することはできません。 このような参照を有効にするには、プロジェクトの対象である .NET Framework を、その参照を含むバージョンに再設定します。 詳細については、「[方法 :特定の .NET バージョンをターゲットにする](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。
+.NET Framework プロジェクトの場合、 **[参照の追加]** ダイアログ ボックスでは、対象の .NET Framework のバージョンに関係しないシステム アセンブリが無効にされます。その結果、それらのアセンブリをプロジェクトに誤って追加することはありません。 (システム アセンブリとは、.NET Framework バージョンの一部である *.dll* ファイルのことです)。対象より新しいバージョンのフレームワークに属する参照は解決されず、そのような参照に依存するコントロールを追加することはできません。 このような参照を有効にするには、プロジェクトの対象である .NET Framework を、その参照を含むバージョンに再設定します。
 
 アセンブリ参照の詳細については、「[デザイン時のアセンブリの解決](../msbuild/resolving-assemblies-at-design-time.md)」を参照してください。
 

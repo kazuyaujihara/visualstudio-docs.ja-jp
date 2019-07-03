@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: fb70966dd24c4d22d473b552297a60ddebdce106
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 4e38378c22c6920e471b72d990d61d9b4ebd3d7f
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836181"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253803"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Visual Studio for Mac での ASP.NET Core アプリケーションのビルド 
 
@@ -59,7 +59,7 @@ ASP.NET Core は、Web アプリとサービス、IoT アプリ、モバイル �
 
     ![](media/netcore-image4.png)
 
-3. **HomeController** クラスでは (規則により)、 **/Home** で始まるすべての着信要求が処理されます。 **Index** メソッドでは、ディレクトリのルート (http://site.com/Home) など) への要求が処理されます。その他のメソッドでは、規則に基づいて名前付きのパスへの要求が処理されます ( **http://site.com/Home/About** への要求を処理する **About()** など)。 もちろん、これらはすべて構成可能です。 1 つの重要点として、**HomeController** は新しいプロジェクトの既定のコントローラーであるため、サイトのルート ( **http://site.com** ) への要求は、 **http://site.com/Home** または **http://site.com/Home/Index** への要求と同様に、**HomeController** の **Index()** への要求を経由します。
+3. **HomeController** クラスでは (規則により)、 **/Home** で始まるすべての着信要求が処理されます。 **Index** メソッドでは、ディレクトリのルート (`http://site.com/Home` など) への要求が処理されます。その他のメソッドでは、規則に基づいて名前付きのパスへの要求が処理されます (`http://site.com/Home/About` への要求を処理する **About()** など)。 もちろん、これらはすべて構成可能です。 1 つの重要点として、**HomeController** は新しいプロジェクトの既定のコントローラーであるため、サイトのルート (`http://site.com`) への要求は、`http://site.com/Home` または `http://site.com/Home/Index` への要求と同様に、**HomeController** の **Index()** への要求を経由します。
 
     ![](media/netcore-image5.png)
 

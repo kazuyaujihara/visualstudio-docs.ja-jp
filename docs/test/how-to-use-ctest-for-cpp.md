@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: a97aa7dfcc1cc46d64813ea7714629cb8557055d
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 0b6c4eb391014342a18ec3fe56a03a651463105c
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714888"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160087"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Visual Studio 2017 以降で C++ 用の CTest を使用する方法
 
-CMake (CTest を含む) は、**C++ によるデスクトップ開発**ワークロードのコンポーネントとして Visual Studio IDE に既定で統合されています。 それをご自分のコンピューターにインストールする必要がある場合、Visual Studio Installer プログラムを開き、 **[C++ によるデスクトップ開発]** ボタンをクリックし、 **[変更]** をクリックします。 ワークロード コンポーネントの一覧の下にある [[Visual C++ 用の CMake ツール]](/cpp/build/cmake-tools-for-visual-cpp) をオンにします。
+CMake (CTest を含む) は、**C++ によるデスクトップ開発**ワークロードのコンポーネントとして Visual Studio IDE に既定で統合されています。 それをご自分のコンピューターにインストールする必要がある場合、Visual Studio Installer プログラムを開き、 **[C++ によるデスクトップ開発]** ボタンをクリックし、 **[変更]** をクリックします。 ワークロード コンポーネントの一覧で **[Windows 用 C++ CMake ツール]** を選択します。
 
 ## <a name="to-write-tests"></a>テストを記述するには
 
-Visual Studio の CMake サポートでは、Visual Studio プロジェクト システムを必要としません。 したがって、任意の CMake 環境の場合と同様に、CTest テストを記述して構成します。 Visual Studio での CMake 使用の詳細については、[Visual C++ 用の CMake ツール](/cpp/ide/cmake-tools-for-visual-cpp)に関する記事を参照してください。
+Visual Studio の CMake サポートでは、Visual Studio プロジェクト システムを必要としません。 したがって、任意の CMake 環境の場合と同様に、CTest テストを記述して構成します。 Visual Studio での CMake 使用について詳しくは、「[Visual Studio の CMake プロジェクト](/cpp/build/cmake-projects-in-visual-studio)」をご覧ください。
 
 ## <a name="to-run-tests"></a>テストを実行するには
 

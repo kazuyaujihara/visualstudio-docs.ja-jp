@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: f989ccba45a034d90562b69eabf871e0e2a545b4
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 1f8cfd597d2bfe8642c5b83940ceb03b7dd06e69
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037532"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309788"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Visual Studio 2019 for Mac をインストールする
 
@@ -21,7 +21,7 @@ macOS でネイティブのクロスプラット フォーム対応の .NET ア�
  > [!div class="button"]
  > [Visual Studio for Mac をダウンロードする](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 - macOS High Sierra 10.12 以降が搭載された Mac。
 
@@ -46,9 +46,21 @@ iOS または macOS 向けに Xamarin アプリをビルドするには、以下
 
     [![プライバシーと条項へのリンクに従って、同意する場合は続行する](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
 
-6. 使用可能なワークロードの一覧が表示されます。 使用するワークロードを選択します。
+6. 使用可能なワークロードの一覧が表示されます。 使用するコンポーネントを選択します。
 
-    [![インストールしたいオプションのワークロード機能を選択する](media/install-selection-sml.png)](media/install-selection.png#lightbox)
+    [![インストールしたいオプションのワークロード機能を選択する](media/install-selection.png)](media/install-selection.png#lightbox)
+
+   すべてのプラットフォームをインストールすることを希望されない場合には、以下のガイドを使用してインストールするプラットフォームを決めることがきます。
+
+   * **Xamarin を使用するアプリ**:
+      - Xamarin.Forms – **Android** と **iOS** プラットフォームを選択します。
+      - iOS のみ – **iOS** プラットフォームを選択します ([ **Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります)。
+      - Android のみ – **Android** プラットフォームを選択します (関連する依存関係も選択する必要があります)。
+      - Mac のみ – **macOS** プラットフォームを選択します ([ **Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります)。
+      - 完全なクロスプラットフォームの Xamarin アプリ – **Android**、**iOS**、および**macOS** プラットフォームを選択します。
+   * **.NET Core アプリケーション** – **.NET Core** プラットフォームを選択します。
+   * **ASP.NET Core Web アプリケーション** – **.NET Core** プラットフォームを選択します。
+   * **クロスプラットフォームの Unity ゲーム開発** – Visual Studio for Mac 以外の追加のプラットフォームをインストールする必要はありません。 Unity 拡張機能のインストールの詳細については、[Unity セットアップ ガイド](/visualstudio/mac/setup-vsmac-tools-unity)に関するページをご覧ください。
 
 7. 選択を行ったら、 **[インストール]** ボタンを押します。
 8. インストーラーではダウンロードの進行状況が表示され、Visual Studio for Mac と選択したワークロードがインストールされます。 インストールに必要な権限を付与するため、パスワードの入力が求められる場合があります。

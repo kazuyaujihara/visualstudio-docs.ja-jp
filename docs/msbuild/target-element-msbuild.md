@@ -1,6 +1,6 @@
 ---
 title: Target 要素 (MSBuild) | Microsoft Docs
-ms.date: 03/13/2017
+ms.date: 06/13/2019
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e48d28f5270cd43da22d070f30706ce75a1655c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b9910a677f5442e10c62a0623043033edd899c3
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939301"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141173"
 ---
 # <a name="target-element-msbuild"></a>Target 要素 (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] が順次実行するタスクのセットを格納します。
@@ -84,7 +84,9 @@ ms.locfileid: "62939301"
 | [プロジェクト](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] プロジェクト ファイルの必須のルート要素です。 |
 
 ## <a name="remarks"></a>解説
- 実行する最初のターゲットは実行時に指定されます。 各ターゲットは他のターゲットとの依存関係を持つ場合があります。 たとえば、展開用のターゲットはコンパイル用のターゲットに依存します。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] エンジンは `DependsOnTargets` 属性に出現する順序で、依存関係を左から右に実行します。 詳細については、「[ターゲット](../msbuild/msbuild-targets.md)」を参照してください。
+ 実行する最初のターゲットは実行時に指定されます。 各ターゲットは他のターゲットとの依存関係を持つ場合があります。 たとえば、展開用のターゲットはコンパイル用のターゲットに依存します。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] エンジンは `DependsOnTargets` 属性に出現する順序で、依存関係を左から右に実行します。 詳細については、[ターゲット](../msbuild/msbuild-targets.md) を参照してください。
+
+ MSBuild はインポートの順序に依存するので、特定の `Name` 属性を持つ最後のターゲットの定義が使われます。
 
  あるターゲットに複数のターゲットが依存関係を持つ場合でも、ターゲットは 1 回のビルド中に 1 回だけ実行されます。
 

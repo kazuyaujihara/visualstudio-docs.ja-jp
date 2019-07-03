@@ -1,6 +1,6 @@
 ---
 title: ビルドのカスタマイズ | Microsoft Docs
-ms.date: 06/14/2017
+ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e644fd6fc521318512bbc5dd25838a379af78a9
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778102"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141167"
 ---
 # <a name="customize-your-build"></a>ビルドのカスタマイズ
 
@@ -28,7 +28,7 @@ ms.locfileid: "62778102"
 
 ## <a name="directorybuildprops-and-directorybuildtargets"></a>Directory.Build.props と Directory.Build.targets
 
-MSBuild バージョン 15 より前では、ソリューション内のプロジェクトに新しいカスタム プロパティを提供する場合、ソリューション内のすべてのプロジェクト ファイルにそのプロパティへの参照を手動で追加する必要がありました。 または、*.props* ファイルでプロパティを定義してから、ソリューションのすべてのプロジェクトでその *.props* ファイルを明示的にインポートする必要がありました。
+MSBuild バージョン 15 より前では、ソリューション内のプロジェクトに新しいカスタム プロパティを提供する場合、ソリューション内のすべてのプロジェクト ファイルにそのプロパティへの参照を手動で追加する必要がありました。 または、 *.props* ファイルでプロパティを定義してから、ソリューションのすべてのプロジェクトでその *.props* ファイルを明示的にインポートする必要がありました。
 
 ただし、現在では、ソースが含まれるルート フォルダーにある *Directory.Build.props* という単一のファイルで新しいプロパティを定義することで、1 つのステップですべてのプロジェクトに追加できます。 MSBuild が実行されると、*Microsoft.Common.props* はディレクトリ構造で *Directory.Build.props* ファイルを検索します (また、*Microsoft.Common.targets* は *Directory.Build.targets* を探します)。 該当するものが見つかった場合、プロパティがインポートされます。 *Directory.Build.props* は、ディレクトリの下のプロジェクトをカスタマイズできるようにする、ユーザー定義のファイルです。
 
@@ -108,6 +108,36 @@ MSBuild の一般的手法をまとめると次のようになります。
 
 もっと簡単にまとめると、何もインポートしない最初の *Directory.Build.props* が MSBuild の停止箇所になります。
 
+### <a name="choose-between-adding-properties-to-a-props-or-targets-file"></a>.props ファイルまたは .targets ファイルのどちらにプロパティを追加するかを選択する
+
+MSBuild はインポートの順序に依存するので、最後のプロパティ (または、`UsingTask` またはターゲット) の定義が使われます。
+
+明示的なインポートを使うときは、いつでも *.props* または *.targets* ファイルからインポートできます。 広く使われている規則を次に示します。
+
+- *.props* ファイルは、インポート順序の早い段階でインポートします。
+
+- *.targets* ファイルは、ビルド順序の後の方でインポートします。
+
+この規則は、`<Project Sdk="SdkName">` のインポートによって適用されます (つまり、*Sdk.props* はファイルのすべての内容の前で最初にインポートされ、*Sdk.targets* はファイルのすべての内容の後で最後にインポートされます)。
+
+プロパティを格納する場所を決定するときは、次の一般的なガイドラインを使います。
+
+- 多くのプロパティについては、上書きされず、実行時にのみ読み取られるため、どこで定義してもかまいません。
+
+- 個々のプロジェクトでカスタマイズされる可能性がある動作については、 *.props* ファイルで既定値を設定します。
+
+- カスタマイズされている可能性のあるプロパティの値を読み取ることによって、 *.props* ファイルで依存プロパティを設定しないでください。カスタマイズは、MSBuild でユーザーのプロジェクトが読み取られるまで行われません。
+
+- 依存プロパティは、 *.targets* ファイルで設定してください。そうすれば、個々のプロジェクトからカスタマイズが取得されます。
+
+- プロパティをオーバーライドする必要がある場合は、ユーザー プロジェクトのすべてのカスタマイズが有効になる機会を持った後の、 *.targets* ファイルの中で行います。 派生プロパティを使うときは注意してください。派生プロパティのオーバーライドも必要な場合があります。
+
+- *.props* ファイルで項目をインクルードします (プロパティの条件に応じて)。 すべての項目の前ですべてのプロパティが考慮されるので、ユーザー プロジェクトのプロパティのカスタマイズが取得され、これにより、ユーザーのプロジェクトでインポートによって取り込まれた項目を `Remove` または `Update` する機会があります。
+
+- ターゲットは *.targets* ファイル内で定義します。 ただし、 *.targets* ファイルが SDK によってインポートされる場合は、ユーザーのプロジェクトによって既定でターゲットをオーバーライドする場所がないため、ターゲットのオーバーライドが難しくなることに注意してください。
+
+- 可能であれば、ターゲット内のプロパティを変更するより、評価時にプロパティをカスタマイズするようにします。 このガイドラインに従うと、プロジェクトを読み込むこと、および何が行われているか理解することが、容易になります。
+
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
 既定では、*Microsoft.Common.props* は `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props` をインポートし、*Microsoft.Common.targets* は `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets` をインポートします。 `MSBuildProjectExtensionsPath` の既定値は `$(BaseIntermediateOutputPath)`、`obj/` です。 NuGet はこのメカニズムを使って、パッケージに付随するビルド ロジックを参照します。つまり、復元時、パッケージの内容を参照する `{project}.nuget.g.props` ファイルが作成されます。
@@ -138,7 +168,7 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportBefore\*.
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 
-後にインポートします。 インストールされた SDK で、共通プロジェクト タイプのビルド ロジックを拡張できます。
+後にインポートします。 この規則により、インストールされた SDK で、共通プロジェクト タイプのビルド ロジックを拡張できます。
 
 同じディレクトリ構造が `$(MSBuildUserExtensionsPath)` で検索されます。これはユーザー別フォルダー *%LOCALAPPDATA%\Microsoft\MSBuild* です。 そのフォルダーに置かれたファイルは、そのユーザーの資格情報の下で実行される、該当するプロジェクト タイプのすべてのビルドでインポートされます。 このユーザー拡張は、パターン `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}` でインポート ファイルに基づいて名前が付けられたプロパティを設定することで無効にできます。 たとえば、`ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` を `false` に設定すると、`$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*` がインポートされません。
 
