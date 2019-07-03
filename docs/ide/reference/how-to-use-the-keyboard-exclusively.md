@@ -1,6 +1,7 @@
 ---
-title: '方法: キーボード主体で操作する'
-description: さまざまな既定のショートカット キーの組み合わせを使って、Visual Studio 統合開発環境 (IDE) 内で移動やコーディングを簡単に行う方法について説明します。
+title: Visual Studio をマウスなしで使用する
+titleSuffix: ''
+description: Visual Studio の統合開発環境 (IDE) でキーボードだけを使って移動したりコードを記述したりする方法について説明します。
 ms.date: 05/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,18 +16,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f1bd20b8ad9e4682cfd5fbe4d93dc55e5dc081d
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 885785c8910bdb0f03643c64eca29415bf2afb17
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820603"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043512"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>方法: キーボード主体で操作する
+# <a name="how-to-use-the-keyboard-exclusively"></a>キーボードだけを使用する方法
 
-キーボード ショートカットを利用すれば、Visual Studio IDE 内での移動とコーディングが簡単になります。 キーボード ショートカットをさらに効果的に利用するための方法をいくつか紹介します。
+キーボード ショートカットを利用すれば、Visual Studio IDE 内での移動やコードの記述が簡単になります。 この記事では、キーボード ショートカットをさらに効果的に使用するための方法をいくつか紹介します。
 
-Visual Studio の全ショートカット キーの一覧については、「[既定のキーボード ショートカット](../../ide/default-keyboard-shortcuts-in-visual-studio.md)」を参照してください。 他の Microsoft 製品で利用できるキーボード ショートカットについては、[https://www.microsoft.com/accessibility/](http://go.microsoft.com/fwlink/?LinkID=40400) をご覧ください。
+Visual Studio のすべてのコマンド ショートカット キーの一覧については、[既定のキーボード ショートカット](../../ide/default-keyboard-shortcuts-in-visual-studio.md)に関する記事をご覧ください。
 
 ::: moniker range="vs-2017"
 
@@ -40,23 +41,19 @@ Visual Studio の全ショートカット キーの一覧については、「[�
 
 ## <a name="toolbox-controls"></a>ツールボックス コントロール
 
-キーボードを使って、ツールボックスのコントロールをフォームまたはデザイナーに追加できます。
-
-### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>キーボードを使ってツールボックスからデザイナーにコントロールを追加するには
+マウスを使わずに、ツールボックスのコントロールをフォームまたはデザイナーに追加するには:
 
 1. メニュー バーで **[表示]** 、 **[ツールボックス]** の順にクリックします。
 
 2. **[ツールボックス]** タブでセクション間を移動するには、**Ctrl** キーを押しながら**上方向**キーを押すか、**Ctrl** キーを押しながら**下方向**キーを押します。
 
-3. コントロール間を移動するには、**上方向キー**または**下方向キー**を使用します。
+3. セクション内のコントロール間を移動するには、**上方向キー**または**下方向キー**を使います。
 
 4. コントロールを選択したら、**Enter** キーを使用し、コントロールをフォームまたはデザイナーに追加します。
 
 ## <a name="dialog-box-options"></a>ダイアログ ボックス オプション
 
-キーボードを使って、ダイアログ ボックスのオプション間を移動し、オプションの設定を変更できます。
-
-### <a name="set-dialog-box-options-from-the-keyboard"></a>キーボードを使ってダイアログ ボックスのオプションを設定する
+キーボードだけを使って、ダイアログ ボックスのオプション間を移動し、オプションの設定を変更するには:
 
 1. **Tab** キーまたは **Shift**+**Tab** キーを使って、ダイアログ ボックス内のコントロール間を上下に移動します。
 
@@ -72,17 +69,13 @@ Visual Studio の全ショートカット キーの一覧については、「[�
 
    - グリッドの場合は、方向キーを使って移動します。 グリッド内のドロップダウン リストの場合は、**Shift** キーと **Alt** キーを押しながら**下方向キー**を押して項目を表示し、**上方向**キーと**下方向**キーを使って選択した項目を変更します。
 
-## <a name="window-and-file-navigation"></a>Windows とファイルのナビゲーション
-
-キーボードを使用し、開いているツール ウィンドウやドキュメント ウィンドウの間を移動するにはいくつかの方法があります。 また、キーボードを使って、ツール ウィンドウを別の場所に移動してドッキングすることもできます。
-
-### <a name="navigate-among-windows-and-files-in-the-ide"></a>IDE 内のウィンドウ間およびファイル間を移動する
+## <a name="navigate-between-windows-and-files"></a>ウィンドウ間およびファイル間を移動する
 
 - エディターまたはデザイナー内でファイル間を移動するには、**Ctrl**+**Tab** ショートカット キーボードを選択し、 **[アクティブなファイル]** が選択された IDE ナビゲーターを表示します。 強調表示されているファイルに移動するには、**Enter** キーを押します。
 
 - ドッキングされたツール ウィンドウ間を移動するには、**Alt**+**F7** キーボード ショートカットを選択し、 **[アクティブなツール ウィンドウ]** が選択された IDE ナビゲーターを表示します。 強調表示されているウィンドウに移動するには、**Enter** キーを押します。
 
-### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>キーボードを使ってツール ウィンドウを移動してドッキングするには
+## <a name="move-and-dock-tool-windows"></a>ツール ウィンドウを移動およびドッキングする
 
 1. 移動するツール ウィンドウに移動し、フォーカスを設定します。
 
@@ -109,3 +102,4 @@ Visual Studio の全ショートカット キーの一覧については、「[�
 * [キーボード ショートカットの識別とカスタマイズ](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 * [アクセシビリティのヒントとテクニック](../../ide/reference/accessibility-tips-and-tricks.md)
 * [既定のキーボード ショートカット](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+* [Microsoft 製品のアクセシビリティ](https://www.microsoft.com/accessibility/)
