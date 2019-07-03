@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68840957a0c152add06804eac58f3d24afa1e846
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 35b0348788cfa23dd389b0647e24b7ac0aa0b7a1
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261962"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309816"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig での .NET の名前付け規則
 
@@ -25,7 +25,7 @@ ms.locfileid: "66261962"
 
 それぞれの名前付け規則については、名前付け規則を適用するシンボル、名前付けのスタイル、および規則を適用する上での重大度を、以下に示すプロパティを使用して指定する必要があります。 プロパティの順序は重要ではありません。
 
-まずは、名前付け規則を完全に記述するために必要なプロパティの各々で使用する名前付け規則のタイトルを選択します。 たとえば、`public_members_must_be_capitalized` は、名前付け規則の名前としてわかりやすく適切です。 以下のセクションでは、指定するタイトルを **<namingRuleTitle\>** として参照します。
+まずは、名前付け規則を完全に記述するために必要なプロパティの各々で使用する名前付け規則のタイトルを選択します。 たとえば、`public_members_must_be_capitalized` は、名前付け規則の名前としてわかりやすく適切です。 以下のセクションでは、選択したタイトルを **<namingRuleTitle\>** として参照します。
 
 ## <a name="symbols"></a>シンボル
 
@@ -116,7 +116,7 @@ ms.locfileid: "66261962"
 
 ## <a name="style"></a>スタイル
 
-名前付け規則を適用するシンボルのグループを識別したので、次に名前付けのスタイルを記述する必要があります。 名前が特定のプレフィックスまたは特定のサフィックスを持つスタイルを指定したり、名前に含まれている個々の単語が特定の文字で区切られるスタイルにしたりすることができます。 また、大文字/小文字のスタイルを指定することもできます。 スタイル プロパティの形式は次のようになります。
+名前付け規則を適用するシンボルのグループを識別したので、名前付けのスタイルを記述できます。 名前が特定のプレフィックスまたは特定のサフィックスを持つスタイルを指定したり、名前に含まれている個々の単語が特定の文字で区切られるスタイルにしたりすることができます。 また、大文字/小文字のスタイルを指定することもできます。 スタイル プロパティの形式は次のようになります。
 
 `dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`
 
@@ -175,6 +175,14 @@ error | このスタイルに準拠していないとき、**エラー一覧**�
 > [!NOTE]
 > 名前付け規則違反を確認するために、プロジェクトをビルドする必要はありません。 名前付け規則違反は、コードの編集時に、**エラー一覧**に表示されるか、または修正候補として表示されます。
 
+## <a name="default-naming-styles"></a>既定の名前付けスタイル
+
+カスタム名前付け規則を何も指定しないと、Visual Studio では次の既定のスタイルが使われます。
+
+- アクセシビリティが `public`、`private`、`internal`、`protected`、または `protected_internal` であるクラス、構造体、列挙型、プロパティ、およびイベントでは、既定の名前付けスタイルはパスカル ケースです。
+
+- アクセシビリティが `public`、`private`、`internal`、`protected`、または `protected_internal` であるインターフェイスでは、既定の名前付けスタイルはパスカル ケースであり、プレフィックス **I** を付ける必要があります。
+
 ## <a name="example"></a>例
 
 次の *.editorconfig* ファイルには、パブリック プロパティ、メソッド、フィールド、イベント、デリゲートを大文字で入力する必要があることを指定した名前付け規則が含まれています。 この名前付け規則では、コンマを使用して個々のシンボル値を区切ることにより、規則を適用する複数の種類のシンボルを指定しています。
@@ -209,6 +217,8 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 
 ## <a name="see-also"></a>関連項目
 
+- [言語規則](editorconfig-language-conventions.md)
+- [書式規則](editorconfig-formatting-conventions.md)
 - [Roslyn 名前付け規則](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
-- [.NET 言語と書式の規則](../ide/editorconfig-code-style-settings-reference.md)
 - [移植可能なカスタム エディター オプションを作成する](../ide/create-portable-custom-editor-options.md)
+- [EditorConfig の .NET コーディング規則の設定](editorconfig-code-style-settings-reference.md)

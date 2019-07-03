@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: befbb09d347043ae304702618506d193344e23ba
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825472"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195247"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET Compiler Platform アナライザーの概要
 
-.NET Compiler Platform ("Roslyn") のアナライザーでは、コードのスタイル、品質と保守容易性、設計、その他の問題が分析されます。 Visual Studio には、ユーザーが入力した C# や Visual Basic のコードを分析する、組み込みのアナライザーのセットが含まれています。 [テキスト エディターの [オプション]](../ide/code-styles-and-quick-actions.md) ページまたは [.editorconfig ファイル](../ide/editorconfig-code-style-settings-reference.md)で、これらの組み込みアナライザーのユーザー設定を構成します。 Visual Studio 拡張機能または NuGet パッケージとして、追加のアナライザーをインストールできます。
+.NET Compiler Platform ("Roslyn") のアナライザーでは、コードのスタイル、品質と保守容易性、設計、その他の問題が分析されます。 Visual Studio には、ユーザーが入力した C# や Visual Basic のコードを分析する、組み込みのアナライザーのセットが含まれています。 [テキスト エディターの [オプション]](../ide/code-styles-and-code-cleanup.md) ページまたは [.editorconfig ファイル](../ide/editorconfig-code-style-settings-reference.md)で、これらの組み込みアナライザーのユーザー設定を構成します。 Visual Studio 拡張機能または NuGet パッケージとして、追加のアナライザーをインストールできます。
 
 アナライザーでルール違反が見つかった場合は、コード エディター (問題のあるコードの下の "*波線*" として) および **[エラー一覧]** ウィンドウで報告されます。
 
@@ -32,7 +32,7 @@ ms.locfileid: "62825472"
 
 .NET Compiler Platform ("Roslyn") アナライザーは最終的に、マネージド コード用の[スタティック コード分析](../code-quality/code-analysis-for-managed-code-overview.md)に置き換えられます。 スタティック コード分析ルールの多くは、既に Roslyn アナライザー診断として書き換えられています。
 
-スタティック コード分析のルール違反と同様、Roslyn アナライザーの違反は **[エラー一覧]** に表示されます。 さらに、Roslyn アナライザーの違反は、コード エディターで問題のあるコードの下に*波線* としても示されます。 波線の色は、ルールの[重要度設定](../code-quality/use-roslyn-analyzers.md#rule-severity)によって異なります。 次のスクリーンショットには、3 つの違反 (赤色、緑色、灰色が 1 つずつ) が示されています。
+スタティック コード分析のルール違反と同様、Roslyn アナライザーの違反は **[エラー一覧]** に表示されます。 さらに、Roslyn アナライザーの違反は、コード エディターで問題のあるコードの下に "*波線*" としても示されます。 波線の色は、ルールの[重要度設定](../code-quality/use-roslyn-analyzers.md#rule-severity)によって異なります。 次のスクリーンショットには、3 つの違反 (赤色、緑色、灰色が 1 つずつ) が示されています。
 
 ![コード エディターの波線](media/diagnostics-severity-colors.png)
 
@@ -46,10 +46,10 @@ Roslyn アナライザーでは、スタティック コード分析で報告さ
 > [!NOTE]
 > 次の UI オプションは、静的コードの分析のみに適用されます。
 >
-> - **[分析]** > **[コード分析の実行]** メニュー オプション。
+> - **[分析]**  >  **[コード分析の実行]** メニュー オプション。
 > - プロジェクトのプロパティ ページの **[コード分析]** タブにある **[ビルドに対するコード分析の有効化]** および **[生成されたコードの結果を表示しない]** チェック ボックス (これらのオプションは、Roslyn アナライザー上では効果がありません)。
 
-**[エラー一覧]** で Roslyn アナライザーとスタティック コード分析からの違反を区別するには、**[ツール]** 列を確認します。 **ソリューション エクスプローラー**のアナライザー アセンブリのいずれかが [ツール] の値 (**Microsoft.CodeQuality.Analyzers** など) と一致する場合、違反は Roslyn アナライザーからのものです。 それ以外の場合、違反はスタティック コード分析からのものです。
+**[エラー一覧]** で Roslyn アナライザーとスタティック コード分析からの違反を区別するには、 **[ツール]** 列を確認します。 **ソリューション エクスプローラー**のアナライザー アセンブリのいずれかが [ツール] の値 (**Microsoft.CodeQuality.Analyzers** など) と一致する場合、違反は Roslyn アナライザーからのものです。 それ以外の場合、違反はスタティック コード分析からのものです。
 
 ![[エラー一覧] の [ツール] 列](media/code-analysis-tool-in-error-list.png)
 
@@ -79,6 +79,14 @@ Visual Studio 拡張機能としてアナライザーをインストールする
 ### <a name="rule-severity"></a>ルールの重要度
 
 Visual Studio 拡張機能としてインストールされたアナライザーからルールの重要度を設定することはできません。 [ルールの重要度](../code-quality/use-roslyn-analyzers.md#rule-severity)を構成するには、NuGet パッケージとしてアナライザーをインストールします。
+
+### <a name="categories"></a>カテゴリ
+
+コードの分析に役立つさまざまな種類のアナライザーを次に示します。 
+
+- Microsoft が推奨するアナライザー: [FXCop アナライザー](../code-quality/fxcop-analyzers.yml)
+- Visual Studio IDE アナライザー: [EditorConfig](../ide/code-styles-and-code-cleanup.md)
+- サード パーティのアナライザー: [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/)、[Roslynator](https://www.nuget.org/packages/Roslynator/)、[XUnit アナライザー](https://www.nuget.org/packages/xunit.analyzers/)、[Sonar アナライザー](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
 
 ## <a name="next-steps"></a>次の手順
 

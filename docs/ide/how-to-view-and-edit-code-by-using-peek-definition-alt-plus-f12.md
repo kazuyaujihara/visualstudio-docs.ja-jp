@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7edb17ec3cefd87263ea367b3b012a391d77d6d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 79bebcdaaf2d970f019da12141275358120ac70e
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747331"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043405"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>方法:[定義をここに表示] を使用してコードを表示および編集する (Alt + F12)
 
@@ -86,4 +86,4 @@ ms.locfileid: "66747331"
 
 - [コード間の移動](../ide/navigating-code.md)
 - [[定義へ移動] と [定義をここに表示]](../ide/go-to-and-peek-definition.md)
-- [生産性に関するヒント](../ide/productivity-tips-for-visual-studio.md)
+- [Visual Studio の生産性機能](../ide/productivity-features.md)
