@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0d78e7dcd7dfd203a15510037b277b8c2633805e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4a458a50be6161e320b3ffbbe702e21f9f502c77
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038648"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559669"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop ルールのポートの状態
 
 以前のバージョンの Visual Studio 静的コード分析を使用していた場合疑問のこれらのルールとして現在の実装で利用可能な[FxCop アナライザー](install-fxcop-analyzers.md)します。 このページは、移植されてないを移植するルールを一覧表示し、それらを移植する計画があるかどうか。
 
-## <a name="ported-rules"></a>規則のインポート
+## <a name="ported-rules"></a>移植された規則
 
 [ドキュメント ページの自動生成された](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)roslyn アナライザーでリポジトリが最新の FxCop アナライザーに移植された規則の一覧。 そのページにも関連付けられているかどうかは、既定のルールが有効かどうかなどの追加情報*コード修正*します。 ([コード修正](../ide/quick-actions.md)は 1 回のクリックの修正プログラムを Visual Studio の電球アイコン メニューで使用できます)。
 
@@ -67,8 +67,8 @@ ms.locfileid: "66038648"
 [CA1063](ca1063-implement-idisposable-correctly.md) | IDisposable を正しく実装します。
 [CA1064](ca1064-exceptions-should-be-public.md) | 例外は public として設定する必要があります
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 予期しない場所に例外を発生させません
-CA1066 | 型{0}IEquatable を実装する必要があります<T>Equals をオーバーライドするので
-CA1067 | IEquatable を実装する場合は、Object.Equals(object) を上書き<T>
+CA1066 | 型{0}IEquatable を実装する必要があります\<T > Equals をオーバーライドするので
+CA1067 | IEquatable を実装する場合は、Object.Equals(object) をオーバーライド\<T >
 CA1068 | CancellationToken パラメーターは、最後に置く必要があります。
 CA1200 | プレフィックスで cref タグを使用しないでください。
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | ローカライズされるパラメーターとしてリテラルを渡さない
