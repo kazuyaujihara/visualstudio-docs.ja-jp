@@ -1204,6 +1204,15 @@
         - name: 問題の状態の報告とよくあるご質問
           displayName: Developer Community
           href: ide/report-a-problem.md
+        - name: すべての呼び出し履歴での Visual Studio プロセスのミニダンプを作成する
+          displayName: Create minidumps with call stacks
+          href: ide/report-a-problem-minidumps.md
+        - name: MSBuild の問題のログを作成する
+          displayName: Create logs for MSBuild problems
+          href: ide/msbuild-logs.md
+        - name: PerfView で ETL トレースを収集する
+          displayName: ETL trace with PerfView
+          href: ide/report-a-problem-perfview.md
     - name: Visual Studio の機能を提案する
       href: ide/suggest-a-feature.md
     - name: 開発者コミュニティのデータのプライバシー
