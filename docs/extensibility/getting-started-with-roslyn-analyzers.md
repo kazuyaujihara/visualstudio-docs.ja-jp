@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb224d1c84f9216ed303c919118af4997be2405c
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: d6a6f4123f72afd8c310e627a9da6759f4c4548a
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835906"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586955"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Roslyn アナライザーを概要します。
 
@@ -30,7 +30,6 @@ Visual Studio で、プロジェクト ベースのライブ コード アナラ
 [現実世界の Roslyn アナライザー](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md)としても視聴できる[説明](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [GitHub、アナライザーの 3 種類にグループ化にいくつかの例](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
-
 
 ## <a name="see-also"></a>関連項目
 
