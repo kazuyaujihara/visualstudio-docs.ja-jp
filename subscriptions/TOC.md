@@ -34,7 +34,6 @@
 ### [プロフェッショナルな開発](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [Skill Me Up](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [MSDN マガジンの定期購読](vs-msdn.md)
 ### [サポートの特典](technical-support.md)
