@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: ab38ffd1f94e6c8c432d25d8408a0209e4f96e30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50e9093ded8aafaed93f6a5063631108cb2a9a89
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961925"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624169"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>テーブル デザイナーのフィルター文字列の作成
 ## <a name="overview"></a>概要
 Visual Studio **テーブル デザイナー**に表示される Azure テーブルのデータをフィルター処理するには、フィルター文字列を作成してフィルター フィールドに入力します。 フィルター文字列の構文は、WCF Data Services で定義されており、SQL の WHERE 句に似ています。ただし、文字列は HTTP 要求を介して Table service に送信されます。 必要なエンコード処理は**テーブル デザイナー**で自動的に行われます。したがって、目的のプロパティ値を条件としてフィルター処理するときに必要なことは、フィルター フィールドにプロパティ名、比較演算子、条件値、ブール演算子を入力するだけです (ブール演算子は省略可能)。 ストレージ サービスの REST API ([リファレンス](http://go.microsoft.com/fwlink/p/?LinkId=400447)をご覧ください) でテーブルを照会するための URL を作成する場合とは異なり、$filter クエリ オプションを含める必要はありません。
 
-WCF Data Services は、 [Open Data Protocol](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData) に基づいています。 フィルター システム クエリ オプション (**$filter**) の詳細については、 [OData URI 規則仕様](http://go.microsoft.com/fwlink/p/?LinkId=214806)に関するページを参照してください。
+WCF Data Services は、 [Open Data Protocol](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData) に基づいています。 フィルター システム クエリ オプション ( **$filter**) の詳細については、 [OData URI 規則仕様](http://go.microsoft.com/fwlink/p/?LinkId=214806)に関するページを参照してください。
 
 ## <a name="comparison-operators"></a>比較演算子
 次の論理演算子は、全種類のプロパティでサポートされます。
@@ -50,45 +50,63 @@ WCF Data Services は、 [Open Data Protocol](http://go.microsoft.com/fwlink/p/?
 
 次の例では、**PartitionKey** プロパティと **RowKey** プロパティにフィルターを適用しています。キー以外のプロパティをフィルター文字列に追加することもできます。
 
-    PartitionKey eq 'Partition1' and RowKey eq '00001'
+```
+PartitionKey eq 'Partition1' and RowKey eq '00001'
+```
 
 各フィルター式をかっこで囲むことができます。ただし、これは必須ではありません。
 
-    (PartitionKey eq 'Partition1') and (RowKey eq '00001')
+```
+(PartitionKey eq 'Partition1') and (RowKey eq '00001')
+```
 
 ワイルドカードによるクエリは、Table service でも、テーブル デザイナーでもサポートされていません。 ただし、目的のプレフィックスに対して比較演算子を使用することで、プレフィックス一致を実行できます。 次の例は、文字 'A' で始まる LastName プロパティを持つエンティティを返します。
 
-    LastName ge 'A' and LastName lt 'B'
+```
+LastName ge 'A' and LastName lt 'B'
+```
 
 ## <a name="filtering-on-numeric-properties"></a>数値プロパティのフィルター処理
 整数または浮動小数点数を条件としてフィルター処理を行うには、引用符なしで数値を指定します。
 
 次の例は、値が 30 より大きい Age プロパティを持つすべてのエンティティを返します。
 
-    Age gt 30
+```
+Age gt 30
+```
 
 次の例は、値が 100.25 以下の AmountDue プロパティを持つすべてのエンティティを返します。
 
-    AmountDue le 100.25
+```
+AmountDue le 100.25
+```
 
 ## <a name="filtering-on-boolean-properties"></a>ブール型プロパティのフィルター処理
 ブール値を条件としてフィルター処理を行うには、引用符なしで **true** または **false** を指定します。
 
 次の例は、IsActive プロパティが **true**に設定されているすべてのエンティティを返します。
 
-    IsActive eq true
+```
+IsActive eq true
+```
 
 このフィルター式は、論理演算子なしで記述することもできます。 次の例でも、Table service は IsActive が **true**であるすべてのエンティティを返します。
 
-    IsActive
+```
+IsActive
+```
 
 IsActive が false であるすべてのエンティティを返すには、not 演算子を使用します。
 
-    not IsActive
+```
+not IsActive
+```
 
 ## <a name="filtering-on-datetime-properties"></a>DateTime プロパティのフィルター処理
 DateTime 値を条件としてフィルター処理を行うには、**datetime** キーワードに続けて、単一引用符で囲んだ日付/時刻の定数を指定します。 日付/時刻の定数は、結合 UTC 形式にする必要があります。詳しくは、「[DateTime プロパティ値の書式設定](http://go.microsoft.com/fwlink/p/?LinkId=400449)」をご覧ください。
 
 次の例は、CustomerSince プロパティが 2008 年 7 月 10 日と等しいエンティティを返します。
 
-    CustomerSince eq datetime'2008-07-10T00:00:00Z'
+```
+CustomerSince eq datetime'2008-07-10T00:00:00Z'
+```
