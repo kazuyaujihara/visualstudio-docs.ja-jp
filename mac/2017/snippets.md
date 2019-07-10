@@ -5,16 +5,16 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 56f736aa1e32530b1db96ad301091151731b7d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2def790511a69dc7b5cab8a5020f488e58b85db9
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986956"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693010"
 ---
 # <a name="code-snippets"></a>コード スニペット
 
-コード スニペット (" _コード テンプレート_" と呼ばれることがよくあります) は、あらかじめ記述されているコード ブロックを挿入して編集できるので、効率的にプログラミングできます。 コード スニペットを使用すると、よく使うパターンを簡単に追加したり、開発者が構文をよく知らないときに新しいパターンを学習したりするのに便利です。 C#、F#、HTML、XML、Python、Razor のテンプレートが用意されています。
+コード スニペット ("_コード テンプレート_" と呼ばれることがよくあります) を使うと、あらかじめ記述されているコード ブロックを挿入して編集できるので、効率的にプログラミングできます。 コード スニペットを使用すると、よく使うパターンを簡単に追加したり、開発者が構文をよく知らないときに新しいパターンを学習したりするのに便利です。 C#、F#、HTML、XML、Python、Razor のテンプレートが用意されています。
 
 このセクションでは、スニペットを作成し、コードに挿入して使う方法について説明します。
 
@@ -30,7 +30,7 @@ ms.locfileid: "62986956"
 
   [![ツールボックスでのコード スニペット](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **テンプレート挿入コマンド** &ndash; 現在、テンプレートの挿入用に設定された既定のキー バインドはありません。 1 つ作成するには、 **[Visual Studio] > [ユーザー設定] > [キー バインディング]** の順に移動して、`template` を検索します。 これにより、[バインディングの編集] フィールドに目的のキー バインドを追加することができ、 **[適用]** をクリックします。
+- **テンプレート挿入コマンド** &ndash; 現在、テンプレートの挿入用に設定された既定のキー バインドはありません。 1 つ作成するには、 **[Visual Studio] > [ユーザー設定] > [キー バインディング]** の順に移動して、`template` を検索します。 [バインディングの編集] フィールドに目的のキー バインドを追加して、 **[適用]** をクリックします。
 
   ![テンプレート挿入コマンド](media/source-editor-image15.png)
 

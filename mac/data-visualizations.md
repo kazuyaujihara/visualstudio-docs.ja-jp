@@ -1,17 +1,17 @@
 ---
 title: デバッグ - データの視覚化
 description: デバッグは、プログラミングの中でも一般的で必要な部分です。 Visual Studio for Mac には、デバッグが簡単になる機能一式が備わっています。 この記事では、デバッガーでオブジェクトを検査するときに表示できるさまざまなデータの視覚化について説明します。
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62984309"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691728"
 ---
 # <a name="data-visualizations"></a>データの視覚化
 
@@ -78,7 +78,7 @@ Rectangle/RectangleF (iOS と Mac では CGRect) は、ディメンションと�
 
 ## <a name="ienumerable"></a>IEnumerable
 
-IEnumerable はすべての値を列挙します。各値は、**[値の表示]** ボタンをクリックして表示できます。 `Array`、`ArrayList`、`List<>`、`Dictionary<,>` などのオブジェクトの場合は独自のデバッガー ビジュアライザーがあるため、IEnumerable オプションではオブジェクト値が表示されません。
+IEnumerable はすべての値を列挙します。各値は、 **[値の表示]** ボタンをクリックして表示できます。 `Array`、`ArrayList`、`List<>`、`Dictionary<,>` などのオブジェクトの場合は独自のデバッガー ビジュアライザーがあるため、IEnumerable オプションではオブジェクト値が表示されません。
 
 ![IEnumerable の視覚化](media/data-visualizations-image22.png)
 

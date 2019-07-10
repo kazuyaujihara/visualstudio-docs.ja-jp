@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: eb0267f668121e4d56f113798b14810f3446b8cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 652ff7b0380fc03a3f9c8155a2f8696d9dfee5b9
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960609"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692368"
 ---
 # <a name="packagejson-configuration"></a>package.json の構成
 
@@ -24,7 +24,9 @@ ms.locfileid: "62960609"
 
 npm パッケージのバージョン管理システムには、厳密な規則があります。 バージョンの形式は次に従っています。
 
-    [major].[minor].[patch]
+```
+[major].[minor].[patch]
+```
 
 たとえば、アプリ内に 5.2.1 のバージョンのパッケージがあるとします。 メジャー バージョンは 5、マイナー バージョンは 2、修正プログラムは 1 です。
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Azure コミュニティ特典について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: afeed3f51e9a7ac00885906711c943f63896c80e
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 5cfdb90a42b7dc3baa68da21e7856a62ba7593b8
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032265"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586949"
 ---
 # <a name="azure-community"></a>Azure コミュニティ
 
@@ -54,7 +54,6 @@ Azure コミュニティ特典を利用できるかどうかは、以下のよ�
 |                              Visual Studio Test Professional (標準)                               |    VL、リテール     |   1 年    |    はい     |
 |                                       MSDN Platforms (標準)                                       |    VL、リテール     |   1 年    |    はい     |
 | Visual Studio Enterprise (月間クラウド)、Visual Studio Professional (月間クラウド)、NFR<sup>1</sup> |        すべて        | 使用できません |     いいえ     |
-
 
 <sup>1</sup>  *内容:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、Microsoft Certified Trainer (MCT) が含まれます。*
 

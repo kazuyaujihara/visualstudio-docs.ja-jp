@@ -1,17 +1,17 @@
 ---
 title: '方法: Visual Studio for Mac で複数のソリューションを開く'
 description: Visual Studio for Mac で複数のソリューションを開く方法、およびアプリケーションの複数のインスタンスを開く方法について説明します。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: 031ce885faa29e587fe5d48210d8e13b48fcdc4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 479ef72d2f14d0d1f9de5d193ca76ae2c6128daa
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937969"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691380"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Visual Studio for Mac の複数のソリューションまたはインスタンスを開く
 
@@ -21,7 +21,7 @@ ms.locfileid: "62937969"
 
 ## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Visual Studio for Mac の 2 つ目のインスタンスを開く
 
-統合開発環境 (IDE) の 2 番目のインスタンスを開くには、ドックまたは**アプリケーション** フォルダーで Visual Studio アイコンを右クリックし、**[新しいインスタンス]** を選択します。
+統合開発環境 (IDE) の 2 番目のインスタンスを開くには、ドックまたは**アプリケーション** フォルダーで Visual Studio アイコンを右クリックし、 **[新しいインスタンス]** を選択します。
 
 ![Visual Studio アイコンを右クリックした状態の [新しいインスタンス] メニュー オプションのスクリーンショット](media/open-new-instance.png)
 
@@ -29,9 +29,9 @@ ms.locfileid: "62937969"
 
 1 つ目のソリューションをそのままにして 2 つ目のソリューションを開くには、次の手順を使います。
 
-1. 1 つ目のソリューションを既に開いた状態で、**[ファイル]** > **[開く]** の順に選択します。
+1. 1 つ目のソリューションを既に開いた状態で、 **[ファイル]**  >  **[開く]** の順に選択します。
 2. ファイル システムを参照して、既存のソリューションを検索します。
-3. **.sln** ファイルを選択し、**[オプション]** を選択します。
+3. **.sln** ファイルを選択し、 **[オプション]** を選択します。
 
     ![.sln ファイルとオプションが強調表示されている Visual Studio for Mac のスクリーンショット](media/open-multiple-solutions-image3.png)
 
@@ -43,7 +43,7 @@ ms.locfileid: "62937969"
 
 または、最近ソリューションを開いた場合は、次の手順を使うこともできます。
 
-1. **[ファイル]** > **[最近のソリューション]** の順に移動します。
+1. **[ファイル]**  >  **[最近のソリューション]** の順に移動します。
 
     ![[最近のソリューション] メニューのスクリーンショット](media/open-multiple-solutions-image2.png)
 

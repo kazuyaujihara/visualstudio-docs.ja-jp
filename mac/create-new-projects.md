@@ -1,29 +1,29 @@
 ---
 title: 新しいプロジェクトとソリューションを作成する
 description: この記事では、Visual Studio for Mac でプロジェクトとソリューションを作成する方法について説明します。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 045d92365501b888e56ce4ae397331e597b5b33a
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: dbfc0d951524bb9ffbbd4a2366679cfc6ae41925
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820742"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693066"
 ---
 # <a name="creating-a-new-project"></a>新規プロジェクトの作成
 
 ## <a name="opening-the-project-creation-dialog"></a>[プロジェクト作成] ダイアログを開く
 
-Visual Studio for Mac では、いくつかの方法で新しいプロジェクトを作成できます。 Visual Studio for Mac を初めて開くと、ようこそ画面が表示されます。 ここから、**[新規]** を選択して、プロジェクト作成画面に移動することができます。
+Visual Studio for Mac では、いくつかの方法で新しいプロジェクトを作成できます。 Visual Studio for Mac を初めて開くと、ようこそ画面が表示されます。 ここから、 **[新規]** を選択して、プロジェクト作成画面に移動することができます。
 
 > [!TIP]
-> さらに、ようこそ画面から、最近使ったプロジェクトおよびソリューションを開いて検索することができます。 メニュー バーに移動し、**[ファイル]、[最近のソリューション]** の順に選択することで、最近使ったプロジェクトを開くこともできます。
+> さらに、ようこそ画面から、最近使ったプロジェクトおよびソリューションを開いて検索することができます。 メニュー バーに移動し、 **[ファイル]、[最近のソリューション]** の順に選択することで、最近使ったプロジェクトを開くこともできます。
 
 ![ようこそ画面と新しいプロジェクトの作成](media/first-run-project.png)
 
-Visual Studio for Mac が既に開いていてソリューションが読み込まれている場合は、メニューバーに進み、**[ファイル]、[新しいソリューション]** の順に選択して、新しいソリューションを作成することができます。 この方法で新しいソリューションを作成する場合、既に読み込まれているソリューションは閉じられます。
+Visual Studio for Mac が既に開いていてソリューションが読み込まれている場合は、メニューバーに進み、 **[ファイル]、[新しいソリューション]** の順に選択して、新しいソリューションを作成することができます。 この方法で新しいソリューションを作成する場合、既に読み込まれているソリューションは閉じられます。
 
 ## <a name="creating-a-new-project-from-a-template"></a>テンプレートからの新規プロジェクトの作成
 
@@ -45,7 +45,7 @@ Visual Studio for Mac が既に開いていてソリューションが読み込�
 
 ## <a name="adding-additional-projects-to-a-solution"></a>ソリューションにさらにプロジェクトを追加する
 
-ソリューションにさらにプロジェクトを追加するには、Solution Pad 内でソリューションを右クリックし、**[追加]、[新しいプロジェクトの追加]** の順に選択するか、または **[追加]、[既存のプロジェクトの追加]** の順に選択します。
+ソリューションにさらにプロジェクトを追加するには、Solution Pad 内でソリューションを右クリックし、 **[追加]、[新しいプロジェクトの追加]** の順に選択するか、または **[追加]、[既存のプロジェクトの追加]** の順に選択します。
 
 新しいプロジェクトの追加を選択すると、「[ご自分の新しいプロジェクトを構成する](#configuring-your-new-project)」に示すように、プロジェクトの作成が開始されます。
 
