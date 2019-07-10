@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b62719fb00910e4eef183f960e1a1d4ea9a4a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b4748cd71416ce4d3e9cce64826f1ec97ceef85
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994533"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692979"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF による DSL の拡張
 
@@ -129,7 +129,7 @@ DSL は、MEF-有効になっているようになりました。 MEF 拡張機�
 
    - このアセンブリは通常で終わる名前を持つ"。Dsl.dll"。
 
-   - DSL プロジェクトへのアクセスがある場合は、ディレクトリの下のアセンブリ ファイルを検索できます**Dsl\bin\\\\** *
+   - DSL プロジェクトへのアクセスがある場合は、ディレクトリの下のアセンブリ ファイルを検索できます**Dsl\\bin\\\***
 
    - DSL の VSIX ファイルにアクセスする場合は、".zip"VSIX ファイルのファイル名拡張子を変更することでアセンブリを見つけることができます。 .Zip ファイルを圧縮解除します。
 
@@ -157,7 +157,7 @@ DSL は、MEF-有効になっているようになりました。 MEF 拡張機�
 
    1. **Source.extension.vsixmanifest**、 をクリックして**参照の追加**
 
-   2. ダイアログ ボックスで、次のようにクリックします。**追加ペイロード**し、DSL の VSIX ファイルを見つけます。 VSIX ファイルは、DSL ソリューション内で構築された * * DslPackage\bin\\\\* * *。
+   2. ダイアログ ボックスで、次のようにクリックします。**追加ペイロード**し、DSL の VSIX ファイルを見つけます。 VSIX ファイルは、DSL ソリューション内で構築された**DslPackage\\bin\\\*** します。
 
        これにより、ユーザーが同時に、DSL と拡張機能をインストールできます。 ユーザーが DSL をインストールしてある場合は、拡張機能がインストールされます。
 
