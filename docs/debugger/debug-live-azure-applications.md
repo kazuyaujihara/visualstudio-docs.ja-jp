@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af3f393aea8d1ecddaf021c896839d663b7d4028
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860396"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692110"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用してライブ ASP.NET Azure アプリをデバッグする
 
@@ -34,7 +34,7 @@ ms.locfileid: "62860396"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* スナップショット デバッガーは以降では、Visual Studio 2017 Enterprise バージョン 15.5 以降で利用可能でのみ、 **Azure 開発ワークロード**します。 (**[個別のコンポーネント]** タブの **[デバッグとテスト]** > **[スナップショット デバッガー]** にあります)。
+* スナップショット デバッガーは以降では、Visual Studio 2017 Enterprise バージョン 15.5 以降で利用可能でのみ、 **Azure 開発ワークロード**します。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
 
     ::: moniker range=">=vs-2019"
     インストールされていない場合は、インストール[Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)します。 Visual Studio の以前のインストールから更新する場合、Visual Studio インストーラーを実行しスナップショット デバッガーのコンポーネントを確認、 **ASP.NET および web 開発ワークロード**します。
@@ -57,30 +57,30 @@ ms.locfileid: "62860396"
     > デバッグのスナップショットを取得するには、Azure App Service に公開されているものと*同じバージョンのソース コード*を開く必要があります。
 ::: moniker range="<=vs-2017"
 
-2. Cloud Explorer (**[表示] > [Cloud Explorer]**) で、プロジェクトがデプロイされている Azure App Service を右クリックし、**[スナップショット デバッガーのアタッチ]** を選択します。
+2. Cloud Explorer ( **[表示] > [Cloud Explorer]** ) で、プロジェクトがデプロイされている Azure App Service を右クリックし、 **[スナップショット デバッガーのアタッチ]** を選択します。
 
    ![スナップショット デバッガーを起動する](../debugger/media/snapshot-launch.png)
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-2. **[デバッグ] > [スナップショット デバッガーのアタッチ]** の順に選択します。プロジェクトがデプロイされる Azure App Service と Azure ストレージ アカウントを選択し、**[アタッチ]** をクリックします。
+2. **[デバッグ] > [スナップショット デバッガーのアタッチ]** の順に選択します。プロジェクトがデプロイされる Azure App Service と Azure ストレージ アカウントを選択し、 **[アタッチ]** をクリックします。
 
-      ![[デバッグ] メニューからスナップショット デバッガーを起動する](../debugger/media/snapshot-debug-menu-attach.png)
+   ![[デバッグ] メニューからスナップショット デバッガーを起動する](../debugger/media/snapshot-debug-menu-attach.png)
 
-      ![Azure リソースを選択する](../debugger/media/snapshot-select-azure-resource-appservices.png)
+   ![Azure リソースを選択する](../debugger/media/snapshot-select-azure-resource-appservices.png)
 
 ::: moniker-end
 
-  > [!IMPORTANT]
-  > 初めて **[スナップショット デバッガーのアタッチ]** を選択した場合は、Azure App Service にスナップショット デバッガー サイト拡張機能をインストールするように求められます。 このインストールでは、Azure App Service を再起動する必要があります。
+   > [!IMPORTANT]
+   > 初めて **[スナップショット デバッガーのアタッチ]** を選択した場合は、Azure App Service にスナップショット デバッガー サイト拡張機能をインストールするように求められます。 このインストールでは、Azure App Service を再起動する必要があります。
 
-  > [!NOTE]
-  > Application Insights サイト拡張機能では、スナップショットのデバッグもサポートされています。 "サイト拡張機能が最新ではない" というエラー メッセージが表示される場合は、[スナップショットのデバッグに関するトラブルシューティングのヒントと既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)のページでアップグレードの詳細を参照してください。
+   > [!NOTE]
+   > Application Insights サイト拡張機能では、スナップショットのデバッグもサポートされています。 "サイト拡張機能が最新ではない" というエラー メッセージが表示される場合は、[スナップショットのデバッグに関するトラブルシューティングのヒントと既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)のページでアップグレードの詳細を参照してください。
 
    これで、Visual Studio はスナップショット デバッグ モードになりました。
    ![スナップショットのデバッグ モード](../debugger/media/snapshot-message.png)
 
-   **[モジュール]** ウィンドウは、Azure App Service のすべてのモジュールが読み込まれたときに表示されます (このウィンドウを開くには、**[デバッグ] > [ウィンドウ] > [モジュール]** の順に選択します)。
+   **[モジュール]** ウィンドウは、Azure App Service のすべてのモジュールが読み込まれたときに表示されます (このウィンドウを開くには、 **[デバッグ] > [ウィンドウ] > [モジュール]** の順に選択します)。
 
    ![[モジュール] ウィンドウを確認する](../debugger/media/snapshot-modules.png)
 
@@ -103,7 +103,7 @@ ms.locfileid: "62860396"
 
 ## <a name="inspect-snapshot-data"></a>スナップショット データを調べる
 
-1. スナップポイントにヒットすると、[診断ツール] ウィンドウにスナップショットが表示されます。 このウィンドウを開くには、**[デバッグ] > [Windows] > [診断ツールの表示]** の順に選択します。
+1. スナップポイントにヒットすると、[診断ツール] ウィンドウにスナップショットが表示されます。 このウィンドウを開くには、 **[デバッグ] > [Windows] > [診断ツールの表示]** の順に選択します。
 
    ![スナップポイントを開く](../debugger/media/snapshot-diagsession-window.png)
 
@@ -111,9 +111,9 @@ ms.locfileid: "62860396"
 
    ![スナップショット データを調べる](../debugger/media/snapshot-inspect-data.png)
 
-   このビューから、変数にポイントしてデータヒントを表示し、**[ローカル]**、**[ウォッチ]**、および **[コール スタック]** ウィンドウを使用できます。また、式を評価することもできます。
+   このビューから、変数にポイントしてデータヒントを表示し、 **[ローカル]** 、 **[ウォッチ]** 、および **[コール スタック]** ウィンドウを使用できます。また、式を評価することもできます。
 
-    Web サイト自体はまだ稼働中であり、エンド ユーザーは影響を受けません。 既定では、スナップポイントごとに 1 つのスナップショットのみがキャプチャされます。スナップショットがキャプチャされると、スナップポイントは無効になります。 そのスナップポイントで別のスナップショットをキャプチャする場合は、**[コレクションの更新]** をクリックしてスナップポイントを元に戻すことができます。
+    Web サイト自体はまだ稼働中であり、エンド ユーザーは影響を受けません。 既定では、スナップポイントごとに 1 つのスナップショットのみがキャプチャされます。スナップショットがキャプチャされると、スナップポイントは無効になります。 そのスナップポイントで別のスナップショットをキャプチャする場合は、 **[コレクションの更新]** をクリックしてスナップポイントを元に戻すことができます。
 
 アプリにスナップポイントを追加して **[コレクションの更新]** ボタンをクリックして有効にすることもできます。
 
@@ -125,7 +125,7 @@ ms.locfileid: "62860396"
 
 #### <a name="to-create-a-conditional-snappoint"></a>条件付きスナップポイントを作成するには
 
-1. スナップポイント アイコン (白抜きの玉) を右クリックして、**[設定]** を選択します。
+1. スナップポイント アイコン (白抜きの玉) を右クリックして、 **[設定]** を選択します。
 
    ![[設定] を選択する](../debugger/media/snapshot-snappoint-settings.png)
 
@@ -141,7 +141,7 @@ ms.locfileid: "62860396"
 
 #### <a name="to-create-a-logpoint"></a>ログポイントを作成するには
 
-1. スナップポイント アイコン (青色の六角形) を右クリックして、**[設定]** を選択します。
+1. スナップポイント アイコン (青色の六角形) を右クリックして、 **[設定]** を選択します。
 
 1. スナップポイント設定ウィンドウで **[アクション]** を選択します。
 

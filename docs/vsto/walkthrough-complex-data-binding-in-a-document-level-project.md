@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981677"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692344"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>チュートリアル: ドキュメント レベルのプロジェクトで複合データ バインディング
   このチュートリアルでは、ドキュメント レベルのプロジェクトで複合データ バインディングの基本について説明します。 Microsoft Office Excel ワークシート内で複数のセルは、Northwind SQL Server データベース内のフィールドにバインドできます。
@@ -174,7 +174,7 @@ ms.locfileid: "62981677"
 
 1. リスト オブジェクト内のセルを選択します。
 
-    アスタリスクが付いて、一覧の下部に新しい行が表示されます (* *\\* * *)、新しい行の最初のセルにします。
+    アスタリスクが付いて、一覧の下部に新しい行が表示されます ( **\*** )、新しい行の最初のセルにします。
 
 2. 空の行で、次の情報を追加します。
 

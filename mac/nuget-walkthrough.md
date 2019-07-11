@@ -1,17 +1,17 @@
 ---
 title: プロジェクトに NuGet パッケージを含める
 description: このドキュメントでは、Xamarin プロジェクトに NuGet パッケージを含める方法について説明します。 パッケージの検索およびダウンロードの手順を説明し、IDE 統合機能の概要を示します。
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 356a99e3bdbc1608bdebc160c3a10878d3194a40
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820614"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691398"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>プロジェクトに NuGet パッケージを含める
 
@@ -31,11 +31,11 @@ NuGet パッケージの機能を示すため、まず、新しいアプリケ�
 
 ## <a name="adding-a-package"></a>パッケージの追加
 
-Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pad** の **[パッケージ]** フォルダーを右クリックし、**[NuGet パッケージを追加]** を選択します。
+Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pad** の **[パッケージ]** フォルダーを右クリックし、 **[NuGet パッケージを追加]** を選択します。
 
 ![新しい NuGet パッケージのコンテキスト アクションを追加する](media/nuget-walkthrough-PackagesMenu.png)
 
-これで、**[パッケージを追加]** ウィンドウが起動します。 ソース ドロップダウンが次のように `nuget.org` に設定されていることを確認します。
+これで、 **[パッケージを追加]** ウィンドウが起動します。 ソース ドロップダウンが次のように `nuget.org` に設定されていることを確認します。
 
 ![ソース リスト ドロップダウン](media/nuget-walkthrough-Source.png)
 
@@ -43,7 +43,7 @@ Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pa
 
 ![Nuget パッケージのリスト](media/nuget-walkthrough-AddPackages1.png)
 
- `azure mobile` などの特定のパッケージを検索するには、右上隅の検索ボックスを使用します。 使用するパッケージが見つかったら、それを選択し、 **[パッケージを追加]**  ボタンをクリックしてインストールを開始します。
+ `azure mobile` などの特定のパッケージを検索するには、右上隅の検索ボックスを使用します。 使用するパッケージが見つかったら、それを選択し、 **[パッケージを追加]**   ボタンをクリックしてインストールを開始します。
 
 ![Azure の NuGet パッケージを追加する](media/nuget-walkthrough-AddPackages2.png)
 
@@ -71,15 +71,15 @@ using Newtonsoft.Json;
 
 ## <a name="package-updates"></a>パッケージの更新
 
-パッケージの更新は、すべて一度に行う (**[パッケージ]** ノードを右クリックする) ことも、コンポーネントごとに個別に行うこともできます。
+パッケージの更新は、すべて一度に行う ( **[パッケージ]** ノードを右クリックする) ことも、コンポーネントごとに個別に行うこともできます。
 
 コンテキスト メニューにアクセスするには、次のように **[パッケージ]** を右クリックします。
 
 ![パッケージ メニュー](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **[NuGet パッケージを追加]** - プロジェクトにさらにパッケージを追加するためのウィンドウが開きます。
-*   **[更新]** - 各パッケージのソース サーバーを確認し、新しいバージョンをダウンロードします。
-*   **[復元]** - 不足しているパッケージをダウンロードします (既存のパッケージを新しいバージョンに更新しません)。
+* **[NuGet パッケージを追加]** - プロジェクトにさらにパッケージを追加するためのウィンドウが開きます。
+* **[更新]** - 各パッケージのソース サーバーを確認し、新しいバージョンをダウンロードします。
+* **[復元]** - 不足しているパッケージをダウンロードします (既存のパッケージを新しいバージョンに更新しません)。
 
 更新オプションと復元オプションはソリューション レベルでも使用でき、ソリューション内のすべてのプロジェクトに影響します。
 
@@ -95,7 +95,7 @@ using Newtonsoft.Json;
 
 インストール可能なパッケージが最初に nuget.org から取得されます。ただし、Visual Studio for Mac に他のパッケージの場所を追加することができます。 これは、開発中の独自の NuGet パッケージをテストする場合や、会社または組織内でプライベートの NuGet サーバーを使用する場合に便利です。
 
-Visual Studio for Mac で、**[Visual Studio]、[基本設定]、[NuGet]、[ソース]** の順に移動し、パッケージ ソースのリストを表示して編集します。 ソースはリモート サーバー (URL で指定) またはローカル ディレクトリである場合があります。
+Visual Studio for Mac で、 **[Visual Studio]、[基本設定]、[NuGet]、[ソース]** の順に移動し、パッケージ ソースのリストを表示して編集します。 ソースはリモート サーバー (URL で指定) またはローカル ディレクトリである場合があります。
 
 ![パッケージ ソース](media/nuget-walkthrough-PackageSource.png)
 

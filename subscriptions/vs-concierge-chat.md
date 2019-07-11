@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるコンシェルジェ チャット特典について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 51fb2242c87ba3d091f62bc2271aea60b56f1283
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 9141da640cf0a181c462f1f9af5c3e8fe70a3fb4
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032195"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586918"
 ---
 # <a name="concierge-chat"></a>コンシェルジェ チャット
 
@@ -45,7 +45,6 @@ ms.locfileid: "67032195"
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用可能                                             |  はい          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用可能                                              |  はい          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
-
 
 <sup>1</sup>  *Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark が含まれます除外:FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Imagine は含まれません。*
 

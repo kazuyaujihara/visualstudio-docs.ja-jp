@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 長期契約ではなく、月または年単位の一定期間だけ Visual Studio Professional または Visual Studio Enterprise をレンタルします。
 searchscope: VS Subscription
-ms.openlocfilehash: de95cd0d1cc49006e451bf00c34757ab7daa5c0b
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 3dc72dbc801679e9baa4bc54b0343270d2f00a29
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465124"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586895"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional および Visual Studio Enterprise クラウド サブスクリプションの購入
 
@@ -103,7 +103,6 @@ A: 特定の月の間に購入した年間サブスクリプションについ�
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q:お客様のサブスクリプションの数を減らす場合はどうすればよいですか。
 
 A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、 https://manage.visualstudio.com にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。 システムによってクレジットが日割りされることは*ありません*。 返金については、Azure 請求チームにお問い合わせいただく必要がございます。
-
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>Q:サブスクリプションをキャンセルした場合、後で別のクラウド サブスクリプション年間プランを購入することはできますか。
 A: 別のクラウド サブスクリプション年間プランを購入することはできませんが、Visual Studio サブスクリプションを購入する多くのオプションがあります。  詳細については、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) をご覧ください。
