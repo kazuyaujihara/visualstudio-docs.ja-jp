@@ -1,16 +1,16 @@
 ---
 title: Visual Studio for Mac のサブスクリプションを有効にする
 description: この記事では、Microsoft アカウントを使用してサブスクリプションを有効にして、Visual Studio for Mac の機能をロック解除する方法について説明します。
-author: conceptdev
-ms.author: crdun
+author: asb3993
+ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: ce205b13537ee74bedee599e46c6e6006d9ceb77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8124a5facadd209307b2c2020b852e3f8a603b90
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983039"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691527"
 ---
 # <a name="enable-subscription"></a>サブスクリプションを有効にする
 

@@ -1,17 +1,17 @@
 ---
 title: コードのリファクタリング
 description: Visual Studio for Mac およびクイック アクションを使用して、コードを調整します。
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937925"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691295"
 ---
 # <a name="refactoring"></a>リファクタリング
 
@@ -23,7 +23,7 @@ Visual Studio for Mac と、Roslyn (Microsoft のオープンソースの .NET �
 
 ## <a name="renaming"></a>名前の変更
 
-コード識別子 (クラス名やプロパティ名など) で *[名前の変更]* リファクタリング コマンドを使用して、その識別子のすべての出現箇所を検索し、変更することができます。 シンボルの名前を変更するには、次のように、そのシンボルを右クリックし、**[名前の変更...]** を選択するか、**Cmd (⌘) + R** キー バインドを使用します。
+コード識別子 (クラス名やプロパティ名など) で *[名前の変更]* リファクタリング コマンドを使用して、その識別子のすべての出現箇所を検索し、変更することができます。 シンボルの名前を変更するには、次のように、そのシンボルを右クリックし、 **[名前の変更...]** を選択するか、**Cmd (⌘) + R** キー バインドを使用します。
 
 ![[名前の変更] メニュー項目](media/refactoring-renaming1.png)
 
@@ -42,7 +42,7 @@ Visual Studio for Mac と、Roslyn (Microsoft のオープンソースの .NET �
 * リファクタリングを適用する (例: 一時変数をインライン化する)
 * コードを生成する (例: ローカル変数を導入する)
 
-クイック アクションを適用するには、電球 ![電球アイコン](media/quick-actions-light-bulb-icon.png) またはねじ回し ![ねじ回しアイコン](media/quick-actions-screwdriver-icon.png) を使用するか、アクションがあるコード行にカーソルがあるときに **Option (⌥)**+**Enter** を押します。 エラーを示す赤い波線があり、Visual Studio にそのエラーに対処するために使用可能な解決策がある場合は、エラー電球 ![エラー電球アイコン](media/quick-actions-error-light-bulb-icon.png) が表示されます。
+クイック アクションを適用するには、電球 ![電球アイコン](media/quick-actions-light-bulb-icon.png) またはねじ回し ![ねじ回しアイコン](media/quick-actions-screwdriver-icon.png) を使用するか、アクションがあるコード行にカーソルがあるときに **Option (⌥)** +**Enter** を押します。 エラーを示す赤い波線があり、Visual Studio にそのエラーに対処するために使用可能な解決策がある場合は、エラー電球 ![エラー電球アイコン](media/quick-actions-error-light-bulb-icon.png) が表示されます。
 
 いずれの言語でも、サードパーティは、たとえば SDK の一部として、カスタマイズした診断や提案を表示できます。Visual Studio はそれらの規則に基づいて電球マークを表示します。
 
@@ -57,7 +57,7 @@ Visual Studio for Mac と、Roslyn (Microsoft のオープンソースの .NET �
 
 - キャレットをクイック アクションが使用できるコード行に移動すると、エディターの左余白に電球とねじ回しが表示されます。
 
-- 使用可能なクイック アクションとリファクタリングの一覧を表示するには、行の任意の場所で **Option (⌥)**+**Enter** を押します。
+- 使用可能なクイック アクションとリファクタリングの一覧を表示するには、行の任意の場所で **Option (⌥)** +**Enter** を押します。
 
 ![コンテキスト項目を表示する](media/refactoring-context-action.png)
 
@@ -65,11 +65,11 @@ Visual Studio for Mac と、Roslyn (Microsoft のオープンソースの .NET �
 
 ![Option + Enter キーを使用した場合のコンテキスト項目](media/refactoring-image2a.png)
 
-これらのオプションを有効にするには、オプションの **[Visual Studio for Mac]、[基本設定]、[テキスト エディター]、[ソースの解析]** の順に移動して、*[開いているファイルのソース解析を有効にする]* を選択する必要があります
+これらのオプションを有効にするには、オプションの **[Visual Studio for Mac]、[基本設定]、[テキスト エディター]、[ソースの解析]** の順に移動して、 *[開いているファイルのソース解析を有効にする]* を選択する必要があります
 
 ![ソース解析の有効化](media/refactoring-options.png)
 
-推奨される 100 を超える実行可能なアクションがあります。これらを有効または無効にする場合は、**[Visual Studio for Mac]、[基本設定]、[ソースの解析]、[C#]、[コード アクション]** の順に参照し、アクションの横にあるボックスをオンまたはオフにします。
+推奨される 100 を超える実行可能なアクションがあります。これらを有効または無効にする場合は、 **[Visual Studio for Mac]、[基本設定]、[ソースの解析]、[C#]、[コード アクション]** の順に参照し、アクションの横にあるボックスをオンまたはオフにします。
 
 ![C# のソース解析アクション](media/refactoring-image3a.png)
 

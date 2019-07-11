@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9e4699a1d4e2826cad205ce89ab46812cd5c4b2d
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697592"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692802"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>プロジェクトに NuGet パッケージを含める
 
@@ -43,7 +43,7 @@ Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pa
 
 ![Nuget パッケージのリスト](media/nuget-walkthrough-AddPackages1.png)
 
- `azure` などの特定のパッケージを検索するには、右上隅の検索ボックスを使用します。 使用するパッケージが見つかったら、それを選択し、 **[パッケージを追加]**   ボタンをクリックしてインストールを開始します。
+`azure` などの特定のパッケージを検索するには、右上隅の検索ボックスを使用します。 使用するパッケージが見つかったら、それを選択し、 **[パッケージを追加]** ボタンをクリックしてインストールを開始します。
 
 [Azure の NuGet パッケージを追加する](media/nuget-walkthrough-AddPackages2.png)
 
@@ -57,7 +57,7 @@ Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pa
 
 NuGet パッケージが追加され、プロジェクト参照が更新されたら、他のプロジェクト参照の場合と同じように API に対してプログラミングできます。
 
-必ず、必要な  `using`  ディレクティブをファイルの先頭に追加してください。
+必ず、必要な `using` ディレクティブをファイルの先頭に追加してください。
 
 ```csharp
 using Newtonsoft.Json;

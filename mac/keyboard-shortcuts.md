@@ -2,21 +2,21 @@
 title: Visual Studio for Mac の既定のキーボード ショートカット
 description: この記事では、Visual Studio for Mac での既定のキーボード ショートカットを示します
 ms.date: 03/14/2019
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: a19c63b2ce32095a3af4aa4586b8ab0d604a14dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09fd7ff678043e399ad37923956a61cbcf8ce80a
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982714"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691436"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac の既定のキーボード ショートカット
 
 キーボード アクセシビリティについては、「[キーボード ナビゲーションを使用するには](~/accessibility.md#how-to-use-keyboard-navigation)」をご覧ください。
 
-Visual Studio for Mac のさまざまなコマンドには、該当するショートカット キーを押すことでアクセスできます。 このドキュメントでは、**Visual Studio** キー バインド スキームでの既定のショートカットの一覧を示します。 キー バインド スキームを変更する方法について詳しくは、「[IDE のカスタマイズ](~/customizing-the-ide.md#key-bindings)」をご覧ください。 **[Visual Studio for Mac]** > **[ユーザー設定]** メニュー項目を使用し、**[ユーザー設定]** ウィンドウの **[環境]** > **[キー バインド]** を選択して、コマンドのショートカットをカスタマイズすることもできます。
+Visual Studio for Mac のさまざまなコマンドには、該当するショートカット キーを押すことでアクセスできます。 このドキュメントでは、**Visual Studio** キー バインド スキームでの既定のショートカットの一覧を示します。 キー バインド スキームを変更する方法について詳しくは、「[IDE のカスタマイズ](~/customizing-the-ide.md#key-bindings)」をご覧ください。 **[Visual Studio for Mac]**  >  **[ユーザー設定]** メニュー項目を使用し、 **[ユーザー設定]** ウィンドウの **[環境]**  >  **[キー バインド]** を選択して、コマンドのショートカットをカスタマイズすることもできます。
 
 > [!TIP]
 > このドキュメントで示すキーボード ショートカットおよび Visual Studio for Mac でのキー バインドのユーザー設定は、macOS で一般に使用される記号を使用して示されています。 記号がよくわからない場合は、「[macOS キー シンボル参照](#macos-key-symbols-lookup)」の表をご覧ください。
@@ -36,7 +36,7 @@ Visual Studio for Mac のさまざまなコマンドには、該当するショ�
 
 |コマンド|キーボード ショートカット|
 |-|-|
-|ブレークポイントを有効にする/無効にする|**⌥⌘/**、**⌘F9**|
+|ブレークポイントを有効にする/無効にする|**⌥⌘/** 、**⌘F9**|
 |一時停止|**⌥⌘P**、**⌥⌘L5**|
 |すべてのブレークポイントを削除|**⇧⌘F9**|
 |カーソル行の前まで実行|**⌘F10**|
@@ -45,7 +45,7 @@ Visual Studio for Mac のさまざまなコマンドには、該当するショ�
 |[ステップ イン]|**⇧⌘I**、**⌘F11**|
 |[ステップ アウト]|**⇧⌘U**、**⇧⌘F11**|
 |[ステップ オーバー]|**⇧⌘O**、**F10**|
-|ブレークポイントの設定/解除|**⌘\\**、**F9**|
+|ブレークポイントの設定/解除|**⌘\\** 、**F9**|
 |ブレークポイントの表示|**⌥⌘B**|
 
 ## <a name="designer"></a>Designer
@@ -65,7 +65,7 @@ Visual Studio for Mac のさまざまなコマンドには、該当するショ�
 |ドキュメントのフォーマット|**⌃I**|
 |選択部分をインデント|**⌘]**|
 |貼り付け|**⌘V**|
-|[Preferences]|**⌘,**|
+|Preferences|**⌘,**|
 |やり直し|**⇧⌘Z**|
 |名前の変更|**⌘R**、**F2**|
 |すべて選択|**⌘A**|
@@ -225,8 +225,8 @@ Visual Studio for Mac のさまざまなコマンドには、該当するショ�
 |次を表示|**⌥⌘↓**、**F8**|
 |前を表示|**⌥⌘↑**、**⇧F8**|
 |2 エディター列|**⌥⌘2**|
-|拡大|**⌘+**、**⌘=**|
-|縮小|**⌘-**、**⌘_**|
+|拡大|**⌘+** 、**⌘=**|
+|縮小|**⌘-** 、**⌘_**|
 
 ## <a name="window"></a>ウィンドウ
 
@@ -244,8 +244,8 @@ Visual Studio for Mac のさまざまなコマンドには、該当するショ�
 |その他を隠す|**⌥⌘H**|
 |Hide Visual Studio (Visual Studio を隠す)|**⌘H**|
 |最小化|**⌘M**|
-|次のドキュメント|**⌘}**、**⌘F6**|
-|前のドキュメント|**⌘{**、**⇧⌘F6**|
+|次のドキュメント|**⌘}** 、**⌘F6**|
+|前のドキュメント|**⌘{** 、**⇧⌘F6**|
 |次のドキュメントに切り替え|**⌃⇥**|
 |次のパッドに切り替え|**⌃⌥⇥**|
 |前のドキュメントに切り替え|**⌃⇧⇥**|

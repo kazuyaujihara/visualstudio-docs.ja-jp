@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio に含まれる Azure Advisory Chat 特典を活用する方法について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: c5d547062fa820ff868fe12f8cb899d9d1e508b8
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 329aa109349a8f97e64cc478b7e843ca4d7b24e3
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033180"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586975"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -42,7 +42,6 @@ Azure Advisory Chat の使用は簡単です。
 | Visual Studio Professional (Standard、月間クラウド)、Visual Studio Enterprise (月間クラウド、NFR<sup>1</sup>) |        すべて        | 使用できません |     いいえ     |
 |                                          Visual Studio Test Professional (標準)                                          |        すべて        | 使用できません |     いいえ     |
 |                                                  MSDN Platforms (標準)                                                   |        すべて        | 使用できません |     いいえ     |
-
 
 <sup>1</sup>  *内容:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、MCT が含まれます。*
 

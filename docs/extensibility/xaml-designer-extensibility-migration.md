@@ -1,17 +1,20 @@
 ---
 title: XAML デザイナー機能拡張の移行
-ms.date: 04/17/2019
+ms.date: 07/09/2019
 ms.topic: conceptual
 author: lutzroeder
 ms.author: lutzr
 manager: jillfra
+dev_langs:
+- csharp
+- vb
 monikerRange: vs-2019
-ms.openlocfilehash: f83c40a67dc36301816b2384242d790a9f776044
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 52bc8a6a0097d255891f4b6111a27bff85091bec
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447360"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784496"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>XAML デザイナー機能拡張の移行
 
@@ -44,7 +47,7 @@ ms.locfileid: "63447360"
 
 画面の分離の機能拡張モデルでは、実際のコントロールのライブラリに依存する拡張機能が許可されていませんし、そのため、拡張機能は、コントロール ライブラリからの型を参照できません。 たとえば、 *MyLibrary.designtools.dll*依存関係のない*MyLibrary.dll*します。
 
-属性テーブルを使用して型のメタデータを登録するときに、このような依存関係が最も一般的なでした。 コントロール ライブラリを参照する拡張機能コードの種類が経由で直接[typeof](/dotnet/csharp/language-reference/keywords/typeof)文字列ベースの型名を使用して、新しい Api で置き換えられます。
+属性テーブルを使用して型のメタデータを登録するときに、このような依存関係が最も一般的なでした。 コントロール ライブラリを参照する拡張機能コードの種類が経由で直接[typeof](/dotnet/csharp/language-reference/keywords/typeof) ([GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) Visual Basic で) 文字列ベースの型名を使用して、新しい Api で置き換えられます。
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -68,6 +71,27 @@ public class AttributeTableProvider : IProvideAttributeTable
 }
 ```
 
+```vb
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Metadata
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Features
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Model
+
+<Assembly: ProvideMetadata(GetType(AttributeTableProvider))>
+
+Public Class AttributeTableProvider
+    Implements IProvideAttributeTable
+
+    Public ReadOnly Property AttributeTable As AttributeTable Implements IProvideAttributeTable.AttributeTable
+        Get
+            Dim builder As New AttributeTableBuilder
+            builder.AddCustomAttributes("MyLibrary.MyControl", New DescriptionAttribute(Strings.MyControlDescription))
+            builder.AddCustomAttributes("MyLibrary.MyControl", New FeatureAttribute(GetType(MyControlDefaultInitializer)))
+            Return builder.CreateTable()
+        End Get
+    End Property
+End Class
+```
+
 ## <a name="feature-providers-and-model-api"></a>機能プロバイダーとモデルの API
 
 機能プロバイダーは拡張機能アセンブリで実装され、Visual Studio のプロセスに読み込まれます。 `FeatureAttribute` 機能プロバイダーの種類を使用して直接の参照は引き続き[typeof](/dotnet/csharp/language-reference/keywords/typeof)します。
@@ -84,6 +108,16 @@ TypeDefinition buttonType = ModelFactory.ResolveType(
 if (type != null && buttonType != type.IsSubclassOf(buttonType))
 {
 }
+```
+
+```vb
+Dim type As TypeDefinition = ModelFactory.ResolveType(
+    item.Context, New TypeIdentifier("MyLibrary.MyControl"))
+Dim buttonType As TypeDefinition = ModelFactory.ResolveType(
+    item.Context, New TypeIdentifier("System.Windows.Controls.Button"))
+If type?.IsSubclassOf(buttonType) Then
+
+End If
 ```
 
 Api は、画面の分離機能拡張 API のセットから削除されます。
@@ -123,7 +157,7 @@ Api を使用する`TypeDefinition`の代わりに<xref:System.Type>:
 * `ModelService.Find(ModelItem startingItem, Predicate<Type> match)`
 * `ModelItem.ItemType`
 * `ModelProperty.AttachedOwnerType`
-* `ModelProperty.PropertyType
+* `ModelProperty.PropertyType`
 * `FeatureManager.CreateFeatureProviders(Type featureProviderType, Type type)`
 * `FeatureManager.CreateFeatureProviders(Type featureProviderType, Type type, Predicate<Type> match)`
 * `FeatureManager.InitializeFeatures(Type type)`
@@ -140,7 +174,7 @@ Api を使用する`ModelItem`の代わりに<xref:System.Object>:
 * `ModelItemDictionary.Remove(object key)`
 * `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
 
-既知のなどのプリミティブ型`int`、 `string`、または`Thickness`.NET Framework のインスタンスとしてモデル API に渡すことが、ターゲットのランタイム プロセスに対応するオブジェクトに変換されます。 例えば:
+既知のなどのプリミティブ型`Int32`、 `String`、または`Thickness`.NET Framework のインスタンスとしてモデル API に渡すことが、ターゲットのランタイム プロセスに対応するオブジェクトに変換されます。 例えば:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -154,6 +188,20 @@ public class MyControlDefaultInitializer : DefaultInitializer
     base.InitializeDefaults(item);
   }
 }
+```
+
+```vb
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Features
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Model
+
+Public Class MyControlDefaultInitializer
+    Inherits DefaultInitializer
+
+    Public Overrides Sub InitializeDefaults(item As ModelItem)
+        item.Properties!Width.SetValue(800.0)
+        MyBase.InitializeDefaults(item)
+    End Sub
+End Class
 ```
 
 ## <a name="limited-support-for-designdll-extensions"></a>制限付きサポート design.dll 拡張機能。

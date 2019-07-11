@@ -3,14 +3,14 @@ title: Visual Studio for Mac Tools for Unity をセットアップする
 description: Visual Studio for Mac で使用するために Unity ツールを設定し、インストールする
 author: therealjohn
 ms.author: johmil
-ms.date: 04/02/2019
+ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: b9e033b765df4ae4396c011fe37939b4fc63e372
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1981141a01848dc7fac09913548f205a04ce618e
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809273"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692362"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity を設定する
 
@@ -71,13 +71,13 @@ Unity 2018.1 以降では、Visual Studio を Unity の既定の外部スクリ�
 
    ![[Preferences]\(ユーザー設定\) を選ぶ](media/setup-vsmac-tools-unity-image4.png)
 
-2. [Preferences]\(ユーザー設定\) ダイアログで、**[External Tools]\(外部ツール\)** タブを選びます。
+2. [Preferences]\(ユーザー設定\) ダイアログで、 **[External Tools]\(外部ツール\)** タブを選びます。
 
-3. [External Script Editor]\(外部スクリプト エディター\) ドロップダウン リストから、**[Visual Studio]** が一覧にある場合はそれを選び、ない場合は **[Browse]\(参照\)** を選びます。
+3. [External Script Editor]\(外部スクリプト エディター\) ドロップダウン リストから、 **[Visual Studio]** が一覧にある場合はそれを選び、ない場合は **[Browse]\(参照\)** を選びます。
 
    ![Visual Studio を選ぶ](media/setup-vsmac-tools-unity-image5.png)
 
-4. **[Browse]\(参照\)** を選んだ場合は、[Applications]\(アプリケーション\) ディレクトリに移動し、Visual Studio を選んで、**[Open]\(開く\)** をクリックします。
+4. **[Browse]\(参照\)** を選んだ場合は、[Applications]\(アプリケーション\) ディレクトリに移動し、Visual Studio を選んで、 **[Open]\(開く\)** をクリックします。
 
    ![[Open]\(開く\) を選ぶ](media/setup-vsmac-tools-unity-image6.png)
 
