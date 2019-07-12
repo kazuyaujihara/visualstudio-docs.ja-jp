@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf4cea6dcd87b8cf0d2113ac3a245163ba89080
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: eef81a2075f05acf8ea6ab8b42f77797425a3abd
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746916"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559609"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe のコマンド ライン オプション
 
@@ -44,7 +44,7 @@ ms.locfileid: "66746916"
 |**/Framework: [*フレームワークのバージョン*]**|テストの実行に使用する対象の .NET バージョンを指定します。<br />有効な値は、Framework35、Framework40、Framework45、FrameworkUap10 です。<br />ターゲット フレームワークが **Framework35** として指定されている場合、テストは CLR 4.0 の "互換モード" で実行されます。<br />例 : `/Framework:framework40`|
 |**/TestCaseFilter:[*式*]**|指定した式に一致するテストを実行します。<br /><Expression>\> は <property\>=<value\>[\|<Expression\>] の形式です。<br />例 : `/TestCaseFilter:"Priority=1"`<br />例 : `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** コマンドライン オプションを、 **/Tests** コマンドライン オプションと一緒に使用することはできません。 <br />式の作成と使用については、「[TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)」(TestCase フィルター) を参照してください。|
 |**/?**|使用情報を表示します。|
-|**/Logger:[*uri/friendlyname*]**|テスト結果のロガーを指定します。<br />例:Visual Studio テスト結果ファイル (TRX) に結果のログを書き込むには、 **/Logger:trx** を使用します。<br />例:Team Foundation Server にテスト結果を発行するには、次のように TfsPublisher を使用します。<br />**/logger:TfsPublisher;**<br />**Collection=<プロジェクト URL\>;**<br />**BuildName=<ビルド名\>;**<br />**TeamProject=<プロジェクト名\>;**<br />**[;Platform=<既定値は "Any CPU">]**<br />**[;Flavor = <既定値は "Debug">]**<br />**[;RunTitle=<タイトル\>]**|
+|**/Logger:[*uri/friendlyname*]**|テスト結果のロガーを指定します。<br />例:Visual Studio テスト結果ファイル (TRX) に結果のログを書き込むには、 **/Logger:trx** を使用します。<br />例:Team Foundation Server にテスト結果を発行するには、次のように TfsPublisher を使用します。<br />**/logger:TfsPublisher;**<br />**Collection=<プロジェクト URL\>;**<br />**BuildName=<ビルド名\>;**<br />**TeamProject=<プロジェクト名\>;**<br />**[;Platform=\<規定値は "Any CPU">]**<br />**[;Flavor=\<規定値は "Debug">]**<br />**[;RunTitle=<タイトル\>]**|
 |**/ListTests: [*ファイル名*]**|指定されたテスト コンテナーから探索されたテストを一覧表示します。|
 |**/ListDiscoverers**|インストール済みのテスト探索プログラムを一覧表示します。|
 |**/ListExecutors**|インストール済みのテスト実行プログラムを一覧表示します。|

@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ce2fe1d40c0aeddf12a898919150a32c0c77d72e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 1c7d4b2cb910a6e6ee55ecb783fe124958d251e2
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177631"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624114"
 ---
 # <a name="install-build-tools-into-a-container"></a>Build Tools をコンテナーにインストールする
 
@@ -28,101 +28,13 @@ Visual Studio Build Tools を Windows コンテナーにインストールして
 
 ご自分のソース コードのビルドに必要な機能が Visual Studio Build Tools にない場合は、他の Visual Studio 製品に対して同じ手順を使うことができます。 ただし、Windows コンテナーは対話型のユーザー インターフェイスをサポートしていないため、すべてのコマンドを自動化する必要があることに注意してください。
 
-## <a name="overview"></a>概要
+## <a name="before-you-begin"></a>始める前に
 
-[Docker](https://www.docker.com/what-docker) を使用して、イメージを作成し、そのイメージから、ソース コードをビルドするコンテナーを作成することができます。 この例の Dockerfile では、最新の Visual Studio Build Tools と、ソース コードのビルドによく使われる他の便利なプログラムをインストールします。 独自の Dockerfile をさらに変更して、テストの実行やビルド出力の発行などのための他のツールやスクリプトを組み込むことができます。
+以下では、[Docker](https://www.docker.com/what-docker) に関するある程度の知識をお持ちであることが想定されています。 Windows 上での Docker の実行にまだ慣れていない場合は、[Windows 上での Docker エンジンのインストールと構成](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon)方法をご確認ください。
 
-Docker for Windows を既にインストールしてある場合は、手順 3 に進んでかまいません。
+以下の基本イメージはサンプルであり、お客様のシステムでは機能しない場合があります。 ご自身の環境に対してどの基本イメージを使うべきか判断するには、「[Windows コンテナーバージョンの互換性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)」をご覧ください。
 
-## <a name="step-1-enable-hyper-v"></a>手順 1. Hyper-V を有効にする
-
-Hyper-V は既定では有効になっていません。 現在、Windows 10 では Hyper-V による分離のみがサポートされているので、Docker for Windows を開始するには Hyper-V を有効にする必要があります。
-
-* [Windows 10 で Hyper-V を有効にする](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
-* [Windows Server 2016 で Hyper-V を有効にする](https://docs.microsoft.com/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
-
-> [!NOTE]
-> お使いのコンピューターで仮想化を有効にする必要があります。 通常は既定で有効になっていますが、Hyper-V のインストールが失敗する場合は、システムのドキュメントで仮想化を有効にする方法を参照してください。
-
-## <a name="step-2-install-docker-for-windows"></a>手順 2. Docker for Windows をインストールする
-
-Windows 10 を使用している場合は、[Docker Community Edition for Windows](https://docs.docker.com/docker-for-windows/install) をダウンロードしてインストールできます。 Windows Server 2016 を使用している場合は、[Docker Enterprise Edition をインストールする手順](https://docs.docker.com/install/windows/docker-ee)に従ってください。
-
-## <a name="step-3-switch-to-windows-containers"></a>手順 3. Windows コンテナーに切り替える
-
-Windows には Build Tools のみをインストールでき、そのためには [Windows コンテナー](https://docs.docker.com/docker-for-windows/#getting-started-with-windows-containers)に切り替える必要があります。 Windows 10 の Windows コンテナーは [Hyper-V による分離](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container)のみをサポートしていますが、Windows Server 2016 の Windows コンテナーは Hyper-V による分離とプロセス分離の両方をサポートしています。
-
-## <a name="step-4-expand-maximum-container-disk-size"></a>手順 4. コンテナーのディスクの最大サイズを増やす
-
-Visual Studio Build Tools さらには Visual Studio 全体では、すべてのツールをインストールするために多くのディスク容量が必要です。 この例の Dockerfile ではパッケージ キャッシュを無効にしていますが、それでも必要な容量を確保するためにコンテナー イメージのディスク サイズを増やす必要があります。 現在 Windows では、Docker 構成を変更することによってのみ、ディスク サイズを増やすことができます。
-
-**Windows 10 の場合**:
-
-1. システム トレイの [Docker for Windows アイコンを右クリック](https://docs.docker.com/docker-for-windows/#docker-settings)して、 **[設定]** をクリックします。
-
-1. [[Daemon]\(デーモン\) セクションをクリック](https://docs.docker.com/docker-for-windows/#docker-daemon)します。
-
-1. [ **[Basic]\(基本\)** ボタンを **[Advanced]\(詳細\)** に切り替え](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file)ます。
-
-1. 次の JSON 配列プロパティを追加して、ディスク容量を 127 GB に増やします (Build Tools の拡大を見込んで十分に余裕がある量)。
-
-   ```json
-   {
-     "storage-opts": [
-       "size=127G"
-     ]
-   }
-   ```
-
-   このプロパティは、既にあるプロパティに追加されます。 たとえば、既定のデーモン構成ファイルにこれらの変更を適用すると次のようになります。
-
-   ```json
-   {
-     "registry-mirrors": [],
-     "insecure-registries": [],
-     "debug": true,
-     "experimental": true,
-     "storage-opts": [
-       "size=127G"
-     ]
-   }
-   ```
-
-   構成オプションとヒントについて詳しくは、「[Docker Engine on Windows (Windows での Docker エンジン)](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon)」をご覧ください。
-
-1. **[適用]** をクリックします。
-
-**Windows Server 2016 の場合**:
-
-1. "docker" サービスを停止します。
-
-   ```shell
-   sc.exe stop docker
-   ```
-
-1. 管理者特権でのコマンド プロンプトで、"%ProgramData%\Docker\config\daemon.json" (または `dockerd --config-file` に対して指定したファイル) を編集します。
-
-1. 次の JSON 配列プロパティを追加して、ディスク容量を 127 GB に増やします (Build Tools の拡大を見込んで十分に余裕がある量)。
-
-   ```json
-   {
-     "storage-opts": [
-       "size=120G"
-     ]
-   }
-   ```
-
-   このプロパティは、既にあるプロパティに追加されます。 構成オプションとヒントについて詳しくは、「[Docker Engine on Windows (Windows での Docker エンジン)](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon)」をご覧ください。
- 
-1. ファイルを保存して閉じます。
-
-1. "docker" サービスを開始します。
-
-   ```shell
-   sc.exe start docker
-   ```
-
-## <a name="step-5-create-and-build-the-dockerfile"></a>手順 5. Dockerfile を作成してビルドする
+## <a name="create-and-build-the-dockerfile"></a>Dockerfile を作成してビルドする
 
 次の Dockerfile の例を新しいファイルとしてディスクに保存します。 ファイル名を単に "Dockerfile" にすると、既定で認識されます。
 
@@ -177,9 +89,9 @@ Visual Studio Build Tools さらには Visual Studio 全体では、すべての
    ```
 
    > [!WARNING]
-   > 自分のイメージを microsoft/windowsservercore または mcr.microsoft.com/windows/servercore に直接基づくようにする場合 ([Microsoft によるコンテナー カタログのシンジケート](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/)に関するページを参照)、.NET Framework が正しくインストールされない可能性があり、インストール エラーは示されません。 インストールが完了した後、マネージド コードが実行しない可能性があります。 代わりに、イメージを [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 以降に基づくようにします。 また、バージョン 4.7.1 以降のタグが付いたイメージでは、既定の `SHELL` として PowerShell が使用されている可能性があり、その場合 `RUN` および `ENTRYPOINT` 命令は失敗することに注意してください。
+   > 自分のイメージを microsoft/windowsservercore または mcr.microsoft.com/windows/servercore に直接基づくようにする場合 ([Microsoft によるコンテナー カタログのシンジケート](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/)に関するページを参照)、.NET Framework が正しくインストールされない可能性があり、インストール エラーは示されません。 インストールが完了した後、マネージド コードが実行しない可能性があります。 代わりに、イメージを [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) 以降に基づくようにします。 また、バージョン 4.7.2 以降のタグが付いたイメージでは、既定の `SHELL` として PowerShell が使用されている可能性があり、その場合 `RUN` および `ENTRYPOINT` 命令は失敗することに注意してください。
    >
-   > Visual Studio 2017 バージョン 15.8 以前 (すべての製品) は、mcr\.microsoft\.com\/windows\/servercore:1809 以降には適切にインストールされません。 エラーは表示されません。
+   > Visual Studio 2017 バージョン 15.8 以前 (すべての製品) は、mcr.microsoft.com/windows/servercore:1809 以降には適切にインストールされません。 エラーは表示されません。
    >
    > どのコンテナー OS バージョンがどのホスト OS バージョン上でサポートされているかについては「[Windows コンテナーのバージョンの互換性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)」を、既知の問題については「[コンテナーの既知の問題](build-tools-container-issues.md)」をご覧ください。
 
@@ -217,7 +129,7 @@ Visual Studio Build Tools さらには Visual Studio 全体では、すべての
    ```
 
    > [!WARNING]
-   > microsoft/windowsservercore に直接基づくイメージの場合は、.NET Framework が正しくインストールされない可能性があり、インストール エラーは示されていません。 インストールが完了した後、マネージド コードが実行しない可能性があります。 代わりに、イメージを [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 以降に基づくようにします。 また、バージョン 4.7.1 以降のタグが付いたイメージでは、既定の `SHELL` として PowerShell が使用されている可能性があり、その場合 `RUN` および `ENTRYPOINT` 命令は失敗することに注意してください。
+   > microsoft/windowsservercore に直接基づくイメージの場合は、.NET Framework が正しくインストールされない可能性があり、インストール エラーは示されていません。 インストールが完了した後、マネージド コードが実行しない可能性があります。 代わりに、イメージを [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) 以降に基づくようにします。 また、バージョン 4.8 以降のタグが付いたイメージでは、既定の `SHELL` として PowerShell が使用されている可能性があり、その場合 `RUN` および `ENTRYPOINT` 命令は失敗することに注意してください。
    >
    > どのコンテナー OS バージョンがどのホスト OS バージョン上でサポートされているかについては「[Windows コンテナーのバージョンの互換性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)」を、既知の問題については「[コンテナーの既知の問題](build-tools-container-issues.md)」をご覧ください。
 
@@ -249,7 +161,7 @@ Visual Studio Build Tools さらには Visual Studio 全体では、すべての
 
    ::: moniker-end
 
-## <a name="step-6-using-the-built-image"></a>手順 6. ビルドされたイメージを使う
+## <a name="using-the-built-image"></a>ビルドされたイメージを使う
 
 イメージができたので、それをコンテナーで実行して対話型と自動の両方のビルドを行うことができます。 この例では開発者コマンド プロンプトを使うので、PATH および他の環境変数は既に構成されています。
 

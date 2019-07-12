@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 05/22/2019
+ms.date: 06/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328829"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552874"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
@@ -41,8 +41,8 @@ Visual Studio 2019 では、あらゆる開発者、アプリ、プラットフ�
 
 ## <a name="develop"></a>開発
 
-新機能で、時間を節約しましょう。
-<br><br>
+新機能を利用して時間を節約する方法について詳しくは、次のビデオをご覧ください。 <br><br>"*ビデオの長さ:3.00 分*"
+
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
 ### <a name="improved-search"></a>検索機能の向上
@@ -104,8 +104,8 @@ Visual Studio 2019 のリリースにより、Visual Studio を Per-monitor awar
 
 ## <a name="collaborate"></a>共同作業
 
-問題を解決するためにチームを作ります。
-<br><br>
+問題を解決するためにチームを作る方法について詳しくは、次のビデオをご覧ください。 <br><br>"*ビデオの長さ:4.22 分*"
+
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
 ### <a name="cloud-first-workflow"></a>クラウド ファーストのワークフロー
@@ -142,8 +142,8 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
 ## <a name="debug"></a>デバッグ
 
-正確なターゲット設定に注力しています。
-<br><br>
+デバッグ中に正確なターゲット設定に注力する方法について詳しくは、次のビデオをご覧ください。 <br><br>"*ビデオの長さ:3.54 分*"
+
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>パフォーマンスの向上
