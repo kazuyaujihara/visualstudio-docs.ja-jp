@@ -7,12 +7,12 @@ ms.date: 04/23/2019
 ms.topic: conceptual
 description: Visual Studio + GitHub バンドルでのサブスクリプションの管理
 searchscope: VS Subscription
-ms.openlocfilehash: a775317029db1a2be3b01411955ae197c7df6873
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: adc06dd13579697d6aa74158f980cd873ea661fe
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945241"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586855"
 ---
 # <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>Visual Studio Subscriptions with GitHub Enterprise の管理
 
@@ -44,9 +44,9 @@ GitHub Enterprise サブスクリプションが購入されると、GitHub で�
 
 GitHub は、クラウド ベースの GitHub.com、またはオンプレミスの GitHub Enterprise Server のいずれかとして使用できます。  2 つのバージョンを管理するプロセスは異なります。  GitHub では、GitHub Enterprise サブスクリプションの管理に役立つ、さまざまなヘルプ トピックや管理者ガイドが提供されています。  選択したトピックへのリンクを次に示します。  
 
-### <a name="githubspanspancom"></a>GitHub<span></span>.com 
+### <a name="githubcom"></a>GitHub.com 
 
-GitHub<span></span>.com の管理の詳細については、[GitHub ヘルプ](https://help.github.com/en)の次のトピックをご覧ください。
+GitHub.com の管理の詳細については、[GitHub ヘルプ](https://help.github.com/en)の次のトピックをご覧ください。
 - [ヘルプ トピックの完全な一覧](https://help.github.com/en)
 - [組織内のメンバーシップの管理](https://help.github.com/en/articles/managing-membership-in-your-organization)
 > - [組織参加へのユーザーの招待](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
@@ -70,13 +70,14 @@ GitHub ヘルプでは、組織における GitHub Enterprise Server の実装�
 > - [ユーザー セキュリティ](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
 - [GitHub Enterprise Server のインストールと構成](https://help.github.com/en/enterprise/2.16/admin/installation)
 
-
 ## <a name="support-resources"></a>サポート リソース
--  [GitHub ヘルプ](https://help.github.com/en)で、GitHub のさまざまなトピックに関する質問への回答を確認できます。
--  [GitHub Community Forum](https://github.community/) で、他の GitHub ユーザーからサポートを得ることができます。
--  Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
--  Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
--  GitHub Enterprise の[テクニカル サポート](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)を利用してください。   
+
+- [GitHub ヘルプ](https://help.github.com/en)で、GitHub のさまざまなトピックに関する質問への回答を確認できます。
+- [GitHub Community Forum](https://github.community/) で、他の GitHub ユーザーからサポートを得ることができます。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+- GitHub Enterprise の[テクニカル サポート](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)を利用してください。   
 
 ## <a name="next-steps"></a>次の手順
+
 Visual Studio Subscriptions with GitHub Enterprise の管理の詳細については、Visual Studio の[サブスクリプション管理ポータル](https://visualstudio.microsoft.com/subscriptions-administration/)をご覧ください。

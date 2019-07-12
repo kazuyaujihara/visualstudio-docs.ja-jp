@@ -1,32 +1,83 @@
 ---
 title: Razor
 description: Visual Studio for Mac の asp.net core アプリの Razor サポートに関する情報
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: f4c572fffb819affbbe74f05b95e270f8bbaa285
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e5a3f61ee7065a0615a381bdcc03dafc3566893
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936946"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691272"
 ---
-# <a name="razor-support"></a>Razor サポート
+# <a name="razor"></a>Razor
 
-Visual Studio for Mac では、*.cshtml* ファイルでの IntelliSense や構文の強調表示など、Razor 編集をサポートしています。
+Visual Studio for Mac には、 *.cshtml* ファイルでの IntelliSense や構文の強調表示など、Razor 編集のサポートが用意されています。
 
-![Visual Studio for Mac の Razor 編集](media/razor-image1.png)
+![Visual Studio for Mac での Razor 編集](media/razor-editor.png)
 
-## <a name="getting-started-with-razor-in-visual-studio-for-mac"></a>Visual Studio for Mac で Razor を使用する
+このガイドでは、最初の Razor Web アプリの作成に関する概要について説明します。 より詳細なガイドについては、[.NET Core ドキュメントの Razor Pages](/aspnet/core/razor-pages/index) をご参照ください。
 
-Visual Studio for Mac で Razor の使用を開始するとき、2 つの選択肢があります。ASP.NET Core と ASP.NET Core MVC の Razor ページです。 いずれを選択した場合でも、以下のガイドでチュートリアルを利用したり、詳細を確認したりできます。
+## <a name="creating-a-new-razor-project"></a>新しい Razor プロジェクトの作成
 
-- [Visual Studio for Mac を使用し、macOS で ASP.NET Core Razor ページを構築する方法の概要](/aspnet/core/tutorials/razor-pages-mac/razor-pages-start?view=aspnetcore-2.1)
-- [ASP.NET Core MVC と Visual Studio for Mac の概要](/aspnet/core/tutorials/first-mvc-app-mac/start-mvc?view=aspnetcore-2.1)
+* ようこそ画面で、 **[新規]** を選択して新しいプロジェクトを作成します。
 
-## <a name="see-also"></a>関連項目
+![Visual Studio for Mac での新しいプロジェクト](media/razor-new.png)
 
-- [Visual Studio での C# および ASP.NET Core の概要 (Windows)](/visualstudio/ide/tutorial-csharp-aspnet-core)
+* [新しいプロジェクト] ダイアログで、 **[.NET Core]**  >  **[アプリ]**  >  **[Web アプリケーション]** に移動し、 **[次へ]** ボタンをクリックします。
+
+![Razor プロジェクト テンプレート](media/razor-new-project1.png)
+
+* 必要な .NET Core ターゲット フレームワークを選択し (2.2 以降を推奨)、 **[次へ]** を選択します。  使用するプロジェクトの名前を選び、必要な場合は git サポートを追加します。 **[作成]** を選択してプロジェクトを作成します。
+
+![Razor プロジェクト名](media/razor-new-project2.png)
+
+Visual Studio for Mac により、お客様のプロジェクトがコード レイアウトで開かれます。
+
+* **Cmd - Opt - F5** キーを使って、デバッグなしでプロジェクトを実行します
+
+Visual Studio によって [Kestral](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel) が起動されます。また、`https://localhost:5001` に対してブラウザーが起動され、最初の Razor Web アプリが表示されます。
+
+![Safari での Razor Web アプリ](media/razor-webapp.png)
+
+## <a name="project-anatomy"></a>プロジェクトの構造
+
+Razor Web アプリは次のコンポーネントで構成されています。
+
+### <a name="pages-folder"></a>Pages フォルダー
+
+プロジェクト内の Pages フォルダーには、Web ページと、以下のそれぞれに関するコードビハインドが置かれます。
+* HTML マークアップと Razor 構文のための * *.cshtml* ファイル。
+* ページ イベントを処理するための C# コードビハインドの * *.cshtml.cs* ファイル。
+
+サポート ファイルには、アンダー スコアで始まる名前が付けられます。 たとえば、_Layout.cshtml ファイルでは、すべてのページに共通の UI 要素が構成されます。 このファイルでは、ページの上部に表示されるナビゲーション メニューと、ページの下部に表示される著作権の通知が設定されます。 詳細については、「[ASP.NET Core でのレイアウト](https://docs.microsoft.com/aspnet/core/mvc/views/layout)」をご覧ください。
+
+### <a name="launch-settings"></a>起動設定
+
+*launchSettings.json* ファイルには、IIS 設定、アプリケーションの URL、およびその他の関連する設定が含まれています。
+
+### <a name="app-settings"></a>アプリケーション設定
+
+*appSettings,json* ファイルには、接続文字列などの構成データが含まれています。
+
+構成について詳しくは、[ASP.NET での構成ガイド](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/index)に関する記事をご覧ください。
+
+### <a name="wwwroot-folder"></a>wwwroot フォルダー
+
+HTML ファイル、JavaScript ファイル、CSS ファイルなどの静的ファイルが格納されます。 詳細については、「[ASP.NET Core の静的ファイル](https://docs.microsoft.com/aspnet/core/fundamentals/static-files)」をご覧ください。
+
+### <a name="programcs"></a>Program.cs
+
+プログラムのエントリ ポイントが保存されます。 詳細については、「[ASP.NET Core の Web ホスト](https://docs.microsoft.com/aspnet/core/fundamentals/host/web-host)」をご覧ください。
+
+### <a name="startupcs"></a>Startup.cs
+
+cookie に対する同意が必要かどうかなど、アプリの動作を構成するコードが保存されます。 詳細については、「[ASP.NET Core でのアプリケーションのスタートアップ](https://docs.microsoft.com/aspnet/core/fundamentals/startup)」をご覧ください。
+
+## <a name="see-aso"></a>関連項目
+
+Razor Web アプリの作成に関するより包括的なガイドについては、「[ASP.NET Core での Razor ページの概要](https://docs.microsoft.com/aspnet/core/razor-pages/index)」をご覧ください。
