@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 622af2c5f15187f6e04b53b4f0ba433c91f85a07
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701179"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826186"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Visual Studio による双方向言語用アプリケーションの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Visual Studio では、アラビア語やヘブライ語など、右から左に
   
 - **右から左への読み取り順序** 既定では、Visual Studio で使用するテキスト入力コントロールでは左から右への読み取り順序が使用されます。 ほとんどの場合は、Windows の標準のジェスチャを使用して読み取り順序を切り替えることができます。 たとえば、Ctrl キーを押しながら RightShift キーを押すことにより、プロパティ ウィンドウが右から左への読み取り順序のプロパティ値をサポートするように切り替えることができます。  
   
-     ただし、右から左への読み取り順序は Visual Studio のすべての場所でサポートされているわけではありません。 サポートされない例を次に示します。  
-  
-    - Visual Studio ダイアログ ボックス内のチェック ボックス、ドロップダウン リスト、およびその他のコントロールでは、常に左から右への読み取り順序が使用されます。  
-  
-    - コード エディター (およびテキスト エディター) では、右から左への読み取り順序がサポートされていません。 双方向言語でテキストを入力することはできますが、読み取り順序は常に左から右です。  
+  ただし、右から左への読み取り順序は Visual Studio のすべての場所でサポートされているわけではありません。 サポートされない例を次に示します。  
+
+  - Visual Studio ダイアログ ボックス内のチェック ボックス、ドロップダウン リスト、およびその他のコントロールでは、常に左から右への読み取り順序が使用されます。  
+
+  - コード エディター (およびテキスト エディター) では、右から左への読み取り順序がサポートされていません。 双方向言語でテキストを入力することはできますが、読み取り順序は常に左から右です。  
   
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>アラビア語またはヘブライ語のテキストによる名前付け  
  アラビア語およびヘブライ語のテキストは、フォルダー、変数、またはその他のオブジェクトの名前に使用できます。 アラビア語を使用する場合、Kashida と Diacritics を含むすべてのアラビア語文字を使用できます。  

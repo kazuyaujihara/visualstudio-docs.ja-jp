@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 289e506d3cd404bba9a3a63d97179b89a948d381
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685343"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821977"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>共有 VSPackage とバージョン管理 VSPackage の選択
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ ms.locfileid: "65685343"
   
 - VSPackage の複数のバージョンの互換性を確保[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 そのため、その 2 つの方法を使用できます。  
   
-    - 制限の最も古いバージョンの機能のみを使用するように VSPackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]サポートしています。  
-  
-    - プログラムのバージョンに適応するために VSPackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]が実行されています。 次に、新しいサービスのクエリが失敗した場合、VSPackage を提供できますの旧バージョンでサポートされている他のサービス[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
+  - 制限の最も古いバージョンの機能のみを使用するように VSPackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]サポートしています。  
+
+  - プログラムのバージョンに適応するために VSPackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]が実行されています。 次に、新しいサービスのクエリが失敗した場合、VSPackage を提供できますの旧バージョンでサポートされている他のサービス[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。  
   
 - VSPackage を適切に登録します。 詳細については、次を参照してください。 [VSPackage の登録](../extensibility/internals/vspackage-registration.md)と[マネージ VSPackage の登録](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)します。  
   

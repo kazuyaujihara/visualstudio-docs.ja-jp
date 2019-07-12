@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 610ee5e18054b6da35a3098b851d1585c70b6bc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d5cb4bf5788e1d30933a807e2e97e064118fc076
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583777"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823405"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office ドキュメントに Windows フォーム コントロールの制限事項
 
@@ -41,24 +41,24 @@ Microsoft Office Word ドキュメントまたは Microsoft Office Excel のワ�
 
 - Excel のコントロールのサポートされていないプロパティ:
 
-    - <xref:System.Windows.Forms.Control.Anchor>
-    - <xref:System.Windows.Forms.Control.Dock>
-    - <xref:System.Windows.Forms.Control.Location>
-    - <xref:System.Windows.Forms.Control.TabIndex>
-    - <xref:System.Windows.Forms.Control.TabStop>
-    - <xref:System.Windows.Forms.Control.TopLevelControl>
+  - <xref:System.Windows.Forms.Control.Anchor>
+  - <xref:System.Windows.Forms.Control.Dock>
+  - <xref:System.Windows.Forms.Control.Location>
+  - <xref:System.Windows.Forms.Control.TabIndex>
+  - <xref:System.Windows.Forms.Control.TabStop>
+  - <xref:System.Windows.Forms.Control.TopLevelControl>
 
 - サポートされていないメソッド、および Word コントロールのプロパティ:
 
-    - <xref:System.Windows.Forms.Control.Hide%2A>
-    - <xref:System.Windows.Forms.Control.Show%2A>
-    - <xref:System.Windows.Forms.Control.Anchor>
-    - <xref:System.Windows.Forms.Control.Dock>
-    - <xref:System.Windows.Forms.Control.Location>
-    - <xref:System.Windows.Forms.Control.TabIndex>
-    - <xref:System.Windows.Forms.Control.TabStop>
-    - <xref:System.Windows.Forms.Control.TopLevelControl>
-    - <xref:System.Windows.Forms.Control.Visible>
+  - <xref:System.Windows.Forms.Control.Hide%2A>
+  - <xref:System.Windows.Forms.Control.Show%2A>
+  - <xref:System.Windows.Forms.Control.Anchor>
+  - <xref:System.Windows.Forms.Control.Dock>
+  - <xref:System.Windows.Forms.Control.Location>
+  - <xref:System.Windows.Forms.Control.TabIndex>
+  - <xref:System.Windows.Forms.Control.TabStop>
+  - <xref:System.Windows.Forms.Control.TopLevelControl>
+  - <xref:System.Windows.Forms.Control.Visible>
 
 設定することもできない、<xref:System.Windows.Forms.Control.Left>または<xref:System.Windows.Forms.Control.Top>Word 文書でテキストの範囲にある Windows フォーム コントロールのプロパティ。 Windows フォーム コントロールは、次の場合にテキストの範囲に追加されます。
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3aa09e0e40250d1e7d40ec0f85adca617852919f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401287"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64786514"
 ---
 # <a name="idiasymbolgetvirtualaddress"></a>IDiaSymbol::get_virtualAddress
 場所の仮想アドレス (VA) を取得します。 使用する場合、 [LocationType 列挙型](../../debugger/debug-interface-access/locationtype.md)に設定されている`LocIsStatic`します。

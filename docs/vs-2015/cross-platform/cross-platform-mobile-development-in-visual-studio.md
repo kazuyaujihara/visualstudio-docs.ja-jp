@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 19d651e6b55fd5d18ece318e20aa7db67cf57fee
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698768"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824183"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio におけるクロス プラットフォーム モバイル開発
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 
 - [Android、iOS、および Windows 用のアプリをビルドする (.NET Framework)](#NET)
 
-    - [1 つのコード ベースから Android、iOS、Windows を対象にする](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
+  - [1 つのコード ベースから Android、iOS、Windows を対象にする](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
 
-    - [Windows 10 デバイスを対象にする](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
+  - [Windows 10 デバイスを対象にする](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
 
 - [Android、iOS、および Windows 用のアプリをビルドする (HTML/JavaScript)](#HTML)
 
@@ -56,7 +56,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 ### <a name="AndroidHTML"></a> 1 つのコード ベースから Android、iOS、Windows を対象にする
  C# または F# を使用することで (Visual Basic は現時点ではサポートされていません)、Android、iOS、Windows のネイティブ アプリを開発できます。  最初に Visual Studio 2015 をインストールし、インストーラーで **[カスタム]** オプションを選択し、[クロス プラットフォームのモバイル開発] の **[C#/.NET (Xamarin)]** ボックスを選択します。 [Xamarin インストーラー](https://www.xamarin.com/download)で開始することもできます。このインストーラーは Xamarin for Visual Studio 2013 のインストールに必須です。
 
- Visual Studio 2015 が既にインストールされている場合、**[コントロール パネル] の [プログラムと機能]** からインストーラーを実行し、上と同じように Xamarin に **[カスタム]** オプションを選択します。
+ Visual Studio 2015 が既にインストールされている場合、 **[コントロール パネル] の [プログラムと機能]** からインストーラーを実行し、上と同じように Xamarin に **[カスタム]** オプションを選択します。
 
  完了すると、プロジェクト テンプレートが **[新しいプロジェクト]** ダイアログ ボックスに表示されます。 Xamarin テンプレートを見つける最も簡単な方法は、"Xamarin" で検索することです。
 
@@ -74,7 +74,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 
  共有プロジェクト、ポータブル クラス ライブラリ プロジェクト、またはその両方を使用して、コードを共有できます。 共有プロジェクトに最適なコードもあれば、ポータブル クラス ライブラリ プロジェクトにより適したコードもあります。
 
-|**詳細**|
+|**詳細情報**|
 |--------------------|
 |共有プロジェクト、ポータブル クラス ライブラリ プロジェクト、またはその両方のいずれを使用してコードを共有するかを選択する。<br /><br /> [プラットフォーム間でコードを共有する](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (.NET Framework ブログ)<br /><br /> [コード共有のオプション](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [.NET Framework によるコード共有のオプション](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN ライブラリ)|
 
@@ -83,11 +83,11 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 
  Windows 10 デバイスを幅広く対象とした単一のアプリを作成する必要がある場合は、ユニバーサル Windows アプリを作成します。 1 つのプロジェクトを使用してアプリをデザインすれば、どのデバイスを使用して表示してもアプリのページが正しくレンダリングされます。
 
- ユニバーサル Windows アプリのプロジェクト テンプレートから作業を開始します。 ページを視覚的にデザインした後、それらのページをプレビュー ウィンドウで開くと、さまざまな種類のデバイスでどのように表示されるかを確認できます。 デバイスに表示されるページが気に入らない場合は、画面サイズ、解像度、あるいは縦モードまたは横モードなどのさまざまな向きに合わせて、ページを最適化できます。 このような操作すべてを、Visual Studio の直感的なツール ウィンドウと簡単にアクセスできるメニュー オプションを使用して実行できます。 アプリを実行してコードをデバッグする準備ができたら、さまざまな種類のデバイスのデバイス エミュレーターやシミュレーターのすべてが、**[標準]** ツールバーの 1 つのドロップダウン リストにまとめられています。
+ ユニバーサル Windows アプリのプロジェクト テンプレートから作業を開始します。 ページを視覚的にデザインした後、それらのページをプレビュー ウィンドウで開くと、さまざまな種類のデバイスでどのように表示されるかを確認できます。 デバイスに表示されるページが気に入らない場合は、画面サイズ、解像度、あるいは縦モードまたは横モードなどのさまざまな向きに合わせて、ページを最適化できます。 このような操作すべてを、Visual Studio の直感的なツール ウィンドウと簡単にアクセスできるメニュー オプションを使用して実行できます。 アプリを実行してコードをデバッグする準備ができたら、さまざまな種類のデバイスのデバイス エミュレーターやシミュレーターのすべてが、 **[標準]** ツールバーの 1 つのドロップダウン リストにまとめられています。
 
  Windows 10 はまだ新しいため、Windows 8.1 を対象にしたプロジェクト テンプレートも用意されています。 アプリを Windows 10 のスマートフォン、タブレット、および PC で実行する場合、必要であればこれらのプロジェクト テンプレートを使用できます。 ただし、Windows 8.1 を実行しているすべてのデバイスは Windows 10 への自動アップグレードが実行されるため、Windows 8.1 をターゲットにする特定の理由がない限り、Windows 10 を対象とするプロジェクト テンプレートを使用することをお勧めします。
 
-|**詳細**|
+|**詳細情報**|
 |--------------------|
 |[ユニバーサル Windows アプリについて学習する](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Windows デベロッパー センター)|
 |[初めてのアプリをビルドする](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Windows デベロッパー センター)|
@@ -113,7 +113,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 
  ユニバーサル Windows アプリを作成するためのプロジェクト テンプレートは、Visual Studio でまだ使用できるので、Windows デバイスだけを対象にする場合は、自由に使用してください。 後で Android および iOS を対象にすることを決定した場合は、いつでも Cordova プロジェクトにコードを移植できます。 WinJS API のオープン ソース バージョンがあるため、それらの API を使用するすべてのコードを再利用することができます。 つまり、将来他のプラットフォームを対象にすることを決定した場合、Visual Studio Tools for Apache Cordova から始めることをお勧めします。
 
-|**詳細**|
+|**詳細情報**|
 |--------------------|
 |[Visual Studio のインストール](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Visual Studio Tools for Apache Cordova の使用を開始する](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
@@ -140,7 +140,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 
  これらのライブラリでコードを記述するときは、IntelliSense を使用して Android プラットフォームと Windows プラットフォームのネイティブ API を探索できます。 これらのライブラリ プロジェクトは Visual Studio デバッガーと完全に統合されるため、デバッガーの高度な機能をすべて活用して、ブレークポイントの設定、コードのステップ実行、問題点の検索と修正を行うことができます。
 
-|**詳細**|
+|**詳細情報**|
 |--------------------|
 |[Visual Studio のダウンロード](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Visual C++ for Cross-Platform Mobile Development ツールのインストール](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (MSDN ライブラリ)|
@@ -160,7 +160,7 @@ Android、iOS、および Windows デバイス用のアプリを Visual Studio �
 
  Unity と Visual Studio Tools for Unity を使用したゲームの構築を、今すぐに開始できます。
 
-|**詳細**|
+|**詳細情報**|
 |--------------------|
 |[Visual Studio での Unity ゲーム構築について学習する](https://www.visualstudio.com/features/unitytools-vs.aspx)|
 |[Visual Studio Tools for Unity の詳細について](../cross-platform/visual-studio-tools-for-unity.md) (MSDN ライブラリ)|

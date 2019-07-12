@@ -11,14 +11,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a67fa921c5fedf5d37585036b2c5e55c7497434
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 50eedfe849de2a0fe82ee337d26a8b66a15d6764
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432635"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826150"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>方法: 一時停止と再開パフォーマンス データの収集
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>方法: パフォーマンス データ収集の一時停止と再開
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 プロファイル セッション ページ ウィンドウから、プロファイリング データの収集を対話形式で制御することができます。  
@@ -28,17 +28,17 @@ ms.locfileid: "63432635"
  ![プロファイリング セッションのページ](../profiling/media/prof-profilingsessionpage.png "PROF_ProfilingSessionPage")  
   
 > [!NOTE]
-> プロファイリングを一時停止した状態でパフォーマンス セッションを開始し、プログラム実行の後の時点でプロファイリングを再開することもできます。 プロファイリングを一時停止した状態でパフォーマンス セッションを開始するには、**[デバッグ]** メニューの **[Start Performance Analysis with Profiling Paused]\(プロファイリングを一時停止してパフォーマンス分析を開始)** コマンドを選択します。  
+> プロファイリングを一時停止した状態でパフォーマンス セッションを開始し、プログラム実行の後の時点でプロファイリングを再開することもできます。 プロファイリングを一時停止した状態でパフォーマンス セッションを開始するには、 **[デバッグ]** メニューの **[Start Performance Analysis with Profiling Paused]\(プロファイリングを一時停止してパフォーマンス分析を開始)** コマンドを選択します。  
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>プロファイリングを一時停止、再開、または停止するには  
   
 - プロファイル セッション ページで、次のように操作します。  
   
-    - データ コレクションを中断するには、**[収集の一時停止]** を選択します。  
-  
-    - データ コレクションを一時停止した後で再開するには、**[収集の再開]** を選択します。  
-  
-    - プロファイリング セッションを終了してレポートを生成するには、**[プロファイリングの停止]** を選択します。  
+  - データ コレクションを中断するには、 **[収集の一時停止]** を選択します。  
+
+  - データ コレクションを一時停止した後で再開するには、 **[収集の再開]** を選択します。  
+
+  - プロファイリング セッションを終了してレポートを生成するには、 **[プロファイリングの停止]** を選択します。  
   
 ## <a name="see-also"></a>関連項目  
  [データ コレクションの制御](../profiling/controlling-data-collection.md)   

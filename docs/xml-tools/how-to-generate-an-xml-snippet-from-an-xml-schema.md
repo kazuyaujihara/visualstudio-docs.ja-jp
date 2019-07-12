@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c3aad870112b580078f2dbb849f9ee1a771ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3795bbe8a200b868687cdb8da053bc078b7f14c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001911"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825762"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>方法: XML スキーマから XML スニペットを生成します。
 
@@ -25,11 +25,11 @@ XML エディターには、XML スキーマ定義言語 (XSD) スキーマか�
 
 - エディター内の現在の要素は、属性がなく、空である必要があります。 たとえば、以下はすべて有効になります。
 
-    - `<Account`
+  - `<Account`
 
-    - `<Account>`
+  - `<Account>`
 
-    - `<Account></Account>`
+  - `<Account></Account>`
 
 - 要素名のすぐ右側にカーソルが置かれている必要があります。
 
@@ -56,7 +56,7 @@ XML エディターには、XML スキーマ定義言語 (XSD) スキーマか�
 
      エディターに新しいファイルが開きます。 ファイルには既定の XML 宣言 `<?xml version="1.0" encoding="utf-8">` が含まれています。
 
-3. ドキュメントのプロパティ ウィンドウで、参照 ボタンをクリックします (**...**) で、**スキーマ**フィールド。
+3. ドキュメントのプロパティ ウィンドウで、参照 ボタンをクリックします ( **...** ) で、**スキーマ**フィールド。
 
      **XSD スキーマ** ダイアログ ボックスが表示されます。
 
@@ -139,7 +139,7 @@ XML エディターには、XML スキーマ定義言語 (XSD) スキーマか�
 </xs:schema>
 ```
 
-### <a name="output"></a>出力
+### <a name="output"></a>Output
 
  `Contact` 要素に関連付けられているスキーマ情報に基づいて生成された XML データを次に示します。 としてマークされた項目`bold`の XML スニペットの編集可能なフィールドを指定します。
 

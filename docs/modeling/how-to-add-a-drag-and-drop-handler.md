@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8a05e193ffe621d28147389752ab56031cf499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15e0d305140e6e04464091df59432a2cd261796
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993485"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821941"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>方法: ドラッグ アンド ドロップ ハンドラーを追加する
 
@@ -126,13 +126,13 @@ MEF (Managed Extensibility Framework) を使用して、最小構成でインス
 
 - <xref:System.Windows.Forms.IDataObject>  `Data` -このプロパティは、1 つ以上の形式では、通常、ソース オブジェクトのシリアル化されたバージョンを実行します。 最も有用な関数は次のとおりです。
 
-    - diagramEventArgs.Data.GetDataFormats() - は、ドラッグされたオブジェクトをデコードする形式を示します。 たとえば、ユーザーがデスクトップからファイルをドラッグした場合、使用可能な形式にはファイル名 ("`FileNameW`") が含まれます。
+  - diagramEventArgs.Data.GetDataFormats() - は、ドラッグされたオブジェクトをデコードする形式を示します。 たとえば、ユーザーがデスクトップからファイルをドラッグした場合、使用可能な形式にはファイル名 ("`FileNameW`") が含まれます。
 
-    - `diagramEventArgs.Data.GetData(format)` -指定された形式でドラッグされたオブジェクトをデコードします。 オブジェクトを適切な型にキャストします。 次に例を示します。
+  - `diagramEventArgs.Data.GetData(format)` -指定された形式でドラッグされたオブジェクトをデコードします。 オブジェクトを適切な型にキャストします。 次に例を示します。
 
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
+    `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         ソースからモデル バス参照などのオブジェクトを独自のカスタム形式で転送することもできます。 詳細については、次を参照してください。[ドラッグ アンド ドロップでモデル バス参照を送信する方法](#to-send-an-object-from-a-source-dsl)します。
+    ソースからモデル バス参照などのオブジェクトを独自のカスタム形式で転送することもできます。 詳細については、次を参照してください。[ドラッグ アンド ドロップでモデル バス参照を送信する方法](#to-send-an-object-from-a-source-dsl)します。
 
 - <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -ユーザーが DSL または UML モデルから項目をドラッグする場合は、このプロパティを使用します。 1 つの要素グループ プロトタイプには 1 つ以上のオブジェクト、リンク、およびそれらのプロパティ値が含まれます。 これは貼り付け操作やツールボックスから要素を追加する際にも使用されます。 プロトタイプ内のオブジェクトとそれらの種類は GUID により識別されます。 たとえば、次のコードを使用して、ユーザーはクラス要素を UML 図または UML モデル エクスプローラーからドラッグできます。
 
@@ -574,6 +574,6 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>関連項目
 
 - [コピー動作のカスタマイズ](../modeling/customizing-copy-behavior.md)
-- [ドメイン固有言語ソリューションの配置](../modeling/deploying-domain-specific-language-solutions.md)
+- [ドメイン固有言語ソリューションの配置](msi-and-vsix-deployment-of-a-dsl.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

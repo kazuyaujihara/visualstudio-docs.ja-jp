@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 64a5edbec2f9f482981002e609117996f0080e56
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692549"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825895"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML データのデータセットへの読み込み
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,9 +147,9 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
   
 - 2 つ<xref:System.Windows.Forms.Button>コントロール。  
   
-    - 1 つのボタンを選択し、XML ファイルをデータセットに読み込みますで表示、<xref:System.Windows.Forms.DataGridView>コントロール。  
-  
-    - 2 番目のボタンと、データセットからスキーマを抽出し、<xref:System.IO.StringWriter>で表示、<xref:System.Windows.Forms.TextBox>コントロール。  
+  - 1 つのボタンを選択し、XML ファイルをデータセットに読み込みますで表示、<xref:System.Windows.Forms.DataGridView>コントロール。  
+
+  - 2 番目のボタンと、データセットからスキーマを抽出し、<xref:System.IO.StringWriter>で表示、<xref:System.Windows.Forms.TextBox>コントロール。  
   
 #### <a name="to-add-controls-to-the-form"></a>フォームにコントロールを追加するには  
   

@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 55ba291135b41d534d8f91cae5d6257a26d4e34c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 2cd3c16437829e9701a2354b4f40c557a654f466
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686490"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824111"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio の複合パターン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -228,7 +228,7 @@ ms.locfileid: "65686490"
 
 - **常に**利用情報をまとめたインジケーターを作成しようとしています。 その他のデータを集計する方法と考えるか (たとえば、"3 個の参照"単に「参照」ではなく) 使用できるデータ項目の数のカウントを提供することを検討します。
 
-    - 位置インジケーターのデータことはできません常に計算され、表示の場合、すぐに、値が計算される、プログレッシブのフィードバックを提供することを検討します。 たとえば、未読の電子メールの数として Windows Phone で電子メールのライブ タイルを更新するように使用可能なデータへの更新を反映する変更をアニメーション化を検討してください。
+  - 位置インジケーターのデータことはできません常に計算され、表示の場合、すぐに、値が計算される、プログレッシブのフィードバックを提供することを検討します。 たとえば、未読の電子メールの数として Windows Phone で電子メールのライブ タイルを更新するように使用可能なデータへの更新を反映する変更をアニメーション化を検討してください。
 
 - **決して**ユーザーが特定のコンテンツを実行できる程度よりも複数のインジケーターを追加します。 アンビエントのインジケーターは、ユーザーの介入を必要とせずに便利ですにする必要があります。 インジケーターでは、オーバーフローおよびその他の管理の制御に表示する必要がある場合、そのアンビエントが失われます。
 
@@ -237,11 +237,11 @@ ms.locfileid: "65686490"
 
 - **常に**追加コンテンツを開くことによって明示的なジェスチャを実行するユーザーが必要です。 一般的なオープンのジェスチャは次のとおりです。
 
-    - **ホバー時:** ツールヒントまたは非対話型の情報コンテンツ
+  - **ホバー時:** ツールヒントまたは非対話型の情報コンテンツ
 
-    - **明示的なコマンド:** インライン プレゼンター
+  - **明示的なコマンド:** インライン プレゼンター
 
-    - **アンビエントのインジケーターをダブルクリックします。** CodeLens ポップアップ ウィンドウ
+  - **アンビエントのインジケーターをダブルクリックします。** CodeLens ポップアップ ウィンドウ
 
 - **常に**ユーザーが Esc キーを押すと、詳細コンテンツを消去します。
 
@@ -400,10 +400,10 @@ ms.locfileid: "65686490"
 |     **選択されていません。**      |    既定値    |                 ![既定のボタンの状態](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713 10_DefaultState")                 |
 |  **プライマリ選択**  |   サイズ変更可能です   |       ![サイズ変更ハンドルを使ったプライマリ選択](../../extensibility/ux-guidelines/media/0713-11-primaryresize.png "0713 11_PrimaryResize")        |
 |  **プライマリ選択**  | サイズを変更しません。 |    ![プライマリ選択せずにサイズ変更ハンドル](../../extensibility/ux-guidelines/media/0713-13-primarynoresize.png "0713 13_PrimaryNoResize")    |
-|  **プライマリ選択**  |    ロックされています     |              ![ロックされたプライマリ選択](../../extensibility/ux-guidelines/media/0713-15-primarylocked.png "0713 15_PrimaryLocked")              |
+|  **プライマリ選択**  |    Locked (ロック)     |              ![ロックされたプライマリ選択](../../extensibility/ux-guidelines/media/0713-15-primarylocked.png "0713 15_PrimaryLocked")              |
 | **セカンダリ選択** |   サイズ変更可能です   |    ![サイズ変更ハンドルを使ったセカンダリ選択](../../extensibility/ux-guidelines/media/0713-17-secondaryresize.png "0713 17_SecondaryResize")     |
 | **セカンダリ選択** | サイズを変更しません。 | ![セカンダリ選択せずにサイズ変更ハンドル](../../extensibility/ux-guidelines/media/0713-19-secondarynoresize.png "0713 19_SecondaryNoResize") |
-| **セカンダリ選択** |    ロックされています     |           ![ロックされたセカンダリ選択](../../extensibility/ux-guidelines/media/0713-21-secondarylocked.png "0713 21_SecondaryLocked")           |
+| **セカンダリ選択** |    Locked (ロック)     |           ![ロックされたセカンダリ選択](../../extensibility/ux-guidelines/media/0713-21-secondarylocked.png "0713 21_SecondaryLocked")           |
 |      **アクティブな UI**      |    既定値    |                       ![UI のアクティブな状態](../../extensibility/ux-guidelines/media/0713-23-uiactive.png "0713 23_UIActive")                        |
 
 ### <a name="view-selection-models"></a>選択範囲のモデルの表示

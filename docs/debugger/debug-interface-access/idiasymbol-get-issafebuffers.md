@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f5dd923b9f7244bb42fdf8defb70b8ed5dc82ed0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400097"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64825510"
 ---
 # <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 セーフ バッファーのプリプロセッサ ディレクティブを使用しているかどうかを指定するフラグを取得します。 使用する場合、 [SymTagEnum 列挙型](../../debugger/debug-interface-access/symtagenum.md)に設定されている`SymTagFunction`します。

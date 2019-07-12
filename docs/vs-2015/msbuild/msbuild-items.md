@@ -11,12 +11,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76f66d11a824a756b262460ebd4e7af78e88f766
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 19f22fc56881287cfb501143aaa4397f9a035d78
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038174"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821644"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,23 +39,23 @@ MSBuild 項目はビルド システムへの入力であり、通常はファ�
   
 - [項目メタデータ](#BKMK_ItemMetadata)  
   
-    - [プロジェクト ファイルで項目メタデータを参照する](#BKMK_ReferencingItemMetadata)  
-  
-    - [既知の項目メタデータ](#BKMK_WellKnownItemMetadata)  
-  
-    - [メタデータを使用してアイテムの種類を変換する](#BKMK_Transforming)  
+  - [プロジェクト ファイルで項目メタデータを参照する](#BKMK_ReferencingItemMetadata)  
+
+  - [既知の項目メタデータ](#BKMK_WellKnownItemMetadata)  
+
+  - [メタデータを使用してアイテムの種類を変換する](#BKMK_Transforming)  
   
 - [項目定義](#BKMK_ItemDefinitions)  
   
 - [Target の ItemGroup の項目の属性](#BKMK_AttributesWithinTargets)  
   
-    - [Remove 属性](#BKMK_RemoveAttribute)  
-  
-    - [KeepMetadata 属性](#BKMK_KeepMetadata)  
-  
-    - [RemoveMetadata 属性](#BKMK_RemoveMetadata)  
-  
-    - [KeepDuplicates 属性](#BKMK_KeepDuplicates)  
+  - [Remove 属性](#BKMK_RemoveAttribute)  
+
+  - [KeepMetadata 属性](#BKMK_KeepMetadata)  
+
+  - [RemoveMetadata 属性](#BKMK_RemoveMetadata)  
+
+  - [KeepDuplicates 属性](#BKMK_KeepDuplicates)  
   
 ## <a name="BKMK_Creating1"></a> プロジェクト ファイルに項目を作成する  
  プロジェクト ファイル内で、[ItemGroup](../msbuild/itemgroup-element-msbuild.md) 要素の子要素として項目を宣言します。 子要素の名前は、アイテムの種類です。 要素の `Include` 属性は、そのアイテムの種類に組み込まれる項目 (ファイル) を指定します。 たとえば、次の XML では、`Compile` という名前のアイテムの種類を作成し、2 つのファイルを含めています。  

@@ -8,12 +8,12 @@ ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a7899fbd34d0f63b21fb13e224f2856a4dc74cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f570d665ddbc97ccddf058e1bb424c62e23912cb
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065169"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825284"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Visual Studio のインタラクション パターン
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ ms.locfileid: "60065169"
 
 - [Visual Studio のアプリケーション パターン](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)
 
-    - [ウィンドウの相互作用](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)
+  - [ウィンドウの相互作用](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)
 
-    - [ツール ウィンドウ](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
+  - [ツール ウィンドウ](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
 
-    - [ドキュメント エディターの表記規則](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)
+  - [ドキュメント エディターの表記規則](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)
 
-    - [ダイアログ](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)
+  - [ダイアログ](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)
 
-    - [プロジェクト](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Projects)
+  - [プロジェクト](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Projects)
 
 ## <a name="common-control-patterns"></a>コモン コントロール パターン
  コントロール パターンは、主に動作する個別のコントロールの概要が必要です。 これは、一貫性の最も重要な領域の 1 つです。
@@ -57,11 +57,11 @@ ms.locfileid: "60065169"
 
 - [Visual Studio の コモン コントロール パターン](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)
 
-    - [コモン コントロール](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CommonControls)
+  - [コモン コントロール](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CommonControls)
 
-    - [テキスト コントロール](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
+  - [テキスト コントロール](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
 
-    - [ボタンやハイパーリンク](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
+  - [ボタンやハイパーリンク](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
 
 ## <a name="composite-patterns"></a>コンポジット パターン
  さまざまなユーザー タスクを実行することを期待する方法があります。 可能な限り、これらのパターンは、相互作用とビジュアル デザインの両方を使用する機能を設計する必要があります。
@@ -70,10 +70,10 @@ ms.locfileid: "60065169"
 
 - [Visual Studio の複合パターン](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md)
 
-    - [オブジェクトの UI とピークします。](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
+  - [オブジェクトの UI とピークします。](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
 
-    - [モデルの選択](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
+  - [モデルの選択](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
 
-    - [永続化と設定の保存](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
+  - [永続化と設定の保存](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
 
-    - [タッチ入力](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
+  - [タッチ入力](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
