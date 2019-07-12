@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 392a0157522f5baa8e8736d52c940b31c0a44cde
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324894"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826029"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>方法: Visual Studio 2017 と Visual Studio 2015 と互換性のある拡張機能を作成します。
 
@@ -57,8 +57,8 @@ VSIX をラウンドトリップするためにこのドキュメントで実行
 * 内の参照をメモに取ります*project.json*します。
 * **ソリューション エクスプ ローラー**、削除、 *project.json*プロジェクトからのファイル。 これにより、削除、 *project.json*ファイルを開き、プロジェクトから削除されます。
 * NuGet 参照をプロジェクトに再度追加します。
-    * 右クリックし、**ソリューション**選択**ソリューションの NuGet パッケージの管理**します。
-    * Visual Studio が自動的に作成、 *packages.config*ファイル。
+  * 右クリックし、**ソリューション**選択**ソリューションの NuGet パッケージの管理**します。
+  * Visual Studio が自動的に作成、 *packages.config*ファイル。
 
 > [!NOTE]
 > プロジェクトに EnvDTE パッケージが含まれている場合は、右クリックして追加する必要がある**参照**選択**参照の追加**適切な参照を追加するとします。 NuGet パッケージを使用すると、プロジェクトのビルドを試みたときにエラーが発生する可能性があります。
@@ -82,9 +82,9 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 ## <a name="update-extension-manifest"></a>拡張機能マニフェストを更新します。
 
-### <a name="1-installation-targets"></a>1.インストールの対象
+### <a name="1-installation-targets"></a>1. インストールの対象
 
-VSIX をビルドする対象のバージョンを Visual Studio に指示する必要があります。 通常、これらの参照は、バージョン 14.0 (Visual Studio 2015)、バージョン 15.0 (Visual Studio 2017) またはバージョン 16.0 (Visual Studio 2019) のいずれかです。 ここでは、両方に対応する拡張機能をインストールする VSIX をビルドしたいので、両方のバージョンを対象にする必要があります。 14\.0 より前のバージョンで VSIX をビルドおよびインストールしたい場合は、前のバージョン番号を設定すれば可能です。ただし、10.0 以前のバージョンはサポートされていません。
+VSIX をビルドする対象のバージョンを Visual Studio に指示する必要があります。 通常、これらの参照は、バージョン 14.0 (Visual Studio 2015)、バージョン 15.0 (Visual Studio 2017) またはバージョン 16.0 (Visual Studio 2019) のいずれかです。 ここでは、両方に対応する拡張機能をインストールする VSIX をビルドしたいので、両方のバージョンを対象にする必要があります。 14.0 より前のバージョンで VSIX をビルドおよびインストールしたい場合は、前のバージョン番号を設定すれば可能です。ただし、10.0 以前のバージョンはサポートされていません。
 
 * 開く、 *source.extension.vsixmanifest* Visual Studio でのファイル。
 * **[Install Targets]\(インストールの対象)\** タブを開きます。
@@ -93,7 +93,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 ![インストールの対象の画像](media/visual-studio-installation-targets-example.png)
 
-### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2.必須コンポーネントを追加、 *extension.vsixmanifest*ファイル
+### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. 必須コンポーネントを追加、 *extension.vsixmanifest*ファイル
 
 前提条件として、Visual Studio コア エディターが必要です。 Visual Studio を開き、更新されたマニフェスト デザイナーを使用して、前提条件を挿入します。
 
@@ -125,7 +125,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 * プロジェクト ディレクトリに移動します**ファイル エクスプ ローラー**します。
 * 開く、 *myproject.csproj*ファイルをテキスト エディターでします。
 
-### <a name="1-update-the-minimumvisualstudioversion"></a>1.MinimumVisualStudioVersion を更新する
+### <a name="1-update-the-minimumvisualstudioversion"></a>1. MinimumVisualStudioVersion を更新する
 
 * Visual Studio の最小バージョンを `$(VisualStudioVersion)` に設定し、その条件付きステートメントを追加します。 以下のタグが存在しない場合は、追加します。 タグが次のように設定されていることを確認してください。
 
@@ -134,7 +134,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 <MinimumVisualStudioVersion>$(VisualStudioVersion)</MinimumVisualStudioVersion>
 ```
 
-### <a name="2-add-the-vsixtype-property"></a>2.VsixType プロパティを追加します。
+### <a name="2-add-the-vsixtype-property"></a>2. VsixType プロパティを追加します。
 
 * プロパティ グループに次のタグ `<VsixType>v3</VsixType>` を追加します。
 
@@ -161,7 +161,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 <StartArguments>/rootsuffix Exp</StartArguments>
 ```
 
-### <a name="4-add-conditions-to-the-build-tools-imports"></a>4.ビルド ツールのインポートに条件を追加する
+### <a name="4-add-conditions-to-the-build-tools-imports"></a>4。ビルド ツールのインポートに条件を追加する
 
 * Microsoft.VSSDK.BuildTools 参照を含んでいる `<import>` タグに、その他の条件付きステートメントを追加します。 挿入`'$(VisualStudioVersion)' != '14.0' And`条件文の先頭にあります。 これらのステートメントは、csproj ファイルのヘッダーとフッターに表示されます。
 
@@ -173,7 +173,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VisualStudio.Sdk.BuildTasks.14.0 を含んでいる `<import>` タグに、その他の条件付きステートメントを追加します。 挿入`'$(VisualStudioVersion)' == '14.0' And`条件文の先頭にあります。 これらのステートメントは、csproj ファイルのヘッダーとフッターに表示されます。
 
-例:
+例えば:
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
@@ -189,7 +189,7 @@ VSIX をビルドする対象のバージョンを Visual Studio に指示する
 
 * Microsoft.VisualStudio.Sdk.BuildTasks.14.0 を含んでいる `<Error>` タグに、その他の条件付きステートメントを追加します。 挿入`'$(VisualStudioVersion)' == '14.0' And`条件文の先頭にあります。 これらのステートメントは、csproj ファイルのフッターに表示されます。
 
-例:
+例えば:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />

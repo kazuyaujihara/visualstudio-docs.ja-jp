@@ -11,12 +11,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9a8c6d236f9f11f53e79e4239868815c7bbe9137
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e6b00aa746b613d9eff90b9c91c029b100775cf2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436932"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821729"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 拡張機能スキーマ 2.0 リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +46,14 @@ VSIX の配置マニフェスト ファイルでは、VSIX パッケージの内
  このセクションでは、パッケージ、その id、および情報のアドバタイズに関するメタデータです。 `<Metadata>` 次の要素が含まれます。  
   
 - `<Identity>` -これは、このパッケージの id 情報を定義し、次の属性が含まれています。  
-  
-    - `Id` – この属性は、その作成者によって選択されたパッケージの一意の ID である必要があります。 名前には、CLR 型は名前空間内と同じ方法を修飾する必要があります。Company.Product.Feature.Name します。 `Id`属性は 100 文字に制限されます。  
-  
-    - `Version` – これは、このパッケージとそのコンテンツのバージョンを定義します。 この属性は、CLR アセンブリのバージョン管理形式を次に示します。Major.Minor.Build.Revision (1.2.40308.00)。 高いバージョン番号を使用してパッケージを使用して、パッケージに更新プログラムを見なされ、既存のインストールされているバージョンをインストールできます。  
-  
-    - `Language` – この属性は、パッケージの既定の言語であり、このマニフェスト内のテキスト形式のデータに対応しています。 この属性は規則に従って CLR ロケール コード、リソース アセンブリの例: en、米国、en、fr。 指定できます`neutral`はどのバージョンの Visual Studio で実行される言語に依存しない拡張機能を宣言します。 既定値は `neutral` です。  
-  
-    - `Publisher` – この属性は、会社または個別の名前は、このパッケージの発行元を識別します。 `Publisher`属性は 100 文字に制限されます。  
+
+  - `Id` – この属性は、その作成者によって選択されたパッケージの一意の ID である必要があります。 名前には、CLR 型は名前空間内と同じ方法を修飾する必要があります。Company.Product.Feature.Name します。 `Id`属性は 100 文字に制限されます。  
+
+  - `Version` – これは、このパッケージとそのコンテンツのバージョンを定義します。 この属性は、CLR アセンブリのバージョン管理形式を次に示します。Major.Minor.Build.Revision (1.2.40308.00)。 高いバージョン番号を使用してパッケージを使用して、パッケージに更新プログラムを見なされ、既存のインストールされているバージョンをインストールできます。  
+
+  - `Language` – この属性は、パッケージの既定の言語であり、このマニフェスト内のテキスト形式のデータに対応しています。 この属性は規則に従って CLR ロケール コード、リソース アセンブリの例: en、米国、en、fr。 指定できます`neutral`はどのバージョンの Visual Studio で実行される言語に依存しない拡張機能を宣言します。 既定値は `neutral` です。  
+
+  - `Publisher` – この属性は、会社または個別の名前は、このパッケージの発行元を識別します。 `Publisher`属性は 100 文字に制限されます。  
   
 - `<DisplayName>` -この要素は、拡張機能マネージャーの UI に表示されるわかりやすいパッケージ名を指定します。 `DisplayName`コンテンツは 100 文字に制限されます。  
   
@@ -81,10 +81,10 @@ VSIX の配置マニフェスト ファイルでは、VSIX パッケージの内
 - `Experimental` – この属性があるすべてのユーザーの現在インストールされている拡張機能が、同じコンピューターに更新されたバージョンを開発している場合は true に設定します。 たとえば、すべてのユーザー、MyExtension 1.0 をインストールしたが、MyExtension 2.0 を同じコンピューターでデバッグ、試験段階を設定する場合は、"true"=。 この属性は、Visual Studio 2015 Update 1 で使用できる以降です。  
   
 - `Scope` – この属性は、「グローバル」または"ProductExtension"の値を実行できます。  
-  
-    - 「グローバル」では、インストールは、特定の SKU にスコープでないことを指定します。 たとえば、この値は、拡張機能 SDK がインストールされている場合に使用されます。  
-  
-    - "ProductExtension"では、従来 VSIX 拡張機能 (バージョン 1.0) を個別の Visual Studio Sku にスコープがインストールされていることを指定します。 これは既定値です。  
+
+  - 「グローバル」では、インストールは、特定の SKU にスコープでないことを指定します。 たとえば、この値は、拡張機能 SDK がインストールされている場合に使用されます。  
+
+  - "ProductExtension"では、従来 VSIX 拡張機能 (バージョン 1.0) を個別の Visual Studio Sku にスコープがインストールされていることを指定します。 これが既定値です。  
   
 - `AllUsers` – このオプションの属性は、このパッケージをすべてのユーザーに対してインストールするかどうかを指定します。 既定では、この属性が false の場合、ユーザーごと、パッケージは、これを指定します。 (この値を true に設定すると、インストールするユーザー必要がありますに昇格させる結果の VSIX をインストールする管理者の特権レベル。  
   
@@ -96,67 +96,67 @@ VSIX の配置マニフェスト ファイルでは、VSIX パッケージの内
   
 - `<InstallationTarget>` この要素は、VSIX インストーラーが、パッケージをインストールする場所を制御します。 場合の値、`Scope`属性が"ProductExtension"パッケージの拡張機能の可用性を提供するには、その内容の一部としてマニフェスト ファイルがインストールされている SKU をターゲットする必要があります。 `<InstallationTarget>`要素には、次属性の場合に、`Scope`属性が、明示的な既定値"ProductExtension"。  
   
-    - `Id` – この属性は、パッケージを識別します。  属性は、名前空間の規則を次に示します。Company.Product.Feature.Name します。 `Id`属性は、英数字のみを含めることができ、100 文字に制限されます。 予期される値:  
-  
-        - Microsoft.VisualStudio.IntegratedShell  
-  
-        - Microsoft.VisualStudio.Pro  
-  
-        - Microsoft.VisualStudio.Premium  
-  
-        - Microsoft.VisualStudio.Ultimate  
-  
-        - Microsoft.VisualStudio.VWDExpress  
-  
-        - Microsoft.VisualStudio.VPDExpress  
-  
-        - Microsoft.VisualStudio.VSWinExpress  
-  
-        - Microsoft.VisualStudio.VSLS  
-  
-        - My.Shell.App  
-  
-    - `Version` – この属性は、この SKU の最小値と最大のサポート対象バージョンのバージョンの範囲を指定します。 パッケージは、サポートされている Sku のバージョンについて詳しく説明ことができます。 バージョン範囲表記法が 10.0 – 11.0 が、  
-  
-        - [– 包括的な最小バージョン。  
-  
-        - – 包括最大バージョン。  
-  
-        - (の排他的な最小バージョン。  
-  
-        - ) – 排他最大バージョン。  
-  
-        - 1 つのバージョンと、指定されたバージョンのみ。  
-  
-        > [!IMPORTANT]
-        > VSIX スキーマのバージョン 2.0 は、Visual Studio 2012 で導入されました。 このスキーマを使用するには、Visual Studio 2012 が必要か、後でコンピューターにインストールされたを使用する VSIXInstaller.exe その製品の一部であります。 Visual Studio 2012 またはそれ以降の VSIXInstaller がインストーラーの以降のバージョンを使用してのみ、Visual Studio の以前のバージョンを対象にすることができます。  
-  
-    - `AnyAttribute*` –`<InstallationTarget>`要素により、制約のない一連の属性の名前と値のペアのディクショナリとしての実行時に公開します。  
-  
+  - `Id` – この属性は、パッケージを識別します。  属性は、名前空間の規則を次に示します。Company.Product.Feature.Name します。 `Id`属性は、英数字のみを含めることができ、100 文字に制限されます。 予期される値:  
+
+    - Microsoft.VisualStudio.IntegratedShell  
+
+    - Microsoft.VisualStudio.Pro  
+
+    - Microsoft.VisualStudio.Premium  
+
+    - Microsoft.VisualStudio.Ultimate  
+
+    - Microsoft.VisualStudio.VWDExpress  
+
+    - Microsoft.VisualStudio.VPDExpress  
+
+    - Microsoft.VisualStudio.VSWinExpress  
+
+    - Microsoft.VisualStudio.VSLS  
+
+    - My.Shell.App  
+
+  - `Version` – この属性は、この SKU の最小値と最大のサポート対象バージョンのバージョンの範囲を指定します。 パッケージは、サポートされている Sku のバージョンについて詳しく説明ことができます。 バージョン範囲表記法が 10.0 – 11.0 が、  
+
+    - [– 包括的な最小バージョン。  
+
+    - – 包括最大バージョン。  
+
+    - (の排他的な最小バージョン。  
+
+    - ) – 排他最大バージョン。  
+
+    - 1 つのバージョンと、指定されたバージョンのみ。  
+
+    > [!IMPORTANT]
+    > VSIX スキーマのバージョン 2.0 は、Visual Studio 2012 で導入されました。 このスキーマを使用するには、Visual Studio 2012 が必要か、後でコンピューターにインストールされたを使用する VSIXInstaller.exe その製品の一部であります。 Visual Studio 2012 またはそれ以降の VSIXInstaller がインストーラーの以降のバージョンを使用してのみ、Visual Studio の以前のバージョンを対象にすることができます。  
+
+  - `AnyAttribute*` –`<InstallationTarget>`要素により、制約のない一連の属性の名前と値のペアのディクショナリとしての実行時に公開します。  
+
 ### <a name="dependencies-element"></a>依存関係要素  
  この要素には、このパッケージを宣言する依存関係の一覧が含まれています。 すべての依存関係を指定すると場合、それらのパッケージ (で識別される、 `Id`) する必要がある前にインストールされています。  
   
 - `<Dependency>` 要素 – この子要素では、次の属性があります。  
   
-    - `Id` – この属性は、依存パッケージの一意の ID を指定する必要があります。 この id 値に一致する必要があります、`<Metadata><Identity>Id`このパッケージが依存するパッケージの属性です。 `Id`属性が名前空間の規則に従います。Company.Product.Feature.Name します。 この属性は、英数字のみを含めることができ、100 文字に制限されています。  
-  
-    - `Version` – この属性は、この SKU の最小値と最大のサポート対象バージョンのバージョンの範囲を指定します。 パッケージは、サポートされている Sku のバージョンについて詳しく説明ことができます。 バージョン範囲の表記は、[12.0, 13.0]、場所。  
-  
-        - [– 包括的な最小バージョン。  
-  
-        - – 包括最大バージョン。  
-  
-        - (の排他的な最小バージョン。  
-  
-        - ) – 排他最大バージョン。  
-  
-        - 1 つのバージョンと、指定されたバージョンのみ。  
-  
-    - `DisplayName` -この属性は、ダイアログ ボックスとエラー メッセージなどの UI 要素で使用されている依存パッケージの表示名です。 MSI によって依存パッケージがインストールされていない場合、属性は省略可能です。  
-  
-    - `Location` – このオプションの属性は、入れ子になった VSIX パッケージには、この VSIX 内の相対パスまたは依存関係をダウンロードする場所への URL のいずれかを指定します。 この属性は、ユーザーの前提条件となるパッケージを探しやすくために使用されます。  
-  
-    - `AnyAttribute*` –`Dependency`要素は、制約のない一連の名前と値のペアのディクショナリとしての実行時に公開される属性を受け入れます。  
+  - `Id` – この属性は、依存パッケージの一意の ID を指定する必要があります。 この id 値に一致する必要があります、`<Metadata><Identity>Id`このパッケージが依存するパッケージの属性です。 `Id`属性が名前空間の規則に従います。Company.Product.Feature.Name します。 この属性は、英数字のみを含めることができ、100 文字に制限されています。  
+
+  - `Version` – この属性は、この SKU の最小値と最大のサポート対象バージョンのバージョンの範囲を指定します。 パッケージは、サポートされている Sku のバージョンについて詳しく説明ことができます。 バージョン範囲の表記は、[12.0, 13.0]、場所。  
+
+    - [– 包括的な最小バージョン。  
+
+    - – 包括最大バージョン。  
+
+    - (の排他的な最小バージョン。  
+
+    - ) – 排他最大バージョン。  
+
+    - 1 つのバージョンと、指定されたバージョンのみ。  
+
+  - `DisplayName` -この属性は、ダイアログ ボックスとエラー メッセージなどの UI 要素で使用されている依存パッケージの表示名です。 MSI によって依存パッケージがインストールされていない場合、属性は省略可能です。  
+
+  - `Location` – このオプションの属性は、入れ子になった VSIX パッケージには、この VSIX 内の相対パスまたは依存関係をダウンロードする場所への URL のいずれかを指定します。 この属性は、ユーザーの前提条件となるパッケージを探しやすくために使用されます。  
+
+  - `AnyAttribute*` –`Dependency`要素は、制約のない一連の名前と値のペアのディクショナリとしての実行時に公開される属性を受け入れます。  
   
 ### <a name="assets-element"></a>資産要素  
  この要素の一覧を含む`<Asset>`このパッケージによって各拡張機能またはコンテンツの要素のタグが表示されます。  

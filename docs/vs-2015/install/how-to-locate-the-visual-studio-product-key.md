@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2223ab7dfbf37a0be1c9600065ddaad8ea4dfd19
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0210f66bcfeaad8143ac4eee78b7b086c36eb164
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098729"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823217"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>方法: Visual Studio プロダクト キーを検索する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "60098729"
 
 - 以下のいずれかの場所でプロダクト キーを探します。
 
-    - インストール メディア (該当する場合)。
+  - インストール メディア (該当する場合)。
 
-    - [My.VisualStudio.com](https://my.visualstudio.com/productkeys) Web サイト。
+  - [My.VisualStudio.com](https://my.visualstudio.com/productkeys) Web サイト。
 
-    - ソフトウェアを購入したベンダーから提供されるドキュメント類
+  - ソフトウェアを購入したベンダーから提供されるドキュメント類
 
 ## <a name="see-also"></a>関連項目
  [方法: 評価版の Visual Studio からアップグレードする](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [Visual Studio のインストール](../install/install-visual-studio-2015.md) [Visual Studio と MSDN のライセンス ホワイト ペーパー](http://go.microsoft.com/fwlink/?LinkId=191417)

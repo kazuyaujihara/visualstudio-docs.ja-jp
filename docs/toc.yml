@@ -16,15 +16,6 @@
   items:
     - name: Visual Studio のインストール
       href: install/install-visual-studio.md
-    - name: 個人アカウント
-      items:
-        - name: Visual Studio にサインイン
-          displayName: personalization accounts
-          href: ide/signing-in-to-visual-studio.md
-        - name: 複数のユーザー アカウントを使って作業する
-          href: ide/work-with-multiple-user-accounts.md
-        - name: 試用版を延長する、またはライセンスを更新する
-          href: ide/how-to-unlock-visual-studio.md
     - name: オフラインでのインストール
       items:
         - name: Visual Studio のオフライン インストールを作成する
@@ -61,8 +52,6 @@
           items:
             - name: Visual Studio のネットワーク ベース インストールを作成する
               href: install/create-a-network-installation-of-visual-studio.md
-            - name: Visual Studio のネットワーク ベース インストールを更新する
-              href: install/update-a-network-installation-of-visual-studio.md
             - name: ネットワークに関する考慮事項
               items:
                 - name: ファイアウォールまたはプロキシ サーバーの内側に Visual Studio をインストールして使用する
@@ -77,29 +66,33 @@
               href: install/automatically-apply-product-keys-when-deploying-visual-studio.md
             - name: Visual Studio のエンタープライズ展開に既定値を設定する
               href: install/set-defaults-for-enterprise-deployments.md
-            - name: パッケージ キャッシュの無効化または移動
-              href: install/disable-or-move-the-package-cache.md
-            - name: Visual Studio 配置の更新プログラムを制御する
-              href: install/controlling-updates-to-visual-studio-deployments.md
-            - name: サービス ベースライン使用時の Visual Studio の更新
-              href: install/update-servicing-baseline.md
-        - name: インストールを管理する
+            - name: ヘルプ ビューアーを展開する
+              items:
+                - name: ヘルプ ビューアー の管理者ガイド
+                  href: help-viewer/administrator-guide.md
+                - name: ヘルプ コンテンツ マネージャーのコマンド ライン引数
+                  href: help-viewer/command-line-arguments.md
+                - name: ヘルプ コンテンツ マネージャーのオーバーライド
+                  href: help-viewer/behavior-overrides.md
+        - name: インストールの管理と更新
           items:
             - name: Visual Studio インスタンスの検出および管理用のツール
               href: install/tools-for-managing-visual-studio-instances.md
+            - name: Visual Studio のネットワーク ベース インストールを更新する
+              href: install/update-a-network-installation-of-visual-studio.md
+            - name: サービス ベースライン使用時の Visual Studio の更新
+              href: install/update-servicing-baseline.md
+            - name: Visual Studio 配置の更新プログラムを制御する
+              href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: パッケージ ペイロードの変更の管理
+              href: install/changed-payloads.md
+            - name: パッケージ キャッシュの無効化または移動
+              href: install/disable-or-move-the-package-cache.md
         - name: サブスクリプションを管理する
           items:
             - name: 'Visual Studio サブスクリプション: 管理者の概要'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: ヘルプ ビューアーを展開する
-          items:
-            - name: ヘルプ ビューアー の管理者ガイド
-              href: help-viewer/administrator-guide.md
-            - name: ヘルプ コンテンツ マネージャーのコマンド ライン引数
-              href: help-viewer/command-line-arguments.md
-            - name: ヘルプ コンテンツ マネージャーのオーバーライド
-              href: help-viewer/behavior-overrides.md
-        - name: 参照
+        - name: 関連項目
           items:
             - name: Visual Studio のワークロードとコンポーネント ID
               items:
@@ -126,8 +119,6 @@
                   href: install/workload-component-id-vs-test-professional.md
                 - name: Visual Studio Feedback Client
                   href: install/workload-component-id-vs-feedback-client.md
-            - name: パッケージ ペイロードの変更
-              href: install/changed-payloads.md
             - name: Visual Studio のビルド番号とリリース日
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Azure 仮想マシンから Visual Studio を使用する
@@ -718,6 +709,15 @@
           displayName: 'marketplace, gallery, vsix'
         - name: 外部ツールの管理
           href: ide/managing-external-tools.md
+        - name: 個人アカウント
+          items:
+            - name: Visual Studio にサインイン
+              displayName: personalization accounts
+              href: ide/signing-in-to-visual-studio.md
+            - name: 複数のユーザー アカウントを使って作業する
+              href: ide/work-with-multiple-user-accounts.md
+            - name: 試用版を延長する、またはライセンスを更新する
+              href: ide/how-to-unlock-visual-studio.md
     - name: Visual Studio のパフォーマンス
       items:
         - name: パフォーマンスの最適化

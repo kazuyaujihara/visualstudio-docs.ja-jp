@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 446e6eb6231ff4d744f22bd3d1ba4fa6dcca6525
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442977"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823183"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>UML モデルおよびダイアグラムの編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ UML モデルは、いくつかの異なる種類の図によって提供され�
   
      \- または -  
   
-- **アーキテクチャ デザイナー**ツールバーで、プラス記号をクリックします (**+**) 記号またはマイナス記号 (**-**)、またはズーム レベルを選択します。  
+- **アーキテクチャ デザイナー**ツールバーで、プラス記号をクリックします ( **+** ) 記号またはマイナス記号 ( **-** )、またはズーム レベルを選択します。  
   
 ## <a name="Searching"></a> 図での検索  
  図のアイテムを検索するには、クイック検索機能を使用します。 設定する必要があります**ファイルの場所:** に**現在のドキュメント**します。  
@@ -294,9 +294,9 @@ UML モデルは、いくつかの異なる種類の図によって提供され�
   
 - いずれかの要素を右クリックしてで**UML モデル エクスプ ローラー**またはクリックして、ダイアグラム**モデルから削除**します。  
   
-    - 要素は、表示されていたすべての図から削除されます。  
-  
-    - この要素に接続されている関係もすべてモデルから削除されます。  
+  - 要素は、表示されていたすべての図から削除されます。  
+
+  - この要素に接続されている関係もすべてモデルから削除されます。  
   
 #### <a name="to-delete-a-relationship-from-the-model"></a>モデルから関係を削除するには  
   

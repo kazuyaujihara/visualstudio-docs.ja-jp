@@ -12,20 +12,20 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fbb2f118d903eae2124e705f14c7aa7b51bf9c4d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403259"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821836"
 ---
-# <a name="accessing-stored-font-and-color-settings"></a>ストアドのフォントと色の設定にアクセスします。
+# <a name="accessing-stored-font-and-color-settings"></a>格納されたフォントと色の設定へのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]統合開発環境 (IDE) フォントの変更された設定を格納し、レジストリの色します。 使用することができます、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>これらの設定にアクセスするインターフェイス。  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>フォントおよび色の状態の永続化を開始するには  
- 次のレジストリの場所にカテゴリ別のフォントと色の情報が格納されます [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio のバージョン >* \FontAndColors\\ 。*\<CategoryGUID >*] ここで、  *\<CategoryGUID >* カテゴリの GUID です。  
+ 次のレジストリの場所にカテゴリ別のフォントと色の情報が格納されます [HKCU\SOFTWARE\Microsoft \Visual Studio\\ *\<Visual Studio のバージョン >* \FontAndColors\\ 。 *\<CategoryGUID >* ] ここで、  *\<CategoryGUID >* カテゴリの GUID です。  
   
  そのため、永続化を開始するには、VSPackage が必要です。  
   
@@ -35,16 +35,16 @@ ms.locfileid: "63403259"
   
 - 使用して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>メソッドを引数として、カテゴリの GUID とモード フラグを使用して永続化するカテゴリを開きます。  
   
-     指定したモード、`fFlags`引数が値から構築された、<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>列挙体。 このモードを制御します。  
-  
-    - 経由でアクセスできる設定、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。  
-  
-    - すべての設定またはだけを使用して取得するユーザーを変更して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。  
-  
-    - ユーザー設定に変更を反映する方法。  
-  
-    - 使用される色の値の形式です。  
-  
+  指定したモード、`fFlags`引数が値から構築された、<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>列挙体。 このモードを制御します。  
+
+  - 経由でアクセスできる設定、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。  
+
+  - すべての設定またはだけを使用して取得するユーザーを変更して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>インターフェイス。  
+
+  - ユーザー設定に変更を反映する方法。  
+
+  - 使用される色の値の形式です。  
+
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>フォントおよび色の状態の永続化を使用するには  
  永続化するフォントと色が含まれます。  
   

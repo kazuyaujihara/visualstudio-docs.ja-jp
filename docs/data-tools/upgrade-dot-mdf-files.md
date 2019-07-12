@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 334898fe9bb6ec5a7dcd84e081f99994e18ccb89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2b6029002e62f5b13f5fc40bc24f817364c148
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565161"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821663"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf ファイルのアップグレード
 
@@ -95,9 +95,9 @@ SQL Server Express LocalDB を使用して、接続のショートカット メ�
 
 - Visual Studio では、アップグレードしなくても、プロジェクトを開きます。
 
-    - プロジェクトを実行するには、選択、 **F5**キー。
+  - プロジェクトを実行するには、選択、 **F5**キー。
 
-    - データベースを編集するには、開く、 *.mdf*ファイル**ソリューション エクスプ ローラー**でノードを展開および**サーバー エクスプ ローラー**データベースを使用します。
+  - データベースを編集するには、開く、 *.mdf*ファイル**ソリューション エクスプ ローラー**でノードを展開および**サーバー エクスプ ローラー**データベースを使用します。
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>既定のデータベース エンジンを SQL Server Express を作成するには
 
