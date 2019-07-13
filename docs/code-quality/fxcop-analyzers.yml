@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: FxCop コード分析から .NET コンパイラ プラットフォームのアナライザーへの移行します。
+title: バイナリ分析 (FxCop) からソースの分析 (FxCop アナライザー) への移行します。
 metadata:
   title: FxCop の移行に関するドキュメント
-  description: コード分析のアナライザーをレガシ FxCop から移行する方法について説明します。
-  ms.date: 07/18/2018
+  description: 従来のバイナリ分析 (FxCop) からソース分析 (FxCop アナライザー) の場合に移動する方法について説明しますコードを分析します。
+  ms.date: 07/11/2019
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
@@ -14,7 +14,7 @@ metadata:
   author: gewarren
   manager: jillfra
 abstract:
-  description: 最初のコードを分析する方法または FxCop からアナライザーを使用してマネージ コードを分析する新しい方法に移行する方法について説明します。
+  description: 最初にコードを分析する方法やバイナリ分析 (FxCop) からソースの分析 (FxCop アナライザー) を使用してマネージ コードを分析する新しい方法に移行する方法について説明します。
   aside:
     image:
       alt: 一般的な管理タスクのロゴ
@@ -25,7 +25,7 @@ abstract:
 sections:
   - title: よく寄せられる質問
     items:
-      - html: いくつかに対する回答を得ます<a href="fxcop-analyzers-faq.md">よく寄せられる質問</a>FxCop とアナライザーとの違いについて。
+      - html: いくつかに対する回答を得ます<a href="fxcop-analyzers-faq.md">よく寄せられる質問</a>バイナリ FxCop や FxCop アナライザーを使用してソースの分析との違いについて。
   - title: コード分析を初めて使用する場合.
     items:
       - type: list
@@ -53,7 +53,7 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: コマンドラインの使用状況
-  - title: 場合は、FxCop ユーザー.
+  - title: 現在、バイナリ分析 (FxCop) を使用している場合しています.
     items:
       - type: list
         style: cards
@@ -61,7 +61,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>静的 (FxCop) とアナライザーのコード分析の違いについて説明します。</p>
+            html: <p>バイナリ分析 (FxCop) とソースの分析 (FxCop アナライザー) の違いについて説明します。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: さまざまな新機能ですか。
@@ -71,7 +71,7 @@ sections:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: FxCop アナライザーのインストール
           - href: fxcop-rule-port-status.md
-            html: <p>FxCop アナライザーに移植された静的コード分析の FxCop ルールを一覧表示します。</p>
+            html: <p>ソースの分析 (FxCop アナライザー) に移植されたバイナリ分析 (FxCop) ルールを一覧表示します。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
             title: インポートおよび unported ルール

@@ -1,6 +1,6 @@
 ---
 title: 関数パラメーターおよび戻り値の注釈設定
-ms.date: 11/04/2016
+ms.date: 07/11/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -119,18 +119,21 @@ f1_keywords:
 - _Outref_result_bytebuffer_
 - _Result_nullonfailure_
 - _Ret_null_
+- _Scanf_format_string_
+- _Scanf_s_format_string_
+- _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1a33a29261a8a776ec570026fbc3ab575f712929
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388553"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852165"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>関数パラメーターおよび戻り値の注釈設定
 この記事では、単純な関数のパラメーターの注釈の一般的な用途を説明します: スカラー、および構造体とクラスへのポインター、およびほとんどの種類のバッファー。  注釈の一般的な使用パターンについても説明します。 関数に関連する追加の注釈では、次を参照してください[関数の動作に注釈を付ける。](../code-quality/annotating-function-behavior.md)
@@ -216,7 +219,7 @@ ms.locfileid: "63388553"
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     最大バッファー内に存在するすべての要素、つまり`s`前の状態が有効で、後の状態にします。  例:
+     最大バッファー内に存在するすべての要素、つまり`s`前の状態が有効で、後の状態にします。  例えば:
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -285,6 +288,7 @@ ms.locfileid: "63388553"
      Null で終わる配列へのポインター式`p`  -  `_Curr_` (つまり、`p`マイナス`_Curr_`) 適切な言語の標準によって定義されます。  前のバージョン要素`p`前の状態で有効にする必要はありませんし、後の状態で有効である必要があります。
 
 ## <a name="optional-pointer-parameters"></a>省略可能なポインター パラメーター
+
  ポインター パラメーターの注釈が含まれる場合`_opt_`パラメーターを null になることを示します。 それ以外の場合、バージョンが含まれていないと同じ実行注釈`_opt_`します。 次の一覧に示します、`_opt_`ポインター パラメーターの注釈のバリエーション。
 
 ||||
@@ -384,6 +388,7 @@ ms.locfileid: "63388553"
    返されるポインターは、関数が失敗した場合、関数が成功すると、有効なバッファーまたは null を指します。 この注釈は、参照パラメーターです。
 
 ## <a name="output-reference-parameters"></a>出力の参照パラメーター
+
  参照パラメーターの一般的な用途は、出力パラメーターです。  単純な出力参照パラメーター-たとえば、 `int&`—`_Out_`正しいセマンティクスを提供します。  ただし、出力値がポインター — たとえば`int *&`— などのポインターと同じ注釈`_Outptr_ int **`正しいセマンティクスを指定しません。  ポインター型の出力の参照パラメーターのセマンティクスを簡潔に記述するには、このような複合注釈を使用します。
 
  **注釈と説明**
@@ -445,13 +450,62 @@ ms.locfileid: "63388553"
      結果は、後の状態で有効である必要がありますが、後の状態で null にすることがあります。 有効なバッファーを指す`s`有効な要素のバイト数。
 
 ## <a name="return-values"></a>戻り値
+
  関数の戻り値に似ています、`_Out_`パラメーターが de-reference のさまざまなレベルでは、結果へのポインターの概念を考慮する必要はありません。  次の注釈では、戻り値は、注釈付きオブジェクト、スカラー、構造体へのポインター、またはバッファーへのポインター。 これらの注釈は、対応すると同じセマンティクスを持つ`_Out_`注釈。
 
 |||
 |-|-|
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
 
+## <a name="format-string-parameters"></a>形式の文字列パラメーター
+
+- `_Printf_format_string_` パラメーターがで使用するための書式指定文字列であることを示します、`printf`式。
+
+     **例**
+
+    ```cpp
+    int MyPrintF(_Printf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwprintf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_format_string_` パラメーターがで使用するための書式指定文字列であることを示します、`scanf`式。
+
+     **例**
+
+    ```cpp
+    int MyScanF(_Scanf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwscanf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_s_format_string_` パラメーターがで使用するための書式指定文字列であることを示します、`scanf_s`式。
+
+     **例**
+
+    ```cpp
+    int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
+    {
+           va_list args; 
+           va_start(args, format);
+           int ret = vwscanf_s(format, args);
+           va_end(args); 
+           return ret;
+    }
+    ```
+
 ## <a name="other-common-annotations"></a>その他の一般的な注釈
+
  **注釈と説明**
 
 - `_In_range_(low, hi)`
@@ -481,7 +535,7 @@ ms.locfileid: "63388553"
 
 - `_Struct_size_bytes_(size)`
 
-     構造体またはクラス宣言に適用されます。  指定されているバイト数でその型の有効なオブジェクトを宣言された型よりも大きいでことがあることを示します`size`します。  例:
+     構造体またはクラス宣言に適用されます。  指定されているバイト数でその型の有効なオブジェクトを宣言された型よりも大きいでことがあることを示します`size`します。  例えば:
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
@@ -490,6 +544,7 @@ ms.locfileid: "63388553"
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>関連資料
+
  [コード分析チームのブログ](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>関連項目
