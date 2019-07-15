@@ -710,6 +710,8 @@
               href: cannot-change-value-dialog-box.md
             - name: '[デバッガーは、ソース コードまたは逆アセンブリを表示できません] ダイアログ ボックス'
               href: debugger-cannot-display-source-code-or-disassembly.md
+            - name: デバッガー サービスのメモリが不足しています
+              href: error-debugger-services-no-memory.md
             - name: '[デバッグ セッションで実行可能] ダイアログ ボックス'
               href: executable-for-debugging-session-dialog-box.md
             - name: '[エディット コンティニュ] ダイアログ ボックス (C++)'
