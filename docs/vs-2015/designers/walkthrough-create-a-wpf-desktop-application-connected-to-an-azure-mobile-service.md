@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ac6e9a890c8009e493341b4bcda87f1e3e162d90
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693551"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824545"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>チュートリアル: Azure モバイル サービスに接続された WPF デスクトップ アプリケーションの作成します。
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>チュートリアル: Azure モバイル サービスに接続された WPF デスクトップ アプリケーションを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル サービスを利用してデータの格納および提供を行う、最新式のデスクトップ アプリケーションをすばやく作成することができます。  
@@ -28,9 +28,9 @@ Windows Presentation Foundation (WPF) を使用すれば、Azure モバイル �
   
 - アクティブな Microsoft Azure アカウント。  
   
-    - 無料試用版アカウントのサインアップを、 [ここ](https://azure.microsoft.com/pricing/free-trial/)で行うことができます。  
-  
-    - [MSDN サブスクライバー特典](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)をアクティブにできます。 MSDN サブスクリプションでは、有料の Azure サービスに対して使用できるクレジットが毎月ユーザーに提供されます。  
+  - 無料試用版アカウントのサインアップを、 [ここ](https://azure.microsoft.com/pricing/free-trial/)で行うことができます。  
+
+  - [MSDN サブスクライバー特典](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)をアクティブにできます。 MSDN サブスクリプションでは、有料の Azure サービスに対して使用できるクレジットが毎月ユーザーに提供されます。  
   
 ## <a name="create-a-project-and-add-references"></a>プロジェクトを作成してソース ファイルを追加する  
  最初の手順では、WPF プロジェクトを作成し、Azure Mobile Services に接続できる NuGet パッケージを追加します。  
