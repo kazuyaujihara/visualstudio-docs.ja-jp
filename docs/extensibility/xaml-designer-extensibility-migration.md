@@ -9,16 +9,16 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 52bc8a6a0097d255891f4b6111a27bff85091bec
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 4485e9a11cb4770477374deed651fbff2df6df52
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784496"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890324"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>XAML デザイナー機能拡張の移行
 
-以降では、Visual Studio 2019 バージョン 16.1 パブリック プレビューとしては、XAML デザイナーは 2 つの異なるアーキテクチャ サポートしています。 デザイナーの分離アーキテクチャと最近のサーフェス分離アーキテクチャ。 このアーキテクチャの遷移が .NET Framework のプロセスでホストできないターゲット ランタイムをサポートするために必要です。 画面の分離アーキテクチャへの移行、サード パーティ製の機能拡張モデルに重大な変更が導入されています。 この記事では、変更をします。
+Visual Studio 2019 では、XAML デザイナーは、2 つの異なるアーキテクチャをサポートしています。 デザイナーの分離アーキテクチャと最近のサーフェス分離アーキテクチャ。 このアーキテクチャの遷移が .NET Framework のプロセスでホストできないターゲット ランタイムをサポートするために必要です。 画面の分離アーキテクチャへの移行、サード パーティ製の機能拡張モデルに重大な変更が導入されています。 この記事では、Visual Studio 2019 16.2 プレビュー チャネルで使用可能なこれらの変更について説明します。
 
 **デザイナーの分離**を .NET Framework を対象とするプロジェクトの WPF デザイナーによって使用され、サポート *. design.dll*拡張機能。 ユーザー コード、コントロールのライブラリおよびサード パーティの拡張機能は、外部プロセスに読み込まれる (*XDesProc.exe*) と共に、実際のデザイナー コードとデザイナー パネル。
 
@@ -47,7 +47,7 @@ ms.locfileid: "67784496"
 
 画面の分離の機能拡張モデルでは、実際のコントロールのライブラリに依存する拡張機能が許可されていませんし、そのため、拡張機能は、コントロール ライブラリからの型を参照できません。 たとえば、 *MyLibrary.designtools.dll*依存関係のない*MyLibrary.dll*します。
 
-属性テーブルを使用して型のメタデータを登録するときに、このような依存関係が最も一般的なでした。 コントロール ライブラリを参照する拡張機能コードの種類が経由で直接[typeof](/dotnet/csharp/language-reference/keywords/typeof) ([GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) Visual Basic で) 文字列ベースの型名を使用して、新しい Api で置き換えられます。
+属性テーブルを使用して型のメタデータを登録するときに、このような依存関係が最も一般的なでした。 コントロール ライブラリを参照する拡張機能コードの種類が経由で直接[typeof](/dotnet/csharp/language-reference/keywords/typeof)または[GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator)文字列ベースの型名を使用して、新しい Api で置き換えられます。
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -62,7 +62,7 @@ public class AttributeTableProvider : IProvideAttributeTable
   {
     get
     {
-      AttributeTableBuilder builder = new AttributeTableBuilder();
+      var builder = new AttributeTableBuilder();
       builder.AddCustomAttributes("MyLibrary.MyControl", new DescriptionAttribute(Strings.MyControlDescription);
       builder.AddCustomAttributes("MyLibrary.MyControl", new FeatureAttribute(typeof(MyControlDefaultInitializer));
       return builder.CreateTable();
@@ -96,6 +96,14 @@ End Class
 
 機能プロバイダーは拡張機能アセンブリで実装され、Visual Studio のプロセスに読み込まれます。 `FeatureAttribute` 機能プロバイダーの種類を使用して直接の参照は引き続き[typeof](/dotnet/csharp/language-reference/keywords/typeof)します。
 
+現時点では、次の機能のプロバイダーがサポートされています。
+
+* `DefaultInitializer`
+* `AdornerProvider`
+* `ContextMenuProvider`
+* `ParentAdapter`
+* `PlacementAdapter`
+
 機能プロバイダーは、実際の実行時のコードとコントロールのライブラリから別のプロセスに読み込まれるようになりました、ためランタイム オブジェクトに直接アクセスすることはなくなりました。 代わりに、このようなすべての対話は、対応するモデルに基づく Api を使用して変換する必要があります。 モデルの API が更新されたら、およびへのアクセス<xref:System.Type>または<xref:System.Object>いずれかが使用できなくに置き換えられましたまたは`TypeIdentifier`と`TypeDefinition`。
 
 `TypeIdentifier` アセンブリ名、種類を識別することがなく、文字列を表します。 A`TypeIdenfifier`に解決できる、`TypeDefinition`型に関する追加情報をクエリします。 `TypeDefinition` 拡張機能のコードでは、インスタンスをキャッシュできません。
@@ -105,7 +113,7 @@ TypeDefinition type = ModelFactory.ResolveType(
     item.Context, new TypeIdentifier("MyLibrary.MyControl"));
 TypeDefinition buttonType = ModelFactory.ResolveType(
     item.Context, new TypeIdentifier("System.Windows.Controls.Button"));
-if (type != null && buttonType != type.IsSubclassOf(buttonType))
+if (type?.IsSubclassOf(buttonType) == true)
 {
 }
 ```
@@ -203,6 +211,8 @@ Public Class MyControlDefaultInitializer
     End Sub
 End Class
 ```
+
+複数のコード サンプルは、 [xaml デザイナー機能拡張サンプル](https://github.com/microsoft/xaml-designer-extensibility-samples)リポジトリ。
 
 ## <a name="limited-support-for-designdll-extensions"></a>制限付きサポート design.dll 拡張機能。
 
