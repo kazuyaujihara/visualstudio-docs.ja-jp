@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161547"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Windows ファイアウォールをリモート デバッグ用に構成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "60103304"
   
 4. **[Visual Studio リモート デバッガー探索]** が一覧に表示されていない場合は **[別のアプリの許可]** をクリックします。 まだ表示されない場合で、**アプリの追加**ウィンドウで、をクリックして**参照**に移動します **\<Visual Studio インストール ディレクトリ > \Common7\IDE\Remote Debugger**. アプリケーションの該当するフォルダー (x86、x64、Appx) を見つけ、 **msvsmon.exe**を選びます。 次に、 **[追加]** をクリックします。  
   
-5. **[許可されたアプリおよび機能]** の一覧で **[Visual Studio リモート デバッグ モニター]** を選びます。 リモート デバッグ モニターの通信に使用する 1 つ以上のネットワークの種類 (**[ドメイン]、[ホーム/社内 (プライベート)]、[パブリック]**) をオンにします。 選択する種類には、Visual Studio コンピューターが接続しているネットワークが含まれている必要があります。  
+5. **[許可されたアプリおよび機能]** の一覧で **[Visual Studio リモート デバッグ モニター]** を選びます。 リモート デバッグ モニターの通信に使用する 1 つ以上のネットワークの種類 ( **[ドメイン]、[ホーム/社内 (プライベート)]、[パブリック]** ) をオンにします。 選択する種類には、Visual Studio コンピューターが接続しているネットワークが含まれている必要があります。  
   
 ## <a name="to-open-a-port-on-the-visual-studio-computer-to-enable-discovery"></a>検出を有効にするため Visual Studio コンピューターでポートを開くには  
  リモート デバッガーを実行するコンピューターを検出できるようにするため、UDP ポート 3702 での着信を許可する必要があります。 追加するには、「ファイアウォールでポートを構成する方法」をご覧ください。  
@@ -72,7 +72,7 @@ ms.locfileid: "60103304"
   
 4. **[Visual Studio リモート デバッグ モニター]** が一覧にない場合は **[別のアプリの許可]** をクリックします。 まだ表示されない場合で、**アプリ ウィンドウを追加**、 をクリックして**参照**に移動します **\<Visual Studio インストール ディレクトリ > \Common7\IDE\Remote Debugger**. アプリケーションの該当するフォルダー (x86、x64、Appx) を見つけ、 **msvsmon.exe**を選びます。 次に、 **[追加]** をクリックします。  
   
-5. **[許可されたアプリ]** の一覧で **[Visual Studio リモート デバッグ モニター]** を選びます。 リモート デバッグ モニターの通信に使用する 1 つ以上のネットワークの種類 (**[ドメイン]、[ホーム/社内 (プライベート)]、[パブリック]**) をオンにします。 選択する種類には、Visual Studio コンピューターが接続しているネットワークが含まれている必要があります。  
+5. **[許可されたアプリ]** の一覧で **[Visual Studio リモート デバッグ モニター]** を選びます。 リモート デバッグ モニターの通信に使用する 1 つ以上のネットワークの種類 ( **[ドメイン]、[ホーム/社内 (プライベート)]、[パブリック]** ) をオンにします。 選択する種類には、Visual Studio コンピューターが接続しているネットワークが含まれている必要があります。  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>リモート デバッグを有効にするリモート コンピューター上のポート  
   

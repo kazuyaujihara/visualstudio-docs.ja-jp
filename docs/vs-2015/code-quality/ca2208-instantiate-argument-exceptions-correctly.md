@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 6d7020563d7bcbc794a0d2980a8dcc77c0d98d0b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142535"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208:引数の例外を正しくインスタンス化します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60109978"
 ## <a name="cause"></a>原因
  考えられる原因は、次の状況を含めます。
 
-- または、[System.ArgumentException] (から派生した例外の種類の既定の (パラメーターなしの) コンス トラクターの呼び出し<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->) を使用して、格納される値にアクセスすることができます。
+- または、[System.ArgumentException] (から派生した例外の種類の既定の (パラメーターなしの) コンス トラクターの呼び出し<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->).
 
 - または、[System.ArgumentException。] から派生した例外の種類のパラメーター化されたコンス トラクターに無効な文字列引数を渡す(<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException.?qualifyHint=True&amp;autoUpgrade=True>  -->)
 

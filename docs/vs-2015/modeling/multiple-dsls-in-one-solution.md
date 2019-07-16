@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d70794dddc02605c76c1af330a49af4be917c0e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159006"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>1 つのソリューション内の複数の DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60050141"
   
 1. 2 つ以上の DSL ソリューションと 1 つの VSIX プロジェクトを作成し、すべてのプロジェクトを単一のソリューションに追加します。  
   
-   - 新しい VSIX プロジェクトを作成するには**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#**、**拡張**、 **VSIX プロジェクト**します。  
+   - 新しい VSIX プロジェクトを作成するには**新しいプロジェクト**ダイアログ ボックスで、 **Visual c#** 、**拡張**、 **VSIX プロジェクト**します。  
   
    - VSIX ソリューション ディレクトリ内に 2 つ以上の DSL ソリューションを作成します。  
   
@@ -47,7 +47,7 @@ ms.locfileid: "60050141"
   
 2. 以下のように DSL の VSIX マニフェストを結合します。  
   
-   1. 開いている_YourVsixProject_**\source.extension.manifest**します。  
+   1. 開いている_YourVsixProject_ **\source.extension.manifest**します。  
   
    2. 各 DSL は、選択**コンテンツの追加**を追加します。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "60050141"
   
 3. ソリューションをビルドします。  
   
-   この結果の VSIX では両方の DSL がインストールされます。 F5 キーを使用してテストするしたり展開したり_YourVsixProject_**\bin\Debug\\\*.vsix**します。  
+   この結果の VSIX では両方の DSL がインストールされます。 F5 キーを使用してテストするしたり展開したり_YourVsixProject_ **\bin\Debug\\\*.vsix**します。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio modelbus によるモデルの統合](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

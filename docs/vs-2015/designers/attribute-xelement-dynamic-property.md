@@ -10,16 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ced05b8da63f9a7a242b166fe64e9e44f78b8065
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162672"
 ---
 # <a name="attribute-xelement-dynamic-property"></a>Attribute (XElement 動的プロパティ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-指定された拡張名に対応する属性のインスタンスの取得に使用するインデクサーを取得します。  
+指定された展開名に対応する属性のインスタンスの取得に使用するインデクサーを取得します。  
   
 ## <a name="syntax"></a>構文  
   
@@ -28,9 +28,9 @@ elem.Attribute[{namespaceName}attribName]
 ```  
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値  
- `XAttribute Item(String expandedName)` 型のインデクサー。 このインデクサーは、指定された属性の拡張名を受け取り、対応する <xref:System.Xml.Linq.XAttribute> を返します。指定された名前を持つ属性がない場合は、`null` を返します。  
+ `XAttribute Item(String expandedName)` 型のインデクサー。 このインデクサーは、指定された属性の展開名を受け取り、対応する <xref:System.Xml.Linq.XAttribute> を返します。指定された名前を持つ属性がない場合は、`null` を返します。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>Remarks  
  このプロパティは、<xref:System.Xml.Linq.XElement.Attribute%2A> クラスの <xref:System.Xml.Linq.XElement?displayProperty=fullName> メソッドに相当します。  
   
 ## <a name="see-also"></a>関連項目  

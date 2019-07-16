@@ -9,11 +9,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154615"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio の共有の色
 
@@ -64,7 +64,7 @@ ms.locfileid: "60086430"
 
 - 指定以外の背景と前景の組み合わせ。
 
-  **Default**
+  **[Default]**
 
   コンポーネント
 
@@ -92,7 +92,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarMenuGlyph`
 
-  境界線
+  罫線
 
   なし
 
@@ -126,7 +126,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarMenuMouseOverGlyph`
 
-  境界線
+  罫線
 
   `Environment.CommandBarBorder`
 
@@ -160,7 +160,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarMenuMouseDownGlyph`
 
-  境界線
+  罫線
 
   `Environment.CommandBarMenuBorder`
 
@@ -190,7 +190,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarTextInactive`
 
-  境界線
+  罫線
 
   なし
 
@@ -208,7 +208,7 @@ ms.locfileid: "60086430"
 
 - 指定以外の背景と前景の組み合わせ。
 
-  **Default**
+  **[Default]**
 
   コンポーネント
 
@@ -234,7 +234,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarMenuSubmenuGlyph`
 
-  境界線
+  罫線
 
   `Environment.CommandBarMenuBorder`
 
@@ -398,7 +398,7 @@ ms.locfileid: "60086430"
 
   最新のテーマの UI では使用されませんが、この背景にはグラデーション境界と値があります。
 
-  境界線
+  罫線
 
   `Environment.CommandBarToolBarBorder`
 
@@ -426,7 +426,7 @@ ms.locfileid: "60086430"
 
 - 指定以外の背景と前景の組み合わせ。
 
-  **Default**
+  **[Default]**
 
   コンポーネント
 
@@ -436,7 +436,7 @@ ms.locfileid: "60086430"
 
   ![アイコンの既定値をコマンド](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")
 
-  **Default**
+  **[Default]**
 
   背景
 
@@ -446,7 +446,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarTextActive`
 
-  境界線
+  罫線
 
   N/A
 
@@ -462,7 +462,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarTextSelected`
 
-  境界線
+  罫線
 
   `Environment.CommandBarSelectedBorder`
 
@@ -488,7 +488,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarTextHover`
 
-  境界線
+  罫線
 
   `Environment.CommandBarBorder`
 
@@ -504,7 +504,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarTextHoverOverSelected`
 
-  境界線
+  罫線
 
   `Environment.CommandBarHoverOverSelectedIconBorder`
 
@@ -530,7 +530,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarTextMouseDown`
 
-  境界線
+  罫線
 
   `Environment.CommandBarBorder`
 
@@ -554,7 +554,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarTextInactive`
 
-  境界線
+  罫線
 
   N/A
 
@@ -575,7 +575,7 @@ ms.locfileid: "60086430"
 
 - スタイル設定されたコンボ ボックスにアクセスできる場合。
 
-  **Default**
+  **[Default]**
 
   コンポーネント
 
@@ -595,7 +595,7 @@ ms.locfileid: "60086430"
 
   `Environment.ComboBoxText`
 
-  境界線
+  罫線
 
   `Environment.ComboBoxBorder`
 
@@ -629,7 +629,7 @@ ms.locfileid: "60086430"
 
   `Environment.ComboBoxItemText`
 
-  境界線
+  罫線
 
   `Environment.ComboBoxPopupBorder`
 
@@ -655,7 +655,7 @@ ms.locfileid: "60086430"
 
   `Environment.ComboBoxMouseOverText`
 
-  境界線
+  罫線
 
   `Environment.ComboBoxMouseOverBorder`
 
@@ -711,7 +711,7 @@ ms.locfileid: "60086430"
 
   `Environment.ComboBoxFocusedText`
 
-  境界線
+  罫線
 
   `Environment.ComboBoxFocusedBorder`
 
@@ -751,7 +751,7 @@ ms.locfileid: "60086430"
 
   `Environment.ComboBoxMouseDownText`
 
-  境界線
+  罫線
 
   `Environment.ComboBoxMouseDownBorder`
 
@@ -785,7 +785,7 @@ ms.locfileid: "60086430"
 
   `Environment.ComboBoxDisabledText`
 
-  境界線
+  罫線
 
   `Environment.ComboBoxDisabledBorder`
 
@@ -820,7 +820,7 @@ ms.locfileid: "60086430"
 
 - コンボ ボックスまたは分割ボタン。
 
-  **Default**
+  **[Default]**
 
   コンポーネント
 
@@ -840,7 +840,7 @@ ms.locfileid: "60086430"
 
   `DropDownText`
 
-  境界線
+  罫線
 
   `DropDownBorder`
 
@@ -874,7 +874,7 @@ ms.locfileid: "60086430"
 
   `Environment.ComboBoxItemText`
 
-  境界線
+  罫線
 
   `Environment.DropDownPopupBorder`
 
@@ -904,7 +904,7 @@ ms.locfileid: "60086430"
 
   `Environment.DropDownMouseOverText`
 
-  境界線
+  罫線
 
   `Environment.DropDownMouseOverBorder`
 
@@ -960,7 +960,7 @@ ms.locfileid: "60086430"
 
   `Environment.DropDownMouseDownText`
 
-  境界線
+  罫線
 
   `Environment.DropDownMouseDownBorder`
 
@@ -998,7 +998,7 @@ ms.locfileid: "60086430"
 
   `Environment.DropDownDisabledText`
 
-  境界線
+  罫線
 
   `Environment.DropDownDisabledBorder`
 
@@ -1030,7 +1030,7 @@ ms.locfileid: "60086430"
 
 - 指定以外の背景と前景の組み合わせ。
 
-  **Default**
+  **[Default]**
 
   コンポーネント
 
@@ -1054,7 +1054,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarSplitButtonGlyph`
 
-  境界線
+  罫線
 
   N/A
 
@@ -1088,7 +1088,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarSplitButtonMouseOverGlyph`
 
-  境界線
+  罫線
 
   `Environment.CommandBarBorder`
 
@@ -1122,7 +1122,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarSplitButtonMouseDownGlyph`
 
-  境界線
+  罫線
 
   `Environment.CommandBarBorder`
 
@@ -1154,7 +1154,7 @@ ms.locfileid: "60086430"
 
   `Environment.CommandBarTextInactive`
 
-  境界線
+  罫線
 
   N/A
 
@@ -1173,7 +1173,7 @@ ms.locfileid: "60086430"
  使用しないケース
 [その他のオプション] または [オーバーフロー] ボタンと同様の機能を持たないボタン。
 
- **Default**
+ **[Default]**
 
  コンポーネント
 
@@ -1271,7 +1271,7 @@ ms.locfileid: "60086430"
  使用しないケース
 シェルにテーマの更新がある場合に自動的に変更しない UI。
 
- **Default**
+ **[Default]**
 
  コンポーネント
 
@@ -1289,7 +1289,7 @@ ms.locfileid: "60086430"
 
  ドキュメントの種類によって異なります
 
- 境界線
+ 罫線
 
  `Environment.ToolWindowBorder`
 
@@ -1309,7 +1309,7 @@ ms.locfileid: "60086430"
 
  `Environment.RaftedWindowButtonActiveGlyph`
 
- 境界線
+ 罫線
 
  `Environment.MainWindowActiveDefaultBorder`
 
@@ -1335,7 +1335,7 @@ ms.locfileid: "60086430"
 
  `Environment.RaftedWindowButtonInactiveGlyph`
 
- 境界線
+ 罫線
 
  `Environment.MainWindowInactiveBorder`
 
@@ -1460,7 +1460,7 @@ ms.locfileid: "60086430"
 
  `Environment.FileTabSelectedText`
 
- 境界線
+ 罫線
 
  `Environment.FileTabSelectedBorder`
 
@@ -1492,7 +1492,7 @@ ms.locfileid: "60086430"
 
  `Environment.FileTabInactiveText`
 
- 境界線
+ 罫線
 
  `Environment.FileTabInactiveBorder`
 
@@ -1503,7 +1503,7 @@ ms.locfileid: "60086430"
  `Environment.FileTabInactiveDocumentBorderBackground`
 
 #### <a name="background-tab"></a>背景タブ
- **Default**
+ **[Default]**
 
  ![背景タブ](../../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 076_BackgroundTab")
 
@@ -1517,7 +1517,7 @@ ms.locfileid: "60086430"
 
  `Environment.FileTabText`
 
- 境界線
+ 罫線
 
  `Environment.FileTabBorder`
 
@@ -1539,7 +1539,7 @@ ms.locfileid: "60086430"
 
  `Environment.FileTabHotText`
 
- 境界線
+ 罫線
 
  `Environment.FileTabHotBorder`
 
@@ -1579,7 +1579,7 @@ ms.locfileid: "60086430"
 
   `Environment.FileTabProvisionalSelectedActiveForeground`
 
-  境界線
+  罫線
 
   `Environment.FileTabProvisionalSelectedActiveBorder`
 
@@ -1609,7 +1609,7 @@ ms.locfileid: "60086430"
 
   `Environment.FileTabProvisionalSelectedInactiveForeground`
 
-  境界線
+  罫線
 
   `Environment.FileTabProvisionalSelectedInactiveBorder`
 
@@ -1637,7 +1637,7 @@ ms.locfileid: "60086430"
 
   `Environment.FileTabProvisionalInactiveForeground`
 
-  境界線
+  罫線
 
   `Environment.FileTabProvisionalInactiveBorder`
 
@@ -1663,7 +1663,7 @@ ms.locfileid: "60086430"
 
   `Environment.FileTabProvisionalHoverForeground`
 
-  境界線
+  罫線
 
   `Environment.FileTabProvisionalHoverBorder`
 
@@ -1683,7 +1683,7 @@ ms.locfileid: "60086430"
 
 - コマンド バー オーバーフロー ボタン。
 
-  **Default**
+  **[Default]**
 
   コンポーネント
 
@@ -1703,7 +1703,7 @@ ms.locfileid: "60086430"
 
   `Environment.DocWellOverflowButtonGlyph`
 
-  境界線
+  罫線
 
   N/A
 
@@ -1727,7 +1727,7 @@ ms.locfileid: "60086430"
 
   `Environment.DocWellOverflowButtonMouseOverGlyph`
 
-  境界線
+  罫線
 
   `Environment.DocWellOverflowButtonMouseOverBorder`
 
@@ -1751,7 +1751,7 @@ ms.locfileid: "60086430"
 
   `Environment.DocWellOverflowButtonMouseDownGlyph`
 
-  境界線
+  罫線
 
   `Environment.DocWellOverflowButtonMouseDownBorder`
 
@@ -1791,7 +1791,7 @@ ms.locfileid: "60086430"
 
  `Environment.ToolWindowBackground`
 
- 境界線
+ 罫線
 
  `Environment.ToolWindowBorder`
 
@@ -1809,7 +1809,7 @@ ms.locfileid: "60086430"
 
  `Environment.ToolWindowBackground`
 
- 境界線
+ 罫線
 
  `Environment.MainWindowActiveDefaultBorder`
 
@@ -1827,7 +1827,7 @@ ms.locfileid: "60086430"
 
  `Environment.ToolWindowBackground`
 
- 境界線
+ 罫線
 
  `Environment.MainWindowInactiveBorder`
 
@@ -1864,7 +1864,7 @@ ms.locfileid: "60086430"
 
  `Environment.TitleBarActiveText`
 
- 境界線
+ 罫線
 
  `Environment.TitleBarActiveBorder`
 
@@ -1896,7 +1896,7 @@ ms.locfileid: "60086430"
 
  `Environment.TitleBarInactiveText`
 
- 境界線
+ 罫線
 
  N/A
 
@@ -1916,7 +1916,7 @@ ms.locfileid: "60086430"
 
 - 指定以外の背景と前景の組み合わせ。
 
-  **Default**
+  **[Default]**
 
   コンポーネント
 
@@ -1936,7 +1936,7 @@ ms.locfileid: "60086430"
 
   `Environment.ToolWindowButtonActiveGlyph`
 
-  境界線
+  罫線
 
   N/A
 
@@ -1952,7 +1952,7 @@ ms.locfileid: "60086430"
 
   `Environment.ToolWindowButtonInactiveGlyph`
 
-  境界線
+  罫線
 
   N/A
 
@@ -1976,7 +1976,7 @@ ms.locfileid: "60086430"
 
   `Environment.ToolWindowButtonHoverActiveGlyph`
 
-  境界線
+  罫線
 
   `Environment.ToolWindowButtonHoverActiveBorder`
 
@@ -1992,7 +1992,7 @@ ms.locfileid: "60086430"
 
   `Environment.ToolWindowButtonHoverInactiveGlyph`
 
-  境界線
+  罫線
 
   `Environment.ToolWindowButtonHoverInactiveBorder`
 
@@ -2016,7 +2016,7 @@ ms.locfileid: "60086430"
 
   `Environment.ToolWindowButtonDownActiveGlyph`
 
-  境界線
+  罫線
 
   `Environment.ToolWindowButtonDownBorder`
 
@@ -2032,7 +2032,7 @@ ms.locfileid: "60086430"
 
   `Environment.ToolWindowButtonDownInactiveGlyph`
 
-  境界線
+  罫線
 
   `Environment.ToolWindowButtonDownBorder`
 
@@ -2065,7 +2065,7 @@ ms.locfileid: "60086430"
 
  `Environment.ToolWindowTabSelectedActiveText`
 
- 境界線
+ 罫線
 
  `Environment.ToolWindowTabSelectedBorder`
 
@@ -2089,7 +2089,7 @@ ms.locfileid: "60086430"
 
  `Environment.ToolWindowTabSelectedText`
 
- 境界線
+ 罫線
 
  `Environment.ToolWindowTabSelectedBorder`
 
@@ -2121,7 +2121,7 @@ ms.locfileid: "60086430"
 
  `Environment.ToolWindowTabText`
 
- 境界線
+ 罫線
 
  `Environment.ToolWindowTabBorder`
 
@@ -2149,7 +2149,7 @@ ms.locfileid: "60086430"
 
  `Environment.ToolWindowTabMouseOverText`
 
- 境界線
+ 罫線
 
  `Environment.ToolWindowTabMouseOverBorder`
 
@@ -2164,7 +2164,7 @@ ms.locfileid: "60086430"
  使用しないケース
 シェルにテーマの更新がある場合に自動的に変更しない UI。
 
- **Default**
+ **[Default]**
 
  コンポーネント
 
@@ -2186,7 +2186,7 @@ ms.locfileid: "60086430"
 
  `Environment.AutoHideTabText`
 
- 境界線
+ 罫線
 
  `Environment.AutoHideTabBorder`
 
@@ -2212,7 +2212,7 @@ ms.locfileid: "60086430"
 
  `Environment.AutoHideTabMouseOverText`
 
- 境界線
+ 罫線
 
  `Environment.AutoHideTabMouseOverBorder`
 
@@ -2262,7 +2262,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.FocusedBackground`
 
-  境界線
+  罫線
 
   `SearchControl.FocusedBorder`
 
@@ -2290,7 +2290,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.ClearGlyph`
 
-  境界線
+  罫線
 
   N/A
 
@@ -2306,7 +2306,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.FocusedDropDownButtonGlyph`
 
-  境界線
+  罫線
 
   `SearchControl.FocusedDropDownButtonBorder`
 
@@ -2330,7 +2330,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.SearchActiveBackground`
 
-  境界線
+  罫線
 
   `SearchControl.UnfocusedBorder`
 
@@ -2350,7 +2350,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.Unfocused`
 
-  境界線
+  罫線
 
   `SearchControl.UnfocusedBorder`
 
@@ -2378,7 +2378,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.ClearGlyph`
 
-  境界線
+  罫線
 
   N/A
 
@@ -2394,7 +2394,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.UnfocusedDropDownButtonGlyph`
 
-  境界線
+  罫線
 
   `SearchControl.UnfocusedDropDownButtonBorder`
 
@@ -2418,7 +2418,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.ActionButtonMouseDownGlyph`
 
-  境界線
+  罫線
 
   `SearchControl.ActionButtonMouseDownBorder`
 
@@ -2434,7 +2434,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.MouseDownDropDownButtonGlyph`
 
-  境界線
+  罫線
 
   `SearchControl.MouseDownDropDownButtonBorder`
 
@@ -2458,7 +2458,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.FocusedBackground`
 
-  境界線
+  罫線
 
   なし
 
@@ -2486,7 +2486,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.Disabled`
 
-  境界線
+  罫線
 
   `SearchControl.DisabledBorder`
 
@@ -2506,7 +2506,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.ActionButtonDisabledGlyph`
 
-  境界線
+  罫線
 
   なし
 
@@ -2522,7 +2522,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.DisabledDownButtonGlyph`
 
-  境界線
+  罫線
 
   なし
 
@@ -2548,7 +2548,7 @@ ms.locfileid: "60086430"
 
   トークン名:Category.color
 
-  境界線
+  罫線
 
   `SearchControl.PopupBorder`
 
@@ -2560,7 +2560,7 @@ ms.locfileid: "60086430"
 
   `Environment.DropShadowBackground`
 
-  **Default**
+  **[Default]**
 
   コンポーネント
 
@@ -2636,7 +2636,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.PopupMouseOverItemText`
 
-  境界線
+  罫線
 
   `SearchControl.PopupControlMouseOverBorder`
 
@@ -2662,7 +2662,7 @@ ms.locfileid: "60086430"
 
   `SearchControl.PopupButtonMouseDownText`
 
-  境界線
+  罫線
 
   `SearchControl.PopupControlMouseOverBorder`
 
@@ -2717,7 +2717,7 @@ ms.locfileid: "60086430"
  使用しないケース
 ハイパーリンク以外のすべてのもの。
 
- **Default**
+ **[Default]**
 
  コンポーネント
 
@@ -2802,7 +2802,7 @@ ms.locfileid: "60086430"
 
  `Environment.InfoText`
 
- 境界線
+ 罫線
 
  `Environment.ToolWindowBorder`
 
@@ -2816,7 +2816,7 @@ Visual Studio のスクロール バーと一致させる UI を作成する場�
 
  使用しないでください.すべてのスクロール バーの UI と常に一致したくないです。
 
- **Default**
+ **[Default]**
 
  コンポーネント
 
@@ -2922,7 +2922,7 @@ Visual Studio のスクロール バーと一致させる UI を作成する場�
 
 ソリューション エクスプローラー、サーバー エクスプローラー、クラス ビューなど、いくつかのツール ウィンドウでは、色が TreeView カテゴリの色の名前によって制御される階層組織スキームが実装されます。 ツリー ビューのすべての項目に背景色とテキスト色があります。 入れ子にされた子要素がある項目には、項目が展開されているか折りたたまれているかを示すグリフもあります。
 
-![Tree view redline](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")
+![ツリー ビューの赤線](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")
 
 使用するケース
 階層組織ビューを実装する必要があるすべての場所。
@@ -2932,7 +2932,7 @@ Visual Studio のスクロール バーと一致させる UI を作成する場�
 
 - 指定以外の背景と前景の組み合わせ。
 
-  **Default**
+  **[Default]**
 
   コンポーネント
 
@@ -2954,7 +2954,7 @@ Visual Studio のスクロール バーと一致させる UI を作成する場�
 
   `TreeView.Glyph`
 
-  境界線
+  罫線
 
   なし
 
@@ -2980,7 +2980,7 @@ Visual Studio のスクロール バーと一致させる UI を作成する場�
 
   `TreeView.GlyphMouseOver`
 
-  境界線
+  罫線
 
   なし
 
@@ -3006,7 +3006,7 @@ Visual Studio のスクロール バーと一致させる UI を作成する場�
 
   `TreeView.DragOverItemGlyph`
 
-  境界線
+  罫線
 
   なし
 
@@ -3034,7 +3034,7 @@ Visual Studio のスクロール バーと一致させる UI を作成する場�
 
   `TreeView.SelectedItemActiveGlyph`
 
-  境界線
+  罫線
 
   `TreeView.FocusVisualBorder`
 
@@ -3054,7 +3054,7 @@ Visual Studio のスクロール バーと一致させる UI を作成する場�
 
   `TreeView.SelectedItemInactiveGlyph`
 
-  境界線
+  罫線
 
   なし
 
@@ -3082,7 +3082,7 @@ Visual Studio のスクロール バーと一致させる UI を作成する場�
 
   `TreeView.SelectedItemActiveGlyphMouseOver`
 
-  境界線
+  罫線
 
   なし`TreeView.FocusVisualBorder`
 
@@ -3102,7 +3102,7 @@ Visual Studio のスクロール バーと一致させる UI を作成する場�
 
   `TreeView.SelectedItemActiveGlyphMouseOver`
 
-  境界線
+  罫線
 
   なし
 
@@ -3115,7 +3115,7 @@ Visual Studio のテーマ (淡色、濃色、青、またはシステムのハ�
  使用しないケース
 Visual Studio のテーマの一部でないカスタム背景に対して表示されるボタン。
 
- **Default**
+ **[Default]**
 
  コンポーネント
 
@@ -3214,7 +3214,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
  使用しないケース
 チェック ボックス コントロールでない UI。
 
- **Default**
+ **[Default]**
 
  コンポーネント
 
@@ -3228,7 +3228,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `CommonControls.CheckBoxBackground`
 
- 境界線
+ 罫線
 
  `CommonControls.CheckBoxBorder`
 
@@ -3254,7 +3254,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `CommonControls.CheckBoxBackgroundDisabled`
 
- 境界線
+ 罫線
 
  `CommonControls.CheckBoxBorderDisabled`
 
@@ -3280,7 +3280,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `CommonControls.CheckBoxBackgroundHover`
 
- 境界線
+ 罫線
 
  `CommonControls.CheckBoxBorderHover`
 
@@ -3306,7 +3306,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `CommonControls.CheckBoxBackgroundPressed`
 
- 境界線
+ 罫線
 
  `CommonControls.CheckBoxBorderPressed`
 
@@ -3332,7 +3332,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `CommonControls.CheckBoxBackgroundFocused`
 
- 境界線
+ 罫線
 
  `CommonControls.CheckBoxBorderFocused`
 
@@ -3356,7 +3356,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
 - コマンド バーの [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) または [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) 。
 
-  **Default**
+  **[Default]**
 
   コンポーネント
 
@@ -3370,7 +3370,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
   `CommonControls.ComboBoxBackground`
 
-  境界線
+  罫線
 
   `CommonControls.ComboBoxBorder`
 
@@ -3404,7 +3404,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
   `CommonControls.ComboBoxBackgroundDisabled`
 
-  境界線
+  罫線
 
   `CommonControls.ComboBoxBorderDisabled`
 
@@ -3438,7 +3438,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
   `CommonControls.ComboBoxBackgroundHover`
 
-  境界線
+  罫線
 
   `CommonControls.ComboBoxBorderHover`
 
@@ -3472,7 +3472,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
   `CommonControls.ComboBoxBackgroundPressed`
 
-  境界線
+  罫線
 
   `CommonControls.ComboBoxBorderPressed`
 
@@ -3506,7 +3506,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
   `CommonControls.ComboBoxBackgroundFocused`
 
-  境界線
+  罫線
 
   `CommonControls.ComboBoxBorderFocused`
 
@@ -3554,7 +3554,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
   `CommonControls.ComboBoxListItemBackgroundFocused`
 
-  境界線
+  罫線
 
   `CommonControls.ComboBoxListBorder`
 
@@ -3612,7 +3612,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `Header.Glyph`
 
- 境界線
+ 罫線
 
  `Header.SeparatorLine`
 
@@ -3630,7 +3630,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `Header.MouseOverGlyph`
 
- 境界線
+ 罫線
 
  `Header.SeparatorLine`
 
@@ -3648,7 +3648,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `CommonControls.CheckBoxTextPressed`
 
- 境界線
+ 罫線
 
  `CommonControls.CheckBoxGlyphPressed`
 
@@ -3671,7 +3671,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `Environment.CommandBarTextActive`
 
- 境界線
+ 罫線
 
  なし
 
@@ -3685,7 +3685,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `TreeView.SelectedItemActiveText`
 
- 境界線
+ 罫線
 
  なし
 
@@ -3699,7 +3699,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `TreeView.SelectedItemInactiveText`
 
- 境界線
+ 罫線
 
  なし
 
@@ -3729,13 +3729,13 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
   既定 (選択済み)
 
-  タブ
+  Tab
 
   背景
 
   `ManifestDesigner.TabActive`
 
-  境界線
+  罫線
 
   なし
 
@@ -3759,7 +3759,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
   選択されていない
 
-  タブ
+  Tab
 
   背景
 
@@ -3767,7 +3767,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
   ホバー
 
-  タブ
+  Tab
 
   背景
 
@@ -3776,7 +3776,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 ## <a name="tagging"></a>タグ付け
  Visual Studio は、タグ付けをサポートしています。タグ付けにより、ユーザーは追跡のために検索可能なキーワードを宣言できます。 たとえば、プロジェクト マネージャーと開発者は、Team Foundation Server (TFS) を使用して作業項目にタグを付けることができます。 次の表に、タグ自体と、ホバー時および選択済み状態で表示される "アイコンを閉じる" グリフの両方の色の名前を示します。
 
- ![Tagging redline](../../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303-176_TaggingRedline")
+ ![タグ付けの赤線](../../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303 176_TaggingRedline")
 
  使用するケース
 タグ付けをサポートする UI。
@@ -3793,7 +3793,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  ![タグ](../../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")
 
- **Default**
+ **[Default]**
 
  背景
 
@@ -3840,7 +3840,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
  `Tag.SelectedBackgroundText`
 
 ### <a name="glyph-close-icon"></a>グリフ (アイコンを閉じる)
- **Default**
+ **[Default]**
 
  コンポーネント
 
@@ -3880,7 +3880,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `Tag.TagHoverGlyphHover`
 
- 境界線
+ 罫線
 
  `Tag.TagHoverGlyphHoverBorder`
 
@@ -3904,7 +3904,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `Tag.TagHoverGlyphPressed`
 
- 境界線
+ 罫線
 
  `Tag.TagHoverGlyphPressedBorder`
 
@@ -3948,7 +3948,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `Tag.TagSelectedGlyphHover`
 
- 境界線
+ 罫線
 
  `Tag.TagSelectedGlyphHoverBorder`
 
@@ -3972,7 +3972,7 @@ Visual Studio のテーマの一部でないカスタム背景に対して表示
 
  `Tag.TagSelectedGlyphPressed`
 
- 境界線
+ 罫線
 
  `Tag.TagSelectedGlyphPressedBorder`
 
@@ -4079,7 +4079,7 @@ Visual Studio 環境の背景を一致させる場所。
  使用しないケース
 ツールボックス UI と類似していないすべてのもの、またはシェル ツールボックスの色を変更した場合に UI に問題が発生するかどうか不明な場合。
 
- **Default**
+ **[Default]**
 
  コンポーネント
 
@@ -4105,7 +4105,7 @@ Visual Studio 環境の背景を一致させる場所。
 
  個々の項目、または利用可能なコントロールがない場合はウィンドウ全体
 
- 境界線
+ 罫線
 
  なし
 
@@ -4135,7 +4135,7 @@ Visual Studio 環境の背景を一致させる場所。
 
  個々の項目のみ
 
- 境界線
+ 罫線
 
  なし
 
@@ -4167,7 +4167,7 @@ Visual Studio 環境の背景を一致させる場所。
 
  [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) カテゴリから
 
- 境界線
+ 罫線
 
  `TreeView.FocusVisualBorder`
 
@@ -4199,7 +4199,7 @@ Visual Studio 環境の背景を一致させる場所。
 
  [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) カテゴリから
 
- 境界線
+ 罫線
 
  なし
 

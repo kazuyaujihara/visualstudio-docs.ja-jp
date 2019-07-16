@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187122"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Visual Studio 2015 の Visual Studio でデザインする場合は新機能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,14 +68,14 @@ ms.locfileid: "60039060"
 
 Visual Studio 2015 は、いくつかのエディションで使用できます。 すべては、アーキテクチャとモデリング ツールのサポートを提供します。 各ツールの利用可能情報を次の表に示します。
 
-|**機能**|**Enterprise**|**Professional**|**Community**|**Express**|
+|**機能**|**エンタープライズ**|**Professional**|**コミュニティ**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
 |**コード マップ**|[はい]|読み取りとコード マップをフィルター処理、新しいジェネリック ノードを追加および選択範囲から新しいの有向グラフの作成にのみサポートします。|-|-|
-|**UML クラス図**|はい|-|-|-|
+|**UML クラス図**|[はい]|-|-|-|
 |**UML シーケンス図**|[はい]|-|-|-|
-|**UML ユース ケース図**|はい|-|-|-|
+|**UML ユース ケース図**|[はい]|-|-|-|
 |**UML アクティビティ図**|[はい]|-|-|-|
-|**UML コンポーネント図**|はい|-|-|-|
-|**レイヤー図**|はい|-|-|-|
+|**UML コンポーネント図**|[はい]|-|-|-|
+|**レイヤー図**|[はい]|-|-|-|
 |**グラフの directed** (DGML ダイアグラム)|[はい]|はい|-|-|
 |**コード クローン**|はい|-|-|-|

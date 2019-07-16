@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7d58d1477b9d7f58242f8cb4db7c3c360c248b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184464"
 ---
-# <a name="changing-view-settings-by-using-the-legacy-api"></a>レガシ API を使用してビューの設定の変更
+# <a name="changing-view-settings-by-using-the-legacy-api"></a>レガシ API を使用する表示設定の変更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ユーザーによってワード ラップ、選択余白、および仮想の領域などのコア エディター機能の設定を変更することができます、**オプション** ダイアログ ボックス。 ただし、これらの設定を変更することはもプログラムを使用します。  

@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312299"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890973"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio のコモン コントロール パターン
 ## <a name="BKMK_CommonControls"></a> コモン コントロール
@@ -296,7 +296,8 @@ Visual Studio でのほとんどのボタンは、ユーティリティのダイ
 #### <a name="graphical-buttons"></a>グラフィカルなボタン
 いくつかのボタンを常にグラフィカル イメージを使用し、領域を節約し、ローカライズの問題を回避するテキストを含めることはありません。 フィールドの選択およびその他の並べ替え可能なリストでよく使用されます。
 
-> **注:** ユーザーは、これらのボタン (アクセス キーはありません) にタブで、そのため、適切な順序で配置する必要があります。 マップ、`name`スクリーン リーダーは、ボタンの操作を正しく解釈するために必要なアクションをボタンのプロパティ。
+> [!NOTE]
+> ユーザーは、これらのボタン (アクセス キーはありません) にタブで、そのため、適切な順序で配置する必要があります。 マップ、`name`スクリーン リーダーは、ボタンの操作を正しく解釈するために必要なアクションをボタンのプロパティ。
 
 | 関数 | ボタン |
 | --- | --- |

@@ -23,16 +23,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155902"
 ---
 # <a name="debugging-web-applications-and-script"></a>Web アプリケーションとスクリプトのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-表の凡例 :   
+表の凡例 :  
   
  ここでは、Web アプリケーションの一般的なデバッグ テクニックについて説明します。 詳細については、次を参照してください。[デバッガーの基本事項](../debugger/debugger-basics.md)します。  
   

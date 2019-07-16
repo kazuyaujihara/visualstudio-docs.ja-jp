@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a55b5519d5abb7b40aeca23fed1bc2f8ea2cc33d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194642"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;deployment&gt;要素 (ClickOnce 配置)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ ms.locfileid: "58962614"
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
  任意。 この要素の子である、`update`要素属性を持っていません。 ときに、`beforeApplicationStartup`要素が存在すると、アプリケーションがなるときにブロックされている[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]クライアントがオンラインの場合、更新プログラムを確認します。 この要素が存在しない場合[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]が最初に指定された値に基づいて更新プログラム スキャン、`expiration`要素。 `beforeApplicationStartup` `expiration`両方を同じ配置マニフェストで指定することはできません。  
   
-## <a name="expiration"></a>expiration   
+## <a name="expiration"></a>expiration  
  任意。 この要素の子である、`update`要素、子を持っていないとします。 `beforeApplicationStartup` `expiration`両方を同じ配置マニフェストで指定することはできません。 更新チェックが発生し、更新されたバージョンが検出された、新しいバージョンを既存のバージョンの実行中にキャッシュします。 次回の起動時に、新しいバージョンをインストールし、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーション。  
   
  `expiration`要素は、次の属性をサポートしています。  

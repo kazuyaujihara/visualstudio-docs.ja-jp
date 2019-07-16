@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5b5126758c60262564390f84b6278300a41660f5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187178"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ IDebugDisassemblyStream2 : IUnknown
   
 |メソッド|説明|  
 |------------|-----------------|  
-|[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|手順については、混合モードのストリームの現在位置から始まるを読み取ります。|  
+|[読み取り](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|手順については、混合モードのストリームの現在位置から始まるを読み取ります。|  
 |[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|[逆アセンブル] ストリームの指定した位置の基準とした命令数が特定の読み取りポインターを移動します。|  
 |[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|特定のコード コンテキストのコードの場所の識別子を返します。|  
 |[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|指定したコードの場所の識別子に対応するコードのコンテキスト オブジェクトを返します。|  

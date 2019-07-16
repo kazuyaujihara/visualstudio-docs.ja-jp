@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d665f51f2ec5d825dbac1533c82e3d15bf419ff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161819"
 ---
 # <a name="assertion-failed-dialog-box"></a>[アサートに失敗しました] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,8 +36,8 @@ ms.locfileid: "58976766"
 |ここを|目的|  
 |-----------|--------|  
 |[再試行]|アサーションをデバッグするか、アサートに関するヘルプを表示します。|  
-|Ignore|アサーションを無視してプログラムを引き続き実行します。|  
-|[中止]|プログラムの実行を停止し、デバッグ セッションを終了します。|  
+|無視|アサーションを無視してプログラムを引き続き実行します。|  
+|中止|プログラムの実行を停止し、デバッグ セッションを終了します。|  
   
 ## <a name="see-also"></a>関連項目  
  [C/C++ アサーション](../debugger/c-cpp-assertions.md)
