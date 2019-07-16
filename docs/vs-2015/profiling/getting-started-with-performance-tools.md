@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee0cb763cdfcd049ac389b54a2348c0a733b907d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158215"
 ---
 # <a name="getting-started-with-performance-tools"></a>パフォーマンス ツールの概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60078981"
   
 ## <a name="common-tasks"></a>よく使う機能  
   
-|タスク|関連するコンテンツ|  
+|タスク|関連コンテンツ|  
 |----------|---------------------|  
 |**アプリケーションまたは Web サイトの迅速なプロファイリングします。** Visual Studio ソリューションまたは Web サイトのプロファイリング セッション構成および実行するには、パフォーマンス ウィザードを使用します。|-   [パフォーマンス プロファイリングのビギナーズ ガイド](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [方法: Web サイトのパフォーマンス データを収集する](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
 |**ウィザードを使用しないアプリケーションをプロファイルするには。** パフォーマンス セッションのプロパティ ページを使用してパフォーマンス セッションを作成することについて説明します。|-   [方法: パフォーマンス セッションを手動で作成する](../profiling/how-to-manually-create-performance-sessions.md)|  

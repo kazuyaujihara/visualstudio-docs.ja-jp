@@ -19,11 +19,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ccd8c399bd92bd98307d44aff913c30390033c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205424"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>方法: ASP.NET の例外をデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60083713"
   
 2. **[Common Language Runtime Exceptions]** 行の **[スローされるとき]** または **[ユーザーにハンドルされていないとき]** チェック ボックスをオンにします。  
   
-     **[ユーザーにハンドルされていないとき]** 設定を使用するには、**[マイ コードのみ]** を有効にする必要があります。  
+     **[ユーザーにハンドルされていないとき]** 設定を使用するには、 **[マイ コードのみ]** を有効にする必要があります。  
   
 ### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>ASP.NET の例外処理で推奨される手順を使用するには  
   

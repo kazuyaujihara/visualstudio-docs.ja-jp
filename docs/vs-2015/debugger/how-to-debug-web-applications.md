@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cd3cbbcd740c0f124b8ab4379204a9d425cd541c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205398"
 ---
-# <a name="how-to-debug-web-applications"></a>方法: Web アプリケーションをデバッグします。
+# <a name="how-to-debug-web-applications"></a>方法: Web アプリケーションをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションの開発の主要なテクノロジは、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] デバッガーには、ローカルまたはリモート サーバーで [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションをデバッグするための強力なツールが用意されています。 このトピックでは、デバッグする方法を説明します、[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]開発中のプロジェクト。 デバッグする方法については、 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web アプリケーションを実稼働サーバーに配置されているを参照してください[デプロイされた Web アプリケーションのデバッグ](../debugger/debugging-deployed-web-applications.md)します。  

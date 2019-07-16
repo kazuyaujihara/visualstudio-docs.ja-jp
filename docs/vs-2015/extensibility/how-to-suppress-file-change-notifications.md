@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204076"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>方法: ファイル変更通知を抑制します。
+# <a name="how-to-suppress-file-change-notifications"></a>方法: ファイル変更通知を抑制する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 メッセージ テキスト バッファーを表す物理ファイルが変更されたとき ダイアログ ボックスを表示します**次のものに変更を保存しますか?** これは、ファイル変更通知と呼ばれます。 多くの変更が使用する場合、ファイルに、ただし、このダイアログ ボックスを繰り返し表示することがすぐに面倒な場合。  

@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: b9f5db4ccd70136b711f5bd221244418cf843485
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151180"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Android および iOS での OpenGL ES アプリケーションのビルド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ Visual C++ for Cross-Platform Mobile Development オプションをインスト�
   
 #### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには  
   
-1. Visual Studio を開きます。 メニュー バーで **[ファイル]**、 **[新規]**、 **[プロジェクト]** の順にクリックします。  
+1. Visual Studio を開きます。 メニュー バーで **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順にクリックします。  
   
-2. **[新しいプロジェクト]** ダイアログ ボックスの **[テンプレート]** で **[Visual C++]**、 **[クロス プラットフォーム]** の順に選択し、 **[OpenGLES アプリケーション (Android、iOS)]** テンプレートを選択します。  
+2. **[新しいプロジェクト]** ダイアログ ボックスの **[テンプレート]** で **[Visual C++]** 、 **[クロス プラットフォーム]** の順に選択し、 **[OpenGLES アプリケーション (Android、iOS)]** テンプレートを選択します。  
   
-3. アプリに `MyOpenGLESApp`などの名前を付け、 **[OK]**」を参照してください。  
+3. アプリに `MyOpenGLESApp`などの名前を付け、 **[OK]** 」を参照してください。  
   
     ![新しい OpenGLES アプリケーション プロジェクト](../cross-platform/media/cppmdd-opengles-newproj.PNG "CPPMDD_OpenGLES_NewProj")  
   

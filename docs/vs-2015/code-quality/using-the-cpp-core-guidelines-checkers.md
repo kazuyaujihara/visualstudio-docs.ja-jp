@@ -10,11 +10,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142094"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Core ガイドライン チェッカーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ C++ Core ガイドラインは、ガイドライン、ルール、および C++ 
   
    ![コード分析の拡張機能設定のプロパティ ページ](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   有効または、C++ Core Check の規則セットを無効にする、開く、**プロパティ ページ**プロジェクトのダイアログ。 **構成プロパティ**、展開**コード分析**、**拡張**します。 横にドロップダウン リストで制御**を有効にする C++ Core の Check (リリース)** または**を有効にする C++ Core の Check (試験段階)**、選択**はい**または**いいえ**します。 選択**OK**または**適用**変更を保存します。  
+   有効または、C++ Core Check の規則セットを無効にする、開く、**プロパティ ページ**プロジェクトのダイアログ。 **構成プロパティ**、展開**コード分析**、**拡張**します。 横にドロップダウン リストで制御**を有効にする C++ Core の Check (リリース)** または**を有効にする C++ Core の Check (試験段階)** 、選択**はい**または**いいえ**します。 選択**OK**または**適用**変更を保存します。  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>型、境界、および有効期間を確認してください。  
  C++ Core Check パッケージには、現在のチェッカーが含まれる、[タイプ セーフ](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type)、[安全性の境界](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds)、および[有効期間の安全性](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime)プロファイル。  
@@ -90,9 +90,9 @@ int main()
   **1 >---ビルド開始。プロジェクト:CoreCheckExample、構成:Win32--のデバッグします。**  
 **----**  
 **1 > CoreCheckExample.cpp**  
-**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**1 > CoreCheckExample.vcxproj C:\Users\username\documents\visual studio 2015\P を ->**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
-**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**1 > CoreCheckExample.vcxproj C:\Users\username\documents\visual studio 2015\P を ->**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp(6): C26494 を警告します。変数 'arr' は uninitializ**  

@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 056e5d1fad258d063e30cfd97e85529ff3a0c9bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160180"
 ---
-# <a name="install-sql-server-sample-databases"></a>SQL Server サンプル データベースをインストールします。
+# <a name="install-sql-server-sample-databases"></a>SQL Server サンプル データベースをインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 サンプル データベースは、SQL および LINQ クエリ、データ バインド、Entity Framework のモデル化して試してみる場合に便利です。  各データベース製品には、独自のサンプル データベースがあります。 Northwind と AdventureWorks は、人気のある 2 つの SQL Server サンプル データベースです。  

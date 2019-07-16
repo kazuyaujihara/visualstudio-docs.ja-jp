@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 67dab4c732faa04af44800f740d78c4ce4f9dc80
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143162"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726:適切な用語を使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
 |-|-|  
 |TypeName|UsePreferredTerms|  
 |CheckId|CA1726|  
-|カテゴリ|Microsoft.Naming|  
+|Category|Microsoft.Naming|  
 |互換性に影響する変更点|– アセンブリで発生した場合<br /><br /> 非的な型パラメーターで発生した場合|  
   
 ## <a name="cause"></a>原因  
@@ -49,7 +49,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` または `Flags`|置換用語はありません。 使用しないでください。|
+|`Flag` または `Flags`|置換用語はありません。 使わないでください。|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|

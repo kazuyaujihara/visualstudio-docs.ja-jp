@@ -13,13 +13,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f631e8639c1004fa2cb005da3b6c8bcb27f1a9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203402"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>方法: .NET Framework ランタイムを指定します。
+# <a name="how-to-specify-the-net-framework-runtime"></a>方法: .NET Framework ランタイムを指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 リリース [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] では、アプリケーションは [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ランタイムのさまざまなバージョンを使用してビルドされたモジュールで構成できます。 既定では、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールは、アプリケーションによって読み込まれる最初のランタイムをプロファイリングします。 プロファイラーを使用してアプリケーションを開始するときと、既に実行中のアプリケーションにプロファイラーをアタッチするときにランタイムがプロファイリングするよう指定できます。  
@@ -30,7 +30,7 @@ ms.locfileid: "60076509"
   
 ### <a name="to-specify-the-net-framework-run-time-to-profile-when-starting-an-application-with-the-profiler"></a>プロファイラーを使用したアプリケーションの開始時にプロファイリングする .NET Framework ランタイムを指定するには  
   
-1. **パフォーマンス エクスプローラー**で、パフォーマンス セッション名を右クリックして **[プロパティ]** をクリックしてから、**[詳細]** をクリックします。  
+1. **パフォーマンス エクスプローラー**で、パフォーマンス セッション名を右クリックして **[プロパティ]** をクリックしてから、 **[詳細]** をクリックします。  
   
      **[ターゲット CLR バージョン]** 一覧ボックスに **[自動]** およびコンピューターにインストールされている [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ランタイムのバージョンが表示されます。  
   

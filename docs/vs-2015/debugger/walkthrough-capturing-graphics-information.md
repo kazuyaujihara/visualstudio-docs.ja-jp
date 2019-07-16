@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151468"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>チュートリアル: グラフィックス情報をキャプチャする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "60053885"
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>プロジェクトまたはソリューションを読み込まずにグラフィックス情報のキャプチャを有効にするには  
   
-1. メニュー バーで **[ファイル]**、 **[開く]**、 **[プロジェクト/ソリューション]** の順に選択します。 **[プロジェクトを開く]** ダイアログ ボックスが表示されます。  
+1. メニュー バーで **[ファイル]** 、 **[開く]** 、 **[プロジェクト/ソリューション]** の順に選択します。 **[プロジェクトを開く]** ダイアログ ボックスが表示されます。  
   
 2. プロジェクト ファイルまたはソリューション ファイルの代わりに、グラフィックス情報をキャプチャするアプリケーションの実行可能ファイルを指定し、 **[開く]** を選択します。  
   
-3. メニュー バーで、 **[デバッグ]**、 **[グラフィックス]**、 **[診断の開始]** の順に選択します。  
+3. メニュー バーで、 **[デバッグ]** 、 **[グラフィックス]** 、 **[診断の開始]** の順に選択します。  
   
    アプリを開始して、フレームがレンダリングされると、グラフィックス情報をキャプチャすることができます。  
   
@@ -50,7 +50,7 @@ ms.locfileid: "60053885"
   
 - グラフィックス診断ツール バーで、 **[キャプチャ]** ボタンをクリックします。 ![グラフィックス キャプチャ ボタン アイコン](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-   - または -  
+   \- または -  
   
    アプリケーションにフォーカスを置いた状態で、 **PrintScreen**キーを押します。  
   

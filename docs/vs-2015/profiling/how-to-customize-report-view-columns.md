@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f1f6cf340d7c0ef87f34fc908e075f36eed2962c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146124"
 ---
 # <a name="how-to-customize-report-view-columns"></a>方法: レポート ビューの列をカスタマイズする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Visual Studio Team System Development Edition のパフォーマンス ツール
   
 1. レポート ビューを開きます。  
   
-2. レポート ビュー画面を右クリックし、**[列の追加と削除]** をクリックします。  
+2. レポート ビュー画面を右クリックし、 **[列の追加と削除]** をクリックします。  
   
      **[列の追加と削除]** ダイアログ ボックスが表示されます。  
   
