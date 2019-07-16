@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c90019aa24047524005ba70aa4f1aec75f89c71d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683849"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825423"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio の統合 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 > 一部の項目の種類名は [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 特有のものですが、このドロップダウン リストには表示されません。  
   
 ## <a name="in-process-compilers"></a>インプロセス コンパイラ  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、可能な限り [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] コンパイラのインプロセス バージョンを使用して、パフォーマンスの向上を計ります  ([!INCLUDE[csprcs](../includes/csprcs-md.md)] には該当しません)。これが正しく機能するためには、次の条件が満たされている必要があります。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、可能な限り [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] コンパイラのインプロセス バージョンを使用して、パフォーマンスの向上を計ります ([!INCLUDE[csprcs](../includes/csprcs-md.md)] には該当しません)。これが正しく機能するためには、次の条件が満たされている必要があります。  
   
 - `Vbc` プロジェクトの場合、プロジェクトのターゲットに [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] という名前のタスクが存在すること。  
   
@@ -136,7 +136,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
      プロジェクトに **(利用不可)** のマークが付きます。  
   
-2. **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、**[\<プロジェクト ファイル> の編集]** をクリックします。  
+2. **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、 **[\<プロジェクト ファイル> の編集]** をクリックします。  
   
      Visual Studio XML エディターでプロジェクト ファイルが開きます。  
   
@@ -145,7 +145,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4. **ソリューション エクスプローラー**で、利用不可のプロジェクトのショートカット メニューを開き、 **[プロジェクトの再読み込み]** をクリックします。  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense と検証  
- XML エディターを使用してプロジェクト ファイルを編集する際、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] のスキーマ ファイルによって IntelliSense と検証が実行されます。 これらは、*\<Visual Studio のインストール ディレクトリ>* \Xml\Schemas\1033\MSBuild にあるスキーマ キャッシュにインストールされます。  
+ XML エディターを使用してプロジェクト ファイルを編集する際、[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] のスキーマ ファイルによって IntelliSense と検証が実行されます。 これらは、 *\<Visual Studio のインストール ディレクトリ>* \Xml\Schemas\1033\MSBuild にあるスキーマ キャッシュにインストールされます。  
   
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] の中心となる型は Microsoft.Build.Core.xsd で定義され、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] が使用する共通の型は Microsoft.Build.CommonTypes.xsd で定義されます。 カスタムの項目の種類名、プロパティ、およびタスク用に IntelliSense と検証を使用できるようにスキーマをカスタマイズするには、Microsoft.Build.xsd を編集するか、CommonTypes スキーマまたは Core スキーマを含む独自のスキーマを作成します。 独自のスキーマを作成する場合は、 **[プロパティ]** ウィンドウを使用してこのスキーマを見つけるように XML エディターに指示する必要があります。  
   
@@ -156,17 +156,17 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Microsoft.Common.targets で定義したいくつかのターゲットの名前は、最後の部分が `OutputGroups` または `OutputGroupDependencies`となります。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] はこれらのターゲットを呼び出して、特定のプロジェクト出力のリストを取得します。 たとえば、`SatelliteDllsProjectOutputGroup` ターゲットを呼び出すと、ビルドが作成したすべてのサテライト アセンブリのリストが作成されます。 これらの出力グループは、発行、配置、およびプロジェクト間参照などの機能によって使用されます。 これらのターゲットを定義していなくても、プロジェクトは [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] に読み込まれてビルドされますが、一部の機能が正常に動作しない場合があります。  
   
 ## <a name="reference-resolution"></a>参照の解決  
- 参照の解決とは、プロジェクト ファイルに格納されている参照項目を使用して、実際のアセンブリを検索する処理をいいます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、**[プロパティ]** ウィンドウに参照ごとに詳細なプロパティを表示するために、参照の解決を実行する必要があります。 次の一覧では、3 種類の参照とその解決方法について説明します。  
+ 参照の解決とは、プロジェクト ファイルに格納されている参照項目を使用して、実際のアセンブリを検索する処理をいいます。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] では、 **[プロパティ]** ウィンドウに参照ごとに詳細なプロパティを表示するために、参照の解決を実行する必要があります。 次の一覧では、3 種類の参照とその解決方法について説明します。  
   
 - アセンブリ参照  
   
-     プロジェクト システムは、 `ResolveAssemblyReferences`という既知の名前を持つターゲットを呼び出します。 このターゲットは、 `ReferencePath`という項目の種類名を持つ項目を生成します。 これらの項目のそれぞれが、参照への完全パスを含む項目規定 (項目の `Include` 属性の値) を持ちます。 これらの項目には、以下の新しいメタデータに加え、入力項目のすべてのメタデータも渡されます。  
-  
-    - アセンブリを出力フォルダーにコピーするかどうかを示す`CopyLocal`。true または false に設定されます。  
-  
-    - 参照の元の項目規定を格納している`OriginalItemSpec`。  
-  
-    - `ResolvedFrom` ディレクトリから解決された場合に "{TargetFrameworkDirectory}" に設定される [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。  
+  プロジェクト システムは、 `ResolveAssemblyReferences`という既知の名前を持つターゲットを呼び出します。 このターゲットは、 `ReferencePath`という項目の種類名を持つ項目を生成します。 これらの項目のそれぞれが、参照への完全パスを含む項目規定 (項目の `Include` 属性の値) を持ちます。 これらの項目には、以下の新しいメタデータに加え、入力項目のすべてのメタデータも渡されます。  
+
+  - アセンブリを出力フォルダーにコピーするかどうかを示す`CopyLocal`。true または false に設定されます。  
+
+  - 参照の元の項目規定を格納している`OriginalItemSpec`。  
+
+  - `ResolvedFrom` ディレクトリから解決された場合に "{TargetFrameworkDirectory}" に設定される [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。  
   
 - COM 参照  
   
@@ -177,7 +177,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
      プロジェクト システムは、 `ResolveNativeReferences`という既知の名前を持つターゲットを呼び出します。 このターゲットは、 `NativeReferenceFile`という項目の種類名を持つ項目を生成します。 これらの項目には、参照の元の項目規定を格納する `OriginalItemSpec`という名前の新しいメタデータに加え、入力項目のすべてのメタデータも渡されます。  
   
 ## <a name="performance-shortcuts"></a>パフォーマンスに関するヒント  
- Visual Studio の UI でデバッグを開始する (F5 キーを押すか、メニュー バーの **[デバッグ]**、 **[デバッグの開始]** を選択する) と、パフォーマンスを向上させるために、ビルド処理で高速更新チェックを使用します。 カスタマイズされたビルドで、順次ビルドするファイルを作成した場合、高速更新チェックでは変更されたファイルが正しく識別されません。 徹底した更新プログラムのチェックを必要とするプロジェクトでは、 `DISABLEFASTUPTODATECHECK=1`環境変数を設定することで高速チェックを無効にできます。 また、プロジェクトまたはプロジェクトでインポートしたファイルで、MSBuild プロパティとしてこれを設定することもできます。  
+ Visual Studio の UI でデバッグを開始する (F5 キーを押すか、メニュー バーの **[デバッグ]** 、 **[デバッグの開始]** を選択する) と、パフォーマンスを向上させるために、ビルド処理で高速更新チェックを使用します。 カスタマイズされたビルドで、順次ビルドするファイルを作成した場合、高速更新チェックでは変更されたファイルが正しく識別されません。 徹底した更新プログラムのチェックを必要とするプロジェクトでは、 `DISABLEFASTUPTODATECHECK=1`環境変数を設定することで高速チェックを無効にできます。 また、プロジェクトまたはプロジェクトでインポートしたファイルで、MSBuild プロパティとしてこれを設定することもできます。  
   
  Visual Studio の通常のビルドでは、高速更新チェックは適用されず、コマンド プロンプトでビルドを開始する場合と同じ方法でプロジェクトがビルドされます。  
   

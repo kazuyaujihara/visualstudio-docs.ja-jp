@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e1a4eeeaf6cc979fd9ee7c3ea36a900899596a4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33481307ea6065b0421cd3ae20e54ca778ee4fd4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447152"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826014"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>VBA とドキュメント レベルのカスタマイズを結合します。
   Microsoft Office Word または Microsoft Office Excel 用のドキュメント レベル カスタマイズの一部であるドキュメント内で Visual Basic for Applications (VBA) コードを使用できます。 カスタマイズ アセンブリからドキュメント内の VBA コードを呼び出したり、ドキュメント内の VBA コードがカスタマイズ アセンブリのコードを呼び出せるようにプロジェクトを構成したりすることができます。
@@ -69,7 +69,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ```
 
 > [!NOTE]
-> Visual C＃でオプションのパラメーターの代わりにグローバル欠損変数を使用する方法については、[Office ソリューションでコードを記述](../vsto/writing-code-in-office-solutions.md)を参照してください。
+> Visual C# で省略可能なパラメーターの代わりにグローバル `missing` 変数を使用する方法については、「[Office ソリューションでコードを記述](../vsto/writing-code-in-office-solutions.md)」を参照してください。
 
 ## <a name="call-code-in-document-level-customizations-from-vba"></a>VBA からのドキュメント レベルのカスタマイズのコードを呼び出す
  ドキュメント内の Visual Basic for Applications (VBA) コードがカスタマイズ アセンブリのコードを呼び出すことができるように、Word または Excel のドキュメント レベル プロジェクトを構成できます。 これは、次のシナリオで役立ちます。
@@ -88,9 +88,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 - ドキュメントは、次のいずれかのファイル名拡張子であることが必要です。
 
-    - Word: *.docm*または *.doc*
+  - Word: *.docm*または *.doc*
 
-    - Excel: *.xlsm*、 *.xltm*、 *.xls*、または *.xlt*
+  - Excel: *.xlsm*、 *.xltm*、 *.xls*、または *.xlt*
 
 - ドキュメントは、VBA コードが含まれる VBA プロジェクトを既に含んでいる必要があります。
 
@@ -103,7 +103,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ## <a name="enable-vba-code-to-call-into-the-customization-assembly"></a>カスタマイズ アセンブリを呼び出す VBA コードを有効にします。
  ドキュメント内の VBA コードにカスタマイズ アセンブリ内のメンバーを公開するには 2 つの方法があります。
 
-- [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] プロジェクトのホスト項目クラスのメンバーを VBA に公開できます。 そのためには、ホスト項目 (つまり、文書、ワークシート、ブック) をデザイナーで開いた状態にして、**[プロパティ]** ウィンドウでホスト項目の **EnableVbaCallers** プロパティを **True** に設定します。 VBA コードがクラスのメンバーを呼び出せるようにするために必要なすべての処理は、Visual Studio が自動的に実行します。
+- [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] プロジェクトのホスト項目クラスのメンバーを VBA に公開できます。 そのためには、ホスト項目 (つまり、文書、ワークシート、ブック) をデザイナーで開いた状態にして、 **[プロパティ]** ウィンドウでホスト項目の **EnableVbaCallers** プロパティを **True** に設定します。 VBA コードがクラスのメンバーを呼び出せるようにするために必要なすべての処理は、Visual Studio が自動的に実行します。
 
 - Visual C# プロジェクトのパブリック クラスのメンバー、または [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] プロジェクトの非ホスト項目クラスのメンバーを、VBA に公開できます。 この方法を使用すると、VBA に公開するクラスをいっそう自由に選択できますが、必要な手動手順も多くなります。
 
@@ -220,7 +220,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 5. **GetAutomationObject** メソッドをホスト項目クラスから削除します。
 
    > [!NOTE]
-   > Visual Studio は、自動的には **ReferenceAssemblyFromVbaProject** プロパティの設定を **False**に戻しません。 このプロパティは、**[プロパティ]** ウィンドウを使用して手動で **False** に設定できます。
+   > Visual Studio は、自動的には **ReferenceAssemblyFromVbaProject** プロパティの設定を **False**に戻しません。 このプロパティは、 **[プロパティ]** ウィンドウを使用して手動で **False** に設定できます。
 
 ### <a name="referenceassemblyfromvbaproject"></a>ReferenceAssemblyFromVbaProject
  Visual Basic または Visual C# プロジェクトでホスト項目の **ReferenceAssemblyFromVbaProject** プロパティを **True**に設定すると、Visual Studio は次のタスクを実行します。

@@ -13,20 +13,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73270acd97ac4555ade609601d92327235a2f3c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144903"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>プロファイラーのコマンド ラインを使用した ASP.NET Web アプリケーションのコンカレンシー データの収集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロファイリング ツールのコンカレンシー メソッドを使用すると、リソース競合データを収集できます。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールのコンカレンシー メソッドを使用すると、リソース競合データを収集できます。  
   
 ## <a name="common-tasks"></a>一般的なタスク  
   
-|タスク|関連するコンテンツ|  
+|タスク|関連コンテンツ|  
 |----------|---------------------|  
 |プロファイラーを実行中の ASP.NET アプリケーションにアタッチする|-   [方法: プロファイラーを ASP.NET アプリケーションにアタッチし、コンカレンシー データを収集する](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
@@ -37,7 +37,7 @@ ms.locfileid: "54752357"
   
 ### <a name="profiling-aspnet-applications"></a>ASP.NET Web アプリケーションのプロファイリング  
   
-|タスク|関連するコンテンツ|  
+|タスク|関連コンテンツ|  
 |----------|---------------------|  
 |**サンプリング メソッドを使用したプロファイリング**|-   [サンプリングを使用したアプリケーション統計情報の収集](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
 |**インストルメンテーション方式を使用したプロファイリング**|-   [インストルメンテーションを使用した詳細なタイミング データの収集](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
@@ -45,7 +45,7 @@ ms.locfileid: "54752357"
   
 ### <a name="profiling-concurrency-issues"></a>コンカレンシーの問題  
   
-|タスク|関連するコンテンツ|  
+|タスク|関連コンテンツ|  
 |----------|---------------------|  
 |**スタンドアロン (クライアント) アプリケーションのプロファイリング**|-   [コンカレンシー データの収集](../profiling/collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
 |**サービスのプロファイリング**|-   [コンカレンシー データの収集](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  

@@ -8,12 +8,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaaacd84cdc23b56fd76d7f4e66184868ad533c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ede8844b34473e1c900bd6af040cac99ceee1514
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075819"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824055"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio のフォントと書式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  (置換`Microsoft.VisualStudio.Shell.11.0`MPF dll の現在のバージョンとします)。
 
- ダイアログ ボックスを表示するに"**ShowModal()**"経由でクラスの**ShowDialog()** します。 **ShowModal()** シェルで適切なモーダル状態を設定すると、ダイアログ ボックスと親ウィンドウの中央に配置します。
+ ダイアログ ボックスを表示するに"**ShowModal()** "経由でクラスの**ShowDialog()** します。 **ShowModal()** シェルで適切なモーダル状態を設定すると、ダイアログ ボックスと親ウィンドウの中央に配置します。
 
  コードは次のとおりです。
 
@@ -93,7 +93,7 @@ window.ShowModal()
 ### <a name="BKMK_Formatting"></a> (スケール/太字) の参照を書式設定
  一部のダイアログでは、特定のテキストを太字または環境フォント以外のサイズが必要です。 以前は、「環境フォント +2」としてコード化されたまたは類似した環境フォントよりも大きいフォントができました。 提供されているコード スニペットを使用して、高 DPI のモニターのサポートし、表示テキストが常に適切なサイズと重量 (Light Semilight など) に表示されることを確認します。
 
-> **注:書式設定を適用する前にの指針をフォローしていることを確認[テキストのスタイル](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)します。**
+> **注 :書式設定を適用する前にの指針をフォローしていることを確認[テキストのスタイル](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)します。**
 
  環境フォントをスケーリングするには、TextBlock またはとおりのラベルのスタイルを設定します。 適切なサイズや重量のバリエーションを含む適切なフォントを適切に使用、これらのコード スニペットの各生成されます。
 
@@ -109,7 +109,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 
  **使用:** (まれな) 一意ブランド化された UI、スタート ページのように
 
- **手続き型コード:**"TextBlock"は定義済みの TextBlock と"label"は、以前に定義されたラベルです。
+ **手続き型コード:** "TextBlock"は定義済みの TextBlock と"label"は、以前に定義されたラベルです。
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -132,7 +132,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
  **使用:** 大きな署名ダイアログのタイトル、メイン レポートの見出し
 
- **手続き型コード:**"TextBlock"は定義済みの TextBlock と"label"は、以前に定義されたラベルです。
+ **手続き型コード:** "TextBlock"は定義済みの TextBlock と"label"は、以前に定義されたラベルです。
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -155,7 +155,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
  **使用:** 小見出し、小規模および中規模のダイアログ ボックスのタイトル
 
- **手続き型コード:**"TextBlock"は定義済みの TextBlock と"label"は、以前に定義されたラベルです。
+ **手続き型コード:** "TextBlock"は定義済みの TextBlock と"label"は、以前に定義されたラベルです。
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -178,7 +178,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
  **使用:** ドキュメントのセクション見出しも UI またはレポート
 
- **手続き型コード:**"TextBlock"は定義済みの TextBlock と"label"は、以前に定義されたラベルです。
+ **手続き型コード:** "TextBlock"は定義済みの TextBlock と"label"は、以前に定義されたラベルです。
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -201,7 +201,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
  **使用:** 署名ダイアログとドキュメントに小規模な注釈を小見出しも UI
 
- **手続き型コード:**"TextBlock"は定義済みの TextBlock と"label"は、以前に定義されたラベルです。
+ **手続き型コード:** "TextBlock"は定義済みの TextBlock と"label"は、以前に定義されたラベルです。
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -224,7 +224,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
  **使用:** 署名ダイアログの見出しのセクションでトップのツリー ビューで、垂直タブ ナビゲーション ノード
 
- **手続き型コード:**"TextBlock"は定義済みの TextBlock と"label"は、以前に定義されたラベルです。
+ **手続き型コード:** "TextBlock"は定義済みの TextBlock と"label"は、以前に定義されたラベルです。
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -247,7 +247,7 @@ label.SetResourceReference(Label.StyleProperty,  
 
  **使用:** も UI のラベルと署名のダイアログ ボックス、レポート、およびドキュメントの小見出し
 
- **手続き型コード:**"TextBlock"は定義済みの TextBlock と"label"は、以前に定義されたラベルです。
+ **手続き型コード:** "TextBlock"は定義済みの TextBlock と"label"は、以前に定義されたラベルです。
 
 ```
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -417,11 +417,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - 大規模な見出し (環境フォント x 155% 以上) は、次の目的で色付けすることができます。
 
-    - Visual Studio の UI の署名に視覚的な効果を提供するには
+  - Visual Studio の UI の署名に視覚的な効果を提供するには
 
-    - 特定の領域に注意を促す
+  - 特定の領域に注意を促す
 
-    - 標準的な濃いグレーまたは黒の環境のテキストの色を安全に提供するには
+  - 標準的な濃いグレーまたは黒の環境のテキストの色を安全に提供するには
 
 - 見出しの色は、既存 Visual Studio のブランドの色、主にメイン紫色の #FF68217A を活用する必要があります。
 

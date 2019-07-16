@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e21c3699d796d6037d3b8ca0e744e792b9810b6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971356"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824537"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>依存関係図を使用したコードの検証
 
@@ -51,7 +51,7 @@ ms.locfileid: "62971356"
 > [!NOTE]
 > Visual Studio で .NET Core プロジェクトでは、依存関係図はサポートされていません。
 
-この機能をサポートする Visual Studio のエディションを確認するを参照してください。 [Edition のサポート アーキテクチャとモデリング ツール](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)します。
+Visual C＃ および Visual Basic プロジェクトの依存関係図を作成することができます[アーキテクチャおよびモデリングツールのエディションサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport) を参照してください。
 
 Visual Studio で開いている依存関係図から手動でまたはコマンド プロンプトからコードを検証できます。 ビルド ローカル ビルドまたは Azure のパイプラインを実行しているときにコードを自動的に検証することもできます。 参照してください[Channel 9 ビデオ。設計し、依存関係図の使用によるアーキテクチャの検証](http://go.microsoft.com/fwlink/?LinkID=252073)です。
 
@@ -66,8 +66,8 @@ Visual Studio で開いている依存関係図から手動でまたはコマン
 
 * ライブ依存関係の検証を使用する場合は、完全ソリューション解析を有効にするに内にある金色のバーからオプションの設定を開き、**エラー一覧**します。
 
-   - ソリューション内のアーキテクチャ上のすべての問題の確認が必要ない場合は、完全に無視金色のバーしてかまいません。
-   - 完全ソリューション解析を有効にしない場合は、編集中のファイルだけに対して、分析が行われます。
+  - ソリューション内のアーキテクチャ上のすべての問題の確認が必要ない場合は、完全に無視金色のバーしてかまいません。
+  - 完全ソリューション解析を有効にしない場合は、編集中のファイルだけに対して、分析が行われます。
 
 * ライブの検証を有効にするプロジェクトをアップグレードするときに、ダイアログには、変換の進行状況が表示されます。
 

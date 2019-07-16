@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4fb99a7f7fcd7c91003bc7d74cf0ef6639cf773
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 13029e05e4f29e532918562afd2fee520b387464
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698038"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821623"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,14 +59,14 @@ ms.locfileid: "65698038"
   
 - [プロジェクト ファイル](#BKMK_ProjectFile)  
   
-    - [Properties](#BKMK_Properties)  
-  
-    - [項目](#BKMK_Items)  
-  
-    - [タスク](#BKMK_Tasks)  
-  
-    - [ターゲット](#BKMK_Targets)  
-  
+  - [Properties](#BKMK_Properties)  
+
+  - [項目](#BKMK_Items)  
+
+  - [タスク](#BKMK_Tasks)  
+
+  - [ターゲット](#BKMK_Targets)  
+
 - [ビルド ログ](#BKMK_BuildLogs)  
   
 - [Visual Studio での MSBuild の使用](#BKMK_VisualStudio)  

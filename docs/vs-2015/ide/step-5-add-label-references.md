@@ -1,5 +1,5 @@
 ---
-title: '手順 5: ラベルの参照の追加 |Microsoft Docs'
+title: 手順 5:ラベルの参照の追加 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3f062b48edfbe87fb97d94b3ea852486f66a19d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68141978"
 ---
-# <a name="step-5-add-label-references"></a>手順 5: ラベルの参照を追加する
+# <a name="step-5-add-label-references"></a>手順 5:ラベルの参照を追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 プログラムでは、プレーヤーがどのラベル コントロールをクリックしたかを追跡する必要があります。 現在のところ、プレーヤーが選択したすべてのラベルが表示されます。 しかし、次のように変更します。 1 つ目のラベルがクリックされると、プログラムではラベルのアイコンを表示します。 2 つ目のラベルがクリックされると、一時的に両方のアイコンを表示した後に、再びアイコンを非表示にします。 *参照変数*を使用して、1 回目および 2 回目にどのラベル コントロールがクリックされたかを追跡します。  

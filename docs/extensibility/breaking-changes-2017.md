@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589f5eddb2b1e2a8fd61eea2a205f12d2d9c0742
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc62384f2a413362f53ed0626031501e163d6a4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321356"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823804"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 の機能拡張の変更
 
@@ -63,35 +63,35 @@ Visual Studio プロセス内で実行されているコードは、Visual Studi
 
 * アセンブリを GAC にインストールされただけの:
 
-   これらのアセンブリがインストールされた<em>[INSTALLDIR] \Common7\IDE\*、* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>または *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*します。 これらのフォルダーは、Visual Studio プロセスのプローブ パスの一部です。
+  これらのアセンブリがインストールされた<em>[INSTALLDIR] \Common7\IDE\*、* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>または *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*します。 これらのフォルダーは、Visual Studio プロセスのプローブ パスの一部です。
 
 * 非プローブのパスと、GAC にインストールされたアセンブリの場合:
 
-   * GAC 内のコピーは、セットアップから削除されました。
-   * A *.pkgdef*アセンブリのコード ベースのエントリを指定するファイルが追加されました。
+  * GAC 内のコピーは、セットアップから削除されました。
+  * A *.pkgdef*アセンブリのコード ベースのエントリを指定するファイルが追加されました。
 
-      例:
+    例えば:
 
-      ```xml
-      [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
-      "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
-      "publicKeyToken"="Public Key Token"
-      "culture"="neutral"
-      "version"=15.0.0.0
-      ```
+    ```
+    [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
+    "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
+    "publicKeyToken"="Public Key Token"
+    "culture"="neutral"
+    "version"=15.0.0.0
+    ```
 
-      Visual Studio の pkgdef サブシステムは、実行時に、Visual Studio プロセスのランタイム構成ファイルにこれらのエントリをマージ ( *[VSAPPDATA]\devenv.exe.config*) として[ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element)要素。 これは、プローブ パスから検索を回避するので、独自のアセンブリを検索する Visual Studio のプロセスをできるようにすることをお勧めの方法です。
+    Visual Studio の pkgdef サブシステムは、実行時に、Visual Studio プロセスのランタイム構成ファイルにこれらのエントリをマージ ( *[VSAPPDATA]\devenv.exe.config*) として[ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element)要素。 これは、プローブ パスから検索を回避するので、独自のアセンブリを検索する Visual Studio のプロセスをできるようにすることをお勧めの方法です。
 
 ### <a name="reacting-to-this-breaking-change"></a>この重大な変更に反応します。
 
 * 拡張機能は、Visual Studio プロセス内で実行している: 場合
 
-   * コードは Visual Studio のコア アセンブリを検索することになります。
-   * 使用を検討して、 *.pkgdef*ファイルに必要な場合に、アセンブリへのパスを指定します。
+  * コードは Visual Studio のコア アセンブリを検索することになります。
+  * 使用を検討して、 *.pkgdef*ファイルに必要な場合に、アセンブリへのパスを指定します。
 
 * 拡張機能は Visual Studio プロセスの外部で実行されている: 場合
 
-   Visual Studio のコア アセンブリを探して検討<em>[INSTALLDIR] \Common7\IDE\*、* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>または *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*構成ファイルまたはアセンブリ リゾルバーを使用します。
+  Visual Studio のコア アセンブリを探して検討<em>[INSTALLDIR] \Common7\IDE\*、* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>または *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*構成ファイルまたはアセンブリ リゾルバーを使用します。
 
 ## <a name="change-reduce-registry-impact"></a>変更:レジストリへの影響を減らす
 

@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c307f54deff676ce1add8c745e9d92f1bb3fd657
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbd0a9a1886bc1f8743ac8919bcc9cb39559dd19
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342193"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824943"
 ---
 # <a name="command-implementation"></a>コマンドの実装
 VSPackage のコマンドを実装するには、次のタスクを実行する必要があります。
@@ -67,23 +67,23 @@ if ( null != mcs )
 
 - かどうかには、いずれかのメソッドの実装は、GUID と、コマンドの両方を認識し、メソッドは、すべてのコマンドのコマンド フラグ フィールドを設定する必要があります (で、`prgCmds`パラメーター)、次を使用して<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>フラグ。
 
-    - `OLECMDF_SUPPORTED`:コマンドがサポートされています。
+  - `OLECMDF_SUPPORTED`:コマンドがサポートされています。
 
-    - `OLECMDF_INVISIBLE`:コマンドは表示されません。
+  - `OLECMDF_INVISIBLE`:コマンドは表示されません。
 
-    - `OLECMDF_LATCHED`:このコマンドがオンにしをオンになっているが表示されます。
+  - `OLECMDF_LATCHED`:このコマンドがオンにしをオンになっているが表示されます。
 
-    - `OLECMDF_ENABLED`:コマンドが有効になっているとします。
+  - `OLECMDF_ENABLED`:コマンドが有効になっているとします。
 
-    - `OLECMDF_DEFHIDEONCTXTMENU`:コマンドは、ショートカット メニューに表示される場合、非表示にする必要があります。
+  - `OLECMDF_DEFHIDEONCTXTMENU`:コマンドは、ショートカット メニューに表示される場合、非表示にする必要があります。
 
-    - `OLECMDF_NINCHED`:コマンドがメニュー コント ローラーが有効でないが、そのドロップダウン メニューからリストが空でないとは引き続き使用できます。 (このフラグはあまり使用されません。)
+  - `OLECMDF_NINCHED`:コマンドがメニュー コント ローラーが有効でないが、そのドロップダウン メニューからリストが空でないとは引き続き使用できます。 (このフラグはあまり使用されません。)
 
 - コマンドが定義されている場合、 *.vsct*ファイルと、`TextChanges`フラグは、次のパラメーターを設定します。
 
-    - 設定、`rgwz`の要素、`pCmdText`パラメーターをコマンドの新しいテキスト。
+  - 設定、`rgwz`の要素、`pCmdText`パラメーターをコマンドの新しいテキスト。
 
-    - 設定、`cwActual`の要素、`pCmdText`パラメーターをコマンド文字列のサイズ。
+  - 設定、`cwActual`の要素、`pCmdText`パラメーターをコマンド文字列のサイズ。
 
 また、必ず、現在のコンテキストは、automation 関数ではないことオートメーション機能を処理するために、コマンドの目的は具体的にはしない限り。
 

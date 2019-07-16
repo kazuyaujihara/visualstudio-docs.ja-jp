@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77e6dca01f728ae4a5a3f0a5f12f50ab581948c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 00668fdebdbc8fc6a26c30a8762aa6f03d6e2769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335383"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824561"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Visual Studio の評価ツール
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Visual Studio の職人気質のチェックリスト
@@ -49,11 +49,11 @@ ms.locfileid: "66335383"
 
 - 省略記号ボタン、コマンド、およびユーザー入力をキャプチャする UI を起動するコマンド リンクが終了することを確認 **[...]** .
 
-     次に例を示します。 
+  次に例を示します。
 
-    - **[詳細]** ダイアログ ボックス上のボタンをクリックします。
+  - **[詳細]** ダイアログ ボックス上のボタンをクリックします。
 
-    - [ツール] メニューのコマンド オプション (**ツール > オプション**) コマンドの目的は、ダイアログ自体を起動するため、省略記号を取得する必要がありますできません。
+  - [ツール] メニューのコマンド オプション (**ツール > オプション**) コマンドの目的は、ダイアログ自体を起動するため、省略記号を取得する必要がありますできません。
 
 - UI に業界標準の条項を除く、省略形が含まれていないことを確認します。 たとえば、HTML も TCP/IP する必要があります簡潔も OOM (メモリ不足) と PII (個人を特定できる情報) にする必要。
 
@@ -145,9 +145,9 @@ ms.locfileid: "66335383"
 
 - フィールドが必須のフィールドとして識別する必要がありますの場合は、次のコマンドを確認します。
 
-    - バック グラウンドに設定されている`Environment.ControlEditRequiredBackground`に設定されているフォア グラウンドと `Environment.ControlEditRequiredHintText`
+  - バック グラウンドに設定されている`Environment.ControlEditRequiredBackground`に設定されているフォア グラウンドと `Environment.ControlEditRequiredHintText`
 
-    - 内でのコントロールとして表示されるヒント テキストが **"\<必要 >"**
+  - 内でのコントロールとして表示されるヒント テキストが **"\<必要 >"**
 
 #### <a name="button-controls"></a>ボタン コントロール
 
@@ -169,11 +169,11 @@ ms.locfileid: "66335383"
 
 - VS の色が使用されるを確認します。
 
-    - `Environment.ControlLinkText`
+  - `Environment.ControlLinkText`
 
-    - `Environment.ControlLinkTextHover`
+  - `Environment.ControlLinkTextHover`
 
-    - `Environment.ControlLinkTextPressed`
+  - `Environment.ControlLinkTextPressed`
 
 - ハイパーリンクが段落に埋め込まれている場合を除き、下線なしで青に表示されることを確認します。
 

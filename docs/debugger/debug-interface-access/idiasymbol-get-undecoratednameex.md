@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2a952c074e62e7fe999826882e382a552789f3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400552"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64783867"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 C++ の非装飾の名前の取得の一部またはすべての装飾 (リンケージ) 名。
@@ -52,7 +52,7 @@ HRESULT get_undecoratedNameEx( 
 > [!NOTE]
 > フラグ名は、コードに宣言を追加するか、生の値を使用する必要があるため、DIA SDK で定義されていません。
 
-|フラグ|[値]|説明|
+|フラグ|Value|説明|
 |----------|-----------|-----------------|
 |UNDNAME_COMPLETE|0x0000|完全な undecoration を有効にします。|
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Microsoft 拡張キーワードから先頭のアンダー スコアを削除します。|

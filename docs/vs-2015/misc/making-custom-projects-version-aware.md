@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422725"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825681"
 ---
 # <a name="making-custom-projects-version-aware"></a>カスタム プロジェクトでのバージョンの認識
 カスタム プロジェクト システムでは、カスタム プロジェクトを Visual Studio の複数のバージョンに読み込むことができます。 また、そのタイプのプロジェクトが、以前のバージョンの Visual Studio に読み込まれないようにすることもできます。 そのプロジェクトの修復や変換や廃止が必要になった場合に備えて、今後のバージョンでそのプロジェクト自体が識別されるようにすることもできます。  
@@ -28,9 +28,9 @@ ms.locfileid: "63422725"
   
 2. `VSPUVF_PROJECT_SAFEREPAIR`:により、プロジェクトは、以前のバージョンと互換性のあるせず、製品の以前のバージョンで生じる可能性のある問題が発生します。  
   
-3. `VSPUVF_PROJECT_UNSAFEREPAIR`:により、プロジェクトは下位互換性は、製品の以前のバージョンとの遭遇した問題のいくつかリスクです。 たとえば、プロジェクトが別の SDK バージョンに依存している場合、プロジェクトには互換性がありません。  
+3. `VSPUVF_PROJECT_UNSAFEREPAIR` :により、プロジェクトは下位互換性は、製品の以前のバージョンとの遭遇した問題のいくつかリスクです。 たとえば、プロジェクトが別の SDK バージョンに依存している場合、プロジェクトには互換性がありません。  
   
-4. `VSPUVF_PROJECT_ONEWAYUPGRADE`:により、プロジェクトは、以前のバージョンと互換性がありません。  
+4. `VSPUVF_PROJECT_ONEWAYUPGRADE` :により、プロジェクトは、以前のバージョンと互換性がありません。  
   
 5. `VSPUVF_PROJECT_INCOMPATIBLE`:現在のバージョンがこのプロジェクトをサポートしないことを示します。  
   
@@ -142,12 +142,12 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
 - LogMessage 関数には、次のエラー レベルがあります。  
   
-    - 0 は、トレースする情報用です。  
-  
-    - 1 は警告用です。  
-  
-    - 2 はエラー用です。  
-  
-    - 3 はレポート フォーマッタ用です。 プロジェクトをアップグレードすると、"Converted" という単語が 1 回記録されます。この単語はローカライズしないでください。  
+  - 0 は、トレースする情報用です。  
+
+  - 1 は警告用です。  
+
+  - 2 はエラー用です。  
+
+  - 3 はレポート フォーマッタ用です。 プロジェクトをアップグレードすると、"Converted" という単語が 1 回記録されます。この単語はローカライズしないでください。  
   
 - プロジェクトの修復やアップグレードが必要ない場合は、UpgradeProject_CheckOnly メソッドまたは UpgradeProjectFlavor_CheckOnly メソッドの実行時にプロジェクト システムが警告またはエラーを記録したときにのみ、ログ ファイルが生成されます。

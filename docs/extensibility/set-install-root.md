@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b17bc1936d077e379ff9eca7460fab1a3a37722
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338404"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852194"
 ---
-# <a name="installing-outside-the-extensions-folder"></a>拡張機能フォルダー外でのインストール
+# <a name="install-outside-the-extensions-folder"></a>拡張機能フォルダー外でのインストール
 
-Visual Studio 2017 と VSIX v3 以降 (バージョン 3)、拡張機能フォルダーの外部で資産を拡張機能をインストールするためのサポートを開始しました。 現時点では、次の場所は、([INSTALLDIR] は、Visual Studio インスタンスのインストール ディレクトリにマップ) の有効なインストール場所として有効になっているは。
+拡張機能フォルダーの外部 (バージョン 3) 拡張機能資産を Visual Studio 2017 と VSIX v3 以降をインストールできます。 現時点では、次の場所は、([INSTALLDIR] は、Visual Studio インスタンスのインストール ディレクトリにマップ) の有効なインストール場所として有効になっているは。
 
 * [INSTALLDIR]\MSBuild
 * [INSTALLDIR]\Xml\Schemas
@@ -25,9 +25,10 @@ Visual Studio 2017 と VSIX v3 以降 (バージョン 3)、拡張機能フォ�
 * [INSTALLDIR]\Licenses
 * [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
 * [INSTALLDIR]\Common7\IDE\RemoteDebugger
-* [INSTALLDIR]\Common7\IDE\VC\VCTargets
+* [INSTALLDIR] \Common7\IDE\VC\VCTargets (Visual Studio 2017 のサポートされている; Visual Studio 2019 の非推奨とのみ以降)
 
->**注:** VSIX 形式では、VS のインストール フォルダーの構造の外にインストールできません。
+> [!NOTE]
+> VSIX 形式は、Visual Studio のインストール フォルダーの構造の外にインストールできます。 
 
 これらのディレクトリへのインストールをサポートするために、VSIX を「インスタンスごとのコンピューターごとの」インストールする必要があります。 これは、extension.vsixmanifest デザイナーで「すべてのユーザー」のチェック ボックスをオンに有効にすることができます。
 
@@ -49,7 +50,8 @@ Visual Studio 2017 と VSIX v3 以降 (バージョン 3)、拡張機能フォ�
  </ProjectReference>
 ```
 
->**注:** たい場合は、.csproj ファイルを直接編集できます。
+> [!NOTE]
+> たい場合は、.csproj ファイルを直接編集できます。
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>InstallRoot、下のサブパスを設定する方法
 

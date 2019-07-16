@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb2b23dcc01d90bc4365c7d5673e6232229b8d3e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426602"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825996"
 ---
 # <a name="in-source-suppression-overview"></a>ソース内抑制の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,15 +64,15 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
 - **スコープ**-警告を抑制するターゲット。 ターゲットが指定されていない場合は、属性のターゲットに設定されます。 サポートされているスコープを以下に示します。  
   
-    - Module  
-  
-    - 名前空間  
-  
-    - リソース  
-  
-    - 型  
-  
-    - メンバー  
+  - Module  
+
+  - 名前空間  
+
+  - リソース  
+
+  - 型  
+
+  - メンバー  
   
 - **ターゲット**- 警告を抑制するターゲットを指定するために使用する識別子。 項目の完全修飾名を含める必要があります。  
   

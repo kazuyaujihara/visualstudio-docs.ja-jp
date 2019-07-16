@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d297b883c4d5217a0175c739bf460872d464503f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: fd251ff10700df0ca01599b4247266d4375a4250
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746672"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821315"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise の IntelliTrace (C#、Visual Basic、 C++)
 
@@ -74,19 +74,19 @@ IntelliTrace を使用したデバッグがどのように役立つかの例を�
 
 - アプリケーションのデータ ファイルが破損していますが、このイベントの発生場所を特定できません。
 
-     IntelliTrace がなければ、コード全体を確認して可能性のあるファイルのアクセスをすべて見つけ、それらのアクセスにブレークポイントを設定してから、アプリケーションを再実行して、問題の発生箇所を探さなければなりません。 IntelliTrace を使用すると、各イベントが発生したときに収集されたアプリケーションに関するファイル アクセス イベントや特定の詳細をすべて表示できます。
+  IntelliTrace がなければ、コード全体を確認して可能性のあるファイルのアクセスをすべて見つけ、それらのアクセスにブレークポイントを設定してから、アプリケーションを再実行して、問題の発生箇所を探さなければなりません。 IntelliTrace を使用すると、各イベントが発生したときに収集されたアプリケーションに関するファイル アクセス イベントや特定の詳細をすべて表示できます。
 
 - 例外が発生します。
 
-     IntelliTrace がない場合、例外に関するメッセージが表示されますが、例外の原因となったイベントに関する詳細な情報はわかりません。 呼び出し履歴を調べて、例外の原因となった一連の呼び出しを確認することはできますが、それらの呼び出し中に発生したイベントのシーケンスを確認することはできません。 IntelliTrace を使用すると、例外の前に発生したイベントを確認できます。
+  IntelliTrace がない場合、例外に関するメッセージが表示されますが、例外の原因となったイベントに関する詳細な情報はわかりません。 呼び出し履歴を調べて、例外の原因となった一連の呼び出しを確認することはできますが、それらの呼び出し中に発生したイベントのシーケンスを確認することはできません。 IntelliTrace を使用すると、例外の前に発生したイベントを確認できます。
 
 - 展開されたアプリケーションでバグまたはクラッシュが発生しています。
 
-     Microsoft Azure ベースのアプリケーションの場合、アプリケーションを発行する前に IntelliTrace データの収集を構成できます。 アプリケーションの実行中、IntelliTrace はデータを .iTrace ファイルに保存します。 参照してください[IntelliTrace および Visual Studio で発行済みのクラウド サービスをデバッグ](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)します。
+  Microsoft Azure ベースのアプリケーションの場合、アプリケーションを発行する前に IntelliTrace データの収集を構成できます。 アプリケーションの実行中、IntelliTrace はデータを .iTrace ファイルに保存します。 参照してください[IntelliTrace および Visual Studio で発行済みのクラウド サービスをデバッグ](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)します。
 
-     IIS 7.0、7.5、および 8.0 でホストされる ASP.NET Web アプリ、および SharePoint 2010 アプリケーションや SharePoint 2013 アプリケーションの場合、Microsoft Monitoring Agent を単独で、または System Center 2012 と連携して使用して、IntelliTrace データを .iTrace ファイルに保存できます。
+  IIS 7.0、7.5、および 8.0 でホストされる ASP.NET Web アプリ、および SharePoint 2010 アプリケーションや SharePoint 2013 アプリケーションの場合、Microsoft Monitoring Agent を単独で、または System Center 2012 と連携して使用して、IntelliTrace データを .iTrace ファイルに保存できます。
 
-     これは、配置されたアプリの問題を診断する場合に便利です。 参照してください[IntelliTrace スタンドアロン コレクターを使用して、](../debugger/using-the-intellitrace-stand-alone-collector.md)します。
+  これは、配置されたアプリの問題を診断する場合に便利です。 参照してください[IntelliTrace スタンドアロン コレクターを使用して、](../debugger/using-the-intellitrace-stand-alone-collector.md)します。
 
 ## <a name="WhatData"></a> IntelliTrace が収集するデータ
 
@@ -96,9 +96,9 @@ IntelliTrace を使用したデバッグがどのように役立つかの例を�
 
 - **デバッガー イベント**
 
-     IntelliTrace は、Visual Studio デバッガーに発生するイベントを常に記録します。 たとえば、アプリケーションの起動はデバッガー イベントです。 その他のデバッガー イベントは、アプリケーションの実行を中断する停止イベントです。 たとえば、ご利用のプログラムはブレークポイントをヒットしたり、トレースポイントをヒットしたり、 **[ステップ]** コマンドを実行したりします。
+  IntelliTrace は、Visual Studio デバッガーに発生するイベントを常に記録します。 たとえば、アプリケーションの起動はデバッガー イベントです。 その他のデバッガー イベントは、アプリケーションの実行を中断する停止イベントです。 たとえば、ご利用のプログラムはブレークポイントをヒットしたり、トレースポイントをヒットしたり、 **[ステップ]** コマンドを実行したりします。
 
-     、パフォーマンスを向上させるは既定では、IntelliTrace が、デバッガー イベントのすべての値を記録しません。 代わりに、次の値を記録します。
+  、パフォーマンスを向上させるは既定では、IntelliTrace が、デバッガー イベントのすべての値を記録しません。 代わりに、次の値を記録します。
 
   - **[ローカル]** ウィンドウの値。 これらの値を確認するために **[ローカル]** ウィンドウを開いたままにします。
 
@@ -110,29 +110,29 @@ IntelliTrace を使用したデバッグがどのように役立つかの例を�
 
 - **例外**
 
-     IntelliTrace は、次のような種類の例外の種類とメッセージを記録します。
+  IntelliTrace は、次のような種類の例外の種類とメッセージを記録します。
 
-    - 例外がスローおよびキャッチされた場合の処理済みの例外
+  - 例外がスローおよびキャッチされた場合の処理済みの例外
 
-    - ハンドルされない例外
+  - ハンドルされない例外
 
 - **.NET Framework イベント**
 
-   既定では、IntelliTrace は最も一般的な .NET Framework のイベントを記録します。 たとえば、<xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType>イベント、IntelliTrace はチェック ボックスをオンの状態とテキストを収集します。
+  既定では、IntelliTrace は最も一般的な .NET Framework のイベントを記録します。 たとえば、<xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType>イベント、IntelliTrace はチェック ボックスをオンの状態とテキストを収集します。
 
 - **SharePoint 2010 アプリケーション イベントと SharePoint 2013 アプリケーション イベント**
 
-     Visual Studio の外部で実行されている SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーションのユーザー プロファイル イベントと Unified Logging System (ULS) イベントのサブセットを記録できます。 これらのイベントを .iTrace ファイルに保存できます。 Visual Studio Enterprise 2015 またはそれ以降のバージョンでは、以前のバージョンの Visual Studio Ultimate が必要ですか[Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384)で実行されている**トレース**モード。
+  Visual Studio の外部で実行されている SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーションのユーザー プロファイル イベントと Unified Logging System (ULS) イベントのサブセットを記録できます。 これらのイベントを .iTrace ファイルに保存できます。 Visual Studio Enterprise 2015 またはそれ以降のバージョンでは、以前のバージョンの Visual Studio Ultimate が必要ですか[Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384)で実行されている**トレース**モード。
 
-     .iTrace ファイルを開いたら、SharePoint 相関 ID を入力して対応する Web 要求を見つけ、記録されたイベントを表示し、特定のイベントからのデバッグを開始します。 ファイルにハンドルされない例外が含まれている場合は、相関 ID を選択して例外のデバッグを開始できます。
+  .iTrace ファイルを開いたら、SharePoint 相関 ID を入力して対応する Web 要求を見つけ、記録されたイベントを表示し、特定のイベントからのデバッグを開始します。 ファイルにハンドルされない例外が含まれている場合は、相関 ID を選択して例外のデバッグを開始できます。
 
-     参照トピック
+  参照トピック
 
-    - [IntelliTrace スタンドアロン コレクターを使用する](../debugger/using-the-intellitrace-stand-alone-collector.md)
+  - [IntelliTrace スタンドアロン コレクターを使用する](../debugger/using-the-intellitrace-stand-alone-collector.md)
 
-    - [保存された IntelliTrace データを使用する](../debugger/using-saved-intellitrace-data.md)
+  - [保存された IntelliTrace データを使用する](../debugger/using-saved-intellitrace-data.md)
 
-    - [チュートリアル: IntelliTrace を使用して SharePoint アプリケーションのデバッグ](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
+  - [チュートリアル: IntelliTrace を使用して SharePoint アプリケーションのデバッグ](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
 
 **スナップショットをキャプチャします。**
 

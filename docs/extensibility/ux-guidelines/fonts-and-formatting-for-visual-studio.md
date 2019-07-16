@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f510568c977579fa3e48d57db548040d16dcb574
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335488"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824330"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio のフォントと書式
 ## <a name="BKMK_TheEnvironmentFont"></a> 環境フォント
@@ -394,11 +394,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - 大規模な見出し (環境フォント x 155% 以上) は、次の目的で色付けすることができます。
 
-    - Visual Studio の UI の署名に視覚的な効果を提供するには
+  - Visual Studio の UI の署名に視覚的な効果を提供するには
 
-    - 特定の領域に注意を促す
+  - 特定の領域に注意を促す
 
-    - 標準的な濃いグレーまたは黒の環境のテキストの色を安全に提供するには
+  - 標準的な濃いグレーまたは黒の環境のテキストの色を安全に提供するには
 
 - 見出しの色は、既存 Visual Studio のブランドの色、主にメイン紫色の #FF68217A を活用する必要があります。
 

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 520c31f671aee05663a5471aca05cfe06313b168
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: f2de40c520bca0ea04f50ec782fec2dda531172e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847030"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67822069"
 ---
 # <a name="proxy-authorization-required"></a>プロキシ認証が要求される
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ ms.locfileid: "65847030"
 
 - 上記の手順で問題が解決しない場合、考えられる原因は、プロキシ サーバーが http://go.microsoft.com のアドレスに対しては資格情報を要求せず、*.visualStudio.com のアドレスに対しては資格情報を要求することです。 これらのサーバーでは、Visual Studio ですべてのサインイン シナリオのブロックを解除する許可リストに、次の Url を追加する必要があります。
 
-    - *.windows.net
+  - *.windows.net
 
-    - *.microsoftonline.com
+  - *.microsoftonline.com
 
-    - *.visualstudio.com
+  - *.visualstudio.com
 
-    - *.microsoftonline.com
+  - *.microsoftonline.com
 
-    - *.live.com
+  - *.live.com
 
 - 削除することができます、[http://go.microsoft.com](http://go.microsoft.com ) アドレスを許可一覧から、プロキシ認証ダイアログ ボックスが両方に表示されるように、[http://go.microsoft.com](http://go.microsoft.com ) アドレスと Visual Studio を再起動すると、サーバー エンドポイント。
 

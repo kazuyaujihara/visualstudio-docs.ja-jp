@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b82af5d19b45092f649b22503cfbdf1001433c30
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ad4e3c3007a00245f632e4645deb1014b5c22508
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746803"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821387"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Windows フォームに基づくドメイン固有言語を作成します。
 
@@ -59,9 +59,9 @@ DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの
 
 - `UI`プロジェクトには、DSL にバインドされたフォーム コントロールの実際のサンプルが含まれています。 ただし、これは機能しません、DSL 定義を変更したとき。 `UI`プロジェクトが含まれています。
 
-    - という名前の Windows フォーム クラス`ModelViewControl`します。
+  - という名前の Windows フォーム クラス`ModelViewControl`します。
 
-    - という名前のファイル`DataBinding.cs`の他の部分定義を格納している`ModelViewControl`します。 そのコンテンツを表示する**ソリューション エクスプ ローラー**ファイルのショートカット メニューを開き、選択**コードの表示**します。
+  - という名前のファイル`DataBinding.cs`の他の部分定義を格納している`ModelViewControl`します。 そのコンテンツを表示する**ソリューション エクスプ ローラー**ファイルのショートカット メニューを開き、選択**コードの表示**します。
 
 ### <a name="about-the-ui-project"></a>UI プロジェクトについて
 

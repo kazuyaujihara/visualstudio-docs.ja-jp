@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e85fc0add84f6f6097355d1fc7a58cc954c8e538
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158870"
 ---
 # <a name="programming-with-the-uml-api"></a>UML API を使用したプログラミング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ UML API の Visual Studio を使用して、作成、読み取り、および UM
   
 |トピック|説明されている型およびメソッドの例|説明されている機能|  
 |-----------|-----------------------------------------|------------------------|  
-|[UML API を使用して関係をナビゲートする](../modeling/navigate-relationships-with-the-uml-api.md)|UML 要素とそのプロパティおよび関連。 たとえば、IElement とその子孫:IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|Visual Studio で UML モデルは、UML 仕様バージョン 2.1.2 になり、入手できるに準拠している、 [UML リソース ページ](http://go.microsoft.com/fwlink/?LinkId=160796)します。 それぞれの型は、プレフィックスとして "I" が付けられた、UML 型と同じ名前のインターフェイスです。|  
+|[UML API を使用して関係をナビゲートする](../modeling/navigate-relationships-with-the-uml-api.md)|UML 要素とそのプロパティおよび関連。 たとえば、IElement とその子孫:IClass、IActivity、IUseCase、IComponent、IInteraction、IModel、IPackage|Visual Studio で UML モデルは、UML 仕様バージョン 2.1.2 になり、入手できるに準拠している、 [UML リソース ページ](http://go.microsoft.com/fwlink/?LinkId=160796)します。 それぞれの型は、プレフィックスとして "I" が付けられた、UML 型と同じ名前のインターフェイスです。|  
 |[UML モデル内に要素および関係を生成する](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|それぞれの要素型は、子を生成するためのメソッドを持ちます。|  
 |[図に UML モデルを表示する](../modeling/display-a-uml-model-on-diagrams.md)|IShape、IDiagram<br /><br /> IShape.Move()|モデルのそれぞれの要素は、図においてシェイプとして表すことができます。 場合によっては、それぞれのオブジェクトに対して新しいシェイプを生成できます。 これらのシェイプについては、移動、サイズ変更、色の設定、および折りたたみ/展開を行うことができます。|  
 |[UML モデル内を移動する](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|モデル ストアは、モデルを格納します。<br /><br /> 図コンテキストは、現在の図およびストアへのアクセスを提供します。|  

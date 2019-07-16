@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fa0472ae7ad7200ead372057f1dd778c077f764e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 573196ebc0a0719cf736f1299eebae4eb6dcdb73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566216"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821924"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML データのデータセットへの読み込み
 
@@ -119,9 +119,9 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
 
 - 2 つ<xref:System.Windows.Forms.Button>コントロール。
 
-    - 1 つのボタンを選択し、XML ファイルをデータセットに読み込みますで表示、<xref:System.Windows.Forms.DataGridView>コントロール。
+  - 1 つのボタンを選択し、XML ファイルをデータセットに読み込みますで表示、<xref:System.Windows.Forms.DataGridView>コントロール。
 
-    - 2 番目のボタンと、データセットからスキーマを抽出し、<xref:System.IO.StringWriter>で表示、<xref:System.Windows.Forms.TextBox>コントロール。
+  - 2 番目のボタンと、データセットからスキーマを抽出し、<xref:System.IO.StringWriter>で表示、<xref:System.Windows.Forms.TextBox>コントロール。
 
 ### <a name="to-add-controls-to-the-form"></a>フォームにコントロールを追加するには
 
@@ -144,7 +144,7 @@ ADO.NET では、XML データを操作するための単純なメソッドを�
     |`Button1`|**Name**|`ReadXmlButton`|
     ||**[テキスト]**|`Read XML`|
     |`Button2`|**Name**|`ShowSchemaButton`|
-    ||**[テキスト]**|`Show Schema`|
+    ||**Text**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>XML データを受信するデータセットを作成します。
 

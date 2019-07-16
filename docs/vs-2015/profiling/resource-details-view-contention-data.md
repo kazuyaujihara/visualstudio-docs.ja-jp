@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aac43a88a62182a33ea3b340c5520e921d681cd7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 922edcd45dd42c8da5a9ec4dc8d3e8f450ceea09
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089576"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823596"
 ---
 # <a name="resource-details-view---contention-data"></a>リソースの詳細ビュー - 競合データ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ ms.locfileid: "60089576"
   
 - 次のいずれかの操作を実行します。  
   
-    - 前のズーム レベルに戻るには、**[縮小]** をクリックします。  
-  
-    - タイムライン全体をビューに表示するには、**[ズームのリセット]** をクリックします。  
-  
+  - 前のズーム レベルに戻るには、 **[縮小]** をクリックします。  
+
+  - タイムライン全体をビューに表示するには、 **[ズームのリセット]** をクリックします。  
+
 #### <a name="to-view-the-call-stack-of-an-event"></a>イベントの呼び出し履歴を表示するには  
   
 - タイムライン グラフで、イベント バーをクリックします。  
@@ -55,7 +55,7 @@ ms.locfileid: "60089576"
   
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>リソースの競合イベントの呼び出しツリーを表示するには  
   
-- タイムライン グラフで、**[合計]** をクリックします。  
+- タイムライン グラフで、 **[合計]** をクリックします。  
   
      リソースの競合ビューが表示されます。 詳細については、「[Resource Contentions View](../profiling/resource-contentions-view-contention-data.md) (リソースの競合ビュー)」をご覧ください。  
   

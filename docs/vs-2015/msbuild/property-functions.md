@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4108e478e9e77a5ed5699b39dfae44884a6befd3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065183"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826170"
 ---
 # <a name="property-functions"></a>プロパティ関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "60065183"
   
 - [プロパティ関数の構文](#BKMK_Syntax)  
   
-    - [文字列プロパティ関数](#BKMK_String)  
-  
-    - [静的プロパティ関数](#BKMK_Static)  
-  
-    - [静的プロパティ上でインスタンス メソッドを呼び出す](#BKMK_InstanceMethods)  
-  
-    - [MSBuild プロパティ関数](#BKMK_PropertyFunctions)  
+  - [文字列プロパティ関数](#BKMK_String)  
+
+  - [静的プロパティ関数](#BKMK_Static)  
+
+  - [静的プロパティ上でインスタンス メソッドを呼び出す](#BKMK_InstanceMethods)  
+
+  - [MSBuild プロパティ関数](#BKMK_PropertyFunctions)  
   
 - [入れ子になったプロパティ関数](#BKMK_Nested)  
   
@@ -74,7 +74,7 @@ ms.locfileid: "60065183"
   
  `<Today>$([System.DateTime]::Now)</Today>`  
   
- 静的メソッドを呼び出すには、次の構文を使用します。ここで、*Class* はシステム クラスの名前、*Method* はメソッドの名前、*(Parameters)* はメソッドのパラメーター リストです。  
+ 静的メソッドを呼び出すには、次の構文を使用します。ここで、*Class* はシステム クラスの名前、*Method* はメソッドの名前、 *(Parameters)* はメソッドのパラメーター リストです。  
   
  `$([Class]::Method(Parameters))`  
   
@@ -167,7 +167,7 @@ ms.locfileid: "60065183"
 - System.IO.File::ReadAllText  
   
 ### <a name="BKMK_InstanceMethods"></a> 静的プロパティ上でインスタンス メソッドを呼び出す  
- オブジェクト インスタンスを返す静的プロパティにアクセスすると、そのオブジェクトのインスタンス メソッドを呼び出すことができます。 インスタンス メソッドを呼び出すには、次の構文を使用します。ここで、*Class* はシステム クラスの名前、*Property* はプロパティの名前、*Method* はメソッドの名前、*(Parameters)* はメソッドのパラメーター リストです。  
+ オブジェクト インスタンスを返す静的プロパティにアクセスすると、そのオブジェクトのインスタンス メソッドを呼び出すことができます。 インスタンス メソッドを呼び出すには、次の構文を使用します。ここで、*Class* はシステム クラスの名前、*Property* はプロパティの名前、*Method* はメソッドの名前、 *(Parameters)* はメソッドのパラメーター リストです。  
   
  `$([Class]::Property.Method(Parameters))`  
   

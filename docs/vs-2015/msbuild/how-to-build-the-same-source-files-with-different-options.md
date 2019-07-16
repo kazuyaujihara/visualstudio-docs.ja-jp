@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045604"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821684"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>方法: 同じソース ファイルを異なるオプションでビルドする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,13 +55,13 @@ ms.locfileid: "60045604"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>コマンド ライン上でプロジェクト プロパティを設定するには  
   
-- **/property** スイッチをプロパティおよびプロパティ値と共に使用します。 例:  
+- **/property** スイッチをプロパティおよびプロパティ値と共に使用します。 例えば:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - または  
+     \- または -  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
@@ -69,13 +69,13 @@ ms.locfileid: "60045604"
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>コマンド ライン上で 2 つ以上のプロジェクト プロパティを指定するには  
   
-- **/property** または **/p** スイッチをプロパティおよびプロパティ値と共に複数回使用するか、**/property** または **/p** スイッチを 1 回使用し、複数のプロパティをセミコロン (;) で分けます。 例えば:  
+- **/property** または **/p** スイッチをプロパティおよびプロパティ値と共に複数回使用するか、 **/property** または **/p** スイッチを 1 回使用し、複数のプロパティをセミコロン (;) で分けます。 例えば:  
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   - または  
+   \- または  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bd7a55e94b3b9d8ca9e68a91de8512f30eb500
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f89c62863aadf4e1f8902799b502c07b9dea528d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747503"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821912"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>方法: プログラム コード内のファイルからモデルを開く
 
@@ -33,13 +33,13 @@ Visual Studio 拡張機能では、この目的の ModelBus を使用できま�
 > [!NOTE]
 > ターゲット フレームワークがすることはできません **.NET Framework 4 Client Profile**します。
 
-## <a name="references"></a>参照
+## <a name="references"></a>リファレンス
 
 Visual Studio アプリケーション プロジェクトにこれらの参照を追加します。
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-    - 表示されない場合、 **.NET**  タブで、**参照の追加**ダイアログ ボックスで、をクリックして、**参照**タブに移動して`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`します。
+  - 表示されない場合、 **.NET**  タブで、**参照の追加**ダイアログ ボックスで、をクリックして、**参照**タブに移動して`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`します。
 
 - DSL アセンブリ、DSL プロジェクト bin フォルダーの下で検索されます。 その名前の形式では通常です。*Yourcompany ' と*.*プロジェクト*`.Dsl.dll`します。
 

@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9e5de52fbe15049f4acb3dacf236bfe9f4ecc92
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417781"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823264"
 ---
 # <a name="model-your-app39s-architecture"></a>アプリ モデル&#39;アーキテクチャ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -244,9 +244,9 @@ ms.locfileid: "63417781"
   
 - 主要なパーツおよびそれらの関係のモデル これらは、関連付けと依存関係を持つ、クラス、またはコンポーネントとインターフェイスである可能性があります。 これらの要素は、通常、次の 2 つのカテゴリに分類されます。  
   
-    - パターンを使用するコード中のすべての箇所に開発者が複製しなければならない要素。 テンプレートの型を使用すると、これらを記述することができます。 詳細については、次を参照してください。 [UML ユース ケース図。Reference](../modeling/uml-use-case-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。  
-  
-    - 開発者が使用しなければならないフレームワーク クラスを記述する要素。  
+  - パターンを使用するコード中のすべての箇所に開発者が複製しなければならない要素。 テンプレートの型を使用すると、これらを記述することができます。 詳細については、次を参照してください。 [UML ユース ケース図。Reference](../modeling/uml-use-case-diagrams-reference.md)」(UML クラス図: リファレンス) を参照してください。  
+
+  - 開発者が使用しなければならないフレームワーク クラスを記述する要素。  
   
 - パーツ間の対話のモデル (シーケンス図またはアクティビティ図を使用)。  
   

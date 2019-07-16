@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b3b47264190afcc75431a55ad6b8b4512f26ea0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d931325bd9e323fdf8fa31848a5c2671b5382543
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62858185"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825232"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>ワークフロー デザイナーでサポートされていないデバッグ シナリオ
 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] のワークフロー デザイナーには多くの新機能が追加されていますが、いくつかサポートされていないデバッグ シナリオがあります。 このドキュメントでは、サポートされていないワークフロー デザイナーのデバッグ シナリオについて詳しく説明します。  
@@ -41,16 +41,16 @@ ms.locfileid: "62858185"
   
 - [ブレークポイント] ウィンドウまたはショートカット メニューは、ワークフローのデバッグで、次の列またはオプションをサポートしていません。  
   
-    - 条件  
-  
-    - ヒット カウント  
-  
-    - ヒット時   
-  
-    - 関数  
-  
-    - データ  
-  
-    - プロセス  
-  
-    - 逆アセンブルを表示
+  - 条件  
+
+  - ヒット カウント  
+
+  - ヒット時  
+
+  - 関数  
+
+  - データ  
+
+  - [処理]  
+
+  - 逆アセンブルを表示

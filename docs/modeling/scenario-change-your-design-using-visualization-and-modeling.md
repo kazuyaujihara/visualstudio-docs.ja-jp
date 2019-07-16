@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 3ace83b86b3b1772cd111a36b5f011d023189501
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476590"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824518"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>シナリオ:視覚化およびモデリングを使用して設計を変更する
 
@@ -355,11 +355,11 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
 - クラス、インターフェイス、列挙などの型:
 
-    - *クラス* とは、特定の構造上または振る舞い上の特性を共有するオブジェクトの定義です。
+  - *クラス* とは、特定の構造上または振る舞い上の特性を共有するオブジェクトの定義です。
 
-    - *インターフェイス* は、外部から見えるオブジェクトの振る舞いの一部を定義します。
+  - *インターフェイス* は、外部から見えるオブジェクトの振る舞いの一部を定義します。
 
-    - *列挙* とは、リテラル値のリストを含む分類子です。
+  - *列挙* とは、リテラル値のリストを含む分類子です。
 
 - *属性* とは、 *分類子*の各インスタンスを記述する特定の型の値です。 分類子とは、型、コンポーネント、ユース ケース、およびアクターの総称です。
 

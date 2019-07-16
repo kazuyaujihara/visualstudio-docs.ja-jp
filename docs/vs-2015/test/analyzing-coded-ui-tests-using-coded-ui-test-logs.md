@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7040b4dd07eebb4332634d5d8ffc1d9bc8d8c06b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 90e8e85882225fbecb4947de234081ccfc26fbbb
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686477"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824212"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>コード化された UI テスト ログを使用したコード化された UI テストの分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,45 +29,45 @@ ms.locfileid: "65686477"
   
 ## <a name="how-do-i-do-this"></a>操作方法  
   
-### <a name="step-1-enable-logging"></a>手順 1: ログの有効化  
+### <a name="step-1-enable-logging"></a>手順 1:ログの有効化  
  シナリオに応じて、以下のいずれかのメソッドを使用してログを有効にします。  
   
 - ターゲット .NET Framework バージョン 4 のテスト プロジェクトに、App.config ファイルが含まれていない  
   
-    - **QTAgent32_40.exe.config** ファイルを開きます。  
-  
-         既定では、このファイルは、**\<ドライブ名>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE** にあります。  
-  
-         EqtTraceLevel の値を、目的のログ レベルに変更します。  
-  
-         ファイルを保存します。  
-  
+  - **QTAgent32_40.exe.config** ファイルを開きます。  
+
+    既定では、このファイルは、 **\<ドライブ名>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE** にあります。  
+
+    EqtTraceLevel の値を、目的のログ レベルに変更します。  
+
+    ファイルを保存します。  
+
 - ターゲット .NET Framework バージョン 4.5 のテスト プロジェクトに、App.config ファイルが含まれていない  
   
-    - **QTAgent32.exe.config** ファイルを開きます。  
-  
-         既定では、このファイルは、**\<ドライブ名>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE** にあります。  
-  
-         EqtTraceLevel の値を、目的のログ レベルに変更します。  
-  
-         ファイルを保存します。  
+  - **QTAgent32.exe.config** ファイルを開きます。  
+
+    既定では、このファイルは、 **\<ドライブ名>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE** にあります。  
+
+    EqtTraceLevel の値を、目的のログ レベルに変更します。  
+
+    ファイルを保存します。  
   
 - テスト プロジェクトに App.config ファイルが含まれている  
   
-    - プロジェクトに含まれている App.config ファイルを開きます。  
-  
-         構成ノードの下に次のコードを追加します。  
-  
-         `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
+  - プロジェクトに含まれている App.config ファイルを開きます。  
+
+    構成ノードの下に次のコードを追加します。  
+
+    `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
   
 - テスト コード自体からログを有効にする  
   
-    - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
+  - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
-### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>手順 2: コード化された UI テストを実行してログを表示する  
+### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>手順 2:コード化された UI テストを実行してログを表示する  
  **QTAgent32.exe.config** ファイルに変更を加えてコード化された UI テストを実行すると、テスト エクスプローラーの結果に、出力リンクが表示されます。 トレース レベルが “verbose” に設定されていると、ログ ファイルはテストが失敗した場合だけでなく、テストが成功した場合にも生成されます。  
   
-1. **[テスト]** メニューの **[ウィンドウ]** を選択し、**[テスト エクスプローラー]** を選択します。  
+1. **[テスト]** メニューの **[ウィンドウ]** を選択し、 **[テスト エクスプローラー]** を選択します。  
   
 2. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。  
   
@@ -76,9 +76,9 @@ ms.locfileid: "65686477"
      自動テストが実行され、成功したか失敗したかが示されます。  
   
     > [!TIP]
-    > **[テスト]** メニューからテスト エクスプローラーを表示するには、**[Windows]** をポイントし、**[テスト エクスプローラー]** をクリックします。  
+    > **[テスト]** メニューからテスト エクスプローラーを表示するには、 **[Windows]** をポイントし、 **[テスト エクスプローラー]** をクリックします。  
   
-4. テスト エクスプローラーの結果で、**[出力]** リンクを選択します。  
+4. テスト エクスプローラーの結果で、 **[出力]** リンクを選択します。  
   
      ![テスト エクスプローラーの出力リンク](../test/media/cuit-htmlactionlog1.png "CUIT_HTMLActionLog1")  
   

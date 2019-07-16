@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ead32426585ecd4962ccc869f470021c5d0976fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715212"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821362"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio のデータセット ツール
 
@@ -75,13 +75,13 @@ Visual Studio には、データセットの操作を簡略化するツールが
 
 - 使用して、 **TableAdapter 構成ウィザード**クエリや、データセットを作成するストアド プロシージャを指定し、どのようなデータベース操作 (更新、削除、およびなど) を実装します。 詳細については、次のトピックを参照してください。
 
-    - [TableAdapters を使用してデータセットを入力する](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [TableAdapters を使用してデータセットを入力する](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [データセットのデータの編集](../data-tools/edit-data-in-datasets.md)
+  - [データセットのデータの編集](../data-tools/edit-data-in-datasets.md)
 
-    - [データセットのデータの検証](../data-tools/validate-data-in-datasets.md)
+  - [データセットのデータの検証](../data-tools/validate-data-in-datasets.md)
 
-    - [データをデータベースに保存する](../data-tools/save-data-back-to-the-database.md)
+  - [データをデータベースに保存する](../data-tools/save-data-back-to-the-database.md)
 
 - クエリを実行し、データセットで、データを検索します。 詳細については、次を参照してください。[データセットを照会](../data-tools/query-datasets.md)します。 [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] により、 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)内のデータを<xref:System.Data.DataSet>オブジェクト。 詳細については、「[LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)」を参照してください。
 

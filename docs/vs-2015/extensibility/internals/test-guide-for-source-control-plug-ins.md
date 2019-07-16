@@ -14,12 +14,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a3ed1acdbf8d09616c413fa832dc452af277434b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6790e61eddc81045bb168028ee7aeef7a0492e3c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441209"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825741"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>ソース管理プラグイン向けのテスト ガイド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,53 +59,53 @@ ms.locfileid: "63441209"
   
 - [テスト領域 1: ソース管理への追加とオープン](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    - ケース 1 a:ソリューションをソース管理に追加します。  
-  
-    - ケース 1 b:ソース管理からソリューションを開く  
-  
-    - ケース 1 c:ソース管理からソリューションを追加します。  
-  
+  - ケース 1 a:ソリューションをソース管理に追加します。  
+
+  - ケース 1 b:ソース管理からソリューションを開く  
+
+  - ケース 1 c:ソース管理からソリューションを追加します。  
+
 - [テスト領域 2: ソース管理から取得](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
 - [テスト領域 3: チェックアウトとチェックアウトの取り消し](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    - ケース 3:チェック アウト/チェック アウトの取り消し  
-  
-    - ケース 3 a:チェックアウト  
-  
-    - ケース 3 b:切断されたチェック アウト  
-  
-    - ケース 3 c:保存 (QEQS) クエリの編集/クエリ  
-  
-    - 3d の場合します。サイレント チェック アウト  
-  
-    - ケース 3 e:チェック アウトを取り消し  
+  - ケース 3:チェック アウト/チェック アウトの取り消し  
+
+  - ケース 3 a:チェックアウト  
+
+  - ケース 3 b:切断されたチェック アウト  
+
+  - ケース 3 c:保存 (QEQS) クエリの編集/クエリ  
+
+  - 3d の場合します。サイレント チェック アウト  
+
+  - ケース 3 e:チェック アウトを取り消し  
   
 - [テスト領域 4: チェックイン](../../extensibility/internals/test-area-4-check-in.md)  
   
-    - ケース 4 a:変更された項目  
-  
-    - ケース 4 b:ファイルを追加します。  
-  
-    - ケース 4 c:プロジェクトの追加  
+  - ケース 4 a:変更された項目  
+
+  - ケース 4 b:ファイルを追加します。  
+
+  - ケース 4 c:プロジェクトの追加  
   
 - [テスト領域 5: ソース管理の変更](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    - ケース 5 a:バインド  
-  
-    - ケース 5 b:[バインドの解除]  
-  
-    - ケース 5 c:再バインドします。  
-  
+  - ケース 5 a:バインド  
+
+  - ケース 5 b:[バインドの解除]  
+
+  - ケース 5 c:再バインドします。  
+
 - [テスト領域 6: 削除](../../extensibility/internals/test-area-6-delete.md)  
-  
+
 - [テスト領域 7: 共有](../../extensibility/internals/test-area-7-share.md)  
-  
+
 - [テスト領域 8: プラグインの切り替え](../../extensibility/internals/test-area-8-plug-in-switching.md)  
-  
-    - 大文字と小文字の 8 a:自動の変更  
-  
-    - 大文字と小文字の 8 b:ソリューションに基づく変更  
-  
+
+  - 大文字と小文字の 8 a:自動の変更  
+
+  - 大文字と小文字の 8 b:ソリューションに基づく変更  
+
 ## <a name="see-also"></a>関連項目  
  [ソース管理プラグイン](../../extensibility/source-control-plug-ins.md)

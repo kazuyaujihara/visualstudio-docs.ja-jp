@@ -1,5 +1,5 @@
 ---
-title: DEBUGPROP_INFO_FLAGS | Microsoft Docs
+title: DEBUGPROP_INFO_FLAGS |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 764d28972575e8da9ef499e6d33a4a4a1deb3b07
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143005"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -85,14 +85,14 @@ public enum enum_DEBUGPROP_INFO_FLAGS { 
  DEBUGPROP_INFO_ATTRIB  
  初期化/使用、`dwAttrib`フィールド。  
   
- DEBUGPROP_INFO_PROP,  
+ DEBUGPROP_INFO_PROP、  
  初期化/使用、`pProperty`フィールドを含む、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)インターフェイス。  
   
  DEBUGPROP_INFO_VALUE_AUTOEXPAND  
  [値] フィールドは、この種類のオブジェクトの使用可能な場合は、自動拡張値を含める必要がありますを指定します。  
   
  DEBUGPROP_INFO_VALUE_NOFUNCEVAL  
- 非推奨。  
+ 使用しないでください。  
   
  DEBUGPROP_INFO_VALUE_RAW  
  任意の見た目を整理できます値またはメンバーを返さない (つまり、値はフォーマットされません)。  
