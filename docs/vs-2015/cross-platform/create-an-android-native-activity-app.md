@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151080"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android Native Activity アプリの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Visual C++ for Cross-Platform Mobile Development オプションをインスト�
   
 #### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには  
   
-1. Visual Studio を開きます。 メニュー バーで、 **[ファイル]**、 **[新規作成]**、 **[プロジェクト]** の順にクリックします。  
+1. Visual Studio を開きます。 メニュー バーで、 **[ファイル]** 、 **[新規作成]** 、 **[プロジェクト]** の順にクリックします。  
   
-2. **[新しいプロジェクト]** ダイアログ ボックスの **[テンプレート]** で **[Visual C++]**、 **[Cross Platform]** の順に選択し、 **[Native-Activity Application (Android)]** テンプレートを選択します。  
+2. **[新しいプロジェクト]** ダイアログ ボックスの **[テンプレート]** で **[Visual C++]** 、 **[Cross Platform]** の順に選択し、 **[Native-Activity Application (Android)]** テンプレートを選択します。  
   
-3. アプリケーションに `MyAndroidApp` のような名前を付けてから、**[OK]** をクリックします。  
+3. アプリケーションに `MyAndroidApp` のような名前を付けてから、 **[OK]** をクリックします。  
   
     ![Native Activity プロジェクトの作成](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
@@ -62,9 +62,9 @@ Visual C++ for Cross-Platform Mobile Development オプションをインスト�
   
      ![ソリューション プラットフォーム ドロップダウン x86 の選択](../cross-platform/media/cppmdd-rc-na-solution-x86.png "CPPMDD_RC_NA_Solution_x86")  
   
-     **[ソリューション プラットフォーム]** リストが表示されない場合は、**[ボタンの追加と削除]** リストから **[ソリューション プラットフォーム]** を選択してから、使用するプラットフォームを選択します。  
+     **[ソリューション プラットフォーム]** リストが表示されない場合は、 **[ボタンの追加と削除]** リストから **[ソリューション プラットフォーム]** を選択してから、使用するプラットフォームを選択します。  
   
-2. メニュー バーの **[ビルド]**、 **[ソリューションのビルド]** の順にクリックします。  
+2. メニュー バーの **[ビルド]** 、 **[ソリューションのビルド]** の順にクリックします。  
   
      ソリューションに含まれる 2 つのプロジェクトのビルド プロセスの出力が [出力] ウィンドウに表示されます。  
   
