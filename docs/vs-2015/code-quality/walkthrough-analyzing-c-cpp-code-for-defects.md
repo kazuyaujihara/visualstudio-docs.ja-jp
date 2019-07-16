@@ -15,11 +15,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: dcd862b6ff9c94b8de3fc8b5a56164549fefe8ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142021"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>チュートリアル: C/C++ コード分析による障害の検出
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60099508"
   
 - コード障害の分析を向上させるためにソース コードの注釈を設定します。  
   
-## <a name="prerequisites"></a>必須コンポーネント  
+## <a name="prerequisites"></a>前提条件  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] または [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "60099508"
   
      デモ ソリューションを今すぐ設定**ソリューション エクスプ ローラー**します。  
   
-2. **[ビルド]** メニューで、**[ソリューションのリビルド]** をクリックします。  
+2. **[ビルド]** メニューで、 **[ソリューションのリビルド]** をクリックします。  
   
      ソリューションは、エラーまたは警告なしでビルドします。  
   

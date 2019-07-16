@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156316"
 ---
-# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>方法: シェーダーを 3-D モデルに適用します。
+# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>方法: シェーダーを 3-D モデルに適用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このドキュメントでは、モデル エディターを使用して、Directed Graph Shader Language (DGSL) シェーダーを 3-D モデルに適用する方法を説明します。  
@@ -28,19 +28,19 @@ ms.locfileid: "60094778"
 ## <a name="applying-a-shader-to-a-3-d-model"></a>シェーダーを 3-D モデルに適用する  
  シェーダー効果を 3-D モデルに適用して、魅力的な外観にすることができます。  
   
- 開始する前に、**[プロパティ]** ウィンドウが表示されていることを確認します。  
+ 開始する前に、 **[プロパティ]** ウィンドウが表示されていることを確認します。  
   
 #### <a name="to-apply-a-shader-to-a-3-d-model"></a>シェーダーを 3-D モデルに適用する方法  
   
 1. まず 1 つ以上のモデルを含む 3-D シーンを使用します。 適切な 3-D シーンを持ち、いずれかの説明に従って作成[方法。基本的な 3-D モデルを作成](../designers/how-to-create-a-basic-3-d-model.md)です。 また、モデルに適用できる DGSL シェーダーを使用する必要があります。 適切なシェーダーがない場合、「[方法:基本カラー シェーダーを作成](../designers/how-to-create-a-basic-color-shader.md)を保存してから、ファイルを続行する前にいるかどうかを確認します。  
   
-2. **選択**モードで、シェーダーを適用するモデルを選択します。その後、**[プロパティ]** ウィンドウを開き、**効果**プロパティ グループの **Filename** プロパティで、モデルに適用する DGSL シェーダーを指定します。  
+2. **選択**モードで、シェーダーを適用するモデルを選択します。その後、 **[プロパティ]** ウィンドウを開き、**効果**プロパティ グループの **Filename** プロパティで、モデルに適用する DGSL シェーダーを指定します。  
   
    基本色の効果を適用したモデルはこちらです。  
   
    ![基本色の効果を表示する 3&#45;D シーン](../designers/media/digit-3d-model-effect.png "Digit-3D-Model-Effect")  
   
-   シェーダーをモデルに適用した後、それをシェーダー デザイナーで開くには、モデルを選択します。その後、**[プロパティ]** ウィンドウを開き、**効果** プロパティ グループの **(詳細設定)** プロパティで省略記号 (**...**) ボタンを選択します。  
+   シェーダーをモデルに適用した後、それをシェーダー デザイナーで開くには、モデルを選択します。その後、 **[プロパティ]** ウィンドウを開き、**効果** プロパティ グループの **(詳細設定)** プロパティで省略記号 ( **...** ) ボタンを選択します。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: 基本的な 3-D モデルを作成します。](../designers/how-to-create-a-basic-3-d-model.md)   

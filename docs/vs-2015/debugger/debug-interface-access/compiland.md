@@ -15,18 +15,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 579ac6a70b379364870425e78cee41ac0840a214
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164006"
 ---
 # <a name="compiland"></a>コンパイル単位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 1 つである`SymTagCompiland`の .exe ファイルにリンクされた各コンパイル単位シンボルします。 コンパイル単位の情報を使用したシンボルに分割されて、`SymTagCompiland`タグで、追加のコンパイル単位シンボルを読み込むことがなく取得できます、および記号を`SymTagCompilandDetails`タグで、追加のシンボルを読み込む必要があります。  
   
-## <a name="properties"></a>プロパティ  
+## <a name="properties"></a>Properties  
  次の表では、この記号の型の有効なプロパティを示します。  
   
 |プロパティ|データの種類|説明|  

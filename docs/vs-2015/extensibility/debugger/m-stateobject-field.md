@@ -11,11 +11,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8e9cfc6f689504bef2a8366f90282641d1e9e105
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149054"
 ---
 # <a name="mstateobject-field"></a>m_stateObject フィールド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "58963386"
 ```  
   
 ## <a name="remarks"></a>Remarks  
- これは、`state`パラメーター、<xref:System.Threading.Tasks.Task.%23ctor%2A>コンストラクター。 バッキング フィールドも、<xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName>プロパティ。  
+ これは、`state`パラメーター、<xref:System.Threading.Tasks.Task.%23ctor%2A>コンス トラクター。 バッキング フィールドも、<xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName>プロパティ。  
   
 ## <a name="see-also"></a>関連項目  
  [Task クラス](../../extensibility/debugger/task-class-internal-members.md)

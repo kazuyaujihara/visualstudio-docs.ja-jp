@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3139cb337428dfc0c14e5bae47e682ce169bc81d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159131"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>方法: エンド ユーザーがインストールを開始する場所を指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60108504"
   
 2. **発行**タブをクリックします。  
   
-3. インストール URL フィールドに、形式を使用して完全修飾 URL を使用して、インストール場所を入力します。 http://www.microsoft.com/ApplicationName、または UNC パス形式を使用して\\\Server\ApplicationName します。  
+3. インストール URL フィールドに、形式を使用して完全修飾 URL を使用して、インストール場所を入力します。 http://www.microsoft.com/ApplicationName 、または UNC パス形式を使用して\\ \Server\ApplicationName します。  
   
 ## <a name="see-also"></a>関連項目  
  [方法: Visual Studio がファイルをコピーする場所を指定します。](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

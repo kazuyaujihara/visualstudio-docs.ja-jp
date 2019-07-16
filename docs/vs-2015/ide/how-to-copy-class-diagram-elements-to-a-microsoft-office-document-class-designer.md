@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f48dd69cf58a6ca3fbe292c5ed39aa3da51c4188
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146134"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>方法: Microsoft Office ドキュメントにクラス ダイアグラムの要素をコピーする (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ ms.locfileid: "60111143"
   
 ### <a name="to-copy-a-single-element"></a>1 つの要素をコピーするには  
   
-- 図形を右クリックし、**[イメージのコピー]** をクリックします。  
+- 図形を右クリックし、 **[イメージのコピー]** をクリックします。  
   
 ### <a name="to-copy-several-elements"></a>複数の要素をコピーするには  
   
 1. ダイアグラムで、コピーする図形を選択します。  
   
-2. 選択項目を右クリックし、**[イメージのコピー]** をクリックします。  
+2. 選択項目を右クリックし、 **[イメージのコピー]** をクリックします。  
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>クラス図のすべての要素をコピーするには  
   
-1. ダイアグラム サーフェイスを右クリックし、**[すべて選択]** をクリックします。 (キーボード:**Ctrl + A**)  
+1. ダイアグラム サーフェイスを右クリックし、 **[すべて選択]** をクリックします。 (キーボード:**Ctrl + A**)  
   
-2. **[編集]** メニューで、**[イメージのコピー]** を選択します。  
+2. **[編集]** メニューで、 **[イメージのコピー]** を選択します。  
   
    **[イメージのコピー]** の代わりに **[コピー]** を選択することもできます。 **[コピー]** は、イメージを通常のビットマップとしてコピーします。 **[イメージのコピー]** は、イメージをベクター ベースのイメージとしてコピーするので、ほとんどの Office アプリケーションにとってはこちらが向いています。  
   
