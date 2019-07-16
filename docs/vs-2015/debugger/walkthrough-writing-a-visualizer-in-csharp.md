@@ -17,12 +17,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 190ada55d5f46d159c6765e9af83d672b654313d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688152"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890464"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>チュートリアル: C# でビジュアライザーを記述します。\#
 
@@ -31,7 +31,7 @@ ms.locfileid: "65688152"
 このチュートリアルでは、C# を使用して簡単なビジュアライザーを作成する方法を説明します。 このチュートリアルで作成するビジュアライザーは、Windows フォーム メッセージ ボックスを使用して文字列の内容を表示します。 この簡単な文字列ビジュアライザーは、それ自体ではそれほど役に立ちませんが、他のデータ型を表示する、より役に立つビジュアライザーを作成するために必要な基本手順として使用できます。
 
 > [!NOTE]
-> 使用している設定またはエディションによっては、ヘルプの記載と異なるダイアログ ボックスやメニュー コマンドが表示される場合があります。 設定を変更するには、**[ツール]** メニューに移動して **[設定のインポートとエクスポート]** を選びます。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
+> 使用している設定またはエディションによっては、ヘルプの記載と異なるダイアログ ボックスやメニュー コマンドが表示される場合があります。 設定を変更するには、 **[ツール]** メニューに移動して **[設定のインポートとエクスポート]** を選びます。 詳細については、「 [Visual Studio での開発設定のカスタマイズ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)」を参照してください。
 
 ビジュアライザー コードは、デバッガーによって読み取られる DLL に配置する必要があります。 このため、最初の手順として、DLL のクラス ライブラリ プロジェクトを作成します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "65688152"
    > [!NOTE]
    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって、新しいファイル名に合わせて DebuggerSide.cs のクラス宣言が自動的に変更されます。
 
-3. **ソリューション エクスプローラー**で、**[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
+3. **ソリューション エクスプローラー**で、 **[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
 
 4. **[参照の追加]** ダイアログ ボックスの **[.NET]** タブで、[Microsoft.VisualStudio.DebuggerVisualizers.DLL] を選びます。
 
@@ -102,7 +102,7 @@ ms.locfileid: "65688152"
 
 #### <a name="to-add-systemwindowsforms"></a>System.Windows.Forms を追加するには
 
-1. **ソリューション エクスプローラー**で、**[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
+1. **ソリューション エクスプローラー**で、 **[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
 
 2. **[参照の追加]** ダイアログ ボックスの **[.NET]** タブで、[System.Windows.Forms.DLL] を選びます。
 
@@ -176,7 +176,7 @@ ms.locfileid: "65688152"
 
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>必要な参照を MyTestConsole に追加するには
 
-1. **ソリューション エクスプローラー**で、**[MyTestConsole]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
+1. **ソリューション エクスプローラー**で、 **[MyTestConsole]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
 
 2. **[参照の追加]** ダイアログ ボックスの **[.NET]** タブで、[Microsoft.VisualStudio.DebuggerVisualizers.DLL] を選びます。
 
@@ -196,7 +196,8 @@ ms.locfileid: "65688152"
 
 2. Program.cs の名前を、TestConsole.cs などの、よりわかりやすい名前に変更します。
 
-    **注**[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]自動的に新しいファイル名に合わせて TestConsole.cs のクラス宣言を変更します。
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] によって、新しいファイル名に合わせて TestConsole.cs のクラス宣言が自動的に変更されます。
 
 3. TestConsole.cs の `using` ステートメントに次のコードを追加します。
 
