@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 795cc62ca88f7ede87e978d910d397e0ce6e2ad7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430354"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825986"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>チュートリアル: SharePoint プロジェクト項目の種類を拡張します。
   使用することができます、 **Business Data Connectivity モデル**sharepoint ビジネス データ接続 (BDC) サービスのモデルを作成するプロジェクト アイテム。 既定では、このプロジェクト項目を使用してモデルを作成しただけでは、モデル内のデータがユーザーに表示されません。 ユーザーがデータを閲覧できるようにするには、それに加えて、SharePoint に外部リストを作成する必要があります。
@@ -28,9 +28,9 @@ ms.locfileid: "63430354"
 
 - 次の 2 つの主要タスクを実行する Visual Studio の拡張機能を作成する。
 
-    - BDC モデル内のデータを表示するための外部リストを生成する。 拡張機能では、SharePoint プロジェクト システムのオブジェクト モデルを使用して、生成する、 *Elements.xml*ファイル、リストを定義します。 さらに、BDC モデルと一緒に配置できるように、このファイルをプロジェクトに追加します。
+  - BDC モデル内のデータを表示するための外部リストを生成する。 拡張機能では、SharePoint プロジェクト システムのオブジェクト モデルを使用して、生成する、 *Elements.xml*ファイル、リストを定義します。 さらに、BDC モデルと一緒に配置できるように、このファイルをプロジェクトに追加します。
 
-    - ショートカット メニュー項目を追加、 **Business Data Connectivity モデル**内の項目をプロジェクト**ソリューション エクスプ ローラー**します。 開発者は、このメニュー項目をクリックして、BDC モデル用の外部リストを生成できます。
+  - ショートカット メニュー項目を追加、 **Business Data Connectivity モデル**内の項目をプロジェクト**ソリューション エクスプ ローラー**します。 開発者は、このメニュー項目をクリックして、BDC モデル用の外部リストを生成できます。
 
 - 拡張機能のアセンブリを配置するための Visual Studio Extension (VSIX) パッケージを構築する。
 
@@ -62,7 +62,7 @@ ms.locfileid: "63430354"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を起動します。
 
-2. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+2. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 3. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual c#** または**Visual Basic**ノードを選択し、**機能拡張**ノード。
 
@@ -152,7 +152,7 @@ ms.locfileid: "63430354"
 
 #### <a name="to-build-the-solution"></a>ソリューションをビルドするには
 
-1. メニュー バーで、**[ビルド]** > **[ソリューションのビルド]** の順にクリックします。
+1. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-item-extension"></a>プロジェクト項目の拡張機能を配置するための VSIX パッケージを作成します。
  拡張機能を配置するには、ソリューションで VSIX プロジェクトを使用して VSIX パッケージを作成します。 まず、VSIX プロジェクトに含まれている source.extension.vsixmanifest ファイルを変更して、VSIX パッケージを構成します。 次に、ソリューションをビルドして VSIX パッケージを作成します。
@@ -182,7 +182,7 @@ ms.locfileid: "63430354"
 
 8. **プロジェクト**一覧で、選択**BdcProjectItemExtension**、選択し、 **OK**ボタン。
 
-9. メニュー バーで、**[ビルド]** > **[ソリューションのビルド]** の順にクリックします。
+9. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
 10. エラーが発生することなくプロジェクトがコンパイルされてビルドされたことを確認します。
 

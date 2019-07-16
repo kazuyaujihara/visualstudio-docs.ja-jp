@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ddf7bd222b61b3eb72a571857336c69deba6499f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d0bcf3f299d1d2d10b3b043b772fca832a505278
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421787"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826118"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>チュートリアル: サーバー上のブックからキャッシュされたデータを取得します。
   このチュートリアルを使用して起動することがなく、Microsoft Office Excel ブックにキャッシュされているデータセットからデータを取得する方法について説明、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>クラス。
@@ -54,9 +54,9 @@ ms.locfileid: "63421787"
 
 - Microsoft SQL Server または AdventureWorksLT サンプル データベースがアタッチされている Microsoft SQL Server Express の実行中のインスタンスへのアクセス。 AdventureWorksLT データベースをダウンロードすることができます、 [CodePlex web サイト](http://go.microsoft.com/fwlink/?linkid=87843)します。 データベースをアタッチする方法について詳しくは、次のトピックをご覧ください。
 
-    - データベースをアタッチするには、SQL Server Management Studio または SQL Server Management Studio Express を使用して、参照してください。[方法。データベース (SQL Server Management Studio) をアタッチする](/sql/relational-databases/databases/attach-a-database)します。
+  - データベースをアタッチするには、SQL Server Management Studio または SQL Server Management Studio Express を使用して、参照してください。[方法。データベース (SQL Server Management Studio) をアタッチする](/sql/relational-databases/databases/attach-a-database)します。
 
-    - コマンドラインを使用してデータベースをアタッチする、次を参照してください。[方法。SQL Server Express データベース ファイルを添付](/previous-versions/sql/)します。
+  - コマンドラインを使用してデータベースをアタッチする、次を参照してください。[方法。SQL Server Express データベース ファイルを添付](/previous-versions/sql/)します。
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>データセットを定義するクラス ライブラリ プロジェクトを作成します。
  Excel ブック プロジェクトと、コンソール アプリケーションで同じデータセットを使用するには、これらのプロジェクトの両方で参照されている別のアセンブリにデータセットを定義する必要があります。 このチュートリアルでは、クラス ライブラリ プロジェクトで、データセットを定義します。

@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 169bf374b5c7ee34f75743e363d56c3737000cbc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424918"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823442"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf ファイルのアップグレード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,9 +104,9 @@ ms.locfileid: "63424918"
   
 - Visual Studio では、アップグレードしなくても、プロジェクトを開きます。  
   
-    - プロジェクトを実行するには、F5 キーを選択します。  
-  
-    - データベースを編集するには、.mdf ファイルを開き**ソリューション エクスプ ローラー**でノードを展開および**サーバー エクスプ ローラー**データベースを使用します。  
+  - プロジェクトを実行するには、F5 キーを選択します。  
+
+  - データベースを編集するには、.mdf ファイルを開き**ソリューション エクスプ ローラー**でノードを展開および**サーバー エクスプ ローラー**データベースを使用します。  
   
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>既定のデータベース エンジンを SQL Server Express を作成するには  
   

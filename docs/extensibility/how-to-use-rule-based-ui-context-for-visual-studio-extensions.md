@@ -7,12 +7,12 @@ author: madskristensen
 ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9136268bf1bfb7ccebf79de035fb19f40223002
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3075ca5092dd1b8a69aa4b34c0e507505cf7123
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324697"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309677"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>方法: Visual Studio 拡張機能のルール ベースの UI コンテキストを使用します。
 
@@ -140,6 +140,10 @@ Visual Studio と特定の Vspackage の読み込みを許可するよく知ら�
 |ActiveProjectCapability:\<式 >|という用語は、アクティブなプロジェクトの機能が提供されている式に一致している場合に当てはまります。 式には、VB のようなものを指定できる&#124;CSharp です。|
 |SolutionHasProjectCapability:\<式 >|上記に似ていますが、用語はソリューションには、読み込まれているプロジェクトを式に一致する場合に当てはまります。|
 |SolutionHasProjectFlavor:\<projectTypeGuid >|ソリューション (集計) プロジェクト フレーバーがあり、特定のプロジェクト型 GUID と一致するフレーバーたびに、用語が true になります。|
+|ProjectAddedItem:\<パターン >| という用語は、「パターン」に一致するファイルが開かれている soluion 内のプロジェクトに追加されたときに当てはまります。|
+|ActiveProjectOutputType:\<outputType >|用語は、出力時に true。 アクティブなプロジェクトと正確に一致するを入力します。  整数である可能性があります、outputType または<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE>型。|
+|ActiveProjectBuildProperty:\<buildProperty > =\<regex >|という用語は、アクティブなプロジェクトが、指定したビルドのプロパティとプロパティの値が提供される regex フィルターに一致する場合に当てはまります。 参照してください[MSBuild プロジェクト ファイル内のデータの永続化](internals/persisting-data-in-the-msbuild-project-file.md)の詳細については、プロパティをビルドします。|
+|SolutionHasProjectBuildProperty:\<buildProperty > =\<regex >|という用語は、指定したビルド プロパティを使用して読み込まれているプロジェクトをソリューションには、プロパティの値が提供される regex フィルターに一致する場合に当てはまります。|
 
 ## <a name="compatibility-with-cross-version-extension"></a>バージョン間の拡張機能との互換性
 

@@ -8,12 +8,12 @@ ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 07d650e127b5f15abbfac8aef179bb9e01a36297
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 24ea04e59178248c7a9795a2f928c311ba83db2e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096492"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824066"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Visual Studio の評価ツール
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ ms.locfileid: "60096492"
 
 - グループ ヘッダーと、ボタンを除く、すべてのラベルが最後にコロンとが組み合わされるコントロールの前にことを確認します。
 
-- 省略記号ボタン、コマンド、およびユーザー入力をキャプチャする UI を起動するコマンド リンクが終了することを確認 **[...]**.
+- 省略記号ボタン、コマンド、およびユーザー入力をキャプチャする UI を起動するコマンド リンクが終了することを確認 **[...]** .
 
-     次に例を示します。 
+  次に例を示します。
 
-    - **[詳細]** ダイアログ ボックス上のボタンをクリックします。
+  - **[詳細]** ダイアログ ボックス上のボタンをクリックします。
 
-    - [ツール] メニューのコマンド オプション (**ツール > オプション**) コマンドの目的は、ダイアログ自体を起動するため、省略記号を取得する必要がありますできません。
+  - [ツール] メニューのコマンド オプション (**ツール > オプション**) コマンドの目的は、ダイアログ自体を起動するため、省略記号を取得する必要がありますできません。
 
 - UI に業界標準の条項を除く、省略形が含まれていないことを確認します。 たとえば、HTML も TCP/IP する必要があります簡潔も OOM (メモリ不足) と PII (個人を特定できる情報) にする必要。
 
@@ -101,7 +101,7 @@ ms.locfileid: "60096492"
 
 #### <a name="dialog-operation-buttons-vs-client-only"></a>ダイアログの操作ボタン (VS クライアントのみ)
 
-- 操作ボタンがこの順序であることを確認します。**[Ok]**、**キャンセル**、**適用**します。
+- 操作ボタンがこの順序であることを確認します。 **[Ok]** 、**キャンセル**、**適用**します。
 
 - いることを確認**OK**と**キャンセル**ボタンは標準のサイズ。75 x 23 ピクセルです。
 
@@ -147,9 +147,9 @@ ms.locfileid: "60096492"
 
 - フィールドが必須のフィールドとして識別する必要がありますの場合は、次のコマンドを確認します。
 
-    - バック グラウンドに設定されている`Environment.ControlEditRequiredBackground`に設定されているフォア グラウンドと `Environment.ControlEditRequiredHintText`
+  - バック グラウンドに設定されている`Environment.ControlEditRequiredBackground`に設定されているフォア グラウンドと `Environment.ControlEditRequiredHintText`
 
-    - 内でのコントロールとして表示されるヒント テキストが **"\<必要 >"**
+  - 内でのコントロールとして表示されるヒント テキストが **"\<必要 >"**
 
 #### <a name="button-controls"></a>ボタン コントロール
 
@@ -159,11 +159,11 @@ ms.locfileid: "60096492"
 
 - 省略記号のみを含む小さな正方形のボタンを使用することができます **[...]** の代わりに、 **[参照...]** ボタン (または同様の機能)。 使用する場合は、ボタンが 23 x 23 のサイズを確認します。
 
-- 1 つ以上を使用する必要がある場合 **[参照...]** 、ダイアログにボタンをクリックし、いることを確認短縮バージョン (省略記号のみ **[...]**) すべてに使用されます。
+- 1 つ以上を使用する必要がある場合 **[参照...]** 、ダイアログにボタンをクリックし、いることを確認短縮バージョン (省略記号のみ **[...]** ) すべてに使用されます。
 
 - その省略記号を確認します **[...]。** ボタンのニーモニックはありません。 横にある入力コントロールにフォーカスがある場合、1 つのタブは、省略記号ボタンにフォーカスを移動する必要があります。
 
-- 確認ボタン、コマンド、および複数のユーザー入力をキャプチャするセカンダリ UI を起動するコマンド リンクは、省略記号で終了する必要があります **[...]**.
+- 確認ボタン、コマンド、および複数のユーザー入力をキャプチャするセカンダリ UI を起動するコマンド リンクは、省略記号で終了する必要があります **[...]** .
 
 #### <a name="hyperlinks"></a>ハイパーリンク
 
@@ -171,11 +171,11 @@ ms.locfileid: "60096492"
 
 - VS の色が使用されるを確認します。
 
-    - `Environment.ControlLinkText`
+  - `Environment.ControlLinkText`
 
-    - `Environment.ControlLinkTextHover`
+  - `Environment.ControlLinkTextHover`
 
-    - `Environment.ControlLinkTextPressed`
+  - `Environment.ControlLinkTextPressed`
 
 - ハイパーリンクが段落に埋め込まれている場合を除き、下線なしで青に表示されることを確認します。
 

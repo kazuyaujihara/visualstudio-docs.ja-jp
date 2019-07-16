@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d4b5ad6ca824e6c7091c6c508b51c2d51501b2fd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676695"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821525"
 ---
 # <a name="use-roslyn-analyzers"></a>Roslyn アナライザーを使用して、
 
@@ -110,40 +110,40 @@ A[ルール セット](../code-quality/using-rule-sets-to-group-code-analysis-ru
 
 - **分析**メニュー
 
-   選択**分析** > **コード分析を実行し、アクティブな懸案事項の抑制**メニューバーの現在のすべての違反を抑制します。 これは、「基準」と呼ばれます。
+  選択**分析** > **コード分析を実行し、アクティブな懸案事項の抑制**メニューバーの現在のすべての違反を抑制します。 これは、「基準」と呼ばれます。
 
 - **ソリューション エクスプ ローラー**
 
-   違反を抑制して**ソリューション エクスプ ローラー**、ルールの重大度を設定**None**します。
+  違反を抑制して**ソリューション エクスプ ローラー**、ルールの重大度を設定**None**します。
 
 - **ルール セット エディター**
 
-   規則セット エディターからの違反を抑制するのにその名前の横にあるボックスをオフにします。 または設定**アクション**に**None**します。
+  規則セット エディターからの違反を抑制するのにその名前の横にあるボックスをオフにします。 または設定**アクション**に**None**します。
 
 - **コード エディター**
 
-   コード エディターからの違反を抑制するのには、違反とキーを押してコードの行にカーソルを置き**Ctrl**+**します。** 開く、**クイック アクション**メニュー。 選択**CAXXXX を抑制する** >  **/抑制ファイル内でソース**します。
+  コード エディターからの違反を抑制するのには、違反とキーを押してコードの行にカーソルを置き**Ctrl**+**します。** 開く、**クイック アクション**メニュー。 選択**CAXXXX を抑制する** >  **/抑制ファイル内でソース**します。
 
-   ![クイック アクション メニューから診断を抑制します。](media/suppress-diagnostic-from-editor.png)
+  ![クイック アクション メニューから診断を抑制します。](media/suppress-diagnostic-from-editor.png)
 
 - **エラー一覧**
 
-   1 つまたは複数の診断を抑制することができます、**エラー一覧**を抑制するたいものを選択し、右クリックし、選択して**抑制** > **で Source/In抑制ファイル**します。
+  1 つまたは複数の診断を抑制することができます、**エラー一覧**を抑制するたいものを選択し、右クリックし、選択して**抑制** > **で Source/In抑制ファイル**します。
 
-   - 表示されないようにする場合**でソース**、**変更のプレビュー**ダイアログが開きのプレビューを表示、 C# [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)または Visual Basic [#Disable警告](/dotnet/visual-basic/language-reference/directives/directives)ソース コードに追加されるディレクティブ。
+  - 表示されないようにする場合**でソース**、**変更のプレビュー**ダイアログが開きのプレビューを表示、 C# [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)または Visual Basic [#Disable警告](/dotnet/visual-basic/language-reference/directives/directives)ソース コードに追加されるディレクティブ。
 
-      ![#Pragma 警告を追加するコード ファイルのプレビュー](media/pragma-warning-preview.png)
+    ![#Pragma 警告を追加するコード ファイルのプレビュー](media/pragma-warning-preview.png)
 
-   - 選択した場合**抑制ファイル内**、**変更のプレビュー**ダイアログが開きのプレビューを表示、<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>グローバル抑制ファイルに追加される属性。
+  - 選択した場合**抑制ファイル内**、**変更のプレビュー**ダイアログが開きのプレビューを表示、<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>グローバル抑制ファイルに追加される属性。
 
-      ![SuppressMessage 属性を抑制ファイルに追加のプレビュー](media/preview-changes-in-suppression-file.png)
+    ![SuppressMessage 属性を抑制ファイルに追加のプレビュー](media/preview-changes-in-suppression-file.png)
 
-   **変更のプレビュー**ダイアログ ボックスで、**適用**します。
+  **変更のプレビュー**ダイアログ ボックスで、**適用**します。
 
-   > [!NOTE]
-   > 表示されない場合、**抑制**メニュー オプション**ソリューション エクスプ ローラー**違反がビルドおよびいないライブ分析から送信される可能性があります。 **エラー一覧**診断、または両方からの違反、ライブ コード分析およびビルド規則が表示されます。 ビルドの診断は、古くなっていることができます、ためなど、違反を修正するコードを編集しましたが、再構築していない場合は抑制できませんからこれらの診断、**エラー一覧**します。 ライブ分析、または IntelliSense からの診断は、現在のソースの最新の状態は常とから抑制することができます、**エラー一覧**します。 除外する*ビルド*から選択すると、診断の切り替え、**エラー一覧**からソース フィルター**ビルド + IntelliSense**に**Intellisenseのみ**. 次に、抑制して、前述のように続行する診断を選択します。
-   >
-   > ![Visual Studio でのエラー一覧のソース フィルター](media/error-list-filter.png)
+  > [!NOTE]
+  > 表示されない場合、**抑制**メニュー オプション**ソリューション エクスプ ローラー**違反がビルドおよびいないライブ分析から送信される可能性があります。 **エラー一覧**診断、または両方からの違反、ライブ コード分析およびビルド規則が表示されます。 ビルドの診断は、古くなっていることができます、ためなど、違反を修正するコードを編集しましたが、再構築していない場合は抑制できませんからこれらの診断、**エラー一覧**します。 ライブ分析、または IntelliSense からの診断は、現在のソースの最新の状態は常とから抑制することができます、**エラー一覧**します。 除外する*ビルド*から選択すると、診断の切り替え、**エラー一覧**からソース フィルター**ビルド + IntelliSense**に**Intellisenseのみ**. 次に、抑制して、前述のように続行する診断を選択します。
+  >
+  > ![Visual Studio でのエラー一覧のソース フィルター](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>コマンドラインの使用状況
 

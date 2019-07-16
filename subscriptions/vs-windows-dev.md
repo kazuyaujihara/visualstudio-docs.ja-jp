@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Windows 開発者アカウントについて説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: a497db64345cffe4f87e768a83816489ebd4c21a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aacd9dab6353d3cfde727717c67c400f6e17514f
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978717"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032736"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Windows 開発者アカウント
 
@@ -26,7 +26,7 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
 
-2. [ツール] セクションで、Windows 開発者アカウントのタイルを見つけて、特典タイルの下部にある **[コードを取得]** リンクをクリックします。  コードをクリップボードにコピーし、**[アクティブ化]** をクリックします。
+2. [ツール] セクションで、Windows 開発者アカウントのタイルを見つけて、特典タイルの下部にある **[コードを取得]** リンクをクリックします。  コードをクリップボードにコピーし、 **[アクティブ化]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![Windows 開発者特典のタイル](_img/vs-windows-dev/vs-windows-dev-tile.png)
 
@@ -35,11 +35,11 @@ Windows 開発者アカウントを使うには、アカウントを設定する
    > ![Windows 開発者特典の登録](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 
 4. 自分のサブスクリプションにサインインします。  複数のアカウントがある場合は、エンタープライズ サブスクリプションに関連付けられているアカウントを選択します。
-5. 次のページで、居住地または会社の所在地の国または地域を選択し、**[次へ]** をクリックします。
+5. 次のページで、居住地または会社の所在地の国または地域を選択し、 **[次へ]** をクリックします。
 6. アカウントの種類として **[個別]** を選択します。
 7. 発行者表示名を作成します。  これは、アプリ、アドイン、およびサービスに関連付けられている一意の名前で、ユーザーに表示されます。
-8. 連絡先情報と優先する電子メールの言語を入力し、**[次へ]** をクリックします。
-9. パスワードを確認するように要求される場合があります。  パスワードを入力し、**[サインイン]** をクリックします。
+8. 連絡先情報と優先する電子メールの言語を入力し、 **[次へ]** をクリックします。
+9. パスワードを確認するように要求される場合があります。  パスワードを入力し、 **[サインイン]** をクリックします。
 10. [登録 – 支払い] ページでは、[プロモーション コード] フィールドにコピーしたコードを貼り付けます。  ページが更新され、"*支払いは必要ありません*" と表示されます。  **[次へ]** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![Windows 開発者特典の登録](_img/vs-windows-dev/vs-windows-dev-promo-cropped.png)
@@ -55,8 +55,8 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | Included                                                            |はい|
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                            |  N/A|
 | MSDN Platforms (標準)                                          | VL、リテール                                              |  使用できません                                            |  N/A|
-| Visual Studio Dev Essentials | N/A  | 使用できません                                            |  N/A|
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
+||
 
 <sup>1</sup>  *Not for Resale (NFR)、FTE、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer が含まれます除外:Microsoft Partner Network (MPN)、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
 

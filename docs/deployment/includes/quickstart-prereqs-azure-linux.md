@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 29aedc73173de34723f0db846a26c82cbde64f41
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846340"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256563"
 ---
 ## <a name="prerequisites"></a>必須コンポーネント
 
@@ -20,6 +20,6 @@ ms.locfileid: "65846340"
 
 * Azure サブスクリプション。 サブスクリプションがまだない場合は、[無料でサインアップ](https://azure.microsoft.com/free/dotnet/)します。これには、30 日間の $200 のクレジットと、12 か月間の人気の無料サービスが含まれます。
 
-* ASP.NET Core プロジェクト。 まだ用意していない場合、「[クイック スタート: Visual Studio を使用して初めての ASP.NET Core Web アプリを作成する](../../ide/quickstart-aspnet-core.md)」に従って進めるか、**[ファイル]**、**[新しいプロジェクト]**、**[Visual C#]**、**[.NET Core]** の順に選択してから **[ASP.NET Core Web アプリケーション]** を選択します。 プロンプトが表示されたら、**[Web アプリケーション (モデル ビュー コントローラー)]** テンプレートを選び、**[認証なし]** が選択されていることを確認してから、**[OK]** を選択します。
+* ASP.NET Core プロジェクト。 まだ用意していない場合、「[クイック スタート: Visual Studio を使用して初めての ASP.NET Core Web アプリを作成する](../../ide/quickstart-aspnet-core.md)」に従って進めるか、 **[ファイル]** 、 **[新しいプロジェクト]** 、 **[Visual C#]** 、 **[.NET Core]** の順に選択してから **[ASP.NET Core Web アプリケーション]** を選択します。 プロンプトが表示されたら、 **[Web アプリケーション (モデル ビュー コントローラー)]** テンプレートを選び、 **[認証なし]** が選択されていることを確認してから、 **[OK]** を選択します。
 
-* 配置手順を行う前に、必ず、**[ビルド] > [ビルド ソリューション]** メニュー コマンドを使用してプロジェクトをビルドしてください。
+* 配置手順を行う前に、必ず、 **[ビルド] > [ビルド ソリューション]** メニュー コマンドを使用してプロジェクトをビルドしてください。

@@ -16,15 +16,6 @@
   items:
     - name: Visual Studio のインストール
       href: install/install-visual-studio.md
-    - name: 個人アカウント
-      items:
-        - name: Visual Studio にサインイン
-          displayName: personalization accounts
-          href: ide/signing-in-to-visual-studio.md
-        - name: 複数のユーザー アカウントを使って作業する
-          href: ide/work-with-multiple-user-accounts.md
-        - name: 試用版を延長する、またはライセンスを更新する
-          href: ide/how-to-unlock-visual-studio.md
     - name: オフラインでのインストール
       items:
         - name: Visual Studio のオフライン インストールを作成する
@@ -61,8 +52,6 @@
           items:
             - name: Visual Studio のネットワーク ベース インストールを作成する
               href: install/create-a-network-installation-of-visual-studio.md
-            - name: Visual Studio のネットワーク ベース インストールを更新する
-              href: install/update-a-network-installation-of-visual-studio.md
             - name: ネットワークに関する考慮事項
               items:
                 - name: ファイアウォールまたはプロキシ サーバーの内側に Visual Studio をインストールして使用する
@@ -77,29 +66,33 @@
               href: install/automatically-apply-product-keys-when-deploying-visual-studio.md
             - name: Visual Studio のエンタープライズ展開に既定値を設定する
               href: install/set-defaults-for-enterprise-deployments.md
-            - name: パッケージ キャッシュの無効化または移動
-              href: install/disable-or-move-the-package-cache.md
-            - name: Visual Studio 配置の更新プログラムを制御する
-              href: install/controlling-updates-to-visual-studio-deployments.md
-            - name: サービス ベースライン使用時の Visual Studio の更新
-              href: install/update-servicing-baseline.md
-        - name: インストールを管理する
+            - name: ヘルプ ビューアーを展開する
+              items:
+                - name: ヘルプ ビューアー の管理者ガイド
+                  href: help-viewer/administrator-guide.md
+                - name: ヘルプ コンテンツ マネージャーのコマンド ライン引数
+                  href: help-viewer/command-line-arguments.md
+                - name: ヘルプ コンテンツ マネージャーのオーバーライド
+                  href: help-viewer/behavior-overrides.md
+        - name: インストールの管理と更新
           items:
             - name: Visual Studio インスタンスの検出および管理用のツール
               href: install/tools-for-managing-visual-studio-instances.md
+            - name: Visual Studio のネットワーク ベース インストールを更新する
+              href: install/update-a-network-installation-of-visual-studio.md
+            - name: サービス ベースライン使用時の Visual Studio の更新
+              href: install/update-servicing-baseline.md
+            - name: Visual Studio 配置の更新プログラムを制御する
+              href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: パッケージ ペイロードの変更の管理
+              href: install/changed-payloads.md
+            - name: パッケージ キャッシュの無効化または移動
+              href: install/disable-or-move-the-package-cache.md
         - name: サブスクリプションを管理する
           items:
             - name: 'Visual Studio サブスクリプション: 管理者の概要'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: ヘルプ ビューアーを展開する
-          items:
-            - name: ヘルプ ビューアー の管理者ガイド
-              href: help-viewer/administrator-guide.md
-            - name: ヘルプ コンテンツ マネージャーのコマンド ライン引数
-              href: help-viewer/command-line-arguments.md
-            - name: ヘルプ コンテンツ マネージャーのオーバーライド
-              href: help-viewer/behavior-overrides.md
-        - name: 参照
+        - name: 関連項目
           items:
             - name: Visual Studio のワークロードとコンポーネント ID
               items:
@@ -126,8 +119,6 @@
                   href: install/workload-component-id-vs-test-professional.md
                 - name: Visual Studio Feedback Client
                   href: install/workload-component-id-vs-feedback-client.md
-            - name: パッケージ ペイロードの変更
-              href: install/changed-payloads.md
             - name: Visual Studio のビルド番号とリリース日
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Azure 仮想マシンから Visual Studio を使用する
@@ -226,11 +217,7 @@
             - name: 'アプリケーション アイコンを指定する (Visual Basic、C#)'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
             - name: フレームワークをターゲットにする
-              items:
-                - name: マルチ ターゲットの概要
-                  href: ide/visual-studio-multi-targeting-overview.md
-                - name: .NET Framework のバージョンをターゲットにする
-                  href: ide/how-to-target-a-version-of-the-dotnet-framework.md
+              href: ide/visual-studio-multi-targeting-overview.md
             - name: テンプレートを作成する
               items:
                 - name: プロジェクト テンプレートと項目テンプレートを作成する
@@ -381,14 +368,20 @@
                       href: ide/reference/convert-foreach-linq.md
                     - name: LINQ クエリを foreach ステートメントに変換する
                       href: ide/reference/convert-linq-to-foreach.md
+                    - name: switch ステートメントを switch 式に変換する
+                      href: ide/reference/convert-switch-statement-to-switch-expression.md
                     - name: フィールドのカプセル化
                       href: ide/reference/encapsulate-field.md
                     - name: インターフェイスの抽出
                       href: ide/reference/extract-interface.md
                     - name: メソッドの抽出
                       href: ide/reference/extract-method.md
+                    - name: パラメーターを生成する
+                      href: ide/reference/generate-parameter.md
                     - name: インラインの一時変数
                       href: ide/reference/inline-temporary-variable.md
+                    - name: インポートされていない型に対する IntelliSense 入力候補
+                      href: ide/reference/intellisense-completion-unimported-types.md
                     - name: 条件式および論理演算を反転させる
                       href: ide/reference/invert-conditional-logical.md
                     - name: if ステートメントを反転させる
@@ -397,6 +390,8 @@
                       href: ide/reference/move-declaration-near-reference.md
                     - name: 一致するファイルへの型の移動
                       href: ide/reference/move-type-to-matching-file.md
+                    - name: 名前空間に型を移動する
+                      href: ide/reference/move-type-to-namespace.md
                     - name: メンバーを取り出す
                       href: ide/reference/pull-members-up.md
                     - name: IntelliSense を使用した正規表現の入力
@@ -405,6 +400,12 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: 名前の変更
                       href: ide/reference/rename.md
+                    - name: using の並べ替え
+                      href: ide/reference/sort-usings.md
+                    - name: if ステートメントの分割または結合
+                      href: ide/reference/split-or-merge-if-statement.md
+                    - name: 名前空間とフォルダー名を同期する
+                      href: ide/reference/sync-namespace-and-folder-name.md
                     - name: 型とファイル名の同期
                       href: ide/reference/sync-type-and-file.md
                     - name: 明示的な型の使用
@@ -470,10 +471,16 @@
                 - name: コード スタイルに関する EditorConfig ファイルの使用
                   displayName: Configure code style analyzers
                   href: ide/create-portable-custom-editor-options.md
-                - name: .NET 言語と書式の規則
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: .NET の名前付け規則
-                  href: ide/editorconfig-naming-conventions.md
+                - name: .NET のコーディング規則
+                  items:
+                    - name: 概要
+                      href: ide/editorconfig-code-style-settings-reference.md
+                    - name: 言語規則
+                      href: ide/editorconfig-language-conventions.md
+                    - name: 書式規則
+                      href: ide/editorconfig-formatting-conventions.md
+                    - name: 名前付け規則
+                      href: ide/editorconfig-naming-conventions.md
             - name: スクロール バーのカスタマイズ
               href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
             - name: コードへのブックマークの設定
@@ -702,6 +709,15 @@
           displayName: 'marketplace, gallery, vsix'
         - name: 外部ツールの管理
           href: ide/managing-external-tools.md
+        - name: 個人アカウント
+          items:
+            - name: Visual Studio にサインイン
+              displayName: personalization accounts
+              href: ide/signing-in-to-visual-studio.md
+            - name: 複数のユーザー アカウントを使って作業する
+              href: ide/work-with-multiple-user-accounts.md
+            - name: 試用版を延長する、またはライセンスを更新する
+              href: ide/how-to-unlock-visual-studio.md
     - name: Visual Studio のパフォーマンス
       items:
         - name: パフォーマンスの最適化
@@ -1188,6 +1204,15 @@
         - name: 問題の状態の報告とよくあるご質問
           displayName: Developer Community
           href: ide/report-a-problem.md
+        - name: すべての呼び出し履歴での Visual Studio プロセスのミニダンプを作成する
+          displayName: Create minidumps with call stacks
+          href: ide/report-a-problem-minidumps.md
+        - name: MSBuild の問題のログを作成する
+          displayName: Create logs for MSBuild problems
+          href: ide/msbuild-logs.md
+        - name: PerfView で ETL トレースを収集する
+          displayName: ETL trace with PerfView
+          href: ide/report-a-problem-perfview.md
     - name: Visual Studio の機能を提案する
       href: ide/suggest-a-feature.md
     - name: 開発者コミュニティのデータのプライバシー

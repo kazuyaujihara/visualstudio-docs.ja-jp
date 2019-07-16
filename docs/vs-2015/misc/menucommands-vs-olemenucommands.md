@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
-ms.openlocfilehash: b6a12d683d3a2cb6b8d1c5ea5d7ca790de94adc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000954"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624452"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand とOleMenuCommand
-メニュー コマンドは、 <xref:System.ComponentModel.Design.MenuCommand> または <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> オブジェクトから派生させて、適切なイベント ハンドラーを実装することによって作成できます。 ほとんどのケースでは、VSPackage プロジェクト テンプレートの場合と同様に <xref:System.ComponentModel.Design.MenuCommand>を使用できますが、 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>を使用することが必要になることもあります。  
+メニュー コマンドを作成するにはいずれかから派生することによって<xref:System.ComponentModel.Design.MenuCommand>またはから<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>オブジェクト、および適切なイベント ハンドラーを実装します。 ほとんどのケースでは、VSPackage プロジェクト テンプレートの場合と同様に <xref:System.ComponentModel.Design.MenuCommand>を使用できますが、 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>を使用することが必要になることもあります。  
   
  VSPackage によって IDE で使用可能になるコマンドをユーザーが使用するには、そのコマンドを表示し、有効にする必要があります。 Visual Studio パッケージ プロジェクト テンプレートを使用して .vsct ファイルにコマンドを作成すると、そのコマンドは既定で表示され、有効になります。 一部のコマンド フラグ (`DynamicItemStart` など) を設定すると、この既定の動作を変更できます。 コマンドの可視性や有効な状態などのプロパティは、コマンドに関連付けられている <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> オブジェクトにアクセスすることによって、コードで実行時に変更することもできます。  
   
@@ -115,7 +115,7 @@ ms.locfileid: "63000954"
    </CommandPlacements>
    ```
       
-        Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../extensibility/commandplacements-element.md) element.  
+      GUID:ID が同じで親が異なるコマンド配置を複数作成すると、メニューが複数の場所に表示されます。 詳細については、「 [CommandPlacements](../extensibility/commandplacements-element.md) 要素」を参照してください。  
   
     コマンド グループおよびペアレンティングの詳細については、次を参照してください。[ボタンの再利用可能なグループの作成](../extensibility/creating-reusable-groups-of-buttons.md)です。  
   

@@ -1,25 +1,25 @@
 ---
 title: ファイアウォールまたはプロキシ サーバーの内側に Visual Studio for Mac をインストールして使用する
-description: このドキュメントでは、企業環境で Visual Studio for Mac (および Xamarin などのワークロード) が機能するように、ファイアウォールでホワイトリストに登録する必要があるホストのリストを示します。
+description: このドキュメントでは、企業環境で Visual Studio for Mac (および Xamarin などのワークロード) が機能するように、ファイアウォールで許可する必要があるホストの一覧を示します。
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: bf12f8803fbdbbf1de31899501c31545a09d6b09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e7e8c3cd5f3ffded3387deb896df18d5b2ec705
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982871"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586880"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio for Mac をインストールして使用する
 
-ユーザーまたはユーザーの組織でファイアウォールやプロキシ サーバーなどのセキュリティ対策を講じている場合は、Visual Studio for Mac および Azure Services をインストールして使用するときに最適なエクスペリエンスを得るために、"ホワイトリスト" への登録をお勧めするドメイン URL および開くことをお勧めするポートおよびプロトコルがあります。
+ユーザーまたはユーザーの組織でファイアウォールやプロキシ サーバーなどのセキュリティ対策を取っている場合は、Visual Studio for Mac と Azure Services をインストールして使用するときに最適なエクスペリエンスを得るために、"許可リスト" への追加をお勧めするドメインと、開くことをお勧めするポートとプロトコルがあります。
 
-- [**Visual Studio for Mac をインストールする**](#install-visual-studio-for-mac):これらの表には、Visual Studio for Mac のすべての機能およびワークロードにアクセスできる、ホワイトリストに登録すべき URL を示します。
+- [**Visual Studio for Mac をインストールする**](#install-visual-studio-for-mac):これらの表には、Visual Studio for Mac のすべての機能とワークロードにアクセスできるように、接続を許可する必要があるドメインが含まれています。
 
-- [**Visual Studio for Mac の使用**](#use-visual-studio-for-mac):これらの表には、目的のすべてのサービスおよび機能にアクセスできる、ホワイトリストに登録すべき URL を示します。
+- [**Visual Studio for Mac の使用**](#use-visual-studio-for-mac):これらの表には、関連する機能にアクセスできるように、接続を許可する必要があるドメインが含まれています。
 
 ## <a name="install-visual-studio-for-mac"></a>Visual Studio for Mac をインストールする
 
@@ -38,6 +38,8 @@ Visual Studio for Mac インストーラーはさまざまなドメイン サー
 | download.visualstudio.microsoft.com | インストーラー パッケージ|
 | xamarin.azureedge.net | インストーラー パッケージ|
 | developer.xamarin.com | インストーラー パッケージ|
+| static.xamarin.com | インストーラー パッケージ|
+| dl.xamarin.com | インストーラー パッケージ|
 | dc.services.visualstudio.com| クラッシュ レポート |
 
 ### <a name="third-party-domains"></a>サード パーティ ドメイン
@@ -50,7 +52,7 @@ Visual Studio for Mac インストーラーはさまざまなドメイン サー
 
 ## <a name="use-visual-studio-for-mac"></a>Visual Studio for Mac の使用
 
-プロキシまたはファイアウォールの背後に配置し、Visual Studio for Mac の必要なすべての機能にアクセスできるようにするには、以下のドメインとポートをホワイトリストに登録することをお勧めします。
+プロキシまたはファイアウォールの背後にある Visual Studio for Mac の必要なすべての機能に確実にアクセスできるように、以下のドメインとポートを allowed-access リストに追加することをお勧めします。
 
 ### <a name="general"></a>全般
 

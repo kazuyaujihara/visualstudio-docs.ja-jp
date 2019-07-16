@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 05/22/2019
+ms.date: 06/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976233"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552874"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
@@ -33,16 +33,16 @@ Visual Studio 2019 では、あらゆる開発者、アプリ、プラットフ�
 
 新機能の大まかな要約を示します。
 
-* **[開発](#develop)**:パフォーマンスの向上、迅速なコードのクリーンアップ、優れた検索結果による生産性向上に引き続き注力しています。
-* **[共同作業](#collaborate)**:Git ファーストのワークフロー、リアルタイムでの編集とデバッグ、Visual Studio でのコード レビューによる自然な共同作業を体験してください。
-* **[デバッグ](#debug)**:特定の値を強調表示してそこに移動したり、メモリの使用を最適化したり、アプリケーションの実行のスナップショットを自動的に取得したりできます。
+* **[開発](#develop)** :パフォーマンスの向上、迅速なコードのクリーンアップ、優れた検索結果による生産性向上に引き続き注力しています。
+* **[共同作業](#collaborate)** :Git ファーストのワークフロー、リアルタイムでの編集とデバッグ、Visual Studio でのコード レビューによる自然な共同作業を体験してください。
+* **[デバッグ](#debug)** :特定の値を強調表示してそこに移動したり、メモリの使用を最適化したり、アプリケーションの実行のスナップショットを自動的に取得したりできます。
 
 このバージョンのすべての新機能の一覧は、[リリース ノート](/visualstudio/releases/2019/release-notes/)を参照してください。
 
 ## <a name="develop"></a>開発
 
-新機能で、時間を節約しましょう。
-<br><br>
+新機能を利用して時間を節約する方法について詳しくは、次のビデオをご覧ください。 <br><br>"*ビデオの長さ:3.00 分*"
+
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
 ### <a name="improved-search"></a>検索機能の向上
@@ -90,7 +90,7 @@ IntelliCode に関する詳細については、ブログ投稿の「[Announcing
 
 修正機能のコレクションをプロファイルとして保存することもできます。 たとえば、コードを書いている間に頻繁に適用する小規模なターゲット修正機能があり、コード レビューの前に適用する完全な修正機能のセットがそれ以外にある場合は、それらの異なるタスクに対処するためのプロファイルを構成することができます。
 
-   ![Visual Studio 2019 の新しいコード クリーンアップ コントロールのスクリーン ショット](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Visual Studio 2019 の構成コード クリーンアップ コントロールのスクリーンショット](media/vs-2019/code-cleanup-profile-configure.png)
 
 ### <a name="per-monitor-aware-pma-rendering"></a>Per-monitor aware (PMA) レンダリング
 
@@ -104,8 +104,8 @@ Visual Studio 2019 のリリースにより、Visual Studio を Per-monitor awar
 
 ## <a name="collaborate"></a>共同作業
 
-問題を解決するためにチームを作ります。
-<br><br>
+問題を解決するためにチームを作る方法について詳しくは、次のビデオをご覧ください。 <br><br>"*ビデオの長さ:4.22 分*"
+
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
 ### <a name="cloud-first-workflow"></a>クラウド ファーストのワークフロー
@@ -142,8 +142,8 @@ Visual Studio 2019 を開いてまず気付くことは、新しいスタート 
 
 ## <a name="debug"></a>デバッグ
 
-正確なターゲット設定に注力しています。
-<br><br>
+デバッグ中に正確なターゲット設定に注力する方法について詳しくは、次のビデオをご覧ください。 <br><br>"*ビデオの長さ:3.54 分*"
+
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>パフォーマンスの向上

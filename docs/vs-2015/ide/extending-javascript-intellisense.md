@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eea71ffe2b449e0ee5aff893efd05e12e4ecae73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441458"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824932"
 ---
 # <a name="extending-javascript-intellisense"></a>JavaScript IntelliSense の拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ JavaScript IntelliSense の拡張機能では、サードパーティ製のラ�
   
  自動検出メカニズムにより、ファイルの名前付け規則に準拠する拡張機能を自動的に検出する言語サービス*libraryname*intellisense.js、、がライブラリと同じディレクトリ内にある。拡張機能が適用されます。 たとえば、jQuery ライブラリの有効な拡張子は jQuery.intellisense.js になります。 制限の厳しい jQuery の拡張機能、jQuery 1.7.1.intellisense.js (バージョン固有の拡張機能) または jQuery.ui.intellisense.js (スコープを持つ jQuery ライブラリの拡張機能) などのファイル名を使用できます。 拡張機能の最も制限の厳しいバージョンは、指定したライブラリの 1 つ以上の拡張機能が検出された場合に使用されます。  
   
- すべての JavaScript プロジェクト ファイルの拡張機能を使用する場合は、参照グループに、拡張機能を追加するように選択可能性があります。 複数の種類のいずれかが含まれている暗黙の参照と専用のワーカーの参照が含まれている、参照グループがあります。 拡張機能を追加するには、通常、暗黙の参照グループとしてか、ファイルを追加する必要が**暗黙 (Windows)**、**暗黙 (Web)** します。 暗黙的な参照は、コード エディターで開かれるすべての .js ファイルのスコープになります。 このメソッドを使用する場合は、拡張機能と拡張機能を補完するファイルの両方を追加する必要があります。  
+ すべての JavaScript プロジェクト ファイルの拡張機能を使用する場合は、参照グループに、拡張機能を追加するように選択可能性があります。 複数の種類のいずれかが含まれている暗黙の参照と専用のワーカーの参照が含まれている、参照グループがあります。 拡張機能を追加するには、通常、暗黙の参照グループとしてか、ファイルを追加する必要が**暗黙 (Windows)** 、**暗黙 (Web)** します。 暗黙的な参照は、コード エディターで開かれるすべての .js ファイルのスコープになります。 このメソッドを使用する場合は、拡張機能と拡張機能を補完するファイルの両方を追加する必要があります。  
   
  使用して、 **IntelliSense**のページ、**オプション**参照グループとして拡張機能を追加する ダイアログ ボックス。 アクセスできる、 **IntelliSense**を選択してページ**ツール**、**オプション**メニュー バー、およびクリックした後で**テキスト エディター**、 **JavaScript**、 **IntelliSense**、**参照**します。 参照グループの詳細については、次を参照してください。 [JavaScript IntelliSense](../ide/javascript-intellisense.md)と[、オプション、テキスト エディター、JavaScript IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md)します。  
   
@@ -147,9 +147,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `paramComments`。 関数の各パラメーターにコメントを表す配列を返します。 配列のメンバーは次のとおりです。  
   
-    - `name`。 パラメーター名を表す文字列を返します。  
-  
-    - `comment`。 パラメーターのコメントを含む文字列を返します。  
+  - `name`。 パラメーター名を表す文字列を返します。  
+
+  - `comment`。 パラメーターのコメントを含む文字列を返します。  
   
 ### <a name="FunctionHelp"></a> functionHelp プロパティ  
  関数のヘルプを返します。 このプロパティは使用できます、`signaturehelp`イベント オブジェクト。  
@@ -162,47 +162,47 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `signatures`。 読み取り/書き込み。 取得または関数のシグネチャの配列を設定します。 配列内の各要素は、`signature`オブジェクト。 いくつか`signature`プロパティなど`locid`、共通に対応して[XML ドキュメント コメント](../ide/xml-documentation-comments-javascript.md)属性。  
   
-     メンバー、`signature`オブジェクトが含まれます。  
-  
-    - `description`。 読み取り/書き込み。 機能を説明する文字列を返します。  
-  
+  メンバー、`signature`オブジェクトが含まれます。  
+
+  - `description`。 読み取り/書き込み。 機能を説明する文字列を返します。  
+
+  - `locid`。 読み取り/書き込み。 関数に関するローカライズ情報を含む文字列識別子を返します。  
+
+  - `helpKeyword`。 読み取り/書き込み。 ヘルプ キーワードを含む文字列を返します。  
+
+  - `externalFile`。 読み取り/書き込み。 メンバー ID を含むファイルを表す文字列を返します  
+
+  - `externalid`。 読み取り/書き込み。 関数のメンバー ID を表す文字列を返します。  
+
+  - `params`。 読み取り/書き込み。 取得または関数のパラメーターの配列を設定します。 パラメーター配列内の各要素は、`parameter`オブジェクトの次の属性に対応するプロパティを持つ、 [ \<param >](../ide/param-javascript.md)要素。  
+
+    - `name`。 読み取り/書き込み。 パラメーター名を表す文字列を返します。  
+
+    - `type`。 読み取り/書き込み。 パラメーターの型を表す文字列を返します。  
+
+    - `elementType`。 読み取り/書き込み。 型の場合`Array`配列内の要素の型を表す文字列を返します。  
+
+    - `description`。 読み取り/書き込み。 パラメーターを説明する文字列を返します。  
+
     - `locid`。 読み取り/書き込み。 関数に関するローカライズ情報を含む文字列識別子を返します。  
-  
+
+    - `optional`。 読み取り/書き込み。 パラメーターは省略可能かどうかを示す文字列を返します。 `true` パラメーターが省略可能です。`false`がないことを示します。  
+
+  - `returnValue`。 読み取り/書き込み。 取得または次の属性に対応するプロパティを使用して、戻り値オブジェクトを設定、 [\<返します >](../ide/returns-javascript.md)要素。  
+
+    - `type`。 読み取り/書き込み。 戻り値の型を表す文字列を返します。  
+
+    - `elementType`。 読み取り/書き込み。 型の場合`Array`配列内の要素の型を表す文字列を返します。  
+
+    - `description`。 読み取り/書き込み。 戻り値を記述する文字列を返します。  
+
+    - `locid`。 読み取り/書き込み。 関数に関するローカライズ情報を含む文字列識別子を返します。  
+
     - `helpKeyword`。 読み取り/書き込み。 ヘルプ キーワードを含む文字列を返します。  
-  
+
     - `externalFile`。 読み取り/書き込み。 メンバー ID を含むファイルを表す文字列を返します  
-  
+
     - `externalid`。 読み取り/書き込み。 関数のメンバー ID を表す文字列を返します。  
-  
-    - `params`。 読み取り/書き込み。 取得または関数のパラメーターの配列を設定します。 パラメーター配列内の各要素は、`parameter`オブジェクトの次の属性に対応するプロパティを持つ、 [ \<param >](../ide/param-javascript.md)要素。  
-  
-        - `name`。 読み取り/書き込み。 パラメーター名を表す文字列を返します。  
-  
-        - `type`。 読み取り/書き込み。 パラメーターの型を表す文字列を返します。  
-  
-        - `elementType`。 読み取り/書き込み。 型の場合`Array`配列内の要素の型を表す文字列を返します。  
-  
-        - `description`。 読み取り/書き込み。 パラメーターを説明する文字列を返します。  
-  
-        - `locid`。 読み取り/書き込み。 関数に関するローカライズ情報を含む文字列識別子を返します。  
-  
-        - `optional`。 読み取り/書き込み。 パラメーターは省略可能かどうかを示す文字列を返します。 `true` パラメーターが省略可能です。`false`がないことを示します。  
-  
-    - `returnValue`。 読み取り/書き込み。 取得または次の属性に対応するプロパティを使用して、戻り値オブジェクトを設定、 [\<返します >](../ide/returns-javascript.md)要素。  
-  
-        - `type`。 読み取り/書き込み。 戻り値の型を表す文字列を返します。  
-  
-        - `elementType`。 読み取り/書き込み。 型の場合`Array`配列内の要素の型を表す文字列を返します。  
-  
-        - `description`。 読み取り/書き込み。 戻り値を記述する文字列を返します。  
-  
-        - `locid`。 読み取り/書き込み。 関数に関するローカライズ情報を含む文字列識別子を返します。  
-  
-        - `helpKeyword`。 読み取り/書き込み。 ヘルプ キーワードを含む文字列を返します。  
-  
-        - `externalFile`。 読み取り/書き込み。 メンバー ID を含むファイルを表す文字列を返します  
-  
-        - `externalid`。 読み取り/書き込み。 関数のメンバー ID を表す文字列を返します。  
   
 ### <a name="ParentObject"></a> parentObject プロパティ  
  メンバー関数の親オブジェクトを返します。 たとえば、 `document.getElementByID`、`parentObject`を返します、`document`オブジェクト。 このプロパティは使用できます、`signaturehelp`イベント オブジェクト。  

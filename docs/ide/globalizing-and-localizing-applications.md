@@ -15,22 +15,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc6d0b3fb2eb143cfdc288485ab9e40499b6fccb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 934427c2bfba769968b7aeb364625b71af47eca7
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547872"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820868"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>グローバル化およびローカライズされたアプリの開発
 
-Visual Studio は、[.NET Framework](/dotnet/standard/globalization-localization/) に組み込まれたサービスを活用して、海外ユーザー向けの開発を容易にしています。
+Visual Studio を使用すると、[.NET](/dotnet/standard/globalization-localization/) に組み込まれたサービスを活用して、海外ユーザー向けの開発を容易に行うことができます。
 
 たとえば、Windows フォーム アプリのプロジェクト システムでは、フォールバック UI カルチャと追加のそれぞれの UI カルチャの両方のリソース ファイルを生成できます。 プロジェクトを Visual Studio でビルドする場合、リソース ファイルは Visual Studio XML 形式 (.resx) から中間バイナリ形式 (.resources) にコンパイルされ、その後、サテライト アセンブリに埋め込まれます。 詳細については、「[Resource files in Visual Studio](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles)」 (Visual Studio のリソース ファイル) と「[デスクトップ アプリケーションに対するサテライト アセンブリの作成](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps)」を参照してください。
 
-Visual Studio での双方向言語アプリの作成方法の詳細については、[アラビア語とヘブライ語のアプリの作成](creating-applications-in-bi-directional-languages.md)に関するページを参照してください。
+## <a name="bidirectional-languages"></a>双方向言語
+
+Visual Studio では、アラビア語やヘブライ語など、右から左に書く言語で正しくテキストが表示されるアプリケーションを作成できます。 いくつかの機能については、単にプロパティを設定するだけで済みます。 それ以外の場合は、コードで機能を実装する必要があります。
+
+> [!NOTE]
+> 双方向言語を入力したり表示したりするには、適切な言語に設定されたバージョンの Windows を使用する必要があります。 英語バージョンの Windows に適切な Language Pack をインストールする方法と、適切にローカライズされたバージョンの Windows を使用する方法があります。
+
+### <a name="apps-that-support-bidirectional-languages"></a>双方向言語をサポートするアプリ
+
+- Windows アプリ
+
+   双方向テキスト、右から左への読み取り順序、およびミラー化 (ウィンドウ、メニュー、ダイアログ ボックスなどのレイアウトの反転) をサポートする、完全な双方向アプリケーションを作成できます。 ミラー化を除き、これらの機能は、既定またはプロパティ設定により使用できるようになっています。 ミラー化は、メッセージ ボックスなどいくつかの機能に対してはあらかじめサポートされています。 ただし、それ以外の場合には、ミラー化をコードで実装する必要があります。 詳細については、「[Windows フォーム アプリケーションの双方向サポート](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)」をご覧ください。
+
+- Web アプリ
+
+   Web サービスは UTF-8 および Unicode のテキストの送受信をサポートしているため、双方向言語を使用するアプリケーションに適しています。 Web クライアント アプリケーションのユーザー インターフェイスはブラウザーに依存しているため、Web アプリケーションでの双方向サポートの内容は、ユーザーのブラウザーが双方向機能をどの程度サポートしているかによって異なります。 Visual Studio では、アラビア語またはヘブライ語のテキスト、右から左への読み取り順序、ファイルのエンコーディング、およびローカル カルチャ設定をサポートするアプリケーションを作成できます。 詳しくは、「[ASP.NET Web アプリケーションに対する双方向サポート](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)」をご覧ください。
+
+> [!NOTE]
+> コンソール アプリでは、双方向言語のテキストがサポートされません。 これは、Windows におけるコンソール アプリケーションの動作のしくみによるものです。
 
 ## <a name="see-also"></a>関連項目
 
+- [Visual Studio での双方向言語のサポート](use-bidirectional-languages.md)
 - [.NET アプリのグローバル化とローカライズ](/dotnet/standard/globalization-localization/)
 - [.NET アプリのリソース](/dotnet/framework/resources/)

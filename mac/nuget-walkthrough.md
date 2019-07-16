@@ -1,21 +1,21 @@
 ---
 title: プロジェクトに NuGet パッケージを含める
 description: このドキュメントでは、Xamarin プロジェクトに NuGet パッケージを含める方法について説明します。 パッケージの検索およびダウンロードの手順を説明し、IDE 統合機能の概要を示します。
-author: conceptdev
-ms.author: crdun
-ms.date: 04/14/2017
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 356a99e3bdbc1608bdebc160c3a10878d3194a40
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692333"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691398"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>プロジェクトに NuGet パッケージを含める
 
-NuGet は、.NET 開発用の最も一般的なパッケージ マネージャーであり、Visual Studio for Mac および Windows の Visual Studio に組み込まれています。 パッケージを検索し、Xamarin.iOS プロジェクトおよび Xamarin.Android プロジェクトにいずれかの IDE を使用して追加することができます。
+NuGet は、.NET 開発用の最も一般的なパッケージ マネージャーであり、Visual Studio for Mac および Windows の Visual Studio に組み込まれています。 パッケージを検索し、Xamarin、.NET Core、ASP.NET プロジェクトにいずれかの IDE を使用して追加することができます。
 
 この記事では、プロジェクトに NuGet パッケージを含める方法について説明し、プロセスをシームレスにするツール チェーンを示します。
 
@@ -31,7 +31,7 @@ NuGet パッケージの機能を示すため、まず、新しいアプリケ�
 
 ## <a name="adding-a-package"></a>パッケージの追加
 
-Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pad** の **[パッケージ]** フォルダーを右クリックし、 **[パッケージを追加]** を選択します。
+Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pad** の **[パッケージ]** フォルダーを右クリックし、 **[NuGet パッケージを追加]** を選択します。
 
 ![新しい NuGet パッケージのコンテキスト アクションを追加する](media/nuget-walkthrough-PackagesMenu.png)
 
@@ -43,9 +43,9 @@ Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pa
 
 ![Nuget パッケージのリスト](media/nuget-walkthrough-AddPackages1.png)
 
- `azure` などの特定のパッケージを検索するには、右上隅の検索ボックスを使用します。 使用するパッケージが見つかったら、それを選択し、 **[パッケージを追加]**   ボタンをクリックしてインストールを開始します。
+ `azure mobile` などの特定のパッケージを検索するには、右上隅の検索ボックスを使用します。 使用するパッケージが見つかったら、それを選択し、 **[パッケージを追加]**   ボタンをクリックしてインストールを開始します。
 
-[Azure の NuGet パッケージを追加する](media/nuget-walkthrough-AddPackages2.png)
+![Azure の NuGet パッケージを追加する](media/nuget-walkthrough-AddPackages2.png)
 
 パッケージはダウンロードされた後、プロジェクトに追加されます。 ソリューションは次のように変更されます。
 
@@ -77,7 +77,7 @@ using Newtonsoft.Json;
 
 ![パッケージ メニュー](media/nuget-walkthrough-PackagesMenu.png)
 
-* **[パッケージを追加]** - プロジェクトにさらにパッケージを追加するためのウィンドウが開きます。
+* **[NuGet パッケージを追加]** - プロジェクトにさらにパッケージを追加するためのウィンドウが開きます。
 * **[更新]** - 各パッケージのソース サーバーを確認し、新しいバージョンをダウンロードします。
 * **[復元]** - 不足しているパッケージをダウンロードします (既存のパッケージを新しいバージョンに更新しません)。
 

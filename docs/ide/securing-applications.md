@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6398a28394c8918d574a3b3eca4cf54b21f3d7bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c5b0f4c748cd923ca02cb16ba374747c20d12d7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979537"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747661"
 ---
 # <a name="secure-applications"></a>セキュリティで保護されたアプリケーション
 
@@ -40,7 +40,7 @@ ms.locfileid: "62979537"
 
 ## <a name="see-also"></a>関連項目
 
-- [.NET Framework におけるセキュリティ](/dotnet/standard/security/index)
+- [.NET でのセキュリティ](/dotnet/standard/security/index)
 - [Azure のセキュリティ](/azure/security/)
 - [Windows 10 Mobile のセキュリティ ガイド](/windows/security/threat-protection/windows-10-mobile-security-guide)
 - [Apache Cordova プラットフォームのセキュリティ機能](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)

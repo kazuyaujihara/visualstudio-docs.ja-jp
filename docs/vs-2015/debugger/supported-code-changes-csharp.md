@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117656"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823538"
 ---
 # <a name="supported-code-changes-c"></a>サポートされているコード変更 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60117656"
   
      アクティブ ステートメントには、現在のステートメントを取得するために呼び出される、呼び出し履歴上の関数内に存在するすべてのステートメントが含まれます。  
   
-     ソース ウィンドウ内では、現在のステートメントは黄色の背景で示されます。 その他のアクティブ ステートメント (読み取り専用) は、網かけの背景で示されます。 これらの既定の色は、**[オプション]** ダイアログ ボックスで変更できます。  
+     ソース ウィンドウ内では、現在のステートメントは黄色の背景で示されます。 その他のアクティブ ステートメント (読み取り専用) は、網かけの背景で示されます。 これらの既定の色は、 **[オプション]** ダイアログ ボックスで変更できます。  
   
 - 型のシグネチャの変更  
   
@@ -57,17 +57,17 @@ ms.locfileid: "60117656"
   
 - 特定の状況での LINQ のコードをデバッグ。 詳しくは、「[LINQ のデバッグ](../debugger/debugging-linq.md)」をご覧ください。  
   
-    - 以前にキャプチャされていない変数のキャプチャ。  
-  
-    - クエリ式の型を変更する (たとえば、a = を select > 新しい選択 {A = を};)  
-  
-    - アクティブなステートメントを含む `where` の削除。  
-  
-    - アクティブなステートメントを含む `let` の削除。  
-  
-    - アクティブなステートメントを含む `join` の削除。  
-  
-    - アクティブなステートメントを含む `orderby` の削除。  
+  - 以前にキャプチャされていない変数のキャプチャ。  
+
+  - クエリ式の型を変更する (たとえば、a = を select > 新しい選択 {A = を};)  
+
+  - アクティブなステートメントを含む `where` の削除。  
+
+  - アクティブなステートメントを含む `let` の削除。  
+
+  - アクティブなステートメントを含む `join` の削除。  
+
+  - アクティブなステートメントを含む `orderby` の削除。  
   
 - 混合モードでの (ネイティブ/マネージ) デバッグ  
   

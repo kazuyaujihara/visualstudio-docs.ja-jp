@@ -1,31 +1,32 @@
 ---
-title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス
-ms.date: 11/04/2017
+title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
+ms.date: 06/13/2019
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 045f205ff5450b09d4ec4e76e14493a988bae375
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3634dcd7cf136aa52de3ebf6bf5bfc3d57632d2c
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784083"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132144"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス
 
 このトピックでは `Microsoft::VisualStudio::CppUnitTestFramework` の名前空間のパブリック メンバーの一覧を示します。 Microsoft ネイティブ単体テスト フレームワークに基づいて C++ の単体テストを作成するには、これらの API を使います。 トピックの最後には「[使用例](#example)」があります。
 
- ヘッダー ファイルは _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include** フォルダーにあります。
+ ヘッダー ファイルは _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\include** フォルダーにあります。
 
- lib ファイルは _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib** フォルダーにあります。
+ lib ファイルは _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\lib** フォルダーにあります。
 
 ヘッダーと lib のパスは、ネイティブ テスト プロジェクトで自動的に構成されます。
 
 ## <a name="In_this_topic"></a> このトピックの内容
- [CppUnitTest.h](#cppUnitTest_h)
+
+[CppUnitTest.h](#cppUnitTest_h)
 
 - [テスト クラスとメソッドを作成する](#create_test_classes_and_methods)
 
@@ -184,7 +185,7 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
- テスト メソッド *testClassName* に、`TEST_METHOD_ATTRIBUTE` の 1 つ以上のマクロで定義された属性を追加します。
+ テスト メソッド *testMethodName* に、1 つ以上の `TEST_METHOD_ATTRIBUTE` マクロで定義された属性を追加します。
 
  `TEST_METHOD_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。
 
@@ -215,37 +216,38 @@ END_TEST_MODULE_ATTRIBUTE()
  `TEST_MODULE_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。
 
 #### <a name="pre_defined_attributes"></a> 定義済みの属性
- これらの定義済み属性マクロは、前に説明したマクロ `TEST_METHOD_ATTRIBUTE`、`TEST_CLASS_ATTRIBUTE`、または `TEST_MODULE_ATTRIBUTE` と置き換えることができます。
+
+ 一般的なケースに便利なように、以下の定義済み属性マクロが提供されています。 これらは、上で説明したマクロ `TEST_METHOD_ATTRIBUTE` の代わりに使用できます。
 
 ```cpp
 TEST_OWNER(ownerAlias)
 ```
 
- 名前 `Owner` と属性値 *ownerAlias* を持つ属性を定義します。
+ 名前 `Owner` と属性値 *ownerAlias* で `TEST_METHOD_ATTRIBUTE` を定義します。
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
- 名前 `Description` と属性値 *description* を持つ属性を定義します。
+ 名前 `Description` と属性値 *description* で `TEST_METHOD_ATTRIBUTE` を定義します。
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
- 名前 `Priority` と属性値 *priority* を持つ属性を定義します。
+ 名前 `Priority` と属性値 *priority* で `TEST_METHOD_ATTRIBUTE` を定義します。
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
- 名前 `WorkItem` と属性値 *workItem* を持つ属性を定義します。
+ 名前 `WorkItem` と属性値 *workItem* で `TEST_METHOD_ATTRIBUTE` を定義します。
 
 ```cpp
 TEST_IGNORE()
 ```
 
- 名前 `Ignore` と属性値 `true` を持つ属性を定義します。
+ 名前 `Ignore` と属性値 `true` で `TEST_METHOD_ATTRIBUTE` を定義します。
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 

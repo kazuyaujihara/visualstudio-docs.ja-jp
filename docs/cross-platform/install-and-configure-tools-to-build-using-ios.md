@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 06449d299fdfd54bdb2526d16897e815900a9c1c
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 411ab7f097a82fa850e3850c662d378f51ffd548
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614439"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586816"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>iOS を使用してビルドするためのツールのインストールおよび構成
 
@@ -66,7 +66,6 @@ iOS のコードを開発するためのリモート エージェントをイン
 
    バージョン 8.11.3 の Node.js を Mac にインストールします。 Node.js パッケージをインストールする場合、それは npm バージョン 5.6.0 に付属しているはずです。 他のバージョンの Node.js と npm では、リモート エージェント vcremote で使用されている一部のモジュールに対応していないことがあり、その場合、vcremote のインストールが失敗する可能性があります。
 
-
 ## <a name="Install"></a> iOS 用リモート エージェントをインストールする
 
 Visual C++ for Cross-Platform Mobile Development をインストールすると、Visual Studio は、Mac 上で実行されているリモート エージェント [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)と通信して、ファイルを転送したり、iOS アプリをビルドして実行したり、デバッグ コマンドを送信したりできます。
@@ -79,7 +78,7 @@ Visual C++ for Cross-Platform Mobile Development をインストールすると�
 
    `sudo npm install -g --unsafe-perm vcremote`
 
-   グローバル インストール (**-g**) スイッチが推奨されますが、必須ではありません。
+   グローバル インストール ( **-g**) スイッチが推奨されますが、必須ではありません。
 
    インストール中、Mac に vcremote がインストールされて、開発者モードがアクティブ化されます。 [Homebrew](https://brew.sh/) と 2 つのパッケージ (vcremote-lib および vcremote-utils) もインストールされます。 インストールが完了したら、スキップしたオプションの依存関係に関する警告は無視しても安全です。
 
@@ -140,9 +139,9 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
    IP アドレスを取得するには、ターミナル ウィンドウで **ifconfig** コマンドを使用します。 アクティブなネットワーク インターフェイスの下に表示される inet アドレスを使用します。
 
-1. Visual Studio のメニュー バーで、 **[ツール]**、 **[オプション]** の順に選択します。
+1. Visual Studio のメニュー バーで、 **[ツール]** 、 **[オプション]** の順に選択します。
 
-1. **[オプション]** ダイアログ ボックスで、 **[クロス プラットフォーム]**、 **[C++]**、 **[iOS]** の順に展開します。
+1. **[オプション]** ダイアログ ボックスで、 **[クロス プラットフォーム]** 、 **[C++]** 、 **[iOS]** の順に展開します。
 
 1. **[ホスト名]** フィールドと **[ポート]** フィールドに、リモート エージェントの起動時に示された値を入力します。 ホスト名には、Mac の DNS 名または IP アドレスを使用できます。 既定のポートは 3030 です。
 
@@ -159,7 +158,7 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
    ペアリングが成功しなかった場合は、「 [Start the remote agent](#Start)」の手順に従って、リモート エージェントが実行されていることを確認します。 リモート エージェントの PIN が生成されてから経過した時間が長すぎる場合は、Mac 上で「 [Generate a new security PIN](#GeneratePIN) 」の手順に従ってからもう一度実行します。 Mac のホスト名を使用している場合は、代わりに IP アドレスを **[ホスト名]** に使用してみてください。
 
-1. **[リモート ルート]** フィールドのフォルダー名を更新して、Mac のホーム (*~*) ディレクトリ内のリモート エージェントで使用されるフォルダーを指定します。 既定では、リモート エージェントはリモート ルートとして /Users/`username`/vcremote を使用します。
+1. **[リモート ルート]** フィールドのフォルダー名を更新して、Mac のホーム ( *~* ) ディレクトリ内のリモート エージェントで使用されるフォルダーを指定します。 既定では、リモート エージェントはリモート ルートとして /Users/`username`/vcremote を使用します。
 
 1. **[OK]** を選択して、リモート ペアリング接続設定を保存します。
 
@@ -215,7 +214,7 @@ Visual Studio からリモート エージェントに接続するには、Visua
 
    `vcremote --secure false`
 
-   このオプションを使用する場合、Visual Studio でエージェントを構成する際に、**[セキュア]** チェック ボックスをオフにして、**[PIN]** フィールドを空白のままにします。
+   このオプションを使用する場合、Visual Studio でエージェントを構成する際に、 **[セキュア]** チェック ボックスをオフにして、 **[PIN]** フィールドを空白のままにします。
 
 - リモート エージェント ファイルの場所を指定するには、次のように入力します。
 

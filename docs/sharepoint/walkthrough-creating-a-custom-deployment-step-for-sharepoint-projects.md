@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401091"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825635"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>チュートリアル: SharePoint プロジェクトのカスタム配置手順を作成します。
   SharePoint プロジェクトを展開するときに、Visual Studio は、特定の順序で一連の展開の手順を実行します。 Visual Studio には、多くの組み込みの配置手順が含まれていますが、独自に作成することもできます。
@@ -29,9 +29,9 @@ ms.locfileid: "66401091"
 
 - 次の 2 つの主要タスクを実行する Visual Studio の拡張機能を作成する。
 
-    - 拡張機能は、SharePoint ソリューションをアップグレードするカスタムの配置手順を定義します。
+  - 拡張機能は、SharePoint ソリューションをアップグレードするカスタムの配置手順を定義します。
 
-    - 拡張機能は、特定のプロジェクトに対して実行される配置手順のセットである新しい配置構成を定義するプロジェクトの拡張機能を作成します。 新しい展開の構成には、カスタムの配置手順といくつかの組み込みの配置手順が含まれています。
+  - 拡張機能は、特定のプロジェクトに対して実行される配置手順のセットである新しい配置構成を定義するプロジェクトの拡張機能を作成します。 新しい展開の構成には、カスタムの配置手順といくつかの組み込みの配置手順が含まれています。
 
 - 拡張機能のアセンブリを呼び出す 2 つのカスタム SharePoint コマンドを作成します。 SharePoint コマンドは、SharePoint のサーバー オブジェクト モデルでの Api を使用する拡張機能アセンブリを呼び出すことができる方法です。 詳細については、次を参照してください。[の SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)します。
 

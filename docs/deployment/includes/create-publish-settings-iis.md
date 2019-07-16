@@ -1,15 +1,15 @@
 ---
 ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846428"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256652"
 ---
 
 1. IIS 管理コンソールを閉じて、もう一度開き、UI の更新された構成オプションを表示します。
 
-2. IIS で **[既定の Web サイト]** を右クリックして、**[展開]** > **[Web 配置による発行の有効化]** の順に選びます。
+2. IIS で **[既定の Web サイト]** を右クリックして、 **[展開]**  >  **[Web 配置による発行の有効化]** の順に選びます。
 
     ![Web 配置の構成](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
 
@@ -17,7 +17,7 @@ ms.locfileid: "65846428"
 
 4. **[設定]** をクリックします。
 
-    **[結果]** パネルで、出力に特定のユーザーに付与されているアクセス権が示され、*.publishsettings* のファイル拡張子が付いたファイルがダイアログ ボックスで示されている場所に作成されています。
+    **[結果]** パネルで、出力に特定のユーザーに付与されているアクセス権が示され、 *.publishsettings* のファイル拡張子が付いたファイルがダイアログ ボックスで示されている場所に作成されています。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

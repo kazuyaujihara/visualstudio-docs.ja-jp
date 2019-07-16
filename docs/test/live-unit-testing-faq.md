@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: aafe875ee8fe759d80f8db866a565a40ce16a054
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953674"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258123"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing についてよく寄せられる質問
 
@@ -33,7 +33,7 @@ Live Unit Testing は、次の表に示されている 3 つの一般的な単�
 |テスト フレームワーク  |Visual Studio アダプターの最小バージョン  |フレームワークの最小バージョン  |
 |---------|---------|---------|
 |xUnit.net |xunit.runner.visualstudio バージョン 2.2.0-beta3-build1187 |xunit 1.9.2 |
-|NUnit |NUnit3TestAdapter バージョン 3.5.1 |NUnit バージョン 3.5.0 |
+|NUnit |NUnit3TestAdapter バージョン 3.7.0 |NUnit バージョン 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` を参照する以前の MSTest に基づくテスト プロジェクトを使用しており、新しい MSTest NuGet パッケージへの移行を希望されない場合は、Visual Studio 2017 バージョン 15.4 以降にアップグレードしてください。
@@ -197,15 +197,6 @@ public class Class1
 編集を行っていなくても、ソリューションのビルド プロセスによってソリューション自体の一部であるソース コードが生成され、ビルド ターゲット ファイルにおいて適切な入力と出力が指定されていない場合は、ソリューションがビルドされる場合があります。 MSBuild が適切な最新状態チェックを実行し、新しいビルドが必要かどうかを判断できるように、ターゲットに入力と出力のリストを提供する必要があります。
 
 Live Unit Testing は、ソース ファイルが変更されたことを検出すると常に、ビルドを開始します。 ソリューションのビルドでソース ファイルが生成されるので、Live Unit Testing は無限ビルド ループになります。 ただし、Live Unit Testing が (前のビルドで新しく生成されたソース ファイルを検出した後) 2 回目のビルドを開始するときに、ターゲットの入力と出力を調べる場合は、入力と出力のチェックですべてが最新であることが示されるため、ビルド ループから抜け出します。  
-
-## <a name="lightweight-solution-load"></a>ライトウェイト ソリューション ロード
-
-**ライトウェイト ソリューション ロード機能では Live Unit Testing はどのように動作しますか?**
-
-Live Unit Testing は現在のところ、ライトウェイト ソリューション ロード機能とうまく連動しません。 テスト プロジェクトを少なくとも 1 つ読み込まないと作動しません。 プロジェクトを読み込むまで正常に作動しない理由は、Live Unit Testing は 1 つ以上のテスト プロジェクトを利用しなければ、読み込まれるテスト アダプター (MSTest、xUnit、NUnit) を参照できないことにあります。
-
-> [!NOTE]
-> Visual Studio 2017 バージョン 15.5 以降では、ライトウェイト ソリューション ロードを使用できなくなりました。 Visual Studio 2017 バージョン 15.5 以降の場合、マネージド コードを含む大規模なソリューションで、ライトウェイト ソリューション ロードなしでも以前よりはるかに速く読み込むことができます。
 
 ## <a name="new-process-coverage"></a>新しいプロセスのカバレッジ
 

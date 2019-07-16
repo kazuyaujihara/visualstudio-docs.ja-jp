@@ -8,9 +8,9 @@
       href: what-s-new-in-msbuild-15-0.md
     - name: MSBuild の概念
       items:
-        - name: MSBuild の概念
+        - name: MSBuild の概念 - 概要
           href: msbuild-concepts.md
-        - name: MSBuild プロパティ
+        - name: プロパティ
           items:
             - name: MSBuild プロパティ
               href: msbuild-properties.md
@@ -22,7 +22,7 @@
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: プロパティ関数
               href: property-functions.md
-        - name: MSBuild 項目
+        - name: 項目
           items:
             - name: MSBuild 項目
               href: msbuild-items.md
@@ -36,7 +36,7 @@
               href: item-definitions.md
             - name: 項目用の関数
               href: item-functions.md
-        - name: MSBuild ターゲット
+        - name: ターゲット
           items:
             - name: MSBuild ターゲット
               href: msbuild-targets.md
@@ -56,7 +56,7 @@
               href: how-to-clean-a-build.md
             - name: MSBuild プロジェクト SDK の参照
               href: how-to-use-project-sdk.md
-        - name: MSBuild タスク
+        - name: '[タスク]'
           items:
             - name: MSBuild タスク
               href: msbuild-tasks.md
@@ -66,7 +66,7 @@
               href: how-to-ignore-errors-in-tasks.md
             - name: リソースがあるプロジェクトをビルドする
               href: how-to-build-a-project-that-has-resources.md
-            - name: MSBuild インライン タスク
+            - name: インライン タスク
               items:
                 - name: MSBuild インライン タスク
                   href: msbuild-inline-tasks.md
@@ -76,7 +76,7 @@
               href: msbuild-roslyncodetaskfactory.md
         - name: プロパティと項目の比較
           href: comparing-properties-and-items.md
-        - name: MSBuild の特殊文字
+        - name: 特殊文字
           items:
             - name: MSBuild の特殊文字
               href: msbuild-special-characters.md
@@ -84,11 +84,11 @@
               href: how-to-escape-special-characters-in-msbuild.md
             - name: 予約済みの XML 文字をプロジェクト ファイルで使用する
               href: how-to-use-reserved-xml-characters-in-project-files.md
-    - name: MSBuild の詳細な概念
+    - name: 詳細な概念
       items:
         - name: MSBuild の詳細な概念
           href: msbuild-advanced-concepts.md
-        - name: MSBuild バッチ
+        - name: バッチ処理
           items:
             - name: MSBuild バッチ
               href: msbuild-batching.md
@@ -98,7 +98,7 @@
               href: item-metadata-in-target-batching.md
         - name: MSBuild 変換
           href: msbuild-transforms.md
-        - name: Visual Studio の統合 (MSBuild)
+        - name: Visual Studio の統合
           items:
             - name: Visual Studio の統合 (MSBuild)
               href: visual-studio-integration-msbuild.md
@@ -108,7 +108,7 @@
               href: starting-a-build-from-within-the-ide.md
             - name: .NET Framework の拡張機能の登録
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: MSBuild での複数のプロジェクトの並行ビルド
+        - name: 複数のプロジェクトの並行ビルド
           items:
             - name: MSBuild での複数のプロジェクトの並行ビルド
               href: building-multiple-projects-in-parallel-with-msbuild.md
@@ -116,11 +116,11 @@
               href: using-multiple-processors-to-build-projects.md
             - name: 大規模なプロジェクトのビルドにおけるメモリの効率的な使用
               href: using-memory-efficiently-when-you-build-large-projects.md
-        - name: MSBuild のマルチ ターゲットの概要
+        - name: マルチ ターゲット
           items:
             - name: MSBuild のマルチ ターゲットの概要
               href: msbuild-multitargeting-overview.md
-            - name: MSBuild ツールセット (ToolsVersion)
+            - name: ツール セット (ToolsVersion)
               items:
                 - name: MSBuild ツールセット (ToolsVersion)
                   href: msbuild-toolset-toolsversion.md
@@ -142,7 +142,7 @@
               href: troubleshooting-dotnet-framework-targeting-errors.md
         - name: ファイルの追跡
           items:
-            - name: ファイルの追跡
+            - name: ファイルの追跡 - 概要
               href: file-tracking.md
             - name: EndTrackingContext
               href: endtrackingcontext.md
@@ -166,9 +166,9 @@
           href: customize-your-build.md
         - name: MSBuild のベスト プラクティス
           href: msbuild-best-practices.md
-    - name: MSBuild でのログ
+    - name: ログの記録
       items:
-        - name: MSBuild でのログ
+        - name: MSBuild でのログ - 概要
           href: logging-in-msbuild.md
         - name: MSBuild でのビルド ログの取得
           href: obtaining-build-logs-with-msbuild.md
@@ -186,11 +186,11 @@
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: MSBuild リファレンス
       items:
-        - name: MSBuild リファレンス
+        - name: MSBuild リファレンス - 概要
           href: msbuild-reference.md
         - name: MSBuild プロジェクト ファイル スキーマ リファレンス
           items:
-            - name: MSBuild プロジェクト ファイル スキーマ リファレンス
+            - name: MSBuild プロジェクト ファイル スキーマ リファレンス - 概要
               href: msbuild-project-file-schema-reference.md
             - name: Choose 要素 (MSBuild)
               href: choose-element-msbuild.md
@@ -236,13 +236,13 @@
               href: usingtask-element-msbuild.md
             - name: When 要素 (MSBuild)
               href: when-element-msbuild.md
-        - name: MSBuild タスク リファレンス
+        - name: タスク リファレンス
           items:
-            - name: MSBuild タスク リファレンス
+            - name: MSBuild タスク リファレンス - 概要
               href: msbuild-task-reference.md
-            - name: Visual C++ に固有の MSBuild タスク
+            - name: Visual C++ に固有のタスク
               items:
-                - name: Visual C++ に固有の MSBuild タスク
+                - name: Visual C++ に固有の MSBuild タスク - 概要
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: BscMake タスク
                   href: bscmake-task.md
@@ -438,15 +438,15 @@
           href: msbuild-well-known-item-metadata.md
         - name: MSBuild 応答ファイル
           href: msbuild-response-files.md
-        - name: WPF MSBuild のリファレンス
+        - name: WPF リファレンス
           items:
-            - name: WPF MSBuild のリファレンス
+            - name: WPF MSBuild リファレンス - 概要
               href: wpf-msbuild-reference.md
             - name: WPF .Targets ファイル
               href: wpf-dot-targets-files.md
-            - name: WPF MSBuild タスク リファレンス
+            - name: WPF タスク リファレンス
               items:
-                - name: WPF MSBuild タスク リファレンス
+                - name: WPF MSBuild タスク リファレンス - 概要
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier タスク
                   href: fileclassifier-task.md

@@ -2,7 +2,7 @@
 title: Windows 上の Visual Studio の Python サポート
 titleSuffix: ''
 description: Windows 上で最高の Python IDE である Visual Studio の Python 機能 (Python Tools for Visual Studio (PTVS) とも呼ばれます) の概要について説明します
-ms.date: 03/12/2019
+ms.date: 06/05/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8bcc0be91892494a81dd42f141da9c77329767cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c137b6bd8a38ac606a547ce961c4f040e60c6d87
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785237"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043355"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows 上の Visual Studio での Python の使用
 
@@ -38,6 +38,11 @@ Visual Studio は、Windows 上の強力な Python IDE です。 Visual Studio �
 ::: moniker-end
 - 完全なエンド ツー エンドのエクスペリエンスの場合は、[Visual Studio での Python の使用](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)のチュートリアルに従います。
 
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio では、Python バージョン 2.7 だけでなくバージョン 3.5 以降もサポートされます。 Visual Studio を使って、他のバージョンの Python で記述されたコードを編集することはできますが、それらのバージョンは公式にはサポートされておらず、IntelliSense やデバッグなどの機能が動作しない可能性があります。
+::: moniker-end
+
 ## <a name="support-for-multiple-interpreters"></a>複数のインタープリターのサポート
 
 Visual Studio の **[Python 環境]** ウィンドウ (以下の図では横幅を広げて表示しています) を使用すると、グローバルな Python 環境、conda 環境、仮想環境をすべて 1 つの場所で管理できます。 Visual Studio では、標準的な場所にある Python のインストールが自動的に検出されます。また、カスタム インストールを構成することができます。 各環境では、簡単にパッケージを管理し、その環境の対話型ウィンドウを開き、環境フォルダーにアクセスできます。
@@ -58,7 +63,7 @@ Visual Studio の **[Python 環境]** ウィンドウ (以下の図では横幅�
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>豊富な編集、IntelliSense、コード読解
 
-Visual Studio には、構文の色分け、すべてのコードとライブラリのオートコンプリート、コードの書式設定、シグネチャ ヘルプ、リファクタリング、lint、型に関するヒントなどを備える最上級の Python エディターが用意されています。 また、Visual Studio には、クラス ビュー、**[定義へ移動]**、**[すべての参照の検索]**、コード スニペットなど、独自の機能もあります。 [対話型ウィンドウ](#interactive-window)と直接統合されているので、既にファイルに保存されている Python コードを簡単に開発することができます。
+Visual Studio には、構文の色分け、すべてのコードとライブラリのオートコンプリート、コードの書式設定、シグネチャ ヘルプ、リファクタリング、lint、型に関するヒントなどを備える最上級の Python エディターが用意されています。 また、Visual Studio には、クラス ビュー、 **[定義へ移動]** 、 **[すべての参照の検索]** 、コード スニペットなど、独自の機能もあります。 [対話型ウィンドウ](#interactive-window)と直接統合されているので、既にファイルに保存されている Python コードを簡単に開発することができます。
 
 ![Visual Studio での Python コードのオートコンプリート](media/code-editing-completions-simple.png)
 
@@ -72,7 +77,7 @@ Visual Studio には、構文の色分け、すべてのコードとライブラ
 
 ## <a name="interactive-window"></a>対話型ウィンドウ
 
-Visual Studio で認識されるすべての Python 環境で、別のコマンド プロンプトを使用するのではなく、Visual Studio 内で直接、Python インタープリター用の同じ対話型 (REPL) 環境を簡単に開くことができます。 また、環境間を簡単に切り替えることもできます。 (別のコマンド プロンプトを開くには、**[Python 環境]** ウィンドウで目的の環境を選択してから、前述の「[複数のインタープリターのサポート](#support-for-multiple-interpreters)」で説明したように、**[PowerShell で開く]** コマンドを選択します)。
+Visual Studio で認識されるすべての Python 環境で、別のコマンド プロンプトを使用するのではなく、Visual Studio 内で直接、Python インタープリター用の同じ対話型 (REPL) 環境を簡単に開くことができます。 また、環境間を簡単に切り替えることもできます。 (別のコマンド プロンプトを開くには、 **[Python 環境]** ウィンドウで目的の環境を選択してから、前述の「[複数のインタープリターのサポート](#support-for-multiple-interpreters)」で説明したように、 **[PowerShell で開く]** コマンドを選択します)。
 
 ![Visual Studio の Python 対話型ウィンドウ](media/interactive-window.png)
 
@@ -150,23 +155,23 @@ Visual Studio **テスト エクスプローラー**でテストを検出、実�
 
 ## <a name="azure-sdk-for-python"></a>Azure SDK for Python
 
-Python ワークロードに含まれる Azure SDK for Python を使うと、Windows、Mac OS X、Linux アプリから Azure サービスを簡単に利用できます。
+Python 用 Azure ライブラリを使用することで、Windows、Mac OS X、Linux アプリから Azure サービスを簡単に使用できます。 Azure リソースの作成や Azure サービスへの接続に使用できます。 
 
-詳細については、[Python 用 Azure SDK](/python/azure/?view=azure-python) に関するページを参照してください。
+詳細については、「[Azure SDK for Python](/python/azure/?view=azure-python)」と「[Python 用 Azure ライブラリ](/python/azure/python-sdk-azure-overview?view=azure-python)」を参照してください。
 
 ## <a name="questions-and-answers"></a>質問と回答
 
 **Q.Visual Studio for Mac では Python のサポートを利用できますか?**
 
-A:  まだ実装されていませんが、[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html)で要望に投票することができます。 [Visual Studio for Mac](/visualstudio/mac/) のドキュメントでは、現在サポートされている開発の種類が示されています。 当面の間、Windows、Mac、Linux での Visual Studio Code は、[利用可能な拡張機能によって Python で問題なく動作します](https://code.visualstudio.com/docs/languages/python)。
+A: まだ実装されていませんが、[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html)で要望に投票することができます。 [Visual Studio for Mac](/visualstudio/mac/) のドキュメントでは、現在サポートされている開発の種類が示されています。 当面の間、Windows、Mac、Linux での Visual Studio Code は、[利用可能な拡張機能によって Python で問題なく動作します](https://code.visualstudio.com/docs/languages/python)。
 
 **Q.Python で UI を構築するには何を使用できますか?**
 
-A:  この分野の主なツールとして [Qt Project](https://www.qt.io/qt-for-application-development/) があり、[PySide (公式バインディング)](https://wiki.qt.io/PySide) ([PySide のダウンロード ページ](https://download.qt.io/official_releases/pyside/.)もご覧ください) や [PyQt](https://wiki.python.org/moin/PyQt) という Python のバインディングもあります。 現在のところ、Visual Studio の Python のサポートには、UI 開発用のツールは含まれていません。
+A: この分野の主なツールとして [Qt Project](https://www.qt.io/qt-for-application-development/) があり、[PySide (公式バインディング)](https://wiki.qt.io/PySide) ([PySide のダウンロード ページ](https://download.qt.io/official_releases/pyside/.)もご覧ください) や [PyQt](https://wiki.python.org/moin/PyQt) という Python のバインディングもあります。 現在のところ、Visual Studio の Python のサポートには、UI 開発用のツールは含まれていません。
 
 **Q.Python プロジェクトでスタンドアロンの実行可能ファイルを作成できますか?**
 
-A:  一般的に、Python はインタープリター言語であり、Visual Studio や Web サーバーなど、適切な Python 対応環境で、オンデマンドでコードが実行されます。 現在のところ、Python のスタンドアロンの実行可能ファイル (実質的には Python インタープリターが埋め込まれたプログラム) を作成する機能は Visual Studio にありません。 ただし、[StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)で説明されているように、Python コミュニティでは、実行可能ファイルを作成するさまざまな方法が提供されています。 また、CPython はネイティブ アプリケーション内への埋め込みをサポートしています。詳細については、ブログの投稿「[Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)」(CPython の埋め込み可能な Zip ファイルの使用方法) をご覧ください。
+A: 一般的に、Python はインタープリター言語であり、Visual Studio や Web サーバーなど、適切な Python 対応環境で、オンデマンドでコードが実行されます。 現在のところ、Python のスタンドアロンの実行可能ファイル (実質的には Python インタープリターが埋め込まれたプログラム) を作成する機能は Visual Studio にありません。 ただし、[StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)で説明されているように、Python コミュニティでは、実行可能ファイルを作成するさまざまな方法が提供されています。 また、CPython はネイティブ アプリケーション内への埋め込みをサポートしています。詳細については、ブログの投稿「[Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)」(CPython の埋め込み可能な Zip ファイルの使用方法) をご覧ください。
 
 ::: moniker range="<=vs-2017"
 

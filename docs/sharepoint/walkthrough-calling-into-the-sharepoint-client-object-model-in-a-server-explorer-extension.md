@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: bf3d39a8a06a59ed337c0d847bb92875f0f68558
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835942"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824160"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>チュートリアル: サーバー エクスプ ローラー拡張機能では、SharePoint クライアント オブジェクト モデルへの呼び出し
   このチュートリアルの拡張機能から SharePoint クライアント オブジェクト モデルを呼び出す方法、 **SharePoint 接続**ノード**サーバー エクスプ ローラー**します。 SharePoint クライアント オブジェクト モデルを使用する方法の詳細については、次を参照してください。[の SharePoint オブジェクト モデルを呼び出す](../sharepoint/calling-into-the-sharepoint-object-models.md)します。
@@ -27,9 +27,9 @@ ms.locfileid: "66835942"
 
 - 作成、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]拡張機能を拡張する、 **SharePoint 接続**のノード**サーバー エクスプ ローラー**次の方法で。
 
-    - 拡張機能の追加、 **Web パーツ ギャラリー**内の各 SharePoint サイト ノード下にノード**サーバー エクスプ ローラー**します。 この新しいノードには、サイトの Web パーツ ギャラリーでは、各 Web パーツを表す子ノードが含まれています。
+  - 拡張機能の追加、 **Web パーツ ギャラリー**内の各 SharePoint サイト ノード下にノード**サーバー エクスプ ローラー**します。 この新しいノードには、サイトの Web パーツ ギャラリーでは、各 Web パーツを表す子ノードが含まれています。
 
-    - 拡張機能は、新しい種類の Web パーツ インスタンスを表すノードを定義します。 この新しいノードの種類は、新しい子ノードの基礎**Web パーツ ギャラリー**ノード。 新しい Web パーツのノードの種類の情報が表示されます、**プロパティ**ノードが表す Web パーツのウィンドウ。
+  - 拡張機能は、新しい種類の Web パーツ インスタンスを表すノードを定義します。 この新しいノードの種類は、新しい子ノードの基礎**Web パーツ ギャラリー**ノード。 新しい Web パーツのノードの種類の情報が表示されます、**プロパティ**ノードが表す Web パーツのウィンドウ。
 
 - 拡張機能をデプロイする Visual Studio Extension (VSIX) パッケージを作成します。
 

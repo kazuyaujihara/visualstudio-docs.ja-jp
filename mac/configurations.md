@@ -1,16 +1,16 @@
 ---
 title: ビルド構成について
 description: この記事では、Visual Studio for Mac のさまざまなビルド構成について説明します。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 7f130f5dec77e0a1965c68cf71e642fdb636832f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62f7f2a8ebdafcccc6082edce2c4a7f1d91ff48e
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983368"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693097"
 ---
 # <a name="understanding-build-configurations"></a>ビルド構成について
 
@@ -22,7 +22,7 @@ ms.locfileid: "62983368"
 
 ## <a name="solution-configurations"></a>ソリューション構成
 
-プロジェクト構成のように、ソリューション構成も、プロジェクト全体に対してカスタム構成を作成するために使用されます。 次の画像のように、 **[ビルド]、[構成]**  項目、 **[構成マッピング]**  タブの順に選択し、各ソリューション項目のターゲット構成を割り当てることができます。
+プロジェクト構成のように、ソリューション構成も、プロジェクト全体に対してカスタム構成を作成するために使用されます。 次の画像のように、 **[ビルド]、[構成]** 、 **[構成マッピング]** タブの順に選択し、各ソリューション項目のターゲット構成を割り当てることができます。
 
 ![構成マッピング オプション](media/projects-and-solutions-image3.png)
 
@@ -36,7 +36,7 @@ Visual Studio for Mac では、スタートアップ プロジェクトを設定
 
 ![実行構成ドロップダウン](media/projects-and-solutions-image8.png)
 
-実行構成は、一連の実行オプション、名前、さまざまな目的でプロジェクトに定義されるいくつかの構成からなります。 実行構成はプロジェクト レベルで定義されます。デフォルトは実行可能プロジェクトごとに自動的に作成されます。ただし、必要な数だけ追加できます。 プロジェクトの種類によっては、追加の実行構成が自動的に生成されます。 たとえば、watchOS プロジェクトの場合、 _グランス構成と通知構成_が生成されることがあります。
+実行構成は、一連の実行オプション、名前、さまざまな目的でプロジェクトに定義されるいくつかの構成からなります。 実行構成はプロジェクト レベルで定義されます。デフォルトは実行可能プロジェクトごとに自動的に作成されます。ただし、必要な数だけ追加できます。 プロジェクトの種類によっては、追加の実行構成が自動的に生成されます。 たとえば、watchOS プロジェクトの場合、_グランス構成と通知構成_が生成されることがあります。
 
 構成は他の開発者と共有したり (この場合、構成は .csproj ファイルに保存)、ローカル保存したり (この場合、構成は .user ファイルに保存) することができます。
 

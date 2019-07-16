@@ -1,5 +1,5 @@
 ---
-title: 配置機能のツアー
+title: 配置でのはじめに
 description: Visual Studio からアプリを配置する際の選択肢について説明します。
 ms.custom: mvc
 ms.date: 01/29/2019
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae70551fdb223856774f7e2afa0d85f915f27a0c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261985"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032556"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio での配置の概要
 
@@ -40,7 +40,7 @@ ms.locfileid: "66261985"
 
 ローカル フォルダーへの配置は通常、テスト目的で使用されます。あるいは、最終的な配置に別のツールを使用する段階式配置を開始する目的で使用されます。
 
-- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python**、.**NET Core**:発行ツールを使用して、ローカル フォルダーに配置します。 利用できるオプションは厳密にはアプリの種類によって異なります。 ソリューション エクスプローラーで、プロジェクトを右クリックし、**[発行]** を選択します。 (発行プロファイルを以前に構成していない場合、**[新しいプロファイルの作成]** をクリックする必要があります。)次に **[フォルダー]** を選択します。 詳細については、「[ローカル フォルダーに配置する](quickstart-deploy-to-local-folder.md)」を参照してください
+- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python**、.**NET Core**:発行ツールを使用して、ローカル フォルダーに配置します。 利用できるオプションは厳密にはアプリの種類によって異なります。 ソリューション エクスプローラーで、プロジェクトを右クリックし、 **[発行]** を選択します。 (発行プロファイルを以前に構成していない場合、 **[新しいプロファイルの作成]** をクリックする必要があります。)次に **[フォルダー]** を選択します。 詳細については、「[ローカル フォルダーに配置する](quickstart-deploy-to-local-folder.md)」を参照してください
 
     ![[発行] を選択する](../deployment/media/quickstart-publish.png)
 
@@ -54,9 +54,9 @@ ms.locfileid: "66261985"
 
   - アプリを一回だけ (手動で) 配置する場合、Visual Studio の **[発行]** ツールを使用します。
 
-  サーバー構成のカスタマイズ機能が多い配置の場合、**[発行]** ツールを使用し、Azure Virtual Machine にアプリを配置することもできます。
+  サーバー構成のカスタマイズ機能が多い配置の場合、 **[発行]** ツールを使用し、Azure Virtual Machine にアプリを配置することもできます。
 
-  **[発行]** ツールを使用するには、ソリューション エクスプローラーでプロジェクトを右クリックし、**[発行]** を選択します。 (発行プロファイルを以前に構成している場合、**[新しいプロファイルの作成]** をクリックする必要があります。)[発行] ダイアログ ボックスで、**[App Service]** または **[Azure Virtual Machines]** を選択し、構成手順に従います。
+  **[発行]** ツールを使用するには、ソリューション エクスプローラーでプロジェクトを右クリックし、 **[発行]** を選択します。 (発行プロファイルを以前に構成している場合、 **[新しいプロファイルの作成]** をクリックする必要があります。)[発行] ダイアログ ボックスで、 **[App Service]** または **[Azure Virtual Machines]** を選択し、構成手順に従います。
 
   ![Azure App Service を選択する](../deployment/media/quickstart-publish-azure.png "Azure App Service を選択する")
 
@@ -75,7 +75,7 @@ ms.locfileid: "66261985"
 
 - **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python**:発行ツールを使用することで、FTP または Web 配置を使って Web サイトに配置できます。 詳細については、[Web サイトに配置する](quickstart-deploy-to-a-web-site.md)方法に関するページを参照してください。
 
-    ソリューション エクスプローラーで、プロジェクトを右クリックして、**[発行]** を選択します。 (発行プロファイルを以前に構成している場合、**[新しいプロファイルの作成]** をクリックする必要があります。)発行ツールで、必要なオプションを選択し、構成手順に従います。
+    ソリューション エクスプローラーで、プロジェクトを右クリックして、 **[発行]** を選択します。 (発行プロファイルを以前に構成している場合、 **[新しいプロファイルの作成]** をクリックする必要があります。)発行ツールで、必要なオプションを選択し、構成手順に従います。
 
     ![IIS や FTP などを選択します。](../deployment/media/quickstart-publish-iis-ftp.png)
 
@@ -120,6 +120,16 @@ Visual Studio から、Microsoft Store に配置するためのアプリ パッ�
 ## <a name="continuous-deployment"></a>継続的配置
 
 Azure Pipelines を使用し、アプリの継続的配置を有効にできます。 詳細については、[Azure Pipelines](/azure/devops/pipelines/index?view=vsts) に関するページと [Azure に配置する](/azure/devops/deploy-azure/index?view=vsts)方法に関するページを参照してください。
+
+## <a name="deploy-a-sql-database"></a>SQL データベースを配置する
+
+- [ターゲット プラットフォームを変更し、データベース プロジェクトを発行する (SQL Server Data Tools (SSDT))](/sql/ssdt/how-to-change-target-platform-and-publish-a-database-project)
+
+- [Analysis Services (SSAS) プロジェクトを配置する](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
+
+- [Integration Services (SSIS) プロジェクトとパッケージを配置する](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+
+- [ローカル データベースでビルドおよび配置を行う](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>他の種類のアプリを配置する
 

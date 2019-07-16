@@ -1,16 +1,16 @@
 ---
 title: コード スニペット
 description: Visual Studio for Mac でコード スニペットを利用して効率的にプログラミングする方法
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 56f736aa1e32530b1db96ad301091151731b7d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c0113346031853e21e9182a56078a44097119a5
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540102"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691981"
 ---
 # <a name="code-snippets"></a>コード スニペット
 
@@ -85,8 +85,6 @@ ms.locfileid: "62540102"
 - `$end$` &ndash; ユーザーがスニペット内のキーワードの編集を完了すると、`$end$` キーワードの位置にカーソルが置かれます。
 
 前のセクションにある `for` スニペットは、これらの予約キーワード両方の例です。
-
-詳細については、[Visual Studio のコード スニペットのリファレンス](/visualstudio/ide/code-snippets-schema-reference#keywords)に関する記事を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

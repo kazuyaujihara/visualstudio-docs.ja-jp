@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65f659b64b6a1e29e1e25ae344dd8033e631de09
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157766"
 ---
 # <a name="summary-view---resource-contention-view"></a>概要ビュー - リソース競合ビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ ms.locfileid: "54804109"
   
  **[最も競合の多いリソース]** には、各リソースの次のデータが含まれます。  
   
-|Column|説明|  
+|[列]|説明|  
 |------------|-----------------|  
-|**Name**|リソースの名前。|  
+|**名前**|リソースの名前。|  
 |**競合 %**|プロファイル データのすべての競合イベントに対する、このリソースに関する競合イベントの割合。|  
   
 ## <a name="most-contended-thread"></a>最も競合の多いスレッド  
@@ -43,8 +43,8 @@ ms.locfileid: "54804109"
   
  **最も競合の多いスレッド** には、各スレッドの次のデータが含まれます。  
   
-|Column|説明|  
+|[列]|説明|  
 |------------|-----------------|  
 |**ID**|スレッド ID です|  
-|**Name**|スレッドを所有するプロセスの名前。|  
+|**名前**|スレッドを所有するプロセスの名前。|  
 |**競合 %**|プロファイル データのすべての競合イベントに対する、このリソースに関する競合イベントの割合。|

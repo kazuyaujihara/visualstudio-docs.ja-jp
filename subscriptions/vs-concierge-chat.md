@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるコンシェルジェ チャット特典について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: fd190dbd22f25dd14e18d11f73ee17327fc8c27d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9141da640cf0a181c462f1f9af5c3e8fe70a3fb4
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947861"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586918"
 ---
 # <a name="concierge-chat"></a>コンシェルジェ チャット
 
@@ -24,7 +24,7 @@ ms.locfileid: "62947861"
 コンシェルジェ サービスを使用してヘルプを受けるのは非常に簡単です。
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
 
-2. 特典ページの [サポート] セクションでコンシェルジェ チャット タイルを見つけ、**[今すぐチャットを開始]** をクリックします。
+2. 特典ページの [サポート] セクションでコンシェルジェ チャット タイルを見つけ、 **[今すぐチャットを開始]** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![コンシェルジェ チャット タイル](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
@@ -45,7 +45,6 @@ ms.locfileid: "62947861"
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用可能                                             |  はい          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用可能                                              |  はい          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
-| Visual Studio Dev Essentials | N/A  | 使用できません |N/A |
 
 <sup>1</sup>  *Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark が含まれます除外:FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Imagine は含まれません。*
 

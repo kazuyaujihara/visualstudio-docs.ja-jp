@@ -8,12 +8,12 @@ metadata:
   description: Visual Studio を使って、アプリケーション、サービス、ツールを、任意の言語で、任意のプラットフォームやデバイス向けに開発する方法について説明します。
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
-  ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+  ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
+  ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 06/07/2019
-  ms.locfileid: "66462864"
+  ms.lasthandoff: 07/01/2019
+  ms.locfileid: "67493712"
 highlightedContent:
   items:
   - title: セットアップとインストール
@@ -161,21 +161,48 @@ additionalContent:
   - title: 作業負荷
     items:
     - title: Web とクラウド
-      summary: "[Web 開発](/aspnet/) </br>\n[Azure の開発と管理](azure/index.yml) </br>\n[Python](python/index.yml) </br>\n[Node.js](javascript/index.yml) </br>\n[データ ストレージと処理](data-tools/index.md) </br>\n[データ サイエンス](python/data-science-and-analytical-applications-workload.md) </br>\n[Office/Sharepoint 開発](https://developer.microsoft.com/office/docs) \n"
+      links:
+      - text: Web 開発
+        url: /aspnet/
+      - text: Azure 開発および管理
+        url: /visualstudio/azure
+      - text: Python
+        url: /visualstudio/python
+      - text: Node.js
+        url: /visualstudio/javascript
+      - text: データ ストレージとデータ処理
+        url: data-tools/index.md
+      - text: データ サイエンス
+        url: python/data-science-and-analytical-applications-workload.md
+      - text: Office/Sharepoint 開発
+        url: https://developer.microsoft.com/office/docs
     - title: Windows
-      summary: >
-        [.NET デスクトップ開発](/dotnet/framework/develop-client-apps) </br>
-
-        [ユニバーサル Windows プラットフォーム開発](cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) </br>
-
-        [C++ による Windows 開発](/cpp/windows/desktop-applications-visual-cpp)
+      links:
+      - text: .NET デスクトップ開発
+        url: /dotnet/framework/develop-client-apps
+      - text: ユニバーサル Windows プラットフォーム開発
+        url: cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
+      - text: C++ での Windows 開発
+        url: /cpp/windows/desktop-applications-visual-cpp
     - title: モバイルとゲーム
-      summary: "[.NET (Xamarin) によるモバイル開発](/xamarin/) </br>\n[Unity によるゲーム開発](cross-platform/visual-studio-tools-for-unity.md) </br>\n[JavaScript によるモバイル開発](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (Visual Studio 2017 および 2015 のみ) </br>\n[C++ によるモバイル開発](/visualstudio/cross-platform/) </br>\n[C++ によるゲーム開発](/windows/uwp/gaming/e2e) \n"
+      links:
+      - text: .NET (Xamarin) によるモバイル開発
+        url: /xamarin/
+      - text: Unity でのゲーム開発
+        url: cross-platform/visual-studio-tools-for-unity.md
+      - text: JavaScript でのモバイル開発
+        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
+        note: (Visual Studio 2017 and 2015 only)
+      - text: C++ でのモバイル開発
+        url: /visualstudio/cross-platform/
+      - text: C++ によるゲーム開発
+        url: /windows/uwp/gaming/e2e
     - title: 他のツールセット
-      summary: >
-        [Visual Studio 拡張機能の開発](extensibility/index.md) </br>
-
-        [C++ による Linux 開発](/cpp/linux/) </br>
-
-        [.NET Core クロスプラットフォームの開発](/dotnet/core/)
+      links:
+      - text: Visual Studio 拡張機能の開発
+        url: extensibility/index.md
+      - text: C++ による Linux 開発
+        url: /cpp/linux/
+      - text: .NET Core クロスプラットフォームの開発
+        url: /dotnet/core/
   footer: '[ブログ](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [問題の報告](ide/talk-to-us.md) - [開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/8/index.html)'

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55884fe34fda7f29370439d8a792a595763292b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed0f396613cea4ec2b6d9869e3ef1b121cac236b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004758"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747370"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild タスク リファレンス
 
@@ -169,7 +169,7 @@ ms.locfileid: "63004758"
 
 - [GetFrameworkPath タスク](../msbuild/getframeworkpath-task.md)
 
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] アセンブリへのパスを取得します。
+ .NET Framework アセンブリのパスを取得します。
 
 - [GetFrameworkSdkPath タスク](../msbuild/getframeworksdkpath-task.md)
 
@@ -221,7 +221,7 @@ ms.locfileid: "63004758"
 
 - ResGen タスク
 
- 互換性のために残されています。 [GenerateResource タスク](../msbuild/generateresource-task.md)を使用すると、*.txt* ファイルおよび *.resx* ファイルを、共通言語ランタイムのバイナリ *.resources* ファイルに対して、変換および再変換することができます。
+ 互換性のために残されています。 [GenerateResource タスク](../msbuild/generateresource-task.md)を使用すると、 *.txt* ファイルおよび *.resx* ファイルを、共通言語ランタイムのバイナリ *.resources* ファイルに対して、変換および再変換することができます。
 
 - [ResolveAssemblyReference タスク](../msbuild/resolveassemblyreference-task.md)
 

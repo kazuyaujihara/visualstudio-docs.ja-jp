@@ -2,64 +2,45 @@
 title: Visual Studio サブスクリプションの新機能
 description: Visual Studio サブスクリプションの管理に使用できる、新機能と更新された機能について説明します。
 ms.custom: ''
-ms.date: 06/25/2018
+ms.date: 06/27/2019
 searchscope: VS Subscription
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: dc243e057e3e0d4eec6ea314b0e7aa0778d6c0dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: evanwindom
+ms.author: lank
+manager: lank
+ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969404"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465118"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの新機能
 
-サブスクリプション特典パッケージは、ユーザーにとってより役立つものにするために、頻繁に更新されています。 以下で最新の機能について説明します (四半期ごとに並べ替え)。
+サブスクリプション特典パッケージは、ユーザーにとってより役立つものにするために、頻繁に更新されています。 また、ユーザーに最良のエクスペリエンスを提供するため、サブスクライバーとサブスクリプション管理ポータルも機能強化されます。  以下で、最新の機能と更新プログラムについて説明します (四半期順)。
 
-## <a name="2018-q2-april-june"></a>2018 年第 2 四半期 (4 月～ 6 月)
+## <a name="2019-q1-january-march"></a>2019 年第 1 四半期 (1 月から 3 月)
 
-第 2 四半期の新機能の簡単な要約を次に示します。
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>[サブスクリプション管理ポータル](https://manage.visualstuido.com)に最大使用量を追加
+Visual Studio のサブスクリプション管理ポータルの新機能を使用すると、購入して割り当てたサブスクリプション数を追跡し、過去 1 年間と全契約期間の割り当てた各レベルのサブスクリプションのピーク数を特定できます。 これは、現在のサブスクリプションの使用状況を理解し、将来の購入を計画するのに役立ちます。 
 
-### <a name="cloud-administrators"></a>クラウド管理者
+  > [!div class="mx-imgBorder"]
+  > ![[Maximum Usage]\(最大使用量\) メニュー](_img/maximum-usage/maximum-usage-menu.png)
 
-クラウド サブスクリプションの管理を容易にする、クラウド管理者向けの新機能が追加されました。
+購入や割り当てなど、ご自分の割り当ての実行履歴を確認することもできます。   
 
-* [**一括割り当て**](/visualstudio/subscriptions/assign-license#bulk-assignments): 複数のサブスクライバーを一括で追加およびアップロードします。
+詳細については、[最大使用量](maximum-usage.md)に関する記事をご覧ください。 
 
-  ![[一括追加] ボタンを使用して複数のユーザーを追加](media/bulk-add-multiple-subscribers.png)
+## <a name="2019-q2-april-june"></a>2019 年第 2 四半期 (4 月から 6 月)
 
-* [**エクスポート**](/visualstudio/subscriptions/exporting-subscriptions): ユーザーとその割り当てに関する詳細情報のリストをエクスポートします。 このようなリストは、割り当てと有効期限を追跡したい場合に役立ちます。
+### <a name="visual-studio-with-github-enterprise-subscriptions"></a>GitHub Enterprise サブスクリプションを含む Visual Studio
+5 月に開催された //build カンファレンスで、Enterprise Agreement のお客様が GitHub Enterprise を含む Visual Studio サブスクリプションを購入いただけるようになったことが Microsoft により発表されました。  この方法により、Visual Studio サブスクリプションと GitHub Enterprise の両方を、1 つのお得な価格で簡単に入手いただけます。  
 
-   ![[エクスポート] ボタンを使用して、サブスクライバー リストを Excel にエクスポート](media/export-subscriber-list-to-csv.png)
+GitHub Enterprise は、Enterprise Agreement を通じて入手した Visual Studio Enterprise および Visual Studio Professional サブスクリプションと共にご利用いただけます。 また、お客様のエンタープライズ契約が更新予定でない場合でも GitHub Enterprise を追加することができる、"ステップアップ" オファーもご用意しています。
 
-* [**一括編集**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit): 複数のサブスクライバーのサブスクリプション情報を一括で編集します。
+メリット、オプション、および価格の詳細については、 https://visualstudio.microsoft.com/subscriptions/visual-studio-github にアクセスしてください。 
 
-  ![[一括編集] ボタンを使用して複数のユーザーを編集](media/bulk-edit-multiple-subscribers.png)
-
-* [**サブスクリプションの追加**エクスペリエンス](assign-license.md)で使用可能な新しいフィールドを確認します。
-
-  * **通知電子メール**: 組織で Azure AD が使用されていない場合、サインイン電子メールとは異なる電子メールを通知に使用したいときには、その電子メールを追加することができます。
-
-    ![新しい通知メール アドレスを追加する](media/add-new-subscriber-notification-email.png)
-
-  * **通信設定**: 割り当てメールの送信に使用する言語を選択します。
-
-    ![通知メールを送信するときに使用する言語を変更する](media/change-subscriber-communication-preference.png)
-
-  * **参照の追加**: 管理するサブスクリプションに参照メモを追加します。
-
-    ![サブスクリプションごとに独自の参照メモを追加する](media/add-subscriber-reference-notes.png)
-
-* [**割り当てメールの再送**](resend-assignment-email.md): 通知電子メールをサブスクライバー リスト内の任意の人にもう一度送信します。何度でも必要なだけ再送することができます。
-
-  ![必要なときにいつでもアクティブ化メールを任意または複数のユーザーに再送する](media/resend-subscriber-activation-emails.png)
-
-* [**フィルター**](search-license.md): ニーズに合わせて、ご自分のサブスクライバー データを最適に整理およびフィルター処理します。
-
-  ![利用可能なフィールドに基づいて、サブスクライバー データをフィルター処理する](media/filter-subscriber-data.png)
+お客様の組織が既に GitHub Enterprise を含む Visual Studio サブスクリプションを持っている場合は、Microsoft のドキュメントから [GitHub Enterprise を含む Visual Studio の管理](assign-github.md) (サブスクリプション) について詳しく学習いただけます。  
 
 今日のところは、これで終わりです。
 

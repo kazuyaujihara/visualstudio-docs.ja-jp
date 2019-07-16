@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 10affe50b3410fa013205313f4087aaabb7c4769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430414"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825804"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>チュートリアル: SharePoint プロジェクト拡張機能を作成します。
   このチュートリアルでは、SharePoint プロジェクトの拡張機能を作成する方法について説明します。 プロジェクトの拡張機能を使用すると、プロジェクトを追加、削除、または名前を変更する場合など、プロジェクト レベルのイベントに応答します。 カスタム プロパティを追加またはプロパティ値を変更するときの応答もできます。 プロジェクト項目の拡張機能とは異なりプロジェクト拡張機能は、特定の SharePoint プロジェクトの種類に関連付けすることはできません。 任意の種類の SharePoint プロジェクトを開いたときに、拡張機能を読み込むプロジェクトの拡張機能を作成するときに[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]します。
@@ -30,11 +30,11 @@ ms.locfileid: "63430414"
 
 - 作成、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]実行すると、次の SharePoint プロジェクト拡張機能。
 
-    - [プロパティ] ウィンドウには、カスタムのプロジェクトのプロパティを追加します。 プロパティは、任意の SharePoint プロジェクトに適用されます。
+  - [プロパティ] ウィンドウには、カスタムのプロジェクトのプロパティを追加します。 プロパティは、任意の SharePoint プロジェクトに適用されます。
 
-    - SharePoint プロジェクト オブジェクト モデルを使用すると、プロジェクトにマップされたフォルダーを追加します。
+  - SharePoint プロジェクト オブジェクト モデルを使用すると、プロジェクトにマップされたフォルダーを追加します。
 
-    - 使用して、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]オートメーション オブジェクト モデル (DTE) をプロジェクトからマップされたフォルダーを削除します。
+  - 使用して、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]オートメーション オブジェクト モデル (DTE) をプロジェクトからマップされたフォルダーを削除します。
 
 - 構築、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Extension (VSIX) パッケージ、プロジェクト プロパティの拡張機能アセンブリを展開します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "63430414"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を起動します。
 
-2. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+2. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
 3. **新しいプロジェクト** ダイアログ ボックスで、展開、 **Visual c#** または**Visual Basic**ノードを選択し、**機能拡張**ノード。
 
@@ -119,7 +119,7 @@ ms.locfileid: "63430414"
 
 #### <a name="to-build-the-solution"></a>ソリューションをビルドするには
 
-1. メニュー バーで、**[ビルド]** > **[ソリューションのビルド]** の順にクリックします。
+1. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-property-extension"></a>プロジェクト プロパティの拡張機能を配置するための VSIX パッケージを作成します。
  プロジェクトの拡張機能をデプロイするのにには、VSIX パッケージを作成するのにソリューションで VSIX プロジェクトを使用します。 まず、VSIX プロジェクトに含まれている source.extension.vsixmanifest ファイルを変更して、VSIX パッケージを構成します。 次に、ソリューションをビルドして VSIX パッケージを作成します。
@@ -176,7 +176,7 @@ ms.locfileid: "63430414"
 
 3. 実験用インスタンスで[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ファーム ソリューションでは、SharePoint プロジェクトを作成し、ウィザードの他の値の既定値を使用します。
 
-    1. メニュー バーで、**[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
+    1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
     2. 上部にある、**新しいプロジェクト** ダイアログ ボックスで、選択 **.NET Framework 3.5**で .NET Framework のバージョンの一覧。
 

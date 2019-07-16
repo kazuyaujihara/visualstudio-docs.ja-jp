@@ -1,7 +1,7 @@
 ---
 title: Python インタープリターの選択とインストール
 description: Visual Studio でサポートされている Python インタープリターの詳細な一覧です。インストーラーを入手できる場所についても簡単に説明します。
-ms.date: 03/13/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,22 +10,27 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16c8773e87784c43b4203b6837fb7c58ba5adce5
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957416"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043485"
 ---
 # <a name="install-python-interpreters"></a>Python インタープリターのインストール
 
 既定では、Visual Studio 2017 以降に Python 開発ワークロードをインストールすると、Python 3 (64 ビット) もインストールされます。 [インストール](installing-python-support-in-visual-studio.md)に関する記事で説明されているように、必要に応じて、32 ビットおよび 64 ビット版の Python 2 および Python 3 と共に、Miniconda (Visual Studio 2019) または Anaconda 2/Anaconda 3 (Visual Studio 2017) をインストールできます。
 
 ::: moniker range=">=vs-2019"
-または、標準の Python インタープリターを **[環境の追加]** ダイアログからインストールできます。 **[Python 環境]** ウィンドウまたは Python ツール バーで **[環境の追加]** コマンドを選択し、**[Python インストール]** タブを選択して、インストールするインタープリターを指定し、**[インストール]** を選択します。
+または、標準の Python インタープリターを **[環境の追加]** ダイアログからインストールできます。 **[Python 環境]** ウィンドウまたは Python ツール バーで **[環境の追加]** コマンドを選択し、 **[Python インストール]** タブを選択して、インストールするインタープリターを指定し、 **[インストール]** を選択します。
 ::: moniker-end
 
 以下の表のインタープリターは、Visual Studio インストーラーを使用せずに手動でインストールすることもできます。 たとえば、Visual Studio をインストールする前に Anaconda 3 がインストールされている場合、Visual Studio インストーラーでそれを再度インストールする必要はありません。 また、たとえば Visual Studio インストーラーに利用可能な新しいバージョンがまだ表示されていない場合なども、手動でインタープリターをインストールできます。
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio では、Python バージョン 2.7 だけでなくバージョン 3.5 以降もサポートされます。 Visual Studio を使って、他のバージョンの Python で記述されたコードを編集することはできますが、それらのバージョンは公式にはサポートされておらず、IntelliSense やデバッグなどの機能が動作しない可能性があります。
+::: moniker-end
 
 **Visual Studio 2015 以前**では、いずれかのインタープリターを手動でインストールする必要があります。
 
@@ -33,7 +38,7 @@ Visual Studio (すべてのバージョン) でレジストリ (「[PEP 514 - Py
 
 Visual Studio でインストール済みの環境が検出されない場合は、「[既存の環境を手動で識別する](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)」をご覧ください。
 
-Visual Studio の [**[Python 環境]**](managing-python-environments-in-visual-studio.md#the-python-environments-window) ウィンドウには既知の環境がすべて表示され、既存のインタープリターの更新プログラムが自動的に検出されます。
+Visual Studio の [ **[Python 環境]** ](managing-python-environments-in-visual-studio.md#the-python-environments-window) ウィンドウには既知の環境がすべて表示され、既存のインタープリターの更新プログラムが自動的に検出されます。
 
 | インタープリター | 説明 |
 | --- | --- |

@@ -21,6 +21,8 @@
       items:
         - name: 概要
           displayName: 'static code analysis, binary analysis'
+          href: static-code-analysis-for-managed-code-overview.md
+        - name: スタティック コード分析のチュートリアル
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: 移行
           href: fxcop-analyzers.yml
@@ -36,9 +38,7 @@
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: 抑制
           items:
-            - name: 警告を表示しない
-              href: in-source-suppression-overview.md
-            - name: 生成されたコードに対するコード分析の警告を表示しない
+            - name: 生成されたコードに対するスタティック コード分析の警告を抑制する
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: コード分析のアプリケーション エラー
           items:
@@ -100,6 +100,18 @@
               href: ca0505.md
             - name: FxCopCmd エラー
               href: fxcopcmd-errors.md
+        - name: チェックイン ポリシー
+          items:
+            - name: チェックイン ポリシーを作成または更新する方法
+              href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
+            - name: コード分析チェックイン ポリシーの実装
+              href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
+            - name: 保守性の高いコードの適用
+              href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
+            - name: プロジェクト規則セットをチェックイン ポリシーと同期させる
+              href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
+            - name: バージョンの互換性
+              href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: FXCop アナライザー
       items:
         - name: 概要
@@ -135,18 +147,6 @@
           href: how-to-create-a-custom-rule-set.md
         - name: 規則セット エディターの使用
           href: working-in-the-code-analysis-rule-set-editor.md
-    - name: チェックイン ポリシー
-      items:
-        - name: チェックイン ポリシーを作成または更新する方法
-          href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-        - name: コード分析チェックイン ポリシーの実装
-          href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-        - name: 保守性の高いコードの適用
-          href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-        - name: プロジェクト規則セットをチェックイン ポリシーと同期させる
-          href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-        - name: バージョンの互換性
-          href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: コード メトリックス
       items:
         - name: 概要
@@ -188,6 +188,8 @@
               href: native-recommended-rules-rule-set.md
             - name: マネージド コードの "セキュリティ規則" 規則セット
               href: security-rules-rule-set-for-managed-code.md
+        - name: 警告を表示しない
+          href: in-source-suppression-overview.md
         - name: マネージド コードの警告
           items:
             - name: 概要

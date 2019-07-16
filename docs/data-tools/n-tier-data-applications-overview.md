@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 995328205e99117f68050833853ada76f06eb4c8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566472"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821898"
 ---
 # <a name="n-tier-data-applications-overview"></a>n 層データ アプリケーションの概要
 *N 層*データ アプリケーションはデータ アプリケーションは複数に分割された*層*します。 n 層アプリケーションは、"分散アプリケーション" および "多階層アプリケーション" とも呼ばれ、クライアントとサーバー間に分散された別個の層に処理を分離します。 データにアクセスするアプリケーションを開発する場合は、アプリケーションを構成する各種の層を明確に分離する必要があります。
@@ -49,11 +49,11 @@ Visual Studio には、開発者が n 層アプリケーションを作成する
 
 - 次のようなデータ アクセス コンポーネントおよびロジック
 
-    - [Tableadapter](create-and-configure-tableadapters.md)と[Dataadapter と Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)します。
+  - [Tableadapter](create-and-configure-tableadapters.md)と[Dataadapter と Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)します。
 
-    - データの表現をオブジェクト[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)エンティティ クラスです。
+  - データの表現をオブジェクト[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)エンティティ クラスです。
 
-    - 共通のアプリケーション サービス (認証、承認、パーソナル化など)
+  - 共通のアプリケーション サービス (認証、承認、パーソナル化など)
 
 次の図は、Visual Studio で使用できる機能および技術と、n 層アプリケーションの中間層においてそれらが適合する位置を示しています。
 

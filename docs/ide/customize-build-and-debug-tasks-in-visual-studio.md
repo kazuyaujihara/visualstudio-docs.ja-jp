@@ -8,18 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-- vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963190"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291036"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>"フォルダーを開く" の開発のためにビルド タスクとデバッグ タスクをカスタマイズする
 
@@ -33,7 +32,6 @@ Visual Studio は多くのさまざまな言語やコードベースを実行す
 |-|-|
 |*tasks.vs.json*|カスタム ビルド コマンドとコンパイラ スイッチ、および任意の (ビルドに関連しない) タスクを指定します。<br>指定するには、**ソリューション エクスプローラー**の右クリック メニュー項目 **[タスクの構成]** を使用します。|
 |*launch.vs.json*|デバッグ用のコマンドライン引数を指定します。<br>指定するには、**ソリューション エクスプローラー**の右クリック メニュー項目 **[デバッグ設定と起動設定]** を使用します。|
-|*VSWorkspaceSettings.json*|タスクや起動に影響する可能性のある一般的な設定。 たとえば、コマンドを外部で実行するために *VSWorkspaceSettings.json* で `envVars` を定義すると、指定された環境変数が追加されます。<br>このファイルは手動で作成します。|
 
 これらの *.json* ファイルは、コードベースのルート フォルダーの *.vs* という非表示のフォルダーにあります。 **ソリューション エクスプローラー**でファイルまたはフォルダーに対して **[タスクの構成]** または **[デバッグ設定と起動設定]** を選択すると、必要に応じて *tasks.vs.json* および *launch.vs.json* ファイルが作成されます。 これらの *.json* ファイルは、一般的にソース管理にチェックインする必要がないため、非表示になっています。 ただし、ソース管理にチェックインできるようにするには、ファイルをコードベースのルートにドラッグして表示します。
 
@@ -42,7 +40,7 @@ Visual Studio は多くのさまざまな言語やコードベースを実行す
 
 ## <a name="define-tasks-with-tasksvsjson"></a>tasks.vs.json でタスクを定義する
 
-IDE でタスクとして直接実行することで、現在のワークスペースにあるファイルに対してビルド スクリプトやその他の外部操作を自動化できます。 ファイルまたはフォルダーを右クリックし、**[タスクの構成]** を選択すると、新しいタスクを構成できます。
+IDE でタスクとして直接実行することで、現在のワークスペースにあるファイルに対してビルド スクリプトやその他の外部操作を自動化できます。 ファイルまたはフォルダーを右クリックし、 **[タスクの構成]** を選択すると、新しいタスクを構成できます。
 
 ![[タスクの構成] メニュー](../ide/media/customize-configure-tasks-menu.png)
 
@@ -130,7 +128,7 @@ bin:
 
 ### <a name="define-arbitrary-tasks"></a>任意のタスクを定義する
 
-任意のタスクを *tasks.vs.json* ファイルで定義して、必要なタスクだけを実行できます。 たとえば、**[出力]** ウィンドウに現在選択されているファイルの名前を表示したり、指定したディレクトリ内のファイルを一覧表示したりするタスクを定義できます。
+任意のタスクを *tasks.vs.json* ファイルで定義して、必要なタスクだけを実行できます。 たとえば、 **[出力]** ウィンドウに現在選択されているファイルの名前を表示したり、指定したディレクトリ内のファイルを一覧表示したりするタスクを定義できます。
 
 単一のタスクを定義する *tasks.vs.json* ファイルの例を次に示します。 このファイルが呼び出されると、タスクによって現在選択されている *.js* ファイルのファイル名が表示されます。
 
@@ -155,7 +153,7 @@ bin:
 - 呼び出されたコマンドに渡される引数を `args` プロパティに指定します。
 - `${file}` マクロは、**ソリューション エクスプローラー**で選択したファイルを取得します。
 
-*tasks.vs.json* を保存した後に、フォルダー内の *.js* ファイルを右クリックし、**[Echo filename]** を選択します。 **[出力]** ウィンドウにファイル名が表示されます。
+*tasks.vs.json* を保存した後に、フォルダー内の *.js* ファイルを右クリックし、 **[Echo filename]** を選択します。 **[出力]** ウィンドウにファイル名が表示されます。
 
 > [!NOTE]
 > コードベースに *tasks.vs.json* ファイルが含まれていない場合は、**ソリューション エクスプローラー**でファイルの右クリック メニューまたはコンテキスト メニューから **[タスクの構成]** を選択して作成できます。
@@ -193,7 +191,7 @@ bin:
 - 現在のディレクトリの親ディレクトリ (ルート ディレクトリまでのすべてのディレクトリ) です。
 - ルート ディレクトリの設定ファイル。
 
-これらの集計ルールは、*tasks.vs.json* および *VSWorkspaceSettings.json* ファイルに適用されます。 他のファイルの設定を集計する方法については、この記事の該当するファイルのセクションを参照してください。
+これらの集計ルールは、*tasks.vs.json* に適用されます。 他のファイルの設定を集計する方法については、この記事の該当するファイルのセクションを参照してください。
 
 ### <a name="properties-for-tasksvsjson"></a>tasks.vs.json のプロパティ
 
@@ -231,7 +229,7 @@ bin:
 
    ![[デバッグ設定と起動設定] コンテキスト メニュー](media/customize-debug-launch-menu.png)
 
-1. **[デバッガーの選択]** ダイアログ ボックスでオプションを選択し、**[選択]** ボタンを選択します。
+1. **[デバッガーの選択]** ダイアログ ボックスでオプションを選択し、 **[選択]** ボタンを選択します。
 
    ![[デバッガーの選択] ダイアログ ボックス](media/customize-select-a-debugger.png)
 
@@ -251,7 +249,7 @@ bin:
    }
    ```
 
-1. 次に、**ソリューション エクスプローラー**で実行可能ファイルを右クリックし、**[スタートアップ アイテムとして設定]** とを選択します。
+1. 次に、**ソリューション エクスプローラー**で実行可能ファイルを右クリックし、 **[スタートアップ アイテムとして設定]** とを選択します。
 
    実行可能ファイルはコードベースのスタート アップ アイテムとして指定され、デバッグの **[開始]** ボタンのタイトルには実行ファイルの名前が反映されます。
 
@@ -288,11 +286,7 @@ bin:
 ![デバッグ構成のドロップダウン リスト](media/customize-debug-configurations.png)
 
 > [!NOTE]
-> *launch.vs.json* の `configurations` 配列プロパティは、コードベースのルート ディレクトリと *.vs* ディレクトリという 2 つのディレクトリから読み取られます。 競合がある場合は、*.vs\launch.vs.json* の値が優先されます。
-
-## <a name="define-workspace-settings-in-vsworkspacesettingsjson"></a>VSWorkspaceSettings.json でワークスペース設定を定義する
-
-タスクに影響する可能性のある一般的な設定を *VSWorkspaceSettings.json* ファイルに指定し、起動することができます。 たとえば、*VSWorkspaceSettings.json* に `envVars` を定義する場合、Visual Studio では、外部で実行されるコマンドに指定された環境変数が追加されます。 このファイルを使用するには、手動で作成する必要があります。
+> *launch.vs.json* の `configurations` 配列プロパティは、コードベースのルート ディレクトリと *.vs* ディレクトリという 2 つのディレクトリから読み取られます。 競合がある場合は、 *.vs\launch.vs.json* の値が優先されます。
 
 ## <a name="additional-settings-files"></a>その他の設定ファイル
 
@@ -300,20 +294,20 @@ bin:
 
 ### <a name="vscodesettingsjson"></a>.vscode\settings.json
 
-*.vscode* というディレクトリにファイルがある場合、*settings.json* というファイルから制限付きの設定が読み取られます。 この機能は、Visual Studio Code で以前に開発されたコードベース用に用意されています。 現在、*.vscode\settings.json* から読み取られる唯一の設定は `files.exclude` です。ソリューション エクスプローラーおよび一部の検索ツールで視覚的にファイルがフィルター処理されます。
+*.vscode* というディレクトリにファイルがある場合、*settings.json* というファイルから制限付きの設定が読み取られます。 この機能は、Visual Studio Code で以前に開発されたコードベース用に用意されています。 現在、 *.vscode\settings.json* から読み取られる唯一の設定は `files.exclude` です。ソリューション エクスプローラーおよび一部の検索ツールで視覚的にファイルがフィルター処理されます。
 
-コードベースには、任意の数の *.vscode\settings.json* ファイルを配置できます。 このファイルから読み取られた設定は、*.vscode* の親ディレクトリとそのすべてのサブディレクトリに適用されます。
+コードベースには、任意の数の *.vscode\settings.json* ファイルを配置できます。 このファイルから読み取られた設定は、 *.vscode* の親ディレクトリとそのすべてのサブディレクトリに適用されます。
 
 ### <a name="gitignore"></a>.gitignore
 
-*.gitignore* ファイルは、無視するファイル (チェックインしたくないファイルとディレクトリ) を Git に伝えるために使用されます。 通常、*.gitignore* ファイルはコードベースの一部として組み込まれているため、設定をコードベースのすべての開発者と共有することができます。 Visual Studio は *.gitignore* ファイルのパターンを読み取り、視覚的に、また一部の検索ツールから項目をフィルター処理します。
+*.gitignore* ファイルは、無視するファイル (チェックインしたくないファイルとディレクトリ) を Git に伝えるために使用されます。 通常、 *.gitignore* ファイルはコードベースの一部として組み込まれているため、設定をコードベースのすべての開発者と共有することができます。 Visual Studio は *.gitignore* ファイルのパターンを読み取り、視覚的に、また一部の検索ツールから項目をフィルター処理します。
 
 *.gitignore* ファイルから読み取られた設定は、親ディレクトリとすべてのサブディレクトリに適用されます。
 
 ## <a name="see-also"></a>関連項目
 
 - [プロジェクトまたはソリューションを使用せずにコードを開発する](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [C++ でフォルダーのプロジェクトを開く](/cpp/ide/non-msbuild-projects)
-- [C++ での CMake プロジェクト](/cpp/ide/cmake-tools-for-visual-cpp)
-- [NMAKE リファレンス](/cpp/build/nmake-reference)
+- [C++ でフォルダーのプロジェクトを開く](/cpp/build/open-folder-projects-cpp)
+- [C++ の CMake プロジェクト](/cpp/build/cmake-projects-in-visual-studio)
+- [NMAKE リファレンス](/cpp/build/reference/nmake-reference)
 - [コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)

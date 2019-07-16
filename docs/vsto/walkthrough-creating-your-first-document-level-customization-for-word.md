@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: 最初の Word 用ドキュメント レベルのカスタマイズを作成します。'
+title: 最初の Word 用ドキュメント レベルのカスタマイズを作成します。
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a38d3ae806439c286a5230ee704acedf2070e27
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8662e5d08c420d1204e9fd5159be810397d4bbe1
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438507"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328274"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>チュートリアル: 最初の Word 用ドキュメント レベルのカスタマイズを作成します。
   この入門編のチュートリアルでは、Microsoft Office Word 用のドキュメント レベルのカスタマイズを作成する方法について説明します。 この種のソリューションで作成した機能は、特定の文書が開いている場合にのみ使用可能です。 ドキュメント レベルのカスタマイズでは、文書が開いたときに新しいリボン タブを表示するなどの、アプリケーション全体の変更を行うことはできません。
@@ -159,7 +159,7 @@ ms.locfileid: "63438507"
 - [Word ソリューション](../vsto/word-solutions.md)
 - [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)
 - [Word オブジェクト モデルの概要](../vsto/word-object-model-overview.md)
-- [拡張オブジェクトを使用して Word を自動化します。](../vsto/automating-word-by-using-extended-objects.md)
+- [拡張オブジェクトを使用した Word の自動化](../vsto/automating-word-by-using-extended-objects.md)
 - [Office UI のカスタマイズ](../vsto/office-ui-customization.md)
 - [Office ソリューションの構築](../vsto/building-office-solutions.md)
 - [Office ソリューションのデプロイ](../vsto/deploying-an-office-solution.md)

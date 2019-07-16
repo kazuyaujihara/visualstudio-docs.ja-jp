@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00814f006c265a3c16cd3d4bd6bc004754016a27
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932376"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692425"
 ---
 # <a name="creating-new-projects-and-solutions"></a>新しいプロジェクトとソリューションを作成する
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>テンプレートから新しいプロジェクトとソリューションを作成する
 
-ソリューションは、事前定義済みのテンプレートを利用していつでも作成できます。 ソリューションをこの方法で作成するには、 **[ファイル]、[新しいソリューション]** の順に移動し、必要なプラットフォームを選択し、必要なテンプレートを選択します。
+ソリューションは、事前定義済みのテンプレートを利用していつでも作成できます。 ソリューションをこの方法で作成するには、 **[ファイル]、[新しいソリューション]** の順に選択し、プラットフォームを選択し、テンプレートを選択します。
 
 ![新しいソリューションを作成する](media/projects-and-solutions-image0.png)
 

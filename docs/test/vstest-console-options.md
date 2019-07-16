@@ -10,19 +10,19 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95ed8806844781bdaab4d97d63cb1b7ef324dd7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eef81a2075f05acf8ea6ab8b42f77797425a3abd
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976248"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559609"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe のコマンド ライン オプション
 
 *VSTest.Console.exe* は、テストを実行するためのコマンドライン ツールです。 コマンド ラインには、いくつかのオプションを任意の順序で指定できます。 これらのオプションは、「[一般的なコマンドライン オプション](#general-command-line-options)」に一覧表示されています。
 
 > [!NOTE]
-> Visual Studio の MSTest アダプターは、互換性のためにレガシ モード (*mstest.exe* によるテストの実行と同等) でも動作します。 レガシ モードでは、TestCaseFilter 機能を利用することはできません。 アダプターをレガシ モードに切り替えることができるのは、*.testsettings* ファイルが指定されている場合、*runsettings* ファイルで **forcelegacymode** が **true** に設定されている場合、または **HostType** などの属性を使用した場合です。
+> Visual Studio の MSTest アダプターは、互換性のためにレガシ モード (*mstest.exe* によるテストの実行と同等) でも動作します。 レガシ モードでは、TestCaseFilter 機能を利用することはできません。 アダプターをレガシ モードに切り替えることができるのは、 *.testsettings* ファイルが指定されている場合、*runsettings* ファイルで **forcelegacymode** が **true** に設定されている場合、または **HostType** などの属性を使用した場合です。
 >
 > ARM アーキテクチャ ベースのコンピューターで自動テストを実行するには、*VSTest.Console.exe* を使用する必要があります。
 
@@ -34,17 +34,17 @@ ms.locfileid: "62976248"
 |---|---|
 |**[*テストファイル名*]**|指定されたファイルからテストを実行します。 複数のテスト ファイル名を指定するときは、スペースで区切ります。<br />例: `mytestproject.dll`、`mytestproject.dll myothertestproject.exe`|
 |**/Settings:[*ファイル名*]**|データ コレクターなどの追加設定を指定してテストを実行します。<br />例 : `/Settings:Local.RunSettings`|
-|**/Tests:[*テスト名*]**|指定した値を含む名前のテストを実行します。 複数の値を指定するには、コンマで区切ります。<br />例 : `/Tests:TestMethod1,testMethod2`<br />**/Tests** コマンドライン オプションを、**/TestCaseFilter** コマンドライン オプションと一緒に使用することはできません。|
+|**/Tests:[*テスト名*]**|指定した値を含む名前のテストを実行します。 複数の値を指定するには、コンマで区切ります。<br />例 : `/Tests:TestMethod1,testMethod2`<br />**/Tests** コマンドライン オプションを、 **/TestCaseFilter** コマンドライン オプションと一緒に使用することはできません。|
 |**/Parallel**|テストを並列で実行するように指定します。 既定では、コンピューター上の利用可能なコア数まで使用できます。 使用するコアの数は、設定ファイルを使って構成できます。|
 |**/Enablecodecoverage**|テストの実行で、データ診断アダプター CodeCoverage を有効にします。<br />設定ファイルで指定されていない場合は、既定の設定が使用されます。|
 |**/InIsolation**|分離プロセスでテストを実行します。<br />この分離により、テストでエラーが発生しても *vstest.console.exe* プロセスが停止することは少なくなりますが、テストの実行速度は低下する可能性があります。|
 |**/UseVsixExtensions**|このオプションでは、テストの実行の際に、*vstest.console.exe* プロセスでインストール済みの VSIX 拡張機能 (ある場合) を使用するかスキップするかを指定します。<br />このオプションは非推奨です。 Visual Studio の次のメジャー リリース以降、このオプションは削除される可能性があります。 NuGet パッケージとして利用可能な拡張機能の使用に移行してください。<br />例 : `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*パス*]**|*vstest.console.exe* プロセスで、テストの実行の際に指定されたパス (ある場合) からカスタム テスト アダプターを使用するように強制します。<br />例 : `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*プラットフォームの種類*]**|テストの実行対象とするプラットフォーム アーキテクチャです。<br />有効な値は x86、x64、ARM です。|
-|**/Framework: [*フレームワークのバージョン*]**|テストの実行に使用する対象の .NET Framework バージョンを指定します。<br />有効な値は、Framework35、Framework40、Framework45、FrameworkUap10 です。<br />ターゲット フレームワークが **Framework35** として指定されている場合、テストは CLR 4.0 の "互換モード" で実行されます。<br />例 : `/Framework:framework40`|
-|**/TestCaseFilter:[*式*]**|指定した式に一致するテストを実行します。<br /><Expression>\> は <property\>=<value\>[\|<Expression\>] の形式です。<br />例 : `/TestCaseFilter:"Priority=1"`<br />例 : `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** コマンドライン オプションを、**/Tests** コマンドライン オプションと一緒に使用することはできません。 <br />式の作成と使用については、「[TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)」(TestCase フィルター) を参照してください。|
+|**/Framework: [*フレームワークのバージョン*]**|テストの実行に使用する対象の .NET バージョンを指定します。<br />有効な値は、Framework35、Framework40、Framework45、FrameworkUap10 です。<br />ターゲット フレームワークが **Framework35** として指定されている場合、テストは CLR 4.0 の "互換モード" で実行されます。<br />例 : `/Framework:framework40`|
+|**/TestCaseFilter:[*式*]**|指定した式に一致するテストを実行します。<br /><Expression>\> は <property\>=<value\>[\|<Expression\>] の形式です。<br />例 : `/TestCaseFilter:"Priority=1"`<br />例 : `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** コマンドライン オプションを、 **/Tests** コマンドライン オプションと一緒に使用することはできません。 <br />式の作成と使用については、「[TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)」(TestCase フィルター) を参照してください。|
 |**/?**|使用情報を表示します。|
-|**/Logger:[*uri/friendlyname*]**|テスト結果のロガーを指定します。<br />例:Visual Studio テスト結果ファイル (TRX) に結果のログを書き込むには、**/Logger:trx** を使用します。<br />例:Team Foundation Server にテスト結果を発行するには、次のように TfsPublisher を使用します。<br />**/logger:TfsPublisher;**<br />**Collection=<プロジェクト URL\>;**<br />**BuildName=<ビルド名\>;**<br />**TeamProject=<プロジェクト名\>;**<br />**[;Platform=<既定値は "Any CPU">]**<br />**[;Flavor = <既定値は "Debug">]**<br />**[;RunTitle=<タイトル\>]**|
+|**/Logger:[*uri/friendlyname*]**|テスト結果のロガーを指定します。<br />例:Visual Studio テスト結果ファイル (TRX) に結果のログを書き込むには、 **/Logger:trx** を使用します。<br />例:Team Foundation Server にテスト結果を発行するには、次のように TfsPublisher を使用します。<br />**/logger:TfsPublisher;**<br />**Collection=<プロジェクト URL\>;**<br />**BuildName=<ビルド名\>;**<br />**TeamProject=<プロジェクト名\>;**<br />**[;Platform=\<規定値は "Any CPU">]**<br />**[;Flavor=\<規定値は "Debug">]**<br />**[;RunTitle=<タイトル\>]**|
 |**/ListTests: [*ファイル名*]**|指定されたテスト コンテナーから探索されたテストを一覧表示します。|
 |**/ListDiscoverers**|インストール済みのテスト探索プログラムを一覧表示します。|
 |**/ListExecutors**|インストール済みのテスト実行プログラムを一覧表示します。|

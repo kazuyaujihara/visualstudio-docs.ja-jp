@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる MSDN Magazine サブスクリプションを受け取ってサインアップします。
 searchscope: VS Subscription
-ms.openlocfilehash: 2710295390318dfa2e31b31a6a4aeaf3805b3647
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0c659bdd7eb2eee0d1899eab5d5df850a5206e92
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947362"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032836"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの MSDN Magazine 特典
 
@@ -25,11 +25,11 @@ ms.locfileid: "62947362"
 デジタル エディションは、Visual Studio Dev Essentials メンバーが使用できます。
 
 1. MSDN Magazine のデジタル エディションにアクセスするには、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
-2. [プロフェッショナルな開発] セクションで MSDN Magazine のタイルを見つけて、**[アクセス]** をクリックします。
+2. [プロフェッショナルな開発] セクションで MSDN Magazine のタイルを見つけて、 **[アクセス]** をクリックします。
 
 ### <a name="printed-edition"></a>印刷エディション
 1. MSDN Magazine サブスクリプションの受信を開始するには、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
-2. [プロフェッショナルな開発] セクションで MSDN Magazine のタイルを見つけて、MSDN Magazine サブスクリプションタイルの **[サブスクライブ]** をクリックします  (デジタル エディションにアクセスするには、タイルの右下にある "!" をクリックします)。
+2. [プロフェッショナルな開発] セクションで MSDN Magazine のタイルを見つけて、MSDN Magazine サブスクリプションタイルの **[サブスクライブ]** をクリックします (デジタル エディションにアクセスするには、タイルの右下にある "!" をクリックします)。
    > [!div class="mx-imgBorder"]
    > ![MSDN Magazine 特典タイル](_img/vs-msdn/vs-msdn-tile.png)
 
@@ -37,7 +37,7 @@ ms.locfileid: "62947362"
    > [!div class="mx-imgBorder"]
    > ![MSDN Magazine 特典サブスクリプション](_img/vs-msdn/vs-msdn-subs-page-resized.png)
 
-4. 要求された連絡先情報を指定し、**[送信]** をクリックします   (選んだマガジンのバージョンが、[Magazine Subscription]\(マガジン購読\) セクションに表示されます。  印刷版を選んだ場合、最初のオプションの表示は **[Yes! I want to receive 1 year (12 issues) of MSDN Magazine for FREE]\(はい、MSDN Magazine を 1 年 (12 号) 無料で受け取ります\)** です)。
+4. 要求された連絡先情報を指定し、 **[送信]** をクリックします  (選んだマガジンのバージョンが、[Magazine Subscription]\(マガジン購読\) セクションに表示されます。  印刷版を選んだ場合、最初のオプションの表示は **[Yes! I want to receive 1 year (12 issues) of MSDN Magazine for FREE]\(はい、MSDN Magazine を 1 年 (12 号) 無料で受け取ります\)** です)。
    > [!div class="mx-imgBorder"]
    > ![MSDN Magazine 特典プロファイル](_img/vs-msdn/vs-msdn-profile.png)
 
@@ -52,7 +52,7 @@ ms.locfileid: "62947362"
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 印刷エディション                                             |  いいえ。  新しいサブスクライバーのみが使用できます         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 印刷エディション                                              | いいえ。  新しいサブスクライバーのみが使用できます         |
 |Visual Studio Enterprise、Visual Studio Professional (月間クラウド)   | Azure |使用できません      |  N/A         |
-|Visual Studio Dev Essentials| N/A |デジタル エディション       |  はい|
+||
 
 <sup>1</sup>  *印刷エディション:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、Microsoft Partner Network (Enterprise)、Imagine (Premium)。*
 

@@ -1,17 +1,17 @@
 ---
 title: Visual Studio for Mac の拡張
 description: Visual Studio for Mac の機能は、拡張機能パッケージというモジュールを使用して拡張できます。 このガイドの最初の第 1 部では、ドキュメントに日時を挿入する単純な Visual Studio for Mac 拡張機能パッケージを作成します。 このガイドの第 2 部では、拡張機能パッケージ システムの基礎と、Visual Studio for Mac の基礎を形成するコア API の一部を紹介します。
-author: conceptdev
-ms.author: crdun
-ms.date: 04/14/2017
+author: alanjclark
+ms.author: alcl
+ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9c14b408a7714f06ae8a96b0ecc60dfc4b8ebe7
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983169"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691656"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Visual Studio for Mac の拡張
 
@@ -28,7 +28,7 @@ Visual Studio for Mac から拡張機能パッケージを構築するには、V
 このモジュール式設計の利点は、Visual Studio for Mac が拡張可能であり、カスタム拡張機能パッケージを使用して構築できる拡張ポイントが多数あります。 現在の拡張機能パッケージの例として、C# および F# のサポート、デバッガー ツール、プロジェクト テンプレートなどがあります。
 
 > [!NOTE]
-> **注**:Add-in Maker 1.2 より前のバージョンで作成した Add-in Maker プロジェクトがある場合、[こちらの手順](https://mhut.ch/addinmaker/1.2)に従ってプロジェクトを移行する必要があります。
+> Add-in Maker 1.2 より前のバージョンで作成した Add-in Maker プロジェクトがある場合、[こちらの手順](https://mhut.ch/addinmaker/1.2)に従ってプロジェクトを移行する必要があります。
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -36,7 +36,7 @@ Visual Studio for Mac から拡張機能パッケージを構築するには、V
 
 ## <a name="attribute-files"></a>属性ファイル
 
-拡張機能パッケージは、パッケージの名前、バージョン、依存関係などの情報に関するメタデータを C# 属性に格納します。 Add-in Maker では、この情報を格納して整理するために `AddinInfo.cs` と `AssemblyInfo.cs` という 2 つのファイルが作成されます。 拡張機能パッケージでは、*Addin 属性*で一意の ID と名前空間を指定する必要があります。
+拡張機能パッケージは、パッケージの名前、バージョン、依存関係などの情報に関するメタデータを C# 属性に格納します。 Add-in Maker では、この情報を格納して整理するために `AddinInfo.cs` と `AssemblyInfo.cs` という 2 つのファイルが作成されます。 拡張機能パッケージには、それらの " *`Addin` 属性*" に指定された一意の ID と名前空間が必要です。
 
 ```csharp
 [assembly:Addin (
@@ -46,7 +46,7 @@ Visual Studio for Mac から拡張機能パッケージを構築するには、V
 )]
 ```
 
-また、拡張機能パッケージで、接続先の拡張ポイントを所有している拡張機能パッケージへの依存関係も宣言する必要があります。 これらの情報は、ビルド時に自動的に参照されます。
+拡張機能パッケージでは、接続先の拡張ポイントを所有している拡張機能パッケージへの依存関係も宣言する必要があります。これらはビルド時に自動的に参照されます。
 
 さらに、次の図のように、プロジェクトの Solution Pad でアドイン参照ノードを使用して新しい参照を追加することができます。
 
@@ -81,10 +81,10 @@ Visual Studio for Mac から拡張機能パッケージを構築するには、V
 
 拡張機能ノードには、接続先の拡張ポイントを指定するパス属性が含まれています。この場合は `/MonoDevelop/Ide/Commands/Edit` です。 また、コマンドの親ノードとして動作します。 コマンド ノードには、次の属性が含まれています。
 
-* **id** - このコマンドの識別子を示します。 コマンド識別子は、列挙型のメンバーとして宣言する必要があります。この識別子は、Commands を CommandItems に接続するために使用されます。
-* **_label** - メニューに表示されるテキスト。
-* **_description** - ツールバー ボタンのツールヒントとして表示されるテキスト。
-* **defaultHandler** - コマンドを利用する `CommandHandler` クラスを指定します
+* `id` - このコマンドの識別子を指定します。 コマンド識別子は、列挙型のメンバーとして宣言する必要があります。この識別子は、Commands を CommandItems に接続するために使用されます。
+* `_label` - メニューに表示されるテキスト。
+* `_description` - ツールバー ボタンのツールヒントとして表示されるテキスト。
+* `defaultHandler` - コマンドを利用する `CommandHandler` クラスを指定します。
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -96,7 +96,7 @@ CommandItem 拡張機能を `/MonoDevelop/Ide/MainMenu/Edit` 拡張ポイント�
 </Extension>
 ```
 
-CommandItem は、id 属性に指定されているコマンドをメニューに配置します。 この CommandItem によって `/MonoDevelop/Ide/MainMenu/Edit` 拡張ポイントが拡張され、**[編集] メニュー**にコマンドのラベルが表示されます。 CommandItem の **id** はコマンド ノード `InsertDate` の id に対応します。 CommandItem を削除すると、[編集] メニューに **[Insert Date]** \(日付の挿入\) オプションに表示されなくなります。
+CommandItem は、`id` 属性に指定されているコマンドをメニューに配置します。 この CommandItem によって `/MonoDevelop/Ide/MainMenu/Edit` 拡張ポイントが拡張され、 **[編集] メニュー**にコマンドのラベルが表示されます。 CommandItem の ID はコマンド ノード `InsertDate` の ID に対応することに注意してください。 CommandItem を削除すると、[編集] メニューに **[日付の挿入]** オプションが表示されなくなります。
 
 ### <a name="command-handlers"></a>コマンド ハンドラー
 
@@ -129,7 +129,7 @@ public enum DateInserterCommands
 }
 ```
 
-これによって、コマンドと CommandItem が関連付けられます。CommandItem が **[編集] メニュー**から選択されたときに、CommandItem はコマンドを呼び出します。
+これで、コマンドと CommandItem が関連付けられます。CommandItem が **[編集] メニュー**から選択されたときに、CommandItem によってコマンドが呼び出されます。
 
 ## <a name="ide-apis"></a>IDE API
 
@@ -158,6 +158,35 @@ public enum DateInserterCommands
 * リファクタリング
 * 実行ハンドラー
 * 構文の強調表示
+
+## <a name="extending-the-new-editor"></a>新しいエディターの拡張
+
+Visual Studio for Mac には、Visual Studio on Windows と同じエディター レイヤーの上に構築された[新しいネイティブ Cocoa テキスト エディター UI が導入されています](https://aka.ms/vs/mac/editor/learn-more)。
+
+Visual Studio と Visual Studio for Mac 間でのエディターの共有による多くのメリットの 1 つに、Visual Studio エディターをターゲットとするコードを Visual Studio for Mac で実行するように適応させることができるという点があります。
+
+> [!NOTE]
+> この新しいエディターでは、現時点では C# ファイルのみがサポートされています。 その他の言語とファイル形式は、レガシ エディターで開きます。 ただし、レガシ エディターでも、以下に示すいくつかの Visual Studio Editor API が実装されます。
+
+### <a name="visual-studio-editor-overview"></a>Visual Studio エディターの概要
+
+![Visual Studioエディターのアーキテクチャ](media/vs-editor-architecture.png)
+
+Visual Studio for Mac に固有の拡張機能の詳細を説明する前に、共有エディターそのものをもっと理解しておくと役立ちます。 この理解を深めるのに役立ついくつかのリソースを次に示します。
+
+* [Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
+* [エディターでの MEF](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [エディターの内部](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
+* [言語サービスとエディターの拡張ポイント](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [エディターのアーキテクチャ紹介ビデオ](https://www.youtube.com/watch?v=PkYVztKjO9A)
+
+これらのリソースを利用して理解しておく必要がある主要な概念は、[`ITextBuffer`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) と [`ITextView`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview) です。
+
+* `ITextBuffer` は、時間の経過と共に変更される可能性があるテキストのメモリ内表現です。 `ITextBuffer` の `CurrentSnapshot` プロパティは、バッファ内の現在のコンテンツの "*不変の*" 表現である `ITextSnapshot` インスタンスを返します。 バッファーで編集が行われると、CurrentSnapshot プロパティが最新のバージョンに更新されます。 アナライザーで任意のスレッドのテキスト スナップショットを検査して、その内容が変更されないことを保証できます。
+
+* `ITextView` は、エディター コントロールの画面に `ITextBuffer` がどのようにレンダリングされるかの UI 表現です。 それは、`Caret`、`Selection`、およびその他の UI 関連の概念だけではなく、テキスト バッファーへの参照も持っています。
+
+特定の [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5) については、関連付けられている基になる `ITextBuffer` と `ITextView` を、それぞれ `Document.GetContent<ITextBuffer>()` と `Document.GetContent<ITextView>()` 経由で取得できます。
 
 ## <a name="additional-information"></a>追加情報
 

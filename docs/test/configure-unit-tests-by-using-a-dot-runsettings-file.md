@@ -1,50 +1,52 @@
 ---
 title: .runsettings ファイルを使用して単体テストを構成する
-ms.date: 02/28/2018
+ms.date: 06/14/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5030498702808dc9d41a5daa12520893c3de2627
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 9715edff9083a0e99fa52075426d11ea92b7b6e2
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531987"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160203"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
-Visual Studio の単体テストは、*.runsettings* ファイルを使用して構成できます。 たとえば、テストが実行される .NET Framework のバージョン、テスト結果のディレクトリ、テストの実行中に収集されるデータを変更できます。
+Visual Studio の単体テストは、 *.runsettings* ファイルを使用して構成できます。 たとえば、テストが実行される .NET のバージョン、テスト結果のディレクトリ、テストの実行中に収集されるデータを変更できます。
 
-実行設定ファイルは省略可能です。 特殊な構成を行う必要がない場合、*.runsettings* ファイルは不要です。 *.runsettings* ファイルを最もよく使うのは、[コード カバレッジ分析](../test/customizing-code-coverage-analysis.md)をカスタマイズする場合です。
+実行設定ファイルは省略可能です。 特殊な構成を行う必要がない場合、 *.runsettings* ファイルは不要です。 *.runsettings* ファイルをよく使うのは、[コード カバレッジ分析](../test/customizing-code-coverage-analysis.md)をカスタマイズする場合です。
 
 ## <a name="specify-a-run-settings-file"></a>実行設定ファイルを指定する
 
 実行設定ファイルを使用して、[コマンド ライン](vstest-console-options.md)、IDE、あるいは Azure Test Plans または Team Foundation Server (TFS) を使用する[ビルド ワークフロー](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)で実行されるテストを構成することができます。
 
-### <a name="specify-a-run-settings-file-in-the-ide"></a>IDE で実行設定ファイルを指定する
+### <a name="ide"></a>IDE
 
-**[テスト]** > **[テストの設定]** > **[テスト設定ファイルの選択]** の順に選択し、*.runsettings* ファイルを選びます。 ファイルは、**[テストの設定]** メニューに表示され、選択または選択解除できます。 選択されている間、実行設定ファイルは、**[コード カバレッジの分析]** を選ぶたびに適用されます。
+IDE で実行設定ファイルを指定するには、 **[テスト]**  >  **[テストの設定]**  >  **[テスト設定ファイルの選択]** の順に選択し、 *.runsettings* ファイルを選択します。
 
 ![Visual Studio の [テスト設定ファイルの選択] メニュー](media/select-test-settings-file.png)
 
-### <a name="specify-a-run-settings-file-at-the-command-line"></a>コマンド ラインで実行設定ファイルを指定する
+ファイルは、 **[テストの設定]** メニューに表示され、選択または選択解除できます。 選択されている間、実行設定ファイルは、 **[コード カバレッジの分析]** を選ぶたびに適用されます。
 
-コマンド ラインからテストを実行するには、*vstest.console.exe* を使用し、**/Settings** パラメーターを使って設定ファイルを指定します。
+### <a name="command-line"></a>コマンド ライン
+
+コマンド ラインからテストを実行するには、*vstest.console.exe* を使い、 **/Settings** パラメーターを使って設定ファイルを指定します。
 
 1. Visual Studio 開発者コマンド プロンプトを起動します。
 
    ::: moniker range="vs-2017"
 
-   Windows の **[スタート]** メニューから、**[Visual Studio 2017]** > **[開発者コマンド プロンプト for VS 2017]** の順に選択します。
+   Windows の **[スタート]** メニューから、 **[Visual Studio 2017]** > **[開発者コマンド プロンプト for VS 2017]** の順に選択します。
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   Windows の **[スタート]** メニューから、**[Visual Studio 2019]** > **[開発者コマンド プロンプト for VS 2019]** の順に選択します。
+   Windows の **[スタート]** メニューから、 **[Visual Studio 2019]** > **[開発者コマンド プロンプト for VS 2019]** の順に選択します。
 
    ::: moniker-end
 
@@ -52,6 +54,12 @@ Visual Studio の単体テストは、*.runsettings* ファイルを使用して
 
    ```cmd
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
+   ```
+
+   or
+
+   ```cmd
+   vstest.console.exe --settings:test.runsettings test.dll
    ```
 
 詳細については、「[VSTest.Console.exe のコマンド ライン オプション](vstest-console-options.md)」を参照してください。
@@ -67,7 +75,7 @@ Visual Studio の単体テストは、*.runsettings* ファイルを使用して
 
 1. この後で示す例の XML でファイルの内容を置き換え、必要に応じてカスタマイズします。
 
-1. **[テスト]** メニューから **[テストの設定]** > **[テスト設定ファイルの選択]** の順に選択します。 作成した *.runsettings* ファイルを参照して、**[OK]** を選択します。
+1. **[テスト]** メニューから **[テストの設定]**  >  **[テスト設定ファイルの選択]** の順に選択します。 作成した *.runsettings* ファイルを参照して、 **[OK]** を選択します。
 
    > [!TIP]
    > ソリューションに複数の *.runsettings* ファイルを作成し、必要に応じて、いずれかをアクティブなテスト設定ファイルとして選択することができます。
@@ -154,7 +162,7 @@ Visual Studio の単体テストは、*.runsettings* ファイルを使用して
 
 ## <a name="elements-of-a-runsettings-file"></a>*.runsettings* ファイルの要素
 
-後続のセクションでは、*.runsettings* ファイルの要素の詳細について説明します。
+後続のセクションでは、 *.runsettings* ファイルの要素の詳細について説明します。
 
 ### <a name="run-configuration"></a>構成の実行
 
@@ -174,7 +182,7 @@ Visual Studio の単体テストは、*.runsettings* ファイルを使用して
 |ノード|既定値|値|
 |-|-|-|
 |**ResultsDirectory**||テスト結果が配置されるディレクトリ。|
-|**TargetFrameworkVersion**|Framework40|Framework35、Framework40、Framework45<br /><br />この設定では、テストを検出して実行するために使用される単体テスト フレームワークのバージョンを指定します。 これは、単体テスト プロジェクトのビルド プロパティで指定した .NET プラットフォームのバージョンと異なっていてもかまいません。|
+|**TargetFrameworkVersion**|Framework40|.NET Core ソースの場合は `FrameworkCore10`、UWP ベースのソースの場合は `FrameworkUap10`、.NET Framework 4.5 以降の場合は `Framework45`、.NET Framework 4.0 の場合は `Framework40`、.NET Framework 3.5 の場合は `Framework35`。<br /><br />この設定では、テストを検出して実行するために使用される単体テスト フレームワークのバージョンを指定します。 これは、単体テスト プロジェクトのビルド プロパティで指定した .NET プラットフォームのバージョンと異なっていてもかまいません。<br /><br />`TargetFrameworkVersion` 要素を *.runsettings* ファイルから省略した場合、フレームワークのバージョンはビルド済みバイナリに基づいてプラットフォームにより自動的に決定されます。|
 |**TargetPlatform**|x86|x86、x64|
 |**TreatTestAdapterErrorsAsWarnings**|False|false、true|
 |**TestAdaptersPaths**||TestAdapter が配置されているディレクトリの 1 つまたは複数のパス|
@@ -252,7 +260,7 @@ public void HomePageTest()
 |-|-|-|
 |**ForcedLegacyMode**|False|Visual Studio 2012 で、MSTest アダプターは処理速度を向上させ、よりスケーラブルになるように最適化されました。 テストが実行される順序などの一部の動作は、Visual Studio の以前のエディションでの動作と完全に同じではない場合もあります。 以前のテスト アダプターを使用するには、この値を **true** に設定します。<br /><br />たとえば、単体テスト用に指定された *app.config* ファイルがある場合は、この設定を使用することがあります。<br /><br />より新しいアダプターを使用できるように、テストのリファクタリングを検討することをお勧めします。|
 |**IgnoreTestImpact**|False|テストの影響機能は、MSTest で実行したとき、または Microsoft Test Manager から実行したときに最近の変更の影響を受けるテストの優先順位を付けます。 この設定は機能を非アクティブ化します。 詳細については、「[前回のビルド以降に実行する必要があるテストの検索](https://msdn.microsoft.com/library/dd286589)」を参照してください。|
-|**SettingsFile**||ここで、MSTest アダプターで使用するテスト設定ファイルを指定できます。 **[テスト]** > **[テストの設定]** > **[テスト設定ファイルの選択]** の順に選んで、テスト設定ファイルを指定することもできます。<br /><br />この値を指定する場合は、 **ForcedlegacyMode** も **true**に設定する必要があります。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**SettingsFile**||ここで、MSTest アダプターで使用するテスト設定ファイルを指定できます。 **[テスト]**  >  **[テストの設定]**  >  **[テスト設定ファイルの選択]** の順に選んで、テスト設定ファイルを指定することもできます。<br /><br />この値を指定する場合は、 **ForcedlegacyMode** も **true**に設定する必要があります。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|False|テストの実行が完了した後、MSTest がシャットダウンされます。 テストの一部として起動されたプロセスも中止されています。 テスト実行プログラムを中止しない場合は、この値を **true** に設定します。 たとえば、コード化された UI テストの間にブラウザーの実行を維持するために、この設定を使用できます。|
 |**DeploymentEnabled**|true|値を **false** に設定すると、テスト メソッドで指定した配置項目が配置ディレクトリにコピーされません。|
 |**CaptureTraceOutput**|true|<xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType> を使用して、テスト メソッドからデバッグ トレースに書き込むことができます。|
@@ -263,5 +271,6 @@ public void HomePageTest()
 
 ## <a name="see-also"></a>関連項目
 
+- [テスト実行を構成する](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [コード カバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)
 - [Visual Studio テスト タスク (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

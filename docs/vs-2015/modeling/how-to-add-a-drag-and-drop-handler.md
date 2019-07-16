@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 54218fd5c351b400ce9744620987f50d35e0558f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690547"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825398"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>方法: ドラッグ アンド ドロップ ハンドラーを追加する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "65690547"
   
 - 最初の 2 つのセクションでは、ジェスチャ ハンドラーを定義する代替方法を説明します。  
   
-    - [ShapeElement メソッドのオーバーライドによるジェスチャ ハンドラーの定義](#overrideShapeElement)します。 `OnDragDrop`、`OnDoubleClick`、`OnDragOver`、および他のメソッドはオーバーライドできます。  
-  
-    - [MEF の使用によるジェスチャ ハンドラーを定義する](#MEF)します。 使用する DSL に対してサードパーティの開発者が独自のハンドラーを定義可能にする場合、この方法を使用します。 ユーザーは DSL をインストールした後で、サードパーティの拡張機能を選択的にインストールできます。  
+  - [ShapeElement メソッドのオーバーライドによるジェスチャ ハンドラーの定義](#overrideShapeElement)します。 `OnDragDrop`、`OnDoubleClick`、`OnDragOver`、および他のメソッドはオーバーライドできます。  
+
+  - [MEF の使用によるジェスチャ ハンドラーを定義する](#MEF)します。 使用する DSL に対してサードパーティの開発者が独自のハンドラーを定義可能にする場合、この方法を使用します。 ユーザーは DSL をインストールした後で、サードパーティの拡張機能を選択的にインストールできます。  
   
 - [ドラッグした項目をデコードする方法](#extracting)します。 要素は任意のウィンドウまたはデスクトップのほか、DSL からドラッグすることができます。  
   

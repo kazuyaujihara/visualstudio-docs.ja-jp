@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcd102d8717b455a402bceb98e7ce85a2907e3bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694979"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821295"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office ソリューションのデプロイをトラブルシューティングします。
   このトピックでは、Office ソリューションを配置するときに発生する可能性がある一般的な問題を解決する方法について説明します。
@@ -69,13 +69,16 @@ ms.locfileid: "65694979"
 
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>キャッシュしたコピーではなくアセンブリをダウンロードするには
 
-1. メニュー バーで、 **[プロジェクト]**、[ _ProjectName_**のプロパティ]**」を参照してください。
+1. メニュー バーで、 **[プロジェクト]** 、[ _ProjectName_**のプロパティ]** 」を参照してください。
 
 2. **[アプリケーション]** ページで、 **[アセンブリ情報]** を選択します。
 
-3. 最初の**アセンブリのバージョン**ボックスに、アスタリスクを入力 (\*) を選択し、 **[ok]** ボタン。
+3. リビジョン番号、3 番目のフィールドを設定、**アセンブリ バージョン**、ワイルド カードを (\*)。 たとえば、"1.0。 *"。  選択し、 **OK**ボタンをクリックします。
 
    アセンブリのバージョンを変更したら、厳密な名前でアセンブリに署名します。fusion が最新バージョンのカスタマイズを読み込むようになります。
+
+ [!NOTE]
+> アセンブリのバージョン、ビルド エラーでワイルドカードを使用しようとすると、Visual Studio 2017 以降が発生します。  アセンブリのバージョンでは、ワイルドカードが確定的な MSBuild の機能を中断するためです。 アセンブリのバージョンからワイルドカードを削除するか、決定性を無効にするよう指示されます。  確定的な機能について詳しくご覧ください。[MSBuild プロジェクトの共通プロパティ](../msbuild/common-msbuild-project-properties.md)と[ビルドのカスタマイズ](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>URI に US-ASCII ではない文字がある場合、インストールが失敗します。
  Office ソリューションを HTTP、HTTPS、または FTP のいずれかの場所に発行する場合、US-ASCII ではない Unicode 文字をパスに含めることはできません。 これらの文字を使用すると、セットアップ プログラムで一貫性のない動作が実行されることがあります。 インストール パスには、US-ASCII 文字を使用してください。

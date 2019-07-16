@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる DataCamp トレーニング サブスクリプションについて説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 5d6f9d2a642a13b350e539383a1abb74835bf9d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e29f5d13c9869995aad0b7a6793304b677d54ba
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948135"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032165"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの DataCamp トレーニング特典
 
@@ -24,11 +24,11 @@ DataCamp 特典の有効期間は、Visual Studio サブスクリプションに
 
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
 
-2. "専門能力開発" カテゴリで DataCamp 特典タイルを見つけて、**[アクティブ化]** をクリックします。
+2. "専門能力開発" カテゴリで DataCamp 特典タイルを見つけて、 **[アクティブ化]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![DataCamp 特典のタイル](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
-3. [DataCamp] ページで、新しいアカウントを作成できます。  電子メール アドレスとパスワードを入力するか、LinkedIn、Google、または Facebook から既存のアカウントを使用してサインインすることができます。  サインイン情報を指定したら、**[Get Started]\(作業の開始\)** をクリックします。
+3. [DataCamp] ページで、新しいアカウントを作成できます。  電子メール アドレスとパスワードを入力するか、LinkedIn、Google、または Facebook から既存のアカウントを使用してサインインすることができます。  サインイン情報を指定したら、 **[Get Started]\(作業の開始\)** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![DataCamp: 新しいアカウントの作成](_img/vs-datacamp/vs-datacamp-create-account.png)
    >
@@ -44,7 +44,7 @@ DataCamp 特典の有効期間は、Visual Studio サブスクリプションに
    > [!div class="mx-imgBorder"]
    > ![DataCamp: パスの選択](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
-5. 目的のパスを選択したら、目標を選択して、ラーニング パスを絞り込むことができます。  たとえば、"データ サイエンス スキルセットを開発する" パスを選択すると、次のオプションが表示されます。 オプションを選択するか、**[I am not sure.Show me all career paths]\(わかりません。すべてのキャリア パスを表示してください\)** をクリックしてより広範なパスを作成します。
+5. 目的のパスを選択したら、目標を選択して、ラーニング パスを絞り込むことができます。  たとえば、"データ サイエンス スキルセットを開発する" パスを選択すると、次のオプションが表示されます。 オプションを選択するか、 **[I am not sure.Show me all career paths]\(わかりません。すべてのキャリア パスを表示してください\)** をクリックしてより広範なパスを作成します。
    > [!div class="mx-imgBorder"]
    > ![DataCamp: データ サイエンス スキルセット](_img/vs-datacamp/vs-datacamp-datascience.png)
 
@@ -70,7 +70,6 @@ DataCamp 特典の有効期間は、Visual Studio サブスクリプションに
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 3 か月                                                            |  いいえ。  新しいサブスクライバーのみが使用できます           |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 3 か月間                                             |  いいえ。  新しいサブスクライバーのみが使用できます           |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 3 か月間                                              |  いいえ。  新しいサブスクライバーのみが使用できます           |
-| Visual Studio Dev Essentials | N/A  | 2 か月 | いいえ。 新しいサブスクライバーのみが使用できます |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 

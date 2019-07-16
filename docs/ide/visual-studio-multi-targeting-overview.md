@@ -1,11 +1,9 @@
 ---
-title: .NET Framework をターゲットに指定する
+title: 対象の .NET Framework
 ms.date: 02/06/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
-- multi-targeting [Visual Studio]
-- multitargeting [Visual Studio]
 - framework targeting [Visual Studio]
 - .NET framework targeting [Visual Studio]
 author: gewarren
@@ -13,18 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b652c603cd98f9c9ec9366a225971485def187b6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582113"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160147"
 ---
-# <a name="visual-studio-multi-targeting-overview"></a>Visual Studio のマルチ ターゲットの概要
+# <a name="framework-targeting-overview"></a>フレームワーク対象設定機能の概要
 
-Visual Studio では、プロジェクトの対象となる .NET Framework のバージョンまたはプロファイルを指定できます。 別のコンピューター上で実行するアプリケーションについては、アプリケーションが対象とする .NET Framework バージョンが、コンピューターにインストールされている .NET Framework バージョンとの互換性を持っている必要があります。
+Visual Studio では、プロジェクトの対象となる .NET のバージョンを指定できます。 フレームワークを対象にする機能は、指定したフレームワーク バージョンで利用できる機能のみをアプリケーションで使用することを保証するのに役立ちます。 別のコンピューター上で実行する .NET Framework アプリについては、アプリケーションが対象とする .NET Framework バージョンが、コンピューターにインストールされている .NET Framework バージョンとの互換性を持っている必要があります。
 
-異なるバージョンのフレームワークを対象とする複数のプロジェクトを含むソリューションを作成することもできます。 フレームワークを対象にする機能は、指定したバージョンのフレームワークで利用できる機能のみをアプリケーションで使用することを保証するのに役立ちます。
+Visual Studio のソリューションには、異なるバージョンの .NET を対象とするプロジェクトを含めることができます。
+
+ターゲット フレームワークの詳細については、「[ターゲット フレームワーク](/dotnet/standard/frameworks)」を参照してください。
 
 > [!TIP]
 > 異なるプラットフォームに対応する複数のアプリケーションを対象にすることもできます。 詳細については、[MSBuild のマルチ ターゲット](../msbuild/msbuild-multitargeting-overview.md)に関する記事をご覧ください。
@@ -33,19 +33,21 @@ Visual Studio では、プロジェクトの対象となる .NET Framework の�
 
 フレームワークの対象設定機能には、次の特徴があります。
 
-- 旧バージョンの [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] を対象とするプロジェクトを開いたときに、Visual Studio でそのプロジェクトを自動的にアップグレードするか、前のバージョンを対象とした状態を維持することができます。
+- 旧フレームワーク バージョンを対象とするプロジェクトを開いたときに、Visual Studio でそのプロジェクトを自動的にアップグレードするか、前のバージョンを対象とした状態を維持することができます。
 
-- プロジェクトを作成するときに、対象とする .NET Framework のバージョンを指定できます。
+- .NET Framework プロジェクトを作成するときに、対象とする .NET Framework のバージョンを指定できます。
 
-- 既存のプロジェクトの対象となっている .NET Framework のバージョンを変更できます。
+- 1 つのプロジェクトで[複数のフレームワークをターゲットに設定](/dotnet/standard/frameworks#how-to-specify-target-frameworks)できます。
 
-- 同じソリューション内にある複数のプロジェクトのそれぞれで、異なるバージョンの .NET Framework を対象とすることができます。
+- 同じソリューション内にある複数のプロジェクトのそれぞれで、異なるバージョンの .NET を対象とすることができます。
 
-- プロジェクトの対象となる .NET Framework のバージョンを変更すると、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] では、参照ファイルおよび構成ファイルに対して必要な変更が加えられます。
+- 既存のプロジェクトの対象となっている .NET のバージョンを変更できます。
 
-旧バージョンの [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] を対象とするプロジェクトで作業する場合は、Visual Studio は開発環境で次のような変更を動的に行います。
+   プロジェクトの対象となる .NET のバージョンを変更すると、Visual Studio では、参照ファイルおよび構成ファイルに対して必要な変更が加えられます。
 
-- **[新しい項目の追加]**、**[新しい参照の追加]**、**[サービス参照の追加]** の各ダイアログ ボックスの項目をフィルター処理して、対象のバージョンで使用できない選択肢を除外します。
+以前のフレームワーク バージョンを対象とするプロジェクトで作業するとき、Visual Studio では、開発環境が次のように動的に変更されます。
+
+- **[新しい項目の追加]** 、 **[新しい参照の追加]** 、 **[サービス参照の追加]** の各ダイアログ ボックスの項目をフィルター処理して、対象のバージョンで使用できない選択肢を除外します。
 
 - **ツールボックス**内のカスタム コントロールをフィルター処理し、対象のバージョンで使用できないコントロールを除外したり、複数のコントロールが使用可能である場合に最新のコントロールのみを表示したりします。
 
@@ -58,11 +60,12 @@ Visual Studio では、プロジェクトの対象となる .NET Framework の�
 - ビルドを行う場合は、対象のバージョンに適したコンパイラのバージョンおよびコンパイラ オプションを使用します。
 
 > [!NOTE]
-> フレームワークの対象機能は、開発中のアプリケーションが正しく実行されることを保証するわけではありません。 対象のバージョンで実行できるかどうかを確認するために、アプリケーションをテストする必要があります。 .NET Framework 2.0 より前のバージョンのフレームワークを対象にすることはできません。
+> - フレームワークの対象機能は、開発中のアプリケーションが正しく実行されることを保証するわけではありません。 対象のバージョンで実行できるかどうかを確認するために、アプリケーションをテストする必要があります。
+> - .NET Framework 2.0 より前のバージョンのフレームワークを対象にすることはできません。
 
 ## <a name="select-a-target-framework-version"></a>対象フレームワークのバージョンを選択する
 
-プロジェクトを作成するときは、プロジェクト テンプレートを選択した後で、対象の .NET Framework バージョンを選択します。 使用できる Framework のリストには、選択したテンプレートの種類に適用されるインストール済みの Framework バージョンが表示されます。 .NET Core テンプレートなどの .NET Framework を必要としないテンプレートの種類の場合、**[Framework]** ドロップダウン リストは表示されません。
+.NET Framework プロジェクトを作成するときは、プロジェクト テンプレートを選択した後で、対象の .NET Framework バージョンを選択できます。 使用できる Framework のリストには、選択したテンプレートの種類に適用されるインストール済みの Framework バージョンが表示されます。 .NET Core テンプレート、.NET Framework 以外のプロジェクト テンプレートの場合、 **[Framework]** ドロップダウン リストは表示されません。
 
 ::: moniker range="vs-2017"
 
@@ -76,13 +79,40 @@ Visual Studio では、プロジェクトの対象となる .NET Framework の�
 
 ::: moniker-end
 
-既存のプロジェクトでは、プロジェクトのプロパティ ダイアログ ボックス内で、対象となる .NET Framework のバージョンを変更できます。 詳細については、「[方法 :.NET Framework のターゲット バージョンを指定する](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。
+## <a name="change-the-target-framework"></a>ターゲット フレームワークを変更する
+
+Visual Basic、C#、または F# の既存のプロジェクトでは、プロジェクトのプロパティ ダイアログ ボックスで、.NET のターゲット バージョンを変更します。 C++ プロジェクトのターゲット バージョンを変更する方法については、代わりに「[How to: Modify the Target Framework and Platform Toolset (方法: ターゲット フレームワークおよびプラットフォームのツールセットを変更する)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)」をご覧ください。
+
+1. **ソリューション エクスプローラー**で、変更するプロジェクトの右クリック メニューを開き、 **[プロパティ]** を選択します。
+
+1. **[プロパティ]** ウィンドウの左側の列で、 **[アプリケーション]** タブを選択します。
+
+   ![プロジェクトのプロパティの [アプリケーション] タブ](../ide/media/vs_slnexplorer_properties_applicationtab.png)
+
+   > [!NOTE]
+   > UWP アプリを作成した後は、Windows または .NET のターゲット バージョンを変更することはできません。
+
+1. **[ターゲット フレームワーク]** 一覧で、目的のバージョンを選択します。
+
+1. 表示される検証ダイアログ ボックスで **[はい]** ボタンを選択します。
+
+   プロジェクトがアンロードされます。 プロジェクトを再読み込みすると、上で選択した .NET のバージョンが対象になります。
+
+> [!NOTE]
+> 対象とするバージョンとは別の .NET のバージョンへの参照がコードに含まれている場合、コードをコンパイルまたは実行するとエラー メッセージが表示されることがあります。 これらのエラーを解決するには、参照を変更します。 「[.NET を対象とするエラーのトラブルシューティング](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)」を参照してください。
+
+> [!TIP]
+> ターゲット フレームワークによっては、プロジェクト ファイル内で次のように表現されている場合があります。
+>
+> - .NET Core アプリの場合: `<TargetFramework>netcoreapp2.1</TargetFramework>`
+> - .NET Standard アプリの場合: `<TargetFramework>netstandard2.0</TargetFramework>`
+> - .NET Framework アプリの場合: `<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>`
 
 ## <a name="resolve-system-and-user-assembly-references"></a>システム参照およびユーザー アセンブリ参照の解決
 
-.NET Framework の特定のバージョンを対象にするには、最初に適切なアセンブリ参照をインストールする必要があります。 [.NET ダウンロード](https://www.microsoft.com/net/download/windows) ページでさまざまなバージョンの .NET Framework の開発者向けパックをダウンロードすることができます。
+.NET の特定のバージョンを対象にするには、最初に適切なアセンブリ参照をインストールする必要があります。 [.NET ダウンロード](https://www.microsoft.com/net/download/windows) ページでさまざまなバージョンの .NET の開発者向けパックをダウンロードすることができます。
 
-**[参照の追加]** ダイアログ ボックスでは、対象の .NET Framework のバージョンに関係しないシステム アセンブリが無効にされます。その結果、それらのアセンブリをプロジェクトに誤って追加することはありません  (システム アセンブリとは、.NET Framework バージョンの一部である *.dll* ファイルのことです)。対象より新しいバージョンのフレームワークに属する参照は解決されず、そのような参照に依存するコントロールを追加することはできません。 このような参照を有効にするには、プロジェクトの対象である .NET Framework を、その参照を含むバージョンに再設定します。  詳細については、「[方法 :.NET Framework のターゲット バージョンを指定する](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。
+.NET Framework プロジェクトの場合、 **[参照の追加]** ダイアログ ボックスでは、対象の .NET Framework のバージョンに関係しないシステム アセンブリが無効にされます。その結果、それらのアセンブリをプロジェクトに誤って追加することはありません。 (システム アセンブリとは、.NET Framework バージョンの一部である *.dll* ファイルのことです)。対象より新しいバージョンのフレームワークに属する参照は解決されず、そのような参照に依存するコントロールを追加することはできません。 このような参照を有効にするには、プロジェクトの対象である .NET Framework を、その参照を含むバージョンに再設定します。
 
 アセンブリ参照の詳細については、「[デザイン時のアセンブリの解決](../msbuild/resolving-assemblies-at-design-time.md)」を参照してください。
 
@@ -92,5 +122,6 @@ Visual Studio では、プロジェクトの対象となる .NET Framework の�
 
 ## <a name="see-also"></a>関連項目
 
+- [ターゲット フレームワーク](/dotnet/standard/frameworks)
 - [マルチ ターゲット (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
 - [方法: ターゲット フレームワークおよびプラットフォームのツールセットを変更する (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

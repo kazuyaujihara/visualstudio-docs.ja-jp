@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a83e19f808a3f3ab7e1bf9f4fb58f5ddd7a218b7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226046"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033143"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Node.js Tools for Visual Studio を使用して Vue.js アプリケーションを作成する
 
@@ -43,7 +43,7 @@ Visual Studio では、JavaScript、TypeScript のいずれかで [Vue.js](https
     Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  ページに移動し、無料試用版をインストールしてください。
     ::: moniker-end
 
-    Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、**[ツール]** > **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[Node.js 開発]** ワークロードを選択し、**[変更]** を選択します。
+    Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、 **[ツール]**  >  **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[Node.js 開発]** ワークロードを選択し、 **[変更]** を選択します。
 
 * ASP.NET Core プロジェクトを作成するには、ASP.NET と、Web 開発ワークロードおよび .NET Core クロスプラットフォーム開発ワークロードがインストールされている必要があります。
 
@@ -71,15 +71,15 @@ Vue.js では、迅速にスキャフォールディングするプロジェク�
 1. Visual Studio を起動し、新しいプロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**asp.net**」と入力してから、**[新しい ASP.NET Core Web アプリケーションを作成する]** を選択します。 ダイアログ ボックスが表示されたら、**client-app** という名前を入力し、**[作成]** を選択します。
+    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**asp.net**」と入力してから、 **[新しい ASP.NET Core Web アプリケーションを作成する]** を選択します。 ダイアログ ボックスが表示されたら、**client-app** という名前を入力し、 **[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    上部のメニュー バーで、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開した後、**[Web]** を選択します。 中央のウィンドウで、**[ASP.NET Core Web アプリケーション]** を選択し、**client-app** という名前を入力してから **[OK]** を選択します。
+    上部のメニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開した後、 **[Web]** を選択します。 中央のウィンドウで、 **[ASP.NET Core Web アプリケーション]** を選択し、**client-app** という名前を入力してから **[OK]** を選択します。
     ::: moniker-end
 
-    **ASP.NET Core Web アプリケーション** プロジェクト テンプレートが表示されない場合は、**ASP.NET と Web 開発**ワークロードと **.NET Core 開発**ワークロードを最初にインストールする必要があります。 ワークロードをインストールするには、**[新しいプロジェクト]** ダイアログ ボックス (**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択) の左側のウィンドウで **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 必要なワークロードを選択します。
+    **ASP.NET Core Web アプリケーション** プロジェクト テンプレートが表示されない場合は、**ASP.NET と Web 開発**ワークロードと **.NET Core 開発**ワークロードを最初にインストールする必要があります。 ワークロードをインストールするには、 **[新しいプロジェクト]** ダイアログ ボックス ( **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択) の左側のウィンドウで **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 必要なワークロードを選択します。
 
-1. **[空]** を選択して、**[OK]** をクリックします。
+1. **[空]** を選択して、 **[OK]** をクリックします。
 
     Visual Studio によってプロジェクトが作成され、ソリューション エクスプローラー (右側のウィンドウ) で開かれます。
 
@@ -103,7 +103,7 @@ vue-cli npm モジュールをインストールするには、コマンド プ�
 1. 「`vue init webpack client-app`」と入力し、追加の質問に回答するように求められたら手順に従います。
 
     > [!NOTE]
-    > *.vue* ファイルについては、WebPac または類似のフレームワークをローダーと共に使って変換を行う必要があります。 TypeScript および Visual Studio では、*.vue* ファイルをコンパイルできません。 バンドルについても同様です。TypeScript では、ES2015 モジュール (つまり、`import` と `export` ステートメント) を、ブラウザーで読み込む最終的な 1 つの *.js* ファイルに変換できません。 ここでも WebPack が最善の選択肢となります。 MSBuild を使って Visual Studio 内からこのプロセスを進めるには、Visual Studio テンプレートから開始する必要があります。 現在のところ、すぐに使える Vue.js 開発用の ASP.NET テンプレートはありません。
+    > *.vue* ファイルについては、WebPac または類似のフレームワークをローダーと共に使って変換を行う必要があります。 TypeScript および Visual Studio では、 *.vue* ファイルをコンパイルできません。 バンドルについても同様です。TypeScript では、ES2015 モジュール (つまり、`import` と `export` ステートメント) を、ブラウザーで読み込む最終的な 1 つの *.js* ファイルに変換できません。 ここでも WebPack が最善の選択肢となります。 MSBuild を使って Visual Studio 内からこのプロセスを進めるには、Visual Studio テンプレートから開始する必要があります。 現在のところ、すぐに使える Vue.js 開発用の ASP.NET テンプレートはありません。
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>ビルドされたファイルを wwwroot に出力するように webpack の構成を変更する
 
@@ -119,7 +119,7 @@ vue-cli npm モジュールをインストールするには、コマンド プ�
 
 #### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>ビルドがトリガーされるたびにクライアント アプリをビルドするようにプロジェクトを設定する
 
-1. Visual Studio で **[プロジェクト]** > **[プロパティ]** > **[ビルド イベント]** に移動します。
+1. Visual Studio で **[プロジェクト]**  >  **[プロパティ]**  >  **[ビルド イベント]** に移動します。
 
 1. **[ビルド前に実行するコマンド ライン]** に「`npm --prefix ./client-app run build`」と入力します。
 
@@ -138,7 +138,7 @@ vue-cli npm モジュールをインストールするには、コマンド プ�
 
 1. コマンド プロンプトに移動し、現在のディレクトリをプロジェクト ルート フォルダーに変更します。
 
-1. 「`vue create client-app`」と入力し、**[Manually select features]\(手動で機能を選択する\)** を選択します。
+1. 「`vue create client-app`」と入力し、 **[Manually select features]\(手動で機能を選択する\)** を選択します。
 
 1. **[TypeScript]** を選択し、他の必要なオプションを選択します。
 
@@ -150,7 +150,7 @@ vue-cli npm モジュールをインストールするには、コマンド プ�
 
     このオプションを設定すると、Visual Studio でプロジェクトをビルドするたびにプロジェクトが繁雑にならなくなります。
 
-1. 次に、*./client-app/* に *vue.config.js* ファイルを作成し、次のコードを追加します。
+1. 次に、 *./client-app/* に *vue.config.js* ファイルを作成し、次のコードを追加します。
 
     ```js
     module.exports = {
@@ -169,7 +169,15 @@ vue-cli npm モジュールをインストールするには、コマンド プ�
 
 #### <a name="build-with-vue-cli-30"></a>vue-cli 3.0 でビルドする
 
-vue-cli 3.0 の原因がわからない問題のため、ビルド プロセスを自動化できません。 wwwroot フォルダーを更新するたびに、client-app フォルダーで `npm run build` コマンドを実行する必要があります。
+vue-cli 3.0 の原因がわからない問題によって、ビルド プロセスを自動化できない可能性があります。 wwwroot フォルダーを更新するたびに、client-app フォルダーで `npm run build` コマンドを実行する必要があります。
+
+または、ASP.NET プロジェクトのプロパティを使用して、vue-cli 3.0 プロジェクトをビルド前イベントとしてビルドできます。 プロジェクトを右クリックし、 **[プロパティ]** を選択し、 **[ビルド]** タブの **[ビルド前に実行するコマンド ライン]** テキスト ボックスに次のコマンドを含めます。
+
+``` cmd
+cd ./client-app
+npm run build
+cd ../
+```
 
 ## <a name="limitations"></a>制限事項
 

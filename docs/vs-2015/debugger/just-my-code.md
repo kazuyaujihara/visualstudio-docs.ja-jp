@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: efcabf9c7dc201f95515cd24bf3a14727f7149fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421826"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823953"
 ---
 # <a name="just-my-code"></a>マイ コードのみ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,7 +123,7 @@ ms.locfileid: "63421826"
 |要素|説明|  
 |-------------|-----------------|  
 |関数|必須。 1 つ以上の関数を非ユーザー関数として指定します。|  
-|`Name`|必須。 一致を照合する完全な関数名を指定する ECMA-262 書式の正規表現。 例:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> は、`MyNS::MyClass` のすべてのメソッドが非ユーザー コードと見なされることをデバッガーに知らせます。 一致照合では、大文字と小文字が区別されます。|  
+|`Name`|必須。 一致を照合する完全な関数名を指定する ECMA-262 書式の正規表現。 例えば:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> は、`MyNS::MyClass` のすべてのメソッドが非ユーザー コードと見なされることをデバッガーに知らせます。 一致照合では、大文字と小文字が区別されます。|  
 |`Module`|任意。 関数を含むモジュールへの完全パスを指定する ECMA-262 書式の正規表現。 一致では、大文字と小文字を区別しません。|  
 |`Action`|必須。 大文字と小文字が区別される以下のいずれかの値です。<br /><br /> -   `NoStepInto`  – 一致した関数をステップ オーバーするデバッガーに指示します。<br />-   `StepInto`  – その他をオーバーライドする一致した関数にステップ インするデバッガーに指示`NoStepInto`の一致する関数。|  
   
@@ -161,7 +161,7 @@ ms.locfileid: "63421826"
 |属性|説明|  
 |---------------|-----------------|  
 |`Name`|必須。 モジュールの完全パス。 Windows のワイルドカード文字、`?` (0 個または 1 個の文字) および `*` (0 個以上の文字) を使用できます。 例えば以下のようにします。<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> は、ドライブの `\3rdParty\UtilLibs` 内のすべてのモジュールを外部コードとして扱うことをデバッガーに指示します。|  
-|`Company`|任意。 実行可能ファイルに埋め込まれているモジュールを発行する会社の名前。 この属性を使用して、モジュールのあいまいさを解消することができます。|  
+|`Company`|省略可能です。 実行可能ファイルに埋め込まれているモジュールを発行する会社の名前。 この属性を使用して、モジュールのあいまいさを解消することができます。|  
   
  **File 要素の属性**  
   
@@ -174,7 +174,7 @@ ms.locfileid: "63421826"
 |属性|説明|  
 |---------------|-----------------|  
 |`Name`|必須。 外部コードとして扱う関数の完全修飾名。|  
-|`Module`|省略可能です。 関数を含むモジュールの名前または完全パス。 この属性を使用して、同じ名前の関数のあいまいさを解消することができます。|  
+|`Module`|任意。 関数を含むモジュールの名前または完全パス。 この属性を使用して、同じ名前の関数のあいまいさを解消することができます。|  
 |`ExceptionImplementation`|`true` に設定すると、この関数ではなく、例外をスローした関数が呼び出し履歴に表示されます。|  
   
 ## <a name="BKMK_JavaScript_Just_My_Code"></a>JavaScript での "マイ コードのみ"  
@@ -222,9 +222,9 @@ ms.locfileid: "63421826"
   
 - `debugger` キーワードが、  
   
-    - **LibraryCode**コード、デバッガーは常に中断します。  
-  
-    - **UnrelatedCode**コード、デバッガーは停止しません。  
+  - **LibraryCode**コード、デバッガーは常に中断します。  
+
+  - **UnrelatedCode**コード、デバッガーは停止しません。  
   
 ### <a name="BKMK_JS_Exception_behavior"></a> 例外の動作  
  ハンドルされていない例外が、  

@@ -3,14 +3,14 @@ title: Visual Studio for Mac Tools for Unity を使用する
 description: このガイドでは、Visual Studio for Mac Tools for Unity 拡張機能を使用する方法について説明します
 author: therealjohn
 ms.author: johmil
-ms.date: 04/02/2019
+ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 56050de063dcbc86bfa469ee9f466a8e87bba973
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: daffb7721164ae49888a894bec7cad3ac74801a4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966012"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692212"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity を使用する
 
@@ -61,26 +61,26 @@ Unity エンジンは MonoBehaviour スクリプトにメッセージをブロ�
 
 ## <a name="adding-new-unity-files-and-folders"></a>Unity の新しいファイルおよびフォルダーを追加する
 
-いつでも Unity エディターで Unity プロジェクトに新しいファイルを追加できますが、Visual Studio for Mac を使うと、新しい Unity スクリプト、シェーダー、フォルダーを Visual Studio 内から簡単に作成できます。
+いつでも Unity エディターで Unity プロジェクトに新しいファイルを追加できますが、Visual Studio for Mac を使うと、新しい Unity スクリプトやシェーダー、構造体、列挙型、フォルダーを、Visual Studio 内から簡単に作成できます。
 
 ### <a name="add-a-new-c-monobehaviour-script"></a>新しい C# MonoBehaviour スクリプトを追加する
 
-新しい C# MonoBehaviour スクリプトを追加するには、**[Assets]\(アセット\) フォルダーを右クリックする**か、または [Solution]\(ソリューション\) パッドでそのサブディレクトリの 1 つを右クリックして、**[Add]\(追加\) > [New MonoBehaviour]\(新しい MonoBehaviour\)** を選びます。
+新しい C# MonoBehaviour スクリプトを追加するには、 **[Assets]\(アセット\) フォルダーを右クリックする**か、または [Solution]\(ソリューション\) パッドでそのサブディレクトリの 1 つを右クリックして、 **[Add]\(追加\) > [New MonoBehaviour]\(新しい MonoBehaviour\)** を選びます。
 
 ![新しい MonoBehaviour を追加する](media/using-vsmac-tools-unity-image4.png)
 
 ### <a name="add-a-new-unity-shader"></a>新しい Unity シェーダーを追加する
 
-新しい Unity シェーダーを追加するには、**[アセット] フォルダーを右クリックする**か、または [ソリューション] パッドでサブディレクトリを右クリックして、**[追加]、[新しいシェーダー]** の順に選びます。
+新しい Unity シェーダーを追加するには、 **[アセット] フォルダーを右クリックする**か、または [ソリューション] パッドでサブディレクトリを右クリックして、 **[追加]、[新しいシェーダー]** の順に選びます。
 
 ### <a name="add-a-new-folder"></a>新しいフォルダーを追加する
 
-新しいフォルダーを追加するには、**[Assets]\(アセット\) フォルダーを右クリックする**か、または [Solution]\(ソリューション\) パッドでサブディレクトリを右クリックして、**[Add]\(追加\) > [New Folder]\(新しいフォルダー\)** を選びます。
+新しいフォルダーを追加するには、 **[Assets]\(アセット\) フォルダーを右クリックする**か、または [Solution]\(ソリューション\) パッドでサブディレクトリを右クリックして、 **[Add]\(追加\) > [New Folder]\(新しいフォルダー\)** を選びます。
 
 これらの追加は、Unity エディターの [Project]\(プロジェクト\) ウィンドウに反映されます。
 
 ### <a name="to-rename-a-file-or-folder"></a>ファイルまたはフォルダーの名前を変更するには
-[Solution]\(ソリューション\) パッドで名前を変更する項目を**右クリック**し、**[Rename]\(名前の変更\)** を選びます。
+[Solution]\(ソリューション\) パッドで名前を変更する項目を**右クリック**し、 **[Rename]\(名前の変更\)** を選びます。
 
 > [!NOTE]
 > 新しい Unity プロジェクトにスクリプトが含まれず、[Assets]\(アセット\) フォルダーが Visual Studio for Mac の [Solution]\(ソリューション\) パッドに表示されない場合は、Unity エディター内から最初の C# スクリプトを追加します。
@@ -97,7 +97,7 @@ Unity プロジェクトは Visual Studio for Mac でデバッグすることが
 
    ![Visual Studio で [再生] をクリックする](media/using-vsmac-tools-unity-image5.png)
 
-2. Unity に切り替えた後、**[Play]\(再生\)** ボタンをクリックしてエディターでゲームを実行します。
+2. Unity に切り替えた後、 **[Play]\(再生\)** ボタンをクリックしてエディターでゲームを実行します。
 
    ![Unity で [Play]\(再生\) をクリックする](media/using-vsmac-tools-unity-image6.png)
 
@@ -118,6 +118,6 @@ Visual Studio for Mac から直接 **[Unity にアタッチして再生]** 構�
    ![Visual Studio で [停止] をクリックする](media/using-vsmac-tools-unity-image7.png)
 
 > [!NOTE]
-> **[Unity にアタッチして再生]** 構成を使用してデバッグを開始した場合、**[停止]** ボタンでも Unity を停止できます。
+> **[Unity にアタッチして再生]** 構成を使用してデバッグを開始した場合、 **[停止]** ボタンでも Unity を停止できます。
 
 Visual Studio for Mac でのデバッグについて詳しくは、「[Using the debugger](debugging.md)」(デバッガーの使用) をご覧ください。

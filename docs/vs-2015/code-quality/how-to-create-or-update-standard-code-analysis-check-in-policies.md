@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47e7c2b6e02aab3b6b1df0c54ba91668bbb2673c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436846"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825810"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>方法: 標準のコード分析チェックイン ポリシーを作成または更新する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ ms.locfileid: "63436846"
   
 - **この規則セットを実行**一覧で、次の方法のいずれかを使用します。  
   
-    - Microsoft の標準規則セットを選択します。  
-  
-    - カスタム規則セットを選択する をクリックして **\<... にソース管理からのルール セットの選択 >** 、し、ソース コントロールのブラウザーで、規則セットのバージョン コントロール パスを入力します。 バージョン コントロール パスの構文です。  
-  
-    - **$/** `TeamProjectName` **/** `VersionControlPath`  
-  
-    - セットを作成し、カスタム チェックイン ポリシーの規則を実装する方法の詳細についてを参照してください[マネージ コードを実装するカスタム チェックイン ポリシー](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)します。  
+  - Microsoft の標準規則セットを選択します。  
+
+  - カスタム規則セットを選択する をクリックして **\<... にソース管理からのルール セットの選択 >** 、し、ソース コントロールのブラウザーで、規則セットのバージョン コントロール パスを入力します。 バージョン コントロール パスの構文です。  
+
+  - **$/** `TeamProjectName` **/** `VersionControlPath`  
+
+  - セットを作成し、カスタム チェックイン ポリシーの規則を実装する方法の詳細についてを参照してください[マネージ コードを実装するカスタム チェックイン ポリシー](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)します。  
   
 ## <a name="see-also"></a>関連項目  
  [コード分析を用いたチェックイン ポリシーの作成と使用](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

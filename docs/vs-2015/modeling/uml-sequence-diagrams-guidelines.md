@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ebb3108ce7a1ee43d1355494a82cc4aee37dbc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a38d9b354de528797d0044f7b631bd2287c34fb4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445660"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823564"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML シーケンス図:ガイドライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -144,7 +144,7 @@ Visual Studio で描画することができます、*シーケンス図*やり�
   
   - 、生存線を右クリックして **クラスを作成**です。  
   
-     - または -  
+     \- または -  
   
   - キーを押して、生存線を選択**F4**、し、**プロパティ**ウィンドウで、設定、**型**既存プロパティに入力するか、新しい型の名前を指定します。 メッセージのラベルを右クリックして **作成操作**します。  
   
@@ -205,7 +205,7 @@ Visual Studio で描画することができます、*シーケンス図*やり�
   
 - 例外、または表示されている通常のシーケンスの代わりに実行できる代替のシーケンスを示す。 "顧客は、このシーケンスの残りのステップをスキップできます" などのコメントが考えられます。  
   
-    - この種類のメモに代わる、より正式な注釈として、フラグメントを使用することもできます。 参照してください[フラグメントを使用した制御構造を記述します。](#Fragments)  
+  - この種類のメモに代わる、より正式な注釈として、フラグメントを使用することもできます。 参照してください[フラグメントを使用した制御構造を記述します。](#Fragments)  
   
 ## <a name="deciding-the-scope-of-the-diagram"></a>図の範囲の決定  
  図に何を表示するかを明確にしておくことは重要な作業です。  
@@ -372,13 +372,13 @@ Visual Studio で描画することができます、*シーケンス図*やり�
   
 - 移動するをクリックするメッセージを右クリックして**図へ移動**します。  
   
-     Visual Studio:  
-  
-    - 選択したメッセージとその付属メッセージを相互作用使用に置き換えます。  
-  
-    - 置き換えたメッセージを新しいシーケンス図に移動します。  
-  
-    - 相互作用使用と新しいシーケンス図の間のリンクを作成します。  
+  Visual Studio:  
+
+  - 選択したメッセージとその付属メッセージを相互作用使用に置き換えます。  
+
+  - 置き換えたメッセージを新しいシーケンス図に移動します。  
+
+  - 相互作用使用と新しいシーケンス図の間のリンクを作成します。  
   
 #### <a name="to-navigate-to-the-sequence-referenced-by-an-interaction-use"></a>相互作用使用によって参照されるシーケンスに移動するには  
   

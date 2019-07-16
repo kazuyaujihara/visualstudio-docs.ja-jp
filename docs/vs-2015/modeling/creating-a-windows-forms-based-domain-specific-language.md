@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b733af14e5b5124928c315ae4a87098513714214
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b93518a6ca5fa6464bf8f2e72f11cfa90b4dd4dd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433337"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825585"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows フォームに基づくドメイン固有言語の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ Windows フォームの UI とモデル エクスプ ローラーを示す DSL �
 
 - `UI`プロジェクトには、DSL にバインドされたフォーム コントロールの実際のサンプルが含まれています。 ただし、これは機能しません、DSL 定義を変更したとき。 `UI`プロジェクトが含まれています。  
 
-    - という名前の Windows フォーム クラス`ModelViewControl`します。  
+  - という名前の Windows フォーム クラス`ModelViewControl`します。  
 
-    - という名前のファイル`DataBinding.cs`の他の部分定義を格納している`ModelViewControl`します。 そのコンテンツを表示する**ソリューション エクスプ ローラー**ファイルのショートカット メニューを開き、選択**コードの表示**します。  
+  - という名前のファイル`DataBinding.cs`の他の部分定義を格納している`ModelViewControl`します。 そのコンテンツを表示する**ソリューション エクスプ ローラー**ファイルのショートカット メニューを開き、選択**コードの表示**します。  
 
 ### <a name="about-the-ui-project"></a>UI プロジェクトについて  
  内のコントロールを更新する必要があります、独自の DSL を定義する DSL 定義ファイルを更新するときに、 `UI` DSL を表示するプロジェクト。 異なり、`Dsl`と`DslPackage`プロジェクトは、サンプル`UI`からプロジェクトが生成されない`DslDefinitionl.dsl`します。 このチュートリアルでは説明しませんが、する場合は、コードを生成する .tt ファイルを追加することができます。  
@@ -241,7 +241,7 @@ Windows フォームの UI とモデル エクスプ ローラーを示す DSL �
 
 1. FarmControl.cs のデザイン ビューでは、名前、サイズまたは IsOrganic などの単純なフィールドを選択します。  
 
-2. プロパティ ウィンドウで  **DataBindings**開き **(詳細)**。  
+2. プロパティ ウィンドウで  **DataBindings**開き **(詳細)** 。  
 
      **フォーマットと詳細バインド**ダイアログで、**データ ソース更新モード**、選択**OnPropertyChanged**します。  
 

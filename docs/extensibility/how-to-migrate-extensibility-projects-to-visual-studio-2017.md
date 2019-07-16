@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f5edad198727ea33d3bf293fa0ee1baf3afb5b3b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319306"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823898"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>方法: 機能拡張プロジェクトを Visual Studio 2017 に移行します。
 
@@ -62,8 +62,8 @@ Visual Studio のユーザーのインストールは、拡張機能を実行す
 * 拡張機能マニフェスト ファイルを編集 (通称、 *source.extension.vsixmanifest*)。
 * 確認`InstallationTarget`15.0 が含まれています。
 * (次の例で示す) のように、必要なインストール前提条件を追加します。
-   * インストールの前提条件のコンポーネント Id のみを指定することをお勧めします。
-   * このドキュメントの最後のセクションを参照してください。[コンポーネント Id を識別する方法について](#find-component-ids)します。
+  * インストールの前提条件のコンポーネント Id のみを指定することをお勧めします。
+  * このドキュメントの最後のセクションを参照してください。[コンポーネント Id を識別する方法について](#find-component-ids)します。
 
 例:
 
@@ -120,12 +120,12 @@ Visual Studio の実験用インスタンスで拡張機能をデバッグする
 
 * VSIX プロジェクトをビルドします。
 * 生成した VSIX を解凍します。
-   * 既定では、VSIX ファイルの存在の内部*Bin/debug*または*Bin/release*として *[YourCustomExtension] .vsix*します。
-   * 名前を変更 *.vsix*に *.zip*を簡単に内容を表示します。
+  * 既定では、VSIX ファイルの存在の内部*Bin/debug*または*Bin/release*として *[YourCustomExtension] .vsix*します。
+  * 名前を変更 *.vsix*に *.zip*を簡単に内容を表示します。
 * 3 つのファイルの存在を確認します。
-   * *extension.vsixmanifest*
-   * *manifest.json*
-   * *catalog.json*
+  * *extension.vsixmanifest*
+  * *manifest.json*
+  * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>すべての必要な前提条件がインストールされているときに確認します。
 
@@ -141,11 +141,11 @@ VSIX が正常にインストール、マシンに必要なすべての前提条
 ![Visual Studio 2017 の VSIX インストーラー](media/vsixinstaller-vs-2017.png)
 
 * 省略可能:Visual Studio の以前のバージョンを確認します。
-   * 旧バージョンとの互換性を証明します。
-   * Visual Studio 2012、Visual Studio 2013、Visual Studio 2015 の機能する必要があります。
+  * 旧バージョンとの互換性を証明します。
+  * Visual Studio 2012、Visual Studio 2013、Visual Studio 2015 の機能する必要があります。
 * 省略可能:VSIX インストーラーのバージョン チェックがバージョンの選択肢を提供することを確認します。
-   * (インストールされている) 場合は、Visual Studio の以前のバージョンが含まれています。
-   * Visual Studio 2017 が含まれています。
+  * (インストールされている) 場合は、Visual Studio の以前のバージョンが含まれています。
+  * Visual Studio 2017 が含まれています。
 
 Visual Studio が開かれた最近場合は、このようなダイアログ ボックスを表示する可能性があります。
 
@@ -189,7 +189,7 @@ Excel シートには、4 つの列があります。**コンポーネント名*
 
 すべての参照のため最初コア エディター (Microsoft.VisualStudio.Component.CoreEditor) コンポーネントはどれを確認します。  少なくとも、コア エディター コンポーネントをすべての拡張機能の前提条件として指定する必要があります。 内のフィルターを追加、参照のままになっているのコア エディターが含まれていない、**バイナリ/ファイル名**セクションにこれらの参照のサブセットのいずれかのコンポーネントを検索します。
 
-次に例を示します。 
+次に例を示します。
 
 * プロジェクトを参照していることを理解しているデバッガー拡張機能がある場合*VSDebugEng.dll*と*VSDebug.dll*、[フィルター] ボタンをクリックして、**バイナリ/ファイル名**ヘッダー。  "VSDebugEng.dll"を検索して選択*OK*します。  次のフィルター ボタンをクリックして、**バイナリ/ファイル名**ヘッダーをもう一度と"VSDebug.dll"を検索します。  チェック ボックスをオン**をフィルター処理の現在の選択を追加する**選択と**OK**。  なります。、**コンポーネント名**ほとんどは、コンポーネントを検索する拡張機能の種類に関連します。 この例では、Just ポイントイン タイムを選択したデバッガーし、vsixmanifest に追加します。
 * プロジェクトがデバッガー要素で処理される場合は、どのようなコンポーネントには、その名前でデバッガーが含まれている、フィルター検索ボックスに「デバッガー」を検索できます。

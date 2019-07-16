@@ -7,19 +7,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96f9f56c2b73b8f3c39635c81019cd01fa8a69a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72e010d76188be1ebe07eb9400b7cde60c2bf0a6
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946936"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043334"
 ---
-# <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio で頻繁に使用するコマンドに対応する既定のキーボード ショートカット
+# <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Visual Studio のよく使われるキーボード ショートカット
 
 Visual Studio で頻繁に使用するコマンドには、ここで示している既定のショートカット キーを押すことでアクセスできます。 既定のショートカットが割り当てられているコマンドの完全なリストについては、「[既定のキーボード ショートカット](../ide/default-keyboard-shortcuts-in-visual-studio.md)」を参照してください。
 
+"*全体*" コンテキストは、ショートカットが Visual Studio のすべてのツール ウィンドウで適用されることを意味します。
+
 > [!NOTE]
-> **[オプション]** ダイアログ ボックスを開き、**[環境]** ノードを展開して、**[キーボード]** を選択することで、任意のコマンドのショートカットを調べることができます。
+> **[オプション]** ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、任意のコマンドの[ショートカットを調べる](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)ことができます。
 
 ## <a name="build"></a>ビルド
 
@@ -38,7 +40,7 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 |Debug.BreakAll|**Ctrl + Alt + Break** [全体]|
 |Debug.DeleteAllBreakpoints|**Ctrl + Shift + F9** [全体]|
 |Debug.Exceptions|**Ctrl + Alt + E** [全体]|
-|Debug.QuickWatch|**Ctrl + Alt + Q** [全体]<br /><br /> または **Shift + F9** [全体]|
+|Debug.QuickWatch|**Ctrl + Alt + Q** [全体]<br /><br />または **Shift + F9** [全体]|
 |Debug.Restart|**Ctrl + Shift + F5** [全体]|
 |Debug.RunToCursor|**Ctrl + F10** [全体]|
 |Debug.SetNextStatement|**Ctrl + Shift + F10** [全体]|
@@ -54,13 +56,13 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 
 |コマンド|ショートカット キー [コンテキスト]|
 |--------------| - |
-|Edit.BreakLine|**Enter** [テキスト エディター、レポート デザイナー、Windows フォーム デザイナー]<br /><br /> または **Shift + Enter** [テキスト エディター]|
+|Edit.BreakLine|**Enter** [テキスト エディター、レポート デザイナー、Windows フォーム デザイナー]<br /><br />または **Shift + Enter** [テキスト エディター]|
 |Edit.CollapseToDefinitions|**Ctrl + M**、**Ctrl + O** [テキスト エディター]|
 |Edit.CommentSelection|**Ctrl + K**、**Ctrl + C** [テキスト エディター]|
-|Edit.CompleteWord|**Alt + →** [テキスト エディター、ワークフロー デザイナー]<br /><br /> または **Ctrl + Space** [テキスト エディター、ワークフロー デザイナー]<br /><br /> または **Ctrl + K**、**W** [ワークフロー デザイナー]<br /><br /> または **Ctrl + K、Ctrl + W** [ワークフロー デザイナー]|
-|Edit.Copy|**Ctrl + C** [全体]<br /><br /> または **Ctrl + Insert** [全体]|
-|Edit.Cut|**Ctrl + X** [全体]<br /><br /> または **Shift + Delete** [全体]|
-|Edit.Delete|**Delete** [全体、チーム エクスプローラー]<br /><br /> または **Shift + Delete** [シーケンス図、UML アクティビティ図、レイヤー図]<br /><br /> または **Ctrl + Delete** [クラス図]|
+|Edit.CompleteWord|**Alt + →** [テキスト エディター、ワークフロー デザイナー]<br /><br />または **Ctrl + Space** [テキスト エディター、ワークフロー デザイナー]<br /><br />または **Ctrl + K**、**W** [ワークフロー デザイナー]<br /><br />または **Ctrl + K、Ctrl + W** [ワークフロー デザイナー]|
+|Edit.Copy|**Ctrl + C** [全体]<br /><br />または **Ctrl + Insert** [全体]|
+|Edit.Cut|**Ctrl + X** [全体]<br /><br />または **Shift + Delete** [全体]|
+|Edit.Delete|**Delete** [全体、チーム エクスプローラー]<br /><br />または **Shift + Delete** [シーケンス図、UML アクティビティ図、レイヤー図]<br /><br />または **Ctrl + Delete** [クラス図]|
 |Edit.Find|**Ctrl + F** [全体]|
 |Edit.FindAllReferences|**Shift + F12** [全体]|
 |Edit.FindinFiles|**Ctrl + Shift + F** [全体]|
@@ -78,14 +80,14 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 |Edit.LineCut|**Ctrl + L** [テキスト エディター]|
 |Edit.LineDownExtendColumn|**Shift + Alt + ↓** [テキスト エディター]|
 |Edit.LineOpenAbove|**Ctrl + Enter** [テキスト エディター]|
-|Edit.ListMembers|**Ctrl + J** [テキスト エディター、ワークフロー デザイナー]<br /><br /> または **Ctrl + K、Ctrl + L** [ワークフロー デザイナー]<br /><br /> または **Ctrl + K、L** [ワークフロー デザイナー]|
+|Edit.ListMembers|**Ctrl + J** [テキスト エディター、ワークフロー デザイナー]<br /><br />または **Ctrl + K、Ctrl + L** [ワークフロー デザイナー]<br /><br />または **Ctrl + K、L** [ワークフロー デザイナー]|
 |Edit.NavigateTo|**Ctrl + ,** [全体]|
 |Edit.OpenFile|**Ctrl + Shift + G** [全体]|
 |Edit.OvertypeMode|**Insert** [テキスト エディター]|
-|Edit.ParameterInfo|**Ctrl + Shift + Space** [テキスト エディター、ワークフロー デザイナー]<br /><br /> または **Ctrl + K、Ctrl + P** [ワークフロー デザイナー]<br /><br /> または **Ctrl + K、P** [ワークフロー デザイナー]|
-|Edit.Paste|**Ctrl + V** [全体]<br /><br /> または **Shift + Insert** [全体]|
+|Edit.ParameterInfo|**Ctrl + Shift + Space** [テキスト エディター、ワークフロー デザイナー]<br /><br />または **Ctrl + K、Ctrl + P** [ワークフロー デザイナー]<br /><br />または **Ctrl + K、P** [ワークフロー デザイナー]|
+|Edit.Paste|**Ctrl + V** [全体]<br /><br />または **Shift + Insert** [全体]|
 |Edit.PeekDefinition|**Alt + F12** [テキスト エディター]|
-|Edit.Redo|**Ctrl + Y** [全体]<br /><br /> または **Shift + Alt + Backspace** [全体]<br /><br /> または **Ctrl + Shift + Z** [全体]|
+|Edit.Redo|**Ctrl + Y** [全体]<br /><br />または **Shift + Alt + Backspace** [全体]<br /><br />または **Ctrl + Shift + Z** [全体]|
 |Edit.Replace|**Ctrl + H** [全体]|
 |Edit.SelectAll|**Ctrl + A** [全体]|
 |Edit.SelectCurrentWord|**Ctrl + W** [テキスト エディター]|
@@ -97,7 +99,7 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 |Edit.ToggleCompletionMode|**Ctrl + Alt + Space** [テキスト エディター]|
 |Edit.ToggleOutliningExpansion|**Ctrl + M、Ctrl + M** [テキスト エディター]|
 |Edit.UncommentSelection|**Ctrl + K、Ctrl + U** [テキスト エディター]|
-|Edit.Undo|**Ctrl + Z** [全体]<br /><br /> または **Alt + Backspace** [全体]|
+|Edit.Undo|**Ctrl + Z** [全体]<br /><br />または **Alt + Backspace** [全体]|
 |Edit.WordDeleteToEnd|**Ctrl + Delete** [テキスト エディター]|
 |Edit.WordDeleteToStart|**Ctrl + Backspace** [テキスト エディター]|
 
@@ -142,7 +144,7 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 |--------------| - |
 |View.ClassView|**Ctrl + Shift + C** [全体]|
 |View.EditLabel|**F2** [全体]|
-|View.ErrorList|**Ctrl + \\、Ctrl + E** [全体]<br /><br /> または **Ctrl + \\、E** [全体]|
+|View.ErrorList|**Ctrl + \\、Ctrl + E** [全体]<br /><br />または **Ctrl + \\、E** [全体]|
 |View.NavigateBackward|**Ctrl + マイナス記号 (-)** [Global]|
 |View.NavigateForward|**Ctrl + Shift + マイナス記号 (-)** [全体]|
 |View.ObjectBrowser|**Ctrl + Alt + J** [全体]|
@@ -150,11 +152,11 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 |View.PropertiesWindow|**F4**|
 |View.Refresh|**F5** [チーム エクスプローラー]|
 |View.ServerExplorer|**Ctrl + Alt + S** [全体]|
-|View.ShowSmartTag|**Ctrl + .** [Global]<br /><br /> または **Shift + Alt + F10** [全体、HTML エディター デザイン ビュー]|
+|View.ShowSmartTag|**Ctrl + .** [Global]<br /><br />または **Shift + Alt + F10** [全体、HTML エディター デザイン ビュー]|
 |View.SolutionExplorer|**Ctrl + Alt + L** [全体]|
 |View.TfsTeamExplorer|**Ctrl + \\、Ctrl + M** [全体]|
 |View.Toolbox|**Ctrl + Alt + X** [全体]|
-|View.ViewCode|**Enter** [クラス図]<br /><br /> または **F7** [設定デザイナー]|
+|View.ViewCode|**Enter** [クラス図]<br /><br />または **F7** [設定デザイナー]|
 |View.ViewDesigner|**Shift + F7** [HTML エディター ソース ビュー]|
 
 ## <a name="window"></a>ウィンドウ
@@ -170,3 +172,4 @@ Visual Studio で頻繁に使用するコマンドには、ここで示してい
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio でのキーボード ショートカットの識別とカスタマイズ](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Visual Studio のすべてのキーボード ショートカット](default-keyboard-shortcuts-in-visual-studio.md)

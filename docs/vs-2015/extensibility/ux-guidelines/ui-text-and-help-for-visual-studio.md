@@ -8,12 +8,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c2fa6b0ddf0e7596f5345a3c36290fa931d3bb4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea4f2b49838340fcee41bc9c41ef94558e44825e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079013"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823612"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI テキストと Visual Studio のヘルプ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -193,11 +193,11 @@ ms.locfileid: "60079013"
 
 - いくつかの質問を自問してみるエラー メッセージを構築するとき:
 
-    - ユーザーがだけでこのエラーの問題を解決する方法を見つけることができますか。
+  - ユーザーがだけでこのエラーの問題を解決する方法を見つけることができますか。
 
-    - ユーザーは、このエラーと同じボキャブラリを使用しますか。
+  - ユーザーは、このエラーと同じボキャブラリを使用しますか。
 
-    - このエラーがあいまいです。 または複数の状況で共有しますか。 場合は、方法はするガイド ユーザーに必要なソリューションでしょうか。
+  - このエラーがあいまいです。 または複数の状況で共有しますか。 場合は、方法はするガイド ユーザーに必要なソリューションでしょうか。
 
 #### <a name="build-errors"></a>ビルド エラー
  Visual Studio は、ソフトウェア開発ツールであるために、コンパイル、変換、または開発者の作業をバイナリ形式に変換する手順をエンコード多くのコンポーネントがあります。 コンパイラは正しく作成されたファイルを処理できない場合、またはコンパイラ オプションが正しく設定されなかったときにこれらの変換エラーが発生することができます。

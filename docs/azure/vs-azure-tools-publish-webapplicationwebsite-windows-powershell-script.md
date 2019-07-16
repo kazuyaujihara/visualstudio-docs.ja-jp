@@ -1,37 +1,34 @@
 ---
 title: Publish-WebApplicationWebSite (Windows PowerShell スクリプト) | Microsoft Docs
 description: Web プロジェクトを Azure Web サイトに発行する方法について説明します。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
-ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 11/11/2016
-ms.date: 09/10/2018
-ms.author: v-junlch
-ms.openlocfilehash: 2e5bd615e83c56a257e093c42fca2a98c5a3efd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.date: 11/11/2016
+ms.author: ghogen
+ms.openlocfilehash: 1ad49cc9efd97fbd51159a0527ee1dc7aa2e25b6
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427443"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67623975"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell スクリプト)
 ## <a name="syntax"></a>構文
 Web プロジェクトを Azure Web サイトに発行します。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
 
-    Publish-WebApplicationWebSite
-    -Configuration <configuration>
-    -SubscriptionName <subscriptionName>
-    -WebDeployPackage <packageName>
-    -DatabaseServerPassword @{Name = "name"; Password = "password"}
-    -SendHostMessagesToOutput
-    -Verbose
-
+```
+Publish-WebApplicationWebSite
+–Configuration <configuration>
+-SubscriptionName <subscriptionName>
+-WebDeployPackage <packageName>
+-DatabaseServerPassword @{Name = "name"; Password = "password"}
+-SendHostMessagesToOutput
+-Verbose
+```
 
 ## <a name="configuration"></a>構成
 デプロイの詳細が記述されている JSON 構成ファイルへのパス。
@@ -98,32 +95,31 @@ true の場合、スクリプトからのメッセージは出力ストリーム
 
 JSON 構成ファイルではデプロイ対象の詳細が指定されます。 この中には、Web サイトの名前やユーザー名など、プロジェクトの作成時に指定した情報が含まれます。 また、プロビジョニングを行うデータベースがある場合はそれも含まれます。 次のコードは JSON 構成ファイルの例を示しています。
 
-    {
-        "environmentSettings": {
-            "webSite": {
-                "name": "WebApplication10554",
-                "location": "China North"
-            },
-            "databases": [
-                {
-                    "connectionStringName": "DefaultConnection",
-                    "databaseName": "WebApplication10554_db",
-                    "serverName": "iss00brc88",
-                    "user": "sqluser2",
-                    "password": "",
-                    "edition": "",
-                    "size": "",
-                    "collation": "",
-                    "location": "China North"
-                }
-            ]
-        }
+```json
+{
+    "environmentSettings": {
+        "webSite": {
+            "name": "WebApplication10554",
+            "location": "West US"
+        },
+        "databases": [
+            {
+                "connectionStringName": "DefaultConnection",
+                "databaseName": "WebApplication10554_db",
+                "serverName": "iss00brc88",
+                "user": "sqluser2",
+                "password": "",
+                "edition": "",
+                "size": "",
+                "collation": "",
+                "location": "West US"
+            }
+        ]
     }
+}
+```
 
 JSON 構成ファイルは、デプロイ対象を変更するように編集できます。 webSite のセクションは必須ですが、データベースのセクションは省略可能です。
 
 ## <a name="next-steps"></a>次の手順
 詳細については、「 [Publish-WebApplicationVM (Windows PowerShell スクリプト)](vs-azure-tools-publish-webapplicationvm.md)
-
-
-<!-- Update_Description: update metedata properties -->

@@ -11,11 +11,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 3d871f6e84dc96a1e1fd5c20a95c234f13a30ab2
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848970"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259713"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2017"></a>Visual Studio のコア エディター (Visual Studio Professional 2017 に付属)
 
@@ -494,7 +494,7 @@ Component.MDD.IOS | C++ iOS 開発ツール | 15.0.26621.2 | Optional
 
 **ID:** Microsoft.VisualStudio.Workload.NetCoreTools
 
-**説明:**.NET Core、ASP.NET Core、HTML/JavaScript、コンテナー (Docker サポートなど) を使用して、クロスプラットフォーム アプリケーションをビルドします。
+**説明:** .NET Core、ASP.NET Core、HTML/JavaScript、コンテナー (Docker サポートなど) を使用して、クロスプラットフォーム アプリケーションをビルドします。
 
 ### <a name="components-included-by-this-workload"></a>このワークロードに含まれるコンポーネント
 

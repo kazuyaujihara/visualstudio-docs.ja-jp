@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecf482d5ae90894e66e790423b514cc349701f8
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900549"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67399015"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce と Authenticode
 *Authenticode* は、業界標準の暗号化を使用して、アプリケーションの発行元の信頼性を検証するデジタル証明書によってアプリケーション コードに署名する Microsoft テクノロジです。 アプリケーションの配置に Authenticode を使用し、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] はトロイの木馬のリスクを軽減します。 トロイの木馬は、悪意のある第三者が、確立された信頼できるソースからの正規のプログラムと偽って示すウイルスやその他の有害なプログラムです。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置のデジタル証明書による署名は、アセンブリとファイルが改ざんされていないことを確認するためのオプションの手順です。
@@ -33,7 +33,7 @@ ms.locfileid: "62900549"
 ## <a name="authenticode-and-code-signing"></a>Authenticode とコード署名
  *デジタル証明書* は、証明書の発行先であるアプリケーション発行者と証明書を発行した機関を示すメタデータと共に、暗号化公開キー/秘密キーのペアが格納されたファイルです。
 
- Authenticode 証明書にはさまざまな種類があります。 それぞれの証明書は、異なる種類の署名用に構成されています。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションの場合、コード署名で有効な Authenticode 証明書が必要です。 電子メールのデジタル証明書など、別の種類の証明書によって [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションへの署名を試みた場合、アプリケーションは動作しません。 詳細については、「[Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=179452)」 (コード署名の概要) を参照してください。
+ Authenticode 証明書にはさまざまな種類があります。 それぞれの証明書は、異なる種類の署名用に構成されています。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションの場合、コード署名で有効な Authenticode 証明書が必要です。 電子メールのデジタル証明書など、別の種類の証明書によって [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションへの署名を試みた場合、アプリケーションは動作しません。 詳細については、「[Introduction to Code Signing](https://docs.microsoft.com/windows/desktop/seccrypto/cryptography-tools)」 (コード署名の概要) を参照してください。
 
  コード署名の証明書は、次の 3 つの方法のいずれかで取得することができます。
 

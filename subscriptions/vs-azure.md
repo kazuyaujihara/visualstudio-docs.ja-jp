@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Azure の特典をアクティブ化する方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685922"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032207"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
 
@@ -30,7 +30,6 @@ Visual Studio サブスクライバーは、追加料金なしで Microsoft Azur
 |              Visual Studio Professional - 月間プラン              |        使用できません        |                                                             |
 |                    Visual Studio Test Pro                    |     50 ドルのクレジット/月      |                             はい                             |
 |                        MSDN Platforms                        |     100 ドルのクレジット/月     |                             はい                             |
-|                 Visual Studio Dev Essentials                 | 無料のサービスと 200 ドルのクレジット | 無料のサービスは永続的です。  200 ドルのクレジットは 1 回限りのみです。 |
 |               Visual Studio Enterprise - NFR\*               |     150 ドルのクレジット/月     |                             はい                             |
 |                Visual Studio Enterprise - FTE                |     150 ドルのクレジット/月     |                             はい                             |
 |     Visual Studio Enterprise - Microsoft Partner Network     |     150 ドルのクレジット/月     |                             はい                             |
@@ -41,7 +40,7 @@ Visual Studio サブスクライバーは、追加料金なしで Microsoft Azur
 |      Visual Studio Enterprise – MCT Software & Services      |     100 ドルのクレジット/月     |                             はい                             |
 | Visual Studio Enterprise – MCT Software & Services Developer |     150 ドルのクレジット/月     |                             はい                             |
 
-* Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP) が含まれます。
+\* Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP) が含まれます。
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -56,7 +55,7 @@ Visual Studio サブスクライバーは、追加料金なしで Microsoft Azur
    > [!div class="mx-imgBorder"]
    > ![Azure タイル](_img/vs-azure/vs-azure-tile.png)
 
-3. Azure サブスクリプションの作成に必要な情報を入力して、ご利用条件に同意するチェック ボックスをオンにしてから、**[サインアップ]** をクリックします。
+3. Azure サブスクリプションの作成に必要な情報を入力して、ご利用条件に同意するチェック ボックスをオンにしてから、 **[サインアップ]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![Azure のサインアップ](_img/vs-azure/vs-azure-sign-up-cropped.png)
 

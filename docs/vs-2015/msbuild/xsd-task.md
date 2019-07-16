@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 44f25085edcc8b492946d54c7853f8ec32deb0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114965"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826245"
 ---
 # <a name="xsd-task"></a>XSD タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ ms.locfileid: "60114965"
   
      省略可能な **String** 型のパラメーターです。  
   
-     コマンド ラインで指定するオプションのリストです。 たとえば、"*/option1 /option2 /option#*" のような形式です。 他の **XSD** タスク パラメーターでは表されないオプションを指定する場合は、このパラメーターを使用します。  
+     コマンド ラインで指定するオプションのリストです。 たとえば、" */option1 /option2 /option#* " のような形式です。 他の **XSD** タスク パラメーターでは表されないオプションを指定する場合は、このパラメーターを使用します。  
   
 - **GenerateFromSchema**  
   
-     省略可能な **String** 型のパラメーターです。  
-  
-     指定したスキーマから生成される種類を指定します。  
-  
-     次のいずれかの値を指定します。各値は XSD オプションに対応しています。  
-  
-    - **classes** - **/classes**  
-  
-    - **dataset** - **/dataset**  
+  省略可能な **String** 型のパラメーターです。  
+
+  指定したスキーマから生成される種類を指定します。  
+
+  次のいずれかの値を指定します。各値は XSD オプションに対応しています。  
+
+  - **classes** -  **/classes**  
+
+  - **dataset** -  **/dataset**  
   
 - **Language**  
   

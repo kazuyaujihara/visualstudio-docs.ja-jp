@@ -1,25 +1,26 @@
 ---
 title: Visual Studio for Mac をアンインストールする
 description: Visual Studio for Mac と関連ツールをアンインストールする方法を説明します。
-author: conceptdev
-ms.author: crdun
+author: asb3993
+ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 65f5dedce42d6f2391c23bc82e37a5228bfe7242
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971450"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691901"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Visual Studio for Mac のアンインストール
 
-Visual Studio for Mac のようなスタンドアロン アプリなど、クロスプラットフォーム アプリケーション開発が可能な Xamarin 製品がいくつかあります。
-
-このガイドを使用すると、関連するセクションに移動することで、各製品を個別にアンインストールすることができます。または、「[アンインストール スクリプト](#uninstall-script)」で示されるスクリプトを使用して、すべてをアンインストールすることができます。
+このガイドを使用すると、関連するセクションに移動することで、Visual Studio for Mac の各コンポーネントを個別にアンインストールすることができます。または、「[アンインストール スクリプト](#uninstall-script)」で示されるスクリプトを使用して、すべてをアンインストールすることができます。
 
 以前に Xamarin Studio を自分のマシンにインストールしてある場合は、以下の手順に加えて、「[Xamarin のアンインストール](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac)」ガイドの手順にも従うことが必要な場合もあります。
+
+> [!NOTE]
+> この情報で扱われているのは、ご利用のコンピューターからの Visual Studio 2019 for Mac または Visual Studio 2017 for Mac の削除のみです。 Visual Studio Code をアンインストールする場合、詳細については[こちらのイシュー](https://github.com/Microsoft/vscode/issues/52151)を参照してください。
 
 ## <a name="uninstall-script"></a>アンインストール スクリプト
 
@@ -82,7 +83,7 @@ Visual Studio for Mac とご利用のコンピューター用のコンポーネ�
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Visual Studio for Mac をアンインストールする
 
-Mac から Visual Studio をアンインストールするときは最初に、**/Applications** ディレクトリで **Visual Studio.app** を探して、それを**ごみ箱**にドラッグします。 または、次の図のように、右クリックして **[ごみ箱に移動]** を選びます。
+Mac から Visual Studio をアンインストールするときは最初に、 **/Applications** ディレクトリで **Visual Studio.app** を探して、それを**ごみ箱**にドラッグします。 または、次の図のように、右クリックして **[ごみ箱に移動]** を選びます。
 
 ![Visual Studio アプリケーションをごみ箱に移動する](media/uninstall-image1.png)
 
@@ -103,7 +104,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
-Xamarin のさまざまなファイルやフォルダーを含む次のディレクトリを削除することもできます。 ただし、実行する前に、このディレクトリに Android の署名キーが含まれていることに注意してください。 詳細については、セクション「**[Android SDK と Java SDK をアンインストールする](#uninstall-android-sdk-and-java-sdk)**」を参照してください。
+Xamarin のさまざまなファイルやフォルダーを含む次のディレクトリを削除することもできます。 ただし、実行する前に、このディレクトリに Android の署名キーが含まれていることに注意してください。 詳細については、セクション「 **[Android SDK と Java SDK をアンインストールする](#uninstall-android-sdk-and-java-sdk)** 」を参照してください。
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin
@@ -140,7 +141,7 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 
 ### <a name="uninstall-android-sdk-and-java-sdk"></a>Android SDK と Java SDK をアンインストールする
 
-Android アプリケーションの開発には Android SDK が必要です。 Android SDK のすべての部分を完全に削除するには、**~/Library/Developer/Xamarin/** でファイルを探して、**ごみ箱**に移動します。
+Android アプリケーションの開発には Android SDK が必要です。 Android SDK のすべての部分を完全に削除するには、 **~/Library/Developer/Xamarin/** でファイルを探して、**ごみ箱**に移動します。
 
 > [!WARNING]
 > Visual Studio for Mac によって生成された Android の署名キーは `~/Library/Developer/Xamarin/Keystore` 内にあります。 キーストアを残しておきたい場合は、これらを適切にバックアップするか、このディレクトリを削除しないでください。
@@ -190,7 +191,7 @@ rm -rf ~/Library/Xamarin.Mac
 
 ## <a name="uninstall-workbooks-and-inspector"></a>Workbooks と Inspector をアンインストールする
 
-1.2.2 以降では、ターミナルで次のコマンドを実行して、Xamarin Workbooks と Inspector をアンインストールできます。
+1\.2.2 以降では、ターミナルで次のコマンドを実行して、Xamarin Workbooks と Inspector をアンインストールできます。
 
 ```bash
 sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstall
@@ -228,7 +229,7 @@ Visual Studio 2019 for Mac プレビューは、独立したプレビューと�
 
 Visual Studio 2019 for Mac がリリースされたので、Visual Studio 2019 for Mac プレビュー アプリケーションを安全に削除できます。
 
-プレビュー アプリケーション バンドルをアンインストールするには、次の図に示すように、**アプリケーション** フォルダーで **[Visual Studio (プレビュー)]** を選択し、**[ごみ箱に移動]** をクリックします。
+プレビュー アプリケーション バンドルをアンインストールするには、次の図に示すように、**アプリケーション** フォルダーで **[Visual Studio (プレビュー)]** を選択し、 **[ごみ箱に移動]** をクリックします。
 
 ![ファインダーで [ごみ箱に移動] オプションを選択](media/uninstall-remove-vspreview.png)
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Azure コミュニティ特典について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: 154c0164f5126fc38d0e0af5ec5703faacb9f94f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cfdb90a42b7dc3baa68da21e7856a62ba7593b8
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948319"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586949"
 ---
 # <a name="azure-community"></a>Azure コミュニティ
 
@@ -32,7 +32,7 @@ Azure コミュニティを通じて、選ばれたサポート フォーラム�
 Azure コミュニティの開始は簡単です。
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
 
-2. [サポート] セクションで Azure コミュニティ タイルを見つけ、**[Get help]\(ヘルプの表示\)** リンクをクリックします。
+2. [サポート] セクションで Azure コミュニティ タイルを見つけ、 **[Get help]\(ヘルプの表示\)** リンクをクリックします。
     > [!div class="mx-imgBorder"]
     >![Azure コミュニティ タイル](_img/vs-azure-community/vs-azure-community-tile.png)
 
@@ -54,8 +54,6 @@ Azure コミュニティ特典を利用できるかどうかは、以下のよ�
 |                              Visual Studio Test Professional (標準)                               |    VL、リテール     |   1 年    |    はい     |
 |                                       MSDN Platforms (標準)                                       |    VL、リテール     |   1 年    |    はい     |
 | Visual Studio Enterprise (月間クラウド)、Visual Studio Professional (月間クラウド)、NFR<sup>1</sup> |        すべて        | 使用できません |     いいえ     |
-|                                     Visual Studio Dev Essentials                                      |        N/A        | 使用できません |     いいえ     |
-|                                                                                                       |                   |               |            |
 
 <sup>1</sup>  *内容:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、Microsoft Certified Trainer (MCT) が含まれます。*
 

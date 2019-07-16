@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクライバーとして Azure DevOps を使用する方法について説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: dbd08914123455fe0fc9db6dd6927dfe9e49b22e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: ece1a09f900cad499082d3bf41a7d9f0a97a09ac
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177722"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586909"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio サブスクリプションの Azure DevOps 特典
 
@@ -30,12 +30,11 @@ Visual Studio サブスクリプションのアクティブ化に使用した ID
 | Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール、                                        | Azure Boards & Repos (Basic)、Azure Artifacts<sup>2</sup>                                                            |  はい          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | Azure Boards & Repos (Basic)、Azure Test Plans                                              |  はい          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | Azure Boards & Repos (Basic)、Azure Test Plans                                              |  はい          |
+||
 
 <sup>1</sup>  *内容:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (Enterprise)、BizSpark、MCT Software & Services Developer が含まれます。除外:MCT Software & Services、Imagine は含まれません。*
 
 <sup>2</sup>  "*無料で 2 GB 含まれます*"
-
-
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。

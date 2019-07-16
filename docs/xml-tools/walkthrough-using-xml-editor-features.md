@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e443cf23b8726161a4252e6cef3b77f5d3c37bb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808499"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624195"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>チュートリアル: XML エディター機能を使用する
 
@@ -30,7 +30,7 @@ ms.locfileid: "62808499"
 
      エディターに新しいファイルが開きます。 ファイルには既定の XML 宣言 `<?xml version="1.0" encoding="utf-8">` が含まれています。
 
-3. ドキュメントのプロパティ ウィンドウで、参照 ボタンをクリックします (**...**) で、**スキーマ**フィールド。
+3. ドキュメントのプロパティ ウィンドウで、参照 ボタンをクリックします ( **...** ) で、**スキーマ**フィールド。
 
      **XSD スキーマ** ダイアログ ボックスが表示されます。
 
@@ -58,7 +58,7 @@ ms.locfileid: "62808499"
 
     - **従業員**ルート要素を追加します。
 
-2. 選択 **<!--** キーを押して、コメント ノードを追加する**Enter**します。
+2. 選択 **&lt;!--** キーを押して、コメント ノードを追加する**Enter**します。
 
      エディターによってコメントの終了タグが挿入され、コメントの開始タグと終了タグの間にカーソルが置かれます。
 
@@ -78,7 +78,7 @@ ms.locfileid: "62808499"
 
 8. 型**abc**します。
 
-     **Abc**テキストに波下線します。 **ツールヒント**メッセージが表示されます。**'ID' 要素が無効な値のデータ型に従った**します。
+     **Abc**テキストに波下線します。 **ツールヒント**メッセージが表示されます。 **'ID' 要素が無効な値のデータ型に従った**します。
 
 9. ID 要素を右クリックして**定義へ移動**します。
 

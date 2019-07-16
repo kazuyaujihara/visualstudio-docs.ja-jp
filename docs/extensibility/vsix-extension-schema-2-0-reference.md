@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c6672fea1f3998f46c171ab7e9164291e12588f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17d989f3d417866a0bf5dd31099b2f93c9b6e957
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322851"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826272"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 拡張機能スキーマ 2.0 リファレンス
 VSIX の配置マニフェスト ファイルでは、VSIX パッケージの内容について説明します。 ファイル形式は、スキーマによって管理されます。 このスキーマのバージョン 2.0 では、カスタムの型と属性の追加をサポートします。  マニフェストのスキーマは拡張可能です。 マニフェストのローダーでは、XML 要素とそれを認識しない属性は無視されます。
@@ -45,13 +45,13 @@ VSIX の配置マニフェスト ファイルでは、VSIX パッケージの内
 
 - `<Identity>` -このパッケージの id 情報を定義して、次の属性が含まれています。
 
-    - `Id` -この属性は、その作成者によって選択されたパッケージの一意の ID である必要があります。 名前には、CLR 型は名前空間内と同じ方法を修飾する必要があります。Company.Product.Feature.Name します。 `Id`属性は 100 文字に制限されます。
+  - `Id` -この属性は、その作成者によって選択されたパッケージの一意の ID である必要があります。 名前には、CLR 型は名前空間内と同じ方法を修飾する必要があります。Company.Product.Feature.Name します。 `Id`属性は 100 文字に制限されます。
 
-    - `Version` -このパッケージとそのコンテンツのバージョンを定義します。 この属性は、CLR アセンブリのバージョン管理形式を次に示します。Major.Minor.Build.Revision (1.2.40308.00)。 高いバージョン番号を使用してパッケージを使用して、パッケージに更新プログラムを見なされ、既存のインストールされているバージョンをインストールできます。
+  - `Version` -このパッケージとそのコンテンツのバージョンを定義します。 この属性は、CLR アセンブリのバージョン管理形式を次に示します。Major.Minor.Build.Revision (1.2.40308.00)。 高いバージョン番号を使用してパッケージを使用して、パッケージに更新プログラムを見なされ、既存のインストールされているバージョンをインストールできます。
 
-    - `Language` -この属性は、パッケージの既定の言語であり、このマニフェスト内のテキスト形式のデータに対応しています。 この属性は規則に従って CLR ロケール コード、リソース アセンブリの例: en、米国、en、fr。 指定できます`neutral`はどのバージョンの Visual Studio で実行される言語に依存しない拡張機能を宣言します。 既定値は `neutral` です。
+  - `Language` -この属性は、パッケージの既定の言語であり、このマニフェスト内のテキスト形式のデータに対応しています。 この属性は規則に従って CLR ロケール コード、リソース アセンブリの例: en、米国、en、fr。 指定できます`neutral`はどのバージョンの Visual Studio で実行される言語に依存しない拡張機能を宣言します。 既定値は `neutral` です。
 
-    - `Publisher` -この属性は、会社または個別の名前は、このパッケージの発行元を識別します。 `Publisher`属性は 100 文字に制限されます。
+  - `Publisher` -この属性は、会社または個別の名前は、このパッケージの発行元を識別します。 `Publisher`属性は 100 文字に制限されます。
 
 - `<DisplayName>` -この要素は、拡張機能マネージャーの UI に表示されるわかりやすいパッケージ名を指定します。 `DisplayName`コンテンツは 50 文字に制限されます。
 
@@ -80,9 +80,9 @@ VSIX の配置マニフェスト ファイルでは、VSIX パッケージの内
 
 - `Scope` -この属性は、「グローバル」または"ProductExtension"の値を実行できます。
 
-    - 「グローバル」では、インストールは、特定の SKU にスコープでないことを指定します。 たとえば、この値は、拡張機能 SDK がインストールされている場合に使用されます。
+  - 「グローバル」では、インストールは、特定の SKU にスコープでないことを指定します。 たとえば、この値は、拡張機能 SDK がインストールされている場合に使用されます。
 
-    - "ProductExtension"では、従来 VSIX 拡張機能 (バージョン 1.0) を個別の Visual Studio Sku にスコープがインストールされていることを指定します。 これが既定値です。
+  - "ProductExtension"では、従来 VSIX 拡張機能 (バージョン 1.0) を個別の Visual Studio Sku にスコープがインストールされていることを指定します。 これが既定値です。
 
 - `AllUsers` -この省略可能な属性では、このパッケージをすべてのユーザーに対してインストールするかどうかを指定します。 既定では、この属性が false の場合、ユーザーごと、パッケージは、これを指定します。 (この値を true に設定すると、インストールするユーザー必要がありますに昇格させる結果の VSIX をインストールする管理者の特権レベル。
 
@@ -94,71 +94,71 @@ VSIX の配置マニフェスト ファイルでは、VSIX パッケージの内
 
 - `<InstallationTarget>` -この要素は、VSIX インストーラーが、パッケージをインストールする場所を制御します。 場合の値、`Scope`属性が"ProductExtension"パッケージは、SKU は、拡張機能には、その可用性を提供するには、その内容の一部としてマニフェスト ファイルがインストールをターゲットする必要があります。 `<InstallationTarget>`要素には、次属性の場合に、`Scope`属性が、明示的な既定値"ProductExtension"。
 
-    - `Id` -この属性は、パッケージを識別します。  属性は、名前空間の規則を次に示します。Company.Product.Feature.Name します。 `Id`属性は、英数字のみを含めることができ、100 文字に制限されます。 予期される値:
+  - `Id` -この属性は、パッケージを識別します。  属性は、名前空間の規則を次に示します。Company.Product.Feature.Name します。 `Id`属性は、英数字のみを含めることができ、100 文字に制限されます。 予期される値:
 
-        - Microsoft.VisualStudio.IntegratedShell
+    - Microsoft.VisualStudio.IntegratedShell
 
-        - Microsoft.VisualStudio.Pro
+    - Microsoft.VisualStudio.Pro
 
-        - Microsoft.VisualStudio.Premium
+    - Microsoft.VisualStudio.Premium
 
-        - Microsoft.VisualStudio.Ultimate
+    - Microsoft.VisualStudio.Ultimate
 
-        - Microsoft.VisualStudio.VWDExpress
+    - Microsoft.VisualStudio.VWDExpress
 
-        - Microsoft.VisualStudio.VPDExpress
+    - Microsoft.VisualStudio.VPDExpress
 
-        - Microsoft.VisualStudio.VSWinExpress
+    - Microsoft.VisualStudio.VSWinExpress
 
-        - Microsoft.VisualStudio.VSLS
+    - Microsoft.VisualStudio.VSLS
 
-        - My.Shell.App
+    - My.Shell.App
 
-    - `Version` -この属性は、この SKU の最小値と最大のサポート対象バージョンのバージョンの範囲を指定します。 パッケージは、サポートされている Sku のバージョンについて詳しく説明ことができます。 バージョン範囲表記法、10.0、11.0 は、します。
+  - `Version` -この属性は、この SKU の最小値と最大のサポート対象バージョンのバージョンの範囲を指定します。 パッケージは、サポートされている Sku のバージョンについて詳しく説明ことができます。 バージョン範囲表記法、10.0、11.0 は、します。
 
-        - [の包括的な最小バージョン。
+    - [の包括的な最小バージョン。
 
-        - の範囲の最大バージョン。
+    - の範囲の最大バージョン。
 
-        - (の排他的な最小バージョン。
+    - (の排他的な最小バージョン。
 
-        - )-最大バージョン排他。
+    - )-最大バージョン排他。
 
-        - 1 つのバージョンと、指定されたバージョンのみ。
+    - 1 つのバージョンと、指定されたバージョンのみ。
 
-        > [!IMPORTANT]
-        > VSIX スキーマのバージョン 2.0 は、Visual Studio 2012 で導入されました。 このスキーマを使用するには、Visual Studio 2012 が必要か、後でコンピューターにインストールされたを使用する VSIXInstaller.exe その製品の一部であります。 Visual Studio 2012 またはそれ以降の VSIXInstaller がインストーラーの以降のバージョンを使用してのみ、Visual Studio の以前のバージョンを対象にすることができます。
+    > [!IMPORTANT]
+    > VSIX スキーマのバージョン 2.0 は、Visual Studio 2012 で導入されました。 このスキーマを使用するには、Visual Studio 2012 が必要か、後でコンピューターにインストールされたを使用する VSIXInstaller.exe その製品の一部であります。 Visual Studio 2012 またはそれ以降の VSIXInstaller がインストーラーの以降のバージョンを使用してのみ、Visual Studio の以前のバージョンを対象にすることができます。
 
-        Visual Studio 2017 バージョン番号をご覧[Visual Studio のビルド番号とリリース日](../install/visual-studio-build-numbers-and-release-dates.md)します。
+    Visual Studio 2017 バージョン番号をご覧[Visual Studio のビルド番号とリリース日](../install/visual-studio-build-numbers-and-release-dates.md)します。
 
-        Visual Studio 2017 のリリースのバージョンを表現する場合、マイナー バージョンは必ず**0**します。 たとえば、Visual Studio 2017 バージョン 15.3.26730.0 は、[15.0.26730.0,16.0) として表現されなければなりません。 これは Visual Studio 2017 およびそれ以降のバージョン番号が必要です。
+    Visual Studio 2017 のリリースのバージョンを表現する場合、マイナー バージョンは必ず**0**します。 たとえば、Visual Studio 2017 バージョン 15.3.26730.0 は、[15.0.26730.0,16.0) として表現されなければなりません。 これは Visual Studio 2017 およびそれ以降のバージョン番号が必要です。
 
-    - `AnyAttribute*` -`<InstallationTarget>`要素は、名前と値のペアのディクショナリとしての実行時に公開されている制約のない一連の属性を使用します。
+  - `AnyAttribute*` -`<InstallationTarget>`要素は、名前と値のペアのディクショナリとしての実行時に公開されている制約のない一連の属性を使用します。
 
 ### <a name="dependencies-element"></a>依存関係要素
  この要素には、このパッケージを宣言する依存関係の一覧が含まれています。 すべての依存関係を指定すると場合、それらのパッケージ (で識別される、 `Id`) する前にインストールされている必要があります。
 
 - `<Dependency>` 要素のこの子要素では、次の属性があります。
 
-    - `Id` -この属性は、依存パッケージの一意の ID を指定する必要があります。 この id 値に一致する必要があります、`<Metadata><Identity>Id`このパッケージが依存するパッケージの属性です。 `Id`属性が名前空間の規則に従います。Company.Product.Feature.Name します。 この属性は、英数字のみを含めることができ、100 文字に制限されています。
+  - `Id` -この属性は、依存パッケージの一意の ID を指定する必要があります。 この id 値に一致する必要があります、`<Metadata><Identity>Id`このパッケージが依存するパッケージの属性です。 `Id`属性が名前空間の規則に従います。Company.Product.Feature.Name します。 この属性は、英数字のみを含めることができ、100 文字に制限されています。
 
-    - `Version` -この属性は、この SKU の最小値と最大のサポート対象バージョンのバージョンの範囲を指定します。 パッケージは、サポートされている Sku のバージョンについて詳しく説明ことができます。 バージョン範囲の表記は、[12.0, 13.0]、場所。
+  - `Version` -この属性は、この SKU の最小値と最大のサポート対象バージョンのバージョンの範囲を指定します。 パッケージは、サポートされている Sku のバージョンについて詳しく説明ことができます。 バージョン範囲の表記は、[12.0, 13.0]、場所。
 
-        - [の包括的な最小バージョン。
+    - [の包括的な最小バージョン。
 
-        - の範囲の最大バージョン。
+    - の範囲の最大バージョン。
 
-        - (の排他的な最小バージョン。
+    - (の排他的な最小バージョン。
 
-        - )-最大バージョン排他。
+    - )-最大バージョン排他。
 
-        - 1 つのバージョンと、指定されたバージョンのみ。
+    - 1 つのバージョンと、指定されたバージョンのみ。
 
-    - `DisplayName` -この属性は、ダイアログ ボックスとエラー メッセージなどの UI 要素で使用されている依存パッケージの表示名です。 MSI によって依存パッケージがインストールされていない場合、属性は省略可能です。
+  - `DisplayName` -この属性は、ダイアログ ボックスとエラー メッセージなどの UI 要素で使用されている依存パッケージの表示名です。 MSI によって依存パッケージがインストールされていない場合、属性は省略可能です。
 
-    - `Location` -この省略可能な属性は、入れ子になった VSIX パッケージには、この VSIX 内の相対パスまたは依存関係をダウンロードする場所への URL のいずれかを指定します。 この属性は、ユーザーの前提条件となるパッケージを探しやすくために使用されます。
+  - `Location` -この省略可能な属性は、入れ子になった VSIX パッケージには、この VSIX 内の相対パスまたは依存関係をダウンロードする場所への URL のいずれかを指定します。 この属性は、ユーザーの前提条件となるパッケージを探しやすくために使用されます。
 
-    - `AnyAttribute*` -`Dependency`要素は、制約のない一連の名前と値のペアのディクショナリとしての実行時に公開される属性を受け入れます。
+  - `AnyAttribute*` -`Dependency`要素は、制約のない一連の名前と値のペアのディクショナリとしての実行時に公開される属性を受け入れます。
 
 ### <a name="assets-element"></a>資産要素
  この要素の一覧を含む`<Asset>`このパッケージによって各拡張機能またはコンテンツの要素のタグが表示されます。
@@ -189,11 +189,11 @@ VSIX の配置マニフェスト ファイルでは、VSIX パッケージの内
 
   - `AnyAttribute*` -制約のない一連の属性の名前と値のペアのディクショナリとしての実行時に公開されています。
 
-     `<AnyElement>*` の間で構造化コンテンツを許可する`<Asset>`開始し、終了タグ。 すべての要素は、XmlElement オブジェクトの一覧として公開されます。 VSIX 拡張機能は、マニフェスト ファイルの構造化された型に固有のメタデータを定義し、実行時にそれらを列挙できます。
+    `<AnyElement>*` の間で構造化コンテンツを許可する`<Asset>`開始し、終了タグ。 すべての要素は、XmlElement オブジェクトの一覧として公開されます。 VSIX 拡張機能は、マニフェスト ファイルの構造化された型に固有のメタデータを定義し、実行時にそれらを列挙できます。
 
 ### <a name="sample-manifest"></a>サンプル マニフェスト
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>

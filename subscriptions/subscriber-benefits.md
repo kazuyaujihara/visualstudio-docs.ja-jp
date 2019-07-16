@@ -2,23 +2,23 @@
 title: Visual Studio サブスクリプション - サブスクライバーの利点
 author: evanwindom
 ms.author: jaunger
-manager: evelynp
-ms.date: 02/12/2018
+manager: lank
+ms.date: 06/28/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる利点について
 searchscope: VS Subscription
-ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27ec141156de16c4bca8862ed88f89731924d1af
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427794"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586985"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio サブスクリプションに含まれる利点
 
-Visual Studio サブスクリプションでは、Windows、iOS、Android、Linux など、お好みのプラットフォームとデバイス上で優れたアプリケーションを作成、展開、管理するための最も包括的なリソース セットがオファーされます。  特定の利点はサブスクリプションの種類によって異なります。  サブスクライバーに最大限の価値を提供するために、提供する利点は定期的に変更されます。その際は最も役に立つ最新のテクノロジ、トレーニング教材、およびパートナーの特典に重点をおいて調整が加えられます。
+Visual Studio サブスクリプション (旧称: MSDN サブスクリプション) では、Windows、iOS、Android、Linux など、お好みのプラットフォームとデバイス上で、優れたアプリケーションを作成、展開、管理するための、最も包括的な一連のリソースが提供されます。  特定の利点はサブスクリプションの種類によって異なります。  サブスクライバーに最大限の価値を提供するために、提供する利点は定期的に変更されます。その際は最も役に立つ最新のテクノロジ、トレーニング教材、およびパートナーの特典に重点をおいて調整が加えられます。
 
-利点は次の 3 つのカテゴリに分類されます。
+特典は[サブスクライバー ポータル](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:)で 3 つのカテゴリにグループ化されています。
 
 ## <a name="tools"></a>ツール
 これらのツール カテゴリでは、多様な利点を活用することができます ([Visual Studio IDE](vs-ide-benefit.md)、[Azure DevOps Services](vs-azure-devops.md)、[Azure](vs-azure.md) などの主要な利点を含む)。  サブスクリプション レベルによっては、Windows および Office 365 の開発者アカウントおよび Visual Studio App Center に加えて、WhiteSource Bolt や ModernRequirements などのパートナーからもたらされる利点も表示されます。
@@ -30,7 +30,7 @@ Visual Studio サブスクリプションでは、Windows、iOS、Android、Linu
 - Microsoft Azure for .Net Developers などの優れたコンテンツ (Pluralsight 提供)
 - Data Science for Developers (DataCamp 提供)
 - Designing Database Solutions for SQL Server (Microsoft Virtual Academy 提供)
-- LinkedIn Learning では、ユーザーが必要としている優れた人々、洞察、およびスキルへのアクセスを提供しています。
+- LinkedIn Learning により、キャリアアップに必要な人々、洞察、スキルへのアクセスが可能になります。
 
 ## <a name="support"></a>サポート
 質問があったり技術的なサポートが必要であったりする場合は、Visual Studio のサブスクライバーとして各種のサポートにアクセスすることができます。

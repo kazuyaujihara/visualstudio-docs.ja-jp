@@ -17,17 +17,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d466dec85a0bdf242120ef5e88a0d5f5d2ac48e
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 04f33f3852f051e1f492cb2b6dca44fcdb260e11
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934506"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587017"
 ---
 # <a name="custombuild-task"></a>CustomBuild タスク
 
 Visual C++ コンパイラ ツール cmd.exe をラップします。 このクラスは [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md) から派生しますが、ファイルの依存関係を見つける目的でファイル追跡が利用されることはありません。 インクリメント ビルドが正しく動作するには、依存関係をすべて AdditionalDependencies として明示的に指定する必要があります。
-
 
 ## <a name="parameters"></a>パラメーター
 

@@ -7,12 +7,12 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Visual Studio IDE をダウンロードしてインストールする方法を説明します。
 searchscope: VS Subscription
-ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1614df094c043c4b3a758409c1cff3c73b56abf6
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420813"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586928"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Visual Studio 2019 の特典を使用する
 
@@ -35,8 +35,8 @@ IDE をダウンロードするには:
 5. 青いダウンロード ボタンをクリックします。
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise ダウンロードの詳細](_img/vs-ide-experience/vs-ide-download-details.png)
-6. すぐにインストールするには、**[実行]** をクリックします。
-7. [ユーザー アカウント制御] ダイアログで、**[はい]** をクリックします。
+6. すぐにインストールするには、 **[実行]** をクリックします。
+7. [ユーザー アカウント制御] ダイアログで、 **[はい]** をクリックします。
 8. **[続行]** をクリックしてライセンス条項に同意します。
 9. インストーラーが開始したら、目的のワークロード、個々のコンポーネント、言語パックを、対応するタブで選びます。
    > [!div class="mx-imgBorder"]
@@ -50,7 +50,7 @@ IDE をダウンロードするには:
 
 12. Visual Studio サブスクリプションに関連付けられているアカウントでサインインします。
 
-13. 優先するテーマを選び、**[Visual Studio の開始]** をクリックします。
+13. 優先するテーマを選び、 **[Visual Studio の開始]** をクリックします。
 
 14. Visual Studio が開きます。 Visual Studio を使う準備ができました。
 
@@ -69,7 +69,6 @@ IDE をダウンロードするには:
 | Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール                                       | 使用可能                                                            |  はい          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用可能                                             |  はい         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
-| Visual Studio Dev Essentials | N/A  | Visual Studio コミュニティ |はい |
 
 <sup>1</sup>  *内容:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD) が含まれます。除外:MCT Software & Services は含まれません。*
 

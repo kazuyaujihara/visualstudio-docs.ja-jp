@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 022966ae483b958da6032769e219f4ab6750f330
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c998433ca96c46f6a24b75aec5d3a2a95912b786
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696435"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823291"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>方法: Visual C++ プロジェクトを Visual Studio 2015 にアップグレードする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ Visual Studio 2017 の最新ドキュメントについては、「[Visual C++ �
 
 - プロジェクト (.vcxproj) が [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]、  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、または [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] で作成されている場合、次の 2 つのオプションがあります。
 
-    - 更新をスキップできます。 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] が [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1、[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、または [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] の Visual C++ ツールにアクセスできる場合、プロジェクトは変更を加えずに読み込まれます。 そのアクセスを可能にするには、プロジェクトの作成に使用したバージョンの Visual Studio を、 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]と同じマシンにインストールします。 詳細については、「 [Installing Visual Studio Versions Side-by-Side](../install/install-visual-studio-versions-side-by-side.md)」を参照してください。
+  - 更新をスキップできます。 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] が [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1、[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、または [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] の Visual C++ ツールにアクセスできる場合、プロジェクトは変更を加えずに読み込まれます。 そのアクセスを可能にするには、プロジェクトの作成に使用したバージョンの Visual Studio を、 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]と同じマシンにインストールします。 詳細については、「 [Installing Visual Studio Versions Side-by-Side](../install/install-visual-studio-versions-side-by-side.md)」を参照してください。
 
-    - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] が後で説明するような変更を加えられるようにすることで、プロジェクトを更新できます。 ソリューションに複数の Visual C++ プロジェクトが含まれる場合は、すべてのプロジェクトを更新する必要があります。
+  - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] が後で説明するような変更を加えられるようにすることで、プロジェクトを更新できます。 ソリューションに複数の Visual C++ プロジェクトが含まれる場合は、すべてのプロジェクトを更新する必要があります。
 
-        > [!NOTE]
-        > 最初に更新を求められたときに更新しない場合は、後で **[プロジェクト]** メニューの **[VC++ プロジェクトの更新]** を選択してプロジェクトを更新できます。 このコマンドが表示されない場合、更新は必要ではありません。
+    > [!NOTE]
+    > 最初に更新を求められたときに更新しない場合は、後で **[プロジェクト]** メニューの **[VC++ プロジェクトの更新]** を選択してプロジェクトを更新できます。 このコマンドが表示されない場合、更新は必要ではありません。
 
 ## <a name="upgrading-a-visual-c-project"></a>Visual C++ プロジェクトのアップグレード
  [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] が自動的にプロジェクトを更新できるようにすると、次の変更が加えられます。

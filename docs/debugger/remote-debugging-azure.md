@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2fbdc27ba7a3ae69494bf8129e4c870f325fe621
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407781"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824432"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Visual Studio で Azure での IIS で ASP.NET Core のリモート デバッグ
 
@@ -108,9 +108,9 @@ Windows Server 向け Azure VM を作成し、インストールし、IIS とそ
 
 * アプリが設定されている、展開されると、かどうかを確認するのに役立つこのトピックのすべての手順に従いますデバッグできるように、IIS で正しく実行する場合は。
 
-    * 開始する前にすべての手順で説明されている[実行 IIS をインストールして](/azure/virtual-machines/windows/quick-create-portal)します。
+  * 開始する前にすべての手順で説明されている[実行 IIS をインストールして](/azure/virtual-machines/windows/quick-create-portal)します。
 
-    * ネットワーク セキュリティ グループでポート 80 を開くときに開くことも、[修正ポート](#bkmk_openports)(4024 または 4022) リモート デバッガーの。 これにより、後で開く必要はありません。
+  * ネットワーク セキュリティ グループでポート 80 を開くときに開くことも、[修正ポート](#bkmk_openports)(4024 または 4022) リモート デバッガーの。 これにより、後で開く必要はありません。
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Windows Server 上のブラウザーのセキュリティ設定を更新します。
 
@@ -225,7 +225,7 @@ Visual Studio のバージョンに一致する remote tools のバージョン�
     ::: moniker-end
     ポートが必要です。 ポート番号が表示されない場合は、手動で追加します。
 
-4. **[最新の情報に更新]** をクリックします。
+4. **[更新]** をクリックします。
     **[選択可能なプロセス]** ウィンドウにプロセスがいくつか表示されます。
 
     すべてのプロセスが表示されない場合は、(ポートが必要です)、リモート コンピューター名ではなく IP アドレスを使用してください。 使用することができます`ipconfig`IPv4 アドレスを取得するコマンド ラインでします。

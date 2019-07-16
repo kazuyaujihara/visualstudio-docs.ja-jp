@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d48866f1d12badc03d458652746c3a5026a47285
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9628a3e352d2662fe150ec7ef4cda7c79a2fdffa
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340860"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365683"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>方法: 非同期の Visual Studio サービスを提供します。
 UI スレッドをブロックすることがなくサービスを取得する場合は、非同期のサービスを作成し、バック グラウンド スレッドでパッケージを読み込みます。 この目的に使用することができます、<xref:Microsoft.VisualStudio.Shell.AsyncPackage>なく<xref:Microsoft.VisualStudio.Shell.Package>、非同期のパッケージの特殊な非同期メソッドを持つサービスを追加します。
@@ -74,7 +74,7 @@ UI スレッドをブロックすることがなくサービスを取得する�
             await TaskScheduler.Default;
             // do background operations that involve IO or other async methods
 
-            await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
+            await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
             // query Visual Studio services on main thread unless they are documented as free threaded explicitly.
             // The reason for this is the final cast to service interface (such as IVsShell) may involve COM operations to add/release references.
 
@@ -157,13 +157,13 @@ public sealed class TestAsyncPackage : AsyncPackage
         this.AddService(typeof(STextWriterService), CreateTextWriterService);
 
         ITextWriterService textService = await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;
-
-        await textService.WriteLineAsync(<userpath>), "this is a test");
+        string userpath = @"C:\MyDir\MyFile.txt";
+        await textService.WriteLineAsync(userpath, "this is a test");
     }
 
     ```
 
-     変更することを忘れないでください *\<userpath >* ファイル名とコンピューターに意味のあるパスに!
+     変更することを忘れないでください`userpath`ファイル名とコンピューターに意味のあるパスに!
 
 2. ビルドして、コードを実行します。 Visual Studio の実験用インスタンスが表示されたら、ソリューションを開きます。 これにより、 `AsyncPackage` autoload をします。 初期化子が実行すると、場合に、指定した場所でファイルを検索する必要があります。
 
@@ -189,8 +189,9 @@ public sealed class TestAsyncPackage : AsyncPackage
 
         ITextWriterService textService =
            await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;
-
-        await textService.WriteLineAsync((<userpath>, "this is a test");
+        
+        string userpath = @"C:\MyDir\MyFile.txt";
+        await textService.WriteLineAsync(userpath, "this is a test");
 
         await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
         TestAsyncCommand.Initialize(this);
@@ -218,8 +219,8 @@ public sealed class TestAsyncPackage : AsyncPackage
            await AsyncServiceProvider.GlobalProvider.GetServiceAsync(typeof(STextWriterService))
               as ITextWriterService;
 
-        // don't forget to change <userpath> to a local path
-        await textService.WriteLineAsync((<userpath>),"this is a test");
+        string userpath = @"C:\MyDir\MyFile.txt";
+        await textService.WriteLineAsync(userpath, "this is a test");
        }
 
     ```

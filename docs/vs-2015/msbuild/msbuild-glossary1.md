@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154834"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 用語集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,7 @@ Microsoft Build Engine (MSBuild) とそのコンポーネントについて説�
 
  プロパティ関数、入れ子
 
- プロパティ関数を組み合わせて、より複雑な関数を作成できます。 たとえば、オブジェクトに適用された
+ プロパティ関数を組み合わせて、より複雑な関数を作成できます。 例えば以下のようにします。
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 

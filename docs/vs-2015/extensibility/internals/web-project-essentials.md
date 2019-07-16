@@ -10,12 +10,12 @@ ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6b3208230b438eb52c68ef5709cbb0d6628b60ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 95c9f7c530d50a7eb89ebe33fad3862f036972d1
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430161"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825614"
 ---
 # <a name="web-project-essentials"></a>Web プロジェクトの基本情報
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Web プロジェクトでは、Web アプリケーションを作成します。
   
 - 特定の Web ページに関連付けられていないヘルパー クラスなど、追加のソース コード ファイルについては、Web サイトの場合は/App_Code フォルダーにあります。  
   
-    - Web サイト プロジェクト (WSP) には、各スマート Web ページの 1 つの実行可能ファイルが生成されます。 場合は/App_Code フォルダー内のソース コード ファイルから追加の実行可能ファイルが生成されます。  
+  - Web サイト プロジェクト (WSP) には、各スマート Web ページの 1 つの実行可能ファイルが生成されます。 場合は/App_Code フォルダー内のソース コード ファイルから追加の実行可能ファイルが生成されます。  
+
+  - Web アプリケーション プロジェクト (WAP) は、コードでは、スマートのすべての Web ページと/App_Code フォルダー内のすべてのソース ファイルを 1 つの実行可能ファイルを生成します。  
   
-    - Web アプリケーション プロジェクト (WAP) は、コードでは、スマートのすべての Web ページと/App_Code フォルダー内のすべてのソース ファイルを 1 つの実行可能ファイルを生成します。  
-  
-- Web プロジェクトのソリューション ファイルは、Web サイト自体から個別に配置されています。 既定では、ソリューションのファイルは、\Documents and Settings\\*YourAccount*\My Documents\\*\<Visual Studio ### >* \Projects\\ *YourWebSite*します。  
+- Web プロジェクトのソリューション ファイルは、Web サイト自体から個別に配置されています。 既定では、ソリューションのファイルは、\Documents and Settings\\*YourAccount*\My Documents\\ *\<Visual Studio ### >* \Projects\\ *YourWebSite*します。  
   
     > [!NOTE]
     > Web サイトとソリューション ファイルを保持する場合だけが移動をもう一度開きます。  
@@ -55,9 +55,9 @@ Web プロジェクトでは、Web アプリケーションを作成します。
   
 - スマート Web ページは、サーバー側のプログラミング言語と HTML を結合します。 サーバー側の言語には、含まれている言語が呼び出されます。 含まれている言語をサポートするために、Web プロジェクト システムを実装する必要があります、<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>インターフェイスのファミリです。  
   
-    - エディターで含まれている言語をサポートするために含まれている言語サービスに含まれている言語コードを表示する HTML の言語サービスを延期する必要があります。  
-  
-    - エラーのマーカー (赤い波形) は、コード エディターのプライマリ バッファーで常に作成する必要があります。  
+  - エディターで含まれている言語をサポートするために含まれている言語サービスに含まれている言語コードを表示する HTML の言語サービスを延期する必要があります。  
+
+  - エラーのマーカー (赤い波形) は、コード エディターのプライマリ バッファーで常に作成する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
  [Web プロジェクト](../../extensibility/internals/web-projects.md)

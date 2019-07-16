@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9302ae3119bceb466e3d681036753bd8237cbeae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d375dfc4a53015f57546f7cbfcc8b940fa81bd0b
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316331"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559755"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>カスタム プロジェクトと項目テンプレートの Visual Studio 2017 をアップグレードします。
 
@@ -180,9 +180,9 @@ Visual Studio 2015 と Visual Studio 2017 のバージョンのテンプレー�
 
 一部 MSI ベースの拡張機能は、次のディレクトリなど一般的なテンプレートの場所にテンプレートを展開します。
 
-- **\<Visual Studio のインストール ディレクトリ > \Common7\IDE\\< ProjectTemplates/項目テンプレート >**
+- **\<Visual Studio のインストール ディレクトリ > \Common7\IDE\\< ProjectTemplates/項目テンプレート\>**
 
-- **\<Visual Studio のインストール ディレクトリ > \Common7\IDE\Extensions\\< ExtensionName\>\\< プロジェクト/項目テンプレート >**
+- **\<Visual Studio のインストール ディレクトリ > \Common7\IDE\Extensions\\< ExtensionName\>\\< プロジェクト/項目テンプレート\>**
 
 拡張機能は、MSI ベースの展開を実行する場合は、テンプレート マニフェストを手動で生成し、拡張機能のセットアップに含まれていることを確認する必要があります。 上に挙げた .vstman 例を比較し、 [Visual Studio テンプレート マニフェスト スキーマ参照](../extensibility/visual-studio-template-manifest-schema-reference.md)します。
 

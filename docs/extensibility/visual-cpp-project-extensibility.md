@@ -1,6 +1,6 @@
 ---
 title: ビジュアルの C++ プロジェクト機能拡張
-ms.date: 01/25/2019
+ms.date: 04/23/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94f61902090c2ada0770a41375d5cb501b92580f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 10869ad290b0b8df614d25d792d0b3ed1e88eb17
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660740"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825568"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio の C++ プロジェクト システムの機能拡張とツールセットの統合
 
@@ -55,11 +55,24 @@ Visual C プロジェクト システムでは、.vcxproj ファイルを使用�
 
 これらのプロパティ値の下のフォルダー名を指定する、`$(VCTargetsPath)`ルート フォルダー。
 
-`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*アプリケーションの種類*\\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *プラットフォーム*\\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;プラットフォーム\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（Windowsデスクトッププロジェクトの場合、 `$(ApplicationType)` が空のときに使用されます） &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+> `$(VCTargetsPath)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;*アプリケーションの種類*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationType)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*プラットフォーム*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` \
+&nbsp;&nbsp;&nbsp;&nbsp;*プラットフォーム*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+
+`$(VCTargetsPath)` \\*プラットフォーム*\\フォルダーが使用されるときに`$(ApplicationType)`が空で、Windows デスクトップ プロジェクト。
 
 ### <a name="add-a-new-platform-toolset"></a>新しいプラットフォーム ツールセットを追加します。
 
-新しいツールセット、たとえば、"MyToolset"既存の Win32 プラットフォームを追加するには、作成、 *MyToolset*の下のフォルダー `$(VCTargetsPath)` *\\プラットフォーム\\Win32\\PlatformToolsets\\*、作成と*Toolset.props*と*Toolset.targets*内のファイル。
+新しいツールセット、たとえば、"MyToolset"既存の Win32 プラットフォームを追加するには、作成、 *MyToolset*の下のフォルダー `$(VCTargetsPath)` *\\プラットフォーム\\Win32\\PlatformToolsets\\* 、作成と*Toolset.props*と*Toolset.targets*内のファイル。
 
 下には、各フォルダー名*PlatformToolsets*に表示されます、**プロジェクトのプロパティ**として、使用可能なダイアログ**プラットフォーム ツールセット**指定されたプラットフォームの次のように。
 
@@ -69,7 +82,7 @@ Visual C プロジェクト システムでは、.vcxproj ファイルを使用�
 
 ### <a name="add-a-new-platform"></a>新しいプラットフォームを追加します。
 
-、たとえば、"MyPlatform"と、新しいプラットフォームを追加するには作成、 *MyPlatform*の下のフォルダー `$(VCTargetsPath)` *\\プラットフォーム\\*、作成と*Platform.default.props*、 *Platform.props*、および*Platform.targets*内のファイル。 作成することも、 `$(VCTargetsPath)` *\\プラットフォーム\\*<strong><em>MyPlatform</em></strong>*\\PlatformToolsets\\*フォルダー、少なくとも 1 つのツールセットを作成します。
+、たとえば、"MyPlatform"と、新しいプラットフォームを追加するには作成、 *MyPlatform*の下のフォルダー `$(VCTargetsPath)` *\\プラットフォーム\\* 、作成と*Platform.default.props*、 *Platform.props*、および*Platform.targets*内のファイル。 作成することも、 `$(VCTargetsPath)` *\\プラットフォーム\\* <strong><em>MyPlatform</em></strong> *\\PlatformToolsets\\* フォルダー、少なくとも 1 つのツールセットを作成します。
 
 下にあるすべてのフォルダー名、*プラットフォーム*フォルダーごとに`$(ApplicationType)`と`$(ApplicationTypeRevision)`として利用可能な IDE に表示されます**プラットフォーム**プロジェクトを選択します。
 
@@ -77,7 +90,7 @@ Visual C プロジェクト システムでは、.vcxproj ファイルを使用�
 
 ### <a name="add-a-new-application-type"></a>新しいアプリケーションの種類を追加します。
 
-新しいアプリケーションの種類を追加するには、作成、 *MyApplicationType*の下のフォルダー `$(VCTargetsPath)` *\\アプリケーションの種類\\*を作成し、 *Defaults.props*ファイル。 少なくとも 1 つのリビジョンは、アプリケーションの種類に必要なこれも作成、 `$(VCTargetsPath)` *\\アプリケーションの種類\\MyApplicationType\\1.0*フォルダーを作成し、 *Defaults.props*ファイル。 作成する必要があります、 `$(VCTargetsPath)`  *\\ApplicationType\\MyApplicationType\\1.0\\プラットフォーム*フォルダーには少なくとも 1 つのプラットフォームを作成します。
+新しいアプリケーションの種類を追加するには、作成、 *MyApplicationType*の下のフォルダー `$(VCTargetsPath)` *\\アプリケーションの種類\\* を作成し、 *Defaults.props*ファイル。 少なくとも 1 つのリビジョンは、アプリケーションの種類に必要なこれも作成、 `$(VCTargetsPath)` *\\アプリケーションの種類\\MyApplicationType\\1.0*フォルダーを作成し、 *Defaults.props*ファイル。 作成する必要があります、 `$(VCTargetsPath)`  *\\ApplicationType\\MyApplicationType\\1.0\\プラットフォーム*フォルダーには少なくとも 1 つのプラットフォームを作成します。
 
 `$(ApplicationType)` `$(ApplicationTypeRevision)`ユーザー インターフェイスでプロパティは表示されません。 プロジェクト テンプレートで定義されていて、プロジェクトの作成後に変更することはできません。
 
@@ -85,29 +98,50 @@ Visual C プロジェクト システムでは、.vcxproj ファイルを使用�
 
 Microsoft C のプロパティとターゲット ファイルのインポートの簡略化されたツリーは、ようになります。
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props*&nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*既定*\\\*.*props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*アプリケーションの種類*\\ `$(ApplicationType)`\\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*アプリケーションの種類*\\`$(ApplicationType)` \\ `$(ApplicationTypeRevision)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)`\\*アプリケーションの種類*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*プラットフォーム*\\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*ImportAfter*\\*既定*\\\*.*プロパティ*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*既定*\\\*.*プロパティ* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*アプリケーションの種類*\\`$(ApplicationType)`\\*Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*アプリケーションの種類*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*アプリケーションの種類*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*プラットフォーム*\\ `$(Platform)` \\ *Platform.default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*既定*\\\*.*プロパティ*
 
 Windows デスクトップ プロジェクトを定義しない`$(ApplicationType)`のみをインポートするため、
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props*&nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*既定*\\\*.*props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*プラットフォーム*\\ `$(Platform)` \\*Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter* \\ *既定の*\\\*.*プロパティ*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*既定*\\\*.*プロパティ* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*プラットフォーム*\\`$(Platform)`\\*Platform.default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*既定*\\\*.*プロパティ*
 
 使用して、`$(_PlatformFolder)`を保持するプロパティ、`$(Platform)`プラットフォーム フォルダーの場所。 このプロパティは、します。
 
-`$(VCTargetsPath)`\\*プラットフォーム*\\`$(Platform)`
+> `$(VCTargetsPath)`\\*プラットフォーム*\\`$(Platform)`
 
 Windows デスクトップ アプリ、および
 
-`$(VCTargetsPath)`\\*アプリケーションの種類*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*プラットフォーム*\\`$(Platform)`
+> `$(VCTargetsPath)`\\*アプリケーションの種類*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*プラットフォーム*\\`$(Platform)`
 
 その他すべての
 
 プロパティ ファイルは、この順序でインポートされます。
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.props* &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportBefore*\\\*.*props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ *</c152>ImportAfter<spanclass="notranslate">*\\\*.*プロパティ</span>*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*.*プロパティ* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*.*プロパティ*
 
 ターゲット ファイルは、この順序でインポートされます。
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.targets* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Current.targets* &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.targets* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c102><spanclass="notranslate">&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*.*ターゲット* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *PlatformToolsets* \\ `$(PlatformToolset)` \\ *Toolset.target* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportAfter*\\\*.*ターゲット</span>*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Current.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*.*ターゲット* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.target* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*.*ターゲット*
 
 いくつかのツールセットの既定のプロパティを定義する必要がある場合は、適切な ImportBefore および ImportAfter フォルダーにファイルを追加できます。
 
@@ -119,13 +153,13 @@ Windows デスクトップ アプリ、および
 
 - `$(VCTargetsPath)`\\*Microsoft.CppCommon.targets*
 
-   このファイルは、ネイティブ ビルド プロセスの主要な部分を定義しもインポートします。
+  このファイルは、ネイティブ ビルド プロセスの主要な部分を定義しもインポートします。
 
-   - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
+  - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
 
-   - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
+  - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
 
-   - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
+  - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
 
 - `$(VCTargetsPath)`\\*Microsoft.Cpp.Common.props*
 
@@ -290,7 +324,7 @@ MSBuild では、読み取りと書き込み .tlog ファイル。 これらの�
 
 *読み取り*.tlog ファイル。 (\*. read.\*します。tlog) ソース ファイルとその依存関係に関する情報が含まれます。
 
-カレット (**^**)、行の先頭に 1 つまたは複数のソースを示します。 同じ依存関係を共有するソースは、縦棒で区切られます (**\|**)。
+カレット ( **^** )、行の先頭に 1 つまたは複数のソースを示します。 同じ依存関係を共有するソースは、縦棒で区切られます ( **\|** )。
 
 依存関係ファイルは、ソースは、それぞれ独自の行の後に一覧表示されます。 すべてのファイル名は、完全なパスです。
 
@@ -315,7 +349,7 @@ F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\CLASS1.H
 
 *書き込み*.tlog (\*.write。\*します。tlog) ファイルは、ソースと出力を接続します。
 
-カレット (**^**)、行の先頭に 1 つまたは複数のソースを示します。 複数のソースは、縦棒で区切られます (**\|**)。
+カレット ( **^** )、行の先頭に 1 つまたは複数のソースを示します。 複数のソースは、縦棒で区切られます ( **\|** )。
 
 ソースからビルドされた出力ファイルが、ソースは、それぞれ独自の行の後に表示されます。 すべてのファイル名は、完全なパスである必要があります。
 
@@ -436,7 +470,7 @@ Visual C プロジェクト システムがに基づいて、 [VS プロジェ�
 
 CPS は、コンテキストの種類の他の値をサポートしていますが、Visual C プロジェクトで使用されていません。
 
-ルールは、1 つ以上のコンテキストで表示するか場合、は、セミコロンを使用して (**;**) を次に示すようにコンテキストの値を区切ります。
+ルールは、1 つ以上のコンテキストで表示するか場合、は、セミコロンを使用して ( **;** ) を次に示すようにコンテキストの値を区切ります。
 
 ```xml
 <PropertyPageSchema Include="$(MyFolder)\MyRule.xml">
@@ -554,7 +588,7 @@ Visual Studio でデバッグ サービスでは、デバッグ エンジンの�
 
 1. プロパティ`_UpgradePlatformToolsetFor_<safe_toolset_name>`現在のツールセットが定義されていると、その値が現在のツールセットを等しくします。
 
-   これらのプロパティ名で *\<safe_toolset_name >* アンダー スコアに置き換え英数字以外のすべての文字とツールセットの名前を表します (**\_**)。
+   これらのプロパティ名で *\<safe_toolset_name >* アンダー スコアに置き換え英数字以外のすべての文字とツールセットの名前を表します ( **\_** )。
 
 含まれているプロジェクトをアップグレードするには、*ソリューションの再ターゲット*します。 詳細については、次を参照してください。 [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2)します。
 
