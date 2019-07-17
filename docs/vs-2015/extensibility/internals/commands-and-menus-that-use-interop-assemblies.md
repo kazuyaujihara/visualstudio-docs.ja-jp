@@ -14,11 +14,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ad6b324953914df7103d0dec7371199e3cbbd937
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195051"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>相互運用機能アセンブリを使用するコマンドとメニュー
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "58973414"
  VSPackage がコマンド ハンドラーを提供することを IDE に通知するために必要なレジストリ エントリについて説明します。  
   
 ## <a name="related-sections"></a>関連項目  
- [利用可能性](../../extensibility/internals/command-availability.md)  
+ [可用性](../../extensibility/internals/command-availability.md)  
  VSPackage のコマンドに利用をどのようなオブジェクトには、それらは処理を決定する、IDE で使用される条件について説明します。  
   
  [VSPackage でユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  

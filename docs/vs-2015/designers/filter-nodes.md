@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 32b25b1febea59cc8ab4bc668196e60e7ccf5004
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205333"
 ---
 # <a name="filter-nodes"></a>フィルター ノード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Shader Designer では、フィルター ノードは入力 (色やテクスチ�
   
 ## <a name="filter-node-reference"></a>フィルター ノードの参照  
   
-|ノード|説明|プロパティ|  
+|ノード|詳細|Properties|  
 |----------|-------------|----------------|  
 |**ぼかし**|ガウス関数を使用して、テクスチャのピクセルをぼかします。<br /><br /> テクスチャ内の色の詳細やノイズを軽減するために使用できます。<br /><br /> **入力:**<br /><br /> `UV`: `float2`<br /> テストするテクセルの座標。<br /><br /> **出力:**<br /><br /> `Output`: `float4`<br /> ぼかした色の値。|**テクスチャ**<br /> ぼかし適用時に使用されるサンプラーに関連付けられているテクスチャ レジスターです。|  
 |**再度を下げる**|指定した色の色の量を減らします。<br /><br /> 色を削除すると、色の値はグレースケール相当に近づきます。<br /><br /> **入力:**<br /><br /> `RGB`: `float3`<br /> 彩度を下げる色。<br /><br /> `Percent`: `float`<br /> 削除する色の割合。範囲 [0, 1] の正規化された値として表現されます。<br /><br /> **出力:**<br /><br /> `Output`: `float3`<br /> 再度が下げられた色。|**輝度**<br /> 赤、緑、青の色要素に対する重みです。|  

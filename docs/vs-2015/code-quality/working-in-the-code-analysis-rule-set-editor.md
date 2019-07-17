@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201134"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>コード分析規則セット エディターでの作業
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60072254"
 |---------------------|-----------------|  
 |**すべて展開**|すべてのグループの規則を示します。|  
 |**すべて折りたたむ**|すべてのグループ内のルールを非表示にします。|  
-|**Group By**|規則のグループ化するフィールドを指定します。 をクリックして**\<なし >** グループのないルールが表示されます。|  
+|**Group By**|規則のグループ化するフィールドを指定します。 をクリックして **\<なし >** グループのないルールが表示されます。|  
 |**列のオプション**|表示する規則のフィールドを指定します。|  
 |**現在のソリューションには適用されませんを非表示にするルール**|ソリューションと同じ対象の型のないルールの表示と非表示を切り替えます。|  
 |**コード分析エラーを生成できる規則を表示**|エラー時のアクションが割り当てられている規則の表示と非表示を切り替えます。|  

@@ -11,13 +11,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f36e8dd780788d241e3c286b1bbbe581311b143
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204089"
 ---
-# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>方法: テキスト バッファー イベント、レガシ API の登録します。
+# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>方法: レガシ API でテキスト バッファー イベントを登録する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 テキスト バッファーを従来の API を使用してアクセスする場合は、テキスト バッファー イベント、次の手順で示すように登録してください。  

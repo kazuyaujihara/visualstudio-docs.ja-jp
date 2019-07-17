@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182860"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML モデルと図の拡張
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60054613"
   
  詳細については、このビデオをご覧ください:![ビデオへのリンク](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How Do I シリーズ。UML ツールと機能拡張](http://go.microsoft.com/fwlink/?LinkId=214467)します。  
   
-## <a name="Requirements"></a> 要件  
+## <a name="Requirements"></a> 必要条件  
   
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   

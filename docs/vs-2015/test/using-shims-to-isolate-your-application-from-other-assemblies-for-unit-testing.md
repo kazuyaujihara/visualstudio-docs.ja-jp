@@ -9,11 +9,11 @@ caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ddbcac3073dec1e7f21d381d30978589f1cdd792
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185742"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>shim を使用して単体テストでアプリケーションを他のアセンブリから分離する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ using (ShimsContext.Create()
   
 2. 作成する shim に対応するクラス定義が含まれているアセンブリを選択します。 たとえば、shim が DateTime の場合は、System.dll を選択します。  
   
-3. ショートカット メニューで、**[Fakes アセンブリに追加]** を選択します。  
+3. ショートカット メニューで、 **[Fakes アセンブリに追加]** を選択します。  
   
 ### <a name="ShimsContext"></a> ShimsContext を使用する  
  単体テスト フレームワークで shim 型を使用する場合は、shim の有効期間を制御するために、テスト コードを `ShimsContext` でラップする必要があります。 そうしなかった場合、shim は AppDomain のシャットダウンまで存続します。 `ShimsContext` を作成するための最も簡単な方法は、次のコードに示すように、静的な `Create()` メソッドを使用することです。  
@@ -91,7 +91,7 @@ public void Y2kCheckerTest() {
  各 shim コンテキストを適切に破棄することが重要です。 原則としては、登録した shim を適切に消去するために、常に `using` ステートメント内で `ShimsContext.Create` を呼び出します。 たとえば、`DateTime.Now` メソッドを常に 2000 年 1 月 1 日を返すデリゲートに置き換えるテスト メソッドのために shim を登録する場合があります。 テスト メソッド内で登録済み shim を消去し忘れた場合、テスト実行の残りの部分では、DateTime.Now 値として常に 2000 年 1 月 1 日が返されます。 これは、予想外で、混乱を招く可能性があります。  
   
 ### <a name="WriteShims"></a> shim を使用してテストを作成する  
- テスト コード内で、フェイク メソッドに *detour* を挿入します。 例:  
+ テスト コード内で、フェイク メソッドに *detour* を挿入します。 例えば:  
   
 ```csharp  
 [TestClass]  

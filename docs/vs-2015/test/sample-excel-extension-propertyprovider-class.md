@@ -1,4 +1,4 @@
-﻿---
+---
 title: Excel 拡張子のサンプル:PropertyProvider クラス |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -9,11 +9,11 @@ caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d38b430dd88eb1a732c4e4ca335a0a5bb057b1f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189447"
 ---
 # <a name="sample-excel-extension-propertyprovider-class"></a>Excel 拡張子のサンプル:PropertyProvider クラス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "54801251"
 ## <a name="code-generation-customization-methods"></a>コード生成カスタマイズ メソッド  
  この拡張機能でこれらのメソッドは実装されていません。 そのため、`null` が返されるか、<xref:System.NotImplementedException> がスローされます。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard>   
  [コード化された UI テストと操作の記録を拡張して Microsoft Excel をサポート](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
