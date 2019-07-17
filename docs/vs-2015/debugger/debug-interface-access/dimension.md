@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1b760d6a7808154b8daabe43d4cf6399c3b91977
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164338"
 ---
 # <a name="dimension"></a>ディメンション
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 各 FORTRAN の配列がで識別されるディメンションを`SymTagDimension`シンボル。  
   
-## <a name="properties"></a>プロパティ  
+## <a name="properties"></a>Properties  
  次の表では、この記号の型の有効な追加のプロパティを示します。  
   
 |プロパティ|データの種類|説明|  

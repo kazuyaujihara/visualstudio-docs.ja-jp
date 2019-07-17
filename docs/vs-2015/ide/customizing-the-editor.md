@@ -13,27 +13,27 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 54e2e44650179cafb4fd4cc9169ac27810bbdf91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183343"
 ---
 # <a name="customizing-the-editor"></a>エディターのカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-一般のエディターまたは特定言語のエディターについて、オプションを変更することにより、書式設定、タブ、フォント、色、IntelliSense などの多くの機能をカスタマイズすることができます。 これらのオプションについて詳しくは、「[[テキスト エディター] ([オプション] ダイアログ ボックス)](../ide/reference/text-editor-options-dialog-box.md)」をご覧いただくか、**[QuickLaunch]** に「`Editor`」と入力してください。 また、エディター ウィンドウの表示形式を変更することもできます。  
+一般のエディターまたは特定言語のエディターについて、オプションを変更することにより、書式設定、タブ、フォント、色、IntelliSense などの多くの機能をカスタマイズすることができます。 これらのオプションについて詳しくは、「[[テキスト エディター] ([オプション] ダイアログ ボックス)](../ide/reference/text-editor-options-dialog-box.md)」をご覧いただくか、 **[QuickLaunch]** に「`Editor`」と入力してください。 また、エディター ウィンドウの表示形式を変更することもできます。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
  以下のトピックでは、テキスト エディターおよびコード エディターの外観と動作を調整する方法について説明しています。  
   
- [方法 : エディター内のテキストの大文字と小文字を変更する](../ide/how-to-change-text-case-in-the-editor.md)  
+ [方法: エディター内のテキストの大文字と小文字を変更する](../ide/how-to-change-text-case-in-the-editor.md)  
  コード内でテキストの大文字と小文字を変更する方法について説明します。  
   
- [方法 : エディター ウィンドウを管理する](../ide/how-to-manage-editor-windows.md)  
+ [方法: エディター ウィンドウを管理する](../ide/how-to-manage-editor-windows.md)  
  エディター ウィンドウの操作方法について説明します。  
   
- [方法 : エディター モードを管理する](../ide/how-to-manage-editor-modes.md)  
+ [方法: エディター モードを管理する](../ide/how-to-manage-editor-modes.md)  
  全画面表示および仮想空白モードの使用方法について説明します。  
   
 ## <a name="see-also"></a>関連項目  

@@ -11,11 +11,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 38e646f032a12de48bbfb55b089462c7f8a4dd26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152794"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>例外処理 (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60094841"
   
     - 場合は S_OK を返すと、メソッドを呼び出す[IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)します。  
   
-         - または -  
+         \- または -  
   
          メソッドは、プログラムは S_FALSE を返す場合、デバッグ中は例外を処理するチャンスをもう 1 を付与します。  
   

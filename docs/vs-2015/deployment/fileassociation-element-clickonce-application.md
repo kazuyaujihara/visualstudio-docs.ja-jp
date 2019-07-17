@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b31ac34627b244cb61b6fdb5c6ca214675ec045
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150842"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;要素 (ClickOnce アプリケーション)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "58974160"
 ```  
   
 ## <a name="elements-and-attributes"></a>要素と属性  
- `fileAssociation` 要素は省略可能です。 要素には、次の属性があります。  
+           `fileAssociation` 要素は省略できます。 要素には、次の属性があります。  
   
 |属性|説明|  
 |---------------|-----------------|  

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c30b0a190d2a2abfed56004e167f6ee5ef5ecf97
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195354"
 ---
 # <a name="draw-shapes-and-paths"></a>図形とパスの描画
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ XAML デザイナーでは、 *図形* とはその名の示すとおりのも�
   
  図形とパスではベクター グラフィックスを使用するため、高解像度表示に対応して拡大縮小できます。 ベクター グラフィックスの詳細については、 [ベクター グラフィックスに関するビデオ](https://www.youtube.com/watch?v=MoCSwF0n-io) や [ベクター グラフィックスに関するページ](http://www.webopedia.com/TERM/V/vector_graphics.html)を参照してください。  
   
- **このトピックの内容**  
+ **このトピックの内容:**  
   
 - [図形の描画](#Shape)  
   
@@ -89,7 +89,7 @@ XAML デザイナーでは、 *図形* とはその名の示すとおりのも�
 ### <a name="remove-a-point-in-a-path"></a>パス内のポイントの削除  
  **[選択]** ツール ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") と **[ペン]** ツール ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") を使います。  
   
- **[選択]** ツール ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") を使ってパスを選びます。 次に、**[ペン]** ツール ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") を使って、削除するポイントをクリックします。  
+ **[選択]** ツール ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") を使ってパスを選びます。 次に、 **[ペン]** ツール ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") を使って、削除するポイントをクリックします。  
   
 ### <a name="add-a-point-to-a-path"></a>パスへのポイントの追加  
  **[選択]** ツール ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") と **[ペン]** ツール ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") を使います。  
@@ -99,7 +99,7 @@ XAML デザイナーでは、 *図形* とはその名の示すとおりのも�
 ## <a name="Convert"></a> 図形のパスへの変換  
  パスを変更するのと同じ方法で図形を変更するには、図形をパスに変換します。  
   
- **短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [パスの作業します。図形をパスに変換する](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。  
+ **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [パスの作業します。図形をパスに変換する](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。  
   
 ## <a name="Combine"></a> パスの結合  
  パスと図形を結合して 1 つのパスにすることができます。  
@@ -112,7 +112,7 @@ XAML デザイナーでは、 *図形* とはその名の示すとおりのも�
 |![](../designers/media/b1-2.png "B1_2")|合算|![](../designers/media/b1-5.png "B1_5")|重複部分を除外|  
 |![](../designers/media/b1-3.png "B1_3")|除算|![](../designers/media/b1-6.png "B1_6")|減算|  
   
- **短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [パスの作業します。パスを結合する](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。  
+ **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [パスの作業します。パスを結合する](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。  
   
 ## <a name="Compound"></a> 複合パスの作成  
  複合パスを作成するときは、パスの交差している部分が減算されます。複合後のパスのビジュアル プロパティは、最背面にあったパスと同じになります。  
@@ -121,14 +121,14 @@ XAML デザイナーでは、 *図形* とはその名の示すとおりのも�
   
  ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8de5-b10d28f08a84")  
   
- **短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [パスの作業します。複合パスを作成する](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。  
+ **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [パスの作業します。複合パスを作成する](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。  
   
 ## <a name="Clipping"></a> クリッピング パスの作成  
  クリッピング パスは、別のオブジェクトに適用するパスまたは図形です。クリッピング パスの外側のオブジェクトがマスクされて非表示になります。  
   
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  
   
- **短いビデオを見る:**![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [パスの作業します。クリッピング パスを作成する](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。  
+ **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [パスの作業します。クリッピング パスを作成する](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。  
   
 ## <a name="see-also"></a>関連項目  
  [Blend for Visual Studio を使用して UI を作成する](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
