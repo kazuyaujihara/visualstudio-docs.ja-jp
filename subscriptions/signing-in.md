@@ -6,13 +6,12 @@ manager: lank
 ms.date: 05/14/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションにサインインする方法
-searchscope: VS Subscription
-ms.openlocfilehash: d010a908d28fd6f7be86cee27fa86f0ac24471d6
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: acfd04dfdbbca78d9f139a507ddb9f34ae8f9475
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805293"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784930"
 ---
 # <a name="signing-in-to-your-visual-studio-subscription"></a>Visual Studio サブスクリプションにサインインする
 
@@ -66,8 +65,8 @@ Visual Studio サブスクリプションにサインインする手順は、ご
 
 3. **[続行]** をクリックします。
 4. 決定ページにリダイレクトされます。
-    - Azure Active Directory (AAD) テナントに関連付けられた "職場または学校" アカウントにサブスクリプションが割り当てられている場合は、**[Work or school account]\(職場または学校アカウント\)** を選びます。
-    - サブスクリプションが "会社" のメール アドレスに関連付けられている場合でも、"個人" の Microsoft アカウント (MSA) にも変換されている場合は、**[Personal]\(個人\)** を選択します。
+    - Azure Active Directory (AAD) テナントに関連付けられた "職場または学校" アカウントにサブスクリプションが割り当てられている場合は、 **[Work or school account]\(職場または学校アカウント\)** を選びます。
+    - サブスクリプションが "会社" のメール アドレスに関連付けられている場合でも、"個人" の Microsoft アカウント (MSA) にも変換されている場合は、 **[Personal]\(個人\)** を選択します。
 
         > [!NOTE]
         > 過去に Visual Studio サブスクリプション (旧 MSDN) を使用していた多くのサブスクライバーがこれに当てはまります。
@@ -117,7 +116,7 @@ A: セキュリティ上の制約により、Microsoft は GitHub によるサ�
 A: アカウント エイリアス (メール アドレス、電話番号、Skype 名) でサインインするときは常に、アカウントに対するあらゆるサインイン方法が提示されます。 そこに GitHub が表示されない場合、それがまだ設定されていません。
 
 #### <a name="q--how-can-i-unlink-my-microsoft-and-github-accounts"></a>Q:Microsoft アカウントと GitHub アカウントの関連付けを解除する方法はありますか? 
-A: account.microsoft.com の [[セキュリティ]](https://account.microsoft.com/security) タブに移動し、**[More security options]\(その他のセキュリティ オプション\)** をクリックして GitHub アカウントの関連付けを解除します。 GitHub アカウントの関連付けを解除すると、サインイン方法としてそのアカウントが削除され、Visual Studio のあらゆる GitHub リポジトリへのアクセスが取り消されます。 他の Microsoft 製品で GitHub アカウントへのアクセスが別途要求されていることがあります。そのため、ここでアクセスを取り消しても全製品においてアクセスが取り消されることはありません。 GitHub プロファイルの [[アプリケーションのアクセス許可]](https://github.com/settings/applications) ページに進み、そこに一覧表示されているアプリから同意を取り消します。
+A: account.microsoft.com の [[セキュリティ]](https://account.microsoft.com/security) タブに移動し、 **[More security options]\(その他のセキュリティ オプション\)** をクリックして GitHub アカウントの関連付けを解除します。 GitHub アカウントの関連付けを解除すると、サインイン方法としてそのアカウントが削除され、Visual Studio のあらゆる GitHub リポジトリへのアクセスが取り消されます。 他の Microsoft 製品で GitHub アカウントへのアクセスが別途要求されていることがあります。そのため、ここでアクセスを取り消しても全製品においてアクセスが取り消されることはありません。 GitHub プロファイルの [[アプリケーションのアクセス許可]](https://github.com/settings/applications) ページに進み、そこに一覧表示されているアプリから同意を取り消します。
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>Q:GitHub アカウントでサインインを試していますが、Microsoft ID が既に登録されているので代わりにそれを使用するように促されます。  どうしてでしょうか。
-A: GitHub アカウントに Azure Active Directory のメール アドレスを登録している場合、Azure にアクセスし、GitHub コードで CI パイプラインを実行できる Microsoft ID が既に与えられています。 そのアカウントを使用することで、Azure のリソースとビルド パイプラインが組織の境界内に留まります。 しかしながら、個人的な作業をしている場合、常にそれにアクセスできるよう、GitHub アカウントに個人のメール アドレスを登録することをお勧めしています。 登録後、もう一度サインインを試し、職場または学校のアカウントにサインインするように求められたら、**[別のメール アドレスを使用]** を選択します。 これで、その個人メール アドレスを使用して新しい Microsoft アカウントを作成できます。
+A: GitHub アカウントに Azure Active Directory のメール アドレスを登録している場合、Azure にアクセスし、GitHub コードで CI パイプラインを実行できる Microsoft ID が既に与えられています。 そのアカウントを使用することで、Azure のリソースとビルド パイプラインが組織の境界内に留まります。 しかしながら、個人的な作業をしている場合、常にそれにアクセスできるよう、GitHub アカウントに個人のメール アドレスを登録することをお勧めしています。 登録後、もう一度サインインを試し、職場または学校のアカウントにサインインするように求められたら、 **[別のメール アドレスを使用]** を選択します。 これで、その個人メール アドレスを使用して新しい Microsoft アカウントを作成できます。

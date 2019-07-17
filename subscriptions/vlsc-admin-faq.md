@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/13/2018
 ms.topic: conceptual
 description: ボリューム ライセンス サービス センター管理の移行に関する FAQ
-searchscope: VS Subscription
-ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34c5d2d287507699ebc47bdd7e4716838c408d07
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427976"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784746"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio サブスクリプション管理の移行
 
@@ -46,9 +45,9 @@ ms.locfileid: "62427976"
 プロセスの手順については、以下を参照してください。
 1. **PCN を検索してサインインする:**
 
-    a.  電子メールでは、主要ご担当者様および連絡先ご担当者様に、専用のリンク、パブリック カスタマー番号 (PCN) の最後の 3 桁が提供されます。*
+    a. 電子メールでは、主要ご担当者様および連絡先ご担当者様に、専用のリンク、パブリック カスタマー番号 (PCN) の最後の 3 桁が提供されます。*
 
-    b.  PCN 全体を取得するには、主要連絡先が VLSC にサインインする必要があります (PCN を見つけるための手順が以下に記載されています)。
+    b. PCN 全体を取得するには、主要連絡先が VLSC にサインインする必要があります (PCN を見つけるための手順が以下に記載されています)。
 
     c. PCN を入手した後に、サインインするよう要求する一意のリンクを選択する必要があります。 組織が Azure AD にない場合は、職場または学校のアカウント (組織が Azure AD である場合) または Microsoft アカウント (MSA) のいずれかを使用してサインインできます。
 
@@ -75,10 +74,10 @@ ms.locfileid: "62427976"
 お客様の組織が移行され、新しいポータルで管理する準備が完了したという電子メールが Visual Studio サブスクリプションから送信されるまでは、引き続き VLSC を介してサブスクリプションを管理してください。
 
 ### <a name="where-can-i-locate-my-organizations-public-customer-number-pcn-or-authorization-number"></a>組織のパブリック カスタマー番号 (PCN) または承認番号はどこで確認できますか?
-[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) にサインインして、**[サブスクリプション]** > **[Visual Studio サブスクリプション]** に移動します。 PCN は **[Agreement/Public Customer Number Results]\(契約/パブリック カスタマー番号の結果\)** の下に表示されます。 PCN を確認する手順については、こちらの[ヘルプ記事](find-pcn.md)を参照してください。
+[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) にサインインして、 **[サブスクリプション]**  >  **[Visual Studio サブスクリプション]** に移動します。 PCN は **[Agreement/Public Customer Number Results]\(契約/パブリック カスタマー番号の結果\)** の下に表示されます。 PCN を確認する手順については、こちらの[ヘルプ記事](find-pcn.md)を参照してください。
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>主要連絡先または通知連絡先が誰かを確認するにはどうすればよいですか?
-[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) にサインインして、**[ライセンス] > [関係サマリー]** に移動し、**[ライセンス ID] > [連絡先]** の順に選択します。 主要連絡先または通知連絡先を確認する手順については、こちらの[ヘルプ記事](find-primary-contact.md)を参照してください。
+[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) にサインインして、 **[ライセンス] > [関係サマリー]** に移動し、 **[ライセンス ID] > [連絡先]** の順に選択します。 主要連絡先または通知連絡先を確認する手順については、こちらの[ヘルプ記事](find-primary-contact.md)を参照してください。
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>主要連絡先または通知連絡先が不在である、退職した、またはオンボードを完了できなくなった場合はどうすればよいですか?
 [サポートに連絡し](https://visualstudio.microsoft.com/subscriptions/support/#talktous)、VLSC でサブスクリプションの管理に使用していたメール アドレスを伝えていただく必要があります。 確認が完了すると、サポート担当者がオンボード プロセスのお手伝いできるようになります。

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれている Microsoft 製品を見つけてダウンロードする方法を説明します。
-searchscope: VS Subscription
-ms.openlocfilehash: b0808da563ca37b675bb5f79841db25c40ecf5f7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5124217334418ea68b5dee6cb222e92e509ee5f5
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697781"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784834"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでサブスクライバー ダウンロードを使用します。
 サブスクライバー特典の一環として、広い範囲のソフトウェアのダウンロードにアクセスできます。
@@ -46,7 +45,7 @@ ms.locfileid: "65697781"
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2017 のダウンロード](_img/subscriber-downloads/vs2017-new-UI.png)
 
-利用可能なドロップダウン メニューを使用して、アーキテクチャ、言語、ファイルの種類を簡単に選択できます。 該当するオプションを選択し、**[ダウンロード]** をクリックして製品のダウンロードを開始します。
+利用可能なドロップダウン メニューを使用して、アーキテクチャ、言語、ファイルの種類を簡単に選択できます。 該当するオプションを選択し、 **[ダウンロード]** をクリックして製品のダウンロードを開始します。
 
 ### <a name="displaying-download-details"></a>ダウンロードの詳細の表示
 
@@ -54,11 +53,11 @@ ms.locfileid: "65697781"
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2017 Pro のダウンロードの詳細](_img/subscriber-downloads/vs2017-pro-details.png)
 
-詳細ウィンドウで、**[キー]** タブをクリックして、プロダクト キーの状態を確認することもできます。
+詳細ウィンドウで、 **[キー]** タブをクリックして、プロダクト キーの状態を確認することもできます。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2017 Pro のプロダクト キー](_img/subscriber-downloads/vs2017-pro-keys.png)
 
 ### <a name="obtaining-product-keys"></a>プロダクト キーの取得
-ダウンロード用プロダクト キーを取得する場合は、**[キーを入手]** というラベルの付いた青いキーをクリックするか、詳細ウィンドウが既に表示されている場合は、**[キー]** タブの **[キーの要求]** をクリックします。
+ダウンロード用プロダクト キーを取得する場合は、 **[キーを入手]** というラベルの付いた青いキーをクリックするか、詳細ウィンドウが既に表示されている場合は、 **[キー]** タブの **[キーの要求]** をクリックします。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2017 Pro のプロダクト キーの要求](_img/subscriber-downloads/vs2017-pro-claim-keys.png)

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/28/2018
 ms.topic: conceptual
 description: クラウド サブスクリプションの管理者を設定する
-searchscope: VS Subscription
-ms.openlocfilehash: 34479c21ec3cb0672b8d2354595c971b062bba56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85371dd77b99fc5013843bb815082cc0f84cff33
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945823"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250691"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Visual Studio クラウド サブスクリプションの管理者を設定する
 
@@ -34,7 +33,7 @@ Visual Studio クラウド サブスクリプションを購入すると、そ�
 
 1. Azure Portal ([portal.azure.com](https://portal.azure.com)) にアクセスします。
 2. Visual Studio クラウド サブスクリプションの購入に使用したアカウントでサインインします。
-3. 左側のナビゲーション ウィンドウで、**[コストの管理と請求]** まで下にスクロールします。
+3. 左側のナビゲーション ウィンドウで、 **[コストの管理と請求]** まで下にスクロールします。
 4. **[個人用サブスクリプション]** リストで、購入に使用した Azure サブスクリプションを選択します。
 5. 左側のナビゲーション ウィンドウのリストの一番上の近くにある **[アクセス制御]** をクリックします。
 6. ページの上部にある **[追加]** タブをクリックします。

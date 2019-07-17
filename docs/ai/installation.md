@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15888341bf3cc7a4e9f4739ed37283e11c5ce75e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548452"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821403"
 ---
 # <a name="installation"></a>インストール
 
@@ -26,7 +26,7 @@ Visual Studio Tools for AI は、64 ビットの Windows オペレーティン�
 
 このツールは、[Visual Studio Marketplace](https://aka.ms/vstoolsforai) または Visual Studio 内からダウンロードしてインストールします。
 
-1. **[ツール]** > **[拡張機能と更新プログラム]** を選択します。
+1. **[ツール]**  >  **[拡張機能と更新プログラム]** を選択します。
 
    ![Visual Studio の拡張機能と更新プログラム メニュー](media/installation/extensions.png)
 
@@ -88,27 +88,27 @@ Python 3.5 が正しくインストールされていることを確認し、端
 
 - **Windows**
 
-    ```cmd
-    C:\Users\test>python -V
-    Python 3.5.4
+  ```cmd
+  C:\Users\test>python -V
+  Python 3.5.4
 
-    C:\Users\test>pip3.5 -V
-    pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+  C:\Users\test>pip3.5 -V
+  pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
 
-    C:\Users\test>python -m pip install -U pip
-    ```
+  C:\Users\test>python -m pip install -U pip
+  ```
 
 - **macOS**
 
-    ```bash
-    MyMac:~ test$ python3.5 -V
-    Python 3.5.4
+  ```bash
+  MyMac:~ test$ python3.5 -V
+  Python 3.5.4
 
-    MyMac:~ test$ pip3.5 -V
-    pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+  MyMac:~ test$ pip3.5 -V
+  pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
 
-    MyMac:~ test$ python3.5 -m pip install -U pip
-    ```
+  MyMac:~ test$ python3.5 -m pip install -U pip
+  ```
 
 ### <a name="python-on-visual-studio"></a>Visual Studio での Python
 
@@ -162,15 +162,15 @@ MXNet をインストールするには、端末で次のコマンドを実行�
 
 - GPU あり
 
-    ```bash
-    pip3.5 install mxnet-cu80==0.12.0
-    ```
+  ```bash
+  pip3.5 install mxnet-cu80==0.12.0
+  ```
 
 - GPU なし
 
-    ```bash
-    pip3.5 install mxnet==0.12.0
-    ```
+  ```bash
+  pip3.5 install mxnet==0.12.0
+  ```
 
 ### <a name="keras"></a>Keras
 
@@ -203,33 +203,33 @@ PyTorch をインストールするには、端末で次のコマンドを実行
 
 - **Windows**
 
-   正式なホイール パッケージはまだありません。 [Anaconda](https://anaconda.org/pytorch/repo?type=all) または[カリフォルニア大学](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch)からサードパーティ製のパッケージをダウンロードできます。
+  正式なホイール パッケージはまだありません。 [Anaconda](https://anaconda.org/pytorch/repo?type=all) または[カリフォルニア大学](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch)からサードパーティ製のパッケージをダウンロードできます。
 
-   - 自分のホーム ディレクトリ (例: *C:\Users\test\pytorch*) に解凍します。
-   - *C:\Users\test\pytorch\Lib\site-packages* を %PYTHONPATH% 環境変数に追加します。
+  - 自分のホーム ディレクトリ (例: *C:\Users\test\pytorch*) に解凍します。
+  - *C:\Users\test\pytorch\Lib\site-packages* を %PYTHONPATH% 環境変数に追加します。
 
-      ```bash
-      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
-      pip3 install torchvision
-      ```
+    ```bash
+    pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+    pip3 install torchvision
+    ```
 
 - **macOS**
 
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
-    ```
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
+  ```
 
-    > [!NOTE]
-    > macOS バイナリは CUDA をサポートしていません。CUDA が必要な場合はソースからインストールします。
+  > [!NOTE]
+  > macOS バイナリは CUDA をサポートしていません。CUDA が必要な場合はソースからインストールします。
 
 - **Linux**
 
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
-    ```
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
+  ```
 
-    > [!NOTE]
-    > この 1 つのパッケージで、GPU と CPU の両方がサポートされます。
+  > [!NOTE]
+  > この 1 つのパッケージで、GPU と CPU の両方がサポートされます。
 
 最後に、Windows 以外には torchvision をインストールします。
 
@@ -239,7 +239,7 @@ pip3.5 install torchvision
 
 ### <a name="chainer"></a>Chainer
 
-[Chainer](https://chainer.org/) は、柔軟性を目指した Python ベースのディープ ラーニング フレームワークです。 **実行による定義アプローチ** (別名:  動的計算グラフ) に基づく自動微分 API と、ニューラル ネットワークを構築してトレーニングするためのオブジェクト指向の高度な API を提供します。
+[Chainer](https://chainer.org/) は、柔軟性を目指した Python ベースのディープ ラーニング フレームワークです。 **実行による定義アプローチ** (別名: 動的計算グラフ) に基づく自動微分 API と、ニューラル ネットワークを構築してトレーニングするためのオブジェクト指向の高度な API を提供します。
 
 CUDA のサポートを有効にするには、[CuPy](https://github.com/cupy/cupy) をインストールします。
 

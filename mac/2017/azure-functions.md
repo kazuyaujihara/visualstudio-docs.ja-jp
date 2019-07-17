@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 8ceee693ee7b20e7045aa8bca4b895a0df383c80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f12a4071a15372da7c71836ae303e40d6858f3f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933605"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824423"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions の概要
 
 Azure Functions を利用すると、クラウドでイベント ドリブンのコード スニペットつまり関数を作成できます。インフラストラクチャを明示的にプロビジョニングまたは管理する必要はありません。 Azure Functions について詳しくは、[Azure Functions のドキュメント](/azure/azure-functions/)をご覧ください。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 Azure Function ツールは **Visual Studio for Mac 7.5** に付属しています。
 
@@ -27,11 +27,11 @@ Azure Function ツールは **Visual Studio for Mac 7.5** に付属していま�
 ## <a name="creating-your-first-azure-functions-project"></a>初めての Azure Functions プロジェクトの作成
 
 1. Visual Studio for Mac で **[ファイル]、[新しいソリューション]** の順に選びます。
-2. [新しいプロジェクト] ダイアログで、**[クラウド] > [全般]** から Azure Functions テンプレートを選び、**[次へ]** をクリックします。
+2. [新しいプロジェクト] ダイアログで、 **[クラウド] > [全般]** から Azure Functions テンプレートを選び、 **[次へ]** をクリックします。
 
     ![Azure Functions のオプションが表示されている [新しいプロジェクト] ダイアログ](media/azure-functions-image1.png)
 
-3. 使用する最初の Azure Functions テンプレートを選択し、関数名を入力し、**[次へ]** をクリックします。
+3. 使用する最初の Azure Functions テンプレートを選択し、関数名を入力し、 **[次へ]** をクリックします。
 
     ![Azure Functions のテンプレートが表示されている [新しいプロジェクト] ダイアログ](media/azure-functions-image2.png)
 
@@ -41,7 +41,7 @@ Azure Function ツールは **Visual Studio for Mac 7.5** に付属していま�
 
     さまざまな種類の Azure Functions テンプレート、および各テンプレートの構成に必要なバインド用のプロパティについては、「[使用可能な関数テンプレート](#available-function-templates)」のセクションを参照してください。 この例では、アクセス権が匿名に設定された Http トリガーを使用しています。
 
-4. パラメーターを設定したら、プロジェクトの場所を選択し、**[作成]** をクリックします。
+4. パラメーターを設定したら、プロジェクトの場所を選択し、 **[作成]** をクリックします。
 
 Visual Studio for Mac によって、既定の関数が含まれる .NET Standard プロジェクトが作成されます。 また、さまざまな **AzureWebJobs** パッケージと、**Newtonsoft.Json** パッケージへの NuGet 参照も含まれます。
 
@@ -77,7 +77,7 @@ Visual Studio for Mac での Azure Functions のサポートを使うと、開�
 
 関数テンプレートを使用すると、最も一般的なトリガーとテンプレートを使って、新しい関数をすばやく作成できます。 別の種類の関数を作成するには、次のようにします。
 
-1. 新しい関数を追加するには、プロジェクト名を右クリックして、**[追加] > [関数の追加]** を選びます。
+1. 新しい関数を追加するには、プロジェクト名を右クリックして、 **[追加] > [関数の追加]** を選びます。
 
     ![新しい関数を追加するコンテキスト アクション](media/azure-functions-addnew.png)
 
@@ -91,20 +91,20 @@ Visual Studio for Mac での Azure Functions のサポートを使うと、開�
 
 ## <a name="publish-to-azure"></a>Azure に発行する
 
-1. プロジェクト名を右クリックし、**[発行]、[Azure に発行する]** の順に選択します。![[Azure に発行する] メニュー オプション](media/azure-functions-image5.png)
+1. プロジェクト名を右クリックし、 **[発行]、[Azure に発行する]** の順に選択します。![[Azure に発行する] メニュー オプション](media/azure-functions-image5.png)
 2. ご自分の Azure アカウントを既に Visual Studio for Mac に接続している場合、利用可能なアプリ サービスの一覧が表示されます。 ログインしていない場合、それを行うよう求められます。
-3. **[Azure App Service に発行する]** ダイアログでは、既存のアプリ サービスを選択するか、**[新規]** をクリックして新しいものを作成することができます。
+3. **[Azure App Service に発行する]** ダイアログでは、既存のアプリ サービスを選択するか、 **[新規]** をクリックして新しいものを作成することができます。
 4. **[新しい App Service を作成する]** ダイアログに設定を入力します。![[Azure に発行する] メニュー オプション](media/azure-functions-image7.png)
 
     |設定  |説明  |
     |---------|---------|
     |**App Service の名前**|新しい関数アプリを識別する、グローバルに一意な名前。|
     |**サブスクリプション**|使用する Azure のサブスクリプション。|
-    |**[リソース グループ](/azure/azure-resource-manager/resource-group-overview)**|関数アプリを作成するリソース グループの名前。 新しいリソース グループを作成するには、**+** を選択します。|
+    |**[リソース グループ](/azure/azure-resource-manager/resource-group-overview)**|関数アプリを作成するリソース グループの名前。 新しいリソース グループを作成するには、 **+** を選択します。|
     |**[サービス プラン](/azure/azure-functions/functions-scale)**|既存のプランを選択するか、カスタム プランを作成します。 ご自分の近くのリージョン、またはご使用の関数がアクセスする他のサービスに近い場所を選択します。|
 
     > [!CAUTION]
-    > Visual Studio for Mac のバージョン 7.6 には、**[価格]** を **[消費]** に設定してカスタム サービス プランを作成すると、プロビジョニング エラーで発行が失敗してしまうバグがあります。 これは次のサービス リリースで修正されます。
+    > Visual Studio for Mac のバージョン 7.6 には、 **[価格]** を **[消費]** に設定してカスタム サービス プランを作成すると、プロビジョニング エラーで発行が失敗してしまうバグがあります。 これは次のサービス リリースで修正されます。
 
 5. **[次へ]** をクリックし、ストレージ アカウントを作成します。 Functions の共通言語ランタイムでは、Azure ストレージ アカウントが必要です。 **[カスタム]** をクリックし、汎用のストレージ アカウントを作成するか、既存のものを使用します。
 
@@ -140,14 +140,14 @@ local.settings.json に追加したすべての設定は、Azure の関数アプ
 ## <a name="available-function-templates"></a>使用可能な関数テンプレート
 
 - **GitHub トリガー** – GitHub リポジトリで発生するイベントに応答します。 詳しくは、[GitHub についての Azure Functions の記事](/azure/azure-functions/functions-create-github-webhook-triggered-function)をご覧ください。
-    - GitHub コメンター – この関数は、問題または pull request の GitHub webhook を受信してコメントを追加すると実行されます。
-    - GitHub WebHook – この関数は、GitHub webhook を受信すると実行されます。
+  - GitHub コメンター – この関数は、問題または pull request の GitHub webhook を受信してコメントを追加すると実行されます。
+  - GitHub WebHook – この関数は、GitHub webhook を受信すると実行されます。
 
 - **HTTP** – HTTP 要求を使って、コードの実行をトリガーします。 次の HTTP トリガーに対する明示的なテンプレートがあります。
-    - HTTP トリガー
-    - Http GET CRUD
-    - Http POST CRUD
-    - パラメーター付き HTTP トリガー
+  - HTTP トリガー
+  - Http GET CRUD
+  - Http POST CRUD
+  - パラメーター付き HTTP トリガー
 
 - **タイマー**: 定義されているスケジュールに基づいて、クリーンアップまたは他のバッチ タスクを実行します。 このテンプレートは名前とスケジュールの 2 つのフィールドを受け取ります。6 フィールドの CRON 式です。 詳しくは、[タイマーについての Azure Functions の記事](/azure/azure-functions/functions-create-scheduled-function)をご覧ください。
 

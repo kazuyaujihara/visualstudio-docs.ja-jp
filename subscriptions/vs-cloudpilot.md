@@ -6,13 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションで使用可能な CloudPilot 特典について説明します
-searchscope: VS Subscription
-ms.openlocfilehash: 38b857ee9ba385f3b7be12be725712f338b248f7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 66de81b30d8eeb315353aa0b6aa37e75c50a19d6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032580"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825918"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CloudPilot 特典
 
@@ -76,9 +75,9 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
 
 ## <a name="support-resources"></a>サポート リソース
 - CloudPilot の使用に関するヘルプが必要ですか。  以下のリソースを確認してください。
-    - UnifyCloud 製品に関するご質問は、[UnifyCloud にお問い合わせください](https://www.unifycloud.com/contacts/)。
-    - [CloudPilot ユーザー マニュアル](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
-    - [サポート要求を送信する](https://support.datacamp.com/hc/requests/new)
+  - UnifyCloud 製品に関するご質問は、[UnifyCloud にお問い合わせください](https://www.unifycloud.com/contacts/)。
+  - [CloudPilot ユーザー マニュアル](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
+  - [サポート要求を送信する](https://support.datacamp.com/hc/requests/new)
 
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

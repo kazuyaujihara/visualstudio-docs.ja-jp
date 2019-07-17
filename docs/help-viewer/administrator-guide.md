@@ -3,17 +3,17 @@ title: ヘルプ ビューアーの管理者ガイド
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe194e11edf0a3f825303137b9bdcc755135eee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 037ee411c156d21145160dc95b40078fd841493c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972994"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825126"
 ---
 # <a name="help-viewer-administrator-guide"></a>ヘルプ ビューアーの管理者ガイド
 
@@ -59,7 +59,7 @@ ms.locfileid: "62972994"
 
 #### <a name="to-install-english-content-from-the-internet"></a>インターネットから英語のコンテンツをインストールするには
 
-1. **[スタート]** を選択し、**[ファイル名を指定して実行]** を選択します。
+1. **[スタート]** を選択し、 **[ファイル名を指定して実行]** を選択します。
 
 2. 次のように入力します。
 
@@ -90,7 +90,7 @@ ms.locfileid: "62972994"
 
 #### <a name="to-uninstall-local-help"></a>ローカル ヘルプをアンインストールするには
 
-1. ヘルプ ビューアーで、**[コンテンツの管理]** タブを選択します。
+1. ヘルプ ビューアーで、 **[コンテンツの管理]** タブを選択します。
 
 2. Visual Studio ドキュメント セットに移動します。
 
@@ -104,9 +104,9 @@ ms.locfileid: "62972994"
 
 #### <a name="to-download-the-content"></a>コンテンツをダウンロードするには
 
-1. ヘルプ ビューアーで、**[コンテンツの管理]** タブを選択します。
+1. ヘルプ ビューアーで、 **[コンテンツの管理]** タブを選択します。
 
-2. **[推奨されるドキュメント]** または **[利用可能なドキュメント]** で、ダウンロードするドキュメント セットに移動し、**[追加]** を選択します。
+2. **[推奨されるドキュメント]** または **[利用可能なドキュメント]** で、ダウンロードするドキュメント セットに移動し、 **[追加]** を選択します。
 
 3. **[更新]** を選択します。
 

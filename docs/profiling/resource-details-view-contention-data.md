@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b6331c4f0f4e2590fff76d2d7bf8a33a82376f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c4c3922f8f41f950ede7065e2e15ece07890ba6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797769"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825850"
 ---
 # <a name="resource-details-view---contention-data"></a>リソースの詳細ビュー - 競合データ
 リソースの詳細ビューには、選択したリソースに対する競合によって発生したブロック イベントが、タイムライン グラフで表示されます。 ブロック イベントは、リソースに対するアクセスを別のスレッドがロックしているためにスレッドが実行を中断されたときに発生します。
@@ -36,9 +36,9 @@ ms.locfileid: "62797769"
 
 - 次のいずれかの操作を実行します。
 
-    - 前のズーム レベルに戻るには、**[縮小]** をクリックします。
+  - 前のズーム レベルに戻るには、 **[縮小]** をクリックします。
 
-    - タイムライン全体をビューに表示するには、**[ズームのリセット]** をクリックします。
+  - タイムライン全体をビューに表示するには、 **[ズームのリセット]** をクリックします。
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>イベントの呼び出し履歴を表示するには
 
@@ -52,7 +52,7 @@ ms.locfileid: "62797769"
 
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>リソースの競合イベントの呼び出しツリーを表示するには
 
-- タイムライン グラフで、**[合計]** をクリックします。
+- タイムライン グラフで、 **[合計]** をクリックします。
 
      リソースの競合ビューが表示されます。 詳細については、「[Resource Contentions View](../profiling/resource-contentions-view-contention-data.md) (リソースの競合ビュー)」をご覧ください。
 

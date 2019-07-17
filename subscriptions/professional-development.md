@@ -6,13 +6,12 @@ manager: lank
 ms.date: 07/31/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるプロフェッショナルな開発特典について説明します
-searchscope: VS Subscription
-ms.openlocfilehash: d63fd098c003f606a1d88aec55157e554620b20b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c3ee9a3e65cddffd788c33a9099679e76140f30
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007703"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67785016"
 ---
 # <a name="professional-development-benefits-available-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで利用できるプロフェッショナルな開発特典
 

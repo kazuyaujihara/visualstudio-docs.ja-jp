@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Visual Studio App Center 特典について説明します。
-searchscope: VS Subscription
-ms.openlocfilehash: 53b140bf425c184d62e4b4ff0af81b8ab8415021
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 1f57f6518c82c0eb60cbea9636c9973d2c9fd624
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032764"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826216"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Visual Studio App Center
 
@@ -67,7 +66,7 @@ A: App Center では、一部の古いブラウザーでは提供されていな
 
 ## <a name="support-resources"></a>サポート リソース
 - App Center に関するヘルプが必要ですか?
-    - [App Center のヘルプ センター](https://intercom.help/appcenter/)で、アドバイスと回答チームが得られます。
-    - 完全な [App Center のドキュメント](/appcenter/)を確認してください。
+  - [App Center のヘルプ センター](https://intercom.help/appcenter/)で、アドバイスと回答チームが得られます。
+  - 完全な [App Center のドキュメント](/appcenter/)を確認してください。
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

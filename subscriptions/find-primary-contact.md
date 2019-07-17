@@ -6,19 +6,18 @@ manager: evelynp
 ms.date: 01/22/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプション - 主要連絡先担当者の検索
-searchscope: VS Subscription
-ms.openlocfilehash: 46f36348c9275b47b885d9a7179885b4450502bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0614098743522c1a0c7a78b66aa65fc445d3e67d
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945954"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783570"
 ---
 # <a name="locating-the-primary-contact-associated-with-visual-studio-subscriptions"></a>Visual Studio サブスクリプションに関連付けられている主要連絡先を検索する
 
 サブスクリプション管理ポータルに組織をオンボードするには、主要連絡先を特定する必要があります。  この記事では、その情報が見つかる場所について説明します。
 
-1. 主要連絡先を見つけるには、ボリューム ライセンス サービス センター (https://www.Microsoft.com/licensing/servicecenter) にアクセスし、**[サインイン]** をクリックします。
+1. 主要連絡先を見つけるには、ボリューム ライセンス サービス センター (https://www.Microsoft.com/licensing/servicecenter ) にアクセスし、 **[サインイン]** をクリックします。
 
 2. [ライセンス] タブのドロップダウンで **[関係サマリー]** を選択します。
     > [!div class="mx-imgBorder"]

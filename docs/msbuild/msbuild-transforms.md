@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3be16c2ccbd7cfe5d26507037e4238870e59d83b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a3875e508105bbe23b1d5cbdcd863a058592537
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414696"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852187"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 変換
 変換とは、1 つの項目一覧を別の項目コレクションに一対一で変換することです。 プロジェクトで項目一覧を変換できます。さらに変換により、ターゲットは入出力間の直接割り当てを指定できるようになります。 このトピックでは、変換と、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] で変換を利用してプロジェクトを効率的にビルドする方法について説明します。
@@ -24,7 +24,7 @@ ms.locfileid: "63414696"
 ## <a name="transform-modifiers"></a>変換修飾子
 変換は任意ではなく、特別な構文により制限されています。変換修飾子はすべて %(\<ItemMetaDataName>) という形式にする必要があります。 あらゆる項目メタデータを変換修飾子として使用できます。 これには、作成時にすべての項目に割り当てられる既知の項目メタデータが含まれます。 既知の項目メタデータの一覧については、「[既知の項目メタデータ](../msbuild/msbuild-well-known-item-metadata.md)」をご覧ください。
 
-次の例では、*.resx* ファイルの一覧が *.resources* ファイルの一覧に変換されます。 %(filename) 変換修飾子は、各 *.resources* ファイルに対応する *.resx* ファイルと同じファイル名が与えられることを指定します。
+次の例では、 *.resx* ファイルの一覧が *.resources* ファイルの一覧に変換されます。 %(filename) 変換修飾子は、各 *.resources* ファイルに対応する *.resx* ファイルと同じファイル名が与えられることを指定します。
 
 ```xml
 @(RESXFile->'%(filename).resources')
@@ -92,11 +92,11 @@ ms.locfileid: "63414696"
 
 ```
 rootdir: C:\
-fullpath: C:\xmake\sub1\sub2\sub3\myfile.xsd
-rootdir + directory + filename + extension: C:\xmake\sub1\sub2\sub3\myfile.xsd
+fullpath: C:\sub0\sub1\sub2\sub3\myfile.xsd
+rootdir + directory + filename + extension: C:\sub0\sub1\sub2\sub3\myfile.xsd
 identity: sub1\sub2\sub3\myfile.xsd
 filename: myfile
-directory: xmake\sub1\sub2\sub3\
+directory: sub0\sub1\sub2\sub3\
 relativedir: sub1\sub2\sub3\
 extension: .xsd
 ```

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/20/2018
 ms.topic: conceptual
 description: Microsoft for Startups プログラムから提供されるサブスクリプションの詳細について説明します。
-searchscope: VS Subscription
-ms.openlocfilehash: 8a3acb216b58ce9a81b8edefed61d779955c0a1d
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 0105d9b8b4a9ed363e755258b8e7ca84e299fe88
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402097"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250619"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>スタートアップ企業に提供される Visual Studio サブスクリプション
 Microsoft for Startups のプログラムに参加する対象のスタートアップ企業は、[Visual Studio Enterprise の月間クラウド サブスクリプション](https://visualstudio.microsoft.com/vs/pricing/)を 5 つ取得できます。 これらは特別な制限のない市販されているものと同じサブスクリプションです。 ユーザーが Visual Studio を実行して、Azure DevOps Services の Visual Studio Enterprise サブスクライバーとして認識されるようにするには、各サブスクリプションをエンド ユーザー (ライセンス ユーザー) に割り当てる必要があります。

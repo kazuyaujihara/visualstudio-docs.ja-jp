@@ -3,23 +3,23 @@ title: トピックの検索 (ヘルプ ビューアー)
 ms.date: 11/02/2017
 ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e186bf0aa362f153ad3e6f57c39abc55c558270
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 52818e4f676d6ae9f4c02f26ad8e354b206cb2b8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824289"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824993"
 ---
 # <a name="how-to-search-for-topics"></a>方法: トピックの検索
 
 フルテキスト検索機能を使用すると、特定のワードを含むすべてのトピックを検索できます。 ワイルドカード式、論理演算子、および高度な検索演算子を使用して、検索の絞り込みおよびカスタマイズもできます。
 
-**[検索]** タブを開くには、**[ヘルプ ビューアー]** ウィンドウで **[検索]** タブを選択するか、キーボードを使用する場合は **Ctrl**+**E** キーを押します。
+**[検索]** タブを開くには、 **[ヘルプ ビューアー]** ウィンドウで **[検索]** タブを選択するか、キーボードを使用する場合は **Ctrl**+**E** キーを押します。
 
 ## <a name="to-perform-a-full-text-search"></a>フルテキスト検索を実行するには
 

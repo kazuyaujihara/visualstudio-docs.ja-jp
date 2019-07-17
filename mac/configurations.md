@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 62f7f2a8ebdafcccc6082edce2c4a7f1d91ff48e
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693097"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826069"
 ---
 # <a name="understanding-build-configurations"></a>ビルド構成について
 
@@ -51,21 +51,21 @@ Android プロジェクトの実行構成では、プロジェクトの実行時
 次の一覧は、実行構成に含まれることがあるデータ例です。
 
 * 通常の .NET プロジェクト
-    * 代替スタートアップ アプリ
-    * 引数の開始
-    * 作業ディレクトリ
-    * 環境変数
-    * Mono ランタイム オプション (Mono で実行時のみ使用)
+  * 代替スタートアップ アプリ
+  * 引数の開始
+  * 作業ディレクトリ
+  * 環境変数
+  * Mono ランタイム オプション (Mono で実行時のみ使用)
 * Android プロジェクト
-    * エントリ ポイント (アクティビティ、サービス、レシーバー)
-    * インテント引数とデータ
+  * エントリ ポイント (アクティビティ、サービス、レシーバー)
+  * インテント引数とデータ
 * iOS プロジェクト
-    * モード (通常、バック グラウンド フェッチ)
+  * モード (通常、バック グラウンド フェッチ)
 * iOS 拡張プロジェクト
-    * スタートアップ アプリ: デフォルトまたはカスタム
+  * スタートアップ アプリ: デフォルトまたはカスタム
 * WatchKit プロジェクト
-    * モード (グランス、通知)
-    * 通知ペイロード
+  * モード (グランス、通知)
+  * 通知ペイロード
 
 ## <a name="see-also"></a>関連項目
 

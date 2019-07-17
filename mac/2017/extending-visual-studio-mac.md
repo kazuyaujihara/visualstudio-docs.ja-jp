@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26290a5e70a9f4b0f6eeb8df5727ef4f04662136
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998204"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890638"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Visual Studio for Mac の拡張
 
@@ -28,7 +28,7 @@ Visual Studio for Mac から拡張機能パッケージを構築するには、V
 このモジュール式設計の利点は、Visual Studio for Mac が拡張可能であり、カスタム拡張機能パッケージを使用して構築できる拡張ポイントが多数あります。 現在の拡張機能パッケージの例として、C# および F# のサポート、デバッガー ツール、プロジェクト テンプレートなどがあります。
 
 > [!NOTE]
-> **注**:Add-in Maker 1.2 より前のバージョンで作成した Add-in Maker プロジェクトがある場合、[こちらの手順](https://mhut.ch/addinmaker/1.2)に従ってプロジェクトを移行する必要があります。
+> Add-in Maker 1.2 より前のバージョンで作成した Add-in Maker プロジェクトがある場合、[こちらの手順](https://mhut.ch/addinmaker/1.2)に従ってプロジェクトを移行する必要があります。
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -96,7 +96,7 @@ CommandItem 拡張機能を `/MonoDevelop/Ide/MainMenu/Edit` 拡張ポイント�
 </Extension>
 ```
 
-CommandItem は、id 属性に指定されているコマンドをメニューに配置します。 この CommandItem によって `/MonoDevelop/Ide/MainMenu/Edit` 拡張ポイントが拡張され、**[編集] メニュー**にコマンドのラベルが表示されます。 CommandItem の **id** はコマンド ノード `InsertDate` の id に対応します。 CommandItem を削除すると、[編集] メニューに **[Insert Date]** \(日付の挿入\) オプションに表示されなくなります。
+CommandItem は、id 属性に指定されているコマンドをメニューに配置します。 この CommandItem によって `/MonoDevelop/Ide/MainMenu/Edit` 拡張ポイントが拡張され、 **[編集] メニュー**にコマンドのラベルが表示されます。 CommandItem の **id** はコマンド ノード `InsertDate` の id に対応します。 CommandItem を削除すると、[編集] メニューに **[Insert Date]** \(日付の挿入\) オプションに表示されなくなります。
 
 ### <a name="command-handlers"></a>コマンド ハンドラー
 
