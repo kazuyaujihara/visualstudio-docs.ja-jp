@@ -11,11 +11,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 82718a7ceb7a18f9978840f35ca0c5fce5628e81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153666"
 ---
 # <a name="processes"></a>プロセス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,4 +44,4 @@ ms.locfileid: "58977972"
  [デバッグ エンジン](../../extensibility/debugger/debug-engine.md)   
  [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)   
  [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
- [添付](../../extensibility/debugger/reference/idebugprocess2-attach.md)
+ [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)
