@@ -690,6 +690,14 @@
                   href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
                 - name: 'CA3147:ValidateAntiForgeryToken で動詞ハンドラーをマークします'
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
+                - name: 'CA5361: 強力な暗号の SChannel の使用を無効にしません'
+                  href: ca5361.md
+                - name: 'CA5364: 非推奨のセキュリティ プロトコルを使用しないでください'
+                  href: ca5364.md
+                - name: 'CA5378: ServicePointManagerSecurityProtocols を無効にしません'
+                  href: ca5378.md
+                - name: 'CA5386: SecurityProtocolType 値のハードコードを避けます'
+                  href: ca5386.md
             - name: 使用法に関する警告
               items:
                 - name: 概要

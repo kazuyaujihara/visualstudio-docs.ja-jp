@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148250"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Visual Studio エディターでの他の言語のサポートの追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,13 +74,13 @@ Visual Studio エディターでさまざまなコンピューター言語の読
 
 |フォルダー名|説明|
 |-----------------|-----------------|
-|\\*\<言語名>*|言語のフォルダーです。 *\<言語名>* を該当する言語の名前に置き換えます。 たとえば、**\Matlab** などに置き換えます。|
+|\\ *\<言語名>*|言語のフォルダーです。 *\<言語名>* を該当する言語の名前に置き換えます。 たとえば、 **\Matlab** などに置き換えます。|
 |\Syntaxes|文法のフォルダーです。 **Matlab.json** などの、言語に対応する文法の .json ファイルが含まれています。|
 |\Snippets|スニペットのフォルダーです。 言語のスニペットが含まれています。|
 
- Windows では、%userprofile% はパス (c:\Users\\*\<ユーザー名>*) に解決されます。 システム上に拡張機能フォルダーが存在しない場合は、作成する必要があります。 フォルダーが既に存在する場合は、表示されません。
+ Windows では、%userprofile% はパス (c:\Users\\ *\<ユーザー名>* ) に解決されます。 システム上に拡張機能フォルダーが存在しない場合は、作成する必要があります。 フォルダーが既に存在する場合は、表示されません。
 
- TextMate 文法の作成方法の詳細については、「[TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)」 (TextMate - 言語の文法の概要: HTML に埋め込みのソース コード構文の強調表示を追加する方法) と「[Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)」 (Textmate バンドルの言語の文法とカスタム テーマを作成する方法に関する注意事項) を参照してください。
+ TextMate 文法を作成する方法の詳細については、次を参照してください。 [TextMate-言語の文法の概要。How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)」 (TextMate - 言語の文法の概要: HTML に埋め込みのソース コード構文の強調表示を追加する方法) と「[Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)」 (Textmate バンドルの言語の文法とカスタム テーマを作成する方法に関する注意事項) を参照してください。
 
 ## <a name="see-also"></a>関連項目
- [Visual Studio 2013 の移動機能の強化](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)[チュートリアル: コード スニペットを作成](../ide/walkthrough-creating-a-code-snippet.md)[チュートリアル: 候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013 の移動機能の強化](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)[チュートリアル。コード スニペットを作成](../ide/walkthrough-creating-a-code-snippet.md)[チュートリアル。入力候補の表示](../extensibility/walkthrough-displaying-statement-completion.md)

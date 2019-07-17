@@ -9,11 +9,11 @@ caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09656b9afac82eec8981f8573af87391c99a3688
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179727"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio のレイアウト
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -105,9 +105,9 @@ Visual Studio のダイアログ ボックスの大半は[ユーティリティ 
 #### <a name="BKMK_InteriorCommandButtons"></a> 内部コマンド ボタン
  複雑なダイアログは、内部のコントロールは独自関連なボタンは、ダイアログのコミット ボタンがある場所に影響する可能性があります。
 
-- 内部の垂直方向の配置 (列) ボタンを使用して **[ok]**/**キャンセル**は右下隅で水平方向に並びます。
+- 内部の垂直方向の配置 (列) ボタンを使用して **[ok]** /**キャンセル**は右下隅で水平方向に並びます。
 
-- 内部の水平方向の配置 (行) ボタンを使用して **[ok]**/**キャンセル**は右上隅にある垂直方向に並びます。 このような状況はまれです。
+- 内部の水平方向の配置 (行) ボタンを使用して **[ok]** /**キャンセル**は右上隅にある垂直方向に並びます。 このような状況はまれです。
 
 - 内部のボタンのサイズのサイズと一致する 75 x 23 ピクセルの標準ボタンのサイズをターゲットする必要があります**OK**/**キャンセル**ボタンの可能な場合。 ボタンのラベル、ボタンの標準ボタンのサイズを超える場合は、そのセット内の他のボタンはその幅のサイズと一致します。
 
@@ -137,7 +137,7 @@ Visual Studio のダイアログ ボックスの大半は[ユーティリティ 
 
 6. 既定のリンクには、アンダー スコアはあるありません。 ホバーと押された状態の色の変更とアンダー スコアがあります。
 
-7. コミット ボタン (など **[ok]**/**キャンセル**) 部分の右下隅に配置します。
+7. コミット ボタン (など **[ok]** /**キャンセル**) 部分の右下隅に配置します。
 
 ### <a name="themed-dialog-layout-examples"></a>テーマが適用されたダイアログのレイアウトの例
  ![テーマが適用されたダイアログのレイアウト](../../extensibility/ux-guidelines/media/0801-h-themeddialog.png "0801 h_ThemedDialog")
@@ -157,4 +157,4 @@ Visual Studio のダイアログ ボックスの大半は[ユーティリティ 
  **図の 08.01 k:テーマが適用されたダイアログ ボックスの色**
 
 ## <a name="see-also"></a>関連項目
- [Visual Studio のアプリケーション パターン](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)[コントロール (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx) [] ダイアログ ボックス (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx)
+ [Visual Studio のアプリケーション パターン](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)[コントロール (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx) [ダイアログ ボックス (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx)

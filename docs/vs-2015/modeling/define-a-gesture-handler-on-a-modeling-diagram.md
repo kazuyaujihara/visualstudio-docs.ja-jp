@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 365382566f7de28a611f1c8e0b063f68ca55f696
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3da0988316f54b75cb8076b1f242280a71d9a624
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825926"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890481"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>モデリング図にジェスチャ ハンドラーを定義する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -296,7 +296,7 @@ Visual Studio では、ユーザーが UML 図の項目をダブルクリック�
       IElement target = targetIShape.Element;  
       ```  
 
-        You can cast this to a more specific type of element.  
+      これを要素のより具体的な種類にキャストできます。  
 
   - UML モデルを格納する UML モデル ストアを取得するには  
 

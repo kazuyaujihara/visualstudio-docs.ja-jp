@@ -582,12 +582,14 @@
             - name: 国際対応のアプリの設計
               displayName: Globalization localization world-ready
               href: ide/globalizing-and-localizing-applications.md
-    - name: データへのアクセス...
+    - name: データへのアクセス >>
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
-    - name: ユーザー インターフェイスを設計する...
+    - name: ユーザー インターフェイスを設計する >>
       displayName: XAML designer
       href: designers/designing-user-interfaces.md
+    - name: ワークフロー デザイナーでアプリを開発する >>
+      href: workflow-designer/developing-applications-with-the-workflow-designer.md
     - name: コンパイルとビルド
       items:
         - name: 概要
@@ -636,9 +638,9 @@
               href: ide/how-to-configure-projects-to-target-platforms.md
             - name: プロジェクトを構成して複数の対象プラットフォームを設定する
               href: ide/how-to-configure-projects-to-target-multiple-platforms.md
-        - name: MSBuild...
+        - name: MSBuild >>
           href: msbuild/msbuild.md
-        - name: Azure Pipelines と TFS...
+        - name: Azure Pipelines と TFS >>
           displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
           href: /azure/devops/pipelines/index?view=vsts
         - name: ビルド イベントを指定する (Visual Basic)
@@ -649,23 +651,23 @@
           href: ide/configuring-warnings-in-visual-basic.md
         - name: 'チュートリアル: 複数のコンピューターを使用するビルド環境の作成'
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
-    - name: デバッグ...
+    - name: デバッグ >>
       href: debugger/index.md
-    - name: テスト...
+    - name: テスト >>
       displayName: Unit testing
       href: test/improve-code-quality.md
-    - name: パフォーマンスの計測...
+    - name: パフォーマンスの測定 >>
       displayName: Profiling
       href: profiling/index.md
-    - name: コード品質の分析...
+    - name: コード品質の分析 >>
       displayName: Code analysis FxCop Analyzers
       href: code-quality/index.md
-    - name: 配置...
+    - name: デプロイ >>
       href: deployment/index.md
-    - name: Visual Studio を拡張する...
+    - name: Visual Studio の拡張 >>
       displayName: Visual Studio SDK
       href: extensibility/visual-studio-sdk.md
-    - name: アーキテクチャの分析とモデル化...
+    - name: アーキテクチャの分析とモデル化 >>
       href: modeling/analyze-and-model-your-architecture.md
     - name: ヒントとテクニック
       items:

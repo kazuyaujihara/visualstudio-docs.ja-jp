@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 37d4ee90f5f8732ff4c42b8b086fa56620b97234
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142615"
 ---
 # <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149:透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58974598"
 |-|-|
 |TypeName|TransparentMethodsMustNotCallNativeCode|
 |CheckId|CA2149|
-|カテゴリ|Microsoft.Security|
+|Category|Microsoft.Security|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因

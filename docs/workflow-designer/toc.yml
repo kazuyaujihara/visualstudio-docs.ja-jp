@@ -1,202 +1,200 @@
 - name: ワークフロー デザイナーでアプリを開発する
+  href: developing-applications-with-the-workflow-designer.md
+- name: ワークフロー プロジェクト
   items:
-    - name: 概要と前提条件
-      href: developing-applications-with-the-workflow-designer.md
-    - name: ワークフロー プロジェクト
+    - name: ワークフロー プロジェクトを作成する
+      href: creating-a-workflow-project.md
+    - name: ワークフロー プロジェクトに新しい項目を追加する
+      href: how-to-add-a-new-item-to-a-workflow-project.md
+- name: ツール ボックスにアクティビティを追加する
+  href: how-to-add-activities-to-the-toolbox.md
+- name: 引数デザイナーを使用する
+  href: how-to-use-the-argument-designer.md
+- name: 変数デザイナーを使用する
+  href: how-to-use-the-variable-designer.md
+- name: 式エディターを使用する
+  href: how-to-use-the-expression-editor.md
+- name: インポート デザイナーを使用する
+  href: how-to-use-the-imports-designer.md
+- name: 階層リンク ナビゲーションを使用する
+  href: how-to-use-breadcrumb-navigation.md
+- name: 検索の使用
+  href: how-to-use-search-in-the-workflow-designer.md
+- name: アクティビティ デリゲートの定義と使用
+  href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
+- name: ワークフローにコメントを追加する
+  href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
+- name: アクティビティ デザイナー
+  items:
+    - name: 制御フロー アクティビティ デザイナー
       items:
-        - name: ワークフロー プロジェクトを作成する
-          href: creating-a-workflow-project.md
-        - name: ワークフロー プロジェクトに新しい項目を追加する
-          href: how-to-add-a-new-item-to-a-workflow-project.md
-    - name: ツール ボックスにアクティビティを追加する
-      href: how-to-add-activities-to-the-toolbox.md
-    - name: 引数デザイナーを使用する
-      href: how-to-use-the-argument-designer.md
-    - name: 変数デザイナーを使用する
-      href: how-to-use-the-variable-designer.md
-    - name: 式エディターを使用する
-      href: how-to-use-the-expression-editor.md
-    - name: インポート デザイナーを使用する
-      href: how-to-use-the-imports-designer.md
-    - name: 階層リンク ナビゲーションを使用する
-      href: how-to-use-breadcrumb-navigation.md
-    - name: ワークフロー デザイナーで検索を使用する
-      href: how-to-use-search-in-the-workflow-designer.md
-    - name: ワークフロー デザイナーでアクティビティ デリゲートを定義および使用する
-      href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
-    - name: ワークフロー デザイナーでワークフローにコメントを追加する
-      href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
-    - name: アクティビティ デザイナー
+        - name: 概要とリファレンス
+          displayName: Control flow activity designers
+          href: control-flow-activity-designers.md
+        - name: DoWhile アクティビティ デザイナー
+          href: dowhile-activity-designer.md
+        - name: ForEach<T> アクティビティ デザイナー
+          href: foreach-t-activity-designer.md
+        - name: If アクティビティ デザイナー
+          href: if-activity-designer.md
+        - name: Parallel アクティビティ デザイナー
+          href: parallel-activity-designer.md
+        - name: ParallelForEach<T> アクティビティ デザイナー
+          href: parallelforeach-t-activity-designer.md
+        - name: Pick アクティビティ デザイナー
+          href: pick-activity-designer.md
+        - name: PickBranch アクティビティ デザイナー
+          href: pickbranch-activity-designer.md
+        - name: Sequence アクティビティ デザイナー
+          href: sequence-activity-designer.md
+        - name: Switch<T> アクティビティ デザイナー
+          href: switch-t-activity-designer.md
+        - name: While アクティビティ デザイナー
+          href: while-activity-designer.md
+    - name: フローチャート アクティビティ デザイナー
       items:
-        - name: 制御フロー アクティビティ デザイナー
-          items:
-            - name: 概要とリファレンス
-              displayName: Control flow activity designers
-              href: control-flow-activity-designers.md
-            - name: DoWhile アクティビティ デザイナー
-              href: dowhile-activity-designer.md
-            - name: ForEach<T> アクティビティ デザイナー
-              href: foreach-t-activity-designer.md
-            - name: If アクティビティ デザイナー
-              href: if-activity-designer.md
-            - name: Parallel アクティビティ デザイナー
-              href: parallel-activity-designer.md
-            - name: ParallelForEach<T> アクティビティ デザイナー
-              href: parallelforeach-t-activity-designer.md
-            - name: Pick アクティビティ デザイナー
-              href: pick-activity-designer.md
-            - name: PickBranch アクティビティ デザイナー
-              href: pickbranch-activity-designer.md
-            - name: Sequence アクティビティ デザイナー
-              href: sequence-activity-designer.md
-            - name: Switch<T> アクティビティ デザイナー
-              href: switch-t-activity-designer.md
-            - name: While アクティビティ デザイナー
-              href: while-activity-designer.md
+        - name: 概要とリファレンス
+          displayName: Flow chart activity designers
+          href: flowchart-activity-designers.md
         - name: フローチャート アクティビティ デザイナー
-          items:
-            - name: 概要とリファレンス
-              displayName: Flow chart activity designers
-              href: flowchart-activity-designers.md
-            - name: フローチャート アクティビティ デザイナー
-              href: flowchart-activity-designer.md
-            - name: FlowDecision アクティビティ デザイナー
-              href: flowdecision-activity-designer.md
-            - name: FlowSwitch<T> アクティビティ デザイナー
-              href: flowswitch-t-activity-designer.md
-        - name: ステート マシン アクティビティ デザイナー
-          items:
-            - name: 概要とリファレンス
-              displayName: State machine activity designers
-              href: state-machine-activity-designers.md
-            - name: StateMachine アクティビティ デザイナー
-              href: statemachine-activity-designer.md
-            - name: State アクティビティ デザイナー
-              href: state-activity-designer.md
-            - name: FinalState アクティビティ デザイナー
-              href: finalstate-activity-designer.md
-            - name: Transition アクティビティ デザイナー
-              href: transition-activity-designer.md
-        - name: メッセージング アクティビティ デザイナー
-          items:
-            - name: 概要とリファレンス
-              displayName: Messaging activity designers
-              href: messaging-activity-designers.md
-            - name: CorrelationScope アクティビティ デザイナー
-              href: correlationscope-activity-designer.md
-            - name: InitializeCorrelation アクティビティ デザイナー
-              href: initializecorrelation-activity-designer.md
-            - name: Receive アクティビティ デザイナー
-              href: receive-activity-designer.md
-            - name: ReceiveAndSendReply テンプレート デザイナー
-              href: receiveandsendreply-template-designer.md
-            - name: Send アクティビティ デザイナー
-              href: send-activity-designer.md
-            - name: SendAndReceiveReply テンプレート デザイナー
-              href: sendandreceivereply-template-designer.md
-            - name: TransactedReceiveScope アクティビティ デザイナー
-              href: transactedreceivescope-activity-designer.md
-        - name: ランタイム アクティビティ デザイナー
-          items:
-            - name: 概要とリファレンス
-              displayName: Run-time activity designers
-              href: runtime-activity-designers.md
-            - name: Persist アクティビティ デザイナー
-              href: persist-activity-designer.md
-            - name: TerminateWorkflow アクティビティ デザイナー
-              href: terminateworkflow-activity-designer.md
-        - name: プリミティブ アクティビティ デザイナー
-          items:
-            - name: 概要とリファレンス
-              displayName: Primitives activity designers
-              href: primitives-activity-designers.md
-            - name: Assign アクティビティ デザイナー
-              href: assign-activity-designer.md
-            - name: Delay アクティビティ デザイナー
-              href: delay-activity-designer.md
-            - name: InvokeDelegate
-              href: invokedelegate.md
-            - name: InvokeMethod アクティビティ デザイナー
-              href: invokemethod-activity-designer.md
-            - name: WriteLine アクティビティ デザイナー
-              href: writeline-activity-designer.md
-        - name: トランザクション アクティビティ デザイナー
-          items:
-            - name: 概要とリファレンス
-              displayName: Transaction activity designers
-              href: transaction-activity-designers.md
-            - name: CancellationScope アクティビティ デザイナー
-              href: cancellationscope-activity-designer.md
-            - name: CompensableActivity アクティビティ デザイナー
-              href: compensableactivity-activity-designer.md
-            - name: Compensate アクティビティ デザイナー
-              href: compensate-activity-designer.md
-            - name: Confirm アクティビティ デザイナー
-              href: confirm-activity-designer.md
-            - name: TransactionScope アクティビティ デザイナー
-              href: transactionscope-activity-designer.md
-        - name: コレクション アクティビティ デザイナー
-          items:
-            - name: 概要とリファレンス
-              displayName: Collection activity designers
-              href: collection-activity-designers.md
-            - name: AddToCollection<T> アクティビティ デザイナー
-              href: addtocollection-t-activity-designer.md
-            - name: ClearCollection<T> アクティビティ デザイナー
-              href: clearcollection-t-activity-designer.md
-            - name: ExistsInCollection<T> アクティビティ デザイナー
-              href: existsincollection-t-activity-designer.md
-            - name: RemoveFromCollection<T> アクティビティ デザイナー
-              href: removefromcollection-t-activity-designer.md
-        - name: エラー処理アクティビティ デザイナー
-          items:
-            - name: 概要とリファレンス
-              displayName: Error handling activity designers
-              href: error-handling-activity-designers.md
-            - name: Rethrow アクティビティ デザイナー
-              href: rethrow-activity-designer.md
-            - name: Throw アクティビティ デザイナー
-              href: throw-activity-designer.md
-            - name: TryCatch アクティビティ デザイナー
-              href: trycatch-activity-designer.md
-        - name: 移行アクティビティ デザイナー
-          items:
-            - name: 概要とリファレンス
-              displayName: Migration activity designers
-              href: migration-activity-designers.md
-            - name: Interop アクティビティ デザイナー
-              href: interop-activity-designer.md
-    - name: デバッグ
+          href: flowchart-activity-designer.md
+        - name: FlowDecision アクティビティ デザイナー
+          href: flowdecision-activity-designer.md
+        - name: FlowSwitch<T> アクティビティ デザイナー
+          href: flowswitch-t-activity-designer.md
+    - name: ステート マシン アクティビティ デザイナー
       items:
-        - name: デバッグ ワークフロー
-          href: debugging-workflows-with-the-workflow-designer.md
-        - name: ワークフロー内のブレークポイントを設定する
-          href: how-to-set-breakpoints-in-workflows.md
-        - name: ワークフロー デザイナーを使用して XAML をデバッグする
-          href: how-to-debug-xaml-with-the-workflow-designer.md
-        - name: サポートされていないデバッグ シナリオ
-          href: unsupported-debugging-scenarios-in-the-workflow-designer.md
-    - name: UI リファレンス
+        - name: 概要とリファレンス
+          displayName: State machine activity designers
+          href: state-machine-activity-designers.md
+        - name: StateMachine アクティビティ デザイナー
+          href: statemachine-activity-designer.md
+        - name: State アクティビティ デザイナー
+          href: state-activity-designer.md
+        - name: FinalState アクティビティ デザイナー
+          href: finalstate-activity-designer.md
+        - name: Transition アクティビティ デザイナー
+          href: transition-activity-designer.md
+    - name: メッセージング アクティビティ デザイナー
       items:
-        - name: '[.NET 型の参照と選択] ダイアログ ボックス'
-          href: browse-and-select-a-dotnet-type-dialog-box.md
-        - name: '[CorrelatesOn の定義] ダイアログ ボックス'
-          href: correlateson-definition-dialog-box.md
-        - name: '[関連付け初期化子の追加] ダイアログ ボックス'
-          href: add-correlationinitializers-dialog-box.md
-        - name: '[パラメーターの追加] ダイアログ ボックスと [引数の追加] ダイアログ ボックス'
-          href: add-parameters-and-add-arguments-dialog-boxes.md
-        - name: '[型コレクション エディター] ダイアログ ボックス'
-          href: type-collection-editor-dialog-box.md
-        - name: '[コンテンツ定義] ダイアログ ボックス'
-          href: content-definition-dialog-box.md
-        - name: '[関連付け初期化] ダイアログ ボックス'
-          href: initialize-correlation-dialog-box.md
-        - name: '[ツールボックス アイテムの選択] ダイアログ ボックスの [System.Activities] タブ'
-          href: system-activities-tab-choose-toolbox-items-dialog-box.md
-        - name: ワークフロー デザイナーのシェルの機能
-          href: workflow-designer-shell-features.md
-        - name: ショートカット キー
-          href: keyboard-shortcuts-in-the-workflow-designer.md
-        - name: エラー メッセージ
-          href: error-messages-in-workflow-designer.md
+        - name: 概要とリファレンス
+          displayName: Messaging activity designers
+          href: messaging-activity-designers.md
+        - name: CorrelationScope アクティビティ デザイナー
+          href: correlationscope-activity-designer.md
+        - name: InitializeCorrelation アクティビティ デザイナー
+          href: initializecorrelation-activity-designer.md
+        - name: Receive アクティビティ デザイナー
+          href: receive-activity-designer.md
+        - name: ReceiveAndSendReply テンプレート デザイナー
+          href: receiveandsendreply-template-designer.md
+        - name: Send アクティビティ デザイナー
+          href: send-activity-designer.md
+        - name: SendAndReceiveReply テンプレート デザイナー
+          href: sendandreceivereply-template-designer.md
+        - name: TransactedReceiveScope アクティビティ デザイナー
+          href: transactedreceivescope-activity-designer.md
+    - name: ランタイム アクティビティ デザイナー
+      items:
+        - name: 概要とリファレンス
+          displayName: Run-time activity designers
+          href: runtime-activity-designers.md
+        - name: Persist アクティビティ デザイナー
+          href: persist-activity-designer.md
+        - name: TerminateWorkflow アクティビティ デザイナー
+          href: terminateworkflow-activity-designer.md
+    - name: プリミティブ アクティビティ デザイナー
+      items:
+        - name: 概要とリファレンス
+          displayName: Primitives activity designers
+          href: primitives-activity-designers.md
+        - name: Assign アクティビティ デザイナー
+          href: assign-activity-designer.md
+        - name: Delay アクティビティ デザイナー
+          href: delay-activity-designer.md
+        - name: InvokeDelegate
+          href: invokedelegate.md
+        - name: InvokeMethod アクティビティ デザイナー
+          href: invokemethod-activity-designer.md
+        - name: WriteLine アクティビティ デザイナー
+          href: writeline-activity-designer.md
+    - name: トランザクション アクティビティ デザイナー
+      items:
+        - name: 概要とリファレンス
+          displayName: Transaction activity designers
+          href: transaction-activity-designers.md
+        - name: CancellationScope アクティビティ デザイナー
+          href: cancellationscope-activity-designer.md
+        - name: CompensableActivity アクティビティ デザイナー
+          href: compensableactivity-activity-designer.md
+        - name: Compensate アクティビティ デザイナー
+          href: compensate-activity-designer.md
+        - name: Confirm アクティビティ デザイナー
+          href: confirm-activity-designer.md
+        - name: TransactionScope アクティビティ デザイナー
+          href: transactionscope-activity-designer.md
+    - name: コレクション アクティビティ デザイナー
+      items:
+        - name: 概要とリファレンス
+          displayName: Collection activity designers
+          href: collection-activity-designers.md
+        - name: AddToCollection<T> アクティビティ デザイナー
+          href: addtocollection-t-activity-designer.md
+        - name: ClearCollection<T> アクティビティ デザイナー
+          href: clearcollection-t-activity-designer.md
+        - name: ExistsInCollection<T> アクティビティ デザイナー
+          href: existsincollection-t-activity-designer.md
+        - name: RemoveFromCollection<T> アクティビティ デザイナー
+          href: removefromcollection-t-activity-designer.md
+    - name: エラー処理アクティビティ デザイナー
+      items:
+        - name: 概要とリファレンス
+          displayName: Error handling activity designers
+          href: error-handling-activity-designers.md
+        - name: Rethrow アクティビティ デザイナー
+          href: rethrow-activity-designer.md
+        - name: Throw アクティビティ デザイナー
+          href: throw-activity-designer.md
+        - name: TryCatch アクティビティ デザイナー
+          href: trycatch-activity-designer.md
+    - name: 移行アクティビティ デザイナー
+      items:
+        - name: 概要とリファレンス
+          displayName: Migration activity designers
+          href: migration-activity-designers.md
+        - name: Interop アクティビティ デザイナー
+          href: interop-activity-designer.md
+- name: デバッグ
+  items:
+    - name: デバッグ ワークフロー
+      href: debugging-workflows-with-the-workflow-designer.md
+    - name: ワークフロー内のブレークポイントを設定する
+      href: how-to-set-breakpoints-in-workflows.md
+    - name: ワークフロー デザイナーを使用して XAML をデバッグする
+      href: how-to-debug-xaml-with-the-workflow-designer.md
+    - name: サポートされていないデバッグ シナリオ
+      href: unsupported-debugging-scenarios-in-the-workflow-designer.md
+- name: UI リファレンス
+  items:
+    - name: '[.NET 型の参照と選択] ダイアログ ボックス'
+      href: browse-and-select-a-dotnet-type-dialog-box.md
+    - name: '[CorrelatesOn の定義] ダイアログ ボックス'
+      href: correlateson-definition-dialog-box.md
+    - name: '[関連付け初期化子の追加] ダイアログ ボックス'
+      href: add-correlationinitializers-dialog-box.md
+    - name: '[パラメーターの追加] ダイアログ ボックスと [引数の追加] ダイアログ ボックス'
+      href: add-parameters-and-add-arguments-dialog-boxes.md
+    - name: '[型コレクション エディター] ダイアログ ボックス'
+      href: type-collection-editor-dialog-box.md
+    - name: '[コンテンツ定義] ダイアログ ボックス'
+      href: content-definition-dialog-box.md
+    - name: '[関連付け初期化] ダイアログ ボックス'
+      href: initialize-correlation-dialog-box.md
+    - name: '[ツールボックス アイテムの選択] ダイアログ ボックスの [System.Activities] タブ'
+      href: system-activities-tab-choose-toolbox-items-dialog-box.md
+    - name: ワークフロー デザイナーのシェルの機能
+      href: workflow-designer-shell-features.md
+    - name: ショートカット キー
+      href: keyboard-shortcuts-in-the-workflow-designer.md
+    - name: エラー メッセージ
+      href: error-messages-in-workflow-designer.md
