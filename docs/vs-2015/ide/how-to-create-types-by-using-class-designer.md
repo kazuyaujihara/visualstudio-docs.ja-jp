@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3a20a9ecf08c82589fd915fdd4bd60c6144e9d1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201824"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>方法: クラス デザイナーを使用して型を作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,9 +56,9 @@ Visual C# .NET プロジェクトおよび Visual Basic .NET プロジェクト�
   
 3. 型の初期コードを追加するファイルを選択します。  
   
-    - 新しいクラス ファイルを作成して、そのファイルを現在のプロジェクトに追加するには、**[新しいファイルの作成]** をクリックし、ファイル名を入力します。  
+    - 新しいクラス ファイルを作成して、そのファイルを現在のプロジェクトに追加するには、 **[新しいファイルの作成]** をクリックし、ファイル名を入力します。  
   
-    - 既存のファイルにコードを追加するには、**[存在するファイルに追加]** をクリックします。  
+    - 既存のファイルにコードを追加するには、 **[存在するファイルに追加]** をクリックします。  
   
          ソリューションに複数のアプリでコードを共有しているプロジェクトがある場合、対応するクラス ファイルが同じアプリ プロジェクトまたは共有プロジェクトにある場合にのみ、アプリケーション プロジェクトで新しい型をクラス ダイアグラムに追加できます。  
   

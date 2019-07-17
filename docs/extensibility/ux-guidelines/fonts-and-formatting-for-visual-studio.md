@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824330"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891038"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio のフォントと書式
 ## <a name="BKMK_TheEnvironmentFont"></a> 環境フォント
@@ -90,7 +90,8 @@ window.ShowModal()
 ### <a name="BKMK_Formatting"></a> (スケール/太字) の参照を書式設定
  一部のダイアログでは、特定のテキストを太字または環境フォント以外のサイズが必要です。 以前は、環境フォントよりも大きいフォントとしてコード化された"`environment font +2`"または同様です。 提供されているコード スニペットを使用して、高 DPI のモニターのサポートし、表示テキストが常に適切なサイズと重量 (Light Semilight など) に表示されることを確認します。
 
-> **注 :書式設定を適用する前にの指針をフォローしていることを確認[テキストのスタイル](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)します。**
+> [!NOTE]
+> 書式設定を適用する前にの指針をフォローしていることを確認[テキストのスタイル](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)* *。
 
  環境フォントをスケーリングするには、TextBlock またはとおりのラベルのスタイルを設定します。 適切なサイズや重量のバリエーションを含む適切なフォントを適切に使用、これらのコード スニペットの各生成されます。
 

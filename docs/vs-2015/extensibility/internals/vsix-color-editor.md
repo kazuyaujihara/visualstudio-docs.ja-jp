@@ -7,11 +7,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fe8e54876f5b2ab3eda5c1bd8d35f0b0d0c788b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197247"
 ---
 # <a name="vsix-color-editor"></a>VSIX カラー エディター
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Visual Studio 拡張機能カラー エディター ツールでは、作成で�
   
 5. Visual Studio での変更をテストします。  
   
-   **手順 1:新しい色のトークンのカテゴリとトークンの名前を決定します。**  
+   **ステップ 1: 新しい色のトークンのカテゴリとトークンの名前を決定します。**  
   
    VSColor は、推奨される名前付けスキーム **[Category] [UI の種類] [State]** します。 冗長であるために、VSColor 名に"color"という単語を使わないでください。  
   
@@ -65,9 +65,9 @@ Visual Studio 拡張機能カラー エディター ツールでは、作成で�
   
    いくつかの一般的な状態名は次のとおりです。  
   
-- アクティブ  
+- Active  
   
-- 非アクティブ  
+- Inactive  
   
 - MouseOver  
   

@@ -11,13 +11,13 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f2cfbd84bc4f9298358a2a2d1ba87f76d6e5303c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184994"
 ---
-# <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>レガシ API を使用して、テキスト バッファーにアクセスします。
+# <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>レガシ API を使用するテキスト バッファーへのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 テキストがテキスト ストリームとファイルの永続性の管理を担当します。 バッファーの読み取りまたは書き込みの他の形式、バッファーとすべての通常の通信は Unicode を使用して実行します。 従来の Api では、テキスト バッファーは、バッファー内の文字の位置を識別するためにも、1 部または 2 次元座標系に使用できます。  

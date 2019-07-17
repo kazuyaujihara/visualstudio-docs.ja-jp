@@ -11,11 +11,11 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 280b5b517089ad9e5b38cb00dc9b14c68253d1e6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202044"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>チュートリアル: シグネチャ ヘルプの表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -118,7 +118,7 @@ ms.locfileid: "60108166"
      [!code-csharp[VSSDKSignatureHelpTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#12)]
      [!code-vb[VSSDKSignatureHelpTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#12)]  
   
-14. <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.ApplicableToSpan%2A> プロパティを実装します。 このプロパティは保持、<xref:Microsoft.VisualStudio.Text.ITrackingSpan>署名を適用するバッファー内のテキストの範囲に対応します。  
+14.   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature.ApplicableToSpan%2A> プロパティを実装します。 このプロパティは保持、<xref:Microsoft.VisualStudio.Text.ITrackingSpan>署名を適用するバッファー内のテキストの範囲に対応します。  
   
      [!code-csharp[VSSDKSignatureHelpTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#13)]
      [!code-vb[VSSDKSignatureHelpTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#13)]  
@@ -247,4 +247,4 @@ ms.locfileid: "60108166"
 4. かっこを入力すると後の 2 つの署名の一覧を表示するツールヒントが表示されます、`add()`メソッド。  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: ファイル名拡張子へのコンテンツの種類のリンク](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [チュートリアル: コンテンツの種類とファイル名拡張子とをリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

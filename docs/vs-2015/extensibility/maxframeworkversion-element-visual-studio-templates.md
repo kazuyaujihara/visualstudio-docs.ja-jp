@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4a1c27e42574429dbb6b2eaeb140db484bf29db5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194331"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "58976802"
 </VSTemplate>  
 ```  
   
- この例では、テンプレートで必要とされる .NET Framework の最大バージョンで表される`MaxFrameworkVersion`、3.5 です。 3.0 または 3.5 インチのいずれかを選択する場合にのみ、上記のテンプレートが表示されます、**ターゲット フレームワーク バージョン**ボックスに、**新しいプロジェクトの追加** ダイアログ ボックス。  
+ この例では、テンプレートで必要とされる .NET Framework の最大バージョンで表される`MaxFrameworkVersion`、3.5 です。 3\.0 または 3.5 インチのいずれかを選択する場合にのみ、上記のテンプレートが表示されます、**ターゲット フレームワーク バージョン**ボックスに、**新しいプロジェクトの追加** ダイアログ ボックス。  
   
 ## <a name="see-also"></a>関連項目  
  [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)   

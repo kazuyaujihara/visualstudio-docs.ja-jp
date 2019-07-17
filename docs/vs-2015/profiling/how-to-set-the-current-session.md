@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205713"
 ---
-# <a name="how-to-set-the-current-session"></a>方法: 現在のセッションを設定します。
+# <a name="how-to-set-the-current-session"></a>方法: 現在のセッションを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **パフォーマンス エクスプローラー**で複数のパフォーマンス セッションを開き、表示されているパフォーマンス セッションの 1 つを選択して、現在のセッションとして設定できます。  
@@ -37,7 +37,7 @@ ms.locfileid: "60102693"
   
 ### <a name="to-set-current-performance-session"></a>現在のパフォーマンス セッションを設定するには  
   
-- **パフォーマンス エクスプローラー**で、パフォーマンス セッションを右クリックして、**[現在のセッションとして設定]** をクリックします。  
+- **パフォーマンス エクスプローラー**で、パフォーマンス セッションを右クリックして、 **[現在のセッションとして設定]** をクリックします。  
   
      セッション名が太字で表示されます。  
   

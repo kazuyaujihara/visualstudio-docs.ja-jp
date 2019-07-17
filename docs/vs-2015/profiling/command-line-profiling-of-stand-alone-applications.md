@@ -13,18 +13,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f4b2b78f7187b7a49b78312a1105a2af884fda3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186634"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>スタンドアロン アプリケーションのコマンド ラインによるプロファイリング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このセクションでは、コマンド ラインから [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールを使用して、スタンドアロン (クライアント) アプリケーションのパフォーマンス データを収集する手順とオプションについて説明します。  
   
-## <a name="common-tasks"></a>一般的なタスク  
+## <a name="common-tasks"></a>よく使う機能  
   
 |タスク|関連コンテンツ|  
 |----------|---------------------|  
@@ -33,7 +33,7 @@ ms.locfileid: "54752189"
 |**.NET メモリ データの収集:** サンプリングまたはインストルメンテーションを使用して .NET メモリ割り当てデータを収集し、割り当てられているオブジェクトのサイズと数を表示します。 また、オブジェクトのサイズと数を表示するオブジェクト有効期間期間も収集できます。この情報は各ガベージ コレクションの生成で解放されます。|-   [.NET Framework メモリ データの収集](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
 |**コンカレンシー データの収集:** コンカレンシー メソッドを使用すると、リソース競合データとスレッド アクティビティ データを収集し、CPU 使用率、スレッド競合、スレッドの移行、同期の遅延、重複 I/O の領域などのシステム イベントを表示できます。|-   [コンカレンシー データの収集](../profiling/collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
 |**階層の相互作用データの追加:** アプリケーションから Microsoft [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] データベースに対する同期 ADO.NET 呼び出しに関するパフォーマンス データを追加できます。 プロファイリングの実行に階層の相互作用データを追加するには、コマンド ライン プロファイリング ツールによる特定の手順が必要です。|-   [階層相互作用データの収集](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-|**試す**:サンプリング メソッドまたはインストルメンテーション メソッドを使用してサンプル クライアント アプリケーションをプロファイリングする手順を実行します。|-   [チュートリアル: サンプリングを使ったコマンド ライン プロファイリング](../profiling/walkthrough-command-line-profiling-using-sampling.md)<br />-   [チュートリアル: インストルメンテーションを使ったコマンド ライン プロファイリング](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)|  
+|**お試しください:** サンプリング メソッドまたはインストルメンテーション メソッドを使用してサンプル クライアント アプリケーションをプロファイリングする手順を実行します。|-   [チュートリアル: サンプリングを使ったコマンド ライン プロファイリング](../profiling/walkthrough-command-line-profiling-using-sampling.md)<br />-   [チュートリアル: インストルメンテーションを使ったコマンド ライン プロファイリング](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)|  
   
 ## <a name="related-tasks"></a>関連タスク  
   

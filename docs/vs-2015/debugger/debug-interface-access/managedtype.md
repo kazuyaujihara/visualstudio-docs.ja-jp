@@ -16,16 +16,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e90c76c446da7266250b9e588a07d98f21e64cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200686"
 ---
 # <a name="managedtype"></a>ManagedType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-マネージ型 (メタデータ、または C# などの言語のメモリとリソースの管理機能をネイティブで定義されたシンボル) によって識別されます、`SymTagManagedType`シンボル。  
+マネージ型 (メタデータ、または c# などの言語のメモリとリソースの管理機能をネイティブで定義されたシンボル) によって識別されます、`SymTagManagedType`シンボル。  
   
 ## <a name="properties"></a>プロパティ  
  次の表では、この記号の型の有効な追加のプロパティを示します。  

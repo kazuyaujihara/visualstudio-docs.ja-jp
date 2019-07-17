@@ -10,11 +10,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c6875e13baa83d349020f50a3fe448a87ec5fd30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197402"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>カスタム プロジェクト テンプレートと項目テンプレートの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Visual Studio 2017 以降、カスタム プロジェクトと項目テンプレ
 
 4. ソリューションをビルドし、F5 キーを押します。 実験用インスタンスが表示されます。
 
-5. プロジェクト テンプレート プロジェクトの場合に、記載されて、プロジェクト テンプレートを表示する必要があります、**新しいプロジェクト**ダイアログ (**ファイル/新しいプロジェクト/**)、Visual c# または Visual Basic ノード。 項目テンプレート プロジェクトでは、新しい項目の追加] ダイアログで、項目テンプレートが表示されます (で、**ソリューション エクスプ ローラー**プロジェクト ノードを選択して、クリックして**追加/[新しい項目の**)。
+5. プロジェクト テンプレート プロジェクトの場合に、記載されて、プロジェクト テンプレートを表示する必要があります、**新しいプロジェクト**ダイアログ (**ファイル/新しいプロジェクト/** )、Visual c# または Visual Basic ノード。 項目テンプレート プロジェクトでは、新しい項目の追加] ダイアログで、項目テンプレートが表示されます (で、**ソリューション エクスプ ローラー**プロジェクト ノードを選択して、クリックして**追加/[新しい項目の**)。
 
 ## <a name="see-also"></a>関連項目
 

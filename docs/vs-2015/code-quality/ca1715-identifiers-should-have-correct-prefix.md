@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 37c8193a166849f1361a66c640b1a414d3900fca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189127"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715:識別子は正しいプレフィックスを含んでいなければなりません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
 ## <a name="cause"></a>原因  
  外部から参照できるインターフェイスの名前の先頭が大文字の 'I' でありません。  
   
- - または -  
+ \- または -  
   
  外部から参照できる型またはメソッドのジェネリック型パラメーターの名前値で始まらない大文字 ' T '。  
   

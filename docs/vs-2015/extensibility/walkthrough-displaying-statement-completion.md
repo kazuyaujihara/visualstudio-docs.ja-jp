@@ -11,11 +11,11 @@ caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db4e63beb1e3d4ff53e547492ae9eae7ee8001e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202005"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>チュートリアル: 入力候補の表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -204,4 +204,4 @@ ms.locfileid: "60045019"
 4. を入力すると最初に、"a"と"d"、"addition"と「適応」を含む一覧が表示されます。 加算が選択されていることに注意してください。 別の"d"を入力すると、一覧は、のみ"addition"、現在選択されているを含める必要があります。 Space キー、タブ、または Enter キーを押す"addition"をコミットまたは esc キーまたはその他の任意のキーを入力して、一覧を無視できます。  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: ファイル名拡張子へのコンテンツの種類のリンク](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [チュートリアル: コンテンツの種類とファイル名拡張子とをリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

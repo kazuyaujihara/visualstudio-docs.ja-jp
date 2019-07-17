@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 94703f13eba0c58aad24597bc65beeea862e79e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179212"
 ---
 # <a name="core-interfaces"></a>コア インターフェイス
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60076826"
 ## <a name="discussion"></a>説明  
  これらのインターフェイスは主に、デバッグ エンジン (DE) の作成に使用します。 カテゴリがここで分類されます。  
   
-- [ブレークポイント](#Breakpoints)  
+- [[ブレークポイント]](#Breakpoints)  
   
 - [コンテキスト](#Contexts)  
   
