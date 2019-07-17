@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1e70ec3ba50e5be1ed532bb4a88cbdd500af09c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195175"
 ---
 # <a name="remote-debugger-port-assignments"></a>リモート デバッガーのポートの割り当て
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio リモート デバッガーは、アプリケーションまた�
   
  リモート デバッガー ウィンドウでは、 **[ツール] / [オプション]** の順にクリックし、TCP/IP ポート番号を設定します。  
   
- コマンド ラインでは、**/port** スイッチを使用して「**msvsmon /port \<ポート番号>**」と入力して、リモート デバッガーを開始します。  
+ コマンド ラインでは、 **/port** スイッチを使用して「**msvsmon /port \<ポート番号>** 」と入力して、リモート デバッガーを開始します。  
   
  リモート デバッグのヘルプに、リモート デバッガーのすべてのコマンド ライン スイッチが記載されています (リモート デバッガー ウィンドウで **F1** キーを押すか、または **[ヘルプ] / [使い方]** の順にクリックします)。  
   

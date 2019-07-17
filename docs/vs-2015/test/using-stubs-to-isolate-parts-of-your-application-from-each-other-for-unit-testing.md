@@ -9,11 +9,11 @@ caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5ed075cbc5bdc49159024a81cfcf1c3afb04cc6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185712"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>スタブを使用して単体テストでアプリケーションの各部分を相互に分離する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -159,7 +159,7 @@ analyzer = new StockAnalyzer(new StockFeed())
   
 2. 作成するスタブに対応するインターフェイス定義が含まれているアセンブリを選択します。  
   
-3. ショートカット メニューで、**[Fakes アセンブリに追加]** を選択します。  
+3. ショートカット メニューで、 **[Fakes アセンブリに追加]** を選択します。  
   
 ### <a name="WriteTest"></a> スタブを使用してテストを作成する  
   
@@ -224,7 +224,7 @@ End Class
  また、イベントおよびジェネリック メソッドについて、プロパティの getter および setter に対してもスタブが生成されます。  
   
 ### <a name="mocks"></a> パラメーター値を確認する  
- 自分のコンポーネントが他のコンポーネントを呼び出すときに、適切な値が渡されることを検証できます。 スタブ内にアサーションを配置するか、値を保存して、テストの本体で検証できます。 例:  
+ 自分のコンポーネントが他のコンポーネントを呼び出すときに、適切な値が渡されることを検証できます。 スタブ内にアサーションを配置するか、値を保存して、テストの本体で検証できます。 例えば:  
   
 ```csharp  
 [TestClass]  
@@ -400,7 +400,7 @@ public void TestGetValue()
  コードが他のインスタンス化で `GetValue<T>` を呼び出す場合、スタブは単に動作を呼び出します。  
   
 ### <a name="BKMK_Partial_stubs"></a> 仮想クラスのスタブ  
- これまでの例では、スタブはインターフェイスから生成されていました。 仮想メンバーまたは抽象メンバーを持つクラスからスタブを生成することもできます。 例:  
+ これまでの例では、スタブはインターフェイスから生成されていました。 仮想メンバーまたは抽象メンバーを持つクラスからスタブを生成することもできます。 例えば:  
   
 ```csharp  
 // Base class in application under test  

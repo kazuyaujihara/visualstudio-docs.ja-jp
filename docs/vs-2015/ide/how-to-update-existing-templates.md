@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 26482e844a4850efb1c50b15e51e4153baf1f9ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186261"
 ---
-# <a name="how-to-update-existing-templates"></a>方法: 既存のテンプレートを更新します。
+# <a name="how-to-update-existing-templates"></a>方法: 既存のテンプレートを更新する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 テンプレートを作成し、複数のファイルを .zip ファイルに圧縮した後で、テンプレートを変更できます。 それには、テンプレートのファイルを手動で変更するか、テンプレートに基づいてプロジェクトから新しいテンプレートをエクスポートします。  
@@ -32,7 +32,7 @@ ms.locfileid: "60075997"
   
 1. **[ファイル]** メニューの **[新規作成]** をポイントし、 **[新しいプロジェクト]** をクリックします。  
   
-2. 更新するテンプレートを選択し、一時プロジェクトの名前と場所を入力し、**[OK]** をクリックします。  
+2. 更新するテンプレートを選択し、一時プロジェクトの名前と場所を入力し、 **[OK]** をクリックします。  
   
 3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でプロジェクトを変更します。  
   
@@ -53,7 +53,7 @@ ms.locfileid: "60075997"
   
 4. .vstemplate XML ファイルを開いたり、変更したり、保存したりして、更新された動作または新しいファイルを処理します。 .vstemplate スキーマの詳細については、「[Visual Studio テンプレートのスキーマ参照](../extensibility/visual-studio-template-schema-reference.md)」を参照してください。 ソース ファイルでパラメーター化できる内容の詳細については、「[テンプレート パラメーター](../ide/template-parameters.md)」を参照してください。  
   
-5. テンプレート内のファイルを選択して右クリックし、**[送信]** を選択し、**[圧縮 (zip 形式) フォルダー]** をクリックします。 選択したファイルは .zip ファイルに圧縮されます。  
+5. テンプレート内のファイルを選択して右クリックし、 **[送信]** を選択し、 **[圧縮 (zip 形式) フォルダー]** をクリックします。 選択したファイルは .zip ファイルに圧縮されます。  
   
 6. 新しい .zip ファイルを古い .zip ファイルと同じディレクトリに配置します。  
   

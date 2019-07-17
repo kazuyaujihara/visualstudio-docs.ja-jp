@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 03b92c8ea9b764df517b02dc0dc256b5837a6c10
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187111"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>ドメイン固有言語をカスタマイズするコードの記述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "58973562"
   
 - **他の Visual Studio 拡張機能。** 読み取りおよびモデルの変更を別の VSIX 拡張機能を記述することができます。 詳細については、「[方法 :プログラム コード内のファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
-  DslDefinition.dsl で定義するクラスのインスタンスと呼ばれるデータ構造に保存しておく、*インメモリ ストア*(IMS) または*ストア*します。 常に、DSL で定義したクラスは、コンストラクターに引数として、ストアを受け取ります。 たとえば、DSL の例と呼ばれるクラスを定義するとします。  
+  DslDefinition.dsl で定義するクラスのインスタンスと呼ばれるデータ構造に保存しておく、*インメモリ ストア*(IMS) または*ストア*します。 常に、DSL で定義したクラスは、コンス トラクターに引数として、ストアを受け取ります。 たとえば、DSL の例と呼ばれるクラスを定義するとします。  
   
   `Example element = new Example (theStore);`  
   

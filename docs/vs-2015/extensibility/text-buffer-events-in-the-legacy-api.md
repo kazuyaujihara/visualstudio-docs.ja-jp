@@ -11,13 +11,13 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e82fa31ca435d0c850a4d9e75e927cff9613b046
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186412"
 ---
-# <a name="text-buffer-events-in-the-legacy-api"></a>レガシ API でのテキスト バッファー イベント
+# <a name="text-buffer-events-in-the-legacy-api"></a>レガシ API のテキスト バッファー イベント
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 テキスト バッファー オブジェクトは、さまざまな状況に対応するためのいくつかのイベントを出力します。  
@@ -53,4 +53,4 @@ ms.locfileid: "58976673"
   
 ## <a name="see-also"></a>関連項目  
  [レガシ API を使用して、テキスト バッファーにアクセスします。](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [方法: テキスト バッファー イベント、レガシ API の登録します。](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+ [方法: レガシ API でテキスト バッファー イベントを登録する](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
