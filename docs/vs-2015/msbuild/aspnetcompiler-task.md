@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1267ddbb093f59eaa60fae0eef2d83f6b7ba2e24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187057"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

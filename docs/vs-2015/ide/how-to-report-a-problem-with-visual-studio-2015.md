@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186338"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Visual Studio 2015 で問題を報告する方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Microsoft は、お客様のプライバシーを尊重いたします。 お客
 
 ## <a name="open-the-report-a-problem-tool"></a>[問題の報告] ツールを開きます
 
-タイトル バーで **[クイック起動]** の横にあるユーザー フィードバック アイコンをクリックするか、**[ヘルプ] > [フィードバックの送信]、[問題の報告]** の順にクリックします。
+タイトル バーで **[クイック起動]** の横にあるユーザー フィードバック アイコンをクリックするか、 **[ヘルプ] > [フィードバックの送信]、[問題の報告]** の順にクリックします。
 
 ![[問題の報告] メニュー項目](../ide/media/report-a-problem-menu-item.png "[問題の報告] メニュー項目")
 

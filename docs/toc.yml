@@ -575,6 +575,8 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: XML ファイルと XSLT ファイルの操作
           href: xml-tools/xml-tools-in-visual-studio.md
+        - name: コンテナーでの開発
+          href: containers/index.yml
         - name: インクルーシブなアプリの開発
           items:
             - name: アクセシビリティ対応アプリの設計

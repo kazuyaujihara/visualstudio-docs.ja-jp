@@ -14,16 +14,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 092eeb8f3c4621d98e0432b87b5c3218b51ac35b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54786283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201859"
 ---
 # <a name="filtered-completion-lists-in-visual-basic"></a>Visual Basic でのフィルター処理されたコンプリート リスト
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Basic の IntelliSense コンプリート リストには、リストの下部近くに 2 つのタブ コントロールがあります。 既定で選択されている **[よく使われる候補]** タブには、作成しているステートメントを完成するために最もよく使われる項目が表示されます。 **[すべて]** タブには、**[よく使われる候補]** タブに表示されている項目も含めて、オート コンプリートで使用可能なすべての項目が表示されます。  
+Visual Basic の IntelliSense コンプリート リストには、リストの下部近くに 2 つのタブ コントロールがあります。 既定で選択されている **[よく使われる候補]** タブには、作成しているステートメントを完成するために最もよく使われる項目が表示されます。 **[すべて]** タブには、 **[よく使われる候補]** タブに表示されている項目も含めて、オート コンプリートで使用可能なすべての項目が表示されます。  
   
 ## <a name="see-also"></a>関連項目  
  [IntelliSense の使用](../ide/using-intellisense.md)   

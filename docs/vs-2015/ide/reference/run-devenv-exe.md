@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 68e5dcc5ff2e78fe87bbaad639c93f5532ea74fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163388"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ devenv {/run|/r} {SolutionName|ProjectName}
   
 - 空白を含む文字列を二重引用符で囲みます。  
   
-- エラーなどの概要情報は、**[コマンド]** ウィンドウ、または `/out`スイッチで指定した任意のログ ファイルに表示できます。  
+- エラーなどの概要情報は、 **[コマンド]** ウィンドウ、または `/out`スイッチで指定した任意のログ ファイルに表示できます。  
   
 ## <a name="example"></a>例  
  この例では、アクティブな配置構成を使用して、ソリューション `MySolution` を実行します。  

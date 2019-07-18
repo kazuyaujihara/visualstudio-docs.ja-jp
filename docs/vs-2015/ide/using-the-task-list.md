@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c9526b2deaafb36e991afce6d29ace47f8564ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179340"
 ---
 # <a name="using-the-task-list"></a>タスク一覧の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60091409"
   
 #### <a name="to-open-the-task-list"></a>[タスク一覧] を開くには  
   
-- **[表示]** メニューで、**[タスク一覧]** をクリックします (キーボード: Ctrl + \\、T)。  
+- **[表示]** メニューで、 **[タスク一覧]** をクリックします (キーボード: Ctrl + \\、T)。  
   
      ![[タスク一覧] ウィンドウ](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -109,7 +109,7 @@ ms.locfileid: "60091409"
   
 ##### <a name="to-turn-off-c-todo-comments"></a>C++ TODO コメントをオフにするには  
   
-1. **[ツール]** メニューで、**[オプション &#124; テキストエディター &#124; C/C++ &#124; 表示 &#124; コメント タスクの列挙]** に移動し、値を False に設定します。  
+1. **[ツール]** メニューで、 **[オプション &#124; テキストエディター &#124; C/C++ &#124; 表示 &#124; コメント タスクの列挙]** に移動し、値を False に設定します。  
   
 2. **[オプション]** ダイアログ ボックスで、 **[テキスト エディター]** を開きます。  
   

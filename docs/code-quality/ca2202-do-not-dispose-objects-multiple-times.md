@@ -1,6 +1,6 @@
 ---
 title: CA2202:オブジェクトを複数回破棄しない
-ms.date: 11/04/2016
+ms.date: 07/16/2019
 ms.topic: reference
 f1_keywords:
 - CA2202
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed2edd83918a9e4bc89543d1217d51e5e87f00c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5fb70baa17bee484dc3c31d7c6ce9b302019403
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796833"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300597"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202:オブジェクトを複数回破棄しない
 
@@ -27,34 +27,34 @@ ms.locfileid: "62796833"
 |-|-|
 |TypeName|DoNotDisposeObjectsMultipleTimes|
 |CheckId|CA2202|
-|カテゴリ|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
 
-メソッドの実装には、複数の呼び出しを引き起こす可能性のあるコード パスが含まれています。<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>または同じオブジェクトで、一部の型に対する Close() メソッドなどの Dispose と同等です。
+メソッドの実装に<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>は、同じオブジェクトに対して、または一部の型の Close () メソッドなどの Dispose と同等のの呼び出しを発生させる可能性があるコードパスが含まれています。
 
 ## <a name="rule-description"></a>規則の説明
 
-正しく実装する<xref:System.IDisposable.Dispose%2A>メソッドは、例外をスローせず複数回呼び出すことができます。 ただし、これは保証されませんが生成されないようにして、<xref:System.ObjectDisposedException?displayProperty=fullName>呼び出す必要はありません<xref:System.IDisposable.Dispose%2A>オブジェクトの 1 つ以上の時間。
+正しく実装<xref:System.IDisposable.Dispose%2A>されたメソッドは、例外をスローせずに複数回呼び出すことができます。 ただし、これは保証されていないため<xref:System.ObjectDisposedException?displayProperty=fullName> 、を生成し<xref:System.IDisposable.Dispose%2A>ないようにするには、オブジェクトでを複数回呼び出す必要があります。
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA 2000:スコープが失われる前にオブジェクトを破棄します。](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+- [CA2000スコープを失う前にオブジェクトを破棄する](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を解決するには、コード パスのことに関係なく実装を変更する<xref:System.IDisposable.Dispose%2A>オブジェクトの 1 つだけの時間と呼びます。
+この規則違反を修正するには、コードパス<xref:System.IDisposable.Dispose%2A>に関係なく、オブジェクトに対して1回だけ呼び出されるように実装を変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-この規則による警告は抑制しないでください。 場合でも<xref:System.IDisposable.Dispose%2A>オブジェクトには複数回を安全に呼び出すことがわかっていますの場合、実装が、将来変更可能性があります。
+この規則による警告は抑制しないでください。 オブジェクトが<xref:System.IDisposable.Dispose%2A>安全に複数回呼び出し可能であることがわかっている場合でも、実装は将来変更される可能性があります。
 
 ## <a name="example"></a>例
 
-入れ子になった`using`ステートメント (`Using` Visual Basic の) ca 2202 警告の違反が発生することができます。 場合、入れ子になった内側の IDisposable のリソース`using`ステートメントは、外部のリソースを含む`using`ステートメントでは、`Dispose`入れ子になったリソースのメソッドが含まれているリソースを解放します。 このような状況が発生したときに、`Dispose`メソッドの外側の`using`ステートメントは、リソースを dispose を 2 回目のしようとしています。
+入れ子`using`になっ`Using`たステートメント (Visual Basic) では、CA2202 警告の違反が発生する可能性があります。 入れ子になった内側`using`のステートメントの IDisposable リソースに外側`using`のステートメントのリソースが含ま`Dispose`れている場合、入れ子になったリソースのメソッドは、含まれているリソースを解放します。 このような状況が発生`Dispose`すると、外側`using`のステートメントのメソッドは、そのリソースをもう一度破棄しようとします。
 
-次の例では、<xref:System.IO.Stream>外部で作成されるオブジェクトの Dispose メソッドでステートメントを使用して内部の最後にリリースがステートメントを使用して、<xref:System.IO.StreamWriter>オブジェクトを含む、`stream`オブジェクト。 外側の最後に`using`ステートメントでは、`stream`オブジェクトが 2 番目の時間を解放します。 2 番目のリリースでは、ca 2202 違反です。
+次の例では、 <xref:System.IO.Stream>外部の using ステートメントで作成されたオブジェクトが、 `stream`オブジェクトを含む<xref:System.IO.StreamWriter>オブジェクトの Dispose メソッド内の inner using ステートメントの最後に解放されます。 外側`using`のステートメント`stream`の最後では、オブジェクトが2回解放されます。 2番目のリリースは、CA2202 の違反です。
 
 ```csharp
 using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
@@ -68,7 +68,7 @@ using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
 
 ## <a name="example"></a>例
 
-この問題を解決するには、使用、 `try` / `finally`ではなく、外側のブロック`using`ステートメント。 `finally`ことを確認、ブロック、`stream`リソースが null でないです。
+この問題を解決するには`try` 、外側`using`のステートメントの代わりにブロックを/ `finally`使用します。 ブロックで、 `stream`リソースが null でないことを確認します。 `finally`
 
 ```csharp
 Stream stream = null;
@@ -83,10 +83,12 @@ try
 }
 finally
 {
-    if(stream != null)
-        stream.Dispose();
+    stream?.Dispose();
 }
 ```
+
+> [!TIP]
+> 上記の構文は、 [null 条件演算子です。](/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-) `?.`
 
 ## <a name="see-also"></a>関連項目
 

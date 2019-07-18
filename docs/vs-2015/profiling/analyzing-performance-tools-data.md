@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a141e6f02c8457adaee45ddc6905470a747123d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156441"
 ---
 # <a name="analyzing-performance-tools-data"></a>パフォーマンス データを分析する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

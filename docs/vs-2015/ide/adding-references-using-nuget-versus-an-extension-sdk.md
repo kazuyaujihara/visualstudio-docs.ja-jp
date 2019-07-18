@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e89b677113a04f286be3201a6b76d78fd5d191c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148307"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>拡張 SDK と比較して NuGet を使用した参照の追加
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Visual Studio を対象とする NuGet 拡張機能、またはソフトウェ�
   
 - NuGet は、オープン ソースのパッケージ管理システムであり、ライブラリをプロジェクトのソリューションに組み込むプロセスを簡略化します。 詳細については、[NuGet の概要](http://go.microsoft.com/fwlink/?LinkId=254877)に関するページを参照してください。  
   
-- SDK は、Visual Studio が単一の参照項目として取り扱うファイルのコレクションです。 **[参照マネージャー]** ダイアログ ボックスでは、このダイアログ ボックスを表示した時点で開いていたプロジェクトに関連するすべての SDK が一覧表示されます。 SDK をプロジェクトに追加すると、IntelliSense、**[ツールボックス]**、デザイナー、**[オブジェクト ブラウザー]**、MSBuild、配置、デバッグおよびパッケージの各機能を通じて、その SDK のすべての内容にアクセスできます。 詳細については、「[Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md)」 (ソフトウェア開発キットの作成) を参照してください。  
+- SDK は、Visual Studio が単一の参照項目として取り扱うファイルのコレクションです。 **[参照マネージャー]** ダイアログ ボックスでは、このダイアログ ボックスを表示した時点で開いていたプロジェクトに関連するすべての SDK が一覧表示されます。 SDK をプロジェクトに追加すると、IntelliSense、 **[ツールボックス]** 、デザイナー、 **[オブジェクト ブラウザー]** 、MSBuild、配置、デバッグおよびパッケージの各機能を通じて、その SDK のすべての内容にアクセスできます。 詳細については、「[Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md)」 (ソフトウェア開発キットの作成) を参照してください。  
   
 ## <a name="which-mechanism-should-i-use"></a>使用するメカニズムの決定  
  次の表を使用して、SDK の参照機能と NuGet の参照機能を比較できます。  
@@ -37,10 +37,10 @@ Visual Studio を対象とする NuGet 拡張機能、またはソフトウェ�
 |MSBuild は、アセンブリと Windows メタデータ (.winmd) ファイルを自動的に使用します。|Y|SDK 内の参照は、コンパイラに対して自動的に渡されます。|Y||  
 |MSBuild は、.h ファイルまたは .lib ファイルを自動的に使用します。|Y|*SDKName*.props ファイルは、.h ファイルまたは .lib ファイルを自動的に使用するために Visual C++ のディレクトリなどをセットアップする方法を Visual Studio に伝えます。|N||  
 |MSBuild は、.js ファイルまたは .css ファイルを自動的に使用します。|Y|**ソリューション エクスプローラー**で JavaScript SDK 参照ノードを展開し、個別の .js ファイルまたは .css ファイルを表示した後、それらのファイルをそれぞれのソース ファイルにドラッグすることにより、`<source include/>` タグを生成できます。 SDK は、F5 キーを使用する方法と自動的なパッケージ設定方法をサポートします。|Y||  
-|MSBuild は、**[ツールボックス]** 内のコントロールを自動的に追加します。|Y|**[ツールボックス]** は SDK を使用し、指定されたタブの中にコントロールを表示することができます。|N||  
+|MSBuild は、 **[ツールボックス]** 内のコントロールを自動的に追加します。|Y|**[ツールボックス]** は SDK を使用し、指定されたタブの中にコントロールを表示することができます。|N||  
 |このメカニズムでは、VSIX (Visual Studio Installer for extensions) をサポートします。|Y|VSIX には、SDK パッケージを作成するための特別なマニフェストとロジックがあります。|Y|VSIX は、別のセットアップ プログラムに埋め込むことができます。|  
 |**オブジェクト ブラウザー**は、参照を列挙します。|Y|**オブジェクト ブラウザー**は SDK 内にある参照の一覧を自動的に取得し、それらを列挙します。|N||  
-|ファイルとリンクは、**[参照マネージャー]** ダイアログ ボックスに自動的に追加されます (ヘルプへのリンクなどが自動的に設定されます)。|Y|**[参照マネージャー]** ダイアログ ボックスでは、SDK が自動的に列挙され、ヘルプへのリンクや SDK の依存関係の一覧も表示されます。|N|NuGet では独自の **[NuGet パッケージの管理]** ダイアログ ボックスが表示されます。|  
+|ファイルとリンクは、 **[参照マネージャー]** ダイアログ ボックスに自動的に追加されます (ヘルプへのリンクなどが自動的に設定されます)。|Y|**[参照マネージャー]** ダイアログ ボックスでは、SDK が自動的に列挙され、ヘルプへのリンクや SDK の依存関係の一覧も表示されます。|N|NuGet では独自の **[NuGet パッケージの管理]** ダイアログ ボックスが表示されます。|  
 |このメカニズムでは複数のアーキテクチャがサポートされます。|Y|SDK は、複数の構成で出荷することができます。 MSBuild は、各プロジェクト構成に適したファイルを使用します。|N||  
 |このメカニズムでは複数の構成がサポートされます。|Y|SDK は、複数の構成で出荷することができます。 プロジェクトのアーキテクチャに基づいて、MSBuild は各プロジェクト アーキテクチャに適したファイルを使用します。|N||  
 |このメカニズムでは、"not to copy" (コピーしない) を指定できます。|Y|ファイルを \redist と \designtime どちらのフォルダーにドロップするかに応じて、使用側アプリケーション パッケージにどのファイルをコピーするかを制御できます。|N|どのファイルをコピーするかを、パッケージ マニフェスト内で宣言します。|  
@@ -54,7 +54,7 @@ Visual Studio を対象とする NuGet 拡張機能、またはソフトウェ�
 |このメカニズムは、アプリケーション マニフェストに統合されます。|Y|SDK は、[!INCLUDE[win8_appstore_short](../includes/win8-appstore-short-md.md)] に固有の概念を渡す必要があります。その結果、パッケージ化機能と、F5 キーを使用する方法は、[!INCLUDE[win8_appstore_short](../includes/win8-appstore-short-md.md)] で使用可能な SDK で正常に機能します。|Y|NuGet の内容は、プロジェクトの一部になります。 F5 に関して特別な考慮事項は必要ありません。|  
 |このメカニズムは、非参照ファイルを配置します (たとえば、[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] アプリケーションのテストを実行するためのテスト フレームワークを配置します)。|Y|\redist フォルダーにファイルをドロップした場合は、それらのファイルは自動的に配置されます。|Y||  
 |このメカニズムは、Visual Studio IDE 内のプラットフォーム SDK を自動的に追加します。|Y|[!INCLUDE[win8](../includes/win8-md.md)] SDK または Windows Phone SDK を特定のレイアウトで特定の位置にドロップすると、その SDK は Visual Studio のすべての機能に自動的に統合されます。|N||  
-|このメカニズムでは、開発者のクリーンなコンピューターがサポートされています  (つまり、インストールは必要なく、ソース・コード管理からの単純な取得が機能します)。|N|SDK を参照するには、ソリューションと SDK を個別にチェックインする必要があります。 MSBuild が SDK を反復処理する、レジストリとは異なる 2 つの既定の場所から SDK をチェックインできます (詳細については、「[Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md)」 (ソフトウェア開発キットの作成) を参照してください)。 代わりに、カスタムの位置に SDK が配置されている場合は、プロジェクト ファイル内で次のコードを指定できます。<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> 次に、その場所に SDK をチェックインします。|Y|ソリューションをチェック アウトすることもでき、その場合は Visual Studio が直ちにファイルを認識して、そのファイルを処理します。|  
+|このメカニズムでは、開発者のクリーンなコンピューターがサポートされています (つまり、インストールは必要なく、ソース・コード管理からの単純な取得が機能します)。|N|SDK を参照するには、ソリューションと SDK を個別にチェックインする必要があります。 MSBuild が SDK を反復処理する、レジストリとは異なる 2 つの既定の場所から SDK をチェックインできます (詳細については、「[Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md)」 (ソフトウェア開発キットの作成) を参照してください)。 代わりに、カスタムの位置に SDK が配置されている場合は、プロジェクト ファイル内で次のコードを指定できます。<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> 次に、その場所に SDK をチェックインします。|Y|ソリューションをチェック アウトすることもでき、その場合は Visual Studio が直ちにファイルを認識して、そのファイルを処理します。|  
 |パッケージ作成者から成る既存の大規模コミュニティに参加することもできます。|N/A|このコミュニティは新しく作成されたものです。|Y||  
 |パッケージ使用者から成る既存の大規模コミュニティに参加することもできます。|N/A|このコミュニティは新しく作成されたものです。|Y||  
 |パートナーのエコシステム (カスタム ギャラリー、リポジトリなど) に参加できます。|N/A|使用可能なリポジトリには、Visual Studio ギャラリー、Microsoft ダウンロード センター、および [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)] が含まれます。|Y||  

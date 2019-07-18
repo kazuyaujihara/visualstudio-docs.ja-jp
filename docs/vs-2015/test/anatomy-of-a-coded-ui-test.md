@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 46226d241db04cad0f4859650dc2aff855b72f08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155607"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>コード化された UI テストの構造
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60102030"
 - Visual Studio Enterprise  
   
 ## <a name="contents-of-a-coded-ui-test"></a>コード化された UI テストの内容  
- コード化された UI テストを作成すると、**[コード化された UI テスト ビルダー]** によってテスト対象のユーザー インターフェイスのマップが作成されるほか、すべてのテストのテスト メソッド、パラメーター、およびアサーションも作成されます。 また、各テストのクラス ファイルも作成されます。  
+ コード化された UI テストを作成すると、 **[コード化された UI テスト ビルダー]** によってテスト対象のユーザー インターフェイスのマップが作成されるほか、すべてのテストのテスト メソッド、パラメーター、およびアサーションも作成されます。 また、各テストのクラス ファイルも作成されます。  
   
 |ファイル|目次|編集可能かどうか|  
 |----------|--------------|---------------|  
