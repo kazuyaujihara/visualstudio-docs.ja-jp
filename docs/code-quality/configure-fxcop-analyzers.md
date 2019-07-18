@@ -1,5 +1,5 @@
 ---
-title: Editorconfig を使用して FxCop アナライザーを構成します。
+title: Editorconfig を使用した FxCop アナライザーの構成
 ms.date: 03/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,29 +9,29 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac751b7ec130b6bfbb18752c02b491b6c342f172
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0152ae9f76ea1318f717c41a70d3d46351c9021a
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816930"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300609"
 ---
-# <a name="configure-fxcop-analyzers"></a>FxCop アナライザーを構成します。
+# <a name="configure-fxcop-analyzers"></a>FxCop アナライザーの構成
 
-[FxCop アナライザー](install-fxcop-analyzers.md)静的コード分析、Roslyn アナライザーへの変換から最も重要な"FxCop"規則で構成されます。 2 つの方法では、FxCop コード アナライザーを構成できます。
+[FxCop アナライザー](install-fxcop-analyzers.md)は、静的コード分析から、Roslyn アナライザーに変換された最も重要な "FxCop" ルールで構成されています。 FxCop コードアナライザーは、次の2つの方法で構成できます。
 
-- [ルール セット](#fxcop-analyzer-rule-sets)、有効またはルールを無効にし、個々 のルール違反の重要度を設定することができます。
+- ルール[セット](#fxcop-analyzer-rule-sets)を使用して、ルールを有効または無効にしたり、個々のルール違反の重大度を設定したりできます。
 
-- 以降のバージョン 2.6.3、 [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)を通じて NuGet がパッケージ化、 [.editorconfig ファイル](#editorconfig-file)します。 [構成可能なオプション](fxcop-analyzer-options.md)let のどの部分を絞り込む、コードベースを分析します。
+- [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet パッケージのバージョン2.6.3 から、 [editorconfig ファイル](#editorconfig-file)を介して開始します。 [構成可能なオプション](fxcop-analyzer-options.md)を使用すると、コードベースのどの部分を分析するかを調整できます。
 
 > [!TIP]
-> FxCop 静的コード分析と FxCop アナライザーの違いについては、次を参照してください。 [FxCop アナライザー FAQ](fxcop-analyzers-faq.md)します。
+> FxCop 静的コード分析と FxCop アナライザーの違いについては、「 [fxcop アナライザー](fxcop-analyzers-faq.md)に関する FAQ」を参照してください。
 
-## <a name="fxcop-analyzer-rule-sets"></a>FxCop アナライザーの規則セット
+## <a name="fxcop-analyzer-rule-sets"></a>FxCop アナライザーのルールセット
 
-FxCop アナライザーを構成する方法の 1 つは、XML を使用して、*ルール セット*します。 規則セットは、対象の問題と特定の条件を識別するコード分析規則のグループです。 規則セットでは、有効またはルールを無効にし、個々 のルール違反の重要度を設定できます。
+FxCop アナライザーを構成する方法の1つは、XML*規則セット*を使用することです。 ルールセットは、対象となる問題と特定の条件を識別するコード分析ルールをグループ化したものです。 ルールセットを使用すると、ルールを有効または無効にしたり、個々のルール違反の重大度を設定したりできます。
 
-FxCop アナライザーの NuGet パッケージには、次の規則のカテゴリの定義済みの規則セットが含まれています。
+FxCop analyzer NuGet パッケージには、次の規則カテゴリの定義済みの規則セットが含まれています。
 
 - デザイン
 - ドキュメント
@@ -42,30 +42,30 @@ FxCop アナライザーの NuGet パッケージには、次の規則のカテ�
 - セキュリティ
 - 使い方
 
-詳細については、次を参照してください。 [Roslyn アナライザーの規則セット](analyzer-rule-sets.md)します。
+詳細については、 [Roslyn アナライザーのルールセット](analyzer-rule-sets.md)に関する説明を参照してください。
 
 ## <a name="editorconfig-file"></a>EditorConfig ファイル
 
-アナライザーの規則を構成するにはキーと値のペアを追加することで、 [.editorconfig](https://editorconfig.org)ファイル。 構成ファイルを指定できます[、プロジェクトに固有](#per-project-configuration)でもかまいません[共有](#shared-configuration)2 つ以上のプロジェクト間で。
+[Editorconfig](https://editorconfig.org)ファイルにキーと値のペアを追加することにより、アナライザーの規則を構成できます。 構成ファイルは、[プロジェクトに固有](#per-project-configuration)のものもあれば、2つ以上のプロジェクト間で[共有](#shared-configuration)することもできます。
 
 ### <a name="per-project-configuration"></a>プロジェクトごとの構成
 
-特定のプロジェクトの .editorconfig ベースのアナライザーの構成を有効にするには追加、 *.editorconfig*ファイルをプロジェクトのルート ディレクトリにします。
+特定のプロジェクトに対して editorconfig ベースのアナライザーの構成を有効にするには、プロジェクトのルートディレクトリに*editorconfig*ファイルを追加します。
 
 > [!TIP]
-> .Editorconfig ファイルをプロジェクトに追加するにはでプロジェクトを右クリックして**ソリューション エクスプ ローラー**選択**追加** > **新しい項目の**します。 **新しい項目の追加**ウィンドウで、入力**editorconfig**検索ボックスにします。 選択、 **editorconfig ファイル (既定値)** テンプレートを選択して**追加**します。
+> Editorconfig ファイルをプロジェクトに追加するには、**ソリューションエクスプローラー**でプロジェクトを右クリックし、[**新しい項目**の**追加** > ] を選択します。 **[新しい項目の追加]** ウィンドウで、検索ボックスに「 **editorconfig** 」と入力します。 **[Editorconfig ファイル (既定)]** テンプレートを選択し、 **[追加]** を選択します。
 >
-> ![Visual Studio でプロジェクトに editorconfig 項目を追加します。](media/add-editorconfig-file.png)
+> ![Visual Studio で editorconfig 項目をプロジェクトに追加する](media/add-editorconfig-file.png)
 
-現在階層はサポートされていません「結合」.editorconfig ファイルのソリューションとプロジェクト レベルなど、別のディレクトリのレベルに存在します。
+現在、ソリューションレベルやプロジェクトレベルなど、異なるディレクトリレベルに存在する editorconfig ファイルを "結合" するための階層的なサポートはありません。
 
 ### <a name="shared-configuration"></a>共有構成
 
-2 つ以上のプロジェクト間でアナライザーの構成の .editorconfig ファイルを共有することができますが、追加の手順が必要です。
+アナライザーの構成ファイルは、2つ以上のプロジェクト間で共有できますが、いくつかの追加の手順が必要です。
 
-1. 保存、 *.editorconfig*ファイルを一般的な場所にします。
+1. *Editorconfig*ファイルを共通の場所に保存します。
 
-2. 作成、 *.props*ファイルは次の内容。
+2. 次の内容を含む props ファイルを作成*し*ます。
 
    ```xml
    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -78,7 +78,7 @@ FxCop アナライザーの NuGet パッケージには、次の規則のカテ�
    </Project>
    ```
 
-3. 行を追加して、 *.csproj*または *.vbproj*をインポートするファイル、 *.props*前の手順で作成したファイル。 この行は、FxCop アナライザーをインポートする行の前に配置する必要があります *.props*ファイル。 たとえば、.props ファイルの名前は*editorconfig.props*:
+3. *.Csproj*ファイルまたは *.vbproj*ファイルに行を追加して、前の手順で作成した*props*ファイルをインポートします。 この行は、FxCop アナライザーの*props*ファイルをインポートする行の前に配置する必要があります。 たとえば、props ファイルに*editorconfig. props*という名前が付けられているとします。
 
    ```xml
    ...
@@ -87,14 +87,14 @@ FxCop アナライザーの NuGet パッケージには、次の規則のカテ�
    ...
    ```
 
-4. プロジェクトの再読み込みします。
+4. プロジェクトを再度読み込みます。
 
 > [!NOTE]
-> .Editorconfig ファイルを使用して、古い FxCop 規則 (静的コード分析は FxCop) を構成することはできません。
+> Editorconfig ファイルを使用して、従来の FxCop 規則 (静的コード分析 FxCop) を構成することはできません。
 
-## <a name="option-scopes"></a>オプションのスコープ
+## <a name="option-scopes"></a>オプションスコープ
 
-すべてのルール、(たとえば、名前付けまたはデザイン) ルールのカテゴリまたは特定のルールは、各オプションを構成できます。
+各オプションは、ルールのカテゴリ (名前付けや設計など)、または特定のルールに対して、すべてのルールに対して構成できます。
 
 ### <a name="all-rules"></a>すべてのルール
 
@@ -102,15 +102,15 @@ FxCop アナライザーの NuGet パッケージには、次の規則のカテ�
 
 |構文|例|
 |-|-|
-| dotnet_code_quality します。OptionName OptionValue を = | `dotnet_code_quality.api_surface = public` |
+| dotnet_code_quality.OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
 
-### <a name="category-of-rules"></a>規則のカテゴリ
+### <a name="category-of-rules"></a>ルールのカテゴリ
 
-ためのオプションを構成するための構文を*カテゴリ*(名前付け、デザイン、パフォーマンスなど) ルールのとおりです。
+ルールの*カテゴリ*(名前付け、設計、パフォーマンスなど) のオプションを構成するための構文は次のとおりです。
 
 |構文|例|
 |-|-|
-| dotnet_code_quality します。RuleCategory.OptionName OptionValue を = | `dotnet_code_quality.Naming.api_surface = public` |
+| dotnet_code_quality.RuleCategory OptionName = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
 
 ### <a name="specific-rule"></a>特定のルール
 
@@ -118,9 +118,10 @@ FxCop アナライザーの NuGet パッケージには、次の規則のカテ�
 
 |構文|例|
 |-|-|
-| dotnet_code_quality します。RuleId.OptionName OptionValue を = | `dotnet_code_quality.CA1040.api_surface = public` |
+| dotnet_code_quality.RuleId OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
 
 ## <a name="see-also"></a>関連項目
 
 - [アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)
 - [FxCop アナライザー](install-fxcop-analyzers.md)
+- [EditorConfig の .NET コーディング規則](../ide/editorconfig-code-style-settings-reference.md)
