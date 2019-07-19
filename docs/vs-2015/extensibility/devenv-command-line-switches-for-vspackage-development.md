@@ -18,11 +18,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 97ce429a7140d7b95393c2dcb8b34491b3adfefa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185278"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>VSPackage 開発の Devenv コマンド ライン スイッチ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60118046"
 |--------------------------|-----------------|  
 |/safemode|起動[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]セーフ モードで、既定の IDE とサービスの読み込み。 /Safemode スイッチから読み込むときにすべてのサード パーティ Vspackage を防止する[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]開始、安定した実行を確認します。<br /><br /> このスイッチは引数を取りません。|  
 |/resetskippkgs|問題の Vspackage の読み込みを回避するために必要のあるユーザーによって追加された読み込みのオプションをスキップすべて消去されますが、開始[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。 SkipLoading タグの存在は、VSPackage の読み込みを無効にします。 VSPackage の読み込みを再度有効にタグをクリアします。<br /><br /> このスイッチは引数を取りません。|  
-|/rootsuffix|開始[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]別の場所を使用しています。 によって作成されたショートカットで、次のコマンドを実行、[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]インストーラー。<br /><br /> devenv /RootSuffix exp<br /><br /> この場合は、exp 10.0 ではなく、特定のサフィックス、たとえば 10.0Exp と場所を識別します。 実験用インスタンスでは、インスタンスから個別に VSPackage をデバッグできます。[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]コードを記述するを使用しています。<br /><br /> このスイッチは、VSRegEx.exe を使用して作成した場所を識別する任意の文字列を実行できます。 詳細については、次を参照してください。 [、実験用インスタンス](../extensibility/the-experimental-instance.md)します。|  
+|/rootsuffix|開始[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]別の場所を使用しています。 によって作成されたショートカットで、次のコマンドを実行、[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]インストーラー。<br /><br /> devenv/RootSuffix exp<br /><br /> この場合は、exp 10.0 ではなく、特定のサフィックス、たとえば 10.0Exp と場所を識別します。 実験用インスタンスでは、インスタンスから個別に VSPackage をデバッグできます。[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]コードを記述するを使用しています。<br /><br /> このスイッチは、VSRegEx.exe を使用して作成した場所を識別する任意の文字列を実行できます。 詳細については、次を参照してください。 [、実験用インスタンス](../extensibility/the-experimental-instance.md)します。|  
 |/splash|表示、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]スプラッシュ画面を通常どおりにし、メインの IDE を表示する前にメッセージ ボックスを表示します。 メッセージ ボックスを使用して、VSPackage 製品アイコンなどを確認する、スプラッシュ スクリーンを調査できます。<br /><br /> このスイッチは引数を取りません。|  
   
 ## <a name="see-also"></a>関連項目  

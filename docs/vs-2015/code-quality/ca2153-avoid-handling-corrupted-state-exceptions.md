@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: f8999c2e4622505526524f2a09a5f33259955974
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142574"
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153:破損状態例外の処理を回避する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "58974603"
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
-|カテゴリ|Microsoft.Security|
+|Category|Microsoft.Security|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因

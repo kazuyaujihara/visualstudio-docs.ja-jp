@@ -13,11 +13,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a3da08450df7edf9046aaa926d89c182c91d03a7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194192"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name 要素 (Visual Studio テンプレート)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,8 +45,8 @@ ms.locfileid: "58976772"
   
 |属性|説明|  
 |---------------|-----------------|  
-|`Package`|省略可能な属性、高度なユーザー シナリオです。<br /><br /> Visual Studio パッケージを指定する GUID の id。|  
-|`ID`|省略可能な属性、高度なユーザー シナリオです。<br /><br /> Visual Studio のリソース ID を指定します|  
+|`Package`|省略可能な属性、高度なユーザー シナリオです。<br /><br /> Visual Studio のパッケージ ID を指定する GUID です。|  
+|`ID`|省略可能な属性、高度なユーザー シナリオです。<br /><br /> Visual Studio のリソース ID を指定します。|  
   
 ### <a name="child-elements"></a>子要素  
  なし。  
@@ -58,9 +58,9 @@ ms.locfileid: "58976772"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必須の要素です。<br /><br /> テンプレートをカテゴリに分類し、 **[新しいプロジェクト]** ダイアログ ボックス、または **[新しい項目の追加]** ダイアログ ボックスでどのように表示させるかを定義します。|  
   
 ## <a name="text-value"></a>テキスト値  
- しない限り、テキスト値が必要です、`Package`と`ID`属性が使用されます。  
+ `Package` と `ID` 属性を使わない限り、テキスト値が必要です。  
   
- テキストは、テンプレートの名前を提供します。  
+ テキストによってテンプレートの名前を指定します。  
   
 ## <a name="remarks"></a>Remarks  
  `Name` は `TemplateData` に必須の子要素です。  

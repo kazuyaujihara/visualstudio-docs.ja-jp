@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 10a605de597159130aa14bf7dd623b387e27bc97
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162687"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend のアートボードの修飾キー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54771332"
   
 |目的|方法|  
 |-----------------------|-------------|  
-|別のツールが選択された状態のまま、一時的に **[選択内容]** ツールを選択する (**[ツール]** パネルで **[選択内容]** と別のツールを切り替えるためにクリックする回数が減ります)|Ctrl キーを押す|  
+|別のツールが選択された状態のまま、一時的に **[選択内容]** ツールを選択する ( **[ツール]** パネルで **[選択内容]** と別のツールを切り替えるためにクリックする回数が減ります)|Ctrl キーを押す|  
 |**[選択内容]** ツールを選択した状態で、選択したオブジェクトを少しずつ移動する|矢印キーを押す|  
 |アートボードの位置変更|スペース バー押しながらアートボードをドラッグする|  
 |アートボードに対してズーム インとズーム アウトを行う|マウス ホイールを回す|  

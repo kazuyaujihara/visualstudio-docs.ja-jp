@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 02/13/2018
 ms.topic: conceptual
 description: 管理者が過剰に要求されたサブスクリプションを解決する方法を説明します。
-searchscope: VS Subscription
-ms.openlocfilehash: 06da8c460e9660857b0f03062bde5bd983bd176d
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 23a0888a670c10af4447d7a097067ffe4fe70c0f
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586998"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783451"
 ---
 # <a name="overallocated-subscriptions"></a>サブスクリプションの割り当て超過
 

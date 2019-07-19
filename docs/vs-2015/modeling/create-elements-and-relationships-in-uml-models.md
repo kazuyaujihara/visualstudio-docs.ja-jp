@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159634"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>UML モデル内に要素および関係を生成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|  
   
 ### <a name="invoke-the-create-method-on-the-owner"></a>所有者に対して Create メソッドを呼び出す  
- 形式は、メソッド名です。`Create`*OwnedType*`()`します。 例:  
+ 形式は、メソッド名です。`Create`*OwnedType*`()`します。 例えば:  
   
 ```  
 IUseCase usecase1 = linkedPackage.CreateUseCase();  
@@ -93,7 +93,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 3. リレーションシップのプロパティ (名前など) を設定します。  
   
-     例:  
+     例えば:  
   
     ```  
     IAssociation association = subject.Package.CreateAssociation(subject, observer);  

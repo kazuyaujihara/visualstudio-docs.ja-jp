@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02fe3ec6787eec0846f709ac65555260a3c03165
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 24f1b0a26875bbbf8dfc4ac7db1049f7309d9aa2
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343984"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891114"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>VSIX v3 での Ngen のサポート
 
@@ -37,7 +37,7 @@ Visual Studio 2017 と、新しい VSIX v3 (バージョン 3) の拡張機能�
 
 1. **Ngen** (Boolean) - true の場合、Visual Studio インストーラーでの"ngen"アセンブリ。
 2. **Ngen アプリケーション**(文字列) - アプリケーションを使用する機会を提供する Ngen *app.config*アセンブリの依存関係を解決するためにファイル。 この値に設定するアプリケーションが*app.config* (Visual Studio インストール ディレクトリ) を基準に使用します。
-3. **Ngen アーキテクチャ**(列挙) のアーキテクチャをアセンブリをネイティブにコンパイルします。 オプションを: します。 B の notspecified です。 X86 c。 X64 d。 すべて
+3. **Ngen アーキテクチャ**(列挙) のアーキテクチャをアセンブリをネイティブにコンパイルします。 オプションを: します。 B の notspecified です。 X86 c。 X64 d。 All
 4. **Ngen の優先度**(1 ~ 3 の範囲の整数) で、Ngen の優先度レベルについては、 [Ngen.exe の優先度レベル](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels)します。
 
 ここを参照してください、**プロパティ**ウィンドウの動作。
@@ -55,9 +55,10 @@ Visual Studio 2017 と、新しい VSIX v3 (バージョン 3) の拡張機能�
     <NgenArchitecture>X86</NgenArchitecture>
     <NgenPriority>2</NgenPriority>
 </ProjectReference>
- ```
+```
 
- >**注:** たい場合は、.csproj ファイルを直接編集できます。
+> [!NOTE]
+> たい場合は、.csproj ファイルを直接編集できます。
 
 ## <a name="extra-information"></a>追加情報
 

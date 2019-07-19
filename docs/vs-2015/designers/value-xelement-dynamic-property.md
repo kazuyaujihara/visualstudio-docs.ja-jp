@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 51a8f46f0313e90fbceb96d2dcae46b1409c759a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187493"
 ---
 # <a name="value-xelement-dynamic-property"></a>Value (XElement 動的プロパティ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ elem.Value
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値  
  要素の連結されたコンテンツを表す <xref:System.String>。  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>Remarks  
  このプロパティは、<xref:System.Xml.Linq.XElement.Value%2A> クラスの <xref:System.Xml.Linq.XElement?displayProperty=fullName> プロパティに相当します。ただし、この動的プロパティは変更通知もサポートします。  
   
 ## <a name="see-also"></a>関連項目

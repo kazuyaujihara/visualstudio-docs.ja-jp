@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159623"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>アイコンまたはデコレーターの可視性の制御
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ A*デコレーター*がアイコンか、ドメイン固有言語 (DSL) 内の�
   
 1. ドメイン クラスには、計算ドメイン プロパティを追加します。 **プロパティ**ウィンドウで、次の値を設定します。  
   
-     **IsBrowsable =**`False`**-非表示に、ユーザーからのプロパティ**  
+     **IsBrowsable =** `False` **-非表示に、ユーザーからのプロパティ**  
   
-     **種類 =**`Calculated`**-つまり、その値を計算するコードを指定します。**  
+     **種類 =** `Calculated` **-つまり、その値を計算するコードを指定します。**  
   
      **名前**たとえば**DecoratorControl**  
   

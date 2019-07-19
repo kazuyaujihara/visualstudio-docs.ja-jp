@@ -17,11 +17,11 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f14942ffd59ce2c6eacf7da2d0d1ab252d58e2cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194447"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ typedef LONG (*LPTEXTOUTPROC) (
  mesg_type  
  メッセージの種類。 次の表では、このパラメーターのサポートされている値を示します。  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|メッセージは情報、警告、またはエラーと見なされます。|  
 |`SCC_MSG_STATUS`|メッセージは、状態が表示され、ステータス バーに表示されることができます。|  
@@ -61,7 +61,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="return-value"></a>戻り値  
   
-|[値]|説明|  
+|値|説明|  
 |-----------|-----------------|  
 |SCC_MSG_RTN_OK|文字列の表示または操作が正常に完了します。|  
 |SCC_MSG_RTN_CANCEL|ユーザーが操作をキャンセルしようとするとします。|  

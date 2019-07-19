@@ -17,16 +17,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15c6d6c904bbab27bac541894ed6cd4f9e1f80f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202681"
 ---
-# <a name="how-to-start-and-end-performance-data-collection"></a>方法: 開始し、終了のパフォーマンス データの収集
+# <a name="how-to-start-and-end-performance-data-collection"></a>方法: パフォーマンス データの収集の開始と終了
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-プロファイリングを開始する前に、プロファイリング対象のバイナリをパフォーマンス セッションに追加する必要があります。 対象を追加するには、**パフォーマンス エクスプローラー**で **[ターゲット]** を右クリックし、**[ターゲット バイナリの追加]** をクリックします。 **[ターゲット バイナリの追加]** ダイアログ ボックスで、ファイル名を選択して **[開く]** をクリックします。 新しいバイナリが追加されます。  
+プロファイリングを開始する前に、プロファイリング対象のバイナリをパフォーマンス セッションに追加する必要があります。 対象を追加するには、**パフォーマンス エクスプローラー**で **[ターゲット]** を右クリックし、 **[ターゲット バイナリの追加]** をクリックします。 **[ターゲット バイナリの追加]** ダイアログ ボックスで、ファイル名を選択して **[開く]** をクリックします。 新しいバイナリが追加されます。  
   
 ### <a name="to-start-profiling"></a>プロファイリングを開始するには  
   
@@ -34,7 +34,7 @@ ms.locfileid: "60115251"
   
     - **[プロファイルを使用して起動]** - アプリケーションを開始し、プロファイリングを即座に開始します。  
   
-    - **[プロファイルを一時停止して起動]** - アプリケーションを開始しますが、プロファイリングは開始しません。 プロファイリングを開始するには、**[データ収集コントロール]** ウィンドウで **[収集の再開]** を選択します。 詳細については、「[方法 :一時停止と再開パフォーマンス データの収集](../profiling/how-to-pause-and-resume-performance-data-collection.md)します。  
+    - **[プロファイルを一時停止して起動]** - アプリケーションを開始しますが、プロファイリングは開始しません。 プロファイリングを開始するには、 **[データ収集コントロール]** ウィンドウで **[収集の再開]** を選択します。 詳細については、「[方法 :一時停止と再開パフォーマンス データの収集](../profiling/how-to-pause-and-resume-performance-data-collection.md)します。  
   
 ### <a name="to-end-profiling"></a>プロファイリングを終了するには  
   

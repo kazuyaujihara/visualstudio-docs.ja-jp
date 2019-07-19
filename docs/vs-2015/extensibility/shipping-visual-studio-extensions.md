@@ -13,11 +13,11 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c7154395be43f6a0b07e9f2557d94fa594ef5ba4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150786"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Visual Studio 拡張機能の配布
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,8 +57,8 @@ ms.locfileid: "59647202"
 |[VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)|VSIX パッケージのコンポーネントについて説明します。|
 |[VSIX プロジェクト テンプレート](../extensibility/vsix-project-template.md)|パッケージ化し、拡張機能を公開する方法についての詳細な手順について説明します。|
 |[VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)|Extension.vsixlangpack ファイルを使用して、インストール プロセスのローカライズされたテキストを提供する方法について説明します。|
-|[方法: 拡張機能を更新します。](../extensibility/how-to-update-a-visual-studio-extension.md)|システムに拡張機能を更新する方法と更新プログラムを既存の Visual Studio 拡張機能をデプロイする方法について説明します。|
-|[方法: VSIX パッケージへの依存関係を追加します。](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|VSIX 展開パッケージへの参照を追加する方法について説明します。|
+|[方法: 拡張機能を更新する](../extensibility/how-to-update-a-visual-studio-extension.md)|システムに拡張機能を更新する方法と更新プログラムを既存の Visual Studio 拡張機能をデプロイする方法について説明します。|
+|[方法: VSIX パッケージへの依存関係の追加](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|VSIX 展開パッケージへの参照を追加する方法について説明します。|
 |[Windows インストーラーの配置に関する拡張機能を準備する](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Windows インストーラーで、拡張機能をデプロイする方法について説明します。|
 |[VSIX パッケージの署名](../extensibility/signing-vsix-packages.md)|VSIX パッケージに署名する方法をについて説明します。|
 |[プライベート ギャラリー](../extensibility/private-galleries.md)|拡張機能のプライベート ギャラリーを作成する方法について説明します。|

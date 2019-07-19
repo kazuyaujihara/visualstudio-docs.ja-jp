@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 097d666a839f67e657610b34641ed29da91797be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194034"
 ---
 # <a name="private-galleries"></a>Private Galleries
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60085858"
   
 #### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>拡張機能と更新プログラムにプライベート ギャラリーを追加するには  
   
-1. メニュー バーの **[ツール]**、 **[オプション]** の順にクリックします。  
+1. メニュー バーの **[ツール]** 、 **[オプション]** の順にクリックします。  
   
 2. **環境**ノードの **拡張機能と更新**します。  
   
@@ -46,7 +46,7 @@ ms.locfileid: "60085858"
   
     1. プライベート ギャラリーに接続するホストが Atom フィードの場合は、このいずれかの URL のようになります: http://www.mywebsite/mygallery/atom.xml します。  この URL は、ファイルまたはネットワーク パスを参照できます。  
   
-    2. ホストが SharePoint サイトの場合は、URL のようになりますこのいずれか:http://mysharepoint/sites/mygallery/forms/AllItems.aspxします。  
+    2. ホストが SharePoint サイトの場合は、URL のようになりますこのいずれか: http://mysharepoint/sites/mygallery/forms/AllItems.aspx します。  
   
 ### <a name="managing-private-galleries"></a>プライベート ギャラリーを管理します。  
  行うことができますをプライベート ギャラリー使用可能な複数のコンピューターに同時に各コンピューター上のシステム レジストリを変更することで。 これを実現するには、新しいレジストリ キーとその値を記述する .pkgdef ファイルを作成します。  このファイルの形式は次のとおりです。  
@@ -72,7 +72,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 #### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>検索してプライベート ギャラリーから拡張機能をインストールするには  
   
-1. メニュー バーで、**[ツール]**、**[拡張機能と更新プログラム]** の順にクリックします。  
+1. メニュー バーで、 **[ツール]** 、 **[拡張機能と更新プログラム]** の順にクリックします。  
   
 2. 左側のウィンドウで次のように選択します。**拡張機能のオンライン**、し、**マイ ギャラリー**します。  
   
@@ -85,7 +85,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 #### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>プライベート ギャラリーからインストールされている拡張機能を更新するには  
   
-1. メニュー バーで、**[ツール]**、**[拡張機能と更新プログラム]** の順にクリックします。  
+1. メニュー バーで、 **[ツール]** 、 **[拡張機能と更新プログラム]** の順にクリックします。  
   
 2. 左側のウィンドウで次のように選択します。**更新**、し、**マイ リポジトリ**します。  
   

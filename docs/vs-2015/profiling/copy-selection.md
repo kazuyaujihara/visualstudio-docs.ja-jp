@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a1e9a4f3451e7ca5c4cb242ecef9374a07213373
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163581"
 ---
 # <a name="copy-selection"></a>選択範囲のコピー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-レポート タブから呼び出し履歴全体をコピーするには、**[コピー]** をクリックします。 その後、貼り付けをサポートする任意のプログラムに呼び出し履歴を貼り付けることができます。  
+レポート タブから呼び出し履歴全体をコピーするには、 **[コピー]** をクリックします。 その後、貼り付けをサポートする任意のプログラムに呼び出し履歴を貼り付けることができます。  
   
 ## <a name="see-also"></a>関連項目  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

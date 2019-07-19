@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/15/2018
 ms.topic: conceptual
 description: クラウド ソリューション プロバイダーが顧客のために Visual Studio クラウド サブスクリプションを購入および管理する方法について説明します。
-searchscope: VS Subscription
-ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4db9211041aca4a49bcd3feb182cfd80423d6960
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978511"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250658"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>顧客用に Visual Studio クラウド サブスクリプションを購入して管理する
 
@@ -47,12 +46,12 @@ Azure サブスクリプションに対する[所有者または共同作成者�
 0. **[Buy]\(購入\)** を選択します。
 0. 購入の請求先の Azure サブスクリプションを選びます。
 0. 顧客が必要とするユーザーの数を入力します。
-0. 注文を確認して、**[Confirm]\(確認\)** を選択します。
+0. 注文を確認して、 **[Confirm]\(確認\)** を選択します。
 
 >[!NOTE]
 > CSP として Visual Studio サブスクリプションを購入するたびに、以上の手順に従う必要があります。 現時点では、購入を自動化するための API はありません。
 
-購入を確定した後は、**[Manage]\(管理\)** を選択して、顧客のエンド ユーザーにサブスクリプションを割り当てることができます。  また、パートナー センターで **[Service management]\(サービス管理\)** を選択して、サブスクリプション管理ポータルにアクセスすることもできます。  それ以降については、以下の手順またはビデオをご覧ください。
+購入を確定した後は、 **[Manage]\(管理\)** を選択して、顧客のエンド ユーザーにサブスクリプションを割り当てることができます。  また、パートナー センターで **[Service management]\(サービス管理\)** を選択して、サブスクリプション管理ポータルにアクセスすることもできます。  それ以降については、以下の手順またはビデオをご覧ください。
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>顧客用に Visual Studio クラウド サブスクリプションを管理する方法
 
@@ -65,7 +64,7 @@ Azure サブスクリプションに対する[所有者または共同作成者�
 
 その顧客に複数の Azure サブスクリプションがある場合は、ドロップダウン メニューを使って、購入を行った Azure サブスクリプションを選びます。  **[License Summary]\(ライセンスの概要\)** に、割り当て済みのサブスクリプションの数と、Visual Studio クラウド サブスクリプションのオプションごとに使用可能な数が表示されます。  概要では、サブスクリプションの追加購入や、サブスクリプションの数の削減を行うこともできます。
 
-新しいユーザーにサブスクリプションを割り当てるには、**[add]\(追加\)** を選択します。  表示されている数が更新され、エンド ユーザーはメール通知を受け取ります。
+新しいユーザーにサブスクリプションを割り当てるには、 **[add]\(追加\)** を選択します。  表示されている数が更新され、エンド ユーザーはメール通知を受け取ります。
 エンド ユーザーは、提供されたメール アドレスを使って [Visual Studio サブスクライバー ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)にサインインし、Visual Studio サブスクリプションをアクティブ化できます。
 
 Visual Studio サブスクリプションを別のユーザーに割り当て直すには、現在のサブスクライバーを削除した後、新しいサブスクライバーを追加します。
@@ -74,7 +73,7 @@ Visual Studio サブスクリプションを別のユーザーに割り当て直
 
 ## <a name="view-visual-studio-pricing-for-csp-partners"></a>CSP パートナー向けの Visual Studio の価格を見る
 
-CSP パートナー向けの Visual Studio の価格を見るには、[パートナー センター](https://partnercenter.microsoft.com)にログインします。  左側のナビゲーションで **[Pricing and offers]\(価格とプラン\)** を選択します。  右上の **[usage-based services]\(使用量ベースのサービス\)** で、今月の価格ファイルを選びます。 Excel スプレッドシートをダウンロードした後、**[Azure Price List]\(Azure 価格リスト\)** シートを開き、**[Meter Category]\(メーター カテゴリ\)** 列を **[Visual Studio]** でフィルターします。
+CSP パートナー向けの Visual Studio の価格を見るには、[パートナー センター](https://partnercenter.microsoft.com)にログインします。  左側のナビゲーションで **[Pricing and offers]\(価格とプラン\)** を選択します。  右上の **[usage-based services]\(使用量ベースのサービス\)** で、今月の価格ファイルを選びます。 Excel スプレッドシートをダウンロードした後、 **[Azure Price List]\(Azure 価格リスト\)** シートを開き、 **[Meter Category]\(メーター カテゴリ\)** 列を **[Visual Studio]** でフィルターします。
 
 このスプレッドシートの見方を次に示します。
 

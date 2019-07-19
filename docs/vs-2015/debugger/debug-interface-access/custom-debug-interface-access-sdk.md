@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5e1a1819178961ae0a4ccd02286d6a166fd18b8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164407"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>カスタム (Debug Interface Access SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 一部のコンパイラでは、標準の構文の記号の種類のいずれかで識別されていないシンボルを導入します。 これらのシンボルがで識別される、`SymTagCustom`タグ。  
   
-## <a name="properties"></a>プロパティ  
+## <a name="properties"></a>Properties  
  次の表では、この記号の型の有効なプロパティを示します。  
   
 |プロパティ|データの種類|説明|  

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 7973646aab545484287f5628eb0fa3cf3629db84
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189205"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707:識別子はアンダースコアを含むことはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
 |-|-|  
 |TypeName|IdentifiersShouldNotContainUnderscores|  
 |CheckId|CA1707|  
-|カテゴリ|Microsoft.Naming|  
+|Category|Microsoft.Naming|  
 |互換性に影響する変更点|重大なアセンブリで発生したときに<br /><br /> 非的な型パラメーターで発生したときに|  
   
 ## <a name="cause"></a>原因  

@@ -11,11 +11,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d3ce9f3fc810a1f2fd37166d4272b7c57c07927c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203271"
 ---
 # <a name="control-of-execution"></a>実行の制御
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ ms.locfileid: "58973141"
   
 5. ステップ イン、するか、関数から IDE を呼び出して、プログラムのデバッグ セッション メッセージが表示されます`Step`(命令、ステートメント、または行) のステップとステップの種類の単位を渡して、メソッド、つまりにステップ インを超えるかどうか、または、関数から。 ステップが完了したら、デは stopping イベントが、デバッグ セッションに手順の完了イベントを送信します。  
   
-    - または -  
+    \- または -  
   
     IDE を呼び出して、プログラムのデバッグ セッションを求める場合は、現在の命令ポインターから実行を継続することにした場合、ユーザー、 **Execute**メソッド。 プログラムは、[次へ] の停止条件を検出するまで実行を再開します。  
   
-    - または -  
+    \- または -  
   
     デバッグ セッションが、プログラムを呼び出して、デバッグ セッションを停止してから特定のイベントを無視する場合、**続行**メソッド。 プログラムが、停止条件が発生したときに、または関数からステップ実行している場合、は、ステップが続行します。  
   

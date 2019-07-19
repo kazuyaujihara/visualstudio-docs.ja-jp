@@ -12,11 +12,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f11ed48d9dcf961228957cf15db3815c00d14d7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204223"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "58973473"
 |属性|説明|  
 |---------------|-----------------|  
 |name|必須。 GUID 記号の名前です。|  
-|値|必須。 GUID 記号の GUID です。|  
+|value|必須。 GUID 記号の GUID です。|  
   
 ### <a name="child-elements"></a>子要素  
   

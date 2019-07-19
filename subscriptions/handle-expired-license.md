@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: 管理者が期限切れの Visual Studio サブスクリプションを処理する方法を説明します。
-searchscope: VS Subscription
-ms.openlocfilehash: 3008f570c32970de2764871132e3ddde3dda226c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b47c18ffc826a755aeafbfc2621aef890afaf37
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945805"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250399"
 ---
 # <a name="handling-expired-subscriptions"></a>有効期限が切れたサブスクリプションに対応する
 

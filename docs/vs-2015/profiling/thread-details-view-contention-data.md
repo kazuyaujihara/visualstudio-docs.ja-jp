@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 16ee86e69cb3a150a98de5077aa0c545545833e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145591"
 ---
 # <a name="thread-details-view---contention-data"></a>スレッドの詳細ビュー - 競合データ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "60069108"
   
 #### <a name="to-zoom-out-on-a-timeline"></a>タイムラインを縮小するには  
   
-- 前のズーム レベルに戻るには、**[縮小]** をクリックします。  
+- 前のズーム レベルに戻るには、 **[縮小]** をクリックします。  
   
-- タイムライン全体をビューに表示するには、**[ズーム リセット]** をクリックします。  
+- タイムライン全体をビューに表示するには、 **[ズーム リセット]** をクリックします。  
   
 #### <a name="to-view-the-call-stack-of-an-event"></a>イベントの呼び出し履歴を表示するには  
   
@@ -59,6 +59,6 @@ ms.locfileid: "60069108"
   
 #### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>プロセス ウィンドウにスレッド競合データを表示するには  
   
-- タイムライン グラフで、**[合計]** をクリックします。  
+- タイムライン グラフで、 **[合計]** をクリックします。  
   
      選択したスレッドを表示する[プロセス ビュー](../profiling/process-view-contention-data.md)が表示されます。

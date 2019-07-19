@@ -20,13 +20,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73e2c3f2c9736fd762a9e763827ed641ea5069f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153820"
 ---
-# <a name="how-to-create-a-product-manifest"></a>方法: 製品マニフェストを作成します。
+# <a name="how-to-create-a-product-manifest"></a>方法: 製品マニフェストを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 アプリケーションの必須コンポーネントを展開するには、ブートス トラップ パッケージを作成できます。 ブートス トラップ パッケージには、ロケールごとに、パッケージ マニフェストが 1 つの製品マニフェスト ファイルが含まれています。 パッケージ マニフェストには、パッケージのローカライズに固有の要素が含まれています。 これには、文字列、使用許諾契約書、および言語パックが含まれます。  

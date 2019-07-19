@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e60f9b3c9acf1377139fee27486bb10251d8804a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158466"
 ---
 # <a name="memory-windows"></a>[メモリ] ウィンドウ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ ms.locfileid: "60059593"
   
 1. **メモリ**ウィンドウ**アドレス**ボックスに、ポインター式を入力します。 ポインター変数は、現在のスコープ内にあることが必要です。 言語によっては、逆参照が必要な場合があります。  
   
-2. **Enter** キーを押します。  
+2. **Enter**キーを押します。  
   
      ここで、使用する場合の実行コマンドなど**手順**、表示されているメモリ アドレスは、ポインターが変わると自動的に変更されます。  
   

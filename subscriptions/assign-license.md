@@ -6,19 +6,18 @@ manager: jillfra
 ms.date: 07/16/2018
 ms.topic: conceptual
 description: 管理者がサブスクライバーにライセンスを割り当てる方法を説明します
-searchscope: VS Subscription
-ms.openlocfilehash: 97962571d8a7c433a5f72af90d9107f9e2b08a9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e9eb19ce4f9947f730bcd32be5ddcc931770bde
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946518"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783539"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio サブスクリプション管理者ポータルでライセンスを割り当てる
 
 Visual Studio サブスクリプションの管理者は、管理者ポータルを使用して、個々のユーザーおよびユーザーのグループにサブスクリプションを割り当てることができます。
 
-ユーザーのグループの場合、一度に 1 つずつグループにサブスクリプションを割り当てることも、**[一括追加]** 機能を使用して迅速かつ簡単にサブスクリプション情報でサブスクライバーの一覧をアップロードすることも可能です。
+ユーザーのグループの場合、一度に 1 つずつグループにサブスクリプションを割り当てることも、 **[一括追加]** 機能を使用して迅速かつ簡単にサブスクリプション情報でサブスクライバーの一覧をアップロードすることも可能です。
 
 ## <a name="individual-assignments"></a>個別の割り当て
 
@@ -34,19 +33,19 @@ Visual Studio サブスクリプションの管理者は、管理者ポータル
    > [!div class="mx-imgBorder"]
    > ![新しい通知メール アドレスを追加する](media/add-new-subscriber-notification-email.png)
 
-    このサブスクライバーが [Visual Studio サブスクリプション ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)にサインインするときにソフトウェアのダウンロードにアクセスできるようにする場合は、**[ダウンロードの設定]** セクションでダウンロードのトグルをオンのままにします。 ダウンロードを無効にすると、ユーザーはソフトウェアのダウンロードにアクセスできなくなりますが、サブスクリプションに含まれる他のすべての特典には引き続きアクセスできます。
+    このサブスクライバーが [Visual Studio サブスクリプション ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)にサインインするときにソフトウェアのダウンロードにアクセスできるようにする場合は、 **[ダウンロードの設定]** セクションでダウンロードのトグルをオンのままにします。 ダウンロードを無効にすると、ユーザーはソフトウェアのダウンロードにアクセスできなくなりますが、サブスクリプションに含まれる他のすべての特典には引き続きアクセスできます。
    > [!div class="mx-imgBorder"]
    > ![ダウンロードにアクセスする](media/access-to-downloads.png)
 
-    サブスクライバーが受け取る情報の言語を変更する場合は、**[Communication Preferences]\(通信設定\)** セクションで変更できます。
+    サブスクライバーが受け取る情報の言語を変更する場合は、 **[Communication Preferences]\(通信設定\)** セクションで変更できます。
    > [!div class="mx-imgBorder"]
    > ![通知メールを送信するときに使用する言語を変更する](media/change-subscriber-communication-preference.png)
 
-    サブスクリプションに独自の参照メモを追加する場合は、**[Add reference]\(参照の追加\)** セクションで追加できます。
+    サブスクリプションに独自の参照メモを追加する場合は、 **[Add reference]\(参照の追加\)** セクションで追加できます。
    > [!div class="mx-imgBorder"]
    > ![サブスクリプションごとに独自の参照メモを追加する](media/add-subscriber-reference-notes.png)
 
-    オプションの選択とサブスクライバーのデータの入力が終わったら、**[Add Subscriber]\(サブスクライバーの追加\)** フライアウトの下部にある **[追加]** を選択します。
+    オプションの選択とサブスクライバーのデータの入力が終わったら、 **[Add Subscriber]\(サブスクライバーの追加\)** フライアウトの下部にある **[追加]** を選択します。
    > [!div class="mx-imgBorder"]
    > ![[追加] ボタンを選択する](media/add-button.png)
 
@@ -56,11 +55,11 @@ Visual Studio サブスクリプションの管理者は、管理者ポータル
 
 ## <a name="bulk-assignments"></a>一括割り当て
 
-1. 複数のサブスクライバーを一度に追加するには、**[サブスクライバーの管理]** タブに移動します。上部リボンの **[一括追加]** をクリックします。
+1. 複数のサブスクライバーを一度に追加するには、 **[サブスクライバーの管理]** タブに移動します。上部リボンの **[一括追加]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![複数のサブスクライバーを追加する](media/add-multiple-subscribers.png)
 
-2. 一括割り当てでは、Microsoft Excel テンプレートを使ってサブスクライバーをアップロードします。 [Upload Multiple Subscribers]\(複数のサブスクライバーのアップロード\) ダイアログ ボックスで、**[ダウンロード]** をクリックしてテンプレートをダウンロードします。
+2. 一括割り当てでは、Microsoft Excel テンプレートを使ってサブスクライバーをアップロードします。 [Upload Multiple Subscribers]\(複数のサブスクライバーのアップロード\) ダイアログ ボックスで、 **[ダウンロード]** をクリックしてテンプレートをダウンロードします。
    > [!div class="mx-imgBorder"]
    > ![複数のサブスクライバーをアップロードするための Excel テンプレートをダウンロードする](media/download-template-upload-subscribers.png)
    >
@@ -75,11 +74,11 @@ Visual Studio サブスクリプションの管理者は、管理者ポータル
     - フォームのフィールドの前後のスペースを削除します。
     - ユーザーの名前の名または姓が 2 つの部分からなる場合、それらの間に余分なスペースがないようにします (たとえば、"Maggie May" のように 2 つの部分からなる名前は、"MaggieMay" と入力する必要があります。システムは余分なスペースを除去しません)。
 
-4. Visual Studio サブスクリプション管理ポータルに戻ります。 **[Upload Multiple Subscribers]\(複数のサブスクライバーのアップロード\)** ダイアログ ボックスで、**[参照]** をクリックします。
+4. Visual Studio サブスクリプション管理ポータルに戻ります。 **[Upload Multiple Subscribers]\(複数のサブスクライバーのアップロード\)** ダイアログ ボックスで、 **[参照]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![複数のサブスクライバーをアップロードするために保存したテンプレートを参照する](media/bulk-add-browse-saved-template.png)
 
-5. 保存した Excel ファイルを選んで、**[OK]** をクリックします。
+5. 保存した Excel ファイルを選んで、 **[OK]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![複数のサブスクライバーをアップロードするための Excel テンプレートをアップロードする](media/bulk-upload-subscribers.png)
 

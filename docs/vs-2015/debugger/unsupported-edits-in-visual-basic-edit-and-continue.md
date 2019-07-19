@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94a151a7adab5c8246cec38c2e62d76788beb6e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155433"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Visual Basic エディット コンティニュでサポートされていない編集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "60076942"
   
 - ブロック内で新しいインスタンスを宣言することによる静的ローカル変数のシャドウ  
   
-- イベント ハンドラーの削除  (イベント ハンドラーの追加は可能)  
+- イベント ハンドラーの削除 (イベント ハンドラーの追加は可能)  
   
 - 新しいオーバーロード プロパティまたはメソッドの追加 (ただし、そのプロパティまたはメソッドが `Private` であり、どのアクティブ ステートメントにもその名前がない場合を除く)  
   

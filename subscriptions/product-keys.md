@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: Visual Studio サブスクリプションで、プロダクト キーを取得して管理する方法を説明します。
-searchscope: VS Subscription
-ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4874f5b0d429db7102facfe7f4747d68134fca2
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977725"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67785023"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでのプロダクト キーの使用
 
@@ -98,7 +97,7 @@ Visual Studio サブスクリプションがあれば、ターミナル サー�
 これは、開発/テスト権限に追加されるもので、Visual Studio サブスクライバーが必要に応じて必要な数の RDS または TS 接続を使用することができます。
 
 ### <a name="enabling-rds-access"></a>RDS アクセスを有効にする
-Visual Studio サブスクライバーは、[サブスクライバー ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)の [[プロダクト キー]](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) タブに提供されるプロダクト キーを入力し、Windows Server に RDS でアクセスできるユーザー数を増やすことができます。 プロダクト キーを取得するには、[プロダクト キー] ページに接続して下方向にスクロールし、実行中の Windows Server のバージョンを表示します。 [Windows Server <バージョン> R2 リモート デスクトップ サービス <ユーザーまたはデバイス> 接続] を検索し、**[キーの要求]** リンクをクリックします。 たとえば、Windows Server 2012 R2 で RDS を使用して、展開にユーザー CAL を使用している場合は、[Windows Server 2012 リモート デスクトップ サービス ユーザー接続 (50)] を選択します。
+Visual Studio サブスクライバーは、[サブスクライバー ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)の [[プロダクト キー]](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) タブに提供されるプロダクト キーを入力し、Windows Server に RDS でアクセスできるユーザー数を増やすことができます。 プロダクト キーを取得するには、[プロダクト キー] ページに接続して下方向にスクロールし、実行中の Windows Server のバージョンを表示します。 [Windows Server <バージョン> R2 リモート デスクトップ サービス <ユーザーまたはデバイス> 接続] を検索し、 **[キーの要求]** リンクをクリックします。 たとえば、Windows Server 2012 R2 で RDS を使用して、展開にユーザー CAL を使用している場合は、[Windows Server 2012 リモート デスクトップ サービス ユーザー接続 (50)] を選択します。
 Windows Server 2008 R2 では、種類ごとに 5 つのキーが利用でき、各キーが 20 の接続に対応します。 Windows Server 2012 R2 では、種類ごとに 4 つのキーが利用でき、それぞれ 50 の接続に対応します。
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Windows Server への追加の接続を有効にするには:

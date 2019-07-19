@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0eae2fd7490269d713beb9950163071dd3ba32f5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160558"
 ---
 # <a name="strings-element"></a>文字列要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "58963074"
   
 |属性|説明|  
 |---------------|-----------------|  
-|language|省略可能です。 Language ="."です。|  
+|language|任意。 Language ="."です。|  
   
 ### <a name="child-elements"></a>子要素  
   

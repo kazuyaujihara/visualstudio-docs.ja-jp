@@ -11,13 +11,13 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cedb95ccd98c3d5bd5e05086cfd1b53b0f97cd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186381"
 ---
-# <a name="tool-windows-in-the-registry"></a>ツールの Windows レジストリで
+# <a name="tool-windows-in-the-registry"></a>レジストリのツール ウィンドウ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ツール ウィンドウを提供する Vspackage に登録する必要があります[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]同様のツール ウィンドウのプロバイダー。 Visual Studio パッケージ テンプレートを使用して作成されたツール ウィンドウは、既定でこれを実行します。 ツール ウィンドウのプロバイダーでは、既定のツール ウィンドウのサイズと場所、ツール ウィンドウのウィンドウとドッキング スタイルとして機能するウィンドウの GUID などの可視性属性を指定するシステムのレジストリ キーがあります。  

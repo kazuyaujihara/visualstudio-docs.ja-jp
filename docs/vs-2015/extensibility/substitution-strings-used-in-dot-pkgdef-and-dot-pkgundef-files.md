@@ -11,13 +11,13 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 47434d9d1dfcedeeaea330b1d65645d7a632c6e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160541"
 ---
-# <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>使用される文字列を置換します。Pkgdef とします。Pkgundef ファイル
+# <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>.pkgdef および .pkgundef ファイルで使用されている代替文字列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 分離シェル アプリケーションの Visual Studio 用に定義した .pkgundef ファイルと、.pkgdef に以下の代替文字列を使用できます。  
@@ -30,14 +30,14 @@ ms.locfileid: "58963071"
 |$AppName $|AppEnv.dll のエントリ ポイントに渡されるアプリケーションの修飾名。 修飾名は、アプリケーション名、アンダー スコア、およびプロジェクトの .pkgdef ファイルで ThisVersionDTECLSID 設定の値としても記録されますが、アプリケーション オートメーション オブジェクトのクラス id (CLSID) で構成されます。|  
 |$AppDataLocalFolder|このアプリケーションの %localappdata% 下のサブフォルダーです。|  
 |$BaseInstallDir $|Visual Studio がインストールされている場所の完全パス。|  
-|$CommonFiles$|%Commonprogramfiles% 環境変数の値。|  
-|$MyDocuments$|現在のユーザーのマイ ドキュメント フォルダーの完全パス。|  
-|$PackageFolder$|アプリケーションのパッケージのアセンブリ ファイルを含むディレクトリの完全パス。|  
+|$CommonFiles $|%Commonprogramfiles% 環境変数の値。|  
+|$MyDocuments $|現在のユーザーのマイ ドキュメント フォルダーの完全パス。|  
+|$PackageFolder $|アプリケーションのパッケージのアセンブリ ファイルを含むディレクトリの完全パス。|  
 |$ProgramFiles $|%Programfiles% 環境変数の値。|  
-|$RootFolder$|アプリケーションのルート ディレクトリの完全パス。|  
+|$RootFolder $|アプリケーションのルート ディレクトリの完全パス。|  
 |$RootKey $|アプリケーションのルート レジストリ キー。 Hkey_current_user のルートは、既定で\\*CompanyName*\\*ProjectName*\\*VersionNumber* (場合アプリケーションが実行されている、_Config がこのキーに追加されます)。 RegistryRoot 値で設定されている、 *SolutionName*.pkgdef ファイル。<br /><br /> アプリケーションのサブキーの下のレジストリ値を取得する $RootKey$ の文字列を使用できます。 たとえば、文字列"$= $RootKey \AppIcon$"はアプリケーションのルートのサブキーの下の AppIcon エントリの値を返します。<br /><br /> パーサーが順番に .pkgdef ファイルを処理し、エントリは既に定義されている場合にのみアプリケーション サブキーのレジストリ エントリにアクセスできます。|  
-|$ShellFolder$|Visual Studio がインストールされている場所の完全パス。|  
+|$ShellFolder $|Visual Studio がインストールされている場所の完全パス。|  
 |$System $|Windows \system32 フォルダーです。|  
-|$WINDIR$|Windows のフォルダーです。|  
+|$WINDIR $|Windows のフォルダーです。|  
   
  パーサーが置換文字列を認識していないでその部分文字列の置換は実行されませんし、レジストリ エントリまたは環境変数の値を判断できない場合。

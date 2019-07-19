@@ -9,18 +9,18 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0cab24a373595ca1257cbdaa50c009eefa713ea7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148841"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>チュートリアル: ビューの表示要素、コマンド、設定 (垂直グリッド ガイド) の作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 コマンドとビューの効果を Visual Studio のテキストまたはコード エディターを拡張することができます。 このトピックでは、人気のある拡張機能、列ガイドを使用する方法を示します。 列ガイドは、特定の列の幅にコードを管理するために、テキスト エディターのビューに描画される視覚的にライトの線です。 具体的には書式設定されたコードは、ドキュメント、ブログの投稿に含めるか、バグのレポートのサンプルについては重要でもあります。
 
-このチュートリアルでは。
+このチュートリアルでは、次の作業を行います。
 
 - VSIX プロジェクトを作成します。
 - エディター ビューの表示要素を追加します。
@@ -44,7 +44,7 @@ Visual Studio 2015 以降、ダウンロード センターから Visual Studio 
 - ユーザーのコマンドがある場合に必要な VSIP パッケージがありますが、コマンドの実装オブジェクトを初期化する定型コードだけです。
 - `ColumnGuideCommands` .Vsct ファイルで宣言されているユーザーのコマンドを実装して、コマンドに対するコマンド ハンドラーをフックするオブジェクト。
   
-  **VSIX**します。 使用**ファイル&#124;新しい.** プロジェクトを作成するコマンド。 左側のナビゲーション ウィンドウで C# の機能拡張ノードを選択し、 **VSIX プロジェクト**右側のペインでします。 ColumnGuides の名前を入力し、選択**OK**プロジェクトを作成します。
+  **VSIX**します。 使用**ファイル&#124;新しい.** プロジェクトを作成するコマンド。 左側のナビゲーション ウィンドウで c# の機能拡張ノードを選択し、 **VSIX プロジェクト**右側のペインでします。 ColumnGuides の名前を入力し、選択**OK**プロジェクトを作成します。
   
   **装飾の表示**します。 ソリューション エクスプ ローラーでプロジェクト ノードを右ポインター ボタンを押します。 選択、**追加&#124;新しい項目.** 新しいビューの表示要素項目を追加するコマンド。 選択**拡張&#124;エディター**左側のナビゲーション ウィンドウで選択**エディターのビューポート Adornment**右側のウィンドウで。 項目の名前として ColumnGuideAdornment の名前を入力し、選択**追加**に追加します。
   
@@ -491,7 +491,7 @@ namespace ColumnGuides
 
 このクラスのインスタンスを関連付けられている保持<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>と一連の`Line`ビュー上に描画するオブジェクト。
 
-コンストラクター (から呼び出される`ColumnGuideAdornmentTextViewCreationListener`Visual Studio で新しいビューを作成するときに) 列ガイドを作成します。`Line`オブジェクト。 コンストラクターものハンドラーを追加、`SettingsChanged`イベント (で定義されている`GuidesSettingsManager`) とイベントの表示`LayoutChanged`と`Closed`します。
+コンス トラクター (から呼び出される`ColumnGuideAdornmentTextViewCreationListener`Visual Studio で新しいビューを作成するときに) 列ガイドを作成します。`Line`オブジェクト。 コンス トラクターものハンドラーを追加、`SettingsChanged`イベント (で定義されている`GuidesSettingsManager`) とイベントの表示`LayoutChanged`と`Closed`します。
 
 `LayoutChanged`いくつかの種類など、Visual Studio は、ビューを作成するときに、ビュー内の変更のためのイベントが発生します。 `OnViewLayoutChanged`ハンドラー呼び出し`AddGuidelinesToAdornmentLayer`を実行します。 コードでは、`OnViewLayoutChanged`フォント サイズを変更、ビューのとじしろ、水平方向にスクロール、および具合などの変更に基づく行の位置を更新することが必要と判断します。 コードでは、`UpdatePositions`文字またはテキストの行で指定された文字のオフセット内にあるテキストの列の直後後に描画するために、ガイド線をによりします。
 
@@ -817,7 +817,7 @@ public const string PackageGuidString = "ef726849-5447-4f73-8de5-01b9e930f7cd";
 **セクションのシンボル**します。 前述のように、symbols セクションは、.vsct コードの Guid と 16 進数のすべての場所でない場合に比べてより読みやすい .vsct ファイルで他の場所で使用される識別子を宣言します。 このセクションでは、重要な点は、パッケージの GUID が、パッケージのクラスと、コマンド セットで、宣言の GUID は、コマンドの実装クラスで宣言と一致する必要があります同意する必要があります。
 
 ## <a name="implementing-the-commands"></a>コマンドを実装します。
-ColumnGuideCommands.cs ファイルは、コマンドを実装し、ハンドラーをフックします。 Visual Studio では、パッケージを読み込みし、初期化、パッケージを呼び出して`Initialize`コマンドの実装クラス。 コマンドの初期化は単に、クラスをインスタンス化し、コンストラクターは、すべてのコマンド ハンドラーをフックします。
+ColumnGuideCommands.cs ファイルは、コマンドを実装し、ハンドラーをフックします。 Visual Studio では、パッケージを読み込みし、初期化、パッケージを呼び出して`Initialize`コマンドの実装クラス。 コマンドの初期化は単に、クラスをインスタンス化し、コンス トラクターは、すべてのコマンド ハンドラーをフックします。
 
 ColumnGuideCommands.cs ファイルの内容を次のコード (詳細は後述) に置き換えます。
 
@@ -1164,7 +1164,7 @@ namespace ColumnGuides
 
 **初期化**します。 パッケージ クラスが初期化されるときに呼び出す`Initialize`コマンド実装クラス。 `ColumnGuideCommands`初期化はクラスをインスタンス化し、クラス メンバーに、クラスのインスタンスと、パッケージ参照を保存します。
 
-クラス コンストラクターから、コマンド ハンドラーのフック ups のいずれかを見てみましょう。
+クラス コンス トラクターから、コマンド ハンドラーのフック ups のいずれかを見てみましょう。
 
 ```csharp
 _addGuidelineCommand =
@@ -1285,7 +1285,7 @@ private static int GetCaretColumn(IWpfTextView textView)
 >
 ```
 
-これには、.vsct ファイルの宣言で有効にするサンプルの部分、`ColumnGuideCommands`コマンド ハンドラー、およびイベントの引数をチェックするコマンド ハンドラーの実装をフックし、ときに、クラス コンストラクター。
+これには、.vsct ファイルの宣言で有効にするサンプルの部分、`ColumnGuideCommands`コマンド ハンドラー、およびイベントの引数をチェックするコマンド ハンドラーの実装をフックし、ときに、クラス コンス トラクター。
 
 見た"`<CommandFlag>CommandWellOnly</CommandFlag>`".vsct ファイルとして編集 メニューへの配置の場合でも表示しないコマンドでは、**編集**UI メニュー。 ような名前を与える主な編集 メニューに**Edit.AddColumnGuide**します。 コマンドは、4 つのコマンドのグループから [編集] メニューの直接配置を保持する宣言をグループ化します。
 
@@ -1309,7 +1309,7 @@ private static int GetCaretColumn(IWpfTextView textView)
 
 ```
 
-コマンド ハンドラーをフックするコードを見た、`ColumnGuideCommands`クラスのコンストラクターが許可されているパラメーターの説明を入力します。
+コマンド ハンドラーをフックするコードを見た、`ColumnGuideCommands`クラスのコンス トラクターが許可されているパラメーターの説明を入力します。
 
 ```csharp
 _addGuidelineCommand.ParametersDescription = "<column>";

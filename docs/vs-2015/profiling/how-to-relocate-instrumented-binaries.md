@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 00b39b91b0a776438199d1df3c212cb9fe40f338
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155514"
 ---
-# <a name="how-to-relocate-instrumented-binaries"></a>方法: インストルメント化されたバイナリを再配置します。
+# <a name="how-to-relocate-instrumented-binaries"></a>方法: インストルメント化されたバイナリを再配置する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 インストルメンテーション中、プローブはバイナリに挿入され、アプリケーションのパフォーマンスを測定します。 インストルメントされたバイナリの再配置を選ぶと、元のバイナリのコピーがインストルメント化され、指定した場所に配置されます。 このオプションは、プロファイラーによって元のバイナリの名前を変更したくない場合に役立ちます。 バイナリが再配置されない場合は、バイナリの元のバージョンが上書きされます。  

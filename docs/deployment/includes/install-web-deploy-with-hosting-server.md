@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: MT
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67256615"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143518"
 ---
 ホスティング サーバーの Web 配置 3.6 では、UI から発行設定ファイルの作成を有効にする追加の構成機能を提供しています。
 

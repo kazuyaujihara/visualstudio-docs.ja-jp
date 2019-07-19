@@ -10,18 +10,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef6e65c9d180119d9270c292e30e619d94836175
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154069"
 ---
 # <a name="collecting-additional-performance-data"></a>追加のパフォーマンス データの収集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] プロファイリング ツールでは、プロファイル方法を使用して収集するデータ以外に、追加のデータを記録および表示できます。  
   
-## <a name="common-tasks"></a>一般的なタスク  
+## <a name="common-tasks"></a>よく使う機能  
   
 |タスク|関連コンテンツ|  
 |----------|---------------------|  

@@ -11,18 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c489fcc3c845ae6421706f7d660083f2e5422e19
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 16130191eb6a4d8b6d7703a05aaf3271f8c739f5
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341322"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891132"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>従来の言語サービスの再フォーマット コード
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]インデントおよび空白の使用を正規化することで、ソース コードを再フォーマットすることができます。 これには、挿入、スペースや各の行の先頭にあるタブを削除または線の間の新しい行を追加、またはタブまたはスペースをタブでスペースを置き換えることを含めることができます。
 
->**注:** 挿入または改行文字を削除するには、ブレークポイントとブックマークなどのマーカー影響ことができますが、追加または削除のスペースまたはタブ マーカーは影響しません。
+> [!NOTE]
+> 挿入または改行文字を削除するには、ブレークポイントとブックマークなどのマーカー影響ことができますが、追加または削除のスペースまたはタブ マーカーは影響しません。
 
 ユーザーが選択して、再フォーマット操作を開始できます**形式の選択**または**形式のドキュメント**から、 **[詳細設定]** メニューで、**編集**メニュー。 コード スニペットまたは特定の文字が挿入されると、再フォーマット操作をトリガーこともできます。 たとえば、(C#)、右中かっこを入力すると、適切なレベルに自動的にインデント一致する始めかっことかっこの間にあるすべてはできません。
 

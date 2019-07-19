@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 2da7faabb05d2f6eaf2ec345f9bae19401953093
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142549"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205:Win32 API に相当するマネージド API を使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58963985"
  プラットフォーム呼び出しメソッドが定義されているし、に、同等の機能を持つメソッドが存在する、[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]クラス ライブラリ。
 
 ## <a name="rule-description"></a>規則の説明
- プラットフォーム呼び出しメソッドをアンマネージ DLL 関数の呼び出しに使用されを使用して定義、<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>属性、または`Declare`Visual Basic のキーワード。 定義済みの正しくない、プラットフォーム呼び出しメソッド パラメーターと戻り値のデータ型、および呼び出し規約、および文字など、不適切なフィールドの仕様のマッピングの問題のある不適切な名前の関数などの問題のためのランタイム例外につながる設定します。 、使用可能な場合は、一般に簡素化され、以下のエラーを定義し、非管理対象のメソッドを直接呼び出すよりも同等のマネージ メソッドを呼び出すが生じやすい。 プラットフォーム呼び出しメソッド対処する必要がある追加のセキュリティ問題につながることもできます。
+ プラットフォーム呼び出しメソッドをアンマネージ DLL 関数の呼び出しに使用されを使用して定義、<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>属性、または`Declare`Visual basic のキーワード。 定義済みの正しくない、プラットフォーム呼び出しメソッド パラメーターと戻り値のデータ型、および呼び出し規約、および文字など、不適切なフィールドの仕様のマッピングの問題のある不適切な名前の関数などの問題のためのランタイム例外につながる設定します。 、使用可能な場合は、一般に簡素化され、以下のエラーを定義し、非管理対象のメソッドを直接呼び出すよりも同等のマネージ メソッドを呼び出すが生じやすい。 プラットフォーム呼び出しメソッド対処する必要がある追加のセキュリティ問題につながることもできます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
  このルールの違反を修正するには、アンマネージ関数の呼び出しを同等のマネージの呼び出しで置き換えます。

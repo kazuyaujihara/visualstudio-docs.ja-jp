@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86d41a2717eb3ef7bd49f8d34b85198a55e5101c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158649"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011:CompareTo の負荷が高くなっています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Visual Studio の最新ドキュメントについては、次を参照してく
 |||  
 |-|-|  
 |規則 ID|DA0011|  
-|カテゴリ|.NET Framework の使用|  
+|Category|.NET Framework の使用|  
 |プロファイル方法|サンプリング<br /><br /> .NET メモリ|  
-|メッセージ|CompareTo 関数の負荷を抑える必要があります。メモリを割り当てることはできません。 可能な場合は、CompareTo 関数の複雑さを軽減してください。|  
+|Message|CompareTo 関数の負荷を抑える必要があります。メモリを割り当てることはできません。 可能な場合は、CompareTo 関数の複雑さを軽減してください。|  
 |規則の種類|警告|  
   
 ## <a name="cause"></a>原因  

@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ee305083957f6d2f2ada09aec1747497fcf6db68
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147826"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ IEnumDebugPropertyInfo2 : IUnknown
 |------------|-----------------|  
 |[次へ](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|指定した数を取得[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)列挙体シーケンス内の構造体。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|指定した数のスキップ[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)列挙体シーケンス内の構造体。|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|先頭に、列挙体シーケンスをリセットします。|  
+|[リセット](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|先頭に、列挙体シーケンスをリセットします。|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|現在の列挙子と同じ列挙状態を格納する列挙子を作成します。|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|数を取得[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)列挙子内の構造体。|  
   

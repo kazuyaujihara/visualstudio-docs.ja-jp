@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8398f07cf6fa6bd2702b2d84ab0d29dcd614ed32
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157804"
 ---
 # <a name="replace-in-files-command"></a>ReplaceinFiles コマンド
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  任意。 完全に一致する単語だけを検索します。  
   
 ## <a name="example"></a>例  
- 次の例では、"my visual studio projects" フォルダーに含まれるすべての .cls ファイルで `btnCancel` を検索し、それを `btnReset` に置換して、**[検索結果 2]** ウィンドウに置換情報を表示します。  
+ 次の例では、"my visual studio projects" フォルダーに含まれるすべての .cls ファイルで `btnCancel` を検索し、それを `btnReset` に置換して、 **[検索結果 2]** ウィンドウに置換情報を表示します。  
   
 ```  
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2  

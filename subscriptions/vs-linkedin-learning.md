@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる LinkedIn Premium サブスクリプションに含まれる LinkedIn Learning 特典について説明します。
-searchscope: VS Subscription
-ms.openlocfilehash: eee217bf15a89d24799997c926d598288cec5277
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 2ae1bd5442a062514525df3d1bada70eba71a81d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032857"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824795"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの LinkedIn Learning 特典
 
@@ -110,7 +109,7 @@ A: いいえ、LinkedIn Learning プランは新規サブスクライバーの�
 
 ## <a name="support-resources"></a>サポート リソース
 - LinkedIn Learning のヘルプが必要ですか。  以下のリソースを確認してください。
-    - [LinkedIn Learning の使用方法](https://www.linkedin.com/help/learning)に関するヘルプ。
-    - アカウントやプロファイルの作成、ネットワークの維持などの [LinkedIn](https://www.linkedin.com/help/linkedin) に関する一般的な質問のヘルプ。
+  - [LinkedIn Learning の使用方法](https://www.linkedin.com/help/learning)に関するヘルプ。
+  - アカウントやプロファイルの作成、ネットワークの維持などの [LinkedIn](https://www.linkedin.com/help/linkedin) に関する一般的な質問のヘルプ。
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Azure の特典をアクティブ化する方法を説明します。
-searchscope: VS Subscription
-ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 542f460e6c228564e05affd9467f6deaaf2b0506
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032207"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823746"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
 
@@ -108,7 +107,7 @@ Microsoft アカウントに**異なる**サブスクリプション レベル�
 ## <a name="support-resources"></a>サポート リソース
 
 - Azure に関するヘルプが必要ですか。  以下のリソースを確認してください。
-    - テクニカル サポート: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
-    - [Azure ドキュメント](/azure/)
+  - テクニカル サポート: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+  - [Azure ドキュメント](/azure/)
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

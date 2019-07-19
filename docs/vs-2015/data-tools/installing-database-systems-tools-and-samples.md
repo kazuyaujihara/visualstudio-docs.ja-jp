@@ -18,13 +18,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196061"
 ---
-# <a name="installing-database-systems-tools-and-samples"></a>データベース システム、ツール、およびサンプルをインストールします。
+# <a name="installing-database-systems-tools-and-samples"></a>データベース システム、ツール、およびサンプルのインストール
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 自体では、すべてのデータベース システムで内部的に使用する以外は含まれません。 Visual Studio でのデータに接続されたアプリケーションを開発するには、通常、ローカル開発用コンピューター、データベース システムをインストールし、アプリケーションとデータベースに展開、運用環境の準備ができたら。 .NET アプリケーションからアクセスできるようにして、Visual Studio データ ツールのウィンドウに表示されるデータベース システムでは、ADO.NET データ プロバイダーが必要です。 プロバイダーは、.NET アプリケーションでエンティティ データ モデルを使用する場合、Entity Framework をサポート具体的にする必要があります。     NuGet パッケージ マネージャーを使用または Visual Studio ギャラリーを使って、多くのプロバイダーが提供されます。  

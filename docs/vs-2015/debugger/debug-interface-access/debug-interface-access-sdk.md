@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ddaea95bc879364de99c0ec01213cda30fa4e7d7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197619"
 ---
 # <a name="debug-interface-access-sdk"></a>Debug Interface Access SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Microsoft デバッグ インターフェイス アクセス ソフトウェア�
  [シンボルとシンボル タグ](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
  DIA API でシンボルとシンボル タグの使用方法について説明します。  
   
- [参照](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+ [リファレンス](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
  インターフェイス、メソッド、列挙型、および DIA API の構造が含まれています。  
   
  [Dia2dump サンプル](../../debugger/debug-interface-access/dia2dump-sample.md)  

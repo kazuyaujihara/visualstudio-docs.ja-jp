@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 490ee064903a0e2d119da891681da719e237acec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178786"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>方法: コレクションの関連付けをビジュアル化する (クラス デザイナー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60049406"
   
 2. クラス ダイアグラムで、プロパティとフィールドが表示されるようにクラスを展開します。  
   
-3. クラスで、フィールドまたはプロパティを右クリックし、**[コレクションの関連として表示]** を選択します。  
+3. クラスで、フィールドまたはプロパティを右クリックし、 **[コレクションの関連として表示]** を選択します。  
   
      プロパティまたはフィールドは、収集された型にリンクする関連行として表示されます。  
   

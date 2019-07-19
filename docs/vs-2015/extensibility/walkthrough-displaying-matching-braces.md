@@ -11,11 +11,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caaafd0143d3b09a51518ee5f54a02b06dbf10aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165789"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>チュートリアル: 対応するかっこの表示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,4 +125,4 @@ ms.locfileid: "60084935"
 4. 始め中かっこの前にキャレットを配置すると、その中かっこと一致する、閉じるかっこの両方を強調する必要があります。 閉じる中かっこの直後後にカーソルを配置すると、その中かっこと一致する始めかっこの両方を強調する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: ファイル名拡張子へのコンテンツの種類のリンク](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [チュートリアル: コンテンツの種類とファイル名拡張子とをリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

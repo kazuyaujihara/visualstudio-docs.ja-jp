@@ -16,16 +16,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 919e84393cf4aef929a504aadbefe905afe24bfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203433"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>方法: 開始するバイナリを指定します。
+# <a name="how-to-specify-the-binary-to-start"></a>方法: 開始するバイナリを指定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DLL などのバイナリをプロファイルするには、**[\<Target> プロパティ ページ]** ダイアログ ボックスに情報を入力する必要があります。 この情報は、DLL プロジェクトの呼び出し元アプリケーションの場所を示します。  
+DLL などのバイナリをプロファイルするには、 **[\<Target> プロパティ ページ]** ダイアログ ボックスに情報を入力する必要があります。 この情報は、DLL プロジェクトの呼び出し元アプリケーションの場所を示します。  
   
  **必要条件**  
   
@@ -33,9 +33,9 @@ DLL などのバイナリをプロファイルするには、**[\<Target> プロ
   
 ### <a name="to-specify-the-executable-to-start"></a>開始する実行可能ファイルを指定するには  
   
-1. **パフォーマンス エクスプローラー**で、対象のバイナリを右クリックし、**[プロパティ]** をクリックします。  
+1. **パフォーマンス エクスプローラー**で、対象のバイナリを右クリックし、 **[プロパティ]** をクリックします。  
   
-2. **[プロパティ ページ]** ダイアログ ボックスで、**[起動]** プロパティをクリックします。  
+2. **[プロパティ ページ]** ダイアログ ボックスで、 **[起動]** プロパティをクリックします。  
   
 3. **[プロジェクト プロパティのオーバーライド]** チェック ボックスを選択します。  
   

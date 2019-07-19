@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180326"
 ---
 # <a name="keybinding-element"></a>KeyBinding 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,20 +39,20 @@ KeyBinding 要素には、コマンドのキーボード ショートカット�
 |属性|説明|  
 |---------------|-----------------|  
 |guid|必須。|  
-|ID|必須。|  
+|id|必須。|  
 |エディター|必須。 エディターの GUID では、このショートカット キーがアクティブになる編集コンテキストを示します。 バインドのグローバル スコープの値は、"guidVSStd97 です"。|  
 |key1|必須。 有効な値は、すべて判読の英数字と、2 桁の 16 進数値 0 x と VK_constants で前にします。|  
-|mod1|省略可能です。 Ctrl キー、ALT、およびスペースで区切られたシフトの任意の組み合わせ。|  
-|key2|省略可能です。 有効な値は、すべて判読の英数字と、2 桁の 16 進数値 0 x と VK_constants で前にします。|  
-|mod2|省略可能です。 Ctrl キー、ALT、およびスペースで区切られたシフトの任意の組み合わせ。|  
-|エミュレーター|省略可能です。|  
+|mod1|任意。 Ctrl キー、ALT、およびスペースで区切られたシフトの任意の組み合わせ。|  
+|key2|任意。 有効な値は、すべて判読の英数字と、2 桁の 16 進数値 0 x と VK_constants で前にします。|  
+|mod2|任意。 Ctrl キー、ALT、およびスペースで区切られたシフトの任意の組み合わせ。|  
+|エミュレーター|任意。|  
 |条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|  
   
 ### <a name="child-elements"></a>子要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|親||  
+|Parent||  
 |注釈||  
   
 ### <a name="parent-elements"></a>親要素  

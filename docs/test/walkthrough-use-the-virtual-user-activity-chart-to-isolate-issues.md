@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6811365023f7030d46bf6c611ecb09a5990a7492
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976215"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825775"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>チュートリアル: 仮想ユーザー アクティビティ チャートを使用した問題の特定
 
@@ -30,9 +30,9 @@ ms.locfileid: "62976215"
 
 - これらの手順を完了します。
 
-    - [Web パフォーマンス テストの記録と実行](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
+  - [Web パフォーマンス テストの記録と実行](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
 
-    - [ロード テストの作成および実行](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+  - [ロード テストの作成および実行](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>前のチュートリアルで作成した ColorWebApp ソリューションを開く
 
@@ -58,10 +58,10 @@ ms.locfileid: "62976215"
 
      グラフ ビューが表示されます。
 
-2. **[ページ応答時間]** グラフのいずれかのしきい値違反アイコンに近い場所で右クリックし、**[ユーザーの詳細に移動]** を選択します。
+2. **[ページ応答時間]** グラフのいずれかのしきい値違反アイコンに近い場所で右クリックし、 **[ユーザーの詳細に移動]** を選択します。
 
     > [!NOTE]
-    > ユーザー アクティビティ チャートは、**ロード テスト エディター**のツール バーの **[詳細]** ボタンを使用して開くこともできます。 ただし、**[ユーザーの詳細に移動]** オプションを使用した場合、**仮想ユーザー アクティビティ チャート**は、グラフ内で右クリックしたテストの部分に自動的にズームします。
+    > ユーザー アクティビティ チャートは、**ロード テスト エディター**のツール バーの **[詳細]** ボタンを使用して開くこともできます。 ただし、 **[ユーザーの詳細に移動]** オプションを使用した場合、**仮想ユーザー アクティビティ チャート**は、グラフ内で右クリックしたテストの部分に自動的にズームします。
 
      しきい値違反が発生したときの期間にフォーカスが置かれた**仮想ユーザー アクティビティ チャート**と共に、詳細ビューが表示されます。
 
@@ -69,9 +69,9 @@ ms.locfileid: "62976215"
 
 3. **仮想ユーザー アクティビティ チャート**の下にある **[期間にズーム]** ツールで、左右のスライダーを調整してしきい値違反アイコンに近づけます。 この操作を行うと、**仮想ユーザー アクティビティ チャート**のタイム スケールが変更されます。
 
-4. **[詳細の凡例]** で、**[(エラーの強調表示)]** のチェック ボックスをオンにします。 しきい値違反が発生した仮想ユーザーが強調表示されます。
+4. **[詳細の凡例]** で、 **[(エラーの強調表示)]** のチェック ボックスをオンにします。 しきい値違反が発生した仮想ユーザーが強調表示されます。
 
-5. **[フィルター結果]** パネルで、**[成功した結果の表示]** チェック ボックスと **[HTTP エラー]** チェック ボックスをオフにし、**[検証規則エラー]** チェック ボックスはオンのままにします。
+5. **[フィルター結果]** パネルで、 **[成功した結果の表示]** チェック ボックスと **[HTTP エラー]** チェック ボックスをオフにし、 **[検証規則エラー]** チェック ボックスはオンのままにします。
 
      **仮想ユーザー アクティビティ チャート**に、前のチュートリアルで構成したしきい値違反に指定された 3 秒を超える時間を *Red.aspx* ページで費やした仮想ユーザーのみが表示されます。
 

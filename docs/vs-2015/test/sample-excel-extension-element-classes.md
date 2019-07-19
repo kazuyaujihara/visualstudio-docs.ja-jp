@@ -1,4 +1,4 @@
-﻿---
+---
 title: Excel 拡張子のサンプル:要素クラス |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -9,13 +9,13 @@ caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 052ef261270b2cd6e66d71bbbb0c9cc3d12696eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194895"
 ---
-# <a name="sample-excel-extension-element-classes"></a>Excel 拡張子のサンプル:要素クラス
+# <a name="sample-excel-extension-element-classes"></a>Excel 拡張子のサンプル:Element クラス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 この拡張機能は、<xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> から派生し、[!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 内の Worksheet コントロールと Cell コントロールを表すクラスを使用します。  
@@ -49,7 +49,7 @@ ms.locfileid: "54796042"
   
  `Utilities` クラスには、UI に関するさまざまな情報を返すヘルパー メソッドがあります。 一部のメソッドは、**USER32.DLL** や **OLEACC.DLL** などの外部システム DLL への直接呼び出しを使用して、UI のウィンドウ ハンドルを取得します<strong>。</strong>  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement>   
  [コード化された UI テストと操作の記録を拡張して Microsoft Excel をサポート](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

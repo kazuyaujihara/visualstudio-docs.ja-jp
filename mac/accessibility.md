@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 383f9fb46341eec78fa2daa59bba31dde89ac437
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ee6ffc7bd1567a86bc361f55e00c52ccecddd61
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985277"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824444"
 ---
 # <a name="accessibility"></a>ユーザー補助
 
@@ -62,9 +62,9 @@ VoiceOver コマンドは、このガイドでは **VO+ *キー*** と表示さ�
 Visual Studio for Mac のユーザー インターフェイスを操作するには、次のキーの組み合わせを使用します。
 
 - **VO + 右/左**:ユーザー インターフェイス要素間を移動する
-    - VoiceOver ではラベルとコントロールの種類が読み上げられ、その操作方法が説明されます。
+  - VoiceOver ではラベルとコントロールの種類が読み上げられ、その操作方法が説明されます。
 - **VO + Shift + 下/上**:要素にステップ イン/アウトする
-    - 要素内に入ると、**VO +左/右** キーを使用してその要素内を移動できます。
+  - 要素内に入ると、**VO +左/右** キーを使用してその要素内を移動できます。
 - **VO + Space**:コントロールを選択/操作する
 - **VO + M**:Visual Studio for Mac メニュー バーを操作する
 

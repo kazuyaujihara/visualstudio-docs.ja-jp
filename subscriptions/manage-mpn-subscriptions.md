@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/11/2017
 ms.topic: conceptual
 description: MPN パートナーのために Visual Studio サブスクリプションをエンド ユーザーに割り当てる方法。
-searchscope: VS Subscription
-ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ca0865f876cfad10cbd7c6744f938fef839f7d55
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412398"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823199"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) で提供されている Visual Studio サブスクリプションの管理
 
@@ -61,11 +60,11 @@ Microsoft Action Pack サブスクライバーと Visual Studio サブスクリ�
 - Microsoft Partner Network (MPN) [Visual Studio サブスクリプション](https://partner.microsoft.com/membership/msdn-subscriptions)に関する詳細
 
 - Microsoft Partner Network 「[Program Administrator Guide to Software and Online Services Benefits](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf)」 (ソフトウェアとオンライン サービスの特典に関するプログラム管理者ガイド)
-    - 6 ページ: Assigning Contact Roles and Visual Studio subscriptions for Action Pack (Action Pack への連絡先ロールと Visual Studio サブスクリプションの割り当て)
+  - 6 ページ: Assigning Contact Roles and Visual Studio subscriptions for Action Pack (Action Pack への連絡先ロールと Visual Studio サブスクリプションの割り当て)
 
 > [!NOTE]
 > Visual Studio サブスクリプションには、技術担当者ロールが必要
 > - 8 ページ: Assigning Visual Studio subscriptions for Competency Partners (コンピテンシー パートナーへの Visual Studio サブスクリプションの割り当て)
 
 ## <a name="need-help"></a>お困りの際は、
-サブスクライバーのサブスクリプションへのアクセスに関する問題を解決するには、サブスクライバーとプログラム管理者が、Microsoft Partner Network のサポート チームと直接作業する必要があります。 [パートナーのサポート](https://partner.microsoft.com/support) ページをご覧ください  (MPN サインイン資格情報が必要です)。
+サブスクライバーのサブスクリプションへのアクセスに関する問題を解決するには、サブスクライバーとプログラム管理者が、Microsoft Partner Network のサポート チームと直接作業する必要があります。 [パートナーのサポート](https://partner.microsoft.com/support) ページをご覧ください (MPN サインイン資格情報が必要です)。

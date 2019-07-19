@@ -9,11 +9,11 @@ caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 23d347d43918661ca65019862f476f1d636d5d06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147160"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>サードパーティ製の単体テスト フレームワークをインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Visual Studio テスト エクスプ ローラーは、エクスプ ローラー
   
 ### <a name="installing-from-visual-studio"></a>Visual Studio からのインストール  
   
-1. [標準] メニューで **[ツール]** をクリックしてから、**[拡張機能と更新プログラム]** をクリックします。  
+1. [標準] メニューで **[ツール]** をクリックしてから、 **[拡張機能と更新プログラム]** をクリックします。  
   
-2. **[オンライン]**、**[Visual Studio ギャラリー]**、**[ツール]** の順に展開します。 **[テスト]** をクリックします。  
+2. **[オンライン]** 、 **[Visual Studio ギャラリー]** 、 **[ツール]** の順に展開します。 **[テスト]** をクリックします。  
   
 3. 一覧を参照してフレームワークを検索します。  
   
-4. フレームワークを選択し、**[ダウンロード]** をクリックします。  
+4. フレームワークを選択し、 **[ダウンロード]** をクリックします。  
   
    詳細については、「[Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)」を参照してください。  
   
@@ -54,7 +54,7 @@ Visual Studio テスト エクスプ ローラーは、エクスプ ローラー
   
 5. **[参照]** をクリックします。  
   
-6. **[カテゴリ]** の一覧で、**[ツール]** ノードを展開してから、**[テスト]** をクリックします。  
+6. **[カテゴリ]** の一覧で、 **[ツール]** ノードを展開してから、 **[テスト]** をクリックします。  
   
 7. 結果の一覧でフレームワークを選択してから、ツールの Visual Studio ギャラリー ページに移動します。  
   

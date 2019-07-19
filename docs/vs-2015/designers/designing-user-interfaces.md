@@ -10,18 +10,18 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b6b022281b043b512491c2fe6366a1393b67dacd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181329"
 ---
 # <a name="designing-user-interfaces"></a>ユーザー インターフェイスの設計
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio のさまざまなツールを使用して、アプリケーションのユーザー インターフェイスを作成し、デザインできます。  
   
-|詳細情報|解決方法については、|  
+|詳細情報|解決方法|  
 |-------------------------|---------|  
 |Visual Studio または Blend for Visual Studio を使用した XAML ベースのアプリやアプリケーションの設計。   .|[Visual Studio および Blend for Visual Studio での XAML の設計](../designers/designing-xaml-in-visual-studio.md)|  
 |XAML の WPF フレーバーを使用するデスクトップ アプリケーションの設計。|[Windows Presentation Foundation での最新のデスクトップ アプリケーションの作成](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)|  
@@ -29,5 +29,5 @@ Visual Studio のさまざまなツールを使用して、アプリケーショ
 |プログラムで使用可能な標準アイコン。|[Visual Studio Image Library](../designers/the-visual-studio-image-library.md)|  
   
 ## <a name="see-also"></a>関連項目
- [チュートリアル : 簡単なアプリケーションの作成](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   
+ [チュートリアル: 単純なアプリケーションを作成します。](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   
  [Visual Studio Image Library](../designers/the-visual-studio-image-library.md)

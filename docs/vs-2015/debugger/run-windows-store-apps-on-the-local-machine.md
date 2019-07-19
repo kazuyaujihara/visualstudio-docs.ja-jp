@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 031d764b95aa0f292702dde6167e0be9826270bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196317"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>ローカル コンピューターでの Windows ストア アプリの実行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Applies to Windows only](../Image/windows_only_content.png "windows_only_content")  
+Windows にのみ適用されます] (../Image/windows_only_content.png"windows_only_content")  
   
  Windows ストア アプリのパフォーマンス分析のデバッグ、テスト、実行を行う場合、Visual Studio をホストする同じコンピューター上でアプリを実行することができます。 デバイスのディスプレイがタッチ対応である場合は、アプリの全機能を実施できますが、そうでない場合の操作はマウスとキーボードに限定されます。  
   

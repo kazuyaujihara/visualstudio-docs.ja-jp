@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191561"
 ---
 # <a name="midl-task"></a>MIDL タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      省略可能な **String** 型のパラメーターです。  
   
-     コマンド ライン オプションのリスト。 たとえば、**"**_/option1 /option2 /option#_" のような形式です。 他の MIDL タスク パラメーターでは表されないコマンド ライン オプションを指定する場合は、このパラメーターを使用します。  
+     コマンド ライン オプションのリスト。 たとえば、 **"** _/option1 /option2 /option#_ " のような形式です。 他の MIDL タスク パラメーターでは表されないコマンド ライン オプションを指定する場合は、このパラメーターを使用します。  
   
      詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」を参照してください。  
   
@@ -144,7 +144,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
   
      `true` の場合、enum の値が有効範囲内にあるかどうかをチェックします。  
   
-     詳細については、midl.exe のコマンド ライン ヘルプ (**/?**) の **/error enum** オプションを参照してください。  
+     詳細については、midl.exe のコマンド ライン ヘルプ ( **/?** ) の **/error enum** オプションを参照してください。  
   
 - **ErrorCheckRefPointers**  
   
@@ -310,7 +310,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
     |**4**|**/Zp4**|  
     |**8**|**/Zp8**|  
   
-     詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/Zp** オプションを参照してください。 **/Zp** オプションは、**/pack** オプションおよび以前の **/align** オプションに相当します。  
+     詳細については、[MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web サイトの「MIDL Command-Line Reference (MIDL コマンド ライン リファレンス)」の **/Zp** オプションを参照してください。 **/Zp** オプションは、 **/pack** オプションおよび以前の **/align** オプションに相当します。  
   
 - **SuppressCompilerWarnings**  
   

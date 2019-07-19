@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 468561a627a3ad7eb477328b5afef794c7acf2c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199943"
 ---
 # <a name="overriding-toolsversion-settings"></a>ToolsVersion 設定のオーバーライド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60050200"
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
 ```  
   
- この例では、すべてのプロジェクトが ToolsVersion 12.0 でビルドされます  (後の「優先順位」を参照してください)。  
+ この例では、すべてのプロジェクトが ToolsVersion 12.0 でビルドされます (後の「優先順位」を参照してください)。  
   
  コマンド ラインで `/tv` スイッチを使用するときには、特定のプロジェクトに `$(ProjectToolsVersion)` プロパティを指定し、ソリューション内の他のプロジェクトとは異なる ToolsVersion 値でビルドすることもできます。  
   

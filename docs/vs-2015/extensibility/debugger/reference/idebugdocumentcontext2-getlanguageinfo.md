@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f1c9d62fd368b248bd6267c9d85e86b9b6e4de36
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58975375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145037"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ int GetLanguageInfo( 
  [out]このドキュメントのコンテキストでコードを実装する言語の名前を返します。  
   
  `pguidLanguage`  
- [out]このドキュメントのコンテキストでコードを実装する言語の GUID を返します。 たとえば、`guidVBScriptLang` または `guidCPPLang` のようにします。 この GUID は、によって指定された言語に制限がない[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]します。  
+ [out]このドキュメントのコンテキストでコードを実装する言語の GUID を返します。 たとえば、 `guidVBScriptLang` や `guidCPPLang`になります。 この GUID は、によって指定された言語に制限がない[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]します。  
   
 ## <a name="return-value"></a>戻り値  
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  

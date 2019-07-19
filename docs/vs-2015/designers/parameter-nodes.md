@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 110f380f7450d611de5786fb865bdee8e64195f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184986"
 ---
 # <a name="parameter-nodes"></a>パラメーター ノード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54764172"
   
 ## <a name="parameter-node-reference"></a>パラメーター ノードの参照  
   
-|ノード|説明|プロパティ|  
+|ノード|説明|Properties|  
 |----------|-------------|----------------|  
 |**カメラのワールド位置**|ワールド空間におけるカメラの位置です。<br /><br /> **出力:**<br /><br /> `Output`: `float4`<br /> カメラの位置。|なし|  
 |**光の方向**|ワールド空間で光源から光を当てる方向を定義するベクターです。<br /><br /> このパラメーターを使用して、ワールド空間における光源や反射の効果を計算できます。<br /><br /> **出力:**<br /><br /> `Output`: `float3`<br /> 現在のピクセルから光源までのベクター。|なし|  

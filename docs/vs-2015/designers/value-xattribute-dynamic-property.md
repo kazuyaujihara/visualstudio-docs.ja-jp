@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2b83e4a208553b0ad732cfe927aec02b47e389dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187509"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (XAttribute 動的プロパティ)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ attrib.Value
   
 ## <a name="exceptions"></a>例外  
   
-|例外の種類|条件|  
+|例外の型|条件|  
 |--------------------|---------------|  
 |<xref:System.ArgumentNullException>|設定時に `value` が `null` である場合に発生します。|  
   
-## <a name="remarks"></a>コメント  
+## <a name="remarks"></a>Remarks  
  このプロパティは、<xref:System.Xml.Linq.XAttribute.Value%2A> クラスの <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> プロパティに相当します。ただし、この動的プロパティは変更通知もサポートします。  
   
 ## <a name="see-also"></a>関連項目

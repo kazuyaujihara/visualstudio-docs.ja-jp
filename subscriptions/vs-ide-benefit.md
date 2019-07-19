@@ -6,13 +6,12 @@ manager: lank
 ms.date: 04/03/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Visual Studio IDE をダウンロードしてインストールする方法を説明します。
-searchscope: VS Subscription
-ms.openlocfilehash: 1614df094c043c4b3a758409c1cff3c73b56abf6
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 6b3e53604eb275b6fec867ef2470c57d47aaa510
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586928"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824654"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Visual Studio 2019 の特典を使用する
 
@@ -79,6 +78,6 @@ IDE をダウンロードするには:
 
 ## <a name="support-resources"></a>サポート リソース
 - Visual Studio IDE のヘルプが必要な場合は、以下のリソースを確認してください。
-    - テクニカル サポート: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-    - [ドキュメント](/visualstudio/)
+  - テクニカル サポート: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - [ドキュメント](/visualstudio/)
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。

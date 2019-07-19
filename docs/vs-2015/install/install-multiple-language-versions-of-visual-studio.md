@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 8eede58ab2e17d417f50cbdfe517bcfba99a6b6f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165450"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>複数言語バージョンの Visual Studio をインストールする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Visual Studio に関する最新のドキュメントについては、[言語�
 
 - Visual Studio サービス パッケージは、インストールされている Visual Studio のすべての言語バージョンに適用されます。 インストールした Visual Studio の言語バージョンごとにサービス パッケージをインストールする必要はありません。
 
-- Visual Studio セットアップのメンテナンス モードを使用して、言語パッケージをアンインストールできます。 **[コントロール パネル]**、 **[プログラムと機能]** の順に開き、インストールした Visual Studio のエディションを選択して、 **[アンインストールと変更]** をクリックします。
+- Visual Studio セットアップのメンテナンス モードを使用して、言語パッケージをアンインストールできます。 **[コントロール パネル]** 、 **[プログラムと機能]** の順に開き、インストールした Visual Studio のエディションを選択して、 **[アンインストールと変更]** をクリックします。
 
 ## <a name="see-also"></a>関連項目
 

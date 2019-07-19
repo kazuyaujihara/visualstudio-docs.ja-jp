@@ -12,11 +12,11 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f154c63940189f1a6035246fb7f72ec27be677f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191873"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>方法: ライブラリでのシンボルの識別
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,4 +86,4 @@ N1
 ## <a name="see-also"></a>関連項目  
  [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [方法: オブジェクト マネージャーにライブラリを登録します。](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [方法: オブジェクト マネージャーにライブラリによって提供されるシンボルのリストを公開します。](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [方法: ライブラリによって提供されるシンボルのリストをオブジェクト マネージャーに公開する](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

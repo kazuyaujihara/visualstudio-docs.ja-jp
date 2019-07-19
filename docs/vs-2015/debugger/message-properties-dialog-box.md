@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 672bc439a91f0b49c1d198ea666789a6fdcab07e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198168"
 ---
 # <a name="message-properties-dialog-box"></a>[メッセージ プロパティ] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58973266"
  **入れ子のレベル**  
  このメッセージは、0 に入れ子がないの入れ子の深さ。  
   
- **[メッセージ]**  
+ **メッセージ**  
  数、ステータス、および選択した windows メッセージの名前。  
   
  **lResult**  

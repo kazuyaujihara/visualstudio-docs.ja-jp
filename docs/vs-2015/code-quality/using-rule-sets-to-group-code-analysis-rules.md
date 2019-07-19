@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 1da32bd3626af60de56c0a8544753f95988773e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201221"
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>規則セットを使用したコード分析規則のグループ化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58963363"
   
 ## <a name="common-tasks"></a>よく使う機能  
   
-|タスク|関連するコンテンツ|  
+|タスク|関連コンテンツ|  
 |----------|---------------------|  
 |**ハンズオン プラクティスを取得します。** コード分析ツールを使用して、カスタム規則を検索し、単純な .NET Framework アプリケーションで問題を修正してセットを指定します。|-   [チュートリアル: カスタム規則の構成と設定](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)|  
 |**プロジェクトのコード分析を構成します。** 既存のプロジェクト、Web サイト、またはソリューションの設定ルールを選択します。|-   [方法: マネージ コード プロジェクトのコード分析を構成します。](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)<br />-   [規則セットを使用して、実行対象の C++ 規則を指定するには](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)<br />-   [方法: ASP.NET Web アプリケーションのコード分析を構成します。](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)<br />-   [方法: ソリューション内の複数のプロジェクトに対して規則セットを指定します。](../code-quality/how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md)|  

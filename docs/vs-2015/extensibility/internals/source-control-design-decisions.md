@@ -11,11 +11,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 89d125dc52340e8528ee9692d5de00784632e6f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187898"
 ---
 # <a name="source-control-design-decisions"></a>ソース管理のデザインの方針
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60047913"
 ソース管理を実装する場合は、プロジェクトの次の設計に関する決定事項を検討してください。  
   
 ## <a name="will-information-be-shared-or-private"></a>情報は共有またはプライベートか。  
- 最も重要な設計の決定を行うことは、どのような情報が共有できるとはプライベートです。 たとえば、プロジェクトのファイルの一覧を共有するが、このファイルのリスト内で一部のユーザーがファイルをプライベートにする可能性があります。 コンパイラの設定を共有することも、スタートアップ プロジェクトは通常プライベートです。 設定は、純粋な共有、上書きを共有またはプライベートのみです。 仕様では、プライベートなアイテムなど、ソリューション ユーザー オプション (.suo) ファイルはチェックされませんに[!INCLUDE[vsvss](../../includes/vsvss-md.md)]します。 .Suo ファイル、または特定のプライベート ファイルを作成する例などのプライベート ファイルでプライベートな情報を保管してください、。 csproj.user ファイル Visual c# または。 Visual basic の vbproj.user ファイル。  
+ 最も重要な設計上の決定は、どのような情報が共有でき、何が私的なものであるかということです。 たとえば、プロジェクトのファイルのリストは共有されていますが、このファイルのリスト内で、一部のユーザーはプライベートファイルを使用することを希望する場合があります。 コンパイラの設定は共有されていますが、スタートアッププロジェクトは通常プライベートです。 設定では、純粋に共有、上書きと共有、または純粋にプライベートのいずれかです。 仕様では、プライベートなアイテムなど、ソリューション ユーザー オプション (.suo) ファイルはチェックされませんに[!INCLUDE[vsvss](../../includes/vsvss-md.md)]します。 .Suo ファイルなどのプライベート ファイル、または作成した特定のプライベートファイル（たとえば、Visual C＃ の場合は .csproj.user ファイル、Visual Basic の場合は .vbproj.user ファイル）にプライベートな情報を必ず格納してください。  
   
  この決定は、包括的な -アイテムごとに行んだことができます。  
   

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4ef5df077aabb02c9e9a4b46b0cfcbda76263b72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974736"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826281"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio オフライン インストールに必要な証明書をインストールする
 
@@ -135,20 +135,20 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 このフォルダー内にある 3 つの .P12 ファイルのそれぞれに、中間証明書とルート証明書が含まれます。 Windows Update で最新の状態になっているほとんどのシステムでは、これらの証明書は既にインストールされています。
 
 * **ManifestSignCertificates.p12** に含まれるもの:
-    * 中間証明書:**Microsoft Code Signing PCA 2011**
-        * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
-    * ルート証明書:**Microsoft Root Certificate Authority 2011**
-        * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
+  * 中間証明書:**Microsoft Code Signing PCA 2011**
+    * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
+  * ルート証明書:**Microsoft Root Certificate Authority 2011**
+    * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
 * **ManifestCounterSignCertificates.p12** に含まれるもの:
-    * 中間証明書:**Microsoft Time-Stamp PCA 2010**
-        * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
-    * ルート証明書:**Microsoft Root Certificate Authority 2010**
-        * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
+  * 中間証明書:**Microsoft Time-Stamp PCA 2010**
+    * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
+  * ルート証明書:**Microsoft Root Certificate Authority 2010**
+    * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
 * **Vs_installer_opc.SignCertificates.p12** に含まれるもの:
-    * 中間証明書:**Microsoft Code Signing PCA**
-        * すべてのシステムに必要。 Windows Update からすべての更新プログラムが適用されているシステムにはこの証明書がない場合があることに注意してください。
-    * ルート証明書:**Microsoft Root Certificate Authority**
-        * 必須です。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
+  * 中間証明書:**Microsoft Code Signing PCA**
+    * すべてのシステムに必要。 Windows Update からすべての更新プログラムが適用されているシステムにはこの証明書がない場合があることに注意してください。
+  * ルート証明書:**Microsoft Root Certificate Authority**
+    * 必須です。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
 
 **更新**:Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合、Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。
 
@@ -157,20 +157,20 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 ::: moniker range="vs-2019"
 
 * **ManifestSignCertificates.p12** に含まれるもの:
-    * 中間証明書:**Microsoft Code Signing PCA 2011**
-        * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
-    * ルート証明書:**Microsoft Root Certificate Authority 2011**
-        * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
+  * 中間証明書:**Microsoft Code Signing PCA 2011**
+    * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
+  * ルート証明書:**Microsoft Root Certificate Authority 2011**
+    * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
 * **ManifestCounterSignCertificates.p12** に含まれるもの:
-    * 中間証明書:**Microsoft Time-Stamp PCA 2010**
-        * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
-    * ルート証明書:**Microsoft Root Certificate Authority 2010**
-        * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
+  * 中間証明書:**Microsoft Time-Stamp PCA 2010**
+    * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
+  * ルート証明書:**Microsoft Root Certificate Authority 2010**
+    * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
 * **Vs_installer_opc.SignCertificates.p12** に含まれるもの:
-    * 中間証明書:**Microsoft Code Signing PCA**
-        * すべてのシステムに必要。 Windows Update からすべての更新プログラムが適用されているシステムにはこの証明書がない場合があることに注意してください。
-    * ルート証明書:**Microsoft Root Certificate Authority**
-        * 必須です。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
+  * 中間証明書:**Microsoft Code Signing PCA**
+    * すべてのシステムに必要。 Windows Update からすべての更新プログラムが適用されているシステムにはこの証明書がない場合があることに注意してください。
+  * ルート証明書:**Microsoft Root Certificate Authority**
+    * 必須です。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
 
 Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。
 
@@ -185,20 +185,20 @@ Visual Studio インストーラーによって求められるのは、システ
 以下の手順はインストール システムをチェックする方法の 1 つです。
 
 1. **mmc.exe** を実行します。<br/>
-  a.  **[ファイル]** をクリックし、**[スナップインの追加と削除]** を選択します。<br/>
-  b.  **[証明書]** をダブルクリックし、**[コンピューター アカウント]** を選択して、**[次へ]** をクリックします。<br/>
-  c. **[ローカル コンピューター]** を選択し、**[完了]** をクリックして、**[OK]** をクリックします。<br/>
+  a. **[ファイル]** をクリックし、 **[スナップインの追加と削除]** を選択します。<br/>
+  b. **[証明書]** をダブルクリックし、 **[コンピューター アカウント]** を選択して、 **[次へ]** をクリックします。<br/>
+  c. **[ローカル コンピューター]** を選択し、 **[完了]** をクリックして、 **[OK]** をクリックします。<br/>
   d. **[証明書 (ローカル コンピューター)]** を展開します。<br/>
-  e. **[信頼されたルート証明機関]** を展開し、**[証明書]** を選択します。<br/>
+  e. **[信頼されたルート証明機関]** を展開し、 **[証明書]** を選択します。<br/>
     * この一覧で必要なルート証明書を確認します。<br/>
 
-   f. **[中間証明機関]** を展開し、**[証明書]** を選択します。<br/>
+   f. **[中間証明機関]** を展開し、 **[証明書]** を選択します。<br/>
     * この一覧で必要な中間証明書を確認します。<br/>
 
-2. **[ファイル]** をクリックし、**[スナップインの追加と削除]** を選択します。<br/>
-  a.  **[証明書]** をダブルクリックし、**[ユーザー アカウント]** を選択して、**[完了]**、**[OK]** の順にクリックします。<br/>
-  b.  **[証明書 - 現在のユーザー]** を展開します。<br/>
-  c. **[中間証明機関]** を展開し、**[証明書]** を選択します。<br/>
+2. **[ファイル]** をクリックし、 **[スナップインの追加と削除]** を選択します。<br/>
+  a. **[証明書]** をダブルクリックし、 **[ユーザー アカウント]** を選択して、 **[完了]** 、 **[OK]** の順にクリックします。<br/>
+  b. **[証明書 - 現在のユーザー]** を展開します。<br/>
+  c. **[中間証明機関]** を展開し、 **[証明書]** を選択します。<br/>
     * この一覧で必要な中間証明書を確認します。<br/>
 
 証明書名が **[発行先]** 列にない場合は、インストールする必要があります。  中間証明書が **[現在のユーザー]** 中間証明書ストアのみにある場合、その中間証明書はログインしているユーザーだけが使用できます。 他のユーザー用にインストールが必要な場合があります。

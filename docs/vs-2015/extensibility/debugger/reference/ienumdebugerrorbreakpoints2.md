@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 95d001c0072442d07ae12f773a26290a95a2f7f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178469"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ IEnumDebugErrorBreakpoints2 : IUnknown
 |------------|-----------------|  
 |[次へ](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|指定された数の列挙体シーケンス内のエラーのブレークポイントを取得します。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|指定された数の列挙体シーケンス内のブレークポイントのエラーをスキップします。|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|先頭に、列挙体シーケンスをリセットします。|  
+|[リセット](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-reset.md)|先頭に、列挙体シーケンスをリセットします。|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-clone.md)|現在の列挙子と同じ列挙状態を格納する列挙子を作成します。|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|列挙子では、ブレークポイントのエラーの数を取得します。|  
   

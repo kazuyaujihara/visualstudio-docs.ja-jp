@@ -19,11 +19,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 09562c3372a6dd933d3656f1b2f7ccf7ca68109d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145303"
 ---
 # <a name="vsinstr"></a>VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,11 @@ VSInstr [/U] filename [/options]
 |**U**|リダイレクトされたコンソール出力を Unicode で書き込みます。 これは、最初に指定する必要があるオプションです。|  
 |`@filename`|1 行につき 1 つのコマンド オプションを含む応答ファイルの名前を指定します。  引用符は使用しないでください。|  
 |**OutputPath** `:path`|インストルメント化されたイメージの保存先ディレクトリを指定します。 出力パスを指定しなかった場合、元のバイナリは同じディレクトリ内で "Orig" という文字列を付け加えたファイル名に変更され、バイナリのコピーがインストルメント化されます。|  
-|**Exclude** `:funcspec`|プローブによるインストルメンテーションから除外する関数の仕様を指定します。 このオプションは、関数へのプロファイリング プローブの挿入によって予測不可能な結果や好ましくない結果が引き起こされる場合に便利です。<br /><br /> 同じバイナリ内の関数を参照する **Exclude** オプションと **Include** オプションは併用しないでください。<br /><br /> 別個の **Exclude** オプションを使用して複数の関数の仕様を指定できます。<br /><br /> `funcspec` は次のように定義されます。<br /><br /> [namespace\<separator1>] [class\<separator2>] 関数<br /><br /> 
-  \<separator1&gt; はネイティブ コードの場合は `::`、マネージド コードの場合は `.` です。<br /><br /> \<separator2> は常に `::` です<br /><br /> **Exclude** は、コード カバレッジでサポートされています。<br /><br /> ワイルドカード文字 \* がサポートされています。 たとえば、名前空間のすべての関数を除外するには、次を使用します。<br /><br /> MyNamespace::\*<br /><br /> **VSInstr /DumpFuncs** を使用して、指定したバイナリ内の関数の完全な名前を一覧表示できます。|  
-|**Include** `:funcspec`|プローブでインストルメント化するバイナリ内の関数の仕様を指定します。 バイナリ内の他のすべての関数はインストルメント化されません。<br /><br /> 別個の **Include** オプションを使用して複数の関数の仕様を指定できます。<br /><br /> 同じバイナリ内の関数を参照する **Include** オプションと **Exclude** オプションは併用しないでください。<br /><br /> **Include** は、コード カバレッジでサポートされていません。<br /><br /> `funcspec` は次のように定義されます。<br /><br /> [namespace\<separator1>] [class\<separator2>] 関数<br /><br /> 
-  \<separator1&gt; はネイティブ コードの場合は `::`、マネージド コードの場合は `.` です。<br /><br /> \<separator2> は常に `::` です<br /><br /> ワイルドカード文字 \* がサポートされています。 たとえば、名前空間のすべての関数を含めるには、次を使用します。<br /><br /> MyNamespace::\*<br /><br /> **VSInstr /DumpFuncs** を使用して、指定したバイナリ内の関数の完全な名前を一覧表示できます。|  
+|**Exclude** `:funcspec`|プローブによるインストルメンテーションから除外する関数の仕様を指定します。 このオプションは、関数へのプロファイリング プローブの挿入によって予測不可能な結果や好ましくない結果が引き起こされる場合に便利です。<br /><br /> 同じバイナリ内の関数を参照する **Exclude** オプションと **Include** オプションは併用しないでください。<br /><br /> 別個の **Exclude** オプションを使用して複数の関数の仕様を指定できます。<br /><br /> `funcspec` は次のように定義されます。<br /><br /> [namespace\<separator1>] [class\<separator2>] 関数<br /><br /> \<separator1&gt; はネイティブ コードの場合は `::`、マネージド コードの場合は `.` です。<br /><br /> \<separator2> は常に `::` です<br /><br /> **Exclude** は、コード カバレッジでサポートされています。<br /><br /> ワイルドカード文字 \* がサポートされています。 たとえば、名前空間のすべての関数を除外するには、次を使用します。<br /><br /> MyNamespace::\*<br /><br /> **VSInstr /DumpFuncs** を使用して、指定したバイナリ内の関数の完全な名前を一覧表示できます。|  
+|**Include** `:funcspec`|プローブでインストルメント化するバイナリ内の関数の仕様を指定します。 バイナリ内の他のすべての関数はインストルメント化されません。<br /><br /> 別個の **Include** オプションを使用して複数の関数の仕様を指定できます。<br /><br /> 同じバイナリ内の関数を参照する **Include** オプションと **Exclude** オプションは併用しないでください。<br /><br /> **Include** は、コード カバレッジでサポートされていません。<br /><br /> `funcspec` は次のように定義されます。<br /><br /> [namespace\<separator1>] [class\<separator2>] 関数<br /><br /> \<separator1&gt; はネイティブ コードの場合は `::`、マネージド コードの場合は `.` です。<br /><br /> \<separator2> は常に `::` です<br /><br /> ワイルドカード文字 \* がサポートされています。 たとえば、名前空間のすべての関数を含めるには、次を使用します。<br /><br /> MyNamespace::\*<br /><br /> **VSInstr /DumpFuncs** を使用して、指定したバイナリ内の関数の完全な名前を一覧表示できます。|  
 |**DumpFuncs**|指定したイメージ内の関数を一覧表示します。 インストルメンテーションは実行されません。|  
 |**ExcludeSmallFuncs**|小規模関数 (関数呼び出しを行わない短い関数) をインストルメンテーションから除外します。 **ExcludeSmallFuncs** オプションを指定すると、インストルメンテーション オーバーヘッドが軽減されてインストルメンテーションの速度が向上します。<br /><br /> 小規模関数を除外すると、.vsp ファイルのサイズが小さくなり、解析に要する時間も短くなります。|  
-|**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|.vsp レポート ファイル内のデータ範囲の先頭または末尾を識別するために使用できるプロファイル マーク (レポート内のデータを区切るために使用する識別子) を挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前<br /><br /> `Markid` - プロファイル マークの識別子として使用する正の整数 (long)。|  
+|**Mark:** {**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|.vsp レポート ファイル内のデータ範囲の先頭または末尾を識別するために使用できるプロファイル マーク (レポート内のデータを区切るために使用する識別子) を挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前<br /><br /> `Markid` - プロファイル マークの識別子として使用する正の整数 (long)。|  
 |**Coverage**|カバレッジ インストルメンテーションを実行します。 これと併用できるオプションは **Verbose**、**OutputPath**、**Exclude**、**Logfile** だけです。|  
 |**Verbose**|**Verbose** オプションは、インストルメンテーション プロセスに関する詳細情報を表示するために使用します。|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|すべてまたは特定の警告を抑制します。<br /><br /> `Message Number` - 警告番号。 `Message Number` を省略した場合、すべての警告が抑制されます。<br /><br /> 詳細については、「[VSInstr の警告](../profiling/vsinstr-warnings.md)」を参照してください。|  
@@ -56,9 +54,9 @@ VSInstr [/U] filename [/options]
 |**Start** `:{` **Inside** `&#124;` **Outside** `},funcname`|データ収集を対象の関数とその関数から呼び出される子関数に制限します。<br /><br /> **Inside** - 対象の関数に入った直後に StartProfile 関数を挿入します。 対象の関数が戻るたびに、その直前に StopProfile 関数を挿入します。<br /><br /> **Outside** - 対象の関数を呼び出すたびに、その直前に StartProfile 関数を挿入します。 対象の関数を呼び出すたびに、その直後に StopProfile 関数を挿入します。<br /><br /> `funcname` - 対象の関数の名前。|  
 |**Suspend** `:{` **Inside** `&#124;` **Outside** `},funcname`|対象の関数とその関数から呼び出される子関数に関するデータ収集を除外します。<br /><br /> **Inside** - 対象の関数に入った直後に SuspendProfile 関数を挿入します。 対象の関数が戻るたびに、その直前に ResumeProfile 関数を挿入します。<br /><br /> **Outside** - 対象の関数に入る直前に SuspendProfile 関数を挿入します。 対象の関数が終了した直後に ResumeProfile 関数を挿入します。<br /><br /> `funcname` - 対象の関数の名前。<br /><br /> 対象の関数に StartProfile 関数が含まれている場合は、その前に SuspendProfile 関数が挿入されます。 対象の関数に StopProfile 関数が含まれている場合は、その後に ResumeProfile 関数が挿入されます。|  
 |**StartOnly:** `{` **Before** `&#124;` **After** `&#124;` **Top** `&#124;` **Bottom** `},funcname`|プロファイリング実行中にデータ収集を開始します。 このオプションは、StartProfile API 関数を指定の位置に挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前。|  
-|**StopOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|プロファイリング実行中にデータ収集を停止します。 このオプションは、StopProfile 関数を指定の位置に挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前。|  
-|**SuspendOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|プロファイリング実行中にデータ収集を停止します。 このオプションは、SuspendProfile API を指定の位置に挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前。<br /><br /> 対象の関数に StartProfile 関数が含まれている場合は、その前に SuspendProfile 関数が挿入されます。|  
-|**ResumeOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|プロファイリング実行中にデータ収集を開始または再開します。<br /><br /> 通常、このオプションは、**SuspendOnly** オプションによってプロファイリングが停止された後にプロファイリングを再開するために使用します。 このオプションは、ResumeProfile API を指定の位置に挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前。<br /><br /> 対象の関数に StopProfile 関数が含まれている場合は、その後に ResumeProfile 関数が挿入されます。|  
+|**StopOnly:** {**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|プロファイリング実行中にデータ収集を停止します。 このオプションは、StopProfile 関数を指定の位置に挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前。|  
+|**SuspendOnly:** {**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|プロファイリング実行中にデータ収集を停止します。 このオプションは、SuspendProfile API を指定の位置に挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前。<br /><br /> 対象の関数に StartProfile 関数が含まれている場合は、その前に SuspendProfile 関数が挿入されます。|  
+|**ResumeOnly:** {**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|プロファイリング実行中にデータ収集を開始または再開します。<br /><br /> 通常、このオプションは、**SuspendOnly** オプションによってプロファイリングが停止された後にプロファイリングを再開するために使用します。 このオプションは、ResumeProfile API を指定の位置に挿入します。<br /><br /> **Before** - 対象の関数に入る直前。<br /><br /> **After** - 対象の関数が終了した直後。<br /><br /> **Top** - 対象の関数に入った直後。<br /><br /> **Bottom** - 対象の関数の各復帰の直前。<br /><br /> `funcname` - 対象の関数の名前。<br /><br /> 対象の関数に StopProfile 関数が含まれている場合は、その後に ResumeProfile 関数が挿入されます。|  
   
 ## <a name="see-also"></a>関連項目  
  [VSPerfMon](../profiling/vsperfmon.md)   

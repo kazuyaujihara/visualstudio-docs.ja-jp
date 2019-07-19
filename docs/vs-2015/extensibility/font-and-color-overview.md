@@ -12,11 +12,11 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a20cfa2372b1e55652ffcebe6d173cff86140a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204349"
 ---
 # <a name="font-and-color-overview"></a>フォントと色の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

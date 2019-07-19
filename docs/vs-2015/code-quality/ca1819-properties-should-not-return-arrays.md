@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 48f1b0c0860f8dfc38a83856570cdcdfa6f6ffc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201730"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819:プロパティは、配列を返すことはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "58976120"
  この規則違反を修正するには、メソッド、プロパティを作成するかコレクションを取得するプロパティを変更します。
 
 ## <a name="when-to-suppress-warnings"></a>警告を抑制する状況
- 属性は、配列を返すプロパティを含めることができますが、コレクションを返すプロパティを含めることはできません。 [System.Attribute] から派生した属性のプロパティに対して発生する警告を抑制することができます (<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) クラス。 それ以外の場合、この規則による警告を抑制しないでください。
+ 属性は、配列を返すプロパティを含めることができますが、コレクションを返すプロパティを含めることはできません。 [System.Attribute] (から派生した属性のプロパティに対して発生する警告を抑制することができます。<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) クラス。 それ以外の場合、この規則による警告を抑制しないでください。
 
 ## <a name="example-violation"></a>例の違反
 

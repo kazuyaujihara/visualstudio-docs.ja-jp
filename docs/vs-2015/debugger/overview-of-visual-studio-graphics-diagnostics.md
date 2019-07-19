@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2dc0d0bf4efd8c30d874a24e94d3933d2eef713a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186561"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio グラフィックス診断の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Visual Studio の "*グラフィックス診断*" は、Direct3D アプリのレ
 ### <a name="the-graphics-toolbar-visual-studio"></a>[グラフィックス] ツール バー (Visual Studio)
  [グラフィックス] ツール バーを使用すると、グラフィックス診断コマンドにすばやくアクセスできます。
 
- **[診断の開始]** を使用して、グラフィックス診断の下でアプリを実行します。 グラフィックス診断の下でアプリを実行すると、**[次の描画フレームをキャプチャします]** ボタンが有効になります。
+ **[診断の開始]** を使用して、グラフィックス診断の下でアプリを実行します。 グラフィックス診断の下でアプリを実行すると、 **[次の描画フレームをキャプチャします]** ボタンが有効になります。
 
 ### <a name="diagnostics-capture-interface"></a>診断キャプチャのインターフェイス
  グラフィックス診断の下でアプリを実行すると、Visual Studio には診断セッションのインターフェイスが表示され、フレームをキャプチャする際に使用したり、現在の CPU および GPU の負荷を表示したりできます。 CPU と GPU の負荷を表示すると、キャプチャしようとしているフレームがレンダリングのエラーではなくパフォーマンス特性のために問題を起こしているかどうかを識別できます。
@@ -65,7 +65,7 @@ Visual Studio の "*グラフィックス診断*" は、Direct3D アプリのレ
 
 ##### <a name="to-open-the-directx-control-panel"></a>DirectX コントロール パネルを開くには
 
-- メニュー バーで、**[デバッグ]**、**[グラフィックス]**、**[DirectX コントロール パネル]** を選択します。
+- メニュー バーで、 **[デバッグ]** 、 **[グラフィックス]** 、 **[DirectX コントロール パネル]** を選択します。
 
 ## <a name="graphics-analyzer"></a>Graphics Analyzer
  Visual Studio Graphics Analyzer は、あらかじめキャプチャしたフレームからレンダリングとパフォーマンスの問題を調べるための専用のインターフェイスです。 Graphics Analyzer には、アプリのレンダリング動作を探索して理解するために役立ついくつかのツールがあります。 各ツールは、調査対象のフレームについて異なる種類の情報を明らかにします。それらのツールは、連携して使用し、フレームバッファーの外観から始めて、レンダリングの問題の原因を直感的に絞り込んでいくように設計されています。

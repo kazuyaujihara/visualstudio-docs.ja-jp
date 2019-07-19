@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189602"
 ---
 # <a name="how-to-view-script-documents"></a>方法: スクリプト ドキュメントを表示する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60104213"
   
 ### <a name="to-view-a-server-side-script-document"></a>サーバー側スクリプト ドキュメントを表示するには  
   
-1. **ソリューション エクスプローラー**で、**[\<Website Pathname>]** ノードを開きます。  
+1. **ソリューション エクスプローラー**で、 **[\<Website Pathname>]** ノードを開きます。  
   
 2. 表示するスクリプト ファイルをダブルクリックします。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "60104213"
   
 ### <a name="to-view-a-client-side-script-document"></a>クライアント側スクリプト ドキュメントを表示するには  
   
-1. **ソリューション エクスプローラー**で、**[スクリプト ドキュメント]** ノードを開きます。  
+1. **ソリューション エクスプローラー**で、 **[スクリプト ドキュメント]** ノードを開きます。  
   
 2. 表示するスクリプト ファイルをダブルクリックします。  
   

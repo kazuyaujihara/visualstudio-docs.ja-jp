@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 8dc15c95398ed45954c3830d1c558a6653a4346f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191487"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500:変数名はフィールド名と同一にすることはできません
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
 |-|-|  
 |TypeName|VariableNamesShouldNotMatchFieldNames|  
 |CheckId|CA1500|  
-|カテゴリ|Microsoft.Maintainability|  
+|Category|Microsoft.Maintainability|  
 |互換性に影響する変更点|フィールドと同じ名前を持つパラメーターで発生した: 場合<br /><br /> -改行なしの場合は、変更に関係なく、アセンブリ外フィールドとパラメーターを宣言するメソッドの両方を表示できません。<br />-重大 - フィールドの名前を変更し、アセンブリ外見なすことができます。<br />-重大な - パラメーターの名前を変更すると、アセンブリの外側に宣言するメソッドを確認できます。<br /><br /> フィールドと同じ名前を持つローカル変数で発生した: 場合<br /><br /> -改行なしで行った変更に関係なく、アセンブリの外部、フィールドを表示できない場合。<br />-改行なしの場合は、ローカル変数の名前を変更し、フィールドの名前は変更されません。<br />-重大な - フィールドの名前を変更すると、アセンブリの外側に表示されることができます。|  
   
 ## <a name="cause"></a>原因  

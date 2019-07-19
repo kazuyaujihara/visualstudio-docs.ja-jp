@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb60917fd120d4a874627348c8149e137745464a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197686"
 ---
 # <a name="arraytype"></a>ArrayType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 配列がで識別される、`SymTagArray`シンボル。  
   
-## <a name="properties"></a>プロパティ  
+## <a name="properties"></a>Properties  
  次の表では、この記号の型の有効な追加のプロパティを示します。  
   
 |プロパティ|データの種類|説明|  

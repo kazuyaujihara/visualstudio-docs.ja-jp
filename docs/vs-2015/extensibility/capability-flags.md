@@ -11,18 +11,18 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 831a52818cfc5c7b75c01a9551b70cd26b95dbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184517"
 ---
 # <a name="capability-flags"></a>機能フラグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 SCC_CAP_*xxx*フラグは、ソース管理プラグインの機能を示すために使用します。 SCC_EXCAP_*xxx*フラグは、拡張機能を示し、整数値に解決するフラグを増分します。  
   
-|機能コード|[値]|説明|  
+|機能コード|値|説明|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_REMOVE`|0x00000001L|では、 [SccRemove](../extensibility/sccremove-function.md)とコマンド。|  
 |`SCC_CAP_RENAME`|0x00000002L|では、 [SccRename](../extensibility/sccrename-function.md)とコマンド。|  
@@ -52,7 +52,7 @@ SCC_CAP_*xxx*フラグは、ソース管理プラグインの機能を示すた�
   
 ## <a name="capability-bits-added-in-version-12"></a>バージョン 1.2 で追加された機能ビット  
   
-|機能コード|[値]|説明|  
+|機能コード|値|説明|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|では、 [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)します。|  
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|では、 [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)します。|  
@@ -65,7 +65,7 @@ SCC_CAP_*xxx*フラグは、ソース管理プラグインの機能を示すた�
 ## <a name="capability-bits-added-in-version-13"></a>バージョン 1.3 で追加された機能ビット  
  これらのフラグが渡されるを一度に 1 つずつ、 [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)機能がサポートされているかどうかを判断する関数。  
   
-|拡張機能コード|[値]|説明|  
+|拡張機能コード|値|説明|  
 |------------------------------|-----------|-----------------|  
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|では、`SCC_CHECKOUT_LOCALVER`チェック アウトのオプション。|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|では、 [SccBackgroundGet](../extensibility/sccbackgroundget-function.md)します。|  

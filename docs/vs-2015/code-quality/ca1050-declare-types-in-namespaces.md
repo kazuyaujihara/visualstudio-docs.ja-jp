@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: f13684df70db7026e874bc8edb6282faca2cf98d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200544"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050:名前空間で型を宣言します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58962510"
 |-|-|
 |TypeName|DeclareTypesInNamespaces|
 |CheckId|CA1050|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因

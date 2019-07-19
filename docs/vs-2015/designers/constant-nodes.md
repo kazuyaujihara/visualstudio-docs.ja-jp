@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d38a4f8a182562c11dbb742cb26392218edfd981
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162653"
 ---
 # <a name="constant-nodes"></a>定数ノード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54788458"
   
 ## <a name="constant-node-reference"></a>定数ノード リファレンス  
   
-|ノード|説明|プロパティ|  
+|ノード|詳細|Properties|  
 |----------|-------------|----------------|  
 |**カメラ ベクター**|現在のピクセルからワールド空間のカメラに向かうベクター。<br /><br /> これを使って、ワールド空間内の反射を計算できます。<br /><br /> **出力**<br /><br /> `Output`: `float3`<br /> 現在のピクセルからカメラまでのベクター。|なし|  
 |**カラー定数**|定数のカラー値。<br /><br /> **出力**<br /><br /> `Output`: `float4`<br /> カラー値です。|**出力**<br /> カラー値です。|  

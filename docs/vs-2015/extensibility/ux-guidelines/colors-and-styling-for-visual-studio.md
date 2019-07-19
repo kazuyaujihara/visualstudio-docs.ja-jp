@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176953"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio の色とスタイル
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -344,7 +344,7 @@ protected override void Dispose(bool disposing)
 - **フォントと色の変更を処理します。**
 
 #### <a name="to-create-or-identify-categories"></a>作成またはカテゴリを識別するには
- [カテゴリのレジストリ エントリの特殊な型の構築 [hklm \software\microsoft \Visual Studio\\< Visual Studio バージョン\>\FontAndColors\\< カテゴリ\>]。 \<カテゴリ > はローカライズされていないカテゴリの名前です。
+ カテゴリのレジストリ エントリの特殊な型の構築 [hklm \software\microsoft \Visual Studio\\< Visual Studio バージョン\>\FontAndColors\\< カテゴリ\>]。 \<カテゴリ > はローカライズされていないカテゴリの名前です。
 
  2 つの値を使用してレジストリを設定します。
 
@@ -356,7 +356,7 @@ protected override void Dispose(bool disposing)
  レジストリで指定されたサービスの実装を提供する必要があります[IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx)の対応するカテゴリ。
 
 #### <a name="to-create-or-identify-groups"></a>グループを作成または識別するのには
- [カテゴリのレジストリ エントリの特殊な型の構築 [hklm \software\microsoft \Visual Studio\\< Visual Studio バージョン\>\FontAndColors\\< グループ\>]。 \<グループ > はローカライズされていないグループの名前です。
+ カテゴリのレジストリ エントリの特殊な型の構築 [hklm \software\microsoft \Visual Studio\\< Visual Studio バージョン\>\FontAndColors\\< グループ\>]。 \<グループ > はローカライズされていないグループの名前です。
 
  2 つの値を使用してレジストリを設定します。
 
@@ -367,7 +367,7 @@ protected override void Dispose(bool disposing)
 
  レジストリで指定されたサービスの実装を提供する必要があります**T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup**の対応するグループ。
 
- ![IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a-fontandcolorgroup.png "0304-a_FontAndColorGroup")
+ ![照会先と](../../extensibility/ux-guidelines/media/0304-a-fontandcolorgroup.png "0304 a_FontAndColorGroup")
 
 ### <a name="to-implement-ide-support"></a>IDE のサポートを実装するには
  実装[GetObject](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject.aspx)、いずれかを返す、 [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx)インターフェイスまたは**T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup**カテゴリまたはグループの指定された GUID ごとに、IDE へのインターフェイス。

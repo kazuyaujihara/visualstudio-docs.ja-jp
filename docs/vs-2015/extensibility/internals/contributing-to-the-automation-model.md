@@ -11,11 +11,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c84ea078f9b7c1268b765111cc400f6e51b783f1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197000"
 ---
 # <a name="contributing-to-the-automation-model"></a>オートメーション モデルへの投稿
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Visual Studio は、環境をカスタマイズするためのオートメーシ
  [コードのオートメーションの提供](../../extensibility/internals/providing-automation-for-code.md)  
  コードのオートメーション モデルを作成する必要がないことについて説明します。 ただし、このトピックの「コード モデルに洞察力に富んだ情報を提供するリンクが提供されます。  
   
- [方法: Windows のオートメーションを提供します。](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
+ [方法: Windows 向けのオートメーションの提供](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
  オートメーションを提供することことをお勧め、ウィンドウでオートメーション オブジェクトを使用できるようにして、環境に既に既製のオートメーション オブジェクトを提供しないときに説明します。 ツール ウィンドウおよびドキュメント ウィンドウのための自動化について説明します。  
   
  [オートメーション モデルの使用](../../extensibility/internals/using-the-automation-model.md)  

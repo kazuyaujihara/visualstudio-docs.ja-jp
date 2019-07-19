@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1cf5bd504bb5f7090dc07bea32e73333c0f182d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162085"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>プロジェクトの拡張に通常使用されるオブジェクトの CATID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "58976377"
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBFolderBrowseObject>|{932DC619-2EAA-4192-B7E6-3D15AD31DF49}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBReferenceBrowseObject>|{2289B812-8191-4e81-B7B3-174045AB0CB5}|  
   
-## <a name="visual-c-catids"></a>Visual C# の Catid  
+## <a name="visual-c-catids"></a>Visual c# の Catid  
  次の Catid を拡張に使用できる[!INCLUDE[csprcs](../../includes/csprcs-md.md)]のオブジェクトを参照します。 すべてで定義されている VSLangProj.olb します。  
   
 |名前|GUID|  

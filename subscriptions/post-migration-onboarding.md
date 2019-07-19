@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 07/12/2018
 ms.topic: conceptual
 description: 移行後に Visual Studio サブスクリプションの組織を管理ポータルに正常にオンボードする方法について説明します。
-searchscope: VS Subscription
-ms.openlocfilehash: 3b12f5ad2d4f83759c6247f3498eb3da9d376991
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5745fae68c8df4b2935de3410d76711f6477436
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008224"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250707"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>組織を移行した後の Visual Studio サブスクリプション管理ポータルへのオンボード
 
@@ -36,7 +35,7 @@ ms.locfileid: "63008224"
 
 主要連絡先がオンボード エクスペリエンスを完了しなかった場合は、次の画面が表示されます。 [ボリューム ライセンス サービス センター (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx) にアクセスできる場合は、このプロセスを完了して、サブスクリプションの管理にアクセスできるようになります。 VLSC で見つかる組織の[パブリック カスタマー番号 (PCN)](find-pcn.md) が必要です。
 
-PCN フィールドに [PCN](find-pcn.md) を入力して、**[招待メールを送信する]** を選択します。
+PCN フィールドに [PCN](find-pcn.md) を入力して、 **[招待メールを送信する]** を選択します。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio サブスクリプション管理ポータルのスクリーンショット](_img/post-migration-onboarding/send-invitation.png)
 

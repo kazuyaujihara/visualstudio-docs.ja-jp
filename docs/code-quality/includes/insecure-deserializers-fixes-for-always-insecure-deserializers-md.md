@@ -4,11 +4,11 @@ ms.author: paulming
 ms.date: 05/01/2019
 ms.topic: include
 ms.openlocfilehash: bc423f10cfbae0b7a0cdaedb72f6891a0e12d228
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67254374"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68147109"
 ---
 - 可能であれば、代わりに、セキュリティで保護されたシリアライザーを使用し、**攻撃者を任意の型を逆シリアル化の指定を許可しない**します。 安全なシリアライザーによっては、次のとおりです。
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>

@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202305"
 ---
 # <a name="getting-started-with-the-debugger"></a>デバッガーの使用開始
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ static void Main(string[] args)
   
  ポイントすると、 **testInt**変数がデータ ヒントで現在の値を表示します。  
   
- ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg-basics-data-tips.png "DBG_Basics_Data_Tips")  
+ ![DBG&#95;基本&#95;データ&#95;ヒント](../debugger/media/dbg-basics-data-tips.png "DBG_Basics_Data_Tips")  
   
- コード ウィンドウのすぐ下に表示されます、 **[自動変数]**、**ローカル**、および**ウォッチ**windows。 これらのウィンドウは、実行時における変数の現行値を表示します。 両方、 **[自動変数]** と**ローカル**windows show **testInt**の値を持つ**10**します。  
+ コード ウィンドウのすぐ下に表示されます、 **[自動変数]** 、**ローカル**、および**ウォッチ**windows。 これらのウィンドウは、実行時における変数の現行値を表示します。 両方、 **[自動変数]** と**ローカル**windows show **testInt**の値を持つ**10**します。  
   
  ![[自動変数] ウィンドウのデバッグ時に](../debugger/media/getstartedwindows.png "GetStartedWindows")  
   
- これらのウィンドウの詳細については、次を参照してください。 [[自動変数] と [ローカル Windows](../debugger/autos-and-locals-windows.md)します。  
+ これらのウィンドウの詳細については、次を参照してください。 [[自動変数] と ローカル Windows](../debugger/autos-and-locals-windows.md)します。  
   
- プログラムを進めながら、変数の値がどのように変化するかを見てみましょう。 ブレークポイントを設定、`testInt += 1;`し、デバッグを再開します。 表示する必要があります**testInt**で、**ローカル**と **[自動変数]** windows が**0**、および**は**は**1**します。 デバッグを続行すると (**デバッグ]/[続行**、または**続行**ツールバーで、または**F5**)、ことを確認の値**testInt**変更**1**、し**2**など。 これらの変更を見るが面倒なときは、ブレークポイントを削除 (**]/[デバッグのブレークポイント**余白内でクリックしてまたは)、デバッグを続行します。 すべてのブレークポイントを削除する場合をクリックして**デバッグ/すべてのブレークポイントを削除**、または**CTRL + SHIFT + F9**、 をクリック**はい**確認するダイアログ ボックスで**Do youすべてのブレークポイントを削除しますか**。  
+ プログラムを進めながら、変数の値がどのように変化するかを見てみましょう。 ブレークポイントを設定、`testInt += 1;`し、デバッグを再開します。 表示する必要があります**testInt**で、**ローカル**と **[自動変数]** windows が**0**、および**は**は**1**します。 デバッグを続行すると (**デバッグ]/[続行**、または**続行**ツールバーで、または**F5**)、ことを確認の値**testInt**変更**1**、し**2**など。 これらの変更を見るが面倒なときは、ブレークポイントを削除 ( **]/[デバッグのブレークポイント**余白内でクリックしてまたは)、デバッグを続行します。 すべてのブレークポイントを削除する場合をクリックして**デバッグ/すべてのブレークポイントを削除**、または**CTRL + SHIFT + F9**、 をクリック**はい**確認するダイアログ ボックスで**Do youすべてのブレークポイントを削除しますか**。  
   
 ## <a name="stepping-into-and-over-function-calls"></a>関数の呼び出しのステップ インとステップ オーバー  
  デバッガーをステートメント-by-ステートメント内でコードを実行することができます (**ステップ イン**) か、デバッガーは関数をスキップ中にコードを実行することができます (**ステップ オーバー**) (に強い関心いるコードを迅速に取得するには関数コードが実行されます)。 どちらの方法で、同じデバッグ セッションを切り替えることができます。  

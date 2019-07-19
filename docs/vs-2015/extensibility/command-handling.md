@@ -11,11 +11,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 563f38cd2dc3854918fe637fdc11afe1d1a49b64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184372"
 ---
 # <a name="command-handling"></a>コマンド処理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ ms.locfileid: "58976991"
 ## <a name="adding-commands-to-the-editor-context-menu"></a>エディター コンテキスト メニューにコマンドを追加します。  
  コンテキスト メニューにコマンドを追加するには、一連の特定のグループに属しているメニュー コマンドをまず定義する必要があります。 次の例は、チュートリアルの一部として生成された .vsct ファイルから取得[チュートリアル。カスタム エディターの機能を追加する](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \<Menu guid="guidCustomEditorCmdSet" id="IDMX_RTF" priority="0x0000" type="Context">  
+ \<メニューの guid"guidCustomEditorCmdSet"id ="IDMX_RTF"優先度の = ="0x0000"型「コンテキスト」= >  
   
- \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
+ \<親 guid ="guidCustomEditorCmdSet"id =「0」/>  
   
  \<文字列 >  
   
  \<ButtonText > CustomEditor コンテキスト メニュー\</ButtonText >  
   
- \<CommandName>CustomEditorContextMenu\</CommandName>  
+ \<CommandName > CustomEditorContextMenu\</CommandName >  
   
- \</Strings>  
+ \</文字列 >  
   
  \</メニュー >  
   
- \</Menus>  
+ \</メニュー >  
   
  上のテキストがテキストをコンテキスト メニュー コマンドを追加します**CustomEditor コンテキスト メニュー**します。 メニューの GUID は、このエディターで作成され、コマンド セットの型は、「コンテキスト」です。  
   

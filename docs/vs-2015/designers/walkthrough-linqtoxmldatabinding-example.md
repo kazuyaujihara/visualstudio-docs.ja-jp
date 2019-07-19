@@ -10,21 +10,21 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 379c95e4de7831c833d8d82d48643a9da10be323
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187475"
 ---
-# <a name="walkthrough-linqtoxmldatabinding-example"></a>チュートリアル : LinqToXmlDataBinding の例
+# <a name="walkthrough-linqtoxmldatabinding-example"></a>チュートリアル: LinqToXmlDataBinding の例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルでは、LinqToXmlDataBinding の例を示し、L2DBForm.xaml と L2DBForm.xaml.cs という 2 つの主要なソース ファイルに関する興味深い情報をいくつか説明します。  
   
 ## <a name="prerequisites"></a>必須コンポーネント  
- このチュートリアルをお読みになる前に、「[方法 : LinqToXmlDataBinding という例をビルドして実行する](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)」の説明に従って、LinqToXmlDataBinding プログラムをビルドして実行することを強くお勧めします。  
+ このチュートリアルを読む前に、「[方法: ビルドおよび実行 linqtoxmldatabinding という例](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)します。  
   
-## <a name="remarks"></a>解説  
+## <a name="remarks"></a>Remarks  
  LinqToXmlDataBinding プログラムは、C# ソース ファイルと XAML ソース ファイルで構成される Windows Presentation Foundation (WPF) アプリケーションです。 このプログラムには書籍の一覧を定義する組み込み XML ドキュメントが含まれており、ユーザーはそれらのエントリを表示、追加、削除、および編集することができます。 このプログラムは、次の 2 つの主要なソース ファイルで構成されています。  
   
 - L2DBForm.xaml には、メイン ウィンドウのユーザー インターフェイス (UI) の XAML 宣言コードが含まれています。 また、書籍一覧のデータ プロバイダーと組み込み XML ドキュメントを定義するウィンドウ リソース セクションも含まれています。  

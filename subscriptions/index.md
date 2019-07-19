@@ -7,12 +7,12 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Visual Studio サブスクリプションへようこそ
-ms.openlocfilehash: d5083141fdaaf5eede2cc181c51cd0340575bbb9
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 25337098dded67d28df1cea03a47ec8c28646763
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784381"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315220"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio サブスクリプション
 
@@ -193,7 +193,6 @@ Visual Studio サブスクリプションは、Windows、iOS、Android、Linux �
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (ビジネス、技術、およびクリエイティブ)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (クラウド、デザイン、モバイル、およびデータ)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">データ キャンプ</a> (データ サイエンスおよび AI)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-opsgility">Opsgility トレーニング</a> (クラウド中心)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Microsoft の専門家によるテクニカル サポート インシデント</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Azure Advisory Chat</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Azure コミュニティ</a></li>

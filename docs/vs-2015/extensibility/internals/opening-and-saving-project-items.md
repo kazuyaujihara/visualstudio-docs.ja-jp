@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158068"
 ---
 # <a name="opening-and-saving-project-items"></a>プロジェクト項目のオープンと保存
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "58973082"
  [プログラムから開くコマンドを使用したファイルの表示](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
  IDE を処理する方法の詳細な手順を説明します、**プログラムから開く**コマンド、標準のエディターのいくつかの選択肢を含むファイルを開くを確認します。  
   
- [方法: 開いているプロジェクト固有のエディター](../../extensibility/how-to-open-project-specific-editors.md)  
+ [方法: プロジェクト固有のエディターを開く](../../extensibility/how-to-open-project-specific-editors.md)  
  プロジェクトに固有のエディターを使用して、プロジェクト内の特定の種類のファイルが開かれることを指定するための手順について説明します。  
   
  [方法: 標準のエディターを開く](../../extensibility/how-to-open-standard-editors.md)  
  プロジェクトの種類のファイルの標準のエディターを開く IDE を有効にする方法を指定するための手順について説明します。  
   
- [方法: 開いているエディターを開いているドキュメントの](../../extensibility/how-to-open-editors-for-open-documents.md)  
+ [方法: 開いているドキュメントのエディターを開く](../../extensibility/how-to-open-editors-for-open-documents.md)  
  開いているファイルのプロジェクトに固有のエディターを開く手順について説明します。  
   
  [標準ドキュメントの保存](../../extensibility/internals/saving-a-standard-document.md)  

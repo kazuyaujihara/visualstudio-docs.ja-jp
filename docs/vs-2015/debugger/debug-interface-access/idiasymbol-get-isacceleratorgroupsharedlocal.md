@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c2e975f75d25e64925c2566c1c311d942e9c3766
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974476"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68180984"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ HRESULT get_isAcceleratorGroupSharedLocal(
   
 #### <a name="parameters"></a>パラメーター  
  `pFlag`  
- [out]ポインターを`BOOL`シンボルが C++ AMP のアクセラレータのコンパイルされたコードでグループの共有ローカル変数に対応するかどうかを示します。 場合`TRUE`、`get_baseDataSlot`と`get_baseDataOffset`メソッドは、変数の記憶域の場所情報を取得するために使用できます。  
+ [out]ポインターを`BOOL`用にコンパイルされたコードでグループの共有ローカル変数に、シンボルが対応かどうかを示す、 C++ AMP のアクセラレータです。 場合`TRUE`、`get_baseDataSlot`と`get_baseDataOffset`メソッドは、変数の記憶域の場所情報を取得するために使用できます。  
   
 ## <a name="return-value"></a>戻り値  
  成功した場合、返します`S_OK`。 それ以外を返します`S_FALSE`またはエラー コード。  

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる DataCamp トレーニング サブスクリプションについて説明します。
-searchscope: VS Subscription
-ms.openlocfilehash: 8e29f5d13c9869995aad0b7a6793304b677d54ba
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 5f5b327bb5b1c328fe746fdbafc1a7550eefacd6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032165"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825343"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの DataCamp トレーニング特典
 
@@ -82,8 +81,8 @@ DataCamp 特典の有効期間は、Visual Studio サブスクリプションに
 
 ## <a name="support-resources"></a>サポート リソース
 - DataCamp の使用に関するヘルプが必要ですか。  以下のリソースを確認してください。
-    - フォーラムとチュートリアルを特徴とする [DataCamp コミュニティ](https://www.datacamp.com/community/tutorials)
-    - [DataCamp Help Center](https://support.datacamp.com/hc) では、サポート トピックを検索し、要求ユーザーの質問を参照できます。
-    - [サポート要求を送信する](https://support.datacamp.com/hc/requests/new)
+  - フォーラムとチュートリアルを特徴とする [DataCamp コミュニティ](https://www.datacamp.com/community/tutorials)
+  - [DataCamp Help Center](https://support.datacamp.com/hc) では、サポート トピックを検索し、要求ユーザーの質問を参照できます。
+  - [サポート要求を送信する](https://support.datacamp.com/hc/requests/new)
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d8a5a91a0300f256b66970403a3431edf0fe757e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189531"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ SCCRTN SccCheckin (
 |SCC_E_ACCESSFAILURE|ソース管理システムのネットワークまたは競合の問題の可能性へのアクセスに問題が発生しました。 再試行をお勧めします。|  
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。 ファイルがチェックインされません。|  
 |SCC_E_NOTCHECKEDOUT|ユーザーがチェックインできないように、ファイルはチェックされません。|  
-|SCC_E_CHECKINCONFLICT|チェックインを実行できませんでした。<br /><br /> -別のユーザーが事前チェックし、`bAutoReconcile`が false であった。<br /><br /> - または -<br /><br /> に (たとえば、ファイルはバイナリ) とき、自動マージを実行できません。|  
+|SCC_E_CHECKINCONFLICT|チェックインを実行できませんでした。<br /><br /> -別のユーザーが事前チェックし、`bAutoReconcile`が false であった。<br /><br /> \- または -<br /><br /> に (たとえば、ファイルはバイナリ) とき、自動マージを実行できません。|  
 |SCC_E_VERIFYMERGE|ファイルは、自動マージにしましたが、ユーザーの検証保留中のチェックインされていません。|  
 |SCC_E_FIXMERGE|ファイルは、自動マージにしましたが、手動で解決する必要のあるマージの競合によりチェックインされていません。|  
 |SCC_E_NOTAUTHORIZED|この操作を実行できません。|  

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 38fe76bbdf2fdafa69ca12caf4f131a05f783954
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143117"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804:使用されていないローカルを削除します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58974207"
 |-|-|
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
-|カテゴリ|Microsoft.Performance|
+|Category|Microsoft.Performance|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因

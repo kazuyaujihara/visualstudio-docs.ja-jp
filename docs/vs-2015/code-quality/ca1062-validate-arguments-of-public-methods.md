@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 13ea687ea9ca68693af7e2aa5c22881a36207d2e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200445"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062:パブリック メソッドの引数の検証
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ ms.locfileid: "58973526"
  [!code-vb[FxCop.Design.ValidateArguments#2](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.ValidateArguments/vb/FxCop.Design.ValidateArguments.vb#2)]
 
 ## <a name="example"></a>例
- コピー コンストラクターがフィールドまたは参照オブジェクトのプロパティを設定するには、ca 1062 ルール違反もことができます。 コピーされたオブジェクトのコピー コンストラクターに渡される可能性があるために、違反が発生する`null`(`Nothing` Visual Basic で)。 違反を解決するには、static (Visual Basic では Shared) メソッドを使用して、コピーされたオブジェクトが null でないことを確認します。
+ コピー コンス トラクターがフィールドまたは参照オブジェクトのプロパティを設定するには、ca 1062 ルール違反もことができます。 コピーされたオブジェクトのコピー コンス トラクターに渡される可能性があるために、違反が発生する`null`(`Nothing` Visual Basic で)。 違反を解決するには、static (Visual Basic では Shared) メソッドを使用して、コピーされたオブジェクトが null でないことを確認します。
 
- 次の`Person`クラスなど、`other`オブジェクトに渡される、`Person`コピー コンストラクターがあります`null`します。
+ 次の`Person`クラスなど、`other`オブジェクトに渡される、`Person`コピー コンス トラクターがあります`null`します。
 
 ```
 
@@ -89,7 +89,7 @@ public class Person
 ```
 
 ## <a name="example"></a>例
- 次のように改訂された`Person`など、`other`コピー コンストラクターに渡されるオブジェクトが最初にチェックで null を`PassThroughNonNull`メソッド。
+ 次のように改訂された`Person`など、`other`コピー コンス トラクターに渡されるオブジェクトが最初にチェックで null を`PassThroughNonNull`メソッド。
 
 ```
 public class Person

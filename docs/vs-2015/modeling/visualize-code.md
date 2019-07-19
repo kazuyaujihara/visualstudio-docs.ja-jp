@@ -14,16 +14,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2d5803544e4e7279179929c7c04a3792e4dd9318
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59002202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183871"
 ---
 # <a name="visualize-code"></a>コードの視覚化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の視覚化ツールとモデリング ツールを使って、既存のコードを理解し、アプリケーションを記述することができます。 これにより、自分が実行した変更がコードにどのような影響を与えるかを理解し、その変更に起因する作業とリスクを評価することができます。 例:  
+Visual Studio の視覚化ツールとモデリング ツールを使って、既存のコードを理解し、アプリケーションを記述することができます。 これにより、自分が実行した変更がコードにどのような影響を与えるかを理解し、その変更に起因する作業とリスクを評価することができます。 例えば:  
   
 - コード内のリレーションシップを理解するには、そのリレーションシップをビジュアルにマッピングします。  
   

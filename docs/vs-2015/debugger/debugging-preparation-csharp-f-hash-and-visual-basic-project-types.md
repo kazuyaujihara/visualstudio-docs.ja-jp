@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1bf57ae0d8d2b9b499897baadc7f2c4450086bf2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195320"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>デバッグの準備:C#、F#、および Visual Basic のプロジェクト
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>デバッグの準備:C#、F#、Visual Basic プロジェクト タイプ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] プロジェクト テンプレートで作成した C#、F#、および [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] のプロジェクトをデバッグする方法について説明します。  

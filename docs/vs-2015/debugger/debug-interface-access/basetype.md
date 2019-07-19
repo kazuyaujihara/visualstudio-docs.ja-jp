@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1fa442aa8257c744fcac53be845c749ff689cc76
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197675"
 ---
 # <a name="basetype"></a>BaseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 基本型がで識別される`SymTagBaseType`シンボル。  
   
-## <a name="properties"></a>プロパティ  
+## <a name="properties"></a>Properties  
  次の表では、この記号の型の有効な追加のプロパティを示します。  
   
 |プロパティ|データの種類|説明|  

@@ -13,13 +13,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f2fd696e5d1ac30fda19a53490bd494305d4fd82
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186157"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>方法: Surround-with コード スニペットを使用します。
+# <a name="how-to-use-surround-with-code-snippets"></a>方法: surround-with コード スニペットを使用する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ここでは、surround-with コード スニペットを使用する方法について説明します。 surround-with コード スニペットは 3 つの方法 (キーボード ショートカット、[編集] メニュー、コンテキスト メニュー) で使用できます。  
@@ -40,7 +40,7 @@ ms.locfileid: "60098455"
   
 2. コード エディターで、囲むテキストを選択します。  
   
-3. **[編集]** メニューの **[IntelliSense]** を選択し、**[ブロックの挿入]** コマンドを選択します。  
+3. **[編集]** メニューの **[IntelliSense]** を選択し、 **[ブロックの挿入]** コマンドを選択します。  
   
 4. コード スニペット挿入でコード スニペットを選択し、Tab キーまたは Enter キーを押します。  
   

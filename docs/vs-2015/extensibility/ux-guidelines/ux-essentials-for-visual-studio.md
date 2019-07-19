@@ -9,18 +9,18 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181373"
 ---
-# <a name="ux-essentials-for-visual-studio"></a>UX Essentials for Visual Studio
+# <a name="ux-essentials-for-visual-studio"></a>Visual Studio の UX の基本情報
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
-### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1.Visual Studio 環境内で一貫しています。
+### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Visual Studio 環境内で一貫しています。
 
 - シェル内で既存の相互作用パターンに従います。
 
@@ -30,7 +30,7 @@ ms.locfileid: "60096531"
 
 - Visual Studio の階層とコンテキストを確立して、UI のドライブの方法を理解します。
 
-### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2.フォントと色の環境のサービスを使用します。
+### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. フォントと色の環境のサービスを使用します。
 
 - UI は、カスタマイズ オプション ダイアログ ボックスで フォントおよび色 ページでは、公開される場合を除き、現在の環境フォントの設定を遵守する必要があります。
 
@@ -42,7 +42,7 @@ ms.locfileid: "60096531"
 
 - グラフィック要素のテキストを配置しないでください。
 
-### <a name="4-design-from-a-user-centric-perspective"></a>4.ユーザー中心の観点から設計します。
+### <a name="4-design-from-a-user-centric-perspective"></a>4。ユーザー中心の観点から設計します。
 
 - 内の個々 の機能の前にタスク フローを作成します。
 
@@ -182,4 +182,4 @@ ms.locfileid: "60096531"
 
  **正しくありません。** ここをクリックして新しいプロジェクトを作成する方法についてはします。
 
- **よし：**「は作成方法は、新しいプロジェクトをでしょうか。」
+ **よし：** 「は作成方法は、新しいプロジェクトをでしょうか。」

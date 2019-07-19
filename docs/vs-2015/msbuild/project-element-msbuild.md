@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 132d1c3fbf23433ea89e7dba39bc226bc253b015
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205647"
 ---
 # <a name="project-element-msbuild"></a>Project 要素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "59650825"
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|省略可能な要素です。<br /><br /> 個々の項目の grouping 要素。 項目は [Item](../msbuild/item-element-msbuild.md) 要素を使用して指定されます。 1 つのプロジェクトに 0 個以上の `ItemGroup` 要素を含めることができます。|  
 |[ProjectExtensions](../msbuild/projectextensions-element-msbuild.md)|省略可能な要素です。<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] プロジェクト ファイルに [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 以外の情報を保持する方法を提供します。 1 つのプロジェクトに 0 個または 1 個の `ProjectExtensions` 要素を含めることができます。|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|省略可能な要素です。<br /><br /> 個々のプロパティの grouping 要素。 プロパティは [Property](../msbuild/property-element-msbuild.md) 要素を使用して指定されます。 1 つのプロジェクトに 0 個以上の `PropertyGroup` 要素を含めることができます。|  
-|[Target](../msbuild/target-element-msbuild.md)|省略可能な要素です。<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] が順次実行するタスクのセットを格納します。 タスクは [Task](../msbuild/task-element-msbuild.md) 要素を使用して指定されます。 1 つのプロジェクトに 0 個以上の `Target` 要素を含めることができます。|  
+|[移行先](../msbuild/target-element-msbuild.md)|省略可能な要素です。<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] が順次実行するタスクのセットを格納します。 タスクは [Task](../msbuild/task-element-msbuild.md) 要素を使用して指定されます。 1 つのプロジェクトに 0 個以上の `Target` 要素を含めることができます。|  
 |[UsingTask](../msbuild/usingtask-element-msbuild.md)|省略可能な要素です。<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] にタスクを登録する方法を提供します。 1 つのプロジェクトに 0 個以上の `UsingTask` 要素を含めることができます。|  
   
 ### <a name="parent-elements"></a>親要素  

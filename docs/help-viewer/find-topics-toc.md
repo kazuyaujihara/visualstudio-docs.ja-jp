@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Contents tab [Help Viewer]
 - table of contents filtering [Help Viewer]
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e75a732ddc9c56e7305e4ebbfec6a188fb6df2bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bd55a95675505648179161ae3fb7cacea6a83104
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951328"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825070"
 ---
 # 方法:目次でトピックを検索する
 
@@ -31,7 +31,7 @@ ms.locfileid: "62951328"
 
 ## TOC のフィルター処理
 
-TOC をフィルター処理して、**[目次]** タブに表示されるトピックの範囲を絞り込むことができます。指定した用語のルートがタイトルに含まれている場合にのみ、一覧にタイトルが表示されます。 たとえば、フィルターとして「troubleshooting」を指定すると、「troubleshoot」または「troubleshooting」を含むタイトルのみが表示されます。 タイトルに用語が含まれないノードは、省略記号 (**...**) と共に単一のノードに折りたたまれます。
+TOC をフィルター処理して、 **[目次]** タブに表示されるトピックの範囲を絞り込むことができます。指定した用語のルートがタイトルに含まれている場合にのみ、一覧にタイトルが表示されます。 たとえば、フィルターとして「troubleshooting」を指定すると、「troubleshoot」または「troubleshooting」を含むタイトルのみが表示されます。 タイトルに用語が含まれないノードは、省略記号 ( **...** ) と共に単一のノードに折りたたまれます。
 
 1. **[目次]** タブをクリックします。
 
