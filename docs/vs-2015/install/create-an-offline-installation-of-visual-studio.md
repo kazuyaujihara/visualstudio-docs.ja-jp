@@ -14,11 +14,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186014"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio のオフライン インストールを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Visual Studio に関する最新のドキュメントについては、「[Visua
 
      `/layout` スイッチを使用すると、ダウンロード先のマシンに適用するものだけでなく、ほとんどすべてのインストール パッケージをダウンロードできます。 この方法では、任意の場所でこのインストーラーを実行するために必要なファイルを入手できます。これは、元はインストールしていなかったコンポーネントをインストールしたい場合に役立つことがあります。
 
-3. このコマンドを実行すると、ダイアログ ボックスが表示されます。これを使って、オフライン インストール レイアウトを置くフォルダーを変更できます。   次に、**[ダウンロード]** ボタンをクリックします。
+3. このコマンドを実行すると、ダイアログ ボックスが表示されます。これを使って、オフライン インストール レイアウトを置くフォルダーを変更できます。   次に、 **[ダウンロード]** ボタンをクリックします。
 
      パッケージのダウンロードが成功すると、次のメッセージが表示されます: **セットアップが正常に完了しました。指定したコンポーネントがすべて正常に取得されました。**
 
@@ -70,7 +70,7 @@ Visual Studio に関する最新のドキュメントについては、「[Visua
 |       言語        |                            URL                            |
 |-----------------------|-----------------------------------------------------------|
 | 中国語 (簡体字、中国)  | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
-| では  | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
+| 中国語 (繁体字) | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
 |         チェコ語         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
 |        ドイツ語         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
 |        英語        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |

@@ -18,11 +18,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: f7820947921e584d96d7f9e7299b70410b3d0587
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157144"
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>コード分析を使用した C/C++ コードの品質の分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio のコード分析を使用してコードの障害を検出およ
 |||  
 |-|-|  
 |[C/C++ のコード分析の概要](../code-quality/code-analysis-for-c-cpp-overview.md)|コード分析ツールの機能について説明します。|  
-|[クイック スタート:C/C++ のコード分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)|C/C++ のコード分析の基本について説明します。|  
+|[クイック スタート: C/C++ のコード分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)|C/C++ のコード分析の基本について説明します。|  
 |[規則セットを使用した実行対象の C++ 規則の指定](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)|プロジェクトまたはソリューションで使用する規則を指定します。|  
 |[C++ Core ガイドライン チェッカーの使用](../code-quality/using-the-cpp-core-guidelines-checkers.md)|C++ Core ガイドライン チェッカーをプロジェクトに追加します。|  
 |[方法: C と C++ プロジェクトのコード分析プロパティを設定します。](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md)|コード分析の構成設定について説明します。|  

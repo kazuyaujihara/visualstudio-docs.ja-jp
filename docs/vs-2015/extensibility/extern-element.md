@@ -14,11 +14,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17477b7eb60aa332f6910019e28f4c53aa31ebf1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204399"
 ---
 # <a name="extern-element"></a>Extern 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Extern 要素
 |---------------|-----------------|  
 |href|必須。 ヘッダー ファイルへのパス:<br /><br /> href="stdidcmd.h"|  
 |条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|  
-|language|省略可能です。 すべての既定の言語[\<文字列 >](../extensibility/strings-element.md)コマンド テーブル内の要素。<br /><br /> language="en-us"|  
+|language|任意。 すべての既定の言語[\<文字列 >](../extensibility/strings-element.md)コマンド テーブル内の要素。<br /><br /> language="en-us"|  
   
 ### <a name="child-elements"></a>子要素  
   

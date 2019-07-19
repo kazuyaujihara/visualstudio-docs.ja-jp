@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179062"
 ---
 # <a name="net-memory-allocations-view"></a>.NET メモリの割り当てビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ ms.locfileid: "60082387"
 ## <a name="highlighting-the-execution-hot-path"></a>実行ホット パスの強調表示  
  親型のほとんどのオブジェクトを作成したコール ツリーの実行パスを見つけることができます。  
   
-- 最もアクティブなパスを表示するには、型または関数を右クリックし、**[ホット パスの展開]** をクリックします。  
+- 最もアクティブなパスを表示するには、型または関数を右クリックし、 **[ホット パスの展開]** をクリックします。  
   
-|Column|説明|  
+|[列]|説明|  
 |------------|-----------------|  
-|**Name**|割り当てられた型または関数の名前です。|  
+|**名前**|割り当てられた型または関数の名前です。|  
 |**プロセス ID**|プロファイリング実行のプロセス ID (PID) です。|  
 |**プロセス名**|プロセスの名前です。|  
 |**モジュール名**|型または関数を含むモジュールの名前です。|  

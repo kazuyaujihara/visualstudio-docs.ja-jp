@@ -10,18 +10,18 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 11d8e3c4ad6c17b000dbf076928c4b1b2c584973
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187082"
 ---
 # <a name="writing-user-commands-and-actions"></a>ユーザー コマンドおよびユーザー アクションの記述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 図にコマンドを追加し、ドラッグ アンド ドロップ、クリック、およびダブルクリック イベントなどのジェスチャに応答することで、ドメイン固有言語をカスタマイズできます。  
   
-## <a name="user-actions"></a>ユーザー アクション  
+## <a name="user-actions"></a>ユーザーの操作  
   
 - [方法: 標準のメニュー コマンドを修正](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)– コピーなどのコマンドの動作をカスタマイズして印刷することができます。  
   

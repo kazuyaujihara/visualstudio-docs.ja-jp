@@ -11,11 +11,11 @@ caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7c1dd3d28b9978b52c95b5ff905d57720ed10f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201953"
 ---
 # <a name="walkthrough-outlining"></a>チュートリアル: アウトライン
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,4 +134,4 @@ ms.locfileid: "60054706"
 4. 両方の中かっこを含むアウトライン領域が必要です。 始めかっこの左側にアウトライン領域を折りたたむにマイナス記号をクリックする必要があります。 ときに領域が折りたたまれている、省略記号 (...) 折りたたまれた領域とテキストを含むポップアップの左に表示する**ホバー テキスト**省略記号上にポインターを移動するときに表示する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
- [チュートリアル: ファイル名拡張子へのコンテンツの種類のリンク](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [チュートリアル: コンテンツの種類とファイル名拡張子とをリンクさせる](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

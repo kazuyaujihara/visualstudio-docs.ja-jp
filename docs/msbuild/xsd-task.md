@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6e96325edd3a17a09437e093590cc02a55504a5
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777640"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825826"
 ---
 # <a name="xsd-task"></a>XSD タスク
 ソースからスキーマまたはクラス ファイルを生成する XML スキーマ定義ツール (*xsd.exe*) をラップします。
@@ -44,15 +44,15 @@ ms.locfileid: "62777640"
 
 - **GenerateFromSchema**
 
-     省略可能な **String** 型のパラメーターです。
+  省略可能な **String** 型のパラメーターです。
 
-     指定したスキーマから生成される種類を指定します。
+  指定したスキーマから生成される種類を指定します。
 
-     次のいずれかの値を指定します。各値は XSD オプションに対応しています。
+  次のいずれかの値を指定します。各値は XSD オプションに対応しています。
 
-    - **classes** - **/classes**
+  - **classes** -  **/classes**
 
-    - **dataset** - **/dataset**
+  - **dataset** -  **/dataset**
 
 - **Language**
 

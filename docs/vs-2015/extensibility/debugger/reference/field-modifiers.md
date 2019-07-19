@@ -13,11 +13,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd25a3cb5b2d074e989b47f33513e05538868759
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203049"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -168,7 +168,7 @@ public enum enum_FIELD_MODIFIERS {
  フィールドを持つオブジェクトで表すことを示す、`IUnknown`インターフェイス。  
   
  FIELD_MOD_SPECIAL_NAME  
- フィールドなど、特別な名前を持つことを示します`.ctor`コンストラクター ([!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]のみ)。  
+ フィールドなど、特別な名前を持つことを示します`.ctor`コンス トラクター ([!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]のみ)。  
   
  FIELD_MOD_HIDEBYSIG  
  フィールドがあることを示します、`Overloads`キーワードを適用 ([!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]のみ)。  

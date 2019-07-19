@@ -1,4 +1,4 @@
-﻿---
+---
 title: Excel 拡張子のサンプル:ActionFilter クラス |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -9,11 +9,11 @@ caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 86c1dda46ed0e62649a576a12c9f9e48561ec891
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158165"
 ---
 # <a name="sample-excel-extension-actionfilter-class"></a>Excel 拡張子のサンプル:ActionFilter クラス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54767845"
 ## <a name="private-methods"></a>プライベート メソッド  
  `IsLeftClick` メソッドは、指定されたアクションがマウスの左クリックを表すかどうかを判断します。 `AreActionsOnSameExcelCell` メソッドは、2 つの指定されたアクションが Excel の同じセルに対して実行されるかどうかを判断します。  
   
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.IUITestActionStack>   
  [コード化された UI テストと操作の記録を拡張して Microsoft Excel をサポート](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

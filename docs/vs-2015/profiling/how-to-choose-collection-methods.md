@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199802"
 ---
-# <a name="how-to-choose-collection-methods"></a>方法: 収集方法を選択します。
+# <a name="how-to-choose-collection-methods"></a>方法: 収集方法を選択する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] プロファイリング ツールでは、サンプリング、インストルメンテーション、コンカレンシーという 3 種類のパフォーマンス データ収集方法をサポートしています。 また、.NET メモリ割り当てと有効期間データの収集には、サンプリングまたはインストルメンテーションの方式を使用できます。  
@@ -48,7 +48,7 @@ ms.locfileid: "60088445"
   
 #### <a name="to-select-a-collection-method-using-performance-explorer"></a>パフォーマンス エクスプローラーを使用して収集方法を選択するには  
   
-1. **パフォーマンス エクスプローラー**のツール バーで、**[メソッド]** ドロップダウン リストの横の矢印をクリックします。  
+1. **パフォーマンス エクスプローラー**のツール バーで、 **[メソッド]** ドロップダウン リストの横の矢印をクリックします。  
   
 2. 必要な収集方法をクリックします。  
   
@@ -60,7 +60,7 @@ ms.locfileid: "60088445"
   
      パフォーマンス セッション ファイル名の拡張子は .psess です。  
   
-2. パフォーマンス セッションを右クリックして、**[プロパティ]** をクリックします。  
+2. パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。  
   
 3. **[プロパティ ページ]** で **[全般]** をクリックします。  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60088445"
   
      パフォーマンス セッション ファイル名の拡張子は .psess です。  
   
-2. パフォーマンス セッションを右クリックして、**[プロパティ]** をクリックします。  
+2. パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。  
   
 3. **[プロパティ ページ]** で **[全般]** をクリックします。  
   

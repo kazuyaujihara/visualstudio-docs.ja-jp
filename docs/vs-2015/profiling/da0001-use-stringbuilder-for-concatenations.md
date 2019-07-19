@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 386eda282364ccc4ab9841f126bb10944477df18
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202254"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001:連結には StringBuilder を使用してください
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Visual Studio の最新ドキュメントについては、次を参照してく
 |||  
 |-|-|  
 |規則 ID|DA0001|  
-|カテゴリ|.NET Framework の使用|  
+|Category|.NET Framework の使用|  
 |プロファイル方法|サンプリング<br /><br /> インストルメンテーション|  
-|メッセージ|文字列の連結に StringBuilder を使用することを検討してください。|  
+|Message|文字列の連結に StringBuilder を使用することを検討してください。|  
 |メッセージの種類|警告|  
   
 ## <a name="cause"></a>原因  

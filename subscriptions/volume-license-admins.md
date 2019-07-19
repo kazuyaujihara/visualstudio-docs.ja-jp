@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/14/2018
 ms.topic: conceptual
 description: サブスクリプションの管理者が管理ポータルにアクセスし、ボリューム ライセンス (VL) で取得したサブスクリプションを管理する方法について説明します
-searchscope: VS Subscription
-ms.openlocfilehash: 6c8a68a1a25e99018e7f41fedbfc9d01b191e2e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 765f33b59c89dbc99772c5ccd8df43a9fcbd0b0f
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428041"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784740"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>ポータルへのアクセスおよび管理者の管理: ボリューム ライセンス (VL) で取得したサブスクリプションの場合
 
@@ -33,9 +32,9 @@ VLSC でのサブスクリプションの管理の詳細については、次の
 
 1. PCN を検索してサインインする
 
-     a.  電子メールでは、主要ご担当者様および連絡先ご担当者様に、専用のリンク、パブリック カスタマー番号 (PCN) の最後の 3 桁が提供されます。  (主要ご担当者様および連絡先ご担当者様が、複数の電子メールを受信した場合、複数の PCN があることを意味しています。 管理者は、各電子メールで参照されている PCN の一意のリンクを使用してプロセスを完了する必要があります。)
+     a. 電子メールでは、主要ご担当者様および連絡先ご担当者様に、専用のリンク、パブリック カスタマー番号 (PCN) の最後の 3 桁が提供されます。  (主要ご担当者様および連絡先ご担当者様が、複数の電子メールを受信した場合、複数の PCN があることを意味しています。 管理者は、各電子メールで参照されている PCN の一意のリンクを使用してプロセスを完了する必要があります。)
 
-     b.  PCN をすべて取得するには、主要ご担当者様が VLSC にサインインする必要があります。 [Instructions for locating the PCN](find-pcn.md) (PCN を検索する手順)
+     b. PCN をすべて取得するには、主要ご担当者様が VLSC にサインインする必要があります。 [Instructions for locating the PCN](find-pcn.md) (PCN を検索する手順)
 
      c. PCN を入手した後に、サインインするよう要求する一意のリンクを選択する必要があります。 組織が AAD にない場合は、職場または学校のアカウント (組織が AAD である場合) または Microsoft アカウント (MSA) のいずれかを使用してサインインできます。
 

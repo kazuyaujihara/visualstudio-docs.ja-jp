@@ -1,127 +1,125 @@
 - name: Visual Studio の XML ツール
+  href: xml-tools-in-visual-studio.md
+- name: XML エディター
   items:
     - name: 概要
-      href: xml-tools-in-visual-studio.md
-    - name: XML エディター
+      displayName: XML editor
+      href: xml-editor.md
+    - name: XML ドキュメントの検証
+      href: xml-document-validation.md
+    - name: XML エディターの IntelliSense 機能
+      href: xml-editor-intellisense-features.md
+    - name: XML スニペット
       items:
         - name: 概要
-          displayName: XML editor
-          href: xml-editor.md
-        - name: XML ドキュメントの検証
-          href: xml-document-validation.md
-        - name: XML エディターの IntelliSense 機能
-          href: xml-editor-intellisense-features.md
-        - name: XML スニペット
-          items:
-            - name: 概要
-              displayName: XML snippets overview
-              href: xml-snippets.md
-            - name: XML スニペットを使用する
-              href: how-to-use-xml-snippets.md
-            - name: XML スキーマからスニペットを生成する
-              href: how-to-generate-an-xml-snippet-from-an-xml-schema.md
-            - name: XML スニペットを作成する
-              href: how-to-create-xml-snippets.md
-        - name: XSLT スタイル シートを編集する
-          href: editing-xslt-style-sheets.md
-        - name: スキーマ キャッシュ
-          href: schema-cache.md
-        - name: XML エディターのタスク
-          items:
-            - name: 'チュートリアル: XML エディター機能を使用する'
-              href: walkthrough-using-xml-editor-features.md
-            - name: 使用する XML スキーマを選択する
-              href: how-to-select-the-xml-schemas-to-use.md
-            - name: XML ドキュメントから XML スキーマを作成する
-              href: how-to-create-an-xml-schema-from-an-xml-document.md
-            - name: XML エディターから XSLT 変換を実行する
-              href: how-to-execute-an-xslt-transformation-from-the-xml-editor.md
-            - name: XML ファイルを編集する
-              href: how-to-edit-xml-files.md
-            - name: XSLT に関するチュートリアル
-              items:
-                - name: XSLT IntelliSense
-                  href: walkthrough-using-xslt-intellisense.md
-                - name: XSLT 階層
-                  href: walkthrough-using-xslt-hierarchy.md
-        - name: XML ファイルのプロパティ
-          href: xml-document-properties-properties-window.md
-        - name: '[XML スキーマ] ダイアログ ボックス'
-          href: xml-schemas-dialog-box.md
-    - name: XML スキーマ デザイナー
+          displayName: XML snippets overview
+          href: xml-snippets.md
+        - name: XML スニペットを使用する
+          href: how-to-use-xml-snippets.md
+        - name: XML スキーマからスニペットを生成する
+          href: how-to-generate-an-xml-snippet-from-an-xml-schema.md
+        - name: XML スニペットを作成する
+          href: how-to-create-xml-snippets.md
+    - name: XSLT スタイル シートを編集する
+      href: editing-xslt-style-sheets.md
+    - name: スキーマ キャッシュ
+      href: schema-cache.md
+    - name: XML エディターのタスク
       items:
-        - name: 概要
-          displayName: XML Schema Designer overview
-          href: xml-schema-designer.md
+        - name: 'チュートリアル: XML エディター機能を使用する'
+          href: walkthrough-using-xml-editor-features.md
+        - name: 使用する XML スキーマを選択する
+          href: how-to-select-the-xml-schemas-to-use.md
+        - name: XML ドキュメントから XML スキーマを作成する
+          href: how-to-create-an-xml-schema-from-an-xml-document.md
+        - name: XML エディターから XSLT 変換を実行する
+          href: how-to-execute-an-xslt-transformation-from-the-xml-editor.md
+        - name: XML ファイルを編集する
+          href: how-to-edit-xml-files.md
+        - name: XSLT に関するチュートリアル
+          items:
+            - name: XSLT IntelliSense
+              href: walkthrough-using-xslt-intellisense.md
+            - name: XSLT 階層
+              href: walkthrough-using-xslt-hierarchy.md
+    - name: XML ファイルのプロパティ
+      href: xml-document-properties-properties-window.md
+    - name: '[XML スキーマ] ダイアログ ボックス'
+      href: xml-schemas-dialog-box.md
+- name: XML スキーマ デザイナー
+  items:
+    - name: 概要
+      displayName: XML Schema Designer overview
+      href: xml-schema-designer.md
+    - name: XML スキーマ エクスプローラー
+      items:
         - name: XML スキーマ エクスプローラー
-          items:
-            - name: XML スキーマ エクスプローラー
-              href: xml-schema-explorer.md
-            - name: スキーマ セットを検索する
-              href: searching-the-schema-set.md
-            - name: 並べ替え、フィルター、およびグループ化
-              href: sorting-filtering-and-grouping-xml-schema-explorer.md
-            - name: コンテキスト メニュー
-              href: context-menus-xml-schema-explorer.md
-            - name: XML リテラルの統合
-              href: integration-of-xml-literals-with-xml-schema-explorer.md
-        - name: ワークスペース
-          items:
-            - name: ビューの概要
-              href: xml-schema-designer-workspace.md
-            - name: スタート ビュー
-              href: start-view.md
-            - name: コンテンツ モデル ビュー
-              href: content-model-view.md
-            - name: グラフ ビュー
-              href: graph-view.md
-        - name: XML エディターとの統合
-          href: integration-with-xml-editor.md
-        - name: XML スキーマ デザイナーのタスク
-          items:
-            - name: XSD スキーマ ファイルを作成して編集する
-              href: how-to-create-and-edit-an-xsd-schema-file.md
-            - name: XSD スキーマに基づいて XML ドキュメントを作成する
-              href: how-to-create-an-xml-document-based-on-an-xsd-schema.md
-            - name: スキーマ セットの検索結果のノードをワークスペースに追加する
-              href: how-to-add-schema-set-search-result-nodes-to-the-workspace.md
-            - name: ビューと XML エディターを切り替える
-              href: how-to-switch-between-views-and-the-xml-editor.md
-            - name: XML スキーマ エクスプローラーからワークスペースにノードを追加する
-              href: how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md
-            - name: スタート ビューからワークスペースにノードを追加する
-              href: how-to-add-nodes-to-the-workspace-from-the-start-view.md
-            - name: スキーマ セットの概要を取得する
-              href: how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md
-            - name: ノードのコンテンツ モデルを調べる
-              href: how-to-examine-the-content-model-of-nodes-using-the-content-model-view.md
-            - name: XML リテラルに XML スキーマ デザイナーを使用する
-              href: how-to-use-the-xml-schema-designer-with-xml-literals.md
-            - name: ダイアグラムを印刷する
-              href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
-            - name: サンプル XSD ファイル
-              items:
-                - name: シンプル スキーマ
-                  displayName: Sample XSD files
-                  href: sample-xsd-file-simple-schema.md
-                - name: 発注書スキーマ
-                  href: sample-xsd-file-purchase-order-schema.md
-                - name: リレーションシップ
-                  href: sample-xsd-file-relationships.md
-    - name: XSLT のデバッグ
+          href: xml-schema-explorer.md
+        - name: スキーマ セットを検索する
+          href: searching-the-schema-set.md
+        - name: 並べ替え、フィルター、およびグループ化
+          href: sorting-filtering-and-grouping-xml-schema-explorer.md
+        - name: コンテキスト メニュー
+          href: context-menus-xml-schema-explorer.md
+        - name: XML リテラルの統合
+          href: integration-of-xml-literals-with-xml-schema-explorer.md
+    - name: ワークスペース
       items:
-        - name: 概要
-          displayName: XSLT debugging
-          href: debugging-xslt.md
-        - name: 'チュートリアル: XSLT スタイル シートのデバッグ'
-          href: walkthrough-debug-an-xslt-style-sheet.md
-        - name: XPath 式を評価する
-          href: how-to-evaluate-an-xpath-expression.md
-        - name: XSLT デバッガー ユーザー インターフェイス
-          href: debugger-user-interface-xslt.md
-        - name: XSLT の既定のテンプレート
-          href: xslt-default-templates.md
-        - name: XSLT プロファイラー
-          href: xslt-profiler.md
-    - name: XML に関するセキュリティの考慮事項
-      href: security-considerations-when-working-with-xml-data.md
+        - name: ビューの概要
+          href: xml-schema-designer-workspace.md
+        - name: スタート ビュー
+          href: start-view.md
+        - name: コンテンツ モデル ビュー
+          href: content-model-view.md
+        - name: グラフ ビュー
+          href: graph-view.md
+    - name: XML エディターとの統合
+      href: integration-with-xml-editor.md
+    - name: XML スキーマ デザイナーのタスク
+      items:
+        - name: XSD スキーマ ファイルを作成して編集する
+          href: how-to-create-and-edit-an-xsd-schema-file.md
+        - name: XSD スキーマに基づいて XML ドキュメントを作成する
+          href: how-to-create-an-xml-document-based-on-an-xsd-schema.md
+        - name: スキーマ セットの検索結果のノードをワークスペースに追加する
+          href: how-to-add-schema-set-search-result-nodes-to-the-workspace.md
+        - name: ビューと XML エディターを切り替える
+          href: how-to-switch-between-views-and-the-xml-editor.md
+        - name: XML スキーマ エクスプローラーからワークスペースにノードを追加する
+          href: how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md
+        - name: スタート ビューからワークスペースにノードを追加する
+          href: how-to-add-nodes-to-the-workspace-from-the-start-view.md
+        - name: スキーマ セットの概要を取得する
+          href: how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md
+        - name: ノードのコンテンツ モデルを調べる
+          href: how-to-examine-the-content-model-of-nodes-using-the-content-model-view.md
+        - name: XML リテラルに XML スキーマ デザイナーを使用する
+          href: how-to-use-the-xml-schema-designer-with-xml-literals.md
+        - name: ダイアグラムを印刷する
+          href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
+        - name: サンプル XSD ファイル
+          items:
+            - name: シンプル スキーマ
+              displayName: Sample XSD files
+              href: sample-xsd-file-simple-schema.md
+            - name: 発注書スキーマ
+              href: sample-xsd-file-purchase-order-schema.md
+            - name: リレーションシップ
+              href: sample-xsd-file-relationships.md
+- name: XSLT のデバッグ
+  items:
+    - name: 概要
+      displayName: XSLT debugging
+      href: debugging-xslt.md
+    - name: 'チュートリアル: XSLT スタイル シートのデバッグ'
+      href: walkthrough-debug-an-xslt-style-sheet.md
+    - name: XPath 式を評価する
+      href: how-to-evaluate-an-xpath-expression.md
+    - name: XSLT デバッガー ユーザー インターフェイス
+      href: debugger-user-interface-xslt.md
+    - name: XSLT の既定のテンプレート
+      href: xslt-default-templates.md
+    - name: XSLT プロファイラー
+      href: xslt-profiler.md
+- name: XML に関するセキュリティの考慮事項
+  href: security-considerations-when-working-with-xml-data.md

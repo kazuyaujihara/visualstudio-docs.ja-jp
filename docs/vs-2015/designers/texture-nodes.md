@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e43329cb15eaf41ccb8859521bd45eff6f749c10
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187764"
 ---
 # <a name="texture-nodes"></a>テクスチャ ノード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54779841"
   
 ## <a name="texture-node-reference"></a>テクスチャ ノード リファレンス  
   
-|ノード|説明|プロパティ|  
+|ノード|説明|Properties|  
 |----------|-------------|----------------|  
 |**キューブ マップのサンプル**|指定した座標で、キューブ マップから色のサンプルを取得します。<br /><br /> キューブ マップを使用すると、反射の効果に対して色の詳細を指定したり、2D テクスチャよりもゆがみの少ないテクスチャを球形オブジェクトに適用したりできます。<br /><br /> **入力:**<br /><br /> `UVW`: `float3`<br /> テクスチャ キューブ上の、サンプルを取得する位置を指定するベクター。 サンプルは、このベクターとキューブが交差する位置から取得されます。<br /><br /> **出力:**<br /><br /> `Output`: `float4`<br /> 色のサンプル。|**テクスチャ**<br /> サンプラーに関連付けられているテクスチャ レジスタ。|  
 |**法線マップのサンプル**|指定した座標で、2D 法線マップから法線のサンプルを取得します<br /><br /> 法線マップを使用すると、オブジェクトの表面で、追加のジオメトリ詳細の外観をシミュレートできます。 法線マップには、色データではなく、単位ベクターを表すデータがパックされています<br /><br /> **入力:**<br /><br /> `UV`: `float2`<br /> サンプルを取得する位置の座標。<br /><br /> **出力:**<br /><br /> `Output`: `float3`<br /> 法線のサンプル。|**軸の調整**<br /> 法線マップのサンプルの処理を調整するために使用される係数。<br /><br /> **テクスチャ**<br /> サンプラーに関連付けられているテクスチャ レジスタ。|  

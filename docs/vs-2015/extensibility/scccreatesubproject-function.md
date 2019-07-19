@@ -13,11 +13,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c2f28d8bb9ebc440db69085324becb6a96c19afe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200195"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 関数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ SCCRTN SccCreateSubProject(
  [入力、出力] (最大 SCC_PRJPATH_SIZE、NULL 終端文字も含めて) プロジェクトを識別する文字列を補助します。  
   
  lpSubProjPath  
- [入力、出力](最大 SCC_PRJPATH_SIZE、NULL 終端文字も含めて) サブプロジェクトのパスを識別する文字列を出力します。  
+ [入力、出力]\(最大 SCC_PRJPATH_SIZE、NULL 終端文字も含めて) サブプロジェクトのパスを識別する文字列を出力します。  
   
 ## <a name="return-value"></a>戻り値  
  この関数のソース管理プラグイン実装は、次の値のいずれかを返すが必要です。  

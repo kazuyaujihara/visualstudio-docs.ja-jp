@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eefe0160328f1eb6b3fe841742547efe8be50ec1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158274"
 ---
 # <a name="property-element-msbuild"></a>Property 要素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

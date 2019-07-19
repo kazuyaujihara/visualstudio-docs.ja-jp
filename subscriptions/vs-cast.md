@@ -6,13 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションで使用可能な CAST Highlight 特典について説明します
-searchscope: VS Subscription
-ms.openlocfilehash: 5a6a7024653027f3b813de6a417dc01e07d30084
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: c990682fa107364c181403863d3dbefc5a1f3891
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032887"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823679"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CAST Highlight 特典
 
@@ -98,8 +97,8 @@ Visual Studio Enterprise サブスクライバーは、サブスクライバー�
 
 ## <a name="support-resources"></a>サポート リソース
 - CAST Highlight の使用に関するヘルプが必要ですか。  以下のリソースを確認してください。
-    - [サポート要求を送信する](https://casthighlight.com/support/)
-    - [概要ガイド (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
+  - [サポート要求を送信する](https://casthighlight.com/support/)
+  - [概要ガイド (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。

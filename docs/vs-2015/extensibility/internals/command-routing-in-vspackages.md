@@ -12,11 +12,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 954d3f25a425652d8adcb31bd36fab06de0d04d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195085"
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage のコマンド ルーティング
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58962661"
  [ルーティング アルゴリズム](../../extensibility/internals/command-routing-algorithm.md)  
  コマンド ルーティングの解像度の順序について説明します。  
   
- [利用可能性](../../extensibility/internals/command-availability.md)  
+ [可用性](../../extensibility/internals/command-availability.md)  
  コマンド ルーティングについて説明します。  
   
  [相互運用機能アセンブリを使用するコマンドとメニュー](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  

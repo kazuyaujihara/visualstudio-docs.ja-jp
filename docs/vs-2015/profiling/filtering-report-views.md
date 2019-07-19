@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 344a2dbe0e629f62f609806008b963be2be058a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164056"
 ---
 # <a name="filtering-report-views"></a>レポート ビューのフィルター処理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60108738"
   
     |フィールド|説明|  
     |-----------|-----------------|  
-    |**And/Or**|この句と次の句の両方が成り立つものを結果として返す場合は、**[And]** を選択します。 この句と次の句のいずれかが成り立つものを結果として返す場合は、**[Or]** を選択します。|  
+    |**And/Or**|この句と次の句の両方が成り立つものを結果として返す場合は、 **[And]** を選択します。 この句と次の句のいずれかが成り立つものを結果として返す場合は、 **[Or]** を選択します。|  
     |**フィールド**|フィルター句で使用するレポート フィールドを、表示されるデータ フィールドのリストから選択します。|  
     |**Operator**|フィールドと値の関係を示す演算子として、句に含める演算子を選択します。<br /><br /> =    等しい<br /><br /> <>  等しくない<br /><br /> <    より小<br /><br /> >    より大<br /><br /> <=  以下<br /><br /> >=  以上|  
     |**[値]**|検索する値を選択または入力します。 フィールドによっては使用可能な値がリスト表示されます。|  
@@ -48,7 +48,7 @@ ms.locfileid: "60108738"
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>マーク レポート ビューからプロファイラー レポート フィルターを作成するには  
   
-1. パフォーマンス レポート ビュー ツール バーで、**[現在のビュー]** ボックスから **[マーク]** をクリックします。  
+1. パフォーマンス レポート ビュー ツール バーで、 **[現在のビュー]** ボックスから **[マーク]** をクリックします。  
   
     マーク プロファイラー レポートが表示されます。  
   

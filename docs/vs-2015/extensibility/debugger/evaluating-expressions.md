@@ -13,13 +13,13 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caff42c2e203151c6bab7d50b41744c2469ab3c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151624"
 ---
-# <a name="evaluating-expressions"></a>評価式
+# <a name="evaluating-expressions"></a>式の評価
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 式は、自動変数、ウォッチ、クイック ウォッチ、またはイミディ エイト ウィンドウから下へ渡された文字列から作成されます。 式が評価され、変数または引数とその値の型と名前を含む印刷文字列が生成されます。 この文字列は、対応する IDE ウィンドウに表示されます。  

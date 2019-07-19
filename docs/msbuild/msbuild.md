@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ae010fac8978b0669021bc6645449f57da754d0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5ac7cd1ea69bb6b96066da876ab2ce88aabb8a08
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437857"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823495"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] は、アプリケーションをビルドするためのプラットフォームです。 MSBuild とも呼ばれるこのエンジンには、ビルド プラットフォームでソフトウェアを処理およびビルドする方法を制御する、プロジェクト ファイル用の XML スキーマが用意されています。 Visual Studio は MSBuild を使用しますが、MSBuild は Visual Studio に依存しません。 プロジェクト ファイルまたはソリューション ファイルに対して *msbuild.exe* を実行すると、Visual Studio がインストールされていない環境で、製品の統合とビルドを実行できます。
 
- Visual Studio は、マネージド プロジェクトの読み込みとビルドを行う MSBuild をホストしています。 Visual Studio のプロジェクト ファイル (*.csproj*、*vbproj*、*vcxproj* など) には、IDE を使用してプロジェクトをビルドするときに実行される MSBuild XML コードが含まれています。 Visual Studio プロジェクトには、一般的な開発作業を行う必要なすべての設定とビルド プロセスがインポートされますが、Visual Studio 内のエディターや任意の XML エディターを使用してそれらを拡張または変更することもできます。
+ Visual Studio は、マネージド プロジェクトの読み込みとビルドを行う MSBuild をホストしています。 Visual Studio のプロジェクト ファイル ( *.csproj*、*vbproj*、*vcxproj* など) には、IDE を使用してプロジェクトをビルドするときに実行される MSBuild XML コードが含まれています。 Visual Studio プロジェクトには、一般的な開発作業を行う必要なすべての設定とビルド プロセスがインポートされますが、Visual Studio 内のエディターや任意の XML エディターを使用してそれらを拡張または変更することもできます。
 
  C++ に対する MSBuild の詳細については、「[MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp)」をご覧ください。
 
@@ -35,13 +35,13 @@ ms.locfileid: "63437857"
 
 - ビルド システムを変更することを希望しています。 たとえば、次の操作を有効にすることを希望する場合があります。
 
-    - コンパイラに渡す前に、ファイルを前処理します。
+  - コンパイラに渡す前に、ファイルを前処理します。
 
-    - ビルド出力を別の場所にコピーします。
+  - ビルド出力を別の場所にコピーします。
 
-    - ビルド出力から圧縮ファイルを作成します。
+  - ビルド出力から圧縮ファイルを作成します。
 
-    - 後処理手順を実行します。 たとえば、1 つのアセンブリに対して、異なる複数のバージョンをスタンプとして割り当てることがあります。
+  - 後処理手順を実行します。 たとえば、1 つのアセンブリに対して、異なる複数のバージョンをスタンプとして割り当てることがあります。
 
 Visual Studio IDE でコードを作成し、MSBuild を使用してビルドを実行することもできます。 別の方法として、開発用コンピューターの IDE でコードをビルドすることもできますが、単一の MSBuild コマンド ラインを使用して、複数の開発者から取得して統合したコードをビルドすることもできます。
 

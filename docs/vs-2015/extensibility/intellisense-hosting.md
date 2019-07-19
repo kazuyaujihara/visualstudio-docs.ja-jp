@@ -11,13 +11,13 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5c378aec6822a436de0d8fc2656fcac7be4149f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203897"
 ---
-# <a name="intellisense-hosting"></a>IntelliSense をホストしています。
+# <a name="intellisense-hosting"></a>IntelliSense ホスティング
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio では、IntelliSense のホストを使用できます。 Visual Studio テキスト エディターでホストされていないコードに対して IntelliSense を提供する IntellSense をホストしていることができます。  

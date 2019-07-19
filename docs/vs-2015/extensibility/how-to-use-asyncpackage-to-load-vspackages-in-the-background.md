@@ -6,11 +6,11 @@ ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
 ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204029"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>方法: AsyncPackage を使用してバックグラウンドで VSPackage を読み込む
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60091669"
   
 4. 非同期初期化作業を行う場合は、オーバーライド<xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>します。 削除、 **Initialize()** VSIX のテンプレートによって提供されるメソッド。 (、 **Initialize()** メソッド**AsyncPackage**がシールされている)。 いずれかを使用することができます、<xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A>非同期のサービスをパッケージに追加する方法。  
   
-    注: 呼び出す**ベース。InitializeAsync()**、ソース コードを変更することができます。  
+    注: 呼び出す**ベース。InitializeAsync()** 、ソース コードを変更することができます。  
   
    ```csharp  
    await base.InitializeAsync(cancellationToken, progress);  

@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 36065120dc636f0004f0e00d8b17a0059a680723
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161384"
 ---
 # <a name="warning-script-debugging-disabled"></a>警告 :スクリプト デバッグが無効
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Internet Explorer では、スクリプトのデバッグは現在無効にな�
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Internet Explorer でスクリプトのデバッグを有効にするには  
   
-1. Internet Explorer で、**[ツール]** メニューの **[インターネット オプション]** を選択します。  
+1. Internet Explorer で、 **[ツール]** メニューの **[インターネット オプション]** を選択します。  
   
 2. **[インターネット オプション]** ダイアログ ボックスで、 **[詳細設定]** タブをクリックします。  
   

@@ -15,18 +15,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 83066e132a4c335841a5ac95620964bbe1a470b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202363"
 ---
 # <a name="vtable"></a>VTable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 仮想テーブルがで識別される、`SymTagVTable`シンボル。  
   
-## <a name="properties"></a>プロパティ  
+## <a name="properties"></a>Properties  
  次の表では、この記号の型の有効な追加のプロパティを示します。  
   
 |プロパティ|データの種類|説明|  

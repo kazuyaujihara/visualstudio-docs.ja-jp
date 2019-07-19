@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155707"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>ClickOnce アプリケーションのコマンド ラインからのビルド
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58974764"
   
  「ターゲット」は、コマンドを処理する方法には、MSBuild にインジケーターです。 キーのターゲットとは、ターゲットの「ビルド」と「発行」のターゲットです。 ビルド ターゲットがビルドを選択するのと同じ IDE でのコマンド (または f5 キーを押す) します。 プロジェクトをビルドする場合は、ことを実現する」と入力して`msbuild`します。 このコマンドは、ビルド ターゲットがによって生成されたすべてのプロジェクトの既定のターゲットであるため[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]します。 つまり、明示的にビルド ターゲットを指定する必要はありません。 したがって、`msbuild`入力と同じ操作は、`msbuild /target:build`します。  
   
- `/target:publish`コマンドは、発行ターゲットを呼び出すための MSBuild に指示します。 発行先は、ビルド ターゲットに依存します。 これは、発行操作は、ビルド操作のスーパー セットであることを意味します。 たとえば、Visual Basic または C# ソース ファイルのいずれかに変更を加えた場合、対応するアセンブリは自動的にして再構築、発行操作。  
+ `/target:publish`コマンドは、発行ターゲットを呼び出すための MSBuild に指示します。 発行先は、ビルド ターゲットに依存します。 これは、発行操作は、ビルド操作のスーパー セットであることを意味します。 たとえば、Visual Basic または c# ソース ファイルのいずれかに変更を加えた場合、対応するアセンブリは自動的にして再構築、発行操作。  
   
  完全なを生成する方法について[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]Mage.exe コマンド ライン ツールを使用して作成する展開、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]マニフェストは、「[チュートリアル。Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」(チュートリアル: ClickOnce アプリケーションを手動で配置する) を参照してください。  
   
@@ -81,7 +81,7 @@ ms.locfileid: "58974764"
 ## <a name="publishing-properties"></a>発行プロパティ  
  上記の手順で、アプリケーションを発行するとき、次のプロパティは、発行ウィザードによって、プロジェクト ファイルに挿入されます。 これらのプロパティに直接影響を与える方法、[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]アプリケーションが生成されます。  
   
- In CmdLineDemo.vbproj / CmdLineDemo.csproj:  
+ CmdLineDemo.vbproj で/CmdLineDemo.csproj:  
   
 ```  
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>  

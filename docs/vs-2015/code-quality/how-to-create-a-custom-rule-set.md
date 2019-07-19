@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201365"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>方法: カスタム規則セットの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60045656"
   
 2. **プロパティ**] タブで [**コード分析**します。  
   
-3. 選択 **\<複数ルールの設定... を選択 >** から**この規則セットを実行**します。  
+3. 選択 **\<複数ルールの設定...を選択>** から **この規則セットを実行** します。  
   
 4. **の追加と削除規則セット**ダイアログ ボックスで、規則セットをクリックして、新しい規則セットを基にしておく**OK**。  
   

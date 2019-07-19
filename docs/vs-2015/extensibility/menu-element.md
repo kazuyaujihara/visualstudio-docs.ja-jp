@@ -12,11 +12,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 79a8fafc748274015dac7f8f0938bba37ba5a8bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194349"
 ---
 # <a name="menu-element"></a>Menu 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "58975444"
 |要素|説明|  
 |-------------|-----------------|  
 |親|任意。 メニュー項目の親要素。|  
-|CommandFlag|必須。 参照してください[コマンド フラグ要素](../extensibility/command-flag-element.md)します。 メニューの有効な CommandFlag 値は次のとおりです。<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -このフラグでは、ツールバーの表示には影響しません。<br />-   **DontCache**<br />-   **DynamicVisibility** -このフラグでは、ツールバーの表示には影響しません。<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **テキスト**<br />-   **TextIsAnchorCommand**|  
+|CommandFlag|必須。 参照してください[コマンド フラグ要素](../extensibility/command-flag-element.md)します。 メニューの有効な CommandFlag 値は次のとおりです。<br /><br /> -   **通常**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -このフラグでは、ツールバーの表示には影響しません。<br />-   **DontCache**<br />-   **DynamicVisibility** -このフラグでは、ツールバーの表示には影響しません。<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **テキスト**<br />-   **TextIsAnchorCommand**|  
 |文字列|必須。 参照してください[要素の文字列](../extensibility/strings-element.md)します。 子`ButtonText`要素を定義する必要があります。|  
 |注釈|省略可能なコメント。|  
   

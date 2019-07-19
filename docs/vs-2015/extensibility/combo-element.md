@@ -12,11 +12,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: daa89266d653743a743f42e5f0b8e11c954adc1a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184409"
 ---
 # <a name="combo-element"></a>Combo 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "58976957"
   
 |要素|説明|  
 |-------------|-----------------|  
-|親|省略可能です。 ボタンの親要素。|  
+|親|任意。 ボタンの親要素。|  
 |CommandFlag|必須。 参照してください[コマンド フラグ要素](../extensibility/command-flag-element.md)します。 ボタンの有効な CommandFlag 値は次のとおりです。<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -フィルター キー機能<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
 |文字列|必須。 参照してください[要素の文字列](../extensibility/strings-element.md)します。 子 ButtonText 要素を定義する必要があります。|  
 |注釈|省略可能なコメント。|  

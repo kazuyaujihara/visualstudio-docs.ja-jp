@@ -13,11 +13,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 68f1693bbbda9bbf7622c2378799db4a342be7a5
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58975372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187969"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ IDebugProcess2 : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)|タイトル、フレンドリ名、またはプロセスのファイル名を取得します。|  
 |[GetServer](../../../extensibility/debugger/reference/idebugprocess2-getserver.md)|このプロセスが実行されているマシン server のインスタンスを取得します。|  
 |[Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|プロセスを終了します。|  
-|[添付](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|プロセスにアタッチします。|  
+|[Attach](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|プロセスにアタッチします。|  
 |[CanDetach](../../../extensibility/debugger/reference/idebugprocess2-candetach.md)|かどうか、SDM は、プロセスをデタッチできますを決定します。|  
 |[Detach](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|デバッガーをプロセスからデタッチします。|  
 |[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|システム プロセス識別子を取得します。|  

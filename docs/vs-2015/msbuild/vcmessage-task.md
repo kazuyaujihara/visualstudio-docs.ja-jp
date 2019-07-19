@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 508d1fe33046f6051c9c5c1b8e54036e78ae7d2f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193343"
 ---
 # <a name="vcmessage-task"></a>VCMessage タスク
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59652372"
 ビルド時の警告およびエラー メッセージをログに記録します。  
   
 ## <a name="remarks"></a>解説  
- このタスクは Visual C++ 用の MSBuild の実装に役立ちます。ユーザーによる呼び出しは意図されていません。 詳細については、「<xref:Microsoft.Build.Utilities.TaskLoggingHelper>」を参照してください。  
+ このタスクは Visual C++ 用の MSBuild の実装に役立ちます。ユーザーによる呼び出しは意図されていません。 詳細については、<xref:Microsoft.Build.Utilities.TaskLoggingHelper> を参照してください。  
   
 ## <a name="parameters"></a>パラメーター  
  **VCMessage** タスクのパラメーターの説明を次の表に示します。  

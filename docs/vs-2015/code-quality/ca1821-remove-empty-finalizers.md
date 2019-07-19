@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 5a6175871e74bf3cb99610dce0926f0982f331d4
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58963877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201666"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821:空のファイナライザーを削除します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58963877"
 |-|-|
 |TypeName|RemoveEmptyFinalizers|
 |CheckId|CA1821|
-|カテゴリ|Microsoft.Performance|
+|Category|Microsoft.Performance|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因

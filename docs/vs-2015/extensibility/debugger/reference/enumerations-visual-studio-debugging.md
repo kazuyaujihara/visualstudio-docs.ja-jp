@@ -12,11 +12,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a992e551a99ea1963f18e58cd00546e2f528915
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162619"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>列挙 (Visual Studio のデバッグ)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ ms.locfileid: "59000890"
  デバッグ サーバーと、デバッグ パッケージ間の通信に使用されるプロトコルを示す値。  
   
  [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md)  
- さまざまな種類のコンストラクターを選択します。  
+ さまざまな種類のコンス トラクターを選択します。  
   
  [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)  
  メモリの 2 つのコンテキストを比較するための条件を指定します。  

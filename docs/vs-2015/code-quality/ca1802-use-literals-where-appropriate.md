@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 5990d8ea3720098651d3ed696f6ee5ff907b82f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143145"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802:適切な場所にリテラルを使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58962984"
  フィールドが宣言されている`static`と`readonly`(`Shared`と`ReadOnly`で[!INCLUDE[vbprvb](../includes/vbprvb-md.md)])、およびコンパイル時に計算される値で初期化されます。
 
 ## <a name="rule-description"></a>規則の説明
- 値を`static``readonly`フィールドは、宣言型の静的コンストラクターが呼び出されたときに実行時に計算されます。 場合、`static``readonly`フィールドは宣言されているし、静的コンストラクターが明示的に宣言しないコンパイラは、フィールドを初期化するために静的コンストラクターを生成するときに初期化されます。
+ 値を`static``readonly`フィールドは、宣言型の静的コンス トラクターが呼び出されたときに実行時に計算されます。 場合、`static``readonly`フィールドは宣言されているし、静的コンス トラクターが明示的に宣言しないコンパイラは、フィールドを初期化するために静的コンス トラクターを生成するときに初期化されます。
 
  値を`const`フィールドがコンパイル時に計算し、と比較した場合、実行時のパフォーマンスを向上すると、メタデータに格納されている、`static``readonly`フィールド。
 

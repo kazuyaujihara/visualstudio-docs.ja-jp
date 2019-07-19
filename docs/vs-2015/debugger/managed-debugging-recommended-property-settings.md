@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f63e1382d242a679ed4fac09bfb3040200fed551
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203592"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>マネージド デバッグ:プロパティの推奨設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "58977663"
   
  プロパティの推奨設定を以下に示します。  
   
- ここに記載されていない設定は、マネージド プロジェクトの種類によって異なる場合があります。 たとえば、**[開始動作]** は、Windows フォーム プロジェクトと [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] プロジェクトとで設定が異なります。  
+ ここに記載されていない設定は、マネージド プロジェクトの種類によって異なる場合があります。 たとえば、 **[開始動作]** は、Windows フォーム プロジェクトと [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] プロジェクトとで設定が異なります。  
   
 ### <a name="configuration-properties-on-the-build-c-or-compile-visual-basic-tab"></a>[ビルド] タブ (C#) または [コンパイル] タブ (Visual Basic) の構成プロパティ  
   
@@ -39,7 +39,7 @@ ms.locfileid: "58977663"
 |-----------------------|-----------------|  
 |**定数 DEBUG の定義**|C#F#:チェック ボックスをオンに設定します。 これにより、アプリケーションで Debug クラスを使用できます。|  
 |**定数 TRACE の定義**|C#F#:チェック ボックスをオンに設定します。 これにより、アプリケーションで Trace クラスを使用できます。|  
-|**コードの最適化**|C#、 F#、および Visual Basic:False に設定します。 最適化されたコードは、生成された命令がソース コードと直接対応していないため、デバッグが困難です。 プログラムで、最適化されたコードだけに現れるバグが見つかった場合は、この設定を有効にできます。**[逆アセンブル]** ウィンドウに表示されるコードは最適化されたソースから生成されているため、コード エディターに表示されるコードとは一致しない可能性があります。 最適化されたコードをデバッグするには、オフにする必要があります[マイ コードのみ](just-my-code.md)します。<br /><br /> 詳細については、次を参照してください。 [C# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)または[Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)します。|  
+|**コードの最適化**|C#、 F#、および Visual Basic:False に設定します。 最適化されたコードは、生成された命令がソース コードと直接対応していないため、デバッグが困難です。 プログラムで、最適化されたコードだけに現れるバグが見つかった場合は、この設定を有効にできます。 **[逆アセンブル]** ウィンドウに表示されるコードは最適化されたソースから生成されているため、コード エディターに表示されるコードとは一致しない可能性があります。 最適化されたコードをデバッグするには、オフにする必要があります[マイ コードのみ](just-my-code.md)します。<br /><br /> 詳細については、次を参照してください。 [c# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)または[Visual Basic デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)します。|  
 |**出力パス**|bin\Debug\\ に設定します。|  
 |**詳細コンパイル オプション**|Visual Basic のみ。 **[詳細]** をクリックして、次の表に示す詳細なプロパティを設定できるようにします。|  
   

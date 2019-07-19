@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d6c14a268ef58dec31f65fe73e176eac8f690d9c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157746"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>コンテキスト メニュー (XML スキーマ エクスプローラー)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "59653959"
 |**グローバル要素を表示します。**|選択した名前空間内のすべてのグローバル要素を検索して強調表示します。|  
 |**[プロパティ] ウィンドウ**|開く、**プロパティ**ウィンドウ (は既に開かれていない) 場合。 このウィンドウには、ノードに関する情報が表示されます。|  
   
-## <a name="node-type-file"></a>ノードの種類:ファイル  
+## <a name="node-type-file"></a>ノードの種類:File  
  ファイル ノードに使用できるオプションを次の表に示します。  
   
 |オプション|説明|  

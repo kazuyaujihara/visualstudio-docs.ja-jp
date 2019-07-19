@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 951d5f39fbf3929d094cc18de5fe108b46753b09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176524"
 ---
 # <a name="how-to-step-into-wcf-services"></a>方法: WCF サービスにステップインする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60056446"
   
 1. WCF クライアント プロジェクトと WCF サービス プロジェクトの両方を含む [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ソリューションを作成します。  
   
-2. ソリューション エクスプローラーで、WCF クライアント プロジェクトを右クリックして、**[スタートアップ プロジェクトに設定]** をクリックします。  
+2. ソリューション エクスプローラーで、WCF クライアント プロジェクトを右クリックして、 **[スタートアップ プロジェクトに設定]** をクリックします。  
   
 3. app.config ファイルまたは web.config ファイルでデバッグを有効にします。 詳細については、次を参照してください。 [WCF デバッグの制約](../debugger/limitations-on-wcf-debugging.md)します。  
   

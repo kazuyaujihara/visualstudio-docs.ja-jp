@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Power BI Pro サブスクリプションについて説明します。
-searchscope: VS Subscription
-ms.openlocfilehash: 75c749d31e28ecdc463b0777744370680309fad7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: d696a72cc1ab411c9bd01671d9b57e335f751261
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031971"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824630"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Power BI Pro
 
@@ -111,9 +110,9 @@ A: いいえ。  Power BI Pro 特典は、政府機関向けのテナントに�
 
 ## <a name="support-resources"></a>サポート リソース
 - Power BI Pro のヘルプが必要ですか。
-    - [オンライン ドキュメント](/power-bi/)を参照してください。
-    - サインアップ時の問題ですか。  「[個人として Power BI にサインアップする](/power-bi/service-self-service-signup-for-power-bi)」を参照してください。
-    - よくある問題を調べ、コミュニティからサポートを受けるか、[サポート ページ](https://powerbi.microsoft.com/support/)でサポート チケットを送信してください。
+  - [オンライン ドキュメント](/power-bi/)を参照してください。
+  - サインアップ時の問題ですか。  「[個人として Power BI にサインアップする](/power-bi/service-self-service-signup-for-power-bi)」を参照してください。
+  - よくある問題を調べ、コミュニティからサポートを受けるか、[サポート ページ](https://powerbi.microsoft.com/support/)でサポート チケットを送信してください。
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 

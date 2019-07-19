@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c129ddf016e02fe6c29d5cf63fe57ba07fbd4e95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176648"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>インストルメンテーションを使用した詳細なタイミング データの収集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "60087977"
 - パフォーマンス セッションの [プロパティ] ダイアログ ボックスの **[全般]** ページで、 **[インストルメンテーション]** をクリックします。  
   
 ## <a name="common-tasks"></a>よく使う機能  
- 追加のオプションを、パフォーマンス セッションの [ _パフォーマンス セッション]_**[プロパティ ページ]** ダイアログ ボックスで指定できます。 このダイアログ ボックスを開くには:  
+ 追加のオプションを、パフォーマンス セッションの [ _パフォーマンス セッション]_ **[プロパティ ページ]** ダイアログ ボックスで指定できます。 このダイアログ ボックスを開くには:  
   
 - **パフォーマンス エクスプローラー**で、パフォーマンス セッション名を右クリックして **[プロパティ]** をクリックします。  
   
-  次の表の各タスクでは、インストルメンテーション メソッドを使用してプロファイリングを実行する際に、[ _パフォーマンス セッション]_**[プロパティ ページ]** ダイアログ ボックスで指定できるオプションについて説明しています。  
+  次の表の各タスクでは、インストルメンテーション メソッドを使用してプロファイリングを実行する際に、[ _パフォーマンス セッション]_ **[プロパティ ページ]** ダイアログ ボックスで指定できるオプションについて説明しています。  
   
-|タスク|関連するコンテンツ|  
+|タスク|関連コンテンツ|  
 |----------|---------------------|  
 |**[全般]** ページで、.NET のメモリ割り当ておよび有効期間データを追加し、生成されるプロファイリング データ (.vsp) ファイルの名前付けの詳細を指定します。|-   [.NET メモリの割り当ておよび有効期間データの収集](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [方法: パフォーマンス データ ファイル名のオプションを設定する](../profiling/how-to-set-performance-data-file-name-options.md)|  
 |ソリューション内に複数の .exe プロジェクトがある場合は、 **[起動]** ページで、開始するアプリケーションおよび開始順序を指定します。|-   [方法: 開始するバイナリを指定する](../profiling/how-to-specify-the-binary-to-start.md)|  

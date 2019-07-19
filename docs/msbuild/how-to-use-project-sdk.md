@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 172dfae63fbfb95432a1635490ac703f7bbd9021
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977317"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852240"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>方法: MSBuild プロジェクト SDK の使用
 
@@ -56,7 +56,15 @@ ms.locfileid: "62977317"
     </Project>
     ```
 
-    前述のように、暗黙的なインポートがプロジェクトの先頭と末尾に追加されます。  `Sdk` 属性の形式は `Name[/Version]` です (この Version は省略可能です)。  たとえば、`My.Custom.Sdk/1.2.3` を指定できます。
+    前述のように、暗黙的なインポートがプロジェクトの先頭と末尾に追加されます。
+    
+    特定のバージョンの SDK を指定する場合は、それを `Sdk` 属性に追加できます。
+
+    ```xml
+    <Project Sdk="My.Custom.Sdk/1.2.3">
+        ...
+    </Project>
+    ```
 
     > [!NOTE]
     > これは、現時点では、Visual Studio for Mac でプロジェクト SDK を参照するためにサポートされている唯一の方法です。

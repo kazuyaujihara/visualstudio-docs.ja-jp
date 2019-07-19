@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 921ed880d7a1827a8e52914fa21738f628cf17fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155419"
 ---
 # <a name="image-editor-examples"></a>イメージ エディターの例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ ms.locfileid: "54781318"
   
 ## <a name="related-topics"></a>関連トピック  
   
-|Title|説明|  
+|タイトル|説明|  
 |-----------|-----------------|  
-|[方法: 基本テクスチャを作成する](../designers/how-to-create-a-basic-texture.md)|基本的なテクスチャの作成方法を示します。|  
+|[方法: 基本的なテクスチャを作成する](../designers/how-to-create-a-basic-texture.md)|基本的なテクスチャの作成方法を示します。|  
 |[方法: Direct2D または Javascipt アプリで使用するためのテクスチャをエクスポートする](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Direct2D または WWA アプリで使用できる、前乗算されたアルファを持つ DDS 形式テクスチャの作成方法を示します。|  
 |[方法: MIP レベルを作成および変更する](../designers/how-to-create-and-modify-mip-levels.md)|イメージから MIP レベルを生成する方法を示します。|  
 |[ゲームまたはアプリでの 3-D アセットの使用](../designers/using-3-d-assets-in-your-game-or-app.md)|プロジェクトまたはソリューションのビルド時に [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] を使用してアプリ用に 3-D アセットを処理する方法について説明します。 さまざまな種類のアセットをアプリに読み込む手法についても説明します。|  

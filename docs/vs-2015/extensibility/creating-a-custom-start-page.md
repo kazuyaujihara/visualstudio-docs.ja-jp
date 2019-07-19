@@ -9,11 +9,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: acb7922658a5dd7db0839051a42a119733c8b1d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184201"
 ---
 # <a name="creating-a-custom-start-page"></a>カスタム スタート ページの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ ms.locfileid: "60118059"
   
 1. コピーは、XAML ファイルとサポート テキスト ファイルまたはマークアップをファイルに、 **%USERPROFILE%\My documents \visual Studio 2015 \startpages\\** フォルダー。  
   
-2. スタート ページは、すべてのコントロールまたは Visual Studio がインストールされていないアセンブリで型を参照する場合、アセンブリをコピーし、貼り付けることで_Visual Studio インストール フォルダー_**\Common7\IDE\PrivateAssemblies\\**します。  
+2. スタート ページは、すべてのコントロールまたは Visual Studio がインストールされていないアセンブリで型を参照する場合、アセンブリをコピーし、貼り付けることで_Visual Studio インストール フォルダー_ **\Common7\IDE\PrivateAssemblies\\** します。  
   
 3. Visual Studio コマンド プロンプトで「 **devenv/rootsuffix Exp**を Visual Studio の実験用インスタンスを開きます。  
   

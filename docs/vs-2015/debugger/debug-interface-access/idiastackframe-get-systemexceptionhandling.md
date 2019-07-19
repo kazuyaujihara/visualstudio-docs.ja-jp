@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a9c78aa32e0d1fab892738e6c2a9fc73cb14d8f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144760"
 ---
 # <a name="idiastackframegetsystemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ HRESULT get_systemExceptionHandling ( 
 ## <a name="remarks"></a>Remarks  
  システム例外の処理は、構造化例外処理とも呼ばれます。 これは、C++ 例外処理と同じものではありません。  
   
- C++ 例外処理が有効でかどうかを判断するを呼び出して、 [idiastackframe::get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)メソッド。  
+ あるかどうかをC++例外処理が有効では、呼び出し、 [idiastackframe::get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)メソッド。  
   
 ## <a name="see-also"></a>関連項目  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   

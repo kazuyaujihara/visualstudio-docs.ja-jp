@@ -14,11 +14,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 194768a3b540511996e1d99e6450a7a9b24ebc74
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184294"
 ---
 # <a name="commands-element"></a>Commands 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ VSPackage のツールバーのコマンドのコレクションを表します�
   
 |属性|説明|  
 |---------------|-----------------|  
-|package|コマンドを提供する VSPackage を識別する GUID。<br /><br /> たとえば、パッケージ化"guidVsPackage1Pkg"を = です。|  
+|パッケージ (package)|コマンドを提供する VSPackage を識別する GUID。<br /><br /> たとえば、パッケージ化"guidVsPackage1Pkg"を = です。|  
   
 ### <a name="child-elements"></a>子要素  
   

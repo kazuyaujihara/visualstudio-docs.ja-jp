@@ -5,12 +5,12 @@ author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: f7674a925a2fb70820c216557ef012484ffebbdf
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 20363d5497ea5897cb2685ca838da44b8c21d3df
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691683"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823171"
 ---
 # <a name="editor-behavior"></a>エディターの動作
 
@@ -22,9 +22,9 @@ ms.locfileid: "67691683"
 * セミコロンや波かっこなどの文字列を入力すると、実行時のコード書式設定がトリガーされ、設定されている書式設定が列挙されます。
 * また、保存時にファイルの書式を選択することもできます。この機能を利用すると、好きなようにコードを作成し、既存のユーザー設定に従って IDE で自動的にコードの書式を設定することができます。
 * [インデント] は、[なし]、[自動]、または [スマート] に設定できます。 機能は次のとおりです。
-   * なし - カレットを次行の行頭に設定します
-   * 自動 - カレットを次行の同じカラムに設定します
-   * スマート - コードに基づいて次行にインデントを設定します
+  * なし - カレットを次行の行頭に設定します
+  * 自動 - カレットを次行の同じカラムに設定します
+  * スマート - コードに基づいて次行にインデントを設定します
 * 単語を区切る動作は、OS によって異なります。ナビゲーションのために、テキスト エディターは単語の開始位置と終了位置を認識している必要があります。 書式は Unix または Windows に設定できます。
 
 また、XML、CSS、HTML、および JSON の書式設定規則も設定できます。

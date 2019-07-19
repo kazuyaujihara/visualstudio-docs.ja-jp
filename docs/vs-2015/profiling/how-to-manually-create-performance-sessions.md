@@ -16,20 +16,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 622d349fd063cf0a22e3c286003490e088cd4440
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192829"
 ---
-# <a name="how-to-manually-create-performance-sessions"></a>方法: パフォーマンス セッションを手動で作成します。
+# <a name="how-to-manually-create-performance-sessions"></a>方法: パフォーマンス セッションを手動で作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 パフォーマンス セッションは手動でも作成できます。 この場合、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] でプロジェクトを開く必要はありません。 詳細については、「[Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)」(パフォーマンス セッションの構成) をご覧ください。  
   
 ### <a name="to-manually-create-a-performance-session"></a>パフォーマンス セッションを手動で作成するには  
   
-1. **[分析]** メニューの **[プロファイラー]** ポイントし、**[新しいパフォーマンス セッション]** をクリックします。  
+1. **[分析]** メニューの **[プロファイラー]** ポイントし、 **[新しいパフォーマンス セッション]** をクリックします。  
   
      空のパフォーマンス セッションが**パフォーマンス エクスプ ローラー**に追加されます。  
   

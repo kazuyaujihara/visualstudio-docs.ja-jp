@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185838"
 ---
 # <a name="registering-project-and-item-templates"></a>プロジェクトと項目テンプレートの登録
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58973657"
  テンプレートの詳細については、次を参照してください。[プロジェクトに追加するとプロジェクト項目テンプレート](../../extensibility/internals/adding-project-and-project-item-templates.md)します。  
   
 ## <a name="registry-entries-for-projects"></a>プロジェクトのレジストリ エントリ  
- 次の例では、hkey_local_machine \software\microsoft\visualstudio の下にレジストリ エントリ\\<*バージョン*>。 付随するテーブルでは、例で使用される要素について説明します。  
+ 次の例では、HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*バージョン*> 下のレジストリ エントリを示しています。 付随するテーブルでは、例で使用される要素について説明します。  
   
 ```  
 [Projects\{ProjectGUID}]  
@@ -67,7 +67,7 @@ ms.locfileid: "58973657"
 ### <a name="registering-file-filters"></a>ファイル フィルターを登録します。  
  必要に応じて、フィルターを登録することができますを[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]ファイル名を要求するときに使用します。 たとえば、[!INCLUDE[csprcs](../../includes/csprcs-md.md)]のフィルター処理、**ファイルを開く** ダイアログ ボックスは。  
   
- **Visual C# ファイル (\*.cs、\*.resx、\*.settings、\*.xsd、\*.wsdl);\*します。cs、\*.resx、\*.settings、\*.xsd、\*.wsdl)**  
+ **Visual C# ファイル (\*.cs、\*.resx、\*.settings、\*.xsd、\*.wsdl);\*cs、\*.resx、\*.settings、\*.xsd、\*.wsdl)**  
   
  独自のサブキー hkey_local_machine \software\microsoft\visualstudio 下で複数のフィルターの登録をサポートする各フィルターが登録されている\\<*バージョン*> \Projects\\{\< *ProjectGUID*>} \Filters\\<*サブキー*>。 サブキーの名前は任意です。[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]サブキーの名前を無視し、その値だけを使用します。  
   
@@ -112,7 +112,7 @@ ms.locfileid: "58973657"
   
  \Form  
   
- \Web Page  
+ \Web ページ  
   
  \HelperFiles (複数のファイル プロジェクト項目で使用されるファイルが含まれています)  
   

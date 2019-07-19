@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978402"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823371"
 ---
 # <a name="developer-community-data-privacy"></a>開発者コミュニティのデータのプライバシー
 
@@ -29,9 +29,9 @@ ms.locfileid: "62978402"
 
 データのプライバシーについて心配がある場合は、常に公開される最初のレポートのタイトルや内容に、公開したくないことを含めないでください。 代わりに、レポートを作成して、別のコメントで詳細を非公開で送信することができます。 問題レポートが作成されると、返信と添付ファイルを閲覧できる人を指定することができます。
 
-1. 作成したレポートで、**[コメントの追加]** を選択して、問題の個人的な詳細を作成します。
+1. 作成したレポートで、 **[コメントの追加]** を選択して、問題の個人的な詳細を作成します。
 
-2. 返信エディターで、**[送信]** ボタンと **[キャンセル]** ボタンの下のコントロールを使用して、返信を閲覧できる人を指定します。 閲覧できるのを Microsoft の従業員と自分に制限するには、**[Viewable by moderators and the original poster]\(モデレーターと元の投稿者が閲覧可能\)** を選択します。
+2. 返信エディターで、 **[送信]** ボタンと **[キャンセル]** ボタンの下のコントロールを使用して、返信を閲覧できる人を指定します。 閲覧できるのを Microsoft の従業員と自分に制限するには、 **[Viewable by moderators and the original poster]\(モデレーターと元の投稿者が閲覧可能\)** を選択します。
 
    ![開発者コミュニティでのプライバシー コントロール](media/developer-community-privacy-control.png)
 
@@ -58,30 +58,30 @@ ms.locfileid: "62978402"
 
 - LiveShare ログ ファイル (存在する場合は、*VSFeedbackVSRTCLogs* フォルダーから)
 
-- Xamarin ログ ファイル (存在する場合は、*%LOCALAPPDATA%\Xamarin\Logs* から)
+- Xamarin ログ ファイル (存在する場合は、 *%LOCALAPPDATA%\Xamarin\Logs* から)
 
-- Nuget ログ ファイル (存在する場合は、*%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg* から)
+- Nuget ログ ファイル (存在する場合は、 *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg* から)
 
 - Web デバッガー ログ ファイル (存在する場合は以下から)
 
-   - *%TEMP%\vscode-chrome-debug.txt*
+  - *%TEMP%\vscode-chrome-debug.txt*
 
-   - *%TEMP%\vscode-node-debug2.txt*
+  - *%TEMP%\vscode-node-debug2.txt*
 
-   - *%TEMP%\vscode-edge-debug.txt*
+  - *%TEMP%\vscode-edge-debug.txt*
 
 - スクリーン ショット (含めることを選択した場合)
 
 - 記録データ (以下を含む記録を含めるように選択した場合)
 
-   - 問題を再現する手順
+  - 問題を再現する手順
 
-   - ETL トレース ファイル
+  - ETL トレース ファイル
 
-   - ダンプ ファイル
+  - ダンプ ファイル
 
-    > [!NOTE]
-    > レポートを送信する前に、送信したくないすべての記録データを削除することができます。
+  > [!NOTE]
+  > レポートを送信する前に、送信したくないすべての記録データを削除することができます。
 
 ## <a name="see-also"></a>関連項目
 

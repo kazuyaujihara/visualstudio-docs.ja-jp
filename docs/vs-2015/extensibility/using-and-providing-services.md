@@ -13,11 +13,11 @@ caps.latest.revision: 42
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f58e29797e9a7760aa0f48c68868199f51b3c92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177438"
 ---
 # <a name="using-and-providing-services"></a>サービスの使用と提供
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +38,16 @@ ms.locfileid: "58964069"
  [サービスの基本情報](../extensibility/internals/service-essentials.md)  
  Visual Studio サービスの重要な要素を表示します。  
   
- [方法: サービスを取得します。](../extensibility/how-to-get-a-service.md)  
+ [方法: サービスを取得する](../extensibility/how-to-get-a-service.md)  
  要求する方法について説明します (使用する) サービス。  
   
- [方法: サービスを提供します。](../extensibility/how-to-provide-a-service.md)  
+ [方法: サービスを提供する](../extensibility/how-to-provide-a-service.md)  
  サービスを提供する方法について説明します。  
   
- [方法: Visual Studio の非同期のサービスを提供します。](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
+ [方法: Visual Studio の非同期サービスを提供する](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
  非同期のサービスを提供する方法について説明します。  
   
- [方法: サービスをトラブルシューティングします。](../extensibility/how-to-troubleshoot-services.md)  
+ [方法: サービスのトラブルシューティング](../extensibility/how-to-troubleshoot-services.md)  
  一般的な問題について説明し、それらへのソリューションを提供します。  
   
 ## <a name="related-sections"></a>関連項目  

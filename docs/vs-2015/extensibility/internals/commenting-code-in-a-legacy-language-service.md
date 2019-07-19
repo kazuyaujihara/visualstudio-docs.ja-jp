@@ -12,11 +12,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cd1405456ca9a6ba00926c82bcc7959ea36d26c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58972650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160913"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>従来の言語サービスのコメント コード
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58972650"
   
 2. ブロックのコメント、コメントが複数の行を含めることができます。  
   
-   行のコメントは、通常、開始文字 (文字)、ブロックのコメントの中に開始と終了の両方の文字があります。 たとえば、C# の場合は、行のコメントから始まります//、ブロックのコメントの始まりと/* で終わる\*/。  
+   行のコメントは、通常、開始文字 (文字)、ブロックのコメントの中に開始と終了の両方の文字があります。 たとえば、c# の場合は、行のコメントから始まります//、ブロックのコメントの始まりと/* で終わる\*/。  
   
    ユーザーがコマンドを選択すると**選択範囲のコメント**から、**編集** -> **詳細** メニューにコマンドがルーティングされます、<xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A>メソッドを<xref:Microsoft.VisualStudio.Package.Source>クラス。 ユーザーがコマンドを選択すると**選択範囲のコメントを解除します**にルーティングは、コマンド、<xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A>メソッド。  
   

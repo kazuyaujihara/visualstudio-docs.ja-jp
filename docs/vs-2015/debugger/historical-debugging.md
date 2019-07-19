@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7db175535e0eebdcf1974f0f85123959ba5a3ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192175"
 ---
 # <a name="historical-debugging"></a>デバッグ履歴
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ private static int AddInt(int add)
 }  
 ```  
   
- `AddAll()` を呼び出した後の `resultInt` の予想される値が 20 であるものとします (`testInt` を 20 回インクリメントした結果)  (また、`AddInt()` 内のバグはわからないものします)。しかし、実際の結果は 44 です。 `AddAll()` を 10 回ステップ実行しないでバグを見つけるにはどうすればよいでしょう。 デバッグ履歴を使うと、迅速かつ簡単にバグを発見できます。 次の手順に従います。  
+ `AddAll()` を呼び出した後の `resultInt` の予想される値が 20 であるものとします (`testInt` を 20 回インクリメントした結果) (また、`AddInt()` 内のバグはわからないものします)。しかし、実際の結果は 44 です。 `AddAll()` を 10 回ステップ実行しないでバグを見つけるにはどうすればよいでしょう。 デバッグ履歴を使うと、迅速かつ簡単にバグを発見できます。 次の手順に従います。  
   
 1. [ツール]、[オプション]、[IntelliTrace]、[一般] で、IntelliTrace が有効になっていることを確認し、[IntelliTrace イベントと呼び出し情報] オプションを選択します。 このオプションを選択しないと、ナビゲーション余白が表示されません (後で説明します)。  
   
@@ -70,7 +70,7 @@ private static int AddInt(int add)
   
 3. デバッグを開始します。 コードがブレークポイントまで実行されます。 **[ローカル]** ウィンドウで、`resultInt` の値が 44 であることを確認できます。  
   
-4. 開く、**診断ツール**ウィンドウ (**/show デバッグ診断ツール**)。 コード ウィンドウは、次のようになります。  
+4. 開く、**診断ツール**ウィンドウ ( **/show デバッグ診断ツール**)。 コード ウィンドウは、次のようになります。  
   
     ![コード ウィンドウのブレークポイントで](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
@@ -82,7 +82,7 @@ private static int AddInt(int add)
   
     ![デバッグ履歴モードでのコード ウィンドウ](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6. ここで、`AddAll()` メソッドにステップ インできます (**F11** キー、またはナビゲーション余白の **[ステップ イン]** ボタン)。 ステップ前進します (**F10** キー、またはナビゲーション余白の **[次の呼び出しへ移動]**)。 ピンクの行が `j = AddInt(j);` 行に移ります。 ここで **F10** キーを押しても、次のコード行には移動しません。 代わりに、次の関数呼び出しに移動します。 デバッグ履歴は呼び出しから呼び出しに移動し、関数呼び出しを含まないコード行はスキップされます。  
+6. ここで、`AddAll()` メソッドにステップ インできます (**F11** キー、またはナビゲーション余白の **[ステップ イン]** ボタン)。 ステップ前進します (**F10** キー、またはナビゲーション余白の **[次の呼び出しへ移動]** )。 ピンクの行が `j = AddInt(j);` 行に移ります。 ここで **F10** キーを押しても、次のコード行には移動しません。 代わりに、次の関数呼び出しに移動します。 デバッグ履歴は呼び出しから呼び出しに移動し、関数呼び出しを含まないコード行はスキップされます。  
   
 7. ここで、`AddInt()` メソッドにステップ インします。 このコードにバグがあることがすぐにわかります。  
   

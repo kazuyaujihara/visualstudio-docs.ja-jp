@@ -12,11 +12,11 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197412"
 ---
 # <a name="creating-custom-editors-and-designers"></a>カスタム エディターとデザイナーの作成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,10 +72,10 @@ Visual Studio 統合開発環境 (IDE) では、さまざまな種類のエデ�
      埋め込むことができる場合、外部のエディターのホスト ウィンドウを作成し、呼び出して、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>メソッドとセット、<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>列挙値を`DP_External`します。 エディターを埋め込むことができない、すると、別のウィンドウが自動的を作成します。  
   
 ## <a name="in-this-section"></a>このセクションの内容  
- [チュートリアル: カスタム エディターを作成します。](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [チュートリアル: カスタム エディターを作成する](../extensibility/walkthrough-creating-a-custom-editor.md)  
  カスタム エディターを作成する方法について説明します。  
   
- [チュートリアル: カスタム エディターの機能を追加](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [チュートリアル: カスタム エディターに機能を追加する](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  カスタム エディターに機能を追加する方法について説明します。  
   
  [デザイナーの初期化とメタデータの構成](../extensibility/designer-initialization-and-metadata-configuration.md)  

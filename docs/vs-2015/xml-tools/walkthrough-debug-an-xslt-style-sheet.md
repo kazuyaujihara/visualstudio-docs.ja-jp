@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5e685e77dafe00b8cadd9b273ccc61c8e5d9e1e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158640"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>チュートリアル: XSLT スタイル シートをデバッグします。
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>チュートリアル: XSLT スタイル シートのデバッグ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 このチュートリアルの手順では、XSLT デバッガーを使用する方法を示します。 変数の表示、ブレークポイントの設定、コードのステップ実行などの手順が含まれます。 このスタイル シートでは、平均書籍価格を下回るすべての書籍が検索されます。  
@@ -37,7 +37,7 @@ ms.locfileid: "60085104"
   
     XML エディターでスタイル シートが開きます。  
   
-3. 参照 ボタンをクリックします (**.**) で、**入力**ドキュメントのプロパティ ウィンドウのフィールド。  
+3. 参照 ボタンをクリックします ( **.** ) で、**入力**ドキュメントのプロパティ ウィンドウのフィールド。  
   
 4. Books.xml ファイルを見つけてクリックして**オープン**します。  
   

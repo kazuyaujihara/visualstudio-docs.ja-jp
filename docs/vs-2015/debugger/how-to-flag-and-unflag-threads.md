@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6d6a49dd9b90172686a90d92e6b630dd70b5cf0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189433"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>方法: スレッドに対するフラグの設定と設定解除を行う
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60048888"
   
 ### <a name="to-unflag-all-threads"></a>すべてのスレッドのフラグを解除するには  
   
-- **[スレッド]** ウィンドウで、いずれかのスレッドを右クリックし、**[すべてのスレッドのフラグを解除]** をクリックします。  
+- **[スレッド]** ウィンドウで、いずれかのスレッドを右クリックし、 **[すべてのスレッドのフラグを解除]** をクリックします。  
   
 ### <a name="to-display-only-flagged-threads"></a>フラグが設定されたスレッドのみ表示するには  
   
@@ -46,13 +46,13 @@ ms.locfileid: "60048888"
   
 1. **[スレッド]** ウィンドウの上部にあるツール バーで、フラグ アイコンをクリックします。  
   
-2. ドロップダウン リストで、**[マイ コードのみにフラグを設定]** をクリックします。  
+2. ドロップダウン リストで、 **[マイ コードのみにフラグを設定]** をクリックします。  
   
 ### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>選択したモジュールに関連するスレッドにフラグを設定するには  
   
 1. **[スレッド]** ウィンドウのツール バーで、フラグ アイコンをクリックします。  
   
-2. ドロップダウン リストで、**[カスタム モジュール選択にフラグを設定]** をクリックします。  
+2. ドロップダウン リストで、 **[カスタム モジュール選択にフラグを設定]** をクリックします。  
   
 3. **[モジュールの選択]** ダイアログ ボックスで、目的のモジュールを選択します。  
   

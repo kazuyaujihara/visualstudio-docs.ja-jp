@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc2f56df75cd9abadde8474057f762118c6a840a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822977"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826089"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>コード化された UI テストのベスト プラクティス
 
@@ -62,11 +62,11 @@ ms.locfileid: "62822977"
 
 - 有効ではなくなったアサーションがコントロールにある場合は、次の操作を実行します。
 
-    - アサーションが含まれるメソッドを削除します。
+  - アサーションが含まれるメソッドを削除します。
 
-    - テスト メソッドからこのメソッドへの呼び出しを削除します。
+  - テスト メソッドからこのメソッドへの呼び出しを削除します。
 
-    - 十字線のボタンを UI コントロールにドラッグすることで新しいアサーションを追加し、UI マップを開いて新しいアサーションを追加します。
+  - 十字線のボタンを UI コントロールにドラッグすることで新しいアサーションを追加し、UI マップを開いて新しいアサーションを追加します。
 
 コード化された UI テストを記録する方法の詳細については、「[UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)」を参照してください。
 

@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149266"
 ---
 # <a name="resource-contentions-view---contention-data"></a>リソースの競合ビュー - 競合データ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "60108710"
   
 ## <a name="navigating-the-resource-allocation-view"></a>リソース割り当てビュー内の移動  
   
-|Column|説明|  
+|[列]|説明|  
 |------------|-----------------|  
-|**Name**|リソースや関数の名前。|  
+|**名前**|リソースや関数の名前。|  
 |**排他ブロック時間**|-   リソースの場合、リソースへのアクセスがブロックされたことでスレッドに発生した待ち時間の合計。<br />-   関数の場合、関数でその関数本体のコードを実行したときに、関数のこれらのインスタンスによる親リソースへのアクセスがブロックされていた時間。 この関数によって呼び出された関数のブロック時間は含まれません。|  
 |**排他ブロック時間 %**|-   リソースの場合、プロファイル データのすべてのブロック時間に対する、このリソースがブロックされた時間の割合。<br />-   関数の場合、プロファイル データのすべてのブロック時間に対する、これらの関数のインスタンスの排他的なブロック時間の割合。|  
 |**排他競合**|-   リソースの場合、リソースへのアクセスがブロックされたことでスレッドに待機が発生した合計回数。<br />-   関数の場合、関数でその関数本体のコードを実行したときに、関数のこれらのインスタンスによる親リソースへのアクセスがブロックされた回数。 関数によって呼び出された関数のブロック イベントは含まれません。|  

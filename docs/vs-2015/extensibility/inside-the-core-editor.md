@@ -11,13 +11,13 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203951"
 ---
-# <a name="inside-the-core-editor"></a>コア エディター内で
+# <a name="inside-the-core-editor"></a>コア エディターの内部
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のコア エディターは変更し、テキスト情報のクエリを実行できるいくつかのコンポーネントのセットです。 従来の API を使用して、コア エディターをカスタマイズしている場合は、エディター アダプター経由でルーティングされますが、これらのカスタマイズを使用する続行することがあります。 お勧め、ただし、API の新しいエディターに、カスタマイズを調整することです。  
@@ -46,7 +46,7 @@ ms.locfileid: "60083362"
  [レガシ API のテキスト バッファー イベント](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  テキスト バッファー イベントの通知に使用されるインターフェイスの一覧を示します。  
   
- [方法: テキスト バッファー イベント、レガシ API の登録します。](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [方法: レガシ API でテキスト バッファー イベントを登録する](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  テキスト バッファー イベントのことをお勧めする方法について説明します。  
   
  [グローバル設定を監視するためのテキスト マネージャーの使用](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -65,7 +65,7 @@ ms.locfileid: "60083362"
  制御コード文字装飾を言語サービスのインスタンス化について説明します。  
   
 ## <a name="related-sections"></a>関連項目  
- [チュートリアル: コア エディターを作成してエディター ファイルの種類を登録します。](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [チュートリアル: コア エディターの作成とエディター ファイルの種類の登録](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  マネージ コードからのコア エディターを起動する方法についての詳細な手順について説明します。  
   
  [ドロップダウン バー](../extensibility/drop-down-bar.md)  
@@ -74,8 +74,8 @@ ms.locfileid: "60083362"
  [レガシ API でのテキスト マーカーの使用](../extensibility/using-text-markers-with-the-legacy-api.md)  
  テキスト マーカーとそのコア エディターでの使用方法の概念について説明し、アクセスし、テキスト マーカーの管理に使用されるインターフェイスを一覧表示します。  
   
- [方法: 標準のテキスト マーカーを追加します。](../extensibility/how-to-add-standard-text-markers.md)  
+ [方法: 標準のテキスト マーカーを追加する](../extensibility/how-to-add-standard-text-markers.md)  
  テキスト マーカーを作成する方法と、ショートカット メニューにカスタム コマンドを追加する方法に関する手順について説明します。  
   
- [方法: カスタム テキスト マーカーを作成します。](../extensibility/how-to-create-custom-text-markers.md)  
+ [方法: カスタム テキスト マーカーを作成する](../extensibility/how-to-create-custom-text-markers.md)  
  サービスとしてのマーカーの種類を指定する方法とカスタム テキスト マーカーを作成する方法の詳細手順について説明します。

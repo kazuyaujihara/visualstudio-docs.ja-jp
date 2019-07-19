@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26a9d65ed21eed00820a7968617c610e4b11c153
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201351"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>方法: コード分析辞書のカスタマイズ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "60055679"
   
 - [ディクショナリ/単語/認識されていない/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
   
-- [Dictionary/Words/Deprecated/Term[@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
+- [ディクショナリ/単語/非推奨とされます/用語 [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
   
 - [辞書、単語、複合/用語 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60055679"
   
 - [CA2204:リテラルは正しく入力されなければなりません](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Dictionary/Words/Deprecated/Term[@PreferredAlternate]  
+### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> ディクショナリ/単語/非推奨とされます/用語 [@PreferredAlternate]  
  用語を非推奨のコード分析を識別する用語の一覧に含めるには、ディクショナリ、単語、非推奨/用語要素の内部テキ ストとしてという用語を追加します。 非推奨の用語は、単語のスペルが正しいが、使用する必要があります。  
   
  警告に推奨される代替語句を含めると、用語の要素の PreferredAlternate 属性で、代替を指定します。 おくことができます、属性値空代替を提案したくない場合。  

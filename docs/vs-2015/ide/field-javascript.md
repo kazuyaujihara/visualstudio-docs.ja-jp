@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b2fe09070261460b7b83f54de44a07cf96d40cf2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181272"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;フィールド&gt;(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ ms.locfileid: "54766557"
   任意。 F1 ヘルプのキーワード。  
   
   `locid`  
-  任意。 フィールドに関するローカライズ情報用の識別子。 この識別子は、メンバーの ID であるか、または OpenAjax のメタデータで定義されているメッセージ バンドル内の `name` 属性値に対応します。 識別子の型で指定された形式によって異なります、 [ \<loc >](../ide/loc-javascript.md)タグ。  
+  任意。 フィールドに関するローカライズ情報用の識別子。 この識別子は、メンバーの ID であるか、または OpenAjax のメタデータで定義されているメッセージ バンドル内の `name` 属性値に対応します。 この識別子の型は、[\<loc>](../ide/loc-javascript.md) タグで指定された形式によって異なります。  
   
   `value`  
   任意。 関数コード自体ではなく、IntelliSense による使用のための評価が必要なコードを指定します。 `<field>` では、コンストラクター関数でこの属性がサポートされますが、オブジェクト リテラルではサポートされません。 フィールドの型が定義されていない場合に、この属性を使用して型情報を提供できます。 たとえば、使用することができます`value=’1’`フィールド型を数値として処理します。  

@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 86dc6de573dc5dc81a758535018feffd7b0ce662
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202847"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ int SetHostingProcessLanguage(
   
 #### <a name="parameters"></a>パラメーター  
  `guidLang`  
- [in]`GUID`デが使用する言語。 指定`GUID_NULL`(C++) または`Guid.Empty`(C#) が既定の言語を使用して、DE します。  
+ [in]`GUID`デが使用する言語。 指定`GUID_NULL`(C++) または`Guid.Empty`(c#) が既定の言語を使用して、DE します。  
   
 ## <a name="return-value"></a>戻り値  
  成功した場合、返します`S_OK`、それ以外のエラー コードを返します。  

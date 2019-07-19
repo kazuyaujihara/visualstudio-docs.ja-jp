@@ -11,11 +11,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0f8dd5567fb21fafbac3c63b84dae1e0e33b0b91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200619"
 ---
 # <a name="debugger-concepts"></a>デバッガーの概念
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Visual Studio のデバッグ パッケージをビルドするには、パッ�
  [モジュール](../../extensibility/debugger/modules.md)  
  アーキテクチャをデバッグ実行可能ファイルや DLL などのコードの物理コンテナーとしての観点から、モジュールを定義します。  
   
- [ブレークポイント](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)  
+ [[ブレークポイント]](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)  
  次の 3 つの種類のブレークポイントを定義します: 保留中、バインド、およびエラー-デバッグのアーキテクチャの観点から。  
   
 ## <a name="related-sections"></a>関連項目  

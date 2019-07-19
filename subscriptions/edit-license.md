@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: 管理者がサブスクリプションの割り当てを編集する方法を説明します。
-searchscope: VS Subscription
-ms.openlocfilehash: d3dbc2e05d85ed8277d7a7c0f530dfa92da7dba6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7245facbaf966593160bc44dc15bc2fd71622347
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946250"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783471"
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Visual Studio サブスクリプションの割り当ての編集
 
@@ -25,7 +24,7 @@ ms.locfileid: "62946250"
 > [!div class="mx-imgBorder"]
 > ![編集するサブスクライバーを選択する](_img/edit-license/select-subscriber.png)
 
-サブスクライバーの名、姓、国、言語およびダウンロードを更新することができます。 サブスクライバーの情報を編集し、**[保存]** をクリックします。
+サブスクライバーの名、姓、国、言語およびダウンロードを更新することができます。 サブスクライバーの情報を編集し、 **[保存]** をクリックします。
 
    > [!NOTE]
    > サブスクライバーのサブスクリプション レベルを変更する必要がある場合、ポータルからユーザーを削除し、もう一度追加する必要があります。 サブスクリプション レベルは編集できません。
@@ -39,13 +38,13 @@ ms.locfileid: "62946250"
 
 1. 複数のサブスクライバーを一度に追加するには、[サブスクライバー] タブに移動します。上部リボンの **[一括編集]** をクリックします。
 
-2. 一括編集では、Excel テンプレートを使用してサブスクライバー情報を編集します。 一括編集ボックスで、**[Excel にエクスポート]** をクリックして、すべての情報を含む現在のサブスクライバーの一覧をダウンロードします。
+2. 一括編集では、Excel テンプレートを使用してサブスクライバー情報を編集します。 一括編集ボックスで、 **[Excel にエクスポート]** をクリックして、すべての情報を含む現在のサブスクライバーの一覧をダウンロードします。
    > [!div class="mx-imgBorder"]
    > ![ライセンスの編集 - 一括編集一覧のエクスポート](_img/edit-license/edit-license-bulk-edit-export.png)
 
 3. 次に、アップロードする前に簡単に見つけて必要な変更を行うことができるように、ファイルをローカルに保存します。 アップロードを成功させるには、**サブスクリプション レベルまたはサブスクリプションの GUID を編集しないでください**。そのようにするとアップロードが失敗します。
 
-4. Visual Studio サブスクリプション管理ポータルに戻り、[一括編集] ダイアログ ボックスで **[参照]** をクリックします。 保存した Excel ファイルを選んで、**[OK]** をクリックします。 アップロードの進行状況が画面に表示されます。
+4. Visual Studio サブスクリプション管理ポータルに戻り、[一括編集] ダイアログ ボックスで **[参照]** をクリックします。 保存した Excel ファイルを選んで、 **[OK]** をクリックします。 アップロードの進行状況が画面に表示されます。
    > [!div class="mx-imgBorder"]
    > ![ライセンスの編集 - 一括編集のファイルのアップロード](_img/edit-license/edit-license-bulk-file-upload1.png)
 

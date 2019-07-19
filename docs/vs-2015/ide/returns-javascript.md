@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 81a9a42a104adb2a9d9a9aba483e2588d7332868
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203534"
 ---
 # <a name="ltreturnsgt-javascript"></a>&lt;返します&gt;(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "54801777"
   任意。 `type` が `Array` である場合、配列内の要素を null に設定できるかどうかを指定します。 配列内の要素を null に設定できることを示す場合は `true` に設定します。それ以外の場合は `false` に設定します。 既定値は `false` です。 Visual Studio では、この属性は IntelliSense 情報を提供するためには使用されません。  
   
   `locid`  
-  任意。 戻り値に関するローカライズ情報用の識別子。 この識別子は、メンバーの ID であるか、または OpenAjax のメタデータで定義されているメッセージ バンドル内の `name` 属性値に対応します。 識別子の型で指定された形式によって異なります、 [ \<loc >](../ide/loc-javascript.md)タグ。  
+  任意。 戻り値に関するローカライズ情報用の識別子。 この識別子は、メンバーの ID であるか、または OpenAjax のメタデータで定義されているメッセージ バンドル内の `name` 属性値に対応します。 この識別子の型は、[\<loc>](../ide/loc-javascript.md) タグで指定された形式によって異なります。  
   
   `value`  
   任意。 関数コード自体ではなく、IntelliSense による使用のための評価が必要なコードを指定します。 たとえば、この属性を使用して、`Promise` などの非同期コールバックに IntelliSense を提供できます。 `value` 要素で `<returns>` 属性を使用すると、長いコードの実行をバイパスすることで IntelliSense のパフォーマンスを改善できます。  

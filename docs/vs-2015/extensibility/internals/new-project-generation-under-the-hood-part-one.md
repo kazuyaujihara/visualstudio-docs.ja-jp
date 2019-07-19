@@ -12,11 +12,11 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184148"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新しいプロジェクトの生成: 内部的な処理、パート 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -215,4 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** Visual c# の Windows ノードのすぐ下に子ノードとして表示されます。  
   
 ## <a name="see-also"></a>関連項目  
- [新しいプロジェクトの生成:内部的には、パート 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [新しいプロジェクトの生成: 内部的な処理、パート 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

@@ -26,18 +26,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5977eb6bad9063e1ef08502cac53159a37c27151
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58977243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161619"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>[ブレークポイントの選択] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**[ブレークポイントの選択]** ダイアログ ボックスを開くには、**[新しいブレークポイント]** ダイアログ ボックスのあいまいな入力からブレークポイントを設定します。 あいまいな入力の例としては、オーバーロードされた関数の名前があります。  
+**[ブレークポイントの選択]** ダイアログ ボックスを開くには、 **[新しいブレークポイント]** ダイアログ ボックスのあいまいな入力からブレークポイントを設定します。 あいまいな入力の例としては、オーバーロードされた関数の名前があります。  
   
- **ブレークポイント**  
+ **[ブレークポイント]**  
  あいまいな入力に基づいて設定できるブレークポイントを示します。 1 つ以上のブレークポイントを選択して設定できます。  
   
  **All**  

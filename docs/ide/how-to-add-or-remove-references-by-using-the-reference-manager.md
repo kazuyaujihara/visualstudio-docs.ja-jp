@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: b0c20408fc7fc2bc15056c9668c90b5870ecf446
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160162"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825485"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>方法: 参照マネージャーを使用して参照を追加または削除する
 
@@ -105,33 +105,33 @@ EnvDTE 名前空間 (<xref:EnvDTE>、<xref:EnvDTE80>、<xref:EnvDTE90>、<xref:E
 
 - アセンブリを次の場所のいずれかに移動またはコピーします。
 
-   - 現在のプロジェクト ディレクトリ。 ここにあるアセンブリは、 **[参照]** タブに表示されます。
+  - 現在のプロジェクト ディレクトリ。 ここにあるアセンブリは、 **[参照]** タブに表示されます。
 
-   - 同じソリューション内のその他のプロジェクト ディレクトリ。 ここにあるアセンブリは、 **[プロジェクト]** タブに表示されます。
+  - 同じソリューション内のその他のプロジェクト ディレクトリ。 ここにあるアセンブリは、 **[プロジェクト]** タブに表示されます。
 
-    \- または
+  \- または
 
 - 表示するアセンブリの場所を指定するレジストリ キーを設定します。
 
-   32 ビット オペレーティング システムでは、次のいずれかのレジストリ キーを追加します。
+  32 ビット オペレーティング システムでは、次のいずれかのレジストリ キーを追加します。
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   64 ビット オペレーティング システムでは、32 ビットのレジストリ ハイブで次のいずれかのレジストリ キーを追加します。
+  64 ビット オペレーティング システムでは、32 ビットのレジストリ ハイブで次のいずれかのレジストリ キーを追加します。
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   \<*VersionMinimum*\> は、適用されるフレームワークの最小バージョンです。 \<*VersionMinimum*\> が v3.0 の場合、*AssemblyFoldersEx* で指定したフォルダーは、.NET Framework 3.0 以降を対象にしたプロジェクトに適用されます。
+  \<*VersionMinimum*\> は、適用されるフレームワークの最小バージョンです。 \<*VersionMinimum*\> が v3.0 の場合、*AssemblyFoldersEx* で指定したフォルダーは、.NET Framework 3.0 以降を対象にしたプロジェクトに適用されます。
 
-   \<*AssemblyLocation*\> は、*C:\MyAssemblies* など、 **[参照の追加]** ダイアログ ボックスに表示されるアセンブリのディレクトリです。
+  \<*AssemblyLocation*\> は、*C:\MyAssemblies* など、 **[参照の追加]** ダイアログ ボックスに表示されるアセンブリのディレクトリです。
 
-   `HKEY_LOCAL_MACHINE` ノードにレジストリ キーを作成すると、すべてのユーザーが特定の場所にあるアセンブリを **[参照の追加]** ダイアログ ボックスに表示できるようになります。 `HKEY_CURRENT_USER` ノードにレジストリ キーを作成すると、現在のユーザーの設定にのみ影響します。
+  `HKEY_LOCAL_MACHINE` ノードにレジストリ キーを作成すると、すべてのユーザーが特定の場所にあるアセンブリを **[参照の追加]** ダイアログ ボックスに表示できるようになります。 `HKEY_CURRENT_USER` ノードにレジストリ キーを作成すると、現在のユーザーの設定にのみ影響します。
 
-   **[参照の追加]** ダイアログ ボックスを再度開きます。 アセンブリが **[.NET]** タブに表示されます。表示されない場合は、指定した *AssemblyLocation* ディレクトリにアセンブリが配置されていることを確認し、Visual Studio を再起動して、もう一度実行してみてください。
+  **[参照の追加]** ダイアログ ボックスを再度開きます。 アセンブリが **[.NET]** タブに表示されます。表示されない場合は、指定した *AssemblyLocation* ディレクトリにアセンブリが配置されていることを確認し、Visual Studio を再起動して、もう一度実行してみてください。
 
 ## <a name="projects-tab"></a>[プロジェクト] タブ
 

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5907b388e59b136a2d89b02348e7ac3d2b25d63c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187522"
 ---
 # <a name="utility-nodes"></a>ユーティリティ ノード
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54783864"
   
 ## <a name="utility-node-reference"></a>ユーティリティ ノード リファレンス  
   
-|ノード|説明|プロパティ|  
+|ノード|詳細|Properties|  
 |----------|-------------|----------------|  
 |**ベクターの追加**|指定された入力をまとめて追加することによって、ベクターを作成します。<br /><br /> **入力:**<br /><br /> `Vector`: `float`、`float2`、または `float3`<br /> 追加する値。<br /><br /> `Value to Append`: `float`<br /> 追加する値。<br /><br /> **出力:**<br /><br /> `Output`: 入力 `Vector` の種類に応じて、`float2`、`float3`、または`float4`<br /> 新しいベクター。|なし|  
 |**フレネル**|指定された表面法線に基づいたフレネルの減衰を計算します。<br /><br /> フレネルの減衰の値は、現在のピクセルの表面法線がビューのベクターと一致する度合いを表します。 この関数の結果は、ベクターが一直線になる場合に 0 になります。ベクターの差異が大きくなるほど結果が大きくなり、ベクターが直交すると最大になります。 これを使用して、現在のピクセルとカメラの向きの関係に基づいて効果の強度を調整できます。<br /><br /> **入力:**<br /><br /> `Surface Normal`: `float3`<br /> 現在のピクセルの接空間で定義される、現在のピクセルの表面法線。 通常のマップと同様に、外見上の表面法線を摂動する際にこれを使用できます。<br /><br /> **出力:**<br /><br /> `Output`: `float`<br /> 現在のピクセルの反射率。|**指数**<br /> フレネルの減衰の計算に使用される指数。|  

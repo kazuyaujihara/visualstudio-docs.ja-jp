@@ -18,16 +18,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160892"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-エイリアスを使用すると、コマンドの実行に必要な文字列を短縮して **[検索]** ボックスまたは **[コマンド]** ウィンドウに入力できます。 たとえば、**[ファイルを開く]** ダイアログ ボックスを表示するときに、「`>File.OpenFile`」ではなく、定義済みのエイリアス「`>of`」を入力できます。
+エイリアスを使用すると、コマンドの実行に必要な文字列を短縮して **[検索]** ボックスまたは **[コマンド]** ウィンドウに入力できます。 たとえば、 **[ファイルを開く]** ダイアログ ボックスを表示するときに、「`>File.OpenFile`」ではなく、定義済みのエイリアス「`>of`」を入力できます。
 
  **[コマンド]** ウィンドウで「`alias`」と入力すると、現在のエイリアスとその定義の一覧が表示されます。 **[コマンド]** ウィンドウの内容を消去するには、「`>cls`」と入力します。 特定のコマンドのエイリアスを表示するには、「`alias <command name>`」と入力します。
 
@@ -80,7 +80,7 @@ ms.locfileid: "59654374"
 |[行の削除]|LineDel|Edit.LineDelete|
 |リスト メンバー|ListMembers|Edit.ListMembers|
 |[ローカル] ウィンドウ|Locals|Debug.Locals|
-|[LogCommandWindowOutput コマンド](../../ide/reference/log-command-window-output-command.md)|ログ|Tools.LogCommandWindowOutput|
+|[LogCommandWindowOutput コマンド](../../ide/reference/log-command-window-output-command.md)|Log|Tools.LogCommandWindowOutput|
 |[コマンド ウィンドウ マーク モード]|mark|Tools.CommandWindowMarkMode|
 |[メモリ 1] ウィンドウ|Memory Memory1|Debug.Memory1|
 |[メモリ 2] ウィンドウ|Memory2|Debug.Memory2|

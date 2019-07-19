@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 146563dfa358367e7c22f8ad37564b85d64eaf1d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189080"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:対象のフレームワークから API のみを使用します
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio の最新ドキュメントについては、次を参照してく
 |-|-|  
 |TypeName|UseOnlyApiFromTargetedFramework|  
 |CheckId|CA1903|  
-|カテゴリ|Microsoft.Portability|  
+|Category|Microsoft.Portability|  
 |互換性に影響する変更点|– の外部から参照できるメンバーまたは型のシグネチャに対して発生した場合。<br /><br /> 改行しない - メソッドの本体で発生したときにします。|  
   
 ## <a name="cause"></a>原因  

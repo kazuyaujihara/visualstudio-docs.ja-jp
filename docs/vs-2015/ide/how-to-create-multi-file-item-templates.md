@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c6c6dde1880881bfb236909fde6ce6deb6bf596f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201846"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>方法: 複数ファイルの項目テンプレートを作成します。
+# <a name="how-to-create-multi-file-item-templates"></a>方法: 複数ファイルの項目テンプレートを作成する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 項目テンプレートには 1 つの項目のみを指定できますが、1 つの項目が複数のファイルから構成されている場合があります。 たとえば、Visual Basic の Windows フォーム項目テンプレートには、次の 3 つのファイルが必要です。  
@@ -37,7 +37,7 @@ ms.locfileid: "60056907"
   
 1. 単一ファイルの項目テンプレートと同じように、項目テンプレートを作成します。 詳細については、「[方法 :項目テンプレートを作成](../ide/how-to-create-item-templates.md)です。  
   
-2. すべての `ProjectItem` 要素に `TargetFileName` 属性を追加します。 `TargetFileName` 属性の値を $fileinputname$.*FileExtension* に設定します。ここで、*FileExtension* はテンプレートに含まれるファイルのファイル名拡張子です。 例:  
+2. すべての `ProjectItem` 要素に `TargetFileName` 属性を追加します。 `TargetFileName` 属性の値を $fileinputname$.*FileExtension* に設定します。ここで、*FileExtension* はテンプレートに含まれるファイルのファイル名拡張子です。 例えば:  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -53,7 +53,7 @@ ms.locfileid: "60056907"
   
      このテンプレートから派生した項目がプロジェクトに追加されると、ユーザーが **[新しい項目の追加]** ダイアログ ボックスに入力した名前に基づいてファイル名が決定されます。  
   
-3. テンプレートに含めるファイルを選択して右クリックし、**[送る]** をクリックしてから **[圧縮 (zip 形式) フォルダー]** をクリックします。 選択したファイルは .zip ファイルに圧縮されます。  
+3. テンプレートに含めるファイルを選択して右クリックし、 **[送る]** をクリックしてから **[圧縮 (zip 形式) フォルダー]** をクリックします。 選択したファイルは .zip ファイルに圧縮されます。  
   
 4. ユーザー項目テンプレートの場所に .zip ファイルを配置します。 既定では、ディレクトリは \My Documents\Visual Studio *Version*\Templates\ItemTemplates\\ となります。 詳細については、「[方法 :テンプレートを配置して整理する](../ide/how-to-locate-and-organize-project-and-item-templates.md)」を参照してください。  
   

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb55508c705013c3ad604c3ceeb52d7af6bb4445
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158449"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio グラフィックス診断
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Visual Studio*グラフィックス診断*記録し、Direct3D アプリのレ�
  フレームを選択したら、グラフィックス フレーム分析を使用してレンダリング パフォーマンスを調べて調整することができます。  
   
  [イベント一覧](../debugger/graphics-event-list.md)  
- フレームを選択した後、**[グラフィックス イベント一覧]** を使用して、そのイベントを調べ、レンダリングの問題に関連しているかどうかを判別します。  
+ フレームを選択した後、 **[グラフィックス イベント一覧]** を使用して、そのイベントを調べ、レンダリングの問題に関連しているかどうかを判別します。  
   
  [状態](../debugger/graphics-state.md)  
  [状態] ウィンドウは、現在のイベントの時点でアクティブになっているグラフィックスの状態を理解するために役立ちます。  

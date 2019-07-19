@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac4e3bf3c5dfa20729fe2270121b7649041d9e59
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159609"
 ---
 # <a name="instrumentation-method-data-views"></a>インストルメンテーション メソッドのデータ ビュー
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "54801793"
  [関数ビュー](../profiling/functions-view-instrumentation-data.md)  
  プロファイル データが関数別に一覧表示されます。  
   
-## <a name="reference"></a>参照  
+## <a name="reference"></a>関連項目  
  [関数の詳細ビュー](../profiling/function-details-view.md)  
  選択した関数と、選択した関数を呼び出した関数および選択した関数によって呼び出された関数の関係がグラフィカルな図で表示されます。  
   

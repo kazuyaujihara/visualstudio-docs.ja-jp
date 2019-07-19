@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1491caef3b13f6d5345d7d09f0abf4d680dd8e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fcf217f2826bf618db2288107fafeff091e6a2bd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704757"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824691"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>コード化された UI テストを使用してコードをテストする
 
@@ -33,7 +33,7 @@ Visual Studio では、コード化された UI テストを簡単に作成で�
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 - Visual Studio Enterprise
 - コード化された UI テストのコンポーネント
@@ -285,23 +285,23 @@ Web ブラウザーで暗黙のホバーの記録を有効にするには、構�
 
 - **コード エディター:**
 
-    - このトピックの「[コード化された UI コントロールの操作とプロパティ](#coded-ui-control-actions-and-properties)」セクションで説明しているように、テストのコントロールのコードを手動で追加します。
+  - このトピックの「[コード化された UI コントロールの操作とプロパティ](#coded-ui-control-actions-and-properties)」セクションで説明しているように、テストのコントロールのコードを手動で追加します。
 
-    - コード化された UI テストを作成した後、それをデータ ドリブンに変更できます。 詳細については、「[データ ドリブンのコード化された UI テストを作成する](../test/creating-a-data-driven-coded-ui-test.md)」を参照してください。
+  - コード化された UI テストを作成した後、それをデータ ドリブンに変更できます。 詳細については、「[データ ドリブンのコード化された UI テストを作成する](../test/creating-a-data-driven-coded-ui-test.md)」を参照してください。
 
-    - コード化された UI テストの再生では、テストに対して指示することで、ウィンドウの表示やプログレス バーの非表示などの特定のイベントが発生するまで待機することができます。 これを行うには、適切な UITestControl.WaitForControlXXX() メソッドを追加します。 使用できるメソッドの完全な一覧については、「[再生中に特定のイベントを待機するようにコード化された UI テストを設定](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)」をご覧ください。 WaitForControlEnabled メソッドを使用して、コントロールが有効になるまで待機するコード化された UI テストの例については、「[チュートリアル:コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」を参照してください。
+  - コード化された UI テストの再生では、テストに対して指示することで、ウィンドウの表示やプログレス バーの非表示などの特定のイベントが発生するまで待機することができます。 これを行うには、適切な UITestControl.WaitForControlXXX() メソッドを追加します。 使用できるメソッドの完全な一覧については、「[再生中に特定のイベントを待機するようにコード化された UI テストを設定](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)」をご覧ください。 WaitForControlEnabled メソッドを使用して、コントロールが有効になるまで待機するコード化された UI テストの例については、「[チュートリアル:コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)」を参照してください。
 
-    - コード化された UI テストには、Internet Explorer 9 と Internet Explorer 10 に含まれる HTML5 コントロールの一部のサポートが含まれます。 詳細については、「[コード化された UI テストでの HTML5 コントロールの使用](../test/using-html5-controls-in-coded-ui-tests.md)」をご覧ください。
+  - コード化された UI テストには、Internet Explorer 9 と Internet Explorer 10 に含まれる HTML5 コントロールの一部のサポートが含まれます。 詳細については、「[コード化された UI テストでの HTML5 コントロールの使用](../test/using-html5-controls-in-coded-ui-tests.md)」をご覧ください。
 
-    - コード化された UI テストのコーディング ガイダンス:
+  - コード化された UI テストのコーディング ガイダンス:
 
-       - [コード化された UI テストの構造](../test/anatomy-of-a-coded-ui-test.md)
+    - [コード化された UI テストの構造](../test/anatomy-of-a-coded-ui-test.md)
 
-       - [コード化された UI テストのベスト プラクティス](../test/best-practices-for-coded-ui-tests.md)
+    - [コード化された UI テストのベスト プラクティス](../test/best-practices-for-coded-ui-tests.md)
 
-       - [複数の UI マップで大規模アプリケーションをテストする](../test/testing-a-large-application-with-multiple-ui-maps.md)
+    - [複数の UI マップで大規模アプリケーションをテストする](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-       - [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+    - [コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="the-generated-code"></a>生成されたコード
 

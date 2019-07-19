@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205787"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>方法: パフォーマンス データのファイル名のオプションの設定
+# <a name="how-to-set-performance-data-file-name-options"></a>方法: パフォーマンス データ ファイル名のオプションを設定する
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 既定では、次の構文を使用してプロファイル データ (.vsp) ファイルを保存します。  
@@ -38,7 +38,7 @@ ms.locfileid: "60057837"
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>パフォーマンス セッションのプロファイル データ ファイルの名前付け構文を変更するには  
   
-1. **パフォーマンス エクスプローラー**で、パフォーマンス セッションの名前を右クリックして、**[プロパティ]** をクリックします。  
+1. **パフォーマンス エクスプローラー**で、パフォーマンス セッションの名前を右クリックして、 **[プロパティ]** をクリックします。  
   
 2. **[全般]** をクリックします。  
   

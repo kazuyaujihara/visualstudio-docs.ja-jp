@@ -13,11 +13,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 372c119b6a841d7d4b349e85548914f7641b53d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148640"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ IDebugProgram2 : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|プログラムの名前を取得します。|  
 |[GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|このプログラムがで実行されているプロセスを取得します。|  
 |[Terminate](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|このプログラムを終了します。|  
-|[添付](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|このプログラムにアタッチします。|  
+|[Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|このプログラムにアタッチします。|  
 |[CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)|デバッグ エンジン (DE) が、プログラムからデタッチできるかどうかを決定します。|  
 |[Detach](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|このプログラムからデバッガーをデタッチします。|  
 |[GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)|このプログラムには、グローバルに一意の識別子を取得します。|  

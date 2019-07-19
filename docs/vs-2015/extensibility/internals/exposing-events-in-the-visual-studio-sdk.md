@@ -12,11 +12,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7056497c505bbb355287416e468e411b4e5a2a62
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196689"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Visual studio SDK でのイベントの公開
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "58964225"
   
  「AutomationProjectItemsEvents オブジェクトを返します AutomationProjectItemEvents「=」」  
   
-|名前|型|範囲|説明|  
+|名前|種類|範囲|説明|  
 |----------|----------|-----------|-----------------|  
 |既定 (@)|REG_SZ|未使用|使用されません。 ドキュメントのデータ フィールドを使用することができます。|  
 |AutomationProjectsEvents|REG_SZ|イベント オブジェクトの名前。|キー名のみが関連します。 ドキュメントのデータ フィールドを使用することができます。<br /><br /> この例は、基本的なプロジェクト サンプルから取得されます。|  

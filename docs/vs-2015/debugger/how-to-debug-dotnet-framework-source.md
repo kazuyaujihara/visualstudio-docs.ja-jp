@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49b13b8406dc96e8e7ebe5e79e26c5da02e8a53a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205440"
 ---
-# <a name="how-to-debug-net-framework-source"></a>方法: .NET Framework のソースをデバッグします。
+# <a name="how-to-debug-net-framework-source"></a>方法: .NET Framework ソースをデバッグする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 最新バージョンの[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]向けの新機能を提供します。[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]デバッグします。 デバッグする[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]、ソース コードのデバッグ シンボルへのアクセスが必要です。 ステップ インを有効にする必要も[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]ソース。  
@@ -44,7 +44,7 @@ ms.locfileid: "60092111"
   
 4. 下、**デバッグ**カテゴリで、をクリックして**シンボル**します。  
   
-5. シンボル キャッシュの場所を変更する場合:   
+5. シンボル キャッシュの場所を変更する場合:  
   
     1. 開く、**デバッグ**左側にあるボックス内のノード。  
   
@@ -58,7 +58,7 @@ ms.locfileid: "60092111"
   
      シンボルを即時にダウンロードしない場合、次にプログラムのデバッグを開始するときにシンボルは自動的にダウンロードされます。  
   
-7. **[OK]** をクリックして、**[オプション]** ダイアログ ボックスを閉じます。  
+7. **[OK]** をクリックして、 **[オプション]** ダイアログ ボックスを閉じます。  
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>[モジュール] ウィンドウを使用して Framework シンボルを読み込むには  
   

@@ -11,11 +11,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5aff88047d6b1f79544af927751d7a053eeda218
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58962853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152816"
 ---
 # <a name="event-descriptions"></a>イベントの説明
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58962853"
   
 ## <a name="events-and-the-reasons-for-their-use"></a>イベントとその使用する理由  
   
-|event|説明|  
+|イベント|説明|  
 |-----------|-----------------|  
 |ドキュメントのイベントをアクティブ化します。|デバッグ エンジン (DE) が、IDE を開くか、フォア グラウンドにドキュメントを表示するときに発生します。|  
 |ブレークポイントがバインドされているか、ブレークポイントのエラー イベント|ブレークポイントがバインドされている場合またはブレークポイントがバインドできないし、エラーが返されますと送信されます。|  

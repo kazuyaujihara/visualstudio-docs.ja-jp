@@ -7,11 +7,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147944"
 ---
 # <a name="vsix-color-compiler"></a>VSIX カラー コンパイラ
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
 |||  
 |-|-|  
 |**属性**|**定義**|  
-|名前|[必須]カテゴリの名前|  
+|Name|[必須]カテゴリの名前|  
 |GUID|「必須」(する必要があります GUID の書式設定が一致)、カテゴリの GUID|  
   
  **色**  
@@ -96,7 +96,7 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
 |||  
 |-|-|  
 |**属性**|**定義**|  
-|名前|[必須]色の名前|  
+|Name|[必須]色の名前|  
   
  **バック グラウンドとフォア グラウンド**  
   
@@ -110,7 +110,7 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
 |||  
 |-|-|  
 |**属性**|**定義**|  
-|型|[必須]色の種類。 次のいずれかを指定できます。<br /><br /> *CT_INVALID:* 色は、無効であるか設定されていません。<br /><br /> *CT_RAW:* 生の ARGB 値。<br /><br /> *CT_COLORINDEX:* 使用しないでください。<br /><br /> *CT_SYSCOLOR:* SysColor から Windows のシステム カラーです。<br /><br /> *CT_VSCOLOR:*__VSSYSCOLOREX から Visual Studio の色。<br /><br /> *CT_AUTOMATIC:* 自動の色。<br /><br /> *CT_TRACK_FOREGROUND:* 使用しないでください。<br /><br /> *CT_TRACK_BACKGROUND:* 使用しないでください。|  
+|種類|[必須]色の種類。 次のいずれかを指定できます。<br /><br /> *CT_INVALID:* 色は、無効であるか設定されていません。<br /><br /> *CT_RAW:* 生の ARGB 値。<br /><br /> *CT_COLORINDEX:* 使用しないでください。<br /><br /> *CT_SYSCOLOR:* SysColor から Windows のシステム カラーです。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX から Visual Studio の色。<br /><br /> *CT_AUTOMATIC:* 自動の色。<br /><br /> *CT_TRACK_FOREGROUND:* 使用しないでください。<br /><br /> *CT_TRACK_BACKGROUND:* 使用しないでください。|  
 |Source|[必須]16 進数で表される色の値|  
   
  型の属性のスキーマでは、__VSCOLORTYPE 列挙型によってサポートされているすべての値がサポートされています。 ただし、CT_RAW と CT_SYSCOLOR のみを使用することをお勧めします。  
@@ -142,7 +142,7 @@ Visual Studio 拡張機能カラー コンパイラ ツールは、その色は�
 |-|-|-|  
 |**スイッチ名**|**ノート**|**必須またはオプション**|  
 |名前のない (.xml ファイル)|最初の名前のないパラメーターは、これに変換する XML ファイルへのパスです。|必須|  
-|名前のない (.pkgdef ファイル)|これは 2 つ目は無名パラメーターは、生成された .pkgdef ファイルの出力パス。<br /><br /> 既定:\<XML ファイル名 > .pkgdef|Optional|  
+|名前のない (.pkgdef ファイル)|これは 2 つ目は無名パラメーターは、生成された .pkgdef ファイルの出力パス。<br /><br /> 既定:\<XML ファイル名 > .pkgdef|省略可|  
 |/noLogo|このフラグを設定すると、印刷から製品および著作権情報が停止します。|Optional|  
 |/?|ヘルプ情報を出力します。|Optional|  
 |/help|ヘルプ情報を出力します。|Optional|  

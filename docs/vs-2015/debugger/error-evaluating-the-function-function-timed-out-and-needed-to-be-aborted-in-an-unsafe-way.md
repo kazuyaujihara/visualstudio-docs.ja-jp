@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d5a992751e31f21a7875091b4c8b1be9bd0bd0a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58976594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197060"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>エラー :関数の評価&#39;関数&#39;タイムアウトしたため、安全でない方法で中止する必要があります。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "58976594"
 エラー メッセージでは、デバッガーを呼び出すしようとしました。 関数の名前を確認します。 この関数を変更する場合は、プロパティ get アクセス操作子または ToString メソッドの呼び出しからデバッガーを回避できます。 次のいずれかの操作を行います。
  
 * 他の種類のプロパティ get アクセス操作子以外のコードにメソッドを変更するか、ToString メソッドと、問題が解消します。
-    - または -
+    \- または -
 * (の ToString)DebuggerDisplay 属性を型に定義し、デバッガー以外の ToString を評価することができます。
-    - または -
+    \- または -
 * (のプロパティ ゲッター)配置、`[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]`プロパティの属性。 API の互換性の理由から、プロパティを維持する必要があるメソッドがある場合に役立ちます。 が、メソッドが本当に必要です。
  
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>解決方法 2:評価を中止するデバッガーを求める対象のコードがあります。

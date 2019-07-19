@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35c332682b609f6620f96cc8eb8499cca921d399
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58973949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204279"
 ---
 # <a name="group-element"></a>Group 要素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,14 +40,14 @@ VSPackage のコマンド グループを定義します。
 |---------------|-----------------|  
 |guid|必須。 コマンド id を GUID と ID の GUID です。|  
 |ID|必須。 コマンド id を GUID と ID の ID。|  
-|priority|省略可能です。 優先度を示す数値。|  
+|priority|任意。 優先度を示す数値。|  
 |条件|任意。 参照してください[条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)します。|  
   
 ### <a name="child-elements"></a>子要素  
   
 |要素|説明|  
 |-------------|-----------------|  
-|親|省略可能です。 ボタンの親要素。|  
+|親|任意。 ボタンの親要素。|  
 |注釈|省略可能なコメント。|  
   
 ### <a name="parent-elements"></a>親要素  

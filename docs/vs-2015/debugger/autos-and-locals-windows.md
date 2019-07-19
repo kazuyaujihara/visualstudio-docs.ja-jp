@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161724"
 ---
 # <a name="autos-and-locals-windows"></a>[自動変数] ウィンドウと [ローカル] ウィンドウ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60072852"
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>[自動変数] と [ローカル] ウィンドウ内のオブジェクトを調べる  
  配列とオブジェクトは、[自動変数] と [ローカル] ウィンドウにツリー コントロールで表示されます。 変数名の左側にある矢印をクリックするとビューが展開され、フィールドとプロパティが表示されます。 次の例に示します、<xref:System.IO.FileStream>オブジェクト、**ローカル**ウィンドウ。  
   
- ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
+ ![[ローカル]&#45;FileStream](../debugger/media/locals-filestream.png "ローカル FileStream")  
   
 ## <a name="what-variables-appear-in-the-autos-window"></a>[自動変数] ウィンドウに表示される変数  
  **[自動変数]** ウィンドウは C#、Visual Basic、C++ のコードで使用できます。 **[自動変数]** ウィンドウでは JavaScript も F# もサポートされません。  
@@ -125,7 +125,7 @@ private static int subtractVars(int i, int j)
  既定の数値の形式は 10 進数ですが、これを 16 進数に変更することができます。 **[ローカル]** または **[自動変数]** ウィンドウ内で右クリックし、 **[16 進数で表示]** を選びます。 この変更は、すべてのデバッガー ウィンドウに反映されます。  
   
 ## <a name="editing-a-value-in-a-variable-window"></a>[変数] ウィンドウで値を編集する  
- **[自動変数]**、 **[ローカル]**、 **[ウォッチ]**、 **[クイック ウォッチ]** ウィンドウに表示される変数の大部分は、値を編集できます。 **[ウォッチ]** と **[クイック ウォッチ]** ウィンドウについては、「 [Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)」をご覧ください。 変更する値をダブルクリックするだけで、新しい値を追加できます。  
+ **[自動変数]** 、 **[ローカル]** 、 **[ウォッチ]** 、 **[クイック ウォッチ]** ウィンドウに表示される変数の大部分は、値を編集できます。 **[ウォッチ]** と **[クイック ウォッチ]** ウィンドウについては、「 [Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)」をご覧ください。 変更する値をダブルクリックするだけで、新しい値を追加できます。  
   
  たとえば `a + b`のように、値に式を入力することもできます。 デバッガーは、正しい言語式であれば大部分を受け入れます。  
   

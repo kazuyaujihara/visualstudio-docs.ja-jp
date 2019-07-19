@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/02/2018
 ms.topic: conceptual
 description: クラウド サブスクリプションの請求に関する質問。
-searchscope: VS Subscription
-ms.openlocfilehash: ab02b40926225860536b277b22c3f16768a56731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 858707358062386191c526810644f110bd7ac58d
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810532"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250733"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio クラウド サブスクリプションの請求に関してよくあるご質問
 
@@ -43,7 +42,7 @@ A: 適切な特権があるかどうかを確認する最も簡単な方法は�
 お使いのログインに現在リンクされている Azure サブスクリプションの一覧が表示されるので、そこから Azure サブスクリプション (請求先アカウント) を選ぶ必要があります。
 Azure サブスクリプションの名前として既定で表示される種類は請求先アカウント ("従量課金制"、"Enterprise Agreement" など) なので、通常、Azure サブスクリプションが Enterprise Agreement の一部かどうかは明白です。
 
-もう 1 つの方法は、[Azure Enterprise Portal](http://ea.azure.com) にアクセスしてみることです。  正常にアクセスできる場合、エンタープライズ管理者ロールまたはアカウント所有者ロールを既に持っています。 Enterprise Agreement で新しい Azure 請求先アカウントを設定できるのは、アカウント所有者だけです。 Azure Enterprise Portal にアクセスできない場合は、組織のエンタープライズ管理者を調べて、その管理者に Azure Enterprise Portal で自分をアカウント所有者として追加するよう依頼してください。  誰に頼めばよいかわからない場合は、[サポート チケットを送信](https://aka.ms/AzureEntSupport)して、連絡先情報を要求できます。  サポート チケットを送信するときは、組織の名前と、Enterprise Agreement の登録番号が必要です。
+もう 1 つの方法は、[Azure Enterprise Portal](https://ea.azure.com) にアクセスしてみることです。  正常にアクセスできる場合、エンタープライズ管理者ロールまたはアカウント所有者ロールを既に持っています。 Enterprise Agreement で新しい Azure 請求先アカウントを設定できるのは、アカウント所有者だけです。 Azure Enterprise Portal にアクセスできない場合は、組織のエンタープライズ管理者を調べて、その管理者に Azure Enterprise Portal で自分をアカウント所有者として追加するよう依頼してください。  誰に頼めばよいかわからない場合は、[サポート チケットを送信](https://aka.ms/AzureEntSupport)して、連絡先情報を要求できます。  サポート チケットを送信するときは、組織の名前と、Enterprise Agreement の登録番号が必要です。
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Q:Enterprise Agreement の Azure 年額コミットメント資金を使って、Visual Studio クラウド サブスクリプションを購入することはできますか。
 

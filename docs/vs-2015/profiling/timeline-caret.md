@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 72e77cfbfcc8a959dd26d4c3fbc1bf633cd9f00e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54762970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145517"
 ---
 # <a name="timeline-caret"></a>タイムライン キャレット
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-実行中のスレッド セグメントのタイムライン上のポイントを選択すると、その上にタイムライン キャレットが表示されます。 現在のスタック タブ上に表示される呼び出し履歴が、セグメントでクリックした場所の時間に最も近い呼び出し履歴になります。 キャレットは、**[現在]** タブの下に表示される呼び出し履歴を、サンプリングされた瞬間に関連付けるために使用されます。 キャレットはその呼び出し履歴、つまりユーザーが選択した場所に最も近い呼び出し履歴の正確な位置を示します。  
+実行中のスレッド セグメントのタイムライン上のポイントを選択すると、その上にタイムライン キャレットが表示されます。 現在のスタック タブ上に表示される呼び出し履歴が、セグメントでクリックした場所の時間に最も近い呼び出し履歴になります。 キャレットは、 **[現在]** タブの下に表示される呼び出し履歴を、サンプリングされた瞬間に関連付けるために使用されます。 キャレットはその呼び出し履歴、つまりユーザーが選択した場所に最も近い呼び出し履歴の正確な位置を示します。  
   
 ## <a name="see-also"></a>関連項目  
  [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: d8312733c92ab2802c9594459d5e855b5600a352
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: ca5c3133e3f03d4e68449156b35d6643c637a11b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692824"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825548"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions の概要
 
@@ -138,14 +138,14 @@ local.settings.json に追加したすべての設定は、Azure の関数アプ
 ## <a name="available-function-templates"></a>使用可能な関数テンプレート
 
 - **GitHub トリガー** – GitHub リポジトリで発生するイベントに応答します。 詳しくは、[GitHub についての Azure Functions の記事](/azure/azure-functions/functions-create-github-webhook-triggered-function)をご覧ください。
-    - GitHub コメンター – この関数は、問題または pull request の GitHub webhook を受信してコメントを追加すると実行されます。
-    - GitHub WebHook – この関数は、GitHub webhook を受信すると実行されます。
+  - GitHub コメンター – この関数は、問題または pull request の GitHub webhook を受信してコメントを追加すると実行されます。
+  - GitHub WebHook – この関数は、GitHub webhook を受信すると実行されます。
 
 - **HTTP** – HTTP 要求を使って、コードの実行をトリガーします。 次の HTTP トリガーに対する明示的なテンプレートがあります。
-    - HTTP トリガー
-    - Http GET CRUD
-    - Http POST CRUD
-    - パラメーター付き HTTP トリガー
+  - HTTP トリガー
+  - Http GET CRUD
+  - Http POST CRUD
+  - パラメーター付き HTTP トリガー
 
 - **タイマー**: 定義されているスケジュールに基づいて、クリーンアップまたは他のバッチ タスクを実行します。 このテンプレートは名前とスケジュールの 2 つのフィールドを受け取ります。6 フィールドの CRON 式です。 詳しくは、[タイマーについての Azure Functions の記事](/azure/azure-functions/functions-create-scheduled-function)をご覧ください。
 

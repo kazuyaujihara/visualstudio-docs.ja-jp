@@ -19,22 +19,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65eb724d14123292a0694623bf46859f8a3966f9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197088"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>エラー :IIS 管理サービスが応答しないため、セキュリティ チェックに失敗しました
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-このエラーは、IIS Admin サービスが応答しないときに発生します。 これは通常、IIS のインストールに問題があることを意味します。 まず、**[管理ツール]** の **[サービス]** ツールを使用して、サービスが実行中であることを確認します。  
+このエラーは、IIS Admin サービスが応答しないときに発生します。 これは通常、IIS のインストールに問題があることを意味します。 まず、 **[管理ツール]** の **[サービス]** ツールを使用して、サービスが実行中であることを確認します。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
 - コントロール パネルの **[プログラムの追加と削除]** を使って、IIS を再インストールします。  
   
-- - または -  
+- \- または -  
   
 - コントロール パネルの [アプリケーションの追加と削除] を使って、コンピューターから IIS を削除します。 IIS を削除しても問題が解決しない場合は、レジストリをチェックして、次のキーが存在しないことを確認します。  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60084480"
     HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}  
     ```  
   
-     - または -  
+     \- または -  
   
 - コントロール パネルの [管理ツール] を使って、IIS Admin サービスを無効にします。 これによって、コンピューター上の IIS は無効になります。  
   

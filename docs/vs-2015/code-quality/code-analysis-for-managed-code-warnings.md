@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 237091c4304b6d6fef90197d503f84fe86c12b9e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142339"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>マネージド コードの警告に対応するコードの解析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "58974644"
   
 |アイテム|説明|  
 |----------|-----------------|  
-|型|規則の TypeName。|  
+|種類|規則の TypeName。|  
 |CheckId|規則の一意の識別子。 CheckId とカテゴリは、ソース内で警告の省略表記として使用されます。|  
-|カテゴリ|警告のカテゴリ。|  
+|Category|警告のカテゴリ。|  
 |互換性に影響する変更点|規則違反を修正することが、互換性に影響する変更点かどうかを示します。 互換性に影響する変更点とは、違反の原因となった対象に対して依存関係を持つアセンブリが、新たに修正したバージョンで再コンパイルされないこと、または変更によって実行時にエラーになる可能性があることを示します。 複数の修正を適用でき、互換性に影響する変更点があるものとないものがある場合、"あり" と "なし" を併記しています。|  
 |原因|規則に従って警告が生成される原因になった特定のマネージド コード。|  
 |説明|警告の背景にある問題について説明します。|  

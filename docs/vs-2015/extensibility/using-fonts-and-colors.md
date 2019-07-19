@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177229"
 ---
 # <a name="using-fonts-and-colors"></a>フォントと色の使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "58964001"
   
  このアプローチを実装するために VSPackage が必要です、<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>インターフェイスと関連するインターフェイス。  
   
- [方法: 組み込みのフォントおよび色スキームへをアクセスします。](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [方法: 組み込みのフォントおよび色のスキーマにアクセスする](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  定義して組み込みのフォントや色を使用して、カテゴリを登録し、システム指定のフォントと色の使用を開始する方法について説明します。  
   
 ## <a name="reference"></a>参照  

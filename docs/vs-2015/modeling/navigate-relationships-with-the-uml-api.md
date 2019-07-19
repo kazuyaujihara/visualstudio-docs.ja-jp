@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cb2a02ba27f06ef027001c2de07308c153b21c2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58975122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158979"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>UML API を使用して関係をナビゲートする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ foreach (IRelationship relationship in
   
 ```  
   
-### <a name="association"></a>関連付け  
+### <a name="association"></a>アソシエーション  
  関連付けとは、それぞれが分類子に属している 2 つのプロパティ間のリレーションシップのことです。  
   
 ```  
@@ -112,7 +112,7 @@ IEnumerable<IActivityNode> GetActivityEdgeSources(this IActivityNode node);
   
 ```  
   
-### <a name="connector-assembly-and-delegation"></a>コネクタ (アセンブリと委任)   
+### <a name="connector-assembly-and-delegation"></a>コネクタ (アセンブリと委任)  
   
 ```  
 /// Returns the elements connected via assembly   

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 292e174feeb123c640306bc8ef3ffedd7e8847f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58974890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200354"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307:StringComparison の指定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58974890"
 |-|-|
 |TypeName|SpecifyStringComparison|
 |CheckId|CA1307|
-|カテゴリ|Microsoft.Globalization|
+|Category|Microsoft.Globalization|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因

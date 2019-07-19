@@ -3,17 +3,16 @@ title: Visual Studio サブスクリプションの新機能
 description: Visual Studio サブスクリプションの管理に使用できる、新機能と更新された機能について説明します。
 ms.custom: ''
 ms.date: 06/27/2019
-searchscope: VS Subscription
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465118"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891071"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの新機能
 
@@ -21,7 +20,7 @@ ms.locfileid: "67465118"
 
 ## <a name="2019-q1-january-march"></a>2019 年第 1 四半期 (1 月から 3 月)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>[サブスクリプション管理ポータル](https://manage.visualstuido.com)に最大使用量を追加
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>[サブスクリプション管理ポータル](https://manage.visualstudio.com)に最大使用量を追加
 Visual Studio のサブスクリプション管理ポータルの新機能を使用すると、購入して割り当てたサブスクリプション数を追跡し、過去 1 年間と全契約期間の割り当てた各レベルのサブスクリプションのピーク数を特定できます。 これは、現在のサブスクリプションの使用状況を理解し、将来の購入を計画するのに役立ちます。 
 
   > [!div class="mx-imgBorder"]

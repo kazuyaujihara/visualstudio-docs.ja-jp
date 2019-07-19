@@ -1,5 +1,5 @@
 ---
-title: 'DA0018: 32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています | Microsoft Docs'
+title: DA0018:32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194944"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018:32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則 Id |DA 0018 |  
@@ -46,7 +46,7 @@ ms.locfileid: "54773288"
  マネージド ヒープの合計サイズが既定の制限値に近づくと、通常、メモリ管理のオーバーヘッドが増加し、アプリケーションの応答性とスケーラビリティに影響するようになります。  
   
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法  
- [エラー一覧] ウィンドウに表示されたメッセージをダブルクリックして、[[マーク](../profiling/marks-view.md)] ビューに移動します。 **.NET CLR Memory\\# Bytes in all Heaps** 列および **# Total committed bytes** 列を探します。 マネージド メモリの割り当てが他のフェーズよりも多い特定のプログラム実行フェーズがあるかどうかを確認します。 **# Bytes in all Heaps** 列の値を、**.NET CLR Memory\\# of Gen 0 Collections**、**.NET CLR Memory\\# of Gen 1 Collections**、**.NET CLR Memory\\# of Gen 2 Collections** の各列で報告されたガベージ コレクションの割合と比較し、マネージド メモリ割り当てのパターンがガベージ コレクションの割合に影響を与えるかどうかを確認します。  
+ [エラー一覧] ウィンドウに表示されたメッセージをダブルクリックして、[[マーク](../profiling/marks-view.md)] ビューに移動します。 **.NET CLR Memory\\# Bytes in all Heaps** 列および **# Total committed bytes** 列を探します。 マネージド メモリの割り当てが他のフェーズよりも多い特定のプログラム実行フェーズがあるかどうかを確認します。 **# Bytes in all Heaps** 列の値を、 **.NET CLR Memory\\# of Gen 0 Collections**、 **.NET CLR Memory\\# of Gen 1 Collections**、 **.NET CLR Memory\\# of Gen 2 Collections** の各列で報告されたガベージ コレクションの割合と比較し、マネージド メモリ割り当てのパターンがガベージ コレクションの割合に影響を与えるかどうかを確認します。  
   
  .NET Framework アプリケーションでは、共通言語ランタイムによって、マネージド ヒープの合計サイズが、プロセス アドレス空間のプライベート領域部分の最大サイズの半分よりわずかに小さいサイズに制限されます。 32 ビット コンピューター上で実行している 32 ビット プロセスの場合、プロセスのアドレス空間のプライベート領域の上限は 2 GB です。 マネージド ヒープの合計サイズがその既定の制限値に近づくと、メモリ管理のオーバーヘッドが増加し、アプリケーションのパフォーマンスが低下する可能性があります。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "54773288"
   
 - マネージド メモリ リソースのアプリケーションによる使用を最適化する  
   
-   - または -  
+   \- または -  
   
 - 32 ビット プロセスの仮想メモリの最大サイズに関するアーキテクチャ上の制約を解除する手順を実行する  
   
