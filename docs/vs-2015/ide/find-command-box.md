@@ -14,16 +14,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b8bddc27eb4a59b65796c7837ae4561e5d56a5d5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160680"
 ---
 # <a name="findcommand-box"></a>[検索/コマンド] ボックス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**[検索]** ボックスでは、テキストを検索し、Visual Studio コマンドを検索できます。 **[検索]** ボックスは、ツール バー コントロールとして使用できますが、既定では表示されません。 **[標準]** ツール バーの **[ボタンの追加または削除]** を選択し、**[検索]** を選択すると、**[検索]** ボックスを表示できます。  
+**[検索]** ボックスでは、テキストを検索し、Visual Studio コマンドを検索できます。 **[検索]** ボックスは、ツール バー コントロールとして使用できますが、既定では表示されません。 **[標準]** ツール バーの **[ボタンの追加または削除]** を選択し、 **[検索]** を選択すると、 **[検索]** ボックスを表示できます。  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] コマンドを実行するには、コマンドの先頭に不等号 (&gt;) を付けます。  
   
@@ -33,11 +33,10 @@ ms.locfileid: "54801226"
 [検索/コマンド] ボックス  
   
 ## <a name="searching-for-text"></a>テキストの検索  
- 既定では、**[検索]** ボックスにテキストを指定して Enter キーを押すと、Visual Studio によって、**[フォルダーを指定して検索]** ダイアログ ボックスで指定したオプションが使用され、現在のドキュメント ウィンドウまたはツール ウィンドウで検索されます。 詳細については、「 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)」を参照してください。  
+ 既定では、 **[検索]** ボックスにテキストを指定して Enter キーを押すと、Visual Studio によって、 **[フォルダーを指定して検索]** ダイアログ ボックスで指定したオプションが使用され、現在のドキュメント ウィンドウまたはツール ウィンドウで検索されます。 詳細については、「 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)」を参照してください。  
   
 ## <a name="entering-commands"></a>コマンドの入力  
- 
-  **[検索]** ボックスを使用して、文字列の検索ではなく、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の単一のコマンドまたはエイリアスを実行するには、先頭に不等号 (&gt;) を付けて [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] コマンドを入力します。 次に例を示します。  
+ **[検索]** ボックスを使用して、文字列の検索ではなく、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] の単一のコマンドまたはエイリアスを実行するには、先頭に不等号 (&gt;) を付けて [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] コマンドを入力します。 次に例を示します。  
   
 ```  
 >File.NewFile c:\temp\MyFile /t:"General\Text File"  

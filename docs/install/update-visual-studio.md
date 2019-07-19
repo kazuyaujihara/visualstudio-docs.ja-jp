@@ -2,7 +2,7 @@
 title: Visual Studio 2017 を更新する
 titleSuffix: ''
 description: Visual Studio を最新のリリースに更新する詳細な手順を説明します。
-ms.date: 06/19/2019
+ms.date: 07/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -10,17 +10,19 @@ ms.technology: vs-installation
 helpviewer_keywords:
 - update [Visual Studio]
 - change [Visual Studio]
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.ProductUpdates
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67290653"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250578"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio を最新リリースに更新する
 
@@ -257,6 +259,27 @@ Visual&nbsp;Studio&nbsp;2019 を更新する方法を次に示します。
 1. **[更新プログラムがダウンロードされてインストールの準備完了]** ダイアログ ボックスで、 **[更新]** を選択します。
 
    Visual Studio が更新され、閉じられた後に、再起動されます。
+
+## <a name="customize-update-settings"></a>更新設定のカスタマイズ
+
+Visual Studio の更新設定は、いくつかの異なる方法でカスタマイズできます。たとえば、インストール モードの変更や、自動ダウンロードの選択などを行います。
+
+2 つのインストール モードから選択することができます。
+
+* **ダウンロード中にインストールする**
+* **全部ダウンロードしてからインストールする**
+
+また、 **[Automatically download updates]\(更新プログラムを自動的にダウンロードする\)** 設定を選択することもできます。これを使うと、コンピューターがアイドル状態のときに更新プログラムがダウンロードされます。
+
+次の手順に従います。
+
+1. メニュー バーで、 **[ツール]** > **[オプション]** の順に選択します。
+
+2. **[環境]** を展開してから、 **[製品の更新プログラム]** を選択します。
+
+    ![Visual Studio での更新設定](media/vs-2019/update-settings-options.png)
+
+3. Visual Studio の更新プログラム用に使用したいインストール モードと自動ダウンロード オプションを選択します。
 
 ::: moniker-end
 

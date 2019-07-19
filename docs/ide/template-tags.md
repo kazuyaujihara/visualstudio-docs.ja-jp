@@ -1,5 +1,6 @@
 ---
 title: プロジェクト テンプレート上でタグを追加または編集する
+description: Visual Studio のプロジェクト テンプレート上でタグを追加または更新する方法について説明します。
 ms.date: 04/30/2019
 author: minsa110
 ms.author: somin
@@ -12,36 +13,36 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 4a5113fa7f420d58892e2737ec9196422486490e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 417b171a731224302e6dd2efa55b45d84455ca4b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038628"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891138"
 ---
 # <a name="add-tags-to-project-templates"></a>プロジェクト テンプレートにタグを追加する
 
-[Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) バージョン 16.1 Preview 2 以降では、言語、プラットフォーム、プロジェクト タイプのタグを自分のプロジェクト テンプレートに追加できます。 タグは、新しいプロジェクト ダイアログ ボックスの 2 つの場所で使用されます。
+[Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) バージョン 16.1 Preview 2 以降では、言語、プラットフォーム、プロジェクト タイプのタグを自分のプロジェクト テンプレートに追加できます。 
 
-- テンプレートの説明の下にタグが表示されます
+タグは、 **[新しいプロジェクト]** ダイアログ ボックスの 2 つの場所で使用されます。
 
-   ![新しいプロジェクト ダイアログでのタグを含むプロジェクト テンプレート](media/npd-item-with-template-tags.png)
+- テンプレートの説明の下にタグが表示されます。
 
-- タグを使って、テンプレートを検索およびフィルター処理できます
+   ![[新しいプロジェクト] ダイアログでのタグを含むプロジェクト テンプレート](media/npd-item-with-template-tags.png)
 
-   ![新しいプロジェクト ダイアログでの検索とフィルター処理](media/npd-search-and-filter.png)
+- タグを使って、テンプレートを検索およびフィルター処理できます。
 
-Visual Studio に組み込まれているテンプレート タグを使って *.vstemplate* XML ファイルを更新するか、カスタム テンプレート タグを作成することで、タグを追加できます。 テンプレート タグは、Visual Studio 2019 の新しいプロジェクト ダイアログでのみ使えます。 それらは、以前のバージョンの Visual Studio でのテンプレートのレンダリングには影響がありません。
+   ![[新しいプロジェクト] ダイアログ ボックスでの検索とフィルター処理](media/npd-search-and-filter.png)
+
+タグを追加するには、 *.vstemplate* XML ファイルを更新します。 Visual Studio に組み込まれているテンプレート タグを使用するか、カスタム テンプレート タグを作成することができます。 テンプレート タグは、Visual Studio 2019 の **[新しいプロジェクト]** ダイアログ ボックスでのみ表示されます。 以前のバージョンの Visual Studio では、テンプレート タグがテンプレートの表示方法に影響することはありません。
 
 ## <a name="add-or-edit-tags"></a>タグを追加または編集する
 
-次を行う場合、プロジェクト テンプレートの *.vstemplate* XML でタグを追加または編集できます。
+次のいずれかの操作を行うときに、プロジェクト テンプレートの *.vstemplate* XML でタグを追加または編集できます。
 
-* [テンプレートのエクスポート] ウィザードを使って[新しいプロジェクト テンプレートを作成する](/visualstudio/ide/how-to-create-project-templates)
-
-* [既存のプロジェクト テンプレートを更新する](/visualstudio/ide/how-to-update-existing-templates)
-
-* [新しい VSIX プロジェクト テンプレートを作成する](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+* [テンプレートのエクスポート] ウィザードを使って[新しいプロジェクト テンプレートを作成する](/visualstudio/ide/how-to-create-project-templates)。
+* [既存のプロジェクト テンプレートを更新する](/visualstudio/ide/how-to-update-existing-templates)。
+* [新しい VSIX プロジェクト テンプレートを作成する](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)。
 
 ## <a name="syntax"></a>構文
 
@@ -53,7 +54,7 @@ Visual Studio に組み込まれているテンプレート タグを使って *
 
 ## <a name="attributes"></a>属性
 
-次の属性は省略可能であり、高度なユーザー シナリオ用です。
+高度なユーザー シナリオでは、次の省略可能な属性を使用できます。
 
 |属性|説明|
 |---------------|-----------------|
@@ -78,7 +79,7 @@ Visual Studio に組み込まれているテンプレート タグを使って *
 
 |要素|説明|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(必須) テンプレートをカテゴリに分類し、 **[新しいプロジェクト]** または **[新しい項目の追加]** ダイアログ ボックスでそれがどのように表示されるかを定義します。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(必須) テンプレートをカテゴリに分類し、その **[新しいプロジェクト]** ダイアログ ボックスまたは **[新しい項目の追加]** ダイアログ ボックスでの表示方法を定義します。|
 
 ## <a name="text-value"></a>テキスト値
 
@@ -88,7 +89,9 @@ Visual Studio に組み込まれているテンプレート タグを使って *
 
 ## <a name="built-in-tags"></a>組み込みのタグ
 
-Visual Studio では一連の組み込みタグが提供されています。これらを追加すると、ローカライズされたリソースをレンダリングできます。 組み込みのタグと、それらに対応するかっこで囲まれた値の一覧を次に示します。
+Visual Studio には、組み込みのタグのリストが用意されています。 組み込みのタグを追加すると、そのタグによりローカライズされたリソースが表示されます。 
+
+Visual Studio で利用できる組み込みのタグの一覧を次に示します。 対応する値をかっこ内に表示します。
 
 | 言語 | プラットフォーム | プロジェクトの種類 |
 | -- | -- | -- |
@@ -110,7 +113,7 @@ Visual Studio では一連の組み込みタグが提供されています。こ
 
 ## <a name="example"></a>例
 
-Visual C# アプリケーションでのプロジェクト テンプレートのメタデータの例を次に示します。
+Visual C# アプリケーションのプロジェクト テンプレートのメタデータの例を次に示します。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -145,6 +148,6 @@ Visual C# アプリケーションでのプロジェクト テンプレートの
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio テンプレート スキーマ参照](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [プロジェクトと項目テンプレートの作成](/visualstudio/ide/creating-project-and-item-templates)
+- [プロジェクト テンプレートと項目テンプレートを作成する](/visualstudio/ide/creating-project-and-item-templates)
 - [プロジェクト テンプレートと項目テンプレートのカスタマイズ](/visualstudio/ide/customizing-project-and-item-templates)
-- [VSIX プロジェクトのテンプレートの概要](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+- [VSIX プロジェクト テンプレートの概要](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)

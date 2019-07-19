@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 690ffff0aa31b90cea58997c982406a900299550
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957516"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826162"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE へようこそ | Python
 
@@ -27,16 +27,16 @@ Visual Studio *統合開発環境* は、コードの編集、デバッグ、テ
 これは Python プロジェクトを開いている状態の Visual Studio の画像です。使用頻度の高い主なツール ウィンドウがいくつか開かれています。
 
 - [**ソリューション エクスプローラー**](../ide/solutions-and-projects-in-visual-studio.md) (右上) では、コード ファイルを表示、移動、および管理できます。 **ソリューション エクスプローラー**では、ファイルを[ソリューションやプロジェクト](/visualstudio/get-started/tutorial-projects-solutions)にまとめ、コードを整理できます。
-    - **ソリューション エクスプローラー**と共に [**Python 環境**](managing-python-environments-in-visual-studio.md)を使用することで、コンピューター上にインストールされているさまざまな Python インタープリターを管理することができます。
+  - **ソリューション エクスプローラー**と共に [**Python 環境**](managing-python-environments-in-visual-studio.md)を使用することで、コンピューター上にインストールされているさまざまな Python インタープリターを管理することができます。
 
-    ::: moniker range=">=vs-2019"
-    - Visual Studio のプロジェクト ファイルとソリューション ファイルを作成することなく、フォルダー内の Python コードを開いて実行することもできます。 詳細については、「[クイック スタート:フォルダー内の Python コードを開いて実行する](quickstart-05-python-visual-studio-open-folder.md)」をご覧ください。
-    ::: moniker-end
+  ::: moniker range=">=vs-2019"
+  - Visual Studio のプロジェクト ファイルとソリューション ファイルを作成することなく、フォルダー内の Python コードを開いて実行することもできます。 詳細については、「[クイック スタート:フォルダー内の Python コードを開いて実行する](quickstart-05-python-visual-studio-open-folder.md)」をご覧ください。
+  ::: moniker-end
 
 - 大部分の時間を費やすことになる[エディター ウィンドウ](../ide/writing-code-in-the-code-and-text-editor.md) (中央) にはファイルの内容が表示されます。 これは、[Python コードを編集](editing-python-code-in-visual-studio.md)し、コードの構造内を移動し、デバッグ セッション中にブレークポイントを設定する場所です。 Python では、コードを選択し、Ctrl + Enter キーを押して[対話型 REPL ウィンドウ](python-interactive-repl-in-visual-studio.md)でそのコードを実行することもできます。
 
 - [[出力] ウィンドウ](../ide/reference/output-window.md) (下中央) には、デバッグ メッセージ、エラー メッセージ、警告、公開状態メッセージなど、Visual Studio の通知が出力されます。 メッセージ ソースごとに独自のタブがあります。
-    - [Python の対話型 REPL ウィンドウ](python-interactive-repl-in-visual-studio.md)は、[出力] ウィンドウと同じ領域に表示されます。
+  - [Python の対話型 REPL ウィンドウ](python-interactive-repl-in-visual-studio.md)は、[出力] ウィンドウと同じ領域に表示されます。
 
 - [チーム エクスプローラー](/azure/devops/user-guide/work-team-explorer?view=vsts) (右下) では、[Git](https://git-scm.com/) や [Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) などのバージョン管理テクノロジを使用して、作業項目を追跡し、コードを他のユーザーと共有できます。
 
@@ -58,7 +58,7 @@ Windows 向けには、Community、Professional、Enterprise という 3 つの�
 
 - [リファクタリング](refactoring-python-code.md)
 
-   コードの一部を右クリックし、**[クイック アクションとリファクタリング]** を選択すると、Visual Studio で、変数の名前をインテリジェントに変更する、1 つまたは複数のコード行を新しいメソッドに抽出する、メソッド パラメーターを並べ替える、などの操作が提供されます。
+   コードの一部を右クリックし、 **[クイック アクションとリファクタリング]** を選択すると、Visual Studio で、変数の名前をインテリジェントに変更する、1 つまたは複数のコード行を新しいメソッドに抽出する、メソッド パラメーターを並べ替える、などの操作が提供されます。
 
    ![Visual Studio でのリファクタリング](media/tour-ide-refactor-extract-method.png)
 
@@ -93,6 +93,10 @@ Windows 向けには、Community、Professional、Enterprise という 3 つの�
 
     Visual Studio 2019 以降では、コードに対する Visual Studio プロジェクトを作成しなくても、Python コードが含まれるフォルダーを開き、IntelliSense やデバッグなどの機能を利用することができます。
 ::: moniker-end
+
+- [Visual Studio を使用して共同作業する](https://docs.microsoft.com/visualstudio/liveshare/use/vs)
+  
+    Visual Studio Live Share を使うと、使っているプログラミング言語や構築しているアプリの種類に関係なく、リアルタイムで他のユーザーと共同で編集したりデバッグしたりできます。 
 
 - [Python 対話型 REPL](python-interactive-repl-in-visual-studio.md)
 
