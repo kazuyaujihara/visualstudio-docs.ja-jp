@@ -18,7 +18,6 @@
 #### [職場/学校アカウントでサインイン](sign-in-work.md)
 #### [GitHub を使用したサインイン](sign-in-github.md)
 #### [代替 ID](vs-alternate-identity.md)
-#### [エイリアスを使用したサインイン](aliasing.md)
 #### [サインインに関する問題](sign-in-issues.md)
 #### [サブスクライバー データの匿名化](anonymization.md)
 ### [サブスクリプション ポータルの概要](using-the-subscriber-portal.md)
@@ -60,6 +59,9 @@
 #### [インターネット デモンストレーション](internet-demos.md)
 ## 管理者
 ### [管理者の責任](admin-responsibilities.md)
+#### [実稼働前インベントリ](admin-inventory.md)
+#### [大規模なチームと外部請負業者を管理する](manage-teams.md)
+#### [ユーザーの割り当てを追跡し、注文を処理する](assignments-orders.md)
 ### [ボリューム ライセンス](volume-license-admins.md)
 ### 組織のオンボード
 #### [移行後のオンボード](post-migration-onboarding.md)
@@ -78,6 +80,7 @@
 #### [超過](handle-overclaimed-license.md)
 #### [最大使用量](maximum-usage.md)
 #### [有効期限が切れたサブスクリプション](handle-expired-license.md)
+#### [エイリアスを使用するサブスクライバー](aliasing.md)
 #### [個人用電子メール サインインを持つサブスクライバー](personal-email-sign-ins.md)
 ### [GitHub Enterprise による Visual Studio の管理](assign-github.md)
 ## リソース
