@@ -4,25 +4,25 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e40f414b3b3ea6bc151ef036deb0b5d80464ba46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dc172723005b6781a63b3a3956b12152d73bb0f
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429146"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415586"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>方法: ビルド ログ ファイルを表示、保存、および構成する
 
-Visual Studio IDE でプロジェクトをビルドしたら、**[出力]** ウィンドウでそのビルドに関する情報を表示できます。 この情報を使用して、たとえば、ビルド エラーをトラブルシューティングできます。 
+Visual Studio IDE でプロジェクトをビルドしたら、 **[出力]** ウィンドウでそのビルドに関する情報を表示できます。 この情報を使用して、たとえば、ビルド エラーをトラブルシューティングできます。 
 
 - C++ のプロジェクトでは、自動的に作成および保存された *.txt* ファイルで同じ情報を確認することもできます。 
 
-- マネージド コード プロジェクトでは、ビルド出力ウィンドウ内をクリックし、**Ctrl**+**S** キーを押します。 Visual Studio から、**[出力]** ウィンドウの情報を保存する *.txt* ファイルの場所を指定することを求められます。 
+- マネージド コード プロジェクトでは、ビルド出力ウィンドウ内をクリックし、**Ctrl**+**S** キーを押します。 Visual Studio から、 **[出力]** ウィンドウの情報を保存する *.txt* ファイルの場所を指定することを求められます。 
 
 また、IDE を使用すれば、各ビルドについて、表示する情報の種類を指定することもできます。
 
@@ -30,11 +30,11 @@ MSBuild を使用して任意の種類のプロジェクトをビルドする場
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>C++ プロジェクトのビルド ログ ファイルを表示するには
 
-1. **Windows エクスプローラー**または**エクスプローラー**で、次のファイルを開きます。*\\...\Visual Studio \<バージョン\>\Projects\\<プロジェクト名\>\\<プロジェクト名\>\Debug\\<プロジェクト名\>.txt*
+1. **Windows エクスプローラー**または**エクスプローラー**で、次のファイルを開きます。 *\\...\Visual Studio \<バージョン\>\Projects\\<プロジェクト名\>\\<プロジェクト名\>\Debug\\<プロジェクト名\>.txt*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>マネージ コード プロジェクトのビルド ログ ファイルを作成するには
 
-1. メニュー バーで、**[ビルド]** > **[ソリューションのビルド]** の順にクリックします。
+1. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
 2. **[出力]** ウィンドウで、テキスト内のどこかをクリックします。
 
@@ -46,9 +46,9 @@ MSBuild を使用して任意の種類のプロジェクトをビルドする場
 
 1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
 
-2. **[プロジェクトおよびソリューション]** ページで、**[ビルド/実行]** ページを選択します。
+2. **[プロジェクトおよびソリューション]** ページで、 **[ビルド/実行]** ページを選択します。
 
-3. **[MSBuild プロジェクト ビルドの出力の詳細]** の一覧で、次の値のいずれかを選択し、**[OK]** ボタンを選択します。
+3. **[MSBuild プロジェクト ビルドの出力の詳細]** の一覧で、次の値のいずれかを選択し、 **[OK]** ボタンを選択します。
 
     |詳細レベル|説明|
     | - |-----------------|
