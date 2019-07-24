@@ -1,5 +1,5 @@
 ---
-title: Visual Basic の分析とC#静的コード分析によるストア アプリの品質のコード
+title: 静的コード分析C#を使用したストアアプリの Visual Basic とコード品質の分析
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,21 +8,21 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686550"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416645"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 静的コード分析によるストア アプリの Visual Basic および C# のコード品質の分析
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows および Windows Phone に適用されます] (../Image/windows_and_phone_content.png"windows_and_phone_content")
+Windows および Windows Phone] (../Image/windows_and_phone_content.png "windows_and_phone_content")
 
  Visual Studio Express のコード分析ツールは、コードを調べてプログラミング上の一般的な問題や違反がないことを確認します。 コード分析の警告はコンパイラのエラーや警告とは異なります。コード分析ツールは、有効であってもコードの作成者やコードを利用する他のユーザーにとって問題になる可能性がある特定のコード パターンを検索します。 また、コード分析では、テストでは検出できないコードの欠陥を見つけることができます。 開発プロセス中に定期的にコード分析ツールを実行することで、高品質なアプリを完成させることができます。
 
@@ -49,9 +49,9 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
   プロジェクトをビルドするたびに自動的にコード分析を実行するには:
 
-1. ソリューション エクスプローラーでプロジェクト名を右クリックし、**[プロパティ]** を選択します。
+1. ソリューション エクスプローラーでプロジェクト名を右クリックし、 **[プロパティ]** を選択します。
 
-2. プロジェクトのプロパティ ページで、**[コード分析]** をクリックして、**[ビルドに対するコード分析の有効化 (定数 CODEANALYSIS を定義)]** を選択します。
+2. プロジェクトのプロパティ ページで、 **[コード分析]** をクリックして、 **[ビルドに対するコード分析の有効化 (定数 CODEANALYSIS を定義)]** を選択します。
 
    ソリューションがコンパイルされ、コード分析が実行されます。 結果は、[コード分析] ウィンドウに表示されます。
 
@@ -80,7 +80,7 @@ Windows および Windows Phone に適用されます] (../Image/windows_and_pho
 
 2. 警告の下部にある **[アクション]** リンクをクリックします。
 
-3. **[メッセージの非表示]** をポイントし、**[ソース内]** または **[抑制ファイル内]** をクリックします。
+3. **[メッセージの非表示]** をポイントし、 **[ソース内]** または **[抑制ファイル内]** をクリックします。
 
    - **[ソース内]** をクリックすると、警告を生成したメソッドの上のソース ファイルに `SuppressMessage` 属性が挿入されます。 これにより、抑制が検出されやすくなります。
 

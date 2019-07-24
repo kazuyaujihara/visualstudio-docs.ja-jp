@@ -7,7 +7,7 @@
     - name: コード エディターについて
       href: tutorial-editor.md
     - name: プロジェクトとソリューションについて
-      href: tutorial-projects-solutions.md
+      href: ../tutorial-projects-solutions.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Visual Studio のその他の機能
       href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
 - name: アプリを作成する

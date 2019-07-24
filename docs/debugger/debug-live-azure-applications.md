@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: af3f393aea8d1ecddaf021c896839d663b7d4028
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 9bbd0aa8ea3d98077154225fb3a35aec5545ccfa
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692110"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415734"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用してライブ ASP.NET Azure アプリをデバッグする
 
@@ -34,14 +34,14 @@ ms.locfileid: "67692110"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* スナップショット デバッガーは以降では、Visual Studio 2017 Enterprise バージョン 15.5 以降で利用可能でのみ、 **Azure 開発ワークロード**します。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
+* スナップショットデバッガーは、 **Azure 開発ワークロード**を使用した Visual Studio 2017 Enterprise バージョン15.5 以降でのみ使用できます。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
 
-    ::: moniker range=">=vs-2019"
-    インストールされていない場合は、インストール[Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)します。 Visual Studio の以前のインストールから更新する場合、Visual Studio インストーラーを実行しスナップショット デバッガーのコンポーネントを確認、 **ASP.NET および web 開発ワークロード**します。
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    まだ [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 以降がインストールされていない場合はインストールしてください。 以前の Visual Studio 2017 インストールから更新する場合は、Visual Studio インストーラーを実行し、**ASP.NET および Web 開発ワークロード**のスナップショット デバッガー コンポーネントを確認してください。
-    ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   まだインストールされていない場合は、 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)をインストールします。 以前の Visual Studio のインストールから更新する場合は、Visual Studio インストーラーを実行し、 **ASP.NET および web 開発ワークロード**でスナップショットデバッガーコンポーネントを確認します。
+   ::: moniker-end
+   ::: moniker range="<=vs-2017"
+   まだ [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 以降がインストールされていない場合はインストールしてください。 以前の Visual Studio 2017 インストールから更新する場合は、Visual Studio インストーラーを実行し、 **ASP.NET および web 開発ワークロード**でスナップショットデバッガーコンポーネントを確認します。
+   ::: moniker-end
 
 * Basic 以上の Azure App Service プラン。
 
@@ -53,8 +53,9 @@ ms.locfileid: "67692110"
 
 1. デバッグのスナップショットを取得するプロジェクトを開きます。
 
-    > [!IMPORTANT]
-    > デバッグのスナップショットを取得するには、Azure App Service に公開されているものと*同じバージョンのソース コード*を開く必要があります。
+   > [!IMPORTANT]
+   > デバッグのスナップショットを取得するには、Azure App Service に公開されているものと*同じバージョンのソース コード*を開く必要があります。
+
 ::: moniker range="<=vs-2017"
 
 2. Cloud Explorer ( **[表示] > [Cloud Explorer]** ) で、プロジェクトがデプロイされている Azure App Service を右クリックし、 **[スナップショット デバッガーのアタッチ]** を選択します。
@@ -62,8 +63,10 @@ ms.locfileid: "67692110"
    ![スナップショット デバッガーを起動する](../debugger/media/snapshot-launch.png)
 
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-2. **[デバッグ] > [スナップショット デバッガーのアタッチ]** の順に選択します。プロジェクトがデプロイされる Azure App Service と Azure ストレージ アカウントを選択し、 **[アタッチ]** をクリックします。
+
+2. **[デバッグ] > [スナップショット デバッガーのアタッチ]** の順に選択します。プロジェクトがデプロイされる Azure App Service と Azure ストレージ アカウントを選択し、 **[アタッチ]** をクリックします。 スナップショットデバッガーは、 [Azure Kubernetes Service](debug-live-azure-kubernetes.md)と[AZURE Virtual Machines (VM) & Virtual Machine Scale Sets](debug-live-azure-virtual-machines.md)もサポートしています。
 
    ![[デバッグ] メニューからスナップショット デバッガーを起動する](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -74,11 +77,17 @@ ms.locfileid: "67692110"
    > [!IMPORTANT]
    > 初めて **[スナップショット デバッガーのアタッチ]** を選択した場合は、Azure App Service にスナップショット デバッガー サイト拡張機能をインストールするように求められます。 このインストールでは、Azure App Service を再起動する必要があります。
 
+   ::: moniker range="<=vs-2017"
    > [!NOTE]
-   > Application Insights サイト拡張機能では、スナップショットのデバッグもサポートされています。 "サイト拡張機能が最新ではない" というエラー メッセージが表示される場合は、[スナップショットのデバッグに関するトラブルシューティングのヒントと既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)のページでアップグレードの詳細を参照してください。
+   > Application Insights サイト拡張機能では、スナップショットのデバッグもサポートされています。 "サイトの拡張機能が古くなっています" というエラーメッセージが表示される場合は、「アップグレードの詳細」の「[トラブルシューティングのヒント」と「スナップショットデバッグの既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)」を参照してください。
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   > [!NOTE]
+   > (Visual Studio 2019 バージョン16.2 以降)スナップショットデバッガーでは、Azure クラウドのサポートが有効になりました。 選択する Azure リソースと Azure Storage アカウントの両方が、同じクラウドからのものであることを確認します。 企業の[azure コンプライアンス](https://azure.microsoft.com/overview/trusted-cloud/)構成についてご質問がある場合は、azure 管理者にお問い合わせください。
+   ::: moniker-end
 
    これで、Visual Studio はスナップショット デバッグ モードになりました。
-   ![スナップショットのデバッグ モード](../debugger/media/snapshot-message.png)
+   ![スナップショットデバッグモード](../debugger/media/snapshot-message.png)
 
    **[モジュール]** ウィンドウは、Azure App Service のすべてのモジュールが読み込まれたときに表示されます (このウィンドウを開くには、 **[デバッグ] > [ウィンドウ] > [モジュール]** の順に選択します)。
 
@@ -86,7 +95,7 @@ ms.locfileid: "67692110"
 
 ## <a name="set-a-snappoint"></a>スナップポイントを設定する
 
-1. コード エディターで、目的のコード行の横にある左側の余白をクリックしてスナップポイントを設定します。 実行されることがわかっているコードを選択します。
+1. コードエディターで、目的のコード行の横にある左余白をクリックして、スナップポイントを設定します。 実行することがわかっているコードであることを確認します。
 
    ![スナップポイントを設定する](../debugger/media/snapshot-set-snappoint.png)
 
@@ -94,12 +103,13 @@ ms.locfileid: "67692110"
 
    ![スナップポイントを有効にする](../debugger/media/snapshot-start-collection.png)
 
-    > [!TIP]
-    > スナップショットを表示するときはステップ実行できませんが、コード内に複数のスナップポイントを配置して、コードのさまざまな行の実行を追跡することができます。 コード内に複数のスナップポイントがある場合、スナップショット デバッガーでは、対応するスナップショットが同じエンドユーザー セッションに由来していることが確認されます。 スナップショット デバッガーでは、アプリをヒットするユーザーが多数の場合でもこの処理が実行されます。
+   > [!TIP]
+   > スナップショットを表示するときはステップ実行できませんが、コード内に複数のスナップポイントを配置して、コードのさまざまな行の実行を追跡することができます。 コード内に複数のスナップポイントがある場合、スナップショット デバッガーでは、対応するスナップショットが同じエンドユーザー セッションに由来していることが確認されます。 スナップショット デバッガーでは、アプリをヒットするユーザーが多数の場合でもこの処理が実行されます。
 
 ## <a name="take-a-snapshot"></a>スナップショットを取得する
 
-スナップポイントが有効になると、スナップポイントが配置されているコード行が実行されるたびにスナップショットがキャプチャされます。 この実行は、サーバー上の実際の要求によって引き起こすことができます。 スナップポイントのヒットを強制的に実行するには、Web サイトのブラウザー ビューを表示し、スナップポイントのヒットに必要なアクションを実行します。
+スナップポイントを設定したら、web サイトのブラウザービューに移動し、マークされたコード行を実行して、またはユーザーがサイトの使用状況から生成するのを待機することで、スナップショットを手動で生成できます。
+
 
 ## <a name="inspect-snapshot-data"></a>スナップショット データを調べる
 
@@ -113,7 +123,7 @@ ms.locfileid: "67692110"
 
    このビューから、変数にポイントしてデータヒントを表示し、 **[ローカル]** 、 **[ウォッチ]** 、および **[コール スタック]** ウィンドウを使用できます。また、式を評価することもできます。
 
-    Web サイト自体はまだ稼働中であり、エンド ユーザーは影響を受けません。 既定では、スナップポイントごとに 1 つのスナップショットのみがキャプチャされます。スナップショットがキャプチャされると、スナップポイントは無効になります。 そのスナップポイントで別のスナップショットをキャプチャする場合は、 **[コレクションの更新]** をクリックしてスナップポイントを元に戻すことができます。
+   Web サイト自体はライブであり、エンドユーザーは影響を受けません。 既定では、スナップポイントごとに 1 つのスナップショットのみがキャプチャされます。スナップショットがキャプチャされると、スナップポイントは無効になります。 そのスナップポイントで別のスナップショットをキャプチャする場合は、 **[コレクションの更新]** をクリックしてスナップポイントを元に戻すことができます。
 
 アプリにスナップポイントを追加して **[コレクションの更新]** ボタンをクリックして有効にすることもできます。
 
@@ -121,7 +131,7 @@ ms.locfileid: "67692110"
 
 ## <a name="set-a-conditional-snappoint"></a>条件付きスナップポイントを設定する
 
-アプリで特定の状態を再現することが難しい場合は、条件付きスナップポイントを使用すると効果があるかどうかを検討します。 条件付きスナップポイントを使用すると、変数値が調査目的の値になったときなど、アプリが目的の状態になるまでスナップショットを取得しないことができます。 式、フィルター、またはヒット数を使用して条件を設定できます。
+アプリで特定の状態を再作成するのが困難な場合は、条件付きスナップポイントの使用を検討してください。 条件付きスナップポイントは、検査する特定の値が変数に含まれている場合などにスナップショットを取得するタイミングを制御するのに役立ちます。 式、フィルター、またはヒット数を使用して条件を設定できます。
 
 #### <a name="to-create-a-conditional-snappoint"></a>条件付きスナップポイントを作成するには
 
@@ -145,15 +155,15 @@ ms.locfileid: "67692110"
 
 1. スナップポイント設定ウィンドウで **[アクション]** を選択します。
 
-    ![ログポイントを作成する](../debugger/media/snapshot-logpoint.png)
+   ![ログポイントを作成する](../debugger/media/snapshot-logpoint.png)
 
 1. **[メッセージ]** フィールドには、ログに記録する新しいログ メッセージを入力できます。 ログ メッセージ内の変数を中かっこで囲んで評価することもできます。
 
-    **[出力ウィンドウに送信します]** を選択した場合、ログポイントにヒットすると、メッセージが [診断ツール] ウィンドウに表示されます。
+   **[出力ウィンドウに送信します]** を選択した場合、ログポイントにヒットすると、メッセージが [診断ツール] ウィンドウに表示されます。
 
-    ![[診断ツール] ウィンドウのログポイント データ](../debugger/media/snapshot-logpoint-output.png)
+   ![[診断ツール] ウィンドウのログポイント データ](../debugger/media/snapshot-logpoint-output.png)
 
-    **[アプリケーション ログに送信します]** を選択した場合、ログポイントにヒットすると、[App Insights](/azure/application-insights/app-insights-asp-net-trace-logs) など、`System.Diagnostics.Trace` (.NET Core では `ILogger`) からメッセージを表示できる任意の場所にメッセージが表示されます。
+   **[アプリケーション ログに送信します]** を選択した場合、ログポイントにヒットすると、[App Insights](/azure/application-insights/app-insights-asp-net-trace-logs) など、`System.Diagnostics.Trace` (.NET Core では `ILogger`) からメッセージを表示できる任意の場所にメッセージが表示されます。
 
 ## <a name="next-steps"></a>次の手順
 

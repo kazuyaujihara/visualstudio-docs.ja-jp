@@ -1,5 +1,5 @@
 ---
-title: ライブの ASP.NET Azure 仮想マシンをデバッグして、スケール セット
+title: Azure 仮想マシンとスケールセットのライブ ASP.NET をデバッグする
 description: スナップショット デバッガーを使用してスナップポイントを設定し、スナップショットを表示する方法について説明します。
 ms.custom: ''
 ms.date: 02/06/2019
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 38cf8b5c2af174b026c507fc5c668f826707adf3
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 52ce973f1521f3ca9ba83513f6711287c49db7bb
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263356"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415755"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用して、Azure Virtual Machines と Azure Virtual Machine Scale Sets 上のライブ ASP.NET アプリをデバッグする
 
@@ -35,11 +35,11 @@ ms.locfileid: "66263356"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* Azure Virtual Machines (VM) と Azure 仮想マシン スケール セット用のスナップショット デバッガーでは Visual Studio 2019 Enterprise の使用可能な以上でのみ、 **Azure 開発ワークロード**します。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
+* Azure Virtual Machines (VM) と Azure Virtual Machine Scale Sets のスナップショットデバッガーは、 **azure 開発ワークロード**を使用した Visual Studio 2019 Enterprise 以上でのみ使用できます。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
 
-    インストールされていない場合は、インストール[Visual Studioenterprise 2019](https://visualstudio.microsoft.com/vs/)します。
+    まだインストールされていない場合は、 [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)をインストールします。
 
-* スナップショット コレクションは、次の Azure の仮想 Machines\Virtual Machine Scale Sets の web アプリの使用。
+* スナップショットコレクションは、次の Azure 仮想マシンの仮想マシンスケールセット web アプリで使用できます。
   * .NET Framework 4.6.1 以降で実行されている ASP.NET アプリケーション。
   * Windows の .NET Core 2.0 以降で実行されている ASP.NET Core アプリケーション。
 
@@ -48,60 +48,62 @@ ms.locfileid: "66263356"
 1. デバッグのスナップショットを取得するプロジェクトを開きます。
 
     > [!IMPORTANT]
-    > スナップショットのデバッグを開く必要があります、*ソース コードの同じバージョン*Azure 仮想 Machine\Virtual マシン スケール セットのサービスに公開されています。
+    > スナップショットデバッグを行うには、Azure Virtual Machine\Virtual Machine Scale Set サービスに発行されている*のと同じバージョンのソースコード*を開く必要があります。
 
-1. **[デバッグ] > [スナップショット デバッガーのアタッチ]** の順に選択します。Azure 仮想 Machine\Virtual マシン スケール セットに、web アプリを展開し、Azure ストレージ アカウントを選択してクリックして**アタッチ**します。
+1. **[デバッグ] > [スナップショット デバッガーのアタッチ]** の順に選択します。Web アプリがデプロイされている Azure 仮想 Machine\Virtual マシンスケールセットと Azure ストレージアカウントを選択し、 **[アタッチ]** をクリックします。 スナップショットデバッガー [Azure Kubernetes Service](debug-live-azure-kubernetes.md)と[Azure App Service](debug-live-azure-applications.md)もサポートしています。
 
-      ![[デバッグ] メニューからスナップショット デバッガーを起動する](../debugger/media/snapshot-debug-menu-attach.png)
+    ![[デバッグ] メニューからスナップショット デバッガーを起動する](../debugger/media/snapshot-debug-menu-attach.png)
 
-      ![Azure リソースを選択する](../debugger/media/snapshot-select-azure-resource-vm.png) 
+    ![Azure リソースを選択する](../debugger/media/snapshot-select-azure-resource-vm.png)
 
     > [!IMPORTANT]
     > 初めて VM に **[スナップショット デバッガーのアタッチ]** を選択すると、IIS が自動的に再起動されます。
-    > 選択した最初の時刻**スナップショット デバッガーのアタッチ**仮想マシン スケール セット、仮想マシン スケール セットの各インスタンスの手動アップグレードが必要です。
-
-    **[モジュール]** のメタデータは最初は有効ではありません。Web アプリにアクセスすると、 **[コレクションの開始]** ボタンが有効になります。 これで、Visual Studio はスナップショット デバッグ モードになりました。
-
-   ![スナップショット デバッグ モード](../debugger/media/snapshot-message.png)
+    > Virtual Machine Scale Sets の [スナップショットデバッガーの**追加**] を初めて選択する場合は、Virtual Machine Scale Sets の各インスタンスを手動でアップグレードする必要があります。
 
     > [!NOTE]
-    > Application Insights サイト拡張機能では、スナップショットのデバッグもサポートされています。 "サイト拡張機能が最新ではない" というエラー メッセージが表示される場合は、[スナップショットのデバッグに関するトラブルシューティングのヒントと既知の問題](../debugger/debug-live-azure-apps-troubleshooting.md)のページでアップグレードの詳細を参照してください。
-    > VMSS、ユーザーは、最初のスナップショット デバッガーをアタッチした後、仮想マシン スケール セット内のインスタンスを手動でアップグレードする必要があります。
+    > (Visual Studio 2019 バージョン16.2 以降)スナップショットデバッガーでは、Azure クラウドのサポートが有効になりました。 選択する Azure リソースと Azure Storage アカウントの両方が、同じクラウドからのものであることを確認します。 企業の[azure コンプライアンス](https://azure.microsoft.com/overview/trusted-cloud/)構成についてご質問がある場合は、azure 管理者にお問い合わせください。
 
-   **モジュール**ウィンドウは、すべてのモジュールが読み込まれるときに、Azure 仮想 Machine\Virtual マシン スケール セットを示します (選択**デバッグ > Windows > モジュール**をこのウィンドウを開きます)。
+    **モジュール**のメタデータは最初にアクティブ化されません。 web アプリに移動すると、 **[コレクションの開始]** ボタンがアクティブになります。 これで、Visual Studio はスナップショット デバッグ モードになりました。
 
-   ![[モジュール] ウィンドウを確認する](../debugger/media/snapshot-modules.png)
+    ![スナップショット デバッグ モード](../debugger/media/snapshot-message.png)
+
+    > [!NOTE]
+    > VMSS の場合、ユーザーはスナップショットデバッガーを初めてアタッチした後に、Virtual Machine Scale Sets のインスタンスを手動でアップグレードする必要があります。
+
+    **[モジュール]** ウィンドウには、Azure Virtual Machine\Virtual Machine Scale sets のすべてのモジュールが読み込まれた時間が表示されます (このウィンドウを開くには、 **[Windows > モジュールのデバッグ >]** を選択します)。
+
+    ![[モジュール] ウィンドウを確認する](../debugger/media/snapshot-modules.png)
 
 ## <a name="set-a-snappoint"></a>スナップポイントを設定する
 
-1. コード エディターで、目的のコード行の横にある左側の余白をクリックしてスナップポイントを設定します。 実行されることがわかっているコードを選択します。
+1. コードエディターで、目的のコード行の横にある左余白をクリックして、スナップポイントを設定します。 実行することがわかっているコードであることを確認します。
 
-   ![スナップポイントを設定する](../debugger/media/snapshot-set-snappoint.png)
+    ![スナップポイントを設定する](../debugger/media/snapshot-set-snappoint.png)
 
 1. **[コレクションの開始]** をクリックしてスナップポイントを有効にします。
 
-   ![スナップポイントを有効にする](../debugger/media/snapshot-start-collection.png)
+    ![スナップポイントを有効にする](../debugger/media/snapshot-start-collection.png)
 
     > [!TIP]
     > スナップショットを表示するときはステップ実行できませんが、コード内に複数のスナップポイントを配置して、コードのさまざまな行の実行を追跡することができます。 コード内に複数のスナップポイントがある場合、スナップショット デバッガーでは、対応するスナップショットが同じエンドユーザー セッションに由来していることが確認されます。 スナップショット デバッガーでは、アプリをヒットするユーザーが多数の場合でもこの処理が実行されます。
 
 ## <a name="take-a-snapshot"></a>スナップショットを取得する
 
-スナップポイントが有効になると、スナップポイントが配置されているコード行が実行されるたびにスナップショットがキャプチャされます。 この実行は、サーバー上の実際の要求によって引き起こすことができます。 スナップポイントのヒットを強制的に実行するには、Web サイトのブラウザー ビューを表示し、スナップポイントのヒットに必要なアクションを実行します。
+スナップポイントを設定したら、web サイトのブラウザービューに移動し、マークされたコード行を実行して、またはユーザーがサイトの使用状況から生成するのを待機することで、スナップショットを手動で生成できます。
 
 ## <a name="inspect-snapshot-data"></a>スナップショット データを調べる
 
 1. スナップポイントにヒットすると、[診断ツール] ウィンドウにスナップショットが表示されます。 このウィンドウを開くには、 **[デバッグ] > [Windows] > [診断ツールの表示]** の順に選択します。
 
-   ![スナップポイントを開く](../debugger/media/snapshot-diagsession-window.png)
+    ![スナップポイントを開く](../debugger/media/snapshot-diagsession-window.png)
 
 1. スナップポイントをダブルクリックして、コード エディターでスナップショットを開きます。
 
-   ![スナップショット データを調べる](../debugger/media/snapshot-inspect-data.png)
+    ![スナップショット データを調べる](../debugger/media/snapshot-inspect-data.png)
 
-   このビューから、変数にポイントしてデータヒントを表示し、 **[ローカル]** 、 **[ウォッチ]** 、および **[コール スタック]** ウィンドウを使用できます。また、式を評価することもできます。
+    このビューから、変数にポイントしてデータヒントを表示し、 **[ローカル]** 、 **[ウォッチ]** 、および **[コール スタック]** ウィンドウを使用できます。また、式を評価することもできます。
 
-    Web サイト自体はまだ稼働中であり、エンド ユーザーは影響を受けません。 既定では、スナップポイントごとに 1 つのスナップショットのみがキャプチャされます。スナップショットがキャプチャされると、スナップポイントは無効になります。 そのスナップポイントで別のスナップショットをキャプチャする場合は、 **[コレクションの更新]** をクリックしてスナップポイントを元に戻すことができます。
+    Web サイト自体はライブであり、エンドユーザーは影響を受けません。 既定では、スナップポイントごとに 1 つのスナップショットのみがキャプチャされます。スナップショットがキャプチャされると、スナップポイントは無効になります。 そのスナップポイントで別のスナップショットをキャプチャする場合は、 **[コレクションの更新]** をクリックしてスナップポイントを元に戻すことができます。
 
 アプリにスナップポイントを追加して **[コレクションの更新]** ボタンをクリックして有効にすることもできます。
 
@@ -109,7 +111,7 @@ ms.locfileid: "66263356"
 
 ## <a name="set-a-conditional-snappoint"></a>条件付きスナップポイントを設定する
 
-アプリで特定の状態を再現することが難しい場合は、条件付きスナップポイントを使用すると効果があるかどうかを検討します。 条件付きスナップポイントを使用すると、変数値が調査目的の値になったときなど、アプリが目的の状態になるまでスナップショットを取得しないことができます。 式、フィルター、またはヒット数を使用して条件を設定できます。
+アプリで特定の状態を再作成するのが困難な場合は、条件付きスナップポイントの使用を検討してください。 条件付きスナップポイントは、検査する特定の値が変数に含まれている場合などにスナップショットを取得するタイミングを制御するのに役立ちます。 式、フィルター、またはヒット数を使用して条件を設定できます。
 
 #### <a name="to-create-a-conditional-snappoint"></a>条件付きスナップポイントを作成するには
 
