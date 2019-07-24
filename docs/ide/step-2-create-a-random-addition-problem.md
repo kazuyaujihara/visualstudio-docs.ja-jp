@@ -2,18 +2,21 @@
 title: '手順 2: ランダムな加算問題の作成'
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd8af04bc320201ad5f17613c850e0140eb2596b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d5b83edaec6b81c3a2c5699184c62dbd70d71913
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430784"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416880"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>手順 2: ランダムな加算問題の作成
 このチュートリアルの第 2 部では、乱数に基づく計算問題を追加して、クイズに挑みます。 また、`StartTheQuiz()` という名前の、問題に記入して、カウントダウン タイマーを開始するメソッドを作成します。 このチュートリアルの後半では、減算、乗算、除算問題を追加します。
@@ -25,7 +28,7 @@ ms.locfileid: "63430784"
 
 1. フォーム デザイナーで、フォーム (**Form1**) を選択します。
 
-2. メニュー バーで **[表示]** > **[コード]** の順に選択します。
+2. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
 
      使用しているプログラミング言語によって *Form1.cs* または *Form1.vb* が表示されるため、フォームの分離コードを表示できます。
 
@@ -71,7 +74,7 @@ ms.locfileid: "63430784"
 
      これらのステートメントでは、**plusLeftLabel** および **plusRightLabel** の **Text** プロパティを設定し、2 つの乱数が表示されるようになっています。 数値をテキストに変換するには、整数の `ToString()` メソッドを使用する必要があります。 (プログラミングでは、文字列はテキストを意味します。 ラベル コントロールには、数ではなく、テキストのみが表示されます。
 
-6. デザイン ウィンドウで、**[Start]** をダブルクリックするか、または [Start] をクリックして、**Enter** キーを押します。
+6. デザイン ウィンドウで、 **[Start]** をダブルクリックするか、または [Start] をクリックして、**Enter** キーを押します。
 
      クイズの受け手がこのボタンをクリックすると、クイズが開始され、その動作を実装する Click イベント ハンドラーが追加されました。
 
@@ -82,7 +85,7 @@ ms.locfileid: "63430784"
 
      最初のステートメントは新しい `StartTheQuiz()` メソッドを呼び出します。 2 番目のステートメントは **startButton** コントロールの **Enabled** プロパティを **False** に設定するため、クイズの受け手はクイズ中にこのボタンをクリックできません。
 
-8. コードを保存し、実行して、**[Start]** ボタンをクリックします。
+8. コードを保存し、実行して、 **[Start]** ボタンをクリックします。
 
      次の図に示すように、ランダムな加算問題が表示されます。
 

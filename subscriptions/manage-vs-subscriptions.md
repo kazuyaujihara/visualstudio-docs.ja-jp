@@ -3,63 +3,19 @@ title: Visual Studio サブスクリプションを管理する
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 06/24/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを最大限に活用する方法を説明します
-ms.openlocfilehash: 5d9c5e91f6cd76857bdd5aa4c5398cdde0db41b8
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785106"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68378057"
 ---
 # <a name="managing-subscriptions"></a>サブスクリプションを管理する
 
 Visual Studio の[サブスクライバー ポータル](https://my.visualstudio.com)では、あらゆるサブスクリプションとプログラム メンバーシップを 1 か所で管理できます。 プロファイルを変更したり、サブスクリプションに付属する特典をすべて利用したり、サブスクリプションを簡単に切り替えたりできます。
-
-## <a name="signing-in-to-the-portal"></a>ポータルにサインインする
-
-Visual Studio サブスクリプションへようこそ。  サブスクリプションにより、コーディングに必要なすべてのソフトウェアや特典が提供されます。たとえばソフトウェア、月間の Azure 利用権、コラボレーション ツール、トレーニング特典、サポートなど、すべて最新で最適なものをマイクロソフトから入手できます。 ポータルを使うには、サインインする必要があります。
-
-### <a name="first-time-access"></a>初めてのアクセス
-
-初めてサブスクリプションを使うときの手順は、サブスクリプションを入手した方法によって異なります。
-
-#### <a name="microsoft-store"></a>Microsoft ストア
-
-Microsoft ストアで Visual Studio サブスクリプションを購入した場合は、支払いの**確認ページ**または**確認メール**からライセンス認証手順を始めることができます。
-
-1. "確認ページ" または "確認メール" で、 **[Click here to sign in]\(サインインするにはここをクリックしてください\)** をクリックします。 リダイレクトする https://my.visualstudio.com/subscriptions/activate します。
-2. サブスクライバー ポータルへのサインインに使うメール アドレスを入力して、 **[続行]** をクリックします。
-3. メール アドレスによっては、Microsoft アカウント サインイン ページまたは職場/学校のサインイン ページにリダイレクトされる場合があります。
-4. パスワードを入力するか、サインインに必要な情報を入力します。
-5. 確認ページまたはウェルカム メールで提供されたプロダクト キーを入力して、 **[ライセンス認証]** をクリックします。
-
-#### <a name="workschool-accounts"></a>職場/学校アカウント
-
-サブスクリプションが職場/学校によって提供されている場合は、ウェルカム メールを受け取ります。
-
-1. [サブスクライバー ポータル](https://my.visualstudio.com/)にアクセスします
-2. 新しい Visual Studio サブスクリプションを割り当てたメール アドレスを入力します。 このアドレスは、サブスクライバー宛てのウェルカム メールでも示されています。 ウェルカム メールが送られてこない場合は、迷惑メール フォルダーをご確認ください。
-3. **[続行]** をクリックします。
-4. 会社のサインイン ページにリダイレクトされます。
-5. パスワードを入力します。
-6. **[サインイン]** をクリックします。
-
-#### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace
-
-月単位または年単位のクラウド サブスクリプションを Visual Studio Marketplace から購入した場合は、[サブスクライバー ポータル](https://my.visualstudio.com/)にアクセスし、サブスクリプション購入時に提供された Microsoft アカウント (MSA) を使ってサインインします。
-
-#### <a name="using-a-workschool-account-with-a-microsoft-account-msa"></a>Microsoft アカウント (MSA) で職場/学校アカウントを使う
-
-組織が Azure Active Directory を使用していても、ユーザーが Azure Active Directory アカウントを持っていない場合は、サインイン プロセスの間に提供される**個人**オプションの使用が必要な場合があります。
-
-1. [サブスクライバー ポータル](https://my.visualstudio.com)にアクセスします
-2. 新しい Visual Studio サブスクリプションを割り当てたメール アドレスを入力します。 このアドレスは、サブスクライバー宛ての**ウェルカム レター**でも示されています。 (ウェルカム メールが送られてこない場合は、迷惑メール フォルダーを確認してください)
-3. **[続行]** をクリックします。
-4. **決定ページ**にリダイレクトされます。  Azure Active Directory (AAD) テナントに関連付けられた**職場または学校**アカウントにサブスクリプションが割り当てられている場合は、 **[Work or school account]\(職場または学校アカウント\)** を選びます。 サブスクリプションが**会社**のメール アドレスに関連付けられている場合でも、**個人**の Microsoft アカウント (MSA) にも変換されている場合は、 **[Personal]\(個人\)** を選択します。
-5. パスワードを入力します
-6. **[サインイン]** をクリックします
 
 ## <a name="managing-multiple-subscriptions"></a>複数のサブスクリプションを管理する
 
@@ -87,7 +43,6 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 ## <a name="renewing-my-subscriptions"></a>サブスクリプションを更新する
 
 **標準サブスクリプション**
-
 - Microsoft ストア: [Microsoft ストア](http://www.microsoft.com/store)からサブスクリプションを購入した場合は、更新も Microsoft ストアでできます。
 - ボリューム ライセンス: 会社がボリューム ライセンスでサブスクリプションを購入した場合は、管理者が再販業者にサブスクリプションの更新を依頼する必要があります。
 
@@ -97,10 +52,8 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
-- [Microsoft Partner Network](https://partner.microsoft.com/en-us)
-- [マイクロソフト認定トレーナー](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
-
-**Visual Studio Dev Essentials:** Dev Essentials は無料プログラムであり、メンバーシップの有効期限はありません。
+- [Microsoft Partner Network](https://partner.microsoft.com)
+- [マイクロソフト認定トレーナー](https://www.microsoft.com/learning/mct-certification.aspx)
 
 ## <a name="transferring-subscriptions"></a>サブスクリプションを譲渡する
 
@@ -121,8 +74,6 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 4. 変更が終わったら、 **[保存]** をクリックします。
 5. ブラウザーの **[戻る]** ボタンをクリックして特典ページに戻ります。
 
-   > [!div class="mx-imgBorder"]
-   > ![プロファイルの情報を編集する](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
 ### <a name="setting-communications-preferences"></a>通信のユーザー設定
 毎月の Visual Studio サブスクリプション ニュースレターなど、サブスクリプションとベネフィットに関する更新を定期的に受け取りたい場合は、Visual Studio プロファイルで Visual Studio サブスクリプションのボックスをオンにして、[ユーザー設定を更新](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit)します。 いつでもこれらのユーザー設定を変更したり、サブスクライブを解除したりできます。 
@@ -131,7 +82,6 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
    > ![ユーザー設定](_img/manage-vs-subscriptions/change-prefs.png)
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>既存の Azure DevOps Services または Azure サブスクリプションにサブスクリプションをリンクする
-
 個人の Microsoft アカウント (MSA) を使ってサブスクリプションにサインインしていて、Azure によって管理される職場または学校アカウントを使う Azure DevOps Services または Microsoft Azure を含むサブスクリプションがある場合は、2 つのサブスクリプションをリンクできます。 これは "代替アカウント" と呼ばれ、サブスクリプションへのサインインに MSA を使い続けることができるだけでなく、職場または学校アカウントに関連付けられている既存の Azure、Azure DevOps Services、IDE リソースにアクセスすることもできます。
 
 両方のアカウントで同じメール アドレスを使っている場合でも、両方のアカウントで特典を使うためには、代替として職場/学校アカウントを追加する必要があります。
@@ -143,15 +93,11 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 3. **[Related Links]** の下にある **[代替アカウントを追加する]** を選びます。
 4. 職場/学校アカウントのメール アドレスを入力して、 **[追加]** をクリックします。
 
-   > [!div class="mx-imgBorder"]
-   > ![代替アカウント](_img/manage-vs-subscriptions/alternate-account-resized.png)
-
 代替アカウントを追加した後は、 **[サブスクリプション]** タブをクリックして **[Related Links]** セクションで適切なオプションを選ぶことにより、いつでも更新または削除できます。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Q:サブスクリプションを更新しない場合、Microsoft ではどのくらいデータは保持されますか?
-
 A: これは購入されたチャネルによって異なります。Microsoft の顧客データの維持期間はさまざまです。
 
 | チャネル                                                | 期間 (日数) |

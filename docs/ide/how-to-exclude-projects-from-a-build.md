@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ca736d65a889c0bbada24412ebedecbe6970ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54e65c411afe9815696112dfbcc99bcb9433c4db
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428977"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416867"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>方法: ビルドからプロジェクトを除外する
 
@@ -30,7 +30,7 @@ ms.locfileid: "62428977"
 
 ## <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>アクティブなソリューション構成からプロジェクトを一時的に削除するには
 
-1. メニュー バーで **[ビルド]** > **[構成マネージャー]** の順に選択します。
+1. メニュー バーで **[ビルド]**  >  **[構成マネージャー]** の順に選択します。
 
 2. **[プロジェクトのコンテキスト]** テーブルで、ビルドから除外するプロジェクトを見つけます。
 
@@ -40,19 +40,19 @@ ms.locfileid: "62428977"
 
 ## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>プロジェクトを除外するソリューション構成を作成するには
 
-1. メニュー バーで **[ビルド]** > **[構成マネージャー]** の順に選択します。
+1. メニュー バーで **[ビルド]**  >  **[構成マネージャー]** の順に選択します。
 
 2. **[アクティブ ソリューション構成]** 一覧の **[\<新規作成>]** を選択します。
 
 3. **[名前]** ボックスに、ソリューション構成の名前を入力します。
 
-4. **[設定のコピー元]** ボックスの一覧で、新しい構成のベースにするソリューション構成 (**[デバッグ]** など) を選択し、**[OK]** を選択します。
+4. **[設定のコピー元]** ボックスの一覧で、新しい構成のベースにするソリューション構成 ( **[デバッグ]** など) を選択し、 **[OK]** を選択します。
 
-5. **[構成マネージャー]** ダイアログ ボックスで、除外するプロジェクトの **[ビルド]** 列のチェック ボックスをオフにし、**[閉じる]** を選択します。
+5. **[構成マネージャー]** ダイアログ ボックスで、除外するプロジェクトの **[ビルド]** 列のチェック ボックスをオフにし、 **[閉じる]** を選択します。
 
-6. **[標準]** ツール バーで、**[ソリューション構成]** ボックスのアクティブな構成が、新しいソリューション構成であることを確認します。
+6. **[標準]** ツール バーで、 **[ソリューション構成]** ボックスのアクティブな構成が、新しいソリューション構成であることを確認します。
 
-7. メニュー バーから、**[ビルド]** > **[ソリューションのリビルド]** の順に選びます。
+7. メニュー バーから、 **[ビルド]**  >  **[ソリューションのリビルド]** の順に選びます。
 
 ## <a name="see-also"></a>関連項目
 
