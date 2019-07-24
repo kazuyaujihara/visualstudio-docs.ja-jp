@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションの新機能
 description: Visual Studio サブスクリプションの管理に使用できる、新機能と更新された機能について説明します。
 ms.custom: ''
-ms.date: 06/27/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: b6922e5a2b14186afd1f3fa9294bbb24c2e7d649
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891071"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377947"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの新機能
 
@@ -43,6 +43,4 @@ GitHub Enterprise は、Enterprise Agreement を通じて入手した Visual Stu
 
 今日のところは、これで終わりです。
 
-## <a name="see-also"></a>関連項目
 
-* [サブスクリプション会員の特典](subscriber-benefits.md)

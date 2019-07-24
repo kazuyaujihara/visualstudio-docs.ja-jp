@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1039f46e0d2dcf3c18138e66e77e62dadb36a3f2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 37597d1e1f4fde2b2e81e7aa7868c0aaff935337
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443612"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416856"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild インライン タスク
 MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インターフェイスを実装するクラスをコンパイルして作成します。 詳細については、[タスク](../msbuild/msbuild-tasks.md)に関する記事を参照してください。
@@ -24,7 +24,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
 
  MSBuild 15.8 では、[RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) が追加され、.NET Standard クロスプラット フォーム インライン タスクを作成できるようになりました。  .NET Core 上でインライン タスクを使用する必要がある場合は、RoslynCodeTaskFactory を使用しなければなりません。
 ## <a name="the-structure-of-an-inline-task"></a>インライン タスクの構造
- インライン タスクは [UsingTask](../msbuild/usingtask-element-msbuild.md) 要素に格納されます。 インライン タスクとそれを格納する `UsingTask` 要素は通常、*.targets* ファイルに含められ、必要に応じて他のプロジェクト ファイルにインポートされます。 基本的なインライン タスクの例を次に示します。 このタスクでは何も実行されないことに注意してください。
+ インライン タスクは [UsingTask](../msbuild/usingtask-element-msbuild.md) 要素に格納されます。 インライン タスクとそれを格納する `UsingTask` 要素は通常、 *.targets* ファイルに含められ、必要に応じて他のプロジェクト ファイルにインポートされます。 基本的なインライン タスクの例を次に示します。 このタスクでは何も実行されないことに注意してください。
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -129,7 +129,7 @@ Log.LogError("Hello, world!");
 
 ```xml
 <ParameterGroup>
-    <Text />
+  <Text />
 </ParameterGroup>
 ```
 
@@ -137,7 +137,7 @@ Log.LogError("Hello, world!");
 
 - `Required` は省略可能な属性で、既定値は `false` です。 `true` の場合、そのパラメーターは必須で、タスクを呼び出す前に値を指定する必要があります。
 
-- `ParameterType` は省略可能な属性で、既定値は `System.String` です。 System.Convert.ChangeType を使用して文字列との間で変換できる項目または値の完全修飾型に設定できます  (つまり、外部タスクとの受け渡しが可能なすべての型)。
+- `ParameterType` は省略可能な属性で、既定値は `System.String` です。 System.Convert.ChangeType を使用して文字列との間で変換できる項目または値の完全修飾型に設定できます (つまり、外部タスクとの受け渡しが可能なすべての型)。
 
 - `Output` は省略可能な属性で、既定値は `false` です。 `true` の場合、そのパラメーターの値を、Execute メソッドから戻る前に指定する必要があります。
 
@@ -145,9 +145,9 @@ Log.LogError("Hello, world!");
 
 ```xml
 <ParameterGroup>
-    <Expression Required="true" />
-      <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />
-    <Tally ParameterType="System.Int32" Output="true" />
+  <Expression Required="true" />
+  <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />
+  <Tally ParameterType="System.Int32" Output="true" />
 </ParameterGroup>
 ```
 
