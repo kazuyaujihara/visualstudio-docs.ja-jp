@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 9bbd0aa8ea3d98077154225fb3a35aec5545ccfa
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415734"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493318"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用してライブ ASP.NET Azure アプリをデバッグする
 
@@ -109,7 +109,6 @@ ms.locfileid: "68415734"
 ## <a name="take-a-snapshot"></a>スナップショットを取得する
 
 スナップポイントを設定したら、web サイトのブラウザービューに移動し、マークされたコード行を実行して、またはユーザーがサイトの使用状況から生成するのを待機することで、スナップショットを手動で生成できます。
-
 
 ## <a name="inspect-snapshot-data"></a>スナップショット データを調べる
 

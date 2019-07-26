@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fbe1a4decebd68b80e6cbe8728c5de84a44c641
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dff4d3566dcfb4b40f1008eed09371e42459c3a5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377757"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493115"
 ---
 # <a name="create-custom-project-and-item-templates"></a>カスタムプロジェクトと項目テンプレートの作成
 
@@ -35,7 +35,6 @@ NuGet パッケージをインストールするようにテンプレートを�
      この  テンプレートは、クラスファイル、アイコン、.vstemplate ファイル、projecttemplate .vbproj または projecttemplate .csproj という名前の編集可能なプロジェクトファイル、およびその他のプロジェクトの種類によって通常生成されるファイルを生成します。 *.resources .resx*ファイル、 *AssemblyInfo*ファイル、および*設定*ファイル。 各コードファイルには、必要に応じて共通のパラメーター置換が含まれています。
 
 ![プロジェクトテンプレートプロジェクトの選択](media/project-template-selection.png)
-
 
 2. プロジェクトの必要に応じて、プロジェクトの項目を追加および削除します。 編集可能なプロジェクトファイル、 *AssemblyInfo*ファイル、または *.vstemplate*ファイルは削除しないでください。
 
