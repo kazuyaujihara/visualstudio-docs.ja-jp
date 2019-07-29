@@ -1,6 +1,6 @@
 ---
 title: EditorConfig での .NET の言語規則
-ms.date: 06/17/2019
+ms.date: 07/17/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,23 +13,22 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 0ddb6173095b8d4fd552e108f458a271321511c7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5305ee8db1161415f038ec6cc149c9e88edb9589
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823303"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377938"
 ---
 # <a name="language-conventions"></a>言語規則
 
-Visual Studio 用の EditorConfig の言語規則は、2 つのカテゴリに分類されます。
-
-- [.NET コード スタイルの設定](#net-code-style-settings)
-
-- [C# コード スタイルの設定](#c-code-style-settings)
+Visual Studio 用の EditorConfig の言語規則は、2 つのカテゴリに分類されます。Visual Basic と C# に適用されるものと、C# 固有のものです。 言語規則は、修飾子やかっこなど、プログラミング言語のさまざまな側面の使用方法に影響します。
 
 > [!TIP]
-> 優先するプログラミング言語のコード例を表示するには、ブラウザー ウィンドウの右上隅にある言語ピッカーを使ってそれを選択します。
+> - 「**この記事の内容**」のリンクを使って、ページのさまざまなセクションに移動してください。
+> - 優先するプログラミング言語のコード例を表示するには、ブラウザー ウィンドウの右上隅にある言語ピッカーを使ってそれを選択します。
+>
+>   ![コード言語ピッカー コントロール](media/code-language-picker.png)
 
 ## <a name="rule-format"></a>規則形式
 
@@ -83,6 +82,7 @@ Visual Studio 用の EditorConfig の言語規則は、2 つのカテゴリに�
   - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
   - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
   - dotnet\_style\_prefer\_conditional\_expression\_over\_return
+  - dotnet\_style\_prefer\_compound\_assignment
 - ["null" チェック設定](#null-checking-preferences)
   - dotnet\_style\_coalesce_expression
   - dotnet\_style\_null_propagation
@@ -555,6 +555,7 @@ dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 dotnet_style_prefer_auto_properties = true:silent
 dotnet_style_prefer_conditional_expression_over_assignment = true:suggestion
 dotnet_style_prefer_conditional_expression_over_return = true:suggestion
+dotnet_style_prefer_compound_assignment = true:suggestion
 ```
 
 #### <a name="dotnetstyleobjectinitializer"></a>dotnet\_style\_object_initializer
@@ -871,6 +872,34 @@ Else
 End If
 ```
 
+#### <a name="dotnetstyleprefercompoundassignment"></a>dotnet\_style\_prefer\_compound\_assignment
+
+|||
+|-|-|
+| **規則の名前** | dotnet_style_prefer_compound_assignment |
+| **ルール ID** | IDE0054 |
+| **該当言語** | C# および Visual Basic |
+| **値** | `true` - [複合代入](/dotnet/csharp/language-reference/operators/assignment-operator#compound-assignment)式を優先します<br /><br />`false` - 複合代入式を優先しません |
+| **Visual Studio の既定値** | `true:suggestion` |
+
+コード例:
+
+```csharp
+// dotnet_style_prefer_compound_assignment = true
+x += 1;
+
+// dotnet_style_prefer_compound_assignment = false
+x = x + 1;
+```
+
+```vb
+' dotnet_style_prefer_compound_assignment = true
+x += 1
+
+' dotnet_style_prefer_compound_assignment = false
+x = x + 1
+```
+
 ### <a name="null-checking-preferences"></a>"Null" 検査設定
 
 このセクションのスタイル ルールは、null 検査設定が関係します。
@@ -944,6 +973,57 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
+## <a name="net-code-quality-settings"></a>.NET コードの品質の設定
+
+このセクションの品質ルールは、C# と Visual Basic 両方のコードに適用されます。 これらは、Visual Studio の対話型開発環境 (IDE) に組み込まれているコード アナライザーの構成に使用されます。 EditorConfig ファイルを使用した FxCop アナライザーの構成について詳しくは、「[Configure FxCop analyzers (FxCop アナライザーを構成する)](../code-quality/configure-fxcop-analyzers.md)」をご覧ください。
+
+- [パラメーターのユーザー設定](#parameter-preferences)
+  - dotnet\_code\_quality\_unused\_parameters
+
+### <a name="parameter-preferences"></a>パラメーターのユーザー設定
+
+このセクションの品質ルールは、メソッドのパラメーターに関係します。
+
+これらのルールは、次のように *.editorconfig* ファイルに表示されます。
+
+```ini
+# CSharp and Visual Basic code quality settings:
+[*.{cs,vb}]
+dotnet_code_quality_unused_parameters = all:suggestion
+```
+
+#### <a name="dotnetcodequalityunusedparameters"></a>dotnet\_code\_quality\_unused\_parameters
+
+|||
+|-|-|
+| **規則の名前** | dotnet_code_quality_unused_parameters |
+| **ルール ID** | IDE0060 |
+| **該当言語** | C# および Visual Basic |
+| **値** | `all` - 使用されていないパラメーターが含まれる、すべてのアクセシビリティのメソッドにフラグを設定します<br /><br />`non_public` - 使用されていないパラメーターが含まれるメソッドのうち、パブリックではないものだけにフラグを設定します |
+| **Visual Studio の既定値** | `all:suggestion` |
+
+コード例:
+
+```csharp
+// dotnet_code_quality_unused_parameters = all:suggestion
+public int GetNum() { return 1; }
+
+// dotnet_code_quality_unused_parameters = non_public:suggestion
+public int GetNum(int arg1) { return 1; }
+```
+
+```vb
+' dotnet_code_quality_unused_parameters = all:suggestion
+Public Function GetNum()
+    Return 1
+End Function
+
+' dotnet_code_quality_unused_parameters = non_public:suggestion
+Public Function GetNum(arg1 As Integer)
+    Return 1
+End Function
+```
+
 ## <a name="c-code-style-settings"></a>C# コード スタイルの設定
 
 このセクションのスタイル ルールは、C# のみに適用されます。
@@ -959,20 +1039,32 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
   - csharp\_style\_expression\_bodied_properties
   - csharp\_style\_expression\_bodied_indexers
   - csharp\_style\_expression\_bodied_accessors
+  - csharp\_style\_expression\_bodied_lambdas
+  - csharp\_style\_expression\_bodied\_local_functions
 - [パターン マッチング](#pattern-matching)
   - csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
   - csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
 - [インライン変数宣言](#inlined-variable-declarations)
   - csharp\_style\_inlined\_variable_declaration
-- [式レベル基本設定](#expression-level-preferences)
+- [式レベル基本設定](#c-expression-level-preferences)
   - csharp\_prefer\_simple\_default_expression
-  - csharp\_style\_deconstructed\_variable_declaration
-  - csharp\_style\_pattern\_local\_over\_anonymous_function
-- ["null" チェック設定](#null-checking-preferences)
+- ["null" チェック設定](#c-null-checking-preferences)
   - csharp\_style\_throw_expression
   - csharp\_style\_conditional\_delegate_call
 - [コード ブロック基本設定](#code-block-preferences)
   - csharp\_prefer_braces
+- [未使用の値のユーザー設定](#unused-value-preferences)
+  - csharp\_style\_unused\_value\_expression\_statement_preference
+  - csharp\_style\_unused\_value\_assignment_preference
+- [インデックスと範囲のユーザー設定](#index-and-range-preferences)
+  - csharp\_style\_prefer\_index_operator
+  - csharp\_style\_prefer\_range_operator
+- [その他のユーザー設定](#miscellaneous-preferences)
+  - csharp\_style\_deconstructed\_variable_declaration
+  - csharp\_style\_pattern\_local\_over\_anonymous_function
+  - csharp\_using\_directive\_placement
+  - csharp\_prefer\_static\_local_function
+  - csharp\_prefer\_simple\_using_statement
 
 ### <a name="implicit-and-explicit-types"></a>暗黙的な型と明示的な型
 
@@ -1063,6 +1155,8 @@ csharp_style_expression_bodied_operators = false:silent
 csharp_style_expression_bodied_properties = true:suggestion
 csharp_style_expression_bodied_indexers = true:suggestion
 csharp_style_expression_bodied_accessors = true:suggestion
+csharp_style_expression_bodied_lambdas = true:silent
+csharp_style_expression_bodied_local_functions = false:silent
 ```
 
 #### <a name="csharpstyleexpressionbodiedmethods"></a>csharp\_style\_expression\_bodied_methods
@@ -1072,7 +1166,7 @@ csharp_style_expression_bodied_accessors = true:suggestion
 | **規則の名前** | csharp_style_expression_bodied_methods |
 | **ルール ID** | IDE0022 |
 | **該当言語** | C# 6.0+  |
-| **値** | `true` - メソッドに式形式メンバーを使用します<br /><br />`when_on_single_line` - 単一行になる場合は、メソッドに式形式メンバーを使用します<br /><br />`false` - メソッドにブロック本体を使用します |
+| **値** | `true` - メソッドに式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、メソッドに式本体を使用します<br /><br />`false` - メソッドにブロック本体を使用します |
 | **Visual Studio の既定値** | `false:silent` |
 
 コード例:
@@ -1091,8 +1185,8 @@ public int GetAge() { return this.Age; }
 |-|-|
 | **規則の名前** | csharp_style_expression_bodied_constructors |
 | **ルール ID** | IDE0021 |
-| **該当言語** | C# 7.0+  |
-| **値** | `true` - コンストラクターに式形式メンバーを使用します<br /><br />`when_on_single_line` - 単一行になる場合は、コンストラクターに式形式メンバーを使用します<br /><br />`false` - コンストラクターにブロック本体を使用します |
+| **該当言語** | C# 7.0+ |
+| **値** | `true` - コンストラクターに式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、コンストラクターに式本体を使用します<br /><br />`false` - コンストラクターにブロック本体を使用します |
 | **Visual Studio の既定値** | `false:silent` |
 
 コード例:
@@ -1111,8 +1205,8 @@ public Customer(int age) { Age = age; }
 |-|-|
 | **規則の名前** | csharp_style_expression_bodied_operators |
 | **ルール ID** | IDE0023 と IDE0024 |
-| **該当言語** | C# 7.0+  |
-| **値** | `true` - 演算子に式形式メンバーを使用します<br /><br />`when_on_single_line` - 単一行になる場合は、演算子に式形式メンバーを使用します<br /><br />`false` - 演算子にブロック本体を使用します |
+| **該当言語** | C# 7.0+ |
+| **値** | `true` - 演算子に式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、演算子に式本体を使用します<br /><br />`false` - 演算子にブロック本体を使用します |
 | **Visual Studio の既定値** | `false:silent` |
 
 コード例:
@@ -1133,8 +1227,8 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 |-|-|
 | **規則の名前** | csharp_style_expression_bodied_properties |
 | **ルール ID** | IDE0025 |
-| **該当言語** | C# 7.0+  |
-| **値** | `true` - プロパティに式形式メンバーを使用します<br /><br />`when_on_single_line` - 単一行になる場合は、プロパティに式形式メンバーを使用します<br /><br />`false` - プロパティにブロック本体を使用します |
+| **該当言語** | C# 7.0+ |
+| **値** | `true` - プロパティに式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、プロパティに式本体を使用します<br /><br />`false` - プロパティにブロック本体を使用します |
 | **Visual Studio の既定値** | `true:silent` |
 
 コード例:
@@ -1153,8 +1247,8 @@ public int Age { get { return _age; }}
 |-|-|
 | **規則の名前** | csharp_style_expression_bodied_indexers |
 | **ルール ID** | IDE0026 |
-| **該当言語** | C# 7.0+  |
-| **値** | `true` - インデクサーに式形式メンバーを使用します<br /><br />`when_on_single_line` - 単一行になる場合は、インデクサーに式形式メンバーを使用します<br /><br />`false` - インデクサーにブロック本体を使用します |
+| **該当言語** | C# 7.0+ |
+| **値** | `true` - インデクサーに式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、インデクサーに式本体を使用します<br /><br />`false` - インデクサーにブロック本体を使用します |
 | **Visual Studio の既定値** | `true:silent` |
 
 コード例:
@@ -1173,8 +1267,8 @@ public T this[int i] { get { return _values[i]; } }
 |-|-|
 | **規則の名前** | csharp_style_expression_bodied_accessors |
 | **ルール ID** | IDE0027 |
-| **該当言語** | C# 7.0+  |
-| **値** | `true` - アクセサーに式形式メンバーを使用します<br /><br />`when_on_single_line` - 単一行になる場合は、アクセサーに式形式メンバーを使用します<br /><br />`false` - アクセサーにブロック本体を使用します |
+| **該当言語** | C# 7.0+ |
+| **値** | `true` - アクセサーに式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、アクセサーに式本体を使用します<br /><br />`false` - アクセサーにブロック本体を使用します |
 | **Visual Studio の既定値** | `true:silent` |
 
 コード例:
@@ -1185,6 +1279,58 @@ public int Age { get => _age; set => _age = value; }
 
 // csharp_style_expression_bodied_accessors = false
 public int Age { get { return _age; } set { _age = value; } }
+```
+
+#### <a name="csharpstyleexpressionbodiedlambdas"></a>csharp\_style\_expression\_bodied_lambdas
+
+|||
+|-|-|
+| **規則の名前** | csharp_style_expression_bodied_lambdas |
+| **ルール ID** | IDE0053 |
+| **値** | `true` - ラムダに式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、ラムダに式本体を使用します<br /><br />`false` - ラムダにブロック本体を使用します |
+| **Visual Studio の既定値** | `true:silent` |
+
+コード例:
+
+```csharp
+// csharp_style_expression_bodied_lambdas = true
+Func<int, int> square = x => x * x;
+
+// csharp_style_expression_bodied_lambdas = false
+Func<int, int> square = x => { return x * x; };
+```
+
+#### <a name="csharpstyleexpressionbodiedlocalfunctions"></a>csharp\_style\_expression\_bodied\_local_functions
+
+C# 7.0 以降、C# では[ローカル関数](/dotnet/csharp/programming-guide/classes-and-structs/local-functions)がサポートされています。 ローカル関数は、別のメンバーの入れ子になっているタイプのプライベート メソッドです。
+
+|||
+|-|-|
+| **規則の名前** | csharp_style_expression_bodied_local_functions |
+| **ルール ID** | IDE0061 |
+| **該当言語** | C# 7.0+ |
+| **値** | `true` - ローカル関数に式本体を使用します<br /><br />`when_on_single_line` - 単一行になる場合は、ローカル関数に式本体を使用します<br /><br />`false` - ローカル関数にブロック本体を使用します |
+| **Visual Studio の既定値** | `false:silent` |
+
+コード例:
+
+```csharp
+// csharp_style_expression_bodied_local_functions = true
+void M()
+{
+    Hello();
+    void Hello() => Console.WriteLine("Hello");
+}
+
+// csharp_style_expression_bodied_local_functions = false
+void M()
+{
+    Hello();
+    void Hello()
+    {
+        Console.WriteLine("Hello");
+    }
+}
 ```
 
 ### <a name="pattern-matching"></a>パターン マッチング
@@ -1206,7 +1352,7 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 |-|-|
 | **規則の名前** | csharp_style_pattern_matching_over_is_with_cast_check |
 | **ルール ID** | IDE0020 |
-| **該当言語** | C# 7.0+  |
+| **該当言語** | C# 7.0+ |
 | **値** | `true` - `is` 式と型キャストの代わりにパターン マッチングを使用します<br /><br />`false` - パターン マッチングの代わりに `is` 式と型キャストを使用します |
 | **Visual Studio の既定値** | `true:suggestion` |
 
@@ -1226,7 +1372,7 @@ if (o is int) {var i = (int)o; ... }
 |-|-|
 | **規則の名前** | csharp_style_pattern_matching_over_as_with_null_check |
 | **ルール ID** | IDE0019 |
-| **該当言語** | C# 7.0+  |
+| **該当言語** | C# 7.0+ |
 | **値** | `true` - `as` 式と null 検査の代わりにパターン マッチングを使用し、何かが特定の型であるか判断します<br /><br />`false` - パターン マッチングの代わりに `as` 式と null 検査を使用し、何かが特定の型であるか判断します |
 | **Visual Studio の既定値** | `true:suggestion` |
 
@@ -1251,7 +1397,7 @@ if (s != null) {...}
 |-|-|
 | **規則の名前** | csharp_style_inlined_variable_declaration |
 | **ルール ID** | IDE0018 |
-| **該当言語** | C# 7.0+  |
+| **該当言語** | C# 7.0+ |
 | **値** | `true` - 可能であれば、メソッド呼び出しの引数リスト内で `out` 変数をインラインで宣言します<br /><br />`false` - メソッド呼び出しの前に `out` 変数を宣言します |
 | **Visual Studio の既定値** | `true:suggestion` |
 
@@ -1274,9 +1420,9 @@ if (int.TryParse(value, out i) {...}
 csharp_style_inlined_variable_declaration = true:suggestion
 ```
 
-### <a name="expression-level-preferences"></a>式レベルの基本設定
+### <a name="c-expression-level-preferences"></a>C# の式レベルのユーザー設定
 
-このセクションのスタイル ルールは、[既定の式](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference)、分解された変数、匿名関数よりローカル関数を使用するなど、式レベル基本設定に関するものです。
+このセクションのスタイル ルールには、式レベルのユーザー設定が関係します。
 
 *.editorconfig* ファイルの例:
 
@@ -1284,8 +1430,6 @@ csharp_style_inlined_variable_declaration = true:suggestion
 # CSharp code style settings:
 [*.cs]
 csharp_prefer_simple_default_expression = true:suggestion
-csharp_style_deconstructed_variable_declaration = true:suggestion
-csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ```
 
 #### <a name="csharpprefersimpledefaultexpression"></a>csharp\_prefer\_simple\_default_expression
@@ -1310,62 +1454,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { ... }
 ```
 
-#### <a name="csharpstyledeconstructedvariabledeclaration"></a>csharp\_style\_deconstructed\_variable_declaration
-
-|||
-|-|-|
-| **規則の名前** | csharp_style_deconstructed_variable_declaration |
-| **ルール ID** | IDE0042 |
-| **該当言語** | C# 7.0+  |
-| **値** | `true` - 分解された変数宣言を優先します<br /><br />`false` - 変数宣言では分解を優先しません |
-| **Visual Studio の既定値** | `true:suggestion` |
-
-コード例:
-
-```csharp
-// csharp_style_deconstructed_variable_declaration = true
-var (name, age) = GetPersonTuple();
-Console.WriteLine($"{name} {age}");
-
-(int x, int y) = GetPointTuple();
-Console.WriteLine($"{x} {y}");
-
-// csharp_style_deconstructed_variable_declaration = false
-var person = GetPersonTuple();
-Console.WriteLine($"{person.name} {person.age}");
-
-(int x, int y) point = GetPointTuple();
-Console.WriteLine($"{point.x} {point.y}");
-```
-
-#### <a name="csharpstylepatternlocaloveranonymousfunction"></a>csharp\_style\_pattern\_local\_over\_anonymous_function
-
-|||
-|-|-|
-| **規則の名前** | csharp_style_pattern_local_over_anonymous_function |
-| **ルール ID** | IDE0039 |
-| **該当言語** | C# 7.0+  |
-| **値** | `true` - 匿名関数よりローカル関数を優先します<br /><br />`false` - ローカル関数より匿名関数を優先します |
-| **Visual Studio の既定値** | `true:suggestion` |
-
-コード例:
-
-```csharp
-// csharp_style_pattern_local_over_anonymous_function = true
-int fibonacci(int n)
-{
-    return n <= 1 ? 1 : fibonacci(n-1) + fibonacci(n-2);
-}
-
-// csharp_style_pattern_local_over_anonymous_function = false
-Func<int, int> fibonacci = null;
-fibonacci = (int n) =>
-{
-    return n <= 1 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
-};
-```
-
-### <a name="null-checking-preferences"></a>"Null" 検査設定
+### <a name="c-null-checking-preferences"></a>C# の null チェックのユーザー設定
 
 これらのスタイル ルールは、`throw` 式または `throw` ステートメントの使用や、null チェックを実行するか、[ラムダ式](/dotnet/csharp/lambda-expressions)の呼び出し時に条件付き合体演算子 (`?.`) を使用するかなどの、`null` チェックの構文に関するものです。
 
@@ -1384,7 +1473,7 @@ csharp_style_conditional_delegate_call = false:suggestion
 |-|-|
 | **規則の名前** | csharp_style_throw_expression |
 | **ルール ID** | IDE0016 |
-| **該当言語** | C# 7.0+  |
+| **該当言語** | C# 7.0+ |
 | **値** | `true` - `throw` ステートメントの代わりに `throw` 式を使用します<br /><br />`false` - `throw` 式の代わりに `throw` ステートメントを使用します |
 | **Visual Studio の既定値** | `true:suggestion` |
 
@@ -1449,6 +1538,285 @@ if (test) { this.Display(); }
 
 // csharp_prefer_braces = false
 if (test) this.Display();
+```
+
+### <a name="unused-value-preferences"></a>未使用の値のユーザー設定
+
+これらのスタイル ルールは、未使用の式と値の代入に関するものです。
+
+*.editorconfig* ファイルの例:
+
+```ini
+# CSharp code style settings:
+[*.cs]
+csharp_style_unused_value_expression_statement_preference = discard_variable:silent
+csharp_style_unused_value_assignment_preference = discard_variable:suggestion
+```
+
+#### <a name="csharpstyleunusedvalueexpressionstatementpreference"></a>csharp_style_unused_value_expression_statement_preference
+
+|||
+|-|-|
+| **規則の名前** | csharp_style_unused_value_expression_statement_preference |
+| **ルール ID** | IDE0058 |
+| **該当言語** | C# |
+| **値** | `discard_variable` - 未使用の式を[破棄](/dotnet/csharp/discards)に割り当てます <br /><br />`unused_local_variable` - 未使用の式をローカル変数に割り当てます |
+| **Visual Studio の既定値** | `discard_variable:silent` |
+
+コード例:
+
+```csharp
+// Original code:
+System.Convert.ToInt32("35");
+
+// After code fix for IDE0058:
+
+// csharp_style_unused_value_expression_statement_preference = discard_variable
+_ = System.Convert.ToInt32("35");
+
+// csharp_style_unused_value_expression_statement_preference = unused_local_variable
+var unused = Convert.ToInt32("35");
+```
+
+#### <a name="csharpstyleunusedvalueassignmentpreference"></a>csharp_style_unused_value_assignment_preference
+
+|||
+|-|-|
+| **規則の名前** | csharp_style_unused_value_assignment_preference |
+| **ルール ID** | IDE0059 |
+| **該当言語** | C# |
+| **値** | `discard_variable` -使用されていない値を割り当てるときに、[破棄](/dotnet/csharp/discards)を使用します<br /><br />`unused_local_variable` -使用されていない値を割り当てるときに、ローカル変数を使用します |
+| **Visual Studio の既定値** | `discard_variable:suggestion` |
+
+コード例:
+
+```csharp
+// csharp_style_unused_value_assignment_preference = discard_variable
+int GetCount(Dictionary<string, int> wordCount, string searchWord)
+{
+    _ = wordCount.TryGetValue(searchWord, out var count);
+    return count;
+}
+
+// csharp_style_unused_value_assignment_preference = unused_local_variable
+int GetCount(Dictionary<string, int> wordCount, string searchWord)
+{
+    var unused = wordCount.TryGetValue(searchWord, out var count);
+    return count;
+}
+```
+
+### <a name="index-and-range-preferences"></a>インデックスと範囲のユーザー設定
+
+これらのスタイル ルールは、インデックスおよび範囲演算子の使用に関するもので、C# 8.0 以降で使用できます。
+
+*.editorconfig* ファイルの例:
+
+```ini
+# CSharp code style settings:
+[*.cs]
+csharp_style_prefer_index_operator = true:suggestion
+csharp_style_prefer_range_operator = true:suggestion
+```
+
+#### <a name="csharpstylepreferindexoperator"></a>csharp\_style\_prefer\_index_operator
+
+|||
+|-|-|
+| **規則の名前** | csharp_style_prefer_index_operator |
+| **ルール ID** | IDE0056 |
+| **該当言語** | C# 8.0 以降 |
+| **値** | `true` -コレクションの末尾からのインデックスを計算するときに、`^` 演算子を使用します<br /><br />`false` - コレクションの末尾からのインデックスを計算するときに、`^` 演算子を使用しません |
+| **Visual Studio の既定値** | `true:suggestion` |
+
+コード例:
+
+```csharp
+// csharp_style_prefer_index_operator = true
+string[] names = { "Archimedes", "Pythagoras", "Euclid" };
+var index = names[^1];
+
+// csharp_style_prefer_index_operator = false
+string[] names = { "Archimedes", "Pythagoras", "Euclid" };
+var index = names[names.Length - 1];
+```
+
+#### <a name="csharpstylepreferrangeoperator"></a>csharp\_style\_prefer\_range_operator
+
+|||
+|-|-|
+| **規則の名前** | csharp_style_prefer_range_operator |
+| **ルール ID** | IDE0057 |
+| **該当言語** | C# 8.0 以降 |
+| **値** | `true` - コレクションの "スライス" を抽出するときに、範囲演算子 `..` を使用します<br /><br />`false` - コレクションの "スライス" を抽出するときに、範囲演算子 `..` を使用しません |
+| **Visual Studio の既定値** | `true:suggestion` |
+
+コード例:
+
+```csharp
+// csharp_style_prefer_range_operator = true
+string sentence = "the quick brown fox";
+var sub = sentence[0..^4];
+
+// csharp_style_prefer_range_operator = false
+string sentence = "the quick brown fox";
+var sub = sentence.Substring(0, sentence.Length - 4);
+```
+
+### <a name="miscellaneous-preferences"></a>その他のユーザー設定
+
+このセクションには、その他のスタイル ルールが含まれます。
+
+*.editorconfig* ファイルの例:
+
+```ini
+# CSharp code style settings:
+[*.cs]
+csharp_style_deconstructed_variable_declaration = true:suggestion
+csharp_style_pattern_local_over_anonymous_function = true:suggestion
+csharp_using_directive_placement = outside_namespace:silent
+csharp_prefer_static_local_function = true:suggestion
+csharp_prefer_simple_using_statement = true:suggestion
+```
+
+#### <a name="csharpstyledeconstructedvariabledeclaration"></a>csharp\_style\_deconstructed\_variable_declaration
+
+|||
+|-|-|
+| **規則の名前** | csharp_style_deconstructed_variable_declaration |
+| **ルール ID** | IDE0042 |
+| **該当言語** | C# 7.0+ |
+| **値** | `true` - 分解された変数宣言を優先します<br /><br />`false` - 変数宣言では分解を優先しません |
+| **Visual Studio の既定値** | `true:suggestion` |
+
+コード例:
+
+```csharp
+// csharp_style_deconstructed_variable_declaration = true
+var (name, age) = GetPersonTuple();
+Console.WriteLine($"{name} {age}");
+
+(int x, int y) = GetPointTuple();
+Console.WriteLine($"{x} {y}");
+
+// csharp_style_deconstructed_variable_declaration = false
+var person = GetPersonTuple();
+Console.WriteLine($"{person.name} {person.age}");
+
+(int x, int y) point = GetPointTuple();
+Console.WriteLine($"{point.x} {point.y}");
+```
+
+#### <a name="csharpstylepatternlocaloveranonymousfunction"></a>csharp\_style\_pattern\_local\_over\_anonymous_function
+
+C# 7.0 以降、C# では[ローカル関数](/dotnet/csharp/programming-guide/classes-and-structs/local-functions)がサポートされています。 ローカル関数は、別のメンバーの入れ子になっているタイプのプライベート メソッドです。
+
+|||
+|-|-|
+| **規則の名前** | csharp_style_pattern_local_over_anonymous_function |
+| **ルール ID** | IDE0039 |
+| **該当言語** | C# 7.0+ |
+| **値** | `true` - 匿名関数よりローカル関数を優先します<br /><br />`false` - ローカル関数より匿名関数を優先します |
+| **Visual Studio の既定値** | `true:suggestion` |
+
+コード例:
+
+```csharp
+// csharp_style_pattern_local_over_anonymous_function = true
+int fibonacci(int n)
+{
+    return n <= 1 ? 1 : fibonacci(n-1) + fibonacci(n-2);
+}
+
+// csharp_style_pattern_local_over_anonymous_function = false
+Func<int, int> fibonacci = null;
+fibonacci = (int n) =>
+{
+    return n <= 1 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
+};
+```
+
+#### <a name="csharpusingdirectiveplacement"></a>csharp\_using\_directive_placement
+
+|||
+|-|-|
+| **規則の名前** | csharp_using_directive_placement |
+| **ルール ID** | IDE0065 |
+| **該当言語** | C# |
+| **値** | `outside_namespace` - `using` ディレクティブを名前空間の外側に配置します<br /><br />`inside_namespace` - `using` ディレクティブを名前空間の内側に配置します |
+| **Visual Studio の既定値** | `outside_namespace:silent` |
+
+コード例:
+
+```csharp
+// csharp_using_directive_placement = outside_namespace
+using System;
+
+namespace Conventions
+{
+    ...
+}
+
+// csharp_using_directive_placement = inside_namespace
+namespace Conventions
+{
+    using System;
+    ...
+}
+```
+
+#### <a name="csharppreferstaticlocalfunction"></a>csharp\_prefer\_static\_local_function
+
+|||
+|-|-|
+| **規則の名前** | csharp_prefer_static_local_function |
+| **ルール ID** | IDE0062 |
+| **該当言語** | C# 8.0 以降 |
+| **値** | `true` - ローカル関数を `static` でマークします<br /><br />`false` - ローカル関数を `static` でマークしません |
+| **Visual Studio の既定値** | `true:suggestion` |
+
+コード例:
+
+```csharp
+// csharp_prefer_static_local_function = true
+void M()
+{
+    Hello();
+    static void Hello()
+    {
+        Console.WriteLine("Hello");
+    }
+}
+
+// csharp_prefer_static_local_function = false
+void M()
+{
+    Hello();
+    void Hello()
+    {
+        Console.WriteLine("Hello");
+    }
+}
+```
+
+#### <a name="csharpprefersimpleusingstatement"></a>csharp\_prefer\_simple\_using_statement
+
+|||
+|-|-|
+| **規則の名前** | csharp_prefer_simple_using_statement |
+| **ルール ID** | IDE0063 |
+| **該当言語** | C# 8.0 以降 |
+| **値** | `true` - "*単純な*" `using` ステートメントを使用します<br /><br />`false` - "*単純な*" `using` ステートメントを使用しません |
+| **Visual Studio の既定値** | `true:suggestion` |
+
+コード例:
+
+```csharp
+// csharp_prefer_simple_using_statement = true
+using var a = b;
+
+// csharp_prefer_simple_using_statement = false
+using (var a = b) { }
 ```
 
 ## <a name="see-also"></a>関連項目

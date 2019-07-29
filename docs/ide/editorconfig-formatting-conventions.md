@@ -1,6 +1,6 @@
 ---
 title: EditorConfig での .NET の書式規則
-ms.date: 06/17/2019
+ms.date: 07/17/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3218e819d8f94cf760cdc75d6bfa6d29d0a29568
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ccebfc38d5170920fe3f3c37ee77aabaf660a3b8
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823336"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345669"
 ---
 # <a name="formatting-conventions"></a>書式規則
 
-Visual Studio 用の EditorConfig の書式規則は、2 つのカテゴリに分類されます。
+Visual Studio 用の EditorConfig の書式規則は、次のカテゴリに分類されます。
 
 - [.NET 書式設定](#net-formatting-settings)
 
@@ -122,20 +122,32 @@ using Octokit;
   - csharp_indent_case_contents
   - csharp_indent_switch_labels
   - csharp_indent_labels
+  - csharp_indent_block_contents
+  - csharp_indent_braces
+  - csharp_indent_case_contents_when_block
 - [スペース オプション](#spacing-options)
   - csharp_space_after_cast
   - csharp_space_after_keywords_in_control_flow_statements
-  - csharp_space_between_method_declaration_parameter_list_parentheses
-  - csharp_space_between_method_call_parameter_list_parentheses
   - csharp_space_between_parentheses
   - csharp_space_before_colon_in_inheritance_clause
   - csharp_space_after_colon_in_inheritance_clause
   - csharp_space_around_binary_operators
+  - csharp_space_between_method_declaration_parameter_list_parentheses
   - csharp_space_between_method_declaration_empty_parameter_list_parentheses
-  - csharp_space_between_method_call_name_and_opening_parenthesis
+  - csharp_space_between_method_declaration_name_and_open_parenthesis
+  - csharp_space_between_method_call_parameter_list_parentheses
   - csharp_space_between_method_call_empty_parameter_list_parentheses
+  - csharp_space_between_method_call_name_and_opening_parenthesis
   - csharp_space_after_comma
+  - csharp_space_before_comma
   - csharp_space_after_dot
+  - csharp_space_before_dot
+  - csharp_space_after_semicolon_in_for_statement
+  - csharp_space_before_semicolon_in_for_statement
+  - csharp_space_around_declaration_statements
+  - csharp_space_before_open_square_brackets
+  - csharp_space_between_empty_square_brackets
+  - csharp_space_between_square_brackets
 - [折り返しオプション](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
@@ -371,6 +383,9 @@ var q = from a in e from b in e
 csharp_indent_case_contents = true
 csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents_when_block = true
 ```
 
 #### <a name="csharpindentcasecontents"></a>csharp\_indent\_case_contents
@@ -509,6 +524,83 @@ class C
 }
 ```
 
+#### <a name="csharpindentblockcontents"></a>csharp_indent_block_contents
+
+|||
+|-|-|
+| **規則の名前** | csharp_indent_block_contents |
+| **該当言語** | C# |
+| **値** | `true` - <br /><br />`false` -  |
+| **Visual Studio の既定値** | `true` |
+
+コード例:
+
+```csharp
+// csharp_indent_block_contents = true
+static void Hello()
+{
+    Console.WriteLine("Hello");
+}
+
+// csharp_indent_block_contents = false
+static void Hello()
+{
+Console.WriteLine("Hello");
+}
+```
+
+#### <a name="csharpindentbraces"></a>csharp_indent_braces
+
+|||
+|-|-|
+| **規則の名前** | csharp_indent_braces |
+| **該当言語** | C# |
+| **値** | `true` - <br /><br />`false` -  |
+| **Visual Studio の既定値** | `false` |
+
+コード例:
+
+```csharp
+// csharp_indent_braces = true
+static void Hello()
+    {
+    Console.WriteLine("Hello");
+    }
+
+// csharp_indent_braces = false
+static void Hello()
+{
+    Console.WriteLine("Hello");
+}
+```
+
+#### <a name="csharpindentcasecontentswhenblock"></a>csharp_indent_case_contents_when_block
+
+|||
+|-|-|
+| **規則の名前** | csharp_indent_case_contents_when_block |
+| **該当言語** | C# |
+| **値** | `true` - <br /><br />`false` -  |
+| **Visual Studio の既定値** | `true` |
+
+コード例:
+
+```csharp
+// csharp_indent_case_contents_when_block = true
+case 0:
+    {
+        Console.WriteLine("Hello");
+        break;
+    }
+
+// csharp_indent_case_contents_when_block = false
+case 0:
+{
+    Console.WriteLine("Hello");
+    break;
+}
+```
+
 ### <a name="spacing-options"></a>スペース オプション
 
 これらの書式ルールは、コードの書式を設定する場合の空白文字の使用に関するものです。
@@ -520,17 +612,26 @@ class C
 [*.cs]
 csharp_space_after_cast = true
 csharp_space_after_keywords_in_control_flow_statements = true
-csharp_space_between_method_declaration_parameter_list_parentheses = true
-csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
 csharp_space_before_colon_in_inheritance_clause = true
 csharp_space_after_colon_in_inheritance_clause = true
 csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_parameter_list_parentheses = true
 csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
-csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
 csharp_space_after_comma = true
+csharp_space_before_comma = false
 csharp_space_after_dot = false
+csharp_space_before_dot = false
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_around_declaration_statements = false
+csharp_space_before_open_square_brackets = false
+csharp_space_between_empty_square_brackets = false
+csharp_space_between_square_brackets = false
 ```
 
 #### <a name="csharpspaceaftercast"></a>csharp\_space\_after_cast
@@ -540,7 +641,7 @@ csharp_space_after_dot = false
 | **規則の名前** | csharp_space_after_cast |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
-| **値** | `true` - キャストと値の間にスペースが必要です<br /><br />`false` - キャストと値の間にスペースは必要 "_ありません_" |
+| **値** | `true` - キャストと値の間に空白文字を配置します<br /><br />`false` - キャストと値の間の空白文字を削除します |
 | **Visual Studio の既定値** | `false` |
 
 コード例:
@@ -560,7 +661,7 @@ int y = (int)x;
 | **規則の名前** | csharp_space_after_keywords_in_control_flow_statements |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
-| **値** | `true` - `for` ループなど、制御フロー ステートメントのキーワードの後にスペースが必要です<br /><br />`false` - `for` ループなど、制御フロー ステートメントのキーワードの後にスペースは必要 "_ありません_" |
+| **値** | `true` - `for` ループなど、制御フロー ステートメントのキーワードの後に空白文字を配置します<br /><br />`false` - `for` ループなど、制御フロー ステートメントのキーワードの後の空白文字を削除します |
 | **Visual Studio の既定値** | `true` |
 
 コード例:
@@ -571,46 +672,6 @@ for (int i;i<x;i++) { ... }
 
 // csharp_space_after_keywords_in_control_flow_statements = false
 for(int i;i<x;i++) { ... }
-```
-
-#### <a name="csharpspacebetweenmethoddeclarationparameterlistparentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
-
-|||
-|-|-|
-| **規則の名前** | csharp_space_between_method_declaration_parameter_list_parentheses |
-| **該当言語** | C# |
-| **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
-| **値** | `true` - メソッド宣言パラメーター リストの始めかっこの後と終わりかっこの前に空白文字を配置します<br /><br />`false` - メソッド宣言パラメーター リストの始めかっこの後と終わりかっこの前に空白文字を配置しません |
-| **Visual Studio の既定値** | `false` |
-
-コード例:
-
-```csharp
-// csharp_space_between_method_declaration_parameter_list_parentheses = true
-void Bark( int x ) { ... }
-
-// csharp_space_between_method_declaration_parameter_list_parentheses = false
-void Bark(int x) { ... }
-```
-
-#### <a name="csharpspacebetweenmethodcallparameterlistparentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
-
-|||
-|-|-|
-| **規則の名前** | csharp_space_between_method_call_parameter_list_parentheses |
-| **該当言語** | C# |
-| **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
-| **値** | `true` - メソッド呼び出しの始めかっこの後と終わりかっこの前に空白文字を配置します<br /><br />`false` - メソッド呼び出しの始めかっこの後と終わりかっこの前に空白文字を配置しません |
-| **Visual Studio の既定値** | `false` |
-
-コード例:
-
-```csharp
-// csharp_space_between_method_call_parameter_list_parentheses = true
-MyMethod( argument );
-
-// csharp_space_between_method_call_parameter_list_parentheses = false
-MyMethod(argument);
 ```
 
 #### <a name="csharpspacebetweenparentheses"></a>csharp_space_between_parentheses
@@ -645,7 +706,7 @@ int y = ( int )x;
 | **規則の名前** | csharp_space_before_colon_in_inheritance_clause |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.7 |
-| **値** | `true` - 型宣言ではベースまたはインターフェイスのコロンの前にスペースが必要です<br /><br />`false` - 型宣言ではベースまたはインターフェイスのコロンの前にスペースが必要では "_ありません_" |
+| **値** | `true` - 型宣言ではベースまたはインターフェイスのコロンの前に空白文字を配置します<br /><br />`false` - 型宣言ではベースまたはインターフェイスのコロンの前の空白文字を除去します |
 | **Visual Studio の既定値** | `true` |
 
 コード例:
@@ -681,7 +742,7 @@ class C: I
 | **規則の名前** | csharp_space_after_colon_in_inheritance_clause |
 | **該当言語** | C# |
 | **導入されたバージョン** | Visual Studio 2017 バージョン 15.7 |
-| **値** | `true` - 型宣言ではベースまたはインターフェイスのコロンの後にスペースが必要です<br /><br />`false` - 型宣言ではベースまたはインターフェイスのコロンの後にスペースが必要では "_ありません_" |
+| **値** | `true` - 型宣言ではベースまたはインターフェイスのコロンの後に空白文字を配置します<br /><br />`false` - 型宣言ではベースまたはインターフェイスのコロンの後の空白文字を削除します |
 | **Visual Studio の既定値** | `true` |
 
 コード例:
@@ -735,6 +796,26 @@ return x*(x-y);
 return x  *  (x-y);
 ```
 
+#### <a name="csharpspacebetweenmethoddeclarationparameterlistparentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
+
+|||
+|-|-|
+| **規則の名前** | csharp_space_between_method_declaration_parameter_list_parentheses |
+| **該当言語** | C# |
+| **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
+| **値** | `true` - メソッド宣言パラメーター リストの始めかっこの後と終わりかっこの前に空白文字を配置します<br /><br />`false` - メソッド宣言パラメーター リストの始めかっこの後と終わりかっこの前の空白文字を削除します |
+| **Visual Studio の既定値** | `false` |
+
+コード例:
+
+```csharp
+// csharp_space_between_method_declaration_parameter_list_parentheses = true
+void Bark( int x ) { ... }
+
+// csharp_space_between_method_declaration_parameter_list_parentheses = false
+void Bark(int x) { ... }
+```
+
 #### <a name="csharpspacebetweenmethoddeclarationemptyparameterlistparentheses"></a>csharp_space_between_method_declaration_empty_parameter_list_parentheses
 
 |||
@@ -760,6 +841,81 @@ void Goo(int x)
 }
 
 // csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
+#### <a name="csharpspacebetweenmethoddeclarationnameandopenparenthesis"></a>csharp_space_between_method_declaration_name_and_open_parenthesis
+
+|||
+|-|-|
+| **規則の名前** | csharp_space_between_method_declaration_name_and_open_parenthesis |
+| **該当言語** | C# |
+| **値** | `true` - メソッド宣言のメソッド名と始めかっこの間に空白文字を配置します<br /><br />`false` - メソッド宣言のメソッド名と始めかっこの間の空白文字を削除します |
+| **Visual Studio の既定値** | `false` |
+
+コード例:
+
+```csharp
+// csharp_space_between_method_declaration_name_and_open_parenthesis = true
+void M () { }
+
+// csharp_space_between_method_declaration_name_and_open_parenthesis = false
+void M() { }
+```
+
+#### <a name="csharpspacebetweenmethodcallparameterlistparentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
+
+|||
+|-|-|
+| **規則の名前** | csharp_space_between_method_call_parameter_list_parentheses |
+| **該当言語** | C# |
+| **導入されたバージョン** | Visual Studio 2017 バージョン 15.3 |
+| **値** | `true` - メソッド呼び出しの始めかっこの後と終わりかっこの前に空白文字を配置します<br /><br />`false` - メソッド呼び出しの始めかっこの後と終わりかっこの前の空白文字を削除します |
+| **Visual Studio の既定値** | `false` |
+
+コード例:
+
+```csharp
+// csharp_space_between_method_call_parameter_list_parentheses = true
+MyMethod( argument );
+
+// csharp_space_between_method_call_parameter_list_parentheses = false
+MyMethod(argument);
+```
+
+#### <a name="csharpspacebetweenmethodcallemptyparameterlistparentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
+
+|||
+|-|-|
+| **規則の名前** | csharp_space_between_method_call_empty_parameter_list_parentheses |
+| **該当言語** | C# |
+| **導入されたバージョン** | Visual Studio 2017 バージョン 15.7 |
+| **値** | `true` - 空の引数リストのかっこ内にスペースを挿入します<br /><br />`false` - 空の引数リストのかっこ内にスペースを削除します |
+| **Visual Studio の既定値** | `false` |
+
+コード例:
+
+```csharp
+// csharp_space_between_method_call_empty_parameter_list_parentheses = true
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo( );
+}
+
+// csharp_space_between_method_call_empty_parameter_list_parentheses = false
 void Goo()
 {
     Goo(1);
@@ -807,42 +963,6 @@ void Goo(int x)
 }
 ```
 
-#### <a name="csharpspacebetweenmethodcallemptyparameterlistparentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
-
-|||
-|-|-|
-| **規則の名前** | csharp_space_between_method_call_empty_parameter_list_parentheses |
-| **該当言語** | C# |
-| **導入されたバージョン** | Visual Studio 2017 バージョン 15.7 |
-| **値** | `true` - 空の引数リストのかっこ内にスペースを挿入します<br /><br />`false` - 空の引数リストのかっこ内にスペースを削除します |
-| **Visual Studio の既定値** | `false` |
-
-コード例:
-
-```csharp
-// csharp_space_between_method_call_empty_parameter_list_parentheses = true
-void Goo()
-{
-    Goo(1);
-}
-
-void Goo(int x)
-{
-    Goo( );
-}
-
-// csharp_space_between_method_call_empty_parameter_list_parentheses = false
-void Goo()
-{
-    Goo(1);
-}
-
-void Goo(int x)
-{
-    Goo();
-}
-```
-
 #### <a name="csharpspaceaftercomma"></a>csharp_space_after_comma
 
 |||
@@ -862,6 +982,25 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 int[] x = new int[] { 1,2,3,4,5 }
 ```
 
+#### <a name="csharpspacebeforecomma"></a>csharp_space_before_comma
+
+|||
+|-|-|
+| **規則の名前** | csharp_space_before_comma |
+| **該当言語** | C# |
+| **値** | `true` - コンマの前に空白文字を挿入します<br /><br />`false` - コンマの前の空白文字を削除します |
+| **Visual Studio の既定値** | `false` |
+
+コード例:
+
+```csharp
+// csharp_space_before_comma = true
+int[] x = new int[] { 1 , 2 , 3 , 4 , 5 };
+
+// csharp_space_before_comma = false
+int[] x = new int[] { 1, 2, 3, 4, 5 };
+```
+
 #### <a name="csharpspaceafterdot"></a>csharp_space_after_dot
 
 |||
@@ -879,6 +1018,139 @@ this. Goo();
 
 // csharp_space_after_dot = false
 this.Goo();
+```
+
+#### <a name="csharpspacebeforedot"></a>csharp_space_before_dot
+
+|||
+|-|-|
+| **規則の名前** | csharp_space_before_dot |
+| **該当言語** | C# |
+| **値** | `true` - ドットの前に空白文字を挿入します <br /><br />`false` - ドットの前の空白文字を削除します |
+| **Visual Studio の既定値** | `false` |
+
+コード例:
+
+```csharp
+// csharp_space_before_dot = true
+this .Goo();
+
+// csharp_space_before_dot = false
+this.Goo();
+```
+
+#### <a name="csharpspaceaftersemicoloninforstatement"></a>csharp_space_after_semicolon_in_for_statement
+
+|||
+|-|-|
+| **規則の名前** | csharp_space_after_semicolon_in_for_statement |
+| **該当言語** | C# |
+| **値** | `true` - `for` ステートメントの各セミコロンの後に空白文字を挿入します<br /><br />`false` - `for` ステートメントの各セミコロンの後の空白文字を削除します |
+| **Visual Studio の既定値** | `true` |
+
+コード例:
+
+```csharp
+// csharp_space_after_semicolon_in_for_statement = true
+for (int i = 0; i < x.Length; i++)
+
+// csharp_space_after_semicolon_in_for_statement = false
+for (int i = 0;i < x.Length;i++)
+```
+
+##### <a name="csharpspacebeforesemicoloninforstatement"></a>csharp_space_before_semicolon_in_for_statement
+
+|||
+|-|-|
+| **規則の名前** | csharp_space_before_semicolon_in_for_statement |
+| **該当言語** | C# |
+| **値** | `true` - `for` ステートメントの各セミコロンの前に空白文字を挿入します <br /><br />`false` - `for` ステートメントの各セミコロンの前の空白文字を削除します |
+| **Visual Studio の既定値** | `false` |
+
+コード例:
+
+```csharp
+// csharp_space_before_semicolon_in_for_statement = true
+for (int i = 0 ; i < x.Length ; i++)
+
+// csharp_space_before_semicolon_in_for_statement = false
+for (int i = 0; i < x.Length; i++)
+```
+
+#### <a name="csharpspacearounddeclarationstatements"></a>csharp_space_around_declaration_statements
+
+|||
+|-|-|
+| **規則の名前** | csharp_space_around_declaration_statements |
+| **該当言語** | C# |
+| **値** | `ignore` - 宣言ステートメント内の余分な空白文字を削除しません<br /><br />`false` - 宣言ステートメント内の余分な空白文字を削除します |
+| **Visual Studio の既定値** | `false` |
+
+コード例:
+
+```csharp
+// csharp_space_around_declaration_statements = ignore
+int    x    =    0   ;
+
+// csharp_space_around_declaration_statements = false
+int x = 0;
+```
+
+#### <a name="csharpspacebeforeopensquarebrackets"></a>csharp_space_before_open_square_brackets
+
+|||
+|-|-|
+| **規則の名前** | csharp_space_before_open_square_brackets |
+| **該当言語** | C# |
+| **値** | `true` - 始め角かっこ `[` の前に空白文字を挿入します <br /><br />`false` - 始め角かっこ `[` の前の空白文字を削除します |
+| **Visual Studio の既定値** | `false` |
+
+コード例:
+
+```csharp
+// csharp_space_before_open_square_brackets = true
+int [] numbers = new int [] { 1, 2, 3, 4, 5 };
+
+// csharp_space_before_open_square_brackets = false
+int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+```
+
+#### <a name="csharpspacebetweenemptysquarebrackets"></a>csharp_space_between_empty_square_brackets
+
+|||
+|-|-|
+| **規則の名前** | csharp_space_between_empty_square_brackets |
+| **該当言語** | C# |
+| **値** | `true` - 空の角かっこ `[ ]` の間に空白文字を挿入します <br /><br />`false` - 空の角かっこ `[]` の間の空白文字を削除します |
+| **Visual Studio の既定値** | `false` |
+
+コード例:
+
+```csharp
+// csharp_space_between_empty_square_brackets = true
+int[ ] numbers = new int[ ] { 1, 2, 3, 4, 5 };
+
+// csharp_space_between_empty_square_brackets = false
+int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+```
+
+#### <a name="csharpspacebetweensquarebrackets"></a>csharp_space_between_square_brackets
+
+|||
+|-|-|
+| **規則の名前** | csharp_space_between_square_brackets |
+| **該当言語** | C# |
+| **値** | `true` - 空ではない角かっこ `[ 0 ]` に空白文字を挿入します <br /><br />`false` - 空ではない角かっこ `[0]` の空白文字を削除します |
+| **Visual Studio の既定値** | `false` |
+
+コード例:
+
+```csharp
+// csharp_space_between_square_brackets = true
+int index = numbers[ 0 ];
+
+// csharp_space_between_square_brackets = false
+int index = numbers[0];
 ```
 
 ### <a name="wrap-options"></a>折り返しオプション

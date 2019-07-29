@@ -9,14 +9,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+helpviewer_keywords:
+- add missing usings
+ms.openlocfilehash: d971bcdaca4efdf587c7e441f1b0b28d21388dee
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531625"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416477"
 ---
-# <a name="generate-usings-in-visual-studio"></a>Visual Studio で usings を生成する
+# <a name="add-missing-usings-in-visual-studio"></a>Visual Studio で不足している using を追加する
 
 このコード生成は以下に適用されます。
 
@@ -28,7 +30,7 @@ ms.locfileid: "65531625"
 
 **理由:** クイック アクションにより必要なインポートが自動的に追加されるため、コードに必要な `using` ステートメントを手動でコピーする必要はありません。
 
-## <a name="generate-usings-refactoring"></a>usings リファクタリングの生成
+## <a name="add-missing-usings-refactoring"></a>不足している using の追加リファクタリング
 
 1. 必要な `using` ステートメントを含めずに、ファイルからコードをコピーして新しいものに貼り付けます。 その結果として発生するエラーには、コードの修正が付随します。これにより足りない `using` ステートメントが追加されます。
 
