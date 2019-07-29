@@ -1,30 +1,27 @@
 ---
 title: 別名を使用した Visual Studio サブスクリプションへのサインインが失敗する場合がある | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/02/2018
+ms.author: lank
+manager: lank
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: 別名またはフレンドリ名の使用でサインインに失敗する場合がある
-ms.openlocfilehash: 7285c1ede495a1aa2603216f2a9e9fe9f89331ea
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 392b86699b1116f45ca75df3b611fff6a2aebc62
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783687"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68378026"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>別名を使用した Visual Studio サブスクリプションへのサインインが失敗する場合がある
-
 サインインに使用されるアカウントの種類によっては、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にサインインするときに利用可能なサブスクリプションが正しく表示されない場合があります。 考えられる原因の 1 つは、サブスクリプションが割り当てられているサインイン ID の代わりに "別名" または "表示名" を使用していることです。 これは "別名定義" と呼ばれます。
 
 ## <a name="what-is-aliasing"></a>別名定義とは
-
 "別名定義" という用語は、Windows (または Active Directory) へのサインインと電子メールへのアクセスに別々の ID を持っているユーザーを指します。
 
-別名定義は、JohnD@contoso.com のように、会社が自社のディレクトリのサインイン用に Microsoft オンライン サービスを持っているが、ユーザーは John.Doe@contoso.com などの別名や表示名を使用して自分の電子メール アカウントにアクセスしている場合に発生する場合があります。 ボリューム ライセンス サービス センター (VLSC) を介してサブスクリプションを管理している多くのユーザーにとって、これがサインインが失敗する原因となる場合があります。指定したメール アドレス (John.Doe@contoso.com) が、"職場または学校アカウント" オプションを通じて正常に認証するために必要なディレクトリ アドレス (JohnD@contoso.com) と一致していないからです。
+別名定義は、"JohnD@contoso.com" のように、会社が自社のディレクトリのサインイン用に Microsoft オンライン サービスを持っているが、ユーザーは "John.Doe@contoso.com" などの別名や表示名を使用して自分の電子メール アカウントにアクセスしている場合に発生する場合があります。 ボリューム ライセンス サービス センター (VLSC) を介してサブスクリプションを管理している多くのユーザーにとって、これがサインインが失敗する原因となる場合があります。指定したメール アドレス ("John.Doe@contoso.com") が、"職場または学校アカウント" オプションを通じて正常に認証するために必要なディレクトリ アドレス ("JohnD@contoso.com") と一致していないからです。
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>管理者として選択できるオプションとは
-
 管理者には、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) でユーザーのサインインを確実に成功させるために、次の 2 つのオプションがあります。
 - 1 番目のオプション (推奨) は、ディレクトリ アカウントをボリューム ライセンス サービス センター (VLSC) で割り当てられたアドレスとして利用することです。 詳細については、この記事の「[サブスクライバーをディレクトリ アカウントに割り当てる](#assigning-subscribers-to-a-directory-account)」セクションを参照してください。
 - 2 番目のオプション (安全性で劣る) は、サブスクライバーに自身の "職場または学校" のメール アドレスを "個人用" アカウント (別名: Microsoft アカウント (MSA)) に関連付けることを許可することです。 詳細については、この記事の「[職場または学校アカウントを個人用アカウントとして定義する](#defining-a-work-or-school-account-as-a-personal-account)」セクションを参照してください。
@@ -32,16 +29,10 @@ ms.locfileid: "67783687"
 > [!NOTE]
 > 会社が新しい Visual Studio サブスクリプションの[管理ポータル](https://manage.visualstudio.com)に移行すると、ディレクトリとメール アドレスの両方をサブスクライバーのプロファイルの一部として指定できる、新しい管理エクスペリエンスが利用できるようになります。 移行の詳細については、[こちら](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details)をご覧ください。
 
-## <a name="as-a-subscriber-what-options-do-i-have"></a>サブスクライバーとして選択できるオプションとは
-
-サブスクライバーの観点からは、まず、管理者に問い合わせて、会社の ID の構成を理解することが重要です。 必要に応じて、管理者が管理ポータルから、サブスクライバーのアカウント設定を更新する必要がある場合や、サブスクライバーが自分の会社のメール アドレスを使用して Microsoft アカウント (MSA) を作成する必要がある場合があります。 MSA を作成する手順を実行する前に、この実行に関するポリシーまたは問題について管理者と話します。 詳細については、この記事の「[職場または学校アカウントを個人用アカウントとして定義する](#defining-a-work-or-school-account-as-a-personal-account)」セクションを参照してください。
-
 ## <a name="assigning-subscribers-to-a-directory-account"></a>サブスクライバーをディレクトリ アカウントに割り当てる
-
 いずれのケースでも、ボリューム ライセンス サービス センター (VLSC) 内のサブスクリプション マネージャーは、新しいサブスクライバーのディレクトリ アドレスを使用するか、"既存の" サブスクライバーの電子メール アドレスを更新する必要があります。 ディレクトリ アドレスを使用すると、新しいサブスクライバーがウェルカム メールを受信しないため、管理者がサブスクライバーにサブスクリプションが割り当てられたことを通知する必要があることに注意してください。 次の手順を実行してから、自由にメール [テンプレート](#notifying-your-subscribers-with-directory-addresses)を使ってサブスクライバーに通知し、サインイン プロセスを支援してください。
 
 ### <a name="adding-new-subscribers"></a>新しいサブスクライバーを追加する
-
 次の手順に従って、ディレクトリ アカウントを使用して新しいサブスクライバーを追加します。
 
 1. [ボリューム ライセンス サービス センター](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) にアクセスしてサインインします。
@@ -63,7 +54,6 @@ ms.locfileid: "67783687"
 9. 下記の[テンプレート](#notifying-your-subscribers-with-directory-addresses)を使用して、サブスクリプションがプロビジョニングされたことをサブスクライバーに通知します。
 
 ### <a name="updating-an-existing-subscriber"></a>既存のサブスクライバーを更新する
-
 次の手順に従って、ディレクトリ アカウントを使用して既存のサブスクライバーを更新します。
 
 1. [ボリューム ライセンス サービス センター](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) にアクセスしてサインインします。
@@ -77,7 +67,6 @@ ms.locfileid: "67783687"
 9. 下記のメール テンプレートを使用して、サブスクリプションがプロビジョニングされたことをサブスクライバーに通知します。
 
 ### <a name="notifying-your-subscribers-with-directory-addresses"></a>ディレクトリ アドレスを使用してサブスクライバーに通知する
-
 ウェルカム メールがサブスクライバーに正常に送信されないため、次のメッセージをコピーして電子メールに貼り付け、サブスクライバーに送信します。 %用語% の部分を各サブスクライバーに適した情報に置き換えます。
 
 ```
@@ -99,14 +88,12 @@ At the bottom of the page, select the following:
 ```
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>職場または学校アカウントを個人用アカウントとして定義する
-
 「[サブスクライバーをディレクトリ アカウントに割り当てる](#assigning-subscribers-to-a-directory-account)」セクションに記載した指示に従って、新しいユーザーを追加するか、ボリューム ライセンス サービス センター (VLSC) 内でユーザーのメール アドレスを更新します。  メール アドレスがディレクトリで認識されない場合は、ユーザーがプロセスを実行して新しいアカウントを作成し、個人用アカウントとしてメール アドレスを定義する必要があります。  短期的には、Visual Studio サブスクリプション チームは、以下で定義されている ID ポリシーの免除を保証されていますが、マイクロソフトではこのポリシーを除去するために必要な機能に投資しています。
 
 > [!WARNING]
-> "職場または学校" の ID を "個人用" の ID と組み合わせることはお勧めできません。  これを行うと、組織がアカウントの所有権と制御を失い、従業員が退職後でも特定の製品やサービスに引き続きアクセスできてしまいます。  詳細については、Microsoft Identity チームのこの[ブログの記事](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/15/cleaning-up-the-azure-ad-and-microsoft-account-overlap/)を参照してください。
+> "職場または学校" の ID を "個人用" の ID と組み合わせることはお勧めできません。  これを行うと、組織がアカウントの所有権と制御を失い、従業員が退職後でも特定の製品やサービスに引き続きアクセスできてしまいます。  
 
 ### <a name="defining-an-email-address-as-a-personal-account"></a>メール アドレスを個人用アカウントとして定義する
-
 サブスクリプションがサブスクライバーに割り当てられると、サブスクライバーは、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にアクセスしてサブスクリプションの特典を利用するように求めるメールを受信します。  サインインしようとすると、アカウントが認識されないことを示すエラーで Visual Studio サブスクリプションのサインインが失敗します。  [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にログインする前に、サブスクライバーに次の手順を行うように求めます。  必要に応じて、サブスクリプションを割り当てた後、この[テンプレート](#notifying-your-subscribers-using-personal-accounts)を使用してサブスクライバーに通知できます。
 
 1. https://my.visualstudio.com にアクセスして、 **[新しい Microsoft アカウントを作成する]** をクリックします。
@@ -124,7 +111,6 @@ At the bottom of the page, select the following:
 5. これでサブスクリプションと特典が表示されます。
 
 ### <a name="notifying-your-subscribers-using-personal-accounts"></a>個人用アカウントを使用してサブスクライバーに通知する
-
 上記で説明したシナリオでは、サブスクライバーは "ウェルカム メール" を受信しますが、別名定義によりサブスクライバーがサインインできない場合があります。  次のテキストを使用して、サブスクライバーに上記の手順を通知し、必要に応じてサポート オプションを勧めることができます。  %用語% の部分を各サブスクライバーに適した情報に置き換えます。
 
 ```
