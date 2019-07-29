@@ -54,9 +54,9 @@
       items:
         - name: 'チュートリアル: マネージド コードの単体テストを作成し、実行する'
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: 'クイック スタート: テスト エクスプローラーによるテスト駆動開発'
+        - name: 'チュートリアル: テスト駆動開発'
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: 単体テストで Microsoft.VisualStudio.TestTools.UnitTesting のメンバーを使用する
+        - name: 単体テストでの MSTest API の使用
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: Assert クラスを使用する
           href: using-the-assert-classes.md
@@ -74,11 +74,11 @@
           items:
             - name: データ ドリブン単体テストを作成する
               href: how-to-create-a-data-driven-unit-test.md
-            - name: 'チュートリアル: データ ソースを定義するための構成ファイルの使用'
+            - name: データ ソースを定義するための構成ファイルの使用
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: ジェネリック メソッドの単体テスト
           href: unit-tests-for-generic-methods.md
-        - name: .NET Framework の旧バージョンを対象とした単体テストを構成する
+        - name: .NET の以前のバージョンを対象とした単体テストを構成する
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
     - name: C/C++ コード用の単体テスト
       items:
@@ -227,7 +227,7 @@
         - name: 概要
           displayName: Test controllers and test agents
           href: configure-test-agents-and-controllers-for-load-tests.md
-        - name: 要件
+        - name: 必要条件
           href: test-controller-and-test-agent-requirements-for-load-testing.md
         - name: テスト コントローラーとテスト エージェントの管理
           href: manage-test-controllers-and-test-agents.md
