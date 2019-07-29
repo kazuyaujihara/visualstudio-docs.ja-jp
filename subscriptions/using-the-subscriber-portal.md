@@ -1,17 +1,17 @@
 ---
 title: http://my.visualstudio.com のサブスクライバー ポータルの使用 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/04/2018
+ms.author: lank
+manager: lank
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプション ポータルを使用するさまざまな利点について
-ms.openlocfilehash: eab622c843a7099b5a75ca953d55666be849b246
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784783"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377924"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>サブスクライバー ポータルの使用 - my.visualstudio.com
 
@@ -51,3 +51,6 @@ Azure についてわからないことがあったら、  Azure コミュニテ
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
 Visual Studio クラウド サブスクリプションを更新する必要がある場合や、  Visual Studio 製品ファミリの最新の拡張機能をダウンロードしたい場合があります。  Marketplace では、Azure DevOps、Azure DevOps Server、および Visual Studio Code の機能を向上させる拡張機能、ツール、サービスを見つけることができます。 公開元になり、Marketplace に独自の拡張機能を公開することもできます。
+
+## <a name="next-steps"></a>次の手順
+[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) でポータルにサインインし、特典を確認します。  ご自分の [Microsoft アカウント](sign-in-msa.md) (MSA)、[職場または学校アカウント](sign-in-work.md)、[GitHub](sign-in-github.md) アカウントを使用して、ポータルにサインインする方法についても学習できます。 
