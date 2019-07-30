@@ -1,6 +1,6 @@
 ---
 title: TextTransform ユーティリティを使用したファイルの生成
-ms.date: 03/22/2018
+ms.date: 07/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55ebaaa05670cdea0685b7d337c7f3b3a9733cb0
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: f224419cd92b760d71045859a13887a83115b987
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493101"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606097"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>TextTransform ユーティリティを使用したファイルの生成
 
@@ -24,21 +24,37 @@ TextTransform.exe は、テキスト テンプレートを変換するために�
 > [!NOTE]
 > ビルド プロセスの一部としてテキスト変換を実行する場合は、MSBuild のテキスト変換タスクの使用を検討してください。 詳細については、次を参照してください。[ビルド プロセスでのコード生成](../modeling/code-generation-in-a-build-process.md) Visual Studio がインストールされているコンピューターでは、テキスト テンプレートを変換するアプリケーションあるいは Visual Studio 拡張機能を作成することもできます。 詳細については、[カスタム ホストを使用してテキスト テンプレートの処理](../modeling/processing-text-templates-by-using-a-custom-host.md)を参照してください。
 
- TextTransform.exe は、次のディレクトリにあります。
+TextTransform.exe は、次のディレクトリにあります。
+ 
+::: moniker range=">=vs-2019"
 
- **ファイル (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
+**ファイル (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
 
-**\Program files (x86) \Microsoft Visual Studio\2017\Professional\Common7\IDE**
+Professional edition の場合は、または
 
- **ファイル (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
+**ファイル (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
 
- **\Program files (x86) \Microsoft Visual studio \2017\enterprise\common7\ide**
+Enterprise edition の場合。
+
+::: moniker-end
+ 
+::: moniker range="vs-2017"
+
+Professional edition:
+
+Professional edition の場合は、または
+
+Enterprise edition:
+
+Enterprise edition の場合。
 
 Visual Studio の以前のバージョンでは、次の場所にファイルがあります。
 
 **\Program Files (x86)\Common Files\Microsoft Shared\TextTemplating\{version}**
 
 {version} は、インストールされている Visual Studio のバージョンによります。
+
+::: moniker-end
 
 ## <a name="syntax"></a>構文
 
