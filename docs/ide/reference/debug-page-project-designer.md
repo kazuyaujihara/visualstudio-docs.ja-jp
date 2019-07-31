@@ -1,6 +1,7 @@
 ---
 title: '[デバッグ] ページ (プロジェクト デザイナー)'
 ms.date: 06/27/2018
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
@@ -8,23 +9,23 @@ helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1f54485a4dd47b0aec4401f6cdfb39072e9f8cf
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968184"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461408"
 ---
 # <a name="debug-page-project-designer"></a>[デバッグ] ページ (プロジェクト デザイナー)
 
 Visual Basic または C# プロジェクトのデバッグ動作のプロパティを設定するには、**プロジェクト デザイナー**の **[デバッグ]** ページを使用します。
 
-**[デバッグ]** ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードを選択します。 **[プロジェクト]** メニューの **[\<プロジェクト名> プロパティ]** を選択します。 **プロジェクト デザイナー**が表示されたら、**[デバッグ]** タブをクリックします。
+**[デバッグ]** ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードを選択します。 **[プロジェクト]** メニューの **[\<プロジェクト名> プロパティ]** を選択します。 **プロジェクト デザイナー**が表示されたら、 **[デバッグ]** タブをクリックします。
 
 > [!NOTE]
 > このトピックは UWP アプリには適用されません。 UWP アプリの[デバッグ セッションの開始 (VB、C#、C++、および XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) に関するページを参照してください。
@@ -35,11 +36,11 @@ Visual Basic または C# プロジェクトのデバッグ動作のプロパテ
 
 **構成**
 
-表示または変更する構成設定を指定します。 設定は、**[デバッグ]** (既定)、**[リリース]**、または **[すべての構成]** のいずれかになります。
+表示または変更する構成設定を指定します。 設定は、 **[デバッグ]** (既定)、 **[リリース]** 、または **[すべての構成]** のいずれかになります。
 
 **プラットフォーム**
 
-表示または変更するプラットフォーム設定を指定します。 **[Any CPU]** (既定)、**[x64]**、および **[x86]** から選択できます。
+表示または変更するプラットフォーム設定を指定します。 **[Any CPU]** (既定)、 **[x64]** 、および **[x86]** から選択できます。
 
 ## <a name="start-action"></a>[開始動作]
 
@@ -65,7 +66,7 @@ Visual Basic または C# プロジェクトのデバッグ動作のプロパテ
 
 **作業ディレクトリ**
 
-このテキスト ボックスには、プロジェクトの起動元のディレクトリを入力します。 または参照ボタン (**[...]**) をクリックしてディレクトリを選択します。
+このテキスト ボックスには、プロジェクトの起動元のディレクトリを入力します。 または参照ボタン ( **[...]** ) をクリックしてディレクトリを選択します。
 
 **リモート コンピューターの使用**
 
