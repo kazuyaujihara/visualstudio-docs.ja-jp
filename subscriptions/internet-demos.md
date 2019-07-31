@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: プロダクト キーを使用してターミナル サービスによるインターネット デモンストレーションをサポートし、RDS アクセスを有効にする方法を説明します
-ms.openlocfilehash: 34fa32f22582ccde69cbc54c86a3442ad92a7c96
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 19faa64b7eeaebc1b92ca965f686795b31e00e7e
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377976"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493380"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>ターミナル サービスを介したインターネット デモンストレーション
 Visual Studio サブスクリプションがあれば、ターミナル サービス (Windows Server 2003 または Windows Server 2008) やリモート デスクトップ サービス (Windows Server 2008 R2 以降) を介してエンド ユーザーに自分のプログラムのインターネット デモンストレーションへアクセスしてもらうことができます。 この方法で、最大 200 人の匿名ユーザーが同時に会員のデモンストレーションにアクセスすることができます。 デモンストレーションに実稼動データを使用することはできません。 Visual Studio サブスクライバーは、自分のアプリケーションのデモンストレーションをエンド ユーザーに提供することができます。 ターミナル サービス (TS) またはリモート デスクトップ サービス (RDS) を使用したこのインターネット デモンストレーションのシナリオにおいてのみ、Visual Studio サブスクリプションを持たないエンド ユーザーがデモンストレーション アプリケーションを操作できます。これは、そのソフトウェアが Visual Studio サブスクリプションでライセンスを付与されている間に限ります。
@@ -38,4 +38,3 @@ Windows Server 2008 R2 では、種類ごとに 5 つのキーが利用でき、
 RDS の配置に関するガイダンスが必要な場合は、 https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf のマルチパート ブログ シリーズ「**Remote Desktop Services (RDS) 2012 session deployment (リモート デスクトップ サービス (RDS) 2012 セッションの配置)** 」をご覧ください。 
 
 質問がある場合は、Microsoft [リモート デスクトップ サービス フォーラム](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)にアクセスしてください。
-

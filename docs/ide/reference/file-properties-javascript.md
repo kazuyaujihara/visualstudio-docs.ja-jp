@@ -1,6 +1,7 @@
 ---
 title: ファイルのプロパティ、JavaScript
 ms.date: 06/21/2017
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -20,28 +21,29 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8bb8bc743aea29219edc8db9c0c52bf839954a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d615a6d805fb9ff63ffd0ac402b115a0e9dc691
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790649"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461833"
 ---
 # <a name="file-properties-javascript"></a>ファイルのプロパティ、JavaScript
+
 ファイルのプロパティを使用して、プロジェクト システムがファイルに対して実行するアクションを指定できます。 たとえば、ファイルがリソース ファイルとしてパッケージに追加するかどうかを示すには、ファイル プロパティを設定できます。
 
- ソリューション エクスプローラーでファイルを選択し、[プロパティ] ウィンドウでそのプロパティを調べることができます。 JavaScript ファイルには、**[出力ディレクトリにコピー]**、**[パッケージ アクション]**、**[ファイル名]**、**[ファイル パス]** という 4 種類のプロパティがあります。
+ ソリューション エクスプローラーでファイルを選択し、[プロパティ] ウィンドウでそのプロパティを調べることができます。 JavaScript ファイルには、 **[出力ディレクトリにコピー]** 、 **[パッケージ アクション]** 、 **[ファイル名]** 、 **[ファイル パス]** という 4 種類のプロパティがあります。
 
 ## <a name="file-properties"></a>ファイルのプロパティ
  このセクションでは、JavaScript ファイルに共通のプロパティについて説明します。
 
 ### <a name="copy-to-output-directory-property"></a>[出力ディレクトリにコピー] プロパティ
- このプロパティでは、選択したソース ファイルを出力ディレクトリにコピーする際の条件を指定します。 ファイルを出力ディレクトリにコピーしない場合は **[コピーしない]** を選択します。 ファイルを常に出力ディレクトリにコピーする場合は **[常にコピーする]** を選択します。 出力ディレクトリに既に存在する同じ名前のファイルよりも新しいときにのみファイルをコピーする場合は、**[新しい場合はコピーする]** を選択します。
+ このプロパティでは、選択したソース ファイルを出力ディレクトリにコピーする際の条件を指定します。 ファイルを出力ディレクトリにコピーしない場合は **[コピーしない]** を選択します。 ファイルを常に出力ディレクトリにコピーする場合は **[常にコピーする]** を選択します。 出力ディレクトリに既に存在する同じ名前のファイルよりも新しいときにのみファイルをコピーする場合は、 **[新しい場合はコピーする]** を選択します。
 
 ### <a name="package-action"></a>パッケージ アクション
  **[パッケージ アクション]** のプロパティは、ビルドが実行されたときに Visual Studio がファイルの処理方法を示します。 **[パッケージ アクション]** には次のいずれかの値が使用されます。
@@ -57,7 +59,7 @@ ms.locfileid: "62790649"
 **[パッケージ アクション]** の既定値は、ソリューションに追加するファイルの拡張子によって変わります。
 
 ### <a name="file-name-property"></a>[ファイル名] プロパティ
- 読み取り専用の値としてファイル名が表示されます。 ファイルの名前を変更するには、ソリューション エクスプローラーで右クリックし、**[名前の変更]** を選択します。
+ 読み取り専用の値としてファイル名が表示されます。 ファイルの名前を変更するには、ソリューション エクスプローラーで右クリックし、 **[名前の変更]** を選択します。
 
 ### <a name="full-path-property"></a>[完全パス] プロパティ
  読み取り専用の値としてファイルの完全パスを表示します。 ファイルのパスを変更するには、ソリューション エクスプローラーでファイルをドラッグ アンド ドロップすることができます。

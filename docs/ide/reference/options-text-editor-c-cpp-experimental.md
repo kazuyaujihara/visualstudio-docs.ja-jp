@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75f36d66ea46e7a0474c3b76ae000f745337fc45
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817924"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461384"
 ---
 # <a name="options-text-editor-cc-experimental"></a>[オプション]、[テキスト エディター]、[C/C++]、[実験用]
 
@@ -28,7 +28,7 @@ ms.locfileid: "62817924"
 
 ::: moniker-end
 
-このプロパティ ページにアクセスするには、**Ctrl**+**Q** キーを押して検索ボックスをアクティブ化した後、「**実験用**」と入力します。 検索では、最初の数文字と一致するページが検索されます。 **[ツール]** > **[オプション]** を選択して **[テキスト エディター]** を展開し、**[C/C++]**、**[実験用]** の順に選択してアクセスすることもできます。
+このプロパティ ページにアクセスするには、**Ctrl**+**Q** キーを押して検索ボックスをアクティブ化した後、「**実験用**」と入力します。 検索では、最初の数文字と一致するページが検索されます。 **[ツール]**  >  **[オプション]** を選択して **[テキスト エディター]** を展開し、 **[C/C++]** 、 **[実験用]** の順に選択してアクセスすることもできます。
 
 これらの機能は、Visual Studio のインストールで使用できます。
 

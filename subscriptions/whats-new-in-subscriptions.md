@@ -7,12 +7,12 @@ ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: b6922e5a2b14186afd1f3fa9294bbb24c2e7d649
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: ba6c17aa6aa1f0a89e53be6b8dba7067e1fdc902
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377947"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493397"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの新機能
 
@@ -42,5 +42,3 @@ GitHub Enterprise は、Enterprise Agreement を通じて入手した Visual Stu
 お客様の組織が既に GitHub Enterprise を含む Visual Studio サブスクリプションを持っている場合は、Microsoft のドキュメントから [GitHub Enterprise を含む Visual Studio の管理](assign-github.md) (サブスクリプション) について詳しく学習いただけます。  
 
 今日のところは、これで終わりです。
-
-

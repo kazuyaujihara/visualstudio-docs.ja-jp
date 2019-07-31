@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを最大限に活用する方法を説明します
-ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378057"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493360"
 ---
 # <a name="managing-subscriptions"></a>サブスクリプションを管理する
 
@@ -73,7 +73,6 @@ Visual Studio サブスクリプション ポータルは、Visual Studio サブ
 3. **[詳細情報]** タブでは、名前、メール アドレス、国/地域、プロファイルの画像、連絡先の設定を変更することができます。 **[ユーザー設定]** タブでは、優先する言語、日付と時間のパターン、タイム ゾーン、ユーザー インターフェイスのテーマを選択することができます。
 4. 変更が終わったら、 **[保存]** をクリックします。
 5. ブラウザーの **[戻る]** ボタンをクリックして特典ページに戻ります。
-
 
 ### <a name="setting-communications-preferences"></a>通信のユーザー設定
 毎月の Visual Studio サブスクリプション ニュースレターなど、サブスクリプションとベネフィットに関する更新を定期的に受け取りたい場合は、Visual Studio プロファイルで Visual Studio サブスクリプションのボックスをオンにして、[ユーザー設定を更新](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit)します。 いつでもこれらのユーザー設定を変更したり、サブスクライブを解除したりできます。 

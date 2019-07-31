@@ -71,12 +71,13 @@
 #### [オンボードのビデオ](https://youtu.be/plSu6fpi7UI)
 ### 管理ポータルの使用
 #### [概要](using-admin-portal.md)
-#### [サブスクリプションを割り当てる](assign-license.md)
-#### [割り当ての電子メールを再送信する](resend-assignment-email.md)
+#### サブスクリプションを割り当てる
+##### [1 人のユーザーを追加する](assign-license.md)
+##### [複数のユーザーを追加する](assign-license-bulk.md)
 #### [サブスクリプションの編集](edit-license.md)
 #### [サブスクリプションの削除](delete-license.md)
 #### [サブスクリプションを検索する](search-license.md)
-#### [サブスクリプションのインポート](exporting-subscriptions.md)
+#### [サブスクリプションのエクスポート](exporting-subscriptions.md)
 #### [超過](handle-overclaimed-license.md)
 #### [最大使用量](maximum-usage.md)
 #### [有効期限が切れたサブスクリプション](handle-expired-license.md)
@@ -84,7 +85,7 @@
 #### [個人用電子メール サインインを持つサブスクライバー](personal-email-sign-ins.md)
 ### [GitHub Enterprise による Visual Studio の管理](assign-github.md)
 ## リソース
-### [Visual Studio ライセンス ホワイト ペーパー](https://aka.ms/vslicensing)
+### [Visual Studio ライセンスのホワイト ペーパー](https://aka.ms/vslicensing)
 ### [サブスクリプション オプションと価格を比較する](https://visualstudio.microsoft.com/vs/pricing)
 ### [Visual Studio IDE 機能を比較する](https://visualstudio.microsoft.com/vs/compare)
 ### [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: 大規模なチームおよび外部請負業者に対するサブスクリプションを管理する管理者の責任について説明します。
-ms.openlocfilehash: 0f304d4858658c4540e38c6fa250e08c127713ae
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 91e507358084bcb878d2a9afc7aad4fe4a2b869c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68420573"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493345"
 ---
 # <a name="large-teams-and-external-contractors"></a>大規模なチームおよび外部請負業者
 Visual Studio サブスクリプションの管理者は責任を持って、Visual Studio でライセンス付与されたソフトウェアと対話する各ユーザーが、自身の Visual Studio サブスクリプションで適切にライセンス付与されていることを確認します。
@@ -39,5 +39,3 @@ Visual Studio サブスクリプションの管理者は責任を持って、Vis
 - [運用前環境のインベントリ](admin-inventory.md)
 - [ユーザーの割り当てを追跡し、注文を処理する](assignments-orders.md)
 - [最大使用量](maximum-usage.md)を使用して購入コミットメントを追跡する
-
-
