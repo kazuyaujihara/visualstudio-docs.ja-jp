@@ -1,45 +1,41 @@
 ---
 title: '[全般] ([オプション] ダイアログ ボックス - [環境])'
-ms.date: 03/28/2019
+ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
-- VS.Message.0x800a002e
-- VS.ToolsOptionsPages.Environment.General
 - VS.Environment.General
+- VS.Message.0x800a002e
+- VS.OptionsDialog.Environment
+- VS.ToolsOptionsPages.Environment
+- VS.ToolsOptionsPages.Environment.General
 helpviewer_keywords:
-- MRU lists
-- windows, customizing
-- MDI, environment options
-- speed, environment animation
-- File menu
-- menus, customizing
-- Windows menu customizing
-- status bars, displaying
-- IDE, startup options
-- editors, autocompletion
+- recently used file lists
+- Windows menu, customizing
+- status bar, displaying
 - Options dialog box, General Environment
 - General Environment Options dialog box
+- Environment Options dialog box
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c4024209ac0c1b2766b67984710b8349c6d66d91
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790136"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605446"
 ---
 # <a name="options-dialog-box-environment--general"></a>[オプション] ダイアログ ボックス: [環境] \> [全般]
 
-このページを使用して、統合開発環境 (IDE: Integrated Development Environment) のオプションのうち特に配色テーマ、ステータス バーの設定、およびファイル拡張子の関連付けを変更します。 **[オプション]** ダイアログ ボックスを表示するには、**[ツール]** メニューを開いて、**[オプション]** をクリックし、**[環境]** フォルダーを開き、**[全般]** ページをクリックします。 このページが一覧に表示されない場合は、**[オプション]** ダイアログ ボックスの **[すべての設定を表示]** チェック ボックスをオンにします。
+このページを使用して、統合開発環境 (IDE: Integrated Development Environment) のオプションのうち特に配色テーマ、ステータス バーの設定、およびファイル拡張子の関連付けを変更します。 **[オプション]** ダイアログ ボックスを表示するには、 **[ツール]** メニューを開いて、 **[オプション]** をクリックし、 **[環境]** フォルダーを開き、 **[全般]** ページをクリックします。 このページが一覧に表示されない場合は、 **[オプション]** ダイアログ ボックスの **[すべての設定を表示]** チェック ボックスをオンにします。
 
 ## <a name="visual-experience"></a>視覚的効果
 
 **配色テーマ**
 
-IDE の配色テーマ (**[青]**、**[淡色]**、**[濃色]**、または **[青 (エクストラ コントラスト)]**) を選択します。
+IDE の配色テーマ ( **[青]** 、 **[淡色]** 、 **[濃色]** 、または **[青 (エクストラ コントラスト)]** ) を選択します。
 
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) から **Visual Studio 配色テーマ エディター**をダウンロードしてインストールすることで、定義済みテーマを追加でインストールしたりカスタム テーマを作成したりすることもできます。 このツールをインストールすると、追加の配色テーマが **[配色テーマ]** ボックスの一覧に表示されます。
 
@@ -51,11 +47,11 @@ IDE の配色テーマ (**[青]**、**[淡色]**、**[濃色]**、または **[�
 
 **ピクセルの密度が異なる画面のレンダリングを最適化する (再起動が必要)**
 
-このオプションを使用して、モニターごとの 1インチあたりのドット数 (DPI) の認識 (または *PMA*) を有効または無効にします。 PMA を有効にすると、Visual Studio ユーザー インターフェイスは、表示倍率と DPI 構成に関係なく、すべてのモニターで鮮明に表示されます (複数のモニター間の表示も含まれます)。 PMA を有効にするには、Windows 10 April 2018 Update 以降および .NET Framework 4.8 以降が必要です  (これら 2 つの前提条件が満たされていない場合、このオプションは灰色表示されます)。
+このオプションを使用して、モニターごとの 1インチあたりのドット数 (DPI) の認識 (または *PMA*) を有効または無効にします。 PMA を有効にすると、Visual Studio ユーザー インターフェイスは、表示倍率と DPI 構成に関係なく、すべてのモニターで鮮明に表示されます (複数のモニター間の表示も含まれます)。 PMA を有効にするには、Windows 10 April 2018 Update 以降および .NET Framework 4.8 以降が必要です (これら 2 つの前提条件が満たされていない場合、このオプションは灰色表示されます)。
 
 > [!TIP]
-> - Windows 10 には、**[Let Windows try to fix apps so they're not blurry]\(ぼやけないように Windows でアプリの修正を試みる\)** という設定があります。 **[Optimize rendering for screens with different pixel densities]\(ピクセルの密度が異なる画面のレンダリングを最適化する\)** オプションがオンの場合は、この Windows 設定を**オン**にしても、効果はほとんどありません。
-> - Windows 10 には、**[プログラム互換性のトラブルシューティング ツール]** という設定もあります。 Visual Studio の外観の修正を試みるときは、このトラブルシューティング ツールを使用しないことをお勧めします。
+> - Windows 10 には、 **[Let Windows try to fix apps so they're not blurry]\(ぼやけないように Windows でアプリの修正を試みる\)** という設定があります。 **[Optimize rendering for screens with different pixel densities]\(ピクセルの密度が異なる画面のレンダリングを最適化する\)** オプションがオンの場合は、この Windows 設定を**オン**にしても、効果はほとんどありません。
+> - Windows 10 には、 **[プログラム互換性のトラブルシューティング ツール]** という設定もあります。 Visual Studio の外観の修正を試みるときは、このトラブルシューティング ツールを使用しないことをお勧めします。
 
 ::: moniker-end
 
@@ -66,13 +62,13 @@ Visual Studio で視覚的効果を自動的に調整するか、ユーザーが
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10 には、**[Let Windows try to fix apps so they're not blurry]\(ぼやけないように Windows でアプリの修正を試みる\)** という設定があります。 Visual Studio がモニター上でぼやけて見える場合は、この設定を**オン**にすることをお勧めします。 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) へのアップグレードを検討してください。Visual Studio 2019 は、モニターごとの DPI に対応したアプリケーションであるため、表示の明瞭度が大幅に向上しています。
+> Windows 10 には、 **[Let Windows try to fix apps so they're not blurry]\(ぼやけないように Windows でアプリの修正を試みる\)** という設定があります。 Visual Studio がモニター上でぼやけて見える場合は、この設定を**オン**にすることをお勧めします。 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) へのアップグレードを検討してください。Visual Studio 2019 は、モニターごとの DPI に対応したアプリケーションであるため、表示の明瞭度が大幅に向上しています。
 
 ::: moniker-end
 
 **リッチ クライアント エクスペリエンスを有効にする**
 
-グラデーションやアニメーションなど、Visual Studio の視覚的効果のすべてを有効にします。 リモート デスクトップ接続や古いグラフィックス アダプターを使用している場合は、これらの機能のパフォーマンスが低下する可能性があるため、このオプションをオフにします。 このオプションをオンにできるのは、**[クライアントのパフォーマンスに基づいて視覚的効果を自動的に調整する]** をオフにした場合だけです。
+グラデーションやアニメーションなど、Visual Studio の視覚的効果のすべてを有効にします。 リモート デスクトップ接続や古いグラフィックス アダプターを使用している場合は、これらの機能のパフォーマンスが低下する可能性があるため、このオプションをオフにします。 このオプションをオンにできるのは、 **[クライアントのパフォーマンスに基づいて視覚的効果を自動的に調整する]** をオフにした場合だけです。
 
 **可能ならハードウェアのグラフィックス アクセラレータを使用する**
 
@@ -102,5 +98,4 @@ Visual Studio で視覚的効果を自動的に調整するか、ユーザーが
 
 ## <a name="see-also"></a>関連項目
 
-- [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)
 - [ウィンドウ レイアウトをカスタマイズする](../../ide/customizing-window-layouts-in-visual-studio.md)

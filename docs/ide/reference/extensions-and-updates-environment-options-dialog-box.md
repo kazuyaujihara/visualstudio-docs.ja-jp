@@ -1,4 +1,4 @@
----
+﻿---
 title: '[拡張機能] ([オプション] ダイアログ ボックス - [環境])'
 ms.date: 03/28/2019
 ms.topic: reference
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d2ddf174255a7db85e3eb61d71472748287be90
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790851"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605865"
 ---
 # <a name="options-dialog-box-environment--extensions"></a>[オプション] ダイアログ ボックス: [環境] \> [拡張機能]
 
@@ -36,7 +36,3 @@ ms.locfileid: "62790851"
 ## <a name="additional-extension-galleries"></a>その他の拡張機能のギャラリー
 
 専用拡張機能のギャラリーのサポートを有効にするエンタープライズ機能です。 詳細については、「[プライベート ギャラリー](../../extensibility/private-galleries.md)」を参照してください。
-
-## <a name="see-also"></a>関連項目
-
-- [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)
