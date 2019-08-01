@@ -1,5 +1,5 @@
 ---
-title: DebuggerDisplay を使用してカスタム情報を表示する |Microsoft Docs
+title: デバッガーの表示を使用してカスタム情報を表示する |Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f8046ba598873329e6aa9fcea344504f15b4dbc
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929609"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680589"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>DebuggerDisplay 属性を使用して表示するものをデバッガーに通知 (C#、Visual Basic、 F#、 C++/CLI)
-<xref:System.Diagnostics.DebuggerDisplayAttribute> は、デバッガー変数ウィンドウでのオブジェクト、プロパティ、フィールドの表示方法を制御します。 この属性は、型、デリゲート、プロパティ、フィールド、アセンブリに適用できます。
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>デバッガ display 属性 (C#、Visual Basic、 F# C++/cli) を使用して、表示する内容をデバッガーに通知します
+<xref:System.Diagnostics.DebuggerDisplayAttribute> は、デバッガー変数ウィンドウでのオブジェクト、プロパティ、フィールドの表示方法を制御します。 この属性は、型、デリゲート、プロパティ、フィールド、アセンブリに適用できます。 基本型に適用された場合、属性はサブクラスにも適用されます。
 
 `DebuggerDisplay` 属性の引数は 1 つです。それは、型のインスタンスの値列に表示する文字列です。 この文字列には、中かっこ (`{` と `}`) を含めることができます。 かっこ内のテキストは、フィールド、プロパティ、メソッドとして評価されます。
 
@@ -32,7 +32,7 @@ ms.locfileid: "62929609"
 > **[ツール] / [オプション] / [デバッグ]** ダイアログ ボックスで **[オブジェクトの生の構造体を変数ウィンドウに表示する]** チェック ボックスがオンになっている場合、 `DebuggerDisplay` 属性は無視されます。
 
 > [!NOTE]
-> この属性がでのみサポートされているネイティブ コード用のC++/CLI コード。
+> ネイティブコードの場合、この属性は/Cli コードC++でのみサポートされます。
 
 次の表に、 `DebuggerDisplay` 属性の使用例と出力例を示します。
 
@@ -90,7 +90,7 @@ public sealed class MyClass
 }
 ```
 
-"、Nq"サフィックスが最終的な値を表示するときに、引用符を削除する、式エバリュエーターを示します (nq = 引用符はありません)。
+", Nq" サフィックスは、式エバリュエーターに対して、最終的な値 (nq = no 引用符) を表示するときに引用符を削除するように指示します。
 
 ## <a name="example"></a>例
 次のコード例では、 `DebuggerDisplay`を `DebuggerBrowseable` および `DebuggerTypeProxy`と組み合わせて使用する方法を示します。 **[ウォッチ]** ウィンドウなど、デバッガーの変数ウィンドウに表示されると、次のように展開が作成されます。
@@ -98,7 +98,7 @@ public sealed class MyClass
 |**Name**|**[値]**|**Type**|
 |--------------|---------------|--------------|
 |キー|"three"|object {string}|
-|[値]|3|object {int}|
+|値|3|object {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
