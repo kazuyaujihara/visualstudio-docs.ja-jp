@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 08/02/2019
 ms.locfileid: "65705866"
 ---
 # <a name="convert-dialog-box"></a>[変換] ダイアログ ボックス
@@ -33,7 +33,7 @@ ms.locfileid: "65705866"
   
 #### <a name="to-access-the-convert-dialog-box"></a>[変換] ダイアログ ボックスにアクセするには  
   
-1. メニュー バーから **[ファイル]**、 **[開く]**、 **[変換]** の順に選択します。  
+1. メニュー バーから **[ファイル]** 、 **[開く]** 、 **[変換]** の順に選択します。  
   
      現在使用できるコード変換ツールの一覧が表示されます。  
   
