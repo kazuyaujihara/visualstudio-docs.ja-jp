@@ -43,9 +43,9 @@ ms.locfileid: "62945083"
 
 「[Create work in branches](/azure/devops/repos/git/branches)」 (ブランチで作業を作成する) を参照してください。
 
-## <a name="pull-requests-page-git"></a>プル要求ページ (Git)
+## <a name="pull-requests-page-git"></a>プルリクエストページ (Git)
 
-「[Review code with pull requests](/azure/devops/repos/git/pullrequest)」 (プル要求を使用してコードを確認する) を参照してください。
+「[Review code with pull requests](/azure/devops/repos/git/pullrequest)」 (プルリクエストを使用してコードを確認する) を参照してください。
 
 ## <a name="sync-page-git"></a>同期ページ (Git)
 
