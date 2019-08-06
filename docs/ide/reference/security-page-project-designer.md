@@ -1,6 +1,7 @@
 ---
 title: '[セキュリティ] ページ (プロジェクト デザイナー)'
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
@@ -8,29 +9,29 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Security page
 - Security page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe78b2473fc58166edb124924673ff0c49ba92a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2115acae1e77bdacfa926c472940659c549cff65
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945493"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461295"
 ---
 # <a name="security-page-project-designer"></a>[セキュリティ] ページ (プロジェクト デザイナー)
 
-**プロジェクト デザイナー**の **[セキュリティ]** ページを使用して、[!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 配置によって配置されたアプリケーションのコード アクセス セキュリティの設定を構成できます。 詳細については、「[ClickOnce アプリケーションのコード アクセス セキュリティ](../../deployment/code-access-security-for-clickonce-applications.md)」を参照してください。
+**プロジェクト デザイナー**の **[セキュリティ]** ページを使用して、ClickOnce 配置を使用して配置されたアプリケーションに対してコード アクセス セキュリティの設定を構成できます。 詳細については、「[ClickOnce アプリケーションのコード アクセス セキュリティ](../../deployment/code-access-security-for-clickonce-applications.md)」を参照してください。
 
- この **[セキュリティ]** ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、**[プロジェクト]** メニューの **[プロパティ]** をクリックします。 **プロジェクト デザイナー**が表示されたら、**[セキュリティ]** タブをクリックします。
+ この **[セキュリティ]** ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。 **プロジェクト デザイナー**が表示されたら、 **[セキュリティ]** タブをクリックします。
 
 ## <a name="security-settings"></a>セキュリティ設定
 
  **[ClickOnce セキュリティ設定を有効にする]**
 
- セキュリティ設定をデザイン時に有効にするかどうかを指定します。 このオプションがオフの場合は、**[セキュリティ]** ページの他のオプションもすべて無効になります。
+ セキュリティ設定をデザイン時に有効にするかどうかを指定します。 このオプションがオフの場合は、 **[セキュリティ]** ページの他のオプションもすべて無効になります。
 
 > [!NOTE]
 > **発行**ウィザードを使用してアプリケーションを発行するときは、このオプションが自動的に有効になります。
@@ -53,7 +54,7 @@ ms.locfileid: "62945493"
 
  このオプションをオンにすると、アプリケーションをクライアント コンピューターにインストールしたり実行したりするときに、部分信頼アクセス許可が要求されます。 *部分信頼*とは、要求したコード アクセス セキュリティ許可で許可されたアクションのみが実行されることを意味します。 セキュリティ アクセス許可の構成方法の詳細については、「[ClickOnce アプリケーションのコード アクセス セキュリティ](../../deployment/code-access-security-for-clickonce-applications.md)」を参照してください。
 
- 部分信頼セキュリティの設定は、**[ClickOnce セキュリティのアクセス許可]** 領域のオプションを構成することで指定できます。
+ 部分信頼セキュリティの設定は、 **[ClickOnce セキュリティのアクセス許可]** 領域のオプションを構成することで指定できます。
 
 ## <a name="clickonce-security-permissions"></a>ClickOnce セキュリティのアクセス許可
 

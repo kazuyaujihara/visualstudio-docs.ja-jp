@@ -14,14 +14,25 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429486"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661999"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio テスト エクスプローラーに関する FAQ
+
+::: moniker range=">=vs-2019"
+## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Visual Studio 2019 では特徴によるグループ化はどこにありますか?
+この特徴によるグループ化は移動され、列となりました。 Visual Studio 2019 バージョン 16.2 のカスタマイズ可能な多層階層では、グループ化として特徴を含めることは不要なビジュアルの複雑さを生み出すと我々は考えました。 この設計に関するフィードバックをお待ちしております。 https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+
+現時点では、テスト エクスプローラーで列を右クリックし、[列] を選択します。 [特徴] 列をチェックすると、テスト エクスプローラーに表示されます。 これで、この列を関心がある特徴別にフィルター処理できます。
+
+![[特徴] 列を表示する](media/vs-2019/trait-column.png)
+![特徴列をフィルター処理する](media/vs-2019/trait-column-filter.png)
+
+::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>動的なテストの検出
 

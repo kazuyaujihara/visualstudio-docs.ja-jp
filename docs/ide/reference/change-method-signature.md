@@ -1,5 +1,6 @@
 ---
 title: メソッド シグネチャのリファクター
+description: メソッドのパラメーターの順序を削除または変更します。 メソッドを右クリックし、[クイックアクションとリファクタリング] を選択し、[署名の変更] を選択します。
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -13,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 89af8235f897858094058981df52d6a3fec8a7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e8332cb8fb39c47f4e46a7d306b2673ff61b9e9
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791169"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483746"
 ---
 # <a name="change-a-method-signature-refactoring"></a>メソッド シグネチャの変更リファクタリング
 
@@ -38,7 +39,7 @@ ms.locfileid: "62791169"
 
 1. 変更するメソッドの名前またはその使用の 1 つを強調表示するか、内側にテキスト カーソルを置きます。
 
-   - C#: 
+   - C#:
 
        ![強調表示された C# のコード](media/changesignature-highlight-cs.png)
 
@@ -50,7 +51,7 @@ ms.locfileid: "62791169"
 
    - **キーボード**
       - **Ctrl + R** キーを押し、次に **Ctrl + V** キーを押します。  選ばれているプロファイルによってキーボード ショートカットが異なる場合があることに注意してください。
-      - 行の任意の場所で **Ctrl**+**.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーし、[プレビュー] ウィンドウ ポップアップから **[シグネチャの変更]** を選択します。
+      - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーし、[プレビュー] ウィンドウ ポップアップから **[シグネチャの変更]** を選択します。
    - **マウス**
       - **[編集] > [リファクター] > [パラメーターの削除]** の順に選択します。
       - **[編集] > [リファクター] > [パラメーター順序の再変更]** の順に選択します。
@@ -67,15 +68,15 @@ ms.locfileid: "62791169"
    | **復元** | 選択した、取り消したパラメーターを一覧に復元します
 
    > [!TIP]
-   > コミットする前に[結果を確認する](../../ide/preview-changes.md)には、**[参照の変更のプレビュー]** チェック ボックスを使います。
+   > コミットする前に[結果を確認する](../../ide/preview-changes.md)には、 **[参照の変更のプレビュー]** チェック ボックスを使います。
 
-4. 完了したら、**[OK]** ボタンをクリックして変更を実行します。
+4. 完了したら、 **[OK]** ボタンをクリックして変更を実行します。
 
-   - C#: 
+   - C#:
 
       ![シグネチャ変更の結果 - C#](media/changesignature-result-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
       ![シグネチャ変更の結果 - Visual Basic](media/changesignature-result-vb.png)
 

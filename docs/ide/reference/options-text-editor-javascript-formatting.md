@@ -1,6 +1,7 @@
 ---
 title: '[オプション]、[テキスト エディター]、[JavaScript]、[書式設定]'
 ms.date: 10/29/2018
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
@@ -10,25 +11,27 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.New_Lines
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e995ec564d0260faac02eb3b4a0237fa9f1f89b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778353"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605994"
 ---
-# <a name="options-text-editor-javascript-formatting"></a>[オプション]、[テキスト エディター]、[JavaScript]、[書式設定]
-**[オプション]** ダイアログ ボックスの **[書式設定]** ページで、コード エディターでのコード書式オプションを設定します。 このページにアクセスするには、メニュー バーで **[ツール]**、**[オプション]** の順にクリックし、次に、**[テキスト エディター]**、**[JavaScript]**、**[書式設定]** を展開します。
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>[オプション] ダイアログ ボックス:[テキスト エディター] \> [JavaScript] \> [書式設定]
+
+**[オプション]** ダイアログ ボックスの **[書式設定]** ページで、コード エディターでのコード書式オプションを設定します。 このページにアクセスするには、メニュー バーで **[ツール]**  >  **[オプション]** を選択し、 **[テキスト エディター]**  >  **[JavaScript/TypeScript]**  >  **[書式設定]** を展開します。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="automatic-formatting"></a>自動書式
- 次のオプションによって、**ソース** ビューで書式設定が実行される条件を指定します。
+
+次のオプションによって、**ソース** ビューで書式設定が実行される条件を指定します。
 
 ### <a name="uielement-list"></a>UIElement の一覧
 
@@ -41,7 +44,8 @@ ms.locfileid: "62778353"
 |**貼り付け時に書式設定する**|このオプションをオンにすると、コード エディターにコードを貼り付けるとコードの書式が再設定されます。 エディターでは、現在定義されている書式指定規則が使用されます。 このオプションがオンになっていない場合、エディターでは、貼り付けられたコードの元の書式が使用されます。|
 
 ## <a name="new-lines"></a>改行
- 次のオプションによって、新しい行に関数およびコントロール ブロックの始めかっこを挿入するかどうかを指定します。
+
+次のオプションによって、新しい行に関数およびコントロール ブロックの始めかっこを挿入するかどうかを指定します。
 
 ### <a name="uielement-list"></a>UIElement の一覧
 
@@ -51,7 +55,8 @@ ms.locfileid: "62778353"
 |**新しい行にコントロール ブロックの始めかっこを配置する**|このオプションをオンにすると、コントロール ブロック (`if` コントロール ブロック、`while` コントロール ブロックなど) に関連付けられている始めかっこが新しい行に移動します。|
 
 ## <a name="spacing"></a>スペース
- 次のオプションによって、**[ソース]** ビューにスペースが挿入される条件を指定します。
+
+次のオプションによって、 **[ソース]** ビューにスペースが挿入される条件を指定します。
 
 ### <a name="uielement-list"></a>UIElement の一覧
 

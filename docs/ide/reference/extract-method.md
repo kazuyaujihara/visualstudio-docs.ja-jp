@@ -1,5 +1,6 @@
 ---
 title: メソッドの抽出
+description: コードを選択してから Ctrl + R キー、Ctrl + M キーを入力して、コードの一部を独自のメソッドに変換します。
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -12,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc1e96bed6c3f7fac857262644765d383de37482
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a764fd0d95696866e914ec76a560a49d641acb47
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791033"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483669"
 ---
 # <a name="extract-a-method-refactoring"></a>メソッドの抽出リファクタリング
 
@@ -37,11 +38,11 @@ ms.locfileid: "62791033"
 
 1. 抽出するコードを強調表示します。
 
-   - C#: 
+   - C#:
 
        ![強調表示されたコード - C#](media/extractmethod-highlight-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
        ![強調表示されたコード - Visual Basic](media/extractmethod-highlight-vb.png)
 
@@ -49,7 +50,7 @@ ms.locfileid: "62791033"
 
    - **キーボード**
       - **Ctrl + R** キーを押し、次に **Ctrl + M** キーを押します。 選ばれているプロファイルによってキーボード ショートカットが異なる場合があることに注意してください。
-      - 行の任意の場所で **Ctrl**+**.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーし、[プレビュー] ウィンドウ ポップアップから **[メソッドの抽出]** を選択します。
+      - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーし、[プレビュー] ウィンドウ ポップアップから **[メソッドの抽出]** を選択します。
    - **マウス**
       - **[編集] > [リファクター] > [メソッドの抽出]** の順に選択します。
       - コードを右クリックし **[リファクター] > [抽出] > [メソッドの抽出]** の順に選択します。
@@ -60,15 +61,15 @@ ms.locfileid: "62791033"
    > [!TIP]
    > この新しい名前を使用するコメントやその他の文字列も更新できます。また、IDE の右上に表示される **[名前の変更]** ボックス内のチェックボックスを使用して、保存前に[変更をプレビュー](../../ide/preview-changes.md)することもできます。
 
-   - C#: 
+   - C#:
 
       ![メソッド名の変更 - C#](media/extractmethod-rename-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
       ![メソッド名の変更 - Visual Basic](media/extractmethod-rename-vb.png)
 
-3. 変更を確認した後は、**[適用]** ボタンを選ぶか、**Enter** キーを押すと、変更がコミットされます。
+3. 変更を確認した後は、 **[適用]** ボタンを選ぶか、**Enter** キーを押すと、変更がコミットされます。
 
 ## <a name="see-also"></a>関連項目
 

@@ -1,7 +1,7 @@
 ---
 title: 変更ログ (Visual Studio Tools for Unity、Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 05/28/2019
+ms.date: 07/29/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,40 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 365476e0e87f5bb8c71041ad8afbdd7db6e6f952
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821342"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661954"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>変更ログ (Visual Studio Tools for Unity、Windows)
 
 Visual Studio Tools for Unity の変更ログです。
+
+## <a name="4201"></a>4.2.0.1
+
+リリース日: 2019 年 7 月 24 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - Unity プロジェクト エクスプローラーからあらゆる種類のファイルを作成する新しいオプションを追加しました。
+  
+  - Unity プロジェクトに高速ビルドを使用する場合の診断キャッシュを改善します。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - ファイル拡張子が既知のエディターによって処理されなかった問題を修正しました。
+
+  - Unity プロジェクト エクスプローラーでのカスタム拡張子へのサポートを追加しました。
+
+  - メイン ダイアログの外部での保存設定を修正しました。
+
+  - レガシの Microsoft.VisualStudio.MPF 依存関係を削除しました。
 
 ## <a name="4110"></a>4.1.1.0
 

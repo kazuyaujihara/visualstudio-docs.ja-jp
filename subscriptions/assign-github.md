@@ -1,26 +1,24 @@
 ---
-title: Visual Studio + GitHub バンドル |Microsoft Docs
+title: Visual Studio + GitHub Enterprise バンドル | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/23/2019
+ms.date: 07/28/2019
 ms.topic: conceptual
-description: Visual Studio + GitHub バンドルでのサブスクリプションの管理
-ms.openlocfilehash: 875f91f19aee33d290933e6a5455a4dead78d6f0
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Visual Studio + GitHub Enterprise バンドルでのサブスクリプションの管理
+ms.openlocfilehash: 0f297eac1d6b2bc5fe322be305fab7f268f3d041
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783632"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605387"
 ---
-# <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>Visual Studio Subscriptions with GitHub Enterprise の管理
-
+# <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise を使用して Visual Studio サブスクリプションを管理する
 Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visual Studio Standard サブスクリプションと GitHub Enterprise が一体化した、新しいサブスクリプション バンドルを購入できます。 この方法により、Visual Studio サブスクライバーは GitHub Enterprise を簡単かつ経済的に入手することができます。 
 
 組織が Visual Studio Subscriptions with GitHub Enterprise を購入すると、2 つの部分に分かれてプロビジョニングおよび管理されます。
 
-## <a name="managing-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの管理
-
+## <a name="manage-visual-studio-subscriptions"></a>Visual Studio サブスクリプションを管理する
 組織が Visual Studio Subscriptions with GitHub Enterprise を購入すると、サブスクリプションの Visual Studio 部分がすぐにプロビジョニングされ、Visual studio の[サブスクリプション管理](https://manage.visualstudio.com)ポータルで割り当てと管理にこれらのサブスクリプションを使用できます。 
 
 サブスクリプションの管理の詳細については、次のトピックをご覧ください。
@@ -35,8 +33,7 @@ Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visu
 >
 > 割り当てられている GitHub サブスクリプションごとに、このサブスクリプションのライセンス要件への準拠を維持するために、お客様の責任下で、管理ポータルで対応する Visual Studio with GitHub サブスクリプションが割り当てられていることを確認する必要があります。
 
-## <a name="managing-github-enterprise-subscriptions"></a>GitHub Enterprise サブスクリプションの管理
-
+## <a name="manage-github-enterprise-subscriptions"></a>GitHub Enterprise サブスクリプションを管理する
 GitHub Enterprise サブスクリプションが購入されると、GitHub ではお客様との連携がなされて、GitHub にアクセスする組織が作成および構成され、管理者が識別されます。  すると、これらの管理者は、管理者として設定されていることを示す通知を受け取ります。  
 
 このプロセスは非常に複雑であるため、サブスクリプションの購入後、組織と管理者が完全に設定されるまで数日かかることがあります。
@@ -44,7 +41,6 @@ GitHub Enterprise サブスクリプションが購入されると、GitHub で�
 GitHub は、クラウド ベースの GitHub.com、またはオンプレミスの GitHub Enterprise Server のいずれかとして使用できます。  2 つのバージョンを管理するプロセスは異なります。  GitHub では、GitHub Enterprise サブスクリプションの管理に役立つ、さまざまなヘルプ トピックや管理者ガイドが提供されています。  選択したトピックへのリンクを次に示します。  
 
 ### <a name="githubcom"></a>GitHub.com 
-
 GitHub.com の管理の詳細については、[GitHub ヘルプ](https://help.github.com/en)の次のトピックをご覧ください。
 - [ヘルプ トピックの完全な一覧](https://help.github.com/en)
 - [組織内のメンバーシップの管理](https://help.github.com/en/articles/managing-membership-in-your-organization)
@@ -56,7 +52,6 @@ GitHub.com の管理の詳細については、[GitHub ヘルプ](https://help.g
 - [組織のリポジトリへのアクセスの管理](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
 
 ### <a name="github-enterprise-server"></a>GitHub Enterprise Server
-
 GitHub ヘルプでは、組織における GitHub Enterprise Server の実装の管理について、質問に回答したりヒントを示すさまざまな管理者ガイドが提供されています。
 
 - [すべての管理者ガイドの表示](https://help.github.com/en/enterprise/2.16/admin)
@@ -70,7 +65,6 @@ GitHub ヘルプでは、組織における GitHub Enterprise Server の実装�
 - [GitHub Enterprise Server のインストールと構成](https://help.github.com/en/enterprise/2.16/admin/installation)
 
 ## <a name="support-resources"></a>サポート リソース
-
 - [GitHub ヘルプ](https://help.github.com/en)で、GitHub のさまざまなトピックに関する質問への回答を確認できます。
 - [GitHub Community Forum](https://github.community/) で、他の GitHub ユーザーからサポートを得ることができます。
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
@@ -78,5 +72,4 @@ GitHub ヘルプでは、組織における GitHub Enterprise Server の実装�
 - GitHub Enterprise の[テクニカル サポート](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)を利用してください。   
 
 ## <a name="next-steps"></a>次の手順
-
 Visual Studio Subscriptions with GitHub Enterprise の管理の詳細については、Visual Studio の[サブスクリプション管理ポータル](https://visualstudio.microsoft.com/subscriptions-administration/)をご覧ください。

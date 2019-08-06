@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 563dcd4d91e23c019edf5a777b70453f40091d69
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315250"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533366"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>チュートリアル: Visual Studio で Node.js と React のアプリを作成する
 
@@ -322,7 +322,7 @@ webpack は、ブラウザーで実行できるように JavaScript ファイル
 
 ## <a name="add-a-build-script-to-transpile-the-jsx"></a>JSX をトランスパイルするビルド スクリプトを追加する
 
-新しいバージョンの Node.js では、ビルド スクリプトが必要です。 (前のセクションで示したように) コマンド ラインで JSX をトランスパイルする代わりに、Visual Studio からビルドするときに JSX をトランスパイルすることができます。
+Visual Studio 2019 以降では、ビルド スクリプトが必須です。 (前のセクションで示したように) コマンド ラインで JSX をトランスパイルするのでなく、Visual Studio からビルドするときに JSX をトランスパイルすることができます。
 
 * *package.json* を開き、`dependencies` セクションの後に次のセクションを追加します。
 

@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef81a2075f05acf8ea6ab8b42f77797425a3abd
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 147ec9096be430d0bc81be65fdf68f927c0f3dac
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559609"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661939"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe のコマンド ライン オプション
 
@@ -35,7 +35,7 @@ ms.locfileid: "67559609"
 |**[*テストファイル名*]**|指定されたファイルからテストを実行します。 複数のテスト ファイル名を指定するときは、スペースで区切ります。<br />例: `mytestproject.dll`、`mytestproject.dll myothertestproject.exe`|
 |**/Settings:[*ファイル名*]**|データ コレクターなどの追加設定を指定してテストを実行します。<br />例 : `/Settings:Local.RunSettings`|
 |**/Tests:[*テスト名*]**|指定した値を含む名前のテストを実行します。 複数の値を指定するには、コンマで区切ります。<br />例 : `/Tests:TestMethod1,testMethod2`<br />**/Tests** コマンドライン オプションを、 **/TestCaseFilter** コマンドライン オプションと一緒に使用することはできません。|
-|**/Parallel**|テストを並列で実行するように指定します。 既定では、コンピューター上の利用可能なコア数まで使用できます。 使用するコアの数は、設定ファイルを使って構成できます。|
+|**/Parallel**|テストを並列で実行するように指定します。 既定では、マシン上のすべての利用可能なコア数まで使用できます。 使用するコアの数は、設定ファイルで構成できます。|
 |**/Enablecodecoverage**|テストの実行で、データ診断アダプター CodeCoverage を有効にします。<br />設定ファイルで指定されていない場合は、既定の設定が使用されます。|
 |**/InIsolation**|分離プロセスでテストを実行します。<br />この分離により、テストでエラーが発生しても *vstest.console.exe* プロセスが停止することは少なくなりますが、テストの実行速度は低下する可能性があります。|
 |**/UseVsixExtensions**|このオプションでは、テストの実行の際に、*vstest.console.exe* プロセスでインストール済みの VSIX 拡張機能 (ある場合) を使用するかスキップするかを指定します。<br />このオプションは非推奨です。 Visual Studio の次のメジャー リリース以降、このオプションは削除される可能性があります。 NuGet パッケージとして利用可能な拡張機能の使用に移行してください。<br />例 : `/UseVsixExtensions:true`|

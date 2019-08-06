@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: befbb09d347043ae304702618506d193344e23ba
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: cae7a02c774773d08c287dde7df59ff62fdbec58
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195247"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533345"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET Compiler Platform アナライザーの概要
 
@@ -80,9 +80,9 @@ Visual Studio 拡張機能としてアナライザーをインストールする
 
 Visual Studio 拡張機能としてインストールされたアナライザーからルールの重要度を設定することはできません。 [ルールの重要度](../code-quality/use-roslyn-analyzers.md#rule-severity)を構成するには、NuGet パッケージとしてアナライザーをインストールします。
 
-### <a name="categories"></a>カテゴリ
+## <a name="categories"></a>カテゴリ
 
-コードの分析に役立つさまざまな種類のアナライザーを次に示します。 
+コードの分析に役立つさまざまな種類のアナライザーを次に示します。
 
 - Microsoft が推奨するアナライザー: [FXCop アナライザー](../code-quality/fxcop-analyzers.yml)
 - Visual Studio IDE アナライザー: [EditorConfig](../ide/code-styles-and-code-cleanup.md)

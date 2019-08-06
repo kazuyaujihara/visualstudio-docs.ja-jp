@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 06/29/2019
+ms.date: 07/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552874"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493328"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
-**[16.1 リリース](/visualstudio/releases/2019/release-notes/)の更新**
+**[16.2 リリース](/visualstudio/releases/2019/release-notes/)の更新**
 
 >[!div class="button"]
 >[Visual Studio 2019 のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -102,6 +102,12 @@ Visual Studio 2019 のリリースにより、Visual Studio を Per-monitor awar
 
 詳細については、[Visual Studio 2019 を使ったマルチモニター エクスペリエンスの向上](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/)に関するブログ記事をご覧ください。
 
+### <a name="test-explorer"></a>テスト エクスプローラー
+
+**16.2 の新機能**: テスト エクスプローラーを更新しました。これにより、大規模なテスト セットの処理の改善、フィルター処理の簡易化、コマンドの見つけやすさの向上、プレイリスト ビューのタブ化、および表示するテスト情報をユーザーが微調整できるカスタマイズ可能な列が実現されます。
+
+   ![テスト エクスプローラーでのユーザー インターフェイスの改善を示すスクリーン ショット](media/vs-2019/test-explorer-ui.png)
+
 ## <a name="collaborate"></a>共同作業
 
 問題を解決するためにチームを作る方法について詳しくは、次のビデオをご覧ください。 <br><br>"*ビデオの長さ:4.22 分*"
@@ -178,6 +184,12 @@ Azure VM で実行される ASP.NET (Core およびデスクトップ) アプリ
 
 詳細については、「[Debug live ASP.NET Azure apps using the Snapshot Debugger (スナップショット デバッガーを使用したライブ ASP.NET Azure アプリのデバッグ)](../debugger/debug-live-azure-applications.md)」ページと「[Introducing Time Travel Debugging for Visual Studio Enterprise 2019 (Visual Studio Enterprise 2019 のタイム トラベル デバッグの概要)](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/)」ブログ投稿を参照してください。
 
+### <a name="microsoft-edge-insider-support"></a>Microsoft Edge Insider サポート
+
+**16.2 の新機能**: [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) ブラウザーを使用して、JavaScript アプリケーションにブレークポイントを設定し、デバッグ セッションを開始することができます。 これを行うと、Visual Studio によって、新しいブラウザー ウィンドウが開き、デバッグが有効になります。このウィンドウを使用して、Visual Studio 内でアプリケーションの JavaScript をステップ実行することができます。
+
+   ![ブラウザーでの JavaScript コードのレンダリングを示すスクリーンショット](media/vs-2019/edge-chromium-breakpoint.png)
+
 ## <a name="whats-next"></a>次の内容
 
 Visual Studio 2019 は、より優れた開発を可能にする新機能で頻繁に更新されています。 最新のイノベーションの詳細については、「[The Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)」 (Visual Studio に関するブログ) を参照してください。 現在までプレビューでリリースしたものの記録については、[プレビュー リリース ノート](/visualstudio/releases/2019/release-notes-preview/)に関する記事を参照してください。
@@ -194,9 +206,8 @@ Visual Studio チームにフィードバックを送ることにどんな意味
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio 2019 のお知らせ](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Visual Studio 2019 リリース ノート](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 SDK の新機能](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Visual Studio 2019 for Mac が利用できるようになりました](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Visual Studio 2019 for Mac リリース ノート](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Microsoft Build 2019 カンファレンス](https://www.microsoft.com/build)
 * [Microsoft Connect(); 2018 カンファレンス](https://www.microsoft.com/connectevent)
