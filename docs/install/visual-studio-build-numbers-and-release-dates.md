@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 07/10/2019
+ms.date: 07/24/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5e9ed79d26c5bbb88aa28cbb8d23c82b29b3e1de
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 3e6cde2a132107d8097cd5c51e438b16ffbf54ea
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785040"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461519"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio のビルド番号とリリース日
 
@@ -31,6 +31,9 @@ ms.locfileid: "67785040"
 
 | **Version**| **チャネル** | **リリース日** | **ビルド バージョン** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.2.0 | 解放 | 2019 年 7 月 24 日 | 16.2.29123.88 |
+| 16.3.0 | Preview 1 | 2019 年 7 月 24 日 | 16.3.29123.89 |
+| 16.2.0 | Preview 4 | 2019 年 7 月 16 日 | 16.2.29111.141 |
 | 16.1.6 | 解放 | 2019 年 7 月 9 日 | 16.1.29102.190 |
 | 16.0.6 | 解放 | 2019 年 7 月 9 日 | 16.0.28803.540 |
 | 16.1.5 | 解放 | 2019 年 7 月 2 日 | 16.1.29025.244 |

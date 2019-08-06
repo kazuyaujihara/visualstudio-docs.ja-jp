@@ -1,6 +1,7 @@
 ---
 title: '方法: ビルド イベントを指定する (C#)'
 ms.date: 03/21/2019
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -9,17 +10,17 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28718a213e42f3db8c4beee5d45666044148601d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9484d6977c6896253197215ce185579518448da8
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946909"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483704"
 ---
 # <a name="how-to-specify-build-events-c"></a>方法: ビルド イベントを指定する (C#)
 
@@ -37,27 +38,27 @@ ms.locfileid: "62946909"
 
 4. **[ビルド前に実行するコマンド ライン]** ボックスで、ビルド イベントの構文を指定します。
 
-    > [!NOTE]
-    > プロジェクトが最新の状態で、ビルドがトリガーされない場合、ビルド前イベントは実行されません。
+   > [!NOTE]
+   > プロジェクトが最新の状態で、ビルドがトリガーされない場合、ビルド前イベントは実行されません。
 
 5. **[ビルド後に実行するコマンド ライン]** ボックスで、ビルド イベントの構文を指定します。
 
-    > [!NOTE]
-    > *.bat* ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。
+   > [!NOTE]
+   > *.bat* ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。
 
 6. **[ビルド後イベントの実行]** ボックスで、ビルド後イベントを実行する条件を指定します。
 
-    > [!NOTE]
-    > 長い構文を追加する場合、または [[ビルド前に実行するコマンド ライン]/[ビルド後に実行するコマンド ライン] ダイアログ ボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)でビルド マクロを選択する場合は、省略記号 **[...]** ボタンをクリックして編集ボックスを表示します。
+   > [!NOTE]
+   > 長い構文を追加する場合、または [[ビルド前に実行するコマンド ライン]/[ビルド後に実行するコマンド ライン] ダイアログ ボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)でビルド マクロを選択する場合は、省略記号 **[...]** ボタンをクリックして編集ボックスを表示します。
 
-     ビルド イベントの構文では、コマンド プロンプトまたは *.bat* ファイルで有効な任意のコマンドを使うことができます。 後続のすべてのコマンドが確実に実行されるように、バッチ ファイルの名前の前には `call` を記述する必要があります。
+   ビルド イベントの構文では、コマンド プロンプトまたは *.bat* ファイルで有効な任意のコマンドを使うことができます。 後続のすべてのコマンドが確実に実行されるように、バッチ ファイルの名前の前には `call` を記述する必要があります。
 
-    > [!NOTE]
-    > ビルド前またはビルド後イベントが正常に完了しない場合は、アクションの成功を示すゼロ (0) 以外のコードでイベント アクションを終了させて、ビルドを強制終了することができます。
+   > [!NOTE]
+   > ビルド前またはビルド後イベントが正常に完了しない場合は、アクションの成功を示すゼロ (0) 以外のコードでイベント アクションを終了させて、ビルドを強制終了することができます。
 
 ## <a name="example"></a>例
 
-次の手順は、ビルド後イベントから呼び出される *.exe* コマンドを使って、アプリケーション マニフェスト (プロジェクト ディレクトリ内の *.exe.manifest* ファイル) 内にオペレーティング システムの最小バージョンを設定する方法を示しています。 オペレーティング システムの最小バージョンは、4.10.0.0 などの 4 つの部分に分かれた数字です。 これを行うには、次のように、コマンドでマニフェストの `<dependentOS>` セクションを変更します。
+次の手順は、ビルド後イベントから呼び出される *.exe* コマンドを使って、アプリケーション マニフェスト (プロジェクト ディレクトリ内の *.exe.manifest* ファイル) 内にオペレーティング システムの最小バージョンを設定する方法を示しています。 オペレーティング システムの最小バージョンは、4.10.0.0 などの 4 つの部分に分かれた数字です。 オペレーティング システムの最小バージョンを設定するには、コマンドによってマニフェストの `<dependentOS>` セクションを変更します。
 
 ```xml
 <dependentOS>
@@ -83,11 +84,11 @@ ms.locfileid: "62946909"
    class Program
    {
       /// <summary>
-      /// This function will set the minimum operating system version for a ClickOnce application.
+      /// This function sets the minimum operating system version for a ClickOnce application.
       /// </summary>
       /// <param name="args">
       /// Command Line Arguments:
-      /// 0 - Path to application manifest (.exe.manifest).
+      /// 0 - Path to application manifest (.exe.manifest)
       /// 1 - Version of OS
       ///</param>
       static void Main(string[] args)
@@ -135,43 +136,43 @@ ms.locfileid: "62946909"
 
 5. *.exe* ファイルを *C:\TEMP\ChangeOSVersionVB.exe* などのディレクトリにコピーします。
 
-   次に、ビルド後のイベントでこのコマンドを呼び出して、アプリケーション マニフェストを変更します。
+次に、ビルド後のイベントでこのコマンドを呼び出して、アプリケーション マニフェストを変更します。
 
 ### <a name="invoke-a-post-build-event-to-modify-the-application-manifest"></a>ビルド後のイベントを呼び出してアプリケーション マニフェストを変更する
 
 1. 新しい **Windows フォーム アプリ** プロジェクトを作成し、それに **CSWinApp** という名前を付けます。
 
-2. **ソリューション エクスプローラー**でプロジェクトを選択し、**[プロジェクト]** メニューの **[プロパティ]** を選択します。
+2. **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** を選択します。
 
-3. **プロジェクト デザイナー**で、**[発行]** ページに移動し、**[発行場所]** を *C:\TEMP* に設定します。
+3. **プロジェクト デザイナー**で、 **[発行]** ページに移動し、 **[発行場所]** を *C:\TEMP* に設定します。
 
 4. **[今すぐ発行]** をクリックして、プロジェクトを発行します。
 
-     マニフェスト ファイルがビルドされ、*C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest* に保存されます。 マニフェストを表示するには、ファイルを右クリックし、**[プログラムから開く]**、**[一覧からプログラムを選択する]**、**[メモ帳]** の順にクリックします。
+   マニフェスト ファイルがビルドされ、*C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest* に保存されます。 マニフェストを表示するには、ファイルを右クリックし、 **[プログラムから開く]** 、 **[一覧からプログラムを選択する]** 、 **[メモ帳]** の順にクリックします。
 
-     ファイルで `<osVersionInfo>` 要素を探します。 たとえば、バージョンは次のように記述されています。
+   ファイルで `<osVersionInfo>` 要素を探します。 たとえば、バージョンは次のように記述されています。
 
-    ```xml
-    <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
-    ```
+   ```xml
+   <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+   ```
 
-5. **プロジェクト デザイナー**に戻り、**[ビルド イベント]** タブをクリックし、**[ビルド後の編集]** をクリックします。
+5. **プロジェクト デザイナー**に戻り、 **[ビルド イベント]** タブをクリックし、 **[ビルド後の編集]** をクリックします。
 
 6. **[ビルド後に実行するコマンド ライン]** ボックスに次のコマンドを入力します。
 
-     `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
+   `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
 
-     プロジェクトをビルドすると、このコマンドでアプリケーション マニフェストのオペレーティング システムの最小バージョンが 5.1.2600.0 に変更されます。
+   プロジェクトをビルドすると、このコマンドでアプリケーション マニフェストのオペレーティング システムの最小バージョンが 5.1.2600.0 に変更されます。
 
-     `$(TargetPath)` マクロは作成される実行可能ファイルの完全なパスを表すので、`$(TargetPath)`*.manifest* は *bin* ディレクトリに作成されるアプリケーション マニフェストを指定します。 発行することにより、前に設定した発行場所にこのマニフェストがコピーされます。
+   `$(TargetPath)` マクロは作成される実行可能ファイルの完全なパスを表すので、`$(TargetPath).manifest` では *bin* ディレクトリに作成されるアプリケーション マニフェストが指定されます。 発行することにより、前に設定した発行場所にこのマニフェストがコピーされます。
 
 7. プロジェクトを再び発行します。
 
-     マニフェストのバージョンは次のように表示されます。
+   マニフェストのバージョンは次のように表示されます。
 
-    ```xml
-    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
-    ```
+   ```xml
+   <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+   ```
 
 ## <a name="see-also"></a>関連項目
 

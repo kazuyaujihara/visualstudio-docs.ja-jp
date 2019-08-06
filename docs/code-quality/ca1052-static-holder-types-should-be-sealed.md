@@ -1,6 +1,6 @@
 ---
-title: CA1052:スタティック ホルダー型はシールドされていなければなりません
-ms.date: 03/11/2019
+title: CA1052:静的ホルダー型は Static または NotInheritable である必要があります
+ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
@@ -18,64 +18,71 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4886a11d7d207523785b9d568226ae98a9e97b28
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 0a574f7f77277255acf2150c218c3f4db061e75c
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744583"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604769"
 ---
-# <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052:スタティック ホルダー型はシールドされていなければなりません
+# <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052:静的ホルダー型は Static または NotInheritable である必要があります
 
 |||
 |-|-|
-|TypeName|StaticHolderTypesShouldBeSealed|
+|TypeName|StaticHolderTypesAnalyzer|
 |CheckId|CA1052|
 |Category|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
 
-非抽象型が静的メンバーのみが含まれていますとで宣言されていない、[シール](/dotnet/csharp/language-reference/keywords/sealed)([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) 修飾子。
+非抽象型には、静的なメンバー (可能な既定のコンストラクター以外) だけが含まれており、 [static](/dotnet/csharp/language-reference/keywords/static)または[Shared](/dotnet/visual-basic/language-reference/modifiers/shared)修飾子で宣言されていません。
 
-既定では、このルールのみが検索に、外部から参照の種類が、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できる型のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-Ca 1052 のルールでは、型が派生型でオーバーライド可能な機能を備えていないため、静的メンバーのみを含む型でを継承するように設計しないことを前提としています。 継承を意図していない型をマークする必要があります、`sealed`または`NotInheritable`基本データ型としての使用を禁止する修飾子。 このルールは、抽象クラスの場合は発生しません。
+Rule CA1052 は、静的メンバーのみを含む型が継承されるように設計されていないことを前提としています。これは、派生型でオーバーライドできる機能が型に用意されていないためです。 継承を意図していない型は、基本型とし`static`てのC#使用を禁止するために、の修飾子でマークする必要があります。 また、既定のコンストラクターを削除する必要があります。 Visual Basic では、クラスを[モジュール](/dotnet/visual-basic/language-reference/statements/module-statement)に変換する必要があります。
+
+この規則は、基底クラスを持つ抽象クラスまたはクラスに対しては起動しません。 ただし、このルールは、空のインターフェイスをサポートするクラスに対して発生します。
+
+> [!NOTE]
+> この規則の FxCop analyzer 実装では、 [RULE CA1053](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)の機能も含まれています。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、マークの種類は`sealed`または`NotInheritable`します。 場合は、プロジェクトが .NET Framework 2.0 をターゲットまたは型としてマークする方は、後で、`static`または`Shared`します。 この方法では、クラスが作成されていることを防ぐために、プライベート コンス トラクターを宣言する必要はありません。
+この規則違反を修正するには、型をと`static`してマークし、既定C#のコンストラクター () を削除するか、モジュール (Visual Basic) に変換します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-型が継承するように設計する場合にのみ、このルールから警告を抑制します。 ない場合、`sealed`または`NotInheritable`修飾子が型が基本データ型として便利なことを示します。
+型が継承されるように設計されている場合にのみ、この規則からの警告を非表示にします。 `static`修飾子を使用しないと、型が基本型として有用であることがわかります。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+(静的コード分析ではなく) [FxCop アナライザー](install-fxcop-analyzers.md)からこの規則を実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの EditorConfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1052.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (デザイン) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
 ## <a name="example-of-a-violation"></a>違反の例
 
-次の例では、規則に違反する型を示します。
+次の例は、規則に違反する型を示しています。
 
 [!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
 [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
 [!code-cpp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CPP/ca1052-static-holder-types-should-be-sealed_1.cpp)]
 
-## <a name="fix-with-the-static-modifier"></a>Static 修飾子で修正します。
+## <a name="fix-with-the-static-modifier"></a>Static 修飾子を使用して修正します。
 
-次の例を持つ型をマークすることでこの規則違反を修正する方法を示しています、`static`修飾子C#:
+次の例は、で`static` C#修飾子を使用して型をマークすることによって、この規則違反を修正する方法を示しています。
 
-[!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
-
-## <a name="related-rules"></a>関連するルール
-
-- [CA 1053:スタティック ホルダー型には、コンス トラクターはありません。](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+```csharp
+public static class StaticMembers
+{
+    public static int SomeProperty { get; set; }
+    public static void SomeMethod() { }
+}
+```

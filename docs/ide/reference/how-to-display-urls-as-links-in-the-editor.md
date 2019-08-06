@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c03d9d48ca098932a09e42116deb3ba7ee14a623
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 63a44407c891464f39693a2d69e5a32d22b6e993
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531657"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605690"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>方法: エディターで URL をリンクとして表示する
 
@@ -35,15 +35,14 @@ ms.locfileid: "65531657"
 
 2. **[テキスト エディター]** をクリックします。
 
-3. 1 つの言語についてのみオプションを変更するには、その言語のフォルダーを展開して、**[全般]** を選択します。
+3. 1 つの言語についてのみオプションを変更するには、その言語のフォルダーを展開して、 **[全般]** を選択します。
 
      または
 
-     すべての言語についてオプションを変更するには、**[すべての言語]** フォルダーを展開して、**[全般]** を選択します。
+     すべての言語についてオプションを変更するには、 **[すべての言語]** フォルダーを展開して、 **[全般]** を選択します。
 
 4. **[表示]** の **[シングル クリックでの URL ナビゲーションを有効にする]** をオンにします。
 
 ## <a name="see-also"></a>関連項目
 
-- [[テキスト エディター] ([オプション] ダイアログ ボックス)](../../ide/reference/text-editor-options-dialog-box.md)
 - [コード エディターの機能](../../ide/writing-code-in-the-code-and-text-editor.md)

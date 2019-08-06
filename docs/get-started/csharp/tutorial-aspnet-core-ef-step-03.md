@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c1d95d7621a97a36fdf737e7d3dd4f8baf713645
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e27155cd6504ab66cf52c4ddb0659a84936037a0
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553948"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300590"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>手順 3: Entity Framework を使用してデータを処理する
 
@@ -33,7 +33,7 @@ _最初の ASP.NET Core アプリにデータを追加するには、このビ�
 
 ## <a name="open-your-project"></a>プロジェクトを開く
 
-このビデオの内容を理解している場合は、前のセクションで作成した Web アプリケーション プロジェクトを開きます。 ここから開始する場合は、新しいプロジェクトを作成し、**[ASP.NET Web アプリケーション]**、**[Web アプリケーション]** の順に選択する必要があります。 残りのオプションは既定のままにします。
+このビデオの内容を理解している場合は、前のセクションで作成した Web アプリケーション プロジェクトを開きます。 ここから開始する場合は、新しいプロジェクトを作成し、 **[ASP.NET Web アプリケーション]** 、 **[Web アプリケーション]** の順に選択する必要があります。 残りのオプションは既定のままにします。
 
 ## <a name="add-your-model"></a>モデルを追加する
 
@@ -54,11 +54,11 @@ public class Game
 
 ゲーム ライブラリ管理用のページを作成する準備が整いました。 これは難しそうに思えるかもしれませんが、実際には驚くほど簡単です。 最初に、アプリ内のどこに、この機能を配置するかを決定する必要があります。 Web プロジェクト内の Pages フォルダーを開き、この場所に新しいフォルダーを追加します。 このフォルダーの名前は、*Games* に設定します。
 
-[Games] を右クリックし、**[追加]** > **[新規スキャフォールディング アイテム]** を選択します。 **Entity Framework (CRUD)** を使用する Razor ページのオプションを選択します。 CRUD は "Create (作成)、Read (読み取り)、Update (更新)、Delete (削除)" を意味します。このテンプレートにより、これらの各操作のページが作成されます ([list all]\(すべてリスト\) ページおよび [view details of one item]\(1 つの項目の詳細を表示\) ページを含む)。
+[Games] を右クリックし、 **[追加]**  >  **[新規スキャフォールディング アイテム]** を選択します。 **Entity Framework (CRUD)** を使用する Razor ページのオプションを選択します。 CRUD は "Create (作成)、Read (読み取り)、Update (更新)、Delete (削除)" を意味します。このテンプレートにより、これらの各操作のページが作成されます ([list all]\(すべてリスト\) ページおよび [view details of one item]\(1 つの項目の詳細を表示\) ページを含む)。
 
 ![Visual Studio 2019 ASP.NET Core のスキャフォールディングされたページの追加](media/vs-2019/vs2019-add-scaffold.png)
 
-Game モデル クラスを選択し、[+] アイコンを使用して、新しい Data コンテキスト クラスを追加します。 これに `AppDbContext` という名前を付けます。 残りは既定のままにして、**[追加]** をクリックします。
+Game モデル クラスを選択し、[+] アイコンを使用して、新しい Data コンテキスト クラスを追加します。 これに `AppDbContext` という名前を付けます。 残りは既定のままにして、 **[追加]** をクリックします。
 
 以下の Razor Pages が Games フォルダーに追加されます。
 
@@ -92,7 +92,7 @@ public static void Main(string[] args)
 
         try
         {
-            var context = services.GetRequiredService<SchoolContext>();
+            var context = services.GetRequiredService<AppDbContext>();
             context.Database.EnsureCreated();
         }
         catch (Exception ex)
@@ -106,13 +106,22 @@ public static void Main(string[] args)
 }
 ```
 
+前のコードの typenames を解決するには、次の using ステートメントを *Program.cs* の既存の using ステートメント ブロックの末尾に追加します。
+
+```csharp
+using Microsoft.Extensions.DependencyInjection;
+using WebApplication1.Models;
+```
+
+コードでは、WebApplication1 の代わりに実際のプロジェクト名を使ってください。
+
 コードの大部分は、エラー処理用のコードで、アプリの実行前に EF Core `AppDbContext` にアクセスできるようにするためのものです。 重要な行は、`context.Database.EnsureCreated()` が記述されている行です。この行により、データベースがまだ存在していない場合にデータベースが作成されます。 これで、アプリを実行する準備が整いました。
 
 ## <a name="test-it-out"></a>テスト
 
-アプリケーションを実行し、アドレス バー内の `/Games` に移動します。 空のリスト ページが表示されます。 **[新規作成]** をクリックし、新しい `Game` をコレクションに追加します。 フォームに入力し、**[作成]** をクリックします。 これは、リスト ビューに表示されます。 **[詳細]** をクリックすると、単一レコードの詳細が表示されます。
+アプリケーションを実行し、アドレス バー内の `/Games` に移動します。 空のリスト ページが表示されます。 **[新規作成]** をクリックし、新しい `Game` をコレクションに追加します。 フォームに入力し、 **[作成]** をクリックします。 これは、リスト ビューに表示されます。 **[詳細]** をクリックすると、単一レコードの詳細が表示されます。
 
-別のレコードを追加します。 レコードの詳細を変更するには、*[編集]* をクリックします。レコードを削除するには、**[削除]** をクリックします。[削除] をクリックした場合は、レコードを実際に削除する前に確認が求められます。
+別のレコードを追加します。 レコードの詳細を変更するには、 *[編集]* をクリックします。レコードを削除するには、 **[削除]** をクリックします。[削除] をクリックした場合は、レコードを実際に削除する前に確認が求められます。
 
 ![Visual Studio 2019 ASP.NET Core のブラウザー内のスキャフォールディングされたページ](media/vs-2019/vs2019-game-list.png)
 

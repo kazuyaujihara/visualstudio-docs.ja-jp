@@ -1,28 +1,28 @@
 ---
 title: '[オプション]、[テキスト エディター]、[JavaScript]、[プロジェクト]'
 ms.date: 1/15/2019
-ms.technology: vs-ide-general
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09ed64d6bffaa4453c3294229ee48fd0a065eb74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778174"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605921"
 ---
 # <a name="options-text-editor-javascript-project"></a>[オプション]、[テキスト エディター]、[JavaScript]、[プロジェクト]
 
-**[オプション]** ダイアログ ボックスの **[プロジェクト]** ページを使用して、コード エディターで JavaScript プロジェクトに適用されるオプションを指定します。 このページにアクセスするには、メニュー バーで **[ツール]** > **[オプション]** をクリックし、**[テキスト エディター]** > **[JavaScript]** > **[プロジェクト]** を展開します。
+**[オプション]** ダイアログ ボックスの **[プロジェクト]** ページを使用して、コード エディターで JavaScript および TypeScript プロジェクトに適用されるオプションを指定します。 このページにアクセスするには、メニュー バーで **[ツール]**  >  **[オプション]** を選択し、 **[テキスト エディター]**  >  **[JavaScript/TypeScript]**  >  **[プロジェクト]** を展開します。
 
 ## <a name="project-analysis-options"></a>プロジェクト解析オプション
 
@@ -52,7 +52,7 @@ ms.locfileid: "62778174"
 
 ## <a name="ecmascript-version-for-files-that-are-not-part-of-a-project"></a>プロジェクトの一部ではないファイル用の ECMAScript のバージョン
 
-これらのオプションを使用して、プロジェクトの一部ではないファイル用の ECMAScript のバージョンを選択できます。 **[ECMAScript 3]**、**[ECMAScript 5]**、または **[ECMAScript 6]** から選択できます。
+これらのオプションを使用して、プロジェクトの一部ではないファイル用の ECMAScript のバージョンを選択できます。 **[ECMAScript 3]** 、 **[ECMAScript 5]** 、または **[ECMAScript 6]** から選択できます。
 
 ## <a name="jsx-emit-for-tsx-files-that-are-not-part-of-a-project"></a>プロジェクトの一部ではない TSX ファイルに対する JSX の発行
 
@@ -63,7 +63,7 @@ ms.locfileid: "62778174"
 |オプション|説明|
 |------------|-----------------|
 |**React フレームワーク**|このオプションをオンにすると、コード エディターによって *.js* ファイル拡張子が出力されます。|
-|**Preserve**|このオプションを選択すると、コード エディターでは出力の一部として JSX が保持され、*.jsx* ファイル拡張子が出力されます。|
+|**Preserve**|このオプションを選択すると、コード エディターでは出力の一部として JSX が保持され、 *.jsx* ファイル拡張子が出力されます。|
 
 ## <a name="see-also"></a>関連項目
 

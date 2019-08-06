@@ -1,12 +1,7 @@
 ---
-title: 出力ウィンドウにメッセージを送信 |Microsoft Docs
+title: 出力ウィンドウにメッセージを送信する |Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: conceptual
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
 helpviewer_keywords:
 - diagnostic messages [C#]
 - System.Diagnostics.Debug class, Output window
@@ -26,27 +21,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4493eb55b83b9f76d1a833ba2df359ae9683e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47b563f58d08a732ec224bb8bbf47ad807c4e81d
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852144"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605381"
 ---
 # <a name="send-messages-to-the-output-window"></a>出力ウィンドウにメッセージを送信する
 
-実行時のメッセージを記述することができます、**出力**ウィンドウを使用して、<xref:System.Diagnostics.Debug>クラスまたは<xref:System.Diagnostics.Trace>に含まれるクラスの<xref:System.Diagnostics>クラス ライブラリ。 使用して、<xref:System.Diagnostics.Debug>クラスのみ出力をする場合、*デバッグ*プログラムのバージョン。 使用して、<xref:System.Diagnostics.Trace>クラスの両方で出力する場合、*デバッグ*と*リリース*バージョン。
+クラスライブラリの<xref:System.Diagnostics.Debug> <xref:System.Diagnostics.Trace>  一部であるクラスまたはクラスを使用して、実行時メッセージを出力ウィンドウに書き込むことができ<xref:System.Diagnostics>ます。 プログラムの<xref:System.Diagnostics.Debug> *デバッグ*バージョンでの出力のみが必要な場合は、クラスを使用します。 デバッグバージョン<xref:System.Diagnostics.Trace>と*リリース*バージョンの両方で出力する場合は、クラスを使用します。
 
 ## <a name="output-methods"></a>出力メソッド
  <xref:System.Diagnostics.Trace> クラスと <xref:System.Diagnostics.Debug> クラスが提供する出力方法は次のとおりです。
 
 - 各種の `Write` メソッド。実行を中断せずに情報を出力します。 これらのメソッドは、Visual Basic の以前のバージョンで使用されていた `Debug.Print` メソッドに代わるものです。
 
-- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>メソッドで、指定した条件が失敗した場合に実行し、出力の情報を中断します。 既定では、`Assert` メソッドはダイアログ ボックスに情報を出力します。 詳細については、「[マネージド コードのアサーション](../debugger/assertions-in-managed-code.md)」を参照してください。
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>メソッド<xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>とメソッド。指定された条件が失敗した場合に、実行および出力情報を中断します。 既定では、`Assert` メソッドはダイアログ ボックスに情報を出力します。 詳細については、「[マネージド コードのアサーション](../debugger/assertions-in-managed-code.md)」を参照してください。
 
-- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName>と<xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>メソッドで、実行と出力の情報を常に中断します。 既定では、`Fail` メソッドはダイアログ ボックスに情報を出力します。
+- メソッド<xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> と<xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>メソッド。常に実行および出力情報を中断します。 既定では、`Fail` メソッドはダイアログ ボックスに情報を出力します。
 
-**出力**ウィンドウに関する情報を表示できます。
+**[出力]** ウィンドウには、次の情報も表示されます。
 
 - デバッガーが読み込んだり、アンロードしたりしたモジュール
 

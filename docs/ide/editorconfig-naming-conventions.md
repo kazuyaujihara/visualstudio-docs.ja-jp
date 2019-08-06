@@ -10,18 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b0348788cfa23dd389b0647e24b7ac0aa0b7a1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 048fb4474caae6b7cc81a8c62061e879e7556c58
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309816"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345703"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig での .NET の名前付け規則
 
 名前付け規則は、クラス、プロパティ、およびメソッドなどのコード要素の名前付けに関するものです。 たとえば、パブリック メンバーは大文字表記とする必要があること、または非同期メソッドは "Async" で終わる必要があることを指定できます。 これらの規則を適用するには、[.editorconfig ファイル](../ide/create-portable-custom-editor-options.md)にそれらを含めます。 名前付け規則違反は、規則に対して選択した重大度に応じて、**エラー一覧**内に表示されるか、または名前の下に修正候補として表示されます。 違反を確認するためにプロジェクトをビルドする必要はありません。
-
-名前付け規則は、EditorConfig ファイル内に固有度の高いものから低いものの順に並べる必要があります。 適用可能な最初に検出されたルールのみが適用されます。 ただし、同じ名前のルールの "*プロパティ*" が複数ある場合は、その名前の最も最近見つかったプロパティが優先されます。 詳細については、「[File hierarchy and precedence (ファイルの階層と優先順位)](create-portable-custom-editor-options.md#file-hierarchy-and-precedence)」を参照してください。
 
 それぞれの名前付け規則については、名前付け規則を適用するシンボル、名前付けのスタイル、および規則を適用する上での重大度を、以下に示すプロパティを使用して指定する必要があります。 プロパティの順序は重要ではありません。
 
@@ -174,6 +172,22 @@ error | このスタイルに準拠していないとき、**エラー一覧**�
 
 > [!NOTE]
 > 名前付け規則違反を確認するために、プロジェクトをビルドする必要はありません。 名前付け規則違反は、コードの編集時に、**エラー一覧**に表示されるか、または修正候補として表示されます。
+
+## <a name="rule-order"></a>ルールの順序
+
+::: moniker range="vs-2017"
+
+名前付け規則は、EditorConfig ファイル内に固有度の高いものから低いものの順に並べる必要があります。 適用可能な最初に検出されたルールのみが適用されます。 ただし、同じ名前のルールの "*プロパティ*" が複数ある場合は、その名前の最も最近見つかったプロパティが優先されます。 詳細については、「[File hierarchy and precedence (ファイルの階層と優先順位)](create-portable-custom-editor-options.md#file-hierarchy-and-precedence)」を参照してください。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Visual Studio 2019 バージョン 16.2 以降では、EditorConfig ファイルで名前付け規則が定義されている順序は関係ありません。 代わりに、Visual Studio で、規則自体の定義に従って、名前付け規則が自動的に並べ替えられます。 [EditorConfig 言語サービス拡張機能](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)では、EditorConfig ファイルを分析して、ファイルでの規則の順序が実行時にコンパイラが使う順序と異なる場合に報告できます。
+
+以前のバージョンの Visual Studio を使っている場合、名前付け規則は、EditorConfig ファイル内で固有度の高いものから低いものの順に並べる必要があります。 適用可能な最初に検出されたルールのみが適用されます。 ただし、同じ名前のルールの "*プロパティ*" が複数ある場合は、その名前の最も最近見つかったプロパティが優先されます。 詳細については、「[File hierarchy and precedence (ファイルの階層と優先順位)](create-portable-custom-editor-options.md#file-hierarchy-and-precedence)」を参照してください。
+
+::: moniker-end
 
 ## <a name="default-naming-styles"></a>既定の名前付けスタイル
 

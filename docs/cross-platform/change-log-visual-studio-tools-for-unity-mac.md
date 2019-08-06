@@ -10,16 +10,110 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e5bc02948d410d465d7ac1be798ff17ebc5daaf9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ff2bcce9e041ff28393020c48563fe345c4fa076
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821514"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661820"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>変更ログ (Visual Studio Tools for Unity、Mac)
 
 Visual Studio Tools for Unity の変更ログです。
+
+## <a name="2200"></a>2.2.0.0
+
+リリース日: 2019 年 7 月 25 日
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **評価:**
+
+  - IntPtr 型を使用した検査を修正しました。
+
+- **デバッガー:**
+
+  - キャッチポイントと関数のブレークポイントの処理を修正した。
+
+## <a name="2130"></a>2.1.3.0
+
+リリース日: 2019 年 7 月 9 日
+
+### <a name="new-features"></a>新機能
+
+- **デバッガー:**
+
+  - 例外のサブクラスをキャッチするためのサポートを追加しました。
+
+  - MDS プロトコル 2.51 のサポートが追加されました。
+
+- **統合:**
+
+  - asmdef ファイルのサポートが追加されました。
+
+  - テンプレートからファイルが追加されたときに名前変更モードに切り替えます (Unity エディターの動作を模倣するため)。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - Unity プレーヤーとの通信中の誤った形式のメッセージの処理を修正しました。
+
+- **評価:**
+
+  - 式の名前空間の処理を修正しました。
+
+## <a name="2120"></a>2.1.2.0
+
+リリース日: 2019 年 7 月 2 日
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **評価:**
+
+  - 解析できない式に関するエラー報告を修正しました。
+
+## <a name="2110"></a>2.1.1.0
+
+リリース日: 2019 年 6 月 27 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - MonoBehaviour API を 2019.1 に更新しました。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - Unity プロジェクト エクスプ ローラーのパフォーマンスを修正しました。
+
+  - ライトウェイト ビルドが有効な場合に、警告とエラーが出力に報告されることを修正しました。
+
+  - ライトウェイト ビルドのパフォーマンスを修正しました。
+
+## <a name="2100"></a>2.1.0.0
+
+リリース日: 2019 年 6 月 20 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - IntelliSense エラーと警告の使用を優先して、Unity プロジェクトのフル ビルドを無効にしました。 Indeed Unity では、Unity が内部で実行していることを表すクラス ライブラリ プロジェクトによって Visual Studio ソリューションが作成されます。 ただし、Visual Studio でのビルドの結果は、Unity によって使用されたり、選択されたりすることはありません。それらのコンパイル パイプラインが閉じているためです。 Visual Studio でのビルドによって、何もしなくてもリソースが消費されます。 フル ビルドに依存するツールまたは設定があるため、フル ビルドを必要とする場合は、この最適化を無効にできます ([設定]/[Tools for Unity]/[プロジェクトのフル ビルドを無効にする])。
+  
+  - UPE での Unity パッケージのサポートを追加しました。 参照されているパッケージ (パッケージ フォルダー内の manifest.json を使用して) とローカル パッケージ (パッケージ フォルダーに埋め込まれた) のみが表示されます。
+
+## <a name="2021"></a>2.0.2.1
+
+リリース日: 2019 年 5 月 30 日
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - Unity 実行ターゲット用のカスタム アイコンが追加されました。
 
 ## <a name="2020"></a>2.0.2.0
 
@@ -42,6 +136,7 @@ Visual Studio Tools for Unity の変更ログです。
   - アセンブリのフィルター処理と空フレームによるフレームの検査が修正されました。
 
 ## <a name="2011"></a>2.0.1.1
+ 
  リリース日: 2019 年 3 月 26 日
 
 ### <a name="bug-fixes"></a>バグ修正
@@ -87,6 +182,7 @@ Visual Studio Tools for Unity の変更ログです。
   - テンプレートから名前空間を削除しました。
 
 ## <a name="2003"></a>2.0.0.3
+ 
  リリース日: 2019 年 3 月 5 日
 
 ### <a name="new-features"></a>新機能

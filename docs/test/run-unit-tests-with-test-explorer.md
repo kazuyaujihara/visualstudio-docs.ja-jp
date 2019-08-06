@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 68ed41eeecde853459bc9c817d84bd433788084c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747772"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493297"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行する
 
@@ -29,7 +29,7 @@ Visual Studio には、マネージド コードおよびネイティブ コー�
 
 テスト プロジェクトをビルドすると、テストはテスト エクスプローラーに表示されます。 テスト エクスプローラーが表示されない場合は、Visual Studio メニューの **[テスト]** をクリックし、 **[Windows]** 、 **[テスト エクスプローラー]** の順に選択します。
 
-![単体テスト エクスプローラー](../test/media/ute_failedpassednotrunsummary.png)
+![テスト エクスプローラー](../test/media/ute_failedpassednotrunsummary.png)
 
 テストを実行して、記述し、再実行すると、テスト エクスプローラーに **[失敗したテスト]** 、 **[成功したテスト]** 、 **[スキップされたテスト]** 、および **[テストを実行しない]** の既定のグループの結果が表示されます。 テスト エクスプローラーでテストをグループ化する方法を変更できます。
 
@@ -228,3 +228,4 @@ Visual Studio のコード カバレッジ ツールを使用して、単体テ�
 
 - [コードの単体テスト](../test/unit-test-your-code.md)
 - [64 ビット プロセスとして単体テストを実行する](../test/run-a-unit-test-as-a-64-bit-process.md)
+- [テスト エクスプローラーに関する FAQ](test-explorer-faq.md)

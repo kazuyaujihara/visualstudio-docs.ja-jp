@@ -3,15 +3,15 @@ title: Visual Studio + GitHub バンドル |Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/15/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: 新しい Visual Studio + GitHub バンドルの詳細情報
-ms.openlocfilehash: 6f14a484c365bcbede89c1cc4ac056a97f9ec013
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783435"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377652"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Visual Studio Subscriptions with GitHub Enterprise の概要  
 
@@ -62,15 +62,12 @@ GitHub を初めて使用する場合に役立つ可能性のある、いくつ�
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="q--where-is-my-github-subscription"></a>Q:GitHub サブスクリプションはどこにあるのでしょうか?
-
 A: GitHub サブスクリプションの設定プロセスには、しばらく時間がかかることがあります。  待っていても何も通知がない場合は、GitHub 管理者に連絡することをお勧めします。  管理者がまだ対処中であるか、またはお客様に GitHub サブスクリプションを割り当てないことを決定した可能性があります。 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>Q:GitHub 管理者にアクセスするには、どうすればよいですか?
-
 A: GitHub Enterprise Server を使用している場合は、クライアントの下部に表示されている **[サポート]** リンクをクリックすると、管理者に接続されます。
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>Q:入手できるのは、完全な Visual Studio サブスクリプション (Professional または Enterprise) ですか? または、このサービスを含む IDE のみですか?
-
 A: GitHub Enterprise サブスクリプションと共に、完全な Visual Studio サブスクリプションを受け取ります。  サブスクリプションを個別に購入した場合と同様に、これらのサブスクリプションに含まれるソフトウェア ダウンロード、クラウド サービス、テクニカル サポート、パートナー特典などのすべてのメリットが得られます。
 
 ## <a name="support-resources"></a>サポート リソース
@@ -81,5 +78,4 @@ A: GitHub Enterprise サブスクリプションと共に、完全な Visual Stu
 - GitHub Enterprise の[テクニカル サポート](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)を利用してください。   
 
 ## <a name="next-steps"></a>次の手順
-
 GitHub を初めて使用する場合は、[GitHub Learning Lab](https://lab.github.com/) をご覧ください。そこでは、興味深く実用的な一連のプロジェクトが示され、役に立つフィードバックが共有されています。

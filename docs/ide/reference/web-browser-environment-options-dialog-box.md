@@ -21,16 +21,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad36a2c9c741cffdb1ad3da04f81a21ce68f7ebd
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788955"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605633"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>[オプション] ダイアログ ボックス: [環境] \> [Web ブラウザー]
 
-内部 Web ブラウザーと Internet Explorer のオプションを設定します。 このダイアログ ボックスにアクセスするには、**[ツール]** メニューの **[オプション]** をクリックし、**[環境]** フォルダーを展開して **[Web ブラウザー]** を選択します。
+内部 Web ブラウザーと Internet Explorer のオプションを設定します。 このダイアログ ボックスにアクセスするには、 **[ツール]** メニューの **[オプション]** をクリックし、 **[環境]** フォルダーを展開して **[Web ブラウザー]** を選択します。
 
 > [!NOTE]
 > 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[リセット設定](../environment-settings.md#reset-settings)」を参照してください。
@@ -58,13 +58,12 @@ IDE Web ブラウザーを開いたときに表示されるページを設定し
 
 ## <a name="internet-explorer-options"></a>Internet Explorer オプション
 
-クリックして、**[インターネットのプロパティ]** ダイアログ ボックスで Internet Explorer のオプションを変更します。 このダイアログ ボックスの変更内容は、内部 Web ブラウザーと、Visual Studio IDE 以外 (たとえば、[スタート] メニュー) で開始された Internet Explorer のインスタンスの両方に影響があります。
+クリックして、 **[インターネットのプロパティ]** ダイアログ ボックスで Internet Explorer のオプションを変更します。 このダイアログ ボックスの変更内容は、内部 Web ブラウザーと、Visual Studio IDE 以外 (たとえば、[スタート] メニュー) で開始された Internet Explorer のインスタンスの両方に影響があります。
 
 > [!NOTE]
 > **[ブラウザーの選択]** ダイアログ ボックスを使用して、Visual Studio の内部 Web ブラウザーを任意のブラウザーに置き換えます。 [ブラウザーの選択] ダイアログ ボックスにアクセスするには、プロジェクト内の HTML ファイルなどを右クリックして、コンテキスト メニューからアクセスできます。
 
 ## <a name="see-also"></a>関連項目
 
-- [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)
 - [HTML デザイナー](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

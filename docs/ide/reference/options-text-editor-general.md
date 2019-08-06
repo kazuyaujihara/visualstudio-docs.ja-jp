@@ -3,21 +3,25 @@ title: '[オプション]、[テキスト エディター]、[全般]'
 ms.date: 01/18/2019
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
-- VS.ToolsOptionsPages.Text_Editor.SQL.General
-- vs.toolsoptionspages.text_editor
-- VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
-- VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
-- VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
-- VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
 - VS.ToolsOptionsPages.Text_Editor
-- VS.ToolsOptionsPages.Text_Editor.XOML.General
-- VS.ToolsOptionsPages.Text_Editor.SQL
-- VS.ToolsOptionsPages.Text_Editor.SQL_Script
+- vs.toolsoptionspages.text_editor
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.General
+- VS.ToolsOptionsPages.Text_Editor.PL/SQL
+- VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
 - VS.ToolsOptionsPages.Text_Editor.Python
 - VS.ToolsOptionsPages.Text_Editor.R
+- VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
+- VS.ToolsOptionsPages.Text_Editor.SQL
+- VS.ToolsOptionsPages.Text_Editor.SQL.General
+- VS.ToolsOptionsPages.Text_Editor.SQL_Script
+- VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL
+- VS.ToolsOptionsPages.Text_Editor.T-SQL.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL80
+- VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - Code Editor
@@ -29,16 +33,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 986c52a365abcb1780b741af61414bfc758413db
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3b23edb73ee08762ae8e3efaea4f883693aaacbd
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531926"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606019"
 ---
-# <a name="options-text-editor-general"></a>[オプション]、[テキスト エディター]、[全般]
+# <a name="options-dialog-box-text-editor--general"></a>[オプション] ダイアログ ボックス:[テキスト エディター] \> [全般]
 
-このダイアログ ボックスでは、Visual Studio コード/テキスト エディターのグローバル設定を変更できます。 このダイアログ ボックスを表示するには、**[ツール]** メニューの **[オプション]** を選択し、**[テキスト エディター]** フォルダーを展開し、**[全般]** を選択します。
+このダイアログ ボックスでは、Visual Studio コード/テキスト エディターのグローバル設定を変更できます。 このダイアログ ボックスを表示するには、 **[ツール]** メニューの **[オプション]** を選択し、 **[テキスト エディター]** フォルダーを展開し、 **[全般]** を選択します。
 
 ## <a name="settings"></a>設定
 
@@ -64,9 +68,9 @@ ms.locfileid: "65531926"
 
 ### <a name="enable-mouse-click-to-perform-go-to-definition"></a>マウス クリックを有効にして [定義へ移動] を実行する
 
-選択した場合、**Ctrl** キーを押ながらマウスをクリックすると、マウス ポインターが要素に移動します。 これを行うと、選択した要素の定義に移動します。 **[修飾キーの使用]** ドロップダウンから、**[Alt]** または **[Ctrl** + **Alt]** を選択することもできます。
+選択した場合、**Ctrl** キーを押ながらマウスをクリックすると、マウス ポインターが要素に移動します。 これを行うと、選択した要素の定義に移動します。 **[修飾キーの使用]** ドロップダウンから、 **[Alt]** または **[Ctrl** + **Alt]** を選択することもできます。
 
-コード エディターの現在の場所から移動せずに選択した要素の定義をウィンドウに表示するには、**[ピーク ビューで定義を開く]** チェック ボックスをオンにします。
+コード エディターの現在の場所から移動せずに選択した要素の定義をウィンドウに表示するには、 **[ピーク ビューで定義を開く]** チェック ボックスをオンにします。
 
 ## <a name="display"></a>表示
 

@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 41d5248106b831accf4d71f97aeaeb72fdbc5018
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67258123"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662022"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing についてよく寄せられる質問
 
@@ -139,7 +139,7 @@ Live Unit Testing は、次の表に示されている 3 つの一般的な単�
 
 - Live Unit Testing ではテストを実行するための新しいアプリケーション ドメインは作成されませんが、 **[テスト エクスプローラー]** ウィンドウから実行されたテストでは新しいアプリケーション ドメインが作成されます。
 
-- Live Unit Testing では各テスト アセンブリが順番に実行されるのに対し、 **[テストを並列で実行する]** ボタンを選んで **[テスト エクスプローラー]** ウィンドウから複数のテストを実行した場合は、並列に実行されます。
+- Live Unit Testing では各テスト アセンブリが順番に実行されます。 **[テスト エクスプローラー]** ウィンドウで、複数のテストを並列に実行するように選択できます。
 
 - Live Unit Testing でのテストの探索と実行にはバージョン 2 の `TestPlatform` が使われますが、 **[テスト エクスプローラー]** ウィンドウではバージョン 1 が使われます。 ただし、ほとんどの場合違いはわかりません。
 

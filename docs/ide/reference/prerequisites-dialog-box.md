@@ -1,22 +1,23 @@
 ---
 title: '[必須コンポーネント] ダイアログ ボックス'
 ms.date: 06/29/2018
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 helpviewer_keywords:
 - Prerequisites dialog box
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 925f36f2ed82f65afcc0eef9622cab1a8c9542b5
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 3ab3cb844f518ef5fae553010fe4a800c09d170a
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746486"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533384"
 ---
 # <a name="prerequisites-dialog-box"></a>[必須コンポーネント] ダイアログ ボックス
 
@@ -36,6 +37,9 @@ ms.locfileid: "66746486"
 |**アプリケーションと同じ場所から必須コンポーネントをダウンロードする**|アプリケーションと同じ場所から必須コンポーネントをインストールするように指定します。 これにより、すべての必須パッケージが発行場所にコピーされます。 このオプションを使用するには、必須パッケージが開発用コンピューターに存在する必要があります。|
 |**次の場所から必須コンポーネントをダウンロード**|入力した場所から必須コンポーネントをインストールするように指定します。 場所は、 **[参照]** ボタンを使って指定できます。|
 
+> [!NOTE]
+> 前提条件を設定する場所の詳細については、[ブートストラップパッケージの作成](../../deployment/creating-bootstrapper-packages.md#create-custom-bootstrapper-packages)に関するページを参照してください。
+
 ## <a name="prerequisites-information"></a>必須コンポーネント情報
 
 **[必須コンポーネント]** ダイアログ ボックスに表示される必須コンポーネントは、後に示す一覧とは異なる場合があります。 **[必須コンポーネント] ダイアログ ボックス**にリストされている必須コンポーネントのパッケージは、ダイアログ ボックスを初めて開いたときに自動的に設定されます。 その後、プロジェクトのターゲット フレームワークを変更した場合は、新しいターゲット フレームワークに合わせて必須パッケージを手動で選択する必要があります。
@@ -45,7 +49,7 @@ ms.locfileid: "66746486"
 |**.NET Framework 3.5 SP1**|このパッケージは、次のコンポーネントをインストールします。<br /><br /> -  .NET Framework バージョン 2.0、3.0、および 3.5。<br />-   32 ビット (x86) オペレーティング システムおよび 64 ビット (x64) オペレーティング システム上の .NET Framework のすべてのバージョンに対するサポート。<br />-   パッケージと共にインストールされる各 .NET Framework バージョン用の Language Pack。<br />-   .NET Framework 2.0 および 3.0 用の Service Pack。<br /><br /> .NET Framework 3.0 は Windows Vista に含まれており、.NET Framework 3.5 は Visual Studio に含まれています。 .NET Framework 3.5 は、32 ビット オペレーティング システム用にコンパイルされる、ターゲット フレームワークが **.NET Framework 3.5** に設定された、すべての Visual Basic プロジェクトおよび C# プロジェクト、および、64 ビット オペレーティング システム用にコンパイルされる Visual Basic プロジェクトおよび C# プロジェクトに必要です。 IA64 はサポートされません。Visual Basic プロジェクトおよび C# プロジェクトは、既定ではどの CPU アーキテクチャにも対応するようにコンパイルされます。 詳細については、「[フレームワーク対象設定機能の概要](../../ide/visual-studio-multi-targeting-overview.md)」と「[Deploy prerequisites for 64-bit apps](../../deployment/deploying-prerequisites-for-64-bit-applications.md)」 (64 ビット アプリのデプロイのための必要条件) を参照してください。|
 |**Microsoft .NET Framework 4.x**|このパッケージは、.NET Framework 4.x (x86 プラットフォームおよび x64 プラットフォーム用) をインストールします。|
 |**Microsoft System CLR Types for SQL Server 2014 (x64 および x86)**|このパッケージは、Microsoft System CLR Types for SQL Server 2014 (x64 または x86 用) をインストールします。|
-|**SQL Server 2008 R2 Express**|このパッケージは、Microsoft SQL Server 2008 R2 Express をインストールします。Microsoft SQL Server 2008 R2 Express は、Microsoft SQL Server 2008 R2 の無償のエディションであり、小規模な Web アプリケーション、サーバー アプリケーション、またはデスクトップ アプリケーションに最適なデータベースです。 Microsoft SQL Server 2008 Express は、開発環境および運用環境で無償で使用できます。|
+|**SQL Server 2008 R2 Express**|このパッケージでは、Microsoft SQL Server 2008 R2 Express がインストールされます。これは、Microsoft SQL Server 2008 R2 の無償のエディションであり、小規模な Web アプリケーション、サーバー アプリケーション、またはデスクトップ アプリケーションに最適なデータベースです。 Microsoft SQL Server 2008 Express は、開発環境および運用環境で無償で使用できます。|
 |**SQL Server 2012 Express**|このパッケージは、Microsoft SQL Server 2012 Express をインストールします。|
 |**SQL Server 2012 Express LocalDB**|このパッケージは、Microsoft SQL Server 2012 Express LocalDB をインストールします。|
 |**Visual C++ "14" ランタイム ライブラリ (ARM)**|Itanium アーキテクチャに対応する Visual C++ ランタイム ライブラリをインストールします。これらのライブラリは、Microsoft Windows オペレーティング システム用のプログラミング ルーチンを提供します。 これらのルーチンにより、C および C++ 言語では提供されない共通プログラミング タスクの多くを自動化できます。<br /><br /> 詳細については、「[C ランタイム ライブラリ リファレンス](/cpp/c-runtime-library/c-run-time-library-reference)」を参照してください。|

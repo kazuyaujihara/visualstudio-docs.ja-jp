@@ -1,23 +1,22 @@
 ---
 title: 管理者ポータルでのサブスクリプションの編集 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: 管理者がサブスクリプションの割り当てを編集する方法を説明します。
-ms.openlocfilehash: 7245facbaf966593160bc44dc15bc2fd71622347
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: e55cee74f861973e3cc29e3f19dc9b31a107f437
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783471"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605667"
 ---
-# <a name="editing-visual-studio-subscription-assignments"></a>Visual Studio サブスクリプションの割り当ての編集
-
+# <a name="edit-visual-studio-subscription-assignments"></a>Visual Studio サブスクリプションの割り当ての編集
 サブスクリプション管理者は、組織内の個人に割り当てられているサブスクリプションに変更を加えることができます。  この記事では、行うことができる変更の種類と、必要な手順について説明します。
 
-## <a name="making-changes-to-subscriber-information"></a>サブスクライバー情報を変更する
+## <a name="change-subscriber-information"></a>サブスクライバーの情報を変更する
 サブスクライバー情報を編集してエラーを修正したり情報を更新したりすることができます。
 
 サブスクライバーを編集するには、サブスクライバーの電子メール アドレスの横にマウス ポインターを移動すると表示される省略記号 (...) を選択します。 ドロップダウン リストが表示されます。  **[編集]** を選択して、サブスクライバーの詳細を変更します。 グリッドのサブスクライバーの行をダブルクリックして編集ウィンドウを開くこともできます。
@@ -29,8 +28,7 @@ ms.locfileid: "67783471"
    > [!NOTE]
    > サブスクライバーのサブスクリプション レベルを変更する必要がある場合、ポータルからユーザーを削除し、もう一度追加する必要があります。 サブスクリプション レベルは編集できません。
 
-## <a name="editing-multiple-subscribers-using-bulk-edit"></a>一括編集を使用して複数のサブスクライバーを編集する
-
+## <a name="edit-multiple-subscribers-using-bulk-edit"></a>一括編集を使用して複数のサブスクライバーを編集する
 一括編集プロセスを使用して、一度に複数のサブスクライバーを編集することができます。 この機能は、会社の電子メール アドレスを変更している組織、または組織がダウンロードへのアクセスを制限することにした場合に主に使用されます。
 
    > [!IMPORTANT]
@@ -49,3 +47,7 @@ ms.locfileid: "67783471"
    > ![ライセンスの編集 - 一括編集のファイルのアップロード](_img/edit-license/edit-license-bulk-file-upload1.png)
 
 5. ファイルをアップロードしたら、成功したことを知らせる通知が表示されます。 この時点で、編集内容がサブスクライバーの情報に反映されます。
+
+## <a name="next-steps"></a>次の手順
+- 特定のサブスクリプションを検索する方法については、[サブスクリプションの検索](search-license.md)に関する記事を参照してください。
+- すべてのサブスクリプションの一覧を作成する必要がありますか?  [サブスクリプションのエクスポート](exporting-subscriptions.md)に関する記事を参照してください。

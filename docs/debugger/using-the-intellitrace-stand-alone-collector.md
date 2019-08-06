@@ -1,6 +1,6 @@
 ---
-title: IntelliTrace スタンドアロン コレクターを使用して |Microsoft Docs
-ms.date: 11/04/2016
+title: IntelliTrace スタンドアロンコレクターの使用 |Microsoft Docs
+ms.date: 07/30/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746106"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680631"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>IntelliTrace スタンドアロン コレクターを使用して (C#、Visual Basic)
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>IntelliTrace スタンドアロンコレクターの使用 (C#、Visual Basic)
 
 **IntelliTrace スタンドアロン コレクター** を使用すると、対象コンピューターに Visual Studio をインストールしたり、対象システムの環境を変更したりすることなく、運用サーバーまたは他の環境でアプリの IntelliTrace 診断データを収集できます。 IntelliTrace スタンドアロン コレクターは、Web、SharePoint、WPF、および Windows フォーム アプリで動作します。 データを収集したら、コレクターを削除して、アンインストールします。
 
@@ -28,17 +28,17 @@ ms.locfileid: "66746106"
 > [!NOTE]
 > **Microsoft Monitoring Agent** を **トレース** モードで使用して、リモート マシン上で実行されている Web および SharePoint アプリの同じ IntelliTrace データを収集することもできます。
 >
-> IntelliTrace データ内のパフォーマンス関連イベントを収集するには、エージェントを **モニター** モードで実行します。 **モニター** モードは、 **トレース** モードや **IntelliTrace スタンドアロン コレクター**よりもパフォーマンスに及ぼす影響が少なくなります。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。 参照してください[Microsoft Monitoring Agent を使用して](../debugger/using-the-microsoft-monitoring-agent.md)します。
-> IntelliTrace スタンドアロン コレクターは、プロセスのスナップショットをサポートしていません。
+> IntelliTrace データ内のパフォーマンス関連イベントを収集するには、エージェントを **モニター** モードで実行します。 **モニター** モードは、 **トレース** モードや **IntelliTrace スタンドアロン コレクター**よりもパフォーマンスに及ぼす影響が少なくなります。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。 「 [Microsoft Monitoring Agent の使用」を](../debugger/using-the-microsoft-monitoring-agent.md)参照してください。
+> IntelliTrace スタンドアロンコレクターは、プロセススナップショットをサポートしていません。
 
  **必要条件**
 
-- .NET Framework 3.5、4、または 4.5
+- .NET Framework 3.5 以降
 
 - .iTrace ファイルを開くための、開発用コンピューターまたは別のコンピューター上の Visual Studio Enterprise (Professional Edition でも Community Edition でもなく)
 
   > [!NOTE]
-  > 必ずシンボル (.pdb) ファイルを保存してください。 IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが必要です。 参照してください[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)します。
+  > 必ずシンボル (.pdb) ファイルを保存してください。 IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが必要です。 「[デプロイ後の問題の診断](../debugger/diagnose-problems-after-deployment.md)」を参照してください。
 
   **FAQ**
 
@@ -52,7 +52,7 @@ ms.locfileid: "66746106"
 
 ## <a name="WhatApps"></a> コレクターで使用できるアプリ
 
-- インターネット インフォメーション サービス (IIS) Version 7.0、7.5、および 8.0 によってホストされる ASP.NET アプリ
+- インターネットインフォメーションサービス (IIS) バージョン7.0、7.5、8.0、12.0、および16.0 でホストされる ASP.NET Web apps
 
 - SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーション
 
@@ -70,7 +70,7 @@ ms.locfileid: "66746106"
 
 5. [Web アプリまたは SharePoint アプリケーションからデータを収集する](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     - または -
+     \- または -
 
      [マネージド アプリからのデータの収集](#BKMK_Collect_Data_from_Executables)
 
@@ -78,11 +78,11 @@ ms.locfileid: "66746106"
 
 ## <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> コレクターのインストール
 
-1. アプリのサーバーで、コレクター ディレクトリ (たとえば、**C:\IntelliTraceCollector**) を作成します。
+1. アプリのサーバーで、コレクター ディレクトリ (たとえば、**C:\IntelliTraceCollector**) を参照します。
 
-2. Microsoft ダウンロード センターまたは Visual Studio 2013 Update 3 インストール フォルダーからコレクターを入手します。 [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
+2. [Microsoft ダウンロードセンター](https://visualstudio.microsoft.com/downloads/#intellitrace-standalone-collector-for-visual-studio-2019)、 [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=intellitrace%20standalone%20collector%20visual%20studio%202017)、または Visual Studio 2013 Update 3 インストールフォルダーからコレクターを入手します。 [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
 
-   - **Microsoft ダウンロード センター**:
+   - **Microsoft ダウンロードセンター**または**my.visualstudio.com**:
 
      1. **IntelliTraceCollector.exe**の横の **[ダウンロード]** を選択します。
 
@@ -94,7 +94,11 @@ ms.locfileid: "66746106"
 
    - **Visual Studio インストール フォルダー**:
 
-     1. 次のフォルダーから IntelliTraceCollection.cab をコピーします。
+     1. コレクターがインストールされているフォルダーから Intellitracecollection.cab をコピーします。次に例を示します。
+
+          **..\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace**
+
+          または、以前のバージョンの Visual Studio の場合:
 
           **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
@@ -145,7 +149,7 @@ ms.locfileid: "66746106"
 
 1. ご利用のアプリのサーバー上で、PowerShell が有効になっていることを確認します。 Windows Server のほとんどのバージョンでは、 **サーバー マネージャー** 管理ツールを使用してこの機能を追加できます。
 
-     ![サーバー マネージャーを使用して PowerShell の追加](../debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
+     ![サーバーマネージャーを使用した PowerShell の追加](../debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
 
 2. IntelliTrace PowerShell コマンドレットをインストールします。
 
@@ -191,7 +195,7 @@ ms.locfileid: "66746106"
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       - または -
+       \- または -
 
    - エクスプローラー (またはファイル エクスプローラー) を使用してアクセス許可を設定するには:
 
@@ -234,7 +238,7 @@ ms.locfileid: "66746106"
 
 2. 問題を再現します。
 
-3. .ITrace ファイルのチェックポイントを作成するには、この構文を使用します。
+3. ITrace ファイルのチェックポイントを作成するには、次の構文を使用します。
 
      `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
@@ -275,16 +279,16 @@ ms.locfileid: "66746106"
 ## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Visual Studio Enterprise で .iTrace ファイルを開く
 
 > [!NOTE]
-> IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが必要です。 参照してください[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)します。
+> IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが必要です。 「[デプロイ後の問題の診断](../debugger/diagnose-problems-after-deployment.md)」を参照してください。
 
 1. Visual Studio Enterprise (Professional Edition でも Community Edition でもなく) がインストールされたコンピューターに、.iTrace ファイルを移動またはコピーします。
 
 2. Visual Studio の外部で .iTrace ファイルをダブルクリックするか、Visual Studio 内からファイルを開きます。
 
-     Visual Studio に **[IntelliTrace の概要]** ページが表示されます。 ほとんどのセクションにおいて、イベントまたは他の項目を確認したうえで項目を選択し、イベントが発生したポイントで IntelliTrace を使用してデバッグを開始できます。 参照してください[保存された IntelliTrace データを使用して](../debugger/using-saved-intellitrace-data.md)します。
+     Visual Studio に **[IntelliTrace の概要]** ページが表示されます。 ほとんどのセクションにおいて、イベントまたは他の項目を確認したうえで項目を選択し、イベントが発生したポイントで IntelliTrace を使用してデバッグを開始できます。 「[保存された IntelliTrace データの使用」を](../debugger/using-saved-intellitrace-data.md)参照してください。
 
     > [!NOTE]
-    > IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが開発コンピューターに必要です。 参照してください[配置後の問題の診断](../debugger/diagnose-problems-after-deployment.md)します。
+    > IntelliTrace でデバッグおよびコードのステップ実行を行うには、対応するソース ファイルとシンボル ファイルが開発コンピューターに必要です。 「[デプロイ後の問題の診断](../debugger/diagnose-problems-after-deployment.md)」を参照してください。
 
 ## <a name="Minimizing"></a> アプリのパフォーマンスの低下なしにほとんどのデータを取得する方法
  IntelliTrace では大量のデータを収集できます。そのため、アプリのパフォーマンスへの影響は、IntelliTrace で収集するデータの種類、および分析するコードの種類によって決まります。 「 [運用サーバーでの IntelliTrace 収集の最適化](http://go.microsoft.com/fwlink/?LinkId=255233)」を参照してください。
@@ -371,13 +375,13 @@ ms.locfileid: "66746106"
 
    `Employee` の型には、 `Id`、 `Name`、および `HomeAddress`の各属性が含まれます。 `Employee` の型と `Address` の型との間に、アソシエーション リレーションシップの関係が存在します。
 
-   ![Employee と Address の間のリレーションシップ](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
+   ![従業員と住所のリレーションシップ](../debugger/media/employeeaddressrelationship.png "従業員 Addressrelationship")
 
    コレクターは、 `id`メソッドから返された、 `Employee.Id`、 `Employee.Name` 、 `Employee` 、および `AlterEmployee` の各オブジェクトの値を記録します。 ただし、null であるかどうかの情報を除き、 `Address` オブジェクトについての情報は記録しません。 コレクターは、メソッド パラメーターとして記録される時点のパラメーターとしてそれらのローカル変数を他のメソッドが使用する場合を除き、 `AlterEmployee` メソッドのローカル変数に関するデータは記録しません。
 
 ## <a name="WhereElse"></a> IntelliTrace データを取得できるその他の場所
 
-デバッグ セッションを Visual Studio Enterprise で、IntelliTrace から、IntelliTrace データを取得することができます。 参照してください[IntelliTrace 機能](../debugger/intellitrace-features.md)します。
+Intellitrace データは Visual Studio Enterprise の IntelliTrace デバッグセッションから取得できます。 「 [IntelliTrace の機能](../debugger/intellitrace-features.md)」を参照してください。
 
 ## <a name="where-can-i-get-more-information"></a>情報の入手方法
  [保存された IntelliTrace データの使用](../debugger/using-saved-intellitrace-data.md)
@@ -391,10 +395,10 @@ ms.locfileid: "66746106"
 
  [運用サーバーでの IntelliTrace 収集の最適化](http://go.microsoft.com/fwlink/?LinkId=255233)
 
- [Microsoft の DevOps](https://devblogs.microsoft.com/devops/)
+ [Microsoft DevOps](https://devblogs.microsoft.com/devops/)
 
 ### <a name="forums"></a>フォーラム
  [Visual Studio デバッガー](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 ### <a name="videos"></a>ビデオ
- [Channel 9 ビデオ: IntelliTrace データ収集および分析](http://go.microsoft.com/fwlink/?LinkID=251851)
+ [Channel 9 ビデオ: IntelliTrace データの収集と分析](http://go.microsoft.com/fwlink/?LinkID=251851)

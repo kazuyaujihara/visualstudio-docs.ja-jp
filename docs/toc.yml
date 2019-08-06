@@ -352,6 +352,8 @@
                     - name: 概要
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
+                    - name: すべてのパラメーターに対して null チェックを追加する
+                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: メソッド シグネチャの変更
                       href: ide/reference/change-method-signature.md
                     - name: 匿名型をクラスに変換する
@@ -834,7 +836,7 @@
           href: ide/reference/call-hierarchy.md
         - name: 変更のプレビュー
           href: ide/preview-changes.md
-        - name: '[ツールボックス アイテムの選択]、[WPF コンポーネント]'
+        - name: ツールボックス アイテムの選択、WPF コンポーネント
           href: ide/reference/choose-toolbox-items-wpf-components.md
         - name: コード スニペット ピッカー
           href: ide/reference/code-snippet-picker.md
@@ -856,127 +858,147 @@
           items:
             - name: '[オプション] ダイアログ ボックス'
               href: ide/reference/options-dialog-box-visual-studio.md
-            - name: 環境オプション
+            - name: 環境
               items:
-                - name: '[環境] ([オプション] ダイアログ ボックス)'
-                  href: ide/reference/environment-options-dialog-box.md
-                - name: '[環境] - [全般]'
+                - name: 全般
                   href: ide/reference/general-environment-options-dialog-box.md
-                - name: '[環境] - [自動バックアップ]'
-                  href: ide/reference/autorecover-environment-options-dialog-box.md
-                - name: '[環境] - [ドキュメント]'
-                  href: ide/reference/documents-environment-options-dialog-box.md
-                - name: '[環境] - [拡張機能]'
-                  href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
-                - name: '[環境] - [検索と置換]'
-                  href: ide/reference/find-and-replace-environment-options-dialog-box.md
-                - name: '[環境] - [フォントと色]'
-                  href: ide/reference/fonts-and-colors-environment-options-dialog-box.md
-                - name: '[環境] - [設定のインポートとエクスポート]'
-                  href: ide/reference/import-and-export-settings-environment-options-dialog-box.md
-                - name: '[環境] - [国際対応の設定]'
-                  href: ide/reference/international-settings-environment-options-dialog-box.md
-                - name: '[環境] - [キーボード]'
-                  href: ide/reference/keyboard-environment-options-dialog-box.md
-                - name: '[環境] - [通知]'
-                  href: ide/reference/notifications-environment-options-dialog-box.md
-                - name: '[環境] - [クイック起動]'
-                  href: ide/reference/quick-launch-environment-options-dialog-box.md
-                - name: '[環境] - [スタートアップ]'
-                  href: ide/reference/startup-environment-options-dialog-box.md
-                - name: '[環境] - [アカウント]'
+                - name: アカウント
                   href: ide/reference/accounts-environment-options-dialog-box.md
-                - name: '[環境] - [タブとウィンドウ]'
+                - name: 自動バックアップ
+                  href: ide/reference/autorecover-environment-options-dialog-box.md
+                - name: ドキュメント
+                  href: ide/reference/documents-environment-options-dialog-box.md
+                - name: 拡張機能
+                  href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
+                - name: 検索と置換
+                  href: ide/reference/find-and-replace-environment-options-dialog-box.md
+                - name: フォントおよび色
+                  href: ide/reference/fonts-and-colors-environment-options-dialog-box.md
+                - name: 設定のインポートとエクスポート
+                  href: ide/reference/import-and-export-settings-environment-options-dialog-box.md
+                - name: 国際対応の設定
+                  href: ide/reference/international-settings-environment-options-dialog-box.md
+                - name: キーボード
+                  href: ide/reference/keyboard-environment-options-dialog-box.md
+                - name: プレビュー機能
+                  href: ide/reference/environment-preview-features-options.md
+                - name: 通知
+                  href: ide/reference/notifications-environment-options-dialog-box.md
+                - name: クイック起動
+                  href: ide/reference/quick-launch-environment-options-dialog-box.md
+                - name: スタートアップ
+                  href: ide/reference/startup-environment-options-dialog-box.md
+                - name: タブとウィンドウ
                   href: ide/reference/tabs-and-windows-environment-options-dialog-box.md
-                - name: '[環境] - [タスク一覧]'
+                - name: タスク一覧
                   href: ide/reference/task-list-environment-options-dialog-box.md
-                - name: '[環境] - [信頼の設定]'
+                - name: 信頼の設定
                   href: ide/reference/trust-settings.md
-                - name: '[環境] - [Web ブラウザー]'
+                - name: Web ブラウザー
                   href: ide/reference/web-browser-environment-options-dialog-box.md
-            - name: テキスト エディターのオプション
+            - name: プロジェクトおよびソリューション
               items:
-                - name: '[テキスト エディター] ([オプション] ダイアログ ボックス)'
-                  href: ide/reference/text-editor-options-dialog-box.md
-                - name: '[テキスト エディター] - [全般]'
-                  href: ide/reference/options-text-editor-general.md
-                - name: '[テキスト エディター] - [ファイル拡張子]'
-                  href: ide/reference/options-text-editor-file-extension.md
-                - name: '[テキスト エディター] - [すべての言語]'
-                  href: ide/reference/options-text-editor-all-languages.md
-                - name: '[テキスト エディター] - [すべての言語]、[スクロール バー]'
-                  href: ide/reference/options-text-editor-all-languages-scroll-bars.md
-                - name: '[テキスト エディター] - [すべての言語]、[タブ]'
-                  href: ide/reference/options-text-editor-all-languages-tabs.md
-                - name: '[テキスト エディター] - [基本] (Visual Basic)、[詳細設定]'
-                  href: ide/reference/options-text-editor-basic-visual-basic.md
-                - name: '[テキスト エディター] - [基本] (Visual Basic)、[コード スタイル]'
-                  href: ide/code-styles-and-code-cleanup.md
-                - name: '[テキスト エディター] - [基本] (Visual Basic)、[IntelliSense]'
-                  href: ide/visual-basic-specific-intellisense.md
-                - name: '[テキスト エディター] - [C/C++]、[書式設定]'
-                  href: ide/reference/options-text-editor-c-cpp-formatting.md
-                - name: '[テキスト エディター] - [C/C++]、[詳細設定]'
-                  href: ide/reference/options-text-editor-c-cpp-advanced.md
-                - name: '[テキスト エディター] - [C/C++]、[試験的]'
-                  href: ide/reference/options-text-editor-c-cpp-experimental.md
-                - name: '[テキスト エディター] - [C/C++]、[表示]'
-                  href: ide/reference/options-text-editor-c-cpp-view.md
-                - name: '[テキスト エディター] - [C#]、[コード スタイル]、[書式設定]'
-                  href: ide/reference/options-text-editor-csharp-formatting.md
-                - name: '[テキスト エディター] - [C#]、[詳細設定]'
-                  href: ide/reference/options-text-editor-csharp-advanced.md
-                - name: '[テキスト エディター] - [C#]、[IntelliSense]'
-                  href: ide/reference/options-text-editor-csharp-intellisense.md
-                - name: '[テキスト エディター] - [F#]、[詳細設定]'
-                  href: ide/reference/options-text-editor-fsharp-advanced.md
-                - name: '[テキスト エディター] - [F#]、[コード修正]'
-                  href: ide/reference/options-text-editor-fsharp-code-fixes.md
-                - name: '[テキスト エディター] - [F#]、[CodeLens]'
-                  href: ide/reference/options-text-editor-fsharp-codelens.md
-                - name: '[テキスト エディター] - [F#]、[IntelliSense]'
-                  href: ide/reference/options-text-editor-fsharp-intellisense.md
-                - name: '[テキスト エディター] - [HTML (Web フォーム)]、[書式設定]'
-                  href: ide/reference/options-text-editor-html-formatting.md
-                - name: '[テキスト エディター] - [HTML (Web フォーム)]、[その他]'
-                  href: ide/reference/options-text-editor-html-miscellaneous.md
-                - name: '[テキスト エディター] - [HTML (Web フォーム)]、[検証]'
-                  href: ide/reference/options-text-editor-html-validation.md
-                - name: '[テキスト エディター] - [JavaScript]、[コードの検証]'
-                  href: ide/reference/options-text-editor-javascript-code-validation.md
-                - name: '[テキスト エディター] - [JavaScript]、[書式設定]'
-                  href: ide/reference/options-text-editor-javascript-formatting.md
-                - name: '[テキスト エディター] - [JavaScript]、[IntelliSense]'
-                  href: ide/reference/options-text-editor-javascript-intellisense.md
-                - name: '[テキスト エディター] - [JavaScript]、[Lint 処理]'
-                  href: ide/reference/options-text-editor-javascript-linting.md
-                - name: '[テキスト エディター] - [JavaScript]、[プロジェクト]'
-                  href: ide/reference/options-text-editor-javascript-project.md
-                - name: '[テキスト エディター] - [U-SQL]、[書式設定]'
-                  href: ide/reference/options-text-editor-usql-formatting.md
-                - name: '[テキスト エディター] - [U-SQL]、[IntelliSense]'
-                  href: ide/reference/options-text-editor-usql-intellisense.md
-                - name: '[テキスト エディター] - [XAML]、[書式設定]'
-                  href: ide/reference/options-text-editor-xaml-formatting.md
-                - name: '[テキスト エディター] - [XAML]、[その他]'
-                  href: ide/reference/options-text-editor-xaml-miscellaneous.md
-                - name: '[テキスト エディター] - [XML]、[書式設定]'
-                  href: ide/reference/options-text-editor-xml-formatting.md
-                - name: '[テキスト エディター] - [XML]、[その他]'
-                  href: ide/reference/options-text-editor-xml-miscellaneous.md
-            - name: '[プロジェクトおよびソリューション] の [オプション]'
-              items:
-                - name: '[プロジェクトおよびソリューション] の [オプション] ダイアログ ボックス'
+                - name: 全般
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
-                - name: '[プロジェクトおよびソリューション] - [ビルド/実行]'
+                - name: ビルドと実行
                   href: ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md
-                - name: '[プロジェクトおよびソリューション] - [Web プロジェクト]'
-                  href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
-                - name: '[プロジェクトおよびソリューション] - [Visual Basic の既定値]'
+                - name: 場所
+                  href: ide/reference/projects-solutions-locations-options.md
+                - name: Visual Basic の既定値
                   href: ide/reference/visual-basic-defaults-projects-options-dialog-box.md
-                - name: '[プロジェクトおよびソリューション] - [VC++ プロジェクトの設定]'
+                - name: VC++ プロジェクトの設定
                   href: ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box.md
-            - name: '[XAML デザイナー] の [オプション] ダイアログ ボックス'
+                - name: Web プロジェクト
+                  href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
+            - name: '[テキスト エディター]'
+              items:
+                - name: 全般
+                  href: ide/reference/options-text-editor-general.md
+                - name: ファイル拡張子
+                  href: ide/reference/options-text-editor-file-extension.md
+                - name: すべての言語
+                  items:
+                    - name: 全般
+                      href: ide/reference/options-text-editor-all-languages.md
+                    - name: スクロール バー
+                      href: ide/reference/options-text-editor-all-languages-scroll-bars.md
+                    - name: タブ
+                      href: ide/reference/options-text-editor-all-languages-tabs.md
+                - name: Basic
+                  items:
+                    - name: 詳細設定
+                      href: ide/reference/options-text-editor-basic-visual-basic.md
+                    - name: コード スタイル
+                      href: ide/code-styles-and-code-cleanup.md
+                    - name: IntelliSense
+                      href: ide/visual-basic-specific-intellisense.md
+                - name: 'C#'
+                  items:
+                    - name: 詳細設定
+                      href: ide/reference/options-text-editor-csharp-advanced.md
+                    - name: コード スタイル > 書式設定
+                      href: ide/reference/options-text-editor-csharp-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-csharp-intellisense.md
+                - name: C/C++
+                  items:
+                    - name: 詳細設定
+                      href: ide/reference/options-text-editor-c-cpp-advanced.md
+                    - name: 実験用
+                      href: ide/reference/options-text-editor-c-cpp-experimental.md
+                    - name: 書式設定
+                      href: ide/reference/options-text-editor-c-cpp-formatting.md
+                    - name: 表示
+                      href: ide/reference/options-text-editor-c-cpp-view.md
+                - name: 'F#'
+                  items:
+                    - name: 詳細設定
+                      href: ide/reference/options-text-editor-fsharp-advanced.md
+                    - name: コード修正
+                      href: ide/reference/options-text-editor-fsharp-code-fixes.md
+                    - name: CodeLens
+                      href: ide/reference/options-text-editor-fsharp-codelens.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-fsharp-intellisense.md
+                - name: HTML (Web フォーム)
+                  items:
+                    - name: 書式設定
+                      href: ide/reference/options-text-editor-html-formatting.md
+                    - name: その他
+                      href: ide/reference/options-text-editor-html-miscellaneous.md
+                    - name: 検証
+                      href: ide/reference/options-text-editor-html-validation.md
+                - name: JavaScript/TypeScript
+                  items:
+                    - name: コードの検証
+                      href: ide/reference/options-text-editor-javascript-code-validation.md
+                    - name: 書式設定
+                      href: ide/reference/options-text-editor-javascript-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-javascript-intellisense.md
+                    - name: Lint
+                      href: ide/reference/options-text-editor-javascript-linting.md
+                    - name: Project
+                      href: ide/reference/options-text-editor-javascript-project.md
+                - name: U-SQL
+                  items:
+                    - name: 書式設定
+                      href: ide/reference/options-text-editor-usql-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-usql-intellisense.md
+                - name: XAML
+                  items:
+                    - name: 書式設定
+                      href: ide/reference/options-text-editor-xaml-formatting.md
+                    - name: その他
+                      href: ide/reference/options-text-editor-xaml-miscellaneous.md
+                - name: XML
+                  items:
+                    - name: 書式設定
+                      href: ide/reference/options-text-editor-xml-formatting.md
+                    - name: その他
+                      href: ide/reference/options-text-editor-xml-miscellaneous.md
+            - name: XAML デザイナー
               href: ide/reference/xaml-designer.md
         - name: '[出力] ウィンドウ'
           href: ide/reference/output-window.md

@@ -2,18 +2,21 @@
 title: '手順 3: カウントダウン タイマーを追加する'
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d99987a16d0e4f6ff67e92fdb900600cd7943a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 86e19e99bc6732ddadabdb3e308dcf8e0def41fa
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430762"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416712"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>手順 3: カウントダウン タイマーを追加する
 このチュートリアルの第 3 部では、クイズの受け手が完了するまでの残り秒数を追跡するためのカウントダウン タイマーを追加します。
@@ -49,7 +52,7 @@ ms.locfileid: "63430762"
 
      追加されたステートメントに基づいて、タイマーは毎秒、**timeLeft** 整数変数が 0 より大きいかどうかを確認することで、残り時間がなくなっていないかどうかを確認します。 0 より大きい場合、時間はそのまま残ります。 タイマーは、まず timeLeft から 1 を減算し、次に残り秒数をクイズの受け手に示すために **timeLabel** コントロールの **[Text]** プロパティを更新します。
 
-     残り時間がなくなると、タイマーは停止し、"**Time's up!**" と表示されるように **timeLabel** コントロールのテキストを変更します。 メッセージ ボックスはクイズが終了したことを知らせ、この場合、解答は addend1 と addend2 を加算することによって表示されます。 **startButton** コントロールの **[Enabled]** プロパティは、クイズの受け手が別の問題を開始できるように **true** に設定されます。
+     残り時間がなくなると、タイマーは停止し、"**Time's up!** " と表示されるように **timeLabel** コントロールのテキストを変更します。 メッセージ ボックスはクイズが終了したことを知らせ、この場合、解答は addend1 と addend2 を加算することによって表示されます。 **startButton** コントロールの **[Enabled]** プロパティは、クイズの受け手が別の問題を開始できるように **true** に設定されます。
 
      ここでは、`if else` ステートメントを追加しました。これは、プログラムで条件判断を行うように指定するためのステートメントです。 `if else` ステートメントは次のようになります。
 
@@ -86,14 +89,14 @@ ms.locfileid: "63430762"
 
      ステートメント `addend1 + addend2` は 2 つの変数の値を加算します。 最初の部分 (`sum.Value`) は、sum NumericUpDown コントロールの **[Value]** プロパティを使用して正しい解答を表示します。 クイズの解答を確認するために後で同じプロパティを使用します。
 
-     <xref:System.Windows.Forms.NumericUpDown> コントロールを使用するとクイズの受け手がさらに簡単に数値を入力できるので、これを計算問題の解答のために使用します。 解答となる可能性があるものはすべて、0 ～ 100 の整数です。 **[最小値]**、**[最大値]**、および **[DecimalPlaces]** の各プロパティの既定値を残しておくと、クイズの受け手は小数、負の値、大きすぎる数を入力できなくなります  (クイズの受け手が 3.141 は入力できるが、3.1415 は入力できないようにする場合は、**DecimalPlaces** プロパティを 3 に設定します)。
+     <xref:System.Windows.Forms.NumericUpDown> コントロールを使用するとクイズの受け手がさらに簡単に数値を入力できるので、これを計算問題の解答のために使用します。 解答となる可能性があるものはすべて、0 ～ 100 の整数です。 **[最小値]** 、 **[最大値]** 、および **[DecimalPlaces]** の各プロパティの既定値を残しておくと、クイズの受け手は小数、負の値、大きすぎる数を入力できなくなります (クイズの受け手が 3.141 は入力できるが、3.1415 は入力できないようにする場合は、**DecimalPlaces** プロパティを 3 に設定します)。
 
 6. `StartTheQuiz()` メソッドの最後に 3 行のコードを追加します。コードは次のようになります。
 
      [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
      [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]
 
-     これで、クイズの開始時に、**timeLeft** 変数が 30 に設定され、**timeLabel** コントロールの **[Text]** プロパティが 30 秒に変更されます。 次に、Timer コントロールの <xref:System.Windows.Forms.Timer.Start> メソッドがカウントダウンを開始します  (解答の確認は次の手順で設定するため、まだ行われません)。
+     これで、クイズの開始時に、**timeLeft** 変数が 30 に設定され、**timeLabel** コントロールの **[Text]** プロパティが 30 秒に変更されます。 次に、Timer コントロールの <xref:System.Windows.Forms.Timer.Start> メソッドがカウントダウンを開始します (解答の確認は次の手順で設定するため、まだ行われません)。
 
 7. プログラムを保存し、実行して、フォームの **[Start]** ボタンをクリックします。
 

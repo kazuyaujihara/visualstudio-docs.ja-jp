@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f04355a266f87a039b8197675c2f5377b840ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fec59e1d683c7867eb1cad9ae4e796a0815200d4
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388314"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604786"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053:スタティック ホルダー型はコンストラクターを含むことはできません
+# <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053:静的ホルダー型に既定のコンストラクターを含めることはできません
 
 |||
 |-|-|
@@ -30,22 +30,21 @@ ms.locfileid: "63388314"
 |カテゴリ|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
+> [!NOTE]
+> Rule CA1053 は CA1052 に[結合されます。静的ホルダー型は、](ca1052-static-holder-types-should-be-sealed.md) [FxCop アナライザー](fxcop-analyzers.yml)に封印する必要があります。
+
 ## <a name="cause"></a>原因
- パブリック型または入れ子になったパブリック型で、静的なメンバーのみが宣言されています。また、パブリックまたはプロテクトの既定のコンストラクターが含まれます。
+
+パブリックまたは入れ子にされたパブリック型は静的メンバーのみを宣言し、既定のコンストラクターを持ちます。
 
 ## <a name="rule-description"></a>規則の説明
- 静的メンバーの呼び出しに型のインスタンスは必要ないため、コンストラクターは不要です。 また、型が非静的メンバーを持たないためインスタンスを作成するアクセスことはできません型のメンバーのいずれかに。
+
+静的メンバーを呼び出す場合、型のインスタンスは必要ないため、既定のコンストラクターは不要です。 また、型には非静的メンバーがないため、インスタンスを作成しても、型のメンバーへのアクセスは提供されません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、既定のコンス トラクターを削除するか、プライベートになります。
 
-> [!NOTE]
-> 型はコンス トラクターを定義していない場合、一部のコンパイラは自動的に既定のパブリック コンス トラクターを作成します。 型の場合は場合、違反を防ぐために既定のプライベート コンス トラクターを追加します。
+この規則違反を修正するには、既定のコンストラクターを削除します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。 コンス トラクターのプレゼンスは、型が静的な型ではないことを提案します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-## <a name="example"></a>例
- 次の例では、この規則に違反する型を示します。 ソース コードで既定のコンス トラクターがないことに注意してください。 このコードがアセンブリにコンパイルされると、c# コンパイラは既定コンス トラクターは、このルールに違反するを挿入します。 これを修正するには、プライベート コンス トラクターを宣言します。
-
- [!code-csharp[FxCop.Design.StaticTypes#1](../code-quality/codesnippet/CSharp/ca1053-static-holder-types-should-not-have-constructors_1.cs)]
+この規則による警告は抑制しないでください。 既定のコンストラクターが存在する場合は、型が静的な型でないことが示されます。

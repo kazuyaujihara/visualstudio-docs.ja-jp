@@ -2,25 +2,28 @@
 title: '手順 3: 各ラベルへのランダムなアイコンの割り当て'
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adad85955805aa9349a3655ec9b817e17fd3c712
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ae4b635f86eb67f04db3ba6243e7b0ba4634bfb4
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430753"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416668"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>手順 3: 各ラベルへのランダムなアイコンの割り当て
 ゲームで毎回、同じアイコンが同じセルに表示されていたのでは、やりがいがありません。 これを避けるには、`AssignIconsToSquares()` メソッドを使用して、フォームのラベル コントロールにアイコンをランダムに割り当てます。
 
 ## <a name="to-assign-a-random-icon-to-each-label"></a>各ラベルにランダムなアイコンを割り当てるには
 
-1. 次のコードを追加する前に、メソッドのしくみについて検討します。 新しいキーワード `foreach` (Visual C# の場合) および `For Each` (Visual Basic の場合) があります  (1 つの行は意図的にコメント アウトされています。これについてはこの手順の最後に説明します)。
+1. 次のコードを追加する前に、メソッドのしくみについて検討します。 新しいキーワード `foreach` (Visual C# の場合) および `For Each` (Visual Basic の場合) があります (1 つの行は意図的にコメント アウトされています。これについてはこの手順の最後に説明します)。
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]
@@ -42,7 +45,7 @@ ms.locfileid: "63430753"
      [!code-csharp[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_3.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#16](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_3.vb)]
 
-     最初の行では、**control** 変数を **iconLabel** という名前のラベルに変換しています。 その次の行は、変換が成功したかどうかを確認する `if` ステートメントです。 変換が成功した場合は、`if` ステートメント内のステートメントが実行されます  (前のチュートリアルでも説明したように、`if` ステートメントは、指定した任意の条件を評価するために使用されます)。`if` ステートメントの最初の行では、**randomNumber** という名前の変数を作成し、icons リスト内の項目のいずれかに対応する乱数をこの変数に格納します。 そのために、前に作成した <xref:System.Random.Next> オブジェクトの <xref:System.Random> メソッドを使用します。 `Next` メソッドは乱数を返します。 またこの行では、**icons** リストの <xref:System.Collections.Generic.List%601.Count> プロパティを使用して、乱数を選択する範囲を決定しています。 次の行では、icons リストのいずれかの項目をラベルの <xref:System.Windows.Forms.Label.Text> プロパティに割り当てています。 コメントアウトしている行は、このトピックの後半で説明します。 最後に、`if` ステートメントの最終の行で、フォームに追加したアイコンをリストから削除しています。
+     最初の行では、**control** 変数を **iconLabel** という名前のラベルに変換しています。 その次の行は、変換が成功したかどうかを確認する `if` ステートメントです。 変換が成功した場合は、`if` ステートメント内のステートメントが実行されます (前のチュートリアルでも説明したように、`if` ステートメントは、指定した任意の条件を評価するために使用されます)。`if` ステートメントの最初の行では、**randomNumber** という名前の変数を作成し、icons リスト内の項目のいずれかに対応する乱数をこの変数に格納します。 そのために、前に作成した <xref:System.Random.Next> オブジェクトの <xref:System.Random> メソッドを使用します。 `Next` メソッドは乱数を返します。 またこの行では、**icons** リストの <xref:System.Collections.Generic.List%601.Count> プロパティを使用して、乱数を選択する範囲を決定しています。 次の行では、icons リストのいずれかの項目をラベルの <xref:System.Windows.Forms.Label.Text> プロパティに割り当てています。 コメントアウトしている行は、このトピックの後半で説明します。 最後に、`if` ステートメントの最終の行で、フォームに追加したアイコンをリストから削除しています。
 
      コード内にわからない部分があれば、コード要素の上にマウス ポインターを合わせると、関連するヒントが表示されます。 Visual Studio デバッガーを使用して、プログラムの実行中にコードの各行をステップ実行することもできます。 詳しくは、「[How Do I:Step with The Debugger in Visual Studio?](https://msdn.microsoft.com/vstudio/ee672313.aspx)」 (操作方法: Visual Studio のデバッガーでステップ実行する) または「[デバッガーでのコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)」をご覧ください。
 
@@ -74,7 +77,7 @@ ms.locfileid: "63430753"
      [!code-csharp[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_5.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#15](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_5.vb)]
 
-7. メニュー バーで、**[すべて保存]** をクリックし、プログラムを保存したうえで実行します。 アイコンが非表示になったように見えます。青い背景のみが表示されます。 ただし、アイコンはランダムに割り当てられて、そこに存在しています。 アイコンは、背景と同じ色であるため、プレーヤーには見えなくなっています。 これで、ゲームはやりがいのあるものになりました。プレーヤーはすべてのアイコンをすぐに見ることができなくなったためです。
+7. メニュー バーで、 **[すべて保存]** をクリックし、プログラムを保存したうえで実行します。 アイコンが非表示になったように見えます。青い背景のみが表示されます。 ただし、アイコンはランダムに割り当てられて、そこに存在しています。 アイコンは、背景と同じ色であるため、プレーヤーには見えなくなっています。 これで、ゲームはやりがいのあるものになりました。プレーヤーはすべてのアイコンをすぐに見ることができなくなったためです。
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
