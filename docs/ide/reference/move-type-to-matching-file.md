@@ -1,5 +1,6 @@
 ---
 title: 一致するファイルへの型の移動リファクタリング
+description: 型を同じ名前の別のファイルに移動します。 型名を右クリックして [クイック アクションとリファクタリング] を選択し、[型を <TypeName>.cs に移動] を選択します。
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e3b12f6a19ea64e43f7a5e00e3c795cc7358e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3021e08d3cfb601a67f51e53c97d2eba60c397a5
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540756"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483650"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>一致するファイルへの型の移動リファクタリング
 
@@ -45,18 +46,18 @@ ms.locfileid: "62540756"
 
 2. 次に、以下のいずれかを実行します。
 
-   - 行の任意の場所で **Ctrl**+**.** キーを押すと、
+   - 行の任意の場所で **Ctrl**+ **.** キーを押すと、
    - 型名を右クリックして **[クイック アクションとリファクタリング]** を選択します。
 
 1. メニューから **[型を *TypeName*.cs に移動]** を選択します。*TypeName* は選択した型の名前です。
 
    型と同じ名前を持つプロジェクト内の新しいファイルに型が移動されます。
 
-   - C#: 
+   - C#:
 
       ![インラインの結果 - C#](media/movetype-result-cs.png)
 
-   - Visual Basic: 
+   - Visual Basic:
 
       ![インラインの結果 - Visual Basic](media/movetype-result-vb.png)
 

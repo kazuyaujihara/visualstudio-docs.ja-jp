@@ -1,29 +1,25 @@
 ---
 title: Microsoft Partner Network (MPN) で提供されている Visual Studio サブスクリプションの管理 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/11/2017
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: MPN パートナーのために Visual Studio サブスクリプションをエンド ユーザーに割り当てる方法。
-ms.openlocfilehash: ca0865f876cfad10cbd7c6744f938fef839f7d55
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 600d7c651e4e4b4396293e8be60a008a6f6d0bf3
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823199"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605455"
 ---
-# <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) で提供されている Visual Studio サブスクリプションの管理
-
+# <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) で提供されている Visual Studio サブスクリプションを管理する
 MPN でコンピテンシーを取得するか、Action Pack を購入したパートナーは、Visual Studio サブスクリプションを使用できます。 これらのサブスクリプションは、ユーザーごとにライセンスされ、パートナー企業で働く特定の名前付きユーザーに割り当てられている場合にのみ有効です。
 
 詳細については、「[Microsoft Partner Network (MPN) でパートナーに提供される Visual Studio サブスクリプション](program-mpn.md)」を参照してください。
 
-## <a name="high-level-assignment-and-access-flow"></a>高レベルの割り当てとアクセス フロー
-
-### <a name="microsoft-action-pack-subscribers"></a>Microsoft Action Pack サブスクライバー
+## <a name="microsoft-action-pack-subscribers"></a>Microsoft Action Pack サブスクライバー
 Microsoft Action Pack サブスクライバーと Visual Studio サブスクリプション
-
 1. プログラム管理者が Partner Membership Center にログインします。
 2. **[Requirements and Assets]\(要件と資産\)** を通じてユーザーを関連付けます。
 3. 個人を特定し、**ロールを割り当て**ます。
@@ -41,7 +37,7 @@ Microsoft Action Pack サブスクライバーと Visual Studio サブスクリ�
     - 連絡先の電子メール
 13. これでサインインが完了し、サブスクライバーが特典にアクセスできます。
 
-### <a name="competency-partners"></a>コンピテンシー パートナー
+## <a name="competency-partners"></a>コンピテンシー パートナー
 1. **[実績と必要要件]** を選びます。
 2. **[アクセス許可]** を選びます。
 3. **[MSDN サブスクリプション]** を選びます (注: これは近々 "Visual Studio サブスクリプション" に変更されます)。
@@ -56,15 +52,12 @@ Microsoft Action Pack サブスクライバーと Visual Studio サブスクリ�
 9. これでサインインが完了し、サブスクライバーが特典にアクセスできます。
 
 ## <a name="resources-and-references"></a>リソースと参照
-
 - Microsoft Partner Network (MPN) [Visual Studio サブスクリプション](https://partner.microsoft.com/membership/msdn-subscriptions)に関する詳細
-
 - Microsoft Partner Network 「[Program Administrator Guide to Software and Online Services Benefits](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf)」 (ソフトウェアとオンライン サービスの特典に関するプログラム管理者ガイド)
   - 6 ページ: Assigning Contact Roles and Visual Studio subscriptions for Action Pack (Action Pack への連絡先ロールと Visual Studio サブスクリプションの割り当て)
+  > [!NOTE]
+  > Visual Studio サブスクリプションには、技術担当者ロールが必要
+  - 8 ページ: Assigning Visual Studio subscriptions for Competency Partners (コンピテンシー パートナーへの Visual Studio サブスクリプションの割り当て)
 
-> [!NOTE]
-> Visual Studio サブスクリプションには、技術担当者ロールが必要
-> - 8 ページ: Assigning Visual Studio subscriptions for Competency Partners (コンピテンシー パートナーへの Visual Studio サブスクリプションの割り当て)
-
-## <a name="need-help"></a>お困りの際は、
+## <a name="next-steps"></a>次の手順
 サブスクライバーのサブスクリプションへのアクセスに関する問題を解決するには、サブスクライバーとプログラム管理者が、Microsoft Partner Network のサポート チームと直接作業する必要があります。 [パートナーのサポート](https://partner.microsoft.com/support) ページをご覧ください (MPN サインイン資格情報が必要です)。

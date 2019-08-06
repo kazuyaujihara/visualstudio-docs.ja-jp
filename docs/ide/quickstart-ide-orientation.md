@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f039081309f29e0cd86b3d56ae102b4e55d82ad
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 063024605f142cd2d836eb9322274e7b81cdd9f0
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820978"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483774"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>クイック スタート: Visual Studio IDE の表示の紹介
 
@@ -71,7 +71,7 @@ Visual Studio の機能を引き続き確認するために、新しいプロジ
 
    ![Visual Studio の [スタート ページ] でプロジェクト テンプレートを検索する](media/start-page-search-templates.png)
 
-   Visual Studio には、すぐにコーディングを開始するのに役立つ、さまざまな種類のプロジェクト テンプレートが用意されています。 C# の **[コンソール アプリ (.NET Framework)** ] プロジェクト テンプレートを選択します (Visual Basic、C++、Javascript など他の言語で開発している場合は、それらの言語のいずれかでプロジェクトを作成してもかまいません。 表示される UI はすべてのプログラミング言語でほぼ同じです)。
+   Visual Studio には、すぐにコーディングを開始するのに役立つ、さまざまな種類のプロジェクト テンプレートが用意されています。 C# の **[コンソール アプリ (.NET Core)]** プロジェクト テンプレートを選択します。 (Visual Basic、C++、Javascript など他の言語で開発している場合は、それらの言語のいずれかでプロジェクトを作成してもかまいません。 表示される UI はすべてのプログラミング言語でほぼ同じです)。
 
 1. 表示された **[新しいプロジェクト]** ダイアログ ボックスで、既定のプロジェクト名をそのまま使用し、 **[OK]** を選択します。
 
@@ -87,7 +87,7 @@ Visual Studio の機能を引き続き確認するために、新しいプロジ
 
    ![Visual Studio 2019 の新しいプロジェクト ダイアログ](media/vs-2019/create-a-new-project.png)
 
-1. 言語として C#、Visual Basic、または F# を選択した場合は、 **[コンソール アプリ (.NET Framework)]** テンプレートを選択し、 **[次へ]** を選択します。 (別の言語を選択した場合は、任意のテンプレートを選択します。 表示される UI はすべてのプログラミング言語でほぼ同じです)。
+1. 言語として C#、Visual Basic、または F# を選択した場合は、 **[コンソール アプリ (.NET Core)]** テンプレートを選択し、 **[次へ]** を選択します。 (別の言語を選択した場合は、任意のテンプレートを選択します。 表示される UI はすべてのプログラミング言語でほぼ同じです)。
 
 1. **[新しいプロジェクトの構成]** ページで、既定のプロジェクト名と場所をそのまま使用し、 **[作成]** を選択します。
 

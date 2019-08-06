@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 38d792ad9264c007dab296b65aa330dfa142769e
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 1e9e77cd3b6cd02810873127bf9173eac80d7e74
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132149"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661906"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>方法: C++ DLL 用の単体テストの記述
 
@@ -88,7 +88,7 @@ ms.locfileid: "67132149"
 
 次の手順は、Visual Studio 2019 で DLL プロジェクトを作成する方法を示しています。
 
-1. **Windows デスクトップ ウィザード**を使用し、C++ プロジェクトを作成します。**ソリューション エクスプローラー**でソリューションを右クリックし、 **[追加]** 、 **[新しいプロジェクト]** の順に選択します。 **[言語]** を C++ に設定し、検索ボックスに "windows" と入力します。 結果の一覧から **[Windows デスクトップ ウィザード]** を選択します。 
+1. **Windows デスクトップ ウィザード**を使用し、C++ プロジェクトを作成します。**ソリューション エクスプローラー**でソリューションを右クリックし、 **[追加]** 、 **[新しいプロジェクト]** の順に選択します。 **[言語]** を C++ に設定し、検索ボックスに "windows" と入力します。 結果の一覧から **[Windows デスクトップ ウィザード]** を選択します。
 
      このチュートリアルでは、プロジェクトの名前を `RootFinder`とします。
 
@@ -321,10 +321,21 @@ ms.locfileid: "67132149"
 
 6. 今回は、すべてのテストに合格します。
 
-     ![すべてのテストの成功](../test/media/ute_ult_alltestspass.png)
+   ![すべてのテストの成功](../test/media/ute_ult_alltestspass.png)
+
+::: moniker range="vs-2017"
 
 > [!TIP]
 > 個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> 個々のテストに実行順序を定める依存関係がない場合、ツール バーの設定メニューで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
+
+::: moniker-end
 
 ## <a name="refactor"></a> テストを変更せずにコードをリファクタリングする
 
@@ -353,7 +364,7 @@ ms.locfileid: "67132149"
 
 - **チェックイン テスト。** 各チーム メンバーがコードをソース管理にチェックインする前にテストを実行することを要求できます。 通常、これはビルド確認テストの完全なセットのサブセットです。
 
-     また、最低限のコード カバレッジも要求できます。
+   また、最低限のコード カバレッジも要求できます。
 
 ## <a name="see-also"></a>関連項目
 

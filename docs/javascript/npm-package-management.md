@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 17b373e38d9a808ea830f758c28bea1218bb0b69
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 6d9fd531016a4ac5784f927641a181ac05e4c9ae
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446351"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661865"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio で npm パッケージを管理する
 
@@ -30,9 +30,12 @@ Visual Studio では、npm を操作したり、UI から、または直接 npm 
 
 これらの機能は連動し、プロジェクト システムやプロジェクトの *package.json* ファイルによって同期します。
 
+> [!Important]
+> NPM では、プロジェクト ルートに *node_modules* フォルダーと *package.json* が必要です。 アプリのフォルダー構造が異なる場合は、[プロジェクトをフォルダーとして開く](npm-package-management.md)か、Visual Studio を使用して npm パッケージを管理する場合はフォルダー構造を更新することができます。
+
 ## <a name="npmInstallWindow"></a> ソリューション エクスプローラーからパッケージをインストールする
 
-npm パッケージをインストールする最も簡単な方法は、npm パッケージ インストール ウィンドウを使用することです。 このウィンドウにアクセスするには、プロジェクトの **npm** ノードを右クリックし、**[新しい npm パッケージのインストール]** を選択します。
+npm パッケージをインストールする最も簡単な方法は、npm パッケージ インストール ウィンドウを使用することです。 このウィンドウにアクセスするには、プロジェクトの **npm** ノードを右クリックし、 **[新しい npm パッケージのインストール]** を選択します。
 
 ![ソリューション エクスプローラーから新しい npm パッケージをインストールする](../javascript/media/solution-explorer-install-package.png)
 
@@ -40,7 +43,7 @@ npm パッケージをインストールする最も簡単な方法は、npm パ
 
 ![npm パッケージを検索する](../javascript/media/search-package.png)
 
-* **[依存関係の種類]** - **[Standard]**、**[Development]**、**[Optional]** からパッケージを選択します。 [Standard] の場合、パッケージはランタイム依存となります。[Development] の場合、パッケージは開発中にのみ必須となります。
+* **[依存関係の種類]** - **[Standard]** 、 **[Development]** 、 **[Optional]** からパッケージを選択します。 [Standard] の場合、パッケージはランタイム依存となります。[Development] の場合、パッケージは開発中にのみ必須となります。
 * **[package.json に追加]** - このオプションは非推奨です。
 * **[選択したバージョン]** - インストールするパッケージのバージョンを選択します。
 * **[他の npm 引数]** - 他の標準 npm 引数を指定します。 たとえば、`@~0.8` のようなバージョン値を入力し、バージョン リストでは利用できない特定のバージョンをインストールできます。
@@ -68,7 +71,7 @@ npm パッケージはソリューション エクスプローラーに表示さ
 
 ## <a name="interactive"></a>Node.js 対話型ウィンドウで .npm コマンドを使用する
 
-Node.js 対話型ウィンドウで `.npm` コマンドを使用して npm コマンドを実行することもできます。 Node.js 対話型ウィンドウを開くには、ソリューション エクスプローラーでプロジェクトを右クリックし、**[Node.js 対話型ウィンドウを開く]** を選択します。
+Node.js 対話型ウィンドウで `.npm` コマンドを使用して npm コマンドを実行することもできます。 Node.js 対話型ウィンドウを開くには、ソリューション エクスプローラーでプロジェクトを右クリックし、 **[Node.js 対話型ウィンドウを開く]** を選択します。
 
 このウィンドウで次のようなコマンドを使用してパッケージをインストールできます。
 

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032556"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533363"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio での配置の概要
 
@@ -105,7 +105,11 @@ Visual Studio から、Microsoft Store に配置するためのアプリ パッ�
 
 デスクトップ アプリケーションを [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) でできることよりも複雑な方法でインストールする必要がある場合、Windows インストーラー パッケージ (MSI または EXE インストール ファイル) またはカスタム ブートストラップを作成できます。
 
-- MSI ベースのインストーラー パッケージを [WiX Toolset Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension) を使用して作成できます。 これはコマンドライン ツールセットです。
+- MSI ベースのインストーラー パッケージを [WiX Toolset Extension](https://marketplace.visualstudio.com/items?itemName=WixToolset.WiXToolset) を使用して作成できます。 これはコマンドライン ツールセットです。
+
+   ::: moniker range=">=vs-2019"
+   Visual Studio 2019 については、[WiX Toolset Visual Studio 2019 Extension](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension) を取得します。
+   ::: moniker-end
 
 - MSI または EXE インストーラー パッケージは Flexera Software の [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) を使用して作成できます。 InstallShield は Visual Studio 2017 以降のバージョンで使用できます (Community Edition はサポートされていません)。 InstallShield Limited Edition は Visual Studio に含まれなくなっており、Visual Studio 2017 以降のバージョンではサポートされていないことに注意してください。今後の使用可能性については、[Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) にお問い合わせください。
 

@@ -1,81 +1,58 @@
 ---
-title: オープン ライセンス移行の開始 | Microsoft Docs
+title: オープン ライセンスの注文管理の開始 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
+ms.author: lank
 manager: lank
-ms.date: 07/02/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
-description: Visual Studio サブスクリプション管理ポータルへのオープン ライセンス移行の開始について説明します。
-ms.openlocfilehash: 3e8859cc3b66933133c193ecd0f095939ccf7e77
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: オープン ライセンス プログラムを使用したサブスクリプションの注文の管理について説明します。
+ms.openlocfilehash: ecbd5c4b861683742ec8b9e3d9fca571932ae887
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250606"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605829"
 ---
-# <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Visual Studio サブスクリプション管理ポータルへのオープン ライセンス移行の開始
-
-## <a name="overview"></a>概要
-
-2018 年 7 月に、すべてのオープン ライセンスのお客様が新しい [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に移行します。 このプロセスは、Enterprise や Select/Select Plus のお客様のオンボード プロセスとは少し異なりますが、シンプルです。
-
-- オープン ライセンスのサブスクリプションは新しいポータルに移行します。
-
-- オープン ライセンスを管理している、ボリューム ライセンス サービス センター (VLSC) の現在のサブスクリプション管理者に、そこに記載されたメール アドレスを使って新しいポータルにサインインするための招待メールが届きます。
-
-- サインインすると、自分の会社のサブスクリプションにアクセスできるようになります。
-
-移行日の後、お客様とパートナーの両方が以下に示すシナリオのいずれかに分類されます。
-
-## <a name="open-and-open-license-management-for-new-orders"></a>新しい注文のオープン ライセンス管理の開始
-
-[Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)でサブスクリプションを管理するには、パートナーとお客様がいくつかの手順に従う必要があります。 次のようなプロセスです。
-
+# <a name="open-and-open-license-management-for-new-orders"></a>新しい注文のオープン ライセンス管理の開始
+Visual Studio [サブスクリプション管理ポータル](https://manage.visualstudio.com)でサブスクリプションを管理するには、パートナーとお客様がいくつかの手順に従う必要があります。 次のようなプロセスです。
 - パートナーがお客様の代わりに新しい注文を行い、お客様の業務用のメール アドレスを入力します。
-
 - お客様に [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)での管理者の割り当てと、自分のサブスクリプションへのアクセスを促す通知が届きます。
-
 - お客様に代わってサブスクリプションを管理するパートナーは、管理ポータルでの登録が必要です。 アクセスするためのさまざまな方法を以下に示します (追加オープンのプロセスと似ています)。
 
 ## <a name="existing-partners-adding-a-new-license"></a>新しいライセンスを追加する既存のパートナー
-
-これは [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に既にアクセスでき、管理が必要な Visual Studio サブスクリプションによるオープン ライセンスの注文を行ったパートナーに適用されます。
-
-- パートナーが直接 https://manage.visualstudio.com に移動してサインインします。
-
+これは [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に既にアクセスでき、管理が必要な Visual Studio サブスクリプションによるオープン ライセンスの注文を行ったパートナーに適用されます。  パートナーが新しいライセンスを追加する手順は次のとおりです。
+- https://manage.visualstudio.com にサインインします。
 - 契約のドロップダウンを選択し、 **[+New Open License]\(+新しいオープン ライセンス\)** のオプションが表示されるまで下にスクロールします。
-
-- ポップアップ パネルで、パートナーが契約にある認証番号、ライセンス番号、お客様のメール アドレスを入力し、チェックボックスをオンにして、 **[送信]** をクリックします。
+- ポップアップ パネルで、契約にある認証番号、ライセンス番号、お客様のメール アドレスを入力し、チェックボックスをオンにして、 **[送信]** をクリックします。
 
 > [!NOTE]
 > パートナーがオープン ライセンスに追加されたことを通知する電子メールがお客様に届きます。 パートナーのアクセス権は削除することができます。
 
 ## <a name="new-partners-who-register-on-the-volume-licensing-service-center-vlsc"></a>ボリューム ライセンス サービス センター (VLSC) に登録する新しいパートナー
-
-これは、新しいオープン ライセンスの注文を行っていて、[Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)にアクセスする前に追加オープン フローを通じて [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) に登録する新しいパートナーに適用されます。
-
-- パートナーが VLSC にサインインして "関係サマリー" に移動します。
-
-- ここで管理するオープン ライセンスを選択します。
-
-- 次に、“Visual Studio サブスクリプション” の下の "License Details\(ライセンスの詳細\)" で **[ここをクリック]** のリンクからサブスクリプションを管理するオプションを選択します。
-
-- パートナーが新しい管理ポータルにサインインするためにリダイレクトされます。ここでは VLSC へのサインインに使用したものと同じメール アドレスを使用する必要があります。
-
+これは、新しいオープン ライセンスの注文を行っていて、Visual Studio [サブスクリプション管理ポータル](https://manage.visualstudio.com)にアクセスする前に追加オープン フローを通じて [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) に登録する新しいパートナーに適用されます。 パートナーは、次の手順に従います。
+- VLSC にサインインして [関係サマリー] に移動します。
+- 目的のオープン ライセンスを選択します。
+- 次に、[Visual Studio サブスクリプション] の下の [ライセンスの詳細] で **[ここをクリック]** のリンクからサブスクリプションを管理するオプションを選択します。
+- VLSC へのサインインに以前使用したものと同じメール アドレスを使用して、新しい管理ポータルにサインインします。
 - これで、パートナーがオープン ライセンスのサブスクリプションを管理できるようになります。
 
 > [!NOTE]
 > パートナーがオープン ライセンスに追加されたことを通知する電子メールがお客様に届きます。 パートナーのアクセス権は削除することができます。
 
-## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal--directly"></a>Visual Studio サブスクリプション管理ポータルに直接アクセスしている新しいパートナー
-
-このシナリオは、既に新しいオープン ライセンスの注文を行っているものの、[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) には登録せずに [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に直接アクセスしている新しいパートナーに適用されます。
-
-- パートナーが直接 https://manage.visualstudio.com に移動します。
-
+## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Visual Studio サブスクリプション管理ポータルに直接アクセスしている新しいパートナー
+このシナリオは、既に新しいオープン ライセンスの注文を行っているものの、[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) には登録せずに [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に直接アクセスしている新しいパートナーに適用されます。  この場合は、以下の手順に従ってください。
+- https://manage.visualstudio.com にアクセスします。
 - 認識されているユーザーではないというエラーが表示されます。
-
-- パートナーが **OLP パートナー**の登録オプションを選択し、注文に使用した認証番号、ライセンス番号、お客様のメール アドレスを入力して、チェックボックスをオンにし、 **[送信]** をクリックします。
+- **OLP パートナー**の登録オプションを選択し、注文に使用した認証番号、ライセンス番号、お客様のメール アドレスを入力して、チェックボックスをオンにし、 **[送信]** をクリックします。
 
 > [!NOTE]
 > パートナーがオープン ライセンスに追加されたことを通知する電子メールがお客様に届きます。 パートナーのアクセス権は削除することができます。
+
+## <a name="resources"></a>リソース
+- [Visual Studio ライセンス ホワイト ペーパー](https://aka.ms/vslicensing)
+- [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [ボリューム ライセンスの契約条件](https://www.microsoft.com/licensing/product-licensing/products.aspx)
+
+## <a name="next-steps"></a>次の手順
+- Visual Studio [サブスクリプション管理ポータル](https://manage.visualstudio.com)にアクセスして、サブスクリプションを管理します。
+- お困りの際は、 Visual Studio の[管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)にお問い合わせください。

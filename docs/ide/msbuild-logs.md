@@ -1,6 +1,7 @@
 ---
 title: MSBuild に関する問題のトラブルシューティングとログ記録
 ms.date: 06/27/2019
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild logs"
@@ -14,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: c3db56ac7ea60ce88beae6698c974ac91373ed00
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 8e302814571a5f7f37cfe02b2750f57dacb54c25
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518198"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461477"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>MSBuild に関する問題のトラブルシューティングとログ記録
 
@@ -116,11 +117,11 @@ MSBuild を実行したディレクトリに、Msbuild.binlog ファイルが作
 ## <a name="create-a-detailed-log"></a>詳細なログを作成する
 
 1. Visual Studio のメイン メニューから、 **[ツール]**  >  **[オプション]**  >  **[プロジェクトおよびソリューション]**  > **[ビルド/実行]** に移動します。
-1. **[Msbuild project build verbosity]\(Msbuild プロジェクトのビルドの詳細度\)** を両方のコンボ ボックスで **[詳細]** に設定します。 上のものを使うと **[出力ウィンドウ]** でのビルドの詳細度を制御でき、2 番目を使うと、ビルド中に各プロジェクトの中間ディレクトリに作成される \<プロジェクト名\>.log ファイルでのビルドの詳細度を制御できます。
-1. Visual Studio 開発者コマンド プロンプトで、使用する実際のパスと構成値を代入して次のコマンドのいずれかを入力します。
+1. **[Msbuild project build verbosity]\(Msbuild プロジェクトのビルドの詳細度\)** を両方のコンボ ボックスで **[詳細]** に設定します。 先頭のものを使うと **[出力ウィンドウ]** でのビルドの詳細度を制御でき、2 番目を使うと、ビルド中に各プロジェクトの中間ディレクトリに作成される \<プロジェクト名\>.log ファイルでのビルドの詳細度を制御できます。
+2. Visual Studio 開発者コマンド プロンプトで、使用する実際のパスと構成値を代入して次のコマンドのいずれかを入力します。
 
     ```cmd
-    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln 
+    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln
     ```
 
     or

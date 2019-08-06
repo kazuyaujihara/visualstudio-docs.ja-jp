@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27950e104b6064bdaf3b8b4a8fe4a760fa4e677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc3d88fd07ec5d345b3e8697ef69b193ece0fac1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792906"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604897"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>[アカウント] ([オプション] ダイアログ ボックス - [環境])
 
@@ -29,11 +29,11 @@ ms.locfileid: "62792906"
 
 ### <a name="enable-device-code-flow"></a>デバイス コード フローを有効にする
 
-このオプションをオンにすると、**[ファイル]** > **[アカウント設定]** ページで **[アカウントの追加]** を選択したときの Visual Studio の動作が変わります。 **[アカウントにサインイン]** ページが表示されるのではなく、サインインするための URL とコードを Web ブラウザーに貼り付けることができるダイアログ ボックスが表示されます。 このオプションは、たとえば古いバージョンの Internet Explorer を使用していたり、ファイアウォールでアクセスが制限されていたりして、通常の方法では Visual Studio にサインインできない場合に便利です。 詳しくは、「[複数のユーザー アカウントを使って作業する](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow)」をご覧ください。
+このオプションをオンにすると、 **[ファイル]**  >  **[アカウント設定]** ページで **[アカウントの追加]** を選択したときの Visual Studio の動作が変わります。 **[アカウントにサインイン]** ページが表示されるのではなく、サインインするための URL とコードを Web ブラウザーに貼り付けることができるダイアログ ボックスが表示されます。 このオプションは、たとえば古いバージョンの Internet Explorer を使用していたり、ファイアウォールでアクセスが制限されていたりして、通常の方法では Visual Studio にサインインできない場合に便利です。 詳しくは、「[複数のユーザー アカウントを使って作業する](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow)」をご覧ください。
 
 ## <a name="registered-azure-clouds"></a>登録済み Azure クラウド
 
-このセクションには、Visual Studio へのサインインに使用されている 1 つまたは複数のアカウントを通じてアクセスできる Azure のクラウド インスタンスが表示されます。 たとえば、会社のデータ センターで Azure の非公開インスタンスにアクセスできる場合があります。 または、Azure のソブリンまたは政府インスタンスへのアクセス権を持っている可能性があります (中国や Azure U.S.Government の Azure など)。 グローバル Azure クラウド インスタンスは既定で一覧に表示され、削除することはできません。
+このセクションには、Visual Studio へのサインインに使用されている 1 つまたは複数のアカウントを通じてアクセスできる Azure のクラウド インスタンスが表示されます。 たとえば、会社のデータ センターで Azure の非公開インスタンスにアクセスできる場合があります。 または、Azure のソブリンまたは政府インスタンスへのアクセス権を持っている可能性があります (Azure China 21 Vianet や Azure U.S.Government の Azure など)。 グローバル Azure クラウド インスタンスは既定で一覧に表示され、削除することはできません。
 
 **[追加]** ボタンを選択して、追加の Azure クラウドを登録します。 **[新しい Azure クラウドの追加]** ダイアログには、接続できるいくつかのよく知られている Azure クラウド インスタンスが一覧表示されます。または、非公開の Azure エンドポイントに対する URL を入力することができます。
 
@@ -47,4 +47,3 @@ ms.locfileid: "62792906"
 - [Visual Studio へのサインイン](../signing-in-to-visual-studio.md)
 - [複数のユーザー アカウントを使って作業する](../work-with-multiple-user-accounts.md)
 - [環境設定](../environment-settings.md)
-- [[環境] ([オプション] ダイアログ ボックス)](../../ide/reference/environment-options-dialog-box.md)
