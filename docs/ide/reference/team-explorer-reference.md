@@ -45,7 +45,7 @@ ms.locfileid: "62945083"
 
 ## <a name="pull-requests-page-git"></a>プル要求ページ (Git)
 
-「[Review code with pull requests](/azure/devops/repos/git/pullrequest)」 (プル要求を使用してコードを確認する) を参照してください。
+「[Review code with pull requests](/azure/devops/repos/git/pullrequest)」(プル要求を使用してコードを確認する) を参照してください。
 
 ## <a name="sync-page-git"></a>同期ページ (Git)
 
