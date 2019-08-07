@@ -2,7 +2,7 @@
 title: Visual Studio を修復します
 titleSuffix: ''
 description: Visual Studio 2017 のインストールを修復する方法について説明します
-ms.date: 03/30/2019
+ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
 author: TerryGLee
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3ba5cdf7ba627bc1d6a75368d90da5ce8a726a5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed6b7050d2162fc4e893db6ec4f429fbe3f8eb4f
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973218"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681344"
 ---
 # <a name="repair-visual-studio"></a>Visual Studio を修復します
 
@@ -27,17 +27,17 @@ Visual Studio のインストールが損傷したり、破損したりするこ
 
 1. コンピューター上の **Visual Studio インストーラー**を見つけます。
 
-     たとえば、Windows 10 Anniversary Update 以降を実行しているコンピューター上では、**[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
+     たとえば、Windows 10 Anniversary Update 以降を実行しているコンピューター上では、 **[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
 
    > [!NOTE]
    > 一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー**として **"M"** の項に表示される場合があります。
    >
    > Visual Studio インストーラーは `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe` にもあります。
 
-1. インストーラーを開き、**[その他]** を選択した後、**[修復]** を選択します。
+1. インストーラーを開き、 **[その他]** を選択した後、 **[修復]** を選択します。
 
     ![Visual Studio インストーラーからの Visual Studio の修復](media/repair-visual-studio.png "Visual Studio インストーラーからの Visual Studio の修復")
-    
+
    > [!NOTE]
    > Visual Studio を修復すると、環境がリセットされます。 昇格なしでインストールした、ユーザーごとの拡張機能などのローカル カスタマイズや、ユーザー設定、およびプロファイルが削除されます。 テーマ、色、キー バインドなど、同期された設定が復元されます。
    >
@@ -51,9 +51,9 @@ Visual Studio のインストールが損傷したり、破損したりするこ
 
 1. コンピューター上で Visual Studio インストーラーを見つけます。
 
-     たとえば、Windows 10 を実行しているコンピューター上で、**[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
+     たとえば、Windows 10 を実行しているコンピューター上で、 **[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
 
-     ![Visual Studio インストーラーを開く](media/vs2019-visual-studio-installer.png "Visual Studio インストーラーを開く")
+     ![Visual Studio インストーラーを開く](media/vs-2019/vs-installer-windows-start.png "Visual Studio インストーラーを開く")
 
      > [!NOTE]
      > また、Visual Studio インストーラーは次の場所にもあります。
@@ -62,7 +62,7 @@ Visual Studio のインストールが損傷したり、破損したりするこ
 
     続行する前に、インストーラーの更新が必要な場合があります。 その場合は、画面の指示に従います。
 
-1. インストーラーで、インストールした Visual Studio のエディションを探します。 次に、**[その他]** を選択した後、**[修復]** を選択します。
+1. インストーラーで、インストールした Visual Studio のエディションを探します。 次に、 **[その他]** を選択した後、 **[修復]** を選択します。
 
      ![Visual Studio 2019 を修復する](media/vs-2019/vs-installer-repair.png "Visual Studio 2019 を修復する")
 

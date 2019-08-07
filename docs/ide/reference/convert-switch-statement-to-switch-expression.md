@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ecb7750301101a2607c17e68b5e919623a03caba
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: cc13cffe8352d9fb57f5bb991c3af615eddb2a14
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329064"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740053"
 ---
 # <a name="convert-switch-statement-to-switch-expression"></a>switch ステートメントを switch 式に変換する
 
@@ -30,7 +30,7 @@ ms.locfileid: "67329064"
 
 ## <a name="how-to"></a>方法
 
-1. `switch` 式は C# 8.0 の新しい機能であるため、プロジェクト ファイルで、[言語バージョンをプレビューに設定](/dotnet/csharp/language-reference/configure-language-version#set-the-language-version-in-visual-studio)します。
+1. `switch` 式は C# 8.0 の新しい機能であるため、プロジェクト ファイルで、[言語バージョンをプレビューに設定](/dotnet/csharp/language-reference/configure-language-version#edit-the-project-file)します。
 2. `switch` キーワード内にカーソルを置き、**Ctrl** + **.** キーを押して、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
 3. **[Convert switch statement to expression]\(switch ステートメントを式に変換する\)** を選択します。
 

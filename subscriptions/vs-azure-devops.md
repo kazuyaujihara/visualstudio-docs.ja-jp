@@ -1,28 +1,27 @@
 ---
 title: Visual Studio サブスクリプションの Azure DevOps 特典 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 09/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: Visual Studio サブスクライバーとして Azure DevOps を使用する方法について説明します。
-ms.openlocfilehash: 766bb49678080a926553f4aa42af72f15fd30f98
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 00a60415af16f31362b359944c8007fb3d21351f
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784686"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681634"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio サブスクリプションの Azure DevOps 特典
-
 アクティブな Visual Studio サブスクライバーは、特典としてサブスクリプションに含まれる、Azure DevOps のさまざまな機能を使用することができます。 自分で組織を作成したか、他のユーザーによって追加されたかにかかわらず、メンバーである各 Azure DevOps Services 組織でこれらの同じ機能を使用できます。
 
-Visual Studio サブスクリプションのアクティブ化に使用した ID または[代替 ID](vs-alternate-identity.md) を使って Azure DevOps にサインインすると、そのことが自動的に認識されます。
+## <a name="sign-in"></a>サインイン
+Visual Studio サブスクリプションのアクティブ化に使用した ID または[代替 ID](vs-alternate-identity.md) を使って Azure DevOps にサインインすると、そのことが自動的に認識されます。  このように、(Visual Studio、Office 365、または会社や学校のネットワークのログインに使用する) 職場または学校のアカウントを追加することもできます。これにより、個人用アカウントと職場または学校のアカウントの両方を使用して Azure DevOps にアクセスできるようになります。
 
 [無料の Azure DevOps 組織にサインアップする](https://visualstudio.microsoft.com/team-services/)
 
 ## <a name="eligibility"></a>特典を受ける条件
-
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、一部の NFR<sup>1</sup>、FTE  | Azure Boards & Repos (Basic)、Azure Test Plans、Azure Artifacts<sup>2</sup>、Azure Pipelines (セルフホステッド)       |  はい          |
@@ -41,14 +40,13 @@ Visual Studio サブスクリプションのアクティブ化に使用した ID
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) にアクセスして、割り当てられているすべてのサブスクリプションを確認します。
 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
-Azure DevOps 機能に関する詳細情報:
-
-- [Azure Boards & Repos (Basic)](https://azure.microsoft.com/services/devops/compare-features/)
-- [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-- [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
-
 ## <a name="support-resources"></a>サポート リソース
-
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 - [Azure DevOps ドキュメント](/azure/devops/)。
+
+## <a name="next-steps"></a>次の手順
+Azure DevOps 機能に関する詳細情報:
+- [Azure Boards & Repos (Basic)](https://azure.microsoft.com/services/devops/compare-features/)
+- [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+- [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)

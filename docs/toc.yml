@@ -194,8 +194,6 @@
                   href: ide/managing-references-in-a-project.md
                 - name: 参照マネージャーを使用して参照を追加または削除する
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: 拡張 SDK と比較して NuGet を使用した参照の追加
-                  href: ide/adding-references-using-nuget-versus-an-extension-sdk.md
                 - name: インポートした名前空間を追加または削除する (Visual Basic)
                   href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
                 - name: 壊れた参照のトラブルシューティング
