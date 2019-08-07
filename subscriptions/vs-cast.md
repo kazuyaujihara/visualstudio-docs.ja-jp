@@ -3,24 +3,22 @@ title: Visual Studio サブスクリプションの CAST Highlight 特典 | Micr
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションで使用可能な CAST Highlight 特典について説明します
-ms.openlocfilehash: c990682fa107364c181403863d3dbefc5a1f3891
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 50d892c5da4d39ebd2b379a2b16b8c9ca69d061d
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823679"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681206"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CAST Highlight 特典
-
 開発者は、クラウドに移行するときにソフトウェアに関する重要な分析情報が必要です。 Visual Studio Enterprise サブスクライバーは、CAST Highlight を使用することで、そのアプリケーションのソース コードを迅速にスキャンして、Azure への移行に対してアプリケーションのクラウド レディネスを識別したり、移行中および移行後のアプリの進行状況を監視できます。
 
 Visual Studio Enterprise サブスクライバーは、サブスクライバーあたり最大 5 つのアプリについて、CAST Highlight の完全な機能のサブスクリプションを 1 か月間無料で使用することができます。
 
 ## <a name="activation-steps"></a>アクティブ化の手順
-
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
 
 2. [ツール] カテゴリ内で、CAST Highlight 特典タイルを見つけ、 **[コードを取得]** をクリックします。
@@ -39,9 +37,6 @@ Visual Studio Enterprise サブスクライバーは、サブスクライバー�
    > CAST Highlight 特典のアクティブ化は、1 組織につき 10 個に制限されています。  組織で 10 個のアクティブ化を既に使用している場合は、CAST Highlight 特典をアクティブ化することはできず、詳細情報を含む電子メールが届きます。
 
 0. ご自分の情報を送信すると、ご自分の要求が受信されたことを確認するページが表示されます。
-
-    > [!div class="mx-imgBorder"]
-    > ![CAST Highlight のありがとうページ](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
 0. CAST チームはご自分の要求を評価して、ご自分に連絡してアカウントの作成を完了させます。
 
@@ -78,7 +73,6 @@ Visual Studio Enterprise サブスクライバーは、サブスクライバー�
    > 受信した電子メールにあるアクティブ化リンクを必ずクリックしてください。  クリックしないと、CAST Highlight サブスクリプションにアクセスすることはできません。 受信トレイにメールが表示されない場合は、迷惑メール フォルダーを確認してください。
 
 ## <a name="eligibility"></a>特典を受ける条件
-
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 30 日間 5 つのアプリを評価|  いいえ。  新しいサブスクライバーのみが使用できます          |
@@ -104,7 +98,6 @@ Visual Studio Enterprise サブスクライバーは、サブスクライバー�
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="next-steps"></a>次の手順
-
 サブスクリプションに付属している Azure 特典をまだアクティブ化していない場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスして、[ツール] カテゴリで [Azure] タイルをクリックして、Azure サブスクリプションを設定し、Azure クレジットを引き換えます。
 
 また、Greg の電子メールに記載されている、デモ、ユーザー ガイド、チュートリアルのビデオをチェックすることを忘れないでください。

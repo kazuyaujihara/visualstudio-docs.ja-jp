@@ -14,12 +14,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5076ea34b1bcbd66239722bc8fb1a3edc4763162
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b4c22076a5f08b1b8f25722e5c3a5fef27b81b9e
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680622"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739984"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>マネージド コードに対するコード分析の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "65680622"
   
  プロジェクトをビルドするたびにコード分析を実行するには、プロジェクトのプロパティ ページで **[ビルドに対するコード分析の有効化 (定数 CODE_ANALYSIS を定義)]** をオンにします。 詳細については、「[方法 :自動コード分析を有効/無効にする](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)」を参照してください。  
   
- プロジェクトに対してコード分析を手動で実行するには、**[分析]** メニューの **[_ProjectName_ でコード分析を実行]** をクリックします。 詳細については、「[方法 :自動コード分析を有効/無効にする](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)」を参照してください。  
+ プロジェクトに対してコード分析を手動で実行するには、 **[分析]** メニューの **[_ProjectName_ でコード分析を実行]** をクリックします。 詳細については、「[方法 :自動コード分析を有効/無効にする](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)」を参照してください。  
   
 ## <a name="rule-sets"></a>規則セット  
  マネージド コード用のコード分析規則は、*規則セット*にグループ化されています。 Microsoft の標準の規則セットのいずれかを使用するか、特定のニーズを満たす独自の規則セットを作成することができます。 詳細については、「[規則セットを使用したコード分析規則のグループ化](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)」を参照してください。  
@@ -63,7 +63,7 @@ ms.locfileid: "65680622"
   これは、チェックイン ポリシーを指定することにより実現できます。 詳細については、「[チーム プロジェクト チェックイン ポリシーによるコード品質の向上](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)」を参照してください。  
   
 ## <a name="team-build-integration"></a>チーム ビルドの統合  
- ビルド システムの統合機能を使用すると、分析ツールをビルド プロセスの一環として実行できます。 詳細については、「[アプリケーションのビルド](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)」をご覧ください。  
+ ビルド システムの統合機能を使用すると、分析ツールをビルド プロセスの一環として実行できます。 詳細については、「[アプリケーションのビルド](/azure/devops/pipelines/index)」をご覧ください。  
   
 ## <a name="see-also"></a>関連項目  
  [規則セットを使用したコード分析規則のグループ化](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   

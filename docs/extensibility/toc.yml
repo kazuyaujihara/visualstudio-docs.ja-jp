@@ -830,6 +830,8 @@
   items:
     - name: ソフトウェア開発キットを作成する
       href: creating-a-software-development-kit.md
+    - name: SDK と NuGet パッケージ
+      href: nuget-versus-sdk-references.md
     - name: 'チュートリアル: C# または Visual Basic を使用して SDK を作成する'
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: 'チュートリアル: C++ を使用して SDK を作成する'

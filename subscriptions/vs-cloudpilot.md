@@ -3,24 +3,23 @@ title: Visual Studio サブスクリプションの CloudPilot 特典 | Microsof
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションで使用可能な CloudPilot 特典について説明します
-ms.openlocfilehash: 66de81b30d8eeb315353aa0b6aa37e75c50a19d6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6fec81e4f4345c77bdff7dd08bf2615d6fe45ad4
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825918"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681658"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CloudPilot 特典
-
 いくつかの簡単な手順で、アプリを Microsoft Azure に移行します。 数分で、Containers、VM、App Services、SQL Azure、SQL MI への正常な移行のためにコード変更が必要なすべてのコード行が識別されます。 次に、ASR、DMA、および DMS を活用するウィザードを使用して、アプリを Azure に移行します。
 
+## <a name="overview"></a>概要
 UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure にすばやく簡単に移行できるようにするために設計されています。  手動による評価の何分の 1 かの時間で、CloudPilot は Azure PaaS & IaaS の移行コストを正確に判断し、詳細な推奨事項、クラウドでアプリケーションを実行するために変更が必要なコードがあるコード行を提供します。 CloudPilot は、クラウドの移行作業および開発計画の最初の評価、クラウド向けに詳細なコード レベルの変更を提供することによるリファクタリング プロセス、およびエンタープライズ テクノロジ コントロールおよびポリシーに対する最終テストを支援します。
 
 ## <a name="activation-steps"></a>アクティブ化の手順
-
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
 
 2. [ツール] カテゴリ内で、CloudPilot 特典タイルを見つけ、 **[コードを取得]** をクリックします。
