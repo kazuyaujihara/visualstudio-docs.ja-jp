@@ -11,28 +11,28 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b91eeff74df839836a380db3d2005c7823494581
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f3238a94f027ad27b69682ec6f797de0dbdd6d9
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428483"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821506"
 ---
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio の最新ドキュメントについては、次を参照してください。[ご意見](https://docs.microsoft.com/visualstudio/ide/talk-to-us)します。  
+Visual Studio の最新のドキュメントについては、「[お問い合わせ](https://docs.microsoft.com/visualstudio/ide/feedback-options)」を参照してください。  
 
 ドキュメントをより良いものにするために、皆様のご意見をお寄せください。 個別に回答することはできませんが、お寄せいただいたフィードバックは、適切な担当者に届けられます。  
   
 ## <a name="i-likedislike-something-in-the-visual-studio-documentation"></a>Visual Studio ドキュメントの良い点と改善が必要な点  
- ページの下部にあるフィードバック ボタン (**[このページは役に立ちましたか]**) をお使いください。 このボタンは、すべての MSDN ページに表示されます。 目的の回答が見つからない場合は、お探しの情報の内容をお聞かせください。  
+ ページの下部にあるフィードバック ボタン ( **[このページは役に立ちましたか]** ) をお使いください。 このボタンは、すべての MSDN ページに表示されます。 目的の回答が見つからない場合は、お探しの情報の内容をお聞かせください。  
   
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Visual Studio での問題を報告します。  
- クラッシュ、パフォーマンスの低下、予期しない動作や Visual Studio を使用して問題を実行している場合、問題をご報告くださいを横にあるフィードバック アイコンを右クリックして**クイック起動**を選択して**ヘルプ&#124;フィードバックの送信&#124;問題を報告する**メイン メニューから。 詳細については、「[Visual Studio で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio-2015.md)」を参照してください。  
+ クラッシュ、パフォーマンスの低下、予期しない動作など、Visual Studio の使用に関する問題が発生している場合は、[**クイック**起動] の横にあるフィードバックアイコンを右クリックするか、[**ヘルプ&#124; ] [送信] を選択して、問題を microsoft に報告してください。フィードバック&#124;は**、メインメニューから問題を報告します。 詳細については、「[Visual Studio で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio-2015.md)」を参照してください。  
   
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Visual Studio の機能に関するご提案  
- 改善できる点がありましたら、ぜひご連絡ください! **[提案事項の送信]** を選択して、Visual Studio チームに機能または変更を提案します。 提案事項は自動的に [UserVoice](https://visualstudio.uservoice.com) に投稿され、それに対して他のユーザーが投票できるようになります。  
+ 改善できる点がありましたら、ぜひご連絡ください! **[提案事項の送信]** を選択して、Visual Studio チームに機能または変更を提案します。   
   
 ## <a name="rate-this-product"></a>この製品を評価する  
  Visual Studio のプレリリース版には、 **[この製品を評価する]** メニュー項目があり、実行しているビルドの品質に関するフィードバックを送信できます。 これは製品のリリース版には表示されません。  
