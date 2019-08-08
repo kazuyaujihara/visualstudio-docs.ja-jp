@@ -2,7 +2,9 @@
   href: designing-user-interfaces.md
 - name: XAML
   items:
-    - name: Visual Studio で XAML をデザインする
+    - name: XAML の概要
+      href: xaml-overview.md
+    - name: Visual Studio と Blend で XAML をデザインする
       href: designing-xaml-in-visual-studio.md
     - name: XAML デザイナー
       items:
@@ -15,45 +17,34 @@
           href: organize-objects-into-layout-containers-in-xaml-designer.md
         - name: リソースを作成して適用する
           href: how-to-create-and-apply-a-resource.md
-        - name: 'チュートリアル: XAML デザイナーでデータにバインドする'
+        - name: 'チュートリアル: データへのバインド'
           href: walkthrough-binding-to-data-in-xaml-designer.md
-        - name: XAML デザイナーのキーボード ショートカット
-          href: keyboard-shortcuts-for-xaml-designer.md
         - name: プロジェクト コードのデバッグまたは無効化
           href: debugging-or-disabling-project-code-in-xaml-designer.md
-        - name: XAML のエラーと警告
-          href: xaml-errors-warnings.md
-    - name: Blend for Visual Studio
-      items:
-        - name: 概要
-          displayName: Blend for Visual Studio
+        - name: Blend for Visual Studio
           href: creating-a-ui-by-using-blend-for-visual-studio.md
-        - name: コントロールの挿入およびそのビヘイビアーの変更
-          href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
-        - name: イメージ、ビデオ、およびオーディオ クリップの挿入
-          href: insert-images-videos-and-audio-clips-in-xaml-designer.md
-        - name: 図形とパスの描画
+        - name: 図形とパスの描画 (Blend)
           href: draw-shapes-and-paths.md
-        - name: Blend におけるオブジェクト スタイルの変更
+        - name: オブジェクト スタイルの変更 (Blend)
           href: modify-the-style-of-objects-in-blend.md
-        - name: オブジェクトのアニメーション化
+        - name: オブジェクトのアニメーション化 (Blend)
           href: animate-objects-in-xaml-designer.md
-        - name: データの表示
+        - name: データの表示 (Blend)
           href: display-data-in-blend.md
-        - name: キーボード ショートカットと修飾キー
+        - name: 関連項目
           items:
-            - name: 概要
-              href: keyboard-shortcuts-and-modifier-keys-in-blend.md
-            - name: キーボード ショートカット
+            - name: XAML のエラーと警告
+              href: xaml-errors-warnings.md
+            - name: XAML デザイナーのキーボード ショートカット
+              href: keyboard-shortcuts-for-xaml-designer.md
+            - name: Blend のキーボード ショートカット
               href: keyboard-shortcuts-in-blend.md
-            - name: アートボードの修飾キー
+            - name: アートボードの修飾キー (Blend)
               href: artboard-modifier-keys-in-blend.md
-            - name: ペン ツールの修飾キー
+            - name: ペン ツールの修飾キー (Blend)
               href: pen-tool-modifier-keys-in-blend.md
-            - name: '[個別選択] ツールの修飾キー'
+            - name: 個別選択ツールの修飾キー (Blend)
               href: direct-selection-tool-modifier-keys-in-blend.md
-        - name: アクセシビリティ製品およびサービス (Blend)
-          href: accessibility-products-and-services-blend.md
 - name: Windows Presentation Foundation (WPF)
   items:
     - name: 作業開始
