@@ -15,20 +15,20 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 8dfceb7ca6221a342a5adbc3b3fcd3c193e0109e
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "65705866"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822399"
 ---
 # <a name="convert-dialog-box"></a>[変換] ダイアログ ボックス
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 **[変換]** ダイアログ ボックスでは、古いプロジェクトから新しいプロジェクトを作成するための変換ツールを選択できます。たとえば、Visual Basic 6 プロジェクトから [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] プロジェクトを作成するような場合です。 また、CodePlex の Web サイトで入手できる [Visual Studio Project Converter](http://go.microsoft.com/fwlink/?LinkID=246465)を使用して、旧バージョンの Visual Studio で作成したプロジェクトをアップグレードすることもできます。  
   
- [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
-  
+ [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
+
 ## <a name="opening-the-convert-dialog-box"></a>[変換] ダイアログ ボックスを開く  
   
 #### <a name="to-access-the-convert-dialog-box"></a>[変換] ダイアログ ボックスにアクセするには  

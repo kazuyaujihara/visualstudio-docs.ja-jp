@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9324c33e383029fa6f98a9b890309cc0a11eb95d
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: d3ea71b2a0226036a923395bbc2dfa3d6b4fc58c
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226265"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870485"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>テキスト テンプレートでの Visual Studio ModelBus の使用
 
@@ -20,16 +20,16 @@ Visual Studio ModelBus 参照を含むモデルを読み取るテキスト テ�
 
 - 参照の対象となっている DSL には、テキスト テンプレートからのアクセス用に構成された ModelBus Adapter が必要です。 他のコードから DSL にアクセスすることも、再構成されたアダプターが、標準の ModelBus アダプターだけでなく必要です。
 
-     アダプター マネージャーを継承する必要があります<xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>は属性が必要と`[HostSpecific(HostName)]`します。
+     アダプターマネージャーは[Vstexttemplatingmodelingadaptermanager](/previous-versions/ee844317(v=vs.140))から継承する必要があり、属性`[HostSpecific(HostName)]`を持っている必要があります。
 
-- テンプレートを継承する必要があります<xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>します。
+- このテンプレートは、 [Modelbusenabledtexttransformation](/previous-versions/ee844263(v=vs.140))から継承する必要があります。
 
 > [!NOTE]
 > ModelBus references を含まない DSL モデルを確認するには、DSL プロジェクトで生成されたディレクティブ プロセッサを使用することができます。 詳細については、[テキスト テンプレートからへのアクセス モデル](../modeling/accessing-models-from-text-templates.md)を参照してください。
 
 テキスト テンプレートの詳細については、[T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)を参照してください。
 
-## <a name="create-a-model-bus-adapter-for-access-from-text-templates"></a>テキスト テンプレートからのアクセス用モデル バス アダプターを作成します。
+## <a name="create-a-model-bus-adapter-for-access-from-text-templates"></a>テキストテンプレートからアクセスするためのモデルバスアダプターを作成する
 
 テキスト テンプレート内の ModelBus 参照を解決するには、ターゲット DSL の互換性のあるアダプターが必要です。 テキスト テンプレートが Visual Studio のドキュメント エディターから別の AppDomain で実行し、アダプターの DTE を通じてアクセスすることではなく、モデルを読み込むためにします。
 
@@ -57,7 +57,7 @@ Visual Studio ModelBus 参照を含むモデルを読み取るテキスト テ�
 
     4. 各`*.tt`ファイル、新しいプロジェクトの名前空間を変更します。
 
-    5. 新しいプロジェクトを右クリックして**ソリューション エクスプ ローラー**し**プロパティ**します。 プロパティ エディターで生成されるアセンブリと既定の名前空間の名前を変更します。
+    5. **ソリューションエクスプローラー**で新しいプロジェクトを右クリックし、 **[プロパティ]** をクリックします。 プロパティ エディターで生成されるアセンブリと既定の名前空間の名前を変更します。
 
     6. DslPackage プロジェクト内には、両方のアダプターへの参照を新しいアダプター プロジェクトへの参照を追加します。
 
@@ -76,7 +76,7 @@ Visual Studio ModelBus 参照を含むモデルを読み取るテキスト テ�
 
 4. で AdapterManager.tt:
 
-    - 継承するように AdapterManagerBase の宣言を変更する<xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>します。
+    - AdapterManagerBase の宣言を変更して、 [Vstexttemplatingmodeの adaptermanager](/previous-versions/ee844317(v=vs.140))から継承されるようにしてください。
 
          `public partial class <#= dslName =>AdapterManagerBase :`
 
@@ -94,11 +94,11 @@ Visual Studio ModelBus 参照を含むモデルを読み取るテキスト テ�
 
 5. **すべてのテンプレートの変換**ソリューションをリビルドします。 ビルド エラーは発生しません。
 
-## <a name="write-a-text-template-that-can-resolve-modelbus-references"></a>ModelBus References を解決できるテキスト テンプレートを作成します。
+## <a name="write-a-text-template-that-can-resolve-modelbus-references"></a>ModelBus 参照を解決できるテキストテンプレートを作成する
 
 通常、読み込み、"source"DSL からファイルを生成するテンプレートを使用して開始します。 このテンプレートで説明されている方法でソース モデル ファイルを読み取るソース DSL プロジェクトで生成されたディレクティブを使用して[テキスト テンプレートからへのアクセス モデル](../modeling/accessing-models-from-text-templates.md)します。 ただし、ソース DSL には、「ターゲット」DSL への ModelBus 参照が含まれています。 テンプレート コードでの参照を解決し、ターゲット DSL にアクセスできるようにするため。 次の手順に従って、テンプレートを調整する必要がありますので。
 
-- テンプレートの基本クラスを変更<xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>します。
+- テンプレートの基本クラスを[Modelbusenabledtexttransformation](/previous-versions/ee844263(v=vs.140))に変更します。
 
 - 含める`hostspecific="true"`template ディレクティブにします。
 
@@ -158,7 +158,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 - 使用`this.ModelBus`ModelBus へのアクセスを取得します。
 
-## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>チュートリアル: ModelBus を使用するテキスト テンプレートのテスト
+## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>チュートリアル: ModelBus を使用するテキストテンプレートのテスト
  このチュートリアルでは、次の手順に従います。
 
 1. 2 つの Dsl を作成します。 1 つの DSL、*コンシューマー*が、`ModelBusReference`プロパティその他の DSL を参照できる、*プロバイダー*します。
@@ -179,7 +179,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. DSL 定義図で、上部近くない図の空白部分を右クリックし、順にクリックします**Modelbus の有効化**します。
 
-   表示されない場合**Modelbus の有効化**ダウンロードし、VMSDK ModelBus 拡張機能をインストールします。
+   [ **Modelbus を有効に**する] が表示されない場合は、VMSDK modelbus 拡張機能をダウンロードしてインストールします。
 
 3. **Modelbus の有効化**ダイアログ ボックスで、**この DSL を ModelBus に公開**、 をクリックし、 **OK**。
 
@@ -187,13 +187,13 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 DSL を ModelBus を使用してテキスト テンプレートからアクセスできるようになりましたがあります。 コマンド、イベント ハンドラー、または規則、モデル ファイル エディターの AppDomain で動作するすべてのコードへの参照を解決できます。 ただし、テキスト テンプレートでは、別の AppDomain で実行され、編集されているときに、モデルにアクセスできません。 テキスト テンプレートからこの DSL を ModelBus references をアクセスする場合は、個別の ModelBusAdapter が必要です。
 
-### <a name="create-a-modelbus-adapter-that-is-configured-for-text-templates"></a>テキスト テンプレート用に構成された ModelBus アダプターの作成します。
+### <a name="create-a-modelbus-adapter-that-is-configured-for-text-templates"></a>テキストテンプレート用に構成されている ModelBus アダプターを作成する
 
-1. ファイル エクスプ ローラーにコピーして貼り付けますを含むフォルダー *ModelBusAdapter.csproj*します。
+1. ファイルエクスプローラーで、 *Modelbusadapter .csproj*を含むフォルダーをコピーして貼り付けます。
 
-    フォルダーの名前**T4ModelBusAdapter**します。
+    フォルダーに**T4ModelBusAdapter**という名前を指定します。
 
-    プロジェクト ファイルの名前を変更*T4ModelBusAdapter.csproj*します。
+    プロジェクトファイルの名前を*T4ModelBusAdapter*に変更します。
 
 2. ソリューション エクスプ ローラーで T4ModelBusAdapter を MBProvider ソリューションに追加します。 ソリューション ノードを右クリックし、[**追加**、] をクリックし、**既存のプロジェクト**します。
 
@@ -209,11 +209,11 @@ DSL を ModelBus を使用してテキスト テンプレートからアクセ�
 
     `<MefComponent>|T4ModelBusAdapter|</MefComponent>`
 
-7. `T4ModelBusAdapter`プロジェクトへの参照を追加します。**Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
+7. `T4ModelBusAdapter`プロジェクトで、への参照を追加します。**Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
 
 8. T4ModelBusAdapter\AdapterManager.tt を開きます。
 
-   1. AdapterManagerBase の基底クラスを <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager> に変更します。 ファイルのこの部分が、次のようになります。
+   1. AdapterManagerBase の基本クラスを[Vstexttemplatingmodelingadaptermanager](/previous-versions/ee844317(v=vs.140))に変更します。 ファイルのこの部分が、次のようになります。
 
        ```
        namespace <#= CodeGenerationUtilities.GetPackageNamespace(this.Dsl) #>.T4ModelBusAdapters
@@ -287,7 +287,7 @@ DSL を ModelBus を使用してテキスト テンプレートからアクセ�
 
    1. デバッグ プロジェクトを右クリックし、[**追加**、] をクリックし、**既存項目の**します。
 
-   2. **項目の追加**ダイアログ ボックスで、フィルターを設定**すべてのファイル (\*.\*)**.
+   2. **項目の追加**ダイアログ ボックスで、フィルターを設定**すべてのファイル (\*.\*)** .
 
    3. 移動します`MBProvider\Debugging\Sample.provide`し**追加**します。
 
@@ -297,7 +297,7 @@ DSL を ModelBus を使用してテキスト テンプレートからアクセ�
 
 5. ファイルを保存します。 (まだ閉じないでください Visual Studio の実験用インスタンス。)
 
-   別のモデル内の要素への ModelBus 参照を含むモデルを作成しました。
+   別のモデルの要素への ModelBus 参照を含むモデルを作成しました。
 
 ### <a name="resolve-a-modelbus-reference-in-a-text-template"></a>テキスト テンプレート内の ModelBus 参照を解決するには
 
@@ -357,7 +357,7 @@ DSL を ModelBus を使用してテキスト テンプレートからアクセ�
 
 1. 実行されている場合は、Visual Studio の実験用インスタンスを閉じます。
 
-2. という名前のファイルを追加*MBConsumer\Dsl\Custom.cs*され、次にそのコンテンツを設定します。
+2. *MBConsumer\Dsl\Custom.cs*という名前のファイルを追加し、その内容を次のように設定します。
 
     ```csharp
     namespace Company.MB2Consume
@@ -388,7 +388,7 @@ DSL を ModelBus を使用してテキスト テンプレートからアクセ�
     }
     ```
 
-3. キーを押して**Ctrl**+**F5**します。
+3. **Ctrl**+**F5**キーを押します。
 
 4. Visual Studio の実験用インスタンスの開く`Debugging\Sample.consume`します。
 

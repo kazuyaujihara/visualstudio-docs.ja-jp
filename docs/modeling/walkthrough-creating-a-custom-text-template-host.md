@@ -13,18 +13,18 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 71b72b677e9735edb3254290055815885e543fa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9d2447d07d9faabb5fc7eabddafc328756056ca
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961990"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870656"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>チュートリアル: カスタム テキスト テンプレート ホストの作成
 
 *テキスト テンプレート ホスト*は、*テキスト テンプレート変換エンジン*が実行できる環境を提供します。 ホストは、エンジンとファイル システムとの対話を管理します。 ファイルまたはアセンブリが必要なエンジンまたは*ディレクティブ プロセッサ*は、ホストからリソースを要求することができます。 ホストは、要求されたリソースをディレクトリとグローバル アセンブリ キャッシュ内で探すことができます。 詳細については、次を参照してください。 [テキスト テンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)
 
-Visual Studio の外部から*テキスト テンプレート変換*機能を使用したい、あるいは、カスタム ツールにその機能を統合したいならば、カスタム ホストを書くことができます。 カスタム ホストを作成するには、<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> を継承するクラスを作成する必要があります。 個々のメソッドの説明については、「<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>」を参照してください。
+Visual Studio の外部から*テキスト テンプレート変換*機能を使用したい、あるいは、カスタム ツールにその機能を統合したいならば、カスタム ホストを書くことができます。 カスタムホストを作成するには、 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))から継承するクラスを作成する必要があります。 個々の方法のドキュメントについては、「 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))」を参照してください。
 
 > [!WARNING]
 > Visual Studio 拡張機能またはパッケージを作成する場合は、独自のホストを作成する代わりに、テキスト テンプレート サービスの使用を検討してください。 詳細については、次を参照してください。 [VS 拡張機能でテキスト変換を呼び出す](../modeling/invoking-text-transformation-in-a-vs-extension.md)
@@ -53,7 +53,7 @@ Visual Studio の外部から*テキスト テンプレート変換*機能を使
 
    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-   - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 以降**
+   - **VisualStudio とそれ以降のバージョンの場合**
 
 3. Program.cs ファイルまたは Module1.vb ファイル内のコードを次のコードに置き換えます。
 
@@ -720,7 +720,7 @@ Visual Studio の外部から*テキスト テンプレート変換*機能を使
 
 6. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
-## <a name="test-the-custom-host"></a>カスタム ホストをテストします。
+## <a name="test-the-custom-host"></a>カスタムホストをテストする
 
 カスタム ホストをテストするには、テキスト テンプレートを作成し、カスタム ホストを実行します。次に、テキスト テンプレートの名前をそのカスタム ホストに渡し、テンプレートが変換されることを確認します。
 
@@ -823,4 +823,4 @@ Visual Studio の外部から*テキスト テンプレート変換*機能を使
 
 ## <a name="see-also"></a>関連項目
 
-- <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
+- [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

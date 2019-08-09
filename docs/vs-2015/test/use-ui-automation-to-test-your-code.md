@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e2cc2f08032d9281e3c86990201315fb8bf3937
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 54a050fc6d9d585be2613a27ca177dc77af61121
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825539"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871635"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI オートメーションを使用してコードをテストする
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ ms.locfileid: "67825539"
 
     コード化された UI テストは、コード化された UI テスト プロジェクトに含まれている必要があります。 コード化された UI テスト プロジェクトをまだ作成していない場合は、プロジェクトを作成します。 ソリューションのショートカット メニューの **[ソリューション エクスプローラー]** で、 **[追加]** 、 **[新しいプロジェクト]** を選択し、 **[Visual Basic]** または **[Visual C#]** を選択します。 次に、 **[テスト]** 、 **[コード化された UI テスト]** を選択します。
 
-   - <em> * *[コード化された UI テスト]</em>* プロジェクト テンプレートが表示されません。*
+   - <em> **[コード化された UI テスト]</em>* プロジェクト テンプレートが表示されません。*
 
       コード化された UI テストをサポートしないバージョンの Visual Studio を使用している可能性があります。 コード化された UI テストを作成するには、Visual Studio Enterprise を使用する必要があります。
 
@@ -168,7 +168,7 @@ ms.locfileid: "67825539"
 - ![Prerequsite](../test/media/prereq.png "Prereq") [TestCleanup] 属性で識別されるテスト クリーンアップ メソッドを追加できます。このメソッドは、各テスト メソッドの終了時にコードを実行します。 たとえば、アプリケーションを終了するメソッドは、TestCleanup メソッドから呼び出すことができます。
 
 ### <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> UI コントロールのプロパティを検証する
- **コード化された UI テスト ビルダー**を使用すると、テストの <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> にユーザー インターフェイス (UI) を追加したり、UI コントロールのアサーションを使用する検証メソッドのコードを生成したりできます。
+ コード化された**Ui テストビルダー**を使用して、ユーザーインターフェイス (ui) コントロールをテスト用の[uimap](/previous-versions/dd580454(v=vs.140))に追加したり、ui コントロールのアサーションを使用する検証メソッドのコードを生成したりできます。
 
  UI コントロールのアサーションを生成するには、コード化された UI テスト ビルダーの**アサーションの追加**ツールを選択し、正しいかどうかを検証するテスト対象アプリケーションのコントロールにドラッグします。 ボックスがコントロールを囲んだら、マウス ボタンを離します。 コントロール クラス コードがすぐに `UIMap.Designer.cs` ファイルに作成されます。
 
@@ -220,8 +220,8 @@ ms.locfileid: "67825539"
   }
   ```
 
-  *コード化された UI テスト ビルダーから [アサーションの追加] を選択しようとすると、選択したいコントロールがフォーカスを失い、非表示になります。コントロールの選択方法* 
-  **キーボードを使用して非表示のコントロールを選択します。**
+  *コード化された UI テスト ビルダーから [アサーションの追加] を選択しようとすると、選択したいコントロールがフォーカスを失い、非表示になります。コントロールを選択操作方法にはキーボードを**使用して非表示のコントロールを選択する** * 
+  
 
   [コントロールを追加し、プロパティを検証する](#VerifyingCodeUsingCUITGenerateAssertions)とき、キーボードが必要になる場合もあります。 たとえば、コンテキスト メニュー コントロールを使用するコード化された UI テストを記録するとき、コード化された UI テスト ビルダーの [アサーションの追加] ツールで選択しようとすると、コントロールのメニュー項目の一覧がフォーカスを失い、非表示になります。 これを次の図に示します。Internet Explorer で、[アサーションの追加] ツールでコンテキスト メニューを選択しようとすると、メニューはフォーカスを失い、非表示になります。
 
@@ -291,7 +291,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ## <a name="VerifyingCodeCUITModify"></a> コード化された UI テストをカスタマイズする
  コード化された UI テストの作成後、Visual Studio で次のいずれかのツールを使用してテストを編集できます。
 
-- **コード化された UI テスト ビルダー:** コード化された UI テスト ビルダーを使用して、その他のコントロールと検証テストを追加します。 このトピックの「[コントロールを追加し、プロパティを検証する](#VerifyingCodeUsingCUITGenerateAssertions)」セクションをご覧ください。
+- **コード化された UI テストビルダー:** コード化された UI テストビルダーを使用して、テストに追加のコントロールと検証を追加します。 このトピックの「[コントロールを追加し、プロパティを検証する](#VerifyingCodeUsingCUITGenerateAssertions)」セクションをご覧ください。
 
 - **コード化された UI テスト エディター:** コード化された UI テスト エディターを使用すると、コード化された UI テストを簡単に変更できます。 Coded UI Test Editor (コード化された UI テスト エディター) を使用すると、テスト メソッドを検索、表示、および編集できます。 また、UI コントロール マップ内の UI 操作および関連コントロールを編集することもできます。 詳細については、「[コード化された UI テスト エディターを使用したコード化された UI テストの編集](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)」をご覧ください。
 
@@ -449,7 +449,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Microsoft テスト マネージャーでの自動テストの実行](https://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [方法: 構成し、アプリケーションのビルド後のスケジュールされているテストの実行](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [方法: アプリケーションのビルド後にスケジュールされたテストを構成して実行する](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
 - [ビルド プロセスでのテストの実行](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 
@@ -465,14 +465,14 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [コード化された UI テストと操作の記録を拡張して Microsoft Excel をサポート](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  コード化された UI テストは、手動テストを自動化するためによく使用されます。 追加のガイダンスについては、次を参照してください。 [Visual Studio 2012 – Chapter 5 による継続的デリバリーのためのテスト。システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)します。 手動テストの詳細については、「[&#91;廃版&#93; Microsoft Test Manager を使用した手動テスト ケースの作成](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e)」をご覧ください。 自動化されたシステム テストの詳細については、「[Microsoft Test Manager を使用した自動テストの作成](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0)」をご覧ください。
+  コード化された UI テストは、手動テストを自動化するためによく使用されます。 その他のガイダンスに[ついては、「Visual Studio 2012 を使用した継続的デリバリーのためのテスト–第5章:システムテスト](http://go.microsoft.com/fwlink/?LinkID=255196)の自動化。 手動テストの詳細については、「[&#91;廃版&#93; Microsoft Test Manager を使用した手動テスト ケースの作成](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e)」をご覧ください。 自動化されたシステム テストの詳細については、「[Microsoft Test Manager を使用した自動テストの作成](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0)」をご覧ください。
 
 ## <a name="external-resources"></a>外部リソース
 
 ### <a name="guidance"></a>ガイダンス
-- [Visual Studio 2012 – Chapter 2 による継続的デリバリーのテスト。単体テスト:内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)
+- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト–第2章:単体テスト:内部のテスト](http://go.microsoft.com/fwlink/?LinkID=255188)
 
-- [Visual Studio 2012 – Chapter 5 による継続的デリバリーのテスト。システム テストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)
+- [Visual Studio 2012 を使用した継続的デリバリーのためのテスト–第5章:システムテストの自動化](http://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>FAQ
 - [Coded UI Tests FAQ - 1 (コード化された UI テストの FAQ - 1)](http://go.microsoft.com/fwlink/?LinkID=230576)
@@ -484,7 +484,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ## <a name="see-also"></a>関連項目
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [コード品質の向上](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [チュートリアル: コード化された UI テストの作成、編集、および保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

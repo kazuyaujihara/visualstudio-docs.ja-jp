@@ -1,5 +1,5 @@
 ---
-title: VSIX 拡張機能スキーマ 2.0 リファレンス |Microsoft Docs
+title: VSIX 拡張機能スキーマ2.0 リファレンス |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,209 +11,209 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e6b00aa746b613d9eff90b9c91c029b100775cf2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b63f226b7aaadb851eab95f9b60f88f8f2be5ff1
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821729"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869978"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 拡張機能スキーマ 2.0 リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSIX の配置マニフェスト ファイルでは、VSIX パッケージの内容について説明します。 ファイル形式は、スキーマによって管理されます。 このスキーマのバージョン 2.0 では、カスタムの型と属性の追加をサポートします。  マニフェストのスキーマは拡張可能です。 マニフェストのローダーでは、XML 要素とそれを認識しない属性は無視されます。  
-  
+Vsix 配置マニフェストファイルは、VSIX パッケージの内容を記述します。 ファイル形式は、スキーマによって管理されます。 このスキーマのバージョン2.0 では、カスタム型と属性の追加がサポートされています。  マニフェストのスキーマは拡張可能です。 マニフェストローダーは、認識されない XML 要素と属性を無視します。
+
 > [!IMPORTANT]
-> Visual Studio 2015 では、Visual Studio 2010、Visual Studio 2012、または Visual Studio 2013 の形式で VSIX ファイルを読み込むことができます。  
-  
-## <a name="package-manifest-schema"></a>パッケージ マニフェスト スキーマ  
- マニフェストの XML ファイルのルート要素は`<PackageManifest>`、1 つの属性を持つ`Version`、マニフェストの形式のバージョンであります。 形式には、大きな変更が加えられて、バージョンの形式が変更されます。 このトピックで説明を設定して、マニフェストで指定されているマニフェスト形式バージョン 2.0、`Version`属性値のバージョンを「2.0」を = です。  
-  
-### <a name="packagemanifest-element"></a>PackageManifest Element  
- 内で、`<PackageManifest>`ルート要素では、次の要素を使用することができます。  
-  
-- `<Metadata>` メタデータと広告については、パッケージ自体。 1 つだけ`Metadata`要素は、マニフェストで使用します。  
-  
-- `<Installation>` -このセクションをインストールするアプリケーションの Sku を含むこの拡張機能パッケージをインストールできる方法を定義します。 1 つだけ`Installation`要素は、マニフェストで使用します。 マニフェストが必要、`Installation`要素、またはこのパッケージは、任意の SKU にインストールされません。  
-  
-- `<Dependencies>` -このパッケージの依存関係のオプションのリストは、ここで定義されます。  
-  
-- `<Assets>` -このセクションには、このパッケージに含まれる資産のすべてが含まれます。 このセクションでは、なしこのパッケージは、任意のコンテンツを画面はありません。  
-  
-- `<AnyElement>*` -マニフェスト スキーマは、柔軟なので、他の要素を許可します。 マニフェストのローダーによって認識されないすべての子要素は、余分な XmlElement オブジェクトとして、拡張機能マネージャー API で公開されます。 これらの子要素では、VSIX 拡張機能は、Visual Studio で実行されるコードが実行時にアクセスできるマニフェスト ファイルで追加のデータを定義できます。 「 <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> 」および「 <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>」を参照してください。  
-  
-### <a name="metadata-element"></a>メタデータ要素  
- このセクションでは、パッケージ、その id、および情報のアドバタイズに関するメタデータです。 `<Metadata>` 次の要素が含まれます。  
-  
-- `<Identity>` -これは、このパッケージの id 情報を定義し、次の属性が含まれています。  
+> Visual Studio 2015 では、visual Studio 2010、Visual Studio 2012、Visual Studio 2013 形式で VSIX ファイルを読み込むことができます。
 
-  - `Id` – この属性は、その作成者によって選択されたパッケージの一意の ID である必要があります。 名前には、CLR 型は名前空間内と同じ方法を修飾する必要があります。Company.Product.Feature.Name します。 `Id`属性は 100 文字に制限されます。  
+## <a name="package-manifest-schema"></a>パッケージマニフェストスキーマ
+ マニフェスト XML ファイルのルート要素は`<PackageManifest>`で、マニフェスト形式の1つの属性`Version`を持ちます。 形式に大きな変更が加えられると、バージョンの形式が変更されます。 このトピックでは、マニフェストで指定されるマニフェスト形式バージョン2.0 について`Version`説明します。これは、属性を value version = "2.0" に設定することによって行います。
 
-  - `Version` – これは、このパッケージとそのコンテンツのバージョンを定義します。 この属性は、CLR アセンブリのバージョン管理形式を次に示します。Major.Minor.Build.Revision (1.2.40308.00)。 高いバージョン番号を使用してパッケージを使用して、パッケージに更新プログラムを見なされ、既存のインストールされているバージョンをインストールできます。  
+### <a name="packagemanifest-element"></a>PackageManifest 要素
+ `<PackageManifest>`ルート要素内では、次の要素を使用できます。
 
-  - `Language` – この属性は、パッケージの既定の言語であり、このマニフェスト内のテキスト形式のデータに対応しています。 この属性は規則に従って CLR ロケール コード、リソース アセンブリの例: en、米国、en、fr。 指定できます`neutral`はどのバージョンの Visual Studio で実行される言語に依存しない拡張機能を宣言します。 既定値は `neutral` です。  
+- `<Metadata>`-パッケージ自体に関するメタデータと広告情報。 マニフェストで`Metadata`許可される要素は1つだけです。
 
-  - `Publisher` – この属性は、会社または個別の名前は、このパッケージの発行元を識別します。 `Publisher`属性は 100 文字に制限されます。  
-  
-- `<DisplayName>` -この要素は、拡張機能マネージャーの UI に表示されるわかりやすいパッケージ名を指定します。 `DisplayName`コンテンツは 100 文字に制限されます。  
-  
-- `<Description>` -この省略可能な要素は、拡張機能マネージャーの UI に表示されるパッケージとその内容の短い説明です。 `Description`コンテンツに制限はありませんが、これが任意のテキストを含めることができます 1000 文字に制限されます。  
-  
-- `<MoreInfo>` -この省略可能な要素は、このパッケージの完全な説明を含むページをオンラインに URL です。 プロトコルは http として指定する必要があります。  
-  
-- `<License>` -この省略可能な要素は、パッケージに含まれているライセンス ファイル (.txt、.rtf) への相対パスです。  
-  
-- `<ReleaseNotes>` -この省略可能な要素とは、リリース ノートを表示する web サイトの URL か、または (.txt、.rtf) のパッケージに含まれるリリース ノート ファイルのいずれかを相対パスです。  
-  
-- `<Icon>` -この省略可能な要素は、パッケージに含まれているイメージ ファイル (png、bmp、jpeg、ico) への相対パスです。 アイコン イメージは 32 x 32 ピクセル (またはそのサイズに圧縮されます)、listview の UI に表示されます。 ない場合は`Icon`要素を指定すると、UI は、既定値を使用します。  
-  
-- `<PreviewImage>` -この省略可能な要素は、パッケージに含まれているイメージ ファイル (png、bmp、jpeg) への相対パスです。 プレビュー イメージは、200 x 200 (ピクセル単位) は、UI の詳細に表示されます。 ない場合は`PreviewImage`要素を指定すると、UI は、既定値を使用します。  
-  
-- `<Tags>` -この省略可能な要素は、検索のヒントで使用されている追加のセミコロンで区切られたテキスト タグを一覧表示します。 `Tags`要素は 100 文字に制限されます。  
-  
-- `<GettingStartedGuide>` -この省略可能な要素は、いずれかの HTML ファイルへの相対パスまたは拡張機能またはこのパッケージ内のコンテンツを使用する方法についての情報が含まれる web サイトの URL です。 このガイドは、インストールの一部として起動されます。  
-  
-- `<AnyElement>*` -マニフェスト スキーマは、柔軟なので、他の要素を許可します。 マニフェストのローダーによって認識されないすべての子要素は、XmlElement オブジェクトの一覧として公開されます。 これらの子要素を使用して、VSIX 拡張機能は、マニフェスト ファイルで追加のデータを定義し、実行時にそれらを列挙します。  
-  
-### <a name="installation-element"></a>インストール要素  
- このセクションでは、このパッケージをインストールする方法、およびアプリケーションの Sku をインストールできることを定義します。 このセクションには、次の属性が含まれています。  
-  
-- `Experimental` – この属性があるすべてのユーザーの現在インストールされている拡張機能が、同じコンピューターに更新されたバージョンを開発している場合は true に設定します。 たとえば、すべてのユーザー、MyExtension 1.0 をインストールしたが、MyExtension 2.0 を同じコンピューターでデバッグ、試験段階を設定する場合は、"true"=。 この属性は、Visual Studio 2015 Update 1 で使用できる以降です。  
-  
-- `Scope` – この属性は、「グローバル」または"ProductExtension"の値を実行できます。  
+- `<Installation>`-このセクションでは、この拡張機能パッケージをインストールする方法を定義します。これには、インストール可能なアプリケーション Sku も含まれます。 マニフェストで許可`Installation`される要素は1つだけです。 マニフェストには`Installation`要素が必要です。または、このパッケージはどの SKU にもインストールされません。
 
-  - 「グローバル」では、インストールは、特定の SKU にスコープでないことを指定します。 たとえば、この値は、拡張機能 SDK がインストールされている場合に使用されます。  
+- `<Dependencies>`-このパッケージの依存関係のオプションの一覧は、ここで定義されています。
 
-  - "ProductExtension"では、従来 VSIX 拡張機能 (バージョン 1.0) を個別の Visual Studio Sku にスコープがインストールされていることを指定します。 これが既定値です。  
-  
-- `AllUsers` – このオプションの属性は、このパッケージをすべてのユーザーに対してインストールするかどうかを指定します。 既定では、この属性が false の場合、ユーザーごと、パッケージは、これを指定します。 (この値を true に設定すると、インストールするユーザー必要がありますに昇格させる結果の VSIX をインストールする管理者の特権レベル。  
-  
-- `InstalledByMsi` – このオプションの属性は、MSI でこのパッケージがインストールされているかどうかを指定します。 MSI でインストールされているパッケージがインストールされ、(プログラムと機能) の MSI によってとしない Visual Studio 拡張機能マネージャーによって管理されます。  既定では、この属性が false の場合、MSI では、パッケージがインストールされていないことを指定します。  
-  
-- `SystemComponent` – このオプションの属性は、このパッケージに対して、システム コンポーネントを考慮するかどうかを指定します。 システム コンポーネントでは、拡張機能マネージャーの UI に表示しないし、更新することはできません。 既定では、この属性が false の場合、システム コンポーネントがパッケージではないことを指定します。  
-  
-- `AnyAttribute*` –`Installation`要素は、制約のない一連の名前と値のペアのディクショナリとしての実行時に公開される属性を受け入れます。  
-  
-- `<InstallationTarget>` この要素は、VSIX インストーラーが、パッケージをインストールする場所を制御します。 場合の値、`Scope`属性が"ProductExtension"パッケージの拡張機能の可用性を提供するには、その内容の一部としてマニフェスト ファイルがインストールされている SKU をターゲットする必要があります。 `<InstallationTarget>`要素には、次属性の場合に、`Scope`属性が、明示的な既定値"ProductExtension"。  
-  
-  - `Id` – この属性は、パッケージを識別します。  属性は、名前空間の規則を次に示します。Company.Product.Feature.Name します。 `Id`属性は、英数字のみを含めることができ、100 文字に制限されます。 予期される値:  
+- `<Assets>`-このセクションには、このパッケージに含まれるすべての資産が含まれています。 このセクションを使用しない場合、このパッケージはコンテンツを表示しません。
 
-    - Microsoft.VisualStudio.IntegratedShell  
+- `<AnyElement>*`-マニフェストスキーマは、他の要素を許可するのに十分な柔軟性を備えています。 マニフェストローダーによって認識されない子要素は、拡張機能マネージャー API で追加の XmlElement オブジェクトとして公開されます。 VSIX 拡張機能では、これらの子要素を使用して、Visual Studio で実行されるコードが実行時にアクセスできるマニフェストファイルに追加のデータを定義できます。 「 [Additionalelements](/previous-versions/visualstudio/visual-studio-2013/hh265266(v=vs.120))」を参照してください。
 
-    - Microsoft.VisualStudio.Pro  
+### <a name="metadata-element"></a>Metadata 要素
+ このセクションは、パッケージ、その id、および広告情報に関するメタデータです。 `<Metadata>`には、次の要素が含まれています。
 
-    - Microsoft.VisualStudio.Premium  
+- `<Identity>`-このパッケージの識別情報を定義します。次の属性が含まれています。
 
-    - Microsoft.VisualStudio.Ultimate  
+  - `Id`–この属性は、作成者によって選択されたパッケージの一意の ID である必要があります。 CLR 型の名前空間と同じ方法で名前を修飾する必要があります。Company.Product.Feature.Name。 属性`Id`は、100文字までに制限されています。
 
-    - Microsoft.VisualStudio.VWDExpress  
+  - `Version`–このパッケージとそのコンテンツのバージョンを定義します。 この属性は、CLR アセンブリのバージョン管理形式に従います。Major. Minor. Build. Revision (1.2.40308.00)。 バージョン番号が高いパッケージは、パッケージの更新プログラムと見なされ、インストールされている既存のバージョンを介してインストールできます。
 
-    - Microsoft.VisualStudio.VPDExpress  
+  - `Language`–この属性はパッケージの既定の言語であり、このマニフェストのテキストデータに対応します。 この属性は、リソースアセンブリの CLR ロケールコード規則に従います。たとえば、en-us、en、fr-fr などです。 任意のバージョン`neutral`の Visual Studio で実行される言語に依存しない拡張機能を宣言するように、を指定できます。 既定値は `neutral` です。
 
-    - Microsoft.VisualStudio.VSWinExpress  
+  - `Publisher`–この属性は、このパッケージの発行元 (会社名または個人名) を識別します。 属性`Publisher`は、100文字までに制限されています。
 
-    - Microsoft.VisualStudio.VSLS  
+- `<DisplayName>`-この要素は、拡張機能マネージャーの UI に表示されるユーザーフレンドリなパッケージ名を指定します。 コンテンツ`DisplayName`は100文字までに制限されています。
 
-    - My.Shell.App  
+- `<Description>`-この省略可能な要素は、拡張機能マネージャーの UI に表示されるパッケージとその内容の簡単な説明です。 コンテンツ`Description`には任意のテキストを含めることができますが、1000文字までに制限されています。
 
-  - `Version` – この属性は、この SKU の最小値と最大のサポート対象バージョンのバージョンの範囲を指定します。 パッケージは、サポートされている Sku のバージョンについて詳しく説明ことができます。 バージョン範囲表記法が 10.0 – 11.0 が、  
+- `<MoreInfo>`-この省略可能な要素は、このパッケージの完全な説明を含むページオンラインの URL です。 プロトコルは http として指定する必要があります。
 
-    - [– 包括的な最小バージョン。  
+- `<License>`-この省略可能な要素は、パッケージに含まれているライセンスファイル (.txt、.rtf) への相対パスです。
 
-    - – 包括最大バージョン。  
+- `<ReleaseNotes>`-この省略可能な要素は、パッケージ (.txt、.rtf) に含まれているリリースノートファイルへの相対パスか、リリースノートを表示する web サイトの URL です。
 
-    - (の排他的な最小バージョン。  
+- `<Icon>`-この省略可能な要素は、パッケージに含まれているイメージファイル (png、bmp、jpeg、ico) への相対パスです。 アイコンイメージは32x32 ピクセルである必要があります (またはそのサイズに縮小されます)。また、listview UI に表示されます。 要素が`Icon`指定されていない場合、UI は既定値を使用します。
 
-    - ) – 排他最大バージョン。  
+- `<PreviewImage>`-この省略可能な要素は、パッケージに含まれているイメージファイル (png、bmp、jpeg) への相対パスです。 プレビューイメージは 200 x 200 ピクセルで、詳細 UI に表示されます。 要素が`PreviewImage`指定されていない場合、UI は既定値を使用します。
 
-    - 1 つのバージョンと、指定されたバージョンのみ。  
+- `<Tags>`-この省略可能な要素は、検索ヒントに使用される、セミコロンで区切られた追加のテキストタグを一覧表示します。 要素`Tags`の文字数は100文字に制限されています。
+
+- `<GettingStartedGuide>`-この省略可能な要素は、HTML ファイルへの相対パスか、このパッケージ内の拡張機能またはコンテンツの使用方法に関する情報を含む web サイトの URL です。 このガイドは、のインストールの一部として起動されます。
+
+- `<AnyElement>*`-マニフェストスキーマは、他の要素を許可するのに十分な柔軟性を備えています。 マニフェストローダーによって認識されない子要素は、XmlElement オブジェクトのリストとして公開されます。 VSIX 拡張機能では、これらの子要素を使用して、マニフェストファイルに追加のデータを定義し、実行時にそれらを列挙できます。
+
+### <a name="installation-element"></a>インストール要素
+ このセクションでは、このパッケージをインストールする方法、およびインストール可能なアプリケーション Sku を定義します。 ここでは、次の属性について説明します。
+
+- `Experimental`-すべてのユーザーに対して現在インストールされている拡張機能があり、同じコンピューターで更新されたバージョンを開発している場合は、この属性を true に設定します。 たとえば、すべてのユーザーに対して MyExtension 1.0 をインストールしていても、同じコンピューターで MyExtension 2.0 をデバッグする場合は、実験的 = "true" に設定します。 この属性は、Visual Studio 2015 Update 1 以降で使用できます。
+
+- `Scope`–この属性は、"Global" または "ProductExtension" の値をとります。
+
+  - "Global" は、インストールの範囲が特定の SKU に限定されないことを指定します。 たとえば、この値は拡張 SDK がインストールされているときに使用されます。
+
+  - "ProductExtension" は、個別の Visual Studio Sku を対象とした従来の VSIX 拡張機能 (バージョン 1.0) がインストールされていることを指定します。 これが既定値です。
+
+- `AllUsers`–この省略可能な属性は、このパッケージをすべてのユーザーにインストールするかどうかを指定します。 既定では、この属性は false です。これは、パッケージがユーザー単位であることを指定します。 (この値を true に設定すると、インストールするユーザーは、結果として得られる VSIX をインストールするために、管理特権レベルに昇格する必要があります。
+
+- `InstalledByMsi`–このオプションの属性は、このパッケージが MSI によってインストールされるかどうかを指定します。 MSI によってインストールされたパッケージは、Visual Studio 拡張機能マネージャーではなく、MSI (プログラムおよび機能) によってインストールおよび管理されます。  既定では、この属性は false です。これは、パッケージが MSI によってインストールされないことを指定します。
+
+- `SystemComponent`–この省略可能な属性は、このパッケージをシステムコンポーネントと見なす必要があるかどうかを指定します。 システムコンポーネントは、拡張機能マネージャーの UI に表示されないため、更新できません。 既定では、この属性は false です。これは、パッケージがシステムコンポーネントではないことを指定します。
+
+- `AnyAttribute*`–要素`Installation`は、名前と値のペアのディクショナリとして実行時に公開される、オープンエンドの属性のセットを受け入れます。
+
+- `<InstallationTarget>`–この要素は、VSIX インストーラーによってパッケージがインストールされる場所を制御します。 `Scope`属性の値が "productextension" の場合、パッケージは、そのコンテンツの一部としてマニフェストファイルがインストールされている SKU をターゲットにして、拡張機能の可用性を提供する必要があります。 属性に明示的な値または既定値 "productextension" が指定されて`<InstallationTarget>`いる場合、要素には次の属性が`Scope`あります。
+
+  - `Id`–この属性は、パッケージを識別します。  属性は、名前空間の規則に従います。Company.Product.Feature.Name。 属性`Id`に使用できるのは英数字のみで、100文字までに制限されています。 予期される値:
+
+    - VisualStudio (Microsoft.)
+
+    - Microsoft.VisualStudio.Pro
+
+    - VisualStudio
+
+    - VisualStudio
+
+    - VisualStudio. VWDExpress
+
+    - VisualStudio. VPDExpress
+
+    - VisualStudio. VSWinExpress
+
+    - VisualStudio. VSLS
+
+    - App.xaml
+
+  - `Version`–この属性は、この SKU のサポートされている最小バージョンと最大バージョンを持つバージョン範囲を指定します。 パッケージは、サポートされている Sku のバージョンを詳細に示すことができます。 バージョン範囲の表記は [10.0 – 11.0] です。ここで、
+
+    - [–最小バージョンを含みます。
+
+    - ] –最大バージョンを含みます。
+
+    - (-最小バージョン排他。
+
+    - ) –最大バージョン排他。
+
+    - 単一バージョン #-指定されたバージョンのみ。
 
     > [!IMPORTANT]
-    > VSIX スキーマのバージョン 2.0 は、Visual Studio 2012 で導入されました。 このスキーマを使用するには、Visual Studio 2012 が必要か、後でコンピューターにインストールされたを使用する VSIXInstaller.exe その製品の一部であります。 Visual Studio 2012 またはそれ以降の VSIXInstaller がインストーラーの以降のバージョンを使用してのみ、Visual Studio の以前のバージョンを対象にすることができます。  
+    > バージョン2.0 の VSIX スキーマは、Visual Studio 2012 で導入されました。 このスキーマを使用するには、コンピューターに Visual Studio 2012 以降がインストールされていて、その製品の一部である VSIXInstaller を使用している必要があります。 以前のバージョンの Visual Studio は、Visual Studio 2012 以降 VSIXInstaller を使用して対象にすることができますが、それ以降のバージョンのインストーラーでのみ使用できます。
 
-  - `AnyAttribute*` –`<InstallationTarget>`要素により、制約のない一連の属性の名前と値のペアのディクショナリとしての実行時に公開します。  
+  - `AnyAttribute*`–要素`<InstallationTarget>`は、実行時に名前と値のペアのディクショナリとして公開される、オープンエンドの属性のセットを許可します。
 
-### <a name="dependencies-element"></a>依存関係要素  
- この要素には、このパッケージを宣言する依存関係の一覧が含まれています。 すべての依存関係を指定すると場合、それらのパッケージ (で識別される、 `Id`) する必要がある前にインストールされています。  
-  
-- `<Dependency>` 要素 – この子要素では、次の属性があります。  
-  
-  - `Id` – この属性は、依存パッケージの一意の ID を指定する必要があります。 この id 値に一致する必要があります、`<Metadata><Identity>Id`このパッケージが依存するパッケージの属性です。 `Id`属性が名前空間の規則に従います。Company.Product.Feature.Name します。 この属性は、英数字のみを含めることができ、100 文字に制限されています。  
+### <a name="dependencies-element"></a>Dependencies 要素
+ この要素には、このパッケージが宣言する依存関係の一覧が含まれています。 依存関係が指定されている場合は、その`Id`パッケージ (によって識別される) がの前にインストールされている必要があります。
 
-  - `Version` – この属性は、この SKU の最小値と最大のサポート対象バージョンのバージョンの範囲を指定します。 パッケージは、サポートされている Sku のバージョンについて詳しく説明ことができます。 バージョン範囲の表記は、[12.0, 13.0]、場所。  
+- `<Dependency>`要素–この子要素には、次の属性があります。
 
-    - [– 包括的な最小バージョン。  
+  - `Id`–この属性は、依存パッケージの一意の ID である必要があります。 この id 値は、 `<Metadata><Identity>Id`このパッケージが依存しているパッケージの属性と一致している必要があります。 属性`Id`は、名前空間の規則に従います。Company.Product.Feature.Name。 属性に使用できるのは英数字のみで、100文字までに制限されています。
 
-    - – 包括最大バージョン。  
+  - `Version`–この属性は、この SKU のサポートされている最小バージョンと最大バージョンを持つバージョン範囲を指定します。 パッケージは、サポートされている Sku のバージョンを詳細に示すことができます。 バージョン範囲の表記は [12.0, 13.0] で、次のようになります。
 
-    - (の排他的な最小バージョン。  
+    - [–最小バージョンを含みます。
 
-    - ) – 排他最大バージョン。  
+    - ] –最大バージョンを含みます。
 
-    - 1 つのバージョンと、指定されたバージョンのみ。  
+    - (-最小バージョン排他。
 
-  - `DisplayName` -この属性は、ダイアログ ボックスとエラー メッセージなどの UI 要素で使用されている依存パッケージの表示名です。 MSI によって依存パッケージがインストールされていない場合、属性は省略可能です。  
+    - ) –最大バージョン排他。
 
-  - `Location` – このオプションの属性は、入れ子になった VSIX パッケージには、この VSIX 内の相対パスまたは依存関係をダウンロードする場所への URL のいずれかを指定します。 この属性は、ユーザーの前提条件となるパッケージを探しやすくために使用されます。  
+    - 単一バージョン #-指定されたバージョンのみ。
 
-  - `AnyAttribute*` –`Dependency`要素は、制約のない一連の名前と値のペアのディクショナリとしての実行時に公開される属性を受け入れます。  
-  
-### <a name="assets-element"></a>資産要素  
- この要素の一覧を含む`<Asset>`このパッケージによって各拡張機能またはコンテンツの要素のタグが表示されます。  
-  
-- `<Asset>` -この要素には、次の属性と要素が含まれています。  
-  
-  - `Type` – これは、拡張機能またはこの要素によって表されるコンテンツの種類です。 各`<Asset>`要素が 1 つあります。 `Type`、が複数`<Asset>`要素は同じである可能性があります`Type`します。 この属性は、名前空間の規則に従って、完全修飾名として表す必要があります。 既知の型は次のとおりです。  
-  
-    1. Microsoft.VisualStudio.VsPackage  
-  
-    2. Microsoft.VisualStudio.MefComponent  
-  
-    3. Microsoft.VisualStudio.ToolboxControl  
-  
-    4. Microsoft.VisualStudio.Samples  
-  
-    5. Microsoft.visualstudio.projecttemplate  
-  
-    6. [Microsoft.visualstudio.itemtemplate]  
-  
-    7. [Microsoft.visualstudio.assembly]  
-  
-       独自の型を作成して一意の名前を付けます。 Visual Studio 内で実行時に、コードが列挙し、拡張機能マネージャー API を介してこれらのカスタム型にアクセスできます。  
-  
-  - パス – ファイルまたは資産を含むパッケージ内のフォルダーへの相対パスです。  
-  
-  - `AnyAttribute*` – 拡張可能な一連の属性名前と値のペアのディクショナリとしての実行時に公開します。  
-  
-     `<AnyElement>*` – 間構造化コンテンツは許可されて、`<Asset>`開始し、終了タグ。 すべての要素は、XmlElement オブジェクトの一覧として公開されます。 VSIX 拡張機能は、マニフェスト ファイルの構造化された型に固有のメタデータを定義し、実行時にそれらを列挙できます。  
-  
-### <a name="sample-manifest"></a>サンプル マニフェスト  
-  
-```  
-<?xml version="1.0" encoding="utf-8"?>  
-<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">  
-  <Metadata>  
-    <Identity Id="0000000-0000-0000-0000-000000000000" Version="1.0" Language="en-US" Publisher="Company" />  
-    <DisplayName>Test Package</DisplayName>  
-    <Description>Information about my package</Description>  
-    <MoreInfo>http://www.fabrikam.com/Extension1/</MoreInfo>  
-    <License>eula.rtf</License>  
-    <ReleaseNotes>notes.txt</ReleaseNotes>  
-    <Icon>Images\icon.png</Icon>  
-    <PreviewImage>Images\preview.png</PreviewImage>  
-  </Metadata>  
-  <Installation InstalledByMsi="false" AllUsers="false" SystemComponent="false" Scope="ProductExtension">  
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0, 12.0]" />  
-  </Installation>  
-  <Dependencies>  
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />  
-    <Dependency Id="Microsoft.VisualStudio.MPF.12.0" DisplayName="Visual Studio MPF 12.0" d:Source="Installed" Version="[12.0]" />  
-  </Dependencies>  
-  <Assets>  
-    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />  
-  </Assets>  
-</PackageManifest>  
-```  
-  
-## <a name="see-also"></a>関連項目  
+  - `DisplayName`-この属性は、ダイアログボックスやエラーメッセージなどの UI 要素で使用される依存パッケージの表示名です。 依存パッケージが MSI によってインストールされている場合を除き、属性は省略可能です。
+
+  - `Location`–この省略可能な属性は、この VSIX 内で入れ子になった VSIX パッケージへの相対パス、または依存関係のダウンロード先の URL を指定します。 この属性は、ユーザーが前提条件となるパッケージを見つけられるようにするために使用されます。
+
+  - `AnyAttribute*`–要素`Dependency`は、名前と値のペアのディクショナリとして実行時に公開される、オープンエンドの属性のセットを受け入れます。
+
+### <a name="assets-element"></a>Assets 要素
+ この要素には、この`<Asset>`パッケージによって表示される各拡張機能またはコンテンツ要素のタグの一覧が含まれます。
+
+- `<Asset>`-この要素には、次の属性と要素が含まれています。
+
+  - `Type`–これは、この要素によって表される拡張機能またはコンテンツの種類です。 各`<Asset>`要素には1つ`Type`のが必要`<Asset>`ですが、複数の`Type`要素が同じである場合があります。 この属性は、名前空間の規則に従って、完全修飾名として表す必要があります。 既知の型は次のとおりです。
+
+    1. VisualStudio. VsPackage
+
+    2. Microsoft.VisualStudio.MefComponent
+
+    3. VisualStudio. ToolboxControl
+
+    4. VisualStudio
+
+    5. VisualStudio テンプレート
+
+    6. VisualStudio
+
+    7. VisualStudio
+
+       独自の型を作成し、一意の名前を付けることができます。 Visual Studio 内の実行時に、コードは拡張機能マネージャー API を使用して、これらのカスタム型を列挙してアクセスできます。
+
+  - パス–アセットを含むパッケージ内のファイルまたはフォルダーへの相対パスです。
+
+  - `AnyAttribute*`–実行時に名前と値のペアのディクショナリとして公開される、オープンエンドの属性のセット。
+
+     `<AnyElement>*`–開始タグと終了タグの間`<Asset>`に構造化されたコンテンツを使用できます。 すべての要素は、XmlElement オブジェクトのリストとして公開されます。 VSIX 拡張機能は、マニフェストファイルで構造化型固有のメタデータを定義し、実行時にそれらを列挙できます。
+
+### <a name="sample-manifest"></a>サンプルマニフェスト
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="0000000-0000-0000-0000-000000000000" Version="1.0" Language="en-US" Publisher="Company" />
+    <DisplayName>Test Package</DisplayName>
+    <Description>Information about my package</Description>
+    <MoreInfo>http://www.fabrikam.com/Extension1/</MoreInfo>
+    <License>eula.rtf</License>
+    <ReleaseNotes>notes.txt</ReleaseNotes>
+    <Icon>Images\icon.png</Icon>
+    <PreviewImage>Images\preview.png</PreviewImage>
+  </Metadata>
+  <Installation InstalledByMsi="false" AllUsers="false" SystemComponent="false" Scope="ProductExtension">
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0, 12.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.12.0" DisplayName="Visual Studio MPF 12.0" d:Source="Installed" Version="[12.0]" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
+```
+
+## <a name="see-also"></a>関連項目
  [Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)

@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ce4184cd3864cad787a4e4f8afc084445fa3c828
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: aee0029553391c30fb29eb1f9fa7aba01968e5ed
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365297"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740155"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>クイック スタート: Visual Studio を使用して初めての Python Web アプリを作成する
 
@@ -165,7 +165,7 @@ Python の Web アプリは、ほぼ常に、Web 要求のルーティングや�
 
 **質問:Flask の詳細はどこで確認できますか。**
 
-**回答**:Flask 文書を参照してください。まずは [Flask クイック スタート](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart)からお読みください。
+**回答**:Flask 文書を参照してください。まずは [Flask クイック スタート](https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart)からお読みください。
 
 ## <a name="run-the-application"></a>アプリケーションの実行
 

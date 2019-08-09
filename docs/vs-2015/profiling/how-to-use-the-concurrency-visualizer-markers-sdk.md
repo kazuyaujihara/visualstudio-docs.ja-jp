@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 00957e742f5731d43881df4f0ff9e18bfd7cf773
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3df1139f34c17055703b1ffcbbe2711d5750b9a8
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555570"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870047"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>方法: コンカレンシー ビジュアライザー マーカー SDK を使用する
 
@@ -50,7 +50,7 @@ ms.locfileid: "62555570"
     delete alertSpan;
     ```
 
-4. メニュー バーで、**[分析]**、**[コンカレンシー ビジュアライザー]**、**[現在のプロジェクトで開始]** の順に選択して、アプリを実行し、コンカレンシー ビジュアライザーを表示します。 次の図は、コンカレンシー ビジュアライザーに表示されている 3 つのスパンと 3 つのマーカーを示します。
+4. メニュー バーで、 **[分析]** 、 **[コンカレンシー ビジュアライザー]** 、 **[現在のプロジェクトで開始]** の順に選択して、アプリを実行し、コンカレンシー ビジュアライザーを表示します。 次の図は、コンカレンシー ビジュアライザーに表示されている 3 つのスパンと 3 つのマーカーを示します。
 
      ![3 つのマーカーと警告があるコンカレンシー ビジュアライザー](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
@@ -90,7 +90,7 @@ ms.locfileid: "62555570"
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. 既定のマーカー系列に 3 つのスパンを作成して各スパンにフラグ、メッセージ、警告を 1 つずつ記述するためのコードを追加します。 作成する、 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> static [EnterSpan] (を呼び出すことによってオブジェクト<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->) メソッドです。 既定の系列に書き込むには、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> クラスの静的な write メソッドを使用します。
+3. 既定のマーカー系列に 3 つのスパンを作成して各スパンにフラグ、メッセージ、警告を 1 つずつ記述するためのコードを追加します。 [Span](/previous-versions/hh694189(v=vs.140))オブジェクトを作成するには、静的`EnterSpan`メソッドを呼び出します。 既定の系列に書き込むには、[マーカー](/previous-versions/hh694099(v=vs.140))クラスの静的な書き込みメソッドを使用します。
 
     ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
@@ -128,11 +128,11 @@ ms.locfileid: "62555570"
     alertSpan.Leave();
     ```
 
-4. メニュー バーで、**[分析]**、**[コンカレンシー ビジュアライザー]**、**[現在のプロジェクトで開始]** の順に選択して、アプリを実行し、コンカレンシー ビジュアライザーを表示します。 次の図は、コンカレンシー ビジュアライザーのスレッド ビューに表示されている 3 つのスパンと 3 つのマーカーを示します。
+4. メニュー バーで、 **[分析]** 、 **[コンカレンシー ビジュアライザー]** 、 **[現在のプロジェクトで開始]** の順に選択して、アプリを実行し、コンカレンシー ビジュアライザーを表示します。 次の図は、コンカレンシー ビジュアライザーのスレッド ビューに表示されている 3 つのスパンと 3 つのマーカーを示します。
 
      ![マーカーと警告があるコンカレンシー ビジュアライザー](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5. 静的な <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A> メソッドを使用して、顧客マーカー シリーズを作成するコードを追加します。 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> クラスには、範囲を作成して、フラグ、メッセージ、およびアラートを書き込むためのメソッドが含まれています。
+5. 静的な[CreateMarkerSeries](/previous-versions/hh694171(v=vs.140))メソッドを使用して、顧客マーカーシリーズを作成するコードを追加します。 [Microsoft.concurrencyvisualizer.instrumentation.markerseries>](/previous-versions/hh694127(v=vs.140))クラスには、範囲を作成し、フラグ、メッセージ、および警告を書き込むメソッドが含まれています。
 
     ```vb
     Dim flagSeries As MarkerSeries = Markers.DefaultWriter.CreateMarkerSeries("flag series")

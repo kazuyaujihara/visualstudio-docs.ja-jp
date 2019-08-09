@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56332c58c48903a13a5b1538cf18986ba81e20a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8d00bf3055d1706b459baaf48d1b8e5dca3f282
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856381"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870500"
 ---
 # <a name="t4-template-directive"></a>T4 テンプレート ディレクティブ
 
-Visual Studio T4 テキスト テンプレートは、通常で始まる、`template`ディレクティブで、テンプレートの処理方法を指定します。 テキスト テンプレートおよびそれに含まれるファイルには、template ディレクティブを 1 つしか含めることができません。
+Visual Studio T4 テキストテンプレートは、通常、テンプレート`template`の処理方法を指定するディレクティブで始まります。 テキスト テンプレートおよびそれに含まれるファイルには、template ディレクティブを 1 つしか含めることができません。
 
 テキスト テンプレートの作成方法の一般的な概要については、次を参照してください。 [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)
 
@@ -92,7 +92,7 @@ hostspecific="true"
 
 `trueFromBase`
 
-この属性の値を `true` に設定した場合、テキスト テンプレートによって生成されたクラスに、`Host` というプロパティが追加されます。 このプロパティは変換エンジンのホストへの参照であり、<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> として宣言されます。 カスタム ホストを定義している場合は、そのカスタム ホストの型にキャストできます。
+この属性の値を `true` に設定した場合、テキスト テンプレートによって生成されたクラスに、`Host` というプロパティが追加されます。 プロパティは、変換エンジンのホストへの参照で、 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))として宣言されます。 カスタム ホストを定義している場合は、そのカスタム ホストの型にキャストできます。
 
 このプロパティの型はホストの型に依存するため、特定のホストとのみ連携するテキスト テンプレートを作成している場合以外、利用価値はありません。 これは、[デザイン時テンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)には適用されますが、[実行時テンプレート](../modeling/run-time-text-generation-with-t4-text-templates.md)にはされません。
 
@@ -132,7 +132,7 @@ Content of myFile is:
 
 `VB`
 
-`language`属性の言語を指定します ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]または[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) ステートメントと式ブロック内のソース コードを使用します。 出力の生成元である中間コード ファイルでこの言語が使用されます。 この言語はテンプレートで生成される言語とは無関係であり、どのような種類のテキストであってもかまいません。
+属性`language`は、ステートメントおよび式[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]ブロック[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]内のソースコードに使用する言語 (または) を指定します。 出力の生成元である中間コード ファイルでこの言語が使用されます。 この言語はテンプレートで生成される言語とは無関係であり、どのような種類のテキストであってもかまいません。
 
 例えば:
 
@@ -222,7 +222,7 @@ A common central text.
 This is the common footer.
 ```
 
-さまざまなプロジェクトの基底クラスと派生クラスを作成できます。 派生プロジェクトの参照に基本プロジェクトまたはアセンブリを追加してください。
+さまざまなプロジェクトの基底クラスと派生クラスを作成できます。 基本プロジェクトまたはアセンブリを派生プロジェクトの参照に追加することを忘れないでください。
 
 手動で作成した通常のクラスを基底クラスとして使用することもできます。 基底クラスでは、派生クラスで使用するメソッドを提供する必要があります。
 
@@ -231,13 +231,13 @@ This is the common footer.
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>デザイン時テキスト テンプレートでの継承
 
-デザイン時テキスト テンプレートは、対象のファイルの **カスタム ツール** を **TextTemplatingFileGenerator** に設定します。 テンプレートには、コードまたは Visual Studio プロジェクトの一部を形成するテキストの出力ファイルが生成されます。 出力ファイルを生成するために、テンプレートは、まず中間プログラム コード ファイルに変換されます。通常、このファイルは表示されません。 `inherits` 属性では、この中間コードの基底クラスを指定します。
+デザイン時テキスト テンプレートは、対象のファイルの **カスタム ツール** を **TextTemplatingFileGenerator** に設定します。 このテンプレートは、Visual Studio プロジェクトの一部を形成するコードまたはテキストの出力ファイルを生成します。 出力ファイルを生成するために、テンプレートは、まず中間プログラム コード ファイルに変換されます。通常、このファイルは表示されません。 `inherits` 属性では、この中間コードの基底クラスを指定します。
 
 デザイン時テキスト テンプレートの場合、<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> から派生した基底クラスを指定できます。 `<#@assembly#>` ディレクティブを使用して、基底クラスを含むアセンブリまたはプロジェクトを読み込みます。
 
 詳細については、次を参照してください。 ["継承でテキスト テンプレート"Gareth Jones のブログで](http://go.microsoft.com/fwlink/?LinkId=208373)
 
-## <a name="linepragmas-attribute"></a>LinePragmas 属性
+## <a name="linepragmas-attribute"></a>linePragmas グマ属性
 
 例:
 
@@ -253,7 +253,7 @@ This is the common footer.
 
 この属性は ソース コード管理下にあるプラグマの絶対ファイル名が無駄なマージの原因となっている場合にも役立ちます。
 
-## <a name="visibility-attribute"></a>可視性属性
+## <a name="visibility-attribute"></a>visibility 属性
 
 例:
 

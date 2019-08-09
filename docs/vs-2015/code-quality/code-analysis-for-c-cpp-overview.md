@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: fce0fb33f6c536386754b10b11e724a603f0a2a6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0a0e744e1eb41cf9da816f2214176b37bfe4c8bf
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697997"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740233"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ のコード分析の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ C/C++ コード分析ツールは、C/C++ ソース コードの障害に関す�
  チェックインされるすべてのソース コードが、特定のポリシーを満たしていることが必要な場合があります。 具体的には、最新のローカル ビルドのステップとして分析が実行されたことを確認する必要があります。 コード分析チェックイン ポリシーを有効にする方法の詳細については、「[コード分析を用いたチェックイン ポリシーの作成と使用](../code-quality/creating-and-using-code-analysis-check-in-policies.md)」を参照してください。  
   
 ## <a name="team-build-integration"></a>チーム ビルドの統合  
- ビルド システムの統合機能を使用すると、コード分析ツールを [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] ビルド プロセスのステップとして実行できます。 詳細については、「[アプリケーションのビルド](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)」をご覧ください。  
+ ビルド システムの統合機能を使用すると、コード分析ツールを [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] ビルド プロセスのステップとして実行できます。 詳細については、「[アプリケーションのビルド](/azure/devops/pipelines/index)」をご覧ください。  
   
 ## <a name="command-line-support"></a>コマンド ラインのサポート  
  開発環境内への完全な統合に加えて、次の例に示すように、開発者はコマンド ラインから分析ツールを使用することもできます。  
