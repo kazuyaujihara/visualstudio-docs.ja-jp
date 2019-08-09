@@ -9,20 +9,20 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2cbf516b5ed999623c05e7f68656199363906bf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6a290227b120958b5bb3407393dcff33b247b20d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408441"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872020"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Modeling SDK for Visual Studio の API リファレンス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio Visualization and Modeling SDK が、ドメイン固有言語 (DSL) と、UML ツールが構築されたプラットフォームを提供します。
+Visual Studio の視覚化およびモデリング SDK には、ドメイン固有言語 (DSL) と UML ツールがビルドされるプラットフォームが用意されています。
 
 > [!NOTE]
-> UML モデリング API については、次を参照してください。 [UML モデリング機能拡張の API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)します。 テキスト変換については、次を参照してください。 [T4 テキスト変換のカスタマイズ](../modeling/customizing-t4-text-transformation.md)します。
+> UML モデリング API の詳細については、「 [Uml モデリング機能拡張の Api リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)」を参照してください。 テキスト変換の詳細については、「 [T4 テキスト変換のカスタマイズ](../modeling/customizing-t4-text-transformation.md)」を参照してください。
 
  このセクションには、"Microsoft.VisualStudio.Modeling"で始まる名前を持つ名前空間のリファレンスが含まれています。
 
@@ -35,18 +35,20 @@ Visual Studio Visualization and Modeling SDK が、ドメイン固有言語 (DSL
 |<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement?displayProperty=fullName>|メソッドのジェスチャと選択します。|
 |<xref:Microsoft.VisualStudio.Modeling.DslDefinition?displayProperty=fullName>|DSL 定義のデザイナーの API です。|
 |<xref:Microsoft.VisualStudio.Modeling.DslDefinition.Design?displayProperty=fullName>|DSL 定義のデザイナーの内部クラス。|
-|<xref:Microsoft.VisualStudio.Modeling.DslDefinition.ExtensionEnablement?displayProperty=fullName>|DSL デザイナーの コマンド、ジェスチャ、および検証を拡張するための属性。|
+|<xref:Microsoft.VisualStudio.Modeling.DslDefinition.ExtensionEnablement?displayProperty=fullName>|コマンド、ジェスチャ、および検証を使用して DSL デザイナーを拡張できる属性。|
 |<xref:Microsoft.VisualStudio.Modeling.Extensibility?displayProperty=fullName>|DSL の拡張機能を実装する ModelElement の拡張メソッド。|
 |<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement?displayProperty=fullName>|拡張属性|
 |<xref:Microsoft.VisualStudio.Modeling.Immutability?displayProperty=fullName>|読み取り専用にモデルの部分を作成できます。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration?displayProperty=fullName>|役立つ Modelbus API では、さまざまなモデルを統合します。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker?displayProperty=fullName>|ユーザー モデルおよび Modelbus 参照を作成する要素に移動できるように、ダイアログ ボックス。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting?displayProperty=fullName>|選択サービス。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell?displayProperty=fullName>|Modelbus アダプター フレームワーク[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell.Picker?displayProperty=fullName>|ユーザーがモデルと Modelbus 参照を作成する要素に移動できるピッカー ダイアログ ボックス。|
-|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Dsl の間のインターフェイスと[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]します。|
+|[VisualStudio の統合](/previous-versions/ee904412(v=vs.140))|役立つ Modelbus API では、さまざまなモデルを統合します。|
+|[VisualStudio を選択します。](/previous-versions/ee904394(v=vs.140))|ユーザー モデルおよび Modelbus 参照を作成する要素に移動できるように、ダイアログ ボックス。|
+|`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|選択サービス。|
+|[VisualStudio を作成します。](/previous-versions/ee869435(v=vs.140))|の[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]modelbus アダプターフレームワーク。|
+|[VisualStudio を選択してください。](/previous-versions/ee886769(v=vs.140))|ユーザーがモデルと Modelbus 参照を作成する要素に移動できるピッカー ダイアログ ボックス。|
+|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Dsl と[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]の間のインターフェイス。|
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|ショートカット (コンテキスト) メニューのコマンドを定義できます。|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|検証制約を定義できます。|
 
 ## <a name="see-also"></a>関連項目
- [UML モデリング機能拡張の API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md) [T4 テキスト変換のカスタマイズ](../modeling/customizing-t4-text-transformation.md)
+
+- [UML モデリング機能拡張の API リファレンス](../modeling/api-reference-for-uml-modeling-extensibility.md)
+- [T4 テキスト変換のカスタマイズ](../modeling/customizing-t4-text-transformation.md)

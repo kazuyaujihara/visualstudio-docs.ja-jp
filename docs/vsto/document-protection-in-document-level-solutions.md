@@ -1,5 +1,5 @@
 ---
-title: ドキュメント レベルのソリューションでドキュメントの保護
+title: ドキュメントレベルのソリューションにおけるドキュメントの保護
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,46 +16,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6cc01c6506c4a3fca85029a8dcaf08607427ea4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a894f1e0fb9d5e9d55f46c442bc975de0bd900d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956206"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872069"
 ---
-# <a name="document-protection-in-document-level-solutions"></a>ドキュメント レベルのソリューションでドキュメントの保護
-  Microsoft Office Word および Microsoft Office Excel のドキュメント レベルのプロジェクトでの保護機能を使用することができます。 これらの機能は、ドキュメントの保護された部分を変更する権限のないユーザーをブロックします。
+# <a name="document-protection-in-document-level-solutions"></a>ドキュメントレベルのソリューションにおけるドキュメントの保護
+  ドキュメントレベルのプロジェクトで Microsoft Office Word および Excel Microsoft Office の保護機能を使用できます。 これらの機能は、承認されていないユーザーがドキュメントの保護された部分を変更できないようにします。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Excel を使用して、ブックがデザイナーで開いている間での保護にオンとオフをできます。 Word を使用して、デザイナーの外側でのみ保護を有効にできます。 、実行時に、有効または、Word と Excel の両方のプログラムによる保護を無効にできます。
+ Excel を使用すると、デザイナーでブックを開いているときに保護をオンまたはオフにできます。 Word を使用すると、デザイナーの外部でのみ保護を有効にすることができます。 実行時に、Word と Excel の両方でプログラムによって保護を有効または無効にすることができます。
 
- すべてのコントロールを削除は、デザイナーで開いているドキュメントのドキュメントの保護が有効の場合、**ツールボックス**無効、またはから何をドラッグすることはできません、**データソース**ドキュメント ウィンドウです。
+ デザイナーで開かれているドキュメントでドキュメント保護が有効になっていると、すべてのコントロールが**ツールボックス**から削除されるか、使用できなくなります。また、 **[データソース]** ウィンドウからドキュメントに何もドラッグすることはできません。
 
 ## <a name="serverdocument-and-protected-documents"></a>ServerDocument と保護されたドキュメント
- ドキュメントが保護されている場合、データ キャッシュをドキュメントの外部からアクセスできません。 使用することはできません、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>を取得または保護されたドキュメントにキャッシュされているデータを操作するクラスまたはその他の方法を使用して、<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument>クラス。
+ ドキュメントが保護されている場合、ドキュメントの外部からデータキャッシュにアクセスすることはできません。 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>クラスを使用して、保護されたドキュメントにキャッシュされているデータを取得または操作し<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>たり、クラスの他のメソッドを使用したりすることはできません。
 
-## <a name="word-document-protection-in-the-designer"></a>デザイナーで Word 文書の保護
- Visual Studio で開いているときに、Word 文書またはテンプレートを保護を追加する場合は、デザイナーでの保護の適用を開始できません。 Visual Studio で開いているしする必要があります実行モードにする保護の適用を開始する前に、ドキュメントがデザイン モード。
+## <a name="word-document-protection-in-the-designer"></a>デザイナーでの Word 文書の保護
+ Visual Studio で Word 文書またはテンプレートを開いているときに保護を追加した場合、デザイナーでの保護の強制を開始することはできません。 ドキュメントは Visual Studio で開かれている間はデザインモードであり、保護の適用を開始する前に実行モードになっている必要があります。
 
- ただし、保護を有効になっている既存の Word 文書を使用するプロジェクトを作成する場合は、ドキュメントがデザイナーで開いている間保護されています。 ドキュメントの保護された部分を編集することはできませんが、まだコードを記述できるコード エディターでドキュメントを自動化します。 ことはできませんプロジェクトをビルドする場合は、文書が Visual Studio で開いているときに、保護を有効にします。
+ ただし、保護が有効になっている既存の Word 文書を使用するプロジェクトを作成した場合、デザイナーで開かれている間、ドキュメントは保護されます。 ドキュメントの保護された部分を編集することはできませんが、コードエディターでコードを記述してドキュメントを自動化することはできます。 また、Visual Studio でドキュメントを開いているときに保護が有効になっている場合は、プロジェクトをビルドできません。
 
- ドキュメントを編集して、プロジェクトをビルドできるように、ドキュメントがデザイナーで開いているときに、保護を無効にできます。 デバッグする場合、デザイナー内のコピーの保護を無効にすることはできません。デバッグ中に開かれるドキュメントがデザイナーで開いてから別のコピー (に出力のコピーが格納されている、 *\bin* Visual basic では、ディレクトリ、 *\bin\debug* (C#) またはディレクトリ)。
+ ドキュメントを編集してプロジェクトをビルドできるように、デザイナーでドキュメントが開いている間は保護をオフにすることができます。 デバッグ中にデザイナーでコピーの保護を無効にすることはできません。デバッグ中に開かれるドキュメントは、デザイナーで開いているものとは別のコピーです (出力コピーは、Visual Basic の *\bin*ディレクトリと、の C#\bin\debug ディレクトリに格納されます)。
 
- Visual Studio でプロジェクトを閉じて、プロジェクト ディレクトリ内にあるドキュメントのコピーを開き、保護を有効にして、デザイナーで開かれているドキュメントのコピーの保護を有効にすることができます。
+ デザイナーで開くドキュメントのコピーを保護するには、Visual Studio でプロジェクトを終了し、プロジェクトディレクトリにあるドキュメントのコピーを開いて、保護を有効にします。
 
-## <a name="enforce-word-document-protection-on-build"></a>ビルド時に Word 文書の保護を適用します。
- デバッグ用のドキュメントを開いたときに、保護が有効にするために、visual Studio は、ビルド プロセス中に、Word 文書やテンプレートの保護の適用を開始します。 ドキュメントは、空のパスワードで保護されます。
+## <a name="enforce-word-document-protection-on-build"></a>ビルド時に Word 文書保護を適用する
+ Visual Studio は、ビルド処理中に Word 文書とテンプレートの保護の適用を開始します。これにより、ドキュメントがデバッグ用に開いたときに保護が有効になります。 ドキュメントは空のパスワードで保護されています。
 
- 保護が有効になっているビルド時にこれをドキュメント内のコードがある場合<xref:Microsoft.Office.Tools.Word.Document.Startup>イベント、アプリケーションの動作を変更したり、例外が発生する可能性がありますが、このコードをできるデバッグ正しくします。 ドキュメントが開かれた後に保護を有効にした場合の初期化コードをデバッグまたはテストできません。
+ ビルド中に保護が有効になるため、例外を発生さ<xref:Microsoft.Office.Tools.Word.Document.Startup>せる可能性のあるコードがドキュメントイベントに存在する場合や、アプリケーションの動作を変更する場合に、このコードを正しくデバッグできます。 ドキュメントを開いた後で保護を有効にした場合、初期化コードをデバッグまたはテストすることはできません。
 
 ## <a name="setting-the-password"></a>パスワードの設定
- Visual Studio は自動的に保護しますが、既定ではパスワードにはありません。 パスワードを文書を保護する場合は、ソリューションを配置する前に追加する必要があります。 承認されたユーザーがドキュメントの保護を解除するパスワードを追加することができます。パスワードのない保護を簡単に削除することはできません。 パスワードの設定について詳しくは、特定の Office アプリケーションのヘルプを参照してください。
+ Visual Studio では自動的に保護が有効になりますが、既定ではパスワードは提供されません。 ドキュメント保護にパスワードを設定する場合は、ソリューションを配置する前に追加する必要があります。 パスワードを追加すると、承認されたユーザーがドキュメントから保護を削除できるようになります。パスワードがないと、保護を簡単に削除できません。 パスワードの設定の詳細については、特定の Office アプリケーションのヘルプを参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [方法: プログラムによって文書および文書の一部を保護します。](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
+- [方法: ドキュメントとドキュメントの一部をプログラムによって保護する](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
 - [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)
-- [Information rights management とマネージ コード拡張機能の概要](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [Information rights management とマネージコード拡張機能の概要](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Office ドキュメントのパスワード保護](../vsto/password-protection-on-office-documents.md)
-- [方法: 制限されたアクセス許可を持つドキュメントの背後で実行するコードを許可します。](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
+- [方法: アクセス許可が制限されたドキュメントの背後でのコードの実行を許可する](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
 - [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)

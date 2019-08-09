@@ -1,5 +1,5 @@
 ---
-title: 情報の rights management とマネージ コード拡張機能
+title: Information rights management & マネージコード拡張機能
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,30 +17,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca8f9d77681e3f11312e5e908a58ac2e292f581b
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 753f3d2da201c67cd86c697eccf7580596a40d6e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177741"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872064"
 ---
-# <a name="information-rights-management-and-managed-code-extensions-overview"></a>Information rights management とマネージ コード拡張機能の概要
-  Microsoft Office Word および Microsoft Office Excel は、Information Rights Management (IRM)、承認されていないユーザーを表示したり、機密情報を変更したりするのに役立つ機能を提供します。 Information Rights Management の動作方法について詳しくは、特定の Office アプリケーションのヘルプを参照してください。
+# <a name="information-rights-management-and-managed-code-extensions-overview"></a>Information rights management とマネージコード拡張機能の概要
+  Microsoft Office Word および Microsoft Office Excel は情報 Rights Management (IRM) を提供します。これは、承認されていないユーザーが機密情報を表示または変更できないようにするための機能です。 情報 Rights Management のしくみの詳細については、特定の Office アプリケーションのヘルプを参照してください。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="run-code-behind-documents-with-restricted-permissions"></a>制限されたアクセス許可を持つドキュメントの分離コードを実行します。
- ドキュメントまたは既定では、IRM を使用するブックで、ソリューションが含まれている場合 Word および Excel できない場合、コードを実行します。 ドキュメントの作成者であるか、フル コントロール アクセス権がある場合は、ソリューションが機能するように既定値を変更できます。 詳細については、「[方法 :制限されたアクセス許可を持つドキュメントの背後で実行するコードの許可](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)します。
+## <a name="run-code-behind-documents-with-restricted-permissions"></a>アクセス許可が制限されたドキュメントの分離コードを実行する
+ IRM を使用するドキュメントまたはブックがソリューションに含まれている場合、既定では、Word と Excel ではコードの実行が許可されません。 ドキュメントの作成者である場合、またはフルコントロールアクセス権を持っている場合は、ソリューションが機能するように既定値を変更できます。 詳細については、「[方法 :アクセス許可](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)が制限されたドキュメントの背後でのコードの実行を許可します。
 
- IRM は使用できない<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument>を取得またはドキュメントにキャッシュされているデータを操作します。
+ IRM <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>を使用すると、ドキュメントにキャッシュされているデータを取得または操作できなくなります。
 
-## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>エンドユーザーがマネージ コード拡張機能を使用するドキュメントへのアクセス許可を制限するには
- IRM を使用すると、アクセス許可を制限して、ソリューション内のドキュメントまたはブックにフル コントロール アクセス権を持つユーザーことができます。 などの会計部門にエンドユーザーがワークシートに、データベースからデータを自動的に設定するソリューションを使用する場合そのユーザーが自分の部門内のユーザーにのみアクセスの変更と他のユーザーへの読み取りアクセスを許可する可能性があります。 ユーザーは、制限されたアクセス許可を追加するときに、既定では、ワークシートの背後にあるコードを実行できず、ワークシートは、データは設定されません。
+## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>エンドユーザーが、マネージコード拡張機能を使用するドキュメントに対するアクセス許可を制限する
+ ソリューション内のドキュメントまたはブックに対するフルコントロールアクセス権を持つユーザーは、IRM を使用してアクセス許可を制限できます。 たとえば、会計部門のエンドユーザーが、データベースのデータをワークシートに自動的に入力するソリューションを使用している場合、そのユーザーは自分の部署のユーザーにのみ変更アクセスを許可し、他のユーザーには読み取りアクセスを許可することができます。 ユーザーが制限されたアクセス許可を追加すると、既定では、ワークシートの背後にあるコードを実行できず、ワークシートにデータが設定されません。
 
- オブジェクト モデルへのプログラムによるアクセスを許可する既定のアクセス許可の設定を変更すると、問題を解決するには、ドキュメントまたはブックにフル コントロール アクセス権を持つユーザーがあります。 詳細については、「[方法 :制限されたアクセス許可を持つドキュメントの背後で実行するコードの許可](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)します。
+ この問題を解決するには、ドキュメントまたはブックに対するフルコントロールアクセス権を持つユーザーが、オブジェクトモデルにプログラムでアクセスできるように、既定のアクセス許可設定を変更する必要があります。 詳細については、「[方法 :アクセス許可](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)が制限されたドキュメントの背後でのコードの実行を許可します。
 
 ## <a name="see-also"></a>関連項目
-- [ドキュメント レベルのソリューションでドキュメントの保護](../vsto/document-protection-in-document-level-solutions.md)
+- [ドキュメントレベルのソリューションにおけるドキュメントの保護](../vsto/document-protection-in-document-level-solutions.md)
 - [Office ドキュメントのパスワード保護](../vsto/password-protection-on-office-documents.md)
 - [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)
 - [Office ソリューションのデプロイ](../vsto/deploying-an-office-solution.md)

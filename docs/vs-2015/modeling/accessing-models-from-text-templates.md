@@ -1,5 +1,5 @@
 ---
-title: テキスト テンプレートからモデルへのアクセス |Microsoft Docs
+title: テキストテンプレートからのモデルへのアクセス |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,211 +11,211 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9aaf89dd472435d5107e1a2b5870d1e6fc2b9631
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e9eba4a919f159462080688c64ed765d3c1fec86
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442878"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871986"
 ---
 # <a name="accessing-models-from-text-templates"></a>テキスト テンプレートからモデルへのアクセス
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-テキスト テンプレートを使用すると、レポート ファイル、ソース コード ファイル、およびその他のドメイン固有言語モデルを基にテキスト ファイルを作成できます。 テキスト テンプレートの基本については、次を参照してください。[コードの生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)します。 テキスト テンプレートは、DSL をデバッグするときは、実験モードで動作し、DSL が配置されているコンピューターにも機能します。  
-  
+テキストテンプレートを使用すると、ドメイン固有の言語モデルに基づいたレポートファイル、ソースコードファイル、およびその他のテキストファイルを作成できます。 テキストテンプレートの基本的な情報については、「[コード生成と T4 テキストテンプレート](../modeling/code-generation-and-t4-text-templates.md)」を参照してください。 テキストテンプレートは、DSL のデバッグ時に実験的モードで動作し、DSL を展開したコンピューター上でも動作します。
+
 > [!NOTE]
-> DSL ソリューション、サンプル テキスト テンプレートを作成するときに **\*.tt**デバッグ プロジェクトでファイルが生成されます。 ドメイン クラスの名前を変更すると、これらのテンプレートが機能しなくなります。 それにもかかわらずが、必要な基本的なディレクティブを含めるし、DSL を一致するように更新できる例を示します。  
-  
- テキスト テンプレートからモデルにアクセスします。  
-  
-- Template ディレクティブの継承プロパティを設定<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>します。 これは、ストアにアクセスを提供します。  
-  
-- アクセスする DSL のディレクティブ プロセッサを指定します。 テキスト テンプレートのコードでは、ドメイン クラス、プロパティ、およびリレーションシップを使用できるように、DSL のアセンブリを読み込みます。 また、指定したモデル ファイルを読み込みます。  
-  
-  A`.tt`新規に作成すると、デバッグ プロジェクトに次の例のようなファイルが作成[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]最小言語の DSL テンプレートからのソリューションです。  
-  
-```  
-<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
-<#@ output extension=".txt" #>  
-<#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>  
-  
-This text will be output directly.  
-  
-This is the name of the model: <#= this.ModelRoot.Name #>  
-  
-Here is a list of elements in the model:  
-<#  
-  // When you change the DSL Definition, some of the code below may not work.  
-  foreach (ExampleElement element in this.ExampleModel.Elements)  
-  {#>  
-<#= element.Name #>  
-<#      
-  }  
-#>  
-  
-```  
-  
- このテンプレートについては、次の点に注意してください。  
-  
-- テンプレートには、ドメイン クラス、プロパティ、および、DSL 定義で定義されているリレーションシップを使用できます。  
-  
-- テンプレートで指定したモデル ファイルを読み込み、`requires`プロパティ。  
-  
-- プロパティに`this`ルート要素が含まれています。 そこから、コードは、モデルの他の要素に移動できます。 プロパティの名前は、通常、DSL のルート ドメイン クラスと同じです。 この例では、 `this.ExampleModel`です。  
-  
-- コード フラグメントを記述する言語が必要な場合は、c# を使用して、あらゆる種類のテキストを生成できます。 コードを記述できますまた[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]プロパティを追加することで`language="VB"`を`template`ディレクティブ。  
-  
-- テンプレートをデバッグするには、追加`debug="true"`を`template`ディレクティブ。 別のインスタンスで、テンプレートが開きます[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]例外が発生した場合。 コードの特定の時点でデバッガーを中断する場合は、insert ステートメント `System.Diagnostics.Debugger.Break();`  
-  
-     詳細については、次を参照してください。 [T4 テキスト テンプレートのデバッグ](../modeling/debugging-a-t4-text-template.md)します。  
-  
-## <a name="about-the-dsl-directive-processor"></a>DSL のディレクティブ プロセッサについて  
- テンプレートには、DSL 定義で定義されているドメイン クラスを使用できます。 これはの詳細については、通常は、テンプレートの先頭近くに表示される、ディレクティブになります。 前の例では、次は。  
-  
-```  
-<#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>  
-```  
-  
- ディレクティブの名前 ( `MyLanguage`、この例では) は、DSL の名前から派生します。 呼び出す、*ディレクティブ プロセッサ*DSL の一部として生成されます。 ソース コードを検索する**Dsl\GeneratedCode\DirectiveProcessor.cs**します。  
-  
- DSL のディレクティブ プロセッサは、2 つの主要なタスクを実行します。  
-  
-- アセンブリおよびインポート ディレクティブは、DSL を参照するテンプレートに効果的に挿入します。 これにより、テンプレート コードで、ドメイン クラスを使用できます。  
-  
-- 指定したファイルを読み込む、`requires`パラメーター セットのプロパティと`this`読み込み済みのモデルのルート要素を参照します。  
-  
-## <a name="validating-the-model-before-running-the-template"></a>テンプレートを実行する前に、モデルの検証  
- このテンプレートを実行する前に検証するモデルが発生することができます。  
-  
-```  
-<#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>  
-  
-```  
-  
- 以下の点に注意してください。  
-  
-1. `filename`と`validation`パラメーターで区切られます「;」必要があるその他の区切り記号またはスペースがあるとします。  
-  
-2. どの検証メソッドが実行される検証カテゴリの一覧を決定します。 複数のカテゴリを区切る必要があります"&#124;"必要があるその他の区切り記号またはスペースがあるとします。  
-  
-   エラーが見つかった場合は、[エラー] ウィンドウで報告し、結果ファイルは、エラー メッセージが格納されます。  
-  
-## <a name="Multiple"></a> テキスト テンプレートから複数のモデルへのアクセス  
-  
+> DSL ソリューションを作成すると、サンプルテキストテンプレート **\*の .tt**ファイルがデバッグプロジェクトに生成されます。 ドメインクラスの名前を変更すると、これらのテンプレートは機能しなくなります。 それにもかかわらず、必要な基本ディレクティブが含まれており、DSL に一致するように更新できる例を提供しています。
+
+ テキストテンプレートからモデルにアクセスするには:
+
+- テンプレートディレクティブの inherit プロパティを[Modeflag Texttransformation](/previous-versions/bb893209(v=vs.140))に設定します。 これにより、ストアへのアクセスが提供されます。
+
+- アクセスする DSL のディレクティブプロセッサを指定します。 これにより、テキストテンプレートのコード内でそのドメインクラス、プロパティ、および関係を使用できるように、DSL のアセンブリが読み込まれます。 また、指定したモデルファイルも読み込まれます。
+
+  次の例のような[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ファイルは、DSLの最小言語テンプレートから新しいソリューションを作成するときに、デバッグプロジェクトで作成されます。`.tt`
+
+```
+<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".txt" #>
+<#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>
+
+This text will be output directly.
+
+This is the name of the model: <#= this.ModelRoot.Name #>
+
+Here is a list of elements in the model:
+<#
+  // When you change the DSL Definition, some of the code below may not work.
+  foreach (ExampleElement element in this.ExampleModel.Elements)
+  {#>
+<#= element.Name #>
+<#
+  }
+#>
+
+```
+
+ このテンプレートについては、次の点に注意してください。
+
+- このテンプレートでは、DSL 定義で定義したドメインクラス、プロパティ、およびリレーションシップを使用できます。
+
+- このテンプレートは、 `requires`プロパティで指定したモデルファイルを読み込みます。
+
+- の`this`プロパティには、ルート要素が含まれています。 そこから、コードでモデルの他の要素に移動できます。 プロパティの名前は、通常、DSL のルートドメインクラスと同じです。 この例では、 `this.ExampleModel`です。
+
+- コードフラグメントが記述されている言語はですC#が、任意の種類のテキストを生成できます。 または、プロパティ[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] `language="VB"`を`template`ディレクティブに追加して、でコードを記述することもできます。
+
+- テンプレートをデバッグするには`debug="true"` 、を`template`ディレクティブに追加します。 例外が発生した場合、テンプレート[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]はの別のインスタンスで開きます。 コード内の特定の位置でデバッガーを中断する場合は、ステートメントを挿入します。`System.Diagnostics.Debugger.Break();`
+
+     詳細については、「 [T4 テキストテンプレートのデバッグ](../modeling/debugging-a-t4-text-template.md)」を参照してください。
+
+## <a name="about-the-dsl-directive-processor"></a>DSL ディレクティブプロセッサについて
+ このテンプレートでは、DSL 定義で定義したドメインクラスを使用できます。 これは、通常、テンプレートの先頭付近に表示されるディレクティブによって取り込まれます。 前の例では、次のようになっています。
+
+```
+<#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>
+```
+
+ ディレクティブの名前 ( `MyLanguage`この例では) は、DSL の名前から派生します。 これは、DSL の一部として生成される*ディレクティブプロセッサ*を呼び出します。 ソースコードは**Dsl\GeneratedCode\DirectiveProcessor.cs**で見つけることができます。
+
+ DSL ディレクティブプロセッサは、次の2つの主要タスクを実行します。
+
+- これは、DSL を参照するテンプレートにアセンブリとインポートディレクティブを効果的に挿入します。 これにより、テンプレートコードでドメインクラスを使用できるようになります。
+
+- `requires`パラメーターで指定したファイルが読み込まれ、読み込まれたモデルの`this`ルート要素を参照するのプロパティが設定されます。
+
+## <a name="validating-the-model-before-running-the-template"></a>テンプレートを実行する前にモデルを検証しています
+ テンプレートが実行される前にモデルが検証されるようにすることができます。
+
+```
+<#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>
+
+```
+
+ 以下の点に注意してください。
+
+1. パラメーター `filename` と`validation`パラメーターは、";" で区切られ、その他の区切り記号または空白文字は使用できません。
+
+2. 検証カテゴリの一覧によって、実行される検証メソッドが決まります。 複数のカテゴリは "&#124;" で区切る必要があり、その他の区切り記号やスペースは使用できません。
+
+   エラーが見つかった場合は、[エラー] ウィンドウに報告され、結果ファイルにはエラーメッセージが含まれます。
+
+## <a name="Multiple"></a>テキストテンプレートからの複数のモデルへのアクセス
+
 > [!NOTE]
-> このメソッドは、同じテンプレートに複数のモデルを読み取ることができますが、ModelBus references をサポートしていません。 ModelBus 参照によって指定されたモデルを読み取り、次を参照してください。[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)します。  
-  
- 同じテキスト テンプレートから複数のモデルにアクセスする場合は、各モデルの生成されたディレクティブ プロセッサに 1 回を呼び出す必要があります。 各モデルでのファイル名を指定する必要があります、`requires`パラメーター。 内のルート ドメイン クラスを使用する名前を指定する必要があります、`provides`パラメーター。 別の値を指定する必要があります、`provides`内の各ディレクティブの呼び出しのパラメーター。 たとえば、Library.xyz、School.xyz、および Work.xyz と呼ばれる 3 つのモデル ファイルがあることを想定しています。 同じテキスト テンプレートからそれらにアクセスするには、次のように 3 つのディレクティブの呼び出しを記述する必要があります。  
-  
-```  
-<#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Library.xyz'" provides="ExampleModel=LibraryModel" #>  
-<#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='School.xyz'" provides="ExampleModel=SchoolModel" #>  
-<#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Work.xyz'" provides="ExampleModel=WorkModel" #>  
-```  
-  
+> このメソッドを使用すると、同じテンプレート内の複数のモデルを読み取ることができますが、ModelBus 参照はサポートされません。 ModelBus 参照によって interlinked されるモデルを読み取る方法については、「[テキストテンプレートでの Visual Studio ModelBus の使用](../modeling/using-visual-studio-modelbus-in-a-text-template.md)」を参照してください。
+
+ 同じテキストテンプレートから複数のモデルにアクセスする場合は、生成されたディレクティブプロセッサをモデルごとに1回呼び出す必要があります。 `requires`パラメーターには、各モデルのファイル名を指定する必要があります。 `provides`パラメーターでルートドメインクラスに使用する名前を指定する必要があります。 各ディレクティブ呼び出しの`provides`パラメーターに異なる値を指定する必要があります。 たとえば、Library という名前の3つのモデルファイルがあるとします。これは、"xyz"、"School"、"xyz" という名前です。 同じテキストテンプレートからアクセスするには、次のような3つのディレクティブ呼び出しを記述する必要があります。
+
+```
+<#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Library.xyz'" provides="ExampleModel=LibraryModel" #>
+<#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='School.xyz'" provides="ExampleModel=SchoolModel" #>
+<#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Work.xyz'" provides="ExampleModel=WorkModel" #>
+```
+
 > [!NOTE]
-> このコード例では、最小言語ソリューション テンプレートに基づいている言語です。  
-  
- テキスト テンプレートでのモデルにアクセスするには、次の例では、コードのようなコードを記述できます。  
-  
-```csharp  
-<#  
-foreach (ExampleElement element in this.LibraryModel.Elements)  
-...  
-foreach (ExampleElement element in this.SchoolModel.Elements)  
-...  
-foreach (ExampleElement element in this.WorkModel.Elements)  
-...  
-#>  
-```  
-  
-```vb  
-<#  
-For Each element As ExampleElement In Me.LibraryModel.Elements  
-...  
-For Each element As ExampleElement In Me.SchoolModel.Elements  
-...  
-For Each element As ExampleElement In Me.WorkModel.Elements  
-...  
-#>  
-```  
-  
-## <a name="loading-models-dynamically"></a>モデルを動的に読み込む  
- 実行時に読み込む場合は、どのモデルを確認するには、モデル ファイルを DSL に固有のディレクティブを使用する代わりに、プログラム コードで動的に読み込むことができます。  
-  
- ただし、DSL に固有のディレクティブの関数の 1 つは、DSL の名前空間をインポートするテンプレート コードがその DSL で定義されているドメイン クラスを使用できるようにします。 追加する必要があります、ディレクティブを使用していないため、 **\<アセンブリ >** と **\<インポート >** ディレクティブをすべてのモデルを読み込むことがあります。 さまざまなモデルを読み込むことがありますが、同じ DSL のすべてのインスタンスである場合は簡単です。  
-  
- 使用して、ファイルを読み込むには、最も効果的な方法は、 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus します。 一般的なシナリオで、テキスト テンプレートは、通常の方法で最初のモデルを読み込む、DSL に固有のディレクティブを使用します。 そのモデルには、別のモデルへの ModelBus 参照が含まれます。 ModelBus を使用して、参照されているモデルを開き、特定の要素にアクセスすることができます。 詳細については、[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)を参照してください。  
-  
- あまり一般的なシナリオでは、ファイル名のみがあるモデル ファイルを開く可能性があり、これが、現在のではない[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]プロジェクト。 この場合で説明した手法を使用してファイルを開く[方法。プログラム コード内のファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)します。  
-  
-## <a name="generating-multiple-files-from-a-template"></a>テンプレートから複数のファイルを生成します。  
- – をいくつかのファイルを生成する場合など、モデルでは、各要素に対して個別のファイルを生成するがあるいくつかの可能なアプローチです。 既定では、1 つのファイルは、各テンプレート ファイルから生成されます。  
-  
-### <a name="splitting-a-long-file"></a>長いファイルの分割  
- このメソッドでは、テンプレートを使用する区切り記号で区切られた、1 つのファイルを生成します。 その部分にファイルを分割します。 2 つのテンプレートが 1 つのファイルと、分割を生成する 1 つがあります。  
-  
- **LoopTemplate.t4**長の 1 つのファイルが生成されます。 クリックすると直接に処理しないため、そのファイルの拡張子が「.t4 と展開されます」に注意してください**すべてのテンプレートの変換**します。 このテンプレートは、セグメントを区切る区切り記号文字列を指定するパラメーターを受け取ります。  
-  
-```  
-<#@ template ninherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
-<#@ parameter name="delimiter" type="System.String" #>  
-<#@ output extension=".txt" #>  
-<#@ MyDSL processor="MyDSLDirectiveProcessor" requires="fileName='SampleModel.mydsl1';validation='open|load|save|menu'" #>  
-<#  
-  // Create a file segment for each element:  
-  foreach (ExampleElement element in this.ExampleModel.Elements)   
-  {   
-    // First item is the delimiter:  
-#>  
-<#= string.Format(delimiter, element.Id) #>  
-  
-   Element: <#= element.Name #>  
-<#  
-   // Here you generate more content derived from the element.  
-  }  
-#>  
-  
-```  
-  
- `LoopSplitter.tt` 呼び出す`LoopTemplate.t4`、結果として得られるファイルにはセグメントに分割します。 モデルは読み取られませんので、このテンプレートにモデル化のテンプレートがないことに注意してください。  
-  
-```  
-<#@ template hostspecific="true" language="C#" #>  
-<#@ output extension=".txt" #>  
-<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>  
-<#@ import namespace="System.Runtime.Remoting.Messaging" #>  
-<#@ import namespace="System.IO" #>  
-  
-<#  
-  // Get the local path:  
-  string itemTemplatePath = this.Host.ResolvePath("LoopTemplate.t4");  
-  string dir = Path.GetDirectoryName(itemTemplatePath);  
-  
-  // Get the template for generating each file:  
-  string loopTemplate = File.ReadAllText(itemTemplatePath);  
-  
-  Engine engine = new Engine();  
-  
-  // Pass parameter to new template:  
-  string delimiterGuid = Guid.NewGuid().ToString();  
-  string delimiter = "::::" + delimiterGuid + ":::";  
-  CallContext.LogicalSetData("delimiter", delimiter + "{0}:::");   
-  string joinedFiles = engine.ProcessTemplate(loopTemplate, this.Host);  
-  
-  string [] separateFiles = joinedFiles.Split(new string [] {delimiter}, StringSplitOptions.None);  
-  
-  foreach (string nameAndFile in separateFiles)   
-  {   
-     if (string.IsNullOrWhiteSpace(nameAndFile)) continue;  
-     string[] parts = nameAndFile.Split(new string[]{":::"}, 2, StringSplitOptions.None);  
-     if (parts.Length < 2) continue;  
-#>  
- Generate: [<#= dir #>] [<#= parts[0] #>]  
-<#  
-     // Generate a file from this item:  
-     File.WriteAllText(Path.Combine(dir, parts[0] + ".txt"), parts[1]);    
-  }  
-#>  
-  
+> このコード例は、最小言語ソリューションテンプレートに基づく言語を対象としています。
+
+ テキストテンプレート内のモデルにアクセスするために、次の例のコードのようなコードを記述できるようになりました。
+
+```csharp
+<#
+foreach (ExampleElement element in this.LibraryModel.Elements)
+...
+foreach (ExampleElement element in this.SchoolModel.Elements)
+...
+foreach (ExampleElement element in this.WorkModel.Elements)
+...
+#>
+```
+
+```vb
+<#
+For Each element As ExampleElement In Me.LibraryModel.Elements
+...
+For Each element As ExampleElement In Me.SchoolModel.Elements
+...
+For Each element As ExampleElement In Me.WorkModel.Elements
+...
+#>
+```
+
+## <a name="loading-models-dynamically"></a>モデルの動的な読み込み
+ 読み込むモデルを実行時に決定する場合は、DSL 固有のディレクティブを使用するのではなく、プログラムコードでモデルファイルを動的に読み込むことができます。
+
+ ただし、dsl 固有のディレクティブの機能の1つとして、dsl 名前空間をインポートして、その DSL で定義されているドメインクラスをテンプレートコードで使用できるようにします。 ディレクティブを使用していないので、読み込む必要があるすべてのモデルに対して、  **\<アセンブリ >** を追加し **\<、>** ディレクティブをインポートする必要があります。 読み込む可能性のあるさまざまなモデルが同じ DSL のすべてのインスタンスである場合、これは簡単です。
+
+ ファイルを読み込むには、modelbus を使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]する方法が最も効果的です。 一般的なシナリオでは、テキストテンプレートは DSL 固有のディレクティブを使用して、通常の方法で最初のモデルを読み込みます。 このモデルには、別のモデルへの ModelBus 参照が含まれます。 ModelBus を使用して、参照先のモデルを開き、特定の要素にアクセスできます。 詳細については、[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)を参照してください。
+
+ あまり一般的ではないシナリオでは、ファイル名のみが存在し、現在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]のプロジェクトに含まれていないモデルファイルを開くことをお勧めします。 この場合は、「How to:」で[説明されている方法を使用してファイルを開くことができます。プログラムコード](../modeling/how-to-open-a-model-from-file-in-program-code.md)でファイルからモデルを開きます。
+
+## <a name="generating-multiple-files-from-a-template"></a>テンプレートから複数のファイルを生成する
+ 複数のファイルを生成する場合は (たとえば、モデル内の要素ごとに個別のファイルを生成する場合)、いくつかの方法が考えられます。 既定では、各テンプレートファイルから生成されるファイルは1つだけです。
+
+### <a name="splitting-a-long-file"></a>長いファイルの分割
+ このメソッドでは、テンプレートを使用して、区切り記号で区切られた1つのファイルを生成します。 次に、ファイルをその部分に分割します。 2つのテンプレートがあります。1つは1つのファイルを生成するテンプレート、もう1つは分割するテンプレートです。
+
+ **LoopTemplate**は、長い単一ファイルを生成します。 **[すべてのテンプレートの変換]** をクリックしても直接処理されないため、ファイル拡張子が "t4" であることに注意してください。 このテンプレートは、セグメントを区切る区切り記号文字列を指定するパラメーターを受け取ります。
+
+```
+<#@ template ninherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ parameter name="delimiter" type="System.String" #>
+<#@ output extension=".txt" #>
+<#@ MyDSL processor="MyDSLDirectiveProcessor" requires="fileName='SampleModel.mydsl1';validation='open|load|save|menu'" #>
+<#
+  // Create a file segment for each element:
+  foreach (ExampleElement element in this.ExampleModel.Elements)
+  {
+    // First item is the delimiter:
+#>
+<#= string.Format(delimiter, element.Id) #>
+
+   Element: <#= element.Name #>
+<#
+   // Here you generate more content derived from the element.
+  }
+#>
+
+```
+
+ `LoopSplitter.tt`を`LoopTemplate.t4`呼び出し、結果として生成されたファイルをそのセグメントに分割します。 このテンプレートはモデルを読み取れないため、モデリングテンプレートである必要はありません。
+
+```
+<#@ template hostspecific="true" language="C#" #>
+<#@ output extension=".txt" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
+<#@ import namespace="System.Runtime.Remoting.Messaging" #>
+<#@ import namespace="System.IO" #>
+
+<#
+  // Get the local path:
+  string itemTemplatePath = this.Host.ResolvePath("LoopTemplate.t4");
+  string dir = Path.GetDirectoryName(itemTemplatePath);
+
+  // Get the template for generating each file:
+  string loopTemplate = File.ReadAllText(itemTemplatePath);
+
+  Engine engine = new Engine();
+
+  // Pass parameter to new template:
+  string delimiterGuid = Guid.NewGuid().ToString();
+  string delimiter = "::::" + delimiterGuid + ":::";
+  CallContext.LogicalSetData("delimiter", delimiter + "{0}:::");
+  string joinedFiles = engine.ProcessTemplate(loopTemplate, this.Host);
+
+  string [] separateFiles = joinedFiles.Split(new string [] {delimiter}, StringSplitOptions.None);
+
+  foreach (string nameAndFile in separateFiles)
+  {
+     if (string.IsNullOrWhiteSpace(nameAndFile)) continue;
+     string[] parts = nameAndFile.Split(new string[]{":::"}, 2, StringSplitOptions.None);
+     if (parts.Length < 2) continue;
+#>
+ Generate: [<#= dir #>] [<#= parts[0] #>]
+<#
+     // Generate a file from this item:
+     File.WriteAllText(Path.Combine(dir, parts[0] + ".txt"), parts[1]);
+  }
+#>
+
 ```
