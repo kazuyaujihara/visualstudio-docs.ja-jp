@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be903b2d0e269a0bce99ab57ff83e1b4bf8caa7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 429ce6ed8d44387d3289ee7100da4e639f16ad8e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934346"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870588"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Modeling SDK for Visual Studio の API リファレンス
 
@@ -33,11 +33,11 @@ Visual Studio Visualization and Modeling SDK は、ドメイン固有言語 (DSL
 |<xref:Microsoft.VisualStudio.Modeling.Extensibility?displayProperty=fullName>|DSL の拡張機能を実装する ModelElement の拡張メソッド。|
 |<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement?displayProperty=fullName>|拡張属性|
 |<xref:Microsoft.VisualStudio.Modeling.Immutability?displayProperty=fullName>|読み取り専用にモデルの部分を作成できます。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration?displayProperty=fullName>|役立つ Modelbus API では、さまざまなモデルを統合します。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker?displayProperty=fullName>|ユーザー モデルおよび Modelbus 参照を作成する要素に移動できるように、ダイアログ ボックス。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting?displayProperty=fullName>|選択サービス。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell?displayProperty=fullName>|For Visual Studio Modelbus アダプター フレームワーク。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell.Picker?displayProperty=fullName>|ユーザーがモデルと Modelbus 参照を作成する要素に移動できるピッカー ダイアログ ボックス。|
+|[VisualStudio の統合](/previous-versions/ee904412(v=vs.140))|役立つ Modelbus API では、さまざまなモデルを統合します。|
+|[VisualStudio を選択します。](/previous-versions/ee904394(v=vs.140))|ユーザー モデルおよび Modelbus 参照を作成する要素に移動できるように、ダイアログ ボックス。|
+|`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|選択サービス。|
+|[VisualStudio を作成します。](/previous-versions/ee869435(v=vs.140))|For Visual Studio Modelbus アダプター フレームワーク。|
+|[VisualStudio を選択してください。](/previous-versions/ee886769(v=vs.140))|ユーザーがモデルと Modelbus 参照を作成する要素に移動できるピッカー ダイアログ ボックス。|
 |<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Dsl と Visual Studio 間のインターフェイス。|
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|ショートカット (コンテキスト) メニューのコマンドを定義できます。|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|検証制約を定義できます。|

@@ -1,5 +1,5 @@
 ---
-title: Modelbus によるモデルの統合 |Microsoft Docs
+title: Modelbus | を使用したモデルの統合Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,17 +9,17 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9f0a185ce4f78a81d1ed806e38b102296093f48
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84374596d706c23e835bf344d318d57c297aec60
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441007"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871799"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus によるモデルの統合
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus はモデルにモデル間、およびその他のツールからリンクを作成するためのメソッドを提供します。 たとえば、ドメイン固有言語 (DSL) モデルと UML モデルをリンクする可能性があります。 DSL の統合セットを作成できます。
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ModelBus には、モデル間のリンクや他のツールからモデルへのリンクを作成するためのメソッドが用意されています。 たとえば、ドメイン固有言語 (DSL) モデルと UML モデルをリンクする可能性があります。 DSL の統合セットを作成できます。
 
  ModelBus により、モデルまたはモデル内の特定の要素への一意の参照を作成できます。 この参照は、たとえば、別のモデル内の要素など、モデルの外に保存できます。 後で何らかのツールにおいて要素へのアクセスを取得する必要が生じると、モデル バス インフラストラクチャは適切なモデルを読み込み、要素を返します。 必要があれば、モデルをユーザーに表示できます。 ファイルが以前の場所でアクセスできない場合、ModelBus はユーザーにファイルを見つけるように求めます。 ユーザーがファイルを見つけると、ModelBus はそのファイルへのすべての参照を解決します。
 
@@ -47,7 +47,7 @@ ms.locfileid: "63441007"
 
 5. テキスト テンプレートから DSL にアクセスする場合、新しいプロジェクトで AdapterManager.tt を変更する必要があります。 コマンドやイベント ハンドラーなどの他のコードから DSL にアクセスする場合はこの手順を省略します。 詳細については、[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)を参照してください。
 
-   1. AdapterManagerBase の基底クラスを <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager> に変更します。
+   1. AdapterManagerBase の基本クラスを[Vstexttemplatingmodelingadaptermanager](/previous-versions/ee844317(v=vs.140))に変更します。
 
    2. ファイルの終わり近くで、クラス AdapterManager の前に次の追加属性を挿入します。
 
@@ -127,7 +127,7 @@ ms.locfileid: "63441007"
 
 4. モデル内の要素を参照する場合、ユーザーが選択可能な型の一覧を追加します (たとえば、Company.FamilyTree.Person)。
 
-5. をクリックして**OK**、順にクリックします**すべてのテンプレートの変換**ソリューション エクスプ ローラーのツールバー。
+5. **[OK]** をクリックし、ソリューションエクスプローラーのツールバーの **[すべてのテンプレートの変換]** をクリックします。
 
     > [!WARNING]
     > 有効なモデルまたはエンティティを選択しなかった場合、[OK] ボタンが有効のように見えても効果はありません。
@@ -510,4 +510,4 @@ private const string INVALID_REF_FORMAT =
 - **DslPackage\source.extention.tt**、 `|ModelBusAdapter|` MEF コンポーネントとして追加されます。
 
 ## <a name="see-also"></a>関連項目
- [方法: プログラム コード内のファイルからモデルを開く](../modeling/how-to-open-a-model-from-file-in-program-code.md)[を他のモデルおよびツールとの統合の UML モデル](../modeling/integrate-uml-models-with-other-models-and-tools.md)[方法。ドラッグ アンド ドロップ ハンドラーを追加](../modeling/how-to-add-a-drag-and-drop-handler.md)[テキスト テンプレートで Visual Studio ModelBus の使用](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
+ [方法: プログラムコード](../modeling/how-to-open-a-model-from-file-in-program-code.md)内のファイルからモデルを開く[UML モデルを他のモデルおよびツール](../modeling/integrate-uml-models-with-other-models-and-tools.md) [と統合する方法:](../modeling/how-to-add-a-drag-and-drop-handler.md) [テキストテンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)ドラッグアンドドロップハンドラーを追加する

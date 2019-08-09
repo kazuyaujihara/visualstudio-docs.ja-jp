@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a75dc86a45c78f6b57d5a326c8c342eca70b26e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26845b3878a89ea52a3f77f9a0a8d23363877edd
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960464"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870689"
 ---
-# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>テキスト テンプレートからの Visual Studio またはその他のホストへのアクセス
+# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>テキストテンプレートから Visual Studio またはその他のホストにアクセスする
 
 テキスト テンプレートでは、メソッドと、テンプレートを実行するホストによって公開されているプロパティを使用できます。 Visual Studio は、ホストの例のひとつです。
 
@@ -24,7 +24,7 @@ ms.locfileid: "62960464"
 
 ## <a name="obtain-access-to-the-host"></a>ホストへのアクセスの取得
 
-ホストにアクセスするには、`template`ディレクティブで、`hostspecific="true"`を設定します。 それにより、 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> 型を持つ`this.Host` が使用できるようになります。 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> 型は、たとえば、ファイル名の解決や、エラーをログするメンバーを持っており、使用できます。
+ホストにアクセスするには、`template`ディレクティブで、`hostspecific="true"`を設定します。 これで、型`this.Host` [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))を持つを使用できるようになりました。 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))型には、ファイル名を解決し、エラーをログに記録するために使用できるメンバーがあります。たとえば、のようになります。
 
 ### <a name="resolve-file-names"></a>ファイル名を解決するには
 

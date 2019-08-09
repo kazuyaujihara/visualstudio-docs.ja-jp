@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8bbf75bfe218945453d25440c868a95675168631
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 93a62b6fe5493b78a3c18c1adb87761cdb894670
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705885"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871552"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>単体テストでの Microsoft.VisualStudio.TestTools.UnitTesting のメンバーの使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "65705885"
 > `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>データ ドリブン テストで使用する要素
- データ ドリブン単体テストを設定するには、次の要素を使用します。 詳細については、次を参照してください[How To:。データ ドリブン単体テストを作成する](../test/how-to-create-a-data-driven-unit-test.md)と[チュートリアル。データ ソースを定義する構成ファイルを使用して](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)します。
+ データ ドリブン単体テストを設定するには、次の要素を使用します。 詳細については[、「方法:データドリブン単体テスト](../test/how-to-create-a-data-driven-unit-test.md)とチュートリアルを作成し[ます。構成ファイルを使用したデータソース](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)の定義。
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -106,7 +106,7 @@ ms.locfileid: "65705885"
 
 ## <a name="test-configuration-classes"></a>テスト構成クラス
 
-- <xref:Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes>
+- [ObjectTypes](/previous-versions/visualstudio/visual-studio-2013/dd987428(v=vs.120))
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection>
 
