@@ -488,8 +488,6 @@
       href: how-to-diagnose-ui-delays-caused-by-extensions.md
     - name: VSPackage のトラブルシューティング
       href: troubleshooting-vspackages.md
-- name: シェル (統合または分離)
-  href: 'https://vspartner.com/pages/vsshells'
 - name: Visual Studio 拡張機能を発送する
   items:
     - name: Visual Studio 拡張機能を発送する
