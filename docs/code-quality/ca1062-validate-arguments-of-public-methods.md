@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 274b01a67974db08d9ec016a18ec115bcfac2452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3868061a01572d0b1adadec6619f88269d353dff
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788569"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922438"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062:パブリック メソッドの引数の検証
 
@@ -35,28 +35,28 @@ ms.locfileid: "62788569"
 
 ## <a name="cause"></a>原因
 
-その引数は、かどうかを確認せず、外部から参照できるメソッドを逆参照引数のいずれかの`null`(`Nothing` Visual Basic で)。
+外部から参照できるメソッドは、その引数が`null` (`Nothing` Visual Basic) であるかどうかを確認せずに、参照引数の1つを逆参照します。
 
 ## <a name="rule-description"></a>規則の説明
 
-外部から参照可能なメソッドに渡されるすべての参照引数を照合する`null`します。 必要に応じて、スロー、<xref:System.ArgumentNullException>ときに、引数が`null`。
+外部から参照できるメソッドに渡されるすべての参照引数を照合`null`する必要があります。 必要に応じて、 <xref:System.ArgumentNullException>引数が`null`の場合にをスローします。
 
-メソッドは、public または protected に宣言されているために、不明なアセンブリから呼び出すことが、メソッドのすべてのパラメーターを検証する必要があります。 内部メソッドを作成および適用する必要がある既知のアセンブリによってのみ呼び出されるメソッドの場合、<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>メソッドを含むアセンブリへの属性します。
+パブリックまたは protected として宣言されているために不明なアセンブリからメソッドを呼び出すことができる場合は、メソッドのすべてのパラメーターを検証する必要があります。 メソッドが既知のアセンブリによってのみ呼び出されるように設計されている場合は、メソッド<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>を内部にし、メソッドを含むアセンブリに属性を適用する必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、各参照引数を検証`null`です。
+この規則違反を修正するには、各参照引数を`null`に対して検証します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-関数のもう 1 つのメソッド呼び出しによって逆参照されるパラメーターが検証済みであることを確認する場合は、この規則による警告を抑制できます。
+逆参照パラメーターが関数内の別のメソッド呼び出しによって検証されていることが確実である場合は、この規則からの警告を非表示にすることができます。
 
 ## <a name="example"></a>例
 
-次の例では、規則に違反するメソッドと、規則に適合するメソッドを示します。
+次の例は、規則に違反するメソッドと、規則を満たすメソッドを示しています。
 
- ```csharp
- using System;
+```csharp
+using System;
 
 namespace DesignLibrary
 {
@@ -123,9 +123,9 @@ End Namespace
 
 ## <a name="example"></a>例
 
-コピー コンス トラクターがフィールドまたは参照オブジェクトのプロパティを設定するには、ca 1062 ルール違反もことができます。 コピーされたオブジェクトのコピー コンス トラクターに渡される可能性があるために、違反が発生する`null`(`Nothing` Visual Basic で)。 違反を解決するには、static (Visual Basic では Shared) メソッドを使用して、コピーされたオブジェクトが null でないことを確認します。
+フィールドまたは参照オブジェクトであるプロパティを設定するコピーコンストラクターも、CA1062 の規則に違反する可能性があります。 コピーコンストラクターに渡されるコピーさ`null`れたオブジェクトが (`Nothing` Visual Basic) である可能性があるため、違反が発生します。 違反を解決するには、静的 (Visual Basic では Shared) メソッドを使用して、コピーされたオブジェクトが null でないことを確認します。
 
-次の`Person`クラスなど、`other`オブジェクトに渡される、`Person`コピー コンス トラクターがあります`null`します。
+次`Person`のクラスの例`other`では、 `Person`コピーコンストラクターに渡されるオブジェクトがで`null`ある可能性があります。
 
 ```csharp
 public class Person
@@ -150,7 +150,7 @@ public class Person
 
 ## <a name="example"></a>例
 
-次のように改訂された`Person`など、`other`コピー コンス トラクターに渡されるオブジェクトが最初にチェックで null を`PassThroughNonNull`メソッド。
+次`Person`の例では`other` 、コピーコンストラクターに渡されたオブジェクトが、最初に`PassThroughNonNull`メソッドで null であるかどうかがチェックされます。
 
 ```csharp
 public class Person

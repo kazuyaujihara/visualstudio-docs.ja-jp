@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ef3e012b3a818c60be23278fe622a40330f3b43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a6d9acc3a74505f766fbf9cfe26fc6878fdbb4b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541481"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920041"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240:ISerializable を正しく実装します
 
@@ -36,43 +36,43 @@ ms.locfileid: "62541481"
 
 ## <a name="cause"></a>原因
 
-割り当てることは、外部から参照できる型は、<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>インターフェイスと、次の条件のいずれかが true:
+外部から参照できる型は、 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>インターフェイスに割り当てることができ、次のいずれかの条件が当てはまります。
 
-- 型の継承がオーバーライドしません、<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>メソッドと型の宣言でマークされていないインスタンス フィールド、<xref:System.NonSerializedAttribute?displayProperty=fullName>属性。
+- 型はを継承しますが、 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>メソッドをオーバーライドしません。型は、 <xref:System.NonSerializedAttribute?displayProperty=fullName>属性でマークされていないインスタンスフィールドを宣言します。
 
-- 型がシールされていないと、型を実装、<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>が外部で表示され、オーバーライド可能なメソッドです。
+- 型はシールされていません。 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>型は、外部から参照できないオーバーライド可能なメソッドを実装しています。
 
 ## <a name="rule-description"></a>規則の説明
- インスタンス フィールドを継承する型で宣言されている、<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>インターフェイスは、自動的にシリアル化プロセスには含まれません。 フィールドは、型を実装する必要があります、<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>メソッドとシリアル化コンス トラクター。 フィールドをシリアル化する必要がありますしない場合は、適用、<xref:System.NonSerializedAttribute>意思決定を明示的に示すフィールドに属性します。
+インターフェイスを<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>継承する型で宣言されたインスタンスフィールドは、シリアル化プロセスに自動的に含まれません。 フィールドを含めるには、型は<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>メソッドとシリアル化コンストラクターを実装する必要があります。 フィールドをシリアル化しない場合は、フィールド<xref:System.NonSerializedAttribute>に属性を適用して明示的に決定を指定します。
 
- シールされていない、実装の種類で、<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>メソッドを外部から参照可能にする必要があります。 そのため、メソッドは、派生型は、呼び出すことができ、オーバーライド可能なは。
+シールされていない型では、 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>メソッドの実装を外部から参照できるようにする必要があります。 したがって、メソッドは派生型によって呼び出すことができ、オーバーライド可能です。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するように、<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>メソッドをオーバーライドできるすべてのインスタンス フィールドをシリアル化プロセスに含まれるかで明示的にマークされていることを確認して、<xref:System.NonSerializedAttribute>属性。
+この規則違反を修正するには、 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>メソッドを表示およびオーバーライドできるようにし、すべてのインスタンスフィールドがシリアル化プロセスに含まれるか、または<xref:System.NonSerializedAttribute>属性で明示的にマークされていることを確認します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
-
-## <a name="example"></a>例
- 次の例では、ルールに違反している 2 つのシリアル化可能な型を示します。
-
- [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/CSharp/ca2240-implement-iserializable-correctly_1.cs)]
- [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/CPP/ca2240-implement-iserializable-correctly_1.cpp)]
- [!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2240-implement-iserializable-correctly_1.vb)]
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、前の 2 つの違反を修正の上書き可能な実装を提供して<xref:System.Runtime.Serialization.ISerializable.GetObjectData>Book クラスの実装を提供すること、および`GetObjectData`ライブラリ クラス。
+次の例は、規則に違反する2つのシリアル化可能な型を示しています。
 
- [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/CPP/ca2240-implement-iserializable-correctly_2.cpp)]
- [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/CSharp/ca2240-implement-iserializable-correctly_2.cs)]
- [!code-vb[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/VisualBasic/ca2240-implement-iserializable-correctly_2.vb)]
+[!code-csharp[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/CSharp/ca2240-implement-iserializable-correctly_1.cs)]
+[!code-cpp[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/CPP/ca2240-implement-iserializable-correctly_1.cpp)]
+[!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2240-implement-iserializable-correctly_1.vb)]
+
+## <a name="example"></a>例
+次の例では、Book クラスにの<xref:System.Runtime.Serialization.ISerializable.GetObjectData>上書き可能な実装を提供し、ライブラリクラスにの`GetObjectData`実装を提供することによって、以前の2つの違反を修正します。
+
+[!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/CPP/ca2240-implement-iserializable-correctly_2.cpp)]
+[!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/CSharp/ca2240-implement-iserializable-correctly_2.cs)]
+[!code-vb[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/VisualBasic/ca2240-implement-iserializable-correctly_2.vb)]
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA2236:ISerializable 型の基本クラス メソッドを呼び出す](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+- [CA2236ISerializable 型で基底クラスのメソッドを呼び出す](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 - [CA2229: シリアル化コンストラクターを実装します](../code-quality/ca2229-implement-serialization-constructors.md)
-- [CA2238:シリアル化メソッドを正しく実装します。](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+- [CA2238シリアル化メソッドを正しく実装する](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 - [CA2235:すべてのシリアル化不可能なフィールドを設定します](../code-quality/ca2235-mark-all-non-serializable-fields.md)
-- [CA2237:ISerializable 型を serializableattribute に設定します](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
-- [CA2239:オプションのフィールドに逆シリアル化メソッドを提供します。](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
-- [CA2120:セキュリティで保護されたシリアル化コンス トラクター](../code-quality/ca2120-secure-serialization-constructors.md)
+- [CA2237:ISerializable 型を SerializableAttribute に設定します](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+- [CA2239オプションのフィールドに逆シリアル化メソッドを提供する](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+- [CA2120セキュリティで保護されたシリアル化コンストラクター](../code-quality/ca2120-secure-serialization-constructors.md)

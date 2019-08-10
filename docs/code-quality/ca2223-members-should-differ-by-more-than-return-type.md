@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e4e7aa59d273242bd8b97fd4f2777b7edcb5990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de64e0271370a3cdcc6f0963dbf06925621b9b65
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806668"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920190"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223:メンバーは、戻り値の型以外にも異なる点がなければなりません
 
@@ -27,23 +27,23 @@ ms.locfileid: "62806668"
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
-|カテゴリ|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 2 つのパブリックまたはプロテクト メンバーは、戻り値の型以外はまったく同じシグネチャを持っています。
+2つのパブリックメンバーまたはプロテクトメンバーは、戻り値の型を除いて同一のシグネチャを持ちます。
 
 ## <a name="rule-description"></a>規則の説明
- 共通言語ランタイムでは、それ以外の場合と同じメンバーを区別するために、戻り値の型を使用できますが、この機能は、共通言語仕様では、.NET プログラミング言語の一般的な機能でもありません。 メンバーは、戻り値の型によってのみが異なる場合、開発者や開発ツール可能性がありますいない正しく区別します。
+共通言語ランタイムでは、戻り値の型を使用して同一のメンバーを区別することが許可されていますが、この機能は共通言語仕様ではありません。また、.NET プログラミング言語の一般的な機能でもありません。 メンバーが戻り値の型のみが異なる場合、開発者と開発ツールはそれらを正しく区別しない可能性があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するのには一意の名前とパラメーターの型のみに基づいて、またはメンバーを公開しないようにメンバーのデザインを変更します。
+この規則違反を修正するには、メンバーの名前とパラメーターの型のみに基づいて一意になるようにメンバーのデザインを変更するか、メンバーを公開しないようにします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、Microsoft intermediate language (MSIL) には、この規則に違反する型を示します。 C# または Visual Basic を使用してこの規則に違反することはできないことに注意してください。
+次の例では、Microsoft 中間言語 (MSIL) で、この規則に違反する型を示しています。 または Visual Basic を使用C#した場合、この規則に違反することはありません。
 
 ```
 .namespace UsageLibrary

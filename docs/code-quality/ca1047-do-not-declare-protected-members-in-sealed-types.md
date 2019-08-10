@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c138c05d755b05275755f96776764604997cbbcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ab7cf2c5a4f17966ed5b4da30657e05a4683738
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778786"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922645"
 ---
 # <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047:シールド型の保護されたメンバーを宣言しません
 
@@ -34,21 +34,21 @@ ms.locfileid: "62778786"
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- パブリック型が`sealed`(`NotInheritable` Visual basic) とプロテクト メンバーまたはプロテクトの入れ子になった型を宣言します。 このルールの違反はレポートされません<xref:System.Object.Finalize%2A>メソッドで、このパターンに従う必要があります。
+パブリック型は ( `sealed` `NotInheritable` Visual basic では) であり、プロテクトメンバーまたは protected 入れ子にされた型を宣言します。 この規則は、メソッドの<xref:System.Object.Finalize%2A>違反を報告しません。このパターンに従う必要があります。
 
 ## <a name="rule-description"></a>規則の説明
- 型でプロテクト メンバーを宣言するのは、継承する型からメンバーにアクセスまたはオーバーライドできるようにするためです。 定義上、sealed 型でメソッドを保護されていることを意味を呼び出すことはできません、シールされた型から継承することはできません。
+型でプロテクト メンバーを宣言するのは、継承する型からメンバーにアクセスまたはオーバーライドできるようにするためです。 定義上、シール型から継承することはできません。つまり、シール型のプロテクトメソッドを呼び出すことはできません。
 
- C# コンパイラでは、このエラーの警告を発行します。
+コンパイラC#は、このエラーの警告を発行します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するをプライベート メンバーのアクセス レベルを変更または、型が継承できるようにします。
+この規則違反を修正するには、メンバーのアクセスレベルをプライベートに変更するか、型を継承可能にします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。 メンテナンスの問題が発生することができ、すべての特典を提供しない型の現在の状態のままになります。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。 型を現在の状態のままにすると、メンテナンスの問題が発生する可能性があるため、利点はありません。
 
 ## <a name="example"></a>例
- 次の例では、この規則に違反する型を示します。
+次の例は、この規則に違反する型を示しています。
 
- [!code-vb[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/VisualBasic/ca1047-do-not-declare-protected-members-in-sealed-types_1.vb)]
- [!code-csharp[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/CSharp/ca1047-do-not-declare-protected-members-in-sealed-types_1.cs)]
+[!code-vb[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/VisualBasic/ca1047-do-not-declare-protected-members-in-sealed-types_1.vb)]
+[!code-csharp[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/CSharp/ca1047-do-not-declare-protected-members-in-sealed-types_1.cs)]

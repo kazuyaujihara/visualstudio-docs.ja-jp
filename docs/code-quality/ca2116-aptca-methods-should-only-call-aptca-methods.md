@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03948506d928f7d638b21c1fa4bc0a35818ec09a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f55c48583e47a4602f33d69799d1d86a6c9c3e56
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545423"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921155"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116:APTCA メソッドは APTCA メソッドのみを呼び出すことができます
 
@@ -32,42 +32,42 @@ ms.locfileid: "62545423"
 
 ## <a name="cause"></a>原因
 
-アセンブリのメソッド、<xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName>属性が属性がないアセンブリ内のメソッドを呼び出します。
+<xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName>属性を持つアセンブリ内のメソッドが、属性を持たないアセンブリ内のメソッドを呼び出しています。
 
 ## <a name="rule-description"></a>規則の説明
 
-既定では、厳密な名前付きアセンブリで public または protected のメソッドは暗黙的にによって保護、[リンク確認要求](/dotnet/framework/misc/link-demands)は完全な信頼ののみ完全に信頼された呼び出し元は、厳密な名前のアセンブリにアクセスできます。 アセンブリの厳密な名前が付いて、 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) 属性には、この保護はありません。 属性には、アセンブリにイントラネットまたはインターネットからのコード実行などの完全な信頼がない呼び出し元にアクセスできるように、リンク確認要求が無効にします。
+既定では、厳密な名前を持つアセンブリ内のパブリックメソッドまたはプロテクトメソッドは、完全信頼の[リンク確認要求](/dotnet/framework/misc/link-demands)によって暗黙的に保護されます。完全に信頼された呼び出し元だけが、厳密な名前付きアセンブリにアクセスできます。 (APTCA) 属性でマークさ<xref:System.Security.AllowPartiallyTrustedCallersAttribute>れた厳密な名前付きのアセンブリには、この保護はありません。 属性は、リンク確認要求を無効にし、イントラネットまたはインターネットからコードを実行するなど、完全に信頼されていない呼び出し元がアセンブリにアクセスできるようにします。
 
-APTCA 属性が完全に信頼されたアセンブリに存在すると、アセンブリが部分的に信頼された呼び出し元が許可されない別のアセンブリ内のコードの実行、セキュリティ上の弱点は可能性があります。 場合は 2 つのメソッド`M1`と`M2`次の条件を満たしている、悪意のある呼び出し元は、メソッドを使用できる`M1`を保護する暗黙の型の完全な信頼リンク確認要求をバイパスする`M2`:
+APTCA 属性が完全に信頼されたアセンブリに存在し、部分的に信頼された呼び出し元を許可しない別のアセンブリのコードをアセンブリが実行すると、セキュリティ上の脆弱性が発生する可能性があります。 2つの`M1`メソッド`M2`があり、次の条件を満たす場合、悪意`M1`のある呼び出し元はメソッドを使用して`M2`、を保護する暗黙的な完全信頼リンク要求をバイパスできます。
 
-- `M1` パブリック メソッドは APTCA 属性を持つ完全に信頼されたアセンブリで宣言されます。
+- `M1`は、APTCA 属性を持つ、完全に信頼されたアセンブリで宣言されたパブリックメソッドです。
 
-- `M1` メソッドを呼び出す`M2`外`M1`のアセンブリ。
+- `M1`のアセンブリの`M2`外部`M1`でメソッドを呼び出します。
 
-- `M2`アセンブリは、APTCA 属性がないと、そのため、実行してはならない、または部分的に信頼されている呼び出し元の代わりです。
+- `M2`のアセンブリには APTCA 属性が含まれていないため、部分的に信頼されている呼び出し元の代わりにまたはによって実行することはできません。
 
-部分的に信頼された呼び出し元`X`メソッドを呼び出すことができます`M1`原因となる、`M1`を呼び出す`M2`します。 `M2` APTCA 属性、その直前の呼び出し元がありません (`M1`) は完全な信頼のリンク確認要求を満たす必要があります`M1`完全な信頼があり、したがってこのチェックに適合します。 セキュリティ リスクは`X`を保護するリンク確認要求を満たすに関与しません`M2`呼び出し元が信頼されていないからです。 そのため、APTCA 属性を持つメソッド属性を持たないメソッドを呼び出していません。
+部分的`M1`に信頼さ`X`れた呼び出し`M1`元はメソッドを`M2`呼び出して、を呼び出すことができます。 に`M2`は APTCA 属性がないため、直接の呼び出し元`M1`() は完全信頼のリンク確認要求を満たす必要があります。`M1`は完全に信頼されているため、このチェックを満たします。 セキュリティ上のリスクは`X` 、信頼されていない呼び出し元から`M2`保護されるリンク確認要求に、が関与しないためです。 そのため、APTCA 属性を持つメソッドは、属性を持たないメソッドを呼び出すことはできません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- APCTA 属性が必要な場合は、完全信頼アセンブリを呼び出すメソッドを保護する要求を使用します。 正確なアクセス許可要求するには、メソッドによって公開される機能は異なります。 可能な場合は、完全な信頼の基盤となる機能は部分的に信頼された呼び出し元に公開されないことを確認する要求を持つメソッドを保護します。 それができない場合は、公開されている機能を効果的に保護するアクセス許可のセットを選択します。
+APCTA 属性が必要な場合は、要求を使用して、完全信頼アセンブリを呼び出すメソッドを保護します。 必要なアクセス許可は、メソッドによって公開される機能によって異なります。 可能であれば、完全信頼の要求によってメソッドを保護し、基になる機能が部分的に信頼された呼び出し元に公開されないようにします。 これが不可能な場合は、公開されている機能を効果的に保護するアクセス許可のセットを選択します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告を安全に抑制するには、メソッドによって公開される機能が許可しないこと直接的または間接的に呼び出し元が機密情報、操作、または、破壊的な方法で使用できるリソースにアクセスすることを確認する必要があります。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則からの警告を安全に抑制するには、メソッドによって公開されている機能が、破壊的な方法で使用できる機密情報、操作、またはリソースに直接または間接的にアクセスすることを、呼び出し元に許可しないようにする必要があります。
 
 ## <a name="example-1"></a>例 1
- 次の例では、2 つのアセンブリとテスト アプリケーションを使用して、この規則で検出されるセキュリティの脆弱性を示しています。 最初のアセンブリは APTCA 属性がないと部分的に信頼された呼び出し元にアクセスできないする必要があります (によって表される`M2`上記の説明で)。
+次の例では、2つのアセンブリとテストアプリケーションを使用して、この規則によって検出されたセキュリティの脆弱性を示しています。 最初のアセンブリには APTCA 属性がなく、部分的に信頼された呼び出し元 (前の`M2`説明ではによって表されます) からアクセスできないようにする必要があります。
 
- [!code-csharp[FxCop.Security.NoAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_1.cs)]
+[!code-csharp[FxCop.Security.NoAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_1.cs)]
 
 ## <a name="example-2"></a>例 2
- 2 番目のアセンブリが完全に信頼されていると、部分的に信頼された呼び出し元を許可 (によって表される`M1`上記の説明で)。
+2番目のアセンブリは完全に信頼されており、 `M1`部分的に信頼された呼び出し元を許可します (前の説明ではに示されています)。
 
- [!code-csharp[FxCop.Security.YesAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_2.cs)]
+[!code-csharp[FxCop.Security.YesAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_2.cs)]
 
 ## <a name="example-3"></a>例 3
- テスト アプリケーション (によって表される`X`上記の説明で) が部分的に信頼されています。
+(前の説明ので`X`示されている) テストアプリケーションは、部分的に信頼されています。
 
- [!code-csharp[FxCop.Security.TestAptcaMethods#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_3.cs)]
+[!code-csharp[FxCop.Security.TestAptcaMethods#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_3.cs)]
 
 この例を実行すると、次の出力が生成されます。
 
@@ -78,7 +78,7 @@ ClassRequiringFullTrust.DoWork was called.
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA2117:APTCA 型は APTCA 基本型のみを拡張する必要があります。](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
+- [CA2117APTCA 型は APTCA 基本型のみを拡張する必要があります](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>関連項目
 

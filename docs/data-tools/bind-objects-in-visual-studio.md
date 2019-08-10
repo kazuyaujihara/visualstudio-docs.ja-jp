@@ -1,5 +1,5 @@
 ---
-title: カスタム オブジェクトをデータにバインドします。
+title: カスタムオブジェクトのデータバインド
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,133 +16,133 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4fb5a8c7a54871c7d948a458768c5551dbb5d550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9994d52c5ca39d744cf26dc019440e70e809ee8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824366"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925663"
 ---
-# <a name="bind-objects-as-data-sources-in-visual-studio"></a>Visual Studio でのデータ ソースとしてのオブジェクトのバインド
+# <a name="bind-objects-as-data-sources-in-visual-studio"></a>Visual Studio でオブジェクトをデータソースとしてバインドする
 
-Visual Studio には、アプリケーションでデータ ソースとしてカスタム オブジェクトを操作するためのデザイン時ツールが用意されています。 UI コントロールにバインドするオブジェクトに、データベースからデータを格納する場合は、Entity Framework を使用して、クラスまたはクラスを生成することをお勧めします。 Entity Framework は、すべての定型コード変更の追跡は、コード、DbSet オブジェクトで AcceptChanges を呼び出すと、ローカルのオブジェクトに変更がデータベースに保存自動的を自動で生成します。 詳細については、次を参照してください。 [Entity Framework ドキュメント](https://ef.readthedocs.org/en/latest/)します。
+Visual Studio には、アプリケーションのデータソースとしてカスタムオブジェクトを操作するためのデザイン時ツールが用意されています。 UI コントロールにバインドするオブジェクトのデータベースからデータを格納する場合は、Entity Framework を使用してクラスまたはクラスを生成する方法をお勧めします。 Entity Framework は、すべての定型変更追跡コードを自動生成します。これは、DbSet オブジェクトで AcceptChanges を呼び出したときに、ローカルオブジェクトに対する変更がデータベースに自動的に保存されることを意味します。 詳細については、 [Entity Framework のドキュメント](https://ef.readthedocs.org/en/latest/)を参照してください。
 
 > [!TIP]
-> アプリケーションは既にデータセットに基づいている場合にのみ、この記事では、オブジェクトのバインドするためのアプローチを検討してください。 データセットを理解しているし、処理するデータが表形式と複雑すぎるか大きすぎる場合は、これらのアプローチを使用することもできます。 DataReader によるデータ バインド、なし、UI を手動で更新してオブジェクトに直接データの読み込みに関連する、さらに簡単な例については、次を参照してください。 [ADO.NET を使用して単純なデータ アプリケーションを作成する](../data-tools/create-a-simple-data-application-by-using-adonet.md)します。
+> この記事のオブジェクトバインドの方法は、アプリケーションが既にデータセットに基づいている場合にのみ検討してください。 これらの方法は、データセットを既に使い慣れていて、処理するデータが表形式で複雑すぎる場合や大きすぎる場合にも使用できます。 DataReader を使用して直接オブジェクトにデータを読み込み、データバインドを使用せずに UI を手動で更新するなど、さらに簡単な例については、「 [ADO.NET を使用した単純なデータアプリケーションの作成](../data-tools/create-a-simple-data-application-by-using-adonet.md)」を参照してください。
 
 ## <a name="object-requirements"></a>オブジェクトの要件
 
-Visual Studio でデザイン ツールをデータを処理するカスタム オブジェクトの唯一の要件は、オブジェクトが少なくとも 1 つのパブリック プロパティを必要があることです。
+カスタムオブジェクトが Visual Studio のデータデザインツールで動作するための唯一の要件は、オブジェクトに少なくとも1つのパブリックプロパティが必要であることです。
 
-一般に、カスタム オブジェクトでは、任意の特定のインターフェイス、コンス トラクター、またはアプリケーションのデータ ソースとして機能する属性は必要ありません。 ただしからオブジェクトをドラッグする場合、**データソース**ウィンドウは、データ バインド コントロールを作成するデザイン サーフェイスにオブジェクトを実装する場合と、<xref:System.ComponentModel.ITypedList>または<xref:System.ComponentModel.IListSource>インターフェイス、オブジェクトには、既定値が必要コンス トラクターです。 それ以外の場合、Visual Studio は、データ ソース オブジェクトをインスタンス化できないし、デザイン サーフェイスに項目をドラッグすると、エラーが表示されます。
+一般に、カスタムオブジェクトでは、アプリケーションのデータソースとして機能する特定のインターフェイス、コンストラクター、または属性は必要ありません。 ただし、オブジェクトを **[データソース]** ウィンドウからデザインサーフェイスにドラッグしてデータバインドコントロールを作成し、オブジェクトがインターフェイス<xref:System.ComponentModel.ITypedList>または<xref:System.ComponentModel.IListSource>インターフェイスを実装している場合は、オブジェクトに既定のコンストラクターが必要です。 そうしないと、Visual Studio はデータソースオブジェクトをインスタンス化できず、アイテムをデザイン画面にドラッグしたときにエラーが表示されます。
 
-## <a name="examples-of-using-custom-objects-as-data-sources"></a>カスタム オブジェクトを使用して、データ ソースとして例を示します
+## <a name="examples-of-using-custom-objects-as-data-sources"></a>カスタムオブジェクトをデータソースとして使用する例
 
-データ ソースとしてオブジェクトを使用する場合、アプリケーション ロジックを実装する方法を使用して、SQL のデータベースがありますが Visual Studio によって生成された TableAdapter オブジェクトを使用して簡略化できますが、いくつかの標準的な操作です。 このページには、Tableadapter を使用してこれらの標準的なプロセスを実装する方法について説明します。 カスタム オブジェクトを作成するためのガイドとしてことはありません。 たとえば、オブジェクト、またはアプリケーションのロジックの特定の実装に関係なく次の標準的な操作を通常実行は。
+オブジェクトをデータソースとして使用する場合、アプリケーションロジックを実装する方法は数多くありますが、SQL データベースの場合は、Visual Studio で生成された TableAdapter オブジェクトを使用することによって簡略化できるいくつかの標準操作があります。 このページでは、Tableadapter を使用してこれらの標準プロセスを実装する方法について説明します。 カスタムオブジェクトを作成するためのガイドとしては使用しません。 たとえば、通常、オブジェクトの特定の実装やアプリケーションのロジックに関係なく、次のような標準的な操作を実行します。
 
-- (通常はデータベース) からオブジェクトにデータを読み込んでいます。
+- オブジェクトへのデータの読み込み (通常はデータベースから)。
 
 - オブジェクトの型指定されたコレクションを作成します。
 
-- オブジェクトを追加し、オブジェクトのコレクションから削除します。
+- オブジェクトをコレクションに追加したり、コレクションからオブジェクトを削除したりします。
 
-- フォーム上のユーザーにオブジェクト データを表示しています。
+- フォーム上のユーザーにオブジェクトデータを表示します。
 
-- オブジェクトのデータを変更または編集します。
+- オブジェクトのデータの変更/編集。
 
-- オブジェクトからデータベースにデータを保存しています。
+- オブジェクトのデータをデータベースに保存し直す。
 
-### <a name="load-data-into-objects"></a>オブジェクトにデータを読み込む
+### <a name="load-data-into-objects"></a>オブジェクトへのデータの読み込み
 
-この例では、Tableadapter を使用して、オブジェクトにデータを読み込みます。 既定では、Tableadapter は、2 つの種類のデータベースからデータをフェッチし、データ テーブルを設定するメソッドで作成されます。
+この例では、Tableadapter を使用して、オブジェクトにデータを読み込みます。 既定では、Tableadapter は、データベースからデータをフェッチし、データテーブルを設定する2種類のメソッドを使用して作成されます。
 
-- `TableAdapter.Fill`メソッドが返されるデータで既存のデータ テーブルを塗りつぶします。
+- メソッド`TableAdapter.Fill`は、返されたデータを既存のデータテーブルに格納します。
 
-- `TableAdapter.GetData`メソッドは、データが格納されて、新しいデータ テーブルを返します。
+- メソッド`TableAdapter.GetData`は、データが設定された新しいデータテーブルを返します。
 
-呼び出すことをカスタム オブジェクトにデータを読み込む最も簡単な方法です、`TableAdapter.GetData`メソッド、返されたデータ テーブル内の行のコレクションをループ処理し、各行の値では、各オブジェクトに設定します。 作成することができます、 `GetData` TableAdapter に追加された任意のクエリのデータが設定されたデータ テーブルを返すメソッド。
+データを使用してカスタムオブジェクトを読み込む最も簡単な方法は`TableAdapter.GetData` 、メソッドを呼び出し、返されたデータテーブル内の行のコレクションをループ処理し、各オブジェクトに各行の値を設定することです。 TableAdapter に追加さ`GetData`れたすべてのクエリについて、データが設定されたデータテーブルを返すメソッドを作成できます。
 
 > [!NOTE]
-> Visual Studio は、TableAdapter クエリを名前`Fill`と`GetData`既定では、任意の有効なメソッド名にこれらの名前を変更することができます。
+> Visual Studio では、TableAdapter `Fill`クエリ`GetData`に既定で名前を指定しますが、これらの名前は任意の有効なメソッド名に変更できます。
 
-次の例では、データ テーブルの行をループして、データを持つオブジェクトを設定する方法を示します。
+次の例では、データテーブル内の行をループ処理し、オブジェクトにデータを設定する方法を示します。
 
 [!code-csharp[VbRaddataConnecting#4](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_1.cs)]
 [!code-vb[VbRaddataConnecting#4](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_1.vb)]
 
-### <a name="create-a-typed-collection-of-objects"></a>オブジェクトの型指定されたコレクションを作成します。
+### <a name="create-a-typed-collection-of-objects"></a>オブジェクトの型指定されたコレクションを作成する
 
-オブジェクトのコレクション クラスを作成するか、によって自動的に提供される型指定されたコレクションを使用することができます、 [BindingSource コンポーネント](/dotnet/framework/winforms/controls/bindingsource-component)します。
+オブジェクトのコレクションクラスを作成することも、 [BindingSource コンポーネント](/dotnet/framework/winforms/controls/bindingsource-component)によって自動的に提供される型指定されたコレクションを使用することもできます。
 
-継承することをお勧めのオブジェクトのカスタム コレクション クラスを作成するとき<xref:System.ComponentModel.BindingList%601>します。 このジェネリック クラスは、Windows フォームでデータ バインド インフラストラクチャに通知を送信するイベントを発生させる機能と同様に、コレクションを管理する機能を提供します。
+オブジェクトのカスタムコレクションクラスを作成する場合は、から<xref:System.ComponentModel.BindingList%601>継承することをお勧めします。 このジェネリッククラスは、コレクションを管理するための機能を提供するだけでなく、Windows フォームのデータバインディングインフラストラクチャに通知を送信するイベントを発生させる機能を提供します。
 
-自動的に生成されたコレクション、<xref:System.Windows.Forms.BindingSource>を使用して、<xref:System.ComponentModel.BindingList%601>の型指定されたコレクション。 アプリケーションに追加の機能が必要としない場合、コレクション内を維持することができます、<xref:System.Windows.Forms.BindingSource>します。 詳細については、次を参照してください。、<xref:System.Windows.Forms.BindingSource.List%2A>のプロパティ、<xref:System.Windows.Forms.BindingSource>クラス。
+で<xref:System.Windows.Forms.BindingSource>自動的に生成されたコレクション<xref:System.ComponentModel.BindingList%601>は、型指定されたコレクションに対してを使用します。 アプリケーションで追加の機能が必要ない場合は、 <xref:System.Windows.Forms.BindingSource>内でコレクションを維持することができます。 詳細については、 <xref:System.Windows.Forms.BindingSource.List%2A> <xref:System.Windows.Forms.BindingSource>クラスのプロパティを参照してください。
 
 > [!NOTE]
-> コレクションの基本実装によって提供されない機能が必要とかどうか、 <xref:System.ComponentModel.BindingList%601>、必要に応じて、クラスに追加できるように、カスタム コレクションを作成する必要があります。
+> の<xref:System.ComponentModel.BindingList%601>基本実装によって提供されていない機能がコレクションに必要な場合は、必要に応じてクラスに追加できるように、カスタムコレクションを作成する必要があります。
 
-次のコードは、クラスの厳密に型指定されたコレクションを作成する方法を示しています。`Order`オブジェクト。
+次のコードは、厳密に型指定されたオブジェクトの`Order`コレクションのクラスを作成する方法を示しています。
 
 [!code-csharp[VbRaddataConnecting#8](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_2.cs)]
 [!code-vb[VbRaddataConnecting#8](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_2.vb)]
 
-### <a name="add-objects-to-a-collection"></a>オブジェクトをコレクションに追加します。
+### <a name="add-objects-to-a-collection"></a>コレクションへのオブジェクトの追加
 
-呼び出すことによって、オブジェクトをコレクションに追加する、`Add`またはのカスタム コレクション クラスのメソッド、<xref:System.Windows.Forms.BindingSource>します。
+コレクションにオブジェクトを追加するには、 `Add` <xref:System.Windows.Forms.BindingSource>カスタムコレクションクラスのメソッドまたはを呼び出します。
 
 > [!NOTE]
-> `Add`メソッドはから継承する場合、自動的にカスタム コレクションの提供<xref:System.ComponentModel.BindingList%601>します。
+> メソッド`Add`は、から<xref:System.ComponentModel.BindingList%601>継承するときに、カスタムコレクションに対して自動的に提供されます。
 
-次のコードでは、型指定されたコレクションにオブジェクトを追加する方法を示しています、 <xref:System.Windows.Forms.BindingSource>:
+次のコードは、 <xref:System.Windows.Forms.BindingSource>の型指定されたコレクションにオブジェクトを追加する方法を示しています。
 
 [!code-csharp[VbRaddataConnecting#5](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_3.cs)]
 [!code-vb[VbRaddataConnecting#5](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_3.vb)]
 
- 次のコードは、オブジェクトから継承する型指定されたコレクションを追加する方法を示しています<xref:System.ComponentModel.BindingList%601>:。
+次のコードは、から<xref:System.ComponentModel.BindingList%601>継承される型指定されたコレクションにオブジェクトを追加する方法を示しています。
 
 > [!NOTE]
-> この例で、`Orders`コレクションのプロパティである、`Customer`オブジェクト。
+> この例`Orders`では、コレクションは`Customer`オブジェクトのプロパティです。
 
 [!code-csharp[VbRaddataConnecting#6](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_4.cs)]
 [!code-vb[VbRaddataConnecting#6](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_4.vb)]
 
-### <a name="remove-objects-from-a-collection"></a>オブジェクトをコレクションから削除します。
+### <a name="remove-objects-from-a-collection"></a>コレクションからオブジェクトを削除する
 
-コレクションから呼び出すことによってオブジェクトを削除する、`Remove`または`RemoveAt`メソッドや、カスタム コレクション クラスの<xref:System.Windows.Forms.BindingSource>します。
+コレクションからオブジェクトを削除するには、 `Remove`カスタム`RemoveAt`コレクションクラスまたはの<xref:System.Windows.Forms.BindingSource>メソッドを呼び出します。
 
 > [!NOTE]
-> `Remove`と`RemoveAt`から継承する場合、カスタム コレクション用のメソッドが自動的に提供<xref:System.ComponentModel.BindingList%601>します。
+> メソッド`Remove`と`RemoveAt`メソッドは、から<xref:System.ComponentModel.BindingList%601>継承するときに、カスタムコレクションに対して自動的に提供されます。
 
-次のコードは、検索およびでは、型指定されたコレクションからオブジェクトを削除する方法を示しています、<xref:System.Windows.Forms.BindingSource>で、<xref:System.Windows.Forms.BindingSource.RemoveAt%2A>メソッド。
+次のコードは、 <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingSource.RemoveAt%2A>メソッドを使用して、型指定されたコレクションからオブジェクトを検索および削除する方法を示しています。
 
 [!code-csharp[VbRaddataConnecting#7](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_5.cs)]
 [!code-vb[VbRaddataConnecting#7](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_5.vb)]
 
-### <a name="display-object-data-to-users"></a>ユーザーにオブジェクト データを表示します。
+### <a name="display-object-data-to-users"></a>オブジェクトのデータをユーザーに表示する
 
-データ ソースを使用してオブジェクトを作成、データをユーザーにオブジェクトを表示する、**データ ソースの構成**ウィザードからフォームに、オブジェクト全体または個々 のプロパティをドラッグし、**データソース**ウィンドウ。
+オブジェクトのデータをユーザーに表示するには、**データソース構成**ウィザードを使用してオブジェクトデータソースを作成し、オブジェクト全体または個々のプロパティを **[データソース]** ウィンドウからフォームにドラッグします。
 
-### <a name="modify-the-data-in-objects"></a>オブジェクト内のデータを変更します。
+### <a name="modify-the-data-in-objects"></a>オブジェクトのデータを変更する
 
-Windows フォーム コントロールにデータ バインドされたカスタム オブジェクトのデータを編集するには、単に、バインドされたコントロール (または、オブジェクトのプロパティで直接) データを編集します。 データ バインディング アーキテクチャでは、オブジェクト内のデータを更新します。
+Windows フォームコントロールにデータバインドされているカスタムオブジェクト内のデータを編集するには、単にバインドされたコントロール (またはオブジェクトのプロパティで直接) のデータを編集します。 データバインディングアーキテクチャは、オブジェクト内のデータを更新します。
 
-アプリケーションには、変更の追跡と元の値に提案された変更のロールバックが必要とする場合は、オブジェクト モデルで、この機能を実装する必要があります。 どのデータ テーブルの提案された変更を追跡の例については、次を参照してください。 <xref:System.Data.DataRowState>、 <xref:System.Data.DataSet.HasChanges%2A>、および<xref:System.Data.DataTable.GetChanges%2A>します。
+アプリケーションで変更を追跡する必要がある場合、および提案された変更を元の値にロールバックする必要がある場合は、オブジェクトモデルにこの機能を実装する必要があります。 データテーブルが提案された変更を追跡する方法の<xref:System.Data.DataRowState>例につい<xref:System.Data.DataTable.GetChanges%2A>ては、「」、「」、および「」を参照してください<xref:System.Data.DataSet.HasChanges%2A>。
 
-### <a name="save-data-in-objects-back-to-the-database"></a>元のデータベースにオブジェクトにデータを保存します。
+### <a name="save-data-in-objects-back-to-the-database"></a>オブジェクトのデータをデータベースに保存する
 
-TableAdapter の DBDirect メソッドをオブジェクトから値を渡すことで、元のデータベースにデータを保存します。
+オブジェクトから TableAdapter の DBDirect メソッドに値を渡すことによって、データベースにデータを保存し直します。
 
-Visual Studio では、データベースに対して直接実行できる DBDirect メソッドを作成します。 これらのメソッドは、DataSet または DataTable オブジェクトには必要ありません。
+Visual Studio によって、データベースに対して直接実行できる DBDirect メソッドが作成されます。 これらのメソッドは、DataSet オブジェクトまたは DataTable オブジェクトを必要としません。
 
 |TableAdapter DBDirect メソッド|説明|
 | - |-----------------|
-|`TableAdapter.Insert`|個々 の列の値をメソッド パラメーターとして渡すことができるように、データベースに新しいレコードを追加します。|
-|`TableAdapter.Update`|既存のデータベース内のレコードを更新します。 元と新しい列の値は、Update メソッドは、メソッドのパラメーターとして受け取ります。 元のレコードを検索するため、元の値と新しい値は、そのレコードの更新に使用されます。<br /><br /> `TableAdapter.Update`ことで、データベースにデータセットの変更を調整するメソッドを使用しても、 <xref:System.Data.DataSet>、 <xref:System.Data.DataTable>、 <xref:System.Data.DataRow>、または配列の<xref:System.Data.DataRow>メソッドのパラメーターとして。|
-|`TableAdapter.Delete`|メソッドのパラメーターとして渡された元の列の値に基づいて、データベースから既存のレコードを削除します。|
+|`TableAdapter.Insert`|データベースに新しいレコードを追加します。これにより、個々の列の値をメソッドのパラメーターとして渡すことができます。|
+|`TableAdapter.Update`|データベース内の既存のレコードを更新します。 Update メソッドは、元の列と新しい列の値をメソッドのパラメーターとして受け取ります。 元の値は元のレコードを検索するために使用され、新しい値はそのレコードを更新するために使用されます。<br /><br /> <xref:System.Data.DataTable> <xref:System.Data.DataSet> <xref:System.Data.DataRow> <xref:System.Data.DataRow>メソッドは、メソッドパラメーターとしての、、、またはの配列を取得することによって、データセット内の変更をデータベースに戻すためにも使用されます。 `TableAdapter.Update`|
+|`TableAdapter.Delete`|メソッドパラメーターとして渡された元の列の値に基づいて、データベースから既存のレコードを削除します。|
 
-オブジェクトのコレクションからデータを保存するには、(たとえば、次のループを使用して) オブジェクトのコレクションをループします。 TableAdapter の DBDirect メソッドを使用して、各オブジェクトの値をデータベースに送信します。
+オブジェクトのコレクションからデータを保存するには、オブジェクトのコレクションをループ処理します (たとえば、for-next ループを使用します)。 TableAdapter の DBDirect メソッドを使用して、各オブジェクトの値をデータベースに送信します。
 
-次の例は、使用する方法を示します、 `TableAdapter.Insert` DBDirect メソッドを直接データベースに新しい顧客を追加します。
+次の例では、 `TableAdapter.Insert` dbdirect メソッドを使用して、新しい顧客をデータベースに直接追加する方法を示します。
 
 [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
 [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]

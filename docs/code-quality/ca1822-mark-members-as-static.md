@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5ac9aff8741654ee5799724feb09c53f588dafb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f25b74949c734921c313ae2cf00a2d217029e52
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796667"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921386"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822:メンバーを static に設定します
 
@@ -27,24 +27,24 @@ ms.locfileid: "62796667"
 |-|-|
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|
-|カテゴリ|Microsoft.Performance|
-|互換性に影響する変更点|非的なメンバーが、アセンブリの外部に表示されない場合、変更に関係なくすること。 なし - とインスタンス メンバーへのメンバーだけを変更する場合、`this`キーワード。<br /><br /> あり - インスタンスのメンバーから静的メンバーにメンバーを変更して、アセンブリの外側に表示される場合。|
+|Category|Microsoft.Performance|
+|互換性に影響する変更点|非重大-変更に関係なく、メンバーがアセンブリの外部で参照できない場合。 非互換性- `this`キーワードを使用してメンバーをインスタンスメンバーに変更するだけの場合。<br /><br /> 中断-メンバーをインスタンスメンバーから静的メンバーに変更し、アセンブリの外部から参照できる場合。|
 
 ## <a name="cause"></a>原因
- インスタンス データにアクセスしないメンバーが静的とマークされていない (内の共有[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
+インスタンスデータにアクセスしないメンバーは、static (では[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Shared) とマークされていません。
 
 ## <a name="rule-description"></a>規則の説明
- インスタンス データにアクセスしない、またはインスタンス メソッドを呼び出さないメンバーは、静的 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] では共有) としてマークできます。 メソッドを静的としてマークすると、コンパイラはこれらのメンバーに対する非仮想呼び出しサイトを出力します。 非仮想呼び出しサイトを出力すると、現在のオブジェクト ポインターが null 以外であることを確認する呼び出しごとに実行時のチェックができなくなります。 これは、パフォーマンス重視のコードの測定可能なパフォーマンスの向上を実現できます。 場合によってでは、現在のオブジェクトのインスタンスへのアクセスの失敗は、正確性の問題を表します。
+インスタンス データにアクセスしない、またはインスタンス メソッドを呼び出さないメンバーは、静的 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] では共有) としてマークできます。 メソッドを静的としてマークすると、コンパイラはこれらのメンバーに対する非仮想呼び出しサイトを出力します。 非仮想呼び出しサイトを生成すると、現在のオブジェクトポインターが null でないことを確認するために、呼び出しごとに実行時にチェックが行われなくなります。 これにより、パフォーマンスを重視するコードに対して、測定可能なパフォーマンスの向上を実現できます。 場合によっては、現在のオブジェクトインスタンスにアクセスできなかった場合、正確性の問題が発生することがあります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- 静的メンバーをマーク (で共有したり[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) または 'this' を使用して、/、該当する場合、'Me' メソッドの本文します。
+メンバーを静的 (またはで[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]共有) としてマークするか、メソッド本体で ' this '/' Me ' を使用します (該当する場合)。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- 以前にリリース済みのコード修正が重大な変更をすると、この規則からの警告を抑制しても安全です。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+以前に出荷されたコードについては、この修正プログラムが互換性に影響する変更になるという警告を抑制するのは安全です。
 
 ## <a name="related-rules"></a>関連するルール
- [CA1811:呼び出されていないプライベート コードを避ける](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811呼び出されるプライベートコードを避ける](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812:インスタンス化されていない内部クラスを回避します。](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812インスタンス内部クラスを回避する](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA 1804:使用されていないローカルを削除します](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804未使用のローカルの削除](../code-quality/ca1804-remove-unused-locals.md)

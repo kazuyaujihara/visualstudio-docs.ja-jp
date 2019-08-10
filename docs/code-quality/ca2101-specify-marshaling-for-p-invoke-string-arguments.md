@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 622097e4dd1408c46863098a8f29fe6666b64b2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1eb4c2535060f9a110d149e88ac2532e6ad1412
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808277"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921100"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101:P/Invoke 文字列引数に対してマーシャリングを指定します
 
@@ -27,24 +27,24 @@ ms.locfileid: "62808277"
 |-|-|
 |TypeName|SpecifyMarshalingForPInvokeStringArguments|
 |CheckId|CA2101|
-|カテゴリ|Microsoft.Globalization|
+|Category|Microsoft のグローバリゼーション|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- プラットフォーム呼び出しメンバーにより部分的に信頼された呼び出し元は、文字列パラメーターを持つし、文字列が明示的にマーシャ リングされません。
+プラットフォーム呼び出しメンバーは、部分的に信頼された呼び出し元を許可し、文字列パラメーターを持ち、文字列を明示的にマーシャリングしません。
 
 ## <a name="rule-description"></a>規則の説明
- Unicode から ANSI に変換することが特定の ANSI コード ページですべての Unicode 文字を表現できることができます。 *最適マッピング*の文字を表現できない文字に置き換えることによってこの問題を解決しようとしています。 選択されている文字は制御できないため、この機能の使用にはセキュリティの脆弱性を潜在的な可能性があります。 たとえば、悪意のあるコードをなど、ファイル システムの特殊文字に変換されます、特定のコード ページではない文字を含む Unicode 文字列に意図的に作成 '… ' または '/'。 特殊文字のセキュリティ チェックは、文字列が ANSI に変換される前に頻繁に発生することにも注意してください。
+Unicode から ANSI に変換する場合、特定の ANSI コードページですべての Unicode 文字を表現できるとは限りません。 *最適マッピング*では、表現できない文字の文字を置き換えることで、この問題を解決しようとします。 この機能を使用すると、選択した文字を制御できなくなる可能性があるため、セキュリティ上の脆弱性が生じる可能性があります。 たとえば、悪意のあるコードでは、特定のコードページで見つからない文字を含む Unicode 文字列を意図的に作成することができます。これは、".." などのファイルシステムの特殊文字に変換されます。 または '/'。 また、文字列が ANSI に変換される前に、特殊文字のセキュリティチェックが頻繁に行われることにも注意してください。
 
- 最適マッピングでは、非管理対象の変換では、バイトを WChar の既定値です。 最適マッピングを明示的に無効にした場合を除き、コードはこの問題のため、悪用可能なセキュリティの脆弱性を含む可能性があります。
+最も適したマッピングは、アンマネージ変換の既定値で、WChar から1M バイトまでです。 最適マッピングを明示的に無効にしない限り、コードには、この問題のために悪用可能なセキュリティ脆弱性が含まれている可能性があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、文字列データ型を明示的にマーシャ リングします。
+この規則違反を修正するには、文字列データ型を明示的にマーシャリングします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、この規則に違反し、違反を修正する方法を示しますメソッドを示します。
+次の例は、この規則に違反するメソッドを示し、違反の修正方法を示しています。
 
- [!code-csharp[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]
+[!code-csharp[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]

@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571369"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919535"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>マネージド コードの "基本デザイン ガイドライン規則" 規則セット
-Microsoft 基本デザイン ガイドライン規則ルールのセット、コードを簡単に理解して使用することを目的に使用できます。 この規則セットは、プロジェクトにライブラリ コードが含まれている場合、またはコードが簡単に維持するためのベスト プラクティスを適用する場合を含める必要があります。
+Microsoft の "基本デザインガイドライン規則" 規則セットを使用して、コードの理解と使用を容易にすることができます。 この規則セットは、プロジェクトにライブラリコードが含まれている場合や、保守が簡単なコードにベストプラクティスを適用する場合に使用してください。
 
- 基本のデザイン ガイドライン規則には、Microsoft 最小推奨規則のルール セット内のすべての規則が含まれます。 最小の規則の一覧は、次を参照してください。[マネージ推奨規則ルールセットのマネージ コードの](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)します。
+基本的な設計ガイドラインの規則には、Microsoft の最小の規則の規則セット内のすべての規則が含まれます。 最小規則の一覧については、「マネージ[コードのマネージ推奨規則の規則セット](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)」を参照してください。
 
- 次の表では、すべての Microsoft 基本デザイン ガイドライン規則のルール セット内の規則について説明します。
+次の表では、Microsoft 基本デザインガイドライン規則の規則セットに含まれるすべての規則について説明します。
 
 |ルール|説明|
 |----------|-----------------|
@@ -64,7 +64,7 @@ Microsoft 基本デザイン ガイドライン規則ルールのセット、コ
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|透過的メソッドは、検証可能な IL のみを含まなければならない|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|透過的メソッドは、SuppressUnmanagedCodeSecurity 属性を持つメソッドを呼び出してはならない|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|透過的コードは、セキュリティ上重要な項目を参照してはならない|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|透過的メソッドは、Linkdemand を満たしていませんする必要があります。|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|透過的メソッドは Linkdemand を満たしてはならない|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|型は、基本型およびインターフェイスと同程度以上、重要でなければならない|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|透過コードは、セキュリティ アサートを使用してはならない|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない|
@@ -87,25 +87,25 @@ Microsoft 基本デザイン ガイドライン規則ルールのセット、コ
 |[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|書式設定メソッドに正しい引数を提供|
 |[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|NaN に対して正しくテストします|
 |[CA1000](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|ジェネリック型の静的メンバーを宣言しません|
-|[CA 1002](../code-quality/ca1002-do-not-expose-generic-lists.md)|ジェネリック リストを公開しません|
-|[CA 1003](../code-quality/ca1003-use-generic-event-handler-instances.md)|汎用イベント ハンドラーのインスタンスを使用します|
-|[CA 1004](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|ジェネリック メソッドは型パラメーターを指定しなければなりません|
+|[CA1002](../code-quality/ca1002-do-not-expose-generic-lists.md)|ジェネリック リストを公開しません|
+|[CA1003](../code-quality/ca1003-use-generic-event-handler-instances.md)|汎用イベント ハンドラーのインスタンスを使用します|
+|[CA1004](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|ジェネリック メソッドは型パラメーターを指定しなければなりません|
 |[CA1005](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)|ジェネリック型でパラメーターを使用しすぎないでください|
-|[CA 1006](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)|ジェネリック型をメンバー シグネチャ内で入れ子にしません|
+|[CA1006](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)|ジェネリック型をメンバー シグネチャ内で入れ子にしません|
 |[CA1007](../code-quality/ca1007-use-generics-where-appropriate.md)|適切な場所にジェネリックを使用します|
 |[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|Enums は 0 値を含んでいなければなりません|
-|[CA 1010](../code-quality/ca1010-collections-should-implement-generic-interface.md)|コレクションは、ジェネリック インターフェイスを実装しなければなりません|
-|[CA 1011](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)|基本型をパラメーターとして渡すことを考慮します|
-|[CA 1012](../code-quality/ca1012-abstract-types-should-not-have-constructors.md)|抽象型にはコンストラクターを含めません|
+|[CA1010](../code-quality/ca1010-collections-should-implement-generic-interface.md)|コレクションは、ジェネリック インターフェイスを実装しなければなりません|
+|[CA1011](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)|基本型をパラメーターとして渡すことを考慮します|
+|[CA1012](../code-quality/ca1012-abstract-types-should-not-have-constructors.md)|抽象型にはコンストラクターを含めません|
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|オーバーロードする加算および減算で、演算子 equals をオーバーロードします|
-|[CA 1014](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)|アセンブリに CLSCompliantAttribute を設定します|
-|[CA 1017](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)|アセンブリに ComVisibleAttribute を設定します|
-|[CA 1018](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)|属性を AttributeUsageAttribute に設定します|
-|[CA 1019](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)|属性引数にアクセサーを定義します|
+|[CA1014](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)|アセンブリに CLSCompliantAttribute を設定します|
+|[CA1017](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)|アセンブリに ComVisibleAttribute を設定します|
+|[CA1018](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)|属性を AttributeUsageAttribute に設定します|
+|[CA1019](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)|属性引数にアクセサーを定義します|
 |[CA1023](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)|インデクサーを多次元にすることはできません|
-|[CA 1024](../code-quality/ca1024-use-properties-where-appropriate.md)|適切な場所にプロパティを使用します|
-|[CA 1025](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)|反復する引数を params 配列で置き換えます|
-|[CA 1026](../code-quality/ca1026-default-parameters-should-not-be-used.md)|既定パラメーターを使用することはできません|
+|[CA1024](../code-quality/ca1024-use-properties-where-appropriate.md)|適切な場所にプロパティを使用します|
+|[CA1025](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)|反復する引数を params 配列で置き換えます|
+|[CA1026](../code-quality/ca1026-default-parameters-should-not-be-used.md)|既定パラメーターを使用することはできません|
 |[CA1027](../code-quality/ca1027-mark-enums-with-flagsattribute.md)|列挙型を FlagsAttribute に設定します|
 |[CA1028](../code-quality/ca1028-enum-storage-should-be-int32.md)|列挙ストレージは Int32 でなければなりません|
 |[CA1030](../code-quality/ca1030-use-events-where-appropriate.md)|適切な場所にイベントを使用します|
@@ -117,18 +117,18 @@ Microsoft 基本デザイン ガイドライン規則ルールのセット、コ
 |[CA1038](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)|列挙子は厳密に型指定されていなければなりません|
 |[CA1039](../code-quality/ca1039-lists-are-strongly-typed.md)|リストは厳密に型指定されています|
 |[CA1041](../code-quality/ca1041-provide-obsoleteattribute-message.md)|ObsoleteAttribute メッセージを指定します|
-|[CA 1043](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)|インデクサーには整数または文字列引数を使用します|
-|[CA 1044](../code-quality/ca1044-properties-should-not-be-write-only.md)|プロパティを書き込み専用にすることはできません|
+|[CA1043](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)|インデクサーには整数または文字列引数を使用します|
+|[CA1044](../code-quality/ca1044-properties-should-not-be-write-only.md)|プロパティを書き込み専用にすることはできません|
 |[CA1046](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)|参照型で、演算子 equals をオーバーロードしないでください|
-|[CA 1047](../code-quality/ca1047-do-not-declare-protected-members-in-sealed-types.md)|シールド型の保護されたメンバーを宣言しません|
-|[CA 1048](../code-quality/ca1048-do-not-declare-virtual-members-in-sealed-types.md)|シールド型の仮想メンバーを宣言しません|
-|[CA 1050](../code-quality/ca1050-declare-types-in-namespaces.md)|名前空間で型を宣言します|
-|[CA 1051](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)|参照可能なインスタンス フィールドを宣言しません|
+|[CA1047: SEALED](../code-quality/ca1047-do-not-declare-protected-members-in-sealed-types.md)|シールド型の保護されたメンバーを宣言しません|
+|[CA1048: SEALED](../code-quality/ca1048-do-not-declare-virtual-members-in-sealed-types.md)|シールド型の仮想メンバーを宣言しません|
+|[CA1050](../code-quality/ca1050-declare-types-in-namespaces.md)|名前空間で型を宣言します|
+|[CA1051](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)|参照可能なインスタンス フィールドを宣言しません|
 |[CA1052](../code-quality/ca1052-static-holder-types-should-be-sealed.md)|スタティック ホルダー型はシールドされていなければなりません|
 |[CA1053](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)|スタティック ホルダー型はコンストラクターを含むことはできません|
 |[CA1054](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|URI パラメーターを文字列にすることはできません|
-|[CA 1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|URI 戻り値を文字列にすることはできません|
-|[CA 1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|URI プロパティを文字列にすることはできません|
+|[CA1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|URI 戻り値を文字列にすることはできません|
+|[CA1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|URI プロパティを文字列にすることはできません|
 |[CA1057](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|文字列 URI オーバーロードが、System.Uri オーバーロードを呼び出します|
 |[CA1058](../code-quality/ca1058-types-should-not-extend-certain-base-types.md)|型は、一定の基本型を拡張することはできません|
 |[CA1059](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)|メンバーは特定の具象型を公開できません|
@@ -137,16 +137,16 @@ Microsoft 基本デザイン ガイドライン規則ルールのセット、コ
 |[CA1502](../code-quality/ca1502-avoid-excessive-complexity.md)|メソッドの実装を複雑にしすぎないでください|
 |[CA1708](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|識別子は、大文字と小文字の区別以外にも相違していなければなりません|
 |[CA1716](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|識別子はキーワードと同一にすることはできません|
-|[CA 1801](../code-quality/ca1801-review-unused-parameters.md)|使用されていないパラメーターの確認|
-|[CA 1804](../code-quality/ca1804-remove-unused-locals.md)|使用されていないローカルを削除します|
+|[CA1801](../code-quality/ca1801-review-unused-parameters.md)|使用されていないパラメーターの確認|
+|[CA1804](../code-quality/ca1804-remove-unused-locals.md)|使用されていないローカルを削除します|
 |[CA1809](../code-quality/ca1809-avoid-excessive-locals.md)|ローカルを使用しすぎないでください|
-|[CA 1810](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)|参照型の静的フィールドをインラインで初期化します|
+|[CA1810](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)|参照型の静的フィールドをインラインで初期化します|
 |[CA1811](../code-quality/ca1811-avoid-uncalled-private-code.md)|呼び出されていないプライベート コードを使用しません|
 |[CA1812](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)|インスタンス化されていない内部クラスを使用しません|
 |[CA1813](../code-quality/ca1813-avoid-unsealed-attributes.md)|アンシールド属性を使用しません|
 |[CA1814](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md)|複数次元の配列ではなくジャグ配列を使用します|
 |[CA1815](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)|equals および operator equals を値型でオーバーライドします|
-|[CA 1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|プロパティは、配列を返すことはできません|
+|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|プロパティは、配列を返すことはできません|
 |[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|文字列の長さを使用して空の文字列をテストします|
 |[CA1822](../code-quality/ca1822-mark-members-as-static.md)|メンバーを static に設定します|
 |[CA1823](../code-quality/ca1823-avoid-unused-private-fields.md)|使用されていないプライベート フィールドを使用しません|

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f48f9cba146251aee1a58ffc7a3403ed899c4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bdb8ef315c9702cc10352368aba7202a8f29f7f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541468"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920003"
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241:書式設定メソッドに正しい引数を提供
 
@@ -31,23 +31,23 @@ ms.locfileid: "62541468"
 |-|-|
 |TypeName|ProvideCorrectArgumentsToFormattingMethods|
 |CheckId|CA2241|
-|カテゴリ|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- `format`などのメソッドに渡される引数を文字列<xref:System.Console.WriteLine%2A>、 <xref:System.Console.Write%2A>、または<xref:System.String.Format%2A?displayProperty=fullName>に各オブジェクトの引数、またはその逆に対応する書式指定項目が含まれていません。
+、、などのメソッドに渡された文字列引数に、各オブジェクト引数に対応する書式項目が含まれていません。また、その逆も同様です。`format` <xref:System.Console.Write%2A> <xref:System.Console.WriteLine%2A> <xref:System.String.Format%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則の説明
- などのメソッドに引数<xref:System.Console.WriteLine%2A>、 <xref:System.Console.Write%2A>、および<xref:System.String.Format%2A>続くいくつかの書式指定文字列から成る<xref:System.Object?displayProperty=fullName>インスタンス。 テキストと、フォームの埋め込みの書式項目の書式指定文字列で構成されます {インデックス [, の配置] [: formatString]} です。 'インデックス' は、書式設定するオブジェクトの中を示す 0 から始まる整数です。 オブジェクトには、書式指定文字列に対応するインデックスがない、オブジェクトは無視されます。 'インデックス' で指定したオブジェクトが存在しない場合、<xref:System.FormatException?displayProperty=fullName>が実行時にスローされます。
+<xref:System.Console.WriteLine%2A> <xref:System.Object?displayProperty=fullName> 、<xref:System.String.Format%2A> 、などのメソッドへの引数は、書式指定文字列の後に複数のインスタンスが続く形式で構成されます。 <xref:System.Console.Write%2A> 書式指定文字列は、{index [, alignment] [: formatString]} という形式のテキストと埋め込み書式項目で構成されます。 ' index ' は、どのオブジェクトを書式設定するかを示す、0から始まる整数です。 オブジェクトの書式指定文字列に対応するインデックスがない場合、オブジェクトは無視されます。 ' Index ' によって指定されたオブジェクトが存在<xref:System.FormatException?displayProperty=fullName>しない場合は、実行時にがスローされます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則の違反を修正するには、書式指定項目は、各オブジェクトの引数と各書式項目のオブジェクトの引数を提供します。
+この規則違反を修正するには、各オブジェクト引数に書式項目を指定し、各書式指定項目にオブジェクト引数を指定します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、ルールの 2 つの違反を示します。
+次の例は、規則の2つの違反を示しています。
 
- [!code-vb[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/VisualBasic/ca2241-provide-correct-arguments-to-formatting-methods_1.vb)]
- [!code-csharp[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/CSharp/ca2241-provide-correct-arguments-to-formatting-methods_1.cs)]
+[!code-vb[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/VisualBasic/ca2241-provide-correct-arguments-to-formatting-methods_1.vb)]
+[!code-csharp[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/CSharp/ca2241-provide-correct-arguments-to-formatting-methods_1.cs)]

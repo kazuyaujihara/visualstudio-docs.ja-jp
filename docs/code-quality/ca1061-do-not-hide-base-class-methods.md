@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faa225178a50be080f92a728998e914025c17168
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f13ac29028472384cfadbf9c397e578f6509670
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788661"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922421"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061:基底クラス メソッドを非表示にしません
 
@@ -27,22 +27,22 @@ ms.locfileid: "62788661"
 |-|-|
 |TypeName|DoNotHideBaseClassMethods|
 |CheckId|CA1061|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 派生型は、基本メソッドのいずれかと同じ数のパラメーターと同じ名前のメソッドを宣言します。1 つまたは複数のパラメーターはベース メソッドの対応するパラメーターの基本型です。残りのパラメーターは、基本メソッドの対応するパラメーターと同じ型であります。
+派生型は、その基本メソッドの1つと同じ名前とパラメーター数を持つメソッドを宣言します。1つ以上のパラメーターが、基本メソッドの対応するパラメーターの基本型です。また、その他のパラメーターには、基本メソッドの対応するパラメーターと同じ型があります。
 
 ## <a name="rule-description"></a>規則の説明
- 派生メソッドのパラメーター シグネチャより弱い派生基底メソッドのパラメーター シグネチャ内の対応する型よりも型のみが異なる場合に、派生型で同じ名前のメソッドで基本データ型のメソッドは表示されません。
+派生メソッドのパラメーターシグネチャが、基本メソッドのパラメーターシグネチャ内の対応する型よりも弱い派生型である場合、基本型のメソッドは派生型の同じ名前のメソッドによって非表示になります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則の違反を修正するには、削除、メソッドの名前を変更またはメソッドは基本メソッドを隠ぺいしないように、パラメーターのシグネチャを変更します。
+この規則違反を修正するには、メソッドを削除するか名前を変更するか、またはメソッドが基本メソッドを非表示にしないようにパラメーターシグネチャを変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、規則に違反するメソッドを示します。
+次の例は、規則に違反するメソッドを示しています。
 
- [!code-csharp[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]
+[!code-csharp[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]

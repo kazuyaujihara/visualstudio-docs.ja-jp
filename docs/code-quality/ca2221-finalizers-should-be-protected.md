@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3da7f0da3901511e0f14e48b3ff0500928e3774
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e88f22f25ff0620a88685dee93fd5658c302db74
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806629"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920239"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221:ファイナライザーは保護されなければなりません
 
@@ -31,19 +31,19 @@ ms.locfileid: "62806629"
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- パブリック型では、ファミリ (保護された) アクセスを指定していないファイナライザーを実装します。
+パブリック型は、ファミリ (保護された) アクセスを指定しないファイナライザーを実装します。
 
 ## <a name="rule-description"></a>規則の説明
- ファイナライザーは、ファミリ アクセス修飾子を使用する必要があります。 このルールは、c#、Visual Basic、および Visual C コンパイラによって強制されます。
+ファイナライザーは、ファミリ アクセス修飾子を使用する必要があります。 この規則は、 C#、Visual Basic、および Visual C++コンパイラによって適用されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を解決するには、ファミリ アクセスできるように、ファイナライザーを変更します。
+この規則違反を修正するには、ファイナライザーをファミリアクセス可能に変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 高レベルの .NET 言語でこのルールに違反することはできません。Microsoft Intermediate Language を作成している場合は、違反することができます。
+この規則には、上位レベルの .NET 言語では違反できません。Microsoft 中間言語を記述している場合は、違反する可能性があります。
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================

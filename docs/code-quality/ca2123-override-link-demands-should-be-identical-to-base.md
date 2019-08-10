@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52959279bca5aa0f86722050f6118f64997a901d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ecc30f3fe16b283c0eb9cc1f369458bb1d7f952
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545052"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920809"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123:オーバーライドのリンク要求はベースと同一でなければなりません
 
@@ -27,27 +27,27 @@ ms.locfileid: "62545052"
 |-|-|
 |TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|
 |CheckId|CA2123|
-|カテゴリ|Microsoft.Security|
+|Category|Microsoft.Security|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- パブリック型の public または protected のメソッドのメソッドをオーバーライドまたはインターフェイスを実装し、同じではありません[リンク確認要求](/dotnet/framework/misc/link-demands)インターフェイスまたは仮想メソッドとします。
+パブリック型またはプロテクトメソッドがメソッドをオーバーライドしているか、インターフェイスを実装しています。また、インターフェイスまたは仮想メソッドと同じ[リンク確認要求](/dotnet/framework/misc/link-demands)がありません。
 
 ## <a name="rule-description"></a>規則の説明
- この規則は、メソッドをその基本メソッド (別の型のインターフェイスまたは仮想メソッド) とマッチングし、それぞれについてリンク確認要求を比較します。 メソッドまたは基本メソッドのいずれかがリンク確認要求し、もう一方にない場合は、違反が報告されます。
+この規則は、メソッドをその基本メソッド (別の型のインターフェイスまたは仮想メソッド) とマッチングし、それぞれについてリンク確認要求を比較します。 メソッドまたは基本メソッドにリンク確認要求があり、もう一方のメソッドではない場合、違反が報告されます。
 
- この規則に違反すると、悪意のある呼び出し元は、保護されていないメソッドを呼び出すことによって単なるリンク確認要求をバイパスできます。
+このルールに違反した場合、悪意のある呼び出し元は、セキュリティで保護されていないメソッドを呼び出すだけで、リンク確認要求をバイパスできます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、メソッドをオーバーライドまたは実装する同じリンク確認要求を適用します。 それができない場合は、完全な要求を持つメソッドをマークまたは属性をすべて削除します。
+この規則違反を修正するには、オーバーライドメソッドまたは実装に同じリンク確認要求を適用します。 これが不可能な場合は、メソッドに完全な要求をマークするか、属性を完全に削除します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、このルールのさまざまな違反を示します。
+次の例は、このルールのさまざまな違反を示しています。
 
- [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
+[!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
 
 ## <a name="see-also"></a>関連項目
 

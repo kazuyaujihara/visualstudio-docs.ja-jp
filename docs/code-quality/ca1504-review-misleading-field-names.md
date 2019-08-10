@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c58a0a27c11aea2954d4950b742a8928f98732e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df6ab704c2dfdbf8ebdf8eb42f56d8d64600736f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546324"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921827"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504:紛らわしいフィールド名を確認します
 
@@ -27,17 +27,17 @@ ms.locfileid: "62546324"
 |-|-|
 |TypeName|ReviewMisleadingFieldNames|
 |CheckId|CA1504|
-|カテゴリ|Microsoft.Maintainability|
+|Category|Microsoft の保守容易性|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- インスタンス フィールドの名前の名前または「s _」で始まり、 `static` (`Shared`で[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) フィールドが「m _」で開始します。
+インスタンスフィールドの名前が "s_" で始まるか、または`static` (`Shared`内[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) フィールドの名前が "m_" で始まる。
 
 ## <a name="rule-description"></a>規則の説明
- 「S _」で始まるフィールド名は、多くのユーザーによって静的データに関連付けられます。 同様に、「m _」で始まるフィールド名は、インスタンス (メンバー) のデータに関連付けられます。 保守が簡単なコードは、名は、一般的に使用される規則に従う必要があります。
+"S_" で始まるフィールド名は、多くのユーザーによって静的データに関連付けられています。 同様に、"m_" で始まるフィールド名は、インスタンス (メンバー) データに関連付けられています。 コードを保守しやすくするために、一般的に使用される規則に従う必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、適切なプレフィックスを使用して、フィールド名を変更します。 または、追加または削除して、現在のサフィックスと一致するフィールドを変更、`static`修飾子。
+この規則違反を修正するには、適切なプレフィックスを使用してフィールドの名前を変更します。 または、 `static`修飾子を追加または削除して、フィールドが現在のサフィックスに一致するようにします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。

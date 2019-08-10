@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8d8b5b522f805bd7e8826cea5ced394c50064f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06fe8d4fbd4def14bfb8a24f4f211a121c809930
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546675"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922240"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308:文字列を大文字に標準化します
 
@@ -27,20 +27,20 @@ ms.locfileid: "62546675"
 |-|-|
 |TypeName|NormalizeStringsToUppercase|
 |CheckId|CA1308|
-|カテゴリ|Microsoft.Globalization|
+|Category|Microsoft のグローバリゼーション|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- 操作は、小文字の文字列を正規化します。
+操作は、文字列を小文字に正規化します。
 
 ## <a name="rule-description"></a>規則の説明
- 文字列は大文字に正規化する必要があります。 少数の文字を小文字に変換されますが、ラウンド トリップを行うことはできません。 ラウンド トリップを行うには、文字変換 1 つのロケールから、文字データを異なる方法で表す別のロケールに正確にするための手段は、変換後の文字から、元の文字を取得します。
+文字列は大文字に正規化する必要があります。 小文字に変換された小さな文字グループは、ラウンドトリップを行うことができません。 ラウンドトリップを行うには、あるロケールから文字データを表す別のロケールに文字を変換し、変換された文字から元の文字を正確に取得することを意味します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- 文字列を変換できるように、文字列を小文字に変換する操作を変更する代わりに大文字にします。 たとえば、`String.ToLower(CultureInfo.InvariantCulture)` を `String.ToUpper(CultureInfo.InvariantCulture)` に変更します。
+文字列を小文字に変換する操作を変更して、文字列を大文字に変換します。 たとえば、`String.ToLower(CultureInfo.InvariantCulture)` を `String.ToUpper(CultureInfo.InvariantCulture)` に変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- (たとえば、UI に表示している場合) の結果に基づいてセキュリティに関する決定を行わない場合に警告メッセージを安全になります。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+結果に基づいてセキュリティを決定しない場合 (たとえば、UI に表示する場合)、警告メッセージを抑制するのは安全です。
 
 ## <a name="see-also"></a>関連項目
- [グローバリゼーションに関する警告](../code-quality/globalization-warnings.md)
+[グローバリゼーションに関する警告](../code-quality/globalization-warnings.md)

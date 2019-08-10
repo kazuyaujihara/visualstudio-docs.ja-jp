@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b00403af731439ecef4667c632e53b52670afff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d2caeb78af5fed0c74c02c6e3f578fa34e765355
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796693"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920372"
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207:値型のスタティック フィールドのインラインを初期化します
 
@@ -31,18 +31,18 @@ ms.locfileid: "62796693"
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- 値型では、明示的な静的コンス トラクターを宣言します。
+値型は、明示的な静的コンストラクターを宣言します。
 
 ## <a name="rule-description"></a>規則の説明
- 値型が宣言されている場合、すべての値型フィールドが 0 に設定され、すべての参照型フィールドに設定は、既定の初期化が行われる`null`(`Nothing` Visual Basic で)。 明示的な静的コンス トラクターを実行して、インスタンス コンス トラクターにのみ保証されます。 または、型の静的メンバーが呼び出されます。 そのため、インスタンス コンス トラクターを呼び出さずに、型が作成される場合、静的コンス トラクターを実行する保証されません。
+値型が宣言されている場合、すべての値型フィールドがゼロに設定され、すべての参照型フィールドが ( `null` `Nothing` Visual Basic) に設定されている既定の初期化が行われます。 明示的な静的コンストラクターは、その型のインスタンスコンストラクターまたは静的メンバーが呼び出される前にのみ実行されることが保証されます。 したがって、インスタンスコンストラクターを呼び出さずに型が作成された場合、静的コンストラクターの実行は保証されません。
 
- C# および Visual Basic のコンパイラが追加するかどうかは、すべての静的データが初期化されたインラインと明示的な静的コンス トラクターが宣言されていない、 `beforefieldinit` MSIL クラスの定義にフラグ。 コンパイラでは、静的な初期化コードを含むプライベート静的コンス トラクターも追加します。 このプライベート静的コンス トラクター、型の静的フィールドにアクセスする前に実行することが保証されます。
+すべての静的データがインラインで初期化され、明示的な静的コンストラクター C#が宣言されて`beforefieldinit`いない場合、および Visual Basic コンパイラは、このフラグを MSIL クラス定義に追加します。 コンパイラは、静的初期化コードを含むプライベートな静的コンストラクターも追加します。 このプライベート静的コンストラクターは、型の静的フィールドにアクセスする前に実行することが保証されています。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- 解決するには、は、この規則違反は、宣言されていて、静的コンス トラクターを削除するときに、すべての静的データを初期化します。
+この規則違反を修正するには、宣言時にすべての静的データを初期化し、静的コンストラクターを削除します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="related-rules"></a>関連するルール
- [CA 1810:参照型の静的フィールドのインラインを初期化します](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)
+[CA1810参照型の静的フィールドをインラインで初期化します](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)

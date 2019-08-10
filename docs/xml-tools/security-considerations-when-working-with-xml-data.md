@@ -8,32 +8,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9d3c3e8ddffb72b04a9ca2fc0ec4df5eaac150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5fe4ec69f879478566cce8d077bb66b34da86f3d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966706"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926768"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>XML データを使用する場合のセキュリティに関する考慮事項
 
-このトピックでは、XML エディターや XSLT デバッガーを使用する際に理解する必要があるセキュリティの問題について説明します。
+このトピックでは、XML エディターまたは XSLT デバッガーを使用するときに理解しておく必要があるセキュリティの問題について説明します。
 
 ## <a name="xml-editor"></a>XML エディター
 
- XML エディターは Visual Studio テキスト エディターに基づいています。 XML エディターは通常、<xref:System.Xml> クラスと <xref:System.Xml.Xsl> クラスに依存して XML プロセスを処理します。
+XML エディターは、Visual Studio のテキストエディターに基づいています。 XML エディターは通常、<xref:System.Xml> クラスと <xref:System.Xml.Xsl> クラスに依存して XML プロセスを処理します。
 
-- XSLT 変換は、新しいアプリケーション ドメインで実行されます。 XSLT 変換は*サンド ボックス化された*; XSLT スタイル シートがある場所に基づいて制限されたアクセス許可を決定する、コンピューターのコード アクセス セキュリティ ポリシーを使用する、します。 たとえば、インターネット上にあるスタイル シートは最も制限されたアクセス許可を持ち、ユーザーのハード ディスクにコピーされているスタイル シートは "完全な信頼" で実行されます。
+- XSLT 変換は、新しいアプリケーション ドメインで実行されます。 XSLT 変換は*サンドボックス*化されます。つまり、XSLT スタイルシートが配置されている場所に基づいて制限されたアクセス許可を決定するために、コンピューターのコードアクセスセキュリティポリシーが使用されます。 たとえば、インターネット上にあるスタイル シートは最も制限されたアクセス許可を持ち、ユーザーのハード ディスクにコピーされているスタイル シートは "完全な信頼" で実行されます。
 
 - <xref:System.Xml.Xsl.XslCompiledTransform> クラスは、XSLT を Microsoft Intermediate Language (MSIL) にコンパイルし、実行時の処理速度を高めるために使用されます。
 
-- カタログ ファイルで外部の場所を指し示すスキーマは、XML エディターが初めて読み込まれるときに自動的にダウンロードします。 <xref:System.Xml.Schema.XmlSchemaSet> クラスは、スキーマをコンパイルするために使用されます。 XML エディターに付属するカタログ ファイルには、外部のスキーマへのリンクはありません。 ユーザーは、XML エディターでスキーマ ファイルをダウンロードする前に、外部スキーマへの参照を明示的に追加します。 HTTP ダウンロードを使用して無効にできる、**その他のツール オプション**XML エディターのページ。
+- カタログファイル内の外部の場所を指すスキーマは、XML エディターの初回読み込み時に自動的にダウンロードされます。 <xref:System.Xml.Schema.XmlSchemaSet> クラスは、スキーマをコンパイルするために使用されます。 XML エディターに付属のカタログファイルには、外部スキーマへのリンクがありません。 ユーザーは、XML エディターがスキーマファイルをダウンロードする前に、外部スキーマへの参照を明示的に追加する必要があります。 HTTP ダウンロードは、XML エディターの **[その他のツールオプション]** ページで無効にすることができます。
 
-- XML エディターを使用して、<xref:System.Net>クラス スキーマをダウンロードするには
+- XML エディターは、 <xref:System.Net>クラスを使用してスキーマをダウンロードします。
 
 ## <a name="xslt-debugger"></a>XSLT デバッガー
 
- XSLT デバッガーは、Visual Studio のマネージド デバッグ エンジンと、<xref:System.Xml> および <xref:System.Xml.Xsl> 名前空間のクラスを使用します。
+XSLT デバッガーは、Visual Studio のマネージド デバッグ エンジンと、<xref:System.Xml> および <xref:System.Xml.Xsl> 名前空間のクラスを使用します。
 
 - XSLT デバッガーは、それぞれの XSLT 変換をサンドボックスで保護されたアプリケーション ドメインで実行します。 コンピューターのコード アクセスに関するセキュリティ ポリシーを使用し、XSLT スタイル シートが置かれている場所に基づいて、アクセス許可の制限が決定されます。 たとえば、インターネット上にあるスタイル シートは最も制限されたアクセス許可を持ち、ユーザーのハード ディスクにコピーされているスタイル シートは "完全な信頼" で実行されます。
 
