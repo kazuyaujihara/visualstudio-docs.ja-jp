@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3aabd73a3c234be61cecdf68fbc92fc7e52883e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce2da2c1ff5b2f74d8b4d6341050c1895b68955a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797336"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922295"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307:StringComparison の指定
 
@@ -27,24 +27,24 @@ ms.locfileid: "62797336"
 |-|-|
 |TypeName|SpecifyStringComparison|
 |CheckId|CA1307|
-|カテゴリ|Microsoft.Globalization|
+|Category|Microsoft のグローバリゼーション|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- 文字列比較操作が設定されていないメソッドのオーバー ロードを使用して、<xref:System.StringComparison>パラメーター。
+文字列比較操作では、パラメーターを<xref:System.StringComparison>設定しないメソッドオーバーロードが使用されています。
 
 ## <a name="rule-description"></a>規則の説明
- 多くの文字列操作、最も重要な<xref:System.String.Compare%2A>と<xref:System.String.Equals%2A>メソッドを受け入れるオーバー ロードを提供する、<xref:System.StringComparison>列挙値をパラメーターとして。
+多くの<xref:System.String.Compare%2A>文字列操作 (最も重要な<xref:System.String.Equals%2A>メソッドとメソッド) は、列挙値<xref:System.StringComparison>をパラメーターとして受け取るオーバーロードを提供します。
 
- オーバー ロードされるたびに行うためにかかるが存在する場合、<xref:System.StringComparison>パラメーターをこのパラメーターを受け取らないオーバー ロードではなくために使用する必要があります。 コードはこのパラメーターを明示的に設定するではわかりやすくなり、保守が簡単に多くの場合です。
+パラメーターを<xref:System.StringComparison>受け取るオーバーロードが存在する場合は常に、このパラメーターを受け取らないオーバーロードの代わりに使用する必要があります。 このパラメーターを明示的に設定することにより、コードを明確にし、保守を容易にすることができます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を解決するを受け取るオーバー ロードする文字列比較メソッドを変更、<xref:System.StringComparison>列挙体をパラメーターとして。 例: 変更`String.Compare(str1, str2)`に`String.Compare(str1, str2, StringComparison.Ordinal)`します。
+この規則違反を修正するには、 <xref:System.StringComparison>列挙体をパラメーターとして受け入れるオーバーロードに文字列比較メソッドを変更します。 例: をに`String.Compare(str1, str2)` `String.Compare(str1, str2, StringComparison.Ordinal)`変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- 限定されたローカル ユーザーのためのものでは、ライブラリまたはアプリケーションと、ためにローカライズされないときは、この規則による警告を非表示にも安全です。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+ライブラリまたはアプリケーションが限定されたローカルユーザーを対象としていて、ローカライズされない場合は、この規則による警告を抑制することが安全です。
 
 ## <a name="see-also"></a>関連項目
 
 - [グローバリゼーションに関する警告](../code-quality/globalization-warnings.md)
-- [CA1309:StringComparison を使用します](../code-quality/ca1309-use-ordinal-stringcomparison.md)
+- [CA1309序数の StringComparison を使用する](../code-quality/ca1309-use-ordinal-stringcomparison.md)

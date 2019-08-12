@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c35a15e9ce1468edd2882396192a27a3fcc2c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796800"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920799"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124:脆弱性のある finally 句を外側の try でラップします
 
@@ -27,23 +27,23 @@ ms.locfileid: "62796800"
 |-|-|
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
-|カテゴリ|Microsoft.Security|
+|Category|Microsoft.Security|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- バージョン 1.0 および 1.1 の .NET Framework では、パブリックまたはプロテクト メソッドを含む、 `try` / `catch` / `finally`ブロックします。 `finally`ブロックをセキュリティの状態をリセットしてで囲まれていない、`finally`ブロックします。
+.NET Framework のバージョン1.0 および1.1 では、パブリックメソッドまたはプロテクトメソッドに`try` `finally`ブロックが含まれてい/ `catch` /ます。 ブロックがセキュリティ状態をリセットしているように見えます`finally`が、ブロックで囲まれていません。 `finally`
 
 ## <a name="rule-description"></a>規則の説明
- このルールでは検索`try` / `finally`をバージョン 1.0 および 1.1 の脆弱性のある悪意のある例外フィルターが呼び出し履歴に存在する可能性がある .NET Framework を対象とするコードをブロックします。 偽装などの機密情報の操作が、try ブロックで発生して、例外がスローされた、フィルターが実行する前に、`finally`ブロックします。 権限借用の使用例、フィルターが権限を借用したユーザーとして実行されていることを意味します。 フィルターは、現在、Visual Basic でのみ実装できます。
+このルールは`try` 、コールスタックに存在する悪意のある例外フィルターに対して脆弱である可能性がある .NET Framework のバージョン1.0 および1.1 を対象とするコード内のブロックを検索/ `finally`します。 偽装などの機密性の高い操作が try ブロックで発生し、例外がスローされた場合は、ブロック`finally`の前にフィルターを実行できます。 偽装の例では、これは、フィルターが権限を借用したユーザーとして実行されることを意味します。 現在、フィルターは Visual Basic のみで実装できます。
 
 > [!NOTE]
-> バージョンの .NET Framework 2.0 以降では、ランタイムが自動的に保護する、 `try` / `catch` /  `finally`メソッド内で直接、リセットが発生した場合、悪意のある例外フィルターを禁止します。例外ブロックが含まれています。
+> .NET Framework のバージョン2.0 以降では、リセットがメソッド内で直接`try`発生した場合、ランタイムは悪意のある例外フィルターからブロックを/  / `catch` `finally`自動的に保護します。例外ブロックを格納します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- 配置、ラップされていない`try` / `finally` try ブロックの外側でします。 次の 2 つ目の例を参照してください。 これにより、`finally`フィルター コードの前に実行します。
+ラップ`try` されて`finally`いないを外側の try ブロックに配置します。 / 次の2番目の例を参照してください。 これにより`finally` 、は、フィルターコードの前にを強制的に実行します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="pseudo-code-example"></a>擬似コードの例
 
@@ -63,7 +63,7 @@ finally {
 }
 ```
 
-次の擬似コードでは、コードを保護して、このルールを満たすために使用できるパターンを示します。
+次の擬似コードは、コードを保護し、この規則を満たすために使用できるパターンを示しています。
 
 ```csharp
 try {

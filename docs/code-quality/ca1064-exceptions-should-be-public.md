@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8196d4c48bfb93735b62c6f24cb08ec462e64c91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b17ccfe66875588ac19c587ff6fcbd889d1e6a44
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788582"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922317"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064:例外は public として設定する必要があります
 
@@ -27,24 +27,24 @@ ms.locfileid: "62788582"
 |-|-|
 |TypeName|ExceptionsShouldBePublic|
 |CheckId|CA1064|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- パブリックでない例外がから直接派生<xref:System.Exception>、 <xref:System.SystemException>、または<xref:System.ApplicationException>します。
+パブリックでない例外は、 <xref:System.Exception> <xref:System.SystemException>、、または<xref:System.ApplicationException>から直接派生します。
 
 ## <a name="rule-description"></a>規則の説明
- 内部例外は、独自の内部スコープ内で表示されるだけです。 内部スコープの外側にある例外は、基本例外を使用しなければキャッチできません。 場合、内部例外から継承<xref:System.Exception>、 <xref:System.SystemException>、または<xref:System.ApplicationException>、外部のコードには、例外の処理方法を把握するための十分な情報はありません。
+内部例外は、独自の内部スコープ内でのみ表示されます。 内部スコープの外側にある例外は、基本例外を使用しなければキャッチできません。 場合、内部例外から継承<xref:System.Exception>、 <xref:System.SystemException>、または<xref:System.ApplicationException>、外部のコードには、例外の処理方法を把握するための十分な情報はありません。
 
- あるコードをさらに出力できるようになります基本例外で高度な処理を行うと考えることは、コードに後で使用される、ベースとして内部例外のパブリック例外がある場合。 パブリックの例外によって提供されているものより多くの情報になります<xref:System.Exception>、 <xref:System.SystemException>、または<xref:System.ApplicationException>します。
+ただし、後で内部例外のベースとして使用されるパブリック例外がコードにある場合は、さらに詳細なコードが基本例外でインテリジェントな処理を実行できると想定することが妥当です。 パブリック例外には、、 <xref:System.Exception> <xref:System.SystemException>、または<xref:System.ApplicationException>で提供されるものよりも多くの情報が含まれます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- 例外を公開またはパブリックでない例外からの内部例外を派生<xref:System.Exception>、 <xref:System.SystemException>、または<xref:System.ApplicationException>します。
+例外をパブリックにするか、、 <xref:System.Exception> <xref:System.SystemException>、または<xref:System.ApplicationException>ではないパブリック例外から内部例外を派生させます。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- このルールからのメッセージを抑制する場合は、常に、独自の内部スコープ内でプライベートの例外がキャッチされることを確認します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+常にプライベート例外が独自の内部スコープ内でキャッチされる場合は、この規則からのメッセージを抑制します。
 
 ## <a name="example"></a>例
- このルールは、例外クラスの例外から直接派生した、内部に、最初の例のメソッドで FirstCustomException に対して適用されます。 クラスは、例外から直接派生も、していますが、クラスがパブリックとして宣言されているために、ルールは、SecondCustomException クラスでは起動されません。 3 番目のクラスもは発生しません。 ルールから直接派生しないため、 <xref:System.Exception?displayProperty=fullName>、 <xref:System.SystemException?displayProperty=fullName>、または<xref:System.ApplicationException?displayProperty=fullName>します。
+この規則は、最初の例のメソッドである FirstCustomException で、例外クラスが例外から直接派生し、内部であるために発生します。 このルールは、クラスは例外から直接派生していますが、クラスは public として宣言されているため、このクラスでは起動されません。 3番目のクラスは、、 <xref:System.Exception?displayProperty=fullName> <xref:System.SystemException?displayProperty=fullName>、または<xref:System.ApplicationException?displayProperty=fullName>から直接派生していないため、ルールを起動しません。
 
- [!code-csharp[FxCop.Design.ExceptionsShouldBePublic.CA1064#1](../code-quality/codesnippet/CSharp/ca1064-exceptions-should-be-public_1.cs)]
+[!code-csharp[FxCop.Design.ExceptionsShouldBePublic.CA1064#1](../code-quality/codesnippet/CSharp/ca1064-exceptions-should-be-public_1.cs)]

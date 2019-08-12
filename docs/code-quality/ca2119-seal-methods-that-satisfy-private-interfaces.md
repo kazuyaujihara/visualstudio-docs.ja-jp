@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c019e98e7f1311b6521dff563cb8e7bb0a2356e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02e69a97468675cd6f7530793581c15717465d6f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62544021"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921063"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119:プライベート インターフェイスを満たすメソッドをシールします
 
@@ -35,40 +35,40 @@ ms.locfileid: "62544021"
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 継承可能なパブリック型のオーバーライド可能なメソッド実装を提供する、 `internal` (`Friend` Visual Basic で) インターフェイス。
+継承可能なパブリック型は、 `internal` (`Friend` Visual Basic) インターフェイスのオーバーライド可能なメソッドの実装を提供します。
 
 ## <a name="rule-description"></a>規則の説明
- インターフェイス メソッドがあるパブリック アクセシビリティは、実装する型を変更できません。 内部のインターフェイスは、インターフェイスを定義するアセンブリの外側に実装されるものではありませんが、コントラクトを作成します。 使用して、内部のインターフェイスのメソッドを実装するパブリック型、 `virtual` (`Overridable` Visual basic) 修飾子は、アセンブリ外にある派生型でオーバーライドされるメソッドを使用します。 2 番目の型定義のアセンブリでは、メソッドを呼び出し、内部専用の契約が必要ですが場合、代わりに、外部のアセンブリでオーバーライドされたメソッドが実行されるときに、動作が漏えいする可能性があります。 これには、セキュリティの脆弱性が作成されます。
+インターフェイスメソッドはパブリックアクセシビリティを持っていますが、これは実装する型では変更できません。 内部インターフェイスは、インターフェイスを定義するアセンブリの外部で実装するためのものではないコントラクトを作成します。 `virtual` (`Overridable` Visual Basic) 修飾子を使用して内部インターフェイスのメソッドを実装するパブリック型では、アセンブリ外部の派生型によってメソッドをオーバーライドできます。 定義アセンブリの2番目の型がメソッドを呼び出し、内部専用のコントラクトを要求した場合、外部アセンブリのオーバーライドされたメソッドが実行されると、動作が損なわれる可能性があります。 これにより、セキュリティの脆弱性が生じます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則の違反を修正するには、メソッドが、次のいずれかを使用して、アセンブリの外部にオーバーライドされないように。
+この規則違反を修正するには、次のいずれかを使用して、メソッドがアセンブリの外部でオーバーライドされないようにします。
 
-- 宣言する型`sealed`(`NotInheritable` Visual Basic で)。
+- 宣言する型`sealed`を (`NotInheritable` Visual Basic) に設定します。
 
-- 宣言する型のアクセシビリティを変更する`internal`(`Friend` Visual Basic で)。
+- 宣言する型のアクセシビリティを ( `internal` `Friend` Visual Basic) に変更します。
 
-- すべてのパブリック コンス トラクターを宣言する型から削除します。
+- 宣言する型からすべてのパブリックコンストラクターを削除します。
 
-- メソッドの実装を使用せず、`virtual`修飾子。
+- `virtual`修飾子を使用せずにメソッドを実装します。
 
 - メソッドを明示的に実装します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この警告を抑制するには、安全ではルールの場合、セキュリティの問題が存在しないことを注意深くレビューは、アセンブリの外部メソッドがオーバーライドされた場合に悪用可能な場合があります。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+慎重に確認した後に、メソッドがアセンブリの外部でオーバーライドされた場合に悪用される可能性があるセキュリティ上の問題が存在しない場合は、この規則による警告を抑制することが安全です。
 
 ## <a name="example-1"></a>例 1
- 次の例は、型`BaseImplementation`、この規則に違反します。
+次の例は、この規則`BaseImplementation`に違反する型を示しています。
 
- [!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
- [!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
- [!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
+[!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
+[!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
+[!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
 
 ## <a name="example-2"></a>例 2
- 次の例では、前の例の仮想メソッドの実装を悪用します。
+次の例では、前の例の仮想メソッドの実装を悪用しています。
 
- [!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
- [!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
- [!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
+[!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
+[!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
+[!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
 
 ## <a name="see-also"></a>関連項目
 

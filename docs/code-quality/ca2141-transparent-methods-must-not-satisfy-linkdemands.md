@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdd8ee4633cdc254bcfc5237391120ef887753da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24723559988974c51798c3e099ff8c1d86a15db9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806972"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920515"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141: 透過的メソッドは、LinkDemand を満たしてはならない
 
@@ -23,24 +23,24 @@ ms.locfileid: "62806972"
 |-|-|
 |TypeName|TransparentMethodsMustNotSatisfyLinkDemands|
 |CheckId|CA2141|
-|カテゴリ|Microsoft.Security|
+|Category|Microsoft.Security|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 透過的セキュリティ メソッドとマークされていないアセンブリ メソッドを呼び出し、 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) 属性、または透過的セキュリティ メソッドを満たす、 <xref:System.Security.Permissions.SecurityAction> `.LinkDemand`型またはメソッドの。
+透過的セキュリティメソッドは、 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) 属性でマークされていないアセンブリ内のメソッドを呼び出します。または、透過的セキュリティメソッドは、型またはメソッドに対してを<xref:System.Security.Permissions.SecurityAction> `.LinkDemand`満たします。
 
 ## <a name="rule-description"></a>規則の説明
- 特権が意図せず昇格される可能性があるセキュリティ センシティブな操作は、LinkDemand を満たします。 セキュリティ クリティカルなコードと同じセキュリティ監査要件の対象ではないために、透過的セキュリティ コードは、LinkDemands を満たしていませんする必要があります。 セキュリティ規則セットのレベル 1 アセンブリ内の透過的メソッドには、パフォーマンスの問題が発生することができますが、実行時にフル アクセス要求に変換する必要を満たすすべての LinkDemands が発生します。 セキュリティ規則のセットのレベル 2 のアセンブリ、LinkDemand を満たすために試行された場合は、ジャストイン タイム (JIT) コンパイラでコンパイルする透過的メソッドは失敗します。
+LinkDemand を満たすことは、セキュリティ上重要な操作であり、意図しない特権の昇格を引き起こす可能性があります。 透過的セキュリティコードは、セキュリティクリティカルなコードと同じセキュリティ監査要件の対象にならないため、Linkdemand を満たしてはなりません。 セキュリティ規則セットレベル1のアセンブリの透過的メソッドによって、対応するすべての Linkdemand が実行時に完全な要求に変換され、パフォーマンスの問題が発生する可能性があります。 セキュリティ規則セットレベル2のアセンブリでは、LinkDemand を満たす場合、transparent メソッドはジャストインタイム (JIT) コンパイラでのコンパイルに失敗します。
 
- 第 2 レベルのセキュリティを使用するアセンブリの場合は、LinkDemand を満たしていない APTCA アセンブリのメソッドを呼び出すには透過的セキュリティ メソッドによる試行を発生させます、<xref:System.MethodAccessException>レベル 1 アセンブリでは、LinkDemand をフル アクセス要求になります。
+レベル2のセキュリティを使用するアセンブリでは、セキュリティ transparent メソッドによって linkdemand を満たすか、非 APTCA アセンブリのメソッドを呼び出す<xref:System.MethodAccessException>と、が発生します。レベル1のアセンブリでは、LinkDemand は完全な要求になります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するとにアクセスするメソッドをマーク、<xref:System.Security.SecurityCriticalAttribute>または<xref:System.Security.SecuritySafeCriticalAttribute>属性、またはアクセスされるメソッドから、LinkDemand を削除します。
+この規則違反を修正するに<xref:System.Security.SecurityCriticalAttribute>は、アクセスメソッドを属性または<xref:System.Security.SecuritySafeCriticalAttribute>属性でマークするか、アクセスされたメソッドから LinkDemand を削除します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- この例では、透過的メソッドは、LinkDemand を含むメソッドを呼び出すしようとします。 このルールは、このコードで起動されます。
+この例では、transparent メソッドは LinkDemand を持つメソッドを呼び出そうとします。 このルールは、このコードで発生します。
 
- [!code-csharp[FxCop.Security.CA2141.TransparentMethodsMustNotSatisfyLinkDemands#1](../code-quality/codesnippet/CSharp/ca2141-transparent-methods-must-not-satisfy-linkdemands_1.cs)]
+[!code-csharp[FxCop.Security.CA2141.TransparentMethodsMustNotSatisfyLinkDemands#1](../code-quality/codesnippet/CSharp/ca2141-transparent-methods-must-not-satisfy-linkdemands_1.cs)]

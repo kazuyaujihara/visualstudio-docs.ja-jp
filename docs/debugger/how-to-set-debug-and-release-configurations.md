@@ -1,5 +1,5 @@
 ﻿---
-title: デバッグ設定し、リリース構成 |Microsoft Docs
+title: デバッグ構成とリリース構成を設定する |Microsoft Docs
 ms.date: 10/05/2018
 ms.topic: reference
 f1_keywords:
@@ -31,95 +31,95 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75acf0a3a821b4d2561ea14e583e71761b8b476e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847652"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925475"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Visual Studio でのデバッグおよびリリース構成の設定
 
-Visual Studio プロジェクトでは、ご使用のプログラムに対応するリリースとデバッグ構成を個別に用意しています。 デバッグでのデバッグ バージョンを最終リリース配布用のリリース バージョンをビルドします。
+Visual Studio プロジェクトでは、ご使用のプログラムに対応するリリースとデバッグ構成を個別に用意しています。 デバッグ用のデバッグバージョンと、最終リリース配布用のリリースバージョンをビルドします。
 
-デバッグ構成を完全なシンボリック デバッグ情報と最適化は行われません、プログラムをコンパイルします。 ソース コードと生成された命令の関係は非常に複雑であり、最適化を行うとデバッグが困難になるためです。
+デバッグ構成では、プログラムは完全なシンボリックデバッグ情報と共にコンパイルされ、最適化は行われません。 ソース コードと生成された命令の関係は非常に複雑であり、最適化を行うとデバッグが困難になるためです。
 
-プログラムのリリース構成では、シンボリック デバッグ情報がないとは完全に最適化されています。 マネージ コードとC++コード、.pdb ファイルにデバッグ情報を生成できます[コンパイラ オプションによって](#BKMK_symbols_release)ために使用されます。 .Pdb ファイルを作成するは、後で、リリース バージョンをデバッグする必要がある場合に役立ちます。
+プログラムのリリース構成にシンボリックデバッグ情報がなく、完全に最適化されています。 マネージコードとC++コードでは、使用される[コンパイラオプションに応じて](#BKMK_symbols_release)、.pdb ファイルにデバッグ情報を生成できます。 .Pdb ファイルを作成すると、後でリリースバージョンをデバッグする必要がある場合に便利です。
 
 ビルド構成の詳細については、「[ビルド構成について](../ide/understanding-build-configurations.md)」を参照してください。
 
-ビルド構成は、**[ビルド]** メニュー、ツールバー、またはプロジェクトのプロパティ ページを使用して変更できます。 プロジェクト プロパティ ページは、言語固有のページです。 次の手順では、メニューとツールバーからビルド構成を変更する方法を示します。 さまざまな言語のプロジェクトのビルド構成を変更する方法の詳細については、次を参照してください。、[も参照してください](#see-also)以下のセクション。
+ビルド構成は、 **[ビルド]** メニュー、ツールバー、またはプロジェクトのプロパティ ページを使用して変更できます。 プロジェクト プロパティ ページは、言語固有のページです。 次の手順では、メニューとツールバーからビルド構成を変更する方法を示します。 さまざまな言語のプロジェクトでビルド構成を変更する方法の詳細については、以下の[「](#see-also)関連項目」セクションを参照してください。
 
-## <a name="change-the-build-configuration"></a>ビルド構成を変更します。
+## <a name="change-the-build-configuration"></a>ビルド構成の変更
 
-か、ビルド構成を変更します。
+ビルド構成を変更するには、次のいずれかの方法を実行します。
 
-* **ビルド**メニューの  **Configuration Manager**を選択し、**デバッグ**または**リリース**します。
+* **[ビルド]** メニューの **[Configuration Manager]** を選択し、 **[デバッグ]** または **[リリース]** を選択します。
 
 または
 
-* ツールバーの場合は、**[ソリューション構成]** リスト ボックスから **[デバッグ]** または **[リリース]** をクリックします。
+* ツールバーの場合は、 **[ソリューション構成]** リスト ボックスから **[デバッグ]** または **[リリース]** をクリックします。
 
-  ![ツールバーのビルド構成](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
+  ![ツールバーのビルド構成](../debugger/media/toolbarbuildconfiguration.png "Toolbarbuildconfiguration")
 
-## <a name="BKMK_symbols_release"></a>ビルドのシンボル (.pdb) ファイルを生成 (C#、C++、Visual Basic、 F#)
+## <a name="BKMK_symbols_release"></a>ビルド (C#、 C++、Visual Basic、) のシンボル (.pdb) ファイルを生成F#します
 
-シンボル (.pdb) ファイルとその内容を生成することができますに含める情報をデバッグします。 ほとんどの種類のプロジェクトのコンパイラでは、既定ではデバッグのシンボル ファイルが生成されますビルドとリリース ビルド、プロジェクトの種類と Visual Studio のバージョンが異なるその他の既定の設定中にします。
+シンボル (.pdb) ファイルと、含めるデバッグ情報を生成するように選択できます。 ほとんどの種類のプロジェクトでは、コンパイラはデバッグビルドとリリースビルドのシンボルファイルを既定で生成しますが、その他の既定の設定はプロジェクトの種類と Visual Studio のバージョンによって異なります。
 
 > [!IMPORTANT]
-> デバッガーは、実行可能ファイルがビルドされたときに作成された .pdb ファイルと正確に一致する実行可能ファイルの .pdb ファイルのみ読み込みます (つまり .pdb ファイルはオリジナルまたはオリジナルのコピーであることが必要)。 詳細については、「[Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)」 (ビルドに使用したバイナリ ファイルと完全に一致させるために、Visual Studio でデバッガー シンボル ファイルが必要な理由) を参照してください。
+> デバッガーは、実行可能ファイルがビルドされたときに作成された .pdb ファイルと正確に一致する実行可能ファイルの .pdb ファイルのみ読み込みます (つまり .pdb ファイルはオリジナルまたはオリジナルのコピーであることが必要)。 詳細については、「 [Visual Studio が、ビルドされたバイナリファイルと完全に一致する必要](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)があるのはなぜですか」を参照してください。
 
-各プロジェクトの種類には、これらのオプションの設定の別の方法があります。
+プロジェクトの種類ごとに、これらのオプションを設定する方法が異なる場合があります。
 
-### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>C#、ASP.NET、または Visual Basic プロジェクトのシンボル ファイルを生成します。
+### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>、ASP.NET、またはC#Visual Basic プロジェクトのシンボルファイルを生成する
 
-C# または Visual Basic でのデバッグ構成のプロジェクト設定の詳細については、次を参照してください[デバッグ構成を c# のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)または[Visual basic プロジェクトの設定はデバッグ構成](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
+または Visual Basic でC#のデバッグ構成のプロジェクト設定の詳細については、「デバッグ構成の[プロジェクトC# ](../debugger/project-settings-for-csharp-debug-configurations.md)設定」または「 [Visual Basic デバッグ構成のプロジェクト](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)設定」を参照してください。
 
 1. ソリューション エクスプローラーでプロジェクトを選択します。
 
-2. 選択、**プロパティ**アイコン (またはキーを押します**Alt + Enter**)。
+2. **[プロパティ]** アイコンを選択します (または**Alt + enter**キーを押します)。
 
-3. 作業ウィンドウで次のように選択します。**ビルド**(または**コンパイル**Visual Basic で)。
+3. サイドペインで、 **[ビルド]** (または Visual Basic で**コンパイル**) を選択します。
 
-4. **構成**一覧で、選択**デバッグ**または**リリース**します。
+4. **構成**の一覧で、 **[デバッグ]** または **[リリース]** を選択します。
 
-5. 選択、**詳細**ボタン (または**詳細コンパイル オプション**Visual Basic でのボタン)。
+5. **[詳細設定]** ボタン (または Visual Basic の **[詳細コンパイルオプション]** ボタン) を選択します。
 
-6. **デバッグ情報**リスト (または**デバッグ情報の生成**Visual Basic での一覧)、選択**完全**、 **pdb-only**、または**ポータブル**します。
+6. **デバッグ情報**の一覧 (または Visual Basic の **[デバッグ情報の生成]** の一覧) で、 **[完全]** 、 **[Pdb のみ]** 、または **[ポータブル]** を選択します。
 
-   移植可能な形式は、.NET Core の最新のクロス プラットフォーム形式です。 オプションの詳細については、次を参照してください。[ビルドの詳細設定 ダイアログ ボックス (c#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)します。
+   ポータブル形式は、.NET Core の最新のクロスプラットフォーム形式です。 オプションの詳細については、「 [[ビルドの詳細C#設定] ダイアログボックス」 ()](../ide/reference/advanced-build-settings-dialog-box-csharp.md)を参照してください。
 
-   ![C# でビルドの Pdb を生成](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+   ![ビルドC#の pdb を生成する](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
 
 7. プロジェクトをビルドします。
 
-   コンパイラでは、実行可能ファイルまたはメイン出力ファイルと同じフォルダーにシンボル ファイルを作成します。
+   コンパイラは、実行可能ファイルまたはメイン出力ファイルと同じフォルダーにシンボルファイルを作成します。
 
-### <a name="generate-symbol-files-for-a-c-project"></a>C++ プロジェクトのシンボル ファイルを生成します。
+### <a name="generate-symbol-files-for-a-c-project"></a>プロジェクトのシンボルファイルをC++生成する
 
 1. ソリューション エクスプローラーでプロジェクトを選択します。
 
-2. 選択、**プロパティ**アイコン (またはキーを押します**Alt + Enter**)。
+2. **[プロパティ]** アイコンを選択します (または**Alt + enter**キーを押します)。
 
-3. **構成**一覧で、選択**デバッグ**または**リリース**します。
+3. **構成**の一覧で、 **[デバッグ]** または **[リリース]** を選択します。
 
-4. 作業ウィンドウで次のように選択します。**リンカー > デバッグ**、のオプションを選択**デバッグ情報の生成**します。
+4. サイドペインで、 **[リンカー > デバッグ]** を選択し、 **[デバッグ情報の生成]** のオプションを選択します。
 
-   C++ でのデバッグ構成のプロジェクト設定の詳細については、次を参照してください。[デバッグ構成の C++ のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)します。
+   のC++デバッグ構成のプロジェクト設定の詳細については、「 [ C++デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)」を参照してください。
 
-5. オプションを構成**プログラム データベース ファイルの生成**します。
+5. **プログラムデータベースファイルを生成**するためのオプションを構成します。
 
-   ほとんどの C++ プロジェクトで既定値は`$(OutDir)$(TargetName).pdb`、.pdb ファイルを出力フォルダーを生成します。
+   ほとんどC++のプロジェクトでは、既定値`$(OutDir)$(TargetName).pdb`はであり、出力フォルダーに .pdb ファイルが生成されます。
 
-   ![C++ でのビルドの Pdb を生成](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus")
+   ![ビルドC++の pdb を生成する](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus")
 
 6. プロジェクトをビルドします。
 
-   コンパイラでは、実行可能ファイルまたはメイン出力ファイルと同じフォルダーにシンボル ファイルを作成します。
+   コンパイラは、実行可能ファイルまたはメイン出力ファイルと同じフォルダーにシンボルファイルを作成します。
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio デバッガーでシンボル (.pdb) ファイルおよびソース ファイルを指定します。](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
+- [Visual Studio デバッガーでのシンボル (.pdb) ファイルとソースファイルの指定](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
 - [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)<br/>
 - [C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
 - [C# デバッグ構成のプロジェクト設定](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>

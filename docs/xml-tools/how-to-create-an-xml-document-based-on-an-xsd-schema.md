@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7739f33bad62667fdc7be8704237ebdd3932739c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783331"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918563"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>方法: XSD スキーマに基づいて XML ドキュメントを作成する
 
-**サンプル XML の生成**機能には、XML スキーマ (XSD) ファイルに基づくサンプル XML ファイルが生成されます。
+**[サンプル xml の生成]** 機能では、xml スキーマ (XSD) ファイルに基づいてサンプルの xml ファイルが生成されます。
 
- このオプションは、次のようなシナリオで使用できます。
+このオプションは、次のようなシナリオで使用できます。
 
 - スキーマのさまざまな構造の使用法を理解する。
 
 - スキーマが意図したとおりに機能しているかどうかを確認する。
 
-**サンプル XML の生成**機能は、グローバル要素でのみ使用し、有効な XML スキーマ セットが必要です。
+**[サンプル XML の生成]** 機能は、グローバル要素でのみ使用でき、有効な xml スキーマセットが必要です。
 
 この機能では、通常は有効な XML ドキュメントが生成されます。 ただし、スキーマに次のものが 1 つ以上含まれていると、有効なサンプルが生成されない可能性があります。
 
@@ -41,11 +41,11 @@ ms.locfileid: "62783331"
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>XSD ファイルに基づいて XML インスタンス ドキュメントを生成するには
 
-1. 次の手順では、[方法。作成し、XSD スキーマ ファイルを編集する](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)します。
+1. [「方法:XSD スキーマファイル](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)を作成および編集します。
 
-2. [XML スキーマ エクスプ ローラー](../xml-tools/xml-schema-explorer.md)を右クリックし、`PurchaseOrder`グローバル要素。 選択**サンプル XML の生成**します。
+2. [XML スキーマエクスプローラー](../xml-tools/xml-schema-explorer.md)で、 `PurchaseOrder`グローバル要素を右クリックします。 **[サンプル XML の生成]** を選択します。
 
-     このオプションは、PurchaseOrder を選択するとします。*xml*次のサンプル XML コンテンツを含むファイルが生成され、XML エディターで開かれます。
+     このオプションを選択すると、PurchaseOrder が表示されます。次のサンプル XML コンテンツを含む*xml*ファイルが生成され、xml エディターで開かれます。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

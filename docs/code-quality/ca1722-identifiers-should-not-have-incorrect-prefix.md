@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c1d2aa6f0889216b39b891b042989f1c8c69692
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5daf51cd8bef4910a327b8e261f15332ad6522da
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545985"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921622"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722:識別子は不適切なプレフィックスを含むことはできません
 
@@ -27,24 +27,24 @@ ms.locfileid: "62545985"
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectPrefix|
 |CheckId|CA1722|
-|カテゴリ|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 識別子が、不適切なプレフィックス。
+識別子のプレフィックスが正しくありません。
 
 ## <a name="rule-description"></a>規則の説明
- 規則では、特定のプログラミング要素にのみ、固有のプレフィックスで始まる名前を付けることができます。
+規則では、特定のプログラミング要素にのみ、固有のプレフィックスで始まる名前を付けることができます。
 
- 型名は、特定のプレフィックスがないといません 'C' を付ける必要があります。 このルールは、'CMyClass' などの型名の違反を報告し、違反の 'Cache' などの型名はレポートされません。
+型名には特定のプレフィックスがなく、先頭に ' C ' を付けることはできません。 このルールは、' CMyClass ' などの型名の違反を報告し、' Cache ' などの型名の違反を報告しません。
 
- 名前付け規則では、共通言語ランタイムをターゲットとするライブラリの統一的な名前の付け方が規定されています。 この一貫性では、学習曲線を新しいソフトウェア ライブラリに必要なライブラリがマネージ コード開発の専門知識を持つユーザーによって開発された、顧客の信頼度が高まりますが減少します。
+名前付け規則では、共通言語ランタイムをターゲットとするライブラリの統一的な名前の付け方が規定されています。 この一貫性により、新しいソフトウェアライブラリに必要な学習曲線が減少し、マネージコードの開発に関する専門知識を持つユーザーによってライブラリが開発されたという自信が高まります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- 識別子のプレフィックスを削除します。
+識別子からプレフィックスを削除します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="related-rules"></a>関連するルール
- [CA1715:識別子は正しいプレフィックスをいなければなりません](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+[CA1715識別子は正しいプレフィックスを持つ必要があります](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

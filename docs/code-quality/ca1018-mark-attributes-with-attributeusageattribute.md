@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c0aa3fe5c45e34445c49c4b3a5f0abad1e98739
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78917bcd4c67e1da205595bac07c8e0e5947318d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779338"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923059"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018:属性を AttributeUsageAttribute に設定します
 
@@ -30,33 +30,33 @@ ms.locfileid: "62779338"
 |-|-|
 |TypeName|MarkAttributesWithAttributeUsage|
 |CheckId|CA1018|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- <xref:System.AttributeUsageAttribute?displayProperty=fullName>属性は、カスタム属性に存在しません。
+この<xref:System.AttributeUsageAttribute?displayProperty=fullName>属性はカスタム属性に存在しません。
 
 ## <a name="rule-description"></a>規則の説明
- カスタム属性を定義するときに使用してマーク<xref:System.AttributeUsageAttribute>をソース コードで、カスタム属性を適用できる場所を示します。 属性の意味と用途によって、コード内の有効な位置が決まります。 たとえば、維持およびライブラリでは、各型の強化を担当し、責任がタイプ レベルで常に割り当てられている人を識別する属性を定義する場合があります。 この場合、コンパイラでは、クラス、列挙型、およびインターフェイスの属性を有効にする必要がありますが、有効にしないでください、メソッド、イベント、またはプロパティ。 組織のポリシーと手順は、属性をアセンブリに有効にするかどうかによって決まります。
+カスタム属性を定義するときは、を使用<xref:System.AttributeUsageAttribute>して、カスタム属性を適用できるソースコード内の場所を指定します。 属性の意味と用途によって、コード内の有効な位置が決まります。 たとえば、ライブラリ内の各型を管理および強化する担当者を識別する属性を定義し、その責任は常に型レベルで割り当てられます。 この場合、コンパイラはクラス、列挙、およびインターフェイスの属性を有効にする必要がありますが、メソッド、イベント、またはプロパティで有効にしないでください。 組織のポリシーと手順では、アセンブリで属性を有効にするかどうかを指定します。
 
- <xref:System.AttributeTargets?displayProperty=fullName>列挙型は、カスタム属性を指定できるターゲットを定義します。 省略した場合<xref:System.AttributeUsageAttribute>、によって定義されているように、カスタム属性が、すべてのターゲットに対して有効である、`All`の値<xref:System.AttributeTargets>列挙体。
+列挙<xref:System.AttributeTargets?displayProperty=fullName>体は、カスタム属性に対して指定できるターゲットを定義します。 を省略<xref:System.AttributeUsageAttribute>した場合、カスタム属性は、列挙体の`All` <xref:System.AttributeTargets>値で定義されているすべてのターゲットに対して有効になります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するを使用して、属性のターゲットを指定します。<xref:System.AttributeUsageAttribute>します。 次の例を参照してください。
+この規則違反を修正するには、を使用<xref:System.AttributeUsageAttribute>して、属性のターゲットを指定します。 次の例を参照してください。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- メッセージを除外ではなく、この規則の違反を修正する必要があります。 属性が継承する場合でも<xref:System.AttributeUsageAttribute>属性は、コードのメンテナンスを簡素化するためにする必要があります。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+メッセージを除外するのではなく、このルールの違反を修正する必要があります。 属性が継承<xref:System.AttributeUsageAttribute>されている場合でも、コードの保守を簡素化するために属性が存在している必要があります。
 
 ## <a name="example"></a>例
- 次の例では、2 つの属性を定義します。 `BadCodeMaintainerAttribute` 正しくない省略、<xref:System.AttributeUsageAttribute>ステートメント、および`GoodCodeMaintainerAttribute`このセクションに記載されている属性を正しく実装します。 なお、プロパティ`DeveloperName`デザイン規則に必要な[ca 1019。属性引数にアクセサーを定義する](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)完全を期すのために含まれています。
+次の例では、2つの属性を定義します。 `BadCodeMaintainerAttribute`<xref:System.AttributeUsageAttribute>ステートメントを誤って省略し`GoodCodeMaintainerAttribute` 、このセクションの前半で説明した属性を正しく実装します。 デザインルール`DeveloperName` [CA1019 では、プロパティが必要であることに注意してください。属性引数](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)にアクセサーを定義し、完全を期すために含めます。
 
- [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
- [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
+[!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
+[!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
 
 ## <a name="related-rules"></a>関連するルール
- [CA 1019:属性引数にアクセサーを定義します](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+[CA1019属性引数にアクセサーを定義する](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1813:シールされていない属性します。](../code-quality/ca1813-avoid-unsealed-attributes.md)
+[CA1813:封印されていない属性を避ける](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>関連項目
 

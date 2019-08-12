@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf1db06ba3b78c6033b143b55f41cc203441973
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a20feb514b87f2906fd4db32dfb38d3d9b661999
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779067"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922825"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035:ICollection の実装は、厳密に型指定されたメンバーを含んでいます
 
@@ -27,34 +27,34 @@ ms.locfileid: "62779067"
 |-|-|
 |TypeName|ICollectionImplementationsHaveStronglyTypedMembers|
 |CheckId|CA1035|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- パブリックまたはプロテクト型が実装<xref:System.Collections.ICollection?displayProperty=fullName>の厳密に型指定されたメソッドは提供されません<xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>します。 厳密に型指定されたバージョンの<xref:System.Collections.ICollection.CopyTo%2A>2 つのパラメーターを受け入れる必要があり、含めることはできません、<xref:System.Array?displayProperty=fullName>または配列の<xref:System.Object?displayProperty=fullName>最初のパラメーターとして。
+パブリック型またはプロテクト型<xref:System.Collections.ICollection?displayProperty=fullName>はを実装しますが、には<xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>厳密に型指定されたメソッドを提供しません。 の<xref:System.Collections.ICollection.CopyTo%2A>厳密に型指定されたバージョンは、2つ<xref:System.Array?displayProperty=fullName>のパラメーターを受け取る必要があり、最初のパラメーターとしてまたはの<xref:System.Object?displayProperty=fullName>配列を持つことはできません。
 
 ## <a name="rule-description"></a>規則の説明
- この規則で<xref:System.Collections.ICollection>を実装する厳密に型指定されたメンバー ユーザーは引数をキャストする必要がないように、<xref:System.Object>インターフェイスによって提供される機能を使用するときに入力します。 このルールは、実装する型前提としています。<xref:System.Collections.ICollection>がよりも厳密な型のインスタンスのコレクションを管理するため<xref:System.Object>します。
+この規則で<xref:System.Collections.ICollection>は、インターフェイスによって提供される機能を使用するときに、 <xref:System.Object>ユーザーが引数を型にキャストする必要がないように、厳密に型指定されたメンバーを実装する必要があります。 この規則は、を実装<xref:System.Collections.ICollection>する型が、より<xref:System.Object>強力な型のインスタンスのコレクションを管理するためにそれを行うことを前提としています。
 
- <xref:System.Collections.ICollection> は、<xref:System.Collections.IEnumerable?displayProperty=fullName> インターフェイスを実装します。 場合は、コレクション内のオブジェクトの拡張<xref:System.ValueType?displayProperty=fullName>の厳密に型指定されたメンバーを提供する必要があります<xref:System.Collections.IEnumerable.GetEnumerator%2A>ボックス化によって発生したパフォーマンスの低下を回避するためにします。 これは、コレクションの参照型である場合に必要ありません。
+ <xref:System.Collections.ICollection> は、<xref:System.Collections.IEnumerable?displayProperty=fullName> インターフェイスを実装します。 コレクション内のオブジェクトがを拡張<xref:System.ValueType?displayProperty=fullName>する場合は、ボックス化によって<xref:System.Collections.IEnumerable.GetEnumerator%2A>発生するパフォーマンスの低下を回避するために、厳密に型指定されたメンバーをに提供する必要があります。 コレクションのオブジェクトが参照型である場合、これは必要ありません。
 
- インターフェイス メンバーの厳密に型指定されたバージョンを実装するインターフェイス メンバーを明示的に実装形式で名前を使用して、`InterfaceName.InterfaceMemberName`など<xref:System.Collections.ICollection.CopyTo%2A>します。 明示的なインターフェイス メンバーは、インターフェイスで宣言されているデータ型を使用します。 インターフェイス メンバーの名前を使用して、厳密に型指定されたメンバーを実装<xref:System.Collections.ICollection.CopyTo%2A>します。 Public として厳密に型指定されたメンバーを宣言して、パラメーターを宣言およびコレクションで管理されている厳密な型の値を返します。 厳密な型より強度の低い種類を置き換える<xref:System.Object>と<xref:System.Array>インターフェイスで宣言されています。
+インターフェイスメンバーの厳密に型指定されたバージョンを実装するには、のように、形式`InterfaceName.InterfaceMemberName` <xref:System.Collections.ICollection.CopyTo%2A>の名前を使用してインターフェイスメンバーを明示的に実装します。 明示的なインターフェイスメンバーは、インターフェイスによって宣言されたデータ型を使用します。 などのインターフェイスメンバー名<xref:System.Collections.ICollection.CopyTo%2A>を使用して、厳密に型指定されたメンバーを実装します。 厳密に型指定されたメンバーをパブリックとして宣言し、コレクションによって管理される厳密な型のパラメーターと戻り値を宣言します。 厳密な型は、インターフェイスによっ<xref:System.Object>て<xref:System.Array>宣言されているやなどの弱い型を置き換えます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、インターフェイス メンバーを明示的に実装 (として宣言<xref:System.Collections.ICollection.CopyTo%2A>)。 として宣言されている、パブリックの厳密に型指定されたメンバーを追加`CopyTo`、最初のパラメーターとして厳密に型指定された配列を取得することです。
+この規則違反を修正するには、インターフェイスメンバーを明示的に実装し<xref:System.Collections.ICollection.CopyTo%2A>ます (として宣言します)。 として`CopyTo`宣言された、厳密に型指定されたパブリックメンバーを追加し、その最初のパラメーターとして厳密に型指定された配列を取得します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- バイナリ ツリーは、新しいコレクションを拡張する型が厳密な型を決定などの新しいオブジェクトに基づくコレクションを実装する場合は、この規則による警告を抑制します。 これらの型は、この規則に準拠し、厳密に型指定されたメンバーを公開する必要があります。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+バイナリツリーなどの新しいオブジェクトベースのコレクションを実装する場合、この規則からの警告を抑制します。新しいコレクションを拡張する型は、厳密な型を決定します。 これらの型は、この規則に準拠し、厳密に型指定されたメンバーを公開する必要があります。
 
 ## <a name="example"></a>例
- 次の例では、実装する正しい方法<xref:System.Collections.ICollection>します。
+次の例は、を実装<xref:System.Collections.ICollection>する正しい方法を示しています。
 
- [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]
+[!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]
 
 ## <a name="related-rules"></a>関連するルール
- [CA1038:列挙子を厳密に型指定する必要があります。](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+[CA1038列挙子は厳密に型指定する必要があります](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
- [CA1039:リストは厳密に型指定します。](../code-quality/ca1039-lists-are-strongly-typed.md)
+[CA1039リストは厳密に型指定されます。](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>関連項目
 

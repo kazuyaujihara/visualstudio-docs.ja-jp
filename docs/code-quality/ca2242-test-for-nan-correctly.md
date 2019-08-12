@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c2dd1f6a23c3df4d77207efb49531b97b3b381
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8912cb6eeec8009364936a42d572f4f3d83fae5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541403"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919917"
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242:NaN に対して正しくテストします
 
@@ -29,23 +29,23 @@ ms.locfileid: "62541403"
 |-|-|
 |TypeName|TestForNaNCorrectly|
 |CheckId|CA2242|
-|カテゴリ|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
- 式に対して値をテストする<xref:System.Single.NaN?displayProperty=fullName>または<xref:System.Double.NaN?displayProperty=fullName>します。
+式は、または<xref:System.Single.NaN?displayProperty=fullName> <xref:System.Double.NaN?displayProperty=fullName>に対して値をテストします。
 
 ## <a name="rule-description"></a>規則の説明
- <xref:System.Double.NaN?displayProperty=fullName>、not 非数を表す場合、算術演算が定義されていない場合に発生します。 値の間で等しいかどうかをテストする任意の式と<xref:System.Double.NaN?displayProperty=fullName>は常に返します`false`します。 値の間の不等性をテストする任意の式と<xref:System.Double.NaN?displayProperty=fullName>は常に返します`true`します。
+ <xref:System.Double.NaN?displayProperty=fullName>は、算術演算が定義されていない場合に、数値以外の結果を表します。 値の間の等価性をテストし<xref:System.Double.NaN?displayProperty=fullName> 、常`false`にを返す式。 値が等しくないかどうかをテスト<xref:System.Double.NaN?displayProperty=fullName>し、 `true`常にを返す式。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正し、値を表すかどうかを正確に判断する<xref:System.Double.NaN?displayProperty=fullName>を使用して、<xref:System.Single.IsNaN%2A?displayProperty=fullName>または<xref:System.Double.IsNaN%2A?displayProperty=fullName>値をテストします。
+この規則違反を修正し、値がを表す<xref:System.Double.NaN?displayProperty=fullName>かどうかを正確に判断するには、または<xref:System.Double.IsNaN%2A?displayProperty=fullName>を使用<xref:System.Single.IsNaN%2A?displayProperty=fullName>して値をテストします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、対応する値を正しくテストする 2 つの式<xref:System.Double.NaN?displayProperty=fullName>と正しく使用する式<xref:System.Double.IsNaN%2A?displayProperty=fullName>値をテストします。
+次の例では、値を<xref:System.Double.NaN?displayProperty=fullName>誤ってテストする2つの式と、値をテストするために正しく使用<xref:System.Double.IsNaN%2A?displayProperty=fullName>する式を示します。
 
- [!code-vb[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/VisualBasic/ca2242-test-for-nan-correctly_1.vb)]
- [!code-csharp[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/CSharp/ca2242-test-for-nan-correctly_1.cs)]
+[!code-vb[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/VisualBasic/ca2242-test-for-nan-correctly_1.vb)]
+[!code-csharp[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/CSharp/ca2242-test-for-nan-correctly_1.cs)]

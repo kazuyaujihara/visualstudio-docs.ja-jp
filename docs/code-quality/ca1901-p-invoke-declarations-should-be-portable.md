@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c4216b52fa4a23848a82548c36c34592deacc0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545460"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921303"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901:P/Invoke 宣言はポータブルでなければなりません
 
@@ -27,27 +27,27 @@ ms.locfileid: "62545460"
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
-|カテゴリ|Microsoft.Portability|
-|互換性に影響する変更点|– P/invoke は、アセンブリ外部から参照できる場合。 なし - P/invoke が、アセンブリの外部に表示されない場合|
+|Category|Microsoft. 移植性|
+|互換性に影響する変更点|中断-P/Invoke がアセンブリの外部で参照可能である場合。 非中断-P/Invoke がアセンブリの外部で参照できない場合。|
 
 ## <a name="cause"></a>原因
- このルールは、各パラメーターのサイズと、P/invoke の戻り値が評価され、32 ビットおよび 64 ビット プラットフォームでは、アンマネージ コードにマーシャ リングされる場合、サイズが正しいことを確認します。 このルールの最も一般的な違反では、プラットフォームに依存するポインター-サイズの変数が必要になる固定サイズの整数を渡します。
+このルールは、P/Invoke の各パラメーターと戻り値のサイズを評価し、32ビットおよび64ビットのプラットフォームでアンマネージコードにマーシャリングされたときのサイズが正しいことを確認します。 この規則の最も一般的な違反は、プラットフォームに依存するポインターサイズの変数が必要な固定サイズの整数を渡すことです。
 
 ## <a name="rule-description"></a>規則の説明
- このルールに違反している、次のシナリオのいずれかに発生します。
+次のいずれかのシナリオがこの規則に違反しています。
 
-- 戻り値またはパラメーターとして型指定された固定サイズの整数として型指定しなければならないときに、`IntPtr`します。
+- 戻り値またはパラメーターは、 `IntPtr`として型指定する必要がある場合、固定サイズの整数として型指定されます。
 
-- として型指定された戻り値またはパラメーター、`IntPtr`固定サイズの整数としてときに入力する必要があります。
+- 戻り値またはパラメーターは、固定サイズ`IntPtr`の整数として型指定する必要があるときに、として型指定されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この違反を修正するを使用して`IntPtr`または`UIntPtr`の代わりにハンドルを表す`Int32`または`UInt32`します。
+また`IntPtr`はを使用し`UIntPtr`て、 `Int32`また`UInt32`はではなくハンドルを表すことで、この違反を修正できます。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この警告を抑制する必要があります。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この警告を抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、この規則違反を示します。
+次の例は、このルールの違反を示しています。
 
 ```csharp
 internal class NativeMethods
@@ -58,7 +58,7 @@ internal class NativeMethods
 }
 ```
 
- この例で、`nIconIndex`として宣言されたパラメーター、 `IntPtr`、32 ビット プラットフォームと 8 バイト、64 ビット プラットフォーム上で 4 バイトであります。 次のアンマネージの宣言でことがわかります`nIconIndex`はすべてのプラットフォームで 4 バイト符号なし整数。
+この例`nIconIndex`では、パラメーターは`IntPtr`として宣言されています。これは32ビットプラットフォームでは幅が4バイト、64ビットプラットフォームでは幅が8バイトです。 次のアンマネージ宣言では、がすべての`nIconIndex`プラットフォームの4バイト符号なし整数であることがわかります。
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -66,7 +66,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>例
- 違反を修正するには、宣言を次のように変更します。
+違反を修正するには、次のように宣言を変更します。
 
 ```csharp
 internal class NativeMethods{
@@ -77,4 +77,4 @@ internal class NativeMethods{
 ```
 
 ## <a name="see-also"></a>関連項目
- [Portability Warnings](../code-quality/portability-warnings.md)
+[Portability Warnings](../code-quality/portability-warnings.md)

@@ -1,5 +1,5 @@
 ---
-title: '方法: マネージ コードについて手動でコード分析を実行します。'
+title: '方法: マネージコードのコード分析を手動で実行する'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75b518e1bf59ebd0e92d7cef311277ccf7d98c82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 588f78c600aa7c78894a2e0bdc7f4443f4e86b31
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815849"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923965"
 ---
-# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>方法: マネージ コードについて手動でコード分析を実行します。
-コード分析ツールは、ソース コードの障害に関するに情報を提供します。 コード分析を自動的に実行するには、コード プロジェクトをビルドするたびに、手動でコード分析を実行することもできます。 します。 コード分析の実行時にオンになっているルールは、プロジェクトのプロパティ ページの [コード分析] ページで指定されます。 詳細については、「[方法 :マネージ コード プロジェクトのコード分析を構成します。](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>方法: マネージコードのコード分析を手動で実行する
+コード分析ツールは、ソースコードで発生する可能性のある欠陥に関する情報を提供します。 コードプロジェクトの各ビルドでコード分析を自動的に実行できます。また、コード分析を手動で実行することもできます。 コード分析の実行時にチェックされる規則は、プロジェクトのプロパティページの [コード分析] ページで指定します。 詳細については、「[方法 :マネージコードプロジェクト](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)のコード分析を構成します。
 
 ### <a name="to-run-code-analysis-manually"></a>コード分析を手動で実行するには
 
-1. **ソリューション エクスプ ローラー**プロジェクトをクリックします。
+1. **ソリューションエクスプローラー**で、プロジェクトをクリックします。
 
-2. **分析** メニューのをクリックして**でコード分析を実行***プロジェクト名*します。
+2. **[分析]** メニューの [*プロジェクト名***に対してコード分析を実行**] をクリックします。

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b09122aebdc02b9eacb32df596914a0a08a9ea9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 631be1a93318cd24af4251fefbc710294fa52bf7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546259"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922007"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407:Com 参照可能な型で静的メンバーを使用しません
 
@@ -27,20 +27,20 @@ ms.locfileid: "62546259"
 |-|-|
 |TypeName|AvoidStaticMembersInComVisibleTypes|
 |CheckId|CA1407|
-|カテゴリ|Microsoft.Interoperability|
+|Category|Microsoft. 相互運用性|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- コンポーネント オブジェクト モデル (COM) を参照できると明確にマークされている型が含まれています、`public``static`メソッド。
+コンポーネントオブジェクトモデル (COM) に対して表示されるように明示的に`public``static`マークされている型には、メソッドが含まれています。
 
 ## <a name="rule-description"></a>規則の説明
- COM をサポートしません`static`メソッド。
+COM はメソッドを`static`サポートしていません。
 
- このルールは、プロパティ、イベント アクセサー メソッド、またはいずれかを使用してマークされているメソッドのオーバー ロード演算子は無視されます、<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>属性または<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>属性。
+このルールは、プロパティとイベントのアクセサー、演算子のオーバーロードメソッド、または属性<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>または属性のいずれかを使用してマークされたメソッドを無視します。
 
- 既定では、次は COM から参照できる: アセンブリ、型のパブリック、パブリック型は、パブリック インスタンス メンバーおよびパブリック値型のすべてのメンバー。
+既定では、アセンブリ、パブリック型、パブリック型のパブリックインスタンスメンバー、およびパブリック値型のすべてのメンバーに対して、COM から参照できます。
 
- このルールで発生すると、アセンブリ レベルの<xref:System.Runtime.InteropServices.ComVisibleAttribute>に設定する必要があります`false`とクラス -<xref:System.Runtime.InteropServices.ComVisibleAttribute>に設定する必要があります`true`次のコードに示すように、します。
+このルールを実行するには、次の<xref:System.Runtime.InteropServices.ComVisibleAttribute>コードに示すよう`false`に、アセンブリレベル<xref:System.Runtime.InteropServices.ComVisibleAttribute>をに設定し`true`、クラスをに設定する必要があります。
 
 ```csharp
 using System;
@@ -60,38 +60,38 @@ namespace Samples
 ```
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正すると同じ機能を提供するインスタンス メソッドを使用してデザインを変更して、`static`メソッド。
+この規則違反を修正するには、 `static`メソッドと同じ機能を提供するインスタンスメソッドを使用するようにデザインを変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- COM クライアントがによって提供される機能へのアクセスを必要としない場合、この規則による警告を抑制するのには安全では、`static`メソッド。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+COM クライアントが`static`メソッドによって提供される機能へのアクセスを必要としない場合は、この規則による警告を抑制しても安全です。
 
-## <a name="example-violation"></a>例の違反
+## <a name="example-violation"></a>違反の例
 
 ### <a name="description"></a>説明
- 次の例は、`static`この規則に違反するメソッド。
+次の例は、 `static`この規則に違反するメソッドを示しています。
 
 ### <a name="code"></a>コード
- [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersViolation#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_1.cs)]
+[!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersViolation#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_1.cs)]
 
 ### <a name="comments"></a>コメント
- この例で、 **Book.FromPages** COM からメソッドを呼び出すことができません
+この例では、 **FromPages**のメソッドを COM から呼び出すことはできません。
 
-## <a name="example-fix"></a>例の修正プログラム
+## <a name="example-fix"></a>修正の例
 
 ### <a name="description"></a>説明
- 前の例では、違反を修正するインスタンス メソッド、メソッドを変更できますが、このインスタンスで意味がないことが。 優れたソリューションが明示的に適用するには`ComVisible(false)`メソッドは、COM から表示できない他の開発者をオフにする方法
+前の例の違反を修正するには、メソッドをインスタンスメソッドに変更しますが、このインスタンスでは意味がありません。 より適切な解決策は、 `ComVisible(false)`メソッドを明示的に適用して、メソッドが COM から認識されないことを他の開発者に明確にすることです。
 
- 次の例では、適用<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>メソッドにします。
+次の例は<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> 、メソッドに適用されます。
 
 ### <a name="code"></a>コード
- [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_2.cs)]
+[!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_2.cs)]
 
 ## <a name="related-rules"></a>関連するルール
- [CA 1017:アセンブリに comvisibleattribute を設定します](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017アセンブリを ComVisibleAttribute にマークします](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
- [CA1406:Visual Basic 6 クライアントに対しては Int64 引数を避ける](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
+[CA1406Visual Basic 6 クライアントに対して Int64 引数を使用しない](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
 
- [CA1413:COM 参照可能な値の型で非パブリック フィールドを回避します。](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+[CA1413COM 参照可能な値型ではパブリックでないフィールドを避けてください](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
 ## <a name="see-also"></a>関連項目
- [アンマネージ コードとの相互運用](/dotnet/framework/interop/index)
+[アンマネージ コードとの相互運用](/dotnet/framework/interop/index)

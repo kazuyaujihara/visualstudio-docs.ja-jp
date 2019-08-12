@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ae392173a18796c53100599fbf5f5fb5997beb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1b56001f5a083317911edde9282b66758deb1b6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796859"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920723"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147:透過コードは、セキュリティ アサートを使用してはならない
 
@@ -28,38 +28,38 @@ ms.locfileid: "62796859"
 |-|-|
 |TypeName|SecurityTransparentCodeShouldNotAssert|
 |CheckId|CA2147|
-|カテゴリ|Microsoft.Security|
+|Category|Microsoft.Security|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- コードとしてマークされている<xref:System.Security.SecurityTransparentAttribute>をアサートするための十分なアクセス許可が付与されていません。
+としてマークさ<xref:System.Security.SecurityTransparentAttribute>れているコードには、アサートに必要なアクセス許可が付与されていません。
 
 ## <a name="rule-description"></a>規則の説明
- このルールで、すべてのメソッドとか 100% 透明または混合透過的/クリティカルは、宣言型または命令型の使用量のフラグを設定するアセンブリ内の型を分析<xref:System.Security.CodeAccessPermission.Assert%2A>します。
+このルールは、アセンブリ内のすべてのメソッドと型を分析します。これは、透過的に 100%、transparent/critical が混在<xref:System.Security.CodeAccessPermission.Assert%2A>しています。また、の宣言型または命令型の使用にフラグを加えます。
 
- 実行時に、すべての呼び出しに<xref:System.Security.CodeAccessPermission.Assert%2A>transparent コードから発生、<xref:System.InvalidOperationException>がスローされます。 これは、両方の 100% 透過的なアセンブリと透過的/クリティカルの混在のアセンブリ、メソッドまたは型が透過的な場合は、宣言されているが、宣言的または強制的 Assert が含まれていますに発生することができます。
+実行時に、透過的な<xref:System.Security.CodeAccessPermission.Assert%2A>コードからを呼び出すと<xref:System.InvalidOperationException> 、がスローされます。 これは、100% の透過アセンブリでも、メソッドまたは型が透過的に宣言されているが、宣言型または命令型のアサートを含む、透過的またはクリティカルなアセンブリでも発生する可能性があります。
 
- .NET Framework 2.0 には、という名前の機能が導入されました。*透明度*します。 個々 のメソッド、フィールド、インターフェイス、クラス、および種類は、transparent または重要なのかを指定できます。
+.NET Framework 2.0 では、*透明性*という名前の機能が導入されました。 個々のメソッド、フィールド、インターフェイス、クラス、および型は、透過的または重大にすることができます。
 
- 透過的なコードは、セキュリティ特権の昇格は許可されません。 そのため、許可または要求されるアクセス許可は自動的にコードに渡さ呼び出し元またはホスト アプリケーション ドメイン。 昇格の例には、アサート、LinkDemands、SuppressUnmanagedCode、および`unsafe`コード。
+透過的なコードでは、セキュリティ特権を昇格することはできません。 したがって、このメソッドに付与または要求されるアクセス許可は、コードを通じて呼び出し元またはホストアプリケーションドメインに自動的に渡されます。 昇格の例として`unsafe`は、アサート、linkdemand、SuppressUnmanagedCode、コードなどがあります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- コードを呼び出すと、アサートをマークする問題を解決するには、いずれか、 <xref:System.Security.SecurityCriticalAttribute>、または削除、アサートします。
+この問題を解決するには、アサート<xref:System.Security.SecurityCriticalAttribute>を呼び出すコードをでマークするか、アサートを削除します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- このルールからのメッセージを抑制しないでください。
-
-## <a name="example"></a>例
- このコードは失敗`SecurityTestClass`がときに透明で、`Assert`メソッドがスローされます、<xref:System.InvalidOperationException>します。
-
- [!code-csharp[FxCop.Security.CA2147.TransparentMethodsMustNotUseSecurityAsserts#1](../code-quality/codesnippet/CSharp/ca2147-transparent-methods-may-not-use-security-asserts_1.cs)]
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則からのメッセージを抑制しないでください。
 
 ## <a name="example"></a>例
- 1 つのオプションは、コード レビュー方法メソッドは、次の例ではし、メソッドは、昇格の安全と見なされますが場合、は、セキュリティで保護された重要なの方法をマークします。 これは、アサート対象のメソッド内で発生するすべての呼び出し-アウトと共にメソッドの詳細、完了すると、およびエラーのないセキュリティ監査を実行することが必要です。
+このコードは、が`SecurityTestClass`透過的`Assert`な場合に、メソッドがを<xref:System.InvalidOperationException>スローした場合に失敗します。
 
- [!code-csharp[FxCop.Security.SecurityTransparentCode2#1](../code-quality/codesnippet/CSharp/ca2147-transparent-methods-may-not-use-security-asserts_2.cs)]
+[!code-csharp[FxCop.Security.CA2147.TransparentMethodsMustNotUseSecurityAsserts#1](../code-quality/codesnippet/CSharp/ca2147-transparent-methods-may-not-use-security-asserts_1.cs)]
 
- コードから、アサートを削除し、その後、ファイル、呼び出し元に方法を超える I/O アクセス許可の要求フローを使用する別の方法です。 これにより、セキュリティ チェックができます。 この場合、セキュリティ監査は必要ありません、ため、アクセス許可の要求は、呼び出し元や、アプリケーション ドメインにフローします。 アクセス許可の要求は、環境、およびソース コードのアクセス許可の付与をホストしている、セキュリティ ポリシーを通じて密接に制御されます。
+## <a name="example"></a>例
+1つの方法として、次の例の SecurityTransparentMethod メソッドをコードレビューする方法があります。また、メソッドが昇格に対して安全であると見なされる場合は、SecurityTransparentMethod に secure-critical とマークします。 そのためには、メソッドに対して、アサートの下でメソッド内で発生するすべての呼び出しと共に、詳細、完全、およびエラーのないセキュリティ監査を実行する必要があります。
+
+[!code-csharp[FxCop.Security.SecurityTransparentCode2#1](../code-quality/codesnippet/CSharp/ca2147-transparent-methods-may-not-use-security-asserts_2.cs)]
+
+もう1つの方法として、コードからアサートを削除し、後続のファイル i/o のアクセス許可要求を SecurityTransparentMethod を超えて呼び出し元に渡すこともできます。 これにより、セキュリティチェックが有効になります。 この場合、アクセス許可要求は呼び出し元またはアプリケーションドメインにフローするため、セキュリティ監査は必要ありません。 アクセス許可の要求は、セキュリティポリシー、ホスト環境、およびコードソースのアクセス許可の付与によって厳密に制御されます。
 
 ## <a name="see-also"></a>関連項目
- [セキュリティの警告](../code-quality/security-warnings.md)
+[セキュリティの警告](../code-quality/security-warnings.md)
