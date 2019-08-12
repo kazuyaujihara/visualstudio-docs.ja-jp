@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c94f1b2709f3541692a0dfcd2a92559135639c2a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bd3e9c56bb02995d9b99b57bb2799ab69b51a42d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744586"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921560"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804:使用されていないローカルを削除します
 
@@ -30,36 +30,36 @@ ms.locfileid: "66744586"
 |-|-|
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
-|カテゴリ|Microsoft.Performance|
+|Category|Microsoft.Performance|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- メソッドでローカル変数を宣言も使わないを除く変数可能性があります、代入ステートメントの受信者として。 このルールによって、分析するためには、デバッグ情報のテスト対象のアセンブリをビルドする必要があり、関連付けられているプログラム データベース (.pdb) ファイルは、使用可能なである必要があります。
+メソッドはローカル変数を宣言しますが、代入ステートメントの受信者としての場合を除き、変数は使用しません。 この規則による分析のために、テストされたアセンブリはデバッグ情報を使用してビルドする必要があり、関連付けられているプログラムデータベース (.pdb) ファイルが使用可能である必要があります。
 
 ## <a name="rule-description"></a>規則の説明
- 使用されていないローカル変数や不要な引数があると、アセンブリのサイズが大きくなり、パフォーマンスが低下します。
+使用されていないローカル変数や不要な引数があると、アセンブリのサイズが大きくなり、パフォーマンスが低下します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するには、削除するか、ローカル変数を使用します。
+この規則違反を修正するには、ローカル変数を削除するか、使用します。
 
 > [!NOTE]
-> C#コンパイラは、未使用のローカル変数を削除します。 ときに、`optimize`オプションを有効にします。
+> オプションが有効になっている場合C# 、コンパイラは使用されていないローカル変数を削除します。 `optimize`
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- 変数がコンパイラで生成された場合は、この規則による警告を抑制します。 パフォーマンスとコードのメンテナンスが主な懸念事項ではない場合にも、この規則による警告を抑制するか、ルールを無効にするには安全です。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+変数がコンパイラによって生成された場合、このルールからの警告を非表示にします。 また、パフォーマンスとコードの保守が主要な問題でない場合は、このルールからの警告を抑制するか、ルールを無効にすることも安全です。
 
 ## <a name="example"></a>例
- 次の例では、未使用のローカル変数をいくつかを示します。
+次の例では、使用されていないローカル変数をいくつか示します。
 
- [!code-vb[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/VisualBasic/ca1804-remove-unused-locals_1.vb)]
- [!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]
+[!code-vb[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/VisualBasic/ca1804-remove-unused-locals_1.vb)]
+[!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]
 
 ## <a name="related-rules"></a>関連するルール
- [CA1809:過剰なローカルします。](../code-quality/ca1809-avoid-excessive-locals.md)
+[CA1809過度なローカルを避ける](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811:呼び出されていないプライベート コードを避ける](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811呼び出されるプライベートコードを避ける](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812:インスタンス化されていない内部クラスを回避します。](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812インスタンス内部クラスを回避する](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA 1801:未使用のパラメーターをレビューします](../code-quality/ca1801-review-unused-parameters.md)
+[CA1801使用されていないパラメーターの確認](../code-quality/ca1801-review-unused-parameters.md)

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41ab039d33155769eac13469a65f2a35c8ed7324
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 415b8c95dda3fca084fcb103dfa5e4f39e1a73da
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778607"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922526"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049:ネイティブ リソースを所有する型は、破棄可能でなければなりません
 
@@ -30,39 +30,39 @@ ms.locfileid: "62778607"
 |-|-|
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-型参照を<xref:System.IntPtr?displayProperty=fullName>フィールド、<xref:System.UIntPtr?displayProperty=fullName>フィールド、または<xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>フィールドしますが、実装されません<xref:System.IDisposable?displayProperty=fullName>します。
+型が<xref:System.IntPtr?displayProperty=fullName>フィールド<xref:System.UIntPtr?displayProperty=fullName> 、フィールド、または<xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>フィールドを参照していますが、 <xref:System.IDisposable?displayProperty=fullName>を実装していません。
 
 ## <a name="rule-description"></a>規則の説明
 
-このルールは、仮定<xref:System.IntPtr>、 <xref:System.UIntPtr>、および<xref:System.Runtime.InteropServices.HandleRef>フィールドに格納されているアンマネージ リソースへのポインター。 アンマネージ リソースを割り当てる型を実装する必要があります<xref:System.IDisposable>呼び出し元をオンデマンドでリソースを解放し、リソースを保持するオブジェクトの有効期間を短縮できるようにします。
+この規則は、 <xref:System.IntPtr>、 <xref:System.UIntPtr>、 <xref:System.Runtime.InteropServices.HandleRef>の各フィールドがアンマネージリソースへのポインターを格納していることを前提としています。 アンマネージリソースを割り当てる型は<xref:System.IDisposable> 、を実装して、呼び出し元が必要に応じてリソースを解放し、リソースを保持するオブジェクトの有効期間を短縮できるようにする必要があります。
 
-アンマネージ リソースをクリーンアップする推奨デザイン パターンは、暗黙的なとを使用してこれらのリソースを解放するための明示的な方法を提供する、<xref:System.Object.Finalize%2A?displayProperty=fullName>メソッドと<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>メソッドでは、それぞれします。 ガベージ コレクター、<xref:System.Object.Finalize%2A>に到達可能で不要になったオブジェクトを決定したら、ある時点で、オブジェクトのメソッド。 後<xref:System.Object.Finalize%2A>が呼び出されると、追加のオブジェクトを解放するガベージ コレクションが必要です。 <xref:System.IDisposable.Dispose%2A>メソッドが明示的に要求時、ガベージ コレクターの場合、リソースがリリースされるよりも前にリソースを解放する呼び出し元を使用します。 非管理対象のリソースをクリーンアップした後<xref:System.IDisposable.Dispose%2A>呼び出す必要があります、<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>ガベージ コレクターに通知されるようにするメソッド<xref:System.Object.Finalize%2A>されなく; 呼び出す必要がありますとガベージ コレクションの必要はなくなり、短縮、オブジェクトの有効期間。
+アンマネージリソースをクリーンアップするために推奨される設計パターンは、 <xref:System.Object.Finalize%2A?displayProperty=fullName>メソッド<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>とメソッドを使用して、これらのリソースを解放するための暗黙的な方法と明示的な手段の両方を提供することです。 ガベージコレクターは、オブジェクト<xref:System.Object.Finalize%2A>が到達できなくなったと判断した後、一定の時間内にオブジェクトのメソッドを呼び出します。 が<xref:System.Object.Finalize%2A>呼び出された後、オブジェクトを解放するには、追加のガベージコレクションが必要です。 <xref:System.IDisposable.Dispose%2A>メソッドを使用すると、呼び出し元は、リソースがガベージコレクターに残されている場合に解放されるより前に、リソースを明示的に解放することができます。 アンマネージリソースをクリーンアップした後<xref:System.IDisposable.Dispose%2A> 、は<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>メソッドを呼び出して、呼び出しが不要に<xref:System.Object.Finalize%2A>なったことをガベージコレクターに知らせる必要があります。これにより、追加のガベージコレクションが不要になり、オブジェクトの有効期間。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、実装<xref:System.IDisposable>します。
+この規則違反を修正するには、 <xref:System.IDisposable>を実装します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- 型がアンマネージ リソースを参照していない場合、この規則による警告を抑制するのには安全です。 ため、この規則による警告を抑制しないでくださいそれ以外の場合、実装<xref:System.IDisposable>アンマネージ リソースを利用できない、または過少になりますが発生することができます。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+型がアンマネージリソースを参照していない場合は、この規則からの警告を抑制することが安全です。 それ以外の場合は、実装<xref:System.IDisposable>に失敗すると、アンマネージリソースが使用できなくなったり、使用できなくなったりする可能性があるため、この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、実装する型<xref:System.IDisposable>アンマネージ リソースをクリーンアップします。
+次の例は、アンマネージリソース<xref:System.IDisposable>をクリーンアップするためにを実装する型を示しています。
 
- [!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
- [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
+[!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
+[!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>関連するルール
- [CA 2115:GC を呼び出します。KeepAlive ネイティブ リソースを使用する場合](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115GC を呼び出します。ネイティブリソースを使用する場合の KeepAlive](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
- [CA 1816:GC を呼び出します。SuppressFinalize 正しく](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816GC を呼び出します。Gc.suppressfinalize](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
- [CA 2216:破棄可能な型はファイナライザーを宣言する必要があります。](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+[CA2216破棄可能な型はファイナライザーを宣言しなければなりません](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
- [CA1001: 破棄可能なフィールドを所有する型は、破棄可能でなければなりません](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+[CA1001: 破棄可能なフィールドを所有する型は、破棄可能でなければなりません](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
 ## <a name="see-also"></a>関連項目
 

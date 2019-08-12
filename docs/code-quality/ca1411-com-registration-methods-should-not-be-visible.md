@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd721edab080de7708ac395e2a7d7e486c504fba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f6f40308255e0496b2bcccddf4299e83ea93100
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546376"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922053"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411:COM 登録メソッドは参照可能であることはできません
 
@@ -30,30 +30,30 @@ ms.locfileid: "62546376"
 |-|-|
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
 |CheckId|CA1411|
-|カテゴリ|Microsoft.Interoperability|
+|Category|Microsoft. 相互運用性|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
 
-マークされているメソッド、<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>または<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>属性は、外部から参照します。
+<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>属性または属性でマークされたメソッドは、外部から参照できます。 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>
 
 ## <a name="rule-description"></a>規則の説明
- アセンブリ コンポーネント オブジェクト モデル (COM) で登録されると、アセンブリで COM から参照できる各型のレジストリにエントリが追加されます。 マークされているメソッド、<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>と<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>属性中に呼び出される登録および登録解除プロセスでは、それぞれに、これらの型の登録または登録解除に固有のユーザー コードを実行します。 このコードは、これらのプロセス外呼び出されませんする必要があります。
+アセンブリがコンポーネントオブジェクトモデル (COM) に登録されると、アセンブリ内の COM から参照できる各型のエントリがレジストリに追加されます。 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>属性と属性で<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>マークされたメソッドは、登録と登録解除のプロセス中にそれぞれ呼び出され、これらの型の登録/登録解除に固有のユーザーコードを実行します。 このコードは、これらのプロセスの外部では呼び出さないでください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を解決するには、メソッドのアクセシビリティを変更`private`または`internal`(`Friend`で[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
+この規則違反を修正するには、メソッドのアクセシビリティをまたは`private` ( `internal` `Friend`で[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]は) に変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、ルールに違反している 2 つの方法を示します。
+次の例は、規則に違反する2つのメソッドを示しています。
 
- [!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
- [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
 
 ## <a name="related-rules"></a>関連するルール
- [CA 1410:COM 登録メソッドは一致する必要があります。](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+[CA1410COM 登録メソッドは一致しなければなりません](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>関連項目
 

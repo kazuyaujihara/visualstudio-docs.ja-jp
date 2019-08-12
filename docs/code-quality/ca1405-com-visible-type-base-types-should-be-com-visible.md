@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bddd599bb544e000ca1d1269b84e53f51843bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56e6e7a53f5f8b07d1afc8b68ef641c576524316
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546073"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922065"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405:COM 参照可能な型の基本型は COM 参照可能でなければなりません
 
@@ -30,26 +30,26 @@ ms.locfileid: "62546073"
 |-|-|
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
 |CheckId|CA1405|
-|カテゴリ|Microsoft.Interoperability|
-|互換性に影響する変更点|DependsOnFix|
+|Category|Microsoft. 相互運用性|
+|互換性に影響する変更点|依存関係 Sonfix|
 
 ## <a name="cause"></a>原因
- コンポーネント オブジェクト モデル (COM) 参照できる型は、COM 参照可能でない型から派生します。
+コンポーネントオブジェクトモデル (COM) で参照できる型が COM 参照可能ではない型から派生しています。
 
 ## <a name="rule-description"></a>規則の説明
- COM から参照できる型では、新しいバージョンのメンバーを追加、ときに、現在のバージョンにバインドされた COM クライアントが壊れないように厳密なガイドラインに従う必要があります。 COM から参照できる型では、COM のバージョン管理規則に従うと、新しいメンバーを追加する必要はありませんが前提としています。 場合は、COM 参照可能型は COM の非表示の型から派生しのクラス インターフェイスを公開<xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName>または<xref:System.Runtime.InteropServices.ClassInterfaceType>(既定)、基本型のすべてのパブリック メンバー (専用としてマークされている COM 非表示をしない限り、このことは不要)COM に公開されます。 基本データ型は、以降のバージョンで新しいメンバーを追加する場合は、派生型のクラス インターフェイスにバインドされた COM クライアントが壊れる可能性があります。 COM 参照可能な型は、COM クライアントの可能性を低減する COM 参照可能な型からのみ派生する必要があります。
+COM 参照可能な型が新しいバージョンのメンバーを追加する場合、現在のバージョンにバインドされている COM クライアントの互換性を回避するために、厳密なガイドラインに従う必要があります。 COM で参照できない型は、新しいメンバーを追加するときに、これらの COM バージョン管理規則に従う必要がないということを前提としています。 ただし、com 参照可能な型が com 不可視型から派生し、または<xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> <xref:System.Runtime.InteropServices.ClassInterfaceType> (既定値) のクラスインターフェイスを公開する場合は、基本型のすべてのパブリックメンバー (冗長であるとして明示的に com 非表示に設定されている場合を除く)は COM に公開されます。 基本型が後続のバージョンで新しいメンバーを追加する場合、派生型のクラスインターフェイスにバインドされているすべての COM クライアントが破損する可能性があります。 Com 参照可能な型は、com クライアントを中断する可能性を減らすために、com 参照可能な型からのみ派生しなければなりません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、基本型を COM 参照可能または派生型を COM を非表示にします。
+この規則違反を修正するには、基本型 COM を参照できるようにするか、派生型 COM を非表示にします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、規則に違反する型を示します。
+次の例は、規則に違反する型を示しています。
 
- [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
- [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
 
 ## <a name="see-also"></a>関連項目
 

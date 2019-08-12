@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a644cf3dc934676a14f1c5c59a6582fcd45ae7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f8e949e21530654882cba99a7d9fedad8b5b59b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806655"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920264"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219:exception 句に例外を発生させないでください
 
@@ -27,27 +27,27 @@ ms.locfileid: "62806655"
 |-|-|
 |TypeName|DoNotRaiseExceptionsInExceptionClauses|
 |CheckId|CA2219|
-|カテゴリ|Microsoft.Usage|
-|互換性に影響する変更点|なし、あり|
+|Category|Microsoft.Usage|
+|互換性に影響する変更点|中断しない、中断|
 
 ## <a name="cause"></a>原因
- 例外がスローされてから、 `finally`、フィルター処理、または fault 句。
+`finally`、Filter、または fault 句から例外がスローされます。
 
 ## <a name="rule-description"></a>規則の説明
- 例外句で例外が発生した、ときにデバッグの難しさが大幅に増加します。
+例外句で例外が発生すると、デバッグの難易度が大幅に向上します。
 
- 例外が発生したとき、 `finally` fault 句では、新しい例外の表示と非アクティブな例外が存在する場合またはします。 これにより、元のエラーが検出およびデバッグが困難にします。
+`finally`または fault 句で例外が発生すると、新しい例外によってアクティブな例外が非表示になります (存在する場合)。 これにより、元のエラーの検出とデバッグが困難になります。
 
- フィルター句で例外が発生した、ときに、ランタイムはサイレント モードで例外をキャッチし、フィルターが false に評価をします。 False に例外がスロー フィルターからフィルター評価の間の違いを見分ける方法はありません。 検出およびフィルターのロジックでエラーのデバッグが困難になります。
+フィルター句で例外が発生すると、ランタイムはその例外をサイレントにキャッチし、フィルターを false に評価します。 フィルターが false と評価され、フィルターによって例外がスローされるという違いを通知する方法はありません。 これにより、フィルターのロジックでエラーを検出してデバッグすることが難しくなります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則は、この違反を修正するのには明示的に例外が発生しないから、 `finally`、フィルター処理、または fault 句。
+この規則違反を修正するには、 `finally`、filter、または fault 句から明示的に例外を発生させないようにします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則の警告を抑制しないでください。 Exception 句で発生した例外コードの実行に利点をもたらすシナリオはありません。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+このルールの警告を抑制しないでください。 例外句で発生した例外によって実行コードに利点が得られるシナリオはありません。
 
 ## <a name="related-rules"></a>関連するルール
- [CA 1065:予期しない場所で例外を発生させません](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
+[CA1065予期しない場所で例外を発生させない](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
 
 ## <a name="see-also"></a>関連項目
- [デザインの警告](../code-quality/design-warnings.md)
+[デザインの警告](../code-quality/design-warnings.md)

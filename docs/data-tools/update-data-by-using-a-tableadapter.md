@@ -18,35 +18,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ca5161d0ddb73a72b88f36e85bda9206839aec3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61ebcd6c833b55f0769365b89274e35136c914f9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565861"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925346"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>TableAdapter を使用してデータを更新する
 
-データセット内のデータを変更して検証した後のデータベースの更新されたデータを送信呼び出すことによって、`Update`のメソッド、 [TableAdapter](../data-tools/create-and-configure-tableadapters.md)します。 `Update`メソッドを 1 つのデータ テーブルを更新してに基づいて適切なコマンド (INSERT、UPDATE、または DELETE) の実行、<xref:System.Data.DataRow.RowState%2A>表内の各データ行のできます。 データセットの関連するテーブルが、Visual Studio は、更新プログラムを実行するために使用 TableAdapterManager クラスを生成します。 TableAdapterManager クラスにより、データベースで定義されている外部キー制約に基づく正しい順序で更新が行われるようになります。 データ バインド コントロールを使用すると、データ バインディング アーキテクチャには、tableAdapterManager と呼ばれる TableAdapterManager クラスのメンバー変数が作成されます。
+データセット内のデータを変更および検証した後は、 `Update` [TableAdapter](../data-tools/create-and-configure-tableadapters.md)のメソッドを呼び出すことによって、更新されたデータをデータベースに戻すことができます。 メソッド`Update`は、1つのデータテーブルを更新し、テーブル内の各データ行<xref:System.Data.DataRow.RowState%2A>のに基づいて、適切なコマンド (INSERT、UPDATE、または DELETE) を実行します。 データセットに関連テーブルがある場合、Visual Studio によって、更新を実行するために使用する TableAdapterManager クラスが生成されます。 TableAdapterManager クラスは、データベースで定義されている外部キー制約に基づいて、更新が正しい順序で行われることを保証します。 データバインドコントロールを使用すると、データバインディングアーキテクチャによって tableAdapterManager という TableAdapterManager クラスのメンバー変数が作成されます。
 
 > [!NOTE]
-> データセットの内容でデータ ソースを更新しようとするときにエラーが発生することができます。 エラーを回避するをお勧め、アダプターを呼び出すコードを配置する`Update`メソッド内で、 `try` / `catch`ブロックします。
+> データセットの内容を使用してデータソースを更新しようとすると、エラーが発生することがあります。 エラーを回避するには、 `Update`アダプターのメソッドを呼び出すコードを`catch`ブロック`try` /内に配置することをお勧めします。
 
- データ ソースを更新するための実際の手順は、ビジネス ニーズによって異なることができますが、次の手順が含まれています。
+データソースを更新するための正確な手順は、ビジネスニーズによって異なりますが、次の手順が含まれます。
 
-1. アダプターの呼び出す`Update`メソッドで、 `try` / `catch`ブロック。
+1. `Update`ブロックでアダプターの/メソッドを呼び出します。 `try` `catch`
 
 2. 例外が検出された場合は、エラーを引き起こしたデータ行を探します。
 
-3. データの問題を調整 (プログラムを使用できる場合、または無効な行を変更するためのユーザーに提示することで) 行、および更新プログラムをもう一度やり直して (<xref:System.Data.DataRow.HasErrors%2A>、 <xref:System.Data.DataTable.GetErrors%2A>)。
+3. データ行の問題を調整する (可能な場合はプログラムによって、ユーザーに無効な行を表示することによって変更する場合)<xref:System.Data.DataRow.HasErrors%2A>、 <xref:System.Data.DataTable.GetErrors%2A>もう一度更新を実行します (、)。
 
-## <a name="save-data-to-a-database"></a>データをデータベースに保存します。
+## <a name="save-data-to-a-database"></a>データベースにデータを保存する
 
-呼び出す、 `Update` TableAdapter のメソッド。 データベースに書き込まれる値を含むデータ テーブルの名前を渡します。
+TableAdapter の`Update`メソッドを呼び出します。 データベースに書き込まれる値を含むデータテーブルの名前を渡します。
 
 ### <a name="to-update-a-database-by-using-a-tableadapter"></a>TableAdapter を使用してデータベースを更新するには
 
-- TableAdapter を囲む`Update`メソッドで、 `try` / `catch`ブロックします。 次の例の内容を更新する方法を示しています、`Customers`テーブルに`NorthwindDataSet`内から、 `try` / `catch`ブロックします。
+- TableAdapter の`Update`メソッドを/ `try` ブロック`catch`で囲みます。 次の例では`Customers` 、内`NorthwindDataSet`のテーブルの内容を`catch`ブロック内`try` /から更新する方法を示します。
 
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]

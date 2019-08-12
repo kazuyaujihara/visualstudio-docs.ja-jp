@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4ac6947f8424c3b9aa7429ee378b4bb89be73ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d1c2f76258be3b0be6409bffd002fd916883ab2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545242"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921536"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809:ローカルを使用しすぎないでください
 
@@ -27,20 +27,20 @@ ms.locfileid: "62545242"
 |-|-|
 |TypeName|AvoidExcessiveLocals|
 |CheckId|CA1809|
-|カテゴリ|Microsoft.Performance|
+|Category|Microsoft.Performance|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- メンバーには、64 を超えるローカル変数、一部のコンパイラによって生成された可能性がありますが含まれています。
+メンバーに64個を超えるローカル変数が含まれており、その一部がコンパイラによって生成される可能性があります。
 
 ## <a name="rule-description"></a>規則の説明
- 一般的なパフォーマンスの最適化と呼ばれるメモリ内の代わりにプロセッサのレジスタに値を格納する、*レジスタ格納*値。 共通言語ランタイムでは、最大 64 個のローカル変数の enregistration と見なします。 レジスタではない変数をスタックに配置され、操作する前に、レジスタに移動する必要があります。 可能性を許可するすべてのローカル変数がレジスタ格納、64 をローカル変数の数を制限します。
+一般的なパフォーマンスの最適化では、メモリ内ではなくプロセッサレジスタに値を格納します。これは、値の*登録*と呼ばれます。 共通言語ランタイムは、enregistration 用に最大64のローカル変数を考慮します。 Enregistered ではない変数はスタックに配置され、操作の前にレジスタに移動する必要があります。 すべてのローカル変数が enregistered を取得できるようにするには、ローカル変数の数を64に制限します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、64 個のローカル変数を使用する実装をリファクタリングします。
+この規則違反を修正するには、64を超えるローカル変数を使用するように実装をリファクターします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- パフォーマンスに問題がない場合、この規則による警告を抑制するか、ルールを無効にするには安全です。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+パフォーマンスが問題にならない場合は、このルールからの警告を抑制するか、ルールを無効にしても安全です。
 
 ## <a name="related-rules"></a>関連するルール
- [CA 1804:使用されていないローカルを削除します](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804未使用のローカルの削除](../code-quality/ca1804-remove-unused-locals.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46284c37bc40f963253912b4b8b66cd20a871f83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 416e45337dafd11a00e98b9adda9f16b02139f9c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545216"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921655"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111:ポインターは参照可能にすることはできません
 
@@ -27,32 +27,32 @@ ms.locfileid: "62545216"
 |-|-|
 |TypeName|PointersShouldNotBeVisible|
 |CheckId|CA2111|
-|カテゴリ|Microsoft.Security|
+|Category|Microsoft.Security|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- パブリックまたはプロテクト<xref:System.IntPtr?displayProperty=fullName>または<xref:System.UIntPtr?displayProperty=fullName>フィールドは読み取り専用ではありません。
+Public、protected <xref:System.IntPtr?displayProperty=fullName> 、また<xref:System.UIntPtr?displayProperty=fullName>は field は読み取り専用ではありません。
 
 ## <a name="rule-description"></a>規則の説明
- <xref:System.IntPtr> <xref:System.UIntPtr>はアンマネージ メモリへのアクセスに使用されるポインター型。 ポインターは、private、internal、または読み取り専用には、悪意のあるコードは、メモリ内の任意の場所へのアクセスを許可またはアプリケーションまたはシステム エラーが発生する可能性があるポインターの値を変更できます。
+ <xref:System.IntPtr>および<xref:System.UIntPtr>は、アンマネージメモリにアクセスするために使用されるポインター型です。 ポインターがプライベート、内部、または読み取り専用ではない場合、悪意のあるコードがポインターの値を変更して、メモリ内の任意の場所へのアクセスを許可したり、アプリケーションやシステムの障害を引き起こしたりする可能性があります。
 
- ポインターのフィールドを含む型に安全にアクセスする場合を参照してください。 [ca 2112。セキュリティで保護された型はフィールドを公開する必要があります](../code-quality/ca2112-secured-types-should-not-expose-fields.md)します。
+ポインターフィールドを含む型へのアクセスをセキュリティで保護する場合は、 [CA2112 を参照してください。セキュリティで保護された](../code-quality/ca2112-secured-types-should-not-expose-fields.md)型はフィールドを公開しません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- 読み取り専用、internal、またはプライベートにすることで、ポインターを保護します。
+読み取り専用、内部、またはプライベートにして、ポインターをセキュリティで保護します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- ポインターの値に依存しない場合は、この規則による警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+ポインターの値に依存しない場合は、このルールの警告を非表示にします。
 
 ## <a name="example"></a>例
- 次のコードでは、ルールを満たすために違反するポインターを示します。 プライベートでないポインターも規則に違反することに注意してください[ca 1051。インスタンス フィールドを宣言しない](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)します。
+次のコードは、規則に違反しているポインターを示しています。 非プライベートポインターもルール[CA1051 に違反していることに注意してください。参照可能なインスタンスフィールド](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)を宣言しないでください。
 
- [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
+[!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
 
 ## <a name="related-rules"></a>関連するルール
- [CA 2112:セキュリティで保護された型はフィールドを公開する必要があります。](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+[CA2112セキュリティで保護された型はフィールドを公開しません](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA 1051:インスタンス フィールドを宣言しません](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+[CA1051参照可能なインスタンスフィールドを宣言しない](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## <a name="see-also"></a>関連項目
 

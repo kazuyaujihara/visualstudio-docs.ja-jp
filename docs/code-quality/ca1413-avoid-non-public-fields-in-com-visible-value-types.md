@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ac998d8a0e3a8c1883afa07c2cfe16098a2461af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3eb216af1b6cd742aff83b248b6752adea292345
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546096"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921836"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413:Com 参照可能な値型ではパブリックでないフィールドを使用しません
 
@@ -30,33 +30,33 @@ ms.locfileid: "62546096"
 |-|-|
 |TypeName|AvoidNonpublicFieldsInComVisibleValueTypes|
 |CheckId|CA1413|
-|カテゴリ|Microsoft.Interoperability|
+|Category|Microsoft. 相互運用性|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- コンポーネント オブジェクト モデル (COM) を参照できると明確にマークされている値の型は、非パブリック インスタンス フィールドを宣言します。
+コンポーネントオブジェクトモデル (COM) に対して表示されるように明示的にマークされた値型は、非パブリックインスタンスフィールドを宣言します。
 
 ## <a name="rule-description"></a>規則の説明
- COM から参照できる値型の非パブリック インスタンス フィールドは、COM クライアントで表示できます。 情報を公開してはなりません、または意図しないデザインまたはセキュリティ効果が含まれてのフィールドの内容を確認します。
+COM から参照できる値型の非パブリック インスタンス フィールドは、COM クライアントで表示できます。 フィールドの内容を確認して、公開されない情報や意図しないデザインまたはセキュリティ上の影響を与えます。
 
- 既定では、すべてのパブリック値型が COM から参照 ただし、偽陽性を減らすためには、この規則を明示的に指定する型の COM の参照範囲が必要です。 格納しているアセンブリをマークする必要があります、<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>に設定`false`で型をマークする必要があり、<xref:System.Runtime.InteropServices.ComVisibleAttribute>に設定`true`します。
+既定では、すべてのパブリック値の型は COM から参照できます。 ただし、偽陽性を減らすために、このルールでは、型の COM 参照可能範囲が明示的に指定されている必要があります。 含んでいる<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>アセンブリは、がに`false`設定されたでマークされ、型<xref:System.Runtime.InteropServices.ComVisibleAttribute>はに`true`設定されたでマークされる必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- 非表示フィールドの変更にこの規則の違反を修正するには、参照型に値の型を変更または削除、<xref:System.Runtime.InteropServices.ComVisibleAttribute>型からの属性。
+この規則の違反を修正し、フィールドを非表示のままにするには、値の型を参照<xref:System.Runtime.InteropServices.ComVisibleAttribute>型に変更するか、型から属性を削除します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- フィールドをパブリックに公開が許容される場合は、この規則による警告を抑制するのには安全です。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+フィールドの公開が許容される場合は、この規則による警告を抑制しても安全です。
 
 ## <a name="example"></a>例
- 次の例では、規則に違反する型を示します。
+次の例は、規則に違反する型を示しています。
 
- [!code-csharp[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/CSharp/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.cs)]
- [!code-vb[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/VisualBasic/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.vb)]
+[!code-csharp[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/CSharp/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.cs)]
+[!code-vb[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/VisualBasic/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.vb)]
 
 ## <a name="related-rules"></a>関連するルール
- [CA1407:COM 参照可能な型で静的メンバーを回避します。](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+[CA1407COM 参照可能な型で静的メンバーを避けます](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA 1017:アセンブリに comvisibleattribute を設定します](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017アセンブリを ComVisibleAttribute にマークします](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>関連項目
 

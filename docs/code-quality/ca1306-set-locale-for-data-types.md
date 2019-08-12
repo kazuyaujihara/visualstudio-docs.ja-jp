@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47faa5e496585940f61f94bb6dfb0b8d9d70f752
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 893844741c848bee759f56dd027c9976a21902e8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797512"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922785"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306:データ型のロケールを設定します
 
@@ -27,25 +27,25 @@ ms.locfileid: "62797512"
 |-|-|
 |TypeName|SetLocaleForDataTypes|
 |CheckId|CA1306|
-|カテゴリ|Microsoft.Globalization|
+|カテゴリ|Microsoft のグローバリゼーション|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- 作成された 1 つまたは複数のメソッドまたはコンス トラクター<xref:System.Data.DataTable?displayProperty=fullName>または<xref:System.Data.DataSet?displayProperty=fullName>インスタンスし、ロケールのプロパティを明示的に設定しなかった (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName>または<xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>)。
+メソッドまたはコンストラクターによって 1 <xref:System.Data.DataTable?displayProperty=fullName>つ<xref:System.Data.DataSet?displayProperty=fullName>以上のインスタンスが作成され、locale プロパティ<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> ( <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>または) が明示的に設定されていませんでした。
 
 ## <a name="rule-description"></a>規則の説明
- ロケールは、数値、通貨記号、および並べ替え順序の使用を書式設定などのデータのカルチャに固有のプレゼンテーション要素を決定します。 作成するときに、<xref:System.Data.DataTable>または<xref:System.Data.DataSet>ロケールを明示的に設定する必要があります。 既定では、これらの型のロケールは、現在のカルチャです。 データベースまたはファイルに格納されているが、グローバルに共有するデータ、ロケールがインバリアント カルチャに設定する通常 (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>)。 データがカルチャ間で共有される場合、既定のロケールを使用する可能性がありますの内容、<xref:System.Data.DataTable>または<xref:System.Data.DataSet>に表示されるか、正しく解釈されます。
+ロケールによって、データのカルチャ固有のプレゼンテーション要素が決定されます。たとえば、数値、通貨記号、および並べ替え順序に使用する書式設定などです。 <xref:System.Data.DataTable>または<xref:System.Data.DataSet>を作成する場合は、ロケールを明示的に設定する必要があります。 既定では、これらの型のロケールは現在のカルチャです。 データベースまたはファイルに格納され、グローバルに共有されるデータの場合、ロケールは通常、インバリアントカルチャ (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>) に設定する必要があります。 データがカルチャ間で共有されている場合、既定のロケールを使用<xref:System.Data.DataTable>する<xref:System.Data.DataSet>と、またはの内容が正しく表示されたり解釈されたりする可能性があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、ロケールを明示的に設定、<xref:System.Data.DataTable>または<xref:System.Data.DataSet>します。
+この規則違反を修正するに<xref:System.Data.DataTable>は、または<xref:System.Data.DataSet>のロケールを明示的に設定します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- 限られたローカル ユーザーを対象にライブラリまたはアプリケーションでは、データが共有されていない、または既定の設定がサポートされているすべてのシナリオでは、目的の動作が得られますときに、この規則による警告を非表示にも安全です。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+ライブラリまたはアプリケーションが限定されたローカルユーザーを対象としている場合、データが共有されていない場合、または既定の設定により、サポートされているすべてのシナリオで望ましい動作が得られる場合は、この規則からの警告を抑制することが安全です。
 
 ## <a name="example"></a>例
- 次の例では、2 つ作成されます<xref:System.Data.DataTable>インスタンス。
+次の例では<xref:System.Data.DataTable> 、2つのインスタンスを作成します。
 
- [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
+[!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
 
 ## <a name="see-also"></a>関連項目
 

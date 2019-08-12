@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1774b3feb2da4939420bf75506892aac6dedd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c37affc585653807912d00c1cfe365853fd6260b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797529"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921807"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600:アイドル状態のプロセス優先度を使用しません
 
@@ -27,17 +27,17 @@ ms.locfileid: "62797529"
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
-|カテゴリ|Microsoft.Mobility|
+|Category|Microsoft モビリティ|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- このルールは、プロセスに設定されているときに発生します。`ProcessPriorityClass.Idle`します。
+このルールは、プロセスがに`ProcessPriorityClass.Idle`設定されている場合に発生します。
 
 ## <a name="rule-description"></a>規則の説明
- プロセス優先順位に Idle を設定しないでください。 持つプロセス`System.Diagnostics.ProcessPriorityClass.Idle`アイドル状態になるし、スタンバイをブロックするために、CPU を占有します。
+プロセス優先順位に Idle を設定しないでください。 が`System.Diagnostics.ProcessPriorityClass.Idle`あるプロセスは、CPU がアイドル状態になると CPU を占有するため、スタンバイをブロックします。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- プロセスを設定`ProcessPriorityClass.BelowNormal`します。
+プロセスをに`ProcessPriorityClass.BelowNormal`設定します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- アイドル状態のプロセスの優先度が必要で、モビリティに関する考慮事項を安全に無視できる場合にのみ、このルールを抑制する必要があります。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+このルールは、アイドル状態のプロセスの優先順位が必要で、モビリティに関する考慮事項を安全に無視できる場合にのみ抑制する必要があります。

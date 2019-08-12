@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e57607cdfa8790c9b9fd4e692956f7bb823981a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744854"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921297"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:対象のフレームワークから API のみを使用します
 
@@ -27,44 +27,44 @@ ms.locfileid: "66744854"
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|カテゴリ|Microsoft.Portability|
-|互換性に影響する変更点|– の外部から参照できるメンバーまたは型のシグネチャに対して発生した場合。<br /><br /> 改行しない - メソッドの本体で発生したときにします。|
+|Category|Microsoft. 移植性|
+|互換性に影響する変更点|中断-外部から参照できるメンバーまたは型のシグネチャに対して発生した場合。<br /><br /> 非中断-メソッドの本体で発生した場合。|
 
 ## <a name="cause"></a>原因
- メンバーまたはないプロジェクトの対象とする framework に含まれていたサービス パックで導入された型、メンバーまたは型を使用します。
+メンバーまたは型が、プロジェクトの対象となるフレームワークに含まれていなかった Service Pack で導入されたメンバーまたは型を使用しています。
 
 ## <a name="rule-description"></a>規則の説明
- 新しいメンバーと型は、.NET Framework 2.0 Service Pack 1 および 2、.NET Framework 3.0 Service Pack 1 と 2、および .NET Framework 3.5 Service Pack 1 で追加されました。 .NET Framework のメジャー バージョンを対象とするプロジェクトは、新しい Api でこれらの依存関係を意図せず実行できます。 この依存関係を防ぐためには、この規則は、任意の新しいメンバーとプロジェクトのターゲット フレームワークでは既定で含まれていない型の使用に適用されます。
+新しいメンバーと型は .NET Framework 2.0 Service Pack 1 および2、.NET Framework 3.0 Service Pack 1 と2、および .NET Framework 3.5 Service Pack 1 に含まれていました。 .NET Framework のメジャーバージョンを対象とするプロジェクトでは、これらの新しい Api に対する依存関係を意図せずに取得できます。 この依存関係を防ぐため、この規則は、プロジェクトのターゲットフレームワークに既定で含まれていない新しいメンバーおよび型の使用時に適用されます。
 
- **ターゲット フレームワークおよびサービス パックの依存関係**
+**ターゲットフレームワークと Service Pack の依存関係**
 
 |||
 |-|-|
-|ターゲット フレームワーク|導入されたメンバーの使用状況で起動されます。|
-|.NET Framework 2.0|.NET framework 2.0 SP1 では、.NET Framework 2.0 SP2|
-|.NET Framework 3.0|.NET framework 2.0 SP1、.NET Framework 2.0 SP2、.NET Framework 3.0 SP1、.NET Framework 3.0 SP2|
+|ターゲットフレームワークが|で導入されたメンバーの使用時に発生します|
+|.NET Framework 2.0|.NET Framework 2.0 SP1、.NET Framework 2.0 SP2|
+|.NET Framework 3.0|.NET Framework 2.0 SP1、.NET Framework 2.0 SP2、.NET Framework 3.0 SP1、.NET Framework 3.0 SP2|
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|N/A|
 
- プロジェクトのターゲット フレームワークを変更するを参照してください。[方法.NET のバージョンを対象](../ide/how-to-target-a-version-of-the-dotnet-framework.md)します。
+プロジェクトのターゲットフレームワークを変更するには[、「方法:特定の .NET バージョンをターゲットにする](../ide/how-to-target-a-version-of-the-dotnet-framework.md)」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- サービス パックへの依存関係を削除するには、新しいメンバーまたは型のすべての使用状況を削除します。 これが意図的な依存関係の場合は、警告を抑制するか、または、このルールをオフにします。
+Service Pack の依存関係を削除するには、新しいメンバーまたは型のすべての使用を削除します。 これが意図的な依存関係である場合は、警告を抑制するか、この規則を無効にします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- これが、指定されたサービス パックに依存関係が意図的でない場合は、この規則による警告を抑制しないでください。 このような状況で、アプリケーションは、この service pack がインストールされていないシステムで実行する失敗可能性があります。 警告を抑制または意図的な依存関係の場合に、このルールをオフにします。
-
-## <a name="example"></a>例
- 次の例では、.NET 2.0 Service Pack 1 で使用できるだけが DateTimeOffset 型を使用するクラスを示します。 この例では、.NET Framework 2.0 がプロジェクトのプロパティでターゲット フレームワーク ドロップダウン リストで選択されている必要があります。
-
- [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+指定された Service Pack に意図的に依存していない場合は、この規則による警告を抑制しないでください。 このような状況では、この Service Pack インストールされていないシステムでは、アプリケーションの実行が失敗する可能性があります。 意図的な依存関係である場合は、警告を抑制するか、この規則を無効にします。
 
 ## <a name="example"></a>例
- 次の例は、DateTimeOffset 型の使用状況を DateTime 型に置き換えることにより、前に説明した違反を修正します。
+次の例は、.NET 2.0 Service Pack 1 でのみ使用できる DateTimeOffset 型を使用するクラスを示しています。 この例では、プロジェクトプロパティの [ターゲットフレームワーク] ボックスの一覧で .NET Framework 2.0 が選択されている必要があります。
 
- [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
+[!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
+
+## <a name="example"></a>例
+次の例では、DateTimeOffset 型の使用法を DateTime 型に置き換えることによって、前述の違反を修正します。
+
+[!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
 
 ## <a name="see-also"></a>関連項目
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [フレームワークの概要を対象とします。](../ide/visual-studio-multi-targeting-overview.md)
+- [フレームワーク対象設定機能の概要](../ide/visual-studio-multi-targeting-overview.md)

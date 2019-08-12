@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05dbe964a16f838088fe8b053d59c1916daf38f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4196cb91e1b866453de54347b8a67edd3dc2dc96
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546402"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921890"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409:COM 参照可能な型は作成可能でなければなりません
 
@@ -27,27 +27,27 @@ ms.locfileid: "62546402"
 |-|-|
 |TypeName|ComVisibleTypesShouldBeCreatable|
 |CheckId|CA1409|
-|カテゴリ|Microsoft.Interoperability|
+|カテゴリ|Microsoft. 相互運用性|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- コンポーネント オブジェクト モデル (COM) を参照できると明確にマークされている参照型では、パブリックのパラメーター化されたコンス トラクターが含まれていますが、(パラメーターなしの) パブリックの既定のコンス トラクターが含まれていません。
+コンポーネントオブジェクトモデル (COM) に対して表示されるように明示的にマークされている参照型は、パブリックなパラメーター化されたコンストラクターを含んでいますが、パブリックな既定 (パラメーターなし) コンストラクターを含んでいません。
 
 ## <a name="rule-description"></a>規則の説明
- COM クライアントでは、パブリックの既定のコンス トラクターのない型を作成できません。 ただし、種類もアクセスできます COM クライアントで別の手段の種類を作成し (たとえば、メソッド呼び出しの戻り値) を使用してクライアントに渡すことがある場合。
+パブリックな既定のコンストラクターを持たない型は、COM クライアントで作成できません。 ただし、型を作成し、それをクライアントに渡す (たとえば、メソッド呼び出しの戻り値を使用して) 場合、COM クライアントからもこの型にアクセスできます。
 
- 派生した型を規則<xref:System.Delegate?displayProperty=fullName>します。
+このルールは、から<xref:System.Delegate?displayProperty=fullName>派生した型を無視します。
 
- 既定では、次は COM から参照できる: アセンブリ、型のパブリック、パブリック型は、パブリック インスタンス メンバーおよびパブリック値型のすべてのメンバー。
+既定では、アセンブリ、パブリック型、パブリック型のパブリックインスタンスメンバー、およびパブリック値型のすべてのメンバーに対して、COM から参照できます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、既定のパブリック コンス トラクターを追加または削除、<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>型から。
+この規則違反を修正するには、パブリックの既定のコンストラクターを追加<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>するか、型からを削除します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- COM クライアントを作成し、オブジェクトを他の方法が提供されている場合は、この規則による警告を抑制するのには安全です。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+オブジェクトを作成して COM クライアントに渡すために他の方法が提供されている場合は、この規則による警告を抑制しても安全です。
 
 ## <a name="related-rules"></a>関連するルール
- [CA 1017:アセンブリに comvisibleattribute を設定します](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017アセンブリを ComVisibleAttribute にマークします](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>関連項目
 

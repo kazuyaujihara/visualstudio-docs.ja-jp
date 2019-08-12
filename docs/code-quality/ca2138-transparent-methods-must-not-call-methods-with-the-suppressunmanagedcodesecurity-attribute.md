@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e302c9e8cc74d461dc67237bd62b34097c0aceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 316aef3b0f1f715857fde8eaf2a6e74b1a49e40f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542184"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920574"
 ---
 # <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138:透過的メソッドは、SuppressUnmanagedCodeSecurity 属性を持つメソッドを呼び出してはならない
 
@@ -23,22 +23,22 @@ ms.locfileid: "62542184"
 |-|-|
 |TypeName|TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods|
 |CheckId|CA2138|
-|カテゴリ|Microsoft.Security|
+|Category|Microsoft.Security|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- 透過的セキュリティ メソッドでマークされているメソッドを呼び出し、<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>属性。
+透過的セキュリティメソッドは、 <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>属性でマークされたメソッドを呼び出します。
 
 ## <a name="rule-description"></a>規則の説明
- このルールは、P/invoke を使用して、たとえば、ネイティブ コードを直接呼び出すすべての透過的メソッドに対して適用されます (プラットフォーム呼び出し) を呼び出します。 マークされている P/invoke と COM の相互運用メソッド、<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>呼び出し元のメソッドに対して行われている LinkDemand で結果の属性します。 セキュリティ透過的なコードでは、LinkDemands を満たすことはできません、ため、コードも呼び出すことはできません、SuppressUnmanagedCodeSecurity 属性でマークされているメソッドまたは SuppressUnmanagedCodeSecurity 属性でマークされたクラスのメソッド。 メソッドは失敗するか、要求は、フル アクセス要求に変換されます。
+この規則は、たとえば、P/Invoke (プラットフォーム呼び出し) 呼び出しを使用してネイティブコードを直接呼び出す透過的メソッドに対して適用されます。 <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>属性でマークされた P/Invoke メソッドと COM 相互運用メソッドは、呼び出し元のメソッドに対して LinkDemand を実行します。 透過的セキュリティコードは Linkdemand を満たすことができないため、コードでは、SuppressUnmanagedCodeSecurity 属性でマークされたメソッド、または SuppressUnmanagedCodeSecurity 属性でマークされたクラスのメソッドを呼び出すことはできません。 メソッドが失敗するか、要求が完全な要求に変換されます。
 
- この規則に違反が発生、<xref:System.MethodAccessException>レベル 2 のセキュリティ透過性モデルとの完全な要求で<xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A>レベル 1 の透過性モデルでします。
+この規則<xref:System.MethodAccessException>を違反すると、レベル2のセキュリティ透過性モデルのになり、レベル1の<xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A>透過性モデルのに対する完全な要求が発生します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- このルールの違反を修正するには、削除、<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>属性し、メソッド、<xref:System.Security.SecurityCriticalAttribute>または<xref:System.Security.SecuritySafeCriticalAttribute>属性。
+この規則違反を修正するに<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> <xref:System.Security.SecurityCriticalAttribute>は、属性を削除し、メソッドを<xref:System.Security.SecuritySafeCriticalAttribute>属性または属性でマークします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- [!code-csharp[FxCop.Security.CA2138.TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods#1](../code-quality/codesnippet/CSharp/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute_1.cs)]
+[!code-csharp[FxCop.Security.CA2138.TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods#1](../code-quality/codesnippet/CSharp/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute_1.cs)]

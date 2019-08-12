@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816635"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923997"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>マネージド コードの "拡張正確性規則" 規則セット
-Microsoft 拡張正確性規則のルール セットは、コード分析によって報告されるロジックとフレームワーク使用エラーを最大化します。 COM 相互運用性やモバイル アプリケーションなどの特定のシナリオには、重点が置かれています。 この規則セットは、プロジェクトまたはプロジェクトに追加の問題を見つけるためにこれらのシナリオのいずれかが適用される場合などを考慮する必要があります。
+Microsoft 拡張正確性規則の規則セットは、コード分析によって報告されるロジックおよびフレームワークの使用エラーを最大化します。 COM 相互運用性やモバイルアプリケーションなど、特定のシナリオに重点が置かれています。 これらのシナリオのいずれかがプロジェクトに適用される場合、またはプロジェクトの追加の問題を検出する場合は、この規則セットを含めることを検討してください。
 
- Microsoft 拡張正確性規則のルール セットには、Microsoft 基本正確性規則のルールで設定された規則が含まれています。 基本的な正確性規則には、Microsoft 最小推奨規則のルールで設定される規則が含まれます。 詳細については、次を参照してください[基本正確性規則ルールセットのマネージ コードの](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)と[マネージ推奨規則のルールは、マネージ コードの設定。](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Microsoft 拡張正確性規則の規則セットには、Microsoft の "基本正確性規則" 規則セットに含まれる規則が含まれています。 基本的な正確性規則には、"Microsoft の最小推奨規則" 規則セットに含まれる規則が含まれます。 詳細については、「マネージコードとマネージド[コードの "マネージ推奨規則" 規則セット](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)[の "基本的な正確性規則規則セット](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)" を参照してください。
 
- 次の表では、すべての Microsoft 拡張正確性規則のルール セット内の規則について説明します。
+次の表では、Microsoft 拡張正確性規則の規則セットに含まれるすべての規則について説明します。
 
 |ルール|説明|
 |----------|-----------------|
@@ -64,7 +64,7 @@ Microsoft 拡張正確性規則のルール セットは、コード分析によ
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|透過的メソッドは、検証可能な IL のみを含まなければならない|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|透過的メソッドは、SuppressUnmanagedCodeSecurity 属性を持つメソッドを呼び出してはならない|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|透過的コードは、セキュリティ上重要な項目を参照してはならない|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|透過的メソッドは、Linkdemand を満たしていませんする必要があります。|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|透過的メソッドは Linkdemand を満たしてはならない|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|型は、基本型およびインターフェイスと同程度以上、重要でなければならない|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|透過コードは、セキュリティ アサートを使用してはならない|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない|
@@ -90,22 +90,22 @@ Microsoft 拡張正確性規則のルール セットは、コード分析によ
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|オーバーロードする加算および減算で、演算子 equals をオーバーロードします|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|ローカライズされるパラメーターとしてリテラルを渡さない|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|文字列を大文字に標準化します|
-|[CA 1806](../code-quality/ca1806-do-not-ignore-method-results.md)|メソッドの結果を無視しない|
-|[CA 1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|GC.SuppressFinalize を正しく呼び出します|
-|[CA 1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|プロパティは、配列を返すことはできません|
+|[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|メソッドの結果を無視しない|
+|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|GC.SuppressFinalize を正しく呼び出します|
+|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|プロパティは、配列を返すことはできません|
 |[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|文字列の長さを使用して空の文字列をテストします|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|対象のフレームワークから API のみを使用します|
-|[CA 2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|GC.KeepAlive への呼び出しを削除します|
+|[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|GC.KeepAlive への呼び出しを削除します|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|SafeHandle を使用して、ネイティブ リソースを要約します|
-|[CA 2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|汎用ハンドラーの CLSCompliant でない例外をキャッチします|
-|[CA 2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|読み取り専用の変更可能な参照型を宣言しません|
-|[CA 2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|配列フィールドを読み取り専用にすることはできません|
-|[CA 2106](../code-quality/ca2106-secure-asserts.md)|アサートをセキュリティで保護します|
-|[CA 2115](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)|ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します|
-|[CA 2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|プライベート インターフェイスを満たすメソッドをシールします|
+|[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|汎用ハンドラーの CLSCompliant でない例外をキャッチします|
+|[CA2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|読み取り専用の変更可能な参照型を宣言しません|
+|[CA2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|配列フィールドを読み取り専用にすることはできません|
+|[CA2106](../code-quality/ca2106-secure-asserts.md)|アサートをセキュリティで保護します|
+|[CA2115](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)|ネイティブ リソースを使用しているときには GC.KeepAlive を呼び出します|
+|[CA2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|プライベート インターフェイスを満たすメソッドをシールします|
 |[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|シリアル化コンストラクターをセキュリティで保護します|
-|[CA 2121](../code-quality/ca2121-static-constructors-should-be-private.md)|静的コンストラクターはプライベートでなければなりません|
-|[CA 2130](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|セキュリティ上重要な定数は透過的である必要がある|
+|[CA2121](../code-quality/ca2121-static-constructors-should-be-private.md)|静的コンストラクターはプライベートでなければなりません|
+|[CA2130](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|セキュリティ上重要な定数は透過的である必要がある|
 |[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Win32 API に相当するマネージド API を使用します|
 |[CA2215](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|Dispose メソッドが基底クラスの Dispose を呼び出す必要があります|
 |[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|ファイナライザーは保護されなければなりません|
@@ -117,8 +117,8 @@ Microsoft 拡張正確性規則のルール セットは、コード分析によ
 |[CA2239](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|省略可能なフィールドに、逆シリアル化メソッドを指定します|
 |[CA1032](../code-quality/ca1032-implement-standard-exception-constructors.md)|標準例外コンストラクターを実装します|
 |[CA1054](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|URI パラメーターを文字列にすることはできません|
-|[CA 1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|URI 戻り値を文字列にすることはできません|
-|[CA 1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|URI プロパティを文字列にすることはできません|
+|[CA1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|URI 戻り値を文字列にすることはできません|
+|[CA1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|URI プロパティを文字列にすることはできません|
 |[CA1057](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|文字列 URI オーバーロードが、System.Uri オーバーロードを呼び出します|
 |[CA1402](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md)|COM 参照可能インターフェイスでのオーバーロードを避けてください|
 |[CA1406](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)|Visual Basic 6 クライアントに対しては Int64 引数を使用しません|
@@ -129,17 +129,17 @@ Microsoft 拡張正確性規則のルール セットは、コード分析によ
 |[CA1412](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)|ComSource インターフェイスを IDispatch として設定します|
 |[CA1413](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)|Com 参照可能な値型ではパブリックでないフィールドを使用しません|
 |[CA1414](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|ブール型の P/Invoke 引数を MarshalAs に設定します|
-|[CA 1600](../code-quality/ca1600-do-not-use-idle-process-priority.md)|アイドル状態のプロセス優先度を使用しません|
-|[CA 1601](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|電源の状態の変更を妨げるタイマーを使用しません|
+|[CA1600](../code-quality/ca1600-do-not-use-idle-process-priority.md)|アイドル状態のプロセス優先度を使用しません|
+|[CA1601](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|電源の状態の変更を妨げるタイマーを使用しません|
 |[CA1824](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md)|アセンブリを NeutralResourcesLanguageAttribute に設定します|
-|[CA 2001](../code-quality/ca2001-avoid-calling-problematic-methods.md)|問題が発生する可能性のあるメソッドは呼び出しません|
+|[CA2001](../code-quality/ca2001-avoid-calling-problematic-methods.md)|問題が発生する可能性のあるメソッドは呼び出しません|
 |[CA2003](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|ファイバーをスレッドとして扱いません|
 |[CA2135](../code-quality/ca2135-level-2-assemblies-should-not-contain-linkdemands.md)|レベル 2 のアセンブリは LinkDemand を含んではならない|
 |[CA2136](../code-quality/ca2136-members-should-not-have-conflicting-transparency-annotations.md)|メンバーには、透過性注釈の競合があってはならない|
 |[CA2139](../code-quality/ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md)|透過的メソッドは、HandleProcessCorruptingExceptions 属性を使用してはならない|
-|[CA 2142](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)|透過的コードは、LinkDemand を使用して保護されてはならない|
-|[CA 2143](../code-quality/ca2143-transparent-methods-should-not-use-security-demands.md)|透過的メソッドは、セキュリティ確認要求を使用してはならない|
-|[CA 2144](../code-quality/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)|透過的コードは、バイト配列からアセンブリを読み込んではならない|
+|[CA2142](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)|透過的コードは、LinkDemand を使用して保護されてはならない|
+|[CA2143](../code-quality/ca2143-transparent-methods-should-not-use-security-demands.md)|透過的メソッドは、セキュリティ確認要求を使用してはならない|
+|[CA2144](../code-quality/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)|透過的コードは、バイト配列からアセンブリを読み込んではならない|
 |[CA2145](../code-quality/ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md)|透過的メソッドを SuppressUnmanagedCodeSecurityAttribute で修飾してはならない|
 |[CA2204](../code-quality/ca2204-literals-should-be-spelled-correctly.md)|リテラルに正しいスペルを要求|
 |[CA2211](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|非定数フィールドは表示されません|
@@ -147,7 +147,7 @@ Microsoft 拡張正確性規則のルール セットは、コード分析によ
 |[CA2218](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)|オーバーライドする Equals で GetHashCode をオーバーライドします|
 |[CA2219](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)|exception 句に例外を発生させないでください|
 |[CA2225](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|演算子オーバーロードには名前付けされた代替が存在します|
-|[CA2228](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|未公開のリソース形式を出荷しません|
+|[CA2228: 未公開](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|未公開のリソース形式を出荷しません|
 |[CA2230](../code-quality/ca2230-use-params-for-variable-arguments.md)|可変引数に対して param を使用します|
 |[CA2233](../code-quality/ca2233-operations-should-not-overflow.md)|操作はオーバーフローできません|
 |[CA2234](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|文字列の代わりに System.Uri オブジェクトを渡します|

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4a292cb3f3221b36c163c87881fd23db0606399
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5014bfe809cb5d56a22e971833128d1f48d77319
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779420"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922965"
 ---
 # <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025:反復する引数を params 配列で置き換えます
 
@@ -27,22 +27,22 @@ ms.locfileid: "62779420"
 |-|-|
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
-|カテゴリ|Microsoft.Design|
+|Category|Microsoft.Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
- パブリック型の public または protected のメソッドが複数の 3 つのパラメーターとその最後の 3 つのパラメーターは、同じ型。
+パブリック型のパブリックメソッドまたはプロテクトメソッドに3つ以上のパラメーターがあり、その最後の3つのパラメーターが同じ型です。
 
 ## <a name="rule-description"></a>規則の説明
- 引数の正確な数は不明であり、可変個引数は同じ型、または同じの型として渡すことができる場合、引数を繰り返すのではなく、パラメーター配列を使用します。 たとえば、<xref:System.Console.WriteLine%2A>メソッドは、パラメーター配列を使用して、任意の数をそのまま使用する汎用のオーバー ロードを提供します。<xref:System.Object>引数。
+引数の正確な数が不明で、可変個の引数が同じ型である場合、または同じ型として渡すことができる場合は、引数を繰り返す代わりにパラメーター配列を使用します。 たとえば、メソッドは<xref:System.Console.WriteLine%2A> 、パラメーター配列を使用して任意の数の<xref:System.Object>引数を受け入れる汎用オーバーロードを提供します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正するには、パラメーター配列で引数を繰り返すを置き換えます。
+この規則違反を修正するには、繰り返し引数をパラメーター配列に置き換えます。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告を抑制しても安全では常にただし、この設計では、ユーザビリティの問題を生じる可能性があります。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+このルールからの警告を抑制するのは常に安全です。ただし、このような設計では、ユーザビリティの問題が発生する可能性があります。
 
 ## <a name="example"></a>例
- 次の例では、この規則に違反する型を示します。
+次の例は、この規則に違反する型を示しています。
 
- [!code-csharp[FxCop.Design.RepeatArgs#1](../code-quality/codesnippet/CSharp/ca1025-replace-repetitive-arguments-with-params-array_1.cs)]
+[!code-csharp[FxCop.Design.RepeatArgs#1](../code-quality/codesnippet/CSharp/ca1025-replace-repetitive-arguments-with-params-array_1.cs)]
