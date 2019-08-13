@@ -26,6 +26,8 @@
           href: hosting-web-apps-in-docker.md
         - name: Azure App Service に配置する
           href: deploy-app-service.md
+        - name: Docker Hub に配置する
+          href: deploy-docker-hub.md
         - name: コンテナーを表示および診断する
           href: view-and-diagnose-containers.md
         - name: コンテナー ツールを構成する

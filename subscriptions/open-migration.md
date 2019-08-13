@@ -21,7 +21,7 @@ Visual Studio [サブスクリプション管理ポータル](https://manage.vis
 
 ## <a name="existing-partners-adding-a-new-license"></a>新しいライセンスを追加する既存のパートナー
 これは [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に既にアクセスでき、管理が必要な Visual Studio サブスクリプションによるオープン ライセンスの注文を行ったパートナーに適用されます。  パートナーが新しいライセンスを追加する手順は次のとおりです。
-- https://manage.visualstudio.com にサインインします。
+- [https://manage.visualstudio.com](https://manage.visualstudio.com ) にサインインします。
 - 契約のドロップダウンを選択し、 **[+New Open License]\(+新しいオープン ライセンス\)** のオプションが表示されるまで下にスクロールします。
 - ポップアップ パネルで、契約にある認証番号、ライセンス番号、お客様のメール アドレスを入力し、チェックボックスをオンにして、 **[送信]** をクリックします。
 
@@ -41,7 +41,7 @@ Visual Studio [サブスクリプション管理ポータル](https://manage.vis
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Visual Studio サブスクリプション管理ポータルに直接アクセスしている新しいパートナー
 このシナリオは、既に新しいオープン ライセンスの注文を行っているものの、[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) には登録せずに [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に直接アクセスしている新しいパートナーに適用されます。  この場合は、以下の手順に従ってください。
-- https://manage.visualstudio.com にアクセスします。
+- [https://manage.visualstudio.com](https://manage.visualstudio.com ) にアクセスします。
 - 認識されているユーザーではないというエラーが表示されます。
 - **OLP パートナー**の登録オプションを選択し、注文に使用した認証番号、ライセンス番号、お客様のメール アドレスを入力して、チェックボックスをオンにし、 **[送信]** をクリックします。
 
