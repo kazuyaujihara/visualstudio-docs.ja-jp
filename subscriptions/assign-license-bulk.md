@@ -17,7 +17,7 @@ ms.locfileid: "68610522"
 サブスクリプション管理ポータルでは、ユーザーを一度に 1 人ずつ追加することも、大きなグループ単位で追加することもできます。  ユーザーを個別に追加するには、[1 人のユーザーの追加](assign-license.md)に関する記事を参照してください。
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>一括追加を使用してサブスクリプションを割り当てる
-1. https://manage.visualstudio.com で Visual Studio サブスクリプション管理ポータルにサインインします。
+1. [https://manage.visualstudio.com](https://manage.visualstudio.com ) で Visual Studio サブスクリプション管理ポータルにサインインします。
 2. 複数のサブスクライバーを一度に追加するには、 **[サブスクライバーの管理]** タブに移動します。上部リボンの **[一括追加]** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![複数のサブスクライバーを追加する](media/add-multiple-subscribers.png)

@@ -1,4 +1,4 @@
----
+﻿---
 title: プロジェクトとソリューションの概要
 ms.date: 07/22/2019
 ms.technology: vs-ide-general
