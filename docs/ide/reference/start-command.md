@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f7488353cd4c64b0afca27060c364a1f9ddc6f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f455306a87c82c5cd4fe55ccacdbba070b4467c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950435"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926028"
 ---
 # <a name="start-command"></a>Start コマンド
 スタートアップ プロジェクトのデバッグを開始します。
@@ -30,15 +30,15 @@ Debug.Start [address]
 ```
 
 ## <a name="arguments"></a>引数
- `address`
+`address`
 
- 任意。 プログラムの実行を中断するアドレス。ソース コードでのブレークポイントに似ています。 この引数は、デバッグ モードでのみ有効です。
+任意。 プログラムの実行を中断するアドレス。ソース コードでのブレークポイントに似ています。 この引数は、デバッグ モードでのみ有効です。
 
 ## <a name="remarks"></a>解説
- **Start** コマンドを実行すると、指定したアドレスまで RunToCursor 操作が実行されます。
+**Start** コマンドを実行すると、指定したアドレスまで RunToCursor 操作が実行されます。
 
 ## <a name="example"></a>例
- この例では、デバッガーを起動し、発生した例外はすべて無視されます。
+この例では、デバッガーを起動し、発生した例外はすべて無視されます。
 
 ```cmd
 >Debug.Start

@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 8dd991af976c9262a6a1af7813c1201f68b36ab8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: c2f3ec4accc9353923e80017774f5a2b15fe095d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431743"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926637"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes を使用したテストでコードを分離する
 
@@ -245,8 +245,8 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 また、特定のインスタンス、コンストラクター、およびプロパティに shim を作成することもできます。 詳細については、「[shim を使用して単体テストでアプリケーションを他のアセンブリから分離する](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)」を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [スタブを使用して単体テストでアプリケーションの各部分を相互に分離する](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
+[スタブを使用して単体テストでアプリケーションの各部分を相互に分離する](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
- [shim を使用して単体テストでアプリケーションを他のアセンブリから分離する](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
+[shim を使用して単体テストでアプリケーションを他のアセンブリから分離する](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 
- [Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
+[Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)

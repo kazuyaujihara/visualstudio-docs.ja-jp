@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5116c2a979a45414046f0058d85ccbf0d179e24
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046853"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919473"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio の生産性に関するヒント
 
@@ -46,7 +46,7 @@ ms.locfileid: "67046853"
 
 ## <a name="navigate-within-your-code"></a>コード内での移動
 
- さまざまな方法を使用して、コード内の特定の場所をすばやく探して移動できます。
+さまざまな方法を使用して、コード内の特定の場所をすばやく探して移動できます。
 
 - **コード行にブックマークを設定する**。 ブックマークを使用すると、ファイル内の特定のコード行にすばやく移動できます。
 

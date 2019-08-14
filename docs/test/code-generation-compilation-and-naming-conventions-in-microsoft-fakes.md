@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 554fe9c8d8f30c13f667566a76349e237f5ddb0f
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432291"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918464"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes におけるコード生成、コンパイル、および名前付け規則
 
@@ -110,9 +110,9 @@ Fakes コード ジェネレーターは、生成された Fakes アセンブリ
 [assembly: InternalsVisibleTo("FileSystem.Tests")]
 ```
 
- **厳密な名前を持つアセンブリの内部型**
+**厳密な名前を持つアセンブリの内部型**
 
- shim が適用されたアセンブリが厳密な名前を持つ場合に、アセンブリの内部型にアクセスするには:
+shim が適用されたアセンブリが厳密な名前を持つ場合に、アセンブリの内部型にアクセスするには:
 
 - テスト アセンブリと Fakes アセンブリの両方に、厳密な名前を付ける必要があります。
 
@@ -179,11 +179,11 @@ Fakes アセンブリのコンパイルで、ビルド時間が非常に長く�
 
 チーム ビルド環境では、すべてのビルド出力が 1 つのディレクトリにマージされます。 複数のプロジェクトが Fakes を使用している場合は、異なるバージョンの Fakes アセンブリが互いにオーバーライドすることがあります。 たとえば、.NET Framework 2.0 からの TestProject1 による *mscorlib.dll* の Fakes 処理と .NET Framework 4 の TestProject2 による *mscorlib.dll* の Fakes 処理は、いずれも *mscorlib.Fakes.dll* Fakes アセンブリを生成します。
 
- この問題を回避するには、 *.fakes* ファイルを追加するとき、Fakes 処理で非プロジェクト参照用にバージョンで修飾された Fakes アセンブリ名を自動的に作成する必要があります。 バージョンで修飾された Fakes アセンブリ名の場合は、Fakes アセンブリ名を作成するときにバージョン番号が埋め込まれます。
+この問題を回避するには、 *.fakes* ファイルを追加するとき、Fakes 処理で非プロジェクト参照用にバージョンで修飾された Fakes アセンブリ名を自動的に作成する必要があります。 バージョンで修飾された Fakes アセンブリ名の場合は、Fakes アセンブリ名を作成するときにバージョン番号が埋め込まれます。
 
- アセンブリ MyAssembly とバージョン 1.2.3.4 の場合、Fakes アセンブリ名は MyAssembly.1.2.3.4.Fakes です。
+アセンブリ MyAssembly とバージョン 1.2.3.4 の場合、Fakes アセンブリ名は MyAssembly.1.2.3.4.Fakes です。
 
- *.fakes* の Assembly 要素の Version 属性を編集して、このバージョンを変更または削除できます。
+*.fakes* の Assembly 要素の Version 属性を編集して、このバージョンを変更または削除できます。
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -197,7 +197,7 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>Shim 型とスタブ型の名前付け規則
 
- **名前空間**
+**名前空間**
 
 - .Fakes サフィックスは名前空間に追加されます。
 

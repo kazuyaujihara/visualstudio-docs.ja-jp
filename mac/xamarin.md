@@ -1,16 +1,16 @@
 ---
-title: Visual Studio for Mac での Xamarin
+title: Xamarin
 description: 'Xamarin を Visual Studio for Mac で使用すると、iOS、Mac、Android、tvOS、および watchOS を対象とするクロス プラットフォーム アプリケーションを作成できます。 '
 author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: e6cc642125f3b1466dd38d9ba3778c4f287cec63
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 4eec080655c0f47823810dfd689fe49a6f7e43eb
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692096"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872347"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin のモバイル アプリ開発
 
@@ -55,6 +55,6 @@ Xamarin Inspector は、対話型 C# コンソールをユーザー ツールで
 
 ![Xamarin Inspector](media/intro-inspector.png)
 
-多様なプログラミング プラットフォーム (Android、iOS、Mac、および Windows) を対象にすることができ、お使いの IDE のデバッグ ワークフローに統合できる高機能な C# コンソールを提供するスタンドアロン アプリケーションから構成されます。 
+多様なプログラミング プラットフォーム (Android、iOS、Mac、および Windows) を対象にすることができ、お使いの IDE のデバッグ ワークフローに統合できる高機能な C# コンソールを提供するスタンドアロン アプリケーションから構成されます。
 
 詳細については、「[Xamarin Inspector](/xamarin/tools/inspector/)」のガイドを参照してください。

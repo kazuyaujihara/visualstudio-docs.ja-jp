@@ -11,18 +11,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8367400df14f9a5e5c846a6df52e1a5fc7b8ec21
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416742"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918904"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Visual Studio でのカスタム ビルド イベントの指定
 
 カスタム ビルド イベントを指定することで、ビルドの開始前またはビルドの終了後に自動的にコマンドを実行できます。 たとえば、ビルドの開始前に *.bat* ファイルを実行したり、ビルドの完了後に新しいファイルをフォルダーにコピーしたりできます。 ビルド イベントは、ビルド プロセスにおいてビルドがこれらのポイントに正常に達する場合にのみ実行します。
 
- 使用するプログラミング言語に関する具体的な情報については、次のトピックを参照してください。
+使用するプログラミング言語に関する具体的な情報については、次のトピックを参照してください。
 
 - Visual Basic -- [方法: ビルド イベントを指定する (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
 
@@ -34,7 +34,7 @@ ms.locfileid: "68416742"
 
 ビルド イベントは、DOS コマンドと同じ構文に従いますが、マクロを使用すると、ビルド イベントをより簡単に作成することができます。 使用可能なマクロの一覧については、「[[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)」を参照してください。
 
- 最適な結果を得るには、次のような書式のヒントに従います。
+最適な結果を得るには、次のような書式のヒントに従います。
 
 - *.bat* ファイルを実行するすべてのビルド イベントの前に `call` ステートメントを追加します。
 

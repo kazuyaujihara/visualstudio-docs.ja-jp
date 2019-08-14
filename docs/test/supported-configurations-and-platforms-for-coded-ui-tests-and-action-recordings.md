@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fd44fdc7e365bd07f25318740fb2dcc04fe0ea9d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431228"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926455"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>コード化された UI テストと操作の記録でサポートされている構成とプラットフォーム
 
@@ -68,7 +68,7 @@ Visual Studio Enterprise のコード化された UI テストがサポートさ
 | Citrix およびターミナル サービス | ターミナル サーバーに対する操作の記録はお勧めしません。 レコーダーは、複数のインスタンスの同時実行をサポートしていません。 |
 | PowerBuilder | 一部サポートされています。<br /><br /> サポートは、PowerBuilder コントロールに対してユーザー補助が有効である程度までです。 |
 
- その他のプラットフォームをサポートするための拡張機能の作成方法については、「[コントロールのコード化された UI テストを有効化する](../test/enable-coded-ui-testing-of-your-controls.md)」および「[コード化された UI テストと操作の記録を拡張する](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)」をご覧ください。
+その他のプラットフォームをサポートするための拡張機能の作成方法については、「[コントロールのコード化された UI テストを有効化する](../test/enable-coded-ui-testing-of-your-controls.md)」および「[コード化された UI テストと操作の記録を拡張する](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)」をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 

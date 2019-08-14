@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3755a0ebc0227a62a2a23bc15d88d4d008ab733e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 4d50303596cec88bd5463b2ad1df713991c8932c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662071"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923671"
 ---
 # <a name="load-test-run-settings-properties"></a>ロード テストの実行設定のプロパティ
 
@@ -45,7 +45,7 @@ ms.locfileid: "68662071"
 |**完了したテストのログ頻度を保存**|テスト ログが書き込まれる頻度を指定します。 この数値は、入力したテストの数のうち 1 回がテスト ログに保存されることを示します。 たとえば、値 10 を入力すると、10 番目、20 番目、30 番目などのテストがテスト ログに書き込まれます。 値を 0 に設定した場合、テスト ログは保存されません。|
 |**テストの失敗時にログを保存**|ロード テストでテストが失敗した場合に、テスト ログを保存するかどうかを決定するブール値。 既定値は、`True` です。<br /><br /> 詳細については、「[方法 :テスト ログにテストの失敗を記録するかどうかを指定する](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
- 詳細については、「[ロード テストのログ設定の変更](../test/modify-load-test-logging-settings.md)」を参照してください。
+詳細については、「[ロード テストのログ設定の変更](../test/modify-load-test-logging-settings.md)」を参照してください。
 
 ## <a name="results-properties"></a>結果のプロパティ
 
@@ -70,7 +70,7 @@ ms.locfileid: "68662071"
 |**テスト イテレーション**|ロード テストが完了する前に実行するテストの総数を指定します。 このプロパティは、[テスト イテレーションの使用] プロパティが `True` に設定されている場合のみ適用されます。|
 |**テスト イテレーションの使用**|[テスト イテレーションの使用] が `True` の場合は、ロード テスト内で完了したテストの数が "テスト イテレーション" プロパティで指定された数に達するまでロード テストが実行されます。 この場合、時間ベースの設定である [ウォームアップ継続時間]、[実行継続時間]、および [クールダウン継続時間] は無視されます。 [テスト イテレーションの使用] が `False` である場合、すべてのタイミング設定が適用され、[テスト イテレーション] は無視されます。|
 
- 詳細については、「[方法 :実行設定でテスト イテレーションの回数を指定する](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)」を参照してください。
+詳細については、「[方法 :実行設定でテスト イテレーションの回数を指定する](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)」を参照してください。
 
 ## <a name="timing-properties"></a>タイミングのプロパティ
 

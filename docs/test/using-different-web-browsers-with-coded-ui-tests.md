@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b7cad6d52dc3fabc182881b99163cf15e1a260c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973020"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926566"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>コード化された UI テストでさまざまな Web ブラウザーを使用する
 
@@ -43,11 +43,11 @@ ms.locfileid: "62973020"
 > [!NOTE]
 > Google Chrome や Mozilla Firefox ブラウザーを使用して、コード化された UI テストを記録することはできません。
 
- **Internet Explorer での再生:** ブラウザーが明示的に指定されていない場合、テストは既定では Internet Explorer で実行されます。 使用されるブラウザーを明示的に指定するには、テスト コードで **BrowserWindow.CurrentBrowser** プロパティを設定します。 Internet Explorer の場合は、このプロパティを **IE** または **Internet Explorer** に設定する必要があります。
+**Internet Explorer での再生:** ブラウザーが明示的に指定されていない場合、テストは既定では Internet Explorer で実行されます。 使用されるブラウザーを明示的に指定するには、テスト コードで **BrowserWindow.CurrentBrowser** プロパティを設定します。 Internet Explorer の場合は、このプロパティを **IE** または **Internet Explorer** に設定する必要があります。
 
- **Internet Explorer 以外の Web ブラウザーでの再生:** Internet Explorer 以外の Web ブラウザーで再生する場合は、テスト コードで BrowserWindow.CurrentBrowser プロパティを **Firefox** または **Chrome** に変更します。
+**Internet Explorer 以外の Web ブラウザーでの再生:** Internet Explorer 以外の Web ブラウザーで再生する場合は、テスト コードで BrowserWindow.CurrentBrowser プロパティを **Firefox** または **Chrome** に変更します。
 
- IE 以外の Web ブラウザーでテストを再生するには、**コード化された UI のクロス ブラウザー テスト用に Selenium コンポーネント**をインストールする必要があります。
+IE 以外の Web ブラウザーでテストを再生するには、**コード化された UI のクロス ブラウザー テスト用に Selenium コンポーネント**をインストールする必要があります。
 
 ### <a name="install-selenium-components"></a>Selenium コンポーネントをインストールする
 
@@ -67,7 +67,7 @@ ms.locfileid: "62973020"
 
 ::: moniker-end
 
-3. 拡張機能を強調表示し、**[ダウンロード]** を選択します。
+3. 拡張機能を強調表示し、 **[ダウンロード]** を選択します。
 
     > [!TIP]
     > コード化された UI のクロス ブラウザー テスト用 Selenium コンポーネントは、[こちら](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)からもダウンロードできます。
@@ -80,7 +80,7 @@ Web アプリケーションのデバッグを有効にするには、以下の�
 
 1. マイ コードのみを有効にする:
 
-    1. **[ツール]** メニューの **[オプション]** を選択し、**[デバッグ]** を選択します。
+    1. **[ツール]** メニューの **[オプション]** を選択し、 **[デバッグ]** を選択します。
 
     2. **[マイ コードのみを有効にする]** を選択します。
 
@@ -88,7 +88,7 @@ Web アプリケーションのデバッグを有効にするには、以下の�
 
     1. **[デバッグ]** メニューの **[例外]** を選択します。
 
-    2. **[共通言語ランタイム例外]** で、**[ユーザーにハンドルされていないとき]** をオフにします。
+    2. **[共通言語ランタイム例外]** で、 **[ユーザーにハンドルされていないとき]** をオフにします。
 
 コード化された UI テストの `BrowserWindow.CurrentBrowser` を変更するオプションが表示されない場合、さまざまな Web ブラウザーを使用したコード化された UI テストをサポートしていないバージョンの Visual Studio を使用している可能性があります。 そのようなコード化された UI テストを使用するには、Visual Studio Enterprise Edition を使用する必要があります。
 
@@ -120,15 +120,15 @@ Web アプリケーションのデバッグを有効にするには、以下の�
 
 ## <a name="video-resources"></a>ビデオ リソース
 
- [IE で記録し、任意の場所で再生する](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
+[IE で記録し、任意の場所で再生する](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
- [コード化された UI テスト ビルダーでクロス ブラウザー テストを作成する](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+[コード化された UI テスト ビルダーでクロス ブラウザー テストを作成する](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
- [UI マップを使わずに手作業のコーディングでクロス ブラウザー テストを作成する](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
+[UI マップを使わずに手作業のコーディングでクロス ブラウザー テストを作成する](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
 
- [複数のブラウザー上で順番にクロス ブラウザー テストを実行する](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!187&authkey=!ADI8eCQkxHnpOR8)
+[複数のブラウザー上で順番にクロス ブラウザー テストを実行する](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!187&authkey=!ADI8eCQkxHnpOR8)
 
- [クロス ブラウザー テストのエラーのトラブルシューティング](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
+[クロス ブラウザー テストのエラーのトラブルシューティング](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ## <a name="see-also"></a>関連項目
 

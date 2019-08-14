@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 420a65fb8b91495c5fbba228e190b5589019c99f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72492b984e7f47b87ea326fe8ebcce414ee978ec
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62576975"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926056"
 ---
 # <a name="toolbox-html-tab"></a>ツールボックス、[HTML] タブ
 
 ツールボックスの **[HTML]** タブは、Web ページと Web フォームで使用するコンポーネントを提供します。 このタブを表示するには、まず、HTML デザイナーで編集するためのドキュメントを開きます。 **[表示]** メニューで **[ツールボックス]** をクリックし、ツールボックスの **[HTML]** タブをクリックします。
 
- **[HTML]** タブでツールのインスタンスを作成するには、ドキュメントに追加するツールをダブルクリックするか、またはツールを選択して編集サーフェイスの目的の位置にドラッグします。
+**[HTML]** タブでツールのインスタンスを作成するには、ドキュメントに追加するツールをダブルクリックするか、またはツールを選択して編集サーフェイスの目的の位置にドラッグします。
 
 ## <a name="ui-elements"></a>UI 要素
 

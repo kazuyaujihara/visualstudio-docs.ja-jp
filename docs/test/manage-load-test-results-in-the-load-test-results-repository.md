@@ -11,12 +11,12 @@ ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9623022d5e0132c8b099757a5af85a3ddd62ed1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37dfd7b0aa8aed1ce94f3d4364c5b61a0957a223
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788909"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926621"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>ロード テストの結果リポジトリ内のロード テスト結果の管理
 
@@ -33,28 +33,28 @@ Visual Studio Ultimate には、テクノロジに基づいて一般的なパフ
 
 ## <a name="sql-server-versions"></a>SQL Server のバージョン
 
- ロード テストを使用する場合は、Visual Studio と共にインストールされる、SQL Server Express LocalDB を使用できます。 これは、ロード テスト用の既定のデータベース サーバーです (Microsoft Excel 統合を含む)。 SQL Server Express LocalDB は、プログラム開発者を対象にした SQL Server Express の実行モードです。 SQL Server Express LocalDB のインストールでは、SQL Server データベース エンジンを開始するために必要な最小のファイル セットがコピーされます。
+ロード テストを使用する場合は、Visual Studio と共にインストールされる、SQL Server Express LocalDB を使用できます。 これは、ロード テスト用の既定のデータベース サーバーです (Microsoft Excel 統合を含む)。 SQL Server Express LocalDB は、プログラム開発者を対象にした SQL Server Express の実行モードです。 SQL Server Express LocalDB のインストールでは、SQL Server データベース エンジンを開始するために必要な最小のファイル セットがコピーされます。
 
- チームによってデータベースへの高いニーズが予測される場合や、プロジェクトが SQL Server Express LocalDB のスケールを超える場合は、今後の拡張に対応できるように、SQL Express または SQL Server のフル バージョンへのアップグレードを検討する必要があります。 SQL Server をアップグレードする場合、SQL Server Express LocalDB の MDF ファイルと LDF ファイルはユーザー プロファイル フォルダーに格納されます。 これらのファイルを使用すると、ロード テスト データベースを SQL Server Express または SQL Server にインポートできます。
+チームによってデータベースへの高いニーズが予測される場合や、プロジェクトが SQL Server Express LocalDB のスケールを超える場合は、今後の拡張に対応できるように、SQL Express または SQL Server のフル バージョンへのアップグレードを検討する必要があります。 SQL Server をアップグレードする場合、SQL Server Express LocalDB の MDF ファイルと LDF ファイルはユーザー プロファイル フォルダーに格納されます。 これらのファイルを使用すると、ロード テスト データベースを SQL Server Express または SQL Server にインポートできます。
 
 ## <a name="load-test-results-store-considerations"></a>ロード テストの結果ストアに関する考慮事項
 
- Visual Studio Enterprise をインストールすると、ロード テストの結果ストアは、コンピューターにインストールされている SQL Express のインスタンスを使用するように設定されます。 SQL Express は最大 4 GB のディスク容量しか使用できません。 長期にわたって多数のロード テストを実行する場合は、ロード テストの結果ストアが完全な SQL Server 製品 (使用可能な場合) のインスタンスを使用するように構成することを検討してください。
+Visual Studio Enterprise をインストールすると、ロード テストの結果ストアは、コンピューターにインストールされている SQL Express のインスタンスを使用するように設定されます。 SQL Express は最大 4 GB のディスク容量しか使用できません。 長期にわたって多数のロード テストを実行する場合は、ロード テストの結果ストアが完全な SQL Server 製品 (使用可能な場合) のインスタンスを使用するように構成することを検討してください。
 
 ## <a name="load-test-analyzer-tasks"></a>ロード テスト アナライザー タスク
 
-|[タスク]|関連するトピック|
+|タスク|関連するトピック|
 |-|-----------------------|
 |**ロード テストの結果リポジトリを設定する:** SQL データベース上にロード テストの結果リポジトリを設定できます。 **注:** ロード テスト リポジトリはテスト コントローラーをインストールするときに作成することもできます。 詳細については、[テスト エージェントのインストールと構成](../test/lab-management/install-configure-test-agents.md)に関するページを参照してください。||
-|**結果リポジトリの選択と表示:** 特定の結果リポジトリを選択できます。 結果ストアはローカルの結果ストアに限定されていません。 多くの場合、ロード テストは複数のリモート エージェント コンピューターで実行されます。 エージェントまたはローカル コンピューターからのテスト結果は、ロード テストの結果ストアを作成した SQL サーバーのいずれかに保存できます。 いずれの場合も、**[テスト コントローラーの管理]** ウィンドウを使用して、ロード テストの結果を保存する場所を指定する必要があります。|-   [方法: ロード テストの結果リポジトリを選択する](../test/how-to-select-a-load-test-results-repository.md)<br />-   [方法: ロード テストの結果にアクセスして分析する](../test/how-to-access-load-test-results-for-analysis.md)|
-|**ロード テストの結果をリポジトリから削除する:** ロード テストの結果を**ロード テスト エディター**から削除するには、**[ロード テストの結果を開いて管理]** ダイアログ ボックスを使用します。|-   [方法: ロード テスト結果をリポジトリから削除する](../test/how-to-delete-load-test-results-from-a-repository.md)|
+|**結果リポジトリの選択と表示:** 特定の結果リポジトリを選択できます。 結果ストアはローカルの結果ストアに限定されていません。 多くの場合、ロード テストは複数のリモート エージェント コンピューターで実行されます。 エージェントまたはローカル コンピューターからのテスト結果は、ロード テストの結果ストアを作成した SQL サーバーのいずれかに保存できます。 いずれの場合も、 **[テスト コントローラーの管理]** ウィンドウを使用して、ロード テストの結果を保存する場所を指定する必要があります。|-   [方法: ロード テストの結果リポジトリを選択する](../test/how-to-select-a-load-test-results-repository.md)<br />-   [方法: ロード テストの結果にアクセスして分析する](../test/how-to-access-load-test-results-for-analysis.md)|
+|**ロード テストの結果をリポジトリから削除する:** ロード テストの結果を**ロード テスト エディター**から削除するには、 **[ロード テストの結果を開いて管理]** ダイアログ ボックスを使用します。|-   [方法: ロード テスト結果をリポジトリから削除する](../test/how-to-delete-load-test-results-from-a-repository.md)|
 |**エクスポート結果をリポジトリにインポートする:** ロード テストの結果は、**ロード テスト エディター**からインポートおよびエクスポートできます。|-   [方法: ロード テスト結果をリポジトリにインポートする](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [方法: ロード テスト結果をリポジトリからエクスポートする](../test/how-to-export-load-test-results-from-a-repository.md)|
 
 ## <a name="related-tasks"></a>関連するタスク
 
- [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
- 実行中のロード テストの結果と完了したロード テストの結果は両方とも**ロード テスト アナライザー**を使用して表示できます。
+実行中のロード テストの結果と完了したロード テストの結果は両方とも**ロード テスト アナライザー**を使用して表示できます。
 
 ## <a name="see-also"></a>関連項目
 

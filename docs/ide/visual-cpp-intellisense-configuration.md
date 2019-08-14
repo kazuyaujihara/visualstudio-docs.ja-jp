@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 605ad454d00387d9a9094a518b4afed279fcc190
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461590"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925860"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense の C++ プロジェクトを構成する
 
@@ -38,7 +38,7 @@ Visual Studio IDE の外部でビルドを実行し、ビルドは成功した�
 
 ![VC++ インクルード ディレクトリ](media/vcpp-intellisense-include-paths.png)
 
- **VC_IncludePath** などのビルド マクロの現在の値を表示するには、[インクルード ディレクトリ] 行を選択し、右側のドロップダウンをクリックします。 次に、 **[\<編集>]** を選択し、 **[マクロ]** ボタンをクリックします。
+**VC_IncludePath** などのビルド マクロの現在の値を表示するには、[インクルード ディレクトリ] 行を選択し、右側のドロップダウンをクリックします。 次に、 **[\<編集>]** を選択し、 **[マクロ]** ボタンをクリックします。
 
 ### <a name="makefile-projects"></a>メイクファイル プロジェクト
 
@@ -79,18 +79,18 @@ IntelliSense コンパイラが、インクルード パスとプリプロセッ
 出力ウィンドウに、IntelliSense コンパイラに渡されるコマンドラインが表示されます。 次に出力例を示します。
 
 ```output
- [IntelliSense] Configuration Name: Debug|Win32
- [IntelliSense] Toolset IntelliSense Identifier:
- [IntelliSense] command line options:
- /c
- /I.
- /IC:\Repo\Includes
- /DWIN32
- /DDEBUG
- /D_DEBUG
- /Zc:wchar_t-
- /Zc:forScope
- /Yustdafx.h
+[IntelliSense] Configuration Name: Debug|Win32
+[IntelliSense] Toolset IntelliSense Identifier:
+[IntelliSense] command line options:
+/c
+/I.
+/IC:\Repo\Includes
+/DWIN32
+/DDEBUG
+/D_DEBUG
+/Zc:wchar_t-
+/Zc:forScope
+/Yustdafx.h
 ```
 
 この情報は、IntelliSense が不正確な情報を提供している理由を理解するのに役立ちます。 たとえば、プロジェクトのインクルード ディレクトリに **$(MyVariable)\Include** が含まれていて、診断ログにインクルード パスとして **/I\Include** が表示される場合、 **$(MyVariable)** は評価されず、最終的なインクルード パスから削除されたことを意味します。
@@ -110,10 +110,10 @@ IntelliSense のビルドでは、バイナリは作成されませんが、そ�
 エラー メッセージに、デザイン時のトレースを有効にする指示が含まれていることがあります。
 
 ```output
- error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
- configuration 'Debug|x64'. IntelliSense might be unavailable.
- Set environment variable TRACEDESIGNTIME=true and restart
- Visual Studio to investigate.
+error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
+configuration 'Debug|x64'. IntelliSense might be unavailable.
+Set environment variable TRACEDESIGNTIME=true and restart
+Visual Studio to investigate.
 ```
 
 環境変数 TRACEDESIGNTIME を true に設定して、Visual Studio を再起動すると、ビルド エラーの診断に役立つ可能性がある %TEMP% ディレクトリ内のログ ファイルが表示されます。

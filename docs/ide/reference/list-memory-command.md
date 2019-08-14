@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9120b3076dff1620f6ec5b9ff77041126932481a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6d0b694f9703c6260d95ad03e085fcdf774dc52
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557100"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919139"
 ---
 # <a name="list-memory-command"></a>ListMemory コマンド
 指定範囲のメモリの内容を表示します。
@@ -32,41 +32,41 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ```
 
 ## <a name="arguments"></a>引数
- `expression`
+`expression`
 
- 任意。 メモリの表示を開始するメモリ アドレス。
+任意。 メモリの表示を開始するメモリ アドレス。
 
 ## <a name="switches"></a>スイッチ
- /ANSI&#124;Unicode
+/ANSI&#124;Unicode
 
- 任意。 メモリを、メモリ バイトに対応する ANSI 文字または Unicode 文字として表示します。
+任意。 メモリを、メモリ バイトに対応する ANSI 文字または Unicode 文字として表示します。
 
- /Count:`number`
+/Count:`number`
 
- 任意。 表示するメモリを `expression` からのバイト数で指定します。
+任意。 表示するメモリを `expression` からのバイト数で指定します。
 
- /Format:`formattype`
+/Format:`formattype`
 
- 任意。 **[メモリ]** ウィンドウにメモリ情報を表示する場合の形式の種類は、OneByte、TwoBytes、FourBytes、EightBytes、Float (32 ビット)、または Double (64 ビット) を指定できます。 OneByte を使用する場合、`/Unicode` は使用できません。
+任意。 **[メモリ]** ウィンドウにメモリ情報を表示する場合の形式の種類は、OneByte、TwoBytes、FourBytes、EightBytes、Float (32 ビット)、または Double (64 ビット) を指定できます。 OneByte を使用する場合、`/Unicode` は使用できません。
 
- /Hex&#124;Signed&#124;Unsigned
+/Hex&#124;Signed&#124;Unsigned
 
- 任意。 数字の表示形式を、符号付き、符号なし、または 16 進数のいずれかに指定します。
+任意。 数字の表示形式を、符号付き、符号なし、または 16 進数のいずれかに指定します。
 
 ## <a name="remarks"></a>解説
- すべてのスイッチを指定して完全な **Debug.ListMemory** コマンドを記述する代わりに、特定のスイッチが指定された値に事前に設定された定義済みのエイリアスを使用してコマンドを起動することもできます。 以下に例を示します。
+すべてのスイッチを指定して完全な **Debug.ListMemory** コマンドを記述する代わりに、特定のスイッチが指定された値に事前に設定された定義済みのエイリアスを使用してコマンドを起動することもできます。 以下に例を示します。
 
 ```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
- 上のコードを入力する代わりに、次のように記述できます。
+上のコードを入力する代わりに、次のように記述できます。
 
 ```cmd
 >df /Count:30 /Unicode
 ```
 
- **Debug.ListMemory** コマンドで使用できるエイリアスの一覧を以下に示します。
+**Debug.ListMemory** コマンドで使用できるエイリアスの一覧を以下に示します。
 
 |Alias|コマンドおよびスイッチ|
 |-----------| - |

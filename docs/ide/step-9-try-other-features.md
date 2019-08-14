@@ -8,17 +8,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41a3313f6393290a5f55c47653d11dba646dbb1b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 24637ba56c3dfa2d9ce9c7e70452bcdc6788b51b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430987"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918716"
 ---
 # <a name="step-9-try-other-features"></a>手順 9: その他の機能を試す
 さらに詳しく学習するために、アイコンおよび色の変更、ゲーム タイマーの追加、サウンドの追加を試します。 ゲームをよりやりがいのあるものにするために、ボードの拡大およびタイマーの調整を試します。
 
- サンプルの完全バージョンをダウンロードするには、「[Complete Matching Game tutorial sample](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)」(絵合わせゲームのチュートリアルの完全なサンプル) を参照してください。
+サンプルの完全バージョンをダウンロードするには、「[Complete Matching Game tutorial sample](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)」(絵合わせゲームのチュートリアルの完全なサンプル) を参照してください。
 
 ## <a name="to-try-other-features"></a>その他の機能を試すには
 
@@ -37,7 +37,7 @@ ms.locfileid: "63430987"
     > [!TIP]
     > サウンドを再生するには、<xref:System.Media> 名前空間を使用できます。 詳細については、「[Play Sounds in Windows Forms App (C#)](http://youtu.be/qOh4ooHg1UU)」(Windows フォーム アプリでサウンドを再生する (C#)) または「[How To Play Audio In Visual Basic](http://youtu.be/-4oPDeQrtMs)」(Visual Basic でオーディオを再生する方法) をご覧ください。
 
-- ボードを拡大して、ゲームをより難しくします 
+- ボードを拡大して、ゲームをより難しくします
 
     > [!TIP]
     > TableLayoutPanel に行や列を追加する以上のことを行う必要があります。作成するアイコンの数を検討する必要もあります。

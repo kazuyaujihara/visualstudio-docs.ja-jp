@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ae861814a7219bfca1d6a074316910d459fc9999
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7087f08743e58426663734295339d9ca6550a0d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973174"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926587"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>コード化された UI テストでの HTML5 コントロールの使用
 
@@ -20,7 +20,7 @@ ms.locfileid: "62973174"
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- **必要条件**
+**必要条件**
 
 - Visual Studio Enterprise
 
@@ -47,17 +47,17 @@ ms.locfileid: "62973174"
 
 アサーションを追加できるプロパティの一連については、「[HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement)」をご覧ください。
 
- **検索プロパティ:**`HtmlAudio` の検索プロパティは、`Id`、`Name`、`Title` です。
+**検索プロパティ:** `HtmlAudio` の検索プロパティは、`Id`、`Name`、`Title` です。
 
- **フィルター プロパティ:**`HtmlAudio` のフィルター プロパティは、`Src`、`Class`、`ControlDefinition`、`TagInstance` です。
+**フィルター プロパティ:** `HtmlAudio` のフィルター プロパティは、`Src`、`Class`、`ControlDefinition`、`TagInstance` です。
 
 > [!NOTE]
 > Seek および Pause の時間は大きな意味を持つことがあります。 再生中、コード化された UI テストは、オーディオを一時停止する前に、`(TimeSpan)` に指定された時間まで待機します。 特殊な状況において、Pause コマンドが実行される前に指定された時間が経過したとき、例外がスローされます。
 
 ## <a name="video-control"></a>ビデオ コントロール
- **ビデオ コントロール:** HTML5 ビデオ コントロールに対するアクションが正しく記録され再生されます。
+**ビデオ コントロール:** HTML5 ビデオ コントロールに対するアクションが正しく記録され再生されます。
 
- ![HTML5 ビデオ コントロール](../test/media/codedui_html5_video.png)
+![HTML5 ビデオ コントロール](../test/media/codedui_html5_video.png)
 
 |アクション|記録中|生成されたコード|
 |-|---------------|-|
@@ -70,17 +70,17 @@ ms.locfileid: "62973174"
 
 アサーションを追加できるプロパティの一連については、「[HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video)」をご覧ください。
 
- **検索プロパティ:**`HtmlVideo` の検索プロパティは、`Id`、`Name`、`Title` です。
+**検索プロパティ:** `HtmlVideo` の検索プロパティは、`Id`、`Name`、`Title` です。
 
- **フィルター プロパティ:**`HtmlVideo` のフィルター プロパティは、`Src`、`Poster`、`Class`、`ControlDefinition`、`TagInstance` です。
+**フィルター プロパティ:** `HtmlVideo` のフィルター プロパティは、`Src`、`Poster`、`Class`、`ControlDefinition`、`TagInstance` です。
 
 > [!NOTE]
 > -30s または +30s のラベルを使用してビデオを巻き戻したり早送りしたりする場合、集計後の適切なタイミングにシークされます。
 
 ## <a name="progressbar"></a>ProgressBar
- **ProgressBar コントロール:** ProgressBar は、非対話型コントロールです。 このコントロールの `Value` プロパティと `Max` プロパティでアサーションを追加できます。 詳しくは、「[HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress)」をご覧ください。
+**ProgressBar コントロール:** ProgressBar は、非対話型コントロールです。 このコントロールの `Value` プロパティと `Max` プロパティでアサーションを追加できます。 詳しくは、「[HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress)」をご覧ください。
 
- ![HTML5 ProgressBar コントロール](../test/media/codedui_html5_progressbar.png)
+![HTML5 ProgressBar コントロール](../test/media/codedui_html5_progressbar.png)
 
 ## <a name="see-also"></a>関連項目
 
