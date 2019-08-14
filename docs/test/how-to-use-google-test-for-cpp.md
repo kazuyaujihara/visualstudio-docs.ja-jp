@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 8e918878048eec7dae04b6d9269f664b9e99c567
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 73f62e8b74864af0292a9cc3ab1eb325d679d2ea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226336"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926750"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Visual Studio で C++ 用の Google Test を使用する方法
 
@@ -25,9 +25,9 @@ Visual Studio 2017 以降では、Google Test は、**C++ によるデスクト�
 
 ## <a name="add-a-google-test-project-in-visual-studio-2019"></a>Visual Studio 2019 に Google Test プロジェクトを追加する
 
-1. **ソリューション エクスプローラー**で、ソリューション ノードを右クリックし、**[追加]**、**[新しいプロジェクト]** の順に選択します。
-2. **[言語]** を **C++** に設定し、検索ボックスに「**test**」と入力します。 結果の一覧から、**[Google テスト プロジェクト]** を選択します。
-3. テスト プロジェクトの名前を設定し、**[OK]** をクリックします。
+1. **ソリューション エクスプローラー**で、ソリューション ノードを右クリックし、 **[追加]** 、 **[新しいプロジェクト]** の順に選択します。
+2. **[言語]** を **C++** に設定し、検索ボックスに「**test**」と入力します。 結果の一覧から、 **[Google テスト プロジェクト]** を選択します。
+3. テスト プロジェクトの名前を設定し、 **[OK]** をクリックします。
 
 ![新しい Google テスト プロジェクト](media/vs-2019/cpp-gtest-new-project-vs2019.png)
 
@@ -37,9 +37,9 @@ Visual Studio 2017 以降では、Google Test は、**C++ によるデスクト�
 
 ## <a name="add-a-google-test-project-in-visual-studio-2017"></a>Visual Studio 2017 に Google Test プロジェクトを追加する
 
-1. **ソリューション エクスプローラー**で、ソリューション ノードを右クリックし、**[追加]**、**[新しいプロジェクト]** の順に選択します。
-2. 左側のウィンドウで **[Visual C++]**、**[テスト]** の順に選択し、中央のウィンドウで **[Google Test プロジェクト]** を選択します。
-3. テスト プロジェクトの名前を設定し、**[OK]** をクリックします。
+1. **ソリューション エクスプローラー**で、ソリューション ノードを右クリックし、 **[追加]** 、 **[新しいプロジェクト]** の順に選択します。
+2. 左側のウィンドウで **[Visual C++]** 、 **[テスト]** の順に選択し、中央のウィンドウで **[Google Test プロジェクト]** を選択します。
+3. テスト プロジェクトの名前を設定し、 **[OK]** をクリックします。
 
 ![新しい Google テスト プロジェクト](media/cpp-gtest-new-project.png)
 
@@ -49,13 +49,13 @@ Visual Studio 2017 以降では、Google Test は、**C++ によるデスクト�
 
 表示される **[テスト プロジェクト構成]** ダイアログでは、テストするプロジェクトを選ぶことができます。 プロジェクトを選択すると、選んだプロジェクトへの参照が追加されます。 プロジェクトを選ばない場合は、テスト対象のプロジェクトへの参照を手動で追加する必要があります。 Google Test バイナリへのリンクを静的または動的のどちらにするかを選ぶときの考慮事項は、他の C++ プログラムの場合と同様です。 詳細については、「[Visual C++ の DLL](/cpp/build/dlls-in-visual-cpp)」をご覧ください。
 
- ![Google テスト プロジェクトを構成する](media/cpp-gtest-config.png)
+![Google テスト プロジェクトを構成する](media/cpp-gtest-config.png)
 
 ## <a name="set-additional-options"></a>その他のオプションを設定する
 
-その他のオプションを設定するには、メイン メニューから **[ツール]** > **[オプション]** > **[Test Adapter for Google Test]** を選びます。 これらの設定については、Google Test のドキュメントをご覧ください。
+その他のオプションを設定するには、メイン メニューから **[ツール]**  >  **[オプション]**  >  **[Test Adapter for Google Test]** を選びます。 これらの設定については、Google Test のドキュメントをご覧ください。
 
- ![Google テスト プロジェクトの設定](media/cpp-gtest-settings.png)
+![Google テスト プロジェクトの設定](media/cpp-gtest-settings.png)
 
 ## <a name="add-include-directives"></a>インクルード ディレクティブを追加する
 

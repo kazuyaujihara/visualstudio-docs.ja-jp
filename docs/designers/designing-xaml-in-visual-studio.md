@@ -1,70 +1,53 @@
 ---
-title: XAML を使用する
-ms.date: 07/17/2017
+title: Visual Studio と Blend で XAML をデザインする
+titleSuffix: ''
+ms.date: 08/05/2019
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 2a558ce97e642c38b5c54c1a2e3d01cce2e2e280
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: cd0ff12b141a50872d586764d2b33bd68f3224fb
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715464"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821871"
 ---
-# <a name="design-xaml-in-visual-studio"></a>Visual Studio で XAML をデザインする
+# <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Visual Studio および Blend for Visual Studio での XAML の設計
 
-Visual Studio と Blend for Visual Studio の両方には、さまざまなアプリの種類に合わせて XAML を使用して魅力的なユーザー インターフェイスとリッチ メディア体験を構築するための視覚的なツールが用意されています。 視覚的な XAML エディターなど、両方に共通する機能もありますが、Blend for Visual Studio にはアニメーションやビヘイビアーなどのより高度なタスク向けに追加のデザイン ツールが用意されています。
+Visual Studio と Blend for Visual Studio の両方には、さまざまなアプリの種類に合わせて XAML を使用して魅力的なユーザー インターフェイスとリッチ メディア体験を構築するための視覚的なツールが用意されています。 両方の統合開発環境 (IDE) は、Visual XAML エディター (デザイナー) などの共通の機能セットを共有しています。 WPF プラットフォームと UWP プラットフォームをサポートする Blend for Visual Studio には、ビジュアルの状態をデザインし、アニメーションを作成するための追加ツールがあります。
 
-アプリの設計プロセスは、選択したツールとターゲット プラットフォームによって変わります。 この記事では、Visual Studio と Blend for Visual Studio の XAML デザイン ツールを比較します。 ツール使い方の詳細なチュートリアルについては、次のトピックを参照してください。
+Visual Studio と Blend for Visual Studio を自在に切り替えることができるだけでなく、両方の IDE で同時に同じプロジェクトを開くこともできます。 ある IDE で XAML ファイルに保存した変更は、他の IDE に切り替える際に、自動再読み込みを使用して適用できます。 いずれかの IDE で **[ツール]** 、 **[オプション]** 、 **[環境]** 、 **[ドキュメント]** の順に移動し、リロード動作を制御できます。
 
-- [Visual Studio での XAML デザイナーを使用した UI の作成](creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-- [Blend for Visual Studio を使用した UI の作成](creating-a-ui-by-using-blend-for-visual-studio.md)
+## <a name="installation"></a>インストール
 
-## <a name="choose-the-right-tool"></a>適切なツールを選択する
+- WPF アプリを作成するには、Visual Studio に **.NET デスクトップ開発**ワークロードをインストールします。 Blend for Visual Studio もインストールされます。
+- UWP アプリを作成するには、Visual Studio に**ユニバーサル Windows プラットフォーム開発**ワークロードをインストールします。 Blend for Visual Studio もインストールされます。
+- Xamarin.Forms アプリを作成するには、Visual Studio に **.NET によるモバイル開発**ワークロードをインストールするには Blend for Visual Studio はインストールされて*いません*。Blend では、Xamarin.Forms アプリがサポートされません。
 
-デザイン ツールの選択は、スキル セットに大きく依存します。 コード中心の場合は、Visual Studio で XAML コードを記述すれば高度なデザイン タスクを実行できます。 デザイン中心の場合は、Blend for Visual Studio を使用すると、コードを記述せずに高度なタスクを実行できます。
+## <a name="shared-capabilities"></a>共有機能
 
-Visual Studio と Blend for Visual Studio は自在に切り替えることができるだけでなく、両方で同時に同じプロジェクトを開くこともできます。 ある IDE で XAML ファイルに加えた変更は、その他の IDE に切り替える際に、自動再読み込みを使用して適用できます。 再読み込み動作は、いずれかの IDE で **[ツール]** にある **[オプション]** ダイアログ ボックスのオプションを使用して制御できます。
+最も基本的な開発タスクに関しては、わずかな違いがいくつかあるものの、Visual Studio と Blend for Visual Studio で同一のウィンドウおよび機能のセットを共有しています。 主な特徴:
 
-### <a name="shared-capabilities"></a>共有機能
+- **IntelliSense:** いずれの IDE でも、ステートメント入力候補など、IntelliSense 機能がサポートされています。
 
-最も基本的なタスクに関しては、いくらかのわずかな相違はあるものの、Visual Studio と Blend for Visual Studio の IDE で同一のウィンドウおよび機能のセットを使用します。 主な特徴:
+- **デバッグ:** 実行中のアプリをデバッグするためにブレークポイントを設定したり、[ホット リロード](../debugger/xaml-hot-reload.md)を利用してアプリの実行中に XAML コードを変更したりするなど、[Visual Studio](../debugger/inspect-xaml-properties-while-debugging.md) と [Blend for Visual Studio](../debugger/debug-xaml-in-blend.md) でデバッグすることができます。 Visual Studio とデバッグ機能の一貫性を保つため、Blend for Visual Studio には Visual Studio の大半のデバッグ ウィンドウとツールバーが含まれています。
 
-- **一貫性のあるユーザー インターフェイス:** アプリケーションを使い慣れた Visual Studio ユーザー インターフェイス環境で設計できるため、IDE 間の切り替えが快適になり、生産性も向上します。 Blend for Visual Studio では、コンテンツとユーザー インターフェイスの間のコントラストを上げることにより設計中のコンテンツに注意を集中するのに役立つ Visual Studio ダーク テーマを使用します。 「[XAML デザイナーを使用して UI を作成する](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)」を参照してください。
+- **ファイルの再読み込み:** XAML ファイルは Visual Studio または Blend for Visual Studio で編集できます。 編集後に保存されたファイルは、IDE を切り替えると自動的に再読み込みされます。 いずれかの IDE で **[ツール]** 、 **[オプション]** 、 **[環境]** 、 **[ドキュメント]** の順に移動し、リロード動作を制御できます。
 
-     ![Blend for Visual Studio の IDE](../designers/media/blendide.png)
-
-- **XAML IntelliSense:** どちらの IDE も、ステートメント入力候補、コードへのコメント追加や書式設定などの一般的なエディター操作のサポート、およびリソース、バインディング、コードへのナビゲーションなど、IntelliSense に期待する一般的な機能すべてをサポートします。
-
-- **基本的なデバッグ機能:** Blend では、実行中のアプリをデバッグするブレークポイントをコードに設定するなどの、新たなデバッグが可能です。 Visual Studio とデバッグ機能の一貫性を保つため、Blend for Visual Studio には Visual Studio の大半のデバッグ ウィンドウとツールバーが含まれています。 診断やコード分析などの高度なデバッグ機能は、Visual Studio でのみ使用できます。 「[Visual Studio でのデバッグ](../debugger/debugger-feature-tour.md)」を参照してください。
-
-- **ファイルの再読み込み操作:** XAML ファイルは、Blend for Visual Studio または Visual Studio のどちらでも編集でき、切り替え時に編集したファイルを自動的に再読み込みさせることができます。 ワークフローの中断を最小限に抑えるため、[ファイルの再読み込み] ダイアログでファイルの再読み込みの基本設定を設定できます。
-
-     ![ファイルの再読み込み操作](../designers/media/blendfilereload.png)
-
-- **レイアウトの同期と設定:** カスタム レイアウトを使用して、ツール ウィンドウのレイアウト変更を保存および適用できます。 同じ Microsoft アカウントでサインインすると、Visual Studio は Visual Studio と Blend for Visual Studio 双方の変更や基本設定をコンピューター間で同期します。 [複数のコンピューター間での設定の同期](../ide/synchronized-settings-in-visual-studio.md)に関するページを参照してください。
-
-- **共通のソリューション エクスプローラー:** **ソリューション エクスプローラー**によって、プロジェクトやファイルが整理して表示されるだけでなく、プロジェクトやファイルに関連付けられているコマンドにすばやくアクセスできます。 ソリューション エクスプローラーを使用すると、大規模なエンタープライズ プロジェクトでの作業が容易になります。 「[ソリューションおよびプロジェクト](../ide/solutions-and-projects-in-visual-studio.md)」をご覧ください。
-
-- **チーム エクスプローラー:** チーム エクスプローラーを使用すると、プロジェクトを GIT または TFS リポジトリを使用して管理でき、チームのコラボレーションが容易になります。 [チーム エクスプローラーでの作業](/azure/devops/user-guide/work-team-explorer)を参照してください。
-
-- **NuGet:** Visual Studio と Blend for Visual Studio の両方で NuGet パッケージを管理できます。 NuGet は、パッケージのインストールと、ソリューションからの削除を簡略化する .NET 用のパッケージ マネージャーです。
+- **レイアウトの同期と設定:** Visual Studio または Blend for Visual Studio でカスタマイズしたツール ウィンドウのレイアウトや設定は、同じ個人用アカウントでサインインしたとき、デバイスやバージョンの間で同期されます。 [複数のコンピューター間での設定の同期](../ide/synchronized-settings-in-visual-studio.md)に関するページを参照してください。
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Blend for Visual Studio での高度な機能
 
-生産性を高めるため、次のようなタスクには Blend for Visual Studio の使用をご検討ください。 Blend for Visual Studio が Visual Studio デザイナーまたはコード単独より短い時間でより多くの機能を提供する領域は以下のとおりです。
+生産性を高めるため、次のようなタスクには Blend for Visual Studio の使用をご検討ください。 Blend for Visual Studio が Visual Studio デザイナーまたはコード単独より多くの機能を提供する領域は以下のとおりです。
 
-|終了|Visual Studio|Blend for Visual Studio|詳細情報|
-|--------|-------------------| - | - |
-|**アニメーションを作成する**|アニメーション用のデザイン ツールはないため、プログラムで作成する必要があります。 これを行うには、WPF におけるアニメーションおよびタイミング システムを理解し、広範なコーディングの専門知識を持っている必要があります。|アニメーションを視覚的に作成し、Blend for Visual Studio でプレビューできます。 これは、コーディングでアニメーションを構築するよりもすばやく正確です。 ユーザーとの対話を処理するトリガーを追加できるほか、コードに切り替えてイベント ハンドラーとその他の機能を追加することができます。|[オブジェクトのアニメーション化](../designers/animate-objects-in-xaml-designer.md)|
-|**簡単に操作できるよう、図形やテキストをパスに変換する**|サポートされていません。|図形 (四角形、楕円など) をパスに変換することで、図形に対して軽微な変更や劇的な変更を行えます。そうすることで、より良い編集コントロールができます。 形状を変更したり、パスを結合するとともに、複数の図形から複合パスを作成することができます。<br /><br /> さらに、テキスト ブロックをパスに変換して、ベクター イメージとして操作することもできます。|[図形とパスの描画](../designers/draw-shapes-and-paths.md)|
-|**UI の設計に対話機能を追加する**|C#、Visual Basic、または C++ コードが必要です。|静的な設計に対話機能を追加するため、コントロールにビヘイビアーをドラッグ アンド ドロップします。 ビヘイビアーは、ドラッグ アンド ドロップ、ズーム、表示状態の変更などの機能をカプセル化する、すぐに使用できるコード スニペットです。 選択したり、独自に作成したりできるビヘイビアーのセットが増えています。<br /><br /> 次に、Blend for Visual Studio でビヘイビアーのプロパティを変更するか、コードでイベント ハンドラーを追加することにより、各ビヘイビアーをカスタマイズできます。|[コントロールの挿入およびそのビヘイビアーの変更](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)|
-|**Adobe アートワークを使用する**|サポートされていません。|Adobe FXG、PhotoShop、または Illustrator のアートワークをインポートし、Blend for Visual Studio に UI を実装します。|[イメージ、ビデオ、およびオーディオ クリップの挿入](../designers/insert-images-videos-and-audio-clips-in-xaml-designer.md)|
-|**コントロール、テンプレート、スタイルを編集する**|コーディングおよび WPF のスタイルとテンプレートの知識が必要です。|イメージをコントロールに変換します。<br /><br /> コントロール、スタイル、テンプレートを数回マウスでクリックするだけで変更するには、テンプレート編集ツールを使用します。<br /><br /> たとえば、Blend for Visual Studio のスタイル リソースを使用して一般的な WPF コントロール (ボタン、リスト ボックス、スクロール バー、メニューなど) を実装し、Blend for Visual Studio で色、スタイル、または基になるテンプレートを直接変更できます。 次に、必要な場合はコードに切り替えてタッチを仕上げます。|[オブジェクト スタイルの変更](../designers/modify-the-style-of-objects-in-blend.md)|
-|**UI をデータに接続する**|SQL Server データベース、WCF や Web サービス、オブジェクト、または SharePoint リストなどのリソースからデータ ソースを作成し、データ ソースを UI コントロールにバインドします。<br /><br /> デザイン時のデータは、対話型のデザイン エクスペリエンスのため手動で作成する必要があります。|プロトタイプの作成とテスト用のサンプル データは簡単に作成できます。 準備ができたら、ライブ データに切り替えます。<br /><br /> Blend for Visual Studio のデータ生成機能は並外れており (その場で迅速かつ簡単に、名前、番号、URL、写真の追加が可能)、多くの時間を節約できます。<br /><br /> ライブ データの場合は、UI コントロールを XML ファイルまたは任意の CLR データ ソースにバインドできます。|[データの表示](../designers/display-data-in-blend.md)|
+| タスク | Visual Studio | Blend for Visual Studio | 詳細情報 |
+| - | - | - | - |
+| **ビジュアルの状態をデザインする** | ビジュアルの状態のデザインに便利なツールはありません。プログラミングで作成する必要があります。 | デザイン ツールを使用し、コントロールの状態に基づき、コントロールの外観を変更します。 | [ビジュアルの状態](modify-the-style-of-objects-in-blend.md#visual-states) |
+| **アニメーションを作成する** |アニメーション用のデザイン ツールはないため、プログラムで作成する必要があります。 これを行うには、WPF におけるアニメーションおよびタイミング システムを理解し、広範なコーディングの専門知識を持っている必要があります。|アニメーションを視覚的に作成し、Blend for Visual Studio でプレビューできます。 これは、コーディングでアニメーションを構築するよりもすばやく正確です。 ユーザーとの対話を処理するトリガーを追加できるほか、コードに切り替えてイベント ハンドラーとその他の機能を追加することができます。|[オブジェクトのアニメーション化](../designers/animate-objects-in-xaml-designer.md)|
+|**簡単に操作できるよう、図形やテキストをパスに変換する**|サポートされていません。|図形 (四角形、楕円など) をパスに変換することで、図形に対して軽微な変更や劇的な変更を行えます。そうすることで、より良い編集コントロールができます。 形状を変更したり、パスを結合するとともに、複数の図形から複合パスを作成することができます。<br /><br />さらに、テキスト ブロックをパスに変換して、ベクター イメージとして操作することもできます。|[図形とパスの描画](../designers/draw-shapes-and-paths.md)|
+|**コントロール、テンプレート、スタイルを編集する**|コーディングおよび WPF のスタイルとテンプレートの知識が必要です。|イメージをコントロールに変換します。<br /><br />コントロール、スタイル、テンプレートを数回マウスでクリックするだけで変更するには、テンプレート編集ツールを使用します。<br /><br />たとえば、Blend for Visual Studio のスタイル リソースを使用して一般的な WPF コントロール (ボタン、リスト ボックス、スクロール バー、メニューなど) を実装し、Blend for Visual Studio で色、スタイル、または基になるテンプレートを直接変更できます。 次に、必要な場合はコードに切り替えてタッチを仕上げます。|[オブジェクト スタイルの変更](../designers/modify-the-style-of-objects-in-blend.md)|
+|**UI をデータに接続する**|SQL Server データベース、WCF または Web サービス、オブジェクト、SharePoint リストなどのリソースからデータ ソースを作成し、そのデータ ソースを UI コントロールにバインドできます。<br /><br />デザイン時のデータは、対話型のデザイン エクスペリエンスのため手動で作成する必要があります。|.NET Framework アプリのために、試作品とテストのためのサンプル データを簡単に作成します。 準備ができたら、ライブ データに切り替えます。<br /><br />Blend for Visual Studio のデータ生成機能は並外れており (その場で迅速かつ簡単に、名前、番号、URL、写真の追加が可能)、多くの時間を節約できます。<br /><br />ライブ データの場合は、UI コントロールを XML ファイルまたは任意の CLR データ ソースにバインドできます。|[データの表示](../designers/display-data-in-blend.md)|
 
 高度な XAML デザインの詳細については、「[Blend for Visual Studio を使用して UI を作成する](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)」を参照してください。

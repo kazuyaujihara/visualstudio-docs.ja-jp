@@ -6,14 +6,12 @@ ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f80496cb54e8e7f4c99a819ddd3c07fbed5438ca
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823823"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821510"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>XAML デザイナーで要素を操作する
 
@@ -21,7 +19,7 @@ XAML で、コードで、または XAML デザイナーを使用して、アプ
 
 ## <a name="add-an-element-to-a-layout"></a>レイアウトに要素を追加する
 
-*レイアウト*とは、UI に要素を配置してサイズ変更するプロセスです。 ビジュアル要素を配置するには、それらを [Panel](/uwp/api/Windows.UI.Xaml.Controls.Panel) レイアウトに配置する必要があります。 `Panel` には、[FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement) 型のコレクションである子プロパティがあります。 `Panel` のさまざまな子要素 ([Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas)、[StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel)、[Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid) など) をレイアウト コンテナーとして利用し、ページに要素を配置して整列することができます。
+*レイアウト*とは、UI に要素を配置してサイズ変更するプロセスです。 ビジュアル要素を配置するには、それらを [Panel](xref:Windows.UI.Xaml.Controls.Panel) レイアウトに配置する必要があります。 `Panel` には、[FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement) 型のコレクションである子プロパティがあります。 `Panel` のさまざまな子要素 ([Canvas](xref:Windows.UI.Xaml.Controls.Canvas)、[StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel)、[Grid](xref:Windows.UI.Xaml.Controls.Grid) など) をレイアウト コンテナーとして利用し、ページに要素を配置して整列することができます。
 
 既定では、`Grid` パネルをページまたはフォーム内の最上位のレイアウト コンテナーとして使用します。 最上位のページ レイアウト内で、レイアウト パネル、コントロール、またはその他の要素を追加できます。
 
@@ -31,7 +29,7 @@ XAML デザイナーでレイアウトに要素を追加するには、次のい
 
 - 要素を **[ツールボックス]** からアートボードにドラッグします。
 
-- **[ツールボックス]** で、いずれかの描画ツール ([[楕円]](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) や [[四角形]](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle) など) を選択し、アクティブなパネルに要素を描画します。
+- **[ツールボックス]** で、いずれかの描画ツール ([[楕円]](xref:Windows.UI.Xaml.Shapes.Ellipse) や [[四角形]](xref:Windows.UI.Xaml.Shapes.Rectangle) など) を選択し、アクティブなパネルに要素を描画します。
 
 ## <a name="change-the-layering-order-of-elements"></a>要素の重ね順を変更する
 
@@ -51,7 +49,7 @@ XAML デザイナーのアートボード上に要素が 2 つある場合は、
 
   - **[最背面へ移動]** : 要素を重ね順の一番後ろに移動します。
 
-  [プロパティ] ウィンドウの **[レイアウト]** セクションで **[ZIndex]** プロパティを変更します。 要素が重なり合うときは、 **[ZIndex]** プロパティのほうが、[ドキュメント アウトライン] ウィンドウに表示される要素の順序よりも優先されます。 **[ZIndex]** 値が大きい要素ほど、他の要素より前に表示されます。
+- [プロパティ] ウィンドウの **[レイアウト]** セクションで **[ZIndex]** プロパティを変更します。 要素が重なり合うときは、 **[ZIndex]** プロパティのほうが、[ドキュメント アウトライン] ウィンドウに表示される要素の順序よりも優先されます。 **[ZIndex]** 値が大きい要素ほど、他の要素より前に表示されます。
 
 ## <a name="change-the-alignment-of-an-element"></a>要素の配置を変更する
 
@@ -88,7 +86,7 @@ XAML デザイナーの余白によって、アートボード上の要素の周
 余白ガイドを開いた場合に、反対側の余白が設定されていないと、アートボード上での要素の位置に従って正しい値が反対側の余白に設定されます。 **[Left]** と **[Right]** の余白のような向かい側の余白の場合は、少なくとも一方のプロパティが常に設定されます。
 
 > [!IMPORTANT]
-> 一部のレイアウト コンテナー(<xref:Windows.UI.Xaml.Controls.Canvas> など) に配置する要素には、空白ガイドがありません。 <xref:Windows.UI.Xaml.Controls.StackPanel> の内部に配置された要素には、`StackPanel` の向きに応じて、左右の余白または上下の余白に余白ガイドがあります。
+> 一部のレイアウト コンテナー([Canvas](xref:Windows.UI.Xaml.Controls.Canvas) など) に配置する要素には、空白ガイドがありません。 [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) の内部に配置された要素には、`StackPanel` の向きに応じて、左右の余白または上下の余白に余白ガイドがあります。
 
 ## <a name="group-and-ungroup-elements"></a>要素のグループ化とグループ化解除
 
@@ -101,7 +99,7 @@ XAML デザイナーの複数の要素をグループ化すると、新しいレ
 2. 選択した要素を右クリックし、 **[グループ (パネル) に含める]** をポイントし、そのグループを配置するレイアウト コンテナーの種類をクリックします。
 
     > [!TIP]
-    > 要素をグループ化するために <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border>、または <xref:Windows.UI.Xaml.Controls.ScrollViewer> を選択すると、<xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border>、または <xref:Windows.UI.Xaml.Controls.ScrollViewer> 内の新しい <xref:Windows.UI.Xaml.Controls.Grid> パネルに要素が配置されます。 これらのレイアウト コンテナーのいずれかの要素のグループ化を解除すると、<xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border>、または <xref:Windows.UI.Xaml.Controls.ScrollViewer> のみが削除され、<xref:Windows.UI.Xaml.Controls.Grid> パネルは削除されません。 `Grid` パネルを削除するには、要素のグループ化を再度解除します。
+    > [[Viewbox]](xref:Windows.UI.Xaml.Controls.Viewbox)、[[Border]](xref:Windows.UI.Xaml.Controls.Border)、または [[ScrollViewer]](xref:Windows.UI.Xaml.Controls.ScrollViewer) を選択して要素をグループ化する場合、要素は [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox)、[Border](xref:Windows.UI.Xaml.Controls.Border)、[ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) 内の新しい [[グリッド]](xref:Windows.UI.Xaml.Controls.Grid) パネルに配置されます。 これらのレイアウト コンテナーのいずれかの要素のグループ化を解除すると、[Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox)、[Border](xref:Windows.UI.Xaml.Controls.Border)、[ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) のみが削除され、[[グリッド]](xref:Windows.UI.Xaml.Controls.Grid) パネルは削除されません。 `Grid` パネルを削除するには、要素のグループ化を再度解除します。
 
 要素のグループ化を解除してレイアウトを削除するには、グループ化を解除するグループを右クリックして、 **[グループ化解除]** をクリックします。 要素のグループ化やグループ解除を行うには、[ドキュメント アウトライン] ウィンドウで選択したアイテムを右クリックして、 **[グループ (パネル) に含める]** または **[グループ解除]** をクリックします。
 

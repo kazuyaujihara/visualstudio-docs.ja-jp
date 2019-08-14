@@ -1,21 +1,20 @@
 ---
 title: Visual Studio サブスクリプションのコンシェルジェ チャット特典 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるコンシェルジェ チャット特典について説明します。
-ms.openlocfilehash: 043ced3654c8bf43feebcc584fb46bb033d96e78
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 543fee937437141aa38d53707cb6e5bf84031e94
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784619"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681177"
 ---
-# <a name="concierge-chat"></a>コンシェルジェ チャット
-
-コンシェルジェ チャット サービスは、製品情報およびテクニカル ドキュメントの検索のサポートと、Visual Studio サブスクリプション特典の使用におけるヘルプを提供します。
+# <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのコンシェルジェ チャット
+コンシェルジェ チャット サービスでは、製品情報やテクニカル ドキュメントの検索のサポートと、Visual Studio サブスクリプション特典の使用におけるヘルプを提供します。
 
 このサービスは 24 時間 365 日、いつでも利用できます。アカウント、請求、およびサブスクリプション以外の質問については、現在は英語でのみ提供されています。
 
@@ -36,7 +35,6 @@ ms.locfileid: "67784619"
     > ![コンシェルジェ チャット セッション](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>特典を受ける条件
-
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 使用可能       |  はい          |
@@ -53,10 +51,15 @@ ms.locfileid: "67784619"
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
-
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>Q:チャット サービスは複数の言語で使用できますか。
    A: アカウント、請求およびサブスクリプションの問題に関するアシスタンスは、複数の言語で使用できます。  製品情報とテクニカル ドキュメントの検索に関するアシスタンスは、英語で使用できます。
 
 ## <a name="support-resources"></a>サポート リソース
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+
+## <a name="next-steps"></a>次の手順
+Microsoft のツールとサービスの詳細については、次のドキュメントを参照してください。
+- [Azure](/azure/)
+- [Azure DevOps](/azure/devops/)
+- [Visual Studio IDE](/visualstudio/)

@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9eee42d9e3a48f77153e5bd94f72a975ab27843
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 21de3480ff3ac2d6733aacff6bcf714f910e7022
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263392"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821887"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>リソースを作成して適用する方法
 
-XAML デザイナーで、要素のスタイルとテンプレートは "リソース" という再利用可能なエンティティに保存されます。 スタイルを使用すると、要素のプロパティを設定し、それらの設定を複数の要素で再利用することにより、一貫した外観を維持できます。 [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) は、コントロールの外観を定義し、リソースとしての適用も可能です。 詳細については、「[クイック スタート:コントロールのスタイル](http://go.microsoft.com/fwlink/?LinkID=248239)」および「[クイック スタート:コントロール テンプレート](http://go.microsoft.com/fwlink/?LinkID=247982)」を参照してください。
+XAML デザイナーで、要素のスタイルとテンプレートは "リソース" という再利用可能なエンティティに保存されます。 スタイルを使用すると、要素のプロパティを設定し、それらの設定を複数の要素で再利用することにより、一貫した外観を維持できます。 [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate) は、コントロールの外観を定義し、リソースとしての適用も可能です。 詳細については、「[XAML スタイル](/windows/uwp/design/controls-and-patterns/xaml-styles)」と「[コントロール テンプレート](/windows/uwp/design/controls-and-patterns/control-templates)」を参照してください。
 
-既存のプロパティ、[Style](/uwp/api/Windows.UI.Xaml.Style)、または `ControlTemplate` から新しいリソースを作成するたびに、 **[リソースの作成]** ダイアログ ボックスで、アプリケーション レベル、ドキュメント レベル、または要素レベルでリソースを定義できます。 定義したレベルに応じて、そのリソースを使用できる場所が決まります。 たとえば、要素レベルで定義したリソースは、そのリソースの作成時に使用した要素にのみ適用できます。 リソースを[リソース ディクショナリ](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references)に格納することも可能です。これは、別のプロジェクトでもう一度使用できる個別のファイルです。
+既存のプロパティ、[Style](xref:Windows.UI.Xaml.Style)、または [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate) から新しいリソースを作成するたびに、 **[リソースの作成]** ダイアログ ボックスで、アプリケーション レベル、ドキュメント レベル、または要素レベルでリソースを定義できます。 定義したレベルに応じて、そのリソースを使用できる場所が決まります。 たとえば、要素レベルで定義したリソースは、そのリソースの作成時に使用した要素にのみ適用できます。 リソースを[リソース ディクショナリ](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references)に格納することも可能です。これは、別のプロジェクトでもう一度使用できる個別のファイルです。
 
 ## <a name="create-a-new-resource"></a>新しいリソースを作成する
 
@@ -63,7 +63,7 @@ XAML デザイナーで、要素のスタイルとテンプレートは "リソ�
      > [!NOTE]
      > **[テンプレートの編集]** はコントロール テンプレートを適用します。 **[追加テンプレートの編集]** は、その他の種類のテンプレートを適用します。
 
-     リソースは互換性があれば適用できます。 たとえば、ブラシ リソースは <xref:Windows.UI.Xaml.Controls.TextBox> コントロールの **[Foreground]** プロパティに適用できます。
+     リソースは互換性があれば適用できます。 たとえば、ブラシ リソースは [TextBox](xref:Windows.UI.Xaml.Controls.TextBox) コントロールの **[Foreground]** プロパティに適用できます。
 
 ## <a name="edit-a-resource"></a>リソースを編集する
 

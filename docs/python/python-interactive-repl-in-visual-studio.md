@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896897"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822393"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Python 対話型ウィンドウの使用
 
-Visual Studio では、各 Python 環境に向けて対話型の read-evaluate-print loop (REPL) ウィンドウが用意されています。これにより、コマンド ライン上の *python.exe* で得られる REPL が改善されます。 (**[表示]** > **[その他のウィンドウ]** > **[&lt;環境&gt; インタラクティブ]** メニュー コマンドで開いた) **対話型**ウィンドウを使用すると、任意の Python コードを入力し、すぐに結果を確認することができます。 このコーディング方法は、API とライブラリの学習と実習、およびプロジェクトに含める作業コードを対話形式で開発するのに役立ちます。
+Visual Studio では、各 Python 環境に向けて対話型の read-evaluate-print loop (REPL) ウィンドウが用意されています。これにより、コマンド ライン上の *python.exe* で得られる REPL が改善されます。 ( **[表示]**  >  **[その他のウィンドウ]**  >  **[&lt;環境&gt; インタラクティブ]** メニュー コマンドで開いた) **対話型**ウィンドウを使用すると、任意の Python コードを入力し、すぐに結果を確認することができます。 このコーディング方法は、API とライブラリの学習と実習、およびプロジェクトに含める作業コードを対話形式で開発するのに役立ちます。
 
 ![Python Interactive ウィンドウ](media/interactive-window.png)
 
@@ -40,29 +40,29 @@ Visual Studio では、複数の Python REPL モードから選ぶことがで�
 
 環境用の**対話型**ウィンドウを開くにはいくつかの方法があります。
 
-(第 1 の方法) [Python 環境] ウィンドウに切り替え (**[表示]** > **[その他のウィンドウ]** > **[Python 環境]**、または **Ctrl** + **K** > **Ctrl** + **`**)、選んだ環境の **[対話型ウィンドウを開く]** コマンドまたはボタンを選択します。
+(第 1 の方法) [Python 環境] ウィンドウに切り替え ( **[表示]**  >  **[その他のウィンドウ]**  >  **[Python 環境]** 、または **Ctrl** + **K** > **Ctrl** + **`** )、選んだ環境の **[対話型ウィンドウを開く]** コマンドまたはボタンを選択します。
 
 ![Python 環境ウィンドウの対話型ウィンドウへのリンク](media/interactive-window-opening.png)
 
-(第 2 の方法) **[表示]** > **[その他のウィンドウ]** メニューの下の方に、既定の環境の **[Python Interactive ウィンドウ]** コマンドと、**環境**ウィンドウに切り替えるためのコマンドがあります。
+(第 2 の方法) **[表示]**  >  **[その他のウィンドウ]** メニューの下の方に、既定の環境の **[Python Interactive ウィンドウ]** コマンドと、**環境**ウィンドウに切り替えるためのコマンドがあります。
 
 ![[表示] > [その他のウィンドウ] の対話型ウィンドウ メニュー項目](media/interactive-window-menu.png)
 
-(第 3 の方法) プロジェクトのスタートアップ ファイルで**対話型**ウィンドウを開くことができます。または、スタンドアロン ファイルの場合は、**[デバッグ]** > **[Python Interactive で \<プロジェクト | ファイル> を実行する]** メニュー コマンドを選びます (**Shift** + **Alt** + **F5**)。
+(第 3 の方法) プロジェクトのスタートアップ ファイルで**対話型**ウィンドウを開くことができます。または、スタンドアロン ファイルの場合は、 **[デバッグ]**  >  **[Python Interactive で \<プロジェクト | ファイル> を実行する]** メニュー コマンドを選びます (**Shift** + **Alt** + **F5**)。
 
 ![[Execute Project in Python Interactive (Python Interactive でプロジェクトを実行する)] メニュー](media/interactive-execute-project.png)
 
-(第 4 の方法) ファイルでコードを選び、後で説明する [**[Interactive に送信]** コマンド](#send-to-interactive-command)を使用します。
+(第 4 の方法) ファイルでコードを選び、後で説明する [ **[Interactive に送信]** コマンド](#send-to-interactive-command)を使用します。
 
 ## <a name="interactive-window-options"></a>対話型ウィンドウのオプション
 
-**[ツール]** > **[オプション]** > **[Python]** > **[対話型ウィンドウ]** を使って、**対話型**ウィンドウのさまざまな部分を制御できます ([オプション](python-support-options-and-settings-in-visual-studio.md)に関するページを参照)。
+**[ツール]**  >  **[オプション]**  >  **[Python]**  >  **[対話型ウィンドウ]** を使って、**対話型**ウィンドウのさまざまな部分を制御できます ([オプション](python-support-options-and-settings-in-visual-studio.md)に関するページを参照)。
 
 ![Python Interactive ウィンドウのオプション](media/options-interactive-windows.png)
 
 ## <a name="use-the-interactive-window"></a>対話型ウィンドウの使用
 
-**対話型**ウィンドウを開いた後は、**\>\>\>** プロンプトで 1 行ずつコードの入力を開始できます。 **対話型**ウィンドウは、入力と同時に各行を実行します。これには、モジュールのインポートや、変数の定義などが含まれます。
+**対話型**ウィンドウを開いた後は、 **\>\>\>** プロンプトで 1 行ずつコードの入力を開始できます。 **対話型**ウィンドウは、入力と同時に各行を実行します。これには、モジュールのインポートや、変数の定義などが含まれます。
 
 ![Python Interactive ウィンドウ](media/interactive-window.png)
 
@@ -100,18 +100,22 @@ Visual Studio 拡張機能で `IInteractiveWindowCommand` を実装およびエ�
 
 ## <a name="send-to-interactive-command"></a>対話型コマンドへの送信
 
-**対話型**ウィンドウ内で直接作業するだけでなく、エディターで、コードを選び、右クリックして、**[Interactive に送信]** を選ぶか、**Ctrl** + **Enter** キーを押します。
+**対話型**ウィンドウ内で直接作業するだけでなく、エディターで、コードを選び、右クリックして、 **[Interactive に送信]** を選ぶか、**Ctrl** + **Enter** キーを押します。
 
 ![[Interactive に送信] メニュー コマンド](media/interactive-send-to.png)
 
-このコマンドは、開発しながらコードをテストするなど、反復的なまたは革新的なコードの開発に役立ちます。 たとえば、**対話型**ウィンドウにコードの一部を送信し、その出力を表示した後、上方向キーを押してコードをもう一度表示し、変更してから、**Ctrl** + **Enter** キーを押して簡単にテストすることができます  (入力の最後に **Enter** キーを押すと入力内容が実行されますが、入力の途中で **Enter** キーを押すと改行が挿入されます)。目的のコードができたら、簡単にプロジェクト ファイルにコピーして戻すことができます。
+このコマンドは、開発しながらコードをテストするなど、反復的なまたは革新的なコードの開発に役立ちます。 たとえば、**対話型**ウィンドウにコードの一部を送信し、その出力を表示した後、上方向キーを押してコードをもう一度表示し、変更してから、**Ctrl** + **Enter** キーを押して簡単にテストすることができます (入力の最後に **Enter** キーを押すと入力内容が実行されますが、入力の途中で **Enter** キーを押すと改行が挿入されます)。目的のコードができたら、簡単にプロジェクト ファイルにコピーして戻すことができます。
 
 > [!Tip]
-> 既定では、Visual Studio は **>>>** と **...** REPL プロンプトを、**対話型**ウィンドウからエディターにコードを貼り付ける際に削除します。 この動作は、**[ツール]** > **[オプション]** > **[テキスト エディター]** > **[Python]** > **[詳細設定]** タブで **[貼り付け時に REPL プロンプトを削除する]** オプションを使用して変更できます。 「[Options - Miscellaneous Options](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)」(オプション ∸ その他のオプション) を参照してください。
+> 既定では、Visual Studio は **>>>** と **...** REPL プロンプトを、**対話型**ウィンドウからエディターにコードを貼り付ける際に削除します。 この動作は、 **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[Python]**  >  **[詳細設定]** タブで **[貼り付け時に REPL プロンプトを削除する]** オプションを使用して変更できます。 「[Options - Miscellaneous Options](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)」(オプション ∸ その他のオプション) を参照してください。
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
-コード ファイルをスクラッチ パッドとして使用していると、小さなコードのブロックを一度に送信したい場合がよくあります。 コードを一緒にグループ化するには、`#%%` で始まるコメントを前のセルを終了するセルの先頭に追加して、コードを*コード セル*としてマーク付けします。 コード セルは折りたたむことも展開することもでき、コード セル内で **Ctrl** + **Enter** キーを使用することでセル全体を**対話型**ウィンドウに送信し、次のセルに移動できます。
+## <a name="work-with-code-cells"></a>コード セルの操作
+
+コード セルはデータ分析で使用できます。また、さまざまなテキスト エディターでサポートされています。
+
+たとえば、コード ファイルをスクラッチ パッドとして使用していると、小さなコードのブロックを一度に送信したい場合がよくあります。 コードを一緒にグループ化するには、`#%%` で始まるコメントを前のセルを終了するセルの先頭に追加して、コードを*コード セル*としてマーク付けします。 コード セルは折りたたむことも展開することもでき、コード セル内で **Ctrl** + **Enter** キーを使用することでセル全体を**対話型**ウィンドウに送信し、次のセルに移動できます。
 
 Visual Studio は `# In[1]:` のようなコメントで始まるコード セルも検出します。これは、Jupyter Notebook を Python ファイルとしてエクスポートするときに取得する形式です。 この検出は、ノートブックを Python ファイルとしてダウンロードし、Visual Studio で開き、**Ctrl** + **Enter** キーを使用して各セルを実行することで、[Azure Notebooks](https://notebooks.azure.com/) からノートブックを簡単に実行できるようにします。
 
@@ -121,4 +125,4 @@ Visual Studio は `# In[1]:` のようなコメントで始まるコード セ�
 
 コード エディターの IntelliSense がソース コードの分析のみに基づくのとは異なり、**対話型**ウィンドウに含まれる IntelliSense はライブ オブジェクトに基づきます。 これらの提案は**対話型**ウィンドウではより正確です。動的に生成されるコードでは特にそうです。 欠点としては、副作用のある関数 (ログ メッセージなど) は、開発エクスペリエンスに影響を与える可能性があります。
 
-それが問題になる場合は、オプションの「[対話型ウィンドウ オプション](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)」で説明されているように、**[ツール]** > **[オプション]** > **[Python]** > **[対話型ウィンドウ]** の **[入力候補モード]** グループにある設定を変更します。
+それが問題になる場合は、オプションの「[対話型ウィンドウ オプション](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)」で説明されているように、 **[ツール]**  >  **[オプション]**  >  **[Python]**  >  **[対話型ウィンドウ]** の **[入力候補モード]** グループにある設定を変更します。

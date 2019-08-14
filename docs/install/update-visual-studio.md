@@ -2,7 +2,7 @@
 title: Visual Studio 2017 を更新する
 titleSuffix: ''
 description: Visual Studio を最新のリリースに更新する詳細な手順を説明します。
-ms.date: 07/11/2019
+ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: 80ee1a568e30a4898c767533a4f592e2301a097a
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250578"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681463"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio を最新リリースに更新する
 
@@ -180,7 +180,7 @@ Visual&nbsp;Studio&nbsp;2019 を更新する方法を次に示します。
 
 1. インストーラーを開きます。
 
-     ![Visual Studio インストーラーを開く](media/vs2019-visual-studio-installer.png "Visual Studio インストーラーを開く")
+     ![Windows から Visual Studio インストーラーを開く](media/vs-2019/vs-installer-windows-start.png "Visual Studio インストーラーを開く")
 
    続行する前に、インストーラーの更新が必要な場合があります。 その場合は、画面の指示に従います。
 
@@ -188,15 +188,17 @@ Visual&nbsp;Studio&nbsp;2019 を更新する方法を次に示します。
 
    たとえば、以前にインストールした Visual&nbsp;Studio Community&nbsp;2019 に対して更新プログラムが存在する場合は、"**利用可能な更新プログラムがあります**" というメッセージが表示されます。
 
-     ![更新する Visual Studio 2019 のエディションを選択する](media/vs2019-update-visual-studio-community-rc.png "更新する Visual Studio 2019 のエディションを選択する")
+     ![更新する Visual Studio 2019 のエディションを選択する](media/vs-2019/vs-installer-update-visual-studio-community.png "更新する Visual Studio 2019 のエディションを選択する")
 
 1. **[更新]** を選択して更新プログラムをインストールします。
 
-    ![[更新] ボタンを選択して更新プログラムをインストールする](media/vs2019-choose-update-visual-studio-community-rc.png "[更新] ボタンを選択して更新プログラムをインストールする")
+    ![[更新] ボタンを選択して更新プログラムをインストールする](media/vs-2019/vs-installer-choose-update-visual-studio-community.png "[更新] ボタンを選択して更新プログラムをインストールする")
 
-1. 更新が完了したら、 **[起動]** を選択して Visual Studio を起動します。
+1. 更新が完了したら、コンピューターの再起動を求められる場合があります。 その場合は、その操作を行い、通常どおり Visual Studio を起動します。
 
-    ![[起動] ボタンを選択して Visual Studio を起動する](media/vs2019-choose-launch-visual-studio-community-rc.png "[起動] ボタンを選択して Visual Studio を起動する")
+   コンピューターの再起動を求められなかった場合は、 **[起動]** を選択してインストーラーから Visual Studio を起動します。
+
+    ![[起動] ボタンを選択して Visual Studio を起動する](media/vs-2019/choose-launch-visual-studio-community.png "[起動] ボタンを選択して Visual Studio を起動する")
 
 ## <a name="use-the-ide"></a>IDE を使用する
 
@@ -206,7 +208,7 @@ Visual&nbsp;Studio&nbsp;2019 を更新する方法を次に示します。
 
 1. Windows の **[スタート]** メニューから、 **[Visual Studio 2019]** を選択します。
 
-    ![Visual Studio 2019 を開く](media/vs2019-visual-studio-rc.png "Windows から Visual Studio 2019 を開く")
+    ![Visual Studio 2019 を開く](media/vs-2019/vs-installer-visual-studio-2019.png "Windows から Visual Studio 2019 を開く")
 
 1. **[作業の開始]** で、任意のオプションを選択すると、IDE が開きます。
 
@@ -214,15 +216,15 @@ Visual&nbsp;Studio&nbsp;2019 を更新する方法を次に示します。
 
     Visual Studio が開きます。 IDE 内に、**Visual Studio 2019 の更新プログラム**に関するメッセージが表示されます。
 
-    ![IDE 内の Visual Studio 2019 の更新プログラムに関するメッセージ](media/vs2019-update-visual-studio-ide-message.png "IDE 内の Visual Studio 2019 の更新プログラムに関するメッセージ")
+    ![IDE 内の Visual Studio 2019 の更新プログラムに関するメッセージ](media/vs-2019/update-visual-studio-ide-message.png "IDE 内の Visual Studio 2019 の更新プログラムに関するメッセージ")
 
 1. **Visual Studio 2019 の更新プログラム**に関するメッセージで、 **[詳細の表示]** を選択します。
 
-   ![Visual Studio 2019 IDE の更新プログラムに関するメッセージ内で [詳細の表示] ボタンを選択する](media/vs2019-update-visual-studio-ide-view-details.png "Visual Studio 2019 の更新プログラムに関するメッセージ内で [詳細の表示] ボタンを選択する")
+   ![Visual Studio 2019 IDE の更新プログラムに関するメッセージ内で [詳細の表示] ボタンを選択する](media/vs-2019/update-visual-studio-ide-view-details.png "Visual Studio 2019 の更新プログラムに関するメッセージ内で [詳細の表示] ボタンを選択する")
 
 1. **[更新プログラムがダウンロードされてインストールの準備完了]** ダイアログ ボックスで、 **[更新]** を選択します。
 
-     ![[更新プログラムがダウンロードされてインストールの準備完了] ダイアログ ボックスで [更新] ボタンを選択する](media/vs2019-update-visual-studio-community-rc-from-ide.png "[更新プログラムがダウンロードされてインストールの準備完了] ダイアログ ボックスで [更新] ボタンを選択する")
+     ![[更新プログラムがダウンロードされてインストールの準備完了] ダイアログ ボックスで [更新] ボタンを選択する](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "[更新プログラムがダウンロードされてインストールの準備完了] ダイアログ ボックスで [更新] ボタンを選択する")
 
    Visual Studio が更新され、閉じられた後に、再起動されます。
 
@@ -235,9 +237,9 @@ Visual&nbsp;Studio&nbsp;2019 を更新する方法を次に示します。
     > [!NOTE]
     > 更新プログラムを確認するには、IDE にある検索ボックスを使用することもできます。 **Ctrl** + **Q** キーを押し、「更新プログラムの確認」と入力して、一致した検索結果を選択します。
 
-1. **[更新プログラムがダウンロードされてインストールの準備完了]** ダイアログ ボックスで、 **[更新]** を選択します。
+1. **[利用可能な更新プログラムがあります]** ダイアログ ボックスで、 **[更新]** を選択します。
 
-     ![[更新プログラムがダウンロードされてインストールの準備完了] ダイアログ ボックスで [更新] ボタンを選択する](media/vs2019-update-visual-studio-community-rc-from-ide.png "[更新プログラムがダウンロードされてインストールの準備完了] ダイアログ ボックスで [更新] ボタンを選択する")
+     ![[更新プログラムがダウンロードされてインストールの準備完了] ダイアログ ボックスで [更新] ボタンを選択する](media/vs-2019/update-visual-studio-community-from-ide.png "[更新プログラムがダウンロードされてインストールの準備完了] ダイアログ ボックスで [更新] ボタンを選択する")
 
    Visual Studio が更新され、閉じられた後に、再起動されます。
 
@@ -256,7 +258,7 @@ Visual&nbsp;Studio&nbsp;2019 を更新する方法を次に示します。
       > [!TIP]
       > Visual Studio 2019 のエディションに対する更新プログラムは累積になっているため、常に最新のバージョン番号のものをインストールしてください。
 
-1. **[更新プログラムがダウンロードされてインストールの準備完了]** ダイアログ ボックスで、 **[更新]** を選択します。
+1. **[利用可能な更新プログラムがあります]** ダイアログ ボックスで、 **[更新]** を選択します。
 
    Visual Studio が更新され、閉じられた後に、再起動されます。
 
@@ -290,6 +292,6 @@ Visual Studio の更新設定は、いくつかの異なる方法でカスタマ
 * [複数バージョンの Visual Studio をインストールする](install-visual-studio-versions-side-by-side.md)
 * [Visual Studio のネットワーク ベース インストールを更新する](update-a-network-installation-of-visual-studio.md)
 * [サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)
-* [Visual Studio for Mac の更新](/visualstudio/mac/update)
+* [ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)
 * [Visual Studio の変更](modify-visual-studio.md)
 * [Visual Studio のアンインストール](uninstall-visual-studio.md)

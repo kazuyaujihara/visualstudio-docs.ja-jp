@@ -1,26 +1,22 @@
 ---
 title: 今日データ サイエンスのスキルを強化するには、選択した Visual Studio サブスクリプションの DataCamp 特典を使用します。 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる DataCamp トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: 5f5b327bb5b1c328fe746fdbafc1a7550eefacd6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 64176f5a58641bf51434c99eee914a8ac176da56
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825343"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681635"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの DataCamp トレーニング特典
-
 有効な Visual Studio サブスクリプションには、DataCamp へのサブスクリプションが含まれます。  DataCamp を使用すると、必要なすべてのデータ サイエンスのスキルを使い慣れたブラウザーから学習できます。 いつ、どのような内容を学習するかを選択します。 ソフトウェアのインストールも特殊なハードウェアも必要ないので、これまでよりも簡単にデータ サイエンスを学習できます。
 
-DataCamp 特典の有効期間は、Visual Studio サブスクリプションによって異なります。
-
 ## <a name="activation-steps"></a>アクティブ化の手順
-
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
 
 2. "専門能力開発" カテゴリで DataCamp 特典タイルを見つけて、 **[アクティブ化]** をクリックします。
@@ -28,9 +24,7 @@ DataCamp 特典の有効期間は、Visual Studio サブスクリプションに
    > ![DataCamp 特典のタイル](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
 3. [DataCamp] ページで、新しいアカウントを作成できます。  電子メール アドレスとパスワードを入力するか、LinkedIn、Google、または Facebook から既存のアカウントを使用してサインインすることができます。  サインイン情報を指定したら、 **[Get Started]\(作業の開始\)** をクリックします。
-   > [!div class="mx-imgBorder"]
-   > ![DataCamp: 新しいアカウントの作成](_img/vs-datacamp/vs-datacamp-create-account.png)
-   >
+
    > [!NOTE]
    > アカウントの作成を開始すると、"問題が発生しました。ご利用のプロモーション コードが無効であるか、  有効期限が切れています" という内容のエラー メッセージが表示される場合があります。  これは、作成されたプロモーション コードの有効期限が数分後に切れた場合に発生します。  このメッセージが表示された場合は、[[特典]](https://my.visualstudio.com/benefits) ページに戻り、DataCamp 特典タイルの **[アクティブ化]** リンクをクリックするだけです。
 
@@ -62,11 +56,10 @@ DataCamp 特典の有効期間は、Visual Studio サブスクリプションに
 > ![DataCamp: トレーニングの続行](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>特典を受ける条件
-
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 3 か月       |  いいえ。  新しいサブスクライバーのみが使用できます          |
-| Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 3 か月                                                            |  いいえ。  新しいサブスクライバーのみが使用できます           |
+| Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 3 か月間       |  いいえ。  新しいサブスクライバーのみが使用できます          |
+| Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 3 か月間                                                            |  いいえ。  新しいサブスクライバーのみが使用できます           |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 3 か月間                                             |  いいえ。  新しいサブスクライバーのみが使用できます           |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 3 か月間                                              |  いいえ。  新しいサブスクライバーのみが使用できます           |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |
@@ -86,3 +79,9 @@ DataCamp 特典の有効期間は、Visual Studio サブスクリプションに
   - [サポート要求を送信する](https://support.datacamp.com/hc/requests/new)
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+
+## <a name="next-steps"></a>次の手順
+ご利用のサブスクリプションでより専門的な開発機会を確認してください。
+- [Pluralsight](vs-pluralsight.md)
+- [LinkedIn Learning](vs-linkedin-learning.md)
+- [MSDN マガジン](vs-msdn.md)

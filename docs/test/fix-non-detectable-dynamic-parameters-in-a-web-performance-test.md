@@ -10,12 +10,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b02be3e0ed5cb59e57e4aec28b3d7979d77f7652
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf305125fceb4c07bb0565fa227e7e88bb90e3a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003782"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918490"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Web パフォーマンス テストでの検出できない動的パラメーターの修正
 
@@ -76,7 +76,7 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
 6. *ASPQuery.aspx* という名前で 2 つ目の Web フォームを追加します。
 
-7. デザイン ビューで、**Label** をページにドラッグし、**(ID)** プロパティの値を **IndexLabel** に変更します。
+7. デザイン ビューで、**Label** をページにドラッグし、 **(ID)** プロパティの値を **IndexLabel** に変更します。
 
      ![ラベルを Web フォームに追加する](../test/media/web_test_dynamicparameter_label.png)
 
@@ -103,7 +103,7 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
 11. *JScriptQuery.aspx* という名前で 3 つ目の Web フォームを追加します。
 
-     2 番目のページの場合と同様に、**Label** をフォームにドラッグし、**(ID)** プロパティを **IndexLabel** に設定します。**Hyperlink** をフォームにドラッグし、**Text** プロパティを **Back** に設定して、**NavigationURL** プロパティを **Querystring.aspx** に設定します。
+     2 番目のページの場合と同様に、**Label** をフォームにドラッグし、 **(ID)** プロパティを **IndexLabel** に設定します。**Hyperlink** をフォームにドラッグし、**Text** プロパティを **Back** に設定して、**NavigationURL** プロパティを **Querystring.aspx** に設定します。
 
      ![3 つ目の Web フォームを追加および構成する](../test/media/web_test_dynamicparameter_addwebform3.png)
 
@@ -124,7 +124,7 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
 15. **Ctrl** キーを押しながら **F5** キーを押して、ブラウザーで Web アプリケーションを実行します。 URL をコピーします。 この URL は、テストを記録するときに必要になります。
 
-16. 両方のリンクを試します。 どちらについても、"Success.  Dynamic querystring parameter found." というメッセージが示されます。
+16. 両方のリンクを試します。 どちらについても、"Success. Dynamic querystring parameter found." というメッセージが示されます。
 
      ![Web アプリを実行する](../test/media/web_test_dynamicparameter_runapp.png)
 
@@ -158,7 +158,7 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
 7. ASPQuery ページの CustomQueryString の動的パラメーターは自動的に検出されています。 ただし、JScriptQuery ページの CustomQueryString の動的パラメーターは検出されていません。
 
-     *Querystring.aspx* に抽出規則を追加し、ASPQuery ページにバインドするには、**[OK]** をクリックします。
+     *Querystring.aspx* に抽出規則を追加し、ASPQuery ページにバインドするには、 **[OK]** をクリックします。
 
      ![検出された動的パラメーターを昇格させる](../test/media/web_test_dynamicparameter_promotedialog.png)
 
@@ -225,7 +225,7 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
      新しい抽出規則が *Querystring.aspx* 要求に追加され、"Param0" という値が割り当てられます。
 
-     パラメーターをバインドするための、抽出されたテキストに対する一致が見つかったことを示すメッセージがダイアログ ボックスに表示された場合は、**[はい]** をクリックします。
+     パラメーターをバインドするための、抽出されたテキストに対する一致が見つかったことを示すメッセージがダイアログ ボックスに表示された場合は、 **[はい]** をクリックします。
 
      ![作成された抽出規則](../test/media/web_test_dynamicparameter_addextractiondialog.png)
 
@@ -251,11 +251,11 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
 ### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Q:Web アプリケーションが変更された場合は、動的パラメーターの検出を再実行できますか。
 
- **A:** はい。次の手順を使用してください。
+**A:** はい。次の手順を使用してください。
 
 1. ツール バーの **[動的パラメーターを Web テスト パラメーターに昇格]** をクリックします。
 
-     検出プロセスの完了後、動的パラメーターが検出された場合、**[動的パラメーターを Web テスト パラメーターに昇格]** ダイアログ ボックスが表示されます。
+     検出プロセスの完了後、動的パラメーターが検出された場合、 **[動的パラメーターを Web テスト パラメーターに昇格]** ダイアログ ボックスが表示されます。
 
      動的パラメーターは、[動的パラメーター] 列に表示されます。 動的パラメーターの抽出元およびバインド先の要求が、[応答からパラメーターを抽出] 列と [要求にバインド] 列の下に表示されます。
 
@@ -265,4 +265,4 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Q:動的パラメーターが検出されるように Visual Studio を構成する必要はありますか。
 
- **A:** Visual Studio の既定の構成では、Web パフォーマンス テストの記録時に動的パラメーターが検出されます。 ただし、動的パラメーターを検出しないように Visual Studio のオプションが構成されている場合や、テストする Web アプリケーションが追加の動的パラメーターで変更される場合は、Web パフォーマンス テスト エディターで動的パラメーターの検出を実行できます。
+**A:** Visual Studio の既定の構成では、Web パフォーマンス テストの記録時に動的パラメーターが検出されます。 ただし、動的パラメーターを検出しないように Visual Studio のオプションが構成されている場合や、テストする Web アプリケーションが追加の動的パラメーターで変更される場合は、Web パフォーマンス テスト エディターで動的パラメーターの検出を実行できます。

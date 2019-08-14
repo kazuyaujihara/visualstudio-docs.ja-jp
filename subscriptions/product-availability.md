@@ -3,15 +3,15 @@ title: Visual Studio サブスクリプションでのソフトウェア ダウ�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに対するソフトウェア ダウンロードでの製品の利用可能性について説明します。
-ms.openlocfilehash: 8377168808f3d143d3845cddf06e361f113f1642
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315393"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681694"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでのソフトウェア ダウンロードに対する製品の利用可能性
 サブスクライバー特典の一環として、広い範囲のソフトウェアのダウンロードにアクセスできます。
@@ -38,4 +38,5 @@ ms.locfileid: "68315393"
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
 ## <a name="next-steps"></a>次の手順
-ソフトウェアのダウンロードによっては、インストールとライセンス認証を行うためにプロダクト キーが必要になる場合があります。  プロダクト キーの入手方法と管理方法の詳細については、プロダクト キーに関する記事をご覧ください。 
+- ソフトウェアのダウンロードによっては、インストールとライセンス認証を行うためにプロダクト キーが必要になる場合があります。  プロダクト キーの入手方法と管理方法の詳細については、[プロダクト キー](product-keys.md)に関する記事をご覧ください。 
+- [ソフトウェアをダウンロード](download-software.md)する方法を学習します。

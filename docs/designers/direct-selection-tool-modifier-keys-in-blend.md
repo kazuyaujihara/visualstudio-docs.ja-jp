@@ -1,5 +1,6 @@
 ---
-title: Blend の [個別選択] ツールの修飾キー
+title: '[個別選択] ツールの修飾キー'
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
@@ -8,14 +9,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b606cbc3857ac1b30713e2c78b9c85045bcb42ff
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 088c66e73c912ef6f282b7addb8debcd73b766e5
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820386"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821820"
 ---
-# <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend の [個別選択] ツールの修飾キー
+# <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Blend for Visual Studio の [個別選択] ツールの修飾キー
+
 次の表は、**個別選択**ツール ![個別選択ツール](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) で既存のパスの形状を変更するために使うことができるショートカットの一覧です。 既存のパス上の点を追加または削除したり、2 つの既存のパスを結合したりする場合は、 **[ペン]** ツールを使います。
 
 |目的|方法|ポインター|
@@ -33,7 +35,6 @@ ms.locfileid: "66820386"
 
 ## <a name="see-also"></a>関連項目
 
-- [キーボード ショートカットと修飾キー](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [アートボードの修飾キー](../designers/artboard-modifier-keys-in-blend.md)
 - [ペン ツールの修飾キー](../designers/pen-tool-modifier-keys-in-blend.md)
 - [図形とパスの描画](../designers/draw-shapes-and-paths.md)

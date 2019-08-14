@@ -3,7 +3,7 @@ title: Visual Studio 2017 の変更
 titleSuffix: ''
 description: Visual Studio を変更する方法について、ステップ バイ ステップで説明します。
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 06/25/2019
+ms.date: 07/31/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 287ad470a94689b92cacb443c2b5f88eb30f5a70
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: ad5b8a0c261ed967710480b0abd3a2b9d34f01ce
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365411"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681394"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>ワークロードやコンポーネントを追加または削除することで Visual Studio を変更する
 
@@ -86,7 +86,7 @@ ms.locfileid: "67365411"
 
      たとえば、Windows 10 を実行しているコンピューター上で、 **[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
 
-     ![Visual Studio インストーラーを開く](media/vs2019-visual-studio-installer.png "Visual Studio インストーラーを開く")
+     ![Windows から Visual Studio インストーラーを開く](media/vs-2019/vs-installer-windows-start.png "Visual Studio インストーラーを開く")
 
      > [!NOTE]
      > また、Visual Studio インストーラーは次の場所にもあります。
@@ -97,7 +97,7 @@ ms.locfileid: "67365411"
 
 1. インストーラーで、インストールした Visual Studio のエディションを探し、 **[変更]** を選択します。
 
-     ![Visual Studio の更新または変更](media/vs-2019/vs-installer-modify.png "Visual Studio 2017 の更新または変更")
+     ![Visual Studio の更新または変更](media/vs-2019/vs-installer-modify.png "Visual Studio 2019 の更新または変更")
 
 1. **[ワークロード]** タブで、インストールまたはアンインストールするワークロードを選択または選択解除します。
 

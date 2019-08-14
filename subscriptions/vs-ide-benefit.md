@@ -3,17 +3,17 @@ title: Visual Studio サブスクリプションの Visual Studio IDE 特典 | M
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/03/2019
+ms.date: 08/01/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Visual Studio IDE をダウンロードしてインストールする方法を説明します。
-ms.openlocfilehash: 6b3e53604eb275b6fec867ef2470c57d47aaa510
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 62992b2c9dc21063d78c135894368c93f07f76a8
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824654"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787877"
 ---
-# <a name="using-the-visual-studio-2019-benefit"></a>Visual Studio 2019 の特典を使用する
+# <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 の特典
 
 Visual Studio のサブスクライバーは、Visual Studio IDE にアクセスできます。  具体的なバージョンは、サブスクリプションのレベルによって異なります。  特典は、サブスクリプション ポータルの [[特典]](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ページの [ツール] カテゴリのタイルとして表示されます。
 
@@ -34,7 +34,7 @@ IDE をダウンロードするには:
 5. 青いダウンロード ボタンをクリックします。
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise ダウンロードの詳細](_img/vs-ide-experience/vs-ide-download-details.png)
-6. すぐにインストールするには、 **[実行]** をクリックします。
+6. ダウンロードしたインストーラー パッケージをクリックします。  すぐにインストールするように指示されたら、 **[実行]** をクリックします。
 7. [ユーザー アカウント制御] ダイアログで、 **[はい]** をクリックします。
 8. **[続行]** をクリックしてライセンス条項に同意します。
 9. インストーラーが開始したら、目的のワークロード、個々のコンポーネント、言語パックを、対応するタブで選びます。
@@ -43,9 +43,9 @@ IDE をダウンロードするには:
 
 10. **[インストール]** をクリックします。
 
-11. インストールが完了したら、インストールを変更するか、Visual Studio を起動することができます。  開始するには **[起動]** をクリックします。
+11. インストールが完了したら、インストールを変更するか、Visual Studio を起動することができます。  開始するには **[起動]** をクリックします。  複数のバージョンがインストールされている場合、それらが一覧表示されます。
     > [!div class="mx-imgBorder"]
-    > ![Visual Studio Enterprise を起動する](_img/vs-ide-experience/vs-ide-launch-cropped.png)
+    > ![Visual Studio Enterprise を起動する](_img/vs-ide-experience/vs-ide-versions.png)
 
 12. Visual Studio サブスクリプションに関連付けられているアカウントでサインインします。
 
@@ -53,12 +53,9 @@ IDE をダウンロードするには:
 
 14. Visual Studio が開きます。 Visual Studio を使う準備ができました。
 
-    ::: moniker range="vs-2017"
-
     > [!div class="mx-imgBorder"]
     > ![Visual Studio Enterprise を使い始める](_img/vs-ide-experience/vs-ide-start-cropped.png)
 
-    ::: moniker-end
 
 ## <a name="eligibility"></a>特典を受ける条件
 
@@ -81,3 +78,9 @@ IDE をダウンロードするには:
   - テクニカル サポート: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [ドキュメント](/visualstudio/)
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+
+## <a name="next-steps"></a>次の手順
+Visual Studio をインストールしたら、次のような他の重要な特典を必ずアクティブにしてください。
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure クレジット](vs-azure.md)
+- [Windows 開発者アカウント](vs-windows-dev.md)

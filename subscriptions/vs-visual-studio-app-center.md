@@ -1,17 +1,17 @@
 ---
 title: Visual Studio サブスクリプションの Visual Studio App Center 特典 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Visual Studio App Center 特典について説明します。
-ms.openlocfilehash: 1f57f6518c82c0eb60cbea9636c9973d2c9fd624
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1feb4660e52335f838c1e7c80428575aaf7a04cc
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826216"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787822"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Visual Studio App Center
 
@@ -70,3 +70,6 @@ A: App Center では、一部の古いブラウザーでは提供されていな
   - 完全な [App Center のドキュメント](/appcenter/)を確認してください。
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+
+## <a name="next-steps"></a>次の手順
+Azure は個人用の開発/テスト向けサンドボックスです。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。 [Azure 特典](vs-azure.md)をまだ有効にしていない場合、有効にしてください。 
