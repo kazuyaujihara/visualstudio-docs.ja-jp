@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94598cd14b25fa598cdfde4e3033bb2877bcbe40
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836116"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924077"
 ---
 # <a name="code-snippets-schema-reference"></a>コード スニペット スキーマ リファレンス
 
@@ -40,7 +40,7 @@ IntelliSense コード スニペットとは、Visual Studio でのアプリケ�
 | - |-----------------|
 |[Reference 要素](../ide/code-snippets-schema-reference.md#reference-element)|コード スニペットで参照する必要のあるアセンブリについての情報が格納されます。|
 
- テキスト値が必要です。 このテキストで、コード スニペットが参照するアセンブリを指定します。
+テキスト値が必要です。 このテキストで、コード スニペットが参照するアセンブリを指定します。
 
 ## <a name="author-element"></a>Author 要素
 
@@ -56,7 +56,7 @@ IntelliSense コード スニペットとは、Visual Studio でのアプリケ�
 | - |-----------------|
 |[Header 要素](../ide/code-snippets-schema-reference.md#header-element)|コード スニペットに関する全般的な情報が格納されます。|
 
- テキスト値が必要です。 このテキストでコード スニペットの作成者を指定します。
+テキスト値が必要です。 このテキストでコード スニペットの作成者を指定します。
 
 ## <a name="code-element"></a>コード要素
 
@@ -212,7 +212,7 @@ IntelliSense コード スニペットのリテラルまたはオブジェクト
 |[Literal 要素](../ide/code-snippets-schema-reference.md#literal-element)|編集が可能なコード スニペットのリテラル フィールドを定義します。|
 |[Object 要素](../ide/code-snippets-schema-reference.md#object-element)|編集が可能なコード スニペットのオブジェクト フィールドを定義します。|
 
- テキスト値が必要です。 このテキストは、編集できるコード スニペットのフィールドに入れるリテラルまたはオブジェクトの既定値を指定します。
+テキスト値が必要です。 このテキストは、編集できるコード スニペットのフィールドに入れるリテラルまたはオブジェクトの既定値を指定します。
 
 ## <a name="description-element"></a>Description 要素
 
@@ -228,7 +228,7 @@ IntelliSense コード スニペットの内容に関する説明文を指定し
 | - |-----------------|
 |[Header 要素](../ide/code-snippets-schema-reference.md#header-element)|コード スニペットに関する全般的な情報が格納されます。|
 
- テキスト値が必要です。 このテキストで、コード スニペットについて説明します。
+テキスト値が必要です。 このテキストで、コード スニペットについて説明します。
 
 ## <a name="function-element"></a>Function 要素
 
@@ -248,7 +248,7 @@ Visual Studio でリテラルまたはオブジェクトがフォーカスを取
 |[Literal 要素](../ide/code-snippets-schema-reference.md#literal-element)|編集が可能なコード スニペットのリテラル フィールドを定義します。|
 |[Object 要素](../ide/code-snippets-schema-reference.md#object-element)|編集が可能なコード スニペットのオブジェクト フィールドを定義します。|
 
- テキスト値が必要です。 このテキストで、Visual Studio でリテラルまたはオブジェクト フィールドがフォーカスを取得するときに実行される関数を指定します。
+テキスト値が必要です。 このテキストで、Visual Studio でリテラルまたはオブジェクト フィールドがフォーカスを取得するときに実行される関数を指定します。
 
 ## <a name="header-element"></a>Header 要素
 
@@ -518,7 +518,7 @@ IntelliSense コード スニペットによって使用されるインポート
 | - |-----------------|
 |[Header 要素](../ide/code-snippets-schema-reference.md#header-element)|コード スニペットに関する全般的な情報が格納されます。|
 
- テキスト値は省略可能です。 このテキストは、コード スニペットを挿入するためのショートカットとして使用されます。
+テキスト値は省略可能です。 このテキストは、コード スニペットを挿入するためのショートカットとして使用されます。
 
 ## <a name="snippet-element"></a>Snippet 要素
 
@@ -599,7 +599,7 @@ Visual Studio がコード スニペットをどのように挿入するかを�
 | - |-----------------|
 |[Header 要素](../ide/code-snippets-schema-reference.md#header-element)|コード スニペットに関する全般的な情報を指定します。|
 
- テキスト値が必要です。 このテキストでコード スニペットのタイトルを指定します。
+テキスト値が必要です。 このテキストでコード スニペットのタイトルを指定します。
 
 ## <a name="tooltip-element"></a>ToolTip 要素
 
@@ -616,7 +616,7 @@ Visual Studio がコード スニペットをどのように挿入するかを�
 |[Literal 要素](../ide/code-snippets-schema-reference.md#literal-element)|編集が可能なコード スニペットのリテラル フィールドを定義します。|
 |[Object 要素](../ide/code-snippets-schema-reference.md#object-element)|編集が可能なコード スニペットのオブジェクト フィールドを定義します。|
 
- テキスト値が必要です。 このテキストは、コード スニペットのオブジェクトまたはリテラルに関連付けられる ToolTip の説明を指定します。
+テキスト値が必要です。 このテキストは、コード スニペットのオブジェクトまたはリテラルに関連付けられる ToolTip の説明を指定します。
 
 ## <a name="type-element"></a>型の要素
 

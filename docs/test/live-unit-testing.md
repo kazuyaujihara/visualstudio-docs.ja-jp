@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662058"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923747"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Visual Studio での Live Unit Testing
 
@@ -151,7 +151,7 @@ Live Unit Testing で自動的にテストを実行してテスト結果を更�
 
 ご利用のソリューションに 10 個以上のプロジェクトがある場合、Live Unit Testing を開始したときに永続的データが存在しないと、または Visual Studio の上部にあるメニューで **[テスト]**  >  **[Live Unit Testing]**  >  **[Reset Clean]\(クリーンのリセット\)** オプションを順に選択すると、次のダイアログが Visual Studio に表示され、大きなプロジェクトの中で数多くのテストを動的に実行するとパフォーマンスに重大な影響が出る可能性があることを警告します。 **[OK]** を選択すると、Live Unit Testing はそのソリューション内のすべてのテストを実行します。 **[キャンセル]** を選択すると、実行するテストを選択できます。 この方法の詳細については、次の「[テスト プロジェクトとテスト メソッドを含めるか除外する](#include-and-exclude-test-projects-and-test-methods)」セクションをご覧ください。
 
- ![多数のプロジェクト用の Live Unit Testing ダイアログ](media/lut-large-project.png)
+![多数のプロジェクト用の Live Unit Testing ダイアログ](media/lut-large-project.png)
 
 ## <a name="include-and-exclude-test-projects-and-test-methods"></a>テスト プロジェクトとテスト メソッドを含めるか除外する
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eea69dc4d2931f66d4c6769667e23bdfb4eecf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24880f997d604d3db11ae19a6220c2789da7648f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934525"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926076"
 ---
 # <a name="set-current-stack-frame-command"></a>SetCurrentStackFrame コマンド
 特定のスタック フレームを設定できます。
@@ -30,9 +30,9 @@ Debug.SetCurrentStackFrame index
 ```
 
 ## <a name="arguments"></a>引数
- `index`
+`index`
 
- 必須です。 インデックスでスタック フレームを選びます。
+必須です。 インデックスでスタック フレームを選びます。
 
 ## <a name="example"></a>例
 
