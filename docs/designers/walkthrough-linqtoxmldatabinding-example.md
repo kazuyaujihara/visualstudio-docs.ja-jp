@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67031266ce9b2ded595ab448d7c45674932b8751
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c99d8571480dd98726a5f1ae5772162e97e0baed
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892546"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925743"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>チュートリアル: LinqToXmlDataBinding の例
 このチュートリアルでは、LinqToXmlDataBinding の例を示し、*L2DBForm.xaml* と *L2DBForm.xaml.cs* という 2 つの主要なソース ファイルに関する興味深い情報をいくつか説明します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
- このチュートリアルを読む前に、「[方法: LinqToXmlDataBinding という例をビルドして実行する](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)」の説明に従って、LinqToXmlDataBinding プログラムをビルドして実行することを強くお勧めします。
+このチュートリアルを読む前に、「[方法: LinqToXmlDataBinding という例をビルドして実行する](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)」の説明に従って、LinqToXmlDataBinding プログラムをビルドして実行することを強くお勧めします。
 
 ## <a name="remarks"></a>解説
  LinqToXmlDataBinding プログラムは、C# ソース ファイルと XAML ソース ファイルで構成される Windows Presentation Foundation (WPF) アプリケーションです。 このプログラムには書籍の一覧を定義する組み込み XML ドキュメントが含まれており、ユーザーはそれらのエントリを表示、追加、削除、および編集することができます。 このプログラムは、次の 2 つの主要なソース ファイルで構成されています。
