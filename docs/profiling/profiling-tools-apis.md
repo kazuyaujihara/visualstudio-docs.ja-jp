@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b1f0a56cc2aee3aafe31ca786d508d2162e50c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e724b9d5891d9e716be064e0b3b9404455c770fc
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956366"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870290"
 ---
 # <a name="profiling-tools-apis"></a>プロファイリング ツールの API
 
@@ -25,7 +25,7 @@ ms.locfileid: "62956366"
 
 C++ プロファイリング ツールのメソッドについて説明します。
 
-<xref:Microsoft.VisualStudio.Profiler>
+[プロファイラー](/previous-versions/ms242704(v=vs.140))
 
 .NET プロファイリング ツールのメソッドについて説明します。
 

@@ -15,12 +15,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bf74aba289e98e76fdd5b9a35d486d207bcc05
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 8a0c9ca6f195640e3c356e9288300255570b196c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432017"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926466"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>ロード テスト アナライザーのグラフ ビューでのテスト結果の分析
 
@@ -47,20 +47,20 @@ ms.locfileid: "66432017"
 |コントローラーおよびエージェント|ロード テストが実行されているコンピューターに関する情報です。 これには、メモリ使用、プロセッサ、物理ディスク、プロセスについてのデータが含まれます。<br /><br /> 既定では、Available Mbytes カウンターと Processor Time カウンターのみが収集されます。|
 |トランザクション応答時間|ロード テスト中に発生したトランザクションの平均応答時間です。|
 
- 実行時およびテストの実行後のどちらでも、グラフに各種のカウンターを表示できます。
+実行時およびテストの実行後のどちらでも、グラフに各種のカウンターを表示できます。
 
 > [!NOTE]
 > 自動的に生成される応答時間グラフには、応答時間のパフォーマンス カウンターのみを追加できます。
 
- カウンター情報は、グラフ内と、グラフの下にある凡例内の両方に表示されます。 グラフの一部を拡大表示することもできます。 詳細については、「[方法 :グラフの領域にズーム インする](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)」を参照してください。
+カウンター情報は、グラフ内と、グラフの下にある凡例内の両方に表示されます。 グラフの一部を拡大表示することもできます。 詳細については、「[方法 :グラフの領域にズーム インする](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)」を参照してください。
 
 ## <a name="counters-displayed-in-graphs"></a>グラフに表示されるカウンター
 
- グラフには*カウンター*が表示されます。 カウンターとは、ロード テスト中に収集されるデータであり、1 秒あたりのテスト数や平均テスト時間などです。 カウンターの詳細については、[ロード テストでのコンピューターのカウンター セットとしきい値規則の指定](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)に関するページを参照してください。
+グラフには*カウンター*が表示されます。 カウンターとは、ロード テスト中に収集されるデータであり、1 秒あたりのテスト数や平均テスト時間などです。 カウンターの詳細については、[ロード テストでのコンピューターのカウンター セットとしきい値規則の指定](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)に関するページを参照してください。
 
- グラフに表示されるカウンターの凡例では、ロード テストの実行に関する役に立つデータの列が示されます。 グラフ内で任意のデータの表示をオフにするには、凡例で行のチェック ボックスをオフにします。
+グラフに表示されるカウンターの凡例では、ロード テストの実行に関する役に立つデータの列が示されます。 グラフ内で任意のデータの表示をオフにするには、凡例で行のチェック ボックスをオフにします。
 
- 凡例には、次の列があります。
+凡例には、次の列があります。
 
 |カウンター|カウンターの名前です。|
 |-|-|
@@ -74,9 +74,9 @@ ms.locfileid: "66432017"
 |平均|カウンターの平均値 (ミリ秒) を示します。|
 |末尾|最新のサンプリング間隔でのカウンターの値 (ミリ秒) を示します。|
 
-## <a name="tasks"></a>[タスク]
+## <a name="tasks"></a>タスク
 
-|[タスク]|関連するトピック|
+|タスク|関連するトピック|
 |-|-|
 |**凡例を使用してグラフをカスタマイズする:** グラフ ビューの凡例には、グラフに関連付けられているパフォーマンス カウンターの情報が表示されます。 凡例を使用して、パフォーマンス カウンターの削除、グラフのパフォーマンス カウンターの強調表示、およびプロット オプションのカスタマイズを行うことができます。|-   [グラフ ビューの凡例を使用したロード テストの分析](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**グラフにカウンターを表示する:** グラフにカウンターを配置することにより、さまざまな種類のデータをロード テストの結果グラフに追加できます。|-   [方法: グラフにカウンターを追加および削除する](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
@@ -87,11 +87,11 @@ ms.locfileid: "66432017"
 
 ## <a name="related-tasks"></a>関連するタスク
 
- [テーブル ビューでのロード テスト結果とエラーの分析](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+[テーブル ビューでのロード テスト結果とエラーの分析](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [方法: ロード テストの結果にアクセスして分析する](../test/how-to-access-load-test-results-for-analysis.md)
+[方法: ロード テストの結果にアクセスして分析する](../test/how-to-access-load-test-results-for-analysis.md)
 
- [ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[ロード テストの結果の分析](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 ## <a name="see-also"></a>関連項目
 

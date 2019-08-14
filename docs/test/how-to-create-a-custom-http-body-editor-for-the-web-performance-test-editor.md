@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 624d06dd44812269bcff1e67cf048fbb077e90ea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 30ce24b0cb48e88ddb77cf3576d40f95ed022ba0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745827"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926524"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>方法: Web パフォーマンス テスト エディターのカスタム HTTP ボディ エディターを作成する
 
@@ -117,9 +117,9 @@ ms.locfileid: "66745827"
 private MessageEditorControl messageEditorControl
 ```
 
- messageEditorControl インスタンスは、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*> メソッドによって作成されたプラグイン ダイアログ内でホストされます。 また、messageEditorControl の <xref:System.Windows.Forms.RichTextBox> には、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> のコンテンツが設定されます。 ただし、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> が `true` を返さない場合、プラグインの作成を行うことはできません。 このエディターの場合、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> の `true` に "xml" が含まれているときは、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> は <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> を返します。
+messageEditorControl インスタンスは、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*> メソッドによって作成されたプラグイン ダイアログ内でホストされます。 また、messageEditorControl の <xref:System.Windows.Forms.RichTextBox> には、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> のコンテンツが設定されます。 ただし、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> が `true` を返さない場合、プラグインの作成を行うことはできません。 このエディターの場合、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> の `true` に "xml" が含まれているときは、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> は <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> を返します。
 
- 文字列ボディの編集が完了し、ユーザーがプラグイン ダイアログ ボックスで **[OK]** をクリックすると、Web テスト パフォーマンス エディターでは <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> が呼び出されて、編集済みのテキストが文字列として取得され、要求の**文字列ボディ**が更新されます。
+文字列ボディの編集が完了し、ユーザーがプラグイン ダイアログ ボックスで **[OK]** をクリックすると、Web テスト パフォーマンス エディターでは <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> が呼び出されて、編集済みのテキストが文字列として取得され、要求の**文字列ボディ**が更新されます。
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>クラスを作成して IStringHttpBodyEditorPlugin インターフェイスを実装する
 

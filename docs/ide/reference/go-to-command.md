@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dd3f226931dfeca2fa0dfad38daa24684fb8da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bdc1c97d35b79fec40bbaf8994176cfbb27b8e8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789832"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919224"
 ---
 # <a name="go-to-command"></a>GoTo コマンド
 指定した行にカーソルを移動します。
@@ -30,16 +30,15 @@ Edit.GoTo [linenumber]
 ```
 
 ## <a name="arguments"></a>引数
- `linenumber`
-
- 任意。 移動先の行番号を表す整数。
+`linenumber`\
+任意。 移動先の行番号を表す整数。
 
 ## <a name="remarks"></a>解説
- 行番号は 1 から始まります。 `linenumber` の値が 1 未満の場合は、最初の行が表示されます。 `linenumber` の値が最終行の値より大きい場合は、最後の行が表示されます。
+行番号は 1 から始まります。 `linenumber` の値が 1 未満の場合は、最初の行が表示されます。 `linenumber` の値が最終行の値より大きい場合は、最後の行が表示されます。
 
- `linenumber` の値が指定されていない場合は、**[指定行へ移動]** ダイアログ ボックスが表示されます。
+`linenumber` の値が指定されていない場合は、 **[指定行へ移動]** ダイアログ ボックスが表示されます。
 
- このコマンドのエイリアスは GoToLn です。
+このコマンドのエイリアスは GoToLn です。
 
 ## <a name="example"></a>例
 

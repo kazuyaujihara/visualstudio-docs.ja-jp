@@ -8,25 +8,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee62d8c5b9a657b09feda01d6275a79ee91b487d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 43cb58c65131b5cc7e01b0f59306761a3b275dc7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430822"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925920"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>手順 11: プログラムの実行とその他の機能の使用
 プログラムが完成し、実行する準備が整いました。 プログラムを実行して <xref:System.Windows.Forms.PictureBox> の背景色を設定できます。 さらに詳しく学習するには、フォームの色の変更、ボタンとチェック ボックスのカスタマイズ、フォームのプロパティの変更などを行って、プログラムを変更してみてください。
 
- サンプルの完全バージョンをダウンロードするには、「[Complete Picture Viewer tutorial sample](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)」 (画像ビューアーのチュートリアルの完全なサンプル) を参照してください。
+サンプルの完全バージョンをダウンロードするには、「[Complete Picture Viewer tutorial sample](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)」 (画像ビューアーのチュートリアルの完全なサンプル) を参照してください。
 
- ![ビデオへのリンク](../data-tools/media/playvideo.gif)このトピックのビデオ版については、「[Tutorial 1:Create a picture viewer in Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216)」(チュートリアル 1: Visual Basic によるピクチャ ビューアーの作成 - ビデオ 5) または「[Tutorial 1:Create a picture viewer in C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206)」(C# によるピクチャ ビューアーの作成 - ビデオ 5) をご覧ください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+![ビデオへのリンク](../data-tools/media/playvideo.gif)このトピックのビデオ版については、「[Tutorial 1:Create a picture viewer in Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216)」(チュートリアル 1: Visual Basic によるピクチャ ビューアーの作成 - ビデオ 5) または「[Tutorial 1:Create a picture viewer in C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206)」(C# によるピクチャ ビューアーの作成 - ビデオ 5) をご覧ください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
 
 ## <a name="to-run-your-program-and-set-the-background-color"></a>プログラムを実行して背景色を設定するには
 
-1. **F5** キーを押すか、メニュー バーで **[デバッグ]** > **[デバッグ開始]** の順にクリックします。
+1. **F5** キーを押すか、メニュー バーで **[デバッグ]**  >  **[デバッグ開始]** の順にクリックします。
 
-2. ピクチャを開く前に、**[Set the background color]** ボタンをクリックします。 **[色]** ダイアログ ボックスが表示されます。
+2. ピクチャを開く前に、 **[Set the background color]** ボタンをクリックします。 **[色]** ダイアログ ボックスが表示されます。
 
      ![[色] ダイアログ ボックス](../ide/media/express_colordialog.png)
  **[色]** ダイアログ ボックス
@@ -34,9 +34,9 @@ ms.locfileid: "63430822"
 3. 色を選択して PictureBox の背景色を設定します。 `backgroundButton_Click()` メソッドを詳しく調べて動作を確認します。
 
     > [!NOTE]
-    > ピクチャは、**[ファイルを開く]** ダイアログ ボックスに URL を貼り付けることでインターネットから読み込むことができます。 背景色の表示を確認するには、背景が透明な画像を探してみてください。
+    > ピクチャは、 **[ファイルを開く]** ダイアログ ボックスに URL を貼り付けることでインターネットから読み込むことができます。 背景色の表示を確認するには、背景が透明な画像を探してみてください。
 
-4. **[Clear the picture]** ボタンをクリックして、ピクチャが消去されることを確認します。 次に、**[閉じる]** ボタンをクリックしてプログラムを終了します。
+4. **[Clear the picture]** ボタンをクリックして、ピクチャが消去されることを確認します。 次に、 **[閉じる]** ボタンをクリックしてプログラムを終了します。
 
 ## <a name="to-try-other-features"></a>その他の機能を試すには
 

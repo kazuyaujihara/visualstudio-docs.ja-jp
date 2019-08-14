@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49691b2031d1d935871a73833924e9dc4aa46dcd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002570"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918404"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>コード化された Web パフォーマンス テストの生成と実行
 
@@ -85,16 +85,16 @@ Web パフォーマンス テストは、Web アプリ内を移動すること�
 ## <a name="qa"></a>Q&A
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Q:同時に複数のテストを実行できますか。
- **A:** はい。**ソリューション エクスプローラー**で右クリック (コンテキスト) メニューを使用してください。
+**A:** はい。**ソリューション エクスプローラー**で右クリック (コンテキスト) メニューを使用してください。
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Q:データ ソースは、コード化されたテストを生成する前か後のどちらに追加すべきでしょうか。
- **A:**[データ ソース](../test/add-a-data-source-to-a-web-performance-test.md)は、コード化されたテストを生成する前に追加する方が簡単です。こうすると、コードが自動的に生成されます。
+**A:** [データ ソース](../test/add-a-data-source-to-a-web-performance-test.md)は、コード化されたテストを生成する前に追加する方が簡単です。こうすると、コードが自動的に生成されます。
 
- データ ソースが含まれるコード化されたテストを実行すると、次のエラー メッセージが表示されることがあります。
+データ ソースが含まれるコード化されたテストを実行すると、次のエラー メッセージが表示されることがあります。
 
- **Could not run test \<Test Name> on agent \<Computer Name>: (エージェント <Computer Name> 上でテスト <Test Name> を実行できませんでした:)オブジェクト参照がオブジェクトのインスタンスに設定されていません。**
+**Could not run test \<Test Name> on agent \<Computer Name>: (エージェント <Computer Name> 上でテスト <Test Name> を実行できませんでした:)オブジェクト参照がオブジェクトのインスタンスに設定されていません。**
 
- これは、テスト クラスに対して DataSourceAttribute が定義されていても、対応する DataBindingAttribute がない場合に発生します。 このエラーを解決するには、適切な DataBindingAttribute を追加して削除するか、コード内でコメント アウトします。
+これは、テスト クラスに対して DataSourceAttribute が定義されていても、対応する DataBindingAttribute がない場合に発生します。 このエラーを解決するには、適切な DataBindingAttribute を追加して削除するか、コード内でコメント アウトします。
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>Q:検証規則および抽出規則は、コード化されたテストを生成する前か後のどちらに追加すべきでしょうか。
- **A:** 検証規則および抽出規則は、コード化されたテストを生成する前に追加する方が簡単です。ただし検証目的の場合は[コード化された UI テスト](../test/use-ui-automation-to-test-your-code.md)を使用することをお勧めします。
+**A:** 検証規則および抽出規則は、コード化されたテストを生成する前に追加する方が簡単です。ただし検証目的の場合は[コード化された UI テスト](../test/use-ui-automation-to-test-your-code.md)を使用することをお勧めします。

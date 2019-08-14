@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d472ec7d35b886dbc2294d2c3172b61d3b1e7702
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edd794d647d0af63edd133a65fbaad569e067e21
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974957"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924086"
 ---
 # <a name="codeindex-command"></a>CodeIndex コマンド
 
@@ -47,9 +47,9 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**オプション**|**説明**|
 |----------------| - |
 |**/indexingStatus**|コード インデックス作成サービスの状態と構成を表示します。|
-|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**:すべての変更セットのインデックス作成を開始します。<br />-   **off**:すべての変更セットのインデックス作成を停止します。<br />-   **keepupOnly**:以前に作成された変更セットのインデックス作成を停止し、新しい変更セットのインデックス作成のみを開始します。|
-|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> ワイルドカード文字 (*) を、サーバー パスの先頭、末尾、または両端に使用できます。|インデックスを作成しないコード ファイルとそのパスの一覧を指定します。<br /><br /> -   **add**:インデックスを作成しないファイルを無視ファイル リストに追加します。<br />-   **remove**:インデックスを作成するファイルを無視ファイル リストから削除します。<br />-   **removeAll**:無視ファイル リストをクリアし、すべてのファイルのインデックス作成を開始します。<br />-   **view**:インデックスを作成しないすべてのファイルを表示します。|
-|**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|KB 単位で指定されたサイズを超えるファイルを指定された数だけ表示します。 その後で、**/ignoreList** オプションを使用して、これらのファイルをインデックス作成から除外することができます。|
+|**/setIndexing:** [ on &#124; off &#124; keepupOnly ]|-   **on**:すべての変更セットのインデックス作成を開始します。<br />-   **off**:すべての変更セットのインデックス作成を停止します。<br />-   **keepupOnly**:以前に作成された変更セットのインデックス作成を停止し、新しい変更セットのインデックス作成のみを開始します。|
+|**/ignoreList:** [ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> ワイルドカード文字 (*) を、サーバー パスの先頭、末尾、または両端に使用できます。|インデックスを作成しないコード ファイルとそのパスの一覧を指定します。<br /><br /> -   **add**:インデックスを作成しないファイルを無視ファイル リストに追加します。<br />-   **remove**:インデックスを作成するファイルを無視ファイル リストから削除します。<br />-   **removeAll**:無視ファイル リストをクリアし、すべてのファイルのインデックス作成を開始します。<br />-   **view**:インデックスを作成しないすべてのファイルを表示します。|
+|**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|KB 単位で指定されたサイズを超えるファイルを指定された数だけ表示します。 その後で、 **/ignoreList** オプションを使用して、これらのファイルをインデックス作成から除外することができます。|
 |**/reindexAll**|以前にインデックスを作成したデータをクリアし、インデックス作成を再び開始します。|
 |**/destroyCodeIndex [/noPrompt]**|コード インデックスを削除し、すべてのインデックス データを削除します。 **/noPrompt** のオプションを使用する場合は、確認を要求されません。|
 |**/temporaryDataSizeLimit**:[ view &#124; <`SizeInGBs`> &#124; disable ]|変更セットを処理するときに CodeLens が作成する一時データの量を制御します。 制限の既定値は 2 GB です。<br /><br /> -   **view**:現在のサイズ制限を表示します。<br />-   `SizeInGBs`:サイズの制限を変更します。<br />-   **disable**:サイズの制限を削除します。<br /><br /> CodeLens が新しい変更セットを処理する前に、この制限の検査が行われます。 一時データがこの制限を超える場合、CodeLens は過去の変更セット (新しい変更セットではない) の処理を一時停止します。 データがクリーンアップされ、この制限内に収まると、CodeLens は処理を再開します。 クリーンアップは 1 日に 1 度、自動的に行われます。 このことは、クリーンアップの実行が始まるまでは、一時データがこの制限を超えている可能性があることを意味します。|
@@ -62,61 +62,61 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 > [!NOTE]
 > 例として登場する企業、組織、製品、ドメイン名、電子メール アドレス、ロゴ、人物、場所、およびイベントはすべて架空のものです。  実在する会社、組織、製品、ドメイン名、電子メールアドレス、ロゴ、人物、場所、イベントなどとは一切関係ありません。
 
- コード インデックス作成の状態と構成を表示するには:
+コード インデックス作成の状態と構成を表示するには:
 
 ```cmd
 TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Website"
 ```
 
- すべての変更セットのインデックス作成を開始するには:
+すべての変更セットのインデックス作成を開始するには:
 
 ```cmd
 TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Website"
 ```
 
- 以前に作成された変更セットのインデックス作成を停止し、新しい変更セットのインデックス作成のみを開始するには:
+以前に作成された変更セットのインデックス作成を停止し、新しい変更セットのインデックス作成のみを開始するには:
 
 ```cmd
 TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Website"
 ```
 
- 10 KB を超えるファイルを最大 50 個検索するには:
+10 KB を超えるファイルを最大 50 個検索するには:
 
 ```cmd
 TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Website"
 ```
 
- 特定のファイルをインデックス作成から除外し、無視ファイル リストに追加するには:
+特定のファイルをインデックス作成から除外し、無視ファイル リストに追加するには:
 
 ```cmd
 TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Website/Catalog.cs" /collectionName:"Fabrikam Website"
 ```
 
- インデックスを作成しないすべてのファイルを表示するには:
+インデックスを作成しないすべてのファイルを表示するには:
 
 ```cmd
 TFSConfig CodeIndex /ignoreList:view
 ```
 
- 以前にインデックスを作成したデータをクリアし、インデックス作成を再び開始するには:
+以前にインデックスを作成したデータをクリアし、インデックス作成を再び開始するには:
 
 ```cmd
 TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Website"
 ```
 
- すべての変更履歴を保存するには:
+すべての変更履歴を保存するには:
 
 ```cmd
 TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Website"
 ```
 
- CodeLens 一時データのサイズ制限を取り払い、一時データのサイズに関係なくインデックス作成を続けるには:
+CodeLens 一時データのサイズ制限を取り払い、一時データのサイズに関係なくインデックス作成を続けるには:
 
 ```cmd
 TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Website"
 ```
 
- 確認後にコード インデックスを削除するには:
+確認後にコード インデックスを削除するには:
 
 ```cmd
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"

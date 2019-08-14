@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e45a6c63cb1f886c1440b93d58f944458f61290
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75afe1cdd0d1755d2953e6b9e6e3e85a089b3303
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811701"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926134"
 ---
 # <a name="quick-watch-command"></a>QuickWatch コマンド
 選択または指定したテキストが [[クイック ウォッチ]](../../debugger/watch-and-quickwatch-windows.md) ウィンドウの [式] フィールドに表示されます。 このダイアログ ボックスを利用し、デバッガーが認識する変数または式の現在値やレジスタのコンテンツの現在値を計算できます。 さらに、非定数の変数の値やレジストリのコンテンツの値を変更できます。
@@ -30,12 +30,13 @@ Debug.QuickWatchq [text]
 ```
 
 ## <a name="arguments"></a>引数
- `text`
 
- 任意。 **[クイック ウォッチ]** ダイアログ ボックスに追加するテキスト。
+`text`\
+任意。 **[クイック ウォッチ]** ダイアログ ボックスに追加するテキスト。
 
 ## <a name="remarks"></a>解説
- `text` を省略した場合、カーソルで現在選択されているテキストや単語がウォッチ ウィンドウに追加されます。
+
+`text` を省略した場合、カーソルで現在選択されているテキストや単語がウォッチ ウィンドウに追加されます。
 
 ## <a name="example"></a>例
 

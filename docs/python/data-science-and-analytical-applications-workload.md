@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20ebd6def9fcac2336ca13118300737b66142812
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958387"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926394"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Visual Studio でのデータ サイエンス サポートのインストール
 
@@ -106,7 +106,7 @@ SQL Server への統合のメリットを最大限に得るには、Visual Studi
 
 データ サイエンスと分析のアプリケーション ワークロードに直接あるものに加え、Azure Notebook サービスと Azure SDK for Python もデータ サイエンスに役立ちます。
 
-Azure SDK for Python を使用すると、Windows、Mac、Linux で実行されているアプリケーションからの Microsoft Azure サービスの使用と管理が簡単になります。 詳細については、「[Azure SDK for Python](../python/azure-sdk-for-python.md)」を参照してください。
+Azure SDK for Python を使用すると、Windows、Mac、Linux で実行されているアプリケーションからの Microsoft Azure サービスの使用と管理が簡単になります。 詳細については、[Python 用 Azure SDK](../python/azure-sdk-for-python.md) に関するページを参照してください。
 
 Azure Notebook (現在プレビュー中) を使用すると、クラウドで Microsoft Azure で実行されている Jupyter Notebook に自由にオンライン アクセスできます。 このサービスには、使用を開始できるように Python、R および F# のサンプル ノートブックが含まれています。 [notebooks.azure.com](https://notebooks.azure.com/) にアクセスしてください。
 

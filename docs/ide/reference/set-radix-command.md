@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70b61dff4ebe7486c2e04e4fd3061cd4110feca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13341d8cb6a708f4e10f211bd47b79a75e1b6e2a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952036"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926034"
 ---
 # <a name="set-radix-command"></a>SetRadix コマンド
 整数値を表示するために使用する基数値を設定または返します。
@@ -30,12 +30,12 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ```
 
 ## <a name="arguments"></a>引数
- `10` または `16`、あるいは `hex` または `dec`
+`10` または `16`、あるいは `hex` または `dec`
 
- 任意。 10 (10 または dec) 進数または 16 (16 または hex) 進数を示します。 引数を省略すると、現在の基数値が返されます。
+任意。 10 (10 または dec) 進数または 16 (16 または hex) 進数を示します。 引数を省略すると、現在の基数値が返されます。
 
 ## <a name="example"></a>例
- この例では、整数値を 16 進形式で表示するための環境を設定します。
+この例では、整数値を 16 進形式で表示するための環境を設定します。
 
 ```cmd
 >Debug.SetRadix hex

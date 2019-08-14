@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 214897a0f938d8ea52306b8f605948b38f196111
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 18473fbd8ee0f7c4b415880da61c86de0bae6fc5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944962"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925967"
 ---
 # <a name="toggle-breakpoint-command"></a>ToggleBreakpoint コマンド
 ファイル内の現在位置で、現在の状態に基づいてブレークポイントのオン/オフを切り替えます。
@@ -31,10 +31,12 @@ Debug.ToggleBreakpoint [text]
 ```
 
 ## <a name="arguments"></a>引数
- `text` 省略可能。 テキストを指定すると、行が名前付きのブレークポイントとしてマークされます。 それ以外の場合は、行は名前のないブレークポイントとしてマークされ、これは F9 キーを押したときの動作に似ています。
+
+`text`\
+任意。 テキストを指定すると、行が名前付きのブレークポイントとしてマークされます。 それ以外の場合は、行は名前のないブレークポイントとしてマークされ、これは F9 キーを押したときの動作に似ています。
 
 ## <a name="example"></a>例
- 次の例では、現在のブレークポイントを切り替えます。
+次の例では、現在のブレークポイントを切り替えます。
 
 ```
 >Debug.ToggleBreakpoint

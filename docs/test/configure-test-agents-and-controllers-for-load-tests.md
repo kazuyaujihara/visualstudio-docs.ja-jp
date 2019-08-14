@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461615"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918371"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>ロード テストを実行するためのテスト エージェントおよびテスト コントローラーの概要
 
@@ -69,17 +69,17 @@ Visual Studio では、物理または仮想マシンを使用して、アプリ
 
 テスト エージェントは、新しいテストを開始するためのテスト コントローラーからの要求を待機するサービスとして実行されます。 テスト エージェント サービスが要求を受け取ると、テスト エージェント サービスはテストを実行するプロセスを開始します。 どのテスト エージェントも同じロード テストを実行します。
 
- テスト エージェントには管理者によってウェイトが割り当てられ、テスト エージェントのウェイトに従って負荷が分散されます。 たとえば、テスト エージェント 1 のウェイトが 30、テスト エージェント 2 のウェイトが 70、負荷が 1,000 ユーザーに設定されている場合、テスト エージェント 1 は 300 の仮想ユーザーをシミュレートし、テスト エージェント 2 は 700 の仮想ユーザーをシミュレートします。 「[テスト コントローラーとテスト エージェントの管理](../test/manage-test-controllers-and-test-agents.md)」を参照してください。
+テスト エージェントには管理者によってウェイトが割り当てられ、テスト エージェントのウェイトに従って負荷が分散されます。 たとえば、テスト エージェント 1 のウェイトが 30、テスト エージェント 2 のウェイトが 70、負荷が 1,000 ユーザーに設定されている場合、テスト エージェント 1 は 300 の仮想ユーザーをシミュレートし、テスト エージェント 2 は 700 の仮想ユーザーをシミュレートします。 「[テスト コントローラーとテスト エージェントの管理](../test/manage-test-controllers-and-test-agents.md)」を参照してください。
 
- テスト エージェントは、テストのセットおよびシミュレーション パラメーターのセットを入力として受け取ります。 テストは、実行しているコンピューターに依存しないという概念が中心となっています。
+テスト エージェントは、テストのセットおよびシミュレーション パラメーターのセットを入力として受け取ります。 テストは、実行しているコンピューターに依存しないという概念が中心となっています。
 
 ## <a name="test-controller-and-test-agent-connection-points"></a>テスト コントローラーとテスト エージェントのコネクション ポイント
 
 次の図は、テスト コントローラー、テスト エージェント、およびクライアント間のコネクション ポイントを示しています。 ここでは、着信および発信接続に使用されるポートに加え、これらのポートで使用されるセキュリティ要件の詳細についても説明します。
 
- ![テスト コントローラーおよびテスト エージェントのポートとセキュリティ](./media/test-controller-agent-firewall.png)
+![テスト コントローラーおよびテスト エージェントのポートとセキュリティ](./media/test-controller-agent-firewall.png)
 
- 詳細については、「[テスト コントローラーおよびテスト エージェント用のポートの構成](../test/configure-ports-for-test-controllers-and-test-agents.md)」を参照してください。
+詳細については、「[テスト コントローラーおよびテスト エージェント用のポートの構成](../test/configure-ports-for-test-controllers-and-test-agents.md)」を参照してください。
 
 ## <a name="test-controller-and-agent-installation-information"></a>テスト コントローラーとテスト エージェントのインストールに関する情報
 

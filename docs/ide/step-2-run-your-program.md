@@ -8,17 +8,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c205a3c8e88603153ec4bfabaa2545d8ae8c62d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 74f6d64d515ac7fab454b123686e671d9bcd1d2d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430795"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918924"
 ---
 # <a name="step-2-run-your-program"></a>手順 2: プログラムを実行する
 新しいソリューションを作成すると、実際には実行するプログラムが作成されます。 まだ実行される処理は少なく、タイトル バーに **Form1** と表示された空のウィンドウを表示するだけのプログラムですが、 もうおわかりのように実行することはできます。
 
- ![ビデオへのリンク](../data-tools/media/playvideo.gif)このトピックのビデオ版については、次をご覧ください。「[Tutorial 1:Create a picture viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209)」(チュートリアル 1: Visual Basic でピクチャ ビューアーを作成する - ビデオ 1) または「[Tutorial 1:Create a picture viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199)」(チュートリアル 1: C# でピクチャ ビューアーを作成する - ビデオ 1) をご覧ください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+![ビデオへのリンク](../data-tools/media/playvideo.gif)このトピックのビデオ版については、次をご覧ください。「[Tutorial 1:Create a picture viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209)」(チュートリアル 1: Visual Basic でピクチャ ビューアーを作成する - ビデオ 1) または「[Tutorial 1:Create a picture viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199)」(チュートリアル 1: C# でピクチャ ビューアーを作成する - ビデオ 1) をご覧ください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
 
 ## <a name="to-run-your-program"></a>プログラムを実行するには
 
@@ -26,9 +26,9 @@ ms.locfileid: "63430795"
 
     - **F5** キーを押します。
 
-    - メニュー バーで、**[デバッグ]** > **[デバッグ開始]** の順に選択します。
+    - メニュー バーで、 **[デバッグ]**  >  **[デバッグ開始]** の順に選択します。
 
-    - ツール バーで、**[デバッグ開始]** ボタンを選択します (次の図を参照)。
+    - ツール バーで、 **[デバッグ開始]** ボタンを選択します (次の図を参照)。
 
          ![[デバッグの開始] ツール バー ボタン](../ide/media/express_icondebug.png)
  **[デバッグの開始]** ツール バー ボタン
@@ -45,9 +45,9 @@ ms.locfileid: "63430795"
 
 4. プログラムを停止するには、次のいずれかの方法を使用します。
 
-    - ツール バーで、**[デバッグの停止]** ボタンを選択します。
+    - ツール バーで、 **[デバッグの停止]** ボタンを選択します。
 
-    - メニュー バーで、**[デバッグ]** > **[デバッグの停止]** の順に選択します。
+    - メニュー バーで、 **[デバッグ]**  >  **[デバッグの停止]** の順に選択します。
 
     - **[Form1]** ウィンドウの上隅にある **X** ボタンを選択します。
 

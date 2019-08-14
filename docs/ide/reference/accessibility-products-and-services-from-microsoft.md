@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81245640c8c73b77dc563c28f1d3d20168203029
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec9b86958f2e3b3e768b321db17e707dced1d78b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793085"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926273"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>マイクロソフトのアクセシビリティ製品とサービス
 
@@ -46,19 +46,19 @@ Microsoft は、すべてのユーザーが簡単に使用できる製品とサ�
 
 ## <a name="windows"></a> Windows のユーザー補助機能
 
- Windows オペレーティング システムには、多くのユーザー補助機能が組み込まれており、キーボード入力やマウスの使用が困難なユーザー、視覚障碍のあるユーザー、聴覚障碍のあるユーザーの方がご利用いただけます。 アクセシビリティ機能はセットアップ プログラムの実行時にインストールされます。 これらの機能の詳細については、Windows のヘルプおよび [マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431)を参照してください。
+Windows オペレーティング システムには、多くのユーザー補助機能が組み込まれており、キーボード入力やマウスの使用が困難なユーザー、視覚障碍のあるユーザー、聴覚障碍のあるユーザーの方がご利用いただけます。 アクセシビリティ機能はセットアップ プログラムの実行時にインストールされます。 これらの機能の詳細については、Windows のヘルプおよび [マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431)を参照してください。
 
 ### <a name="free-step-by-step-tutorials"></a>無料の操作手順チュートリアル
 
- Microsoft では、アクセシビリティに関するオプションの選択とコンピューターの設定について、詳細な手順を示すチュートリアルを用意しています。 この情報は、マウス、キーボード、または両方を組み合わせて使用する方法がわかるよう、2 種類の手順が並べて示してあります。
+Microsoft では、アクセシビリティに関するオプションの選択とコンピューターの設定について、詳細な手順を示すチュートリアルを用意しています。 この情報は、マウス、キーボード、または両方を組み合わせて使用する方法がわかるよう、2 種類の手順が並べて示してあります。
 
- Microsoft 製品のステップバイステップ チュートリアルを参照するには、[マイクロソフト アクセシビリティ](http://go.microsoft.com/fwlink/?LinkId=8431) Web サイトを参照してください。
+Microsoft 製品のステップバイステップ チュートリアルを参照するには、[マイクロソフト アクセシビリティ](http://go.microsoft.com/fwlink/?LinkId=8431) Web サイトを参照してください。
 
 ### <a name="assistive-technology-products-for-windows"></a>Windows の支援技術製品
 
- 障碍のある方がコンピューターを使いやすいように、さまざまな支援技術製品が提供されています。 Windows で使用できる支援技術製品のカタログを[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431)で検索できます。
+障碍のある方がコンピューターを使いやすいように、さまざまな支援技術製品が提供されています。 Windows で使用できる支援技術製品のカタログを[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431)で検索できます。
 
- ユーザー補助技術を使用する場合には、ユーザー補助技術製品の販売元に連絡し、ソフトウェアおよびハードウェアの互換性について確認してからアップグレードしてください。
+ユーザー補助技術を使用する場合には、ユーザー補助技術製品の販売元に連絡し、ソフトウェアおよびハードウェアの互換性について確認してからアップグレードしてください。
 
 ## <a name="altfortmats"></a> 代替形式のドキュメント
 

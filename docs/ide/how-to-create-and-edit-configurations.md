@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f5f8e389e3dfe91252149fb4c3d3c1e59f38b0
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: e6fdf3fa790a29f94a5bf3b40bc0d2ada703bc5b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415593"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925761"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>方法: 構成を作成および編集する
 
@@ -44,7 +44,7 @@ ms.locfileid: "68415593"
 
 **[構成マネージャー]** ダイアログ ボックスでは、 **[アクティブ ソリューション構成]** ボックスの一覧を使用して、ソリューション全体のビルド構成の選択、既存構成の変更、または新しい構成の作成を行うことができます。 **[アクティブ ソリューション プラットフォーム]** ドロップダウン リストを使用すると、構成の対象となるプラットフォームの選択、既存プラットフォームの変更、または新しいプラットフォームの追加を行うことができます。 **[プロジェクトのコンテキスト]** ウィンドウには、ソリューション内のプロジェクトが表示されます。 各プロジェクトについて、プロジェクト固有の構成とプラットフォームの選択、既存の構成とプラットフォームの変更、または新しい構成の作成あるいは新しいプラットフォームの追加を行うことができます。 また、ソリューション全体の構成を使用してソリューションをビルドまたは配置する際に、各プロジェクトを含めるかどうかをチェック ボックスで指定することができます。
 
- 必要な構成を設定したら、その構成に適したプロジェクト プロパティを設定できます。
+必要な構成を設定したら、その構成に適したプロジェクト プロパティを設定できます。
 
 ### <a name="set-properties-based-on-configurations"></a>構成に基づいてプロパティを設定する
 

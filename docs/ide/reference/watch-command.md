@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6965378151bb44db1024ac4e9a49de618f410dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ac779dc902a331a45b600113a11db5364293f74
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789001"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925946"
 ---
 # <a name="watch-command"></a>Watch コマンド
 指定したインスタンスの **[ウォッチ]** ウィンドウを作成し、開きます。 **[ウォッチ]** ウィンドウを使用すると、変数、式、レジスタの値の計算し、それらの値を編集し、結果を保存することができます。
@@ -30,12 +30,13 @@ Debug.Watch[index]
 ```
 
 ## <a name="arguments"></a>引数
- `index`
 
- 必須です。 [ウォッチ] ウィンドウのインスタンス番号。
+`index`\
+必須です。 [ウォッチ] ウィンドウのインスタンス番号。
 
 ## <a name="remarks"></a>解説
- `index` は整数でなければなりません。 有効値は 1、2、3、または 4 です。
+
+`index` は整数でなければなりません。 有効値は 1、2、3、または 4 です。
 
 ## <a name="example"></a>例
 

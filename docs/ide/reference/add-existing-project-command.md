@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0946efb15758c76c078ff234717af6fd1fac15c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5a511e19394b397096a5a5ba2e339166454138e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792573"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926280"
 ---
 # <a name="add-existing-project-command"></a>AddExistingProject コマンド
 既存のプロジェクトを現在のソリューションに追加します。
@@ -30,17 +30,18 @@ File.AddExistingProject filename
 ```
 
 ## <a name="arguments"></a>引数
- `filename` 省略可能。 ソリューションに追加するプロジェクトの完全なパスとプロジェクト名 (拡張子付き)。
+`filename`\
+任意。 ソリューションに追加するプロジェクトの完全なパスとプロジェクト名 (拡張子付き)。
 
- `filename` 引数にスペースが含まれる場合は、引用符で囲む必要があります。
+`filename` 引数にスペースが含まれる場合は、引用符で囲む必要があります。
 
- ファイル名が指定されていない場合、ファイルを開くダイアログ ボックスが表示され、ユーザーがプロジェクトを選択できます。
+ファイル名が指定されていない場合、ファイルを開くダイアログ ボックスが表示され、ユーザーがプロジェクトを選択できます。
 
 ## <a name="remarks"></a>解説
- オート コンプリートでは、入力された正しいパスとファイル名の検索を試みます。
+オート コンプリートでは、入力された正しいパスとファイル名の検索を試みます。
 
 ## <a name="example"></a>例
- この例では、[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] プロジェクトの TestProject1 を現在のソリューションに追加します。
+この例では、[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] プロジェクトの TestProject1 を現在のソリューションに追加します。
 
 ```cmd
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"

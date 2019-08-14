@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dcecdaa206964e6c8a5aebcadc958fe2c1ee1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f162590fafaa263e9cc4233744e5f2ba39c8ce6f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946857"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926178"
 ---
 # <a name="list-source-command"></a>List Source コマンド
 ソース コードの指定行が表示されます。
@@ -32,28 +32,28 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ```
 
 ## <a name="switches"></a>スイッチ
- /Count:`number`
+/Count:`number`
 
- 任意。 表示する行数を指定します。
+任意。 表示する行数を指定します。
 
- /Current
+/Current
 
- 任意。 現在の行を表示します。
+任意。 現在の行を表示します。
 
- /File:`filename`
+/File:`filename`
 
- 任意。 表示するファイルのパス。 ファイル名が指定されていない場合は、現在のステートメントの行のソース コードが表示されます。
+任意。 表示するファイルのパス。 ファイル名が指定されていない場合は、現在のステートメントの行のソース コードが表示されます。
 
- /Line:`number`
+/Line:`number`
 
- 任意。 特定の行番号を表示します。
+任意。 特定の行番号を表示します。
 
- /ShowLineNumbers:`yes|no`
+/ShowLineNumbers:`yes|no`
 
- 任意。 行番号を表示するかどうかを指定します。
+任意。 行番号を表示するかどうかを指定します。
 
 ## <a name="example"></a>例
- この例では、Form1.vb ファイルの 4 行目からソース コードが行番号付きでリストされます。
+この例では、Form1.vb ファイルの 4 行目からソース コードが行番号付きでリストされます。
 
 ```
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes

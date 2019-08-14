@@ -18,12 +18,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9410806cbb2fa7fc5579fc7c63cee8a6bed56f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461561"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918885"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>[VC++ プロジェクトの設定] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])
 
@@ -49,11 +49,11 @@ ms.locfileid: "68461561"
 
  **はい**
 
- ビルド ログ ファイルに環境変数をリストします。 このオプションを使用すると、C++ プロジェクトのビルド中に、すべての環境変数がビルド ログ ファイルにエコーされます。
+ビルド ログ ファイルに環境変数をリストします。 このオプションを使用すると、C++ プロジェクトのビルド中に、すべての環境変数がビルド ログ ファイルにエコーされます。
 
  **No**
 
- ビルド ログ ファイルから環境変数を除外します。
+ビルド ログ ファイルから環境変数を除外します。
 
 ## <a name="build-timing"></a>[ビルド時間]
 
@@ -63,7 +63,7 @@ ms.locfileid: "68461561"
 
  **No**
 
- ビルドの時間測定をオフにします。
+ビルドの時間測定をオフにします。
 
 ## <a name="maximum-concurrent-c-compilations"></a>[同時実行する C++ コンパイルの最大数]
 
