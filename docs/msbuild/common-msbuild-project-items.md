@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1271752a32a2f42eca93ae3f6861a923a6055cd2
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569879"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681274"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 項目には、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のすべてのプロジェクトの種類に共通のものがあります。 これらの項目は、*Microsoft.Build.CommonTypes.xsd* ファイルで定義されています。
@@ -41,7 +41,7 @@ ms.locfileid: "62569879"
 |Private|省略可能なブール値。 参照を出力フォルダーにコピーする必要があるかどうかを指定します。 この属性は、Visual Studio IDE に存在する参照の **[ローカルにコピー]** プロパティに一致します。|
 
 ### <a name="comreference"></a>COMReference
- プロジェクト内の COM (アンマネージ) コンポーネント参照を表します。
+ プロジェクト内の COM (アンマネージ) コンポーネント参照を表します。 この項目は .NET プロジェクトにのみ適用されます。
 
 |項目メタデータの名前|説明|
 |---------------|-----------------|
@@ -54,7 +54,7 @@ ms.locfileid: "62569879"
 |Isolated|省略可能なブール値。 コンポーネントが Reg-Free コンポーネントであるかどうかを指定します。|
 
 ### <a name="comfilereference"></a>COMFileReference
- ResolvedComreference ターゲットに送られるタイプ ライブラリの一覧を表します。
+ [ResolveComReference](resolvecomreference-task.md) ターゲットの `TypeLibFiles` パラメーターに渡されるタイプ ライブラリの一覧を表します。 この項目は .NET プロジェクトにのみ適用されます。
 
 |項目メタデータの名前|説明|
 |---------------|-----------------|

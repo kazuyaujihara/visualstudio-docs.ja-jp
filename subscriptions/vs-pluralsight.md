@@ -1,17 +1,17 @@
 ---
 title: Visual Studio サブスクリプションの Pluralsight 特典 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/25/2019
+ms.author: lank
+manager: lank
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Pluralsight トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: bc80d8d799a0cca92bfa78cb1e96424f227fe9ef
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784878"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787653"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Pluralsight トレーニング特典
 
@@ -32,36 +32,27 @@ ms.locfileid: "67784878"
    > **"注: 以前に Visual Studio サブスクリプションで別の Pluralsight オファーをアクティブにした場合は、このコードで新しい Pluralsight アカウントを作成できない可能性があります。"**
 
 2. クーポン コードが正常に取得された通知を受け取ります。  **[アクティブ化]** をクリックします。
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight 特典のアクティブ化](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
 3. Visual Studio サブスクリプションに含まれる特典の Pluralsight ページにリダイレクトされます。
    - フォームで要求された連絡先情報を入力します
    - チェック ボックスをオンにして、使用条件とプライバシー ポリシーに同意します
    - **[I agree, activate benefit]\(特典のアクティブ化に同意します\)** をクリックします。
-     > [!div class="mx-imgBorder"]
-     > ![Pluralsight 特典アクティブ化](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
-     > [!div class="mx-imgBorder"]
-     > ![Pluralsight 特典の使用条件](_img/vs-pluralsight/vs-pluralsight-terms.png)
+   > [!div class="mx-imgBorder"]
+   > ![Pluralsight で特典をアクティブ化する](_img/vs-pluralsight/vs-pluralsight-create-account.png)
 
 5. アカウントの設定にはしばらく時間がかかる場合があります。  完了すると、ページに確認メッセージが表示され、ログイン情報を示すメールが届きます。  メールは、アカウントを作成したときに指定した別名に送信されます。  メッセージが見つからない場合は、必ず、迷惑メール フォルダーまたはスパム メール フォルダーをご確認ください。
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight 特典の確認](_img/vs-pluralsight/vs-pluralsight-confirmation-vse.png)
-   >
+
    > [!NOTE]
    > ご利用のアカウントに新しいプランを利用する資格がない場合、アカウントに資格がないため、作成中に問題が発生したことが受信メールで説明されます。  また、アカウントに関する質問に回答できる Pluralsight のサポート チームへの連絡先情報も含まれます。
+   
 
 6. アカウントが正常に作成されている場合は、受信メールにユーザー名が含まれ、パスワードを作成するよう求められます。  パスワードを入力し、確認のためもう一度入力して **[Log in to Pluralsight]\(Pluralsight にログイン\)** をクリックします。
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 特典のウェルカム メール](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
 
 7. ウェルカム メールに示されているユーザー名と、作成したパスワードを入力して、 **[サインイン]** をクリックします。
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight 特典のログイン](_img/vs-pluralsight/vs-pluralsight-login.png)
 
 8. これで完了です。  数千の Pluralsight コースで学習を開始する準備ができました。
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight 特典のホーム](_img/vs-pluralsight/vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>特典を受ける条件
 

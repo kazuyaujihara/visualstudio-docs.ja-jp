@@ -13,18 +13,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1541f3608aef33cbd286a8c96257eb191712e245
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960576"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681295"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Visual Studio で JavaScript と TypeScript のコードをソリューションまたはプロジェクトなしで開発します
 
 Visual Studio 2017 以降では、[プロジェクトまたはソリューションなしでコードを開発する](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)ことができます。コードのフォルダーを開いたらすぐに、IntelliSense、検索、リファクタリング、デバッグなど、豊富なエディター サポートの利用を開始できます。 これらの機能に加え、Node.js Tools for Visual Studio では、TypeScript ファイルをビルドする、npm パッケージを管理する、npm スクリプトを実行するためのサポートが追加されます。
 
-開始するには、ツール バーで **[ファイル]** > **[開く]** > **[フォルダー]** の順に選択します。 ソリューション エクスプローラーには、フォルダーのすべてのファイルが表示されます。いずれかのファイルを開いて編集を開始できます。 バックグラウンドでは、Visual Studio によってファイルにインデックスが作成され、npm、ビルド、デバッグ機能が有効になります。
+開始するには、ツール バーで **[ファイル]**  >  **[開く]**  >  **[フォルダー]** の順に選択します。 ソリューション エクスプローラーには、フォルダーのすべてのファイルが表示されます。いずれかのファイルを開いて編集を開始できます。 バックグラウンドでは、Visual Studio によってファイルにインデックスが作成され、npm、ビルド、デバッグ機能が有効になります。
 
 > [!IMPORTANT]
 > npm 統合を含め、この記事で説明する機能の多くでは、Visual Studio 2017 バージョン 15.8 以降が必要です。
@@ -77,8 +77,9 @@ Visual Studio 2017 以降では、[プロジェクトまたはソリューショ
 * Mocha ([mochajs.org](http://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
+* Jest ([jestjs.io](https://jestjs.io/))
 
-テスト エクスプローラーを開くと (**[テスト]** > **[ウィンドウ]** > **[テスト エクスプローラー]** を選択)、Visual Studio によってテストが検出されて表示されます。
+テスト エクスプローラーを開くと ( **[テスト]**  >  **[ウィンドウ]**  >  **[テスト エクスプローラー]** を選択)、Visual Studio によってテストが検出されて表示されます。
 
 > [!NOTE]
 > テスト ランナーが列挙するのは、テスト ルート内の JavaScript ファイルのみです。アプリケーションが TypeScript で記述されている場合は、JavaScript ファイルを最初にビルドする必要があります。

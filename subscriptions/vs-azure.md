@@ -1,26 +1,44 @@
 ---
 title: Microsoft Azure 特典 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Azure の特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 542f460e6c228564e05affd9467f6deaaf2b0506
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 923573b1079ddbfaa77837e57df1baa618db6e21
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823746"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681671"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
-
-## <a name="overview"></a>概要
-
 Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月々の Azure クレジット](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
 
-## <a name="eligibility"></a>特典を受ける条件
+## <a name="activation-steps"></a>アクティブ化の手順
+1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
 
+2. [特典] ページの [ツール] セクションで、Azure のタイルを見つけて、特典タイルの下部にある **[ライセンス認証]** リンクをクリックします。
+   > [!div class="mx-imgBorder"]
+   > ![Azure タイル](_img/vs-azure/vs-azure-tile.png)
+
+3. 既存の Azure サブスクリプションがない場合は、Azure サブスクリプションの作成に必要な情報を入力して、使用条件に同意するチェック ボックスをオンにしてから、 **[サインアップ]** をクリックします。
+   > [!div class="mx-imgBorder"]
+   > ![Azure のサインアップ](_img/vs-azure/vs-azure-sign-up-cropped.png) 既存のサブスクリプションがある場合は、このチェック ボックスをオンにして契約に同意し、 **[サインアップ]** をクリックします。
+
+4. アカウントの準備ができると、Azure サポート プラン (別売り) を選ぶか、Azure サブスクリプションで始めることができます。
+   > [!div class="mx-imgBorder"]
+   > ![Azure 準備作業](_img/vs-azure/vs-azure-getting-ready-cropped.png)
+
+5. Azure ダッシュボードのクイック スタート センターが読み込まれます。  
+   > [!div class="mx-imgBorder"]
+   > ![Azure ダッシュボード](_img/vs-azure/vs-azure-dashboard-quickstart.png) 
+
+6. 後で簡単にアクセスできるようにするには、[Azure Portal](https://portal.azure.com) にブックマークを付けます。
+
+
+## <a name="eligibility"></a>特典を受ける条件
 |                 サブスクリプション レベル/プログラム                 |           特長           |                         更新可能かどうか                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     150 ドルのクレジット/月     |                             はい                             ||
@@ -46,30 +64,7 @@ Visual Studio サブスクライバーは、追加料金なしで Microsoft Azur
 
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
-## <a name="activation-steps"></a>アクティブ化の手順
-
-1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
-
-2. [特典] ページの [ツール] セクションで、Azure のタイルを見つけて、特典タイルの下部にある **[ライセンス認証]** リンクをクリックします。
-   > [!div class="mx-imgBorder"]
-   > ![Azure タイル](_img/vs-azure/vs-azure-tile.png)
-
-3. Azure サブスクリプションの作成に必要な情報を入力して、ご利用条件に同意するチェック ボックスをオンにしてから、 **[サインアップ]** をクリックします。
-   > [!div class="mx-imgBorder"]
-   > ![Azure のサインアップ](_img/vs-azure/vs-azure-sign-up-cropped.png)
-
-4. アカウントの準備ができると、Azure サポート プラン (別売り) を選ぶか、Azure サブスクリプションで始めることができます。
-   > [!div class="mx-imgBorder"]
-   > ![Azure 準備作業](_img/vs-azure/vs-azure-getting-ready-cropped.png)
-
-5. Azure ダッシュボードが読み込まれ、初めて使うときはツアーを見ることができます。  ツアーは、さまざまなタスクを実行したり関連情報を検索したりする方法を示す一連の画面ヒントで構成されます。  ツアーを最後まで見るか閉じると、Azure のダッシュボードが表示されます。
-
-6. 後で簡単にアクセスできるようにするには、[Azure Portal](https://portal.azure.com) にブックマークを付けます。
-   > [!div class="mx-imgBorder"]
-   > ![Azure ダッシュボード](_img/vs-azure/vs-azure-dashboard-cropped.png)
-
-## <a name="faq"></a>よくあるご質問
-
+## <a name="frequently-asked-questions"></a>よく寄せられる質問
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>Q:Azure ポータル内からテクニカル サポート インシデントを送信するにはどうすればよいですか。
 A: Azure ポータルからサポート インシデントを送信するには、3 段階の手順を行います。
 1. テクニカル サポートの特典をアクティブ化し、契約 ID アクセス ID を取得します。
@@ -79,7 +74,6 @@ A: Azure ポータルからサポート インシデントを送信するには�
 詳細については、[テクニカル サポート](vs-tech-support.md)のドキュメントを参照してください。
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Q:間もなく Azure にアクセスできなくなるというメッセージが届きました。  Azure の使用を続けるにはどうすればよいですか。
-
 A: Visual Studio サブスクリプションに関連付けられている Azure 特典を使用しているときに、サブスクリプションが失効するか、取り除かれるとこのメールが届きます。  Azure の使用を続ける場合、いくつかの選択肢があります。
 
 **推奨アクション:**
@@ -105,9 +99,14 @@ Microsoft アカウントに**異なる**サブスクリプション レベル�
 このメールが間違いで配信された場合、[Azure カスタマー サポート](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)にお問い合わせください。
 
 ## <a name="support-resources"></a>サポート リソース
-
 - Azure に関するヘルプが必要ですか。  以下のリソースを確認してください。
   - テクニカル サポート: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Azure ドキュメント](/azure/)
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+
+## <a name="next-steps"></a>次の手順
+Microsoft のツールとサービスの詳細については、次のドキュメントを参照してください。
+- [Azure](/azure/)
+- [Azure DevOps](/azure/devops/)
+- [Visual Studio IDE](/visualstudio/)

@@ -3,15 +3,15 @@ title: Office 365 特典 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションに含まれる Office 365 特典について説明します。
-ms.openlocfilehash: 625d9ccf24c17b96afc9c79cc3b280c009e80fec
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: ae28df2f66ff976fffd44f42c3063f790db9feb3
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250777"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787917"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Visual Studio Subscription の Office 365 ProPlus
 
@@ -70,3 +70,9 @@ Office 用アプリケーションを開発する予定がある場合は、[Off
 - EMS のコンポーネントのテクニカル サポートについては、 https://support.microsoft.com/allproducts にアクセスして製品を選択してください。
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+
+## <a name="next-steps"></a>次の手順
+Visual Studio サブスクリプションを最大限に活用できるようにこれらの優れた特典をアクティブ化してください。
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure クレジット](vs-azure.md)

@@ -1,5 +1,6 @@
 ---
-title: Blend でのキーボード ショートカット
+title: キーボード ショートカット
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
@@ -8,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38eaaa42ae0869ae26f0a048f69a94684b240c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7dc340b25f5a900c9456f56587e39dede6e0ad2
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844326"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821738"
 ---
-# <a name="keyboard-shortcuts-in-blend"></a>Blend でのキーボード ショートカット
+# <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Blend for Visual Studio のキーボード ショートカット
 
 ## <a name="project-shortcuts"></a>プロジェクトのショートカット
 
@@ -94,9 +95,9 @@ ms.locfileid: "62844326"
 
 |目的|方法|
 |----------------|-------------|
-|**[デザイン]** ビュー、**[コード]** ビュー、**[分割]** ビューを切り替える|**F11**|
-|アートボードをズーム インする|**Ctrl** + **統合** (**=**)|
-|アートボードをズーム アウトする|**Ctrl** + **マイナス記号** (**-**)|
+|**[デザイン]** ビュー、 **[コード]** ビュー、 **[分割]** ビューを切り替える|**F11**|
+|アートボードをズーム インする|**Ctrl** + **統合** ( **=** )|
+|アートボードをズーム アウトする|**Ctrl** + **マイナス記号** ( **-** )|
 |アートボード上でズーム インまたはズーム アウトする|マウス ホイールを回す|
 |アートボードを左右に移動する|**Shift** キーを押しながらマウス ホイールを回転する|
 |アートボードを上下に移動する|**Ctrl** キーを押しながらマウス ホイールを回転する|
@@ -104,7 +105,7 @@ ms.locfileid: "62844326"
 |アートボードを実際のサイズで表示する|**Ctrl** + **1**|
 |ハンドルを表示または非表示にする|**F9**|
 |オブジェクト境界を表示または非表示にする|**Ctrl** + **Shift** + **H**|
-|**[デザイン]** ビュー、**[XAML]** ビュー、**[分割]** ビューを切り替える|**F11**|
+|**[デザイン]** ビュー、 **[XAML]** ビュー、 **[分割]** ビューを切り替える|**F11**|
 
 ## <a name="workspace-shortcuts"></a>ワークスペース ショートカット
 

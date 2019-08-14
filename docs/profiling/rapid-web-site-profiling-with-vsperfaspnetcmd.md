@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 759a1cbf711b4264478c1e7fc44a65b86328ce32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5f86ae2e14067a645bb39a1c8fdc0421f415a9e6
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431970"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681135"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd を使用した迅速な Web サイト プロファイリング
 
@@ -41,6 +41,8 @@ ms.locfileid: "63431970"
 
  **vsperfaspnetcmd**  *websiteUrl*
 
+ ローカル サーバーでホストされる *websiteUrl* の例として、 *http://localhost/MySite/default.aspx* が考えられます。 外部サイトの例は、 *http://www.contoso.com* になります。 詳細については、「[Visual Studio でプロジェクトを開かずに Web サイトをプロファイリングする](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio)」の URL の例を参照してください。
+
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>インストルメンテーション メソッドを使用して詳細なタイミング データを収集するには
 
 次のコマンド ラインを使用して、動的にコンパイルされた [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションから詳細なタイミング データを収集します。
@@ -59,7 +61,7 @@ Web アプリケーション内の静的にコンパイルされた .*dll* フ�
 
  **vsperfaspnetcmd /memory:lifetime** *websiteUrl*
 
- また、**/Trace** オプションを使用して .NET メモリ データと共に詳細なタイミング情報を収集することもできます。
+ また、 **/Trace** オプションを使用して .NET メモリ データと共に詳細なタイミング情報を収集することもできます。
 
  **vsperfaspnetcmd /memory** **[:lifetime]** **/trace**`websiteUrl`
 
@@ -68,7 +70,7 @@ Web アプリケーション内の静的にコンパイルされた .*dll* フ�
 > [!WARNING]
 > 階層相互作用プロファイル (TIP) データは、Visual Studio の任意のエディションを使用して収集できます。 ただし、階層相互作用プロファイル データを表示できるのは、Visual Studio Enterprise のみです。
 >
-> Windows 8 や Windows Server 2012 の TIP データを収集するには、インストルメンテーション (**/trace**) オプションを使用する必要があります。
+> Windows 8 や Windows Server 2012 の TIP データを収集するには、インストルメンテーション ( **/trace**) オプションを使用する必要があります。
 
 サンプリング データと共に階層相互作用データを収集するには、コマンド ラインに次のように入力します。
 
@@ -88,7 +90,7 @@ Web アプリケーション内の静的にコンパイルされた .*dll* フ�
 
 プロファイリングを開始するには、次のように入力します。
 
-**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_
 
 プロファイリングを終了するには、次のように入力します。
 

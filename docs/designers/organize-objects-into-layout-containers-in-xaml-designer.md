@@ -6,20 +6,18 @@ ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1937ab28af9b4c5c09bb12e2938a2aaa907fe8e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0401d810f5f97b0306290faff2cfeb1785ba14f
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893585"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821938"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML デザイナーでレイアウト コンテナーにオブジェクトを編成する
 
 この記事では、XAML デザイナーのレイアウト パネルとコントロールについて説明します。
 
-イメージ、ボタン、ビデオなどのオブジェクトをどこに表示させたいか想像してください。 縦か横の単一行の行列、または固定位置に表示させたいのではないでしょうか。
+イメージ、ボタン、ビデオなどのオブジェクトをページ上のどこに表示させたいか想像してください。 縦か横の単一行の行列、または固定位置に表示させたいのではないでしょうか。
 
 ページの表示方法について考える段階になったら、レイアウト パネルを選択します。 オブジェクトを追加するための何かが必要になるため、すべてのページはあるものから開始します。 これは既定では**グリッド**ですが、変更しても構いません。
 
@@ -41,9 +39,9 @@ ms.locfileid: "62893585"
 
 オブジェクトを等しい、統一されたグリッド領域に配置します。 このパネルは、イメージの一覧を配置するのに適しています。
 
-![UniformGrid レイアウト パネル](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
-
 (WPF プロジェクトでのみ使用可能)
+
+![UniformGrid レイアウト パネル](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
 ### <a name="canvas"></a>Canvas
 
@@ -73,7 +71,7 @@ ms.locfileid: "62893585"
 
 ![DockPanel レイアウト パネル](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**短いビデオを見る:**![再生ボタン](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**短いビデオを見る:** ![再生ボタン](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>レイアウト コントロール
 
@@ -93,7 +91,7 @@ ms.locfileid: "62893585"
 
 ### <a name="scrollviewer"></a>ScrollViewer
 
-ページまたはページの領域を下にスクロールできるようになります。 **ScrollViewer** に追加できるオブジェクトは 1 つのみであるため、**グリッド**や **StackPanel** などのレイアウト パネルを追加することには大きな意味があります。
+ページまたはページの領域を下にスクロールできるようになります。 **ScrollViewer** に追加できるオブジェクトは 1 つのみであるため、**グリッド**や **StackPanel** などのレイアウト パネルを追加することには意味があります。
 
 ![ScrollViewer レイアウト コントロール](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 
