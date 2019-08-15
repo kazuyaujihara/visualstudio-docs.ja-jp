@@ -9,45 +9,45 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 4485e9a11cb4770477374deed651fbff2df6df52
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 6ffa8888529586e23d6f9762c3ec5b724c708ca5
+ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890324"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69024558"
 ---
-# <a name="xaml-designer-extensibility-migration"></a>XAML デザイナー機能拡張の移行
+# <a name="xaml-designer-extensibility-migration"></a>XAML デザイナーの機能拡張の移行
 
-Visual Studio 2019 では、XAML デザイナーは、2 つの異なるアーキテクチャをサポートしています。 デザイナーの分離アーキテクチャと最近のサーフェス分離アーキテクチャ。 このアーキテクチャの遷移が .NET Framework のプロセスでホストできないターゲット ランタイムをサポートするために必要です。 画面の分離アーキテクチャへの移行、サード パーティ製の機能拡張モデルに重大な変更が導入されています。 この記事では、Visual Studio 2019 16.2 プレビュー チャネルで使用可能なこれらの変更について説明します。
+Visual Studio 2019 では、XAML デザイナーが2つの異なるアーキテクチャ (デザイナー分離アーキテクチャと、より新しい surface 分離アーキテクチャ) をサポートしています。 このアーキテクチャ遷移は、.NET Framework プロセスでホストできないターゲットランタイムをサポートするために必要です。 Surface 分離アーキテクチャに移行すると、サードパーティの拡張モデルに重大な変更が加えられます。 この記事では、これらの変更について説明します。これらの変更は、バージョン16.3 以降の Visual Studio 2019 で使用できます。
 
-**デザイナーの分離**を .NET Framework を対象とするプロジェクトの WPF デザイナーによって使用され、サポート *. design.dll*拡張機能。 ユーザー コード、コントロールのライブラリおよびサード パーティの拡張機能は、外部プロセスに読み込まれる (*XDesProc.exe*) と共に、実際のデザイナー コードとデザイナー パネル。
+**デザイナーの分離**は、.NET Framework を対象とし、 *.dll*拡張子をサポートするプロジェクトの WPF デザイナーによって使用されます。 ユーザーコード、コントロールライブラリ、およびサードパーティの拡張機能は、実際のデザイナーコードおよびデザイナーパネルと共に外部プロセス (*Xdesproc .exe*) に読み込まれます。
 
-**分離のサーフェス**UWP デザイナーによって使用されます。 WPF デザイナーで .NET Core を対象とするプロジェクトにも使用されます。 サーフェスの分離の唯一のユーザー コードとコントロールのライブラリが読み込まれる別のプロセスで、デザイナーとそのパネルは、Visual Studio のプロセスに読み込まれるときに (*DevEnv.exe*)。 ユーザー コードとコントロール ライブラリを実行するために使用されるランタイムは、実際のデザイナーおよびサード パーティ製の機能拡張コードの .NET Framework で使用されるものは異なります。
+**サーフェイスの分離**は、UWP デザイナーによって使用されます。 また、.NET Core を対象とするプロジェクトの WPF デザイナーによっても使用されます。 サーフェイスの分離では、ユーザーコードとコントロールのライブラリだけが別のプロセスに読み込まれ、デザイナーとそのパネルは Visual Studio プロセス (*devenv.exe*) に読み込まれます。 ユーザーコードとコントロールライブラリの実行に使用されるランタイムは、実際のデザイナーおよびサードパーティの拡張コードの .NET Framework によって使用されるランタイムとは異なります。
 
-![機能拡張-移行-アーキテクチャ](media/xaml-designer-extensibility-migration-architecture.png)
+![拡張性-移行-アーキテクチャ](media/xaml-designer-extensibility-migration-architecture.png)
 
-このアーキテクチャの移行のためのサード パーティ製のコントロール ライブラリと同じプロセスにサード パーティの拡張機能は不要になった読み込まれます。 拡張機能が不要になったコントロール ライブラリの直接的な依存関係があるまたはランタイム オブジェクトに直接アクセスできます。 デザイナーの分離のアーキテクチャを使用するために以前記述された拡張機能、 *Microsoft.Windows.Extensibility.dll* API サーフェスの分離アーキテクチャを使用する新しいアプローチに移行する必要があります。 実際には、既存の拡張機能は、新しい機能拡張 API アセンブリに対してコンパイルする必要があります。 実行時のコントロールへのアクセスの種類を使用して[typeof](/dotnet/csharp/language-reference/keywords/typeof)またはランタイム インスタンスを置換またはコントロール ライブラリが、別のプロセスに読み込まれるようになりましたので、削除する必要があります。
+このアーキテクチャの移行により、サードパーティ製の拡張機能は、サードパーティ製のコントロールライブラリと同じプロセスに読み込まれなくなりました。 拡張機能は、コントロールライブラリに直接依存したり、ランタイムオブジェクトに直接アクセスしたりすることができなくなりました。 以前にデザイナー分離アーキテクチャ用に作成された拡張機能は、surface 分離アーキテクチャを使用するための新しいアプローチに移行する必要があります。 実際には、既存の拡張機能を新しい機能拡張 API アセンブリに対してコンパイルする必要があります。 コントロールライブラリが別のプロセスに読み込まれるようになったため、 [typeof](/dotnet/csharp/language-reference/keywords/typeof)またはランタイムインスタンスを介したランタイムコントロール型へのアクセスは、置換または削除する必要があります。
 
-## <a name="new-extensibility-api-assemblies"></a>新しい拡張性 API アセンブリ
+## <a name="new-extensibility-api-assemblies"></a>新しい機能拡張 API アセンブリ
 
-新しい拡張性 API アセンブリが既存の機能拡張 API アセンブリと同じですが、それらを区別するためのさまざまな名前付けスキームに従います。 同様に、名前空間の名前は、新しいアセンブリ名を反映するように変更があります。
+新しい機能拡張 API アセンブリは、既存の機能拡張 API アセンブリに似ていますが、区別するために別の名前付けスキームに従います。 同様に、名前空間の名前は新しいアセンブリ名を反映するように変更されています。
 
-| デザイナーの分離 API アセンブリ            | アセンブリの API サーフェスの分離                       |
+| デザイナー分離 API アセンブリ            | Surface 分離 API アセンブリ                       |
 |:------------------------------------------ |:---------------------------------------------------- |
-| Microsoft.Windows.Design.Extensibility.dll | Microsoft.VisualStudio.DesignTools.Extensibility.dll |
-| Microsoft.Windows.Design.Interaction.dll   | Microsoft.VisualStudio.DesignTools.Interaction.dll   |
+| Microsoft. Windows. 拡張機能 .dll | VisualStudio. 拡張機能の .dll |
+| Microsoft.........   | VisualStudio......................   |
 
-## <a name="new-file-extension-and-discovery"></a>新しいファイル拡張子と探索
+## <a name="new-file-extension-and-discovery"></a>新しいファイル拡張子と検出
 
-使用する代わりに、 *. design.dll*ファイル拡張子が拡張機能の検出を使用して新しい画面を *. designtools.dll*ファイル拡張子。 *。 design.dll*と *。 designtools.dll*で同じ拡張機能が存在できる*デザイン*サブフォルダーです。
+*デザインの .dll*ファイル拡張子を使用する代わりに、 *designtools .dll*ファイル拡張子を使用して新しい surface 拡張機能が検出されます。 *. design*および*designtools .dll*拡張子は、同じ*design*サブフォルダーに存在できます。
 
-実際のターゲット ランタイム (.NET Core または UWP) 向けのサードパーティ コントロール ライブラリにコンパイルされたときに、 *. designtools.dll*拡張機能は、.NET Framework アセンブリとして常にコンパイルする必要があります。
+サードパーティ製のコントロールライブラリは、実際のターゲットランタイム (.NET Core または UWP) 用にコンパイルされますが、 *designtools .dll*拡張子は常に .NET Framework アセンブリとしてコンパイルする必要があります。
 
-## <a name="decouple-attribute-tables-from-runtime-types"></a>ランタイム型の属性テーブルを分離します。
+## <a name="decouple-attribute-tables-from-runtime-types"></a>ランタイム型から属性テーブルを分離する
 
-画面の分離の機能拡張モデルでは、実際のコントロールのライブラリに依存する拡張機能が許可されていませんし、そのため、拡張機能は、コントロール ライブラリからの型を参照できません。 たとえば、 *MyLibrary.designtools.dll*依存関係のない*MyLibrary.dll*します。
+Surface 分離機能拡張モデルでは、拡張機能が実際のコントロールライブラリに依存することは許可されていないため、拡張機能はコントロールライブラリから型を参照できません。 たとえば、mylibrary. *designtools .dll*は、 *mylibrary .dll*に依存していてはなりません。
 
-属性テーブルを使用して型のメタデータを登録するときに、このような依存関係が最も一般的なでした。 コントロール ライブラリを参照する拡張機能コードの種類が経由で直接[typeof](/dotnet/csharp/language-reference/keywords/typeof)または[GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator)文字列ベースの型名を使用して、新しい Api で置き換えられます。
+このような依存関係は、属性テーブルを介して型のメタデータを登録するときに最もよく使用されます。 [Typeof](/dotnet/csharp/language-reference/keywords/typeof)または[GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator)経由で直接コントロールライブラリ型を参照する拡張コードは、文字列ベースの型名を使用して新しい api で置き換えられます。
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -92,11 +92,11 @@ Public Class AttributeTableProvider
 End Class
 ```
 
-## <a name="feature-providers-and-model-api"></a>機能プロバイダーとモデルの API
+## <a name="feature-providers-and-model-api"></a>機能プロバイダーとモデル API
 
-機能プロバイダーは拡張機能アセンブリで実装され、Visual Studio のプロセスに読み込まれます。 `FeatureAttribute` 機能プロバイダーの種類を使用して直接の参照は引き続き[typeof](/dotnet/csharp/language-reference/keywords/typeof)します。
+機能プロバイダーは拡張機能アセンブリに実装され、Visual Studio プロセスに読み込まれます。 `FeatureAttribute`は、 [typeof](/dotnet/csharp/language-reference/keywords/typeof)を直接使用して機能プロバイダーの型を直接参照します。
 
-現時点では、次の機能のプロバイダーがサポートされています。
+現時点では、次の機能プロバイダーがサポートされています。
 
 * `DefaultInitializer`
 * `AdornerProvider`
@@ -104,9 +104,9 @@ End Class
 * `ParentAdapter`
 * `PlacementAdapter`
 
-機能プロバイダーは、実際の実行時のコードとコントロールのライブラリから別のプロセスに読み込まれるようになりました、ためランタイム オブジェクトに直接アクセスすることはなくなりました。 代わりに、このようなすべての対話は、対応するモデルに基づく Api を使用して変換する必要があります。 モデルの API が更新されたら、およびへのアクセス<xref:System.Type>または<xref:System.Object>いずれかが使用できなくに置き換えられましたまたは`TypeIdentifier`と`TypeDefinition`。
+機能プロバイダーは、実際のランタイムコードとコントロールライブラリとは異なるプロセスに読み込まれるため、ランタイムオブジェクトに直接アクセスできなくなります。 代わりに、対応するモデルベースの Api を使用するように、このようなすべての対話を変換する必要があります。 モデル API が更新さ<xref:System.Type>れ、または<xref:System.Object>へのアクセスが使用できなくなったか、また`TypeIdentifier`は`TypeDefinition`とに置き換えられました。
 
-`TypeIdentifier` アセンブリ名、種類を識別することがなく、文字列を表します。 A`TypeIdenfifier`に解決できる、`TypeDefinition`型に関する追加情報をクエリします。 `TypeDefinition` 拡張機能のコードでは、インスタンスをキャッシュできません。
+`TypeIdentifier`型を識別するアセンブリ名のない文字列を表します。 をに解決して、型に関する追加情報`TypeIdenfifier` を`TypeDefinition`照会できます。 `TypeDefinition`インスタンスを拡張コードにキャッシュすることはできません。
 
 ```csharp
 TypeDefinition type = ModelFactory.ResolveType(
@@ -128,13 +128,13 @@ If type?.IsSubclassOf(buttonType) Then
 End If
 ```
 
-Api は、画面の分離機能拡張 API のセットから削除されます。
+Surface 分離機能拡張 API セットから削除された Api:
 
 * `ModelFactory.CreateItem(EditingContext context, object item)`
 * `ViewItem.PlatformObject`
 * `ModelProperty.DefaultValue`
 
-Api を使用する`TypeIdentifier`の代わりに<xref:System.Type>:
+`TypeIdentifier` の<xref:System.Type>代わりにを使用する api:
 
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, CreateOptions options, params object[] arguments)`
@@ -150,12 +150,12 @@ Api を使用する`TypeIdentifier`の代わりに<xref:System.Type>:
 * `ParentAdpater.CanParent(ModelItem parent, Type childType)`
 * `ParentAdapter.RedirectParent(ModelItem parent, Type childType)`
 
-Api を使用する`TypeIdentifier`の代わりに<xref:System.Type>コンス トラクターの引数はサポートされなくと。
+`TypeIdentifier` の<xref:System.Type>代わりにを使用する api では、コンストラクター引数をサポートしていません。
 
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, CreateOptions options, params object[] arguments)`
 
-Api を使用する`TypeDefinition`の代わりに<xref:System.Type>:
+`TypeDefinition` の<xref:System.Type>代わりにを使用する api:
 
 * `ModelFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
 * `ValueTranslationService.GetProperties(Type itemType)`
@@ -173,7 +173,7 @@ Api を使用する`TypeDefinition`の代わりに<xref:System.Type>:
 * `AdapterService.GetAdapter<TAdapterType>(Type itemType)`
 * `AdapterService.GetAdapter(Type adapterType, Type itemType)`
 
-Api を使用する`ModelItem`の代わりに<xref:System.Object>:
+`ModelItem` の<xref:System.Object>代わりにを使用する api:
 
 * `ModelItemCollection.Insert(int index, object value)`
 * `ModelItemCollection.Remove(object value)`
@@ -182,7 +182,12 @@ Api を使用する`ModelItem`の代わりに<xref:System.Object>:
 * `ModelItemDictionary.Remove(object key)`
 * `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
 
-既知のなどのプリミティブ型`Int32`、 `String`、または`Thickness`.NET Framework のインスタンスとしてモデル API に渡すことが、ターゲットのランタイム プロセスに対応するオブジェクトに変換されます。 例えば:
+さらに`ModelItem` 、の`SetValue`ような api では、プリミティブ型または組み込みの .NET Framework 型のインスタンスのみがサポートされます。これは、ターゲットランタイム用に変換できます。 現在、次の種類がサポートされています。
+
+* プリミティブ .NET Framework 型: `Boolean` `Byte` 、、`Nullable`、 `DateTime`、 `Double` `Enum` 、、`SByte` 、、、、、 `Guid` `Char` `Int16` `Int32` `Int64`, `Single`, `String`, `Type`, `UInt16`, `UInt32`, `UInt64`,`Uri`
+* `Brush`既知`EasingFunctionBase` `Duration` `CornerRadius` `EasingMode`のWPF`FontFamily`.NET Framework 型 (および派生型): `Color`、、 、`EllipseGeometry`、 、、、、、、`GeneralTransform` `CompositeTransform` `Geometry`, `GradientStopCollection`, `GradientStop`, `GridLength`, `ImageSource`, `InlineCollection`, `Inline`, `KeySpline`, `Material`, `Matrix`, `PathFigureCollection`, `PathFigure`, `PathSegmentCollection`, `PathSegment`, `Path`, `PointCollection`, `Point`, `PropertyPath`, `Rect`, `RepeatBehavior`, `Setter`, `Size`, `StaticResource`, `TextAlignment`, `TextDecorationCollection`, `ThemeResourceExtension`, `Thickness`, `TimeSpan`, `Transform3D`,`TransformCollection`
+
+例えば:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -212,10 +217,10 @@ Public Class MyControlDefaultInitializer
 End Class
 ```
 
-複数のコード サンプルは、 [xaml デザイナー機能拡張サンプル](https://github.com/microsoft/xaml-designer-extensibility-samples)リポジトリ。
+コードサンプルの詳細については、「 [xaml デザイナーの機能拡張-サンプル](https://github.com/microsoft/xaml-designer-extensibility-samples)リポジトリ」を参照してください。
 
-## <a name="limited-support-for-designdll-extensions"></a>制限付きサポート design.dll 拡張機能。
+## <a name="limited-support-for-designdll-extensions"></a>. Design 拡張子のサポートの制限
 
-存在する場合 *. designtools.dll*コントロール ライブラリの拡張機能が検出された、最初との検出が読み込まれる *. design.dll*拡張機能はスキップされます。
+コントロールライブラリに対して*designtools .dll*拡張子が検出された場合は、最初に読み込まれ、の検出はスキップされます。
 
-ない場合は *. designtools.dll*拡張機能が存在するが、 *. design.dll*拡張機能が見つかると、XAML 言語サービスをサポートする属性の表の情報を抽出するには、このアセンブリをロードしようとしました。基本的なエディター、プロパティ インスペクターのシナリオの場合は。 このメカニズムは、スコープに制限されます。 機能プロバイダーを実行するデザイナーの分離の拡張機能の読み込みを許可しませんが、既存の WPF コントロール ライブラリの基本的なサポートを提供する可能性があります。
+*Designtools .dll*拡張子が存在しないが、拡張子 *.dll*が見つかると、XAML 言語サービスは、基本エディターとプロパティインスペクターのシナリオをサポートするために、このアセンブリを読み込んで属性テーブル情報を抽出しようとします。 このメカニズムは、スコープに限定されています。 機能プロバイダーを実行するためにデザイナー分離拡張機能を読み込むことはできませんが、既存の WPF コントロールライブラリの基本的なサポートを提供する場合があります。
