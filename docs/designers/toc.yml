@@ -93,6 +93,10 @@
                   href: l2dbform-xaml-cs-source-code.md
 - name: Windows フォーム
   items:
+    - name: Windows フォーム デザイナーの概要
+      href: windows-forms-designer-overview.md
+    - name: Windows フォーム デザイナーについて
+      href: walkthrough-windows-forms-designer.md
     - name: 'チュートリアル 1: ピクチャ ビューアーの作成 (C#)'
       items:
         - name: 概要
