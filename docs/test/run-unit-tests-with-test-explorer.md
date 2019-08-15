@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebe64bf1e3034230a9697fef0c072fc89ef282
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711403"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918168"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行する
 
@@ -169,7 +169,7 @@ Visual Studio エディターでテスト メソッドのソース コードを�
 |**クラス**|含まれているクラスによるテストのグループ化|
 ::: moniker-end
 
-### <a name="group-by-traits"></a>特徴でグループ化する
+### <a name="traits"></a>Traits
 
 通常、特徴はカテゴリ名/値のペアですが、1 つのカテゴリにすることもできます。 特徴は、単体テスト フレームワークによってテスト メソッドとして識別されるメソッドに割り当てることができます。 単体テスト フレームワークは、特徴のカテゴリを定義できます。 特徴のカテゴリに値を追加して、独自のカテゴリ名/値のペアを定義できます。 特徴のカテゴリと値を指定する構文は、単体テスト フレームワークによって定義されます。
 
@@ -187,7 +187,7 @@ Visual Studio エディターでテスト メソッドのソース コードを�
 
 **C++ 用の Microsoft 単体テスト フレームワークでの特徴の定義**
 
- 「[C++ 用の Microsoft 単体テスト フレームワークの使用方法](how-to-use-microsoft-test-framework-for-cpp.md)」をご覧ください。
+「[C++ 用の Microsoft 単体テスト フレームワークの使用方法](how-to-use-microsoft-test-framework-for-cpp.md)」をご覧ください。
 
 ## <a name="create-custom-playlists"></a>カスタム プレイリストを作成する
 
@@ -215,7 +215,7 @@ Visual Studio エディターでテスト メソッドのソース コードを�
 
 ![プレイリストが別のテスト エクスプローラー タブで開かれる](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**プレイリストにテストを追加するには**、テスト エクスプローラーで 1 つ以上のテストを選択します。 右クリックし、 **[プレイリストに追加]**  >  **[新しいプレイリスト]** を選択します。 
+**プレイリストにテストを追加するには**、テスト エクスプローラーで 1 つ以上のテストを選択します。 右クリックし、 **[プレイリストに追加]**  >  **[新しいプレイリスト]** を選択します。
 
 **プレイリストを開くには**、Visual Studio ツール バーのプレイリスト アイコンを選択し、メニューから以前に保存したプレイリスト ファイルを選択します。
 ::: moniker-end
@@ -229,7 +229,7 @@ Visual Studio エディターでテスト メソッドのソース コードを�
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>テスト列のフィルター処理、並べ替え、再配置
 
-列は、フィルター処理、並べ替え、再配置を行うことができます。 
+列は、フィルター処理、並べ替え、再配置を行うことができます。
 * 特定の特徴にフィルターを適用するには、特徴列の上部にあるフィルター アイコンをクリックします。
 
   ![列のフィルター](../test/media/vs-2019/test-explorer-filter-column-16-2.png)
@@ -302,7 +302,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 ### <a name="analyze-unit-test-code-coverage"></a>単体テストのコード カバレッジを分析する
 
-Visual Studio のコード カバレッジ ツールを使用して、単体テストで実際にテスト中の製品コードの量を確認できます。 選択したテストまたはソリューションのすべてのテストのコード カバレッジを実行できます。
+Visual Studio Enterprise エディションで利用可能な Visual Studio のコード カバレッジ ツールを使用して、単体テストで実際にテスト中の製品コードの量を確認できます。 選択したテストまたはソリューションのすべてのテストのコード カバレッジを実行できます。
 
 ソリューションのテスト メソッドのコード カバレッジを実行するには:
 
@@ -331,6 +331,8 @@ Visual Studio のコード カバレッジ ツールを使用して、単体テ�
 |-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**、**Ctrl**+**T**|
 |TestExplorer.RunAllTestsInContext|**Ctrl**+**R**、**T**|
+|TestExplorer.RunAllTests|**Ctrl**+**R**、**A**|
+|TestExplorer.RepeatLastRun|**Ctrl**+**R**、**L**|
 
 > [!NOTE]
 > 抽象クラスではテストを実行できません。テストは抽象クラスでのみ定義され、インスタンス化されないためです。 抽象クラスでテストを実行するには、抽象クラスから誘導されるクラスを作成します。
