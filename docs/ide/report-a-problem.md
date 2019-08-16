@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309806"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925982"
 ---
 # <a name="overview-report-a-problem"></a>概要: 問題を報告する
 
@@ -110,7 +110,7 @@ Visual Studio 開発者コミュニティは、問題の報告ツールを使用
 
 検索を使用して、既に報告された問題を報告しようとしていないことを確認することをお勧めします。 ご自分の問題と一致する既存の項目が見つかった場合は、その問題チケットに投票します。
 
- 私どものチームが発生していることを再現するのに役立つすべての情報を提供してください。  この情報には、必要な再現手順、コード フラグメント、スクリーンショット、再現の記録、ログ ファイル、その他の成果物が含まれます。  「[Visual Studio で問題を報告する方法](./how-to-report-a-problem-with-visual-studio.md)」をご覧ください。
+私どものチームが発生していることを再現するのに役立つすべての情報を提供してください。  この情報には、必要な再現手順、コード フラグメント、スクリーンショット、再現の記録、ログ ファイル、その他の成果物が含まれます。  「[Visual Studio で問題を報告する方法](./how-to-report-a-problem-with-visual-studio.md)」をご覧ください。
 
 ### <a name="how-is-my-feedback-prioritized"></a>フィードバックの優先順位付けはどのように行われるのですか。
 

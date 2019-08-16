@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5eac9b88c9afacda48682ecc5a69c7f2db88550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f71767571c6ea041a16eca5a66856c567be72b60
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788392"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925718"
 ---
 # <a name="unit-tests-for-generic-methods"></a>ジェネリック メソッドの単体テスト
 
@@ -26,25 +26,25 @@ ms.locfileid: "62788392"
 Visual Studio で、`MyList<T>` など、ジェネリック クラスの単体テストが生成されると、ジェネリック ヘルパー メソッドとテスト メソッドの 2 つのメソッドが生成されます。 `MyList<T>` に 1 つ以上の型制約がある場合、型引数はすべての型制約を満たす必要があります。 テスト対象のジェネリック コードが許容されたすべての入力に対して予想どおりに動作することを確認するには、テスト メソッドで、テストするすべての制約を指定して、ジェネリック ヘルパー メソッドを呼び出します。
 
 ## <a name="examples"></a>使用例
- ジェネリックの単体テストの例を次に示します。
+ジェネリックの単体テストの例を次に示します。
 
 - [生成されたテスト コードの編集](#EditingGeneratedTestCode)。 この例には、「生成後のテスト コード」と「編集後のテスト コード」という 2 つのセクションがあります。 ここでは、ジェネリック メソッドから生成される未加工のテスト コードを編集して有用なテスト メソッドにする方法を示します。
 
 - [型制約の使用](#TypeConstraintNotSatisfied)。 この例では、型制約を使用するジェネリック メソッドの単体テストを示します。 この例では、型制約が満たされていません。
 
 ### <a name="EditingGeneratedTestCode"></a> 例 1:生成されたテスト コードの編集
- このセクションのテスト コードでは、`SizeOfLinkedList()` という名前のテスト対象コードのメソッドをテストします。 このメソッドは、リンク リスト内のノード数を示す整数を返します。
+このセクションのテスト コードでは、`SizeOfLinkedList()` という名前のテスト対象コードのメソッドをテストします。 このメソッドは、リンク リスト内のノード数を示す整数を返します。
 
- 「生成後のテスト コード」にある最初のコード例では、Visual Studio Enterprise で生成された編集前のテスト コードを示しています。 「編集後のテスト コード」にある 2 番目のコード例では、2 つのデータ型 `int` と `char` に対して SizeOfLinkedList メソッドの機能をテストする方法を示しています。
+「生成後のテスト コード」にある最初のコード例では、Visual Studio Enterprise で生成された編集前のテスト コードを示しています。 「編集後のテスト コード」にある 2 番目のコード例では、2 つのデータ型 `int` と `char` に対して SizeOfLinkedList メソッドの機能をテストする方法を示しています。
 
- このコードでは、2 つのメソッドを示します。
+このコードでは、2 つのメソッドを示します。
 
 - `SizeOfLinkedListTestHelper<T>()` テスト ヘルパー メソッド。 既定では、テスト ヘルパー メソッドは名前に "TestHelper" を使用しています。
 
 - `SizeOfLinkedListTest()` テスト メソッド。 各テスト メソッドは、TestMethod 属性でマークされています。
 
 #### <a name="generated-test-code"></a>生成されたテスト コード
- 次のテスト コードは、`SizeOfLinkedList()` メソッドから生成されました。 これは生成された編集前のテストであるため、SizeOfLinkedList メソッドを正しくテストするように変更する必要があります。
+次のテスト コードは、`SizeOfLinkedList()` メソッドから生成されました。 これは生成された編集前のテストであるため、SizeOfLinkedList メソッドを正しくテストするように変更する必要があります。
 
 ```csharp
 public void SizeOfLinkedListTestHelper<T>()
@@ -65,13 +65,13 @@ public void SizeOfLinkedListTest()
 }
 ```
 
- 上記のコードのジェネリック型パラメーターは `GenericParameterHelper` です。 このパラメーターを編集して特定のデータ型を指定できますが、次の例で示すように、このステートメントを編集せずにテストを実行できます。
+上記のコードのジェネリック型パラメーターは `GenericParameterHelper` です。 このパラメーターを編集して特定のデータ型を指定できますが、次の例で示すように、このステートメントを編集せずにテストを実行できます。
 
 #### <a name="edited-test-code"></a>編集されたテスト コード
- 次のコードでは、テスト対象コードの `SizeOfLinkedList()` メソッドのテストが成功するように、テスト メソッドとテスト ヘルパー メソッドを編集しました。
+次のコードでは、テスト対象コードの `SizeOfLinkedList()` メソッドのテストが成功するように、テスト メソッドとテスト ヘルパー メソッドを編集しました。
 
 ##### <a name="test-helper-method"></a>テスト ヘルパー メソッド
- テスト ヘルパー メソッドは、step 1 ～ 5 というラベルの付いたコード行に対応する、次の手順を実行します。
+テスト ヘルパー メソッドは、step 1 ～ 5 というラベルの付いたコード行に対応する、次の手順を実行します。
 
 1. ジェネリック リンク リストを作成します。
 
@@ -84,7 +84,7 @@ public void SizeOfLinkedListTest()
 5. Assert ステートメントで、`actual` と `expected` を比較します。 実際のサイズが予想サイズと異なる場合、テストは失敗します。
 
 ##### <a name="test-method"></a>テスト メソッド
- テスト メソッドは、SizeOfLinkedListTest という名前のテストの実行時に呼び出されるコードにコンパイルされます。 テスト メソッドは、step 6 と step 7 というラベルの付いたコード行に対応する、次の手順を実行します。
+テスト メソッドは、SizeOfLinkedListTest という名前のテストの実行時に呼び出されるコードにコンパイルされます。 テスト メソッドは、step 6 と step 7 というラベルの付いたコード行に対応する、次の手順を実行します。
 
 1. テスト ヘルパー メソッドの呼び出し時に `<int>` を指定し、`integer` 変数に対してテストを実行できることを確認します。
 
@@ -118,9 +118,9 @@ public void SizeOfLinkedListTest()
 > SizeOfLinkedListTest テストを実行するたびに、TestHelper メソッドは 2 回呼び出されます。 テストを成功させるには、アサート ステートメントが毎回 true と評価される必要があります。 テストが失敗した場合、`<int>` を指定した呼び出しと `<char>` を指定した呼び出しのどちらが原因でテストが失敗したかはっきりしないことがあります。 これをはっきりさせるには、コール スタックを調べるか、テスト メソッドにブレークポイントを設定してテスト実行時にデバッグします。 詳細については、「[方法 :方法 : ASP.NET ソリューションでのテスト中にデバッグする](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)」を参照してください。
 
 ### <a name="TypeConstraintNotSatisfied"></a> 例 2:型制約の使用
- この例では、満たされていない型制約を使用するジェネリック メソッドの単体テストを示します。 最初のセクションでは、テスト対象コード プロジェクトのコードを示します。 型制約が強調表示されています。
+この例では、満たされていない型制約を使用するジェネリック メソッドの単体テストを示します。 最初のセクションでは、テスト対象コード プロジェクトのコードを示します。 型制約が強調表示されています。
 
- 2 番目のセクションでは、テスト プロジェクトのコードを示します。
+2 番目のセクションでは、テスト プロジェクトのコードを示します。
 
 #### <a name="code-under-test-project"></a>テスト対象コード プロジェクト
 
@@ -158,15 +158,15 @@ namespace ClassLibrary2
 
 新しく生成された単体テストと同様に、有効な結果を返すように、不確定ではない Assert ステートメントをこの単体テストに追加する必要があります。 これらのステートメントは、TestMethod 属性でマークされているメソッドではなく、このテストでは `DataTestHelper<T>()` という名前の "TestHelper" メソッドに追加します。
 
- この例では、ジェネリック型パラメーター `T` には制約 `where T : Employee` が含まれています。 この制約は、テスト メソッドでは満たされません。 そのため、`DataTest()` メソッドには、`T` に配置された型制約を指定する要件を通知する Assert ステートメントが含まれています。 この Assert ステートメントのメッセージは、`("No appropriate type parameter is found to satisfies the type constraint(s) of T. " + "Please call DataTestHelper<T>() with appropriate type parameters.");` となります。
+この例では、ジェネリック型パラメーター `T` には制約 `where T : Employee` が含まれています。 この制約は、テスト メソッドでは満たされません。 そのため、`DataTest()` メソッドには、`T` に配置された型制約を指定する要件を通知する Assert ステートメントが含まれています。 この Assert ステートメントのメッセージは、`("No appropriate type parameter is found to satisfies the type constraint(s) of T. " + "Please call DataTestHelper<T>() with appropriate type parameters.");` となります。
 
- つまり、`DataTest()` テスト メソッドから `DataTestHelper<T>()` メソッドを呼び出す場合は、`Employee` 型のパラメーターまたは `Employee` から派生したクラスを渡す必要があります。
+つまり、`DataTest()` テスト メソッドから `DataTestHelper<T>()` メソッドを呼び出す場合は、`Employee` 型のパラメーターまたは `Employee` から派生したクラスを渡す必要があります。
 
- `using ClassLibrary2;`
+`using ClassLibrary2;`
 
- `using Microsoft.VisualStudio.TestTools.UnitTesting;`
+`using Microsoft.VisualStudio.TestTools.UnitTesting;`
 
- `namespace TestProject1`
+`namespace TestProject1`
 
 ```csharp
 {

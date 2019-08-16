@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7ad0105cffc99894134dc58af7c71c9f95bceace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1ef763295db7673896189ce000ed59d5da5becf
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840583"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787973"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio で JavaScript と TypeScript の単体テストを実行する
 
@@ -26,6 +26,7 @@ Node.js Tools For Visual Studio を使用すると、いくつかの一般的な
 * Mocha ([mochajs.org](http://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
+* Jest ([jestjs.io](https://jestjs.io/))
 * Export Runner (このフレームワークは Node.js Tools for Visual Studio に固有です)
 
 > [!WARNING]
@@ -62,14 +63,14 @@ describe('Test Suite 1', function() {
 })
 ```
 
-プロジェクトのプロパティで単体テストのオプションを設定していない場合は、**[プロパティ]** ウィンドウの **[テスト フレームワーク]** プロパティが単体テスト ファイルに対する適切なテスト フレームワークに設定されていることを確認する必要があります。 これは、単体テスト ファイル テンプレートによって自動的に行われます。
+プロジェクトのプロパティで単体テストのオプションを設定していない場合は、 **[プロパティ]** ウィンドウの **[テスト フレームワーク]** プロパティが単体テスト ファイルに対する適切なテスト フレームワークに設定されていることを確認する必要があります。 これは、単体テスト ファイル テンプレートによって自動的に行われます。
 
 ![テスト フレームワーク](../javascript/media/UnitTestsFrameworkMocha.png)
 
 > [!Note]
 > 単体テストのオプションは、個々のファイルの設定より優先されます。
 
-テスト エクスプローラーを開くと (**[テスト]** > **[ウィンドウ]** > **[テスト エクスプローラー]** を選択)、Visual Studio によってテストが検出されて表示されます。 テストが最初に表示されない場合は、プロジェクトをリビルドして一覧を更新します。
+テスト エクスプローラーを開くと ( **[テスト]**  >  **[ウィンドウ]**  >  **[テスト エクスプローラー]** を選択)、Visual Studio によってテストが検出されて表示されます。 テストが最初に表示されない場合は、プロジェクトをリビルドして一覧を更新します。
 
 ![テスト エクスプローラー](../javascript/media/UnitTestsDiscoveryMocha.png)
 
@@ -82,7 +83,7 @@ describe('Test Suite 1', function() {
 
 ### <a name="run-tests-in-visual-studio-2017"></a>Visual Studio 2017 でテストを実行する
 
-テスト エクスプローラーで **[すべて実行]** リンクをクリックして、テストを実行することができます。 または、1 つ以上のテストまたはグループを選択し、右クリックして、ショートカット メニューから **[選択したテストの実行]** を選択することで、テストを実行することもできます。 バックグラウンドでテストが実行され、テスト エクスプローラーが自動的に更新されて、結果が表示されます。 さらに、**[選択したテストのデバッグ]** を選択して、選択したテストをデバッグすることもできます。
+テスト エクスプローラーで **[すべて実行]** リンクをクリックして、テストを実行することができます。 または、1 つ以上のテストまたはグループを選択し、右クリックして、ショートカット メニューから **[選択したテストの実行]** を選択することで、テストを実行することもできます。 バックグラウンドでテストが実行され、テスト エクスプローラーが自動的に更新されて、結果が表示されます。 さらに、 **[選択したテストのデバッグ]** を選択して、選択したテストをデバッグすることもできます。
 
 > [!Warning]
 > 現在、Node 8 以降を使用する単体テストのデバッグは、JavaScript テスト ファイルについてのみ動作し、TypeScript テスト ファイルではブレークポイントにヒットしません。 回避策としては、`debugger` キーワードを使ってください。
@@ -149,7 +150,7 @@ JavaScript を使って検出と実行のロジックを実装することで、
 ## <a name="unit-tests-in-other-project-types"></a>他のプロジェクト タイプでの単体テスト
 単体テストは、Node.js プロジェクトで記述することだけに限定されません。 TestFramework プロパティと TestRoot プロパティを任意の C# プロジェクトまたは Visual Basic プロジェクトに追加すると、これらのテストが列挙され、[テスト エクスプローラー] ウィンドウを使用してこれらを実行することができます。
 
-これを有効にするには、ソリューション エクスプローラーでプロジェクト ノードを右クリックし、**[プロジェクトのアンロード]**、**[プロジェクトの編集]** の順に選択します。 次に、プロジェクト ファイルで、次の 2 つの要素をプロパティ グループに追加します。
+これを有効にするには、ソリューション エクスプローラーでプロジェクト ノードを右クリックし、 **[プロジェクトのアンロード]** 、 **[プロジェクトの編集]** の順に選択します。 次に、プロジェクト ファイルで、次の 2 つの要素をプロパティ グループに追加します。
 
 > [!NOTE]
 > 要素を追加するプロパティ グループに、指定された条件がないことを確認します。
@@ -164,5 +165,11 @@ JavaScript を使って検出と実行のロジックを実装することで、
 
 次に、指定したテスト ルート フォルダーにテストを追加すると、これらのテストがテスト エクスプローラー ウィンドウで実行できるようになります。 これらが最初に表示されない場合は、プロジェクトをリビルドする必要があります。
 
-> [!NOTE]
-> これは現在、.NET Standard および .NET Core のプロジェクトでは機能しません。
+### <a name="unit-test-net-core-and-net-standard"></a>.NET Core と .NET Standard の単体テスト
+上記のプロパティに加えて、NuGet パッケージ [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) をインストールし、プロパティを設定する必要もあります。
+
+```xml
+<PropertyGroup>
+    <GenerateProgramFile>false</GenerateProgramFile>
+</PropertyGroup>
+```

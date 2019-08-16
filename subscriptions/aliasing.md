@@ -96,7 +96,7 @@ At the bottom of the page, select the following:
 ### <a name="defining-an-email-address-as-a-personal-account"></a>メール アドレスを個人用アカウントとして定義する
 サブスクリプションがサブスクライバーに割り当てられると、サブスクライバーは、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にアクセスしてサブスクリプションの特典を利用するように求めるメールを受信します。  サインインしようとすると、アカウントが認識されないことを示すエラーで Visual Studio サブスクリプションのサインインが失敗します。  [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にログインする前に、サブスクライバーに次の手順を行うように求めます。  必要に応じて、サブスクリプションを割り当てた後、この[テンプレート](#notifying-your-subscribers-using-personal-accounts)を使用してサブスクライバーに通知できます。
 
-1. https://my.visualstudio.com にアクセスして、 **[新しい Microsoft アカウントを作成する]** をクリックします。
+1. [https://my.visualstudio.com](https://my.visualstudio.com ) にアクセスして、 **[新しい Microsoft アカウントを作成する]** をクリックします。
 
 2. フィールドに入力します。
    - Someone@example.com ボックスにウェルカム メールを受信したメール アドレスを入力します。

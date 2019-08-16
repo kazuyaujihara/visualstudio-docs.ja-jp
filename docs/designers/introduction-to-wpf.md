@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ef227bb30703a41fe9519114a2bc9904e902f2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: f26558a8e8d7e8446e3a992b7555116b5712c364
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714814"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924457"
 ---
 # <a name="wpf-overview"></a>WPF の概要
 
@@ -239,7 +239,7 @@ End Namespace
 
 次のマークアップは <xref:System.Windows.Controls.TextBox> をカスタム `Person` オブジェクトのインスタンスにバインドします。
 
- ```xaml
+```xaml
  <Window
      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -249,7 +249,7 @@ End Namespace
    <TextBox Name="personNameTextBox" Text="{Binding Path=Name}" />
 
  </Window>
- ```
+```
 
 [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_6.vb)]
 [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_6.cs)]
@@ -597,7 +597,7 @@ WPF コントロールの既定のユーザー インターフェイスは、通
 </ResourceDictionary>
 ```
 
- 次の例では、前の例で定義したリソース ディクショナリを参照し、アプリケーション全体で共有されるようにしています。
+次の例では、前の例で定義したリソース ディクショナリを参照し、アプリケーション全体で共有されるようにしています。
 
 ```xaml
 <Application

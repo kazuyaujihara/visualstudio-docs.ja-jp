@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 186713daa3d4c913926779f79ffc61ff488578d5
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 039c022cc5a8883e5687630f5243d8652ff036e7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262849"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925849"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>チュートリアル: 使用法から生成機能のテスト ファースト開発
 
@@ -26,9 +26,9 @@ ms.locfileid: "66262849"
 
  *テスト ファースト開発* は、最初に製品仕様に基づいて単体テストを記述してから、テストが成功するために必要なソース コードを記述するソフトウェア設計の方法です。 Visual Studio は、新しい型とメンバーを定義する前に、テスト ケースで最初にこれらを参照するときにソース コードに生成することで、テスト ファースト開発をサポートします。
 
- Visual Studio では、新しい型とメンバーを生成する際、ワークフローへの割り込みは最小限に抑えられます。 現在のコード位置から離れずに、型、メソッド、プロパティ、フィールド、またはコンストラクターのスタブを作成できます。 ダイアログ ボックスを開いて型生成のオプションを指定すると、ダイアログ ボックスを閉じたときに、現在開いているファイルにフォーカスがすぐに戻ります。
+Visual Studio では、新しい型とメンバーを生成する際、ワークフローへの割り込みは最小限に抑えられます。 現在のコード位置から離れずに、型、メソッド、プロパティ、フィールド、またはコンストラクターのスタブを作成できます。 ダイアログ ボックスを開いて型生成のオプションを指定すると、ダイアログ ボックスを閉じたときに、現在開いているファイルにフォーカスがすぐに戻ります。
 
- **使用法から生成**機能は、Visual Studio と統合されるテスト フレームワークで使用することができます。 このトピックでは、Microsoft 単体テスト フレームワークについて説明します。
+**使用法から生成**機能は、Visual Studio と統合されるテスト フレームワークで使用することができます。 このトピックでは、Microsoft 単体テスト フレームワークについて説明します。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

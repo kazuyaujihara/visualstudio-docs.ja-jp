@@ -1,17 +1,17 @@
 ---
 title: Parasoft Virtualize/SOAtest Professional Desktop の特典 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれる Parasoft Virtualize/SOA Test Professional サブスクリプションをアクティブ化する方法を説明します。
-ms.openlocfilehash: bd867a47b4b42c3327d60ccab05735f0554409ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 64aa689780dc30a5a6fcadf3e31ec24d3289056a
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824642"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787702"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -27,7 +27,10 @@ ms.locfileid: "67824642"
 
 3. Parasoft の Web サイトにリダイレクトされるので、アカウントを作成します。  連絡先情報を入力して、 **[Submit]\(送信\)** をクリックするだけです。
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 特典アカウント作成](_img/vs-parasoft/vs-parasoft-account-cropped.png)
+   > ![Parasoft 特典アカウント作成](_img/vs-parasoft/vs-parasoft-new-account.png)
+
+   > [!Note]
+   > このページの表には、1 年間の価格と Visual Studio の割引が示されています。 この料金は、6 か月のサブスクリプションを使用した後に適用されます。  
 
 4. アカウントを作成すると、ダウンロード方法が記載されたメールが送信されたことの通知が表示されます  (受信トレイにメールが表示されない場合は、スパムまたは迷惑メール フォルダーを確認してください)。
 
@@ -56,14 +59,12 @@ ms.locfileid: "67824642"
 14. インストールされたアプリケーションへのショートカットの場所を指定し、 **[次へ]** をクリックします。
 
 15. HTTPS サイトでの特定の機能テストには、SOAtest Web Root Certificate Authority 証明書が必要です。  ルート CA 証明書をインストールするかどうかを選び、 **[次へ]** をクリックします。
-    > [!div class="mx-imgBorder"]
-    > ![Parasoft 特典ルート CA 証明書](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
+    > [!NOTE]
+    > Parasoft では、証明書のインストールを選択することを強くお勧めします。
 
 16. インストール中にデスクトップ アイコンとクイック起動アイコンを作成するかどうかを選び、 **[次へ]** をクリックします。
 
 17. 選んだオプションを確認し、 **[インストール]** をクリックしてソフトウェアのインストールを始めます。
-    > [!div class="mx-imgBorder"]
-    > ![Parasoft 特典インストール準備完了](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
 18. セットアップが終わったら、 **[完了]** をクリックします。 Parasoft Virtualize/SOAtest Professional Desktop 特典を使う準備ができました。
 
@@ -89,3 +90,6 @@ ms.locfileid: "67824642"
   - Parasoft リソース センター: https://www.parasoft.com/resources/
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
+
+## <a name="next-steps"></a>次の手順
+[Azure クレジット](vs-azure.md)をアクティブ化することで、独自の開発サンドボックスを活用します。 

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc94f3486a4a290dbcdff40303f58b8b42f3f9d9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7aef839027639770e60292210aaddf998c97fce0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825866"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926539"
 ---
 # <a name="troubleshoot-code-coverage"></a>コード カバレッジのトラブルシューティング
 
@@ -29,7 +29,7 @@ Visual Studio のコード カバレッジ分析ツールは、ネイティブ �
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>結果が表示されなかったり古い結果が表示されたりすることの考えられる原因
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>適切なエディションの Visual Studio を使用していますか?
- Visual Studio Enterprise が必要です。
+Visual Studio Enterprise が必要です。
 
 ### <a name="no-tests-were-executed"></a>テストが実行されなかった
 

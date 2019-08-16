@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 3634dcd7cf136aa52de3ebf6bf5bfc3d57632d2c
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 36681858506a05d5d8c9f0a5be25a70b833ee022
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132144"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926609"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス
 
 このトピックでは `Microsoft::VisualStudio::CppUnitTestFramework` の名前空間のパブリック メンバーの一覧を示します。 Microsoft ネイティブ単体テスト フレームワークに基づいて C++ の単体テストを作成するには、これらの API を使います。 トピックの最後には「[使用例](#example)」があります。
 
- ヘッダー ファイルは _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\include** フォルダーにあります。
+ヘッダー ファイルは _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\include** フォルダーにあります。
 
- lib ファイルは _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\lib** フォルダーにあります。
+lib ファイルは _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\lib** フォルダーにあります。
 
 ヘッダーと lib のパスは、ネイティブ テスト プロジェクトで自動的に構成されます。
 
@@ -104,7 +104,7 @@ ms.locfileid: "67132144"
 TEST_CLASS(className)
 ```
 
- テスト メソッドを含む各クラスに必要です。 *className* をテスト クラスとして識別します。 `TEST_CLASS` は namescape のスコープで宣言する必要があります。
+テスト メソッドを含む各クラスに必要です。 *className* をテスト クラスとして識別します。 `TEST_CLASS` は namescape のスコープで宣言する必要があります。
 
 ```cpp
 TEST_METHOD(methodName)
@@ -113,7 +113,7 @@ TEST_METHOD(methodName)
 }
 ```
 
- *methodName* をテスト メソッドとして定義します。 `TEST_METHOD` はメソッドのクラスのスコープ内で宣言する必要があります。
+*methodName* をテスト メソッドとして定義します。 `TEST_METHOD` はメソッドのクラスのスコープ内で宣言する必要があります。
 
 ### <a name="Initialize_and_cleanup"></a> 初期化とクリーンアップ
 
@@ -126,7 +126,7 @@ TEST_METHOD_INITIALIZE(methodName)
 }
 ```
 
- *methodName* を各テスト メソッドが実行される前に実行するメソッドとして定義します。 `TEST_METHOD_INITIALIZE` はテスト クラスで一度だけ定義でき、そのテスト クラスで定義する必要があります。
+*methodName* を各テスト メソッドが実行される前に実行するメソッドとして定義します。 `TEST_METHOD_INITIALIZE` はテスト クラスで一度だけ定義でき、そのテスト クラスで定義する必要があります。
 
 ```cpp
 TEST_METHOD_CLEANUP(methodName)
@@ -135,7 +135,7 @@ TEST_METHOD_CLEANUP(methodName)
 }
 ```
 
- *methodName* を各テスト メソッドの実行後に実行するメソッドとして定義します。 `TEST_METHOD_CLEANUP` はテスト クラスで一度だけ定義でき、テスト クラスのスコープ内で定義する必要があります。
+*methodName* を各テスト メソッドの実行後に実行するメソッドとして定義します。 `TEST_METHOD_CLEANUP` はテスト クラスで一度だけ定義でき、テスト クラスのスコープ内で定義する必要があります。
 
 #### <a name="test_classes"></a> テスト クラス
 
@@ -146,7 +146,7 @@ TEST_CLASS_INITIALIZE(methodName)
 }
 ```
 
- *methodName* を各テスト クラスの作成前に実行するメソッドとして定義します。 `TEST_CLASS_INITIALIZE` はテスト クラスで一度だけ定義でき、テスト クラスのスコープ内で定義する必要があります。
+*methodName* を各テスト クラスの作成前に実行するメソッドとして定義します。 `TEST_CLASS_INITIALIZE` はテスト クラスで一度だけ定義でき、テスト クラスのスコープ内で定義する必要があります。
 
 ```cpp
 TEST_CLASS_CLEANUP(methodName)
@@ -155,7 +155,7 @@ TEST_CLASS_CLEANUP(methodName)
 }
 ```
 
- *methodName* を各テスト クラスの作成後に実行するメソッドとして定義します。 `TEST_CLASS_CLEANUP` はテスト クラスで一度だけ定義でき、テスト クラスのスコープ内で定義する必要があります。
+*methodName* を各テスト クラスの作成後に実行するメソッドとして定義します。 `TEST_CLASS_CLEANUP` はテスト クラスで一度だけ定義でき、テスト クラスのスコープ内で定義する必要があります。
 
 #### <a name="test_modules"></a> テスト モジュール
 
@@ -166,13 +166,13 @@ TEST_MODULE_INITIALIZE(methodName)
 }
 ```
 
- モジュールが読み込まれるときに実行するメソッド *methodName* を定義します。 `TEST_MODULE_INITIALIZE` はテスト モジュールで一度だけ定義でき、名前空間スコープで宣言する必要があります。
+モジュールが読み込まれるときに実行するメソッド *methodName* を定義します。 `TEST_MODULE_INITIALIZE` はテスト モジュールで一度だけ定義でき、名前空間スコープで宣言する必要があります。
 
 ```cpp
 TEST_MODULE_CLEANUP(methodName)
 ```
 
- モジュールがアンロードされるときに実行するメソッド *methodName* を定義します。 `TEST_MODULE_CLEANUP` はテスト モジュールで一度だけ定義でき、名前空間スコープで宣言する必要があります。
+モジュールがアンロードされるときに実行するメソッド *methodName* を定義します。 `TEST_MODULE_CLEANUP` はテスト モジュールで一度だけ定義でき、名前空間スコープで宣言する必要があります。
 
 ### <a name="create_test_attributes"></a> テスト属性を作成する
 
@@ -185,9 +185,9 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
- テスト メソッド *testMethodName* に、1 つ以上の `TEST_METHOD_ATTRIBUTE` マクロで定義された属性を追加します。
+テスト メソッド *testMethodName* に、1 つ以上の `TEST_METHOD_ATTRIBUTE` マクロで定義された属性を追加します。
 
- `TEST_METHOD_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。
+`TEST_METHOD_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。
 
 #### <a name="test_class_attributes"></a> テスト クラス属性
 
@@ -198,9 +198,9 @@ BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
 END_TEST_CLASS_ATTRIBUTE()
 ```
 
- テスト クラス *testClassName* に、`TEST_CLASS_ATTRIBUTE` の 1 つ以上のマクロで定義された属性を追加します。
+テスト クラス *testClassName* に、`TEST_CLASS_ATTRIBUTE` の 1 つ以上のマクロで定義された属性を追加します。
 
- `TEST_CLASS_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。
+`TEST_CLASS_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。
 
 #### <a name="test_module_attributes"></a> テスト モジュール属性
 
@@ -211,50 +211,50 @@ BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
 END_TEST_MODULE_ATTRIBUTE()
 ```
 
- テスト モジュール *testModuleName* に、`TEST_MODULE_ATTRIBUTE` の 1 つ以上のマクロで定義された属性を追加します。
+テスト モジュール *testModuleName* に、`TEST_MODULE_ATTRIBUTE` の 1 つ以上のマクロで定義された属性を追加します。
 
- `TEST_MODULE_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。
+`TEST_MODULE_ATTRIBUTE` マクロは名前 *attributeName* と値 *attributeValue* を持つ属性を定義します。
 
 #### <a name="pre_defined_attributes"></a> 定義済みの属性
 
- 一般的なケースに便利なように、以下の定義済み属性マクロが提供されています。 これらは、上で説明したマクロ `TEST_METHOD_ATTRIBUTE` の代わりに使用できます。
+一般的なケースに便利なように、以下の定義済み属性マクロが提供されています。 これらは、上で説明したマクロ `TEST_METHOD_ATTRIBUTE` の代わりに使用できます。
 
 ```cpp
 TEST_OWNER(ownerAlias)
 ```
 
- 名前 `Owner` と属性値 *ownerAlias* で `TEST_METHOD_ATTRIBUTE` を定義します。
+名前 `Owner` と属性値 *ownerAlias* で `TEST_METHOD_ATTRIBUTE` を定義します。
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
- 名前 `Description` と属性値 *description* で `TEST_METHOD_ATTRIBUTE` を定義します。
+名前 `Description` と属性値 *description* で `TEST_METHOD_ATTRIBUTE` を定義します。
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
- 名前 `Priority` と属性値 *priority* で `TEST_METHOD_ATTRIBUTE` を定義します。
+名前 `Priority` と属性値 *priority* で `TEST_METHOD_ATTRIBUTE` を定義します。
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
- 名前 `WorkItem` と属性値 *workItem* で `TEST_METHOD_ATTRIBUTE` を定義します。
+名前 `WorkItem` と属性値 *workItem* で `TEST_METHOD_ATTRIBUTE` を定義します。
 
 ```cpp
 TEST_IGNORE()
 ```
 
- 名前 `Ignore` と属性値 `true` で `TEST_METHOD_ATTRIBUTE` を定義します。
+名前 `Ignore` と属性値 `true` で `TEST_METHOD_ATTRIBUTE` を定義します。
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 
 ### <a name="general_asserts"></a> 一般的なアサート
 
 #### <a name="general_are_equal"></a> 等しい
- 2 つのオブジェクトが等しいことを確認します
+2 つのオブジェクトが等しいことを確認します
 
 ```cpp
 template<typename T>
@@ -265,7 +265,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
- 2 つの倍精度小数点数が等しいことを確認します
+2 つの倍精度小数点数が等しいことを確認します
 
 ```cpp
 static void Assert::AreEqual(
@@ -276,7 +276,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
- 2 つの浮動小数点数が等しいことを確認します
+2 つの浮動小数点数が等しいことを確認します
 
 ```cpp
 static void Assert::AreEqual(
@@ -287,7 +287,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
- 2 つの char* 文字列が等しいことを確認します
+2 つの char* 文字列が等しいことを確認します
 
 ```cpp
 static void Assert::AreEqual(
@@ -298,7 +298,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
- 2 つの w_char* 文字列が等しいことを確認します
+2 つの w_char* 文字列が等しいことを確認します
 
 ```cpp
 static void Assert::AreEqual(
@@ -310,7 +310,7 @@ static void Assert::AreEqual(
 ```
 
 #### <a name="general_are_not_equal"></a> 等しくない
- 2 つの倍精度小数点数が等しくないことを確認します
+2 つの倍精度小数点数が等しくないことを確認します
 
 ```cpp
 static void Assert::AreNotEqual(
@@ -321,7 +321,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
- 2 つの浮動小数点数が等しくないことを確認します
+2 つの浮動小数点数が等しくないことを確認します
 
 ```cpp
 static void Assert::AreNotEqual(
@@ -332,7 +332,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
- 2 つの char* 文字列が等しくないことを確認します
+2 つの char* 文字列が等しくないことを確認します
 
 ```cpp
 static void Assert::AreNotEqual(
@@ -343,7 +343,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
- 2 つの w_char* 文字列が等しくないことを確認します
+2 つの w_char* 文字列が等しくないことを確認します
 
 ```cpp
 static void Assert::AreNotEqual(
@@ -354,7 +354,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
- 演算子 == に基づいて、2 つの参照が等しくないことを確認します
+演算子 == に基づいて、2 つの参照が等しくないことを確認します
 
 ```cpp
 template<typename T>
@@ -366,7 +366,7 @@ static void Assert::AreNotEqual(
 ```
 
 #### <a name="general_are_same"></a> 同じである
- 2 つの参照が同じオブジェクト インスタンス (ID) を参照していることを確認します。
+2 つの参照が同じオブジェクト インスタンス (ID) を参照していることを確認します。
 
 ```cpp
 template<typename T>
@@ -378,7 +378,7 @@ static void Assert::AreSame(
 ```
 
 #### <a name="general_are_not_same"></a> 同じではない
- 2 つの参照が同じオブジェクト インスタンス (ID) を参照していないことを確認します。
+2 つの参照が同じオブジェクト インスタンス (ID) を参照していないことを確認します。
 
 ```cpp
 template<typename T>
@@ -390,7 +390,7 @@ static void Assert::AreNotSame (
 ```
 
 #### <a name="general_is_null"></a> Null である
- ポインターが NULL であることを確認します。
+ポインターが NULL であることを確認します。
 
 ```cpp
 template<typename T>
@@ -401,7 +401,7 @@ static void Assert::IsNull(
 ```
 
 #### <a name="general_is_not_null"></a> Null ではない
- ポインターが NULL ではないことを確認します
+ポインターが NULL ではないことを確認します
 
 ```cpp
 template<typename T>
@@ -412,7 +412,7 @@ static void Assert::IsNotNull(
 ```
 
 #### <a name="general_is_True"></a> True である
- 条件が true であることを確認します
+条件が true であることを確認します
 
 ```cpp
 static void Assert::IsTrue(
@@ -422,7 +422,7 @@ static void Assert::IsTrue(
 ```
 
 #### <a name="general_is_false"></a> False である
- 条件が false であることを確認します
+条件が false であることを確認します
 
 ```cpp
 static void Assert::IsFalse(
@@ -432,7 +432,7 @@ static void Assert::IsFalse(
 ```
 
 #### <a name="general_Fail"></a> 失敗
- テスト ケースの結果が失敗するよう強制します
+テスト ケースの結果が失敗するよう強制します
 
 ```cpp
 static void Assert::Fail(
@@ -443,7 +443,7 @@ static void Assert::Fail(
 ### <a name="winrt_asserts"></a> Windows ランタイム アサート
 
 #### <a name="winrt_are_equal"></a> 等しい
- 2 つの Windows ランタイム ポインターが等しいことを確認します。
+2 つの Windows ランタイム ポインターが等しいことを確認します。
 
 ```cpp
 template<typename T>
@@ -454,7 +454,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
- 2 つの Platform::String^ 文字列が等しいことを確認します。
+2 つの Platform::String^ 文字列が等しいことを確認します。
 
 ```cpp
 template<typename T>
@@ -466,7 +466,7 @@ static void Assert::AreEqual(
 ```
 
 #### <a name="winrt_are_same"></a> 同じである
- 2 つの Windows ランタイム参照が同じオブジェクトを参照していることを確認します。
+2 つの Windows ランタイム参照が同じオブジェクトを参照していることを確認します。
 
 ```cpp
 template<typename T>
@@ -478,7 +478,7 @@ static void Assert::AreSame(
 ```
 
 #### <a name="winrt_are_not_equal"></a> 等しくない
- 2 つの Windows ランタイム ポインターが等しくないことを確認します。
+2 つの Windows ランタイム ポインターが等しくないことを確認します。
 
 ```cpp
 template<typename T>
@@ -489,7 +489,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
- 2 つの Platform::String^ 文字列が等しくないことを確認します。
+2 つの Platform::String^ 文字列が等しくないことを確認します。
 
 ```cpp
 static void Assert::AreNotEqual(
@@ -501,7 +501,7 @@ static void Assert::AreNotEqual(
 ```
 
 #### <a name="winrt_are_not_same"></a> 同じではない
- 2 つの Windows ランタイム参照が同じオブジェクトを参照していないことを確認します。
+2 つの Windows ランタイム参照が同じオブジェクトを参照していないことを確認します。
 
 ```cpp
 template<typename T>
@@ -513,7 +513,7 @@ static void Assert::AreNotSame(
 ```
 
 #### <a name="winrt_is_null"></a> Null である
- Windows ランタイム ポインターが nullptr であることを確認します。
+Windows ランタイム ポインターが nullptr であることを確認します。
 
 ```cpp
 template<typename T>
@@ -524,7 +524,7 @@ static void Assert::IsNull(
 ```
 
 #### <a name="winrt_is_not_null"></a> Null ではない
- Windows ランタイム ポインターが nullptr ではないことを確認します。
+Windows ランタイム ポインターが nullptr ではないことを確認します。
 
 ```cpp
 template<typename T>
@@ -537,7 +537,7 @@ static void Assert::IsNotNull(
 ### <a name="exception_asserts"></a> 例外アサート
 
 #### <a name="expect_exception"></a> 例外を想定する
- 関数が例外を発生させることを確認します。
+関数が例外を発生させることを確認します。
 
 ```cpp
 template<typename _EXPECTEDEXCEPTION, typename _FUNCTOR>
@@ -547,7 +547,7 @@ static void Assert::ExpectException(
     const __LineInfo* pLineInfo= NULL)
 ```
 
- 関数が例外を発生させることを確認します。
+関数が例外を発生させることを確認します。
 
 ```cpp
 template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
@@ -560,7 +560,7 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
 ## <a name="cppunittestlogger_h"></a> CppUnitTestLogger.h
 
 ### <a name="logger"></a> Logger
- ロガー クラスには、**出力ウィンドウ**に書き込むための静的メソッドが含まれます。
+ロガー クラスには、**出力ウィンドウ**に書き込むための静的メソッドが含まれます。
 
 ### <a name="write_message"></a> メッセージの書き込み
 **出力ウィンドウ**に文字列を書き込む
@@ -574,7 +574,7 @@ static void Logger::WriteMessage(const char* message)
 ```
 
 ## <a name="example"></a> 「例」
- 以下のコードは VSCppUnit の使用例です。 属性メタデータ、フィクスチャ、アサーションのある単体テスト、およびカスタム ログの例が含まれます。
+以下のコードは VSCppUnit の使用例です。 属性メタデータ、フィクスチャ、アサーションのある単体テスト、およびカスタム ログの例が含まれます。
 
 ```cpp
 // USAGE EXAMPLE

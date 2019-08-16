@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a7a59ca23dc444bcdc714ade2fce5bedb87e8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3792f3d6f86faf0b58e8cf8f1b76984ba3bd5d80
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945129"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925996"
 ---
 # <a name="symbol-path-command"></a>Symbol Path コマンド
 デバッガーによってシンボルが検索されるディレクトリの一覧を設定します。
@@ -31,22 +31,22 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ```
 
 ## <a name="arguments"></a>引数
- `pathname`
+`pathname`
 
- 任意。 デバッガーによってシンボルが検索されるパスを、セミコロンで区切った一覧です。
+任意。 デバッガーによってシンボルが検索されるパスを、セミコロンで区切った一覧です。
 
 ## <a name="remarks"></a>解説
- `pathname` を指定しない場合、シンボル用の現在のパスがコマンドによって一覧表示されます。
+`pathname` を指定しない場合、シンボル用の現在のパスがコマンドによって一覧表示されます。
 
 ## <a name="example"></a>例
- 次の例では、シンボル ディレクトリの一覧に 2 つのパスを追加します。
+次の例では、シンボル ディレクトリの一覧に 2 つのパスを追加します。
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
 ## <a name="example"></a>例
- 次の例では、シンボル用の現在のパスをセミコロンで区切った一覧が表示されます。
+次の例では、シンボル用の現在のパスをセミコロンで区切った一覧が表示されます。
 
 ```
 Debug.SymbolPath

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493328"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918785"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
@@ -65,7 +65,7 @@ C# には非常に便利な新しいリファクタリングが多数ありま�
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) は、人工知能 (AI) を使用したソフトウェア開発作業を強化します。 IntelliCode は GitHub 上の 2,000 のオープン ソース プロジェクト (それぞれに 100 個以上の星が付いています) 全体をトレーニングして、レコメンデーションを生成します。
 
- ![Visual Studio 2019 の IntelliCode のアニメーション](media/vs-2019/IntelliCode.gif)
+![Visual Studio 2019 の IntelliCode のアニメーション](media/vs-2019/IntelliCode.gif)
 
 Visual Studio IntelliCode が生産性の強化に役立つ方法を次にいくつか示します。
 

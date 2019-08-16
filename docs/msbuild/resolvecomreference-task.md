@@ -1,6 +1,6 @@
 ---
 title: ResolveComReference タスク | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
@@ -18,17 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 123aa52b5062d8ac083f054074df2c65ba77f80d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ecefab48babc2938a4995ec8232e0aa7a06dae3c
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431294"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681107"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference タスク
+
 1 つ以上のタイプ ライブラリ名または *.tlb* ファイルから成る一覧を使用して、これらのタイプ ライブラリのディスク上の位置を解決します。
 
 ## <a name="parameters"></a>パラメーター
+
  `ResolveCOMReference` タスクのパラメーターの説明を次の表に示します。
 
 |パラメーター|説明|
@@ -52,6 +54,7 @@ ms.locfileid: "63431294"
 |`WrapperOutputDirectory`|省略可能な `String` 型のパラメーターです。<br /><br /> 生成された相互運用機能アセンブリが配置されるディスク上の場所。 この項目メタデータが指定されていない場合、タスクはプロジェクト ファイルがあるディレクトリの絶対パスを使用します。|
 
 ## <a name="typelibnames-item-metadata"></a>TypeLibNames 項目メタデータ
+
  次の表に、`TypeLibNames` パラメーターに渡された項目に使用可能な項目メタデータを示します。
 
 |メタデータ|説明|
@@ -59,22 +62,29 @@ ms.locfileid: "63431294"
 |`GUID`|必要な項目メタデータです。<br /><br /> タイプ ライブラリの GUID。 この項目メタデータが指定されていないと、タスクが失敗します。|
 |`VersionMajor`|必要な項目メタデータです。<br /><br /> タイプ ライブラリのメジャー バージョンです。 この項目メタデータが指定されていないと、タスクが失敗します。|
 |`VersionMinor`|必要な項目メタデータです。<br /><br /> タイプ ライブラリのマイナー バージョンです。 この項目メタデータが指定されていないと、タスクが失敗します。|
+|`EmbedInteropTypes`|省略可能な `Boolean` メタデータ。<br /><br />  `true` の場合は、相互運用 DLL を生成するのではなく、この参照から直接アセンブリに相互運用機能型を埋め込みます。|
 |`LocaleIdentifier`|省略可能な項目メタデータです。<br /><br /> タイプ ライブラリのロケール識別子 (LCID) です。 これは、ユーザー、リージョン、またはアプリケーションで優先される人間の言語を識別する 32 ビット値として指定されます。 この項目メタデータが指定されていないと、タスクは "0" の既定のロケール識別子を使用します。|
 |`WrapperTool`|省略可能な項目メタデータです。<br /><br /> このタイプ ライブラリのアセンブリ ラッパーを生成するために使用されるラッパー ツールを指定します。 この項目メタデータが指定されていないと、タスクは、"tlbimp" の既定のラッパー ツールを使用します。 使用可能な大文字と小文字を区別しない typelibs の選択肢は次のとおりです。<br /><br /> -   `Primary`:COM コンポーネントの既に生成されたプライマリ相互運用機能アセンブリを使用する場合には、このラッパー ツールを使用します。 このラッパー ツールを使用する場合は、ラッパーの出力ディレクトリを指定しないでください。指定すると、タスクが失敗します。<br />-   `TLBImp`:COM コンポーネントの相互運用機能アセンブリを作成する場合には、このラッパー ツールを使用します。<br />-   `AXImp`: ActiveX コントロールの相互運用機能アセンブリを作成する場合には、このラッパー ツールを使用します。|
 
 ## <a name="typelibfiles-item-metadata"></a>TypeLibFiles 項目メタデータ
+
  次の表に、`TypeLibFiles` パラメーターに渡された項目に使用可能な項目メタデータを示します。
 
 |メタデータ|説明|
 |--------------|-----------------|
+|`EmbedInteropTypes`|省略可能な `Boolean` 型のパラメーターです。<br /><br />  `true` の場合は、相互運用 DLL を生成するのではなく、この参照から直接アセンブリに相互運用機能型を埋め込みます。|
 |`WrapperTool`|省略可能な項目メタデータです。<br /><br /> このタイプ ライブラリのアセンブリ ラッパーを生成するために使用されるラッパー ツールを指定します。 この項目メタデータが指定されていないと、タスクは、"tlbimp" の既定のラッパー ツールを使用します。 使用可能な大文字と小文字を区別しない typelibs の選択肢は次のとおりです。<br /><br /> -   `Primary`:COM コンポーネントの既に生成されたプライマリ相互運用機能アセンブリを使用する場合には、このラッパー ツールを使用します。 このラッパー ツールを使用する場合は、ラッパーの出力ディレクトリを指定しないでください。指定すると、タスクが失敗します。<br />-   `TLBImp`:COM コンポーネントの相互運用機能アセンブリを作成する場合には、このラッパー ツールを使用します。<br />-   `AXImp`:ActiveX コントロールの相互運用機能アセンブリを作成する場合には、このラッパー ツールを使用します。|
 
 > [!NOTE]
 > タイプ ライブラリを一意に識別するために提供する情報が多いほど、タスクがディスク上の正しいファイルに解決される可能性が大きくなります。
 
 ## <a name="remarks"></a>解説
- 上記のパラメーターに加えて、このタスクは <xref:Microsoft.Build.Utilities.Task> クラスからパラメーターを継承します。 これらの追加パラメーターのリストとその説明については、「[Task 基底クラス](../msbuild/task-base-class.md)」を参照してください。
+
+上記のパラメーターに加えて、このタスクは <xref:Microsoft.Build.Utilities.Task> クラスからパラメーターを継承します。 これらの追加パラメーターのリストとその説明については、「[Task 基底クラス](../msbuild/task-base-class.md)」を参照してください。
+
+このタスクを機能させるために、COM DLL をコンピューターに登録する必要はありません。
 
 ## <a name="see-also"></a>関連項目
+
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
