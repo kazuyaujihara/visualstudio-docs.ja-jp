@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 659ea1008cd70571d035d0b178d01587c6b2ba0d
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 0312c0e40f3addd7952c136e95f3756091ba4dcb
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842065"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547391"
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054:URI パラメーターを文字列にすることはできません
 
@@ -36,35 +36,35 @@ ms.locfileid: "65842065"
 
 ## <a name="cause"></a>原因
 
-型は、名前持つにはには、"uri"、"Uri"、"urn"、"Urn"、"url"または"Url"が含まれています。 文字列パラメーターを持つメソッドを宣言し、型に対応するオーバー ロードを宣言しません、<xref:System.Uri?displayProperty=fullName>パラメーター。
+型は、名前に "uri"、"uri"、"urn"、"urn"、"url"、または "url" を含む文字列パラメーターを持つメソッドを宣言します。型は、パラメーターを<xref:System.Uri?displayProperty=fullName>受け取る対応するオーバーロードを宣言しません。
 
-既定では、このルールのみが検索に、外部から参照の種類が、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できる型のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-このルールは、パラメーター名は camel 規約に基づくトークンに分割し、各トークンが"uri"、"Uri"、"urn"、"Urn"、"url"または"Url"に等しいかどうかを確認します。 一致がある場合、ルールでは、パラメーターが uniform resource identifier (URI) を表すこと前提としています。 URI の文字列表現は解析エラーやエンコーディング エラーが発生しやすく、セキュリティ上の脆弱性の原因となる場合があります。 対応するオーバー ロードで、メソッドは、URI の文字列表現を受け取り場合のインスタンスを受け取る提供される場合があります、<xref:System.Uri>クラスを安全かつセキュリティで保護された方法でこれらのサービスを提供します。
+このルールでは、camel 形式の表記規則に基づいてパラメーター名をトークンに分割し、各トークンが "uri"、"Uri"、"urn"、"Urn"、"url"、または "Url" に等しいかどうかを確認します。 一致するものがある場合、このルールは、パラメーターが URI (uniform resource identifier) を表すことを前提としています。 URI の文字列表現は解析エラーやエンコーディング エラーが発生しやすく、セキュリティ上の脆弱性の原因となる場合があります。 メソッドが URI の文字列表現を受け取る場合は、対応するオーバーロードを指定して、 <xref:System.Uri>クラスのインスタンスを取得する必要があります。これにより、これらのサービスが安全かつ安全な方法で提供されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を解決するには、パラメーターを変更、<xref:System.Uri>種類です。 これは、互換性に影響する変更。 受け取るメソッドのオーバー ロードを代わりに、提供、<xref:System.Uri>パラメーターです。 これは互換性に影響しない変更です。
+この規則違反を修正するには、パラメーターを<xref:System.Uri>型に変更します。これは互換性に影響する変更です。 または、パラメーターを<xref:System.Uri>受け取るメソッドのオーバーロードを指定します。これは、非互換性に影響する変更です。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-パラメーターが URI を表していない場合、この規則による警告を抑制するのには安全です。
+パラメーターが URI を表さない場合、この規則からの警告を抑制するのは安全です。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1054.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (デザイン) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
 ## <a name="example"></a>例
 
-次の例は、型`ErrorProne`、このルールとの種類に違反する`SaferWay`ルールを満たします。
+次の例は、この規則`ErrorProne`に違反する型と、規則を満たす`SaferWay`型を示しています。
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1054-uri-parameters-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1054-uri-parameters-should-not-be-strings_1.vb)]
@@ -72,7 +72,7 @@ dotnet_code_quality.ca1054.api_surface = private, internal
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA 1056:URI のプロパティには、文字列がすることはできません。](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
-- [CA 1055:URI 戻り値は文字列をすることはできません。](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-- [CA2234:文字列の代わりに System.Uri オブジェクトを渡します](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA 1057:文字列 URI オーバー ロードは、System.Uri オーバー ロードを呼び出す](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1056URI プロパティを文字列にすることはできません](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+- [CA1055URI 戻り値を文字列にすることはできません](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+- [CA2234文字列ではなく、システムの Uri オブジェクトを渡す](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
+- [CA1057文字列 URI のオーバーロードは、システムの Uri のオーバーロードを呼び出します](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

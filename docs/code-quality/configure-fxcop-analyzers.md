@@ -9,23 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0152ae9f76ea1318f717c41a70d3d46351c9021a
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300609"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551144"
 ---
 # <a name="configure-fxcop-analyzers"></a>FxCop アナライザーの構成
 
-[FxCop アナライザー](install-fxcop-analyzers.md)は、静的コード分析から、Roslyn アナライザーに変換された最も重要な "FxCop" ルールで構成されています。 FxCop コードアナライザーは、次の2つの方法で構成できます。
+[Fxcop アナライザー](install-fxcop-analyzers.md)は、レガシ分析からの最も重要な "fxcop" ルールで構成され、.NET Compiler Platform ベースのコードアナライザーに変換されます。 FxCop コードアナライザーは、次の2つの方法で構成できます。
 
 - ルール[セット](#fxcop-analyzer-rule-sets)を使用して、ルールを有効または無効にしたり、個々のルール違反の重大度を設定したりできます。
 
 - [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet パッケージのバージョン2.6.3 から、 [editorconfig ファイル](#editorconfig-file)を介して開始します。 [構成可能なオプション](fxcop-analyzer-options.md)を使用すると、コードベースのどの部分を分析するかを調整できます。
 
 > [!TIP]
-> FxCop 静的コード分析と FxCop アナライザーの違いについては、「 [fxcop アナライザー](fxcop-analyzers-faq.md)に関する FAQ」を参照してください。
+> レガシ分析と FxCop アナライザーの違いについては、「 [fxcop アナライザー](fxcop-analyzers-faq.md)に関する FAQ」を参照してください。
 
 ## <a name="fxcop-analyzer-rule-sets"></a>FxCop アナライザーのルールセット
 
@@ -42,7 +42,7 @@ FxCop analyzer NuGet パッケージには、次の規則カテゴリの定義�
 - セキュリティ
 - 使い方
 
-詳細については、 [Roslyn アナライザーのルールセット](analyzer-rule-sets.md)に関する説明を参照してください。
+詳細については、「[コードアナライザーの規則セット](analyzer-rule-sets.md)」を参照してください。
 
 ## <a name="editorconfig-file"></a>EditorConfig ファイル
 
@@ -90,7 +90,7 @@ FxCop analyzer NuGet パッケージには、次の規則カテゴリの定義�
 4. プロジェクトを再度読み込みます。
 
 > [!NOTE]
-> Editorconfig ファイルを使用して、従来の FxCop 規則 (静的コード分析 FxCop) を構成することはできません。
+> Editorconfig ファイルを使用して、従来の FxCop 規則を構成することはできません。
 
 ## <a name="option-scopes"></a>オプションスコープ
 

@@ -1,6 +1,6 @@
 ---
-title: '方法: プログラムによって Word 文書にテキストを挿入します。'
-ms.date: 02/02/2017
+title: '方法: プログラムによって Word 文書にテキストを挿入する'
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8ff5e0314e9834bd3d0f048bc82780d7e4af073d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412582"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551803"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>方法: プログラムによって Word 文書にテキストを挿入します。
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>方法: プログラムによって Word 文書にテキストを挿入する
   Microsoft Office Word の文書にテキストを挿入するには、主に次の 3 つの方法があります。
 
 - 範囲内にテキストを挿入する。
@@ -33,11 +33,13 @@ ms.locfileid: "63412582"
 - <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> オブジェクトの <xref:Microsoft.Office.Interop.Word.Selection> メソッドを使用して、カーソルの位置または選択範囲にテキストを挿入する。
 
 > [!NOTE]
-> テキストをコンテンツ コントロールやブックマークに挿入することもできます。 詳細については、次を参照してください。[コンテンツ コントロール](../vsto/content-controls.md)と[Bookmark コントロール](../vsto/bookmark-control.md)します。
+> テキストをコンテンツ コントロールやブックマークに挿入することもできます。 詳細については、「[コンテンツコントロール](../vsto/content-controls.md)と[ブックマークコントロール](../vsto/bookmark-control.md)」を参照してください。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="insert-text-in-a-range"></a>範囲にテキストを挿入します。
+[!include[Add-ins note](includes/addinsnote.md)]
+
+## <a name="insert-text-in-a-range"></a>範囲内にテキストを挿入する
  <xref:Microsoft.Office.Interop.Word.Range.Text%2A> オブジェクトの <xref:Microsoft.Office.Interop.Word.Range> プロパティを使用して、文書にテキストを挿入します。
 
 ### <a name="to-insert-text-in-a-range"></a>範囲内にテキストを挿入するには
@@ -59,7 +61,7 @@ ms.locfileid: "63412582"
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]
 
-## <a name="replace-text-in-a-range"></a>範囲内のテキストを置換します。
+## <a name="replace-text-in-a-range"></a>範囲内のテキストの置換
  指定した範囲にテキストが含まれている場合は、範囲内のすべてのテキストが挿入したテキストで置換されます。
 
 ### <a name="to-replace-text-in-a-range"></a>範囲内のテキストを置換するには
@@ -86,7 +88,7 @@ ms.locfileid: "63412582"
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]
 
-## <a name="insert-text-using-typetext"></a>TypeText を使用してテキストを挿入します。
+## <a name="insert-text-using-typetext"></a>TypeText を使用してテキストを挿入する
  <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> メソッドは、選択範囲にテキストを挿入します。 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> の動作は、ユーザーのコンピューターで設定されているオプションによって異なります。 次のプロシージャのコードは、 <xref:Microsoft.Office.Interop.Word.Selection> オブジェクト変数を宣言し、 **Overtype** オプションがオンになっている場合はオフにします。 **Overtype** オプションが有効になっていると、カーソル位置の隣にあるテキストが上書きされます。
 
 ### <a name="to-insert-text-using-the-typetext-method"></a>TypeText メソッドを使用してテキストを挿入するには
@@ -118,7 +120,7 @@ ms.locfileid: "63412582"
     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]
 
-   使用することも、<xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A>のメソッド、<xref:Microsoft.Office.Interop.Word.Selection>の機能を模倣するオブジェクト、 **Backspace**キーボードのキー。 ただし、テキストの挿入および操作については、<xref:Microsoft.Office.Interop.Word.Range> オブジェクトの方がより細かく制御できます。
+   また、 <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> <xref:Microsoft.Office.Interop.Word.Selection>オブジェクトのメソッドを使用することもできます。このメソッドは、キーボードの**Backspace**キーの機能を模倣しています。 ただし、テキストの挿入および操作については、<xref:Microsoft.Office.Interop.Word.Range> オブジェクトの方がより細かく制御できます。
 
    完全なコード例を次に示します。 この例を使用するには、プロジェクトの `ThisDocument` クラスか `ThisAddIn` クラスからコードを実行します。
 
@@ -126,6 +128,6 @@ ms.locfileid: "63412582"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]
 
 ## <a name="see-also"></a>関連項目
-- [方法: プログラムによって文書でテキストの書式設定](../vsto/how-to-programmatically-format-text-in-documents.md)
-- [方法: プログラムで定義し、ドキュメントで範囲を選択します](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [方法: プログラムによってドキュメント内の範囲を拡張します。](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [方法: プログラムによって文書内のテキストを書式設定する](../vsto/how-to-programmatically-format-text-in-documents.md)
+- [方法: プログラムによってドキュメント内の範囲を定義および選択する](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [方法: プログラムによってドキュメント内の範囲を拡張する](../vsto/how-to-programmatically-extend-ranges-in-documents.md)

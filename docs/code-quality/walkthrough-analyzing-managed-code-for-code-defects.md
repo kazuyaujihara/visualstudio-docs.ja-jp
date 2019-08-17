@@ -1,5 +1,5 @@
 ---
-title: コードをマネージ コードの欠陥のチュートリアルの分析 |Microsoft Docs
+title: コード障害のためのマネージコードの分析のチュートリアル |Microsoft Docs
 ms.date: 01/29/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,32 +10,32 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3a2ce9b719f77377abf5b2bebd81b03a2606258b
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: 4a00fdb2a41a03554113f2ecb626185aab2c74d5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195304"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547998"
 ---
-# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>チュートリアル: コードの欠陥を検索する静的コード分析の使用
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>チュートリアル: 静的コード分析を使用してコード障害を検出する
 
-このチュートリアルでは、コード分析ツールを使用してマネージ プロジェクトのコードの不具合を分析します。
+このチュートリアルでは、従来のコード分析を使用して、マネージプロジェクトのコード障害を分析します。
 
-このチュートリアルでは、静的コード分析を使用して、.NET デザイン ガイドラインへの適合性、.NET マネージ コード アセンブリを分析するプロセスを手順します。
+この記事では、.NET のデザインガイドラインに準拠するために、レガシ分析を使用して .NET マネージコードアセンブリを分析するプロセスについて説明します。
 
-## <a name="create-a-class-library"></a>クラス ライブラリを作成します。
+## <a name="create-a-class-library"></a>クラスライブラリを作成する
 
 ### <a name="to-create-a-class-library"></a>クラス ライブラリを作成するには
 
 1. **[ファイル]** メニューで、 **[新規]**  >  **[プロジェクト]** の順に選択します。
 
-1. **新しいプロジェクト** ダイアログ ボックスで、展開**インストール済み** > **Visual c#** を選び、 **Windows デスクトップ**します。
+1. **[新しいプロジェクト]** ダイアログボックスで、[**インストールされ** > た**ビジュアルC#** ] を展開し、 **[Windows デスクトップ]** を選択します。
 
-1. 選択、**クラス ライブラリ (.NET Framework)** テンプレート。
+1. **[クラスライブラリ (.NET Framework)]** テンプレートを選択します。
 
-1. **名前**テキスト ボックスに「 **CodeAnalysisManagedDemo**順にクリックします**OK**します。
+1. **[名前]** テキストボックスに「 **CodeAnalysisManagedDemo** 」と入力し、[ **OK]** をクリックします。
 
-1. プロジェクトを作成すると後で開く、 *Class1.cs*ファイル。
+1. プロジェクトが作成されたら、 *Class1.cs*ファイルを開きます。
 
 1. Class1.cs の既存のテキストを次のコードに置き換えます。
 
@@ -55,107 +55,107 @@ ms.locfileid: "67195304"
 
 1. Class1.cs ファイルを保存します。
 
-## <a name="analyze-the-project"></a>プロジェクトを分析します。
+## <a name="analyze-the-project"></a>プロジェクトを分析する
 
-### <a name="to-analyze-a-managed-project-for-code-defects"></a>マネージ プロジェクトのコードの不具合を分析するには
+### <a name="to-analyze-a-managed-project-for-code-defects"></a>マネージプロジェクトでコード障害を分析するには
 
-1. プロジェクトを CodeAnalysisManagedDemo 選択**ソリューション エクスプ ローラー**します。
+1. **ソリューションエクスプローラー**で CodeAnalysisManagedDemo プロジェクトを選択します。
 
 1. **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
-     CodeAnalysisManagedDemo プロパティ ページが表示されます。
+     [CodeAnalysisManagedDemo のプロパティ] ページが表示されます。
 
-1. 選択、**コード分析**タブ。
+1. **[コード分析]** タブをクリックします。
 
-1. 必ず**ビルドに対するコード分析を有効にする**がチェックされます。
+1. **[ビルドでコード分析を有効に**する] チェックボックスがオンになっていることを確認します。
 
-1. **この規則セットを実行**ドロップダウン リストで、 **Microsoft のすべてのルール**します。
+1. **[この規則セットを実行]** ドロップダウンリストで、 **[Microsoft すべての規則]** を選択します。
 
-1. **ファイル** メニューのをクリックして**選択した項目の保存**、プロパティ ページを閉じます。
+1. **[ファイル]** メニューの **[選択した項目を保存]** をクリックし、プロパティページを閉じます。
 
-1. **ビルド** メニューのをクリックして**ビルド CodeAnalysisManagedDemo**します。
+1. **[ビルド]** メニューの **[CodeAnalysisManagedDemo のビルド]** をクリックします。
 
-    CodeAnalysisManagedDemo プロジェクトのビルド警告が表示されます、**エラー一覧**と**出力**windows。
+    CodeAnalysisManagedDemo プロジェクトビルドの警告は、 **[エラー一覧]** ウィンドウと **[出力]** ウィンドウに表示されます。
 
-## <a name="correct-the-code-analysis-issues"></a>コード分析の問題を修正します。
+## <a name="correct-the-code-analysis-issues"></a>コード分析の問題を修正する
 
-### <a name="to-correct-code-analysis-rule-violations"></a>コード分析規則違反を修正するには
+### <a name="to-correct-code-analysis-rule-violations"></a>コード分析規則の違反を修正するには
 
-1. **ビュー** ] メニューの [選択**エラー一覧**します。
+1. **[表示]** メニューの **[エラー一覧]** をクリックします。
 
-    選択した開発者のプロファイルによってをポイントする必要があります**その他の Windows**で、**ビュー** ] メニューの [選び、**エラー一覧**。
+    選択した開発者プロファイルによっては、 **[表示]** メニューの **[その他のウィンドウ]** をポイントし、 **[エラー一覧]** を選択しなければならない場合があります。
 
 1. **ソリューション エクスプローラー**で、 **[すべてのファイルを表示]** をクリックします。
 
-1. [プロパティ] ノードを展開し、開きます、 *AssemblyInfo.cs*ファイル。
+1. [プロパティ] ノードを展開し、 *AssemblyInfo.cs*ファイルを開きます。
 
-1. 警告を修正するのに、次のヒントを使用します。
+1. 警告を修正するには、次のヒントを使用します。
 
-   [CA 1014:アセンブリに CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md):Microsoft.Design: 'demo' は、CLSCompliantAttribute でマークする必要があり、その値を true にする必要があります。
+   [CA1014アセンブリに CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)を設定します。Microsoft Design: ' demo ' は CLSCompliantAttribute でマークする必要があり、その値は true である必要があります。
 
-   1. コードを追加`using System;`AssemblyInfo.cs ファイルにします。
+   1. AssemblyInfo.cs ファイルに`using System;`コードを追加します。
 
-   1. 次に、コードを追加`[assembly: CLSCompliant(true)]`AssemblyInfo.cs ファイルの末尾にします。
+   1. 次に、コード`[assembly: CLSCompliant(true)]`を AssemblyInfo.cs ファイルの末尾に追加します。
 
-   [CA 1032:標準例外コンス トラクターを実装](../code-quality/ca1032-implement-standard-exception-constructors.md):Microsoft.Design:このクラスに次のコンス トラクターを追加しますパブリック demo(String)。
+   [CA1032標準の例外コンストラクター](../code-quality/ca1032-implement-standard-exception-constructors.md)を実装します。Microsoft の設計:このクラスに次のコンストラクターを追加します: public demo (String)
 
-   1. コンス トラクターを追加`public demo (String s) : base(s) { }`クラスに`demo`します。
+   1. コンストラクター `public demo (String s) : base(s) { }`をクラス`demo`に追加します。
 
-   [CA 1032:標準例外コンス トラクターを実装](../code-quality/ca1032-implement-standard-exception-constructors.md):Microsoft.Design:このクラスに次のコンス トラクターを追加しますパブリックのデモ (String, 例外)。
+   [CA1032標準の例外コンストラクター](../code-quality/ca1032-implement-standard-exception-constructors.md)を実装します。Microsoft の設計:このクラスに次のコンストラクターを追加します: public demo (String, Exception)
 
-   1. コンス トラクターを追加`public demo (String s, Exception e) : base(s, e) { }`クラスに`demo`します。
+   1. コンストラクター `public demo (String s, Exception e) : base(s, e) { }`をクラス`demo`に追加します。
 
-   [CA 1032:標準例外コンス トラクターを実装](../code-quality/ca1032-implement-standard-exception-constructors.md):Microsoft.Design:このクラスに次のコンス トラクターを追加しますデモ (SerializationInfo, StreamingContext) の保護。
+   [CA1032標準の例外コンストラクター](../code-quality/ca1032-implement-standard-exception-constructors.md)を実装します。Microsoft の設計:このクラスに次のコンストラクターを追加します: protected demo (SerializationInfo, StreamingContext)
 
-   1. コードを追加`using System.Runtime.Serialization;`Class1.cs ファイルの先頭にします。
+   1. Class1.cs ファイルの`using System.Runtime.Serialization;`先頭にコードを追加します。
 
-   1. 次に、コンス トラクターを追加します。 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+   1. 次に、コンストラクターを追加します。`protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
-   [CA 1032:標準例外コンス トラクターを実装](../code-quality/ca1032-implement-standard-exception-constructors.md):Microsoft.Design:このクラスに次のコンス トラクターを追加しますパブリック demo()。
+   [CA1032標準の例外コンストラクター](../code-quality/ca1032-implement-standard-exception-constructors.md)を実装します。Microsoft の設計:このクラスに次のコンストラクターを追加します: public demo ()
 
-   1. コンス トラクターを追加`public demo () : base() { }`クラスに`demo`**します。**
+   1. コンストラクター `public demo () : base() { }`をクラス`demo`に追加**します。**
 
-   [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります](../code-quality/ca1709-identifiers-should-be-cased-correctly.md):Microsoft.Naming:'TestCode' に変更することによって空間' プログラム名' の大文字と小文字を修正します。
+   [CA1709識別子は、大文字](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)と小文字が正しく区別されます。Microsoft. 名前付け:' Testcode ' に変更して、名前空間名 ' testCode ' の大文字と小文字を修正してください。
 
-   1. 名前空間の大文字と小文字を変更する`testCode`に`TestCode`します。
+   1. 名前空間`testCode`の大文字と小`TestCode`文字の区別をに変更します。
 
-   [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります](../code-quality/ca1709-identifiers-should-be-cased-correctly.md):Microsoft.Naming:型名 'demo' の大文字と小文字を修正するには、"Demo"に変更すること。
+   [CA1709識別子は、大文字](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)と小文字が正しく区別されます。Microsoft. 名前付け:' Demo ' に変更して、型名 ' demo ' の大文字と小文字の指定を訂正してください。
 
-   1. メンバーの名前を変更`Demo`します。
+   1. メンバーの名前をに`Demo`変更します。
 
-   [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります](../code-quality/ca1709-identifiers-should-be-cased-correctly.md):Microsoft.Naming:'Item' に変更することによって、メンバー名 'item' の大文字と小文字を修正します。
+   [CA1709識別子は、大文字](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)と小文字が正しく区別されます。Microsoft. 名前付け:' Item ' に変更して、メンバー名 ' item ' の大文字と小文字の指定を訂正してください。
 
-   1. メンバーの名前を変更`Item`します。
+   1. メンバーの名前をに`Item`変更します。
 
-   [CA1710:識別子は正しいサフィックスを含むこと](../code-quality/ca1710-identifiers-should-have-correct-suffix.md):Microsoft.Naming:'Exception' の末尾に 'testCode.demo' の名前を変更します。
+   [CA1710識別子には正しいサフィックス](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)が必要です。Microsoft. 名前付け:' TestCode. demo ' の名前を ' Exception ' で終わるように変更します。
 
-   1. クラスとそのコンス トラクターの名前を変更`DemoException`します。
+   1. クラスの名前とそのコンストラクターをに`DemoException`変更します。
 
-   [CA 2210:アセンブリが有効な厳密な名前](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md):'CodeAnalysisManagedDemo' は、厳密な名前のキーで署名します。
+   [CA2210アセンブリには有効な厳密](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)な名前が必要です。厳密な名前のキーを使用して ' CodeAnalysisManagedDemo ' に署名します。
 
-   1. **プロジェクト**] メニューの [選択**CodeAnalysisManagedDemo プロパティ**します。
+   1. **[プロジェクト]** メニューの **[CodeAnalysisManagedDemo のプロパティ]** をクリックします。
 
       プロジェクトのプロパティが表示されます。
 
    1. **[署名]** タブを選択します。
 
-   1. 選択、**アセンブリに署名**チェック ボックスをオンします。
+   1. **[アセンブリの署名]** チェックボックスをオンにします。
 
-   1. **厳密な名前キー ファイルを選択**一覧で、[ **\<新規作成] >** します。
+   1. [**文字列名キーファイルを選択**してください] ボックスの一覧で、[新規] を選択 **\<します。>** 。
 
-      **厳密な名前キーの作成** ダイアログ ボックスが表示されます。
+      **[厳密な名前キーの作成]** ダイアログボックスが表示されます。
 
-   1. **キー ファイル名**TestKey を入力します。
+   1. **[キーファイル名]** に「testkey」と入力します。
 
-   1. パスワードを入力し、 **OK**します。
+   1. パスワードを入力し、[ **OK]** を選択します。
 
-   1. **ファイル**] メニューの [選択**選択した項目の保存**、プロパティ ページを閉じます。
+   1. **ファイル** メニューの **選択した項目の保存** をクリックし、プロパティページ を閉じます。
 
-   [CA2237:ISerializable 型を SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md):Microsoft.Usage:この型が ISerializable を実装している 'デモ' を入力する [Serializable] 属性を追加します。
+   [CA2237:ISerializable 型を SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)に設定します。Microsoft. 使用法:この型が ISerializable を実装しているため、型 ' demo ' に [Serializable] 属性を追加します。
 
-   1. 追加、`[Serializable ()]`属性をクラス`demo`します。
+   1. 属性をクラス`demo`に追加します。 `[Serializable ()]`
 
-   変更を完了した後、次のよう Class1.cs ファイルになります。
+   変更が完了すると、Class1.cs ファイルは次のようになります。
 
    ```csharp
    using System;
@@ -180,18 +180,18 @@ ms.locfileid: "67195304"
 
 1. プロジェクトをリビルドします。
 
-## <a name="exclude-code-analysis-warnings"></a>コード分析の警告を除外します。
+## <a name="exclude-code-analysis-warnings"></a>コード分析の警告を除外する
 
-1. 残りの警告のそれぞれについて、次の操作を行います。
+1. 残りの各警告について、次の操作を行います。
 
-    1. 警告を選択して、**エラー一覧**します。
+    1. **エラー一覧**で警告を選択します。
 
-    1. 右クリック メニュー (コンテキスト メニュー) では、次のように選択します。**抑制** > **抑制ファイル内**します。
+    1. 右クリックメニュー (コンテキストメニュー) で、[**抑制ファイルで** **非** > 表示にする] を選択します。
 
 1. プロジェクトをリビルドします。
 
-     プロジェクトは、警告やエラーなしでビルドします。
+     プロジェクトがビルドされ、警告やエラーは発生しません。
 
 ## <a name="see-also"></a>関連項目
 
-[マネージ コードのコード分析](../code-quality/code-analysis-for-managed-code-overview.md)
+[マネージコードのコード分析](../code-quality/code-analysis-for-managed-code-overview.md)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4dec35fb978b3c751e07cb6d0612ff5da27c74e5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037260"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551120"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop および FxCop アナライザーに関してよく寄せられる質問
 
@@ -31,27 +31,27 @@ FxCop アナライザーは .NET Compiler Platform ("Roslyn") に基づいてい
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>[コード分析の実行] コマンドで FxCop アナライザーを実行できますか?
 
-いいえ。 **[分析]** > **[コード分析の実行]** を選択すると、スタティック コード分析または従来の FxCop が実行されます。 **[コード分析の実行]** は、Roslyn ベースの FxCop アナライザーを含む Roslyn ベースのアナライザーには何の影響もありません。
+No. [**実行コード分析**の**分析** > ] を選択すると、従来の分析が実行されます。 **[コード分析の実行]** は、Roslyn ベースの FxCop アナライザーを含む Roslyn ベースのアナライザーには何の影響もありません。
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild プロジェクト プロパティはアナライザーを実行しますか?
 
-いいえ。 (たとえば *.csproj* の) プロジェクト ファイル内の **RunCodeAnalysis** プロパティは、従来の FxCop を実行するためのみに使用します。 これは、**FxCopCmd.exe** を起動するビルド後の msbuild タスクを実行します。 これは、Visual Studio で **[分析]** > **[コード分析の実行]** を選択するのと同等です。
+No. (たとえば *.csproj* の) プロジェクト ファイル内の **RunCodeAnalysis** プロパティは、従来の FxCop を実行するためのみに使用します。 これは、**FxCopCmd.exe** を起動するビルド後の msbuild タスクを実行します。 これは、Visual Studio で **[分析]**  >  **[コード分析の実行]** を選択するのと同等です。
 
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>では FxCop アナライザーはどのように実行するのですか?
 
-FxCop アナライザーを実行するには、まずそれ用に [NuGet パッケージをインストール](install-fxcop-analyzers.md)します。 次いでプロジェクトまたはソリューションを Visual Studio または msbuild を使用してビルドします。 FxCop アナライザーが生成する警告やエラーは、**[エラー一覧]** またはコマンド ウィンドウに表示されます。
+FxCop アナライザーを実行するには、まずそれ用に [NuGet パッケージをインストール](install-fxcop-analyzers.md)します。 次いでプロジェクトまたはソリューションを Visual Studio または msbuild を使用してビルドします。 FxCop アナライザーが生成する警告やエラーは、 **[エラー一覧]** またはコマンド ウィンドウに表示されます。
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>FxCop アナライザーの NuGet パッケージをインストールした後でも警告 CA0507 を取得する
 
-FxCop アナライザーをインストールしても、"**"コード分析の実行は" 廃止され、ビルド時には FxCop アナライザーが実行されます**" という警告 CA0507 を引き続き取得する場合は、状況に応じて、プロジェクト ファイル内の **RunCodeAnalysis** msbuild プロパティを **false** に設定する必要があります。 それ以外の場合、静的コードの分析は、各ビルドの後に実行されます。
+FxCop アナライザーをインストールしても、" **"コード分析の実行は" 廃止され、ビルド時には FxCop アナライザーが実行されます**" という警告 CA0507 を引き続き取得する場合は、状況に応じて、プロジェクト ファイル内の **RunCodeAnalysis** msbuild プロパティを **false** に設定する必要があります。 それ以外の場合、レガシ分析は各ビルドの後に実行されます。
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
 
-## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>どのルールが FxCop アナライザーに移植されていますか。
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>FxCop アナライザーに移植されたルール
 
-移植された静的コード分析ルールに関する情報の[FxCop アナライザー](install-fxcop-analyzers.md)を参照してください[Fxcop ルールのポートの状態](fxcop-rule-port-status.md)します。
+[Fxcop アナライザー](install-fxcop-analyzers.md)に移植された従来の分析ルールの詳細については、「 [fxcop rule port status](fxcop-rule-port-status.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

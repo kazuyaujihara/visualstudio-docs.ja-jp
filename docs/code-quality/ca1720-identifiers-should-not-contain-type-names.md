@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c596ddfa36beec696c275ea13b662ceebf8bde2c
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a35bec2395ccec649443df71e87904c71bf635d8
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841794"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547097"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720:識別子には型名を含めないでください
 
@@ -32,19 +32,19 @@ ms.locfileid: "65841794"
 
 ## <a name="cause"></a>原因
 
-メンバーのパラメーターの名前には、データ型の名前が含まれています。
+メンバー内のパラメーターの名前にデータ型の名前が含まれています。
 
-- または -
+\- または -
 
-メンバーの名前には、言語固有のデータ型の名前が含まれています。
+メンバーの名前には、言語固有のデータ型名が含まれています。
 
-既定では、このルールだけを確認、外部から参照できるメンバーが、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できるメンバーだけを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-パラメーターおよびメンバーの名前は、その意味は、開発ツールが提供する予定されている、型を説明するよりもを通信に使用される向上します。 データ型の名前を使用する場合は、メンバーの名前は、言語固有ではなく、言語に依存しない名前を使用します。 例については、代わりに、C#型名`int`、使用言語に依存しないデータ型の名前、`Int32`します。
+パラメーターとメンバーの名前は、開発ツールによって提供されると予想される型を記述するよりも、その意味を伝えるために使用する方が適切です。 メンバーの名前については、データ型名を使用する必要がある場合は、言語固有の名前ではなく、言語に依存しない名前を使用します。 たとえば、 C#型名`int`の代わりに、言語に依存しないデータ型名を`Int32`使用します。
 
-各トークンのパラメーターまたはメンバーの名前は、大文字と小文字で、次の言語に固有のデータ型名に対してチェックされます。
+パラメーターまたはメンバーの名前に含まれる各個別トークンは、大文字と小文字を区別せずに、次の言語固有のデータ型名に対してチェックされます。
 
 - Bool
 - WChar
@@ -61,13 +61,13 @@ ms.locfileid: "65841794"
 - 符号なし
 - 符号付き
 - Float
-- float32
-- float64
+- Float32
+- Float64
 
-さらに、パラメーターの名前もチェックされます、次の言語に依存しないデータ型名に対して大文字と小文字。
+さらに、パラメーターの名前は、大文字と小文字を区別せずに、次の言語に依存しないデータ型名に対してもチェックされます。
 
 - Object
-- obj
+- Obj
 - ブール型
 - Char
 - String
@@ -81,7 +81,7 @@ ms.locfileid: "65841794"
 - Int64
 - UInt64
 - IntPtr
-- ptr
+- ポインター
 - ポインター
 - UInptr
 - UPtr
@@ -93,31 +93,31 @@ ms.locfileid: "65841794"
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-**場合は、パラメーターに対して起動します。**
+**パラメーターに対してが発生した場合:**
 
-パラメーターの名前のデータ型識別子をその意味をより詳しく説明している用語をまたは 'value' などの汎用的な用語のいずれかに置き換えます。
+パラメーターの名前に含まれるデータ型識別子を、その意味またはより汎用的な用語 (' value ' など) により適切に記述された用語で置き換えます。
 
-**メンバーに対して起動: 場合**
+**メンバーに対して起動される場合:**
 
-その意味、言語に依存しないに相当する、または 'value' などの汎用的な用語をより詳しく説明している用語を言語に固有のデータ型識別子、メンバーの名前に置き換えます。
+メンバー名に含まれる言語固有のデータ型識別子を、その意味、言語に依存しないもの、または一般的な用語 (' value ' など) をより詳細に記述した用語で置き換えます。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-型に基づくパラメーターおよびメンバーの名前は、適切な可能性があります。 ただし、新規の開発、されていないシナリオが発生する、この規則による警告を抑制する必要があります。 以前に出荷されたライブラリでは、この規則による警告を抑制する必要があります。
+型ベースのパラメーターとメンバー名をときどき使用することが適切な場合があります。 ただし、新しい開発では、この規則による警告を抑制する必要がある既知のシナリオはありません。 以前に出荷されたライブラリについては、このルールからの警告を抑制することが必要になる場合があります。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1720.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (名前付け) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (名前付け) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708:識別子は、ケース以外で相違させる必要があります。](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-- [CA 1707:識別子はアンダー スコアを含めることはできません。](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1719:パラメーター名は、メンバー名と一致する必要があります。](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+- [CA1709識別子は正しく使用する必要があります](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708識別子の大文字と小文字の区別が異なる場合](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707識別子にアンダースコアを含めることはできません](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA1719パラメーター名はメンバー名と同一にすることはできません](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

@@ -1,5 +1,5 @@
 ---
-title: 有効にするか、コード分析を無効にします。
+title: コード分析を有効または無効にする
 ms.date: 10/25/2018
 ms.topic: conceptual
 author: gewarren
@@ -7,31 +7,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4878c25021d87e91f6a575d11a876d7aac2455d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec0a8a3f04830115d343fcef611cfbd338163395
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816244"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551039"
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>方法: 有効にして、マネージ コードの自動コード分析を無効にします。
+# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>方法: マネージコードの自動コード分析を有効または無効にする
 
-マネージ コード プロジェクトのビルドのたびに実行する (静的) のコード分析を構成することができます。 別のコードに各ビルド構成に対して分析プロパティを設定などのデバッグおよびリリースします。
+マネージコードプロジェクトの各ビルドの後に実行するように (静的) コード分析を構成できます。 デバッグやリリースなど、ビルド構成ごとに異なるコード分析プロパティを設定できます。
 
-この記事はのみに静的コード分析といないライブ コード分析を使用して適用されます[Roslyn コード アナライザー](roslyn-analyzers-overview.md)します。
+この記事は、[コードアナライザー](roslyn-analyzers-overview.md)を使用した、ライブコード分析ではなく、レガシ分析にのみ適用されます。
 
 ## <a name="to-enable-or-disable-automatic-code-analysis"></a>自動コード分析を有効または無効にするには
 
 1. **ソリューション エクスプ ローラー** で、プロジェクトを右クリックし、**プロパティ**を選択します。
 
-1. プロジェクトのプロパティ ダイアログ ボックスで、選択、**コード分析**タブ。
+1. プロジェクトの プロパティ ダイアログボックスで、**コード分析** タブを選択します。
 
    > [!TIP]
-   > 新しいプロジェクトの種類など、.NET Core と .NET Standard のアプリケーションはありません、**コード分析**タブ。静的コード分析はこれらのプロジェクトの種類を使用できませんが、ライブ コード分析を使用して取得できます[Roslyn コード アナライザー](roslyn-analyzers-overview.md)します。 Roslyn コード アナライザーからの警告を抑制するのには、この記事の最後にあるメモを参照してください。
+   > .NET Core や .NET Standard アプリケーションなどの新しいプロジェクトの種類には、 **[コード分析]** タブがありません。レガシ分析は、これらの種類のプロジェクトでは使用できませんが、 [.NET Compiler Platform ベースのコードアナライザー](roslyn-analyzers-overview.md)を使用してライブコード分析を行うことができます。 コードアナライザーからの警告を非表示にするには、この記事の最後にあるメモを参照してください。
 
 1. **プラットフォーム** の **構成およびターゲット プラットフォーム** でビルドの種類を指定します。
 
 1. 自動コード分析を有効または無効にするには、**ビルドに対するコード分析を有効にする**のチェック ボックスをオンまたはオフします。
 
 > [!NOTE]
-> **ビルドに対するコード分析を有効にする** チェック ボックスでは、静的コード分析のみに影響します。 影響しない[Roslyn コード アナライザー](roslyn-analyzers-overview.md)、NuGet パッケージとしてインストールした場合、ビルドで常に実行します。 アナライザー エラーをクリアする場合、**エラー一覧**を選択して、現在のすべての違反を抑制する**分析** > **コード分析を実行し、アクティブな抑制問題**メニュー バーでします。 詳細については、次を参照してください。[違反を抑制する](use-roslyn-analyzers.md#suppress-violations)します。
+> **[ビルドでコード分析を有効にする]** チェックボックスは、レガシ分析にのみ影響します。 [.NET Compiler Platform ベースのコードアナライザー](roslyn-analyzers-overview.md)には影響しません。 NuGet パッケージとしてインストールした場合は、常にビルドで実行されます。 **エラー一覧**からアナライザーのエラーをクリアする場合は、メニューバーの [**実行コード分析を** **分析** > し、アクティブな問題を抑制する] を選択して、現在のすべての違反を抑制することができます。 詳細については、「[違反の抑制](use-roslyn-analyzers.md#suppress-violations)」を参照してください。

@@ -1,6 +1,6 @@
 ---
-title: '方法: プログラムによって電子メールを送信します。'
-ms.date: 02/02/2017
+title: '方法: プログラムによる電子メールの送信'
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,17 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72d033add2ba8320b14eebd5af700ab225d34410
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961889"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551756"
 ---
-# <a name="how-to-programmatically-send-email"></a>方法: プログラムによって電子メールを送信します。
-  この例は、ドメイン名を持つ連絡先に電子メール メッセージを送信**example.com**が電子メール アドレス。
+# <a name="how-to-programmatically-send-email"></a>方法: プログラムによる電子メールの送信
+  この例では、電子メールアドレスにドメイン名**example.com**がある連絡先に電子メールメッセージを送信します。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="example"></a>例
  [!code-csharp[Trin_OL_ProgramEmail#1](../vsto/codesnippet/CSharp/Trin_OL_ProgramEMail/thisaddin.cs#1)]
@@ -33,13 +35,13 @@ ms.locfileid: "62961889"
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例で必要な要素は次のとおりです。
 
-- ドメイン名を持つ連絡先**example.com**が電子メール アドレス。
+- メールアドレスにドメイン名が**example.com**されている連絡先。
 
 ## <a name="robust-programming"></a>信頼性の高いプログラミング
- ドメイン名を検索するフィルターのコードを削除しないで**example.com**します。 ソリューションが、フィルターを削除する場合は、すべての連絡先に電子メール メッセージを送信します。
+ ドメイン名**example.com**を検索するフィルターコードは削除しないでください。 フィルターを削除すると、ソリューションからすべての連絡先に電子メールメッセージが送信されます。
 
 ## <a name="see-also"></a>関連項目
-- [メールの項目を操作します。](../vsto/working-with-mail-items.md)
-- [方法: プログラムによって電子メール アイテムを作成します。](../vsto/how-to-programmatically-create-an-e-mail-item.md)
-- [方法: プログラムによって Outlook の連絡先へのアクセスします。](../vsto/how-to-programmatically-access-outlook-contacts.md)
-- [方法: プログラムで電子メール メッセージを受信したときにアクションを実行します。](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [メールアイテムの操作](../vsto/working-with-mail-items.md)
+- [方法: プログラムによって電子メールアイテムを作成する](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+- [方法: プログラムによる Outlook の連絡先へのアクセス](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [方法: 電子メールメッセージを受信したときにプログラムによってアクションを実行する](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

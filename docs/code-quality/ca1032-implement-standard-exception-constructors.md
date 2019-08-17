@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad062154b8213d021c8c265aaf287d3a9335d0e4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4b294b267aa7bb1a2912ed42807ac0f878c87838
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922878"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547660"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032:標準例外コンストラクターを実装します
 
@@ -44,7 +44,7 @@ ms.locfileid: "68922878"
 
 - public NewException (文字列、例外)
 
-さらに、 [Roslyn ベースの fxcop アナライザー](../code-quality/roslyn-analyzers-overview.md)ではなく、従来の fxcop 静的コード分析を実行している場合、4番目のコンストラクターがないと、違反が発生します。
+さらに、 [.NET Compiler Platform ベースの fxcop アナライザー](../code-quality/roslyn-analyzers-overview.md)ではなく、従来の fxcop 分析を実行している場合、4番目のコンストラクターがないと、違反が発生します。
 
 - protected または private NewException (SerializationInfo、StreamingContext)
 

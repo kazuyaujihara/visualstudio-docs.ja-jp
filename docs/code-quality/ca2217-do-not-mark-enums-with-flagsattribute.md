@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe9b53a02f5a2c12b734c793557c69868a973e8
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 377188183acdaa9aa86ae3344c8f6d5727b82ccc
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841514"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546835"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217:列挙型を FlagsAttribute に設定しません
 
@@ -36,41 +36,41 @@ ms.locfileid: "65841514"
 
 ## <a name="cause"></a>原因
 
-列挙体が付いた<xref:System.FlagsAttribute>とが 1 つまたは 2 つ、またはその他の組み合わせの累乗でない多くの値が列挙型で値を定義します。
+列挙体はで<xref:System.FlagsAttribute>マークされ、列挙体の2つまたは複数の定義済みの値の組み合わせではない1つ以上の値を含んでいます。
 
-既定では、このルールだけを確認、外部から参照できる列挙体が、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できる列挙のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-列挙体である必要があります<xref:System.FlagsAttribute>列挙で定義されている各値の組み合わせまたは 2 の累乗が場合にのみ存在する値を定義します。
+列挙体で定義<xref:System.FlagsAttribute>されている各値が、定義された値の2つまたは組み合わせの累乗である場合にのみ、列挙が存在する必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、削除<xref:System.FlagsAttribute>列挙体から。
+この規則違反を修正するには、 <xref:System.FlagsAttribute>列挙体からを削除します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 この規則による警告は抑制しないでください。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca2217.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (使用) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (使用状況) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
 ## <a name="examples"></a>使用例
 
-次のコードは、列挙体`Color`3 の値を格納します。 3 は、2、または定義済みの値のいずれかの組み合わせのべき乗ではありません。 `Color`で列挙型をマークすることはできません<xref:System.FlagsAttribute>します。
+次のコードは、値 3 `Color`を含む列挙型を示しています。 3は2の累乗ではなく、定義された値の組み合わせでもありません。 列挙型をで<xref:System.FlagsAttribute>マークすることはできません。 `Color`
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-次のコードは、列挙体`Days`でマークされているの要件を満たしている<xref:System.FlagsAttribute>:
+次のコードは、で`Days` <xref:System.FlagsAttribute>マークされるの要件を満たす列挙型を示しています。
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]
@@ -78,7 +78,7 @@ dotnet_code_quality.ca2217.api_surface = private, internal
 
 ## <a name="related-rules"></a>関連するルール
 
-[CA1027:FlagsAttribute で列挙をマークします。](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027FlagsAttribute で列挙をマークする](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>関連項目
 

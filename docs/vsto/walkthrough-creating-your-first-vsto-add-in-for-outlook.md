@@ -1,6 +1,6 @@
 ---
-title: 'チュートリアル: 初めて VSTO アドイン Outlook の作成します。'
-ms.date: 02/02/2017
+title: 'チュートリアル: Outlook 用の初めての VSTO アドインを作成する'
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,17 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aceab3fba1020c08382c31a2de32368e8ba12a05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: baedd24b7eba14b3f2fa6496a7a681773b81cb9b
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981324"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547983"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>チュートリアル: 初めて VSTO アドイン Outlook の作成します。
-  このチュートリアルでは、Microsoft Office Outlook 用の VSTO アドインを作成する方法について説明します。 この種のソリューションに作成した機能は、どの Outlook 項目が開いているかにかかわらず、アプリケーション自体に対して使用できます。 詳細については、次を参照してください。 [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)します。
+# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>チュートリアル: Outlook 用の初めての VSTO アドインを作成する
+  このチュートリアルでは、Microsoft Office Outlook 用の VSTO アドインを作成する方法について説明します。 この種のソリューションに作成した機能は、どの Outlook 項目が開いているかにかかわらず、アプリケーション自体に対して使用できます。 詳細については、「 [Office ソリューション&#40;の&#41;開発の概要 VSTO](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
  このチュートリアルでは、次の作業について説明します。
 
@@ -66,12 +68,12 @@ ms.locfileid: "62981324"
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] により **FirstOutlookAddIn** プロジェクトが作成され、 **ThisAddIn** コード ファイルがエディターで開かれます。
 
-## <a name="write-code-that-adds-text-to-each-new-mail-message"></a>新しい各メール メッセージにテキストを追加するコードを記述します。
+## <a name="write-code-that-adds-text-to-each-new-mail-message"></a>各新しいメールメッセージにテキストを追加するコードを記述する
  次に、ThisAddIn コード ファイルにコードを追加します。 この新しいコードでは、Outlook のオブジェクト モデルを使用して、それぞれの新しいメール メッセージにテキストを追加します。 ThisAddIn コード ファイルには、次の生成されたコードが既定で含まれています。
 
-- `ThisAddIn` クラスの部分定義。 このクラスは、コードのエントリ ポイントを提供し、Outlook のオブジェクト モデルへのアクセスを提供します。 詳細については、次を参照してください。[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)します。`ThisAddIn` クラスの残りの部分は、変更することができない非表示のコード ファイルに定義されています。
+- `ThisAddIn` クラスの部分定義。 このクラスは、コードのエントリ ポイントを提供し、Outlook のオブジェクト モデルへのアクセスを提供します。 詳細については、「[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。`ThisAddIn` クラスの残りの部分は、変更することができない非表示のコード ファイルに定義されています。
 
-- `ThisAddIn_Startup` および `ThisAddIn_Shutdown` イベント ハンドラー。 これらのイベント ハンドラーは、Outlook が VSTO アドインを読み込むときとアンロードするときに呼び出されます。 これらのイベント ハンドラーを使用して、VSTO アドインを読み込むときに初期化し、VSTO アドインがアンロードされるときには使用したリソースをクリーンアップします。 詳細については、次を参照してください。 [Office プロジェクト内のイベント](../vsto/events-in-office-projects.md)します。
+- `ThisAddIn_Startup` および `ThisAddIn_Shutdown` イベント ハンドラー。 これらのイベント ハンドラーは、Outlook が VSTO アドインを読み込むときとアンロードするときに呼び出されます。 これらのイベント ハンドラーを使用して、VSTO アドインを読み込むときに初期化し、VSTO アドインがアンロードされるときには使用したリソースをクリーンアップします。 詳細については、「 [Office プロジェクトのイベント](../vsto/events-in-office-projects.md)」を参照してください。
 
 ### <a name="to-add-text-to-the-subject-and-body-of-each-new-mail-message"></a>新しい各メール メッセージの件名と本文にテキストを追加するには
 
@@ -96,16 +98,16 @@ ms.locfileid: "62981324"
 
 - `Application` クラスの `ThisAddIn` フィールド。 `Application` フィールドは Outlook の現在のインスタンスを表す <xref:Microsoft.Office.Interop.Outlook.Application> オブジェクトを返します。
 
-- `Inspector` イベントのイベント ハンドラーの <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> パラメーター。 `Inspector` パラメーターは、新しいメール メッセージのインスペクター ウィンドウを表す <xref:Microsoft.Office.Interop.Outlook.Inspector> オブジェクトです。 詳細については、次を参照してください。 [Outlook ソリューション](../vsto/outlook-solutions.md)します。
+- `Inspector` イベントのイベント ハンドラーの <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> パラメーター。 `Inspector` パラメーターは、新しいメール メッセージのインスペクター ウィンドウを表す <xref:Microsoft.Office.Interop.Outlook.Inspector> オブジェクトです。 詳細については、「 [Outlook solutions](../vsto/outlook-solutions.md)」を参照してください。
 
-## <a name="test-the-project"></a>プロジェクトをテストします。
+## <a name="test-the-project"></a>プロジェクトをテストする
  プロジェクトをビルドして実行し、新しいメール メッセージの件名と本文にテキストが表示されることを確認します。
 
 ### <a name="to-test-the-project"></a>プロジェクトをテストするには
 
 1. **F5** キーを押して、プロジェクトをビルドおよび実行します。
 
-     プロジェクトをビルドすると、プロジェクトのビルド出力フォルダーに含まれるアセンブリにコードがコンパイルされます。 さらに Visual Studio は、Outlook が VSTO アドインを検出して読み込めるようにする一連のレジストリ エントリを作成し、VSTO アドインを実行できるように開発用コンピューター上のセキュリティを設定します。 詳細については、次を参照してください。 [Office ソリューション ビルド処理の概要](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)します。
+     プロジェクトをビルドすると、プロジェクトのビルド出力フォルダーに含まれるアセンブリにコードがコンパイルされます。 さらに Visual Studio は、Outlook が VSTO アドインを検出して読み込めるようにする一連のレジストリ エントリを作成し、VSTO アドインを実行できるように開発用コンピューター上のセキュリティを設定します。 詳細については、「 [Office ソリューションビルド処理の概要](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)」を参照してください。
 
 2. Outlook で、新しいメール メッセージを作成します。
 
@@ -115,7 +117,7 @@ ms.locfileid: "62981324"
 
 4. Outlook を閉じます。
 
-## <a name="clean-up-the-project"></a>プロジェクトをクリーンアップします。
+## <a name="clean-up-the-project"></a>プロジェクトをクリーンアップする
  プロジェクトの開発が完了したら、VSTO アドイン アセンブリ、レジストリ エントリ、およびセキュリティ設定を開発用コンピューターから削除します。 そうしない場合、開発用コンピューターで Outlook を起動するたびに VSTO アドインが実行されます。
 
 ### <a name="to-clean-up-your-project"></a>プロジェクトをクリーンアップするには
@@ -125,20 +127,20 @@ ms.locfileid: "62981324"
 ## <a name="next-steps"></a>次の手順
  これで Outlook 用の基本的な VSTO アドインが作成されました。VSTO アドインの詳しい開発方法について、以下のトピックをご覧ください。
 
-- Outlook 用 VSTO アドインで実行できる一般的なプログラミング タスク。 詳細については、次を参照してください。[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)します。
+- Outlook 用 VSTO アドインで実行できる一般的なプログラミング タスク。 詳細については、「[プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。
 
-- Outlook のオブジェクト モデルの使用。 詳細については、次を参照してください。 [Outlook ソリューション](../vsto/outlook-solutions.md)します。
+- Outlook のオブジェクト モデルの使用。 詳細については、「 [Outlook solutions](../vsto/outlook-solutions.md)」を参照してください。
 
 - Outlook のユーザー インターフェイス (UI) のカスタマイズ (リボンへのカスタム タブの追加や独自のカスタム作業ウィンドウの作成など)。 詳細については、「[Office UI のカスタマイズ](../vsto/office-ui-customization.md)」を参照してください。
 
-- Outlook 用 VSTO アドインのビルドとデバッグ。 詳細については、次を参照してください。[ビルドの Office ソリューション](../vsto/building-office-solutions.md)します。
+- Outlook 用 VSTO アドインのビルドとデバッグ。 詳細については、「 [Office ソリューションのビルド](../vsto/building-office-solutions.md)」を参照してください。
 
-- Outlook 用 VSTO アドインの配置。 詳細については、次を参照してください。 [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
+- Outlook 用 VSTO アドインの配置。 詳細については、「 [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [VSTO アドインをプログラミングします。](../vsto/programming-vsto-add-ins.md)
+- [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)
 - [Outlook ソリューション](../vsto/outlook-solutions.md)
 - [Office UI のカスタマイズ](../vsto/office-ui-customization.md)
 - [Office ソリューションの構築](../vsto/building-office-solutions.md)
 - [Office ソリューションのデプロイ](../vsto/deploying-an-office-solution.md)
-- [Office プロジェクト テンプレートの概要](../vsto/office-project-templates-overview.md)
+- [Office プロジェクトテンプレートの概要](../vsto/office-project-templates-overview.md)

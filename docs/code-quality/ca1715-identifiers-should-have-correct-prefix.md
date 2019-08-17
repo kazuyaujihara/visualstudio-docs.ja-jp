@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ca9c4681cc19917ef965a4c8577e9559d71dd4be
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2a793f0a359cadc58c262861ee0495f92188d0b7
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841957"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547184"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715:識別子は正しいプレフィックスを含んでいなければなりません
 
@@ -32,35 +32,35 @@ ms.locfileid: "65841957"
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
 |Category|Microsoft.Naming|
-|互換性に影響する変更点|– インターフェイスで発生した場合。<br /><br /> 改行のジェネリック型パラメーターで発生したときにします。|
+|互換性に影響する変更点|中断-インターフェイスで発生した場合。<br /><br /> 非中断 (ジェネリック型パラメーターで発生した場合)。|
 
 ## <a name="cause"></a>原因
 
-インターフェイスの名前の先頭が大文字の 'I' でありません。
+インターフェイスの名前が大文字の ' I ' で始まっていません。
 
-- または -
+\- または -
 
-名前、[ジェネリック型パラメーター](/dotnet/csharp/programming-guide/generics/generic-type-parameters)型またはメソッドに値で始まらない大文字 ' T '。
+型またはメソッドの[ジェネリック型パラメーター](/dotnet/csharp/programming-guide/generics/generic-type-parameters)の名前の先頭に大文字の ' t ' は使用されません。
 
-既定では、このルールのみが検索で外部から参照できるインターフェイス、型、およびメソッドが、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できるインターフェイス、型、およびメソッドのみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-慣例により、特定のプログラミング要素の名前は固有のプレフィックスで開始します。
+慣例により、特定のプログラミング要素の名前は、特定のプレフィックスで始まります。
 
-インターフェイス名は、大文字、もう 1 つの大文字が続く 'I' で始める必要があります。 このルールは、'MyInterface' や 'IsolatedInterface' などのインターフェイス名の違反を報告します。
+インターフェイス名は、大文字の ' I ' で始まり、その後に別の大文字が続くものでなければなりません。 このルールは、' MyInterface ' や ' IsolatedInterface ' などのインターフェイス名の違反を報告します。
 
-ジェネリック型パラメーターの名前が大文字で始まる、' T ' 必要に応じて、もう 1 つの大文字が続く可能性があります。 このルールは、'V' と 'Type' などのジェネリック型パラメーターの名前の違反を報告します。
+ジェネリック型パラメーター名の先頭は大文字の ' t ' でなければなりません。また、必要に応じて、別の大文字を使用することもできます。 このルールは、' V ' や ' Type ' などのジェネリック型パラメーター名の違反を報告します。
 
 名前付け規則では、共通言語ランタイムをターゲットとするライブラリの統一的な名前の付け方が規定されています。 これにより、新しいソフトウェア ライブラリを習得するまでの時間を短縮でき、マネージド コード開発の専門家によってライブラリが開発されたという信頼を顧客に与えることができます。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-このルールからを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、このルールを分析し、コードのどの部分を構成することができます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+(レガシ分析ではなく) [FxCop アナライザー](install-fxcop-analyzers.md)からこの規則を実行している場合は、この規則で分析するコードの部分を構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
-### <a name="single-character-type-parameters"></a>単一の文字の型パラメーター
+### <a name="single-character-type-parameters"></a>1文字の型パラメーター
 
-1 文字の型パラメーターをこの規則から除外するかどうかを構成することができます。 たとえば、ことを指定するこのルール*しないで*1 文字の型パラメーターを分析、次のキー/値ペアのいずれかをプロジェクト内の .editorconfig ファイルに追加。
+1文字の型パラメーターをこの規則から除外するかどうかを構成できます。 たとえば、このルールで1文字の型パラメーターを分析し*ない*ように指定するには、次のキーと値のペアのいずれかをプロジェクトの editorconfig ファイルに追加します。
 
 ```ini
 # Package version 2.9.0 and later
@@ -71,49 +71,49 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 ```
 
 > [!NOTE]
-> このルールは、という名前の型パラメーターのことはありませんが発生した`T`、たとえば、`Collection<T>`します。
+> このルールは、という名前`T`の型パラメーターに対しては発生しません。たとえば、 `Collection<T>`のようになります。
 
-### <a name="api-surface"></a>API サーフェス
+### <a name="api-surface"></a>API サーフェイス
 
-のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づいています。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1715.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (名前付け) で構成できます。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (名前付け) に対してのみ構成できます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-識別子の名前を変更して、プレフィックスが正しくようにします。
+識別子の名前を正しいプレフィックスに変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 この規則による警告は抑制しないでください。
 
 ## <a name="interface-naming-example"></a>インターフェイスの名前付けの例
 
-次のコード スニペットは、不適切な名前のインターフェイスを示しています。
+次のコードスニペットは、間違った名前のインターフェイスを示しています。
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]
 
-次のコード スニペットは、'I' とインターフェイスを付けることで、前の違反を修正します。
+次のコードスニペットでは、インターフェイスを ' I ' にプレフィックスとして前の違反を修正しています。
 
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_2.vb)]
 
-## <a name="type-parameter-naming-example"></a>型パラメーター名の例
+## <a name="type-parameter-naming-example"></a>型パラメーターの名前付けの例
 
-次のコード スニペットは、不適切な名前のジェネリック型パラメーターを示しています。
+次のコードスニペットは、不適切な名前を持つジェネリック型パラメーターを示しています。
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_3.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_3.vb)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]
 
-次のコード スニペットは、' T のジェネリック型パラメーターを付けることで以前の違反を修正 '。
+次のコードスニペットは、ジェネリック型パラメーターの前に ' t ' を付けることによって、以前の違反を修正します。
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)]
@@ -121,4 +121,4 @@ dotnet_code_quality.ca1715.api_surface = private, internal
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA1722:識別子には、不適切なプレフィックスはありません。](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+- [CA1722識別子は正しくないプレフィックスを含むことはできません](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

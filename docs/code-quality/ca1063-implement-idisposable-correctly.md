@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 837659ca24eb66995626668185500db7bc32bbd7
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820623"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547374"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:IDisposable を正しく実装します
 
@@ -34,71 +34,71 @@ ms.locfileid: "66820623"
 
 ## <a name="cause"></a>原因
 
-<xref:System.IDisposable?displayProperty=nameWithType>インターフェイスが正しく実装されていません。 これに考えられる理由:
+<xref:System.IDisposable?displayProperty=nameWithType>インターフェイスが正しく実装されていません。 これには、次のような原因が考えられます。
 
-- <xref:System.IDisposable> クラスで実装したです。
+- <xref:System.IDisposable>はクラスの再実装です。
 
-- 最終処理 reoverridden です。
+- `Finalize`もう一度オーバーライドされます。
 
-- Dispose() がオーバーライドされます。
+- `Dispose()`がオーバーライドされます。
 
-- Dispose() メソッドはパブリックではない[シール](/dotnet/csharp/language-reference/keywords/sealed)、または名前付き**Dispose**します。
+- メソッドが public、 [sealed](/dotnet/csharp/language-reference/keywords/sealed)、または named Dispose ではありません。 `Dispose()`
 
-- Dispose (bool) は、保護された、仮想、または封印されていないではありません。
+- `Dispose(bool)`が protected、virtual、または封印されていません。
 
-- 封印されていない種類は、Dispose() が dispose (true) を呼び出す必要があります。
+- シールされて`Dispose()`いない`Dispose(true)`型では、を呼び出す必要があります。
 
-- 封印されていない型の場合、Finalize 実装は呼び出しませんいずれかまたは両方の dispose (bool) または基本クラスのファイナライザー。
+- シールされてい`Finalize`ない型の場合、実装は`Dispose(bool)`またはのいずれかまたは両方の基本クラスのファイナライザーを呼び出しません。
 
-これらのパターンのいずれかの違反が警告 CA1063 をトリガーします。
+これらのパターンのいずれかに違反すると、警告 CA1063 がトリガーされます。
 
-宣言および実装しているすべての封印されていない型、<xref:System.IDisposable>インターフェイスを提供する必要があります独自`protected virtual void Dispose(bool)`メソッド。 `Dispose()` 呼び出す必要があります`Dispose(true)`、ファイナライザーを呼び出す必要がありますと`Dispose(false)`します。 封印されていない型宣言および実装を作成するかどうか、<xref:System.IDisposable>インターフェイスが定義する必要があります`Dispose(bool)`呼び出すようにします。 詳細については、次を参照してください。 [(.NET ガイド) のアンマネージ リソースをクリーンアップする](/dotnet/standard/garbage-collection/unmanaged)と[Dispose パターン](/dotnet/standard/design-guidelines/dispose-pattern)します。
+<xref:System.IDisposable>インターフェイスを宣言して実装するすべての封印されて`protected virtual void Dispose(bool)`いない型は、独自のメソッドを提供する必要があります。 `Dispose()`はを`Dispose(true)`呼び出す必要があり、 `Dispose(false)`ファイナライザーはを呼び出す必要があります。 <xref:System.IDisposable>インターフェイスを宣言して実装する封印されていない型を作成`Dispose(bool)`する場合は、を定義して呼び出す必要があります。 詳細については、「[アンマネージリソースのクリーンアップ (.net ガイド)](/dotnet/standard/garbage-collection/unmanaged) 」および「 [Dispose pattern](/dotnet/standard/design-guidelines/dispose-pattern)」を参照してください。
 
-既定では、このルールのみが検索に、外部から参照の種類が、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できる型のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-すべて<xref:System.IDisposable>型を実装する必要があります、 [Dispose パターン](/dotnet/standard/design-guidelines/dispose-pattern)正しくします。
+すべて<xref:System.IDisposable>の型は、 [Dispose パターン](/dotnet/standard/design-guidelines/dispose-pattern)を正しく実装する必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-コードを調べて、この違反を修正するは、次の解決策の確認します。
+コードを調べて、この違反を修正する次の解決策を特定します。
 
-- 削除<xref:System.IDisposable>の種類によって実装され、代わりに、基底クラス Dispose の実装をオーバーライドするインターフェイスの一覧。
+- 型<xref:System.IDisposable>によって実装されているインターフェイスの一覧からを削除し、代わりに基底クラスの Dispose の実装をオーバーライドします。
 
-- 型から、ファイナライザーを削除、Dispose (bool disposing) をオーバーライドし、'disposing' が false のコード パスに finalization 論理を配置します。
+- 型からファイナライザーを削除し、Dispose (bool disposing) をオーバーライドし、' disposing ' が false であるコードパスに終了ロジックを配置します。
 
-- Dispose (bool disposing) をオーバーライドし、'disposing' が true に、コード パスに dispose 論理を入れます。
+- Dispose (bool disposing) をオーバーライドし、' disposing ' が true であるコードパスに dispose ロジックを配置します。
 
-- Dispose() をパブリックとして宣言されていることを確認し、[シール](/dotnet/csharp/language-reference/keywords/sealed)します。
+- Dispose () が public および[sealed](/dotnet/csharp/language-reference/keywords/sealed)として宣言されていることを確認します。
 
-- Dispose メソッドの名前を変更**Dispose** public として宣言されかどうかを確認して、[シール](/dotnet/csharp/language-reference/keywords/sealed)。
+- Dispose メソッドの名前を**dispose**に変更し、public および[sealed](/dotnet/csharp/language-reference/keywords/sealed)として宣言されていることを確認します。
 
-- Dispose (bool) を protected として宣言されていることを確認して、仮想、および封印されていないことができます。
+- Dispose (bool) が protected、virtual、およびシールドとして宣言されていることを確認します。
 
-- Dispose (true) を呼び出すように Dispose() の変更を呼び出して<xref:System.GC.SuppressFinalize%2A>オブジェクトの現在のインスタンスで (`this`、または`Me`Visual Basic で)、しを返します。
+- Dispose () を変更して dispose (true) を呼び出し、現在<xref:System.GC.SuppressFinalize%2A>のオブジェクトインスタンス (`this`、または`Me` Visual Basic) でを呼び出し、を返します。
 
-- ように戻ります、dispose (false) を呼び出し、ファイナライザーを変更します。
+- Dispose (false) を呼び出すようにファイナライザーを変更し、を返します。
 
-- 封印されていない型宣言および実装を作成するかどうか、<xref:System.IDisposable>インターフェイス、ことを確認の実装<xref:System.IDisposable>このセクションで既に説明したパターンに従います。
+- <xref:System.IDisposable>インターフェイスを宣言して実装する封印されていない型を作成する場合は<xref:System.IDisposable> 、の実装が、このセクションで前に説明したパターンに従っていることを確認してください。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 この規則による警告は抑制しないでください。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1063.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (デザイン) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
 ## <a name="pseudo-code-example"></a>擬似コードの例
 
-次の擬似コードでは、管理を使用するクラスで dispose (bool) を実装する方法と、ネイティブ リソースの一般的な例を示します。
+次の擬似コードは、マネージリソースとネイティブリソースを使用するクラスに Dispose (bool) を実装する方法の一般的な例を示しています。
 
 ```csharp
 public class Resource : IDisposable
@@ -146,5 +146,5 @@ public class Resource : IDisposable
 
 ## <a name="see-also"></a>関連項目
 
-- [Dispose パターン (framework デザイン ガイドライン)](/dotnet/standard/design-guidelines/dispose-pattern)
-- [アンマネージ リソース (.NET ガイド) をクリーンアップします。](/dotnet/standard/garbage-collection/unmanaged)
+- [Dispose パターン (フレームワークデザインガイドライン)](/dotnet/standard/design-guidelines/dispose-pattern)
+- [アンマネージリソースのクリーンアップ (.NET ガイド)](/dotnet/standard/garbage-collection/unmanaged)

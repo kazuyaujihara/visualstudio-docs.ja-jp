@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f4023c993a153a64070bfb5e975a6d0f326b65d3
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: d8cc63e95792d64fc82dc3ad4af022dc5e9c292b
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842448"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547819"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012:抽象型にはコンストラクターを含めません
 
@@ -34,40 +34,40 @@ ms.locfileid: "65842448"
 
 ## <a name="cause"></a>原因
 
-型は abstract であり、コンス トラクターがあります。
+型は abstract であり、コンストラクターを持ちます。
 
-既定では、このルールのみが検索に、外部から参照の種類が、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できる型のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-抽象型上のコンストラクターは、派生型からのみ呼び出すことができます。 パブリック コンス トラクターが型のインスタンスを作成し、抽象型のインスタンスを作成することはできません、ため、パブリック コンス トラクターを持つ抽象型のデザインは不適切です。
+抽象型上のコンストラクターは、派生型からのみ呼び出すことができます。 パブリックコンストラクターは型のインスタンスを作成するので、抽象型のインスタンスを作成することはできないため、パブリックコンストラクターを持つ抽象型は正しく設計されていません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するのには、コンス トラクターを保護するか、または抽象型を宣言しないでください。
+この規則違反を修正するには、コンストラクターを保護するか、型を abstract として宣言しないようにします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-この規則による警告は抑制しないでください。 抽象型では、パブリック コンス トラクターがあります。
+この規則による警告は抑制しないでください。 抽象型にはパブリックコンストラクターがあります。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1012.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (デザイン) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
 ## <a name="example"></a>例
 
-次のコード スニペットには、この規則に違反する抽象型が含まれています。
+次のコードスニペットには、この規則に違反する抽象型が含まれています。
 
 [!code-vb[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_1.vb)]
 [!code-csharp[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]
 
-次のコード スニペットからコンス トラクターのアクセシビリティを変更することで、前の違反を修正する`public`に`protected`します。
+次のコードスニペットは、コンストラクターのアクセシビリティをから`public`に`protected`変更することによって、以前の違反を修正します。
 
 [!code-csharp[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_2.cs)]
 [!code-vb[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_2.vb)]

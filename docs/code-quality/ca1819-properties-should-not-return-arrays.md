@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2824be0ecc29965abb68519aaa8eb8a83af8e688
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 9fd738b0c16ede4f71c001036546c335d8ca7186
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841380"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547039"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819:プロパティは、配列を返すことはできません
 
@@ -35,71 +35,71 @@ ms.locfileid: "65841380"
 
 ## <a name="cause"></a>原因
 
-プロパティは、配列を返します。
+プロパティは配列を返します。
 
-既定では、このルールだけが検索で外部から参照できるプロパティと型が、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できるプロパティと型のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-プロパティによって返される配列は、プロパティが読み取り専用の場合でも書き込み保護されていません。 配列の改ざんを防ぐには、プロパティで配列のコピーを返す必要があります。 通常、ユーザーは、このようなプロパティを呼び出すときのパフォーマンス低下の影響を理解しません。 具体的には、インデックス付きプロパティとしてプロパティを使用する可能性があります。
+プロパティが読み取り専用の場合でも、プロパティによって返される配列は書き込み禁止されません。 配列の改ざんを防ぐには、プロパティで配列のコピーを返す必要があります。 通常、このようなプロパティを呼び出すと、パフォーマンスに悪影響が生じることはありません。 具体的には、プロパティをインデックス付きプロパティとして使用することがあります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するには、メソッド、プロパティを作成するかコレクションを取得するプロパティを変更します。
+この規則違反を修正するには、プロパティをメソッドに設定するか、コレクションを返すようにプロパティを変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-派生した属性のプロパティに対して発生する警告を抑制することができます、<xref:System.Attribute>クラス。 属性は、配列を返すプロパティを含めることができますが、コレクションを返すプロパティを含めることはできません。
+<xref:System.Attribute>クラスから派生した属性のプロパティに対して発生した警告を非表示にすることができます。 属性には、配列を返すプロパティを含めることができますが、コレクションを返すプロパティを含めることはできません。
 
-プロパティの一部である場合、警告を抑制することができます、[データ転送オブジェクト (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10))クラス。
+プロパティが[データ転送オブジェクト (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10))クラスの一部である場合は、警告を非表示にすることができます。
 
-それ以外の場合、この規則による警告を抑制しないでください。
+それ以外の場合は、このルールからの警告を抑制しないでください。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1819.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (パフォーマンス) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (パフォーマンス) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
-## <a name="example-violation"></a>例の違反
+## <a name="example-violation"></a>違反の例
 
-次の例では、この規則に違反するプロパティを示します。
+次の例は、この規則に違反するプロパティを示しています。
 
 [!code-csharp[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_1.cs)]
 [!code-vb[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_1.vb)]
 
-この規則違反を修正するには、メソッド、プロパティを作成するか配列の代わりにコレクションを取得するプロパティを変更します。
+この規則違反を修正するには、プロパティをメソッドに設定するか、配列ではなくコレクションを返すようにプロパティを変更します。
 
-### <a name="change-the-property-to-a-method"></a>プロパティ、メソッドに変更します。
+### <a name="change-the-property-to-a-method"></a>プロパティをメソッドに変更します。
 
-次の例では、メソッド、プロパティを変更することで、違反を修正します。
+次の例では、プロパティをメソッドに変更することによって、違反を修正します。
 
 [!code-vb[FxCop.Performance.PropertyArrayFixedMethod#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_2.vb)]
 [!code-csharp[FxCop.Performance.PropertyArrayFixedMethod#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_2.cs)]
 
-### <a name="change-the-property-to-return-a-collection"></a>コレクションを取得するプロパティを変更します。
+### <a name="change-the-property-to-return-a-collection"></a>コレクションを返すようにプロパティを変更する
 
-次の例では、返されるプロパティを変更することで、違反を修正する、 <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>:
+次の例では、プロパティを変更してを<xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>返すことによって、違反を修正します。
 
 [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_3.cs)]
 [!code-vb[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_3.vb)]
 
-## <a name="allow-users-to-modify-a-property"></a>プロパティを変更するユーザーを許可します。
+## <a name="allow-users-to-modify-a-property"></a>ユーザーがプロパティを変更できるようにする
 
-プロパティを変更するクラスのコンシューマーを許可する場合があります。 次の例では、この規則に違反する読み取り/書き込みプロパティを示します。
+クラスのコンシューマーがプロパティを変更できるようにすることができます。 次の例は、この規則に違反する読み取り/書き込みプロパティを示しています。
 
 [!code-csharp[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_4.cs)]
 [!code-vb[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_4.vb)]
 
-次の例では、返されるプロパティを変更することで、違反を修正する、 <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>:
+次の例では、プロパティを変更してを<xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>返すことによって、違反を修正します。
 
 [!code-vb[FxCop.Performance.PropertyModifyFixed#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_5.vb)]
 [!code-csharp[FxCop.Performance.PropertyModifyFixed#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_5.cs)]
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA 1024:適切な場所のプロパティを使用します。](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024適切な場所にプロパティを使用する](../code-quality/ca1024-use-properties-where-appropriate.md)

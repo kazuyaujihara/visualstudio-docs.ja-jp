@@ -1,8 +1,8 @@
 ---
-title: 全般的な参照 (Visual Studio での Office 開発)
+title: 全般リファレンス (Visual Studio での Office 開発)
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,49 +14,48 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f1370dc0eb159b3f566e6ddcba6e1317cfb441a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427959"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551505"
 ---
-# <a name="general-reference-office-development-in-visual-studio"></a>全般的な参照 (Visual Studio での Office 開発)
-  このセクションには、Visual Studio での Microsoft Office プロジェクトに関する技術的な詳細が含まれています。
+# <a name="general-reference-office-development-in-visual-studio"></a>全般リファレンス (Visual Studio での Office 開発)
+  このセクションでは、Visual Studio での Microsoft Office プロジェクトに関する技術的な詳細について説明します。
 
-> [!NOTE]
-> [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは VSTO アドインやソリューションと比較して、小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML などのほぼすべての web プログラミング テクノロジを使用して、ビルドすることができます。
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)
 
- Office のインストールに使用し、それぞれの簡単な説明をプライマリ相互運用機能アセンブリを一覧表示します。
+ Office と共にインストールできるプライマリ相互運用機能アセンブリの一覧を示し、それぞれについて簡単に説明します。
 
-- [Office ソリューション用アプリケーション マニフェスト](../vsto/application-manifests-for-office-solutions.md)
+- [Office ソリューション用アプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)
 
- Office ソリューションにおけるアプリケーション マニフェストを使用する方法について説明します。
+ Office ソリューションでのアプリケーションマニフェストの使用方法について説明します。
 
-- [Office ソリューション用配置マニフェストします。](../vsto/deployment-manifests-for-office-solutions.md)
+- [Office ソリューションの配置マニフェスト](../vsto/deployment-manifests-for-office-solutions.md)
 
- 配置マニフェストがどのように使用される Office ソリューションについて説明します。
+ 配置マニフェストを使用して Office ソリューションを使用する方法について説明します。
 
-- [ユーザー インターフェイス リファレンス&#40;Visual Studio での Office 開発&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
+- [Visual Studio で&#40;のユーザーインターフェイスリファレンス Office 開発&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
 
- さまざまなダイアログ ボックス、windows、およびその他のユーザー インターフェイスに表示されるオプションを説明するトピックを示します。
+ さまざまなダイアログボックス、ウィンドウ、およびその他のユーザーインターフェイスに表示されるオプションについて説明するトピックの一覧を示します。
 
-- [エラー メッセージ&#40;Visual Studio での Office 開発&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
+- [Visual Studio &#40;でのエラーメッセージ Office 開発&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
 
- Office プロジェクトのエラー メッセージを説明するトピックを一覧表示します。
+ Office プロジェクトのエラーメッセージについて説明するトピックの一覧を示します。
 
 ## <a name="related-sections"></a>関連項目
 - [はじめに &#40;Visual Studio での Office 開発&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
- セットアップ、プロジェクト テンプレート、Office プライマリ相互運用機能アセンブリ、および Office 開発の新機能に関する情報へのリンクを提供します。
+ セットアップ、プロジェクトテンプレート、Office プライマリ相互運用機能アセンブリ、および Office 開発の新機能に関する情報へのリンクを示します。
 
 - [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)
 
- コード サンプルと構文、構造、および Office ソリューションの構築に使用された手法を学習や実験が役立つことができますが、Visual Studio で Office プロジェクトを作成するためのステップ バイ ステップのチュートリアルについて説明します。
+ Visual Studio で Office プロジェクトを作成するためのコードサンプルとステップバイステップのチュートリアルについて説明します。これは、Office ソリューションのビルドに使用される構文、構造、および手法の学習と実験に役立ちます。
 
 - [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)
 
- Visual Studio を使用して Office プロジェクトの作成を開始する方法についての情報へのリンクを提供します。
+ Visual Studio を使用して Office プロジェクトの作成を開始する方法に関する情報へのリンクを示します。

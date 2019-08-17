@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a9b03ce2552e50ebfca8f9e6e2823dee794c20
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2f427bcdf4ec4e88dcc2842699d738dae7e8e09d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841769"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546907"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225:演算子オーバーロードには名前付けされた代替が存在します
 
@@ -32,15 +32,15 @@ ms.locfileid: "65841769"
 
 ## <a name="cause"></a>原因
 
-演算子のオーバー ロードが検出され、予期される名前付きの代替方法が見つかりませんでした。
+演算子のオーバーロードが検出されましたが、予期された名前の別のメソッドが見つかりませんでした。
 
-既定では、このルールのみが検索に、外部から参照の種類が、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できる型のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-演算子のオーバー ロードでは、型の計算を表すシンボルを使用できるようにします。 たとえば、追加するプラス記号 (+) をオーバー ロードする型は 'Add' という名前の代替メンバーを通常があります。 名前付きの代替メンバーは、演算子と同じ機能にアクセスできるようにおり、オーバー ロードされた演算子をサポートしない言語でプログラミングする開発者向け提供されます。
+演算子のオーバーロードでは、型の計算を表すためにシンボルを使用できます。 たとえば、追加のためにプラス記号 (+) をオーバーロードする型には、通常、"Add" という名前の代替メンバーがあります。 名前付き代替メンバーは、演算子と同じ機能へのアクセスを提供し、オーバーロードされた演算子をサポートしない言語でプログラミングする開発者向けに用意されています。
 
-このルールは、次の表に示す演算子を調べます。
+このルールは、次の表に示す演算子を検証します。
 
 |C#|Visual Basic|C++|代替名|
 |---------|------------------|-----------|--------------------|
@@ -60,61 +60,61 @@ ms.locfileid: "65841769"
 |>=|>=|>=|比較|
 |++|N/A|++|インクリメント|
 |<>|!=|Equals|
-|<<|<<|<<|プロパティ|
-|<<=|<<=|<<=|プロパティ|
+|<<|<<|<<|から左へ|
+|<<=|<<=|<<=|から左へ|
 |<|<|<|比較|
 |<=|<=|\<=|比較|
 |&&|N/A|&&|LogicalAnd|
 |&#124;&#124;|N/A|&#124;&#124;|LogicalOr|
 |!|N/A|!|LogicalNot|
-|%|Mod|%|Mod または残りの部分|
+|%|Mod|%|Mod または剰余|
 |%=|N/A|%=|Mod|
 |* (バイナリ)|*|*|乗算|
 |*=|N/A|*=|乗算|
 |~|Not|~|OnesComplement|
-|>>|>>|>>|プロパティ|
-=|N/A|>>=|プロパティ|
+|>>|>>|>>|プロパティながら|
+=|N/A|>>=|プロパティながら|
 |-(バイナリ)|-(バイナリ)|-(バイナリ)|減算|
 |-=|N/A|-=|減算|
 |true|IsTrue|N/A|IsTrue (プロパティ)|
-|-(単項)|N/A|-|負数化します。|
-|+ (単項)|N/A|+|プラス|
+|-(単項)|N/A|-|無効|
+|+ (単項)|N/A|+|Plus|
 |False|IsFalse|False|IsTrue (プロパティ)|
 
-該当なし = =、選択した言語でオーバー ロードすることはできません。
+選択した言語では、N/A = = をオーバーロードすることはできません。
 
-ルールでは、型の明示的および暗黙的なキャスト演算子も確認します (`SomeType`) という名前のメソッドをチェックして`ToSomeType`と`FromSomeType`します。
+また、およびと`SomeType` `FromSomeType`いう名前`ToSomeType`のメソッドがあるかどうかをチェックすることにより、型 () の暗黙的なキャスト演算子と明示的なキャスト演算子も確認します。
 
-C# の場合は、二項演算子をオーバー ロードすると、対応する代入演算子、存在する場合も暗黙的にオーバー ロードできます。
+でC#は、二項演算子がオーバーロードされると、対応する代入演算子 (存在する場合) も暗黙的にオーバーロードされます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するのには、演算子の代替メソッドを実装します。推奨される代替名を使用して名前を付けます。
+この規則違反を修正するには、演算子に対して別の方法を実装します。推奨される代替名を使用して名前を指定します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-共有ライブラリを実装している場合は、この規則による警告を抑制しないでください。 アプリケーションでは、この規則による警告を無視できます。
+共有ライブラリを実装している場合は、この規則による警告を抑制しないでください。 アプリケーションは、このルールの警告を無視できます。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca2225.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (使用) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (使用状況) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
 ## <a name="example"></a>例
 
-次の例では、この規則に違反する構造体を定義します。 例を修正する追加パブリック`Add(int x, int y)`構造体へのメソッド。
+次の例では、この規則に違反する構造体を定義しています。 この例を修正するには、 `Add(int x, int y)`パブリックメソッドを構造体に追加します。
 
 [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA1046:参照型で、演算子 equals をオーバー ロードしません。](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
-- [CA2226:演算子は対称型オーバー ロードである必要があります。](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
-- [CA2224:オーバー ロードする演算子 equals で equals をオーバーライド](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
-- [CA2218:Equals をオーバーライドの GetHashCode をオーバーライドします。](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+- [CA1046参照型の演算子 equals をオーバーロードしない](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+- [CA2226演算子には対称的なオーバーロードが必要です](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+- [CA2224オーバーロードする演算子 equals で equals をオーバーライドします](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+- [CA2218オーバーライドする Equals で GetHashCode をオーバーライドします](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 - [CA2231: ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
