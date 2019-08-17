@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9377dcf03bcbb8087d152ef98986f31c12c94c45
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 8b047669b962d5e38cd37132f84ae653ba30f9dc
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841926"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547296"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711:識別子は、不適切なサフィックスを含むことはできません
 
@@ -34,7 +34,7 @@ ms.locfileid: "65841926"
 
 識別子のサフィックスが不適切です。
 
-既定では、このルールだけを確認、外部から参照できる識別子が、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できる識別子だけを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
@@ -55,15 +55,15 @@ ms.locfileid: "65841926"
 |Stack|<xref:System.Collections.Stack?displayProperty=fullName>|
 |ストリーム|<xref:System.IO.Stream?displayProperty=fullName>|
 
-さらに、次のサフィックスが必要があります**いない**使用します。
+また、次のサフィックスは使用**しない**でください。
 
 - `Delegate`
 
 - `Enum`
 
-- `Impl` (を使用して、`Core`代わりに)
+- `Impl`(代わり`Core`にを使用します)
 
-- `Ex` または、同じ種類の以前のバージョンと区別するための類似のサフィックス
+- `Ex`同じ型の以前のバージョンと区別するための類似したサフィックス
 
 名前付け規則では、共通言語ランタイムをターゲットとするライブラリの統一的な名前の付け方が規定されています。 これにより、新しいソフトウェア ライブラリを習得するまでの時間を短縮でき、マネージド コード開発の専門家によってライブラリが開発されたという信頼を顧客に与えることができます。
 
@@ -71,25 +71,25 @@ ms.locfileid: "65841926"
 
 型名からサフィックスを削除します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 アプリケーション ドメインでサフィックスに明確な意味がある場合を除き、この規則による警告を抑制しないでください。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1711.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (名前付け) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (名前付け) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA1710:識別子は、正しいサフィックスをいなければなりません](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+- [CA1710識別子には正しいサフィックスが必要です](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>関連項目
 
 - [属性](/dotnet/standard/design-guidelines/attributes)
-- [処理とイベントの発生](/dotnet/standard/events/index)
+- [イベントの処理と発生](/dotnet/standard/events/index)

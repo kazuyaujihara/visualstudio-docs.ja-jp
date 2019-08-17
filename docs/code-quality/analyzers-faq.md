@@ -1,5 +1,5 @@
 ---
-title: EditorConfig アナライザーとの比較
+title: EditorConfig とアナライザー
 ms.date: 03/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,53 +9,53 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bec9296f15c48cf3b327c78cd0ce7d57adafa002
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 53bd2139d5b81ed743cdfd92fe76cb575dcc6487
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571473"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547895"
 ---
-# <a name="analyzers-faq"></a>アナライザーに関する FAQ
+# <a name="code-analysis-faq"></a>コード分析に関する FAQ
 
-このページには、Visual Studio で Roslyn アナライザーについてよく寄せられる質問に対する回答が含まれています。
+このページには、Visual Studio での .NET Compiler Platform ベースのコード分析に関してよく寄せられる質問への回答が含まれています。
 
-## <a name="roslyn-analyzers-versus-editorconfig"></a>.Editorconfig と Roslyn アナライザー
+## <a name="code-analysis-versus-editorconfig"></a>コード分析と EditorConfig
 
-**Q**:コード スタイルの Roslyn アナライザーまたは .editorconfig を使って必要がありますか
+**Q**:コードのスタイルを確認するためにコード分析または EditorConfig を使用する必要がありますか。
 
-**A**:Roslyn アナライザーと .editorconfig ファイルは、手の形密接に機能します。 コード スタイルを定義するとき[.editorconfig ファイルで](../ide/editorconfig-code-style-settings-reference.md)か、または、[テキスト エディター オプション](../ide/code-styles-and-quick-actions.md) ページで、Visual Studio に組み込まれている Roslyn アナライザー実際に構成しています。 EditorConfig ファイルがなど、一部のサード パーティ製のアナライザー パッケージを構成することもでき[FxCop アナライザー](configure-fxcop-analyzers.md)します。
+**A**:コード分析と editorconfig ファイルは手動で機能します。 [Editorconfig ファイル](../ide/editorconfig-code-style-settings-reference.md)または [[テキストエディター] オプション](../ide/code-styles-and-code-cleanup.md)ページでコードスタイルを定義する場合、実際には、Visual Studio に組み込まれているコードアナライザーを構成します。 EditorConfig ファイルを使用して、 [FxCop](configure-fxcop-analyzers.md)アナライザーなどの一部のサードパーティアナライザーパッケージを構成することもできます。
 
-## <a name="editorconfig-versus-rule-sets"></a>EditorConfig 規則セットとの比較
+## <a name="editorconfig-versus-rule-sets"></a>EditorConfig とルールセット
 
-**Q**:規則セットまたは .editorconfig ファイルを使用して、アナライザーを構成する必要がありますか。
+**Q**:規則セットまたは editorconfig ファイルを使用してアナライザーを構成する必要がありますか。
 
-**A**:ルール セットおよび .editorconfig ファイルは、アナライザーを構成する方法を相互に排他的です。 これらを共存させることができます。 [ルール セット](analyzer-rule-sets.md)を有効にしてルールを無効にして、重大度を設定することができます。 EditorConfig ファイルでは、その他の規則を構成する方法を提供します。 FxCop アナライザーの場合は、.editorconfig ファイルを使用する[を分析するコードの種類を定義する](fxcop-analyzer-options.md)します。 Visual Studio に組み込まれているアナライザーの .editorconfig ファイルを使用する[優先コード スタイル定義](../ide/editorconfig-code-style-settings-reference.md)コードベースにします。
+**A**:規則セットと editorconfig ファイルは、アナライザーを構成するための相互に排他的な方法です。 共存させることができます。 規則[セット](analyzer-rule-sets.md)を使用すると、規則を有効または無効にし、その重要度を設定できます。 EditorConfig ファイルには、ルールを構成するための他の方法が用意されています。 FxCop アナライザーでは、editorconfig ファイルを使用して、[分析するコードの種類を定義](fxcop-analyzer-options.md)できます。 Visual Studio に組み込まれているアナライザーの場合、editorconfig ファイルを使用すると、コードベースに適した[コードスタイルを定義](../ide/editorconfig-code-style-settings-reference.md)できます。
 
-としてマークされているテキスト ファイルを使用してルール セットおよび .editorconfig ファイルでは、だけでなく、サードパーティのいくつかのアナライザーが構成されている[追加ファイル](../ide/build-actions.md#build-action-values)のC#と VB コンパイラ。
+規則セットと editorconfig ファイルに加えて、一部のサードパーティアナライザーは、 C#および VB コンパイラの[追加ファイル](../ide/build-actions.md#build-action-values)としてマークされたテキストファイルを使用して構成されます。
 
 > [!NOTE]
-> 規則セットのことができますが、静的コード分析の規則を構成する EditorConfig ファイルを使用できません。
+> EditorConfig ファイルを使用してレガシ分析を構成することはできませんが、ルールセットはできます。
 
-## <a name="analyzers-in-ci-builds"></a>CI ビルドでアナライザー
+## <a name="code-analysis-in-ci-builds"></a>CI ビルドでのコード分析
 
-**Q**:アナライザーは継続的インテグレーション (CI) ビルドで機能しますか。
+**Q**:.NET Compiler Platform ベースのコード分析は、継続的インテグレーション (CI) ビルドで動作しますか。
 
-**A**:はい。 これらの規則は、アナライザーの NuGet パッケージからインストールされている場合、[ビルド時に適用される](roslyn-analyzers-overview.md#build-errors)CI ビルド中に含め、します。 アナライザーの両方から CI ビルドに関してルールの構成で使用される[ルール セット](analyzer-rule-sets.md)と[.editorconfig ファイル](configure-fxcop-analyzers.md)します。 現在、Visual Studio に組み込まれているコード アナライザーは、NuGet パッケージとして使用できません、ためこれらの規則は CI ビルドで強制はありません。
+**A**:はい。 NuGet パッケージからインストールされたアナライザーでは、これらの規則は[ビルド時に適用](roslyn-analyzers-overview.md#build-errors)されます。これには、CI ビルドの実行中も含まれます。 CI ビルドで使用されるアナライザーは、[規則セット](analyzer-rule-sets.md)と[editorconfig ファイル](configure-fxcop-analyzers.md)の両方からの規則の構成を尊重します。 現時点では、Visual Studio に組み込まれているコードアナライザーは NuGet パッケージとして使用できないため、これらの規則は CI ビルドでは適用できません。
 
-## <a name="ide-analyzers-versus-stylecop"></a>StyleCop ではなく IDE アナライザー
+## <a name="ide-analyzers-versus-stylecop"></a>IDE アナライザーと StyleCop
 
-**Q**:Visual Studio IDE のコード アナライザーと StyleCop アナライザーの違いは何ですか。
+**Q**:Visual Studio IDE コードアナライザーと StyleCop アナライザーの違いは何ですか。
 
-**A**:Visual Studio IDE には、両方のコード スタイルと品質の問題を検索する組み込みのアナライザーが含まれています。 これらの規則に役立つ、導入するいるし、コードの保守容易性を向上させる新しい言語機能を使用します。 IDE のアナライザーは絶えず更新されている Visual Studio のリリースごとにします。
+**A**:Visual Studio IDE には、コードスタイルと品質の問題の両方を検索する組み込みのアナライザーが含まれています。 これらの規則は、新しく導入された言語機能を使用して、コードの保守性を向上させるのに役立ちます。 IDE アナライザーは、Visual Studio のリリースごとに継続的に更新されます。
 
-[StyleCop アナライザー](https://github.com/DotNetAnalyzers/StyleCopAnalyzers)は NuGet パッケージとしてインストールされているサード パーティ製アナライザー、コード スタイルの一貫性をチェックします。 一般に、StyleCop のルールを 1 つのスタイルを推奨することがなくコードの個人設定を基本設定を使用できます。
+[StyleCop アナライザー](https://github.com/DotNetAnalyzers/StyleCopAnalyzers)は、コード内のスタイルの一貫性をチェックする NuGet パッケージとしてインストールされたサードパーティのアナライザーです。 一般に、StyleCop の規則を使用すると、コードベースに対して個人設定を設定できます。
 
-## <a name="analyzers-versus-static-code-analysis"></a>静的コード分析とアナライザー
+## <a name="code-analyzers-versus-legacy-analysis"></a>コードアナライザーと従来の分析
 
-**Q**:アナライザーと静的コード分析の違いは何ですか。
+**Q**:従来の分析と .NET Compiler Platform ベースのコード分析の違いは何ですか。
 
-**A**:アナライザーは、静的コード分析は、ビルドが完了した後にバイナリ ファイルを分析し、リアルタイムでは、コンパイル時にソース コードを分析します。 詳細については、次を参照してください。[静的コード分析と Roslyn アナライザー](roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis)と[FxCop アナライザー FAQ](fxcop-analyzers-faq.md)します。
+**A**: .NET Compiler Platform ベースのコード分析では、ソースコードがリアルタイムで分析され、コンパイル中に分析されます。一方、レガシ分析では、ビルドの完了後にバイナリファイルが分析されます。 詳細については、「 [.NET Compiler Platform ベースの分析](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis)」と「従来の分析と[FxCop アナライザー](fxcop-analyzers-faq.md)に関する FAQ」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

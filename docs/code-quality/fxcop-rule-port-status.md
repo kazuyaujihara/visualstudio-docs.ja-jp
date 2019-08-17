@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e635f2cbbeda67c4fbed760eb7e57dfcf140d15
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604870"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551061"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則のポートの状態
 
-以前のバージョンの Visual Studio で静的コード分析を使用したことがある場合は、現在の実装で[FxCop アナライザー](install-fxcop-analyzers.md)として使用できる規則を考えているかもしれません。 このページには、移植されている規則と、移植されていない規則、およびそれらを移植する計画があるかどうかが一覧表示されます。
+以前に Visual Studio で静的コード分析を使用したことがある場合は、現在の実装で[FxCop アナライザー](install-fxcop-analyzers.md)として使用できる規則を考えているかもしれません。 このページには、移植されている規則と、移植されていない規則、およびそれらを移植する計画があるかどうかが一覧表示されます。
 
 ## <a name="ported-rules"></a>移植された規則
 
@@ -208,7 +208,7 @@ CA9999 | アナライザーのバージョンが一致しません
 
 ### <a name="rules-that-may-be-ported"></a>移植される可能性がある規則
 
-次の FxCop 静的コード分析規則は、まだアナライザーとして実装されていませんが、の場合もあります。 これは、技術的な理由がブロックされているか、ルールの優先度が低いことが原因である可能性があります。 各ルールの移植状態の詳細については、 **[問題の追跡]** 列のリンクをクリックしてください。
+次の FxCop レガシ分析規則は、まだアナライザーとして実装されていませんが、の場合もあります。 これは、技術的な理由がブロックされているか、ルールの優先度が低いことが原因である可能性があります。 各ルールの移植状態の詳細については、 **[問題の追跡]** 列のリンクをクリックしてください。
 
 ルール ID | 問題の追跡
 --- | ---
@@ -271,7 +271,7 @@ CA9999 | アナライザーのバージョンが一致しません
 
 ### <a name="deprecated-rules"></a>非推奨の規則
 
-次の FxCop 静的コード分析ルールは非推奨とされており、アナライザーとして実装されません。 詳細については、 [roslyn-Analyzer GitHub の問題](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)に関するページで、ルール ID (たとえば、 **CA1009**) で検索することができます。
+次の FxCop レガシ分析ルールは非推奨とされており、アナライザーとして実装されません。 詳細については、 [roslyn-Analyzer GitHub の問題](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)に関するページで、ルール ID (たとえば、 **CA1009**) で検索することができます。
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)

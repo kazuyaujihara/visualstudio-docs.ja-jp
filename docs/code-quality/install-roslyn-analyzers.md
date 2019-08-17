@@ -11,92 +11,92 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 284f33d9d7af885958ed13101e1449edc5c8f2be
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820824"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551090"
 ---
-# <a name="install-net-compiler-platform-analyzers"></a>.NET コンパイラ プラットフォームのアナライザーをインストールします。
+# <a name="install-net-compiler-platform-code-analyzers"></a>.NET Compiler Platform コードアナライザーをインストールする
 
-Visual Studio には、.NET コンパイラ プラットフォームのコア セットが含まれています (*Roslyn*) アナライザーです。 これらのアナライザーが常に動作します。 その他のアナライザーをインストールするには、NuGet パッケージの場合、または Visual Studio の拡張機能として*VSIX*ファイル。
+Visual Studio には、.NET Compiler Platform (*Roslyn*) アナライザーのコアセットが含まれています。 これらのアナライザーは常にオンになっています。 追加のアナライザーは、NuGet パッケージとして、または*VSIX*ファイルの Visual Studio 拡張機能としてインストールできます。
 
-## <a name="to-install-nuget-analyzer-packages"></a>NuGet アナライザー パッケージをインストールするには
+## <a name="to-install-nuget-analyzer-packages"></a>NuGet analyzer パッケージをインストールするには
 
 1. www.nuget.org をインストールするアナライザー パッケージを検索します。
 
-   たとえば、したい場合があります[Microsoft FxCop アナライザーをインストール](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)コードの他のユーザーの間でのセキュリティとパフォーマンスの問題を確認します。 または、インストール[StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)コードベースでスタイルの問題を検索します。
+   たとえば、コードにセキュリティやパフォーマンスの問題がないかどうかを確認するために、 [Microsoft FxCop アナライザーをインストール](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)することができます。 または、 [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)をインストールして、コードベースでスタイルの問題を探します。
 
-2. いずれかを使用して、Visual Studio でパッケージをインストール、[パッケージ マネージャー コンソール](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)または[パッケージ マネージャー UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)します。
+2. パッケージ[マネージャーコンソール](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)または[パッケージマネージャー UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)を使用して、Visual Studio にパッケージをインストールします。
 
    > [!NOTE]
-   > 各アナライザー パッケージ www.nuget.org ページに貼り付けるコマンドが表示されます、**パッケージ マネージャー コンソール**します。 テキストをクリップボードにコピーする便利なボタンもいます。
+   > 各アナライザーパッケージの [www.nuget.org] ページには、**パッケージマネージャーコンソール**に貼り付けるコマンドが表示されます。 クリップボードにテキストをコピーするための便利なボタンもあります。
 
-   アナライザー アセンブリがインストールされに表示**ソリューション エクスプ ローラー** **参照** > **アナライザー**します。
+   Analyzer アセンブリがインストールされ、[**参照** > ] **[アナライザー]** の下の**ソリューションエクスプローラー**に表示されます。
 
-## <a name="to-install-vsix-analyzers"></a>VSIX のアナライザーをインストールするには
+## <a name="to-install-vsix-analyzers"></a>VSIX アナライザーをインストールするには
 
 ::: moniker range="vs-2017"
 
-1. Visual Studio で、次のように選択します。**ツール** > **拡張機能と更新**します。
+1. Visual Studio で、[**ツール** > ] **[拡張機能と更新プログラム]** を選択します。
 
    **[拡張機能と更新プログラム]** ダイアログ ボックスが表示されます。
 
    > [!NOTE]
-   > または、検索し、アナライザー拡張機能から直接ダウンロード[Visual Studio Marketplace](https://marketplace.visualstudio.com)します。
+   > または、 [Visual Studio Marketplace](https://marketplace.visualstudio.com)から直接、analyzer 拡張機能を見つけてダウンロードすることもできます。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Visual Studio で、次のように選択します。**拡張** > **拡張機能の管理**します。
+1. Visual Studio で、[**拡張** >機能] **[拡張機能の管理]** を選択します。
 
-   **拡張機能の管理** ダイアログ ボックスが表示されます。
+   **[拡張機能の管理]** ダイアログボックスが表示されます。
 
    > [!NOTE]
-   > または、検索し、アナライザー拡張機能から直接ダウンロード[Visual Studio Marketplace](https://marketplace.visualstudio.com)します。
+   > または、 [Visual Studio Marketplace](https://marketplace.visualstudio.com)から直接、analyzer 拡張機能を見つけてダウンロードすることもできます。
 
 ::: moniker-end
 
-2. 展開**オンライン**選択し、左側のウィンドウで**Visual Studio Marketplace**します。
+2. 左側のウィンドウで **[オンライン]** を展開し、 **[Visual Studio Marketplace]** を選択します。
 
-3. 検索ボックスで、インストールするアナライザーの拡張機能の名前を入力します。 たとえば、したい場合があります[Microsoft FxCop アナライザーをインストール](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix)コードの他のユーザーの間でのセキュリティとパフォーマンスの問題を確認します。
+3. 検索ボックスに、インストールするアナライザー拡張機能の名前を入力します。 たとえば、コードにセキュリティやパフォーマンスの問題がないかどうかを確認するために、 [Microsoft FxCop アナライザーをインストール](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix)することができます。
 
-4. 選択**ダウンロード**します。
+4. **[ダウンロード]** を選択します。
 
-   拡張機能をダウンロードします。
+   拡張機能がダウンロードされます。
 
-5. 選択**OK**に、ダイアログ ボックスを閉じ、起動する Visual Studio のすべてのインスタンスを閉じます、 **VSIX インストーラー**します。
+5. **[OK]** を選択してダイアログボックスを閉じ、Visual Studio のすべてのインスタンスを閉じて、 **VSIX インストーラー**を起動します。
 
-   **VSIX インストーラー**  ダイアログ ボックスが表示されます。
+   **[VSIX インストーラー]** ダイアログボックスが表示されます。
 
-   ![Microsoft コード分析のための VSIX インストーラー](media/vsix-installer-code-analysis.png)
+   ![Microsoft コード分析用の VSIX インストーラー](media/vsix-installer-code-analysis.png)
 
-6. 選択**変更**インストールを開始します。
+6. **[変更]** を選択してインストールを開始します。
 
-7. しばらくすると、2 つのインストールを完了します。 **[閉じる]** を選択します。
+7. 1 ~ 2 分後にインストールが完了します。 **[閉じる]** を選択します。
 
 8. Visual Studio を再度開きます。
 
 ::: moniker range="vs-2017"
 
-拡張機能がインストール済みになっているかどうかを確認したいかどうか**ツール** > **拡張機能と更新**します。 **拡張機能と更新**ダイアログ ボックスで、**インストール済み**左側のカテゴリ、名前で、拡張機能を検索します。
+拡張機能がインストールされているかどうかを確認する場合は、[**ツール** > ] **[拡張機能と更新プログラム]** を選択します。 **[拡張機能と更新プログラム]** ダイアログボックスで、左側の **[インストール済み]** カテゴリを選択し、名前を指定して拡張機能を検索します。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-拡張機能がインストール済みになっているかどうかを確認したいかどうか**拡張** > **拡張機能の管理**します。 **拡張機能の管理**ダイアログ ボックスで、**インストール済み**左側のカテゴリ、名前で、拡張機能を検索します。
+拡張機能がインストールされているかどうかを確認する場合は、[**拡張** > 機能] **[拡張機能の管理]** を選択します。 **[拡張機能の管理]** ダイアログボックスで、左側の **[インストール済み]** カテゴリを選択し、名前を指定して拡張機能を検索します。
 
 ::: moniker-end
 
 ## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
-> [Visual Studio で Roslyn アナライザーを使用する](../code-quality/use-roslyn-analyzers.md)
+> [Visual Studio でコードアナライザーを使用する](../code-quality/use-roslyn-analyzers.md)
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio で Roslyn アナライザーの概要](../code-quality/roslyn-analyzers-overview.md)
+- [Visual Studio のコードアナライザーの概要](../code-quality/roslyn-analyzers-overview.md)
 - [FxCop アナライザーのインストール](../code-quality/install-fxcop-analyzers.md)

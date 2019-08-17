@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bae627e08faed01ab0efc8e64373ff86ed5c877e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825085"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69548031"
 ---
-# <a name="use-rule-sets-to-group-code-analysis-rules"></a>コード分析規則のグループに規則を使用を設定します。
+# <a name="use-rule-sets-to-group-code-analysis-rules"></a>規則セットを使用したコード分析規則のグループ化
 
-Visual Studio でコード分析を構成するときに、組み込みの*規則セット*一覧から選択することができます。 規則セットは、対象の問題とそのプロジェクトの特定の条件を識別するコード分析規則のグループです。 たとえば、パブリックに利用可能な Api のコードをスキャンするように設計が規則セットを適用できます。 利用可能なすべてのルールを含む規則セットを適用することもできます。
+Visual Studio でコード分析を構成するときに、組み込みの*規則セット*一覧から選択することができます。 ルールセットは、対象となる問題とそのプロジェクトの特定の条件を識別するコード分析ルールをグループ化したものです。 たとえば、公開されている Api のコードをスキャンするように設計された規則セットを適用できます。 また、使用可能なすべての規則を含む規則セットを適用することもできます。
 
-ルール セットを追加または削除ルールまたはルールの重大度を変更することで警告またはエラーのいずれかとして表示をカスタマイズすることができます、**エラー一覧**します。 カスタマイズした規則セットで、特定の開発環境の要件を満たすことができます。 規則セットをカスタマイズするときに、規則セット エディターは、検索とフィルター処理、プロセスに役立つツールを提供します。
+ルールセットをカスタマイズするには、ルールを追加または削除するか、ルールの重大度を変更して**エラー一覧**で警告またはエラーとして表示されるようにします。 カスタマイズした規則セットで、特定の開発環境の要件を満たすことができます。 規則セットをカスタマイズするときに、規則セット エディターは、検索とフィルター処理、プロセスに役立つツールを提供します。
 
-規則セットには[マネージ コードのスタティック分析](how-to-configure-code-analysis-for-a-managed-code-project.md)、 [C++ コードの分析](using-rule-sets-to-specify-the-cpp-rules-to-run.md)、および[Roslyn アナライザー](analyzer-rule-sets.md)があります。
+規則セットは、[マネージコード分析](analyzer-rule-sets.md)、[マネージコードのレガシ分析](how-to-configure-code-analysis-for-a-managed-code-project.md)、および[ C++コード分析](using-rule-sets-to-specify-the-cpp-rules-to-run.md)に使用できます。
 
 ## <a name="rule-set-format"></a>規則セットの形式
 
@@ -56,7 +56,7 @@ Visual Studio でコード分析を構成するときに、組み込みの*規�
 > [!TIP]
 > グラフィカルな**規則セット エディター**の[規則セットの編集](../code-quality/working-in-the-code-analysis-rule-set-editor.md)を使用すると、手動より簡単に編集できます。
 
-## <a name="specify-a-rule-set-for-a-project"></a>プロジェクトに対して規則セットの指定します。
+## <a name="specify-a-rule-set-for-a-project"></a>プロジェクトの規則セットを指定する
 
 プロジェクトの規則セットは Visual Studio プロジェクトファイルの **CodeAnalysisRuleSet** プロパティで指定されます。 例えば:
 

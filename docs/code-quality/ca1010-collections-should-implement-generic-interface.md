@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a62120babe98ead6d78b568bc630f46a386edf02
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 70a418b211cd4340dba9c15f0bf52e3cdfdf8e8f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842657"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547900"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010:コレクションは、ジェネリック インターフェイスを実装しなければなりません
 
@@ -32,13 +32,13 @@ ms.locfileid: "65842657"
 
 ## <a name="cause"></a>原因
 
-型を実装する、<xref:System.Collections.IEnumerable?displayProperty=fullName>インターフェイスしますが、実装されません、<xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>インターフェイス、および含んでいるアセンブリのターゲットの .NET です。 この規則を実装する型<xref:System.Collections.IDictionary?displayProperty=fullName>します。
+型は<xref:System.Collections.IEnumerable?displayProperty=fullName>インターフェイスを実装しますが、 <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>インターフェイスを実装しません。また、格納するアセンブリは .net を対象とします。 このルールは、を実装<xref:System.Collections.IDictionary?displayProperty=fullName>する型を無視します。
 
-既定では、このルールのみが検索に、外部から参照の種類が、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できる型のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-コレクションの操作性を拡充するために、ジェネリック コレクション インターフェイスの 1 つを実装します。 次などのジェネリック コレクション型を設定するコレクションを使用できます。
+コレクションの操作性を拡充するために、ジェネリック コレクション インターフェイスの 1 つを実装します。 次に、コレクションを使用して、次のようなジェネリックコレクション型を設定できます。
 
 - <xref:System.Collections.Generic.List%601?displayProperty=fullName>
 - <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
@@ -46,60 +46,60 @@ ms.locfileid: "65842657"
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するには、次のジェネリック コレクション インターフェイスの 1 つを実装します。
+この規則違反を修正するには、次のジェネリックコレクションインターフェイスのいずれかを実装します。
 
 - <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
 - <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
 - <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-この規則による警告を抑制しても安全です。ただし、コレクションの使用はより制限されます。
+このルールからの警告を抑制するのは安全です。ただし、コレクションの使用には制限があります。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1010.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (デザイン) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
-## <a name="example-violation"></a>例の違反
+## <a name="example-violation"></a>違反の例
 
-次の例では、非ジェネリックから派生したクラス (参照型)`CollectionBase`クラスは、この規則に違反します。
+次の例は、非ジェネリック`CollectionBase`クラスから派生したクラス (参照型) を示しています。このクラスは、この規則に違反します。
 
 [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
 
 この規則違反を修正するには、次のいずれかの操作を行います。
 
-- ジェネリック インターフェイスを実装します。
-- 既になど両方、ジェネリックと非ジェネリック インターフェイスを実装する型を基本クラスを変更、`Collection<T>`クラス。
+- ジェネリックインターフェイスを実装します。
+- 基底クラスを、ジェネリックインターフェイスと非ジェネリックインターフェイス ( `Collection<T>`クラスなど) の両方を既に実装している型に変更します。
 
-## <a name="fix-by-base-class-change"></a>基本クラスの変更を修正します。
+## <a name="fix-by-base-class-change"></a>基本クラスの変更による修正
 
-次の例から、非ジェネリック コレクションの基本クラスを変更することで、違反を修正する`CollectionBase`クラスをジェネリック`Collection<T>`(`Collection(Of T)` Visual basic) クラス。
+次の例では、非ジェネリック`CollectionBase`クラスからジェネリック`Collection<T>` (`Collection(Of T)` Visual Basic) クラスにコレクションの基底クラスを変更することによって、違反を修正します。
 
 [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
 
-リリース済みのクラスの基本クラスを変更すると、既存のコンシューマーに重大な変更と見なされます。
+既に解放されているクラスの基底クラスの変更は、既存のコンシューマーに対する重大な変更と見なされます。
 
-## <a name="fix-by-interface-implementation"></a>インターフェイスの実装を修正します。
+## <a name="fix-by-interface-implementation"></a>インターフェイスの実装による修正
 
-次の例では、これらのジェネリック インターフェイスを実装することで、違反を修正する: `IEnumerable<T>`、 `ICollection<T>`、および`IList<T>`(`IEnumerable(Of T)`、 `ICollection(Of T)`、および`IList(Of T)`Visual Basic で)。
+次の例では、これらのジェネリックインターフェイスを実装`IEnumerable<T>`することに`IList<T>`よって`ICollection(Of T)`、違反`IList(Of T)`を修正します。、 `ICollection<T>`、および (`IEnumerable(Of T)`Visual Basic)。
 
 [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA1005:ジェネリック型で過剰なパラメーターを回避します。](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
-- [CA 1000:ジェネリック型で静的メンバーを宣言しません](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
-- [CA 1002:ジェネリック リストを公開しません](../code-quality/ca1002-do-not-expose-generic-lists.md)
-- [CA 1006:ジェネリック型メンバー シグネチャ内で入れ子にしません](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-- [CA 1004:ジェネリック メソッドは、型パラメーターを指定する必要があります。](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-- [CA 1003:汎用イベント ハンドラーのインスタンスを使用して、](../code-quality/ca1003-use-generic-event-handler-instances.md)
-- [CA 1007:適切な場所にジェネリックを使用します。](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1005ジェネリック型のパラメーターが多すぎないようにする](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1000ジェネリック型の静的メンバーを宣言しません](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+- [CA1002ジェネリックリストを公開しません](../code-quality/ca1002-do-not-expose-generic-lists.md)
+- [CA1006ジェネリック型をメンバーシグネチャに入れ子にしない](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004ジェネリックメソッドは型パラメーターを指定しなければなりません](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1003汎用イベントハンドラーのインスタンスを使用する](../code-quality/ca1003-use-generic-event-handler-instances.md)
+- [CA1007適切な場所にジェネリックを使用する](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>関連項目
 

@@ -2,7 +2,7 @@
 title: はじめに (Visual Studio による Office 開発)
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,21 +14,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b5a666c2c0b558cf7f85e478c43ed9d469f4864c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7a8a49f2b72745dac18a46fe8567578bca090834
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427936"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551498"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>はじめに (Visual Studio による Office 開発)
   このセクションには、Visual Studio の Microsoft Office Developer Tools の使用に役立つトピックが含まれています。
 
-> [!NOTE]
-> [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは VSTO アドインやソリューションと比較して、小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML などのほぼすべての web プログラミング テクノロジを使用して、ビルドすることができます。
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [Office ソリューション開発の概要&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Office ソリューションの開発&#40;の概要 VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
  Visual Studio での Office ソリューションの開発に必要な背景情報を示します。
 
@@ -36,7 +35,7 @@ ms.locfileid: "63427936"
 
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降を対象とする Office プロジェクトの新しいデザインについて説明し、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降に移行する Office プロジェクトのコードに加えられた重大な変更点の一覧を示します。
 
-- [Office アプリケーションおよびプロジェクトの種類で使用できる機能](../vsto/features-available-by-office-application-and-project-type.md)
+- [Office アプリケーションおよびプロジェクトの種類別の使用可能な機能](../vsto/features-available-by-office-application-and-project-type.md)
 
  リボン機能拡張、カスタム作業ウィンドウ、操作ウィンドウ、フォーム領域など、Office 開発機能に必要なアプリケーションおよびプロジェクトについて説明します。
 
@@ -52,7 +51,7 @@ ms.locfileid: "63427936"
 
  Visual Studio を使用して Word のドキュメント レベルのカスタマイズを作成するために必要となる重要な概念について、その概要を示します。
 
-- [VSTO アドインのプログラミングを始める](../vsto/getting-started-programming-vsto-add-ins.md)
+- [VSTO アドインのプログラミングの概要](../vsto/getting-started-programming-vsto-add-ins.md)
 
  Visual Studio を使用して Microsoft Office アプリケーション用のアプリケーション レベルの Visual Studio Tools for Office (VSTO) アドインを作成するために必要となる重要な概念について、その概要を示します。
 
@@ -60,7 +59,7 @@ ms.locfileid: "63427936"
 
  Office ソリューションの開発に Visual Basic for Applications を使用する場合と Visual Studio の Office 開発ツールを使用する場合の相対的なメリットについて説明します。
 
-- [Office プログラミングで一般的なタスク](../vsto/common-tasks-in-office-programming.md)
+- [Office プログラミングにおける一般的なタスク](../vsto/common-tasks-in-office-programming.md)
 
  一般的な問題の解決に役立つトピックへのリンクを示します。
 
@@ -89,4 +88,4 @@ ms.locfileid: "63427936"
 
  Office ソリューションをユーザーが使用できるようにする方法についての情報を提供し、配置方法を選択するときやセキュリティを設定するときに考慮する主な問題点について説明します。
 
-- [Office 技術資料およびビジュアルのどの操作用の visual Studio Tools](http://go.microsoft.com/fwlink/?LinkID=106640)ビデオおよび技術情報については、Visual Studio を使用して作成された Office ソリューションへのリンクが含まれています。
+- [技術記事と視覚的な操作方法の Visual Studio Tools for Office](http://go.microsoft.com/fwlink/?LinkID=106640)Visual Studio を使用して作成された Office ソリューションに関するビデオおよび技術記事へのリンクを示します。

@@ -2,7 +2,7 @@
 title: Visual Studio を使用して Office 用 VSTO アドインを作成する
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,20 +12,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0411d40a4b156e24fcdf4fb3e9de5353787333f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e64d97b948f38b4c9b5943d5e561aa865d4f765f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445562"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551667"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio を使用して Office 用 VSTO アドインを作成する
   Visual Studio の Microsoft Office Developer Tools を使用して、Office を拡張する .NET Framework アプリケーションを作成できます。 このようなアプリケーションは、 *Office ソリューション*とも呼ばれます。
 
  Office Developer Tools で提供される機能は、さまざまなビジネス要件に合った Office ソリューションを作成するのに役立ちます。 このツールには、Visual Basic または Visual C# を使用した Office ソリューションの作成に役立つプロジェクト テンプレートや、Office ソリューションで使用するカスタム ユーザー インターフェイスの作成に役立つビジュアルなデザイナーが含まれています。
 
-> [!NOTE]
-> [複数のプラットフォーム](https://dev.office.com/add-in-availability)にまたがる Office を拡張するソリューション開発に関心がありますか？ 新しい [Office アドイン モデル](https://dev.office.com/docs/add-ins/overview/office-add-ins)をチェックして下さい。 Office アドインは、VSTO アドインとソリューションに比べて小さなフット プリントを持ち、HTML5、JavaScript、CSS3、XML といった、ほぼすべての Web プログラミング テクノロジを使用して、それらをビルドすることができます。
+[!include[Add-ins note](includes/addinsnote.md)]
 
  Office 開発の最新情報については、MSDN の次のデベロッパー センターを参照してください。
 
@@ -102,27 +101,27 @@ ms.locfileid: "63445562"
 
  サンプル アプリケーション、および一般的なタスクの詳細な手順を説明するトピックへのリンクを示します。
 
-- [全般的な参照&#40;Visual Studio での Office 開発&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+- [一般的な&#40;リファレンス (Visual Studio での Office 開発)&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
 
- Office プライマリ相互運用機能アセンブリ、マニフェスト、ユーザー インターフェイス要素、およびエラー メッセージに関する詳細情報へのリンクを提供します。
+ Office プライマリ相互運用機能アセンブリ、マニフェスト、ユーザーインターフェイス要素、およびエラーメッセージに関する詳細情報へのリンクを示します。
 
-- [マネージ参照&#40;Visual Studio での Office 開発&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)
+- [Visual Studio &#40;でのマネージリファレンス Office 開発&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)
 
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] を対象とする Office プロジェクトで使用される API の名前空間と型に関する情報へのリンクを示します。 .NET Framework 3.5 を対象とする Office プロジェクトで使用されている名前空間と型に関する API リファレンス ドキュメントは、Visual Studio 2008 ドキュメントのリファレンス セクション [2007 system マネージ参照](http://go.microsoft.com/fwlink/?LinkId=160658)を参照してください。
 
-- [アンマネージ API リファレンス&#40;Visual Studio での Office 開発&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)
+- [Visual Studio で&#40;のアンマネージ API リファレンス Office 開発&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)
 
  Office アプリケーションでマネージド VSTO アドインのロードとアンロードなどの操作を実行するために使用できる COM インターフェイスに関する情報へのリンクを示します。
 
 ## <a name="related-sections"></a>関連項目
-- [Visual Studio の開発者ポータルでの office 開発](http://go.microsoft.com/fwlink/?LinkId=123844)技術記事、ビデオ、ブログなどの他のリソースを提供します。
+- [Visual Studio 開発者ポータルを使用した Office 開発](http://go.microsoft.com/fwlink/?LinkId=123844)技術記事、ビデオ、ブログなど、その他のリソースを提供します。
 
-- [Visual Studio デベロッパー センター](http://go.microsoft.com/fwlink/?LinkID=99124)技術記事、ビデオ、ブログなどの他の Visual Studio リソースを提供します。
+- [Visual Studio デベロッパーセンター](http://go.microsoft.com/fwlink/?LinkID=99124)技術記事、ビデオ、ブログなど、その他の Visual Studio リソースを提供します。
 
-- [Office Business Application デベロッパー ポータル](http://go.microsoft.com/fwlink/?LinkId=99125)Office Business Application (Oba) と、Office system プラットフォームを使用してそれらをビルドする方法について説明します。
+- [Office Business Applications 開発者ポータル](http://go.microsoft.com/fwlink/?LinkId=99125)Office Business Applications (Oba) に関する情報と、Office system プラットフォームを使用してそれらを構築する方法について説明します。
 
-- [MSDN ライブラリの Microsoft Office 開発 セクション](http://go.microsoft.com/fwlink/?LinkId=149870)する記事を検索し、いくつかのバージョンの Office (Office の開発を使用してに限定されませんソリューションの開発に関するドキュメントを参照して、MSDN ライブラリの領域Visual Studio)。
+- [MSDN ライブラリの Microsoft Office 開発](http://go.microsoft.com/fwlink/?LinkId=149870)に関するセクションMSDN ライブラリの領域では、いくつかのバージョンの Office のソリューション開発に関する記事やリファレンスドキュメントを参照できます (Visual Studio を使用した Office 開発に固有ではありません)。
 
-- [Visual Studio でのアプリケーション開発](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)を設計、Visual Studio を使用する方法を説明するトピックへのリンクが含まれますが開発、デバッグ、および web アプリケーション、XML web サービス、および従来のクライアント アプリケーションを展開します。
+- [Visual Studio でのアプリケーション開発](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)Visual Studio を使用して、web アプリケーション、XML web サービス、および従来のクライアントアプリケーションを設計、開発、デバッグ、および配置する方法について説明するトピックへのリンクを示します。
 
-- [Visual Studio での .NET framework プログラミング](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))Visual Basic および Visual で .NET Framework でのアプリケーション開発について説明しますC#します。
+- [Visual Studio でのプログラミングの .NET Framework](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))Visual Basic とビジュアルC#の .NET Framework を使用したアプリケーション開発について説明します。
