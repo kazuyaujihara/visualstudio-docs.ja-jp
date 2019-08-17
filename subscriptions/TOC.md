@@ -21,7 +21,7 @@
 #### [サインインに関する問題](sign-in-issues.md)
 #### [サブスクライバー データの匿名化](anonymization.md)
 ### [サブスクリプション ポータルの概要](using-the-subscriber-portal.md)
-### [サブスクリプションの管理](manage-vs-subscriptions.md)
+### [サブスクリプションを管理する](manage-vs-subscriptions.md)
 ### 利点
 #### ツール
 ##### [Azure クレジット](vs-azure.md)
