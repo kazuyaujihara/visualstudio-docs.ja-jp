@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf217f2826bf618db2288107fafeff091e6a2bd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b0bda0d52a50ef3f92d8cecc4156922779f2af5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824691"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926654"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>コード化された UI テストを使用してコードをテストする
 
@@ -158,7 +158,7 @@ Visual Studio では、コード化された UI テストを簡単に作成で�
 
 ## <a name="validate-the-properties-of-ui-controls"></a>UI コントロールのプロパティを検証する
 
-**コード化された UI テスト ビルダー**を使用すると、テストの <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> にユーザー インターフェイス (UI) を追加したり、UI コントロールのアサーションを使用する検証メソッドのコードを生成したりできます。
+**コード化された UI テスト ビルダー**を使用すると、テストの [UIMap](/previous-versions/dd580454(v=vs.140)) にユーザー インターフェイス (UI) を追加したり、UI コントロールのアサーションを使用する検証メソッドのコードを生成したりできます。
 
 UI コントロールのアサーションを作成するには、**コード化された UI テスト ビルダー**の**アサーションの追加**ツールを選択し、正しいかどうかを検証するテスト対象アプリケーションのコントロールにドラッグします。 ボックスがコントロールを囲んだら、マウス ボタンを離します。 コントロール クラス コードがすぐに *UIMap.Designer.cs* ファイルに作成されます。
 
@@ -402,10 +402,10 @@ UI コントロールの特定のプロパティ値を取得および設定す�
 
 [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) や [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox) などの、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>から派生するコントロールを使用して、プロパティ値を直接取得したり設定したりできます。 次のコードは、いくつかの例を示しています。
 
- ```csharp
- int i = myHtmlList.ItemCount;
- myWinCheckBox.Checked = true;
- ```
+```csharp
+int i = myHtmlList.ItemCount;
+myWinCheckBox.Checked = true;
+```
 
 ### <a name="to-get-properties-from-ui-test-controls"></a>UI テストのコントロールからプロパティを取得するには
 
@@ -455,7 +455,6 @@ UI コントロールの特定のプロパティ値を取得および設定す�
 
 - [手動テストの記録と再生](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [チュートリアル: コード化された UI テストの作成、編集、保守](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [UWP アプリをテストするためのコード化された UI テストの作成](test-uwp-app-with-coded-ui-test.md)

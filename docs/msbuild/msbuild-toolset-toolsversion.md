@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7da41b1b82299bd32d1af805ea6226690e79115
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f87513a8124b728568f78bee9efdf48fb35a5301
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747379"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926379"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild ツールセット (ToolsVersion)
 
@@ -106,11 +106,11 @@ MSBuild には、ツールセットにアクセスするための 2 つの方法
 
 - <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A>: マネージド ツール フォルダーに通常格納されているファイルのパスを返します。
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> は、ビルド ツールのパスを返します。
+- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121)): ビルド ツールのパスを返します。
 
 ### <a name="sub-toolsets"></a>サブツールセット
 
- 15\.0 より前のバージョンの MSBuild は、レジストリ キーを使って基本ツールのパスを指定します。 キーにサブキーがある場合、MSBuild ではそのサブキーを使用して、追加のツールを含むサブツールセットのパスを指定します。 この場合、ツールセットは両方のキーで定義されたプロパティ定義を組み合わせることによって定義されます。
+ 15.0 より前のバージョンの MSBuild は、レジストリ キーを使って基本ツールのパスを指定します。 キーにサブキーがある場合、MSBuild ではそのサブキーを使用して、追加のツールを含むサブツールセットのパスを指定します。 この場合、ツールセットは両方のキーで定義されたプロパティ定義を組み合わせることによって定義されます。
 
 > [!NOTE]
 > ツールセットのプロパティ名が競合する場合、サブキーのパスに対して定義された値が、ルート キーのパスに対して定義された値よりもオーバーライドされます。

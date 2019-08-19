@@ -12,18 +12,18 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: aa8ffe308f8a1181ed18af52ba7537c46007de94
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b235576f21b63a7be4170f36abf58bed9fab9df3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317649"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923917"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Android および iOS での OpenGL ES アプリケーションのビルド
 
 共通コードを共有する iOS アプリ用および Android アプリ用の Visual Studio ソリューションおよびプロジェクトを作成できます。 この記事では、単純な iOS アプリと Android Native Activity アプリの両方を作成するソリューション テンプレートについて説明します。 これらのアプリには、OpenGL ES を使用して各プラットフォームで同じアニメーション回転キューブを表示する共通の C++ コードがあります。 OpenGL ES (OpenGL for Embedded Systems または GLES) は、多くのモバイル デバイスでサポートされている 2D および 3D グラフィックス API です。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 iOS 用および Android 用 OpenGL ES アプリを作成するには、その前にすべてのシステム要件を満たしていることを確認してください。 C++ によるモバイル開発ワークロードをまたインストールしていない場合は、Visual Studio インストーラーにインストールします。 iOS 用にビルドするには、オプションの C++ iOS 開発ツールを含めます。 Android 用にビルドするには、C++ Android 開発ツールと、必要な以下のサードパーティ ツールをインストールします。Android NDK、Apache Ant、Google Android Emulator、Intel Hardware Accelerated Execution Manager。 次に、システムでの実行に向けて Intel HAXM と Android Emulator を構成します。 詳細情報と詳細な手順については、「[C++ によるクロスプラットフォーム モバイル開発をインストールする](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)」をご覧ください。 iOS アプリをビルドしてテストするには、インストール手順に従って設定されている Mac コンピューターが必要になります。 iOS 開発の設定方法について詳しくは、[iOS を使用してビルドするためのツールのインストールと構成](../cross-platform/install-and-configure-tools-to-build-using-ios.md)に関するページをご覧ください。
 
@@ -158,7 +158,7 @@ iOS アプリを iOS デバイスに配置するには、Mac 上の Xcode への
 1. ツールバーで、iOS デバイスを選択し、Mac に接続されているデバイスでアプリを実行します。 アプリが起動しない場合、デバイスによって、デプロイされたアプリケーションに、デバイス上で実行するためのアクセス許可が付与されていることを確認します。 このアクセス許可を設定するには、デバイスで **[Settings]\(設定\)**  >  **[General]\(全般\)**  >  **[Device Management]\(デバイス管理\)** に移動します。 デベロッパ APP のアカウントを選択し、アカウントを信頼して、アプリを確認します。 Visual Studio からアプリの再実行を試行します。
 
    ![iOS デバイス上の iOS アプリ](../cross-platform/media/cppmdd-opengles-iosdevice.png "CPPMDD_OpenGLES_iOSDevice")
-   
+
    アプリが開始されたら、ブレークポイントを設定し、Visual Studio デバッガーを使用してローカルを確認したり、呼び出し履歴を確認したり、値を観察したりできます。
 
    ![iOS アプリケーションのブレークポイントにあるデバッガー](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")

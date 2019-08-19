@@ -1,7 +1,7 @@
 ---
 title: ネットワーク ベース インストールを作成する
 description: 企業内に Visual Studio を展開するためのネットワーク インストール ポイントを作成する方法について説明します。
-ms.date: 04/26/2019
+ms.date: 08/06/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 766e3a35c6f9b775373fb7a096000177cfee131d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365338"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870775"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio のネットワーク インストールを作成する
 
@@ -85,6 +85,8 @@ response.json を変更し、セットアップの実行時に使用される既
 ## <a name="copy-the-layout-to-a-network-share"></a>ネットワーク共有にレイアウトをコピーする
 
 他のコンピューターから実行できるようにネットワーク共有でレイアウトをホストします。
+
+次の例では、[xcopy](/windows-server/administration/windows-commands/xcopy/) を使用します。 必要に応じて、[robocopy](/windows-server/administration/windows-commands/robocopy/) を使用することもできます。  
 
 ::: moniker range="vs-2017"
 

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 07cdc27cb47a6de46585f573d78b5af00631c2a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e43706462cadce7f27efc9509ccb2c02677d43b1
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002398"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870083"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>コード化された UI テストと操作の記録を拡張する
 
@@ -33,7 +33,7 @@ ms.locfileid: "63002398"
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>
+- [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)
 - [コード化された UI テストのベスト プラクティス](../test/best-practices-for-coded-ui-tests.md)

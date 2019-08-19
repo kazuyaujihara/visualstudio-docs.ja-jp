@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 74732249f5a82974f3df66df4b95357cdcf71c79
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826281"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925810"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio オフライン インストールに必要な証明書をインストールする
 
@@ -150,25 +150,19 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
   * ルート証明書:**Microsoft Root Certificate Authority**
     * 必須です。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
 
-**更新**:Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合、Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。
+**更新**:Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合、Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。 これらの証明書は、.p12 ではなく .cer ファイルに格納されます。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-* **ManifestSignCertificates.p12** に含まれるもの:
-  * 中間証明書:**Microsoft Code Signing PCA 2011**
-    * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
+* **ManifestSignCertificates.cer** には次のものが含まれます。
   * ルート証明書:**Microsoft Root Certificate Authority 2011**
     * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
-* **ManifestCounterSignCertificates.p12** に含まれるもの:
-  * 中間証明書:**Microsoft Time-Stamp PCA 2010**
-    * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
+* **ManifestCounterSignCertificates.cer** には次のものが含まれます。
   * ルート証明書:**Microsoft Root Certificate Authority 2010**
     * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
-* **Vs_installer_opc.SignCertificates.p12** に含まれるもの:
-  * 中間証明書:**Microsoft Code Signing PCA**
-    * すべてのシステムに必要。 Windows Update からすべての更新プログラムが適用されているシステムにはこの証明書がない場合があることに注意してください。
+* **Vs_installer_opc.SignCertificates.cer** には次のものが含まれます。
   * ルート証明書:**Microsoft Root Certificate Authority**
     * 必須です。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
 
