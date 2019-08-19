@@ -1,18 +1,18 @@
 ---
-title: Visual Studio for Mac での ASP.NET Core アプリケーションのビルド
+title: ASP.NET Core アプリケーションの構築
 description: この記事では、インストールや新しいプロジェクトの作成など、Visual Studio for Mac で ASP.NET の使用を始める方法について説明します。
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: f0a2e8433877b3eb61228a886280707f3b4a37fe
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 345111144e0e209d91d34e53fefcd7d1207d9a8a
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693137"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872892"
 ---
-# <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Visual Studio for Mac での ASP.NET Core アプリケーションのビルド 
+# <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Visual Studio for Mac での ASP.NET Core アプリケーションのビルド
 
 ASP.NET Core は、Web アプリとサービス、IoT アプリ、モバイル バックエンドなど、最新のクラウド ベースのインターネットに接続されているアプリケーションをビルドするためのオープンソースおよびクロスプラットフォーム フレームワークです。 ASP.NET Core アプリは、[.NET Core](https://www.microsoft.com/net/core/platform) ランタイムまたは .NET Framework ランタイムで実行できます。 クラウドに展開されているか、またはオンプレミスで実行されるアプリに対して、最適化された開発フレームワークを提供するように構築されています。 これは、オーバーヘッドが最小限であるモジュラー コンポーネントで構成されています。 Windows、Mac、Linux 上で、ASP.NET Core アプリ クロスプラットフォームを開発して実行することができます。 ASP.NET Core は [GitHub](https://github.com/aspnet/home) でオープン ソースとして公開されています。
 

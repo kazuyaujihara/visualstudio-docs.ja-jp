@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ac9e9c7bbafcf54e7bd31bde20469310c2ad3f81
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744978"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869760"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>ツールボックス アイテムの選択、WPF コンポーネント
 
@@ -77,11 +77,11 @@ ms.locfileid: "66744978"
 
 - ソリューションの構成をデバッグからリリース、またはリリースからデバッグに変更したときに、正しく更新されません。 これは、参照がプロジェクト参照ではなく、ディスク上のアセンブリに対するものであるためです。 コントロールが現在のソリューションの一部である場合、デバッグからリリースに変更しても、プロジェクトは引き続きコントロールのデバッグ バージョンを参照します。
 
-さらに、デザイン時のメタデータがカスタム コントロールに適用されていて、<xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> が `false` に設定されていることがこのメタデータで指定されている場合、コントロールはツールボックスに表示されません。
+さらに、デザイン時のメタデータがカスタム コントロールに適用されていて、[Microsoft.Windows.Design.ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) が `false` に設定されていることがこのメタデータで指定されている場合、コントロールはツールボックスに表示されません。
 
 コントロールの名前空間とアセンブリをマッピングすることにより、XAML ビューでコントロールを直接参照できます。
 
 ## <a name="see-also"></a>関連項目
 
 - [ツールボックス](../../ide/reference/toolbox.md)
-- [WPF の概要](../../designers/getting-started-with-wpf.md)
+- [WPF の使用を開始する](../../designers/getting-started-with-wpf.md)

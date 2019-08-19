@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2c95a460f7e3003db5cdec67e5bf142295719a
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416932"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925831"
 ---
 # <a name="understand-build-platforms"></a>ビルド プラットフォームについて
 
@@ -30,9 +30,11 @@ ms.locfileid: "68416932"
 
 ## <a name="in-this-section"></a>このセクションの内容
 
- [方法: プロジェクトを構成してターゲット プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md) プロジェクトを構成して特定のターゲット プラットフォームを設定する方法について説明します。
+[方法: プロジェクトを構成してターゲット プラットフォームを設定する](../ide/how-to-configure-projects-to-target-platforms.md)\
+プロジェクトを構成して特定の対象プラットフォームを設定する方法について説明します。
 
- [方法: プロジェクトを構成して複数のターゲット プラットフォームを設定する](../ide/how-to-configure-projects-to-target-multiple-platforms.md) プロジェクトを構成して複数のターゲット プラットフォームを設定する方法について説明します。
+[方法: プロジェクトを構成して複数の対象プラットフォームを設定する](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+プロジェクトを構成して複数の対象プラットフォームを設定する方法について説明します。
 
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: Unity を使用した Visual Studio for Mac でのゲーム作成の概要
+title: Unity を使用したゲーム作成の概要
 description: Unity と Visual Studio for Mac の概要
 author: asb3993
 ms.author: amburns
@@ -7,14 +7,14 @@ ms.date: 05/20/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
-ms.openlocfilehash: 8f14d21468336dba220a76ad8978f136d50f96f1
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: dd69156b1397ba6232d9143f54b0de1ef4506ecc
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836161"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68873453"
 ---
-# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Unity を使用した Visual Studio for Mac でのゲーム作成の概要 
+# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Unity を使用した Visual Studio for Mac でのゲーム作成の概要
 
 Unity は、C# でのゲーム開発を可能にするゲーム エンジンです。 このチュートリアルでは、Unity 環境で Visual Studio for Mac と Visual Studio for Mac Tools for Unity 拡張機能を使用して、Unity ゲームを開発およびデバッグする方法を示します。
 
@@ -156,7 +156,7 @@ Visual Studio for Mac Tools for Unity は無料の拡張機能であり、Visual
         public float Speed = 50;
         private Transform _playerTransform;
         private Transform _myTransform;
-        
+
         void Start()
         {
             var player = GameObject.FindGameObjectWithTag("Player");

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 203952f712fb3b28b93d570f99e6d36f56b5f2b5
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428125"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870277"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>チュートリアル: プロファイラー API の使用
 
@@ -37,7 +37,7 @@ ms.locfileid: "63428125"
  ネイティブ コード用の Visual Studio プロファイラー API は *VSPerf.dll* にあります。 ヘッダー ファイル *VSPerf.h* とインポート ライブラリ *VSPerf.lib* は、*Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* ディレクトリにあります。  64 ビット アプリの場合、フォルダーは *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* です
  ::: moniker-end
 
- マネージド コード用のプロファイラー API は、*Microsoft.VisualStudio.Profiler.dll* にあります。 この DLL は、*Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* ディレクトリにあります。 64 ビット アプリの場合、フォルダーは *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64* です。 詳細については、「<xref:Microsoft.VisualStudio.Profiler>」を参照してください。
+ マネージド コード用のプロファイラー API は、*Microsoft.VisualStudio.Profiler.dll* にあります。 この DLL は、*Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* ディレクトリにあります。 64 ビット アプリの場合、フォルダーは *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64* です。 詳しくは、[Profiler](/previous-versions/ms242704(v=vs.140)) に関する記事をご覧ください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
  このチュートリアルでは、ユーザーが選択した開発環境で、デバッグとサンプリングがサポートされていることを前提としています。 以下のトピックでは、これらの前提条件の概要について説明しています。
@@ -126,15 +126,15 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Visual Studio IDE でデータを収集して参照するには
 
-1. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE を開きます。 **[分析]** メニューの **[プロファイラー]** をポイントし、**[新しいパフォーマンス セッション]** を選択します。
+1. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE を開きます。 **[分析]** メニューの **[プロファイラー]** をポイントし、 **[新しいパフォーマンス セッション]** を選択します。
 
-2. **[パフォーマンス エクスプローラー]** ウィンドウで、コンパイルされたバイナリを、**[ターゲット]** 一覧に追加します。 **[ターゲット]** を右クリックして **[ターゲット バイナリの追加]** を選択します。 **[ターゲット バイナリの追加]** ダイアログ ボックスでバイナリを探し、**[開く]** をクリックします。
+2. **[パフォーマンス エクスプローラー]** ウィンドウで、コンパイルされたバイナリを、 **[ターゲット]** 一覧に追加します。 **[ターゲット]** を右クリックして **[ターゲット バイナリの追加]** を選択します。 **[ターゲット バイナリの追加]** ダイアログ ボックスでバイナリを探し、 **[開く]** をクリックします。
 
-3. **[パフォーマンス エクスプローラー]** ツールバーで、**[メソッド]** 一覧の **[インストルメンテーション]** を選択します。
+3. **[パフォーマンス エクスプローラー]** ツールバーで、 **[メソッド]** 一覧の **[インストルメンテーション]** を選択します。
 
 4. **[プロファイルを使用して起動]** をクリックします。
 
-    プロファイラーはバイナリをインストルメント化し、実行し、パフォーマンス レポート ファイルを作成します。 パフォーマンス レポート ファイルが、**[パフォーマンス エクスプローラー]** の **[レポート]** ノードに表示されます。
+    プロファイラーはバイナリをインストルメント化し、実行し、パフォーマンス レポート ファイルを作成します。 パフォーマンス レポート ファイルが、 **[パフォーマンス エクスプローラー]** の **[レポート]** ノードに表示されます。
 
 5. 結果のパフォーマンス レポート ファイルを開きます。
 
@@ -170,7 +170,7 @@ DataCollection.CurrentId);
 
 ## <a name="see-also"></a>関連項目
 
-- <xref:Microsoft.VisualStudio.Profiler>
+- [プロファイラー](/previous-versions/ms242704(v=vs.140))
 - [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [はじめに](../profiling/getting-started-with-performance-tools.md)
 - [コマンド ラインからのプロファイリング](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4c3922f8f41f950ede7065e2e15ece07890ba6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6328ea53c90b5a5a7ba50fde5a00e29fadacaaa7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825850"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924515"
 ---
 # <a name="resource-details-view---contention-data"></a>リソースの詳細ビュー - 競合データ
 リソースの詳細ビューには、選択したリソースに対する競合によって発生したブロック イベントが、タイムライン グラフで表示されます。 ブロック イベントは、リソースに対するアクセスを別のスレッドがロックしているためにスレッドが実行を中断されたときに発生します。
@@ -54,7 +54,7 @@ ms.locfileid: "67825850"
 
 - タイムライン グラフで、 **[合計]** をクリックします。
 
-     リソースの競合ビューが表示されます。 詳細については、「[Resource Contentions View](../profiling/resource-contentions-view-contention-data.md) (リソースの競合ビュー)」をご覧ください。
+     リソースの競合ビューが表示されます。 詳細については、「[リソースの競合ビュー](../profiling/resource-contentions-view-contention-data.md)」をご覧ください。
 
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>スレッドのすべての競合イベントを表示するには
 

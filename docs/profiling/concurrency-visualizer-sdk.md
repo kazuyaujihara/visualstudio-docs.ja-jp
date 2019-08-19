@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2ade3e1b5a2317d16d668079275506509aeef7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33b8f0215e09dd43c265c7eb8ba08613132fabbc
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001111"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870309"
 ---
 # <a name="concurrency-visualizer-sdk"></a>コンカレンシー ビジュアライザー SDK
 コンカレンシー ビジュアライザー SDK を使用してソース コードをインストルメント化し、コンカレンシー ビジュアライザーに追加情報を表示することができます。 コードでフェーズとイベントに追加データを関連付けることができます。 このような追加の視覚化機能のことを*マーカー*と呼びます。  入門用のチュートリアルについては、「[Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405)」(コンカレンシー ビジュアライザー SDK の概要) を参照してください。
@@ -27,13 +27,13 @@ ms.locfileid: "63001111"
  コンカレンシー ビジュアライザーは、マーカーの生成に使用できる既定のプロバイダーを示します。 プロバイダーはコンカレンシー ビジュアライザーと共に既に登録されており、UI にマーカーを表示するためにユーザー側で行う必要がある操作はありません。
 
 ### <a name="c-and-visual-basic"></a>C# および Visual Basic
- C#、Visual Basic、および他のマネージド コードでは、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> を呼び出して既定のプロバイダーを使います。 マーカー生成用の 4 つの関数、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteFlag%2A>、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.EnterSpan%2A>、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteMessage%2A>、<xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteAlert%2A> が公開されます。 プロパティで既定を使用するかどうかに応じて、これらの関数には複数のオーバーロードがあります。  最も単純なオーバーロードは、イベントの説明を指定する文字列パラメーターのみを受け取ります。 説明はコンカレンシー ビジュアライザーのレポートに表示されます。
+ C#、Visual Basic、および他のマネージド コードでは、[Markers](/previous-versions/hh694099(v=vs.140)) クラスのメソッド を呼び出して既定のプロバイダーを使います。 マーカー生成用に次の 4 つの関数が公開されます: [WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29)、[EnterSpan](/previous-versions/hh694205(v=vs.140))、[WriteMessage](/previous-versions/hh694161(v=vs.140))、[WriteAlert](/previous-versions/hh694180(v=vs.140))。 プロパティで既定を使用するかどうかに応じて、これらの関数には複数のオーバーロードがあります。  最も単純なオーバーロードは、イベントの説明を指定する文字列パラメーターのみを受け取ります。 説明はコンカレンシー ビジュアライザーのレポートに表示されます。
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>C# または Visual Basic のプロジェクトに SDK のサポートを追加するには
 
-1. メニュー バーで、**[分析]**、**[コンカレンシー ビジュアライザー]**、**[プロジェクトへの SDK の追加]** の順に選択します。
+1. メニュー バーで、 **[分析]** 、 **[コンカレンシー ビジュアライザー]** 、 **[プロジェクトへの SDK の追加]** の順に選択します。
 
-2. SDK にアクセスするプロジェクトを選択し、**[選択したプロジェクトに SDK を追加]** ボタンを選択します。
+2. SDK にアクセスするプロジェクトを選択し、 **[選択したプロジェクトに SDK を追加]** ボタンを選択します。
 
 3. imports ステートメントまたは using ステートメントをコードに追加します。
 
@@ -50,9 +50,9 @@ ms.locfileid: "63001111"
 
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>C++ または C のプロジェクトに SDK のサポートを追加するには
 
-1. メニュー バーで、**[分析]**、**[コンカレンシー ビジュアライザー]**、**[プロジェクトへの SDK の追加]** の順に選択します。
+1. メニュー バーで、 **[分析]** 、 **[コンカレンシー ビジュアライザー]** 、 **[プロジェクトへの SDK の追加]** の順に選択します。
 
-2. SDK にアクセスするプロジェクトを選択し、**[選択したプロジェクトに SDK を追加]** ボタンを選択します。
+2. SDK にアクセスするプロジェクトを選択し、 **[選択したプロジェクトに SDK を追加]** ボタンを選択します。
 
 3. C++ の場合は、`cvmarkersobj.h` を含めます。 C の場合は、`cvmarkers.h` を含めます。
 
@@ -76,19 +76,19 @@ ms.locfileid: "63001111"
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>C# または Visual Basic プロジェクトで新しいマーカー プロバイダーを使用するには
 
-1. <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> オブジェクトを作成します。  コンストラクターは GUID を受け取ります。
+1. [MarkerWriter](/previous-versions/hh694138(v=vs.140)) オブジェクトを作成します。  コンストラクターは GUID を受け取ります。
 
-2. プロバイダーを登録するには、コンカレンシー ビジュアライザーの [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを開きます。  **[マーカー]** タブを選択してから、**[新しいプロバイダーを追加します]** ボタンを選択します。 [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスで、プロバイダーの作成に使用された GUID と、プロバイダーの説明を入力します。
+2. プロバイダーを登録するには、コンカレンシー ビジュアライザーの [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを開きます。  **[マーカー]** タブを選択してから、 **[新しいプロバイダーを追加します]** ボタンを選択します。 [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスで、プロバイダーの作成に使用された GUID と、プロバイダーの説明を入力します。
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>C# または C プロジェクトで新しいマーカー プロバイダーを使用するには
 
 1. `CvInitProvider` 関数を使用して、PCV_PROVIDER を初期化します。  コンストラクターは GUID* と PCV_PROVIDER\* を受け取ります。
 
-2. プロバイダーを登録するには、[[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを開きます。  **[マーカー]** タブを選択してから、**[新しいプロバイダーを追加します]** ボタンを選択します。 ダイアログ ボックスに、プロバイダーの作成に使用された GUID と、プロバイダーの説明を入力します。
+2. プロバイダーを登録するには、[[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを開きます。  **[マーカー]** タブを選択してから、 **[新しいプロバイダーを追加します]** ボタンを選択します。 ダイアログ ボックスに、プロバイダーの作成に使用された GUID と、プロバイダーの説明を入力します。
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>C# または Visual Basic プロジェクトでマーカー シリーズを使用するには
 
-1. 新しい <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> を使うには、最初に <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> オブジェクトを使って作成した後、新しいシリーズから直接マーカー イベントを生成します。
+1. 新しい [MarkerSeries](/previous-versions/hh694127(v=vs.140)) を使うには、最初に [MarkerWriter](/previous-versions/hh694138(v=vs.140)) オブジェクトを使って作成した後、新しいシリーズから直接マーカー イベントを生成します。
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");
@@ -125,5 +125,5 @@ ms.locfileid: "63001111"
 |-----------|-----------------|
 |[C++ ライブラリ リファレンス](../profiling/cpp-library-reference.md)|C++ のコンカレンシー ビジュアライザー API について説明します。|
 |[C ライブラリ リファレンス](../profiling/c-library-reference.md)|C のコンカレンシー ビジュアライザー API について説明します。|
-|<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|マネージド コードのコンカレンシー ビジュアライザー API について説明します。|
+|[インストルメンテーション](/previous-versions/hh694104(v=vs.140))|マネージド コードのコンカレンシー ビジュアライザー API について説明します。|
 |[コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)|コンカレンシー メソッドを使用して生成され、スレッド実行データを含む、プロファイリング データ ファイルのビューとレポートに関するリファレンス情報。|
