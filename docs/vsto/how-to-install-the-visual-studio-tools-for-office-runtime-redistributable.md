@@ -2,7 +2,7 @@
 title: '方法: Visual Studio Tools for Office ランタイム再頒布可能パッケージをインストールする方法'
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,15 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41b6ec5c91fe9dc16a07703358ee0bb951efb490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5d9bb53fbdc3d6766dab47c654f0a43ad902b2f3
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412588"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551832"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>方法: Visual Studio Tools for Office ランタイム再頒布可能パッケージをインストールする方法
   Visual Studio 2010 Tools for Office ランタイムは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の中で Microsoft Office developer tools を使用して作成されたソリューションを実行する各コンピューターにインストールする必要があります。 ランタイムは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、および Microsoft Office をインストールすると自動的にインストールされます。 詳細については、[Visual Studio Tools for Office runtime のインストール シナリオ](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)を参照してください。
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
  次の場合は、手動による以下のインストール手順を実行する必要があります。
 
@@ -55,5 +57,5 @@ ms.locfileid: "63412588"
 - [Office ソリューションの開発コンピューターの構成](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 - [方法: Office ソリューションを開発するコンピューターを構成する方法](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
 - [方法: Office プライマリ相互運用機能アセンブリをインストールする方法](../vsto/how-to-install-office-primary-interop-assemblies.md)
-- [ServerDocument クラスを使用してサーバー上のドキュメントを管理します。](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
+- [ServerDocument クラスを使用してサーバー上のドキュメントを管理する](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
 - [Office ソリューションのデプロイ](../vsto/deploying-an-office-solution.md)
