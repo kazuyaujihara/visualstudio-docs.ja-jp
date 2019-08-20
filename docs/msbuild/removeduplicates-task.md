@@ -66,7 +66,7 @@ ms.locfileid: "62811616"
 </Project>
 ```
 
- `RemoveDuplicates` タスクが入力順を保持する例を次に示します。 タスクが完了すると、`FilteredItems` 項目コレクションには、*MyFile2.cs**MyFile1.cs*および *MyFile3.cs* の順に項目が含まれます。
+ `RemoveDuplicates` タスクが入力順を保持する例を次に示します。 タスクが完了すると、`FilteredItems` 項目コレクションには、 *MyFile2.cs* *MyFile1.cs* および *MyFile3.cs* の順に項目が含まれます。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
