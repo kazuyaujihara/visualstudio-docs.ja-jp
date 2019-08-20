@@ -1,10 +1,10 @@
 - name: コード分析のドキュメント
   href: index.md
-- name: マネージド コードのコード分析
+- name: マネージド コードの分析
   items:
     - name: 概要
       href: code-analysis-for-managed-code-overview.md
-    - name: Roslyn アナライザー (ソースの分析)
+    - name: コード分析
       items:
         - name: 概要
           displayName: 'roslyn analyzers, source analysis'
@@ -17,32 +17,32 @@
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: よくあるご質問
           href: analyzers-faq.md
-    - name: バイナリ アナライザー (スタティック コード分析)
+    - name: レガシ分析
       items:
         - name: 概要
           displayName: 'static code analysis, binary analysis'
           href: static-code-analysis-for-managed-code-overview.md
-        - name: スタティック コード分析のチュートリアル
+        - name: レガシ分析のチュートリアル
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: 移行
           href: fxcop-analyzers.yml
-        - name: 手動でのコード分析の実行
+        - name: レガシ分析を手動で実行する
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: 構成
           items:
-            - name: バイナリ アナライザーのコード分析の構成
+            - name: レガシ分析の構成
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: 自動コード分析を有効にする
+            - name: 自動レガシ コード分析を有効にする
               href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-            - name: コード分析辞書のカスタマイズ
+            - name: レガシ コード分析辞書をカスタマイズする
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: 抑制
           items:
-            - name: 生成されたコードに対するスタティック コード分析の警告を抑制する
+            - name: 生成されたコードに対するレガシ分析の警告を表示しない
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: コード分析のアプリケーション エラー
+        - name: レガシ分析のアプリケーション エラー
           items:
-            - name: コード分析のポリシー エラー
+            - name: レガシ分析のポリシー エラー
               href: code-analysis-policy-errors.md
             - name: 概要
               href: code-analysis-application-errors.md
@@ -104,7 +104,7 @@
           items:
             - name: チェックイン ポリシーを作成または更新する方法
               href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-            - name: コード分析チェックイン ポリシーの実装
+            - name: レガシ分析チェックイン ポリシーの実装
               href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
             - name: 保守性の高いコードの適用
               href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
@@ -127,7 +127,7 @@
               href: fxcop-analyzer-options.md
         - name: よくあるご質問
           href: fxcop-analyzers-faq.md
-    - name: スタティック分析から FxCop アナライザーへの移行
+    - name: レガシ分析から FxCop アナライザーへの移行
       items:
         - name: 概要
           href: fxcop-analyzers.yml
@@ -698,6 +698,10 @@
                   href: ca5378.md
                 - name: 'CA5386: SecurityProtocolType 値のハードコードを避けます'
                   href: ca5386.md
+                - name: 'CA5397:非推奨の SslProtocols 値を使用しません'
+                  href: ca5397.md
+                - name: 'CA5398:ハードコーディングされた SslProtocols 値を回避します'
+                  href: ca5398.md
             - name: 使用法に関する警告
               items:
                 - name: 概要
@@ -791,7 +795,7 @@
                   href: ca2243-attribute-string-literals-should-parse-correctly.md
             - name: 自動機能の中断
               href: automatic-feature-suspension.md
-- name: C/C++ のコード分析
+- name: C/C++ コードの分析
   items:
     - name: 概要
       displayName: C++ code analysis
