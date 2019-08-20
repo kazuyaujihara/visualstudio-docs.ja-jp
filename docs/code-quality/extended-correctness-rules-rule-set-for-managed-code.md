@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923997"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585116"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>マネージド コードの "拡張正確性規則" 規則セット
+
 Microsoft 拡張正確性規則の規則セットは、コード分析によって報告されるロジックおよびフレームワークの使用エラーを最大化します。 COM 相互運用性やモバイルアプリケーションなど、特定のシナリオに重点が置かれています。 これらのシナリオのいずれかがプロジェクトに適用される場合、またはプロジェクトの追加の問題を検出する場合は、この規則セットを含めることを検討してください。
 
-Microsoft 拡張正確性規則の規則セットには、Microsoft の "基本正確性規則" 規則セットに含まれる規則が含まれています。 基本的な正確性規則には、"Microsoft の最小推奨規則" 規則セットに含まれる規則が含まれます。 詳細については、「マネージコードとマネージド[コードの "マネージ推奨規則" 規則セット](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)[の "基本的な正確性規則規則セット](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)" を参照してください。
+"Microsoft 拡張正確性規則" 規則セットには、"[基本正確性規則](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)" 規則セットに含まれる規則が含まれます。この規則には、"管理されている[推奨規則](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)" 規則セットに含まれる規則が含まれています。
 
 次の表では、Microsoft 拡張正確性規則の規則セットに含まれるすべての規則について説明します。
 

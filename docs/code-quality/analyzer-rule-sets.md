@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0be66559802188503c3b8f8c1c2cf2955dbd8a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547944"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585137"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>アナライザー パッケージの規則セット
 
 定義済みの規則セットは、一部の NuGet アナライザーパッケージに含まれています。 たとえば、 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer パッケージに含まれている規則セット (バージョン2.6.2 以降) は、セキュリティ、名前付け、パフォーマンスなど、カテゴリに基づいて規則を有効または無効にします。 規則セットを使用すると、特定のカテゴリの規則に関連する規則違反だけを簡単に確認できます。
 
-レガシの "FxCop" 分析から .NET Compiler Platform ベースのコード分析に移行している場合、これらの規則セットを使用すると、以前に使用したのと同じ規則構成を使用し続けることができます。
+レガシの "FxCop" 分析から .NET Compiler Platform ベースのコード分析に移行している場合、これらの規則セットを使用すると、[以前に使用したもの](rule-set-reference.md)と同様の規則の構成を引き続き使用できます。
 
 ## <a name="use-analyzer-package-rule-sets"></a>アナライザーパッケージの規則セットを使用する
 
@@ -58,7 +58,7 @@ ms.locfileid: "69547944"
 
 また、パフォーマンスやセキュリティなど、パッケージ内のルールのカテゴリごとに2つのルールセットがあります。 1つの規則セットによってカテゴリのすべての規則が有効になり、1つの規則セットによって、カテゴリ内の各規則の既定の重大度および有効化の設定が優先されます。
 
-[FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer パッケージには、次のカテゴリのルールセットが含まれています。これらは、従来の分析で使用できるルールセットに一致します。
+[FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer パッケージには、次のカテゴリのルールセットが含まれています。
 
 - デザイン
 - ドキュメント
