@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919569"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585011"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>マネージド コードの "基本正確性規則" 規則セット
-"基本的な正確性規則" 規則セットは、フレームワーク Api の使用におけるロジックエラーと一般的な誤りに焦点を当てます。 基本的な正確性規則には、"最小推奨規則" 規則セットの規則が含まれます。 詳細については、「マネージ[コードのマネージ推奨規則の規則セット](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)」を参照してください。この規則セットを追加して、推奨される最小規則によって報告される警告の一覧を展開する必要があります。
+
+"基本的な正確性規則" 規則セットは、フレームワーク Api の使用におけるロジックエラーと一般的な誤りに焦点を当てます。 基本的な正確性規則には、"[マネージ推奨規則](managed-recommended-rules-rule-set-for-managed-code.md)" 規則セットの規則が含まれます。
 
 次の表では、Microsoft の基本的な正確性規則の規則セットに含まれるすべての規則について説明します。
 
