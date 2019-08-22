@@ -414,6 +414,8 @@
                       href: ide/reference/use-block-body-lambda.md
                     - name: 未使用値の割り当て、変数、およびパラメーター
                       href: ide/reference/unused-values-parameters.md
+                    - name: 呼び出しチェーンのラップおよび配置
+                      href: ide/reference/wrap-and-align-call-chains.md
                     - name: ラップ、インデント、およびパラメーターの整列
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'チュートリアル: 使用法からのコードの生成'
