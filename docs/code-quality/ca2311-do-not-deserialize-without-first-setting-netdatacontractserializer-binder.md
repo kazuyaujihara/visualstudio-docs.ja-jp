@@ -1,5 +1,5 @@
 ---
-title: CA2311:最初の設定 NetDataContractSerializer.Binder せずシリアル化を解除できません。
+title: CA2311:最初に NetDataContractSerializer.Binder を設定しないで逆シリアル化しないでください
 ms.date: 05/01/2019
 ms.topic: reference
 author: dotpaul
@@ -13,49 +13,49 @@ ms.workload:
 f1_keywords:
 - CA2311
 - DoNotDeserializeWithoutFirstSettingNetDataContractSerializerBinder
-ms.openlocfilehash: aec95d4bbd2d9bc498f9688c5601591d480d7f3b
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 2ec13d78e364940fa9c210cf0792e810c8f0f341
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135440"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891175"
 ---
-# <a name="ca2311-do-not-deserialize-without-first-setting-netdatacontractserializerbinder"></a>CA2311:最初の設定 NetDataContractSerializer.Binder せずシリアル化を解除できません。
+# <a name="ca2311-do-not-deserialize-without-first-setting-netdatacontractserializerbinder"></a>CA2311:最初に NetDataContractSerializer.Binder を設定しないで逆シリアル化しないでください
 
 |||
 |-|-|
 |TypeName|DoNotDeserializeWithoutFirstSettingNetDataContractSerializerBinder|
 |CheckId|CA2311|
-|カテゴリ|Microsoft.Security|
+|Category|Microsoft.Security|
 |互換性に影響する変更点|中断なし|
 
 ## <a name="cause"></a>原因
 
-A<xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType>逆シリアル化メソッドが呼び出されるかせずに参照、<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>プロパティ セット。
+プロパティ<xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType>が設定されて<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>いないため、逆シリアル化メソッドが呼び出されたか、参照されました。
 
 ## <a name="rule-description"></a>規則の説明
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-このルールは、検索<xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType>メソッドの呼び出しまたは参照を逆シリアル化時に<xref:System.Runtime.Serialization.NetDataContractSerializer>がないその<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>設定します。 逆シリアル化を禁止する場合<xref:System.Runtime.Serialization.NetDataContractSerializer>に関係なく、<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>プロパティでは、このルールを無効にして[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)、ルールを有効にして[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)します。
+このルールは<xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> 、が<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>設定されてい<xref:System.Runtime.Serialization.NetDataContractSerializer>ない場合に、逆シリアル化メソッドの呼び出しまたは参照を検索します。 <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>プロパティに関係なく、を使用し<xref:System.Runtime.Serialization.NetDataContractSerializer>て逆シリアル化を許可しない場合は、この rule と[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)を無効にして、rule [CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)を有効にします。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-- 可能であれば、代わりに、セキュリティで保護されたシリアライザーを使用し、**攻撃者を任意の型を逆シリアル化の指定を許可しない**します。 安全なシリアライザーによっては、次のとおりです。
+- 可能であれば、代わりにセキュリティで保護されたシリアライザーを使用して、**攻撃者が任意の型を逆シリアル化することを許可しない**でください。 安全性の高いシリアライザーには次のものがあります。
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -使用しないでください<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>します。 型競合回避モジュールを使用する必要があります、予想されるリストを逆シリアル化された型を制限します。
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>しないでください。 型リゾルバーを使用する必要がある場合は、逆シリアル化された型を予期されるリストに制限します。
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - Newtonsoft Json.NET - TypeNameHandling.None を使用します。 TypeNameHandling を別の値を使用する必要がありますがある場合は、カスタム ISerializationBinder での予期される一覧に逆シリアル化された型を制限します。
-  - Protocol Buffers
-- シリアル化されたデータの耐タンパー性を確認します。 シリアル化後に、シリアル化されたデータを暗号で署名します。 逆シリアル化する前に、暗号化署名を検証します。 公開暗号化キーとキーのローテーションの設計を保護します。
-- 逆シリアル化された型を制限します。 カスタムの実装<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>します。 逆シリアル化する前に<xref:System.Runtime.Serialization.NetDataContractSerializer>、設定、<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>プロパティ、カスタムのインスタンスを<xref:System.Runtime.Serialization.SerializationBinder>します。 オーバーライドされた<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>メソッド、型が、予想される場合は例外をスローします。
+  - Newtonsoft Json.NET-TypeNameHandling を使用します。 TypeNameHandling に別の値を使用する必要がある場合は、カスタム ISerializationBinder を使用して、逆シリアル化された型を予期されるリストに制限します。
+  - プロトコルバッファー
+- シリアル化されたデータの改ざん防止を行います。 シリアル化後に、シリアル化されたデータに暗号署名します。 逆シリアル化する前に、暗号化署名を検証します。 暗号化キーが公開され、キーのローテーションのための設計になっていないことを防止します。
+- 逆シリアル化された型を制限します。 カスタム<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>を実装します。 で<xref:System.Runtime.Serialization.NetDataContractSerializer>逆シリアル化する前<xref:System.Runtime.Serialization.NetDataContractSerializer.Binder>に、プロパティをカスタム<xref:System.Runtime.Serialization.SerializationBinder>のインスタンスに設定します。 オーバーライド<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>されたメソッドで、型が予期しない場合は例外をスローして、逆シリアル化を停止します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 [!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
-## <a name="pseudo-code-examples"></a>疑似コードの例
+## <a name="pseudo-code-examples"></a>擬似コードの例
 
 ### <a name="violation"></a>違反
 
@@ -262,6 +262,6 @@ End Class
 
 ## <a name="related-rules"></a>関連するルール
 
-[CA2310:NetDataContractSerializer の安全でないデシリアライザーを使用しないでください。](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)
+[CA2310:セキュリティで保護されていないデシリアライザー NetDataContractSerializer を使用しない](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)
 
-[CA2312:NetDataContractSerializer.Binder が逆シリアル化する前に設定してください。](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)
+[CA2312:逆シリアル化の前に NetDataContractSerializer が設定されていることを確認する](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)
