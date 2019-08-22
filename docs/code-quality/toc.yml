@@ -162,31 +162,31 @@
           items:
             - name: 概要
               href: rule-set-reference.md
-            - name: '"すべての規則" 規則セット'
+            - name: すべての規則
               href: all-rules-rule-set.md
-            - name: マネージド コードの "基本正確性規則" 規則セット
+            - name: 基本正確性規則
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: マネージド コードの "基本デザイン ガイドライン規則" 規則セット
+            - name: 基本デザイン ガイドライン規則
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: マネージド コードの "拡張正確性規則" 規則セット
+            - name: 拡張正確性規則
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: マネージド コードの "拡張デザイン ガイドライン規則" 規則セット
+            - name: 拡張デザイン ガイドライン規則
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: マネージド コードの "グローバリゼーション規則" 規則セット
+            - name: '[グローバリゼーション規則]'
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: マネージド コードの "マネージ最小規則" 規則セット
+            - name: マネージド最小規則
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: マネージド コードの "マネージ推奨規則" 規則セット
+            - name: マネージド推奨規則
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: '"混合最小規則" 規則セット'
+            - name: 混合最小規則
               href: mixed-minimum-rules-rule-set.md
-            - name: '"混合推奨規則" 規則セット'
+            - name: 混合推奨規則
               href: mixed-recommended-rules-rule-set.md
-            - name: '"ネイティブ最小規則" 規則セット'
+            - name: ネイティブ最小規則
               href: native-minimum-rules-rule-set.md
-            - name: '"ネイティブ推奨規則" 規則セット'
+            - name: ネイティブ推奨規則
               href: native-recommended-rules-rule-set.md
-            - name: マネージド コードの "セキュリティ規則" 規則セット
+            - name: '[セキュリティ規則]'
               href: security-rules-rule-set-for-managed-code.md
         - name: 警告を表示しない
           href: in-source-suppression-overview.md

@@ -95,79 +95,93 @@
   items:
     - name: Windows フォーム デザイナーの概要
       href: windows-forms-designer-overview.md
-    - name: Windows フォーム デザイナーについて
+    - name: Windows フォーム デザイナーを使ってみる
       href: walkthrough-windows-forms-designer.md
-    - name: 'チュートリアル 1: ピクチャ ビューアーの作成 (C#)'
+    - name: コントロールを配置する >>
+      href: /dotnet/framework/winforms/controls/arranging-controls-on-windows-forms
+    - name: データ バインド コントロールを作成する >>
+      href: /dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form
+    - name: カスタム コントロールを作成する >>
+      href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
+    - name: Windows フォーム デザイナーの DPI 認識を無効にする
+      href: disable-dpi-awareness.md
+    - name: 関連項目
       items:
-        - name: 概要
-          displayName: Tutorial 1 Picture viewer
-          href: ../ide/tutorial-1-create-a-picture-viewer.md
-        - name: '手順 1: Windows フォーム アプリケーション プロジェクトの作成'
-          href: ../ide/step-1-create-a-windows-forms-application-project.md
-        - name: '手順 2: プログラムを実行する'
-          href: ../ide/step-2-run-your-program.md
-        - name: '手順 3: フォームのプロパティの設定'
-          href: ../ide/step-3-set-your-form-properties.md
-        - name: '手順 4: TableLayoutPanel コントロールを使用したフォームのレイアウトの設定'
-          href: ../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-        - name: '手順 5: フォームへのコントロールの追加'
-          href: ../ide/step-5-add-controls-to-your-form.md
-        - name: '手順 6: ボタン コントロールの名前を設定する'
-          href: ../ide/step-6-name-your-button-controls.md
-        - name: '手順 7: フォームへのダイアログ コンポーネントの追加'
-          href: ../ide/step-7-add-dialog-components-to-your-form.md
-        - name: '手順 8: [Show a Picture] ボタンのイベント ハンドラーのコードの記述'
-          href: ../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-        - name: '手順 9: レビュー、コメントの追加、およびコードのテスト'
-          href: ../ide/step-9-review-comment-and-test-your-code.md
-        - name: '手順 10: その他のボタンおよびチェック ボックスに対するコードの記述'
-          href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-        - name: '手順 11: プログラムの実行とその他の機能の使用'
-          href: ../ide/step-11-run-your-program-and-try-other-features.md
-    - name: 'チュートリアル 2: 制限時間ありの計算クイズの作成 (C#)'
+        - name: System.Windows.Forms API
+          href: /dotnet/api/system.windows.forms
+    - name: チュートリアル
       items:
-        - name: 概要
-          displayName: Tutorial 2 Timed math quiz
-          href: ../ide/tutorial-2-create-a-timed-math-quiz.md
-        - name: '手順 1: プロジェクトの作成とフォームへのラベルの追加'
-          href: ../ide/step-1-create-a-project-and-add-labels-to-your-form.md
-        - name: '手順 2: ランダムな加算問題の作成'
-          href: ../ide/step-2-create-a-random-addition-problem.md
-        - name: '手順 3: カウントダウン タイマーを追加する'
-          href: ../ide/step-3-add-a-countdown-timer.md
-        - name: '手順 4: CheckTheAnswer() メソッドの追加'
-          href: ../ide/step-4-add-the-checktheanswer-parens-method.md
-        - name: '手順 5: NumericUpDown コントロールの Enter イベント ハンドラーの追加'
-          href: ../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-        - name: '手順 6: 減算問題を追加する'
-          href: ../ide/step-6-add-a-subtraction-problem.md
-        - name: '手順 7: 乗算問題と除算問題の追加'
-          href: ../ide/step-7-add-multiplication-and-division-problems.md
-        - name: '手順 8: クイズのカスタマイズ'
-          href: ../ide/step-8-customize-the-quiz.md
-    - name: 'チュートリアル 3: 絵合わせゲームの作成 (C#)'
-      items:
-        - name: 概要
-          displayName: Tutorial 3 Matching game
-          href: ../ide/tutorial-3-create-a-matching-game.md
-        - name: '手順 1: プロジェクトの作成とフォームへのテーブルの追加'
-          href: ../ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-        - name: '手順 2: Random オブジェクトおよびアイコンのリストの追加'
-          href: ../ide/step-2-add-a-random-object-and-a-list-of-icons.md
-        - name: '手順 3: 各ラベルへのランダムなアイコンの割り当て'
-          href: ../ide/step-3-assign-a-random-icon-to-each-label.md
-        - name: '手順 4: 各ラベルに Click イベント ハンドラーを追加する'
-          href: ../ide/step-4-add-a-click-event-handler-to-each-label.md
-        - name: '手順 5: ラベルの参照の追加'
-          href: ../ide/step-5-add-label-references.md
-        - name: '手順 6: タイマーの追加'
-          href: ../ide/step-6-add-a-timer.md
-        - name: '手順 7: ペアの表示の維持'
-          href: ../ide/step-7-keep-pairs-visible.md
-        - name: '手順 8: プレーヤーが勝利したかどうかを確認するメソッドの追加'
-          href: ../ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-        - name: '手順 9: その他の機能を試す'
-          href: ../ide/step-9-try-other-features.md
+        - name: 'チュートリアル 1: ピクチャ ビューアーの作成 (C#)'
+          items:
+            - name: 概要
+              displayName: Tutorial 1 Picture viewer
+              href: ../ide/tutorial-1-create-a-picture-viewer.md
+            - name: '手順 1: Windows フォーム アプリケーション プロジェクトの作成'
+              href: ../ide/step-1-create-a-windows-forms-application-project.md
+            - name: '手順 2: プログラムを実行する'
+              href: ../ide/step-2-run-your-program.md
+            - name: '手順 3: フォームのプロパティの設定'
+              href: ../ide/step-3-set-your-form-properties.md
+            - name: '手順 4: TableLayoutPanel コントロールを使用したフォームのレイアウトの設定'
+              href: ../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
+            - name: '手順 5: フォームへのコントロールの追加'
+              href: ../ide/step-5-add-controls-to-your-form.md
+            - name: '手順 6: ボタン コントロールの名前を設定する'
+              href: ../ide/step-6-name-your-button-controls.md
+            - name: '手順 7: フォームへのダイアログ コンポーネントの追加'
+              href: ../ide/step-7-add-dialog-components-to-your-form.md
+            - name: '手順 8: [Show a Picture] ボタンのイベント ハンドラーのコードの記述'
+              href: ../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
+            - name: '手順 9: レビュー、コメントの追加、およびコードのテスト'
+              href: ../ide/step-9-review-comment-and-test-your-code.md
+            - name: '手順 10: その他のボタンおよびチェック ボックスに対するコードの記述'
+              href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
+            - name: '手順 11: プログラムの実行とその他の機能の使用'
+              href: ../ide/step-11-run-your-program-and-try-other-features.md
+        - name: 'チュートリアル 2: 制限時間ありの計算クイズの作成 (C#)'
+          items:
+            - name: 概要
+              displayName: Tutorial 2 Timed math quiz
+              href: ../ide/tutorial-2-create-a-timed-math-quiz.md
+            - name: '手順 1: プロジェクトの作成とフォームへのラベルの追加'
+              href: ../ide/step-1-create-a-project-and-add-labels-to-your-form.md
+            - name: '手順 2: ランダムな加算問題の作成'
+              href: ../ide/step-2-create-a-random-addition-problem.md
+            - name: '手順 3: カウントダウン タイマーを追加する'
+              href: ../ide/step-3-add-a-countdown-timer.md
+            - name: '手順 4: CheckTheAnswer() メソッドの追加'
+              href: ../ide/step-4-add-the-checktheanswer-parens-method.md
+            - name: '手順 5: NumericUpDown コントロールの Enter イベント ハンドラーの追加'
+              href: ../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
+            - name: '手順 6: 減算問題を追加する'
+              href: ../ide/step-6-add-a-subtraction-problem.md
+            - name: '手順 7: 乗算問題と除算問題の追加'
+              href: ../ide/step-7-add-multiplication-and-division-problems.md
+            - name: '手順 8: クイズのカスタマイズ'
+              href: ../ide/step-8-customize-the-quiz.md
+        - name: 'チュートリアル 3: 絵合わせゲームの作成 (C#)'
+          items:
+            - name: 概要
+              displayName: Tutorial 3 Matching game
+              href: ../ide/tutorial-3-create-a-matching-game.md
+            - name: '手順 1: プロジェクトの作成とフォームへのテーブルの追加'
+              href: ../ide/step-1-create-a-project-and-add-a-table-to-your-form.md
+            - name: '手順 2: Random オブジェクトおよびアイコンのリストの追加'
+              href: ../ide/step-2-add-a-random-object-and-a-list-of-icons.md
+            - name: '手順 3: 各ラベルへのランダムなアイコンの割り当て'
+              href: ../ide/step-3-assign-a-random-icon-to-each-label.md
+            - name: '手順 4: 各ラベルに Click イベント ハンドラーを追加する'
+              href: ../ide/step-4-add-a-click-event-handler-to-each-label.md
+            - name: '手順 5: ラベルの参照の追加'
+              href: ../ide/step-5-add-label-references.md
+            - name: '手順 6: タイマーの追加'
+              href: ../ide/step-6-add-a-timer.md
+            - name: '手順 7: ペアの表示の維持'
+              href: ../ide/step-7-keep-pairs-visible.md
+            - name: '手順 8: プレーヤーが勝利したかどうかを確認するメソッドの追加'
+              href: ../ide/step-8-add-a-method-to-verify-whether-the-player-won.md
+            - name: '手順 9: その他の機能を試す'
+              href: ../ide/step-9-try-other-features.md
 - name: 3D アセット
   items:
     - name: ゲームとアプリ用の 3D アセットを操作する
