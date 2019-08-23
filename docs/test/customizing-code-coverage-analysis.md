@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965553"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490631"
 ---
 # <a name="customize-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 
@@ -30,18 +30,38 @@ ms.locfileid: "62965553"
 
 1. 実行設定ファイルをソリューションに追加します。 **ソリューション エクスプローラー**でソリューションのショートカット メニューを開き、 **[追加]**  >  **[新しい項目]** 、 **[XML ファイル]** の順に選択します。 *CodeCoverage.runsettings* などの名前でファイルを保存します。
 
-1. この記事の最後にあるサンプル ファイルの内容を追加し、後続の各セクションの説明に従って、ニーズに合わせてカスタマイズします。
+2. この記事の最後にあるサンプル ファイルの内容を追加し、後続の各セクションの説明に従って、ニーズに合わせてカスタマイズします。
 
-1. 実行設定ファイルを選択するには、 **[テスト]** メニューで **[テストの設定]**  >  **[テスト設定ファイルの選択]** の順に選択します。 コマンドラインから、またはビルド ワークフローでテストを実行するための実行設定ファイルを指定するには、「[ *.runsettings* ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file)」を参照してください。
+::: moniker range="vs-2017"
+
+3. 実行設定ファイルを選択するには、 **[テスト]** メニューで **[テストの設定]**  >  **[テスト設定ファイルの選択]** の順に選択します。 コマンドラインから、またはビルド ワークフローでテストを実行するための実行設定ファイルを指定するには、「[ *.runsettings* ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file)」を参照してください。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. 実行設定ファイルを選択するには、**テスト エクスプローラー**で、 **[設定]** ボタンの矢印を選択し、 **[設定ファイルの選択]** を選択します。 コマンドラインから、またはビルド ワークフローでテストを実行するための実行設定ファイルを指定するには、「[ *.runsettings* ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file)」を参照してください。
+
+::: moniker-end
 
    **[コード カバレッジの分析]** を選択すると、実行設定ファイルから構成情報が読み取られます。
 
    > [!TIP]
    > 前のコード カバレッジの結果とコードの色分けは、テストを実行したりコードを更新したりしても、自動的に非表示にはなりません。
 
-カスタム設定のオンとオフを切り替えるには、 **[テストの設定]** メニューの **[テスト]**  >  でファイルを選択したり選択解除したりします。
+::: moniker range="vs-2017"
+
+カスタム設定のオンとオフを切り替えるには、 **[テスト]** > **[テストの設定]** メニューで、ファイルを選択したり選択解除したりします。
 
 ![カスタム設定ファイルを持つテスト設定メニュー](../test/media/codecoverage-settingsfile.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+カスタム設定のオンとオフを切り替えるには、**テスト エクスプローラー**の **[設定]** メニューでファイルを選択したり選択解除したりします。
+
+::: moniker-end
 
 ### <a name="specify-symbol-search-paths"></a>シンボル検索パスの指定
 
@@ -89,7 +109,7 @@ ms.locfileid: "62965553"
 
 Include ノードと Exclude ノードでは、正規表現を使用できます。 詳細については、[Visual Studio で正規表現を使用する](../ide/using-regular-expressions-in-visual-studio.md)方法に関するページを参照してください。 正規表現は、ワイルドカードと同じではありません。 特に次の点に注意してください。
 
-- **.\\** * は任意の文字の文字列と一致します
+- **.\*** は任意の文字の文字列と一致します
 
 - **\\.** はピリオド "." と一致します
 

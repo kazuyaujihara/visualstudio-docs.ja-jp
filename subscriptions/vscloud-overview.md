@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: 長期契約ではなく、月または年単位の一定期間だけ Visual Studio Professional または Visual Studio Enterprise をレンタルします。
-ms.openlocfilehash: 5844ac1e22346e8001f0a682848b36fdb6b3f8a5
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: dea2c32c5737cb5f2798b3d0ebdbd3398e1bc20b
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606108"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490684"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional および Visual Studio Enterprise クラウド サブスクリプションの購入
 [Visual Studio Professional と Visual Studio Enterprise のサブスクリプション](https://visualstudio.microsoft.com/subscriptions/)は、[Visual Studio Marketplace](https://marketplace.visualstudio.com) から購入できます。 これらは、 **"クラウド サブスクリプション"** と呼ばれます。
@@ -89,7 +89,7 @@ A: この変更による既存のサブスクライバーへの影響はあり�
 A: いいえ。  サブスクリプションはそのまま維持され、現在と同様に管理できます。
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>Q:お客様のサブスクリプションの数を増やす場合はどうすればよいですか。
-A: 追加の年間サブスクリプションはいつでも購入できます。  購入した年間サブスクリプションについては、1 年分がすぐに請求され、1 年間有効になります。 
+A: 特定の月の間に購入した年間サブスクリプションについては、1 年分がすぐに請求され、1 年間有効になります。 そのため、購入した当月でのみライセンスの数を変更できます (1 年間有効となり、1 年分が請求されます)。 購入した月以外では、サブスクリプションの数を増やすことができなくなります。
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q:お客様のサブスクリプションの数を減らす場合はどうすればよいですか。
 A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、 https://manage.visualstudio.com にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。 システムによってクレジットが日割りされることは*ありません*。 返金については、Azure 請求チームにお問い合わせいただく必要がございます。

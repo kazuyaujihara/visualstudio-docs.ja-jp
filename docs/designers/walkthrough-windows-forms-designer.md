@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e54a0957cb6b63c95c1cd914f7fc3eb72e581ac3
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 64045221ad9200223264632d4bdbd33ff82d631f
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981648"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585347"
 ---
 # <a name="walkthrough-get-started-with-windows-forms-designer"></a>チュートリアル: Windows フォーム デザイナーを使ってみる
 
@@ -309,8 +309,10 @@ DemoCalculator コントロールを他の複合コントロールまたはフ�
 
 ## <a name="next-steps"></a>次の手順
 
-この記事では、簡単な電卓用のユーザー インターフェイスを作成する方法について説明しました。 続いて、電卓のロジックを実装して機能を拡張できます。 または、[Windows フォームを使用して画像ビューアーを作成する](../ide/tutorial-1-create-a-picture-viewer.md)別のチュートリアルに進んでもかまいません。
+この記事では、簡単な電卓用のユーザー インターフェイスを作成する方法について説明しました。 続行するには、電卓ロジックを実装してその機能を拡張し、[ClickOnce を利用してアプリを公開](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)できます。 または、[Windows フォームを使用して画像ビューアーを作成する](../ide/tutorial-1-create-a-picture-viewer.md)別のチュートリアルに進んでもかまいません。
 
 ## <a name="see-also"></a>関連項目
 
+- [Windows フォームのコントロール](/dotnet/framework/winforms/controls/)
 - [Windows フォームのコントロールのアクセシビリティ](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
+- [ClickOnce を使用して公開する](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
