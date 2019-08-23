@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 04a130528edbe8ab3aae0a24d69315b934b19d54
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160062"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551431"
 ---
 # <a name="application-page-project-designer-c"></a>[アプリケーション] ページ (プロジェクト デザイナー) (C#)
 
@@ -105,6 +105,8 @@ WPF アプリ プロジェクトでは、このオプションは既定で **[(�
 
 プログラムを使用してこのプロパティにアクセスする方法については、「<xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>」を参照してください。
 
+アイコン作成の詳細は、「[アイコン用イメージ エディター](/cpp/windows/image-editor-for-icons)」を参照してください。
+
 **Manifest**
 
 Windows Vista 上で、ユーザー アカウント制御 (UAC) 下でアプリケーションを実行する場合に、マニフェスト生成オプションを選択します。 このオプションには、次の値を指定できます。
@@ -120,3 +122,5 @@ Windows Vista 上で、ユーザー アカウント制御 (UAC) 下でアプリ�
 プロジェクトにリソース ファイルを提供する場合は、このオプション ボタンを選択します。 このオプションを選択すると、 **[アイコン]** と **[マニフェスト]** オプションが無効になります。
 
 パス名を入力するか、参照ボタン ( **...** ) を使用して、Win32 リソース ファイルをプロジェクトに追加します。
+
+詳細については、「[.NET アプリ用のリソース ファイルを作成する](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)」を参照してください。
