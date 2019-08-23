@@ -12,16 +12,16 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb62e668d7077e1be96ff7a282628b76b426898f
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: dc7936041746872fdf30ce3159506d93c378376d
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177795"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490600"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>ロールをテスト コントローラーとテスト エージェントに割り当てる
 
-このチュートリアルでは、Visual Studio で、テスト コントローラーとテスト エージェントを使用して、複数のコンピューターにテストを分散するテスト設定の作成および構成手順について説明します。 また、診断およびデータ アダプターをテスト設定に追加する方法についても説明します。
+この記事では、Visual Studio で、テスト コントローラーとテスト エージェントを使用して、複数のコンピューターにテストを分散するテスト設定を作成および構成する方法について説明します。 また、診断およびデータ アダプターをテスト設定に追加する方法についても説明します。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -48,9 +48,6 @@ ms.locfileid: "66177795"
      **[テストの設定]** ダイアログ ボックスが表示されます。 **[全般]** ページが選択されています。
 
      このページで、テストの設定値を編集および保存できます。
-
-    > [!NOTE]
-    > 作成するそれぞれのテストの設定は、 **[テスト]** メニューの **[アクティブなテスト設定の選択]** オプションおよび **[テスト設定の編集]** オプションに選択肢として一覧表示されます。
 
 5. **[名前]** ボックスに、テストの設定の名前を入力します。
 
@@ -98,7 +95,17 @@ ms.locfileid: "66177795"
 
 7. **[閉じる]** を選択します。
 
-8. [テスト] メニューの **[アクティブなテスト設定の選択]** をクリックし、 **[TestSettingDistributedTestWalkthrough.testsettings]** をクリックします。
+::: moniker range="vs-2017"
+
+8. [テスト] メニューの **[テスト設定ファイルの選択]** をクリックし、 *[TestSettingDistributedTestWalkthrough.testsettings]* をクリックします。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. **テスト エクスプローラー**で、 **[設定]** ボタンの矢印を選択し、 **[設定ファイルの選択]** を選択します。 *TestSettingDistributedTestWalkthrough.testsettings* ファイルを参照し、選択します。
+
+::: moniker-end
 
 9. 通常どおり、テストを実行します。
 

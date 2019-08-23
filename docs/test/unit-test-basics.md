@@ -1,6 +1,6 @@
 ---
 title: 単体テストの基礎
-ms.date: 06/06/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39e5529ae777fe1cee69e669ce20fb919eceb5ef
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e439ab3ca22fdb26992164c3927269a0f58a1f3b
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925817"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490721"
 ---
 # <a name="unit-test-basics"></a>単体テストの基本
 
@@ -40,7 +40,12 @@ ms.locfileid: "68925817"
 
 この記事では、例として `MyBank` という架空のアプリケーションの開発を使用します。 このトピックの説明は、実際のコードがなくても理解できます。 テスト メソッドは C# で記述されており、マネージド コード用の Microsoft 単体テスト フレームワークを使用して提供されます。 ただし、その概念は他の言語やフレームワークに簡単に移行することができます。
 
+::: moniker range="vs-2017"
 ![MyBank ソリューション](../test/media/ute_mybanksolution.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![MyBank ソリューション 2019](../test/media/vs-2019/basics-mybank-solution.png)
+::: moniker-end
 
 `MyBank` アプリケーションのデザイン時の最初の計画には、個々のアカウントおよびアカウントの銀行との取引を表すアカウント コンポーネントと、個々のアカウントを集計および管理する機能を表すデータベース コンポーネントが含まれます。
 
@@ -69,7 +74,7 @@ public void Withdraw(double amount)
     }
     else
     {
-        throw new ArgumentException(amount, "Withdrawal exceeds balance!")
+        throw new ArgumentException(nameof(amount), "Withdrawal exceeds balance!");
     }
 }
 ```
@@ -84,18 +89,28 @@ public void Withdraw(double amount)
 
 1. コード エディター ウィンドウで、右クリックして右クリック メニューから [ **[単体テストの作成]** ](create-unit-tests-menu.md) を選択します。
 
+   ::: moniker range="vs-2017"
    ![エディター ウィンドウで、コンテキスト メニューを表示](../test/media/createunittestsrightclick.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![エディター ウィンドウで、コンテキスト メニューを表示](../test/media/vs-2019/basics-create-unit-tests.png)
+   ::: moniker-end
 
    > [!NOTE]
    > **[単体テストの作成]** メニュー コマンドは、.NET Framework を対象とするマネージド コードに対してのみ使用できます (.NET Core では使用できません)。
 
 2. **[OK]** をクリックして、既定値をそのまま使用して単体テストを作成するか、単体テスト プロジェクトと単体テストの作成と名前付けに使用される値を変更します。 単体テスト メソッドに既定で追加されるコードを選択することができます。
 
-    ![Visual Studio の [単体テストの作成] ダイアログ ボックス](../test/media/create-unit-tests.png)
+   ![Visual Studio の [単体テストの作成] ダイアログ ボックス](../test/media/create-unit-tests.png)
 
 3. 新しい単体テスト プロジェクトでは、クラス内のすべてのメソッドに単体テスト スタブが作成されます。
 
-    ![単体テストが作成済み](../test/media/createunittestsstubs.png)
+   ::: moniker range="vs-2017"
+   ![単体テストが作成済み](../test/media/createunittestsstubs.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![単体テストが作成済み](../test/media/vs-2019/basics-test-stub.png)
+   ::: moniker-end
 
 4. ここで、先に進み、単体テストを有意義なものにするための [コードを単体テスト メソッドに追加する](#write-your-tests) 方法と、コードを徹底的にテストするために追加する追加の単体テストについて確認します。
 
@@ -218,9 +233,14 @@ public void My_Test ()
 
 テスト プロジェクトをビルドすると、テストは**テスト エクスプローラー**に表示されます。 **テスト エクスプローラー**が表示されない場合は、Visual Studio メニューの **[テスト]** をクリックし、 **[Windows]** 、 **[テスト エクスプローラー]** の順に選択します。
 
+::: moniker range="vs-2017"
 ![単体テスト エクスプローラー](../test/media/ute_failedpassednotrunsummary.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![単体テスト エクスプローラー](../test/media/vs-2019/basics-test-explorer.png)
+::: moniker-end
 
-テストを実行して、記述し、再実行すると、テスト **エクスプローラー**の既定のビューに **[失敗したテスト]** 、 **[成功したテスト]** 、 **[スキップされたテスト]** 、および **[テストを実行しない]** グループの結果が表示されます。 グループの見出しを選択して、そのグループ内のすべてのテストを表示するビューを開くことができます。
+テストを実行して、記述し、再実行すると、**テスト エクスプローラー**では、 **[失敗したテスト]** 、 **[成功したテスト]** 、 **[スキップされたテスト]** 、 **[テストを実行しない]** のグループの結果を表示できます。 ツールバーのオプションで別のグループを選択できます。
 
 グローバル レベルで検索ボックスでテキストを照合して、または定義済みのフィルターの 1 つを選択して、任意のビューでテストにフィルターを適用することもできます。 任意に選択したテストをいつでも実行できます。 テスト実行の結果は、エクスプローラー ウィンドウの上部にある成功/失敗ステータス バーですぐにわかります。 テストを選択すると、そのテスト メソッドの結果の詳細が表示されます。
 
@@ -228,9 +248,14 @@ public void My_Test ()
 
 **テスト エクスプローラー**のツール バーは、対象にするテストを検出、編成、実行するのに役立ちます。
 
+::: moniker range="vs-2017"
 ![テスト エクスプローラー ツールバーからテストを実行](../test/media/ute_toolbar.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![テスト エクスプローラー ツールバーからテストを実行](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
+::: moniker-end
 
-**[すべて実行]** を選択してテストをすべて実行することも、 **[実行]** を選択してテストのサブセットを実行することもできます。 一連のテストを実行した後、テスト実行の概要が**テスト エクスプローラー** ウィンドウの下部に表示されます。 テストを選択すると、そのテストの詳細が下部のペインに表示されます。 右クリック メニューから **[テストを開く]** を選択し (キーボード:**F12** キー)、選択したテストのソース コードを表示します。
+**[すべて実行]** を選択してテストをすべて実行することも、 **[実行]** を選択してテストのサブセットを実行することもできます。 テストを選択すると、そのテストの詳細がテスト詳細ペインに表示されます。 右クリック メニューから **[テストを開く]** を選択し (キーボード:**F12** キー)、選択したテストのソース コードを表示します。
 
 ::: moniker range="vs-2017"
 
@@ -246,18 +271,33 @@ public void My_Test ()
 
 ### <a name="run-tests-after-every-build"></a>各ビルドの後にテストを実行する
 
-> [!WARNING]
-> 各ビルドの後の単体テスト実行は、Visual Studio Enterprise でのみサポートされます。
+::: moniker range="vs-2017"
 
 |ボタン|説明|
 |-|-|
 |![ビルド後に実行](../test/media/ute_runafterbuild_btn.png)|各ローカル ビルドの後で単体テストを実行するには、標準のメニューの **[テスト]** を選択し、**テスト エクスプローラー**のツール バーの **[ビルド後にテストを実行]** を選択します。|
 
+> [!NOTE]
+> 各ビルドの後の単体テスト実行には、Visual Studio 2017 Enterprise エディションまたは Visual Studio 2019 が必要です。 Visual Studio 2019 では、この機能は Enterprise エディションに加えて、Community エディションと Professional エディションでも使用できます。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+各ローカル ビルドの後で単体テストを実行するには、テスト エクスプローラーのツール バーで設定アイコンを開き、 **[ビルド後にテストを実行]** を選択します。
+
+::: moniker-end
+
 ### <a name="filter-and-group-the-test-list"></a>テスト リストのフィルター処理とグループ化を実行する
 
-多数のテストがある場合は、**テスト エクスプローラー**の検索ボックスに入力し、指定した文字列によって一覧をフィルター処理できます。 フィルターの一覧から選択することで、フィルター イベントをさらに制限できます。
+多数のテストがある場合、**テスト エクスプローラー**の検索ボックスに入力し、指定した文字列によって一覧をフィルター処理できます。 フィルターの一覧から選択することで、フィルター イベントをさらに制限できます。
 
+::: moniker range="vs-2017"
 ![フィルターの検索カテゴリ](../test/media/ute_searchfilter.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![フィルターの検索カテゴリ](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
+::: moniker-end
 
 |ボタン|説明|
 |-|-|
@@ -282,9 +322,14 @@ public void My_Test ()
 
 **Q: TDD を使用している場合に、テストからコードを生成する方法を教えてください。**
 
-**A:** IntelliSense を使用して、プロジェクト コードにクラスとメソッドを生成します。 テスト メソッドに、生成するクラスまたはメソッドを呼び出すステートメントを記述し、その呼び出しの下で IntelliSense メニューを開きます。 新しいクラスのコンストラクターへの呼び出しの場合は、メニューから **[新しい型の生成]** を選択し、ウィザードに従ってコード プロジェクトにクラスを挿入します。 メソッドへの呼び出しの場合は、IntelliSense メニューから **[Generate new method (新しいメソッドの生成)]** を選択します。
+**A:** クイック アクションを使用して、プロジェクト コードにクラスとメソッドを生成します。 生成するクラスまたはメソッドを呼び出すステートメントをテスト メソッドに記述し、エラーの下に表示される電球を開きます。 新しいクラスのコンストラクターへの呼び出しの場合は、メニューから **[型の生成]** を選択し、ウィザードに従ってコード プロジェクトにクラスを挿入します。 メソッドへの呼び出しの場合は、IntelliSense メニューから **[メソッドの生成]** を選択します。
 
-![[メソッド スタブの生成] の IntelliSense メニュー](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker range="vs-2017"
+![[メソッドの生成] のスタブ クイック アクション メニュー](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![[メソッドの生成] のスタブ クイック アクション メニュー](../test/media/vs-2019/basics-generate-method-tdd.png)
+::: moniker-end
 
 **Q: テストを実行する入力値として複数のデータ セットを取得する単体テストを作成できますか。**
 
@@ -320,7 +365,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 **Q: 単体テストでテストするコードの量を確認できますか。**
 
-**A:** はい。 Visual Studio のコード カバレッジ ツールを使用して、単体テストで実際にテスト中のコードの量を確認できます。 単体テスト フレームワークによって実行できるネイティブ言語とマネージド言語、およびすべての単体テスト フレームワークがサポートされています。
+**A:** はい。 Visual Studio Enterprise の Visual Studio コード カバレッジ ツールを使用し、単体テストで実際にテスト中のコードの量を確認できます。 単体テスト フレームワークによって実行できるネイティブ言語とマネージド言語、およびすべての単体テスト フレームワークがサポートされています。
 
 選択したテストまたはソリューションのすべてのテストのコード カバレッジを実行できます。 **[コード カバレッジの結果]** ウィンドウに、行、関数、クラス、名前空間、およびモジュールで実行された製品コードのブロックのパーセンテージが表示されます。
 
