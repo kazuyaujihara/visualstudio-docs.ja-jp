@@ -22,6 +22,7 @@
 #### [サブスクライバー データの匿名化](anonymization.md)
 ### [サブスクリプション ポータルの概要](using-the-subscriber-portal.md)
 ### [サブスクリプションを管理する](manage-vs-subscriptions.md)
+### [サブスクリプション管理者に連絡してください](contact-my-admin.md)
 ### 利点
 #### ツール
 ##### [Azure クレジット](vs-azure.md)
@@ -58,17 +59,22 @@
 #### [キーの検索と要求](find-keys.md)
 #### [インターネット デモンストレーション](internet-demos.md)
 ## 管理者
-### [管理者の責任](admin-responsibilities.md)
+### 管理者の責任
+#### [管理者の責任](admin-responsibilities.md)
 #### [実稼働前インベントリ](admin-inventory.md)
 #### [大規模なチームと外部請負業者を管理する](manage-teams.md)
 #### [ユーザーの割り当てを追跡し、注文を処理する](assignments-orders.md)
-### 組織のオンボード
-#### [オープン ライセンス移行の開始](open-migration.md)
+### 管理ポータルへのアクセス
+#### [ボリューム ライセンス](volume-license.md)
 #### [MPSA](mpsa.md)
 #### [クラウド サブスクリプション](cloud-admin.md)
-#### [オンボードのビデオ](https://youtu.be/plSu6fpi7UI)
+#### [顧客を管理するパートナー](open-migration.md)
+#### [ビデオ チュートリアル:管理ポータルにアクセスする](https://youtu.be/plSu6fpi7UI)
 ### 管理ポータルの使用
+#### [スーパー管理者と管理者](admin-roles.md)
+#### [契約の基本設定を設定する](admin-prefs.md)
 #### [概要](using-admin-portal.md)
+#### [ビデオ チュートリアル:管理ポータルの使用](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 #### サブスクリプションを割り当てる
 ##### [1 人のユーザーを追加する](assign-license.md)
 ##### [複数のユーザーを追加する](assign-license-bulk.md)
@@ -81,7 +87,7 @@
 #### [有効期限が切れたサブスクリプション](handle-expired-license.md)
 #### [エイリアスを使用するサブスクライバー](aliasing.md)
 #### [個人用電子メール サインインを持つサブスクライバー](personal-email-sign-ins.md)
-### [GitHub Enterprise による Visual Studio の管理](assign-github.md)
+#### [GitHub Enterprise による Visual Studio の管理](assign-github.md)
 ## リソース
 ### [Visual Studio ライセンスのホワイト ペーパー](https://aka.ms/vslicensing)
 ### [サブスクリプション オプションと価格を比較する](https://visualstudio.microsoft.com/vs/pricing)
