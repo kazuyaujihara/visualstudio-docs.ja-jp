@@ -36,7 +36,7 @@ Visual Studio は、以前のバージョンまたは最新バージョンの Vi
 
 複数のバージョンを並行してインストールする前に、次の条件を確認してください。
 
-* Visual Studio 2017 で作成されたソリューションを Visual Studio 2019 を使用して開く場合、Visual Studio 2019 に固有の機能が実装されていない限り、後で以前のバージョンのソリューションを開き、再度変更することが。
+* Visual Studio 2017 で作成されたソリューションを Visual Studio 2019 を使用して開く場合、Visual Studio 2019 に固有の機能が実装されていない限り、後で以前のバージョンのソリューションを開き、再度変更することができます。
 
 * Visual Studio 2017 以前のバージョンで作成されたソリューションを Visual Studio 2019 を使用して開こうとする場合、ご利用のプロジェクトとファイルを Visual Studio 2019 に対応するように変更することが必要な場合があります。 詳細については、[Visual Studio プロジェクトの移植、移行、およびアップグレード](../porting/port-migrate-and-upgrade-visual-studio-projects.md)に関するページを参照してください。
 
