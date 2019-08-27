@@ -31,6 +31,7 @@
 # ソース エディター
 ## [エディターの機能](source-editor.md)
 ## [リファクタリング](refactoring.md)
+## [IntelliSense](intellisense.md)
 ## [コメント](comments.md)
 ## [エディターの動作](editor-behavior.md)
 ## [タスク コメント](task-comments.md)
