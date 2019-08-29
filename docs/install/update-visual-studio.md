@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 2017 を更新する
+title: Visual Studio を更新する
 titleSuffix: ''
 description: Visual Studio を最新のリリースに更新する詳細な手順を説明します。
 ms.date: 07/31/2019
