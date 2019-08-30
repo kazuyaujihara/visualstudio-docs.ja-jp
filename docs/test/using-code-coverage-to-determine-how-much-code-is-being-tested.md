@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416447"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976775"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>コード カバレッジを使用した、テストされるコード割合の確認
 
@@ -36,7 +36,12 @@ ms.locfileid: "68416447"
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>テスト エクスプローラーで単体テストのコード カバレッジを分析するには
 
+::: moniker range="vs-2017"
 1. **[テスト]** メニューの **[コード カバレッジの分析]** を選択します。
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. **テスト エクスプローラー**で **[実行]** メニューの **[コード カバレッジの分析]** を選択します。
+::: moniker-end
 
 2. 実行された行を表示するには、![[コード カバレッジの色分けを表示] アイコン](../test/media/codecoverage-showcoloringicon.png) **[コード カバレッジの色分けを表示]** を選択します。
 

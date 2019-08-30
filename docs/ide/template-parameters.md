@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950346"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891268"
 ---
 # <a name="template-parameters"></a>テンプレート パラメーター
 
@@ -57,7 +57,8 @@ ms.locfileid: "62950346"
 |projectname|プロジェクトの作成時にユーザーが指定した名前。|
 |registeredorganization|HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization のレジストリ キー値。|
 |rootnamespace|現在のプロジェクトのルート名前空間。 このパラメーターは、項目テンプレートにのみ適用されます。|
-|safeitemname|`itemname` と同じですが、安全でない文字とスペースはすべて削除されています。|
+|safeitemname|`itemname` と同じですが、安全でない文字とスペースはすべてアンダースコア文字に置き換えられます。|
+|safeitemrootname|`safeitemname` と同じ。|
 |safeprojectname|プロジェクトの作成時にユーザーによって指定された名前ですが、すべての安全でない文字およびスペースがすべて削除されています。|
 |時間|DD/MM/YYYY 00:00:00 の形式で表した現在の時間。|
 |SpecificSolutionName|ソリューションの名前。 [ソリューションのディレクトリを作成] がオンになっている場合は、`SpecificSolutionName` にソリューション名が指定されます。 [ソリューションのディレクトリを作成] がオフになっている場合、`SpecificSolutionName` は空白です。|
