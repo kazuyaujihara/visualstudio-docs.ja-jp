@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d31f76a448933bb3809cd609ebd355c8e0a04b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 31d829a668a2c9690333315c30904623187fe51d
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605953"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976738"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>[オプション] ダイアログ ボックス:[プロジェクトおよびソリューション]\> [全般]
 
@@ -70,11 +70,31 @@ ms.locfileid: "68605953"
 
 ## <a name="reopen-documents-on-solution-load"></a>ソリューションの読み込み時にドキュメントを再度開く
 
-**Visual Studio 2017 バージョン 15.8 で導入**
-
 オンにすると、前にこのソリューションを閉じたときに開かれていたドキュメントが、ソリューションを読み込むときに自動的に開かれます。
 
 特定の種類のファイルまたはデザイナーを開きなおすと、ソリューションの読み込みが遅くなることがあります。 ソリューションの以前のコンテキストを復元する必要がない場合は、このオプションをオフにすると、[ソリューションの読み込みのパフォーマンス](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore)が向上します。
+
+::: moniker range=">=vs-2019"
+
+## <a name="restore-solution-explorer-project-hierarchy-state-on-solution-load"></a>ソリューションの読み込み時に、ソリューション エクスプローラーのプロジェクトの階層状態を復元する
+
+選択されている場合、ソリューションが最後に開かれたとき、それが展開されていたか折りたたまれていたかについて、ソリューション エクスプローラーのノードの状態が復元されます。 大規模なソリューションでソリューションの読み込み時間を短縮するには、このオプションをオフにします。
+
+> [!TIP]
+> このオプションが無効なとき、 **[ソリューション エクスプローラー]** ツールバーで **[アクティブ ドキュメントとの同期]** を選択すると、ソリューション エクスプローラーでアクティブなドキュメントに簡単に移動できます。
+>
+> ![ソリューション エクスプローラーでの [アクティブ ドキュメントとの同期]](media/sync-active-document.png)
+
+## <a name="open-sdk-style-project-files-with-double-click-or-the-enter-key"></a>ダブルクリックまたは Enter キーで、SDK スタイルのプロジェクト ファイルを開く
+
+このオプションがオンのとき、ソリューション エクスプローラーで SDK スタイルのプロジェクト ノードをダブルクリックするか、それを選択して **Enter** キーを押した場合、エディターでそのプロジェクト ファイル (たとえば、\*.csproj file) は XML として開きます。 オフの場合、ソリューション エクスプローラーで SDK スタイルのプロジェクト ノードをダブルクリックするか、それを選択して **Enter** キーを押すと、ノードのみが展開または折りたたまれます。
+
+このオプションがオフのときに SDK スタイルのプロジェクト ファイルを編集したい場合は、ソリューション エクスプローラーでプロジェクト ノードを右クリックし、 **[プロジェクト ファイルの編集]** を選択します。 その他の種類のプロジェクトでは、Visual Studio でプロジェクトを編集する前に、まずプロジェクトをアンロードする必要があります。
+
+> [!TIP]
+> *SDK スタイルのプロジェクト*または[プロジェクト SDK](../../msbuild/how-to-use-project-sdk.md) には、MSBuild 15.0 で導入された、より新しいより効率的なスタイルのプロジェクト ファイルがあります。 SDK スタイルのプロジェクトの `Project` 要素には `Sdk` 属性が含まれています (例: `<Project Sdk="Microsoft.NET.Sdk">`)。 Visual Studio では、たとえば Visual Studio テンプレートの 1 つを使用して新しい .NET Core プロジェクトを作成すると、SDK スタイルのプロジェクトが作成されます。
+
+::: moniker-end
 
 ## <a name="see-also"></a>関連項目
 
