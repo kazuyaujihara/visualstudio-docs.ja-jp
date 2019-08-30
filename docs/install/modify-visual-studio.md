@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 2017 の変更
+title: Visual Studio の変更
 titleSuffix: ''
 description: Visual Studio を変更する方法について、ステップ バイ ステップで説明します。
 ms.custom: H1Hack27Feb2017,seodec18
