@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e439ab3ca22fdb26992164c3927269a0f58a1f3b
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490721"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891343"
 ---
 # <a name="unit-test-basics"></a>単体テストの基本
 
@@ -209,7 +209,7 @@ Microsoft 単体テスト フレームワークの詳細については、次の
 
 ## <a name="set-timeouts-for-unit-tests"></a>単体テストのタイムアウトを設定する
 
-個々のテスト メソッドで、タイムアウトを設定するには
+MSTest フレームワークを使用している場合、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> を使用して、個々のテスト メソッドにタイムアウトを設定できます。
 
 ```csharp
 [TestMethod]

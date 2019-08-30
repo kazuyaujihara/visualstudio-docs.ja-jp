@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f567e07ea085844672f04194e4a4ffc5a9318e4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6f670449be9b416d1c54bc83379bae4a6733d932
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824815"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976721"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>複数のコンピューター間で Visual Studio 設定を同期する
 
@@ -71,7 +71,7 @@ Visual Studio の異なるサイド バイ サイド インストールの間で
 
 1. Visual Studio 2017 バージョン 15.3 以降にアップグレードします。
 
-2. **設定のインポート/エクスポート** ウィザードを利用し、すべての既存設定を *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* フォルダーから別の場所にエクスポートします。
+2. **設定のインポートとエクスポート** ウィザードを利用し、すべての既存設定を *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* フォルダーから別の場所にエクスポートします。
 
 3. **[開発者コマンド プロンプト for VS 2017]** を開き、`devenv /resetuserdata` を実行します。
 
@@ -84,6 +84,10 @@ Visual Studio の異なるサイド バイ サイド インストールの間で
 Visual Studio の異なるサイド バイ サイド インストールの間では、ツール ウィンドウ レイアウトなどの一部の設定は共有されません。 *%userprofile%\Documents\Visual Studio 2019\Settings* の *CurrentSettings.vssettings* ファイルはインストール固有フォルダーに置かれています。このフォルダーは、 *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings* のようなフォルダーになります。
 
 ::: moniker-end
+
+## <a name="reset-synchronized-settings"></a>同期された設定をリセットする
+
+すべての設定を既定にリセットするには、Visual Studio にサインインし、 **[ツール]**  >  **[設定のインポートとエクスポート]** を選択し、**設定のインポートとエクスポート ウィザード**を開きます。 **[すべての設定をリセット]** を選択し、ウィザードの残りの手順に従います。
 
 ## <a name="see-also"></a>関連項目
 

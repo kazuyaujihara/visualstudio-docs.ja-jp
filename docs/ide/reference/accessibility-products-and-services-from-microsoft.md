@@ -1,8 +1,10 @@
 ---
 title: マイクロソフトのアクセシビリティ製品とサービス
 description: 障碍を持つユーザーを含め、すべてのユーザーにとって Microsoft のオペレーティング システム、プログラム、アプリケーションを使いやすくするための Microsoft の製品とサービスの詳細について説明します。
-ms.date: 08/22/2017
+ms.date: 08/23/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - TTY/TDD services
 - documentation, recorded documentation
@@ -19,30 +21,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec9b86958f2e3b3e768b321db17e707dced1d78b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 87416903b469293d292bfa4414d425c31d0c9154
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926273"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060387"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>マイクロソフトのアクセシビリティ製品とサービス
 
-> [!TIP]
-> Visual Studio に対して最近実施されたアクセシビリティの更新の詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)」 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化) をご覧ください。
+Microsoft は、すべてのユーザーが簡単に使用できる製品とサービスの開発に取り組んでいます。 このページでは、障碍があるユーザーが Microsoft Windows をさらに使いやすくするためのユーザー補助機能、製品、サービスについて説明しています。
 
-Microsoft は、すべてのユーザーが簡単に使用できる製品とサービスの開発に取り組んでいます。 以下のトピックでは、障碍があるユーザーが Microsoft Windows をさらに使いやすくするためのユーザー補助機能、製品、およびサービスについて説明しています。
-
-- [Windows のユーザー補助機能](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
-
-- [代替形式のドキュメント](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
-
-- [聴覚障碍者のためのカスタマー サービス](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
-
-- [詳細情報](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
-
-> [!NOTE]
-> このセクションの情報は、米国内で Microsoft 製品のライセンスを取得したユーザーにだけ適用されます。 米国外でこの製品を入手した場合には、ソフトウェア パッケージに同梱の支社情報のカードを参照するか、[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431) サイトにアクセスし、Microsoft Support Services の電話番号と住所の一覧を参照してください。 このセクションで説明されている製品およびサービスをその地域で利用できるかどうかについては、現地法人にお問い合わせください。 ユーザー補助についての情報が、日本語、フランス語など、他の言語で参照できます。
+> [!IMPORTANT]
+> このページの情報は、米国内で Microsoft 製品のライセンスを取得したユーザーにだけ適用されることがあります。 米国外でこの製品を入手した場合には、[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431) サイトにアクセスし、Microsoft Support Services の電話番号と住所の一覧を参照してください。 このページで説明されている製品とサービスをその地域で利用できるかどうかについては、現地法人にお問い合わせください。 ユーザー補助についての情報が他の言語で参照できます。
 
 ## <a name="windows"></a> Windows のユーザー補助機能
 
@@ -66,9 +57,8 @@ Microsoft 製品のステップバイステップ チュートリアルを参照
 
 また、Microsoft の追加のパブリケーションを Learning Ally から入手することもできます。 Learning Ally は、これらのドキュメントを、同社の配布サービスに登録した正規メンバーに配布します。 入手可能な Microsoft 製品ドキュメントや Microsoft Press 発行書籍については、次の連絡先にお問い合わせください。
 
-|Learning Ally|
-| - |
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Learning Ally Web サイト: [http://www.learningally.org](http://www.learningally.org/)。|
+> Learning Ally<br />
+> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Learning Ally Web サイト: [http://www.learningally.org](http://www.learningally.org/)
 
 Web アドレスは変更される可能性があるため、ここで示した Web サイトに接続できない場合があります。
 
@@ -86,7 +76,15 @@ Microsoft Support Services は、サービスを利用された時点におけ�
 
 コンピューターのユーザー補助技術によって、障碍のある方の生活がどれほど向上するかに関する詳細については、[マイクロソフト アクセシビリティ ホーム](http://go.microsoft.com/fwlink/?LinkId=8431)を参照してください。
 
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Visual Studio に対して最近実施されたアクセシビリティの更新の詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)」 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化) をご覧ください。
+
+::: moniker-end
+
 ## <a name="see-also"></a>関連項目
 
 * [ユーザー補助アプリケーションのデザイン リソース](../../ide/reference/resources-for-designing-accessible-applications.md)
 * [Visual Studio のユーザー補助機能](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Visual Studio for Mac のユーザー補助](/visualstudio/mac/accessibility)
