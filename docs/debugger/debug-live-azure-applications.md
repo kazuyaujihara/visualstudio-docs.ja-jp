@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 6944c930ba6357fffeebba417a32cd167bd4debd
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493318"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179830"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用してライブ ASP.NET Azure アプリをデバッグする
 
@@ -37,7 +37,7 @@ ms.locfileid: "68493318"
 * スナップショットデバッガーは、 **Azure 開発ワークロード**を使用した Visual Studio 2017 Enterprise バージョン15.5 以降でのみ使用できます。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
 
    ::: moniker range=">=vs-2019"
-   まだインストールされていない場合は、 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)をインストールします。 以前の Visual Studio のインストールから更新する場合は、Visual Studio インストーラーを実行し、 **ASP.NET および web 開発ワークロード**でスナップショットデバッガーコンポーネントを確認します。
+   まだインストールされていない場合は、 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)をインストールします。 以前の Visual Studio のインストールから更新する場合は、Visual Studio インストーラーを実行し、 **ASP.NET および web 開発ワークロード**でスナップショットデバッガーコンポーネントを確認します。
    ::: moniker-end
    ::: moniker range="<=vs-2017"
    まだ [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 以降がインストールされていない場合はインストールしてください。 以前の Visual Studio 2017 インストールから更新する場合は、Visual Studio インストーラーを実行し、 **ASP.NET および web 開発ワークロード**でスナップショットデバッガーコンポーネントを確認します。
