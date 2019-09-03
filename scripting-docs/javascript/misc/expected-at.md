@@ -1,5 +1,5 @@
 ---
-title: 予想 ' @' |Microsoft Docs
+title: '\@' が必要です。 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -21,7 +21,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62935253"
 ---
-# <a name="expected-"></a>予想 '\@'
+# <a name="expected-"></a>'\@' が必要です。
 使用して条件付きコンパイル ステートメントで使用する変数を作成しようとしています。、`@set`ステートメントでは、配置しませんでしたが、アット マーク"**@**"変数名の前にします。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
