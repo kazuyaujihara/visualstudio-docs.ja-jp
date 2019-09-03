@@ -127,7 +127,7 @@ Web インストーラーをダウンロードした後、Visual Studio イン�
     vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
-- すべての機能を備えた完全なローカル レイアウトを作成するには (_多くの_機能があるため、これには時間がかかります)、次を実行します。
+- すべての機能を備えた完全なローカル レイアウトを作成するには、次を実行します (多くの機能があるため、これには時間がかかります)。
 
    ```cmd
     vs_community.exe --layout c:\vslayout --lang en-US
