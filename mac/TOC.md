@@ -57,7 +57,6 @@
 
 # バージョン コントロール
 ## [概要](version-control.md)
-## [TF バージョン管理](tf-version-control.md)
 ## [Git リポジトリのセットアップ](set-up-git-repository.md)
 ## [Git の使用](working-with-git.md)
 ## [Subversion リポジトリのセットアップ](set-up-subversion-repository.md)
@@ -100,6 +99,7 @@
 ## [ログと例外](troubleshooting.md)
 ## [Visual Studio カスタマー エクスペリエンス向上プログラム](visual-studio-experience-improvement-program.md)
 ## [問題を報告する](report-a-problem.md)
+## [トラブルシューティング : Visual Studio for Mac は Team Foundation バージョン管理をサポートしていますか?](tf-version-control.md)
 ## [トラブルシューティング : すべてのテンプレートが表示されない](troubleshooting-no-templates.md)
 ## [トラブルシューティング : アップデーターが情報の取得中にエラーを表示する](updater-troubleshooting.md)
 
