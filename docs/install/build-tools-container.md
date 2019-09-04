@@ -89,7 +89,7 @@ Visual Studio Build Tools を Windows コンテナーにインストールして
    ```
 
    > [!WARNING]
-   > 自分のイメージを microsoft/windowsservercore または mcr.microsoft.com/windows/servercore に直接基づくようにする場合 ([Microsoft によるコンテナー カタログのシンジケート](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/)に関するページを参照)、.NET Framework が正しくインストールされない可能性があり、インストール エラーは示されません。 インストールが完了した後、マネージド コードが実行しない可能性があります。 代わりに、イメージを [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) 以降に基づくようにします。 また、バージョン 4.7.2 以降のタグが付いたイメージでは、既定の `SHELL` として PowerShell が使用されている可能性があり、その場合 `RUN` および `ENTRYPOINT` 命令は失敗することに注意してください。
+   > 自分のイメージを microsoft/windowsservercore または mcr.microsoft.com/windows/servercore に直接基づくようにする場合 ([Microsoft によるコンテナー カタログのシンジケート](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/)に関するページを参照)、.NET Framework が正しくインストールされない可能性があり、インストール エラーは示されません。 インストールが完了した後、マネージド コードが実行されない可能性があります。 代わりに、イメージを [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) 以降に基づくようにします。 また、バージョン 4.7.2 以降のタグが付いたイメージでは、既定の `SHELL` として PowerShell が使用されている可能性があり、その場合 `RUN` および `ENTRYPOINT` 命令は失敗することに注意してください。
    >
    > Visual Studio 2017 バージョン 15.8 以前 (すべての製品) は、mcr.microsoft.com/windows/servercore:1809 以降には適切にインストールされません。 エラーは表示されません。
    >
