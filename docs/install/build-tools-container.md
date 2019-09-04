@@ -129,7 +129,7 @@ Visual Studio Build Tools を Windows コンテナーにインストールして
    ```
 
    > [!WARNING]
-   > microsoft/windowsservercore に直接基づくイメージの場合は、.NET Framework が正しくインストールされない可能性があり、インストール エラーは示されていません。 インストールが完了した後、マネージド コードが実行しない可能性があります。 代わりに、イメージを [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) 以降に基づくようにします。 また、バージョン 4.8 以降のタグが付いたイメージでは、既定の `SHELL` として PowerShell が使用されている可能性があり、その場合 `RUN` および `ENTRYPOINT` 命令は失敗することに注意してください。
+   > microsoft/windowsservercore に直接基づくイメージの場合は、.NET Framework が正しくインストールされない可能性があり、インストール エラーは示されていません。 インストールが完了した後、マネージド コードが実行されない可能性があります。 代わりに、イメージを [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) 以降に基づくようにします。 また、バージョン 4.8 以降のタグが付いたイメージでは、既定の `SHELL` として PowerShell が使用されている可能性があり、その場合 `RUN` および `ENTRYPOINT` 命令は失敗することに注意してください。
    >
    > どのコンテナー OS バージョンがどのホスト OS バージョン上でサポートされているかについては「[Windows コンテナーのバージョンの互換性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)」を、既知の問題については「[コンテナーの既知の問題](build-tools-container-issues.md)」をご覧ください。
 
