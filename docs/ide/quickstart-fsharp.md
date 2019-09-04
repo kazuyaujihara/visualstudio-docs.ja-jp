@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c24803f3817aa8461f9445e390fe44853d2d27c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953334"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180316"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>クイック スタート: F\# で Visual Studio を使用して初めての ASP.NET Core Web サービスを作成する
 
@@ -30,7 +30,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker range="vs-2019"
 
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。
 
 ::: moniker-end
 
@@ -42,15 +42,15 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio を開きます。
 
-2. 上部のメニュー バーから、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+2. 上部のメニュー バーから、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-3. **[新しいプロジェクト]** ダイアログ ボックスで、左ウィンドウの **[Visual F#]** を展開し、**[Web]** を選択します。 中央のウィンドウで、**[ASP.NET Core Web アプリケーション]** を選択してから **[OK]** を選択します。
+3. **[新しいプロジェクト]** ダイアログ ボックスで、左ウィンドウの **[Visual F#]** を展開し、 **[Web]** を選択します。 中央のウィンドウで、 **[ASP.NET Core Web アプリケーション]** を選択してから **[OK]** を選択します。
 
      **.NET Core** プロジェクト テンプレートのカテゴリが表示されない場合は、左側のウィンドウで **[Visual Studio インストーラーを開く]** リンクを選択します。 Visual Studio インストーラーが起動します。 **[ASP.NET と Web 開発]** ワークロードを選択してから **[変更]** を選択します。
 
      ![VS インストーラーの ASP.NET ワークロード](../ide/media/quickstart-aspnet-workload.png)
 
-4. **[新しい ASP.NET Core Web アプリケーション]** ダイアログ ボックスで、上部のドロップダウン メニューから **[ASP.NET Core 2.1]** を選択します。 (リストに **ASP.NET Core 2.1** が表示されない場合は、ダイアログ ボックスの上部付近にある黄色のバーに表示される **[ダウンロード]** リンクに従ってインストールしてください)。**[OK]** をクリックします。
+4. **[新しい ASP.NET Core Web アプリケーション]** ダイアログ ボックスで、上部のドロップダウン メニューから **[ASP.NET Core 2.1]** を選択します。 (リストに **ASP.NET Core 2.1** が表示されない場合は、ダイアログ ボックスの上部付近にある黄色のバーに表示される **[ダウンロード]** リンクに従ってインストールしてください)。 **[OK]** をクリックします。
 
 ::: moniker-end
 
@@ -58,19 +58,19 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio を開きます。
 
-2. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+2. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
 
-3. **[新しいプロジェクトの作成]** ページで、検索ボックスに「**f# web**」と入力し、**[ASP.NET Core Web アプリケーション]** プロジェクト テンプレートを選択します。 **[次へ]** をクリックします。
+3. **[新しいプロジェクトの作成]** ページで、検索ボックスに「**f# web**」と入力し、 **[ASP.NET Core Web アプリケーション]** プロジェクト テンプレートを選択します。 **[次へ]** をクリックします。
 
-4. **[新しいプロジェクトの構成]** ページで、名前を入力して、**[作成]** を選択します。
+4. **[新しいプロジェクトの構成]** ページで、名前を入力して、 **[作成]** を選択します。
 
-5. **[新しい ASP.NET Core Web アプリケーションを作成する]** ページで、上部のドロップダウン メニューから **[ASP.NET Core 2.1]** を選択し、**[作成]** を選択します。
+5. **[新しい ASP.NET Core Web アプリケーションを作成する]** ページで、上部のドロップダウン メニューから **[ASP.NET Core 2.1]** を選択し、 **[作成]** を選択します。
 
 ::: moniker-end
 
 ## <a name="explore-the-ide"></a>IDE を探索する
 
-1. **ソリューション エクスプローラー**のツールバーで、**Controllers** フォルダーを展開し、**[ValuesController.fs]** を選択してエディターで開きます。
+1. **ソリューション エクスプローラー**のツールバーで、**Controllers** フォルダーを展開し、 **[ValuesController.fs]** を選択してエディターで開きます。
 
    ![ソリューション エクスプローラーで Controllers フォルダーが展開されている F# での Web API プロジェクト](../ide/media/hello-world-fs-sln-explorer.png)
 

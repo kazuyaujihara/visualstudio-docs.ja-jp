@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 734a192a00ee0c509ed16e71a8629837155888ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c540dfef9d2d46bb621432b3e37438e0b6b07298
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957063"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154895"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>手順 5: ポーリング Flask Web プロジェクト テンプレートを使用する
 
@@ -36,15 +36,15 @@ Visual Studio は、同じアプリを生成しますが、Jinja テンプレー
 
 ## <a name="step-5-1-create-the-project"></a>手順 5-1:プロジェクトの作成
 
-1. Visual Studio で、**ソリューション エクスプローラー**に移動し、本チュートリアルの前述の手順で作成した **LearningFlask** ソリューションを右クリックし、**[追加]** > **[新しいプロジェクト]** の順に選択します。 (または、新しいソリューションを使用する場合は、代わりに **[ファイル]** > **[新規]** > **[プロジェクト]** の順に選択します)。
+1. Visual Studio で、**ソリューション エクスプローラー**に移動し、本チュートリアルの前述の手順で作成した **LearningFlask** ソリューションを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。 (または、新しいソリューションを使用する場合は、代わりに **[ファイル]**  >  **[新規]**  >  **[プロジェクト]** の順に選択します)。
 
-1. [新しいプロジェクト] ダイアログで **Polls Flask Web プロジェクト** テンプレートを探して選択し、プロジェクト "FlaskPolls" を呼び出して、**[OK]** を選択します。
+1. [新しいプロジェクト] ダイアログで **Polls Flask Web プロジェクト** テンプレートを探して選択し、プロジェクト "FlaskPolls" を呼び出して、 **[OK]** を選択します。
 
-1. Visual Studio の他のプロジェクト テンプレートと同様に、"Polls Flask Web プロジェクト" テンプレートには *requirements.txt* ファイルが含まれており、Visual Studio ではこれらの依存関係のインストール先を確認するメッセージが表示されます。 オプションを選択し、**仮想環境にインストール**して、**[仮想環境の追加]** ダイアログで **[作成]** を選択して、既定値を受け入れます。 (このテンプレートには、Flask の他に、azure-storage と pymongo のパッケージも必要です。"Polls Flask/Jade Web プロジェクト" には pyjade も必要でした。)
+1. Visual Studio の他のプロジェクト テンプレートと同様に、"Polls Flask Web プロジェクト" テンプレートには *requirements.txt* ファイルが含まれており、Visual Studio ではこれらの依存関係のインストール先を確認するメッセージが表示されます。 オプションを選択し、**仮想環境にインストール**して、 **[仮想環境の追加]** ダイアログで **[作成]** を選択して、既定値を受け入れます。 (このテンプレートには、Flask の他に、azure-storage と pymongo のパッケージも必要です。"Polls Flask/Jade Web プロジェクト" には pyjade も必要でした。)
 
-1. **ソリューション エクスプローラー**を右クリックし、**[スタートアップ プロジェクトに設定]** を選択して、**FlaskPolls** プロジェクトを Visual Studio ソリューションの既定に設定します。 デバッガーを起動すると、太字で表示されているスタートアップ プロジェクトが実行されます。
+1. **ソリューション エクスプローラー**を右クリックし、 **[スタートアップ プロジェクトに設定]** を選択して、**FlaskPolls** プロジェクトを Visual Studio ソリューションの既定に設定します。 デバッガーを起動すると、太字で表示されているスタートアップ プロジェクトが実行されます。
 
-1. **[デバッグ]** > **[デバッグの開始]** (**F5** キー) を選択するか、またはツールバーの **[Web サーバー]** ボタンを使用して、サーバーを実行します。
+1. **[デバッグ]**  >  **[デバッグの開始]** (**F5** キー) を選択するか、またはツールバーの **[Web サーバー]** ボタンを使用して、サーバーを実行します。
 
     ![Visual Studio の [Web サーバー] ツールバー ボタンを実行する](media/django/run-web-server-toolbar-button.png)
 
@@ -68,7 +68,7 @@ Visual Studio は、同じアプリを生成しますが、Jinja テンプレー
 
 1. 以降のセクションについては、アプリにそのまま実行させることができます。
 
-    アプリを停止して[ソース コントロールへの変更をコミットする](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)場合、最初に**チーム エクスプローラー**で **[変更]** を開き、仮想環境のフォルダー (通常は **env**) を右クリックして、**[これらのローカル項目を無視]** を選択します。
+    アプリを停止して[ソース コントロールへの変更をコミットする](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)場合、最初に**チーム エクスプローラー**で **[変更]** を開き、仮想環境のフォルダー (通常は **env**) を右クリックして、 **[これらのローカル項目を無視]** を選択します。
 
 ### <a name="examine-the-project-contents"></a>プロジェクトの内容を確認する
 
@@ -354,6 +354,6 @@ Visual Studio で "Blank Flask Web プロジェクト"、"Flask[/Jade] Web プ�
 
 - Web アプリを Azure App Service などの運用サーバーに展開します。 「[Azure App Service に発行する](publishing-python-web-applications-to-azure-from-visual-studio.md)」を参照してください。
 
-- PostgreSQL、MySQL、SQL Server など (これらはいずれも Azure でホストできます) など、別の運用レベルのデータ ストアを使用するリポジトリの実装を追加します。 テーブルや BLOB のような Azure ストレージ サービスと Cosmos DB を使用する場合は、[Azure SDK for Python](/python/azure/?view=azure-python) も使用できます。
+- PostgreSQL、MySQL、SQL Server など (これらはいずれも Azure でホストできます) など、別の運用レベルのデータ ストアを使用するリポジトリの実装を追加します。 テーブルや BLOB のような Azure ストレージ サービスと Cosmos DB を使用する場合は、[Azure SDK for Python](/azure/python/) も使用できます。
 
 - Azure DevOps などのサービスに対して、継続的インテグレーション/継続的配置パイプラインを設定します。 (Azure Repos、GitHub、または他の場所で) ソース コード管理を使用するだけでなく、リリースの前提条件として単体テストを自動的に実行するよう、Azure DevOps プロジェクトを構成することができます。また、運用環境にデプロイする前に、追加テストのためにステージング サーバーにデプロイするパイプラインを構成することもできます。 さらに、Azure DevOps は App Insights などの監視ソリューションと統合されているので、アジャイル計画ツールを使用してサイクル全体に対応することができます。 詳細については、「[Azure DevOps Projects を使用して Python 用の CI/CD パイプラインを作成する](/azure/devops-project/azure-devops-project-python?view=vsts)」、および一般的な [Azure DevOps ドキュメント](/azure/devops/?view=vsts)を参照してください。

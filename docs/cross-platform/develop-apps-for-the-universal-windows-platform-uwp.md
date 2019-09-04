@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bfe4b1a172158740705e392c573de7911016583
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819570"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179868"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>ユニバーサル Windows プラットフォーム (UWP) 向けアプリの開発
 
@@ -32,7 +32,7 @@ Windows では初めて、すべての Windows 10 プラットフォームで共
 
 ユニバーサル Windows プラットフォームとは、簡単にいえば、コントラクトとバージョンのコレクションです。 これらにより、アプリを実行する対象となる場所を指定できます。 オペレーティング システムを対象にすることはなくなり、1 つまたは複数のデバイス ファミリを対象にするようになります。 詳しくは、「[ユニバーサル Windows プラットフォームの紹介](/windows/uwp/get-started/universal-application-platform-guide)」をご覧ください。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 ユニバーサル Windows アプリの開発ツールには、別のデバイス上のアプリの外観を確認する際に使用できるエミュレーターが付属しています。 これらのエミュレーターを使用する場合は、このソフトウェアを物理マシンにインストールする必要があります。 その物理マシンでは、Windows 8.1 (x64) Professional エディション以上が実行され、クライアント Hyper-V および第 2 レベルのアドレス変換 (SLAT) をサポートするプロセッサが搭載されている必要があります。 Visual Studio が仮想マシンにインストールされている場合は、エミュレーターを使用できません。
 
@@ -52,7 +52,7 @@ Windows では初めて、すべての Windows 10 プラットフォームで共
 
 - [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2019 は、Windows 10 でのみ UWP の開発をサポートします。 詳しくは、Visual Studio の「[対象となるプラットフォーム](/visualstudio/releases/2019/compatibility/)」と「[システム要件](/visualstudio/releases/2019/system-requirements/)」をご覧ください。
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。 オプションのユニバーサル Windows プラットフォーム開発ワークロードも必要です。
+- [Visual Studio](https://visualstudio.microsoft.com/downloads)。 オプションのユニバーサル Windows プラットフォーム開発ワークロードも必要です。
 
      ![UWP ワークロード](media/uwp_workload.png)
 

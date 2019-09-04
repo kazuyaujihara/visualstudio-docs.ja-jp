@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d776c061982b60640944737b27cda927f79e59
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 677dddbde5e90117dc19acfaf54a941c304ae7f1
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033166"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180059"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Visual Studio IDE の表示の紹介
 
@@ -27,7 +27,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker range="vs-2019"
 
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。
 
 ::: moniker-end
 

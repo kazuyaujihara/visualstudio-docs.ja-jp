@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4e461fd69e048e406fbe062ff297da9baab3696
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: 755554b73fc80df151550f36e1846e07db70bcd8
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345751"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222748"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio での正規表現の使用
 
@@ -48,7 +48,7 @@ Visual Studio は、テキストの検索と置換をするときに、[.NET Fra
 |かっこで囲まれた表現を 1 つのまとまりとして扱い、その表現に対して暗黙的に番号を付けます。|()|`([a-z])X\1` は、"aXa" および "bXb" に一致しますが、"aXb" には一致しません。 "\1"は、最初の表現グループ "[a-z]" を指します。 詳しくは、「[キャプチャ グループと置換パターン](#capture-groups-and-replacement-patterns)」をご覧ください。 |
 |一致を否定します。|(?!abc)|`real(?!ity)` は、"realty" や "really" の中の "real" に一致しますが、"reality" の中の "real" には一致しません。 また、"realityreal" の中の 2 番目の "real" に一致します (一方、最初の "real" には一致しません)。|
 |指定された一連の文字の中に含まれていない任意の文字と一致します。 詳細については、「[文字グループの否定](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-)」を参照してください。|[^abc]|`be[^n-t]` は、"before" の中の "bef"、"behind" の中の "beh"、および "below" の中の "bel" に一致しますが、"beneath" の中の "ben" には一致しません。|
-|記号の前にある表現、または後にある表現のいずれかに一致します|&#124;|`(sponge\|mud) bath` は "sponge bath" および "mud bath" に一致します。|
+|記号の前にある表現、または後にある表現のいずれかに一致します|&#124;|`(sponge|mud) bath` は "sponge bath" および "mud bath" に一致します。|
 |円記号の後の[文字をエスケープ処理](/dotnet/standard/base-types/character-escapes-in-regular-expressions)します| \\ |`\^` は、^ 文字に一致します。|
 |直前の文字またはグループが登場する回数を指定します。 詳しくは、「[n 回の繰り返しに一致](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n)」をご覧ください。|{n}、ここで "n" は登場する回数です|`x(ab){2}x` は "xababx" に一致し、`x(ab){2,3}x` は "xababx" および "xabababx" に一致しますが、"xababababx" には一致しません。|
 |[Unicode カテゴリに含まれるテキストに一致します](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p)。 Unicode 文字クラスについて詳しくは、Unicode Standard 5.2 の「[Character Properties (文字プロパティ)](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)」をご覧ください。|\p{X}、ここで "X" は Unicode 番号です。|`\p{Lu}` は "Thomas Doe" の中の "T" および "D" に一致します。|

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 2abfb87ff4a97201246f9a9c284871db5e5f0068
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5be67673e6f806cb149b19b08244ca0da555ae2
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572685"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179805"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio Cloud Explorer で Azure アカウントに関連付けられているリソースを管理する
 
@@ -24,7 +24,7 @@ Cloud Explorer を使用すると、Azure リソースやリソース グルー�
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* **Azure ワークロード**を選択した Visual Studio 2017 以降 ([Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)を参照)。 [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) を含む Visual Studio の以前のバージョンを使用することもできます。
+* **Azure ワークロード**を選択した Visual Studio 2017 以降 ([Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads)を参照)。 [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) を含む Visual Studio の以前のバージョンを使用することもできます。
 * Microsoft Azure アカウント - アカウントがない場合は、[無料試用版にサインアップ](http://go.microsoft.com/fwlink/?LinkId=623901)するか、[Visual Studio サブスクライバー特典を有効](http://go.microsoft.com/fwlink/?LinkId=623901)にします。
 
 > [!NOTE]
@@ -44,7 +44,7 @@ Azure アカウントに関連付けられているリソースを表示する�
 
 1. 参照するリソースが関連付けられている Azure アカウントにログインします。
 
-1. Azure アカウントにログインすると、そのアカウントに関連付けられているサブスクリプションが表示されます。 参照するアカウント サブスクリプションのチェック ボックスをオンにし、**[適用]** をクリックします。
+1. Azure アカウントにログインすると、そのアカウントに関連付けられているサブスクリプションが表示されます。 参照するアカウント サブスクリプションのチェック ボックスをオンにし、 **[適用]** をクリックします。
 
    ![Cloud Explorer: 表示する Azure サブスクリプションを選択する](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
 
@@ -68,7 +68,7 @@ Azure アカウントに関連付けられているリソースを表示する�
 
 ## <a name="view-resource-types-or-resource-groups"></a>リソースの種類またはリソース グループを表示する
 
-Azure リソースを表示するには、**[リソースの種類]** ビューまたは **[リソース グループ]** ビューを選択します。
+Azure リソースを表示するには、 **[リソースの種類]** ビューまたは **[リソース グループ]** ビューを選択します。
 
 1. **Cloud Explorer** で、リソース ビュー ドロップダウンをクリックします。
 
@@ -85,7 +85,7 @@ Azure リソースを表示するには、**[リソースの種類]** ビュー�
 
 ## <a name="view-and-navigate-resources-in-cloud-explorer"></a>Cloud Explorer でリソースを表示し、リソースに移動する
 
-Cloud Explorer で Azure リソースに移動してその情報を表示するには、項目の種類または関連付けられているリソース グループを展開し、リソースを選択します。 リソースを選択すると、Cloud Explorer の下部にある 2 つのタブ (**[アクション]** と **[プロパティ]**) に情報が表示されます。
+Cloud Explorer で Azure リソースに移動してその情報を表示するには、項目の種類または関連付けられているリソース グループを展開し、リソースを選択します。 リソースを選択すると、Cloud Explorer の下部にある 2 つのタブ ( **[アクション]** と **[プロパティ]** ) に情報が表示されます。
 
 * **[アクション]** タブ - 選択したリソースに対して Cloud Explorer で実行できるアクションが表示されます。 リソースを右クリックしてコンテキスト メニューを表示することで、これらのオプションを表示することもできます。
 
@@ -97,7 +97,7 @@ Cloud Explorer で Azure リソースに移動してその情報を表示する�
 
 すべてのリソースには、 **[ポータルで開く]** というアクションがあります。 このアクションを選択すると、選択したリソースが [Azure ポータル](http://go.microsoft.com/fwlink/p/?LinkID=525040)で表示されます。 **[ポータルで開く]** 機能は、深く入れ子になったリソースに移動する場合に便利です。
 
-その他のアクションやプロパティ値も、Azure リソースに基づいて表示される場合があります。 たとえば、Web Apps と Logic Apps には、**[ポータルで開く]** に加えて、**[ブラウザーで開く]** と **[デバッガーのアタッチ]** というアクションもあります。 エディターを開くアクションは、ストレージ アカウントの BLOB、キュー、またはテーブルを選択すると表示されます。 Azure アプリには **URL** と**状態**プロパティがあるのに対し、ストレージ リソースにはキーと接続文字列のプロパティがあります。
+その他のアクションやプロパティ値も、Azure リソースに基づいて表示される場合があります。 たとえば、Web Apps と Logic Apps には、 **[ポータルで開く]** に加えて、 **[ブラウザーで開く]** と **[デバッガーのアタッチ]** というアクションもあります。 エディターを開くアクションは、ストレージ アカウントの BLOB、キュー、またはテーブルを選択すると表示されます。 Azure アプリには **URL** と**状態**プロパティがあるのに対し、ストレージ リソースにはキーと接続文字列のプロパティがあります。
 
 ## <a name="find-resources-in-cloud-explorer"></a>Cloud Explorer でリソースを検索する
 

@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a65534cda2571c36bb0c2caa16bf2f3394a804
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dab237eeb99f4d4d67652dba583bf9851b6d6175
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435055"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180468"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>チュートリアル: Visual Studio で XAML と C# を使用して最初のユニバーサル Windows プラットフォーム アプリを作成する
 
@@ -29,7 +29,7 @@ ms.locfileid: "63435055"
 Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ページに移動し、無料試用版をインストールしてください。
 ::: moniker-end
 ::: moniker range="vs-2019"
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。
 ::: moniker-end
 
 ## <a name="create-a-project"></a>プロジェクトを作成する
@@ -39,16 +39,16 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 ::: moniker range="vs-2017"
 1. Visual Studio を開きます。
 
-1. 上部のメニュー バーから、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+1. 上部のメニュー バーから、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-1. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開し、**[Windows ユニバーサル]** を選択します。 中央のペインで **[空のアプリ (ユニバーサル Windows)]** を選択します。 次いで、プロジェクトに「*HelloWorld*」という名前を付け、**[OK]** を選択します。
+1. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開し、 **[Windows ユニバーサル]** を選択します。 中央のペインで **[空のアプリ (ユニバーサル Windows)]** を選択します。 次いで、プロジェクトに「*HelloWorld*」という名前を付け、 **[OK]** を選択します。
 
    ![Visual Studio IDE の [新しいプロジェクト] ダイアログ ボックスに示されている Windows ユニバーサル プロジェクト テンプレート](media/new-project-csharp-uwp-helloworld.png)
 
    > [!NOTE]
-   > **[空のアプリ (ユニバーサル Windows)]** プロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual Studio インストーラーを開く]** リンクをクリックします。<br><br>![[新しいプロジェクト] ダイアログ ボックスで [Visual Studio インストーラーを開く] リンクをクリックする](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Visual Studio インストーラーが起動します。 **[ユニバーサル Windows プラットフォーム開発]** ワークロードを選択し、**[変更]** を選択します。<br><br>![Visual Studio インストーラーの [ユニバーサル Windows プラットフォーム開発] ワークロード](media/uwp-dev-workload.png)
+   > **[空のアプリ (ユニバーサル Windows)]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual Studio インストーラーを開く]** リンクをクリックします。<br><br>![[新しいプロジェクト] ダイアログ ボックスで [Visual Studio インストーラーを開く] リンクをクリックする](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Visual Studio インストーラーが起動します。 **[ユニバーサル Windows プラットフォーム開発]** ワークロードを選択し、 **[変更]** を選択します。<br><br>![Visual Studio インストーラーの [ユニバーサル Windows プラットフォーム開発] ワークロード](media/uwp-dev-workload.png)
 
-1. **[新しいユニバーサル Windows プラットフォーム プロジェクト]** ダイアログ ボックスで、**[ターゲット バージョン]** と **[最小バージョン]** の既定の設定をそのまま使用します。
+1. **[新しいユニバーサル Windows プラットフォーム プロジェクト]** ダイアログ ボックスで、 **[ターゲット バージョン]** と **[最小バージョン]** の既定の設定をそのまま使用します。
 
    ![[新しいユニバーサル Windows プラットフォーム プロジェクト] の既定のターゲット バージョンと最小バージョンの設定をそのまま使用します。](media/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
@@ -56,21 +56,21 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 ::: moniker range=">=vs-2019"
 1. Visual Studio を開き、[スタート] ウィンドウで **[新しいプロジェクトの作成]** を選択します。
 
-1. **[新しいプロジェクトの作成]** 画面で、検索ボックスに「*ユニバーサル Windows*」と入力し、**[空のアプリ (ユニバーサル Windows)]** 用の C# テンプレートを選択して、**[次へ]** を選択します。
+1. **[新しいプロジェクトの作成]** 画面で、検索ボックスに「*ユニバーサル Windows*」と入力し、 **[空のアプリ (ユニバーサル Windows)]** 用の C# テンプレートを選択して、 **[次へ]** を選択します。
 
    ![[新しいプロジェクトの作成] 画面のスクリーンショット](media/vs-2019/uwp-create-new-project.png)
 
    > [!NOTE]
-   > **[空のアプリ (ユニバーサル Windows)]** プロジェクト テンプレートが表示されない場合は、**[さらにツールと機能をインストールする]** リンクをクリックします。<br><br>![[さらにツールと機能をインストールする] リンクをクリックする](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio インストーラーが起動します。 **[ユニバーサル Windows プラットフォーム開発]** ワークロードを選択し、**[変更]** を選択します。<br><br>![Visual Studio インストーラーの [ユニバーサル Windows プラットフォーム開発] ワークロード](media/uwp-dev-workload.png)
+   > **[空のアプリ (ユニバーサル Windows)]** プロジェクト テンプレートが表示されない場合は、 **[さらにツールと機能をインストールする]** リンクをクリックします。<br><br>![[さらにツールと機能をインストールする] リンクをクリックする](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio インストーラーが起動します。 **[ユニバーサル Windows プラットフォーム開発]** ワークロードを選択し、 **[変更]** を選択します。<br><br>![Visual Studio インストーラーの [ユニバーサル Windows プラットフォーム開発] ワークロード](media/uwp-dev-workload.png)
 
-1. **[新しいユニバーサル Windows プラットフォーム プロジェクト]** ダイアログ ボックスで、**[ターゲット バージョン]** と **[最小バージョン]** の既定の設定をそのまま使用します。
+1. **[新しいユニバーサル Windows プラットフォーム プロジェクト]** ダイアログ ボックスで、 **[ターゲット バージョン]** と **[最小バージョン]** の既定の設定をそのまま使用します。
 
    ![[新しいユニバーサル Windows プラットフォーム プロジェクト] の既定のターゲット バージョンと最小バージョンの設定をそのまま使用します。](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
    > [!NOTE]
-   > UWP アプリを作成するために Visual Studio を初めて使用する場合、**[設定]** ダイアログ ボックスが表示されます。 **[開発者モード]**、**[はい]** の順に選択します。<br><br>
-   > ![UWP 設定ダイアログ ボックスで開発者モードを有効にする](media/enable-developer-mode.png)<br><br>Visual Studio では、開発者モード パッケージが追加でインストールされます。 パッケージのインストールが完了したら、**[設定]** ダイアログ ボックスを閉じます。
+   > UWP アプリを作成するために Visual Studio を初めて使用する場合、 **[設定]** ダイアログ ボックスが表示されます。 **[開発者モード]** 、 **[はい]** の順に選択します。<br><br>
+   > ![UWP 設定ダイアログ ボックスで開発者モードを有効にする](media/enable-developer-mode.png)<br><br>Visual Studio では、開発者モード パッケージが追加でインストールされます。 パッケージのインストールが完了したら、 **[設定]** ダイアログ ボックスを閉じます。
 
 ## <a name="create-the-application"></a>アプリケーションを作成する
 
@@ -95,7 +95,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![[ツールボックス] をクリックしてツールボックスのスライド アウト ウィンドウを開く](media/uwp-toolbox.png)
 
-   (**ツールボックス**のオプションが表示されない場合は、メニュー バーから開くことができます。 これを行うには、**[ビュー]** > **[ツールバー]** の順に選択します。 または、**Ctrl**+**Alt**+**X** キーを押します)。
+   (**ツールボックス**のオプションが表示されない場合は、メニュー バーから開くことができます。 これを行うには、 **[ビュー]**  >  **[ツールバー]** の順に選択します。 または、**Ctrl**+**Alt**+**X** キーを押します)。
 
 1. **[ピン設定]** アイコンをクリックして、[ツールボックス] ウィンドウをドッキングします。
 
@@ -156,11 +156,11 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 "Hello World" UWP アプリを、ビルド、配置、および起動して、どのように表示および読み上げがあるか確認してみましょう。 ここではその方法を説明します。
 
-1. 再生ボタン (表示は **[ローカル コンピューター]**) を使用して、ローカル コンピューターでアプリケーションを起動します。
+1. 再生ボタン (表示は **[ローカル コンピューター]** ) を使用して、ローカル コンピューターでアプリケーションを起動します。
 
    ![[ローカル マシン] をクリックし、UWP アプリを起動してデバッグする](media/uwp-start-or-debug.png)
 
-   (または、メニュー バーから **[デバッグ]** > **[デバッグの開始]** を選択するか、F5 キーを押して、アプリを起動します。)
+   (または、メニュー バーから **[デバッグ]**  >  **[デバッグの開始]** を選択するか、F5 キーを押して、アプリを起動します。)
 
 1. スプラッシュ スクリーンが消えるとすぐ表示されるアプリを確認します。 アプリは次のように表示されるはずです。
 
@@ -170,7 +170,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    Windows 10 デバイスにより、"Hello, World!" と文字通り読み上げられます。
 
-1. アプリを閉じるには、ツール バーで **[デバッグの停止]** ボタンをクリックします。 (または、メニュー バーから **[デバッグ]** > **[デバッグの停止]** を選択するか、Shift + F5 キーを押します。)
+1. アプリを閉じるには、ツール バーで **[デバッグの停止]** ボタンをクリックします。 (または、メニュー バーから **[デバッグ]**  >  **[デバッグの停止]** を選択するか、Shift + F5 キーを押します。)
 
 ## <a name="next-steps"></a>次の手順
 

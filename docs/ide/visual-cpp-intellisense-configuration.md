@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5c95990eb875c52a66cd0efa5579c9d39eab5469
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925860"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154914"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense の C++ プロジェクトを構成する
 
@@ -48,7 +48,7 @@ NMake プロジェクト テンプレートに基づくメイクファイル プ
 
 ### <a name="open-folder-projects"></a>"フォルダーを開く" プロジェクト
 
-CMake プロジェクトの場合は、CMakeLists.txt ですべての構成に対して #include パスが正しく指定されていることを確認します。 その他のプロジェクトの種類では、CppProperties.json ファイルが必要になる場合があります。 詳細については、[CppProperties.json を使って IntelliSense を構成する](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson)に関するページを参照してください。 ファイルで定義されている各構成に対するパスが正しいことを確認します。
+CMake プロジェクトの場合は、CMakeLists.txt ですべての構成に対して #include パスが正しく指定されていることを確認します。 その他のプロジェクトの種類では、CppProperties.json ファイルが必要になる場合があります。 詳細については、[CppProperties.json を使って IntelliSense を構成する](/cpp/build/open-folder-projects-cpp#configure-code-navigation-with-cpppropertiesjson)に関するページを参照してください。 ファイルで定義されている各構成に対するパスが正しいことを確認します。
 
 CppProperties.json ファイルに構文エラーがある場合、影響を受けるファイル内の IntelliSense は不正になります。 Visual Studio の出力ウィンドウにエラーが表示されます。
 

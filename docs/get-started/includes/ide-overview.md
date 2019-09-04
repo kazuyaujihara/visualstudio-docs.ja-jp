@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 2d0d46a39bed9600ccdc0a7f343accf74378b81e
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 27c9c453549f753f3dfdc1664fd76f7a65d0ded5
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68148379"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70197154"
 ---
 Visual Studio *統合開発環境* は、コードの編集、デバッグ、ビルドを行ってから、アプリを発行するために使用できるクリエイティブなランチパッドです。 統合開発環境 (IDE) は、ソフトウェア開発の多くの側面で使用できる機能を豊富に備えたプログラムです。 大部分の IDE が備える標準的なエディターおよびデバッガーに加えて、Visual Studio ではコンパイラ、コード補完ツール、グラフィック デザイナーなど、ソフトウェア開発プロセスを容易にする多くの機能を用意しています。
 
@@ -152,7 +152,7 @@ Visual Studio 2019 には 3 つのエディションがあります:という 3 
 
 ::: moniker range=">=vs-2019"
 
-まず、[Visual Studio をダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)してシステムにインストールします。 モジュラー インストーラーでは、*ワークロード* (好みのプログラミング言語やプラットフォームで必要な機能のグループ) を選択してインストールできます。 [プログラムの作成](#create-a-program)手順に従う場合は、インストール時に必ず、 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
+まず、[Visual Studio をダウンロード](https://visualstudio.microsoft.com/downloads)してシステムにインストールします。 モジュラー インストーラーでは、*ワークロード* (好みのプログラミング言語やプラットフォームで必要な機能のグループ) を選択してインストールできます。 [プログラムの作成](#create-a-program)手順に従う場合は、インストール時に必ず、 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
 
 ::: moniker-end
 

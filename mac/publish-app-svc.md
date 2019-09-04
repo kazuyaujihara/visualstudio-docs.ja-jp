@@ -1,7 +1,6 @@
 ---
 title: Azure App Service に発行する
 ms.date: 04/02/2019
-ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: 8524a4c5-97a9-41ac-a2a0-034efb9bfc57
@@ -12,12 +11,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: c6aa04ceb08daeb303ae6c421fe34465a9ebcda4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4ce4273b72a57a2b9456974a108809dcd73b4e0
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939383"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222723"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Visual Studio for Mac を使用して Azure App Service に Web アプリを発行する
 
@@ -31,13 +30,13 @@ ms.locfileid: "62939383"
 
 ## <a name="publish-to-azure-app-service"></a>Azure App Service に発行する
 
- 1. Solution Pad で、プロジェクトを右クリックして、**[発行]** を選択します。
+ 1. Solution Pad で、プロジェクトを右クリックして、 **[発行]** を選択します。
 
     ![[発行] コンテキスト メニュー](media/publish-context-menu.png)
 
  2. このプロジェクトを既に Azure App Service に発行している場合は、メニューに発行プロファイルが表示されます。 その発行プロファイルを選択して、発行プロセスを開始します。
 
- 3. このプロジェクトを初めて App Service に発行する場合は、**[Azure に発行する]** を選択します
+ 3. このプロジェクトを初めて App Service に発行する場合は、 **[Azure に発行する]** を選択します
 
     ![App Service コンテキスト メニューに発行する](media/publish-to-azure-context-menu.png)
 
@@ -45,7 +44,7 @@ ms.locfileid: "62939383"
 
     ![[Azure App Service に発行する] ダイアログ](media/publish-to-app-service-dialog.png)
 
- 5. 新しい App Service を作成するには、**[新規作成]** をクリックします。
+ 5. 新しい App Service を作成するには、 **[新規作成]** をクリックします。
 
     ![[App Service に発行する] ダイアログ](media/publish-to-app-service-dialog-new-selected.png)
 
@@ -59,11 +58,11 @@ ms.locfileid: "62939383"
 
     ドロップダウンを使って既存の**リソース グループ**を選択するか、または **+** ボタンで新しいリソース グループを作成できます。
 
-    App Service プランでは、既存のプランを選択するか、**[カスタム]** ラジオ ボタンを選択することで新しいプランを作成します。
+    App Service プランでは、既存のプランを選択するか、 **[カスタム]** ラジオ ボタンを選択することで新しいプランを作成します。
 
-    新しい App Service を作成して、自分のプロジェクトをそこに発行するには、**[作成]** をクリックします。
+    新しい App Service を作成して、自分のプロジェクトをそこに発行するには、 **[作成]** をクリックします。
 
-    **[作成]** をクリックしたら、**[新しい App Service]** ダイアログが閉じられ、App Service の作成が開始されたことを示す次のメッセージが表示されます。
+    **[作成]** をクリックしたら、 **[新しい App Service]** ダイアログが閉じられ、App Service の作成が開始されたことを示す次のメッセージが表示されます。
 
       ![App Service のメッセージを作成する](media/publish-create-app-service-message.png)
 
