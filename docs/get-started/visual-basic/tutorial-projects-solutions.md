@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 97b1fc79c7b558fc4445b3d2621746e752a4ef71
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 37faf8dc0598a4e59c74e36da22df16119d5a001
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416492"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180161"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Visual Basic を使用するプロジェクトとソリューションについて理解する
 
@@ -32,7 +32,7 @@ ms.locfileid: "68416492"
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
+> Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。
 
 ::: moniker-end
 
@@ -242,7 +242,7 @@ ms.locfileid: "68416492"
 ![テストに合格したことを示す Visual Studio のテキスト エクスプローラー](../media/tutorial-projects-test-explorer.png)
 
 > [!TIP]
-> **テスト エクスプローラー**が自動的に開かない場合は、メニュー バーから **[テスト]**  >  **[Windows]**  >  **[テスト エクスプローラー]** を選択して開きます。
+> **テスト エクスプローラー** が自動的に開かない場合は、メニュー バーから **[テスト]**  >  **[ウィンドウ]**  >  **[テスト エクスプローラー]** を選択して開きます。
 
 ## <a name="next-steps"></a>次の手順
 

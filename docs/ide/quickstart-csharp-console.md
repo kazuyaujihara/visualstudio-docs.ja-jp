@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 34e943984755ff1f36f8a28134e1e2abde4312d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94e7a0917a07a3e36ec46b0f9e530dd55728e4ee
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954084"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180112"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>クイック スタート: Visual Studio を使用して初めての C# コンソール アプリを作成する
 
@@ -34,7 +34,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker range="vs-2019"
 
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。
 
 ::: moniker-end
 
@@ -46,17 +46,17 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio 2017 を開きます。
 
-2. 上部のメニュー バーから、**[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+2. 上部のメニュー バーから、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-3. 左側のウィンドウの **[新しいプロジェクト]** ダイアログ ボックスで、**[C#]** を展開し、**[.NET Core]** を選択します。 中央のウィンドウで、**[Console App (.NET Core)]** を選択します。 プロジェクトに *HelloWorld* という名前を付けます。
+3. 左側のウィンドウの **[新しいプロジェクト]** ダイアログ ボックスで、 **[C#]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 プロジェクトに *HelloWorld* という名前を付けます。
 
    ![Visual Studio IDE の [新しいプロジェクト] ダイアログ ボックスに示されているコンソール アプリ (.NET Core) プロジェクト テンプレート](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
 
-     **[Console App (.NET Core)]** プロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクを選択します。
+     **[Console App (.NET Core)]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクを選択します。
 
    ![[新しいプロジェクト] ダイアログ ボックスから [Visual Studio インストーラーを開く] リンクを選択する](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
 
-     Visual Studio インストーラーが起動します。 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択し、**[変更]** を選択します。
+     Visual Studio インストーラーが起動します。 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択し、 **[変更]** を選択します。
 
      ![Visual Studio インストーラーの [.NET Core クロスプラットフォームの開発] ワークロード](../ide/media/dot-net-core-xplat-dev-workload.png)
 
@@ -66,28 +66,28 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. Visual Studio 2019 を開きます。
 
-1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+1. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
 
    ![[新しいプロジェクトの作成] ウィンドウ](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語のリストから **[C#]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
 
-   言語およびプラットフォームのフィルターを適用してから、**[コンソール アプリ (.NET Core)]** テンプレートを選択して、**[次へ]** を選択します。
+   言語およびプラットフォームのフィルターを適用してから、 **[コンソール アプリ (.NET Core)]** テンプレートを選択して、 **[次へ]** を選択します。
 
    ![コンソール アプリ (.NET Framework) 用の C# テンプレートを選択する](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
-   > **[コンソール アプリ (.NET Core)]** テンプレートが表示されない場合は、**[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、**[さらにツールと機能をインストールする]** リンクを選択します。
+   > **[コンソール アプリ (.NET Core)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
    >
    > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
-   > 次に、Visual Studio インストーラーで、**[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
+   > 次に、Visual Studio インストーラーで、 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
    >
    > ![Visual Studio インストーラーの [.NET Core クロスプラットフォームの開発] ワークロード](./media/dot-net-core-xplat-dev-workload.png)
    >
-   > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、**[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
+   > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、 **[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
 
-1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*HelloWorld*」とタイプまたは入力します。 次に、**[作成]** を選択します。
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*HelloWorld*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
 
    ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'HelloWorld' という名前を付けます。](../get-started/csharp/media/vs-2019/csharp-name-your-helloworld-project.png)
 

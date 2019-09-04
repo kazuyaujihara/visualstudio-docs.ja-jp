@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5ea7b0c934dfeeee6825c558868388a65a8bdcd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbecfb7e74b38bb935414e701618cef361bf0506
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997447"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180016"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio のインストールとアップグレードの問題のトラブルシューティング
 
@@ -71,7 +71,7 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 
 1. Visual Studio インストーラーを閉じます。
 2. Visual Studio インストーラーのディレクトリを削除します。 通常、ディレクトリは `C:\Program Files (x86)\Microsoft Visual Studio\Installer` です。
-3. Visual Studio インストーラーのブートストラップを実行します。 [ダウンロード] フォルダーのブートストラップのファイル名には `vs_[Visual Studio edition]__*.exe` のパターンが使用されている場合があります。 アプリケーションが見つからない場合は、「[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)」ページに移動し、Visual Studio のお使いのエディションの **[ダウンロード]** をクリックして、ブートストラップをダウンロードできます。 次に、実行可能ファイルを実行して、インストール メタデータをリセットします。
+3. Visual Studio インストーラーのブートストラップを実行します。 [ダウンロード] フォルダーのブートストラップのファイル名には `vs_[Visual Studio edition]__*.exe` のパターンが使用されている場合があります。 アプリケーションが見つからない場合は、「[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads)」ページに移動し、Visual Studio のお使いのエディションの **[ダウンロード]** をクリックして、ブートストラップをダウンロードできます。 次に、実行可能ファイルを実行して、インストール メタデータをリセットします。
 4. Visual Studio のインストールまたは更新を再度試します。 インストーラーのエラーが続く場合は、次の手順に進みます。
 
 ::: moniker-end
@@ -83,20 +83,20 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 ::: moniker range="vs-2017"
 
 1. セットアップ ログを収集します。 詳細については、「[Visual Studio のインストール ログを取得する方法](#how-to-get-visual-studio-installation-logs)」をご覧ください。
-2. Visual Studio インストーラーを開き、**[問題の報告]** をクリックして、Visual Studio フィードバック ツールを開きます。
+2. Visual Studio インストーラーを開き、 **[問題の報告]** をクリックして、Visual Studio フィードバック ツールを開きます。
 ![[フィードバックの送信] ボタンからフィードバック ツールを開くことができます](media/report-a-problem.png)
 3. 問題のレポートにタイトルを付け、関連する詳細を入力します。 **[次へ]** をクリックして **[添付ファイル]** セクションに移動し、生成されたログ ファイルを添付します (通常、ファイルは `%TEMP%\vslogs.zip` にあります)。
-4. **[次へ]** をクリックして問題レポートを確認し、**[送信]** をクリックします。
+4. **[次へ]** をクリックして問題レポートを確認し、 **[送信]** をクリックします。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 1. セットアップ ログを収集します。 詳細については、「[Visual Studio のインストール ログを取得する方法](#how-to-get-visual-studio-installation-logs)」をご覧ください。
-2. Visual Studio インストーラーを開き、**[問題の報告]** をクリックして、Visual Studio フィードバック ツールを開きます。
+2. Visual Studio インストーラーを開き、 **[問題の報告]** をクリックして、Visual Studio フィードバック ツールを開きます。
 ![[フィードバックの送信] ボタンからフィードバック ツールを開くことができます](media/vs-2019/vs-installer-report-problem.png)
 3. 問題のレポートにタイトルを付け、関連する詳細を入力します。 **[次へ]** をクリックして **[添付ファイル]** セクションに移動し、生成されたログ ファイルを添付します (通常、ファイルは `%TEMP%\vslogs.zip` にあります)。
-4. **[次へ]** をクリックして問題レポートを確認し、**[送信]** をクリックします。
+4. **[次へ]** をクリックして問題レポートを確認し、 **[送信]** をクリックします。
 
 ::: moniker-end
 

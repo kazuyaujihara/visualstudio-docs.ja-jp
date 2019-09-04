@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4024209ac0c1b2766b67984710b8349c6d66d91
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: eb1dbbcc4adf8305aad119ac8a4cb223e0f89902
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605446"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180287"
 ---
 # <a name="options-dialog-box-environment--general"></a>[オプション] ダイアログ ボックス: [環境] \> [全般]
 
@@ -62,7 +62,7 @@ Visual Studio で視覚的効果を自動的に調整するか、ユーザーが
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10 には、 **[Let Windows try to fix apps so they're not blurry]\(ぼやけないように Windows でアプリの修正を試みる\)** という設定があります。 Visual Studio がモニター上でぼやけて見える場合は、この設定を**オン**にすることをお勧めします。 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) へのアップグレードを検討してください。Visual Studio 2019 は、モニターごとの DPI に対応したアプリケーションであるため、表示の明瞭度が大幅に向上しています。
+> Windows 10 には、 **[Let Windows try to fix apps so they're not blurry]\(ぼやけないように Windows でアプリの修正を試みる\)** という設定があります。 Visual Studio がモニター上でぼやけて見える場合は、この設定を**オン**にすることをお勧めします。 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) へのアップグレードを検討してください。Visual Studio 2019 は、モニターごとの DPI に対応したアプリケーションであるため、表示の明瞭度が大幅に向上しています。
 
 ::: moniker-end
 

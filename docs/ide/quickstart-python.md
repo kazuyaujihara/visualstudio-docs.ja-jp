@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aee0029553391c30fb29eb1f9fa7aba01968e5ed
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: cbb06ac800fd21e2354b04fb2e7e46306da7ed72
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740155"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180340"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>クイック スタート: Visual Studio を使用して初めての Python Web アプリを作成する
 
@@ -29,7 +29,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。 インストーラーでは、必ず **[Python 開発]** ワークロードを選択します。
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。 インストーラーでは、必ず **[Python 開発]** ワークロードを選択します。
 
 ::: moniker-end
 

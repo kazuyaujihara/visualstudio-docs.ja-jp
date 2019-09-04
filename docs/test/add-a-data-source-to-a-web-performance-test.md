@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6fad5424e74c8a65ea8ce889412b834cda6a790
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62835124"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180147"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Web パフォーマンス テストへのデータ ソースの追加
 
@@ -66,7 +66,7 @@ ms.locfileid: "62835124"
 
 ::: moniker range="vs-2019"
 
-1. Visual Studio Enterprise をお持ちでない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページからダウンロードできます。
+1. Visual Studio Enterprise をお持ちでない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページからダウンロードできます。
 
 2. SQL データベースを作成します。
 
@@ -128,7 +128,7 @@ ms.locfileid: "62835124"
 
      ![ColorName フィールドを RadioButtonList1 値にバインドする](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. **ソリューション エクスプローラー**で *Local.testsettings* ファイルを開き、**[データ ソース行ごとに 1 つ実行]** をクリックします。
+2. **ソリューション エクスプローラー**で *Local.testsettings* ファイルを開き、 **[データ ソース行ごとに 1 つ実行]** をクリックします。
 
      ![テスト設定ファイルを編集します。](../test/media/web_test_databinding_sql_testsettings.png)
 
@@ -231,7 +231,7 @@ ms.locfileid: "62835124"
 
      ![[詳細設定] を選択する](../test/media/web_test_databinding_advanced.png)
 
-8. "プロバイダー" プロパティについて Microsoft.Jet.OLEDB.4.0 を選択し、**[拡張プロパティ]** を Text;HDR=NO に設定します。
+8. "プロバイダー" プロパティについて Microsoft.Jet.OLEDB.4.0 を選択し、 **[拡張プロパティ]** を Text;HDR=NO に設定します。
 
      ![詳細設定プロパティの適用](../test/media/web_test_databinding_advancedproperties.png)
 

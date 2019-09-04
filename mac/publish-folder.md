@@ -1,7 +1,6 @@
 ---
 title: フォルダーに発行する
 ms.date: 04/02/2019
-ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
@@ -9,12 +8,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 8bff4b6079818a7e6d4e3500830a036ae6ab28cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e22176d2188df92f0956f88c912d48cb9c954dd9
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937064"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222771"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Visual Studio for Mac を使用してフォルダーに Web アプリを発行する
 
@@ -29,13 +28,13 @@ ms.locfileid: "62937064"
 
 Visual Studio for Mac では、発行ツールを使用してフォルダーにご利用の ASP.NET Core プロジェクトを発行することができます。 フォルダーに発行したら、ファイルをご利用の Web サーバーに転送して異なる環境に取り込むことができます。 フォルダーに発行するには、次の手順を行います。
 
- 1. Solution Pad で、プロジェクトを右クリックして、**[発行]** を選択します。
+ 1. Solution Pad で、プロジェクトを右クリックして、 **[発行]** を選択します。
 
     ![[発行] コンテキスト メニュー](media/publish-context-menu.png)
 
  2. このプロジェクトが既に発行されている場合は、メニューに発行プロファイルが表示されます。 その発行プロファイルを選択して、発行プロセスを開始します。
 
- 3. このプロジェクトをフォルダーに初めて発行する場合は、**[Publish to Folder]\(フォルダーに発行する\)** を選択します。
+ 3. このプロジェクトをフォルダーに初めて発行する場合は、 **[Publish to Folder]\(フォルダーに発行する\)** を選択します。
 
     ![[Publish to Folder]\(フォルダーに発行する\) コンテキスト メニュー](media/publish-to-folder-context-menu.png)
 

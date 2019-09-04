@@ -4,15 +4,14 @@ description: EditorConfig ファイルを使用し、Visual Studio for Mac で�
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f54b4c43ed0c438b7d02e4fc08fbb3dff36c34b
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998747"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108110"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>カスタム EditorConfig ファイルの作成と編集
 
@@ -41,7 +40,7 @@ EditorConfig は、C# の[コーディング規則](/visualstudio/ide/editorconf
 
 1. Visual Studio for Mac でプロジェクトを開きます。 EditorConfig ファイルを追加するソリューションまたはプロジェクト ノードのいずれかを選択します。 ソリューション ディレクトリにファイルを追加すると、ソリューション内のすべてのプロジェクトに .editorconfig の設定が適用されます。
 
-2. ノードを右クリックして **[追加]、[新しいファイル]** の順に選択し、**[新しいファイル]** ダイアログを開きます。
+2. ノードを右クリックして **[追加]、[新しいファイル]** の順に選択し、 **[新しいファイル]** ダイアログを開きます。
 
     ![コンテンツ メニュー項目](media/editorconfig-image0.png)
 
@@ -80,17 +79,17 @@ EditorConfig は、C# の[コーディング規則](/visualstudio/ide/editorconf
 
 プロジェクトの既存の `.editorconfig` ファイルを再利用すると便利な場合があります。 既存のファイルを追加するには、次を実行します。
 
-1. それを追加するフォルダーを右クリックし、**[追加]、[ファイルの追加]** の順に選択します。
+1. それを追加するフォルダーを右クリックし、 **[追加]、[ファイルの追加]** の順に選択します。
 
 2. 必要なファイルのディレクトリに移動します。
 
 3. macOS では、(`.editorconfig` などの) `.` で始まるファイルは隠しファイルであるため、**Command + Shift + .** を押して `.editorconfig` ファイルを表示します。
 
-4. `.editorconfig` ファイルを選択し、**[開く]** をクリックします。
+4. `.editorconfig` ファイルを選択し、 **[開く]** をクリックします。
 
     ![新しいファイルを追加するウィンドウ](media/editorconfig-image3b.png)
 
-5. 次のダイアログが表示されたら、**[ファイルをディレクトリにコピーする]** オプションを選択し、**[OK]** を選択します。
+5. 次のダイアログが表示されたら、 **[ファイルをディレクトリにコピーする]** オプションを選択し、 **[OK]** を選択します。
 
     ![[ファイルをフォルダーに追加する] ダイアログ オプション](media/editorconfig-image3.png)
 
@@ -123,7 +122,7 @@ csharp_new_line_before_open_brace = none
 
 「[EditorConfig 設定のオーバーライド](#override-editorconfig-settings)」セクションに説明されているように、`root` を `true` に設定すると、このファイルがコードベースの一番上のファイルとしてフラグを設定され、プロジェクトでそれより上の `.editorconfig` ファイルは無視されます。
 
-各セクションには角括弧 (**[ ]**) が付き、後続のプロパティが付属するファイルの型に関する情報が指定されます。
+各セクションには角括弧 ( **[ ]** ) が付き、後続のプロパティが付属するファイルの型に関する情報が指定されます。
 
 上の例では、一部の設定がプロジェクトのすべてのファイルに適用されます。その他の設定は C# ファイルにのみ追加されます。 下のスクリーンショットでは、`.editorconfig` 設定の適用前後を確認できます。
 

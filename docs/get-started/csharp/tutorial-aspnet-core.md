@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 00423f3affa5c882137ee19c355252acbf23c976
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: ac544f033e8b021b7ef0a6253fbd0cb65b4450f5
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402113"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180472"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>チュートリアル: Visual Studio での C# および ASP.NET Core の概要
 
@@ -39,11 +39,11 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker range="vs-2019"
 
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。
 
 ::: moniker-end
 
-### <a name="update-visual-studio"></a>Visual Studio 2017 を更新する
+### <a name="update-visual-studio"></a>Visual Studio を更新する
 
 Visual Studio を既にインストールしている場合は、最新のリリースを実行していることを確認します。 インストールを更新する方法の詳細については、「[Visual Studio を最新リリースに更新する](../../install/update-visual-studio.md)」ページを参照してください。
 
