@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533363"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222614"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio での配置の概要
 
@@ -96,6 +96,13 @@ Visual Studio から、Microsoft Store に配置するためのアプリ パッ�
 - **Windows デスクトップ**:Visual Studio 2017 バージョン 15.4 以降では、デスクトップ ブリッジを使用して Microsoft Store に配置できます。 これを行うには、まず Windows アプリケーション パッケージ プロジェクトを作成します。 詳細については、「[Package a desktop app for Microsoft Store (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)」(Microsoft ストアのデスクトップ アプリをパッケージ化する (デスクトップ ブリッジ)) を参照してください。
 
     ![デスクトップ ブリッジ](../deployment/media/feature-tour-desktop-bridge.png)
+
+## <a name="deploy-net-packages-to-nugetorg"></a>.NET パッケージを NuGet.org に配置する
+
+これらのパッケージを使用するプロジェクトで必要とされる他のコンテンツと共にコンパイル済みのコードを (DLL として) 含む "パッケージ" にバンドルされたコードを配置するには、Visual Studio を使用して NuGet パッケージと CLI ツールを作成し、最終デプロイ コマンドを発行します。
+
+- [.NET Standard パッケージの作成と公開](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [.NET Framework パッケージの作成と公開](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
 
 ## <a name="deploy-to-a-device-uwp"></a>デバイスに配置する (UWP)
 

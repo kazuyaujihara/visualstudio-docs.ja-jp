@@ -1,8 +1,10 @@
 ---
 title: ユーザー補助アプリケーションのデザイン リソース
 description: 障碍を持つユーザーが使いやすいアプリケーションを作成する方法をについて説明します。
-ms.date: 11/04/2016
+ms.date: 08/27/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -14,16 +16,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe2a4b57fda3ab861b5471e1af70cd4bfcc55e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811782"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107847"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>ユーザー補助アプリケーションのデザイン リソース
 
-ユーザー補助設計をサポートする技術、およびユーザー補助 Windows アプリケーションと Web サイトを開発するためのヒントと例については、以下のリンク先を参照してください。 ユーザー補助についての一般的な情報は、Web サイト [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/) にあります。
+アクセシビリティ対応のデザインをサポートするテクノロジについて説明します。 また、アクセシビリティ対応の Windows アプリと Web サイトを開発するのに役立つヒントとチュートリアルへのリンクも含まれています。
+
+>[!NOTE]
+>すべてのユーザーを支援する製品の開発方法の詳細については、[Microsoft Accessibility](https://www.microsoft.com/accessibility/) を参照してください。
 
 ## <a name="technologies"></a>技術情報
 
@@ -53,4 +58,5 @@ ms.locfileid: "62811782"
 
 ## <a name="see-also"></a>関連項目
 
-[Visual Studio のユーザー補助機能](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Visual Studio のユーザー補助機能](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Visual Studio for Mac のユーザー補助](/visualstudio/mac/accessibility/)
