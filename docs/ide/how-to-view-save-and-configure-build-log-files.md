@@ -1,6 +1,6 @@
 ---
 title: '方法: ビルド ログ ファイルを表示、保存、および構成する | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dc172723005b6781a63b3a3956b12152d73bb0f
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 1fe1932930c869e3d4d3d74eb641da068e1cffec
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415586"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154810"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>方法: ビルド ログ ファイルを表示、保存、および構成する
 
@@ -42,6 +42,8 @@ MSBuild を使用して任意の種類のプロジェクトをビルドする場
 
    Visual Studio から、ビルド出力を保存する場所を指定することを求められます。
 
+`-fileLogger` (`-fl`) コマンド ライン オプションを使用して、コマンド ラインから直接 MSBuild を実行してログを生成することもできます。 「[MSBuild でのビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)」を参照してください。
+
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>ビルド ログに含める情報の量を変更するには
 
 1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
@@ -63,8 +65,11 @@ MSBuild を使用して任意の種類のプロジェクトをビルドする場
     > [!IMPORTANT]
     > **[出力]** ウィンドウ (すべてのプロジェクト) と *\<ProjectName>.txt* ファイル (C++ プロジェクトのみ) に変更を反映するには、プロジェクトをリビルドする必要があります。
 
+## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>バイナリ ログを使用して、大きなログ ファイルを簡単に参照できるようにする
+
+バイナリ ログは .NET プロジェクトのオプション機能です。これにより、ログ参照のエクスペリエンスが向上し、大きなログで情報を見つけやすくなります。 バイナリ ログを使用するには、[Project System Tools](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools) をインストールします。 詳細については、[https://msbuildlog.com](https://msbuildlog.com) および[バイナリ ログ](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)に関する記事を参照してください。
+
 ## <a name="see-also"></a>関連項目
 
-- [ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)
