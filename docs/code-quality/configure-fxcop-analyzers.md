@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68c175a55c9e60e870a5466a831aaae50d62dced
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551144"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293450"
 ---
 # <a name="configure-fxcop-analyzers"></a>FxCop アナライザーの構成
 
@@ -46,7 +46,10 @@ FxCop analyzer NuGet パッケージには、次の規則カテゴリの定義�
 
 ## <a name="editorconfig-file"></a>EditorConfig ファイル
 
-[Editorconfig](https://editorconfig.org)ファイルにキーと値のペアを追加することにより、アナライザーの規則を構成できます。 構成ファイルは、[プロジェクトに固有](#per-project-configuration)のものもあれば、2つ以上のプロジェクト間で[共有](#shared-configuration)することもできます。
+FxCop アナライザーの規則を構成するには、キーと値のペアを[editorconfig](https://editorconfig.org)ファイルに追加します。 構成ファイルは、[プロジェクトに固有](#per-project-configuration)のものもあれば、2つ以上のプロジェクト間で[共有](#shared-configuration)することもできます。
+
+> [!NOTE]
+> Editorconfig ファイルを使用して、従来の FxCop 規則を構成することはできません。
 
 ### <a name="per-project-configuration"></a>プロジェクトごとの構成
 
@@ -61,7 +64,7 @@ FxCop analyzer NuGet パッケージには、次の規則カテゴリの定義�
 
 ### <a name="shared-configuration"></a>共有構成
 
-アナライザーの構成ファイルは、2つ以上のプロジェクト間で共有できますが、いくつかの追加の手順が必要です。
+FxCop アナライザーの構成ファイルは2つ以上のプロジェクト間で共有できますが、いくつかの追加の手順が必要です。
 
 1. *Editorconfig*ファイルを共通の場所に保存します。
 
@@ -90,7 +93,7 @@ FxCop analyzer NuGet パッケージには、次の規則カテゴリの定義�
 4. プロジェクトを再度読み込みます。
 
 > [!NOTE]
-> Editorconfig ファイルを使用して、従来の FxCop 規則を構成することはできません。
+> ここで説明する EditorConfig ファイルの任意の共有の場所は、FxCop アナライザーの構成にのみ適用されます。 インデントやコードスタイルなどの他の設定については、EditorConfig ファイルを常にプロジェクトフォルダーまたは親フォルダーに配置する必要があります。
 
 ## <a name="option-scopes"></a>オプションスコープ
 
