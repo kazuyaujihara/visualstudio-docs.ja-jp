@@ -22,7 +22,7 @@ ms.lasthandoff: 07/11/2019
 ms.locfileid: "67825689"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>'continue' をループの外に設定できません。
-使用しようとする、**continue**ループ外にあるステートメント。 **continue**ステートメント: の本文内でのみ使用できます  
+ループ外で **continue** ステートメントを使用しようとしました。 **continue** ステートメントは、以下の本文内でのみ使用できます。 
   
 - `do-while` ループ
   
@@ -34,7 +34,7 @@ ms.locfileid: "67825689"
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- 必ず、**continue**: の本体内のステートメントが表示されます  
+- **continue** ステートメントは以下の本体内にのみ表示されます。 
   
   - `do-while` ループ
 
