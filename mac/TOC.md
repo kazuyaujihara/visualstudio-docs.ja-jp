@@ -106,7 +106,7 @@
 # [リリース ノート](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [リリース ノートのプレビュー](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
 # サンプル
-## [おすすめのサンプル](samples.yml)
+## [おすすめのサンプル](samples/index.yml)
 ## [ASP.NET Core のすべてのサンプル](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
 ## [.NET Core のすべてのサンプル](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
 ## [Xamarin.Forms のすべてのサンプル](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)
