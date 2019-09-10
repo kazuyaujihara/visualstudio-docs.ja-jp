@@ -24,14 +24,14 @@ Visual Studio には、.NET Compiler Platform (*Roslyn*) アナライザーの�
 
 ## <a name="to-install-nuget-analyzer-packages"></a>NuGet analyzer パッケージをインストールするには
 
-1. www.nuget.org をインストールするアナライザー パッケージを検索します。
+1. [www.nuget.org](www.nuget.org) をインストールするアナライザー パッケージを検索します。
 
    たとえば、コードにセキュリティやパフォーマンスの問題がないかどうかを確認するために、 [Microsoft FxCop アナライザーをインストール](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)することができます。 または、 [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)をインストールして、コードベースでスタイルの問題を探します。
 
 2. パッケージ[マネージャーコンソール](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)または[パッケージマネージャー UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)を使用して、Visual Studio にパッケージをインストールします。
 
    > [!NOTE]
-   > 各アナライザーパッケージの [www.nuget.org] ページには、**パッケージマネージャーコンソール**に貼り付けるコマンドが表示されます。 クリップボードにテキストをコピーするための便利なボタンもあります。
+   > 各アナライザーパッケージの www.nuget.org ページには、**パッケージマネージャーコンソール**に貼り付けるコマンドが表示されます。 クリップボードにテキストをコピーするための便利なボタンもあります。
 
    Analyzer アセンブリがインストールされ、[**参照** > ] **[アナライザー]** の下の**ソリューションエクスプローラー**に表示されます。
 
