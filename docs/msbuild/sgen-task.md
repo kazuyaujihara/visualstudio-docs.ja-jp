@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da05a71d5de4a8f1ec6ef5fbb27a2e74220a1ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c326dc31f6ce80026f1c83c5b71f8e27faabf93e
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993242"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887634"
 ---
 # <a name="sgen-task"></a>SGen タスク
 指定されたアセンブリの種類に対応する XML シリアル化アセンブリを作成します。 このタスクは、XML シリアライザー ジェネレーター ツール (*Sgen.exe*) をラップするタスクです。 詳細については、「[XML シリアライザー ジェネレーター ツール (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)」を参照してください。
@@ -35,7 +35,7 @@ ms.locfileid: "62993242"
 |-----------------------------| - |
 | `BuildAssemblyName` | 必須の `String` 型のパラメーターです。<br /><br /> シリアル化コード生成の対象となるアセンブリ。 |
 | `BuildAssemblyPath` | 必須の `String` 型のパラメーターです。<br /><br /> シリアル化コード生成の対象となるアセンブリのパス。 |
-| `DelaySign` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、完全署名されたアセンブリを必要とすることが指定されます。 `false` の場合、アセンブリに公開キーを含めることだけを要求するように指定されます。<br /><br /> `KeyFile` または `KeyContainer` パラメーターと併用しない限り、このパラメーターには何の効果もありません。 |
+| `DelaySign` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、アセンブリに公開キーを含めることだけを要求するように指定されます。 `false` の場合、完全署名されたアセンブリを必要とすることが指定されます。<br /><br /> `KeyFile` または `KeyContainer` パラメーターと併用しない限り、このパラメーターには何の効果もありません。 |
 | `KeyContainer` | 省略可能な `String` 型のパラメーターです。<br /><br /> キー ペアを保持するコンテナーを指定します。 こうすると、アセンブリ マニフェストに公開キーを挿入することによって、アセンブリに対する署名が行われます。 次に、タスクは最終的なアセンブリに秘密キーで署名します。 |
 | `KeyFile` | 省略可能な `String` 型のパラメーターです。<br /><br /> アセンブリに署名するためのキー ペアまたは公開キーを指定します。 コンパイラは、アセンブリ マニフェストに公開キーを挿入し、最終的なアセンブリに秘密キーで署名します。 |
 | `Platform` | 省略可能な `String` 型のパラメーターです。<br /><br /> 出力アセンブリの生成に使用されるコンパイラ プラットフォームを取得または設定します。 このパラメーターの値には、`x86`、`x64`、または `anycpu` を指定できます。 既定値は `anycpu` です。 |
