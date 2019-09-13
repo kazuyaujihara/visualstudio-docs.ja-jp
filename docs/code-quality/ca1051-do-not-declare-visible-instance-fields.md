@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5dd8a4b2d0b32a8c52f75dee6fd765a7ea6ec9a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 455ab619f293981c5ebd3afba6336c63f2fe7f49
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547553"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766057"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051:参照可能なインスタンス フィールドを宣言しません
 
@@ -38,9 +38,11 @@ ms.locfileid: "69547553"
 
 ## <a name="rule-description"></a>規則の説明
 
-フィールドの主な用途は、実装の詳細にする必要があります。 フィールドは`private`または`internal`である必要があります。また、プロパティを使用して公開する必要があります。 フィールドにアクセスするのと同じように、プロパティにアクセスするのは簡単です。プロパティのアクセサーのコードは、互換性に影響する変更を導入しなくても、型の機能が拡張されると変化することがあります。 プライベートフィールドまたは内部フィールドの値を返すプロパティは、フィールドへのアクセスと同等に動作するように最適化されています。パフォーマンスの向上は、プロパティを介して外部から参照できるフィールドを使用することに関連しています。
+フィールドの主な用途は、実装の詳細にする必要があります。 フィールドは`private`または`internal`である必要があります。また、プロパティを使用して公開する必要があります。 フィールドにアクセスするのと同じように、プロパティにアクセスするのは簡単です。プロパティのアクセサーのコードは、互換性に影響する変更を導入しなくても、型の機能が拡張されると変化することがあります。
 
-外部から参照できる`public`の`protected`は、 `protected internal` 、`Public`、および(`Protected`Visual Basic) アクセシビリティレベルのです。`Protected Friend`
+プライベートフィールドまたは内部フィールドの値を返すプロパティは、フィールドへのアクセスと同等に動作するように最適化されています。プロパティではなく、外部から参照できるフィールドを使用した場合のパフォーマンスの向上は最小限です。 *外部から*参照できる`public`の`protected`は、、`Public`、 `Protected`および`protected internal` (`Protected Friend` Visual Basic) アクセシビリティレベルのです。
+
+また、パブリックフィールドを[リンク確認要求](/dotnet/framework/misc/link-demands)で保護することはできません。 詳細については[、「CA2112:セキュリティで保護された](../code-quality/ca2112-secured-types-should-not-expose-fields.md)型はフィールドを公開しません。 (リンク確認要求は .NET Core アプリには適用されません)。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
@@ -48,7 +50,12 @@ ms.locfileid: "69547553"
 
 ## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-この規則による警告は抑制しないでください。 外部から参照できるフィールドには、プロパティで使用できない利点はありません。 また、パブリックフィールドを[リンク確認要求](/dotnet/framework/misc/link-demands)で保護することはできません。 CA2112 [を参照してください。セキュリティで保護された](../code-quality/ca2112-secured-types-should-not-expose-fields.md)型はフィールドを公開しません。
+コンシューマーがフィールドに直接アクセスする必要がある場合にのみ、この警告を非表示にします。 ほとんどのアプリケーションでは、公開されているフィールドは、プロパティよりもパフォーマンスや保守性の面で優れています。
+
+コンシューマーには、次のような場合にフィールドへのアクセスが必要になることがあります。
+
+- ASP.NET Web フォームコンテンツコントロール
+- ターゲットプラットフォームが`ref`を使用して、WPF および UWP 用のモデルビューモデル (MVVM) フレームワークなどのフィールドを変更する場合
 
 ## <a name="configurability"></a>かつ
 

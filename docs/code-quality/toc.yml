@@ -692,6 +692,8 @@
                   href: ca3011-review-code-for-dll-injection-vulnerabilities.md
                 - name: 'CA3012:RegEx インジェクションの脆弱性のコード レビュー'
                   href: ca3012-review-code-for-regex-injection-vulnerabilities.md
+                - name: 'CA3061:URL でスキーマを追加しません'
+                  href: ca3061.md
                 - name: 'CA3075:安全ではない DTD の処理'
                   href: ca3075-insecure-dtd-processing.md
                 - name: 'CA3076:安全ではない XSLT スクリプトの実行'
@@ -702,12 +704,30 @@
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
                 - name: 'CA5361: 強力な暗号の SChannel の使用を無効にしません'
                   href: ca5361.md
+                - name: 'CA5363:要求の検証を無効にしません'
+                  href: ca5363.md
                 - name: 'CA5364: 非推奨のセキュリティ プロトコルを使用しないでください'
                   href: ca5364.md
+                - name: 'CA5369:逆シリアル化に XmlReader を使用します'
+                  href: ca5369.md
+                - name: 'CA5370:読み取りの検証に XmlReader を使用します'
+                  href: ca5370.md
+                - name: 'CA5371:スキーマの読み取りに XmlReader を使用します'
+                  href: ca5371.md
+                - name: 'CA5372:XPathDocument に XmlReader を使用します'
+                  href: ca5372.md
+                - name: 'CA5373:廃止されたキー派生関数を使用しません'
+                  href: ca5373.md
                 - name: 'CA5378: ServicePointManagerSecurityProtocols を無効にしません'
                   href: ca5378.md
+                - name: 'CA5380:ルート ストアに証明書を追加しません'
+                  href: ca5380.md
+                - name: 'CA5381:証明書がルート ストアに追加されていないことを確認します'
+                  href: ca5381.md
                 - name: 'CA5386: SecurityProtocolType 値のハードコードを避けます'
                   href: ca5386.md
+                - name: 'CA5389:アーカイブ項目のパスをターゲット ファイル システム パスに追加しません'
+                  href: ca5389.md
                 - name: 'CA5397:非推奨の SslProtocols 値を使用しません'
                   href: ca5397.md
                 - name: 'CA5398:ハードコーディングされた SslProtocols 値を回避します'

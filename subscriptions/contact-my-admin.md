@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: サブスクリプション管理者に連絡し、質問や問題で支援を求める方法について説明します。
-ms.openlocfilehash: cc6ce20d97531cca7c6b08d82ba949fb19e6bddc
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: a1769140db7800798c91d583f835e3cad8488397
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000972"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293520"
 ---
 # <a name="get-assistance-from-your-subscriptions-adminstrator"></a>サブスクリプション管理者のサポートを受ける
 職場または学校から Visual Studio サブスクリプションが与えられる場合、おそらく、サブスクリプション管理者 ("admin") からそれを割り当てられています。  管理者はサブスクリプションを割り当てたり、削除したり、サインイン電子メールのアドレスを変更したり、ソフトウェアのダウンロードを許可するかどうかを決定したり、サブスクリプションに関連するその他の機能を実行したりできます。
@@ -27,6 +27,9 @@ ms.locfileid: "70000972"
 4. 管理者へのメッセージを入力します。
 5. 管理者に送信されたメッセージのコピーを受け取る場合、 **[Send me a copy]\(コピーを送る\)** チェックボックスをクリックします。 
 6. 最後に、 **[送信]** をクリックします。
+
+> [!NOTE]
+> **スーパー管理者:** "管理者に問い合わせる" 要求の送信先のメール アドレスを設定するには、[契約の基本設定](admin-prefs.md#contact-email-address)でそのアドレスを指定します。
 
 ## <a name="resources"></a>リソース
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)

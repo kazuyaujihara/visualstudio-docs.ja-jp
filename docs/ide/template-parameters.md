@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891268"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766113"
 ---
 # <a name="template-parameters"></a>テンプレート パラメーター
 
@@ -61,7 +61,7 @@ ms.locfileid: "69891268"
 |safeitemrootname|`safeitemname` と同じ。|
 |safeprojectname|プロジェクトの作成時にユーザーによって指定された名前ですが、すべての安全でない文字およびスペースがすべて削除されています。|
 |時間|DD/MM/YYYY 00:00:00 の形式で表した現在の時間。|
-|SpecificSolutionName|ソリューションの名前。 [ソリューションのディレクトリを作成] がオンになっている場合は、`SpecificSolutionName` にソリューション名が指定されます。 [ソリューションのディレクトリを作成] がオフになっている場合、`SpecificSolutionName` は空白です。|
+|specifiedSolutionName|ソリューションの名前。 [ソリューションのディレクトリを作成] がオンになっている場合は、`specifiedSolutionName` にソリューション名が指定されます。 [ソリューションのディレクトリを作成] がオフになっている場合、`specifiedSolutionName` は空白です。|
 |userdomain|現在のユーザー ドメイン。|
 |username|現在のユーザー名。|
 |webnamespace|現在の Web サイトの名前。 このパラメーターは、Web フォーム テンプレートで一意のクラス名を保証するために使用されます。 この Web サイトが Web サーバーのルート ディレクトリにある場合、このテンプレート パラメーターは Web サーバーのルート ディレクトリとして解決されます。|

@@ -116,9 +116,9 @@
             - name: 概要
               displayName: Tutorial 1 Picture viewer
               href: ../ide/tutorial-1-create-a-picture-viewer.md
-            - name: '手順 1: Windows フォーム アプリケーション プロジェクトの作成'
+            - name: '手順 1: Windows フォーム アプリ プロジェクトを作成する'
               href: ../ide/step-1-create-a-windows-forms-application-project.md
-            - name: '手順 2: プログラムを実行する'
+            - name: '手順 2: アプリの実行'
               href: ../ide/step-2-run-your-program.md
             - name: '手順 3: フォームのプロパティの設定'
               href: ../ide/step-3-set-your-form-properties.md
@@ -136,7 +136,7 @@
               href: ../ide/step-9-review-comment-and-test-your-code.md
             - name: '手順 10: その他のボタンおよびチェック ボックスに対するコードの記述'
               href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-            - name: '手順 11: プログラムの実行とその他の機能の使用'
+            - name: '手順 11: アプリを実行して他の機能を試す'
               href: ../ide/step-11-run-your-program-and-try-other-features.md
         - name: 'チュートリアル 2: 制限時間ありの計算クイズの作成 (C#)'
           items:

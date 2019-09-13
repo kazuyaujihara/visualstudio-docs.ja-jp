@@ -25,7 +25,7 @@ Visual Studio サブスクリプションのテクニカル サポート特典�
 **特典を使用してサポート リクエストを送信するには、最初に特典をアクティブ化する必要があります。次のセクションの手順に従って、アクティブ化を完了します。**
 
 ## <a name="how-to-activate-the-benefit"></a>特典をアクティブ化する方法
-1. https://my.visualstudio.com/Benefits に進み、[サポート] セクションまで下方にスクロールし、[テクニカル サポート] タイル上で **[Chat to activate]\(アクティブ化のためのチャット\)** をクリックします。
+1. [https://my.visualstudio.com/Benefits](https://my.visualstudio.com/Benefits ) に進み、[サポート] セクションまで下方にスクロールし、[テクニカル サポート] タイル上で **[Chat to activate]\(アクティブ化のためのチャット\)** をクリックします。
     > [!div class="mx-imgBorder"]
     > ![テクニカル サポート特典タイル](_img/vs-tech-support/vs-tech-support-tile.png)
 2. これで担当者とのチャット セッションが開始されます。担当者は、ユーザーの**契約 ID** と**アクセス ID** を作成して、ユーザーが保存できるようにそれらをメールを通じてユーザーに提供することができます。

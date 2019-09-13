@@ -1,61 +1,58 @@
 ---
 title: 'チュートリアル 1: ピクチャ ビューアーの作成'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 08/30/2019
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ce6f92acb7ed6e92af07729a14720d3a8421a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32d9d9a874894ab7e3e71d10da3f3cf7b3428d3e
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821815"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887910"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>チュートリアル 1: ピクチャ ビューアーの作成
 
-このチュートリアルでは、ピクチャをファイルから読み込んでウィンドウに表示するプログラムを作成します。 **Windows フォーム デザイナー**を使用してボタンやピクチャ ボックスなどのコントロールをフォームにドラッグする方法、それらのプロパティを設定する方法、およびコンテナーを使用してフォームのサイズを滑らかに変更する方法を習得できます。 また、コードの記述の基本事項についても学習します。 以下の方法について説明します。
+このチュートリアルでは、ピクチャをファイルから読み込んでウィンドウに表示するアプリを作成します。 **Windows フォーム デザイナー**を使用してボタンやピクチャ ボックスなどのコントロールをフォームにドラッグする方法、それらのプロパティを設定する方法、およびコンテナーを使用してフォームのサイズを滑らかに変更する方法を習得できます。 また、コードの記述の基本事項についても学習します。
 
-- 新しいプロジェクトを作成します。
+> [!NOTE]
+> このチュートリアルでは、Visual C# と Visual Basic の両方が取り上げられているため、使用しているプログラミング言語固有の情報に注意してください。
 
-- アプリケーションをテスト (デバッグ) します。
+このチュートリアルでは、次のタスクについて説明します。
 
-- チェック ボックスやボタンなどの基本的なコントロールをフォームに追加します。
+* 新しいプロジェクトを作成します。
 
-- レイアウトを使用してフォーム上のコントロールの位置を設定します。
+* アプリケーションをテスト (デバッグ) します。
 
-- **[ファイルを開く]** ダイアログ ボックスと **[色]** ダイアログ ボックスをフォームに追加します。
+* チェック ボックスやボタンなどの基本的なコントロールをフォームに追加します。
 
-- IntelliSense とコード スニペットを使用してコードを記述します。
+* レイアウトを使用してフォーム上のコントロールの位置を設定します。
 
-- イベント ハンドラー メソッドを記述します。
+* **[ファイルを開く]** ダイアログ ボックスと **[色]** ダイアログ ボックスをフォームに追加します。
 
-完成すると、プログラムは次の図のようになります。
+* IntelliSense とコード スニペットを使用してコードを記述します。
 
-![このチュートリアルで作成する画像](../ide/media/express_pictureviewerdone.png)
+* イベント ハンドラー メソッドを記述します。
+
+完了すると、アプリは次の図のようになります。
+
+![このチュートリアルで作成する Picture Viewer アプリ](../ide/media/express_pictureviewerdone.png)
 
 ## <a name="tutorial-links"></a>チュートリアルのリンク
 
-サンプルの完全バージョンをダウンロードするには、「[Complete Picture Viewer tutorial sample](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)」 (画像ビューアーのチュートリアルの完全なサンプル) を参照してください。
-
-![ビデオへのリンク](../data-tools/media/playvideo.gif)このトピックのビデオ版については、「[操作方法: Visual Basic によるピクチャ ビューアーの作成](http://go.microsoft.com/fwlink/?LinkId=205207)」または「[操作方法: C# によるピクチャ ビューアーの作成](http://go.microsoft.com/fwlink/?LinkId=205198)」を参照してください。
-
-> [!NOTE]
-> これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。 このチュートリアルでは、Visual C# と Visual Basic の両方が取り上げられているため、使用しているプログラミング言語固有の情報に注意してください。
->
-> Visual Basic のコードを確認するには、コード ブロックの上部にある **[VB]** タブをクリックし、Visual C# のコードについては、**[C#]** タブをクリックします。Visual C++ の学習に関心がある場合は、[概要](../ide/getting-started-with-cpp-in-visual-studio.md)に関するページと「[C++ Language Tutorial](http://www.cplusplus.com/doc/tutorial/)」(C++ 言語のチュートリアル) を参照してください。
->
-> Visual C# アプリまたは Visual Basic UWP アプリの記述方法に興味がございましたら、「[UWP アプリの構築](https://developer.microsoft.com/windows/apps)」を参照してください。
-
-## <a name="related-topics"></a>関連トピック
-
 |Title|説明|
 |-----------|-----------------|
-|[手順 1:Windows フォーム アプリケーション プロジェクトの作成](../ide/step-1-create-a-windows-forms-application-project.md)|最初に Windows フォーム アプリケーション プロジェクトを作成します。|
-|[手順 2:プログラムの実行](../ide/step-2-run-your-program.md)|前の手順で作成した Windows フォーム アプリケーション プログラムを実行します。|
+|[手順 1:Windows フォーム アプリケーション プロジェクトの作成](../ide/step-1-create-a-windows-forms-application-project.md)|まず、Windows フォーム アプリ プロジェクトを作成します。|
+|[手順 2:Picture Viewer アプリを実行する](../ide/step-2-run-your-program.md)|前の手順で作成した Windows フォーム アプリ プロジェクトを実行します。|
 |[手順 3:フォームのプロパティの設定](../ide/step-3-set-your-form-properties.md)|**[プロパティ]** ウィンドウを使用してフォームの外観を変更します。|
 |[手順 4:TableLayoutPanel コントロールを使用したフォームのレイアウトの設定](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|フォームに `TableLayoutPanel` コントロールを追加します。|
 |[手順 5:フォームへのコントロールの追加](../ide/step-5-add-controls-to-your-form.md)|`PictureBox` コントロールや `CheckBox` コントロールなどのコントロールをフォームに追加します。 また、ボタンも追加します。|
@@ -64,4 +61,14 @@ ms.locfileid: "62821815"
 |[手順 8:[Show a Picture] ボタンのイベント ハンドラーのコードの記述](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)」をご覧ください。|IntelliSense ツールを使用してコードを記述します。|
 |[手順 9:レビュー、コメントの追加、およびコードのテスト](../ide/step-9-review-comment-and-test-your-code.md)|コードのレビューとテストを行います。 必要に応じてコメントを追加します。|
 |[手順 10:その他のボタンおよびチェック ボックスに対するコードの記述](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|他のボタンやチェック ボックスを使用できるようにするために、IntelliSense を使用してコードを記述します。|
-|[手順 11:プログラムの実行とその他の機能の使用](../ide/step-11-run-your-program-and-try-other-features.md)|プログラムを実行して背景色を設定します。 色、フォント、および境界線の変更など、その他の機能を試します。|
+|[手順 11:アプリを実行して他の機能を試す](../ide/step-11-run-your-program-and-try-other-features.md)|アプリを実行して背景色を設定します。 色、フォント、および境界線の変更など、その他の機能を試します。|
+
+## <a name="next-steps"></a>次の手順
+
+チュートリアルを開始するには、「 **[手順 1:Windows フォーム アプリケーション プロジェクトの作成](../ide/step-1-create-a-windows-forms-application-project.md)** 」から始めます。
+
+## <a name="see-also"></a>関連項目
+
+* [その他の C# のチュートリアル](/visualstudio/get-started/csharp/)
+* [Visual Basic のチュートリアル](/visualstudio/get-started/visual-basic/)
+* [C++ のチュートリアル](../ide/getting-started-with-cpp-in-visual-studio.md)

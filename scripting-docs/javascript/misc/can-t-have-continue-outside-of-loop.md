@@ -1,4 +1,4 @@
----
+﻿---
 title: ループの外 'の continue' を含めることはできません |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -22,27 +22,27 @@ ms.lasthandoff: 07/11/2019
 ms.locfileid: "67825689"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>'continue' をループの外に設定できません。
-ループ外で **continue** ステートメントを使用しようとしました。 **continue** ステートメントは、以下の本文内でのみ使用できます。 
+ループ外で **continue** ステートメントを使用しようとしました。 **continue** ステートメントは、以下の本文内でのみ使用できます。  
   
 - `do-while` ループ
   
 - `while` ループ
   
-- **for** ループ
+- **for** ループ  
   
-- **for/in** ループ
+- **for/in** ループ  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- **continue** ステートメントは以下の本体内にのみ表示されます。 
+- **continue** ステートメントは以下の本体内にのみ表示されます。  
   
   - `do-while` ループ
 
   - `while` ループ
 
-  - **for** ループ
+  - **for** ループ  
 
-  - **for/in** ループ
+  - **for/in** ループ  
   
 ## <a name="see-also"></a>関連項目  
  [continue ステートメント](../../javascript/reference/continue-statement-javascript.md)   

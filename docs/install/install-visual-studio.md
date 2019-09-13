@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263721"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293703"
 ---
 # <a name="install-visual-studio"></a>Visual Studio のインストール
 
@@ -100,7 +100,7 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
 
 ## <a name="step-2---download-visual-studio"></a>手順 2 - Visual Studio をダウンロードする
 
-次に、Visual Studio ブートストラップ ファイルをダウンロードします。 これを行うには、以下のボタンを選択し、必要な Visual Studio のエディションを選択して、**[保存]**、**[フォルダーを開く]** の順に選択します。
+次に、Visual Studio ブートストラップ ファイルをダウンロードします。 これを行うには、以下のボタンを選択し、必要な Visual Studio のエディションを選択して、 **[保存]** 、 **[フォルダーを開く]** の順に選択します。
 
 ::: moniker range="vs-2017"
 
@@ -112,7 +112,7 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+ > [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
    * Visual Studio Professional の場合は **vs_professional.exe**
    * Visual Studio Enterprise の場合は **vs_enterprise.exe**
 
-   ユーザー アカウント制御の通知を受信する場合、**[はい]** を選択します。
+   ユーザー アカウント制御の通知を受信する場合、 **[はい]** を選択します。
 
 2. Microsoft の[ライセンス条項](https://visualstudio.microsoft.com/license-terms/)と[プライバシーに関する声明](https://privacy.microsoft.com/privacystatement)の確認を求められます。 **[続行]** を選択します。
 
@@ -144,7 +144,7 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
 
      たとえば、".NET デスクトップ開発" ワークロードを選択します。 これには既定のコア エディターが用意されており、20 を超える言語の基本的なコード編集サポートが含まれ、プロジェクトなしで任意のフォルダーからコードを開いて編集することができます。また、統合ソース コード管理を利用できます。
 
-1. 必要なワークロード (複数可) を選択した後、**[インストール]** を選択します。
+1. 必要なワークロード (複数可) を選択した後、 **[インストール]** を選択します。
 
     そうすると、ステータス画面が表示され、Visual Studio のインストールの進行状況が示されます。
 
@@ -152,24 +152,24 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
 
 ::: moniker range="vs-2019"
 
-1. 新しいワークロードとコンポーネントがインストールされたら、**[起動]** を選択します。
+1. 新しいワークロードとコンポーネントがインストールされたら、 **[起動]** を選択します。
 
    ![Visual Studio 2019:ワークロードをインストールする](../install/media/vs-2019/vs-installer-workloads.png)
 
      たとえば、"ASP.NET と Web 開発" ワークロードを選択します。 これには既定のコア エディターが用意されており、20 を超える言語の基本的なコード編集サポートが含まれ、プロジェクトなしで任意のフォルダーからコードを開いて編集することができます。また、統合ソース コード管理を利用できます。
 
-1. 必要なワークロード (複数可) を選択した後、**[インストール]** を選択します。
+1. 必要なワークロード (複数可) を選択した後、 **[インストール]** を選択します。
 
     そうすると、ステータス画面が表示され、Visual Studio のインストールの進行状況が示されます。
 
  ::: moniker-end
 
 > [!TIP]
-> インストール後いつでも、最初にインストールしなかったワークロードまたはコンポーネントをインストールできます。 Visual Studio を開いている場合は、**[ツール]** > **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 または、スタート メニューから **Visual Studio インストーラー**を開きます。 そこから、インストールするワークロードまたはコンポーネントを選択できます。 次に、**[変更]** を選択します。
+> インストール後いつでも、最初にインストールしなかったワークロードまたはコンポーネントをインストールできます。 Visual Studio を開いている場合は、 **[ツール]**  >  **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 または、スタート メニューから **Visual Studio インストーラー**を開きます。 そこから、インストールするワークロードまたはコンポーネントを選択できます。 次に、 **[変更]** を選択します。
 
 ## <a name="step-5---choose-individual-components-optional"></a>手順 5 - 個々のコンポーネントを選択する (省略可能)
 
-ワークロード機能を使用して Visual Studio のインストールをカスタマイズしない場合、またはワークロードのインストール以外のコンポーネントを追加する場合は、**[個別のコンポーネント]** タブから個々のコンポーネントをインストールまたは追加することによって行うことができます。必要なものを選択した後、画面の指示に従います。
+ワークロード機能を使用して Visual Studio のインストールをカスタマイズしない場合、またはワークロードのインストール以外のコンポーネントを追加する場合は、 **[個別のコンポーネント]** タブから個々のコンポーネントをインストールまたは追加することによって行うことができます。必要なものを選択した後、画面の指示に従います。
 
 ::: moniker range="vs-2017"
 
@@ -232,13 +232,13 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
 
 1. Visual Studio のインストールが完了したら **[起動]** を選択して、Visual Studio を使用した開発を開始します。
 
-2. **[ファイル]** を選択して、**[新しいプロジェクト]** を選択します。
+2. **[ファイル]** を選択して、 **[新しいプロジェクト]** を選択します。
 
 3. プロジェクトの種類を選択します。
 
-   たとえば、[C++ アプリをビルドする](../ide/getting-started-with-cpp-in-visual-studio.md)には、**[インストール済み]** を選択し、**[Visual C++]** を展開して、ビルドする C++ プロジェクトの種類を選択します。
+   たとえば、[C++ アプリをビルドする](../ide/getting-started-with-cpp-in-visual-studio.md)には、 **[インストール済み]** を選択し、 **[Visual C++]** を展開して、ビルドする C++ プロジェクトの種類を選択します。
 
-   [C# アプリをビルドする](../get-started/csharp/tutorial-console.md)には、**[インストール済み]** を選択し、**[Visual C#]** を展開して、ビルドする C# プロジェクトの種類を選択します。
+   [C# アプリをビルドする](../get-started/csharp/tutorial-console.md)には、 **[インストール済み]** を選択し、 **[Visual C#]** を展開して、ビルドする C# プロジェクトの種類を選択します。
 
 ::: moniker-end
 
@@ -246,7 +246,7 @@ Visual Studio 2019 と以前のバージョンの Visual Studio を共存させ�
 
 1. Visual Studio のインストールが完了したら **[起動]** を選択して、Visual Studio を使用した開発を開始します。
 
-1. スタート ウィンドウで、**[新しいプロジェクトの作成]** を選択します。
+1. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
 
 1. 検索ボックスに作成するアプリの種類を入力し、使用可能なテンプレートの一覧を表示します。 テンプレートの一覧は、インストール時に選択したワークロードに依存します。 別のテンプレートを表示するには、異なるワークロードを選択します。
 
