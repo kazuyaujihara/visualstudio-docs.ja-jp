@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53bd2139d5b81ed743cdfd92fe76cb575dcc6487
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: ae41d9ac30567a32780af422c3af1e2b0d6a63ae
+ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547895"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70929771"
 ---
 # <a name="code-analysis-faq"></a>コード分析に関する FAQ
 
@@ -24,7 +24,7 @@ ms.locfileid: "69547895"
 
 **Q**:コードのスタイルを確認するためにコード分析または EditorConfig を使用する必要がありますか。
 
-**A**:コード分析と editorconfig ファイルは手動で機能します。 [Editorconfig ファイル](../ide/editorconfig-code-style-settings-reference.md)または [[テキストエディター] オプション](../ide/code-styles-and-code-cleanup.md)ページでコードスタイルを定義する場合、実際には、Visual Studio に組み込まれているコードアナライザーを構成します。 EditorConfig ファイルを使用して、 [FxCop](configure-fxcop-analyzers.md)アナライザーなどの一部のサードパーティアナライザーパッケージを構成することもできます。
+**A**:コード分析と editorconfig ファイルは手動で機能します。 [Editorconfig ファイル](../ide/editorconfig-code-style-settings-reference.md)または [[テキストエディター] オプション](../ide/code-styles-and-code-cleanup.md)ページでコードスタイルを定義する場合、実際には、Visual Studio に組み込まれているコードアナライザーを構成します。 EditorConfig ファイルを使用して、 [FxCop](configure-fxcop-analyzers.md)アナライザーなどの一部の NuGet アナライザーパッケージを構成することもできます。
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig とルールセット
 
@@ -32,7 +32,7 @@ ms.locfileid: "69547895"
 
 **A**:規則セットと editorconfig ファイルは、アナライザーを構成するための相互に排他的な方法です。 共存させることができます。 規則[セット](analyzer-rule-sets.md)を使用すると、規則を有効または無効にし、その重要度を設定できます。 EditorConfig ファイルには、ルールを構成するための他の方法が用意されています。 FxCop アナライザーでは、editorconfig ファイルを使用して、[分析するコードの種類を定義](fxcop-analyzer-options.md)できます。 Visual Studio に組み込まれているアナライザーの場合、editorconfig ファイルを使用すると、コードベースに適した[コードスタイルを定義](../ide/editorconfig-code-style-settings-reference.md)できます。
 
-規則セットと editorconfig ファイルに加えて、一部のサードパーティアナライザーは、 C#および VB コンパイラの[追加ファイル](../ide/build-actions.md#build-action-values)としてマークされたテキストファイルを使用して構成されます。
+規則セットと editorconfig ファイルに加えて、一部のアナライザーは、 C#および VB コンパイラの[追加ファイル](../ide/build-actions.md#build-action-values)としてマークされたテキストファイルを使用して構成されます。
 
 > [!NOTE]
 > EditorConfig ファイルを使用してレガシ分析を構成することはできませんが、ルールセットはできます。
