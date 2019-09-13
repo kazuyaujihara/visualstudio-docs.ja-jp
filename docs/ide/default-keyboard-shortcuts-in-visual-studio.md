@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: f6da512f6322bed074b8009d45e569626afcd996
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160051"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766032"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio の既定のキーボード ショートカット
 
@@ -341,9 +341,13 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |--------------| - |
 |TestExplorer.DebugAllTests|**Ctrl + R、Ctrl + A**|
 |TestExplorer.DebugAllTestsInContext|**Ctrl + R、Ctrl + T**|
+|TestExplorer.DebugLastRun|**Ctrl + R、D**|
 |TestExplorer.RepeatLastRun|**Ctrl + R、L**|
 |TestExplorer.RunAllTests|**Ctrl + R、A**|
 |TestExplorer.RunAllTestsInContext|**Ctrl + R、T**|
+|TestExplorer.ShowTestExplorer|**Ctrl + E、T**|
+|LiveUnitTesting.OpenTab|**Ctrl + E、L**|
+|Test.CodeCoverageResults|**Ctrl + E、C**|
 
 ### <a name="bkmk_tools"></a> ツール
 
@@ -401,6 +405,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 |View.WebBrowser|**Ctrl + Alt + R**|
 |View.ZoomIn|**Ctrl + Shift + .**|
 |View.ZoomOut|**Ctrl + Shift + ,**|
+|TestExplorer.ShowTestExplorer|**Ctrl + E、T**|
 
 ### <a name="bkmk_window"></a> ウィンドウ
 

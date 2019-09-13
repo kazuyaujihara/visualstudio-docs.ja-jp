@@ -1,18 +1,18 @@
 ---
 title: コード カバレッジ分析のカスタマイズ
-ms.date: 11/04/2016
+ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e78487628a7604245d59f44220b91be73249e7fb
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965553"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976759"
 ---
 # <a name="customize-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 
@@ -30,22 +30,42 @@ ms.locfileid: "62965553"
 
 1. 実行設定ファイルをソリューションに追加します。 **ソリューション エクスプローラー**でソリューションのショートカット メニューを開き、 **[追加]**  >  **[新しい項目]** 、 **[XML ファイル]** の順に選択します。 *CodeCoverage.runsettings* などの名前でファイルを保存します。
 
-1. この記事の最後にあるサンプル ファイルの内容を追加し、後続の各セクションの説明に従って、ニーズに合わせてカスタマイズします。
+2. この記事の最後にあるサンプル ファイルの内容を追加し、後続の各セクションの説明に従って、ニーズに合わせてカスタマイズします。
 
-1. 実行設定ファイルを選択するには、 **[テスト]** メニューで **[テストの設定]**  >  **[テスト設定ファイルの選択]** の順に選択します。 コマンドラインから、またはビルド ワークフローでテストを実行するための実行設定ファイルを指定するには、「[ *.runsettings* ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file)」を参照してください。
+::: moniker range="vs-2017"
+
+3. 実行設定ファイルを選択するには、 **[テスト]** メニューで **[テストの設定]**  >  **[テスト設定ファイルの選択]** の順に選択します。 コマンドラインからテストの実行で使用する実行設定ファイルを指定するには、[単体テストの構成](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)に関する説明を参照してください。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. 実行設定ファイルを選択するには、**テスト エクスプローラー**で、 **[設定]** ボタンの矢印を選択し、 **[設定ファイルの選択]** を選択します。 コマンドラインからテストの実行で使用する実行設定ファイルを指定するには、[単体テストの構成](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)に関する説明を参照してください。
+
+::: moniker-end
 
    **[コード カバレッジの分析]** を選択すると、実行設定ファイルから構成情報が読み取られます。
 
    > [!TIP]
    > 前のコード カバレッジの結果とコードの色分けは、テストを実行したりコードを更新したりしても、自動的に非表示にはなりません。
 
-カスタム設定のオンとオフを切り替えるには、 **[テストの設定]** メニューの **[テスト]**  >  でファイルを選択したり選択解除したりします。
+::: moniker range="vs-2017"
 
-![カスタム設定ファイルを持つテスト設定メニュー](../test/media/codecoverage-settingsfile.png)
+カスタム設定のオンとオフを切り替えるには、 **[テスト]** > **[テストの設定]** メニューで、ファイルを選択したり選択解除したりします。
+
+![Visual Studio 2017 でのカスタム設定ファイルがある設定メニュー](../test/media/codecoverage-settingsfile.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+カスタム設定のオンとオフを切り替えるには、**テスト エクスプローラー**の **[設定]** メニューでファイルを選択したり選択解除したりします。
+
+::: moniker-end
 
 ### <a name="specify-symbol-search-paths"></a>シンボル検索パスの指定
 
-コード カバレッジには、アセンブリのシンボル ファイル ( *.pdb* ファイル) が必要です。 ソリューションによってビルドされたアセンブリには、通常、バイナリ ファイルと共にシンボル ファイルも存在しており、コード カバレッジは自動的に動作します。 ただし、場合によっては、参照されるアセンブリをコード カバレッジ分析に追加したいこともあります。 そのような場合、 *.pdb* ファイルがバイナリと同じ場所にないこともありますが、シンボル検索パスを *.runsettings* ファイルで指定できます。
+コード カバレッジには、アセンブリのシンボル ファイル ( *.pdb* ファイル) が必要です。 ソリューションによってビルドされたアセンブリには、通常、バイナリ ファイルと共にシンボル ファイルも存在しており、コード カバレッジは自動的に動作します。 場合によっては、参照されるアセンブリをコード カバレッジ分析に追加したいこともあります。 そのような場合、 *.pdb* ファイルがバイナリと同じ場所にないこともありますが、シンボル検索パスを *.runsettings* ファイルで指定できます。
 
 ```xml
 <SymbolSearchPaths>
@@ -70,7 +90,7 @@ ms.locfileid: "62965553"
 </ModulePaths>
 ```
 
-逆に、どのアセンブリが包含されるかを指定することもできます。 ソリューションにアセンブリを追加するときに、一覧にも忘れずに追加しなければならないのが、この方法の欠点です。
+逆に、どのアセンブリが包含されるかを指定することもできます。 この方法には、ソリューションにアセンブリを追加するときに、それらを一覧にも忘れずに追加しなければならない欠点があります。
 
 ```xml
 <ModulePaths>
@@ -81,15 +101,13 @@ ms.locfileid: "62965553"
 </ModulePaths>
 ```
 
-**Include** が空の場合、コード カバレッジの処理には、読み込まれ、 *.pdb* ファイルが見つかるすべてのアセンブリが含まれます。 コード カバレッジには、**Exclude** リスト内の句に一致する項目が含まれません。
-
-**Include** は **Exclude** の前に処理されます。
+**Include** が空の場合、 *.pdb* ファイルが見つかる読み込まれるすべてのアセンブリでコード カバレッジは処理されます。 コード カバレッジには、**Exclude** リスト内の句に一致する項目が含まれません。 **Include** は **Exclude** の前に処理されます。
 
 ### <a name="regular-expressions"></a>正規表現
 
-Include ノードと Exclude ノードでは、正規表現を使用できます。 詳細については、[Visual Studio で正規表現を使用する](../ide/using-regular-expressions-in-visual-studio.md)方法に関するページを参照してください。 正規表現は、ワイルドカードと同じではありません。 特に次の点に注意してください。
+Include ノードと Exclude ノードでは、ワイルドカードとは異なる正規表現が使用されます。 詳細については、[Visual Studio で正規表現を使用する](../ide/using-regular-expressions-in-visual-studio.md)方法に関するページを参照してください。 次に例をいくつか示します。
 
-- **.\\** * は任意の文字の文字列と一致します
+- **.\*** は任意の文字の文字列と一致します
 
 - **\\.** はピリオド "." と一致します
 
@@ -133,7 +151,10 @@ Include ノードと Exclude ノードでは、正規表現を使用できます
 
 - **Source** - 要素が定義されているソース ファイルのパス名で要素と一致します。
 
-- **Attribute** - 特定の属性のアタッチ先の要素と一致します。 属性の完全名を指定し、名前の末尾に "Attribute" を含めます。
+- **Attribute** - 特定の属性のアタッチ先の要素と一致します。 `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>` など、属性の完全な名前を指定します。
+
+  > [!TIP]
+  > <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 属性を除外すると、`async`、`await`、`yield return` などの言語機能を使用するコードと、自動実装プロパティがコード カバレッジ分析から除外されます。 真に生成されたコードを除外するには、<xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 属性のみを除外します。
 
 - **Function** - 完全修飾名でプロシージャ、関数、またはメソッドに一致します。 関数名を一致させるには、正規表現が、名前空間、クラス名、メソッド名、およびパラメーター リストを含む関数の完全修飾名と一致する必要があります。 次に例を示します。
 
@@ -223,9 +244,8 @@ Included items must then not match any entries in the exclude list to remain inc
                 <!-- Don't forget "Attribute" at the end of the name -->
                 <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>
                 <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>
-                <Attribute>^System\.Runtime\.CompilerServices.CompilerGeneratedAttribute$</Attribute>
-                <Attribute>^System\.CodeDom\.Compiler.GeneratedCodeAttribute$</Attribute>
-                <Attribute>^System\.Diagnostics\.CodeAnalysis.ExcludeFromCodeCoverageAttribute$</Attribute>
+                <Attribute>^System\.CodeDom\.Compiler\.GeneratedCodeAttribute$</Attribute>
+                <Attribute>^System\.Diagnostics\.CodeAnalysis\.ExcludeFromCodeCoverageAttribute$</Attribute>
               </Exclude>
             </Attributes>
 

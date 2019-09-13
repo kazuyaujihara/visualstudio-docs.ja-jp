@@ -30,9 +30,9 @@
       href: install/import-export-installation-configurations.md
     - name: インストールの問題をトラブルシューティングする
       href: install/troubleshooting-installation-issues.md
-    - name: Visual Studio 2017 を更新する
+    - name: Visual Studio を更新する
       href: install/update-visual-studio.md
-    - name: Visual Studio 2017 の変更
+    - name: Visual Studio の変更
       href: install/modify-visual-studio.md
     - name: Visual Studio を修復します
       href: install/repair-visual-studio.md
@@ -350,8 +350,6 @@
                     - name: 概要
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
-                    - name: すべてのパラメーターに対して null チェックを追加する
-                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: メソッド シグネチャの変更
                       href: ide/reference/change-method-signature.md
                     - name: 匿名型をクラスに変換する
@@ -414,6 +412,8 @@
                       href: ide/reference/use-block-body-lambda.md
                     - name: 未使用値の割り当て、変数、およびパラメーター
                       href: ide/reference/unused-values-parameters.md
+                    - name: 呼び出しチェーンのラップおよび配置
+                      href: ide/reference/wrap-and-align-call-chains.md
                     - name: ラップ、インデント、およびパラメーターの整列
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'チュートリアル: 使用法からのコードの生成'

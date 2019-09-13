@@ -1,9 +1,9 @@
 ---
-title: Visual Studio 2017 の変更
+title: Visual Studio の変更
 titleSuffix: ''
 description: Visual Studio を変更する方法について、ステップ バイ ステップで説明します。
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 07/31/2019
+ms.date: 08/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ad5b8a0c261ed967710480b0abd3a2b9d34f01ce
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: a97db7e6b81eb9e807902d1b9bd0ea8ee6efa55e
+ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681394"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70026487"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>ワークロードやコンポーネントを追加または削除することで Visual Studio を変更する
 
@@ -41,15 +41,17 @@ ms.locfileid: "68681394"
 
 ここではその方法を説明します。
 
-## <a name="modify-workloads"></a>ワークロードの変更
-
- ワークロードには、使用するプログラミング言語またはプラットフォームに必要な機能が含まれています。 ワークロードを使用することで、必要に応じて、実行する作業に合わせ、Visual Studio を変更できます。
-
 >[!IMPORTANT]
 >Visual Studio をインストール、更新、または変更するには、管理アクセス許可を持つアカウントでログオンする必要があります。 詳細については、「[ユーザー アクセス許可と Visual Studio](../ide/user-permissions-and-visual-studio.md)」を参照してください。
 
->[!TIP]
-> 次の手順では、インターネットに接続しているものとします。 前に作成した Visual Studio の[オフライン インストール](create-an-offline-installation-of-visual-studio.md)を変更する方法について詳しくは、「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」ページをご覧ください。
+## <a name="modify-workloads"></a>ワークロードの変更
+
+ [ワークロード](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)には、使用するプログラミング言語またはプラットフォームに必要な機能が含まれています。 ワークロードを使用することで、必要に応じて、実行する作業に合わせ、Visual Studio を変更できます。
+
+>[!NOTE]
+> 次の手順では、インターネットに接続しているものとします。
+>
+> 前に作成した Visual Studio の[オフライン インストール](create-an-offline-installation-of-visual-studio.md)を変更する方法について詳しくは、「[Visual Studio のネットワーク ベース インストールを更新する](update-a-network-installation-of-visual-studio.md)」ページと「[ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)」ページの両方をご覧ください。
 
 ::: moniker range="vs-2017"
 
@@ -59,7 +61,7 @@ ms.locfileid: "68681394"
 
      ![Visual Studio インストーラー](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio インストーラーの検索")
 
-     >[!NOTE]
+     >[!TIP]
      >一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー**として **"M"** の項に表示される場合があります。<br/><br/> Visual Studio インストーラーは `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe` にもあります。
 
 1. インストーラーをクリックまたはタップして起動し、 **[変更]** を選択します。
@@ -117,12 +119,14 @@ ms.locfileid: "68681394"
 
 ## <a name="modify-individual-components"></a>個々のコンポーネントの変更
 
-ワークロードをインストールせずに Visual Studio のインストールをカスタマイズする場合は、Visual Studio インストーラーで **[個々のコンポーネント]** タブを選択し、必要なものを選択して、画面の指示に従います。
+[ワークロード](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)をインストールせずに Visual Studio のインストールをカスタマイズする場合は、Visual Studio インストーラーで **[個々のコンポーネント]** タブを選択し、必要なものを選択して、画面の指示に従います。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>関連項目
 
+* [Visual Studio ワークロードの詳細](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)
+* [Visual Studio のワークロードとコンポーネント ID の一覧](workload-and-component-ids.md)
 * [Visual Studio の更新](update-visual-studio.md)
 * [Visual Studio のネットワーク ベース インストールを更新する](update-a-network-installation-of-visual-studio.md)
 * [サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)

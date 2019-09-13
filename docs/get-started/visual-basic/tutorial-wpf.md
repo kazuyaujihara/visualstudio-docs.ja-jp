@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 924b3000ffa0648a9086ed4771e921a939859804
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 4108298eb095cf31e5f5f7089cbc7cd8780e8977
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043562"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864700"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>チュートリアル: Visual Basic で単純なアプリケーションを作成する
 
@@ -33,7 +33,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。
 
 ::: moniker-end
 
@@ -100,29 +100,23 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>MainWindow.xaml の名前を変更する
 
-それでは、MainWindow に具体的な名前を付けましょう。
-
-1. **ソリューション エクスプローラー**で、*MainWindow.xaml* を選択します。 **[プロパティ]** ウィンドウが表示されるはずですが、表示されない場合は、 **[表示]** メニューを選択し、 **[プロパティ ウィンドウ]** 項目を選択します。
-
-1. **[File Name]** プロパティを `Greetings.xaml`に変更します。
-
-     ![ファイル名が強調表示されたプロパティ ウィンドウ](../media/exploreide-filenameinpropertieswindow.png)
-
-     **ソリューション エクスプローラー**に表示されているこのファイルの名前が *Greetings.xaml* になり、入れ子になっているコード ファイルの名前が *Greetings.xaml.vb* になります。 このコード ファイルは、 *.xaml* ファイル ノードの下に入れ子になっており、相互に密接に関連していることが示されます。
+それでは、MainWindow に具体的な名前を付けましょう。 **ソリューション エクスプローラー**で、*MainWindow.xaml* を右クリックし、 **[名前の変更]** を選択します。 ファイルの名前を *Greetings.xaml* に変更します。
 
 ## <a name="design-the-user-interface-ui"></a>ユーザー インターフェイス (UI) のデザイン
+
+デザイナーを開いていない場合は、**ソリューション エクスプローラー**で *Greetings.xaml* を選択し、**Shift** + **F7** キーを押してデザイナーを開きます。
 
 このアプリケーションに 3 種類のコントロール (<xref:System.Windows.Controls.TextBlock> コントロール、2 つの <xref:System.Windows.Controls.RadioButton> コントロール、および <xref:System.Windows.Controls.Button> コントロール) を追加します。
 
 ### <a name="add-a-textblock-control"></a>TextBlock コントロールを追加する
 
-1. **Ctrl**+**Q** と入力し、検索ボックスを有効にして「**ツールボックス**」と入力します。 結果リストから **[表示] > [ツールボックス]** を選択します。
+1. **Ctrl** + **Q** キーを押して検索ボックスを有効にし、「**ツールボックス**」と入力します。 結果リストから **[表示] > [ツールボックス]** を選択します。
 
 2. **[ツールボックス]** で、 **[コモン WPF コントロール]** ノードを展開し、TextBlock コントロールを表示します。
 
      ![TextBlock コントロールを強調表示したツールボックス](../media/exploreide-textblocktoolbox.png)
 
-3. **TextBlock** 項目を選択してデザイン サーフェイス上のウィンドウにドラッグし、TextBlock コントロールをデザイン サーフェイスに追加します。 ウィンドウの上部付近の中央にコントロールを配置します。
+3. **TextBlock** 項目を選択してデザイン サーフェイス上のウィンドウにドラッグし、TextBlock コントロールをデザイン サーフェイスに追加します。 ウィンドウの上部付近の中央にコントロールを配置します。 Visual Studio 2019 以降では、赤いガイドラインを使用してコントロールを中央揃えにすることができます。
 
 ウィンドウは次の図のようになります。
 
@@ -152,7 +146,7 @@ XAML マークアップは、次の例のようになります。
 
      ![RadioButton コントロールをオンにした [ツールボックス] ウィンドウ](../media/exploreide-radiobuttontoolbox.png)
 
-2. **RadioButton** 項目を選択してデザイン サーフェイス上のウィンドウにドラッグし、RadioButto コントロールを 2 つデザイン サーフェイスに追加します。 TextBlock コントロールの下にボタンが並んで表示されるように、ボタンを移動します (ボタンを選択し、方向キーを使います)。
+2. **RadioButton** 項目を選択してデザイン サーフェイス上のウィンドウにドラッグし、RadioButto コントロールを 2 つデザイン サーフェイスに追加します。 TextBlock コントロールの下にボタンが並んで表示されるように、ボタンを移動します (ボタンを選択し、方向キーを使います)。 赤いガイドラインを使用してコントロールを配置します。
 
      ウィンドウは、次のようになります。
 
@@ -168,9 +162,15 @@ XAML マークアップは、次の例のようになります。
 
 ### <a name="add-display-text-for-each-radio-button"></a>各オプション ボタンの表示テキストを追加する
 
-1. デザイン サーフェイスで、HelloButton のショートカット メニューを開きます。HelloButton の右マウス ボタンを押し、 **[テキストの編集]** を選択し、「`Hello`」と入力します。
+XAML で、`HelloButton` および `GoodbyeButton` の **Content** 属性を、`"Hello"` および `"Goodbye"` に更新します。 XAML マークアップは次の例のようになります。
 
-2. GoodbyeButton のショートカット メニューを開きます。GoodbyeButton の右マウス ボタンを押し、 **[テキストの編集]** を選択し、「`Goodbye`」と入力します。
+   ```xaml
+   <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="252,47,0,0" TextWrapping="Wrap" Text="Select a message option and then choose the Display button." VerticalAlignment="Top"/>
+        <RadioButton x:Name="HelloButton" Content="Hello" HorizontalAlignment="Left" Margin="297,161,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="GoodbyeButton" Content="Goodbye" HorizontalAlignment="Left" Margin="488,161,0,0" VerticalAlignment="Top"/>
+   </Grid>
+   ```
 
 ### <a name="set-a-radio-button-to-be-checked-by-default"></a>チェックマークが既定で付けられるようにラジオ ボタンを設定する
 
@@ -186,7 +186,7 @@ IsChecked="True"
 
 ### <a name="add-the-button-control"></a>Button コントロールを追加する
 
-1. **[ツールボックス]** で、 **Button** コントロールを探し、デザイン サーフェイスの RadioButton コントロールの下に追加します。デザイン ビュー内のフォームにドラッグすると追加されます。
+1. **[ツールボックス]** で、 **Button** コントロールを探し、デザイン サーフェイスの RadioButton コントロールの下に追加します。デザイン ビュー内のフォームにドラッグすると追加されます。 Visual Studio 2019 以降を使用している場合は、赤い線を使ってコントロールを中央揃えにすることができます。
 
 2. XAML ビューで、Button コントロールの **[Content]** の値を `Content="Button"` から `Content="Display"`に変更し、変更を保存します。
 
@@ -205,7 +205,7 @@ IsChecked="True"
      *Greetings.xaml.vb* が開き、`Button_Click` イベントにカーソルが表示されます。
 
     ```vb
-    Private Sub Button_Click_1(sender As Object, e As RoutedEventArgs)
+    Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 
     End Sub
     ```
@@ -248,7 +248,16 @@ IsChecked="True"
 
 2. `StartupUri="MainWindow.xaml"` を `StartupUri="Greetings.xaml"` に変更し、変更を保存します。
 
-デバッガーを再度起動します (**F5** を押します)。 アプリケーションの **Greetings** ウィンドウが表示されます。 アプリケーション ウィンドウを閉じ、デバッグを停止します。
+デバッガーを再度起動します (**F5** を押します)。 アプリケーションの **Greetings** ウィンドウが表示されます。
+
+::: moniker range="vs-2017"
+![実行中のアプリのスクリーンショット](media/exploreide-wpf-running-app.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![実行中のアプリのスクリーンショット](media/vs-2019/exploreide-wpf-running-app.png)
+::: moniker-end
+
+ アプリケーション ウィンドウを閉じ、デバッグを停止します。
 
 ### <a name="debug-with-breakpoints"></a>ブレークポイントを使用してデバッグする
 
@@ -287,6 +296,12 @@ IsChecked="True"
 10. アプリケーション ウィンドウを閉じ、デバッグを停止します。
 
 11. メニュー バーで、 **[デバッグ]**  >  **[すべてのブレークポイントを無効にする]** の順に選択します。
+
+### <a name="view-a-representation-of-the-ui-elements"></a>UI 要素の表現を表示する
+
+実行中のアプリで、ウィンドウの上部にウィジェットが表示されます。 これは、いくつかの便利なデバッグ機能にすばやくアクセスできるランタイム ヘルパーです。 最初のボタン **[ライブ ビジュアル ツリーに移動する]** をクリックします。 ウィンドウにページのすべてのビジュアル要素が含まれるツリーが表示されます。 ノードを展開して、追加したボタンを見つけます。
+
+![ライブ ビジュアル ツリー ウィンドウのスクリーンショット](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>アプリケーションのリリース バージョンのビルド
 

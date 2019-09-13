@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2f5043b5c9690c668c12da7b902fdff5228f1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ebbe6ac8ef8e6a6de99159fa8dd5169a9dcac06
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972269"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180399"
 ---
 # <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
 
@@ -33,7 +33,7 @@ ms.locfileid: "62972269"
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
+> Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。
 
 ::: moniker-end
 
@@ -58,11 +58,11 @@ ms.locfileid: "62972269"
 
 ::: moniker-end
 
-2. メニュー バーの **[ファイル]** メニューから、**[新しいファイル]** を選択します。
+2. メニュー バーの **[ファイル]** メニューから、 **[新しいファイル]** を選択します。
 
-3. **[新しいファイル]** ダイアログ ボックスの **[全般]** カテゴリで、**[Visual Basic クラス]** を選び、**[開く]** を選択します。
+3. **[新しいファイル]** ダイアログ ボックスの **[全般]** カテゴリで、 **[Visual Basic クラス]** を選び、 **[開く]** を選択します。
 
-   エディターで新しいファイルが開かれ、Visual Basic クラスのスケルトンが表示されます  (既にお気付きのとおり、構文の強調表示など、コード エディターによって提供されるいくつかの利点を得るために、完全な Visual Studio プロジェクトを作成する必要はありません。 必要なのはコード ファイルだけです)。
+   エディターで新しいファイルが開かれ、Visual Basic クラスのスケルトンが表示されます (既にお気付きのとおり、構文の強調表示など、コード エディターによって提供されるいくつかの利点を得るために、完全な Visual Studio プロジェクトを作成する必要はありません。 必要なのはコード ファイルだけです)。
 
    ![Visual Studio での Visual Basic コード ファイル](media/tutorial-editor.png)
 
@@ -80,7 +80,7 @@ Visual Studio で提供されている便利な*コード スニペット*を使
 
    Sub プロシージャ `MySub()` のアウトラインがファイルに追加されます。
 
-利用できるコード スニペットは、プログラミング言語によって異なります。 **[編集]** > **[IntelliSense]** > **[スニペットの挿入]** を選択 (または **Ctrl** + **K**、**Ctrl** + **X** キーを押す) ことで、Visual Basic で使用可能なコード スニペットを確認できます。 Visual Basic の場合、コード スニペットは次のカテゴリで使用できます。
+利用できるコード スニペットは、プログラミング言語によって異なります。 **[編集]**  >  **[IntelliSense]**  >  **[スニペットの挿入]** を選択 (または **Ctrl** + **K**、**Ctrl** + **X** キーを押す) ことで、Visual Basic で使用可能なコード スニペットを確認できます。 Visual Basic の場合、コード スニペットは次のカテゴリで使用できます。
 
 ![Visual Basic のコード スニペットのリスト](media/tutorial-code-snippet-list.png)
 
@@ -88,7 +88,7 @@ Visual Studio で提供されている便利な*コード スニペット*を使
 
 ## <a name="comment-out-code"></a>コメント アウト コード
 
-ツールバー (Visual Studio のメニュー バーの下にあるボタンの列) は、コード作成時の生産性を高めるのに役立ちます。 たとえば、IntelliSense 完了モードの切り替え、行のインデントの増減、コンパイルしたくないコードのコメント アウトを行うことができます  ([IntelliSense](../../ide/using-intellisense.md) は、特に、一致するメソッドのリストを表示するコーディング支援機能です)。このセクションでは、一部のコードをコメント アウトします。
+ツールバー (Visual Studio のメニュー バーの下にあるボタンの列) は、コード作成時の生産性を高めるのに役立ちます。 たとえば、IntelliSense 完了モードの切り替え、行のインデントの増減、コンパイルしたくないコードのコメント アウトを行うことができます ([IntelliSense](../../ide/using-intellisense.md) は、特に、一致するメソッドのリストを表示するコーディング支援機能です)。このセクションでは、一部のコードをコメント アウトします。
 
 ![エディターのツールバー ボタン](media/tutorial-editor-toolbar.png)
 
@@ -174,11 +174,11 @@ Visual Studio エディターでは、型やメソッドなどの定義の検査
 
    エディターの右上に **[名前の変更]** ダイアログ ボックスがポップアップ表示されます。
 
-1. `_words` 変数が選択された状態で、**words** の任意の名前を入力します。 クエリ内の `words` への参照も名前が自動的に変更されることに注意してください。 **Enter** キーを押すか、**[適用]** をクリックする前に、**[名前の変更]** ポップアップ ボックスで **[コメントを含める]** チェック ボックスをオンにします。
+1. `_words` 変数が選択された状態で、**words** の任意の名前を入力します。 クエリ内の `words` への参照も名前が自動的に変更されることに注意してください。 **Enter** キーを押すか、 **[適用]** をクリックする前に、 **[名前の変更]** ポップアップ ボックスで **[コメントを含める]** チェック ボックスをオンにします。
 
    ![[名前の変更] ダイアログ ボックス](media/tutorial-rename.png)
 
-1. **Enter** キーを押すか、**[適用]** をクリックします。
+1. **Enter** キーを押すか、 **[適用]** をクリックします。
 
    `words` の出現箇所と、コード コメント内の `words` への参照箇所の両方で名前が変更されます。
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13e473d6d1512488950188b1e1649542f0341f43
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: dfa9c2871a414d5ce6be6c0b64f10b3f57ca7305
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415674"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180176"
 ---
 # <a name="learn-about-projects-and-solutions"></a>プロジェクトとソリューションについて理解する
 
@@ -28,7 +28,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker range="vs-2019"
 
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。
 
 ::: moniker-end
 
@@ -258,7 +258,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 ![テストに合格したことを示す Visual Studio のテスト エクスプローラー](media/tutorial-projects-test-explorer.png)
 
 > [!TIP]
-> **テスト エクスプローラー**が自動的に開かない場合は、メニュー バーから **[テスト]**  >  **[Windows]**  >  **[テスト エクスプローラー]** を選択して開きます。
+> **テスト エクスプローラー** が自動的に開かない場合は、メニュー バーから **[テスト]**  >  **[ウィンドウ]**  >  **[テスト エクスプローラー]** を選択して開きます。
 
 ## <a name="see-also"></a>関連項目
 

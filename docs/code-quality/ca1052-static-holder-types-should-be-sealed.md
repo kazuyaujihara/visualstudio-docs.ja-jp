@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a574f7f77277255acf2150c218c3f4db061e75c
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: ba54b9f87fe8c8cd8bfdc86f39e3121135241e92
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604769"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547521"
 ---
 # <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052:静的ホルダー型は Static または NotInheritable である必要があります
 
@@ -59,7 +59,7 @@ Rule CA1052 は、静的メンバーのみを含む型が継承されるよう�
 
 ## <a name="configurability"></a>かつ
 
-(静的コード分析ではなく) [FxCop アナライザー](install-fxcop-analyzers.md)からこの規則を実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの EditorConfig ファイルに次のキーと値のペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの EditorConfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1052.api_surface = private, internal

@@ -1,5 +1,5 @@
 ---
-title: Python の概要 |Microsoft Docs
+title: Python でのはじめに |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -9,40 +9,40 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c5cea89b337f4da586ba4ca1954e49b96c84638
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575651"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154941"
 ---
 # <a name="getting-started-with-python"></a>Python の概要
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Python Tools for Visual Studio (PTVS) では、無料、[オープン ソース](https://github.com/Microsoft/ptvs)強力な Python 開発エクスペリエンスを Visual Studio のプラグイン。  
+Python Tools for Visual Studio (PTVS) は、強力な Python 開発エクスペリエンスを備えた Visual Studio 用の無料の[オープンソース](https://github.com/Microsoft/ptvs)プラグインです。  
   
 ## <a name="python-the-language"></a>言語としての Python
   
-Python は、多くの大学、科学者、アプリのスクリプト作成者、一般の開発者、およびプロの開発者、アプリケーション、web サイト、およびクラウド サービスでの操作で使用される一般的なプログラミング言語です。
+Python は一般的なプログラミング言語であり、多くの大学、科学者、アプリのスクリプトスクリプト、カジュアル開発者、プロフェッショナル開発者、アプリケーション、web サイト、およびクラウドサービスでの作業に使用されます。
 
-プログラミング言語として Python に示します。
+プログラミング言語として、Python は次のようになります。
   
 - 信頼性が高い。
-- クイック プログラムのスクリプトを作成、アプリのスクリプト、デスクトップ アプリ、web サーバー、web サービス、および科学技術計算に一般的に便利です。
+- 一般に、クイックプログラム、アプリスクリプト、デスクトップアプリ、web サーバー、web サービス、および科学計算のスクリプト作成に役立ちます。
 - 簡単に学ぶことができ、正しくコーディングできるように適切に設計されている (多くの大学でプログラミングの入門コースに使用される)。
-- 柔軟な命令型、機能、およびオブジェクト指向のプログラミング スタイルをサポートします。
+- 柔軟で、命令型、機能的、およびオブジェクト指向のプログラミングスタイルをサポートします。
 - 無料かつオープン ソース。
-- すべての主要なオペレーティング システムで適切に実行されます。  
-- 無料かつ便利で適切に設計された多くのライブラリによってサポートされています。  
-- 多数のドキュメント、サンプル、および強力な開発者コミュニティによってサポートされています。  
+- は、すべての主要なオペレーティングシステムで正常に動作します。  
+- 多くの無料、便利で適切に設計されたライブラリでサポートされています。  
+- 多くのドキュメント、サンプル、および強力な開発者コミュニティでサポートされています。  
 
-詳細については、言語、するを起動[初心者向けの Python](https://www.python.org/about/gettingstarted/) python.org でします。
+言語の詳細については、python.org の[初心者向け Python](https://www.python.org/about/gettingstarted/)を開始してください。
 
-Python 自体をインストールするを参照してください。 [ https://www.python.org/download/](https://www.python.org/download/)します。
+Python をインストールするには[https://www.python.org/download/](https://www.python.org/download/)、にアクセスします。
 
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
-Python Tools for Visual Studio からインストールできます[visualstudio.com](https://www.visualstudio.com/explore/python-vs)、次の機能を提供します。  
+[Visualstudio.com](https://www.visualstudio.com/explore/python-vs)からインストールできる Python Tools for Visual Studio には、次の機能が用意されています。  
   
 - さまざまなバージョンの CPython、IronPython、IPython など、複数のインタープリターのサポート  
 - Python コードのフォルダー構造を暗黙的に取得し、またアプリ コード、テスト コード、Web ページ、JavaScript、ビルド スクリプトなどを識別できるように、明示的な制御も可能にするプロジェクト システム。  
@@ -63,17 +63,17 @@ Python Tools for Visual Studio からインストールできます[visualstudio
 - インストールと機能のデモ (27 分)] (https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [ドキュメント](https://github.com/Microsoft/PTVS/wiki)  
 
-Visual Studio が提供しないこと現時点では、埋め込まれた Python インタープリターを使用してプログラムを実質的には、Python を使用してスタンドアロン実行可能ファイルを作成するための手段に注意してください。 ただし、[StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)で説明されているように、Python コミュニティでは、多様な実行方法が紹介されています。 また、CPython はネイティブ アプリケーション内への埋め込みをサポートしています。詳細については、ブログの投稿「[Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)」(CPython の埋め込み可能な Zip ファイルの使用方法) を参照してください。
+Visual Studio では、Python を使用してスタンドアロンの実行可能ファイルを作成する手段が提供されていることに注意してください。基本的には、Python インタープリターが埋め込まれたプログラムを意味します。 ただし、[StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)で説明されているように、Python コミュニティでは、多様な実行方法が紹介されています。 また、CPython はネイティブ アプリケーション内への埋め込みをサポートしています。詳細については、ブログの投稿「[Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)」(CPython の埋め込み可能な Zip ファイルの使用方法) を参照してください。
   
 ## <a name="building-ui-with-python"></a>Python を使用した UI の構築  
 
-メインの提供は Python で UI を構築、 [Qt Project](https://www.qt.io/qt-for-application-development/)と呼ばれる Python のバインディング[PySide (公式バインディング)](http://wiki.qt.io/PySide) (も参照してください[PySide のダウンロード](https://download.qt.io/official_releases/pyside/.)) と[PyQt](https://wiki.python.org/moin/PyQt)します。 現在のところ、Visual Studio の Python のサポートには、UI 開発用のツールは含まれていません。
+Python を使用した UI 構築の主要なオファリングは[Qt プロジェクト](https://www.qt.io/qt-for-application-development/)であり、 [PySide (正式なバインド)](http://wiki.qt.io/PySide)と呼ばれる python (公式のバインド) と[PyQt](https://wiki.python.org/moin/PyQt)がバインドさ[れてい](https://download.qt.io/official_releases/pyside/.)ます。 現在のところ、Visual Studio の Python のサポートには、UI 開発用のツールは含まれていません。
 
 ## <a name="azure-sdk-for-python"></a>Azure SDK for Python
   
 Windows、Mac、および Linux をサポートしている Azure SDK for Python を使用すると、Microsoft Azure サービスの使用と管理が簡単になります。 詳細については、次のリソースを参照してください。 
 
-- SDK をインストールするには、「[Python Package Index (Python パッケージ インデックス)](https://pypi.python.org/pypi/azure)」を使用するか、Azure ドキュメントの 「[Python と SDK のインストール](https://azure.microsoft.com/documentation/articles/python-how-to-install/)」の手順に従ってください。 
+- SDK をインストールするには、「[Python Package Index (Python パッケージ インデックス)](https://pypi.python.org/pypi/azure)」を使用するか、Azure ドキュメントの 「[Python と SDK のインストール](https://docs.microsoft.com/azure/python/python-sdk-azure-install)」の手順に従ってください。 
 - [Azure SDK for Python デベロッパー センター](https://azure.microsoft.com/develop/python/)には、チュートリアルによるインストールからドキュメント化までの多数のヘルプがあります。  いくつかの要点を以下に示します。  
 - 使い方ガイド:
   - [Python から Azure BLOB ストレージを使用する方法](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
@@ -91,9 +91,9 @@ IPython と科学技術計算のライブラリ (matplotlib、scipy、numpy な�
   
 ## <a name="see-also"></a>関連項目  
 
-[PTVS の概要。Visual Studio のセットアップ](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[PTVS の概要。コーディングの開始 (プロジェクト)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[PTVS の概要。コードの編集](../python/getting-started-with-ptvs-editing-code.md)
-[PTVS の概要。デバッグ](../python/getting-started-with-ptvs-debugging.md)
-[PTVS の概要。対話型 Python](../python/getting-started-with-ptvs-interactive-python.md)
-[PTVS の概要。Azure で web サイトの作成](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[PTVS の使用を開始する: Ptvs を使用](../python/getting-started-with-ptvs-setting-up-visual-studio.md)した Visual Studio
+[のはじめにの設定:Ptvs でコーディング (](../python/getting-started-with-ptvs-start-coding-projects.md)プロジェクト)
+[はじめにを開始する:Ptvs](../python/getting-started-with-ptvs-editing-code.md)でのコード
+[はじめにの編集:Ptvs を使用したはじめにのデバッグ](../python/getting-started-with-ptvs-debugging.md):
+[Ptvs](../python/getting-started-with-ptvs-interactive-python.md)を使用した対話型 Python
+[はじめに:Azure での Web サイトの構築](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

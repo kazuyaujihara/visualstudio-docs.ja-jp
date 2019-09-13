@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: b047222f67d75bbc092a731c8de1ca1ba6d94cf7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692164"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108023"
 ---
 # <a name="working-with-git"></a>Git の使用
 
@@ -59,7 +59,7 @@ Git は、チームが同じドキュメントで同時に作業できるよう�
 
 ## <a name="switching-branches"></a>ブランチの切り替え
 
-既定では、リポジトリに作成された最初のブランチは、 **マスター**  ブランチと呼ばれます。 マスター ブランチと他のブランチの間に技術的な違いは何もありませんが、マスター ブランチは開発チームで最も頻繁に "ライブ" または "運用" ブランチと見なされるブランチです。
+既定では、リポジトリに作成された最初のブランチは、**マスター** ブランチと呼ばれます。 マスター ブランチと他のブランチの間に技術的な違いは何もありませんが、マスター ブランチは開発チームで最も頻繁に "ライブ" または "運用" ブランチと見なされるブランチです。
 
 マスター (またはそのマスターの他のブランチ) から分岐することで独立した開発ラインを作成することができます これにより、その時点の新しいバージョンのマスター ブランチが提供され、"ライブ" とは別に開発できるようになります。 ソフトウェア開発における機能では頻繁にこの方法でブランチを使用します。
 

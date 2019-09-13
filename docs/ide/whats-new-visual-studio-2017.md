@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fd3bde36b81dde254f3447d46bd05ffc41c6cde
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583491"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925904"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 の新機能
 
@@ -36,14 +36,14 @@ ms.locfileid: "62583491"
 
 以前のバージョンである Visual Studio 2015 以降に行われた主な変更点の要約を示します。
 
-* **[基本の再定義](#redefined-fundamentals)**。 新しいセットアップ エクスペリエンスにより、必要なものを必要なタイミングでより短い時間でインストールできるようになりました。
-* **[パフォーマンスと生産性](#performance-and-productivity)**。 Microsoft は、新しく、現代的なモバイル、クラウド、デスクトップの開発機能を導入することを中心に取り組んできました。 また、Visual Studio の起動が以前と比較してより高速になり、より応答性が向上し、メモリの消費量が少なくなりました。
-* **[Azure によるクラウド アプリの開発](#cloud-app-development-with-azure)**。 Microsoft Azure を使用するクラウド ファーストのアプリを簡単に作成できる Azure ツールのビルトイン スイート。 Visual Studio を使用すれば、Azure でアプリとサービスを構成、ビルド、デバッグ、パッケージ化、デプロイするのが容易になります。
-* **[Windows アプリ開発](#windows-app-development)**。 Visual Studio 2017 で UWP テンプレートを使用して、すべての Windows 10 デバイス (PC、タブレット、電話、Xbox、HoloLens、Surface Hub など) を対象とした単一のプロジェクトを作成します。
-* **[モバイル アプリの開発](#mobile-app-development)**。 マルチプラットフォームのモバイル要件を 1 つのコア コードベースとスキル セットに統合する Xamarin により、短期間で革新的な成果を出すことができます。
-* **[クロスプラットフォーム開発](#cross-platform-development)**。 対象となるプラットフォームにソフトウェアをシームレスに届けます。 Redgate Data Tools により DevOps プロセスを SQL Server に拡張し、Visual Studio からのデータベース配置を安全に自動化します。 あるいは、.NET Core を利用し、変更しなくても Windows、Linux、macOS オペレーティング システムをまたいで実行できるアプリやライブラリを作成します。
-* **[ゲーム開発](#games-development)**。 Visual Studio tools Unity (VSTU) を利用すると、Visual Studio を使用して C# でゲームとエディター スクリプトを記述した後、強力なデバッガーを使用してエラーを検出して修正できます。
-* **[AI の開発](#ai-development)**。 Visual Studio Tools for AI では、Visual Studio の生産性機能を使用して、AI 革新を高速化することができます。 堅牢な実験機能のために、Azure Machine Learning とシームレスに統合するディープ ラーニング / AI ソリューションをビルド、テスト、展開します。
+* **[基本の再定義](#redefined-fundamentals)** 。 新しいセットアップ エクスペリエンスにより、必要なものを必要なタイミングでより短い時間でインストールできるようになりました。
+* **[パフォーマンスと生産性](#performance-and-productivity)** 。 Microsoft は、新しく、現代的なモバイル、クラウド、デスクトップの開発機能を導入することを中心に取り組んできました。 また、Visual Studio の起動が以前と比較してより高速になり、より応答性が向上し、メモリの消費量が少なくなりました。
+* **[Azure によるクラウド アプリの開発](#cloud-app-development-with-azure)** 。 Microsoft Azure を使用するクラウド ファーストのアプリを簡単に作成できる Azure ツールのビルトイン スイート。 Visual Studio を使用すれば、Azure でアプリとサービスを構成、ビルド、デバッグ、パッケージ化、デプロイするのが容易になります。
+* **[Windows アプリ開発](#windows-app-development)** 。 Visual Studio 2017 で UWP テンプレートを使用して、すべての Windows 10 デバイス (PC、タブレット、電話、Xbox、HoloLens、Surface Hub など) を対象とした単一のプロジェクトを作成します。
+* **[モバイル アプリの開発](#mobile-app-development)** 。 マルチプラットフォームのモバイル要件を 1 つのコア コードベースとスキル セットに統合する Xamarin により、短期間で革新的な成果を出すことができます。
+* **[クロスプラットフォーム開発](#cross-platform-development)** 。 対象となるプラットフォームにソフトウェアをシームレスに届けます。 Redgate Data Tools により DevOps プロセスを SQL Server に拡張し、Visual Studio からのデータベース配置を安全に自動化します。 あるいは、.NET Core を利用し、変更しなくても Windows、Linux、macOS オペレーティング システムをまたいで実行できるアプリやライブラリを作成します。
+* **[ゲーム開発](#games-development)** 。 Visual Studio tools Unity (VSTU) を利用すると、Visual Studio を使用して C# でゲームとエディター スクリプトを記述した後、強力なデバッガーを使用してエラーを検出して修正できます。
+* **[AI の開発](#ai-development)** 。 Visual Studio Tools for AI では、Visual Studio の生産性機能を使用して、AI 革新を高速化することができます。 堅牢な実験機能のために、Azure Machine Learning とシームレスに統合するディープ ラーニング / AI ソリューションをビルド、テスト、展開します。
 
 > [!NOTE]
 > Visual Studio 2017 の新機能の一覧については、「[最新のリリース ノート](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)」を参照してください。 また、将来的な機能の内容については、「[リリース ノートのプレビュー](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017)」を参照してください。
@@ -60,7 +60,7 @@ Visual Studio をインストールするときに確認できる最も重要な
 
 必要なワークロードを選択し、必要に応じてそれらを変更します。
 
- ![Visual Studio 2017 のセットアップ ダイアログ](../install/media/install-visual-studio-enterprise.png)
+![Visual Studio 2017 のセットアップ ダイアログ](../install/media/install-visual-studio-enterprise.png)
 
 また、インストールを調整するオプションもあります。
 
@@ -90,7 +90,7 @@ Visual Studio の新しいパフォーマンス センターは、IDE の起動�
 
 ### <a name="faster-on-demand-loading-of-extensions"></a>拡張機能のオンデマンド読み込みの高速化
 
-Visual Studio では、独自およびサードパーティの拡張機能が IDE の起動時ではなく必要に応じて読み込まれるように取り組みを進めています。 どの拡張機能が起動、ソリューションの読み込み、および入力パフォーマンスに影響があるかについて関心をお持ちですか? この情報については、**[ヘルプ]**、**[Visual Studio のパフォーマンスの管理]** の順に選択して確認することができます。
+Visual Studio では、独自およびサードパーティの拡張機能が IDE の起動時ではなく必要に応じて読み込まれるように取り組みを進めています。 どの拡張機能が起動、ソリューションの読み込み、および入力パフォーマンスに影響があるかについて関心をお持ちですか? この情報については、 **[ヘルプ]** 、 **[Visual Studio のパフォーマンスの管理]** の順に選択して確認することができます。
 
   ![Visual Studio 2017 の [オプション] ダイアログ ボックス](media/vs2017ide-manage-vs-perf.png)
 
@@ -98,7 +98,7 @@ Visual Studio では、独自およびサードパーティの拡張機能が ID
 
 Visual Studio にサインインすると、お気に入りの拡張機能を使用して、各開発環境を容易に設定できるようになりました。 新しい [拡張機能マネージャーのローミング] は、クラウドに同期されたリストを作成することで、お気に入りの拡張機能をすべて追跡します。
 
-Visual Studio の拡張機能の一覧を表示するには、**[ツール]**、**[拡張機能と更新プログラム]** の順にクリックし、**[拡張機能マネージャーのローミング]** をクリックします。
+Visual Studio の拡張機能の一覧を表示するには、 **[ツール]** 、 **[拡張機能と更新プログラム]** の順にクリックし、 **[拡張機能マネージャーのローミング]** をクリックします。
 
 ![Visual Studio 2017 - [拡張機能と更新プログラム] ダイアログ ボックス](media/vs2017ide-extensions-and-updates.png)
 
@@ -108,12 +108,12 @@ Visual Studio の拡張機能の一覧を表示するには、**[ツール]**、
 
 [拡張機能マネージャーのローミング] を使用する場合、リストに次の 3 つの種類のアイコンが表示されます。
 
-* ![ローミング済みアイコン](media/vs2017ide-roamedicon.png) **_ローミング済み_**:ローミング リストにあり、このコンピューターにはインストールされていない拡張機能を示します。
-  (これらの拡張機能は、**[ダウンロード]** ボタンでインストールできます。)
-* ![ローミングおよびインストール済みアイコン](media/vs2017ide-roamedinstalledicon.png) **_ローミングおよびインストール済み_**:ローミング リストにあり、お使いの開発環境にインストールされているすべての拡張機能を示します。
-  (ローミングしない場合は、**[ローミングの停止]** ボタンで削除することができます。)
-* ![インストール済みアイコン](media/vs2017ide-installedicon.png) **_インストール済み_**:この環境にインストールされ、ローミング リストにはないすべての拡張機能を示します。
-  (**[ローミングの開始]** ボタンを使用して、拡張機能をローミング リストに追加できます。)
+* ![ローミング済みアイコン](media/vs2017ide-roamedicon.png) **_ローミング済み_** :ローミング リストにあり、このコンピューターにはインストールされていない拡張機能を示します。
+  (これらの拡張機能は、 **[ダウンロード]** ボタンでインストールできます。)
+* ![ローミングおよびインストール済みアイコン](media/vs2017ide-roamedinstalledicon.png) **_ローミングおよびインストール済み_** :ローミング リストにあり、お使いの開発環境にインストールされているすべての拡張機能を示します。
+  (ローミングしない場合は、 **[ローミングの停止]** ボタンで削除することができます。)
+* ![インストール済みアイコン](media/vs2017ide-installedicon.png) **_インストール済み_** :この環境にインストールされ、ローミング リストにはないすべての拡張機能を示します。
+  ( **[ローミングの開始]** ボタンを使用して、拡張機能をローミング リストに追加できます。)
 
 サインイン中にダウンロードするすべての拡張機能が **[ローミングおよびインストール済み]** としてリストに追加されます。 拡張機能はローミング リストの一部となり、任意のコンピューターからアクセスできるようになります。
 
@@ -145,7 +145,7 @@ Visual Studio Enterprise 2017 では、ライブ単体テストを実行する�
 
 #### <a name="keep-keybinding-profiles-consistent"></a>キー バインド プロファイルの一貫性を維持する
 
-**15.8 の新機能**:2 つの新しいキーボード プロファイル、Visual Studio Code と ReSharper (Visual Studio) を利用し、ツール間でキーバインドの一貫性を維持できるようになりました。 これらのスキームは、**[ツール]** > **[オプション]** > **[全般]** > **[キーボード]** および上部のドロップダウン メニューで見つけることができます。
+**15.8 の新機能**:2 つの新しいキーボード プロファイル、Visual Studio Code と ReSharper (Visual Studio) を利用し、ツール間でキーバインドの一貫性を維持できるようになりました。 これらのスキームは、 **[ツール]**  >  **[オプション]**  >  **[全般]**  >  **[キーボード]** および上部のドロップダウン メニューで見つけることができます。
 
   ![Visual Studio Code と ReSharper の新しいキー バインド プロファイル](media/vs-keyboard-mappings-code-resharper.png)
 
@@ -178,7 +178,7 @@ Visual Studio でプロジェクトを操作する際に、コードを迅速に
 
 * **実装に移動** (**Ctrl** + **F12**) &ndash; 任意の基本データ型やメンバーから各種実装に移動します。
 
-* **すべてにジャンプ** (**Ctrl** + **T** または **Ctrl** + **,**) &ndash; 任意のファイル/型/メンバー/シンボル宣言に直接移動します。 結果の一覧をフィルターしたり、クエリ構文 (例: ファイルは “f searchTerm”、型は “t searchTerm” など) を使用したりできます。
+* **すべてにジャンプ** (**Ctrl** + **T** または **Ctrl** + **,** ) &ndash; 任意のファイル/型/メンバー/シンボル宣言に直接移動します。 結果の一覧をフィルターしたり、クエリ構文 (例: ファイルは “f searchTerm”、型は “t searchTerm” など) を使用したりできます。
 
   ![[すべてにジャンプ] の改善](media/vs2017ide-navigation-go-to.png)
 
@@ -220,7 +220,7 @@ Visual Studio には、C++ Core ガイドラインの配信、C++11 および C+
 
 **15.5 の新機能**:IntelliTrace のステップ バックでは、ブレークポイントとデバッガー ステップ イベントごとにアプリケーションのスナップショットを自動作成します。 記録されたスナップショットにより、前のブレークポイントまたはステップに戻り、過去の時点でのアプリケーションの状態を確認できるようになります。 IntelliTrace ステップ バックでは、以前のアプリケーションの状態を確認したいが、デバッグの再開や必要なアプリ状態の再作成は必要でない場合に時間を節約できます。
 
-スナップショット間を移動して表示するには、**デバッグ** ツールバーの **[前に戻る]** ボタンと **[次へ進む]** ボタンを使用します。 これらのボタンを使用して、**[診断ツール]** ウィンドウの **[イベント]** タブに表示されるイベント間を移動します。 あるイベントに戻るまたは進むと、選択したイベントの過去のデバッグが自動的に有効になります。
+スナップショット間を移動して表示するには、**デバッグ** ツールバーの **[前に戻る]** ボタンと **[次へ進む]** ボタンを使用します。 これらのボタンを使用して、 **[診断ツール]** ウィンドウの **[イベント]** タブに表示されるイベント間を移動します。 あるイベントに戻るまたは進むと、選択したイベントの過去のデバッグが自動的に有効になります。
 
 ![Visual Studio の新しい例外ヘルパー ダイアログ](../debugger/media/intellitrace-step-back-icons-description.png  "[前に戻る] ボタンと [次へ進む] ボタン")
 
@@ -262,7 +262,7 @@ Visual Studio には、C++ Core ガイドラインの配信、C++11 および C+
 
 ユニバーサル Windows プラットフォーム (UWP) は Windows 10 用のアプリ プラットフォームです。 API セット、アプリ パッケージ、ストアをそれぞれ 1 つ使用するだけで、すべての Windows 10 デバイス (PC、タブレット、電話、Xbox、HoloLens、Surface Hub など) で利用可能な UWP 用アプリを開発できます。 UWP では、異なる画面サイズやさまざまな相互作用モデル (タッチ、マウスとキーボード、ゲーム コントローラー、ペン) がサポートされます。 UWP アプリの中核となるのは、ユーザーがすべてのデバイスでモバイル エクスペリエンスを手に入れたい、目の前の作業に最も便利または効率的なデバイスを使用したいという考え方です。
 
- ![ユニバーサル Windows プラットフォーム](../cross-platform/media/uwp_coreextensions.png)
+![ユニバーサル Windows プラットフォーム](../cross-platform/media/uwp_coreextensions.png)
 
 希望する開発言語を &mdash;C#、Visual Basic、C++ または JavaScript の中から&mdash;選び、Windows 10 デバイスを対象とするユニバーサル Windows プラットフォーム アプリを作成します。 Visual Studio 2017 には、各言語の UWP アプリ テンプレートが用意されており、すべてのデバイスを対象とした単一のプロジェクトを作成できます。 作業が終わったら、アプリ パッケージを生成し、Visual Studio 内から Microsoft Store に提出できます。これで、すべての Windows 10 デバイスのユーザーにアプリが公開されます。
 
@@ -289,7 +289,7 @@ UWP の詳細については、「[ユニバーサル Windows プラットフォ
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Xamarin 用の Visual Studio ツール
 
-**15.4 の新機能**:Xamarin Live では、開発者は iOS および Android デバイスで直接、アプリを継続的に展開、テストおよびデバッグできます。 Xamarin Live Player (&mdash;App Store または Google Play で利用可能&mdash;) をダウンロードした後、デバイスを Visual Studio とペアリングすることで、モバイル アプリの構築方法を一変させることができます。 この機能は、Visual Studio に含まれるようになりました。**[ツール]** > **[オプション]** > **[Xamarin]** > **[Other] \(その他)** > **[Xamarin Live Player を有効にする]** で有効にすることができます。
+**15.4 の新機能**:Xamarin Live では、開発者は iOS および Android デバイスで直接、アプリを継続的に展開、テストおよびデバッグできます。 Xamarin Live Player (&mdash;App Store または Google Play で利用可能&mdash;) をダウンロードした後、デバイスを Visual Studio とペアリングすることで、モバイル アプリの構築方法を一変させることができます。 この機能は、Visual Studio に含まれるようになりました。 **[ツール]**  >  **[オプション]**  >  **[Xamarin]**  >  **[Other] \(その他)**  >  **[Xamarin Live Player を有効にする]** で有効にすることができます。
 
 ![Xamarin Live Player のペアリング、展開、ライブ エディット モードのアニメーション](media/xamarinliveplayer.gif)
 
@@ -366,8 +366,8 @@ Docker 対応にもなりました。
 
 Visual Studio 2017 は、より優れた開発を可能にする新機能で頻繁に更新されています。 現在、試験的プレビュー状態にある、特に重要な更新のいくつかをご紹介します。
 
-* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**。コードベースとそのコンテキストをチームメイトと共有し、Visual Studio 内で直接、双方向のインスタント コラボレーションができるようにする新しいツールです。 Live Share では自分が共有したプロジェクトをチームメイトがシームレスかつ安全に読み取り、移動、編集、デバッグすることができます。<br><br>詳細については、[Live Share の FAQ](/visualstudio/liveshare/faq) を参照してください。<br><br>
-* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**。AI を使用してコンテキスト対応の優れた入力候補を提示したり、開発者のコードをチームのパターンとスタイルに誘導したり、見つけにくいコードの問題を検出したり、非常に重要な領域のコード レビューに注目したりすることでソフトウェア開発を拡張する新機能です。 <br><br>詳細については、[IntelliCode の FAQ](/visualstudio/intellicode/faq) を参照してください。
+* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)** 。コードベースとそのコンテキストをチームメイトと共有し、Visual Studio 内で直接、双方向のインスタント コラボレーションができるようにする新しいツールです。 Live Share では自分が共有したプロジェクトをチームメイトがシームレスかつ安全に読み取り、移動、編集、デバッグすることができます。<br><br>詳細については、[Live Share の FAQ](/visualstudio/liveshare/faq) を参照してください。<br><br>
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)** 。AI を使用してコンテキスト対応の優れた入力候補を提示したり、開発者のコードをチームのパターンとスタイルに誘導したり、見つけにくいコードの問題を検出したり、非常に重要な領域のコード レビューに注目したりすることでソフトウェア開発を拡張する新機能です。 <br><br>詳細については、[IntelliCode の FAQ](/visualstudio/intellicode/faq) を参照してください。
 
 Visual Studio 2017 のその他の機能について知りたい場合は、 [Visual Studio のロードマップ](/visualstudio/productinfo/vs2018-roadmap)のページを参照してください。
 
@@ -377,11 +377,11 @@ Visual Studio 2017 のその他の機能について知りたい場合は、 [Vi
 
 Visual Studio チームにフィードバックを送ることにどんな意味があるのでしょうか? お客様からのフィードバックは、すべて真剣に考慮することにしています。 フィードバックによって今後の動向が左右されることになります。
 
-Visual Studio を向上させることができるご提案がある場合、または製品のサポート オプションについてさらに知りたい場合は、「[ご意見](talk-to-us.md)」ページを参照してください。
+Visual Studio を向上させることができる提案がある場合、または製品のサポート オプションについてさらに知りたい場合は、[フィードバックの送信](feedback-options.md)に関するページをご覧ください。
 
 ### <a name="report-a-problem"></a>問題を報告する
 
- メッセージは、発生した問題の影響をすべて表せていない場合があります。 ハング、クラッシュ、またはその他のパフォーマンスの問題が発生した場合、**[問題の報告]** ツールを使用すると、再現手順やサポート ファイル (スクリーン ショット、トレース ファイル、ヒープ ダンプ ファイルなど) を簡単に Microsoft と共有することができます。 このツールの使用方法については、「[問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)」のページを参照してください。
+メッセージは、発生した問題の影響をすべて表せていない場合があります。 ハング、クラッシュ、またはその他のパフォーマンスの問題が発生した場合、 **[問題の報告]** ツールを使用すると、再現手順やサポート ファイル (スクリーン ショット、トレース ファイル、ヒープ ダンプ ファイルなど) を簡単に Microsoft と共有することができます。 このツールの使用方法については、「[問題を報告する方法](how-to-report-a-problem-with-visual-studio.md)」のページを参照してください。
 
 ## <a name="see-also"></a>関連項目
 

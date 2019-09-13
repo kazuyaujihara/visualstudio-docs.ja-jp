@@ -3,15 +3,15 @@ title: Visual Studio for Mac をアンインストールする
 description: Visual Studio for Mac と関連ツールをアンインストールする方法を説明します。
 author: asb3993
 ms.author: amburns
-ms.date: 05/06/2018
+ms.date: 08/09/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 65f5dedce42d6f2391c23bc82e37a5228bfe7242
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: bb2da7b181cb8065c310780a27a5f0190971d915
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691901"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108150"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Visual Studio for Mac のアンインストール
 
@@ -57,7 +57,7 @@ Visual Studio for Mac とご利用のコンピューター用のコンポーネ�
     sudo ./uninstall-vsmac.sh
     ```
 
-4. 最後に、アンインストール スクリプトを削除します。
+4. 最後に、アンインストール スクリプトを削除し、ドックから Visual Studio for Mac を削除します (ある場合)。
 
 ### <a name="net-core-script"></a>.NET Core スクリプト
 
@@ -222,6 +222,12 @@ rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
+
+* * * 
+
+
+
+
 
 ## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Visual Studio 2019 for Mac プレビューをアンインストールする
 

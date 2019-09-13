@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5abd287533f2489346b41cdbae5526ed946aa746
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 517437bb1042d052520019c10899173cbc0bf988
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971070"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180252"
 ---
 # <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
 
@@ -33,7 +33,7 @@ ms.locfileid: "62971070"
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ページに移動し、無料試用版をインストールしてください。
+> Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。
 
 ::: moniker-end
 
@@ -58,9 +58,9 @@ ms.locfileid: "62971070"
 
 ::: moniker-end
 
-2. メニュー バーの **[ファイル]** メニューから、**[新規作成]** > **[ファイル]** を選択します。
+2. メニュー バーの **[ファイル]** メニューから、 **[新規作成]**  >  **[ファイル]** を選択します。
 
-3. **[新しいファイル]** ダイアログ ボックスの **[全般]** カテゴリで、**[Visual C# クラス]** を選択し、**[開く]** を選択します。
+3. **[新しいファイル]** ダイアログ ボックスの **[全般]** カテゴリで、 **[Visual C# クラス]** を選択し、 **[開く]** を選択します。
 
    エディターで新しいファイルが開かれ、C# クラスのスケルトンが表示されます。 (コード エディターによって提供される利点の一部を活用するために、完全な Visual Studio プロジェクトを作成する必要はありません。必要なのはコード ファイルだけです)
 
@@ -80,7 +80,7 @@ Visual Studio で提供されている便利な*コード スニペット*を使
 
    `static void Main()` メソッドの署名がファイルに追加されているのがわかります。 [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) メソッドは、C# アプリケーションのエントリ ポイントです。
 
-利用できるコード スニペットは、プログラミング言語によって異なります。 目的の言語で使用可能なコード スニペットを確認するには、**[編集]** > **[IntelliSense]** > **[スニペットの挿入]** の順に選択し、言語のフォルダーを選択します。 C# の場合、リストは次のようになります。
+利用できるコード スニペットは、プログラミング言語によって異なります。 目的の言語で使用可能なコード スニペットを確認するには、 **[編集]**  >  **[IntelliSense]**  >  **[スニペットの挿入]** の順に選択し、言語のフォルダーを選択します。 C# の場合、リストは次のようになります。
 
 ![C# コード スニペットのリスト](../media/tutorial-code-snippet-list.png)
 
@@ -175,7 +175,7 @@ Visual Studio エディターでは、型やメソッドなどの定義の検査
 
    エディターの右上に **[名前の変更]** ダイアログ ボックスがポップアップ表示されます。
 
-1. 目的の名前 **words** を入力します。 クエリ内の `words` への参照も名前が自動的に変更されることに注意してください。 **Enter** キーを押す前に、**[名前の変更]** ポップアップ ボックスで **[コメントを含める]** チェック ボックスを選択します。
+1. 目的の名前 **words** を入力します。 クエリ内の `words` への参照も名前が自動的に変更されることに注意してください。 **Enter** キーを押す前に、 **[名前の変更]** ポップアップ ボックスで **[コメントを含める]** チェック ボックスを選択します。
 
    ![[名前の変更] ダイアログ ボックス](../media/tutorial-rename.png)
 

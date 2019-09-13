@@ -1,6 +1,6 @@
 ---
 title: '方法: プロジェクトを構成してターゲット プラットフォームを設定する'
-ms.date: 11/04/2016
+ms.date: 08/16/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faef9f55a88385953a121574f761193cc8c11ea9
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 5d31d3a4f2e42981df646f9c38e13ee9b5f21122
+ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416824"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69634921"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>方法: プロジェクトを構成してターゲット プラットフォームを設定する
 
@@ -64,9 +64,60 @@ Visual Studio では、64 ビット プラットフォームを含む、さま�
 
 - [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] プロジェクトについては、「[/clr (Common Language Runtime compilation)](/cpp/build/reference/clr-common-language-runtime-compilation)」(/clr (共通言語ランタイムのコンパイル)) を参照してください。
 
+## <a name="manually-editing-the-project-file"></a>プロジェクト ファイルを手動で編集する
+
+カスタムの構成によっては、プロジェクト ファイルを手動で編集しなければならないことがあります。 たとえば、次の例のように、2 つの異なるプラットフォームで異なっている参照など、IDE で指定できない条件があるときです。
+
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>例:x86 アセンブリ、x64 アセンブリ、DLL を参照する
+
+x86 バージョンと x64 バージョンの両方を持つ .NET アセンブリまたは DLL がある場合があります。 これらの参照を使用するようにプロジェクトを設定するには、まず参照を追加し、次にプロジェクト ファイルを開いて編集し、構成とターゲット プラットフォームの両方を参照する条件を含む `ItemGroup` を追加します。  たとえば、参照しているバイナリが ClassLibrary1 のとき、デバッグ構成とリリース構成に異なるパスがあり、さらに x86 バージョンと x64 バージョンがあります。  その場合、次のように、設定の全組み合わせで 4 つの `ItemGroup` 要素を使用します。
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
+```
+
+::: moniker range="vs-2017"
+> [!NOTE]
+> Visual Studio 2017 では、プロジェクト ファイルを編集するには先にプロジェクトをアンロードする必要があります。 プロジェクトをアンロードするには、プロジェクト ノードを右クリックし、 **[プロジェクトのアンロード]** を選択します。 編集が完了したら、変更内容を保存し、プロジェクト ノードを右クリックして **[プロジェクトの再読み込み]** を選択してプロジェクトを再度読み込みます。
+::: moniker-end
+
+プロジェクト ファイルの詳細は、「[MSBuild プロジェクト ファイル スキーマ リファレンス](/visualstudio/msbuild/msbuild-project-file-schema-reference)」を参照してください。
+
 ## <a name="see-also"></a>関連項目
 
 - [ビルド プラットフォームについて](../ide/understanding-build-platforms.md)
 - [/platform (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
 - [64 ビット アプリケーション](/dotnet/framework/64-bit-apps)
 - [Visual Studio IDE の 64 ビット サポート](../ide/visual-studio-ide-64-bit-support.md)
+- [プロジェクト ファイルについて](/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file)

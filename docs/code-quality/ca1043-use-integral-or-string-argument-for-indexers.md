@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ca381d88524535ad042b5bd3efda25f8cc350fa4
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: aeec6e202ccb7f3075b04d29bdef7d171ae545f7
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842121"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547690"
 ---
 # <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043:インデクサーには整数または文字列引数を使用します
 
@@ -36,35 +36,35 @@ ms.locfileid: "65842121"
 
 ## <a name="cause"></a>原因
 
-型には、他にもインデックスの型を使用するインデクサーが含まれています。 <xref:System.Int32?displayProperty=fullName>、 <xref:System.Int64?displayProperty=fullName>、 <xref:System.Object?displayProperty=fullName>、または<xref:System.String?displayProperty=fullName>します。
+型<xref:System.Int32?displayProperty=fullName>には<xref:System.Int64?displayProperty=fullName> <xref:System.String?displayProperty=fullName>、、、、または以外のインデックスの種類を使用するインデクサーが含まれています。 <xref:System.Object?displayProperty=fullName>
 
-既定では、このルールのみが検索に、パブリックおよびプロテクトの種類が、これは[構成可能な](#configurability)します。
+既定では、この規則はパブリックおよび保護された型のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-インデクサー、つまり、インデックス付きプロパティは、インデックスの整数または文字列型を使用する必要があります。 これらの型は、通常データ構造のインデックス作成に使用され、ライブラリのユーザビリティを向上させます。 使用、<xref:System.Object>型がデザイン時に特定の整数または文字列型を指定できない場合に限定する必要があります。 設計では、インデックスの他の種類が必要とする場合は、型は、論理データ ストアを表すかどうかを再確認します。 論理データ ストアを表さない場合は、メソッドを使用します。
+インデクサー (インデックス付きプロパティ) では、インデックスに整数または文字列型を使用する必要があります。 これらの型は、通常、データ構造のインデックスを作成し、ライブラリの使いやすさを向上させるために使用されます。 <xref:System.Object>型の使用は、デザイン時に特定の整数または文字列型を指定できない場合にのみ制限する必要があります。 この設計でインデックスに他の型が必要な場合は、型が論理データストアを表すかどうかを再検討してください。 論理データストアを表していない場合は、メソッドを使用します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するには、整数または文字列型にインデックスを変更またはインデクサーではなく、メソッドを使用します。
+この規則違反を修正するには、インデックスを整数または文字列型に変更するか、インデクサーではなくメソッドを使用します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-非標準のインデクサーの必要性を慎重に検討した後にのみこの規則による警告を抑制します。
+非標準のインデクサーの必要性を慎重に検討した後にのみ、この規則からの警告を非表示にします。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1043.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (デザイン) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
 ## <a name="example"></a>例
 
-次の例では、インデクサーを使用する、<xref:System.Int32>インデックス。
+次の例は、 <xref:System.Int32>インデックスを使用するインデクサーを示しています。
 
 [!code-csharp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CSharp/ca1043-use-integral-or-string-argument-for-indexers_1.cs)]
 [!code-cpp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CPP/ca1043-use-integral-or-string-argument-for-indexers_1.cpp)]
@@ -72,5 +72,5 @@ dotnet_code_quality.ca1043.api_surface = private, internal
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA 1023:インデクサーを多次元することはできません。](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
-- [CA 1024:適切な場所のプロパティを使用します。](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1023インデクサーを多次元にすることはできません](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
+- [CA1024適切な場所にプロパティを使用する](../code-quality/ca1024-use-properties-where-appropriate.md)

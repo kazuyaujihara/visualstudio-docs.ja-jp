@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d08644ede6b9b28496cff585624ea37858afd49
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2a4e04e1afdbecdc9c333ea43a52bff3123d448a
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842295"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547623"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036:比較可能な型でメソッドをオーバーライドします
 
@@ -32,24 +32,24 @@ ms.locfileid: "65842295"
 
 ## <a name="cause"></a>原因
 
-型を実装する、<xref:System.IComparable?displayProperty=fullName>インターフェイスをオーバーライドしない<xref:System.Object.Equals%2A?displayProperty=fullName>または等しいかどうか、非等値、言語固有の演算子が小さいオーバー ロードできません- か、大きい-よりもします。 ルールは、型がインターフェイスの実装のみを継承する場合、違反を報告しません。
+型が<xref:System.IComparable?displayProperty=fullName>インターフェイスを実装していて<xref:System.Object.Equals%2A?displayProperty=fullName> 、がオーバーライドされていないか、または言語固有の演算子の等値、非等値、小なり、またはより大きい値をオーバーロードしていません。 型がインターフェイスの実装のみを継承する場合、規則は違反を報告しません。
 
-既定では、このルールのみが検索に、パブリックおよびプロテクトの種類が、これは[構成可能な](#configurability)します。
+既定では、この規則はパブリックおよび保護された型のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-カスタムの並べ替え順序を定義する型を実装、<xref:System.IComparable>インターフェイス。 <xref:System.IComparable.CompareTo%2A>メソッドは、型の 2 つのインスタンスの正しい並べ替え順序を示す整数値を返します。 このルールは、並べ替え順序を設定する型を識別します。 並べ替え順序を設定することを意味等しいかどうかの通常の意味、非等値、-、およびそれ以降-よりは適用されません。 実装を提供する<xref:System.IComparable>、通常必要がありますもオーバーライド<xref:System.Object.Equals%2A>と一致する値を返すように<xref:System.IComparable.CompareTo%2A>します。 オーバーライドする場合は<xref:System.Object.Equals%2A>コーディングと演算子のオーバー ロードをサポートする言語に合致する演算子も提供する必要があります<xref:System.Object.Equals%2A>します。
+カスタム並べ替え順序を定義する型は、 <xref:System.IComparable>インターフェイスを実装します。 メソッド<xref:System.IComparable.CompareTo%2A>は、型の2つのインスタンスの正しい並べ替え順序を示す整数値を返します。 このルールは、並べ替え順序を設定する型を識別します。 並べ替え順序を設定することは、通常、等値、非等値、小なり値、およびそれ以上が適用されないことを意味します。 の<xref:System.IComparable>実装を提供する場合は、通常、と<xref:System.IComparable.CompareTo%2A>一致<xref:System.Object.Equals%2A>する値を返すようにをオーバーライドする必要もあります。 をオーバーライド<xref:System.Object.Equals%2A>し、演算子のオーバーロードをサポートする言語でコーディングする場合は、と<xref:System.Object.Equals%2A>一致する演算子も指定する必要があります。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、オーバーライド<xref:System.Object.Equals%2A>します。 使用するプログラミング言語では、演算子のオーバー ロードをサポートする場合は、次の演算子を指定します。
+この規則違反を修正するには、 <xref:System.Object.Equals%2A>をオーバーライドします。 プログラミング言語で演算子のオーバーロードがサポートされている場合は、次の演算子を指定します。
 
 - op_Equality
 - op_Inequality
 - op_LessThan
 - op_GreaterThan
 
-C# でこれらの演算子を表すために使用されるトークンは次のとおりです。
+でC#は、これらの演算子を表すために使用されるトークンは次のとおりです。
 
 ```csharp
 ==
@@ -58,27 +58,27 @@ C# でこれらの演算子を表すために使用されるトークンは次�
 >
 ```
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-Ca 1036 演算子と、プログラミング言語がないために、違反が発生する場合が演算子のオーバー ロードをサポートしていません Visual Basic の場合と同様のルールから警告を抑制しても安全です。 演算子の実装は無意味でアプリのコンテキストを判断した場合にも op_Equality 以外の等値演算子を発生させるときにこの規則による警告を抑制する安全です。 、Op_Equality が常にオーバーライドする必要があります、= = をオーバーライドする場合にオペレーター<xref:System.Object.Equals%2A?displayProperty=nameWithType>します。
+CA1036 の Visual Basic 場合と同様に、違反の原因が演算子の不足によるものであり、プログラミング言語で演算子のオーバーロードがサポートされていない場合は、ルールからの警告を抑制するのが安全です。 演算子の実装がアプリのコンテキストで意味を持たないと判断した場合は、op_Equality 以外の等値演算子でこの規則が発生したときに、警告を抑制することも安全です。 ただし、をオーバーライド<xref:System.Object.Equals%2A?displayProperty=nameWithType>する場合は、常に op_Equality と = = 演算子をオーバーライドする必要があります。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1036.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (デザイン) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
 ## <a name="examples"></a>使用例
 
-次のコードには、正しく実装する型が含まれています。<xref:System.IComparable>します。 コードのコメントを関連するさまざまなルールを満たすメソッドを識別する<xref:System.Object.Equals%2A>と<xref:System.IComparable>インターフェイス。
+次のコードには、を正しく実装<xref:System.IComparable>する型が含まれています。 コードコメントは、 <xref:System.Object.Equals%2A> <xref:System.IComparable>およびインターフェイスに関連するさまざまな規則を満たすメソッドを識別します。
 
 [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
 
-次のアプリケーション コードの動作をテストする、<xref:System.IComparable>前に示した実装します。
+次のアプリケーションコードは、前に示し<xref:System.IComparable>た実装の動作をテストします。
 
 [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
 

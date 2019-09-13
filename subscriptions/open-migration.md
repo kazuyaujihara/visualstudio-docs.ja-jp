@@ -1,20 +1,20 @@
 ---
-title: オープン ライセンスの注文管理の開始 | Microsoft Docs
+title: お客様の Visual Studio サブスクリプションを管理するパートナー | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 08/21/2019
 ms.topic: conceptual
-description: オープン ライセンス プログラムを使用したサブスクリプションの注文の管理について説明します。
-ms.openlocfilehash: ecbd5c4b861683742ec8b9e3d9fca571932ae887
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+description: パートナーがお客様の Visual Studio サブスクリプションを管理する方法について説明します。
+ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
+ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605829"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000898"
 ---
-# <a name="open-and-open-license-management-for-new-orders"></a>新しい注文のオープン ライセンス管理の開始
-Visual Studio [サブスクリプション管理ポータル](https://manage.visualstudio.com)でサブスクリプションを管理するには、パートナーとお客様がいくつかの手順に従う必要があります。 次のようなプロセスです。
+# <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>お客様に代わってサブスクリプションを管理するパートナー
+Visual Studio [サブスクリプション管理ポータル](https://manage.visualstudio.com)でサブスクリプションを管理するには、従う手順がいくつかあります。 次のようなプロセスです。
 - パートナーがお客様の代わりに新しい注文を行い、お客様の業務用のメール アドレスを入力します。
 - お客様に [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)での管理者の割り当てと、自分のサブスクリプションへのアクセスを促す通知が届きます。
 - お客様に代わってサブスクリプションを管理するパートナーは、管理ポータルでの登録が必要です。 アクセスするためのさまざまな方法を以下に示します (追加オープンのプロセスと似ています)。
@@ -38,6 +38,7 @@ Visual Studio [サブスクリプション管理ポータル](https://manage.vis
 
 > [!NOTE]
 > パートナーがオープン ライセンスに追加されたことを通知する電子メールがお客様に届きます。 パートナーのアクセス権は削除することができます。
+
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Visual Studio サブスクリプション管理ポータルに直接アクセスしている新しいパートナー
 このシナリオは、既に新しいオープン ライセンスの注文を行っているものの、[VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) には登録せずに [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に直接アクセスしている新しいパートナーに適用されます。  この場合は、以下の手順に従ってください。

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acdb8406d43f90414cf255abae6f1ca5f549e92e
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 92b74bcf587492155445c500252ea10773a5978b
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842479"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547803"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027:列挙型を FlagsAttribute に設定します
 
@@ -32,43 +32,43 @@ ms.locfileid: "65842479"
 
 ## <a name="cause"></a>原因
 
-列挙体の値が 2 の累乗または、列挙で定義されているその他の値の組み合わせは、<xref:System.FlagsAttribute?displayProperty=fullName>属性が存在しません。 偽陽性を減らすためには、このルールは、連続した値を持つ列挙体の違反を報告しません。
+列挙体の値が2の累乗であるか、または列挙体<xref:System.FlagsAttribute?displayProperty=fullName>で定義されている他の値の組み合わせであり、属性が存在しません。 誤検知を減らすために、このルールは連続した値を持つ列挙に対する違反を報告しません。
 
-既定では、このルールだけを確認、パブリック列挙型が、これは[構成可能な](#configurability)します。
+既定では、この規則はパブリック列挙のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-列挙型は、関連する名前付き定数が複数定義された値型です。 適用<xref:System.FlagsAttribute>列挙型の名前付き定数を有意に結合できるときにします。 たとえば、利用できる日付のリソースの追跡するアプリケーションで曜日の列挙体を検討してください。 各リソースの可用性を持つ列挙型を使用してエンコードは<xref:System.FlagsAttribute>現在のところ、日の任意の組み合わせを表すことができます。 属性がない、週の 1 日だけを表すことができます。
+列挙型は、関連する名前付き定数が複数定義された値型です。 名前<xref:System.FlagsAttribute>付き定数を明確に結合できる場合は、列挙体に適用します。 たとえば、アプリケーションの曜日を列挙して、使用可能なリソースを追跡する場合を考えてみます。 各リソースの可用性が、 <xref:System.FlagsAttribute>存在する列挙体を使用してエンコードされている場合は、日付の任意の組み合わせを表すことができます。 属性を指定しない場合は、1週間の曜日のみを表すことができます。
 
-組み合わせ可能な列挙型を格納するフィールドの場合は、個々 の列挙値は、フィールド内のビットのグループとして扱われます。 そのため、このようなフィールドが呼ば*ビット フィールド*します。 ビット フィールドに格納するための列挙値を結合するには、ブール条件演算子を使用します。 特定の列挙値が存在するかどうかを決定するビット フィールドをテストするには、ブール型の論理演算子を使用します。 ビット フィールドを格納および結合された列挙値を正しく取得には、列挙体で定義されている各値は 2 の累乗である必要があります。 そうしないと、ブール型の論理演算子は、フィールドに格納されている個々 の列挙値を抽出できません。
+組み合わせ可能な列挙体を格納するフィールドの場合、個々の列挙値はフィールド内のビットのグループとして扱われます。 そのため、このようなフィールドは、*ビットフィールド*と呼ばれることもあります。 ビットフィールドに格納する列挙値を結合するには、ブール条件演算子を使用します。 ビットフィールドをテストして特定の列挙値が存在するかどうかを判断するには、ブール型の論理演算子を使用します。 ビットフィールドで結合された列挙値を正しく格納および取得するには、列挙体に定義されている各値が2の累乗である必要があります。 そうでない限り、ブール型の論理演算子は、フィールドに格納されている個々の列挙値を抽出できません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、次のように追加します。<xref:System.FlagsAttribute>列挙体にします。
+この規則違反を修正するには、 <xref:System.FlagsAttribute>を列挙体に追加します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-列挙値を結合できるしたくない場合は、この規則による警告を抑制します。
+列挙値を組み合わせ可能にしない場合は、この規則からの警告を非表示にします。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1027.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (デザイン) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
 ## <a name="example"></a>例
 
-次の例では、`DaysEnumNeedsFlags`が列挙体を使用するための要件を満たす<xref:System.FlagsAttribute>ことはありませんが。 `ColorEnumShouldNotHaveFlag`列挙体が 2 の累乗である値はありませんが、正しくないを指定します<xref:System.FlagsAttribute>します。 ルールに違反する[CA2217:FlagsAttribute で列挙をマークしない](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)します。
+次の例では`DaysEnumNeedsFlags` 、は、を使用<xref:System.FlagsAttribute>するための要件を満たしていますが、それを持たない列挙体です。 列挙`ColorEnumShouldNotHaveFlag`体の値が2の累乗ではなく、誤って<xref:System.FlagsAttribute>指定されています。 これは、 [rule CA2217 に違反します。Enum を FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)に設定しません。
 
 [!code-csharp[FxCop.Design.EnumFlags#1](../code-quality/codesnippet/CSharp/ca1027-mark-enums-with-flagsattribute_1.cs)]
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA2217:FlagsAttribute で列挙をマークしないでください。](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA2217FlagsAttribute で列挙をマークしない](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>関連項目
 

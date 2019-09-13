@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8db5921b7f4ce4722389ca10765f079db10bf04a
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924077"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222690"
 ---
 # <a name="code-snippets-schema-reference"></a>コード スニペット スキーマ リファレンス
 
@@ -121,7 +121,7 @@ Code 要素に使用できる属性には次の 3 つがあります。
    |`SQL`|SQL のコード スニペットであることを示します。|
    |`HTML`|HTML のコード スニペットであることを示します。|
 
-- **Kind** - _省略可能_ な属性。コード スニペットをコンパイルするために、スニペットに含まれているコードの種類と、そのコード スニペットを挿入すべき場所を指定します。 値は次のいずれかになります。
+- **Kind** - スニペットに含まれるコードの種類を指定する_省略可能な_属性。 値は次のいずれかになります。
 
    |[値]|説明|
    |-----|-----------|

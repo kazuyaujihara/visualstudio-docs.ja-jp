@@ -4,15 +4,14 @@ description: Visual Studio for Mac の更新およびプレビュー リリー�
 author: conceptdev
 ms.author: crdun
 ms.date: 11/03/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: afb542e60eeae34bbe7d05694b1ffc8330ed2958
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16fea3d68c7d418d7a0a56dbdcd83af107f91b4a
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997939"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107802"
 ---
 # <a name="install-a-preview-release"></a>プレビュー リリースをインストールする
 
@@ -30,7 +29,7 @@ Visual Studio for Mac のプレビュー リリースは、個別のダウンロ
 Visual Studio for Mac のプレビューをインストールするには、次の手順を使用します。
 
 1. **[Visual Studio] > [更新の確認]** に移動します。
-2. [更新チャネル] コンボ ボックスで、**[ベータ]** を選びます。
+2. [更新チャネル] コンボ ボックスで、 **[ベータ]** を選びます。
 3. **[Switch channel]\(チャネルの切り替え\)** ボタンを選んで選択したチャネルに切り替え、新しい更新プログラムのダウンロードを開始します。
 4. **[再起動して更新プログラムをインストールする]** ボタンを選んで、更新プログラムのインストールを始めます。
 

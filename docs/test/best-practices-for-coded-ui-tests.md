@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc2f56df75cd9abadde8474057f762118c6a840a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 896531325b3630b97a5cc076955fae6201defac6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826089"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870203"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>コード化された UI テストのベスト プラクティス
 
@@ -42,11 +42,11 @@ ms.locfileid: "67826089"
 
 - ユーザー インターフェイス (UI) が変更された場合は、テスト メソッドまたはアサーション メソッドを再記録するか、既存のテスト メソッドの、影響を受けるセクションを再記録します。
 
-- テスト対象のアプリケーションのモジュールごとに個別の <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> ファイルを作成します。 詳細については、「[複数の UI マップでの大規模アプリケーションのテスト](../test/testing-a-large-application-with-multiple-ui-maps.md)」をご覧ください。
+- テスト対象のアプリケーションのモジュールごとに、個別の [UIMap](/previous-versions/dd580454(v=vs.140)) ファイルを作成します。 詳細については、「[複数の UI マップでの大規模アプリケーションのテスト](../test/testing-a-large-application-with-multiple-ui-maps.md)」をご覧ください。
 
 - テスト対象のアプリケーションの UI コントロールを作成するときは、わかりやすい名前を使用します。 意味のある名前を使うと、自動生成されたコントロール名がいっそうわかりやすくて使いやすくなります。
 
-- API を使用したコーディングによりアサーションを作成する場合は、*UIMap.cs* ファイル内の <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> クラスの部分でアサーションごとにメソッドを作成します。 アサーションを実行するには、このメソッドをテスト メソッドから呼び出します。
+- API を使用したコーディングによりアサーションを作成する場合は、*UIMap.cs* ファイル内の [UIMap](/previous-versions/dd580454(v=vs.140)) クラスの部分でアサーションごとにメソッドを作成します。 アサーションを実行するには、このメソッドをテスト メソッドから呼び出します。
 
 - API を使用してコーディングを直接行う場合は、可能な限り、*UIMap.Designer.cs* ファイルに生成されたクラスのプロパティとメソッドをコードで使用します。 これらのクラスを使用すると、作業が楽になり、信頼性と生産性が高まります。
 
@@ -87,7 +87,7 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 
 ## <a name="see-also"></a>関連項目
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)
 - [コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md)

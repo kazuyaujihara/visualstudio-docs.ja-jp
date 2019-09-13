@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: ac150e20b505a5ef4446e77761790a6111fb6c10
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976213"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293510"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
 ユーザーまたはユーザーの組織でファイアウォールやプロキシ サーバーなどのセキュリティ対策を取っている場合は、Visual Studio および Azure Services をインストールして使用するときに最適なエクスペリエンスを得るために、"許可リスト" への追加をお勧めするドメイン URL および開くことをお勧めするポートおよびプロトコルがあります。
 
-* **[Visual Studio のインストール](#install-visual-studio)**:これらの表には、目的とするすべてのコンポーネントおよびワークロードにアクセスできるようにするために、許可リストに追加すべきドメイン URL を示します。
+* **[Visual Studio のインストール](#install-visual-studio)** :これらの表には、目的とするすべてのコンポーネントおよびワークロードにアクセスできるようにするために、許可リストに追加すべきドメイン URL を示します。
 
-* **[Visual Studio および Azure Services の使用](#use-visual-studio-and-azure-services)**:この表には、目的とするすべての機能とサービスにアクセスできるようにするために、許可リストに追加すべきドメイン URL と、開くべきポートおよびプロトコルを示します。
+* **[Visual Studio および Azure Services の使用](#use-visual-studio-and-azure-services)** :この表には、目的とするすべての機能とサービスにアクセスできるようにするために、許可リストに追加すべきドメイン URL と、開くべきポートおよびプロトコルを示します。
 
 > [!NOTE]
 > この記事は Windows 上の Visual Studio 向けに書かれていますが、一部の情報はファイアウォールやプロキシ サーバーの背後に [Visual Studio for Mac をインストール](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)する場合にも適用されます。
@@ -92,7 +92,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | AI プロジェクト <br>統合 | az861674.vo.msecnd.net | | 443<br> | 登録されている Application Insights アカウントに使用状況データを送信する新しいプロジェクトを構成するために使用されます。 |
 | コード レンズ | codelensprodscus1su0.app.<br>codelens.visualstudio.com | | 443 | ファイルの最終更新日時、変更のタイムライン、変更が関連付けられている作業項目、作成者など、エディター内に情報を提供するために使用されます。 |
 | 実験用 <br>機能の有効化 | visualstudio-devdiv-c2s.msedge.net | | 80 | 実験用の新しい機能や機能の変更をアクティブ化するために使用されます。 |
-| 識別情報 “バッジ” <br>(ユーザー名とアバター)<br>と、呼び出し <br>ローミング設定 | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net | | 443 | IDE でユーザーの名前とアバターを表示するために使用されます。 <br><br> あるコンピューターから別のコンピューターに設定の変更が確実にローミングするように使用されます。 |
+| 識別情報 “バッジ” <br>(ユーザー名とアバター)<br>and <br>ローミング設定 | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net | | 443 | IDE でユーザーの名前とアバターを表示するために使用されます。 <br><br> あるコンピューターから別のコンピューターに設定の変更が確実にローミングするように使用されます。 |
 | リモート設定 | az700632.vo.msecnd.net | | 443 | Visual Studio で問題を引き起こすことがわかっている拡張機能をオフにするために使用されます。 |
 | Windows ツール | developer.microsoft.com <br><br>dev.windows.com  <br><br>appdev.microsoft.com | https | 443 | Windows アプリ ストアのシナリオで使用されます。 |
 | JSON スキーマ <br>探索 <br><br>JSON スキーマ <br>定義<br><br>JSON スキーマ <br>サポート <br>Azure リソース | json.schemastore.org <br>schemastoreorg.azurewebsites.net<br><br>json-schema.org<br><br>schema.management.azure.com | http<br>https<br><br>http<br><br>https | 80<br>443 <br><br> 443<br><br>443 | JSON ドキュメントの編集時にユーザーによって使用される可能性のある JSON スキーマを検出およびダウンロードするために使用されます。 <br><br>Json 用のメタ検証スキーマを取得するために使用されます。<br><br>Azure Resource Manager 展開テンプレート用の現在のスキーマを取得するために使用されます。 |
@@ -113,16 +113,16 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | 更新された Azure リソース <br>作成エンドポイント情報 | \*.blob.core.windows.net | https | 443 | 特定の Azure Services 用の Azure Resources の作成に使用するエンドポイントを更新するために使用されます。 無効である場合は、最後にダウンロードまたは組み込まれたエンドポイントの場所が代わりに使用されます。 |
 | Azure Websites のリモート デバッグ <br>および <br>リモート プロファイル | &#42;.cloudapp.net <br> &#42;.azurewebsites.net | | 4022 | リモート デバッガーを Azure Websites にアタッチするために使用されます。 無効である場合、Azure Websites へのリモート デバッガーのアタッチは機能しません。 |
 | Active Directory <br>Graph | graph.windows.net | https | 443 | 新しい Azure Active Directory アプリケーションをプロビジョニングするために使用されます。 Office 365 MSGraph と接続されたサービス プロバイダーによっても使用されます。 |
-| Azure Functions  <br>CLI 更新プログラムの <br>チェック | functionscdn.azureedge.net | https | 443 | Azure Functions CLI の更新されたバージョンを確認するために使用されます。 無効である場合、CLI のキャッシュされたコピー (または、Azure Functions のコンポーネントによって実行されるコピー) が代わりに使用されます。 |
+| Azure Functions <br>CLI 更新プログラムの <br>チェック | functionscdn.azureedge.net | https | 443 | Azure Functions CLI の更新されたバージョンを確認するために使用されます。 無効である場合、CLI のキャッシュされたコピー (または、Azure Functions のコンポーネントによって実行されるコピー) が代わりに使用されます。 |
 | Cordova | npmjs.org<br>gradle.org | http/s | 80/443 | ビルド時の Gradle のダウンロードには HTTP が使用され、プロジェクトに Cordova プラグインを含めるには HTTPS が使用されます。 |
-| Cloud Explorer | 1. &#60;クラスター エンドポイント&#62; <br>Service Fabric <br>2. &#60;管理エンドポイント&#62;<br>汎用的な Cloud Exp <br>3. &#60;graph エンドポイント&#62;<br>汎用的な Cloud Exp<br>4. &#60;ストレージ アカウント エンドポイント&#62;<br>記憶域ノード <br>5. &#60;Azure Portal の URL&#62;<br>汎用的な Cloud Exp <br>6. &#60;キー コンテナー エンドポイント&#62; <br>Azure Resource Manager VM ノード<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric のリモート デバッグと ETW トレース | <br>1. https<br>2. https<br>3. https<br>4. https<br>5. https<br>6. https<br>7: tcp | 1. 19080<br>2. 443 <br>3. 443 <br>4. 443 <br>5. 443 <br>6. 443 <br>7. 動的 | 1.例: test12.eastus.cloudapp.com<br>2.サブスクリプションを取得し、Azure リソースを取得/管理します<br>3.Azure Stack サブスクリプションを取得します。<br>4.Storage リソースを管理します (例: mystorageaccount.blob.core.windows.net)<br>5.[ポータルで開く] コンテキスト メニュー オプション (Azure Portal でリソースを開く)<br>6.VM デバッグ用にキー コンテナーを作成して使用します (例: myvault.vault.azure.net) <br><br>7.クラスターおよび使用可能なポート内のノード数に基づいて、ポートのブロックを動的に割り当てます。 <br><br>最低 10 個のポートでノード数の取得を 3 回試みます。<br><br>ストリーミング トレースの場合、810 からポート ブロックの取得が試みられます。 そのポート ブロックのいずれかが既に使用されている場合は、次のブロックを取得する試みが行われるという具合に進められます  (ロード バランサーが空の場合、ほとんどは 810 からのポートが使用されます)。 <br><br>デバッグの場合と同様に、ポート ブロックの 4 つのセットが予約されます。 <br>- connectorPort:30398、 <br>- forwarderPort:31398、 <br>- forwarderPortx86:31399、<br>- fileUploadPort:32398<br> |
+| Cloud Explorer | 1. &#60;クラスター エンドポイント&#62; <br>Service Fabric <br>2. &#60;管理エンドポイント&#62;<br>汎用的な Cloud Exp <br>3. &#60;graph エンドポイント&#62;<br>汎用的な Cloud Exp<br>4. &#60;ストレージ アカウント エンドポイント&#62;<br>記憶域ノード <br>5. &#60;Azure Portal の URL&#62;<br>汎用的な Cloud Exp <br>6. &#60;キー コンテナー エンドポイント&#62; <br>Azure Resource Manager VM ノード<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric のリモート デバッグと ETW トレース | <br>1. https<br>2. https<br>3. https<br>4. https<br>5. https<br>6. https<br>7: tcp | 1. 19080<br>2. 443 <br>3. 443 <br>4. 443 <br>5. 443 <br>6. 443 <br>7. 動的 | 1.例: test12.eastus.cloudapp.com<br>2.サブスクリプションを取得し、Azure リソースを取得/管理します<br>3.Azure Stack サブスクリプションを取得します。<br>4.Storage リソースを管理します (例: mystorageaccount.blob.core.windows.net)<br>5.[ポータルで開く] コンテキスト メニュー オプション (Azure Portal でリソースを開く)<br>6.VM デバッグ用にキー コンテナーを作成して使用します (例: myvault.vault.azure.net) <br><br>7.クラスターおよび使用可能なポート内のノード数に基づいて、ポートのブロックを動的に割り当てます。 <br><br>最低 10 個のポートでノード数の取得を 3 回試みます。<br><br>ストリーミング トレースの場合、810 からポート ブロックの取得が試みられます。 そのポート ブロックのいずれかが既に使用されている場合は、次のブロックを取得する試みが行われるという具合に進められます (ロード バランサーが空の場合、ほとんどは 810 からのポートが使用されます)。 <br><br>デバッグの場合と同様に、ポート ブロックの 4 つのセットが予約されます。 <br>- connectorPort:30398、 <br>- forwarderPort:31398、 <br>- forwarderPortx86:31399、<br>- fileUploadPort:32398<br> |
 | Cloud Services | 1.RDP<br><br>2. core.windows.net <br><br>3.  management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;ユーザーのクラウド サービス&#62;.cloudapp.net <br> &#60;ユーザーの VM&#62;.&#60;リージョン&#62;.azure.com | 1. rdp <br><br> 2. https <br><br> 3. https <br><br> 4. https <br><br> 5. https <br><br>6. tcp | 1. 3389 <br><br> 2. 443 <br><br> 3. 443 <br><br>4. 443 <br><br>5. 443 <br><br> 6. a) 30398 <br> 6. b) 30400 <br> 6. c) 31398 <br> 6. d) 31400 <br> 6. e) 32398 <br> 6. f) 32400 | 1.リモート デスクトップと Cloud Services VM <br><br> 2.プライベート診断構成のストレージ アカウント コンポーネント <br><br> 3.Azure ポータル <br><br> 4.サーバー エクスプローラー - Azure Storage  &#42; は顧客によって名前が付けられるストレージ アカウントです  <br><br> 5.ポータルを開くリンク&#47;サブスクリプション証明書のダウンロード&#47; 設定ファイルの発行 <br><br>6. a) クラウド サービスおよび VM のリモート デバッグ用のコネクタ ローカル ポート<br> 6. b) クラウド サービスおよび VM のリモート デバッグ用のコネクタ パブリック ポート <br> 6. c) クラウド サービスおよび VM のリモート デバッグ用のフォワーダー ローカル ポート <br> 6. d) クラウド サービスおよび VM のリモート デバッグ用のフォワーダー パブリック ポート  <br> 6. e) クラウド サービスおよび VM のリモート デバッグ用のファイル アップローダー ローカル ポート <br> 6. f) クラウド サービスおよび VM のリモート デバッグ用のファイル アップローダー パブリック ポート |
 | Service Fabric | 1. <br>ocs.Microsoft.com<br>aka.ms <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | https | 443 | 1.ドキュメント <br><br> 2.クラスター機能の作成 <br><br>3.&#42; は Azure Key Vault 名です (例:- test11220180112110108.vault.azure.net)  <br><br>  4.&#42; は動的です (例: vsspsextprodch1su1.vsspsext.visualstudio.com) |
-| スナップショット <br>デバッガー | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6.Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (Visual Studio バージョン依存) | 1..json ファイルに対してクエリを実行して、アプリ サービス SKU サイズを取得します <br>2.さまざまな Azure RM 呼び出し <br>3.サイト ウォーム アップ呼び出し  <br>4.顧客の対象 App Service Kudu エンドポイント <br>5.nuget.org で発行されたサイト拡張機能バージョンに対してクエリを実行します <br>6.リモート デバッグ チャンネル |
+| スナップショット <br>デバッガー | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon (.exe) | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6.Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (Visual Studio バージョン依存) | 1..json ファイルに対してクエリを実行して、アプリ サービス SKU サイズを取得します <br>2.さまざまな Azure RM 呼び出し <br>3.サイト ウォーム アップ呼び出し  <br>4.顧客の対象 App Service Kudu エンドポイント <br>5.nuget.org で発行されたサイト拡張機能バージョンに対してクエリを実行します <br>6.リモート デバッグ チャンネル |
 | Azure Stream Analytics <br><br>HDInsight | Management.azure.com | https | 443 | ASA ジョブの表示、送信、実行、管理で使用されます <br><br> HDI クラスターを参照し、HDI ジョブを送信、診断、およびデバッグするために使用されます |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | ジョブのコンパイル、送信、表示、診断、およびデバッグのために使用されます。ADLS ファイルを参照するために使用されます。ファイルをアップロードおよびダウンロードするために使用されます。 |
 | パッケージ サービス | [アカウント].visualstudio.com <br/> [アカウント].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 特定のビルド タスク (NuGet Tool インストーラー、Node Tool インストーラーなど) にのみ、またはフィードで公共のアップストリームを使用する場合にのみ、\*.npmjs.org、\*.nuget.org、\*.nodejs.org が必要です。 パッケージ サービスの中心的機能には、他の 3 つのドメインが必要です。 |
-| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | Azure DevOps Services と接続するために使用 |
+| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | | Azure DevOps Services と接続するために使用 |
 | | | | | |
 
 ## <a name="troubleshoot-network-related-errors"></a>ネットワーク関連のエラーをトラブルシューティングする

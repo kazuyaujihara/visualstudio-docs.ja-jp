@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6d9fd531016a4ac5784f927641a181ac05e4c9ae
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: de92c3f1f0d0e29d1ba2dfaf5d536a42e636be2c
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661865"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383748"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio で npm パッケージを管理する
 
@@ -31,7 +31,10 @@ Visual Studio では、npm を操作したり、UI から、または直接 npm 
 これらの機能は連動し、プロジェクト システムやプロジェクトの *package.json* ファイルによって同期します。
 
 > [!Important]
-> NPM では、プロジェクト ルートに *node_modules* フォルダーと *package.json* が必要です。 アプリのフォルダー構造が異なる場合は、[プロジェクトをフォルダーとして開く](npm-package-management.md)か、Visual Studio を使用して npm パッケージを管理する場合はフォルダー構造を更新することができます。
+> NPM では、プロジェクト ルートに *node_modules* フォルダーと *package.json* が必要です。 お使いのアプリのフォルダー構造が異なる場合、Visual Studio を使用して npm パッケージを管理するには、フォルダー構造を更新する必要があります。
+
+> [!NOTE]
+> 既存の NPM プロジェクトの場合は、**既存の Node.js コードから**というソリューション テンプレートを使用します。
 
 ## <a name="npmInstallWindow"></a> ソリューション エクスプローラーからパッケージをインストールする
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4157316756e4b180f6fb49082bf60927ddb43707
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 38d92194a5aa2b46a0cb65a1525bc01d9de67b86
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714793"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547359"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058:型は、一定の基本型を拡張することはできません
 
@@ -32,7 +32,7 @@ ms.locfileid: "66714793"
 
 ## <a name="cause"></a>原因
 
-型は、次の基本型の 1 つを拡張します。
+型は、次の基本型の1つを拡張します。
 
 - <xref:System.ApplicationException?displayProperty=fullName>
 - <xref:System.Xml.XmlDocument?displayProperty=fullName>
@@ -43,19 +43,19 @@ ms.locfileid: "66714793"
 - <xref:System.Collections.SortedList?displayProperty=fullName>
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
-既定では、このルールのみが検索に、外部から参照の種類が、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できる型のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-例外の派生元<xref:System.Exception?displayProperty=fullName>またはそのサブクラス内の 1 つ、<xref:System>名前空間。
+例外は、 <xref:System>名前<xref:System.Exception?displayProperty=fullName>空間のまたはそのサブクラスのいずれかから派生する必要があります。
 
-サブクラスを作成しない<xref:System.Xml.XmlDocument>かどうかは、基になるオブジェクト モデルまたはデータ ソースの XML ビューを作成します。
+基になるオブジェクトモデルまた<xref:System.Xml.XmlDocument>はデータソースの XML ビューを作成する場合は、のサブクラスを作成しないでください。
 
-### <a name="non-generic-collections"></a>非ジェネリック コレクション
+### <a name="non-generic-collections"></a>非ジェネリックコレクション
 
-使用して、または可能であれば、ジェネリック コレクションを拡張します。 以前に発送した場合を除き、コードで、非ジェネリック コレクションは拡張されません。
+可能な限り、ジェネリックコレクションを使用するか、拡張します。 以前に配布していない限り、コード内の非ジェネリックコレクションは拡張しないでください。
 
-**不適切な使用方法の例**
+**不適切な使用例**
 
 ```csharp
 public class MyCollection : CollectionBase
@@ -67,7 +67,7 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
 }
 ```
 
-**正しい使用法の例**
+**正しい使用例**
 
 ```csharp
 public class MyCollection : Collection<T>
@@ -81,18 +81,18 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するのには、別の基本型またはジェネリック コレクションから型を派生します。
+この規則違反を修正するには、別の基本データ型またはジェネリックコレクションから型を派生させます。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-詳細についてはこの規則違反の警告を抑制しないでください<xref:System.ApplicationException>します。 この規則違反の警告を抑制するには、安全では<xref:System.Xml.XmlDocument>します。 コードが以前にリリースされた場合は、非ジェネリック コレクションについて警告を抑制しても安全です。
+の違反について<xref:System.ApplicationException>は、この規則による警告を抑制しないでください。 の違反<xref:System.Xml.XmlDocument>については、この規則による警告を抑制することが安全です。 以前にコードがリリースされた場合、非ジェネリックコレクションに関する警告を抑制するのは安全です。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1058.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (デザイン) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。

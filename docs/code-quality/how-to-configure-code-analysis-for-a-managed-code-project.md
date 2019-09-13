@@ -13,23 +13,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f3c8fbde60e247ca9ec5fe82c9a16f28aded2abc
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a1b09b77eb051d32a3aabb929e9058786215cfb4
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715062"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551053"
 ---
-# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>方法: マネージ コード用の静的コード分析を構成します。
+# <a name="how-to-configure-legacy-analysis-for-managed-code"></a>方法: マネージコードのレガシ分析を構成する
 
-Visual Studio では、コード分析の一覧から選択できる[ルール セット](../code-quality/rule-set-reference.md)マネージ コード プロジェクトに適用します。 既定で、 **Microsoft 最小推奨規則**規則セットを選択するが必要な場合は、設定、別の規則を適用できます。 規則セットは、ソリューション内の 1 つまたは複数のプロジェクトに適用できます。
+Visual Studio では、マネージコードプロジェクトに適用するコード分析[規則セット](../code-quality/rule-set-reference.md)の一覧から選択できます。 既定で、 **Microsoft 最小推奨規則**規則セットを選択するが必要な場合は、設定、別の規則を適用できます。 規則セットは、ソリューション内の 1 つまたは複数のプロジェクトに適用できます。
 
-ASP.NET web アプリケーションのルール セットを構成する方法については、次を参照してください。[方法。ASP.NET web アプリケーションのコード分析を構成する](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)します。
+ASP.NET web アプリケーションのルールセットを構成する方法の詳細について[は、「方法:ASP.NET web アプリケーション](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)のコード分析を構成します。
 
 > [!NOTE]
-> 静的コード分析をしないと、この記事が適用されます[Roslyn アナライザー](use-roslyn-analyzers.md)ビルドの後にコード分析の実行がありません。
+> この記事は、ビルド後にコード分析を実行しない、 [.NET Compiler Platform ベースのコードアナライザー](use-roslyn-analyzers.md)ではなく、レガシ分析に適用されます。
 
-## <a name="configure-a-rule-set-for-a-net-framework-project"></a>.NET Framework プロジェクトに対して規則セットを構成します。
+## <a name="configure-a-rule-set-for-a-net-framework-project"></a>.NET Framework プロジェクトの規則セットを構成する
 
 1. 開く、**コード分析**プロジェクトのプロパティ ページのタブ。 これは、次の方法のいずれかで行います。
 
@@ -77,4 +77,4 @@ ASP.NET web アプリケーションのルール セットを構成する方法�
 ## <a name="see-also"></a>関連項目
 
 - [コード分析規則セットの参照](../code-quality/rule-set-reference.md)
-- [方法: ASP.NET web アプリケーションのコード分析を構成します。](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
+- [方法: ASP.NET web アプリケーションのコード分析を構成する](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

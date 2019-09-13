@@ -3,39 +3,39 @@ title: アナライザーの規則セット
 ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- analyzers, rule sets
+- analyzer packages, rule sets
 - rule sets for analyzers
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 696e6bd46c17054494be2ea0e0f2a1af4fd703d7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675483"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585137"
 ---
-# <a name="rule-sets-for-roslyn-analyzers"></a>Roslyn アナライザーの規則セットします。
+# <a name="rule-sets-for-analyzer-packages"></a>アナライザー パッケージの規則セット
 
-定義済みの規則セットは、いくつかの NuGet アナライザー パッケージに含まれています。 含まれている規則セットなど、 [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (バージョン 2.6.2 以降) NuGet アナライザー パッケージを有効または名前付け、セキュリティなどのカテゴリに基づくルールを無効にするか、パフォーマンス。 規則セットを使用して簡単にすばやく規則の特定のカテゴリに関連する規則違反のみを参照してください。
+定義済みの規則セットは、一部の NuGet アナライザーパッケージに含まれています。 たとえば、 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer パッケージに含まれている規則セット (バージョン2.6.2 以降) は、セキュリティ、名前付け、パフォーマンスなど、カテゴリに基づいて規則を有効または無効にします。 規則セットを使用すると、特定のカテゴリの規則に関連する規則違反だけを簡単に確認できます。
 
-Roslyn アナライザーを従来の"FxCop"静的コード分析から移行する場合は、引き続き、以前に使用した同じ規則の構成を使用してこれらのルール セットが有効にします。
+レガシの "FxCop" 分析から .NET Compiler Platform ベースのコード分析に移行している場合、これらの規則セットを使用すると、[以前に使用したもの](rule-set-reference.md)と同様の規則の構成を引き続き使用できます。
 
-## <a name="use-analyzer-rule-sets"></a>アナライザーの規則セットを使用して、
+## <a name="use-analyzer-package-rule-sets"></a>アナライザーパッケージの規則セットを使用する
 
-したら[NuGet アナライザー パッケージをインストール](install-roslyn-analyzers.md)、定義済みの規則で設定を探してその*ruleset*ディレクトリ。 たとえば、参照した場合、`Microsoft.CodeAnalysis.FxCopAnalyzers`アナライザー パッケージを見つけることができます、 *ruleset*ディレクトリに *%userprofile%\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<バージョン\>\rulesets*します。 そこから、ruleset の 1 つ以上のコピーし、Visual Studio プロジェクトを含むディレクトリ、またはに直接貼り付ける**ソリューション エクスプ ローラー**します。
+[NuGet analyzer パッケージをインストール](install-roslyn-analyzers.md)したら、そのルールセットディレクトリで定義済みのルールセットを見つけます。 `Microsoft.CodeAnalysis.FxCopAnalyzers`たとえば、アナライザーパッケージを参照した場合は、% USERPROFILE% *\\\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\<バージョンでそのルールセットディレクトリを見つけることができます。\\>ルールセット*。 そこから、1つまたは複数のルールセットをコピーし、Visual Studio プロジェクトが格納されているディレクトリまたは**ソリューションエクスプローラー**に直接貼り付けます。
 
-できます[定義済みの規則セットをカスタマイズする](how-to-create-a-custom-rule-set.md)をカスタマイズします。 違反がエラーまたは警告として表示されるように、1 つまたは複数のルールの重大度を変更するなど、**エラー一覧**します。
+また、[定義済みの規則セット](how-to-create-a-custom-rule-set.md)を自分の好みに合わせてカスタマイズすることもできます。 たとえば、1つまたは複数のルールの重要度を変更して、**エラー一覧**に違反がエラーまたは警告として表示されるようにすることができます。
 
-## <a name="set-the-active-rule-set"></a>アクティブなルール セットを設定します。
+## <a name="set-the-active-rule-set"></a>アクティブな規則セットを設定する
 
-アクティブなルール セットの設定のプロセスは、.NET CORE/.NET Standard プロジェクトまたは .NET Framework プロジェクトがあるかどうかによって若干異なります。
+アクティブな規則セットを設定するプロセスは、.NET Core/.NET Standard プロジェクトと .NET Framework プロジェクトのどちらを使用しているかによって若干異なります。
 
 ### <a name="net-core"></a>.NET Core
 
-ルールの分析のために .NET Core または .NET Standard プロジェクトを設定するアクティブなルールを設定するために、手動で追加、 **CodeAnalysisRuleSet**プロパティをプロジェクト ファイル。 たとえば、次のコード スニペットのセット`HelloWorld.ruleset`アクティブなルールとして設定します。
+.NET Core または .NET Standard プロジェクトで、分析用のアクティブな規則セットを規則に設定するには、 **CodeAnalysisRuleSet**プロパティをプロジェクトファイルに手動で追加します。 たとえば、次のコードスニペットは、 `HelloWorld.ruleset`アクティブな規則セットとしてを設定します。
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -46,19 +46,19 @@ Roslyn アナライザーを従来の"FxCop"静的コード分析から移行す
 
 ### <a name="net-framework"></a>.NET Framework
 
-プロジェクトを右クリックしてルールの分析のために .NET Framework プロジェクトを設定するアクティブなルールを設定するために、**ソリューション エクスプ ローラー**選択**プロパティ**します。 プロジェクトのプロパティ ページで、選択、**コード分析**タブ。**この規則セットを実行**を選択します**参照**、プロジェクト ディレクトリにコピーした目的の規則セットを選択します。 選択したルール セットで有効になっているこれらの規則に規則違反のみ表示されます。
+.NET Framework のプロジェクトで、分析用のアクティブな規則セットを規則に設定するには**ソリューションエクスプローラー**でプロジェクトを右クリックし、 **[プロパティ]** をクリックします。 プロジェクトのプロパティページで、 **[コード分析]** タブを選択します。 **[この規則セットを実行]** で、 **[参照]** を選択し、プロジェクトディレクトリにコピーした規則セットを選択します。 これで、選択した規則セットで有効になっている規則に対する規則違反のみが表示されるようになりました。
 
-## <a name="available-rule-sets"></a>使用可能なルール セット
+## <a name="available-rule-sets"></a>使用可能な規則セット
 
-定義済みアナライザーの規則セットは、パッケージ内のすべてのルールに影響する次の 3 つのルール セットを含める&mdash;すべてできるようにする 1 つをすべてを無効にする、各ルールの既定の重大度と有効化の設定を重視します。
+定義済みアナライザーの規則セットには、パッケージ&mdash;内のすべての規則に影響する3つの規則セットが含まれています。これにより、すべてを無効にして、各規則の既定の重要度と有効化の設定を受け入れます。
 
-- AllRulesEnabled.ruleset
-- AllRulesDisabled.ruleset
-- AllRulesDefault.ruleset
+- All規則が有効になりました。ルールセット
+- All規則が無効になりました。ルールセット
+- Allルールの既定値。ルールセット
 
-また、特定のパフォーマンスやセキュリティなど、パッケージ内のルールのカテゴリごとに 2 つの規則セットが使用されます。 1 つの規則セットは、カテゴリのすべての規則をでき、1 つの規則セットは、カテゴリ内の各ルールの既定の重大度と有効化の設定を優先します。
+また、パフォーマンスやセキュリティなど、パッケージ内のルールのカテゴリごとに2つのルールセットがあります。 1つの規則セットによってカテゴリのすべての規則が有効になり、1つの規則セットによって、カテゴリ内の各規則の既定の重大度および有効化の設定が優先されます。
 
-[Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet アナライザー パッケージに一致する、規則セットを従来の"FxCop"静的コード分析に使用できる、次のカテゴリの規則セットが含まれています。
+[FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer パッケージには、次のカテゴリのルールセットが含まれています。
 
 - デザイン
 - ドキュメント
@@ -73,6 +73,6 @@ Roslyn アナライザーを従来の"FxCop"静的コード分析から移行す
 
 - [アナライザーに関する FAQ](analyzers-faq.md)
 - [.NET Compiler Platform アナライザーの概要](roslyn-analyzers-overview.md)
-- [アナライザーをインストールします。](install-roslyn-analyzers.md)
-- [アナライザーを使用して、](use-roslyn-analyzers.md)
-- [コード分析規則のグループに規則を使用を設定します。](using-rule-sets-to-group-code-analysis-rules.md)
+- [アナライザーのインストール](install-roslyn-analyzers.md)
+- [アナライザーを使用する](use-roslyn-analyzers.md)
+- [規則セットを使用したコード分析規則のグループ化](using-rule-sets-to-group-code-analysis-rules.md)

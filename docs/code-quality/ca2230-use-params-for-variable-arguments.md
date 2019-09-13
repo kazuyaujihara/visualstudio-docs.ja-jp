@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3318a9f5bd65c6b9514519936cc52e037e0c215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 505aa8cdc1371a3bc288772d77b49eb7a50e9830
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541784"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920155"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230:可変引数に対して param を使用します
 
@@ -27,27 +27,27 @@ ms.locfileid: "62541784"
 |-|-|
 |TypeName|UseParamsForVariableArguments|
 |CheckId|CA2230|
-|カテゴリ|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因
- パブリックまたはプロテクト型に使用するパブリックまたはプロテクト メソッドが含まれています、`VarArgs`呼び出し規約。
+パブリックまたはプロテクト型に、 `VarArgs`呼び出し規約を使用するパブリックメソッドまたはプロテクトメソッドが含まれています。
 
 ## <a name="rule-description"></a>規則の説明
- `VarArgs`呼び出し規約は可変個のパラメーターを受け取る特定のメソッド定義で使用します。 メソッドを使用して、`VarArgs`共通言語仕様 (CLS) 準拠でない呼び出し規約、およびプログラミング言語でアクセスできない可能性があります。
+呼び出し`VarArgs`規約は、可変個のパラメーターを受け取る特定のメソッド定義で使用されます。 `VarArgs`呼び出し規約を使用するメソッドは、共通言語仕様 (CLS) に準拠していないため、プログラミング言語間でアクセスできない可能性があります。
 
- C# で、`VarArgs`呼び出し規約は、メソッドのパラメーター リストが終わるときに使用、`__arglist`キーワード。 Visual Basic がサポートしていません、`VarArgs`呼び出し規約、および Visual C の使用が省略記号ボタンを使用するアンマネージ コードでのみ使用`...`表記します。
+でC#は、 `VarArgs`メソッドのパラメーター `__arglist`リストがキーワードで終了するときに、呼び出し規約が使用されます。 Visual Basic は`VarArgs`呼び出し規約をサポートしていませC++ん。ビジュアルでは、楕円`...`表記法を使用するアンマネージコードでのみ使用できます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
- この規則違反を修正する (C#) を使用、 [params](/dotnet/csharp/language-reference/keywords/params)キーワードの代わりに`__arglist`します。
+でC#のこの規則違反を修正するには、`__arglist` の代わりに [params](/dotnet/csharp/language-reference/keywords/params) キーワードを使用します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
- この規則による警告は抑制しないでください。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
+この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
- 次の例では、ルールに違反している使用し、規則に適合するいずれかを使用する、2 つの方法を示します。
+次の例は、2つのメソッドを示しています。1つは規則に違反し、もう1つは規則を満たしています。
 
- [!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
+[!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
 
 ## <a name="see-also"></a>関連項目
 

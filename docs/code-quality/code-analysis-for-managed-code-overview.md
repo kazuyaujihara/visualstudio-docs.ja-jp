@@ -10,17 +10,17 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3231efbac4f4c101632e281fd54718e688bb885
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: a44465b5f3daf89e915a5f6f5e7abe6c856598e5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195138"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546926"
 ---
-# <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Visual Studio でマネージ コードに対するコード分析の概要
+# <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Visual Studio でのマネージコードのコード分析の概要
 
-Visual Studio は 2 つの方法でマネージ コードのコード分析を実行することができます: で[バイナリ アナライザー](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)、マネージ アセンブリの詳細の最新の FxCop 静的分析とも呼ばれる、 [Roslyn アナライザー](../code-quality/roslyn-analyzers-overview.md)します。 入力すると、ライブ コードを分析する Roslyn アナライザーは、のみ、コードを分析し、ビルド後 FxCop 静的分析を置き換えます。  
+Visual Studio では、マネージコードのコード分析を2とおりの方法で実行できます。[従来の分析](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)では、マネージアセンブリの FxCop 静的分析とも呼ばれ、最新の .NET Compiler Platform ベースの[コードアナライザー](../code-quality/roslyn-analyzers-overview.md)を使用します。 .NET Compiler Platform ベースのコードアナライザー。入力時にコードを分析します。従来の FxCop 静的コード分析は、コンパイルされたコードのみを分析します。
 
 ## <a name="see-also"></a>関連項目
 
-- [Roslyn アナライザーの概要](../code-quality/roslyn-analyzers-overview.md)
+- [.NET Compiler Platform ベースのアナライザーの概要](../code-quality/roslyn-analyzers-overview.md)

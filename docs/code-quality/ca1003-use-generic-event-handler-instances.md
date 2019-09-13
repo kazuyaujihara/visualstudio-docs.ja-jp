@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a1ef4258d1b095395be34c7004e3f783b973897d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714377"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547881"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003:汎用イベント ハンドラーのインスタンスを使用します
 
@@ -35,54 +35,54 @@ ms.locfileid: "66714377"
 
 ## <a name="cause"></a>原因
 
-型には、void を返すし、2 つのパラメーター (1 つはオブジェクトと、もう 1 つは EventArgs に割り当て可能な型は)、および含んでいるアセンブリのターゲットの .NET を含むシグネチャを持つデリゲートが含まれています。
+型には、void を返し、そのシグネチャに2つのパラメーター (最初のオブジェクトと、EventArgs に割り当て可能な2つ目の型) が含まれており、それを含むアセンブリが .NET を対象とするデリゲートが含まれています。
 
-既定では、このルールのみが検索に、外部から参照の種類が、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できる型のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-.NET では、前に、イベント ハンドラーにカスタム情報を渡すために、新しいデリゲートする必要があるから派生したクラスが指定されている宣言、<xref:System.EventArgs?displayProperty=fullName>クラス。 .Net では、ジェネリック<xref:System.EventHandler%601?displayProperty=fullName>デリゲートにより、任意のクラスから派生した<xref:System.EventArgs>イベント ハンドラーと共に使用します。
+.Net より前では、カスタム情報をイベントハンドラーに渡すために、 <xref:System.EventArgs?displayProperty=fullName>クラスから派生したクラスを指定した新しいデリゲートを宣言する必要がありました。 .Net では、ジェネリック<xref:System.EventHandler%601?displayProperty=fullName>デリゲートを使用して、から<xref:System.EventArgs>派生した任意のクラスをイベントハンドラーと共に使用できます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則の違反を修正するには、デリゲートを削除しを使用してその使用を置き換える、<xref:System.EventHandler%601?displayProperty=fullName>を委任します。
+この規則違反を修正するには、デリゲートを削除し、 <xref:System.EventHandler%601?displayProperty=fullName>デリゲートを使用してデリゲートを置き換えます。
 
-デリゲートは、Visual Basic コンパイラでは、自動生成された場合に使用するイベントの宣言の構文を変更、<xref:System.EventHandler%601?displayProperty=fullName>を委任します。
+デリゲートが Visual Basic コンパイラによって自動生成される場合は、 <xref:System.EventHandler%601?displayProperty=fullName>デリゲートを使用するようにイベント宣言の構文を変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 この規則による警告は抑制しないでください。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1003.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (デザイン) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
 ## <a name="example"></a>例
 
-次の例では、規則に違反するデリゲートを示します。 Visual Basic の例では、コメントは、ルールを満たすために例を変更する方法を説明します。 例では、c# の例で、変更されたコードが表示されるに従います。
+次の例は、規則に違反するデリゲートを示しています。 Visual Basic の例では、この例を変更してルールを満たす方法を説明しています。 C#例では、変更されたコードを表示する例を次に示します。
 
 [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
 [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
 
-次のコード スニペットでは、前の例は、規則を満たしてから、デリゲート宣言を削除します。 使用を置き換える、`ClassThatRaisesEvent`と`ClassThatHandlesEvent`メソッドを使用して、<xref:System.EventHandler%601?displayProperty=fullName>を委任します。
+次のコードスニペットは、規則を満たす前の例からデリゲート宣言を削除します。 デリゲートを使用`ClassThatRaisesEvent` `ClassThatHandlesEvent`して、メソッドとメソッドの使用を置き換えます。 <xref:System.EventHandler%601?displayProperty=fullName>
 
 [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA1005:ジェネリック型で過剰なパラメーターを回避します。](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
-- [CA 1010:コレクションは、ジェネリック インターフェイスを実装する必要があります。](../code-quality/ca1010-collections-should-implement-generic-interface.md)
-- [CA 1000:ジェネリック型で静的メンバーを宣言しません](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
-- [CA 1002:ジェネリック リストを公開しません](../code-quality/ca1002-do-not-expose-generic-lists.md)
-- [CA 1006:ジェネリック型メンバー シグネチャ内で入れ子にしません](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-- [CA 1004:ジェネリック メソッドは、型パラメーターを指定する必要があります。](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-- [CA 1007:適切な場所にジェネリックを使用します。](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1005ジェネリック型のパラメーターが多すぎないようにする](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1010コレクションはジェネリックインターフェイスを実装する必要があります](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+- [CA1000ジェネリック型の静的メンバーを宣言しません](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+- [CA1002ジェネリックリストを公開しません](../code-quality/ca1002-do-not-expose-generic-lists.md)
+- [CA1006ジェネリック型をメンバーシグネチャに入れ子にしない](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004ジェネリックメソッドは型パラメーターを指定しなければなりません](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1007適切な場所にジェネリックを使用する](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>関連項目
 

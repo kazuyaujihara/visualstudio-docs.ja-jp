@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c77678b1f09b1cf51a63f260252ddeaf9321fd5
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 455ab619f293981c5ebd3afba6336c63f2fe7f49
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842081"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766057"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051:参照可能なインスタンス フィールドを宣言しません
 
@@ -32,43 +32,50 @@ ms.locfileid: "65842081"
 
 ## <a name="cause"></a>原因
 
-型には、非プライベート インスタンス フィールドがあります。
+型には、プライベートでないインスタンスフィールドがあります。
 
-既定では、このルールのみが検索に、外部から参照の種類が、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できる型のみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-フィールドの主な用途は、実装の詳細にする必要があります。 フィールドは`private`または`internal`プロパティを使用して公開する必要があります。 プロパティにアクセスするように、フィールドにアクセスして、重大な変更を導入せず、型の機能を展開すると、プロパティのアクセサーでコードを変更できます簡単になります。 プライベートまたは内部フィールドの値を返すだけのプロパティに従った; フィールドへのアクセスを実行する最適化されました。ほとんどのパフォーマンスの向上は、プロパティに対する外部から参照できるフィールドの使用に関連付けられません。
+フィールドの主な用途は、実装の詳細にする必要があります。 フィールドは`private`または`internal`である必要があります。また、プロパティを使用して公開する必要があります。 フィールドにアクセスするのと同じように、プロパティにアクセスするのは簡単です。プロパティのアクセサーのコードは、互換性に影響する変更を導入しなくても、型の機能が拡張されると変化することがあります。
 
-外部から参照`public`、 `protected`、および`protected internal`(`Public`、`Protected`と`Protected Friend`Visual basic) のアクセシビリティ レベル。
+プライベートフィールドまたは内部フィールドの値を返すプロパティは、フィールドへのアクセスと同等に動作するように最適化されています。プロパティではなく、外部から参照できるフィールドを使用した場合のパフォーマンスの向上は最小限です。 *外部から*参照できる`public`の`protected`は、、`Public`、 `Protected`および`protected internal` (`Protected Friend` Visual Basic) アクセシビリティレベルのです。
+
+また、パブリックフィールドを[リンク確認要求](/dotnet/framework/misc/link-demands)で保護することはできません。 詳細については[、「CA2112:セキュリティで保護された](../code-quality/ca2112-secured-types-should-not-expose-fields.md)型はフィールドを公開しません。 (リンク確認要求は .NET Core アプリには適用されません)。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正することをフィールド`private`または`internal`を外部から参照のプロパティを使用して公開します。
+この規則違反を修正するには、フィールド`private`をまたは`internal`に設定し、外部から参照できるプロパティを使用して公開します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-この規則による警告は抑制しないでください。 外部から参照できるフィールドは、プロパティに提供されるすべての特典を提供していません。 さらに、パブリック フィールドで保護することはできません[リンク確認要求](/dotnet/framework/misc/link-demands)します。 参照してください[ca 2112。セキュリティで保護された型はフィールドを公開する必要があります](../code-quality/ca2112-secured-types-should-not-expose-fields.md)します。
+コンシューマーがフィールドに直接アクセスする必要がある場合にのみ、この警告を非表示にします。 ほとんどのアプリケーションでは、公開されているフィールドは、プロパティよりもパフォーマンスや保守性の面で優れています。
 
-## <a name="configurability"></a>構成機能
+コンシューマーには、次のような場合にフィールドへのアクセスが必要になることがあります。
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+- ASP.NET Web フォームコンテンツコントロール
+- ターゲットプラットフォームが`ref`を使用して、WPF および UWP 用のモデルビューモデル (MVVM) フレームワークなどのフィールドを変更する場合
+
+## <a name="configurability"></a>かつ
+
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1051.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (デザイン) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (デザイン) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
 ## <a name="example"></a>例
 
-次の例は、型を示します (`BadPublicInstanceFields`) をこの規則に違反します。 `GoodPublicInstanceFields` 修正後のコードを示します。
+次の例は、この規則`BadPublicInstanceFields`に違反する型 () を示しています。 `GoodPublicInstanceFields`修正されたコードを表示します。
 
 [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA 2112:セキュリティで保護された型はフィールドを公開する必要があります。](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+- [CA2112セキュリティで保護された型はフィールドを公開しません](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
 ## <a name="see-also"></a>関連項目
 

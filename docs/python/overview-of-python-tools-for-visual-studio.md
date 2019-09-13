@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c137b6bd8a38ac606a547ce961c4f040e60c6d87
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 24bbfd276b30444742b329f30c346ac1857c2cc9
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043355"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154954"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows 上の Visual Studio での Python の使用
 
@@ -157,7 +157,7 @@ Visual Studio **テスト エクスプローラー**でテストを検出、実�
 
 Python 用 Azure ライブラリを使用することで、Windows、Mac OS X、Linux アプリから Azure サービスを簡単に使用できます。 Azure リソースの作成や Azure サービスへの接続に使用できます。 
 
-詳細については、「[Azure SDK for Python](/python/azure/?view=azure-python)」と「[Python 用 Azure ライブラリ](/python/azure/python-sdk-azure-overview?view=azure-python)」を参照してください。
+詳細については、「[Azure SDK for Python](/azure/python/)」と「[Python 用 Azure ライブラリ](/azure/python/python-sdk-azure-overview)」を参照してください。
 
 ## <a name="questions-and-answers"></a>質問と回答
 

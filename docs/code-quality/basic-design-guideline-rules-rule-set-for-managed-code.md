@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d51796f7575e3dd5766655661927dfd520935c02
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919535"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585087"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>マネージド コードの "基本デザイン ガイドライン規則" 規則セット
+
 Microsoft の "基本デザインガイドライン規則" 規則セットを使用して、コードの理解と使用を容易にすることができます。 この規則セットは、プロジェクトにライブラリコードが含まれている場合や、保守が簡単なコードにベストプラクティスを適用する場合に使用してください。
 
-基本的な設計ガイドラインの規則には、Microsoft の最小の規則の規則セット内のすべての規則が含まれます。 最小規則の一覧については、「マネージ[コードのマネージ推奨規則の規則セット](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)」を参照してください。
+基本的な設計ガイドライン規則には、"[マネージ推奨規則](managed-recommended-rules-rule-set-for-managed-code.md)" 規則セット内のすべての規則が含まれます。
 
 次の表では、Microsoft 基本デザインガイドライン規則の規則セットに含まれるすべての規則について説明します。
 

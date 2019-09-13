@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dfaa1fb344f11817cc67a074580c726f3d23036
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4eb49e4e84f61e817e3df8bbbdd20c6922d180ee
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429190"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926742"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>複数の UI マップで大規模アプリケーションをテストする
 
@@ -27,7 +27,7 @@ ms.locfileid: "62429190"
 
 - Visual Studio Enterprise
 
-新しいコード化された UI テストを作成すると、Visual Studio テスト フレームワークによってテスト用のコードが生成されます。既定では、このコードは <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> クラスに生成されます。 コード化された UI テストを記録する方法の詳細については、「[コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md)」および「[コード化された UI テストの構造](../test/anatomy-of-a-coded-ui-test.md)」を参照してください。
+新しいコード化された UI テストを作成すると、Visual Studio テスト フレームワークによってテスト用のコードが生成されます。既定では、このコードは [UIMap](/previous-versions/dd580454(v=vs.140)) クラスに生成されます。 コード化された UI テストを記録する方法の詳細については、「[コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md)」および「[コード化された UI テストの構造](../test/anatomy-of-a-coded-ui-test.md)」を参照してください。
 
 UI マップに対して生成されるコードには、テストで操作する各オブジェクトに対応するクラスが含まれます。 生成されるメソッドごとに、そのメソッドに固有のメソッド パラメーターのコンパニオン クラスが生成されます。 アプリケーションで多数のオブジェクト、ページ、フォーム、およびコントロールが使用されていると、UI マップがかなりの大きさになる場合があります。 また、複数のテスト担当者で作業する場合、単一の大きな UI マップ ファイルでは、アプリケーションを扱いきれなくなります。
 
@@ -40,7 +40,7 @@ UI マップに対して生成されるコードには、テストで操作す�
 - アプリケーション UI への追加をインクリメンタル方式で行えるため、UI の他の部分のテストに与える影響が最小限になります。
 
 ## <a name="do-you-need-multiple-ui-maps"></a>複数の UI マップが必要な場合
- 次のような場合には、それぞれに複数の UI マップを作成してください。
+次のような場合には、それぞれに複数の UI マップを作成してください。
 
 - 互いに関連して論理演算を実行する複雑な複合 UI コントロールのセットが複数ある場合 (Web サイトでの登録ページや、買い物カゴの購入ページなど)。
 
@@ -50,11 +50,11 @@ UI マップに対して生成されるコードには、テストで操作す�
 
 ### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>コード化された UI テスト プロジェクトに UI マップを追加するには
 
-1. **ソリューション エクスプローラー**で、コード化された UI テスト プロジェクト内にすべての UI マップを格納するフォルダーを作成します。それには、コード化された UI テスト プロジェクト ファイルを右クリックし、**[追加]** をポイントして、**[新しいフォルダー]** を選択します。 たとえば、`UIMaps` という名前を付けます。
+1. **ソリューション エクスプローラー**で、コード化された UI テスト プロジェクト内にすべての UI マップを格納するフォルダーを作成します。それには、コード化された UI テスト プロジェクト ファイルを右クリックし、 **[追加]** をポイントして、 **[新しいフォルダー]** を選択します。 たとえば、`UIMaps` という名前を付けます。
 
     コード化された UI テスト プロジェクトの下に、新しいフォルダーが表示されます。
 
-2. `UIMaps` フォルダーを右クリックし、**[追加]** をポイントして、**[新しい項目]** をクリックします。
+2. `UIMaps` フォルダーを右クリックし、 **[追加]** をポイントして、 **[新しい項目]** をクリックします。
 
     **[新しい項目の追加]** ダイアログ ボックスが表示されます。
 
@@ -67,11 +67,11 @@ UI マップに対して生成されるコードには、テストで操作す�
 
 4. **[追加]** をクリックします。
 
-    Visual Studio ウィンドウが最小化されて、**[コード化された UI テスト ビルダー]** ダイアログ ボックスが表示されます。
+    Visual Studio ウィンドウが最小化されて、 **[コード化された UI テスト ビルダー]** ダイアログ ボックスが表示されます。
 
-5. 最初のメソッドのアクションを記録して、**[コードの生成]** を選択します。
+5. 最初のメソッドのアクションを記録して、 **[コードの生成]** を選択します。
 
-6. 最初のコンポーネントまたはページのすべてのアクションおよびアサーションを記録して、メソッド別にグループ化します。この作業が完了したら、**[コード化された UI テスト ビルダー]** ダイアログ ボックスを閉じます。
+6. 最初のコンポーネントまたはページのすべてのアクションおよびアサーションを記録して、メソッド別にグループ化します。この作業が完了したら、 **[コード化された UI テスト ビルダー]** ダイアログ ボックスを閉じます。
 
 7. UI マップの作成を続けます。 アクションとアサーションを記録し、各コンポーネントのメソッド別にグループ化した後、コードを生成します。
 
@@ -141,7 +141,7 @@ namespace ContosoProject
 
 ## <a name="see-also"></a>関連項目
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)
 - [コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md)

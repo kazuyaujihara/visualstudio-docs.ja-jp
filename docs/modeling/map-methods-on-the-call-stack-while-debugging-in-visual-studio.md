@@ -28,12 +28,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8641a677ae36ad5a3c1f0f4344fc5c12b8798d7d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 061204de382e95349e141e3321aa033fcf9ccdbc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445143"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180074"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio でデバッグを行うときの呼び出し履歴に対するメソッドのマップ
 
@@ -51,7 +51,7 @@ ms.locfileid: "63445143"
 
 ::: moniker range="vs-2019"
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ ms.locfileid: "63445143"
 
   参照トピック
 
-- [ビデオ:コード マップ デバッガーの統合 (チャネル 9) で視覚的にデバッグします。](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [ビデオ:コードマップデバッガーの統合を使用して視覚的にデバッグする (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 - [呼び出し履歴でマップします。](#MapStack)
 
@@ -77,9 +77,9 @@ ms.locfileid: "63445143"
 
 ## <a name="MapStack"></a>呼び出し履歴でマップを作成する
 
-1. デバッグを開始します。 (キーボード:**F5 キーを押して**)
+1. デバッグを開始します。 (キーボード:**F5**)
 
-2. アプリが中断モードになるか、関数にステップ イン、選択**コード マップ**します。 (キーボード:**Ctrl キーを押し** + **Shift** + **`**)
+2. アプリが中断モードになるか、関数にステップ イン、選択**コード マップ**します。 (キーボード:**Ctrl** + **Shift**) +  **`**
 
      ![コード マップを選択して呼び出し履歴のマッピングを開始](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -105,7 +105,7 @@ ms.locfileid: "63445143"
 
  作成できたマップ - どのような横でしょうか。 C# または Visual Basic で作業している場合は、フィールド、プロパティ、およびコードで何が起こっているかを追跡するために、他の方法などの項目を追加します。
 
- メソッドのコード定義を表示するには、そのメソッドをダブルクリックするか、そのメソッドのショートカット メニューを使用します。 (キーボード:マップとキーを押してでメソッドを選択**F12**)
+ メソッドのコード定義を表示するには、そのメソッドをダブルクリックするか、そのメソッドのショートカット メニューを使用します。 (キーボード:マップでメソッドを選択し、 **F12**キーを押します)
 
  ![コード マップのメソッドのコード定義に移動](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -156,7 +156,7 @@ ms.locfileid: "63445143"
 
    マップを変更すると、任意の方法でコードに影響しません。 マップでの名前変更、移動、削除は自由に行うことができます。
 
-- **このメッセージは何を意味します。「ダイアグラムは以前のバージョンのコードでベース可能性がありますか。」**
+- **このメッセージの意味は次のとおりです。"この図は、古いバージョンのコードに基づいている可能性があります"**
 
    マップを最後に更新してからコードが変更されている可能性があります。 たとえば、マップ上の呼び出しがコードに存在しなくなった可能性があります。 メッセージを閉じてから、マップを再び更新する前にソリューションをリビルドしてみます。
 
@@ -178,7 +178,7 @@ ms.locfileid: "63445143"
 
 - **新しい呼び出し履歴を自動的に追加することから、マップを停止するにはどうすればよいですか。**
 
-   選択![ボタン&#45;Show コール スタックは、自動的にコード マップに](../debugger/media/debuggermap_automaticupdateicon.gif)マップのツールバー。 マップを現在の呼び出し履歴を手動で追加するには、キーを押して**Ctrl** + **Shift** + **`** します。
+   選択![ボタン&#45;Show コール スタックは、自動的にコード マップに](../debugger/media/debuggermap_automaticupdateicon.gif)マップのツールバー。 マップを現在の呼び出し履歴を手動で追加するには、キーを押して**Ctrl** + **Shift** +  **`** します。
 
    デバッグ中に、マップ上の既存の呼び出し履歴を強調表示、マップが続行されます。
 

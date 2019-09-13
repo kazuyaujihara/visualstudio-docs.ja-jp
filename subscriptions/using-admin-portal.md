@@ -3,32 +3,25 @@ title: サブスクリプション管理者ポータルの使用を開始する 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/24/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 description: サブスクリプション管理者ポータルでの組織の Visual Studio サブスクリプションの管理を開始する方法について説明します。
-ms.openlocfilehash: f3b11a0a0977fff8a6c89f565adffb1cac49e2ad
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 6ee33bfaf47452a1213cd5def206e47aee790fc3
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605722"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490707"
 ---
-# <a name="get-started-with-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio サブスクリプション管理ポータルの使用を開始する
-Visual Studio サブスクリプションを使用して管理ポータルを管理するときには、次の点に留意してください。
+# <a name="overview-of-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio サブスクリプション管理ポータルの概要
+Visual Studio サブスクリプション管理ポータルには、組織のサブスクリプションを 1 か所で管理するためのツールが用意されています。 
+
+## <a name="important-considerations"></a>重要な考慮事項
+Visual Studio サブスクリプション管理ポータルを使用するときには、次の点に留意してください。
 - **Visual Studio サブスクリプションはユーザーごとにライセンスが付与されます。** 各サブスクリプション会員は開発およびテストを目的として、ソフトウェアを必要な数のコンピューターで使用できます。
 - 組織で購入した Visual Studio サブスクリプションに応じて、**サブスクライバーごとに 1 つのサブスクリプション レベルのみを割り当ててください**。 複数のサブスクリプション レベルが割り当てられているサブスクリプション会員がいる場合は、1 つのレベルだけが割り当てられるように会員の設定を編集してください。
 - ステップアップ ライセンスの購入によってサブスクリプションをアップグレードするか、低いレベルのサブスクリプションに更新した場合は、**サブスクリプション会員のサブスクリプション レベルを更新する必要があります**。
 - **サブスクリプション会員間でサブスクリプションを共有しないでください。** サブスクリプションは、指定した個人に割り当てる必要があります。  チームに対するサブスクリプションの割り当ては許可されていません。  サブスクリプション特典 (開発およびテスト用ソフトウェア、Microsoft Azure、e ラーニングなど) のすべてまたは一部使用するユーザーにサブスクリプションを割り当てる必要があります。
-
-## <a name="access-to-the-portal"></a>ポータルにアクセスする
-お客様が組織の契約に関する主要または通知連絡先の場合、ボリューム ライセンス契約の設定時にポータルへのアクセスが自動的にプロビジョニングされます。 システムによってトリガーされたウェルカム メールが届きます。それには、ポータルへのサインインに使用する電子メール アドレスが記載されています。 サインインすると、自動的にスーパー管理者としてセットアップされ、サブスクリプションとその他の管理者の管理を開始できます。 
-
-## <a name="administrator-roles"></a>管理者ロール
-新しい Visual Studio サブスクリプションの管理ポータル内には、ボリューム ライセンスのお客様用の 2 つの異なるロールがあります。 これらのロールは、現在の VLSC の主要/通知連絡先ロールとサブスクリプション マネージャーに似ています。
-
-**スーパー管理者:** 最初に組織を設定したときには、主要または通知連絡先が既定でスーパー管理者になります。 主要または通知連絡先は、追加のスーパー管理者または管理者を割り当てることを選択できます。 スーパー管理者では、他の管理者だけでなくサブスクライバーを追加および削除することができます。 システムに 2 人以上のスーパー管理者がいる場合、スーパー管理者はセキュリティのために最後の 2 人を除くすべての管理者を削除できます。
-
-**管理者:** スーパー管理者のみが管理者を設定できます。管理者は、スーパー管理者に割り当てられた契約のサブスクライバーを管理できます。
 
 ## <a name="the-subscribers-page"></a>[サブスクライバー] ページ
 サブスクリプションを割り当てた後は、[サブスクライバー] タブに、次のようなサブスクライバーの詳細情報が表示されます。
@@ -51,6 +44,12 @@ Visual Studio サブスクリプションを使用して管理ポータルを管
 表示されている契約の詳細を参照するには、[詳細] タブを選択します。契約の状態、購入アカウント、組織の詳細、スーパー管理者、およびその他の関連情報が表示されます。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio サブスクリプションの管理ポータルの [詳細] ページ](_img/using-admin-portal/details-page.png)
+
+## <a name="resources"></a>リソース
+- [Visual Studio ライセンスのホワイト ペーパー](https://aka.ms/vslicensing)
+- [サブスクリプション オプションと価格を比較する](https://visualstudio.microsoft.com/vs/pricing)
+- [Visual Studio IDE 機能を比較する](https://visualstudio.microsoft.com/vs/compare)
+- [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="next-steps"></a>次の手順
 管理者の責任について詳しくは、以下をご覧ください。

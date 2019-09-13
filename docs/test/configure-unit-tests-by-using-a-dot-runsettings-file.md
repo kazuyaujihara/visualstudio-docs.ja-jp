@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c291eb614a69d88116c6af228304e19a6295bba2
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: d9f47c54a530f58ea562fd942c1ef795bad37331
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662028"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490649"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -26,11 +26,25 @@ Visual Studio の単体テストは、 *.runsettings* ファイルを使用し�
 
 ### <a name="ide"></a>IDE
 
-IDE で実行設定ファイルを指定するには、 **[テスト]**  >  **[テストの設定]**  >  **[テスト設定ファイルの選択]** の順に選択し、 *.runsettings* ファイルを選択します。
+::: moniker range="vs-2017"
 
-![Visual Studio の [テスト設定ファイルの選択] メニュー](media/select-test-settings-file.png)
+IDE で実行設定ファイルを指定するには、 **[テスト]** > **[テストの設定]** > **[テスト設定ファイルの選択]** で、 *.runsettings* ファイルを選択します。
 
-ファイルは、 **[テストの設定]** メニューに表示され、選択または選択解除できます。 選択されている間、実行設定ファイルは、 **[コード カバレッジの分析]** を選ぶたびに適用されます。
+![Visual Studio 2017 の [テスト設定ファイルの選択] メニュー](media/select-test-settings-file.png)
+
+ファイルは、[テストの設定] メニューに表示され、選択または選択解除できます。 選択されている間、実行設定ファイルは、 **[コード カバレッジの分析]** を選ぶたびに適用されます。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+IDE で実行設定ファイルを指定するには、**テスト エクスプローラー**で、 **[設定]** ボタンの矢印を選択し、 **[設定ファイルの選択]** を選択します。 *.runsettings* ファイルを参照し、選択します。
+
+![Visual Studio 2019 の [テスト設定ファイルの選択] メニュー](media/vs-2019/select-test-settings-file.png)
+
+ファイルはテスト エクスプローラーの [設定] メニューに表示され、選択または選択解除できます。 選択されている間、実行設定ファイルは、 **[コード カバレッジの分析]** を選ぶたびに適用されます。
+
+::: moniker-end
 
 ### <a name="command-line"></a>コマンド ライン
 
@@ -73,9 +87,19 @@ IDE で実行設定ファイルを指定するには、 **[テスト]**  >  **[�
    > [!TIP]
    > 拡張子 *.runsettings* を使用していれば、ファイル名は自由です。
 
-1. この後で示す例の XML でファイルの内容を置き換え、必要に応じてカスタマイズします。
+2. この後で示す例の XML でファイルの内容を置き換え、必要に応じてカスタマイズします。
 
-1. **[テスト]** メニューから **[テストの設定]**  >  **[テスト設定ファイルの選択]** の順に選択します。 作成した *.runsettings* ファイルを参照して、 **[OK]** を選択します。
+::: moniker range="vs-2017"
+
+3. **[テスト]** メニューから **[テストの設定]**  >  **[テスト設定ファイルの選択]** の順に選択します。 作成した *.runsettings* ファイルを参照して、 **[OK]** を選択します。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. 実行設定ファイルを選択するには、**テスト エクスプローラー**で、 **[設定]** ボタンの矢印を選択し、 **[設定ファイルの選択]** を選択します。 作成した *.runsettings* ファイルを参照して、 **[OK]** を選択します。
+
+::: moniker-end
 
    > [!TIP]
    > ソリューションに複数の *.runsettings* ファイルを作成し、必要に応じて、いずれかをアクティブなテスト設定ファイルとして選択することができます。
@@ -94,7 +118,7 @@ IDE で実行設定ファイルを指定するには、 **[テスト]**  >  **[�
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the top-level menu Test > Test Settings > Processor Architecture for AnyCPU Projects -->
+    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -260,7 +284,7 @@ public void HomePageTest()
 |-|-|-|
 |**ForcedLegacyMode**|False|Visual Studio 2012 で、MSTest アダプターは処理速度を向上させ、よりスケーラブルになるように最適化されました。 テストが実行される順序などの一部の動作は、Visual Studio の以前のエディションでの動作と完全に同じではない場合もあります。 以前のテスト アダプターを使用するには、この値を **true** に設定します。<br /><br />たとえば、単体テスト用に指定された *app.config* ファイルがある場合は、この設定を使用することがあります。<br /><br />より新しいアダプターを使用できるように、テストのリファクタリングを検討することをお勧めします。|
 |**IgnoreTestImpact**|False|テストの影響機能は、MSTest で実行したとき、または Microsoft Test Manager から実行したときに最近の変更の影響を受けるテストの優先順位を付けます。 この設定は機能を非アクティブ化します。 詳細については、「[前回のビルド以降に実行する必要があるテストの検索](https://msdn.microsoft.com/library/dd286589)」を参照してください。|
-|**SettingsFile**||ここで、MSTest アダプターで使用するテスト設定ファイルを指定できます。 **[テスト]**  >  **[テストの設定]**  >  **[テスト設定ファイルの選択]** の順に選んで、テスト設定ファイルを指定することもできます。<br /><br />この値を指定する場合は、 **ForcedlegacyMode** も **true**に設定する必要があります。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**SettingsFile**||ここで、MSTest アダプターで使用するテスト設定ファイルを指定できます。 また、[[設定] メニューから](#ide)テスト設定ファイルを指定することもできます。<br /><br />この値を指定する場合は、 **ForcedlegacyMode** も **true**に設定する必要があります。<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|False|テストの実行が完了した後、MSTest がシャットダウンされます。 テストの一部として起動されたプロセスも中止されています。 テスト実行プログラムを中止しない場合は、この値を **true** に設定します。 たとえば、コード化された UI テストの間にブラウザーの実行を維持するために、この設定を使用できます。|
 |**DeploymentEnabled**|true|値を **false** に設定すると、テスト メソッドで指定した配置項目が配置ディレクトリにコピーされません。|
 |**CaptureTraceOutput**|true|<xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType> を使用して、テスト メソッドからデバッグ トレースに書き込むことができます。|

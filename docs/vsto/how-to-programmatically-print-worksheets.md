@@ -1,5 +1,5 @@
 ---
-title: '方法: プログラムによってワークシートを印刷します。'
+title: '方法: プログラムによってワークシートを印刷する'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,28 +14,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76315f6cde5bc54385e217a8f234389a7f45e621
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 764723d0749cd82739d8e67ee71104f41a0f9065
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955925"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490581"
 ---
-# <a name="how-to-programmatically-print-worksheets"></a>方法: プログラムによってワークシートを印刷します。
-  ブック内のワークシートはすべて印刷できます。
+# <a name="how-to-programmatically-print-worksheets"></a>方法: プログラムによってワークシートを印刷する
 
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+ブック内のワークシートはすべて印刷できます。
 
-## <a name="print-a-worksheet-in-a-document-level-customization"></a>ドキュメント レベル カスタマイズでワークシートを印刷します。
+[!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+## <a name="print-a-worksheet-in-a-document-level-customization"></a>ドキュメントレベルのカスタマイズでワークシートを印刷する
 
 ### <a name="to-print-a-worksheet"></a>ワークシートを印刷するには
 
-1. `Sheet1` の <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintOut%2A> メソッドを呼び出します。印刷部数は 2 部で、印刷前に文書をプレビューします。
+1. `Sheet1` の `PrintOut` メソッドを呼び出します。印刷部数は 2 部で、印刷前に文書をプレビューします。
 
     [!code-csharp[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#22)]
     [!code-vb[Trin_VstcoreExcelAutomation#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#22)]
 
-   <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A>メソッドでは、指定されたオブジェクトを表示することができます、**印刷プレビュー**ウィンドウ。 次のコードでは、`Sheet1` という名前の <xref:Microsoft.Office.Tools.Excel.Worksheet> ホスト項目があることを前提としています。
+   メソッドを使用すると、指定したオブジェクトを **[印刷プレビュー]** ウィンドウに表示できます。 <xref:Microsoft.Office.Tools.Excel.Worksheet.PrintPreview%2A> 次のコードでは、`Sheet1` という名前の <xref:Microsoft.Office.Tools.Excel.Worksheet> ホスト項目があることを前提としています。
 
 ### <a name="to-preview-a-page-before-printing"></a>印刷する前にページをプレビューするには
 
@@ -44,7 +45,7 @@ ms.locfileid: "62955925"
      [!code-csharp[Trin_VstcoreExcelAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#23)]
      [!code-vb[Trin_VstcoreExcelAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#23)]
 
-## <a name="print-a-worksheet-in-a-vsto-add-in"></a>VSTO アドインでワークシートを印刷します。
+## <a name="print-a-worksheet-in-a-vsto-add-in"></a>VSTO アドインでワークシートを印刷する
 
 ### <a name="to-print-a-worksheet"></a>ワークシートを印刷するには
 
@@ -53,7 +54,7 @@ ms.locfileid: "62955925"
     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#14)]
     [!code-vb[Trin_VstcoreExcelAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#14)]
 
-   <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>メソッドでは、指定されたオブジェクトを表示することができます、**印刷プレビュー**ウィンドウ。
+   メソッドを使用すると、指定したオブジェクトを **[印刷プレビュー]** ウィンドウに表示できます。 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A>
 
 ### <a name="to-preview-a-page-before-printing"></a>印刷する前にページをプレビューするには
 
@@ -63,8 +64,9 @@ ms.locfileid: "62955925"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#15)]
 
 ## <a name="see-also"></a>関連項目
-- [ワークシートを操作します。](../vsto/working-with-worksheets.md)
-- [方法: プログラムによってワークシートでスペルをチェックします。](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
-- [Worksheet ホスト項目](../vsto/worksheet-host-item.md)
-- [Office プロジェクト内のオブジェクトへのグローバル アクセス](../vsto/global-access-to-objects-in-office-projects.md)
+
+- [ワークシートを操作する](../vsto/working-with-worksheets.md)
+- [方法: プログラムによってワークシートでスペルチェックを行う](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
+- [ワークシートホスト項目](../vsto/worksheet-host-item.md)
+- [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

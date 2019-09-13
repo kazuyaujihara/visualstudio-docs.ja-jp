@@ -24,7 +24,7 @@
           href: edit-and-refresh.md
         - name: コンテナー レジストリに配置する
           href: hosting-web-apps-in-docker.md
-        - name: Azure App Service に配置する
+        - name: Azure App Service にデプロイする
           href: deploy-app-service.md
         - name: Docker Hub に配置する
           href: deploy-docker-hub.md
@@ -42,3 +42,7 @@
       items:
         - name: コンテナーのプロジェクトの MSBuild プロパティ
           href: container-msbuild-properties.md
+        - name: Docker Compose プロジェクト用の設定
+          href: docker-compose-properties.md
+        - name: 起動設定
+          href: container-launch-settings.md

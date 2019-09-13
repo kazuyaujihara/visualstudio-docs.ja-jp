@@ -1,7 +1,7 @@
 ---
 title: オフライン インストールに必要な証明書をインストールする
 description: Visual Studio オフライン インストール用の証明書をインストールする方法を説明します。
-ms.date: 03/30/2019
+ms.date: 08/08/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c7139234ab9f36842e92ead9e43f8d0a0a71a00e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826281"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551198"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio オフライン インストールに必要な証明書をインストールする
 
@@ -150,25 +150,19 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
   * ルート証明書:**Microsoft Root Certificate Authority**
     * 必須です。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
 
-**更新**:Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合、Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。
+**更新**:Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合、Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。 これらの証明書は、.p12 ではなく .cer ファイルに格納されます。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-* **ManifestSignCertificates.p12** に含まれるもの:
-  * 中間証明書:**Microsoft Code Signing PCA 2011**
-    * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
+* **ManifestSignCertificates.cer** には次のものが含まれます。
   * ルート証明書:**Microsoft Root Certificate Authority 2011**
     * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
-* **ManifestCounterSignCertificates.p12** に含まれるもの:
-  * 中間証明書:**Microsoft Time-Stamp PCA 2010**
-    * 不要。 存在する場合、一部のシナリオでパフォーマンスが向上します。
+* **ManifestCounterSignCertificates.cer** には次のものが含まれます。
   * ルート証明書:**Microsoft Root Certificate Authority 2010**
     * 最新の Windows 更新プログラムがインストールされていない Windows 7 Service Pack 1 システムで必要。
-* **Vs_installer_opc.SignCertificates.p12** に含まれるもの:
-  * 中間証明書:**Microsoft Code Signing PCA**
-    * すべてのシステムに必要。 Windows Update からすべての更新プログラムが適用されているシステムにはこの証明書がない場合があることに注意してください。
+* **Vs_installer_opc.SignCertificates.cer** には次のものが含まれます。
   * ルート証明書:**Microsoft Root Certificate Authority**
     * 必須です。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
 

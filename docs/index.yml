@@ -8,12 +8,14 @@ metadata:
   description: Visual Studio を使って、アプリケーション、サービス、ツールを、任意の言語で、任意のプラットフォームやデバイス向けに開発する方法について説明します。
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
-  ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+  f1_keywords:
+  - MSDNSTART
+  ms.openlocfilehash: 0853a20309869e5cde753685f20584bbd0a3e7dd
+  ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/01/2019
-  ms.locfileid: "67493712"
+  ms.lasthandoff: 09/10/2019
+  ms.locfileid: "70864658"
 highlightedContent:
   items:
   - title: セットアップとインストール
@@ -120,7 +122,7 @@ tools:
     url: /visualstudio/rtvs/?view=vs-2017
 additionalContent:
   sections:
-  - title: '[タスク]'
+  - title: タスク
     items:
     - title: 開発
       summary: コード エディターを使ってコードを作成し、管理します。
@@ -135,7 +137,7 @@ additionalContent:
       summary: プロジェクトでテストを実行します。
       url: test/improve-code-quality.md
     - title: デプロイ
-      summary: Web Deploy、InstallShield、継続的インテグレーションなどを使ってアプリを共有します。
+      summary: Web 配置、InstallShield、NuGet、継続的インテグレーションなどを使用して、アプリとコードを共有します。
       url: deployment/index.md
     - title: バージョン コントロール
       summary: Git や TFVC などのバージョン コントロール テクノロジを使ってコードを共有します。
@@ -192,7 +194,7 @@ additionalContent:
         url: cross-platform/visual-studio-tools-for-unity.md
       - text: JavaScript でのモバイル開発
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
-        note: (Visual Studio 2017 and 2015 only)
+        note: (Visual Studio 2017 および 2015 のみ)
       - text: C++ でのモバイル開発
         url: /visualstudio/cross-platform/
       - text: C++ によるゲーム開発

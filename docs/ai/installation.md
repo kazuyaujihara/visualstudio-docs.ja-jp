@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 15888341bf3cc7a4e9f4739ed37283e11c5ce75e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821403"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918041"
 ---
 # <a name="installation"></a>インストール
 
@@ -37,14 +37,14 @@ Visual Studio Tools for AI は、64 ビットの Windows オペレーティン�
 
 ## <a name="prepare-your-local-machine"></a>ローカル コンピューターを準備する
 
-ローカル コンピューター上でディープ ラーニング モデルをトレーニングする前に、該当する前提条件がインストールされていることを確認する必要があります。 これには、NVIDIA GPU (お持ちの場合) の最新のドライバーとライブラリの所持の確認が含まれます。 また、Python と Python ライブラリ (NumPy、SciPy など)、およびプロジェクトで使う予定の適切なディープ ラーニング フレームワーク (Microsoft Cognitive Toolkit (CNTK)、TensorFlow、Caffe2、MXNet、Keras、Theano、PyTorch、Chainer など) が確実にインストールされているようにする必要があります。
+ローカル コンピューター上でディープ ラーニング モデルをトレーニングする前に、該当する前提条件がインストールされていることを確認する必要があります。 これには、NVIDIA GPU (お持ちの場合) の最新のドライバーとライブラリの所持の確認が含まれます。 また、Python と Python ライブラリ (NumPy、SciPy など)、およびプロジェクトで使う予定の適切なディープ ラーニング フレームワーク (Microsoft Cognitive Toolkit (CNTK)、TensorFlow、Caffe2、MXNet、Keras、Theano、PyTorch、Chainer など) がインストールされていることを確認します。
 
 > [!NOTE]
 > 以下のソフトウェアの概要は、これらのホーム ページからの抜粋です。
 
 ### <a name="nvidia-gpu-driver"></a>NVIDIA GPU ドライバー
 
-ディープ ラーニング フレームワークは、NVIDIA GPU を利用して、真の人工知能に向けたマシンによる高速、正確、大規模な学習を可能にします。 お使いのコンピューターが NVIDIA GPU カードを備えている場合は、[こちら](http://www.nvidia.com/Download/index.aspx)にアクセスするか、OS を更新して、最新のドライバーをインストールしてください。
+ディープ ラーニング フレームワークは、NVIDIA GPU を利用して、真の人工知能に向けたマシンによる高速、正確、大規模な学習を可能にします。 コンピューターに NVIDIA GPU のカードがある場合は、「[NVIDIA ドライバーのダウンロード](http://www.nvidia.com/Download/index.aspx)」を参照するか、またはオペレーティング システムの更新を試して最新のドライバーをインストールします。
 
 ### <a name="cuda"></a>CUDA
 
@@ -52,7 +52,7 @@ Visual Studio Tools for AI は、64 ビットの Windows オペレーティン�
 
 CUDA をインストールするには
 
-- [こちらのサイト](https://developer.nvidia.com/cuda-80-ga2-download-archive)にアクセスし、CUDA をダウンロードしてインストールします。
+- こちらの[サイト](https://developer.nvidia.com/cuda-80-ga2-download-archive)にアクセスし、CUDA をダウンロードしてインストールします。
 - CUDA ランタイム ライブラリがインストールされたことを確認し、%PATH% または $Path 環境変数に CUDA バイナリのパスを追加します。
 - Windows での既定のこのパスは、"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" です。
 
@@ -141,7 +141,7 @@ CNTK Python パッケージのインストールについては、[CNTK のイ�
 
 ### <a name="tensorflow"></a>TensorFlow
 
-[TensorFlow](https://www.tensorflow.org/) は、データ フロー グラフを使って数値計算を行うためのオープン ソースのソフトウェア ライブラリです。 インストールについては、[こちら](https://www.tensorflow.org/install/)をご覧ください。
+[TensorFlow](https://www.tensorflow.org/) は、データ フロー グラフを使って数値計算を行うためのオープンソースのソフトウェア ライブラリです。 インストールについては、[こちら](https://www.tensorflow.org/install/)をご覧ください。
 
 > [!NOTE]
 > バージョン 1.2 の時点で、TensorFlow は macOS に対する GPU のサポートを提供しなくなっています。
@@ -239,7 +239,7 @@ pip3.5 install torchvision
 
 ### <a name="chainer"></a>Chainer
 
-[Chainer](https://chainer.org/) は、柔軟性を目指した Python ベースのディープ ラーニング フレームワークです。 **実行による定義アプローチ** (別名: 動的計算グラフ) に基づく自動微分 API と、ニューラル ネットワークを構築してトレーニングするためのオブジェクト指向の高度な API を提供します。
+[Chainer](https://chainer.org/) は、柔軟性を目指した Python ベースのディープ ラーニング フレームワークです。 実行による定義アプローチ (動的計算グラフとも呼ばれます) に基づく自動微分 API と、ニューラル ネットワークを構築してトレーニングするためのオブジェクト指向の高度な API が提供されます。
 
 CUDA のサポートを有効にするには、[CuPy](https://github.com/cupy/cupy) をインストールします。
 

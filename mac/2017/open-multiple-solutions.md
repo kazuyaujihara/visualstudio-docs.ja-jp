@@ -1,17 +1,17 @@
 ---
-title: '方法: Visual Studio for Mac で複数のソリューションを開く'
+title: '方法: 複数のソリューションを開く'
 description: Visual Studio for Mac で複数のソリューションを開く方法、およびアプリケーションの複数のインスタンスを開く方法について説明します。
 author: conceptdev
 ms.author: crdun
 ms.date: 07/19/2018
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: cdbe02cf3d60b460252f09764521afd240551115
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8fe8f8506bdd332553cffaed45951219c7904bc3
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988228"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872276"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Visual Studio for Mac の複数のソリューションまたはインスタンスを開く
 
@@ -31,9 +31,9 @@ open -n "/Applications/Visual Studio.app"
 
 1 つ目のソリューションをそのままにして 2 つ目のソリューションを開くには、次の手順を使います。
 
-1. 1 つ目のソリューションを既に開いた状態で、**[ファイル]** > **[開く]** の順に選択します。
+1. 1 つ目のソリューションを既に開いた状態で、 **[ファイル]**  >  **[開く]** の順に選択します。
 2. ファイル システムを参照して、既存のソリューションを検索します。
-3. **.sln** ファイルを選択し、**[オプション]** を選択します。
+3. **.sln** ファイルを選択し、 **[オプション]** を選択します。
 
     ![.sln ファイルとオプションが強調表示されている Visual Studio for Mac のスクリーンショット](media/open-multiple-solutions-image3.png)
 
@@ -45,7 +45,7 @@ open -n "/Applications/Visual Studio.app"
 
 または、最近ソリューションを開いた場合は、次の手順を使うこともできます。
 
-1. **[ファイル]** > **[最近のソリューション]** の順に移動します。
+1. **[ファイル]**  >  **[最近のソリューション]** の順に移動します。
 
     ![[最近のソリューション] メニューのスクリーンショット](media/open-multiple-solutions-image2.png)
 

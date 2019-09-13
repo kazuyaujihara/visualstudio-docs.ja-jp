@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823371"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864689"
 ---
 # <a name="developer-community-data-privacy"></a>開発者コミュニティのデータのプライバシー
 
@@ -54,24 +54,28 @@ ms.locfileid: "67823371"
 
 - Visual Studio のメモリ内アクティビティ ログ ファイル
 
-- PerfWatson ファイル (Watson コレクションが有効な場合は、*VSFeedbackPerfWatsonData* フォルダーから)
+- PerfWatson ファイル (Watson コレクションが有効になっている場合)
 
-- LiveShare ログ ファイル (存在する場合は、*VSFeedbackVSRTCLogs* フォルダーから)
+- LiveShare ログ ファイル (存在する場合)
 
-- Xamarin ログ ファイル (存在する場合は、 *%LOCALAPPDATA%\Xamarin\Logs* から)
+- Xamarin ログ ファイル (存在する場合)
 
-- Nuget ログ ファイル (存在する場合は、 *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg* から)
+- Nuget ログ ファイル (存在する場合)
 
-- Web デバッガー ログ ファイル (存在する場合は以下から)
+- Web デバッガー ログ ファイル (存在する場合)
 
-  - *%TEMP%\vscode-chrome-debug.txt*
+- Service Hub ログと MEF エラー ログ (存在する場合)
 
-  - *%TEMP%\vscode-node-debug2.txt*
+- Python ログ (存在する場合)
 
-  - *%TEMP%\vscode-edge-debug.txt*
+- Windows フォーム ログ (存在する場合)
+
+> [!NOTE]
+> ログ ファイルが含まれる問題レポートを送信することによって権限を付与した場合にのみ、ログ ファイルは Microsoft に送信されます。 [問題の報告] ウィンドウの [サマリー] ステップで、どのファイルが含まれているかを確認できます (このメモのスクリーンショットを参照)。 収集されたログは %temp% フォルダーに格納され、定期的に、および各アップロードの後で、クリーンアップされます。 問題レポートにログを含めたくない場合は、レポートを送信する前に、%temp% フォルダーからファイルを削除します。  
+  > ![問題の報告 - 収集されたログのサマリー](media/report-a-problem-logs-collected.png)
 
 - スクリーン ショット (含めることを選択した場合)
-
+  
 - 記録データ (以下を含む記録を含めるように選択した場合)
 
   - 問題を再現する手順

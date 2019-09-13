@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dfa50fc6007c2313191b430e9ed5445e7fd72a88
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c6512f02d13c2eeb441f5b374c4785deffe22a22
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841565"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547066"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802:適切な場所にリテラルを使用します
 
@@ -35,39 +35,39 @@ ms.locfileid: "65841565"
 
 ## <a name="cause"></a>原因
 
-フィールドが宣言されている`static`と`readonly`(`Shared`と`ReadOnly`Visual Basic で)、およびコンパイル時に計算される値で初期化されます。
+フィールドは、( `static` `readonly` `Shared` および`ReadOnly` Visual Basic) として宣言され、コンパイル時に計算できるという値で初期化されます。
 
-既定では、このルールだけを確認、外部から参照できるフィールドが、これは[構成可能な](#configurability)します。
+既定では、この規則は外部から参照できるフィールドのみを参照しますが、これは[構成可能](#configurability)です。
 
 ## <a name="rule-description"></a>規則の説明
 
-値を`static readonly`フィールドは、宣言型の静的コンス トラクターが呼び出されたときに実行時に計算されます。 場合、`static readonly`フィールドは宣言されているし、静的コンス トラクターが明示的に宣言しないコンパイラは、フィールドを初期化するために静的コンス トラクターを生成するときに初期化されます。
+`static readonly`フィールドの値は、宣言する型の静的コンストラクターが呼び出されるときに、実行時に計算されます。 `static readonly`フィールドが宣言時に初期化され、静的コンストラクターが明示的に宣言されていない場合、コンパイラは静的コンストラクターを生成してフィールドを初期化します。
 
-値を`const`フィールドがコンパイル時に計算し、と比較した場合、実行時のパフォーマンスを向上すると、メタデータに格納されている、`static readonly`フィールド。
+`const`フィールドの値はコンパイル時に計算され、メタデータに格納されます。これにより、 `static readonly`フィールドと比較したときの実行時のパフォーマンスが向上します。
 
-対象フィールドに割り当てられた値は、コンパイル時に計算、ために宣言を変更、`const`フィールド値は実行時ではなく、コンパイル時に計算されます。
+コンパイル時には対象のフィールドに割り当てられた値が計算できるであるため、 `const`宣言をフィールドに変更して、実行時ではなくコンパイル時に値が計算されるようにします。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、置換、`static`と`readonly`修飾子を`const`修飾子。
+この規則違反を修正するには、 `static` `const`修飾子と`readonly`修飾子を修飾子で置き換えます。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-パフォーマンスが重大な問題がない場合、この規則による警告を抑制またはルールを無効にも安全です。
+このルールからの警告を抑制することも、パフォーマンスが問題にならない場合はルールを無効にすることも安全です。
 
-## <a name="configurability"></a>構成機能
+## <a name="configurability"></a>かつ
 
-この規則からを実行している場合[FxCop アナライザー](install-fxcop-analyzers.md) (および静的コード分析ではなく)、のどの部分を構成することができます、コードベースでこのルールを実行する、アクセシビリティに基づきます。 など、非パブリック API サーフェイスに対してのみ、ルールを実行するかを指定するには、プロジェクト内の .editorconfig ファイルに次のキー/値ペアを追加します。
+この規則を[FxCop アナライザー](install-fxcop-analyzers.md) (レガシ分析ではなく) から実行している場合は、ユーザー補助に基づいて、この規則を実行するコードベースの部分を構成できます。 たとえば、パブリックでない API サーフェイスに対してのみルールを実行するように指定するには、プロジェクトの editorconfig ファイルに次のキーと値のペアを追加します。
 
 ```ini
 dotnet_code_quality.ca1802.api_surface = private, internal
 ```
 
-このルールだけ、すべてのルール、またはすべてのルールは、このオプションは、このカテゴリ (パフォーマンス) で構成できます。 詳細については、次を参照してください。[構成 FxCop アナライザー](configure-fxcop-analyzers.md)します。
+このオプションは、この規則、すべての規則、またはこのカテゴリのすべての規則 (パフォーマンス) に対してのみ構成できます。 詳細については、「 [FxCop アナライザーの構成](configure-fxcop-analyzers.md)」を参照してください。
 
 ## <a name="example"></a>例
 
-次の例は、型`UseReadOnly`、ルールと、型に違反する`UseConstant`ルールを満たします。
+次の例は、規則に`UseReadOnly`違反する型と、規則に適合する`UseConstant`型 () を示しています。
 
 [!code-vb[FxCop.Performance.UseLiterals#1](../code-quality/codesnippet/VisualBasic/ca1802-use-literals-where-appropriate_1.vb)]
 [!code-csharp[FxCop.Performance.UseLiterals#1](../code-quality/codesnippet/CSharp/ca1802-use-literals-where-appropriate_1.cs)]

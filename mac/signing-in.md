@@ -3,16 +3,22 @@ title: Visual Studio for Mac にサインインする
 description: Visual Studio for Mac にサインインする方法
 author: asb3993
 ms.author: amburns
-ms.date: 04/02/2019
+ms.date: 08/08/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: d3ef047d018d5069cd362af1becfe7c6d778bde7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: a3911826314710f5b47fb248e452b4a10b56e2dd
+ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692006"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957362"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Visual Studio for Mac にサインインする
+
+Visual Studio for Mac にサインインすると、[サブスクリプションがアクティブ化](enable-subscription.md)されます。 Visual Studio for Mac をダウンロードすると、既定で Community Edition が常に取得されます。 [Professional または Enterprise のライセンス](https://visualstudio.microsoft.com/vs/compare/)をお持ちの場合は、最初の実行時にサインインして、追加機能のロックを解除する必要があります。 さらに、次のことが可能になります。
+
+* **Visual Studio Dev Essentials プログラムにアクセスする** – このプログラムには、無料のソフトウェア提供サービス、トレーニング、サポートなどが含まれます。 詳細については、「 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 」をご覧ください。
+
+* IDE で **Azure に自動的に接続される**ようになり、同じアカウントの資格情報を再度要求されることはなくなります。
 
 初めて Visual Studio for Mac を起動すると、Microsoft アカウントを使ってログインするように求められます。 使用するライセンスに接続されている Microsoft アカウントを使用します。 Microsoft アカウントがない場合は、「[Microsoft アカウントを新規登録する](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account)」をご覧ください。
 
@@ -20,7 +26,8 @@ ms.locfileid: "67692006"
 
 ## <a name="how-to-sign-in-to-visual-studio-for-mac"></a>Visual Studio for Mac にサインインする方法
 
-インターネットに接続していることを確認してから Visual Studio for Mac にサインインします。 サブスクリプションは、オンラインでのみアクティブ化できます。
+> [!TIP]
+> インターネットに接続していることを確認してから Visual Studio for Mac にサインインします。 > サブスクリプションは、オンラインでのみアクティブ化できます。 接続されていない場合は [後で行う] を選択し、接続されたときにメニューからログインします。
 
 Visual Studio for Mac にサインインするには、次の手順を実行します。
 
@@ -32,11 +39,11 @@ Visual Studio for Mac にサインインするには、次の手順を実行し�
 
     ![Microsoft の [資格情報] ダイアログ](media/signing-in-image13.png)
 
-    Xamarin の資格情報を使って Visual Studio for Mac にログインすることはできません。
-
 3. ログインすると、Visual Studio 2019 for Mac のスタート ウィンドウが表示されます。 ここから、プロジェクトを開くか、新しいプロジェクトを作成できます。
 
     ![サインイン成功](media/signing-in-image14.png)
+
+または、 **[Visual Studio] > [サインイン...]** メニュー項目を使用して、いつでもサインインおよびサインアウトできます。
 
 ## <a name="adding-multiple-user-accounts"></a>複数のユーザー アカウントを追加する
 
@@ -45,6 +52,14 @@ Visual Studio for Mac では、個人アカウントに複数のアカウント�
 ユーザー アカウントを追加するには、Visual Studio for Mac で **[Visual Studio]、[アカウント]** メニューの順に選択します。 **[追加]...** ボタンをクリックし、アカウントの資格情報を追加入力します。
 
 ![アカウントの管理](media/signing-in-image15.png)
+
+## <a name="view-or-change-your-profile-information"></a>ユーザーのプロファイル情報を表示または変更する
+
+1. **[Visual Studio] > [アカウント…]** に移動し、 **[マイ プロファイル]** ボタンを選択します。
+
+2. ブラウザー ウィンドウで、 **[プロファイルの編集]** を選択し、必要な設定を変更します。
+
+3. 完了したら、 **[変更の保存]** を選択します。
 
 ## <a name="see-also"></a>関連項目
 
