@@ -1,4 +1,4 @@
----
+﻿---
 title: ループの外 'の continue' を含めることはできません |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -24,9 +24,9 @@ ms.locfileid: "67825689"
 # <a name="cant-have-continue-outside-of-loop"></a>'continue' をループの外に設定できません。
 ループ外で **continue** ステートメントを使用しようとしました。 **continue** ステートメントは、以下の本文内でのみ使用できます。  
   
-- `do-while` ループ  
+- `do-while` ループ
   
-- `while` ループ  
+- `while` ループ
   
 - **for** ループ  
   
@@ -36,9 +36,9 @@ ms.locfileid: "67825689"
   
 - **continue** ステートメントは以下の本体内にのみ表示されます。  
   
-  - `do-while` ループ  
+  - `do-while` ループ
 
-  - `while` ループ  
+  - `while` ループ
 
   - **for** ループ  
 
