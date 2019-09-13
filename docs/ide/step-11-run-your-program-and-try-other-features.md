@@ -1,61 +1,66 @@
 ---
-title: '手順 11: プログラムの実行とその他の機能の使用'
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: '手順 11: アプリを実行して他の機能を試す'
+ms.date: 08/30/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43cb58c65131b5cc7e01b0f59306761a3b275dc7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3e82e0002255a406f02f85cbb2636be1aa249529
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925920"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887953"
 ---
-# <a name="step-11-run-your-program-and-try-other-features"></a>手順 11: プログラムの実行とその他の機能の使用
-プログラムが完成し、実行する準備が整いました。 プログラムを実行して <xref:System.Windows.Forms.PictureBox> の背景色を設定できます。 さらに詳しく学習するには、フォームの色の変更、ボタンとチェック ボックスのカスタマイズ、フォームのプロパティの変更などを行って、プログラムを変更してみてください。
+# <a name="step-11-run-your-app-and-try-other-features"></a>手順 11: アプリを実行して他の機能を試す
 
-サンプルの完全バージョンをダウンロードするには、「[Complete Picture Viewer tutorial sample](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)」 (画像ビューアーのチュートリアルの完全なサンプル) を参照してください。
+アプリが完成し、実行する準備が整いました。 アプリを実行して <xref:System.Windows.Forms.PictureBox> の背景色を設定できます。 さらに詳しく学習するには、フォームの色の変更、ボタンとチェック ボックスのカスタマイズ、フォームのプロパティの変更などを行って、アプリケーションを改善してみてください。
 
-![ビデオへのリンク](../data-tools/media/playvideo.gif)このトピックのビデオ版については、「[Tutorial 1:Create a picture viewer in Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216)」(チュートリアル 1: Visual Basic によるピクチャ ビューアーの作成 - ビデオ 5) または「[Tutorial 1:Create a picture viewer in C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206)」(C# によるピクチャ ビューアーの作成 - ビデオ 5) をご覧ください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
-
-## <a name="to-run-your-program-and-set-the-background-color"></a>プログラムを実行して背景色を設定するには
+## <a name="how-to-run-your-app-and-set-the-background-color"></a>アプリを実行して背景色を設定する方法
 
 1. **F5** キーを押すか、メニュー バーで **[デバッグ]**  >  **[デバッグ開始]** の順にクリックします。
 
-2. ピクチャを開く前に、 **[Set the background color]** ボタンをクリックします。 **[色]** ダイアログ ボックスが表示されます。
+1. ピクチャを開く前に、 **[Set the background color]** ボタンをクリックします。 **[色]** ダイアログ ボックスが表示されます。
 
-     ![[色] ダイアログ ボックス](../ide/media/express_colordialog.png)
- **[色]** ダイアログ ボックス
+     ![[色] ダイアログ ボックス](../ide/media/express_colordialog.png)<br/>
+***[色]*** *ダイアログ ボックス*
 
-3. 色を選択して PictureBox の背景色を設定します。 `backgroundButton_Click()` メソッドを詳しく調べて動作を確認します。
+1. 色を選択して PictureBox の背景色を設定します。 `backgroundButton_Click()` (または、`BackgroundButton_Click()`) メソッドを詳しく調べて動作を確認します。
 
     > [!NOTE]
     > ピクチャは、 **[ファイルを開く]** ダイアログ ボックスに URL を貼り付けることでインターネットから読み込むことができます。 背景色の表示を確認するには、背景が透明な画像を探してみてください。
 
-4. **[Clear the picture]** ボタンをクリックして、ピクチャが消去されることを確認します。 次に、 **[閉じる]** ボタンをクリックしてプログラムを終了します。
+1. **[Clear the picture]** ボタンをクリックして、ピクチャが消去されることを確認します。 次に、 **[閉じる]** ボタンをクリックしてアプリを終了します。
 
-## <a name="to-try-other-features"></a>その他の機能を試すには
+## <a name="try-other-features"></a>その他の機能を試す
 
-- **BackColor** プロパティを使用して、フォームとボタンの色を変更します。
+* **BackColor** プロパティを使用して、フォームとボタンの色を変更します。
 
-- **Font** プロパティと **ForeColor** プロパティを使用して、ボタンとチェック ボックスをカスタマイズします。
+* **Font** プロパティと **ForeColor** プロパティを使用して、ボタンとチェック ボックスをカスタマイズします。
 
-- フォームの **FormBorderStyle** プロパティと **ControlBox** プロパティを変更します。
+* フォームの **FormBorderStyle** プロパティと **ControlBox** プロパティを変更します。
 
-- フォームの **AcceptButton** プロパティと **CancelButton** プロパティを使用して、ユーザーが **Enter** キーまたは **Esc** キーを押したときに自動的にそれらのボタンが選択されるようにします。 **[ファイルを開く]** ダイアログ ボックスが、ユーザーが **Enter** キーを押したときに開き、**Esc** キーを押したときに閉じるようにプログラムを設定します。
+* フォームの **AcceptButton** プロパティと **CancelButton** プロパティを使用して、ユーザーが **Enter** キーまたは **Esc** キーを押したときに自動的にそれらのボタンが選択されるようにします。 ユーザーが **Enter** キーを押したときには **[ファイルを開く]** ダイアログ ボックスが開き、**Esc** キーを押したときには閉じるように、アプリを設定します。
 
-## <a name="to-continue-or-review"></a>続行または確認するには
+## <a name="next-steps"></a>次の手順
 
-- Visual Studio でのプログラミングの詳細については、「[プログラミングの概念](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6)」を参照してください。
+詳細については、引き続き以下のチュートリアルをご覧ください。
 
-- Visual Basic の詳細については、「[Visual Basic でのアプリケーションの開発](/dotnet/visual-basic/developing-apps/index)」を参照してください。
+> [!div class="nextstepaction"]
+> [チュートリアル 2: 制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
-- Visual C# の詳細については、「[C# 言語と .NET Framework の概要](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework)」を参照してください。
+チュートリアルの前の手順に戻るには、「[手順 10:Write code for additional buttons and a check box](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)」(手順 10: その他のボタンおよびチェック ボックスに対するコードの記述) をご覧ください。
 
-- 次のチュートリアルに進むには、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
+## <a name="see-also"></a>関連項目
 
-- チュートリアルの前の手順に戻るには、「[手順 10:Write code for additional buttons and a check box](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)」(手順 10: その他のボタンおよびチェック ボックスに対するコードの記述) をご覧ください。
+* [その他の C# のチュートリアル](/visualstudio/get-started/csharp/)
+* [その他の Visual Basic のチュートリアル](/visualstudio/get-started/visual-basic/)
+* [C++ チュートリアル](../ide/getting-started-with-cpp-in-visual-studio.md)

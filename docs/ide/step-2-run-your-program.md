@@ -1,61 +1,72 @@
 ---
-title: '手順 2: プログラムを実行する'
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: '手順 2: Picture Viewer アプリを実行する'
+ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f6d64d515ac7fab454b123686e671d9bcd1d2d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a6c7e90f8113f5fa03da907db5dbb8f374a564e7
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918924"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887918"
 ---
-# <a name="step-2-run-your-program"></a>手順 2: プログラムを実行する
-新しいソリューションを作成すると、実際には実行するプログラムが作成されます。 まだ実行される処理は少なく、タイトル バーに **Form1** と表示された空のウィンドウを表示するだけのプログラムですが、 もうおわかりのように実行することはできます。
+# <a name="step-2-run-your-picture-viewer-app"></a>手順 2: Picture Viewer アプリを実行する
 
-![ビデオへのリンク](../data-tools/media/playvideo.gif)このトピックのビデオ版については、次をご覧ください。「[Tutorial 1:Create a picture viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209)」(チュートリアル 1: Visual Basic でピクチャ ビューアーを作成する - ビデオ 1) または「[Tutorial 1:Create a picture viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199)」(チュートリアル 1: C# でピクチャ ビューアーを作成する - ビデオ 1) をご覧ください。 これらのビデオでは、旧バージョンの Visual Studio を使用しているため、一部のメニュー コマンドやその他のユーザー インターフェイス要素が若干異なります。 ただし、概念および手順は、現在のバージョンの Visual Studio でも同様です。
+Windows フォーム アプリ プロジェクトを作成するとき、実際には実行されるプログラムをビルドします。 このチュートリアルでは、まだ Picture Viewer アプリの機能をあまり利用しません。&mdash; 後で利用します。 この段階では、タイトル バーに **Form1** と表示された空のウィンドウが開きます。
 
-## <a name="to-run-your-program"></a>プログラムを実行するには
+アプリを実行する方法を次に示します。 
 
-1. プログラムを実行するには、次のいずれかの方法を使用します。
+1. 次のいずれかの方法を選択してください。
 
     - **F5** キーを押します。
 
     - メニュー バーで、 **[デバッグ]**  >  **[デバッグ開始]** の順に選択します。
 
-    - ツール バーで、 **[デバッグ開始]** ボタンを選択します (次の図を参照)。
+    - ツールバーで、 **[デバッグ開始]** ボタンを選択します (次の図を参照)。
 
-         ![[デバッグの開始] ツール バー ボタン](../ide/media/express_icondebug.png)
- **[デバッグの開始]** ツール バー ボタン
+      ![[デバッグの開始] ツール バー ボタン](../ide/media/express_icondebug.png)<br>
+      ***[デバッグの開始]*** *ツールバー ボタン*
 
-2. Visual Studio でプログラムが実行され、**Form1** というウィンドウが表示されます。 次の図は、作成したプログラムを示しています。 この実行中のプログラムに対し、これから機能を追加していきます。
+1. Visual Studio でアプリが実行され、**Form1** というウィンドウが表示されます。 次のスクリーンショットは、先ほど作成したアプリを示しています。 アプリが実行されているので、すぐにそれに追加します。
 
-     ![実行中の Windows フォーム アプリケーション プログラム](../ide/media/express_firstrun.png)
-実行中の **Windows フォーム** アプリケーション プログラム
+     ![実行中の Windows フォーム アプリ](../ide/media/express_firstrun.png)<br>
+***Windows フォーム アプリ***、*実行中*
 
-3. Visual Studio 統合開発環境 (IDE) に戻り、新しいツール バーを参照します。 プログラムを実行すると、追加ボタンがツール バーに表示されます。 これらのボタンを使用するとプログラムの停止や開始などの操作ができ、発生する可能性のあるエラー (バグ) の追跡に役立ちます。 この例では、単にプログラムを開始および停止するために使用します。
+1. Visual Studio 統合開発環境 (IDE) に戻り、新しいツール バーを参照します。 アプリケーションを実行すると、追加ボタンがツール バーに表示されます。 これらのボタンを使用するとアプリの停止や開始などの操作ができ、発生する可能性のあるエラー (バグ) の追跡に役立ちます。 この例では、アプリを開始および停止するために使用しています。
 
-     ![デバッグ ツール バー](../ide/media/express_debugtoolbar.png)
-**デバッグ** ツール バー
+     ![デバッグ ツール バー](../ide/media/express_debugtoolbar.png)<br>
+***デバッグ*** *ツール バー*
 
-4. プログラムを停止するには、次のいずれかの方法を使用します。
+1. アプリを停止するには、次のいずれかの方法を使用します。
 
     - ツール バーで、 **[デバッグの停止]** ボタンを選択します。
 
     - メニュー バーで、 **[デバッグ]**  >  **[デバッグの停止]** の順に選択します。
 
+    - キーボードを使用して、**Shift**+**F5** キーを押します。
+
     - **[Form1]** ウィンドウの上隅にある **X** ボタンを選択します。
 
     > [!NOTE]
-    > IDE 内からプログラムを実行する作業は、通常はプログラムでバグ (エラー) を特定して修正することが目的であるためデバッグと呼ばれます。 このプログラムは小さくて、実際には何も実行しませんが、それでも実際のプログラムです。 同じ手順で他のプログラムを実行し、デバッグします。 デバッグの詳細については、「[デバッガーでのはじめに](../debugger/debugger-feature-tour.md)」をご覧ください。
+    > IDE 内からアプリを実行する作業は、通常はアプリケーションでバグ (エラー) を特定して修正することが目的であるためデバッグと呼ばれます。 このアプリは小さくて、実際には何も実行しませんが、それでも本物のプログラムです。 同じ手順で他のプログラムを実行し、デバッグします。 デバッグの詳細については、「[デバッガーでのはじめに](../debugger/debugger-feature-tour.md)」をご覧ください。
 
-## <a name="to-continue-or-review"></a>続行または確認するには
+## <a name="next-steps"></a>次の手順
 
-- チュートリアルの次の手順に進むには、「[手順 3:フォームのプロパティの設定](../ide/step-3-set-your-form-properties.md)」をご覧ください。
+* チュートリアルの次の手順に進むには、「 **[手順 3:フォームのプロパティの設定](../ide/step-3-set-your-form-properties.md)** 」を参照してください。
 
-- チュートリアルの前の手順に戻るには、「[手順 1:Windows フォーム アプリケーション プロジェクトの作成](../ide/step-1-create-a-windows-forms-application-project.md)」をご覧ください。
+* チュートリアルの前の手順に戻るには、「[手順 1: Windows フォーム アプリケーション プロジェクトの作成](../ide/step-1-create-a-windows-forms-application-project.md)」を参照してください。
+
+## <a name="see-also"></a>関連項目
+
+* [チュートリアル 2: 制限時間ありの計算クイズの作成](tutorial-2-create-a-timed-math-quiz.md)
+* [チュートリアル 3: 絵合わせゲームの作成](tutorial-3-create-a-matching-game.md)

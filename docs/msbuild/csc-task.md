@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39287eb2b1aec27dcb0c08c40875ce579b3a6bea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9df54befff79b82703cb363fea92536285c68232
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745781"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888030"
 ---
 # <a name="csc-task"></a>Csc タスク
 *csc.exe* をラップし、実行可能ファイル ( *.exe* ファイル)、ダイナミック リンク ライブラリ ( *.dll* ファイル)、またはコード モジュール ( *.netmodule* ファイル) を生成します。 *csc.exe* の詳細については、「[C# コンパイラ オプション](/dotnet/csharp/language-reference/compiler-options/index)」を参照してください。
@@ -42,7 +42,7 @@ ms.locfileid: "66745781"
 | `CodePage` | 省略可能な `Int32` 型のパラメーターです。<br /><br /> コンパイルですべてのソース コード ファイルに使用するコード ページを指定します。 詳しくは、「[-codepage (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option)」をご覧ください。 |
 | `DebugType` | 省略可能な `String` 型のパラメーターです。<br /><br /> デバッグの種類を指定します。 `DebugType` には、`full` または `pdbonly` を指定できます。 既定値は `full` です。デバッガーを実行中のプログラムに添付できます。 `pdbonly` を指定すると、プログラムがデバッガーで開始されたとき、ソース コードのデバッグが有効になりますが、実行中のプログラムがデバッガーにアタッチされているときにのみアセンブラーが表示されます。<br /><br /> このパラメーターは `EmitDebugInformation` パラメーターをオーバーライドします。<br /><br /> 詳しくは、「[-debug (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)」をご覧ください。 |
 | `DefineConstants` | 省略可能な `String` 型のパラメーターです。<br /><br /> プリプロセッサ シンボルを定義します。 詳しくは、「[-define (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option)」をご覧ください。 |
-| `DelaySign` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、完全署名されたアセンブリを必要とすることが指定されます。 `false` の場合、アセンブリに公開キーを含めることだけを要求するように指定されます。<br /><br /> `KeyFile` または `KeyContainer` パラメーターと併用しない限り、このパラメーターには何の効果もありません。<br /><br /> 詳しくは、「[-delaysign (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option)」をご覧ください。 |
+| `DelaySign` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、アセンブリに公開キーを含めることだけを要求するように指定されます。 `false` の場合、完全署名されたアセンブリを必要とすることが指定されます<br /><br /> `KeyFile` または `KeyContainer` パラメーターと併用しない限り、このパラメーターには何の効果もありません。<br /><br /> 詳しくは、「[-delaysign (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option)」をご覧ください。 |
 | `Deterministic` | 省略可能な `Boolean` 型のパラメーターです。<br/><br/> `true` の場合、バイナリ コンテンツがコンパイル全体で同一のアセンブリをコンパイラに出力させます (入力が同一である場合)。<br/><br/>詳しくは、「[-deterministic (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option)」をご覧ください。 |
 | `DisabledWarnings` | 省略可能な `String` 型のパラメーターです。<br /><br /> 無効にする警告の一覧を指定します。 詳しくは、「[-nowarn (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option)」をご覧ください。 |
 | `DocumentationFile` | 省略可能な `String` 型のパラメーターです。<br /><br /> ドキュメント コメントを XML ファイルに出力します。 詳しくは、「[-doc (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option)」をご覧ください。 |

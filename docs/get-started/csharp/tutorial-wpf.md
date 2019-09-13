@@ -14,22 +14,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d146416190924c8f1835ef17bc0fb622fcc53e03
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: facd2ed28ae4eb3e34843bff331567c4c8c55526
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180218"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864807"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>チュートリアル: C\# で単純なアプリケーションを作成する
 
 このチュートリアルを完了すると、Visual Studio を使用してアプリケーションを開発する際に使用できるさまざまなツール、ダイアログ ボックス、およびデザイナーの使用方法を習得できます。 "Hello, World" アプリケーションの作成、UI の設計、コードの追加、エラーのデバッグを行いながら、統合開発環境 ([IDE](visual-studio-ide.md)) での作業方法について学習します。
 
+## <a name="prerequisites"></a>必須コンポーネント
+
 ::: moniker range="vs-2017"
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ページに移動し、無料試用版をインストールしてください。
+Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?) ページに移動し、無料試用版をインストールしてください。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。
+
+- Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。
+- このチュートリアルでは、.NET Framework または .NET Core を使用できます。 .NET Core の方がより新しく、より最新のフレームワークです。 .NET Core には、Visual Studio 2019 バージョン 16.3 以降が必要です。
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>IDE の構成
@@ -76,9 +80,12 @@ Visual Studio でアプリケーションを作成するには、最初にプロ
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../../get-started/media/vs-2019/start-window-create-new-project.png "[新しいプロジェクトの作成] ウィンドウのスクリーンショット")
 
-1. **[新しいプロジェクトの作成]** 画面で、"WPF" を検索し、 **[WPF アプリ (.NET Framework)]** を選択してから、 **[次へ]** を選択します。
+1. **[新しいプロジェクトの作成]** 画面で、"WPF" を検索し、 **[WPF アプリ (.NET Core)]** を選択してから、 **[次へ]** を選択します。
 
    ![[新しいプロジェクトの作成] ダイアログの WPF アプリ テンプレート](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "[新しいプロジェクトの作成] ダイアログの WPF アプリ テンプレートのスクリーンショット")
+
+   > [!NOTE]
+   > .NET Framework 用と .NET Core 用の 2 つの WPF デスクトップ テンプレートが見つかることがあります。 .NET Core テンプレートは、Visual Studio 2019 バージョン 16.3 以降で使用できます。 このチュートリアルではどちらでも使用できますが、新しい開発には .NET Core をお勧めします。
 
 1. 次の画面で、プロジェクトに **HelloWPFApp** という名前を付けて、 **[作成]** を選択します。
 
@@ -99,31 +106,23 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>MainWindow.xaml の名前を変更する
 
-それでは、MainWindow に具体的な名前を付けましょう。
-
-1. **ソリューション エクスプローラー**で、*MainWindow.xaml* を選択します。 **[プロパティ]** ウィンドウが表示されるはずですが、表示されない場合は、 **[表示]** メニューを選択し、 **[プロパティ ウィンドウ]** 項目を選択します。 (または、**F4** キーを押します。)
-
-1. **[File Name]** プロパティを `Greetings.xaml`に変更します。
-
-     ![ファイル名が強調表示されたプロパティ ウィンドウ](../media/exploreide-filenameinpropertieswindow.png "ファイル名が強調表示されたプロパティ ウィンドウのスクリーンショット")
-
-     **ソリューション エクスプローラー**に表示されているこのファイルの名前が *Greetings.xaml* になり、入れ子になっているコード ファイルの名前が *Greetings.xaml.cs* になります。 このコード ファイルは、 *.xaml* ファイル ノードの下に入れ子になっており、相互に密接に関連していることが示されます。
-
-     ![[プロパティ] ウィンドウと、Greetings ファイル名が含まれる [ソリューション エクスプローラー] ウィンドウ](../media/exploreide-greetingsfilename.png "[プロパティ] ウィンドウと、Greetings ファイル名が含まれる [ソリューション エクスプローラー] ウィンドウのスクリーンショット")     
+それでは、MainWindow に具体的な名前を付けましょう。 **ソリューション エクスプローラー**で、*MainWindow.xaml* を右クリックし、 **[名前の変更]** を選択します。 ファイルの名前を *Greetings.xaml* に変更します。
 
 ## <a name="design-the-user-interface-ui"></a>ユーザー インターフェイス (UI) のデザイン
+
+デザイナーを開いていない場合は、*Greetings.xaml* を選択し、**Shift** + **F7** キーを押してデザイナーを開きます。
 
 このアプリケーションに、次の 3 種類のコントロールを追加します: <xref:System.Windows.Controls.TextBlock> コントロール、2 つの <xref:System.Windows.Controls.RadioButton> コントロール、<xref:System.Windows.Controls.Button> コントロール。
 
 ### <a name="add-a-textblock-control"></a>TextBlock コントロールを追加する
 
-1. **Ctrl**+**Q** と入力し、検索ボックスを有効にして「**ツールボックス**」と入力します。 結果リストから **[表示] > [ツールボックス]** を選択します。
+1. **Ctrl** + **Q** キーを押して検索ボックスを有効にし、「**ツールボックス**」と入力します。 結果リストから **[表示] > [ツールボックス]** を選択します。
 
 1. **[ツールボックス]** で、 **[コモン WPF コントロール]** ノードを展開し、TextBlock コントロールを表示します。
 
      ![TextBlock コントロールが強調表されているツールボックス](../media/exploreide-textblocktoolbox.png "TextBlock コントロールが強調表されている [ツールボックス] ウィンドウのスクリーンショット")
 
-1. **TextBlock** 項目を選択してデザイン サーフェイス上のウィンドウにドラッグし、TextBlock コントロールをデザイン サーフェイスに追加します。 ウィンドウの上部付近の中央にコントロールを配置します。
+1. **TextBlock** 項目を選択してデザイン サーフェイス上のウィンドウにドラッグし、TextBlock コントロールをデザイン サーフェイスに追加します。 ウィンドウの上部付近の中央にコントロールを配置します。 Visual Studio 2019 以降では、赤いガイドラインを使用してコントロールを中央揃えにすることができます。
 
     ウィンドウは次の図のようになります。
 
@@ -159,7 +158,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
      ![RadioButton コントロールが選択された [ツールボックス] ウィンドウ](../media/exploreide-radiobuttontoolbox.png "RadioButton コントロールが選択された [ツールボックス] ウィンドウのスクリーンショット")
 
-1. **RadioButton** 項目を選択してデザイン サーフェイス上のウィンドウにドラッグし、RadioButto コントロールを 2 つデザイン サーフェイスに追加します。 TextBlock コントロールの下にボタンが並んで表示されるように、ボタンを移動します (ボタンを選択し、方向キーを使います)。
+1. **RadioButton** 項目を選択してデザイン サーフェイス上のウィンドウにドラッグし、RadioButto コントロールを 2 つデザイン サーフェイスに追加します。 TextBlock コントロールの下にボタンが並んで表示されるように、ボタンを移動します (ボタンを選択し、方向キーを使います)。 赤いガイドラインを使用してコントロールを配置します。
 
    ウィンドウは、次のようになります。
 
@@ -175,11 +174,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 ### <a name="add-display-text-for-each-radio-button"></a>各オプション ボタンの表示テキストを追加する
 
-1. デザイン サーフェイスで、HelloButton のショートカット メニューを開きます。HelloButton の右マウス ボタンを押し、 **[テキストの編集]** を選択し、「`Hello`」と入力します。
-
-1. GoodbyeButton のショートカット メニューを開きます。GoodbyeButton の右マウス ボタンを押し、 **[テキストの編集]** を選択し、「`Goodbye`」と入力します。
-
-   XAML マークアップは次の例のようになります。
+1. XAML で、`HelloButton` および `GoodbyeButton` の **Content** 属性を、`"Hello"` および `"Goodbye"` に更新します。 XAML マークアップは次の例のようになります。
 
    ```xaml
    <Grid>
@@ -211,7 +206,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 ### <a name="add-the-button-control"></a>Button コントロールを追加する
 
-1. **[ツールボックス]** で、 **Button** コントロールを探し、デザイン サーフェイスの RadioButton コントロールの下に追加します。デザイン ビュー内のフォームにドラッグすると追加されます。
+1. **[ツールボックス]** で、 **Button** コントロールを探し、デザイン サーフェイスの RadioButton コントロールの下に追加します。デザイン ビュー内のフォームにドラッグすると追加されます。 Visual Studio 2019 以降を使用している場合は、赤い線を使ってコントロールを中央揃えにすることができます。
 
 1. XAML ビューで、Button コントロールの **[Content]** の値を `Content="Button"` から `Content="Display"`に変更し、変更を保存します。
 
@@ -239,7 +234,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
      *Greetings.xaml.cs* が開き、`Button_Click` イベントにカーソルが表示されます。
 
     ```csharp
-    private void Button_Click_1(object sender, RoutedEventArgs e)
+    private void Button_Click(object sender, RoutedEventArgs e)
     {
 
     }
@@ -286,7 +281,16 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 1. `StartupUri="MainWindow.xaml"` を `StartupUri="Greetings.xaml"` に変更し、変更を保存します。
 
-デバッガーを再度起動します (**F5** を押します)。 アプリケーションの **Greetings** ウィンドウが表示されます。 アプリケーション ウィンドウを閉じ、デバッグを停止します。
+デバッガーを再度起動します (**F5** を押します)。 アプリケーションの **Greetings** ウィンドウが表示されます。
+
+::: moniker range="vs-2017"
+![実行中のアプリのスクリーンショット](media/exploreide-wpf-running-app.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![実行中のアプリのスクリーンショット](media/vs-2019/exploreide-wpf-running-app.png)
+::: moniker-end
+
+アプリケーション ウィンドウを閉じ、デバッグを停止します。
 
 ### <a name="debug-with-breakpoints"></a>ブレークポイントを使用してデバッグする
 
@@ -325,6 +329,12 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 1. アプリケーション ウィンドウを閉じ、デバッグを停止します。
 
 1. メニュー バーで、 **[デバッグ]**  >  **[すべてのブレークポイントを無効にする]** の順に選択します。
+
+### <a name="view-a-representation-of-the-ui-elements"></a>UI 要素の表現を表示する
+
+実行中のアプリで、ウィンドウの上部にウィジェットが表示されます。 これは、いくつかの便利なデバッグ機能にすばやくアクセスできるランタイム ヘルパーです。 最初のボタン **[ライブ ビジュアル ツリーに移動する]** をクリックします。 ウィンドウにページのすべてのビジュアル要素が含まれるツリーが表示されます。 ノードを展開して、追加したボタンを見つけます。
+
+![ライブ ビジュアル ツリー ウィンドウのスクリーンショット](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>アプリケーションのリリース バージョンのビルド
 

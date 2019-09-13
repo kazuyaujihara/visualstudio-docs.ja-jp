@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbecfb7e74b38bb935414e701618cef361bf0506
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 2f2ff06cc920568b8c344fef42d01408d3134fd8
+ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180016"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739304"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio のインストールとアップグレードの問題のトラブルシューティング
 
@@ -29,9 +29,9 @@ ms.locfileid: "70180016"
 
 このトラブルシューティング ガイドには、インストールに関する問題のほとんどを解決できるステップ バイ ステップの手順が含まれています。
 
-## <a name="how-to-troubleshoot-an-online-installation"></a>オンライン インストールのトラブルシューティング方法
+## <a name="troubleshoot-an-online-installation"></a>オンライン インストールのトラブルシューティング
 
-次の手順は、通常のオンライン インストール用に最適化されています。 オフライン インストールに影響を与える問題については、「[オフライン インストールのトラブルシューティング方法](#how-to-troubleshoot-an-offline-installation)」をご覧ください。
+次の手順は、通常のオンライン インストール用に最適化されています。 オフライン インストールに影響を与える問題については、「[オフライン インストールのトラブルシューティング方法](#troubleshoot-an-offline-installation)」をご覧ください。
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>手順 1 - この問題が既知の問題であるかどうかを確認する
 
@@ -82,7 +82,7 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 
 ::: moniker range="vs-2017"
 
-1. セットアップ ログを収集します。 詳細については、「[Visual Studio のインストール ログを取得する方法](#how-to-get-visual-studio-installation-logs)」をご覧ください。
+1. セットアップ ログを収集します。 詳細については、「[Visual Studio のインストール ログを取得する方法](#get-installation-logs)」をご覧ください。
 2. Visual Studio インストーラーを開き、 **[問題の報告]** をクリックして、Visual Studio フィードバック ツールを開きます。
 ![[フィードバックの送信] ボタンからフィードバック ツールを開くことができます](media/report-a-problem.png)
 3. 問題のレポートにタイトルを付け、関連する詳細を入力します。 **[次へ]** をクリックして **[添付ファイル]** セクションに移動し、生成されたログ ファイルを添付します (通常、ファイルは `%TEMP%\vslogs.zip` にあります)。
@@ -92,7 +92,7 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 
 ::: moniker range="vs-2019"
 
-1. セットアップ ログを収集します。 詳細については、「[Visual Studio のインストール ログを取得する方法](#how-to-get-visual-studio-installation-logs)」をご覧ください。
+1. セットアップ ログを収集します。 詳細については、「[Visual Studio のインストール ログを取得する方法](#get-installation-logs)」をご覧ください。
 2. Visual Studio インストーラーを開き、 **[問題の報告]** をクリックして、Visual Studio フィードバック ツールを開きます。
 ![[フィードバックの送信] ボタンからフィードバック ツールを開くことができます](media/vs-2019/vs-installer-report-problem.png)
 3. 問題のレポートにタイトルを付け、関連する詳細を入力します。 **[次へ]** をクリックして **[添付ファイル]** セクションに移動し、生成されたログ ファイルを添付します (通常、ファイルは `%TEMP%\vslogs.zip` にあります)。
@@ -112,7 +112,7 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 
 前の手順のいずれに従っても Visual Studio のインストールまたはアップグレードに失敗する場合は、詳細なサポートのために[**ライブ チャット**](https://visualstudio.microsoft.com/vs/support/#talktous) サポート オプション (英語のみ) を使用してお問い合わせください。
 
-## <a name="how-to-troubleshoot-an-offline-installation"></a>オフライン インストールのトラブルシューティング方法
+## <a name="troubleshoot-an-offline-installation"></a>オフライン インストールのトラブルシューティング
 
 ローカル レイアウトからインストールする際に役立つ可能性がある、既知の問題と回避策を次の表に示します。
 
@@ -121,7 +121,7 @@ Visual Studio インストーラーのブートストラップは、Visual Studi
 | ユーザーにファイルへのアクセス権がない。 | アクセス許可 (ACL) | オフライン インストールを共有する*前*に、他のユーザーに読み取りアクセス権を付与するように、必ずアクセス許可 (ACL) を調整してください。 |
 | 新しいワークロード、コンポーネント、または言語をインストールできない。  | `--layout`  | 部分レイアウトからインストールし、その部分レイアウトには以前ダウンロードしなかったワークロード、コンポーネント、または言語を選択した場合は、インターネットにアクセスできることを確認してください。 |
 
-## <a name="how-to-get-visual-studio-installation-logs"></a>Visual Studio のインストール ログを取得する方法
+## <a name="get-installation-logs"></a>インストールのログを取得する
 
 セットアップ ログは、インストールに関する問題の多くをトラブルシューティングするために必要です。 Visual Studio インストーラーの [[問題の報告]](../ide/how-to-report-a-problem-with-visual-studio.md) を使用して問題を送信するとき、レポートには自動でこれらのログが含まれます。
 

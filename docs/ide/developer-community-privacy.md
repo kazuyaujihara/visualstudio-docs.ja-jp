@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86578a300da8ea1cdb739db4d1c02505a6d97180
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
+ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634853"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864689"
 ---
 # <a name="developer-community-data-privacy"></a>開発者コミュニティのデータのプライバシー
 
@@ -68,8 +68,14 @@ ms.locfileid: "69634853"
 
 - Python ログ (存在する場合)
 
-- スクリーン ショット (含めることを選択した場合)
+- Windows フォーム ログ (存在する場合)
 
+> [!NOTE]
+> ログ ファイルが含まれる問題レポートを送信することによって権限を付与した場合にのみ、ログ ファイルは Microsoft に送信されます。 [問題の報告] ウィンドウの [サマリー] ステップで、どのファイルが含まれているかを確認できます (このメモのスクリーンショットを参照)。 収集されたログは %temp% フォルダーに格納され、定期的に、および各アップロードの後で、クリーンアップされます。 問題レポートにログを含めたくない場合は、レポートを送信する前に、%temp% フォルダーからファイルを削除します。  
+  > ![問題の報告 - 収集されたログのサマリー](media/report-a-problem-logs-collected.png)
+
+- スクリーン ショット (含めることを選択した場合)
+  
 - 記録データ (以下を含む記録を含めるように選択した場合)
 
   - 問題を再現する手順
