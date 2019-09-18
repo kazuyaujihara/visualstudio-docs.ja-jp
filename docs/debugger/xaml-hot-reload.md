@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b5591d9c05ee0449b9ff77729d73722c18e4d3a
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: aedc785a86966cf6425dfe35c5925efc9b78a509
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987675"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012601"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>XAML を使用した実行中の XAML コードの作成とデバッグ Visual Studio でのホットリロード
 
@@ -38,7 +38,7 @@ XAML ホットリロードは、次のような場合に特に役立ちます。
 
 次の図は、ライブビジュアルツリーを使用してソースコードを開き、XAML ホットリロードを使用してボタンのテキストとボタンの色を変更する方法を示しています。
 
-![XAML ホットリロード](../debugger/media/xaml-hot-reload-using.gif)
+![XAML ホット リロード](../debugger/media/xaml-hot-reload-using.gif)
 
 > [!NOTE]
 > Visual Studio XAML ホットリロードは、現在、Visual Studio でアプリケーションを実行している場合、またはデバッガーがアタッチされた (**F5**または**デバッグを開始**する) Blend for Visual Studio 場合にのみサポートされます。 [環境変数を手動で設定](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process)しない限り、[プロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)を使用してこのエクスペリエンスを有効にすることはできません。
@@ -66,5 +66,5 @@ XAML ホットリロードの使用中に、次のエラーが発生する場合
 
 ## <a name="see-also"></a>関連項目
 
-[Xaml ホットリロード](xaml-hot-reload-troubleshooting.md)
-[xaml のトラブルシューティング Xamarin. フォームのホットリロード](/xamarin/xamarin-forms/xaml/hot-reload)
+* [XAML ホットリロードのトラブルシューティング](xaml-hot-reload-troubleshooting.md)
+* [Xamarin. フォームの XAML ホットリロード](/xamarin/xamarin-forms/xaml/hot-reload)
