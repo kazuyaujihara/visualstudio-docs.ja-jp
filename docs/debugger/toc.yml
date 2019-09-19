@@ -42,6 +42,8 @@
       items:
         - name: ブレークポイントの使用
           href: using-breakpoints.md
+        - name: トレースポイントの使用
+          href: using-tracepoints.md
         - name: ブレークポイントのトラブルシューティング
           href: troubleshooting-breakpoints.md
     - name: データ検査
