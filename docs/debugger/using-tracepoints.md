@@ -1,6 +1,6 @@
 ---
 title: デバッガーでトレースポイントを使用する |Microsoft Docs
-ms.date: 9/4/2019
+ms.date: 9/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - tracepoints, about tracepoints
@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: fe9d96290474283164ed9761a0cb9aa7734f1a9d
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
-ms.translationtype: HT
+ms.openlocfilehash: 7680b305fad6f8ea1d7961ec5a70ddafd578c77d
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71069032"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095262"
 ---
 # <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでのトレースポイントの使用
 
@@ -96,7 +96,6 @@ ms.locfileid: "71069032"
 
 ![変更時の条件式](../debugger/media/conditionalexpressionwhenchanged.png "変更時の条件式")
 
-
 **[変更された場合]** オプションの動作は、プログラミング言語によって異なります。
 
 - ネイティブコードの場合、デバッガーは条件の最初の評価を変更と見なしません。そのため、最初の評価ではトレースポイントにヒットしません。
@@ -133,3 +132,11 @@ ms.locfileid: "71069032"
 オブジェクトのプロパティまたは属性を検査するときに、その値が変化することがあります。 これは、トレースポイント機能自体に起因するバグではありませんが、トレースポイントを使用してオブジェクトを検査することで、これらの偶発的な変更を回避することはできません。
 
 **アクション**メッセージボックスで式を評価する方法は、現在開発に使用している言語とは異なる場合があります。 たとえば、文字列を出力する場合、通常はまたは`Debug.WriteLine()` `console.log()`を使用している場合でも、メッセージを引用符で囲む必要はありません。 また、出力式の中かっこ`{ }`構文 () は、開発言語で値を出力する場合とは異なる場合もあります。 (ただし、中かっこ (`{ }`) 内の内容は、開発言語の構文を使用して記述する必要があります)。
+
+## <a name="see-also"></a>関連項目
+
+- [デバッグとは](../debugger/what-is-debugging.md)
+- [Visual Studio C#を使用してより優れたコードを記述する](../debugger/write-better-code-with-visual-studio.md)
+- [デバッグに関する最初の確認](../debugger/debugger-feature-tour.md)
+- [デバッガー内の式](expressions-in-the-debugger.md)
+- [ブレークポイントの使用](../debugger/using-breakpoints.md)
