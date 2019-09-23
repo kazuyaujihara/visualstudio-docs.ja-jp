@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7aef839027639770e60292210aaddf998c97fce0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926539"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079579"
 ---
 # <a name="troubleshoot-code-coverage"></a>コード カバレッジのトラブルシューティング
 
@@ -56,6 +56,8 @@ Visual Studio Enterprise が必要です。
 *.pdb* ファイルは、 *.dll* または *.exe* ファイルと同じビルドから生成されている必要があります。
 
 解決&mdash;ビルドが *.pdb* ファイルを生成するように設定されていることを確認します。 プロジェクトのビルド時に *.pdb* ファイルが更新されない場合は、プロジェクトのプロパティを開き、 **[ビルド]** ページ、 **[詳細設定]** の順に選択し、 **[デバッグ情報]** を確認します。
+
+C++ プロジェクトの場合は、生成された .pdb ファイルに完全なデバッグ情報が含まれていることを確実にします。 プロジェクトのプロパティを開き、 **[リンカー]**  >  **[デバッグ]**  >  **[情報の生成]** が **[共有と発行用に最適化されたデバッグ情報の生成]** (/DEBUG:FULL) に設定されていることを確認します。
 
 *.pdb* ファイルと *.dll* または *.exe* ファイルが別の場所にある場合は、 *.pdb* ファイルを同じディレクトリにコピーします。 別の場所の *.pdb* ファイルを検索するようにコード カバレッジ エンジンを構成することもできます。 詳細については、「[コード カバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)」を参照してください。
 

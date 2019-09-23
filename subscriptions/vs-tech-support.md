@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 705ec75afc2ba870b5e596f63e27fae92fbedf58
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 6474cf3322b878055053eaaf1f1943ebc546b206
+ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681597"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936899"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化して使用する
 Visual Studio サブスクリプションのテクニカル サポート特典は、[サポート ライフサイクル](https://support.microsoft.com/lifecycle/search)のメインストリーム サポート フェーズにある製品の**非運用環境**で発生した障害対応の問題を解決するためのものです。 Visual Studio Enterprise の Standard および年間のクラウド サブスクリプションは、特典のアクティブ化から最長 1 年間、4 つのインシデントを受け取り、Visual Studio Professional Standard および年間のクラウド サブスクリプションが 2 つのインシデントを受け取ります。 サブスクリプションが最新である間は、特典のアクティブ化を行う必要があります。
@@ -23,6 +23,13 @@ Visual Studio サブスクリプションのテクニカル サポート特典�
 > 特定のレベルのすべてのサブスクリプションで、サポート インシデントを受け取れるわけではありません。 FTE、NFR、MPN、MCT およびその他のプログラムを通じて取得したサブスクリプションは、サポート インシデントを受け取りません。 自分のサブスクリプションにテクニカル サポート インシデントを受け取る資格がない場合、テクニカル サポート タイルは使用可能な特典に表示されません。
 
 **特典を使用してサポート リクエストを送信するには、最初に特典をアクティブ化する必要があります。次のセクションの手順に従って、アクティブ化を完了します。**
+
+## <a name="supported-products"></a>サポートされる製品 
+Visual Studio IDE や Azure DevOps Server などの開発者ツールでは、Visual Studio サブスクリプションを介してメインストリームと拡張サポートの両方を受け取ります。
+
+Visual Studio サブスクリプションからダウンロードされた開発者以外の製品 (SQL、Windows、SharePoint など) は、メインストリーム サポートのみの対象となります。 これらの製品は、アプリケーションを設計、開発、テスト、またはデモンストレーションする開発環境に対してのみライセンスされます。 これらの製品は、運用環境に対してはライセンスされません。
+
+製品レベルの説明 - 指定した製品のサポートにサポート プランを使用できない場合は (コード: 8)、 **[使用できないサポートプラン]** を展開します。 お客様のサポート契約は、選択した製品バージョンには使用できません。
 
 ## <a name="how-to-activate-the-benefit"></a>特典をアクティブ化する方法
 1. [https://my.visualstudio.com/Benefits](https://my.visualstudio.com/Benefits ) に進み、[サポート] セクションまで下方にスクロールし、[テクニカル サポート] タイル上で **[Chat to activate]\(アクティブ化のためのチャット\)** をクリックします。

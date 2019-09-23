@@ -1,7 +1,7 @@
 ---
 title: Android および iOS での OpenGL ES アプリケーションのビルド | Microsoft Docs
 ms.custom: ''
-ms.date: 05/16/2019
+ms.date: 09/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b235576f21b63a7be4170f36abf58bed9fab9df3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 259092668c336a90758a669efdc4b154b2097cab
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923917"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079278"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Android および iOS での OpenGL ES アプリケーションのビルド
 
@@ -25,17 +25,21 @@ ms.locfileid: "68923917"
 
 ## <a name="requirements"></a>必要条件
 
-iOS 用および Android 用 OpenGL ES アプリを作成するには、その前にすべてのシステム要件を満たしていることを確認してください。 C++ によるモバイル開発ワークロードをまたインストールしていない場合は、Visual Studio インストーラーにインストールします。 iOS 用にビルドするには、オプションの C++ iOS 開発ツールを含めます。 Android 用にビルドするには、C++ Android 開発ツールと、必要な以下のサードパーティ ツールをインストールします。Android NDK、Apache Ant、Google Android Emulator、Intel Hardware Accelerated Execution Manager。 次に、システムでの実行に向けて Intel HAXM と Android Emulator を構成します。 詳細情報と詳細な手順については、「[C++ によるクロスプラットフォーム モバイル開発をインストールする](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)」をご覧ください。 iOS アプリをビルドしてテストするには、インストール手順に従って設定されている Mac コンピューターが必要になります。 iOS 開発の設定方法について詳しくは、[iOS を使用してビルドするためのツールのインストールと構成](../cross-platform/install-and-configure-tools-to-build-using-ios.md)に関するページをご覧ください。
+iOS 用および Android 用 OpenGL ES アプリを作成するには、その前にすべてのシステム要件を満たしていることを確認してください。 C++ によるモバイル開発ワークロードをまたインストールしていない場合は、Visual Studio インストーラーにインストールします。 iOS 用にビルドするには、オプションの C++ iOS 開発ツールを含めます。 Android 用にビルドするには、C++ Android 開発ツールと、必要な以下のサードパーティ ツールをインストールします。Android NDK、Apache Ant、Google Android Emulator。 Intel プラットフォームでエミュレーターのパフォーマンスを向上させるには、Intel Hardware Accelerated Execution Manager (HAXM) もインストールすることをお勧めします。 次に、システムでの実行に向けて Intel HAXM と Android Emulator を構成します。 詳細情報と詳細な手順については、「[C++ によるクロスプラットフォーム モバイル開発をインストールする](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)」をご覧ください。
+
+iOS アプリをビルドしてテストするには、インストール手順に従って設定されている Mac コンピューターが必要になります。 iOS 開発の設定方法について詳しくは、[iOS を使用してビルドするためのツールのインストールと構成](../cross-platform/install-and-configure-tools-to-build-using-ios.md)に関するページをご覧ください。
 
 ## <a name="create-a-new-opengles-application-project"></a>新しい OpenGLES アプリケーション プロジェクトの作成
 
-このチュートリアルでは、まず新しい OpenGL ES アプリケーション プロジェクトを作成します。それから、既定のアプリを Visual Studio Emulator for Android でビルドして実行します。 次に、iOS 用アプリをビルドし、iOS デバイスでアプリを実行します。
+このチュートリアルでは、まず新しい OpenGL ES アプリケーション プロジェクトを作成します。 その後、Visual Studio Emulator for Android で、既定のアプリをビルドして実行します。 次に、iOS 用アプリをビルドし、iOS デバイスでアプリを実行します。
 
-1. Visual Studio で、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。
+::: moniker range="vs-2017"
 
-1. **[新しいプロジェクト]** ダイアログ ボックスの **[テンプレート]** で **[Visual C++]**  >  **[クロス プラットフォーム]** の順に選択し、 **[OpenGLES アプリケーション (Android、iOS)]** テンプレートを選択します。
+1. Visual Studio で、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
 
-1. アプリに `MyOpenGLESApp`などの名前を付け、 **[OK]** 」を参照してください。
+1. **[新しいプロジェクト]** ダイアログ ボックスの **[テンプレート]** で **[Visual C++]** > **[クロス プラットフォーム]** の順に選択し、 **[OpenGLES アプリケーション (Android, iOS)]** テンプレートを選択します。
+
+1. アプリに *MyOpenGLESApp* などの名前を付け、 **[OK]** を選択します。
 
    ![新しい OpenGLES アプリケーション プロジェクト](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
 
@@ -43,7 +47,23 @@ iOS 用および Android 用 OpenGL ES アプリを作成するには、その�
 
    ![ソリューション エクスプ ローラーの MyOpenGLESApp](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
 
-   新しい OpenGL ES アプリケーション ソリューションには、次の 3 つのライブラリ プロジェクトと 2 つのアプリケーション プロジェクトが含まれています。 ライブラリ フォルダーには、共有コード プロジェクトと共有コードを参照する 2 つのプラットフォーム固有のプロジェクトが含まれています。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio で、 **[ファイル]** > **[新規作成]** > **[プロジェクト]** の順に選択します。
+
+1. **[新しいプロジェクトの作成]** ダイアログ ボックスで、 **[OpenGLES アプリケーション (Android, iOS)]** テンプレートを選択し、 **[次へ]** を選択します。
+
+1. **[新しいプロジェクトの構成]** ダイアログ ボックスで、**プロジェクト名**に *MyOpenGLESApp* のような名前を入力し、 **[作成]** を選択します。
+
+   Visual Studio は新しいソリューションを作成し、ソリューション エクスプローラーを開きます。
+
+   ![ソリューション エクスプ ローラーの MyOpenGLESApp](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
+
+::: moniker-end
+
+新しい OpenGL ES アプリケーション ソリューションには、次の 3 つのライブラリ プロジェクトと 2 つのアプリケーション プロジェクトが含まれています。 ライブラリ フォルダーには、共有コード プロジェクトと共有コードを参照する 2 つのプラットフォーム固有のプロジェクトが含まれています。
 
 - `MyOpenGLESApp.Android.NativeActivity` には、Android 上の Native Activity としてアプリを実装する参照とグルー コードが含まれています。 グルー コードからのエントリ ポイントは、*main.cpp* に実装され、これには `MyOpenGLESApp.Shared` に共通の共有コードが含まれています。 プリコンパイル済みヘッダーは *pch.h* にあります。 この Native Activity アプリ プロジェクトは、共有ライブラリ ( *.so*) ファイルにコンパイルされ、`MyOpenGLESApp.Android.Packaging` プロジェクトで使用されます。
 

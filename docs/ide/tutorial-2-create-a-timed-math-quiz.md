@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0c7f3695be87f6cb4081b3aa02fc7a129869a4c
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 51bda0a85735bf2b1dae5044b9e4ab8e5384f8ae
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293696"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987871"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>チュートリアル 2: 制限時間ありの計算クイズの作成
 
@@ -31,7 +31,7 @@ ms.locfileid: "70293696"
 
 - コードで基本的な算術演算を実行します。
 
-完了すると、クイズは数値が異なることを除いて次の図のようになります。
+完了すると、クイズは数値が異なることを除いて次のスクリーンショットのようになります。
 
 ![4 つの問題がある計算クイズ](../ide/media/express_finishedquiz.png)
 
@@ -40,7 +40,7 @@ ms.locfileid: "70293696"
 クイズの完全バージョンをダウンロードするには、「[Complete Math Quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)」(計算クイズのチュートリアルの完全なサンプル) を参照してください。
 
 > [!NOTE]
-> このチュートリアルでは、Visual C# と Visual Basic の両方が取り上げられているため、使用しているプログラミング言語固有の情報に注意してください。
+> このチュートリアルでは、C# と Visual Basic の両方が取り上げられているため、使用しているプログラミング言語固有の情報に注意してください。
 
 ## <a name="related-topics"></a>関連トピック
 

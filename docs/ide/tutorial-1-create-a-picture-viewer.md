@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32d9d9a874894ab7e3e71d10da3f3cf7b3428d3e
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 2c0f867179fd78ecb753a9b66cfbdb8479e16c3b
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887910"
+ms.locfileid: "70913267"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>チュートリアル 1: ピクチャ ビューアーの作成
 
@@ -51,7 +51,7 @@ ms.locfileid: "70887910"
 
 |Title|説明|
 |-----------|-----------------|
-|[手順 1:Windows フォーム アプリケーション プロジェクトの作成](../ide/step-1-create-a-windows-forms-application-project.md)|まず、Windows フォーム アプリ プロジェクトを作成します。|
+|[手順 1:Windows フォーム アプリ プロジェクトを作成する](../ide/step-1-create-a-windows-forms-application-project.md)|まず、Windows フォーム アプリ プロジェクトを作成します。|
 |[手順 2:Picture Viewer アプリを実行する](../ide/step-2-run-your-program.md)|前の手順で作成した Windows フォーム アプリ プロジェクトを実行します。|
 |[手順 3:フォームのプロパティの設定](../ide/step-3-set-your-form-properties.md)|**[プロパティ]** ウィンドウを使用してフォームの外観を変更します。|
 |[手順 4:TableLayoutPanel コントロールを使用したフォームのレイアウトの設定](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|フォームに `TableLayoutPanel` コントロールを追加します。|

@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 744fd81fe8121936def42277b442d8e54ea88786
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887958"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062868"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>手順 8: [Show a Picture] ボタンのイベント ハンドラーのコードの記述
 
@@ -42,6 +42,9 @@ IntelliSense では、ユーザーの次の操作を予測し、ユーザーが�
 1. 2 つの中かっこ `{ }` の間の空の行に「`i`」と入力します (Visual Basic の場合は、`Private Sub...` と `End Sub` の間の空の行に入力します)。次の画像に示すように、**IntelliSense** ウィンドウが開きます。
 
     ![Visual C# コードの IntelliSense](../ide/media/express_ifintellisense.png)
+
+    > [!NOTE]
+    > ご利用のコードでは、"camelCase" という文字にイベント ハンドラーが表示されない場合があります。
 
 1. **IntelliSense** ウィンドウで、`if` という単語が強調表示されます。 (強調表示されない場合は、小文字で「`f`」と入力すると強調表示されます)。**IntelliSense** ウィンドウの横にある *[ツールヒント]* ボックスに、"**if ステートメントに対するコード スニペット**" と表示されます。 (Visual Basic の場合も、メッセージは若干異なりますが、ツールヒントにスニペットであることが示されます)。そのスニペットを使用するには、**Tab** キーを押して `if` をコードに挿入します。 次にもう一度 **Tab** キーを押して `if` スニペットを使用します。 (別の場所をクリックして **[IntelliSense]** ウィンドウが非表示になった場合は、BackSpace キーで `i` を削除してから再度入力すると、もう一度 **[IntelliSense]** ウィンドウが開きます)。
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b0a22fcef06f69f5c8adfa2afa0b6fdadc9f01
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5ff85034d7185e68a43ed8b4c70f68787414ddd9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293565"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913160"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>手順 5: フォームへのコントロールの追加
 
@@ -85,7 +85,7 @@ ms.locfileid: "70293565"
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
-* チュートリアルの次の手順に進むには、「[手順 6:ボタン コントロールの名前を設定する](../ide/step-6-name-your-button-controls.md)」をご覧ください。
+* チュートリアルの次の手順に進むには、「 **[手順 6: ボタン コントロールの名前を設定する](../ide/step-6-name-your-button-controls.md)** 」を参照してください。
 
 * チュートリアルの前の手順に戻るには、「[手順 4:TableLayoutPanel コントロールを使用してフォームのレイアウトを設定する](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)」を参照してください。
 

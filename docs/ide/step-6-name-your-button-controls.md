@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 397f65639b6ac277aa6975964ba8317adea58a49
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887979"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062853"
 ---
 # <a name="step-6-name-your-button-controls"></a>手順 6: ボタン コントロールの名前を設定する
 
@@ -52,7 +52,7 @@ ms.locfileid: "70887979"
 ***[Form1.cs]*** *タブに含まれる C# コード*
 
     > [!NOTE]
-    > [Form1.cs] タブには、**ShowButton** ではなく、**showButton** と表示されることがあります。
+    > [Form1.cs] または [Form1.vb] タブには、**ShowButton** ではなく、**showButton** と表示されることがあります。
 
 1. コードの次の部分にフォーカスを設定します。
 
@@ -64,7 +64,7 @@ ms.locfileid: "70887979"
 
     ```vb
         Private Sub showButton_Click() Handles showButton.Click
-    
+
     End Sub
     ```
 
@@ -83,8 +83,11 @@ ms.locfileid: "70887979"
     コード エディターに表示される新しいコードを次に示します。
 
     [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
-    
+
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
+
+    > [!NOTE]
+    > ご利用のコードでは、"camelCase" という文字にイベント ハンドラーが表示されない場合があります。
 
     追加した 5 つのメソッドは、イベントが発生するたびにアプリケーションで呼び出されることから (ユーザーがボタンをクリックしたときやチェック ボックスをオンにしたときなど)、"*イベント ハンドラー*" と呼ばれます。
 

@@ -14,26 +14,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d22bf8af86605d414d933d16cd5dd7f8d24a6154
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba701d123e739bc2dfa24ff798aef5338c51f532
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946109"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913178"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>方法: Visual Studio ビルド処理を拡張する
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のビルド処理は、プロジェクト ファイルにインポートされる一連の [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *.targets* ファイルによって定義されます。 このインポートされるファイルの 1 つである *Microsoft.Common.targets* を拡張することで、ビルド処理の複数のポイントでカスタム タスクを実行できます。 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のビルド処理を拡張するための 2 つの方法について説明します。
 
-- *Microsoft.Common.targets* で事前定義されている特定のターゲットをオーバーライドする。
+- 共通のターゲット (*Microsoft.Common.targets* またはインポートされるファイル) で定義されている特定の定義済みターゲットをオーバーライドする。
 
-- *Microsoft.Common.targets* で定義されている "DependsOn" プロパティをオーバーライドする。
+- 共通のターゲットで定義されている "DependsOn" プロパティをオーバーライドする。
 
 ## <a name="override-predefined-targets"></a>事前定義されているターゲットをオーバーライドする
-*Microsoft.Common.targets* ファイルには、事前定義されている空のファイルが含まれています。この一連のファイルは、ビルド処理の一部の主要ターゲットの前後で呼び出されます。 たとえば、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は、メインの `CoreBuild` ターゲットの前に `BeforeBuild` ターゲットを、`CoreBuild` ターゲットの後に `AfterBuild` ターゲットを呼び出します。 既定では、*Microsoft.Common.targets* の空のターゲットは何も行いませんが、その既定の動作をオーバーライドできます。その方法としては、*Microsoft.Common.targets* をインポートするプロジェクト ファイルでターゲットを定義します。 事前定義されているターゲットをオーバーライドすることで、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] タスクを利用し、ビルド処理をさらに細かく制御できます。
+共通のターゲットには、事前定義されている空のターゲットのセットが含まれています。これは、ビルド処理の一部の主要ターゲットの前後で呼び出されます。 たとえば、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] は、メインの `CoreBuild` ターゲットの前に `BeforeBuild` ターゲットを、`CoreBuild` ターゲットの後に `AfterBuild` ターゲットを呼び出します。 既定では、共通のターゲットの空のターゲットでは何も行われませんが、共通のターゲットをインポートするプロジェクト ファイルでターゲットを定義することで、その既定の動作をオーバーライドできます。 事前定義されているターゲットをオーバーライドすることで、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] タスクを利用し、ビルド処理をさらに細かく制御できます。
+
+> [!NOTE]
+> SDK スタイルのプロジェクトでは、*プロジェクト ファイルの最後の行の後に*、ターゲットが暗黙的にインポートされます。 つまり、インポートを手動で指定しない限り、既定のターゲットをオーバーライドすることはできないということです。詳しくは、「[方法: MSBuild プロジェクト SDK の使用](how-to-use-project-sdk.md)」で説明されています。
 
 #### <a name="to-override-a-predefined-target"></a>事前定義されているターゲットをオーバーライドするには
 
-1. オーバーライドする *Microsoft.Common.targets* で事前定義済みターゲットを見つけます。 下の表をご覧ください。これは安全にオーバーライドできるターゲットの完全一覧です。
+1. オーバーライドする共通のターゲットで事前定義済みターゲットを特定します。 下の表をご覧ください。これは安全にオーバーライドできるターゲットの完全一覧です。
 
 2. プロジェクト ファイルの最後で、`</Project>` タグの直前で、ターゲットを定義します。 次に例を示します。
 
@@ -51,12 +54,12 @@ ms.locfileid: "62946109"
 
 3. プロジェクト ファイルをビルドします。
 
-次の表は、*Microsoft.Common.targets* で安全にオーバーライドできるすべてのターゲットをまとめたものです。
+次の表では、共通のターゲットで安全にオーバーライドできるすべてのターゲットを示しています。
 
 |ターゲット名|説明|
 |-----------------|-----------------|
 |`BeforeCompile`、 `AfterCompile`|これらのターゲットのいずれかに挿入されているタスクは、コア コンパイル完了の前または後に実行されます。 ほとんどのカスタマイズはこれら 2 つのターゲットのいずれかで行われます。|
-|`BeforeBuild`、 `AfterBuild`|これらのターゲットのいずれかに挿入されているタスクは、ビルド内の他のすべての前または後に実行されます。 **注:**`BeforeBuild` ターゲットと `AfterBuild` ターゲットは、ほとんどのプロジェクト ファイルの終わりにあるコメントで既に定義されており、ビルド前イベントとビルド後イベントをプロジェクト ファイルに簡単に追加できます。|
+|`BeforeBuild`、 `AfterBuild`|これらのターゲットのいずれかに挿入されているタスクは、ビルド内の他のすべての前または後に実行されます。 **注:** `BeforeBuild` ターゲットと `AfterBuild` ターゲットは、ほとんどのプロジェクト ファイルの終わりにあるコメントで既に定義されており、ビルド前イベントとビルド後イベントをプロジェクト ファイルに簡単に追加できます。|
 |`BeforeRebuild`、 `AfterRebuild`|これらのターゲットのいずれかに挿入されているタスクは、コア再ビルド機能の呼び出しの前または後に実行されます。 *Microsoft.Common.targets* のターゲット実行順序は `BeforeRebuild`、`Clean`、`Build`、`AfterRebuild` です。|
 |`BeforeClean`、 `AfterClean`|これらのターゲットのいずれかに挿入されているタスクは、コア クリーン機能の呼び出しの前または後に実行されます。|
 |`BeforePublish`、 `AfterPublish`|これらのターゲットのいずれかに挿入されているタスクは、コア公開機能の呼び出しの前または後に実行されます。|
@@ -66,7 +69,7 @@ ms.locfileid: "62946109"
 ## <a name="override-dependson-properties"></a>DependsOn プロパティをオーバーライドする
 事前定義済みターゲットのオーバーライドはビルド処理を拡張する簡単な方法ですが、[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] はターゲットの定義を順次評価するため、プロジェクトをインポートする別のプロジェクトが既にオーバーライドしているターゲットをオーバーライドすることを阻止できません。 そのため、たとえば、プロジェクト ファイルに定義されている最後の `AfterBuild` ターゲットが、その他すべてのプロジェクトがインポートされた後に、ビルド中に使用されるターゲットになります。
 
-ターゲットの意図しないオーバーライドを防ぐ方法があります。*Microsoft.Common.targets* ファイル全体で `DependsOnTargets` 属性で利用される DependsOn プロパティをオーバーライドします。 たとえば、`Build` ターゲットには、`DependsOnTargets` 属性値 `"$(BuildDependsOn)"` が含まれています。 次の例を考えてみましょう。
+共通のターゲット全体で `DependsOnTargets` 属性で使用される DependsOn プロパティをオーバーライドすることで、ターゲットの意図しないオーバーライドを防ぐことができます。 たとえば、`Build` ターゲットには、`DependsOnTargets` 属性値 `"$(BuildDependsOn)"` が含まれています。 次の例を考えてみましょう。
 
 ```xml
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
@@ -107,7 +110,7 @@ XML のこの部分は、`Build` ターゲットを実行するには、`BuildDe
 
 #### <a name="to-override-a-dependson-property"></a>DependsOn プロパティをオーバーライドするには
 
-1. オーバーライドする *Microsoft.Common.targets* で事前定義済み DependsOn プロパティを見つけます。 下の表をご覧ください。一般的にオーバーライドされる DependsOn プロパティの一覧です。
+1. オーバーライドする共通のターゲットで事前定義済み DependsOn プロパティを特定します。 下の表をご覧ください。一般的にオーバーライドされる DependsOn プロパティの一覧です。
 
 2. プロパティ ファイルの終わりにプロパティの別のインスタンスを定義します。 新しいプロパティに元のプロパティ (たとえば、`$(BuildDependsOn)`) を含めます。
 
