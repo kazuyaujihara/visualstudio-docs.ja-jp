@@ -23,7 +23,7 @@ ms.locfileid: "65703767"
 # <a name="idiasymbolget_hasseh"></a>IDiaSymbol::get_hasSEH
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-関数がいずれかを含めるかどうかを指定するフラグを取得します。[構造化例外処理 (C/C++)](https://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (例: _ _try/\__except ブロック)。  
+関数がいずれかを含めるかどうかを指定するフラグを取得します。[構造化例外処理 (C/C++)](https://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (例: __try\__except ブロック)。  
   
 ## <a name="syntax"></a>構文  
   
