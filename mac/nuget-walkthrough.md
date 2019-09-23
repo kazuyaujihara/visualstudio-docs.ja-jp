@@ -1,57 +1,49 @@
 ---
 title: プロジェクトに NuGet パッケージを含める
-description: このドキュメントでは、Xamarin プロジェクトに NuGet パッケージを含める方法について説明します。 パッケージの検索およびダウンロードの手順を説明し、IDE 統合機能の概要を示します。
+description: このドキュメントでは、Visual Studio for Mac を使用してプロジェクトに NuGet パッケージを含める方法について説明します。 パッケージの検索およびダウンロードの手順を説明し、IDE 統合機能の概要を示します。
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 04/24/2019
+ms.date: 09/17/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.custom: video
-ms.openlocfilehash: 5d38afb0dd3adc1db253b7b2c290925716bd5bf9
-ms.sourcegitcommit: 78e4836fe0f45b7079271330aff449dff6fd9685
+ms.custom: conceptual
+ms.openlocfilehash: 22b2e07509403d8e19e3a3e920d45b064c2e51c0
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68303808"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079523"
 ---
-# <a name="include-a-nuget-package-in-your-project"></a>プロジェクトに NuGet パッケージを含める
+# <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Visual Studio for Mac に NuGet パッケージをインストールして管理する
 
-NuGet は、.NET 開発用の最も一般的なパッケージ マネージャーであり、Visual Studio for Mac および Windows の Visual Studio に組み込まれています。 パッケージを検索し、Xamarin、.NET Core、ASP.NET プロジェクトにいずれかの IDE を使用して追加することができます。
+Visual Studio for Mac 内で NuGet パッケージ マネージャー UI を使用すると、プロジェクトやソリューション内で NuGet パッケージを簡単にインストール、アンインストール、更新することができます。 パッケージを検索し、.NET Core、ASP.NET Core、Xamarin プロジェクトに追加することができます。
 
 この記事では、プロジェクトに NuGet パッケージを含める方法について説明し、プロセスをシームレスにするツール チェーンを示します。
 
-## <a name="nuget-in-visual-studio-for-mac"></a>Visual Studio for Mac の NuGet
+Visual Studio for Mac での NuGet の使用の概要については、「[クイック スタート: Visual Studio for Mac にパッケージをインストールして使用する](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)」を参照してください。
 
-NuGet パッケージの機能を示すため、まず、新しいアプリケーションを作成して、それにパッケージを追加します。 次に、パッケージの管理に役立つ IDE 機能について説明します。
+## <a name="find-and-install-a-package"></a>パッケージを検索してインストールする
 
-## <a name="create-a-new-project"></a>新しいプロジェクトを作成する
+1. Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pad** で **[依存関係]** フォルダー (Xamarin プロジェクトを使用する場合は **[パッケージ]** フォルダー) を右クリックし、 **[パッケージを追加]** を選択します。
 
-まず、以下に示すように `HelloNuget` という名前のプロジェクトを作成します。 この例では iOS 用の単一ビュー アプリケーションのテンプレートを示していますが、サポートされているどのプロジェクト タイプでも動作します。
+    ![新しい NuGet パッケージのコンテキスト アクションを追加する](media/nuget-walkthrough-PackagesMenu.png)
 
-![新しい iOS プロジェクトを作成する](media/nuget-walkthrough-NewProject.png)
+2. これで、 **[パッケージを追加]** ウィンドウが起動します。 ダイアログの左上隅にある [ソース] ドロップダウンが `nuget.org` に設定されていることを確実にします。
 
-## <a name="adding-a-package"></a>パッケージの追加
+    ![Nuget パッケージのリスト](media/nuget-walkthrough-AddPackages1.png)
 
-Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pad** の **[パッケージ]** フォルダーを右クリックし、 **[NuGet パッケージを追加]** を選択します。
+3. `EntityFramework` などの特定のパッケージを検索するには、右上隅の検索ボックスを使用します。 使用するパッケージが見つかったら、それを選択し、 **[パッケージを追加]** ボタンをクリックしてインストールを開始します。
 
-![新しい NuGet パッケージのコンテキスト アクションを追加する](media/nuget-walkthrough-PackagesMenu.png)
+    ![Azure の NuGet パッケージを追加する](media/nuget-walkthrough-AddPackages2.png)
 
-これで、 **[パッケージを追加]** ウィンドウが起動します。 ソース ドロップダウンが次のように `nuget.org` に設定されていることを確認します。
+4. パッケージはダウンロードされた後、プロジェクトに追加されます。 ソリューションは、編集中のプロジェクトの種類に応じて変化します。
 
-![ソース リスト ドロップダウン](media/nuget-walkthrough-Source.png)
+    **Xamarin プロジェクト**
+    * **[参照]** ノードには、NuGet パッケージの一部であるすべてのアセンブリのリストが含まれます。
+    * **[パッケージ]** ノードには、ダウンロードした各 NuGet パッケージが表示されます。 このリストのパッケージを更新したり、削除したりすることができます。
+    
+    **.NET Core プロジェクト**
 
-ウィンドウが開くと、既定のパッケージ ソースである nuget.org のパッケージ リストが読み込まれます。最初の結果は次のようになります。
-
-![Nuget パッケージのリスト](media/nuget-walkthrough-AddPackages1.png)
-
-`azure mobile` などの特定のパッケージを検索するには、右上隅の検索ボックスを使用します。 使用するパッケージが見つかったら、それを選択し、 **[パッケージを追加]** ボタンをクリックしてインストールを開始します。
-
-![Azure の NuGet パッケージを追加する](media/nuget-walkthrough-AddPackages2.png)
-
-パッケージはダウンロードされた後、プロジェクトに追加されます。 ソリューションは次のように変更されます。
-
-* **[参照]** ノードには、NuGet パッケージの一部であるすべてのアセンブリのリストが含まれます。
-* **[パッケージ]** ノードには、ダウンロードした各 NuGet パッケージが表示されます。 このリストのパッケージを更新したり、削除したりすることができます。
-* **packages.config** ファイルはプロジェクトに追加されます。 この XML ファイルは、このプロジェクトで参照されるパッケージ パージョンを追跡するために IDE で使用されます。 このファイルを手動で編集しないでください。ただし、バージョン管理で保持する必要があります。 project.json ファイルを packages.config ファイルの代わりに使用できることに注意してください。 project.json ファイルは、NuGet 3 で導入された新しいパッケージ ファイル形式であり、推移的な復元をサポートします。 project.json の詳細については、[NuGet のドキュメント](https://docs.microsoft.com/NuGet/Schema/Project-Json)を参照してください。 Visual Studio for Mac で project.json ファイルを使用する前に、project.json ファイルを手動で追加して、プロジェクトを閉じてから再度開く必要があります。
+    **[依存関係] > [NuGet]** ノードには、ダウンロードした各 NuGet パッケージが表示されます。 このリストのパッケージを更新したり、削除したりすることができます。
 
 ## <a name="using-nuget-packages"></a>NuGet パッケージの使用
 
@@ -63,31 +55,32 @@ NuGet パッケージが追加され、プロジェクト参照が更新され�
 using Newtonsoft.Json;
 ```
 
-ほとんどの NuGet では、README や Nuget ソースへのプロジェクト ページ リンクなどの追加情報が提供されます。 通常は、[パッケージを追加] ページのパッケージの宣伝文にこのリンクが表示されます。
-
-[プロジェクト ページ リンクを表示する](media/nuget-walkthrough-project-page.png)
-
 <a name="Package_Updates" class="injected"></a>
 
-## <a name="package-updates"></a>パッケージの更新
+## <a name="updating-packages"></a>パッケージの更新
 
-パッケージの更新は、すべて一度に行う ( **[パッケージ]** ノードを右クリックする) ことも、コンポーネントごとに個別に行うこともできます。
+パッケージの更新は、 **[依存関係]** ノード (または、Xamarin プロジェクトの場合は **[パッケージ]** ノード) を右クリックすることで、すべて一度に行うことも、コンポーネントごとに個別に行うこともできます。
 
-コンテキスト メニューにアクセスするには、次のように **[パッケージ]** を右クリックします。
+コンテキスト メニューにアクセスするには、次のように **[依存関係]** を右クリックします。
 
 ![パッケージ メニュー](media/nuget-walkthrough-PackagesMenu.png)
 
-* **[NuGet パッケージを追加]** - プロジェクトにさらにパッケージを追加するためのウィンドウが開きます。
+* **[NuGet パッケージの管理]** - プロジェクトにさらにパッケージを追加するためのウィンドウが開きます。
 * **[更新]** - 各パッケージのソース サーバーを確認し、新しいバージョンをダウンロードします。
 * **[復元]** - 不足しているパッケージをダウンロードします (既存のパッケージを新しいバージョンに更新しません)。
 
 更新オプションと復元オプションはソリューション レベルでも使用でき、ソリューション内のすべてのプロジェクトに影響します。
 
-次のように、個々のパッケージを右クリックして、コンテキスト メニューにアクセスすることもできます。
+Solution Pad から、現在インストールされているパッケージのバージョンを表示し、更新するパッケージを右クリックすることができます。
 
-![パッケージ メニュー](media/nuget-walkthrough-PackageMenu.png)
+![[更新]、[削除]、[更新] のオプションが表示されている [パッケージ] メニュー](media/nuget-walkthrough-PackageMenu.png)
 
-* **[バージョン番号]** - バージョン番号は無効になっているメニュー項目です。情報提供のみを目的としています。
+パッケージの新しいバージョンが利用可能な場合は、パッケージ名の横に通知が表示されるので、更新するかどうかを決定できます。
+
+![新しいパッケージ バージョンが利用可能になったときに表示される通知](media/nuget-walkthrough-package-update-available.png)
+
+表示されるメニューには、次の 2 つのオプションがあります。
+
 * **[更新]** - ソース サーバーを確認し、新しいバージョン (存在する場合) をダウンロードします。
 * **[削除]** - このプロジェクトからパッケージを削除し、プロジェクトの参照から関連するアセンブリを削除します。
 

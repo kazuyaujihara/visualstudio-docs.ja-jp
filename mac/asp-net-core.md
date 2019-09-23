@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 9dcd1b65e9d8ea60f082304b4f84a7108efb99a6
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692941"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913324"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core の概要
 
@@ -38,7 +38,7 @@ ASP.NET Core アプリケーションの作成を開始するためのテンプ�
 
 ![ASP.NET プロジェクト オプション](media/asp-net-core-2019-new-asp-core.png)
 
-**[ASP.NET Core Empty Web Application]\(ASP.NET Core 空の Web アプリケーション\)** を選択し、 **[次へ]** を押します。 プロジェクトに名前を付け、 **[作成]** を押します。 これで新しい ASP.NET Core アプリが作成されます。下の画像のようになります。
+**[ASP.NET Core Empty Web Application]\(ASP.NET Core 空の Web アプリケーション\)** を選択し、 **[次へ]** を押します。 プロジェクトに名前を付け、 **[作成]** を押します。 これにより、新しい ASP.NET Core アプリが作成されます。 Solution Pad の左側のウィンドウで、2 番目の矢印を展開し、 **[Startup.cs]** を選択します。 以下の画像のようになります。
 
 ![新しい ASP.NET Core の空のプロジェクト](media/asp-net-core-2019-empty-project.png)
 

@@ -1,21 +1,24 @@
 ---
 title: '手順 1: プロジェクトの作成とフォームへのテーブルの追加'
 ms.date: 05/31/2019
-ms.topic: conceptual
+ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ebd8469eb763af9565609dd680ba1e256ed6c5
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 0e7d11f023cc239a3aaa4124cb1ac12a4e4ae9eb
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501153"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079608"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>手順 1: プロジェクトの作成とフォームへのテーブルの追加
 
@@ -122,9 +125,9 @@ ms.locfileid: "66501153"
    > [!NOTE]
    > 多く貼り付けすぎた場合は、IDE によって TableLayoutPanel に新しい行が追加され、新しいラベル コントロールを追加する場所が作成されます。 これは、元に戻すことができます。 新しいセルを削除するには、**Ctrl** + **Z** キーを押すか、メニュー バーで **[編集]**  >  **[元に戻す]** の順にクリックします。
 
-    これで、フォームがレイアウトされました。結果は次の図のようになります。
+    これで、フォームがレイアウトされました。次の画像のようになります。
 
-    ![絵合わせゲームの初期フォーム](../ide/media/express_tut4step1.png)<br/>   絵合わせゲームの初期フォーム
+    ![絵合わせゲームの初期フォーム](../ide/media/express_tut4step1.png)<br/>*絵合わせゲームの初期フォーム*
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da1ca71cb420bcc2bbc6ba00eb1eca5deaa2b2c9
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 1cf71ca26a26aecceb605c0483499bc0b0e24d30
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887893"
+ms.locfileid: "70913149"
 ---
 # <a name="step-3-set-your-form-properties"></a>手順 3: フォームのプロパティの設定
 
@@ -77,7 +77,7 @@ ms.locfileid: "70887893"
 
 * チュートリアルの次の手順に進むには、「 **[手順 4:TableLayoutPanel コントロールを使用したフォームのレイアウトの設定](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** 」を参照してください。
 
-* チュートリアルの前の手順に戻るには、手順 2:Picture Viewer アプリの実行 (../ide/step-2-run-your-program.md) に関するページを参照してください。
+* チュートリアルの前の手順に戻るには、「[手順 2:Picture Viewer アプリを実行する](../ide/step-2-run-your-program.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

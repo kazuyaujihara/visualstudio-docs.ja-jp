@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a160d28a3953196a53673b64ae7d9ef9974a731
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 00d64b060b340302107ddffaf1d69cad802a283b
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747434"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913287"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio の統合 (MSBuild)
 Visual Studio は、マネージド プロジェクトの読み込みとビルドを行う [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] をホストしています。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] はプロジェクトに対応しているため、そのプロジェクトが他のツールで作成されていたり、ビルド処理がカスタマイズされていたりしても、 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 形式のほとんどすべてのプロジェクトを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]で問題なく使用できます。
@@ -176,7 +176,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    プロジェクト システムは、 `ResolveNativeReferences`という既知の名前を持つターゲットを呼び出します。 このターゲットは、 `NativeReferenceFile`という項目の種類名を持つ項目を生成します。 これらの項目には、参照の元の項目規定を格納する `OriginalItemSpec`という名前の新しいメタデータに加え、入力項目のすべてのメタデータも渡されます。
 
 ## <a name="performance-shortcuts"></a>パフォーマンスに関するヒント
- Visual Studio の UI でデバッグを開始する (F5 キーを押すか、メニュー バーの **[デバッグ]**  >  **[デバッグの開始]** を選択する) と、パフォーマンスを向上させるために、ビルド処理で高速更新チェックを使用します。 カスタマイズされたビルドで、順次ビルドするファイルを作成した場合、高速更新チェックでは変更されたファイルが正しく識別されません。 徹底した更新プログラムのチェックを必要とするプロジェクトでは、 `DISABLEFASTUPTODATECHECK=1`環境変数を設定することで高速チェックを無効にできます。 また、プロジェクトまたはプロジェクトでインポートしたファイルで、MSBuild プロパティとしてこれを設定することもできます。
+ Visual Studio IDE を使用して (F5 キーを選択するか、メニュー バーの **[デバッグ]**  >  **[デバッグの開始]** を選択するかのいずれかを行うことで) デバッグを開始する場合、またはプロジェクト (例: **[ビルド]**  >  **[ソリューションのビルド]** ) をビルドする場合、パフォーマンスを向上させるために、ビルド処理で高速更新チェックを使用します。 カスタマイズされたビルドで、順次ビルドするファイルを作成した場合、高速更新チェックでは変更されたファイルが正しく識別されません。 徹底した更新プログラムのチェックを必要とするプロジェクトでは、 `DISABLEFASTUPTODATECHECK=1`環境変数を設定することで高速チェックを無効にできます。 また、プロジェクトまたはプロジェクトでインポートしたファイルで、MSBuild プロパティとしてこれを設定することもできます。
 
  Visual Studio の通常のビルドでは、高速更新チェックは適用されず、コマンド プロンプトでビルドを開始する場合と同じ方法でプロジェクトがビルドされます。
 

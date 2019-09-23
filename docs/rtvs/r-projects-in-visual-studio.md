@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a24f887b5e8d12a757098eb94768ad110a5cb727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcdef95935c0522c8b93a972d7f44fbd7632c53b
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809912"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012621"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Visual Studio で R プロジェクトを作成する
 
@@ -48,7 +48,7 @@ R プロジェクト (*.rxproj* ファイル) は、プロジェクトに関連�
 | NumSpacesForTab | 2 | UseSpacesForTab が Yes の場合に挿入するスペースの数。 |
 | エンコード | UTF-8 | `.R` ファイルの既定のエンコーディング。 |
 | RnwWeave | Sweave | Rnw ファイルを編集するときに使用するパッケージ。 |
-| LaTeX | pdfLaTeX | RMarkdwon を PDF に変換するときに使用するライブラリ。 |
+| LaTeX | pdfLaTeX | RMarkdown を PDF に変換するときに使用されるライブラリ。 |
 
 ### <a name="converting-a-folder-of-files-to-an-r-project"></a>ファイルのフォルダーを R プロジェクトに変換する
 
@@ -99,7 +99,7 @@ RTVS には、各ファイルの種類用に複数のテンプレートが含ま
 | R ドキュメント | 名前、エイリアス、およびタイトルの各フィールドのみを含む一般的な R ドキュメント ファイル。 |
 | R ドキュメント (関数) | 関数を説明するコメントが指定された多くのフィールドを含む R ドキュメント ファイル。 |
 | R ドキュメント (データセット) | データセットを説明するコメントが指定された多くのフィールドを含む R ドキュメント ファイル。 |
-| SQL クエリ | と空の *.sql* ファイル。 「[SQL Server と R の使用](integrating-sql-server-with-r.md)」を参照してください。 |
+| SQL クエリ | 空の *.sql* ファイル。 「[SQL Server と R の使用](integrating-sql-server-with-r.md)」を参照してください。 |
 | R を使用したストアド プロシージャ | 子の SQL クエリと子のストアド プロシージャ テンプレート ファイルを含む R ファイル。 「[SQL Server と R の使用](integrating-sql-server-with-r.md)」を参照してください。 |
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>Visual Studio で複数種類のプロジェクトを使用する

@@ -1,28 +1,36 @@
 ---
 title: '手順 2: ランダムな加算問題の作成'
 ms.date: 11/04/2016
-ms.topic: conceptual
-dev_langs:
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
 - csharp
 - vb
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b83edaec6b81c3a2c5699184c62dbd70d71913
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 941cc454220848d95ed2bf161fa4709868a6ac74
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416880"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079592"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>手順 2: ランダムな加算問題の作成
+
 このチュートリアルの第 2 部では、乱数に基づく計算問題を追加して、クイズに挑みます。 また、`StartTheQuiz()` という名前の、問題に記入して、カウントダウン タイマーを開始するメソッドを作成します。 このチュートリアルの後半では、減算、乗算、除算問題を追加します。
 
 > [!NOTE]
-> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。
+> - チュートリアルの概要については、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
+> - コードの完全バージョンをダウンロードするには、「[計算クイズのチュートリアルの完全なサンプル](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)」を参照してください。
 
 ## <a name="to-create-a-random-addition-problem"></a>ランダムな加算問題を作成するには
 
@@ -36,6 +44,9 @@ ms.locfileid: "68416880"
 
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
+
+   > [!IMPORTANT]
+   > このページの右上にあるプログラミング言語のコントロールを使用して、C# コード スニペットまたは Visual Basic コード スニペットのいずれかを表示します。<br><br>![Docs.Microsoft.com のプログラミング言語コントロール](../ide/media/docs-programming-language-control.png)
 
      Random オブジェクトをフォームに追加し、オブジェクトに **randomizer** という名前を付けました。
 
@@ -60,7 +71,8 @@ ms.locfileid: "68416880"
 
      コードで `randomizer` の後にドット (.) を入力すると、IntelliSense ウィンドウが開き、呼び出すことができる Random オブジェクトのすべてのメソッドが表示されることにご注意ください。 たとえば、IntelliSense は `Next()` メソッドを次のように一覧表示します。
 
-     ![Next メソッド](../ide/media/express_randomwhite.png) Next メソッド
+     ![次のメソッド](../ide/media/express_randomwhite.png)<br/>
+*次のメソッド*
 
      オブジェクトの後にドットを入力すると、IntelliSense はプロパティ、メソッド、イベントなどのオブジェクトのメンバーの一覧を表示します。
 
@@ -87,14 +99,15 @@ ms.locfileid: "68416880"
 
 8. コードを保存し、実行して、 **[Start]** ボタンをクリックします。
 
-     次の図に示すように、ランダムな加算問題が表示されます。
+     次のスクリーンショットに示すように、ランダムな加算の問題が表示されます。
 
-     ![ランダムな加算の問題](../ide/media/express_additionproblem.png) ランダムな加算の問題
+     ![ランダムな加算の問題](../ide/media/express_additionproblem.png)<br/>
+*ランダムな加算の問題*
 
      チュートリアルの次の手順では、合計を追加します。
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「[手順 3: カウントダウン タイマーの追加](../ide/step-3-add-a-countdown-timer.md)」をご覧ください。
+- チュートリアルの次の手順に進むには、「 **[手順 3:カウントダウン タイマーの追加](../ide/step-3-add-a-countdown-timer.md)** 」を参照してください。
 
 - チュートリアルの前の手順に戻るには、「[手順 1: プロジェクトの作成とフォームへのラベルの追加](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)」を参照してください。

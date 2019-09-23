@@ -1,5 +1,5 @@
 - name: プロファイリング ドキュメント
-  href: index.md
+  href: index.yml
 - name: 概要
   href: profiling-overview.md
 - name: クイックスタート
@@ -88,7 +88,7 @@
               href: how-to-collect-performance-data-for-a-web-site.md
             - name: パフォーマンス セッションを手動で作成する
               href: how-to-manually-create-performance-sessions.md
-        - name: を構成する。
+        - name: 構成
           items:
             - name: パフォーマンス セッションの構成
               href: configuring-performance-sessions.md

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9a0714082e0fce744fe74eaa4e4aefee5a41867
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: a73ce207d8efb0c6309ba52648c7231f89bc7984
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365376"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766043"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801:使用されていないパラメーターの確認
 
@@ -29,54 +29,56 @@ ms.locfileid: "67365376"
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
 |カテゴリ|Microsoft.Usage|
-|互換性に影響する変更点|なし - メンバーが行った変更に関係なく、アセンブリの外部に表示されない場合<br /><br /> なし - の本体にあるパラメーターを使用するメンバーを変更する場合<br /><br /> あり - パラメーターを削除して、アセンブリの外側に表示される場合。|
+|互換性に影響する変更点|中断しない-変更に関係なく、メンバーがアセンブリの外部で参照できない場合。<br /><br /> 非重大-本文内でパラメーターを使用するようにメンバーを変更した場合。<br /><br /> 中断-パラメーターを削除すると、アセンブリの外部から参照できるようになります。|
 
 ## <a name="cause"></a>原因
 
-メソッド シグネチャには、メソッドの本体で使用されていないパラメーターが含まれています。
+メソッドシグネチャに、メソッド本体で使用されていないパラメーターが含まれています。
 
-このルールでは、次のようなメソッドはチェックしません。
+この規則では、次の種類のメソッドは検証されません。
 
 - デリゲートによって参照されるメソッド。
 
-- イベント ハンドラーとして使用されるメソッド。
+- イベントハンドラーとして使用されるメソッド。
 
-- 宣言されたメソッド、 `abstract` (`MustOverride` Visual basic) 修飾子。
+- `abstract` (`MustOverride` Visual Basic) 修飾子で宣言されたメソッド。
 
-- 宣言されたメソッド、 `virtual` (`Overridable` Visual basic) 修飾子。
+- `virtual` (`Overridable` Visual Basic) 修飾子で宣言されたメソッド。
 
-- 宣言されたメソッド、 `override` (`Overrides` Visual basic) 修飾子。
+- `override` (`Overrides` Visual Basic) 修飾子で宣言されたメソッド。
 
-- 宣言されたメソッド、 `extern` (`Declare` Visual Basic でのステートメント) 修飾子。
+- `extern` (`Declare` Visual Basic) 修飾子で宣言されたメソッド。
+
+[FxCop アナライザー](install-fxcop-analyzers.md)を使用している場合、この規則では、、、など`_`の `_1` `_2`[破棄](/dotnet/csharp/discards)シンボルを使用してという名前のパラメーターにフラグを付けません。 これにより、シグネチャの要件に必要なパラメーター (デリゲートとして使用されるメソッド、特別な属性を持つパラメーターなど)、またはフレームワークによって実行時に暗黙的に値にアクセスされるが、で参照されていない値を持つパラメーターの警告ノイズが減少します。コード.
 
 ## <a name="rule-description"></a>規則の説明
 
-それらにアクセスする障害が回避の正確性が存在しないかどうかを確認するメソッドの本体で使用されていない非仮想メソッドのパラメーターを確認します。 使用されていないパラメーターには、メンテナンスとパフォーマンスのコストが発生します。
+メソッド本体で使用されていない非仮想メソッドのパラメーターを確認して、それらにアクセスするためのエラーの前後に存在しないことを確認します。 未使用のパラメーターを使用すると、メンテナンスとパフォーマンスのコストが発生します。
 
-この規則違反は、メソッドの実装に関するバグをポイントできます。 たとえば、パラメーターがメソッドの本体で使用されているがする必要があります。 パラメーターに旧バージョンと互換性のために存在する場合は、この規則の警告を抑制します。
+この規則に違反すると、メソッドの実装のバグを指す場合があります。 たとえば、パラメーターは、メソッドの本体で使用されている必要があります。 旧バージョンとの互換性のためにパラメーターが存在する必要がある場合は、この規則の警告を非表示にします。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-このルールの違反を修正するには、未使用のパラメーター (重大な変更) を削除またはメソッドの本体 (互換性に影響しない変更) で、パラメーターを使用します。
+この規則違反を修正するには、使用されていないパラメーター (重大な変更) を削除するか、メソッド本体でパラメーターを使用します (非互換性の変更)。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-このルールから警告を抑制しても安全です。
+このルールからの警告を抑制するのは安全です。
 
-- 以前にリリース済みのコード修正が重大な変更になります。
+- 以前に出荷されたコードでは、修正プログラムは互換性に影響する変更になります。
 
-- `this`のカスタム拡張メソッドのパラメーター<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=nameWithType>します。 内の関数、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>にアクセスする必要がないクラスが静的では、`this`メソッドの本体でのパラメーター。
+- `this` の<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=nameWithType>カスタム拡張メソッドのパラメーター。 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>クラスの関数は静的であるため、メソッド本体の`this`パラメーターにアクセスする必要はありません。
 
 ## <a name="example"></a>例
 
-次の例では、2 つの方法を示します。 1 つのメソッドには、ルールに違反しているし、他のメソッドは、ルールを満たします。
+次の例は、2つのメソッドを示しています。 1つのメソッドが規則に違反し、もう一方のメソッドが規則を満たしています。
 
 [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]
 
 ## <a name="related-rules"></a>関連するルール
 
-[CA1811:呼び出されていないプライベート コードを避ける](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811呼び出されるプライベートコードを避ける](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
-[CA1812:インスタンス化されていない内部クラスを回避します。](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812インスタンス内部クラスを回避する](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
-[CA 1804:使用されていないローカルを削除します](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804未使用のローカルの削除](../code-quality/ca1804-remove-unused-locals.md)

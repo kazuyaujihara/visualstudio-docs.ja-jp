@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6668648668ab71e033d1341d71ecf5c7c2a47554
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 1851c497579d45aa45c36dc1cd20945ce2b9c1e1
+ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261720"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70977440"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>チュートリアル: Entity Framework と Visual Studio 2019 を使用して、最初の ASP.NET Core アプリを作成する
 
@@ -88,7 +88,7 @@ Visual Studio は、インストーラーの処理が完了すると自動的に
 - [職場または学校アカウント]。 このオプションでは、認証用に Active Directory、Azure AD、または Office 365 が使用されます。
 - [Windows 認証]。 イントラネット アプリケーションに適しています。
 
-認証なしの標準の Web アプリケーション テンプレートを選択して、 **[OK]** をクリックします。
+認証なしの標準の Web アプリケーション テンプレートを選択して、 **[作成]** をクリックします。
 
 ![Visual Studio 2019 の ASP.NET Core プロジェクトのオプションの選択](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 

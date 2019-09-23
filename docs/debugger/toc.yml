@@ -42,6 +42,8 @@
       items:
         - name: ブレークポイントの使用
           href: using-breakpoints.md
+        - name: トレースポイントの使用
+          href: using-tracepoints.md
         - name: ブレークポイントのトラブルシューティング
           href: troubleshooting-breakpoints.md
     - name: データ検査
@@ -126,8 +128,12 @@
               href: edit-and-continue-visual-basic.md
             - name: エディット コンティニュの中断モード時に編集を適用する
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-        - name: 実行中の XAML コードを記述およびデバッグする
-          href: xaml-hot-reload.md
+        - name: XAML ホット リロード
+          items:
+            - name: 実行中の XAML コードを記述およびデバッグする
+              href: xaml-hot-reload.md
+            - name: XAML ホット リロードのトラブルシューティング
+              href: xaml-hot-reload-troubleshooting.md
         - name: 'F# ではエディット コンティニュはサポートされません。'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: デバッガー データの表示

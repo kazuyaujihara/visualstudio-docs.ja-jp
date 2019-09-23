@@ -1,0 +1,60 @@
+### YamlMime:Landing
+title: Visual Studio でアプリのパフォーマンスを測定する
+summary: プロファイリングと診断のツールを利用すれば、メモリの利用状況、CPU の利用状況、その他のアプリケーション レベルの問題を診断できます。 これらのツールを使用すると、アプリケーションの実行中にパフォーマンス データを蓄積できます。
+metadata:
+  title: Visual Studio でパフォーマンスを測定する
+  description: Visual Studio を使用し、プロファイリング ツールを使用してパフォーマンスを測定する方法について説明します。
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/17/2019
+  ms.openlocfilehash: fcb3e40870d6f916cf754368359a90215ce1b665
+  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 09/19/2019
+  ms.locfileid: "71130621"
+landingContent:
+- title: プロファイリングについて
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: プロファイリング ツールの概要
+      url: profiling-feature-tour.md
+  - linkListType: concept
+    links:
+    - text: プロファイリング ツールを実行する方法
+      url: running-profiling-tools-with-or-without-the-debugger.md
+- title: 作業開始
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: CPU 使用率の分析 (C#、Visual Basic)
+      url: quickstart-cpu-usage-managed.md
+    - text: CPU 使用率の分析 (C++)
+      url: quickstart-cpu-usage-native.md
+    - text: CPU 使用率の分析 (ASP.NET)
+      url: quickstart-cpu-usage-aspnet.md
+  - linkListType: tutorial
+    links:
+    - text: CPU 使用率の分析を開始する
+      url: beginners-guide-to-performance-profiling.md
+    - text: メモリ使用量の測定を開始する
+      url: beginners-guide-to-performance-profiling.md
+- title: 他のパフォーマンス ツール
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: パフォーマンスのヒント
+      url: perftips.md
+    - text: リソース消費量を分析する (XAML)
+      url: application-timeline.md
+    - text: GPU 使用状況を分析する (Direct3D)
+      url: gpu-usage.md
+    - text: ネットワーク使用量を分析する (UWP)
+      url: network-usage.md
+    - text: エネルギー使用を分析する (UWP)
+      url: analyze-energy-use-in-store-apps.md
+    - text: パフォーマンス エクスプローラー (レガシ)
+      url: performance-explorer.md
