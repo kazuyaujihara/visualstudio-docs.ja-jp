@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e4ace476a2454c7f6735f19cd07f222d6c06564e
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923747"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913333"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Visual Studio での Live Unit Testing
 
@@ -47,7 +47,7 @@ Live Unit Testing を構成するには、Visual Studio の最上位メニュー
 
 次の図に、ダイアログで使用できる Live Unit Testing の構成オプションを示します。
 
-  ![イメージ](./media/lut-options.png)
+  ![Image](./media/lut-options.png)
 
 次のオプションを構成できます。
 
@@ -100,27 +100,27 @@ Live Unit Testing を有効にするには、Visual Studio の最上位メニュ
 
 Live Unit Testing を有効にすると、Visual Studio エディターの各コード行が更新されて、記述しているコードが単体テストによってカバーされているかどうか、およびコードをカバーしているテストが合格かどうかが示されます。  次の図では、テストに合格したコード行と不合格のコード行、およびテストでカバーされていないコード行が示されています。 緑の "✓" で示される行は、すべてのテストに合格しています。赤い "x" で示される行は、1 つ以上のテストで不合格になっています。青い "➖" で示される行は、どのテストでもカバーされていません。
 
-  ![イメージ](./media/lut-codewindow.png)
+  ![Image](./media/lut-codewindow.png)
 
 Live Unit Testing のカバレッジの視覚化は、コード エディターでコードを変更するとすぐに更新されます。 次の図のように、編集を処理している間は、合格、不合格、非カバーのシンボルの下に丸いタイマーのイメージを追加することで、データが最新ではないことが示されます。
 
-  ![イメージ](./media/lut-codeupdating.png)
+  ![Image](./media/lut-codeupdating.png)
 
 ## <a name="get-information-on-successful-or-failed-tests"></a>テストの合格または不合格に関する情報の取得
 
 コード ウィンドウの合格または不合格のシンボルをカーソルでポイントすると、その行にヒットしているテストの数を確認できます。 シンボルをクリックすると、個々のテストの状態を確認できます (次の図を参照)。
 
-  ![イメージ](./media/lut-failedinfo.png)
+  ![Image](./media/lut-failedinfo.png)
 
 さらに、テストの名前と結果を指定すると、ツールヒントで、デバッガーを使用して一連のテストを実行するだけでなく、一連のテストを再実行することもできます。 ツールヒントで 1 つ以上のテストを選択して、それらのテストのみを実行またはデバッグすることもできます。 これにより、コード ウィンドウから移動することなくテストをデバッグできます。 既に設定したブレークポイントを確認するときだけでなく、デバッグを実行するときにも、デバッガーが [ `Assert` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert) メソッドを実行して予期しない結果が返されると、プログラムの実行は一時停止します。
 
 ツールヒントで不合格になったテストをポイントすると、展開されて、次の図に示すような不合格に関する追加情報が表示されます。 不合格になったテストをツールヒントでダブルクリックすると、そのテストに直接移動できます。
 
-  ![イメージ](./media/lut-failedmsg.png)
+  ![Image](./media/lut-failedmsg.png)
 
 不合格になったテストに移動すると、Live Unit Testing は合格したテスト (半分満たされたビーカーと緑の "✓" で示される)、不合格になったテスト (半分満たされたビーカーと赤の "🞩" で示される)、Live Unit Testing に含まれないテスト (半分満たされたビーカーと青の "➖" で示される) をメソッド シグネチャで視覚的に表示します。 テスト以外のメソッドにはシンボルは付きません。 次の図は、メソッドの 4 つのタイプすべてを示しています。
 
-  ![イメージ](media/lut-testsource.png)
+  ![Image](media/lut-testsource.png)
 
 ## <a name="diagnose-and-correct-test-failures"></a>不合格になったテストの診断と修正
 
@@ -137,7 +137,7 @@ Live Unit Testing のカバレッジの視覚化は、コード エディター�
 
 **テスト エクスプローラー** ウィンドウで、一部のテストがフェード アウトしているのに気付くことがあります。たとえば、以前保存したプロジェクトを開いた後に Live Unit Testing を有効にすると、次の図のように、**テスト エクスプローラー** ウィンドウで、不合格となったテストを除くすべてがフェード アウトします。 この場合、Live Unit Testing は不合格になったテストを返しますが、合格したテストは返しません。これは、Live Unit Testing の保持されたデータにより、テストが最後に正常実行されて以降は変更されていないことが示されているためです。
 
-  ![イメージ](media/lut-test-explorer.png)
+  ![Image](media/lut-test-explorer.png)
 
 フェード アウトしたテストを再実行するには、**テスト エクスプローラー** メニューから **[すべて実行]** または **[実行]** オプションを選択するか、**テスト エクスプローラー** メニューで 1 つ以上のテストを選び、右クリックして、ポップアップ メニューから **[選択したテストの実行]** か **[選択したテストのデバッグ]** を選択します。 実行中のテストは最上部に表示されます。
 
@@ -177,6 +177,12 @@ Live Unit Testing でのカバレッジのレポートからメソッド、ク�
 - xUnit の場合: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
 - NUnit の場合: `[Category("SkipWhenLiveUnitTesting")]`
 - MSTest の場合: `[TestCategory("SkipWhenLiveUnitTesting")]`
+
+テストのアセンブリ全体を Live Unit Testing から除外することもできます。
+
+- xUnit の場合: `[assembly: AssemblyTrait("Category", "SkipWhenLiveUnitTesting")]`
+- NUnit の場合: `[assembly: Category("SkipWhenLiveUnitTesting")]`
+- MSTest の場合: `[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>関連項目
 

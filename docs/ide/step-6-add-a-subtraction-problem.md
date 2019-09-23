@@ -1,22 +1,27 @@
 ---
 title: '手順 6: 減算問題を追加する'
 ms.date: 11/04/2016
-ms.topic: conceptual
-dev_langs:
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
 - csharp
 - vb
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d429d2921f252e97bfe7c233a9fe963f7f91299b
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 1c15bc7b3f1312d588699758d9be3e969d2db052
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416553"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079393"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>手順 6: 減算問題を追加する
 このチュートリアルの第 6 部では、減算問題を追加し、次のタスクを実行する方法を説明します。
@@ -29,12 +34,20 @@ ms.locfileid: "68416553"
 
 - タイマーの <xref:System.Windows.Forms.Timer.Tick> イベント ハンドラーを、残り時間がなくなったら正しい答えを表示するように更新します。
 
+> [!NOTE]
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。
+> - チュートリアルの概要については、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
+> - コードの完全バージョンをダウンロードするには、「[計算クイズのチュートリアルの完全なサンプル](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)」を参照してください。
+
 ## <a name="to-add-a-subtraction-problem"></a>減算問題を追加するには
 
 1. 減算問題の 2 つの整数変数をフォームの加算問題の整数変数とタイマーの間に追加します。 コードは次のようになります。
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
+
+     > [!IMPORTANT]
+     > このページの右上にあるプログラミング言語のコントロールを使用して、C# コード スニペットまたは Visual Basic コード スニペットのいずれかを表示します。<br><br>![Docs.Microsoft.com のプログラミング言語コントロール](../ide/media/docs-programming-language-control.png)
 
      新しい整数変数の名前 (**minuend** および **subtrahend**) は、プログラミング用語ではありません。 これらは、減算する数値 (subtrahend/減数) と減算される数値 (minuend/被減数) を表す従来の数学用語です。 被減数から減数を引いたものが差になります。 変数、コントロール、コンポーネント、またはメソッドの名前を特定の名前にするようにプログラムで制限されているわけではないため、別の名前を使用することもできます。 名前の先頭を数字にすることはできないなどの規則に従う必要はありますが、一般に、x1、x2、x3、x4 などの名前を使用できます。 ただし、汎用名はコードを読み取りにくくし、問題の追跡がほとんど不可能になります。 変数名を一意で役立つようにしておくために、このチュートリアルでは乗算 (被乗数 × 乗数 = 積) および除算 (被除数 ÷ 除数 = 商) についても従来の名前を使用します。
 
@@ -52,12 +65,13 @@ ms.locfileid: "68416553"
 
      複数の方法で、このチュートリアルで前に randomizer と名付けた、Random クラスの `Next()` メソッドを呼び出すことができます。 複数の方法で呼び出すことができるメソッドをオーバーロード メソッドと呼び、IntelliSense を使用して確認することができます。 `Next()` メソッドについての IntelliSense ウィンドウのツールヒントをもう一度見てください。
 
-     ![IntelliSense ウィンドウのツールヒント](../ide/media/express_overloads.png)
-**IntelliSense** ウィンドウのツールヒント
+     ![IntelliSense ウィンドウのツール ヒント](../ide/media/express_overloads.png)<br/>
+***IntelliSense*** *ウィンドウのツール ヒント*
 
      ツールヒントには " **(+ 2 オーバーロード)** " と表示され、これは他の 2 つの方法で `Next()` メソッドを呼び出せることを意味します。 オーバーロードには、異なる数または型の引数が含まれていて、互いに動作が若干異なります。 たとえば、メソッドは単一の整数引数を受け取ることがあり、さらにオーバーロードの 1 つは整数と文字列を受け取ることがありますが、 目的に基づいて適切なオーバーロードを選択します。 `StartTheQuiz()` メソッドにコードを追加すると、`randomizer.Next(` を入力するとすぐに、詳細情報が IntelliSense ウィンドウに表示されます。 別のオーバーロードに切り替えるには、次の図に示すように、**上矢印**キーおよび**下矢印**キーを押します。
 
-     ![IntelliSense での Next&#40;&#41; メソッドのオーバーロード](../ide/media/express_nextoverload.png) **IntelliSense** での **Next()** メソッドのオーバーロード
+     ![IntelliSense 内での Next&#40;&#41; メソッドのオーバーライド](../ide/media/express_nextoverload.png)<br/>
+***IntelliSense*** 内での ***Next()*** *メソッドの* *オーバーライド*
 
      この場合、最小値と最大値を指定できるため、最後のオーバーロードを選択する必要があります。
 
@@ -77,11 +91,11 @@ ms.locfileid: "68416553"
 
      プログラムには、次の図に示すように減算問題が含まれます。
 
-     ![減算の問題のある計算クイズ](../ide/media/express_addsubtract.png)
-減算の問題のある**計算クイズ**
+     ![減算の問題のある計算クイズ](../ide/media/express_addsubtract.png)<br/>
+***減算の問題のある****計算クイズ*
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「[手順 7:乗算問題と除算問題の追加](../ide/step-7-add-multiplication-and-division-problems.md)」を参照してください。
+- チュートリアルの次の手順に進むには、「 **[手順 7:乗算問題と除算問題の追加](../ide/step-7-add-multiplication-and-division-problems.md)** 」を参照してください。
 
 - チュートリアルの前の手順に戻るには、「[手順 5:NumericUpDown コントロールの Enter イベント ハンドラーの追加](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)」を参照してください。

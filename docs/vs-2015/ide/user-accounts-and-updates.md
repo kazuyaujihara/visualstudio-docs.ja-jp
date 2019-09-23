@@ -9,15 +9,19 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e955eaacd2f290558c5d786439373a9cc8febb35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ecd7a4d237a53a19286790346f790b82b981f60
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MTE95
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158288"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062871"
 ---
 # <a name="user-accounts-and-updates"></a>ユーザー アカウントと更新プログラム
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+> [!WARNING]
+> Visual Studio 2015 は、条件付きアクセス用に構成されているリソースにアクセスできません。 これらのリソースを操作するには、Visual Studio 2017 以降にアップグレードします。
 
 Visual Studio 自体は、接続環境です。 サインインすると、ユーザー アカウントだけでなく、そのアカウントにリンクされているすべてのアカウントに関連付けられているすべてのサービスにアクセスできるようになります。 Visual Studio を使用するどの場所にでも、アカウントの設定はユーザーと共に移動します。 個々のユーザーの特定の Visual Studio インスタンスにアクセス許可のレベルを構成することができます。 また、SDK などのインストールのコンポーネントに使用可能な更新プログラムがあった場合、Visual Studio はユーザーに通知します。  
   
@@ -31,5 +35,6 @@ Visual Studio 自体は、接続環境です。 サインインすると、ユ�
 |[Visual Studio のロックを解除する方法](../ide/how-to-unlock-visual-studio.md)|さまざまなシナリオで Visual Studio のロックを解除する方法について説明します。|  
 |[通知](../ide/visual-studio-notifications.md)|SDK などのコンポーネント、または Visual Studio 自体で更新プログラムが使用可能な場合に Visual Studio がユーザーに通知する方法について説明します。|  
   
-## <a name="see-also"></a>関連項目  
- [Visual Studio IDE](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>関連項目
+
+- [Visual Studio IDE](../ide/visual-studio-ide.md)

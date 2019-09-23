@@ -1,6 +1,6 @@
 ---
-title: '手順 11: アプリを実行して他の機能を試す'
-ms.date: 08/30/2019
+title: '手順 11: ピクチャ ビューアー アプリを実行して他の機能を試す'
+ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e82e0002255a406f02f85cbb2636be1aa249529
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 672156f9c1274189e904c79eb74a0c01e10f3a60
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887953"
+ms.locfileid: "70913123"
 ---
-# <a name="step-11-run-your-app-and-try-other-features"></a>手順 11: アプリを実行して他の機能を試す
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>手順 11: ピクチャ ビューアー アプリを実行して他の機能を試す
 
-アプリが完成し、実行する準備が整いました。 アプリを実行して <xref:System.Windows.Forms.PictureBox> の背景色を設定できます。 さらに詳しく学習するには、フォームの色の変更、ボタンとチェック ボックスのカスタマイズ、フォームのプロパティの変更などを行って、アプリケーションを改善してみてください。
+ピクチャ ビューアー アプリが完成し、実行する準備ができました。 アプリを実行して <xref:System.Windows.Forms.PictureBox> の背景色を設定できます。 さらに詳しく学習するには、フォームの色の変更、ボタンとチェック ボックスのカスタマイズ、フォームのプロパティの変更などを行って、アプリケーションを改善してみてください。
 
 ## <a name="how-to-run-your-app-and-set-the-background-color"></a>アプリを実行して背景色を設定する方法
 

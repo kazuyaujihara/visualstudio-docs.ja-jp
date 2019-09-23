@@ -1,49 +1,51 @@
 ---
-title: FxCop アナライザーの構成オプション
-ms.date: 03/11/2019
+title: FxCop analyzer の構成オプション
+ms.date: 09/23/2019
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c7050cbb80b1b79009a23a2d9bfedc40204fede
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27d254ac50b8127ab5cef9ba4cf914d14c0cfba5
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816715"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186385"
 ---
-# <a name="configuration-options-for-fxcop-analyzers"></a>FxCop アナライザーの構成オプション
+# <a name="rule-scope-options-for-fxcop-analyzers"></a>FxCop アナライザーの規則のスコープオプション
 
-このページには、使用可能な構成オプション、使用可能な値、および各オプションの構成可能なルールが一覧表示されます。
+一部の FxCop analyzer ルールでは、コードベースのどの部分を適用すべきかを調整できます。 このページには、使用可能なスコープ構成オプション、許容される値、および適用できるルールが一覧表示されます。 これらのオプションを使用するには、 [Editorconfig ファイル](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)で指定します。
 
-## <a name="apisurface"></a>api_surface
+これらの構成オプションは、 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet パッケージのバージョン2.6.3 以降で使用できます。
 
-| 説明 | 使用できる値 | 既定値 | 構成可能なルール |
+## <a name="api_surface"></a>api_surface
+
+| 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
 | - | - | - | - |
-| 分析する API サーフェイスのどの部分 | `public`<br/>`internal` または `friend`<br/>`private`<br/>`all`<br/><br/>複数の値をコンマ (,) で区切ります | `public` | [CA1000](ca1000-do-not-declare-static-members-on-generic-types.md)<br/>[CA 1003](ca1003-use-generic-event-handler-instances.md)<br/>[CA1008](ca1008-enums-should-have-zero-value.md)<br/>[CA 1010](ca1010-collections-should-implement-generic-interface.md)<br/>[CA 1012](ca1012-abstract-types-should-not-have-constructors.md)<br/>[CA 1024](ca1024-use-properties-where-appropriate.md)<br/>[CA1027](ca1027-mark-enums-with-flagsattribute.md)<br/>[CA1028](ca1028-enum-storage-should-be-int32.md)<br/>[CA1030](ca1030-use-events-where-appropriate.md)<br/>[CA1036](ca1036-override-methods-on-comparable-types.md)<br/>[CA1040](ca1040-avoid-empty-interfaces.md)<br/>[CA1041](ca1041-provide-obsoleteattribute-message.md)<br/>[CA 1043](ca1043-use-integral-or-string-argument-for-indexers.md)<br/>[CA 1044](ca1044-properties-should-not-be-write-only.md)<br/>[CA 1051](ca1051-do-not-declare-visible-instance-fields.md)<br/>[CA1052](ca1052-static-holder-types-should-be-sealed.md)<br/>[CA1054](ca1054-uri-parameters-should-not-be-strings.md)<br/>[CA 1055](ca1055-uri-return-values-should-not-be-strings.md)<br/>[CA 1056](ca1056-uri-properties-should-not-be-strings.md)<br/>[CA1058](ca1058-types-should-not-extend-certain-base-types.md)<br/>[CA1063](ca1063-implement-idisposable-correctly.md)<br/>[CA1708](ca1708-identifiers-should-differ-by-more-than-case.md)<br/>[CA1710](ca1710-identifiers-should-have-correct-suffix.md)<br/>[CA1711](ca1711-identifiers-should-not-have-incorrect-suffix.md)<br/>[CA1714](ca1714-flags-enums-should-have-plural-names.md)<br/>[CA1715](ca1715-identifiers-should-have-correct-prefix.md)<br/>[CA1716](ca1716-identifiers-should-not-match-keywords.md)<br/>[CA1717](ca1717-only-flagsattribute-enums-should-have-plural-names.md)<br/>[CA 1720](ca1720-identifiers-should-not-contain-type-names.md)<br/>[CA1721](ca1721-property-names-should-not-match-get-methods.md)<br/>[CA1725](ca1725-parameter-names-should-match-base-declaration.md)<br/>[CA 1802](ca1802-use-literals-where-appropriate.md)<br/>[CA1815](ca1815-override-equals-and-operator-equals-on-value-types.md)<br/>[CA 1819](ca1819-properties-should-not-return-arrays.md)<br/>[CA2217](ca2217-do-not-mark-enums-with-flagsattribute.md)<br/>[CA2225](ca2225-operator-overloads-have-named-alternates.md)<br/>[CA2226](ca2226-operators-should-have-symmetrical-overloads.md)<br/>[CA2231](ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)<br/>[CA2234](ca2234-pass-system-uri-objects-instead-of-strings.md) |
+| 分析する API サーフェイスの部分 | `public`<br/>`internal` または `friend`<br/>`private`<br/>`all`<br/><br/>複数の値はコンマ (,) で区切ります | `public` | [CA1000](ca1000-do-not-declare-static-members-on-generic-types.md)<br/>[CA1003](ca1003-use-generic-event-handler-instances.md)<br/>[CA1008](ca1008-enums-should-have-zero-value.md)<br/>[CA1010](ca1010-collections-should-implement-generic-interface.md)<br/>[CA1012](ca1012-abstract-types-should-not-have-constructors.md)<br/>[CA1024](ca1024-use-properties-where-appropriate.md)<br/>[CA1027](ca1027-mark-enums-with-flagsattribute.md)<br/>[CA1028](ca1028-enum-storage-should-be-int32.md)<br/>[CA1030](ca1030-use-events-where-appropriate.md)<br/>[CA1036](ca1036-override-methods-on-comparable-types.md)<br/>[CA1040](ca1040-avoid-empty-interfaces.md)<br/>[CA1041](ca1041-provide-obsoleteattribute-message.md)<br/>[CA1043](ca1043-use-integral-or-string-argument-for-indexers.md)<br/>[CA1044](ca1044-properties-should-not-be-write-only.md)<br/>[CA1051](ca1051-do-not-declare-visible-instance-fields.md)<br/>[CA1052](ca1052-static-holder-types-should-be-sealed.md)<br/>[CA1054](ca1054-uri-parameters-should-not-be-strings.md)<br/>[CA1055](ca1055-uri-return-values-should-not-be-strings.md)<br/>[CA1056](ca1056-uri-properties-should-not-be-strings.md)<br/>[CA1058](ca1058-types-should-not-extend-certain-base-types.md)<br/>[CA1063](ca1063-implement-idisposable-correctly.md)<br/>[CA1708](ca1708-identifiers-should-differ-by-more-than-case.md)<br/>[CA1710](ca1710-identifiers-should-have-correct-suffix.md)<br/>[CA1711](ca1711-identifiers-should-not-have-incorrect-suffix.md)<br/>[CA1714](ca1714-flags-enums-should-have-plural-names.md)<br/>[CA1715](ca1715-identifiers-should-have-correct-prefix.md)<br/>[CA1716](ca1716-identifiers-should-not-match-keywords.md)<br/>[CA1717](ca1717-only-flagsattribute-enums-should-have-plural-names.md)<br/>[CA1720](ca1720-identifiers-should-not-contain-type-names.md)<br/>[CA1721](ca1721-property-names-should-not-match-get-methods.md)<br/>[CA1725](ca1725-parameter-names-should-match-base-declaration.md)<br/>[CA1802](ca1802-use-literals-where-appropriate.md)<br/>[CA1815](ca1815-override-equals-and-operator-equals-on-value-types.md)<br/>[CA1819](ca1819-properties-should-not-return-arrays.md)<br/>[CA2217](ca2217-do-not-mark-enums-with-flagsattribute.md)<br/>[CA2225](ca2225-operator-overloads-have-named-alternates.md)<br/>[CA2226](ca2226-operators-should-have-symmetrical-overloads.md)<br/>[CA2231](ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)<br/>[CA2234](ca2234-pass-system-uri-objects-instead-of-strings.md) |
 
-## <a name="excludeasyncvoidmethods"></a>exclude_async_void_methods
+## <a name="exclude_async_void_methods"></a>exclude_async_void_methods
 
-| 説明 | 使用できる値 | 既定値 | 構成可能なルール |
+| 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
 | - | - | - | - |
 | 値を返さない非同期メソッドを無視するかどうか | `true`<br/>`false` | `false` | [CA2007](ca2007-do-not-directly-await-task.md) |
 
 > [!NOTE]
-> このオプションの名前が 2.6.3 のバージョンでと、以前のアナライザー パッケージ`skip_async_void_methods`します。
+> バージョン2.6.3 以前のアナライザーパッケージでは、このオプションの名前`skip_async_void_methods`はです。
 
-## <a name="excludesinglelettertypeparameters"></a>exclude_single_letter_type_parameters
+## <a name="exclude_single_letter_type_parameters"></a>exclude_single_letter_type_parameters
 
-| 説明 | 使用できる値 | 既定値 | 構成可能なルール |
+| 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
 | - | - | - | - |
-| 単一の文字を除外するかどうか[パラメーター入力](/dotnet/csharp/programming-guide/generics/generic-type-parameters)、ルールから`S`で `Collection<S>` | `true`<br/>`false` | `false` | [CA1715](ca1715-identifiers-should-have-correct-prefix.md) |
+| 1文字の[型パラメーター](/dotnet/csharp/programming-guide/generics/generic-type-parameters)をルールから除外するかどうか (例`S` :)`Collection<S>` | `true`<br/>`false` | `false` | [CA1715](ca1715-identifiers-should-have-correct-prefix.md) |
 
 > [!NOTE]
-> このオプションの名前が 2.6.3 のバージョンでと、以前のアナライザー パッケージ`allow_single_letter_type_parameters`します。
+> バージョン2.6.3 以前のアナライザーパッケージでは、このオプションの名前`allow_single_letter_type_parameters`はです。
 
-## <a name="outputkind"></a>output_kind
+## <a name="output_kind"></a>output_kind
 
-| 説明 | 使用できる値 | 既定値 | 構成可能なルール |
+| 説明 | 使用できる値 | 既定値 | 構成可能な規則 |
 | - | - | - | - |
-| この種類のアセンブリを生成するプロジェクトでコードを分析することを指定します。 | 1 つまたは複数のフィールド、<xref:Microsoft.CodeAnalysis.OutputKind>列挙型<br/><br/>複数の値をコンマ (,) で区切ります | すべての出力の種類 | [CA2007](ca2007-do-not-directly-await-task.md) |
+| この型のアセンブリを生成するプロジェクト内のコードを分析する必要があることを指定します。 | <xref:Microsoft.CodeAnalysis.OutputKind>列挙体の1つまたは複数のフィールド<br/><br/>複数の値はコンマ (,) で区切ります | すべての出力の種類 | [CA2007](ca2007-do-not-directly-await-task.md) |

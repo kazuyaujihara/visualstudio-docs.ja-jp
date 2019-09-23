@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551061"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062411"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則のポートの状態
 
@@ -69,7 +69,7 @@ Roslyn-アナライザーリポジトリの自動生成された[ドキュメン
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 予期しない場所に例外を発生させません
 CA1066 | 型{0}は Equals を\<オーバーライドするため、IEquatable T > を実装する必要があります
 CA1067 | IEquatable\<T > を実装するときに、object.equals (object) をオーバーライドします
-CA1068 | CancellationToken パラメーターは最後に指定する必要があります
+[CA1068](ca1068.md) | CancellationToken パラメーターは最後に指定する必要があります
 CA1200 | プレフィックスで cref タグを使用しない
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | ローカライズされるパラメーターとしてリテラルを渡さない
 [CA1304](ca1304-specify-cultureinfo.md) | CultureInfo を指定します
@@ -193,7 +193,7 @@ CA5369 | 逆シリアル化に XmlReader を使用する
 CA5370 | 読み取りの検証に XmlReader を使用する
 CA5371 | スキーマ読み取りに XmlReader を使用する
 CA5372 | Xpath ドキュメントに XmlReader を使用する
-CA5373 | 廃止されたキー派生関数を使用しない
+CA5373 | 廃止されたキー派生関数を使用しません
 CA5374 | XslTransform を使用しない
 CA5375 | アカウントを使用しない Shared Access Signature
 CA5376 | SharedAccessProtocol HttpsOnly を使用する

@@ -1,28 +1,33 @@
 ---
 title: '手順 1: プロジェクトの作成とフォームへのラベルの追加'
 ms.date: 05/31/2019
-ms.topic: conceptual
+ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c04e0700a9913548b33e1ef3e9092f774cddc77
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 88ec1c96bea4ebbe3465a489354d90fbbe906858
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501135"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987946"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>手順 1: プロジェクトの作成とフォームへのラベルの追加
 
 このクイズを開発する最初のステップとして、プロジェクトを作成し、ラベル、ボタン、およびその他のコントロールをフォームに追加します。 また、追加する各コントロールのプロパティを設定します。 プロジェクトには、フォーム、コントロール、およびコード (チュートリアルで後ほど説明) が含まれます。 ボタンはクイズを開始し、ラベルはクイズ問題を表示し、その他のコントロールはクイズの解答とクイズを完了するために残っている時間を示します。
 
 > [!NOTE]
-> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 チュートリアルの概要については、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。 
+> - チュートリアルの概要については、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。 
+> - コードの完全バージョンをダウンロードするには、「[計算クイズのチュートリアルの完全なサンプル](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)」を参照してください。
 
 ## <a name="to-create-a-project-for-a-form"></a>フォーム用のプロジェクトを作成するには
 
@@ -102,7 +107,7 @@ ms.locfileid: "66501135"
 
 7. **Font** プロパティの横にある正符号 ( **+** ) をクリックし、**Size** プロパティの値を **15.75** に変更します。
 
-     次の画像に示すように、複数のフォント プロパティを変更できます。
+     次のスクリーンショットに示すように、複数のフォント プロパティを変更できます。
 
      ![フォント サイズを示す [プロパティ] ウィンドウ](../ide/media/express_setfontsize.png)
 
@@ -150,7 +155,7 @@ ms.locfileid: "66501135"
 
 16. NumericUpDown コントロールの **(Name)** プロパティの値を **sum** に変更します。
 
-     次の画像に示すように、最初の行が作成されました。
+     次の画像に示すように、最初の行を作成しました。
 
      ![計算クイズの最初の行](../ide/media/express_firstrow.png)
 
@@ -200,7 +205,7 @@ ms.locfileid: "66501135"
 
 7. NumericUpDown sum コントロールの **TabIndex** プロパティの値を **2** に設定し、difference コントロールは **3** に設定し、product コントロールは **4** に設定し、quotient コントロールは **5** に設定します。
 
-     フォームは次の図のようになります。
+     フォームは次のスクリーンショットのようになります。
 
      ![計算クイズの初期フォーム](../ide/media/express_formlaidout.png)
 
@@ -208,6 +213,6 @@ ms.locfileid: "66501135"
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「[手順 2:ランダムな加算問題の作成](../ide/step-2-create-a-random-addition-problem.md)」を参照してください。
+- チュートリアルの次の手順に進むには、 **[手順 2: ランダムな加算問題の作成](../ide/step-2-create-a-random-addition-problem.md)** 」を参照してください。
 
 - 概要のトピックに戻るには、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。

@@ -1,5 +1,5 @@
----
-title: ']' が必要です。 |Microsoft Docs
+﻿---
+title: "']' が必要です。 |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript

@@ -1,25 +1,36 @@
 ---
 title: '手順 7: 乗算問題と除算問題の追加'
 ms.date: 11/04/2016
-ms.topic: conceptual
-dev_langs:
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
 - csharp
 - vb
+dev_langs:
+- CSharp
+- VB
 ms.assetid: e638959e-f6a4-4eb4-b2e9-f63b7855cf8f
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 887af3a439e1f6e0f21d5ca68061d2f9977dfac7
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: b367c83b449959e102e1adff124d9c871eff9a23
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416535"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079296"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>手順 7: 乗算問題と除算問題の追加
+
 このチュートリアルの第 7 部では、乗算問題と除算問題を追加しますが、まず変更方法について考えてみます。 最初の手順は、値を格納することです。
+
+> [!NOTE]
+> このトピックは、コーディングの基本概念に関するチュートリアル シリーズの一部です。
+> - チュートリアルの概要については、「[チュートリアル 2:制限時間ありの計算クイズの作成](../ide/tutorial-2-create-a-timed-math-quiz.md)」を参照してください。
+> - コードの完全バージョンをダウンロードするには、「[計算クイズのチュートリアルの完全なサンプル](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)」を参照してください。
 
 ## <a name="to-add-multiplication-and-division-problems"></a>乗算問題と除算問題を追加するには
 
@@ -27,6 +38,9 @@ ms.locfileid: "68416535"
 
      [!code-vb[VbExpressTutorial3Step7#15](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_1.vb)]
      [!code-csharp[VbExpressTutorial3Step7#15](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_1.cs)]
+
+     > [!IMPORTANT]
+     > このページの右上にあるプログラミング言語のコントロールを使用して、C# コード スニペットまたは Visual Basic コード スニペットのいずれかを表示します。<br><br>![Docs.Microsoft.com のプログラミング言語コントロール](../ide/media/docs-programming-language-control.png)
 
 2. 以前に実行したように、`StartTheQuiz()` メソッドを変更して、乗算問題と除算問題に乱数を入力するようにします。
 
@@ -49,11 +63,11 @@ ms.locfileid: "68416535"
 
      次の図に示すように、クイズの受け手はクイズを完了するためには 4 つの問題に答える必要があります。
 
-     ![4 つの問題がある計算クイズ](../ide/media/express_finishedquiz.png)
-**4 つの問題がある**計算クイズ
+     ![4 つの問題がある計算クイズ](../ide/media/express_finishedquiz.png)<br/>
+***4 つの問題がある****計算クイズ*
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「[手順 8:クイズのカスタマイズ](../ide/step-8-customize-the-quiz.md)」をご覧ください。
+- チュートリアルの次の手順に進むには、「 **[手順 8:クイズのカスタマイズ](../ide/step-8-customize-the-quiz.md)** 」を参照してください。
 
 - チュートリアルの前の手順に戻るには、「[手順 6:減算問題の追加](../ide/step-6-add-a-subtraction-problem.md)」を参照してください。

@@ -1,5 +1,5 @@
 - name: 配置に関するドキュメント
-  href: index.md
+  href: index.yml
 - name: 概要
   items:
     - name: 配置の概要
@@ -22,8 +22,8 @@
       items:
         - name: 発行ツールを使用して .NET Core アプリケーションを展開する
           href: /dotnet/core/deploying/deploy-with-vs
-        - name: Microsoft ストアのデスクトップ アプリをパッケージ化する (デスクトップ ブリッジ)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
+        - name: Microsoft Store のデスクトップ アプリをパッケージ化する
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: ClickOnce を使用してデスクトップ アプリを配置する
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: ClickOnce アプリケーションのコマンド ラインからのビルド
@@ -38,14 +38,12 @@
           href: tutorial-import-publish-settings-azure.md
         - name: Git を使用した Azure への ASP.NET Core の継続的な配置
           href: /aspnet/core/publishing/azure-continuous-deployment
-        - name: Visual Studio Kubernetes ツールを使用して Kubernetes に発行する
-          href: ../containers/tutorial-kubernetes-tools.md?toc=/visualstudio/deployment/toc.json
     - name: C++
       items:
         - name: C/C++ アプリを配置する
           href: /cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: Microsoft ストアのデスクトップ アプリをパッケージ化する (デスクトップ ブリッジ)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
+        - name: Microsoft Store のデスクトップ アプリをパッケージ化する
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: ClickOnce を使用して C++/CLR アプリを配置...
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
     - name: UWP

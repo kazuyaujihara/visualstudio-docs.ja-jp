@@ -139,7 +139,7 @@
       displayName: Feature tour
       href: ide/quickstart-ide-orientation.md
     - name: 'C++: コンソール アプリを作成する'
-      href: ide/getting-started-with-cpp-in-visual-studio.md
+      href: /cpp/get-started/tutorial-console-cpp
     - name: 'Python:Web アプリの作成'
       href: ide/quickstart-python.md
     - name: 'Node.js: Web アプリの作成'
@@ -660,12 +660,12 @@
       href: test/improve-code-quality.md
     - name: パフォーマンスの測定 >>
       displayName: Profiling
-      href: profiling/index.md
+      href: profiling/index.yml
     - name: コード品質の分析 >>
       displayName: Code analysis FxCop Analyzers
       href: code-quality/index.md
     - name: デプロイ >>
-      href: deployment/index.md
+      href: deployment/index.yml
     - name: Visual Studio の拡張 >>
       displayName: Visual Studio SDK
       href: extensibility/visual-studio-sdk.md
@@ -767,7 +767,7 @@
           href: ide/reference/add-new-item-command.md
         - name: 別名コマンド
           href: ide/reference/alias-command.md
-        - name: Evaluate Statement コマンド
+        - name: ステートメントの評価コマンド
           href: ide/reference/evaluate-statement-command.md
         - name: 検索コマンド
           href: ide/reference/find-command.md
@@ -946,7 +946,7 @@
                       href: ide/reference/options-text-editor-c-cpp-experimental.md
                     - name: 書式設定
                       href: ide/reference/options-text-editor-c-cpp-formatting.md
-                    - name: 表示
+                    - name: View
                       href: ide/reference/options-text-editor-c-cpp-view.md
                 - name: 'F#'
                   items:

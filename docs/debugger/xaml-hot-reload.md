@@ -11,16 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0acacac883153990861385c96eeb3379c464f97f
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: ff5e70d4ec2831df18ce1b100e70730e2978201e
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871001"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186571"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>XAML を使用した実行中の XAML コードの作成とデバッグ Visual Studio でのホットリロード
 
-XAML ホットリロードは、アプリの実行中に XAML コードを変更できるようにすることで、WPF または UWP アプリのユーザーインターフェイス (UI) を構築するのに役立ちます。 ホットリロードは、Visual Studio と Blend for Visual Studio の両方で使用できます。 この機能を使用すると、実行中のアプリのデータコンテキスト、認証状態、およびデザイン時にシミュレートするのが困難なその他の実際の複雑さの恩恵を受けながら、XAML コードを段階的にビルドおよびテストできます。
+XAML ホットリロードは、アプリの実行中に XAML コードを変更できるようにすることで、WPF または UWP アプリのユーザーインターフェイス (UI) を構築するのに役立ちます。 ホットリロードは、Visual Studio と Blend for Visual Studio の両方で使用できます。 この機能を使用すると、実行中のアプリのデータコンテキスト、認証状態、およびデザイン時にシミュレートするのが困難なその他の実際の複雑さの恩恵を受けながら、XAML コードを段階的にビルドおよびテストできます。 XAML ホットリロードのトラブルシューティングに関するヘルプが必要な場合は、「代わりに[Xaml ホットリロードのトラブルシューティング](xaml-hot-reload-troubleshooting.md)」を参照してください。
+
+> [!NOTE]
+> Xamarin. Forms を使用している場合は、「 [xamarin の XAML ホットリロード](/xamarin/xamarin-forms/xaml/hot-reload)」を参照してください。
 
 XAML ホットリロードは、次のような場合に特に役立ちます。
 
@@ -30,23 +33,27 @@ XAML ホットリロードは、次のような場合に特に役立ちます。
 
 |サポートされているアプリケーションの種類|オペレーティング システムとツール|
 |-|-|-|
-|Windows Presentation Foundation (WPF) |.NET Framework 4.6+</br>Windows 7 以上 |
+|Windows Presentation Foundation (WPF) |.NET Framework 4.6 以降および .NET Core</br>Windows 7 以上 |
 |ユニバーサル Windows アプリ (UWP)|Windows 10 以降、 [windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
 
-> [!NOTE]
-> Visual Studio XAML ホットリロードは、現在、Visual Studio でアプリケーションを実行している場合、またはデバッガーがアタッチされた (**F5**または**デバッグを開始**する) Blend for Visual Studio 場合にのみサポートされます。 [プロセスにアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)することによって、このエクスペリエンスを有効にすることはできません。
+次の図は、ライブビジュアルツリーを使用してソースコードを開き、XAML ホットリロードを使用してボタンのテキストとボタンの色を変更する方法を示しています。
 
-## <a name="known-limitations"></a>既知の制限
+![XAML ホット リロード](../debugger/media/xaml-hot-reload-using.gif)
+
+> [!NOTE]
+> Visual Studio XAML ホットリロードは、現在、Visual Studio でアプリケーションを実行している場合、またはデバッガーがアタッチされた (**F5**または**デバッグを開始**する) Blend for Visual Studio 場合にのみサポートされます。 [環境変数を手動で設定](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process)しない限り、[プロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)を使用してこのエクスペリエンスを有効にすることはできません。
+
+## <a name="known-limitations"></a>既知の制限事項
 
 XAML ホットリロードの既知の制限事項を次に示します。 に実行するすべての制限を回避するには、デバッガーを停止し、操作を完了します。
 
 |制限|WPF|UWP|メモ|
 |-|-|-|-|
-|アプリの実行中にイベントをコントロールに接続する|サポート非対象|サポートなし|エラーを参照:*イベントが失敗したことを確認する*|
-|リソースディクショナリ内のリソースオブジェクト (アプリのページ/ウィンドウや*app.xaml*など) の作成|サポート非対象|サポート状況|例: を`StaticResource`と`SolidColorBrush`して使用するために、をリソースディクショナリに追加します。</br>メモ:静的リソース、スタイルコンバーター、およびリソースディクショナリに記述されたその他の要素は、XAML ホットリロードの使用中に適用または使用できます。 リソースの作成のみがサポートされていません。</br> リソースディクショナリ`Source`のプロパティを変更しています。|
+|アプリの実行中にイベントをコントロールに接続する|サポート非対象|サポートなし|エラーを参照:*イベントが失敗したことを確認*します。 WPF では、既存のイベントハンドラーを参照できます。 UWP アプリでは、既存のイベントハンドラーの参照はサポートされていません。|
+|リソースディクショナリ内のリソースオブジェクト (アプリのページ/ウィンドウや*app.xaml*など) の作成|Visual Studio 2019 Update 2 以降でサポートされる|サポート状況|例: を`StaticResource`と`SolidColorBrush`して使用するために、をリソースディクショナリに追加します。</br>メモ:静的リソース、スタイルコンバーター、およびリソースディクショナリに記述されたその他の要素は、XAML ホットリロードの使用中に適用または使用できます。 リソースの作成のみがサポートされていません。</br> リソースディクショナリ`Source`のプロパティを変更しています。|
 |アプリの実行中に新しいコントロール、クラス、ウィンドウ、またはその他のファイルをプロジェクトに追加する|サポート非対象|サポート非対象|なし|
 |NuGet パッケージの管理 (パッケージの追加/削除/更新)|サポート非対象|サポート非対象|なし|
-|{X:Bind} markup extension を使用するデータバインディングの変更|N/A|Visual Studio 2019 以降のバージョンでサポートされています|Visual Studio 2017 またはそれ以前のバージョンではサポートされていません|
+|{X:Bind} markup extension を使用するデータバインディングの変更|N/A|Visual Studio 2019 以降でサポートされます。|これには、Windows 10 バージョン 1809 (build 10.0.17763) が必要です。 Visual Studio 2017 またはそれ以前のバージョンではサポートされていません。|
 
 ## <a name="error-messages"></a>エラー メッセージ
 
@@ -55,5 +62,10 @@ XAML ホットリロードの使用中に、次のエラーが発生する場合
 |エラー メッセージ|説明|
 |-|-|
 |イベントが失敗したことを確認する|[エラー] は、アプリケーションの実行中にサポートされていないコントロールの1つにイベントを送信しようとしていることを示します。|
-|XAML のエディット コンティニュに更新する要素が見つかりませんでした。|アプリケーションでホットリロードを更新できない XAML を編集しているときに、エラーが発生します。</br> このエラーは、実行中のアプリを使用して、XAML が使用されているビューに移動することによって解決される場合があります。</br> このエラーは、デバッグセッションを再開するまで、特定の変更を適用できないことを意味します。 |
-|この変更はデバッグ セッション中にはサポートされません。|エラーは、実行しようとしている変更が XAML ホットリロードでサポートされていないことを示します。 デバッグセッションを停止し、変更を加えてから、デバッグセッションを再開します。|
+|この変更は、XAML ホットリロードではサポートされておらず、デバッグセッション中に適用されません。|エラーは、実行しようとしている変更が XAML ホットリロードでサポートされていないことを示します。 デバッグセッションを停止し、変更を加えてから、デバッグセッションを再開します。 サポートが必要なサポートされていないシナリオが見つかった場合は、 [Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/8/index.html)の新しい [機能の提案] オプションを使用してください。 |
+
+## <a name="see-also"></a>関連項目
+
+* [XAML ホットリロードのトラブルシューティング](xaml-hot-reload-troubleshooting.md)
+* [Xamarin. フォームの XAML ホットリロード](/xamarin/xamarin-forms/xaml/hot-reload)
+* [エディット コンティニュ (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
