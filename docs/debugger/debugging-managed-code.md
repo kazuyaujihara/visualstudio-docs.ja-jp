@@ -1,6 +1,6 @@
 ---
-title: マネージ コードのデバッグ |Microsoft Docs
-ms.date: 11/04/2016
+title: マネージコードのデバッグ |Microsoft Docs
+ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c94de629026cfa1b78429aaf2209b81eead7da4f
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851877"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211203"
 ---
-# <a name="debugging-managed-code"></a>マネージド コードのデバッグ
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>マネージコードのデバッグC#(、Visual Basic F#、 C++/cli)
 
-ここでは、マネージド アプリケーションに共通するデバッグの問題と手法について説明します。マネージド アプリケーションは、Visual Basic、C#、C++ など、共通言語ランタイムをターゲットにした言語で記述されたアプリケーションです。 ここでは、高度な手法について説明します。 [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
+このセクションでは、マネージアプリケーションの一般的なデバッグの問題と手法、およびC# C++Visual Basic、、/cli などの共通言語ランタイムを対象とする言語で記述されたアプリケーションについて説明します。 ここでは、高度な手法について説明します。 [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
 
 ## <a name="in-this-section"></a>このセクションの内容
 
 [出力ウィンドウの診断メッセージ](../debugger/diagnostic-messages-in-the-output-window.md)\
-<xref:System.Diagnostics.Debug> クラスと <xref:System.Diagnostics.Trace> クラスについて説明します。このクラスを使用して、**[出力]** ウィンドウに出力されるランタイム メッセージを記述できます。 Debug クラスと Trace クラスに含まれている出力メソッドを使用すると、実行の中断を伴わない情報出力、および指定した条件が満たされなかった場合に実行の中断を伴う情報出力ができます。
+<xref:System.Diagnostics.Debug> クラスと <xref:System.Diagnostics.Trace> クラスについて説明します。このクラスを使用して、 **[出力]** ウィンドウに出力されるランタイム メッセージを記述できます。 Debug クラスと Trace クラスに含まれている出力メソッドを使用すると、実行の中断を伴わない情報出力、および指定した条件が満たされなかった場合に実行の中断を伴う情報出力ができます。
 
 [マネージド コードのアサーション](../debugger/assertions-in-managed-code.md)\
 マネージド コードのアサーションについて説明し、`Assert` メソッドの引数として指定された条件をテストします。 ここでは、サンプル コード、<xref:System.Diagnostics.Debug> クラスと <xref:System.Diagnostics.Trace> クラスのメソッドの使用に関する情報、デバッグ バージョンとリリース バージョンのコードの注意事項、副作用、アサートの引数、アサートの動作のカスタマイズ、および構成ファイルについても説明します。
@@ -47,7 +47,7 @@ Windows フォームを作成し、そのフォームをデバッグする方法
 [混合モードのデバッグ](../debugger/debugging-mixed-mode-applications.md)\
 混合モード アプリケーションのデバッグについて説明します。 これは、ネイティブ コードとマネージド コードを組み合わせたアプリケーションです。
 
-[エラー: システムのカーネル デバッガーが有効になっているため、デバッグできません。](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[エラー: カーネルデバッガーがシステムで有効になっているため、デバッグできません](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 デバッグ モードで起動された [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]、[!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]、[!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)]、または Windows NT システムでマネージド コードのデバッグを試みたときに発生するエラー メッセージについて説明します。
 
 [JIT の最適化とデバッグ](../debugger/jit-optimization-and-debugging.md)\
@@ -81,7 +81,7 @@ Windows サービス アプリケーションのデバッグに関する注意�
 
 ## <a name="see-also"></a>関連項目
 
-- [チュートリアル: デザイン時にカスタム Windows フォーム コントロールをデバッグします。](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [チュートリアル: デザイン時にカスタム Windows フォームコントロールをデバッグする](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
-- [Visual Studio でのデバッグ](../debugger/index.md)
+- [Visual Studio でのデバッグ](../debugger/index.yml)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

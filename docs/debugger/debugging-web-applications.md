@@ -18,24 +18,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fa8bb0fb7672c177d0543a06fe423ca1d115514
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c6bd788124927de759558392cfe36194632c0996
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851802"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211095"
 ---
 # <a name="debugging-web-applications"></a>Web アプリケーションのデバッグ
 ここでは、いくつかの種類の Web アプリケーションのデバッグ方法について説明します。
 
 ## <a name="in-this-section"></a>このセクションの内容
- [クライアント側スクリプトのデバッグ](../debugger/client-side-script-debugging.md)スクリプトとクライアント側スクリプトのテストについて説明します[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]ページ。
+ [クライアント側スクリプトのデバッグ](../debugger/client-side-script-debugging.md)ページのテストスクリプトとクライアント側スクリプトに[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]ついて説明します。
 
 ## <a name="related-sections"></a>関連項目
- [ASP.NET アプリケーションをデバッグする](../debugger/how-to-enable-debugging-for-aspnet-applications.md)のデバッグを有効にするために必要な手順について説明します[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]アプリケーション。
+ [ASP.NET アプリケーションのデバッグ](../debugger/how-to-enable-debugging-for-aspnet-applications.md)アプリケーションの[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]デバッグを有効にするために必要な手順について説明します。
 
 ## <a name="see-also"></a>関連項目
 - [Web アプリケーションとスクリプトのデバッグ](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
 - [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)
-- [Visual Studio でのデバッグ](../debugger/index.md)
+- [Visual Studio でのデバッグ](../debugger/index.yml)

@@ -1,5 +1,5 @@
 ---
-title: COM クライアントおよびサーバーの RPC デバッグを使用したデバッグ |Microsoft Docs
+title: RPC デバッグを使用して COM クライアントおよびサーバーをデバッグする |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c98405b424dd5402a903a236b1c5549a43616d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2cca09e917cddffd0d1d844db14ae8a4ca4f0088
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387517"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211078"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>方法: RPC デバッグを使用して COM クライアントおよびサーバーをデバッグする
 リモート プロシージャ コール (RPC: Remote Procedure Call) デバッグを使用して、COM クライアント/サーバー アプリケーションをデバッグできます。 このデバッグを行うには、あらかじめ RPC デバッグを有効にする必要があります。 RPC デバッグを有効にすると、ステップ実行でクライアントからサーバーを呼び出すときに、デバッガーがサーバーにアタッチし、コードのデバッグができるようになります。 デバッガーをアタッチすることにより、クライアントおよびサーバーのどちらのプロセスでも、デバッガーのすべての機能を使用できます。
@@ -40,7 +40,7 @@ ms.locfileid: "63387517"
 
 1. **[ツール]** メニューの **[オプション]** をクリックします。
 
-2. **[オプション]** ダイアログ ボックスで、**[デバッグ]** フォルダーをクリックします。
+2. **[オプション]** ダイアログ ボックスで、 **[デバッグ]** フォルダーをクリックします。
 
 3. **[ネイティブ]** ページをクリックします。
 
@@ -54,5 +54,5 @@ ms.locfileid: "63387517"
 
 ## <a name="see-also"></a>関連項目
 - [COM サーバーおよび COM コンテナーのデバッグ](../debugger/com-server-and-container-debugging.md)
-- [Visual Studio でのデバッグ](../debugger/index.md)
+- [Visual Studio でのデバッグ](../debugger/index.yml)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

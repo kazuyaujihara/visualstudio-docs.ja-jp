@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b918559742e9570ba3ad0ad1233ab643d087fdd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63d393e5ab056f16e54382b2295a667f079ede95
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852242"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211157"
 ---
 # <a name="debugging-applications"></a>アプリケーションのデバッグ
 次のセクションでは、特定の種類のアプリケーションのデバッグを処理します。 さまざまなアプリケーションの種類とさまざまな言語には、異なる設定と手法が必要であり、デバッグする必要がある問題もさまざまに発生します。
@@ -28,10 +28,12 @@ ms.locfileid: "62852242"
 |||
 |-|-|
 |[UWP アプリをデバッグする](../debugger/debugging-windows-store-and-windows-universal-apps.md)|UWP アプリをデバッグする方法について説明します。|
-|[マネージド コードをデバッグする](../debugger/debugging-managed-code.md)|マネージド コード (Visual C#、Visual Basic、および F3) をデバッグする方法について説明します。|
+|[マネージド コードをデバッグする](../debugger/debugging-managed-code.md)|マネージコード (Visual C#、Visual Basic、 F#、およびC++/cli) をデバッグする方法について説明します。|
 |[ネイティブ コードをデバッグする](../debugger/debugging-native-code.md)|各種のネイティブの C++ アプリケーションをデバッグする方法について説明します。|
 |[GPU コードのデバッグ](../debugger/debugging-gpu-code.md)|グラフィカル処理装置 (GPU) で実行されている C++ コードをデバッグする方法について説明します。|
 |[グラフィックス診断 (DirectX グラフィックスのデバッグ)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|DirectX のグラフィックスをデバッグする方法について説明します。|
 |[ASP.NET アプリケーションをデバッグする](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|ASP.NET アプリケーションをデバッグする方法について説明します。|
+|[Python コードのデバッグ](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Python コードをデバッグする方法について説明します。|
+|[JavaScript および TypeScript アプリケーションのデバッグ](/javascript/debug-nodejs.md)|JavaScript、TypeScript、および node.js アプリケーションをデバッグする方法について説明します。|
 |[Web アプリケーションをデバッグする](../debugger/debugging-web-applications.md)|Web アプリケーションとスクリプトをデバッグする方法について説明します。|
 |[WCF サービスをデバッグする](../debugger/debugging-wcf-services.md)|Windows Communication Foundation サービスのデバッグ方法について説明します。|
