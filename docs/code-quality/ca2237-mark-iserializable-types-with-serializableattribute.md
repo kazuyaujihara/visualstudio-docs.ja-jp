@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a047ec190652e3559e8bf83fe14834ed95d8a69
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 53d049cad426201a8aaa48662061a4a424116b26
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920110"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237941"
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237:ISerializable 型を SerializableAttribute に設定します
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920110"
 |TypeName|MarkISerializableTypesWithSerializable|
 |CheckId|CA2237|
 |カテゴリ|Microsoft.Usage|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 外部から参照できる型が<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>インターフェイスを実装しており、型が<xref:System.SerializableAttribute?displayProperty=fullName>属性でマークされていません。 このルールは、基本型がシリアル化可能でない派生型を無視します。

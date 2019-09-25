@@ -1,5 +1,5 @@
 ---
-title: エンティティ クラスの挿入/更新/削除の動作をカスタマイズします。
+title: エンティティクラスの挿入、更新、削除の動作をカスタマイズする
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,73 +11,73 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 189516fe90863d80467dc3070dcc6b44a4a492a0
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: cb6bbde145317d737afdbf819dba8ee53f805f72
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262904"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252975"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>チュートリアル: エンティティ クラスの挿入、更新、および削除の動作をカスタマイズする
 
-[Visual Studio での LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)作成および to SQL クラス (エンティティ クラス)、データベース内のオブジェクトに基づく LINQ を編集するため、ビジュアル デ ザイン サーフェイスを提供します。 使用して[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)、SQL データベースにアクセスする LINQ テクノロジを使用することができます。 詳細については、[LINQ (統合言語クエリ)](/dotnet/csharp/linq/) に関するページを参照してください。
+[Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)には、データベース内のオブジェクトに基づいて LINQ to SQL クラス (エンティティクラス) を作成および編集するためのビジュアルデザインサーフェイスが用意されています。 [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)を使用することにより、LINQ テクノロジを使用して SQL データベースにアクセスできます。 詳細については、[LINQ (統合言語クエリ)](/dotnet/csharp/linq/) に関するページを参照してください。
 
-既定では、更新プログラムを実行するロジックは、LINQ to SQL ランタイムによって提供されます。 ランタイムは、既定値を作成します。 `Insert`、 `Update`、および`Delete`(列定義と主キー情報) のテーブルのスキーマに基づいてステートメント。 既定の動作を使用しない場合は、更新動作を構成し、データベースのデータの操作に必要な挿入、更新および削除を実行する特定のストアド プロシージャを指定できます。 この方法は、既定の動作が生成されていない場合、たとえばエンティティ クラスがビューにマップされている場合にも実行できます。 また、データベースのテーブルへのアクセスには常にストアド プロシージャを通すようにすると、既定の更新動作をオーバーライドできます。 詳細については、次を参照してください。[ストアド プロシージャを使用して、操作のカスタマイズ](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)します。
+既定では、更新を実行するロジックは LINQ to SQL ランタイムによって提供されます。 ランタイムは、テーブル`Insert`の`Update`スキーマ (列定義と主キー情報) に基づいて、既定の、、および`Delete`の各ステートメントを作成します。 既定の動作を使用しない場合は、更新動作を構成し、データベースのデータの操作に必要な挿入、更新および削除を実行する特定のストアド プロシージャを指定できます。 この方法は、既定の動作が生成されていない場合、たとえばエンティティ クラスがビューにマップされている場合にも実行できます。 また、データベースのテーブルへのアクセスには常にストアド プロシージャを通すようにすると、既定の更新動作をオーバーライドできます。 詳細については、「[ストアドプロシージャを使用](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)した操作のカスタマイズ」を参照してください。
 
 > [!NOTE]
 > このチュートリアルでは、Northwind データベースで **InsertCustomer**、**UpdateCustomer**、および **DeleteCustomer** の各ストアド プロシージャを使用できるようにしておく必要があります。
 
-このチュートリアルでは、ストアド プロシージャを使用して、データベースにデータを保存する既定の LINQ to SQL ランタイムの動作をオーバーライドするために必要な手順を示します。
+このチュートリアルでは、ストアドプロシージャを使用してデータベースにデータを保存するための既定の LINQ to SQL 実行時の動作をオーバーライドするために従う必要がある手順について説明します。
 
 このチュートリアルでは、次のタスクを実行する方法について説明します。
 
-- 新しい Windows フォーム アプリケーションを作成し、LINQ to SQL ファイルを追加します。
+- 新しい Windows フォームアプリケーションを作成し、LINQ to SQL ファイルを追加します。
 
-- Northwind にマップされるエンティティ クラスを作成`Customers`テーブル。
+- Northwind `Customers`テーブルにマップされるエンティティクラスを作成します。
 
-- LINQ to SQL を参照するオブジェクト データ ソース作成`Customer`クラス。
+- LINQ to SQL `Customer`クラスを参照するオブジェクトデータソースを作成します。
 
-- 含む Windows フォームを作成、<xref:System.Windows.Forms.DataGridView>にバインドされている、`Customer`クラス。
+- クラスにバインドされている<xref:System.Windows.Forms.DataGridView>を含む Windows フォームを作成します。 `Customer`
 
 - フォームの保存機能を実装します。
 
-- 作成<xref:System.Data.Linq.DataContext>ストアド プロシージャを追加することで、メソッド、 **O/R デザイナー**します。
+- ストアド<xref:System.Data.Linq.DataContext>プロシージャを**O/R デザイナー**に追加して、メソッドを作成します。
 
-- 構成、`Customer`ストアド プロシージャを使用して実行するクラスが挿入、更新、および削除します。
+- ストアドプロシージャを使用して挿入、更新、および削除を実行するようにクラスを構成します。`Customer`
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-このチュートリアルでは、SQL Server Express LocalDB と、Northwind サンプル データベースを使用します。
+このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
-1. SQL Server Express LocalDB をお持ちでない場合は、インストールのいずれかから、 [SQL Server Express のダウンロード ページ](https://www.microsoft.com/sql-server/sql-server-editions-express)、または、 **Visual Studio インストーラー**します。 **Visual Studio インストーラー**の一部として SQL Server Express LocalDB をインストールすることができます、**データ ストレージと処理**ワークロード、または個々 のコンポーネントとして。
+1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 **Visual Studio インストーラー**では、**データストレージと処理**ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
 
-2. 次の手順に従って、Northwind サンプル データベースをインストールします。
+2. 次の手順に従って、Northwind サンプルデータベースをインストールします。
 
-    1. Visual Studio で開く、 **SQL Server オブジェクト エクスプ ローラー**ウィンドウ。 (**SQL Server オブジェクト エクスプ ローラー**インストールの一部として、**データ ストレージと処理**ワークロードで、 **Visual Studio インストーラー**)。展開、 **SQL Server**ノード。 LocalDB インスタンスを右クリックし、選択**新しいクエリ**します。
+    1. Visual Studio で、 **[SQL Server オブジェクトエクスプローラー]** ウィンドウを開きます。 (**SQL Server オブジェクトエクスプローラー**は、 **Visual Studio インストーラー**の**データストレージと処理**ワークロードの一部としてインストールされます)。 **[SQL Server]** ノードを展開します。 LocalDB インスタンスを右クリックし、 **[新しいクエリ]** をクリックします。
 
-       クエリ エディター ウィンドウが開きます。
+       クエリエディターウィンドウが開きます。
 
-    2. コピー、 [Northwind Transact SQL スクリプト](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)をクリップボードにします。 この T-SQL スクリプトでは、最初から、Northwind データベースを作成し、データを設定します。
+    2. [Northwind transact-sql スクリプト](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)をクリップボードにコピーします。 この T-sql スクリプトでは、Northwind データベースを最初から作成し、データを設定します。
 
-    3. T-SQL スクリプトをクエリ エディターに貼り付けて選択し、 **Execute**ボタンをクリックします。
+    3. T-sql スクリプトをクエリエディターに貼り付け、 **[実行]** ボタンをクリックします。
 
-       しばらくすると、クエリの実行が完了し、Northwind データベースを作成します。
+       しばらくすると、クエリの実行が完了し、Northwind データベースが作成されます。
 
 ## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>アプリケーションの作成と LINQ to SQL クラスの追加
 
-LINQ to SQL クラスの操作、Windows フォームでデータを表示しているため、新しい Windows フォーム アプリケーションを作成し、LINQ to SQL クラス ファイル追加します。
+LINQ to SQL クラスを使用して Windows フォームにデータを表示するため、新しい Windows フォームアプリケーションを作成し、LINQ to SQL クラスファイルを追加します。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>新しい Windows フォーム アプリケーション プロジェクトは、LINQ to SQL クラスを作成するには
+### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>LINQ to SQL クラスを含む新しい Windows フォームアプリケーションプロジェクトを作成するには
 
-1. Visual Studio での**ファイル**メニューの **新規** > **プロジェクト**します。
+1. Visual Studio で、 **[ファイル]** メニューの [**新しい** > **プロジェクト**] をクリックします。
 
-2. いずれかを展開**Visual c#** または**Visual Basic**左側のウィンドウでを選択し、 **Windows デスクトップ**します。
+2. 左側のウィンドウで、**ビジュアルC#** または**Visual Basic**を展開し、 **[Windows デスクトップ]** を選択します。
 
-3. 中央のペインで選択、 **Windows フォーム アプリ**プロジェクトの種類。
+3. 中央のウィンドウで、 **[Windows フォーム App]** プロジェクトの種類を選択します。
 
-4. プロジェクトに名前を**UpdatingWithSProcsWalkthrough**を選び、 **OK**。
+4. プロジェクトに**UpdatingWithSProcsWalkthrough**という名前を入力し、[ **OK]** をクリックします。
 
      **UpdatingWithSProcsWalkthrough** プロジェクトが作成されて、**ソリューション エクスプローラー**に追加されます。
 
@@ -87,26 +87,26 @@ LINQ to SQL クラスの操作、Windows フォームでデータを表示して
 
 6. **[追加]** をクリックします。
 
-     空の LINQ to SQL クラス ファイル (**Northwind.dbml**)、プロジェクトに追加し、 **O/R デザイナー**が開きます。
+     空の LINQ to SQL クラスファイル (**Northwind .dbml**) がプロジェクトに追加され、 **O/R デザイナー**が開きます。
 
-## <a name="create-the-customer-entity-class-and-object-data-source"></a>Customer エンティティ クラスとオブジェクトのデータ ソースを作成します。
+## <a name="create-the-customer-entity-class-and-object-data-source"></a>Customer エンティティクラスとオブジェクトデータソースを作成する
 
-LINQ to SQL クラスからテーブルをドラッグして、データベース テーブルにマップされている作成**サーバー エクスプ ローラー**または**データベース エクスプ ローラー**上に、 **O/R デザイナー**します。 結果は、データベース内のテーブルにマップされた LINQ to SQL エンティティ クラスになります。 作成したエンティティ クラスは、パブリック プロパティを持つ他のクラスと同様に、オブジェクト データ ソースとして使用できます。
+**サーバーエクスプローラー**または**データベースエクスプローラー**から**O/R デザイナー**にテーブルをドラッグして、データベーステーブルにマップされている LINQ to SQL クラスを作成します。 結果は、データベース内のテーブルにマップされた LINQ to SQL エンティティ クラスになります。 作成したエンティティ クラスは、パブリック プロパティを持つ他のクラスと同様に、オブジェクト データ ソースとして使用できます。
 
 ### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Customer エンティティ クラスを作成し、そのエンティティ クラスでデータ ソースを構成するには
 
-1. **サーバー エクスプ ローラー**または**データベース エクスプ ローラー**、検索、**顧客**Northwind サンプル データベースの SQL Server のバージョンのテーブル。
+1. **サーバーエクスプローラー**または**データベースエクスプローラー**で、Northwind サンプルデータベースの SQL Server バージョンの**Customer**テーブルを見つけます。
 
-2. ドラッグ、**顧客**ノードから**サーバー エクスプ ローラー**または**データベース エクスプ ローラー**上に、**O/R デザイナー*画面。
+2. **[Customers]** ノードを**サーバーエクスプローラー**または**データベースエクスプローラー**から **O/R デザイナー*画面にドラッグします。
 
      **Customer** という名前のエンティティ クラスが作成されます。 これには、Customers テーブルの列に対応するプロパティが含まれています。 このエンティティ クラスは Customers テーブルの 1 人の顧客を表すため、**Customers** ではなく **Customer** という名前が付けられます。
 
     > [!NOTE]
-    > このような名前の変更動作を*複数形化*と呼びます。 オンまたはオフにすることができます、[オプション ダイアログ ボックス](../ide/reference/options-dialog-box-visual-studio.md)します。 詳細については、「[方法 :複数形化をオンおよびオフにする (O/R デザイナー)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)」を参照してください。
+    > このような名前の変更動作を*複数形化*と呼びます。 [[オプション] ダイアログボックス](../ide/reference/options-dialog-box-visual-studio.md)で、有効または無効にすることができます。 詳細については、「[方法 :複数形化をオンおよびオフにする (O/R デザイナー)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)」を参照してください。
 
 3. **[ビルド]** メニューの **[UpdatingwithSProcsWalkthrough のビルド]** をクリックして、プロジェクトをビルドします。
 
-4. 開くには、**データ ソース**ウィンドウで、**データ**] メニューのをクリックして **[データ ソースの**します。
+4. データ **[ソース]** ウィンドウを開くには、 **[データ]** メニューの **[データソースの表示]** をクリックします。
 
 5. **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックします。
 
@@ -118,9 +118,9 @@ LINQ to SQL クラスからテーブルをドラッグして、データベー�
     > **Customer** クラスが使用可能でない場合は、ウィザードをキャンセルし、プロジェクトをビルドしてからウィザードを再実行します。
 8. **[完了]** をクリックしてデータ ソースを作成し、**Customer** エンティティ クラスを **[データ ソース]** ウィンドウに追加します。
 
-## <a name="create-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Windows フォームに顧客データを表示するための DataGridView を作成します。
+## <a name="create-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>ユーザーデータを Windows フォームに表示するための DataGridView を作成する
 
-LINQ から SQL データ ソース アイテムをドラッグすることにより、エンティティ クラスにバインドされているコントロールを作成、**データソース**ウィンドウから Windows フォームにします。
+[**データ**ソース] ウィンドウから Windows フォームにデータソース項目 LINQ to SQL ドラッグして、エンティティクラスにバインドされたコントロールを作成します。
 
 ### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>エンティティ クラスにバインドされるコントロールを追加するには
 
@@ -133,7 +133,7 @@ LINQ から SQL データ ソース アイテムをドラッグすることに�
 
 3. コード エディターで **[Form1]** を開きます。
 
-4. フォームをフォームにどのメソッドに、グローバルに内では、次のコードを追加、`Form1`クラス。
+4. 次のコードをフォームに追加します。このフォームは、特定のメソッドの外部にあり`Form1`ますが、クラス内に追加します。
 
     ```vb
     Private NorthwindDataContext1 As New NorthwindDataContext
@@ -155,9 +155,9 @@ LINQ から SQL データ ソース アイテムをドラッグすることに�
         = northwindDataContext1.Customers;
     ```
 
-## <a name="implement-save-functionality"></a>保存機能を実装します。
+## <a name="implement-save-functionality"></a>保存機能の実装
 
-既定では、保存ボタンが有効ではなく、保存機能は実装されていません。 また、オブジェクト データ ソースに対してデータ バインド コントロールを作成しても、変更されたデータをデータベースに保存するコードは自動的には追加されません。 このセクションは、保存を有効にする方法を説明します。 ボタンをクリックし、SQL オブジェクトへの LINQ の保存機能を実装します。
+既定では、保存ボタンが有効ではなく、保存機能は実装されていません。 また、オブジェクト データ ソースに対してデータ バインド コントロールを作成しても、変更されたデータをデータベースに保存するコードは自動的には追加されません。 ここでは、[保存] ボタンを有効にし、LINQ to SQL オブジェクトの保存機能を実装する方法について説明します。
 
 ### <a name="to-implement-save-functionality"></a>保存機能を実装するには
 
@@ -179,19 +179,19 @@ LINQ から SQL データ ソース アイテムをドラッグすることに�
     northwindDataContext1.SubmitChanges();
     ```
 
-## <a name="override-the-default-behavior-for-performing-updates-inserts-updates-and-deletes"></a>(挿入、更新、および削除) の更新プログラムを実行するための既定の動作をオーバーライドします。
+## <a name="override-the-default-behavior-for-performing-updates-inserts-updates-and-deletes"></a>更新 (挿入、更新、および削除) を実行するための既定の動作を上書きする
 
 ### <a name="to-override-the-default-update-behavior"></a>既定の更新動作をオーバーライドするには
 
-1. LINQ to SQL ファイルを開き、 **O/R デザイナー**します。 (**ソリューション エクスプローラー**で **Northwind.dbml** ファイルをダブルクリックします。)
+1. **O/R デザイナー**で LINQ to SQL ファイルを開きます。 (**ソリューション エクスプローラー**で **Northwind.dbml** ファイルをダブルクリックします。)
 
 2. **サーバー エクスプローラー**または**データベース エクスプローラー**で、Northwind データベースの **[ストアド プロシージャ]** ノードを展開し、**InsertCustomers**、**UpdateCustomers**、および **DeleteCustomers** の各ストアド プロシージャを探します。
 
-3. 上に 3 つすべてのストアド プロシージャをドラッグして、 **O/R デザイナー**します。
+3. 3つのストアドプロシージャをすべて**O/R デザイナー**にドラッグします。
 
-     各ストアド プロシージャが <xref:System.Data.Linq.DataContext> のメソッドとしてメソッド ペインに追加されます。 詳細については、次を参照してください。 [DataContext メソッド (O/r デザイナー)](../data-tools/datacontext-methods-o-r-designer.md)します。
+     各ストアド プロシージャが <xref:System.Data.Linq.DataContext> のメソッドとしてメソッド ペインに追加されます。 詳細については、「 [DataContext メソッド (O/R デザイナー)](../data-tools/datacontext-methods-o-r-designer.md)」を参照してください。
 
-4. 選択、**顧客**内のエンティティ クラス、 **O/R デザイナー**します。
+4. **O/R デザイナー**で**Customer**エンティティクラスを選択します。
 
 5. **[プロパティ]** ウィンドウで **[Insert]** プロパティを選択します。
 
@@ -204,7 +204,7 @@ LINQ から SQL データ ソース アイテムをドラッグすることに�
 9. **[適用]** をクリックして、選択したクラスと動作の構成を保存します。
 
     > [!NOTE]
-    > 変更を行うたびに **[適用]** をクリックすると、各クラスと動作の組み合わせに対して動作の構成を続けることができます。 クリックする前に、クラスまたは動作を変更するかどうかは**適用**、警告ダイアログ ボックスを提供するすべての変更を適用する機会が表示されます。
+    > 変更を行うたびに **[適用]** をクリックすると、各クラスと動作の組み合わせに対して動作の構成を続けることができます。 **[適用]** をクリックする前にクラスまたは動作を変更すると、変更を適用する機会を提供する警告ダイアログボックスが表示されます。
 
 10. **[動作]** リストの **[Update]** を選択します。
 
@@ -232,7 +232,7 @@ LINQ から SQL データ ソース アイテムをドラッグすることに�
 19. **[OK]** をクリックします。
 
 > [!NOTE]
-> LINQ to SQL の挿入時に id (自動インクリメント)、rowguidcol 列 (データベースが生成した GUID) 列とタイムスタンプ列を自動的にデータベースによって生成された値を処理する注目すべきは特定のチュートリアルではこの問題ではありませんが、更新します。 その他の列型のデータベースが生成した値は、予想に反して null 値になります。 データベースによって生成された値を返す必要があります手動で設定する<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>に`true`と<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>次のいずれか。[AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)、 [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)、または[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)します。
+> このチュートリアルでは問題ではありませんが、LINQ to SQL は、挿入時にデータベースで生成された値を id (自動インクリメント)、rowguidcol (データベース生成 GUID)、およびタイムスタンプ列に対して自動的に処理することに注意してください。版. その他の列型のデータベースが生成した値は、予想に反して null 値になります。 データベースで生成された値を返すには、 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>を`true` <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>に手動で、次のいずれかに設定する必要があります。[Autosync。 Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)、 [Autosync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)、または[autosync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
 
@@ -246,7 +246,7 @@ LINQ から SQL データ ソース アイテムをドラッグすることに�
 
 4. 保存ボタンをクリックして変更をデータベースに保存します。
 
-5. フォームを閉じます 
+5. フォームを閉じます
 
 6. **F5** キーを押し、更新されたレコードと新しく挿入したレコードが永続化されていることを確認します。
 
@@ -254,7 +254,7 @@ LINQ から SQL データ ソース アイテムをドラッグすることに�
 
 8. 保存ボタンをクリックして変更を送信し、削除されたレコードをデータベースから削除します。
 
-9. フォームを閉じます 
+9. フォームを閉じます
 
 10. **F5** キーを押し、削除したレコードがデータベースから削除されていることを確認します。
 
@@ -263,11 +263,11 @@ LINQ から SQL データ ソース アイテムをドラッグすることに�
 
 ## <a name="next-steps"></a>次の手順
 
-アプリケーションの要件に応じて、LINQ to SQL エンティティ クラスを作成した後に実行することがありますをいくつかの手順があります。 このアプリケーションで行うことができる拡張には次のものがあります。
+アプリケーションの要件によっては、LINQ to SQL エンティティクラスを作成した後に実行する必要があるいくつかの手順があります。 このアプリケーションで行うことができる拡張には次のものがあります。
 
-- 更新時のコンカレンシー チェックを実装します。 詳しくは、次を参照してください。[オプティミスティック同時実行制御: 概要](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview)します。
+- 更新時のコンカレンシー チェックを実装します。 詳細については、「[オプティミスティック同時実行制御: 概要](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview)」を参照してください。
 
-- LINQ クエリを追加してデータをフィルター処理します。 詳しくは、次を参照してください。 [LINQ クエリ (c#) の概要](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)します。
+- LINQ クエリを追加してデータをフィルター処理します。 詳細については、「 [LINQ クエリC#の概要」 ()](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

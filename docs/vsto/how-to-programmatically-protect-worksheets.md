@@ -1,5 +1,5 @@
 ---
-title: '方法: プログラムによってワークシートを保護します。'
+title: '方法: プログラムによってワークシートを保護する'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 931bfba9aeac76132ca2dd5e6115abef9869a1df
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438811"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254589"
 ---
-# <a name="how-to-programmatically-protect-worksheets"></a>方法: プログラムによってワークシートを保護します。
+# <a name="how-to-programmatically-protect-worksheets"></a>方法: プログラムによってワークシートを保護する
   Microsoft Office Excel の保護機能を使用すると、ユーザーやコードがワークシート内のオブジェクトを編集できないようにすることができます。 既定では、保護を有効にすると、すべてのセルがロックされます。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -32,23 +32,23 @@ ms.locfileid: "63438811"
 > [!NOTE]
 > 保護されているワークシートの領域に Windows フォーム コントロールを追加することはできません。
 
-## <a name="use-the-designer"></a>デザイナーを使用します。
+## <a name="use-the-designer"></a>デザイナーを使用する
 
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>デザイナーでワークシートを保護するには
 
-1. **変更**のグループ、**レビュー** ] タブで [**シートの保護**します。
+1. **[レビュー]** タブの **[変更]** グループで、 **[シートの保護]** をクリックします。
 
-    **シートの保護** ダイアログ ボックスが表示されます。 パスワードを設定し、必要に応じて、セルの書式設定や行の挿入など、ワークシートでユーザーに実行を許可する特定のアクションを指定できます。
+    **[シートの保護]** ダイアログボックスが表示されます。 パスワードを設定し、必要に応じて、セルの書式設定や行の挿入など、ワークシートでユーザーに実行を許可する特定のアクションを指定できます。
 
    保護されたワークシート内の特定の範囲の編集を、ユーザーに許可することもできます。
 
 ### <a name="to-allow-editing-in-specific-ranges"></a>特定の範囲の編集を許可するには
 
-1. **変更**のグループ、**レビュー** ] タブで [**範囲の編集を可能にする**します。
+1. **[レビュー]** タブの **[変更]** グループで、 **[範囲の編集をユーザーに許可する]** をクリックします。
 
-     **範囲の編集を可能にする** ダイアログ ボックスが表示されます。 パスワードを使用してロックを解除できる範囲と、パスワードがなくても範囲を編集できるユーザーを指定できます。
+     **[範囲の編集をユーザーに許可する]** ダイアログボックスが表示されます。 パスワードを使用してロックを解除できる範囲と、パスワードがなくても範囲を編集できるユーザーを指定できます。
 
-## <a name="use-code-at-runtime"></a>実行時にコードを使用します。
+## <a name="use-code-at-run-time"></a>実行時にコードを使用する
  次のコードは、(ユーザーから取得したパスワードを格納する変数 getPasswordFromUser を使用して) パスワードを設定し、並べ替えだけを許可します。
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>ドキュメント レベルのカスタマイズで、コードを使用してワークシートを保護するには
@@ -66,11 +66,11 @@ ms.locfileid: "63438811"
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]
 
 ## <a name="see-also"></a>関連項目
-- [ワークシートを操作します。](../vsto/working-with-worksheets.md)
-- [方法: プログラムによってワークシートの保護を解除します。](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
-- [方法: プログラムによってブックを保護します。](../vsto/how-to-programmatically-protect-workbooks.md)
-- [方法: プログラムによってワークシートを非表示します。](../vsto/how-to-programmatically-hide-worksheets.md)
-- [ホスト項目とホスト コントロールの概要](../vsto/host-items-and-host-controls-overview.md)
-- [Worksheet ホスト項目](../vsto/worksheet-host-item.md)
-- [Office プロジェクト内のオブジェクトへのグローバル アクセス](../vsto/global-access-to-objects-in-office-projects.md)
+- [ワークシートを操作する](../vsto/working-with-worksheets.md)
+- [方法: プログラムによってワークシートから保護を削除する](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
+- [方法: プログラムによってブックを保護する](../vsto/how-to-programmatically-protect-workbooks.md)
+- [方法: プログラムによってワークシートを非表示にする](../vsto/how-to-programmatically-hide-worksheets.md)
+- [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)
+- [ワークシートホスト項目](../vsto/worksheet-host-item.md)
+- [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)
 - [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)

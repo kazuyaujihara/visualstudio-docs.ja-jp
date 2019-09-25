@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9af307158ecd8d5a1f93ebd1f8575cad5cf51e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2729e74e3abf6be2ae5b17a836d920c1376decd
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540860"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236951"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 破られた暗号アルゴリズムを使用しないでください
 
@@ -22,7 +22,7 @@ ms.locfileid: "62540860"
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|
 |CheckId|CA5351|
 |カテゴリ|Microsoft.Cryptography|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 > [!NOTE]
 > この警告の最終更新は 2015 年 11 月です。
@@ -35,7 +35,7 @@ ms.locfileid: "62540860"
 
 ## <a name="rule-description"></a>規則の説明
 
-破られた暗号アルゴリズムはセキュアであるとは見なされず、それらを使用しないことをお勧めします。 使用コンテキストに応じて特定の脆弱性は異なりますが、MD5 ハッシュ アルゴリズムは既知の競合攻撃の影響を受けやすくなっています。  (たとえば、ファイルの署名またはデジタル証明書) のデータ整合性を確保するために使用するハッシュ アルゴリズムは、特に脆弱です。  このコンテキストでは、攻撃者が 2 つの独立したデータを生成し、ハッシュ値を変更したり、関連付けられているデジタル署名を無効にしたりすることなく、悪意のないデータを悪意のあるデータで置き換えるなどの可能性があります。
+破られた暗号アルゴリズムはセキュアであるとは見なされず、それらを使用しないことをお勧めします。 使用コンテキストに応じて特定の脆弱性は異なりますが、MD5 ハッシュ アルゴリズムは既知の競合攻撃の影響を受けやすくなっています。  データの整合性を確保するために使用されるハッシュアルゴリズム (ファイル署名やデジタル証明書など) は、特に脆弱です。  このコンテキストでは、攻撃者が 2 つの独立したデータを生成し、ハッシュ値を変更したり、関連付けられているデジタル署名を無効にしたりすることなく、悪意のないデータを悪意のあるデータで置き換えるなどの可能性があります。
 
 暗号アルゴリズムの場合:
 
@@ -49,17 +49,17 @@ ms.locfileid: "62540860"
 
 暗号強度の高いオプションを使用します。
 
-- MD5 ハッシュを使用、 [sha-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms)ファミリ (たとえば、 <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>)。
+- MD5 の場合は、 [sha-1](/windows/desktop/SecCrypto/hash-and-signature-algorithms)ファミリでハッシュを使用します (たとえば<xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384>、、 <xref:System.Security.Cryptography.SHA256>、)。
 
 - DES と RC2 の場合は、 <xref:System.Security.Cryptography.Aes> 暗号を使用します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 暗号の専門家によって確認された場合を除き、この規則からの警告を抑制しないでください。
 
 ## <a name="pseudo-code-examples"></a>疑似コードの例
 
-次の擬似コード サンプルでは、この規則や考えによって検出されたパターンを示しています。
+次の擬似コードサンプルは、このルールによって検出されたパターンと、考えられる代替パターンを示しています。
 
 ### <a name="md5-hashing-violation"></a>MD5 ハッシュ違反
 
@@ -69,7 +69,7 @@ using System.Security.Cryptography;
 var hashAlg = MD5.Create();
 ```
 
-解決方法 : 
+解決方法 :
 
 ```csharp
 using System.Security.Cryptography;
@@ -85,7 +85,7 @@ using System.Security.Cryptography;
 RC2 encAlg = RC2.Create();
 ```
 
-解決方法 : 
+解決方法 :
 
 ```csharp
 using System.Security.Cryptography;
@@ -104,7 +104,7 @@ using System.Security.Cryptography;
 DES encAlg = DES.Create();
 ```
 
-解決方法 : 
+解決方法 :
 
 ```csharp
 using System.Security.Cryptography;

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f734d0cf28a5aec28ebbf635dd384efe176b1774
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4bef51c547d4a1614137e0691343bef635aed50d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921316"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233287"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900:値型フィールドはポータブルでなければなりません
 
@@ -27,7 +27,7 @@ ms.locfileid: "68921316"
 |-|-|
 |TypeName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
-|Category|Microsoft. 移植性|
+|カテゴリ|Microsoft. 移植性|
 |互換性に影響する変更点|中断-フィールドがアセンブリの外部に表示されるかどうか。<br /><br /> 非互換性-フィールドがアセンブリの外部で参照できない場合。|
 
 ## <a name="cause"></a>原因

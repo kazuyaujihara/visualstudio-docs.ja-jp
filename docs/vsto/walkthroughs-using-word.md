@@ -13,49 +13,49 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: af68c595134aa52979d68065de1249124ca8bca0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c6d3b4ece92bf278ef8d43dca7e449272982381c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009290"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254990"
 ---
 # <a name="walkthroughs-using-word"></a>Word を使用したチュートリアル
   次のチュートリアルでは、ドキュメント レベルのカスタマイズと VSTO アドインを使用して Microsoft Office Word を自動化し、ユーザー インターフェイス (UI) をカスタマイズする方法について説明します。
 
-## <a name="document-level-walkthroughs"></a>ドキュメント レベルのチュートリアル
-- [チュートリアル: 最初の Word 用ドキュメント レベルのカスタマイズの作成](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)Word 用ドキュメント レベルの基本的なカスタマイズを作成する方法を示します。
+## <a name="document-level-walkthroughs"></a>ドキュメントレベルのチュートリアル
+- [チュートリアル: Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)の最初のドキュメントレベルのカスタマイズを作成する word の基本的なドキュメントレベルのカスタマイズを作成する方法を示します。
 
-- [チュートリアル: 操作ウィンドウから文書にテキストを挿入](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)ユーザーが操作ウィンドウ上のコントロールでテキストを入力したときに、Word 文書にテキストを追加する方法を示します。
+- [チュートリアル: 操作ウィンドウ](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)からドキュメントにテキストを挿入するユーザーが操作ウィンドウのコントロールにテキストを入力したときに、Word 文書にテキストを追加する方法について説明します。
 
-- [チュートリアル: Word の操作ウィンドウ上のコントロールにデータをバインド](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)操作ウィンドウ上のコントロールにデータをバインドする方法を示します。 このコントロールは、SQL Server データベースのテーブル間のマスター/詳細の関係を示します。
+- [チュートリアル: [Word の操作ウィンドウ](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)のコントロールにデータをバインドする] 操作ウィンドウのコントロールにデータをバインドする方法を示します。 このコントロールは、SQL Server データベースのテーブル間のマスター/詳細の関係を示します。
 
-- [チュートリアル: CheckBox コントロールを使用してドキュメントの書式設定を変更する](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)Word 文書でチェック ボックスを使用して、書式設定を変更する方法を示します。
+- [チュートリアル: CheckBox コントロール](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)を使用してドキュメントの書式を変更する Word 文書でチェックボックスを使用して書式を変更する方法を示します。
 
-- [チュートリアル: ボタンを使用して、ドキュメント内のテキスト ボックスにテキストを表示](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)Word 文書でボタンやテキスト ボックスを使用する方法を示します。
+- [チュートリアル: ボタン](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)を使用してドキュメント内のテキストボックスにテキストを表示する Word 文書でボタンとテキストボックスを使用する方法について説明します。
 
-- [チュートリアル: ラジオ ボタンを使用してドキュメントのグラフを更新](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)のドキュメント レベル カスタマイズでオプション ボタンを使用して Word 文書でグラフのスタイルを変更する方法を示します。
+- [チュートリアル: ドキュメントレベルのカスタマイズでオプションボタンを使用](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)して、Word 文書のグラフのスタイルを変更する方法については、ラジオボタンを使用してドキュメントのグラフを更新する方法について説明します。
 
-- [チュートリアル: ブックマークのショートカット メニューを作成する](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)ブックマーク内のテキストを書式設定に使用できるショートカット メニューを作成する方法を示します。
+- [チュートリアル: ブックマーク](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)のショートカットメニューを作成するブックマーク内のテキストの書式設定に使用できるショートカットメニューを作成する方法を示します。
 
-- [チュートリアル: Visual Basic プロジェクトでコードを VBA から呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)ドキュメント内の VBA コードからカスタマイズ アセンブリのコードを呼び出す方法を示します。
+- [チュートリアル: Visual Basic プロジェクト](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)内の vba からコードを呼び出す方法は、ドキュメント内の vba コードからカスタマイズアセンブリのコードを呼び出す方法を示しています。
 
-- [チュートリアル: コンテンツ コントロールを使用してテンプレートを作成](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)コンテンツ コントロールを使用して Word テンプレートで構造化された再利用可能なコンテンツを作成する方法を示します。
+- [チュートリアル: 「コンテンツコントロール](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)を使用してテンプレートを作成する」では、コンテンツコントロールを使用して、Word テンプレートに構造化された再利用可能なコンテンツを作成する方法を示します。
 
-- [チュートリアル: カスタム XML 部分にコンテンツ コントロールをバインド](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)Word 文書にコンテンツ コントロールをドキュメントに格納されている XML データにバインドする方法を示します。
+- [チュートリアル: コンテンツコントロールをカスタム XML 部分](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)にバインドする Word 文書内のコンテンツコントロールを、文書に格納されている XML データにバインドする方法を示します。
 
-## <a name="application-level-walkthroughs"></a>アプリケーション レベルのチュートリアル
-- [チュートリアル: Word 用の最初の VSTO アドイン作成](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)Word の基本的な VSTO アドインを作成する方法を示します。
+## <a name="application-level-walkthroughs"></a>アプリケーションレベルのチュートリアル
+- [チュートリアル: Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)用の最初の vsto アドインを作成する word 用の基本的な vsto アドインを作成する方法を示します。
 
-- [チュートリアル: VSTO アドインにおける実行時のドキュメントにコントロールを追加](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)VSTO アドインを使用してドキュメントにコントロールを追加する方法を示します。
+- [チュートリアル: Vsto アドイン](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)の実行時にドキュメントにコントロールを追加する vsto アドインを使用してドキュメントにコントロールを追加する方法について説明します。
 
-- [チュートリアル: カスタム タブをリボン XML を使用して作成](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)VSTO アドインで XML 記述子ファイルを使用してカスタムのリボン タブを作成する方法を示します。
+- [チュートリアル: リボン xml](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)を使用したカスタムタブの作成 VSTO アドインで xml 記述子ファイルを使用してカスタムリボンタブを作成する方法を示します。
 
 ## <a name="see-also"></a>関連項目
 - [Excel を使用したチュートリアル](../vsto/walkthroughs-using-excel.md)
-- [Office ソリューションのチュートリアルにおけるデータ](../vsto/data-in-office-solutions-walkthroughs.md)
+- [Office ソリューションのチュートリアルのデータ](../vsto/data-in-office-solutions-walkthroughs.md)
 - [Office UI のカスタマイズのチュートリアル](../vsto/office-ui-customization-walkthroughs.md)
-- [セキュリティと配置のチュートリアル](../vsto/security-and-deployment-walkthroughs.md)
+- [セキュリティとデプロイのチュートリアル](../vsto/security-and-deployment-walkthroughs.md)
 - [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)
-- [VSTO アドインをプログラミングします。](../vsto/programming-vsto-add-ins.md)
+- [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)
 - [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)

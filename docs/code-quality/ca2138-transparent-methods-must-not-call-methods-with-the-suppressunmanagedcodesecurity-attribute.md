@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 316aef3b0f1f715857fde8eaf2a6e74b1a49e40f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d88b2f5c15d51ff840cc6ff116396ffd6b5efd60
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920574"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232207"
 ---
 # <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138:透過的メソッドは、SuppressUnmanagedCodeSecurity 属性を持つメソッドを呼び出してはならない
 
@@ -23,7 +23,7 @@ ms.locfileid: "68920574"
 |-|-|
 |TypeName|TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods|
 |CheckId|CA2138|
-|Category|Microsoft.Security|
+|カテゴリ|Microsoft.Security|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因

@@ -1,5 +1,5 @@
 ---
-title: リボン オブジェクト モデルの概要
+title: リボンオブジェクトモデルの概要
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,38 +12,38 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83f906ad9e5ded349250fe5324076527975c9bf6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6ca22704345fefb4944bda7dd9f71942fe8dfb50
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446985"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256014"
 ---
-# <a name="ribbon-object-model-overview"></a>リボン オブジェクト モデルの概要
-  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]取得および実行時にリボン コントロールのプロパティを設定するのに使用できる厳密に型指定されたオブジェクト モデルを公開します。 たとえば、メニュー コントロールを動的に設定したり、コントロールの表示/非表示をコンテキストに応じて切り替えたりすることができます。 Office アプリケーションがリボンを読み込む前であれば、タブ、グループ、およびコントロールをリボンに追加することもできます。 詳しくは、次を参照してください。[読み取り専用になるプロパティを設定](#SettingReadOnlyProperties)します。
+# <a name="ribbon-object-model-overview"></a>リボンオブジェクトモデルの概要
+  は[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 、実行時にリボンコントロールのプロパティを取得および設定するために使用できる、厳密に型指定されたオブジェクトモデルを公開します。 たとえば、メニュー コントロールを動的に設定したり、コントロールの表示/非表示をコンテキストに応じて切り替えたりすることができます。 Office アプリケーションがリボンを読み込む前であれば、タブ、グループ、およびコントロールをリボンに追加することもできます。 詳細については、「読み取り専用に[なるプロパティの設定](#SettingReadOnlyProperties)」を参照してください。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
- このリボン オブジェクト モデルは、主に、[リボン クラス](#RibbonClass)、[リボン イベント](#RibbonEvents)、および[リボン コントロール クラス](#RibbonControlClasses)します。
+ このリボンオブジェクトモデルは、主に[リボンクラス](#RibbonClass)、[リボンイベント](#RibbonEvents)、および[リボンコントロールクラス](#RibbonControlClasses)で構成されています。
 
-## <a name="RibbonClass"></a> リボン クラス
- 新しいを追加すると**リボン (ビジュアル デザイナー)** Visual Studio の追加、プロジェクトに項目を**リボン**をプロジェクトにクラス。 **リボン**クラスから継承、<xref:Microsoft.Office.Tools.Ribbon.RibbonBase>クラス。
+## <a name="RibbonClass"></a>リボンクラス
+ 新しい**リボン (ビジュアルデザイナー)** 項目をプロジェクトに追加すると、visual Studio によってプロジェクトに**リボン**クラスが追加されます。 **リボン**クラスは、 <xref:Microsoft.Office.Tools.Ribbon.RibbonBase>クラスから継承されます。
 
  このクラスは、リボン コード ファイルとリボン デザイナー コード ファイルを分割する部分クラスとして位置付けられます。
 
-## <a name="RibbonEvents"></a> リボンのイベント
- **リボン**クラスには、次の 3 つのイベントが含まれています。
+## <a name="RibbonEvents"></a>リボンイベント
+ **リボン**クラスには、次の3つのイベントが含まれています。
 
 |event|説明|
 |-----------|-----------------|
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Office アプリケーションがリボンのカスタマイズを読み込むときに発生します。 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>イベント ハンドラーは、リボン コード ファイルに自動的に追加します。 このイベント ハンドラーを使用して、リボンが読み込まれるときにカスタム コードを実行します。|
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|リボンが読み込まれるときにリボンのカスタマイズ内のイメージをキャッシュできます。 このイベント ハンドラーで、リボンのイメージをキャッシュするコードを記述する場合は、わずかなパフォーマンスの向上を取得できます。 詳細については、「 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> 」を参照してください。|
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|リボンのインスタンスを閉じるときに発生します。|
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Office アプリケーションがリボンのカスタマイズを読み込むときに発生します。 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>イベントハンドラーがリボンコードファイルに自動的に追加されます。 このイベント ハンドラーを使用して、リボンが読み込まれるときにカスタム コードを実行します。|
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|リボンが読み込まれるときに、リボンのカスタマイズでイメージをキャッシュできます。 このイベントハンドラーにリボンイメージをキャッシュするコードを記述すると、パフォーマンスがわずかに向上します。 詳細については、「 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> 」を参照してください。|
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|リボンインスタンスが閉じたときに発生します。|
 
-## <a name="RibbonControlClasses"></a> リボン コントロール
- <xref:Microsoft.Office.Tools.Ribbon>名前空間に表示される各コントロールの型が含まれています、 **Office リボン コントロール**のグループ、**ツールボックス**します。
+## <a name="RibbonControlClasses"></a>リボンコントロール
+ 名前<xref:Microsoft.Office.Tools.Ribbon>空間には、**ツールボックス**の **[Office リボンコントロール]** グループに表示される各コントロールの型が含まれています。
 
- 各 `Ribbon` コントロールの型を次の表に示します。 各コントロールの説明は、次を参照してください。[リボンの概要](../vsto/ribbon-overview.md)します。
+ 各 `Ribbon` コントロールの型を次の表に示します。 各コントロールの説明については、「[リボンの概要](../vsto/ribbon-overview.md)」を参照してください。
 
 |コントロール名|クラス名|
 |------------------|----------------|
@@ -52,25 +52,25 @@ ms.locfileid: "63446985"
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
-|**ドロップダウン リスト**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
-|**エディット ボックス**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
+|**リスト**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
+|**エディット**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
 |**ギャラリー**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**グループ**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
 |**Label**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
 |**Separator**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
-|**分割ボタン**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
+|**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
 |**Tab**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
-|**トグル ボタン**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
+|**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 
  <xref:Microsoft.Office.Tools.Ribbon> 名前空間では、<xref:System.Windows.Forms> 名前空間に属するコントロール クラスとの名前の衝突を回避するために、型名にプレフィックス "Ribbon" が追加されています。
 
  リボン デザイナーにコントロールを追加すると、そのコントロールのクラスがリボン デザイナー コード ファイルにフィールドとして宣言されます。
 
-### <a name="common-tasks-using-the-properties-of-ribbon-controls"></a>リボン コントロールのプロパティを使用して一般的なタスク
+### <a name="common-tasks-using-the-properties-of-ribbon-controls"></a>リボンコントロールのプロパティを使用する一般的なタスク
  各 `Ribbon` コントロールには、コントロールへのラベルの割り当てやコントロールの表示/非表示の切り替えなど、さまざまなタスクの実行に使用できるプロパティが含まれています。
 
- 場合によっては、プロパティ読み取り専用にリボンが読み込まれた後、またはコントロールが動的メニューに追加されます。 詳細については、次を参照してください。[読み取り専用になるプロパティを設定](#SettingReadOnlyProperties)します。
+ 場合によっては、リボンが読み込まれるか、動的メニューにコントロールが追加された後に、プロパティが読み取り専用になります。 詳細については、「読み取り専用に[なるプロパティの設定](#SettingReadOnlyProperties)」を参照してください。
 
  `Ribbon` コントロールのプロパティを使用して実行できる一部のタスクについて、次の表で説明します。
 
@@ -79,55 +79,55 @@ ms.locfileid: "63446985"
 |コントロールの表示/非表示を切り替える。|Visible プロパティを使用します。|
 |コントロールを有効または無効にする。|Enabled プロパティを使用します。|
 |コントロールのサイズを設定する。|ControlSize プロパティを使用します。|
-|コントロールに表示するイメージを取得する。|イメージのプロパティを使用します。|
-|コントロールのラベルを変更する。|ラベルのプロパティを使用します。|
+|コントロールに表示するイメージを取得する。|Image プロパティを使用します。|
+|コントロールのラベルを変更する。|"ラベル" プロパティを使用します。|
 |ユーザー定義のデータをコントロールに追加する。|Tag プロパティを使用します。|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>、<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>、<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>、<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> コントロール。|Items プロパティを使用します。|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>、<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>、<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> のいずれかのコントロールに項目を追加する。|Items プロパティを使用します。|
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> にコントロールを追加する。|Items プロパティを使用します。<br /><br /> コントロールを追加する、<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>設定する必要があります、リボンが Office アプリケーションに読み込まれた後、<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A>プロパティを**true**リボンが Office アプリケーションに読み込まれる前にします。 詳しくは、次を参照してください。[読み取り専用になるプロパティを設定](#SettingReadOnlyProperties)します。|
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> にコントロールを追加する。|Items プロパティを使用します。<br /><br /> リボンが office アプリケーションに<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>読み込まれた後にコントロールを追加するには、office アプリケーション<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A>にリボンが読み込まれる前に、プロパティを**true**に設定する必要があります。 詳細については、「読み取り専用に[なるプロパティの設定](#SettingReadOnlyProperties)」を参照してください。|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> 内の選択された項目を取得する。<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> または <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|SelectedItem プロパティを使用します。 <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> では、<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> プロパティを使用します。|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab> 上のグループを取得する。|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A> プロパティを使用します。|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> に表示する行および列の数を指定する。|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> プロパティおよび <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> プロパティを使用します。|
 
-## <a name="SettingReadOnlyProperties"></a> 読み取り専用になるプロパティを設定します。
+## <a name="SettingReadOnlyProperties"></a>読み取り専用になるプロパティの設定
  リボンが読み込まれる前にのみ設定できるプロパティがあります。 それらのプロパティは次の 3 つの方法で設定できます。
 
-- Visual Studio で**プロパティ**ウィンドウ。
+- Visual Studio の **[プロパティ]** ウィンドウを表示します。
 
-- コンス トラクター、**リボン**クラス。
+- **リボン**クラスのコンストラクター内。
 
 - プロジェクトの `CreateRibbonExtensibilityObject`、`ThisAddin`、または `ThisWorkbook` クラスの `ThisDocument` メソッド
 
-  動的メニューにはいくつかの例外があります。 新しいコントロールを作成、プロパティの設定、および追加して、実行時に動的メニューにメニューを含むリボンが読み込まれた後にもできます。
+  動的メニューにはいくつかの例外があります。 メニューを含むリボンが読み込まれた後であっても、新しいコントロールを作成してそれらのプロパティを設定し、それらのコントロールを実行時に動的メニューに追加できます。
 
   動的メニューに追加するコントロールのプロパティは、いつでも設定できます。
 
-  詳細については、次を参照してください。[読み取り専用になるプロパティ](#ReadOnlyProperties)します。
+  詳細については、「読み取り専用に[なるプロパティ](#ReadOnlyProperties)」を参照してください。
 
-### <a name="set-properties-in-the-constructor-of-the-ribbon"></a>リボンのコンス トラクターでプロパティを設定します。
- プロパティを設定することができます、`Ribbon`のコンス トラクター内のコントロール、**リボン**クラス。 このコードは、`InitializeComponent` メソッドの呼び出しの後に置く必要があります。 次のコード例は、現在の時刻が太平洋標準時間 (UTC-8) の 17:00 以降である場合に、新しいボタンをグループに追加します。
+### <a name="set-properties-in-the-constructor-of-the-ribbon"></a>リボンのコンストラクターでプロパティを設定する
+ `Ribbon` **リボン**クラスのコンストラクターで、コントロールのプロパティを設定できます。 このコードは、`InitializeComponent` メソッドの呼び出しの後に置く必要があります。 次のコード例は、現在の時刻が太平洋標準時間 (UTC-8) の 17:00 以降である場合に、新しいボタンをグループに追加します。
 
  次のコードを追加します。
 
  [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
  [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]
 
- Visual C# と Visual Studio 2008 からアップグレードしたプロジェクトでは、コンス トラクターはリボン コード ファイルに表示されます。
+ Visual Studio C# 2008 からアップグレードした visual プロジェクトでは、リボンコードファイルにコンストラクターが表示されます。
 
- Visual Basic プロジェクト、または [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] で作成した Visual C# プロジェクトでは、リボン デザイナー コード ファイルにコンストラクターがあります。 このファイルの名前は*YourRibbonItem*します。Designer.cs または*YourRibbonItem*します。 Visual Basic プロジェクトでは、このファイルを表示する必要がありますをクリックする、 **すべてのファイル**ソリューション エクスプ ローラーでボタンをクリックします。
+ Visual Basic プロジェクト、または [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] で作成した Visual C# プロジェクトでは、リボン デザイナー コード ファイルにコンストラクターがあります。 このファイルには、 *Ribbonitem*という名前が付けられます。Designer.cs または*Ribbonitem*。デザイナ. vb. このファイルを Visual Basic プロジェクトで表示するには、最初にソリューションエクスプローラーの **[すべてのファイルを表示]** ボタンをクリックする必要があります。
 
-### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>CreateRibbonExtensibilityObject メソッドでプロパティを設定します。
- プロジェクトの `Ribbon`、`CreateRibbonExtensibilityObject`、または `ThisAddin` のいずれかのクラスの `ThisWorkbook` メソッドをオーバーライドするときに、`ThisDocument` コントロールのプロパティを設定できます。 詳細については、`CreateRibbonExtensibilityObject`メソッドを参照してください[リボンの概要](../vsto/ribbon-overview.md)します。
+### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>CreateRibbonExtensibilityObject メソッドでのプロパティの設定
+ プロジェクトの `Ribbon`、`CreateRibbonExtensibilityObject`、または `ThisAddin` のいずれかのクラスの `ThisWorkbook` メソッドをオーバーライドするときに、`ThisDocument` コントロールのプロパティを設定できます。 メソッドの`CreateRibbonExtensibilityObject`詳細については、「[リボンの概要](../vsto/ribbon-overview.md)」を参照してください。
 
- 次の例では、リボンのプロパティを設定、`CreateRibbonExtensibilityObject`のメソッド、 `ThisWorkbook` Excel ブック プロジェクトのクラス。
+ 次の例では、Excel ブック`CreateRibbonExtensibilityObject`プロジェクトの`ThisWorkbook`クラスのメソッドでリボンプロパティを設定します。
 
  次のコードを追加します。
 
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
 
-### <a name="ReadOnlyProperties"></a> 読み取り専用になるプロパティ
- 次の表では、リボンが読み込まれる前にのみ設定できるプロパティを示します。
+### <a name="ReadOnlyProperties"></a>読み取り専用になるプロパティ
+ 次の表は、リボンが読み込まれる前にのみ設定できるプロパティを示しています。
 
 > [!NOTE]
 > 動的メニューのコントロールのプロパティは、いつでも設定できます。 この場合、次の表の内容は該当しません。
@@ -135,10 +135,10 @@ ms.locfileid: "63446985"
 |プロパティ|リボン コントロール クラス|
 |--------------|--------------------------|
 |**BoxStyle**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|
-|**ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
-|**ColumnCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**です (buttontype**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
+|**渡さ**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
-|**DialogLauncher**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
+|**ツールの起動**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
 |**動的**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
 |**Global**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
 |**グループ**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
@@ -147,8 +147,8 @@ ms.locfileid: "63446985"
 |**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
 |**Name**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|
 |**[Position]**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
-|**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
-|**行数**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**[Ribbontype]**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
+|**行**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ShowItemImage**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ShowItemLabel**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ShowItemSelection**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
@@ -157,42 +157,42 @@ ms.locfileid: "63446985"
 |**タブ**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
 |**タイトル**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 
-### <a name="set-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Outlook インスペクターに表示されるリボンのプロパティを設定
+### <a name="set-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Outlook インスペクターに表示されるリボンのプロパティを設定する
  ユーザーがリボンを含むインスペクターを開くたびにリボンの新しいインスタンスが作成されます。 ただし、上の表に示すプロパティは、リボンの最初のインスタンスが作成される前にのみ設定できます。 最初のインスタンスが作成されると、そのインスタンスによって Outlook がリボンの読み込みに使用する XML ファイルを定義するため、これらのプロパティは読み取り専用になります。
 
  リボンの他のインスタンスが作成されたときにこれらのプロパティを別の値に設定する条件ロジックがある場合、そのコードは何の効果ももたらしません。
 
 > [!NOTE]
-> いることを確認、**名前**Outlook リボンに追加する各コントロールのプロパティを設定します。 実行時に Outlook のリボンにコントロールを追加する場合は、コードでこのプロパティを設定する必要があります。 デザイン時にコントロールを Outlook リボンに追加する場合は、Name プロパティが自動的に設定されます。
+> Outlook リボンに追加するコントロールごとに、 **Name**プロパティが設定されていることを確認します。 実行時にコントロールを Outlook リボンに追加する場合は、コードでこのプロパティを設定する必要があります。 デザイン時にコントロールを Outlook リボンに追加すると、"名前" プロパティが自動的に設定されます。
 
-## <a name="ribbon-control-events"></a>リボン コントロール イベント
+## <a name="ribbon-control-events"></a>リボンコントロールイベント
  各コントロール クラスに 1 つ以上のイベントが含まれています。 次の表は、それらのイベントについての説明です。
 
 |event|説明|
 |-----------|-----------------|
 |ここを|コントロールがクリックされたときに発生します。|
 |TextChanged|編集ボックスまたはコンボ ボックス内のテキストが変更されたときに発生します。|
-|ItemsLoading|コントロールの項目のコレクションが Office から要求されたときに発生します。 オフィスのキャッシュ項目のコレクション、コードの変更、コントロールのプロパティまたは呼び出すまで、<xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A>メソッド。|
-|ButtonClick|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> または <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> 内のボタンがクリックされたときに発生します。|
+|ItemsLoading|Office によってコントロールの項目コレクションが要求されたときに発生します。 Office では、コードによってコントロールのプロパティが変更されるか、メソッドが<xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A>呼び出されるまで、項目コレクションがキャッシュされます。|
+|System.windows.forms.toolbar.buttonclick>|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> または <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> 内のボタンがクリックされたときに発生します。|
 |SelectionChanged|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> または <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> 内の選択項目が変更されたときに発生します。|
-|DialogLauncherClick|グループの右下にあるダイアログ ランチャー アイコンがクリックされたときに発生します。|
+|[クリック]|グループの右下にあるダイアログ ランチャー アイコンがクリックされたときに発生します。|
 
  これらのイベントのイベント ハンドラーには、次の 2 つのパラメーターがあります。
 
 |パラメーター|説明|
 |---------------|-----------------|
-|*sender*|イベントを発生させたコントロールを表す <xref:System.Object>。|
+|*センダー*|イベントを発生させたコントロールを表す <xref:System.Object>。|
 |*e*|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> を格納している <xref:Microsoft.Office.Core.IRibbonControl>。 このコントロールを使用すると、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] によって提供されるリボン オブジェクト モデルには用意されていないプロパティにアクセスできます。|
 
 ## <a name="see-also"></a>関連項目
-- [実行時にリボンへのアクセスします。](../vsto/accessing-the-ribbon-at-run-time.md)
+- [実行時のリボンへのアクセス](../vsto/accessing-the-ribbon-at-run-time.md)
 - [リボンの概要](../vsto/ribbon-overview.md)
-- [方法: リボンのカスタマイズの概要します。](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [方法: リボンのカスタマイズの開始](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [リボン デザイナー](../vsto/ribbon-designer.md)
-- [チュートリアル: リボン デザイナーを使用してカスタム タブを作成します。](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [チュートリアル: 実行時にリボン上のコントロールを更新します。](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
-- [Outlook のリボンをカスタマイズします。](../vsto/customizing-a-ribbon-for-outlook.md)
-- [方法: 組み込みタブをカスタマイズします。](../vsto/how-to-customize-a-built-in-tab.md)
-- [方法: Backstage ビューにコントロールを追加します。](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [方法: リボン デザイナーからリボン XML にエクスポートします。](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [方法: アドイン ユーザー インターフェイス エラーを表示します。](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [チュートリアル: リボンデザイナーを使用してカスタムタブを作成する](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [チュートリアル: 実行時にリボンのコントロールを更新する](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
+- [Outlook のリボンのカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)
+- [方法: 組み込みタブをカスタマイズする](../vsto/how-to-customize-a-built-in-tab.md)
+- [方法: Backstage ビューにコントロールを追加する](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [方法: リボンデザイナーからリボン XML にリボンをエクスポートする](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [方法: アドインのユーザーインターフェイスエラーを表示する](../vsto/how-to-show-add-in-user-interface-errors.md)

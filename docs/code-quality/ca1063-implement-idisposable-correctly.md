@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 837659ca24eb66995626668185500db7bc32bbd7
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 8b29c9ed644c223488261333e79f17229bd4b7a3
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547374"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235301"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:IDisposable を正しく実装します
 
@@ -29,7 +29,7 @@ ms.locfileid: "69547374"
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
-|Category|Microsoft.Design|
+|カテゴリ|Microsoft.Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因

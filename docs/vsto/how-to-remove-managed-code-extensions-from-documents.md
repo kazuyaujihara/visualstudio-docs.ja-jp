@@ -1,5 +1,5 @@
 ---
-title: '方法: ドキュメントからのマネージ コード拡張機能を削除します。'
+title: '方法: マネージコード拡張機能をドキュメントから削除する'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,46 +13,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 438658af3f182ea732d0fefef0f5a5d6ecbefa03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83bd57c8ffdcb268a560431c74806ddb6544d4e8
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961593"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252168"
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>方法: ドキュメントからのマネージ コード拡張機能を削除します。
-  プログラムによって、ドキュメントまたは Microsoft Office Word または Microsoft Office Excel のドキュメント レベルのカスタマイズの一部であるブックからカスタマイズ アセンブリを削除することができます。 ユーザーのドキュメントを開くし、内容を表示できますし、ドキュメントに追加する、カスタム ユーザー インターフェイス (UI) は表示されませんと、コードは実行できません。
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>方法: マネージコード拡張機能をドキュメントから削除する
+  Microsoft Office Word または Microsoft Office Excel のドキュメントレベルのカスタマイズの一部であるドキュメントまたはブックから、プログラムによってカスタマイズアセンブリを削除できます。 その後、ユーザーはドキュメントを開いて内容を表示できますが、ドキュメントに追加したカスタムユーザーインターフェイス (UI) は表示されず、コードは実行されません。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- いずれかを使用して、カスタマイズ アセンブリを削除することができます、`RemoveCustomization`によって提供されるメソッド、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]します。 使用する方法は、実行時にカスタマイズを削除するかどうかによって異なります (つまり、カスタマイズ、Word でコードを実行して文書または Excel ブックが開いている)、閉じられたドキュメントまたはドキュメントからカスタマイズを削除する場合、またはその iMicrosoft Office がインストールされていないサーバーで s。
+ `RemoveCustomization` に[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]よって提供されるメソッドのいずれかを使用して、カスタマイズアセンブリを削除できます。 どの方法を使用するかは、実行時にカスタマイズを削除するか (Word 文書または Excel ブックが開いているときにカスタマイズでコードを実行するか)、閉じられたドキュメントまたは自分が作成したドキュメントからカスタマイズを削除するかどうかによって異なります。Microsoft Office がインストールされていないサーバー上の。
 
- ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連するビデオ デモについては、次を参照してください[How Do i:。アタッチまたは Word 文書から VSTO アセンブリをデタッチしますか](http://go.microsoft.com/fwlink/?LinkId=136782)。
+ ![ビデオへのリンク](../vsto/media/playvideo.gif "ビデオへのリンク")関連のビデオデモについて[は、「操作方法:アタッチまたは Word 文書から VSTO アセンブリをデタッチしますか](http://go.microsoft.com/fwlink/?LinkId=136782)。
 
-## <a name="to-remove-the-customization-assembly-at-runtime"></a>実行時に、カスタマイズ アセンブリを削除するには
+## <a name="to-remove-the-customization-assembly-at-run-time"></a>実行時にカスタマイズアセンブリを削除するには
 
-1. カスタマイズ コードを呼び出す、 <xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A> (Word) のメソッドまたは<xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A>メソッド (for Excel)。 カスタマイズが不要になった後にのみ、このメソッドを呼び出す必要があります。
+1. カスタマイズコードで、 <xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A>メソッド (Word の場合) <xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A>またはメソッド (Excel の場合) を呼び出します。 このメソッドは、カスタマイズが不要になった後にのみ呼び出す必要があります。
 
-     コードでこのメソッドを呼び出す独自のカスタマイズの使用方法によって異なります。 たとえば、顧客は、ドキュメント自体 (カスタマイズではなく) を必要とするその他のクライアントにドキュメントを送信する準備ができるまでのカスタマイズの機能を使用して場合、を呼び出すいくつかの UI を指定できます`RemoveCustomization`顧客がそれをクリックしたとき。 また場合は、カスタマイズを初めて開くが、カスタマイズは顧客が直接アクセスされるその他の機能を提供しない場合に、ドキュメントにデータを設定します、し、呼び出すことができます RemoveCustomization 早く、カスタマイズドキュメントの初期化を終了します。
+     コード内でこのメソッドを呼び出す場所は、カスタマイズの使用方法によって異なります。 たとえば、ユーザーがドキュメントそのものだけを必要とする他のクライアント (カスタマイズではない) にドキュメントを送信する準備ができてからカスタマイズの機能を使用する場合は、顧客が`RemoveCustomization`クリックしたときにを呼び出す UI を提供できます。 また、カスタマイズによってドキュメントが最初に開かれたときにデータを入力する場合でも、ユーザーが直接アクセスする他の機能がカスタマイズによって提供されない場合は、カスタマイズしてすぐに RemoveCustomization を呼び出すことができます。ドキュメントの初期化を終了します。
 
-## <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>閉じられたドキュメントまたはサーバー上のドキュメントからカスタマイズ アセンブリを削除するには
+## <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>閉じられたドキュメントまたはサーバー上のドキュメントからカスタマイズアセンブリを削除するには
 
-1. 参照を追加するコンソール アプリケーションまたは Windows フォーム プロジェクトなど、Microsoft Office を必要としないプロジェクトで、 *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll*アセンブリ。
+1. コンソールアプリケーションや Windows フォームプロジェクトなど、Microsoft Office を必要としないプロジェクトでは、VisualStudio アセンブリへの参照を追加します。 *ServerDocument*アセンブリです。
 
-2. 次の追加**Imports**または**を使用して**ステートメントをコード ファイルの先頭にします。
+2. 次の**Imports**ステートメントまたは**using**ステートメントをコードファイルの先頭に追加します。
 
      [!code-csharp[Trin_VstcoreDeployment#1](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#1)]
      [!code-vb[Trin_VstcoreDeployment#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#1)]
 
-3. 呼び出す静的<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A>のメソッド、<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>クラス、およびパラメーターのソリューションのドキュメントのパスを指定します。
+3. クラスの静的<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A>メソッドを呼び出し、パラメーターのソリューションドキュメントパスを指定します。 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>
 
-     次のコード例は、という名前のドキュメントからカスタマイズを削除することを想定しています*worddocument1.docx など*デスクトップです。
+     次のコード例では、デスクトップ上にある*worddocument1.docx*という名前のドキュメントからカスタマイズを削除することを前提としています。
 
      [!code-csharp[Trin_VstcoreDeployment#2](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#2)]
      [!code-vb[Trin_VstcoreDeployment#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#2)]
 
-4. プロジェクトをビルドし、カスタマイズを削除するコンピューターでアプリケーションを実行します。 コンピューターには、Visual Studio 2010 Tools for Office ランタイムがインストールされている必要があります。
+4. プロジェクトをビルドし、カスタマイズを削除するコンピューターでアプリケーションを実行します。 コンピューターには、Visual Studio 2010 Tools for Office runtime がインストールされている必要があります。
 
 ## <a name="see-also"></a>関連項目
-- [ServerDocument クラスを使用してサーバー上のドキュメントを管理します。](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
-- [方法: マネージ コード拡張をドキュメントにアタッチします。](../vsto/how-to-attach-managed-code-extensions-to-documents.md)
+- [ServerDocument クラスを使用してサーバー上のドキュメントを管理する](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
+- [方法: マネージコード拡張機能をドキュメントにアタッチする](../vsto/how-to-attach-managed-code-extensions-to-documents.md)

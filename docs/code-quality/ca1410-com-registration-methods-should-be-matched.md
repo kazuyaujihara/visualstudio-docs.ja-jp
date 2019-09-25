@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a424e3c884d47b7deb848b418fbf0f3344d6c379
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: bca9e06c861ab2bcaceead8bf8ee195b64e45c83
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714732"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234732"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410:COM 登録メソッドは一致しなければなりません
 
@@ -30,38 +30,38 @@ ms.locfileid: "66714732"
 |-|-|
 |TypeName|ComRegistrationMethodsShouldBeMatched|
 |CheckId|CA1410|
-|カテゴリ|Microsoft.Interoperability|
+|カテゴリ|Microsoft. 相互運用性|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-マークされているメソッドを宣言する型、<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>属性しますが、でマークされているメソッドを宣言しません、<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>属性、またはその逆です。
+型は、 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>属性でマークされたメソッドを宣言していますが、 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>属性でマークされたメソッドを宣言していません。また、その逆も同様です。
 
 ## <a name="rule-description"></a>規則の説明
 
-コンポーネント オブジェクト モデル (COM) クライアントに .NET 型を作成する、型を登録する必要がありますまずします。 可能な場合でマークされているメソッド、<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>属性は、ユーザー指定のコードを実行する登録プロセス中に呼び出されます。 マークされている対応するメソッド、<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>属性は、登録メソッドの操作を反転する登録解除プロセス中に呼び出されます。
+コンポーネントオブジェクトモデル (COM) クライアントで .NET 型を作成するには、その型を最初に登録する必要があります。 使用可能な場合は、ユーザー指定のコードを実行<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>するための登録プロセス中に、属性でマークされたメソッドが呼び出されます。 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>属性でマークされた対応するメソッドは、登録メソッドの操作を元に戻すための登録解除プロセス中に呼び出されます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-この規則違反を修正するには、対応する登録または登録解除メソッドを追加します。
+この規則違反を修正するには、対応する登録または登録解除の方法を追加します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
 この規則による警告は抑制しないでください。
 
 ## <a name="example"></a>例
 
-次の例では、規則に違反する型を示します。 コメント付きのコードでは、違反の修正プログラムを示します。
+次の例は、規則に違反する型を示しています。 コメント化されたコードは、違反の修正を示しています。
 
 [!code-csharp[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/CSharp/ca1410-com-registration-methods-should-be-matched_1.cs)]
 [!code-vb[FxCop.Interoperability.ComRegistration#1](../code-quality/codesnippet/VisualBasic/ca1410-com-registration-methods-should-be-matched_1.vb)]
 
 ## <a name="related-rules"></a>関連するルール
 
-[CA1411:COM 登録メソッドを表示することはできません。](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
+[CA1411COM 登録メソッドを表示することはできません](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
 ## <a name="see-also"></a>関連項目
 
 - <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>
-- [COM にアセンブリを登録します。](/dotnet/framework/interop/registering-assemblies-with-com)
+- [アセンブリを COM に登録する](/dotnet/framework/interop/registering-assemblies-with-com)
 - [Regasm.exe (アセンブリ登録ツール)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)

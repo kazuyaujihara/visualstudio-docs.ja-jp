@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b9091df08368674511b770158ea47c247aade7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c0c99d5d0adb145a061693f8a83b1f674e05eed4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841368"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237342"
 ---
 # <a name="ca3005-review-code-for-ldap-injection-vulnerabilities"></a>CA3005:LDAP インジェクションの脆弱性のコード レビュー
 
@@ -24,38 +24,38 @@ ms.locfileid: "65841368"
 |TypeName|ReviewCodeForLdapInjectionVulnerabilities|
 |CheckId|CA3005|
 |カテゴリ|Microsoft.Security|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-信頼されていない可能性のある HTTP 要求の入力では、LDAP、ステートメントに到達します。
+信頼できない可能性のある HTTP 要求入力が LDAP ステートメントに到達した場合。
 
 ## <a name="rule-description"></a>規則の説明
 
-信頼できない入力を使用する場合は、ライトウェイト ディレクトリ アクセス プロトコル (LDAP) インジェクション攻撃の考慮あります。 攻撃者は、情報ディレクトリに対して悪意のある LDAP ステートメントを実行することができます可能性があります。 ディレクトリ サービスにアクセスする動的な LDAP ステートメントを作成するユーザー入力を使用するアプリケーションは、特に脆弱です。
+信頼されていない入力を使用する場合は、ライトウェイトディレクトリアクセスプロトコル (LDAP) インジェクション攻撃に注意してください。 攻撃者は、情報ディレクトリに対して悪意のある LDAP ステートメントを実行する可能性があります。 ユーザー入力を使用してディレクトリサービスにアクセスするための動的 LDAP ステートメントを作成するアプリケーションは、特に脆弱です。
 
-このルールは、LDAP ステートメントに到達する HTTP 要求からの入力を検索しようとします。
-
-> [!NOTE]
-> このルールは、アセンブリ間でデータを追跡することはできません。 たとえば、1 つのアセンブリが HTTP 要求の入力を読み取り、LDAP ステートメントを実行する別のアセンブリに渡されます場合は、このルールは警告を生成しません。
+このルールは、LDAP ステートメントに到達した HTTP 要求からの入力を検索します。
 
 > [!NOTE]
-> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)の EditorConfig ファイルで制限を構成する方法。
+> このルールでは、アセンブリ間のデータを追跡することはできません。 たとえば、あるアセンブリが HTTP 要求の入力を読み取り、それを LDAP ステートメントを実行する別のアセンブリに渡す場合、この規則は警告を生成しません。
+
+> [!NOTE]
+> このルールによって、メソッド呼び出し間のデータフローを分析する方法には、構成可能な制限があります。 EditorConfig ファイルで制限を構成する方法については、「 [Analyzer の構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-LDAP ステートメント部分ユーザー制御のいずれかを検討してください。
-- 以外の特殊文字のセーフ リストのみを許可します。
-- 特殊文字を許可しません。
+LDAP ステートメントのユーザー制御部分については、次のいずれかを検討してください。
+- 特殊文字以外の文字のセーフリストのみを許可します。
+- 特殊文字を許可しない
 - 特殊文字をエスケープします。
 
-参照してください[OWASP の LDAP インジェクション防止チート シート](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md)詳細ガイダンスについてはします。
+詳細については、 [Owasp の LDAP インジェクション防止](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md)に関する表を参照してください。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-入力を検証または、エスケープすると、安全である場合は、この警告を抑制することができます。
+入力が検証済みであるか、または安全であることがわかっている場合は、この警告を非表示にすることができます。
 
-## <a name="pseudo-code-examples"></a>疑似コードの例
+## <a name="pseudo-code-examples"></a>擬似コードの例
 
 ### <a name="violation"></a>違反
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7dd7df55f67d486d03048860bf3d20f976a70f
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b9e3b3762b127b1f66b43d6c961054b9cef04048
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870714"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254119"
 ---
 # <a name="access-models-from-text-templates"></a>テキストテンプレートからモデルにアクセスする
 
@@ -140,7 +140,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 
  ただし、dsl 固有のディレクティブの機能の1つとして、dsl 名前空間をインポートして、その DSL で定義されているドメインクラスをテンプレートコードで使用できるようにします。 ディレクティブを使用していないので、読み込む必要があるすべてのモデルに対して、  **\<アセンブリ >** を追加し **\<、>** ディレクティブをインポートする必要があります。 読み込む可能性のあるさまざまなモデルが同じ DSL のすべてのインスタンスである場合、これは簡単です。
 
- ファイルを読み込むには、最も効果的な方法は Visual Studio ModelBus を使用することです。 一般的なシナリオでは、テキストテンプレートは DSL 固有のディレクティブを使用して、通常の方法で最初のモデルを読み込みます。 このモデルには、別のモデルへの ModelBus 参照が含まれます。 ModelBus を使用して、参照先のモデルを開き、特定の要素にアクセスできます。 詳細については、[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)を参照してください。
+ ファイルを読み込むには、最も効果的な方法は Visual Studio ModelBus を使用することです。 一般的なシナリオでは、テキストテンプレートは DSL 固有のディレクティブを使用して、通常の方法で最初のモデルを読み込みます。 このモデルには、別のモデルへの ModelBus 参照が含まれます。 ModelBus を使用して、参照先のモデルを開き、特定の要素にアクセスできます。 詳細については、次を参照してください。[テキスト テンプレートで Visual Studio ModelBus を使用して](../modeling/using-visual-studio-modelbus-in-a-text-template.md)します。
 
  あまり一般的ではないシナリオでは、ファイル名のみが存在し、現在の Visual Studio プロジェクトには含まれていないモデルファイルを開くことが必要になる場合があります。 この場合は、「How to:」で[説明されている方法を使用してファイルを開くことができます。プログラムコード](../modeling/how-to-open-a-model-from-file-in-program-code.md)でファイルからモデルを開きます。
 

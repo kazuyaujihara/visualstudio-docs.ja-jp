@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce2da2c1ff5b2f74d8b4d6341050c1895b68955a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e352eea1b7fcf82cb948315affeae6e30690a4aa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922295"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234972"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307:StringComparison の指定
 
@@ -27,7 +27,7 @@ ms.locfileid: "68922295"
 |-|-|
 |TypeName|SpecifyStringComparison|
 |CheckId|CA1307|
-|Category|Microsoft のグローバリゼーション|
+|カテゴリ|Microsoft のグローバリゼーション|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因

@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f81327324de937df57edfb36cae34d613f6298a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3554a352cb1c32879397e91dba3ce53f31a14bd0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546021"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233857"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724:型名が名前空間と一致する必要があります。
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724:型名を名前空間と一致させることはできません
 
 |||
 |-|-|
@@ -32,16 +32,16 @@ ms.locfileid: "62546021"
 
 ## <a name="cause"></a>原因
 
-型名では、1 つまたは複数の外部から参照できる型を持つ参照先の名前空間の名前と一致します。 大文字と小文字は名前の比較です。
+型名が、外部から参照可能な1つ以上の型を持つ参照先の名前空間名と一致します。 名前比較では大文字と小文字が区別されません。
 
 ## <a name="rule-description"></a>規則の説明
 
-ユーザーが作成した型名は、外部から参照できる型を持つ参照先の名前空間の名前と一致する必要があります。 この規則に違反すると、ライブラリの使いやすさを減らすことができます。
+ユーザーが作成した型名は、外部から参照できる型を持つ参照先の名前空間の名前と一致させることはできません。 この規則に違反すると、ライブラリの使いやすさが低下します。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-型の名前を変更して、外部から参照できる型を持つ参照される名前空間の名前に一致しないようにします。
+外部から参照可能な型の名前空間の名前と一致しないように、型の名前を変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-新たに開発されていないシナリオが発生する、この規則による警告を抑制する必要があります。 警告を抑制する前に一致する名前で、ライブラリのユーザーを混乱する可能性がある方法慎重に検討してください。 ライブラリを配布するには、この規則による警告を抑制する必要があります。
+新しい開発では、このルールの警告を抑制する必要がある既知のシナリオはありません。 警告を抑制する前に、ライブラリのユーザーと一致する名前が混同されているかどうかを慎重に検討してください。 配布ライブラリの場合、このルールからの警告を抑制することが必要になる場合があります。

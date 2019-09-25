@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf9475ad208a229057700fa2965984fbdcb17abf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e333e53fea1b965b250bdc97924e93728d55805a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923099"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236181"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021:out パラメーターを使用しません
 
@@ -27,7 +27,7 @@ ms.locfileid: "68923099"
 |-|-|
 |TypeName|AvoidOutParameters|
 |CheckId|CA1021|
-|Category|Microsoft.Design|
+|カテゴリ|Microsoft.Design|
 |互換性に影響する変更点|あり|
 
 ## <a name="cause"></a>原因

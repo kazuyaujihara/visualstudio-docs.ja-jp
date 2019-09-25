@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f11a93380f149648ece4ae6d71bc9c2f25df5191
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 387eb464959fba522e31f9586998335cb306d844
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923117"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236325"
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014:アセンブリに CLSCompliantAttribute を設定します
 
@@ -31,7 +31,7 @@ ms.locfileid: "68923117"
 |-|-|
 |TypeName|MarkAssembliesWithClsCompliant|
 |CheckId|CA1014|
-|Category|Microsoft.Design|
+|カテゴリ|Microsoft.Design|
 |互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因

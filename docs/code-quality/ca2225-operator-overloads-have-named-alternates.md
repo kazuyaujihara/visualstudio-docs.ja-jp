@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f427bcdf4ec4e88dcc2842699d738dae7e8e09d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c027bc4581919f814b4d93eacba77248349fdf8b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546907"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231086"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225:演算子オーバーロードには名前付けされた代替が存在します
 
@@ -27,8 +27,8 @@ ms.locfileid: "69546907"
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
-|Category|Microsoft.Usage|
-|互換性に影響する変更点|中断なし|
+|カテゴリ|Microsoft.Usage|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
@@ -48,18 +48,18 @@ ms.locfileid: "69546907"
 |+=|+=|+=|追加|
 |&|と|&|BitwiseAnd|
 |&=|および =|&=|BitwiseAnd|
-|&#124;|または|&#124;|BitwiseOr|
+|&#124;|or|&#124;|BitwiseOr|
 |&#124;=|または =|&#124;=|BitwiseOr|
 |--|N/A|--|Decrement|
 |/|/|/|除算|
 |/=|/=|/=|除算|
-|==|=|==|Equals|
+|==|=|==|次の値に等しい|
 |^|Xor|^|Xor|
 |^=|Xor =|^=|Xor|
 |>|>|>|比較|
 |>=|>=|>=|比較|
 |++|N/A|++|インクリメント|
-|<>|!=|Equals|
+|<>|!=|次の値に等しい|
 |<<|<<|<<|から左へ|
 |<<=|<<=|<<=|から左へ|
 |<|<|<|比較|
@@ -78,7 +78,7 @@ ms.locfileid: "69546907"
 |-=|N/A|-=|減算|
 |true|IsTrue|N/A|IsTrue (プロパティ)|
 |-(単項)|N/A|-|無効|
-|+ (単項)|N/A|+|Plus|
+|+ (単項)|N/A|+|足|
 |False|IsFalse|False|IsTrue (プロパティ)|
 
 選択した言語では、N/A = = をオーバーロードすることはできません。

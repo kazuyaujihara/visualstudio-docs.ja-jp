@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dd45410a2c928a0ffbbe827b100edd119cf59f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 257100be0eb2766ef413854795c934b230e29370
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797490"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235243"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065:予期しない場所に例外を発生させません
 
@@ -28,7 +28,7 @@ ms.locfileid: "62797490"
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
 |カテゴリ|Microsoft.Design|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
@@ -36,9 +36,9 @@ ms.locfileid: "62797490"
 
 ## <a name="rule-description"></a>規則の説明
 
-予期しない例外をスローするメソッドは、次のように分類できます。
+例外をスローすることが想定されていないメソッドは、次のように分類できます。
 
-- プロパティの Get メソッド
+- Property Get メソッド
 
 - イベントのアクセサー メソッド
 
@@ -58,95 +58,95 @@ ms.locfileid: "62797490"
 
 - 暗黙的なキャスト演算子
 
-次に、これらのメソッドについてを説明します。
+以下のセクションでは、これらのメソッドの種類について説明します。
 
-### <a name="property-get-methods"></a>プロパティの Get メソッド
+### <a name="property-get-methods"></a>Property Get メソッド
 
-プロパティは、基本的にスマート フィールドです。 そのため、できるだけ多くのフィールドのように動作する必要があります。 フィールドは、例外をスローしないし、プロパティをもする必要があります。 例外をスローするプロパティがある場合は、メソッドにすることを検討してください。
+プロパティは、基本的にはスマートフィールドです。 そのため、これらはできるだけフィールドのように動作する必要があります。 フィールドは例外をスローせず、どちらのプロパティでもありません。 例外をスローするプロパティがある場合は、それをメソッドにすることを検討してください。
 
-次の例外は、プロパティの get メソッドからスローされることができます。
+プロパティの get メソッドからは、次の例外がスローされる可能性があります。
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> すべての派生物 (を含む<xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName>およびすべての派生 ( <xref:System.ObjectDisposedException?displayProperty=fullName>を含む)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> すべての派生
+- <xref:System.NotSupportedException?displayProperty=fullName>およびすべての派生物
 
-- <xref:System.ArgumentException?displayProperty=fullName> (インデックスが付けられます) からのみ
+- <xref:System.ArgumentException?displayProperty=fullName>(インデックス付きの get からのみ)
 
-- <xref:System.Collections.Generic.KeyNotFoundException> (インデックスが付けられます) からのみ
+- <xref:System.Collections.Generic.KeyNotFoundException>(インデックス付きの get からのみ)
 
 ### <a name="event-accessor-methods"></a>イベントのアクセサー メソッド
 
-イベント アクセサーには、単純な操作、例外をスローしない必要があります。 イベントは、追加、またはイベント ハンドラーを削除しようとするときに例外をスローしません。
+イベントアクセサーは、例外をスローしない単純な操作である必要があります。 イベントハンドラーを追加または削除しようとすると、例外をスローしないようにする必要があります。
 
-次の例外をスローして、イベント アクセサーからことができます。
+イベントアクセサーからは、次の例外がスローされる可能性があります。
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> すべての派生物 (を含む<xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName>およびすべての派生 ( <xref:System.ObjectDisposedException?displayProperty=fullName>を含む)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> すべての派生
+- <xref:System.NotSupportedException?displayProperty=fullName>およびすべての派生物
 
-- <xref:System.ArgumentException> 派生
+- <xref:System.ArgumentException>および導関数
 
 ### <a name="equals-methods"></a>Equals メソッド
 
-次**Equals**メソッドが例外をスローする必要があります。
+次の**Equals**メソッドは例外をスローしません。
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-**Equals**メソッドが返す`true`または`false`例外をスローする代わりにします。 たとえば、Equals には、2 つの一致しない型が渡された場合に返す必要がありますだけ`false`スローする代わりに、<xref:System.ArgumentException>します。
+**Equals**メソッドは、例外`true`をスローする代わりに、または`false`を返す必要があります。 たとえば、Equals に2つの一致`false` <xref:System.ArgumentException>しない型が渡された場合、をスローする代わりにを返すだけです。
 
 ### <a name="gethashcode-methods"></a>GetHashCode メソッド
 
-次**GetHashCode**メソッドは通常は例外をスローしません。
+次の**GetHashCode**メソッドは、通常、例外をスローしません。
 
 - <xref:System.Object.GetHashCode%2A>
 
 - <xref:System.Collections.IEqualityComparer.GetHashCode%2A>
 
-**GetHashCode**値を常に返す必要があります。 それ以外の場合、ハッシュ テーブル内の項目が失われることができます。
+**GetHashCode**は常に値を返す必要があります。 それ以外の場合、ハッシュテーブル内の項目が失われる可能性があります。
 
-バージョンの**GetHashCode**スローできる引数を受け取る、<xref:System.ArgumentException>します。 ただし、 **Object.GetHashCode**が例外をスローしない必要があります。
+引数を受け取る**GetHashCode**のバージョンは、をスローする<xref:System.ArgumentException>場合があります。 ただし、**オブジェクト GetHashCode**は例外をスローすることはできません。
 
 ### <a name="tostring-methods"></a>ToString メソッド
 
-デバッガーを使用して<xref:System.Object.ToString%2A?displayProperty=fullName>オブジェクトに関する情報を文字列の形式で表示できるようにします。 そのため、 **ToString**オブジェクトの状態を変更しないでくださいし、例外をスローしないでください。
+デバッガーはを<xref:System.Object.ToString%2A?displayProperty=fullName>使用して、オブジェクトに関する情報を文字列形式で表示します。 したがって、 **ToString**はオブジェクトの状態を変更しないでください。例外をスローすることはできません。
 
 ### <a name="static-constructors"></a>静的コンストラクター
 
-現在のアプリケーション ドメインで使用できない型を静的コンス トラクターから例外をスローします。 (セキュリティ上の問題) などの正当な理由は、静的コンス トラクターから例外がスローされるが必要です。
+静的コンストラクターから例外をスローすると、現在のアプリケーションドメインでその型を使用できなくなります。 静的コンストラクターから例外をスローするための適切な理由 (セキュリティの問題など) が必要です。
 
 ### <a name="finalizers"></a>ファイナライザー
 
-プロセスを廃棄する高速で失敗する、CLR は、ファイナライザーから例外をスローします。 そのため、例外のスローをファイナライザーで常に避けてください。
+ファイナライザーから例外をスローすると、CLR が高速に処理され、プロセスが破棄されます。 したがって、ファイナライザーで例外をスローすることは常に避ける必要があります。
 
 ### <a name="dispose-methods"></a>Dispose メソッド
 
-A<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>メソッドが例外をスローする必要があります。 クリーンアップ ロジックの一部として dispose が呼び出される多くの場合、`finally`句。 そのため、例外の内部処理を追加するユーザーを強制的に明示的に Dispose から例外がスローされる、`finally`句。
+メソッド<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>は例外をスローしません。 Dispose は、多くの場合、 `finally`句でクリーンアップロジックの一部として呼び出されます。 したがって、Dispose から明示的に例外をスローすると、ユーザーは`finally`句内に例外処理を追加するように強制されます。
 
-**Dispose (false)** Dispose がほぼ常に、ファイナライザーから呼び出されるために、コード パスは、例外をスローしない必要があります。
+Dispose **(false)** コードパスは、ほとんどの場合、dispose はファイナライザーから呼び出されるため、例外をスローしません。
 
 ### <a name="equality-operators--"></a>等値演算子 (= =、! =)
 
-Equals メソッドと同様に等値演算子が返す`true`または`false`、および例外をスローする必要があります。
+Equals メソッドと同様に、等値演算子`true`は`false`またはのいずれかを返す必要があり、例外をスローしません。
 
 ### <a name="implicit-cast-operators"></a>暗黙的なキャスト演算子
 
-ユーザーは、多くの場合、暗黙的なキャスト演算子が呼び出されたことに注意してくださいはであるため、暗黙的なキャスト演算子によってスローされる例外は予期されていません。 そのため、例外はスローされません暗黙的なキャスト演算子。
+ユーザーは、暗黙的なキャスト演算子が呼び出されたことを認識しないことがよくあるため、暗黙的なキャスト演算子によってスローされる例外は予期されていません。 したがって、暗黙的なキャスト演算子からは例外をスローしません。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-プロパティの get アクセス操作子のいずれかが不要になった例外をスローするか、メソッド、プロパティに変更するロジックを変更します。
+プロパティの getter の場合は、例外をスローする必要がなくなったロジックを変更するか、プロパティをメソッドに変更します。
 
-すべての他のメソッドの種類前の表に、変更ロジックが不要になったとして例外をスローする必要がありますようにします。
+上記の他のすべてのメソッド型については、例外をスローする必要がなくなったロジックを変更します。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-違反の原因がスローされた例外ではなく、例外宣言である場合は、この規則による警告を抑制しても安全です。
+スローされた例外ではなく例外宣言によって違反が発生した場合は、この規則による警告を抑制することが安全です。
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA2219:Exception 句に例外を発生させません](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+- [CA2219例外句で例外を発生させない](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
 ## <a name="see-also"></a>関連項目
 
