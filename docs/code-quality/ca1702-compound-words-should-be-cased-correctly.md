@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f78ea4f44c48d2740df58def03a6335bce6637a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5480d3dde926dfe31b018a5cd0b1ea6a5813063b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545933"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234332"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702:複合語では、大文字と小文字が正しく区別されなければなりません
 
@@ -28,7 +28,7 @@ ms.locfileid: "62545933"
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
 |カテゴリ|Microsoft.Naming|
-|互換性に影響する変更点|互換性に影響する場合に、アセンブリに発生します。<br /><br /> 改行の型パラメーターで発生した場合。|
+|互換性に影響する変更点|中断-アセンブリで発生した場合。<br /><br /> 中断なし-型パラメーターで発生した場合。|
 
 ## <a name="cause"></a>原因
 
@@ -36,19 +36,19 @@ ms.locfileid: "62545933"
 
 ## <a name="rule-description"></a>規則の説明
 
-識別子の名前は大文字小文字の区別に基づく単語に分割されます。 Microsoft のスペル チェック ライブラリでは、隣接する 2 つの単語の組み合わせがチェックされます。 認識されると、識別子は、規則違反を生成します。 違反を引き起こす複合語の例は、"CheckSum"、「マルチパート」は、"Checksum"、「マルチパート」としてそれぞれ小文字する必要があります。 ルールに組み込まれているいくつかの例外により、以前の一般的な使用方法と、1 つの単語がいくつかのフラグが設定されますが、「ツールバー」、"Filename"など (ここで、「ツールバー」および"FileName") の 2 つの個別の単語として小文字する必要があります。
+識別子の名前は、大文字小文字に基づく単語に分割されます。 それぞれの連続する2単語の組み合わせは、Microsoft スペルチェックライブラリによってチェックされます。 認識されている場合は、識別子によってルールの違反が生成されます。 違反の原因となる複合語の例としては、"CheckSum" と "マルチパート" があります。これは、それぞれ "Checksum" と "マルチパート" として使用する必要があります。 これまでの一般的な使用により、いくつかの例外がルールに組み込まれています。また、"Toolbar" や "Filename" など、複数の単語にフラグが設定されている場合は、2つの単語 (この場合は "ToolBar" と "FileName") として大文字と小文字が区別されます。
 
 名前付け規則では、共通言語ランタイムをターゲットとするライブラリの統一的な名前の付け方が規定されています。 これにより、新しいソフトウェア ライブラリを習得するまでの時間を短縮でき、マネージド コード開発の専門家によってライブラリが開発されたという信頼を顧客に与えることができます。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-名前を変更するは、大文字と小文字を正しく区別できるようにします。
+大文字と小文字が正しくなるように名前を変更します。
 
 ## <a name="language"></a>言語
 
-スペル チェックは現在英語ベースのカルチャのディクショナリのみに対して確認します。 追加することで、プロジェクト ファイルで、プロジェクトのカルチャを変更することができます、 **CodeAnalysisCulture**要素。
+スペルチェックでは、現在、英語ベースのカルチャディクショナリのみがチェックされます。 プロジェクトファイル内のプロジェクトのカルチャを変更するには、 **CodeAnalysisCulture**要素を追加します。
 
-例:
+次に例を示します。
 
 ```xml
 <Project ...>
@@ -57,17 +57,17 @@ ms.locfileid: "62545933"
 ```
 
 > [!IMPORTANT]
-> 英語ベースのカルチャ以外に、カルチャを設定すると、このコード分析規則はサイレント モードで無効になっています。
+> カルチャを英語ベースのカルチャ以外に設定した場合、このコード分析規則は警告なしで無効になります。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-複合語の両方の部分は、スペル チェック辞書によって認識され、目的は、2 つの単語を使用する場合は、この規則による警告を抑制するのには安全です。
+複合語の両方の部分がスペル辞書によって認識され、2つの単語を使用することが意図されている場合、この規則による警告を抑制するのは安全です。
 
 ## <a name="related-rules"></a>関連するルール
 
-- [CA1701:リソース文字列の複合語では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA 1709:識別子では、大文字と小文字が正しく区別する必要があります。](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708:識別子は、ケース以外で相違させる必要があります。](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1701リソース文字列の複合語は、大文字と小文字が正しく区別されます。](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1709識別子は正しく使用する必要があります](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708識別子の大文字と小文字の区別が異なる場合](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>関連項目
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f3c118b097dbcd9eba8a5755672bde9c11cb13a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 468b63ca554ea126bbd621a2502e54540e6ed068
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920302"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231281"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215:Dispose メソッドが基底クラスの Dispose を呼び出す必要があります
 
@@ -28,8 +28,8 @@ ms.locfileid: "68920302"
 |-|-|
 |TypeName|DisposeMethodsShouldCallBaseClassDispose|
 |CheckId|CA2215|
-|Category|Microsoft.Usage|
-|互換性に影響する変更点|中断なし|
+|カテゴリ|Microsoft.Usage|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 を実装する<xref:System.IDisposable?displayProperty=fullName>型は、も実装<xref:System.IDisposable>する型から継承します。 継承する型の<xref:System.IDisposable.Dispose%2A> メソッドは、親の型のメソッドを呼び出しません。<xref:System.IDisposable.Dispose%2A>

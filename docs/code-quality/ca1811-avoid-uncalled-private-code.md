@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c144db920bfa04055c81227e4cc2c230ed2f097d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 92a7542499eceeccbd62ce327b386dc099b726b2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921329"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233619"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811:呼び出されていないプライベート コードを使用しません
 

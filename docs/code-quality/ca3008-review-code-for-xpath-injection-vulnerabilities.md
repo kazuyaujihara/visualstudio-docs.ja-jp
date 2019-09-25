@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 1d001dc306bbb225c4ecc1c0f17bf46619e2d0a7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841536"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237260"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008:XPath インジェクションの脆弱性のコード レビュー
 
@@ -24,37 +24,37 @@ ms.locfileid: "65841536"
 |TypeName|ReviewCodeForXPathInjectionVulnerabilities|
 |CheckId|CA3008|
 |カテゴリ|Microsoft.Security|
-|互換性に影響する変更点|中断なし|
+|互換性に影響する変更点|なし|
 
 ## <a name="cause"></a>原因
 
-信頼されていない可能性のある HTTP 要求の入力では、XPath クエリに到達します。
+信頼できない可能性のある HTTP 要求入力が XPath クエリに到達した場合。
 
 ## <a name="rule-description"></a>規則の説明
 
-信頼できない入力を使用する場合は、XPath インジェクション攻撃の考慮あります。 信頼されていない入力を使用した XPath クエリを作成して、攻撃者が悪意のある、意図しない結果を返すクエリを操作する可能性があります、クエリ XML の内容を開示可能性があります。
+信頼されていない入力を使用する場合は、XPath インジェクション攻撃に注意してください。 信頼されていない入力を使用して XPath クエリを作成すると、攻撃者がクエリを故意に操作して意図しない結果を返すことがあり、場合によってはクエリ対象の XML の内容を開示できます。
 
-このルールは、XPath 式に到達する HTTP 要求からの入力を検索しようとします。
-
-> [!NOTE]
-> このルールは、アセンブリ間でデータを追跡することはできません。 たとえば場合は、1 つのアセンブリは、HTTP 要求の入力を読み取って、XPath クエリを実行する別のアセンブリに渡されます、このルールは警告を生成しません。
+このルールは、XPath 式に到達した HTTP 要求からの入力を検索します。
 
 > [!NOTE]
-> このルールがメソッド呼び出し間でデータ フローを分析する方法の詳細に構成可能な制限があります。 参照してください[アナライザーの構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)の EditorConfig ファイルで制限を構成する方法。
+> このルールでは、アセンブリ間のデータを追跡することはできません。 たとえば、あるアセンブリが HTTP 要求の入力を読み取り、それを XPath クエリを実行する別のアセンブリに渡す場合、この規則は警告を生成しません。
+
+> [!NOTE]
+> このルールによって、メソッド呼び出し間のデータフローを分析する方法には、構成可能な制限があります。 EditorConfig ファイルで制限を構成する方法については、「 [Analyzer の構成](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)」を参照してください。
 
 ## <a name="how-to-fix-violations"></a>違反の修正方法
 
-XPath インジェクションの脆弱性を修正するいくつかの方法は次のとおりです。
+XPath インジェクションの脆弱性を解決するためのいくつかの方法を次に示します。
 
-- ユーザー入力からの XPath クエリの作成はありません。
-- 入力にのみ安全な一連文字にはが含まれていることを検証します。
+- ユーザー入力から XPath クエリを作成しないでください。
+- 入力に安全な文字のセットのみが含まれていることを検証します。
 - 引用符をエスケープします。
 
-## <a name="when-to-suppress-warnings"></a>警告を抑制します。
+## <a name="when-to-suppress-warnings"></a>警告を非表示にする場合
 
-安全のための入力を検証した場合は、この警告を抑制することができます。
+入力が安全であることを検証したことがわかっている場合は、この警告を非表示にすることができます。
 
-## <a name="pseudo-code-examples"></a>疑似コードの例
+## <a name="pseudo-code-examples"></a>擬似コードの例
 
 ### <a name="violation"></a>違反
 

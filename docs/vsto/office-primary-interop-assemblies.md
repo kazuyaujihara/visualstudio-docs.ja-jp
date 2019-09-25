@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1038d0d7e7d20c28cdd0cb52804461376a4e89
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551691"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253737"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office プライマリ相互運用機能アセンブリ
 
@@ -66,7 +66,7 @@ Visual Studio 2017 以降では、これらの Pia のコピーは、開発用�
 - (または *% ProgramFiles (x86)% \ Microsoft Visual Studio\Shared\Visual Studio Tools for\* Office\PIA on 64 ビット版オペレーティングシステム)
 
 > [!NOTE]
-> 以前のバージョンの Visual Studio では、これらの Pia は、そのバージョンの Visual Studio の *% ProgramFiles% フォルダーにある Office\PIA フォルダーの Visual Studio Tools にインストールされます。  
+> 以前のバージョンの Visual Studio では、これらの Pia は、そのバージョンの Visual Studio の *% ProgramFiles% フォルダーにある Office\PIA フォルダーの Visual Studio Tools にインストールされます。
 > 例: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Visual Studio Tools for Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>グローバルアセンブリキャッシュ内のプライマリ相互運用機能アセンブリ

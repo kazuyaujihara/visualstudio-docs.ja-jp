@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 478efc77bd1fb14f6241e026cfe280355a90746a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 27570e282c230d4bec47e70aa1bcdd053b75597c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919444"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236757"
 ---
 # <a name="best-practices-and-examples-sal"></a>ベスト プラクティスと例 (SAL)
 ここでは、ソースコード注釈言語 (SAL) を最大限に活用し、いくつかの一般的な問題を回避する方法をいくつか紹介します。
@@ -238,11 +238,11 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 
 ## <a name="see-also"></a>関連項目
 
-[Sal 注釈を使用した CC++ /コード障害](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
-の軽減[sal](../code-quality/understanding-sal.md)
-[関数のパラメーターと戻り値](../code-quality/annotating-function-parameters-and-return-values.md)
-の注釈[関数の動作](../code-quality/annotating-function-behavior.md)
-の注釈付け[構造体とクラス](../code-quality/annotating-structs-and-classes.md)
-に注釈を付けて、注釈が[組み込み関数](../code-quality/intrinsic-functions.md)
-[に適用されるタイミングと場所を指定](../code-quality/specifying-when-and-where-an-annotation-applies.md)する[ロック動作](../code-quality/annotating-locking-behavior.md)
-に注釈を付ける
+[SAL 注釈を使って C/C++ のコード障害を減らす方法](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)  
+[SAL について](../code-quality/understanding-sal.md)  
+[関数パラメーターおよび戻り値の注釈設定](../code-quality/annotating-function-parameters-and-return-values.md)  
+[関数の動作に注釈を付ける](../code-quality/annotating-function-behavior.md)  
+[構造体とクラスに注釈を付ける](../code-quality/annotating-structs-and-classes.md)  
+[ロック動作に注釈を付ける](../code-quality/annotating-locking-behavior.md)  
+[注釈を適用するタイミングと場所の指定](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+[組み込み関数](../code-quality/intrinsic-functions.md)  
