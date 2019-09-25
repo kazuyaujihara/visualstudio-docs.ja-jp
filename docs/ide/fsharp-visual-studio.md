@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f71e17eae1e728ab755d048daee2c0d156425964
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: fef50748942aaa800cf1181e4c8f8b8a030f99ee
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747599"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211302"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Visual Studio で Visual F# を使用して開発する
 
@@ -146,7 +146,7 @@ IntelliSense の一般的な情報については、[IntelliSense の使用](usi
 |[ステップ イン]|実行を進めて、関数呼び出しに移動できます。|はい|
 |[ステップ オーバー]|現在のスタック フレームで実行を進め、関数呼び出しを超えて移動できます。|はい|
 
-Visual Studio デバッガーの一般的な情報について、「[Visual Studio でのデバッグ](../debugger/index.md)」を参照してください。
+Visual Studio デバッガーの一般的な情報について、「[Visual Studio でのデバッグ](../debugger/index.yml)」を参照してください。
 
 ## <a name="additional-tools"></a>その他のツール
 

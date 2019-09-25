@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37326bbe44eed15a562f0d28c01eac02973a2487
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16443b30ccf6ba03a01df0234695d27e4cd909af
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789259"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186494"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
@@ -51,10 +51,10 @@ devenv /UseEnv {SolutionName|ProjectName}
 
 ## <a name="remarks"></a>解説
 
-このスイッチは、Visual Studio IDE の **[VC++ ディレクトリ]** のプロジェクト プロパティに影響します。 `/UseEnv` スイッチを指定した場合、**[VC++ ディレクトリ]** ノードに PATH、INCLUDE、LIBPATH、および LIB 環境変数の値が表示されます (**[ソース ディレクトリ]** と **[除外ディレクトリ]** の値も表示されます)。それ以外の場合、このノードでは環境変数が 5 つのディレクトリ値**実行可能ファイル ディレクトリ**、**インクルード ディレクトリ**、**参照ディレクトリ**、**ライブラリ ディレクトリ**、**ライブラリ WinRT ディレクトリ**に置き換えられます
+このスイッチは、Visual Studio IDE の **[VC++ ディレクトリ]** のプロジェクト プロパティに影響します。 `/UseEnv` スイッチを指定した場合、 **[VC++ ディレクトリ]** ノードに PATH、INCLUDE、LIBPATH、および LIB 環境変数の値が表示されます ( **[ソース ディレクトリ]** と **[除外ディレクトリ]** の値も表示されます)。それ以外の場合、このノードでは環境変数が 5 つのディレクトリ値**実行可能ファイル ディレクトリ**、**インクルード ディレクトリ**、**参照ディレクトリ**、**ライブラリ ディレクトリ**、**ライブラリ WinRT ディレクトリ**に置き換えられます
 
 > [!TIP]
-> プロジェクトのプロパティにアクセスするには、C++ プロジェクトを右クリックして **[プロパティ]** を選択します。 **[プロパティ ページ]** ダイアログ ボックスで、**[構成プロパティ]** を選択してから **[VC++ ディレクトリ]** を選択します。
+> プロジェクトのプロパティにアクセスするには、C++ プロジェクトを右クリックして **[プロパティ]** を選択します。 **[プロパティ ページ]** ダイアログ ボックスで、 **[構成プロパティ]** を選択してから **[VC++ ディレクトリ]** を選択します。
 
 このスイッチでプロジェクト名を指定すると、プロジェクトの親ソリューション内のすべてのプロジェクトの環境変数が表示されます。
 
@@ -69,4 +69,4 @@ devenv.exe /useenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ## <a name="see-also"></a>関連項目
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)
-- [[VC++ ディレクトリ] プロパティ ページ (Windows)](/cpp/ide/vcpp-directories-property-page)
+- [[VC++ ディレクトリ] プロパティ ページ (Windows)](/cpp/build/reference/vcpp-directories-property-page)

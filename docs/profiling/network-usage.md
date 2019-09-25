@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d0a806ef6e6c3fb20ce4d2697f3b4fe6ff6674e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 58f69d5188a82937c44552e8fd192ea2dba28d3e
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403563"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128137"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP アプリのネットワーク使用量を分析する
 Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http API](/uwp/api/windows.web.http) を使用して実行されたネットワーク操作についてのデータを収集します。 そのデータを分析すると、アクセスや認証の問題、不適切なキャッシュの使用、表示やダウンロードの低パフォーマンスなどの問題を解決するのに役立ちます。
@@ -29,7 +29,7 @@ Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http A
 
 1. Visual Studio でプロジェクトを開きます。
 
-2. **[デバッグ] > [パフォーマンス プロファイラー]** の順にクリックします。 **[ネットワーク]** を選択し、**[開始]** をクリックします。
+2. **[デバッグ] > [パフォーマンス プロファイラー]** の順にクリックします。 **[ネットワーク]** を選択し、 **[開始]** をクリックします。
 
 3. ネットワーク ツールは、アプリの HTTP トラフィックの収集を開始します。
 
@@ -65,9 +65,9 @@ Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http A
 ### <a name="analysis-tips"></a>分析のヒント
  このツールは、次のネットワーク関連の分析を実行する際に役立つ特定の領域を強調表示します。
 
-1. キャッシュから完全に処理される要求は、**[受信元]** 列の **[(キャッシュから)]** に表示されます。 これにより、キャッシュを使用して効果的にユーザーの帯域幅を節約しているかどうか、または誤って応答をキャッシュして、アプリケーションのエンド ユーザーに古いデータを提供しているかどうかを判断できます。
+1. キャッシュから完全に処理される要求は、 **[受信元]** 列の **[(キャッシュから)]** に表示されます。 これにより、キャッシュを使用して効果的にユーザーの帯域幅を節約しているかどうか、または誤って応答をキャッシュして、アプリケーションのエンド ユーザーに古いデータを提供しているかどうかを判断できます。
 
-2. エラー応答 (4xx または 5xx) は、**[結果]** 列で状態コードが赤い状態で、[概要] バーで強調表示された状態で表示されます。 これにより、アプリケーションの多くの潜在的な要求の間でエラーを見つけやすくなります。
+2. エラー応答 (4xx または 5xx) は、 **[結果]** 列で状態コードが赤い状態で、[概要] バーで強調表示された状態で表示されます。 これにより、アプリケーションの多くの潜在的な要求の間でエラーを見つけやすくなります。
 
 3. ([本文] タブ内の) [応答の整形出力] ボタンは、コンテンツをさらに読みやすくして、JSON、XML、HTML、CSS、JavaScript、および TypeScript の応答のペイロードを解析できるようにします。
 
@@ -76,5 +76,5 @@ Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http A
 - [デバッガーを使用して、または使用せずにプロファイリング ツールを実行する](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
 - [Visual Studio ブログ:Visual Studio のネットワーク インスペクターの紹介](http://go.microsoft.com/fwlink/?LinkId=535022)
 - [Channel 9 ビデオ:Visual Studio 診断ツール - 新しいネットワーク プロファイラー](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
-- [Visual Studio のプロファイル](../profiling/index.md)
+- [Visual Studio のプロファイル](../profiling/index.yml)
 - [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)

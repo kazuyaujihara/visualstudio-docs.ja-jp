@@ -4,9 +4,6 @@ ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1a8a6c6ec1535e36eae5ebc2e8f56282ef03fc
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 31058afee1dc9fc0c9f24c773b9bdc3e5d1fb49a
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079565"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118946"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>手順 2: Random オブジェクトおよびアイコンのリストの追加
 このステップでは、絵合わせゲームに使用する一連のアイコンを作成します。 各アイコンは、フォーム上の TableLayoutPanel 内の 2 つのランダムなセルに追加されます。 そのために、2 つの `new` ステートメントを使用して 2 つのオブジェクトを作成します。 1 つ目は、計算クイズ ゲームで使用したオブジェクトに似た <xref:System.Random> オブジェクトです。 このコードでは、TableLayoutPanel 内のセルをランダムに選択するために使用します。 2 つ目は、初めての使用になるかもしれませんが、<xref:System.Collections.Generic.List%601> オブジェクトです。ランダムに選択されたアイコンを格納するために使用します。

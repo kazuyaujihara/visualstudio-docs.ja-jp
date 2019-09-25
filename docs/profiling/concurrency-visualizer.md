@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e19cdb633528c3304d500fe268a583c542f1e4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1e9109493ea78542afaedabbcce3841e3eac0e7
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001024"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128131"
 ---
 # <a name="concurrency-visualizer"></a>コンカレンシー ビジュアライザー
 
@@ -55,5 +55,5 @@ ms.locfileid: "63001024"
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio のプロファイル](../profiling/index.md)
+- [Visual Studio のプロファイル](../profiling/index.yml)
 - [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)

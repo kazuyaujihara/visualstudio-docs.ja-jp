@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0713ae13038991ec65dcbebe350c9085f7d6a94a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93703bdd4bf2f0046176ceb1f6febd5564f61705
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797944"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128317"
 ---
 # <a name="perftips"></a>パフォーマンスのヒント
 Visual Studio デバッガーの *PerfTips* 、および統合デバッガー **診断ツール** は、デバッグ中のアプリのパフォーマンス監視と分析に役立ちます。
@@ -26,7 +26,7 @@ Visual Studio デバッガーの *PerfTips* 、および統合デバッガー **
  ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")
 
 ## <a name="diagnostics-tools-window"></a>[診断ツール] ウィンドウ
- ブレークポイントおよび関連付けられているタイミング データは、**[診断ツール]** ウィンドウに記録されます。
+ ブレークポイントおよび関連付けられているタイミング データは、 **[診断ツール]** ウィンドウに記録されます。
 
  次の図は、Visual Studio 2015 Update 1 の **[診断ツール]** ウィンドウを示しています。
 
@@ -55,5 +55,5 @@ Visual Studio デバッガーの *PerfTips* 、および統合デバッガー **
 2. **[デバッグ中に診断ツールを有効にする]** チェック ボックスをオンまたはオフにします。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio のプロファイル](../profiling/index.md)
+- [Visual Studio のプロファイル](../profiling/index.yml)
 - [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)
