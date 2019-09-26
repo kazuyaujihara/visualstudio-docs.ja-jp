@@ -95,6 +95,10 @@
 ## [Xamarin を使用したモバイル アプリ](/visualstudio/mac/xamarin)
 
 # [ユーザー補助](accessibility.md)
+## [IDE アクセシビリティ オプションの設定](accessibility-ide-options.md)
+## [macOS ユーザー補助ツールの使用](accessibility-macos.md)
+### [キーボード ナビゲーションの使用](accessibility-keyboard.md)
+### [VoiceOver の使用](accessibility-voiceover.md)
 
 # トラブルシューティング
 ## [ログと例外](troubleshooting.md)

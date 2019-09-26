@@ -666,6 +666,10 @@
               href: how-to-step-into-wcf-services.md
             - name: セルフホストされている WCF サービスをデバッグする
               href: how-to-debug-a-self-hosted-wcf-service.md
+    - name: 共同作業
+      items:
+        - name: Live Share を使用したコードの記述とデバッグ
+          href: /visualstudio/liveshare/use/vs
     - name: ダンプ ファイル
       items:
         - name: ダンプ ファイルの使用
@@ -674,7 +678,7 @@
           href: dump-file-summary-extensibility-api.md
     - name: デバッガーのセキュリティ
       href: debugger-security.md
-- name: 関連項目
+- name: 参照
   items:
     - name: デバッグ用ユーザー インターフェイス リファレンス
       items:
