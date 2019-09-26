@@ -9,12 +9,12 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 6ffa8888529586e23d6f9762c3ec5b724c708ca5
-ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
+ms.openlocfilehash: 9f5085c7a655f186c3c8a4a6eecada8b440650cd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69024558"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273219"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>XAML デザイナーの機能拡張の移行
 
@@ -26,7 +26,7 @@ Visual Studio 2019 では、XAML デザイナーが2つの異なるアーキテ�
 
 ![拡張性-移行-アーキテクチャ](media/xaml-designer-extensibility-migration-architecture.png)
 
-このアーキテクチャの移行により、サードパーティ製の拡張機能は、サードパーティ製のコントロールライブラリと同じプロセスに読み込まれなくなりました。 拡張機能は、コントロールライブラリに直接依存したり、ランタイムオブジェクトに直接アクセスしたりすることができなくなりました。 以前にデザイナー分離アーキテクチャ用に作成された拡張機能は、surface 分離アーキテクチャを使用するための新しいアプローチに移行する必要があります。 実際には、既存の拡張機能を新しい機能拡張 API アセンブリに対してコンパイルする必要があります。 コントロールライブラリが別のプロセスに読み込まれるようになったため、 [typeof](/dotnet/csharp/language-reference/keywords/typeof)またはランタイムインスタンスを介したランタイムコントロール型へのアクセスは、置換または削除する必要があります。
+このアーキテクチャの移行により、サードパーティ製の拡張機能は、サードパーティ製のコントロールライブラリと同じプロセスに読み込まれなくなりました。 拡張機能は、コントロールライブラリに直接依存したり、実行時のオブジェクトに直接アクセスしたりすることはできなくなります。 以前にデザイナー分離アーキテクチャ用に作成された拡張機能*は、surface*分離アーキテクチャを使用するための新しいアプローチに移行する必要があります。 実際には、既存の拡張機能を新しい機能拡張 API アセンブリに対してコンパイルする必要があります。 コントロールライブラリが別のプロセスに読み込まれるようになったため、 [typeof](/dotnet/csharp/language-reference/keywords/typeof)またはランタイムインスタンスを使用してランタイムコントロール型にアクセスする場合は、置換または削除する必要があります。
 
 ## <a name="new-extensibility-api-assemblies"></a>新しい機能拡張 API アセンブリ
 
@@ -43,7 +43,7 @@ Visual Studio 2019 では、XAML デザイナーが2つの異なるアーキテ�
 
 サードパーティ製のコントロールライブラリは、実際のターゲットランタイム (.NET Core または UWP) 用にコンパイルされますが、 *designtools .dll*拡張子は常に .NET Framework アセンブリとしてコンパイルする必要があります。
 
-## <a name="decouple-attribute-tables-from-runtime-types"></a>ランタイム型から属性テーブルを分離する
+## <a name="decouple-attribute-tables-from-run-time-types"></a>実行時の型から属性テーブルを分離する
 
 Surface 分離機能拡張モデルでは、拡張機能が実際のコントロールライブラリに依存することは許可されていないため、拡張機能はコントロールライブラリから型を参照できません。 たとえば、mylibrary. *designtools .dll*は、 *mylibrary .dll*に依存していてはなりません。
 
@@ -103,8 +103,9 @@ End Class
 * `ContextMenuProvider`
 * `ParentAdapter`
 * `PlacementAdapter`
+* `DesignModeValueProvider`は、デザイナーで変更さ`TranslatePropertyValue`れた場合、 `InvalidateProperty`またはを使用して呼び出される制限付きでサポートされます。 実行時コードで変更されたときには呼び出されません。
 
-機能プロバイダーは、実際のランタイムコードとコントロールライブラリとは異なるプロセスに読み込まれるため、ランタイムオブジェクトに直接アクセスできなくなります。 代わりに、対応するモデルベースの Api を使用するように、このようなすべての対話を変換する必要があります。 モデル API が更新さ<xref:System.Type>れ、または<xref:System.Object>へのアクセスが使用できなくなったか、また`TypeIdentifier`は`TypeDefinition`とに置き換えられました。
+機能プロバイダーは、実際のランタイムコードとコントロールライブラリとは異なるプロセスに読み込まれるため、実行時のオブジェクトに直接アクセスできなくなります。 代わりに、対応するモデルベースの Api を使用するように、このようなすべての対話を変換する必要があります。 モデル API が更新さ<xref:System.Type>れ、または<xref:System.Object>へのアクセスが使用できなくなったか、また`TypeIdentifier`は`TypeDefinition`とに置き換えられました。
 
 `TypeIdentifier`型を識別するアセンブリ名のない文字列を表します。 をに解決して、型に関する追加情報`TypeIdenfifier` を`TypeDefinition`照会できます。 `TypeDefinition`インスタンスを拡張コードにキャッシュすることはできません。
 
@@ -133,12 +134,15 @@ Surface 分離機能拡張 API セットから削除された Api:
 * `ModelFactory.CreateItem(EditingContext context, object item)`
 * `ViewItem.PlatformObject`
 * `ModelProperty.DefaultValue`
+* `AssemblyReferences.GetTypes(Type baseType)`
 
 `TypeIdentifier` の<xref:System.Type>代わりにを使用する api:
 
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, CreateOptions options, params object[] arguments)`
 * `ModelFactory.CreateStaticMemberItem(EditingContext context, Type type, string memberName)`
+* `ModelFactory.ResolveType(EditingContext context, Type)`変更後`MetadataFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
+* `ModelService.ResolveType(TypeIdentifier typeIdentifier)`変更後`MetadataService.ResolveType(TypeIdentifier typeIdentifier)`
 * `ViewItem.ItemType`
 * `ModelEvent.EventType`
 * `ModelEvent.IsEventOfType(Type type)`
@@ -157,7 +161,6 @@ Surface 分離機能拡張 API セットから削除された Api:
 
 `TypeDefinition` の<xref:System.Type>代わりにを使用する api:
 
-* `ModelFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
 * `ValueTranslationService.GetProperties(Type itemType)`
 * `ValueTranslationService.HasValueTranslation(Type itemType, PropertyIdentifier identifier)`
 * `ValueTranslationService.TranslatePropertyValue(Type itemType, ModelItem item, PropertyIdentifier identifier, object value)`
@@ -172,22 +175,19 @@ Surface 分離機能拡張 API セットから削除された Api:
 * `FeatureManager.GetCustomAttributes(Type type, Type attributeType)`
 * `AdapterService.GetAdapter<TAdapterType>(Type itemType)`
 * `AdapterService.GetAdapter(Type adapterType, Type itemType)`
+* `PropertyEntry.PropertyType`
 
-`ModelItem` の<xref:System.Object>代わりにを使用する api:
+`AssemblyIdentifier` の`<xref:System.Reflection.AssemblyName?displayProperty=fullName>`代わりにを使用する api:
 
-* `ModelItemCollection.Insert(int index, object value)`
-* `ModelItemCollection.Remove(object value)`
-* `ModelItemDictionary.Add(object key, object value)`
-* `ModelItemDictionary.ContainsKey(object key)`
-* `ModelItemDictionary.Remove(object key)`
-* `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
+* `AssemblyReferences.ReferencedAssemblies`
+* `AssemblyReferences.LocalAssemblyName`変更後`AssemblyReferences.LocalAssemblyIdentifier`
 
 さらに`ModelItem` 、の`SetValue`ような api では、プリミティブ型または組み込みの .NET Framework 型のインスタンスのみがサポートされます。これは、ターゲットランタイム用に変換できます。 現在、次の種類がサポートされています。
 
 * プリミティブ .NET Framework 型: `Boolean` `Byte` 、、`Nullable`、 `DateTime`、 `Double` `Enum` 、、`SByte` 、、、、、 `Guid` `Char` `Int16` `Int32` `Int64`, `Single`, `String`, `Type`, `UInt16`, `UInt32`, `UInt64`,`Uri`
 * `Brush`既知`EasingFunctionBase` `Duration` `CornerRadius` `EasingMode`のWPF`FontFamily`.NET Framework 型 (および派生型): `Color`、、 、`EllipseGeometry`、 、、、、、、`GeneralTransform` `CompositeTransform` `Geometry`, `GradientStopCollection`, `GradientStop`, `GridLength`, `ImageSource`, `InlineCollection`, `Inline`, `KeySpline`, `Material`, `Matrix`, `PathFigureCollection`, `PathFigure`, `PathSegmentCollection`, `PathSegment`, `Path`, `PointCollection`, `Point`, `PropertyPath`, `Rect`, `RepeatBehavior`, `Setter`, `Size`, `StaticResource`, `TextAlignment`, `TextDecorationCollection`, `ThemeResourceExtension`, `Thickness`, `TimeSpan`, `Transform3D`,`TransformCollection`
 
-例えば:
+次に例を示します。
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -221,6 +221,6 @@ End Class
 
 ## <a name="limited-support-for-designdll-extensions"></a>. Design 拡張子のサポートの制限
 
-コントロールライブラリに対して*designtools .dll*拡張子が検出された場合は、最初に読み込まれ、の検出はスキップされます。
+コントロールライブラリに対して*designtools .dll*拡張子が検出された場合は、最初に読み込まれ、*の検出*はスキップされます。
 
 *Designtools .dll*拡張子が存在しないが、拡張子 *.dll*が見つかると、XAML 言語サービスは、基本エディターとプロパティインスペクターのシナリオをサポートするために、このアセンブリを読み込んで属性テーブル情報を抽出しようとします。 このメカニズムは、スコープに限定されています。 機能プロバイダーを実行するためにデザイナー分離拡張機能を読み込むことはできませんが、既存の WPF コントロールライブラリの基本的なサポートを提供する場合があります。
