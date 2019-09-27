@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: fdb973718e56279e7bfb04c9d412bcd83410223d
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 182c9e37764a247ec24b4b477975ccb7b8811c4b
+ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987749"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322549"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>デバッグ中に XAML のプロパティを調べます。
 **Live Visual Tree** および **Live Property Explorer** により、実行中の XAML コードのリアルタイム ビューを取得できます。 これらのツールは、実行中の XAML アプリケーションの UI 要素のツリー ビューを提供し、選択した UI 要素のランタイム プロパティを表示します。
@@ -81,7 +81,10 @@ private void button_Click(object sender, RoutedEventArgs e)
 
 アプリケーション ウィンドウに戻り、さらにいくつかの項目を追加します。 **[Live Visual Tree]** に、リスト ボックス項目がさらに表示されます。
 
-次に、いずれかのリスト ボックス項目のプロパティを検討します。 **[Live Visual Tree]** 内の最初のリスト ボックス項目を選択して、ツールバーの **[プロパティの表示]** アイコンをクリックします。 **Live Property Explorer** が表示されます。 **[コンテンツ]** フィールドは “Item1”、 **[背景]** フィールドは **#FFFFFFE0** (薄い黄色) であることに注意してください。 **[Live Visual Tree]** に戻り、2 番目のリスト ボックス項目を選択します。 **Live Property Explorer** で **[コンテンツ]** フィールドが “Item2”、 **[背景]** フィールドが **#FFD3D3D3** (薄い灰色) になっています。
+次に、いずれかのリスト ボックス項目のプロパティを検討します。 **[Live Visual Tree]** 内の最初のリスト ボックス項目を選択して、ツールバーの **[プロパティの表示]** アイコンをクリックします。 **Live Property Explorer** が表示されます。 **コンテンツ**フィールドが "Item1" であり、[**背景** > **色**] フィールドが **#FFFFFFE0**であることに注意してください。 **[Live Visual Tree]** に戻り、2 番目のリスト ボックス項目を選択します。 **ライブプロパティエクスプローラー**に、**コンテンツ**フィールドが "Item2" で、**背景** > **色**フィールドが **#FFD3D3D3**ことが示されます。
+
+> [!NOTE]
+> **ライブプロパティエクスプローラー**でプロパティを囲む黄色い枠は、プロパティ値がのような`Color = {BindingExpression}`バインディングによって設定されることを意味します。 緑の境界線は、などのリソース`Color = {StaticResource MyBrush}`を使用して値が設定されることを意味します。
 
 XAML の実際の構造にはご自分に直接関係のない多数の要素が含まれていて、コードをよく理解していない場合は、ツリーを参照して検索対象を見つけることが困難となる可能性があります。 そのため、**Live Visual Tree** には、ご自分でアプリケーションの UI を使用して検討対象の要素を見つけるために役立ついくつかの手段が備わっています。
 
