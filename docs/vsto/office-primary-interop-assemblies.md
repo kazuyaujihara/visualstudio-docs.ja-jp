@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6a709a59e85f65cf2e0caa0551610dd496bedda5
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253737"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342504"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office プライマリ相互運用機能アセンブリ
 
@@ -61,13 +61,13 @@ PIA のコピーを使用することで、Visual Studio は、異なるバー�
 
 Visual Studio 2017 以降では、これらの Pia のコピーは、開発用コンピューター上の次の共有場所にインストールされます。
 
-- *%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\*
+- `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
-- (または *% ProgramFiles (x86)% \ Microsoft Visual Studio\Shared\Visual Studio Tools for\* Office\PIA on 64 ビット版オペレーティングシステム)
+- (または、64ビットのオペレーティングシステムでは `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`)
 
 > [!NOTE]
-> 以前のバージョンの Visual Studio では、これらの Pia は、そのバージョンの Visual Studio の *% ProgramFiles% フォルダーにある Office\PIA フォルダーの Visual Studio Tools にインストールされます。
-> 例: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Visual Studio Tools for Office\PIA\*
+> 以前のバージョンの Visual Studio では、これらの Pia は、そのバージョンの Visual Studio の `%ProgramFiles%` フォルダーにある Office\PIA フォルダーの Visual Studio Tools にインストールされます。
+> 例: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>グローバルアセンブリキャッシュ内のプライマリ相互運用機能アセンブリ
 
@@ -86,7 +86,7 @@ Visual Studio の各 Office プロジェクト テンプレートは、単一の
 グローバル アセンブリ キャッシュに PIA をインストールして登録すると、これらのバージョンのアセンブリは、 **[参照マネージャー]** ダイアログ ボックスの **[COM]** タブに表示されます。 これらのバージョンのアセンブリを使用すると開発上の問題が発生するため、これらのアセンブリに参照を追加することは避ける必要があります。 たとえば、異なるバージョンの PIA がグローバル アセンブリ キャッシュに登録されている場合、 **[参照マネージャー]** ダイアログ ボックスの **[COM]** タブで別のバージョンのアセンブリを指定しても、プロジェクトは最後に登録されたバージョンのアセンブリにバインドします。
 
 > [!NOTE]
-> アセンブリによっては、参照元のアセンブリを追加すると、参照先のアセンブリも自動的に追加される場合があります。 たとえば、Word、Excel、Outlook、Microsoft Forms、または Graph アセンブリへの参照を追加すると、 *Office .dll*アセンブリおよび*microsoft. Interop. .dll*アセンブリへの参照が自動的に追加されます。
+> アセンブリによっては、参照元のアセンブリを追加すると、参照先のアセンブリも自動的に追加される場合があります。 たとえば、Word、Excel、Outlook、Microsoft Forms、または Graph アセンブリへの参照を追加すると、`Office.dll` および `Microsoft.Vbe.Interop.dll` アセンブリへの参照が自動的に追加されます。
 
 <a name="pialist"></a>
 
@@ -129,7 +129,7 @@ Visual Studio の各 Office プロジェクト テンプレートは、単一の
 
 ## <a name="see-also"></a>関連項目
 
-- [方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [2 つのオブジェクトが等しいかどうかをテストする方法プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Excel オブジェクトモデルの概要](../vsto/excel-object-model-overview.md)
 - [InfoPath ソリューション](../vsto/infopath-solutions.md)
 - [Outlook オブジェクトモデルの概要](../vsto/outlook-object-model-overview.md)
