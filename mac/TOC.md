@@ -1,5 +1,8 @@
 # [Visual Studio for Mac](index.yml)
-# [IDE ツアー](ide-tour.md)
+
+# 作業の開始
+## [IDE ツアー](ide-tour.md)
+## [Windows ユーザー向けの Visual Studio for Mac](vsmac-for-windows-users.md)
 
 # インストール
 ## [Visual Studio for Mac 2019 のインストール](installation.md)
@@ -94,11 +97,15 @@
 ### [変更ログ](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [Xamarin を使用したモバイル アプリ](/visualstudio/mac/xamarin)
 
-# [ユーザー補助](accessibility.md)
+# ユーザー補助
+## [概要](accessibility.md)
 ## [IDE アクセシビリティ オプションの設定](accessibility-ide-options.md)
-## [macOS ユーザー補助ツールの使用](accessibility-macos.md)
+## macOS アクセシビリティのツールと機能
+### [macOS アクセシビリティのツールの使用](accessibility-macos.md)
 ### [キーボード ナビゲーションの使用](accessibility-keyboard.md)
 ### [VoiceOver の使用](accessibility-voiceover.md)
+
+# [Windows ユーザー向けの Visual Studio for Mac](vsmac-for-windows-users.md)
 
 # トラブルシューティング
 ## [ログと例外](troubleshooting.md)
