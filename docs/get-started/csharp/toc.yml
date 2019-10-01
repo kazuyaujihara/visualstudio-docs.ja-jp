@@ -21,6 +21,8 @@
       href: tutorial-uwp.md
     - name: WPF アプリケーションを作成する
       href: tutorial-wpf.md
+    - name: Windows フォーム アプリを作成する
+      href: ../../ide/create-csharp-winform-visual-studio.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: ビデオ チュートリアル - ASP.NET Core Web アプリを作成する
       items:
         - name: 1 - Visual Studio をインストールする
