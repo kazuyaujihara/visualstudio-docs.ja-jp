@@ -5,16 +5,16 @@ ms.date: 03/14/2019
 author: asb3993
 ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3e6ae24ea9e9a5dea263c2449a9b23b6027f7a96
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211325"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273317"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac の既定のキーボード ショートカット
 
-キーボード アクセシビリティについては、「[キーボード ナビゲーションを使用するには](~/accessibility.md#how-to-use-keyboard-navigation)」をご覧ください。
+キーボード アクセシビリティについては、「[キーボード ナビゲーションを使用するには](~/accessibility-keyboard.md)」をご覧ください。
 
 Visual Studio for Mac のさまざまなコマンドには、該当するショートカット キーを押すことでアクセスできます。 このドキュメントでは、**Visual Studio for Mac** キー バインド スキームでの既定のショートカットの一覧を示します。 キー バインド スキームを変更する方法について詳しくは、「[IDE のカスタマイズ](~/customizing-the-ide.md#key-bindings)」をご覧ください。 **[Visual Studio for Mac]**  >  **[ユーザー設定]** メニュー項目を使用し、 **[ユーザー設定]** ウィンドウの **[環境]**  >  **[キー バインド]** を選択して、コマンドのショートカットをカスタマイズすることもできます。
 
