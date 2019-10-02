@@ -2,8 +2,6 @@
 title: ToolTaskExtension 基本クラス | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- MSBuild.ToolTask.ToolCommandFailed
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 061d78a1e6415d6e7386fdc4de76aa1dd8ddd6d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7734f852da997836cf2f42fd3f6b96e9decdf8dd
+ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938916"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720569"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 基本クラス
 多くのタスクが <xref:Microsoft.Build.Tasks.ToolTaskExtension> クラスを継承します。このクラスは <xref:Microsoft.Build.Utilities.ToolTask> クラスから継承され、さらに、このクラス自体は <xref:Microsoft.Build.Utilities.Task> から継承されます。 この継承チェーンにより、これらのクラスから派生したタスクにいくつかのパラメーターが追加されます。 このドキュメントでは、これらのパラメーターを示します。
