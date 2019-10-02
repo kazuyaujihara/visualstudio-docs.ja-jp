@@ -6,16 +6,16 @@ manager: lank
 ms.date: 12/28/2017
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに含まれているダウンロードできるソフトウェアの一覧を検索します。
-ms.openlocfilehash: 7d6f533189bded975618e7dd65230a23d42b90f5
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: aba0af561559142c186d9bfa5728bd00b6f4d1dc
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377914"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095270"
 ---
 # <a name="what-software-is-available-for-download"></a>ダウンロードできるソフトウェア
 
-入手できる[ソフトウェア ダウンロードの一覧](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)は、ご利用のサブスクリプションによって異なります。  同じサインイン アドレスに複数のサブスクリプションが関連付けられている場合、表示しているサブスクリプションに関係なく、最高レベルのサブスクリプションに含まれるダウンロードが表示されます。  たとえば、Visual Studio Enterprise Standard サブスクリプションと Visual Studio Dev Essentials メンバーシップをお持ちの場合は、Enterprise サブスクリプションで利用できるすべてのダウンロード一覧が表示されます。  サブスクリプションの一覧を表示するには、[ https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) を参照してください。
+入手できる[ソフトウェア ダウンロードの一覧](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)は、ご利用のサブスクリプションによって異なります。  同じサインイン アドレスに複数のサブスクリプションが関連付けられている場合、表示しているサブスクリプションに関係なく、最高レベルのサブスクリプションに含まれるダウンロードが表示されます。  たとえば、Visual Studio Enterprise Standard サブスクリプションと Visual Studio Professional サブスクリプションをお持ちの場合は、Enterprise サブスクリプションで利用できるすべてのダウンロード一覧が表示されます。  サブスクリプションの一覧を表示するには、[ https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) を参照してください。
 
 既に Visual Studio サブスクリプションをお持ちの場合:
 1. [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs) に移動します。

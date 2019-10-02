@@ -23,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222614"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128157"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio での配置の概要
 
-他のコンピューター、デバイス、サーバー、クラウドにインストールする目的でアプリケーション、サービス、またはコンポーネントを配布する手法として配置が行われます。 必要な配置の種類に合わせて、Visual Studio で適切な手法を選択します。 (コマンド ラインによる配置や NuGet など、その他の配置ツールに対応しているアプリの種類はたくさんありますが、それらのツールについてはここでは触れていません。)
+他のコンピューター、デバイス、サーバー、クラウドにインストールする目的でアプリケーション、サービス、またはコンポーネントを配布する手法として配置が行われます。 必要な配置の種類に合わせて、Visual Studio で適切な手法を選択します。 (コマンド ラインによる配置など、その他の配置ツールに対応しているアプリの種類はたくさんありますが、それらのツールについてはここでは触れていません。)
 
 詳細な配置手順については、クイックスタートとチュートリアルをご覧ください。 配置オプションの概要については、「[状況に適した発行オプション](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me)」を参照してください。
 
@@ -44,7 +44,7 @@ ms.locfileid: "70222614"
 
     ![[発行] を選択する](../deployment/media/quickstart-publish.png)
 
-- **Windows デスクトップ**: ClickOnce 配置を使用し、フォルダーに Windows デスクトップ アプリケーションを発行できます。 その後、ユーザーはシングル クリックでアプリケーションをインストールできます。 詳細については、[ClickOnce を使用したデスクトップ アプリの配置](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)に関するページ (C# と Visual Basic) を参照してください。 C++/CLR については、[ClickOnce を使用したネイティブ アプリの配置](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)に関するページを、C/C++ については、[セットアップ プロジェクトを使用したネイティブ アプリの配置](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)に関するページを参照してください。
+- **Windows デスクトップ**: ClickOnce 配置を使用し、フォルダーに Windows デスクトップ アプリケーションを発行できます。 その後、ユーザーはシングル クリックでアプリケーションをインストールできます。 詳細については、[ClickOnce を使用したデスクトップ アプリの配置](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)に関するページ (C# と Visual Basic) を参照してください。 C++/CLI については、[ClickOnce を使用したネイティブ アプリの配置](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)に関するページを、C/C++ については、[セットアップ プロジェクトを使用したネイティブ アプリの配置](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)に関するページを参照してください。
 
 ## <a name="publish-to-azure"></a>Azure に発行する
 
@@ -83,7 +83,7 @@ ms.locfileid: "70222614"
 
     ASP.NET のアプリケーションとサービスは他にもさまざまな方法で配置できます。 詳細については、[ASP.NET の Web アプリケーション/サービスを配置する](http://www.asp.net/aspnet/overview/deployment)方法に関するページをご覧ください。
 
-- **Windows デスクトップ**: ClickOnce 配置を使用し、Web サーバーまたはネットワーク ファイル共有に Windows デスクトップ アプリケーションを発行できます。 その後、ユーザーはシングル クリックでアプリケーションをインストールできます。 詳細については、[ClickOnce を使用したデスクトップ アプリの配置](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)に関するページ (C# と Visual Basic) を参照してください。 C++/CLR については、[ClickOnce を使用したネイティブ アプリの配置](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)に関するページを、C/C++ については、[セットアップ プロジェクトを使用したネイティブ アプリの配置](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)に関するページを参照してください。
+- **Windows デスクトップ**: ClickOnce 配置を使用し、Web サーバーまたはネットワーク ファイル共有に Windows デスクトップ アプリケーションを発行できます。 その後、ユーザーはシングル クリックでアプリケーションをインストールできます。 詳細については、[ClickOnce を使用したデスクトップ アプリの配置](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)に関するページ (C# と Visual Basic) を参照してください。 C++/CLI については、[ClickOnce を使用したネイティブ アプリの配置](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)に関するページを、C/C++ については、[セットアップ プロジェクトを使用したネイティブ アプリの配置](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)に関するページを参照してください。
 
 ## <a name="publish-to-microsoft-store"></a>Microsoft Store に発行する
 
@@ -93,9 +93,9 @@ Visual Studio から、Microsoft Store に配置するためのアプリ パッ�
 
     ![アプリケーション パッケージの作成](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Windows デスクトップ**:Visual Studio 2017 バージョン 15.4 以降では、デスクトップ ブリッジを使用して Microsoft Store に配置できます。 これを行うには、まず Windows アプリケーション パッケージ プロジェクトを作成します。 詳細については、「[Package a desktop app for Microsoft Store (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)」(Microsoft ストアのデスクトップ アプリをパッケージ化する (デスクトップ ブリッジ)) を参照してください。
+- **Windows デスクトップ**:Visual Studio 2017 バージョン 15.4 以降では、Microsoft Store に配置できます。 これを行うには、まず Windows アプリケーション パッケージ プロジェクトを作成します。 詳細については、「[Microsoft ストアのデスクトップ アプリをパッケージ化する](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net)」を参照してください。
 
-    ![デスクトップ ブリッジ](../deployment/media/feature-tour-desktop-bridge.png)
+    ![デスクトップ アプリをパッケージ化する](../deployment/media/feature-tour-desktop-bridge.png)
 
 ## <a name="deploy-net-packages-to-nugetorg"></a>.NET パッケージを NuGet.org に配置する
 
