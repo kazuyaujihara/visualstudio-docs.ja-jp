@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dad84145200b09cfbddab63bd9994096d0ba3e17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0627a96bf100232987ace5a42430310912f97b8c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537313"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252091"
 ---
 # <a name="manage-application-settings-net"></a>アプリケーション設定の管理 (.NET)
 
@@ -80,7 +80,7 @@ Visual Basic プロジェクトでは、`My.Settings` オブジェクトを使�
 
 ユーザーが実行時に変更するユーザー スコープ設定の値 (フォームの位置など) は、*user.config* ファイルに保存されます。 既定値は引き続き *app.config* に保存されていることに注意してください。
 
-アプリケーションのテストなど、実行時にユーザー スコープ設定を変更した後で設定を既定値にリセットする場合は、**[同期]** をクリックします。
+アプリケーションのテストなど、実行時にユーザー スコープ設定を変更した後で設定を既定値にリセットする場合は、 **[同期]** をクリックします。
 
 設定へのアクセスには、`My.Settings` オブジェクトと既定の *.settings* ファイルを使用することを強くお勧めします。 これは、**設定デザイナー**を使用して、プロパティを設定に割り当てることができ、さらにアプリケーションのシャットダウン前にユーザー設定が自動的に保存されるためです。 ただし、Visual Basic アプリケーションから設定に直接アクセスすることもできます。 その場合は、`MySettings` クラスにアクセスし、プロジェクトのルートにあるカスタムの *.settings* ファイルを使用する必要があります。 C# アプリケーションと同様、アプリケーションを終了する前にユーザー設定を保存する必要があります。この方法については、次のセクションで説明します。
 

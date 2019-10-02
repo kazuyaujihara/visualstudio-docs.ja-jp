@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 82556ea0ed043c11cb9098383daf912ff17372ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fb4560a196404687c60ce67f39b9c0754a24769
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818419"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253137"
 ---
 # <a name="using-net-4x-in-unity"></a>Unity で.NET 4.x を使用する
 
@@ -32,17 +32,17 @@ Unity には、Unity 2017.1 のリリースで、.NET 4.6 にアップグレー�
 
 1. **[Edit]\(編集\)、[Project Settings]\(プロジェクトの設定\)、[Player]\(プレーヤー\)** の順に選択し、Unity Inspector で [PlayerSettings]\(プレーヤー設定\) を開きます。
 
-1. **[Configuration]** \(構成\) 見出しの下で、**[Scripting Runtime Version]** \(スクリプティング ランタイム バージョン\) ドロップダウンをクリックし、**[.NET 4.x Equivalent]** \(.NET 4.x と同等\) を選択します。 Unity を再起動するように求められます。
+1. **[Configuration]** \(構成\) 見出しの下で、 **[Scripting Runtime Version]** \(スクリプティング ランタイム バージョン\) ドロップダウンをクリックし、 **[.NET 4.x Equivalent]** \(.NET 4.x と同等\) を選択します。 Unity を再起動するように求められます。
 
 ![.NET 4.x 同等を選択する](media/vstu_scripting-runtime-version.png)
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>.NET 4.x および .NET Standard 2.0 プロファイルのいずれかを選ぶ
 
-.NET 4.x と同等のスクリプティング ランタイムに切り替えたら、[PlayerSettings]\(プレーヤー設定\) (**[Edit]\(編集\)、[Project Settings]\(プロジェクトの設定\)、[Player]\(プレーヤー\)**) のドロップダウン メニューを使用して、**[Api Compatibility Level]** \(API の互換性レベル\) を指定することができます。 次の 2 つのオプションがあります。
+.NET 4.x と同等のスクリプティング ランタイムに切り替えたら、[PlayerSettings]\(プレーヤー設定\) ( **[Edit]\(編集\)、[Project Settings]\(プロジェクトの設定\)、[Player]\(プレーヤー\)** ) のドロップダウン メニューを使用して、 **[Api Compatibility Level]** \(API の互換性レベル\) を指定することができます。 次の 2 つのオプションがあります。
 
-* **.NET Standard 2.0**:  このプロファイルは、.NET Foundation により発行されている [.NET Standard 2.0 プロファイル](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)と一致します。 Unity では、新しいプロジェクトに .NET Standard 2.0 を推奨しています。 これは .NET 4.x よりも小規模で、サイズに制限のあるプラットフォームで好都合です。 また、Unity では、Unity がサポートしているすべてのプラットフォームで、このプロファイルをサポートすることをコミットしています。
+* **.NET Standard 2.0**: このプロファイルは、.NET Foundation により発行されている [.NET Standard 2.0 プロファイル](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)と一致します。 Unity では、新しいプロジェクトに .NET Standard 2.0 を推奨しています。 これは .NET 4.x よりも小規模で、サイズに制限のあるプラットフォームで好都合です。 また、Unity では、Unity がサポートしているすべてのプラットフォームで、このプロファイルをサポートすることをコミットしています。
 
-* **.NET 4.x**:  このプロファイルでは、最新の .NET 4 API にアクセスできます。 これには、.NET Framework クラス ライブラリで利用できるすべてのコードを含み、また .NET Standard 2.0 のプロファイルも同様にサポートしています。 .NET Standard 2.0 のプロファイルに含まれていない一部の API がプロジェクトで必要な場合は、.NET 4.x のプロファイルを使用します。 ただし、この API の一部は Unity のすべてのプラットフォームでサポートされていない場合があります。
+* **.NET 4.x**: このプロファイルでは、最新の .NET 4 API にアクセスできます。 これには、.NET Framework クラス ライブラリで利用できるすべてのコードを含み、また .NET Standard 2.0 のプロファイルも同様にサポートしています。 .NET Standard 2.0 のプロファイルに含まれていない一部の API がプロジェクトで必要な場合は、.NET 4.x のプロファイルを使用します。 ただし、この API の一部は Unity のすべてのプラットフォームでサポートされていない場合があります。
 
 これらのオプションの詳細については、Unity の[ブログ投稿](https://blogs.unity3d.com/2018/03/28/updated-scripting-runtime-in-unity-2018-1-what-does-the-future-hold/)を参照してください。
 

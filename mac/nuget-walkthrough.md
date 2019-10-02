@@ -3,15 +3,15 @@ title: プロジェクトに NuGet パッケージを含める
 description: このドキュメントでは、Visual Studio for Mac を使用してプロジェクトに NuGet パッケージを含める方法について説明します。 パッケージの検索およびダウンロードの手順を説明し、IDE 統合機能の概要を示します。
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/17/2019
+ms.date: 09/18/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 22b2e07509403d8e19e3a3e920d45b064c2e51c0
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 55b4691a7adb03d4ee8fd5e05e7bd9d7daa28f13
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079523"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213689"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Visual Studio for Mac に NuGet パッケージをインストールして管理する
 
@@ -23,17 +23,17 @@ Visual Studio for Mac での NuGet の使用の概要については、「[ク�
 
 ## <a name="find-and-install-a-package"></a>パッケージを検索してインストールする
 
-1. Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pad** で **[依存関係]** フォルダー (Xamarin プロジェクトを使用する場合は **[パッケージ]** フォルダー) を右クリックし、 **[パッケージを追加]** を選択します。
+1. Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pad** 内の **[依存関係]** フォルダー (Xamarin プロジェクトを使用する場合は **[パッケージ]** フォルダー) を右クリックし、 **[NuGet パッケージの管理]** を選択します。
 
-    ![新しい NuGet パッケージのコンテキスト アクションを追加する](media/nuget-walkthrough-PackagesMenu.png)
+    ![新しい NuGet パッケージのコンテキスト アクションを追加する](media/nuget-walkthrough-packages-menu.png)
 
-2. これで、 **[パッケージを追加]** ウィンドウが起動します。 ダイアログの左上隅にある [ソース] ドロップダウンが `nuget.org` に設定されていることを確実にします。
+2. **[NuGet パッケージの管理]** ウィンドウが起動します。 ダイアログの左上隅にある [ソース] ドロップダウンが `nuget.org` に設定されていることを確実にします。
 
-    ![Nuget パッケージのリスト](media/nuget-walkthrough-AddPackages1.png)
+    ![Nuget パッケージのリスト](media/nuget-walkthrough-add-packages1.png)
 
 3. `EntityFramework` などの特定のパッケージを検索するには、右上隅の検索ボックスを使用します。 使用するパッケージが見つかったら、それを選択し、 **[パッケージを追加]** ボタンをクリックしてインストールを開始します。
 
-    ![Azure の NuGet パッケージを追加する](media/nuget-walkthrough-AddPackages2.png)
+    ![EntityFramework NuGet パッケージの追加](media/nuget-walkthrough-add-packages2.png)
 
 4. パッケージはダウンロードされた後、プロジェクトに追加されます。 ソリューションは、編集中のプロジェクトの種類に応じて変化します。
 
@@ -43,7 +43,7 @@ Visual Studio for Mac での NuGet の使用の概要については、「[ク�
     
     **.NET Core プロジェクト**
 
-    **[依存関係] > [NuGet]** ノードには、ダウンロードした各 NuGet パッケージが表示されます。 このリストのパッケージを更新したり、削除したりすることができます。
+    * **[依存関係] > [NuGet]** ノードには、ダウンロードした各 NuGet パッケージが表示されます。 このリストのパッケージを更新したり、削除したりすることができます。
 
 ## <a name="using-nuget-packages"></a>NuGet パッケージの使用
 
@@ -59,11 +59,11 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>パッケージの更新
 
-パッケージの更新は、 **[依存関係]** ノード (または、Xamarin プロジェクトの場合は **[パッケージ]** ノード) を右クリックすることで、すべて一度に行うことも、コンポーネントごとに個別に行うこともできます。
+パッケージの更新は、 **[依存関係]** ノード (または、Xamarin プロジェクトの場合は **[パッケージ]** ノード) を右クリックすることで、すべて一度に行うことも、パッケージごとに個別に行うこともできます。 新しいバージョンの NuGet パッケージが使用可能になると、更新アイコンが表示されます ![丸で囲まれた上向きの矢印](media/nuget-walkthrough-update-icon.png)。
 
-コンテキスト メニューにアクセスするには、次のように **[依存関係]** を右クリックします。
+コンテキスト メニューにアクセスするには、 **[依存関係]** を右クリックして、 **[更新]** を選択し、すべてのパッケージを更新します。
 
-![パッケージ メニュー](media/nuget-walkthrough-PackagesMenu.png)
+![パッケージ メニュー](media/nuget-walkthrough-packages-menu-update.png)
 
 * **[NuGet パッケージの管理]** - プロジェクトにさらにパッケージを追加するためのウィンドウが開きます。
 * **[更新]** - 各パッケージのソース サーバーを確認し、新しいバージョンをダウンロードします。

@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 07/23/2019
+ms.date: 09/24/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c9526a0cbf33278bbc3cab8120bb20ab0f5377a
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293717"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211334"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
-**[16.2 リリース](/visualstudio/releases/2019/release-notes/)の更新**
+**[16.3 リリース](/visualstudio/releases/2019/release-notes/)の更新**
 
 >[!div class="button"]
 >[Visual Studio 2019 のダウンロード](https://visualstudio.microsoft.com/downloads)
@@ -107,6 +107,12 @@ Visual Studio 2019 のリリースにより、Visual Studio を Per-monitor awar
 **16.2 の新機能**: テスト エクスプローラーを更新しました。これにより、大規模なテスト セットの処理の改善、フィルター処理の簡易化、コマンドの見つけやすさの向上、プレイリスト ビューのタブ化、および表示するテスト情報をユーザーが微調整できるカスタマイズ可能な列が実現されます。
 
    ![テスト エクスプローラーでのユーザー インターフェイスの改善を示すスクリーン ショット](media/vs-2019/test-explorer-ui.png)
+
+### <a name="net-core"></a>.NET Core
+
+**16.3 の新機能**: .NET Core 3.0. のサポートを追加しました。 クロスプラットフォームかつオープン ソース&mdash;Microsoft によって完全にサポートされています。 
+
+詳細については、「[Announcing .NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/)」 (.NET Core 3.0 の発表) のブログ記事を参照してください。
 
 ## <a name="collaborate"></a>共同作業
 

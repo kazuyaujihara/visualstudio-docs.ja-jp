@@ -3,15 +3,15 @@ title: Visual Studio for Mac を更新する
 description: Visual Studio for Mac の更新およびプレビュー リリースへのアクセスについて説明します。
 author: asb3993
 ms.author: amburns
-ms.date: 08/27/2019
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 56795fa78a7e850ed96d44d2bbcd3cd3c03abbc1
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 383bf38b26b4961df61dca2a1bf1d4efda335d81
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108163"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211501"
 ---
 # <a name="update-visual-studio-for-mac"></a>Visual Studio for Mac を更新する
 
@@ -44,7 +44,7 @@ Visual Studio for Mac では、2 つのチャネルでこれらの最新バー�
 
 チャネルを切り替えると、新しい更新プログラムのダウンロード プロセスが自動的に開始します。
 
-**[自動的に確認する]** オプションを選択した場合は、Visual Studio for Mac を開くと [Visual Studio の更新] ボックスが表示され、新しい更新プログラムが利用できることを通知します。 ダウンロードを開始するオプションも提供されます。
+**[自動的に確認する]** オプションを選択した場合は、Visual Studio for Mac を開くと [Visual Studio の更新] ボックスが表示され、新しい更新プログラムが利用できることを通知します。 新しいダウンロードは、このボックスが表示されたときに、コンピューターに自動的にダウンロードされます。
 
 更新プログラムのインストールを開始するには、 **[再起動して更新プログラムをインストールする]** ボタンを選びます。
 

@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e006be2099d5132ce7445f1e8fe74b0f2752c260
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416819"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238181"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>方法: ビルド出力ディレクトリを変更する
 
@@ -43,6 +43,15 @@ ms.locfileid: "68416819"
    出力の生成先とするパスを入力するか (ルート プロジェクト ディレクトリの絶対パスまたは相対パス)、 **[参照]** を選択し、そのフォルダーを代わりに参照します。
 
    ![Visual Studio C# プロジェクトの出力パス プロパティ](media/output-path.png)
+   
+   > [!NOTE]
+   > 既定では、一部のプロジェクトで、フレームワークとランタイムがビルド パスに含まれます。 これを変更するには、**ソリューション エクスプローラー**でプロジェクト ノードを右クリックし、 **[プロジェクト ファイルの編集]** を選択して、以下を追加します。
+   > ```xml
+   > <PropertyGroup>
+   >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+   >   <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+   > </PropertyGroup>
+   > ```
 
 > [!TIP]
 > 指定した場所に出力が生成されない場合、Visual Studio のメニュー バーで選択し、該当する構成 (**デバッグ**や**リリース**など) を構築していることを確認してください。
