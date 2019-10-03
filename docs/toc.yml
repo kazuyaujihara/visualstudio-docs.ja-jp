@@ -92,7 +92,7 @@
           items:
             - name: 'Visual Studio サブスクリプション: 管理者の概要'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: 関連項目
+        - name: 参照
           items:
             - name: Visual Studio のワークロードとコンポーネント ID
               items:
@@ -708,7 +708,7 @@
         - name: 起動の動作
           displayName: Start page window
           href: ide/customizing-the-start-page-for-visual-studio.md
-        - name: Visual Studio 拡張機能の検索と使用
+        - name: 拡張機能の管理
           href: ide/finding-and-using-visual-studio-extensions.md
           displayName: 'marketplace, gallery, vsix'
         - name: 外部ツールの管理
@@ -742,7 +742,7 @@
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: マイクロソフトのアクセシビリティ製品とサービス
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: 関連項目
+- name: 参照
   items:
     - name: キーボード ショートカット
       items:

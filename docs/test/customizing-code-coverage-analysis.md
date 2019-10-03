@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a22bdbc30fc222e26c01a10afdd7a666eebcb9f6
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 517f3f5911df6c7de1f59232a4e836bcdc84c448
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150109"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342359"
 ---
 # <a name="customize-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 
@@ -40,7 +40,7 @@ ms.locfileid: "71150109"
 
 ::: moniker range=">=vs-2019"
 
-3. 実行設定ファイルを選択するには、**テスト エクスプローラー**で、 **[設定]** ボタンの矢印を選択し、 **[設定ファイルの選択]** を選択します。 コマンドラインからテストの実行で使用する実行設定ファイルを指定するには、[単体テストの構成](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)に関する説明を参照してください。
+3. 実行設定ファイルを選択するには、 **[テスト]** メニューで **[設定ファイルの選択]** を選択します。 コマンドラインからテストの実行で使用する実行設定ファイルを指定するには、[単体テストの構成](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)に関する説明を参照してください。
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ ms.locfileid: "71150109"
 
 ::: moniker range=">=vs-2019"
 
-カスタム設定のオンとオフを切り替えるには、**テスト エクスプローラー**の **[設定]** メニューでファイルを選択したり選択解除したりします。
+カスタム設定のオンとオフを切り替えるには、 **[テスト]** メニューで、ファイルを選択したり選択解除したりします。
 
 ::: moniker-end
 
@@ -270,7 +270,7 @@ Included items must then not match any entries in the exclude list to remain inc
             </PublicKeyTokens>
 
             <!-- We recommend you do not change the following values: -->
-            
+
             <!-- Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. -->
             <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
             <!-- When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. -->
