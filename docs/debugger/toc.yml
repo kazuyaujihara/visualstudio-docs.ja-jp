@@ -6,6 +6,8 @@
       href: what-is-debugging.md
     - name: デバッグの技術とツール
       href: write-better-code-with-visual-studio.md
+    - name: デバッグ タスクの検索
+      href: find-your-debugging-task.md
 - name: クイックスタート
   items:
     - name: デバッガーでのはじめに
@@ -236,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: カスタム ビュー (マネージド)
               items:
-                - name: .managed オブジェクトのカスタム ビューの作成
+                - name: オブジェクトのカスタム ビューを作成する
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: 表示するものをデバッガーに通知する
                   href: using-the-debuggerdisplay-attribute.md
@@ -352,9 +354,9 @@
               href: how-to-use-the-gpu-threads-window.md
         - name: 複数プロセスをデバッグする
           href: debug-multiple-processes.md
-        - name: 'チュートリアル: [スレッド] ウィンドウを使用してデバッグする'
+        - name: '[スレッド] ウィンドウを使用してデバッグする'
           href: how-to-use-the-threads-window.md
-        - name: 'チュートリアル: 並行アプリケーションをデバッグする'
+        - name: 並行アプリケーションをデバッグする
           href: walkthrough-debugging-a-parallel-application.md
         - name: デバッグ中に別のスレッドに切り替える
           href: how-to-switch-to-another-thread-while-debugging.md
@@ -678,7 +680,7 @@
           href: dump-file-summary-extensibility-api.md
     - name: デバッガーのセキュリティ
       href: debugger-security.md
-- name: 参照
+- name: 関連項目
   items:
     - name: デバッグ用ユーザー インターフェイス リファレンス
       items:
