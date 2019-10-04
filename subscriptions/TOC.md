@@ -31,6 +31,7 @@
 ##### [CAST の強調表示](vs-cast.md)
 ##### [CloudPilot](vs-cloudpilot.md)
 ##### [Enterprise Mobility + Security](vs-ems.md)
+##### [Microsoft 365](vs-m365.md)
 ##### [Office 365 開発者サブスクリプション](vs-office-dev.md)
 ##### [Office 365 サブスクリプション](vs-office365.md)
 ##### [Parasoft](vs-parasoft.md)
